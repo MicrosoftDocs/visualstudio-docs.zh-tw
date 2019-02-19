@@ -1,14 +1,9 @@
 ---
 title: 擴充 JavaScript IntelliSense |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript, intellisense object
 - extending JavaScript IntelliSense
@@ -19,13 +14,13 @@ ms.assetid: 004e1ab6-bd7a-4327-9e01-89b9be96ba2f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81aab6e0eea808c8dcb9b37d5772144a863329aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867067"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797443"
 ---
 # <a name="extending-javascript-intellisense"></a>擴充 JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +95,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 |功能|描述|  
 |--------------|-----------------|  
-|`addEventListener(type, handler);`|加入 IntelliSense 事件的事件處理常式。<br /><br /> `type` 是字串值。 有效值包括`statementcompletion`， `signaturehelp`，和`statementcompletionhint`。<br /><br /> `handler` 會接收下列類型之一的事件物件的事件處理常式函式：<br /><br /> -   `CompletionEvent`用於`statementcompletion`事件。<br />-   `SignatureHelpEvent`用於`signaturehelp`事件。<br />-   `CompletionHintEvent`用於`statementcompletionhint`事件。<br /><br /> 如需使用此函式的範例，請參閱[程式碼範例](#CodeExamples)。|  
+|`addEventListener(type, handler);`|加入 IntelliSense 事件的事件處理常式。<br /><br /> `type` 是字串值。 有效值包括 `statementcompletion`、`signaturehelp` 和 `statementcompletionhint`。<br /><br /> `handler` 會接收下列類型之一的事件物件的事件處理常式函式：<br /><br /> -   `CompletionEvent`用於`statementcompletion`事件。<br />-   `SignatureHelpEvent`用於`signaturehelp`事件。<br />-   `CompletionHintEvent`用於`statementcompletionhint`事件。<br /><br /> 如需使用此函式的範例，請參閱[程式碼範例](#CodeExamples)。|  
 |`annotate(obj, doc);`|將文件註解，從一個物件複製到另一個物件，指定物件的文件。<br /><br /> `obj` 指定要複製的文件的物件。<br /><br /> `doc` 指定要複製的文件的物件。<br /><br /> 如需示範如何使用此函式的範例，請參閱 <<c0> [ 新增 IntelliSense 註解](#Annotations)。|  
 |`getFunctionComments(func);`|傳回指定的函式的註解。<br /><br /> `func` 指定為其傳回註解的函式。<br /><br /> 您可以設定`func`參數使用`completionItem.value`。<br /><br /> 傳回`functionComments`物件包含下列成員： `above`， `inside`，和`paramComment`。 如需詳細資訊，請參閱 < [functionComments 屬性](#FunctionComments)屬性。<br /><br /> `getFunctionComments` 可以只從呼叫的事件處理常式註冊的其中一個內`addEventListener`。<br /><br /> 如需示範如何使用此函式的範例，請參閱 < \\ \\ *Visual Studio 安裝路徑*\JavaScript\References\showPlainComments.js。|  
 |`logMessage(msg);`|將診斷訊息傳送至 [輸出] 視窗中。<br /><br /> `msg` 是包含訊息的字串。<br /><br /> 如需示範如何使用此函式的範例，請參閱 <<c0> [ 傳送訊息至 [輸出] 視窗](#Logging)。|  
@@ -491,7 +486,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
     ```  
   
-4.  在 appCode.js 中，輸入以下程式碼。 雖然您輸入時，您會看到 命名空間的圖示已變更為 「{}"，因為在 C# 中使用。  
+4.  在 appCode.js 中，輸入以下程式碼。 雖然您輸入時，您會看到 命名空間的圖示已變更為 「{}"，因為使用中C#。  
   
      ![Glyph 屬性的使用範例](../ide/media/js-intellisense-glyph-namespace.png "js_intellisense_glyph_namespace")  
   
@@ -550,9 +545,6 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
      ![覆寫 IntelliSense 結果的範例](../ide/media/js-intellisense-override-fixed.png "js_intellisense_override_fixed")  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [識別項的陳述式完成](../ide/statement-completion-for-identifiers.md)
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：參考專案檔的名稱或位置 | Microsoft Docs
+title: 如何：參考專案檔的名稱或位置 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -18,13 +18,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a5d07c374e75bd7f042f466f13fc5727241e252
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780998"
 ---
-# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>HOW TO：參考專案檔的名稱或位置
+# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：參考專案檔的名稱或位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   

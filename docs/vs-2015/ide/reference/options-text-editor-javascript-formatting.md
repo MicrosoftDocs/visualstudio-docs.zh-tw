@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 545d5ff9530de577a553923eea3cb208bd5bc68e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54794406"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>格式、JavaScript、文字編輯器、選項
@@ -33,7 +33,7 @@ ms.locfileid: "54794406"
   
 ## <a name="uielement-list"></a>UIElement 清單  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |**遇到 Enter 字元時格式化完成的行**|選取這個選項時，程式碼編輯器會在您選擇 Enter 鍵時自動格式化行。|  
 |**遇到 ; 字元時格式化完成的陳述式**|選取這個選項時，程式碼編輯器會在您選擇分號鍵時自動格式化行。|  
@@ -45,7 +45,7 @@ ms.locfileid: "54794406"
   
 ## <a name="uielement-list"></a>UIElement 清單  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |**將函式的左大括弧放在新行**|選取這個選項時，程式碼編輯器會將與函式相關聯的左大括弧移至新行。|  
 |**將控制區塊的左大括弧置於新行**|選取這個選項時，程式碼編輯器會將與控制區塊 (例如，`if` 和 `while` 控制區塊) 相關聯的左大括弧移至新行。|  
@@ -55,7 +55,7 @@ ms.locfileid: "54794406"
   
 ## <a name="uielement-list"></a>UIElement 清單  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |**在逗號分隔符號後面插入空格**|選取這個選項時，程式碼編輯器會在逗號分隔符號後面新增空格。|  
 |**在 "for" 陳述式中的分號後面插入空格**|選取這個選項時，程式碼編輯器會在 `for` 迴圈第一行中的每個分號後面新增空格。|  

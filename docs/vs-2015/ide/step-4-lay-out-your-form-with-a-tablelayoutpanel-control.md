@@ -1,25 +1,20 @@
 ---
-title: 步驟 4：使用 TableLayoutPanel 控制項來配置您的表單 | Microsoft Docs
-ms.custom: ''
+title: 步驟 4：使用 TableLayoutPanel 控制項來配置您的表單 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a08359c11fa45c87c787a5a3a414eb8515e7473
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8807272ddac0be12fe8a6d80f0aa8e9425307d89
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210091"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763267"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步驟 4：使用 TableLayoutPanel 控制項來配置您的表單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ TableLayoutPanel 控制項
      ![其中已選取 [填滿] 的 [屬性] 視窗](../ide/media/express-docktable.png "Express_DockTable")  
 其中已選取 [Fill] 的 [屬性] 視窗  
   
-     Visual Studio 中的「停駐」是指在 IDE 中，將視窗附加至另一個視窗或區域。 例如，屬性 視窗可以浮動，也就是未連接，在 Visual Studio 內自由浮動，或可以針對停駐**方案總管 中**。  
+     Visual Studio 中的「停駐」是指在 IDE 中，將視窗附加至另一個視窗或區域。 例如，[屬性] 視窗可以取消停駐 (也就是未附加，可在 Visual Studio 內自由浮動)，也可以固定於 [方案總管] 中。  
   
 7.  將 TableLayoutPanel **Dock** 屬性設定為 [Fill] 之後，面板會填滿整個表單。 如果您再次調整表單的大小，TableLayoutPanel 會停駐不動，並調整大小來填滿表單。  
   
@@ -98,6 +93,3 @@ TableLayoutPanel 資料行和資料列樣式
 -   若要移到下一個教學課程步驟，請參閱[步驟 5：將控制項新增至您的表單](../ide/step-5-add-controls-to-your-form.md)。  
   
 -   若要回到上一個教學課程步驟，請參閱[步驟 3：設定您的表單屬性](../ide/step-3-set-your-form-properties.md)。
-
-
-

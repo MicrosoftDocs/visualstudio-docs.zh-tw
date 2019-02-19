@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 04c714576a0207d4168f20a241d6f0c7dd29298c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784453"
 ---
 # <a name="modules-view---sampling-data"></a>模組檢視 - 取樣資料
@@ -29,7 +29,7 @@ ms.locfileid: "54784453"
   
  如果收集樣本的時候正在執行函式 (即函式在呼叫堆疊最上方)，則執行中的原始程式行和指令位址會列在函式節點之下。 因為資料是在執行程式行或指令時，針對原始程式行或指令指標來收集資料，所以程式行資料和指令資料的內含值和專屬值一律相同。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
 |**名稱**|模組、函式、行號或指令指標位址的名稱。|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  

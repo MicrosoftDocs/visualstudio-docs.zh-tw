@@ -1,14 +1,9 @@
 ---
 title: DA0005：常見的 GC2 集合 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0005
 - vs.performance.rules.DAManyGC2Collections
@@ -18,20 +13,20 @@ ms.assetid: 8d3f267c-8a74-4cf4-91a5-0b06a76dc2bd
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 80b3f769a151974559f70d247696fd7abb794731
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5817943ebca51433e64ae3b549af76522992f018
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794099"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005：常見的 GC2 集合
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 RuleId |DA0005 |  
-|類別目錄 |.NET Framework 使用方式 |  
-|程式碼剖析方法 |.NET 記憶體 |  
+|類別目錄 |。.NET Framework 使用方式 |  
+|程式碼剖析方法 |。.NET 記憶體 |  
 |訊息 |有許多物件會收集在層代 2 記憶體回收。 |  
 |訊息類型 |警告 |  
   
@@ -46,9 +41,6 @@ RuleId |DA0005 |
  發生太高比例的第 2 代記憶體回收時，就會引發此規則。 如果有太多存留期相當短的物件在第 1 代回收之後存留下來，但接著就能在第 2 代回收中回收，則記憶體管理的成本很可能會變得過高。 如需詳細資訊，請參閱 MSDN 網站上 Rico Mariani's Performance Tidbits 的[中間存留期危機 (英文)](http://go.microsoft.com/fwlink/?LinkId=177835) 文章。  
   
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
- 檢閱 [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)報表，以了解應用程式的記憶體配置模式。 使用[物件存留期檢視](../profiling/object-lifetime-view.md)來判斷哪些程式的資料物件會存留到第 2 代，然後從該處回收。 使用[配置檢視](../profiling/dotnet-memory-allocations-view.md)可判斷導致這些配置的執行路徑。  
+ 檢閱 [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)報表，以了解應用程式的記憶體配置模式。 使用[物件存留期檢視](../profiling/object-lifetime-view.md)可判斷程式的哪些資料物件會存留到第 2 代，然後從該處回收。 使用[配置檢視](../profiling/dotnet-memory-allocations-view.md)可判斷導致這些配置的執行路徑。  
   
  如需如何改善記憶體回收效能的詳細資訊，請參閱 Microsoft 網站上的[記憶體回收行程的基礎概念和效能提示 (英文)](http://go.microsoft.com/fwlink/?LinkId=148226)。 如需有關自動記憶體回收之額外負荷的詳細資訊，請參閱[大型物件堆積的面目 (英文)](http://go.microsoft.com/fwlink/?LinkId=177836)。
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 逐步解說：針對 Managed 程式碼建立和執行單元測試 | Microsoft Docs
-ms.custom: ''
+title: 逐步解說：Managed 程式碼建立和執行單元測試 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
 - unit tests, creating
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50d8190f386a4923fd05cbfaec137791bd9f2b5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874497"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784656"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>逐步解說：針對 Managed 程式碼建立和執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -182,7 +177,7 @@ using BankAccountNS;
   
  藉由分析受測方法，我們判斷至少有三種需要檢查的行為：  
   
-1. 方法會擲回 [ArgumentOutOfRangeException] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) 如果付款金額大於餘額。  
+1. 如果付款金額大於餘額，該方法會擲回 [ArgumentOutOfRangeException](<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->)。  
   
 2. 如果付款金額小於零，也會擲回 `ArgumentOutOfRangeException` 。  
   
@@ -423,6 +418,3 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  在這最後一節中，我們所做的測試程式碼改善工作，產生了更強固且更具資訊性的測試方法。 但更重要的是，額外的分析也會讓我們的受測專案得到更好的程式碼。
-
-
-

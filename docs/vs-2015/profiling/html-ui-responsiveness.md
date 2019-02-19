@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b3e5a1ce334f0d5cb567eb8c4cefd27f1bca408b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54752962"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI 回應性
@@ -74,9 +74,9 @@ ms.locfileid: "54752962"
 6.  若要停止分析應用程式並檢視分析工具蒐集的資料，請選擇 [ **停止收集**]。  
   
 ##  <a name="IsolateAnIssue"></a> 找出問題  
- 下列章節提供可協助您找出效能問題的建議。 如需使用效能測試應用程式範例以找出及修正效能問題的逐步說明，請參閱[逐步解說：改善 UI 回應性 (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md)。  
+ 下列章節提供可協助您找出效能問題的建議。 如需如何利用範例效能測試應用程式來找出效能問題並加以修正的逐步說明，請參閱[逐步解說：改善 UI 回應性 (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md)。  
   
-###  <a name="Workflow"></a> 找出 UI 回應性問題  
+###  <a name="Workflow"></a> 隔絕 UI 回應性問題  
  下列步驟提供的建議工作流程，有助於您更有效地使用 UI 回應性分析工具：  
   
 1.  在 Visual Studio 中開啟應用程式。  
@@ -193,7 +193,7 @@ if (performance.mark && performance.measure) {
 -   巡覽事件，當巡覽至其他頁面時發生。 事件的工具提示會顯示目的頁面 URL。  
   
 ###  <a name="CPUUtilization"></a> 檢視 CPU 使用率  
- CPU 使用率圖表可讓您識別有過多 CPU 活動的時段。 其中提供應用程式在一段時間的平均 CPU 消耗資訊。 資訊會以色彩標示，代表下列特定分類：[正在載入]、[正在處理指令碼]、記憶體回收 ([GC])、[樣式]、[正在轉譯] 和 [影像解碼中]。 如需這些分類的詳細資訊，請參閱本主題稍後的 [Profiler event reference](#ProfilerEvents) 。  
+ CPU 使用率圖表可讓您識別有過多 CPU 活動的時段。 其中提供應用程式在一段時間的平均 CPU 消耗資訊。 資訊會以色彩標示，代表下列特定分類：[ **正在載入**]、[ **正在處理指令碼**]、記憶體回收 ([**GC**])、[ **樣式**]、[ **正在轉譯**] 和 [ **影像解碼中**]。 如需這些分類的詳細資訊，請參閱本主題稍後的 [Profiler event reference](#ProfilerEvents) 。  
   
  CPU 使用率圖形顯示花在所有應用程式執行緒的時間，將一個或多個 CPU 的 CPU 使用率值合併為單一的百分比值。 當多個 CPU 正在使用中時，CPU 使用率值可能會超過 100%。  
   

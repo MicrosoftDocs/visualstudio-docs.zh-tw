@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立基本材質著色器 |Microsoft Docs
+title: 如何：建立基本材質著色器 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54793430"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>HOW TO：建立基本紋理著色器
+# <a name="how-to-create-a-basic-texture-shader"></a>如何：建立基本材質著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本文件將示範如何使用著色器設計工具和有向圖形著色器語言 (DGSL)，來建立單一材質著色器。 這個著色器會將完稿色彩直接設定為從材質中取樣 RGB 和 Alpha 值。  
@@ -66,7 +66,7 @@ ms.locfileid: "54793430"
  某些圖形可對一些著色器提供更佳的預覽。 如需如何在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)  
   
 ## <a name="see-also"></a>請參閱  
- [如何：將著色器套用至 3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [影像編輯器](../designers/image-editor.md)   
  [著色器設計工具](../designers/shader-designer.md)   
  [著色器設計工具節點](../designers/shader-designer-nodes.md)
