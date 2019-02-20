@@ -12,62 +12,62 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28f9a2437609109fcdaf85ceb2cfd6fe9dcb6879
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5805f34528225849afb51ce6a854ef5028acb3a5
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990468"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413029"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
-指定的準則來比較兩個文件內容。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-enum enum_DOCCONTEXT_COMPARE {   
-   DOCCONTEXT_EQUAL         = 0x0001,  
-   DOCCONTEXT_LESS_THAN     = 0x0002,  
-   DOCCONTEXT_GREATER_THAN  = 0x0003,  
-   DOCCONTEXT_SAME_DOCUMENT = 0x0004  
-};  
-typedef DWORD DOCCONTEXT_COMPARE;  
-```  
-  
-```csharp  
-enum enum_DOCCONTEXT_COMPARE {   
-   DOCCONTEXT_EQUAL         = 0x0001,  
-   DOCCONTEXT_LESS_THAN     = 0x0002,  
-   DOCCONTEXT_GREATER_THAN  = 0x0003,  
-   DOCCONTEXT_SAME_DOCUMENT = 0x0004  
-};  
-```  
-  
-## <a name="members"></a>成員  
- DOCCONTEXT_EQUAL  
- 找到的第一個文件內容等於目標文件內容的清單中。  
-  
- DOCCONTEXT_LESS_THAN  
- 小於目標文件內容的清單中找到的第一個文件內容。  
-  
- DOCCONTEXT_GREATER_THAN  
- 大於目標文件內容的清單中找到的第一個文件內容。  
-  
- DOCCONTEXT_SAME_DOCUMENT  
- 在目標文件內容相同文件中的清單中找到的第一個文件內容。  
-  
-## <a name="remarks"></a>備註  
- 作為引數[比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。  
-  
- 這些值會用來指定在清單中尋找第一個文件內容的比較準則。 文件內容有一份文件內容來比較自行針對透過`IDebugDocumentContext2::Compare`方法。 在清單中的比較運算子的第一個文件內容`true`再傳回。  
-  
-## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
-  
- 命名空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+指定的準則來比較兩個文件內容。
+
+## <a name="syntax"></a>語法
+
+```cpp
+enum enum_DOCCONTEXT_COMPARE {
+    DOCCONTEXT_EQUAL         = 0x0001,
+    DOCCONTEXT_LESS_THAN     = 0x0002,
+    DOCCONTEXT_GREATER_THAN  = 0x0003,
+    DOCCONTEXT_SAME_DOCUMENT = 0x0004
+};
+typedef DWORD DOCCONTEXT_COMPARE;
+```
+
+```csharp
+enum enum_DOCCONTEXT_COMPARE {
+    DOCCONTEXT_EQUAL         = 0x0001,
+    DOCCONTEXT_LESS_THAN     = 0x0002,
+    DOCCONTEXT_GREATER_THAN  = 0x0003,
+    DOCCONTEXT_SAME_DOCUMENT = 0x0004
+};
+```
+
+## <a name="members"></a>成員
+DOCCONTEXT_EQUAL  
+找到的第一個文件內容等於目標文件內容的清單中。
+
+DOCCONTEXT_LESS_THAN  
+小於目標文件內容的清單中找到的第一個文件內容。
+
+DOCCONTEXT_GREATER_THAN  
+大於目標文件內容的清單中找到的第一個文件內容。
+
+DOCCONTEXT_SAME_DOCUMENT  
+在目標文件內容相同文件中的清單中找到的第一個文件內容。
+
+## <a name="remarks"></a>備註
+作為引數[比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。
+
+這些值會用來指定在清單中尋找第一個文件內容的比較準則。 文件內容有一份文件內容來比較自行針對透過`IDebugDocumentContext2::Compare`方法。 在清單中的比較運算子的第一個文件內容`true`再傳回。
+
+## <a name="requirements"></a>需求
+標頭： msdbg.h
+
+命名空間：Microsoft.VisualStudio.Debugger.Interop
+
+組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>另請參閱
+[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

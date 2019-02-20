@@ -11,72 +11,72 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a457c6604dab2d6da3fec1e0a68a69b0183b617
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 02e88780e41b9a46163c7b66b2d83e64d190c307
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986341"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413380"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
-載入偵錯符號的資料流。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT LoadSymbolsFromStream(  
-   ULONG32   ulAppDomainID,  
-   GUID      guidModule,  
-   ULONGLONG baseAddress,  
-   IUnknown* pUnkMetadataImport,  
-   IStream*  pStream  
-);  
-```  
-  
-```csharp  
-int LoadSymbolsFromStream(  
-   uint    ulAppDomainID,  
-   Guid    guidModule,  
-   ulong   baseAddress,  
-   object  pUnkMetadataImport,  
-   IStream pStream  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `ulAppDomainID`  
- [in]應用程式定義域的識別項。  
-  
- `guidModule`  
- [in]模組的唯一識別碼。  
-  
- `baseAddress`  
- [in]基底的記憶體位址。  
-  
- `pUnkMetadataImport`  
- [in]包含符號的中繼資料的物件。  
-  
- `pStream`  
- [in]包含符號的資料流。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。 方法會呼叫[LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md)方法。  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    ULONGLONG baseOffset,  
-    IUnknown* pUnkMetadataImport,  
-    IStream* pStream  
-)  
-{  
-    return LoadSymbolsFromStreamWithCorModule (ulAppDomainID, guidModule, baseOffset, pUnkMetadataImport, NULL, pStream);  
-}  
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+載入偵錯符號的資料流。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT LoadSymbolsFromStream(
+    ULONG32   ulAppDomainID,
+    GUID      guidModule,
+    ULONGLONG baseAddress,
+    IUnknown* pUnkMetadataImport,
+    IStream*  pStream
+);
+```
+
+```csharp
+int LoadSymbolsFromStream(
+    uint    ulAppDomainID,
+    Guid    guidModule,
+    ulong   baseAddress,
+    object  pUnkMetadataImport,
+    IStream pStream
+);
+```
+
+#### <a name="parameters"></a>參數
+`ulAppDomainID`  
+[in]應用程式定義域的識別項。
+
+`guidModule`  
+[in]模組的唯一識別碼。
+
+`baseAddress`  
+[in]基底的記憶體位址。
+
+`pUnkMetadataImport`  
+[in]包含符號的中繼資料的物件。
+
+`pStream`  
+[in]包含符號的資料流。
+
+## <a name="return-value"></a>傳回值
+如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="example"></a>範例
+下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。 方法會呼叫[LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md)方法。
+
+```cpp
+HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    ULONGLONG baseOffset,
+    IUnknown* pUnkMetadataImport,
+    IStream* pStream
+)
+{
+    return LoadSymbolsFromStreamWithCorModule (ulAppDomainID, guidModule, baseOffset, pUnkMetadataImport, NULL, pStream);
+}
+```
+
+## <a name="see-also"></a>另請參閱
+[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
