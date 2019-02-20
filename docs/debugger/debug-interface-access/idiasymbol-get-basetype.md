@@ -12,60 +12,60 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ade7c30ec3cc67af28f3f609d91ccb0a3a8d289
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: c2844003bf7ec81b256537fe06520dfdff473faa
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993724"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227273"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
-擷取這個符號的基礎類型<em>。</em>  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_baseType (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pRetVal`  
- [out]傳回值，以從[BasicType 列舉](../../debugger/debug-interface-access/basictype.md)指定符號的基底類型的列舉類型。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
-  
+擷取這個符號的基礎類型<em>。</em>
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_baseType (
+    DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>參數
+`pRetVal`  
+[out]傳回值，以從[BasicType 列舉](../../debugger/debug-interface-access/basictype.md)指定符號的基底類型的列舉類型。
+
+## <a name="return-value"></a>傳回值
+如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不是適用於符號。  
-  
-## <a name="remarks"></a>備註  
- 符號的基本類型可以先取得符號的類型，和接著詢問傳回基底型別的型別來判斷。 請注意一些符號可能不會有基底類型 — 例如，結構的名稱。  
-  
-## <a name="example"></a>範例  
-  
-```C++  
-IDiaSymbol* pType;  
-CComPtr<IDiaSymbol> pBaseType;  
-if (pType->get_type( &pBaseType ) == S_OK)  
-{  
-    BasicType btBaseType;  
-    if (pBaseType->get_baseType((DWORD *)&btBaseType) == S_OK)  
-    {  
-        // Do something with basic type.  
-    }  
-}  
-```  
-  
-## <a name="requirements"></a>需求  
-  
-|需求|描述|  
-|-----------------|-----------------|  
-|標頭：|dia2.h|  
-|版本:|DIA SDK v7.0|  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [BasicType Enumeration](../../debugger/debug-interface-access/basictype.md)   
- [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)
+> 傳回值為`S_FALSE`表示屬性不是適用於符號。
+
+## <a name="remarks"></a>備註
+符號的基本類型可以先取得符號的類型，和接著詢問傳回基底型別的型別來判斷。 請注意一些符號可能不會有基底類型 — 例如，結構的名稱。
+
+## <a name="example"></a>範例
+
+```C++
+IDiaSymbol* pType;
+CComPtr<IDiaSymbol> pBaseType;
+if (pType->get_type( &pBaseType ) == S_OK)
+{
+    BasicType btBaseType;
+    if (pBaseType->get_baseType((DWORD *)&btBaseType) == S_OK)
+    {
+        // Do something with basic type.
+    }
+}
+```
+
+## <a name="requirements"></a>需求
+
+|需求|描述|
+|-----------------|-----------------|
+|標頭：|dia2.h|
+|版本:|DIA SDK v7.0|
+
+## <a name="see-also"></a>請參閱
+[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
+[BasicType 列舉](../../debugger/debug-interface-access/basictype.md)  
+[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

@@ -10,19 +10,18 @@ helpviewer_keywords:
 - assertions, debugging
 - assertions, assertion failures
 - Assertion Failed dialog box
-ms.assetid: 64af5bed-e38b-420f-b9ce-d64f35100aae
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: a51f2d87b432bf6f4a3925b55622273b56cf5c32
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 32e38dd3bba8a1127d8756972b73e8b47a514f1b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920960"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335177"
 ---
 # <a name="visual-cc-custom-visualizer-compatibility"></a>Visual C/c + + 自訂視覺化檢視相容性
 

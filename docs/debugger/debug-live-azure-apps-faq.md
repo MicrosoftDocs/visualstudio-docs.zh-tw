@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1465d7ee664b1c1d534350be19e4c067a74cb79
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0899b70ce4a917b0479a9ac6623e33ee8bcdbe22
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024496"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335099"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>B80acca24f64">frequently Asked Questions for Visual Studio 偵錯快照集
 
@@ -57,4 +57,6 @@ ms.locfileid: "55024496"
 
 [Visual Studio 偵錯](../debugger/index.md)  
 [使用快照集偵錯工具的即時 ASP.NET 應用程式進行偵錯](../debugger/debug-live-azure-applications.md)  
+[偵錯即時 ASP.NET Azure 虛擬 Machines\Virtual 機器擴展集使用快照集偵錯工具](../debugger/debug-live-azure-virtual-machines.md)  
+[偵錯即時 ASP.NET Azure Kubernetes 中使用快照集偵錯工具](../debugger/debug-live-azure-kubernetes.md)  
 [疑難排解和已知問題的快照集偵錯](../debugger/debug-live-azure-apps-troubleshooting.md)

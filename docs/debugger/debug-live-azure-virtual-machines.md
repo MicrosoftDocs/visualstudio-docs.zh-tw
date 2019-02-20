@@ -1,25 +1,26 @@
 ---
-title: 偵錯即時 ASP.NET Azure 應用程式
+title: 偵錯即時 ASP.NET Azure 虛擬機器和 Azure 虛擬機器擴展集
 description: 了解如何設定貼齊點與檢視快照集與快照集偵錯工具。
 ms.custom: ''
-ms.date: 03/16/2018
+ms.date: 02/06/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
+author: poppastring
+ms.author: madownie
+manager: andster
+monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
+ms.openlocfilehash: 7a0363c26171382b0cab13e529b08378681f3f65
 ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335593"
+ms.locfileid: "56335977"
 ---
-# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>偵錯即時 ASP.NET Azure 應用程式使用快照集偵錯工具
+# <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>偵錯 Azure 虛擬機器上的即時 ASP.NET 應用程式和 Azure 虛擬機器擴展集使用快照集偵錯工具
 
 您感興趣的程式碼執行時，快照集偵錯工具會在生產應用程式的快照集。 若要指示偵錯工具擷取快照集，您可以在程式碼中設定快照點和記錄點。 偵錯工具可讓您清楚了解發生什麼問題，而不會影響實際執行應用程式的流量。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
 
@@ -34,13 +35,11 @@ ms.locfileid: "56335593"
 
 ## <a name="prerequisites"></a>必要條件
 
-* 快照偵錯工具僅適用於 Visual Studio 2017 Enterprise 15.5 版或更高版本**Azure 開發工作負載**。 (下**個別元件**索引標籤上，您會發現下**偵錯和測試** > **快照偵錯工具**。)
+* Azure 虛擬機器 (VM) 和 Azure 虛擬機器擴展集 (VMSS) 的快照集偵錯工具僅適用於 Visual Studio 2019 Enterprise 預覽或更高版本**Azure 開發工作負載**。 (下**個別元件**索引標籤上，您會發現下**偵錯和測試** > **快照偵錯工具**。)
 
-    如果尚未安裝，安裝[Visual Studio 2017 Enterprise 版本 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)或更新版本。 如果您從舊版的 Visual Studio 2017 安裝中更新，執行 Visual Studio 安裝程式，並簽入的快照集偵錯工具元件**ASP.NET 和 web 開發工作負載**。
+    如果尚未安裝，安裝[Visual Studio 2019 Enterprise preview](https://visualstudio.microsoft.com/vs/preview/)。
 
-* 基本或更高版本的 Azure App Service 方案。
-
-* 快照集合適用於 Azure App Service 中執行的下列 Web 應用程式：
+* 快照集集合適用於下列的 Azure VM/VMSS web 應用程式：
   * 執行 .NET Framework 4.6.1 或更新版本的 ASP.NET 應用程式。
   * 在 Windows 上執行 .NET Core 2.0 或更新版本的 ASP.NET Core 應用程式。
 
@@ -49,44 +48,37 @@ ms.locfileid: "56335593"
 1. 開啟您想要的快照集偵錯的專案。
 
     > [!IMPORTANT]
-    > 快照集偵錯，您需要開啟*相同版本的原始程式碼*發行至 Azure App Service。
-::: moniker range="< vs-2019"
+    > 快照集偵錯，您需要開啟*相同版本的原始程式碼*發行至您的 Azure VM/VMSS 服務。
 
-2. 在 [雲端總管] (**檢視 > Cloud Explorer**)，以滑鼠右鍵按一下您的專案部署至 Azure App Service，然後選取**附加快照偵錯工具**。
+1. 附加快照偵錯工具。 您可以使用數種不同的方法之一：
 
-   ![啟動快照集偵錯工具](../debugger/media/snapshot-launch.png)
-
-    您選取的第一次**附加快照偵錯工具**，系統會提示您在 Azure App Service 上安裝快照偵錯工具網站延伸模組。 此安裝需要重新啟動您的 Azure App Service。
-
-::: moniker-end
-::: moniker range=">= vs-2019"
-2. 附加快照偵錯工具。 您可以使用數種不同的方法之一：
-
-    * 選擇**偵錯 > 附加快照偵錯工具...**.選取您的專案部署至 Azure App Service 和 Azure 儲存體帳戶，然後再按一下**附加**。
+    * 選擇**偵錯 > 附加快照偵錯工具...**.選取您的 web 應用程式部署至 Azure VM/VMSS 和 Azure 儲存體帳戶，然後再按一下**附加**。
   
       ![啟動快照集偵錯工具偵錯 功能表](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * 以滑鼠右鍵按一下專案，然後選取**發佈**，然後在發佈頁面上，按一下**附加快照偵錯工具**。 選取您的專案部署至 Azure App Service 和 Azure 儲存體帳戶，然後再按一下**附加**。
+    * 以滑鼠右鍵按一下專案，然後選取**發佈**，然後在發佈頁面上，按一下**附加快照偵錯工具**。 選取您的 web 應用程式部署至 Azure VM/VMSS 和 Azure 儲存體帳戶，然後再按一下**附加**。
     ![啟動快照集偵錯工具，從 [發行] 頁面](../debugger/media/snapshot-publish-attach.png)
 
-    * 在偵錯目標下拉式選單選取**快照集偵錯工具**、 點擊**F5**然後視需要選取 如果您的專案部署至 Azure App Service 和 Azure 儲存體帳戶，然後再按一下**附加**。
+    * 在偵錯目標下拉式選單選取**快照集偵錯工具**、 點擊**F5**如果視需要選取您的 web 應用程式部署至 Azure VM/VMSS 和 Azure 儲存體帳戶，然後按一下  **附加**。
     ![啟動快照集偵錯工具，從 [F5] 下拉式清單功能表](../debugger/media/snapshot-F5-dropdown-attach.png)
 
-    * 使用 [雲端總管] (**檢視 > Cloud Explorer**)，以滑鼠右鍵按一下您的專案部署至 Azure App Service 和選取 Azure 儲存體帳戶，然後按一下**附加快照偵錯工具**。
+    * 使用 [雲端總管] (**檢視 > Cloud Explorer**)，以滑鼠右鍵按一下您的 web 應用程式部署至 Azure VM/VMSS 和選取 Azure 儲存體帳戶，然後按一下**附加快照偵錯工具**。
   
       ![啟動快照集偵錯工具，從 [雲端總管]](../debugger/media/snapshot-launch.png)
 
-    您選取的第一次**附加快照偵錯工具**，系統會提示您在 Azure App Service 上安裝快照偵錯工具網站延伸模組。 此安裝需要重新啟動您的 Azure App Service。
-::: moniker-end
+    > [!IMPORTANT]
+    > 您選取的第一次**附加快照偵錯工具**為您的 VM，IIS 會自動重新啟動。
+    > 您選取的第一次**附加快照偵錯工具**適用於您的 VMSS，需要手動升級每個 VMSS 執行個體。
 
-   Visual Studio 現在是在快照集偵錯模式中。
+    中繼資料**模組**將不一開始會啟動，瀏覽至 web 應用程式和**開始收集**按鈕會變成作用中。 Visual Studio 現在是在快照集偵錯模式中。
 
-  > [!NOTE]
-  > Application Insights 網站延伸模組也支援快照集偵錯。 如果您遇到 「 網站過時的延伸模組 」 的錯誤訊息，請參閱[疑難排解秘訣和已知的問題的快照集偵錯](../debugger/debug-live-azure-apps-troubleshooting.md)升級詳細資料。
+    > [!NOTE]
+    > Application Insights 網站延伸模組也支援快照集偵錯。 如果您遇到 「 網站過時的延伸模組 」 的錯誤訊息，請參閱[疑難排解秘訣和已知的問題的快照集偵錯](../debugger/debug-live-azure-apps-troubleshooting.md)升級詳細資料。
+    > VMSS 的使用者，才能手動將其 VMSS 中的執行個體升級之後第一次附加快照偵錯工具的。
 
    ![快照集偵錯模式](../debugger/media/snapshot-message.png)
 
-   **模組**視窗會顯示您的 Azure App Service 的所有模組已都載入時 (選擇**偵錯 > Windows > 模組**若要開啟此視窗)。
+   **模組**視窗會顯示您所有的模組時載入的 Azure VM/VMSS (選擇**偵錯 > Windows > 模組**若要開啟此視窗)。
 
    ![核取 [模組] 視窗](../debugger/media/snapshot-modules.png)
 
@@ -96,7 +88,7 @@ ms.locfileid: "56335593"
 
    ![設定貼齊點](../debugger/media/snapshot-set-snappoint.png)
 
-2. 按一下 **開始收集**開啟貼齊點。
+1. 按一下 **開始收集**開啟貼齊點。
 
    ![開啟貼齊點](../debugger/media/snapshot-start-collection.png)
 
@@ -163,7 +155,7 @@ ms.locfileid: "56335593"
 
 ## <a name="next-steps"></a>後續步驟
 
-在本教學課程中，您已了解如何使用 App service 的快照集偵錯工具。 若要閱讀有關這項功能的更多詳細資料。
+在本教學課程中，您已了解如何使用 Azure 虛擬機器和 Azure 虛擬機器擴展集的快照集偵錯工具。 若要閱讀有關這項功能的更多詳細資料。
 
 > [!div class="nextstepaction"]
 > [快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)
