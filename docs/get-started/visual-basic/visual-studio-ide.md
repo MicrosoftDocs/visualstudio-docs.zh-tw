@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ee53c59c0ff3fcc898e30551357733b9d8b71725
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 7cd9bf3cd624439e2f4846043822305743520931
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155704"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318663"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>歡迎使用 Visual Studio IDE | Visual Basic
 
@@ -296,4 +296,4 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - 探索[更多 Visual Studio 功能](../../ide/advanced-feature-overview.md)
 - 瀏覽 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- 閱讀 [Visual Studio 部落格](https://blogs.msdn.microsoft.com/visualstudio/)
+- 閱讀 [Visual Studio 部落格](https://devblogs.microsoft.com/visualstudio/)

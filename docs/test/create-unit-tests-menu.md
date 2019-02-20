@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 577cb338e7cbf20b23d2d75ad2dfded017b0aacb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955137"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315101"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用建立單元測試命令來建立單元測試方法虛設常式
 
@@ -60,11 +60,11 @@ Visual Studio Marketplace 提供測試架構延伸模組︰
 
 ## <a name="when-should-i-use-this-feature"></a>何時應該使用這項功能？
 
-只要您需要建立單元測試，但特別是當您要測試僅有少量或沒有測試涵蓋範圍且沒有文件的現有程式碼時，就會使用此功能。 換句話說，其中具有有限或不存在的程式碼規格。 它會有效地實作與 [Smart unit tests](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/) (智慧型單元測試) 類似的方法，以描述觀察到的程式碼行為。
+只要您需要建立單元測試，但特別是當您要測試僅有少量或沒有測試涵蓋範圍且沒有文件的現有程式碼時，就會使用此功能。 換句話說，其中具有有限或不存在的程式碼規格。 它會有效地實作與 [Smart unit tests](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/) (智慧型單元測試) 類似的方法，以描述觀察到的程式碼行為。
 
 不過，這項功能也同樣適用於這種情況；其中，開發人員會開始撰寫某個程式碼，並使用該程式碼來啟動單元測試專業領域。 在編碼流程內，開發人員可能想要快速建立特定程式碼部分的單元測試方法虛設常式 (具有適當的測試類別，以及適當的測試專案)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用 [建立單元測試] 來建立單元測試方法虛設常式](https://blogs.msdn.microsoft.com/devops/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/) \(英文\)
-- [單元測試部落格文章](https://blogs.msdn.microsoft.com/devops/?s=unit+testing) \(英文\)
+- [使用 [建立單元測試] 來建立單元測試方法虛設常式](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/) \(英文\)
+- [單元測試部落格文章](https://devblogs.microsoft.com/devops/?s=unit+testing) \(英文\)

@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7799abea1ab8dcb0c792d5ba49c66274d255685
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: aaa5443c8fdbe2dd8a39f082ee92e9522c6de7bc
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155990"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317220"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>歡迎使用 Visual Studio IDE | C#
 
@@ -122,18 +122,6 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 若要了解您可以個人化 IDE 的其他方式，請參閱[個人化 Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="create-a-program"></a>建立程式
-
-首先，我們將設定 Visual Studio 來使用為 C# 開發人員量身打造的環境設定。
-
-1. 在功能表列上，選擇 [工具] > [匯入和匯出設定]。
-
-2. 在 [匯入和匯出設定精靈] 中，選取第一頁上的 [重設所有設定]，然後選擇 [下一步]。
-
-3. 在 [儲存目前設定] 頁面上，選取一個選項來指出是否要儲存目前的設定，然後選擇 [下一步]。 (如果您尚未自訂任何設定，請選取 [否，直接重設設定並覆寫目前的設定])。
-
-4. 在 [選擇預設的設定集合] 頁面上，選擇 [Visual C#]，然後選擇 [完成]。
-
-5. 在 [重設完成] 頁面上，選擇 [關閉]。
 
 讓我們來深入探討並建立一個簡單的程式。
 
@@ -303,4 +291,4 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - 探索[更多 Visual Studio 功能](../../ide/advanced-feature-overview.md)
 - 瀏覽 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- 閱讀 [Visual Studio 部落格](https://blogs.msdn.microsoft.com/visualstudio/)
+- 閱讀 [Visual Studio 部落格](https://devblogs.microsoft.com/visualstudio/)

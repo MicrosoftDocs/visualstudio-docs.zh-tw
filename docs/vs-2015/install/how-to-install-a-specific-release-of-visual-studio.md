@@ -1,5 +1,5 @@
 ---
-title: HOW TO：安裝特定版本 |Microsoft Docs
+title: 如何： 安裝特定版本 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -12,13 +12,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5f74512d0c035a82845d77f4b3df12633036f03
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756356"
 ---
-# <a name="how-to-install-a-specific-release-of-visual-studio"></a>HOW TO：安裝特定版本的 Visual Studio
+# <a name="how-to-install-a-specific-release-of-visual-studio"></a>如何：安裝特定版本的 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 我們時常更新 Visual Studio 安裝程式，以便讓您取得最新且最佳化版本的選擇性功能。  但如果您想安裝舊版 Visual Studio 2015 (例如包括 iOS 支援，且在 Update 1 之前版本的 Visual Studio 2015)，則必須強制 Visual Studio 安裝程式使用舊版的功能資訊清單檔案。 本文說明如何執行這項操作。

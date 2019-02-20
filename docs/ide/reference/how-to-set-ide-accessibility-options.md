@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aad7b5896ce8f090ef627fe9d08b0eae506a42cc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5763178ecf30cc0c946c8810770ba2948383a715
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928435"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317181"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>HOW TO：設定 IDE 協助工具選項
+# <a name="how-to-set-ide-accessibility-options"></a>作法：設定 IDE 協助工具選項
 
 > [!TIP]
-> 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
+> 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包含功能，可讓視力障礙人士更容易閱讀，讓靈活度有限的人士更容易書寫。 這些功能包括在編輯器中變更文字的大小和色彩、變更工具列上的文字和按鈕大小，和自動完成方法及參數等等。
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32bb2ea08ffc5b60948d45c31b7c7a471d7d57ea
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d38f102dd0a61d80c383307abdc96a03b50c0d74
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155952"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316817"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>歡迎使用 Visual Studio IDE
 
@@ -285,5 +285,5 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - 探索[更多 Visual Studio 功能](../ide/advanced-feature-overview.md)
 - 瀏覽 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- 閱讀 [Visual Studio 部落格](https://blogs.msdn.microsoft.com/visualstudio/)
+- 閱讀 [Visual Studio 部落格](https://devblogs.microsoft.com/visualstudio/)
 - 在 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)，下載 Visual Studio

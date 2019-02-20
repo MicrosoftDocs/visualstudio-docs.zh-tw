@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 33c148b459e34da26f068fe041d90979c7244cde
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780494"
 ---
 # <a name="supplying-xml-code-comments"></a>提供 XML 程式碼註解
@@ -27,7 +27,7 @@ ms.locfileid: "54780494"
 
 您可以將原始程式碼檔中的註解當成 IntelliSense 使用。 將 /doc 參數新增至 Visual Basic、C# 或 C++ 編譯器命令列時，會產生當成 IntelliSense 文件基礎的 .xml 檔案。  
   
- 如需撰寫 Visual Basic 中的程式碼的詳細資訊，請參閱[How to:建立 XML 文件](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230)。  
+ 如需在 Visual Basic 中撰寫程式碼的詳細資訊，請參閱[如何：建立 XML 文件](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230)。  
   
  如需在 C# 中撰寫程式碼的詳細資訊，請參閱 [XML 文件註解](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)。  
   

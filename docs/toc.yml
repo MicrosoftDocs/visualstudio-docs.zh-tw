@@ -322,6 +322,10 @@ items:
           items:
           - name: 變更方法簽章
             href: ide/reference/change-method-signature.md
+          - name: 將匿名型別轉換為類別
+            href: ide/reference/convert-anonymous-type-to-class.md
+          - name: 將匿名型別轉換為元組
+            href: ide/reference/convert-anonymous-type-to-tuple.md
           - name: For 迴圈與 foreach 陳述式之間的轉換
             href: ide/reference/convert-for-loop-to-foreach.md
           - name: Get 方法與屬性之間的轉換
@@ -340,6 +344,8 @@ items:
             href: ide/reference/move-declaration-near-reference.md
           - name: 將類型移至相符的檔案
             href: ide/reference/move-type-to-matching-file.md
+          - name: 成員上移
+            href: ide/reference/pull-members-up.md
           - name: 移除執行不到的程式碼
             href: ide/reference/remove-unreachable-code.md
           - name: 重新命名
@@ -348,6 +354,8 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: 使用明確類型
             href: ide/reference/convert-var-to-explicit-type.md
+          - name: 使參數換行、縮排及對齊
+            href: ide/reference/wrap-align-indent-parameters.md
         - name: 逐步解說：使用時產生程式碼
           href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
       - name: 生產力祕訣
@@ -508,6 +516,11 @@ items:
       href: vsto/office-and-sharepoint-development-in-visual-studio.md
     - name: 使用 XML 與 XSLT 檔案
       href: xml-tools/xml-tools-in-visual-studio.md
+    - name: 開發國際化應用程式
+      href: ide/globalizing-and-localizing-applications.md
+      items:
+      - name: 雙向語言
+        href: ide/creating-applications-in-bi-directional-languages.md
     - name: 其他教學課程
       items:
       - name: 使用 C# 或 Visual Basic 建立 WPF 應用程式
@@ -696,29 +709,6 @@ items:
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
     - name: 用於設計無障礙應用程式的資源
       href: ide/reference/resources-for-designing-accessible-applications.md
-  - name: 全球化和當地語系化應用程式
-    href: ide/globalizing-and-localizing-applications.md
-    items:
-    - name: 國際化 .NET Framework 應用程式簡介
-      href: ide/introduction-to-international-applications-based-on-the-dotnet-framework.md
-    - name: 將應用程式當地語系化
-      href: ide/localizing-applications.md
-      items:
-      - name: 階層式組織當地語系化的資源
-        href: ide/hierarchical-organization-of-resources-for-localization.md
-      - name: 安全性和當地語系化附屬組件
-        href: ide/security-and-localized-satellite-assemblies.md
-      - name: 主要和當地語系化附屬組件的版本號碼
-        href: ide/version-numbers-for-main-and-localized-satellite-assemblies.md
-      - name: 當地語系化的中性資源語言
-        href: ide/neutral-resources-languages-for-localization.md
-    - name: 將應用程式全球化
-      href: ide/globalizing-applications.md
-      items:
-      - name: 全域 Windows Form 和 Web Form 的文化特性特定類別
-        href: ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md
-    - name: 以雙向語言建立應用程式
-      href: ide/creating-applications-in-bi-directional-languages.md
 - name: 參考資料
   items:
   - name: 一般使用者介面項目
@@ -1145,9 +1135,9 @@ items:
   - name: 告訴我們
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 69a36121297349edd6a3e79880935a9b3ed6fe75
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: d81e33771d4e5b8333c7dddf7311e63488a55604
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424612"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335580"
