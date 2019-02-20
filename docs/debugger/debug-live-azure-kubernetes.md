@@ -1,0 +1,158 @@
+---
+title: 偵錯即時 ASP.NET Azure Kubernetes 服務
+description: 了解如何設定貼齊點與檢視快照集與快照集偵錯工具。
+ms.custom: ''
+ms.date: 02/11/2019
+ms.topic: conceptual
+helpviewer_keywords:
+- debugger
+author: poppastring
+ms.author: madownie
+manager: andster
+monikerRange: vs-2019
+ms.workload:
+- aspnet
+- azure
+ms.openlocfilehash: b3bbffc0ae04fa9a91739a14ce4b0b4d85215ea8
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
+ms.contentlocale: zh-TW
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335973"
+---
+# <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>偵錯快照集偵錯工具使用即時的 ASP.NET Azure Kubernetes 服務
+
+您感興趣的程式碼執行時，快照集偵錯工具會在生產應用程式的快照集。 若要指示偵錯工具擷取快照集，您可以在程式碼中設定快照點和記錄點。 偵錯工具可讓您清楚了解發生什麼問題，而不會影響實際執行應用程式的流量。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
+
+貼齊點和記錄點類似於中斷點，但與中斷點不同，貼齊點未暫止應用程式叫用時。 一般而言，擷取快照時貼齊點需要 10 到 20 毫秒。
+
+在本教學課程中，您將進行下列作業：
+
+> [!div class="checklist"]
+> * 啟動快照集偵錯工具
+> * 設定貼齊點與檢視快照集
+> * 設定記錄點
+
+## <a name="prerequisites"></a>必要條件
+
+* Azure Kubernetes 服務只是適用於 Visual Studio 2019 Enterprise 預覽或更高版本的快照集偵錯工具**Azure 開發工作負載**。 (下**個別元件**索引標籤上，您會發現下**偵錯和測試** > **快照偵錯工具**。)
+
+    如果尚未安裝，安裝[Visual Studio 2019 Enterprise preview](https://visualstudio.microsoft.com/vs/preview/)。
+
+* 快照集集合適用於下列的 Azure Kubernetes 服務 web 應用程式：
+  * 執行.NET Core 2.2 或更新版本上的 Debian 9 上的 ASP.NET Core 應用程式。
+  * 在.NET Core 2.2 或更新版本上 Alpine 3.8 上執行的 ASP.NET Core 應用程式。
+  * 在.NET Core 2.2 或更新版本上 Ubuntu 18.04 上執行的 ASP.NET Core 應用程式。
+
+    > [!NOTE]
+    > 若要可協助您啟用支援快照集偵錯工具，在我們所提供的 AKS[存放庫包含一組示範在 Docker 映像上的安裝的 Dockerfiles](https://github.com/Microsoft/vssnapshotdebugger-docker)。
+
+## <a name="open-your-project-and-start-the-snapshot-debugger"></a>開啟您的專案，並啟動快照集偵錯工具
+
+1. 開啟您想要的快照集偵錯的專案。
+
+    > [!IMPORTANT]
+    > 快照集偵錯，您需要開啟*相同版本的原始程式碼*發行至您的 Azure Kubernetes 服務。
+
+1. 附加快照偵錯工具。 您可以使用數種不同的方法之一：
+
+    * 選擇**偵錯 > 附加快照偵錯工具...**.選取您的 web 應用程式部署到 AKS 資源和 Azure 儲存體帳戶，然後再按一下**附加**。
+  
+      ![啟動快照集偵錯工具偵錯 功能表](../debugger/media/snapshot-debug-menu-attach.png)
+
+    * 以滑鼠右鍵按一下專案，然後選取**發佈**，然後在發佈頁面上，按一下**附加快照偵錯工具**。 選取您的 web 應用程式部署到 AKS 資源和 Azure 儲存體帳戶，然後再按一下**附加**。
+    ![啟動快照集偵錯工具，從 [發行] 頁面](../debugger/media/snapshot-publish-attach.png)
+
+    * 在偵錯目標下拉式選單選取**快照集偵錯工具**、 點擊**F5**如果視需要選取 web 應用程式部署到 AKS 資源和 Azure 儲存體帳戶，然後按一下  **附加**。
+    ![啟動快照集偵錯工具，從 [F5] 下拉式清單功能表](../debugger/media/snapshot-F5-dropdown-attach.png)
+
+    * 使用 [雲端總管] (**檢視 > Cloud Explorer**)，您的 web 應用程式部署到 AKS 資源和 Azure 儲存體帳戶，以滑鼠右鍵按一下，然後按一下**附加快照偵錯工具**。
+  
+      ![啟動快照集偵錯工具，從 [雲端總管]](../debugger/media/snapshot-launch.png)
+
+    > [!NOTE]
+    > Application Insights 網站延伸模組也支援快照集偵錯。 如果您遇到 「 網站過時的延伸模組 」 的錯誤訊息，請參閱[疑難排解秘訣和已知的問題的快照集偵錯](../debugger/debug-live-azure-apps-troubleshooting.md)升級詳細資料。
+
+   ![快照集偵錯模式](../debugger/media/snapshot-message.png)
+
+   **模組**視窗會顯示您的 Azure App Service 的所有模組已都載入時 (選擇**偵錯 > Windows > 模組**若要開啟此視窗)。
+
+   ![核取 [模組] 視窗](../debugger/media/snapshot-modules.png)
+
+## <a name="set-a-snappoint"></a>設定貼齊點
+
+1. 在程式碼編輯器中，按一下您感興趣設定貼齊點的程式碼行旁的左裝訂邊。 請確定它是您知道將會執行的程式碼。
+
+   ![設定貼齊點](../debugger/media/snapshot-set-snappoint.png)
+
+1. 按一下 **開始收集**開啟貼齊點。
+
+   ![開啟貼齊點](../debugger/media/snapshot-start-collection.png)
+
+    > [!TIP]
+    > 您無法逐步檢視快照集時，但您可以將多個貼齊點放在您的程式碼，遵循在不同的幾行程式碼執行。 如果您有多個貼齊點在您的程式碼時，快照集偵錯工具確保對應的快照集是從相同的使用者工作階段。 快照集偵錯工具這樣即使有許多使用者達到您的應用程式。
+
+## <a name="take-a-snapshot"></a>建立快照集
+
+當開啟貼齊點時，它會擷取快照集，每當貼齊點所在的程式碼行執行。 這項執行可能因您的伺服器上的實際要求。 若要強制您的貼齊點按、 移至您的網站瀏覽器檢視，並採取任何動作所需，會導致您叫用的貼齊點。
+
+## <a name="inspect-snapshot-data"></a>檢查快照集的資料
+
+1. 當叫用的貼齊點時，快照集會出現在 [診斷工具] 視窗中。 若要開啟此視窗，選擇**偵錯 > Windows > 顯示診斷工具**。
+
+   ![開啟貼齊點](../debugger/media/snapshot-diagsession-window.png)
+
+1. 按兩下以開啟 程式碼編輯器中的 快照集的貼齊點。
+
+   ![檢查快照集的資料](../debugger/media/snapshot-inspect-data.png)
+
+   從這個檢視中，您可以將滑鼠移至變數，以檢視資料提示方塊中，使用**區域變數**，**監看式**，並**呼叫堆疊**windows，並同時評估運算式。
+
+    在網站本身是仍然即時和終端使用者不會受到影響。 只有一個快照集時，會擷取每個貼齊點上，依預設： 貼齊點在擷取快照集之後會關閉。 如果您想要擷取的貼齊點在另一個快照集，您可以開啟貼齊點上一步，即可**更新集合**。
+
+您也可以將更多的貼齊點新增至您的應用程式，並將其開啟與**更新集合** 按鈕。
+
+**需要協助嗎？** 請參閱[疑難排解和已知的問題](../debugger/debug-live-azure-apps-troubleshooting.md)並[快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)頁面。
+
+## <a name="set-a-conditional-snappoint"></a>設定條件式的貼齊點
+
+如果很難重新建立您的應用程式中的特定狀態，請考慮使用條件式的貼齊點是否可以協助。 條件式貼齊點可協助您避免建立快照集，直到應用程式進入所需的狀態，例如當變數只有您想要檢查的特定值。 您可以設定使用運算式，篩選條件，或叫用次數。
+
+#### <a name="to-create-a-conditional-snappoint"></a>若要建立條件式的貼齊點
+
+1. 以滑鼠右鍵按一下 貼齊點圖示 （空心的球），然後選擇 **設定**。
+
+   ![選擇設定](../debugger/media/snapshot-snappoint-settings.png)
+
+1. 在 [貼齊點設定] 視窗中，輸入運算式。
+
+   ![輸入運算式](../debugger/media/snapshot-snappoint-conditions.png)
+
+   在上圖中，只擷取快照的貼齊點時`visitor.FirstName == "Dan"`。
+
+## <a name="set-a-logpoint"></a>設定記錄點
+
+除了貼齊點叫用時，請建立快照集，您也可以設定將訊息記錄的貼齊點 （也就是建立記錄點）。 您可以設定記錄點，而不必重新部署您的應用程式。 記錄點幾乎執行，並不造成任何影響或副作用，您執行的應用程式。
+
+#### <a name="to-create-a-logpoint"></a>若要建立記錄點
+
+1. 以滑鼠右鍵按一下 貼齊點圖示 （藍色六邊形），然後選擇 **設定**。
+
+1. 在 [貼齊點設定] 視窗中，選取**動作**。
+
+    ![建立記錄點](../debugger/media/snapshot-logpoint.png)
+
+1. 在 [**訊息**] 欄位中，您可以輸入您想要記錄的新記錄檔訊息。 您也可以將它們放在大括號內，來評估您的記錄檔訊息中的變數。
+
+    如果您選擇**傳送到輸出視窗**，當到達記錄點時，訊息會出現在 [診斷工具] 視窗。
+
+    ![Diagsession 視窗中的記錄點資料](../debugger/media/snapshot-logpoint-output.png)
+
+    如果您選擇**傳送至應用程式記錄檔**，當叫用的記錄點，則訊息會出現任何位置，您可以看到來自`System.Diagnostics.Trace`(或`ILogger`.NET Core 中)，例如[App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)。
+
+## <a name="next-steps"></a>後續步驟
+
+在本教學課程中，您已了解如何使用 Azure Kubernetes 的快照集偵錯工具。 若要閱讀有關這項功能的更多詳細資料。
+
+> [!div class="nextstepaction"]
+> [快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)

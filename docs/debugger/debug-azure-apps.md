@@ -10,18 +10,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 72947a75cb782ad92444dd58658dbeebce55012a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6190f4e735b7b3f05efe80f8d8562ac03f1ee3c8
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967569"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335025"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>偵錯 Visual Studio 中的 Azure 服務
 
 您可以使用 Visual Studio 來偵錯在不同案例中的 Azure 服務：
 
 - 若要偵錯 Azure App Service 中裝載生產應用程式，請參閱[偵錯即時 ASP.NET 應用程式中使用快照集偵錯工具](../debugger/debug-live-azure-applications.md)。
+
+- 若要偵錯生產應用程式裝載於 Azure 虛擬機器或 Azure 虛擬機器擴展集，請參閱[偵錯即時 ASP.NET Azure 虛擬機器與 Azure 虛擬機器擴展集使用快照集偵錯工具](../debugger/debug-live-azure-virtual-machines.md)。
+
+- 若要偵錯 Azure Kubernetes Service 中裝載生產應用程式，請參閱[偵錯即時 ASP.NET Azure Kubernetes 服務使用快照集偵錯工具](../debugger/debug-live-azure-kubernetes.md)。
 
 - 若要使用 Application Insights 的生產應用程式進行偵錯和裝載於 Azure App Service 或 Service Fabric 中，請參閱[偵錯.NET 應用程式中的例外狀況的快照集](/azure/application-insights/app-insights-snapshot-debugger)。
 

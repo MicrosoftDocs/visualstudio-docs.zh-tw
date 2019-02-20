@@ -12,69 +12,69 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bbe801b749b60cd22ce8a980ea78b7713fa4422
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8fa637a5f403a4651541d920c6390204ee579994
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973885"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318611"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
-指定符號和檔案名稱的搜尋選項。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-enum NameSearchOptions {   
-   nsNone,  
-   nsfCaseSensitive     = 0x1,  
-   nsfCaseInsensitive   = 0x2,  
-   nsfFNameExt          = 0x4,  
-   nsfRegularExpression = 0x8,  
-   nsfUndecoratedName   = 0x10,  
-  
-// For backward compatibility:  
-   nsCaseSensitive           = nsfCaseSensitive,  
-   nsCaseInsensitive         = nsfCaseInsensitive,  
-   nsFNameExt                = nsfCaseInsensitive | nsfFNameExt,  
-   nsRegularExpression       = nsfRegularExpression | nsfCaseSensitive,  
-   nsCaseInRegularExpression = nsfRegularExpression | nsfCaseInsensitive  
-};  
-```  
-  
-## <a name="elements"></a>項目  
- `nsNone`  
- 未指定任何選項。  
-  
- `nsfCaseSensitive`  
- 適用於區分大小寫的名稱相符項目。  
-  
- `nsfCaseInsensitive`  
- 適用於不區分大小寫的名稱相符項目。  
-  
- `nsfFNameExt`  
- 視為路徑的名稱，並套用 filename.ext 名稱相符項目。  
-  
- `nsfRegularExpression`  
- 適用於區分大小寫的名稱比對使用星號 （*） 和問號 （？） 作為萬用字元。  
-  
- `nsfUndecoratedName`  
- 僅適用於具有未裝飾和裝飾名稱的符號。  
-  
-## <a name="remarks"></a>備註  
- 這個列舉的值會傳遞下列方法：  
-  
--   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
-  
--   [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)  
-  
--   [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
-  
-## <a name="requirements"></a>需求  
- 標頭： dia2.h  
-  
-## <a name="see-also"></a>請參閱  
- [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+指定符號和檔案名稱的搜尋選項。
+
+## <a name="syntax"></a>語法
+
+```C++
+enum NameSearchOptions {
+    nsNone,
+    nsfCaseSensitive     = 0x1,
+    nsfCaseInsensitive   = 0x2,
+    nsfFNameExt          = 0x4,
+    nsfRegularExpression = 0x8,
+    nsfUndecoratedName   = 0x10,
+
+// For backward compatibility:
+    nsCaseSensitive           = nsfCaseSensitive,
+    nsCaseInsensitive         = nsfCaseInsensitive,
+    nsFNameExt                = nsfCaseInsensitive | nsfFNameExt,
+    nsRegularExpression       = nsfRegularExpression | nsfCaseSensitive,
+    nsCaseInRegularExpression = nsfRegularExpression | nsfCaseInsensitive
+};
+```
+
+## <a name="elements"></a>項目
+`nsNone`  
+未指定任何選項。
+
+`nsfCaseSensitive`  
+適用於區分大小寫的名稱相符項目。
+
+`nsfCaseInsensitive`  
+適用於不區分大小寫的名稱相符項目。
+
+`nsfFNameExt`  
+視為路徑的名稱，並套用 filename.ext 名稱相符項目。
+
+`nsfRegularExpression`  
+適用於區分大小寫的名稱比對使用星號 （*） 和問號 （？） 作為萬用字元。
+
+`nsfUndecoratedName`  
+僅適用於具有未裝飾和裝飾名稱的符號。
+
+## <a name="remarks"></a>備註
+這個列舉的值會傳遞下列方法：
+
+- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
+
+- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)
+
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+
+## <a name="requirements"></a>需求
+標頭： dia2.h
+
+## <a name="see-also"></a>請參閱
+[列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)  
+[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
+[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)  
+[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
