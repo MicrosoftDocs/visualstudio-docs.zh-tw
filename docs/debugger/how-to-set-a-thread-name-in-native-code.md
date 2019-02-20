@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56ae83f41a53ad35c1bec0fd4e0d256f0a8575d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: c547dd00f7a5a31b949d22c13f305050355207c7
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926244"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227312"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>如何：在機器碼中設定執行緒名稱
-在所有 Visual Studio 版本中，都可以將執行緒命名。 執行緒命名適合用來識別感興趣的執行緒**執行緒**執行中處理序進行偵錯時的視窗。 具有名為執行緒也可以很有幫助執行透過損毀傾印的檢查和分析效能會擷取使用各種工具，事後進行偵錯時。
+在所有 Visual Studio 版本中，都可以將執行緒命名。 執行緒命名適合用來識別感興趣的執行緒**執行緒**執行中處理序進行偵錯時的視窗。 具有 名為執行緒也可以很有幫助執行透過損毀傾印的檢查和分析效能會擷取使用各種工具，事後進行偵錯時。
 
 ## <a name="ways-to-set-a-thread-name"></a>如何設定執行緒名稱
 
@@ -35,14 +35,14 @@ ms.locfileid: "54926244"
 ### <a name="set-a-thread-name-by-using-setthreaddescription"></a>藉由設定執行緒名稱 `SetThreadDescription`
 
 優點：
- * 在 Visual Studio 中，不論偵錯工具已附加至處理序在 SetThreadDescription 會叫用的時間進行偵錯時，會顯示執行緒名稱。
- * 執行事後載入 Visual Studio 中的損毀傾印偵錯時，會顯示執行緒名稱。
- * 執行緒名稱也會顯示當您使用其他工具中，這類[WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)偵錯工具和有[Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer)效能分析器。
+* 在 Visual Studio 中，不論偵錯工具已附加至處理序在 SetThreadDescription 會叫用的時間進行偵錯時，會顯示執行緒名稱。
+* 執行事後載入 Visual Studio 中的損毀傾印偵錯時，會顯示執行緒名稱。
+* 執行緒名稱也會顯示當您使用其他工具中，這類[WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)偵錯工具和有[Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer)效能分析器。
 
 警告：
- * 執行緒名稱只會顯示在 Visual Studio 2017 15.6 版及更新版本。
- * 當事後進行偵錯損毀傾印檔案時，則執行緒名稱才看得到，如果損毀在 Windows 10 1607年版、 Windows Server 2016 或更新版本的 Windows 上建立。
- 
+* 執行緒名稱只會顯示在 Visual Studio 2017 15.6 版及更新版本。
+* 當事後進行偵錯損毀傾印檔案時，則執行緒名稱才看得到，如果損毀在 Windows 10 1607年版、 Windows Server 2016 或更新版本的 Windows 上建立。
+
 *範例：*
 
 ```C++
@@ -63,52 +63,52 @@ int main()
 
 ### <a name="set-a-thread-name-by-throwing-an-exception"></a>藉由擲回例外狀況設定執行緒名稱
 
-在程式中設定執行緒名稱的另一種方式是藉由擲回特別設定的例外狀況，Visual Studio 偵錯工具通訊所需的執行緒名稱。 
+在程式中設定執行緒名稱的另一種方式是藉由擲回特別設定的例外狀況，Visual Studio 偵錯工具通訊所需的執行緒名稱。
 
 優點：
- * 適用於所有版本的 Visual Studio。
+* 適用於所有版本的 Visual Studio。
 
 警告：
- * 僅適用於偵錯工具附加至例外狀況為基礎的方法使用的時間。 
- * 使用這個方法來設定執行緒名稱在傾印或效能分析工具將無法使用。
- 
+* 僅適用於偵錯工具附加至例外狀況為基礎的方法使用的時間。
+* 使用這個方法來設定執行緒名稱在傾印或效能分析工具將無法使用。
+
 *範例：*
 
-`SetThreadName`如下所示的函式示範此例外狀況為基礎的方法。 請注意，執行緒名稱會自動複製到執行緒，以便針對記憶體`threadName`參數可在釋放之後`SetThreadName`呼叫完成。 
+`SetThreadName`如下所示的函式示範此例外狀況為基礎的方法。 請注意，執行緒名稱會自動複製到執行緒，以便針對記憶體`threadName`參數可在釋放之後`SetThreadName`呼叫完成。
 
 ```C++
-//  
-// Usage: SetThreadName ((DWORD)-1, "MainThread");  
-//  
-#include <windows.h>  
-const DWORD MS_VC_EXCEPTION = 0x406D1388;  
-#pragma pack(push,8)  
-typedef struct tagTHREADNAME_INFO  
-{  
-    DWORD dwType; // Must be 0x1000.  
-    LPCSTR szName; // Pointer to name (in user addr space).  
-    DWORD dwThreadID; // Thread ID (-1=caller thread).  
-    DWORD dwFlags; // Reserved for future use, must be zero.  
- } THREADNAME_INFO;  
-#pragma pack(pop)  
-void SetThreadName(DWORD dwThreadID, const char* threadName) {  
-    THREADNAME_INFO info;  
-    info.dwType = 0x1000;  
-    info.szName = threadName;  
-    info.dwThreadID = dwThreadID;  
-    info.dwFlags = 0;  
-#pragma warning(push)  
-#pragma warning(disable: 6320 6322)  
-    __try{  
-        RaiseException(MS_VC_EXCEPTION, 0, sizeof(info) / sizeof(ULONG_PTR), (ULONG_PTR*)&info);  
-    }  
-    __except (EXCEPTION_EXECUTE_HANDLER){  
-    }  
-#pragma warning(pop)  
-}  
-```  
+//
+// Usage: SetThreadName ((DWORD)-1, "MainThread");
+//
+#include <windows.h>
+const DWORD MS_VC_EXCEPTION = 0x406D1388;
+#pragma pack(push,8)
+typedef struct tagTHREADNAME_INFO
+{
+    DWORD dwType; // Must be 0x1000.
+    LPCSTR szName; // Pointer to name (in user addr space).
+    DWORD dwThreadID; // Thread ID (-1=caller thread).
+    DWORD dwFlags; // Reserved for future use, must be zero.
+} THREADNAME_INFO;
+#pragma pack(pop)
+void SetThreadName(DWORD dwThreadID, const char* threadName) {
+    THREADNAME_INFO info;
+    info.dwType = 0x1000;
+    info.szName = threadName;
+    info.dwThreadID = dwThreadID;
+    info.dwFlags = 0;
+#pragma warning(push)
+#pragma warning(disable: 6320 6322)
+    __try{
+        RaiseException(MS_VC_EXCEPTION, 0, sizeof(info) / sizeof(ULONG_PTR), (ULONG_PTR*)&info);
+    }
+    __except (EXCEPTION_EXECUTE_HANDLER){
+    }
+#pragma warning(pop)
+}
+```
 
-## <a name="see-also"></a>請參閱  
- [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
- [如何：在 Managed 程式碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+## <a name="see-also"></a>請參閱
+[對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
+[在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)  
+[如何：在 Managed 程式碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-managed-code.md)

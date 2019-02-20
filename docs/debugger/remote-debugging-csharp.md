@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b29907488ba276f3deb18e10cf47a0205501e1e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 470212f3b6dc4151b793dcd62b9ff1d39fc2e55b
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982880"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316219"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>遠端偵錯C#或 Visual Studio 中的 Visual Basic 專案
 若要偵錯已部署在不同電腦的 Visual Studio 應用程式，安裝和您用來部署您的應用程式的電腦上執行遠端工具，設定您的專案從 Visual Studio 中，連線到遠端電腦，然後執行您的應用程式。
@@ -98,7 +98,7 @@ ms.locfileid: "54982880"
 
      您應該會看到 WPF 應用程式主視窗已在遠端電腦上開啟。
   
-14. 如有必要，採取動作來叫用中斷點。 您應該會看到中斷點為作用中。 如果沒有，應用程式的符號尚未載入。 重試一次，以及如果不行，請取得需載入符號的資訊，以及如何在進行疑難排解[了解符號檔和 Visual Studio 的符號設定](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)。
+14. 如有必要，採取動作來叫用中斷點。 您應該會看到中斷點為作用中。 如果沒有，應用程式的符號尚未載入。 重試一次，以及如果不行，請取得需載入符號的資訊，以及如何在進行疑難排解[了解符號檔和 Visual Studio 的符號設定](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)。
   
 15. 在 Visual Studio 的電腦上，您應該會看到執行過程在中斷點停止。
   

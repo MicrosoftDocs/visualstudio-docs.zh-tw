@@ -1,6 +1,6 @@
 ---
 title: 連線至 Access 資料庫中的資料 (Windows Forms)
-ms.date: 09/15/2017
+ms.date: 02/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - databases, connecting to
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: efad211c5807aa4a018ede3c9018cf69f4668747
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 293df62cc82295a9d2eea577df4e3f46dd14cef6
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933778"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227640"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>連線至 Access 資料庫中的資料 (Windows Forms)
 
@@ -29,44 +29,35 @@ ms.locfileid: "55933778"
 
 若要使用這些程序，您需要 Windows Forms 應用程式專案，以及 Access 資料庫 (*.accdb* 檔案) 或 Access 2000-2003 資料庫 (*.mdb* 檔案) 任一項。 依照對應您的檔案類型的程序進行。
 
-## <a name="creating-the-dataset-for-an-accdb-file"></a>為 .accdb 檔案建立資料集
+## <a name="create-a-dataset-for-an-accdb-file"></a>為.accdb 檔案建立資料集
 
 您可以連接到使用下列程序建立透過 Access 2013、 Office 365、 Access 2010 或 Access 2007 的資料庫。
 
-### <a name="to-create-the-dataset"></a>建立資料集
+1. 開啟資料要連線的 Windows Forms 應用程式。
 
-1.  開啟資料要連線的 Windows Forms 應用程式。
+2. 若要開啟 **資料來源**視窗，請在**檢視**功能表上，選取**其他 Windows** > **Zdroje dat**。
 
-2.  若要開啟 **資料來源**視窗，請在**檢視**功能表上，選取**其他 Windows** > **Zdroje dat**。
+   ![檢視其他視窗資料來源](../data-tools/media/viewdatasources.png)
 
-     ![檢視其他視窗資料來源](../data-tools/media/viewdatasources.png)
+3. 在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。
 
-3.  在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。
+   [資料來源組態精靈] 隨即開啟。
 
-     [資料來源組態精靈] 隨即開啟。
+4. 選取 [**資料庫**上**選擇資料來源類型**頁面，然後再選取**下一步]**。
 
-4.  選取 [**資料庫**上**選擇資料來源類型**頁面，然後再選取**下一步]**。
+5. 選取 [**資料集**上**選擇資料庫模型**頁面，然後再選取**下一步]**。
 
-5.  選取 [**資料集**上**選擇資料庫模型**頁面，然後再選取**下一步]**。
+6. 在 [資料連線] 頁面上，選取 [新增連線]，設定新的資料連線。
 
-6.  在 [資料連線] 頁面上，選取 [新增連線]，設定新的資料連線。
+   [新增連線] 對話方塊隨即開啟。
 
-     [新增連線] 對話方塊隨即開啟。
+7. 如果**資料來源**未設定為**Microsoft Access 資料庫檔案 (OLE DB)**，選取**變更** 按鈕。
 
-7.  選取 **變更**按鈕旁**資料來源**文字方塊。
+   **變更資料來源**對話方塊隨即開啟。 在資料來源清單中，選擇**Microsoft Access 資料庫檔案**。 在 **資料提供者**下拉式清單中，選取 **.NET Framework Data Provider for OLE DB**，然後選擇 **確定**。
 
-     **變更資料來源**對話方塊隨即開啟。
+8. 選擇**瀏覽**旁**資料庫檔名**，然後瀏覽至您 *.accdb*檔案，然後選擇**開啟**。
 
-8.  在資料來源清單中，選擇**\<其他\>**。 在 **資料提供者**下拉式清單中，選取 **.NET Framework Data Provider for OLE DB**，然後選擇**確定**。
-
-9. 回到**加入連接**對話方塊中，選取**Microsoft Office 12.0 Access 資料庫引擎 OLE DB 提供者**從**OLE DB 提供者**下拉式清單。
-
-     ![OLE DB 提供者 Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png)
-
-     > [!NOTE]
-     > 如果您沒有看到**Microsoft Office 12.0 Access 資料庫引擎 OLE DB 提供者**在 OLE DB provider 下拉式清單中，您可能需要安裝[2007 Office system 驅動程式： 資料連線元件](https://www.microsoft.com/download/confirmation.aspx?id=23734)。
-
-9. 在 [**伺服器或檔案名稱**文字方塊中，指定的路徑和檔案名稱 *.accdb*您想要連線到]，然後選取的檔案 **[確定]**。 (如果資料庫檔案的使用者名稱和密碼，請在您選取之前指定它們**確定**。)
+9. 輸入使用者名稱和密碼 （如有必要），然後選擇**確定**。
 
 10. 選取 **下一步**上**選擇資料連接**頁面。
 
@@ -76,37 +67,35 @@ ms.locfileid: "55933778"
 
 12. 在 [選擇您的資料庫物件] 頁面上，展開 [資料表] 節點。
 
-13. 選取任何資料表或檢視您想要在您的資料集，然後選取**完成**。
+13. 選取的資料表或檢視您想要包含在您的資料集，然後選取**完成**。
 
      資料集會新增至專案中，而且資料表和檢視表會出現在 [資料來源] 視窗中。
 
-## <a name="create-the-dataset-for-an-mdb-file"></a>建立資料集為.mdb 檔案
+## <a name="create-a-dataset-for-an-mdb-file"></a>為.mdb 檔案建立資料集
 
 藉由執行**資料來源組態精靈**來建立資料集。
 
-### <a name="to-create-the-dataset"></a>建立資料集
+1. 開啟資料要連線的 Windows Forms 應用程式。
 
-1.  開啟資料要連線的 Windows Forms 應用程式。
+2. 在 **檢視**功能表上，選取**其他 Windows** > **Zdroje dat**。
 
-2.  在 **檢視**功能表上，選取**其他 Windows** > **Zdroje dat**。
+   ![檢視其他視窗資料來源](../data-tools/media/viewdatasources.png)
 
-     ![檢視其他視窗資料來源](../data-tools/media/viewdatasources.png)
+3. 在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。
 
-3.  在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。
+    [資料來源組態精靈] 隨即開啟。
 
-     [資料來源組態精靈] 隨即開啟。
+4. 選取 [**資料庫**上**選擇資料來源類型**頁面，然後再選取**下一步]**。
 
-4.  選取 [**資料庫**上**選擇資料來源類型**頁面，然後再選取**下一步]**。
+5. 選取 [**資料集**上**選擇資料庫模型**頁面，然後再選取**下一步]**。
 
-5.  選取 [**資料集**上**選擇資料庫模型**頁面，然後再選取**下一步]**。
+6. 在 [資料連線] 頁面上，選取 [新增連線]，設定新的資料連線。
 
-6.  在 [資料連線] 頁面上，選取 [新增連線]，設定新的資料連線。
+7. 如果資料來源不是**Microsoft Access 資料庫檔案 (OLE DB)**，選取**變更**以開啟**變更資料來源** 對話方塊中，然後選取**Microsoft存取資料庫檔案**，然後選取**確定**。
 
-7.  如果資料來源不是**Microsoft Access 資料庫檔案 (OLE DB)**，選取**變更**以開啟**變更資料來源** 對話方塊中，然後選取**Microsoft存取資料庫檔案**，然後選取**確定**。
+8. 在 [**資料庫檔名**，指定的路徑和名稱 *.mdb*您想要連線到]，然後選取的檔案 **[確定]**。
 
-8.  在 [**資料庫檔名**，指定的路徑和名稱 *.mdb*您想要連線到]，然後選取的檔案 **[確定]**。
-
-     ![加入連線存取資料庫檔案](../data-tools/media/dataaddconnectionaccessmdb.png)
+   ![加入連線存取資料庫檔案](../data-tools/media/dataaddconnectionaccessmdb.png)
 
 9. 選取 **下一步**上**選擇資料連接**頁面。
 
@@ -116,7 +105,7 @@ ms.locfileid: "55933778"
 
 12. 選取任何資料表或檢視您想要在您的資料集，然後選取**完成**。
 
-     資料集會新增至專案中，而且資料表和檢視表會出現在 [資料來源] 視窗中。
+    資料集會新增至專案中，而且資料表和檢視表會出現在 [資料來源] 視窗中。
 
 ## <a name="security"></a>安全性
 
@@ -126,11 +115,11 @@ ms.locfileid: "55933778"
 
 您剛才建立的資料集現已推出**Zdroje dat**視窗。 現在您可以執行下列任一項工作：
 
--   選取中的項目**資料來源**視窗中將它們拖曳到您的表單 (請參閱[繫結 Windows Form 控制項加入 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md))。
+- 選取中的項目**資料來源**視窗中將它們拖曳到您的表單 (請參閱[繫結 Windows Form 控制項加入 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md))。
 
--   在 **DataSet 設計工具**中開啟資料來源，以新增或編輯組成資料集的物件。
+- 在 **DataSet 設計工具**中開啟資料來源，以新增或編輯組成資料集的物件。
 
--   將驗證邏輯加入<xref:System.Data.DataTable.ColumnChanging>或是<xref:System.Data.DataTable.RowChanging>事件的資料集內的資料表 (請參閱[驗證資料集中](../data-tools/validate-data-in-datasets.md))。
+- 將驗證邏輯加入<xref:System.Data.DataTable.ColumnChanging>或是<xref:System.Data.DataTable.RowChanging>事件的資料集內的資料表 (請參閱[驗證資料集中](../data-tools/validate-data-in-datasets.md))。
 
 ## <a name="see-also"></a>另請參閱
 

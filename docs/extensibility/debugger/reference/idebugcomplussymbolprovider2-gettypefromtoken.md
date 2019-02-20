@@ -11,80 +11,80 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32bb46f9e34e1e6bb9b8f39c9211cff0eb026a41
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 590e8705dec674b96a57b68934ab1bd5b75a6545
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038769"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413458"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
-擷取給定其語彙基元型別。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT GetTypeFromToken(  
-   ULONG32       appDomain,  
-   GUID          guidModule,  
-   DWORD         tdToken,  
-   IDebugField** ppField  
-);  
-```  
-  
-```csharp  
-int GetTypeFromToken(  
-   uint            appDomain,  
-   Guid            guidModule,  
-   uint            tdToken,  
-   out IDebugField ppField  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `appDomain`  
- [in]應用程式定義域的識別項。  
-  
- `guidModule`  
- [in]模組的唯一識別碼。  
-  
- `tdToken`  
- [in]要擷取之型別的權杖。  
-  
- `ppField`  
- [out]傳回所表示的型別[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面。  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::GetTypeFromToken(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    DWORD tdToken,  
-    IDebugField **ppField)  
-{  
-    HRESULT hr = E_FAIL;  
-  
-    METHOD_ENTRY( CDebugDynamicFieldSymbol::GetTypeFromToken );  
-  
-    ASSERT(IsValidObjectPtr(this, CDebugSymbolProvider));  
-    ASSERT(IsValidWritePtr(ppField, IDebugField*));  
-  
-    Module_ID idModule(ulAppDomainID, guidModule);  
-  
-    IfFailGo( this->CreateClassType(idModule, tdToken, ppField) );  
-  
-Error:  
-  
-    METHOD_EXIT( CDebugDynamicFieldSymbol::GetTypeFromToken, hr );  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+擷取給定其語彙基元型別。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT GetTypeFromToken(
+    ULONG32       appDomain,
+    GUID          guidModule,
+    DWORD         tdToken,
+    IDebugField** ppField
+);
+```
+
+```csharp
+int GetTypeFromToken(
+    uint            appDomain,
+    Guid            guidModule,
+    uint            tdToken,
+    out IDebugField ppField
+);
+```
+
+#### <a name="parameters"></a>參數
+`appDomain`  
+[in]應用程式定義域的識別項。
+
+`guidModule`  
+[in]模組的唯一識別碼。
+
+`tdToken`  
+[in]要擷取之型別的權杖。
+
+`ppField`  
+[out]傳回所表示的型別[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)。
+
+## <a name="return-value"></a>傳回值
+如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="example"></a>範例
+下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面。
+
+```cpp
+HRESULT CDebugSymbolProvider::GetTypeFromToken(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    DWORD tdToken,
+    IDebugField **ppField)
+{
+    HRESULT hr = E_FAIL;
+
+    METHOD_ENTRY( CDebugDynamicFieldSymbol::GetTypeFromToken );
+
+    ASSERT(IsValidObjectPtr(this, CDebugSymbolProvider));
+    ASSERT(IsValidWritePtr(ppField, IDebugField*));
+
+    Module_ID idModule(ulAppDomainID, guidModule);
+
+    IfFailGo( this->CreateClassType(idModule, tdToken, ppField) );
+
+Error:
+
+    METHOD_EXIT( CDebugDynamicFieldSymbol::GetTypeFromToken, hr );
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>另請參閱
+[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
