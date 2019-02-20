@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8b1f602dc791b0475b0e33aa49215aaa62860d
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 7bc7d75329e83345107cac18fa49267dc62f964d
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155301"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316700"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>透過分析 CPU 使用量測量應用程式效能
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [診斷工具] 的 [CPU 使用量] 索引標籤，以取得您的應用程式的效能資料。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
@@ -64,7 +64,7 @@ ms.locfileid: "56155301"
 
      ![診斷工具摘要索引標籤](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     如需事件的詳細資訊，請參閱 [Searching and filtering the Events tab of the Diagnostic Tools window](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/) (搜尋和篩選 [診斷工具] 視窗的 [事件] 索引標籤 )。
+     如需事件的詳細資訊，請參閱 [Searching and filtering the Events tab of the Diagnostic Tools window](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/) (搜尋和篩選 [診斷工具] 視窗的 [事件] 索引標籤 )。
 
 6.  執行會叫用您的第一個中斷點的案例。
 

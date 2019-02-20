@@ -12,12 +12,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: df1d5b89115e6fa33be09bf41de3b51d4d584d57
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3094d6fbfa561d995c5cc72e0a6e56fbdd47ee63
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912998"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317675"
 ---
 # <a name="optimize-visual-studio-performance"></a>最佳化 Visual Studio 效能
 
@@ -50,4 +50,4 @@ ms.locfileid: "55912998"
 ## <a name="see-also"></a>另請參閱
 
 - [效能秘訣與訣竅](../ide/visual-studio-performance-tips-and-tricks.md)
-- [Visual Studio 部落格 - 使用 Visual Studio 2017 15.6 版更快速地載入解決方案](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Visual Studio 部落格 - 使用 Visual Studio 2017 15.6 版更快速地載入解決方案](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

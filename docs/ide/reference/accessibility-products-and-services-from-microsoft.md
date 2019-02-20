@@ -19,17 +19,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a5b610a268344946390c66a5c6cc34ae0dc3c4d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 02b35ff8325c6cb155d54a2ada6bf6f7d63dc341
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932088"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318624"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 的協助工具產品和服務
 
 > [!TIP]
-> 若要深入了解 Visual Studio 最新的協助工具更新，請參閱 [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Visual Studio 2017 15.3 版中的協助工具改善) 部落格文章。
+> 若要深入了解 Visual Studio 最新的協助工具更新，請參閱 [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Visual Studio 2017 15.3 版中的協助工具改善) 部落格文章。
 
 Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下列主題提供讓行動不便人士更容易存取 Microsoft Windows 之功能、產品和服務的相關資訊：
 

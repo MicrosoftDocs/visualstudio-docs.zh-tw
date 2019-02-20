@@ -12,17 +12,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b21ab89fe7631ae40def360c1dd111ded0df93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935000"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318585"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的協助工具功能
 
 > [!TIP]
-> 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
+> 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
 
 除了 Windows 中的協助工具功能和公用程式之外，下列功能可讓行動不便者更方便存取 Visual Studio：
 

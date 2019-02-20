@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c040d0375a8ecb2872e148331166ecae45040cf
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: ab8c76a867f67f94cb0ce3589cc8aa411fd70663
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154046"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316960"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 
@@ -158,7 +158,7 @@ ms.locfileid: "54154046"
 |[進一步了解如何使用 Visual Studio 來建置 Unity 遊戲](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[深入了解 Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[開始使用 Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
-|[了解 Visual Studio Tools for Unity 2.0 Preview 的最新增強功能](https://blogs.msdn.microsoft.com/visualstudio/2014/12/03/visual-studio-tools-for-unity-2-0-preview/) (Visual Studio 部落格)|
+|[了解 Visual Studio Tools for Unity 2.0 Preview 的最新增強功能](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (Visual Studio 部落格)|
 |[觀賞 Visual Studio Tools for Unity 2.0 Preview 的介紹影片](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (影片)|
 |[了解 Unity](http://unity3d.com/) (Unity 網站)|
 

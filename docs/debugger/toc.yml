@@ -362,11 +362,14 @@ items:
     items:
     - name: 對即時 Azure 應用程式進行偵錯
       href: debug-live-azure-applications.md
-      items:
-      - name: 快照集偵錯的常見問題集
-        href: debug-live-azure-apps-faq.md
-      - name: 針對快照集偵錯進行疑難排解
-        href: debug-live-azure-apps-troubleshooting.md
+    - name: 對即時 Azure 虛擬機器應用程式偵錯
+      href: debug-live-azure-virtual-machines.md
+    - name: 對即時 Azure Kubernetes 應用程式偵錯
+      href: debug-live-azure-kubernetes.md
+    - name: 快照集偵錯的常見問題集
+      href: debug-live-azure-apps-faq.md
+    - name: 針對快照集偵錯進行疑難排解
+      href: debug-live-azure-apps-troubleshooting.md
   - name: 對特定應用程式類型進行偵錯
     href: debugging-applications.md
     items:
@@ -586,7 +589,7 @@ items:
         - name: 附加至指令碼
           href: how-to-attach-to-script.md
           items:
-          - name: 警告:已停用指令碼偵錯
+          - name: 警告：已停用指令碼偵錯
             href: warning-script-debugging-disabled.md
     - name: 對 WCF 服務進行偵錯
       href: debugging-wcf-services.md
@@ -838,9 +841,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 71d02bd5fba02367da6f28400c4b991784422133
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 703836e5453534998db5090d904aae4339993c43
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231657"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335463"

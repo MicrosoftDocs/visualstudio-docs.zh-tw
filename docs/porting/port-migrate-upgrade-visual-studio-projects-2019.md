@@ -8,7 +8,7 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: c393d6f9fbd239ab38957f66161bcff7372ac45f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fe6a2b69cbd95ad558ed87e9afb65883b30175a3
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058659"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335567"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019-preview"></a>Visual Studio 2019 Preview 的專案移轉與升級參考
 
@@ -35,7 +35,7 @@ ms.locfileid: "53058659"
 
 本文提供 Visual Studio 2019 Preview 可移轉之專案類型的詳細資料。 它也提供 Visual Studio 2019 Preview 中已淘汰或即將淘汰之專案類型的詳細資料。 文中不包含 Visual Studio 2019 中不再支援，因此無法移轉的專案類型。 文中也不包含沒有移轉問題的已支援專案類型；該清單位於 [Visual Studio 2017 平台目標及相容性](/visualstudio/releases/2019/compatibility)中。
 
-> [!Important]
+> [!IMPORTANT]
 > 特定專案類型需要透過 Visual Studio 安裝程式安裝特定工作負載。 如果您未安裝工作負載，Visual Studio 會回報未知或不相容的專案類型。 在該情況下，請檢查您的安裝選項，然後再試一次。 如需 Visual Studio 2019 Preview 中專案支援的詳細資料，請參閱[平台目標及相容性](/visualstudio/releases/2019/compatibility)一文。
 
 ## <a name="project-types"></a>專案類型

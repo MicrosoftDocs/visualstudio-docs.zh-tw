@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e96341ada2485654f5553b7b862c84dd03b8b4a4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a6f7b61bc3dd6f11bf16808df15d9c2dad1222f6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979487"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316908"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>使用或不使用偵錯工具來執行分析工具
 
@@ -63,7 +63,7 @@ Visual Studio 提供各種效能測量和分析工具的選擇。 其中有些�
 
 ![診斷事件搜尋](../profiling/media/diagnosticseventsearch.png "診斷事件搜尋")  
 
-如需詳細資訊，請參閱 [搜尋和篩選診斷工具視窗的事件索引標籤](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)。  
+如需詳細資訊，請參閱 [搜尋和篩選診斷工具視窗的事件索引標籤](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)。  
 
 ## <a name="collect-profiling-data-without-debugging"></a>收集程式碼剖析資料但不偵錯  
 
@@ -118,14 +118,14 @@ Visual Studio 提供各種效能測量和分析工具的選擇。 其中有些�
   
  [MSDN Magazine：使用 IntelliTrace 更快速地診斷問題](https://msdn.microsoft.com/magazine/dn973014.aspx)
   
- [部落格文章：Diagnosing Event Handler Leaks with the Memory Usage Tool in Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/) (在 Visual Studio 2015 中使用記憶體使用量工具診斷事件處理常式流失)
+ [部落格文章：Diagnosing Event Handler Leaks with the Memory Usage Tool in Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/) (在 Visual Studio 2015 中使用記憶體使用量工具診斷事件處理常式流失)
   
  [影片：Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716) (在 Microsoft Visual Studio Ultimate 2015 中使用 IntelliTrace 進行歷程偵錯)
   
  [影片：Debugging Performance Issues Using Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731) (使用 Visual Studio 2015 對效能問題偵錯)
   
- [PerfTips:Performance Information at-a-glance while Debugging with Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/) (效能提示：使用 Visual Studio 偵錯時的效能資訊一覽)
+ [PerfTips:Performance Information at-a-glance while Debugging with Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/) (效能提示：使用 Visual Studio 偵錯時的效能資訊一覽)
   
- [Visual Studio 2015 中的診斷工具偵錯工具視窗 (英文)](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
+ [Visual Studio 2015 中的診斷工具偵錯工具視窗 (英文)](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   
- [Visual Studio Enterprise 2015 中的 IntelliTrace (英文)](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)
+ [Visual Studio Enterprise 2015 中的 IntelliTrace (英文)](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)

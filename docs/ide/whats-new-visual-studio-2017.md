@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 942007063ffa5ce6f24963067b7707495faa84b9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 767b757187e65454fb89c83613646c59d172c7e5
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935091"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318806"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
@@ -72,7 +72,7 @@ Visual Studio 可讓您在需要功能時，以更輕鬆、更快的方式只安
 
 **15.3 的新功能**：有超過 1,700 項的目標式修正，針對 Visual Studio 與眾多客戶使用的輔助技術，改善了其間的相容性。 在數十種案例中，螢幕助讀程式、高對比佈景主題與其他輔助技術的相容性更勝以往。 偵錯工具、編輯器與殼層也都有顯著改善。
 
-如需詳細資訊，請參閱 [Visual Studio 2017 版本 15.3 中的協助工具改善](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
+如需詳細資訊，請參閱 [Visual Studio 2017 版本 15.3 中的協助工具改善](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
 
 ## <a name="performance-and-productivity"></a>效能和生產力
 
@@ -80,7 +80,7 @@ Visual Studio 可讓您在需要功能時，以更輕鬆、更快的方式只安
 
 我們已在 Visual Studio 中引進新的身分識別服務，可讓您在 Team Explorer、Azure Tools、Microsoft Store 發行等工具之間共用使用者帳戶。
 
-此外，您也可以保持登入的狀態更久。 Visual Studio 將不會每隔 12 小時要求您重新登入一次。 若要深入了解，請參閱 [Fewer Visual Studio sign-in prompts](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/) (較少的 Visual Studio 登入提示) 部落格文章。
+此外，您也可以保持登入的狀態更久。 Visual Studio 將不會每隔 12 小時要求您重新登入一次。 若要深入了解，請參閱 [Fewer Visual Studio sign-in prompts](https://devblogs.microsoft.com/visualstudio/fewer-visual-studio-sign-in-prompts/) (較少的 Visual Studio 登入提示) 部落格文章。
 
 ### <a name="start-visual-studio-faster"></a>更快速啟動 Visual Studio
 
@@ -131,7 +131,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 如需有關自動化測試的詳細資訊，請參閱 [DevOps 中自動化測試的 CI/CD 管線](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) \(英文\) 部落格文章。
 
-此外，如需 [Visual Studio 持續傳遞工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 延伸模組新功能的詳細資訊，請參閱 [Commit with confidence:Commit time code quality](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) (有信心地認可：認可時的程式碼品質) 部落格文章。
+此外，如需 [Visual Studio 持續傳遞工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 延伸模組新功能的詳細資訊，請參閱 [Commit with confidence:Commit time code quality](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/) (有信心地認可：認可時的程式碼品質) 部落格文章。
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE 加強功能
 
@@ -188,7 +188,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
   ![Visual Studio 2017 結構視覺化檢視](media/vsIDE-StructureVisualizer.png)
 
-如需新生產力功能的詳細資訊，請參閱 Mark Wilson-Thomas 所撰寫的 [Productivity in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) (Visual Studio 2017 中的生產力) 部落格文章。
+如需新生產力功能的詳細資訊，請參閱 Mark Wilson-Thomas 所撰寫的 [Productivity in Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/) (Visual Studio 2017 中的生產力) 部落格文章。
 
 ### <a name="visual-c"></a>Visual C++
 
@@ -212,7 +212,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ![Visual Studio 中的新例外狀況協助程式對話方塊](media/vs2017ide-ExceptionHelper.png)
 
-如需詳細資訊，請參閱 [Use the new Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (在 Visual Studio 中使用新的例外狀況協助程式) 部落格文章。
+如需詳細資訊，請參閱 [Use the new Exception Helper in Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/) (在 Visual Studio 中使用新的例外狀況協助程式) 部落格文章。
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>快照集和 IntelliTrace 回溯
 
@@ -328,7 +328,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 * [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) 可協助您跨多個資料庫快速尋找 SQL 片段和物件以提高產能。
 
-如需詳細資訊，請參閱 [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/) (Visual Studio 2017 中的 Redgate Data Tools) 部落格文章。
+如需詳細資訊，請參閱 [Redgate Data Tools in Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/redgate-data-tools-in-visual-studio-2017/) (Visual Studio 2017 中的 Redgate Data Tools) 部落格文章。
 
 ### <a name="net-core"></a>.NET Core
 

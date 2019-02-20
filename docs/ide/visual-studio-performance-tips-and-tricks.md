@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d800336a921d76e3b30580127547081dc8f02967
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fdfc350305400a42565aa55fa5e29cc40286ed0c
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930242"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318767"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 
@@ -130,4 +130,4 @@ CLR 使用記憶體回收記憶體管理系統。 在此系統中，有時不再
 ## <a name="see-also"></a>另請參閱
 
 - [最佳化 Visual Studio 效能](../ide/optimize-visual-studio-performance.md)
-- [更快載入解決方案 (Visual Studio 部落格)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [更快載入解決方案 (Visual Studio 部落格)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

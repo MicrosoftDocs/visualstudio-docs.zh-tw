@@ -7,8 +7,9 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload: multiple
+monikerRange: vs-2017
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 52decfae74eb978aeb43aad37fabb9e03ed23978
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85e1341d80c0f81474f748a47db19de1fde50b1b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768828"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335530"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 的專案移轉與升級參考
 
@@ -34,7 +35,7 @@ ms.locfileid: "54768828"
 
 本文僅提供 Visual Studio 2017 能移轉之專案類型的詳細資料。 文中不包含 Visual Studio 2017 中不再支援，因此無法移轉的專案類型。 文中也不包含沒有移轉問題的已支援專案類型；該清單位於 [Visual Studio 2017 平台目標及相容性](/visualstudio/productinfo/vs2017-compatibility-vs)中。
 
-> [!Important]
+> [!IMPORTANT]
 > 特定專案類型需要透過 Visual Studio 安裝程式安裝適當的工作負載。 如果您未安裝工作負載，Visual Studio 會回報未知或不相容的專案類型。 在該情況下，請檢查您的安裝選項，然後再試一次。 同樣地，如需 Visual Studio 2017 中專案支援的詳細資料，請參閱 [Visual Studio 2017 平台目標及相容性](/visualstudio/productinfo/vs2017-compatibility-vs)一文。
 
 ## <a name="project-types"></a>專案類型

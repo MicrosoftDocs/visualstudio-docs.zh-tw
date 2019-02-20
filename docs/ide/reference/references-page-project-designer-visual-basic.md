@@ -9,19 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - References page in Project Designer
 - Project Designer, References page
-- Unused References dialog box
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afd144248ed01210c888ee516a19bf93a156b86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970747"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335126"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>專案設計工具，參考頁 (Visual Basic)
 
@@ -32,12 +31,6 @@ ms.locfileid: "55970747"
 ## <a name="uielement-list"></a>UIElement 清單
 
 下列選項可讓您選取或移除專案中的參考和匯入的命名空間。
-
-**未使用的參考**
-
-按一下此按鈕可存取 [未使用的參考] 對話方塊。
-
-[未使用的參考] 對話方塊可讓您移除專案中包含、但程式碼並未實際使用的參考。 此對話方塊包含格線，其中會列出專案中未使用之命名空間的 [參考名稱]、[路徑]，以及其他資訊。 在格線中，選取您想要從專案移除的命名空間參考，然後按一下 [移除]。
 
 **參考路徑**
 

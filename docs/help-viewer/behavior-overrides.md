@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5614f182b08c41a7ec2172fe080560a4f78b439
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4b881ee7a782d7c5f90a447c1719bb88afd1d332
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918539"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56314594"
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 覆寫
 
-您可以變更 Help Viewer 和 Visual Studio IDE 之說明相關功能的預設行為。 某些選項是透過建立 [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) 檔案以設定各種登錄機碼值來指定。 其他選項則是在登錄中直接設定。
+您可以變更 Help Viewer 和 Visual Studio IDE 之說明相關功能的預設行為。 某些選項是透過建立 [.pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/) 檔案以設定各種登錄機碼值來指定。 其他選項則是在登錄中直接設定。
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>如何使用 .pkgdef 檔案控制 Help Viewer 行為
 
