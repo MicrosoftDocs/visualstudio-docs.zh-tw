@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 408864d2f105762cbaede528f8794595a34b3b29
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a4ad4108e798c493ee17bf37420440acdf607b53
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973326"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317051"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio enterprise 的 IntelliTrace (C#，Visual Basic、 c + +)
 
@@ -52,7 +52,7 @@ ms.locfileid: "54973326"
 
 | | |
 |---------------------| - |
-| **完整的支援** | - 使用 .NET Framework 2.0 或更高版本的 Visual Basic 和 Visual C# 應用程式。<br/>您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br/>若要偵錯 SharePoint 應用程式，使用 IntelliTrace，請參閱[逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要使用 IntelliTrace 的 Microsoft Azure 應用程式進行偵錯，請參閱[偵錯已發佈的雲端服務使用 IntelliTrace 和 Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)。 |
+| **完整的支援** | - 使用 .NET Framework 2.0 或更高版本的 Visual Basic 和 Visual C# 應用程式。<br/>您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br/>若要偵錯 SharePoint 應用程式，使用 IntelliTrace，請參閱[逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要使用 IntelliTrace 的 Microsoft Azure 應用程式進行偵錯，請參閱[偵錯已發佈的雲端服務使用 IntelliTrace 和 Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)。 |
 | **有限支援** | C-c 目標 Windows 支援檢視快照集使用 IntelliTrace 倒退 + + 應用程式。 支援只偵錯工具和例外狀況的事件。<br />-.NET core 和 ASP.NET Core 應用程式特定事件只 MVC 控制器、 ADO.NET 以及 HTTPClient 」 中支援本機偵錯。 獨立收集器不支援.NET Core 或 ASP.NET Core 應用程式。<br />- 實驗基礎的 F# 應用程式<br />支援僅適用於事件的 UWP 應用程式 |
 | **不支援** | -其他語言和指令碼<br />- Windows 服務、Silverlight、Xbox 或 [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] 應用程式 |
 
@@ -186,7 +186,7 @@ IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例�
 
 ### <a name="blogs"></a>部落格
 
-[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)
+[Microsoft DevOps](https://devblogs.microsoft.com/devops/)
 
 ### <a name="forums"></a>論壇
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172a7d27de88e7d5d6361fdc29e4cc49a0ff3d94
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008708"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316882"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>部署後，使用 IntelliTrace 診斷問題 (C#，Visual Basic)
 
@@ -31,7 +31,7 @@ ms.locfileid: "55008708"
 
 -   Visual Studio Enterprise (但不是 Professional 或 Community 版本)，用以搭配 IntelliTrace 檢閱診斷資料及偵錯程式碼
 
-##  <a name="SetUpBuild"></a> 步驟 1：包含在發行的組建資訊
+##  <a name="SetUpBuild"></a>步驟 1：在發行時包含組建資訊
  設定建置流程以建立 Web 專案的建置資訊清單 (*BuildInfo.config* 檔案)，並在發行時包含此資訊清單。 此資訊清單包含有關專案、原始檔控制及用於建立特定組建之建置系統的資訊。 在您開啟 IntelliTrace 記錄檔之後，此資訊可協助 Visual Studio 找到相符的原始檔和符號，以檢閱記錄的事件。
 
 ###  <a name="AutomatedBuild"></a> 建立建置資訊清單，以使用 Team Foundation Server 進行自動化組建
@@ -153,15 +153,15 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
  **/p:BuildSymbolStorePath=**\<符號的路徑>
 
-##  <a name="DeployRelease"></a> 步驟 2：發行您的應用程式
+##  <a name="DeployRelease"></a>步驟 2：發行您的應用程式
  如果使用在建置流程中建立的 [Web.Deploy 套件](https://msdn.microsoft.com/library/dd394698.aspx) 來部署 App，建置資訊清單的名稱會從 "*ProjectName*.BuildInfo.config" 自動重新命名為 "BuildInfo.config"，並且會放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。
 
  如果使用其他方法來部署 App，請確定將建置資訊清單的名稱從 "*ProjectName*.BuildInfo.config" 重新命名為 "BuildInfo.config"，並將其放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。
 
-## <a name="step-3-monitor-your-app"></a>步驟 3：監視您的應用程式
+## <a name="step-3-monitor-your-app"></a>步驟 3：監視 App
  在 Web 伺服器上設定應用程式效能監視功能，以便監視 App 是否發生問題、記錄診斷事件，以及將這些事件儲存至 IntelliTrace 記錄檔。 請參閱 [監視發行是否發生部署問題](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
-##  <a name="InvestigateEvents">步驟 4：</a>找出問題
+##  <a name="InvestigateEvents"></a>步驟 4：找到問題
  您需要在開發電腦或其他電腦上安裝 Visual Studio Enterprise，才能檢閱記錄的事件並使用 IntelliTrace 偵錯程式碼。 您也可以使用 CodeLens、偵錯工具對應和 Code Map 等工具協助診斷問題。
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>開啟 IntelliTrace 記錄檔並比對方案
@@ -216,7 +216,7 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
     - [IntelliTrace 記錄檔中的其他所有事件和資訊為何？](../debugger/using-saved-intellitrace-data.md)
     - [我還能如何處理？](#WhatElse)
-    - [需要更多關於效能事件的詳細資訊？](https://blogs.msdn.microsoft.com/devops/2013/09/20/performance-details-in-intellitrace/)
+    - [需要更多關於效能事件的詳細資訊？](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
 
 ### <a name="diagnose-an-exception"></a>診斷例外狀況
 
@@ -276,11 +276,11 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
   - **TFS**
 
-    - **ProjectCollectionUri**:您的 Team Foundation Server 和專案集合的 URI
+    - **ProjectCollectionUri**：您的 Team Foundation Server 和專案集合的 URI
 
-    - **ProjectItemSpec**:您的應用程式專案檔案 （.csproj 或.vbproj） 的路徑
+    - **ProjectItemSpec**：您的 App 的專案檔 (.csproj 或 .vbproj) 的路徑
 
-    - **ProjectVersionSpec**:您的專案版本
+    - **ProjectVersionSpec**：您的專案版本
 
       例如：
 
@@ -296,13 +296,13 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
   - **Git**
 
-    - **GitSourceControl**:位置**GitSourceControl**結構描述
+    - **GitSourceControl**： **GitSourceControl** 結構描述的位置
 
     - **RepositoryUrl**：您的 Team Foundation Server、專案集合和 Git 儲存機制的 URI
 
-    - **ProjectPath**:您的應用程式專案檔案 （.csproj 或.vbproj） 的路徑
+    - **ProjectPath**：您的 App 的專案檔 (.csproj 或 .vbproj) 的路徑
 
-    - **CommitId**:您的認可識別碼
+    - **CommitId**：您的認可 ID
 
       例如：
 
@@ -320,15 +320,15 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
    您的建置系統 ( `"TeamBuild"` 或 `"MSBuild"`) 和下列必要屬性的相關資訊：
 
-  - **BuildLabel** （適用於 TeamBuild):組建名稱和編號。 此標籤也可做為部署事件的名稱。 如需組建編號的詳細資訊，請參閱 [使用組建編號提供有意義的名稱給已完成的組建](/azure/devops/pipelines/build/options?view=vsts)。
+  - **BuildLabel** (適用於 TeamBuild)：組建名稱和編號。 此標籤也可做為部署事件的名稱。 如需組建編號的詳細資訊，請參閱 [使用組建編號提供有意義的名稱給已完成的組建](/azure/devops/pipelines/build/options?view=vsts)。
 
-  - **SymbolPath** （建議選項）：以分號分隔的符號 （PDB 檔案） 位置的 Uri 清單。 這些 URI 可以是 URL 或 UNC。 這樣可讓 Visual Studio 更容易找到相符的符號以協助您進行偵錯。
+  - **SymbolPath** (建議使用)：以分號分隔之符號 (PDB 檔案) 位置的 URI 清單。 這些 URI 可以是 URL 或 UNC。 這樣可讓 Visual Studio 更容易找到相符的符號以協助您進行偵錯。
 
-  - **BuildReportUrl** （適用於 TeamBuild):在 TFS 中的組建報告位置
+  - **BuildReportUrl** (適用於 TeamBuild)：TFS 中的組建報告位置
 
-  - **BuildId** （適用於 TeamBuild):在 TFS 中的組建詳細資料 URI。 此 URI 也可做為部署事件的 ID。 如果不是使用 TeamBuild，此 ID 必須是唯一的。
+  - **BuildId** (適用於 TeamBuild)：TFS 中的組建詳細資料 URI。 此 URI 也可做為部署事件的 ID。 如果不是使用 TeamBuild，此 ID 必須是唯一的。
 
-  - **BuiltSolution**:Visual Studio 用於尋找及開啟相符方案之方案檔案路徑。 這是 **SolutionPath** MsBuild 屬性的內容。
+  - **BuiltSolution**：Visual Studio 用於尋找及開啟相符方案之方案檔案的路徑。 這是 **SolutionPath** MsBuild 屬性的內容。
 
     例如：
 
@@ -379,7 +379,7 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
      ![從原始檔控制開啟&#45;移轉](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
-####  <a name="WhatWorkspace"></a> 問：什麼是工作區？
+####  <a name="WhatWorkspace"></a>問：什麼是工作區？
  **答：** 您的 [工作區用於儲存來源的複本](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) ，您可以在簽入網路之前個別開發及測試該複本。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。
 
 ####  <a name="UntrustedSymbols"></a> 問：我為什麼收到有關未受信任符號的訊息？
