@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98498b59f01bbd8a72a52695203d80a995497823
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: be70da79b1edc6142be1c45464097a027f859979
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690459"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413562"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>在 Visual Studio 中匯入發行設定，即可將應用程式發行至 Azure App Service
 
@@ -50,6 +50,8 @@ ms.locfileid: "55690459"
 1. 在 [Visual C#] 或 [Visual Basic] 底下，選擇 [Web]，然後在中間窗格中選擇 [ASP.NET Web 應用程式 (.NET Framework)] 或 (僅限於 C#) [ASP.NET Core Web 應用程式]，然後按一下 [確定]。
 
     如果您沒有看到特定的專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 安裝 **ASP.NET 和 Web 開發**工作負載。
+
+    您選擇的專案範本 (ASP.NET 或 ASP.NET Core) 必須與 Web 伺服器上所安裝的 ASP.NET 版本相對應。
 
 1. 選擇 [MVC] (.NET Framework) 或 [Web 應用程式 (Model-View-Controller)] (適用於 .NET Core)，並確定已選取 [不需要驗證]，然後按一下 [確定]。
 

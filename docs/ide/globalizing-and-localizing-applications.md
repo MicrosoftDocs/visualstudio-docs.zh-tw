@@ -1,7 +1,7 @@
 ---
-title: 全球化和當地語系化應用程式
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: 當地語系化工具
+ms.date: 02/15/2019
+ms.topic: reference
 helpviewer_keywords:
 - globalization [Visual Studio]
 - Visual Basic code, international applications
@@ -15,30 +15,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3b8628f61c5fa2bc6eebadad23d5c9133f6fe4c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0f90590c0273b886fe3f9a8e1c406ddf9aa7f11c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907344"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335255"
 ---
-# <a name="globalizing-and-localizing-applications"></a>全球化和當地語系化應用程式
+# <a name="develop-globalized-and-localized-apps"></a>開發全球化和當地語系化應用程式
 
-如果您打算將應用程式散發給國際適用對象，您必須在設計和開發階段期間牢記下列幾項重點。 即使您不打算這麼做，這個簡單的前置工作，可讓您在未來版本的應用程式計劃有所變更時，更加事半功倍。 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的內建服務可讓您使用 Visual Studio 的 Managed 開發功能，輕鬆開發單一應用程式，使其適應不同的地區設定。
+Visual Studio 利用 [.NET Framework](/dotnet/standard/globalization-localization/) 內建的服務，讓針對國際適用對象的開發作業更加輕鬆。
 
-## <a name="resources"></a>資源
+例如，Windows Forms 應用程式的專案系統可同時為後援和其他每個 UI 文化特性產生資源檔。 當您在 Visual Studio 中建置專案時，資源檔會從 Visual Studio XML 格式 (.resx) 編譯為中繼二進位格式 (.resources)，然後內嵌在附屬組件中。 如需詳細資訊，請參閱 [Visual Studio 中的資源檔](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles)及 [Create satellite assemblies for desktop apps](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps) (建立傳統型應用程式的附屬組件)。
 
- Visual Studio 在設計之初就已設想到利用 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 內建的服務優勢，讓針對國際適用對象的開發作業更加輕鬆。 下列文章有助您了解 Visual Studio 內建的國際化功能。
-
- [以 .NET Framework 為基礎的國際應用程式簡介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)：介紹使用 Visual Studio 和 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 開發國際市場軟體的相關基本概念。
-
- [當地語系化應用程式](../ide/localizing-applications.md)：提供針對特定文化特性自訂應用程式的相關頁面連結。
-
- [全球化應用程式](../ide/globalizing-applications.md)：提供建立支援多種文化特性應用程式的相關頁面連結。
+如需在 Visual Studio 中建立雙向語言應用程式的資訊，請參閱[建立阿拉伯文和希伯來文的應用程式](creating-applications-in-bi-directional-languages.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [開發世界性的應用程式的最佳做法](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps)提供適用於國際對象的程式設計相關資訊。
-- [類別庫概觀](/dotnet/standard/class-library-overview)介紹類別、介面和實值型別，以加速和最佳化開發過程並提供對系統功能的存取。
-- <xref:System.Globalization> 顯示此命名空間內的類別，其定義與文化特性相關的資訊，包括語言、國家/地區、使用中的行事曆、日期、貨幣和數字的格式模式，以及字串的排序順序。
-- <xref:System.Resources> 顯示此命名空間內的類別和介面，其可讓開發人員建立、儲存和管理應用程式中所使用的各種文化特性相關資源。
+- [將 .NET 應用程式全球化和當地語系化](/dotnet/standard/globalization-localization/)
+- [.NET 應用程式中的資源](/dotnet/framework/resources/)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f9d951be37619c84095c379879e1acd51cf7b
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 6ab41ead57671948dcc30a0d3009fad2bfabfa34
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690446"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413302"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>在 Visual Studio 中匯入發行設定，即可將應用程式發行至 IIS
 
@@ -28,7 +28,7 @@ ms.locfileid: "55690446"
 > [!div class="checklist"]
 > * 設定 IIS，讓您能夠產生發行設定檔案
 > * 建立發行設定檔案
-> * 將發行設定檔案匯入 Visual Studio
+> * 將發行設定檔案匯入至 Visual Studio
 > * 將應用程式部署至 IIS
 
 發行設定檔案 (*\*.publishsettings*) 不同於 Visual Studio 中建立的發行設定檔 (*\*.pubxml*)。 發行設定檔案是由 IIS 或 Azure App Service 所建立，或者可以手動方式建立，並可匯入至 Visual Studio 中。
@@ -52,7 +52,7 @@ ms.locfileid: "55690446"
 
     如果您沒有看到特定的專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 安裝 **ASP.NET 和 Web 開發**工作負載。
 
-    您選擇的專案範本 (ASP.NET 或 ASP.NET Core) 必須對應至 
+    您選擇的專案範本 (ASP.NET 或 ASP.NET Core) 必須與 Web 伺服器上所安裝的 ASP.NET 版本相對應。
 
 1. 選擇 [MVC] (.NET Framework) 或 [Web 應用程式 (Model-View-Controller)] (適用於 .NET Core)，並確定已選取 [不需要驗證]，然後按一下 [確定]。
 

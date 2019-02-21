@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d387bbc54d1eb1619ddffbf7e96308834d125826
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b9680087162cbfa89e12cb7d9b44d7079cba4ef2
+ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911087"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56270650"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
@@ -798,11 +798,17 @@ ms.locfileid: "55911087"
 | Edit.ExpandCurrentRegion | **Ctrl+M、Ctrl+E** |
 | Edit.FormatDocument | **Ctrl+K、Ctrl+D** |
 | Edit.FormatSelection | **Ctrl+K、Ctrl+F** |
+| Edit.GotoAll | **Ctrl+T**<br /><br /> 或<br /><br /> **Ctrl+,** |
 | Edit.GotoBrace | **Ctrl+]** |
 | Edit.GotoBraceExtend | **Ctrl+Shift+]** |
+| Edit.GotoRecent | **Ctrl+T、R** |
+| Edit.GotoNextIssueinFile | **Alt+PgDn** |
+| Edit.GotoPreviousIssueinFile  **Alt+PgUp** |
 | Edit.HideSelection | **Ctrl+M、Ctrl+H** |
 | Edit.IncreaseFilterLevel | **Alt+.** |
 | Edit.IncrementalSearch | **Ctrl+I** |
+| Edit.InsertCaretsatAllMatching | **Shift+Alt+;** | 
+| Edit.InsertNextMatchingCaret | **Shift+Alt+.** | 
 | Edit.InsertTab | **Tab** |
 | Edit.LineCut | **Ctrl+L** |
 | Edit.LineDelete | **Ctrl+Shift+L** |
@@ -845,7 +851,8 @@ ms.locfileid: "55911087"
 | Edit.SelectCurrentWord | **Ctrl+W** |
 | Edit.SelectionCancel | **Escape** |
 | Edit.SelectToLastGoBack | **Ctrl+=** |
-| Edit.ShowCodeLensMenu | **Alt+\`** |
+| Edit.ShowCodeLensMenu | **Ctrl+K、Ctrl+\`** |
+| Edit.ShowNavigateMenu | **Alt+\`** |
 | Edit.StopHidingCurrent | **Ctrl+M、Ctrl+U** |
 | Edit.StopOutlining | **Ctrl+M、Ctrl+P** |
 | Edit.SwapAnchor | **Ctrl+K、Ctrl+A** |

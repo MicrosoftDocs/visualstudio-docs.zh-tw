@@ -6,23 +6,34 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 2a5b60496a53c35bb67e5cd19d6059212e22ccfd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e192f75508173cd4014e391168ab27e9abe2bc9a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911776"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317207"
 ---
 # <a name="visual-studio-2019-for-mac-preview-tour"></a>Visual Studio 2019 for Mac 預覽版導覽
 
 > [!NOTE]
 > Visual Studio 2019 for Mac [現已開放](installation.md)以預覽版形式進行測試。
 
-Visual Studio for Mac 將 Xamarin 的行動中心 IDE Xamarin Studio，發展為 Mac 上的行動優先和雲端優先的開發環境。 這項以開發人員為主的工具，可讓您使用 .NET 的功能針對所有平台建立使用者所需的應用程式。
+Visual Studio for Mac 是 Mac 上的 _.NET 整合式開發環境_，可用來編輯、偵錯及建置程式碼，然後發佈應用程式。 除了必備功能 (如標準編輯器和偵錯工具) 外，Visual Studio for Mac 還有編譯器、程式碼完成工具、圖形設計工具和原始檔控制，讓軟體開發程序變得輕鬆容易。
 
-Visual Studio for Mac 的使用者體驗 (UX) 與其 Windows 對應項目相似，但有原生的 macOS 風格。 建立、開啟及開發應用程式，對於先前在 Windows 上使用 Visual Studio 的任何人而言，將會是熟悉的經驗。 此外，Visual Studio for Mac 採用許多功能強大的工具，這些工具讓其 Windows 對等項目成為功能如此強大的 IDE。 Roslyn 編譯器平台用於重構和 IntelliSense。 其專案系統和組建引擎會使用 MSBuild，而其原始檔編輯器則支援 TextMate 組合。 它為 Xamarin 與 .NET Core 應用程式使用相同的偵錯工具引擎，並為 Xamarin.iOS 和 Xamarin.Android 使用相同的設計工具。
+Visual Studio for Mac 支援的檔案類型很多都與 Windows 相同，例如 `.csproj`、`.fsproj`或 `.sln` 檔案，也支援 EditorConfig 這類功能，也就是說，您可以使用最適合您的 IDE。
+建立、開啟及開發應用程式，對於先前在 Windows 上使用 Visual Studio 的任何人而言，將會是熟悉的經驗。 此外，Visual Studio for Mac 採用許多功能強大的工具，這些工具讓其 Windows 對等項目成為功能如此強大的 IDE。 Roslyn 編譯器平台用於重構和 IntelliSense。 其專案系統和組建引擎會使用 MSBuild，而其原始檔編輯器則支援 TextMate 組合。 它為 Xamarin 與 .NET Core 應用程式使用相同的偵錯工具引擎，並為 Xamarin.iOS 和 Xamarin.Android 使用相同的設計工具。
 
-本文章探討 Visual Studio for Mac 的各個部分，提供一些功能的相關資訊，讓它成為建立跨平台應用程式的強大工具。
+## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Visual Studio for Mac 內含哪些功能
+
+Visual Studio for Mac 支援下列幾種開發作業：
+
+- 使用 C#、F# 開發 ASP.NET Core web 應用程式，並支援 Razor Pages、JavaScript 和 TypeScript
+- 使用 C# 或 F# 開發 .NET Core 主控台應用程式
+- 使用 C# 開發跨平台 Unity 遊戲和應用程式
+- 使用 C# 或 F# 和 XAML 在 Xamarin 中開發 Android、iOS、tvOS 和 watchOS 應用程式
+- 使用 C# 或 F# 開發 Cocoa 傳統型應用程式
+
+本文探討 Visual Studio for Mac 的各個部分，提供一些功能的相關資訊，讓它成為建立這些應用程式的強大工具。
 
 ## <a name="ide-tour"></a>IDE 導覽
 
