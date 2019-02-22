@@ -47,7 +47,7 @@ items:
       href: vs-azure-tools-cloud-service-project-managing-roles.md
     - name: 沝被發佈或部署雲端服務
       href: vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md
-    - name: 為 Azure 雲端服務保留常數虛擬 IP 位址
+    - name: 保持 Azure 雲端服務的固定虛擬 IP 位址
       href: vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md
     - name: 從命令列建置 Azure 專案
       href: vs-azure-tools-command-line-build.md
@@ -118,9 +118,9 @@ items:
     href: vs-azure-tools-resources-managing-with-cloud-explorer.md
   - name: 從伺服器總管存取 Azure 虛擬機器
     href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-ms.openlocfilehash: 47bd746cddc9563615d271a096fbd02911032077
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: 212306b43f2be4ccb4fdee84945d317904f6f8b8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571092"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629257"
