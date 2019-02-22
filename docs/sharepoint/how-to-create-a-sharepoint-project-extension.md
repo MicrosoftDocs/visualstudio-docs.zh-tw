@@ -14,36 +14,36 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a95c0b2724e6c58a6d515fd1536f1f0bf7f69357
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: c42fc5ec197447a8def80d3aab7bb74def2db5e3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874438"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619377"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>HOW TO：建立 SharePoint 專案擴充功能
-  當您想要將功能新增至已在 Visual Studio 中開啟任何 SharePoint 專案，請建立專案擴充功能。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)。  
+  當您想要將功能新增至已在 Visual Studio 中開啟任何 SharePoint 專案，請建立專案擴充功能。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)。
 
-### <a name="to-create-a-project-extension"></a>若要建立專案擴充功能  
+### <a name="to-create-a-project-extension"></a>若要建立專案擴充功能
 
-1.  建立類別庫 (Class Library) 專案。  
+1.  建立類別庫 (Class Library) 專案。
 
-2.  加入下列組件的參考：  
+2.  加入下列組件的參考：
 
-    -   Microsoft.VisualStudio.SharePoint  
+    -   Microsoft.VisualStudio.SharePoint
 
-    -   System.ComponentModel.Composition  
+    -   System.ComponentModel.Composition
 
-3.  建立實作 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 介面的類別。  
+3.  建立實作 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 介面的類別。
 
-4.  新增<xref:System.ComponentModel.Composition.ExportAttribute>類別。 這個屬性可讓 Visual Studio 來探索及載入您<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>實作。 傳遞<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>屬性建構函式的型別。  
+4.  新增<xref:System.ComponentModel.Composition.ExportAttribute>類別。 這個屬性可讓 Visual Studio 來探索及載入您<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>實作。 傳遞<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>屬性建構函式的型別。
 
-5.  在您實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法，使用成員*projectService*參數來定義您的延伸模組的行為。 這個參數是<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>可用來存取事件中所定義的物件<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>介面。  
+5.  在您實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法，使用成員*projectService*參數來定義您的延伸模組的行為。 這個參數是<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>可用來存取事件中所定義的物件<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>介面。
 
-## <a name="example"></a>範例  
- 下列程式碼範例示範如何建立簡單的專案擴充功能處理 SharePoint 專案事件所定義的大部分<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>介面。 若要測試的程式碼，建立 SharePoint 專案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]然後將更多專案加入方案中，變更專案屬性值，或刪除或排除的專案。 擴充功能會通知您的事件寫入訊息至**輸出**視窗和**錯誤清單**視窗。  
+## <a name="example"></a>範例
+ 下列程式碼範例示範如何建立簡單的專案擴充功能處理 SharePoint 專案事件所定義的大部分<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>介面。 若要測試的程式碼，建立 SharePoint 專案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]然後將更多專案加入方案中，變更專案屬性值，或刪除或排除的專案。 擴充功能會通知您的事件寫入訊息至**輸出**視窗和**錯誤清單**視窗。
 
-  ```vb  
+  ```vb
     Imports Microsoft.VisualStudio.SharePoint
     Imports System.ComponentModel
     Imports System.ComponentModel.Composition
@@ -109,10 +109,10 @@ ms.locfileid: "54874438"
             project.ProjectService.Logger.WriteLine(message, LogCategory.Message)
         End Sub
       End Class
-    End Namespace  
-    ```  
+    End Namespace
+    ```
 
-    ```csharp  
+    ```csharp
     using Microsoft.VisualStudio.SharePoint;
     using System;
     using System.ComponentModel;
@@ -182,25 +182,25 @@ ms.locfileid: "54874438"
             project.ProjectService.Logger.WriteLine(message, LogCategory.Message);
         }
      }
-  }  
-  ```  
+  }
+  ```
 
-此範例會使用 SharePoint 專案服務來將訊息寫入**輸出**視窗和**錯誤清單**視窗。 如需詳細資訊，請參閱 <<c0> [ 使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)。  
+此範例會使用 SharePoint 專案服務來將訊息寫入**輸出**視窗和**錯誤清單**視窗。 如需詳細資訊，請參閱 <<c0> [ 使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)。
 
- 如需範例，示範如何處理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested>並<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件，請參閱[How to:加入 SharePoint 專案的捷徑功能表項目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)和[How to:將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。  
+ 如需範例，示範如何處理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested>並<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件，請參閱[How to:加入 SharePoint 專案的捷徑功能表項目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)和[How to:將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。
 
-## <a name="compile-the-code"></a>編譯程式碼  
- 這個範例需要參考下列組件：  
+## <a name="compile-the-code"></a>編譯程式碼
+ 這個範例需要參考下列組件：
 
--   Microsoft.VisualStudio.SharePoint  
+-   Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition  
+-   System.ComponentModel.Composition
 
-## <a name="deploy-the-extension"></a>部署擴充功能  
- 若要部署的延伸模組，建立[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件和任何其他您想要將副檔名的檔案。 如需詳細資訊，請參閱 <<c0> [ 在 Visual Studio 中的 SharePoint 部署擴充功能工具](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
+## <a name="deploy-the-extension"></a>部署擴充功能
+ 若要部署的延伸模組，建立[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件和任何其他您想要將副檔名的檔案。 如需詳細資訊，請參閱 <<c0> [ 在 Visual Studio 中的 SharePoint 部署擴充功能工具](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
 
 ## <a name="see-also"></a>另請參閱
- [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)   
- [如何：加入 SharePoint 專案的捷徑功能表項目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
- [如何：將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [逐步解說：建立 SharePoint 專案擴充功能](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  
+- [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)
+- [如何：加入 SharePoint 專案的捷徑功能表項目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
+- [如何：將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
+- [逐步解說：建立 SharePoint 專案擴充功能](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)

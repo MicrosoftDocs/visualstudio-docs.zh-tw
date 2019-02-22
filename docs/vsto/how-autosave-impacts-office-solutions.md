@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f2ca14146a6a0444859722bfded24faaa36dd9f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875624"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601378"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>自動儲存如何影響 Office 方案
 
@@ -27,5 +27,4 @@ ms.locfileid: "54875624"
 > Windows 桌面 Word 的自動儲存、 Excel 和 PowerPoint 中 2017年引進，目前供 Office365 訂閱者。 如果您已購買 Office 2016 或更早的永久授權，您目前沒有存取權的共同撰寫功能。 （Excel Online，Excel 適用於 Android、 ios、 Excel 和 Excel Mobile，在 Windows 市集中進行支援這項功能，不過）。
 
 ## <a name="see-also"></a>另請參閱
-
-[開發 Office 方案](./developing-office-solutions.md)
+- [開發 Office 方案](./developing-office-solutions.md)
