@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc20ae31d6417d12d0a416fe3573e7f4fc8f2ee2
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1a5fc7f15a7fe4ec0f267eef669fc99af38375dc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865550"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643882"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>HOW TO：以程式設計方式刪除約會
-  本範例會刪除一個週期性約會執行個體。 本範例假設有個週期性約會執行個體發生於 2006 年 6 月 28 日 08:00。  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>範例  
+  本範例會刪除一個週期性約會執行個體。 本範例假設有個週期性約會執行個體發生於 2006 年 6 月 28 日 08:00。
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>範例
  [!code-vb[Trin_Outlook_RL_DeleteAppointment#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteAppointment/thisaddin.vb#1)]
- [!code-csharp[Trin_Outlook_RL_DeleteAppointment#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteAppointment/thisaddin.cs#1)]  
-  
-## <a name="see-also"></a>另請參閱  
- [使用行事曆項目](../vsto/working-with-calendar-items.md)   
- [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)   
- [如何：以程式設計方式建立約會](../vsto/how-to-programmatically-create-appointments.md)   
- [如何：以程式設計方式建立自訂行事曆](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
- [如何：以程式設計方式建立會議邀請](../vsto/how-to-programmatically-create-a-meeting-request.md)  
+ [!code-csharp[Trin_Outlook_RL_DeleteAppointment#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteAppointment/thisaddin.cs#1)]
+
+## <a name="see-also"></a>另請參閱
+- [使用行事曆項目](../vsto/working-with-calendar-items.md)
+- [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)
+- [如何：以程式設計方式建立約會](../vsto/how-to-programmatically-create-appointments.md)
+- [如何：以程式設計方式建立自訂行事曆](../vsto/how-to-programmatically-create-a-custom-calendar.md)
+- [如何：以程式設計方式建立會議邀請](../vsto/how-to-programmatically-create-a-meeting-request.md)

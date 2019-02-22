@@ -15,26 +15,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6451aa5427799f0905d19b7b90e87f8cca3d0bbd
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8246f42064a668959ea180c3a97cba643afbb57c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863184"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645273"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>HOW TO：以程式設計方式列出最近使用的活頁簿檔案
-  <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A>屬性會傳回集合，其中包含出現在 Microsoft Office Excel 清單最近使用的檔案中的所有檔案的名稱。 清單的長度會根據使用者選取要保留的檔案數目而有所不同。 您可以在範圍中顯示結果。  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
-## <a name="to-list-recently-used-workbooks-in-a-range-object"></a>若要列出最近使用的活頁簿中的範圍物件  
-  
-1.  迴圈的最新的檔案清單，並顯示在相對於儲存格的名稱<xref:Microsoft.Office.Interop.Excel.Range>物件。  
-  
+  <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A>屬性會傳回集合，其中包含出現在 Microsoft Office Excel 清單最近使用的檔案中的所有檔案的名稱。 清單的長度會根據使用者選取要保留的檔案數目而有所不同。 您可以在範圍中顯示結果。
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+## <a name="to-list-recently-used-workbooks-in-a-range-object"></a>若要列出最近使用的活頁簿中的範圍物件
+
+1.  迴圈的最新的檔案清單，並顯示在相對於儲存格的名稱<xref:Microsoft.Office.Interop.Excel.Range>物件。
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#9)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]  
-  
-## <a name="see-also"></a>另請參閱  
- [使用活頁簿](../vsto/working-with-workbooks.md)   
- [NamedRange 控制項](../vsto/namedrange-control.md)   
- [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]
+
+## <a name="see-also"></a>另請參閱
+- [使用活頁簿](../vsto/working-with-workbooks.md)
+- [NamedRange 控制項](../vsto/namedrange-control.md)
+- [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)

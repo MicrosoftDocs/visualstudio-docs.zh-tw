@@ -13,24 +13,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3a62ee1c081399cdbaaa586256a25f859e02acbc
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: f2c8894c5e2573c61ff54e38fa41ea0ed1cd3f77
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874012"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599593"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint 程式開發範例和逐步解說
-  本章節包含範例應用程式、 程式碼範例和逐步解說，說明語法、 結構和用來建置 SharePoint 解決方案的技術。  
-  
- 範例程式碼是針對說明之用，因此不應用於已部署的解決方案，而不需要修改。 特別是，安全性必須納入大於的考量。  
-  
+  本章節包含範例應用程式、 程式碼範例和逐步解說，說明語法、 結構和用來建置 SharePoint 解決方案的技術。
+
+ 範例程式碼是針對說明之用，因此不應用於已部署的解決方案，而不需要修改。 特別是，安全性必須納入大於的考量。
+
 ## <a name="in-this-section"></a>本節內容
-  
-|主題|描述|  
-|-----------|-----------------|  
-|[SharePoint 程式開發範例](../sharepoint/sharepoint-development-samples.md)|描述範例應用程式，示範如何使用 Visual Studio 中的 SharePoint 開發工具。|  
-|[SharePoint 開發的逐步解說](../sharepoint/sharepoint-development-walkthroughs.md)|列出逐步指南，提供 Visual Studio 中 SharePoint 開發工具的簡介。|  
-  
+
+|主題|描述|
+|-----------|-----------------|
+|[SharePoint 程式開發範例](../sharepoint/sharepoint-development-samples.md)|描述範例應用程式，示範如何使用 Visual Studio 中的 SharePoint 開發工具。|
+|[SharePoint 開發的逐步解說](../sharepoint/sharepoint-development-walkthroughs.md)|列出逐步指南，提供 Visual Studio 中 SharePoint 開發工具的簡介。|
+
 ## <a name="see-also"></a>另請參閱
- [建立 SharePoint 方案](../sharepoint/create-sharepoint-solutions.md)  
+- [建立 SharePoint 方案](../sharepoint/create-sharepoint-solutions.md)
