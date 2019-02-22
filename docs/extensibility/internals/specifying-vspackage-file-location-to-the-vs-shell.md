@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a1a28232b276456dd2b9a982533e1974ed9a088
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 47f95231c0c7bb955271203792bdd795772b50c1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932411"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612370"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>為 VS Shell 指定 VSPackage 檔案位置
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須是找不到組件載入 VSPackage 的 DLL。 您可以找到以各種方式下, 表中所述。  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須是找不到組件載入 VSPackage 的 DLL。 您可以找到以各種方式下, 表中所述。
 
 
 | 方法 | 描述 |
