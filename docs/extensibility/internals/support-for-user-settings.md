@@ -12,43 +12,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8204f7c6716acaad0183d63b487a8191c5a1dd1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bba2a948ef9554434ad1032bcbfb8b54dfe8d4c3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964245"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622718"
 ---
 # <a name="support-for-user-settings"></a>支援使用者設定
-VSPackage 可能會定義一或多個設定類別，也就是當使用者選擇保存的狀態變數群組**匯入/匯出設定**命令**工具**功能表。 若要啟用此持續性，您可以使用 Api 設定中[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  
+VSPackage 可能會定義一或多個設定類別，也就是當使用者選擇保存的狀態變數群組**匯入/匯出設定**命令**工具**功能表。 若要啟用此持續性，您可以使用 Api 設定中[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。
 
- 自訂設定點和 GUID 指的登錄項目定義 VSPackage 的 [設定] 類別。 VSPackage 可以支援多個設定分類，每個已定義的自訂設定點。  
+ 自訂設定點和 GUID 指的登錄項目定義 VSPackage 的 [設定] 類別。 VSPackage 可以支援多個設定分類，每個已定義的自訂設定點。
 
--   實作的 interop 組件為基礎的設定 (使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>介面) 應該藉由編輯登錄，或使用登錄器指令碼 （.rgs 檔案） 建立自訂設定點。 如需詳細資訊，請參閱 [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts)。  
+-   實作的 interop 組件為基礎的設定 (使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>介面) 應該藉由編輯登錄，或使用登錄器指令碼 （.rgs 檔案） 建立自訂設定點。 如需詳細資訊，請參閱 [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts)。
 
--   使用 Managed Package Framework (MPF) 的程式碼應該連結以建立自訂設定點<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>每個自訂設定點的 vspackage。  
+-   使用 Managed Package Framework (MPF) 的程式碼應該連結以建立自訂設定點<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>每個自訂設定點的 vspackage。
 
-     如果單一 VSPackage 支援數個自訂設定點，每個自訂設定點藉由個別的類別，而且每個已註冊的唯一執行個體<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>類別。 因此，實作類別的設定可以支援多個設定分類。  
+     如果單一 VSPackage 支援數個自訂設定點，每個自訂設定點藉由個別的類別，而且每個已註冊的唯一執行個體<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>類別。 因此，實作類別的設定可以支援多個設定分類。
 
-## <a name="custom-settings-point-registry-entry-details"></a>自訂設定點的登錄項目詳細資料  
- 在下列位置的登錄項目中建立自訂設定點：HKLM\Software\Microsoft\VisualStudio\\*\<版本 >* \UserSettings\\`<CSPName>`，其中`<CSPName>`是 VSPackage 支援的自訂設定點名稱並*\<版本 >* 是新版[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 8.0。  
+## <a name="custom-settings-point-registry-entry-details"></a>自訂設定點的登錄項目詳細資料
+ 在下列位置的登錄項目中建立自訂設定點：HKLM\Software\Microsoft\VisualStudio\\*\<版本 >* \UserSettings\\`<CSPName>`，其中`<CSPName>`是 VSPackage 支援的自訂設定點名稱並*\<版本 >* 是新版[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 8.0。
 
 > [!NOTE]
->  Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\*\<版本 >* 可以覆寫以替代 root 時[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是整合式的開發環境 (IDE)初始化。 如需詳細資訊，請參閱 <<c0> [ 命令列參數](../../extensibility/command-line-switches-visual-studio-sdk.md)。  
+>  Hkey_local_machine\software\microsoft\visualstudio \ 的根路徑\\*\<版本 >* 可以覆寫以替代 root 時[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是整合式的開發環境 (IDE)初始化。 如需詳細資訊，請參閱 <<c0> [ 命令列參數](../../extensibility/command-line-switches-visual-studio-sdk.md)。
 
- 登錄項目結構如下所示：  
+ 登錄項目結構如下所示：
 
- HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\
 
- `<CSPName`>= s '#12345'  
+ `<CSPName`>= s '#12345'
 
- 封裝 = ' {XXXXXX XXXX XXXX XXXX XXXXXXXXX}'  
+ 封裝 = ' {XXXXXX XXXX XXXX XXXX XXXXXXXXX}'
 
- Category = '{YYYYYY YYYY YYYY YYYY YYYYYYYYY}'  
+ Category = '{YYYYYY YYYY YYYY YYYY YYYYYYYYY}'
 
- ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'  
+ ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'
 
- AlternateParent = CategoryName  
+ AlternateParent = CategoryName
 
 
 | 名稱 | 類型 | 資料 | 描述 |

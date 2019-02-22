@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3dcc7266bd5e2a7e40c4dfbb4b549c30a1338ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce8bca614d0af9c7b0557d5b5979797f127a47af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942931"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604908"
 ---
 # <a name="implementing-single-file-generators"></a>實作單一檔案產生器
-自訂工具 — 有時稱為單一檔案產生器，可用來擴充[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]並[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]專案中的系統[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 自訂工具是實作的 COM 元件<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>介面。 使用此介面，自訂工具將轉換成單一的輸出檔案的單一輸入的檔案。 轉換的結果可能是原始碼或任何其他輸出，是很有用。 自訂工具產生的程式碼檔案的兩個範例會產生以回應在視覺化設計工具和使用 Web 服務描述語言 (WSDL) 產生的檔案中變更程式碼。  
-  
- 當載入自訂的工具，或輸入的檔案儲存時，專案系統會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>方法，並將參考傳遞<xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress>回呼介面，藉此工具時，可以向使用者報告其進度。  
-  
- 自訂工具產生的輸出檔案會加入至專案的相依性的輸入檔。 專案系統會自動判斷輸出檔案，根據自訂工具的實作所傳回的字串名稱<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>。  
-  
- 自訂工具必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>介面。 （選擇性） 自訂的工具支援<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>介面，以從輸入檔以外的來源擷取資訊。 在任何情況下，您可以使用自訂的工具，您必須先註冊它與系統或[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]本機登錄。 如需有關如何註冊自訂工具的詳細資訊，請參閱[註冊單一檔案產生器](../../extensibility/internals/registering-single-file-generators.md)。  
-  
-## <a name="see-also"></a>另請參閱  
- [將類型公開至視覺化設計工具](../../extensibility/internals/exposing-types-to-visual-designers.md)
+自訂工具 — 有時稱為單一檔案產生器，可用來擴充[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]並[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]專案中的系統[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 自訂工具是實作的 COM 元件<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>介面。 使用此介面，自訂工具將轉換成單一的輸出檔案的單一輸入的檔案。 轉換的結果可能是原始碼或任何其他輸出，是很有用。 自訂工具產生的程式碼檔案的兩個範例會產生以回應在視覺化設計工具和使用 Web 服務描述語言 (WSDL) 產生的檔案中變更程式碼。
+
+ 當載入自訂的工具，或輸入的檔案儲存時，專案系統會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>方法，並將參考傳遞<xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress>回呼介面，藉此工具時，可以向使用者報告其進度。
+
+ 自訂工具產生的輸出檔案會加入至專案的相依性的輸入檔。 專案系統會自動判斷輸出檔案，根據自訂工具的實作所傳回的字串名稱<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>。
+
+ 自訂工具必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>介面。 （選擇性） 自訂的工具支援<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>介面，以從輸入檔以外的來源擷取資訊。 在任何情況下，您可以使用自訂的工具，您必須先註冊它與系統或[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]本機登錄。 如需有關如何註冊自訂工具的詳細資訊，請參閱[註冊單一檔案產生器](../../extensibility/internals/registering-single-file-generators.md)。
+
+## <a name="see-also"></a>另請參閱
+- [將類型公開至視覺化設計工具](../../extensibility/internals/exposing-types-to-visual-designers.md)

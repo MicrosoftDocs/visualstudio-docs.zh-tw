@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36c22cbb5ca39e48e488851f26786955c9704fda
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 75e918c752484129f9b89f939bc6fbbce6df803c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961594"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618194"
 ---
 # <a name="web-site-support-templates"></a>網站支援範本
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 網站專案和項目範本會提供可重複使用且可自訂的網站專案和項目虛設常式，並不需要從頭開始建立新的網站專案和項目，來加速開發程序。 如需詳細資訊[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]範本，請參閱[建立專案和項目範本](../../ide/creating-project-and-item-templates.md)。
@@ -185,4 +185,4 @@ ms.locfileid: "54961594"
      範本檔案會決定新的主版頁面和其相依的檔案的內容，如果有的話。
 
 ## <a name="see-also"></a>另請參閱
- [網站支援](../../extensibility/internals/web-site-support.md)
+- [網站支援](../../extensibility/internals/web-site-support.md)
