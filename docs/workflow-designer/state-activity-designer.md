@@ -19,8 +19,7 @@ ms.locfileid: "55940760"
 ---
 # <a name="state-activity-designer"></a>狀態活動設計工具
 
-
-  <xref:System.Activities.Statements.State> 代表狀態機器可以具有的狀態。
+<xref:System.Activities.Statements.State> 代表狀態機器可以具有的狀態。
 
 ## <a name="using-the-state-activity-designer"></a>使用 State 活動設計工具
 

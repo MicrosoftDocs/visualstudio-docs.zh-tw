@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2191ed7d6c091b730be9204d70cec79a0c6e5e44
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ab4bf684fae4919869bb4c3ad170c5dee29eda9
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035233"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317766"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace 功能 (C#，Visual Basic、 c + +)
 
 您可以使用 IntelliTrace 記錄您應用程式的事件和方法呼叫，以讓您檢查它在執行之不同時間點的狀態 (呼叫堆疊和區域變數值)。 只要如常開始偵錯，預設會開啟 IntelliTrace，而您可以在新 [診斷工具] 視窗的 [事件] 索引標籤中查看 IntelliTrace 所記錄的資訊。選取事件，然後按一下 [啟用歷程偵錯]，以查看針對此事件記錄的呼叫堆疊和區域變數。
 
-如需逐步說明，請參閱 [ 逐步解說： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)。
+如需逐步說明，請參閱[逐步解說：使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)。
 
 Visual Studio Enterprise 版本 (而非 Visual Studio Professional 或 Community 版本) 中提供 IntelliTrace。
 
@@ -105,21 +105,21 @@ IntelliTrace 預設會記錄您方案所使用之所有模組的資訊。 您可
 
 ## <a name="blogs"></a>部落格
 
-[Visual Studio Enterprise 2015 中的 IntelliTrace (英文)](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)
+[Visual Studio Enterprise 2015 中的 IntelliTrace (英文)](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)
 
-[逐步解說的即時使用 IntelliTrace 偵錯在 Visual Studio 2015 （文字編輯器）](https://blogs.msdn.microsoft.com/devops/2015/01/16/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
+[逐步解說的即時使用 IntelliTrace 偵錯在 Visual Studio 2015 （文字編輯器）](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
 
-[逐步解說的即時偵錯在 Visual Studio 2015 （社團） 中使用 IntelliTrace](https://blogs.msdn.microsoft.com/devops/2015/04/29/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
+[逐步解說的即時偵錯在 Visual Studio 2015 （社團） 中使用 IntelliTrace](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
 
-[在 Visual Studio Enterprise 2015 現在支援附加 IntelliTrace ！](https://blogs.msdn.microsoft.com/devops/2015/05/14/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
+[在 Visual Studio Enterprise 2015 現在支援附加 IntelliTrace ！](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
 
-[從 windows 服務，使用 IntelliTrace 獨立收集器收集資料](https://blogs.msdn.microsoft.com/devops/2015/05/14/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
+[從 windows 服務，使用 IntelliTrace 獨立收集器收集資料](https://devblogs.microsoft.com/devops/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
 
-[編輯 IntelliTrace 收集計劃](https://blogs.msdn.microsoft.com/devops/2015/03/09/editing-the-intellitrace-collection-plan/)
+[編輯 IntelliTrace 收集計劃](https://devblogs.microsoft.com/devops/editing-the-intellitrace-collection-plan)
 
-[自訂 TraceSource 和使用 IntelliTrace 偵錯](https://blogs.msdn.microsoft.com/devops/2014/12/16/custom-tracesource-and-debugging-using-intellitrace/)
+[自訂 TraceSource 和使用 IntelliTrace 偵錯](https://devblogs.microsoft.com/devops/custom-tracesource-and-debugging-using-intellitrace/)
 
-[Active Directory 帳戶下執行的 IntelliTrace 獨立收集器和應用程式集區](https://blogs.msdn.microsoft.com/devops/2014/12/22/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
+[Active Directory 帳戶下執行的 IntelliTrace 獨立收集器和應用程式集區](https://devblogs.microsoft.com/devops/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
 
 ## <a name="forums"></a>論壇
 

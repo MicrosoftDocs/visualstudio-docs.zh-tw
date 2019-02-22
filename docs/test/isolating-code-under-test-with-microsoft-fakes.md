@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 512c62c589dcfc4276e35247d268a035b03865a9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d3ec88a8abc0a6fcac47043a1b27d27f5b3e6f4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937717"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316453"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 隔離測試中的程式碼
 
@@ -35,7 +35,8 @@ Fakes 分為兩種類別：
 -   .NET Framework 專案
 
 > [!NOTE]
-> 不支援 .NET Standard 專案。
+> - 不支援 .NET Standard 專案。
+> - 使用 Visual Studio 分析不適用於使用 Microsoft Fakes 的測試。
 
 ## <a name="choose-between-stub-and-shim-types"></a>在虛設常式和填充碼類型之間選擇
 由於您會同時開發及更新這些類別，因此您通常會將 Visual Studio 專案視為元件。 您可以考慮針對專案對方案中其他專案或專案所參考之其他組件的呼叫使用虛設常式和填充碼。

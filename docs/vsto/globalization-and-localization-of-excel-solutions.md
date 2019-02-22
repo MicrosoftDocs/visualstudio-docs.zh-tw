@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b416d48b8e5351f0a6ddf037fa80b442888bbe2
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: f8d21f1697ce3d566c27e9845ae4c2a9a9d5e068
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866827"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450174"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>全球化和當地語系化的 Excel 方案
   本節包含在非英文設定的 Windows 電腦上執行 Microsoft Office Excel 解決方案之特殊考量的相關資訊。 當您使用 Visual Studio 建立其他種類的解決方案時，遇到的 Microsoft Office 解決方案全球化和當地語系化問題層面，大部分都一樣。 如需一般資訊，請參閱 < [Globalize 和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)。
@@ -47,7 +47,7 @@ ms.locfileid: "54866827"
  您仍然必須確定與文件文字互動的任何程式碼部分會繼續符合文字語言，而書籤、命名的範圍和其他顯示欄位會配合 Office 文件對不同文法和文字長度的任何重新格式化進行必要的調整。 對於包含極少量文字的文件範本，您可能要考慮將文字儲存在資源檔，然後再載入 在執行階段的文字。
 
 ### <a name="text-direction"></a>文字方向
- 在 Excel 中，您可以設定工作表屬性呈現由右至左的文字。 裝載控制項或有任何控制項`RightToLeft`屬性，會自動放置在設計工具上符合這些設定，在執行階段。 Word 沒有雙向文字的文件設定 (您只能變更文字的對齊方式)，所以控制項無法對應到這個設定。 您必須改為每個控制項設定文字對齊方式。 也可以撰寫程式碼來梳理所有控制項，強制其文字由右至左呈現。
+ 在 Excel 中，您可以設定工作表屬性呈現由右至左的文字。 裝載控制項或有任何控制項`RightToLeft`屬性，會自動放置在設計工具上符合這些設定，在執行階段。 Word 沒有雙向文字 （您只能變更文字的對齊方式） 的文件設定好讓控制項無法對應到此設定。 您必須改為每個控制項設定文字對齊方式。 也可以撰寫程式碼來梳理所有控制項，強制其文字由右至左呈現。
 
 ### <a name="change-culture"></a>變更文化特性
  您的文件層級自訂程式碼通常會共用主要的 Excel UI 執行緒，讓您對執行緒文化特性進行的任何變更都會影響在該執行緒上執行的其他所有項目；變更不限於自訂項目。

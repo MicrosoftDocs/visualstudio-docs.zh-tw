@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 02/08/2019
+ms.date: 02/14/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,16 +14,16 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 4667fd19f59453e9efc856aefeaaf8d43aff302d
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: b9ecca40da855daf4f49619bb62498927dc9a296
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987414"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318390"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 Preview 的新功能
 
-**已針對 [Preview 2 版本](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)進行更新**
+**[Preview 3 版本](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)的更新**
 
 >[!div class="button"]
 >[下載預覽](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
@@ -39,7 +39,7 @@ Visual Studio 2019 Preview 包含許多一般性改良，以及將開發人員�
 * **[持續創新](#continuous-innovation)**。 利用雲端等智慧支援項目，高效編寫程式碼。
 
 > [!NOTE]
-> 如需 Visual Studio 2019 Preview 中新功能的完整清單，請參閱[版本資訊](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)。 如需第二個預覽版的新功能摘要，請參閱 [Visual Studio 2019 Preview 2 is now available](https://blogs.msdn.microsoft.com/visualstudio/2019/01/24/visual-studio-2019-preview-2-is-now-available/) (Visual Studio 2019 Preview 2 現已推出) 部落格文章。
+> 如需 Visual Studio 2019 Preview 中新功能的完整清單，請參閱[版本資訊](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)。
 
 ## <a name="personal-and-team-productivity"></a>個人和團隊生產力
 
@@ -53,7 +53,7 @@ Visual Studio 2019 Preview 包含許多一般性改良，以及將開發人員�
 
 這個新的開始視窗會顯示可供您複製或簽出程式碼、開啟專案或方案、開啟本機資料夾或建立新專案的選項。 在簡單的對話方塊中顯示這些選項，可協助初學者或熟悉 Visual Studio 的使用者快速編寫程式碼。
 
-如需詳細資訊，請參閱 [Get to code:How we designed the new Visual Studio start window](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/) (開始撰寫程式碼：我們如何設計新的 Visual Studio 啟動視窗) 部落格文章。
+如需詳細資訊，請參閱 [Get to code:How we designed the new Visual Studio start window](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) (開始撰寫程式碼：我們如何設計新的 Visual Studio 啟動視窗) 部落格文章。
 
 ### <a name="better-search"></a>更佳的搜尋
 
@@ -81,7 +81,7 @@ Visual Studio 2019 Preview 包含許多一般性改良，以及將開發人員�
 
    ![Visual Studio 2019 中的新 [監看式] 視窗和格式值功能](media/search-watch-window.png)
 
-如需詳細資訊，請參閱 [Enhanced in Visual Studio 2019:Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://blogs.msdn.microsoft.com/visualstudio/2019/01/28/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) (Visual Studio 2019 的增強功能：在監看式、自動變數和區域變數視窗中搜尋物件和屬性) 部落格文章。
+如需詳細資訊，請參閱 [Enhanced in Visual Studio 2019:Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) (Visual Studio 2019 的增強功能：在監看式、自動變數和區域變數視窗中搜尋物件和屬性) 部落格文章。
 
 ### <a name="visual-studio-live-share"></a>Visual Studio Live Share
 
@@ -89,9 +89,9 @@ Visual Studio 2019 Preview 包含許多一般性改良，以及將開發人員�
 
 這項服務預設會安裝於 Visual Studio 2019 Preview。
 
-   ![顯示 Visual Studio 2019 中 Live Share 共同作業功能的動畫 GIF 檔案](media/live-share-collaboration.gif)
+![顯示 Visual Studio 2019 中 Live Share 共同作業功能的動畫 GIF 檔案](media/live-share-collaboration.gif)
 
-如需詳細資訊，請參閱 [Visual Studio Live Share for real-time code reviews and interactive education](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share 提供即時程式碼檢閱與互動式教學) 部落格文章。
+如需詳細資訊，請參閱 [Visual Studio Live Share for real-time code reviews and interactive education](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share 提供即時程式碼檢閱與互動式教學) 部落格文章。
 
 ## <a name="modern-development-support"></a>新式開發支援
 
@@ -122,7 +122,7 @@ Visual Studio 2019 的預覽版本支援為任何平台建置 [.NET Core 3](http
 
    ![Visual Studio 2019 中的個別監視器感知 (PMA) 轉譯](media/per-monitor-aware-dpi-scaling.png)
 
-如需詳細資訊，請參閱[使用 Visual Studio 2019 獲得更好的多監視器體驗](https://blogs.msdn.microsoft.com/visualstudio/2019/02/07/a-better-multi-monitor-experience-with-visual-studio-2019/) \(英文\) 部落格文章。
+如需詳細資訊，請參閱[使用 Visual Studio 2019 獲得更好的多監視器體驗](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) \(英文\) 部落格文章。
 
 ### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 
@@ -141,7 +141,7 @@ Visual Studio 2019 的預覽版本支援為任何平台建置 [.NET Core 3](http
 
 如果您使用 C#，我們也新增了以您的程式碼訓練自訂模型的能力。
 
-如需最新更新的詳細資訊，請參閱 [Visual Studio IntelliCode supports more languages and learns from your code](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) (Visual Studio IntelliCode 支援更多語言並從您的程式碼學習) 部落格文章。 此外，如需延伸模組及如何下載的詳細資訊，請參閱 Microsoft DevLabs 上的 [Visual Studio IntelliCode - 預覽](https://go.microsoft.com/fwlink/?linkid=872707)頁面。
+如需最新更新的詳細資訊，請參閱 [Visual Studio IntelliCode supports more languages and learns from your code](https://devblogs.microsoft.com/visualstudio/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) (Visual Studio IntelliCode 支援更多語言並從您的程式碼學習) 部落格文章。 此外，如需延伸模組及如何下載的詳細資訊，請參閱 Microsoft DevLabs 上的 [Visual Studio IntelliCode - 預覽](https://go.microsoft.com/fwlink/?linkid=872707)頁面。
 
 ## <a name="give-us-feedback"></a>提供意見反應
 
