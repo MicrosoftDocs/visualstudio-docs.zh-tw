@@ -13,33 +13,33 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4305b5a65ee8303fa98cc3a25202fe1fca38e571
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a1d0530d6a7a759bfab557be1a3d80fcfc9df78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923762"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630817"
 ---
 # <a name="miscellaneous-files-project"></a>其他檔案專案
-當使用者開啟專案項目時，IDE 會指派給其他檔案專案不是成員的方案中的任何專案的任何項目。  
-  
- 專案會扮演重要的角色，在決定當使用者開啟的專案項目，使用哪一個編輯器。 在設計專案時，可能使用的專案特定的編輯器或標準編輯器開啟特定檔案。  
-  
- 專案特定編輯器通常會需要使用者具有專業知識，或使用特殊的介面，從專案。 如需詳細資訊，請參閱[＜How to：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)。  
-  
- 標準編輯器可以開啟任何專案中的特定延伸模組的任何檔案。 使用者可以自訂某些標準的編輯器，例如[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]文字編輯器 中的，針對專案，但仍會保留其公用的字元。 標準編輯器藉由使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>方法。  
-  
- 如果方案中的沒有專案回應，它可以開啟專案項目，則 IDE 會提供名為其他檔案專案開啟任何檔案的特殊專案。  
-  
- 這個特殊的專案提供的內容以外的專案檔案的開頭。 在處理期間<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A>方法，其他檔案專案一律會回應以非常低優先順序。 因此，其他檔案專案一律會產生任何可以開啟檔案的較高優先順序專案。  
-  
- 其他檔案專案不需要明確地建立它與使用者**新的專案** 對話方塊。 此外，其他檔案專案不會永久管理專案成員的清單。 它會使用的選擇性功能，記錄的每一位使用者最近使用過的檔案清單。  
-  
-## <a name="see-also"></a>另請參閱  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>   
- <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>   
- [如何：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)   
- [如何：開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)   
- [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)   
- [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)
+當使用者開啟專案項目時，IDE 會指派給其他檔案專案不是成員的方案中的任何專案的任何項目。
+
+ 專案會扮演重要的角色，在決定當使用者開啟的專案項目，使用哪一個編輯器。 在設計專案時，可能使用的專案特定的編輯器或標準編輯器開啟特定檔案。
+
+ 專案特定編輯器通常會需要使用者具有專業知識，或使用特殊的介面，從專案。 如需詳細資訊，請參閱[如何：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)。
+
+ 標準編輯器可以開啟任何專案中的特定延伸模組的任何檔案。 使用者可以自訂某些標準的編輯器，例如[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]文字編輯器 中的，針對專案，但仍會保留其公用的字元。 標準編輯器藉由使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>方法。
+
+ 如果方案中的沒有專案回應，它可以開啟專案項目，則 IDE 會提供名為其他檔案專案開啟任何檔案的特殊專案。
+
+ 這個特殊的專案提供的內容以外的專案檔案的開頭。 在處理期間<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A>方法，其他檔案專案一律會回應以非常低優先順序。 因此，其他檔案專案一律會產生任何可以開啟檔案的較高優先順序專案。
+
+ 其他檔案專案不需要明確地建立它與使用者**新的專案** 對話方塊。 此外，其他檔案專案不會永久管理專案成員的清單。 它會使用的選擇性功能，記錄的每一位使用者最近使用過的檔案清單。
+
+## <a name="see-also"></a>另請參閱
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
+- <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>
+- [如何：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)
+- [如何：開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)
+- [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)
+- [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)

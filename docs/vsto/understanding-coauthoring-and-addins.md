@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 254a7ce0409ffbf254f0ec7d10ad3fa543775d61
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870031"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631961"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>了解共同撰寫與增益集
 
@@ -26,4 +26,4 @@ ms.locfileid: "54870031"
 注意:共同撰寫適用於 Windows Desktop Excel 2017 中引進，目前適用於 Office365 訂閱者。 購買 Office 2016 或更早版本的永久授權的使用者目前沒有共同撰寫功能的存取。 （Excel Online，Excel 適用於 Android、 ios、 Excel 和 Excel Mobile，在 Windows 市集中也支援共同撰寫）。
 
 ## <a name="see-also"></a>另請參閱
-[Excel 方案](./excel-solutions.md)
+- [Excel 方案](./excel-solutions.md)

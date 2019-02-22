@@ -12,29 +12,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64d17c8a375a5e579c6c2720afb118f1940c4a0d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a51deb24a2ba0088db8ed9a7acc1f8324f1fa92b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935029"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605688"
 ---
 # <a name="template-directory-description-vsdir-files"></a>範本目錄描述檔 (.Vsdir)
-範本目錄描述檔 (.vsdir) 是文字檔案，可讓整合式的開發環境 (IDE)，以顯示資料夾、 精靈.vsz 檔案，以及您在對話方塊中的專案相關聯的範本檔案。 內容包括每個檔案或資料夾的一筆記錄。 參考的位置中的所有.vsdir 檔案會都合併，雖然只有一個.vsdir 檔案通常提供來描述多個資料夾、 精靈、 或範本檔案。  
+範本目錄描述檔 (.vsdir) 是文字檔案，可讓整合式的開發環境 (IDE)，以顯示資料夾、 精靈.vsz 檔案，以及您在對話方塊中的專案相關聯的範本檔案。 內容包括每個檔案或資料夾的一筆記錄。 參考的位置中的所有.vsdir 檔案會都合併，雖然只有一個.vsdir 檔案通常提供來描述多個資料夾、 精靈、 或範本檔案。
 
- 資料夾 （子目錄），到.vsdir 檔案，而且.vsdir 檔案本身中所參考的檔案都位於相同的目錄。 當 IDE 執行精靈，或顯示資料夾或檔案中的**新的專案**或是**加入新項目**對話方塊方塊中，IDE 會檢查包含執行的檔案，以決定是否.vsdir 檔案的目錄存在。 如果找到.vsdir 檔案時，IDE 會讀取以判斷其中是否包含執行或顯示資料夾或檔案的項目。 如果找到項目，則 IDE 會在精靈的執行或顯示的內容中使用的資訊。  
+ 資料夾 （子目錄），到.vsdir 檔案，而且.vsdir 檔案本身中所參考的檔案都位於相同的目錄。 當 IDE 執行精靈，或顯示資料夾或檔案中的**新的專案**或是**加入新項目**對話方塊方塊中，IDE 會檢查包含執行的檔案，以決定是否.vsdir 檔案的目錄存在。 如果找到.vsdir 檔案時，IDE 會讀取以判斷其中是否包含執行或顯示資料夾或檔案的項目。 如果找到項目，則 IDE 會在精靈的執行或顯示的內容中使用的資訊。
 
- 下列程式碼範例是來自檔案 SourceFiles.vsdir 中\<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems\Source_Files 登錄機碼：  
+ 下列程式碼範例是來自檔案 SourceFiles.vsdir 中\<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems\Source_Files 登錄機碼：
 
-```  
-HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127  
-SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124  
-```  
+```
+HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127
+SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
+```
 
- 在此情況下，兩筆記錄會在一個檔案中。 新的一行 （歸位字元） 會分隔每一筆記錄。 每一行代表不同的檔案類型。 管道 (&#124;) 字元會分隔每個記錄中的欄位。 單一目錄可以包含多個具有不同的檔案名稱的.vsdir 檔案，或者您可以有一個.vsdir 檔案，每個檔案類型。  
+ 在此情況下，兩筆記錄會在一個檔案中。 新的一行 （歸位字元） 會分隔每一筆記錄。 每一行代表不同的檔案類型。 管道 (&#124;) 字元會分隔每個記錄中的欄位。 單一目錄可以包含多個具有不同的檔案名稱的.vsdir 檔案，或者您可以有一個.vsdir 檔案，每個檔案類型。
 
-## <a name="fields"></a>欄位  
- 下表列出每一筆記錄指定的欄位。  
+## <a name="fields"></a>欄位
+ 下表列出每一筆記錄指定的欄位。
 
 
 | 欄位 | 描述 |
@@ -49,20 +49,20 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 | 旗標 (<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>) | 用來停用或啟用**名稱**並**位置**欄位上**加入新項目** 對話方塊。 值**旗標**欄位是十進位對等項目，必要的位元旗標的組合。<br /><br /> 當使用者選取項目上**的新**索引標籤上，專案會決定是否 [名稱] 欄位和 [位置] 欄位會顯示何時**加入新項目**第一次顯示對話方塊。 項目，透過.vsdir 檔案，可以控制只選取項目時是否將欄位已啟用與停用。 |
 | SuggestedBaseName | 代表檔案、 精靈 」 或範本的預設名稱。 這個欄位是字串或表單"#ResID 」 的資源識別碼。 IDE 會使用此值，以提供項目的預設名稱。 此基底值會附加至讓名稱成為唯一的例如 MyFile21.asp 整數值。<br /><br /> 在先前的清單中，描述、 DLLPath、 IconResourceId、 旗標和 SuggestedBaseNumber 僅適用於範本和精靈檔案。 這些欄位不適用於資料夾中。 中的 BscPrjProjectItems 檔案中的程式碼說明這項事實\<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems 登錄機碼。 此檔案包含三筆記錄 （一個用於每個資料夾） 與每一筆記錄的四個欄位：RelPathName，{clsidPackage}，LocalizedName 和 SortPriority。<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
 
- 當您建立精靈檔案時，您也應該考慮下列問題。  
+ 當您建立精靈檔案時，您也應該考慮下列問題。
 
--   任何有意義的資料是任何非必要的欄位應包含 0 （零），做為預留位置。  
+-   任何有意義的資料是任何非必要的欄位應包含 0 （零），做為預留位置。
 
--   如果不提供任何當地語系化的名稱，則相對路徑名稱會使用精靈檔案中。  
+-   如果不提供任何當地語系化的名稱，則相對路徑名稱會使用精靈檔案中。
 
--   DLLPath 會覆寫 clsidPackage 圖示位置。  
+-   DLLPath 會覆寫 clsidPackage 圖示位置。
 
--   如果沒有定義圖示，IDE 會取代該擴充功能的檔案的預設圖示。  
+-   如果沒有定義圖示，IDE 會取代該擴充功能的檔案的預設圖示。
 
--   如果不提供任何建議的基底名稱，則會使用 'Project'。  
+-   如果不提供任何建議的基底名稱，則會使用 'Project'。
 
--   如果您刪除.vsz 檔案、 資料夾或範本檔案，您也必須從.vsdir 檔案來移除其相關聯的記錄。  
+-   如果您刪除.vsz 檔案、 資料夾或範本檔案，您也必須從.vsdir 檔案來移除其相關聯的記錄。
 
-## <a name="see-also"></a>另請參閱  
- [精靈](../../extensibility/internals/wizards.md)   
- [精靈檔 (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+## <a name="see-also"></a>另請參閱
+- [精靈](../../extensibility/internals/wizards.md)
+- [精靈檔 (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

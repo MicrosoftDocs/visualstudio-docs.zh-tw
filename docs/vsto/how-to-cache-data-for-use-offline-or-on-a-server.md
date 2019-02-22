@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 319cd31ccdc2c5c8cfa2b4540e5f32382008ca5a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873740"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636511"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>HOW TO：離線或在伺服器上快取資料以供使用
   您可以將標記資料項目，以快取中的文件，如此就可以使用離線。 這也使得資料可能儲存在伺服器的文件，會由其他程式碼操作文件中。
@@ -60,4 +60,8 @@ ms.locfileid: "54873740"
 4.  在 **屬性**視窗中，將**修飾詞**屬性設**公用**(根據預設，它是**內部**)。
 
 ## <a name="see-also"></a>另請參閱
- [快取資料](../vsto/caching-data.md) [How to:以程式設計方式快取 Office 文件中的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md) [How to:快取受密碼保護的文件中的資料](../vsto/how-to-cache-data-in-a-password-protected-document.md)[存取在伺服器上的文件中的資料](../vsto/accessing-data-in-documents-on-the-server.md)[儲存資料](../data-tools/saving-data.md)
+- [快取資料](../vsto/caching-data.md)
+- [如何：以程式設計方式快取 Office 文件中的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
+- [如何：在受密碼保護的文件中的快取資料](../vsto/how-to-cache-data-in-a-password-protected-document.md)
+- [存取伺服器上的文件中的資料](../vsto/accessing-data-in-documents-on-the-server.md)
+- [將資料儲存](../data-tools/saving-data.md)
