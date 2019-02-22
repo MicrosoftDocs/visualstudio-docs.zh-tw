@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 802c20a21b624e868cddac4badfd8827ef765506
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 749ec5f7f7bd68911accb33e4e8631b42de8e630
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866187"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630895"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>逐步解說：建立 SharePoint 應用程式頁面
- 
+
 應用程式頁面是 ASP.NET 網頁的一種特殊的形式。 應用程式頁面包含與 SharePoint 主版頁面合併的內容。 如需詳細資訊，請參閱 <<c0> [ 建立適用於 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)。
 
 本逐步解說會示範如何建立應用程式頁面，並使用本機 SharePoint 網站來偵錯。 此頁面會顯示每位使用者已建立或修改所有網站伺服器陣列中的所有項目。
@@ -153,5 +153,5 @@ ms.locfileid: "54866187"
 
 ## <a name="see-also"></a>另請參閱
 
-[如何：建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)  
+[如何：建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)
 [應用程式 _layouts 頁面類型](http://go.microsoft.com/fwlink/?LinkID=169274)

@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4131a3d50b684a470718ee08e3b9de0c60672e09
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 82dbf0858266fe2f07d4ae51c8171e0e8a900861
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874493"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614438"
 ---
 # <a name="work-with-visio-documents"></a>使用 Visio 文件
-  在本節中的主題會針對使用 Microsoft Office Visio 物件模型使用 Office 專案中的文件提供逐步程序和程式碼範例。  
-  
-|工作|程序|  
-|----------|---------------|  
-|建立空白的 Visio 文件或根據現有 Visio 樣板、 樣板或文件的新文件。|[如何：以程式設計方式建立新的 Visio 文件](../vsto/how-to-programmatically-create-new-visio-documents.md)|  
-|開啟現有的 Visio 文件和指定的讀取/寫入，唯讀的並停駐選項。|[如何：以程式設計方式開啟 Visio 文件](../vsto/how-to-programmatically-open-visio-documents.md)|  
-|關閉使用中的 Visio 文件。|[如何：以程式設計方式關閉 Visio 文件](../vsto/how-to-programmatically-close-visio-documents.md)|  
-|以相同的名稱或新的名稱儲存文件。|[如何：以程式設計方式儲存 Visio 文件](../vsto/how-to-programmatically-save-visio-documents.md)|  
-|列印整份文件或指定的頁面。|[如何：以程式設計方式列印 Visio 文件](../vsto/how-to-programmatically-print-visio-documents.md)|  
-  
-## <a name="see-also"></a>另請參閱  
- [Visio 方案](../vsto/visio-solutions.md)   
- [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)   
- [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
+  在本節中的主題會針對使用 Microsoft Office Visio 物件模型使用 Office 專案中的文件提供逐步程序和程式碼範例。
+
+|工作|程序|
+|----------|---------------|
+|建立空白的 Visio 文件或根據現有 Visio 樣板、 樣板或文件的新文件。|[如何：以程式設計方式建立新的 Visio 文件](../vsto/how-to-programmatically-create-new-visio-documents.md)|
+|開啟現有的 Visio 文件和指定的讀取/寫入，唯讀的並停駐選項。|[如何：以程式設計方式開啟 Visio 文件](../vsto/how-to-programmatically-open-visio-documents.md)|
+|關閉使用中的 Visio 文件。|[如何：以程式設計方式關閉 Visio 文件](../vsto/how-to-programmatically-close-visio-documents.md)|
+|以相同的名稱或新的名稱儲存文件。|[如何：以程式設計方式儲存 Visio 文件](../vsto/how-to-programmatically-save-visio-documents.md)|
+|列印整份文件或指定的頁面。|[如何：以程式設計方式列印 Visio 文件](../vsto/how-to-programmatically-print-visio-documents.md)|
+
+## <a name="see-also"></a>另請參閱
+- [Visio 方案](../vsto/visio-solutions.md)
+- [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)
+- [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

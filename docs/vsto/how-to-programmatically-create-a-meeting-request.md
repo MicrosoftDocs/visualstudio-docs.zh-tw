@@ -14,22 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 098e559e0d856ba8c9b096f452a85fc46d7058ce
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 62ccf3b170b05e5954bc217f032480ecd1f8a921
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869027"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606507"
 ---
 # <a name="how-to-programmatically-create-a-meeting-request"></a>HOW TO：以程式設計方式建立會議邀請
-  本範例會在 Microsoft Office Outlook 中建立會議邀請，並傳送要求給必要的與會者。  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>範例  
+  本範例會在 Microsoft Office Outlook 中建立會議邀請，並傳送要求給必要的與會者。
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>範例
  [!code-csharp[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_MeetingRequest/thisaddin.cs#1)]
- [!code-vb[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_MeetingRequest/thisaddin.vb#1)]  
-  
-## <a name="see-also"></a>另請參閱  
- [使用行事曆項目](../vsto/working-with-calendar-items.md)   
- [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [!code-vb[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_MeetingRequest/thisaddin.vb#1)]
+
+## <a name="see-also"></a>另請參閱
+- [使用行事曆項目](../vsto/working-with-calendar-items.md)
+- [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)
