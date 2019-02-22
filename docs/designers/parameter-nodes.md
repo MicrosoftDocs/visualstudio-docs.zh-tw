@@ -1,20 +1,19 @@
 ---
 title: 參數節點
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: da54db0b-3a3d-48dc-858c-7ac43aa04b13
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8e2de3ee7038b6bcba20dfe3a5565a1f8585e82
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c99986b65e1b396a92e667ceb4eeff2b92a58dc6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878753"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944503"
 ---
 # <a name="parameter-nodes"></a>參數節點
 
@@ -22,7 +21,7 @@ ms.locfileid: "53878753"
 
 ## <a name="parameter-node-reference"></a>參數節點參考
 
-|節點|詳細資料|屬性|
+|節點|Details|屬性|
 |----------|-------------|----------------|
 |**觀景窗世界空間位置**|觀景窗在世界空間中的位置。<br /><br /> **輸出：**<br /><br /> `Output`: `float4`<br /> 相機的位置。|無|
 |**光方向**|定義世界空間中光源投射方向的向量。<br /><br /> 您可以用這個向量來計算世界空間中的光線和反射比重。<br /><br /> **輸出：**<br /><br /> `Output`: `float3`<br /> 從目前像素到光源的向量。|無|

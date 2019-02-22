@@ -1,25 +1,23 @@
 ---
-title: 如何︰暫停和繼續效能資料收集 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：暫停和繼續效能資料收集 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, remote profiling
 ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6527825d23e0c09d156f61f2645276e61d72e165
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ebcfead4fa7e4192a45dab4d4d34f45d2e4717cc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843633"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961850"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>如何：暫停和繼續效能資料收集
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>HOW TO：暫停和繼續效能資料收集
 您可以從程式碼剖析工作階段頁面視窗，透過互動的方式控制程式碼剖析資料的收集。  
   
  控制資料收集可以讓您縮減分析資料檔案的大小，而且可以只收集自己有興趣的作業資料。 您可以在效能工作階段中重複暫停及繼續剖析程式碼。  
@@ -41,4 +39,4 @@ ms.locfileid: "34843633"
   
 ## <a name="see-also"></a>另請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   
- [操作說明︰啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)
+ [如何：開始和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)

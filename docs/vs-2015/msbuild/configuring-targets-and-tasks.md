@@ -1,25 +1,20 @@
 ---
 title: 設定目標和工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1bb82483b0adef6343423984e3b0d6fa21d0d678
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 304ebde1c30a78ab000a1fae4a16b5082b0aeecf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263507"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769262"
 ---
 # <a name="configuring-targets-and-tasks"></a>設定目標和工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,8 +32,5 @@ ms.locfileid: "49263507"
   
  如果您要建立自己的目標內容，則必須適當設定這些引數和參數。 如需範例，請查看 .NET Framework 4.5 Microsoft.Common.targets 檔案和 Microsoft.Common.Tasks 檔案。  如需如何建立可處理多個目標內容的自訂工作或如何修改現有工作的資訊，請參閱[如何：設定目標和工作](../msbuild/how-to-configure-targets-and-tasks.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [多目標](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

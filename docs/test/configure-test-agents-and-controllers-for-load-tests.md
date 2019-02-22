@@ -6,14 +6,13 @@ helpviewer_keywords:
 - load tests, test agents and controllers
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: c4462c97febc7f1075080bf659a679647bc7bbe5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 08cc8426dcc82a178bbcf042c13fa51956697702
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899833"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948819"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>設定用於執行負載測試的測試代理程式和測試控制器
 

@@ -1,19 +1,18 @@
 ---
 title: HOW TO：搭配使用中斷點與 XSLT
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72a22937792cc06bcac18f70a2bd4c53be98f7fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9676894b75696879b8c8193037822005658f5169
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894885"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913937"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>HOW TO：使用中斷點與 XSLT
 

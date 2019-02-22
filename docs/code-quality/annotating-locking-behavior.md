@@ -1,7 +1,6 @@
 ---
 title: 註釋鎖定行為
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _Releases_nonreentrant_lock_
@@ -33,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0a9f28da48582ac562f08e3327fb3d80375c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7661de324e2d2872491988c7b0fa637d0c318545
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835288"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920570"
 ---
 # <a name="annotating-locking-behavior"></a>註釋鎖定行為
 為了避免多執行緒程式中發生並行 Bug，請務必遵循適當的鎖定規範並使用 SAL 註釋。
@@ -105,6 +104,19 @@ ms.locfileid: "53835288"
 |`_Interlocked_`|標註變數，相當於`_Guarded_by_(_Global_interlock_)`。|
 |`_Interlocked_operand_`|標註函式參數是一個不同的 Interlocked 函式的目標運算元。  這些運算元必須有特定的其他屬性。|
 |`_Write_guarded_by_(expr)`|標註變數，並指出只要修改變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|
+
+
+## <a name="smart-lock-and-raii-annotations"></a>Smart Lock 和 RAII 註解
+ 智慧鎖定通常會包裝原生鎖定，並管理其存留期。 下表列出可以搭配智慧鎖定和 RAII 模式支援撰寫程式碼的註解`move`語意。
+
+|註釋|描述|
+|----------------|-----------------|
+|`_Analysis_assume_smart_lock_acquired_`|會指示假設已取得智慧鎖定分析器。 此註釋需要參考的鎖定類型做為其參數。|
+|`_Analysis_assume_smart_lock_released_`|會告知要假設的智慧鎖定已發行的分析器。 此註釋需要參考的鎖定類型做為其參數。|
+|`_Moves_lock_(target, source)`|描述`move constructor`作業，它會將鎖定狀態，從`source`物件到`target`。 `target`會被視為新建構的物件，因此任何狀態之前是遺失並取代`source`狀態。 `source`也沒有鎖定計數或別名的目標，但指向它的別名為初始狀態重設維持不變。|
+|`_Replaces_lock_(target, source)`|描述`move assignment operator`從來源傳輸狀態之前釋出目標鎖定語意。 這可以被視為的組合`_Moves_lock_(target, source)`前面加上`_Releases_lock_(target)`。|
+|`_Swaps_locks_(left, right)`|描述標準`swap`行為假設物件`left`和`right`交換其狀態。 如果有的話，交換的狀態會包含鎖定計數和別名目標。 指向的別名`left`和`right`物件會保持不變。|
+|`_Detaches_lock_(detached, lock)`|描述鎖定的包裝函式類型可讓具有其所含資源的中斷的案例。 這是類似`std::unique_ptr`搭配其內部的指標： 它可讓程式設計擷取的指標，並將其智慧型指標容器保留的全新的狀態。 支援類似的邏輯`std::unique_lock`和可實作自訂鎖定之包裝函數。 卸離的鎖定會保留其狀態 （鎖定計數和別名目標，如果有的話），而包裝函式會重設為包含零個鎖定計數和沒有別名的目標，同時保留它自己的別名。 沒有任何作業 （釋放與取得） 的鎖定計數。 此註解的行為就像`_Moves_lock_`不同之處在於卸離的引數應`return`而非`this`。|
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugStackFrames::Skip |Microsoft 文件
+title: IEnumDebugStackFrames::Skip |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79267220c7ad3ce19d1901c6371554c7aabacde8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 28821d90bc27d23d51db00e871807a2ccef885b7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727298"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097509"
 ---
 # <a name="ienumdebugstackframesskip"></a>IEnumDebugStackFrames::Skip
-略過指定的數目的列舉順序中的區段。  
+略過指定的數目的列舉型別序列中的區段。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT Skip(  
    ULONG  celt  
 );  
@@ -38,17 +38,17 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>參數  
  `celt`  
- [in]略過將列舉序列中的區段數目。  
+ [in]略過列舉序列中的區段數目。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會略過指定的數目的列舉順序中的區段。  
+ 這個方法會略過指定的數目的列舉型別序列中的區段。  
   
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugStackFrames 介面](../../winscript/reference/ienumdebugstackframes-interface.md)

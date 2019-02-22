@@ -1,7 +1,6 @@
 ---
 title: 選項對話方塊、環境、國際設定
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.InternationalSettings
@@ -15,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74a0380cd7d31f0c7a3e8d94a9232efa908ee89f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9cf9fc547451cd77c6f1fff568202f930540f9f1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833136"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951705"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>選項對話方塊、環境、國際設定
 

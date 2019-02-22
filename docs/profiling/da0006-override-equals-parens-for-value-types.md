@@ -1,8 +1,6 @@
 ---
 title: DA0006：覆寫實值型別的 Equals() | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAOverrideEquals
@@ -12,17 +10,17 @@ f1_keywords:
 ms.assetid: 4d85bdd6-b571-47e0-afd6-ba3764e4eed5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab011487f33438091eb963c9ea4a7e1d1c80ec4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e87fe52e1bdf3fda37f9eda964364e7b5cc13dec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856271"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942460"
 ---
-# <a name="da0006-override-equals-for-value-types"></a>DA0006：覆寫實值類型的 Equals()
+# <a name="da0006-override-equals-for-value-types"></a>DA0006：覆寫實值型別的 Equals()
 
 |||  
 |-|-|  
@@ -41,4 +39,4 @@ ms.locfileid: "49856271"
  如需如何覆寫 Equals 和等號比較運算子的詳細資訊，請參閱[實作 Equals 和相等運算子 (==) 的方針](http://go.microsoft.com/fwlink/?LinkId=177818)。  
 
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
- 如需實作 Equals 和相等運算子的範例，請參閱程式碼分析規則 [CA1815：必須覆寫實值型別上的 Equals 方法和相等運算子](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)
+ 如需實作 Equals 和等號比較運算子的範例，請參閱程式碼分析規則 [CA1815：覆寫實值型別上的 Equals 和等號比較運算子](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)

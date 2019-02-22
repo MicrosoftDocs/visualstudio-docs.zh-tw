@@ -1,20 +1,19 @@
 ---
 title: Blend 中的直接選取工具輔助按鍵
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83377aa4dabec81815a1503287cc878ca2fee062
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 955968137e1f8d2ba1322f5ccf9be2eac6196580
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823269"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940252"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend 中的直接選取工具輔助按鍵
 下表列出您可以用來修改現有路徑圖形的 [直接選取]工具 ![[直接選取] 工具](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) 快速鍵。 若要新增或移除現有路徑上的點，或結合兩個現有路徑，請使用**畫筆**工具。

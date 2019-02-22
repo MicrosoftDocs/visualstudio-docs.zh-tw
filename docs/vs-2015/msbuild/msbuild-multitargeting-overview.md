@@ -1,25 +1,20 @@
 ---
 title: MSBuild 多目標概觀 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da5d8d5aae19bee458a6d0750cb0d8cd4efa8c4d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 543fde0c09d97d0001210c401fdc4cf81f48a698
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243814"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800376"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 多目標概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "49243814"
 您可以使用 MSBuild，將應用程式編譯為在數個 .NET Framework 版本中的任一版上或數個系統平台中的任一個平台上執行。 例如，您可以將應用程式編譯為在 32 位元平台的 .NET Framework 2.0 上執行，也可以將同一個應用程式編譯為在 64 位元平台的 .NET Framework 4.5 上執行。  
   
 > [!IMPORTANT]
->  儘管名稱 「 多目標 」 之外，專案可以只有一個 framework 和目標只有一個平台一次。  
+>  除了名稱「多目標」之外，專案一次只能以一個架構和一個平台為目標。  
   
  這些是一部分的 MSBuild 目標功能︰  
   
@@ -56,6 +51,3 @@ ms.locfileid: "49243814"
   
 ## <a name="troubleshooting"></a>疑難排解  
  如果您嘗試參考不屬於目標內容的組件，則可能會發生錯誤。 如需這些錯誤和其處理方式的詳細資訊，請參閱[針對 .NET Framework 目標錯誤進行疑難排解](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)。
-
-
-

@@ -1,8 +1,6 @@
 ---
 title: 比較效能資料檔案 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, comparing profiling tools report files
@@ -10,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e6fda144-f21d-4912-9d16-1b8d3555a210
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20324a3026f5c32fcc1525f1c5afcd20b1b62332
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: aec25bac7d1851095a9c7c5d96766b2326fb36ac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690727"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943061"
 ---
 # <a name="compare-performance-data-files"></a>比較效能資料檔案
 分析工具資料檔案比較功能可讓您選取兩個報表檔案 (.*vsp* 或 .*vsps*) 檔案，然後產生報告以顯示一個分析工作階段到另一個之間發生的差異、效能回復和改善。  
@@ -34,4 +32,4 @@ ms.locfileid: "34690727"
  設定臨界值可減少雜訊，並以指定的數量篩選掉資料列的比較表格檢視中未變更的資料。  
   
 ## <a name="in-this-section"></a>本節內容  
- [操作說明：比較效能資料檔案](../profiling/how-to-compare-performance-data-files.md)
+ [如何：比較效能資料檔案](../profiling/how-to-compare-performance-data-files.md)

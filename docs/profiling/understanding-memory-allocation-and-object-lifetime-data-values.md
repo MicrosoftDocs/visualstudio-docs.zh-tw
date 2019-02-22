@@ -1,23 +1,21 @@
 ---
 title: 了解記憶體配置和物件存留期資料值 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
 - Profiling Tools, .NET memory method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27922f227c6791ad4b64b3258f9107d28b21a964
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 463bb6510e304de8d9068e1c8d133c4ab331ea4f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476726"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978668"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>了解記憶體配置和物件存留期資料值
 
@@ -37,6 +35,6 @@ ms.locfileid: "34476726"
 
 ## <a name="lifetime-data"></a>存留期資料
 
-.NET Framework 的記憶體回收行程可管理應用程式的記憶體配置及釋放。 為了要最佳化記憶體回收行程的效能，Managed 堆積分成三個層代 (Generation)：0、1 和 2。 執行階段的記憶體回收行程會將新的物件儲存在層代 0。 在回收之後存留下來的物件則會升階並儲存在層代 1 與 2。
+.NET Framework 的記憶體回收行程可管理應用程式的記憶體配置及釋放。 為了要最佳化記憶體回收行程的效能，受控堆積分成三個世代：0、1 和 2。 執行階段的記憶體回收行程會將新的物件儲存在層代 0。 在回收之後存留下來的物件則會升階並儲存在層代 1 與 2。
 
 記憶體回收行程會取消配置整個物件層代來回收記憶體。 對於已進行程式碼剖析的應用程式建立的物件，物件存留期檢視會顯示物件的數目和大小，以及回收時的層代。

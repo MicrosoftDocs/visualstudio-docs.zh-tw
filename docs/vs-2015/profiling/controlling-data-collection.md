@@ -1,14 +1,9 @@
 ---
 title: 控制資料收集 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - advanced tasks for profiling tools
 - profiling tools, advanced tasks
@@ -16,13 +11,13 @@ ms.assetid: e713ad63-b948-46f3-8db9-59b30922ebe5
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c8022dd8fdd480e4bc545923eeb96d64f16ed9a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e34c4db965cacefabe752774e393a4339042040e
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803418"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54780943"
 ---
 # <a name="controlling-data-collection"></a>控制資料收集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +34,5 @@ ms.locfileid: "51803418"
 ## <a name="related-sections"></a>相關章節  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能總管](../profiling/performance-explorer.md)
-
-
-

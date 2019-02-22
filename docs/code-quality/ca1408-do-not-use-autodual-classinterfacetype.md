@@ -1,7 +1,6 @@
 ---
 title: CA1408:不要使用 AutoDual ClassInterfaceType
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotUseAutoDualClassInterfaceType
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 60ca5e02-3c51-42dd-942b-4f950eecfa0f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8711ed43749d7bea2c69cee4dd4cb0f0160996a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c811c7e2b6ba06c716179469c8b038fd26b3b38a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844284"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908010"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408:不要使用 AutoDual ClassInterfaceType
 

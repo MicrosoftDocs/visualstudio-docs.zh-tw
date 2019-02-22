@@ -1,8 +1,6 @@
 ---
 title: 什麼是 Visual Studio 2017 中偵錯工具的新功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 01/22/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,36 +15,36 @@ helpviewer_keywords:
 ms.assetid: 2aed9caa-2384-4e49-8595-82d8b06cf271
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 342cb6c1f014c94bd86363415177ec747b0dc1b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ff14414415f86aeb704920f722eb221a2530a35c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943137"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993230"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>偵錯工具中最新消息 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 偵錯工具會包含下列新功能：
 
-- 在 15.5 中，新**快照集偵錯工具**您感興趣的程式碼執行時，會在生產應用程式的快照集。 若要指示偵錯工具擷取快照集，您可以在程式碼中設定快照點和記錄點。 偵錯工具可讓您清楚了解發生什麼問題，而不會影響實際執行應用程式的流量。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
+- 15.5 的新功能：**快照集偵錯工具**會在您感興趣的程式碼執行時，擷取實際執行應用程式的快照集。 若要指示偵錯工具擷取快照集，您可以在程式碼中設定快照點和記錄點。 偵錯工具可讓您清楚了解發生什麼問題，而不會影響實際執行應用程式的流量。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
 
     快照集合適用於 Azure App Service 中執行的下列 Web 應用程式：
 
   * 執行 .NET Framework 4.6.1 或更新版本的 ASP.NET 應用程式。
   * 在 Windows 上執行 .NET Core 2.0 或更新版本的 ASP.NET Core 應用程式。
 
-    如需詳細資訊，請參閱 <<c0> [ 偵錯即時 ASP.NET 應用程式中使用快照集偵錯工具](../debugger/debug-live-azure-applications.md)。
+    如需詳細資訊，請參閱[使用快照偵錯工具偵錯即時 ASP.NET 應用程式](../debugger/debug-live-azure-applications.md)。
 
 - 僅在 Visual Studio Enterprise 15.5 的新功能**IntelliTrace 回溯**自動快照的應用程式在每個中斷點和偵錯工具逐步執行事件。 記錄的快照集可讓您回溯到先前的中斷點或步驟，以檢視應用程式過去的狀態。 如果您想要查看先前的應用程式狀態，但不想要重新啟動偵錯或重新建立所需的應用程式狀態，IntelliTrace 回溯可節省您的時間。
 
     您可以使用[偵錯] 工具列的 [逐步返回] 和 [逐步前進] 按鈕，來巡覽及檢視快照集。 這些按鈕可巡覽出現在 [診斷工具] 視窗之 [事件] 索引標籤中的事件。
 
-    ![逐步執行向後和向前按鈕](../debugger/media/intellitrace-step-back-icons-description.png  "逐步返回] 和 [向前按鈕")
+    ![[逐步返回] 和 [逐步前進] 按鈕](../debugger/media/intellitrace-step-back-icons-description.png  "[逐步返回] 和 [逐步前進] 按鈕")
 
-    如需詳細資訊，請參閱 <<c0> [ 檢查先前的應用程式狀態，使用 IntelliTrace](../debugger/view-historical-application-state.md)頁面。
+    如需詳細資訊，請參閱[使用 IntelliTrace 檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)頁面。
 
 - **例外狀況協助程式**取代例外狀況助理，並會出現在非強制回應對話方塊中，發生錯誤。 **例外狀況協助程式**提供更快速存取任何內部例外狀況，偵錯工具 （如果有的話），額外的分析和立即存取**例外狀況設定**例外狀況。 也可以將例外狀況協助程式拖曳至浮動的檢視，如果它會封鎖您需要查看的項目。
 
@@ -73,4 +71,4 @@ ms.locfileid: "49943137"
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 偵錯](../debugger/index.md)
-- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+- [偵錯工具簡介](../debugger/debugger-feature-tour.md)

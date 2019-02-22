@@ -2,19 +2,18 @@
 title: R 工作區
 description: 如何在 Visual Studio 中使用工作區來控制 R 程式碼執行所在的位置。
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a72784b0ab265c090f2efd9c5949698118b559ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97ce4f226c39a20ad41c5977f800aa178450c69c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857010"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948143"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>控制 R 程式碼以工作區執行的位置
 
@@ -34,7 +33,7 @@ Visual Studio R 工具 (RTVS) 的工作區可讓您設定 R 工作階段的執�
 
 ## <a name="local-workspaces"></a>本機工作區
 
-[本機工作區] 清單會顯示您電腦上安裝的所有 R 解譯器。 
+[本機工作區] 清單會顯示您電腦上安裝的所有 R 解譯器。
 
 Visual Studio 啟動時，它會嘗試透過查看 **HKEY_LOCAL_MACHINE\Software\R-Core\\** 登錄機碼，自動偵測您已安裝的所有 R 版本。 因為這項檢查只會在啟動時完成，所以如果您安裝新的 R 解譯器，就需要重新啟動 Visual Studio。
 
@@ -129,7 +128,7 @@ RTVS 會在您第一次連線到遠端工作區時提示您輸入認證，然後
 
 ![專案屬性執行索引標籤與檔案傳輸設定](media/workspaces-remote-file-transfer-filter-settings.png)
 
-在此，[Transfer files on run] (執行時傳輸檔案) 屬性會判斷 RTVS 是否自動複製專案檔。 接著 [Files to transfer] (要傳輸的檔案) 值會確實篩選要傳送哪些檔案。 預設值為僅複製 *.R*、*.Rmd*、*.sql*、*.md* 和 *.cpp* 檔案。 此行為是為了避免每次執行時不小心將大型的資料檔案複製至伺服器。 
+在此，[Transfer files on run] (執行時傳輸檔案) 屬性會判斷 RTVS 是否自動複製專案檔。 接著 [Files to transfer] (要傳輸的檔案) 值會確實篩選要傳送哪些檔案。 預設值為僅複製 *.R*、*.Rmd*、*.sql*、*.md* 和 *.cpp* 檔案。 此行為是為了避免每次執行時不小心將大型的資料檔案複製至伺服器。
 
 ## <a name="copy-files-from-a-remote-workspace"></a>從遠端工作區複製檔案
 

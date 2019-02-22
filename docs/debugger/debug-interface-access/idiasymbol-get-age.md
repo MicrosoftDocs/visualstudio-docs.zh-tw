@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_age |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_age | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 60d05654-e832-4a2e-a4a7-fe9922c459fe
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ba915762a5eacffc32122a1dac4b7b046691e63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f826d7ef54473d45ef63d90c7de07cdee7257322
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868465"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029761"
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
 擷取的.pdb 檔案的存留期值。  
@@ -27,7 +25,7 @@ ms.locfileid: "49868465"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_age (   
+HRESULT get_age (   
    DWORD* pRetVal  
 );  
 ```  
@@ -52,5 +50,5 @@ HRESULT get_age (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

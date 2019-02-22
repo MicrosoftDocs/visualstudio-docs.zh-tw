@@ -10,17 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 11f7249f30b1866ca7c4aea4bbefa850a5353c0f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 60e67e7150f00abb44f4af6b812f0ede43be8037
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305581"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939836"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自訂 Visual Studio 為資料繫結的控制項建立標題的方式
 
@@ -43,8 +41,8 @@ ms.locfileid: "52305581"
 
 |登錄項目|預設值|說明|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|比對後面接著大寫的字元或底線為小寫字元。|
-|**SmartCaptionReplacement**|"$103"|**$1**代表第一個運算式的括號中比對任何字元， **$2**表示相符的第二個括號中的任何字元。 取代為第一個相符項目、 一個空格，然後第二個相符項目。|
+|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|比對後面接著大寫的字元或底線為小寫字元。|
+|**SmartCaptionReplacement**|**$1 $2**|**$1**代表第一個運算式的括號中比對任何字元， **$2**表示相符的第二個括號中的任何字元。 取代為第一個相符項目、 一個空格，然後第二個相符項目。|
 |**SmartCaptionSuffix**|**:**|表示附加至傳回字串的字元。 例如，如果標題是`Company Name`後, 置詞可讓 `Company Name:`|
 
 > [!CAUTION]

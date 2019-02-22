@@ -1,88 +1,81 @@
 ---
 title: -Project (devenv.exe)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
-- /project Devenv switch
+- /Project Devenv switch
 - projects [Visual Studio], rebuilding
 - projects [Visual Studio], building
 - deployment projects, specifying
-- project Devenv switch (/project)
-- Devenv, /project switch
+- Project Devenv switch (/Project)
+- Devenv, /Project switch
 - projects [Visual Studio], cleaning
 ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b18e4715eb711160d0adcc95c6a19e4b90bcc94
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 5fe7ec9fe8734d17868bee6a108d447729e4167f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948214"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970695"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
+
 識別所指定方案組態內要建置、清除、重建或部署的單一專案。
 
 ## <a name="syntax"></a>語法
 
-```cmd
-devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
+```shell
+devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>引數
- /build
 
- 建置 `/project` `ProjName` 所指定的專案。
+- *SolutionName*
 
- /clean
+  必要項。 方案檔的完整路徑和名稱。
 
- 清除在建置期間建立的所有中繼檔案和輸出目錄。
+- {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
 
- /rebuild
+  必要項。 [建置](build-devenv-exe.md)、[清除](clean-devenv-exe.md)、[部署](deploy-devenv-exe.md)或[重建](rebuild-devenv-exe.md)專案。
 
- 清除後建置 `/project` `ProjName` 所指定的專案。
+- *SolnConfigName*
 
- /deploy
+  選擇性。 將套用至 *SolutionName* 中所指定方案的方案組態名稱 (例如 `Debug` 或 `Release`)。 如果有多個方案平台可供使用，您也必須指定平台 (例如 `Debug|Win32`)。 如果未指定這個引數或其為空字串 (`""`)，則工具會使用方案的作用中組態。
 
- 指定在建置或重建之後部署專案。
+- `/Project` *ProjName*
 
- `SolnConfigName`
+  選擇性。 方案中專案檔的路徑和名稱。 您可以輸入專案的顯示名稱或從 *SolutionName* 資料夾到專案檔的相對路徑。 您也可以輸入專案檔的完整路徑和名稱。
 
- 必要。 將套用至 `SolutionName` 中所指定方案的方案組態名稱。
+- `/ProjectConfig` *ProjConfigName*
 
- `SolutionName`
+  選擇性。 要套用至所指定 `/Project` 的專案組建組態名稱 (例如 `Debug` 或 `Release`)。 如果有多個方案平台可供使用，您也必須指定平台 (例如 `Debug|Win32`)。
 
- 必要。 方案檔的完整路徑和名稱。
+- `/Out` *OutputFilename*
 
- /project `ProjName`
-
- 選擇性。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。
-
- /projectconfig `ProjConfigName`
-
- 選擇性。 要套用至所指定 `/project` 的專案組建組態名稱。
+  選擇性。 您要將工具的輸出傳送到其中的檔案名稱。 如果檔案已經存在，工具就會將輸出附加至檔案結尾。
 
 ## <a name="remarks"></a>備註
 
--   必須是 `devenv /build`、/`clean`、`/rebuild` 或 `/deploy` 命令的已使用部分。
+- 必須是 `devenv` `/Build`、`/Clean`、`/Rebuild` 或 `/Deploy` 命令的已使用部分。
 
--   請以雙引號括住包含空格的字串。
+- 請以雙引號括住包含空格的字串。
 
--   組建的摘要資訊 (包括錯誤) 可顯示在 [命令] 視窗中，或使用 `/out` 參數指定的任何記錄檔中。
+- 組建的摘要資訊 (包括錯誤) 可顯示在 [命令] 視窗中，或使用 `/Out` 參數指定的任何記錄檔中。
 
 ## <a name="example"></a>範例
- 此範例使用 `MySolution` 的 `Debug` 方案組態中的 `Debug` 專案組建組態，來建置專案 `CSharpConsoleApp`。
 
-```cmd
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+此範例會使用 `MySolution` 內的 `Debug` 專案組建組態來建置專案 `CSharpWinApp`。
+
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
 - [/ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)

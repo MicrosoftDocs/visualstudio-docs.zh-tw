@@ -1,14 +1,9 @@
 ---
 title: 如何：還原 C# 重構程式碼片段 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - unsafe expansion
 - expansions, unsafe
@@ -16,13 +11,13 @@ ms.assetid: 12114273-7f2f-43d0-abcb-2d4711a3a68d
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8cb5906009d4c3f5d9d94a8e9898a1f02b3aedc0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c9ebd6b96a24b10601257d5eefc58014ef7058c9
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227875"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54782592"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>如何：還原 C# 重構程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,10 +56,7 @@ C# 重構作業需仰賴在下列目錄中找到的程式碼片段：
   
 6.  按一下 [程式碼片段目錄] 對話方塊中的 [開啟]，然後按一下程式碼片段管理員中的 [確定]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)   
  [重構 (C#)](../csharp-ide/refactoring-csharp.md)   
  [程式碼片段](../ide/code-snippets.md)
-
-
-

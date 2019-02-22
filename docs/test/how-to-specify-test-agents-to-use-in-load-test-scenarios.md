@@ -11,14 +11,13 @@ helpviewer_keywords:
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1f6debabdb154e091a8021ccd998bb31d8f88d28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 03e2e5ce9ee1883f51bea68d5c1ccc2af0c944a7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932255"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955540"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>HOW TO：指定要用於負載測試情節的測試代理程式
 

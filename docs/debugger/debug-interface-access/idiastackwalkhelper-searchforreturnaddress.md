@@ -1,8 +1,6 @@
 ---
 title: IDiaStackWalkHelper::searchForReturnAddress |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 904223b1-6e26-4980-b310-d0b222cdbbbd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a93ea1ae986941ef81dd50026996f4e0d9f56eae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bfdd6d9c48e701ce123b8602eacffafb61da1b55
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927212"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003379"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddress"></a>IDiaStackWalkHelper::searchForReturnAddress
 搜尋指定的堆疊框架之最接近的函式傳回的位址。  
@@ -27,7 +25,7 @@ ms.locfileid: "49927212"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT searchForReturnAddress(   
+HRESULT searchForReturnAddress(   
    IDiaFrameData*  frame,  
    ULONGLONG*      returnAddress  
 );  
@@ -43,6 +41,6 @@ HRESULT searchForReturnAddress(
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

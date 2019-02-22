@@ -1,17 +1,16 @@
 ---
 title: 在 Team Explorer 中連線到專案
 ms.date: 12/04/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
 author: gewarren
-ms.manager: douge
-ms.openlocfilehash: 28c051375811a79775af53dbb0d796ed74d25003
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.manager: jillfra
+ms.openlocfilehash: d65ea17ad642ea882820bc04f5d217e6290a8a6d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848294"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911101"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>在 Team Explorer 中連線到專案
 

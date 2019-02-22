@@ -1,14 +1,9 @@
 ---
 title: CvLeaveSpan 函式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvLeaveSpan
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 3bf65fdf-a471-4efd-ac7a-03e701bbae5d
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 859ca4d0050ff0fe457048bb03ae9e38d75f3542
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d1f17de6df465408e9bec3b6db4e1620f0181fd9
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721802"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54772361"
 ---
 # <a name="cvleavespan-function"></a>CvLeaveSpan 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,8 +43,5 @@ HRESULT CvLeaveSpan(
 ## <a name="requirements"></a>需求  
  **標頭︰** cvmarkers.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [C++ 程式庫參考](../profiling/cpp-library-reference.md)
-
-
-

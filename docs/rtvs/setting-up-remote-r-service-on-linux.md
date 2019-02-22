@@ -2,20 +2,19 @@
 title: 在 Linux 上設定遠端 R 服務
 description: 如何在 Ubuntu 和適用於 Linux 的 Windows 子系統上設定遠端 R 服務。
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c9406db2f7ae97a40936d672fb01d4943aeadcce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3fd7f8be7b2de02fb89c9eec3ea7859241beb0f2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835941"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945816"
 ---
 # <a name="remote-r-service-for-linux"></a>適用於 Linux 的遠端 R 服務
 

@@ -4,7 +4,6 @@ titleSuffix: ''
 description: 了解如何在 Azure 虛擬機器上使用 Visual Studio
 ms.date: 09/12/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - azure services
@@ -13,15 +12,15 @@ helpviewer_keywords:
 - visual studio
 author: PhilLee-MSFT
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f139c93eeb64a56f0bd422137417e5ad6e36cb11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1dbda84c1e8eee48c4a442e922c1852496155ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836620"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952901"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -35,7 +34,7 @@ ms.locfileid: "53836620"
 
 | 發行版本                                              | 版本                     |     產品版本      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019：Preview (Preview 1 )                   |           企業         | 16.0.0 版 Preview 1 |
+|    Visual Studio 2019：Preview (Preview 2)                   |           企業         | 16.0.0 Preview 2 版 |
 | Visual Studio 2017：最新版本 (版本 15.9)                    |    Enterprise、Community     |      15.9.4 版      |
 |         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.20 版     |
 |   Visual Studio 2015：最新版本 (Update 3)                      |    Enterprise、Community     |  14.0.25431.01 版   |

@@ -18,17 +18,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eff779f70cb5b17d03befddce971a4bbb15ca142
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879130"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865878"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>建立 SharePoint web 組件
   藉由使用 web 組件，您可以使用瀏覽器修改內容、 外觀及行為的 SharePoint 網站頁面。 Web 組件是在網頁組件內執行的伺服器端控制項： 它們是在 SharePoint 網站上顯示之網頁的建置組塊。 請參閱[建置組塊：Web 組件](http://go.microsoft.com/fwlink/?LinkID=182097)。  
@@ -61,7 +61,7 @@ ms.locfileid: "53879130"
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|插入 ASP 功能表。 如需詳細資訊，請參閱 < [ 功能表控制項概觀](http://go.microsoft.com/fwlink/?LinkId=235316)。|  
 |[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|插入**連結**項目 *.aspx*頁面上，並套用所定義的一或多個外部樣式表**CssRegistration**。|  
-|[Datetimecontrol 加](http://go.microsoft.com/fwlink/?LinkId=235306)|插入將 DateTime 控制項插入 *.aspx*頁面。|  
+|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|插入將 DateTime 控制項插入 *.aspx*頁面。|  
 |[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|將安全性驗證到 *.aspx*頁面|  
 |[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|傳回指定清單的屬性。|  
 |[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|傳回目前網站的全域屬性。|  

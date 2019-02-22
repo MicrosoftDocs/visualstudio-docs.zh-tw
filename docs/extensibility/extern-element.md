@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc48dc471dab06bf18c0edf622cfa18e7159eaab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bac2f7e5611e8e87dd3ad6c268c0fd2ea6292c14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895255"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924187"
 ---
 # <a name="extern-element"></a>Extern 元素
 Extern 元素參考任何外部標頭 (*.h*) 與合併的檔案 *.vsct*在編譯時期的檔案。 要合併的檔案必須位於 Include 路徑指定給 VSCT 編譯器，或是參照[Include 項目](../extensibility/include-element.md)。 檔案可能是其他 *.vsct*檔案或 c + + 標頭檔。  
@@ -43,7 +43,7 @@ Extern 項目
 |---------------|-----------------|  
 |href|必要項。 標頭檔路徑：<br /><br /> href="stdidcmd.h"|  
 |條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
-|語言|選擇性。 所有的預設語言[\<字串 >](../extensibility/strings-element.md)命令表中的項目：<br /><br /> language ="en-我們"|  
+|語言|選擇性。 所有的預設語言[\<字串 >](../extensibility/strings-element.md)命令表中的項目：<br /><br /> language="en-us"|  
   
 ### <a name="child-elements"></a>子元素  
   

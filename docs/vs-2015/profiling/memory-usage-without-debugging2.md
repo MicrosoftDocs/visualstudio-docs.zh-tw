@@ -1,14 +1,9 @@
 ---
 title: 記憶體使用量 (不偵錯) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 24238fc0-40b8-4079-8579-698211db9a26
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ebd4dd187f2b976ca7861f95609dd6ce8d8d318f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4612325b467e92b40650d591b7d03bc611e66640
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808571"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765079"
 ---
 # <a name="memory-usage-without-debugging"></a>記憶體使用量 (不偵錯)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -207,12 +202,9 @@ ms.locfileid: "51808571"
 |**大小 (位元組)**|對於執行個體，此為主要快照中的物件大小，但排除執行個體中包含的物件大小。<br /><br /> 對於類型，此為主要快照中，類型的執行個體大小總計，但排除執行個體中包含的物件大小。|  
 |**內含大小 (位元組)**|主要快照中的物件大小，包括物件中包含的物件大小。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [JavaScript 記憶體](../profiling/javascript-memory.md)   
  [分析應用程式效能](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [執行效能及診斷工具](http://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
  [使用 C++、C# 及 Visual Basic 的 Windows 市集應用程式的效能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [使用 Visual Studio 中的新記憶體使用量工具來診斷記憶體問題](http://go.microsoft.com/fwlink/p/?LinkId=394706)
-
-
-

@@ -1,8 +1,6 @@
 ---
-title: 建立及設定資料集
+title: 建立和設定資料集
 ms.date: 11/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.topic: conceptual
 helpviewer_keywords:
 - typed datasets, creating
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - datasets, configuring
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23837bcfb1d3761f8ebf23020c15e901833d63b3
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: cba7cf4a402b92f05f12faa39b88ab03cd5bd03b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305218"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943008"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>在 Visual Studio 中建立和設定資料集
 
@@ -82,7 +80,7 @@ ms.locfileid: "52305218"
 
 ## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>將獨立的資料表加入資料集
 
-1. 在 DataSet 設計工具**中開啟資料集。
+1. 在 [DataSet 設計工具] 中開啟資料集。
 
 2. 拖曳<xref:System.Data.DataTable>類別從**資料集**索引標籤**工具箱**拖曳至**Dataset 設計工具**。
 

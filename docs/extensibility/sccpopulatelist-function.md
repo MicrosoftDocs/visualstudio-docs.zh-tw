@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b41cea5b06022764e2f05ddd32f1ed476934f691
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 519dfe37e6c2120534722a85cb07b7cace143d46
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887772"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973391"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函式
 此函式會更新特定的原始檔控制命令的檔案清單，並提供對指定的所有檔案的原始檔控制狀態。  
@@ -59,7 +59,7 @@ SCCRTN SccPopulateList (
  lpStatus  
  [in、 out]原始檔控制外掛程式傳回每個檔案的狀態旗標的陣列。  
   
- Stored  
+ fOptions  
  [in]命令旗標 (請參閱 「 PopulateList 旗標 」 一節[特定的命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)如需詳細資訊)。  
   
 ## <a name="return-value"></a>傳回值  

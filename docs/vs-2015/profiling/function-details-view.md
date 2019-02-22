@@ -1,14 +1,9 @@
 ---
 title: 函式詳細資料檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functiondetails
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 8806954f-cf28-48d5-81b2-d722ceaf7d27
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e6f2246cfe9eb2ae9ae6641ca316db440f153f92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 107730fbb2dd78ddc9de8eaddc006bf01562af16
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799583"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784466"
 ---
 # <a name="function-details-view"></a>函式詳細資料檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,6 +114,3 @@ ms.locfileid: "51799583"
 |-|-|  
 |**內含爭用 (爭用)**|- 若為「呼叫函式」，這是在函式所呼叫選取函式的執行個體中發生的資源爭用事件數目。 此數目包含選取的函式所呼叫函式中的爭用事件。<br />- 若為「函式主體」，這是函式執行自身的程式碼時所發生的爭用事件總數。 不包含選取的函式所呼叫函式中發生的爭用。<br />- 若為所呼叫函式，這是在選取的函式所呼叫函式的執行個體中發生的資源爭用事件數目。 此數目包含函式所呼叫函式中發生的爭用事件。|  
 |**內含封鎖時間 (封鎖時間)**|- 若為呼叫函式，這是在函式所呼叫選取函式的執行個體花費在資源爭用事件的時間。 此時間包含選取的函式所呼叫函式中的封鎖時間。<br />- 若為「函式主體」，這是函式執行自身的程式碼時花費在所發生的爭用事件總時間。 不包含選取的函式所呼叫函式中發生的爭用。<br />- 若為所呼叫函式，這是在選取的函式所呼叫函式的執行個體花費在資源爭用事件的時間。 此時間包含函式所呼叫函式中發生的封鎖時間。|
-
-
-

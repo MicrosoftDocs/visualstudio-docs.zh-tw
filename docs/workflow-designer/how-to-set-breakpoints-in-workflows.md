@@ -2,19 +2,18 @@
 title: 工作流程設計工具-如何：在工作流程中設定中斷點
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd6e10732c0248206810c9690910a8bd2f09ccf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7503d0b0bee201a9617e90966c9f75ac6333f228
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849628"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908435"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>HOW TO：在工作流程中設定中斷點
 
@@ -37,7 +36,7 @@ ms.locfileid: "53849628"
 
 2. 在 **偵錯**功能表上，選取**切換中斷點**。 活動左邊的最上方會出現紅色圖示。
 
-   或者，您可以按**F9**選取活動，或者您可以在活動上按一下滑鼠右鍵並選取之後**中斷點** > **插入中斷點**從內容功能表。
+   或者，您可以按**F9**選取活動，或者您可以在活動上按一下滑鼠右鍵並選取之後**中斷點** > **插入中斷點**從快顯功能表。
 
 ## <a name="see-also"></a>另請參閱
 

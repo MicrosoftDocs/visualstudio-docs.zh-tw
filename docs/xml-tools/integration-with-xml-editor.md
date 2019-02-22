@@ -1,20 +1,19 @@
 ---
 title: 使用 XML 編輯器中的 XML 結構描述設計工具整合
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a4d97ce590929b6cc2cf56997255822b692cc9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e06141eb6f6d7383a433a1f9b0ba29944e26a329
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865007"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930294"
 ---
 # <a name="integration-with-xml-editor"></a>與 XML 編輯器整合
 

@@ -1,8 +1,6 @@
 ---
 title: 專案設計工具、服務頁
 ms.date: 01/18/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
@@ -11,15 +9,15 @@ helpviewer_keywords:
 - Project Designer, Services page
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba03b4aea25decef39983d203db12dfbedc516d9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3c439a981573934215ecad8796e7980a5f9c8c2f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177015"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936456"
 ---
 # <a name="services-page-project-designer"></a>專案設計工具、服務頁
 
@@ -53,13 +51,13 @@ ms.locfileid: "39177015"
 
  **使用表單驗證**
 
- 指出驗證提供者將使用表單驗證。 這表示您的應用程式必須提供進行登入的使用者介面。 如需詳細資訊，請參閱[如何：使用用戶端應用程式服務實作使用者登入](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services)。
+ 指出驗證提供者將使用表單驗證。 這表示您的應用程式必須提供進行登入的使用者介面。 如需詳細資訊，請參閱[＜How to：使用用戶端應用程式服務實作使用者登入](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services)。
 
  **驗證服務位置**
 
  只能與表單驗證搭配使用。 指定驗證服務的位置。
 
- **選擇性︰認證提供者**
+ **選擇性：認證提供者**
 
  只能與表單驗證搭配使用。 指示 <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> 實作，當您的應用程式呼叫 `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> 方法時，要使用驗證服務來顯示登入對話方塊，並針對參數傳遞空字串或 `null`。 如果此方塊保留空白，您就必須將有效使用者名稱和密碼傳遞給 <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> 方法。 您必須將認證提供者指定為組件限定類型名稱。 如需詳細資訊，請參閱 <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> 和[組件名稱](/dotnet/framework/app-domains/assembly-names)。 最簡單的組件限定類型名稱格式看起來類似下列範例：`MyNamespace.MyLoginClass, MyAssembly`
 

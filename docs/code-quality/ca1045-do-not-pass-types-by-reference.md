@@ -1,7 +1,6 @@
 ---
 title: CA1045:不要以傳址方式傳遞類型
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1045
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bcc3900a-e092-4bb8-896f-cb83f6289968
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2516387f6de81eef2f68d521652aa85ce521aea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f64a7f7c018863e85900da2b09e018d29da4dfe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839053"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922871"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045:不要以傳址方式傳遞類型
 

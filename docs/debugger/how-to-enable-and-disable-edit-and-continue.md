@@ -2,7 +2,6 @@
 title: HOW TO：啟用和停用編輯後繼續 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -23,16 +22,16 @@ helpviewer_keywords:
 ms.assetid: fd961a1c-76fa-420d-ad8f-c1a6c003b0db
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 0b5fbc7ee0f2d85c72ccda75bc2e8531419d52e3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a201dab58084476f0993304d961fc5afa5693782
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051383"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002225"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>HOW TO：啟用和停用編輯後繼續 (C#、 VB、 c + +)
 

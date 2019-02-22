@@ -1,40 +1,21 @@
 ---
 title: 一般、文字編輯器、選項
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 01/18/2019
 ms.topic: reference
 f1_keywords:
-- VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
-- VS.ToolsOptionsPages.Text_Editor.All_Languages.General
 - VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
 - VS.ToolsOptionsPages.Text_Editor.SQL.General
 - vs.toolsoptionspages.text_editor
-- VS.ToolsOptionsPages.Text_Editor.XML.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
-- VS.ToolsOptionsPages.Text_Editor.CSS
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text.General
 - VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp.General
-- VS.ToolsOptionsPages.Text_Editor.All_Languages
 - VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
-- VS.ToolsOptionsPages.Text_Editor.Basic.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL.General
-- VS.ToolsOptionsPages.Text_Editor.F#.Tabs
-- VS.ToolsOptionsPages.Text_Editor.F#
 - VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
-- VS.ToolsOptionsPages.Text_Editor.C/C++.General
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text
-- VS.ToolsOptionsPages.Text_Editor.HTML
-- VS.ToolsOptionsPages.Text_Editor.XAML.General
 - VS.ToolsOptionsPages.Text_Editor
-- VS.ToolsOptionsPages.Text_Editor.F#.General
 - VS.ToolsOptionsPages.Text_Editor.XOML.General
 - VS.ToolsOptionsPages.Text_Editor.SQL
-- vs.toolsoptionspages.text_editor.c/c++
 - VS.ToolsOptionsPages.Text_Editor.SQL_Script
-- VS.ToolsOptionsPages.Text_Editor.T-SQL90.General
 - VS.ToolsOptionsPages.Text_Editor.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp
 - VS.ToolsOptionsPages.Text_Editor.Python
 - VS.ToolsOptionsPages.Text_Editor.R
 helpviewer_keywords:
@@ -45,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdd4e366451dd81738305893727554e8b07ffb04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a7bcf7b57c6cdc7e0ff4ff5a851397b7c96b345
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871326"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930229"
 ---
 # <a name="options-text-editor-general"></a>一般、文字編輯器、選項
 
@@ -75,9 +56,19 @@ ms.locfileid: "53871326"
 
 ### <a name="auto-detect-utf-8-encoding-without-signature"></a>自動偵測無簽章 UTF-8 編碼
 
-根據預設，編輯器會搜尋位元組順序標記或字元集標籤以偵測編碼方式。 如果目前文件中找不到編碼方式，程式碼編輯器就會嘗試掃描位元組序列以自動偵測 UTF-8 編碼。 若要停用自動偵測編碼，請清除此選項。
+根據預設，編輯器會搜尋位元組順序標記或字元集標籤以偵測編碼方式。 如果目前文件中找不到編碼方式，程式碼編輯器就會嘗試掃描位元組序列以自動偵測 UTF-8 編碼。 若要停用自動偵測編碼，請取消選取此選項。
 
-## <a name="display"></a>顯示器
+### <a name="follow-project-coding-conventions"></a>遵循專案編碼慣例
+
+選取時，專案的指定程式碼慣例會覆寫您用於個人專案的任何程式碼慣例。
+
+### <a name="enable-mouse-click-to-perform-go-to-definition"></a>啟用按一下滑鼠即執行前往定義
+
+選取時，您可以按下 **Ctrl** 並暫留在元素上，同時按一下滑鼠。 這樣會帶您前往所選取元素的定義。 您也可以從 [使用輔助按鍵] 下拉式清單選擇 [Alt] 或 [Ctrl + Alt]。
+
+選取 [在預覽檢視中開啟定義] 核取方塊，以在視窗中顯示元素的定義，而不需從您目前在程式碼編輯器中的位置尋覽到他處。
+
+## <a name="display"></a>顯示
 
 ### <a name="selection-margin"></a>選取範圍邊界
 
@@ -94,6 +85,10 @@ ms.locfileid: "53871326"
 ### <a name="highlight-current-line"></a>反白顯示目前的行
 
 選取時，灰色方塊會框住游標所在的程式碼行。
+
+### <a name="show-structure-guide-lines"></a>顯示結構輔助線
+
+選取時，編輯器中會出現對齊結構化程式碼區塊的垂直線，可讓您輕鬆地識別個別程式碼區塊。
 
 ## <a name="see-also"></a>另請參閱
 

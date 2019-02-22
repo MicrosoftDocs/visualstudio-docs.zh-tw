@@ -1,7 +1,6 @@
 ---
 title: CA1900:實值類型欄位應該為可移植的
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1900
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1787d371-389f-4d39-b305-12b53bc0dfb9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffac1cca87f3b1cbed23e2bbc8a9b463cd4adc6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e823a58d7a2be45c43305320bd32175de7a3fad6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987845"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953720"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900:實值類型欄位應該為可移植的
 

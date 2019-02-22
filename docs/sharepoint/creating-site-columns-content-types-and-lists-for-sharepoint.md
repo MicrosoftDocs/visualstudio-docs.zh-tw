@@ -13,17 +13,17 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 805500b9f12e227e95add02ca0180b658b85d1cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ec1bc999025128c0dd68281dfc53e3f6353ae6b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931943"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875546"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>建立 SharePoint 網站資料行、 內容類型和清單
   Visual Studio 提供許多不同基本 SharePoint 項目，包括專案項目範本*列出*並*內容類型*，這兩者都可以合併網站資料行 (或*欄位*)。 內容類型和清單的新設計工具讓您就以往更容易建立這些項目。  

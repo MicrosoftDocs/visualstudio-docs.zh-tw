@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8748ccade8e610c66d9c4142312c2c5dfed1ddf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a697456a15008f305b92aacfb1485be1c08c062
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917315"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920393"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>逐步解說：自訂文字檢視
 您可以自訂文字檢視，方法是修改任何它的編輯器格式對應中的下列屬性：  

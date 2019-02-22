@@ -1,21 +1,21 @@
 ---
 title: Visual c + + 專案擴充性
-ms.date: 09/12/2018
+ms.date: 01/25/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
 - C++
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eccf13f38799c1d35b7fe4226fa02ec1a291b0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e38ff6cf2912ccc18c27f517a35c7a543325a8eb
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986982"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232048"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 專案系統擴充性和工具組之間的整合
 
@@ -41,7 +41,7 @@ ms.locfileid: "53986982"
 
    這必須是有效的版本字串，表單 major.minor[.build[.revision]]。
 
-   例如：1.0、 10.0.0.0
+   例如：1.0, 10.0.0.0
 
 - `$(Platform)`
 
@@ -110,7 +110,7 @@ Windows 桌面專案未定義`$(ApplicationType)`，因此它們只匯入
 > `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*預設*\\\*。*屬性*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*平台*\\`$(Platform)`\\*Platform.default.props*  
+> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platforms*\\`$(Platform)`\\*Platform.default.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*預設*\\\*。*屬性*  
 
 我們將使用`$(_PlatformFolder)`屬性來保留`$(Platform)`平台資料夾位置。 這個屬性 
@@ -274,6 +274,8 @@ Microsoft.Cpp.Common.Tasks.dll 會實作下列工作：
 
 - `SetEnv`
 
+- `GetOutOfDateItems`
+
 如果您有一項工具，以執行相同的動作，做為現有的工具，和 （如同 clang-cl 和 CL） 具有類似的命令列參數，您可以使用相同的工作兩者都是。
 
 如果您需要建立新的工作，建置工具，您可以選擇下列選項：
@@ -294,11 +296,14 @@ Microsoft.Cpp.Common.Tasks.dll 會實作下列工作：
 
 目標會使用預設的 MSBuild 累加建置`Inputs`和`Outputs`屬性。 如果您指定它們，MSBuild 就會呼叫目標只能在任何輸入有較新的時間戳記，於所有輸出。 原始程式檔通常包含或匯入其他檔案，並建置工具產生不同的工具選項而定的輸出，因為它很難指定所有可能的輸入和輸出中的 MSBuild 目標。
 
-若要管理此問題，c + + 建置會使用不同的技巧，來支援累加建置。 大部分的目標不指定輸入和輸出，並如此一來，一律會在建置期間執行。 呼叫目標的工作撰寫所有的相關資訊輸入，並輸出到*tlog*副檔名的.tlog 檔案。 用來檢查項目已變更且需要重建的更新版本組建的.tlog 檔案，以及為何保持最新狀態。
+若要管理此問題，c + + 建置會使用不同的技巧，來支援累加建置。 大部分的目標不指定輸入和輸出，並如此一來，一律會在建置期間執行。 呼叫目標的工作撰寫所有的相關資訊輸入，並輸出到*tlog*副檔名的.tlog 檔案。 用來檢查項目已變更且需要重建的更新版本組建的.tlog 檔案，以及為何保持最新狀態。 .tlog 檔案也是預設的組建保持最新狀態檢查在 IDE 中的唯一來源。
 
 若要判斷所有輸入和輸出，原生工具工作會使用 tracker.exe 並[FileTracker](/dotnet/api/microsoft.build.utilities.filetracker) MSBuild 所提供的類別。
 
 Microsoft.Build.CPPTasks.Common.dll 定義`TrackedVCToolTask`公用抽象的基底類別。 原生工具工作大部分都衍生自這個類別。
+
+從 Visual Studio 2017 更新 15.8 開始，您可以使用`GetOutOfDateItems`Microsoft.Cpp.Common.Tasks.dll 来產生已知的輸入和輸出的自訂目標的.tlog 檔案中實作的工作。
+或者，您可以藉由建立它們`WriteLinesToFile`工作。 請參閱`_WriteMasmTlogs`中的目標`$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets*做為範例。
 
 ## <a name="tlog-files"></a>.tlog 檔案。
 
@@ -314,7 +319,6 @@ MSBuild 會提供這些協助程式類別，來讀取和寫入.tlog 檔案：
 
 命令列的.tlog 檔案包含在組建中使用命令列的相關資訊。 它們只會用於累加建置，而不是最新的檢查，所以內部的格式取決於它們所產生的 MSBuild 工作。
 
-如果建立.tlog 檔案的工作，最好是用來建立它們的這些協助程式類別。 不過，因為預設的最新檢查現在僅依賴.tlog 檔案，有時很更方便地產生這些函式中，目標沒有工作。 您可以使用撰寫`WriteLinesToFile`工作。 請參閱`_WriteMasmTlogs`中的目標`$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets*做為範例。
 
 ### <a name="read-tlog-format"></a>閱讀.tlog 格式
 
@@ -482,7 +486,7 @@ CPS 支援內容類型，使用其他值，但不會用在 Visual c + + 專案�
 |------------| - |
 | `generic` | 在類別目錄標題下的單一頁面上會顯示所有的屬性<br/>規則可以是顯示`Project`並`PropertySheet`內容，但不是`File`。<br/><br/> 範例：`$(VCTargetsPath)`\\*1033*\\*general.xml* |
 | `tool` | 類別會顯示為子頁面。<br/>規則可以是顯示在所有的內容： `Project`，`PropertySheet`和`File`。<br/>規則內容中會顯示專案的專案已使用的項目時，才`ItemType`中定義`Rule.DataSource`，除非規則名稱會包含在`ProjectTools`項目群組。<br/><br/>範例：`$(VCTargetsPath)`\\*1033*\\*clang.xml* |
-| `debugger` | 頁面會顯示為 [偵錯] 頁面的一部分。<br/>類別目前會被忽略。<br/>規則名稱應該符合偵錯啟動器 MEF 物件的`ExportDebugger`屬性。<br/><br/>範例：`$(VCTargetsPath)`\\*1033*\\*偵錯工具\_本機\_windows.xml* |
+| `debugger` | 頁面會顯示為 [偵錯] 頁面的一部分。<br/>類別目前會被忽略。<br/>規則名稱應該符合偵錯啟動器 MEF 物件的`ExportDebugger`屬性。<br/><br/>範例：`$(VCTargetsPath)`\\*1033*\\*debugger\_local\_windows.xml* |
 | *custom* | 自訂範本。 範本的名稱應該符合`ExportPropertyPageUIFactoryProvider`屬性的`PropertyPageUIFactoryProvider`MEF 物件。 請參閱**Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**。<br/><br/> 範例：`$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
 
 如果此規則會使用其中一個屬性方格為基礎的範本，它可以使用這些擴充點的屬性：

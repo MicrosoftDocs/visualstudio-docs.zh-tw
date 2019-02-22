@@ -1,8 +1,6 @@
 ---
-title: 'Idiaenumsymbols:: Item |Microsoft Docs'
-ms.custom: ''
+title: IDiaEnumSymbols::Item | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2bd1ec04-e677-4e32-8e32-33334f1eed77
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8786d53e1ba3001bc882580c03005377d476a47
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b3cc898d989c345ba7691252562fac820eec1c18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918970"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924106"
 ---
 # <a name="idiaenumsymbolsitem"></a>IDiaEnumSymbols::Item
 透過索引中擷取的符號。  
@@ -27,7 +25,7 @@ ms.locfileid: "49918970"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD        index,  
    IDiaSymbol** symbol  
 );  
@@ -43,6 +41,6 @@ HRESULT Item (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

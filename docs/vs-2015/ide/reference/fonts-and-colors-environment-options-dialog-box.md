@@ -1,14 +1,9 @@
 ---
 title: 選項對話方塊、環境、字型和色彩 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
@@ -31,13 +26,13 @@ ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 691500690470f66bced8fdec5ff885a2d1f0d73b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220231"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761623"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>選項對話方塊、環境、字型和色彩
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "50220231"
 [選項] 對話方塊的 [字型和色彩] 頁面可讓您為整合式開發環境 (IDE) 中的各種使用者介面項目建立自訂的字型和色彩配置。 按一下 [工具]/[選項]，然後選取 [環境]/[字型和色彩]，即可存取此對話方塊。 如果此頁面未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定]。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  色彩配置變更在您進行變更的工作階段期間不會生效。 您可以開啟 Visual Studio 的另一個執行個體，並產生您希望套用變更的情況，來評估色彩變更。  
   
@@ -133,7 +128,7 @@ ms.locfileid: "50220231"
 |**涵蓋範圍未觸及的區域**|尚未被單元測試涵蓋的程式碼。|  
 |**涵蓋範圍部分觸及的區域**|已被單元測試部分涵蓋的程式碼。|  
 |**涵蓋範圍觸及的區域**|已被單元測試完全涵蓋的程式碼。|  
-|**CSS 註解**|階層式樣式表中的註解。 例如: <br /><br /> /* comment \*/|  
+|**CSS 註解**|階層式樣式表中的註解。 例如：<br /><br /> /* comment \*/|  
 |**CSS 關鍵字**|階層式樣式表中的關鍵字。|  
 |**CSS 屬性名稱**|屬性 (例如背景) 的名稱。|  
 |**CSS 屬性值**|指派給屬性 (例如藍色) 的值。|  
@@ -153,7 +148,7 @@ ms.locfileid: "50220231"
 |**關鍵字**|保留的指定語言關鍵字。 例如：類別和命名空間。|  
 |**記憶體位址**|用來在 [記憶體] 視窗內顯示位址欄的文字色彩。|  
 |**記憶體已變更**|用來在 [記憶體] 視窗內顯示已變更資料的文字色彩。|  
-|**記憶體資料**|用來顯示資料內的文字的色彩**記憶體**視窗。|  
+|**記憶體資料**|用來在 [記憶體] 視窗內顯示資料的文字色彩。|  
 |**記憶體無法讀取**|用來在 [記憶體] 視窗內顯示無法讀取的記憶體區域的文字色彩。|  
 |**數字**|程式碼中的數字，代表實際數值。|  
 |**Operator**|運算子，例如 +、- 和 !=。|  
@@ -169,7 +164,7 @@ ms.locfileid: "50220231"
 |**SQL DML 資料標記**|適用於 Transact-SQL 編輯器。 在此編輯器中的 DML 陳述式預設會以藍色週框方塊標示。|  
 |**過時程式碼**|等待更新的被取代的程式碼。 在某些情況下，[編輯後繼續] 無法立即套用程式碼變更，但它們會在稍後繼續偵錯時套用。 如果您編輯必須呼叫目前執行的函式的函式，或將 64 位元組以上的新變數加入等候呼叫堆疊的某個函式時，就會發生這種情況。 當發生這種情況時，偵錯工具會顯示「過時程式碼警告」對話方塊，並且已被取代的程式碼會繼續執行直到有問題的函式完成，並再次呼叫。 [編輯後繼續] 會在該時間套用程式碼變更。|  
 |**String**|字串常值。|  
-|**字串 (C# @ 逐字翻譯)**|C# 中逐字解譯的字串常值。 例如: <br /><br /> @"x"|  
+|**字串 (C# @ 逐字翻譯)**|C# 中逐字解譯的字串常值。 例如：<br /><br /> @"x"|  
 |**語法錯誤**|剖析錯誤。|  
 |**工作清單捷徑**|如果已將 [工作清單] 捷徑新增至一行，並且停用指示區邊界，就會將該行反白顯示。|  
 |**追蹤點 (停用)**|未使用。|  
@@ -197,7 +192,7 @@ ms.locfileid: "50220231"
 |**XML 屬性**|屬性名稱。|  
 |**XML 屬性引號**|XML 屬性的引號字元。|  
 |**XML 屬性值**|XML 屬性的內容。|  
-|**XML Cdata 區段**|內容\<！ [CDATA [...]]>。|  
+|**XML Cdata 區段**|\<![CDATA[…]]> 的內容。|  
 |**XML 註解**|\<!-- --> 的內容。|  
 |**XML 分隔符號**|XML 語法分隔符號，包括 <、<?、<!、\<!--、-->、?\>、\<![、]]> 和 [、]。|  
 |**XML 文件屬性**|XML 文件屬性的值，例如 \<param name="I">，其中，"I" 以色彩標示。|  
@@ -238,10 +233,7 @@ ms.locfileid: "50220231"
  **範例**  
  顯示所選取 [顯示設定] 和 [顯示項目] 的字型樣式、大小和色彩配置範例。 您可以使用此方塊來預覽結果，嘗試使用不同的格式選項。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)   
  [選項對話方塊](../../ide/reference/options-dialog-box-visual-studio.md)   
  [如何：變更字型和色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
-
-
-

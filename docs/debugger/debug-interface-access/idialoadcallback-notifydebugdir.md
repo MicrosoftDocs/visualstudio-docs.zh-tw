@@ -1,8 +1,6 @@
 ---
-title: 'Idialoadcallback:: Notifydebugdir |Microsoft Docs'
-ms.custom: ''
+title: IDiaLoadCallback::NotifyDebugDir | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bd04e2f6-0dbf-4742-a556-96f2cd99aa19
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdceb0f1f07a3ef9d22dbd30a02b2558c4d81603
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: baa1dbde2f4cbe9d537c181c73832f57b31b6041
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950871"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043034"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 當偵錯已找到的目錄中的.exe 檔案時呼叫。  
@@ -27,7 +25,7 @@ ms.locfileid: "49950871"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT NotifyDebugDir (   
+HRESULT NotifyDebugDir (   
    BOOL  fExecutable,  
    DWORD cbData,  
    BYTE  data[]  
@@ -54,6 +52,6 @@ HRESULT NotifyDebugDir (
   
  大部分的用戶端將不需要此回撥，因為`IDiaDataSource::loadDataForExe`方法明確地開啟.pdb 和.dbg 檔案時需要符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

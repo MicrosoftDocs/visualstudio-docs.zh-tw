@@ -2,7 +2,6 @@
 title: 在偵錯時切換到另一個執行緒
 ms.custom: seodec18
 ms.date: 04/27/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 5cd76c52-76fa-4fcc-b37e-e9f0ecac0e9e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45ace6f26f241ecdc39b88060fc4edc6c2e47d91
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 163d14de4880ed1c5e2ae6a3170ec5ae1ae47485
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057044"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005185"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>HOW TO：在 Visual Studio 中偵錯時切換到另一個執行緒
+# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>HOW TO：在 Visual Studio 中偵錯時切換到另一個執行緒 (C#，Visual Basic、 c + +)
 當您偵錯多執行緒應用程式時，您可以使用其中幾種方法，從您已使用另一個執行緒的執行緒切換。
 
 > [!NOTE]

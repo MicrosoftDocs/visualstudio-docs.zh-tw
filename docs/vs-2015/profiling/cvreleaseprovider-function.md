@@ -1,14 +1,9 @@
 ---
 title: CvReleaseProvider 函式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvReleaseProvider
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 8d74379e-295d-452b-bd5f-0769df387d4f
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2c59e5516129d5712983a228f68e4e91301656c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7d5e611c2a964fcbb78a387a09989436e672ecd6
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738806"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54758302"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,8 +43,5 @@ HRESULT CvReleaseProvider(
 ## <a name="requirements"></a>需求  
  **標頭︰** cvmarkers.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [C++ 程式庫參考](../profiling/cpp-library-reference.md)
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramDestroyEvent2::GetExitCode |Microsoft Docs
+title: IDebugProgramDestroyEvent2::GetExitCode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7f540cf6-e2d1-42b0-913e-a26d654b7659
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c611f092a0cf9d405443656ed9a632b7f51135b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60b3cc7f05093a2cc0d5b414a53dcfd25edac57d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860240"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934370"
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
 取得程式的結束代碼。  

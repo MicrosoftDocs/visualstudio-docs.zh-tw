@@ -1,7 +1,6 @@
 ---
 title: HOW TO：管理編輯器視窗
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - editor windows
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9134e7dcaddebbc63ad7fcb5650d5c24a00c6db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90c762e07ac57da0b9abf41c8eb99cdcdbb57922
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866172"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949261"
 ---
 # <a name="how-to-manage-editor-windows"></a>HOW TO：管理編輯器視窗
 

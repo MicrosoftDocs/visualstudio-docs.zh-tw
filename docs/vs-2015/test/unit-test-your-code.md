@@ -1,14 +1,9 @@
 ---
 title: 對程式碼進行單元測試 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f79fb0ac4945253f1a10ce98a7e1ed17eaa6de63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2dfde0684e721b1ed4834d23fb9fc56363f9fb0b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950416"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782704"
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +43,19 @@ ms.locfileid: "49950416"
   
 |工作|相關主題|  
 |-----------|-----------------------|  
-|**快速入門和逐步解說：** 使用下列主題從程式碼範例來了解 Visual Studio 中的單元測試。|-   [逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [將單元測試加入至現有的 C++ 應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)<br />-   [使用測試總管針對機器碼執行單元測試](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|  
-|**使用測試總管進行單元測試：** 了解測試總管如何協助建立更具生產力且更有效率的單元測試。|-   [單元測試基本概念](../test/unit-test-basics.md)<br />-   [建立單元測試專案](../test/create-a-unit-test-project.md)<br />-   [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)<br />-   [安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)<br />-   [升級 Visual Studio 2010 的單元測試](http://msdn.microsoft.com/en-us/9bb75856-f68a-4de2-a084-b08a947a1172)|  
+|**快速入門和逐步解說：** 使用下列主題從程式碼範例來了解 Visual Studio 中的單元測試。|-   [逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [將單元測試加入至現有的 C++ 應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)<br />-   [使用測試總管針對機器碼執行單元測試](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|  
+|**使用測試總管進行單元測試：** 了解測試總管如何協助建立更具生產力且更有效率的單元測試。|-   [單元測試基本概念](../test/unit-test-basics.md)<br />-   [建立單元測試專案](../test/create-a-unit-test-project.md)<br />-   [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)<br />-   [安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)<br />-   [升級 Visual Studio 2010 的單元測試](http://msdn.microsoft.com/9bb75856-f68a-4de2-a084-b08a947a1172)|  
 |**對 Managed 程式碼進行單元測試：**|-   [使用適用於 Managed 程式碼的 Microsoft 單元測試架構撰寫適用於 .NET Framework 的單元測試](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)|  
 |**對 C++ 程式碼進行單元測試**|-   [使用適用於 C++ 的 Microsoft 單元測試架構撰寫適用於 C/C++ 的單元測試](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|  
 |**隔離單元測試**|-   [使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)|  
-|**使用程式碼涵蓋範圍來識別您的專案程式碼的哪個部分，是使用單元測試進行測試：** 了解 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 測試工具的程式碼涵蓋範圍功能。|-   [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|  
-|**在單元測試中運用負載測試來執行壓力與效能分析：** 您可以建立負載測試，並將單元測試加入其中，以便找出應用程式中的效能與壓力問題。 **注意：** 若要建立和使用負載測試，您必須安裝 Visual Studio Enterprise。|-   [建立和編輯負載測試](http://msdn.microsoft.com/en-us/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [如何：將 Web 效能測試和單元測試加入負載測試情節](http://msdn.microsoft.com/en-us/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [如何：將 Web 效能測試和單元測試從負載測試情節中移除](http://msdn.microsoft.com/en-us/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|  
-|**設立並嚴守品質閘門：** 您可以樹立品質閘門，確定程式碼在簽入之前都必須先經過測試，以確保程式碼的品質。|-   [設立並嚴守品質閘門](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
-|**擴充單元測試類型：** 您可以在測試中加入可能不存在單元測試架構中的功能。 例如，您可以加入測試屬性，以便指定測試是否應該以一般使用者身分執行。 或者，您也可以擴充架構，以便將資料列屬性加入至方法並且在測試內部使用該資料列的資料。|如需如何擴充單元測試架構的範例程式碼，請參閱下列 [Microsoft 網站](http://go.microsoft.com/fwlink/?LinkId=185591)。|  
+|**使用程式碼涵蓋範圍來識別您的專案程式碼的哪個部分使用單元測試進行測試：** 深入了解程式碼涵蓋範圍功能[!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]測試工具。|-   [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|  
+|**在單元測試中運用負載測試來執行壓力與效能分析：** 您可以建立負載測試，並將單元測試新增至其中，以便找出應用程式中的效能與壓力問題。 **注意：** 若要建立和使用負載測試，您必須安裝 Visual Studio Enterprise。|-   [建立和編輯負載測試](http://msdn.microsoft.com/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [如何：將 Web 效能測試和單元測試加入至負載測試情節](http://msdn.microsoft.com/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [如何：移除負載測試情節中的 Web 效能測試和單元測試](http://msdn.microsoft.com/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|  
+|設立並嚴守品質閘門您可以建立品質閘門，強制執行的程式碼以協助確保程式碼品質，已簽入之前執行測試。|-   [設立並嚴守品質閘門](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
+|**擴充單元測試類型：** 您可以將功能加入您可能不存在單元測試架構中的測試。 例如，您可以加入測試屬性，以便指定測試是否應該以一般使用者身分執行。 或者，您也可以擴充架構，以便將資料列屬性加入至方法並且在測試內部使用該資料列的資料。|如需如何擴充單元測試架構的範例程式碼，請參閱下列 [Microsoft 網站](http://go.microsoft.com/fwlink/?LinkId=185591)。|  
 |**設定測試選項：** 例如，您可以指定儲存測試結果的位置。|[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
   
 ## <a name="related-tasks"></a>相關工作  
- [在 Microsoft Test Manager 中檢閱測試結果](http://msdn.microsoft.com/en-us/9fb3e429-78df-4fe2-89ed-0ad1db0738f4)  
+ [在 Microsoft Test Manager 中檢閱測試結果](http://msdn.microsoft.com/9fb3e429-78df-4fe2-89ed-0ad1db0738f4)  
   
  描述測試結果以及使用這些結果的方式，包括如何檢視、儲存和刪除測試結果。  
   
@@ -78,20 +73,17 @@ ms.locfileid: "49950416"
 ## <a name="external-resources"></a>外部資源  
   
 ### <a name="videos"></a>視訊  
- [Channel 9：Unit testing your Windows Store apps built using XAML (單元測試使用 XAML 建置的 Windows 市集應用程式)](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Channel 9單元測試使用 XAML 建置的 Windows 市集應用程式](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>論壇  
  [Visual Studio 單元測試](http://go.microsoft.com/fwlink/?LinkId=224477)  
   
 ### <a name="guidance"></a>指引  
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [測試 for Continuous Delivery with Visual Studio 2012 – 第 2 章：單元測試測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ### <a name="reference"></a>參考資料  
  [單元測試的內容索引](http://go.microsoft.com/fwlink/?LinkID=254719)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [改善程式碼品質](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)   
  [測試應用程式](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)
-
-
-

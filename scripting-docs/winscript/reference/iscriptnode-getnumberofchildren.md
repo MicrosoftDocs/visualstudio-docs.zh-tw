@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetNumberOfChildren |Microsoft 文件
+title: IScriptNode::GetNumberOfChildren |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdb46527ca78d56b3c03a454c6194e80be19e945
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6a6c1cd7ee65f4bd01373d112bc7afdcf0dd06d2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733628"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094675"
 ---
 # <a name="iscriptnodegetnumberofchildren"></a>IScriptNode::GetNumberOfChildren
-傳回的子節點數目`IScriptNode`物件。  
+傳回的子節點的數目`IScriptNode`物件。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetNumberOfChildren(  
    ULONG              *pcsn  
 );  
@@ -38,12 +38,12 @@ HRESULT GetNumberOfChildren(
   
 #### <a name="parameters"></a>參數  
  `pcsn`  
- [out]子節點數目，`IScriptNode`物件。  
+ [out]子節點的數目，`IScriptNode`物件。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

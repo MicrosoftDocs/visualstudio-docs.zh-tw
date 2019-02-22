@@ -1,25 +1,20 @@
 ---
 title: 重構
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: f0181ee8-9b46-45f7-b86e-316e3de024b9
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b0d5abaa326559956ffa534ac2ed70f4a0aaaf1a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 7d11fa85073c9bf1ed9657fbb47705953c7593d1
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052928"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54772056"
 ---
 # <a name="refactoring-in-visual-studio"></a>在 Visual Studio 中重構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,8 +1,6 @@
 ---
-title: 如何：設定目前的工作階段 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：設定目前的工作階段 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - current performance sessions
@@ -14,17 +12,17 @@ helpviewer_keywords:
 - sessions, setting multiple
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f06a45dbdf88fad071afcbb96373930501c6ccb
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c082abccc6201bd0e0af2152767dd61ce1e720c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844595"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042500"
 ---
-# <a name="how-to-set-the-current-session"></a>如何：設定目前的工作階段
+# <a name="how-to-set-the-current-session"></a>HOW TO：設定目前的工作階段
 
 您可以在 [效能總管]中開啟多個效能工作階段，然後選取其中一個可見的效能工作階段來設為目前的工作階段。
 

@@ -1,8 +1,6 @@
 ---
 title: marker_series::marker_series 建構函式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series::marker_series
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 042c7d23-f1d8-4e09-9e76-a21c30243790
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbc397fa88c722f6a7f16ac92f4388525073c0fa
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: fa010c535b984eb6a00bcb8234815f3d489b87b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845619"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939448"
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series 建構函式
 初始化 `marker_series` 類別的新執行個體。  
@@ -48,7 +46,7 @@ marker_series(
  系列提供者的 GUID。  
   
 ## <a name="requirements"></a>需求  
- **標頭：***cvmarkersobj.h*  
+ **標頭：** *cvmarkersobj.h*  
   
  **命名空間：** Concurrency::diagnostic  
   

@@ -2,19 +2,18 @@
 title: 工作流程設計工具-基本活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 910e241195a7aac5f51a341825b5605ecce5c6bc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0facda4d2dfab4862208a6267f2b0f5f4db61b08
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873617"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909384"
 ---
 # <a name="primitives-activity-designers"></a>基本活動設計工具
 

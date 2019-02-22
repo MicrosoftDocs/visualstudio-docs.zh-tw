@@ -1,14 +1,9 @@
 ---
 title: DA0008：收集的樣本少 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DATooFewSamples
 - vs.performance.8
@@ -18,13 +13,13 @@ ms.assetid: 8a5b78aa-7b3d-476c-a47d-abfaff3fae7c
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 291daa031f66cc37e444a41ea085cff65a177b9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 03fd9b6fd794320faf76119616900b79d5bf4333
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759375"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800401"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008：收集的樣本少
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51759375"
 規則 Id |DA0008 |  
 |類別目錄 |分析工具使用方式 |  
 |程式碼剖析方法 |取樣 |  
-|訊息 |收集到只有少數範例。 請考慮較大量的結果較長或更快的取樣率。 |  
+|訊息 |收集到只有少數範例。 請考慮執行較長時間或較快速的取樣率，以取得較大量的結果。|  
 |規則類型 |資訊 |  
   
 ## <a name="cause"></a>原因  
@@ -43,6 +38,3 @@ ms.locfileid: "51759375"
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  請考慮分析較長的應用程式執行時間，或使用更快速的取樣率來取得統計顯著的結果。 如需如何在 Visual Studio IDE 中變更取樣率的詳細資訊，請參閱[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)。 如需如何使用分析工具命令列變更取樣率的詳細資訊，請參閱 [VSPerfCmd](../profiling/vsperfcmd.md) 參考中的[計時器](../profiling/timer.md)。
-
-
-

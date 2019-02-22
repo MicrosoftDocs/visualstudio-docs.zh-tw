@@ -1,27 +1,23 @@
 ---
-title: HOW TO：部署 Visual Studio 2015 時，便會自動套用產品金鑰 |Microsoft Docs
+title: 如何： 部署 Visual Studio 2015 時，便會自動套用產品金鑰 |Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
 caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 32f8845790168aae784f3659f54c89e000681a15
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: bbbc5cf6a6a65f7dbb38de60a5a99ec89fc70687
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050223"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54834844"
 ---
-# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>HOW TO：在部署 Visual Studio 時自動套用產品金鑰
+# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>How to: Automatically apply product keys when deploying Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如需 Visual Studio 2017 最新文件，請參閱 <<c0> [ 部署 Visual Studio 時會自動套用產品金鑰](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio)。
@@ -58,7 +54,7 @@ ms.locfileid: "53050223"
 |Visual Studio Professional 2013|06177|
 |Visual Studio Test Professional 2013|06194|
 
- 如需有關如何取得產品金鑰的詳細資訊，請參閱[How to:找出 Visual Studio 產品金鑰](../install/how-to-locate-the-visual-studio-product-key.md)。
+ 如需取得產品金鑰的詳細資訊，請參閱 [How to: Locate the Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md)。
 
  如果 StorePID.exe 成功套用產品金鑰，會傳回 0。 如果遇到錯誤，則會傳回 1 到 6 的數字。
 

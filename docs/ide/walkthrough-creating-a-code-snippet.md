@@ -1,8 +1,6 @@
 ---
 title: 逐步解說：建立程式碼片段
 ms.date: 10/27/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
@@ -14,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 517eb98e7ca5b32d07a4501823ca092c366e4639
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 8944117c7d4e47f36f504f9677074ad4f86e33de
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469148"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949053"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>逐步解說：建立程式碼片段
 只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您也可以將參考和取代參數新增至程式碼。 您可以使用 [程式碼片段管理員] ([工具] > [程式碼片段管理員]) 上的 [匯入] 按鈕，將程式碼片段新增至 Visual Studio 安裝。
@@ -80,7 +78,7 @@ ms.locfileid: "39469148"
 
      *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
 
-6.  開啟 Visual Basic 專案，並開啟程式碼檔，來測試程式碼片段。 在檔案中，選擇操作功能表中的 [程式碼片段] > [插入程式碼片段] 和 [我的程式碼片段]。 您應該會看到名為 **My Visual Basic Code Snippet** 的程式碼片段。 對它按兩下。
+6.  開啟 Visual Basic 專案，並開啟程式碼檔，來測試程式碼片段。 在檔案中，選擇右鍵功能表中的 [程式碼片段] > [插入程式碼片段]，然後選擇 [我的程式碼片段]。 您應該會看到名為 **My Visual Basic Code Snippet** 的程式碼片段。 對它按兩下。
 
     `Console.WriteLine("Hello, World!")` 會插入至程式碼檔中。
 

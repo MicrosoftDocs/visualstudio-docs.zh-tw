@@ -1,14 +1,9 @@
 ---
 title: 在 HPC (高效能運算) 叢集上進行程式碼剖析 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
 - vs.performance.hpc.wizard.summary
@@ -25,13 +20,13 @@ ms.assetid: 1525bbdb-27da-4088-8487-a486cee5e7b3
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f6b0838a7fb3db86290647fadec9ca3572cbdf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809151"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802309"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>程式碼剖析 HPC (高效能運算) 叢集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,8 +55,8 @@ ms.locfileid: "51809151"
 |||  
 |-|-|  
 |*%HeadNode%*|叢集前端節點的名稱。|  
-|*%FxPath%*|[!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 安裝程式的路徑。 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 安裝媒體的路徑是︰WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|獨立版本的程式碼剖析工具安裝程式路徑。 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 安裝媒體的路徑是︰Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|[!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 安裝程式的路徑。 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]安裝媒體的路徑是：WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|獨立版本的程式碼剖析工具安裝程式路徑。 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]安裝媒體的路徑是：Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>在 HPC 計算節點上進行程式碼剖析  
  您可以使用 HPC 效能精靈來指定 HPC 叢集和目標資訊，以設定程式碼剖析工作階段。 您可以在效能工作階段屬性頁中指定其他選項。 程式碼剖析工具會自動部署必要的目標二進位檔，並啟動分析工具和 HPC 應用程式。  
@@ -131,7 +126,7 @@ ms.locfileid: "51809151"
   
 ### <a name="hpc-launch-properties"></a>HPC 啟動屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |--------------|-----------------|  
 |**前端節點**|指定可在執行程式碼剖析時做為 HPC 前端節點的電腦。|  
 |**處理序數目**|指定要在已進行程式碼剖析的應用程式中執行的應用程式執行個體數目。|  
@@ -142,7 +137,7 @@ ms.locfileid: "51809151"
   
 ### <a name="advanced-properties"></a>進階屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |--------------|-----------------|  
 |**專案名稱**|目前 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 專案或解決方案的名稱。|  
 |**於分析工具停止時清除**|為 true 時，會將已部署至執行目錄的二進位檔移除。 此步驟不會移除由使用者程式建立的檔案和目錄。 如果是由 IDE 建立執行目錄和部署目錄，IDE 會嘗試加以移除，但不是由 IDE 所部署的檔案，則不會嘗試移除。|  
@@ -155,6 +150,3 @@ ms.locfileid: "51809151"
 |**剖析前指令碼引數**|指定要傳遞至剖析前指令碼的引數。|  
 |**剖析後指令碼**|在程式碼剖析工作階段結束之後，指定要在本機開發電腦上執行指令碼的路徑和檔案名稱。|  
 |**剖析後指令碼引數**|指定要傳遞至剖析後指令碼的引數。|
-
-
-

@@ -1,8 +1,6 @@
 ---
 title: CreateVisualBasicManifestResourceName 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 251c47b9-de32-414b-a138-bf45290af12e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4c4c4e93f157ef88452a7108e595dc7cd9a9ccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5e9949d158afb0dfd2f13a2ed62da34b3960e4a3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849472"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997061"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName 工作
 從指定的 *.resx* 檔案名稱或其他資源，建立 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 樣式的資訊清單名稱。  
@@ -32,7 +30,7 @@ ms.locfileid: "49849472"
  下表描述 [CreateVisualBasicManifestResourceName 工作](../msbuild/createvisualbasicmanifestresourcename-task.md)的參數。  
 
 
-| 參數 | 描述 |
+| 參數 | 說明 |
 | - | - |
 | `ManifestResourceNames` | <xref:Microsoft.Build.Framework.ITaskItem> `[]` 輸出唯讀參數。<br /><br /> 產生的資訊清單名稱。 |
 | `ResourceFiles` | 必要的 `String` 參數。<br /><br /> 建立 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 資訊清單名稱的來源資源檔名稱。 |

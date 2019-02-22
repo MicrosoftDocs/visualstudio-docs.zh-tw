@@ -1,7 +1,6 @@
 ---
 title: 自訂功能表與工具列
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.renametoolbar
@@ -25,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b22309f75e9ffd8a134af1d5ddafacb6d060f100
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84c4b2e5aa532becc1bf9bc50a3c7bcdbd2b8d4e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940397"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955631"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>HOW TO：在 Visual Studio 中自訂功能表和工具列
 

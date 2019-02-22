@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_optimizedcodedebuginfo |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_optimizedCodeDebugInfo | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 57ef4170-37a9-46b0-8217-c1a674725113
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b722455bf333eccfef2e670b3a0ed1e09381e48
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0699ddbb8d18249d4f909744c12aeaa42fb38697
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918983"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036364"
 ---
 # <a name="idiasymbolgetoptimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
 擷取指出函數是否包含僅適用於最佳化程式碼的偵錯資訊的旗標。  
@@ -48,5 +46,5 @@ HRESULT get_optimizedCodeDebugInfo(
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

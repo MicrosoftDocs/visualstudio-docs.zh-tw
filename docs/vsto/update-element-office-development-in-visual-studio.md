@@ -9,17 +9,17 @@ helpviewer_keywords:
 - update element
 - <update> element
 - application manifests [Office development in Visual Studio], <update> element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 661aa9c0c1a590e78d20e52b6321294d59e70c63
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 461fae79e3af346d64017166b6dae3ace67599e1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988984"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867386"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;更新&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `update`項目指定的方案將會檢查更新的間隔。
@@ -36,7 +36,7 @@ ms.locfileid: "53988984"
 </update>
 ```
 
-## <a name="elements-and-attributes"></a>項目和屬性
+## <a name="elements-and-attributes"></a>元素和屬性
  `update` 項目是必要的，且位於 `vstav3` 命名空間。
 
  `update` 項目具有下列屬性。
@@ -47,7 +47,7 @@ ms.locfileid: "53988984"
 
  `update` 項目具有下列子項目。
 
-### <a name="expiration"></a>到期日
+### <a name="expiration"></a>到期
  `expiration` 項目是必要的，且位於 `vstav3` 命名空間。 這個元素指定的方案檢查更新的間隔。
 
  `expiration` 項目具有下列屬性。
@@ -55,7 +55,7 @@ ms.locfileid: "53988984"
 |屬性|描述|
 |---------------|-----------------|
 |`maximumAge`| 必要項。 將此選項設定為整數。|
-|`unit`|必要項。 設定`unit`下列值之一：<br /><br /> -   **時數**<br />-   **天**<br />-   **週**|
+|`unit`|必要項。 設定`unit`下列值之一：<br /><br /> -   **時數**<br />-   **days**<br />-   **週**|
 
 ## <a name="example-of-always-checking-for-updates"></a>一律檢查更新的範例
 

@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_oemid |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_oemId | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c472830f-c3eb-46ab-9498-cd637763d241
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8208d146284926ce7ec3375e8416210eeb5d214c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 725d7a403292c4aafb487fc4840f1c54137dd1bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875251"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004379"
 ---
 # <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
 擷取符號的原始設備製造商 (OEM) 的識別碼值。  
@@ -27,7 +25,7 @@ ms.locfileid: "49875251"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_oemId (   
+HRESULT get_oemId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -45,6 +43,6 @@ HRESULT get_oemId (
 ## <a name="remarks"></a>備註  
  這個屬性只適用於具有符號[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)種`SymTagCustomType`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

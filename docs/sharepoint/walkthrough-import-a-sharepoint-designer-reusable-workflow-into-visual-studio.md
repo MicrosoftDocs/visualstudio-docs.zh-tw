@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, importing reusable workflows
 - reusable workflows [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c92a1023f5099c6a6d92df825aebebf35dd678dd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83da0474a156ae714de1e713a1122ceac9fdce23
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821342"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875403"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>逐步解說：SharePoint Designer 可重複使用工作流程匯入 Visual Studio
   本逐步解說示範如何匯入 SharePoint Designer 2010 中建立可重複使用工作流程[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工作流程專案。  
@@ -186,7 +186,7 @@ ms.locfileid: "53821342"
   
      只有在您偵錯專案時，立即，這會顯示清單。  
   
-11. 因為**匯入的可重複使用 SharePoint 2010 工作流程**範本不會匯入匯入的工作流程的關聯屬性值，您必須輸入它們。 做法：  
+11. 因為**匯入的可重複使用 SharePoint 2010 工作流程**範本不會匯入匯入的工作流程的關聯屬性值，您必須輸入它們。 若要這樣做：  
   
     1.  在 **方案總管**，選擇**SPD_Workflow_TestFT**節點。  
   

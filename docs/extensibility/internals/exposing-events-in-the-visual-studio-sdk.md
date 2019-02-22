@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d2eeb155212f7e065febb68b58b31879b5d5a7c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c08af11ce08cf86948655d01dc5468a3d70ae2fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853092"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924297"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>公開 （expose) Visual Studio SDK 中的事件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可讓您使用自動化來源事件。 我們建議您來源專案和專案項目的事件。  
@@ -46,7 +46,7 @@ ms.locfileid: "53853092"
 ## <a name="registry-entries-from-the-basic-project-sample"></a>從基本的專案範例的登錄項目  
  本節說明如何將自動化事件值新增至登錄。  
   
- **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\< PkgGUID\>\AutomationEvents]**
+ **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<PkgGUID\>\AutomationEvents]**
   
  **AutomationProjectEvents** = 傳回`AutomationProjectEvents`物件。  
   

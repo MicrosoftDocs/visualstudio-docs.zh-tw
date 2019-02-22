@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d22d67d81776f83683e11d1ca613a9138137e75c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945804"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335242"
 ---
 # <a name="how-to-implement-nested-projects"></a>HOW TO：實作巢狀的專案
 
@@ -65,7 +65,7 @@ ms.locfileid: "53945804"
      因為父和子專案具現化以程式設計的方式，您可以在此時設定巢狀專案的屬性。
 
     > [!NOTE]
-    > 不只執行您會看到從巢狀專案中，執行的內容資訊，但您也可以要求父專案是否已藉由檢查該項目的任何內容<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。 如此一來，您可以將額外動態說明屬性和特定的功能表選項新增至個別的巢狀專案。
+    > 不只執行您會看到從巢狀專案中，執行的內容資訊，但您也可以要求父專案是否已藉由檢查該項目的任何內容[__VSHPROPID。VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>)。 如此一來，您可以將額外動態說明屬性和特定的功能表選項新增至個別的巢狀專案。
 
 10. 顯示在建置階層**方案總管**藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>方法。
 

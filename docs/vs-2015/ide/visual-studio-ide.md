@@ -1,23 +1,20 @@
 ---
-title: Visual Studio 2015 |Microsoft Docs
+title: Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 772b6cf4-cee5-42d0-bc18-b4eb07e22ff0
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062479"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54780675"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +111,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 
  ![程式碼編輯器中的 GreetingsConsoleApp.cpp](../ide/media/c-ide-editorlinenumberswordwrapon.png "C + + IDE_EditorLineNumbersWordWrapOn")
 
- 文字編輯器可與許多產能功能緊密互動 (如果您想要的話)，協助您更快撰寫更好的程式碼。 功能會視語言而異，您不必使用任何這些 （型別 「 編輯器 」，在 快速啟動） 若要開啟或關閉功能：一些常見的生產力功能包括：
+ 文字編輯器可與許多產能功能緊密互動 (如果您想要的話)，協助您更快撰寫更好的程式碼。 這些功能會因語言而異，且您不必使用任何語言 (請在 [快速啟動] 中輸入 "Editor") 來開啟或關閉功能：下列為某些常見的產能功能：
 
 1. [Refactoring](../ide/refactoring-in-visual-studio.md) 包含一些作業，例如智慧型的變數重新命名、將選取的多行程式碼移動到個別函式、將程式碼移到其他位置、重新排序函式參數等等。
 
@@ -136,7 +133,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 
 8. [移至定義]  內容功能表選項會讓您直接進入定義函式或物件的位置。 以滑鼠右鍵在編輯器中按一下，還有其他巡覽命令可供使用。
 
-9. [物件瀏覽器](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470)是一種相關工具，可讓您檢查系統上的 .NET 或 Windows 執行階段組件，查看它們包含的類型，以及查看這些類型包含的方法和屬性。
+9. [物件瀏覽器](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470)是一種相關工具，可讓您檢查系統上的 .NET 或 Windows 執行階段組件，查看它們包含的類型，以及查看這些類型包含的方法和屬性。
 
      ![顯示 System.Timer 的物件瀏覽器](../ide/media/objectbrowser.png "ObjectBrowser")
 
@@ -157,7 +154,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 
  [Immediate Window](../ide/reference/immediate-window.md) 可讓您輸入運算式，並立即查看其結果。
 
- [IntelliTrace](http://msdn.microsoft.com/en-us/629e9660-c59a-446b-8c30-290059158f61) 視窗會記錄執行中的 .NET 程式之每個方法呼叫和其他事件，它可以幫助您快速找出問題的來源。
+ [IntelliTrace](http://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) 視窗會記錄執行中的 .NET 程式之每個方法呼叫和其他事件，它可以幫助您快速找出問題的來源。
 
  如需詳細資訊，請參閱 [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)。
 
@@ -196,7 +193,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 |||
 |-|-|
 |[使用者帳戶和更新](../ide/user-accounts-and-updates.md)|[個人化 IDE](../ide/personalizing-the-visual-studio-ide.md)|
-|[如何：在 IDE 中四處移動](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)|
+|[何：在 IDE 中四處移動](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)|
 |[尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)|[專案和方案](../ide/solutions-and-projects-in-visual-studio.md)|
 |[撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)|[Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)|
 |[分析工具](../profiling/profiling-tools.md)|[改善程式碼品質](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|

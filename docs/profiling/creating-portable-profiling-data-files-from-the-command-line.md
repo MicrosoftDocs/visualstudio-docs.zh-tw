@@ -1,21 +1,19 @@
 ---
 title: 從命令列建立可移植的分析資料檔案 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 2ceb63a7-b835-4988-b756-2afc3fcc4808
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be919183f18efc29ea562b0e4cc60c84febe60c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b42e34aa2ab52ffea835e6c3ef513cf3d7227a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841932"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926878"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>從命令列建立可移植的分析資料檔案
 若要更輕鬆地共用分析資料，您可以使用 [VSPerfReport](../profiling/vsperfreport.md) 命令列工具，將分析回合的符號內嵌到 .*vsp* 檔案。  
@@ -23,7 +21,7 @@ ms.locfileid: "49841932"
  您也可以建立較小且在 IDE 中更快速載入之預先分析的分析資料 (.*vsps*) 檔案。  
   
 > [!NOTE]
->  請確定 **VSPerfReport** 可以使用符號 (.*pdb*) 檔案。 如需詳細資訊，請參閱[如何：從命令列指定符號檔位置](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)。  
+>  請確定 **VSPerfReport** 可以使用符號 (.*pdb*) 檔案。 如需詳細資訊，請參閱[＜How to：從命令列指定符號檔位置](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)。  
 >   
 >  如需 **VSReport** 路徑的資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
 >   

@@ -1,7 +1,6 @@
 ---
 title: CA1601:不要使用會妨礙電源狀態變更的計時器
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1601
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b8028c92-0696-4c54-9773-0028f29bda9a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eebcd4f370055b9fb5f27d5b5694534ed8b46a76
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc6db6dff5ee4c4e4d387399dbf79277046d6c02
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937305"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931854"
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601:不要使用會妨礙電源狀態變更的計時器
 

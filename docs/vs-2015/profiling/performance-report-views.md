@@ -1,14 +1,9 @@
 ---
 title: 效能報告檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - reports, profiling tools
 - profiling tools reports
@@ -17,13 +12,13 @@ ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6905ae3a350ddb91db7cd9f500d57ccdc70cca86
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3390a2b38e82fc89a73a5ced82ef96d7c638a95a
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806499"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54785670"
 ---
 # <a name="performance-report-views"></a>效能報告檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +47,5 @@ ms.locfileid: "51806499"
  [階層互動檢視](../profiling/tier-interactions-view.md)  
  包含階層互動資料的程式碼剖析資料檔案之互動檢視和報告的參考資訊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)
-
-
-

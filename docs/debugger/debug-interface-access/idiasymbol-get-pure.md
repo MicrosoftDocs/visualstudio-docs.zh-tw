@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_pure |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_pure | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b61107e9-9144-4981-b7ef-58a339b80c58
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f79523cec58c34039db817f36eaf22efe4e6acd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 86bbd39d71d366cad899601e068a26636bb6ff31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831181"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920955"
 ---
 # <a name="idiasymbolgetpure"></a>IDiaSymbol::get_pure
 擷取旗標，指定函數是否為純虛擬。  
@@ -27,7 +25,7 @@ ms.locfileid: "49831181"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_pure (   
+HRESULT get_pure (   
    BOOL* pRetVal  
 );  
 ```  
@@ -42,5 +40,5 @@ HRESULT get_pure (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

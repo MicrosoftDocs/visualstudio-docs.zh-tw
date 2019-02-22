@@ -1,14 +1,9 @@
 ---
 title: 專案設計工具、應用程式頁面 (Visual Basic) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesApplicationWPF
 - vb.ProjectPropertiesApplication
@@ -19,13 +14,13 @@ ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
 caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9d2b23b5570a6372b727906a63ffb51513019df7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 21f94323fbfa7369e3fef93b0f95a8db2ea46ce2
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175483"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54774856"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -116,7 +111,7 @@ ms.locfileid: "49175483"
  [Windows 應用程式架構屬性] 區段中具有下列設定。 只有在選取 [啟用應用程式架構] 核取方塊時，才能使用這些選項。 後續區段描述 Windows Presentation Foundation (WPF) 應用程式的 [Windows 應用程式架構屬性] 設定。  
   
  **啟用 XP 視覺化樣式**  
- 啟用或停用 Windows XP 視覺化樣式，也稱為 [Windows XP 佈景主題]。 例如，Windows XP 視覺化樣式會啟用具有圓角和動態色彩的控制項。 會啟用預設值。 如需 Windows XP 視覺化樣式的詳細資訊，請參閱 [Windows XP 功能和 Windows Form 控制項](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0))。  
+ 啟用或停用 Windows XP 視覺化樣式，也稱為 [Windows XP 佈景主題]。 例如，Windows XP 視覺化樣式會啟用具有圓角和動態色彩的控制項。 會啟用預設值。 如需 Windows XP 視覺化樣式的詳細資訊，請參閱 [Windows XP 功能和 Windows Form 控制項](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0))。  
   
  **建立單一執行個體應用程式**  
  選取此核取方塊，來防止使用者執行應用程式的多個執行個體。 此核取方塊的預設設定會予以清除。 此設定允許執行應用程式的多個執行個體。  
@@ -164,8 +159,5 @@ ms.locfileid: "49175483"
   
  特定應用程式狀態變更時 (例如，應用程式啟動或關機時)，<xref:System.Windows.Application> 物件會引發事件。 如需此類別所公開的完整事件清單，請參閱 <xref:System.Windows.Application>。 這些事件是在 `Application` 部分類別的使用者程式碼區段中處理。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [管理應用程式屬性](../../ide/application-properties.md)[撰寫 Office 方案中的程式碼](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

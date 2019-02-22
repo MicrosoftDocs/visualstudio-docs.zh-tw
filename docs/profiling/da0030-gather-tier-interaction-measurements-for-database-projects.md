@@ -1,8 +1,6 @@
 ---
 title: DA0030：收集資料庫專案的階層互動度量 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.DA0030
@@ -11,17 +9,17 @@ f1_keywords:
 ms.assetid: 42b2f69d-0cfa-4854-82c4-589c3d8b4557
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d0fb38348a901582182bdfaec2d7d775ec195f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1ee7144e77fe007ce4c8219e668ddd161cd6e6d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814008"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024122"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：收集資料庫專案的階層互動度量
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：資料庫專案的收集階層互動度量
 
 |||  
 |-|-|  

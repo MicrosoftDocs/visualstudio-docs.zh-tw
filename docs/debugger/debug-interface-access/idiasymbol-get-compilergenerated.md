@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_compilergenerated |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 864d9249-f0c8-4a34-b391-eb785f7e8865
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 207a92e8e510b01b817e6633830b0478b325254b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3ae335e684c8f0fa3f9b7dfc19313733e9a78a6b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918775"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019524"
 ---
 # <a name="idiasymbolgetcompilergenerated"></a>IDiaSymbol::get_compilerGenerated
 擷取指出編譯器是否產生符號的旗標。  
@@ -27,7 +25,7 @@ ms.locfileid: "49918775"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_compilerGenerated (   
+HRESULT get_compilerGenerated (   
    BOOL* pRetVal  
 );  
 ```  
@@ -49,5 +47,5 @@ HRESULT get_compilerGenerated (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

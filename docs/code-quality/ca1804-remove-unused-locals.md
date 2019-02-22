@@ -1,7 +1,6 @@
 ---
 title: CA1804:必須移除未使用的區域變數
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1804
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: cc332e67-6543-4813-bd8a-6f6fc75bf22a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 47578cc281334da7eeebeea6eaa5ef0c1c021c8f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f567fa1d1f793395532efac5991b01c5087b638a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819857"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908526"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804:必須移除未使用的區域變數
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8281a6d367ae4d6b51576160479ba492ebdf805a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c55997b47c0195083957ebc4564ca7db6991686d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943336"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990115"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 參考
 本節包含 Visual Studio 的命名空間、 相關的命名空間和資訊感興趣的其他區域的開發人員使用 Visual Studio SDK。  

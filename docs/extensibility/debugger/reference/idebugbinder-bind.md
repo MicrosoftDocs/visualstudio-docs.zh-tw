@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::Bind |Microsoft Docs
+title: IDebugBinder::Bind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 15a11ad7-0fcc-4e80-ae34-8a7dd7bae3c3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72beca1ede38b310e34edfaabce0ee02e8fb52cc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82455db074e23b5ea08010747c80888e4629cf18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865202"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979955"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 這個方法會取得的記憶體內容或包含符號的目前值的物件。  

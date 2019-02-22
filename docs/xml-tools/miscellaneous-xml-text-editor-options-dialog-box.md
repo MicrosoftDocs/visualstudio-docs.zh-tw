@@ -1,20 +1,19 @@
 ---
 title: 其他、XML、文字編輯器、選項對話方塊
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85af563d9fb20b12785a410cf7df7e612d17dbee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9111613222d25a89b3db55a9d1f3aea39be1f6d8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941397"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951679"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>其他、 XML、 文字編輯器、 選項對話方塊
 

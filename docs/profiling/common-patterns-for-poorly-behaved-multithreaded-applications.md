@@ -1,8 +1,6 @@
 ---
 title: 行為錯誤之多執行緒應用程式的一般模式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.gallery
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, common patterns for poorly-behaved multithreaded applications
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9a76efd6ef799bbaa25c4e4d40ef2ab10a3569fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34549002"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000909"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>行為錯誤之多執行緒應用程式的一般模式
 
@@ -32,7 +30,7 @@ ms.locfileid: "34549002"
 
 如下圖所示，並行視覺化檢視也可以在 [CPU 使用率檢視] 中顯示出這個徵兆，檢視中雖然有多個執行緒，但是應用程式還是只使用一個邏輯核心。
 
-如需詳細資訊，請參閱 Hazim Shafi 在 MSDN 部落格網站上的 [Parallel performance tools for Windows](http://go.microsoft.com/fwlink/?LinkID=160569) (Windows 的平行效能工具) 部落格中發表的＜Performance pattern 1: Identifying lock contention＞(效能模式 1：識別鎖定爭用)。
+如需詳細資訊，請參閱 Hazim Shafi 在 MSDN 部落格網站上[Parallel performance tools for Windows](http://go.microsoft.com/fwlink/?LinkID=160569) (Windows 的平行效能工具) 部落格中發表的＜Performance pattern 1: Identifying lock contention＞(效能模式 1：識別鎖定爭用)。
 
 ![鎖定爭用](../profiling/media/lockcontention_2.png "LockContention_2")
 

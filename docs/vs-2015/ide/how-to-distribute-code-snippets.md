@@ -1,27 +1,22 @@
 ---
-title: 如何：散發程式碼片段 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：散發程式碼片段 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 14dea3842289b626b79d8dc7e294ba5f335d0351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bf0cff7902bfbf62dbb0e0929cf924505d37aed2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185701"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799028"
 ---
 # <a name="how-to-distribute-code-snippets"></a>如何：散發程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49185701"
  若要建立 Visual Studio 擴充功能，您必須安裝 Visual Studio SDK。 尋找符合您 Visual Studio 安裝的 vssdk 版本[Visual Studio 2015 下載](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx)。  
   
 ## <a name="setting-up-the-extension"></a>設定擴充功能  
- 在此程序中，我們將使用在[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)中所建立之相同的 Hello World 程式碼片段。 我們將提供 .snippet 文字，所以您不需返回再做一次。  
+ 在此程序中，我們將使用同一個 Hello World 程式碼片段中建立[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)。 我們將提供 .snippet 文字，所以您不需返回再做一次。  
   
 1.  建立新的 VSIX 專案，名為 **TestSnippet**。 ( [檔案] / [新增] / [專案] / [Visual C#] \(或 [Visual Basic] / [擴充性])  
   
@@ -101,14 +96,11 @@ ms.locfileid: "49185701"
   
 4.  測試程式碼片段。 在實驗性執行個體中，開啟 Visual Basic 專案，並開啟其中一個程式碼檔案。 將游標放在程式碼中的某處，按一下滑鼠右鍵，然後在 [操作功能表] 上選取 [插入程式碼片段]。  
   
-5.  您應該會看到 HelloWorldVB 做為其中一個資料夾。 對它按兩下。 您應該會看到快顯視窗 [插入程式碼片段: HellowWorldVB >]，這具有下拉式清單 [HelloWorldVB]。 按一下這個 HelloWorldVB 下拉式清單。 您應該會看到下面這一行已加入此檔案：  
+5.  您應該會看到 HelloWorldVB 做為其中一個資料夾。 對它按兩下。 您應該會看到快顯視窗 [插入程式碼片段：HelloWorldVB >]**HellowWorldVB >** ，這具有下拉式清單**HelloWorldVB**。 按一下這個 HelloWorldVB 下拉式清單。 您應該會看到下面這一行已加入此檔案：  
   
     ```vb  
     Console.WriteLine("Hello, World!")  
     ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [程式碼片段](../ide/code-snippets.md)
-
-
-

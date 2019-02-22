@@ -10,14 +10,13 @@ helpviewer_keywords:
 ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: b8642ab935c95a8b80f87c5bcc7d5e6d24f0825f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: f9623022d5e0132c8b099757a5af85a3ddd62ed1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903886"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934766"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>管理負載測試結果存放庫中的負載測試結果
 

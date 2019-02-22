@@ -1,14 +1,9 @@
 ---
 title: 自訂視窗版面配置
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.windows
 - vs.environment
@@ -28,13 +23,13 @@ ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e37adb6296a805b8a0fd06196e7ccf1acf5bc32e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057557"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802025"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>在 Visual Studio 中自訂視窗版面配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ ms.locfileid: "53057557"
  若您必須在文件中一次檢視或編輯兩個位置，則可分割視窗。 若要將文件分割成兩個獨立的捲動區段，請按一下 [視窗]  功能表上的 [分割]  。 按一下 [視窗]  功能表上的 [移除分割]  ，以還原單一檢視。
 
 ### <a name="toolbars"></a>工具列
- 您可透過拖曳或使用 [自訂]  對話方塊，以排列工具列。 如需如何定位及自訂工具列的詳細資訊，請參閱[How to:自訂功能表與工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。
+ 您可透過拖曳或使用 [自訂]  對話方塊，以排列工具列。 如需如何定位及自訂工具列的詳細資訊，請參閱[如何：自訂功能表與工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。
 
 ## <a name="arranging-and-docking-windows"></a>排列和固定視窗
  您可 *固定*文件視窗和工具視窗，以將其在 IDE 視窗框架內定位和調整大小，或是做為獨立於 IDE 的個別浮動視窗。 工具視窗可固定於 IDE 框架內的任一處；某些工具視窗可在編輯器框架中固定為索引視窗。 文件視窗可固定於編輯器框架內，且可依定位順序鎖定至目前的位置。 您可固定多個視窗，以將這些視窗一次「浮動定位」於 IDE 上方或外部。 您亦可隱藏或最小化工具視窗。
@@ -82,7 +77,7 @@ ms.locfileid: "53057557"
   您可透過拖曳、使用 [視窗]  功能表上的命令，或是在要排列的視窗標題列上按一下滑鼠右鍵，來排列工具和文件視窗。
 
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
 
 ### <a name="docking-windows"></a>固定視窗
  若您按一下並拖曳工具視窗的標題列，或是文件視窗的索引標籤，則會顯示輔助方塊。 執行拖曳作業時，若將滑鼠資料指標停駐於菱形的其中一個箭號上，則會顯示陰影區域指出當您立即放開滑鼠按鈕時的視窗固定位置。
@@ -187,4 +182,4 @@ ms.locfileid: "53057557"
 |[視窗種類](../misc/kinds-of-windows.md)|討論 IDE 中工具視窗與文件視窗之間的差異。|
 |[如何：排列和固定視窗](../misc/how-to-arrange-and-dock-windows.md)|說明如何停駐、自動隱藏和並排顯示視窗，以及如何重設視窗配置。|
 |[如何：在 IDE 中四處移動](../ide/how-to-move-around-in-the-visual-studio-ide.md)|說明如何在 IDE 中循環開啟的視窗 (依照使用的順序)。 同時說明如何跳到特定的文件。|
-|[Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|包含有關設定組合的資訊，以及這些設定如何影響視窗配置、鍵盤快速鍵和 IDE 中其他元素的資訊。|
+|[Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|包含有關設定組合的資訊，以及這些設定如何影響視窗配置、鍵盤快速鍵和 IDE 中其他元素的資訊。|

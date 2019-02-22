@@ -1,14 +1,9 @@
 ---
 title: 檢視程式碼的結構 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -32,13 +27,13 @@ ms.assetid: e6064f58-5ad9-4f05-8c3f-12e994b6583f
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901641"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801208"
 ---
 # <a name="viewing-the-structure-of-code"></a>檢視程式碼的結構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ ms.locfileid: "49901641"
   
  [程式碼定義視窗 (C#、C++)](#BKMK_CodeDefinition)  
   
- 您也可以使用**方案總管 中**瀏覽的類型和成員，在您的專案中，搜尋符號、 檢視方法的呼叫階層、 尋找符號參考及更多，而不需要多個工具視窗之間切換先前所列。  
+ 您也可以使用 [方案總管] 來瀏覽專案中的類型與成員、搜尋符號、檢視方法的呼叫階層、尋找符號參考及更多功能，而不需要在如上所述的多個工具視窗之間切換。  
   
  如果您有 Visual Studio Enterprise，即可使用 Code Map 以視覺方式呈現程式碼的結構，而其相依性適用於整個方案，且能夠向下鑽研至您感興趣的程式碼部分。 如需詳細資訊，請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)。  
   
@@ -227,8 +222,5 @@ ms.locfileid: "49901641"
 ### <a name="document-outline-window"></a>文件大綱視窗  
  您可以搭配使用 [文件大綱] 視窗與設計工具檢視，例如 XAML 頁面的設計工具或 Windows Forms 設計工具，或搭配 HTML 頁面。 此視窗會以樹狀檢閱來顯示項目，使您能夠檢閱表單或頁面的邏輯結構，以及尋找深度內嵌或隱藏的控制項。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [類別檢視和物件瀏覽器圖示](../ide/class-view-and-object-browser-icons.md)
-
-
-

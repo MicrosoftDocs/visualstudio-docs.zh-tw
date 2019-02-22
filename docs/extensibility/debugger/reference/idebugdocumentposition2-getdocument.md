@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eaa172c9-5748-4ce1-a0e2-33c2063f6752
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a85201e61f9793b60118155a372d97b11b31621a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95f3fc28a26ae9adffde2fbb4c0b0a3d9837f6f2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865896"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040823"
 ---
 # <a name="idebugdocumentposition2getdocument"></a>IDebugDocumentPosition2::GetDocument
 取得包含文件。  

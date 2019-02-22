@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 65e4d37a-086b-426e-9394-a3534967fd59
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbbeb9eab33bbdad7264a0296a4f6c9f86fb8a5d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 868fa51d24b0ae3206d55ae8364224dead69e7f7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851283"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003366"
 ---
 # <a name="code-context"></a>程式碼內容
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯**程式碼內容**:  

@@ -1,8 +1,6 @@
 ---
-title: 逐步解說： 手動部署 ClickOnce 應用程式 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：手動部署 ClickOnce 應用程式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,17 +17,17 @@ helpviewer_keywords:
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f25c0e0b60a3b0f52df534db8f3593a26a435a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6dac1a48db34f1b3a5a9dbdbac4469344f3e5383
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902871"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001718"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>逐步解說： 手動部署 ClickOnce 應用程式
+# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>逐步解說：手動部署 ClickOnce 應用程式
 如果您不能使用 Visual Studio 部署您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，或您需要使用進階的部署功能，例如受信任的應用程式部署，您應該使用*Mage.exe*命令列工具來建立您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]資訊清單。 本逐步解說描述如何建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署所使用的命令列版本 (*Mage.exe*) 或圖形化的版本 (*MageUI.exe*) 的資訊清單產生和編輯工具。  
   
 ## <a name="prerequisites"></a>必要條件  
@@ -45,11 +43,11 @@ ms.locfileid: "49902871"
   
 - 決定如何將分散式部署。  
   
-   發佈選項包括： Web、 檔案共用或 CD。 如需詳細資訊，請參閱 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。  
+   發佈選項包括：Web、 檔案共用或 CD。 如需詳細資訊，請參閱 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。  
   
 - 決定應用程式是否需要提高權限的信任層級。  
   
-   如果您的應用程式需要完全信任 — 比方說，完整存取使用者的系統 — 您可以使用`-TrustLevel`選項*Mage.exe*將此項。 如果您想要定義您的應用程式的自訂使用權限，您可以從另一個資訊清單複製網際網路或內部網路權限 」 一節，修改它以符合您的需求，並將它新增至應用程式資訊清單使用文字編輯器或*MageUI.exe*。 如需詳細資訊，請參閱 <<c0> [ 受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)。  
+   如果您的應用程式需要完全信任 — 比方說，完整存取使用者的系統 — 您可以使用`-TrustLevel`選項*Mage.exe*將此項。 如果您想要定義您的應用程式的自訂使用權限，您可以從另一個資訊清單複製網際網路或內部網路權限 」 一節，修改它以符合您的需求，並將它新增至應用程式資訊清單使用文字編輯器或*MageUI.exe*。 如需詳細資訊，請參閱[受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)。  
   
 - 取得 Authenticode 憑證。  
   
@@ -62,7 +60,7 @@ ms.locfileid: "49902871"
   
    您必須決定是否您的應用程式包含的資訊清單與使用者帳戶控制 (UAC) 的詳細資訊，例如`<dependentAssembly>`項目。 若要檢查應用程式資訊清單，您可以使用 Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035)公用程式。  
   
-   如果您的應用程式包含的資訊清單以 UAC 的詳細資訊，您必須重新建置它沒有 UAC 資訊。 針對 C# 專案在 Visual Studio 中，開啟專案屬性，然後選取 應用程式 索引標籤。在  **Manifest**下拉式清單中，選取**Vytvořit aplikaci bez manifestu**。 在 Visual Studio 中 Visual Basic 專案，請開啟 專案屬性，選取 應用程式 索引標籤，然後按一下**檢視的 UAC 設定**。 在開啟資訊清單檔案中，移除所有項目內的單一`<asmv1:assembly>`項目。  
+   如果您的應用程式包含的資訊清單以 UAC 的詳細資訊，您必須重新建置它沒有 UAC 資訊。 針對C#專案在 Visual Studio 中開啟專案屬性，然後選取 應用程式 索引標籤。在  **Manifest**下拉式清單中，選取**Vytvořit aplikaci bez manifestu**。 在 Visual Studio 中 Visual Basic 專案，請開啟 專案屬性，選取 應用程式 索引標籤，然後按一下**檢視的 UAC 設定**。 在開啟資訊清單檔案中，移除所有項目內的單一`<asmv1:assembly>`項目。  
   
 - 決定應用程式是否需要用戶端電腦上的必要條件。  
   
@@ -197,6 +195,6 @@ ms.locfileid: "49902871"
 ## <a name="see-also"></a>另請參閱  
  [Mage.exe (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
- [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
+ [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

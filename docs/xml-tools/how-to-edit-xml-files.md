@@ -1,20 +1,19 @@
 ---
 title: HOW TO：編輯 XML 檔案
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5fc57c894c1e3a616062f01cc46103b4714fa35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0de1dbc3b98850e7a4cde3f5be60ccfa09a34e11
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849041"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931750"
 ---
 # <a name="how-to-edit-xml-files"></a>HOW TO：編輯 XML 檔案
 

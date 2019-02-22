@@ -3,20 +3,19 @@ title: 容器的已知問題
 description: 深入了解當您將 Visual Studio Build Tools 2017 安裝到 Windows 容器時，可能發生的已知問題。
 ms.date: 04/18/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62bbcabe25a4cbefed3e1e928eaac8942e3c8de2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f1fdfcc71f2bd17bf8ab4be0796350799af2c35
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905185"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935013"
 ---
 # <a name="known-issues-for-containers"></a>容器的已知問題
 
@@ -39,7 +38,7 @@ ms.locfileid: "53905185"
 
 ## <a name="build-tools-container"></a>建置工具容器
 
-當您使用建置工具容器時，可能會發生下列已知問題。 若要查看問題是否已獲得修正，或是否有其他已知問題，請瀏覽 https://developercommunity.visualstudio.com。
+當您使用建置工具容器時，可能會發生下列已知問題。 若要查看問題是否已獲得修正，或是否有其他已知問題，請瀏覽 [https://developercommunity.visualstudio.com](https://developercommunity.visualstudio.com)。
 
 * 在[某些情況](https://github.com/Microsoft/vstest/issues/940)下，IntelliTrace 在容器內可能無法運作。
 

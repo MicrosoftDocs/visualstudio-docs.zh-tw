@@ -1,27 +1,22 @@
 ---
 title: 選項對話方塊、專案和方案、Web 專案 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.WebProjects
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 23749bd33faef774d28657aeae3016d716fea0b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 91e2992a5c1a79f838e035b5993bf21dbfeca1bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223141"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797104"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>選項對話方塊、專案和方案、Web 專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,10 +24,10 @@ ms.locfileid: "49223141"
   
 設定 Web 專案將用來在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 內進行開發的 Web 伺服器。 若要存取此對話方塊，請按一下 [工具選項]。 展開 [專案和方案]，然後按一下 [Web 專案]。  
   
- 根據預設，當您在 Visual Studio 中執行 Web 專案時 (例如，使用 F5 或 Ctrl+F5)，Visual Studio 會使用 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [Visual Studio 中 ASP.NET Web 專案的 Web 伺服器](http://msdn.microsoft.com/en-us/31d4f588-df59-4b7e-b9ea-e1f2dd204328)。  
+ 根據預設，當您在 Visual Studio 中執行 Web 專案時 (例如，使用 F5 或 Ctrl+F5)，Visual Studio 會使用 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [Visual Studio 中 ASP.NET Web 專案的 Web 伺服器](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328)。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫此說明頁時，主要是以 [Web 設定] 為考量。 若要檢視或變更您的設定，請選擇 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫此說明頁時，主要是以 [Web 設定] 為考量。 若要檢視或變更您的設定，請選擇 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="settings"></a>設定  
  **將 64 位元版本的 IIS Express 用於網站和專案**  
@@ -40,6 +35,3 @@ ms.locfileid: "49223141"
   
  **當錯誤清單中有錯誤時，在執行 Web 應用程式前提出警告**  
  如果已核取此方塊，當您嘗試執行 Web 應用程式，而它在編譯時並非沒有錯誤，則會出現警告。
-
-
-

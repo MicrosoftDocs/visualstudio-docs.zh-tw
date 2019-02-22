@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6e1c3d56-fb67-4a5b-80f9-8ee5131972bf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 089b8c14db3caa1c9f4b3a2ad0a364bcfbb5a096
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9e60b328ee13a47df9d7656c992f81e63cbbd2ed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840352"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983777"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
 停止執行此程式中的所有執行緒。  

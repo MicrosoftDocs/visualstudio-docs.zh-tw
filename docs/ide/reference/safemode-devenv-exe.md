@@ -1,7 +1,6 @@
 ---
 title: -SafeMode (devenv.exe)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
 - /SafeMode Devenv switch
@@ -10,37 +9,38 @@ helpviewer_keywords:
 ms.assetid: b191f6a5-8f12-47ec-bcc7-b68149a22aa8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed14c3ec0da75df37c5a006f4e25240ac6630d20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 14b2ac3a80a9e17e0c554f56ae8e31ac32450c5e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949650"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938679"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
-以安全模式啟動 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，並且只載入預設環境和服務。
+
+以安全模式啟動 Visual Studio，只載入預設環境和服務。
 
 ## <a name="syntax"></a>語法
 
-```cmd
+```shell
 devenv /SafeMode
 ```
 
 ## <a name="remarks"></a>備註
- 此參數會在啟動 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 時防止載入所有協力廠商 VSPackages，因而確保穩定執行。
 
-## <a name="description"></a>說明
- 下列範例會以安全模式啟動 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
+此參數會在 Visual Studio 啟動時防止載入所有的協力廠商 VSPackages，因而可確保穩定執行。
 
-## <a name="code"></a>程式碼
+## <a name="example"></a>範例
 
-```cmd
-Devenv.exe /SafeMode
+下列範例會以安全模式啟動 Visual Studio。
+
+```shell
+devenv /safemode
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

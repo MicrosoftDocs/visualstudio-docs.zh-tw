@@ -1,22 +1,21 @@
 ---
 title: CA2137:透明方法必須只包含可驗證的 IL
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2137
 ms.assetid: cbaeb0e1-56b6-43b4-812a-596b2859c329
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76d628b05ae5c0b6ccb8db94a1bf2c09537fd812
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f74b539d9382bf8b5f5fe319ff319cdf6f372340
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913194"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946011"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137:透明方法必須只包含可驗證的 IL
 

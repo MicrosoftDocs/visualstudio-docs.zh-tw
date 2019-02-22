@@ -2,21 +2,19 @@
 title: 資料科學與分析應用程式工作負載
 description: Visual Studio 工作負載結合了 Python、R、F# 及其對應的執行階段發行版本，包括 Anaconda。
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d9815c72a500f9edd3b01f76dae3411ac0ee50f
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 51ff15de33f94fe106fb92fcafb6ec2b27294315
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627065"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956736"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>在 Visual Studio 中安裝資料科學支援
 
@@ -64,11 +62,11 @@ SQL Server 支援使用 R 和 Python，以直接在 SQL Server 內執行進階�
 
 - **輕鬆部署**：擁有 R 或 Python 模型之後，只要在 T-SQL 指令碼中嵌入它便能輕鬆將它部署至生產環境。 以任何語言撰寫的任何 SQL 用戶端應用程式接著可以透過預存程序呼叫來運用模型和智慧。 不需要任何特定的 R 或 Python 整合。
 
-- **企業級效能和規模**：您可以使用 SQL Server 的進階功能，例如具有 RevoScaleR 和 RevoScalePy 套件中高效能可擴充 API 的記憶體中資料表和資料行存放區索引。 不需要移動資料也表示在您的資料成長或您想要增加應用程式效能時，避免用戶端記憶體條件約束。
+- **企業級效能和規模**：您可以使用 SQL Server 的進階功能，例如具有 RevoScaleR 和 RevoScalePy 套件中高效能可擴充 API 的記憶體內部資料表和資料行存放區索引。 不需要移動資料也表示在您的資料成長或您想要增加應用程式效能時，避免用戶端記憶體條件約束。
 
 - **豐富的擴充性**：您可以在 SQL Server 上安裝和執行任何最新的開放原始碼 R 或 Python 套件，以對 SQL Server 中的大量資料建置深度學習和 AI 應用程式。 在 SQL Server 中安裝套件，就像在本機電腦上安裝套件一樣簡單。
 
-- **不需額外成本的多可用性**：所有 SQL Server 2017 和更新版本都提供 R 和 Python 整合 (包含 Express Edition)  (SQL Server 2016 和更新版本提供 R 支援)。
+- **不需額外成本的多可用性**：所有 SQL Server 2017 和更新版本都提供 R 和 Python 整合 (包含 Express Edition) (SQL Server 2016 和更新版本提供 R 支援)。
 
 若要完整利用 SQL Server 整合，請使用 Visual Studio 安裝程式，透過 [SQL Server Data Tools] 選項來安裝 [資料儲存和處理] 工作負載。 後述選項可啟用 SQL IntelliSense、語法醒目提示和部署。
 

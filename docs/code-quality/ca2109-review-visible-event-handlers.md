@@ -1,7 +1,6 @@
 ---
 title: CA2109:必須檢閱可見的事件處理常式
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2109
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8f8fa0ee-e94e-400e-b516-24d8727725d7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d234fe466395b5267c18eae9aa14d855d58abe2a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de5ab1fac368f1da1ceea39df19b198a22d999c1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860841"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917528"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109:必須檢閱可見的事件處理常式
 

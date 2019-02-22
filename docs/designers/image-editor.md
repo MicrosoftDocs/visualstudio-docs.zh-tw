@@ -1,23 +1,21 @@
 ---
 title: 影像編輯器
 ms.date: 08/10/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2149410782587d8472faff678cbc20bf1ea577c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9783029eab9597624be459fe88b51a495328b5be
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878371"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938185"
 ---
 # <a name="image-editor"></a>影像編輯器
 
@@ -126,10 +124,10 @@ Truevision Graphics Adapter (TGA) 影像格式 (也稱為 Targa)。 一種 RLE �
 |**格線**|啟用或停用顯示像素界線的格線。 可能會等到您放大影像時才會顯示格線。|
 |**檢視下一個 MIP 層級**|啟用 MIP 對應鏈結中下一個較大的 MIP 層級。 作用中的 MIP 層級會顯示在設計介面上。 此項目僅適用於具有 MIP 層級的材質。|
 |**檢視上一個 MIP 層級**|啟用 MIP 對應鏈結中下一個較小的 MIP 層級。 作用中的 MIP 層級會顯示在設計介面上。 此項目僅適用於具有 MIP 層級的材質。|
-|**紅色色板**<br /><br /> **綠色色板**<br /><br /> **藍色色板**<br /><br /> **Alpha 色板**|啟用或停用特定色彩色板。 **注意：** 透過有系統地啟用或停用色彩色板，您將可隔離與一或多個色板有關的問題。 例如，您可以識別不正確的 Alpha 透明度。|
+|**紅色色板**<br /><br /> **綠色色板**<br /><br /> **藍色色板**<br /><br /> **Alpha 色板**|啟用或停用特定色彩色板。 **注意：** 透過有系統地啟用或停用色彩通道，您將可隔離與一或多個色板相關的問題。 例如，您可以識別不正確的 Alpha 透明度。|
 |**背景**|透過影像的透明部分來啟用或停用背景顯示。 您可以從下列選項選擇，來設定背景的顯示方式：<br /><br /> **棋盤式**<br /> 使用綠色搭配指定的背景色彩來以棋盤式圖樣顯示背景。 您可以使用此選項來讓影像的透明部分更為明顯。<br /><br /> 白色背景<br /> 使用白色來顯示背景。<br /><br /> 黑色背景<br /> 使用黑色來顯示背景。<br /><br /> 以動畫方式顯示背景<br /> 緩慢地移動瀏覽棋盤式圖樣。 您可以使用此選項來讓影像的透明部分更為明顯。|
 |**屬性**|交替地開啟或關閉 [屬性] 視窗。|
-|**進階**|包含額外的命令和選項。<br /><br /> **篩選**<br /><br /> 提供數個常見的影像篩選：**黑白**、**模糊**、**亮化**、**加深**、**邊緣偵測**、**浮禿**、**反轉色彩**、**漣漪**、**深褐色調**，以及**銳利化**。<br /><br /> **圖形引擎**<br /><br /> **以 D3D11 呈現**<br /> 使用 Direct3D 11 來轉譯**影像編輯器**設計介面。<br /><br /> **以 D3D11WARP 呈現**<br /> 使用 Direct3D 11 Windows Advanced Rasterization Platform (WARP) 轉譯**影像編輯器**設計介面。<br /><br /> **工具**<br /><br /> **水平翻轉**<br /> 繞著影像的水平軸 (或 x 軸) 轉置影像。<br /><br /> **垂直翻轉**<br /> 繞著影像的垂直軸 (或 y 軸) 轉置影像。<br /><br /> **產生 Mips**<br /> 產生影像的 MIP 層級。 如果 MIP 層級已經存在，將會從最大的 MIP 層級重新建立它們。 對較小 MIP 層級所做的任何變更將會遺失。 若要儲存您已產生的 MIP 層級，您必須使用 *.dds* 格式來儲存影像。<br /><br /> **檢視**<br /><br /> **畫面播放速率**<br /> 已啟用時，會在設計介面右上角顯示畫面播放速率。 畫面播放速率是每秒繪製的畫面數目。 **祕訣：** 您可以選擇 [進階] 按鈕來重新執行上一個命令。|
+|**進階**|包含額外的命令和選項。<br /><br /> **篩選**<br /><br /> 提供數個常見的影像篩選：**黑白**、**模糊**、**亮化**、**加深**、**邊緣偵測**、**浮凸**、**反轉色彩**、**漣漪**、**深褐色調**，以及**銳利化**。<br /><br /> **圖形引擎**<br /><br /> **以 D3D11 呈現**<br /> 使用 Direct3D 11 來轉譯**影像編輯器**設計介面。<br /><br /> **以 D3D11WARP 呈現**<br /> 使用 Direct3D 11 Windows Advanced Rasterization Platform (WARP) 轉譯**影像編輯器**設計介面。<br /><br /> **工具**<br /><br /> **水平翻轉**<br /> 繞著影像的水平軸 (或 x 軸) 轉置影像。<br /><br /> **垂直翻轉**<br /> 繞著影像的垂直軸 (或 y 軸) 轉置影像。<br /><br /> **產生 Mips**<br /> 產生影像的 MIP 層級。 如果 MIP 層級已經存在，將會從最大的 MIP 層級重新建立它們。 對較小 MIP 層級所做的任何變更將會遺失。 若要儲存您已產生的 MIP 層級，您必須使用 *.dds* 格式來儲存影像。<br /><br /> **檢視**<br /><br /> **畫面播放速率**<br /> 已啟用時，會在設計介面右上角顯示畫面播放速率。 畫面播放速率是每秒繪製的畫面數目。 **提示：** 您可以選擇 [進階] 按鈕，再次執行上一個命令。|
 
 ### <a name="image-editor-toolbar"></a>影像編輯器工具列
 

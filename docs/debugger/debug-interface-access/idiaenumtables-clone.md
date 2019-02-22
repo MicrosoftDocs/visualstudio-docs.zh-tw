@@ -1,8 +1,6 @@
 ---
-title: 'Idiaenumtables:: Clone |Microsoft Docs'
-ms.custom: ''
+title: IDiaEnumTables::Clone | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: beb21109-b12c-44d8-8c1f-a332216b3713
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f1ed2bbfe37b707aa00cafdd9ad3691fb3110e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c4403560a10c8e437eac7659295ea9e24d8fcf96
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934726"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014753"
 ---
 # <a name="idiaenumtablesclone"></a>IDiaEnumTables::Clone
 建立列舉值，包含目前的列舉值相同的列舉型別狀態。  
@@ -27,7 +25,7 @@ ms.locfileid: "49934726"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumTables** ppenum  
 );  
 ```  
@@ -39,5 +37,5 @@ HRESULT Clone (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

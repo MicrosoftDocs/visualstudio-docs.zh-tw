@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2d732b050a9f12b6324abaf253739cd4f3e223aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70f39dd23851a2ebc0a48afd05da54b0d8deb24a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914484"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955670"
 ---
 # <a name="vs-shell-deployment"></a>VS Shell 部署
 

@@ -1,21 +1,20 @@
 ---
 title: 探索界限 | Microsoft IntelliTest 開發人員測試工具
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 718c8cfdf7b4d03ea0c1c3b5f9f4a120a5997a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5ee5d3e05af407f3011111e1dcad84487dd81fe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935459"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952355"
 ---
 # <a name="exploration-bounds"></a>探索界限
 
@@ -106,7 +105,7 @@ for (int i=0; i<100; i++) { }
 
 ```csharp
 [PexMethod]
-void ParameterizedTest(int n) 
+void ParameterizedTest(int n)
 {
      for (int i=0; i<n; i++) { // conditions are "0<n", "1<n", ..., "!(n<n)"
           ...
@@ -144,10 +143,10 @@ IntelliTest 在探索期間將考慮使用的唯一路徑數目上限。
 
 這項探索界限背後的動機是包含迴圈或遞迴的任何程式碼可能含有不限數目的執行路徑，因此 IntelliTest 必須在[輸入產生](input-generation.md)期間加以限制。
 
-**MaxRuns** 和 **MaxRunsWithUniquePaths** 這兩項設定相關，如下所示： 
+**MaxRuns** 和 **MaxRunsWithUniquePaths** 這兩項設定相關，如下所示：
 
 * IntelliTest 將以不同的測試輸入呼叫參數化測試方法最多 **MaxRuns** 次。
-* 如果已執行的程式碼具決定性，則 IntelliTest 會每次採用不同的執行路徑。 不過，在某些情況下，已執行的程式碼可能會以不同的輸入且依循它之前已採用的執行路徑。 
+* 如果已執行的程式碼具決定性，則 IntelliTest 會每次採用不同的執行路徑。 不過，在某些情況下，已執行的程式碼可能會以不同的輸入且依循它之前已採用的執行路徑。
 * IntelliTest 會計算找到的唯一執行路徑數目；此數目是透過 **MaxRunsWithUniquePaths** 選項進行限制。
 
 <a name="maxexceptions"></a>

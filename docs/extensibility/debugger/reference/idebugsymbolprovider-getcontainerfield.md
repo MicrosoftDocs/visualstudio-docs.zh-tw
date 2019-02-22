@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetContainerField |Microsoft Docs
+title: IDebugSymbolProvider::GetContainerField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d6b56b4f-a96b-4fa7-87c1-bac4e58fa766
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ec37cbc6c4ce2201a83ab78e5cac25964e09c91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1cced3eb3bea16d3c45fba69f86f607b8332f679
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956227"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935068"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 這個方法會取得包含偵錯位址的欄位。  

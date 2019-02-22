@@ -1,23 +1,21 @@
 ---
 title: 在部署後診斷問題 |Microsoft Docs
-ms.custom: ''
 ms.date: 04/10/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219909"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316882"
 ---
-# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>部署後，使用 IntelliTrace 診斷問題
+# <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>部署後，使用 IntelliTrace 診斷問題 (C#，Visual Basic)
 
 若要在部署後使用 IntelliTrace 診斷 ASP.NET Web App 中的問題，請包含組建資訊和版本，讓 Visual Studio 自動找出偵錯 IntelliTrace 記錄檔所需的正確原始程式檔和符號檔案。
 
@@ -25,7 +23,7 @@ ms.locfileid: "50219909"
 
  ![程式碼、 建置、 發行、 監視、 診斷、 修正](../debugger/media/ffr_cycle.png "FFR_Cycle")
 
- **您將需要：**
+ **您需要下列項目：**
 
 -   Visual Studio、 Azure DevOps 或 Team Foundation Server 2017、 2015年、 2013年、 2012年或 2010，以將您的組建設定
 
@@ -33,10 +31,10 @@ ms.locfileid: "50219909"
 
 -   Visual Studio Enterprise (但不是 Professional 或 Community 版本)，用以搭配 IntelliTrace 檢閱診斷資料及偵錯程式碼
 
-##  <a name="SetUpBuild"></a> 步驟 1： 包含建置資訊和版本
- 將您的建置流程建立建置資訊清單 (*BuildInfo.config*檔案) 為您的 web 專案，並包含您的版本，此資訊清單。 此資訊清單包含有關專案、原始檔控制及用於建立特定組建之建置系統的資訊。 在您開啟 IntelliTrace 記錄檔之後，此資訊可協助 Visual Studio 找到相符的原始檔和符號，以檢閱記錄的事件。
+##  <a name="SetUpBuild"></a>步驟 1：在發行時包含組建資訊
+ 設定建置流程以建立 Web 專案的建置資訊清單 (*BuildInfo.config* 檔案)，並在發行時包含此資訊清單。 此資訊清單包含有關專案、原始檔控制及用於建立特定組建之建置系統的資訊。 在您開啟 IntelliTrace 記錄檔之後，此資訊可協助 Visual Studio 找到相符的原始檔和符號，以檢閱記錄的事件。
 
-###  <a name="AutomatedBuild"></a> 建立使用 Team Foundation Server 的自動化建置的組建資訊清單
+###  <a name="AutomatedBuild"></a> 建立建置資訊清單，以使用 Team Foundation Server 進行自動化組建
 
  不論使用 Team Foundation 版本控制或 Git，請遵循下列步驟。
 
@@ -70,13 +68,13 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
 4.  加入這個 MSBuild 引數可以將 TFS 和符號位置加入建置資訊清單檔案中：
 
-     **/p:IncludeServerNameInBuildInfo = true**
+     **/p:IncludeServerNameInBuildInfo=True**
 
      只要能夠存取您的 Web 伺服器，任何人都可以在建置資訊清單中看到這些位置。 確定來源伺服器是安全的。
 
 5.  如果您使用自訂範本，請加入這個 MSBuild 引數以指定儲存符號檔案的位置：
 
-     **/p: buildsymbolstorepath =**\<*符號的路徑*>
+     **/p:BuildSymbolStorePath=**\<符號的路徑>
 
      ![包含組建伺服器資訊在組建定義 TFS 2013](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")
 
@@ -105,21 +103,21 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
 3.  將這些 MSBuild 引數新增至您組建管線中：
 
-    -   **/p:VisualStudioVersion = 12.0**
+    -   **/p:VisualStudioVersion=12.0**
 
-    -   **/p:MSBuildAssemblyVersion = 12.0**
+    -   **/p:MSBuildAssemblyVersion=12.0**
 
     -   **/tv:12.0**
 
-    -   **/p:IncludeServerNameInBuildInfo = true**
+    -   **/p:IncludeServerNameInBuildInfo=True**
 
-    -   **/p: buildsymbolstorepath =**\<*符號的路徑*>
+    -   **/p:BuildSymbolStorePath=**\<符號的路徑>
 
 4.  執行新組建。
 
     移至[步驟 2： 您的應用程式發行](#DeployRelease)
 
-###  <a name="ManualBuild"></a> 建立手動組建使用 Visual Studio 的建置資訊清單
+###  <a name="ManualBuild"></a> 建立建置資訊清單，以使用 Visual Studio 進行手動組建
  遵循下列步驟自動建立專案的建置資訊清單 (BuildInfo.config 檔案)，並將檔案放在專案的輸出資料夾中。 此檔案在輸出資料夾中會顯示為 "*ProjectName*.BuildInfo.config"，但在發行 App 之後，部署資料夾中的相同檔案會重新命名為 "BuildInfo.config"。
 
 1.  在 [方案總管] 中上傳您的 Web 專案。
@@ -146,16 +144,16 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
     移至[步驟 2： 您的應用程式發行](#DeployRelease)
 
-###  <a name="MSBuild"></a> 建立建置資訊清單中的，使用 MSBuild.exe 手動組建
+###  <a name="MSBuild"></a> 建立建置資訊清單，以使用 MSBuild.exe 進行手動組建
  當您執行組建時，會加入這些組建引數：
 
- **/p:GenerateBuildInfoConfigFile = true**
+ **/p:GenerateBuildInfoConfigFile=True**
 
- **/p:IncludeServerNameInBuildInfo = true**
+ **/p:IncludeServerNameInBuildInfo=True**
 
- **/p: buildsymbolstorepath =**\<*符號的路徑*>
+ **/p:BuildSymbolStorePath=**\<符號的路徑>
 
-##  <a name="DeployRelease"></a> 步驟 2： 發行您的應用程式
+##  <a name="DeployRelease"></a>步驟 2：發行您的應用程式
  如果使用在建置流程中建立的 [Web.Deploy 套件](https://msdn.microsoft.com/library/dd394698.aspx) 來部署 App，建置資訊清單的名稱會從 "*ProjectName*.BuildInfo.config" 自動重新命名為 "BuildInfo.config"，並且會放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。
 
  如果使用其他方法來部署 App，請確定將建置資訊清單的名稱從 "*ProjectName*.BuildInfo.config" 重新命名為 "BuildInfo.config"，並將其放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。
@@ -163,14 +161,14 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 ## <a name="step-3-monitor-your-app"></a>步驟 3：監視 App
  在 Web 伺服器上設定應用程式效能監視功能，以便監視 App 是否發生問題、記錄診斷事件，以及將這些事件儲存至 IntelliTrace 記錄檔。 請參閱 [監視發行是否發生部署問題](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
-##  <a name="InvestigateEvents"></a> 步驟 4： 找出問題
+##  <a name="InvestigateEvents"></a>步驟 4：找到問題
  您需要在開發電腦或其他電腦上安裝 Visual Studio Enterprise，才能檢閱記錄的事件並使用 IntelliTrace 偵錯程式碼。 您也可以使用 CodeLens、偵錯工具對應和 Code Map 等工具協助診斷問題。
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>開啟 IntelliTrace 記錄檔並比對方案
 
 1.  在 Visual Studio Enterprise 2013 中開啟 IntelliTrace 記錄檔 (.iTrace 檔案)。 如果同一部電腦上也安裝了 Visual Studio Enterprise，則只需按兩下該檔案。
 
-2.  如果專案不是在方案中建置的，請選擇 [開啟方案]  ，讓 Visual Studio 自動開啟相符的方案或專案。 [問： IntelliTrace 記錄檔缺少我部署的應用程式的相關資訊。為什麼會發生這種情況？該怎麼做？](#InvalidConfigFile)
+2.  如果專案不是在方案中建置的，請選擇 [開啟方案]  ，讓 Visual Studio 自動開啟相符的方案或專案。 [問：IntelliTrace 記錄檔缺少我所部署應用程式的相關資訊。為什麼會發生這種情況？該怎麼做？](#InvalidConfigFile)
 
      在開啟相符的方案或專案時，Visual Studio 會自動擱置所有暫止的變更。 如需關於這個擱置集的詳細資料，請查看 [輸出]  視窗或 [Team Explorer] 。
 
@@ -188,9 +186,9 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
      若您要建立的工作區具有特定對應或其名稱並非您的電腦名稱，請選擇 [管理] 。
 
-     [問： 為什麼 Visual Studio 會顯示我選取的工作區不適合？](#IneligibleWorkspace)
+     [問：Visual Studio 為何會顯示我選取的工作區不適合？](#IneligibleWorkspace)
 
-     [問： 為什麼無法繼續我選擇 team 集合或另一個集合之前？](#ChooseTeamProject)
+     [問：在我選擇 Team 集合或另一個集合之前，為何無法繼續執行？](#ChooseTeamProject)
 
 ### <a name="diagnose-a-performance-problem"></a>診斷效能問題
 
@@ -216,9 +214,9 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
      現在您可以檢閱其他記錄值、呼叫堆疊、逐步執行程式碼，或使用 [IntelliTrace]  視窗 [在「時間」中向後或向前移動至其他方法](../debugger/intellitrace.md) (這些方法是在此效能事件期間呼叫的)。
 
-    - [什麼是所有其他事件和 IntelliTrace 記錄檔中的資訊？](../debugger/using-saved-intellitrace-data.md)
-    - [還有什麼可以如何處理？](#WhatElse)
-    - [想要的效能事件的詳細資訊？](https://blogs.msdn.microsoft.com/devops/2013/09/20/performance-details-in-intellitrace/)
+    - [IntelliTrace 記錄檔中的其他所有事件和資訊為何？](../debugger/using-saved-intellitrace-data.md)
+    - [我還能如何處理？](#WhatElse)
+    - [需要更多關於效能事件的詳細資訊？](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
 
 ### <a name="diagnose-an-exception"></a>診斷例外狀況
 
@@ -234,28 +232,28 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
      現在您可以檢閱其他記錄值、呼叫堆疊，或使用 [IntelliTrace]  視窗 [在「時間」中向後或向前移動至其他記錄的事件](../debugger/intellitrace.md)、相關程式碼以及在這些時間點上記錄的值。
 
-     [什麼是所有其他事件和 IntelliTrace 記錄檔中的資訊？](../debugger/using-saved-intellitrace-data.md)
+     [IntelliTrace 記錄檔中的其他所有事件和資訊為何？](../debugger/using-saved-intellitrace-data.md)
 
-###  <a name="WhatElse"></a> 還有什麼可以如何處理？
+###  <a name="WhatElse"></a> 我還能如何處理？
 
--   [取得有關這個程式碼的詳細資訊](../ide/find-code-changes-and-other-history-with-codelens.md)。 若要尋找此程式碼的參考，其變更歷程記錄、 相關的 bug、 工作項目、 程式碼檢閱或單元測試-而不需要離開編輯器 all-會使用 CodeLens 指標在編輯器中。
+-   [取得有關這個程式碼的詳細資訊](../ide/find-code-changes-and-other-history-with-codelens.md)。 尋找此程式碼的參考、其變更記錄、相關的 Bug、工作項目、程式碼檢閱或單元測試，只要使用編輯器中的 CodeLens 指標，就不需要離開編輯器。
 
      ![CodeLens&#45;檢視參考此程式碼](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
 
      ![CodeLens&#45;變更此程式碼的歷程記錄檢視](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")
 
--   [偵錯時，請對應程式碼中的位置。](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) 若要以視覺化方式追蹤在偵錯工作階段期間呼叫的方法，請對應呼叫堆疊。
+-   [在偵錯時對應程式碼中的位置。](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) 若要以視覺化方式追蹤在偵錯工作階段期間呼叫的方法，請對應呼叫堆疊。
 
      ![偵錯時對應呼叫堆疊](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")
 
 ###  <a name="FAQ"></a> 問與答
 
-####  <a name="WhyInclude"></a> 問： 為什麼包含我的專案、 原始檔控制、 組建和與我的發行符號的相關資訊嗎？
+####  <a name="WhyInclude"></a> 問：為什麼要在發行時包含我的專案、原始檔控制、組建和系統相關資訊？
  Visual Studio 使用這項資訊尋找與您嘗試偵錯之發行相符的方案和原始檔。 在您開啟 IntelliTrace 記錄檔並選取要開始偵錯的事件之後，Visual Studio 會使用符號來尋找並顯示發生事件的程式碼。 您可以接著檢視記錄的值，並前後移動瀏覽執行的程式碼。
 
- 如果您使用 TFS 且此資訊不在建置資訊清單 （BuildInfo.config 檔案）、 Visual Studio 會尋找相符的來源，在您目前連接的 TFS 上的符號。 如果 Visual Studio 找不到正確的 TFS 或相符的原始檔，系統會提示您選擇其他 TFS。
+ 如果使用 TFS 且此資訊不在組建資訊清單 (BuildInfo.config 檔案) 中，Visual Studio 會在您目前連線的 TFS 上尋找相符的原始檔和符號。 如果 Visual Studio 找不到正確的 TFS 或相符的原始檔，系統會提示您選擇其他 TFS。
 
-####  <a name="InvalidConfigFile"></a> 問： IntelliTrace 記錄檔缺少我部署的應用程式的相關資訊。 為什麼會發生這種情況？ 該怎麼做？
+####  <a name="InvalidConfigFile"></a> 問：IntelliTrace 記錄檔缺少我所部署應用程式的相關資訊。 為什麼會發生這種情況？ 該怎麼做？
  當您從開發電腦部署或部署期間未連接至 TFS 時，即會發生此情況。
 
 1.  移至專案的部署資料夾。
@@ -266,7 +264,7 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
 - **ProjectName**
 
-   Visual Studio 中的專案名稱。 例如: 
+   Visual Studio 中的專案名稱。 例如：
 
   ```xml
   <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
@@ -284,7 +282,7 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
     - **ProjectVersionSpec**：您的專案版本
 
-      例如: 
+      例如：
 
     ```xml
     <SourceControl type="TFS">
@@ -306,7 +304,7 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
     - **CommitId**：您的認可 ID
 
-      例如: 
+      例如：
 
     ```xml
     <SourceControl type="Git">
@@ -332,7 +330,7 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
   - **BuiltSolution**：Visual Studio 用於尋找及開啟相符方案之方案檔案的路徑。 這是 **SolutionPath** MsBuild 屬性的內容。
 
-    例如: 
+    例如：
 
   - **TFS**
 
@@ -359,12 +357,12 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
     </Build>
     ```
 
-####  <a name="IneligibleWorkspace"></a> 問： 為什麼 Visual Studio 會顯示我選取的工作區不適合？
+####  <a name="IneligibleWorkspace"></a> 問：Visual Studio 為何會顯示我選取的工作區不適合？
  **答：** 所選取的工作區在原始檔控制資料夾和本機資料夾之間沒有任何對應。 若要建立此工作區的對應，請選擇 [管理] 。 否則，請選擇已對應的工作區或建立新的工作區。
 
  ![從沒有對應的工作區的原始檔控制開啟](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
-####  <a name="ChooseTeamProject"></a> 問： 為什麼無法繼續我選擇 team 集合或另一個集合之前？
+####  <a name="ChooseTeamProject"></a> 問：在我選擇 Team 集合或另一個集合之前，為何無法繼續執行？
  **答：** 下列任一原因都有可能造成此結果：
 
 -   Visual Studio 未連接到 TFS。
@@ -373,18 +371,18 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
 -   Visual Studio 在您目前的 Team 集合中找不到方案或專案。
 
-     當建置資訊清單檔案 (\<*ProjectName*>.Buildinfo.config) 未指定 Visual Studio 可以在何處找到相符的來源，Visual Studio 會使用您目前連接的 TFS 尋找相符的方案或專案。 如果目前的 Team 集合沒有相符的來源，Visual Studio 會提示您連接至另一個 Team 集合。
+     當建置資訊清單檔案 (\<專案名稱>.BuildInfo.config) 未指定 Visual Studio 可以在何處找到相符的原始檔時，Visual Studio 會使用您目前連接的 TFS 尋找相符的解決方案或專案。 如果目前的 Team 集合沒有相符的來源，Visual Studio 會提示您連接至另一個 Team 集合。
 
--   Visual Studio 中找不到方案或專案在建置資訊清單檔案指定的集合 (\<*ProjectName*>。BuildInfo.config)。
+-   Visual Studio 在建置資訊清單檔案 (\<專案名稱>.BuildInfo.config) 指定的集合中找不到解決方案或專案。
 
      相符的來源可能已不在指定的 TFS 上，甚至可能已經不存在，原因可能是您已將該來源移轉至新的 TFS。 如果指定的 TFS 不存在，Visual Studio 可能會在約一分鐘之後逾時，然後提示您連接到另一個集合。 若要繼續，請連接至正確的 TFS 伺服器。
 
      ![從原始檔控制開啟&#45;移轉](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
-####  <a name="WhatWorkspace"></a> 問： 什麼是工作區？
+####  <a name="WhatWorkspace"></a>問：什麼是工作區？
  **答：** 您的 [工作區用於儲存來源的複本](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) ，您可以在簽入網路之前個別開發及測試該複本。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。
 
-####  <a name="UntrustedSymbols"></a> 問： 為什麼取得此訊息不受信任的符號相關？
+####  <a name="UntrustedSymbols"></a> 問：我為什麼收到有關未受信任符號的訊息？
  ![使用不受信任的符號路徑進行偵錯嗎？](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
- **答：** 時，會出現此訊息在建置資訊清單檔案中的符號路徑 (\<*ProjectName*>。信任的符號路徑清單中，不包含 BuildInfo.config)。 您可以將路徑加入至偵錯工具選項中的符號路徑清單。
+ **答：** 可信任的符號路徑清單中未包含建置資訊清單檔案 (\<專案名稱>.BuildInfo.config) 內的符號路徑時，就會出現此訊息。 您可以將路徑加入至偵錯工具選項中的符號路徑清單。

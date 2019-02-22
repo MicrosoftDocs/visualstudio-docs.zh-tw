@@ -9,14 +9,13 @@ helpviewer_keywords:
 ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 0e610e29c623ecc7e67dcaa87ac1d7ce5417fb5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 8390808a8174d0abb2dec96beddb473a4fbc0e0b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956201"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932699"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>HOW TO：使用負載測試編輯器新增自訂計數器集合
 

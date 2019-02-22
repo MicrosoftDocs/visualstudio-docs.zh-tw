@@ -1,25 +1,23 @@
 ---
-title: 如何： 顯示執行緒屬性 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：顯示執行緒屬性 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - thread properties
 ms.assetid: f0e64c0e-cdb3-4ad4-9723-09934166f3a2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc5b8d6dcf3cb6dc2a78bee626633103d5b1b18c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9216c3f949ed5a31a0147f54fd8e5dfe8d8215db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904852"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018419"
 ---
-# <a name="how-to-display-thread-properties"></a>如何：顯示執行緒屬性
+# <a name="how-to-display-thread-properties"></a>HOW TO：顯示執行緒屬性
 若要深入了解中所列的執行緒[執行緒檢視](../debugger/threads-view.md)，使用[執行緒屬性對話方塊](../debugger/thread-properties-dialog-box.md)。  
   
 ### <a name="to-open-a-thread-properties-dialog-box"></a>若要開啟的執行緒屬性對話方塊  

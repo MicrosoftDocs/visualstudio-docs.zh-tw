@@ -1,7 +1,6 @@
 ---
 title: 安裝 Roslyn 分析器
 ms.date: 08/03/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d828fbf2bce435c067b6bc1cc66ce379f3304988
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de4818a57dc09825e6f41a635ea777a9e3f06e2a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929454"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910507"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>安裝.NET Compiler Platform 分析器
 
@@ -31,7 +30,7 @@ Visual Studio 2017 包含一組核心.NET 編譯器平台 (*Roslyn*) 分析器�
 
    > [!NOTE]
    > 每個分析器套件的 www.nuget.org 頁面會顯示貼到命令**Package Manager Console**。 甚至還有一些好用的按鈕，以將文字複製到剪貼簿。
-   > 
+   >
    > ![顯示套件管理員主控台命令的 NuGet.org 頁面](media/nuget-install-command.png)
 
    分析器組件已安裝，並會出現在**方案總管**下方**參考** > **分析器**。

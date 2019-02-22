@@ -1,27 +1,22 @@
 ---
 title: 分析工具 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnosticshub.overview
 ms.assetid: 0fb6cd5d-e16a-4526-84a5-19e63c625bc5
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 380e98a8cd52fe77486dae245eee910a65a41057
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782098"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54780840"
 ---
 # <a name="profiling-tools"></a>程式碼剖析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +79,7 @@ ms.locfileid: "51782098"
  [IntelliTrace](../debugger/intellitrace.md) 可讓您記錄特定事件、在偵錯工具事件和函式呼叫期間檢查 [區域變數] 視窗中的資料，以及針對難以重現的錯誤進行偵錯。  IntelliTrace 主要是偵錯工具，但它也提供可用於效能調查的資訊。 您只能在 Visual Studio 企業版使用此工具，並且用於桌面應用程式、Windows 通用應用程式和 ASP.NET C# 應用程式。 您可以在偵錯時，在 [診斷工具]  視窗找到 IntelliTrace ([偵錯] / [視窗] / [顯示診斷工具])。  
   
 ## <a name="profiling-in-production"></a>在生產環境中進行程式碼剖析  
- 在生產環境中進行程式碼剖析的建議的方法是從 [命令列使用 vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) 收集 CPU 的設定檔來進行程式碼剖析。 如需 Azure App Service 中的遠端程式碼剖析支援，您可以透過 [伺服器總管或 Kudu 入口網站](https://azure.microsoft.com/en-us/blog/remote-profiling-support-in-azure-app-service/)進行程式碼剖析。  
+ 在生產環境中進行程式碼剖析的建議的方法是從 [命令列使用 vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) 收集 CPU 的設定檔來進行程式碼剖析。 如需 Azure App Service 中的遠端程式碼剖析支援，您可以透過 [伺服器總管或 Kudu 入口網站](https://azure.microsoft.com/blog/remote-profiling-support-in-azure-app-service/)進行程式碼剖析。  
   
 ## <a name="which-tool-should-i-use"></a>應該使用哪一種工具？  
  以下資料表列出 Visual Studio 提供的各種工具和您可以用它們處理的不同專案類型︰  
@@ -101,8 +96,5 @@ ms.locfileid: "51782098"
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|否|對 HTML 為是，對 XAML 為否|否|  
 |[JavaScript 記憶體](../profiling/javascript-memory.md)|否|對 HTML 為是，對 XAML 為否|否|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-
-

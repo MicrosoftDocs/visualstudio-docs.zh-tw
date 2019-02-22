@@ -12,17 +12,16 @@ helpviewer_keywords:
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f99f18af416ead93c9327afcda6de0196da81566
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52848599e05f5b7e5050e408f98d9ff4d670ca72
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833853"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911867"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 
@@ -328,7 +327,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 此規則不接受 **true** 或 **false** 值，但接受下列資料表中的值：
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
 | always | 偏好指定存取範圍修飾詞 |
 | for\_non\_interface_members | 偏好宣告存取範圍修飾詞，但公用介面成員除外。 這是與**一律**相同，且已新增以便未來 C# 新增預設介面方法時校訂之用。 |
@@ -993,7 +992,7 @@ csharp_style_var_elsewhere = true:suggestion
 
 此規則接受下表中的值：
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
 | true | 偏好針對方法使用運算式主體的成員 |
 | when_on_single_line | 當所有方法都在同一行時，偏好針對方法使用運算式主體的成員 |
@@ -1013,7 +1012,7 @@ public int GetAge() { return this.Age; }
 
 此規則接受下表中的值：
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
 | true | 偏好針對建構函式使用運算式主體的成員 |
 | when_on_single_line | 當所有建構函式都在同一行時，偏好針對建構函式使用運算式主體的成員 |
@@ -1033,7 +1032,7 @@ public Customer(int age) { Age = age; }
 
 此規則接受下表中的值：
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
 | true | 偏好針對運算子使用運算式主體的成員 |
 | when_on_single_line | 當所有運算子都在同一行時，偏好針對運算子使用運算式主體的成員 |
@@ -1055,7 +1054,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 此規則接受下表中的值：
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
 | true | 偏好針對屬性使用運算式主體的成員 |
 | when_on_single_line | 當所有屬性都在同一行時，偏好針對屬性使用運算式主體的成員 |
@@ -1075,7 +1074,7 @@ public int Age { get { return _age; }}
 
 此規則接受下表中的值：
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
 | true | 偏好針對索引子使用運算式主體的成員 |
 | when_on_single_line | 當所有索引子都在同一行時，偏好針對索引子使用運算式主體的成員 |
@@ -1095,7 +1094,7 @@ public T this[int i] { get { return _values[i]; } }
 
 此規則接受下表中的值：
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
 | true | 偏好針對存取子使用運算式主體的成員 |
 | when_on_single_line | 當所有存取子都在同一行時，偏好針對存取子使用運算式主體的成員 |
@@ -1390,6 +1389,7 @@ csharp_prefer_braces = true:none
 - .NET 格式化設定
     - [組合管理 Using](#usings)
         - dotnet_sort_system_directives_first
+        - dotnet_separate_import_directive_groups
 - C# 格式化設定
     - [新行字元選項](#newline)
         - csharp_new_line_before_open_brace
@@ -1432,6 +1432,7 @@ csharp_prefer_braces = true:none
 | 規則名稱 | 適用的語言 | Visual Studio 預設值 | Visual Studio 2017 版本 |
 | ----------- | -------------------- | ----------------------| ---------------- |
 | dotnet_sort_system_directives_first | C# 和 Visual Basic | true | 15.3 |
+| dotnet_separate_import_directive_groups | C# 和 Visual Basic | False | 15.5 |
 
 **dotnet\_sort\_system\_directives_first**
 
@@ -1460,6 +1461,34 @@ Editorconfig 檔案範例︰
 dotnet_sort_system_directives_first = true
 ```
 
+**dotnet\_separate\_import\_directive\_groups**
+
+- 當此規則設定為 **true** 時，在 using 指示詞群組之間放置空白行。
+- 當此規則設定為 **false** 時，不要在 using 指示詞群組之間放置空白行。
+
+程式碼範例：
+
+```csharp
+// dotnet_separate_import_directive_groups = true
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+using Octokit;
+
+// dotnet_separate_import_directive_groups = false
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Octokit;
+```
+
+Editorconfig 檔案範例︰
+
+```EditorConfig
+# .NET formatting settings:
+[*.{cs,vb}]
+dotnet_separate_import_directive_groups = true
+```
+
 ### <a name="c-formatting-settings"></a>C# 格式化設定
 
 本節中的格式化規則只適用於 C# 程式碼。
@@ -1484,7 +1513,7 @@ dotnet_sort_system_directives_first = true
 
 此規則是有關左大括弧 `{` 應該和前面的程式碼放在同一行還是放在新行中。 此規則不指定 **true** 或 **false**。 請改為指定 [全部]、[無] 或一或多個程式碼項目，例如**方法**或**屬性**，來定義應於何時套用此規則。 下表顯示允許變數的完整清單：
 
-| 值 | 說明
+| 值 | 描述
 | ------------- |:-------------|
 | accessors、anonymous_methods、anonymous_types、control_blocks、events、indexers、lambdas、local_functions、methods、object_collection_array_initializers、properties、types。<br>(請以 ',' 分隔多種類型)。 | 指定的程式碼項目 (也稱為 "Allman" 樣式) 在新行需有括弧 |
 | all | 針對所有運算式要求大括弧位於新行上 ("Allman" 樣式) |
@@ -1749,7 +1778,7 @@ default:
 
 此規則不接受 **true** 或 **false** 值，但接受下列資料表中的值：
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
 | flush_left | 標籤放在最左邊的資料行 |
 | one_less_than_current | 將標籤置於比目前內容的縮排少一個單位的位置 |
@@ -1892,7 +1921,7 @@ MyMethod(argument);
 
 此規則接受下表中的一或多個值：
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:------------|
 | control_flow_statements | 在控制流程陳述式的括號之間加入空格 |
 | 運算式 | 在運算式的括號之間加入空格 |
@@ -1979,7 +2008,7 @@ class C :I
 
 此規則接受下表中的一個值：
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:------------|
 | before_and_after | 在二元運算子前後插入空格 |
 | none | 移除二元運算子前後的空格 |
@@ -2193,6 +2222,7 @@ charset = utf-8-bom
 [*.{cs,vb}]
 # Organize usings
 dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = false
 
 # this. preferences
 dotnet_style_qualification_for_field = false:none

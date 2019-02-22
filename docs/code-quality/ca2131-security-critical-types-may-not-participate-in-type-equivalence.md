@@ -1,22 +1,21 @@
 ---
 title: CA2131:安全性關鍵類型可能未參與類型等價
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2131
 ms.assetid: 4170f3b1-6086-430d-8fba-837d5538c573
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f91f5be2aad41006dacab059db27e9609a4f84f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b5cc0920e56b9fc27ef120d3328f2ba528b54dd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913025"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947690"
 ---
 # <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131:安全性關鍵類型可能未參與類型等價
 

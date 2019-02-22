@@ -1,7 +1,6 @@
 ---
 title: CA1303:不要將常值當作已當地語系化的參數傳遞
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Do not pass literals as localized parameters
@@ -13,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 904d284e-76d0-4b8f-a4df-0094de8d7aac
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ada56147ae384303b0d2fed736f41c9e6c11ccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5bdae3d0ee17624a2b168e5ce944ba10ab37fc8a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927593"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907694"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303:不要將常值當作已當地語系化的參數傳遞
 

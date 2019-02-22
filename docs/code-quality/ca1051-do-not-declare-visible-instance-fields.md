@@ -1,7 +1,6 @@
 ---
 title: CA1051:不要宣告可見的執行個體欄位
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1051
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2805376c-824c-462c-81d1-c51aaf7cabe7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b85fe5458dc4395ab7f1e119c3da90b685c96410
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd4783f6327061da0ce522cc02082289cdee3d39
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944466"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938089"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051:不要宣告可見的執行個體欄位
 

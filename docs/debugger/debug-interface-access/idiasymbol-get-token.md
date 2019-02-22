@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_token |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7ee7a9be-a0d8-48e4-9fef-d37b3d6ae4ef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de9996e9bbe482060af8f10ed232230c4068358c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8800269f47965dacd7a6683c34a8ecd121aa270b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887536"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998829"
 ---
 # <a name="idiasymbolgettoken"></a>IDiaSymbol::get_token
 擷取 managed 函式或變數的中繼資料語彙基元。  
@@ -27,7 +25,7 @@ ms.locfileid: "49887536"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_token (   
+HRESULT get_token (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,5 +40,5 @@ HRESULT get_token (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示屬性不是適用於符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

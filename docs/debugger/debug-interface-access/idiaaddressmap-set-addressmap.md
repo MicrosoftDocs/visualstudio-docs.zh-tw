@@ -1,8 +1,6 @@
 ---
-title: 'Idiaaddressmap:: Set_addressmap |Microsoft Docs'
-ms.custom: ''
+title: IDiaAddressMap::set_addressMap | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 81e82073-089b-43d5-af39-49d7a4907c7a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d097ccbe5c893c603aaa2a018f8fcd422f15ac2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d3150cc591c77d1ab3abc31ed9b07062d094d3d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834513"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973092"
 ---
 # <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
 提供支援映像的版面配置轉譯對應的位址。  
@@ -27,7 +25,7 @@ ms.locfileid: "49834513"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT set_addressMap (   
+HRESULT set_addressMap (   
    DWORD                     cbData,  
    struct DiaAddressMapEntry data[],  
    BOOL                      imagetoSymbols  
@@ -50,8 +48,8 @@ HRESULT set_addressMap (
 ## <a name="remarks"></a>備註  
  通常，DIA 會將位址轉譯對應擷取程式資料庫 (.pdb) 檔案中。 如果這些值遺失，則[idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)方法呼叫兩次，一次使用`imagetoSymbols`參數設定為`TRUE`並一次使用`imagetoSymbols`參數設為`FALSE`。 無法使用啟用位址對應翻譯[idiaaddressmap:: Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)方法，因此除非兩個轉譯對應所提供。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [DiaAddressMapEntry 結構](../../debugger/debug-interface-access/diaaddressmapentry.md)   
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [Idiaaddressmap:: Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)   
+ [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)   
  [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)

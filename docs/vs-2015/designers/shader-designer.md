@@ -1,14 +1,9 @@
 ---
 title: 著色器設計工具 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
@@ -16,13 +11,13 @@ ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d39f9da4d421591f6a45b4e3dcdccf73d3e1798c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942006"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805457"
 ---
 # <a name="shader-designer"></a>著色器設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -193,6 +188,3 @@ ms.locfileid: "49942006"
 |[使用 3D 資產來打造遊戲和應用程式](../designers/working-with-3-d-assets-for-games-and-apps.md)|提供 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 工具的概觀，您可用來搭配紋理及影像、3D 模型和著色器效果使用。|  
 |[影像編輯器](../designers/image-editor.md)|描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 影像編輯器來處理紋理和影像。|  
 |[模型編輯器](../designers/model-editor.md)|說明如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型編輯器來使用 3D 模型。|
-
-
-

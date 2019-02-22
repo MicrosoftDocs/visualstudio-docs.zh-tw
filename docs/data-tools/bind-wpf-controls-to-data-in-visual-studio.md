@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4fa8ddf42cad6ad613846ceff2b49739b7dc1c18
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 00cc931a75dee9d3762e94ca522e4d060584840b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305334"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939095"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>將 WPF 控制項繫結至 Visual Studio 中的資料
 
@@ -54,10 +52,10 @@ ms.locfileid: "52305334"
 
 | 資料來源 | 產生可將控制項繫結至資料來源的 XAML | 產生可將資料填入資料來源的程式碼 |
 | - | - | - |
-| 資料集 | [是] | [是] |
-| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | [是] | [是] |
-| 服務 | [是] | 否 |
-| Object | [是] | 否 |
+| 資料集 | 是 | [是] |
+| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | [是] | 是 |
+| 服務 | 是 | 否 |
+| Object | 是 | 否 |
 
 ### <a name="datasets"></a>資料集
 
@@ -100,7 +98,7 @@ Visual Studio 會產生執行下列工作的 XAML：
 當您將物件或屬性從**資料來源**視窗，以設計工具中，Visual Studio 會產生[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]建立資料繫結控制項 （或將現有控制項繫結至物件或屬性）。 不過，Visual Studio 不會產生程式碼，以填入資料的物件。 您必須自行撰寫此程式碼。
 
 > [!NOTE]
-> 自訂類別必須是公用的和，根據預設，具有不含參數的建構函式。 它們 can'tbe 巢狀類別，其語法中有 「 點 」。 如需詳細資訊，請參閱 < [XAML 的 WPF 和自訂類別](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf)。
+> 自訂類別必須是公用的和，根據預設，具有不含參數的建構函式。 它們不能有 「 點 」，其語法中的巢狀的類別。 如需詳細資訊，請參閱 < [XAML 的 WPF 和自訂類別](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf)。
 
 Visual Studio 會產生[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]，會進行下列作業：
 

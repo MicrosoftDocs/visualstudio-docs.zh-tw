@@ -1,14 +1,9 @@
 ---
 title: Replace 命令 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.replace
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83281a656d553dfa677d7ae25bf043fc0b588978
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f230a2270274f85fd799f86caa278bb98cb5fd46
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283201"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54772231"
 ---
 # <a name="replace-command"></a>取代命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,10 +37,10 @@ Edit.Replace findwhat replacewith [/all] [/case]
   
 ## <a name="arguments"></a>引數  
  `findwhat`  
- 必要。 要比對的文字。  
+ 必要項。 要比對的文字。  
   
  `replacewith`  
- 必要。 要用來取代相符文字的文字。  
+ 必要項。 要用來取代相符文字的文字。  
   
 ## <a name="switches"></a>參數  
  /all 或 /a  
@@ -94,12 +89,9 @@ Edit.Replace findwhat replacewith [/all] [/case]
 >Edit.Replace btnSend btnSubmit /open  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [尋找和取代文字](../../ide/finding-and-replacing-text.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

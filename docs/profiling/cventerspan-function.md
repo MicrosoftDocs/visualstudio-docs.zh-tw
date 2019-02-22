@@ -1,8 +1,6 @@
 ---
 title: CvEnterSpan 函式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvEnterSpanVA
@@ -23,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 91689e9c-6733-44b9-b36a-8b9b2eef7d1d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4084ce78d1acaf5a34f95ea88046bf0860efc9ca
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c7135ce785665bcaf01b209ebc8e9ec094db55f5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750112"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922830"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan 函式
 標記新範圍的開頭。  
@@ -126,7 +124,7 @@ HRESULT CvEnterSpanExVA(
  當訊息成功寫入時傳回 S_OK。 發生任何錯誤時傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
   
 ## <a name="requirements"></a>需求  
- **標頭︰***cvmarkers.h*  
+ **標頭︰** *cvmarkers.h*  
   
  **Unicode：** CvEnterSpanW、CvEnterSpanVW、CvEnterSpanExW、CvEnterSpanExVW  
   

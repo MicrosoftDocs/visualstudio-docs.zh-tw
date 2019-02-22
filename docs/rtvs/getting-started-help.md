@@ -2,19 +2,18 @@
 title: R 說明視窗
 description: R 說明已直接整合至 Visual Studio 的互動式視窗。 方塊。
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: cd8be6e0b89ae0e110e16bcad9975108fa69bd5b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af6c6156b1d88c1d015f7700fc7bed061bbe9a76
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931917"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957740"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Visual Studio R 工具中的說明
 

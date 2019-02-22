@@ -1,7 +1,6 @@
 ---
 title: CA1020:避免在命名空間中包含過少的類型
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1020
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9cb272f6-a3ff-45af-b35d-70dea620b074
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d7d6b8e8c215fcbd045ac51cf21428aa892651
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 396208b9594e46aa179c3eebddc5a552ce0fca3c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924718"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916657"
 ---
 # <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020:避免在命名空間中包含過少的類型
 

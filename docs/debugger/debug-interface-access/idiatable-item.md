@@ -1,8 +1,6 @@
 ---
 title: 'Idiatable:: Item |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eae11b26-4807-400c-be25-e85bbc0c6b20
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 476e4d01ed6e092936fc2d9bc7b8e264215e21dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9bf9ad425b703cbaa15378200260061304223607
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950052"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040173"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 擷取指定的項目資料表中的參考。  
@@ -27,7 +25,7 @@ ms.locfileid: "49950052"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD      index,  
    IUnknown** element  
 );  
@@ -48,8 +46,8 @@ HRESULT Item (
   
  它是更常見的方法來呼叫`QueryInterface`方法中的[IDiaTable](../../debugger/debug-interface-access/idiatable.md)適當的列舉程式介面的介面，並使用列舉值的特定方法來存取資料表內容。 請參閱[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)介面的範例。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [Idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)   
+ [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

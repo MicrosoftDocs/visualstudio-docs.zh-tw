@@ -1,8 +1,6 @@
 ---
-title: 'Idiaaddressmap:: Put_addressmapenabled |Microsoft Docs'
-ms.custom: ''
+title: IDiaAddressMap::put_addressMapEnabled | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0f205337-4e59-4383-8059-7b1d207d6dcd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f139e6d034fc3b738e345f385fbb8e8ad2150da4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a53d66879155ae1ce2cd831c029bc5776a7dd863
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915382"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999206"
 ---
 # <a name="idiaaddressmapputaddressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
 指定對應位址是否應該用來將符號位址轉譯。  
@@ -27,7 +25,7 @@ ms.locfileid: "49915382"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT put_addressMapEnabled (   
+HRESULT put_addressMapEnabled (   
    BOOL NewVal  
 );  
 ```  
@@ -46,7 +44,7 @@ HRESULT put_addressMapEnabled (
   
  正在啟用的地址對應的目前狀態可以藉由呼叫擷取[idiaaddressmap:: Get_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [Idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
+ [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
  [IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)

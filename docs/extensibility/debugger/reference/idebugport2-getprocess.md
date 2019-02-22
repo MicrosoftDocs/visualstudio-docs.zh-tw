@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetProcess |Microsoft Docs
+title: IDebugPort2::GetProcess | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3e2431b0-0e19-450d-8e1d-d7c314c8f872
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e5d7ef517a08aaa3fc1cce91aac411061bf5f84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 68beeb8267116885a0e2a3026f5b0e36a65f7b9c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908627"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007434"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
 取得指定的連接埠上執行的處理序。  

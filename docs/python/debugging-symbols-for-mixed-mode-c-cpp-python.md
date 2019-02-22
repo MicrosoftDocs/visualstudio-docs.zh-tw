@@ -2,21 +2,19 @@
 title: Python/C++ 混和模式符號偵錯
 description: Visual Studio 如何針對完全混合模式的 C++ 和 Python 偵錯提供載入符號的功能。
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 62e3727b36e6ba3231ee12388e1be5bde40d080a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: de2d4832a1c45cbfd2b6f3893dd2b011151d9e48
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062686"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951338"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>安裝 Python 解譯器的偵錯符號
 
@@ -52,7 +50,7 @@ Visual Studio 會在需要符號時提示您，一般來說，這是指啟動混
 
 1. 選取 [工具] > [選項] 功能表，然後巡覽至 [偵錯] > [符號]。
 
-1. 選取工具列上的 [新增] 按鈕 (如下所述)，輸入您要展開下載符號之資料夾 (*python.pdb* 的位置，例如 *c:\python34\Symbols*，如下所示)，然後選取 [確定]。 
+1. 選取工具列上的 [新增] 按鈕 (如下所述)，輸入您要展開下載符號之資料夾 (*python.pdb* 的位置，例如 *c:\python34\Symbols*，如下所示)，然後選取 [確定]。
 
     ![混合模式偵錯工具符號選項](media/mixed-mode-debugging-symbols.png)
 
@@ -63,9 +61,9 @@ Visual Studio 會在需要符號時提示您，一般來說，這是指啟動混
 
 ## <a name="official-distributions"></a>官方發行版
 
-| Python 版本 | 下載 | 
-| --- | --- | 
-| 3.5 和更新版本 | 透過 Python 安裝程式來安裝符號。 | 
+| Python 版本 | 下載 |
+| --- | --- |
+| 3.5 和更新版本 | 透過 Python 安裝程式來安裝符號。 |
 | 3.4.4 | [32 位元](https://www.python.org/ftp/python/3.4.4/python-3.4.4-pdb.zip) - [64 位元](https://www.python.org/ftp/python/3.4.4/python-3.4.4.amd64-pdb.zip) |
 | 3.4.3 | [32 位元](https://www.python.org/ftp/python/3.4.3/python-3.4.3-pdb.zip) - [64 位元](https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64-pdb.zip) |
 | 3.4.2 | [32 位元](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) - [64 位元](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip) |

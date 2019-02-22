@@ -15,24 +15,23 @@ helpviewer_keywords:
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59c9c7d092ff5d080baebdc562bbd6b3da436c88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4fc4dd56b3746d58d96af5790dd7719bbd435b75
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838329"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854118"
 ---
 # <a name="csc-task"></a>Csc 工作
-包裝 csc.exe，並產生可執行檔 (.*exe* 檔案)、動態連結程式庫 (*.dll* 檔案) 或程式碼模組 (.netmodule 檔案)。 如需 *csc.exe* 的詳細資訊，請參閱 [C# 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)。  
+包裝 csc.exe，並產生可執行檔 (.*exe* 檔案)、動態連結程式庫 (*.dll* 檔案) 或程式碼模組 (.netmodule 檔案)。 如需 *csc.exe* 的詳細資訊，請參閱 [C# 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)。
 
-## <a name="parameters"></a>參數  
- 下表說明 `Csc` 工作的參數。  
+## <a name="parameters"></a>參數
+下表說明 `Csc` 工作的參數。
 
-
-| 參數 | 說明 |
+| 參數 | 描述 |
 |------------------------------| - |
 | `AdditionalLibPaths` | 選擇性的 `String[]` 參數。<br /><br /> 指定要搜尋參考的其他目錄。 如需詳細資訊，請參閱 [-lib (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option)。 |
 | `AddModules` | 選擇性的 `String` 參數。<br /><br /> 指定要成為組件一部分的一個或多個模組。 如需詳細資訊，請參閱 [-addmodule (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option)。 |
@@ -81,19 +80,19 @@ ms.locfileid: "53838329"
 | `Win32Manifest` | 選擇性的 `String` 參數。<br /><br /> 指定要包含的 Win32 資訊清單。 |
 | `Win32Resource` | 選擇性的 `String` 參數。<br /><br /> 將 Win32 資源檔 (*.res*) 插入輸出檔中。 如需詳細資訊，請參閱 [-win32res (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option)。 |
 
-## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 `Microsoft.Build.Tasks.ManagedCompiler` 類別中的參數，此類別繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別，而後者本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數的清單及其描述，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。  
+## <a name="remarks"></a>備註
+除了上述所列的參數，此項工作還會繼承 `Microsoft.Build.Tasks.ManagedCompiler` 類別中的參數，此類別繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別，而後者本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數的清單及其描述，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。
 
-## <a name="example"></a>範例  
- 下列範例會使用 `Csc` 工作，在 `Compile` 項目集合中從原始程式檔編譯可執行檔。  
+## <a name="example"></a>範例
+下列範例會使用 `Csc` 工作，在 `Compile` 項目集合中從原始程式檔編譯可執行檔。
 
-```xml  
-<CSC  
-    Sources="@(Compile)"  
-    OutputAssembly="$(AppName).exe"  
-    EmitDebugInformation="true" />  
-```  
+```xml
+<CSC
+    Sources="@(Compile)"
+    OutputAssembly="$(AppName).exe"
+    EmitDebugInformation="true" />
+```
 
-## <a name="see-also"></a>另請參閱  
- [工作參考](../msbuild/msbuild-task-reference.md)   
- [工作](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>另請參閱
+[工作參考](../msbuild/msbuild-task-reference.md)  
+[工作](../msbuild/msbuild-tasks.md)

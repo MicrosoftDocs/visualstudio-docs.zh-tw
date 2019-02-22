@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugThreads2 |Microsoft Docs
+title: IEnumDebugThreads2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fbb062f61266595b6dc0ae914341b4e9f1d3610
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c21a87d4f6005a2ebf0339d8e4bfd20c6fcef423
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842339"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917272"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 此介面會列舉在目前的偵錯工作階段中執行的執行緒。  

@@ -1,7 +1,6 @@
 ---
 title: 程式碼分析簽入原則的版本相容性
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - version compatibility, code analysis check-in policy
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1af376e3-3be7-4445-803b-76a858567a5b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c57b9e0afb443c8ec808dbd2908c1b8b7031aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0fc164dea10a74bbff725ee153f298c820f1c203
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892503"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936443"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>程式碼分析簽入原則的版本相容性
 

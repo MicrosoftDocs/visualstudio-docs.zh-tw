@@ -1,21 +1,20 @@
 ---
 title: HOW TO：開始偵錯 XSLT
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 170d4d3d0c952e13a5fefb74b23536f50be1e9a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 196e071802c068475da1dea1ba7f2a5b94a86a36
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925127"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936328"
 ---
 # <a name="how-to-start-debugging-xslt"></a>HOW TO：開始偵錯 XSLT
 
@@ -93,4 +92,4 @@ namespace ConsoleApplication
 ## <a name="see-also"></a>另請參閱
 
 - [逐步解說：偵錯 XSLT 樣式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [偵錯工具簡介](../debugger/debugger-feature-tour.md)   
+- [偵錯工具簡介](../debugger/debugger-feature-tour.md)

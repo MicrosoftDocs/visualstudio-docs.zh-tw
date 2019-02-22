@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ba2aa9ad9a80a820a1ab8311280c3bf2dedc476
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a101f59615c29499905fee9bef1249b399a573e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820247"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951036"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>使用 [開啟] 命令來顯示檔案
 專案可以要求以顯示 IDE**開啟** 對話方塊。 此要求會提示使用者開啟標準編輯器選取的檔案。 下列步驟說明此程序：  

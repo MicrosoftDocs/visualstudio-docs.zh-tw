@@ -1,7 +1,6 @@
 ---
 title: CA1717:只有 FlagsAttribute 列舉應該使用複數名稱
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1717
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a6855d8b-d78a-42c1-834e-61c31f5572ed
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c4b4b55e2a8f5ec2dd027cf62f494d3e07416dd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fb7a0ebe6dd068b9552a32b914e1936f1053aa3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915665"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921701"
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717:只有 FlagsAttribute 列舉應該使用複數名稱
 

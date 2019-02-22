@@ -2,7 +2,6 @@
 title: 部署概觀 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
 ms.topic: overview
 dev_langs:
 - FSharp
@@ -11,15 +10,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d578dcf3702b340adcbef36002b64b20f65a5c73
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: fdf11d31244ffca5c6a12e0661d34a8727301be0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684232"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952596"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio 中的部署概觀
 

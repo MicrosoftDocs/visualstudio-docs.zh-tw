@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e679594ec72db15c41ab27638d8886ad2d751760
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0fa01217281aea0f48e4c949d3bef6bf133930fc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839079"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975812"
 ---
 # <a name="mstateflags-field"></a>m_stateFlags 欄位
 儲存的目前狀態的相關資訊<xref:System.Threading.Tasks.Task>物件。  

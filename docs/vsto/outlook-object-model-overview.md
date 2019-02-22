@@ -13,20 +13,20 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - object models [Office development in Visual Studio], Outlook
 - Office object models
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 03bff7f4cd089a635aa2e9eae2391ea0816a1625
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b78df3968f23df8685d38d7278ffbf4f331260b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945349"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872361"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 物件模型概觀
-  若要開發 Microsoft Office Outlook 的 VSTO 增益集，您可以與 Outlook 物件模型提供的物件進行互動。 Outlook 物件模型會提供表示使用者介面中各種項目的類別和介面。 例如，<xref:Microsoft.Office.Interop.Outlook.Application> 物件表示整個應用程式、<xref:Microsoft.Office.Interop.Outlook.Folder> 物件表示含有電子郵件訊息或其他項目的資料夾，而 <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件則表示電子郵件訊息。  
+  若要開發 Microsoft Office Outlook 的 VSTO 增益集，您可以與 Outlook 物件模型提供的物件進行互動。 Outlook 物件模型會提供表示使用者介面中各種項目的類別和介面。 例如， <xref:Microsoft.Office.Interop.Outlook.Application> 物件表示整個應用程式、 <xref:Microsoft.Office.Interop.Outlook.Folder> 物件表示含有電子郵件訊息或其他項目的資料夾，而 <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件則表示電子郵件訊息。  
   
  此主題提供 Outlook 物件模型中部分主要物件的簡要概觀。 如需資源，您可以深入了解整個 Outlook 物件模型，請參閱[使用 Outlook 物件模型文件](#refdoc)。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "53945349"
   
 -   使用 <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 屬性來存取 Outlook 中的所有 <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件。  
   
--   使用 <xref:Microsoft.Office.Interop.Outlook.Application> 物件的 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> 方法來取得目前具有焦點的 <xref:Microsoft.Office.Interop.Outlook.Explorer>。  
+-   使用 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 方法來取得目前具有焦點的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 。  
   
 -   使用 <xref:Microsoft.Office.Interop.Outlook.Folder> 物件的 `GetExplorer` 方法來取得目前資料夾的 <xref:Microsoft.Office.Interop.Outlook.Explorer>。  
   
@@ -85,7 +85,7 @@ ms.locfileid: "53945349"
   
 -   使用 <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 屬性來存取 Outlook 中的所有 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件。  
   
--   使用 <xref:Microsoft.Office.Interop.Outlook.Application> 物件的 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> 方法來取得目前具有焦點的 <xref:Microsoft.Office.Interop.Outlook.Inspector>。  
+-   使用 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> 物件的 <xref:Microsoft.Office.Interop.Outlook.Application> 方法來取得目前具有焦點的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 。  
   
 -   使用特定項目 (例如 <xref:Microsoft.Office.Interop.Outlook.MailItem> 或 <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>) 的 `GetInspector` 方法來擷取與該項目相關聯的偵測器。  
   

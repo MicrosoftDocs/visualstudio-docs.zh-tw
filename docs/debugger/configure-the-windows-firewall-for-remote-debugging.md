@@ -1,20 +1,19 @@
 ---
 title: 設定 Windows 防火牆進行遠端偵錯 |Microsoft Docs
 ms.date: 10/31/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da505c6193dd7d05cc10a8e7cec8383f8ee3adfc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 65bb894d705f87d16fc7a6cf9fd446c726db9c92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058593"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039471"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆進行遠端偵錯
 

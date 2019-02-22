@@ -1,25 +1,20 @@
 ---
 title: 概觀 (效能工具) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d055f4a68a7fbc866300ab5fe842d43a75ce7008
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6429f9d9a94d74be48bd1a6305f1bb109a173b5a
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741318"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54773614"
 ---
 # <a name="overviews-performance-tools"></a>概觀 (效能工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +49,6 @@ ms.locfileid: "51741318"
  [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)  
  了解在 [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)] 上收集取樣資料以及剖析跨工作階段應用程式時，可能會遇到的問題與必須執行的步驟。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用者入門](../profiling/getting-started-with-performance-tools.md)   
  [效能總管](../profiling/performance-explorer.md)
-
-
-

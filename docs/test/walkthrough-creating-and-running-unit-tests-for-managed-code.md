@@ -1,7 +1,6 @@
 ---
 title: 針對受控碼建立和執行單元測試
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -10,16 +9,16 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: de50a5ee6e65540b1a2052f61eae211074780417
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26988b2fd74ae66bd1ef2724c55248371a81adf1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989172"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922286"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：針對受控碼建立和執行單元測試
 
@@ -83,6 +82,11 @@ public void Debit(double amount)
 
 1. 在 [檔案] 功能表上，選取 [新增] > [新增專案]。
 
+   > [!TIP]
+   > 有幾種其他方式可以將其他專案新增至現有的解決方案。 在 [方案總管] 中以滑鼠右鍵按一下解決方案，然後選擇 [新增]  >  [新增專案]。 或者，您可以選取 [檔案]  >  [新增]  >  [專案]，然後在 [新增專案] 對話方塊中，選取 [新增至解決方案] 選項：
+   >
+   > ![[新增專案] 對話方塊中的 [新增至解決方案] 選項](media/add-to-solution.png)
+
 2. 在 [新增專案] 對話方塊中，依序展開 [已安裝的]、[Visual C#]，然後選擇 [測試]。
 
 3. 在範本清單中選擇 [ **單元測試專案**]。
@@ -93,7 +97,7 @@ public void Debit(double amount)
 
 5. 在 **BankTests** 專案中，新增 **Bank** 專案的參考。
 
-   在 [方案總管] 中，選取 **BankTests** 專案中的 [參考]，然後從操作功能表選擇 [新增參考]。
+   在 [方案總管] 中，選取 **BankTests** 專案中的 [參考]，然後從右鍵功能表選擇 [新增參考]。
 
 6. 在 [參考管理員] 對話方塊中，展開 [方案]，然後檢查 [Bank] 項目。
 
@@ -103,7 +107,7 @@ public void Debit(double amount)
 
 ### <a name="rename-a-class-file"></a>重新命名類別檔案
 
-在 [方案總管] 中，選取 BankTests 專案中的 *UnitTest1.cs* 檔案。 從操作功能表中，選擇 [重新命名]，然後將檔案重新命名為 *BankAccountTests.cs*。 在詢問您是否要重新命名專案中程式碼項目 `UnitTest1` 的所有參考的對話方塊上，選擇 [是]。
+在 [方案總管] 中，選取 BankTests 專案中的 *UnitTest1.cs* 檔案。 從右鍵功能表中，選擇 [重新命名]，然後將檔案重新命名為 *BankAccountTests.cs*。 在詢問您是否要重新命名專案中程式碼項目 `UnitTest1` 的所有參考的對話方塊上，選擇 [是]。
 
 此步驟會將類別名稱變更為 `BankAccountTests`。 *BankAccountTests.cs* 檔案現在會包含下面程式碼：
 

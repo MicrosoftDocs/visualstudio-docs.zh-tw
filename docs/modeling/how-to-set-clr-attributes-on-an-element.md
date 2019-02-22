@@ -8,16 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, custom attrributes
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5b9a96f70febc6a33d80557a09cc8bc8e1adf2f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b890a5d3d5c48ad3841075a8ae818d2d37d44f98
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938078"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946622"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>HOW TO：在項目上設定 CLR 屬性
 自訂屬性是可以加入至定義域項目、 圖形、 連接器和圖表的特殊屬性。 您可以新增任何屬性繼承自`System.Attribute`類別。
@@ -36,11 +35,11 @@ ms.locfileid: "53938078"
 
 5.  在 **名稱屬性**資料行中，輸入適當的名稱，例如`MyString`。
 
-6.  按一下 [確定 **Deploying Office Solutions**]。
+6.  按一下 [確定] 。
 
      **自訂屬性**屬性現在顯示的屬性，以下列格式：
 
-     `[` *AttributeName* `(` *ParameterName* `=` *類型* `)]`
+     `[` *AttributeName* `(` *ParameterName* `=` *Type* `)]`
 
 ## <a name="see-also"></a>另請參閱
 

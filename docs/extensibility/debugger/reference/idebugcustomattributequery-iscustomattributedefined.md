@@ -8,79 +8,79 @@ helpviewer_keywords:
 ms.assetid: c7425db6-4347-4f69-8f88-337ddaa34fa6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08402735781cfa4a74f853034cd1fba01233ef24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb4e26e1d9067985f9d7fd00d7b0a57950148306
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849547"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413497"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
-判斷是否已定義指定之自訂屬性。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT IsCustomAttributeDefined(  
-   LPCOLESTR pszCustomAttributeName  
-);  
-```  
-  
-```csharp  
-int IsCustomAttributeDefined(  
-   string pszCustomAttributeName  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pszCustomAttributeName`  
- [in]自訂屬性的名稱。  
-  
-## <a name="return-value"></a>傳回值  
- 如果定義自訂屬性，則會傳回`S_OK`; 否則傳回`S_FALSE`。  
-  
-## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法，如**CDebugClassFieldSymbol**公開 （expose） 的物件[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)介面。  
-  
-```cpp  
-HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(  
-    LPCOLESTR pszCustomAttribute  
-)  
-{  
-    HRESULT hr = S_FALSE;  
-    CComPtr<IMetaDataImport> pMetadata;  
-    mdToken token = mdTokenNil;  
-    CComPtr<IDebugField> pField;  
-    CComPtr<IDebugCustomAttributeQuery> pCA;  
-  
-    ASSERT(IsValidWideStringPtr(pszCustomAttribute));  
-  
-    METHOD_ENTRY( CDebugClassFieldSymbol::IsCustomAttributeDefined );  
-  
-    IfFalseGo( pszCustomAttribute, E_INVALIDARG );  
-  
-    IfFailGo( m_spSH->GetMetadata( m_spAddress->GetModule(), &pMetadata ) );  
-  
-    IfFailGo( CDebugCustomAttribute::GetTokenFromAddress( m_spAddress, &token) );  
-    IfFailGo( pMetadata->GetCustomAttributeByName( token,  
-              pszCustomAttribute,  
-              NULL,  
-              NULL ) );  
-Error:  
-  
-    METHOD_EXIT( CDebugClassFieldSymbol::IsCustomAttributeDefined, hr );  
-  
-    if (hr != S_OK)  
-    {  
-        hr = S_FALSE;  
-    }  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
+判斷是否已定義指定之自訂屬性。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT IsCustomAttributeDefined(
+    LPCOLESTR pszCustomAttributeName
+);
+```
+
+```csharp
+int IsCustomAttributeDefined(
+    string pszCustomAttributeName
+);
+```
+
+#### <a name="parameters"></a>參數
+`pszCustomAttributeName`  
+[in]自訂屬性的名稱。
+
+## <a name="return-value"></a>傳回值
+如果定義自訂屬性，則會傳回`S_OK`; 否則傳回`S_FALSE`。
+
+## <a name="example"></a>範例
+下列範例示範如何實作這個方法，如**CDebugClassFieldSymbol**公開 （expose） 的物件[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)介面。
+
+```cpp
+HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(
+    LPCOLESTR pszCustomAttribute
+)
+{
+    HRESULT hr = S_FALSE;
+    CComPtr<IMetaDataImport> pMetadata;
+    mdToken token = mdTokenNil;
+    CComPtr<IDebugField> pField;
+    CComPtr<IDebugCustomAttributeQuery> pCA;
+
+    ASSERT(IsValidWideStringPtr(pszCustomAttribute));
+
+    METHOD_ENTRY( CDebugClassFieldSymbol::IsCustomAttributeDefined );
+
+    IfFalseGo( pszCustomAttribute, E_INVALIDARG );
+
+    IfFailGo( m_spSH->GetMetadata( m_spAddress->GetModule(), &pMetadata ) );
+
+    IfFailGo( CDebugCustomAttribute::GetTokenFromAddress( m_spAddress, &token) );
+    IfFailGo( pMetadata->GetCustomAttributeByName( token,
+              pszCustomAttribute,
+              NULL,
+              NULL ) );
+Error:
+
+    METHOD_EXIT( CDebugClassFieldSymbol::IsCustomAttributeDefined, hr );
+
+    if (hr != S_OK)
+    {
+        hr = S_FALSE;
+    }
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>另請參閱
+[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

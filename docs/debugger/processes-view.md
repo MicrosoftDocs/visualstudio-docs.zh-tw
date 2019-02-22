@@ -1,8 +1,6 @@
 ---
 title: 處理序檢視 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.processesview
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 003ea4962766d9c0b8adef698912024fecd1508e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3b3dad44f0c3971ed3b206db9b3c022f8375153a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936702"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024665"
 ---
 # <a name="processes-view"></a>處理序檢視
 處理序檢視會顯示您系統上的所有作用中處理序樹狀結構。 會顯示處理序識別碼和模組名稱。 如果您想要檢查特定的系統程序，通常對應於執行程式，請使用處理序檢視。 處理程序會以模組名稱識別，或指定 [系統處理序]。  

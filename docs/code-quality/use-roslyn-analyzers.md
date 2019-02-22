@@ -1,7 +1,6 @@
 ---
 title: 使用，並設定 Roslyn 分析器
 ms.date: 03/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 660abf31d764d0dd78b4d83c46d0931fb790f14f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 887fb6101773a86d346215f558f10216ca4612b8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873219"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924600"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>設定和使用 Roslyn 分析器規則
 

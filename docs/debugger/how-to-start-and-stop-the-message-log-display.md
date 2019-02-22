@@ -1,8 +1,6 @@
 ---
-title: 如何： 啟動和停止訊息記錄顯示 |Microsoft 文件
-ms.custom: ''
+title: HOW TO：啟動和停止訊息記錄顯示 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - message log display, starting
@@ -11,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3036611c-acf3-42b6-b5d7-1a0c653f6af9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bbb0a3eedd5060576c145b71d6c501a8b753b6c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5c0f3d2cda787d751f45ae2da9344b62f89ac50c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481070"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025458"
 ---
-# <a name="how-to-start-and-stop-the-message-log-display"></a>如何：啟動與停止訊息記錄顯示
-當[訊息檢視](../debugger/messages-view.md)視窗是作用中，**開始記錄**或**停止記錄**選擇出現在 Spy + +**訊息**功能表上，而對應**開始記錄**或**停止記錄**工具列按鈕會變成作用中。  
+# <a name="how-to-start-and-stop-the-message-log-display"></a>HOW TO：啟動與停止訊息記錄顯示
+當[訊息檢視](../debugger/messages-view.md)視窗是作用中，**開始記錄**或**停止記錄**選擇出現在 Spy + +**訊息** 功能表中，而對應**開始記錄**或是**停止記錄**工具列按鈕變成無法使用。  
   
 ### <a name="to-start-the-message-log-display"></a>若要啟動訊息記錄顯示  
   

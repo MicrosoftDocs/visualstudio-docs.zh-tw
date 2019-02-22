@@ -1,21 +1,20 @@
 ---
 title: 在開發期間驗證您的系統
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0878291441f6fe5d5237c0317b3df631aefee139
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce0822f5731e7c09a6f6dff9116e70b97a529206
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869316"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316752"
 ---
 # <a name="validate-your-system-during-development"></a>在開發期間驗證您的系統
 Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致性。
@@ -36,7 +35,7 @@ Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致
 |-|-|
 |**影片**|![連結至影片](../data-tools/media/playvideo.gif) [Channel 9:Doug Seven:程式碼理解和使用 Visual Studio 2010 的系統設計](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif) [Channel 9:架構應用程式使用相依性圖表](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif) [MSDN 「 如何 」 系列：如何使用相依性圖表驗證程式碼](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**論壇**|-   [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**部落格**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
+|**部落格**|-   [Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>另請參閱

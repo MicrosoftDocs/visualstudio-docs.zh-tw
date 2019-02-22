@@ -1,8 +1,6 @@
 ---
 title: 檔案中尋找命令
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.findinfiles
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2fc78bfe-b339-4599-97f9-4cafd8a194d9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4cf5078bb16d90744b83dfd99cf0c1da663149a
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 5549bd0047b38ef8f0dff5fa420d4b5ce0ae4ce9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705017"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947077"
 ---
 # <a name="find-in-files-command"></a>檔案中尋找命令
 在 [尋找和取代] 視窗中，您可以使用 [檔案中尋找] 索引標籤提供的選項子集，搜尋檔案。
@@ -39,9 +37,9 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ## <a name="switches"></a>參數
  /case 或 /c 選擇項。 只有當大寫和小寫字元完全符合 `findwhat` 引數中所指定的項目時，才會出現相符項目。
 
- /ext: `extensions` 選擇項。 指定要搜尋之檔案的副檔名。 如果未指定，就會使用之前輸入的副檔名。
+ /ext:`extensions` 選擇項。 指定要搜尋之檔案的副檔名。 如果未指定，就會使用之前輸入的副檔名。
 
- /lookin: `searchpath` 選擇項。 要搜尋的目錄。 如果路徑包含空格，請將完整路徑用引號括住。
+ /lookin:`searchpath` 選擇項。 要搜尋的目錄。 如果路徑包含空格，請將完整路徑用引號括住。
 
  /names 或 /n 選擇項。 顯示包含相符項目的檔案名稱清單。
 
@@ -78,4 +76,4 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 - [命令視窗](../../ide/reference/command-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
-- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::IsCommitChar |Microsoft 文件
+title: IActiveScriptAuthor::IsCommitChar |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67dcdd7107372ee2766d59374a1d5aa9eb98576d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c2446cf57417434a1925fab24f51e8b34694775
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645558"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096170"
 ---
 # <a name="iactivescriptauthoriscommitchar"></a>IActiveScriptAuthor::IsCommitChar
-傳回值，指出指定的字元是否應該由應用程式觸發陳述式完成認可。  
+傳回值，這個值，指出指定的字元是否應該由應用程式會觸發陳述式完成認可。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT IsCommitChar(  
    OLECHAR    ch,  
    BOOL       *pfcommit  
@@ -42,12 +42,12 @@ HRESULT IsCommitChar(
  [in]要測試的字元。  
   
  `pfcommit`  
- [out]`True`如果字元是認可字元; 否則`False`。  
+ [out]`True`如果字元是認可字元，否則`False`。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

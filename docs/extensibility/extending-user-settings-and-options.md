@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5bb6277a-8c9d-48c8-9b4e-1cb3052caded
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d59fa13d65f04631c41681fdb82c18624f7d69a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b93d09b29b961d0a7659d6be742bcf66d5560ce5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883116"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983062"
 ---
 # <a name="extend-user-settings-and-options"></a>擴充使用者設定和選項
 在 Visual Studio 中，有兩種主要的方式來維護使用者喜好設定。 **工具** > **選項**頁面可讓使用者設定自己的值為許多不同類型的一般和特定語言的設定。 使用者設定可讓使用者指定一般的 Visual Studio 組態屬性。 更多選項 頁面的詳細資訊，請參閱[選項和選項頁](../extensibility/internals/options-and-options-pages.md)。 如需有關使用者設定的詳細資訊，請參閱[支援的使用者設定](../extensibility/internals/support-for-user-settings.md)。  

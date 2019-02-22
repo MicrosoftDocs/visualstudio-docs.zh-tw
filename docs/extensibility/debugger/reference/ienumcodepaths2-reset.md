@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePaths2::Reset |Microsoft Docs
+title: IEnumCodePaths2::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 490c0e19-ff4b-4673-bd06-cdee996ac226
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf48aef7c6ed4d407c3b0c5264d8cd73c57af347
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b6e95947bff8223151e13137b0a57276b93209e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915383"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027684"
 ---
 # <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
 將列舉重設第一個項目。  

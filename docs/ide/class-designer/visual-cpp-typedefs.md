@@ -1,7 +1,6 @@
 ---
 title: 類別設計工具中的 Visual C++ Typedef
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.typedef
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0efbf39ec7000055bdaa978eab06417dae8b183
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 328235e5be2ac62caa427c9f77bd33654275e72a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869186"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907707"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>類別設計工具中的 Visual C++ Typedef
 
@@ -44,7 +43,7 @@ typedef class coord
 
 類別和結構中可宣告巢狀 typedefs。 在**類別設計工具**中，類別和結構圖形可將巢狀 typedef 宣告顯示為巢狀圖形。
 
-Typedef 圖形支援操作功能表上的 [顯示為關聯] 和 [顯示為集合關聯] 命令。
+Typedef 圖形支援右鍵功能表 (操作功能表) 上的 [顯示為關聯] 和 [顯示為集合關聯] 命令。
 
 ### <a name="class-typedef-example"></a>類別 typedef 範例
 

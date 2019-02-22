@@ -1,14 +1,9 @@
 ---
-title: 如何：在編輯器中變更字型和顏色 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：變更字型和色彩編輯器中的 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - editors, fonts
 - text, color
@@ -19,13 +14,13 @@ ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7fb415c68884b2486d0bd45559530f1a36c90bfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799104"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>如何：在編輯器中變更字型和顏色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49229306"
 -   您可以針對每一種類型的文字項目，設定 [項目前景]、[項目背景] 和 [粗體] 選項。 例如，如果您變更色彩，並針對 [註解] 和 [書籤] 選取 [粗體]，則其他類型的文字項目不會受到影響。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>變更預設字體、大小和色彩  
   
@@ -59,11 +54,8 @@ ms.locfileid: "49229306"
   
 5.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂編輯器](../../ide/customizing-the-editor.md)   
  [文字編輯器選項對話方塊](../../ide/reference/text-editor-options-dialog-box.md)   
  [撰寫程式碼](../../ide/writing-code-in-the-code-and-text-editor.md)   
  [如何：變更字型和色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
-
-
-

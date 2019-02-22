@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback2::OnFunctionExitByName |Microsoft 文件
+title: IActiveScriptProfilerCallback2::OnFunctionExitByName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd26ab1cf36378c0f037d78a3c079c58e004006d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fb198f56e5ff73561fe7b42a25b019dfb0e3817c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727408"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094558"
 ---
 # <a name="iactivescriptprofilercallback2onfunctionexitbyname"></a>IActiveScriptProfilerCallback2::OnFunctionExitByName
-通知分析工具的指令碼引擎的物件完成執行後，文件物件模型 (DOM) 函式呼叫。  
+指令碼引擎的物件完成執行後，文件物件模型 (DOM) 函式呼叫會通知分析工具。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT OnFunctionExitByName(  
     [in] [string] const WCHAR *pwszFunctionName,  
     [in] PROFILER_SCRIPT_TYPE scriptType);  
@@ -35,16 +35,16 @@ HRESULT OnFunctionExitByName(
   
 #### <a name="parameters"></a>參數  
  `pwszFunctionName`  
- [in]函式執行完成的指令碼引擎的名稱。  
+ [in]指令碼引擎已完成執行的函式名稱。  
   
  `scriptType`  
- [in]函式的類型。 如需有效值的描述，請參閱[PROFILER_SCRIPT_TYPE 列舉](../../winscript/reference/profiler-script-type-enumeration.md)。  
+ [in]函式的類型。 如需有效值的描述，請參閱 < [PROFILER_SCRIPT_TYPE 列舉](../../winscript/reference/profiler-script-type-enumeration.md)。  
   
 ## <a name="return-value"></a>傳回值  
  這個方法的傳回值會忽略指令碼引擎。  
   
 ## <a name="remarks"></a>備註  
- DOM 呼叫指令碼引擎會呼叫這個方法，而不是呼叫[IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)。 這是因為有大量的 DOM 中唯一的方法和屬性  
+ DOM 呼叫指令碼引擎會呼叫這個方法，而不是呼叫[IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)。 這是因為大量的 DOM 中唯一的方法和屬性  
   
 ## <a name="see-also"></a>另請參閱  
  [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   

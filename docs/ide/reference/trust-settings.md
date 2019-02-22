@@ -5,8 +5,6 @@ author: abuchholtzau
 ms.author: allisb
 ms.date: 09/05/2018
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.PathTrustOptions
 helpviewer_keywords:
@@ -15,12 +13,12 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: 08c4b08c33cd954aa427f158158f29cfbe50df94
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 011673bca7be569b5b350dc264148d5a7890d39c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384704"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954943"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>設定檔案和資料夾的信任設定
 
@@ -37,11 +35,11 @@ ms.locfileid: "44384704"
 
 2. 選擇您想用於檔案和資料夾的檢查層級。 您可以讓每一項的檢查各不相同。 可選的按鈕有：
 
-   * [沒有驗證]：Visual Studio 不會執行任何檢查。
+   * **未確認**：Visual Studio 不會執行任何檢查。
 
-   * [確認 Web 屬性標記]：如果檔案或資料夾具有 Web 屬性標記，Visual Studio 會封鎖並要求提供開啟的權限。
+   * **確認此 Web 屬性的標記**：如果檔案或資料夾具有 Web 屬性標記，Visual Studio 會封鎖並要求提供開啟的權限。
 
-   * [確認是否為信任的路徑]：如果檔案或資料夾的路徑不在 [信任路徑] 清單中，Visual Studio 會封鎖並要求提供開啟的權限。
+   * **確認是否為信任的路徑**：如果檔案或資料夾的路徑不在 [信任的路徑] 清單中，Visual Studio 會封鎖並要求提供開啟的權限。
 
    ![信任驗證選項](media/trust-settings.png)
 

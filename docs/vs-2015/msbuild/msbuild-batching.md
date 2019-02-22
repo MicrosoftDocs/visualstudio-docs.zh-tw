@@ -1,14 +1,9 @@
 ---
 title: MSBuild 批次處理 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
@@ -16,13 +11,13 @@ ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 24baafbaf213e90999a5e4e0eea030f2ef608501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c2e2392c3b04ce7f81e023f449da890122946e3b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304167"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54770802"
 ---
 # <a name="msbuild-batching"></a>MSBuild 批次處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,11 +103,8 @@ ms.locfileid: "49304167"
   
  如需屬性函式的詳細資訊，請參閱[屬性函式](../msbuild/property-functions.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ItemMetadata 元素 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [進階概念](../msbuild/msbuild-advanced-concepts.md)
-
-
-

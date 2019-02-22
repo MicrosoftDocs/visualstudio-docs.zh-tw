@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b5e439d4-1e9d-4e13-9cad-bb8b136d4ca8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7029f537d6d7ebcb956aa200cb8f22c160e540
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 35b22c47aa80713ae494f868996142e776c94a0a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959707"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020330"
 ---
 # <a name="stack-frames"></a>堆疊框架
 在偵錯工具架構中，*堆疊框架*:  

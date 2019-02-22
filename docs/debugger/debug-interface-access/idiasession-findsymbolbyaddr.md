@@ -1,8 +1,6 @@
 ---
-title: 'Idiasession:: Findsymbolbyaddr |Microsoft Docs'
-ms.custom: ''
+title: IDiaSession::findSymbolByAddr | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c130abc5-4d0a-4d2d-8286-94fde36ddd4a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adaae62196328c6f396a5fbb9b42727f540ead6e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c9567e272167c34d3061e9273d912ea9a2cd0ab7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917709"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031418"
 ---
 # <a name="idiasessionfindsymbolbyaddr"></a>IDiaSession::findSymbolByAddr
 擷取指定的符號類型包含此項目，或最接近，指定的位址。  
@@ -27,7 +25,7 @@ ms.locfileid: "49917709"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT findSymbolByAddr (   
+HRESULT findSymbolByAddr (   
    DWORD        isect,  
    DWORD        offset,  
    SymTagEnum   symtag,  
@@ -58,7 +56,7 @@ IDiaSymbol* pFunc;
 pSession->findSymbolByAddr( isect, offset, SymTagFunction, &pFunc );  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

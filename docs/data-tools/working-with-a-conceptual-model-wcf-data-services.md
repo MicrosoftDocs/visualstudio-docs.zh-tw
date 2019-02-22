@@ -1,5 +1,5 @@
 ---
-title: 使用概念模型 (WCF Data Services)
+title: 使用概念模型 (WCF 資料服務)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,17 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cae74c50ecd99716cf26eae2b7defcadf03fecbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 135985d7e6ed13555db73f35fef31e6da4b85071
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862966"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910021"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>使用概念模型 (WCF Data Services)
 
@@ -30,8 +28,8 @@ ms.locfileid: "49862966"
 
 | 主題 | 描述 |
 | - | - |
-| [如何： 執行資料服務查詢](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | 示範如何查詢資料服務[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]應用程式。 |
-| [如何： 投影查詢結果](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | 示範如何減少透過資料服務查詢傳回的資料量。 |
+| [如何：執行資料服務查詢](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | 示範如何查詢資料服務[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]應用程式。 |
+| [如何：投影查詢結果](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | 示範如何減少透過資料服務查詢傳回的資料量。 |
 
  當您使用的概念模型時，您可以定義以符合您的網域中的資料類型無效。 您可以在模型中，定義有效的資料，或您可以將驗證新增至您的實體或資料服務執行的作業。
 
@@ -39,14 +37,14 @@ ms.locfileid: "49862966"
 
 |主題|描述|
 |-----------|-----------------|
-|[如何： 攔截資料服務訊息](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|示範如何將驗證新增至資料服務作業。|
+|[如何：攔截資料服務訊息](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|示範如何將驗證新增至資料服務作業。|
 
  下列主題示範如何建立、 更新和刪除資料，方法是在實體上執行作業。
 
 |主題|描述|
 |-----------|-----------------|
-|[如何： 加入、 修改及刪除實體](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|示範如何建立、 更新和刪除資料服務中的實體資料。|
-|[如何： 定義實體關聯性](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|示範如何建立或變更資料服務中的關聯性。|
+|[如何：新增、修改和刪除實體](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|示範如何建立、 更新和刪除資料服務中的實體資料。|
+|[如何：定義實體關聯性](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|示範如何建立或變更資料服務中的關聯性。|
 
 ## <a name="see-also"></a>另請參閱
 

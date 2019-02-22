@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, Visual Basic for Applications and
 - calling code from VBA
 - document-level customizations [Office development in Visual Studio], calling code
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dcbd55c2c6b8b803eb9591265d512a73f6201771
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd968d0c963ae4aa46872bf19e97f357361cf248
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989026"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871308"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>逐步解說：從 視覺效果中的 VBA 呼叫程式碼C#專案
   本逐步解說示範如何從活頁簿中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Microsoft Office Excel 文件層級自訂中的方法。 這個程序和三個基本步驟相關：將方法加入 `Sheet1` 主項目類別、將方法公開至活頁簿中的 VBA 程式碼，然後從活頁簿中的 VBA 程式碼呼叫此方法。  
@@ -161,7 +161,7 @@ ms.locfileid: "53989026"
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]  
   
-3.  將下列方法加入 `Sheet1` 類別中。 這個方法會覆寫 <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> 方法，以傳回 `Sheet1` 類別目前的執行個體。  
+3.  將下列方法加入 `Sheet1` 類別。 這個方法會覆寫 <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> 方法，以傳回 `Sheet1` 類別目前的執行個體。  
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]  
   

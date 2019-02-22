@@ -1,7 +1,6 @@
 ---
 title: CA2115:使用原生資源時必須呼叫 GC.KeepAlive
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CallGCKeepAliveWhenUsingNativeResources
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f00a59a7-2c6a-4bbe-a1b3-7bf77d366f34
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d1f7214ce570042d1cebdbf0ac75ffaf81b0ea1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a74f6313f90a31d43cf39443b1c44d78f0628f8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849489"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930983"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115:使用原生資源時必須呼叫 GC.KeepAlive
 

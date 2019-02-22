@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f323bde8719090815e76cf9887630930e5151da7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80bfefacf73e1ed7209ee7b40eec4c180e16904d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915292"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949697"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>什麼&#39;的新功能的原始檔控制外掛程式 API 版本 1.2
 本章節強調在原始檔控制外掛程式 API 版本 1.2 進階的原始程式碼控制功能。 以下列出在 1.2 版的新功能：  

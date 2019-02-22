@@ -1,7 +1,6 @@
 ---
 title: 使用 Roslyn 分析器的程式碼分析
 ms.date: 03/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: overview
 helpviewer_keywords:
 - code analysis, managed code
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f3f0307a8081cbff73dd39bba67fbbc2e5fa7b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c79f51d1bcc82bda9e7c3f21548eac445f36f925
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864851"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948273"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET Compiler Platform 分析器概觀
 

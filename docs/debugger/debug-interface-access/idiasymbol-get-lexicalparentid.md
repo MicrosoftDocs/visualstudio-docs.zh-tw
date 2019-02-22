@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_lexicalparentid |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_lexicalParentId | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6c0c2874-cc47-4e4f-ad9c-02a18a108d9d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ec201951602944a4517233789648e66be19c70
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fb3d8b21c938c090b7e568e5accaa3fa2087518b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915135"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987384"
 ---
 # <a name="idiasymbolgetlexicalparentid"></a>IDiaSymbol::get_lexicalParentId
 擷取之符號的語彙的父識別碼。  
@@ -27,7 +25,7 @@ ms.locfileid: "49915135"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_lexicalParentId (   
+HRESULT get_lexicalParentId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -45,5 +43,5 @@ HRESULT get_lexicalParentId (
 ## <a name="remarks"></a>備註  
  識別碼是由 DIA SDK，將標示為唯一的所有符號的唯一值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

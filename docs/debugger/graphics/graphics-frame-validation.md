@@ -1,23 +1,21 @@
 ---
 title: 圖形畫面格驗證 |Microsoft Docs
-ms.custom: ''
 ms.date: 03/02/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.FrameValidation
 ms.assetid: 1e639182-1301-4e28-9c1e-b5df732f3f1b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cdfdee83a9c78069b3f086ef84b280ba9328e4f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b353954f56cc71922d1ec5e7aef483c7bad2f47f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850876"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991524"
 ---
 # <a name="graphics-frame-validation"></a>圖形畫面格驗證
 <!-- VERSIONLESS --> Visual Studio 2017 和更新版本支援**框架驗證**工具。  [畫面格驗證] 視窗會顯示錯誤和事件清單相關聯的警告。  若要檢視此視窗，請選取**檢視 > 畫面格驗證**功能表。
@@ -35,6 +33,6 @@ ms.locfileid: "49850876"
 | 訊息 | 與事件相關聯的訊息。 |
 | Event - 事件 | 相關聯的錯誤或警告事件。 |
 
-## <a name="see-also"></a>另請參閱  
-[圖形診斷 （偵錯 DirectX 圖形）](visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>請參閱  
+[圖形診斷 (偵錯 DirectX 圖形)](visual-studio-graphics-diagnostics.md)   
 <!-- /VERSIONLESS -->

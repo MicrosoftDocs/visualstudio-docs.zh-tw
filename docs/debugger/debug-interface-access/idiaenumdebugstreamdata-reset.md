@@ -1,8 +1,6 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Reset |Microsoft 文件'
-ms.custom: ''
+title: 'Idiaenumdebugstreamdata:: Reset |Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d3eab1a0-db05-4838-833f-57e93a6ad096
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 543ccb54c2c316676bf2cd4fcd1133419129a60e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: fbfc6b6025ce10cc14aac6db4d04a10a395d436a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457734"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920824"
 ---
 # <a name="idiaenumdebugstreamdatareset"></a>IDiaEnumDebugStreamData::Reset
-重設為列舉的序列的開頭。  
+列舉序列的開頭來重設。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,5 +31,5 @@ HRESULT Reset ();
 ## <a name="return-value"></a>傳回值  
  傳回 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

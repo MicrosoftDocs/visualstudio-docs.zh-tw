@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID_TYPE |Microsoft Docs
+title: AD_PROCESS_ID_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,53 +9,51 @@ helpviewer_keywords:
 ms.assetid: 0aab80e9-285a-4697-94ac-c864d42a6aaa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f27791b555d2f18e1e0a338bbfb5893f9047fd4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c600dd1fcf22ac7e32e91a38c98d6f524a9ba79
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819586"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315647"
 ---
 # <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
-指定如何解譯中的處理序識別碼[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-enum enum_AD_PROCESS_ID {  
-   AD_PROCESS_ID_SYSTEM = 0,  
-   AD_PROCESS_ID_GUID   = 1  
-};  
-typedef DWORD AD_PROCESS_ID_TYPE;  
-```  
-  
-```csharp  
-public enum enum_AD_PROCESS_ID {  
-   AD_PROCESS_ID_SYSTEM = 0,  
-   AD_PROCESS_ID_GUID   = 1  
-};  
-```  
-  
-## <a name="members"></a>成員  
- AD_PROCESS_ID_SYSTEM  
- 系統識別項處理序 ID。 使用`ProcessId.dwProcessId`欄位[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構。  
-  
- AD_PROCESS_ID_GUID  
- 處理序識別碼是 GUID。 使用`ProcessId.guidProcessId`欄位`AD_PROCESS_ID`結構。  
-  
-## <a name="remarks"></a>備註  
- 用於`ProcessIdType`隸屬[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構，以識別包含在結構中的處理序識別碼的類型。 決定如何解譯`ProcessId`聯集結構中。  
-  
-## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
-  
- 命名空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)
+指定如何解譯中的處理序識別碼[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構。
+
+## <a name="syntax"></a>語法
+
+```cpp
+enum enum_AD_PROCESS_ID {
+    AD_PROCESS_ID_SYSTEM = 0,
+    AD_PROCESS_ID_GUID   = 1
+};
+typedef DWORD AD_PROCESS_ID_TYPE;
+```
+
+```csharp
+public enum enum_AD_PROCESS_ID {
+    AD_PROCESS_ID_SYSTEM = 0,
+    AD_PROCESS_ID_GUID   = 1
+};
+```
+
+## <a name="members"></a>成員
+系統識別項為 AD_PROCESS_ID_SYSTEM 處理序 ID。 使用`ProcessId.dwProcessId`欄位[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構。
+
+AD_PROCESS_ID_GUID 處理序識別碼是 GUID。 使用`ProcessId.guidProcessId`欄位`AD_PROCESS_ID`結構。
+
+## <a name="remarks"></a>備註
+用於`ProcessIdType`隸屬[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構，以識別包含在結構中的處理序識別碼的類型。 決定如何解譯`ProcessId`聯集結構中。
+
+## <a name="requirements"></a>需求
+標頭： msdbg.h
+
+命名空間：Microsoft.VisualStudio.Debugger.Interop
+
+組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>另請參閱
+[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

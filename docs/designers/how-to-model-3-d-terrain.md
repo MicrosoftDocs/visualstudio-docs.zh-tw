@@ -1,23 +1,21 @@
 ---
-title: 如何：建立 3D 地形模型
+title: HOW TO：建立 3D 地形模型
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24fdf5f6c80dbb9d338b4c655b7cea05592a91ac
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a18f986b64a58f4b5d9a8cad74ce118985b06c96
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977742"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909371"
 ---
-# <a name="how-to-model-3d-terrain"></a>如何：建立 3D 地形模型
+# <a name="how-to-model-3d-terrain"></a>HOW TO：建立 3D 地形模型
 
 本文會示範如何使用模型編輯器來建立 3D 地形模型。
 

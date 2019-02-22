@@ -4,7 +4,6 @@ titleSuffix: ''
 description: 深入了解如何在企業環境中部署 Visual Studio。
 ms.date: 05/29/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25bf36870e20b630c6de388c13f2b01bae4a274b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de7294040f079bf6ff5961f985f82beea112d1f9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826396"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970409"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 系統管理員指南
 

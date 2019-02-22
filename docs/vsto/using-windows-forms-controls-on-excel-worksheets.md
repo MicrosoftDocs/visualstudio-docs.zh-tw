@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], Excel
 - Excel [Office development in Visual Studio], Windows Forms controls
 - controls [Office development in Visual Studio], Window Forms controls
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: abc3e08a867af9b04d7ce1da1449f108a099b238
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 144bcf1d9b0b96944e1493471106fe8aa6c8031b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823415"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871529"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>使用 Excel 工作表上的 Windows Form 控制項
   您可以加入 Windows Form 控制項您的 Microsoft Office Excel 活頁簿將控制項新增至 Windows Forms 的方式相同。 如需有關使用文件上控制項的一般資訊，請參閱[Windows Forms 控制項上 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)。  

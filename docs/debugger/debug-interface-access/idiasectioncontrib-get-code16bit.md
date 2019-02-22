@@ -1,8 +1,6 @@
 ---
-title: IDiaSectionContrib::get_code16bit |Microsoft Docs
-ms.custom: ''
+title: IDiaSectionContrib::get_code16bit | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8cde8fc5-9546-4f82-b4a8-afd0d835039e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6057f6d6bb217908e3980a6a3fdd42584431ab55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0200c65cfd89086a58466913967e73a00e4d7fd4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858416"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993518"
 ---
 # <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
 擷取指出區段是否包含 16 位元程式碼的旗標。  
@@ -42,5 +40,5 @@ HRESULT get_code16bit(
 ## <a name="remarks"></a>備註  
  這個方法只會指出，程式碼是否為 16 位元的位置。 如果程式碼不是 16 位元，它可能是任何其他動作，例如 32 位元或 64 位元的程式碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

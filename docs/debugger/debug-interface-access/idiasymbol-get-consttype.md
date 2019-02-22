@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_consttype |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cb43605e-fa39-4f83-b047-f936a8019d03
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0880e8b22a31809a1d6e2d4d673c00e2dac2ff60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ce1e6566b336ccf074112c06900460c5e95b7f39
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870623"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924398"
 ---
 # <a name="idiasymbolgetconsttype"></a>IDiaSymbol::get_constType
 擷取指定的使用者定義資料類型是否為常數的旗標。  
@@ -27,7 +25,7 @@ ms.locfileid: "49870623"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_constType (   
+HRESULT get_constType (   
    BOOL* pRetVal  
 );  
 ```  
@@ -49,5 +47,5 @@ HRESULT get_constType (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,8 +1,6 @@
 ---
 title: 建置 ClickOnce 應用程式，從命令列 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1484466e3d1b1a43a6ff28c2526dbb478ef7392d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7dae0859970d5a9a70abb0bed20630348b270a7f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853281"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031278"
 ---
-# <a name="build-clickonce-applications-from-the-command-line"></a>建置 ClickOnce 應用程式，從命令列
+# <a name="build-clickonce-applications-from-the-command-line"></a>從命令列建置 ClickOnce 應用程式
 在  [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，即使它們建立在整合式的開發環境 (IDE) 中，您可以建置專案，從命令列。 事實上，您可以重建專案，以建立[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]只有另一部電腦上[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安裝。 這可讓您重現組建，使用自動化程序，比方說，在中央的組建實驗室，或使用進階指令碼撰寫技巧，建置專案本身的範圍之外。  
   
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>使用 MSBuild 來重現 ClickOnce 應用程式部署  
@@ -35,9 +33,9 @@ ms.locfileid: "49853281"
   
  「 目標 」 是 MSBuild 中的指標如何處理命令。 索引鍵的目標是 「 建置 」 目標和 「 發行 」 的目標。 「 建置 」 目標相當於選取的組建在 IDE 中，命令 （或按 F5）。 如果您只想要建置專案時，您就可以達成此目標輸入`msbuild`。 此命令運作，因為 「 建置 」 目標所產生的所有專案的預設目標[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]。 這表示您明確不需要指定 「 建置 」 目標。 因此，輸入`msbuild`是相同的作業，做為輸入`msbuild /target:build`。  
   
- `/target:publish`命令會告知 MSBuild，以叫用的發行目標。 發行目標取決於 「 建置 」 目標。 這表示在發行作業會建立作業的超集。 比方說，如果您對其中一個 Visual Basic 或 C# 原始程式檔進行變更，對應的組件自動會重建所發行作業。  
+ `/target:publish`命令會告知 MSBuild，以叫用的發行目標。 發行目標取決於 「 建置 」 目標。 這表示在發行作業會建立作業的超集。 例如，如果您變更了其中一個 Visual Basic 或C#原始程式檔，對應的組件會自動重建發行作業。  
   
- 如需產生完整的資訊[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署使用 Mage.exe 命令列工具來建立您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]資訊清單，請參閱[逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+ 如需產生完整的資訊[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署使用 Mage.exe 命令列工具來建立您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]資訊清單，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
 ## <a name="create-and-build-a-basic-clickonce-application-with-msbuild"></a>建立並建置基本的 ClickOnce 應用程式，使用 MSBuild  
   
@@ -77,7 +75,7 @@ ms.locfileid: "49853281"
   
    上述步驟將會產生完整[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]的子資料夾中的應用程式部署，您的專案命名為**發行**。 *CmdLineDemo.application*是[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署資訊清單。 資料夾*CmdLineDemo_1.0.0.0*包含的檔案*CmdLineDemo.exe*並*CmdLineDemo.exe.manifest*，則[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單。 *Setup.exe*是啟動載入器，其預設值設定為安裝[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 DotNetFX 資料夾包含的可轉散發套件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 這是完整的部署您的應用程式，透過 Web 或透過 UNC 或 CD/DVD 所需的檔案。  
   
-## <a name="publish-properties"></a>發行屬性  
+## <a name="publish-properties"></a>發佈屬性  
  當您在上述程序中發佈應用程式時，下列屬性會插入到您的專案檔，發行精靈。 這些屬性會直接影響如何[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]產生的應用程式。  
   
  在  *CmdLineDemo.vbproj* / *CmdLineDemo.csproj*:  
@@ -159,7 +157,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL、 SupportUrl、 PublishURL 和 UpdateURL  
  下表顯示 ClickOnce 部署的四個 URL 選項。  
   
-|URL 選項|描述|  
+|URL 選項|說明|  
 |----------------|-----------------|  
 |`PublishURL`|如果您要發行 ClickOnce 應用程式至網站的必要項。|  
 |`InstallURL`|選擇性。 設定此 URL 選項，如果安裝的網站是不同於`PublishURL`。 例如，您可以設定`PublishURL`為 FTP 路徑並將`InstallURL`Web url。|  
@@ -171,4 +169,4 @@ msbuild /target:publish /property:BootstrapperEnabled=false
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>   
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
- [逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+ [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

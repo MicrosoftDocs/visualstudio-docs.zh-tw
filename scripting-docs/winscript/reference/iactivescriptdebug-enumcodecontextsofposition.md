@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptDebug::EnumCodeContextsOfPosition |Microsoft 文件
+title: IActiveScriptDebug::EnumCodeContextsOfPosition |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40fd8e2d19d3949ff26811956ae3d203871e5510
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: abca643dc4e18f786421959c20804a28cf54ec7b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645588"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097171"
 ---
 # <a name="iactivescriptdebugenumcodecontextsofposition"></a>IActiveScriptDebug::EnumCodeContextsOfPosition
-用來委派智慧主機`IDebugDocumentContext::EnumCodeContexts`方法。  
+智慧主機用來委派`IDebugDocumentContext::EnumCodeContexts`方法。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT EnumCodeContextsOfPosition(  
    DWORD_PTR                 dwSourceContext,  
    ULONG                     uCharacterOffset,  
@@ -44,18 +44,18 @@ HRESULT EnumCodeContextsOfPosition(
  [in]來源內容提供給`IActiveScriptParse::ParseScriptText`或`IActiveScriptParse::AddScriptlet`。  
   
  `uCharacterOffset`  
- [in]字元位移相對於指令碼文字的開頭。  
+ [in]相對於指令碼文字開頭位移的字元。  
   
  `uNumChars`  
  [in]在此內容中的字元數。  
   
  `ppescc`  
- [out]指定的範圍內的程式碼內容的列舉值。  
+ [out]指定的範圍內的程式碼內容列舉值。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPrograms2::Reset |Microsoft Docs
+title: IEnumDebugPrograms2::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b289242b-24ea-4df3-a811-20b0c8a903d6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88d95b58f429c8a6012769166bf740f06675a994
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0868358a940825a0a3dd8bde300135b316da4ef7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905383"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949658"
 ---
 # <a name="ienumdebugprograms2reset"></a>IEnumDebugPrograms2::Reset
 將列舉重設第一個項目。  

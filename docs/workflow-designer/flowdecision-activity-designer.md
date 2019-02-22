@@ -2,21 +2,20 @@
 title: 工作流程設計工具-FlowDecision 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15100a7a43147e49d6762119828566d613034fea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 095ffb7284b9363d3bdb04749c8cff7114927935
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848201"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918399"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision 活動設計工具
 
@@ -50,4 +49,4 @@ ms.locfileid: "53848201"
 
 - [流程圖](../workflow-designer/flowchart-activity-designers.md)
 - [流程圖](../workflow-designer/flowchart-activity-designer.md)
-- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)
+- [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)

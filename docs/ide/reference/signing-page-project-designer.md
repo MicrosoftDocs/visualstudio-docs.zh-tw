@@ -1,8 +1,6 @@
 ---
 title: 專案設計工具、簽署頁
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
@@ -18,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 3411d3e9960235f7fbd948e82cf9498377746b7d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459786"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938757"
 ---
 # <a name="signing-page-project-designer"></a>專案設計工具、簽署頁
 使用 [專案設計工具]的 [簽署] 頁面可簽署應用程式和部署資訊清單，也可簽署組件 (強式名稱簽署)。
@@ -35,12 +33,12 @@ ms.locfileid: "49459786"
 
  此外，金鑰檔資訊的儲存方式會與資訊清單簽署和組件簽署不同。 針對資訊清單簽署，金鑰資訊會儲存在您電腦的密碼編譯儲存資料庫和目前使用者的 Windows 憑證存放區中。 針對組件簽署，金鑰資訊只會儲存在您電腦的密碼編譯儲存資料庫中。
 
- 若要存取 [簽署] 頁面，請選取 [方案總管]中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 [專案設計工具] 出現時，請按一下 [簽署] 索引標籤。
+ 若要存取 [簽署] 頁面，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 [專案設計工具] 出現時，請按一下 [簽署] 索引標籤。
 
 ## <a name="application-and-deployment-manifest-signing"></a>應用程式和部署資訊清單簽署
  [簽署 ClickOnce 資訊清單] 核取方塊
 
- 選取這個核取方塊，可使用公開/私密金鑰組來簽署應用程式和部署資訊清單。 如需做法的詳細資訊，請參閱[如何：簽署應用程式和部署資訊清單](../../ide/how-to-sign-application-and-deployment-manifests.md)。
+ 選取這個核取方塊，可使用公開/私密金鑰組來簽署應用程式和部署資訊清單。 如需這個做法的詳細資訊，請參閱[如何：簽署應用程式與部署資訊清單](../../ide/how-to-sign-application-and-deployment-manifests.md)。
 
  [從存放區選取] 按鈕
 
@@ -101,7 +99,7 @@ ms.locfileid: "49459786"
 
 - [專案屬性參考](../../ide/reference/project-properties-reference.md)
 - [管理組件和資訊清單簽署](../../ide/managing-assembly-and-manifest-signing.md)
-- [如何：簽署應用程式和部署資訊清單](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [如何：簽署應用程式與部署資訊清單](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [如何：簽署組件 (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [如何：使用強式名稱簽署組件](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [強式名稱的組件](/dotnet/framework/app-domains/strong-named-assemblies)

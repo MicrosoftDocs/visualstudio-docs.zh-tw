@@ -10,17 +10,17 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], current item
 - SelectionChange event
 - Outlook [Office development in Visual Studio], current item
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93d1d565664e9851310e9138fef7f6d14041c865
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e72928c6244ba15a96bdedd7aba6b59c1e50e708
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945947"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875091"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>HOW TO：以程式設計方式判斷目前的 Outlook 項目
   這個範例會使用`Explorer.SelectionChange`事件，以顯示目前的資料夾，然後選取的項目的一些資訊的名稱。 程式碼接著會顯示選取的項目。  

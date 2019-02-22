@@ -1,7 +1,6 @@
 ---
 title: 匿名方法程式碼分析警告
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - methods, anonymous
@@ -13,15 +12,15 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47f90e0a9ca01e76ea1a3686c790dcf00a4becde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a10c5baaed3a98e44d581b6ddb8d6e3a1883d079
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860776"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940486"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>匿名方法和程式碼分析
 

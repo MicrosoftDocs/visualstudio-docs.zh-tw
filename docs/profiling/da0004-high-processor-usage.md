@@ -1,8 +1,6 @@
 ---
-title: DA0004：處理器使用率高 | Microsoft Docs
-ms.custom: ''
+title: DA0004：高處理器使用率 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAHighProcessorUsage
@@ -12,17 +10,17 @@ f1_keywords:
 ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87f418c8f145d13dee575c9d45d192a59547e6a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 274027f1877c5274e0f78da7634c7ac5109380ac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920881"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990065"
 ---
-# <a name="da0004-high-processor-usage"></a>DA0004：處理器使用率高
+# <a name="da0004-high-processor-usage"></a>DA0004：高處理器使用率
 
 |||  
 |-|-|  

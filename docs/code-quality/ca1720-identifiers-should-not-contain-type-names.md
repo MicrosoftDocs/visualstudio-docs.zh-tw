@@ -1,7 +1,6 @@
 ---
 title: CA1720:識別項名稱不應該包含類型名稱
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1720
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c95ee48f-f23a-45f0-ac9e-a3c1ecfabdea
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dd351368ddb66cb389eee12b23dcff91b0653ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f233863667ea7be6ecef088537fde9a104b19906
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912265"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920752"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720:識別項名稱不應該包含類型名稱
 
@@ -73,15 +72,15 @@ ms.locfileid: "53912265"
 
 - 浮動
 
-- float32
+- Float32
 
-- float64
+- Float64
 
 此外，參數的名稱也使核對下列的語言無關的資料型別名稱，不區分大小寫的方式：
 
 - Object
 
-- obj
+- Obj
 
 - Boolean
 

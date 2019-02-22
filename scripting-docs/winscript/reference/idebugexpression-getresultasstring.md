@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::GetResultAsString |Microsoft 文件
+title: IDebugExpression::GetResultAsString |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 557fe65859d1e3046d64884982070ad233e12559
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6cee33b5547e30f913407b02a3befd449dda6aeb
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728248"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097353"
 ---
 # <a name="idebugexpressiongetresultasstring"></a>IDebugExpression::GetResultAsString
-傳回運算式評估為字串和作業的傳回值的結果。  
+傳回字串，以及作業的傳回值的運算式評估的結果。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetResultAsString(  
    HRESULT*  phrResult,  
    BSTR*     pbstrResult  
@@ -47,15 +47,15 @@ HRESULT GetResultAsString(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`E_PENDING`|作業仍然是暫止。|  
+|`E_PENDING`|此作業仍然是暫止。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法傳回的運算式評估為字串和作業的結果`HRESULT`。  
+ 這個方法傳回的運算式評估為字串，而作業的結果`HRESULT`。  
   
- 這個方法會傳回`S_OK`和`phrResult`傳回`E_ABORT`如果`Abort`中止作業。  
+ 這個方法會傳回`S_OK`並`phrResult`會傳回`E_ABORT`如果`Abort`中止作業。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugExpression 介面](../../winscript/reference/idebugexpression-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFrameInfo2 |Microsoft Docs
+title: IEnumDebugFrameInfo2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa2db1f249492702971eb311fe38f76eec3a5b3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4ce2ce06fe26ec420f50597b0377e3f4d174eed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857196"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006852"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 此介面列舉[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構。  

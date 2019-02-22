@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_count |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f6d6ac2f-6d96-4f88-962b-29c0a66890b0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56382811c88f865b45f3e027ced6a78d0d7b80ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 71f69fb0ad4326e5ad3ab3afc768ca468816fa1a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899834"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970860"
 ---
 # <a name="idiasymbolgetcount"></a>IDiaSymbol::get_count
 擷取清單或陣列中的項目數。  
@@ -27,7 +25,7 @@ ms.locfileid: "49899834"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_count (   
+HRESULT get_count (   
    DWORD* pRetVal  
 );  
 ```  
@@ -49,5 +47,5 @@ HRESULT get_count (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ADO.NET performance profiling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f2c18ba6cb7360be904d491f29195eea7add6c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 453dd2d93b8ac3c1a9ba2d194f20ee14897d6fa3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819909"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918650"
 ---
 # <a name="collect-tier-interaction-data"></a>收集階層互動資料
 

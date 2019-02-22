@@ -1,8 +1,6 @@
 ---
-title: 'Idiaenumsourcefiles:: Reset |Microsoft 文件'
-ms.custom: ''
+title: IDiaEnumSourceFiles::Reset | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1df2aeae-2c84-4c35-817e-b85d43022ae2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 678082cfd83cadb9f6155605171c3c62ea083109
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9034215dea94a61ad9d1d03b866f7dec29430224
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468833"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933129"
 ---
 # <a name="idiaenumsourcefilesreset"></a>IDiaEnumSourceFiles::Reset
-列舉序列重設為開頭。  
+將列舉型別序列重設到開頭。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,5 +31,5 @@ HRESULT Reset ();
 ## <a name="return-value"></a>傳回值  
  傳回 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

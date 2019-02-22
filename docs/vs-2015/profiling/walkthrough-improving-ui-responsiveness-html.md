@@ -1,14 +1,9 @@
 ---
-title: 逐步解說：改善 UI 回應性 (HTML) | Microsoft Docs
-ms.custom: ''
+title: 逐步解說：改善 UI 回應性 (HTML) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: 7e5a2524-dbf5-4a40-b5d6-2d1ed7fff3de
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f0cf1b080a0e803beda6682265dc383dc43a33d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b31d5c7d22ae209b46bdd4c422f6c3e7473ec8e0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791136"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758680"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>逐步解說：改善 UI 回應性 (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -207,7 +202,7 @@ ms.locfileid: "51791136"
   
      ![計時器事件](../profiling/media/js-htmlviz-app-timer.png "JS_HTMLViz_App_Timer")  
   
-     我們可以從這份資料中收集到各種細節。 例如:   
+     我們可以從這份資料中收集到各種細節。 例如：  
   
     -   每個 `Timer` 事件 (會以色彩標示指出它是 [正在處理指令碼] 事件) 都包括 `document.createElement` 的呼叫，後面緊接著樣式計算以及 `style.backgroundColor` 和 `appendChild()` 的呼叫。  
   
@@ -247,8 +242,5 @@ ms.locfileid: "51791136"
   
 2.  再次執行 HTML UI 回應性分析工具並檢查 CPU 使用率圖表。 您會發現這次並沒有發生過多的事件，而且 CPU 使用率也下降接近到零， 表示問題修復了。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [HTML UI 回應性](../profiling/html-ui-responsiveness.md)
-
-
-

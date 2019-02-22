@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bacf652d1fd691f17e721851b5b49d0da7acca0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dcb47398b4627558c6f00935b1e7819f06ed6302
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827490"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935081"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage 中的資源
 您可以在 managed VSPackage 本身或原生附屬 UI Dll managed 的附屬 Dll 中內嵌的當地語系化的資源。  

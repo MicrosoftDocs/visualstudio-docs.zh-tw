@@ -1,23 +1,22 @@
 ---
 title: 什麼是偵錯？
 description: 了解偵錯應用程式的意義
-ms.custom: debug-experiments
+ms.custom: debug-experiment
 ms.date: 10/17/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f0aa6cbe09f902ef69e1fd5cb3a2d9712cabf28
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821444"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919326"
 ---
 # <a name="what-is-debugging"></a>什麼是偵錯？
 
@@ -45,11 +44,14 @@ A**偵錯**值表示偵錯組態。 當您啟動應用程式 (按綠色箭號，
 
 ## <a name="when-to-use-a-debugger"></a>使用偵錯工具的時機
 
-偵錯工具是不可或缺的工具，尋找並修正您的應用程式中的 bug。 不過，內容成為王道，而且務必要運用在您的可處置，可協助您快速地消除 bug 或錯誤的所有工具。 某些情況下，「 工具 」 的權限可能是更好的程式碼撰寫做法。 藉由學習何時使用其他工具與偵錯工具，您也將學習如何更有效地使用偵錯工具。 如果您已經知道您需要了解偵錯工具，請參閱[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)。 否則，請依照中的連結**後續步驟**。
+偵錯工具是不可或缺的工具，尋找並修正您的應用程式中的 bug。 不過，內容成為王道，而且務必要運用在您的可處置，可協助您快速地消除 bug 或錯誤的所有工具。 某些情況下，「 工具 」 的權限可能是更好的程式碼撰寫做法。 藉由學習何時使用其他工具與偵錯工具，您也將學習如何更有效地使用偵錯工具。
 
 ## <a name="next-steps"></a>後續步驟
 
-在本文中，您已了解幾個一般偵錯概念。 接下來，您可以開始學習如何使用 Visual Studio 偵錯，以及撰寫程式碼較少的 bug。 下列文章說明C#程式碼範例，但概念適用於 Visual Studio 所支援的所有語言。
+在本文中，您已了解幾個一般偵錯概念。 接下來，您可以開始學習如何使用 Visual Studio 偵錯，以及撰寫程式碼較少的 bug。 下列文章顯示C#程式碼範例，但概念適用於 Visual Studio 所支援的所有語言。
 
 > [!div class="nextstepaction"]
-> [透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)
+> [適合完全初學者的偵錯](../debugger/debugging-absolute-beginners.md)
+
+> [!div class="nextstepaction"]
+> [偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e6f5ec48-09e8-4b9b-9dc9-55f8d883f1b7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54ba9d9ecdf608e8d7598b042a3cf61593a4cfd7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e423f7817d47473111ac6eb1c5293127826c2b99
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914406"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034309"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 指定偵錯引擎 (DE) 應該如何處理指定的例外狀況。  

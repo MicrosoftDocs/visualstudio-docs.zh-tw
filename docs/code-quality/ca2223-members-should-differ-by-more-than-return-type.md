@@ -1,7 +1,6 @@
 ---
 title: CA2223:成員不應該只有在傳回類型上不同
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - MembersShouldDifferByMoreThanReturnType
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: eb326d9f-50d9-48cb-84be-d41c84a8fe09
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c09239fbb904edac6481cee372b9e96e0183b62a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e4e7aa59d273242bd8b97fd4f2777b7edcb5990
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890776"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915861"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223:成員不應該只有在傳回類型上不同
 

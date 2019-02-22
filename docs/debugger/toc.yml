@@ -5,7 +5,7 @@ items:
   items:
   - name: 什麼是偵錯？
     href: what-is-debugging.md
-  - name: 透過撰寫更好的 C# 程式碼來修正錯誤 (Bug)
+  - name: 偵錯技術和工具
     href: write-better-code-with-visual-studio.md
 - name: 快速入門
   items:
@@ -202,6 +202,9 @@ items:
       items:
       - name: 建立原生物件的自訂檢視
         href: create-custom-views-of-native-objects.md
+        items:
+        - name: Visual C++ 自訂視覺化檢視相容性
+          href: visual-cpp-custom-visualizer-compatibility.md
       - name: 建立受控物件的自訂檢視
         href: create-custom-views-of-dot-managed-objects.md
         items:
@@ -359,11 +362,14 @@ items:
     items:
     - name: 對即時 Azure 應用程式進行偵錯
       href: debug-live-azure-applications.md
-      items:
-      - name: 快照集偵錯的常見問題集
-        href: debug-live-azure-apps-faq.md
-      - name: 針對快照集偵錯進行疑難排解
-        href: debug-live-azure-apps-troubleshooting.md
+    - name: 對即時 Azure 虛擬機器應用程式偵錯
+      href: debug-live-azure-virtual-machines.md
+    - name: 對即時 Azure Kubernetes 應用程式偵錯
+      href: debug-live-azure-kubernetes.md
+    - name: 快照集偵錯的常見問題集
+      href: debug-live-azure-apps-faq.md
+    - name: 針對快照集偵錯進行疑難排解
+      href: debug-live-azure-apps-troubleshooting.md
   - name: 對特定應用程式類型進行偵錯
     href: debugging-applications.md
     items:
@@ -515,11 +521,6 @@ items:
         - name: COM 伺服器和容器偵錯
           href: com-server-and-container-debugging.md
           items:
-          - name: 對 COM 伺服器進行偵錯
-            href: how-to-debug-com-servers.md
-            items:
-            - name: SDI 伺服器應用程式
-              href: sdi-server-applications.md
           - name: 使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯
             href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
         - name: 對 ActiveX 控制項進行偵錯
@@ -588,7 +589,7 @@ items:
         - name: 附加至指令碼
           href: how-to-attach-to-script.md
           items:
-          - name: 警告:已停用指令碼偵錯
+          - name: 警告：已停用指令碼偵錯
             href: warning-script-debugging-disabled.md
     - name: 對 WCF 服務進行偵錯
       href: debugging-wcf-services.md
@@ -840,9 +841,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 149cc7c04aad0d070a538ef32aa6b14c015eee56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 703836e5453534998db5090d904aae4339993c43
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947474"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335463"

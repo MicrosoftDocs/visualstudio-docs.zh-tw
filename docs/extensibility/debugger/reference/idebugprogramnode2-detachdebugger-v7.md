@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IDebugProgramNode2::DetachDebugger_V7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 603c459d39f8141789b22955e916e3e8520214fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8393eb7bc712de28e2378a9ad09081efe76eca6b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924146"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933941"
 ---
 # <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
 

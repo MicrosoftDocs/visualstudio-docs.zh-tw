@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::SetDescription |Microsoft 文件
+title: IDebugApplicationThread::SetDescription |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 941e2e5ac9843c8894a4dd83e23ab132620b8a02
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9d1e1efc44b6e7f2a7d0bb3bf2de1a492c6793c8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725708"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089852"
 ---
 # <a name="idebugapplicationthreadsetdescription"></a>IDebugApplicationThread::SetDescription
 設定這個執行緒的描述。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT SetDescription(  
    LPCOLESTR  pstrDescription  
 );  
@@ -43,7 +43,7 @@ HRESULT SetDescription(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

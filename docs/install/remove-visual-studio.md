@@ -4,7 +4,6 @@ titleSuffix: ''
 description: 了解如何逐步從您的電腦完全移除 Visual Studio。
 ms.date: 09/12/2017
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - uninstall
@@ -18,15 +17,15 @@ f1_keywords:
 ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26d29ccf0bfa834ec7581fea11a606ce0558cf74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f996e5b284393be91d4e83e3e403bdbb1073e6ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985663"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909645"
 ---
 # <a name="remove-visual-studio-2017"></a>移除 Visual Studio 2017
 

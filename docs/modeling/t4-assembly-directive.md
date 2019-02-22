@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8ed24958d0f8bf214aa701261df3dacea56107c6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6be7cad9034f67a00d8f795a5c4f4f9ad45c1abe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844271"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922364"
 ---
 # <a name="t4-assembly-directive"></a>T4 組件指示詞
 

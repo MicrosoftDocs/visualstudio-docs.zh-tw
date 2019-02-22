@@ -1,8 +1,6 @@
 ---
 title: 專案設計工具、發行頁
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
@@ -11,15 +9,15 @@ helpviewer_keywords:
 - Publish page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 894328fed089ea631af41f7aa7ef1f08d6dc4d8f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 00202ab13001a56d472027d538bc5560f936ef93
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179498"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909345"
 ---
 # <a name="publish-page-project-designer"></a>專案設計工具、發行頁
 [專案設計工具]  的 [發行]  頁面，可用以設定 ClickOnce 部署的屬性。
@@ -79,10 +77,10 @@ ms.locfileid: "39179498"
 
  使用目前的設定發行應用程式。 這相當於 [發行精靈] 中的 [完成] 按鈕。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [發行 ClickOnce 應用程式](../../deployment/publishing-clickonce-applications.md)
-- [如何：使用發行精靈發行 ClickOnce 應用程式](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [如何：指定 Visual Studio 複製檔案的位置](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
 - [如何：指定位置讓終端使用者從此處執行安裝作業](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
 - [如何：指定技術支援的連結](../../deployment/how-to-specify-a-link-for-technical-support.md)
@@ -91,7 +89,7 @@ ms.locfileid: "39179498"
 - [如何：設定 ClickOnce 發行版本](../../deployment/how-to-set-the-clickonce-publish-version.md)
 - [如何：自動累加 ClickOnce 的發行版本](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
 - [如何：指定哪些檔案是由 ClickOnce 發行](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
-- [如何：使用 ClickOnce 應用程式安裝必要條件](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [如何：隨著 ClickOnce 應用程式安裝必要軟體](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [如何：管理 ClickOnce 應用程式的更新](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
 - [如何：變更 ClickOnce 應用程式的發行語言](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
 - [如何：指定 ClickOnce 應用程式的開始功能表名稱](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)

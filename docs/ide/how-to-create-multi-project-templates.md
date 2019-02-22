@@ -1,7 +1,6 @@
 ---
 title: 建立多重專案範本
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -9,13 +8,13 @@ helpviewer_keywords:
 - multi-project templates
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 34d15de5012ff640ba05b106321c2a534557c3e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 5a596d37d4446332461709cb6737d4f526e9b02e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925819"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970877"
 ---
 # <a name="how-to-create-multi-project-templates"></a>HOW TO：建立多重專案範本
 
@@ -69,17 +68,20 @@ ms.locfileid: "53925819"
     </TemplateContent>
     ```
 
-## <a name="to-create-a-multi-project-template-from-an-existing-solution"></a>從現有的解決方案中建立多專案範本
+## <a name="create-a-multi-project-template-from-an-existing-solution"></a>從現有的解決方案中建立多專案範本
 
 1. 建立解決方案並新增兩個或多個專案。
 
 1. 自訂專案，直到它們可以匯出成範本為止。
 
+   > [!TIP]
+   > 如果您使用[範本參數](template-parameters.md)且您想要從父代範本參考變數，請在參數名稱加上前置詞 `ext_`。 例如，`$ext_safeprojectname$`。
+
 1. 選擇 [專案] 功能表上的 [匯出範本]。
 
    [匯出範本精靈] 隨即開啟。
 
-1. 在 [選擇範本類型] 頁面上，選取 [專案範本]。 選取您想要匯出至範本的專案，然後選擇 [下一步]。
+1. 在 [選擇範本類型] 頁面上，選取 [專案範本]。 選取其中一個您想要匯出至範本的專案，然後選擇 [下一步]。 (對解決方案中的每個專案重複這些步驟)。
 
 1. 在 [選取範本選項] 頁面上，輸入範本的名稱和選擇性描述、圖示和預覽影像。 選擇 [完成]。
 

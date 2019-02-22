@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 893c55f00d2067eb481efdf9482ab4e8f47aaaf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fefaa84cb00bdf0ccabe825067cb86f6c231a840
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886290"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017418"
 ---
 # <a name="commandtable-element"></a>CommandTable 元素
 CommandTable 是根項目 *.vsct*檔案。 這是定義 VSPackage 提供給 IDE 命令的類型與實際配置的檔案。 命令可能會包含功能表項目、 功能表、 工具列和下拉式方塊。 如需詳細資訊，請參閱 < [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
@@ -46,8 +46,8 @@ CommandTable 是根項目 *.vsct*檔案。 這是定義 VSPackage 提供給 IDE 
   
 | 屬性 | 描述 |
 |-----------| - |
-| xmlns | 必要項。 XML 命名空間：<br /><br /> xmlns ="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>」<br /><br /> xmlns:xs ="<http://www.w3.org/2001/XMLSchema>」 |
-| 語言 | 選擇性。 [語言] 屬性可以用來指定所有的預設語言\<字串 > 命令表中的項目。  如果未指定語言，就會使用目前的處理序的語言：<br /><br /> language ="en-我們" |
+| xmlns | 必要項。 XML 命名空間：<br /><br /> xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs="<http://www.w3.org/2001/XMLSchema>" |
+| 語言 | 選擇性。 [語言] 屬性可以用來指定所有的預設語言\<字串 > 命令表中的項目。  如果未指定語言，就會使用目前的處理序的語言：<br /><br /> language="en-us" |
   
 ### <a name="child-elements"></a>子元素  
   

@@ -1,14 +1,9 @@
 ---
 title: 處理序檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.process
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 6d4e2a5d-9f17-4ece-a6f1-75836e1fc382
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56fb301436b3fbe9374301fa4f7a8fd421485cbb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0436401c458a7d6771a2785028a8b5fe0ef57546
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794500"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802323"
 ---
 # <a name="process-view"></a>處理序檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,10 +43,7 @@ ms.locfileid: "51794500"
 |**開始時間**|從程式碼剖析開始到處理序或執行緒開始的毫秒數或處理器週期數。|  
 |**結束時間**|從程式碼剖析開始到處理序或執行緒結束的毫秒數或處理器週期數。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)   
  [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)   
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)
-
-
-

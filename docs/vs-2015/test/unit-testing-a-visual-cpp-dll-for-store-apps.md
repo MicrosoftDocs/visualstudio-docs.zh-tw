@@ -1,25 +1,20 @@
 ---
 title: 針對市集應用程式的 Visual C++ DLL 進行單元測試 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
 caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
-manager: robinr
-ms.openlocfilehash: e3cce1fcda4ccc9a4e61b5a02d719e1ceaa1d77d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dbdf8ccb423058f10246a439838d1b970d65109f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816491"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771191"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>對市集應用程式的 Visual C++ DLL 進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -354,6 +349,3 @@ ms.locfileid: "49816491"
     >  一組穩定而良好的單元測試，可確認您並未在變更程式碼時引入錯誤。  
     >   
     >  將重構作業與其他變更分開。
-
-
-

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a6a1efdc-b243-40c8-a778-6f69f6b018be
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afe23f403fd5276b1c36c63cdc954e7fe0c24193
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 85cfadc626ac28061ec91da2ea1c0d9c063994bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896795"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948190"
 ---
 # <a name="processes"></a>處理序
 在偵錯工具架構中，*程序*:  

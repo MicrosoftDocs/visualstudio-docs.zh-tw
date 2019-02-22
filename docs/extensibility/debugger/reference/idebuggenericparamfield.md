@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField |Microsoft Docs
+title: IDebugGenericParamField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: ba24f499-5ba7-4c67-83e6-923229b52327
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c42c9b19e52511097953cf658b3a5ce0decd5e4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e7cc68af4d5b53a36e9affc038951e2be63de90f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871608"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954614"
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
 表示 managed 程式碼的泛型類型參數。  

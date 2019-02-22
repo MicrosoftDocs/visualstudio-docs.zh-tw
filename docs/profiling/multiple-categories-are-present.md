@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5c7ec07-8052-4df7-a0ca-7ec8bb3eee18
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1c366e740b5633e6bcd1db142930a710af4cdff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56588ef029e71bcd8e860dff5bf86bc2e87000a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858087"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956814"
 ---
 # <a name="multiple-categories-are-present"></a>存在多個分類
 已選取包含指定時間範圍內多種活動的區段。 請注意，會顯示兩種色彩，一個垂直堆疊在另一個上。 這些色彩只代表指定時間範圍內頻率最高的前兩項活動。 這兩項活動的頻率顯示彼此相關，不是各佔直條的三分之一和三分之二就是各佔對半。 若要查看詳細資訊，請嘗試放大執行緒檢視的這個區段。  

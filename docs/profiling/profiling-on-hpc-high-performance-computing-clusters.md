@@ -1,8 +1,6 @@
 ---
 title: 在 HPC (高效能運算) 叢集上進行程式碼剖析 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
@@ -18,15 +16,15 @@ helpviewer_keywords:
 - HPC profiling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df5a05b3ffe4a8ab05fb548a8ca41b6a61f747d5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842373"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963485"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>在 HPC (高效能運算) 叢集上進行分析
 
@@ -55,8 +53,8 @@ ms.locfileid: "49842373"
 | | |
 |------------------| - |
 | *%HeadNode%* | 叢集前端節點的名稱。 |
-| *%FxPath%* | [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 安裝程式的路徑。 在 Visual Studio 安裝媒體的路徑是︰WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
-| *%ProfilerPath%* | 獨立版本的程式碼剖析工具安裝程式路徑。 在 Visual Studio 安裝媒體的路徑是︰Standalone Profiler\x64\vs_profiler.exe |
+| *%FxPath%* | [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 安裝程式的路徑。 在 Visual Studio 安裝媒體上的路徑為：WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%ProfilerPath%* | 獨立版本的程式碼剖析工具安裝程式路徑。 在 Visual Studio 安裝媒體上的路徑為：Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>在 HPC 計算節點上進行分析
 
@@ -126,7 +124,7 @@ ms.locfileid: "49842373"
 
 ### <a name="hpc-launch-properties"></a>HPC 啟動屬性
 
-|屬性|描述|
+|屬性|說明|
 |--------------|-----------------|
 |**前端節點**|指定可在執行程式碼剖析時做為 HPC 前端節點的電腦。|
 |**處理序數目**|指定要在已進行程式碼剖析的應用程式中執行的應用程式執行個體數目。|
@@ -137,7 +135,7 @@ ms.locfileid: "49842373"
 
 ### <a name="advanced-properties"></a>進階屬性
 
-| 屬性 | 描述 |
+| 屬性 | 說明 |
 |---------------------------------------| - |
 | **專案名稱** | 目前 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 專案或解決方案的名稱。 |
 | **於分析工具停止時清除** | 為 true 時，會將已部署至執行目錄的二進位檔移除。 此步驟不會移除由使用者程式建立的檔案和目錄。 如果是由 IDE 建立執行目錄和部署目錄，IDE 會嘗試加以移除，但不是由 IDE 所部署的檔案，則不會嘗試移除。 |
@@ -150,4 +148,3 @@ ms.locfileid: "49842373"
 | **剖析前指令碼引數** | 指定要傳遞至剖析前指令碼的引數。 |
 | **剖析後指令碼** | 在程式碼剖析工作階段結束之後，指定要在本機開發電腦上執行指令碼的路徑和檔案名稱。 |
 | **剖析後指令碼引數** | 指定要傳遞至剖析後指令碼的引數。 |
-

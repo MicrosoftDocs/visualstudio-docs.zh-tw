@@ -1,14 +1,9 @@
 ---
 title: 摘要檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.summary
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fdacfcba18d465685053cdea4581a5806c25db9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bfba1981fb6becea34fb567a2f7ae2e6c06896d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757319"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767853"
 ---
 # <a name="summary-view"></a>摘要檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,15 +52,12 @@ ms.locfileid: "51757319"
 |**顯示修改過的呼叫樹狀圖**|顯示 [呼叫樹狀圖檢視] 中耗費最多資源的執行路徑。 如需詳細資訊，請參閱[呼叫樹狀圖檢視](../profiling/call-tree-view.md)。|  
 |**顯示熱門程式行**|不適用於使用檢測方法所收集的分析資料。 在 [程式行檢視] 中，顯示耗費最多資源的原始程式碼行。 如需詳細資訊，請參閱[檢視](../profiling/lines-view.md)。|  
 |**比較報告**|顯示 [選取要進行比較的分析檔案] 對話方塊，您可以在其中指定要與目前資料檔案比較的另一個分析資料檔案。 如需詳細資訊，請參閱[比較效能資料檔案](../profiling/comparing-performance-data-files.md)。|  
-|**匯出報告資料**|顯示 [匯出報告] 對話方塊，您可以在其中指定一或多個報表檢視以將另存為逗號分隔值 (.csv) 或 .xml 檔案。 如需詳細資訊，請參閱[如何：匯出分析工具報表](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451)。|  
-|**儲存分析的報告**|將目前分析資料檔案儲存為 .vsps 檔案，這在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的介面中開啟地更為快速。 如需詳細資訊，請參閱[如何：儲存已分析的分析資料檔案](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556)。|  
+|**匯出報告資料**|顯示 [匯出報告] 對話方塊，您可以在其中指定一或多個報表檢視以將另存為逗號分隔值 (.csv) 或 .xml 檔案。 如需詳細資訊，請參閱[如何：匯出分析工具報表](http://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451)。|  
+|**儲存分析的報告**|將目前分析資料檔案儲存為 .vsps 檔案，這在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的介面中開啟地更為快速。 如需詳細資訊，請參閱[如何：儲存已分析的分析資料檔案](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)。|  
 |**篩選報告資料**|顯示分析報表篩選窗格，您可以在其中指定準則來限制報表檢視中的資料。 如需詳細資訊，請參閱[效能報表檢視篩選](../profiling/performance-report-view-filter.md)|  
 |**切換全螢幕**|切換報表檢視的全螢幕模式。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [摘要檢視](../profiling/summary-view-sampling-data.md)   
  [摘要檢視](../profiling/summary-view-instrumentation-data.md)   
  [摘要檢視](../profiling/summary-view-dotnet-memory-data.md)
-
-
-

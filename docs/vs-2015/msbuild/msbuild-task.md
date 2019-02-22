@@ -1,14 +1,9 @@
 ---
 title: MSBuild 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3782db2b2c3fb3cdc5d0cc9ed21459c2b2215250
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 15a6f0d3a0a50068d05a96994cb01462f07f3258
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878254"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54772333"
 ---
 # <a name="msbuild-task"></a>MSBuild 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49878254"
 |---------------|-----------------|  
 |`BuildInParallel`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，同時也會建置 `Projects` 參數中指定的專案 (如果可能)。 預設為 `false`。|  
 |`Projects`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要建置的專案檔。|  
-|`Properties`|選擇性的 `String` 參數。<br /><br /> 作為全域屬性套用至子專案的屬性名稱/值組的分號分隔清單。 當您指定此參數時，它在功能上相當於當您使用 [MSBuild.exe](../msbuild/msbuild-command-line-reference.md) 建置時，設定具有 **/property** 參數的屬性。 例如: <br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> 當您透過 `Properties` 參數將屬性傳遞至專案時，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會建立專案的新執行個體，即使已經載入專案檔也一樣。 建立專案的新執行個體之後，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會將它視為具有不同全域屬性，且可使用專案的其他執行個體同時建置的不同專案。 例如，Release 組態可以與 Debug 組態同時建置。|  
+|`Properties`|選擇性的 `String` 參數。<br /><br /> 作為全域屬性套用至子專案的屬性名稱/值組的分號分隔清單。 當您指定此參數時，它在功能上相當於當您使用 [MSBuild.exe](../msbuild/msbuild-command-line-reference.md) 建置時，設定具有 **/property** 參數的屬性。 例如：<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> 當您透過 `Properties` 參數將屬性傳遞至專案時，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會建立專案的新執行個體，即使已經載入專案檔也一樣。 建立專案的新執行個體之後，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會將它視為具有不同全域屬性，且可使用專案的其他執行個體同時建置的不同專案。 例如，Release 組態可以與 Debug 組態同時建置。|  
 |`RebaseOutputs`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，已建置的專案中目標輸出項目的相對路徑就會將其路徑調整為相對於呼叫的專案。 預設為 `false`。|  
 |`RemoveProperties`|選擇性的 `String` 參數。<br /><br /> 指定要移除的全域屬性組。|  
 |`RunEachTargetSeparately`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工作即會一次一個叫用傳遞至 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 之清單中的每個目標，而不是同時叫用。 將此參數設定為 `true`，可保證即使先前叫用的目標失敗，還是會叫用後續的目標。 否則，建置錯誤便會停止叫用所有後續的目標。 預設為 `false`。|  
@@ -195,9 +190,6 @@ ms.locfileid: "49878254"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)
-
-
-

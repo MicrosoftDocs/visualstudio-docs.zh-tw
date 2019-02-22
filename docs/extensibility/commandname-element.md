@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a338b767-aa7e-4536-9908-e19a50ab60ac
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a05be5b08afa04dc8ca3e9c0a5eb2a9d015a66c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f4590d8586667421c7d97e3010166e8b496ed7c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886393"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997789"
 ---
 # <a name="commandname-element"></a>CommandName 元素
 `CommandName`項目會指定在的 鍵盤 類別中所顯示的文字**選項** 對話方塊中，然後在**命令**清單中**自訂**對話方塊方塊。  

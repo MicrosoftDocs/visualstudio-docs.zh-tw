@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_upperbound |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a77dcafa-ea3f-45da-826d-8f9b4489a03f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc90b0456b2274bc995262244b2432c89a34aba9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 25ed8f3bcb1b4e8e2253dc1531bcdf8fd08be1e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849095"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021685"
 ---
 # <a name="idiasymbolgetupperbound"></a>IDiaSymbol::get_upperBound
 擷取表示 FORTRAN 陣列維度的上限的符號。  
@@ -27,7 +25,7 @@ ms.locfileid: "49849095"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_upperBound (   
+HRESULT get_upperBound (   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -42,5 +40,5 @@ HRESULT get_upperBound (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

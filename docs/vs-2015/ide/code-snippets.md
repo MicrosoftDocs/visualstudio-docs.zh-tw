@@ -1,14 +1,9 @@
 ---
 title: 程式碼片段 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
@@ -23,13 +18,13 @@ ms.assetid: 85976ad9-4c9a-4e7b-896e-66ec6f955199
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 317471f73c9e7507768b9b600ce995a35b000c23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e28ebd46a03983e60ebdd3fc22dd55d85249f710
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242164"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774869"
 ---
 # <a name="code-snippets"></a>程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +85,7 @@ End Property
   
  您可以在 [程式碼片段管理員] 對話方塊中使用 [新增] 和 [移除] 按鈕，來新增和移除程式碼片段目錄。 若要新增個別程式碼片段，請使用 [匯入] 按鈕。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)   
  [如何：散發程式碼片段](../ide/how-to-distribute-code-snippets.md)   
  [使用程式碼片段的最佳做法](../ide/best-practices-for-using-code-snippets.md)   
@@ -98,6 +93,3 @@ End Property
  [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)   
  [Visual C++ 程式碼片段](../ide/visual-cpp-code-snippets.md)   
  [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)
-
-
-

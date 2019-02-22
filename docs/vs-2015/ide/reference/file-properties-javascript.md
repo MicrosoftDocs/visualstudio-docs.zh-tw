@@ -1,14 +1,9 @@
 ---
 title: JavaScript、檔案屬性 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
 - javascript.project.property.expandedsdknode.uri
@@ -30,13 +25,13 @@ ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909727"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780365"
 ---
 # <a name="file-properties-javascript"></a>JavaScript、檔案屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "49909727"
   
 - **內容**：檔案包含在套件資訊清單中。 例如，此設定是 .htm、.js、.css、影像、音訊或視訊檔案的預設值。  
   
-- **資訊清單**– 檔案未包含在套件資訊清單中。 相反地，產生套件資訊清單時，檔案是用於輸入。 這是 package.appxmanifest 檔案的預設值。  
+- **資訊清單**：檔案未包含在套件資訊清單中。 相反地，產生套件資訊清單時，檔案是用於輸入。 這是 package.appxmanifest 檔案的預設值。  
   
 - **資源**：檔案未包含在套件資訊清單中。 相反地，會以進入套件資訊清單的套件資源索引 (PRI) 編製檔案內容的索引。 這通常用於資源檔。  
   
@@ -96,13 +91,10 @@ ms.locfileid: "49909727"
  顯示所參考 SDK 檔案的路徑。  
   
 ### <a name="uri"></a>URI  
- 顯示必須包含在專案 HTML 或 JavaScript 檔案，以包含原始程式檔的檔案的 URI。  
+ 顯示必須包含在專案 HTML 或 JavaScript 檔案中的 URI，以將檔案包含為來源檔案。  
   
 ### <a name="version"></a>版本  
  顯示參考的版本。  
   
-## <a name="see-also"></a>另請參閱  
- [NIB： 專案屬性 (Visual Studio)](http://msdn.microsoft.com/en-us/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)
-
-
-
+## <a name="see-also"></a>請參閱  
+ [NIB： 專案屬性 (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

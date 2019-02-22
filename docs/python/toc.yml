@@ -81,7 +81,7 @@ items:
     - name: Azure 雲端服務範本
       href: python-azure-cloud-service-project-template.md
   - name: Azure SDK for Python
-    href: azure-sdk-for-python.md
+    href: /python/azure/?view=azure-python
 - name: 作法指南
   items:
   - name: 管理 Python 環境
@@ -140,9 +140,9 @@ items:
     href: python-item-templates.md
   - name: 選項
     href: python-support-options-and-settings-in-visual-studio.md
-ms.openlocfilehash: e295581bbb60c5febc98cde837f6e498aa93d042
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: c9a3b05080d46cd3009fe61e79d6ac6713aeaf32
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441583"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231554"

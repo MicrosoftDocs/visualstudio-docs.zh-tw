@@ -1,8 +1,6 @@
 ---
-title: 如何：列印類別圖表 (類別設計工具)
+title: HOW TO：列印類別圖表 (類別設計工具)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - printing [Visual Studio], class diagrams
@@ -10,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: 62c87425-3446-41fb-943c-1f86397883c8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8408eb638d8a8961e144c2e09da896817ae9bea2
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 7cea673bdf0378c5ce2c5e3e1925139523b498a5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956662"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925198"
 ---
-# <a name="how-to-print-class-diagrams"></a>如何：列印類別圖表
+# <a name="how-to-print-class-diagrams"></a>HOW TO：列印類別圖表
 
 您可以使用 Visual Studio 的列印功能來列印類別圖表。
 

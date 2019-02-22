@@ -1,7 +1,6 @@
 ---
 title: CA1027:必須以 FlagsAttribute 標記列舉
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - MarkEnumsWithFlags
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 249e882c-8cd1-4c00-a2de-7b6bdc1849ff
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a559c20cd45ae39210421b647e8efd6c0928ade
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 185ff6a133fdb990e350d5d5737a40a27c24d588
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882100"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935260"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027:必須以 FlagsAttribute 標記列舉
 

@@ -1,8 +1,6 @@
 ---
 title: DA0003：許多核心樣本 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DA0003
@@ -12,15 +10,15 @@ f1_keywords:
 ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aec22a1312ec4b3ee404b9f701f1f34264d79dff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 895fd206a6ca816726606ebc57e2fc0a865ee2f8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894738"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923077"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003：許多核心樣本
 

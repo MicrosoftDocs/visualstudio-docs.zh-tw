@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477d18f3cb5f187b61d78d779339e2c43c402a43
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79eb0bdfdcb9f0b64258128b801e65f257e0ed3e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854733"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949944"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 函式
 此函式會判斷哪些目錄和 （選擇性） 檔案會儲存在原始檔控制，提供要檢查的目錄清單。  
@@ -51,7 +51,7 @@ SCCRTN SccPopulateDirList(
  pvCallerData  
  [in]要傳遞的值不變之回呼函式。  
   
- Stored  
+ fOptions  
  [in]控制目錄的處理方式的值的組合 (請參閱 「 PopulateDirList 旗標 」 一節[特定的命令所使用的位元旗標](../extensibility/bitflags-used-by-specific-commands.md)可能的值)。  
   
 ## <a name="return-value"></a>傳回值  

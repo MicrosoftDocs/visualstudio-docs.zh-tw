@@ -1,21 +1,20 @@
 ---
 title: 計算程式碼度量
 ms.date: 11/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4be2b3672741d0bcae64085d1140e5c2ae2bbf63
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f989e5ec028f3a296585c54eb17b54f4da7c1cf0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855568"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917723"
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 

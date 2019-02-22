@@ -1,8 +1,6 @@
 ---
 title: '&lt;檔案&gt;項目 （ClickOnce 應用程式） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
@@ -21,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b516a8e63d29f91b3404e8e62d910ca18ca69c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f2d71192b38ea14ade737ecb4b34e3cc25f8b91d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933530"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984713"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;檔案&gt;項目 （ClickOnce 應用程式）
 識別所有的非組件檔案下載，並由應用程式。  
@@ -85,34 +83,34 @@ ms.locfileid: "49933530"
 </file>  
 ```  
 
-## <a name="elements-and-attributes"></a>項目和屬性  
- `file` 項目是選擇性的。 項目具有下列屬性。  
+## <a name="elements-and-attributes"></a>元素和屬性  
+ `file` 項目是選擇性的。 此元素具有下列屬性。  
 
 |屬性|描述|  
 |---------------|-----------------|  
-|`name`|必要。 識別檔案的名稱。|  
-|`size`|必要。 指定的大小，以位元組為單位的檔案。|  
+|`name`|必要項。 識別檔案的名稱。|  
+|`size`|必要項。 指定的大小，以位元組為單位的檔案。|  
 |`group`|選擇性，如果`optional`屬性沒有指定或設為`false`; 需要`optional`是`true`。 這個檔案所屬的群組名稱。 名稱可以是任何開發人員所選擇的 Unicode 字串值，以及用於下載檔案使用隨<xref:System.Deployment.Application.ApplicationDeployment>類別。|  
 |`optional`|選擇性。 指定這個檔案必須下載第一個應用程式時執行，或是否檔案應該位於只能在伺服器上等到應用程式則會依需求要求它。 如果`false`或未定義，會下載檔案時第一次執行或安裝應用程式。 如果`true`、`group`必須指定有效的應用程式資訊清單。 `optional` 不能為 true 如果`writeableType`指定了值`applicationData`。|  
-|`writeableType`|選擇性。 指定這個檔案是一個資料檔案。 目前唯一有效的值是`applicationData`。|  
+|`writeableType`|選擇性。 指定這個檔案是一個資料檔案。 目前唯一有效的值是 `applicationData`。|  
 
-## <a name="typelib"></a>型別程式庫  
- `typelib`項目是選擇性檔案項目的子系。 元素會描述屬於 COM 元件的類型程式庫。 項目具有下列屬性。  
+## <a name="typelib"></a>typelib  
+ `typelib`項目是選擇性檔案項目的子系。 元素會描述屬於 COM 元件的類型程式庫。 此元素具有下列屬性。  
 
 |屬性|描述|  
 |---------------|-----------------|  
-|`tlbid`|必要。 指派給類型程式庫的 GUID。|  
-|`version`|必要。 型別程式庫版本號碼。|  
-|`helpdir`|必要。 包含元件的說明檔案的目錄。 可能是長度為零。|  
+|`tlbid`|必要項。 指派給類型程式庫的 GUID。|  
+|`version`|必要項。 型別程式庫版本號碼。|  
+|`helpdir`|必要項。 包含元件的說明檔案的目錄。 可能是長度為零。|  
 |`resourceid`|選擇性。 地區設定識別碼 (LCID) 的十六進位字串表示法。 它是一到四個十六進位數字，不含 0x 前置詞，也沒有前置零。 LCID 可能有次要中性語言識別碼。|  
 |`flags`|選擇性。 型別程式庫旗標，這個類型程式庫的字串表示。 具體來說，它應該是"RESTRICTED"、"CONTROL"、"HIDDEN"和"HASDISKIMAGE 」 的其中一個。|  
 
 ## <a name="comclass"></a>comClass  
- `comClass`項目是選用的子系`file`項目，但如果，則需要[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式包含想要使用免註冊 COM 部署的 COM 元件 項目具有下列屬性。  
+ `comClass`項目是選用的子系`file`項目，但如果，則需要[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式包含想要使用免註冊 COM 部署的 COM 元件 此元素具有下列屬性。  
 
 |屬性|描述|  
 |---------------|-----------------|  
-|`clsid`|必要。 表示做為 GUID 的 COM 元件類別識別碼。|  
+|`clsid`|必要項。 表示做為 GUID 的 COM 元件類別識別碼。|  
 |`description`|選擇性。 類別名稱。|  
 |`threadingModel`|選擇性。 同處理序 COM 類別所使用的執行緒模型。 如果此屬性為 null，則會使用沒有執行緒模型。 元件建立用戶端的主執行緒上，從其他執行緒的呼叫封送處理至這個執行緒。 下列清單顯示有效的值：<br /><br /> `Apartment`、 `Free`、 `Both`和 `Neutral`。|  
 |`tlbid`|選擇性。 此 COM 元件的類型程式庫的 GUID。|  
@@ -128,7 +126,7 @@ ms.locfileid: "49933530"
 
 |屬性|描述|  
 |---------------|-----------------|  
-|`iid`|必要。 介面識別碼 (IID) 這由這個 proxy。 IID 必須包含在括號括住它。|  
+|`iid`|必要項。 介面識別碼 (IID) 這由這個 proxy。 IID 必須包含在括號括住它。|  
 |`baseInterface`|選擇性。 從其介面則是所參考之介面的 IID`iid`衍生。|  
 |`numMethods`|選擇性。 實作介面的方法數目。|  
 |`name`|選擇性。 因為它的介面名稱會出現在程式碼。|  
@@ -140,7 +138,7 @@ ms.locfileid: "49933530"
 
 |屬性|描述|  
 |---------------|-----------------|  
-|`iid`|必要。 介面識別碼 (IID) 這由這個 proxy。 IID 必須包含在括號括住它。|  
+|`iid`|必要項。 介面識別碼 (IID) 這由這個 proxy。 IID 必須包含在括號括住它。|  
 |`baseInterface`|選擇性。 從其介面則是所參考之介面的 IID`iid`衍生。|  
 |`numMethods`|選擇性。 實作介面的方法數目。|  
 |`Name`|選擇性。 因為它的介面名稱會出現在程式碼。|  

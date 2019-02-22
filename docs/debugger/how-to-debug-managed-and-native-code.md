@@ -11,16 +11,16 @@ helpviewer_keywords:
 - mixed mode debugging
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 475160a7ba08cb334eeb26be26731deea547f6ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9bdc4afb0d5f2b9f9f4ae0385b63372644929f8
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920864"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690238"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教學課程：在同一個偵錯工作階段中進行 C# 和 C++ 偵錯
 
@@ -44,7 +44,7 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 - **使用 C++ 的桌面開發**
 - **.NET 桌面開發**或 **.NET Core 跨平台開發**，視您要建立的應用程式類型而定。
 
-如果您沒有 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 頁面免費進行安裝。
+如果您沒有 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 頁面免費進行安裝。
 
 如果您已安裝 Visual Studio，但沒有所需的工作負載，請在 Visual Studio [新增專案] 對話方塊的左窗格中，選取 [開啟 Visual Studio 安裝程式]。 在 Visual Studio 安裝程式中，選取您所需的工作負載，然後選取 [修改]。
 

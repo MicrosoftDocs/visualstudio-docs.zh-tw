@@ -10,22 +10,20 @@ helpviewer_keywords:
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3f9cf8c6a75e5f2a517931bf0fd858ea8f8f860c
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
-ms.translationtype: MT
+ms.openlocfilehash: 00bd9dff41e6c57fc6969f4198f96d0e209e2a77
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281741"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943684"
 ---
-# <a name="n-tier-data-applications-overview"></a>多層式架構資料應用程式概觀
+# <a name="n-tier-data-applications-overview"></a>多層式架構 (N-Tier) 資料應用程式概觀
 *多層式架構*資料應用程式是指分隔成多個資料應用程式*層*。 也稱為 「 分散式應用程式 」 和 「 多層式應用程式，多層式架構應用程式在個別分成離散層級的用戶端與伺服器之間分散處理。 當您開發應用程式以存取資料時，您應該有清楚的區隔，組成應用程式各層之間。
 
-典型的多層式架構應用程式包含展示層、 中介層和資料層。 分隔各層的多層式架構應用程式中的最簡單方式是建立針對您想要包含在您的應用程式中每一層的離散專案。 比方說，展示層可能是 Windows Forms 應用程式，而資料存取邏輯可能位於中介層的類別庫。 此外，展示層可能會與中介層服務，例如服務透過資料存取邏輯進行通訊。 將應用程式元件分隔成不同的層級會提升應用程式的可維護性和延展性 (Scalability)。 它會更輕鬆地採用新技術，可以套用至單一的層級，而不需要重新設計整個方案。 此外，多層式架構應用程式通常會儲存機密資訊在中介層，以維護從展示層的隔離。
+一般的 N-Tier 應用程式包含展示層、中介層和資料層。 分隔各層的多層式架構應用程式中的最簡單方式是建立針對您想要包含在您的應用程式中每一層的離散專案。 比方說，展示層可能是 Windows Forms 應用程式，而資料存取邏輯可能位於中介層的類別庫。 此外，展示層可能會與中介層服務，例如服務透過資料存取邏輯進行通訊。 將應用程式元件分隔成不同的層級會提升應用程式的可維護性和延展性 (Scalability)。 它會更輕鬆地採用新技術，可以套用至單一的層級，而不需要重新設計整個方案。 此外，多層式架構應用程式通常會儲存機密資訊在中介層，以維護從展示層的隔離。
 
 Visual Studio 包含數個功能，可協助開發人員建立多層式架構應用程式：
 
@@ -77,13 +75,13 @@ Visual Studio 包含數個功能，可協助開發人員建立多層式架構應
 
 [將資料集和 TableAdapter 分成不同的專案](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
-[逐步解說： 建立 n-tier 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+[逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
-[多層式架構和遠端的應用程式使用 LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+[使用 LINQ to SQL 的多層式架構 (N-Tier) 和遠端應用程式](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說： 建立 n-tier 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [階層式更新](../data-tools/hierarchical-update.md)
 - [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)
 - [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)

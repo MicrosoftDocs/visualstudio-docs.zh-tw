@@ -1,7 +1,6 @@
 ---
 title: UWP 應用程式的應用程式屬性頁
 ms.date: 01/23/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AppPackage.Properties.Application
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - Application page [UWP project]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 2808afab24fa4a78d881dd23cc2b1a8efa364b2a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d2f1dc7ba69d0c9521c5ad4a1a075b3da71e3a5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898278"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911333"
 ---
 # <a name="application-property-page-uwp-projects"></a>應用程式屬性頁 (UWP 專案)
 

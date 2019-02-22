@@ -1,7 +1,6 @@
 ---
 title: CA1059:成員不應該公開特定的具象類型
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1059
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 59f61f52-8d6c-49cb-aefb-191910523a3c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0462317ff273b2cb7a967c7e093b16a695e547e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ea06de685d5e73f55e3fa8921d6785bc222da87
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825275"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910073"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059:成員不應該公開特定的具象類型
 

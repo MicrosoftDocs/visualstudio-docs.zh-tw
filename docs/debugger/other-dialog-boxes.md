@@ -1,8 +1,6 @@
 ---
-title: 其他對話方塊 |Microsoft 文件
-ms.custom: ''
+title: 其他對話方塊 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, Spy++
@@ -10,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 81710456-2600-4468-a448-3fb21c7bda82
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 957aa30141a68335e72359cd3ea55b5a59950461
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: d1ef6a8c34f7f5d51da459835a5867200e313fbb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480299"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009384"
 ---
 # <a name="other-dialog-boxes"></a>其他對話方塊
 這些對話方塊顯示 Spy + + 程式的相關資訊。  
@@ -32,7 +30,7 @@ ms.locfileid: "31480299"
   
 ## <a name="related-sections"></a>相關章節  
  [Spy++ 參考](../debugger/spy-increment-reference.md)  
- 包含各節描述每個 Spy + + 功能表和對話方塊方塊。  
+ 包含描述每個 Spy + + 功能表和對話方塊方塊中的區段。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
  介紹 Spy + + 工具，並說明如何使用它。  

@@ -1,7 +1,6 @@
 ---
 title: Elements (XElement 動態屬性)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 apiname:
 - XElement.Elements
@@ -9,15 +8,15 @@ apitype: Assembly
 ms.assetid: 3d5737f2-d2ed-410a-821c-349dbb2b574f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01bca0771fb02ab8442132eaff4759fe7277ad6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ff2071ba71d60db87332b0e23948d63ac1b2289
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837049"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913193"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elements (XElement 動態屬性)
 

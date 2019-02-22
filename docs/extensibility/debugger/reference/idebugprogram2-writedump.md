@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::WriteDump |Microsoft Docs
+title: IDebugProgram2::WriteDump | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7282a7bd57397f6dc1a09dac44dfb0cdfcf9078
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f4fc77748e456a612130de4b8f814ea7ba491f22
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915964"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021841"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 寫入檔案中的傾印。  

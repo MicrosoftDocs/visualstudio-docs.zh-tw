@@ -1,23 +1,21 @@
 ---
 title: 圖形事件清單 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3382637dfbdd10618ccbb9a5d9cf66dba603f4dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 701271e245aca0ea798d3901bd8d627def495fc1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840996"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941459"
 ---
 # <a name="graphics-event-list"></a>圖形事件清單
 使用 Visual Studio 圖形分析器中的 [圖形事件清單]，來探索在轉譯遊戲或應用程式的畫面格時所記錄的 Direct3D 事件。  
@@ -110,7 +108,7 @@ Visual Studio 2017 和更新版本包含**資源歷程記錄**視窗。  選取 
 此視窗可讓您檢視事件清單中的選取項目的歷程記錄。  在頂端的下拉式清單可用來選取要檢視的歷程記錄的其他項目。  包含視窗的上半**框架設定事件**。  這些是屬於事件*建立*類型類別目錄和通常初始化，並建立資源的呼叫。  視窗的下半部所包含的底部**框架事件**一節。  這些是一般的讀取和寫入資源的使用量期間發生的事件。  
 
 
-| 資料行 | 描述 |
+| 資料行 | 說明 |
 |-----------| - |
 | **Type** | 通常顯示的項目的型別*Create*，*讀取*並*撰寫*。 |
 | **檢視** | 在該時間點會顯示資源的縮圖。  按兩下以開啟資源的詳細資料檢視在該時間縮圖。 |
@@ -118,5 +116,5 @@ Visual Studio 2017 和更新版本包含**資源歷程記錄**視窗。  選取 
 
 <!-- /VERSIONLESS -->
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：因裝置狀態而遺漏的物件](walkthrough-missing-objects-due-to-device-state.md)

@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 3ea0446d53ad3cc74bd8af96e95fabada1098da5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8d3c90d955ba412a75005ab47627c1901df57891
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929276"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936976"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>覆寫及擴充產生的類別
 
@@ -91,6 +90,6 @@ public partial class Book
 
 您可以在圖形上的某些事件訂閱。 例如，您可以接聽的圖形上的滑鼠點選。 您不必撰寫程式碼，每個物件的事件訂閱。 此程式碼可以寫入 InitializeInstanceResources() 覆寫中。
 
-某些事件會產生 ShapeFields，用來繪製圖形上的裝飾項目。 如需範例，請參閱[How to:攔截圖案或 Decorator 上](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。
+某些事件會產生 ShapeFields，用來繪製圖形上的裝飾項目。 如需範例，請參閱[如何：攔截圖案或 Decorator 上](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。
 
 通常，這些事件不會發生於在交易內。 如果您想要在存放區中進行變更，您應該建立交易。

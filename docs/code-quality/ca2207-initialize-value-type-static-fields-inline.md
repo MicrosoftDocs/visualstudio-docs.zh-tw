@@ -1,7 +1,6 @@
 ---
 title: CA2207:必須將實值類型的靜態欄位內嵌初始化
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - InitializeValueTypeStaticFieldsInline
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d1ea9d8b-ecc2-46ca-86e2-c41dd0e76658
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4ffd51eef5b8a4f0523dd2356d4e0bdb29b945
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b00403af731439ecef4667c632e53b52670afff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869153"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926875"
 ---
 # <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207:必須將實值類型的靜態欄位內嵌初始化
 

@@ -1,8 +1,6 @@
 ---
-title: 視覺化檢視安全性考量 |Microsoft 文件
-ms.custom: ''
+title: 視覺化檢視安全性考量 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: cdd86bd5-b729-409b-a7c6-374efa091eb1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 799cc8700c450fb2d8b81293bf410903e498e19c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 8b7ef894d249c22cf7b97e23568cd607580affb2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476513"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922008"
 ---
 # <a name="visualizer-security-considerations"></a>視覺化檢視安全性考量
 撰寫視覺化檢視必須承擔可能的安全性威脅。 這些潛在的威脅目前沒有已知的傷害行為，但開發人員仍應暸解這些威脅，並採取本節中所說明的適當安全性考量，以對抗未來的威脅傷害。  
@@ -39,8 +37,8 @@ ms.locfileid: "31476513"
   
  若要減輕這項弱點，請留意視覺化檢視所公開的介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [視覺化檢視架構](../debugger/visualizer-architecture.md)   
- [如何： 撰寫視覺化檢視](../debugger/how-to-write-a-visualizer.md)   
- [建立自訂的視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
+ [如何：撰寫視覺化檢視](/visualstudio/debugger/create-custom-visualizers-of-data)   
+ [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
  [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)

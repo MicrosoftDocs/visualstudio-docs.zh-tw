@@ -1,5 +1,5 @@
 ---
-title: BREAKPOINT_STATE 列舉 |Microsoft 文件
+title: BREAKPOINT_STATE 列舉 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 881598b39625b02651a4d57456904db60ace80c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8bb0a1fabc90eea86f440ebca97a9adb1328c401
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640768"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348629"
 ---
 # <a name="breakpointstate-enumeration"></a>BREAKPOINT_STATE 列舉
 指出中斷點的狀態。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 typedef enum tagBREAKPOINT_STATE {  
    BREAKPOINT_DELETED = 0,  
    BREAKPOINT_DISABLED = 1,  
@@ -43,8 +43,8 @@ typedef enum tagBREAKPOINT_STATE {
 |成員|描述|  
 |------------|-----------------|  
 |BREAKPOINT_DELETED|中斷點不存在，但仍有它的參考。|  
-|BREAKPOINT_DISABLED|中斷點存在但已停用。|  
-|BREAKPOINT_ENABLED|中斷點存在，而且已啟用。|  
+|BREAKPOINT_DISABLED|中斷點會存在，但已停用。|  
+|BREAKPOINT_ENABLED|中斷點會存在，而且已啟用。|  
   
 ## <a name="see-also"></a>另請參閱  
  [動態指令碼偵錯工具的常數、列舉和結構](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

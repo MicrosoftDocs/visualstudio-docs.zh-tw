@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::GetApplication |Microsoft 文件
+title: IActiveScriptSiteDebug::GetApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e33bf254d2e688451f1b69a3b3eb1b676a9e9b1a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a485a7195f64754bc28d0c1905d30d6f22747c31
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724758"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090112"
 ---
 # <a name="iactivescriptsitedebuggetapplication"></a>IActiveScriptSiteDebug::GetApplication
-傳回與此指令碼的站台相關聯的偵錯應用程式物件。  
+傳回與這個指令碼網站相關聯的偵錯應用程式物件。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetApplication(  
    IDebugApplication**  ppda  
 );  
@@ -38,18 +38,18 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>參數  
  `ppda`  
- [out]指令碼的站台相關聯的偵錯應用程式物件的指標。  
+ [out]指令碼網站相關聯的偵錯應用程式物件的指標。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
 |`E_NOTIMPL`|主機不直接支援偵錯。|  
   
 ## <a name="remarks"></a>備註  
- `GetApplication`方法可讓智慧主機並定義每個指令碼所屬的應用程式物件。 指令碼引擎應該嘗試呼叫此方法以取得其包含的應用程式，並以`IProcessDebugManager::GetDefaultApplication`如果這個作業失敗。  
+ `GetApplication`方法可讓智慧主機用來定義每個指令碼所屬的應用程式物件。 指令碼引擎應該嘗試呼叫這個方法來取得其包含的應用程式，並以`IProcessDebugManager::GetDefaultApplication`如果此作業失敗。  
   
 ## <a name="see-also"></a>另請參閱  
  [IActiveScriptSiteDebug 介面](../../winscript/reference/iactivescriptsitedebug-interface.md)   

@@ -3,7 +3,6 @@ title: 檢視 Dll 和可執行檔
 titleSuffix: Visual Studio Modules window
 ms.custom: seodec18
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.modules
@@ -23,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: d840fdca-b035-4452-b652-72580c831896
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec90c7f797c8b25337a23a12321352ff487a12ca
-ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
+ms.openlocfilehash: cd628869d8a642cc6debad726f6c82df71a3b1ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443921"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014013"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在 [模組] 視窗中檢視的 Dll 和可執行檔 (C#，c + +、 Visual Basic 中， F#)
  
@@ -40,7 +39,7 @@ Visual Studio 偵錯時，**模組** 視窗列出和顯示的 Dll 和可執行�
 > [!NOTE]
 > [模組] 視窗不能用於 SQL 或指令碼偵錯。 
   
-## <a name="use-the-modules-window"></a>使用模組視窗
+## <a name="use-the-modules-window"></a>使用 [模組] 視窗
 
 若要偵錯時，請開啟 [模組] 視窗中，選取**偵錯** > **Windows** > **模組**(或按**Ctrl + Alt + U**). 
   

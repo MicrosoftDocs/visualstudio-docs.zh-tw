@@ -1,7 +1,6 @@
 ---
 title: Start 命令
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.start
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: dc4e4aa2-b0ab-4e00-92db-6dc3058ddc21
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e15e9bcea439e6e01ff3bb233622d119fa4b46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f7488353cd4c64b0afca27060c364a1f9ddc6f8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903925"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912559"
 ---
 # <a name="start-command"></a>Start 命令
 開始偵錯啟始專案。

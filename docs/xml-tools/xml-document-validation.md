@@ -1,20 +1,19 @@
 ---
 title: 在 XML 編輯器中的 XML 文件驗證
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf0ee4a039586e1f35883a2ce7a16f356f322b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74c8f327f17e6d2e05d0748195cb139f3a05a6f4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899726"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931191"
 ---
 # <a name="xml-document-validation"></a>XML 文件驗證
 

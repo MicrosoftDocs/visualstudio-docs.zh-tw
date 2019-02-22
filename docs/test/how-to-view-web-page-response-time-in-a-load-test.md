@@ -9,14 +9,13 @@ helpviewer_keywords:
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 885729100f56c7f3491f17b10f6731e3d4df6eb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 4d835660995e92df1f6aca94ae9b9b3ccebb5d87
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850134"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970760"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>HOW TO：使用負載測試分析器在負載測試中檢視網頁回應時間
 
@@ -44,7 +43,7 @@ ms.locfileid: "53850134"
 
 3. 每一個頁面的資料會顯示在方格中。 通常會顯示下列資料行。
 
-   |資料行標題|說明|
+   |資料行標題|描述|
    |-|-|
    |**頁面**|網頁的名稱。|
    |**案例**|情節的名稱。 如果您的 Web 效能測試中有多個情節，此項就很重要。|

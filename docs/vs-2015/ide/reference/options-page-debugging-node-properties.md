@@ -1,25 +1,20 @@
 ---
 title: 偵錯節點屬性、選項頁 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8bcc4637ebb933c2d6cc8a06d15ad70c1fbb76c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 31eff8876dd6ae1a83f74d419853846bf461e275
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223844"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54782193"
 ---
 # <a name="options-page-debugging-node-properties"></a>偵錯節點屬性、選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +81,7 @@ ms.locfileid: "49223844"
 |LoadDllExports|Get/Set (布林值)|決定偵錯工具是否載入 DLL 匯出表。|  
 |EnableRPC|Get/Set (布林值)|決定偵錯工具是否可以逐步執行至 COM 遠端程序呼叫。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [控制選項設定](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
  [在選項頁中決定屬性項目的名稱](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [字型和色彩節點屬性、選項頁](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
@@ -94,6 +89,3 @@ ms.locfileid: "49223844"
  [選項對話方塊、偵錯、一般](../../debugger/general-debugging-options-dialog-box.md)   
  [選項對話方塊、偵錯、編輯後繼續](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [選項對話方塊、偵錯、Just-In-Time](../../debugger/just-in-time-debugging-options-dialog-box.md)
-
-
-

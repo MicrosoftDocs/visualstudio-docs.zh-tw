@@ -1,27 +1,24 @@
 ---
-title: 步驟 4：使用 TableLayoutPanel 控制項來配置您的表單
-ms.custom: ''
+title: 步驟 4：使用 TableLayoutPanel 控制項來配置表單
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 164b0974d751dcfd164efab765432c1f9c23458c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 7083a8874b699716d834ea69ba88c30225acec88
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748292"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926108"
 ---
-# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步驟 4：使用 TableLayoutPanel 控制項來配置您的表單
+# <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步驟 4：使用 TableLayoutPanel 控制項來配置表單
 在此步驟中，您會將 <xref:System.Windows.Forms.TableLayoutPanel> 控制項新增至表單。 TableLayoutPanel 有助於正確對齊稍後加入至表單中的控制項。
 
- ![影片連結](../data-tools/media/playvideo.gif)如需觀看本主題的影片版本，請參閱[教學課程 1：使用 Visual Basic 建立圖片檢視器 - 影片 2](http://go.microsoft.com/fwlink/?LinkId=205211) 或[教學課程 1：使用 C# 建立圖片檢視器 - 影片 2](http://go.microsoft.com/fwlink/?LinkId=205200)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+ ![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱[教學課程 1：Create a picture viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) (教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 2) 或 [Tutorial 1:Create a picture viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200) (教學課程 1：在 C# 中建立圖片檢視器 - 影片 2)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ## <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>若要使用 TableLayoutPanel 控制項來配置您的表單
 
@@ -62,7 +59,7 @@ ms.locfileid: "34748292"
 7.  將 TableLayoutPanel **Dock** 屬性設定為 [Fill] 之後，面板會填滿整個表單。 如果您再次調整表單的大小，TableLayoutPanel 會停駐不動，並調整大小來填滿表單。
 
     > [!NOTE]
-    >  TableLayoutPanel 就像 Microsoft Office Word 中的表格 (具有列和欄)，且單一儲存格可以跨越多個列和欄。 每一個儲存格中放置一個控制項 (例如按鈕、核取方塊或標籤)。 您的 TableLayoutPanel 將具有一個橫跨整個上方資料列的 <xref:System.Windows.Forms.PictureBox> 控制項、在左下方儲存格有一個 <xref:System.Windows.Forms.CheckBox> 控制項，以及在右下方儲存格中則有四個 <xref:System.Windows.Forms.Button> 控制項。
+    >  TableLayoutPanel 如同 Microsoft Office Word 中的表格：它具有列和欄，且單一儲存格可以跨越多個列和欄。 每一個儲存格中放置一個控制項 (例如按鈕、核取方塊或標籤)。 您的 TableLayoutPanel 將具有一個橫跨整個上方資料列的 <xref:System.Windows.Forms.PictureBox> 控制項、在左下方儲存格有一個 <xref:System.Windows.Forms.CheckBox> 控制項，以及在右下方儲存格中則有四個 <xref:System.Windows.Forms.Button> 控制項。
 
 8.  目前，TableLayoutPanel 具有兩個大小相等的資料列和兩個大小相等的資料行。 您需要對它們調整大小，使上方資料列和右邊資料行都變得更大。 在 **Windows Forms 設計工具**中，選取 [TableLayoutPanel]。 右上角有一個黑色的小型三角形按鈕，如下所示。
 
@@ -90,6 +87,6 @@ ms.locfileid: "34748292"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要移到下一個教學課程步驟，請參閱[步驟 5：將控制項新增至您的表單](../ide/step-5-add-controls-to-your-form.md)。
+-   若要前往下一個教學課程步驟，請參閱[步驟 5：將控制項新增至表單](../ide/step-5-add-controls-to-your-form.md)。
 
--   若要回到上一個教學課程步驟，請參閱[步驟 3：設定您的表單屬性](../ide/step-3-set-your-form-properties.md)。
+-   若要回到上一個教學課程步驟，請參閱[步驟 3：設定表單屬性](../ide/step-3-set-your-form-properties.md)。

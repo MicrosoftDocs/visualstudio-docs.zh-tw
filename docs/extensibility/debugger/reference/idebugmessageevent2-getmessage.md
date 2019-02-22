@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::GetMessage |Microsoft Docs
+title: IDebugMessageEvent2::GetMessage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9fca7285-f7f1-422d-8565-92bf0e0db60a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3acce7d8ee50983f24430dca8e1974732b79ad6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8926406ac47cc19b07192662d9f470c7b3e6fa32
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945674"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025276"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 取得要顯示的訊息。  

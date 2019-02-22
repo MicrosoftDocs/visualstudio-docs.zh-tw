@@ -1,8 +1,6 @@
 ---
 title: 使用 DebuggerTypeProxy 屬性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,25 +14,28 @@ helpviewer_keywords:
 ms.assetid: 943f3bb1-993e-4800-a47e-0af78b063014
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab54c754fdc3b7ae773e71a96936a1c17c6bc5ce
-ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
-ms.translationtype: MT
+ms.openlocfilehash: cfe19bea0b62b7d137ac806208a9c505469cd214
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49411062"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069586"
 ---
-# <a name="using-debuggertypeproxy-attribute"></a>使用 DebuggerTypeProxy 屬性
+# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>使用 DebuggerTypeProxy 屬性 (C#，Visual Basic、 C + + /cli CLI)
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute> 會指定類型的 Proxy (或替代)，並且變更在偵錯工具視窗中顯示類型的方式。 當您檢視有 proxy 的變數時，proxy 會替代中的原始型別**顯示**。 偵錯工具變數視窗只會顯示 proxy 型別的 Public 成員。 私用成員不會顯示。
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> 會指定類型的 Proxy (或替代)，並且變更在偵錯工具視窗中顯示類型的方式。 當您檢視有 Proxy 的變數時，Proxy 會替代 [顯示] 中的原始類型。 偵錯工具變數視窗只會顯示 proxy 型別的 Public 成員。 私用成員不會顯示。
 
 這個屬性可以套用至：
 
 - 結構
 - 類別
 - 組件
+
+> [!NOTE]
+> 原生程式碼，這個屬性只支援 C + + /cli 程式碼。
 
 類型 Proxy 類別必須具有建構函式，才能接受 Proxy 將取代之類型的引數。 每次需要顯示目標類型的變數時，偵錯工具都會建立類型 Proxy 類別的新執行個體。 這種行為可能會影響效能。 因此，除非絕對必要，否則不要在建構函式中再執行任何作業。
 
@@ -58,13 +59,13 @@ ms.locfileid: "49411062"
 
 如果您在 `DebuggerTypeProxy` 中使用泛型類型做為目標，就必須使用此語法。 `DebuggerTypeProxy` 機制會自動推斷型別參數。
 
-如需 C# 中的開放型和封閉類型詳細資訊，請參閱[C# 語言規格](/dotnet/csharp/language-reference/language-specification)，區段 20.5.2 開啟和封閉類型。
+如需詳細資訊中的開放型和封閉型別C#請參閱[C#語言規格](/dotnet/csharp/language-reference/language-specification)，區段 20.5.2 開啟和封閉類型。
 
 Visual Basic 沒有開放類型語法，因此無法在 Visual Basic 中執行相同的動作。 您必須改用開放類型名稱的字串表示。
 
 `"Namespace.TypeName'2"`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)
 - [建立受管理物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)

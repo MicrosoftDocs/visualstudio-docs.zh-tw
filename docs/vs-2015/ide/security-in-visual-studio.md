@@ -1,14 +1,9 @@
 ---
 title: 安全性
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code access security, coding errors
 - security [.NET Framework], about security
@@ -16,13 +11,13 @@ ms.assetid: 318c34ce-f643-468c-83a1-843196f5d845
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ae5db15fda1914d52be192a516d70704d2ad3cf6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 40e751fa3edb74df01a9b8a2b0aa4643304f17dc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061742"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771007"
 ---
 # <a name="security-in-visual-studio"></a>Visual Studio 中的安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,15 +13,13 @@ helpviewer_keywords:
 ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 4c5da35407b028d1c435c87a55f265bd22c46c3a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 958322e57340c356e8807deacb81e208441f4b4b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53047625"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943073"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>HOW TO：存取負載測試結果以進行分析
 

@@ -1,7 +1,6 @@
 ---
 title: CA2229:必須實作序列化建構函式
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2229
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8e04d5fe-dfad-445a-972e-0648324fac45
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2228f25c344e7471c0ee8ff252d88a5454345999
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2353c342b38a9dca42500c8997dcebb03137c91c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840300"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928539"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229:必須實作序列化建構函式
 

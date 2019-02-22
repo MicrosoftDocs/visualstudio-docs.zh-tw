@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_volatiletype |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_volatileType | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 19782a4d-40a8-467b-ab7d-58bc4d812309
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02baf9777a1b7cc208903fe5e63a378013b581e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e358efc95d3c0d281a24109ee5ab954d6ea88506
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851021"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989024"
 ---
 # <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
 擷取指定使用者定義資料型別 (UDT) 是否為變動性的旗標。  
@@ -27,7 +25,7 @@ ms.locfileid: "49851021"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_volatileType (   
+HRESULT get_volatileType (   
    BOOL* pRetVal  
 );  
 ```  
@@ -45,5 +43,5 @@ HRESULT get_volatileType (
 ## <a name="remarks"></a>備註  
  可以使用標記在 c + +，UDT`volatile`關鍵字，表示無法從一個存取存到下一個假設其內容。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

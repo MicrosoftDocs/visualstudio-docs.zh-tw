@@ -1,29 +1,27 @@
 ---
 title: 自訂原生 ETW 堆積事件 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/24/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98fc473a9459aa6d1a1d7c10be7b6f240a4ab7d0
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744986"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089262"
 ---
 # <a name="custom-native-etw-heap-events"></a>自訂原生 ETW 堆積事件
 
 Visual Studio 包含各種[分析與診斷工具](../profiling/profiling-feature-tour.md)，包括原生記憶體分析工具。  此分析工具會從堆積提供者攔截 [ETW 事件](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-)，並提供記憶體的配置與使用現況分析。  此工具預設只能分析透過標準 Windows 堆積所進行的配置，而不會顯示此原生堆積以外的任何配置。
 
-在許多情況下，您可能想要使用自訂的堆積，以避免來自標準堆積的配置負荷。  比方說，您可以使用 [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx)，將大量記憶體配置在應用程式或遊戲開頭，接著在該清單內管理自己的區塊。  在此案例中，記憶體分析工具只會查看該初始配置，而不會查看您在記憶體區塊內完成的自訂管理。  不過，使用自訂原生堆積 ETW 提供者時，您就可以讓工具了解您在標準堆積以外進行的任何配置。
+在許多情況下，您可能想要使用自訂的堆積，以避免來自標準堆積的配置負荷。  比方說，您可以使用 [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc)，將大量記憶體配置在應用程式或遊戲開頭，接著在該清單內管理自己的區塊。  在此案例中，記憶體分析工具只會查看該初始配置，而不會查看您在記憶體區塊內完成的自訂管理。  不過，使用自訂原生堆積 ETW 提供者時，您就可以讓工具了解您在標準堆積以外進行的任何配置。
 
 例如，在如下專案中，`MemoryPool` 是自訂的堆積，因此您只會在 Windows 堆積上看到單一配置：
 
@@ -63,7 +61,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. 將 `__declspec(allocator)` 裝飾項目新增至自訂堆積管理員中的任何函式，以傳回新配置之堆積記憶體的指標。  此裝飾項目可讓工具正確識別要傳回的記憶體類型。  例如: 
+1. 將 `__declspec(allocator)` 裝飾項目新增至自訂堆積管理員中的任何函式，以傳回新配置之堆積記憶體的指標。  此裝飾項目可讓工具正確識別要傳回的記憶體類型。  例如：
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);

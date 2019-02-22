@@ -1,8 +1,6 @@
 ---
 title: 無法連接到 Microsoft Visual Studio 遠端偵錯監視 |Microsoft Docs
-ms.custom: ''
 ms.date: 08/24/2017
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.remote_debug
@@ -14,15 +12,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1096188a6cf6be34d56c6330d588e56e0c306581
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
-ms.translationtype: MT
+ms.openlocfilehash: e10252a2065e45a1b2dd14e00972415e24738601
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073931"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926926"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 因為遠端偵錯監視未正確設定遠端電腦上或遠端電腦因為網路問題或防火牆存在而無法存取，可能會發生此訊息。
@@ -90,7 +88,7 @@ Visual Studio 無法連接到遠端偵錯工具。 此訊息可能會發生，�
 
 - DNS 發生問題導致無法連線。 請參閱[這些步驟](#dns)。
 
-- 遠端偵錯工具可能在不同的使用者帳戶下執行。 請遵循[這些步驟](#user_accounts)。
+- 遠端偵錯工具可能在不同的使用者帳戶下執行。 請遵循[以下步驟](#user_accounts)。
 
 - 在防火牆上封鎖連接埠。 請確定防火牆已[不會封鎖您的要求](#firewall)，尤其是如果您使用協力廠商防火牆。
 
@@ -120,14 +118,14 @@ Visual Studio 無法連接到遠端偵錯工具。 此訊息可能會發生，�
   
 ### <a name="server_incorrect"></a> 伺服器名稱不正確，或第三方軟體干擾遠端偵錯工具
 
-在 Visual Studio 中，查看專案屬性，並確定伺服器名稱正確。 請參閱主題[C# 和 Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp)並[c + +](../debugger/remote-debugging-cpp.md#remote_cplusplus)。 針對 ASP.NET 中，開啟**屬性 / Web / 伺服器**或是**屬性 / 偵錯**視您的專案類型而定。
+在 Visual Studio 中，查看專案屬性，並確定伺服器名稱正確。 請參閱主題[C#和 Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp)並[c + +](../debugger/remote-debugging-cpp.md#remote_cplusplus)。 針對 ASP.NET 中，開啟**屬性 / Web / 伺服器**或是**屬性 / 偵錯**視您的專案類型而定。
 
 > [!NOTE]
 > 如果您要連結至處理序，將不會使用專案屬性中的遠端設定。
 
 伺服器名稱正確無誤，如果您的防毒軟體或協力廠商防火牆可能封鎖了遠端偵錯工具。 當在本機偵錯，這可能是因為 Visual Studio 是 32 位元應用程式，讓它使用 64 位元版本的遠端偵錯工具偵錯 64 位元應用程式。 使用本機電腦內的區域網路進行通訊的 32 位元和 64 位元處理程序。 雖然沒有網路流量離開電腦，但協力廠商的安全性軟體很可能會封鎖通訊。
 
-### <a name="user_accounts"></a> 在不同的使用者帳戶下執行遠端偵錯工具 
+### <a name="user_accounts"></a> 遠端偵錯工具在不同的使用者帳戶下執行 
 
 遠端偵錯工具，根據預設，僅接受來自啟動遠端偵錯工具和系統管理員群組的成員之使用者的連線。 其他使用者必須明確授與權限。 
  
@@ -140,14 +138,14 @@ Visual Studio 無法連接到遠端偵錯工具。 此訊息可能會發生，�
     > [!NOTE]
     > 如果您在遠端伺服器上執行遠端偵錯工具，以滑鼠右鍵按一下 遠端偵錯工具應用程式，並選擇**系統管理員身分執行**（或者，您可以執行遠端偵錯工具即服務）。 如果您不會執行它，在遠端伺服器上，只是正常方式啟動。
   
--   您可以從命令列來啟動遠端偵錯工具 **/allow\<使用者名稱 >** 參數： `msvsmon /allow <username@computer>`。 
+-   您可以從命令列使用 **/allow \<使用者名稱>** 參數：`msvsmon /allow <username@computer>` 啟動遠端偵錯工具。 
   
--   或者，您可以允許任何使用者執行遠端偵錯。 在 [遠端偵錯工具] 視窗中，移至**工具 > 選項**對話方塊。 當您選取 [無驗證]   時，可以接著選取 [允許任何使用者執行偵錯] 。 不過，您應該嘗試此選項，只有當其他選項都失敗，或如果您是在私人網路上。
+-   或者，您可以允許任何使用者執行遠端偵錯。 在遠端偵錯工具視窗中，移至 [工具] > [選項] 對話方塊。 當您選取 [無驗證]   時，可以接著選取 [允許任何使用者執行偵錯] 。 不過，您應該嘗試此選項，只有當其他選項都失敗，或如果您是在私人網路上。
 
-### <a name="firewall"></a> 在遠端電腦上的防火牆不允許遠端偵錯工具的連入連線  
+### <a name="firewall"></a> 遠端電腦上的防火牆不允許連入連線至遠端偵錯工具  
  Visual Studio 電腦上的防火牆和遠端電腦上的防火牆必須設定為允許 Visual Studio 和遠端偵錯工具之間的通訊。 如需遠端偵錯工具所用連接埠的相關資訊，請參閱 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。 如需設定 Windows 防火牆的相關資訊，請參閱 [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md)。
   
-### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>遠端偵錯工具的版本不符 Visual Studio 的版本  
+### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>遠端偵錯工具的版本與 Visual Studio 版本不相符  
  您在本機執行的 Visual Studio 版本必須符合遠端電腦執行的遠端偵錯監視版本。 若要修正這個問題，請下載並安裝相符的遠端偵錯監視版本。 若要取得正確的遠端偵錯工具版本，請參閱[遠端偵錯](../debugger/remote-debugging.md)。
   
 ### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>本機和遠端電腦的驗證模式不同  
@@ -167,5 +165,5 @@ Visual Studio 無法連接到遠端偵錯工具。 此訊息可能會發生，�
 ## <a name="more-help"></a>詳細的說明  
  若要取得更多的遠端偵錯工具的說明，請開啟 遠端偵錯工具的 說明 頁面 (**協助 > 使用量**遠端偵錯工具中)。
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Remote Debugging](../debugger/remote-debugging.md)

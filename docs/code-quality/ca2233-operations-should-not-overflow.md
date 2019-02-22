@@ -1,7 +1,6 @@
 ---
 title: CA2233:運算不應該發生溢位
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - OperationsShouldNotOverflow
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 3a2b06ba-6d1b-4666-9eaf-e053ef47ffaa
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 273fb94f4f0b66badef60178635fe3db360f73a4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06c50ba5ecd8ef8e7eda9bbf2df9fdfa43fac0b6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954574"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928942"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233:運算不應該發生溢位
 

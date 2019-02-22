@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a30f717e1b87a90ca4da818b1f2a59fe5c2c6fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 932deec042ebb36dba7cbcc248fa39a397a37de3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901213"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947175"
 ---
 # <a name="send-the-required-events"></a>傳送所需的事件
 使用此程序傳送必要的事件。  

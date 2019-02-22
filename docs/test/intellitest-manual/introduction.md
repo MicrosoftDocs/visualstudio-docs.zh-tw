@@ -1,21 +1,20 @@
 ---
 title: 概觀 | Microsoft IntelliTest 開發人員測試工具
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Visual Studio IntelliTest developer testing tool
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8a5d2c2a7a4e553721d190897e303febfd75fc91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898160"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318247"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 的概觀
 
@@ -152,5 +151,5 @@ IntelliTest 會使用自動[條件約束規劃求解](input-generation.md#constr
 
 ## <a name="further-reading"></a>進一步閱讀
 
-* [簡介部落格文章](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/)。
+* [簡介部落格文章](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/)。
 * [使用 IntelliTest 為程式碼產生單元測試](../../test/generate-unit-tests-for-your-code-with-intellitest.md)

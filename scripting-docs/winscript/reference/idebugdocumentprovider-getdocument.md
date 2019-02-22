@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentProvider::GetDocument |Microsoft 文件
+title: IDebugDocumentProvider::GetDocument |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8dd952a63253dbbf6034e0345547e2bec73b60c2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: afdf039ebac10a407f8ee3b27b5918d97d7e96a9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726218"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088773"
 ---
 # <a name="idebugdocumentprovidergetdocument"></a>IDebugDocumentProvider::GetDocument
 會導致要具現化，如果不存在的文件。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetDocument(  
    IDebugDocument**  ppssd  
 );  
@@ -43,7 +43,7 @@ HRESULT GetDocument(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

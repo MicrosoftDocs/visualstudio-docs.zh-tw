@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33ab695ca8165de97d1be9813ea9ab11449a1527
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82c7970eff1eacfb120a164a15037143342d4909
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836266"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953155"
 ---
 # <a name="install-the-visual-studio-sdk"></a>安裝 Visual Studio IDE
 

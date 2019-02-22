@@ -1,5 +1,5 @@
 ---
-title: 使用 Tableadapter 填入資料集
+title: 使用 TableAdapter 填入資料集
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,19 +16,17 @@ helpviewer_keywords:
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 673c364c1750afbaa4b319c40550be7cfac3b53b
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
-ms.translationtype: MT
+ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131969"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937990"
 ---
-# <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填入資料集
+# <a name="fill-datasets-by-using-tableadapters"></a>使用 TableAdapter 填入資料集
 
 TableAdapter 元件會填入資料庫，並根據一或多個查詢或您指定的預存程序的資料的資料集。 也可以執行 Tableadapter 加入、 更新和刪除資料庫保存您對資料集的變更。 您也可以發出全域不到任何特定資料表相關的命令。
 
@@ -54,7 +52,7 @@ Tableadapter 會連接到資料庫、 執行的查詢或預存程序，並使用
 
 ![用戶端應用程式中的資料流程](../data-tools/media/clientdatadiagram.gif)
 
-雖然 TableAdapters 的設計是以**Dataset 設計工具**，做為巢狀類別的不會產生的 TableAdapter 類別<xref:System.Data.DataSet>。 它們位於不同的命名空間專屬於每個資料集。 比方說，如果您擁有名為資料集`NorthwindDataSet`，相關聯的 TableAdapters<xref:System.Data.DataTable>中的 s`NorthwindDataSet`會在`NorthwindDataSetTableAdapters`命名空間。 若要以程式設計方式存取特定的 TableAdapter，您必須宣告 TableAdapter 的新執行個體。 例如: 
+雖然 TableAdapters 的設計是以**Dataset 設計工具**，做為巢狀類別的不會產生的 TableAdapter 類別<xref:System.Data.DataSet>。 它們位於不同的命名空間專屬於每個資料集。 比方說，如果您擁有名為資料集`NorthwindDataSet`，相關聯的 TableAdapters<xref:System.Data.DataTable>中的 s`NorthwindDataSet`會在`NorthwindDataSetTableAdapters`命名空間。 若要以程式設計方式存取特定的 TableAdapter，您必須宣告 TableAdapter 的新執行個體。 例如：
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -116,7 +114,7 @@ Tableadapter 會使用資料命令，來讀取和寫入資料庫中。 使用 Ta
 
 ## <a name="tableadapter-support-for-nullable-types"></a>TableAdapter 支援可為 null 的型別
 
-Tableadapter 支援可為 null 的型別`Nullable(Of T)`和`T?`。 如需 Visual Basic 可為 Null 型別的詳細資訊，請參閱[可為 Null 的實值類型](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)。 如需 C# 中的可為 null 類型的詳細資訊，請參閱[使用可為 null 的型別](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)。
+Tableadapter 支援可為 null 的型別`Nullable(Of T)`和`T?`。 如需 Visual Basic 可為 Null 型別的詳細資訊，請參閱[可為 Null 的實值類型](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)。 如需有關可為 null 的類型，在C#，請參閱[使用可為 null 的型別](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)。
 
 <a name="tableadaptermanager-reference"></a>
 
@@ -132,12 +130,12 @@ TableAdapterManager 類別不是屬於[!INCLUDE[dnprdnshort](../code-quality/inc
 |------------|-----------------|
 |`UpdateAll` 方法|所有資料表的資料會儲存所有資料。|
 |`BackUpDataSetBeforeUpdate` 屬性|決定是否要建立資料集的備份副本，然後再執行`TableAdapterManager.UpdateAll`方法。布林值。|
-|*tableName* `TableAdapter`屬性|表示 TableAdapter。 產生的 TableAdapterManager 包含每個屬性`TableAdapter`其所管理。 例如，Customers 和 Orders 資料表的資料集會產生具有 TableAdapterManager 包含`CustomersTableAdapter`和`OrdersTableAdapter`屬性。|
+|*tableName* `TableAdapter`屬性|代表 TableAdapter。 產生的 TableAdapterManager 包含每個屬性`TableAdapter`其所管理。 例如，Customers 和 Orders 資料表的資料集會產生具有 TableAdapterManager 包含`CustomersTableAdapter`和`OrdersTableAdapter`屬性。|
 |`UpdateOrder` 屬性|控制個別的 insert、 update 和 delete 命令的順序。 將此設定中的值的其中一個`TableAdapterManager.UpdateOrderOption`列舉型別。<br /><br /> 根據預設，`UpdateOrder`設定為**InsertUpdateDelete**。 這表示插入、 更新，然後再刪除將會在資料集中的所有資料表。|
 
 ## <a name="security"></a>安全性
 
-當您使用資料命令 CommandType 屬性設為<xref:System.Data.CommandType.Text>，仔細檢查，然後將它傳遞到您的資料庫用戶端傳來的資訊。 惡意使用者可能會嘗試傳送 （插入） 修改過或其他的 SQL 陳述式，以取得未經授權的存取，或資料庫損毀。 傳送至資料庫的使用者輸入之前，請務必確認資訊有效。 最佳做法是一律使用參數化的查詢或預存程序，可能的話。
+當您使用資料命令 CommandType 屬性設為<xref:System.Data.CommandType.Text>，仔細檢查，然後將它傳遞到您的資料庫用戶端傳來的資訊。 惡意使用者可能會嘗試傳送 (插入) 修改過或額外的 SQL 陳述式，以獲得未授權的存取或破壞資料庫。 傳送至資料庫的使用者輸入之前，請務必確認資訊有效。 最佳做法是一律使用參數化的查詢或預存程序，可能的話。
 
 ## <a name="see-also"></a>另請參閱
 

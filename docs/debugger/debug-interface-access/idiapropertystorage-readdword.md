@@ -1,8 +1,6 @@
 ---
 title: IDiaPropertyStorage::ReadDWORD |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f4c034e-a9d3-4560-94b5-ede524741439
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 109d5c7c63674ac0b1b72f0b2e538e2993552e7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a83d187540e57dc5d67313fb74fc686034eed2fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842686"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012572"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
 讀取`DWORD`屬性集合中的值。  
@@ -27,7 +25,7 @@ ms.locfileid: "49842686"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT ReadDWORD (   
+HRESULT ReadDWORD (   
    PROPID id,  
    DWORD* pValue  
 );  
@@ -46,5 +44,5 @@ HRESULT ReadDWORD (
 ## <a name="remarks"></a>備註  
  A`DWORD`由 Windows 與 32 位元不帶正負號的整數所定義。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 44fd9e6a-6d42-4aba-80ba-f37fa0070f1d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbb2f9f889e4d570d0ea3ac13aad12737902a500
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 718afb23896f59acfd7eb4e1af60ba6b474de384
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886432"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966239"
 ---
 # <a name="context-menus"></a>操作功能表
 操作功能表會顯示當使用者以滑鼠右鍵按一下的作用中區域的工作區中，並清除 當使用者放開滑鼠右按鈕。  

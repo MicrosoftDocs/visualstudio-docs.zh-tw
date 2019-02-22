@@ -1,23 +1,21 @@
 ---
-title: 如何：建立基本材質
+title: HOW TO：建立基本紋理
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4bd1d34ef2dc31935038bb1be30d548c58208fd
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: d36aa18cb4d641f1a5f22618e98615222cb844d6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028984"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926069"
 ---
-# <a name="how-to-create-a-basic-texture"></a>如何：建立基本紋理
+# <a name="how-to-create-a-basic-texture"></a>HOW TO：建立基本紋理
 
 本文示範如何使用影像編輯器來建立基本材質，包括下列活動：
 
@@ -87,8 +85,8 @@ ms.locfileid: "47028984"
 
 ![完成後的「準星型」鏢靶紋理](../designers/media/gfx_image_demo_bullseye.png)
 
-下一步可以產生這個材質的 MIP 層級。 如需詳細資訊，請參閱[如何：建立和修改 MIP 層級](../designers/how-to-create-and-modify-mip-levels.md)。
+下一步可以產生這個材質的 MIP 層級。 如需相關資訊，請參閱[如何：建立和修改 MIP 層級](../designers/how-to-create-and-modify-mip-levels.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [影像編輯器](../designers/image-editor.md)
+- [Image Editor](../designers/image-editor.md)

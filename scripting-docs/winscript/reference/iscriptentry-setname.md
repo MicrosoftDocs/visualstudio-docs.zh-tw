@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetName |Microsoft 文件
+title: IScriptEntry::SetName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43e167ce48c208b6f552984fe2db9ec9d48c72eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c7929d9d073e7b21030dcddc3db04abc977bdd3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729408"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086667"
 ---
 # <a name="iscriptentrysetname"></a>IScriptEntry::SetName
-表示單一物件 （例如函式） 的項目，設定物件的名稱。  
+代表單一物件 （例如函式） 的項目，設定物件的名稱。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT SetName(  
    LPCOLESTR          psz  
 );  
@@ -43,7 +43,7 @@ HRESULT SetName(
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

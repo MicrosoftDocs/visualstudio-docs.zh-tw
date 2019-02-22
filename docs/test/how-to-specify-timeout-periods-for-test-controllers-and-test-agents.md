@@ -10,14 +10,13 @@ helpviewer_keywords:
 ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 49d81090a0db94fe0215d01a1194f3eb4fabfcad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 5d05ed422f5d08a1a8c7d4f1b2444d9b751aafaf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870449"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929228"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>HOW TO：指定測試控制器和測試代理程式的逾時期間
 
@@ -29,7 +28,7 @@ ms.locfileid: "53870449"
 
 -   測試控制器：*QTController.exe.config*
 
-    |機碼名稱|說明|值|
+    |機碼名稱|描述|值|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|在連接被視為遺失之前候代理程式 Ping 要求的秒數。|"n" 秒。|
     |AgentSyncTimeoutInSeconds|當您啟動同步處理的測試回合時，在中止回合之前等候所有代理程式同步的秒數。|"n" 秒。|
@@ -38,7 +37,7 @@ ms.locfileid: "53870449"
 
 -   測試代理程式：*QTAgentService.exe.config*
 
-    |機碼名稱|說明|值|
+    |機碼名稱|描述|值|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|對控制器之連接嘗試的相隔秒數。|"n" 秒。 預設："30" (30 秒)。|
     |RemotingTimeoutSeconds|遠端呼叫可存留的最大時間 (以秒為單位)。|"n" 秒。 預設："600" (10 分鐘)。|

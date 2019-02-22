@@ -1,23 +1,21 @@
 ---
 title: 在程式碼中尋找參考
 ms.date: 09/26/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, find all references
 - find all references
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ac09eace078ef60f36bd57e9a2c4a1e5f1c510c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942317"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335268"
 ---
 # <a name="find-references-in-your-code"></a>在您的程式碼中尋找參考
 
@@ -41,13 +39,18 @@ ms.locfileid: "31942317"
 
 - 按 **F8** 鍵以移至下一個參考，或選擇 **Shift + F8** 鍵以移至上一個參考。
 - 在參考上按 **Enter** 鍵，或按兩下參考，以移至它在程式碼中的位置。
-- 在參考的操作功能表上，選擇 [移至上一個位置] 或 [移至下一個位置] 命令。
+- 在參考的右鍵功能表 (操作功能表) 上，選擇 [移至上一個位置] 或 [移至下一個位置] 命令。
 - 選擇 [向上鍵] 和 [向下鍵] (如果已在 [選項] 對話方塊中啟用)。 若要啟用此功能，請在功能表列上選擇 [工具] > [選項] > [環境] > [索引標籤和視窗] > [預覽索引標籤]，然後選取 [允許在預覽索引標籤中開啟新檔案] 和 [在 [尋找結果] 中預覽選取的檔案] 方塊。
 
 ## <a name="change-reference-groupings"></a>變更參考群組
 預設會先依專案來分組參考，然後依定義進行分組。 不過，您可以變更工具列之 [群組依據:] 下拉式清單方塊中的設定，來變更此群組順序。 例如，您可以將它從 [專案接著定義] 的預設設定變更為 [定義接著專案]，以及其他設定。
 
-[定義] 和 [專案] 使用兩個預設群組，但您可以選擇所選取項目之操作功能表上的 [群組] 命令來新增其他群組。 如果您的方案有大量檔案和路徑，則新增更多群組十分有用。
+[定義] 和 [專案] 是兩個已使用的預設群組，但您可以在所選取項目的右鍵或操作功能表上選擇 [群組] 命令來新增其他群組。 如果您的方案有大量檔案和路徑，則新增更多群組十分有用。
+
+## <a name="filter-by-reference-type-in-net"></a>依 .NET 中的參考型別篩選
+在 C# 或 Visual Basic 中，[尋找參考] 視窗有 [種類] 欄，這會列出它所找到的參考型別。 此資料行可用來依參考型別篩選，方法是在欄位標題上暫留時，按一下顯示的篩選圖示。 您可依 [讀取]、[寫入]、[參考] 和 [僅為名稱] 篩選參考。
+
+![尋找參考視窗的種類欄 ](../ide/media/vside_findallreferencesKind.png)
 
 ## <a name="see-also"></a>另請參閱
 

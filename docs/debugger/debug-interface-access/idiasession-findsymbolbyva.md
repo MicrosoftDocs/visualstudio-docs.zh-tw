@@ -1,8 +1,6 @@
 ---
-title: 'Idiasession:: Findsymbolbyva |Microsoft Docs'
-ms.custom: ''
+title: IDiaSession::findSymbolByVA | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0350df23-9a5d-4e8d-8c26-7f571d8fb1af
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46304a95f6e7b42c65d19a1e7bfd51fc1d2ff171
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: db493023d94f527f61090783e28b3029c31f0517
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882505"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971188"
 ---
 # <a name="idiasessionfindsymbolbyva"></a>IDiaSession::findSymbolByVA
 擷取包含此項目，或指定的虛擬位址到最接近指定的符號類型。  
@@ -27,7 +25,7 @@ ms.locfileid: "49882505"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT findSymbolByVA (   
+HRESULT findSymbolByVA (   
    ULONGLONG    va,  
    SymTagEnum   symtag,  
    IDiaSymbol** ppSymbol  
@@ -54,7 +52,7 @@ IDiaSymbol* pFunc;
 pSession->findSymbolByVA( va, SymTagFunction, &pFunc );  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

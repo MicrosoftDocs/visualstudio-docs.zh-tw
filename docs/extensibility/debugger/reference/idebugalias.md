@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias |Microsoft Docs
+title: IDebugAlias | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3cc4c9a4-7805-4239-b00e-eb4a024f3c55
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47e9912a0c46588fe6cf0c16aea3388400960851
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 301acf451f2668e9e6da80a9669484dd0ef4dc6c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954720"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944458"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]

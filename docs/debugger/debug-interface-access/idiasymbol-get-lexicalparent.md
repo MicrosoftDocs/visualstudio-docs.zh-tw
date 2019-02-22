@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_lexicalparent |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4d119965-33a8-474c-9c64-95c5218c389c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec761202f10f087f440c695d834f80045a0ac331
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e0ab5a576a81414afe682e750930e7bfb4b57b4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864111"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033436"
 ---
 # <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
 擷取語彙父系的符號的參考。  
@@ -27,7 +25,7 @@ ms.locfileid: "49864111"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_lexicalParent (   
+HRESULT get_lexicalParent (   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -47,6 +45,6 @@ HRESULT get_lexicalParent (
   
  能顯示為語彙父系所述的可能符號[的符號類型語彙階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

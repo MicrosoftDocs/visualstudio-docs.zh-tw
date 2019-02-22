@@ -1,23 +1,23 @@
 ---
-title: VS 2017 偵錯使用者入門
+title: 使用 Visual Studio 偵錯應用程式
 description: 使用 Visual Studio 偵錯工具開始偵錯應用程式
 ms.custom: mvc
-ms.date: 06/15/2018
+ms.date: 01/09/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7bcba0ceaa71b933d4875cd5eee28d7cea0028
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 638e49a2e2146503186eb26f25e67ff68bb4a354
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904964"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042058"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio 偵錯工具初探
 
@@ -185,7 +185,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 在此範例中，`DirectoryInfo` 呼叫會對儲存在 `value` 變數中的空字串發出錯誤。
 
-例外狀況協助程式是可協助您偵錯錯誤的絶佳功能。 您也可以執行檢視錯誤詳細資料，以及從例外狀況協助程式新增監看式等作業。 或者；如有必要，您可以變更擲回特定例外狀況的條件。
+例外狀況協助程式是可協助您偵錯錯誤的絶佳功能。 您也可以執行檢視錯誤詳細資料，以及從例外狀況協助程式新增監看式等作業。 或者；如有必要，您可以變更擲回特定例外狀況的條件。 如需如何在程式碼中處理例外狀況的詳細資訊，請參閱[偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)。
 
 > [!NOTE]
 > 例外狀況協助程式會取代 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中的例外狀況助理。

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnStateChange |Microsoft 文件
+title: IActiveScriptSite::OnStateChange |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fae7782d713ab226e57e687cda8eb4ccdb54cf20
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ee4fd06b00c674c9c50ce253186aeee3165bac66
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724618"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345691"
 ---
 # <a name="iactivescriptsiteonstatechange"></a>IActiveScriptSite::OnStateChange
 通知主機指令碼引擎已變更狀態。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT OnStateChange(  
     SCRIPTSTATE ssScriptState  // new state of engine  
 );  
@@ -38,7 +38,7 @@ HRESULT OnStateChange(
   
 #### <a name="parameters"></a>參數  
  `ssScriptState`  
- [in]值，指出新的指令碼狀態。 請參閱[IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md)方法狀態的描述。  
+ [in]值，指出新的指令碼狀態。 請參閱[IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md)方法，如需狀態的描述。  
   
 ## <a name="return-value"></a>傳回值  
  若成功，會傳回 `S_OK`。  

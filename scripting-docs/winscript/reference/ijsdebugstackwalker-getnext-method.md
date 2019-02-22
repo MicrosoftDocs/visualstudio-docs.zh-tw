@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugstackwalker:: Getnext 方法 |Microsoft 文件'
+title: 'Ijsdebugstackwalker:: Getnext 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 695bb6cecc2a27565dce21b4a965ad08d90d7be7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6e5b1b1257556ab17aa5dcac7b7f4525063dfb1d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728438"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090765"
 ---
 # <a name="ijsdebugstackwalkergetnext-method"></a>IJsDebugStackWalker::GetNext 方法
 取得下一個畫面格。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetNext(  
    IJsDebugFrame **ppFrame  
 );  
@@ -36,12 +36,12 @@ HRESULT GetNext(
   
 #### <a name="parameters"></a>參數  
  `ppFrame`  
- [out]代表堆疊框架的物件。  
+ [out]物件，代表堆疊框架。  
   
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="remarks"></a>備註  
- 傳回 E_JsDEBUG_OUTSIDE_OF_VM 時有更多堆疊框架要列舉  
+ 要列舉的堆疊框架時，傳回 E_JsDEBUG_OUTSIDE_OF_VM  
   
 ## <a name="requirements"></a>需求  
  **標頭：** jscript9diag.h  

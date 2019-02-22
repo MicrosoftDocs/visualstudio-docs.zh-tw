@@ -3,22 +3,21 @@ title: 分析 CPU 使用量資料 (受控碼)
 description: 在 C++ 和 Visual Basic 中使用 CPU 使用量診斷工具測量應用程式效能
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35c6fd1ea079dd95367bcb7763787f0b06839ecb
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: b77ae405463496c5de703947de9b4429218d2435
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626651"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935679"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (受控碼)
 
@@ -161,7 +160,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
     > [!NOTE]
     > 在 Visual Basic 中，確定啟始物件設定為 `Sub Main` ([屬性] > [應用程式] > [啟始物件])。
 
-##  <a name="step-1-collect-profiling-data"></a>步驟 1︰收集分析資料
+##  <a name="step-1-collect-profiling-data"></a>步驟 1：收集分析資料
 
 1.  首先，在 `Main` 函式的這行程式碼上，於應用程式中設定中斷點：
 

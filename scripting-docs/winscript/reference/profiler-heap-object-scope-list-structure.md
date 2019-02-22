@@ -1,5 +1,5 @@
 ---
-title: PROFILER_HEAP_OBJECT_SCOPE_LIST 結構 |Microsoft 文件
+title: PROFILER_HEAP_OBJECT_SCOPE_LIST 結構 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67f0972faee11e15bd5d0e9a219e439df49d9672
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 114b1a55fce34908c4274877583164aff4ec8dba
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734258"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344820"
 ---
 # <a name="profilerheapobjectscopelist-structure"></a>PROFILER_HEAP_OBJECT_SCOPE_LIST 結構
-這個結構是僅限函式物件與相關聯。 範圍清單的範圍，其中每個範圍是堆積物件與相關聯的屬性清單，表示每個指定的範圍中的變數清單以表示函式的結束。 在某些情況下，範圍可能無法使用，在物件和其索引的屬性清單的名稱使用。  
+此結構是僅限函式物件相關聯。 範圍清單表示函式的 closure 的範圍，其中每個範圍是堆積物件與相關聯的屬性清單，表示每個指定的範圍內的變數清單。 在某些情況下，範圍可能無法使用，在物件和其索引至屬性清單的名稱使用。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 typedef struct _PROFILER_HEAP_OBJECT_SCOPE_LIST{    UINT count;    [size_is(count)] PROFILER_HEAP_OBJECT_ID scopes[];} PROFILER_HEAP_OBJECT_SCOPE_LIST;  
 ```  
   
@@ -33,4 +33,4 @@ typedef struct _PROFILER_HEAP_OBJECT_SCOPE_LIST{    UINT count;    [size_is(coun
 |成員|類型|描述|  
 |------------|----------|-----------------|  
 |count|UINT|範圍數目|  
-|scopes|[PROFILER_HEAP_OBJECT_ID 類型](../../winscript/reference/profiler-heap-object-id-type.md)|陣列的範圍。|
+|scopes|[PROFILER_HEAP_OBJECT_ID 類型](../../winscript/reference/profiler-heap-object-id-type.md)|範圍的陣列。|

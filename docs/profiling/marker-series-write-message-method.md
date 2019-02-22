@@ -1,8 +1,6 @@
 ---
 title: marker_series::write_message 方法 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series::write_message
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 546121bc-67e0-4a5a-a456-12bd78fd6de2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e413267623d4e9bb4b8d4c1f46fd9c6ecf7808
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: a4a81f6f8aee20ec8d3faa9c8b65b74ef714c55a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237948"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924911"
 ---
 # <a name="markerserieswritemessage-method"></a>marker_series::write_message 方法
 將訊息寫入並行視覺化檢視追蹤檔。  
@@ -60,7 +58,7 @@ void write_message(
  分類。重要性層級。  
   
 ## <a name="requirements"></a>需求  
- **標頭：***cvmarkersobj.h*  
+ **標頭：** *cvmarkersobj.h*  
   
  **命名空間：** Concurrency::diagnostic  
   

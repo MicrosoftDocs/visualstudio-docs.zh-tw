@@ -7,14 +7,13 @@ helpviewer_keywords:
 ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 896975330db08a0121aedd4bf3bea38f660e17fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: f349308a1f4877a79a933e32269f262e1a58dc40
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931264"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939446"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>HOW TO：指定負載測試回合設定的採樣速率
 

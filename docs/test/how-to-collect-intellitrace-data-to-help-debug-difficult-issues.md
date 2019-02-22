@@ -1,5 +1,5 @@
 ---
-title: Intellitrace 資料
+title: IntelliTrace 資料
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,13 @@ helpviewer_keywords:
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8d6f6758b32f55a7567f1828e8902cd4ad3c906e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 0cac9e52c74b9dc830fa801005a22f0123ee2e41
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952994"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926550"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>HOW TO：收集 IntelliTrace 資料以協助偵錯困難的問題
 
@@ -61,7 +60,7 @@ IntelliTrace 檔中收集的資料可縮短重現及診斷程式碼錯誤所需�
      此 Proxy 可讓您針對「IntelliTrace 和測試影響」診斷資料配接器，收集從用戶端到 Web 伺服器之 HTTP 呼叫的相關資訊。
 
     > [!WARNING]
-    > 如果您決定要針對用於想要收集 Intellitrace 資料之 Internet Information Server (IIS) 上的應用程式集區識別使用自訂帳戶，就必須在 IIS 電腦上，針對所使用的自訂帳戶建立本機使用者設定檔。 您可以透過登入 IIS 電腦本機一次或使用自訂帳戶認證來執行下列命令列，藉以建立自訂帳戶的本機設定檔：
+    > 如果您決定針對要用於您想要收集 IntelliTrace 資料之 Internet Information Server (IIS) 上應用程式集區的身分識別使用自訂帳戶，就必須在 IIS 機器上，針對所使用的自訂帳戶建立本機使用者設定檔。 您可以透過登入 IIS 電腦本機一次或使用自訂帳戶認證來執行下列命令列，藉以建立自訂帳戶的本機設定檔：
     >
     > **runas /user:domain\name /profile cmd.exe**
 

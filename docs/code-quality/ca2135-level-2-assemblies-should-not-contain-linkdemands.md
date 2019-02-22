@@ -1,22 +1,21 @@
 ---
 title: CA2135:層級 2 組件不應該包含 LinkDemand
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2135
 ms.assetid: 7a775285-42d2-4f13-8434-3fdb0deeebe6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61f41a47b7fbb27e1811bd2c9888baf01143a50f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fcd9032d550e79a47941540408dc6e98a15e33f7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904097"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949508"
 ---
 # <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135:層級 2 組件不應該包含 LinkDemand
 

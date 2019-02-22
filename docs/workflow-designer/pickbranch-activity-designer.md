@@ -2,21 +2,20 @@
 title: 工作流程設計工具-PickBranch 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.PickBranch.UI
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3a692d08a8117eca4bbd4765cc9d21ba7b8c770
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6c452cb4fd5b8a343473204c2b2bee614383ebb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860253"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922052"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch 活動設計工具
 
@@ -32,7 +31,7 @@ ms.locfileid: "53860253"
 
 兩個空<xref:System.Activities.Statements.PickBranch>物件，顯示名稱**Branch1**並**Branch2**項目預設會建立<xref:System.Activities.Statements.Pick>活動時**挑選**活動設計工具一開始會放到工作流程設計工具中。 各自<xref:System.Activities.Statements.PickBranch.DisplayName%2A>屬性值可以在中編輯**PickBranch**設計工具的標頭或內**屬性**針對每個分支的視窗。
 
-有兩種方式，以新增<xref:System.Activities.Statements.PickBranch>物件的集合<xref:System.Activities.Statements.Pick>物件： 拖曳和卸除**PickBranch**設計工具**工具箱**，或使用中的內容功能表內**挑選**設計介面：
+有兩種方式，以新增<xref:System.Activities.Statements.PickBranch>物件的集合<xref:System.Activities.Statements.Pick>物件： 拖曳和卸除**PickBranch**設計工具**工具箱**，或使用從快顯功能表內**挑選**設計介面：
 
 - **PickBranch**設計工具會建立<xref:System.Activities.Statements.PickBranch>當從拖曳**工具箱**然後放到其中的分支**挑選**上的活動設計工具工作流程設計工具介面。 新的 <xref:System.Activities.Statements.PickBranch> 物件可以放在 <xref:System.Activities.Statements.Pick> 設計工具內部，置於已經包含在集合中的任何現有 <xref:System.Activities.Statements.PickBranch> 項目的左邊或右邊。 拖曳時**PickBranch**設計工具拖曳到**挑選**滑鼠，設計工具**挑選**設計工具會使用垂直的藍灰色帶，來表示<xref:System.Activities.Statements.PickBranch>加入某個特定的滑鼠位置。
 

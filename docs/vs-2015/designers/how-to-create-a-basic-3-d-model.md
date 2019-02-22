@@ -1,27 +1,22 @@
 ---
-title: 如何：建立基本 3D 模型 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立基本 3d 模型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83d4069135adf37156457321b8ce15a254c9c27b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c7c904e74793710dedc96d4a769d4f6c61a15e69
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825487"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760767"
 ---
-# <a name="how-to-create-a-basic-3-d-model"></a>如何：建立基本 3D 模型
+# <a name="how-to-create-a-basic-3-d-model"></a>HOW TO：建立基本 3d 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本文件將示範如何使用模型編輯器來建立基本 3D 模型。  
@@ -79,12 +74,9 @@ ms.locfileid: "49825487"
   
    ![簡化房屋的完整模型](../designers/media/gfx-model-demo-house-final.png "gfx_model_demo_house_final")  
   
-   下一步可以將著色器套用至這個 3D 模型。 如需詳細資訊，請參閱[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。  
+   下一步可以將著色器套用至這個 3D 模型。 如需相關資訊，請參閱[如何：將著色器套用至 3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。  
   
-## <a name="see-also"></a>另請參閱  
- [如何：為 3D 地形建立模型](../designers/how-to-model-3-d-terrain.md)   
+## <a name="see-also"></a>請參閱  
+ [如何：模型的 3d 地形模型](../designers/how-to-model-3-d-terrain.md)   
  [模型編輯器](../designers/model-editor.md)   
  [著色器設計工具](../designers/shader-designer.md)
-
-
-

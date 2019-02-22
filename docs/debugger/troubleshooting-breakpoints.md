@@ -2,19 +2,18 @@
 title: 進行偵錯工具中斷點疑難排解 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 01/23/2018
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e27d9dee1713b8d9e748ad13d75d809f2057f24a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 23ff00cea9bda6216a87bfd64b8c2c72ea5c3c2a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052847"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987787"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>疑難排解 Visual Studio 偵錯工具中的中斷點
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - worksheets, updating using managed controls
 - controls [Office development in Visual Studio], updating worksheets
 - worksheets, using radio buttons
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e165fc0a02f3185c74f4a3eb4b0fe9536f71fb66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae451b42642cd3c124b3fe9d5df627c2306a2020
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891931"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873869"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>逐步解說：使用選項按鈕更新工作表中的圖表
   本逐步解說會示範使用 Microsoft Office Excel 工作表上的選項按鈕，以讓使用者快速切換選項之間的基本概念。 在此情況下，選項會變更圖表的樣式。  
@@ -57,7 +57,7 @@ ms.locfileid: "53891931"
 
 4. 新增下列資料以**圖表資料**使用 A4 的儲存格的左上角和 E8 右下角。  
 
-   ||Q1|第 2 季|第 3 季|Q4|  
+   ||Q1|Q2|Q3|Q4|  
    |-|--------|--------|--------|--------|  
    |西部|500|550|550|600|  
    |東部|600|625|675|700|  

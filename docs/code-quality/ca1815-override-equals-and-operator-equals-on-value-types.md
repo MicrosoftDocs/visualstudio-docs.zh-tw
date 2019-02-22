@@ -1,7 +1,6 @@
 ---
 title: CA1815:必須覆寫實值類型上的 Equals 方法和等號比較運算子
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1815
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0a8ab3a3-ee8e-46f7-985d-dcf00c89363b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8fc26bca5ecce3b5459890e96e429ef10f3b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de537e99b15cfe7dd7c8b80dd6c23c3f89e066a8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904045"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910086"
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815:必須覆寫實值類型上的 Equals 方法和等號比較運算子
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ecc2d37c85e20ce000dc7998e62afc4541614a83
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 908e597d9ee0a1db4e78de02f3dd4ade1a9aa119
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934701"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945355"
 ---
 # <a name="symbol-provider-interfaces"></a>Symbol Provider Interfaces
 以下是符號處理介面[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]。  

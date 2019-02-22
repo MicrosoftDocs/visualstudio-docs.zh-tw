@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2fa97d9b-c3d7-478e-ba5a-a933f40a0103
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79cc459248e0a6ac507b357914d94e3fbfbfd8cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 63364cd74b0497ac2b40f592e847514065ee869a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857075"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069625"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 傳回屬性的值的參考。  

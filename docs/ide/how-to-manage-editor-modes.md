@@ -1,7 +1,6 @@
 ---
 title: 全螢幕和虛擬空間模式
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
@@ -22,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f2bf05eaaa5a61f7614b5d35ac6f8467ad6089a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b441543079ab3369beddcd95999809e075b3bb2b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820435"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907138"
 ---
 # <a name="how-to-manage-editor-modes"></a>HOW TO：管理編輯器模式
 

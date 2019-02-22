@@ -1,23 +1,21 @@
 ---
 title: Spy + + 簡介 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++
 ms.assetid: 733b514b-63a9-402d-89aa-4f0416766655
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9fceb83f915eb1a90a781d886c84fd40651cc0a
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
-ms.translationtype: HT
+ms.openlocfilehash: 371e707dae11dacbbcc9ec590e908cd66f6189ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647319"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027980"
 ---
 # <a name="introducing-spy"></a>Spy++ 簡介
 Spy++ 可讓您執行下列工作︰  

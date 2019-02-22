@@ -1,8 +1,6 @@
 ---
 title: 偵錯多個處理序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
@@ -18,17 +16,17 @@ dev_langs:
 ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b306bcca4ac8cc0568fc609ec25c8b335d18010
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 260fab33f8303ddc00b3d80b776786239746ba4f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305646"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005653"
 ---
-# <a name="debug-multiple-processes"></a>對多重處理序進行偵錯
+# <a name="debug-multiple-processes-c-visual-basic-c"></a>偵錯多個處理序 (C#，Visual Basic、 c + +)
 
 Visual Studio 可以有數個程序的方案進行偵錯。 您可以啟動和處理序之間切換、 中斷、 繼續，並逐步執行來源、 停止偵錯，和 end 或從個別的處理序中斷連結。  
 
@@ -50,7 +48,7 @@ Visual Studio 可以有數個程序的方案進行偵錯。 您可以啟動和�
    
 1. 選取 **目前的選取範圍**，**單一啟始專案**和 專案檔中，或**多個啟始專案**。 
 
-   如果您選取**多個啟始專案**，您可以變更啟動順序和動作，才會針對每個專案：**開始**，**啟動但不偵錯**，或**無**。  
+   如果您選取**多個啟始專案**，您可以變更才會針對每個專案的啟動順序和動作：**開始**，**啟動但不偵錯**，或**None**。  
    
 1. 選取 **套用**，或**確定**套用並關閉對話方塊。 
 
@@ -122,7 +120,7 @@ Visual Studio 可以有數個程序的方案進行偵錯。 您可以啟動和�
 ###  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> 尋找來來源和符號 (.pdb) 檔案  
 若要瀏覽處理序的原始程式碼，偵錯工具會需要存取其原始程式檔和符號檔。 如需詳細資訊，請參閱[指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
-如果您無法存取處理程序的檔案，您可以使用瀏覽**反組譯碼**視窗。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)。  
+如果您無法存取處理程序的檔案，您可以使用瀏覽**反組譯碼**視窗。 如需詳細資訊，請參閱[＜How to：使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)。  
 
 ###  <a name="BKMK_Switch_between_processes"></a> 在處理序之間切換  
 

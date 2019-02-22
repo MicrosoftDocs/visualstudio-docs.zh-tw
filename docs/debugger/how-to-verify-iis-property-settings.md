@@ -1,8 +1,6 @@
 ---
-title: 如何： 檢查 IIS 屬性設定 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：檢查 IIS 屬性設定 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 9efc50bf-02fb-4750-9b3e-f03c38f10d8b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f98796a7fd9546c8377eefcc4ad25fb90e549544
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a5941dec4b21e044873a2ae95ae7682867b4bd67
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389483"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037014"
 ---
-# <a name="how-to-verify-iis-property-settings"></a>如何：檢查 IIS 屬性設定
+# <a name="how-to-verify-iis-property-settings"></a>HOW TO：確認 IIS 屬性設定
 
 您可以使用 IIS 系統管理工具設定 Web 應用程式的屬性。 必須正確設定這些屬性才能順利執行應用程式，因此驗證這些設定通常都是疑難排解的必要步驟。
 
@@ -37,7 +35,7 @@ ms.locfileid: "52389483"
 
 ## <a name="to-check-iis-settings-for-the-web-application"></a>若要檢查 Web 應用程式的 IIS 設定
 
-1. 開啟 [系統管理工具] 視窗：在 [開始] 功能表上，指向 [程式集]，然後按一下 [系統管理工具]。 如果 [程式集] 功能表中並未顯示 [系統管理工具]，請從 [控制台] 中尋找這個功能。
+1. 開啟 [系統管理工具] 視窗。在上**開始**功能表上，指向**程式**，然後按一下**系統管理工具**。 如果 [程式集] 功能表中並未顯示 [系統管理工具]，請從 [控制台] 中尋找這個功能。
 
    -   在 Windows 2000 中，請選取 [網際網路服務管理員]。
 
@@ -61,7 +59,7 @@ ms.locfileid: "52389483"
 
    3.  按一下 [確定] 關閉 [驗證方法] 對話方塊。
 
-5. 對於 ATL Server 應用程式，請驗證偵錯動詞命令 (DEBUG Verb) 是否與您的 ISAPI 副檔名有關聯。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立關聯偵錯動詞命令延伸模組與](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)。
+5. 對於 ATL Server 應用程式，請驗證偵錯動詞命令 (DEBUG Verb) 是否與您的 ISAPI 副檔名有關聯。 如需詳細資訊，請參閱[＜How to：延伸模組相關聯 DEBUG 動詞命令](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)。
 
 6. 針對 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式，請確定應用程式的虛擬資料夾在 [網際網路資訊服務 (IIS) 管理員]、[網際網路服務管理員] 或 [網際網路資訊服務] 中已設定 [應用程式名稱]。
 

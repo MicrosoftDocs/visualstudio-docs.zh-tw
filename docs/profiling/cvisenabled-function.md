@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2e4fea6d-758d-4150-8744-6102a1d58c1c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c35fc883e53e1b1cc430724d87d8bcbd1bb32ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8af4da802ef0ad87831f2f67f47e8ffb66a969e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989185"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990039"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled 函式
 判斷任何工作階段是否已啟用指定的 ETW 提供者。  
@@ -51,7 +51,7 @@ HRESULT CvIsEnabledEx(
  如果提供者目前已啟用，傳回 S_OK。 如果提供者目前已停用，傳回 S_FALSE。 發生任何錯誤時傳回錯誤碼。 使用 FAILED 巨集可檢查是否有錯誤狀況，然後檢查是 S_OK/S_FALSE。  
   
 ## <a name="requirements"></a>需求  
- **標頭︰***cvmarkers.h*  
+ **標頭︰** *cvmarkers.h*  
   
 ## <a name="see-also"></a>另請參閱  
  [C++ 程式庫參考](../profiling/cpp-library-reference.md)

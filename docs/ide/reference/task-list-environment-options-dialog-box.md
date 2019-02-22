@@ -1,7 +1,6 @@
 ---
 title: 選項對話方塊、環境、工作清單
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Task_List
@@ -20,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4645b1a9bb594e5e4b2ca7220c6eda32947ab4f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bda16e5939f34cbea29eb92e08ee7325b49301b5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833616"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912166"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>選項對話方塊、環境、工作清單
 

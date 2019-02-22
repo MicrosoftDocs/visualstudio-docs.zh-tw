@@ -4,17 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
-ms.translationtype: MT
+ms.openlocfilehash: da6763cffedccb1dae296e2959732237cd126b25
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845011"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909916"
 ---
 # <a name="add-new-connections"></a>新增連線
 
@@ -26,7 +24,7 @@ ms.locfileid: "34845011"
 
 - Cloud Explorer
 
-   選取此視窗手動安裝為 Visual Studio 延伸模組**工具** > **擴充功能和更新** > **線上** >  **Visual Studio Markeplace**。 提供探索及連接到 Azure 服務的特製化的功能。
+   選取此視窗手動安裝為 Visual Studio 延伸模組**工具** > **擴充功能和更新** > **線上** >  **Visual Studio Marketplace**。 提供探索及連接到 Azure 服務的特製化的功能。
 
 - SQL Server 物件總管
 
@@ -40,7 +38,7 @@ ms.locfileid: "34845011"
 
 這會帶來**加入連接** 對話方塊。 我們在這裡，輸入 SQL Server LocalDB 執行個體的名稱。
 
-![加入新的連接](../data-tools/media/raddata-add-new-connection-dialog.png)
+![新增連線](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>變更提供者
 
@@ -48,7 +46,7 @@ ms.locfileid: "34845011"
 
 ![變更 AD0.NET 資料提供者](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
-## <a name="test-the-connection"></a>測試連接
+## <a name="test-the-connection"></a>測試連線
 
 您已選擇資料來源之後，請按一下**測試連接**。 如果不成功，您必須疑難排解根據廠商的文件。
 

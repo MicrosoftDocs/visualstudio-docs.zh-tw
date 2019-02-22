@@ -1,8 +1,6 @@
 ---
-title: DA0012：大量的反映 | Microsoft Docs
-ms.custom: ''
+title: DA0012：大量的反射 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAReflection
@@ -12,15 +10,15 @@ f1_keywords:
 ms.assetid: c92a1d76-21fa-426e-8b1b-a3c08e9bcbca
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 191edf9cc6a3dc9ff177b075e2967cb328afc9c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2083b6446fc4f818bfc7d88b2b8a029ef4b06624
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893919"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962114"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012：大量的反射
 

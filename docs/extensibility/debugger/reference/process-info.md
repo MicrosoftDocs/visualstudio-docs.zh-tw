@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO |Microsoft Docs
+title: PROCESS_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28563886256a0d1bc8d4593169e7adc2a25e8ac1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f784ba481af33236365edf7a5d393bfd8b416c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939949"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944068"
 ---
 # <a name="processinfo"></a>PROCESS_INFO
 包含處理序的相關資訊。  

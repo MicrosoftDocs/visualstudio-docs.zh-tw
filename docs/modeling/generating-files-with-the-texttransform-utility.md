@@ -7,16 +7,15 @@ helpviewer_keywords:
 - TextTransform.exe
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 70a2b45bdaa637a538a71ff67619e2ddacb6c9be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c7a33f7510eb862ed6af1f1d5337d8d3e2743ba
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870819"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939498"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>產生使用 TextTransform 公用程式的檔案
 

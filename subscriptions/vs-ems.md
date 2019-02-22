@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶中所含的 Enterprise Mobility +
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b6b4d4965ec2b7145ab388dff7df226ec16603e5
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: fe6d44b64de314153d7ba00fe4540dbecf1d6ba2
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739592"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380066"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Enterprise Mobility + Security (EMS)
 
@@ -62,7 +62,7 @@ Visual Studio Enterprise 年度雲端和標準訂用帳戶包含 Enterprise Mobi
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 | Visual Studio Dev Essentials | N/A  | 無法使用 |N/A |
 
-<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark。排除：Microsoft Valued Professional (MVP)、Region Director (RD)、MCT Software & Services、Imagine、Microsoft 合作夥伴網路 (Professional)。*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark。排除：最有價值專家 (MVP)、區域經理 (RD)、MCT 軟體與服務、Imagine、Microsoft 合作夥伴網路 (專業版)。*
 
 <sup>2</sup> *排除 Microsoft Partner Network (Professional)*
 
@@ -75,6 +75,6 @@ Visual Studio Enterprise 年度雲端和標準訂用帳戶包含 Enterprise Mobi
 
 ## <a name="support-resources"></a>支援資源
 -  需要使用 EMS 的說明嗎？  請參閱線上 [EMS 文件](/enterprise-mobility-security/)。
--  如需任何 EMS 元件的技術支援，請前往 https://support.microsoft.com/allproducts 並選取產品。
+-  如需任何 EMS 元件的技術支援，請前往 [EMS 支援常見問題集](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-support-faq)尋找可用來解決問題的合適支援。
 -  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 -  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

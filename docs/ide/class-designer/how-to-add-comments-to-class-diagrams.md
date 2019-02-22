@@ -1,7 +1,6 @@
 ---
 title: HOW TO：將註解新增至類別圖表 (類別設計工具)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff9069392fe3c5a3505128788458916ed78c01f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39b220ddc42857040a51b2308c6d4a83d931de09
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916370"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970539"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>HOW TO：將註解新增至類別圖表
 

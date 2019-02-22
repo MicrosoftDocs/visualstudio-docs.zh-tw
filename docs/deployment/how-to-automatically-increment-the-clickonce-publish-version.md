@@ -1,8 +1,6 @@
 ---
-title: 如何： 自動累加 ClickOnce 的發行版本 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：自動累加 ClickOnce 的發行版本 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 686ab88a-6305-4914-a05b-fe269cc0ae1e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7dd1723d9d92d9bc1b667cc3fddbc3ea297d8b8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 174506e9ee88de385f5bbba6fe09276d9297f298
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389120"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937700"
 ---
-# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>如何：自動累加 ClickOnce 的發佈版本
+# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>HOW TO：自動累加 ClickOnce 的發佈版本
 
 發佈時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式中，變更`Publish Version`屬性可讓應用程式以更新形式發行。 根據預設，Visual Studio 會自動遞增`Revision`數目`Publish Version`每次發行應用程式。
 
@@ -47,4 +45,4 @@ ms.locfileid: "52389120"
 
 - [如何：設定 ClickOnce 發佈版本](../deployment/how-to-set-the-clickonce-publish-version.md)
 - [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)
-- [如何：使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

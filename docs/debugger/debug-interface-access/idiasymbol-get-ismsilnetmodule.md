@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_ismsilnetmodule |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_isMSILNetmodule | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 593827f3-8437-4a12-ada4-ff715ec95fb2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65399d8afde22a4856c43d3de0e7d2dc555d32fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a04709615d14d7b5bd5d017bce378333d24b2b7d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904684"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965155"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 擷取旗標，指出模組是否.netmodule （Microsoft Intermediate Language (MSIL) 模組只包含中繼資料和任何原生的符號）。  
@@ -50,8 +48,8 @@ HRESULT get_isMSILNetmodule(
 |需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK 8.0 版|  
+|版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

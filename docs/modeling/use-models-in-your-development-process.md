@@ -1,21 +1,20 @@
 ---
 title: 在開發程序中使用模型
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a507a6995ceb3c04dfc3d9daf57fa341fe6fc7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aced2be4d584fb2ede58527a1d541f24089f220d
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832814"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315803"
 ---
 # <a name="use-models-in-your-development-process"></a>在開發程序中使用模型
 
@@ -134,7 +133,7 @@ ms.locfileid: "53832814"
 |-|-|
 |**影片**|![連結至影片](../data-tools/media/playvideo.gif) [MSDN 「 如何 」 影片：如何建立和使用 UML 模型和圖表 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif) [Channel 9:搭配 Visual Studio 2010 使用 UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif) [MSDN 「 如何 」 系列：UML 工具和擴充性 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**論壇**|- [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**部落格**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
+|**部落格**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>另請參閱

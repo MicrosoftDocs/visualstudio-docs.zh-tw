@@ -2,21 +2,20 @@
 title: 定義 Python 專案的自訂功能表命令
 description: 您可以藉由編輯專案和目標檔案，將自訂命令新增至 Visual Studio 中的 Python 專案操作功能表，以叫用可執行程式、指令碼、模組、內嵌程式碼片段，以及 pip。
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3cf0e0984c8051c0301ccb20c5f8dce2850c1514
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d183041732b5170da4a7e8832346a93dec32451
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820988"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943086"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>定義 Python 專案的自訂命令
 
@@ -132,7 +131,7 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 
 ### <a name="target-attributes"></a>目標屬性
 
-| 屬性 | 必要 | 說明 |
+| 屬性 | 必要 | 描述 |
 | --- | --- | --- |
 | 名稱 | 是 | Visual Studio 專案中的命令識別項。 您必須將此名稱新增至 `<PythonCommands>` 屬性群組，命令才會顯示在 [Python] 子功能表上。 |
 | 標籤 | 是 | [Python] 子功能表上顯示的 UI 顯示名稱。 |
@@ -142,7 +141,7 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 
 所有屬性值均區分大小寫。
 
-| 屬性 | 必要 | 說明 |
+| 屬性 | 必要 | 描述 |
 | --- | --- | --- |
 | TargetType | 是 | 指定目標屬性的內容，以及其搭配 Arguments 屬性使用的方式：<ul><li>**executable**：執行在 Target 中命名的可執行檔，並附加 Arguments 中的值，如同直接在命令列上輸入一樣。 此值只能包含程式名稱，而不能包含引數。</li><li>**script**：以 Target 中的檔案名稱執行 *python.exe*，後面接著 Arguments 中的值。</li><li>**module**：執行 `python -m`，後面依序接著 Target 中模組名稱及 Arguments 中的值。</li><li>**code**：執行 Target 中包含的內嵌程式碼。 這會忽略 Arguments 值。</li><li>**pip**：以 Target 中的命令執行 `pip`，後面接著 Arguments；ExecuteIn 設定為 "output"，但 PIP 會使用 `install` 命令並將 Target 用作套件名稱。</li></ul> |
 | 目標 | 是 | 要使用的檔案名稱、模組名稱、程式碼或 PIP 命令，端視 TargetType 而定。 |

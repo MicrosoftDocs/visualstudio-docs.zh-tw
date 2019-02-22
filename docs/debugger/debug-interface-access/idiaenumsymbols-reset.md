@@ -1,8 +1,6 @@
 ---
-title: 'Idiaenumsymbols:: Reset |Microsoft 文件'
-ms.custom: ''
+title: 'Idiaenumsymbols:: Reset |Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: dd3c41a5-ebdf-4a9e-bc84-2fe985be0075
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a09a4876fb364a6cf8e80f8b66edde4976f909
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 8540a3aef4460ec022c3da8d69da44d14863d7e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468979"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55068663"
 ---
 # <a name="idiaenumsymbolsreset"></a>IDiaEnumSymbols::Reset
-列舉序列重設為開頭。  
+將列舉型別序列重設到開頭。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,5 +31,5 @@ HRESULT Reset ();
 ## <a name="return-value"></a>傳回值  
  傳回 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

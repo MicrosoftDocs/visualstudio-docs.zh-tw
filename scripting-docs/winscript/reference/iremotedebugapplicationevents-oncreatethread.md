@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnCreateThread |Microsoft 文件
+title: IRemoteDebugApplicationEvents::OnCreateThread |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3eb78f96d2621eac3794ba5c7c017590a775bd8e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3ff45733723395dc80d85c6c3242f24ba1474060
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728348"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088916"
 ---
 # <a name="iremotedebugapplicationeventsoncreatethread"></a>IRemoteDebugApplicationEvents::OnCreateThread
-處理建立執行緒事件。  
+會建立執行緒事件的處理。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT OnCreateThread(  
    IRemoteDebugApplicationThread*  prdat  
 );  
@@ -43,7 +43,7 @@ HRESULT OnCreateThread(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

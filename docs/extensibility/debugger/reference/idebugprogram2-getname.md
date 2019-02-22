@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetName |Microsoft Docs
+title: IDebugProgram2::GetName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a54cbf13-b3e3-4c9f-8b8d-13573232dfb0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7faf92aff7c9508e2359c3895e4e9f6efacf639
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b148b5bcbfe9f0f190713e49714d8caed4df8bbb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927450"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938077"
 ---
 # <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
 取得程式的名稱。  

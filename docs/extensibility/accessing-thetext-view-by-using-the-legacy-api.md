@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8f751f72-c972-4be3-84ee-19c281e02e25
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1878c1e3769ffaa8aedd4c4d0f26349d6f097d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bce39d8ae736d9f7dcda8b18198053f90933b811
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943833"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335491"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>使用舊版的 API 來存取 [文字] 檢視
 文字檢視是儲存在文字緩衝區中的文字呈現。 您可以存取 [文字] 檢視下一節中所示，使用舊版 API。
@@ -23,7 +23,7 @@ ms.locfileid: "53943833"
 ## <a name="text-view-object"></a>文字檢視物件
  每個檢視是它自己的文字緩衝區，相關聯，而檢視上的資料緩衝區中的視窗。 下圖顯示的文字檢視物件，因為它由索引鍵的介面<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>。
 
- ![Visual Studio 文字檢視物件](../extensibility/media/vstextview.gif "vstextview")文字檢視物件
+ ![Visual Studio 文字檢視物件](../extensibility/media/vstextview.gif)
 
  檢視是一種呈現文字緩衝區中。 它包含功能，例如自動換行和製作大綱，以便在檢視中看到的內容不是確切的緩衝區中的文字。
 

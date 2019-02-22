@@ -13,15 +13,15 @@ helpviewer_keywords:
 - exposing code to VBA
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f49ccc064f06908ed9c965f20773bd15d4753b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3734fab9915d1a1940789a52f278cb0b4f4c7063
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872579"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866215"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>HOW TO：公開 （expose) 至視覺效果中的 VBA 程式碼C#專案
   如果您想要與彼此互動的程式碼的兩個類型，您可以公開 Visual C# 專案中 Visual basic for Applications (VBA) 程式碼的程式碼。  

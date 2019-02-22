@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_reference |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6a97cb74-6a14-41fd-8e24-2a42d7a1e529
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de32c77f34478389fcac5d121a20fa2de897d1a5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 60e73fbc4fff9c0742d4bc89d6bc43c5b845a7e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923767"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039863"
 ---
 # <a name="idiasymbolgetreference"></a>IDiaSymbol::get_reference
 擷取指定指標型別是否為參考的旗標。  
@@ -27,7 +25,7 @@ ms.locfileid: "49923767"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_reference (   
+HRESULT get_reference (   
    BOOL* pRetVal  
 );  
 ```  
@@ -42,5 +40,5 @@ HRESULT get_reference (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,7 +1,6 @@
 ---
-title: 如何：建立資料驅動型單元測試
+title: 建立資料驅動的單元測試
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
@@ -11,18 +10,18 @@ helpviewer_keywords:
 - unit tests, data-driven
 - data-driven unit tests
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cf09dc02113692b02231fa2f219207a0399ebff1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc5c4b68b5713ba8831d840decea7f2ea25704f4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822874"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931438"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>如何：建立資料驅動型單元測試
+# <a name="how-to-create-a-data-driven-unit-test"></a>HOW TO：建立資料驅動的單元測試
 
 使用適用於 Managed 程式碼的 Microsoft 單元測試架構，您就可以設定單元測試方法，從資料來源擷取用於測試方法中的值。 這個方法會針對資料來源中每個資料列依序執行，讓您輕鬆地用單一方法來測試各種輸入。
 
@@ -36,7 +35,7 @@ ms.locfileid: "53822874"
 
 4.  使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> 索引子屬性，以擷取您在測試中使用的值。
 
-##  <a name="BKMK_The_method_under_test"></a> 受測方法
+## <a name="the-method-under-test"></a>受測方法
 
 例如，假設我們具有：
 
@@ -64,8 +63,9 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-##  <a name="create-a-data-source"></a>建立資料來源
- 若要測試 `AddIntegers` 方法，請建立一個資料來源，其中會指定參數的值範圍，以及您預期將傳回的總和。 在範例中，我們將建立名為 `MathsData` 的 SQL 壓縮資料庫，和名為 `AddIntegersData` 的資料表，其中包含下列資料行名稱和值
+## <a name="create-a-data-source"></a>建立資料來源
+
+若要測試 `AddIntegers` 方法，請建立一個資料來源，其中會指定參數的值範圍，以及您預期將傳回的總和。 在範例中，我們將建立名為 `MathsData` 的 SQL 壓縮資料庫，和名為 `AddIntegersData` 的資料表，其中包含下列資料行名稱和值
 
 |FirstNumber|SecondNumber|Sum|
 |-|------------------|-|
@@ -73,8 +73,9 @@ public int AddIntegers(int first, int second)
 |1|1|2|
 |2|-3|-1|
 
-##  <a name="add-a-testcontext-to-the-test-class"></a>將 TestContext 新增至測試類別
- 單元測試架構會建立 `TestContext` 物件來儲存資料驅動型測試的資料來源資訊。 架構接著會設定此物件作為我們建立的 `TestContext` 屬性值。
+## <a name="add-a-testcontext-to-the-test-class"></a>將 TestContext 新增至測試類別
+
+單元測試架構會建立 `TestContext` 物件來儲存資料驅動型測試的資料來源資訊。 架構接著會設定此物件作為我們建立的 `TestContext` 屬性值。
 
 ```csharp
 private TestContext testContextInstance;
@@ -85,10 +86,11 @@ public TestContext TestContext
 }
 ```
 
- 在測試方法中，您可以透過 `TestContext` 的 `DataRow` 索引子屬性來存取資料。
+在測試方法中，您可以透過 `TestContext` 的 `DataRow` 索引子屬性來存取資料。
 
-##  <a name="write-the-test-method"></a>撰寫測試方法
- `AddIntegers` 的測試方法相當簡單。 針對資料來源中的每個資料列，請使用 **FirstNumber** 和 **SecondNumber** 資料行值作為參數呼叫 `AddIntegers`，並針對 **Sum** 資料行值驗證傳回值：
+## <a name="write-the-test-method"></a>撰寫測試方法
+
+`AddIntegers` 的測試方法相當簡單。 針對資料來源中的每個資料列，請使用 **FirstNumber** 和 **SecondNumber** 資料行值作為參數呼叫 `AddIntegers`，並針對 **Sum** 資料行值驗證傳回值：
 
 ```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0; Data Source=C:\Data\MathsData.sdf;", "Numbers")]
@@ -110,8 +112,9 @@ public void AddIntegers_FromDataSourceTest()
 
 `Assert` 方法包含顯示失敗之反覆項目的 `x`和 `y` 值。 根據預設，判斷提示的值 `expected` 和 `actual` 已經包含在失敗測試的詳細資料中。
 
-###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> 指定 DataSourceAttribute
- `DataSource` 屬性會指定資料來源的連接字串，以及您用於測試方法中的資料表名稱。 連接字串的確切資訊視您所使用的資料來源類型而有所不同。 在此範例中，我們使用了 SqlServerCe 資料庫。
+### <a name="specify-the-datasourceattribute"></a>指定 DataSourceAttribute
+
+`DataSource` 屬性會指定資料來源的連接字串，以及您用於測試方法中的資料表名稱。 連接字串的確切資訊視您所使用的資料來源類型而有所不同。 在此範例中，我們使用了 SqlServerCe 資料庫。
 
 ```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
@@ -123,17 +126,17 @@ DataSource 屬性有三個建構函式。
 [DataSource(dataSourceSettingName)]
 ```
 
- 具有一個參數的建構函式在解決方案中使用 *app.config* 檔案中儲存的連線資訊。 *dataSourceSettingsName* 是組態檔中用來指定連接資訊的 XML 項目名稱。
+具有一個參數的建構函式在解決方案中使用 *app.config* 檔案中儲存的連線資訊。 *dataSourceSettingsName* 是組態檔中用來指定連接資訊的 XML 項目名稱。
 
- 使用 *app.config* 檔案可讓您變更資料來源的位置，而不用變更單元測試本身。 如需如何建立和使用 *app.config* 檔案的資訊，請參閱[逐步解說：使用組態檔定義資料來源](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+使用 *app.config* 檔案可讓您變更資料來源的位置，而不用變更單元測試本身。 如需如何建立和使用 *app.config* 檔案的資訊，請參閱[逐步解說：使用組態檔定義資料來源](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
 ```csharp
 [DataSource(connectionString, tableName)]
 ```
 
- 具有兩個參數的 `DataSource` 建構函式指定資料來源的連接字串，以及包含測試方法資料的資料表名稱。
+具有兩個參數的 `DataSource` 建構函式指定資料來源的連接字串，以及包含測試方法資料的資料表名稱。
 
- 連接字串取決於資料來源的類型，但應該包含指定資料提供者非變異名稱的 Provider 元素。
+連接字串取決於資料來源的類型，但應該包含指定資料提供者非變異名稱的 Provider 元素。
 
 ```csharp
 [DataSource(
@@ -144,21 +147,26 @@ DataSource 屬性有三個建構函式。
     )]
 ```
 
-###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> 使用 TestContext.DataRow 存取資料
- 若要存取 `AddIntegersData` 資料表中的資料，您要使用 `TestContext.DataRow` 索引子。 `DataRow` 是 <xref:System.Data.DataRow> 物件，因此請透過索引或資料行名稱來擷取資料行值。 因為值會以物件傳回，請將它們轉換為適當類型：
+### <a name="use-testcontextdatarow-to-access-the-data"></a>使用 TestContext.DataRow 存取資料
+
+若要存取 `AddIntegersData` 資料表中的資料，您要使用 `TestContext.DataRow` 索引子。 `DataRow` 是 <xref:System.Data.DataRow> 物件，因此請透過索引或資料行名稱來擷取資料行值。 因為值會以物件傳回，請將它們轉換為適當類型：
 
 ```csharp
 int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
-##  <a name="run-the-test-and-view-results"></a>執行測試並檢視結果
- 當您完成撰寫測試方法後，就可建置測試專案。 測試方法會顯示於 [測試總管] 視窗中的 [未執行的測試] 群組。 當您執行、撰寫及重新執行測試時，[測試總管] 會將結果顯示在 [失敗的測試]、[通過的測試] 和 [未執行的測試] 等群組中。 您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。
+## <a name="run-the-test-and-view-results"></a>執行測試並檢視結果
 
- [測試總管] 頂端的測試結果列會隨您的測試回合產生動畫效果。 在測試回合結束時，如果所有的測試都通過，狀態列會變成綠色，如果有任何測試失敗則變成紅色。 測試回合摘要會顯示在 [測試總管] 視窗底部的詳細資料窗格中。 在底部窗格中選取某個測試以檢視該測試的詳細資料。
+當您完成撰寫測試方法後，就可建置測試專案。 測試方法會顯示於 [測試總管] 中的 [未執行的測試] 群組。 當您執行、撰寫及重新執行測試時，[測試總管] 會將結果顯示在 [失敗的測試]、[通過的測試] 和 [未執行的測試] 等群組中。 您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。
 
- 如果您執行我們範例中的 `AddIntegers_FromDataSourceTest` 方法，結果列會變成紅色，而測試方法會移至 [失敗的測試]。 如果來自資料來源的任何反覆執行方法失敗，資料驅動的測試將會失敗。 當您在 [測試總管] 視窗中選擇失敗的資料驅動型測試時，詳細資料窗格會顯示每個反覆項目的結果，各反覆項目是以資料列索引識別。 在本範例中，它會顯示 `AddIntegers` 演算法並未正確處理負數值。
+[測試總管] 頂端的測試結果列會隨您的測試回合產生動畫效果。 在測試回合結束時，如果所有的測試都通過，狀態列會變成綠色，如果有任何測試失敗則變成紅色。 測試回合摘要會顯示在 [測試總管] 視窗底部的詳細資料窗格中。 在底部窗格中選取某個測試以檢視該測試的詳細資料。
 
- 當受測方法已修正並重新執行測試時，結果列會變成綠色，且測試方法會移動到 [通過的測試] 群組。
+> [!NOTE]
+> 每個資料的資料列都會有結果，也會有一個摘要結果。 如果資料的每個資料列都測試通過，執行的摘要會顯示為**通過**。 如果有任何資料列測試失敗，執行的摘要會顯示為**失敗**。
+
+如果您執行我們範例中的 `AddIntegers_FromDataSourceTest` 方法，結果列會變成紅色，而測試方法會移至 [失敗的測試]。 如果來自資料來源的任何反覆執行方法失敗，資料驅動的測試將會失敗。 當您在 [測試總管] 視窗中選擇失敗的資料驅動型測試時，詳細資料窗格會顯示每個反覆項目的結果，各反覆項目是以資料列索引識別。 在本範例中，它會顯示 `AddIntegers` 演算法並未正確處理負數值。
+
+當受測方法已修正並重新執行測試時，結果列會變成綠色，且測試方法會移動到 [通過的測試] 群組。
 
 ## <a name="see-also"></a>另請參閱
 

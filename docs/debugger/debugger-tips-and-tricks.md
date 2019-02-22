@@ -3,7 +3,6 @@ title: 祕訣和訣竅，偵錯工具
 description: 了解一些 Visual Studio 偵錯工具支援鮮為人知的功能
 ms.custom: seodec18
 ms.date: 06/15/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - stepping
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8d484a343969bd6abb73a128d740e6ec57c9432e
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055221"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318416"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 中偵錯工具的產能的秘訣和訣竅
 
-閱讀本主題以了解 Visual Studio 偵錯工具的幾個產能的秘訣和訣竅。 在偵錯工具的基本功能，請參閱[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)。 在本主題中，我們將討論功能教學課程中不包含某些區域。
+閱讀本主題以了解 Visual Studio 偵錯工具的幾個產能的秘訣和訣竅。 在偵錯工具的基本功能，請參閱[第一次查看偵錯工具](../debugger/debugger-feature-tour.md)。 在本主題中，我們將討論功能教學課程中不包含某些區域。
 
 ## <a name="pin-data-tips"></a>釘選資料提示
 
@@ -78,9 +77,9 @@ ms.locfileid: "53055221"
 3. 尋找在變數**區域變數** 視窗 (**偵錯 > Windows > 區域變數**)，以滑鼠右鍵按一下變數，然後選取**設定物件 ID**。
 
     ![建立物件 ID](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
+
 4.  您應該會看到 [區域變數] **$** 視窗中顯示 **$** 視窗中設定中斷點，在進行呼叫的函式返回的指令或程式行位置中斷執行。 此變數是物件識別碼。
-  
+
 5.  以滑鼠右鍵按一下 物件識別碼變數，然後選擇 **新增監看式**。
 
 如需詳細資訊，請參閱 <<c0> [ 建立物件 ID](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds)。
@@ -124,11 +123,11 @@ ms.locfileid: "53055221"
 #### <a name="to-show-threads-in-your-source-code"></a>若要在您的原始程式碼中顯示執行緒
 
 1.  偵錯時，按一下**在來源中顯示執行緒** 按鈕![在來源中顯示執行緒](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")中**偵錯**工具列。
-  
+
 2.  查看來源視窗左邊的裝訂邊。 在這一行，您會看到*執行緒標記*圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，類似於兩條布條。 執行緒標記表示執行緒會停在這個位置上。
 
     請注意，可能會在中斷點部分隱藏執行緒標記。
-  
+
 3.  將指標移到執行緒標記上。 資料提示方塊就會出現。 資料提示方塊會指出每個已停止的執行緒的名稱和執行緒 ID 編號。
 
     您也可以檢視的位置中的執行緒[平行堆疊 視窗](../debugger/get-started-debugging-multithreaded-apps.md)。
@@ -149,7 +148,7 @@ ms.locfileid: "53055221"
 
 若要附加至您執行的應用程式，偵錯工具會載入針對您嘗試偵錯的應用程式的完全相同的組建產生的符號 (.pdb) 檔。 在某些情況下，符號檔的一些知識可以很有幫助。 您可以檢查 Visual Studio 會使用的符號檔的載入**模組**視窗。
 
-開啟**模組**視窗中的選取偵錯時**偵錯 > Windows > 模組**。 **模組**視窗可以告訴您哪些模組偵錯工具會視為使用者程式碼，或[ *My Code*](../debugger/just-my-code.md)，和符號載入模組的狀態。 在大部分情況下，偵錯工具會自動尋找符號檔的使用者程式碼，但如果您想要逐步執行 （或偵錯）.NET framework 程式碼、 系統程式碼或協力廠商程式庫程式碼，需要額外的步驟，以取得正確的符號檔。
+開啟**模組**視窗中的選取偵錯時**偵錯 > Windows > 模組**。 **模組** 視窗可以告訴您哪些模組偵錯工具會視為使用者程式碼，或[ *My Code*](../debugger/just-my-code.md)，和符號載入模組的狀態。 在大部分情況下，偵錯工具會自動尋找符號檔的使用者程式碼，但如果您想要逐步執行 （或偵錯）.NET framework 程式碼、 系統程式碼或協力廠商程式庫程式碼，需要額外的步驟，以取得正確的符號檔。
 
 ![在 [模組] 視窗中檢視符號資訊](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 
@@ -163,8 +162,8 @@ ms.locfileid: "53055221"
 
 其他祕訣和訣竅與更多詳細的資訊，請參閱這些部落格文章：
 
-- [在 Visual Studio 中偵錯的較小者已知的駭客 7](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [在 Visual Studio 中隱藏的寶藏 7](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [在 Visual Studio 中偵錯的較小者已知的駭客 7](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [在 Visual Studio 中隱藏的寶藏 7](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>請參閱
 [鍵盤快速鍵](../ide/tips-and-tricks-for-visual-studio.md)

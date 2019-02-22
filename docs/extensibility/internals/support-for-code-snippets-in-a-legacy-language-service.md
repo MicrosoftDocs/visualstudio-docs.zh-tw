@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5437f511eda582f2de7b28cc35716b0148df254
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6fb944ce92613a4352d7b69c0975d39791be2cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852945"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948982"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>舊版語言服務中對程式碼片段的支援
 程式碼片段是一種插入至原始程式檔的程式碼。 程式碼片段本身是以 XML 為基礎的範本，內含一組欄位。 插入程式碼片段，並可以有不同的值，根據在其中插入程式碼片段的內容之後，會反白顯示這些欄位。 立即插入程式碼片段後，語言服務可以格式化程式碼片段。  
@@ -86,10 +86,10 @@ ms.locfileid: "53852945"
 |元素|描述|  
 |-------------|-----------------|  
 |%LCID%|地區設定識別碼。|  
-|%Installroot%|Visual Studio 中，例如，C:\Program Files\Microsoft Visual Studio 8 的根安裝資料夾。|  
-|%Projdir%|包含目前專案的資料夾。|  
-|%Projitem%|資料夾包含目前的專案項目。|  
-|%Testdocs%|在 [使用者設定] 資料夾，例如，C:\Documents and Settings 資料夾\\ *[username]* documents\visual Studio\8。|  
+|%InstallRoot%|Visual Studio 中，例如，C:\Program Files\Microsoft Visual Studio 8 的根安裝資料夾。|  
+|%ProjDir%|包含目前專案的資料夾。|  
+|%ProjItem%|資料夾包含目前的專案項目。|  
+|%TestDocs%|在 [使用者設定] 資料夾，例如，C:\Documents and Settings 資料夾\\ *[username]* documents\visual Studio\8。|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>語言服務的啟用程式碼片段  
  您也可以新增語言服務的啟用程式碼片段<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>VSPackage 屬性 (請參閱 <<c2> [ 註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)如需詳細資訊)。 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A>並<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A>參數是選擇性的但您應該將包含`SearchPaths`具名參數，以通知**程式碼片段管理員**的程式碼片段的位置。  

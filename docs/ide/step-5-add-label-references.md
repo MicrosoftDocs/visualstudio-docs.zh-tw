@@ -1,24 +1,21 @@
 ---
-title: 步驟 5：加入標籤參考
-ms.custom: ''
+title: 步驟 5：新增標籤參考
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ecea1c6a1baf27247b9b01d28e04b6da827a0e3
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5b9d6e2786b2d917348818134c9e1cbe2767f7fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747941"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934337"
 ---
-# <a name="step-5-add-label-references"></a>步驟 5：加入標籤參考
+# <a name="step-5-add-label-references"></a>步驟 5：新增標籤參考
 程式需要追蹤玩家所選擇的 Label 控制項。 現在，程式會顯示玩家選擇的所有標籤。 但是，我們將要變更該行為。 在選擇第一個標籤之後，程式應該會顯示標籤的圖示。 在選擇第二個標籤之後，程式應該要短暫顯示這兩個圖示，然後再次隱藏這兩個圖示。 您的程式現在將會使用*參考變數*，追蹤第一次和第二次選擇的 Label 控制項。
 
 ## <a name="to-add-label-references"></a>若要加入標籤參考
@@ -48,6 +45,6 @@ ms.locfileid: "34747941"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要移到下一個教學課程步驟，請參閱[步驟 6：加入計時器](../ide/step-6-add-a-timer.md)。
+-   若要前往下一個教學課程步驟，請參閱[步驟 6：新增計時器](../ide/step-6-add-a-timer.md)。
 
--   若要返回前一個教學課程步驟，請參閱[步驟 4：將 Click 事件處理常式加入至每個標籤](../ide/step-4-add-a-click-event-handler-to-each-label.md)。
+-   若要回到上一個教學課程步驟，請參閱[步驟 4：將 Click 事件處理常式新增至每一個標籤](../ide/step-4-add-a-click-event-handler-to-each-label.md)。

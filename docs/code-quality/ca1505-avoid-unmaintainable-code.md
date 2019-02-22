@@ -1,7 +1,6 @@
 ---
 title: CA1505:應避免撰寫無法維護的程式碼
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AvoidUnmaintainableCode
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8292b268-5929-4221-b699-f9c414bcec5d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 250049806eb8765f9cc080f1b2de0b7ae0dd1fce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 017d7ec1b28c1a76b7a837a38f5089c95724fe97
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864552"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930710"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505:應避免撰寫無法維護的程式碼
 

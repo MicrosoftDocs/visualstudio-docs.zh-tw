@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e28364360cf636273384480a35cd07468b9b7e6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 573fcbce3b395f7f351d57208998b0b63b175559
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845573"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039146"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion 元素 （Visual Studio 範本）
 
@@ -26,7 +26,7 @@ ms.locfileid: "53845573"
 > [!IMPORTANT]
 > 開始在 Visual Studio 2017 版本 15.6、visual**目標 Framework 版本**下拉式清單中不再顯示範本中的篩選條件**範本**一節**新專案**  對話方塊。 相反地，**目標 Framework 版本**下拉式清單中的函式做為所選範本的架構選擇器。
 
- \<VSTemplate > \<TemplateData > \<MaxFrameworkVersion >
+ \<VSTemplate> \<TemplateData> \<MaxFrameworkVersion>
 
 ## <a name="syntax"></a>語法
 

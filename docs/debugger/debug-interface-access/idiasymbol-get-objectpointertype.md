@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_objectpointertype |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bce193b9-67b0-4c35-96e5-6a664937322e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c82c52fc49b76e6c3adb8b58bb03fafa28531f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ce60ea631fe0c769740a2c3aa20281b13e525d18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866398"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916193"
 ---
 # <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
 擷取類別方法的物件指標的類型。  
@@ -27,7 +25,7 @@ ms.locfileid: "49866398"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_objectPointerType (   
+HRESULT get_objectPointerType (   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -45,6 +43,6 @@ HRESULT get_objectPointerType (
 ## <a name="remarks"></a>備註  
  這個屬性只適用於具有符號[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)種`SymTagFunctionType`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

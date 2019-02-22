@@ -1,7 +1,6 @@
 ---
 title: CA1053:靜態預留位置類型不應該包含建構函式
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldNotHaveConstructors
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 10302b9a-fa5e-4935-a06a-513d9600f613
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 998d941d0dd0ec06ff7d0f8a727ad3bf50718065
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da5edc8f31510fa01d2132735ede502ad7f6ad6a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928515"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922598"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053:靜態預留位置類型不應該包含建構函式
 

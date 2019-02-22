@@ -1,20 +1,19 @@
 ---
 title: 格式化、XML、文字編輯器 (選項對話方塊)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05ddfcb0613dac08fb6e4323062f87475bd8f0d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79b34c30e3d00e4f145a32acbaf769d13888298d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938588"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923197"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>格式、 XML、 文字編輯器、 選項對話方塊
 

@@ -1,8 +1,6 @@
 ---
-title: 'Idialinenumber:: Get_linenumber |Microsoft Docs'
-ms.custom: ''
+title: IDiaLineNumber::get_lineNumber | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2dff3fd9-097d-4645-bc1b-cb65ecbc42a6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c745896a4f574514b57f47cff984d2271eaf25bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 643c27b432a1770b78226a0471e6304f89a02092
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942513"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977625"
 ---
 # <a name="idialinenumbergetlinenumber"></a>IDiaLineNumber::get_lineNumber
 擷取原始程式檔中的行號。  
@@ -27,7 +25,7 @@ ms.locfileid: "49942513"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_lineNumber (   
+HRESULT get_lineNumber (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_lineNumber (
  [out]傳回原始程式檔中的行號。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
   
@@ -47,5 +45,5 @@ DWORD linenum;
 pLine->get_lineNumber( &linenum );  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

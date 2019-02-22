@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetAppIDFromAddress |Microsoft Docs
+title: IDebugSymbolProviderDirect::GetAppIDFromAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d76a0f36-79c4-4c58-9db3-880b00d11610
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f40c269e53834bee151bc53d34c0f9853e3989d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45af78ee8ab79ac2c93c50b2550a906029f538f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938221"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001533"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
 擷取指定的偵錯位址的應用程式網域識別碼。  

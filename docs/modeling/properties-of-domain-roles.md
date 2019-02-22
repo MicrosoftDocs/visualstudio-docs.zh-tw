@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: fbd977b733aa6e8e663cf4a69e577030f5c6106a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3dcad8664fd0759a81e7c676c2d266475a3db9fe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839701"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923274"
 ---
 # <a name="properties-of-domain-roles"></a>網域角色的屬性
 下表中的屬性會與網域角色相關聯。 網域角色的相關資訊，請參閱[了解模型、 類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -36,7 +35,7 @@ ms.locfileid: "53839701"
 |分類|產生的屬性出現在類別目錄**屬性**中產生的設計工具視窗。 如果這個屬性是空的則產生的屬性會出現**Misc**類別|< 無\>|
 |描述|描述用來記錄程式碼，並會在產生的設計工具的 UI。<br /><br /> 描述會出現在角色扮演者類別的產生屬性的 IntelliSense 工具提示。|`Description for` *角色的完整名稱*|
 |顯示名稱|網域角色產生的設計工具中顯示名稱。|[名稱] 屬性調整過的值。|
-|說明關鍵字|選擇性的關鍵字是用來編製索引的網域角色的 F1 說明。|\<無 >|
+|說明關鍵字|選擇性的關鍵字是用來編製索引的網域角色的 F1 說明。|\<無>|
 |內容顯示名稱|會顯示在產生的設計工具產生的角色屬性名稱。|屬性名稱屬性調整過的值。|
 
 > [!NOTE]

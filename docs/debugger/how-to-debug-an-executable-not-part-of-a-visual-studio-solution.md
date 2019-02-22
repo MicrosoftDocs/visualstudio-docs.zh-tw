@@ -3,7 +3,6 @@ title: 偵錯不屬於 Visual Studio 方案的應用程式
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/19/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c408ca42f82c0419c6570068e2a83e97f2371e9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2ae2ea60a4f2427cbe1509a8fa05c787d44b19d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066609"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019131"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>偵錯不屬於 Visual Studio 方案的應用程式 (c + +， C#，Visual Basic 中， F#)
 

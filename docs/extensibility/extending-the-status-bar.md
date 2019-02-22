@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eed1810f91358e514d2cd8085d73c030f81085b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20502be32cb3206431316a062ab1ee898c66e274
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962889"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956411"
 ---
 # <a name="extend-the-status-bar"></a>擴充狀態列
 您可以使用 Visual Studio 的 [狀態] 列在 IDE 底部，以顯示資訊。  

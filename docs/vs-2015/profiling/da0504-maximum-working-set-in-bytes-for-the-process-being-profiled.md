@@ -1,14 +1,9 @@
 ---
 title: DA0504：所分析之處理序的最大工作集 (以位元組為單位) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0504
 - vs.performance.504
@@ -17,13 +12,13 @@ ms.assetid: 36e71603-ece7-4000-85fc-9da4eed61bf2
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a39171c8786f3b2149a50bd3c4a6915575f050ae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a990b428cfa03722ee5e02884344d96844825ee8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787187"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504：進行程式碼剖析之處理序的最大工作集 (以位元組為單位)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51800194"
 規則 Id |DA0504 |  
 |類別目錄 |資源管理 |  
 |程式碼剖析方法 |所有 |  
-|訊息 |收集這項資訊僅提供資訊。 「處理序工作集」計數器會依您分析的處理序測量實體記憶體的使用方式。 報告的值觀察在所有測量間隔的最大值。 |  
+|訊息 |收集這項資訊僅提供資訊。 「處理序工作集」計數器會依您分析的處理序測量實體記憶體的使用方式。 所報告值是所有測量間隔所觀察到最大值。|  
 |規則類型 |資訊 |  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
@@ -47,6 +42,3 @@ ms.locfileid: "51800194"
  此規則會從 Windows 效能監視功能收集這個測量資料，但只報告做為參考資訊。 使用此資料可比較程式不同版本或組建的效能，或了解不同測試情節中的應用程式效能。  
   
  按兩下 [錯誤清單] 視窗中的訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。 尋找 **Process\Working Set** 和 **Memory\Pages/sec** 計數器欄。 然後找出 **Process\Working Set** 的最大值並與 **Memory\Pages/sec** 值比較。 工作集最大值通常與分頁 IO 活動減少的間隔相關，如果機器的記憶體受到限制時尤其如此。
-
-
-

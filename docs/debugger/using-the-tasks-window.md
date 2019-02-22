@@ -1,8 +1,6 @@
 ---
 title: 使用工作視窗 |Microsoft Docs
-ms.custom: ''
 ms.date: 03/18/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.paralleltasks
@@ -16,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bddcb7b36cd119f20fe8e03ed1152662284ac8c0
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561573"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993006"
 ---
-# <a name="using-the-tasks-window"></a>使用工作視窗
+# <a name="using-the-tasks-window-c-visual-basic-c"></a>使用 [工作] 視窗 (C#，Visual Basic、 c + +)
 
 [工作] 視窗與 [執行緒] 視窗類似，差別在於前者顯示的是 <xref:System.Threading.Tasks.Task?displayProperty=fullName>、[task_handle](/cpp/parallel/concrt/reference/task-group-class) 或 [WinJS.Promise](/previous-versions/windows/apps/br211867(v=win.10)) 物件的詳細資訊，而非每個執行緒的詳細資訊。 與執行緒一樣，工作代表可以並行執行的非同步作業，但是多項工作可能會在相同執行緒上執行。
 

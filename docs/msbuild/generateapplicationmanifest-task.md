@@ -16,24 +16,23 @@ helpviewer_keywords:
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54f3739795b5fb3257ba82c52bf9f9df7edaa62b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900687"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55854105"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 工作
-產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單或原生資訊清單。 原生資訊清單在描述元件時，會定義元件的唯一身分識別，並識別組成元件的所有組件和檔案。 透過指出應用程式的進入點並指定應用程式的安全性層級之後，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單就可以擴充原生資訊清單。  
+產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單或原生資訊清單。 原生資訊清單在描述元件時，會定義元件的唯一身分識別，並識別組成元件的所有組件和檔案。 透過指出應用程式的進入點並指定應用程式的安全性層級之後，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單就可以擴充原生資訊清單。
 
-## <a name="parameters"></a>參數  
- 下表說明 `GenerateApplicationManifest` 工作的參數。  
+## <a name="parameters"></a>參數
+下表說明 `GenerateApplicationManifest` 工作的參數。
 
-
-| 參數 | 說明 |
+| 參數 | 描述 |
 |---------------------------------| - |
 | `AssemblyName` | 選擇性的 `String` 參數。<br /><br /> 針對產生的資訊清單指定組件識別的 `Name` 欄位。 如果未指定此參數，會從 `EntryPoint` 或 `InputManifest` 參數來推斷名稱。 如果無法建立名稱，工作便會擲回錯誤。 |
 | `AssemblyVersion` | 選擇性的 `String` 參數。<br /><br /> 針對產生的資訊清單指定組件識別的 `Version` 欄位。 如果未指定此參數，就會使用 "1.0.0.0" 的預設值。 |
@@ -65,293 +64,293 @@ ms.locfileid: "53900687"
 | `TrustInfoFile` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 表示指定應用程式安全性的 XML 文件。 XML 文件中的根項目必須是 asmv2 命名空間中的 trustInfo 節點。 如果工作要產生原生資訊清單，則會忽略此參數。 |
 | `UseApplicationTrust` | 選擇性的 `Boolean` 參數。<br /><br /> 如果為 true，則 `Product`、`Publisher` 和 `SupportUrl` 屬性都會寫入應用程式資訊清單。 |
 
-## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.GenerateManifestBase> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需工作類別的參數清單，請參閱[工作基底類別](../msbuild/task-base-class.md)。  
+## <a name="remarks"></a>備註
+除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.GenerateManifestBase> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需工作類別的參數清單，請參閱[工作基底類別](../msbuild/task-base-class.md)。
 
- 如需如何使用 `GenerateDeploymentManifest` 工作的資訊，請參閱 [GenerateApplicationManifest 工作](../msbuild/generateapplicationmanifest-task.md)。  
+如需如何使用 `GenerateDeploymentManifest` 工作的資訊，請參閱 [GenerateApplicationManifest 工作](../msbuild/generateapplicationmanifest-task.md)。
 
- 相依性和檔案的輸入可以進一步以項目中繼資料裝飾，以指定每個項目的其他部署狀態。  
+相依性和檔案的輸入可以進一步以項目中繼資料裝飾，以指定每個項目的其他部署狀態。
 
-## <a name="item-metadata"></a>項目中繼資料  
+## <a name="item-metadata"></a>項目中繼資料
 
-|中繼資料名稱|說明|  
-|-------------------|-----------------|  
-|`DependencyType`|指出相依性是以應用程式或必要條件進行發行和安裝。 這項中繼資料可用於所有相依性，但不能用於檔案。 此中繼資料可用的值如下：<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Install 是預設值。|  
-|`AssemblyType`|指出相依性為 Managed 或原生組件。 這項中繼資料可用於所有相依性，但不能用於檔案。 此中繼資料可用的值如下：<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` 是預設值，表示資訊清單產生器將會自動決定組件類型。|  
-|`Group`|表示視需要下載額外檔案的群組。 群組名稱是由應用程式定義，並且可以是任何字串。 預設的空字串表示檔案不是下載群組的一部分。 不在群組中的檔案都是初始應用程式下載的一部分。 群組中的檔案只會在應用程式使用 <xref:System.Deployment.Application> 明確要求時下載。<br /><br /> 這項中繼資料可用於 `IsDataFile` 為 `false` 的所有檔案，以及 `DependencyType` 為 `Install` 的所有相依性。|  
-|`TargetPath`|指定應該如何在產生的資訊清單中定義路徑。 這個屬性可用於所有檔案。 如果未指定此屬性，便會使用項目規格。 這個屬性可用於 `DependencyType` 值為 `Install` 的所有檔案和相依性。|  
-|`IsDataFile`|`Boolean` 中繼資料值，指出檔案是否為資料檔案。 資料檔案的特殊性在於會在應用程式更新之間移轉。 這項中繼資料只可用於檔案。 `False` 為預設值。|  
+|中繼資料名稱|描述|
+|-------------------|-----------------|
+|`DependencyType`|指出相依性是以應用程式或必要條件進行發行和安裝。 這項中繼資料可用於所有相依性，但不能用於檔案。 此中繼資料可用的值如下：<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Install 是預設值。|
+|`AssemblyType`|指出相依性為 Managed 或原生組件。 這項中繼資料可用於所有相依性，但不能用於檔案。 此中繼資料可用的值如下：<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` 是預設值，表示資訊清單產生器將會自動決定組件類型。|
+|`Group`|表示視需要下載額外檔案的群組。 群組名稱是由應用程式定義，並且可以是任何字串。 預設的空字串表示檔案不是下載群組的一部分。 不在群組中的檔案都是初始應用程式下載的一部分。 群組中的檔案只會在應用程式使用 <xref:System.Deployment.Application> 明確要求時下載。<br /><br /> 這項中繼資料可用於 `IsDataFile` 為 `false` 的所有檔案，以及 `DependencyType` 為 `Install` 的所有相依性。|
+|`TargetPath`|指定應該如何在產生的資訊清單中定義路徑。 這個屬性可用於所有檔案。 如果未指定此屬性，便會使用項目規格。 這個屬性可用於 `DependencyType` 值為 `Install` 的所有檔案和相依性。|
+|`IsDataFile`|`Boolean` 中繼資料值，指出檔案是否為資料檔案。 資料檔案的特殊性在於會在應用程式更新之間移轉。 這項中繼資料只可用於檔案。 `False` 為預設值。|
 
-## <a name="example"></a>範例  
- 這個範例使用 `GenerateApplicationManifest` 工作來產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單，並使用 `GenerateDeploymentManifest` 工作來為具有單一組件的應用程式產生部署資訊清單。 然後使用 `SignFile` 工作為資訊清單簽章。  
+## <a name="example"></a>範例
+這個範例使用 `GenerateApplicationManifest` 工作來產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單，並使用 `GenerateDeploymentManifest` 工作來為具有單一組件的應用程式產生部署資訊清單。 然後使用 `SignFile` 工作為資訊清單簽章。
 
- 上述範例說明了產生資訊清單時可能發生的最簡單案例，其中 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 資訊清單是針對單一程式所產生。 預設名稱和身分識別都是從資訊清單的組件推斷而來。  
+上述範例說明了產生資訊清單時可能發生的最簡單案例，其中 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 資訊清單是針對單一程式所產生。 預設名稱和身分識別都是從資訊清單的組件推斷而來。
 
 > [!NOTE]
->  在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署。  
+> 在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署。
 > 
 > [!NOTE]
->  如需本範例中 `SignFile` 工作所使用之 `Thumbprint` 屬性的詳細資訊，請參閱 [SignFile 工作](../msbuild/signfile-task.md)。  
+> 如需本範例中 `SignFile` 工作所使用之 `Thumbprint` 屬性的詳細資訊，請參閱 [SignFile 工作](../msbuild/signfile-task.md)。
 
-```xml  
-<Project DefaultTargets="Build"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe" />
+    </ItemGroup>
 
-    <PropertyGroup>  
-        <Thumbprint>  
-             <!-- Insert generated thumbprint here -->  
-        </Thumbprint>  
-    </PropertyGroup>  
+    <PropertyGroup>
+        <Thumbprint>
+             <!-- Insert generated thumbprint here -->
+        </Thumbprint>
+    </PropertyGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-        <GenerateApplicationManifest  
-            EntryPoint="@(EntryPoint)">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+        <GenerateApplicationManifest
+            EntryPoint="@(EntryPoint)">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-        <GenerateDeploymentManifest  
-            EntryPoint="@(ApplicationManifest)">  
-            <Output  
-                ItemName="DeployManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateDeploymentManifest>  
+        <GenerateDeploymentManifest
+            EntryPoint="@(ApplicationManifest)">
+            <Output
+                ItemName="DeployManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateDeploymentManifest>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(ApplicationManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(ApplicationManifest)"/>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(DeployManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(DeployManifest)"/>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>範例  
- 這個範例使用 `GenerateApplicationManifest` 和 `GenerateDeploymentManifest` 工作來產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，以及具有單一組件之應用程式的部署資訊清單，並指定資訊清單的名稱和身分識別。  
+## <a name="example"></a>範例
+這個範例使用 `GenerateApplicationManifest` 和 `GenerateDeploymentManifest` 工作來產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，以及具有單一組件之應用程式的部署資訊清單，並指定資訊清單的名稱和身分識別。
 
- 除了明確指定資訊清單的名稱和身分識別之外，這個範例與前一個範例類似。 此外，這個範例已設定為線上應用程式，而非安裝的應用程式。  
+除了明確指定資訊清單的名稱和身分識別之外，這個範例與前一個範例類似。 此外，這個範例已設定為線上應用程式，而非安裝的應用程式。
 
 > [!NOTE]
->  在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署。  
+> 在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署。
 > 
 > [!NOTE]
->  如需本範例中 `SignFile` 工作所使用之 `Thumbprint` 屬性的詳細資訊，請參閱 [SignFile 工作](../msbuild/signfile-task.md)。  
+> 如需本範例中 `SignFile` 工作所使用之 `Thumbprint` 屬性的詳細資訊，請參閱 [SignFile 工作](../msbuild/signfile-task.md)。
 
-```xml  
-<Project DefaultTargets="Build"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe" />
+    </ItemGroup>
 
-    <PropertyGroup>  
-        <Thumbprint>  
-             <!-- Insert generated thumbprint here -->  
-        </Thumbprint>  
-    </PropertyGroup>  
+    <PropertyGroup>
+        <Thumbprint>
+             <!-- Insert generated thumbprint here -->
+        </Thumbprint>
+    </PropertyGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-        <GenerateApplicationManifest  
-            AssemblyName="SimpleWinApp.exe"  
-            AssemblyVersion="1.0.0.0"  
-            EntryPoint="@(EntryPoint)"  
-            OutputManifest="SimpleWinApp.exe.manifest">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+        <GenerateApplicationManifest
+            AssemblyName="SimpleWinApp.exe"
+            AssemblyVersion="1.0.0.0"
+            EntryPoint="@(EntryPoint)"
+            OutputManifest="SimpleWinApp.exe.manifest">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-        <GenerateDeploymentManifest  
-                AssemblyName="SimpleWinApp.application"  
-                AssemblyVersion="1.0.0.0"  
-                EntryPoint="@(ApplicationManifest)"  
-                Install="false"  
-                OutputManifest="SimpleWinApp.application">  
-                <Output  
-                    ItemName="DeployManifest"  
-                    TaskParameter="OutputManifest"/>  
-        </GenerateDeploymentManifest>  
+        <GenerateDeploymentManifest
+                AssemblyName="SimpleWinApp.application"
+                AssemblyVersion="1.0.0.0"
+                EntryPoint="@(ApplicationManifest)"
+                Install="false"
+                OutputManifest="SimpleWinApp.application">
+                <Output
+                    ItemName="DeployManifest"
+                    TaskParameter="OutputManifest"/>
+        </GenerateDeploymentManifest>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(ApplicationManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(ApplicationManifest)"/>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(DeployManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(DeployManifest)"/>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>範例  
- 這個範例使用 `GenerateApplicationManifest` 和 `GenerateDeploymentManifest` 工作來產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，以及具有多個檔案和組件之應用程式的部署資訊清單。  
+## <a name="example"></a>範例
+這個範例使用 `GenerateApplicationManifest` 和 `GenerateDeploymentManifest` 工作來產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，以及具有多個檔案和組件之應用程式的部署資訊清單。
 
 > [!NOTE]
->  在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署。  
+> 在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署。
 > 
 > [!NOTE]
->  如需本範例中 `SignFile` 工作所使用之 `Thumbprint` 屬性的詳細資訊，請參閱 [SignFile 工作](../msbuild/signfile-task.md)。  
+> 如需本範例中 `SignFile` 工作所使用之 `Thumbprint` 屬性的詳細資訊，請參閱 [SignFile 工作](../msbuild/signfile-task.md)。
 
-```xml  
-<Project DefaultTargets="Build"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe" />
+    </ItemGroup>
 
-    <PropertyGroup>  
-        <Thumbprint>  
-             <!-- Insert generated thumbprint here -->  
-        </Thumbprint>  
-        <DeployUrl>  
-            <!-- Insert the deployment URL here -->  
-        </DeployUrl>  
-        <SupportUrl>  
-            <!-- Insert the support URL here -->  
-        </SupportUrl>  
-    </PropertyGroup>  
+    <PropertyGroup>
+        <Thumbprint>
+             <!-- Insert generated thumbprint here -->
+        </Thumbprint>
+        <DeployUrl>
+            <!-- Insert the deployment URL here -->
+        </DeployUrl>
+        <SupportUrl>
+            <!-- Insert the support URL here -->
+        </SupportUrl>
+    </PropertyGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-    <ItemGroup>  
-        <EntryPoint Include="SimpleWinApp.exe"/>  
-        <Dependency Include="ClassLibrary1.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-        </Dependency>  
-        <Dependency Include="ClassLibrary2.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-            <Group>Secondary</Group>  
-        </Dependency>  
-        <Dependency Include="MyAddIn1.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-            <TargetPath>Addins\MyAddIn1.dll</TargetPath>  
-        </Dependency>  
-        <Dependency Include="ClassLibrary3.dll">  
-            <AssemblyType>Managed</AssemblyType>  
-            <DependencyType>Prerequisite</DependencyType>  
-        </Dependency>  
+    <ItemGroup>
+        <EntryPoint Include="SimpleWinApp.exe"/>
+        <Dependency Include="ClassLibrary1.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Install</DependencyType>
+        </Dependency>
+        <Dependency Include="ClassLibrary2.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Install</DependencyType>
+            <Group>Secondary</Group>
+        </Dependency>
+        <Dependency Include="MyAddIn1.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Install</DependencyType>
+            <TargetPath>Addins\MyAddIn1.dll</TargetPath>
+        </Dependency>
+        <Dependency Include="ClassLibrary3.dll">
+            <AssemblyType>Managed</AssemblyType>
+            <DependencyType>Prerequisite</DependencyType>
+        </Dependency>
 
-        <File Include="Text1.txt">  
-            <TargetPath>Text\Text1.txt</TargetPath>  
-            <Group>Text</Group>  
-        </File>  
-        <File Include="DataFile1.xml ">  
-            <TargetPath>Data\DataFile1.xml</TargetPath>  
-            <IsDataFile>true</IsDataFile>  
-        </File>  
+        <File Include="Text1.txt">
+            <TargetPath>Text\Text1.txt</TargetPath>
+            <Group>Text</Group>
+        </File>
+        <File Include="DataFile1.xml ">
+            <TargetPath>Data\DataFile1.xml</TargetPath>
+            <IsDataFile>true</IsDataFile>
+        </File>
 
-        <IconFile Include="Heart.ico"/>  
-        <ConfigFile Include="app.config">  
-            <TargetPath>SimpleWinApp.exe.config</TargetPath>  
-        </ConfigFile>  
-        <BaseManifest Include="app.manifest"/>  
-    </ItemGroup>  
+        <IconFile Include="Heart.ico"/>
+        <ConfigFile Include="app.config">
+            <TargetPath>SimpleWinApp.exe.config</TargetPath>
+        </ConfigFile>
+        <BaseManifest Include="app.manifest"/>
+    </ItemGroup>
 
-    <Target Name="Build">  
+    <Target Name="Build">
 
-        <GenerateApplicationManifest  
-            AssemblyName="SimpleWinApp.exe"  
-            AssemblyVersion="1.0.0.0"  
-            ConfigFile="@(ConfigFile)"  
-            Dependencies="@(Dependency)"  
-            Description="TestApp"  
-            EntryPoint="@(EntryPoint)"  
-            Files="@(File)"  
-            IconFile="@(IconFile)"  
-            InputManifest="@(BaseManifest)"  
-            OutputManifest="SimpleWinApp.exe.manifest">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+        <GenerateApplicationManifest
+            AssemblyName="SimpleWinApp.exe"
+            AssemblyVersion="1.0.0.0"
+            ConfigFile="@(ConfigFile)"
+            Dependencies="@(Dependency)"
+            Description="TestApp"
+            EntryPoint="@(EntryPoint)"
+            Files="@(File)"
+            IconFile="@(IconFile)"
+            InputManifest="@(BaseManifest)"
+            OutputManifest="SimpleWinApp.exe.manifest">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-        <GenerateDeploymentManifest  
-            AssemblyName="SimpleWinApp.application"  
-            AssemblyVersion="1.0.0.0"  
-            DeploymentUrl="$(DeployToUrl)"  
-            Description="TestDeploy"  
-            EntryPoint="@(ApplicationManifest)"  
-            Install="true"  
-            OutputManifest="SimpleWinApp.application"  
-            Product="SimpleWinApp"  
-            Publisher="Microsoft"  
-            SupportUrl="$(SupportUrl)"  
-            UpdateEnabled="true"  
-            UpdateInterval="3"  
-            UpdateMode="Background"  
-            UpdateUnit="weeks">  
-            <Output  
-                ItemName="DeployManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateDeploymentManifest>  
+        <GenerateDeploymentManifest
+            AssemblyName="SimpleWinApp.application"
+            AssemblyVersion="1.0.0.0"
+            DeploymentUrl="$(DeployToUrl)"
+            Description="TestDeploy"
+            EntryPoint="@(ApplicationManifest)"
+            Install="true"
+            OutputManifest="SimpleWinApp.application"
+            Product="SimpleWinApp"
+            Publisher="Microsoft"
+            SupportUrl="$(SupportUrl)"
+            UpdateEnabled="true"
+            UpdateInterval="3"
+            UpdateMode="Background"
+            UpdateUnit="weeks">
+            <Output
+                ItemName="DeployManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateDeploymentManifest>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(ApplicationManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(ApplicationManifest)"/>
 
-        <SignFile  
-            CertificateThumbprint="$(Thumbprint)"  
-            SigningTarget="@(DeployManifest)"/>  
+        <SignFile
+            CertificateThumbprint="$(Thumbprint)"
+            SigningTarget="@(DeployManifest)"/>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>範例  
- 此範例使用 `GenerateApplicationManifest` 工作來產生應用程式 Test.exe 的原生資訊清單，並參考原生元件 Alpha.dll 和隔離的 COM 元件 Bravo.dll。  
+## <a name="example"></a>範例
+此範例使用 `GenerateApplicationManifest` 工作來產生應用程式 Test.exe 的原生資訊清單，並參考原生元件 Alpha.dll 和隔離的 COM 元件 Bravo.dll。
 
- 此範例會產生 Test.exe.manifest，讓應用程式 XCOPY 可部署並利用「免註冊的 COM」。  
+此範例會產生 Test.exe.manifest，讓應用程式 XCOPY 可部署並利用「免註冊的 COM」。
 
 > [!NOTE]
->  在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署。  
+> 在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署。
 
-```xml  
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <ItemGroup>  
-        <File Include="Test.exe" />  
-        <Dependency Include="Alpha.dll">  
-            <AssemblyType>Native</AssemblyType>  
-            <DependencyType>Install</DependencyType>  
-        </Dependency>  
-        <ComComponent Include="Bravo.dll" />  
-    </ItemGroup>  
+    <ItemGroup>
+        <File Include="Test.exe" />
+        <Dependency Include="Alpha.dll">
+            <AssemblyType>Native</AssemblyType>
+            <DependencyType>Install</DependencyType>
+        </Dependency>
+        <ComComponent Include="Bravo.dll" />
+    </ItemGroup>
 
-    <Target Name="Build">  
-        <GenerateApplicationManifest  
-            AssemblyName="Test.exe"  
-            AssemblyVersion="1.0.0.0"  
-            Dependencies="@(Dependency)"  
-            Files="@(File)"  
-            IsolatedComReferences="@(ComComponent)"  
-            ManifestType="Native">  
-            <Output  
-                ItemName="ApplicationManifest"  
-                TaskParameter="OutputManifest"/>  
-        </GenerateApplicationManifest>  
+    <Target Name="Build">
+        <GenerateApplicationManifest
+            AssemblyName="Test.exe"
+            AssemblyVersion="1.0.0.0"
+            Dependencies="@(Dependency)"
+            Files="@(File)"
+            IsolatedComReferences="@(ComComponent)"
+            ManifestType="Native">
+            <Output
+                ItemName="ApplicationManifest"
+                TaskParameter="OutputManifest"/>
+        </GenerateApplicationManifest>
 
-    </Target>  
-</Project>  
-```  
+    </Target>
+</Project>
+```
 
-## <a name="see-also"></a>另請參閱  
- [工作](../msbuild/msbuild-tasks.md)   
- [GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)   
- [SignFile 工作](../msbuild/signfile-task.md)   
- [工作參考](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>另請參閱
+[工作](../msbuild/msbuild-tasks.md)  
+[GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)  
+[SignFile 工作](../msbuild/signfile-task.md)  
+[工作參考](../msbuild/msbuild-task-reference.md)

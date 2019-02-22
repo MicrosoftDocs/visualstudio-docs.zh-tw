@@ -1,7 +1,6 @@
 ---
-title: 如何：變更組建輸出目錄
+title: HOW TO：變更組建輸出目錄
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aebb4603d32f61c2d4b50355a550a1a932336962
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2f254c29f2951484869b814f13d1a346080fab07
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379685"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911529"
 ---
-# <a name="how-to-change-the-build-output-directory"></a>如何：變更組建輸出目錄
+# <a name="how-to-change-the-build-output-directory"></a>HOW TO：變更組建輸出目錄
 
 您可以根據組態 (針對偵錯及/或發行) 為專案所產生的輸出指定位置。
 

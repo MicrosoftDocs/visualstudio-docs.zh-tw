@@ -1,8 +1,6 @@
 ---
-title: 'Idiasession:: Findfilebyid |Microsoft Docs'
-ms.custom: ''
+title: IDiaSession::findFileById | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 710efe04-78b5-4f3e-a1d8-f9b069063503
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c56d66a78b52e99aecb8cb744cc3d8465d0d243
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8c97df0a5c860fa27fdc136164b9fea79f58fa26
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941408"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042136"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
 依來源檔案識別碼擷取原始程式檔。  
@@ -27,7 +25,7 @@ ms.locfileid: "49941408"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT findFileById (   
+HRESULT findFileById (   
    DWORD            uniqueId,  
    IDiaSourceFile** ppResult  
 );  
@@ -46,7 +44,7 @@ HRESULT findFileById (
 ## <a name="remarks"></a>備註  
  DIA sdk 在內部用來進行所有原始程式檔的唯一唯一值的來源檔案識別碼。 這個方法通常是在內部用來 DIA SDK 中。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasession:: Findfile](../../debugger/debug-interface-access/idiasession-findfile.md)   
+ [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

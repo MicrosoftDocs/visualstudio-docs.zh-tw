@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad112d34c8f23a7738137f148f00a38a27335424
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a47a076336a9e8f97bae9fdde79a7d8b3b525963
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966556"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318793"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>新增語言伺服器通訊協定延伸模組
 
@@ -49,18 +49,18 @@ LSP 支援下列功能在 Visual Studio 中到目前為止：
 初始化 | 是
 關機 | 是
 結束 | 是
-可以呼叫 cancelRequest $/ | 是
-視窗/showMessage | 是
+$/cancelRequest | 是
+window/showMessage | 是
 window/showMessageRequest | 是
-視窗/logMessage | 是
+window/logMessage | 是
 遙測資料/事件 |
-用戶端/registerCapability |
-用戶端/unregisterCapability |
+client/registerCapability |
+client/unregisterCapability |
 workspace/didChangeConfiguration | 是
 workspace/didChangeWatchedFiles | 是
 工作區/符號 | 是
 workspace/executeCommand | 是
-工作區/applyEdit | 是
+workspace/applyEdit | 是
 textDocument/publishDiagnostics | 是
 textDocument/didOpen | 是
 textDocument/didChange | 是
@@ -68,14 +68,14 @@ textDocument/willSave |
 textDocument/willSaveWaitUntil |
 textDocument/didSave | 是
 textDocument/didClose | 是
-textDocument/完成 | 是
-完成/解決 | 是
+textDocument/completion | 是
+completion/resolve | 是
 textDocument/hover | 是
 textDocument/signatureHelp | 是
 textDocument/references | 是
 textDocument/documentHighlight | 是
 textDocument/documentSymbol | 是
-textDocument/格式 | 是
+textDocument/formatting | 是
 textDocument/rangeFormatting | 是
 textDocument/onTypeFormatting |
 textDocument/definition | 是
@@ -89,9 +89,9 @@ textDocument/rename | 是
 ## <a name="getting-started"></a>使用者入門
 
 > [!NOTE]
-> 開始使用 Visual Studio 15.8 Preview 3 為常用的語言伺服器通訊協定的支援是內建 Visual Studio。  如果您已經建置使用預覽的 LSP 延伸模組[語言伺服器用戶端 VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)版本中，它們將會停止運作後到已升級至 15.8 Preview 3 或更新版本。  您必須執行下列作業來取得您的 LSP 擴充功能，能夠再次運作：
+> 開始使用 Visual Studio 15.8 Preview 3 為常用的語言伺服器通訊協定的支援是內建 Visual Studio。 如果您已經建置使用預覽的 LSP 延伸模組[語言伺服器用戶端 VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)版本中，它們將會停止運作後到已升級至 15.8 Preview 3 或更新版本。 您必須執行下列作業來取得您的 LSP 擴充功能，能夠再次運作：
 >
-> 1. 解除安裝 Microsoft Visual Studio 語言伺服器通訊協定預覽 VSIX。  從 15.8 Preview 4 開始，每次您執行升級，在 Visual Studio 中，我們會自動偵測並移除預覽 VSIX 為您在升級過程中。
+> 1. 解除安裝 Microsoft Visual Studio 語言伺服器通訊協定預覽 VSIX。 從 15.8 Preview 4 開始，每次您執行升級，在 Visual Studio 中，我們會自動偵測並移除預覽 VSIX 為您在升級過程中。
 >
 > 2. 更新為最新的非預覽版本的 Nuget 參考[LSP 封裝](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)。
 >
@@ -129,10 +129,10 @@ LSP 不包含有關如何提供文字顏色標示語言規格。 若要提供自
 
 4. 建立 *.pkgdef*檔案，並新增一行如下所示：
 
-   ```xml
-   [$RootKey$\TextMate\Repositories]
-   "MyLang"="$PackageFolder$\Grammars"
-   ```
+    ```xml
+    [$RootKey$\TextMate\Repositories]
+    "MyLang"="$PackageFolder$\Grammars"
+    ```
 
 5. 以滑鼠右鍵按一下檔案，然後選取**屬性**。 變更**建置**動作來**內容**並**Include in VSIX**屬性設為 true。
 
@@ -292,31 +292,31 @@ namespace MockLanguageExtension
 
 1. 將 JSON 檔案 (例如*MockLanguageExtensionSettings.json*) 在您的專案，其中包含設定和其預設值。 例如: 
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": -1
-   }
-   ```
+    ```json
+    {
+        "foo.maxNumberOfProblems": -1
+    }
+    ```
 2. JSON 檔案上按一下滑鼠右鍵，然後選取**屬性**。 變更**建置**動作 「 內容 」 和 「 Include in VSIX' 屬性設為 true。
 
 3. 實作 ConfigurationSections 並傳回 JSON 檔案中定義的設定的前置詞清單 （在 Visual Studio Code 中，這會對應至 package.json 中的組態區段名稱）：
 
-   ```csharp
-   public IEnumerable<string> ConfigurationSections
-   {
-      get
-      {
-          yield return "foo";
-      }
-   }
-   ```
+    ```csharp
+    public IEnumerable<string> ConfigurationSections
+    {
+        get
+        {
+            yield return "foo";
+        }
+    }
+    ```
 
 4. 加入.pkgdef 檔案至專案 （加入新的文字檔，並將副檔名變更為.pkgdef）。 Pkgdef 檔案應該包含這項資訊：
 
-   ```xml
+    ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-   ```
+    ```
 
     範例：
     ```xml
@@ -340,13 +340,13 @@ namespace MockLanguageExtension
 2. 使用者新增的檔案 *.vs*稱為資料夾*VSWorkspaceSettings.json*。
 3. 使用者新增至一行*VSWorkspaceSettings.json*檔案伺服器提供的設定。 例如: 
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": 10
-   }
-   ```
-   ### <a name="enabling-diagnostics-tracing"></a>啟用診斷追蹤
-   可以啟用診斷追蹤，以用戶端與伺服器，這有助於進行問題偵錯之間的所有訊息都輸出。  若要啟用診斷追蹤，執行下列作業：
+    ```json
+    {
+        "foo.maxNumberOfProblems": 10
+    }
+    ```
+    ### <a name="enabling-diagnostics-tracing"></a>啟用診斷追蹤
+    可以啟用診斷追蹤，以用戶端與伺服器，這有助於進行問題偵錯之間的所有訊息都輸出。 若要啟用診斷追蹤，執行下列作業：
 
 4. 開啟或建立工作區的設定檔*VSWorkspaceSettings.json* （請參閱 「 編輯設定的工作區的使用者 」）。
 5. 設定 json 檔案中加入下面這一行：
@@ -362,7 +362,7 @@ namespace MockLanguageExtension
 * 「 訊息 」: 追蹤開啟的追蹤，但唯一的方法名稱和回應的識別碼。
 * "Verbose": 追蹤保持開啟;整個 rpc 訊息會進行追蹤。
 
-中的檔案追蹤時開啟的內容寫入 *%temp%\VisualStudio\LSP*目錄。  記錄檔會遵循的命名格式 *[LanguageClientName]-[日期時間戳記].log*。  目前，開啟資料夾的情況下可以只會啟用追蹤。  開啟單一檔案，才能啟動語言伺服器沒有診斷追蹤支援。
+中的檔案追蹤時開啟的內容寫入 *%temp%\VisualStudio\LSP*目錄。 記錄檔會遵循的命名格式 *[LanguageClientName]-[日期時間戳記].log*。 目前，開啟資料夾的情況下可以只會啟用追蹤。 開啟單一檔案，才能啟動語言伺服器沒有診斷追蹤支援。
 
 ### <a name="custom-messages"></a>自訂訊息
 
@@ -425,7 +425,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
     }
 
     public async Task SendServerCustomNotification(object arg)
-    {    
+    {
         await this.customMessageRpc.NotifyWithParameterObjectAsync("OnCustomNotification", arg);
     }
 
@@ -477,7 +477,7 @@ public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
 
 **我想要建立自訂專案系統，以補充我 LSP 語言伺服器，以提供更豐富的功能支援，在 Visual Studio 中，如何著手進行這麼做？**
 
-Visual Studio 中的 LSP 為基礎的語言伺服器支援依賴[開啟資料夾 功能](https://blogs.msdn.microsoft.com/visualstudio/2016/04/12/open-any-folder-with-visual-studio-15-preview/)和專為需要自訂專案系統。 您可以建置自己的自訂專案系統指示[此處](https://github.com/Microsoft/VSProjectSystem)，但某些功能，例如設定，可能無法運作。 LSP 語言伺服器的預設初始化邏輯是傳入目前正開啟的資料夾的根資料夾位置，因此如果您使用的自訂專案系統時，您可能需要提供自訂邏輯以確保您的語言伺服器可以初始化期間正常啟動。
+Visual Studio 中的 LSP 為基礎的語言伺服器支援依賴[開啟資料夾 功能](https://devblogs.microsoft.com/visualstudio/open-any-folder-with-visual-studio-15-preview/)和專為需要自訂專案系統。 您可以建置自己的自訂專案系統指示[此處](https://github.com/Microsoft/VSProjectSystem)，但某些功能，例如設定，可能無法運作。 LSP 語言伺服器的預設初始化邏輯是傳入目前正開啟的資料夾的根資料夾位置，因此如果您使用的自訂專案系統時，您可能需要提供自訂邏輯以確保您的語言伺服器可以初始化期間正常啟動。
 
 **如何新增偵錯工具支援？**
 

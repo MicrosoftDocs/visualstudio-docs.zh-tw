@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Word projects [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 651208958b40ff92804b9989234f8c3822ec83d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0b8ac2efc6627eae017c7154743091b7682dc8ac
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904795"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869196"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>開始使用 word 的文件層級自訂程式設計
   如果您剛開始使用 Visual Studio 建立 Microsoft Office word 的文件層級自訂，以下是您需要知道。  

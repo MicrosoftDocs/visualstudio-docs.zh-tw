@@ -1,20 +1,19 @@
 ---
 title: XSLT 分析工具
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 8e852628-99fc-4e6e-8602-e1c13dde3b95
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18776904fcf02ccf35a0ae73027a22e903056661
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f352e63a2fa848aec1547a54a489eac7dccd094d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872814"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912387"
 ---
 # <a name="xslt-profiler"></a>XSLT 分析工具
 

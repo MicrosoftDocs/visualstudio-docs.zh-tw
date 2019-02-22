@@ -1,8 +1,6 @@
 ---
 title: 核心檢視縮放工具 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.zoom
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f7d48602-ba32-4487-b51a-89e596124108
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c29bacc07268223b9d4e5bf6cef4670c1a1f323
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c30cadc2ab781712deebf7edb6fda47fce5eb724
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748783"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035402"
 ---
 # <a name="cores-view-zoom-tool"></a>核心檢視縮放工具
 [縮放] 控制項是可讓您放大和縮小時間軸的滑桿，以專注在特別感興趣的區域。 此控制項會放大目前檢視的中心，以在放大之前調整檢視。  

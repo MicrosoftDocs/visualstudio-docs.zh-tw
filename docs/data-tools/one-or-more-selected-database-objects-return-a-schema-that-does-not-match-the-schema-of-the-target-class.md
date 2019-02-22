@@ -5,17 +5,15 @@ ms.topic: reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fd679e9275aedc8db9f65864a240e1c12e4faffc
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: aab3fe715ab0b41dc7bb875bee4d8b1b94837bf7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089460"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970487"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>一個或多個選取的資料庫物件傳回與目標類別之結構描述不符的結構描述
 
@@ -25,11 +23,11 @@ ms.locfileid: "37089460"
 
 ## <a name="to-correct-this-error"></a>更正這個錯誤
 
-1. 按一下 **確定**關閉對話方塊。
+1. 按一下 [確定] 以關閉對話方塊。
 
-2. 選取資料庫物件會傳回符合目標類別的結構描述的資料 (在 要置放的資料庫物件的類別**O/R Designer**)。
+2. 選取另一個資料庫物件，這個資料庫物件傳回的資料會符合目標類別 (**O/R 設計工具**中要置放資料庫物件的類別) 的結構描述。
 
 ## <a name="see-also"></a>另請參閱
 
 - [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

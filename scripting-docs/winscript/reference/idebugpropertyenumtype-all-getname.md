@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41eed5e7fd8ba2874250abf60826bc59da1763df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25fd535d983d477a86b83953cf56852789747bd0
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923520"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346341"
 ---
 # <a name="idebugpropertyenumtypeallgetname"></a>IDebugPropertyEnumType_All::GetName
 傳回包含名稱的 BSTR `EnumType`。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetName(  
    BSTR*  pname  
 );  

@@ -1,8 +1,6 @@
 ---
 title: Sdk 元素 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 01/25/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Project
@@ -16,15 +14,15 @@ helpviewer_keywords:
 - <Sdk> element [MSBuild]
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1069a22e700eebfd9d1e8c387af99cf4241ffbe0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24392fe34069025209f0e2c02e1231d1cbbe3397
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834171"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993270"
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 元素 (MSBuild)
 參考 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案 SDK。  
@@ -45,7 +43,7 @@ ms.locfileid: "49834171"
 
 ### <a name="attributes"></a>屬性  
 
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Name`|必要屬性。<br /><br /> 專案 SDK 的名稱。|  
 |`Version`|選擇性屬性。<br /><br /> 專案 SDK 的版本|  
@@ -55,7 +53,7 @@ ms.locfileid: "49834171"
 
 ### <a name="parent-elements"></a>父元素  
 
-| 元素 | 描述 |
+| 元素 | 說明 |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
 

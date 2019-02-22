@@ -1,19 +1,18 @@
 ---
 title: 引進區域變數
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 42d3f7da59fc64e70ab453a6dd1f57d95871b684
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5564752fcecfe2d7a1b2d0bf7632a9cebe3d9353
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968679"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921220"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>在 Visual Studio 中引進區域變數
 
@@ -47,11 +46,11 @@ ms.locfileid: "53968679"
       - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
+      - 按一下 ![出現於左邊界的螺絲起子](media/screwdriver.png) 圖示，如果文字游標已經在含有醒目提示運算式的行上，此圖示就會出現在左邊界上。
 
    ![「引進區域」預覽](media/local-preview-cs.png)
 
-3. 從下拉功能表選取 [為 '*expression*' (的所有出現之處) 引進區域]。
+3. 從下拉功能表選取 [為 'expression' (的所有出現之處) 引進區域]。
 
    > [!TIP]
    > 請使用位於預覽視窗底部的 [預覽變更] 連結，以在進行選取之前先[查看將進行的所有變更](../../ide/preview-changes.md)。

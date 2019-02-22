@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 08511ef5-be64-4069-b169-a569cc94bc64
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e50f0d9ecb53e49028bab32f2525b4caecfd02e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e6f0a5b65e333f1f210735d8d61b39dac12b548
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849385"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962767"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
 顯示指定的對話方塊中，可讓使用者選取一個連接埠。  

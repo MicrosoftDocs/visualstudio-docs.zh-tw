@@ -1,8 +1,6 @@
 ---
-title: 逐步解說： 建立 ClickOnce 應用程式的自訂安裝 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立 ClickOnce 應用程式的自訂安裝 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 939fd64873a2aab9d5652768ad4ecfa4a93b5122
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 0e16ec76a6c820afc672bf38729c18b92cf2cdf8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152239"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025653"
 ---
-# <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>逐步解說： 建立 ClickOnce 應用程式的自訂安裝程式
+# <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>逐步解說：建立自訂安裝程式的 ClickOnce 應用程式
 任何的 ClickOnce 應用程式為基礎 *.exe*檔案可以以無訊息方式安裝及更新的自訂安裝程式。 自訂安裝程式可以實作自訂使用者體驗，在安裝期間，其中包括安全性和維護作業的自訂對話方塊。 若要執行安裝作業，自訂的安裝程式會使用<xref:System.Deployment.Application.InPlaceHostingManager>類別。 本逐步解說示範如何建立自訂安裝程式會以無訊息方式安裝 ClickOnce 應用程式。  
   
 ## <a name="prerequisites"></a>必要條件  
@@ -36,7 +34,7 @@ ms.locfileid: "39152239"
   
 1.  在 ClickOnce 應用程式，加入到 System.Deployment 和 System.Windows.Forms 的參考。  
   
-2.  將新類別新增至您的應用程式，並指定任何名稱。 本逐步解說會使用名稱`MyInstaller`。  
+2.  將新類別新增至您的應用程式，並指定任何名稱。 這個逐步解說使用的名稱為 `MyInstaller`。  
   
 3.  新增下列`Imports`或`using`陳述式的新類別。  
   

@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_hasassignmentoperator |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fb1acb9c-4500-4343-a590-0395789e4040
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 855f0379a416bab1f05ebec390fe54399feefba9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 726412304f40b652a33cfae0bc9958fa01fb3dec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850005"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950685"
 ---
 # <a name="idiasymbolgethasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
 擷取指定的使用者定義資料類型是否有任何定義的指派運算子的旗標。  
@@ -27,7 +25,7 @@ ms.locfileid: "49850005"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_hasAssignmentOperator (   
+HRESULT get_hasAssignmentOperator (   
    BOOL* pRetVal  
 );  
 ```  
@@ -49,5 +47,5 @@ HRESULT get_hasAssignmentOperator (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

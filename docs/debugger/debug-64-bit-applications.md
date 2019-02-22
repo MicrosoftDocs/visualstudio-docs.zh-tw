@@ -1,8 +1,6 @@
 ---
 title: 偵錯 64 位元應用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: db648e5f-6375-4e2d-aa98-eb7261958927
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28a7625729989252a29ab1d0f65feec010e9e65f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 8af6b4b5f381fe1b1db93e99263c0026e8be408f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284077"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941739"
 ---
 # <a name="debug-64-bit-applications"></a>偵錯 64 位元應用程式
 您可以對本機電腦或遠端電腦上執行的 64 位元應用程式進行偵錯。  
@@ -39,14 +37,14 @@ ms.locfileid: "44284077"
   
 1.  建立 Visual Studio 方案，例如 C# 主控台應用程式。  
   
-2.  使用組態管理員將組態設定為 64 位元。 如需詳細資訊，請參閱 [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md)。  
+2.  使用組態管理員將組態設定為 64 位元。 如需詳細資訊，請參閱[＜How to：將專案設定到目標平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
   
 3.  此時會啟動 64 位元版本的遠端偵錯工具 (msvsmon.exe)。 只要開啟具有 64 位元組態的方案，就會執行此工具。  
   
 4.  開始偵錯。 您應該會與 32 位元組態有相同的體驗。 如果您收到錯誤，請參閱下列＜疑難排解＞一節。  
   
 ## <a name="troubleshooting-64-bit-debugging"></a>64 位元偵錯疑難排解  
- 您可能會看到錯誤: 「 64 位元偵錯作業花費的時間超出預期。 」 在此情況下，Visual Studio 已傳送要求到 64 位元版本的 msvsmon.exe，但該要求的結果卻花很長的時間傳回。  
+ 您可能會看到錯誤：「 64 位元偵錯作業花費的時間超出預期。 」 在此情況下，Visual Studio 已傳送要求到 64 位元版本的 msvsmon.exe，但該要求的結果卻花很長的時間傳回。  
   
  此錯誤的主要原因有兩個：  
   
@@ -54,9 +52,9 @@ ms.locfileid: "44284077"
   
 -   您在使用 Visual Studio 時遇到停止回應或效能問題。 如果此問題經常發生，您可以收集 Visual Studio 的傾印 (devenv.exe) 和背景工作處理序 (msvsmon.exe)，然後傳送給 Microsoft。 如需回報問題的資訊，請參閱 [How to Report a Problem with Visual Studio](../ide/How-to-Report-a-Problem-with-Visual-Studio-2017.md)。
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [64 位元應用程式](https://docs.microsoft.com/dotnet/framework/64-bit-apps)   
- [適用於 64 位元設定程式](/cpp/build/configuring-programs-for-64-bit-visual-cpp)   
+ [為 64 位元設定程式](/cpp/build/configuring-programs-for-64-bit-visual-cpp)   
  [Visual Studio IDE 64 位元支援](../ide/visual-studio-ide-64-bit-support.md)   
  [使用傾印檔案](../debugger/using-dump-files.md)   
- [遠端偵錯](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

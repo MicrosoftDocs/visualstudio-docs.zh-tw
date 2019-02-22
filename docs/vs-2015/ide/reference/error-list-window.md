@@ -1,14 +1,9 @@
 ---
 title: 錯誤清單視窗 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ErrorList
 helpviewer_keywords:
@@ -20,19 +15,19 @@ ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0ecec77428d32512ec1b5fcf3822933c1c619b7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 080bc6b8efe5407a372ef2e22c53d04fa977e057
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873686"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785767"
 ---
 # <a name="error-list-window"></a>錯誤清單視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-附註]
+注意]
 >  錯誤清單會顯示特定錯誤訊息的相關資訊。 您可以從 [輸出] 視窗複製錯誤碼或錯誤字串文字。 若要顯示 [輸出] 視窗，請按下 Ctrl+Alt+O。 請參閱[輸出視窗](../../ide/reference/output-window.md)。  
   
  您可以使用 [錯誤清單] 視窗，更快速地開發應用程式。 例如，您可以進行下列工作：  
@@ -56,7 +51,7 @@ ms.locfileid: "49873686"
   若要排序清單，請按一下任何資料行標頭。 若要以另一個資料行來重新排序，請按住 SHIFT 鍵，然後按一下其他的資料行標頭。 若要選取要顯示和隱藏的資料行，請從捷徑功能表中選擇 [顯示行]。 若要變更已顯示的資料行順序，請將任一資料行標頭拖曳到左邊或右邊。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與此處所描述的不同。 如果要變更設定，請按一下 [工具]/[匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與此處所描述的不同。 如果要變更設定，請按一下 [工具]/[匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="error-list-filters"></a>錯誤清單篩選條件  
  在兩個下拉式方塊中有兩種篩選型別，一個位於工具列的右邊，一個位於工具列的左邊。 位於工具列左邊的下拉式清單會指定一組可使用的程式碼檔案 ([整個解決方案]、[開啟的文件]、[目前專案] 和 [目前文件])。  
@@ -100,6 +95,3 @@ ms.locfileid: "49873686"
   
  線  
  會顯示發生錯誤的行。
-
-
-

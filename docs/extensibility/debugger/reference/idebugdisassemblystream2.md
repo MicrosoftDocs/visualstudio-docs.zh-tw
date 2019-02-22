@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b03cab0c-3f0b-4cc6-88dc-acb3b48c567a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6923d357e362a311678e851abb1fc3b0b68cb8a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d362823c705d1645f4a44bc23618387a60501a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963734"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027837"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 這個介面會表示指令資料流。  

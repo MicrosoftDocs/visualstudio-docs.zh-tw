@@ -1,8 +1,6 @@
 ---
 title: 混合的模式偵錯時，才支援使用 Microsoft.NET Framework 2.0 或 3.0 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_to_old
@@ -14,15 +12,15 @@ dev_langs:
 ms.assetid: f607af6f-57fe-472a-a32e-b6202067aa96
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d51a0ca72840b20e23eaaa9db3a82382a3fa012
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: ace24086f092b29afd163e0605006a4bc24dbcd9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284064"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041746"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>只有使用 Microsoft .NET Framework 2.0 或 3.0 版本時才支援混合模式偵錯
 在 2.0 版之前的 Microsoft .NET Framework 沒有提供 64 位元處理序的混合模式偵錯支援。 這表示在偵錯時，您無法從 Managed 程式碼逐步執行到機器碼，或從機器碼逐步執行到 Managed 程式碼。  
@@ -37,23 +35,23 @@ ms.locfileid: "44284064"
   
 ### <a name="to-change-the-operating-system-to-32-bit-visual-basic-or-c"></a>若要將作業系統變更為 32 位元 (Visual Basic 或 C#)  
   
-1.  在 [**方案總管] 中**，以滑鼠右鍵按一下您的專案，然後按一下**屬性**快顯功能表中。  
+1.  在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下捷徑功能表中的 [屬性]。  
   
-2.  在 [屬性頁中，按一下**編譯**或是**偵錯**] 索引標籤。  
+2.  在屬性頁中，按一下 [編譯] 或 [偵錯] 索引標籤。  
   
-3.  按一下 **平台**，然後選取**x86**從平台的清單。  
+3.  按一下 [平台]，然後從平台清單選取 [x86]。  
   
-     根據預設，Visual Basic 和 C# 編譯器會產生可針對任何 CPU 執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理程序上執行，您必須選擇**Win32**，而非**AnyCPU**。  
+     根據預設，Visual Basic 和 C# 編譯器會產生可針對任何 CPU 執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理序上執行，您必須選擇 [Win32]，而非 [AnyCPU]。  
   
 ### <a name="to-change-the-operating-system-to-32-bit-cc"></a>若要將作業系統變更為 32 位元 (C/C++)  
   
-1.  在 [**方案總管] 中**，以滑鼠右鍵按一下您的專案，然後按一下**屬性**快顯功能表中。  
+1.  在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下捷徑功能表中的 [屬性]。  
   
-     在 屬性頁中，按一下**平台**，然後選取**Win32**從平台的清單。  
+     在屬性頁中，按一下 [平台]，然後從平台清單選取 [Win32]。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
 -   請參閱[設定 SQL 偵錯](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)

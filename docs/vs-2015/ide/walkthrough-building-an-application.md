@@ -1,25 +1,20 @@
 ---
-title: 逐步解說：建置應用程式 | Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建置應用程式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e6c45a552e66c2d256c191f6bd8296f5b2ca2c61
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7f4103502b3ebd6371f0b1c0ac27c6da7c8904c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220197"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799151"
 ---
 # <a name="walkthrough-building-an-application"></a>逐步解說：建置應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ ms.locfileid: "50220197"
 4.  選擇 [確定]  按鈕。  
   
 ##  <a name="BKMK_CreateBuildConfig"></a> 建立自訂組建組態  
- 當您建立方案時，系統會自動為方案定義偵錯和發行組建組態以及其預設平台目標。 之後，您可以自訂這些組態或建立您自己的組態。 組建組態指定組建類型。 組建平台指定應用程式針對該組態的目標作業系統。 如需詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)、[了解組建平台](../ide/understanding-build-platforms.md)和 [Debug and Release Project Configurations](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) (偵錯和發行專案組態)。  
+ 當您建立方案時，系統會自動為方案定義偵錯和發行組建組態以及其預設平台目標。 之後，您可以自訂這些組態或建立您自己的組態。 組建組態指定組建類型。 組建平台指定應用程式針對該組態的目標作業系統。 如需詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)、[了解組建平台](../ide/understanding-build-platforms.md)和 [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (偵錯和發行專案組態)。  
   
  您可以使用 [組態管理員] 對話方塊變更或建立組態和平台設定。 在此程序中，您將建立要測試的組建組態。  
   
@@ -98,7 +93,7 @@ ms.locfileid: "50220197"
   
 4. 在 [使用中的方案平台] 清單中，選擇 [新增]。  
   
-5. 在 **新增方案平台**對話方塊方塊中，選擇**x64**，不要複製的設定，從 x86 平台。  
+5. 在 [新增方案平台] 對話方塊中，選擇 [x64]，且不要從 x86 平台複製設定。  
   
     ![[新增方案平台] 對話方塊](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
@@ -125,7 +120,7 @@ ms.locfileid: "50220197"
   
   ![Visual Basic 輸出視窗](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
-  圖 2：Visual C# 警告  
+  圖 2：視覺化C#警告  
   
   ![Visual C&#35; 輸出視窗](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
@@ -208,7 +203,7 @@ ms.locfileid: "50220197"
 ##  <a name="BKMK_releasebuild"></a> 建立發行組建  
  您可以建置已針對交付最佳化的範例應用程式版本。 針對發行組建，您將指定在開始建置之前將可執行檔複製到網路共用。  
   
- 如需詳細資訊，請參閱[如何：變更建置輸出目錄](../ide/how-to-change-the-build-output-directory.md)和[在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)。  
+ 如需詳細資訊，請參閱[＜How to：變更組建輸出目錄](../ide/how-to-change-the-build-output-directory.md)並[建置和清除專案與 Visual Studio 中的方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)。  
   
 #### <a name="to-specify-a-release-build-for-visual-basic"></a>指定 Visual Basic 的發行組建  
   
@@ -260,10 +255,7 @@ ms.locfileid: "50220197"
   
    恭喜︰您已成功完成本逐步解說。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：建置專案 (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
- [ASP.NET Web Application Project Precompilation Overview](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887) (ASP.NET Web 應用程式專案先行編譯概觀)   
+ [ASP.NET Web Application Project Precompilation Overview](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887) (ASP.NET Web 應用程式專案先行編譯概觀)   
  [逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)
-
-
-

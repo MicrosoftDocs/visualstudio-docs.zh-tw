@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_classparent |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_classParent | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99db875a-caae-4d60-ae70-64bc8a9f6fba
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f948e4ffdcd64c4c2c811aff7897f3245c100077
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3b224b0311da78b709f7782f4f66e02869c595d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816712"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992837"
 ---
 # <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
 擷取類別的父代符號的參考。  
@@ -27,7 +25,7 @@ ms.locfileid: "49816712"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_classParent (   
+HRESULT get_classParent (   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -52,6 +50,6 @@ HRESULT get_classParent (
 ## <a name="remarks"></a>備註  
  可以是類別的父代的符號的類型所述[類別階層架構的符號類型](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

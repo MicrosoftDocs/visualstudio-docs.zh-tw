@@ -1,5 +1,5 @@
 ---
-title: 未定義的識別項 |Microsoft 文件
+title: 未定義的識別項 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,24 +21,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f54117dc6d169d11498f15d034fa584fc2e9f64b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633578"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346133"
 ---
 # <a name="undefined-identifier"></a>未定義的識別項
-您嘗試使用識別項，[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]編譯器無法辨識。 在使用時，會傳回未定義的值：  
+您嘗試使用識別項，[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]編譯器無法辨識。 每當您使用，則會傳回未定義的值：  
   
--   變數不存在  
+-   變數不存在，  
   
--   宣告，但從未安裝過的變數值指派給它，  
+-   變數已宣告，但永遠不會有值，指派給它，  
   
 -   物件屬性不存在。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   宣告變數**var**陳述式 (如`var`x;)。  
+-   使用變數宣告**var**陳述式 (如`var`x;)。  
   
 ## <a name="see-also"></a>另請參閱  
  [變數](../../javascript/variables-javascript.md)   

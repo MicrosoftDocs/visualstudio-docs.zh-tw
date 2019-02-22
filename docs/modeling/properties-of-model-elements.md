@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: b7886a42466e0840c45ae0063a69b049ef7582b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c708dea61246b361620d5dcf05437ff68f1ba42
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900739"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929527"
 ---
 # <a name="properties-of-model-elements"></a>模型項目的屬性
 此區段會列出在 DSL 定義圖，或在 [DSL 總管] 中，選取項目時，您看到 [屬性] 視窗中的屬性。

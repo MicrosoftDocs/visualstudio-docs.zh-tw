@@ -1,7 +1,6 @@
 ---
 title: CA2140:透明程式碼不可以參考安全性關鍵項目
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2129
@@ -14,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 251a12da-0557-47f5-a4f7-0229d590ae7b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d434094cff19cbeac2ba1b363a82ab1577f8220
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4462bb8ef65fdf593ab0bf64813c19af5d390d97
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860711"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916813"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140:透明程式碼不可以參考安全性關鍵項目
 

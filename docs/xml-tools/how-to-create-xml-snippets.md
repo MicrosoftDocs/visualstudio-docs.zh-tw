@@ -1,20 +1,19 @@
 ---
 title: HOW TO：建立 XML 片段
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec6332f52e732e99cc6d81512c9b3c469e99e18e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8a17f5699ffc5bfe33e86370a9c5ef114331e90
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829098"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907330"
 ---
 # <a name="how-to-create-xml-snippets"></a>HOW TO：建立 XML 片段
 

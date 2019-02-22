@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08abf4443932b81fd13601dd43a2111626b09382
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cc88f41e1c75a2b6616cc6aba363b8824605a696
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923507"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345288"
 ---
 # <a name="ienumdebugextendedpropertyinfoskip"></a>IEnumDebugExtendedPropertyInfo::Skip
 略過指定的數目的`ExtendedDebugPropertyInfo`列舉型別序列中的結構。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT Skip(  
    ULONG celt  
 );  

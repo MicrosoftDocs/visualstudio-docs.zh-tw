@@ -1,14 +1,9 @@
 ---
-title: 逐步解說：以使用時產生功能支援測試優先 | Microsoft Docs
-ms.custom: ''
+title: 逐步解說：測試優先支援，並產生功能 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
@@ -16,13 +11,13 @@ ms.assetid: 764c17a4-cd95-4c23-bf63-d92d9c5adfb2
 caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b2b45b75b689279a19dc1423a0cbf2b62d14a5c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2308be73eb7b483168544dc706a9b682af7eca35
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232839"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755134"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>逐步解說：以使用時產生功能支援測試優先
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -191,11 +186,8 @@ Visual C#
      ![成功的測試結果](../ide/media/testspassed.png "TestsPassed")  
 測試結果視窗  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用時產生](../misc/generate-from-usage.md)   
  [撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)   
  [使用 IntelliSense](../ide/using-intellisense.md)   
  [對程式碼進行單元測試](../test/unit-test-your-code.md)
-
-
-

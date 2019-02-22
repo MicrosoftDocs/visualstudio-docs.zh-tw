@@ -2,22 +2,21 @@
 title: 在 Windows 上將 Python 應用程式發佈到 Azure App Service
 description: 如何從 Visual Studio 將 Python Web 應用程式直接發佈到 Windows 上的 Azure App Service，包括 web.config 檔案的必要內容。
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 427a816292efac8be30c9fa447cd07c741cd0691
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: d6ff3f4d13e2182c5187bc80489115b8c351c194
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060838"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935325"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>發佈至 Windows 上的 Azure App Service
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 80c100f8-2502-4613-bfef-4f4f2e09cc8d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4131b70a0d76f5245152e397032f55833421c424
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 231c39b739e7d508fe01857d8388201929ec00db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905951"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945849"
 ---
 # <a name="execution-time-threads-view"></a>執行時間 (執行緒檢視)
 當執行緒在系統的邏輯核心上主動執行工作時，[執行緒檢視] 時間表中的這些區段代表執行時間。  

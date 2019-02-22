@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetDispID |Microsoft 文件
+title: IDispatchEx::GetDispID |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,20 +18,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93595cd2d0f88244866ab7363ecd68c6d8073b48
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c466ec767be53d100b970314bf0d81d5dd9dfb20
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729048"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097535"
 ---
 # <a name="idispatchexgetdispid"></a>IDispatchEx::GetDispID
-單一成員名稱對應到其對應的 DISPID，則可在後續呼叫`IDispatchEx::InvokeEx`。  
+單一成員名稱對應到其對應的 DISPID，然後在後續呼叫使用`IDispatchEx::InvokeEx`。  
   
 ## <a name="syntax"></a>語法  
   
-```  
- HRESULT GetDispID(  
+```cpp
+HRESULT GetDispID(  
    BSTR bstrName,  
    DWORD grfdex,  
    DISPID *pid  
@@ -43,17 +43,17 @@ ms.locfileid: "24729048"
  傳入要對應的名稱。  
   
  `grfdex`  
- 判斷取得成員識別碼的選項。 這可以是下列值的組合：  
+ 決定的選項，以取得成員的識別碼。 這可以是下列值的組合：  
   
 |值|意義|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|區分大小寫的方式進行名稱查閱的要求。 可能不支援區分大小寫對應的物件會被忽略。|  
-|fdexNameEnsure|要求的成員不存在時，才能建立。 應該使用的值建立新成員`VT_EMPTY`。|  
-|fdexNameImplicit|指出，未明確指定基底物件時，呼叫者正在搜尋的特定名稱的成員物件。|  
-|fdexNameCaseInsensitive|不區分大小寫的方式進行名稱查閱的要求。 可能不支援不區分大小寫對應的物件會被忽略。|  
+|fdexNameCaseSensitive|名稱查閱會區分大小寫的方式完成的要求。 可能會忽略不支援區分大小寫的查閱的物件。|  
+|fdexNameEnsure|要求不存在時，就會建立的成員。 應該使用的值建立新的成員`VT_EMPTY`。|  
+|fdexNameImplicit|表示呼叫端未明確指定基底物件時，，正在搜尋物件的特定名稱的成員。|  
+|fdexNameCaseInsensitive|名稱查閱不區分大小寫的方式完成的要求。 可能會忽略不支援不區分大小寫的查閱的物件。|  
   
  `pid`  
- 呼叫端配置的位置來接收 DISPID 結果指標。 如果發生錯誤，`pid`包含 DISPID_UNKNOWN。  
+ 呼叫端配置的位置，來接收 DISPID 結果的指標。 如果發生錯誤，`pid`包含 DISPID_UNKNOWN。  
   
 ## <a name="return-value"></a>傳回值  
  會傳回下列值之一：  
@@ -65,15 +65,15 @@ ms.locfileid: "24729048"
 |`DISP_E_UNKNOWNNAME`|不知道名稱。|  
   
 ## <a name="remarks"></a>備註  
- `GetDispID`可以使用而不是`GetIDsOfNames`DISPID 取得指定的成員。  
+ `GetDispID` 可以使用而不是`GetIDsOfNames`取得指定之成員的 DISPID。  
   
- 因為`IDispatchEx`可讓您新增和刪除成員的 Dispid 集無法維持不常數物件的存留期間。  
+ 因為`IDispatchEx`可讓您新增和刪除成員的 Dispid 集不會不保持不變的物件存留期。  
   
  未使用`riid`中的參數`IDispatch::GetIDsOfNames`已移除。  
   
 ## <a name="example"></a>範例  
   
-```  
+```cpp
 BSTR bstrName;  
    DISPID dispid;  
    IDispatchEx *pdex;   

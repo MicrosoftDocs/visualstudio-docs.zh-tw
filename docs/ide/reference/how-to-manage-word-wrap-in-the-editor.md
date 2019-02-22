@@ -1,8 +1,6 @@
 ---
 title: 自動換行
 ms.date: 11/07/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
@@ -11,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 442f33ef-9f52-4515-b55f-fb816d664645
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fc38d1ee5a8e5543675700c35cc0cb298aefad9
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 88d5b4729ec24ef9594e3c0528a8d09156f23b1b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349110"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926265"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>如何：管理編輯器中的自動換行
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>HOW TO：管理編輯器中的自動換行
 
 您可以設定和清除 [自動換行] 選項。 設定這個選項時，過長的行超出目前程式碼編輯器視窗寬度的部分會顯示在下一行。 清除這個選項時，例如，為了方便使用行號，您可以捲動到右邊以看到過長行的結尾。
 

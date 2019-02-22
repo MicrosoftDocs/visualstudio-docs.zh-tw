@@ -1,22 +1,19 @@
 ---
 title: 步驟 1：建立專案並將資料表新增至表單
-ms.custom: ''
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f83ce585120131d63c07e6db2ed6b90f32cc0876
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 08c5178323c2ee5e92164ca1fd71c5fe88d51d6f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857598"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940655"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步驟 1：建立專案並將資料表新增至表單
 
@@ -71,7 +68,7 @@ ms.locfileid: "49857598"
 
    5.  選擇 **Font** 屬性。 應該會出現省略符號 (**...**) 按鈕。
 
-   6.  選擇省略符號按鈕，並將 [字型] 值設定為 [Webdings]、將 [字型樣式] 設定為 [粗體]，並將 [大小] 設定為 [72]。
+   6.  選擇省略符號按鈕，並將 [字型] 值設定為 [Webdings]、將 [字型樣式] 設定為 [粗體]，並將 [大小] 設定為 [48]。
 
    7.  將標籤的 **Text** 屬性設定為字母 **c**。
 
@@ -91,6 +88,6 @@ ms.locfileid: "49857598"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要移到下一個教學課程步驟，請參閱[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。
+-   若要前往下一個教學課程步驟，請參閱[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。
 
 -   若要回到概觀主題，請參閱[教學課程 3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)。

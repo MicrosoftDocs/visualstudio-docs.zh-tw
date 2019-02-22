@@ -1,8 +1,6 @@
 ---
 title: 使用儲存的 IntelliTrace 資料 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.norepro
@@ -14,17 +12,18 @@ helpviewer_keywords:
 ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d34d3a54947799e41fca20200e0fb6a5305146f
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
-ms.translationtype: HT
+ms.openlocfilehash: 7d662ef0e0b838b324250da8dca4255a6237bccb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53685002"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969716"
 ---
-# <a name="using-saved-intellitrace-data"></a>使用儲存的 IntelliTrace 資料
+# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用儲存的 IntelliTrace 資料 (C#，Visual Basic、 c + +)
+
 當您從 IntelliTrace (.iTrace) 記錄檔開始進行偵錯時，請移至您的應用程式執行中的特定點。 這個檔案可能會包含 IntelliTrace 在 App 執行時所記錄的效能事件、例外狀況、執行緒、測試步驟、模組及其他系統資訊。
 
  請確定您已符合下列條件：
@@ -110,7 +109,7 @@ ms.locfileid: "53685002"
 
 3.  展開該呼叫，以檢閱該時間點所記錄的所有巢狀呼叫和參數值。
 
-     鍵盤若要顯示或隱藏巢狀的呼叫，請按**向右箭號**或是**向左鍵**分別。 若要顯示和隱藏巢狀呼叫的參數值，請按 **空格鍵** )
+     (鍵盤：若要顯示或隱藏巢狀的呼叫，請按**向右箭號**或是**向左鍵**分別。 若要顯示和隱藏巢狀呼叫的參數值，請按 **空格鍵** )
 
      從該呼叫開始偵錯。
 

@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: 7b0e7b20-fd6b-42e2-81d0-e5100cea0528
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9c9c7180b4da2d2d43523a278a3ce803ca37584
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54f55731cd76fdeb1090eacfa42d3433ec5b323b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841920"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010021"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 項目 （Visual Studio 範本）
 指定是否[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案系統會產生的範本中的預設名稱**加入新項目**或是**新專案** 對話方塊。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<ProvideDefaultName >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ProvideDefaultName>  
   
 ## <a name="syntax"></a>語法  
   

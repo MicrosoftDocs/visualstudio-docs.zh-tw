@@ -10,15 +10,15 @@ helpviewer_keywords:
 - VSPerfCLREnv tool
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae0e54aff0e4206bd5c79c30c810dc6ba497ddf3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c063d0df3f874e232f33121dbc8f6015a3c0fc3a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965080"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946775"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 

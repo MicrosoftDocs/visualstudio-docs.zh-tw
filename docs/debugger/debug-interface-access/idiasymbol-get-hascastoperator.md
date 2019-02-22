@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_hascastoperator |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a21114a6-56a3-4e8a-a65f-58ec2a0a8908
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96bb99d53fc88392110e10d1eabad2f23f1ba182
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 83ba8c334ada3e5397395c03603339af9303599a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911976"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996123"
 ---
 # <a name="idiasymbolgethascastoperator"></a>IDiaSymbol::get_hasCastOperator
 擷取指定的使用者定義資料類型是否有任何定義的轉換運算子的旗標。  
@@ -27,7 +25,7 @@ ms.locfileid: "49911976"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_hasCastOperator (   
+HRESULT get_hasCastOperator (   
    BOOL* pRetVal  
 );  
 ```  
@@ -49,5 +47,5 @@ HRESULT get_hasCastOperator (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

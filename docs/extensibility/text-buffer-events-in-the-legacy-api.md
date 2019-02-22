@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62bf7670a40b2cf8094793f833dfa7bcc038cdb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfa7c6852db66635b0a2b9d955a090b98dd1b61e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909810"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041564"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>在舊版的 API 中的文字緩衝區事件
 文字緩衝區物件會發出數個不同的事件，讓您能夠回應不同的情況。  

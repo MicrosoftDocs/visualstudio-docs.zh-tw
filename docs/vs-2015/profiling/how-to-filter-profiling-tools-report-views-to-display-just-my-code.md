@@ -1,25 +1,20 @@
 ---
 title: 如何：篩選程式碼剖析工具報表檢視以顯示 Just My Code | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e45c7903-f945-495d-b43b-11cdd09052aa
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d3efdd43762e3ce9afdfebf29a9a7529b97ca995
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f57dedfecd8db92f93183fa0430de712431f83a0
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754457"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54787604"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>如何：篩選程式碼剖析工具報告檢視以顯示 Just My Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,8 +37,5 @@ Visual Studio 2010 Premium 提供效能報告篩選，可以只顯示您已實�
   
 3.  在 [一般設定] 下方，清除 [啟用 Just My Code] 核取方塊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂效能工具報表檢視](../profiling/customizing-performance-tools-report-views.md)
-
-
-

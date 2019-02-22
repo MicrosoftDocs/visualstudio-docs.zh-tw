@@ -1,22 +1,21 @@
 ---
 title: HOW TO：將程式碼專案規則集與 Team 專案簽入原則進行同步處理
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8c63e7b54f1303f62fca938cb5dc44147af88dd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41fb9f60efa439f3a8157059ee4e64af5c25292e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883239"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945439"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>HOW TO：Azure DevOps 專案簽入原則與同步處理程式碼專案規則集
 

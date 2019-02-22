@@ -1,25 +1,20 @@
 ---
 title: Help Viewer 系統管理員指南 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871286"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799701"
 ---
 # <a name="help-viewer-administrator-guide"></a>說明檢視器系統管理員指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49871286"
 ## <a name="deploying-local-help-content-from-the-internet"></a>部署來自網際網路的本機說明內容  
  您可以使用 MSDN 內容封裝服務，從網際網路部署本機說明內容到用戶端電腦。 使用下列語法：  
   
- \\<*通往*> \v2.2\HlpCtntmgr.exe /operation \<*名稱*> /catalogname \<*目錄名稱*> /locale \< *地區設定*>  
+ \\<路徑>\v2.2\HlpCtntmgr.exe /operation \<名稱> /catalogname \<目錄名稱> /locale \<地區設定>  
   
  如需 HlpCtntMgr.exe 命令列語法的詳細資訊，請參閱 [Help Content Manager 的命令列引數](../ide/command-line-arguments-for-the-help-content-manager.md)。  
   
@@ -76,7 +71,7 @@ ms.locfileid: "49871286"
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>部署用戶端電腦上預先安裝的本機說明內容  
  您可以從線上安裝一組內容到一部電腦上，並接著將該組已安裝的內容複製到其他電腦。  
   
- 需求:  
+ 需求：  
   
 - 您安裝該組內容的電腦必須能夠存取網際網路。  
   
@@ -100,13 +95,13 @@ ms.locfileid: "49871286"
   
 1. 在 Help Viewer 中，選擇 [管理內容] 索引標籤。  
   
-2. 底下**可用的文件**，巡覽至 Visual Studio 文件集。  
+2. 在 [可用的文件] 下，巡覽至 Visual Studio 文件集。  
   
 3. 選擇每個子項目旁的 [移除]。  
   
-4. 選擇**啟動**解除安裝  
+4. 選擇 [開始] 以解除安裝  
   
-5. 瀏覽至*n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 並確認該資料夾只包含檔案 catalogType.xml。  
+5. 瀏覽至 *n*:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12，並確認該資料夾只包含檔案 catalogType.xml。  
   
    一旦移除了所有先前安裝的本機 Visual Studio 說明內容，您已準備好下載基底內容集。  
   
@@ -114,7 +109,7 @@ ms.locfileid: "49871286"
   
 1. 在 Help Viewer 中，選擇 [管理內容] 索引標籤。  
   
-2. 底下**可用的文件**，瀏覽至您想要下載，然後選擇 文件集**新增**。  
+2. 在 [可用的文件] 之下，巡覽至您想要下載的文件集，然後選擇 [新增]。  
   
 3. 選擇 [開始]。  
   
@@ -132,7 +127,7 @@ ms.locfileid: "49871286"
   
 4.  輸入下列命令：  
   
-     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \< *foldername*> \ /y /e /k /o  
+     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<資料夾名稱>\ /y /e /k /o  
   
      例如： `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`  
   
@@ -142,7 +137,7 @@ ms.locfileid: "49871286"
   
 1.  建立網路共用，並將這些說明內容複製到該位置。  
   
-     例如，將其內容複製到 c:\VS12Help 中\\\myserver\VS12Help。  
+     例如，將 c:\VS12Help 中的內容複製到 \\\myserver\VS12Help。  
   
 2.  建立 .bat 檔案，以包含說明內容的部署指令碼。 由於用戶端在推送的部分過程中要刪除的檔案可能有讀取鎖定，您應該在推送更新之前關閉用戶端。  
   
@@ -206,9 +201,6 @@ ms.locfileid: "49871286"
   
 3.  在要安裝說明內容的本機電腦上執行批次檔。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Help Content Manager 的命令列引數](../ide/command-line-arguments-for-the-help-content-manager.md)   
  [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)
-
-
-

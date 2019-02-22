@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 4a0ecef49d8c3493ff6094be66f1d05ad588077c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295666"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204329"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>解除安裝 Visual Studio for Mac
 
@@ -34,10 +34,11 @@ ms.locfileid: "51295666"
 
 使用[解除安裝指令碼](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh)即可透過一個步驟將 Visual Studio 和 Xamarin 元件解除安裝。
 
-此解除安裝指令碼包含您將在文章中發現的大部分命令。 指令碼中有兩個主要省略項目，並且因可能的外部相依性而未包含：
+此解除安裝指令碼包含您將在文章中發現的大部分命令。 指令碼中有三個主要省略項目，並且因可能的外部相依性而未包含。 若要移除這種情況，請跳到以下相關小節，然後手動移除它們：
 
-- **解除安裝 Mono**
-- **解除安裝 Android AVD**
+- **[解除安裝 Mono](#uninstall-mono-sdk-mdk)**
+- **[解除安裝 Android AVD](#uninstall-android-avd)**
+- **[解除安裝 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)**
 
 若要執行指令碼，請執行下列步驟：
 
@@ -45,13 +46,13 @@ ms.locfileid: "51295666"
 2. 開啟 [終端機]，並將工作目錄變更為已下載指令碼的位置：
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
 3. 將指令碼設為可執行，並使用 **sudo** 執行它：
 
     ```bash
-    $ chmod +x ./uninstall-vsmac.sh
-    $ sudo ./uninstall-vsmac.sh
+    chmod +x ./uninstall-vsmac.sh
+    sudo ./uninstall-vsmac.sh
     ```
 4. 最後，刪除解除安裝指令碼。
 
@@ -65,13 +66,13 @@ ms.locfileid: "51295666"
 2. 開啟 [終端機]，並將工作目錄變更為已下載指令碼的位置：
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
 3. 將指令碼設為可執行，並使用 **sudo** 執行它：
 
     ```bash
-    $ chmod +x ./dotnet-uninstall-pkgs.sh
-    $ sudo ./dotnet-uninstall-pkgs.sh
+    chmod +x ./dotnet-uninstall-pkgs.sh
+    sudo ./dotnet-uninstall-pkgs.sh
     ```
 4. 最後，刪除 .NET Core 解除安裝指令碼。
 
@@ -93,10 +94,16 @@ rm -rf ~/Library/Preferences/Visual\ Studio
 rm -rf ~/Library/Logs/VisualStudio
 rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
-rm -rf ~/Library/Developer/Xamarin
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
+
+您可能也想要移除下列包含各種 Xamarin 檔案和資料夾的目錄。 不過，這麼做之前，您應該知道此目錄包含 Android 簽署金鑰。 如需詳細資訊，請參閱**[解除安裝 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)** 一節：
+
+```bash
+rm -rf ~/Library/Developer/Xamarin
+```
+
 
 ## <a name="uninstall-mono-sdk-mdk"></a>解除安裝 Mono SDK (MDK)
 
@@ -130,6 +137,9 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 ### <a name="uninstall-android-sdk-and-java-sdk"></a>解除安裝 Android SDK 和 Java SDK
 
 需要有 Android SDK，才能開發 Android 應用程式。 若要完全移除 Android SDK 的所有部分，請在 **~/Library/Developer/Xamarin/** 找出檔案，並將它移至 [垃圾]。
+
+> [!WARNING]
+> 您應該知道 Visual Studio for Mac 所產生的 Android 簽署金鑰位於 `~/Library/Developer/Xamarin/Keystore`。 請務必適當地備份這些金鑰或避免移除此目錄 (如果您想要保留金鑰儲存區)。
 
 不需要解除安裝 Java SDK (JDK)，因為它已預先封裝為 Mac OS X/macOS 的一部分。
 

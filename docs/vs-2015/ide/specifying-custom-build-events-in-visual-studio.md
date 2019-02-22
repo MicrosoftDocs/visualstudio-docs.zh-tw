@@ -1,27 +1,22 @@
 ---
 title: 指定自訂建置事件
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - build events, customizing
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f2dbb785bcc3092872763d23e968cbf699603286
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 3eca61e696fea82952e3efde5cea1f6164d5bab5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067099"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775842"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自訂建置事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +25,9 @@ ms.locfileid: "53067099"
 
  如需您所使用之程式設計語言的特定資訊，請參閱下列主題：
 
--   Visual Basic-[How to:指定建置事件 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
+-   Visual Basic -- [如何：指定建置事件 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
 
--   視覺化C#和F#-[如何：指定建置事件 (C#)](../ide/how-to-specify-build-events-csharp.md)。
+-   Visual C# 和 F# -- [如何：指定建置事件 (C#)](../ide/how-to-specify-build-events-csharp.md)。
 
 -   Visual C++ -- [指定建置事件](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc)。
 
@@ -61,4 +56,4 @@ ms.locfileid: "53067099"
     >  在批次指令碼中，上述程式碼中的 `%I` 應該是 `%%I`。
 
 ## <a name="see-also"></a>請參閱
- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)[逐步解說：建立應用程式](../ide/walkthrough-building-an-application.md)
+ [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)

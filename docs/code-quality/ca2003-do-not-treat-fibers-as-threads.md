@@ -1,7 +1,6 @@
 ---
 title: CA2003:不要將 Fiber 視為執行緒
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2003
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 15398fb1-f384-4bcc-ad93-00e1c0fa9ddf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ceedee8dc355392cae34fe3ed5fae5708b6d02d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8faaf3c6557065188c795d75ea9bbe4e78998709
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844167"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55969837"
 ---
 # <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003:不要將 Fiber 視為執行緒
 

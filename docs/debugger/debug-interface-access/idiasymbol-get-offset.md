@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_offset |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8292bb08-4dc8-4663-beb4-258f5d5a448d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b2fa3ed234532ad3de02a31d4600f10f5375ad3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b6022c24c035b59d6b73c12f7c4907bab2eb5300
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850070"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955553"
 ---
 # <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
 擷取符號位置的位移。 使用時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)是`LocIsRegRel`或`LocIsBitField`。  
@@ -27,7 +25,7 @@ ms.locfileid: "49850070"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_offset (   
+HRESULT get_offset (   
    LONG* pRetVal  
 );  
 ```  
@@ -52,6 +50,6 @@ HRESULT get_offset (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

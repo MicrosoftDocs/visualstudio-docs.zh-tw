@@ -1,8 +1,6 @@
 ---
 title: 錯誤清單視窗
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ErrorList
@@ -14,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 069f2a4957338ec3ab29855d9629712c7eb7cdcc
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 5fe70a8c7daeac86ea3a354f81d8462ca7f4e451
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389049"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933973"
 ---
 # <a name="error-list-window"></a>錯誤清單視窗
 
@@ -57,12 +55,12 @@ ms.locfileid: "52389049"
 
 1.  **開啟的文件**：顯示開啟文件的錯誤、警告和訊息。
 
-2.  **目前專案**：顯示**編輯器**中目前選取之文件的專案，或方案總管中選取之專案的錯誤、警告和訊息。
+2.  **目前專案**：顯示 [編輯器] 中目前所選文件專案，或 [方案總管] 中所選專案的錯誤、警告和訊息。
 
     > [!NOTE]
     > 如果目前選取的文件專案不同於方案總管中選取的專案，則會變更錯誤、警告和訊息的篩選清單。
 
-3.  **目前文件**：顯示**編輯器**或方案總管中目前選取之文件的錯誤、警告和訊息。
+3.  **目前文件**：顯示 [編輯器] 或 [方案總管] 中目前所選文件的錯誤、警告和訊息。
 
 如果搜尋結果目前有套用篩選條件，篩選條件名稱會顯示在 [錯誤清單] 標題列中。 [錯誤]、[警告] 和 [訊息] 按鈕即會顯示目前出現的已篩選項目數和項目總數。 例如，按鈕會顯示「x，共 y 項錯誤」。 如果未套用任何篩選，標題列只會顯示「錯誤清單」。
 

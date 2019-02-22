@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumsymbols:: Next |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bfe5fe27-6a84-4392-910f-e325146d7552
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaa9f5f1a822660d38f954f4f6bd2ee383cd9a2a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: be6e20f043e7f23dc881ab95ac7d6fd51200d12e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867477"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039510"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
 擷取指定的列舉型別序列中的符號數。  
@@ -27,7 +25,7 @@ ms.locfileid: "49867477"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG        celt,  
    IDiaSymbol** rgelt,  
    ULONG*       pceltFetched  
@@ -45,7 +43,7 @@ HRESULT Next (
  [out]擷取列舉值中傳回符號的數。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`有沒有更多的符號。 反之則傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`有沒有更多的符號。 反之則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
   
@@ -56,7 +54,7 @@ DWORD celt;
 pEnum->Next( 1, &pSym, &celt );  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Idiasession:: Findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

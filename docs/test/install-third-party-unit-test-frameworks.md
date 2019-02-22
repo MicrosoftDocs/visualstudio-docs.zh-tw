@@ -1,19 +1,18 @@
 ---
 title: 安裝協力廠商單元測試架構
 ms.date: 06/07/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f8cdfa96e41e72531cb3f2cdc164af4ed57546e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955236"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316141"
 ---
 # <a name="install-unit-test-frameworks"></a>安裝單元測試架構
 
@@ -59,7 +58,7 @@ Visual Studio 測試總管可以執行任何已針對總管開發配接器介面
 
 ## <a name="update-to-the-latest-test-adapters"></a>更新至最新的測試配接器
 
-若要體驗最佳的測試探索和執行，請更新至最新穩定的測試配接器。 如需 MSTest、NUnit 和 xUnit 測試配接器的詳細資訊，請參閱 [Visual Studio 部落格](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/) \(英文\)。
+若要體驗最佳的測試探索和執行，請更新至最新穩定的測試配接器。 如需 MSTest、NUnit 和 xUnit 測試配接器的詳細資訊，請參閱 [Visual Studio 部落格](https://devblogs.microsoft.com/visualstudio/test-experience-improvements/) \(英文\)。
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>更新至最新穩定的測試配接器版本
 

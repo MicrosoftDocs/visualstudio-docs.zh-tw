@@ -1,25 +1,20 @@
 ---
 title: 使用者帳戶和更新 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 0adb84eb-b22e-46a6-ad90-216652f3733c
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 76f1e52ed548cdca5bd2e910023e4371fdc87e1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e955eaacd2f290558c5d786439373a9cc8febb35
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222415"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54802599"
 ---
 # <a name="user-accounts-and-updates"></a>使用者帳戶和更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,14 +31,5 @@ Visual Studio 本身為連線的環境。 透過登入可存取所有與您使�
 |[如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)|描述如何在各種情況中解除鎖定 Visual Studio。|  
 |[通知](../ide/visual-studio-notifications.md)|描述 Visual Studio 如何在元件 (例如 SDK) 或本身有可用更新時通知您。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-
-
-
-
-
-
-
-

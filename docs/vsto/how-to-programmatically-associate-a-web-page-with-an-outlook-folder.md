@@ -9,17 +9,17 @@ helpviewer_keywords:
 - folders [Office development in Visual Studio], Web pages and
 - Outlook [Office development in Visual Studio], Web pages attached to folders
 - Web pages [Office development in Visual Studio], Outlook folders
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1950a75eeee6f99a03346dde53317b30824a35f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c60ac58c59adaacd66a7c56b4c394d596cfd6b24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990655"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871269"
 ---
 # <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>HOW TO：以程式設計方式使網頁與 Outlook 資料夾產生關聯
   這個範例會檢查名為的資料夾`HtmlView`在 Microsoft Office Outlook 中。 如果資料夾不存在，程式碼會建立資料夾，並指派給它的網頁。 如果資料夾存在，程式碼會顯示資料夾內容。  

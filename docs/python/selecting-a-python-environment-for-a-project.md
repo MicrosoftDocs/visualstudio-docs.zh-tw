@@ -1,22 +1,21 @@
 ---
 title: 選取要用於專案的 Python 解譯器和環境
 description: 您可以特別選取要套用至特定專案的 Python 環境，包括 Anaconda 和虛擬環境。
-ms.date: 11/08/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/11/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25492d3f6d152369bdabaad5eafc05f5e8822132
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ec1ed469a4384c2ba826f8677a0d4fb4c8fef20
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879354"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987453"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>如何選取要用於專案的 Python 環境
 
@@ -38,7 +37,7 @@ Visual Studio 中所有新的 Python 專案一開始都會設定為使用預設�
 
 [Python 環境] 節點上的操作功能表也會提供其他命令：
 
-| 命令 | 說明 |
+| 命令 | 描述 |
 | --- | --- |
 | **新增虛擬環境** | 開始在專案中新建虛擬環境的程序。 請參閱[建立虛擬環境](#create-a-virtual-environment)。 |
 | **新增現有的虛擬環境** | 提示您選取包含虛擬環境的資料夾，並將它新增至 [Python 環境] 底下的清單，但不會加以啟用。 [啟用現有的虛擬環境](#activate-an-existing-virtual-environment)。 |
@@ -46,7 +45,7 @@ Visual Studio 中所有新的 Python 專案一開始都會設定為使用預設�
 
 ## <a name="use-virtual-environments"></a>使用虛擬環境
 
-虛擬環境是特定的 Python 解譯器與特定的一組程式庫的唯一組合，有別於其他的全域和 Conda 環境。 每個專案都有專屬的虛擬環境，並在專案資料夾中進行維護。 該資料夾包含環境的已安裝程式庫以及 *pyvenv.cfg* 檔案，其指定位於檔案系統上其他位置的環境「基底解譯器」路徑。 (也就是說，虛擬環境不包含解譯器複本，只包含它的連結)。 
+虛擬環境是特定的 Python 解譯器與特定的一組程式庫的唯一組合，有別於其他的全域和 Conda 環境。 每個專案都有專屬的虛擬環境，並在專案資料夾中進行維護。 該資料夾包含環境的已安裝程式庫以及 *pyvenv.cfg* 檔案，其指定位於檔案系統上其他位置的環境「基底解譯器」路徑。 (也就是說，虛擬環境不包含解譯器複本，只包含它的連結)。
 
 使用虛擬環境的其中一個優點是，即使經過一段時間的專案開發，虛擬環境仍會反映專案的確切相依性。 (反之，共用全域環境則會包含任意數目的程式庫，不論您是否在專案中使用這些程式庫)。如此一來，您即可輕鬆從虛擬環境建立 *requirements.txt* 檔案，然後用來在其他的開發或生產電腦上重新安裝這些相依性。 如需詳細資訊，請參閱[使用 requirements.txt 管理必要套件](managing-required-packages-with-requirements-txt.md)。
 

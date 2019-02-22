@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_lowerboundid |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 12ce98e9-a225-4947-88c9-5fda39dd67e4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fe7109957167b9f2073660e035298bcc7613feb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 72943fd155753fb7712d9f72baacf678b33447ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873327"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926796"
 ---
 # <a name="idiasymbolgetlowerboundid"></a>IDiaSymbol::get_lowerBoundId
 擷取的符號識別項的 FORTRAN 陣列維度的下限。  
@@ -27,7 +25,7 @@ ms.locfileid: "49873327"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_lowerBoundId (   
+HRESULT get_lowerBoundId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -45,5 +43,5 @@ HRESULT get_lowerBoundId (
 ## <a name="remarks"></a>備註  
  識別碼是由 DIA SDK，將標示為唯一的所有符號的唯一值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

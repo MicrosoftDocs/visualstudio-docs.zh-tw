@@ -1,23 +1,21 @@
 ---
 title: 程式行檢視 - 爭用資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05f928d7c5c6f35226985147b6a4545e2a2937
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25f6e144e75a9544caf7bc11c66bb0ba542bd775
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890045"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917259"
 ---
 # <a name="lines-view---contention-data"></a>程式行檢視 - 爭用資料
 爭用資料的 [程式行] 檢視會針對在執行分析期間收集樣本時執行的陳述式，列出效能資料。 在原始程式檔中，陳述式在原始程式檔中可以長達多行，而單一行程式也可能包含一個以上的陳述式。  
@@ -40,7 +38,7 @@ ms.locfileid: "49890045"
   
   下表說明 [程式行] 檢視報表的資料行。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**專有封鎖時間**|此陳述式因爭用事件遭封鎖，無法在陳述式中執行程式碼的時間長度。 陳述式所呼叫函式中的封鎖時間不包括在內。|  
 |**專有封鎖時間 %**|陳述式的專有封鎖時間佔處理序中所有封鎖時間的百分比。|  

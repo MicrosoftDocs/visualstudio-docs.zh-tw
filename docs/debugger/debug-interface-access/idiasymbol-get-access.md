@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_access |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 908976ae-95c4-4020-89c9-de137f727f98
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d801ded2d871952d4737596ae13bd07b551e04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2dae09b91574c835a4d3a30a81239e001271b063
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904072"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933168"
 ---
 # <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
 擷取的類別成員的存取修飾詞。  
@@ -27,7 +25,7 @@ ms.locfileid: "49904072"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_access (   
+HRESULT get_access (   
    DWORD* pRetVal  
 );  
 ```  
@@ -49,6 +47,6 @@ HRESULT get_access (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)

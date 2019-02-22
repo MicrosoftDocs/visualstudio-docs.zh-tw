@@ -1,9 +1,7 @@
 ---
 title: 建立原生物件的自訂檢視
 description: 自訂 Visual Studio 偵錯工具顯示原生類型的方式使用 Natvis 架構
-ms.custom: ''
 ms.date: 10/31/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -12,26 +10,22 @@ dev_langs:
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 937692f11cbd642da823d6f7d13bcd90de59b388
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: ca1cf68af84556a76c29417c9bd56894a70f12ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000857"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997321"
 ---
-# <a name="create-custom-views-of-native-objects-in-the-debugger"></a>在 偵錯工具中建立原生物件的自訂檢視
+# <a name="create-custom-views-of-native-objects-in-the-debugger"></a>在偵錯工具中建立原生物件的自訂檢視
 
 Visual Studio *Natvis* framework 自訂原生類型的顯示的方式偵錯工具變數視窗中，例如**區域變數**並**監看式**windows 中，在**DataTips**。 Natvis 視覺化可以協助讓您建立偵錯期間更明顯可見的類型。 
 
 Natvis 會取代*autoexp.dat* XML 語法、 更佳診斷、 版本控制，與舊版的 Visual Studio 中的檔案和支援的多個檔案。  
 
-Natvis 不適用於：
-
-- C + + Windows 桌面專案與**偵錯工具類型**設為**混合**之下**組態屬性** > **偵錯**. 
-- [混合模式偵錯](how-to-debug-in-mixed-mode.md)受管理的相容性模式中的 Windows 傳統型應用程式 (**工具** > **選項** > **偵錯**  > **一般** > **使用 Managed 相容性模式**)。
 
 ## <a name="BKMK_Why_create_visualizations_"></a>Natvis 視覺化
 
@@ -169,7 +163,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 ##  <a name="BKMK_Syntax_reference"></a> Natvis 語法參考  
 
 ###  <a name="BKMK_AutoVisualizer"></a> AutoVisualizer 項目  
-`AutoVisualizer`元素是根節點 *.natvis*檔案，並包含命名空間`xmlns:`屬性。 
+`AutoVisualizer` 元素是 *.natvis* 檔案的根節點，並且包含命名空間 `xmlns:` 屬性。 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
@@ -213,7 +207,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>  
 ```  
 
-您可以使用巨集 $T1，$T2 來參考在視覺化項目中的範本參數等等。 若要尋找這些巨集的範例，請參閱 *.natvis* Visual Studio 隨附的檔案。  
+您可以使用巨集 $T1，$T2 來參考在視覺化項目中的範本參數等等。 若要尋找這些巨集的範例，請參閱 Visual Studio 隨附的 *.natvis* 檔案。  
 
 ####  <a name="BKMK_Visualizer_type_matching"></a> 視覺化檢視類型比對  
 如果驗證失敗的視覺化項目，則會使用下一個可用的視覺效果。  
@@ -231,7 +225,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 #### <a name="priority-attribute"></a>Priority 屬性  
 
-選擇性`Priority`屬性會指定要使用替代的定義中的順序，如果定義無法剖析。 可能的值`Priority`是： `Low`， `MediumLow`，`Medium`， `MediumHigh`，和`High`。 預設值是 `Medium`。 `Priority`屬性只區分在相同的優先順序 *.natvis*檔案。  
+選擇性`Priority`屬性會指定要使用替代的定義中的順序，如果定義無法剖析。 可能的值`Priority`是： `Low`， `MediumLow`，`Medium`， `MediumHigh`，和`High`。 預設值為 `Medium`。 `Priority`屬性只區分在相同的優先順序 *.natvis*檔案。  
 
 下列範例會先剖析符合 2015 STL 的項目。 如果無法剖析，但是它會使用 STL 的 2013年版本的替代項目：  
 
@@ -421,7 +415,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 `ArrayItems`節點必須有：  
 
-- A`Size`運算式 （必須評估為整數） 偵錯工具若要了解陣列的長度。  
+- 可讓偵錯工具了解陣列長度的 `Size` 運算式 (必須評估為整數)。  
 - A`ValuePointer`指向的第一個元素的運算式 (必須是不是項目類型的指標`void*`)。  
 
 該陣列的下限預設值為 0。 若要覆寫值，請使用`LowerBound`項目。 *.Natvis*檔案隨附於 Visual Studio 有範例。  
@@ -448,7 +442,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 - `Direction` 指定陣列是否列還是資料行主要順序。 
 - `Rank` 指定陣列的陣序。 
-- `Size`項目接受隱含`$i`參數，它換成要在該維度中尋找陣列的長度的二維索引。 在上一個範例中，運算式`_M_extent.M_base[0]`應可提供第 0 個維度的長度`_M_extent._M_base[1]`第 1，依此類推。  
+- `Size` 元素接受隱含的 `$i` 參數，並將參數取代為維度索引，以便在該維度中尋找陣列的長度。 在上一個範例中，運算式`_M_extent.M_base[0]`應可提供第 0 個維度的長度`_M_extent._M_base[1]`第 1，依此類推。  
 
 以下是二維`Concurrency::array`偵錯工具視窗中尋找的物件：  
 
@@ -539,8 +533,8 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 `CustomListItems` 支援下列的內建函式：
 
-- `strlen`, `wcslen`, `strnlen`, `wcsnlen`, `strcmp`, `wcscmp`, `_stricmp`, `_strcmpi`, `_wcsicmp`, `strncmp`, `wcsncmp`, `_strnicmp`, `_wcsnicmp`, `memcmp`, `memicmp`, `wmemcmp`, `strchr`, `wcschr`, `memchr`, `wmemchr`, `strstr`, `wcsstr`, `__log2`, `__findNonNull`
-- `GetLastError`, `TlsGetValue`, `DecodeHString`, `WindowsGetStringLen`, `WindowsGetStringRawBuffer`, `WindowsCompareStringOrdinal`, `RoInspectCapturedStackBackTrace`, `CoDecodeProxy`, `GetEnvBlockLength`, `DecodeWinRTRestrictedException`, `DynamicMemberLookup`, `DecodePointer`, `DynamicCast`
+- `strlen`、`wcslen`、`strnlen`、`wcsnlen`、`strcmp`、`wcscmp`、`_stricmp`、`_strcmpi`、`_wcsicmp`、`strncmp`、`wcsncmp`、`_strnicmp`、`_wcsnicmp`、`memcmp`、`memicmp`、`wmemcmp`、`strchr`、`wcschr`、`memchr`、`wmemchr`、`strstr`、`wcsstr`、`__log2`、`__findNonNull`
+- `GetLastError`、`TlsGetValue`、`DecodeHString`、`WindowsGetStringLen`、`WindowsGetStringRawBuffer`、`WindowsCompareStringOrdinal`、`RoInspectCapturedStackBackTrace`、`CoDecodeProxy`、`GetEnvBlockLength`、`DecodeWinRTRestrictedException`、`DynamicMemberLookup`、`DecodePointer`、`DynamicCast`
 - `ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] and operator(index<>)`
 - `ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)`
 - `ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] and operator(tiled_index<>)`
@@ -582,7 +576,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
  ![自動&#95;ptr&#60;向量&#60;int&#62; &#62;預設展開](../debugger/media/dbg_natvis_expand_expandeditem_default.png "預設展開")  
 
- 若要查看向量的值，您必須在變數視窗中，透過傳遞的兩個層級向下鑽研`_Myptr`成員。 藉由新增`ExpandedItem`項目，您就可以排除`_Myptr`變數從階層並直接檢視向量項目：  
+ 若要查看向量的值，您必須在變數視窗中，透過傳遞的兩個層級向下鑽研`_Myptr`成員。 藉由新增 `ExpandedItem` 元素，您可以從階層中排除 `_Myptr` 變數，並直接檢視向量元素：  
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">  
@@ -607,10 +601,10 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 </Type>  
 ```  
 
-**Nd**格式規範，以關閉 比對衍生類別的視覺效果，以下是必要。 否則，運算式`*(CFrameworkElement*)this`會導致`CPanel`視覺效果，以套用同樣的因為預設視覺化類型比對規則將它視為最適當的一個。 使用  **nd**格式規範來指示偵錯工具使用基底類別的視覺效果或預設展開，如果基底類別不有任何視覺效果。  
+此處需要 **nd** 格式規範，以關閉衍生類別的視覺化比對。 否則，運算式`*(CFrameworkElement*)this`會導致`CPanel`視覺效果，以套用同樣的因為預設視覺化類型比對規則將它視為最適當的一個。 使用  **nd**格式規範來指示偵錯工具使用基底類別的視覺效果或預設展開，如果基底類別不有任何視覺效果。  
 
-####  <a name="BKMK_Synthetic_Item_expansion"></a> 綜合的項目展開  
- 雖然`ExpandedItem`項目透過排除階層架構，提供資料 flatter 檢視`Synthetic`節點執行相反的動作。 它可讓您建立假造的子項目不是運算式的結果。 假造的項目可以有它自己的子元素。 在下列範例中， `Concurrency::array` 類型的視覺化使用 `Synthetic` 節點向使用者顯示診斷訊息：  
+####  <a name="BKMK_Synthetic_Item_expansion"></a> Synthetic 項目展開  
+ 其中 `ExpandedItem` 元素透過排除階層來提供更平面的資料檢視， `Synthetic` 節點則相反。 它可讓您建立假造的子項目不是運算式的結果。 假造的項目可以有它自己的子元素。 在下列範例中， `Concurrency::array` 類型的視覺化使用 `Synthetic` 節點向使用者顯示診斷訊息：  
 
 ```xml
 <Type Name="Concurrency::array&lt;*,*&gt;">  
@@ -632,7 +626,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
  ![綜合的項目展開含有](../debugger/media/dbg_natvis_expand_synthetic.png "含有綜合的項目展開")  
 
 ###  <a name="BKMK_HResult"></a> HResult 項目 
- `HResult`元素可讓您自訂顯示的資訊**HRESULT**偵錯工具視窗。 `HRValue`項目必須包含的 32 位元值**HRESULT**要進行自訂。 `HRDescription`項目包含在偵錯工具視窗中顯示的資訊。  
+ `HResult`元素可讓您自訂顯示的資訊**HRESULT**偵錯工具視窗。 `HRValue` 元素必須包含要自訂的 32 位元 **HRESULT** 值。 `HRDescription`項目包含在偵錯工具視窗中顯示的資訊。  
 
 ```xml
 
@@ -661,7 +655,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 - A `ServiceId`  -  `Id`屬性組會識別`UIVisualizer`。 `ServiceId`封裝會公開為服務的視覺化檢視的 GUID。 `Id` 在服務提供一個以上時，是區分視覺化檢視的唯一識別碼。 在上述範例中，相同的視覺化檢視服務提供兩個視覺化檢視。  
   
-- `MenuName`屬性定義要在偵錯工具的放大鏡圖示旁邊下拉式清單中顯示的視覺化檢視名稱。 例如:   
+- `MenuName`屬性定義要在偵錯工具的放大鏡圖示旁邊下拉式清單中顯示的視覺化檢視名稱。 例如：  
 
   ![UIVisualizer 功能表捷徑功能表](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer 功能表捷徑功能表")  
 
@@ -675,7 +669,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
  您所見的範例`UIVisualizer`中[Image Watch](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017)用來檢視記憶體中點陣圖的延伸模組。 
 
-### <a name="BKMK_CustomVisualizer"></a>CustomVisualizer 項目  
+### <a name="BKMK_CustomVisualizer"></a>CustomVisualizer 元素  
  `CustomVisualizer` 是指定 VSIX 擴充功能，您撰寫來控制在 Visual Studio code 中的視覺效果的擴充點。 如需撰寫 VSIX 擴充功能的詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。 
 
 它是更多的工作，來撰寫 XML Natvis 定義中，比自訂視覺化檢視，但是您可以從解 Natvis 沒有或不支援的條件約束。 自訂視覺化檢視可以存取完整的偵錯工具擴充性 Api，可以查詢和修改偵錯項目處理序或與 Visual Studio 的其他部分通訊。  

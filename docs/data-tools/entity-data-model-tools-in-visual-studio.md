@@ -5,23 +5,21 @@ ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14a0e5b6b746356e38dfc71c26f53ced5a470e34
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d6f14dbe79e9ba0f2a8642c61a0682b25aa703f0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066793"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945829"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>在 Visual Studio 中的 entity Framework 工具
 
 Entity Framework 是一種物件關聯式對應技術，可讓.NET 開發人員使用網域特有物件來處理關聯式資料。 它不需要開發人員通常需要撰寫的大部分資料存取程式碼。 Entity Framework 是模型對於新的.NET 應用程式的技術建議的物件關聯式對應 (ORM)。
 
-Entity Framework 工具專門設計來協助您建置 Entity Framework (EF) 應用程式。 Entity Framework 的完整文件位於這裡：[EF Core 和 EF 6](/ef/)。
+Entity Framework 工具專門設計來協助您建置 Entity Framework (EF) 應用程式。 Entity Framework 的完整文件已正式推出： [EF Core 與 EF 6](/ef/)。
 
 您可以使用 Entity Framework 工具，建立*概念模型*從現有資料庫然後以圖形方式以視覺化方式檢視和編輯概念模型。 或者，您可以先以圖形方式建立概念模型，然後產生可支援該模型的資料庫。 無論使用哪一種方式，當基礎資料庫變更時，您都可以自動更新模型，而且可以自動產生應用程式的物件層程式碼。 資料庫產生和物件層程式碼產生皆可自訂。
 
@@ -46,7 +44,7 @@ Entity Framework 工具安裝的一部分**資料儲存和處理**Visual Studio 
 
 ## <a name="related-topics"></a>相關主題
 
-| 標題 | 說明 |
+| 標題 | 描述 |
 | - | - |
 | [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | 描述如何使用[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]工具，其中[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]提供，若要建立應用程式。 |
 | [實體資料模型](/dotnet/framework/data/adonet/entity-data-model) | 提供用於處理資料所建置的應用程式使用的資訊和連結[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]。 |

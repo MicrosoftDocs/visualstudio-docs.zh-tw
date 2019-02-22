@@ -1,4 +1,19 @@
 ---
+title: 瀏覽儲存體以上傳資料
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.service: multiple
+ms.workload:
+- multiple
+ms.openlocfilehash: 44803eea573860074f67d2e97f1160614f452ac5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766377"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>瀏覽儲存體以上傳資料或下載模型和記錄檔
 

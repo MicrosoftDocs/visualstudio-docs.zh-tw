@@ -1,30 +1,25 @@
 ---
-title: 逐步解說：我的第一個 WPF 桌面應用程式2 | Microsoft Docs
-ms.custom: ''
+title: 逐步解說：我第一個 WPF 桌面應用程式 2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3c460fa9-2ea1-413f-ae54-54a1f2a499d1
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3607bac8d8cd9808a54e4c8956b3c4d41df8aecb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899275"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795941"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>逐步解說：我的第一個 WPF 桌面應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-name ="簡介"></a>本逐步解說提供 Windows Presentation Foundation (WPF) 開發的簡介。 您會建立基本的應用程式，包含對大部分 WPF 桌面應用程式都通用的項目：XAML 標記、程式碼後置、應用程式定義、控制項、配置、資料繫結和樣式。  
+name ="簡介"></a>本逐步解說提供 Windows Presentation Foundation (WPF) 開發的簡介。 您將建立基本的應用程式，其中包含通用於大部分的 WPF 桌面應用程式的項目：XAML 標記、 程式碼後置、 應用程式定義、 控制項、 版面配置、 資料繫結和樣式。  
   
 ##  <a name="Create_The_Application_Code_Files"></a> 建立應用程式專案  
  在本節中，您會建立應用程式基礎結構，包括專案及主視窗或表單。  
@@ -980,9 +975,6 @@ name ="簡介"></a>本逐步解說提供 Windows Presentation Foundation (WPF) �
   
 - [WPF 中的文件](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：建立連接至 Azure 行動服務的 WPF 桌面應用程式](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
  [使用 Windows Presentation Foundation 建立新式桌面應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

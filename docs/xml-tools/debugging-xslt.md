@@ -1,20 +1,19 @@
 ---
 title: 偵錯 XSLT
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 344940bd-c41e-4ed9-8458-3e3aa8e6bb37
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d62f95b934e2dc292aca1716223be2458e778c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b7caed64a263e5f347558dcea479b2e5ee27c96
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923383"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913898"
 ---
 # <a name="debugging-xslt"></a>偵錯 XSLT
 

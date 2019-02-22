@@ -2,19 +2,18 @@
 title: 工作流程設計工具-Transaction 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 ms.assetid: 8dd0f60f-88ec-4258-bc8d-233689be9997
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf5d3042d6d8556ed63d1fe97f17e924049e96a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 01b696b2054bc1ec41c7bdbd432371ed937008b3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922938"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922195"
 ---
 # <a name="transaction-activity-designers"></a>Transaction 活動設計工具
 

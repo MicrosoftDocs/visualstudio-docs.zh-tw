@@ -1,5 +1,5 @@
 ---
-title: SCRIPTTHREADID 的常數 |Microsoft 文件
+title: SCRIPTTHREADID 常數 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc692716115ea0c205b1cfd982b189fffd54a9ac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 27852f97cf0a78919b10043c64b1c5a7cc7d3ec5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734188"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097808"
 ---
 # <a name="scriptthreadid-constants"></a>SCRIPTTHREADID 的常數
 用來指定執行緒的類型。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 typedef DWORD SCRIPTTHREADID;  
 ```  
   
@@ -38,12 +38,12 @@ typedef DWORD SCRIPTTHREADID;
   
 |常數|值|意義|  
 |--------------|-----------|-------------|  
-|SCRIPTTHREADID_CURRENT|0xFFFFFFFD|目前執行中執行緒。|  
-|SCRIPTTHREADID_BASE|0xFFFFFFFE|基底的執行緒，也就是未具現化所在的指令碼引擎的執行緒。|  
-|SCRIPTTHREADID_ALL|0xFFFFFFFF|所有執行緒。|  
+|SCRIPTTHREADID_CURRENT|0xFFFFFFFD|目前正在執行的執行緒。|  
+|SCRIPTTHREADID_BASE|0xFFFFFFFE|基底執行緒中;也就是已經具現化所在的指令碼引擎的執行緒。|  
+|SCRIPTTHREADID_ALL|0xFFFFFFFF|所有的執行緒。|  
   
 ## <a name="remarks"></a>備註  
- `SCRIPTTHREADID`類型正由`IActiveScript::GetCurrentScriptThreadID`， `IActiveScript::GetScriptThreadID`， `IActiveScript::GetScriptThreadState`，和`IActiveScript::InterruptScriptThread`，但常數可以只供`IActiveScript::GetScriptThreadState`和`IActiveScript::InterruptScriptThread`。  
+ `SCRIPTTHREADID`型別由`IActiveScript::GetCurrentScriptThreadID`， `IActiveScript::GetScriptThreadID`， `IActiveScript::GetScriptThreadState`，並`IActiveScript::InterruptScriptThread`，但常數可以僅供`IActiveScript::GetScriptThreadState`並`IActiveScript::InterruptScriptThread`。  
   
 ## <a name="see-also"></a>另請參閱  
  [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   

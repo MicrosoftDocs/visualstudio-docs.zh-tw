@@ -1,8 +1,6 @@
 ---
 title: 疑難排解 ClickOnce 部署中的特定錯誤 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
@@ -18,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24d896b224adb4c5314938e2ef76af459135a213
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b738a419c93e1741fd2567fb18c9998beb181bd7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833055"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040628"
 ---
-# <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>疑難排解 ClickOnce 部署的特定錯誤
+# <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>針對 ClickOnce 部署的特定錯誤進行疑難排解
 本文列出當您在部署時，可能會發生下列常見的錯誤[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，並提供解決每個問題的步驟。  
 
 ## <a name="general-errors"></a>一般錯誤  
@@ -141,4 +139,4 @@ ms.locfileid: "49833055"
 
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
- [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)
+ [針對 ClickOnce 部署進行疑難排解](../deployment/troubleshooting-clickonce-deployments.md)

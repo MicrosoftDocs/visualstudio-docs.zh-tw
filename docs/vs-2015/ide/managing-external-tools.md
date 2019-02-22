@@ -1,14 +1,9 @@
 ---
 title: 管理外部工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
@@ -61,13 +56,13 @@ ms.assetid: f382fd40-a98f-4934-8c9a-5aeae881acde
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bf8e00635ff76e9e4ccfc4cbedbafabe8b0718dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244479"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763319"
 ---
 # <a name="managing-external-tools"></a>管理外部工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,14 +78,14 @@ ms.locfileid: "49244479"
   
 3.  ATL/MFC 追蹤工具：顯示 ATL 與 MFC 來源中的偵錯追蹤訊息。  
   
-4.  PreEmptive Dotfuscator and Analytics：保護 .NET 程式免於反向工程。  
+4.  PreEmptive Dotfuscator and Analytics:保護.NET 程式免於反向工程。  
   
-5.  SPY++：以圖形化方式顯示處理序、執行緒、視窗及視窗訊息。  
+5.  SPY++以圖形方式顯示處理程序、 執行緒、 windows 及視窗訊息。  
   
-6.  WCF 服務組態編輯器：可用以建立及修改 WCF 服務的組態設定。  
+6.  WCF 服務組態編輯器(&W)可讓您建立和修改 WCF 服務的組態設定。  
   
 > [!WARNING]
->  視您安裝的 Visual Studio 版本及套用的設定檔之不同，您看到的外部工具清單或許有些不同。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  視您安裝的 Visual Studio 版本及套用的設定檔之不同，您看到的外部工具清單或許有些不同。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="adding-new-tools"></a>加入新工具  
  您可將外部工具加入 [工具] 功能表。 開啟 [外部工具] 對話方塊，按一下 [加入]，然後填入資訊。 例如，下列輸入內容會讓 Windows 檔案總管的開啟位置，會是於 Visual Studio 中目前所開啟之檔案所在的目錄：  
@@ -126,13 +121,5 @@ ms.locfileid: "49244479"
 |方案目錄|$(SolutionDir)|目前方案的目錄 (磁碟機 + 路徑)。|  
 |方案檔名|$(SolutionFileName)|目前方案的檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [C/C++ 建置工具](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
-
-
-
-
-
-
-
-

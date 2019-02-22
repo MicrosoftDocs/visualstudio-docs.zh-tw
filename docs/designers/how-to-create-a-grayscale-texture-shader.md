@@ -1,23 +1,21 @@
 ---
-title: 如何：建立灰階材質著色器
+title: HOW TO：建立灰階紋理著色器
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1910926c6cb2d181f4e5e24ffb1bc1c75a56b3
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 33bb4ce8f7ed55b87ee602cb0384afdf6745a649
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924183"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919179"
 ---
-# <a name="how-to-create-a-grayscale-texture-shader"></a>如何：建立灰階紋理著色器
+# <a name="how-to-create-a-grayscale-texture-shader"></a>HOW TO：建立灰階紋理著色器
 
 本文會示範如何使用著色器設計工具和有向圖形著色器語言 (DGSL)，來建立灰階紋理著色器。 這個著色器可修改材質範例的 RGB 色彩值，然後和未經修改的 Alpha 值一起使用來設定完稿色彩。
 
@@ -53,6 +51,6 @@ ms.locfileid: "37924183"
 
 - [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [如何：匯出著色器](../designers/how-to-export-a-shader.md)
-- [影像編輯器](../designers/image-editor.md)
+- [Image Editor](../designers/image-editor.md)
 - [著色器設計工具](../designers/shader-designer.md)
 - [著色器設計工具節點](../designers/shader-designer-nodes.md)

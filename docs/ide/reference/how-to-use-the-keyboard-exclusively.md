@@ -1,9 +1,7 @@
 ---
-title: 如何：完全只使用鍵盤
+title: HOW TO：以獨佔模式使用鍵盤
 description: 了解如何使用預設的鍵盤快速鍵組合，在 Visual Studio 整合式開發環境 (IDE) 中輕鬆巡覽和撰寫程式碼。
 ms.date: 08/22/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -15,20 +13,20 @@ helpviewer_keywords:
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b76e34ba77335c242c752c055e2560cc73141d2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d03ef199e0c1c4ea3684287e1621e6d9b5fc52f8
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388396"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315530"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>如何：完全只使用鍵盤
+# <a name="how-to-use-the-keyboard-exclusively"></a>HOW TO：以獨佔模式使用鍵盤
 
 > [!TIP]
-> 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
+> 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供許多預設快速鍵組合，讓您在整合式開發環境 (IDE) 內輕鬆巡覽和撰寫程式碼。 如需用於 Visual Studio 中的快速鍵完整清單，請參閱[預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)。 如需適用於其他 Microsoft 產品的鍵盤快速鍵詳細資訊，請參閱 [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400)。
 

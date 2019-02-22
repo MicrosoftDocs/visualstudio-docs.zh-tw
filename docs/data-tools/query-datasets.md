@@ -8,17 +8,15 @@ dev_langs:
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2276828a67cec2562063d220ef3173d98fdf487b
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 88433ae91691caf795ad61116c8e3691662aad42
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174289"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927707"
 ---
 # <a name="query-datasets"></a>查詢資料集
 若要搜尋的資料集內的特定記錄，請使用`FindBy`datatable，方法撰寫您自己的 foreach 陳述式，以使用迴圈處理資料表的資料列集合，或使用[LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。

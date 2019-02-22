@@ -1,7 +1,6 @@
 ---
 title: CA2201:不要引發保留的例外狀況類型
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotRaiseReservedExceptionTypes
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: dd14ef5c-80e6-41a5-834e-eba8e2eae75e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b8eff3ac514e82e16327bfb873ed5fa2e9ccfba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9db603567cb73827546bc488bf57aba641d97054
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911935"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945998"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201:不要引發保留的例外狀況類型
 

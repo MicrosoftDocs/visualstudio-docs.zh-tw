@@ -1,27 +1,22 @@
 ---
 title: 項目定義 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 35506967ee20ff6c936e2de4a19d7860e154e4c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 08d91cbeb4424e2285a49e45d10c5ef2a0484afe
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866567"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54796668"
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ ms.locfileid: "49866567"
 > [!NOTE]
 >  在本主題的許多範例中都有顯示 ItemDefinitionGroup 元素，但為了清楚起見，已省略其對應的 ItemGroup 定義。  
   
- 在 ItemGroup 中明確定義之中繼資料的優先順序會高於 ItemDefinitionGroup 中的中繼資料。 ItemDefinitionGroup 中的中繼資料只會套用至 ItemGroup 中未定義的中繼資料。 例如:   
+ 在 ItemGroup 中明確定義之中繼資料的優先順序會高於 ItemDefinitionGroup 中的中繼資料。 ItemDefinitionGroup 中的中繼資料只會套用至 ItemGroup 中未定義的中繼資料。 例如：  
   
 ```  
 <ItemDefinitionGroup>  
@@ -98,7 +93,7 @@ ms.locfileid: "49866567"
   
 - 最後一個規格會具有最高的優先順序。  
   
-  當您具有多個 ItemDefinitionGroups 時，每個後續的規格都會將其中繼資料新增到先前的定義。 例如:   
+  當您具有多個 ItemDefinitionGroups 時，每個後續的規格都會將其中繼資料新增到先前的定義。 例如：  
   
 ```  
 <ItemDefinitionGroup>  
@@ -116,7 +111,7 @@ ms.locfileid: "49866567"
   
  在此範例中，中繼資料 "o" 會新增到 "m" 和 "n"。  
   
- 此外，也可以新增先前定義的中繼資料值。 例如:   
+ 此外，也可以新增先前定義的中繼資料值。 例如：  
   
 ```  
 <ItemDefinitionGroup>  
@@ -152,7 +147,7 @@ ms.locfileid: "49866567"
 ```  
   
 ## <a name="using-conditions-in-an-itemdefinitiongroup"></a>在 ItemDefinitionGroup 中使用條件  
- 您可以在 ItemDefinitionGroup 中使用條件來控制是否要包含中繼資料。 例如:   
+ 您可以在 ItemDefinitionGroup 中使用條件來控制是否要包含中繼資料。 例如：  
   
 ```  
 <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">  
@@ -167,7 +162,7 @@ ms.locfileid: "49866567"
 > [!NOTE]
 >  條件中僅支援本機中繼資料參考。  
   
- 對先前 ItemDefinitionGroup 中所定義之中繼資料的參考是項目 (而非定義群組) 的本機中繼資料參考。 亦即，參考的範圍是項目特定的。 例如:   
+ 對先前 ItemDefinitionGroup 中所定義之中繼資料的參考是項目 (而非定義群組) 的本機中繼資料參考。 亦即，參考的範圍是項目特定的。 例如：  
   
 ```  
 <ItemDefinitionGroup>  
@@ -183,7 +178,7 @@ ms.locfileid: "49866567"
  在此範例中，項目"i"參考項目"test"條件中。  
   
 ## <a name="overriding-and-deleting-metadata"></a>覆寫及刪除中繼資料  
- ItemDefinitionGroup 元素中所定義的中繼資料可被稍後的 ItemDefinitionGroup 元素覆寫，方法是將中繼資料值設定為空白。 您也可以藉由將中繼資料項目設定為空值，來有效地刪除中繼資料項目。 例如:   
+ ItemDefinitionGroup 元素中所定義的中繼資料可被稍後的 ItemDefinitionGroup 元素覆寫，方法是將中繼資料值設定為空白。 您也可以藉由將中繼資料項目設定為空值，來有效地刪除中繼資料項目。 例如：  
   
 ```  
 <ItemDefinitionGroup>  
@@ -234,7 +229,7 @@ ms.locfileid: "49866567"
 </ItemDefinitionGroup>  
 ```  
   
- 從 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 開始，ItemGroups 也可以自我參考。 例如:   
+ 從 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 開始，ItemGroups 也可以自我參考。 例如：  
   
 ```  
 <ItemGroup>  
@@ -245,8 +240,5 @@ ms.locfileid: "49866567"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [批次處理](../msbuild/msbuild-batching.md)
-
-
-

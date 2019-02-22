@@ -5,20 +5,20 @@ ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4866f028851fadbee9f8ab5dbd6d4dc50015a728
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05e266429c30ac2e2a2c5d65f7e037121f02c607
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902184"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043202"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>逐步解說：實作程式碼片段
 您可以建立程式碼片段，並將它們包含在編輯器擴充功能，以便延伸模組的使用者可以將它們加入自己的程式碼。  
   
- 程式碼片段是程式碼或其他可以納入檔案中的文字片段。 若要檢視所有已註冊的特定程式設計語言，在程式碼片段**工具**功能表上，按一下**程式碼片段管理員**。 若要在檔案中，以滑鼠右鍵按一下您想要的程式碼片段中，插入程式碼片段中，按一下 插入程式碼片段，或**環繞**，找出您想，程式碼的片段，，然後按兩下它。 按下** 索引標籤**或是**Shift**+**索引標籤**修改程式碼片段的相關部分，然後按下**Enter**或**Esc**接受它。 如需詳細資訊，請參閱 <<c0> [ 程式碼片段](../ide/code-snippets.md)。  
+ 程式碼片段是程式碼或其他可以納入檔案中的文字片段。 若要檢視所有已註冊的特定程式設計語言，在程式碼片段**工具**功能表上，按一下**程式碼片段管理員**。 若要在檔案中，以滑鼠右鍵按一下您想要的程式碼片段中，插入程式碼片段中，按一下 插入程式碼片段，或**環繞**，找出您想，程式碼的片段，，然後按兩下它。 按下**索引標籤**或是**Shift**+**索引標籤**修改程式碼片段的相關部分，然後按下**Enter**或**Esc**接受它。 如需詳細資訊，請參閱 <<c0> [ 程式碼片段](../ide/code-snippets.md)。  
   
  具有.snippet * 檔案名稱副檔名的 XML 檔案中包含的程式碼片段。 程式碼片段可包含程式碼片段插入，讓使用者可以尋找並加以變更後會反白顯示的欄位。 程式碼片段檔案也會提供資訊**程式碼片段管理員**，讓它可以顯示正確的類別中的程式碼片段名稱。 如需程式碼片段結構描述資訊，請參閱[程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)。  
   

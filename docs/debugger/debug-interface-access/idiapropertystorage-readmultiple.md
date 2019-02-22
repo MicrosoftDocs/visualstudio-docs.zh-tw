@@ -1,8 +1,6 @@
 ---
 title: IDiaPropertyStorage::ReadMultiple |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6ccc9397-ce41-4f72-b261-72ac252cd4a5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b8be22e2a855f19c412725833fa18e182ebff6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f3c507df19fad7dd9594aeca1a53b9cb89a2e936
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904040"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035558"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 讀取指定從目前的屬性集的屬性。  
@@ -27,7 +25,7 @@ ms.locfileid: "49904040"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT ReadMultiple(   
+HRESULT ReadMultiple(   
    ULONG          cpspec,  
    PROPSPEC const rgpspec,  
    PROPVARIANT    rgvar  
@@ -45,10 +43,10 @@ HRESULT ReadMultiple(
  [in、 out]陣列`PROPVARIANT`結構 （在 Microsoft.VisualStudio.OLE.Interop 命名空間中），來填入每個屬性值。 此陣列必須至少是`cpspec`大小的項目。 呼叫端不需要初始化的陣列中的值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`如果找不到一或多個屬性。 否則會傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果找不到一或多個屬性。 反之則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  如果屬性找不到，在對應的項目`rgvar`陣列包含`VARIANT`的型別`VT_EMPTY`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

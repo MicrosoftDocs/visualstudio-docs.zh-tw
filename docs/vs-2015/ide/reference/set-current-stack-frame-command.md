@@ -1,14 +1,9 @@
 ---
 title: 設定目前堆疊框架命令 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.setcurrentstackframe
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 3dcf52c0-6781-4598-bac2-0094dce67c20
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f8aeb1b993d5ec2b8091dfa4c764056743920a03
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7b3edf01a604e4b6f6a506b7ef26f503611f84fd
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182542"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54755195"
 ---
 # <a name="set-current-stack-frame-command"></a>設定目前堆疊框架命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Debug.SetCurrentStackFrame index
   
 ## <a name="arguments"></a>引數  
  `index`  
- 必要。 依索引選取堆疊框架。  
+ 必要項。 依索引選取堆疊框架。  
   
 ## <a name="example"></a>範例  
   
@@ -48,11 +43,8 @@ Debug.SetCurrentStackFrame index
 >Debug.SetCurrentStackFrame 1  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

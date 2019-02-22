@@ -1,7 +1,6 @@
 ---
-title: 如何：建置到通用輸出目錄
+title: HOW TO：建置通用輸出目錄
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 1fcc2c48-07cb-4c4f-9556-36945e7dfc4e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f45890224684ff2e4c411875ab61bdfb698cfb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 40a8ea93075294bb4419cfe4178965a8a4808cfc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942041"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949704"
 ---
-# <a name="how-to-build-to-a-common-output-directory"></a>如何：建置到通用輸出目錄
+# <a name="how-to-build-to-a-common-output-directory"></a>HOW TO：建置通用輸出目錄
 
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 預設會在方案的專屬資料夾中建立方案中的每個專案。 您可以變更專案的建置輸出路徑，強制將所有輸出放在相同的資料夾中。
 
@@ -37,5 +36,5 @@ ms.locfileid: "31942041"
 
 ## <a name="see-also"></a>另請參閱
 
-- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)
+- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
 - [如何：變更組建輸出目錄](../ide/how-to-change-the-build-output-directory.md)

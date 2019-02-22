@@ -2,21 +2,20 @@
 title: 對遠端 Linux 電腦上的 Python 程式碼進行偵錯
 description: 使用 Visual Studio 對在遠端 Linux 電腦上執行的 Python 程式碼進行偵錯，包括必要的組態步驟、安全性和疑難排解。
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eaeb13a087723b10098c9cfe6f75f3be2aad351e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb98a94e60d84fc48078be396e0fb48dd8952c55
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964886"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945738"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>對 Linux 上的 Python 程式碼進行遠端偵錯
 
@@ -66,7 +65,7 @@ Visual Studio 可以在 Windows 電腦上本機和遠端啟動 Python 應用程�
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. 使用 `pip3 install ptvsd`，將 `ptvsd` 封裝安裝到您的環境。 
+1. 使用 `pip3 install ptvsd`，將 `ptvsd` 封裝安裝到您的環境。
    >[!NOTE]
    >建議您將 ptvsd 的安裝版本記錄起來，以免需要進行疑難排解；[ptvsd 清單](https://pypi.python.org/pypi/ptvsd)中也會顯示可用的版本。
 

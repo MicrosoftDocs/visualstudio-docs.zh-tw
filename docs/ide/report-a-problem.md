@@ -2,20 +2,19 @@
 title: 回報問題
 description: 提供 [回報問題] 工具的概觀，並包括問題狀態和定義
 ms.date: 11/15/2018
-ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f7f3cc2d39a28052a0f34eed8ab36d224d4b8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f955642b0dd3a3784f1779ca65967f4b1e606bd7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934355"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911191"
 ---
 # <a name="overview-report-a-problem"></a>概觀：回報問題
 
@@ -63,7 +62,7 @@ ms.locfileid: "53934355"
 
 - - -
 
-![問題回報在開發人員社群上的 [已關閉 - 已修正] 狀態](../ide/media/ProblemStates/ClosedFixed.jpg) 
+![問題回報在開發人員社群上的 [已關閉 - 已修正] 狀態](../ide/media/ProblemStates/ClosedFixed.jpg)
 
 [已關閉 - 已修正] 表示我們已發行問題的修正程式。 問題現在也會以指定發行版本的「在...中修正」標籤來進行標記。
 

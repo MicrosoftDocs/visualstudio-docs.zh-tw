@@ -1,7 +1,6 @@
 ---
 title: 管理外部工具
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa96b9204e81a2947e4eb4dca4bd7b9d5b8b341
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e73a20cfd50d859cc050f540fa2d84cae874fc9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904175"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907798"
 ---
 # <a name="manage-external-tools"></a>管理外部工具
 
@@ -51,7 +50,7 @@ ms.locfileid: "53904175"
 
 以下是在定義外部工具時可以使用的引數完整清單：
 
-|名稱|引數|說明|
+|名稱|引數|描述|
 |----------|--------------|-----------------|
 |項目路徑|$(ItemPath)|目前檔案的完整檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
 |項目目錄|$(ItemDir)|目前檔案的目錄 (磁碟機 + 路徑)。|
@@ -65,8 +64,8 @@ ms.locfileid: "53904175"
 |目標名稱|$(TargetName)|要建置之項目的檔案名稱。|
 |目標副檔名|$(TargetExt)|要建置之項目的副檔名。|
 |二進位檔目錄|$(BinDir)|正在建置之二進位檔的最終位置 (定義為磁碟機 + 路徑)。|
-|專案目錄|$(ProjDir)|目前專案的目錄 (磁碟機 + 路徑)。|
-|專案檔名|$(ProjFileName)|目前專案的檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
+|專案目錄|$(ProjectDir)|目前專案的目錄 (磁碟機 + 路徑)。|
+|專案檔名|$(ProjectFileName)|目前專案的檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
 |方案目錄|$(SolutionDir)|目前方案的目錄 (磁碟機 + 路徑)。|
 |方案檔名|$(SolutionFileName)|目前方案的檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
 

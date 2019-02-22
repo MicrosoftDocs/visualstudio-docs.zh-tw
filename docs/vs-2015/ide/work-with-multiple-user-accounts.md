@@ -1,25 +1,20 @@
 ---
 title: 使用多個使用者帳戶
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93f029a067e5a45930c2ac827862c1807e32aff8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5d269cdb4fe84820174ded9c477fc3c9f917b0b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176263"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802638"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,20 +46,20 @@ ms.locfileid: "49176263"
   
 1.  以 C# 建立通用應用程式專案。  
   
-2.  以滑鼠右鍵按一下方案總管 中的專案節點，然後選擇**新增 > 已連接服務**。 [加入已連接服務精靈] 隨即出現，並顯示與 Visual Studio 登入識別碼相關聯之 Azure 帳戶中的服務清單。 請注意，您不需要分別登入 Azure。 但當您在指定的電腦上第一次嘗試存取其他帳戶的資源時，就必須登入這些帳戶。  
+2.  在[方案總管] 中，用滑鼠右鍵按一下專案節點，並選擇 [新增] > [連線服務]。 [加入已連接服務精靈] 隨即出現，並顯示與 Visual Studio 登入識別碼相關聯之 Azure 帳戶中的服務清單。 請注意，您不需要分別登入 Azure。 但當您在指定的電腦上第一次嘗試存取其他帳戶的資源時，就必須登入這些帳戶。  
   
     > [!WARNING]
-    >  如果這是您第一次您要 Visual Studio 2015 中建立市集應用程式特定的電腦上，您將會提示您啟用裝置的開發模式移至**設定&#124;。更新與安全性&#124;適用於開發人員**在您的電腦上。 如需詳細資訊，請參閱[啟用您的裝置以用於開發](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx)。  
+    >  如果這是您第一次在特定電腦上於 Visual Studio 2015 中建立市集應用程式，系統會提示您前往電腦上的 [設定] **|更新與安全性&#124;適用於開發人員**在您的電腦上。 如需詳細資訊，請參閱[啟用您的裝置以用於開發](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx)。  
   
 ###  <a name="access_azure"></a> 在 Web 專案中存取 Azure Active Directory  
- Azure AD 可支援在 ASP.NET MVC Web 應用程式中進行使用者單一登入，或是在 Web API 服務中進行 AD 驗證。 網域驗證與個別使用者帳戶驗證不同；擁有您 Active Directory 網域存取權的使用者，可以使用其現有的 Azure AD 帳戶，連接到您的 Web 應用程式。 Office 365 應用程式也可以使用網域驗證。 若要查看此動作，請建立 web 應用程式 (**檔案 > 新增專案 > C# > 雲端 > ASP.NET Web 應用程式**)。 然後在 [ASP.NET 新專案] 對話方塊中，選擇 [變更驗證] 。 隨即會出現驗證精靈，供您選擇要在應用程式中使用何種驗證。  
+ Azure AD 可支援在 ASP.NET MVC Web 應用程式中進行使用者單一登入，或是在 Web API 服務中進行 AD 驗證。 網域驗證與個別使用者帳戶驗證不同；擁有您 Active Directory 網域存取權的使用者，可以使用其現有的 Azure AD 帳戶，連接到您的 Web 應用程式。 Office 365 應用程式也可以使用網域驗證。 若要查看此作業如何進行，請建立 Web 應用程式 ([檔案] > [新增專案] > [C#] > [雲端] > [ASP.NET Web 應用程式])。 然後在 [ASP.NET 新專案] 對話方塊中，選擇 [變更驗證] 。 隨即會出現驗證精靈，供您選擇要在應用程式中使用何種驗證。  
   
  ![ASP.NET 的 [變更驗證] 對話方塊](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")  
   
  如需 ASP.NET 中各種驗證方式的詳細資訊，請參閱 [在 Visual Studio 2013 中建立 ASP.NET Web 專案](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (此驗證相關資訊仍與 Visual Studio 2015 有關)。  
   
 ### <a name="access-your-visual-studio-team-services-account"></a>存取 Visual Studio Team Services 帳戶  
- 從主功能表中，選擇**小組 > 連接到 Team Foundation Server**即可啟動**Team Explorer**視窗。 按一下 [選取 Team 專案] ，然後在 [選取 Team Foundation Server] 底下的清單方塊中，應該會看到您的 Visual Studio Team Services 帳戶的 URL。 如果選取 URL，不必重新輸入認證即可登入。  
+ 從主要功能表依序選擇 [小組] > [連線到 Team Foundation Server]，以顯示 [Team Explorer] 視窗。 按一下 [選取 Team 專案] ，然後在 [選取 Team Foundation Server] 底下的清單方塊中，應該會看到您的 Visual Studio Team Services 帳戶的 URL。 如果選取 URL，不必重新輸入認證即可登入。  
   
 ## <a name="add-a-second-user-account-to-visual-studio"></a>將第二個使用者帳戶加入 Visual Studio  
  在 Visual Studio 右上角，按一下使用者名稱旁邊的向下箭號。 然後按一下 [帳戶設定]  功能表項目。 [帳戶管理員]  對話方塊出現，並顯示您用來登入的帳戶。 按一下對話方塊左下角的 [加入新帳戶]  連結，加入新的 Microsoft 帳戶或是新的工作或學校帳戶。  
@@ -76,7 +71,4 @@ ms.locfileid: "49176263"
  ![帳戶管理員](../ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")  
   
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>再次瀏覽加入已連接服務精靈和伺服器總管  
- 現在，再次前往 [伺服器總管]  ，在 Azure 節點上按一下滑鼠右鍵，然後選擇 [管理和篩選訂閱] 。 按一下目前帳戶旁的下拉式箭號，選擇新的帳戶，接著選擇您想要在伺服器總管中顯示的訂閱。 您應該會看到與指定的訂閱相關聯之所有服務。即使您目前並未使用第二個帳戶登入 Visual Studio IDE，但仍登入了該帳戶的服務與資源。 這也適用於**專案 > 加入已連接服務**並**小組 > 連接到 Team Foundation Server**。
-
-
-
+ 現在，再次前往 [伺服器總管]  ，在 Azure 節點上按一下滑鼠右鍵，然後選擇 [管理和篩選訂閱] 。 按一下目前帳戶旁的下拉式箭號，選擇新的帳戶，接著選擇您想要在伺服器總管中顯示的訂閱。 您應該會看到與指定的訂閱相關聯之所有服務。即使您目前並未使用第二個帳戶登入 Visual Studio IDE，但仍登入了該帳戶的服務與資源。 [專案] > [新增連線服務] 以及 [小組] > [連線到 Team Foundation Server] 也是這樣。

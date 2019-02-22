@@ -1,8 +1,6 @@
 ---
-title: 'Idiasession:: Getenumdebugstreams |Microsoft Docs'
-ms.custom: ''
+title: IDiaSession::getEnumDebugStreams | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d294954b-80e9-476c-b9f0-5ca6fd575f68
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53eb0765b7a3d9ed5fb23c0b1d8880eeca390159
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5a715d9dc5ac30f9c60056348ec574b5b0696989
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818793"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931475"
 ---
 # <a name="idiasessiongetenumdebugstreams"></a>IDiaSession::getEnumDebugStreams
 擷取偵錯資料流的列舉的順序。  
@@ -27,7 +25,7 @@ ms.locfileid: "49818793"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT getEnumDebugStreams (   
+HRESULT getEnumDebugStreams (   
    IDiaEnumDebugStreams** ppEnumDebugStreams  
 )  
 ```  
@@ -39,6 +37,6 @@ HRESULT getEnumDebugStreams (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

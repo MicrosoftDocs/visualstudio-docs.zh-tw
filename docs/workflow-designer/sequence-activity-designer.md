@@ -2,21 +2,20 @@
 title: 工作流程設計工具-Sequence 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.Sequence.UI
 ms.assetid: 51c8d3cb-4d43-458f-9631-b63755f9ac94
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa829f7705540fdba03ffbd6fced967679ad6626
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: abbffa44ee7fa4db2a03e5f46820f707cae8d4fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857565"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928370"
 ---
 # <a name="sequence-activity-designer"></a>Sequence 活動設計工具
 

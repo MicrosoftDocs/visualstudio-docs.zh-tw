@@ -1,14 +1,9 @@
 ---
 title: Microsoft 提供的協助工具產品和服務 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - TTY/TDD services
 - documentation, recorded documentation
@@ -23,13 +18,13 @@ ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 96ad41ff6cec9a03c8d57905427dbdf45b5b4ed9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d07901a14b61ccddf8d4799828c6d42bddf7f94b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826982"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54794350"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 提供的協助工具產品和服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -84,12 +79,6 @@ Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下
 ##  <a name="moreinfo"></a> 詳細資訊  
  如需電腦協助工具技術如何改善身障人士生活的詳細資訊，請參閱 [Microsoft 協助工具網站](http://go.microsoft.com/fwlink/?LinkId=8431)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設計可及性應用程式的資源](../../ide/reference/resources-for-designing-accessible-applications.md)   
  [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)
-
-
-
-
-
-

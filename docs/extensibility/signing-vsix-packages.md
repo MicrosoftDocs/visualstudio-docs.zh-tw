@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba9d5ac7d9700d8ff5b047134a53d0147af3a78f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2805c2ecaff3704d96e9ebac176d96a4d820551
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827189"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959797"
 ---
 # <a name="signing-vsix-packages"></a>簽署 VSIX 套件
 延伸模組組件不需要經過簽署才能在 Visual Studio 中，可以執行，但最好這麼做。  
@@ -44,7 +44,7 @@ ms.locfileid: "53827189"
   
    例如若要使用密碼保護的憑證檔簽署的資訊：  
   
-   VSIXSignTool.exe 登 /f \<certfile >/p\<密碼 > \<VSIXfile >  
+   VSIXSignTool.exe sign /f \<certfile> /p \<password> \<VSIXfile>  
   
 ## <a name="see-also"></a>另請參閱  
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::GetEngineID |Microsoft Docs
+title: IDebugEngine2::GetEngineID | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,59 +9,59 @@ helpviewer_keywords:
 ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 050cc5c55daa56bcdbd9b3031e9deecaabd12d8a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09863abc81d3f4f1a5e4e541c9e0019d30156b67
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882477"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56449629"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
-取得偵錯引擎 (DE) 的 GUID。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT GetEngineID(   
-   GUID* pguidEngine  
-);  
-```  
-  
-```csharp  
-int GetEngineID(   
-   out Guid pguidEngine  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pguidEngine`  
- [out]傳回 DE 的 GUID。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- 典型的 Guid 的一些範例包括`guidScriptEng`， `guidNativeEng`，或`guidSQLEng`。 新的偵錯引擎會建立自己的 GUID 識別。  
-  
-## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CEngine`實作的物件[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)介面。  
-  
-```cpp  
-HRESULT CEngine::GetEngineId(GUID *pguidEngine){    
-   if (pguidEngine) {    
-      // Set pguidEngine to guidBatEng, as defined in the Batdbg.idl file.    
-      // Other languages would require their own guidDifferentEngine to be  
-      //defined in the Batdbg.idl file.    
-      *pguidEngine = guidBatEng;    
-      return NOERROR; // This is typically S_OK.    
-   } else {  
-      return E_INVALIDARG;    
-   }    
-}    
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+取得偵錯引擎 (DE) 的 GUID。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT GetEngineID(
+    GUID* pguidEngine
+);
+```
+
+```csharp
+int GetEngineID(
+    out Guid pguidEngine
+);
+```
+
+#### <a name="parameters"></a>參數
+`pguidEngine`  
+[out]傳回 DE 的 GUID。
+
+## <a name="return-value"></a>傳回值
+如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+典型的 Guid 的一些範例包括`guidScriptEng`， `guidNativeEng`，或`guidSQLEng`。 新的偵錯引擎會建立自己的 GUID 識別。
+
+## <a name="example"></a>範例
+下列範例示範如何實作這個方法來簡單`CEngine`實作的物件[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)介面。
+
+```cpp
+HRESULT CEngine::GetEngineId(GUID *pguidEngine) {
+    if (pguidEngine) {
+        // Set pguidEngine to guidBatEng, as defined in the Batdbg.idl file.
+        // Other languages would require their own guidDifferentEngine to be
+        //defined in the Batdbg.idl file.
+        *pguidEngine = guidBatEng;
+        return NOERROR; // This is typically S_OK.
+    } else {
+        return E_INVALIDARG;
+    }
+}
+```
+
+## <a name="see-also"></a>另請參閱
+[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

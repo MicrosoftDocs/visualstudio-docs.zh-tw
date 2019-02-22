@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], custom assembly
 - BDC [SharePoint development in Visual Studio], custom assembly
 - BDC [SharePoint development in Visual Studio], add reference
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b53b7c8b5cf4dd2c13adbb53a9724a8adaf2328
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4effb22f85ed7328a121340124f43b24b09e0ddc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919517"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870658"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>HOW TO：在 BDC 功能中包含自訂組件
   您的專案可以參考組件，從相同的方案中其他專案。 不過，您必須將這些組件加入功能檔的專案使用**指派參考組件 Lobsystem**  對話方塊。  
@@ -33,7 +33,7 @@ ms.locfileid: "53919517"
   
 2.  在 [ **檢視** ] 功能表中，按一下 [ **屬性視窗**]。  
   
-3.  在 [**屬性**] 視窗中，選擇**組件**屬性，然後按一下 省略符號按鈕 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile設計工具橢圓形"))。  
+3.  在 **屬性** 視窗中，選擇**組件**屬性，然後按一下 省略符號按鈕 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile設計工具橢圓形"))。  
   
      **指派參考組件 Lobsystem**  對話方塊隨即出現。  
   

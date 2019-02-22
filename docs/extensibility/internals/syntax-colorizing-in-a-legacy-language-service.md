@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a09926abb9118a4116ae826607d5a741b3872ffb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ba516701ec232cb49edfee9888625789b544d62
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865020"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948644"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>舊版語言服務中的語法上色
 語法顏色標示是一項功能，會顯示在原始程式檔中不同的色彩和樣式的程式設計語言的不同項目。 若要支援這項功能，您需要提供剖析器或掃描器可以識別語彙項目或檔案中的權杖類型。 許多語言關鍵字、 分隔符號 （例如括號或大括號），來區分及註解標示這些色彩以不同的方式。  

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortRequest2::GetPortName |Microsoft Docs
+title: IDebugPortRequest2::GetPortName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53e2a3a4-bb34-4a02-a983-6bd84ea70587
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c916e379c5a5f3f50fbad8d6b38548f2b0603eff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd5033926987ef1a2673380a4f7d76dc1b0cb0c0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940131"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962728"
 ---
 # <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
 取得連接埠的名稱。  

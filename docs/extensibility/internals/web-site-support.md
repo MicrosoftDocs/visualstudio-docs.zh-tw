@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e7cb983ec850c0efc9d22f1dd6458c71bcdcb2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a84b59085e2850a7c889e3468788fb8ef23414ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824765"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959901"
 ---
 # <a name="web-site-support"></a>網站支援
 網站專案系統會建立 Web 專案的專案系統。 Web 專案接著會建立 Web 應用程式。 網站專案產生一個可執行檔的檔案，每個網頁相關聯的程式碼。 從存放在 /App_Code 資料夾的原始程式碼檔產生額外的可執行檔。  

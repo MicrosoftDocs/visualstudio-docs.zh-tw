@@ -1,8 +1,6 @@
 ---
 title: 逐步解說：使用取樣進行命令列分析 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - performance tools, command-line tools
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 6cfa4afeda38180825a9f17b47a4e959fdac092d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592426"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960538"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>逐步解說：使用取樣進行命令列分析
 
@@ -35,7 +33,7 @@ ms.locfileid: "53592426"
 
 - 對 [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)] 有中等程度的了解
 - 對使用命令列工具有中等程度的了解
-- 一份 [PeopleTrax 範例](../profiling/peopletrax-sample-profiling-tools.md)
+- 一份 [PeopleTrax 範例](/visualstudio/profiling/performance-explorer)
 - 若要處理剖析所提供的資訊，您手邊最好有偵錯符號資訊。
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>使用取樣方法進行命令列分析

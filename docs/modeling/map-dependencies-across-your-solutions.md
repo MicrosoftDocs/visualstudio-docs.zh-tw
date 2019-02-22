@@ -13,16 +13,15 @@ helpviewer_keywords:
 - dependency graphs
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 084518e27924c714b2e1ca7982389fb93ff274cc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30eb3183d261297295d9d6d3715f3683e4b6ee34
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861620"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950223"
 ---
 # <a name="map-dependencies-with-code-maps"></a>使用 code map 對應相依性
 
@@ -147,7 +146,7 @@ ms.locfileid: "53861620"
 
     ![選取項目以檢視其關聯性](../modeling/media/codemapsviewnewrelationships.png)
 
-另請參閱：
+也請參閱：
 
 - [瀏覽和重新排列 Code Map](../modeling/browse-and-rearrange-code-maps.md)
 - [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

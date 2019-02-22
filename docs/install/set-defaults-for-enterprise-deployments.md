@@ -3,7 +3,6 @@ title: 設定企業部署的預設
 description: 深入了解 Visual Studio 企業部署的網域原則和其他組態作業。
 ms.date: 05/05/2017
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - gpo
@@ -14,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 9B7B4608-7A3F-4FF4-BDCE-42D9F7CE6DBA
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55bc436db77b90f30cec39fe2d0d33e3a8c60bb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f523aaa61e1908d0e947de4cf555ec95ad2d4306
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906068"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910814"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>設定 Visual Studio 2017 企業部署的預設
 

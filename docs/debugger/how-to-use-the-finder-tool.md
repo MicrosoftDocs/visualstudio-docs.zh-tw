@@ -1,25 +1,23 @@
 ---
-title: 如何： 使用搜尋工具 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用搜尋工具 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e002682b45d03ef5f9bc93a36bbd9781b46d62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e7673a4a9ccde94589ba03bd130645558ec088f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943072"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013154"
 ---
-# <a name="how-to-use-the-finder-tool"></a>如何：使用搜尋工具
+# <a name="how-to-use-the-finder-tool"></a>HOW TO：使用搜尋工具
 您可以使用搜尋工具，在**尋找視窗**對話方塊，即可顯示視窗屬性或訊息。 搜尋工具也可以找出已停用的子視窗，並分辨哪一個視窗，反白顯示，如果停用子視窗重疊。  
   
  ![Spy&#43; &#43;尋找視窗對話方塊](../debugger/media/icon_spy--_find.png "Icon_Spy + + （_f)")  
@@ -48,11 +46,11 @@ ms.locfileid: "49943072"
   
 4. 底下**顯示**，選取**屬性**或是**訊息**。  
   
-5. 按下**確定**。  
+5. 按 [確定]。  
   
     如果您選取**屬性**，則[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)隨即開啟。 如果您選取**訊息**，則[訊息檢視](../debugger/messages-view.md)視窗隨即開啟。  
   
-## <a name="see-also"></a>另請參閱  
- [Spy + + 檢視](../debugger/spy-increment-views.md)   
- [使用 Spy + +](../debugger/using-spy-increment.md)   
+## <a name="see-also"></a>請參閱  
+ [Spy++ 檢視](../debugger/spy-increment-views.md)   
+ [使用 Spy++](../debugger/using-spy-increment.md)   
  [Spy++ 參考](../debugger/spy-increment-reference.md)

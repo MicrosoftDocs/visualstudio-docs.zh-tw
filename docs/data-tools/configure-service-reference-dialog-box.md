@@ -11,17 +11,15 @@ helpviewer_keywords:
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f0cb2737356813a9b637d7f16e9d5cda704c022a
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b622fc77884acde5b81d886628afce9f077e86a8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389496"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955241"
 ---
 # <a name="configure-service-reference-dialog-box"></a>設定服務參考對話方塊
 

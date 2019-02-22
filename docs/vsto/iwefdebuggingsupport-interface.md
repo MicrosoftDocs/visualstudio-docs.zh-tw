@@ -5,17 +5,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 73aff964cfb66d33e308aef6448fc0f0b1b27c09
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55a09c3db9a47b5bcf22a7faeb891a1f709d244a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901015"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865680"
 ---
 # <a name="iwefdebuggingsupport-interface"></a>IWefDebuggingSupport 介面
   由偵錯的環境中，為了方便偵錯的應用程式，適用於 Office 的 Visual Studio 這類實作。 Office 應用程式，例如 Word 或 Excel，從 Visual Studio 中取得這個介面，，然後在偵錯工作階段的特定時間點在介面上呼叫方法。  

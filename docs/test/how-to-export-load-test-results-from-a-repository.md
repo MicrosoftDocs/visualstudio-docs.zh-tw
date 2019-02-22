@@ -10,14 +10,13 @@ helpviewer_keywords:
 ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: d86925963c156ae66abcf9b100b27bcd54224d75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 7bc496c4f6a445ffd43e992302457bdb92f3239a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869436"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949859"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>HOW TO：從存放庫匯出負載測試結果
 

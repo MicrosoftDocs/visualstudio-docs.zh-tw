@@ -1,7 +1,6 @@
 ---
 title: CA1309:使用循序的 StringComparison
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - UseOrdinalStringComparison
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 19be0854-cb6e-4efd-a4c8-a5c1fc6f7a71
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e36b199a3447ff3d38266adc723caf229973c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b00accdbdb08e4267bbca2b7e5fab8002f539f1d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838663"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922515"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309:使用循序的 StringComparison
 

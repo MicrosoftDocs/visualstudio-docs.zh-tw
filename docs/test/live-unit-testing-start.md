@@ -1,7 +1,6 @@
 ---
-title: 了解如何使用 Live Unit Test 2017 來測試程式碼 | Microsoft Docs
+title: 了解如何使用 Live Unit Test 來測試程式碼
 ms.date: 08/31/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6b96faf4ec1daa80bdd6d97e623fd0e155a39325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4676727f70b8065aee34578f563f286bc85bcb25
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942183"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950301"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>在 Visual Studio 中開始使用 Live Unit Testing
 
@@ -24,8 +23,11 @@ ms.locfileid: "53942183"
 Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core 的方案。 在本教學課程中，您將學習如何建立目標設為 .NET Standard 的簡單類別庫來使用 Live Unit Testing，而且您將建立目標設為 .NET Core 的 MSTest 專案來進行測試。
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 您可以從 GitHub 的 [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) 存放庫下載完整 C# 方案。
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 您可以從 GitHub 的 [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/visual-basic/UtilityLibraries/) 存放庫下載完整 Visual Basic 方案。
 
 ---
@@ -51,6 +53,7 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 既然您已建立方案，您將建立名為 `StringLibrary` 的類別庫，其中包含可處理字串的許多擴充方法。
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. 在 [方案總管] 中以滑鼠右鍵按一下 `UtilityLibraries` 方案，然後選取 [新增] > [新增專案]。
 
 1. 在 [新增專案] 對話方塊中，選取 C# 節點，然後選取 [.NET Standard]。
@@ -76,9 +79,10 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 
       - 如果字串包含內嵌空白字元，則 `HasEmbeddedSpaces` 會傳回 `true`；否則會傳回 `false`。
 
-1.  從最上層 Visual Studio 功能表中，依序選取 [建置] > [建置方案]。 Visual Studio 應該已成功建置程式庫。
+1. 從最上層 Visual Studio 功能表中，依序選取 [建置] > [建置方案]。 Visual Studio 應該已成功建置程式庫。
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. 在 [方案總管] 中以滑鼠右鍵按一下 `UtilityLibraries` 方案，然後選取 [新增] > [新增專案]。
 
 1. 在 [新增專案] 對話方塊中，選取 Visual Basic 節點，然後選取 [.NET Standard]。
@@ -108,7 +112,7 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 
    ![Visual Basic 專案的 [專案屬性] 對話方塊](./media/lut-start/vb-properties.png)
 
-1.  從最上層 Visual Studio 功能表中，依序選取 [建置] > [建置方案]。 Visual Studio 應該已成功建置程式庫。
+1. 從最上層 Visual Studio 功能表中，依序選取 [建置] > [建置方案]。 Visual Studio 應該已成功建置程式庫。
 
 ---
 
@@ -117,6 +121,7 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 下一步是建立單元測試專案，以測試 `StringLibrary` 程式庫。 執行下列步驟，以建立單元測試：
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. 在 [方案總管] 中以滑鼠右鍵按一下 `UtilityLibraries` 方案，然後選取 [新增] > [新增專案]。
 
 1. 在 [新增專案] 對話方塊中，選取 C# 節點，然後選取 [.NET Core]。
@@ -153,7 +158,7 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 
 1. 從最上層的 Visual Studio 功能表，選取 [建置]  >  [重建方案]，以編譯單元測試專案。
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. 在 [方案總管] 中以滑鼠右鍵按一下 `UtilityLibraries` 方案，然後選取 [新增] > [新增專案]。
 
@@ -208,9 +213,11 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 完成執行測試之後，**測試總管**會顯示整體結果和個別測試結果。 此外，程式碼視窗會以圖形方式顯示測試程式碼涵蓋範圍和測試結果。 如下圖所示，已成功執行所有這三項測試。 它也會顯示我們的測試已涵蓋 `StartsWithUpper` 方法中的所有程式碼路徑，而且已成功執行這些測試 (以綠色核取記號 "✓" 指出)。 最後，它會顯示 `StringLibrary` 中沒有其他方法具有程式碼涵蓋範圍 (以藍線 "➖" 指出)。
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 ![啟動 Live Unit Testing 之後的測試總管和程式碼視窗](media/lut-start/lut-results-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 ![啟動 Live Unit Testing 之後的測試總管和程式碼視窗](media/lut-start/lut-results-vb.png)
 
 ---
@@ -218,6 +225,7 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 您也可以選取程式碼視窗中的特定程式碼涵蓋範圍圖示，來取得測試涵蓋範圍和測試結果的更詳細資訊。 若要檢查此詳細資料，請執行下列作業：
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. 按一下 `StartsWithUpper` 方法之 `if (String.IsNullOrWhiteSpace(s))` 行中的綠色核取記號。 如下圖所示，Live Unit Testing 指出三項測試涵蓋該程式碼行，而且全部已成功執行。
 
    !['if' 條件陳述式的程式碼涵蓋範圍](media/lut-start/code-coverage-cs1.png)
@@ -226,7 +234,8 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 
    ![return 陳述式的程式碼涵蓋範圍](media/lut-start/code-coverage-cs2.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. 按一下 `StartsWithUpper` 方法之 `If (String.IsNullOrWhiteSpace(s)) Then` 行中的綠色核取記號。 如下圖所示，Live Unit Testing 指出三項測試涵蓋該程式碼行，而且全部已成功執行。
 
    !['If' 條件陳述式的程式碼涵蓋範圍](media/lut-start/code-coverage-vb1.png)
@@ -246,6 +255,7 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 若要將程式碼涵蓋範圍擴充至 `StartsWithLower` 方法，請執行下列作業：
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. 將下列 `TestStartsWithLower` 和 `TestDoesNotStartWithLower` 方法新增至專案的測試原始程式檔：
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
@@ -262,7 +272,8 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
     ![StartsWithLower 方法的程式碼涵蓋範圍](media/lut-start/lut-extended-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. 將下列 `TestStartsWithLower` 和 `TestDoesNotStartWithLower` 方法新增至專案的測試原始程式檔：
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
@@ -290,6 +301,7 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 在本節中，您將探索如何使用 Live Unit Testing 來識別、疑難排解和解決測試失敗。 做法是將測試涵蓋範圍展開至 `HasEmbeddedSpaces` 方法。
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. 將下列方法新增至測試檔案：
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
@@ -322,7 +334,8 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
 1. 選取 [偵錯] > [繼續]、按 **F5**，或按一下工具列上的 [繼續] 按鈕，繼續執行測試程式。 因為發生無法處理的例外狀況，所以測試終止。
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. 將下列方法新增至測試檔案：
 
     [!code-vb[The TestHasEmbeddedSpaces test method](samples/snippets/visual-basic/lut-start/unittest2.vb#3)]
@@ -360,6 +373,7 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 這提供初步調查 Bug 的足夠資訊。 `TestHasEmbeddedSpaces` (測試常式) 的假設錯誤，或 `HasEmbeddedSpaces` 未正確地辨識所有內嵌空格。 若要診斷和修正問題，請使用 `StringLibrary.HasEmbeddedSpaces` 方法開始：
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. 查看 `HasEmbeddedSpaces` 方法中的比較。 它會將內嵌空格視為 U+0020。 不過，Unicode Standard 包含許多其他空格字元。 這可能表示不正確地測試程式庫程式碼的空格字元。
 
 1. 將相等比較取代為 <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> 方法呼叫：
@@ -370,7 +384,8 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
     ![成功 HasEmbeddedSpaces 測試。](media/lut-start/test-success-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. 查看 `HasEmbeddedSpaces` 方法中的比較。 它會將內嵌空格視為 U+0020。 不過，Unicode Standard 包含許多其他空格字元。 這可能表示不正確地測試程式庫程式碼的空格字元。
 
 1. 將相等比較取代為 <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> 方法呼叫：
@@ -384,5 +399,6 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 ---
 
 ## <a name="see-also"></a>另請參閱
+
 - [Visual Studio 中的 Live Unit Testing](live-unit-testing.md)
 - [Live Unit Testing 常見問題集](live-unit-testing-faq.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCookie 介面 |Microsoft 文件
+title: IDebugCookie 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23f6796c278807951bbc7cfa37bec48e4dd73f4e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d47995fbf6c713af0f1d0213dbf5c3c98d54a0e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725978"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344018"
 ---
 # <a name="idebugcookie-interface"></a>IDebugCookie 介面
-可讓偵錯 cookie 設定，用於`IMachineDebugManagerCookie`介面。 如需詳細資訊，請參閱[IMachineDebugManagerCookie 介面](../../winscript/reference/imachinedebugmanagercookie-interface.md)。 這個介面會實作處理程序進行偵錯管理員 (PDM)，且由指令碼偵錯工具。  
+可讓偵錯 cookie 設定，以搭配`IMachineDebugManagerCookie`介面。 如需詳細資訊，請參閱 < [IMachineDebugManagerCookie 介面](../../winscript/reference/imachinedebugmanagercookie-interface.md)。 此介面是實作處理程序進行偵錯管理員 (PDM)，並由指令碼偵錯工具。  
   
 ## <a name="methods"></a>方法  
- 除了繼承自`IUnknown`、`IDebugCookie`介面會公開下列方法。  
+ 除了繼承自方法`IUnknown`，則`IDebugCookie`介面會公開下列方法。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
-|[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|設定偵錯應用程式 cookie。|  
+|[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|設定偵錯應用程式的 cookie。|  
   
 ## <a name="see-also"></a>另請參閱  
  [IMachineDebugManagerCookie 介面](../../winscript/reference/imachinedebugmanagercookie-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext 介面 |Microsoft 文件
+title: IDebugCodeContext 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce8068a4d015adb576d8ec1c03e3edc0db26b304
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0840bf0a77a671bd2a37c49db48d1eb1cd5fa222
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725758"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349162"
 ---
 # <a name="idebugcodecontext-interface"></a>IDebugCodeContext 介面
-表示可執行程式碼中的位置抽象概念。  
+抽象型別，表示可執行程式碼中的位置。  
   
- 除了繼承自`IUnknown`、`IDebugCodeContext`介面會公開下列方法。  
+ 除了繼承自方法`IUnknown`，則`IDebugCodeContext`介面會公開下列方法。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IDebugCodeContext::GetDocumentContext](../../winscript/reference/idebugcodecontext-getdocumentcontext.md)|傳回與此程式碼內容相關聯的文件內容。|  
-|[IDebugCodeContext::SetBreakPoint](../../winscript/reference/idebugcodecontext-setbreakpoint.md)|設定或清除此程式碼內容的中斷點。|
+|[IDebugCodeContext::SetBreakPoint](../../winscript/reference/idebugcodecontext-setbreakpoint.md)|設定或清除在本文中的程式碼中斷點。|

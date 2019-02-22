@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9e709ceb16a95094f14df65d42e7167ef5abdba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 195ec36affc9ede9efc61ead2cdede8233ebb65a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991239"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928902"
 ---
 # <a name="shared-colors-for-visual-studio"></a>適用於 Visual Studio 的共用的色彩
 當您在設計 UI 使用通用的 Visual Studio shell 項目，或您想要介面項目保持一致與類似的功能時，使用套件定義檔案中現有的語彙基元名稱，以選擇並指派色彩。 這可確保您的 UI 與整體 Visual Studio 環境保持一致，而且會在加入或更新佈景主題時自動更新。  
@@ -106,7 +106,7 @@ ms.locfileid: "53991239"
 
 **核取方塊： 預設狀態**  
 
-![核取方塊](../../extensibility/ux-guidelines/media/0303-162_checkbox.png "0303年 162_Checkbox")<br />預設值 核取方塊
+![Check box](../../extensibility/ux-guidelines/media/0303-162_checkbox.png "0303-162_Checkbox")<br />預設值 核取方塊
 
 | 元素 | 權杖名稱：Category.color |
 | --- | --- |
@@ -160,7 +160,7 @@ ms.locfileid: "53991239"
 | 圖像 | `CommonControls.CheckBoxGlyphFocused` |
 
 ### <a name="drop-downs-and-combo-boxes"></a>下拉式清單和下拉式方塊
-![下拉式清單下拉式方塊 （紅線）](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303年 167_DropDownComboBoxRedline")<br />下拉式清單下拉式方塊 （紅線）  
+![Drop-down/combo box (redline)](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")<br />下拉式清單下拉式方塊 （紅線）  
 
 | 使用... | 請勿使用... |
 | --- | --- |
@@ -169,7 +169,7 @@ ms.locfileid: "53991239"
 
 **下拉式清單和下拉式方塊： 預設狀態**  
 
-![預設清單/下拉式方塊](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "0303年 168_DropDownComboBox")<br />預設清單/下拉式方塊
+![Default drop-down/combo box](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "0303-168_DropDownComboBox")<br />預設清單/下拉式方塊
 
 | 元素 | 權杖名稱：Category.color |
 | --- | --- |
@@ -182,7 +182,7 @@ ms.locfileid: "53991239"
 
 **下拉式清單和下拉式方塊： 停用狀態**  
 
-![停用的下拉式清單下拉式方塊](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303年 169_DropDownComboBoxDisabled")<br />停用的下拉式清單下拉式方塊
+![Disabled drop-down/combo box](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")<br />停用的下拉式清單下拉式方塊
 
 | 元素 | 權杖名稱：Category.color |
 | --- | --- |
@@ -208,7 +208,7 @@ ms.locfileid: "53991239"
 
 **下拉式清單和下拉式方塊： 按下狀態**  
 
-![已按下下拉式清單下拉式方塊](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303年 171_DropDownComboBoxPressed")<br />已按下的下拉式清單下拉式方塊  
+![Pressed drop-down/combo box](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")<br />已按下的下拉式清單下拉式方塊  
 
 | 元素 | 權杖名稱：Category.color |
 | --- | --- |
@@ -370,7 +370,7 @@ ms.locfileid: "53991239"
 ### <a name="hyperlink"></a>超連結  
 超連結是一個沒有前景/背景配對的控制項。 在所有情況下，使用前景超連結的色彩，其會正確地顯示在深色、 灰色，並使用白色背景。 如果您未使用的色彩語彙基元的超連結控制項，您會看到的預設系統色彩的 「 已按下 」 這即閃爍紅色。 這是控制項未使用正確的環境色彩語彙基元的訊號。  
 
-![超連結 （紅線）](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "0303年 133_HyperlinkRedline")<br />超連結 （紅線）
+![Hyperlink (redline)](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "0303-133_HyperlinkRedline")<br />超連結 （紅線）
 
 | 使用... | 請勿使用... |
 | --- | --- |
@@ -411,7 +411,7 @@ ms.locfileid: "53991239"
 ### <a name="infobars"></a>資訊列  
 資訊列用來提供所指定內容的詳細資訊，而且一律會出現在文件視窗或工具視窗的頂端。  
 
-![資訊列 （紅線）](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303年 138_InfobarRedline")<br />資訊列 （紅線）
+![Infobar (redline)](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303-138_InfobarRedline")<br />資訊列 （紅線）
 
 | 使用... | 請勿使用... |
 | --- | --- |
@@ -1146,7 +1146,7 @@ ms.locfileid: "53991239"
 
 **功能表項目： 將滑鼠停留狀態**  
 
-![功能表動態顯示](../../extensibility/ux-guidelines/media/0303-013_menuhover.png "0303年 013_MenuHover")<br />暫留時顯示的功能表項目
+![Menu hover](../../extensibility/ux-guidelines/media/0303-013_menuhover.png "0303-013_MenuHover")<br />暫留時顯示的功能表項目
 
 ![核取功能表動態顯示](../../extensibility/ux-guidelines/media/0303-014_menuhoverchecked.png "0303年 014_MenuHoverChecked")<br />檢查暫留時顯示的功能表項目
 
@@ -2014,7 +2014,7 @@ Visual Studio 中的工具視窗用於許多不同的工作，而且可以存在
 ### <a name="toolbox-like-windows"></a>工具箱類似 windows
 工具箱是其中一個 Visual Studio 中最常使用的通用工具視窗。 它實際上就是樹狀結構控制項特殊佈景主題和套用的樣式。  
 
-![類似 [工具箱] 的視窗 （紅線）](../../extensibility/ux-guidelines/media/0303-189_toolboxredline.png "0303年 189_ToolboxRedline")<br />類似 [工具箱] 的視窗 （紅線）
+![Toolbox-like window (redline)](../../extensibility/ux-guidelines/media/0303-189_toolboxredline.png "0303-189_ToolboxRedline")<br />類似 [工具箱] 的視窗 （紅線）
 
 | 使用... | 請勿使用... |
 | --- | --- |

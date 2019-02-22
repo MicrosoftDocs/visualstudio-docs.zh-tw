@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07ad47ee8d0232df5f528db659def421475e7b33
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7edf2d2f94519146a81cf94b3bf30946af59bbe9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924235"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097028"
 ---
 # <a name="idebugpropertyenummembers"></a>IDebugProperty::EnumMembers
 列舉屬性的成員。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT EnumMembers (  
    DBGPROP_INFO_FLAGSdwFieldSpec,  
    UINTnRadix,  

@@ -1,7 +1,6 @@
 ---
 title: CA1018:必須以 AttributeUsageAttribute 標記屬性
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1018
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 6ab70ec0-220f-4880-af31-45067703133c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f88185882d8cddaf81caf95e2871918553b8eaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c0aa3fe5c45e34445c49c4b3a5f0abad1e98739
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881980"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943603"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018:必須以 AttributeUsageAttribute 標記屬性
 

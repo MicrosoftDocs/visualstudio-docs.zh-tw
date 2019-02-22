@@ -1,21 +1,20 @@
 ---
 title: 靜態協助程式類別 | Microsoft IntelliTest 開發人員測試工具
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 09799a4625791efa137dc9b97b7c3ad9a041feae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c639175e74d13a35724a4388505a177c8b60db0b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897796"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912452"
 ---
 # <a name="static-helper-classes"></a>靜態協助程式類別
 
@@ -131,7 +130,7 @@ public static class MathEx {
 public partial class MathExTests {
      [PexMethod]
      public int SquareTest(int a) {
-        int result = MathEx.Square(a); 
+        int result = MathEx.Square(a);
         // storing result
         return result;
      }
@@ -149,7 +148,8 @@ public partial class MathExTests {
 
 **範例**
 
-本例會示範 **PexAssume.Arrays.ElementsAreNotNull** 方法的實作。 在此方法中，您會忽略陣列值的長度條件約束，以免 IntelliTest 嘗試產生不同的陣列大小。 只在這裡忽略條件約束。 如果受測程式碼對不同的陣列長度有不同的行為，則 IntelliTest 無法從受測程式碼的條件約束產生不同大小的陣列。
+本例會示範 **PexAssume.Arrays.ElementsAreNotNull** 方法的實作。
+在此方法中，您會忽略陣列值的長度條件約束，以免 IntelliTest 嘗試產生不同的陣列大小。 只在這裡忽略條件約束。 如果受測程式碼對不同的陣列長度有不同的行為，則 IntelliTest 無法從受測程式碼的條件約束產生不同大小的陣列。
 
 ```csharp
 public static void AreElementsNotNull<T>(T[] value)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::GetReason |Microsoft Docs
+title: IDebugCanStopEvent2::GetReason | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5de31ca-7b8d-4029-9cf9-ba860ac66af6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b71a8cec89d113e6a4ce0590b95cbe853ddb98ed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6b58e1a7a1f3595084a92f8db41d13875e47c0d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987423"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041772"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
 取得偵錯引擎 (DE) 為何想要停止的原因。  

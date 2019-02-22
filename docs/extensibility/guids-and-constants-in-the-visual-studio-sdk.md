@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 438c1079-0747-4995-ae7a-32aa399c96f5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0be911b312f5c3a6e54b0391c9ffe049fcaecb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f54572c7712d859925ce7a93eaa8a1f3d8c79060
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896290"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955111"
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Guid 和 Visual Studio SDK 中的常數
 <xref:Microsoft.VisualStudio.VSConstants>類別提供存取的環境 Guid 和常數的選取項目。  

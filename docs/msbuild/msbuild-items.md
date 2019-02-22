@@ -1,24 +1,22 @@
 ---
 title: MSBuild 項目 | Microsoft Docs
 description: 使用 ItemGroup 的 MSBuild Include 屬性來指定要包含在組建中的檔案
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, Items
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 872fc4de05b4f6349db0a2d54a7dfb7c282ab6e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443593"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004431"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案是在 `Include` 屬性中指定)。 項目 (Item) 會依據它們的項目 (Element) 名稱分組為項目 (Item) 類型。 項目類型是具名的項目清單，可用來做為工作的參數。 工作會使用項目值來執行建置程序的步驟。  
@@ -55,9 +53,9 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 -   從 .NET Framework 3.5 開始，`Target` 項目可能會包含 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 項目，其中可能包含 Item 項目。  
   
 ##  <a name="reference-items-in-a-project-file"></a>參考專案檔中的項目  
- 若要在整個專案檔中參考項目類型，您可以使用語法 @(\<ItemType>)。 例如，您應該使用 `@(Compile)`，來參考前一個範例中的項目類型。 使用下列語法，您可以藉由指定項目類型做為工作的參數，來將項目傳遞給該工作。 如需詳細資訊，請參閱[如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)。  
+ 若要在整個專案檔中參考項目類型，您可以使用語法 @(\<ItemType>)。 例如，您應該使用 `@(Compile)`，來參考前一個範例中的項目類型。 使用下列語法，您可以藉由指定項目類型做為工作的參數，來將項目傳遞給該工作。 如需詳細資訊，請參閱[＜How to：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)。  
   
- 根據預設，項目類型的項目在展開時會以分號 (;) 分隔。 您可以使用語法 @(\<ItemType>, '\<separator>') 來指定非預設的分隔符號。 如需詳細資訊，請參閱[如何：顯示以逗號分隔的項目清單](../msbuild/how-to-display-an-item-list-separated-with-commas.md)。  
+ 根據預設，項目類型的項目在展開時會以分號 (;) 分隔。 您可以使用語法 @(\<ItemType>, '\<separator>') 來指定非預設的分隔符號。 如需詳細資訊，請參閱[＜How to：顯示以逗號分隔的項目清單](../msbuild/how-to-display-an-item-list-separated-with-commas.md)。  
   
 ##  <a name="use-wildcards-to-specify-items"></a>使用萬用字元指定項目  
 
@@ -99,7 +97,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- 如需詳細資訊，請參閱[如何︰從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。  
+ 如需詳細資訊，請參閱[＜How to：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。  
   
 ##  <a name="item-metadata"></a>項目中繼資料  
  在 `Include` 和 `Exclude` 屬性中，除了資訊，項目可能還會包含中繼資料。 若工作需要更多關於項目的資訊，就會使用此中繼資料，或使用此中繼資料來批次處理工作和目標。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。  
@@ -183,7 +181,7 @@ MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案�
 ###  <a name="BKMK_RemoveAttribute"></a> Remove 屬性  
  `Remove` 屬性會移除項目類型中的特定項目 (檔案)。 此屬性在 .NET Framework 3.5 中引進，但 MSBuild 15.0 之前只在目標內支援。
   
- 下列範例會從 Compile 項目類型移除每個 .config** 檔案。  
+ 下列範例會從 Compile 項目類型移除每個 *.config* 檔案。  
   
 ```xml  
 <Target>  
@@ -323,12 +321,13 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
+ [Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)  
+ [通用的 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
  [如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)   
  [如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)   
  [如何：顯示以逗號分隔的項目清單](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [項目定義](../msbuild/item-definitions.md)   
- [批次處理](../msbuild/msbuild-batching.md)   
- [Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)
+ [批次處理](../msbuild/msbuild-batching.md)

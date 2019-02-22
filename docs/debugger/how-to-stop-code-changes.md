@@ -1,8 +1,6 @@
 ---
-title: 如何： 停止程式碼變更 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：停止程式碼變更 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 9e72a50c-bb0a-4eaa-9ac1-d00930b68d38
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3694c23f52a1c34cd99d8391b14cc92ac939813
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bc79b09f51e182e69bcf652627275a10fdfe61e2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903669"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013259"
 ---
-# <a name="how-to-stop-code-changes"></a>如何：停止程式碼變更
+# <a name="how-to-stop-code-changes"></a>HOW TO：停止程式碼變更
 當 [編輯後繼續] 正在套用程式碼變更時，您可以停止該作業。  
   
 > [!CAUTION]
@@ -34,12 +32,12 @@ ms.locfileid: "49903669"
   
 ### <a name="to-stop-applying-code-changes"></a>若要停止套用程式碼變更  
   
-- 選擇**停止套用程式碼變更**從**偵錯**功能表。  
+- 選擇 [偵錯] 功能表中的 [停止套用程式碼變更]。  
   
   只有套用程式碼變更時，才能看見這個功能表項目。  
   
   如果您選擇此選項，就無法認可任何的程式碼變更。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [編輯後繼續](../debugger/edit-and-continue.md)   
  [選項對話方塊、偵錯、編輯後繼續](https://msdn.microsoft.com/library/bcew296c.aspx)

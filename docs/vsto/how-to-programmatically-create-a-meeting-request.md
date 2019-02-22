@@ -9,17 +9,17 @@ helpviewer_keywords:
 - meeting requests [Office development in Visual Studio]
 - appointments [Office development in Visual Studio]
 - calendars [Office development in Visual Studio], meeting requests
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c99f67c1bf445fe33a45292f29205e3eb53537f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 098e559e0d856ba8c9b096f452a85fc46d7058ce
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890491"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869027"
 ---
 # <a name="how-to-programmatically-create-a-meeting-request"></a>HOW TO：以程式設計方式建立會議邀請
   本範例會在 Microsoft Office Outlook 中建立會議邀請，並傳送要求給必要的與會者。  

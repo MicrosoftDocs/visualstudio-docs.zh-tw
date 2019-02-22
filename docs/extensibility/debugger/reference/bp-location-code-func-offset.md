@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_FUNC_OFFSET |Microsoft Docs
+title: BP_LOCATION_CODE_FUNC_OFFSET | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,48 +9,48 @@ helpviewer_keywords:
 ms.assetid: ab38f7ca-fa01-4cf3-a06c-56cbb7207617
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc76bca11eb963f2e51e0a97aca023b011b6bc33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90f624bf012354dbd438f0fff079e13da756f079
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989107"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318024"
 ---
 # <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
-描述程式碼中的函式的中斷點的位移的位置。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {   
-   BSTR                     bstrContext;  
-   IDebugFunctionPosition2* pFuncPos;  
-} BP_LOCATION_CODE_FUNC_OFFSET;  
-```  
-  
-## <a name="members"></a>成員  
- `bstrContext`  
- 中斷點的內容，通常是呼叫堆疊上所示的方法或函式的名稱。  
-  
- `pFuncPos`  
- [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)物件，描述函式和函式開頭的相對位置的名稱。  
-  
-## <a name="remarks"></a>備註  
- 此結構是隸屬[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的聯集的一部分。  
-  
- `pFuncPos`成員表示設定函式中斷點的位置。  
-  
-## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
-  
- 命名空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>另請參閱  
- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
- [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)
+描述程式碼中的函式的中斷點的位移的位置。
+
+## <a name="syntax"></a>語法
+
+```cpp
+typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
+    BSTR                     bstrContext;
+    IDebugFunctionPosition2* pFuncPos;
+} BP_LOCATION_CODE_FUNC_OFFSET;
+```
+
+## <a name="members"></a>成員
+`bstrContext`  
+中斷點的內容，通常是呼叫堆疊上所示的方法或函式的名稱。
+
+`pFuncPos`  
+[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)物件，描述函式和函式開頭的相對位置的名稱。
+
+## <a name="remarks"></a>備註
+此結構是隸屬[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的聯集的一部分。
+
+`pFuncPos`成員表示設定函式中斷點的位置。
+
+## <a name="requirements"></a>需求
+標頭： msdbg.h
+
+命名空間：Microsoft.VisualStudio.Debugger.Interop
+
+組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>另請參閱
+[結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
+[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

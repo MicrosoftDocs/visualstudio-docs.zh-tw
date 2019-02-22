@@ -1,7 +1,6 @@
 ---
 title: 在檔案中尋找和取代
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.replaceinfiles
@@ -12,15 +11,15 @@ helpviewer_keywords:
 - replace in files
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc353a652b561333a8b10741a2863eee049c2889
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fddd048d7c0cc1ffc32dfa81f17964d14d917ec9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852924"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940824"
 ---
 # <a name="replace-in-files"></a>檔案中取代
 

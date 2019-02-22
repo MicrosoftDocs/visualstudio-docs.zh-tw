@@ -1,23 +1,21 @@
 ---
-title: IDiaSession::findInlineeLinesByRVA |Microsoft Docs
-ms.custom: ''
+title: IDiaSession::findInlineeLinesByRVA | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 7a74d5ee-0dbf-47c0-92b4-47ec03b13ce9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5b7ee1359ac4a7943187f9170df08eb9c7858c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bcbf6a02784273070d0e8d3ecbc961b5d546a906
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875654"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920094"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
 擷取列舉型別，可讓用戶端來逐一查看所有函式是內嵌的直接或間接由指定之父代符號的行號資訊，而且包含在指定相對的虛擬位址 (RVA)。  
@@ -25,7 +23,7 @@ ms.locfileid: "49875654"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT findInlineeLinesByRVA (   
+HRESULT findInlineeLinesByRVA (   
    IDiaSymbol*           parent,  
    DWORD                 rva,  
    DWORD                 length,  
@@ -49,7 +47,7 @@ HRESULT findInlineeLinesByRVA (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)   

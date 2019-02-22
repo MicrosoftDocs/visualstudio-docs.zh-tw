@@ -1,25 +1,20 @@
 ---
 title: 使用效能規則分析資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1deed23e-b31b-4714-982f-08ceebfc3096
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a64457cc0ca33295e5d3d572ddb88481dfa2125d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7aacae0d5432af6a28e6f134e84d613774b82978
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784360"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791975"
 ---
 # <a name="using-performance-rules-to-analyze-data"></a>使用效能規則分析資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,6 +33,3 @@ ms.locfileid: "51784360"
   
  [效能規則參考](../profiling/performance-rules-reference.md)  
  提供有關分析工具效能警告的詳細資訊
-
-
-

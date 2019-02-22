@@ -1,20 +1,18 @@
 ---
 title: 產生建構函式的快速動作
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b267bee0c78de19ffa0d443f515375eeae949a
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: aa3d347c08ee73054d4b229d7d2598331e44c1d7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295822"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941370"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>在 Visual Studio 中產生建構函式
 
@@ -28,7 +26,7 @@ ms.locfileid: "51295822"
 
 **時機：** 您引進新的建構函式並想要自動正確地宣告它，或是您修改現有的建構函式。
 
-**原因：** 您可以在使用建構函式之前先宣告它，不過，此功能將可自動搭配正確的參數來產生建構函式。 此外，修改現有的建構函式將需要更新所有 callsite，除非您使用此功能來自動更新它們。
+**原因：** 您可以在使用建構函式之前先宣告它；不過，此功能將可自動搭配正確的參數來產生建構函式。 此外，修改現有的建構函式將需要更新所有 callsite，除非您使用此功能來自動更新它們。
 
 **做法：** 有數種產生建構函式的方式：
 
@@ -50,7 +48,7 @@ ms.locfileid: "51295822"
       - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在類別中的空白行上，此圖示就會出現在左邊界上。
+      - 按一下 ![出現於左邊界的螺絲起子](media/screwdriver.png) 圖示，如果文字游標已經在類別中的空白行上，此圖示就會出現在左邊界上。
 
    ![「產生建構函式」預覽](media/constructor1-preview-cs.png)
 
@@ -81,7 +79,7 @@ ms.locfileid: "51295822"
       - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在具有選取項目的行上，此圖示就會出現在左邊界上。
+      - 按一下 ![出現於左邊界的螺絲起子](media/screwdriver.png) 圖示，如果文字游標已經在具有選取項目的行上，此圖示就會出現在左邊界上。
 
       ![「產生建構函式」預覽](media/constructor2-preview-cs.png)
 
@@ -109,8 +107,8 @@ ms.locfileid: "51295822"
       - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![燈泡](media/bulb-cs.png) 出現的圖示。
-      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在具有紅色曲線的行上，此圖示就會出現在左邊界上。
+      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 圖示。
+      - 按一下 ![錯誤燈泡](media/error-bulb.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
 
       ![「產生建構函式」預覽](media/constructor-preview-cs.png)
 
@@ -143,8 +141,8 @@ ms.locfileid: "51295822"
       - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![燈泡](media/bulb-cs.png) 出現的圖示。
-      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在具有紅色曲線的行上，此圖示就會出現在左邊界上。
+      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![錯誤燈泡](media/error-bulb.png) 圖示。
+      - 按一下 ![錯誤燈泡](media/error-bulb.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
 
       ![「產生建構函式」預覽](media/constructor4-preview-cs.png)
 
@@ -170,7 +168,7 @@ ms.locfileid: "51295822"
       - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在具有所新增參數的行上，此圖示就會顯示在左邊界上。
+      - 按一下 ![出現於左邊界的螺絲起子](media/screwdriver.png) 圖示，如果文字游標已經在具有所新增參數的行上，此圖示就會顯示在左邊界上。
 
    ![「產生建構函式」預覽](media/constructor5-preview-cs.png)
 

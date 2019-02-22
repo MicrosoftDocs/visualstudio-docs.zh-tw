@@ -11,17 +11,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], accessing on server
 - documents [Office development in Visual Studio], server-side data access
 - workbooks [Office development in Visual Studio], inserting data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aeba8355a4d7b9934f045a828efc251500d3e77c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 194ec4111d5cc4a34879377695667d97032402b9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947136"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875936"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>逐步解說：在伺服器上的活頁簿中插入資料
   本逐步解說示範如何將資料插入的資料集，Microsoft Office Excel 活頁簿中快取不會啟動 Excel 使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別。

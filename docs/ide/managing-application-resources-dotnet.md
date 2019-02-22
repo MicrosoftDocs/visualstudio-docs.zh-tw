@@ -1,8 +1,6 @@
 ---
 title: 管理應用程式資源 (.NET)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -16,15 +14,15 @@ helpviewer_keywords:
 - application resources [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a80a84276648f8a0f0d5a94992b5f58cbcfefa
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 48dbd24ba98ad3f1b4f24a68c9775b1022ea08f6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348114"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970305"
 ---
 # <a name="manage-application-resources-net"></a>管理應用程式資源 (.NET)
 
@@ -43,7 +41,7 @@ ms.locfileid: "51348114"
 - 在 [快速啟動] 視窗中，輸入「專案屬性」
 - 在 [方案總管] 中選擇 **Alt**+**Enter**
 
-選取 **資源**  索引標籤。您可以在專案尚未包含 *.resx* 檔案的情況下新增該檔案、新增和刪除不同種類的資源，以及修改現有的資源。
+選取 **資源** 索引標籤。您可以在專案尚未包含 *.resx* 檔案的情況下新增該檔案、新增和刪除不同種類的資源，以及修改現有的資源。
 
 ## <a name="resources-in-other-project-types"></a>其他專案類型中的資源
 

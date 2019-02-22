@@ -1,5 +1,5 @@
 ---
-title: ERRORRESUMEACTION 列舉 |Microsoft 文件
+title: ERRORRESUMEACTION 列舉 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 914c1d7aa4d2935ea94322ebd257f4135d79e9c0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d78852a05226f5112447dd142c06a2ba55ddba5a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640608"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347225"
 ---
 # <a name="errorresumeaction-enumeration"></a>ERRORRESUMEACTION 列舉
 描述如何從執行階段錯誤繼續執行。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 typedef enum tagERRORRESUMEACTION {  
    ERRORRESUMEACTION_ReexecuteErrorStatement,  
    ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller,  
@@ -43,7 +43,7 @@ typedef enum tagERRORRESUMEACTION {
 |成員|描述|  
 |------------|-----------------|  
 |ERRORRESUMEACTION_ReexecuteErrorStatement|重新執行陳述式產生錯誤。|  
-|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|可讓語言引擎處理錯誤。|  
+|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|可讓處理錯誤的語言引擎。|  
 |ERRORRESUMEACTION_SkipErrorStatement|在程式碼中產生錯誤的陳述式之後繼續執行。|  
   
 ## <a name="see-also"></a>另請參閱  

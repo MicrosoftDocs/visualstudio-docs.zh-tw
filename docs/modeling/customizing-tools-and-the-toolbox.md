@@ -10,16 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, toolbox
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 705b70fd0ee71f7ea0670f64aadcbff7bc686721
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae5873462c2938ab4215d1cd4837c496e235ab35
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919595"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913362"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自訂工具和工具箱
 

@@ -1,7 +1,6 @@
 ---
 title: CA1301:避免使用重複的快速鍵
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1301
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 20570a00-864b-459c-a1fa-a6e9db5f1001
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d20ec103b2861fbdb80d45b82135686c26b91c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f82163b1c377df4c8c7fcbba07672312153dad9b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944982"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916540"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301:避免使用重複的快速鍵
 

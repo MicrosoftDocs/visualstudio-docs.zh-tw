@@ -9,15 +9,15 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 86914f9f27aff5bc965ce2fde70d4f6cc9396623
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 65f60759d1ef0e1c400461ba6c7adbc19c24afbd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845392"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869784"
 ---
 # <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>HOW TO：以程式設計方式將項目新增至 Outlook 連絡人
   此範例會建立新的連絡人，並輸入新的連絡人資料。  

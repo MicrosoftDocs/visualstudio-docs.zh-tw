@@ -1,8 +1,6 @@
 ---
 title: 專案和方案、選項對話方塊
 ms.date: 07/14/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 684c129ed104ed11b7cd6c88a7b603956acf64cf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388945"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922208"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>選項對話方塊、專案和方案頁面
 
@@ -89,11 +87,11 @@ ms.locfileid: "52388945"
 
 ### <a name="user-project-templates-location"></a>使用者專案範本位置
 
-指定 [新增專案] 對話方塊用來建立 [我的範本] 清單的預設位置。 如需詳細資訊，請參閱[如何：尋找並整理範本](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+指定 [新增專案] 對話方塊用來建立 [我的範本] 清單的預設位置。 如需詳細資訊，請參閱[＜How to：尋找並整理範本](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ### <a name="user-item-templates-location"></a>使用者項目範本位置
 
-指定 [新增新項目] 對話方塊用來建立 [我的範本] 清單的預設位置。 如需詳細資訊，請參閱[如何：尋找並整理範本](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+指定 [新增新項目] 對話方塊用來建立 [我的範本] 清單的預設位置。 如需詳細資訊，請參閱[＜How to：尋找並整理範本](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,23 +1,21 @@
 ---
-title: 如何：建立基本色彩著色器
+title: HOW TO：建立基本色彩著色器
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88a5b14d98dc9459aa0d0f87a4ddba52de18ac06
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 858ea12709b187204cd1662d41b82266c99efc01
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924352"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953473"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>如何：建立基本色彩著色器
+# <a name="how-to-create-a-basic-color-shader"></a>HOW TO：建立基本色彩著色器
 
 本文會示範如何使用著色器設計工具和有向圖形著色器語言 (DGSL)，來建立一般色彩著色器。 這個著色器會將完稿色彩設定為 RGB 色彩常數值。
 

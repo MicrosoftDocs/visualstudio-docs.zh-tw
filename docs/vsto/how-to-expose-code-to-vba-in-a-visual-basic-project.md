@@ -13,15 +13,15 @@ helpviewer_keywords:
 - host items [Office development in Visual Studio], exposing code to VBA
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a534d32dc8e9352c10a214fbd70ec361b82aed1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2da62fa4c5fc79fc217c165746e9f1fd062d3461
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900988"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867308"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>HOW TO：公開給 VBA 的程式碼，在 Visual Basic 專案
   您的程式碼中的公開[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]如果您想要與彼此互動的程式碼的兩個類型，專案加入 Visual Basic for Applications (VBA) 程式碼。  

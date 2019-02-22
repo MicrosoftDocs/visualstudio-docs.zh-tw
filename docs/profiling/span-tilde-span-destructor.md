@@ -1,8 +1,6 @@
 ---
 title: span::~span 解構函式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span::~span
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9ff61542-9be7-4e81-bfe5-5d2c6eb112c1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebde2e9659716a73943e2861f8856f6a9817b34b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ed97dc5da89f8de17ef002aabc82bb631ec51b4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668525"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023128"
 ---
 # <a name="spanspan-destructor"></a>span::~span 解構函式
 終結 `span` 物件，並釋放其資源。  
@@ -31,7 +29,7 @@ ms.locfileid: "35668525"
 ```  
   
 ## <a name="requirements"></a>需求  
- **標頭：***cvmarkersobj.h*  
+ **標頭：** *cvmarkersobj.h*  
   
  **命名空間：** Concurrency::diagnostic
  

@@ -1,20 +1,19 @@
 ---
 title: 排序、 篩選和分組在 XML 結構描述總管中
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0c790ced2d25c63faab8260278b4e02d3015f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 200ac7f9a38a242d6140902374d477339747b9b4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820849"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914002"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、 篩選和群組 （XML 結構描述總管）
 

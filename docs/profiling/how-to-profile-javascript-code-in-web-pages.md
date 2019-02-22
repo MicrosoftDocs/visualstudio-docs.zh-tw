@@ -1,8 +1,6 @@
 ---
-title: 如何：分析網頁中的 JavaScript 程式碼 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：分析網頁中的 JavaScript 程式碼 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript performance profiling
@@ -10,17 +8,17 @@ helpviewer_keywords:
 - web site performance profiling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 007603f0695a658b6bfa6c1ab1173b4483004c13
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 139cc1ad17448334098dc8e0ac0bbfbdf9ef6d5a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843919"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043514"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>如何：分析網頁中的 JavaScript 程式碼
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>HOW TO：分析網頁中的 JavaScript 程式碼
 
 Visual Studio 分析工具可以使用檢測分析方法，針對 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式、任意網頁或 JavaScript 應用程式中執行的 JavaScript 程式碼來收集效能資料。 需要 Internet Explorer 8 或更新版本。
 

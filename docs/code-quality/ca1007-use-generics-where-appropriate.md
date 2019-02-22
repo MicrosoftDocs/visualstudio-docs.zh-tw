@@ -1,7 +1,6 @@
 ---
 title: CA1007:建議在適當時使用泛型
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1007
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: eab780ea-3b1f-4d32-b15a-5d48da2df46b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 038f498b2f4ef01ac42535b32d4fefd39102e4fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1cf2939f0484c6defb76b88fb072fcd4b51849b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883009"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922509"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007:建議在適當時使用泛型
 

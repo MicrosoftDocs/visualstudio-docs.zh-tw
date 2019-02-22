@@ -1,21 +1,20 @@
 ---
 title: 開發人員測試工具
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46d2d41cd337ec2cbdd1fe44bde97db39b1b764e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 216cee6181122997ef8cc5937b9b1af76ba71b06
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930159"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316349"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>開發人員測試工具、案例和功能
 
@@ -30,7 +29,7 @@ ms.locfileid: "53930159"
 ![IntelliTest 作用中](media/devtest-intellitest.png)
 
 * [Introduction to IntelliTest with Visual Studio](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20IntelliTest%20with%20Visual%20Studio%20Enterprise%202015.docx) (Visual Studio 的 IntelliTest 簡介)
-* [IntelliTest – One test to rule them all](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/) (IntelliTest - 一項掌控全場的測試)
+* [IntelliTest – One test to rule them all](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/) (IntelliTest - 一項掌控全場的測試)
 * [IntelliTest Videos](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio) (IntelliTest 影片)
 * [開始使用 IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [IntelliTest 參考手冊](intellitest-manual/index.md)
@@ -79,7 +78,7 @@ Visual Studio 亦為可延伸，並且會開啟 NUnit 和 xUnit.net 這類協力
 ## <a name="see-also"></a>另請參閱
 
 * [開始使用單元測試](getting-started-with-unit-testing.md)
-* [Speed up unit test execution in Team Foundation Server](https://blogs.msdn.microsoft.com/devops/2015/07/30/speeding-up-unit-test-execution-in-tfs/) (加速 Team Foundation Server 中的單元測試執行)
-* [Parallel and context sensitive unit test execution](https://blogs.msdn.microsoft.com/devops/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/) (平行和內容區分的單元測試執行)
+* [Speed up unit test execution in Team Foundation Server](https://devblogs.microsoft.com/devops/speeding-up-unit-test-execution-in-tfs/) (加速 Team Foundation Server 中的單元測試執行)
+* [Parallel and context sensitive unit test execution](https://devblogs.microsoft.com/devops/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/) (平行和內容區分的單元測試執行)
 * [Unit testing, code coverage and code clone analysis with Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx) (Visual Studio 的單元測試、程式碼涵蓋範圍和程式碼複製品分析 (實驗室))
 * [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Profiling Tools, sampling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98a34abcd0e17f7b453ab3bd6e706665a9379bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db8230c393ad18d72ff4d4d186d916c0e938996d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863468"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978577"
 ---
 # <a name="understand-sampling-data-values"></a>了解取樣資料值
 

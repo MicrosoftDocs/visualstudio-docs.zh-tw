@@ -2,19 +2,18 @@
 title: 建議功能
 description: 描述開發人員社群上有哪些建議、提出建議的方式，以及 Microsoft 會如何將這些建議用於 Visual Studio 的藍圖。
 ms.date: 12/17/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60fce2b9fb14ffcb0975b91991595d1a4a429cb2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910570"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316076"
 ---
 # <a name="overview-suggest-a-feature"></a>概觀：建議功能
 
@@ -130,4 +129,4 @@ User Voice 與開發人員社群中的投票系統，在運作上有著顯著差
 
 ## <a name="see-also"></a>另請參閱
 
-- [Introducing 'Suggest a Feature' in Developer Community (Visual Studio blog)](https://blogs.msdn.microsoft.com/visualstudio/2018/10/09/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral) (開發人員社群中的「建議功能」簡介 (Visual Studio 部落格))
+- [Introducing 'Suggest a Feature' in Developer Community (Visual Studio blog)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral) (開發人員社群中的「建議功能」簡介 (Visual Studio 部落格))

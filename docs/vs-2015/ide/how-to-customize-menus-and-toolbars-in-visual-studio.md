@@ -1,14 +1,9 @@
 ---
 title: HOW TO：自訂功能表與工具列
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.renametoolbar
 - vs.customize.toolbars
@@ -32,15 +27,15 @@ ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3196aac35a05d915f1f4c3b58547e0787e9a1afc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: b492764c6d872ff8f2568b4abcbeefe133ee23c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066700"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795429"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>HOW TO：自訂功能表和工具列，在 Visual Studio 中
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>HOW TO：在 Visual Studio 中自訂功能表和工具列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以自訂 Visual Studio，不只是可以加入及移除功能表列上的工具列和功能表，還可以加入及移除任何指定工具列或功能表上的命令。
@@ -96,7 +91,7 @@ ms.locfileid: "53066700"
          您也可以拖曳工具列的左邊緣，將它移動至主要停駐區中的任何位置。
 
         > [!NOTE]
-        >  如需如何改善可用性和協助工具的工具列的詳細資訊，請參閱[How to:設定 IDE 協助工具選項](../ide/reference/how-to-set-ide-accessibility-options.md)。
+        >  如需如何改善工具列可用性和協助工具的詳細資訊，請參閱[如何：設定 IDE 協助工具選項](../ide/reference/how-to-set-ide-accessibility-options.md)。
 
 ##  <a name="bkmk_customize"></a> 自訂功能表或工具列
 

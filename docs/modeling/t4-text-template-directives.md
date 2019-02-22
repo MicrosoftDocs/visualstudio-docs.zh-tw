@@ -11,16 +11,15 @@ helpviewer_keywords:
 - text templates, template directive
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 3bf8248a7a68b914d6276e3e6f37261fb6137efc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1447af5bcfd2b9b95b834e3b84cab7b8da88ea5b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939248"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946362"
 ---
 # <a name="t4-text-template-directives"></a>T4 文字範本指示詞
 指示詞會提供指令給文字範本轉換引擎。

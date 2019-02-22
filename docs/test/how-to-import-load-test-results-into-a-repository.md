@@ -10,14 +10,13 @@ helpviewer_keywords:
 ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 491c09a73d1a6a1ff8d4c5356901aba21c7ed140
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: efbd13bf7ada237dc21bc5b2b6a186b13a52fd06
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945128"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932407"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>HOW TO：將負載測試結果匯入存放庫
 

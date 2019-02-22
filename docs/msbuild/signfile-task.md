@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: edef1819-ddeb-4e09-95de-fc7063ba9388
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5adc16bf0ded8171009c31d96227daa0474ebbf5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bec3dbc52c381b5e691ecf7a8072a85da70e43fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847213"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961958"
 ---
 # <a name="signfile-task"></a>SignFile 工作
 

@@ -1,14 +1,9 @@
 ---
 title: 使用 MSBuild 取得組建記錄檔 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
@@ -16,13 +11,13 @@ ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
 caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6eb4a1822d0be86d19f25bfaa46e296abc7a73a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a7ab53b2f8918760fcfccdf6086073b0c808b80b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811746"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771975"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>使用 MSBuild 取得組建記錄檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,12 +77,9 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
   
  在 MSBuild 命令列中，您會使用 **/logger** 參數來指定自訂記錄器。 您也可以使用 **/noconsolelogger** 參數，來停用預設的主控台記錄器。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.Build.Framework.LoggerVerbosity>   
  [組建記錄器](../msbuild/build-loggers.md)   
  [在多處理器環境中記錄](../msbuild/logging-in-a-multi-processor-environment.md)   
  [建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)
-
-
-

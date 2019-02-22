@@ -2,21 +2,20 @@
 title: F# 工具
 description: 了解 F# 支援哪些 Visual Studio 功能。
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18803d3033cc3aa1fdfb43620eb741ff1724ec74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990080"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955853"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>在 Visual Studio 中使用 Visual F# 進行開發
 
@@ -59,7 +58,7 @@ ms.locfileid: "53990080"
 
 [專案設計工具] 包含依相關功能分組的數個專案屬性頁。 可用於 F# 專案的頁面大部分是可用於其他語言的頁面子集，下表將描述這些頁面。 還提供了對應至 C# [專案設計工具] 頁面的連結。
 
-|[專案設計工具] 頁面|相關連結|說明|
+|[專案設計工具] 頁面|相關連結|描述|
 | - |-------------|-----------|
 |應用程式|[專案設計工具、應用程式頁面](reference/application-page-project-designer-csharp.md)|可讓您指定應用程式層級設定和屬性，例如您正在建立程式庫還是可執行檔、應用程式是以哪些 .NET Framework 版本為目標，以及應用程式使用的資源檔儲存所在位置的相關資訊。|
 |組建|[專案設計工具、建置頁](reference/build-page-project-designer-csharp.md)|可讓您控制如何編譯程式碼。|
@@ -73,7 +72,7 @@ ms.locfileid: "53990080"
 
 下表摘要說明 F# 專用的設定：
 
-|[專案設計工具] 頁面|設定|說明|
+|[專案設計工具] 頁面|設定|描述|
 | - |-------|-----------|
 |組建|產生 tail 呼叫|如果選取此設定，則可讓您使用尾端 Microsoft Intermediate Language (MSIL) 指令。 這會導致堆疊框架重複用於尾端遞迴函式。 相當於 `--tailcalls` 編譯器選項。|
 |組建|其他旗標|可讓您指定其他編譯器命令列選項。|
@@ -82,7 +81,7 @@ ms.locfileid: "53990080"
 
 F# 支援 Visual Studio 程式碼和文字編輯器的下列功能：
 
-|功能|說明|F# 支援？|
+|功能|描述|F# 支援？|
 |-------|-----------|----------------|
 |自動註解|可讓您註解或取消註解程式碼區段。|是|
 |自動格式化|使用標準的縮排和樣式重新格式化程式碼。|否|
@@ -114,7 +113,7 @@ F# 支援 Visual Studio 程式碼和文字編輯器的下列功能：
 
 下表摘要說明 F# 支援和不支援的 IntelliSense 功能：
 
-|功能|說明|F# 支援？|
+|功能|描述|F# 支援？|
 |-------|-----------|----------------|
 |自動實作介面|產生介面方法的程式碼虛設常式。|是|
 |程式碼片段|將來自常見程式碼建構程式庫的程式碼插入主題中。|否|
@@ -134,7 +133,7 @@ F# 支援 Visual Studio 程式碼和文字編輯器的下列功能：
 
 下表摘要說明對 F# 程式碼進行偵錯時可供使用的功能：
 
-|功能|說明|F# 支援？|
+|功能|描述|F# 支援？|
 |-------|-----------|----------------|
 |自動變數視窗|顯示自動或暫存變數。|否|
 |中斷點|可讓您在偵錯期間的特定時間點暫停程式碼執行。|是|
@@ -153,7 +152,7 @@ F# 支援 Visual Studio 程式碼和文字編輯器的下列功能：
 
 下表摘要說明 Visual Studio 工具中的 F# 支援。
 
-|工具|說明|F# 支援？|
+|工具|描述|F# 支援？|
 |----|-----------|----------------|
 |呼叫階層|顯示程式碼中函式呼叫的巢狀結構。|否|
 |程式碼度量|收集程式碼的相關資訊，例如行數。|否|

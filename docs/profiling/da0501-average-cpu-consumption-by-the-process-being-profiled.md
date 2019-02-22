@@ -1,8 +1,6 @@
 ---
-title: DA0501：進行程式碼剖析之處理序所需的平均 CPU 使用量。 | Microsoft Docs
-ms.custom: ''
+title: DA0501：所分析之處理序的平均 CPU 消耗。 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DA0501
@@ -11,15 +9,15 @@ f1_keywords:
 ms.assetid: b01946b4-75e3-47d5-a1a1-cebfae66a3af
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9612c895f7453d250b4f37c06e3630901602685
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b7bd27ceb83105a9d790937b3a5fcb904adf3abd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847107"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983972"
 ---
 # <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501：所分析之處理序的平均 CPU 使用量。
 

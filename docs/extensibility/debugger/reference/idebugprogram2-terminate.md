@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Terminate |Microsoft Docs
+title: IDebugProgram2::Terminate | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4d3127d3-b1e9-4b28-ac22-2f2eea255f86
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4ef57e3cbc11eb6e1b8e266d1a0799ef46ba406
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fad3f8829bb4d455dd09df2a896a1e2cd9daa9e6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872092"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975659"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 終止程式。  

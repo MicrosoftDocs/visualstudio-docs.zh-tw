@@ -1,7 +1,6 @@
 ---
 title: HOW TO：在成員標記法和關聯標記法之間變更 (類別設計工具)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - notation, member
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ffdcaf2a78933d52fe3a19e2c34deb5c303401
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0138ec1e2a36ce20b80982103ec408077502993a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952637"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913820"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>HOW TO：在 [類別設計工具] 中，在成員標記法和關聯標記法之間變更
 

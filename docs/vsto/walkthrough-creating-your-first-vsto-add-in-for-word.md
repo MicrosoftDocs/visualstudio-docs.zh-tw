@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
 - Word [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f8cd238c64b32501a42900d37723c350e84673f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e4ada075dc9f64fb7febc402cdbe690c7dbc9b9f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948968"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868322"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>逐步解說：Word 建立您第一個 VSTO 增益集
   本入門逐步解說將示範如何建立 Microsoft Office Word 的 VSTO 增益集。 不論開啟哪一份文件，您在這類方案中建立的功能都可供應用程式本身使用。  
@@ -52,17 +52,17 @@ ms.locfileid: "53948968"
   
 1.  啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
-2.  在 [檔案] **Deploying Office Solutions** 功能表中，指向 [新增] ，然後按一下 [專案] 。  
+2.  在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
   
-3.  在範本窗格中，展開 [Visual C#] **Deploying Office Solutions** 或 [Visual Basic] ，然後展開 [Office/SharePoint] 。  
+3.  在範本窗格中，展開 **[Visual C#]** 或 **[Visual Basic]**，然後展開 **[Office/SharePoint]**。  
   
-4.  在展開的 [Office/SharePoint] **Deploying Office Solutions** 節點下，選取 [Office 增益集]  節點。  
+4.  在展開的 [Office/SharePoint]  節點下，選取 [Office 增益集]  節點。  
   
 5.  在專案範本清單中，選取 [Word VSTO 增益集] 專案。  
   
 6.  在 **名稱**方塊中，輸入**FirstWordAddIn**。  
   
-7.  按一下 [確定 **Deploying Office Solutions**]。  
+7.  按一下 [確定] 。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會建立**FirstWordAddIn**專案，並在編輯器中開啟 ThisAddIn 程式碼檔。  
   
@@ -91,7 +91,7 @@ ms.locfileid: "53948968"
   
    若要在儲存文件時修改文件，前面的程式碼範例可以使用下列物件：  
   
--   `ThisAddIn` 類別的 `Application` 欄位。 `Application` 欄位會傳回 <xref:Microsoft.Office.Interop.Word.Application> 物件，此物件代表 Word 目前的執行個體。  
+-   `Application` 類別的 `ThisAddIn` 欄位。 `Application` 欄位會傳回 <xref:Microsoft.Office.Interop.Word.Application> 物件，此物件代表 Word 目前的執行個體。  
   
 -   `Doc` 事件之事件處理常式的 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 參數。 `Doc` 參數是 <xref:Microsoft.Office.Interop.Word.Document> 物件，此物件代表儲存的文件。 如需詳細資訊，請參閱 < [Word 物件模型概觀](../vsto/word-object-model-overview.md)。  
   
@@ -99,7 +99,7 @@ ms.locfileid: "53948968"
   
 ### <a name="to-test-the-project"></a>測試專案  
   
-1.  按 F5 **Deploying Office Solutions** 建置及執行專案。  
+1.  按 **F5** 建置及執行專案。  
   
      當您建置專案時，程式碼會編譯到包含在專案建置輸出資料夾中的組件。 Visual Studio 也會建立一組登錄項目，以便 Word 探索和載入 VSTO 增益集，而且會設定開發電腦中的安全性設定，讓 VSTO 增益集可以執行。 如需詳細資訊，請參閱 <<c0> [ 建置 Office 方案](../vsto/building-office-solutions.md)。  
   
@@ -116,7 +116,7 @@ ms.locfileid: "53948968"
   
 ### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>清除開發電腦上已完成的專案  
   
-1.  在 Visual Studio 中，按一下 [建置] **Deploying Office Solutions** 功能表上的 [清除方案] 。  
+1.  在 Visual Studio 中，按一下 [建置]  功能表上的 [清除方案] 。  
   
 ## <a name="next-steps"></a>後續步驟  
  現在您已經建立 Word 的基本 VSTO 增益集，可以從下列主題進一步了解如何開發 VSTO 增益集：  

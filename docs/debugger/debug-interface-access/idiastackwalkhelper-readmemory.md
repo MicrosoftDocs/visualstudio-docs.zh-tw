@@ -1,8 +1,6 @@
 ---
 title: IDiaStackWalkHelper::readMemory |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e1eb90aa-49b7-476c-9e70-7e8f08994cbe
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76b054d004e6c62f9d36ca5fcebe1a7f0476fbfc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 229aace046dfebd75786dfa5c14998d9498b98b2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825851"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967098"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 從記憶體中的可執行檔的映像中讀取資料的區塊。  
@@ -27,7 +25,7 @@ ms.locfileid: "49825851"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT readMemory(   
+HRESULT readMemory(   
    enum MemoryTypeEnum type,  
    ULONGLONG           va,  
    DWORD               cbData,  
@@ -40,7 +38,7 @@ HRESULT readMemory(
  `type`  
  [in]值，以從[MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md)指定要讀取的記憶體類型的列舉類型。  
   
- Va  
+ va  
  [in]要從其中開始讀取的映像中的虛擬位址。  
   
  `cbData`  
@@ -55,6 +53,6 @@ HRESULT readMemory(
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md)

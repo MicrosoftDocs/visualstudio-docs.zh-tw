@@ -1,14 +1,9 @@
 ---
 title: 分析效能工具資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance, viewing data
 - performance reports, performance data
@@ -21,13 +16,13 @@ ms.assetid: ae3e198a-b994-4ecb-a633-dec98bd4fd45
 caps.latest.revision: 46
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 57d223cfe71db947a33545d27b6a75947db6b016
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a141e6f02c8457adaee45ddc6905470a747123d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780447"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54794300"
 ---
 # <a name="analyzing-performance-tools-data"></a>分析效能工具資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,8 +42,5 @@ ms.locfileid: "51780447"
   
  [儲存和匯出效能工具資料](../profiling/saving-and-exporting-performance-tools-data.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能總管](../profiling/performance-explorer.md)
-
-
-

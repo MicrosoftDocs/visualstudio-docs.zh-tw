@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_sourcefilename |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_sourceFileName | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0f5dce88-829e-4df3-8acd-8d71076ad167
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74c13470c39309264121aa88ad5bacd24511c7eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5775c743382fc1042492253f6bb8c0657da0698f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941382"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043137"
 ---
 # <a name="idiasymbolgetsourcefilename"></a>IDiaSymbol::get_sourceFileName
 擷取編譯原始程式檔的檔案名稱。  
@@ -27,7 +25,7 @@ ms.locfileid: "49941382"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_sourceFileName (   
+HRESULT get_sourceFileName (   
    BSTR* pRetVal  
 );  
 ```  
@@ -42,5 +40,5 @@ HRESULT get_sourceFileName (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

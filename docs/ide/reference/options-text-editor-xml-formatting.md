@@ -1,20 +1,19 @@
 ---
 title: 選項、文字編輯器、XML、格式化
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Formatting
 ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0d8420df205d49df3c6799e62adbc4e759a4aed2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 8452410235226b3d7a1446d7a8c5a2ee709eff6e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826516"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943541"
 ---
 # <a name="options-text-editor-xml-formatting"></a>選項、文字編輯器、XML、格式化
 

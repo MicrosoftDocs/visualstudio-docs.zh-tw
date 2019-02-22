@@ -1,7 +1,6 @@
 ---
 title: 開啟檔案命令
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - file.openfile
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5ade09e52db37b64f2bbd36af6f7f9dd67f3c89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b76db52534f4c264e065152548d49f9773863a29
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902626"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937925"
 ---
 # <a name="open-file-command"></a>開啟檔案命令
 

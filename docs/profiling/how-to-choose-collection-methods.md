@@ -1,8 +1,6 @@
 ---
-title: 如何：選擇收集方法 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：選擇收集方法 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, choosing collection method
@@ -10,17 +8,17 @@ helpviewer_keywords:
 - performance collection methods
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54efd3d68e81908d3843525b588d9c28cc1be3ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43759d33c776e7ca4a6bdd8269df4bee0f882a53
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921284"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982932"
 ---
-# <a name="how-to-choose-collection-methods"></a>如何：選擇收集方法
+# <a name="how-to-choose-collection-methods"></a>HOW TO：選擇收集方法
 
 Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測和並行。 您也可以使用取樣或檢測方法來收集 .NET 記憶體配置和存留期資料。
 
@@ -32,7 +30,7 @@ Visual Studio 分析工具支援三種效能資料收集方法︰取樣、檢測
 
 - 在精靈的第一個頁面上，選取下列其中一個選項︰
 
-| 選項 | 描述 |
+| 選項 | 說明 |
 |----------------------------| - |
 | **CPU 取樣** | 收集對初始分析和 CPU 使用率問題分析有用的應用程式統計資料。 |
 | **檢測** | 收集對重點分析和輸入/輸出效能問題分析有用的詳細計時資料。 |

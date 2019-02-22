@@ -1,8 +1,6 @@
 ---
 title: 了解效能收集方法 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.methodpage
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - Profiling Tools, profiling methods
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d278f8ca6019dd8a29d5e4c57e1e191137a32972
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fb64e988f88546efafc26ffe8bcc39441e20cd4f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668370"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918611"
 ---
 # <a name="understand-performance-collection-methods"></a>了解效能收集方法
 
@@ -27,7 +25,7 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
 > [!NOTE]
 > Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
 
-|方法|描述|
+|方法|說明|
 |------------|-----------------|
 |[取樣](#sampling)|收集應用程式所執行的工作相關統計資料。|
 |[檢測](#instrumentation)|收集有關每個函式呼叫的詳細計時資訊。|

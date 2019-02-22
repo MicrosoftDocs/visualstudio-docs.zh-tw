@@ -2,7 +2,6 @@
 title: 檢查變數-[自動變數] 和 [區域變數] 視窗 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/18/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
@@ -13,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 584704471f9346611f240a3a24e0d45cf2eec364
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ec262838de1a154e35a13f0a1b14e7b075f934de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068350"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941979"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>檢查 [自動變數] 和 [區域變數] 視窗中的變數
 
-**自動變數**並**區域變數**在偵錯時，windows 會顯示變數的值。 在偵錯工作階段期間，才可以使用 windows。 **自動變數**視窗會顯示目前中斷點周圍使用的變數。 **區域變數**視窗會顯示在本機的範圍中，通常是目前函式或方法定義的變數。 如果這是您第一次您嘗試偵錯程式碼時，您可能想要讀取[修正 bug，藉由撰寫更好C#程式碼](../debugger/write-better-code-with-visual-studio.md)並[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)再通過這篇文章。
+**自動變數**並**區域變數**在偵錯時，windows 會顯示變數的值。 在偵錯工作階段期間，才可以使用 windows。 **自動變數**視窗會顯示目前中斷點周圍使用的變數。 **區域變數**視窗會顯示在本機的範圍中，通常是目前函式或方法定義的變數。 如果這是您嘗試偵錯程式碼的第一次，您可能想要閱讀[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)並[偵錯的技術和工具](../debugger/write-better-code-with-visual-studio.md)之前，先透過這篇文章。
 
  **自動變數**視窗可供C#，Visual Basic、 c + + 和 Python 程式碼，但不適用於 JavaScript 或F#。
   
@@ -40,7 +39,7 @@ ms.locfileid: "53068350"
 
 陣列和物件會顯示在**自動變數**並**區域變數**windows 以樹狀結構控制項。 選取的可展開檢視來顯示欄位和屬性的變數名稱左邊的箭號。 以下是範例<xref:System.IO.FileStream?displayProperty=fullName>中的物件**區域變數**視窗：
 
-![[區域變數] FileStream](../debugger/media/locals-filestream.png "區域變數 FileStream")
+![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
 
 中的紅色值**區域變數**或是**自動變數**視窗表示值已在上次評估以後。 變更可能是從先前的偵錯工作階段，或因為您已變更 視窗中的值。
 
@@ -90,7 +89,7 @@ ms.locfileid: "53068350"
 
    在該行設定中斷點`c = 3;`，並開始偵錯工具。 當執行暫停**自動變數**視窗會顯示：
 
-   ![[自動變數] CSharp](../debugger/media/autos-csharp.png "自動變數 CSharp")
+   ![Autos-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
 
    值`c`為 0，因為列`c = 3`尚未執行。
 
@@ -110,7 +109,7 @@ ms.locfileid: "53068350"
 
     在該行設定中斷點`e = 5;`並執行偵錯工具。 當執行停止時，**自動變數**視窗會顯示：
 
-    ![[自動變數] c + +](../debugger/media/autos-cplus.png "自動變數-c + +")
+    ![Autos-C++](../debugger/media/autos-cplus.png "Autos-C++")
 
     變數`e`未初始化，因為列`e = 5`尚未執行。
 
@@ -151,5 +150,5 @@ private static int subtractVars(int i, int j)
   
 ## <a name="see-also"></a>另請參閱  
  [什麼是偵錯？](../debugger/what-is-debugging.md)  
- [透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)  
+ [偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)  
  [第一次查看偵錯](../debugger/debugger-feature-tour.md)[偵錯工具視窗](../debugger/debugger-windows.md)

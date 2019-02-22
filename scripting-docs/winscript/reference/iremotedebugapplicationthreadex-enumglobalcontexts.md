@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThreadEx:EnumGlobalContexts |Microsoft 文件
+title: IRemoteDebugApplicationThreadEx:EnumGlobalContexts | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c57dc014e9f448e58db5fe6509536db5023b22dd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5112ea59584544669b995d20490a1f01fac971ed
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728888"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347940"
 ---
 # <a name="iremotedebugapplicationthreadexenumglobalcontexts"></a>IRemoteDebugApplicationThreadEx:EnumGlobalContexts
-列舉此執行緒中執行的所有語言通用的運算式內容。  
+列舉在此執行緒中執行的所有語言通用的運算式內容。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT EnumGlobalExpressionContexts(  
    IEnumDebugExpressionContexts**  ppEnum  
 );  
@@ -38,12 +38,12 @@ HRESULT EnumGlobalExpressionContexts(
   
 #### <a name="parameters"></a>參數  
  `ppEnum`  
- [out]列出在這個執行緒中執行的所有語言通用的運算式內容的列舉值。  
+ [out]列出在此執行緒中執行的所有語言通用的運算式內容的列舉值。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

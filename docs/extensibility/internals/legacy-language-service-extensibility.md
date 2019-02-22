@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2700cd4d-5f68-43fc-b62f-dc80c3f3aa85
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e5dbb6e5b592a166c5110623886534967613d95
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 691592ce59d4495af3b248dde4ebfc9af1665d55
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853498"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015026"
 ---
 # <a name="legacy-language-service-extensibility"></a>舊版語言服務的擴充性
 語言服務提供編輯原始程式碼，IDE 中的特定語言的支援。  

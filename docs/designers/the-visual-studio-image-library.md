@@ -1,8 +1,6 @@
 ---
 title: 影像庫
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: sample
 helpviewer_keywords:
 - animation [Visual Studio]
@@ -15,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f7a2e7c8-3b9f-4f8e-a6a8-000d72e3811d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d4a75c8ded0db82070d04745bcc10c4083c2073
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: aee70ea2c0463b56f7f82093087ec5a629aba53e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062843"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938939"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio 影像庫
 

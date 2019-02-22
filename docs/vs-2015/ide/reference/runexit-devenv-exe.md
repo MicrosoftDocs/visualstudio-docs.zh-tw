@@ -1,14 +1,9 @@
 ---
 title: -Runexit (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - runexit Devenv switch
 - Devenv, /runexit switch
@@ -17,13 +12,13 @@ ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86a99aed7876454d09e5bb0157f6dcaaa7fb4072
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a8d91975fb56a8fd731a5998137a739ee364edf1
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242253"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54793144"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,10 +34,10 @@ devenv /runexit {SolutionName|ProjectName}
   
 ## <a name="arguments"></a>引數  
  `SolutionName`  
- 必要。 方案檔的完整路徑和名稱。  
+ 必要項。 方案檔的完整路徑和名稱。  
   
  `ProjectName`  
- 必要。 專案檔的完整路徑和名稱。  
+ 必要項。 專案檔的完整路徑和名稱。  
   
 ## <a name="remarks"></a>備註  
  根據為使用中方案組態所指定的設定，編譯並執行指定的專案或方案。 這個參數在專案或解決方案執行時會將 IDE 最小化，並在專案或解決方案完成執行之後關閉 IDE。  
@@ -58,12 +53,9 @@ devenv /runexit {SolutionName|ProjectName}
 devenv /runexit "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)   
  [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

@@ -1,23 +1,21 @@
 ---
-title: 逐步解說： 遺漏的物件因端點著色而 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：遺漏的物件因端點著色而 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3ee92eb8418fce37182b78364d08c2570f32da9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e7986a05ed090141734948404cb8580633c50e74
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861562"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004353"
 ---
-# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>逐步解說：因端點著色而遺漏的物件
+# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>逐步解說：因頂點著色而遺漏的物件
 本逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷工具來調查因為端點著色器階段發生的錯誤而遺漏的物件。  
   
  本逐步解說將說明下列工作：  
@@ -108,7 +106,7 @@ ms.locfileid: "49861562"
    > [!TIP]
    >  如果您同時偵錯應用程式，您可以在這個位置上設定中斷點，當轉譯下一個畫面格時就會叫用該中斷點。 您可以接著檢查 `m_marbleConstantBufferData` 的成員，確認 `projection` 成員的值在填滿常數緩衝區時會設定為全部為零。  
   
-   您發現常數緩衝區是否填入其中的位置，而發現其值來自於變數之後`m_marbleConstantBufferData`下, 一步是找出從何處`m_marbleConstantBufferData.projection`成員設定為全部為零。 您可以使用 [尋找所有參考]  快速掃描變更 `m_marbleConstantBufferData.projection`值的程式碼。  
+   在您找到填入常數緩衝區的位置，並發現其值來自於變數 `m_marbleConstantBufferData` 之後，下一個步驟就是查明 `m_marbleConstantBufferData.projection` 成員設定為全部為零的位置。 您可以使用 [尋找所有參考]  快速掃描變更 `m_marbleConstantBufferData.projection`值的程式碼。  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>在應用程式原始程式碼中尋找設定 projection 成員的位置  
   

@@ -1,7 +1,6 @@
 ---
 title: CA1812:避免使用未執行個體化的內部類別
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1812
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1bb92a42-322a-44cc-98a8-8858212c1e1f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f69e3179ffc61faca2706436444a741a238aa73
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08d8b907e4a211b0735f07377c21dec1c0a982c9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836659"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950743"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812:避免使用未執行個體化的內部類別
 

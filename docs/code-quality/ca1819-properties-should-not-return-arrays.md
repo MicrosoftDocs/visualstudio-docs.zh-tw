@@ -1,7 +1,6 @@
 ---
 title: CA1819:屬性不應該傳回陣列
 ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 85fcf312-57f8-438a-8b10-34441fe0bdeb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6159d6b9a2d8d3dc02cd5f0690f3b1360b4461fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af31c925420602329eb20b803c92879210518ebd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949452"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919205"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819:屬性不應該傳回陣列
 

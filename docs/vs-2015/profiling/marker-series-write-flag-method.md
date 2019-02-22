@@ -1,14 +1,9 @@
 ---
 title: marker_series::write_flag 方法 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c8b578e3c0b8d2f2ccbf62d8745f0deb783e9217
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b44c7cf2d2eb0f538b3819265298f1ca4166e6be
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816655"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54834791"
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag 方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,8 +65,5 @@ void write_flag(
   
  **命名空間：** Concurrency::diagnostic  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [marker_series 類別](../profiling/marker-series-class.md)
-
-
-

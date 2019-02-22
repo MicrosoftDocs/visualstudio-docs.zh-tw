@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress |Microsoft Docs
+title: IDebugAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bc709ff7-4966-4f36-9af2-690efe2cea1d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf8c262aef3b562f43409f6d62fc533e4d6314ae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09c0ce6f8b641830b76fffd0d201b430ddf00b41
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933498"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962244"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 這個介面來表示項目的位址。 它會傳回符號處理常式。  

@@ -1,8 +1,6 @@
 ---
-title: 如何：建立類型之間的繼承 (類別設計工具)
+title: HOW TO：建立類型之間的繼承 (類別設計工具)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritanceline
@@ -12,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8151020294f4fd5574a1de886509c5b11f0a326
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 8060f17277a5e80a139ee8d6406fb40d0a84ec71
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956675"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915871"
 ---
-# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>如何：在類別設計工具中建立類型之間的繼承
+# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>HOW TO：在類別設計工具中建立類型之間的繼承
 
 若要使用 [類別設計工具] 在類別圖上建立兩個類型之間的繼承關係，請將基底類型連線至其衍生類型或其他類型。 您可以建立兩個類別之間的繼承關係、一個類別和一個介面之間的繼承關係，或兩個介面之間的繼承關係。
 
@@ -30,7 +28,7 @@ ms.locfileid: "33956675"
 
 1.  從 [方案總管] 的專案中開啟類別圖表 (.cd) 檔案。
 
-     如果您還沒有類別圖，請先建立類別圖。 請參閱[如何：將類別圖新增至專案](how-to-add-class-diagrams-to-projects.md)。
+     如果您還沒有類別圖，請先建立類別圖。 請參閱[如何：將類別圖表新增至專案](how-to-add-class-diagrams-to-projects.md)。
 
 2.  在 [工具箱] 的 [類別設計工具] 下，按一下 [繼承]。
 

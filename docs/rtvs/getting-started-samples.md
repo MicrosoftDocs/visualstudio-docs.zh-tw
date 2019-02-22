@@ -2,20 +2,18 @@
 title: 範例 R 專案
 description: 可讓您開始搭配使用 R 和 Visual Studio 的範例集合索引。
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: adb26b3cf6097d830c899ef4ef251d2066b81a38
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 82231756568c8b8139443a168ed22c28528c385c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235248"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920012"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Visual Studio R 工具範例專案
 
@@ -49,7 +47,7 @@ ms.locfileid: "36235248"
 
     ![範例基準測試繪圖](media/samples-mro-benchmark-plot.png)
 
-- `Bike_Rental_Estimation_with_MRS` 會建立單車出租的需求預測模型，這是使用 Microsoft Machine Learning Server，並以歷程記錄資料集為基礎。 
+- `Bike_Rental_Estimation_with_MRS` 會建立單車出租的需求預測模型，這是使用 Microsoft Machine Learning Server，並以歷程記錄資料集為基礎。
 
 - `Data_Exploration` 包含三個指令碼：
 
@@ -60,7 +58,7 @@ ms.locfileid: "36235248"
       ![Using ggplot2.R 範例的輸出](media/samples-3d-interactive.png)
 
 - `Datasets` 包含其他範例所使用的三個 *.csv* 檔案
-- `Flight_Delays_Prediction_with_R` 和 `Flight_Delays_Prediction_with_MRS` 示範如何使用 R、機器學習服務和歷史準點率和天候資料預測航班誤點。 
+- `Flight_Delays_Prediction_with_R` 和 `Flight_Delays_Prediction_with_MRS` 示範如何使用 R、機器學習服務和歷史準點率和天候資料預測航班誤點。
 - `Machine learning` 含有三個範例，學習預測航班延誤、住宅價格和自行車租金。 這些範例一起示範 R 和 Microsoft Machine Learning Server 的真實問題應用。 它們還要告訴您如何使用數個常用的機器學習模型，並使用 [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) 工作區將其部署為 Azure Web 服務。
 
 - `R_MRO_MRS_Comparison` 是六個部分的比較，顯示 R、Microsoft R Open 和 Microsoft Machine Learning Server 在命令、語法、建構和效能方面的相似性和差異。

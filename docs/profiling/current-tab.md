@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c7b1ae5-3756-4795-bc59-f6bb113f2ba5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04700ebac239be6c72038b30c67d66cfb0e3ec7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4303336fe12f817bdb2843d03f9e936a5b1736c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964730"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069143"
 ---
 # <a name="current-tab"></a>目前索引標籤
 按一下 [目前] 索引標籤，如果選取 CPU 執行緒區段，您可以查看時間軸中最接近目前選取點的呼叫堆疊 (如果有)。  此時，選取點會以黑色箭號或插入號顯示在時間軸上方。 選取封鎖的區段之後，因為沒有任何執行，所以不會顯示插入號。 不過，仍然會反白顯示區段，而且會顯示呼叫堆疊。  

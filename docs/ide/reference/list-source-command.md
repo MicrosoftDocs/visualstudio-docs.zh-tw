@@ -1,7 +1,6 @@
 ---
 title: 列出原始碼命令
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Debug.ListSource
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a94af10921c80b87b7d53f0f587aaf9ca55b22
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dcecdaa206964e6c8a5aebcadc958fe2c1ee1e5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850351"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953187"
 ---
 # <a name="list-source-command"></a>列出原始碼命令
 顯示指定的原始程式碼程式行。

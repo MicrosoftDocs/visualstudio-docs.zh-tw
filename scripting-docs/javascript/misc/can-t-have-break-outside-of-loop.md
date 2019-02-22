@@ -20,17 +20,17 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce142e07a47b73778ebae6b26452806b3a036d41
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 53f32da997b775e01959df5abc7e72fb55c1b194
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802400"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345041"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>迴圈外不可以有 'break'
 您嘗試使用**中斷**迴圈外的關鍵字。 **中斷**關鍵字用來終止迴圈或`switch`陳述式。 它必須在迴圈的主體中內嵌或`switch`陳述式。 不過，**標籤**可以依照 break 關鍵字。  
   
-```  
+```js
 break labelname;  
 ```  
   

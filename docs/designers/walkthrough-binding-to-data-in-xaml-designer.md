@@ -1,7 +1,6 @@
 ---
 title: 在 XAML 設計工具中繫結至資料
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
@@ -10,15 +9,15 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f0d9ccd32c8f616e6f998bcd1f31773460c89a20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866120"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957594"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>逐步解說：在 XAML 設計工具中繫結至資料
 

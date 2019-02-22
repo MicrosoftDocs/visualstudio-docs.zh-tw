@@ -1,7 +1,6 @@
 ---
 title: 用法警告
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.usagerules
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b5f2e57b6fa27f314394552d72844cd9b8e189
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b8f2deaa728a2bcd71bcd2264fcd110aee7982e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869082"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945764"
 ---
 # <a name="usage-warnings"></a>用法警告
 用法警告支援.NET Framework 的正確用法。

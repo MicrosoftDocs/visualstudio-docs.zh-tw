@@ -1,20 +1,19 @@
 ---
 title: 適用於 Managed 程式碼的基本設計方針規則規則集
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 54169ea373c87e731410492954773dcc575e20c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844896"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913846"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本設計方針規則規則集
 您可以使用 Microsoft 基本設計方針規則規則集將焦點放在讓您更輕鬆地了解和使用程式碼。 您應該包含這個規則集，如果您的專案包含程式庫程式碼，或如果您想要強制執行容易維護的程式碼的最佳作法。
@@ -89,7 +88,7 @@ ms.locfileid: "53844896"
 |[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|必須正確測試 NaN|
 |[CA1000](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|不要在泛型類型上宣告靜態成員|
 |[CA1002](../code-quality/ca1002-do-not-expose-generic-lists.md)|不要公開泛型清單|
-|[CA1003 必須](../code-quality/ca1003-use-generic-event-handler-instances.md)|使用一般事件處理常式執行個體|
+|[CA1003](../code-quality/ca1003-use-generic-event-handler-instances.md)|使用一般事件處理常式執行個體|
 |[CA1004](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|泛型方法應該提供類型參數|
 |[CA1005](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)|避免在泛型類型上包含過多參數|
 |[CA1006](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)|不要在成員簽章中將泛型類型巢狀化|
@@ -102,23 +101,23 @@ ms.locfileid: "53844896"
 |[CA1014](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)|組件必須標記 CLSCompliantAttribute|
 |[CA1017](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)|組件必須標記 ComVisibleAttribute|
 |[CA1018](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)|必須以 AttributeUsageAttribute 標記屬性|
-|[CA1019 必須](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)|定義屬性引數的存取子|
+|[CA1019](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)|定義屬性引數的存取子|
 |[CA1023](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)|不應該使用多維索引子|
 |[CA1024](../code-quality/ca1024-use-properties-where-appropriate.md)|建議在適當時使用屬性|
-|[CA1025 必須](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)|以參數陣列取代重複的引數|
+|[CA1025](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)|以參數陣列取代重複的引數|
 |[CA1026](../code-quality/ca1026-default-parameters-should-not-be-used.md)|不應該使用預設參數|
 |[CA1027](../code-quality/ca1027-mark-enums-with-flagsattribute.md)|必須以 FlagsAttribute 標記列舉|
 |[CA1028](../code-quality/ca1028-enum-storage-should-be-int32.md)|列舉儲存區應該是 Int32|
 |[CA1030](../code-quality/ca1030-use-events-where-appropriate.md)|建議在適當時使用事件|
 |[CA1031](../code-quality/ca1031-do-not-catch-general-exception-types.md)|不要攔截一般例外狀況類型|
-|[CA1032 必須](../code-quality/ca1032-implement-standard-exception-constructors.md)|必須實作標準例外狀況建構函式|
+|[CA1032](../code-quality/ca1032-implement-standard-exception-constructors.md)|必須實作標準例外狀況建構函式|
 |[CA1034](../code-quality/ca1034-nested-types-should-not-be-visible.md)|巢狀類型不應該為可見的|
 |[CA1035](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)|ICollection 的實作有強類型成員|
-|[CA1036 必須](../code-quality/ca1036-override-methods-on-comparable-types.md)|必須在 Comparable 類型中覆寫方法|
+|[CA1036](../code-quality/ca1036-override-methods-on-comparable-types.md)|必須在 Comparable 類型中覆寫方法|
 |[CA1038](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)|列舉程式應該是強類型|
 |[CA1039](../code-quality/ca1039-lists-are-strongly-typed.md)|清單為強類型|
 |[CA1041](../code-quality/ca1041-provide-obsoleteattribute-message.md)|必須提供 ObsoleteAttribute 訊息|
-|[CA1043 必須](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)|必須針對索引子使用整數或字串引數|
+|[CA1043](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)|必須針對索引子使用整數或字串引數|
 |[CA1044](../code-quality/ca1044-properties-should-not-be-write-only.md)|屬性不應該為唯寫的|
 |[CA1046](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)|不要多載參考類型上的等號比較運算子|
 |[CA1047](../code-quality/ca1047-do-not-declare-protected-members-in-sealed-types.md)|不要在密封類型中宣告 protected 成員|
@@ -138,8 +137,8 @@ ms.locfileid: "53844896"
 |[CA1502](../code-quality/ca1502-avoid-excessive-complexity.md)|避免造成過度複雜的方法|
 |[CA1708](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)|識別項名稱不應該只靠大小寫區別|
 |[CA1716](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|識別項名稱不應該和關鍵字相符|
-|[CA1801 必須](../code-quality/ca1801-review-unused-parameters.md)|必須檢閱未使用的參數|
-|[CA1804 必須](../code-quality/ca1804-remove-unused-locals.md)|必須移除未使用的區域變數|
+|[CA1801](../code-quality/ca1801-review-unused-parameters.md)|必須檢閱未使用的參數|
+|[CA1804](../code-quality/ca1804-remove-unused-locals.md)|必須移除未使用的區域變數|
 |[CA1809](../code-quality/ca1809-avoid-excessive-locals.md)|避免在方法中包含過多區域變數|
 |[CA1810](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)|必須將參考類型內部的靜態欄位初始化|
 |[CA1811](../code-quality/ca1811-avoid-uncalled-private-code.md)|避免使用未呼叫的私用程式碼|
@@ -148,13 +147,13 @@ ms.locfileid: "53844896"
 |[CA1814](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md)|建議使用不規則陣列取代多維陣列|
 |[CA1815](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)|必須覆寫實值類型上的 Equals 方法和等號比較運算子|
 |[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|屬性不應該傳回陣列|
-|[CA1820 應該](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|應該使用字串長度測試空白字串|
+|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|應該使用字串長度測試空白字串|
 |[CA1822](../code-quality/ca1822-mark-members-as-static.md)|將成員標記為 static|
 |[CA1823](../code-quality/ca1823-avoid-unused-private-fields.md)|避免包含未使用的私用欄位|
 |[CA2201](../code-quality/ca2201-do-not-raise-reserved-exception-types.md)|不要引發保留的例外狀況類型|
-|[CA2205 必須](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|必須使用 Win32 API 的受控對應項|
+|[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|必須使用 Win32 API 的受控對應項|
 |[CA2208](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|必須正確執行個體化引數例外狀況|
-|[CA2211 非常數](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|非常數欄位不應該為可見的|
+|[CA2211](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|非常數欄位不應該為可見的|
 |[CA2217](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)|不要以 FlagsAttribute 標記列舉|
 |[CA2219](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)|不要在 exception 子句中引發例外狀況|
 |[CA2221](../code-quality/ca2221-finalizers-should-be-protected.md)|Finalizer 方法應該為 protected|
@@ -164,6 +163,6 @@ ms.locfileid: "53844896"
 |[CA2225](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|運算子多載必須有具名的替代方法|
 |[CA2226](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|運算子應該有對稱的多載|
 |[CA2227](../code-quality/ca2227-collection-properties-should-be-read-only.md)|集合屬性應該為唯讀|
-|[CA2230 必須](../code-quality/ca2230-use-params-for-variable-arguments.md)|必須使用 params 作為變數引數|
-|[CA2234 必須](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|必須傳遞 System.Uri 物件而非字串|
-|[CA2239 必須](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|必須為選擇性欄位提供還原序列化方法|
+|[CA2230](../code-quality/ca2230-use-params-for-variable-arguments.md)|必須使用 params 作為變數引數|
+|[CA2234](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|必須傳遞 System.Uri 物件而非字串|
+|[CA2239](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|必須為選擇性欄位提供還原序列化方法|

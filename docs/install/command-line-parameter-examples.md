@@ -1,22 +1,21 @@
 ---
 title: 適用於安裝的命令列參數範例
 description: 自訂這些範例來建立您自己的 Visual Studio 命令列安裝。
-ms.date: 11/14/2018
+ms.date: 01/16/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6584d1b1864712a1c97b8d2405e7b366c5dd69d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 042ec56cd7d94556f1bd3c64e1746e7cd4899c7b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989983"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908591"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Visual Studio 2017 安裝的命令列參數範例
 
@@ -28,7 +27,9 @@ ms.locfileid: "53989983"
 > 所有命令都需要提升系統管理權限，如果未從已提升權限的提示字元啟動程序，則會顯示 [使用者帳戶控制] 提示。
 >
 > [!NOTE]
->  您可以在命令列結尾處使用 `^` 字元，將多行串連成單一命令。 或者，您也可以直接將這幾行放到一列。 在 PowerShell 中，對等項目為倒引號 (`` ` ``) 字元。
+> 您可以在命令列結尾處使用 `^` 字元，將多行串連成單一命令。 或者，您也可以直接將這幾行放到一列。 在 PowerShell 中，對等項目為倒引號 (`` ` ``) 字元。
+
+如需您可以使用命令列安裝的工作負載和元件的清單，請參閱 [Visual Studio 工作負載和元件識別碼](workload-and-component-ids.md)頁面。
 
 ## <a name="using---installpath"></a>使用 --installPath
 
@@ -83,13 +84,15 @@ ms.locfileid: "53989983"
    --includeRecommended
   ```
 
-## <a name="using---includerecommended"></a>使用 --includeRecommended
+## <a name="using---all"></a>使用 --all
 
 * 啟動 Visual Studio 2017 Enterprise 版中可用之所有工作負載和元件的互動式安裝：
 
   ```cmd
-  vs_enterprise.exe --all --includeRecommended --includeOptional
+  vs_enterprise.exe --all
   ```
+
+## <a name="using---includerecommended"></a>使用 --includeRecommended
 
 * 在已安裝 Visual Studio 2017 Community 版的電腦上安裝第二個名為 Visual Studio 2017 Professional 的執行個體，並提供 Node.js 開發的支援：
 
@@ -169,3 +172,4 @@ vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 * [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [建立 Visual Studio 2017 的離線安裝](create-an-offline-installation-of-visual-studio.md)
+* [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetDebugProperty |Microsoft Docs
+title: IDebugStackFrame2::GetDebugProperty | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 02c2fa04-1424-4bca-9936-feaecd2afab6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6e7c6f8dc1136b5c28228031e69319116abd82f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 256791c0bcab15522b81ba3231eaab8b9a2fbc2d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872342"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020551"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
 取得堆疊框架的屬性的描述。  

@@ -2,7 +2,6 @@
 title: 使用傾印檔案偵錯工具 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/05/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.crashdump
@@ -20,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e30f9d29ba3c922d70c8acdf7d4db5d8a1670fd
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0adb7e86f2b14dd25fa333fe54cc5121bbc8c1f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066950"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012491"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中的傾印檔案
 

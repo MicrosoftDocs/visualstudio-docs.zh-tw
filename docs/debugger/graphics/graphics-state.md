@@ -1,23 +1,21 @@
 ---
-title: 圖形狀態 |Microsoft 文件
-ms.custom: ''
+title: 圖形狀態 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
 ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b45e5d922a5f2ed5a2ba15086c708c734d25e95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1bc075aa45482875f57fd2d2329f1cc5c034705b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476376"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007124"
 ---
 # <a name="graphics-state"></a>圖形狀態
 Visual Studio 圖形診斷中的 [狀態] 視窗可協助您了解在目前事件時作用的圖形狀態 (例如繪製呼叫)。  
@@ -28,7 +26,7 @@ Visual Studio 圖形診斷中的 [狀態] 視窗可協助您了解在目前事�
 ### <a name="state-views"></a>狀態檢視  
  您可以使用數種不同的方式來檢視狀態資料表：  
   
-|檢視|描述|  
+|檢視|說明|  
 |----------|-----------------|  
 |API 輸入狀態檢視|此檢視會以構成狀態之 Direct3D 物件的類似版面配置來顯示狀態。|  
 |邏輯輸入狀態檢視|此檢視會以邏輯檢視來顯示狀態，而邏輯檢視不會鏡像構成狀態之 Direct3D 物件的版面配置。|  
@@ -38,21 +36,21 @@ Visual Studio 圖形診斷中的 [狀態] 視窗可協助您了解在目前事�
   
 -   在 [狀態] 視窗左上方的標題列正下方，選擇對應至您要使用之狀態檢視樣式的按鈕。  
   
-    -   **顯示 API 輸入的狀態檢視**  
+    -   **顯示 API 輸入狀態檢視**  
   
     -   **顯示邏輯狀態檢視**  
   
     -   **顯示釘選的狀態檢視**  
   
 > [!IMPORTANT]
->  您必須將釘選狀態**顯示 API 輸入狀態**或**顯示邏輯狀態**才會顯示在檢視**顯示釘選狀態檢視**。  
+>  您必須在 [顯示 API 輸入狀態] 或 [顯示邏輯狀態] 檢視中釘選狀態，它才會顯示在 [顯示釘選的狀態檢視] 中。  
   
 ### <a name="state-table-format"></a>狀態資料表格式  
  [狀態] 視窗會呈現數個資料行的資訊。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
-|名稱|狀態項目的名稱。 如果此項目代表狀態的組合，則可以展開項目予以顯示。<br /><br /> 在**API 輸入狀態檢視**和**邏輯狀態檢視**狀態，以顯示狀態之間的階層式關聯性會縮排名稱。<br /><br /> 在**釘選狀態檢視**狀態時，完整名稱會顯示在一般清單。|  
+|名稱|狀態項目的名稱。 如果此項目代表狀態的組合，則可以展開項目予以顯示。<br /><br /> 在 [API 輸入狀態檢視] 和 [邏輯狀態檢視] 狀態中，會縮排名稱，以顯示狀態之間的階層式關聯性。<br /><br /> 在 [釘選的狀態檢視] 狀態中，會在簡單列表顯示完整名稱。|  
 |值|狀態項目的值。|  
 |類型|狀態項目的類型。|  
   

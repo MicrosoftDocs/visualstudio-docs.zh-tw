@@ -1,24 +1,23 @@
 ---
 title: 在 XML 結構描述總管中的操作功能表
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38dea96b109db9d60014df9bf7d4d420308f195
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e1bc769b27ee9dcc22cfa822eb488b0f0ea9f15
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898891"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910543"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>操作功能表 （XML 結構描述總管）
 
-下列操作功能表項目用於執行結構描述特定搜尋和其他作業。
+內容功能表會出現的項目上按一下滑鼠右鍵功能表。 下列操作功能表項目用於執行結構描述特定搜尋和其他作業。
 
 ## <a name="node-type-schema-set"></a>節點型別：結構描述集合
 

@@ -1,14 +1,9 @@
 ---
 title: 檔案中尋找 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
 - vs.findinfiles
@@ -25,18 +20,18 @@ ms.assetid: 989e0737-46d7-4474-8453-fad52a74669d
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4529b44014b209bdef1fc919ac413b61d77407c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 430f2a55f180428c781e7a8cbe1f78d3a0355128
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902135"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804355"
 ---
 # <a name="find-in-files"></a>檔案中尋找
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-檔案 * * 中的尋找可讓您搜尋一組指定的檔案。 在 [結果選項] 內選取的 [尋找結果] 視窗中，會列出找到的相符項目與所採取的動作。  
+[檔案中尋找]** 可讓您搜尋一組指定的檔案。 在 [結果選項] 內選取的 [尋找結果] 視窗中，會列出找到的相符項目與所採取的動作。  
   
  您可以使用下列任何方法，以在 [尋找和取代] 視窗中顯示 [檔案中尋找]。  
   
@@ -98,10 +93,7 @@ ms.locfileid: "49902135"
  附加結果  
  將此搜尋結果附加到上一個搜尋結果。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [尋找和取代文字](../ide/finding-and-replacing-text.md)   
  [檔案中取代](../ide/replace-in-files.md)   
  [Visual Studio 命令](../ide/reference/visual-studio-commands.md)
-
-
-

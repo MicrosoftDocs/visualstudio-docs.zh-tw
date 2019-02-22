@@ -2,7 +2,6 @@
 title: 使用偵錯工具管理例外狀況 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/09/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
@@ -31,21 +30,21 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c4694ec66c9769f9433c08e74e4d0a14a952c2
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: b6a43e42f68b93c358ed5808a6cffc9570fcbef9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561521"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918105"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>使用 Visual Studio 中偵錯工具管理例外狀況
 
-例外狀況是程式執行時發生之錯誤狀態的指示。 哪些例外狀況或中斷，例外狀況的集合，您可以告知偵錯工具，此時您想要中斷偵錯工具。 當偵錯工具中斷時，它會顯示您已在擲回例外狀況。 您也可以新增或刪除的例外狀況。 使用 Visual Studio 中開啟的方案，使用**偵錯 > Windows > 例外狀況設定**來開啟**例外狀況設定**視窗。
+例外狀況是程式執行時發生之錯誤狀態的指示。 哪些例外狀況或中斷，例外狀況的集合，您可以告知偵錯工具和您想在此時偵錯工具中斷 （亦即，在偵錯工具中暫停）。 當偵錯工具中斷時，它會顯示您已在擲回例外狀況。 您也可以新增或刪除的例外狀況。 使用 Visual Studio 中開啟的方案，使用**偵錯 > Windows > 例外狀況設定**來開啟**例外狀況設定**視窗。
 
-提供回應最重要的例外狀況的處理常式。 也了解如何設定偵錯工具一定中斷執行，某些例外狀況。
+提供回應最重要的例外狀況的處理常式。 如果您需要了解如何新增例外狀況處理常式，請參閱[修正 bug，藉由撰寫更好C#程式碼](../debugger/write-better-code-with-visual-studio.md)。 此外，了解如何設定偵錯工具一定中斷執行，某些例外狀況。
 
 發生例外狀況時，偵錯工具都會將例外狀況訊息寫入至 [輸出] 視窗。 它可能會中斷執行，在下列情況下，當：
 
@@ -217,7 +216,7 @@ public class GenericException<T> : Exception
 
    ![例外狀況的額外條件](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. 每個條件列，請輸入名稱的模組，並變更比較運算子清單，來**Equals**或是**Not Equals**。 您可以指定萬用字元 (* *\\* * *) 指定多個模組的名稱。
+3. 每個條件列，請輸入名稱的模組，並變更比較運算子清單，來**Equals**或是**Not Equals**。 您可以指定萬用字元 (**\\\***) 指定多個模組的名稱。
 
 4. 如果您要刪除條件，請選擇**X**條件列的結尾。
 

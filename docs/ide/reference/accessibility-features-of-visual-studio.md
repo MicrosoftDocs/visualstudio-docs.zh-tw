@@ -2,8 +2,6 @@
 title: Visual Studio 的協助工具功能
 description: 深入了解協助工具功能，並利用該功能協助讓 Windows 作業系統和 Visual Studio 開發人員套件更便於每個人存取，包括行動不便的人士。
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -11,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348717"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318585"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的協助工具功能
 
 > [!TIP]
-> 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
+> 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
 
 除了 Windows 中的協助工具功能和公用程式之外，下列功能可讓行動不便者更方便存取 Visual Studio：
 
@@ -54,7 +52,7 @@ ms.locfileid: "51348717"
 
 -   [協助工具祕訣和訣竅](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [如何：變更字型和色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [如何：變更字型與色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>另請參閱
 

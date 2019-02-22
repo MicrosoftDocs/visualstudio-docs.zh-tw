@@ -2,21 +2,20 @@
 title: 工作流程設計工具-時活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.While.UI
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c75ce30ba231efa9084ce6ec733f08c5b86aa861
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d9ea1f6bd42526eb0ea38c23cbf0f28c4346515
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987754"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953242"
 ---
 # <a name="while-activity-designer"></a>While 活動設計工具
 

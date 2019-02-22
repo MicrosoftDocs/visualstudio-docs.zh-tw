@@ -1,8 +1,6 @@
 ---
-title: 逐步解說：以使用時產生功能進行測試優先開發
+title: 逐步解說：以 [使用時產生] 功能進行測試優先開發
 ms.date: 10/09/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 dev_langs:
 - VB
 - CSharp
@@ -12,17 +10,17 @@ helpviewer_keywords:
 - Test-First Development
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c500f7a245ffd3a0dec175dd5f016cf1b2596fa4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c92ae058caa140f036ac8828899620bcc8d426ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821483"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943034"
 ---
-# <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>逐步解說：以使用時產生功能進行測試優先開發
+# <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>逐步解說：以 [使用時產生] 功能進行測試優先開發
 
 本主題示範如何使用支援「測試優先」開發的[使用時產生](../ide/visual-csharp-intellisense.md#generate-from-usage)功能。
 
@@ -65,7 +63,7 @@ ms.locfileid: "49821483"
    > [!NOTE]
    >  IntelliSense 提供兩種完成 IntelliSense 陳述式的方式： *完成模式* (completion mode) 和 *建議模式*(suggestion mode)。 當類別和成員在使用前即已定義的情況下，請使用建議模式。 當 [IntelliSense] 視窗開啟時，您可以按 **Ctrl**+**Alt**+**空格鍵** 切換完成模式和建議模式。 如需詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。 當您在下個步驟輸入 `Automobile` 時，建議模式非常有幫助。
 
-3. 找到 `TestMethod1()` 方法並將它重新命名為 `DefaultAutomobileIsInitializedCorrectly()`。 在這個方法內，建立名為 `Automobile` 的類別新執行個體，如下列螢幕擷取畫面所示。 波浪底線隨即出現，這表示發生編譯時期錯誤，如果滑鼠停留在上面，[快速動作](../ide/quick-actions.md)燈泡會出現在左邊界 (僅限 C#) 或波浪線正下方。
+3. 找到 `TestMethod1()` 方法並將它重新命名為 `DefaultAutomobileIsInitializedCorrectly()`。 在這個方法內，建立名為 `Automobile` 的類別新執行個體，如下列螢幕擷取畫面所示。 波浪底線隨即出現，這表示發生編譯時期錯誤，如果滑鼠停留在上面，[快速動作](../ide/quick-actions.md)錯誤燈泡會出現在左邊界或波浪線正下方。
 
     ![Visual Basic 中的快速動作](../ide/media/genclass_underlinevb.png)
 
@@ -91,7 +89,7 @@ ms.locfileid: "49821483"
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. 因為程式碼參考 `Automobile` 上兩個未定義的屬性，所以 `Model` 和 `TopSpeed` 下會顯示波浪線。 將滑鼠停留在 `Model` 上並選擇 [快速動作] 燈泡，然後選擇 [產生屬性 'Automobile.Model']。
+2. 因為程式碼參考 `Automobile` 上兩個未定義的屬性，所以 `Model` 和 `TopSpeed` 下會顯示波浪線。 將滑鼠停留在 `Model` 上並選擇 [快速動作] 錯誤燈泡，然後選擇 [產生屬性 'Automobile.Model']。
 
 3. 以同樣方式產生 `TopSpeed` 屬性的屬性 Stub。
 
@@ -105,12 +103,12 @@ ms.locfileid: "49821483"
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2.  按一下紅色波浪線下的 [快速動作] 燈泡，然後按一下 [在 'Automobile' 中產生建構函式]。
+2.  按一下紅色波浪線下的 [快速動作] 錯誤燈泡，然後按一下 [在 'Automobile' 中產生建構函式]。
 
      請注意，在 `Automobile` 類別檔案中，新的建構函式已檢查建構函式呼叫中所使用的區域變數名稱，找到 `Automobile` 類別中具有相同名稱的屬性，並提供建構函式主體的程式碼將引數值儲存在 `Model` 和 `TopSpeed` 屬性中。
 
 
-3.  產生新的建構函式後， `DefaultAutomobileIsInitializedCorrectly`的預設建構函式呼叫下會出現波浪底線。 錯誤訊息指出 `Automobile` 類別沒有任何建構函式採用零引數。 若要產生沒有任何參數的明確預設建構函式，請按一下 [快速動作] 燈泡，然後按一下 [在 'Automobile' 中產生建構函式]。
+3.  產生新的建構函式後， `DefaultAutomobileIsInitializedCorrectly`的預設建構函式呼叫下會出現波浪底線。 錯誤訊息指出 `Automobile` 類別沒有任何建構函式採用零引數。 若要產生沒有任何參數的明確預設建構函式，請按一下 [快速動作] 錯誤燈泡，然後按一下 [在 'Automobile' 中產生建構函式]。
 
 ### <a name="generate-a-stub-for-a-method"></a>產生方法的虛設常式
 假設規格規定，如果其 `Model` 和 `TopSpeed` 屬性設為預設值以外的值，新的 `Automobile` 就可以放入 `IsRunning` 狀態。
@@ -120,7 +118,7 @@ ms.locfileid: "49821483"
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2.  按一下 `myAuto.Start` 方法呼叫的 [快速動作] 燈泡，然後按一下 [產生方法 'Automobile.Start']。
+2.  按一下 `myAuto.Start` 方法呼叫的 [快速動作] 錯誤燈泡，然後按一下 [產生方法 'Automobile.Start']。
 
 3.  按一下 `IsRunning` 屬性的 [快速動作] 燈泡，然後按一下 [產生屬性 'Automobile.IsRunning']。
 

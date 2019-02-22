@@ -8,16 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Domain-Specific Language Explorer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f3b9df35c4dd69b52c6c4562f3e634dd9a2bdb56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 781e1cce1d363ade1d236c8e17f9c3feeb4b0f5c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986813"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913282"
 ---
 # <a name="customizing-the-model-explorer"></a>自訂模型總管
 您可以針對您的特定領域語言設計工具中，如下所示變更的外觀和行為的 [總管] 中：

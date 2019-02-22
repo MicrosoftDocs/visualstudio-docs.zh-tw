@@ -3,17 +3,17 @@ layout: LandingPage
 title: 在 Visual Studio 中建立 JavaScript 應用程式 | Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 建立應用程式。
 ms.topic: landing-page
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-windows
 ms.technology: vs-ide-nodejs
 ms.author: mikejo
 author: mikejo5000
-manager: douge
-ms.openlocfilehash: bc71a896022ea57a3867143ceb0a0d9e96b83149
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+manager: jillfra
+ms.openlocfilehash: c6987cfe4934933bc85680d7ae4d3b3cda8fa060
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243926"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920854"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio 中的 JavaScript
 

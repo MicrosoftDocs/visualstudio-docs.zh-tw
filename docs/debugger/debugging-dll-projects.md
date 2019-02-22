@@ -1,8 +1,6 @@
 ---
 title: 偵錯 DLL 專案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/06/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 433cab30-d191-460b-96f7-90d2530ca243
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: 4606eebe6ef2505143e329242e1f9b17cc227365
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561690"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008994"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>偵錯在 Visual Studio 中的 Dll (C#，c + +、 Visual Basic 中， F#)
 

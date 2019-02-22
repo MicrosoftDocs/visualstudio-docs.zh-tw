@@ -153,7 +153,7 @@ items:
   - name: Visual Basic
     href: get-started/visual-basic/
   - name: C++
-    href: /cpp/get-started/tutorials/
+    href: /cpp/get-started/
   - name: Python
     href: python/
   - name: Node.js
@@ -230,6 +230,8 @@ items:
           href: ide/how-to-update-existing-templates.md
         - name: 替代範本中的參數
           href: ide/how-to-substitute-parameters-in-a-template.md
+        - name: 範本參數
+          href: ide/template-parameters.md
       - name: 64 位元支援
         href: ide/visual-studio-ide-64-bit-support.md
     - name: 不使用專案或解決方案 ([開啟資料夾]) 進行開發
@@ -320,6 +322,10 @@ items:
           items:
           - name: 變更方法簽章
             href: ide/reference/change-method-signature.md
+          - name: 將匿名型別轉換為類別
+            href: ide/reference/convert-anonymous-type-to-class.md
+          - name: 將匿名型別轉換為元組
+            href: ide/reference/convert-anonymous-type-to-tuple.md
           - name: For 迴圈與 foreach 陳述式之間的轉換
             href: ide/reference/convert-for-loop-to-foreach.md
           - name: Get 方法與屬性之間的轉換
@@ -338,6 +344,8 @@ items:
             href: ide/reference/move-declaration-near-reference.md
           - name: 將類型移至相符的檔案
             href: ide/reference/move-type-to-matching-file.md
+          - name: 成員上移
+            href: ide/reference/pull-members-up.md
           - name: 移除執行不到的程式碼
             href: ide/reference/remove-unreachable-code.md
           - name: 重新命名
@@ -346,6 +354,8 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: 使用明確類型
             href: ide/reference/convert-var-to-explicit-type.md
+          - name: 使參數換行、縮排及對齊
+            href: ide/reference/wrap-align-indent-parameters.md
         - name: 逐步解說：使用時產生程式碼
           href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
       - name: 生產力祕訣
@@ -506,6 +516,11 @@ items:
       href: vsto/office-and-sharepoint-development-in-visual-studio.md
     - name: 使用 XML 與 XSLT 檔案
       href: xml-tools/xml-tools-in-visual-studio.md
+    - name: 開發國際化應用程式
+      href: ide/globalizing-and-localizing-applications.md
+      items:
+      - name: 雙向語言
+        href: ide/creating-applications-in-bi-directional-languages.md
     - name: 其他教學課程
       items:
       - name: 使用 C# 或 Visual Basic 建立 WPF 應用程式
@@ -694,35 +709,8 @@ items:
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
     - name: 用於設計無障礙應用程式的資源
       href: ide/reference/resources-for-designing-accessible-applications.md
-  - name: 全球化和當地語系化應用程式
-    href: ide/globalizing-and-localizing-applications.md
-    items:
-    - name: 國際化 .NET Framework 應用程式簡介
-      href: ide/introduction-to-international-applications-based-on-the-dotnet-framework.md
-    - name: 將應用程式當地語系化
-      href: ide/localizing-applications.md
-      items:
-      - name: 階層式組織當地語系化的資源
-        href: ide/hierarchical-organization-of-resources-for-localization.md
-      - name: 安全性和當地語系化附屬組件
-        href: ide/security-and-localized-satellite-assemblies.md
-      - name: 主要和當地語系化附屬組件的版本號碼
-        href: ide/version-numbers-for-main-and-localized-satellite-assemblies.md
-      - name: 當地語系化的中性資源語言
-        href: ide/neutral-resources-languages-for-localization.md
-    - name: 將應用程式全球化
-      href: ide/globalizing-applications.md
-      items:
-      - name: 全域 Windows Form 和 Web Form 的文化特性特定類別
-        href: ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md
-    - name: 以雙向語言建立應用程式
-      href: ide/creating-applications-in-bi-directional-languages.md
 - name: 參考資料
   items:
-  - name: 專案與項目範本
-    items:
-    - name: 範本參數
-      href: ide/template-parameters.md
   - name: 一般使用者介面項目
     items:
     - name: 呼叫階層
@@ -820,12 +808,34 @@ items:
           href: ide/reference/options-text-editor-csharp-advanced.md
         - name: 文字編輯器 - IntelliSense、C#
           href: ide/reference/options-text-editor-csharp-intellisense.md
+        - name: 文字編輯器 - F#、進階
+          href: ide/reference/options-text-editor-fsharp-advanced.md
+        - name: 文字編輯器 - F#、程式碼修正
+          href: ide/reference/options-text-editor-fsharp-code-fixes.md
+        - name: 文字編輯器 - F#、CodeLens
+          href: ide/reference/options-text-editor-fsharp-codelens.md
+        - name: 文字編輯器 - F#、IntelliSense
+          href: ide/reference/options-text-editor-fsharp-intellisense.md
+        - name: 文字編輯器 - HTML (Web Forms)、格式
+          href: ide/reference/options-text-editor-html-formatting.md
+        - name: 文字編輯器 - HTML (Web Forms)、雜項
+          href: ide/reference/options-text-editor-html-miscellaneous.md
+        - name: 文字編輯器 - HTML (Web Forms)、驗證
+          href: ide/reference/options-text-editor-html-validation.md
         - name: 文字編輯器 - JavaScript、程式碼驗證
           href: ide/reference/options-text-editor-javascript-code-validation.md
         - name: 文字編輯器 - 格式、JavaScript
           href: ide/reference/options-text-editor-javascript-formatting.md
         - name: 文字編輯器 - IntelliSense、JavaScript
           href: ide/reference/options-text-editor-javascript-intellisense.md
+        - name: 文字編輯器 - JavaScript、Linting
+          href: ide/reference/options-text-editor-javascript-linting.md
+        - name: 文字編輯器 - JavaScript、專案
+          href: ide/reference/options-text-editor-javascript-project.md
+        - name: 文字編輯器 - U-SQL、格式設定
+          href: ide/reference/options-text-editor-usql-formatting.md
+        - name: 文字編輯器 - U-SQL、IntelliSense
+          href: ide/reference/options-text-editor-usql-intellisense.md
         - name: 文字編輯器 - 格式、XAML
           href: ide/reference/options-text-editor-xaml-formatting.md
         - name: 文字編輯器 - XAML、雜項
@@ -935,7 +945,7 @@ items:
       href: ide/reference/debugexe-devenv-exe.md
     - name: -Deploy (devenv.exe)
       href: ide/reference/deploy-devenv-exe.md
-    - name: -Diff
+    - name: -Diff (devenv.exe)
       href: ide/reference/diff.md
     - name: -Edit (devenv.exe)
       href: ide/reference/edit-devenv-exe.md
@@ -943,6 +953,8 @@ items:
       href: ide/reference/lcid-devenv-exe.md
     - name: -Log (devenv.exe)
       href: ide/reference/log-devenv-exe.md
+    - name: -NoSplash (devenv.exe)
+      href: ide/reference/nosplash-devenv-exe.md
     - name: -Out (devenv.exe)
       href: ide/reference/out-devenv-exe.md
     - name: -Project (devenv.exe)
@@ -953,16 +965,12 @@ items:
       href: ide/reference/rebuild-devenv-exe.md
     - name: -ResetSettings (devenv.exe)
       href: ide/reference/resetsettings-devenv-exe.md
-    - name: -ResetSkipPkgs (devenv.exe)
-      href: ide/reference/resetskippkgs-devenv-exe.md
     - name: -Run (devenv.exe)
       href: ide/reference/run-devenv-exe.md
     - name: -Runexit (devenv.exe)
       href: ide/reference/runexit-devenv-exe.md
     - name: -SafeMode (devenv.exe)
       href: ide/reference/safemode-devenv-exe.md
-    - name: -Setup (devenv.exe)
-      href: ide/reference/setup-devenv-exe.md
     - name: -Upgrade (devenv.exe)
       href: ide/reference/upgrade-devenv-exe.md
     - name: -UseEnv (devenv.exe)
@@ -1083,8 +1091,8 @@ items:
 - name: 資源
   items:
   - name: Visual Studio 2017 的新功能
-    href: ide/whats-new-in-visual-studio.md
-  - name: Visual Studio 2019 的新功能
+    href: ide/whats-new-visual-studio-2017.md
+  - name: Visual Studio 2019 Preview 的新功能
     href: ide/whats-new-visual-studio-2019.md
   - name: 版本資訊與系統需求
     items:
@@ -1126,9 +1134,10 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: 65504b4cf7bfd126edceacfdcfd1cc71e725e8ca
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+  expanded: true
+ms.openlocfilehash: f956b9a47ffe8fcf3f082711a742e36c90c95304
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740415"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450603"

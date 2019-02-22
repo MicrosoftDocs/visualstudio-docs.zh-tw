@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60e9b8e2ac19ec54134e536d38fac7e4ffbf9034
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 089b0ac1a30a7605df61d5e5e5545e6f4c80549a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877727"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973404"
 ---
 # <a name="tool-window-display-configuration"></a>工具視窗中顯示組態
 當向 VSPackage 註冊工具視窗、 預設位置、 大小、 停駐樣式，以及其他的可見性資訊，被指定選擇性的值。 如需有關工具視窗中註冊的詳細資訊，請參閱[工具 Windows 登錄中](../extensibility/tool-windows-in-the-registry.md)  
@@ -39,9 +39,9 @@ HKEY_LOCAL_MACHINE\
 | 名稱 | 類型 | 資料 | 描述 |
 |-----------------|-----------| - | - |
 | 名稱 | REG_SZ | 「 在此輸入簡短名稱 」 | 描述 [工具] 視窗的簡短名稱。 僅用於在登錄中的參考。 |
-| 浮動 | REG_SZ | "X1，Y1，X2，Y2" | 四個以逗號分隔值。 X1，Y1 是工具視窗的左上角的座標。 X2，Y2 是右下角的座標。 所有值都會以螢幕座標表示。 |
-| 樣式 | REG_SZ | 「 MDI"<br /><br /> 「 浮動 」<br /><br /> 「 連結 」<br /><br /> 「 索引 」<br /><br /> 「 AlwaysFloat" | 指定初始的關鍵字會顯示工具視窗的狀態。<br /><br /> 「 MDI"= 停駐在一起的 MDI 視窗。<br /><br /> 「 浮動 」 = 浮點數。<br /><br /> 「 連結 」 = 與另一個視窗 （在視窗項目中指定） 連結。<br /><br /> 「 索引標籤式"= 結合另一個工具視窗。<br /><br /> 「 AlwaysFloat"= 無法停駐。<br /><br /> 如需詳細資訊，請參閱下方的註解區段。 |
-| 視窗 | REG_SZ | *\<GUID &GT;* | 視窗的 [工具] 視窗可以連結或索引標籤式的 GUID。 GUID 可能屬於其中一個您自己的視窗或其中一個在 windows [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE。 |
+| 浮動 | REG_SZ | "X1,Y1,X2,Y2" | 四個以逗號分隔值。 X1，Y1 是工具視窗的左上角的座標。 X2，Y2 是右下角的座標。 所有值都會以螢幕座標表示。 |
+| 樣式 | REG_SZ | 「 MDI"<br /><br /> 「 浮動 」<br /><br /> 「 連結 」<br /><br /> 「 索引 」<br /><br /> "AlwaysFloat" | 指定初始的關鍵字會顯示工具視窗的狀態。<br /><br /> 「 MDI"= 停駐在一起的 MDI 視窗。<br /><br /> 「 浮動 」 = 浮點數。<br /><br /> 「 連結 」 = 與另一個視窗 （在視窗項目中指定） 連結。<br /><br /> 「 索引標籤式"= 結合另一個工具視窗。<br /><br /> 「 AlwaysFloat"= 無法停駐。<br /><br /> 如需詳細資訊，請參閱下方的註解區段。 |
+| 視窗 | REG_SZ | *\<GUID>* | 視窗的 [工具] 視窗可以連結或索引標籤式的 GUID。 GUID 可能屬於其中一個您自己的視窗或其中一個在 windows [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE。 |
 | 方向 | REG_SZ | "Left"<br /><br /> 權利 」<br /><br /> "Top"<br /><br /> 「 下 」 | 請參閱下方的註解區段。 |
 | DontForceCreate | REG_DWORD | 0 或 1 | 當此項目存在，且其值不是零時，是視窗載入，但不是會立即顯示。 |
 
@@ -88,7 +88,7 @@ HKEY_LOCAL_MACHINE\
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
 |(預設值)|REG_SZ|無|將保留空白。|  
-|*\<GUID &GT;*|REG_DWORD 或 REG_SZ|0 或描述性字串。|選擇性。 項目名稱必須是需要可見性命令的 GUID。 值只會保留資訊的字串。 值通常是`reg_dword`設為 0。|  
+|*\<GUID>*|REG_DWORD 或 REG_SZ|0 或描述性字串。|選擇性。 項目名稱必須是需要可見性命令的 GUID。 值只會保留資訊的字串。 值通常是`reg_dword`設為 0。|  
 
 ### <a name="example"></a>範例  
 

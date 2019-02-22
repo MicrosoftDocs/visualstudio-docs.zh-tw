@@ -1,27 +1,23 @@
 ---
-title: Ptvs 快速入門：設定 Visual Studio 2015 |Microsoft Docs
+title: Ptvs 快速入門： 設定 Visual Studio 2015 |Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: ec491c1d-bdb2-4c2b-a390-bd808cec635a
 caps.latest.revision: 6
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: c48687f0c3c151b45fed4f6dc53a428faca41cd9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 56afdd8be32e4977fd6c42a6b3c442e237c4f370
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052915"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54782342"
 ---
-# <a name="getting-started-with-ptvs-setting-up-visual-studio"></a>Ptvs 快速入門：設定 Visual Studio
+# <a name="getting-started-with-ptvs-setting-up-visual-studio"></a>PTVS 快速入門：設定 Visual Studio
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 

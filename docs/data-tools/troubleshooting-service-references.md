@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180421"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927041"
 ---
 # <a name="troubleshoot-service-references"></a>針對服務參考進行疑難排解
 
@@ -96,13 +94,13 @@ ms.locfileid: "39180421"
 
 若要修正這個錯誤，請停用 RSS 摘要：
 
-1.  在 Internet Explorer 上**工具**功能表上，按一下**網際網路選項**。
+1.  在 Internet Explorer 的 [工具] 功能表中，按一下 [網際網路選項]。
 
 2.  在 **內容**索引標籤中，於**摘要**區段中，按一下**設定**。
 
 3.  在 **摘要的設定**對話方塊中，清除**開啟摘要讀取檢視**核取方塊，然後按一下**確定**。
 
-4.  按一下 [ **[確定]** 以關閉**網際網路選項**] 對話方塊。
+4.  按一下 [確定] 以關閉 [網際網路選項] 對話方塊。
 
 ## <a name="see-also"></a>另請參閱
 

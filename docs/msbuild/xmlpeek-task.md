@@ -1,8 +1,6 @@
 ---
 title: XmlPeek 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19196031-a3bc-41b5-9c4a-f2572630e179
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2430d742c07483dd28ca1cd188d9695205e9c91
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 6a23743bd2f7cc674e44ee3063553ed023b2d806
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231043"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042461"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 工作
 從 XML 檔案傳回 XPath 查詢所指定的值。  
@@ -31,7 +29,7 @@ ms.locfileid: "39231043"
 ## <a name="parameters"></a>參數  
  下表說明 `XmlPeek` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`Namespaces`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢前置詞的命名空間。|  
 |`Query`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢。|  

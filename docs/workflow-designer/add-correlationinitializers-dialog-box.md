@@ -2,21 +2,20 @@
 title: 工作流程設計工具-CorrelationInitializers [新增] 對話方塊
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - AddCorrelationInitializers.UI
 ms.assetid: c0517467-d54a-4ee6-aef0-c19b96b6f395
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67dea88845ffbfab8350e4a1134e09436c95321b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82bc9908535fe555030f3e9e4d6699dc6d0b6509
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860346"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938783"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>加入相互關聯初始設定式對話方塊
 
@@ -27,7 +26,7 @@ ms.locfileid: "53860346"
 - 以查詢為基礎
 - 內容
 - 回呼內容
-- 要求-回覆
+- request-reply
 
 下表描述的使用者介面 (UI) 項目**加入相互關聯初始設定式** 對話方塊中：
 

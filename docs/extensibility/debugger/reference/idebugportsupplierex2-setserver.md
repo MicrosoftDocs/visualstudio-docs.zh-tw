@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierEx2::SetServer |Microsoft Docs
+title: IDebugPortSupplierEx2::SetServer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 0e8ef194-3a4f-4abf-8382-4607ab3005d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fade92add93011920a9f4d25f0dfc92388af854
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: defc13ea9bc63bc1e2c5bdca229e58ec71fe25dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885844"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950011"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
 設定核心伺服器連接埠提供者。  

@@ -2,19 +2,18 @@
 title: 圖形診斷概觀 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a88bcdad960e79c64a463fecf88bbf893b0181b0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 78047b45ba3e48da42a8f975aae5be88f63ba9a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059109"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995098"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷概觀
 Visual Studio 圖形診斷是一組工具，用來記錄並分析 Direct3D 應用程式中的轉譯和效能問題。 圖形診斷可以用於在 Windows 電腦上或遠端電腦或裝置在本機執行的應用程式。  
@@ -53,7 +52,7 @@ Visual Studio 圖形診斷是一組工具，用來記錄並分析 Direct3D 應�
 ### <a name="gpu-usage"></a>GPU 使用量  
  圖形診斷也可以分析 Direct3D 應用程式的效能。 因為記錄圖形事件詳細資料會扭曲程式碼分析資料，所以這與擷取圖形分析器要檢查的畫面格不同。  
   
- 如需詳細資訊，請參閱 [GPU 使用量](gpu-usage.md)。  
+ 如需詳細資訊，請參閱 [GPU 使用量](/visualstudio/profiling/gpu-usage)。  
   
 ### <a name="directx-control-panel"></a>DirectX 控制台  
  DirectX 控制台是可以用來變更 DirectX 行為的 DirectX 元件。例如，您可以啟用 DirectX 執行階段元件的偵錯版本，選取要報告的偵錯訊息種類和禁止某些圖形硬體功能去模擬功能很少的硬體。 這個 DirectX 控制層級可以協助您偵錯及測試 DirectX 應用程式。 您可以從 Visual Studio 存取 DirectX 控制台。  
@@ -104,7 +103,7 @@ Visual Studio 圖形診斷是一組工具，用來記錄並分析 Direct3D 應�
 ### <a name="event-call-stack"></a>事件呼叫堆疊  
  著色器程式碼不是 Direct3D 應用程式中的唯一轉譯問題來源，有時，您的應用程式原始碼傳遞錯誤的參數，或未正確地設定 Direct3D。 先前討論的像素歷史記錄功能可協助您找到一種錯誤，是轉譯的物件因其所有像素都遭拒而遺漏時。 這種錯誤通常發生在您錯誤地設定某個設定時 (例如，控制如何執行深度測試的設定)，而您通常可以在遺漏物件繪製呼叫之呼叫堆疊中的某處找到您的錯誤。  
   
- [事件呼叫堆疊](graphics-event-call-stack.md) 視窗會顯示 [事件] 清單中，每個圖形事件的完整呼叫堆疊，甚至可讓您跳到您的應用程式原始碼，如果偵錯資訊可用。 這是功能強大的工具，用於從 GPU 上第一次出現錯誤的位置追蹤回您應用程式原始程式碼中產生錯誤的位置。  
+ [[事件呼叫堆疊](graphics-event-call-stack.md)] 視窗會顯示 [事件] 清單中，每個圖形事件的完整呼叫堆疊，甚至可讓您跳到您應用程式的原始程式碼 (如有偵錯資訊)。 這是功能強大的工具，用於從 GPU 上第一次出現錯誤的位置追蹤回您應用程式原始程式碼中產生錯誤的位置。  
   
 ### <a name="object-table"></a>物件表  
  可能有數百甚至數千個資源物件支援您應用程式所轉譯的每個畫面格。 這些可以包括背景緩衝區以及轉譯目標、紋理、頂點緩衝區、索引緩衝區、一般緩衝區；Direct3D 記住的所有項目幾乎都是物件。  

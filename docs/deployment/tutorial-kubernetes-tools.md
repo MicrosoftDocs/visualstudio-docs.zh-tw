@@ -1,20 +1,18 @@
 ---
 title: Kubernetes 工具教學課程 |Microsoft Docs
-ms.custom: ''
 ms.date: 06/08/2018
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: douge
+manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 8cf4192ce0f925624dbbe890381d3557f2a27223
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c6a0ba1f44d9e6d9cc0dbcce03af2705e370cbb6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942929"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965455"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>開始使用 Visual Studio 的 Kubernetes 工具
 

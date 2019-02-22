@@ -1,27 +1,22 @@
 ---
 title: 跨平台行動裝置開發範例 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663
 caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 204aafd41427f46c86146b9867880137cf1b096b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 64f5022d0d4aca15583606caa5215d06357edcf1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795267"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783758"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>跨平台行動開發範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ ms.locfileid: "51795267"
   若要在 Visual Studio 中開啟其中一個範例，請下載 zip 檔案，並在總管中開啟下載檔案的 [屬性]  頁面。 選擇 [解除封鎖]  按鈕然後選擇 [確定] 。 將 zip 檔案的內容解壓縮到方便存取的位置，然後開啟解壓縮範例的 C++ 資料夾，並開啟方案檔。  
   
   若要建置範例，請按 F7，或從功能表列上選擇 [建置] 、[建置方案] 。
-

@@ -1,7 +1,6 @@
 ---
 title: CA1002：不要公開泛型清單
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotExposeGenericLists
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5caac810-1a79-47df-a27b-c46c5040bf34
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92221120dbed0994f17ea7a875826c5f25bfdcaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e2f7bba8f86ed1a2877fd622c5fd93560a9c5fa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881959"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915826"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002：不要公開泛型清單
 

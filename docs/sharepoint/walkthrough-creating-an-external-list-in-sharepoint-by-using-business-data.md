@@ -14,17 +14,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 930edf4483d946c92a0c3c21242bfe0bb421a229
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918780"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874172"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>逐步解說：使用商務資料在 SharePoint 中建立外部清單
 
@@ -76,7 +76,7 @@ ms.locfileid: "53918780"
 
 1. 在功能表列上選擇 **工具** > **連接至資料庫**。
 
-     **加入連接**對話方塊隨即開啟。
+     [新增連線] 對話方塊隨即開啟。
 
 2. 新增連線至 SQL Server AdventureWorks 範例資料庫。
 

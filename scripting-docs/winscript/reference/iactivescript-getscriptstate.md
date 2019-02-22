@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptState |Microsoft 文件
+title: IActiveScript::GetScriptState | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 285a09308c7477dbeed68f9f93417b503ca4fe49
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a64067679e1c56831002494c579ffdeba84a1abe
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640178"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346627"
 ---
 # <a name="iactivescriptgetscriptstate"></a>IActiveScript::GetScriptState
-擷取指令碼引擎的目前的狀態。 可以從非基底執行緒呼叫這個方法，不會導致非基本圖說文字主機物件或[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)介面。  
+擷取指令碼引擎的目前狀態。 可以從非基底執行緒呼叫這個方法，不會導致主機物件或非基底圖說[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)介面。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetScriptState(  
     SCRIPTSTATE *pss  // address of structure for state information  
 );  
@@ -38,7 +38,7 @@ HRESULT GetScriptState(
   
 #### <a name="parameters"></a>參數  
  `pss`  
- [out]收到的值中定義的變數位址[SCRIPTSTATE 列舉](../../winscript/reference/scriptstate-enumeration.md)列舉型別。 值表示呼叫執行緒相關聯的指令碼引擎的目前狀態。  
+ [out]接收中定義的值，變數的位址[SCRIPTSTATE 列舉](../../winscript/reference/scriptstate-enumeration.md)列舉型別。 值表示呼叫執行緒相關聯的指令碼引擎的目前狀態。  
   
 ## <a name="return-value"></a>傳回值  
  傳回`S_OK`如果成功，或`E_POINTER`如果指定了無效的指標。  

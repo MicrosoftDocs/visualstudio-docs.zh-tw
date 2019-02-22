@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be48c6d0879a257e17be2d92dc00829097d11c15
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48e6dc6e35ca6388926030412dbbb5380e054b1e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939877"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930404"
 ---
 # <a name="performance-report-view-filter"></a>效能報告檢視篩選條件
 [分析工具報表檢視篩選條件] 視窗位於 [效能報表] 視窗頂端。 如果您看不到這個視窗，請按一下 [顯示篩選條件] 按鈕。  

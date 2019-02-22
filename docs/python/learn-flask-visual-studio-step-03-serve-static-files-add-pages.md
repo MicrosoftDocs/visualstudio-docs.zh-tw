@@ -3,21 +3,20 @@ title: Visual Studio 中的了解 Flask 教學課程步驟 3，靜態檔案和�
 titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識，特別是示範如何提供靜態檔案、將頁面新增至應用程式，以及使用範本繼承
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15c336a0f026211f37c2435586e0e18df96ecf0f
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 72ef0011f2df86ddc25b2f566cd3a5e72d492833
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060786"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939784"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步驟 3：提供靜態檔案、新增頁面，然後使用範本繼承
 

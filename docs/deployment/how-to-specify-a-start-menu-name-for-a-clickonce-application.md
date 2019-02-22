@@ -1,8 +1,6 @@
 ---
 title: HOW TO：指定 ClickOnce 應用程式的開始功能表名稱 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 4b5183b2-2fd4-4433-9310-4a73bb12c4e3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7cf4f2b30079a76012acfe972ea0de0b9e0ea78
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
-ms.translationtype: HT
+ms.openlocfilehash: b2ac32b9be940883953d69e0347ffa5e12d5407a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592829"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945615"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>HOW TO：指定 ClickOnce 應用程式的開始功能表名稱
 當[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式已安裝的線上和離線使用，一個項目加入至**開始**功能表和**新增或移除程式**清單。 根據預設，顯示名稱是應用程式組件的名稱相同，但您可以設定來變更顯示名稱**產品名稱**中**發行選項** 對話方塊。  

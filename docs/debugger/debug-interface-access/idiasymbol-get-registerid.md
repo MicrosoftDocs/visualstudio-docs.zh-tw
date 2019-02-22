@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_registerid |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_registerId | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f881e793-eb9e-48dc-a847-dd61d77174fc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0acc6d79e1e5da810e2f2da699df5d4def424df9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7a7007a0d80e1e973bb2c5918cfc5a3194922f8f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861460"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033462"
 ---
 # <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
 擷取位置的註冊指示項時[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設定為`LocIsEnregistered`。  
@@ -27,7 +25,7 @@ ms.locfileid: "49861460"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_registerId (   
+HRESULT get_registerId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -45,6 +43,6 @@ HRESULT get_registerId (
 ## <a name="remarks"></a>備註  
  如果符號為相對於暫存器，亦即，如果符號[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設為`LocIsRegRel`，使用`get_registerId`方法，後面呼叫[idiasymbol:: Get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)若要發揮符號所在位置的暫存器中的位移的方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

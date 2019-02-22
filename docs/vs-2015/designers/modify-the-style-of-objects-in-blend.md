@@ -1,25 +1,20 @@
 ---
 title: 在 Blend 中修改物件的樣式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 31192d2c-5b84-41bc-94c0-898638c170bd
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c9d010b8218dca94e4d9bcbf1e7d48088758f5ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843637"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781371"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>在 Blend 中修改物件的樣式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49843637"
 ##  <a name="Brushes"></a> 筆刷：修改物件的外觀  
  如果您要變更筆刷的外觀，請將筆刷套用至物件。  
   
- **觀看短片︰**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Brushes Editor](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor) (筆刷編輯器)。  
+ **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [筆刷編輯器](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor)。  
   
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>在物件上繪製重複影像或圖樣  
  使用「拼貼筆刷」在物件上繪製重複影像或圖樣。  
@@ -60,7 +55,7 @@ ms.locfileid: "49843637"
   
  ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
   
- **觀看短片︰**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Tile Brushes](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes) (拼貼筆刷)。  
+ **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [拼貼筆刷](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes)。  
   
 ##  <a name="Styles"></a> 樣式和範本：跨控制項建立一致的外觀與風格  
  您可以設計控制項的外觀和行為一次，並將該設計套用至其他控制項，如此就不必一一維護它們。  
@@ -84,7 +79,7 @@ ms.locfileid: "49843637"
   
 - 選擇 [建立空的] 從頭開始。  
   
-  **編輯目前**在編輯樣式或範本，您已建立時，才會顯示選項。 若是仍然使用預設系統範本的控制項，則不會顯示此選項。  
+  [編輯目前項目] 選項只會在編輯已建立的樣式或範本時才會出現。 若是仍然使用預設系統範本的控制項，則不會顯示此選項。  
   
   在 [建立樣式資源] 對話方塊中，您可以為樣式或範本命名以便之後使用，或將樣式或範本套用至該類型的所有控制項。  
   
@@ -97,34 +92,31 @@ ms.locfileid: "49843637"
 >   
 >  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
- **觀看短片︰**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create a style](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95) (建立樣式)。  
+ **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [建立樣式](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95)。  
   
- **觀看短片︰**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Creating a Control Template in Expression Blend](http://msdn.microsoft.com/expression/cc263912.aspx) (在 Expression Blend 中建立控制項範本)。  
+ **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Expression Blend 中建立控制項範本](http://msdn.microsoft.com/expression/cc263912.aspx)。  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>將樣式或範本套用至控制項  
- 在[物件與時間軸](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57)面板中以滑鼠右鍵按一下物件，並選擇 [編輯範本]，然後選擇 [套用資源]。  
+ 在[物件與時間軸](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57)面板中以滑鼠右鍵按一下物件，並選擇 [編輯範本]，然後選擇 [套用資源]。  
   
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>還原控制項的預設樣式或範本  
- 選取控制項，然後在[屬性](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57)面板中，找出 [樣式] 或 [範本] 屬性。 然後按一下 [進階選項] ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")，然後按一下捷徑功能表上的 [重設]。  
+ 選取控制項，然後在[屬性](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57)面板中，找出 [樣式] 或 [範本] 屬性。 然後按一下 [進階選項] ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")，然後按一下捷徑功能表上的 [重設]。  
   
 ##  <a name="Visual"></a>視覺狀態：依控制項的狀態變更其外觀  
  控制項可根據使用者互動有不同的視覺外觀。 例如，在使用者按一下按鈕時，您可以讓按鈕變成綠色或者執行動畫。 您可以使用轉場來縮短或加長視覺狀態間的時間。  
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
- **觀看短片︰**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Manage the state of your WPF controls](https://www.youtube.com/watch?v=m0PlkF5i6uw) (管理 WPF 控制項的狀態)。  
+ **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [管理 WPF 控制項的狀態](https://www.youtube.com/watch?v=m0PlkF5i6uw)。  
   
 ##  <a name="Resources"></a> 資源：建立色彩、樣式和範本，之後重複使用這些項目  
  您可以將專案中幾乎任何項目轉換為資源。 資源只是一個可在應用程式中不同地方重複使用的物件。 例如，您可以建立色彩一次、使它變成資源，然後在數個物件上使用該色彩。 若要變更所有這些物件的色彩，只須變更色彩資源即可。  
   
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
   
- **觀看短片︰**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [A brief touch on resources](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources) (資源的簡短接觸)。  
+ **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [資源的簡短試用](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Blend for Visual Studio 建立 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

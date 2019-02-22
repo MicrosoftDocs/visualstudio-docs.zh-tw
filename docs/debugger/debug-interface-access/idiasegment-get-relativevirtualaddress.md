@@ -1,8 +1,6 @@
 ---
-title: 'Idiasegment:: Get_relativevirtualaddress |Microsoft Docs'
-ms.custom: ''
+title: IDiaSegment::get_relativeVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b6a573a1-3671-4c1c-a5c2-2ab8f07fd510
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4103d8daa405aa5b6397d558760eeb49dbc9aaa7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d98e70b866b8177ad021c39764ed954b5773aa3a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818291"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952102"
 ---
 # <a name="idiasegmentgetrelativevirtualaddress"></a>IDiaSegment::get_relativeVirtualAddress
 擷取區段開頭的相對虛擬位址 (RVA)。  
@@ -27,7 +25,7 @@ ms.locfileid: "49818291"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_relativeVirtualAddress (   
+HRESULT get_relativeVirtualAddress (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_relativeVirtualAddress (
  [out]傳回區段開頭的 RVA。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

@@ -1,7 +1,6 @@
 ---
 title: 轉換對話方塊
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - jlca_Conversion_F1_3
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 56f23ef7-17c4-4d76-9ead-982bbcd42061
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39ade3990985bbac635d88ae1e965ee31c55227c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: beabf926eb0f6496857d7fc552fe4924202647de
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929772"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927590"
 ---
 # <a name="convert-dialog-box"></a>轉換對話方塊
 

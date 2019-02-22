@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_typeid |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_typeId | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b40be36e-10e1-463c-9c6d-21862679d29f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 448110b86356e264992d5c47adabebb220bf5361
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a5dd0aef5a6e5f8892311d125f7780cb426e9227
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865865"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980345"
 ---
 # <a name="idiasymbolgettypeid"></a>IDiaSymbol::get_typeId
 擷取之符號的類型識別碼。  
@@ -27,7 +25,7 @@ ms.locfileid: "49865865"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_typeId (   
+HRESULT get_typeId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -45,5 +43,5 @@ HRESULT get_typeId (
 ## <a name="remarks"></a>備註  
  識別碼是由 DIA SDK，將標示為唯一的所有符號的唯一值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

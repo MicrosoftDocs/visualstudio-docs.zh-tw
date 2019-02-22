@@ -2,21 +2,20 @@
 title: 針對 Python 程式碼進行偵錯
 description: Visual Studio 提供針對 Python 程式碼的豐富偵錯功能，其中包括設定中斷點、逐步執行、檢查值、查看例外狀況，以及在互動式視窗中偵錯。
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ed108232fc1dd04785f5eeb68d29fb304607ed7
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060851"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155873"
 ---
 # <a name="debug-your-python-code"></a>偵錯您的 Python 程式碼
 
@@ -27,10 +26,6 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 - [Linux 遠端偵錯](debugging-python-code-on-remote-linux-machines.md)
 - [混合模式 Python/C++ 偵錯](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [混合模式偵錯的符號](debugging-symbols-for-mixed-mode-c-cpp-python.md)
-
-|   |   |
-|---|---|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看示範 Python 偵錯的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) \(英文\) (3 分 32 秒)。|
 
 <a name="debugging-without-a-project"></a>
 
@@ -71,7 +66,7 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 
 一旦停在中斷點，在再度中斷之前，您可以使用各種方式逐步執行程式碼或執行程式碼區塊。 在許多地方都可使用下列命令，包括最上層的偵錯工具列、[偵錯] 功能表、程式碼編輯器中的滑鼠右鍵操作功能表，以及透過鍵盤快速鍵 (然而並非所有地方都提供所有命令)：
 
-| 功能 | 按鍵輸入 | 說明 |
+| 功能 | 按鍵輸入 | 描述 |
 | --- | --- | --- |
 | **Continue** | **F5** | 執行程式碼，直到下一個中斷點為止。 |
 | **逐步執行** | **F11** | 執行下一個陳述式並停止。 如果下一個陳述式是函式的呼叫，偵錯工具會停在所呼叫函式的第一行。 |
@@ -137,7 +132,7 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 
 ### <a name="launch-mode-options"></a>啟動模式選項
 
-| 選項 | 說明 |
+| 選項 | 描述 |
 | --- | --- |
 | **標準 Python 啟動器** | 使用相容於 CPython、IronPython 及 Stackless Python 等變體的可攜式 Python 撰寫的偵錯程式碼。 它能為純 Python 程式碼的偵錯提供最佳體驗。 當您附加至執行中的 *python.exe* 處理序時，會使用這個啟動器。 這個啟動器也為 CPython 提供[混合模式偵錯](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)，讓您可以順暢地在 C/C++ 和 Python 程式碼之間逐步執行。 |
 | **Web 啟動器** | 在啟動時開啟預設瀏覽器並對範本啟用偵錯。 如需詳細資訊，請參閱 [Web 範本偵錯](python-web-application-project-templates.md#debugging)一節。 |
@@ -146,7 +141,7 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>執行選項 (搜尋路徑、啟動引數和環境變數)
 
-| 選項 | 說明 |
+| 選項 | 描述 |
 | --- | --- |
 | **搜尋路徑** | 這些值符合在**方案總管**中，專案 [搜尋路徑] 節點所顯示的內容。 您可以在此處修改此值，但使用 [方案總管] 會比較容易，因為可讓您瀏覽資料夾並自動將路徑轉換成相對格式。 |
 | **指令碼引數** | 這些引數會新增至用來啟動指令碼的命令，顯示在您的指令碼檔案名稱之後。 此處的第一個項目以 `sys.argv[1]` 的格式提供給您的指令碼，第二個項目則是 `sys.argv[2]`，依此類推。 |
@@ -166,7 +161,7 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 
 [互動式偵錯] 視窗支援[標準 REPL 命令](python-interactive-repl-in-visual-studio.md#meta-commands)以外的特殊中繼命令：
 
-| 命令 | 引數 | 說明 |
+| 命令 | 引數 | 描述 |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | 從目前的陳述式開始執行程式。 |
 | `$down`、 `$d` | 在堆疊追蹤中將目前的框架下移一層。 |

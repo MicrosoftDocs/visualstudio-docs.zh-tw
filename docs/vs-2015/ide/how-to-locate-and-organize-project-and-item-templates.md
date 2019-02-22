@@ -1,14 +1,9 @@
 ---
-title: 如何：尋找並組織專案範本和項目範本 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：尋找並組織專案與項目範本 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - custom template locations [Visual Studio]
@@ -20,13 +15,13 @@ ms.assetid: 71f9ed52-c9c9-4818-9bce-c279ffaa0438
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830973"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778522"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：尋找並組織專案範本和項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ ms.locfileid: "49830973"
   
   例如，下列目錄包含自訂的 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 專案範本：  
   
-  C:\Documents and Settings\UserName\My 文件\\< 的 Visual Studio 版本\>\Templates\ProjectTemplates\Visual C# \  
+  C:\Documents and Settings\UserName\My Documents\\<Visual Studio 版本\>\Templates\ProjectTemplates\Visual C#\  
   
   自訂範本不包含當地語系化之範本的子目錄。 您可以在 [選項] 對話方塊的 [環境\專案和方案] 下變更自訂範本的預設目錄。  
   
@@ -122,7 +117,7 @@ ms.locfileid: "49830973"
   
 1. 在自訂專案範本目錄的語言資料夾中建立資料夾。 例如，若要為 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 範本建立 HelloWorld 類別，您將建立下列目錄：  
   
-    \My 文件\\< 的 Visual Studio 版本\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My Documents\\<Visual Studio 版本\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. 將此類別的所有範本都放在新資料夾中。  
   
@@ -136,7 +131,7 @@ ms.locfileid: "49830973"
   
 1.  在自訂項目範本目錄的語言資料夾中建立資料夾。 例如，若要為 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 範本建立 HelloWorld 類別，您將建立下列目錄：  
   
-     \My 文件\\< 的 Visual Studio 版本\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \My Documents\\<Visual Studio 版本\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
 2.  將此類別的所有範本都放在新資料夾中。  
   
@@ -177,12 +172,9 @@ ms.locfileid: "49830973"
   
 8.  將新的.zip 檔案放在有已刪除 .zip 檔案的目錄。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂範本](../ide/customizing-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [NumberOfParentCategoriesToRollUp (Visual Studio 範本)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
  [如何：建立專案範本](../ide/how-to-create-project-templates.md)   
  [如何：建立項目範本](../ide/how-to-create-item-templates.md)
-
-
-

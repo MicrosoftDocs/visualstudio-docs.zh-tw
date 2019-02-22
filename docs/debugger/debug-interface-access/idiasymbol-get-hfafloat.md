@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_hfafloat |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_hfaFloat | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 73ddcffe-cdac-4b03-be42-82ef985d17ee
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae61d8c4c82eb8e0493574fc8469355f07f6a796
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 95454741aa20b083c768f0df9678e47b471f6fe3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900237"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043124"
 ---
 # <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
 擷取指定使用者定義型別 (UDT) 是否包含同質浮點彙總 (HFA) 的資料類型 float 的旗標。  
@@ -27,7 +25,7 @@ ms.locfileid: "49900237"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_hfaFloat(   
+HRESULT get_hfaFloat(   
    BOOL* pRetVal  
 );  
 ```  
@@ -45,12 +43,12 @@ HRESULT get_hfaFloat(
 ## <a name="remarks"></a>備註  
   
 ## <a name="requirements"></a>需求  
- 標頭： Dia2.h  
+ 標頭：dia2.h  
   
  程式庫： diaguids.lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 - packages [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d275b7d2e4ccfea5d89148b6b46883fa32e6560
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 059bf8068ad3a14d01f0a8167900563eebdff215
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966660"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867984"
 ---
 # <a name="create-sharepoint-solution-packages"></a>建立 SharePoint 方案套件
   藉由使用 封裝設計工具，您可以建立並自訂部署套件。 例如，您可以新增 SharePoint 專案項目和功能，重設 IIS 伺服器、 設定功能啟用範圍，以及識別功能相依性。 設計工具也會產生資訊清單，描述每個封裝的 XML 檔案。  

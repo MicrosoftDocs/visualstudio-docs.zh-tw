@@ -1,7 +1,6 @@
 ---
 title: CA1058:類型不應該擴充特定基底類型
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - TypesShouldNotExtendCertainBaseTypes
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8446ee40-beb1-49fa-8733-4d8e813471c0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d52d4f38dc01380c097afb9486963b42faa3c98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 831f8ad60b7cef0f172bbc4b3795d036779b2419
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864903"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915526"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058:類型不應該擴充特定基底類型
 

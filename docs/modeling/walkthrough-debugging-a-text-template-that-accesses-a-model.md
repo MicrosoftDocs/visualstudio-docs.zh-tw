@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9041adb5ddb8ac76dde15069ce117ea8ad3c6e66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 915bbc86422af4d60605934c3e7359087eba102e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914539"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938107"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>逐步解說：偵錯文字範本存取模型
 當您修改或新增特定領域語言方案中的文字範本時，您可能會發生錯誤時，引擎會將轉換原始程式碼或編譯產生的程式碼時的範本。 下列逐步解說會示範一些您可以進行偵錯文字範本的操作。
@@ -158,7 +157,7 @@ ms.locfileid: "53914539"
 
      (C#)
 
-     **正在編譯轉換：Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation' 未包含 'ExampleModel' 的定義**
+     **正在編譯轉換：Microsoft.VisualStudio.TextTemplating\<GUID>.GeneratedTextTransformation' 未包含 'ExampleModel' 的定義**
 
      (Visual Basic)
 

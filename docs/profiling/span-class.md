@@ -1,8 +1,6 @@
 ---
 title: span 類別 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 527826a8-2590-43ad-b907-7bc0b7288e92
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1a33a99b129cd4a0fa1969553d55c81af310295
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bacf5699e1ccccf186b09bcd50c82cba203919fc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668303"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070080"
 ---
 # <a name="span-class"></a>span 類別
 定義應用程式階段。  
@@ -34,7 +32,7 @@ class span;
   
 ### <a name="public-constructors"></a>公用建構函式  
   
-|名稱|描述|  
+|名稱|說明|  
 |----------|-----------------|  
 |[span::span 建構函式](../profiling/span-span-constructor.md)|初始化 `span` 類別的新執行個體。|  
 |[span::~span 解構函式](../profiling/span-tilde-span-destructor.md)|終結 `span` 物件，並釋放其資源。|  
@@ -43,7 +41,7 @@ class span;
  `span`  
   
 ## <a name="requirements"></a>需求  
- **標頭：***cvmarkersobj.h*  
+ **標頭：** *cvmarkersobj.h*  
   
  **命名空間：** Concurrency::diagnostic  
   

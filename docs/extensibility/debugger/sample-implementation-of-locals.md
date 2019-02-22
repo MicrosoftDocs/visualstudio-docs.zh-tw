@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6245459636cb13a13d0ba088663457bce11373f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd9bfaf04d1c121c3aa019e7e01393ae1ca5635d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922947"
 ---
 # <a name="sample-implementation-of-locals"></a>區域變數的範例實作
 > [!IMPORTANT]

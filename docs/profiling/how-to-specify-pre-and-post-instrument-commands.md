@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6a8d5340-1d1b-4d81-88dd-8e1f435eb828
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c80e16b3566fd0687b74c5a43363864038f88cbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0471d51ef00e176ab379a79a141ffd49c23aa28
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861456"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923697"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>HOW TO：指定檢測前置和檢測後續命令
 

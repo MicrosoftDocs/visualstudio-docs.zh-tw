@@ -1,7 +1,6 @@
 ---
 title: CA2103:必須檢閱命令式安全性
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2103
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d24fde71-bdf6-46c0-8965-9a73dc33c1aa
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21576101e15a1c424e1fd6d5aedcae000c381677
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2417266da44c4af38e37eb8e0f67ac13a5a7823e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900260"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916722"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103:必須檢閱命令式安全性
 

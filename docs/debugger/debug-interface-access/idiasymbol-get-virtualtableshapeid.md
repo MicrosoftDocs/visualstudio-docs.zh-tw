@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_virtualtableshapeid |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_virtualTableShapeId | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cbee9944-817a-4805-9c08-fac8e0da58b7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95e911bce6e09cdc8fc474ffbe42446eb4f1ae5b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d5f65444b0bd7562c2302eae87ae318b2e6e4989
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850902"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916917"
 ---
 # <a name="idiasymbolgetvirtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
 擷取之符號的虛擬資料表圖形符號識別項。  
@@ -27,7 +25,7 @@ ms.locfileid: "49850902"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_virtualTableShapeId (   
+HRESULT get_virtualTableShapeId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -45,5 +43,5 @@ HRESULT get_virtualTableShapeId (
 ## <a name="remarks"></a>備註  
  識別碼是由 DIA SDK，將標示為唯一的所有符號的唯一值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

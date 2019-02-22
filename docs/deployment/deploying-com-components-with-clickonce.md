@@ -1,8 +1,6 @@
 ---
 title: 使用 ClickOnce 部署 COM 元件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: d3be7039995c27990a1c5c55bf173ef06e5fee0c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348743"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984700"
 ---
-# <a name="deploy-com-components-with-clickonce"></a>將 COM 元件，使用 ClickOnce 部署
+# <a name="deploy-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 元件
 部署舊版的 COM 元件一直是困難的工作。 元件必須全域註冊，因此可能會導致非預期的副作用之間重疊的應用程式。 這種情況通常不是問題在.NET Framework 應用程式中的因為都是完全隔離的應用程式或元件並排顯示相容。 Visual Studio 可讓您部署隔離的 COM 元件，在 Windows XP 或更高版本的作業系統上。  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供簡單而安全的機制，可部署您的.NET 應用程式。 不過，如果您的應用程式會使用傳統的 COM 元件，您必須採取額外的步驟，才能將其部署。 本主題描述如何部署隔離的 COM 元件，並參考原生元件 （例如，從 Visual Basic 6.0 或 Visual c + +）。  
@@ -97,7 +95,7 @@ ms.locfileid: "51348743"
   
     A **VB6Hello**參考出現在 [參考] 清單中。  
   
-6. 指向**工具箱**，選取** 按鈕**控制項，並將它拖曳至**Form1**表單。  
+6. 指向**工具箱**，選取 **按鈕**控制項，並將它拖曳至**Form1**表單。  
   
 7. 在 [**屬性**] 視窗中，將按鈕的**文字**屬性設**Hello**。  
   
@@ -139,7 +137,7 @@ ms.locfileid: "51348743"
   
 2. 在 [發行精靈] 中，請在本機電腦的磁碟，您可以在此存取，並檢查已發行的檔案中指定的位置。  
   
-3. 按一下 **完成**發行應用程式。  
+3. 按一下 [完成] 發佈應用程式。  
   
    如果您檢查已發行的檔案時，您會發現 sysmon.ocx 檔案包含。 控制項是控制項的完全隔離，此應用程式，這表示，如果終端使用者的電腦上有另一個應用程式使用不同版本，它不會干擾此應用程式。  
   

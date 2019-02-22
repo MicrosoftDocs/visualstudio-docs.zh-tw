@@ -1,7 +1,6 @@
 ---
 title: CA1011:建議將基底類型當作參數傳遞
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - ConsiderPassingBaseTypesAsParameters
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: ce1e1241-dcf4-419b-9363-1d5bc4989279
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9388dc1b6649efd1f43e353e69833ad59ad5ff29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 644c581757a559311b6660a77c4d9190a7361314
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860682"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916553"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011:建議將基底類型當作參數傳遞
 

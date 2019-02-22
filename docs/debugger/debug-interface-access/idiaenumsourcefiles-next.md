@@ -1,8 +1,6 @@
 ---
-title: 'Idiaenumsourcefiles:: Next |Microsoft Docs'
-ms.custom: ''
+title: IDiaEnumSourceFiles::Next | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 83bf6317-ff39-4c5c-8987-cba34e7a6983
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fef2d096ca522a6f6f2a05a081fb5a5a494e168c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b0c12b03973736cc867c76cbe10a29548bfc6bd1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819924"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973339"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 擷取列舉序列中的原始程式檔中指定的數目。  
@@ -27,7 +25,7 @@ ms.locfileid: "49819924"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG            celt,  
    IDiaSourceFile** rgelt,  
    ULONG*           pceltFetched  
@@ -45,9 +43,9 @@ HRESULT Next (
  [out]擷取列舉值中傳回原始程式檔的數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`如果不有任何更多的原始程式檔。 反之則傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`如果不有任何更多的原始程式檔。 否則會傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
- [Idiasession:: Findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

@@ -1,14 +1,9 @@
 ---
 title: WPF .Targets 檔案 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: e85a3ff4-dedd-4ff4-9b22-3a1e94755362
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1a8bc74f8aa7bdf47feaff6c7b2896b1a197419f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b4d3c47c5165ecf979146c928b97b5ff4f65e966
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281306"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54833702"
 ---
 # <a name="wpf-targets-files"></a>WPF .Targets 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,10 +31,7 @@ ms.locfileid: "49281306"
   
 [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)] 會透過新增一組 [!INCLUDE[TLA2#tla_wpf](../includes/tla2sharptla-wpf-md.md)] 特定的工作來延伸 [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)]，這些工作會合併到特殊的 .targets 檔案 **Microsoft.WinFX.targets** 中。 此檔案會合併一組在 [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)] 中建置 [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] 專案所需的 [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] 工作。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [.Targets 檔案](../msbuild/msbuild-dot-targets-files.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [建置 WPF 應用程式 (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
-
-
-

@@ -3,7 +3,6 @@ title: 停用或移動套件快取
 description: 了解如何停用、啟用或移動 Visual Studio 部署的套件快取。
 ms.date: 04/14/2017
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - cache
@@ -14,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed8a827dd1edfcd2f0e61361ec4b20f6662ab036
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8472394c06d3388b480abdaf262610811a7a72f4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909007"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970253"
 ---
 # <a name="disable-or-move-the-package-cache"></a>停用或移動套件快取
 

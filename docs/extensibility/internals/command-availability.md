@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac9a172ee2cb7a117a1d9b63c4f1fef9f631952
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30a4992bed527b017f66f42067f88ec127fb9ed3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915862"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070600"
 ---
 # <a name="command-availability"></a>命令可用性
 

@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_arrayindextype |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_arrayIndexType | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd63b9ec-9694-406c-b37f-bde6bd5fcbf2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3d8890e4a1a891cc1efe622b78e185b83a32f81
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 628a8005f904e946e4f939f94b866cbdfc8672ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882401"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939552"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
 擷取之型別的陣列索引符號的符號介面。  
@@ -27,7 +25,7 @@ ms.locfileid: "49882401"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_arrayIndexType (   
+HRESULT get_arrayIndexType (   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -52,5 +50,5 @@ HRESULT get_arrayIndexType (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

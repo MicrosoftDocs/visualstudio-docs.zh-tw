@@ -1,19 +1,18 @@
 ---
 title: 混合建議規則規則集
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec485979eb4c8736260acfa5906b8465b5326f38
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a4df209e45205e8098503494b61c385e1b07d3e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988374"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946908"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>混合建議規則規則集
 

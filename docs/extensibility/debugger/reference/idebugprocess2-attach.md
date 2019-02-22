@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Attach |Microsoft Docs
+title: IDebugProcess2::Attach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717be88ebc0b7312bbb4c8a092fbe34969ddfc7a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91c43a93749cf4dbb507631af9b2f6169d9d35cd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860126"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998361"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 將工作階段的偵錯管理員 (SDM) 附加至處理序。  

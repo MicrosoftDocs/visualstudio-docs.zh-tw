@@ -1,25 +1,20 @@
 ---
 title: 如何：使用分析工具命令列檢測 .NET 服務並收集詳細計時資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 9f73593a-69a7-41b7-a21c-81d3ab0eb8fe
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc95a776713876f559bf3d72b50dc6f24e055dc8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7931341080fbb2d2a98b695e5a864365c7bf6784
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737649"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766428"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：使用程式碼剖析工具命令列以檢測 .NET 服務並收集詳細計時資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -118,9 +113,6 @@ ms.locfileid: "51737649"
 
 5.  重新啟動電腦。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [分析服務](../profiling/command-line-profiling-of-services.md)   
  [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)
-
-
-

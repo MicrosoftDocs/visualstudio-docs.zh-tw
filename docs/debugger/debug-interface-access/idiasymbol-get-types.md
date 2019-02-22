@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_types |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f056e0c-e15b-4e00-8f78-aadc8574f7ea
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 773144f81e51167016df3dca1b6ea7beedb3661c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fcfde6e7824fa0df315cb843eedb92e4d249b618
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951310"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965142"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
 擷取這個符號的編緝器特定類型的陣列。  
@@ -27,7 +25,7 @@ ms.locfileid: "49951310"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_types (   
+HRESULT get_types (   
    DWORD       cTypes,  
    DWORD*      pcTypes,  
    IDiaSymbol* types[]  
@@ -50,5 +48,5 @@ HRESULT get_types (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

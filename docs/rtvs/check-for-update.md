@@ -2,20 +2,18 @@
 title: R 工具的目前版本
 description: 如何檢查 Visual Studio R 工具的版本和安裝更新。
 ms.date: 07/23/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 088d3048f33b998ebdb45b7a35b8b395cb3f525e
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: c6f37c26dac231bbfab38b6370786bd9bbe6b17c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230979"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956398"
 ---
 # <a name="rtvs-current-version"></a>RTVS 目前版本
 
@@ -29,4 +27,4 @@ ms.locfileid: "39230979"
 
 請參閱[安裝](installing-r-tools-for-visual-studio.md)以取得 Visual Studio 和 Windows 的需求。
 
-如需 Microsoft R Open 和 Microsoft Machine Learning Server (先前稱為 Microsoft R Server) 的更新，請參閱 [Microsoft R 產品](http://aka.ms/rtvs-msft-r)。
+如需 Microsoft R Open 和 Microsoft Machine Learning Server (先前稱為 Microsoft R Server) 的更新，請參閱：[Microsoft R 產品](http://aka.ms/rtvs-msft-r)。

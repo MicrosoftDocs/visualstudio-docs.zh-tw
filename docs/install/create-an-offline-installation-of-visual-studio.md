@@ -1,9 +1,8 @@
 ---
 title: 建立離線安裝
 description: 了解如何在有不可靠網際網路連線或低頻寬時離線安裝 Visual Studio。
-ms.date: 08/28/2018
+ms.date: 02/06/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - offline installation [Visual Studio]
@@ -12,19 +11,19 @@ f1_keywords:
 ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8359a3b0d96c92a897532edffa7c6ac0b193cd3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 71c618efc383227167b3d4ccb034e32758229294
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952392"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954019"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>建立 Visual Studio 2017 的離線安裝
 
-我們已設計 Visual Studio 2017 可在各種網路和電腦組態中正常運作。 雖然建議您嘗試 [Visual Studio Web 安裝程式](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (這是小型檔案，並可讓您掌握所有最新修正程式和功能)，但我們了解您可能無法這麼做。
+我們已設計 Visual Studio 2017 可在各種網路和電腦組態中正常運作。 雖然建議您嘗試 [Visual Studio Web 安裝程式](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) (這是小型檔案，並可讓您掌握所有最新修正程式和功能)，但我們了解您可能無法這麼做。
 
 例如，您可能有不可靠網際網路連線，或具有低頻寬的連線。 若是如此，您有幾個選項：您可以使用新的 [全部下載後安裝] 功能來下載檔案後再安裝，也可以使用命令列來建立檔案的本機快取。
 
@@ -33,10 +32,14 @@ ms.locfileid: "53952392"
 
 ## <a name="use-the-download-all-then-install-feature"></a>使用 [全部下載後安裝] 功能
 
-[**15.8 中的新功能**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
-)：在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝]**** 選項。 然後，繼續執行您的安裝。
+[**15.8 中的新功能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)：在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝] 選項。 然後，繼續執行您的安裝。
 
    ![[全部下載後安裝] 選項](media/download-all-then-install.png)
+
+我們設計了 [全部下載後安裝] 功能，讓您能夠針對下載 Visual Studio 的同一部電腦將 Visual Studio 下載成單一安裝。 如此一來，您便可以放心地先中斷與 Web 的連線，再安裝 Visual Studio。
+
+> [!IMPORTANT]
+> 請勿使用 [全部下載後安裝] 功能來建立要傳輸至另一部電腦的離線快取。 此功能並不是設計來進行該用途。 <br><br>如果您想要建立離線快取以將 Visual Studio 安裝在另一部電腦上，請參閱本頁面的[使用命令列來建立本機快取](#use-the-command-line-to-create-a-local-cache)一節，以了解如何建立本機快取，或是參閱[建立 Visual Studio 2017 的網路安裝](../install/create-a-network-installation-of-visual-studio.md)頁面，以了解如何建立網路快取。
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>使用命令列來建立本機快取
 
@@ -65,6 +68,9 @@ ms.locfileid: "53952392"
 
 開啟命令提示字元，然後使用下列範例中的其中一個命令。 這裡所列的範例假設您使用 Visual Studio Community Edition；請根據您的版本適當地調整命令。
 
+> [!TIP]
+> 為了防止發生錯誤，請確保完整安裝路徑少於 80 個字元。
+
 - 針對 .NET Web 和 .NET 桌面開發，請執行：
 
    ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US```
@@ -81,10 +87,10 @@ ms.locfileid: "53952392"
 
    ```vs_community.exe --layout c:\vs2017layout --lang en-US```
 
-如果您想要安裝英文以外的語言，請將 `en-US` 變更為[語言地區設定清單](#list-of-language-locales)中的地區設定。 然後，使用[可用的元件和工作負載清單](workload-and-component-ids.md)，進一步自訂您的安裝快取。
+  > [!NOTE]
+  > 完整的 Visual Studio 2017 配置至少需要 35 GB 的磁碟空間。 如需如何建立只含有您要安裝的元件之配置的資訊，請參閱[使用命令列參數來安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)。
 
-> [!IMPORTANT]
-> 完整的 Visual Studio 2017 配置至少需要 35 GB 的磁碟空間，並可能需要花費一些時間才能完成下載。 如需如何建立只含有您要安裝的元件之配置的資訊，請參閱[使用命令列參數來安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)。
+如果您想要安裝英文以外的語言，請將 `en-US` 變更為[語言地區設定清單](#list-of-language-locales)中的地區設定。 然後，使用[可用的元件和工作負載清單](workload-and-component-ids.md)，進一步自訂您的安裝快取。
 
 ### <a name="step-3---install-visual-studio-from-the-local-cache"></a>步驟 3 - 從本機快取安裝 Visual Studio
 

@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_LOCAL |Microsoft Docs
+title: METADATA_ADDRESS_LOCAL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85c763eb9455966f576344a0116cf4a42df0ee18
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b29c9ec3d424dfb88f4cbe14e6e8baea87737d8e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940871"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916664"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 此結構表示 （通常是函式或方法） 的範圍內的區域變數的位址。  

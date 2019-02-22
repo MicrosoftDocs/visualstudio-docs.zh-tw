@@ -1,8 +1,6 @@
 ---
-title: 'Idiastackframe:: Get_rawlvarinstancevalue |Microsoft Docs'
-ms.custom: ''
+title: IDiaStackFrame::get_rawLVarInstanceValue | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ce526259-85a6-475b-9274-0b3a21d95db2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f5e34b766e27693326aba34b7b7259042870f00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 96851912abb6593ce1fe72bd3eebdd67c120c26b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933491"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992785"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 這個方法會擷取指定的本機變數的值做為未經處理位元組。  
@@ -51,5 +49,5 @@ HRESULT get_rawLVarInstanceValue(
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

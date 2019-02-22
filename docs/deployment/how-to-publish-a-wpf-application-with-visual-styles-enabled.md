@@ -1,23 +1,21 @@
 ---
-title: 如何： 發行已啟用視覺化樣式的 WPF 應用程式 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：發行啟用視覺化樣式的 WPF 應用程式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c9569ca48ac95ff1f2f99948f6fc700ea6dd8902
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388104"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029306"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：發佈已啟用視覺樣式的 WPF 應用程式
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>HOW TO：發佈已啟用視覺樣式的 WPF 應用程式
 視覺化樣式會啟用常見的控制項，以根據使用者選擇的佈景主題變更的外觀。 根據預設，已啟用視覺化樣式未針對 Windows Presentation Foundation (WPF) 應用程式，因此您必須手動啟用它們。 不過，啟用視覺化樣式的 WPF 應用程式，然後發佈方案會導致錯誤。 本主題說明如何解決此錯誤，發佈已啟用視覺化樣式的 WPF 應用程式的程序。 如需視覺化樣式的詳細資訊，請參閱[視覺化樣式概觀](/windows/desktop/Controls/visual-styles-overview)。 如需詳細的錯誤訊息的詳細資訊，請參閱[疑難排解 ClickOnce 部署的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。  
   
  若要解決此錯誤，並發行方案，您必須執行下列工作：  
@@ -73,7 +71,7 @@ ms.locfileid: "52388104"
   
          此按鈕會顯示所有的專案項目，包括已排除以及一些通常會隱藏。 資訊清單檔會顯示為專案項目。  
   
-2.  建置及發佈您的解決方案。 如需如何發佈方案的詳細資訊，請參閱[如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
+2.  建置及發佈您的解決方案。 如需如何發佈方案的詳細資訊，請參閱[How to:使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
   
 ## <a name="create-a-manifest-file"></a>建立資訊清單檔  
   

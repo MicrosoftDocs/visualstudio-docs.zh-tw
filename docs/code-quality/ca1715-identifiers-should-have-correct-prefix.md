@@ -1,7 +1,6 @@
 ---
 title: CA1715:識別項名稱應該使用正確的前置字元
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1715
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: cf45f8df-6855-4cb6-a4e2-7cfed714cf2f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c7abdaa2356bdf622f0892e9b027047fc021096
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 871c97591ebbaea2087273d925613e12f0fe7529
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912921"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923560"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715:識別項名稱應該使用正確的前置字元
 
@@ -32,7 +31,7 @@ ms.locfileid: "53912921"
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|類別|Microsoft.Naming|
+|分類|Microsoft.Naming|
 |中斷變更|中斷-引發介面上時。<br /><br /> 非分行-時引發的泛型類型參數。|
 
 ## <a name="cause"></a>原因

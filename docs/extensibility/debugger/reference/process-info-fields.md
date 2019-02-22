@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FIELDS |Microsoft Docs
+title: PROCESS_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0d9cc345-3d3a-44d8-ae15-a67acb97a828
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75a323690ef11e31a8d738e8042b2b6fab7a7fc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 995b4cda0cc1520871f55d3c4b57899754a05c3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891329"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937856"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
 指定的擷取處理序的資訊類型。  

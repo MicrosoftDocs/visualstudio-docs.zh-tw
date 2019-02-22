@@ -1,8 +1,6 @@
 ---
 title: C# 程式碼片段
 ms.date: 06/05/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - snippets [C#]
@@ -11,15 +9,15 @@ helpviewer_keywords:
 - C#, code snippets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: feec485f752ac13b43310e4afd97bdfaac93ee51
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: badd1ef796f1854f07043e775923c4d3f1480624
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849160"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917840"
 ---
 # <a name="c-code-snippets"></a>C# 程式碼片段
 

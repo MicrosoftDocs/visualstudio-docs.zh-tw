@@ -1,14 +1,9 @@
 ---
-title: 逐步解說：針對 Windows 市集應用程式建立和執行單元測試 | Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立和執行 Windows 市集應用程式的單元測試 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
 - unit tests
@@ -17,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dcd09c2a19bd96a02075901f6b58da71a1a9bee9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852527"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754870"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>逐步解說：針對 Windows 市集應用程式建立和執行單元測試
+# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>逐步解說：建立和執行單元測試 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的單元測試支援，並包含 Visual C#、Visual Basic 和 Visual C++ 的單元測試程式庫範本。  
@@ -119,7 +114,7 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
     >  您必須建置方案以更新 [測試總管] 中的單元測試清單。  
   
     > [!WARNING]
-    >  Visual Studio 的已知問題：您必須在建置測試專案之前開啟測試總管。  
+    >  Visual Studio 的已知問題：您必須在建置測試專案之前開啟測試總管 中。  
   
 3.  在 [測試總管] 中，選擇您建立的單元測試。  
   
@@ -144,7 +139,7 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
 ## <a name="external-resources"></a>外部資源  
   
 ### <a name="videos"></a>視訊  
- [Channel 9：Unit testing your Windows Store apps built using XAML (單元測試使用 XAML 建置的 Windows 市集應用程式)](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Channel 9單元測試使用 XAML 建置的 Windows 市集應用程式](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>論壇  
  [Visual Studio 單元測試](http://go.microsoft.com/fwlink/?LinkId=224477)  
@@ -152,9 +147,6 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../includes/win8-appna
 ### <a name="msdn-library"></a>MSDN Library  
  [MSDN Library - 建立並執行現有程式碼的單元測試 (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Visual Studio 測試市集應用程式](../test/testing-store-apps-with-visual-studio.md)   
  [使用 Team Foundation Build 建置和測試 Windows 市集應用程式](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
-
-
-

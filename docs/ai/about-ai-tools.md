@@ -1,5 +1,6 @@
 ---
 title: 適用於 Visual Studio 的 AI 工具
+titleSuffix: ''
 description: 適用於 Visual Studio 的 AI 工具概觀
 keywords: AI, Visual Studio
 author: lisawong19
@@ -11,12 +12,12 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: bb68e1b7b109b762f11410194076ab2b2eb30bb5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51ee7cb2ea1e90a749fe8f2409125b42b02970c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908549"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800924"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
@@ -46,5 +47,5 @@ Visual Studio Tools for AI 與 Azure Machine Learning 整合，讓您輕鬆瀏�
 ## <a name="supported-operating-systems"></a>Supported Operating Systems
 此延伸模組目前支援 Windows 64 位元作業系統
 
-# <a name="support"></a>支援
+## <a name="support"></a>支援
 [GitHub Issue Tracker](http://github.com/Microsoft/vs-tools-for-ai/issues) 上提供此延伸模組的支援。 您可以提交問題報告、功能建議，或參與討論。

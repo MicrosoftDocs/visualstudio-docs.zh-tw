@@ -2,21 +2,20 @@
 title: 工作流程設計工具-Interop 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.Interop.UI
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66734cd555c88d960431373d4ccf6a7ca0b39099
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e020e2f4e1ffae9c0e979f2230ff845b1cda203e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867286"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942696"
 ---
 # <a name="interop-activity-designer"></a>Interop 活動設計工具
 

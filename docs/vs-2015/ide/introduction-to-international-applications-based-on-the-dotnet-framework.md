@@ -1,14 +1,9 @@
 ---
 title: 以 .NET Framework 為基礎的國際應用程式簡介 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - strings [Visual Studio], localizing
 - Web applications [.NET Framework], globalization
@@ -30,13 +25,13 @@ ms.assetid: b0788993-e62d-4f68-8235-5f87b1d48525
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3d1539d832b67a160e29b22b71066f72609e35b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 86ca63ead6b2014dfe0d90d496ef4b7d7efe7f63
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270027"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54784796"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>以 .NET Framework 為基礎的國際應用程式簡介
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +48,8 @@ ms.locfileid: "49270027"
   
  執行當地語系化的應用程式時，其外觀是由兩個文化特性值決定。 (「文化特性」是一組與使用者的語言、環境及文化慣例相關的使用者喜好設定資訊。)UI 文化特性設定會決定載入的資源。 UI 文化特性 (Culture) 在 Web.config 檔案和網頁指示詞中設定為 `UICulture`，在 Visual Basic 或 Visual C# 程式碼中設定為 <xref:System.Globalization.CultureInfo.CurrentUICulture%2A>。 文化特性設定決定日期、數字、貨幣等值的格式。 文化特性在 Web.config 檔案和網頁指示詞中設定為 `Culture`，在 Visual Basic 或 Visual C# 程式碼中設定為 <xref:System.Globalization.CultureInfo.CurrentCulture%2A>。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Globalization>   
  <xref:System.Resources>   
  [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)   
  [安全性和當地語系化附屬組件](../ide/security-and-localized-satellite-assemblies.md)
-

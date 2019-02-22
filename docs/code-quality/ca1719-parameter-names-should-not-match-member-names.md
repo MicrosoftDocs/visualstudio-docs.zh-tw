@@ -1,7 +1,6 @@
 ---
 title: CA1719:參數名稱不應該和成員名稱相符
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - ParameterNamesShouldNotMatchMemberNames
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c6fea690-1659-4ee7-a1c5-125ad6754525
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca40c478eb383025755bff147dd9e0f47cecb79
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 001983bf9ca182f89587b23e04828b93d12d98f1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868874"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953980"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719:參數名稱不應該和成員名稱相符
 

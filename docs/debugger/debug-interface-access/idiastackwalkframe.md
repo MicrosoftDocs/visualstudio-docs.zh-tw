@@ -1,8 +1,6 @@
 ---
-title: IDiaStackWalkFrame |Microsoft 文件
-ms.custom: ''
+title: IDiaStackWalkFrame | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: 42d82845-d6f6-4846-9ecd-9dd169216077
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f16d6f824b3b150406c23cce87e186fe9b120999
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: cf14665b4a8f6f57e01d53debedbb3534fa025d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465625"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015481"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
-會維護的引動過程之間的堆疊內容[idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md)方法。  
+會維護引動過程之間的堆疊內容[idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md)方法。  
   
 ## <a name="syntax"></a>語法  
   
 ```  
-IDiaStackWalkFrame : IUnknown  
+IDiaStackWalkFrame : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
@@ -36,24 +34,24 @@ IDiaStackWalkFrame : IUnknown
 |方法|描述|  
 |------------|-----------------|  
 |[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)|擷取暫存器的值。|  
-|[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)|設定暫存器的值。|  
-|[IDiaStackWalkFrame::readMemory](../../debugger/debug-interface-access/idiastackwalkframe-readmemory.md)|從映像讀取記憶體。|  
-|[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|搜尋指定的堆疊框架的最接近的函式傳回的位址。|  
-|[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|搜尋指定的堆疊框架的回覆地址或接近指定的位址。|  
+|[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)|設定暫存器值。|  
+|[IDiaStackWalkFrame::readMemory](../../debugger/debug-interface-access/idiastackwalkframe-readmemory.md)|讀取影像中的記憶體。|  
+|[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|搜尋指定的堆疊框架之最接近的函式傳回的位址。|  
+|[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|搜尋指定的堆疊框架的地址，位於或接近指定的位址。|  
   
 ## <a name="remarks"></a>備註  
- 在程式執行期間會使用這個介面，讀取和寫入暫存器，以及存取的記憶體和尋找地址。  
+ 此介面用在程式執行期間，讀取和寫入暫存器，以及存取的記憶體和尋找傳回的位址。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 用戶端應用程式會實作這個介面，並將傳遞至介面的執行個體[idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md)方法。 相同的執行個體，這個介面一再重複用來在每次叫用期間維持暫存器的狀態`execute`方法。 `execute`方法也使用此介面來判斷傳回的位址。  
+ 用戶端應用程式會實作這個介面，並將傳遞至介面的執行個體[idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md)方法。 每次叫用期間，維持狀態的暫存器一次又一次使用相同的執行個體，這個介面的`execute`方法。 `execute`方法也使用此介面來判斷傳回的位址。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Dia2.h  
+ 標頭：dia2.h  
   
  程式庫： diaguids.lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>另請參閱  
- [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>請參閱  
+ [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)

@@ -1,20 +1,19 @@
 ---
 title: 將節點新增至工作區中，從開始檢視 XML 結構描述設計工具中
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1adf06d6f9a356fc31ead5ffb22f795c3da21033
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f2fac4ce1266dc9df59ada54631306664bd6f42
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964386"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913833"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>HOW TO：將節點從開始檢視加入至工作區
 

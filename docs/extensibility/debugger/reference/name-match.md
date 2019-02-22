@@ -1,5 +1,5 @@
 ---
-title: NAME_MATCH |Microsoft Docs
+title: NAME_MATCH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7510dc35a8398349eae032b915d463b2a301c84e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 995c3bd72fafefdf7e4dffdcd25762cbe3683210
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893233"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015325"
 ---
 # <a name="namematch"></a>NAME_MATCH
 選取 比對名稱的大小寫選項。  
@@ -66,7 +66,7 @@ public enum NameMatchOptions { 
   
  命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- 組件：Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

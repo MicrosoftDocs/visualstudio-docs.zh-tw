@@ -6,20 +6,18 @@ dev_langs:
 - CPP
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 4c247d693da287581b8ab163880e9cecf4aeb17c
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5157f1d6a851e0784e79dfbfe5b94aef0490a026
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304913"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930554"
 ---
-# <a name="visual-studio-data-tools-for-c"></a>適用於 C++ 的 Visual Studio Data Tools
+# <a name="visual-studio-data-tools-for-c"></a>適用於 C++ 的 Visual Studio 資料工具
 
 當您存取資料來源時，原生 c + + 通常可以提供最快的效能。 不過，不是因為它是.NET 應用程式的豐富工具在 Visual Studio 中的 c + + 應用程式的資料。 例如， **Zdroje dat**視窗不能用來將拖放到 c + + 設計介面上的資料來源。 如果您需要物件關聯式層次，您必須自行撰寫，或使用協力廠商產品。 這也適用於資料繫結功能，雖然使用 Microsoft Foundation Class 程式庫的應用程式可以使用一些資料庫類別，以及文件和檢視儲存在記憶體中的資料，並顯示給使用者。 如需詳細資訊，請參閱 < [Visual c + + 中的資料存取](/cpp/data/data-access-in-cpp)。
 
@@ -29,7 +27,7 @@ ms.locfileid: "52304913"
 
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>從 c + + 應用程式連接到 localDB 透過 ODBC 和 SQL Native Client
 
-1. 安裝 SQL Server Data Tools
+1. 安裝 SQL Server Data Tools。
 
 2. 如果您需要連接到範例 SQL 資料庫，請下載 Northwind 資料庫，並將它解壓縮到新位置。
 
@@ -58,7 +56,7 @@ ms.locfileid: "52304913"
    #include <sqlncli.h>
    ```
 
-    請注意，範例不會實際使用的任何原生用戶端功能，因此上述的步驟不需要讓它編譯並執行。 但您可以使用這項功能現在已設定專案。 如需詳細資訊，請參閱 [SQL Server Native Client Programming](/sql/relational-databases/native-client/sql-server-native-client) (SQL Server Native Client 程式設計)
+    請注意，範例不會實際使用的任何原生用戶端功能，因此上述的步驟不需要讓它編譯並執行。 但您可以使用這項功能現在已設定專案。 如需詳細資訊，請參閱 [SQL Server Native Client 程式設計](/sql/relational-databases/native-client/sql-server-native-client)。
 
 7. 指定要使用 ODBC 子系統中的驅動程式。 此範例會將驅動程式連接字串屬性中的傳遞做為命令列引數。 在 **專案** > **屬性** > **偵錯**，加入這個命令引數：
 
@@ -66,7 +64,7 @@ ms.locfileid: "52304913"
    DRIVER="SQL Server Native Client 11.0"
    ```
 
-8. 按 **F5** 鍵建置並執行應用程式。 您應該會看到一個對話方塊會提示您輸入資料庫的驅動程式。 請輸入`(localdb)\MSSQLLocalDB`，並檢查**使用信任連接**。 按 [確定]： 您應該會看到主控台中，使用訊息，指出成功的連線。 您也應該看到命令提示字元中。 您可以在這裡輸入 SQL 陳述式。 下列畫面顯示一個範例查詢和結果：
+8. 按 **F5** 鍵建置並執行應用程式。 您應該會看到一個對話方塊會提示您輸入資料庫的驅動程式。 請輸入`(localdb)\MSSQLLocalDB`，並檢查**使用信任連接**。 按 [確定]。 您應該會看到主控台中，使用訊息，指出成功的連線。 您也應該看到命令提示字元中。 您可以在這裡輸入 SQL 陳述式。 下列畫面顯示一個範例查詢和結果：
 
    ![ODBC 範例查詢的輸出](../data-tools/media/raddata-odbc-sample-query-output.png)
 

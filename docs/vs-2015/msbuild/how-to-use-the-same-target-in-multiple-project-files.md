@@ -1,14 +1,9 @@
 ---
 title: 如何：在多個專案檔中使用相同的目標 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, importing
 - MSBuild, using the same target in multiple project files
@@ -16,13 +11,13 @@ ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7b886c4865d715c4fee4e9385288f2e4eb15baa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9e0f787426846137038adf16b9373012f3deeb25
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223336"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54769325"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>如何：使用多個專案檔內相同的目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "49223336"
   
 1.  在匯入端專案檔中，定義用來作為所匯入專案中屬性和項目之參數的所有屬性和項目。  
   
-2.  使用 `Import` 元素來匯入專案。 例如:   
+2.  使用 `Import` 元素來匯入專案。 例如：  
   
      `<Import Project="MyCommon.targets"/>`  
   
@@ -120,9 +115,6 @@ ms.locfileid: "49223336"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)   
  [目標](../msbuild/msbuild-targets.md)
-
-
-

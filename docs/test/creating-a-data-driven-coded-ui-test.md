@@ -1,21 +1,20 @@
 ---
-title: 建立資料驅動自動程式化 UI 測試
+title: 資料驅動式自動程式化 UI 測試
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e46353f7e38a1822d5cbcc21441d1d4dccdf5c57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e387bb9af6c1fa8cf42a606087c264a7c27c3ee9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968601"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970916"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>建立資料驅動自動程式碼 UI 測試
 
@@ -59,16 +58,17 @@ ms.locfileid: "53968601"
    [TestMethod]
    public void CodedUITestMethod1()
    {
-       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       // To generate code for this test, select "Generate Code for Coded UI Test"
+       // from the shortcut menu and select one of the menu items.
        this.UIMap.AddNumbers();
    }
    ```
 
-5. 使用 `AddNumbers()` 方法，確認執行測試。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後選擇 [執行測試]。 (鍵盤快速鍵：**Ctrl**+**R****T**)。
+5. 使用 `AddNumbers()` 方法，確認執行測試。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後選擇 [執行測試]。 (鍵盤快速鍵：**Ctrl**+**R****T**)。
 
     [測試總管] 視窗中會顯示測試結果，而測試結果顯示測試成功還是失敗。 若要開啟 [測試總管] 視窗，請從 [測試] 功能表中選擇 [視窗]，然後選擇 [測試總管]。
 
-6. 因為資料來源也可以用於判斷提示參數值 (測試用來確認預期的值)；讓我們新增判斷提示來驗證兩個數字的總和是否正確。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後依序選擇 [產生自動程式化 UI 測試的程式碼] 和 [使用自動程式化 UI 測試產生器]。
+6. 因為資料來源也可以用於判斷提示參數值 (測試用來確認預期的值)；讓我們新增判斷提示來驗證兩個數字的總和是否正確。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後依序選擇 [產生自動程式化 UI 測試的程式碼] 和 [使用自動程式化 UI 測試產生器]。
 
     對應計算機中顯示總和的文字控制項。
 
@@ -87,13 +87,12 @@ ms.locfileid: "53968601"
    ```csharp
    public void CodedUITestMethod1()
    {
-       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
        this.UIMap.AddNumbers();
        this.UIMap.ValidateSum();
    }
    ```
 
-9. 使用 `ValidateSum()` 方法，確認測試執行。 將游標放在上面顯示的測試方法中，開啟操作功能表，然後選擇 [執行測試]。 (鍵盤快速鍵：**Ctrl**+**R****T**)。
+9. 使用 `ValidateSum()` 方法，確認測試執行。 將游標放在上面顯示的測試方法中、開啟右鍵功能表，然後選擇 [執行測試]。 (鍵盤快速鍵：**Ctrl**+**R****T**)。
 
      目前，所有參數值在其方法中都會定義為常數。 接下來，讓我們建立資料集，以將測試設為資料驅動。
 
@@ -131,7 +130,6 @@ ms.locfileid: "53968601"
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
     public void CodedUITestMethod1()
     {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
         this.UIMap.AddNumbers();
         this.UIMap.ValidateSum();
     }
@@ -150,7 +148,7 @@ ms.locfileid: "53968601"
 
 ### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>步驟 4 - 使用自動程式化 UI 測試中的資料
 
-1.  將 `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` 新增至 *CodedUITest.cs* 檔案的頂端：
+1. 將 `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` 新增至 *CodedUITest.cs* 檔案的頂端：
 
     ```csharp
     using System;
@@ -166,16 +164,16 @@ ms.locfileid: "53968601"
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;
     ```
 
-2.  在將套用資料來源中值的 `TestContext.DataRow[]` 方法中，加入 `CodedUITestMethod1()`。 資料來源值會使用控制項 `SearchProperties` 來覆寫指派給 UIMap 控制項的常數：
+2. 在將套用資料來源中值的 `TestContext.DataRow[]` 方法中，加入 `CodedUITestMethod1()`。 資料來源值會使用控制項 `SearchProperties` 來覆寫指派給 UIMap 控制項的常數：
 
-    ```csharp
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();this.UIMap.UICalculatorWindow.UIItemWindow21.UIItem2Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num2"].ToString();
-        this.UIMap.AddNumbers();
-        this.UIMap.ValidateSumExpectedValues.UIItem2TextDisplayText = TestContext.DataRow["Sum"].ToString();
-        this.UIMap.ValidateSum();
+   ```csharp
+   public void CodedUITestMethod1()
+   {
+       this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();
+       this.UIMap.UICalculatorWindow.UIItemWindow2.UIItem2Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num2"].ToString();
+       this.UIMap.AddNumbers();
+       this.UIMap.ValidateSumExpectedValues.UIItem3TextDisplayText = TestContext.DataRow["Sum"].ToString();
+       this.UIMap.ValidateSum();
     }
     ```
 
@@ -197,15 +195,15 @@ ms.locfileid: "53968601"
 
 ### <a name="step-5---run-the-data-driven-test"></a>步驟 5 - 執行資料驅動測試
 
-1.  重新執行測試，確認測試現在是資料驅動。
+重新執行測試，確認測試現在是資料驅動。
 
-     您應該會看到使用 .*csv* 檔案中的值透過三個反覆項目的測試回合。 驗證也應該會運作，而且測試在 [測試總管] 中應該顯示為通過。
+您應該會看到使用 .*csv* 檔案中的值透過三個反覆項目的測試回合。 驗證也應該會運作，而且測試在 [測試總管] 中應該顯示為通過。
 
 ## <a name="q--a"></a>問與答
 
-###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> 其他資料來源類型 (例如 SQL Express 或 XML) 的資料來源屬性為何？
+### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> 其他資料來源類型 (例如 SQL Express 或 XML) 的資料來源屬性為何？
 
-您可以使用下表中的範例資料來源字串，方法是將它們複製至您的程式碼，並進行必要的自訂。
+**答：** 您可以使用下表中的範例資料來源字串，方法是將它們複製至您的程式碼，並進行必要的自訂。
 
 **資料來源類型和屬性**
 

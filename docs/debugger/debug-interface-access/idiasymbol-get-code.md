@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_code |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_code | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f425fa3-7ba6-4979-8b3e-0fcd06cbba73
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d157e33581054e3aa8f79f60cb1d3609dc16b6ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0abfdc449d85a193aef41799d77dd0739599794c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841659"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993531"
 ---
 # <a name="idiasymbolgetcode"></a>IDiaSymbol::get_code
 擷取指定之程式碼位址是否參考符號的旗標。  
@@ -27,7 +25,7 @@ ms.locfileid: "49841659"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_code (   
+HRESULT get_code (   
    BOOL* pRetVal  
 );  
 ```  
@@ -49,5 +47,5 @@ HRESULT get_code (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

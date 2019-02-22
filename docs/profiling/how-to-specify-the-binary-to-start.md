@@ -1,8 +1,6 @@
 ---
-title: 如何：指定要啟動的二進位檔 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：指定要啟動的二進位檔 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.itemlaunch
@@ -12,17 +10,17 @@ helpviewer_keywords:
 - performance sessions, launching
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87fc4102b3cbd3420f1e5c3b7ea4a067e0d95a0d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 8a82e67d92dcb7b59898e4eb9d4b72d3e53ff351
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844855"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952570"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>如何：指定要啟動的二進位檔
+# <a name="how-to-specify-the-binary-to-start"></a>HOW TO：指定要啟動的二進位檔
 
 若要剖析二進位檔 (如 DLL)，您必須在 [\<目標> 屬性頁] 對話方塊中輸入資訊。 這項資訊會指示 DLL 專案可以在何處找到呼叫的應用程式。
 

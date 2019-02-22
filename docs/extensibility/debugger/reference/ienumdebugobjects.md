@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugObjects |Microsoft Docs
+title: IEnumDebugObjects | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0950364c-6c8a-4b6c-ba37-c6aa359fa72c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b76b63aee413b830a468f064647798a13f3d7f99
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a93d94a49ed331b74886f001fb2d4069d6b10ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895177"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919704"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
@@ -42,7 +42,7 @@ IEnumDebugObjects : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一個](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|擷取下的一組[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)列舉中的物件。|  
+|[下一步](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|擷取下的一組[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)列舉中的物件。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|略過指定的數目的項目。|  
 |[Reset](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|將列舉重設第一個項目中。|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|擷取一份目前的列舉型別。|  
@@ -56,7 +56,7 @@ IEnumDebugObjects : IUnknown
   
  命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- 組件：Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   

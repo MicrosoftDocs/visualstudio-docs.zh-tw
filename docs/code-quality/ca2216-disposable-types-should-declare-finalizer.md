@@ -1,7 +1,6 @@
 ---
 title: CA2216:可處置的類型應該宣告完成項
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DisposableTypesShouldDeclareFinalizer
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0cabcc5e-b526-452b-8c2a-0cbe3b93c0ef
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f53f91a6a4775fb17e273fb87c4c669f74ad45e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e4baee9f532c0351feeced07ce9403245ccee14a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825993"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927694"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216:可處置的類型應該宣告完成項
 

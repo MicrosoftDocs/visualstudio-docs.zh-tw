@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1d87d761d27e9b77034eb5c36a71b4b5283de59
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 116c7e3adf8b8d75b96d70e25fb0bd173ff9474e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831059"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984687"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>使用 Interop 組件的命令和功能表
 使用 Interop 組件中實作功能表和工具列命令的 VSPackage 必須：  

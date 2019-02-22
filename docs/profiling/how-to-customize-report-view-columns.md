@@ -1,8 +1,6 @@
 ---
-title: 如何：自訂報表檢視資料行 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：自訂報表檢視資料行 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.test.columnchooser.dialogbox
@@ -12,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6f06b360348ad06df6433c67a4cae7f543ea5ce
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 4a5da139d9d4e1ddc797f48f55e120906f03109b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815833"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019719"
 ---
-# <a name="how-to-customize-report-view-columns"></a>如何：自訂報表檢視資料行
+# <a name="how-to-customize-report-view-columns"></a>HOW TO：自訂報表檢視資料行
 Visual Studio Team System Development 版的效能工具已完全整合至整合式開發環境 (Integrated Development Environment，IDE)，可提供流暢的使用者經驗。 下列清單是可透過新增、移除及重新排列資料行來自訂的代表性檢視︰  
   
 -   [模組檢視](../profiling/modules-view.md)  

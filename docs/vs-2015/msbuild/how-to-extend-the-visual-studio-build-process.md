@@ -1,14 +1,9 @@
 ---
-title: HOW TO：擴充建置程序 |Microsoft Docs
-ms.custom: ''
+title: 如何： 擴充建置程序 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding predefined targets
 - MSBuild, overriding DependsOn properties
@@ -18,15 +13,15 @@ ms.assetid: cb077613-4a59-41b7-96ec-d8516689163c
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e552b75ea5ba34004d0c53850f1af77a120b20cb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 43b95fd47c2d5b859478814dd330c175e82bac89
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050253"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54758661"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>HOW TO：延伸 Visual Studio 建置流程
+# <a name="how-to-extend-the-visual-studio-build-process"></a>如何：擴充 Visual Studio 建置處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 
@@ -61,10 +56,10 @@ ms.locfileid: "53050253"
 
    下表顯示 Microsoft.Common.targets 中您可安全覆寫的所有目標。
 
-|目標名稱|說明|
+|目標名稱|描述|
 |-----------------|-----------------|
 |`BeforeCompile`、 `AfterCompile`|在核心編譯完成之前或之後，會執行插入至其中一個目標的工作。 大部分的自訂是在這兩個目標的其中一個中完成。|
-|`BeforeBuild`、 `AfterBuild`|在組建的任何其他項目之前或之後，將會執行其中一個目標中插入的工作。 **注意：**`BeforeBuild`和`AfterBuild`大部分專案檔結尾的註解中，已定義目標。 這可讓您輕鬆地將建置前和建置後事件新增至專案檔。|
+|`BeforeBuild`、 `AfterBuild`|在組建的任何其他項目之前或之後，將會執行其中一個目標中插入的工作。 **注意：** 在大部分專案檔結尾的註解中，已定義 `BeforeBuild` 和 `AfterBuild` 目標。 這可讓您輕鬆地將建置前和建置後事件新增至專案檔。|
 |`BeforeRebuild`、 `AfterRebuild`|在叫用核心重建功能之前或之後，執行插入至其中一個目標的工作。 Microsoft.Common.targets 中的目標執行順序是：`BeforeRebuild`、`Clean`、`Build` 和 `AfterRebuild`。|
 |`BeforeClean`、 `AfterClean`|在叫用核心清除功能之前或之後，執行插入至其中一個目標的工作。|
 |`BeforePublish`、 `AfterPublish`|在叫用核心發行功能之前或之後，執行插入至其中一個目標的工作。|
@@ -125,7 +120,7 @@ ms.locfileid: "53050253"
 
 ### <a name="commonly-overridden-dependson-properties"></a>經常覆寫的 "DependsOn" 屬性
 
-|屬性名稱|說明|
+|屬性名稱|描述|
 |-------------------|-----------------|
 |`BuildDependsOn`|如果您想要在整個建置處理序之前或之後插入自訂目標，這是要覆寫的屬性。|
 |`CleanDependsOn`|如果您想要清除自訂建置處理序的輸出，這是要覆寫的屬性。|

@@ -7,18 +7,17 @@ helpviewer_keywords:
 - performance [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.performancecenter
-ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f60acd8e31f9a549406b4b8c40aacdd5327f335
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3094d6fbfa561d995c5cc72e0a6e56fbdd47ee63
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832618"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317675"
 ---
 # <a name="optimize-visual-studio-performance"></a>最佳化 Visual Studio 效能
 
@@ -26,7 +25,7 @@ ms.locfileid: "53832618"
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>升級至 Visual Studio 2017 15.6 版或更新版本
 
-如果您目前使用 Visual Studio 2015，請免費下載 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 簽出其改善的效能。 Visual Studio 2017 中的解決方案載入速度快兩或三倍，而其他領域的效能也會改善。 Visual Studio 2017 與 Visual Studio 2015 並存相容，因此您試用並不會遺失任何項目。
+如果您目前使用 Visual Studio 2015，請免費下載 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 簽出其改善的效能。 Visual Studio 2017 中的解決方案載入速度快兩或三倍，而其他領域的效能也會改善。 Visual Studio 2017 與 Visual Studio 2015 並存相容，因此您試用並不會遺失任何項目。
 
 如果您目前使用 Visual Studio 2017，則請確定執行 15.6 版或更新版本。 資料顯示 15.6 版中的解決方案載入速度快兩或三倍。 在[這裡](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)下載。
 
@@ -51,4 +50,4 @@ ms.locfileid: "53832618"
 ## <a name="see-also"></a>另請參閱
 
 - [效能秘訣與訣竅](../ide/visual-studio-performance-tips-and-tricks.md)
-- [Visual Studio 部落格 - 使用 Visual Studio 2017 15.6 版更快速地載入解決方案](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Visual Studio 部落格 - 使用 Visual Studio 2017 15.6 版更快速地載入解決方案](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

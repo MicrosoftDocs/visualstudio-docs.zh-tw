@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_virtualbaseclass |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 474eddc6-bf16-4731-9145-6db2f2a0b4fd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e4c75cd24940a4a16f3a4ad25ea6837e165de6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 901bfefb245191d84a5ffb0807ae8595c64fd871
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949444"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026407"
 ---
 # <a name="idiasymbolgetvirtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
 擷取指定的使用者定義資料類型是否為虛擬基底類別的旗標。  
@@ -27,7 +25,7 @@ ms.locfileid: "49949444"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_virtualBaseClass (   
+HRESULT get_virtualBaseClass (   
    BOOL* pRetVal  
 );  
 ```  
@@ -42,5 +40,5 @@ HRESULT get_virtualBaseClass (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

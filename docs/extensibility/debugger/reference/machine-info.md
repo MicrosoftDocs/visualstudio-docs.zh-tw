@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO |Microsoft Docs
+title: MACHINE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e7564ff2-00b5-4750-8fd5-dc1029a16912
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ee759f1b7a69c6813f48eeceb2e962effb1bfe6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 960aaf24df23055b87f72d22703fefc54e8997a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986384"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988387"
 ---
 # <a name="machineinfo"></a>MACHINE_INFO
 描述特定的電腦。  

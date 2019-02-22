@@ -1,7 +1,6 @@
 ---
 title: 檔案中尋找
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
@@ -17,15 +16,15 @@ helpviewer_keywords:
 - Find in Files tab, Find and Replace window
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 956af6e2ffc34a457bd3f5308b7104ef26ec1f4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1247bae6193294667953376f7e86c42cf5b8f8a8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963375"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952953"
 ---
 # <a name="find-in-files"></a>檔案中尋找
 

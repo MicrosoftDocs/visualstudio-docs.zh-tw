@@ -2,29 +2,28 @@
 title: 圖形診斷 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: fa69c550-62a7-41b5-bb1f-7eb04af1a6e8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e40a8ce0f2785aa606922d3f9c49f3aad48f7591
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6eb8419d08172ee23c4b0eb17e43119505caee6f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058613"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030167"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷
 Visual Studio*圖形診斷*是一份記錄並分析 Direct3D 應用程式中的轉譯和效能問題的工具。 圖形診斷可以用於在 Windows 電腦、Windows 裝置模擬器或者遠端電腦或裝置上本機執行的應用程式。  
 
- 圖形診斷工作流程會開始擷取您應用程式如何使用 Direct3D 的一筆記錄 (執行時為即時)，以立即分析、共用或儲存其行為以供稍後使用。 可以手動從 Visual Studio 或使用命令列擷取工具 **dxcap.exe** 來起始和控制擷取工作階段。 也可以使用圖形診斷擷取 API，透過程式設計方式起始和控制擷取工作階段。  
+ 圖形診斷工作流程會開始擷取您應用程式如何使用 Direct3D 的一筆記錄 (執行時為即時)，以立即分析、共用或儲存其行為以供稍後使用。 可以啟始並從 Visual Studio 或命令列擷取工具手動控制擷取工作階段**dxcap.exe**。 也會起始並藉由使用圖形診斷擷取 Api 以程式設計方式控制擷取工作階段。  
 
- 記錄擷取工作階段之後，Visual Studio「圖形分析器」隨時都可以播放其內容，方法是使用完全相同資源並轉譯應用程式所使用的命令來重建所擷取畫面格。 然後，使用 [圖形分析器] 視窗中所提供的工具，可以詳細分析所有擷取的畫面格。 這些工具可以用來檢查任何 Direct3D API 呼叫、資源、管線狀態物件、管線階段，甚至所擷取畫面格中任何像素的完整歷史記錄。 透過搭配使用這些工具，可以直覺式探索轉譯問題，這是從它如何出現在所擷取的畫面格中開始，並向下鑽研至其在應用程式原始程式碼、著色器或圖形資產中的根本原因。  
+ 記錄擷取工作階段之後，Visual Studio「圖形分析器」隨時都可以播放其內容，方法是使用完全相同資源並轉譯應用程式所使用的命令來重建所擷取畫面格。 然後，使用 圖形分析器視窗中提供的工具，任何擷取的畫面格分析可在詳細資料。 這些工具可以用來檢查任何 Direct3D API 呼叫、資源、管線狀態物件、管線階段，甚至所擷取畫面格中任何像素的完整歷史記錄。 透過搭配使用這些工具，可以直覺式探索轉譯問題，這是從它如何出現在所擷取的畫面格中開始，並向下鑽研至其在應用程式原始程式碼、著色器或圖形資產中的根本原因。  
 
  若要診斷效能問題，可以使用「畫面分析」工具分析所擷取的畫面格。 這項工具透過自動變更應用程式使用 Direct3D 的方式，並對所有變化進行基準測試，來探索潛在的效能最佳化。 過去，您可能已經手動進行這些類型的變更並只對其進行基準測試，以找出哪些變更造成差異。 使用畫面格分析，您只需要進行已知道成功的變更。  
 
@@ -82,6 +81,5 @@ Visual Studio*圖形診斷*是一份記錄並分析 Direct3D 應用程式中的�
 
 | 標題 | 說明 |
 | - | - |
-| [偵錯工具功能導覽](../debugging-in-visual-studio.md) | 介紹 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的偵錯功能。 |
+| [偵錯工具功能導覽](/visualstudio/debugger/debugger-feature-tour) | 介紹 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的偵錯功能。 |
 | [DirectX 圖形和遊戲](http://go.microsoft.com/fwlink/?LinkId=256498) | 提供討論 DirectX 圖形技術的文章。 |
-

@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: Evaluate 方法 |Microsoft 文件'
+title: 'Ijsdebugframe:: Evaluate 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38e826048e85456ca63e069de67701b1fc3e9f04
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 574af7823add67a00fc8add922b5e352fa1b369c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727448"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091919"
 ---
 # <a name="ijsdebugframeevaluate-method"></a>IJsDebugFrame::Evaluate 方法
-評估內容中的運算式，此堆疊框架。  
+評估此堆疊框架的內容中的運算式。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT Evaluate(  
    LPCOLESTR pExpressionText,  
    IJsDebugProperty **ppDebugProperty,  
@@ -41,7 +41,7 @@ HRESULT Evaluate(
  [in]要評估的運算式。  
   
  `ppDebugProperty`  
- [out]物件，表示屬性瀏覽器。  
+ [out]物件，代表屬性瀏覽器。  
   
  `pError`  
  [out]錯誤訊息，如果發生錯誤。  
@@ -49,7 +49,7 @@ HRESULT Evaluate(
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="remarks"></a>備註  
- 會傳回下列： S_OK： 評估成功時，* ppDebugProperty 包含評估結果。 S_FALSE： 評估擲回的錯誤 （或不支援評估作業）， \*pError 包含錯誤訊息。  
+ 傳回下列結果：S_OK:評估成功，* ppDebugProperty 包含評估結果。 S_FALSE:評估擲回錯誤 （或不支援評估作業）， \*pError 包含錯誤訊息。  
   
 ## <a name="requirements"></a>需求  
  **標頭：** jscript9diag.h  

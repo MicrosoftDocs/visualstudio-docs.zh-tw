@@ -1,7 +1,6 @@
 ---
 title: 維護性警告
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.maintainabilityrules
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 537e70ca-a88c-49df-bfc7-0ee63bbe4f16
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fc9b8be565cb7b8bad25b8bddbcb35158dcc0bd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d5508e203b8ed5087f456c715c492d8f1ca7c86
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938658"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943450"
 ---
 # <a name="maintainability-warnings"></a>維護性警告
 

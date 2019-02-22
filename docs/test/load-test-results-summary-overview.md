@@ -13,14 +13,13 @@ helpviewer_keywords:
 ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 70447148922382cef3e5c3fb9b7ba24613033c35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 7cc4cc2af5fb78c181be94863176914c17481e95
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834291"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928721"
 ---
 # <a name="load-test-results-summary-overview"></a>負載測試結果摘要概觀
 

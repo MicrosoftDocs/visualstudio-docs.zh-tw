@@ -1,7 +1,6 @@
 ---
 title: CA1726:建議使用慣用詞彙
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 642b2acd-3a33-4d1f-b0a7-67073ae73be2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c31838f8dcfdcb8c98d7cfdd94eb2743f6e7d90
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 469025e5856f284f4d8887b351865a0304e4d35c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909006"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917307"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726:建議使用慣用詞彙
 

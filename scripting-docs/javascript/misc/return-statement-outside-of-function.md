@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7c4b71938d960d3825030c42e965b6510ca575b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 82ba1488692f8e8b59063b8f9a52b0682d27e7f8
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802520"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349448"
 ---
 # <a name="return-statement-outside-of-function"></a>函式外部的 'return' 陳述式
 您已使用`return`全域範圍中的陳述式，您的程式碼。 `return`陳述式應該只出現在函式主體。  
   
  叫用的函式`()`運算子是一個運算式。 所有運算式都有的值;`return`陳述式用來指定函式所傳回的值。 一般格式如下：  
   
-```  
+```js
   
 return [ expression ];  
 ```  

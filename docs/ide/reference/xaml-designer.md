@@ -1,21 +1,20 @@
 ---
 title: XAML 設計工具選項頁面
 ms.date: 03/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d8dc2ff0f0bc010dd225372c0c96badd9251eae8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f56b6405935bd46c7f1e225ce587ed3d13e5fd34
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964295"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954707"
 ---
 # <a name="xaml-designer-options-page"></a>XAML 設計工具選項頁面
 
@@ -57,15 +56,15 @@ ms.locfileid: "53964295"
 |||
 |-|-|
 |**滑鼠滾輪**|捲動滑鼠滾輪來放大 XAML 設計工具。|
-|**CTRL + 滑鼠滾輪**|按住 CTRL 鍵同時捲動滑鼠滾輪，來放大 XAML 設計工具。|
-|**Alt + 滑鼠滾輪**|按住 ALT 鍵同時捲動滑鼠滾輪，來放大 XAML 設計工具。|
+|**CTRL + 滑鼠滾輪**|按住 **Ctrl** 鍵同時捲動滑鼠滾輪，來放大 XAML 設計工具。|
+|**Alt + 滑鼠滾輪**|按住 **Alt** 鍵同時捲動滑鼠滾輪，來放大 XAML 設計工具。|
 
 這些設定會決定編輯 XAML 文件時的設計工具行為。
 
 |||
 |-|-|
 |**建立時自動命名互動元素**|指定當您將互動元素新增至設計工具時，是否要提供新互動元素的預設名稱。|
-|**自動在建立元素時插入配置屬性**|指定當您將新項目新增至設計工具時，是否要提供新項目的配置屬性。|
+|**自動在建立元素時插入配置屬性**|指定當您將新項目新增至設計工具時，是否要提供新項目的配置屬性。 配置屬性就是會影響控制項配置的屬性，例如 Margin 和 VerticalAlignment。 下列 XAML 顯示選取此選項與不選取此選項時建立按鈕的方式：<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
 |**使用四分色配置**|指定目前選取的控制項是否對齊父容器的最近邊緣。 如果清除此核取方塊，則控制項對齊方式不會在移動或建立作業期間變更。|
 |**自動填入工具箱項目**|指定目前方案中的使用者控制項和自訂控制項是否自動顯示在工具箱。|
 
@@ -75,7 +74,7 @@ ms.locfileid: "53964295"
 
 |||
 |-|-|
-|**縮放方式**|捲動滑鼠滾輪，或按住 CTRL 或 ALT 鍵並同時捲動滑鼠滾輪，來放大 XAML 設計工具。|
+|**縮放方式**|捲動滑鼠滾輪，或者按住 **Ctrl** 或 **Alt** 鍵並同時捲動滑鼠滾輪，來放大 XAML 設計工具。|
 |**類型單位**|指定設計工具上的度量單位是根據點數還是像素。 因為通用 Windows 應用程式不支援點，所以如果選取 [點]，單位會自動轉換為像素。|
 
 ## <a name="artboard-blend-only"></a>畫板 (僅 Blend)

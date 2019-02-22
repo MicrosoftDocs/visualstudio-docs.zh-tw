@@ -14,15 +14,15 @@ helpviewer_keywords:
 - _AssemblyName property
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd76957844008975f67c6c1cb504aa0388b9e91b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11c344b683a67f369ef3848a41b7907622945ffa
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936889"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866853"
 ---
 # <a name="custom-document-properties-overview"></a>自訂文件屬性概觀
 
@@ -30,15 +30,15 @@ ms.locfileid: "53936889"
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="assemblyname"></a>\_組件名稱
+## <a name="assemblyname"></a>\_AssemblyName
 
 此屬性包含的介面中的 Office 方案載入器元件的 CLSID [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 4E3C66D5-58 D 4-491E-A7D4-64AF99AF6E8B 為 CLSID 值。 您不應該變更此值。
 
-## <a name="assemblylocation"></a>\_組件位置
+## <a name="assemblylocation"></a>\_AssemblyLocation
 
 此屬性包含字串，提供自訂的部署資訊清單的詳細資料。 如需有關資訊清單的詳細資訊，請參閱[應用程式和部署資訊清單在 Office 方案中](../vsto/application-and-deployment-manifests-in-office-solutions.md)。
 
- The_AssemblyLocation 屬性值可以有不同的格式，根據部署解決方案的方式：
+ \_組件位置的屬性值可以有不同的格式，根據部署解決方案的方式：
 
 - 如果從網站、 UNC 路徑或在 CD 或 USB 磁碟機上安裝發行方案，則 _AssemblyLocation 屬性具有格式*DeploymentManifestPath*|*SolutionID*。 下列字串是範例：
 

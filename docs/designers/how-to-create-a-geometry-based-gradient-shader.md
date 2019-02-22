@@ -1,23 +1,21 @@
 ---
-title: 如何：建立以幾何為基礎的漸層著色器
+title: HOW TO：建立以幾何為基礎的漸層著色器
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfdf75c058d1786febda71b05d424b1032254754
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 1baaccbe2d7df07900eecbedd385ce8c5a031cc5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923903"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957758"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>如何：建立以幾何為基礎的漸層著色器
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>HOW TO：建立以幾何為基礎的漸層著色器
 
 本文會示範如何使用著色器設計工具和有向圖形著色器語言，來建立以幾何為基礎的漸層著色器。 這個著色器可透過世界空間中物件各點的高度，來縮放 RGB 色彩常數值。
 
@@ -54,7 +52,7 @@ ms.locfileid: "37923903"
 
  某些圖形可對一些著色器提供更佳的預覽。 如需如何在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜預覽著色器＞
 
- 下圖顯示本文件中所述的著色器，套用至[如何：建立 3D 地形模型](../designers/how-to-model-3-d-terrain.md)中所示的 3D 場景。 色彩濃度會隨著世界空間的點高度增加。
+ 下圖顯示本文件中所述的著色器，套用至下列文章中所示的 3D 場景：[如何：建立 3D 地形模型](../designers/how-to-model-3-d-terrain.md)。 色彩濃度會隨著世界空間的點高度增加。
 
  ![已套用至 3D 地形模型的漸層效果](../designers/media/digit-gradient-effect-result.png)
 
@@ -64,7 +62,7 @@ ms.locfileid: "37923903"
 
 - [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [如何：匯出著色器](../designers/how-to-export-a-shader.md)
-- [如何：為 3D 地形建立模型](../designers/how-to-model-3-d-terrain.md)
-- [如何：建立灰階材質著色器](../designers/how-to-create-a-grayscale-texture-shader.md)
+- [如何：建立 3D 地形模型](../designers/how-to-model-3-d-terrain.md)
+- [如何：建立灰階紋理著色器](../designers/how-to-create-a-grayscale-texture-shader.md)
 - [著色器設計工具](../designers/shader-designer.md)
 - [著色器設計工具節點](../designers/shader-designer-nodes.md)

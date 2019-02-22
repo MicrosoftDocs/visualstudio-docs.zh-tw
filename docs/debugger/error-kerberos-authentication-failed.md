@@ -1,8 +1,6 @@
 ---
-title: '錯誤: Kerberos 驗證失敗，|Microsoft Docs'
-ms.custom: ''
+title: 錯誤：Kerberos 驗證失敗 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.callback_kerberos_auth_failed
@@ -13,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cf34885ee715a5685e4c2ced8b5a116e5c33e8d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6f8d317b5633fe94cc5d3a9933a4a698705998d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857655"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930653"
 ---
 # <a name="error-kerberos-authentication-failed"></a>錯誤：Kerberos 驗證失敗
 當您嘗試進行遠端偵錯時，可能會看到下列錯誤訊息：  
@@ -40,15 +38,15 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 - 在網域控制站上已停用 Kerberos。  
   
-  如果無法使用 Kerberos 驗證，請將帳戶變更為用於執行 Visual Studio 遠端偵錯監視的帳戶。 程序，請參閱[錯誤： 目標電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)。  
+  如果無法使用 Kerberos 驗證，請將帳戶變更為用於執行 Visual Studio 遠端偵錯監視的帳戶。 程序，請參閱[錯誤：目標電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)  
   
   如果兩部電腦都連接至相同的網域，而您仍然收到這個訊息，請確認目標電腦上的 DNS 有正確解析偵錯工具主機電腦的名稱。 請參閱下列程序。  
   
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>若要確認目標電腦上的 DNS 有正確解析偵錯工具主機電腦的名稱  
   
-1.  目標電腦上，開啟**開始**功能表上，指向**附屬應用程式**，然後按一下 **命令提示字元**。  
+1.  在目標電腦上，開啟 [開始] 功能表，指向 [附屬應用程式]，然後按一下 [命令提示字元]。  
   
-2.  在 **命令提示字元**視窗中，輸入：  
+2.  在 [命令提示字元] 視窗中，鍵入：  
   
     ```cmd
     ping <debugger_host_computer_name>  
@@ -56,10 +54,10 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 3.  `ping` 回應的第一行顯示針對指定電腦，DNS 所傳回的電腦全名和 IP 位址。  
   
-4.  偵錯工具主機電腦上，開啟**命令提示字元**視窗，然後執行`ipconfig`。  
+4.  在偵錯工具主機電腦上，開啟 [命令提示字元] 視窗，並執行 `ipconfig`。  
   
 5.  比較 IP 位址值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

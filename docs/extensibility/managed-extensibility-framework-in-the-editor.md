@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a295d3e3474f478cf3a2aa3efc2e0cefc3086b00
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df5edaeab56a05b6bb3fbafc371ec3ac4089cacc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925663"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917963"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>在編輯器中 managed Extensibility Framework
 編輯器是使用 Managed Extensibility Framework (MEF) 元件所建置。 您可以建置自己的 MEF 元件來擴充編輯器 中，和您的程式碼可以使用編輯器元件以及。  

@@ -1,8 +1,6 @@
 ---
-title: 如何： 從 DLL 專案進行偵錯 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：從 DLL 專案進行偵錯 |Microsoft Docs
 ms.date: 10/10/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,21 +15,21 @@ helpviewer_keywords:
 ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e006bbd27acc0fa88cfee1b22cb435acba1e282e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6061d2c05ff6946cd323dd2292e46c6b7d07e713
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388250"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029488"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>如何： 從 DLL 專案在 Visual Studio 中偵錯 (C#，c + +、 Visual Basic 中， F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>HOW TO：從 DLL 專案在 Visual Studio 中偵錯 (C#，c + +、 Visual Basic 中， F#)
 
 偵錯 DLL 專案的一個方法是在 DLL 專案屬性中指定呼叫端的應用程式。 然後您可以從開始偵錯 DLL 專案本身。 此方法才能運作，應用程式必須在相同的位置，與您設定的一個呼叫相同 DLL。 如果應用程式會尋找並載入 DLL 的不同版本，該版本將不會包含您的中斷點。 偵錯 Dll 的其他方法，請參閱[偵錯 DLL 專案](../debugger/debugging-dll-projects.md)。
   
-如果您受管理的應用程式呼叫原生 DLL，或您的原生應用程式呼叫的 managed 的 DLL，您可以偵錯 DLL 和呼叫端的應用程式。 如需詳細資訊，請參閱[如何：在混合模式中偵錯](../debugger/how-to-debug-in-mixed-mode.md)。   
+如果您受管理的應用程式呼叫原生 DLL，或您的原生應用程式呼叫的 managed 的 DLL，您可以偵錯 DLL 和呼叫端的應用程式。 如需詳細資訊，請參閱[＜How to：在混合模式中進行偵錯](../debugger/how-to-debug-in-mixed-mode.md)。   
 
 原生和 managed DLL 專案會有不同的設定，來指定呼叫的應用程式。 
 

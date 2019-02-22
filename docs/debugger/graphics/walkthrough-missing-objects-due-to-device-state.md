@@ -1,21 +1,19 @@
 ---
-title: 逐步解說： 遺漏的物件因裝置狀態而 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：遺漏的物件因裝置狀態而 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d1e31063bf5cf24fa5b19b1446b4c41f2dd7bd2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 33e4d07b6eb6a3af0799385d989bd8383faf3fec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869759"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019511"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>逐步解說：因裝置狀態而遺漏的物件
 本逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷來調查因為裝置狀態設定不正確而遺漏的物件。  
@@ -98,7 +96,7 @@ ms.locfileid: "49869759"
   
 2. 在 [圖形物件表]  中找出 [D3D10 裝置] 物件，然後開啟 [D3D10 裝置]  物件。 新的 [d3d10 裝置]  索引標籤隨即在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]中開啟。 若要讓這項工作更容易進行，您可以依 [類型]  排序 [圖形物件表] ：  
   
-    ![圖形物件表] 和 [相關的裝置狀態](media/vsg_walkthru1_objtable.png "vsg_walkthru1_objtable")  
+    ![圖形物件表 和 相關的裝置狀態](media/vsg_walkthru1_objtable.png "vsg_walkthru1_objtable")  
   
 3. 檢查 [d3d10 裝置]  索引標籤中顯示的裝置狀態，找出潛在的問題。 由於幾何沒有出現的原因是其基本圖形未通過深度測試，因此您可以專注於影響深度測試的裝置狀態，例如深度樣板。 在此情節中，[深度樣板描述]  (在 [輸出合併狀態] 下) 包含 **深度函式** 成員 `D3D10_COMPARISON_GREATER`不常見的值：  
   

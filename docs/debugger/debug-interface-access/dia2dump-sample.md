@@ -1,8 +1,6 @@
 ---
 title: Dia2dump 範例 |Microsoft Docs
-ms.custom: ''
 ms.date: 07/24/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e44abdce737df335133d5e54b6b022c97f639a
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
-ms.translationtype: MT
+ms.openlocfilehash: 7a91b12ae49028d2c84c8308d043d69bf2297797
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252277"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939112"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 範例
 
@@ -50,7 +48,7 @@ Dia2dump 範例隨附於 Visual Studio，並包含方案和原始程式檔。 �
 
 1. 在 [**其他 Include 目錄**] 屬性中，選擇下拉式清單控制項中，然後選擇**編輯**。
 
-1. 在 **其他 Include 目錄**對話方塊中的，在 編輯 欄位中，輸入`$(VSInstallDir)DIA SDK\include`目錄。 加入此目錄，以確保編譯器可以找到 dia2.h 檔案。 選擇**確定**以儲存變更。
+1. 在 **其他 Include 目錄**對話方塊中的，在 編輯 欄位中，輸入`$(VSInstallDir)DIA SDK\include`目錄。 加入此目錄，以確保編譯器可以找到 dia2.h 檔案。 選取 [確定] 儲存您的變更。
 
 1. 選擇**確定**若要將變更儲存至專案屬性。
 

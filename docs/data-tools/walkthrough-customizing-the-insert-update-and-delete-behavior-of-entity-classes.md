@@ -8,26 +8,24 @@ dev_langs:
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f665d860597bc99d7c9e496c115a82a60d596e09
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 27c2677b8afef1f1e2cd035acb3038b42a4ef56d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305529"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948598"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>逐步解說： 自訂插入、 更新和刪除行為的實體類別
 
-[在 Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供視覺化設計介面建立和編輯 LINQ to SQL 類別 （實體類別） 為基礎的資料庫中的物件。 藉由使用[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)，您可以使用 LINQ 技術來存取 SQL 資料庫。 如需詳細資訊，請參閱 [LINQ (Language Integrated Query)](/dotnet/csharp/linq/)。
+[在 Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供視覺化設計介面建立和編輯 LINQ to SQL 類別 （實體類別） 為基礎的資料庫中的物件。 藉由使用[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)，您可以使用 LINQ 技術來存取 SQL 資料庫。 如需詳細資訊，請參閱 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)。
 
-根據預設，LINQ to SQL 執行階段會提供邏輯以執行更新。 執行階段會建立預設`Insert`， `Update`，和`Delete`資料表 （資料行定義和主索引鍵資訊） 的結構描述為基礎的陳述式。 如果不想要使用預設行為，則可以設定更新行為，並指定用特定的預存程序 (Stored Procedure) 來執行處理資料庫資料時所需的插入、更新和刪除作業。 未產生預設行為時 (例如，實體類別是對應至檢視時)，同樣可以這樣做。 此外，在資料庫需要透過預存程序進行資料表存取時，也可以覆寫預設更新行為。 如需詳細資訊，請參閱 <<c0> [ 使用預存程序來自訂作業](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)。
+根據預設，LINQ to SQL 執行階段會提供邏輯以執行更新。 執行階段會建立預設`Insert`， `Update`，和`Delete`資料表 （資料行定義和主索引鍵資訊） 的結構描述為基礎的陳述式。 如果您不希望使用預設行為，則可以設定更新行為，並指定用特定的預存程序來執行處理資料庫資料時所需的插入、更新和刪除作業。 未產生預設行為時 (例如，實體類別是對應至檢視時)，同樣可以這樣做。 此外，在資料庫需要透過預存程序進行資料表存取時，也可以覆寫預設更新行為。 如需詳細資訊，請參閱 <<c0> [ 使用預存程序來自訂作業](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)。
 
 > [!NOTE]
-> 這個逐步解說需要使用 Northwind 資料庫中的 InsertCustomer **、UpdateCustomer** 和 DeleteCustomer** 預存程序。
+> 此逐步解說需要使用 Northwind 資料庫的 **InsertCustomer**、**UpdateCustomer** 和 **DeleteCustomer** 預存程序。
 
 這個逐步解說提供覆寫預設 LINQ to SQL 執行階段行為，以使用預存程序將資料儲存回資料庫的必要步驟。
 
@@ -65,7 +63,7 @@ ms.locfileid: "52305529"
 
        短時間之後，查詢完成執行，並建立 Northwind 資料庫。
 
-## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>建立應用程式和加入 LINQ to SQL 類別
+## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>建立應用程式和新增 LINQ to SQL 類別
 
 因為您是使用 LINQ to SQL 類別，並顯示 Windows Form 上的資料，建立新的 Windows Forms 應用程式，並加入 LINQ to SQL 類別檔案。
 
@@ -81,11 +79,11 @@ ms.locfileid: "52305529"
 
 4. 將專案命名為**UpdatingWithSProcsWalkthrough**，然後選擇**確定**。
 
-     UpdatingwithSProcsWalkthrough 專案已建立並加入至 [方案總管 **] 中。
+     **UpdatingWithSProcsWalkthrough** 專案已建立並新增至 [方案總管] 中。
 
 4.  在 [專案]  功能表中，按一下 [加入新項目] 。
 
-5.  按一下 [LINQ to SQL 類別 **] 範本，並在 [名稱**] 方塊中輸入 Northwind.dbml。
+5.  按一下 [LINQ to SQL 類別] 範本，並在 [名稱] 方塊中鍵入 **Northwind.dbml**。
 
 6.  按一下 [加入] 。
 
@@ -101,24 +99,24 @@ ms.locfileid: "52305529"
 
 2.  拖曳**客戶**從節點**伺服器總管**或**資料庫總管**拖曳至 **O/R Designer*介面。
 
-     建立一個名稱為 Customer** 的實體類別。 它的屬性會對應至 Customers 資料表中的各資料行。 因為這個實體類別代表 Customers 資料表中的單一客戶，所以它的名稱是 Customer **，而不是 Customers**。
+     會建立名為 **Customer** 的實體類別。 它的屬性會對應至 Customers 資料表中的各資料行。 因為這個實體類別代表 Customers 資料表中的單一客戶，所以其名稱為 **Customer** (而非 **Customers**)。
 
     > [!NOTE]
-    > 這個重新命名的行為稱為「複數表示 *」(Pluralization)。 它可以開啟或關閉在中開啟[[選項] 對話方塊](../ide/reference/options-dialog-box-visual-studio.md)。 如需詳細資訊，請參閱 <<c0> [ 如何： 開啟和關閉 （O/R 設計工具） 的複數表示](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。
+    > 此重新命名的行為稱為「複數表示」。 它可以開啟或關閉在中開啟[[選項] 對話方塊](../ide/reference/options-dialog-box-visual-studio.md)。 如需詳細資訊，請參閱 <<c0> [ 如何： 開啟和關閉 （O/R 設計工具） 的複數表示](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。
 
-3.  按一下 [建置 **] 功能表上的 [建置 UpdatingwithSProcsWalkthrough**] 進行專案建置。
+3.  按一下 [建置] 功能表上的 [建置 UpdatingwithSProcsWalkthrough] 以建置專案。
 
 4.  若要開啟 **資料來源** 視窗，請在**資料**功能表上，按一下 **顯示資料來源**。
 
 5.  在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。
 
-6.  按一下 [選擇資料來源類型 **] 頁面上的 [物件**]，然後按 [下一步 **]。
+6.  按一下 [選擇資料來源類型] 頁面上的 [物件]，然後按一下 [下一步]。
 
-7.  展開 [UpdatingwithSProcsWalkthrough **] 節點，然後尋找並選取 [Customer**] 類別。
+7.  展開 [UpdatingwithSProcsWalkthrough] 節點，然後尋找並選取 [Customer] 類別。
 
     > [!NOTE]
-    > 如果 Customer** 類別無法使用，請取消精靈、建置專案，然後再次執行精靈。
-8.  按一下 [完成 **] 以建立資料來源，然後將 [Customer**] 實體類別加入至 [資料來源 **] 視窗。
+    > 如果**客戶**類別無法使用，請取消精靈、建置專案，然後再次執行精靈。
+8.  按一下 [完成] 以建立資料來源，然後將 [客戶] 實體類別新增至 [資料來源] 視窗。
 
 ## <a name="create-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>建立 DataGridView 以便在 Windows Form 上顯示的客戶資料
 
@@ -126,14 +124,14 @@ ms.locfileid: "52305529"
 
 ### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>若要加入繫結至實體類別的控制項
 
-1.  在 [設計] 檢視表中開啟 [Form1 **]。
+1.  在設計檢視中開啟 [Form1]。
 
-2.  將 [Customer **] 節點從 [資料來源**] 視窗拖曳至 [Form1 **]。
+2.  將 [Customer] 節點從 [資料來源] 視窗拖曳至 [Form1]。
 
     > [!NOTE]
-    > 若要顯示 [資料來源 **] 視窗，請按一下 [資料**] 功能表上的 [顯示資料來源 **]。
+    > 若要顯示 [資料來源] 視窗，請按一下 [資料] 功能表上的 [顯示資料來源]。
 
-3.  在 [程式碼編輯器] 中開啟 Form1。
+3.  在 [程式碼編輯器] 中開啟 [Form1]。
 
 4.  將下列程式碼加入至表單，通用的表單中，任何特定的方法之外，但內部`Form1`類別：
 
@@ -163,11 +161,11 @@ ms.locfileid: "52305529"
 
 ### <a name="to-implement-save-functionality"></a>若要實作儲存功能
 
-1.  在 [設計] 檢視表中開啟 [Form1 **]。
+1.  在設計檢視中開啟 [Form1]。
 
-2.  選取 [CustomerBindingNavigator **] 上的儲存按鈕 (圖示為磁碟片的按鈕)。
+2.  選取 **CustomerBindingNavigator** 上的儲存按鈕 (具有磁碟片圖示的按鈕)。
 
-3.  在 [屬性 **] 視窗中，將 [Enabled**] 屬性設定為 [True **]。
+3.  在 [屬性] 視窗中，將 [Enabled] 屬性設定為 [True]。
 
 4.  按兩下儲存按鈕以建立事件處理常式，並切換至 [色彩編輯器]。
 
@@ -185,9 +183,9 @@ ms.locfileid: "52305529"
 
 ### <a name="to-override-the-default-update-behavior"></a>若要覆寫預設更新行為
 
-1.  開啟 LINQ to SQL 中的檔案**O/R Designer**。 (按兩下 [方案總管 **] 中的 [Northwind.dbml**] 檔案)。
+1.  開啟 LINQ to SQL 中的檔案**O/R Designer**。 (按兩下 [方案總管] 中的 **Northwind.dbml** 檔案。)
 
-2.  在 [伺服器總管 **]/[資料庫總管**] 中展開 Northwind 資料庫的 [預存程序 **] 節點，找到 [InsertCustomers**]、[UpdateCustomers **] 和 [DeleteCustomers**] 預存程序。
+2.  在 [伺服器總管] 或 [資料庫總管] 中展開 Northwind 資料庫的 [預存程序] 節點，找到 **InsertCustomers**、**UpdateCustomers** 和 **DeleteCustomers** 預存程序。
 
 3.  將所有三個預存程序拖曳至**O/R Designer**。
 
@@ -195,41 +193,41 @@ ms.locfileid: "52305529"
 
 4.  選取 **客戶**中的實體類別**O/R Designer**。
 
-5.  選取 [屬性 **] 視窗中的 [Insert**] 屬性。
+5.  選取 [屬性] 視窗中的 [Insert] 屬性。
 
-6.  按一下 [使用執行階段 **] 旁邊的省略符號，以開啟 [設定行為**] 對話方塊。
+6.  按一下 [使用執行階段] 旁邊的省略符號 (**...**)，以開啟 [設定行為] 對話方塊。
 
-7.  選取 [自訂 **]。
+7.  選取 [自訂]。
 
-8.  選取 [自訂 **] 清單中的 [InsertCustomers**] 方法。
+8.  選取 [自訂] 清單中的 [InsertCustomers] 方法。
 
-9. 按一下 [套用 **] 儲存所選取類別和行為的設定。
-
-    > [!NOTE]
-    > 完成每一項變更後按一下 [套用 **]，即可繼續設定每個類別/行為組合的行為。 如果您變更了類別或行為再按一下 **套用**、 提供讓您套用任何變更會出現警告對話方塊。
-
-10. 選取 [行為 **] 清單中的 [更新**]。
-
-11. 選取 [自訂 **]。
-
-12. 選取 [自訂 **] 清單中的 [UpdateCustomers**] 方法。
-
-     檢查 [方法引數 **] 和 [類別屬性**] 清單會發現資料表的某些資料行會有兩個 [方法引數 **] 和兩個 [類別屬性**]。 這樣可以更容易追蹤變更，並建立陳述式來檢查並行違規。
-
-13. 將 [Original_CustomerID **] 方法引數對應至 [CustomerID (Original)**] 類別屬性。
+9. 按一下 [套用] 儲存所選取類別和行為的設定。
 
     > [!NOTE]
-    > 根據預設，方法引數會對應至同名的類別屬性。 如果屬性名稱變更，使得資料表與實體類別之間不再對應，則您可能需要選取當 O/R 設計工具無法判斷正確的對應時，所要對應的對等類別屬性。 此外，如果方法引數沒有可對應的有效類別屬性，可以將 [類別屬性 **] 值設定為 [(無)**]。
+    > 完成每一項變更後按一下 [套用]，即可繼續設定每個類別/行為組合的行為。 如果您變更了類別或行為再按一下 **套用**、 提供讓您套用任何變更會出現警告對話方塊。
 
-14. 按一下 [套用 **] 儲存所選取類別和行為的設定。
+10. 選取 [行為] 清單中的 [更新]。
 
-15. 選取 [行為 **] 清單中的 [刪除**]。
+11. 選取 [自訂]。
 
-16. 選取 [自訂 **]。
+12. 選取 [自訂] 清單中的 [UpdateCustomers] 方法。
 
-17. 選取 [自訂 **] 清單中的 [DeleteCustomers**] 方法。
+     檢查 [方法引數] 和 [類別屬性] 清單會發現資料表的某些資料行會有兩個 [方法引數] 和兩個 [類別屬性]。 這樣可以更容易追蹤變更，並建立陳述式來檢查並行違規。
 
-18. 將 [Original_CustomerID **] 方法引數對應至 [CustomerID (Original)**] 類別屬性。
+13. 將 [Original_CustomerID] 方法引數對應至 [CustomerID (Original)] 類別屬性。
+
+    > [!NOTE]
+    > 根據預設，方法引數會對應至同名的類別屬性。 如果屬性名稱變更，使得資料表與實體類別之間不再對應，則您可能需要選取當 **O/R 設計工具**無法判斷正確的對應時，所要對應的對等類別屬性。 此外，如果方法引數沒有可對應的有效類別屬性，可以將 [類別屬性] 值設定為 [(無)]。
+
+14. 按一下 [套用] 儲存所選類別和行為的設定。
+
+15. 選取 [行為] 清單中的 [刪除]。
+
+16. 選取 [自訂]。
+
+17. 選取 [自訂] 清單中的 [DeleteCustomers] 方法。
+
+18. 將 [Original_CustomerID] 方法引數對應至 [CustomerID (Original)] 類別屬性。
 
 19. 按一下 [確定 **Deploying Office Solutions**]。
 
@@ -238,30 +236,30 @@ ms.locfileid: "52305529"
 
 ## <a name="test-the-application"></a>測試應用程式
 
-再次執行應用程式，確認 UpdateCustomers** 預存程序已正確更新資料庫中的客戶記錄。
+再次執行應用程式，確認 **UpdateCustomers** 預存程序已正確更新資料庫中的客戶記錄。
 
 1.  請按 **F5**。
 
-2.  修改方格內的記錄，以測試「更新」行為。
+2.  修改方格內的記錄，以測試更新行為。
 
-3.  加入新的記錄，以測試「插入」行為。
+3.  新增記錄，以測試插入行為。
 
 4.  按一下儲存按鈕，將變更儲存回資料庫。
 
 5.  關閉表單 
 
-6.  按 F5，確認更新的記錄和剛插入的記錄確實存在。
+6.  按 **F5**，確認更新的記錄和剛插入的記錄確實存在。
 
-7.  刪除您在步驟 3 建立的新記錄，以測試「刪除」行為。
+7.  刪除您在步驟 3 建立的新記錄，以測試刪除行為。
 
-8.  按一下儲存按鈕送出變更並從資料庫中移除刪除的記錄
+8.  按一下儲存按鈕送出變更並從資料庫中移除刪除的記錄。
 
 9. 關閉表單 
 
-10. 按 F5 並確認已從資料庫中移除刪除的記錄。
+10. 按 **F5** 並確認已從資料庫中移除刪除的記錄。
 
     > [!NOTE]
-    > 如果應用程式使用 SQL Server Express Edition，則根據資料庫檔案 [複製到輸出目錄 **] 屬性值的不同，在步驟 10 按 F5 時，變更可能不會出現。
+    > 如果應用程式使用 SQL Server Express Edition，則根據資料庫檔案 [複製到輸出目錄] 屬性值的不同，在步驟 10 按 **F5** 時，變更可能不會出現。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -273,7 +271,7 @@ ms.locfileid: "52305529"
 
 ## <a name="see-also"></a>另請參閱
 
-- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Visual Studio 中的 LINQ to SQL 工具)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext 方法](../data-tools/datacontext-methods-o-r-designer.md)
 - [如何： 指定用來執行更新、 插入和刪除的預存程序](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

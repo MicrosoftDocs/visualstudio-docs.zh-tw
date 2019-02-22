@@ -1,8 +1,6 @@
 ---
-title: 'Idiaenumlinenumbers:: Reset |Microsoft 文件'
-ms.custom: ''
+title: IDiaEnumLineNumbers::Reset | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d50e73aa-11a1-4813-ba23-d5861090ee12
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 655b36e09656edf52d3f8d2a9af9e2994ffdaadc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 17158b6120b3dd05897d9cb684e7666bb5897dcc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458807"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014883"
 ---
 # <a name="idiaenumlinenumbersreset"></a>IDiaEnumLineNumbers::Reset
-列舉序列重設為開頭。  
+將列舉型別序列重設到開頭。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,5 +31,5 @@ HRESULT Reset();
 ## <a name="return-value"></a>傳回值  
  傳回 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

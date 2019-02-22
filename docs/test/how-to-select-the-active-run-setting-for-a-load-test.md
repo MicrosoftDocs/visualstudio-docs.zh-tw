@@ -7,14 +7,13 @@ helpviewer_keywords:
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cfbd259eb4363041988a7682f0e5ce601c3917cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 768695338f77943e44d5e1883ce5da9d9a6bc307
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914497"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916683"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>HOW TO：選取負載測試的使用中回合設定
 

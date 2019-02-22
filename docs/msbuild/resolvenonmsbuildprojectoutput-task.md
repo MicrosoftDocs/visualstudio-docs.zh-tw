@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: a0b8fcec-8c8d-4867-85ac-5304c5108e5e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ca7fe0b9ed987896749319e3c14f2a926450782
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a482e93bb2a4e03eac7d4b0188303f203ea05445
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990918"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013882"
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>ResolveNonMSBuildProjectOutput 工作
 決定非 MSBuild 專案參考的輸出檔。  

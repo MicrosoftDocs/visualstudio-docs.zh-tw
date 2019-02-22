@@ -1,8 +1,6 @@
 ---
 title: Windows Vista 的 ClickOnce 部署 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0389665349ae9c39a0f820bc047af6cc4db2b683
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 953761232c184c3f77dea089767bfcfbb4b2ff70
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867529"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002635"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista 的 ClickOnce 部署
 
@@ -44,11 +42,11 @@ Visual Studio 會提供下列選項，以產生資訊清單：
   
    這種方法就是所謂*虛擬化*。 使用此選項，與現有的應用程式從舊版的 Visual Studio 的相容性。  
   
-  新的屬性值可用於**應用程式**頁面的 專案設計工具 （Visual C# 中僅限專案） 和 MSBuild 專案檔案格式。  
+  新的屬性值可用於**應用程式**頁面的 專案設計工具 (視覺效果C#僅限專案) 和 MSBuild 專案檔案格式。  
   
-  Visual Studio IDE 中設定 UAC 資訊清單產生的方法需視專案類型 （Visual C# 或 Visual Basic） 而有所不同。  
+  Visual Studio IDE 中設定 UAC 資訊清單產生的方法會視專案類型而有所不同 (VisualC#或 Visual Basic)。  
   
-  * 如需設定 Visual C# 專案，以產生資訊清單資訊，請參閱 < [Application Page，Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)。  
+  * 如需設定視覺效果的詳細資訊C#專案，以產生資訊清單，請參閱[專案設計工具、 應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md)。  
   
   * 如需設定 Visual Basic 專案以產生資訊清單資訊，請參閱 < [Application Page，Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)。  
   

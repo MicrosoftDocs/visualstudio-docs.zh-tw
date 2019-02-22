@@ -17,17 +17,15 @@ helpviewer_keywords:
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 31b41a9c18a9e055c9d144c7115d3673ee2e4443
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916903"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928656"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 
@@ -49,7 +47,7 @@ ms.locfileid: "49916903"
 |[使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)|如何執行與 Tableadapter 的更新|
 |[階層式更新](../data-tools/hierarchical-update.md)|如何從具有兩個或多個相關資料表的資料集執行的更新|
 |[處理並行例外狀況](../data-tools/handle-a-concurrency-exception.md)|如何處理例外狀況，當兩個使用者嘗試同時變更資料庫中相同的資料|
-|[如何： 使用異動儲存資料](../data-tools/save-data-by-using-a-transaction.md)|如何將資料儲存在使用系統的交易。 Transactions 命名空間和 TransactionScope 物件|
+|[如何：使用交易儲存資料](../data-tools/save-data-by-using-a-transaction.md)|如何將資料儲存在使用系統的交易。 Transactions 命名空間和 TransactionScope 物件|
 |[儲存異動中的資料](../data-tools/save-data-in-a-transaction.md)|建立 Windows Forms 應用程式來示範儲存至資料庫在交易內資料的逐步解說|
 |[儲存資料至資料庫 (多個資料表)](../data-tools/save-data-to-a-database-multiple-tables.md)|如何編輯記錄，並將變更儲存回資料庫的多個資料表中|
 |[從物件中將資料儲存至資料庫](../data-tools/save-data-from-an-object-to-a-database.md)|如何將資料從物件，使用 TableAdapter DbDirect 方法不是資料庫的資料集傳遞|
@@ -74,22 +72,22 @@ ms.locfileid: "49916903"
 
 |DataRowVersion|目標資料集|來源資料集|
 | - | - | - |
-|原始|James Wilson|James C.Wilson|
-|目前|Jim Wilson|James C.Wilson|
+|原始|James Wilson|James C. Wilson|
+|目前|Jim Wilson|James C. Wilson|
 
 呼叫<xref:System.Data.DataSet.Merge%2A>方法的先前資料表上`preserveChanges=false targetDataset.Merge(sourceDataset)`會導致下列資料：
 
 |DataRowVersion|目標資料集|來源資料集|
 | - | - | - |
-|原始|James C.Wilson|James C.Wilson|
-|目前|James C.Wilson|James C.Wilson|
+|原始|James C. Wilson|James C. Wilson|
+|目前|James C. Wilson|James C. Wilson|
 
 呼叫<xref:System.Data.DataSet.Merge%2A>方法使用`preserveChanges = true targetDataset.Merge(sourceDataset, true)`會導致下列資料：
 
 |DataRowVersion|目標資料集|來源資料集|
 | - | - | - |
-|原始|James C.Wilson|James C.Wilson|
-|目前|Jim Wilson|James C.Wilson|
+|原始|James C. Wilson|James C. Wilson|
+|目前|Jim Wilson|James C. Wilson|
 
 > [!CAUTION]
 > 在 `preserveChanges = true`案例中，如果<xref:System.Data.DataSet.RejectChanges%2A>記錄，以在目標資料集上呼叫方法，則它會還原為原始資料，從*來源*資料集。 這表示，如果您嘗試更新原始資料來源與目標資料集，它可能無法以尋找要更新原始的資料列。 您可以防止並行存取違規，另一個資料集填入資料來源更新的記錄，然後再執行合併以防止並行存取違規。 （當另一位使用者已填入資料集之後，請修改資料來源中的記錄會發生並行存取違規）。
@@ -226,7 +224,7 @@ ms.locfileid: "49916903"
 - 在資料後端，將資料傳送至資料來源 — 比方說，資料庫，並讓它接受或拒絕資料。 如果您正在使用的資料庫，具有複雜的驗證資料，以及提供錯誤資訊的設備，這可能是實用的方法，因為您可以驗證的資料，不論其來自何處。 不過，這種方法可能不會配合特定應用程式的驗證需求。 此外，驗證資料的資料來源可能會導致許多往返到資料來源，取決於您的應用程式可由後端所引發的驗證錯誤的解析的協助。
 
    > [!IMPORTANT]
-   > 使用資料命令時<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>屬性設為<xref:System.Data.CommandType.Text>，仔細檢查，然後將它傳遞到您的資料庫用戶端傳來的資訊。 惡意使用者可能會嘗試傳送 （插入） 修改過或其他的 SQL 陳述式，以取得未經授權的存取，或資料庫損毀。 傳送至資料庫的使用者輸入之前，請務必確認資訊有效。 最好一律使用參數化的查詢或預存程序，可能的話。
+   > 使用資料命令時<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>屬性設為<xref:System.Data.CommandType.Text>，仔細檢查，然後將它傳遞到您的資料庫用戶端傳來的資訊。 惡意的使用者可能會嘗試傳送 (插入) 修改過或額外的 SQL 陳述式，以獲得未授權的存取權或藉此破壞資料庫。 傳送至資料庫的使用者輸入之前，請務必確認資訊有效。 最好一律使用參數化的查詢或預存程序，可能的話。
 
 ## <a name="transmit-updates-to-the-data-source"></a>傳送至資料來源的更新
 
@@ -281,4 +279,4 @@ ms.locfileid: "49916903"
 - [使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)
 - [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [驗證資料](validate-data-in-datasets.md)
-- [如何： 加入、 修改及刪除實體 (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [如何：新增、修改和刪除實體 (WCF 資料服務)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

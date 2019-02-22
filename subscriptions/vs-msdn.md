@@ -9,12 +9,12 @@ description: 註冊以接收 Visual Studio 訂用帳戶中所含的 MSDN Magazin
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d108fa34faec04ce2f09e8ab5b55dfe19f0d61d5
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3c57bd85f6570eea5f73409cf6eb9d4cbdc033c1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739587"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379990"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 MSDN Magazine 權益
 
@@ -60,7 +60,7 @@ ms.locfileid: "53739587"
 
 <sup>1</sup>  *列印版：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、FTE、Microsoft Partner Network (Enterprise)、Imagine (Premium)。*
 
-*數位版：MCT Software & Services、Microsoft Valued Professional (Professional)、Region Director (RD)。*
+*數位版：MCT 軟體與服務、最有價值專家 (MVP)、區域經理 (RD)。*
 
 *排除：Imagine (Standard)、BizSpark、MCT Software & Services Developer*
 

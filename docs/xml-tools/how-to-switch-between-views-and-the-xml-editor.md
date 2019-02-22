@@ -1,20 +1,19 @@
 ---
 title: HOW TO：在檢視與 XML 編輯器之間切換
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09ad752dc87ea322396d6e6513593d71a7554b98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d7d4964aa83e4db03c8f9d21297b88ba90b2078
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936239"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944139"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>HOW TO：檢視和 XML 編輯器之間切換
 

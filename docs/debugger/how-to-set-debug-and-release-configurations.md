@@ -1,8 +1,6 @@
 ---
 title: 設定偵錯和發行組態 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/05/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.builds
@@ -30,27 +28,27 @@ helpviewer_keywords:
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a65a3331c210bdfb4143ff890180fdc7d663229
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 1e4c1c12409d89d88e683cd0e5b39a8d5a5459df
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257221"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969768"
 ---
-# <a name="set-debug-and-release-configurations-in-visual-studio"></a>設定偵錯和發行 Visual Studio 中的組態
+# <a name="set-debug-and-release-configurations-in-visual-studio"></a>在 Visual Studio 中設定偵錯和發行組態
 
 Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 建立偵錯的偵錯版本和最後發行散發的發行版本。
 
 在偵錯組態中，您的程式會使用完整符號偵錯資訊，在沒有最佳化編譯。 最佳化會使偵錯變得複雜，因為原始程式碼與產生的指令之間關係較為複雜。
 
-您的程式的發行組態沒有符號偵錯資訊，而且會完全最佳化。 偵錯資訊可產生.pdb 檔案[編譯器選項而定](#BKMK_symbols_release)所使用的。 建立.pdb 檔案可能會很有用，如果您日後必須偵錯您的發行版本。
+您的程式的發行組態沒有符號偵錯資訊，而且會完全最佳化。 如需 managed 程式碼和 c + + 程式碼，可以產生偵錯資訊在.pdb 檔案中，[編譯器選項而定](#BKMK_symbols_release)所使用的。 建立.pdb 檔案可能會很有用，如果您日後必須偵錯您的發行版本。
 
 如需組建組態的詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)。
 
-您可以變更組建組態從**建置**功能表、 從工具列中，或在專案屬性頁中。 專案屬性頁因語言而異。 下列程序示範如何從功能表和工具列變更組建組態。 如需如何變更不同語言中的專案組建組態的詳細資訊，請參閱[另請參閱](#see-also)下一節。
+您可以從 [建置] 功能表、從工具列，或在專案的屬性頁中變更組建組態。 專案屬性頁因語言而異。 下列程序示範如何從功能表和工具列變更組建組態。 如需如何變更不同語言中的專案組建組態的詳細資訊，請參閱[另請參閱](#see-also)下一節。
 
 ## <a name="change-the-build-configuration"></a>變更組建組態
 
@@ -60,7 +58,7 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
 
 或
 
-* 在工具列上，選擇 **偵錯**或是**發行**從**方案組態**清單。
+* 在工具列的 [解決方案組態] 清單中，選擇 [偵錯] 或 [發行]。
 
   ![工具列組建組態](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
@@ -69,13 +67,13 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
 您可以選擇產生符號 (.pdb) 檔，以及偵錯應包含的資訊。 對於大部分的專案類型，編譯器會產生符號檔預設為偵錯和發行組建，而其他預設設定會因專案類型] 和 [Visual Studio 版本。
 
 > [!IMPORTANT]
-> 偵錯工具只會載入與可執行檔建置時所建立的 .pdb 檔案完全相同之可執行檔的 .pdb 檔案 (也就是說，.pdb 必須是原始 .pdb 檔案或該檔案的複本)。 如需詳細資訊，請參閱[為什麼 Visual Studio 需要建置的二進位檔完全相符項目偵錯工具符號檔案？](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+> 偵錯工具只會載入與可執行檔建置時所建立的 .pdb 檔案完全相同之可執行檔的 .pdb 檔案 (也就是說，.pdb 必須是原始 .pdb 檔案或該檔案的複本)。 如需詳細資訊，請參閱 [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/) (Visual Studio 為何要求偵錯工具符號檔案必須完全符合當初建置這些符號檔案時所使用的二進位檔案？)
 
 每個專案類型可能會有不同的方式設定這些選項。
 
-### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>產生 C#、 ASP.NET 或 Visual Basic 專案的符號檔
+### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>產生的符號檔C#，ASP.NET 或 Visual Basic 專案
 
-如需以 C# 或 Visual Basic 的偵錯組態的專案設定的詳細資訊，請參閱[偵錯組態的專案設定，適用於 C#](../debugger/project-settings-for-csharp-debug-configurations.md)或[Visual basic 專案設定偵錯組態](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
+如需專案設定中的偵錯組態的詳細資訊C#或 Visual Basic，請參閱[的專案設定C#偵錯組態](../debugger/project-settings-for-csharp-debug-configurations.md)或是[Visual Basic 偵錯的專案設定設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)。
 
 1. 在 [方案總管] 中選取專案。
 
@@ -89,9 +87,9 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
 
 6. 在 **偵錯資訊**清單 (或**產生偵錯資訊**Visual Basic 中的清單)，選擇**完整**，**僅限 Pdb**，或**可攜式**。
 
-   可移植的格式是最新的跨平台格式，適用於.NET Core。 如需有關選項的詳細資訊，請參閱 <<c0> [ 進階建置設定對話方塊 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。
+   可移植的格式是最新的跨平台格式，適用於.NET Core。 如需有關選項的詳細資訊，請參閱 <<c0> [ 進階建置設定對話方塊 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。</c0>
 
-   ![在 C# 中的組建產生 Pdb](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
+   ![產生的 Pdb 中組建C# ](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
 
 7. 建置您的專案。
 
@@ -126,4 +124,4 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
 [C++ 偵錯設定的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
 [C# 偵錯組態的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
 [Visual Basic 偵錯設定的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
-[如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)
+[如何：建立及編輯組態](../ide/how-to-create-and-edit-configurations.md)

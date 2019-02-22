@@ -1,8 +1,6 @@
 ---
-title: 如何：清除組建 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：清除組建 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - Exec task [MSBuild]
@@ -12,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9d039d6f6f5593538063e751348148786667000
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 1dab142315a7d243caf6604c5f2745244ff166e2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879053"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027928"
 ---
-# <a name="how-to-clean-a-build"></a>如何：清除組建
+# <a name="how-to-clean-a-build"></a>HOW TO：清除組建
 當您清除組建時，會刪除所有中繼和輸出檔案，只留下專案檔和元件檔案。 從專案和元件檔案中，接著可以建置新的中繼和輸出檔案執行個體。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所提供的一般工作程式庫包含 [Exec](../msbuild/exec-task.md) 工作，讓您可用來執行系統命令。 如需工作程式庫的詳細資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。  
   
 ## <a name="create-a-directory-for-output-items"></a>建立輸出項目的目錄  
@@ -34,7 +32,7 @@ ms.locfileid: "48879053"
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  如果目錄不存在，請使用 [MakeDir](../msbuild/makedir-task.md) 工作來建立目錄。 例如:   
+2.  如果目錄不存在，請使用 [MakeDir](../msbuild/makedir-task.md) 工作來建立目錄。 例如：  
   
      ```xml
      <MakeDir Directories = "$(builtdir)"  
@@ -46,14 +44,14 @@ ms.locfileid: "48879053"
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>移除目錄中所含的目錄和所有檔案  
   
--   使用 `RemoveDir` 工作，以移除目錄。 例如:   
+-   使用 `RemoveDir` 工作，以移除目錄。 例如：  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   
 ## <a name="example"></a>範例  
  下列程式碼範例專案包含新的目標 `Clean`，以使用 `RemoveDir` 工作來刪除目錄以及其中所含的所有檔案和目錄。 在此範例中，`Compile` 目標也會為要在清除組建時刪除的輸出項目建立個別目錄。  
   
- `Compile` 定義為預設目標，因此除非您指定不同的目標，否則都會自動予以使用。 您要使用命令列參數 **-target** 指定不同的目標。 例如:   
+ `Compile` 定義為預設目標，因此除非您指定不同的目標，否則都會自動予以使用。 您要使用命令列參數 **-target** 指定不同的目標。 例如：  
   
  `msbuild <file name>.proj -target:Clean`  
   

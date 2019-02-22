@@ -8,21 +8,21 @@ helpviewer_keywords:
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88b01dfad315d003840bb2eb5f97c7f0022f85e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15e80a56569fbfcbd513a9ed741f118534916518
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906731"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982802"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description 項目 （Visual Studio 範本）
 指定範本的描述中所顯示的樣子**新的專案**或是**加入新項目** 對話方塊。  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<描述 >  
   
 ## <a name="syntax"></a>語法  
@@ -47,10 +47,10 @@ ms.locfileid: "53906731"
 |`Package`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 套件的 GUID 識別碼。|  
 |`ID`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 資源識別碼。|  
   
-### <a name="child-elements"></a>項目子系  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
 |元素|描述|  
 |-------------|-----------------|  

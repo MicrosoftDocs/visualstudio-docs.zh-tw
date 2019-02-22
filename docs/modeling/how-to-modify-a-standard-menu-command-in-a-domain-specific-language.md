@@ -7,16 +7,15 @@ helpviewer_keywords:
 - Domain-Specific Language, adding custom commands
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: bc7eedfbdf725333a5cd6d3cdd3d683437d1979c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9d5f137fdce3a50f95b3dfa641bd684d5aab060
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870186"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952693"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>HOW TO：使用特定領域語言修改標準功能表命令
 

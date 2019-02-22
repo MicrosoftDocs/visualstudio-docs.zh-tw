@@ -1,14 +1,9 @@
 ---
 title: 空白時間表區段 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.empty
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: f37b301f-3edc-4e56-8084-feec2dc5a9b1
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 64ff71dca6a4a590551909dc05357b80da32e18c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4ac39a776cb7e6c2c9cbce648c0b3ca3ebc86783
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739867"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54770741"
 ---
 # <a name="empty-timeline-segment"></a>空白時間表區段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +33,6 @@ ms.locfileid: "51739867"
   
 -   如為標記通道，表示未產生任何標記。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)   
  [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)
-
-
-

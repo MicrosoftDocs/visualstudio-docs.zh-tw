@@ -1,7 +1,6 @@
 ---
 title: CA1411:COM 註冊方法不應該為可見的
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1411
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: a59f96f1-1f38-4596-b656-947df5c55311
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: da83faf5c2ca1a60d4f931cd498caf3717c21e2b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd721edab080de7708ac395e2a7d7e486c504fba
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926992"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950652"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411:COM 註冊方法不應該為可見的
 

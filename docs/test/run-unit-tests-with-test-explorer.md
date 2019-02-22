@@ -1,22 +1,21 @@
 ---
-title: 使用 [測試總管] 執行、建置和偵錯單元測試
+title: 使用 [測試總管] 執行單元測試並進行偵錯
 description: 了解如何在 Visual Studio 中使用 [測試總管] 執行測試。 本主題涵蓋如何在建置後啟用自動測試回合、檢視測試結果、群組和篩選測試清單、建立播放清單、偵錯測試，以及使用測試捷徑。
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
+author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 65ba6a0528dee5a0b430787ee4332ca3dab5bdec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858065"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956541"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -46,7 +45,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 - 若要執行預設群組中的所有測試，請選擇 [執行]，然後選擇功能表上的群組。
 
-- 選取您要執行的個別測試，然後開啟所選取之測試的內容功能表並選取 [執行選取的測試] 。
+- 選取您要執行的個別測試、開啟所選取之測試的右鍵功能表，然後選擇 [執行選取的測試]。
 
 - 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
@@ -54,9 +53,12 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="run-tests-after-every-build"></a>每次建置後執行測試
 
-|按鈕|說明|
+|按鈕|描述|
 |-|-|
 |![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機建置之後執行單元測試，請在標準功能表中選擇 [測試]，然後選擇 [測試總管] 工具列上的 [建置之後執行測試]。|
+
+> [!NOTE]
+> 只有 Visual Studio Enterprise 版本支援在每次建置後執行單元測試。
 
 ## <a name="view-test-results"></a>檢視測試結果
 
@@ -84,7 +86,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="view-the-source-code-of-a-test-method"></a>檢視測試方法的原始程式碼
 
- 若要在 Visual Studio 編輯器顯示測試方法的原始程式碼，請選取測試，然後選擇操作功能表上的 [開啟測試] (鍵盤：**F12**)。
+若要在 Visual Studio 編輯器中顯示測試方法的原始程式碼，請選取測試，然後選擇右鍵功能表上的 [開啟測試] (鍵盤：**F12**)。
 
 ## <a name="group-and-filter-the-test-list"></a>群組和篩選測試清單
 
@@ -92,13 +94,13 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="group-tests-in-the-test-list"></a>將測試清單中的測試分組
 
- 若要變更測試的組織方式，請選擇 [群組依據] 按鈕 ![測試總管的 [群組] 按鈕](../test/media/ute_groupby_btn.png)旁邊的向下箭號，然後選取新的分組準則。
+若要變更測試的組織方式，請選擇 [群組依據] 按鈕 ![測試總管的 [群組] 按鈕](../test/media/ute_groupby_btn.png)旁邊的向下箭號，然後選取新的分組準則。
 
- ![在 [測試總管] 中依分類為測試分組](../test/media/ute_groupbycategory.png)
+![在 [測試總管] 中依分類為測試分組](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>測試總管群組
 
-|群組|說明|
+|群組|描述|
 |-|-----------------|
 |**持續期間**|依據執行時間群組測試：[快]、[中] 和 [慢]。|
 |**結果**|依據執行結果群組測試：[失敗的測試]、[略過的測試]、[成功的測試]。|
@@ -107,20 +109,22 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="group-by-traits"></a>依據特性群組
 
- 特性通常是分類名稱/值組，但也可以是單一分類。 您可將特性指派給方法，其中單元測試架構可將其識別為測試方法。 單元測試架構可以定義特性分類。 您可以將值加入特性分類以定義自己的分類名稱/值組。 指定特性分類和值的語法是由單元測試架構所定義。
+特性通常是分類名稱/值組，但也可以是單一分類。 您可將特性指派給方法，其中單元測試架構可將其識別為測試方法。 單元測試架構可以定義特性分類。 您可以將值加入特性分類以定義自己的分類名稱/值組。 指定特性分類和值的語法是由單元測試架構所定義。
 
- **Microsoft Managed 程式碼單元測試架構中的特性**
+**Microsoft Managed 程式碼單元測試架構中的特性**
 
- Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 屬性中定義特性名稱/值組。 測試架構也包含下列預先定義的特性：
+Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 屬性中定義特性名稱/值組。 測試架構也包含下列預先定義的特性：
 
-|特性|說明|
+|特性|描述|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|擁有者分類是由單元測試架構所定義，會要求您提供擁有者的字串值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|優先權分類是由單元測試架構所定義，會要求您提供優先權的整數值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|TestCategory 屬性可讓您提供沒有值的分類。 TestCategory 屬性定義的分類也可以是 TestProperty 屬性的分類。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|TestProperty 屬性可讓您定義特性分類/值組。|
 
- **Microsoft C++ 單元測試架構中的特性**請參閱[如何使用適用於 C++ 的 Microsoft 單元測試架構](how-to-use-microsoft-test-framework-for-cpp.md)。
+**Microsoft C++ 單元測試架構中的特性**
+
+ 請參閱[如何使用適用於 C++ 的 Microsoft 單元測試架構](how-to-use-microsoft-test-framework-for-cpp.md)。
 
 ### <a name="search-and-filter-the-test-list"></a>搜尋和篩選測試清單
 
@@ -141,7 +145,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 > [!NOTE]
 > 搜尋是區分大小寫且比對指定字串與準則值的任何部分。
 
-|限定詞|說明|
+|限定詞|描述|
 |-|-----------------|
 |**特性**|在特性分類和值中搜尋相符項目。 指定特性分類和值的語法是由單元測試架構所定義。|
 |**Project**|在測試專案名稱中搜尋相符項目。|
@@ -161,21 +165,19 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 ## <a name="create-custom-playlists"></a>建立自訂播放清單
 
- 您可以建立和儲存想要執行或檢視為群組的測試清單。 當您選取播放清單時，即會在 [測試總管] 中顯示清單中的測試。 您可以將在測試中加入一個以上的播放清單，當您選擇預設的 [所有測試]  播放清單時，就可以使用專案中的所有測試。
+您可以建立和儲存想要執行或檢視為群組的測試清單。 當您選取播放清單時，即會在 [測試總管] 中顯示清單中的測試。 您可以將在測試中加入一個以上的播放清單，當您選擇預設的 [所有測試]  播放清單時，就可以使用專案中的所有測試。
 
- ![選擇播放清單](../test/media/ute_playlist.png)
+![選擇播放清單](../test/media/ute_playlist.png)
 
- **若要建立播放清單**，請在測試總管中選擇一或多項測試。 在操作功能表上，選擇 [加入至播放清單] > [新增播放清單]。 以您在 [建立新播放清單]  對話方塊中指定的名稱和位置儲存檔案。
+**若要建立播放清單**，請在測試總管中選擇一或多項測試。 在右鍵功能表上，選擇 [新增到播放清單] > [新增播放清單]。 以您在 [建立新播放清單]  對話方塊中指定的名稱和位置儲存檔案。
 
- **若要將測試加入播放清單**，請在測試總管中選擇一或多項測試。 在內容功能表上，選擇 [加入至播放清單] ，然後選擇要加入測試的播放清單。
+**若要將測試加入播放清單**，請在測試總管中選擇一或多項測試。 在右鍵功能表上，選擇 [新增到播放清單]，然後選擇要將測試新增到其中的播放清單。
 
- **若要開啟播放清單**，請選擇 Visual Studio 功能表上的 [測試] > [播放清單]，然後從最近使用過的播放清單的清單中選擇，或選擇 [開啟播放清單] 指定播放清單的名稱和位置。
+**若要開啟播放清單**，請選擇 Visual Studio 功能表上的 [測試] > [播放清單]，然後從最近使用過的播放清單的清單中選擇，或選擇 [開啟播放清單] 指定播放清單的名稱和位置。
 
- 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
+如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
 ## <a name="debug-and-analyze-unit-tests"></a>偵錯和分析單元測試
-
-### <a name="debug-unit-tests"></a>偵錯單元測試
 
 您可以使用 [測試總管] 來啟動測試的偵錯工作階段。 使用 Visual Studio 偵錯工具逐步執行程式碼可讓您順暢地在單元測試和受測專案之間來回進行。 啟動偵錯：
 
@@ -184,13 +186,13 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
     > [!NOTE]
     > 由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。
 
-2. 在測試總管中，選取測試方法，然後選擇內容功能表上的 [偵測選取的測試]  。
+2. 在 [測試總管] 中，選取測試方法，然後選擇右鍵功能表上的 [偵錯選取的測試]。
 
    如需偵錯工具的詳細資訊，請參閱[在 Visual Studio 中偵錯](../debugger/debugger-feature-tour.md)。
 
 ### <a name="diagnose-test-method-performance-issues"></a>診斷測試方法效能問題
 
- 若要診斷測試方法為何花費太多時間，請在 [測試總管] 中選取該方法，然後選擇操作功能表上的 [設定檔]。 請參閱[效能總管](../profiling/performance-explorer.md)。
+若要診斷測試方法為何花費太多時間，請在 [測試總管] 中選取該方法，然後選擇右鍵功能表上的 [設定檔]。 請參閱[效能總管](../profiling/performance-explorer.md)。
 
 ### <a name="analyze-unit-test-code-coverage"></a>分析單元測試程式碼涵蓋範圍
 

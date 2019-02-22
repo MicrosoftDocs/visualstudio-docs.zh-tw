@@ -1,7 +1,6 @@
 ---
 title: CA1061:不要隱藏基底類別方法
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1061
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0bda9dc8-87b4-4038-ab9d-563298387466
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a6db369cea0e242ce5b2b6e169278b1bf17ea2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: faa225178a50be080f92a728998e914025c17168
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928551"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947597"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061:不要隱藏基底類別方法
 

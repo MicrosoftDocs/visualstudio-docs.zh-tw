@@ -3,12 +3,8 @@ title: 使用命令列參數安裝 Visual Studio 2015 |Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 f1_keywords:
 - command-line parameters
 - switches
@@ -17,13 +13,13 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: e84d9d7bde30ab781da2f135c94baf74b697e567
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: cd61d03b5639038612e305697f4245e582ee3efe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059135"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794035"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令列參數來安裝 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +34,19 @@ ms.locfileid: "53059135"
 ## <a name="list-of-command-line-parameters"></a>命令列參數清單
  Visual Studio 命令列參數不區分大小寫。
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |**/?**<br /><br /> **/help**<br /><br /> **/h**|顯示命令列參數。|
-|**/ AddRemoveFeatures**|指定要加入哪些功能或從已安裝的產品移除哪些功能。|
-|**/ AdminFile** *AdminDeployment.xml*|使用您指定用於管理安裝的資料檔案，安裝 Visual Studio。|
-|**/ /Chainingpackage** *BundleName*|指定哪一個套件組合要鏈結這個套件組合。 這也可用來指定客戶經驗改進的群組。|
-|**/Createadminfile\<檔名 >**|指定要搭配 /AdminFile 使用之控制檔的建立位置|
-|**/ /Custominstallpath** *InstallationDirectory*|將所有可重定目標的封裝安裝在您指定的目錄中。|
-|**/ ForceRestart**|一律在安裝之後重新啟動電腦。|
+|**/AddRemoveFeatures**|指定要加入哪些功能或從已安裝的產品移除哪些功能。|
+|**/AdminFile** *AdminDeployment.xml*|使用您指定用於管理安裝的資料檔案，安裝 Visual Studio。|
+|**/ChainingPackage** *BundleName*|指定哪一個套件組合要鏈結這個套件組合。 這也可用來指定客戶經驗改進的群組。|
+|**/CreateAdminFile \<filename>**|指定要搭配 /AdminFile 使用之控制檔的建立位置|
+|**/CustomInstallPath** *InstallationDirectory*|將所有可重定目標的封裝安裝在您指定的目錄中。|
+|**/ForceRestart**|一律在安裝之後重新啟動電腦。|
 |**/full**|安裝所有產品功能。|
-|**/Installselectableitems\<項目名稱 1 > [;\<項目名稱 2 >]**|樹狀結構項目的選取清單，確認安裝精靈的選取畫面。|
-|**/l**<br /><br /> **/ 記錄***檔名*|指定記錄檔的位置。|
-|**/layout** *目錄*|將安裝媒體上的檔案複製到您指定的目錄。|
+|**/InstallSelectableItems \<item name 1>[;\<item name 2>]**|樹狀結構項目的選取清單，確認安裝精靈的選取畫面。|
+|**/l**<br /><br /> **/Log** *Filename*|指定記錄檔的位置。|
+|**/layout** *Directory*|將安裝媒體上的檔案複製到您指定的目錄。|
 |**/NoCacheOnlyMode**|防止封裝快取的預先填入。|
 |**/NoRefresh**|不要檢查本產品較新版本所必需或建議的更新版本。|
 |**/norestart**|在安裝期間或之後，防止安裝應用程式重新啟動電腦。 如需尋找傳回碼，請參閱 [Visual Studio 系統管理員指南](../install/visual-studio-administrator-guide.md)的＜傳回碼＞一節。|
@@ -63,7 +59,7 @@ ms.locfileid: "53059135"
 |**/repair**|修復 Visual Studio。|
 |**/SuppressRefreshPrompt**|不要在安裝精靈中顯示可用更新對話方塊，如此一來，安裝精靈將會自動接受任何必要或建議的更新版本。|
 |**/u**<br /><br /> **/Uninstall**|解除安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
-|**/Uninstall /Force**<br /><br /> **/u /force**|解除安裝 Visual Studio 以及與其他產品共用的所有功能。 **警告：** 如果您使用這個參數，在同一部電腦上安裝的其他產品可能會無法正確運作。|
+|**/Uninstall /Force**<br /><br /> **/u /force**|解除安裝 Visual Studio 以及與其他產品共用的所有功能。 **警告：** 如果您使用這個參數時，安裝在同一部電腦的其他產品可能會停止運作正常。|
 
 ## <a name="see-also"></a>請參閱
  [Visual Studio 系統管理員指南](../install/visual-studio-administrator-guide.md)

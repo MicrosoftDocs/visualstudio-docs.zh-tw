@@ -1,27 +1,26 @@
 ---
 title: 建立 Node.js 與 Express 應用程式
 description: 在本教學課程中，您會使用適用於 Visual Studio 的 Node.js 工具來建立應用程式
-ms.custom: ''
-ms.date: 06/27/2018
-ms.technology: vs-nodejs
+ms.date: 09/24/2018
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2093f8a2f2d048661b7fb23f45c5317011f25076
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: da816891c53d4576518102ad7438c735c415f7b4
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124914"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768381"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 Express 應用程式
-在使用 Node.js 和 Express 進行 Visual Studio 開發的這個教學課程中，您將建立簡單的 Node.js Web 應用程式、新增一些程式碼、探索 IDE 的一些功能，以及執行應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](http://visualstudio.microsoft.com)免費安裝它。
+
+在使用 Node.js 和 Express 進行 Visual Studio 開發的這個教學課程中，您將建立簡單的 Node.js Web 應用程式、新增一些程式碼、探索 IDE 的一些功能，以及執行應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)免費安裝它。
 
 在本教學課程中，您將了解如何：
 > [!div class="checklist"]
@@ -51,7 +50,7 @@ Express 是一種 Web 應用程式架構，用作 Node.js 的伺服器架構以�
 
 * 您必須安裝 Visual Studio 2017 和 Node.js 開發工作負載。
 
-    如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 頁面免費進行安裝。
 
     如果您需要安裝工作負載，但已擁有 Visual Studio，請在 [新增專案] 對話方塊 (選取 [檔案] > [新增] > [專案]) 的左窗格中，按一下 [開啟 Visual Studio 安裝程式]。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
 
@@ -192,9 +191,11 @@ IntelliSense 是一種 Visual Studio 工具，可協助您撰寫程式碼。
 
 ## <a name="run-the-application"></a>執行應用程式
 
-1. 在 [偵錯] 工具列中選取偵錯目標。
+1. 在 [偵錯] 工具列中選取偵錯目標，例如 Edge 或 Chrome。
 
     ![選取偵錯目標](../javascript/media/tutorial-nodejs-deploy-target.png)
+
+    如果您的電腦中有 Chrome 可供使用，但未顯示為選項，請從偵錯目標下拉式清單中選擇 [瀏覽方式]，並選取 Chrome 作為預設瀏覽器目標 (選擇 [設為預設值])。
 
 1. 按 **F5** ([偵錯] > [開始偵錯]) 以執行應用程式。
 

@@ -1,14 +1,9 @@
 ---
 title: Microsoft 語言介面套件 (Lip) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 helpviewer_keywords:
 - text [Visual Studio], multiple languages
 - Multilingual User Interface [Visual Studio]
@@ -22,13 +17,13 @@ ms.assetid: dc86304b-65b7-47e6-9314-1dfd02ecfa65
 caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 647935dce06d74b29271af130686a10fb8cfc1e9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 8d5bf89a4f4b33306176b1fe5e33fa91fb1d325d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065034"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54776918"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft 語言介面套件 (LIP) 和 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

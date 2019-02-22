@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50c9ce5079f15c945c963f530997d9bbc333bc42
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42d61b940d7ca30020ece1d1b1aab200360e9b0c
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832605"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424547"
 ---
 # <a name="attach-to-the-program"></a>附加至程式
 您已向適當的連接埠中的程式之後，您必須在您想要偵錯的程式附加偵錯工具。  
@@ -35,7 +35,7 @@ ms.locfileid: "53832605"
   
    如果您要偵錯應用程式相同的程序中執行您的德國，則您必須實作下列方法[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
   
-- [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)，  
+- [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)  
   
 - [GetHostPid](../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)  
   

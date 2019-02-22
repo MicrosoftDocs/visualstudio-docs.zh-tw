@@ -1,7 +1,6 @@
 ---
 title: 選項對話方塊、環境、字型和色彩
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.FontsAndColors
@@ -23,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f402eaaa1ee11feb115e38ae5e7759bbbb93f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20c7561bd3ec991308b2250869a6f0c6f66d117e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966008"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970825"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>選項對話方塊、環境、字型和色彩
 
@@ -94,7 +93,7 @@ ms.locfileid: "53966008"
 
 部分顯示項目包括：
 
-|顯示項目|說明|
+|顯示項目|描述|
 |------------------|-----------------|
 |**純文字**|編輯器中的文字。|
 |**選取的文字**|當編輯器具有焦點時，目前的選取範圍中所包含的文字。|

@@ -1,0 +1,18 @@
+items:
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Visual Studio
+    tocHref: /visualstudio/
+    topicHref: /visualstudio/
+    items:
+    - name: Visual Studio 容器工具
+      tocHref: /visualstudio/containers
+      topicHref: /visualstudio/containers/
+ms.openlocfilehash: aa2e6ebfef9bf6fe4ca789e7cb63340d5a0da237
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55701235"

@@ -1,8 +1,6 @@
 ---
 title: 模型編輯器
 ms.date: 04/12/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.3dscene
@@ -10,15 +8,15 @@ f1_keywords:
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e3da13240eb172e29676b990d1c23be71e4542
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13e19cb22740ff5b8dbd42b5cc5f769a211f6f04
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855530"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908825"
 ---
 # <a name="model-editor"></a>模型編輯器
 
@@ -108,7 +106,7 @@ Visual Studio 支援 3D 座標軸的每一個方向，並且可以從支援座�
 |**工具箱**|交替顯示或隱藏 [工具箱]。|
 |**文件大綱**|或者，顯示或隱藏 [文件大綱] 視窗。|
 |**屬性**|或者，顯示或隱藏 [屬性] 視窗。|
-|**進階**|包含進階命令和選項。<br /><br /> **圖形引擎**<br /><br /> **以 D3D11 呈現**<br /> 使用 Direct3D 11 呈現模型編輯器的設計介面。<br /><br /> **以 D3D11WARP 呈現**<br /> 使用 Direct3D 11 Windows Advanced Rasterization Platform (WARP) 呈現 [模型編輯器] 設計介面。<br /><br /> **Scene Management (場景管理)**<br /><br /> **Import**<br /> 將物件從另一個 3D 模型檔案匯入至目前場景。<br /><br /> **Attach to Parent (附加至父代)**<br /> 將多個所選物件中的第一個物件建立做為其餘所選物件的父代。<br /><br /> **Detach from Parent (從父代中斷連結)**<br /> 從其父代所選物件中斷連結。 選取的物件會變成場景中的「根物件」。 根物件沒有父物件。<br /><br /> **建立群組**<br /> 將選取的物件群組為同層級物件。<br /><br /> **合併物件**<br /> 將選取的物件合併成一個物件。<br /><br /> **從多邊形選取範圍建立新物件**<br /> 從目前的物件移除選取的表面，並將包含那些表面的新物件加入至場景。<br /><br /> **工具**<br /><br /> **翻轉多邊形捲繞**<br /> 翻轉選取的多邊形，使其捲繞順序及曲面法線反轉。<br /><br /> **移除所有動畫**<br /> 移除物件中的動畫資料。<br /><br /> **分成三角形**<br /> 將選取的物件轉換為三角形。<br /><br /> **檢視**<br /><br /> 背面剔除<br /> 啟用或停用背面剔除。<br /><br /> **畫面播放速率**<br /> 在設計介面的右上角顯示畫面播放速率。 畫面播放速率是每秒繪製的畫面數目。<br /><br /> 當您啟用 [即時轉譯模式] 選項時，這個選項很有用。<br /><br /> **全部顯示**<br /> 顯示場景中的所有物件。 這會將每個物件的 [隱藏] 屬性重設為 [False]。<br /><br /> **Show Face Normals (顯示曲面法線)**<br /> 顯示每一曲面的法線。<br /><br /> **Show Missing Material (顯示遺漏的材質)**<br /> 在沒有材質指派給它們的物件上顯示特殊紋理。<br /><br /> **Show Pivot (顯示樞紐分析)**<br /> 啟用或停用在作用中選取範圍的樞紐點上顯示 3D 座標軸標記。<br /><br /> **Show Placeholder Nodes (顯示預留位置節點)**<br /> 顯示預留位置節點。 當您群組物件時，會建立預留位置節點。<br /><br /> **Show Vertex Normals (顯示頂點法線)**<br /> 顯示每個頂點的法線。 **祕訣：** 您可以選擇 [指令碼] 按鈕，以重新執行最後一個指令碼。|
+|**進階**|包含進階命令和選項。<br /><br /> **圖形引擎**<br /><br /> **以 D3D11 呈現**<br /> 使用 Direct3D 11 呈現模型編輯器的設計介面。<br /><br /> **以 D3D11WARP 呈現**<br /> 使用 Direct3D 11 Windows Advanced Rasterization Platform (WARP) 呈現 [模型編輯器] 設計介面。<br /><br /> **Scene Management (場景管理)**<br /><br /> **Import**<br /> 將物件從另一個 3D 模型檔案匯入至目前場景。<br /><br /> **Attach to Parent (附加至父代)**<br /> 將多個所選物件中的第一個物件建立做為其餘所選物件的父代。<br /><br /> **Detach from Parent (從父代中斷連結)**<br /> 從其父代所選物件中斷連結。 選取的物件會變成場景中的「根物件」。 根物件沒有父物件。<br /><br /> **建立群組**<br /> 將選取的物件群組為同層級物件。<br /><br /> **合併物件**<br /> 將選取的物件合併成一個物件。<br /><br /> **從多邊形選取範圍建立新物件**<br /> 從目前的物件移除選取的表面，並將包含那些表面的新物件加入至場景。<br /><br /> **工具**<br /><br /> **翻轉多邊形捲繞**<br /> 翻轉選取的多邊形，使其捲繞順序及曲面法線反轉。<br /><br /> **移除所有動畫**<br /> 移除物件中的動畫資料。<br /><br /> **分成三角形**<br /> 將選取的物件轉換為三角形。<br /><br /> **檢視**<br /><br /> 背面剔除<br /> 啟用或停用背面剔除。<br /><br /> **畫面播放速率**<br /> 在設計介面的右上角顯示畫面播放速率。 畫面播放速率是每秒繪製的畫面數目。<br /><br /> 當您啟用 [即時轉譯模式] 選項時，這個選項很有用。<br /><br /> **全部顯示**<br /> 顯示場景中的所有物件。 這會將每個物件的 [隱藏] 屬性重設為 [False]。<br /><br /> **Show Face Normals (顯示曲面法線)**<br /> 顯示每一曲面的法線。<br /><br /> **Show Missing Material (顯示遺漏的材質)**<br /> 在沒有材質指派給它們的物件上顯示特殊紋理。<br /><br /> **Show Pivot (顯示樞紐分析)**<br /> 啟用或停用在作用中選取範圍的樞紐點上顯示 3D 座標軸標記。<br /><br /> **Show Placeholder Nodes (顯示預留位置節點)**<br /> 顯示預留位置節點。 當您群組物件時，會建立預留位置節點。<br /><br /> **Show Vertex Normals (顯示頂點法線)**<br /> 顯示每個頂點的法線。 **提示：** 您可以選擇 [指令碼] 按鈕，再次執行上一個指令碼。|
 
 以下是 [模型編輯器] 工具列：
 
@@ -193,7 +191,7 @@ Visual Studio 支援 3D 座標軸的每一個方向，並且可以從支援座�
 
 物件的軸點是定義它的旋轉和縮放中心。 您可以變更物件的軸點，以變更旋轉及縮放轉換對物件造成的影響。 在 [模型編輯器模式] 工具列上，選擇 [樞紐分析表模式] 按鈕以啟用 (或停用) 樞紐分析表模式。 啟用樞紐分析模式時，選定物件的軸點上會出現小的座標軸指示器。 接著，您可以使用 [平移] 和 [旋轉] 工具操作樞紐點。
 
-如需說明如何使用樞紐點的示範，請參閱[如何：修改 3D 模型的樞紐點](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md)。
+如需如何使用樞紐點的示範，請參閱[如何：修改 3D 模型的樞紐點](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md)。
 
 ### <a name="world-and-local-modes"></a>世界模式和區域模式
 

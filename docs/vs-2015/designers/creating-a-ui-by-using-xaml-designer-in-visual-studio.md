@@ -1,14 +1,9 @@
 ---
 title: 使用 XAML 設計工具建立 UI
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
@@ -18,13 +13,13 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8928f725e144c980d3e625d557a71047959b8b9b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058817"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795165"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 設計工具建立 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +87,9 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
  **顯示**：為應用程式指定不同的顯示大小和解析度。
 
- **方向**指定不同的方向，應用程式：**橫向**或是**直向**。
+ **方向**：為應用程式指定不同的方向：[橫向] 或 [直向]。
 
- **Edge**指定不同的邊緣對齊方式，您的應用程式：**兩者**，**左**，**右邊**，或**無**。
+ **邊緣** ：為應用程式指定不同的邊緣對齊方式：[兩者]、[靠左]、[靠右] 或 [無]。
 
  **高對比**：根據選取的對比設定，預覽應用程式。 當您將這個設定設為 [ **預設**] 以外的值，就會覆寫 App.xaml 中設定的 `RequestedTheme` 屬性。
 
@@ -143,4 +138,4 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
  每個屬性值的右邊是顯示為方塊符號的 *「屬性標記」* (Property Marker)。 屬性標記的有無表示屬性是否已套用資料繫結或資源。 例如，白色方塊符號表示預設值，黑色方塊符號通常表示已套用本機資源，而橙色方塊通常表示已套用資料繫結。 當您按一下屬性標記時，您可以巡覽至樣式定義、開啟資料繫結產生器，或開啟資源選擇器。
 
 ## <a name="see-also"></a>請參閱
- [使用 XAML 設計工具中的項目](../designers/working-with-elements-in-xaml-designer.md)[如何建立和套用資源](../designers/how-to-create-and-apply-a-resource.md)[逐步解說：繫結至 XAML 設計工具中的資料](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [使用 XAML 設計工具中的項目](../designers/working-with-elements-in-xaml-designer.md)[如何建立和套用資源](../designers/how-to-create-and-apply-a-resource.md)[逐步解說：在 XAML 設計工具中繫結至資料](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

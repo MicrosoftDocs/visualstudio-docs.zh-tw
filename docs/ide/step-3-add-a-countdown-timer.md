@@ -1,24 +1,21 @@
 ---
-title: 步驟 3：加入倒數計時器
-ms.custom: ''
+title: 步驟 3：新增倒數計時器
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e7cf75b23b74753b875aafb43a5dd331b18c623
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ac6ea6f45446b35d9b65d9665ede5b2e76b387e3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748136"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940707"
 ---
-# <a name="step-3-add-a-countdown-timer"></a>步驟 3：加入倒數計時器
+# <a name="step-3-add-a-countdown-timer"></a>步驟 3：新增倒數計時器
 在本教學課程的第三個部分中，您將加入倒數計時器來追蹤受測者可完成作答的剩餘秒數。
 
 > [!NOTE]
@@ -106,6 +103,6 @@ ms.locfileid: "34748136"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要移到下一個教學課程步驟，請參閱[步驟 4：加入 CheckTheAnswer() 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)。
+-   若要前往下一個教學課程步驟，請參閱[步驟 4：新增 CheckTheAnswer() 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)。
 
 -   若要回到上一個教學課程步驟，請參閱[步驟 2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)。

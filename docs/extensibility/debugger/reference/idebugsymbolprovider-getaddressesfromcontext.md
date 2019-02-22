@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cab8485a5abec8b53630f82b5e16cf0419bca3f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b7fbea573bf7a62770109b9933a977a3f0dca0e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824869"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938671"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 這個方法會將文件內容對應到的偵錯位址陣列。  

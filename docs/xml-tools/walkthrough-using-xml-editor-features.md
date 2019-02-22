@@ -1,20 +1,19 @@
 ---
 title: 逐步解說：使用 XML 編輯器功能
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 524b96fea7fedba248c04f384445ee3a03a3595b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ae8a554f4ce9e5c9a38f17ee4f491d7a537b3d9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902002"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954682"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>逐步解說：使用 XML 編輯器功能
 
@@ -41,7 +40,7 @@ ms.locfileid: "53902002"
 
 5.  選取  *hireDate.xsd*檔案，然後按一下**開啟**。
 
-6.  按一下 [確定 **Deploying Office Solutions**]。
+6.  按一下 [確定] 。
 
      XML 結構描述現在已與 XML 文件相關聯。 XML 結構描述用於驗證文件。 它也由 IntelliSense 用於填入有效項目的成員清單。
 

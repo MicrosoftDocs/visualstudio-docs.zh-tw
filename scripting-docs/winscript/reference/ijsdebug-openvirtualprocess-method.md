@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebug:: Openvirtualprocess 方法 |Microsoft 文件'
+title: 'Ijsdebug:: Openvirtualprocess 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,20 +16,20 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5acb137337e46a6e84f7d68c9330a3ca847f2e5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: daa5414153ee55a431294afaf7b167ee91839bfc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727358"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093986"
 ---
 # <a name="ijsdebugopenvirtualprocess-method"></a>IJsDebug::OpenVirtualProcess 方法
 用來建立新的虛擬程序物件的 factory 方法。  
   
 ## <a name="syntax"></a>語法  
   
-```  
- HRESULT OpenVirtualProcess(  
+```cpp
+HRESULT OpenVirtualProcess(  
    DWORD processId,  
    UINT64 runtimeJsBaseAddress,  
    IJsDebugDataTarget *pDataTarget,  
@@ -42,10 +42,10 @@ ms.locfileid: "24727358"
  [in]若要附加偵錯工具的處理序識別碼。  
   
  `runtimeJsBaseAddress`  
- [in]基底位址的 JavaScript 執行階段已載入至目標處理序。  
+ [in]在 JavaScript 執行階段載入目標處理序的基底位址。  
   
  `pDataTarget`  
- [in]偵錯工具提供的介面來查詢的程序的狀態。  
+ [in]偵錯工具提供的介面，用於查詢的程序的狀態。  
   
  `ppProcess`  
  [out]新的偵錯處理程序物件  

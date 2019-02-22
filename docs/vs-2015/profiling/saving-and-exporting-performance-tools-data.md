@@ -1,27 +1,22 @@
 ---
 title: 儲存和匯出效能工具資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, saving and exporting reports
 ms.assetid: 2e9b28fe-3ed2-4e1d-b9cb-0a5e384380b0
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a9b96ae54c91e80fe34c817f710cb400e61f9876
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 22dd181a991c4c2c006335df955ba27dd4d27ce6
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768499"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54756407"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>儲存和匯出報告效能工具資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +64,7 @@ ms.locfileid: "51768499"
   
 4.  在 [匯出的報告位置] 下，指定目錄。  
   
-5.  底下**匯出的報告格式**，選取 （以逗號分隔） (*.csv) 或 XML 資料 (\*.xml)。  
+5.  在 [匯出的報告格式] 下，選取 [逗點分隔] (*.csv) 或 [XML 資料] (\*.xml)。  
   
 6.  按一下 [匯出] 。  
   
@@ -89,17 +84,14 @@ ms.locfileid: "51768499"
   
 6.  在 [匯出的報告位置] 下，指定目錄。  
   
-7.  底下**匯出的報告格式**，選取 （以逗號分隔） (*.csv) 或 XML 資料 (\*.xml)。  
+7.  在 [匯出的報告格式] 下，選取 [逗點分隔] (*.csv) 或 [XML 資料] (\*.xml)。  
   
 8.  按一下 [匯出] 。  
   
      每個報告檢視都會儲存到個別的檔案，稱為 \<前置詞>_\<報告檢視名稱>.\<csv&#124;xml>。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能總管](../profiling/performance-explorer.md)   
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)   
  [比較效能資料檔案](../profiling/comparing-performance-data-files.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-

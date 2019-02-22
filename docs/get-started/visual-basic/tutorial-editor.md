@@ -3,29 +3,28 @@ title: Visual Basic 開發人員編輯簡介
 description: 這個 10 分鐘的 Visual Studio 程式碼編輯器簡介，說明 Visual Studio 可讓撰寫、巡覽和了解 Visual Basic 程式碼更加輕鬆的一些方式。
 ms.custom: seodec18, get-started
 ms.date: 11/20/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ccb218781294cf464ce1c7532de078220bedefb
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: baed4947d6e31cb06a64f04b0cb68d17d31c6f2f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740084"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939472"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
 在這個 10 分鐘的 Visual Studio 程式碼編輯器簡介中，我們會將程式碼新增至檔案，以了解 Visual Studio 讓撰寫、導覽和了解程式碼更加輕鬆的一些方式。
 
 > [!TIP]
-> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
 
 本文假設您已熟悉 Visual Basic。 如果您不熟悉，建議您先瀏覽教學課程 (例如 [Visual Studio 中的 Visual Basic 使用者入門](../../get-started/visual-basic/tutorial-console.md))。
 

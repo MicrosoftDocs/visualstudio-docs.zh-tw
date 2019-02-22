@@ -14,15 +14,15 @@ helpviewer_keywords:
 - GenerateDeploymentManifest task [MSBuild]
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d8f6f45b0a02922f3c91b9d1443000a385eb240
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3afbee1d4f0aee1dbf752ca241521ee121d00975
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932375"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937492"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest 工作
 

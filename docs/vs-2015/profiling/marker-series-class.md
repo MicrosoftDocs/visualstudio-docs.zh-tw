@@ -1,14 +1,9 @@
 ---
 title: marker_series 類別 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: b8445ed0-c512-4f92-b6b4-3d05c044f939
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bd82862800feacf92059a2d019e9f9988616d615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb199d74ade593d0bc8318c27bc96ffbf70e4dcf
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754193"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54778866"
 ---
 # <a name="markerseries-class"></a>marker_series 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,8 +57,5 @@ class marker_series;
   
  **命名空間：** Concurrency::diagnostic  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [diagnostic 命名空間](../profiling/diagnostic-namespace.md)
-
-
-

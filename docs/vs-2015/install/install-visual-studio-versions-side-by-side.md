@@ -2,12 +2,8 @@
 title: 安裝 Visual Studio 版本的並存 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 helpviewer_keywords:
 - side-by-side installations [Visual Studio]
 - Help [Visual Studio], installing
@@ -16,13 +12,13 @@ ms.assetid: 4d00f240-4910-4699-aaf3-cda6461f0c29
 caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: be7559fb9bc6a2e028638ae18209a91cde955e7f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 67a564b789d24b11b92b218c2a30673c6bd7baad
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056635"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54834857"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>並存安裝 Visual Studio 版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,11 +52,11 @@ ms.locfileid: "53056635"
     |Visual C#|[專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md)|
     |Visual F#|[設定專案](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
     |C++|[如何：修改目標 Framework 和平台工具組](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
-    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[在舊版的通用語言執行平台上執行 JScript 應用程式](http://msdn.microsoft.com/en-us/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
+    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[在舊版的通用語言執行平台上執行 JScript 應用程式](http://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
 ## <a name="see-also"></a>請參閱
 
 - [安裝 Visual Studio](../install/install-visual-studio-2015.md)
 - [移植、移轉及升級 Visual Studio 專案](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
 - [建置 C/C++ 隔離應用程式和並存組件](http://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
-- [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+- [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

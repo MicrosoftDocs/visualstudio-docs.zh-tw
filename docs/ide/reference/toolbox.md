@@ -1,8 +1,6 @@
 ---
 title: '[工具箱] 視窗'
 ms.date: 01/18/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - custom controls [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef01cb4bb9b9ee3326d3d955aec9c41f9b15b144
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1331f416d95b56d466b6e2fe268ed7db071d66da
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067851"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925394"
 ---
 # <a name="toolbox"></a>工具箱
 
@@ -41,7 +39,7 @@ ms.locfileid: "53067851"
 
 預設已在 Visual Studio IDE 左側摺疊 [工具箱]，將游標移至其上方就會顯示。 您可以釘選 [工具箱] (在其工具列上按一下 [釘選] 圖示)，使其在您移動游標時仍保持開啟狀態。 您也可以將 [工具箱] 視窗取消停駐，並拖曳至畫面上的任何位置。 您可以使用滑鼠右鍵按一下 [工具箱] 的工具列並選取其中一個選項，以將它停駐、取消停駐和隱藏。
 
-您可以在操作功能表上使用下列命令，以重新排列 [工具箱] 索引標籤中的項目，或新增自訂索引標籤和項目：
+您可以在右鍵功能表上使用下列命令，以重新排列 [工具箱] 索引標籤中的項目，或新增自訂索引標籤和項目：
 
 - **重新命名項目** - 重新命名選取的項目。
 

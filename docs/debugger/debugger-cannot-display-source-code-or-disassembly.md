@@ -2,7 +2,6 @@
 title: 偵錯工具無法顯示原始程式碼或反組譯碼
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 112d3ea3-fdd2-4bce-92b4-167a76258934
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea95a2bb4c29f8a23fd597173a10a838baca051c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fe3d745622666bd6458d5c3de916bc7b7787292e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063962"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916455"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>偵錯工具無法顯示原始程式碼或反組譯碼
 這個錯誤為：  
@@ -37,6 +36,7 @@ ms.locfileid: "53063962"
   
 -   安全性考量可能會禁止偵錯工具從您正在偵錯的程式中讀取堆疊、執行緒、暫存器和其他的內容資訊。 您正在偵錯 Web 應用程式，但沒有正確的使用權限來存取虛擬目錄時，最常發生這種情形。 請將虛擬目錄的安全性設成 [匿名]，然後再試一次。  
   
-## <a name="see-also"></a>請參閱  
- [在 Visual Studio 中偵錯](../debugger/index.md)[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)   
+## <a name="see-also"></a>請參閱
+ [Visual Studio 偵錯](../debugger/index.md)  
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)  
  [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)

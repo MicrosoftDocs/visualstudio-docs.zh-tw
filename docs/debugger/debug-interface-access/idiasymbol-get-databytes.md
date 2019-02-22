@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_databytes |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5eb37179-20d8-44ae-a72a-405c1b0435c4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98febaa0d72071ac990cb88cec2d56845b3e9d67
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d70ede5bdade583d0b25787f7c97c345cef9cbe1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911820"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925353"
 ---
 # <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
 擷取資訊，請參閱 OEM 符號的資料位元組數。  
@@ -27,7 +25,7 @@ ms.locfileid: "49911820"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_dataBytes (   
+HRESULT get_dataBytes (   
    DWORD  cbData,  
    DWORD* pcbData,  
    BYTE   data[]  
@@ -57,5 +55,5 @@ HRESULT get_dataBytes (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

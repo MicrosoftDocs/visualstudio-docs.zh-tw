@@ -1,7 +1,6 @@
 ---
 title: CA1046:不要多載參考類型上的等號比較運算子
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotOverloadOperatorEqualsOnReferenceTypes
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c1dfbfe3-63f9-4005-a81a-890427b77e79
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14229e6f73e93aa1ca4323ba12d965270e3228cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f9304fcd86a9b36a729b1436fe16471b449ac0d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904730"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953759"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046:不要多載參考類型上的等號比較運算子
 

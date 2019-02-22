@@ -1,7 +1,6 @@
 ---
 title: CA1802:建議在適當時使用常值
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - UseLiteralsWhereAppropriate
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 2515e4cd-9e61-486d-b067-58ba1a743ce4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f86e19bc055a95b79f119f834d1d23d4f3a4e2c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f6b469ccce9cc5297cf9c328b05822aef9e3e29
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921714"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925250"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802:建議在適當時使用常值
 
@@ -31,7 +30,7 @@ ms.locfileid: "53921714"
 |-|-|
 |TypeName|UseLiteralsWhereAppropriate|
 |CheckId|CA1802|
-|類別|Microsoft.Performance|
+|分類|Microsoft.Performance|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因

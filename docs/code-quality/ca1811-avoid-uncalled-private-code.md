@@ -1,7 +1,6 @@
 ---
 title: CA1811:避免使用未呼叫的私用程式碼
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AvoidUncalledPrivateCode
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aadbba74-7821-475f-8980-34d17c0a0a8b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e40ea8d8168d557374e509a3e93b263ef1fe5724
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d4a194229ccbe6720f4c8097422691974ab64b7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986774"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941240"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811:避免使用未呼叫的私用程式碼
 

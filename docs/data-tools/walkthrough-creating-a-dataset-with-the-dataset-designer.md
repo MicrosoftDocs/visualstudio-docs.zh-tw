@@ -10,17 +10,15 @@ helpviewer_keywords:
 - datasets [Visual Basic], creating
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32a093e59d918f34ddf5da9cbb5edb13c96b2777
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: d706ab0cf179a4a4efefa8f60143ea8ce9800ef9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117923"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927668"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>逐步解說： 以 Dataset 設計工具建立資料集
 
@@ -48,7 +46,7 @@ ms.locfileid: "37117923"
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增** > **專案**。
 
-2. 展開  **Visual C#** 或是**Visual Basic**的左側窗格中，然後選取**Windows Desktop**。
+2. 展開  **Visual C#** 或是**Visual Basic**左窗格中，然後選取**Windows Desktop**。
 
 3. 在中間窗格中，選取**Windows Forms 應用程式**專案類型。
 
@@ -58,7 +56,7 @@ ms.locfileid: "37117923"
 
 ## <a name="add-a-new-dataset-to-the-application"></a>將新的資料集新增至應用程式
 
-1.  在 **專案**功能表上，選取**加入新項目**。
+1.  在 [專案] 功能表中，選取 [新增新項目]。
 
      [新增項目] 對話方塊隨即出現。
 
@@ -70,7 +68,7 @@ ms.locfileid: "37117923"
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>在 [伺服器總管] 中建立資料連接
 
-1.  在 **檢視**功能表上，按一下**伺服器總管**。
+1.  在 [檢視] 功能表上按一下 [伺服器總管]。
 
 2.  在 [**伺服器總管**，按一下**連接到資料庫**] 按鈕。
 

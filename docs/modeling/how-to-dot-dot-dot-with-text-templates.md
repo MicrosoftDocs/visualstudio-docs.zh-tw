@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 7a29f9c8813950cda5907b7f0f96141d00d562fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82309eb9288dffb1fca0a3917b764ffb9040ab9d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887759"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937162"
 ---
 # <a name="how-to--with-text-templates"></a>如何 ... 使用文字範本
 Visual Studio 中的文字範本會提供任何類型的產生文字的一種方式。 您可以使用文字範本產生的文字，在執行階段為您的應用程式的一部分，並在設計階段，來產生一些您的專案程式碼。 本主題摘要說明最常詢問"How do I...？ 」 問題。

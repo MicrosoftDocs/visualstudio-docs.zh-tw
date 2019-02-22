@@ -1,21 +1,20 @@
 ---
 title: 設定瀑布圖 | Microsoft IntelliTest 開發人員測試工具
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Settings waterfall
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c15b440845f918c194bad334e118e25dee676431
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 966182ca79ffd06e17642e1b24d6e48b8e637efe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936161"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923717"
 ---
 # <a name="settings-waterfall"></a>設定瀑布圖
 
@@ -38,7 +37,7 @@ using Microsoft.Pex.Framework;
 
 namespace MyTests
 {
-    [PexClass(MaxBranches = 500)] // we override the 1000 value and set maxbranches to 500 
+    [PexClass(MaxBranches = 500)] // we override the 1000 value and set maxbranches to 500
     public partial class MyTests
     {
         [PexMethod(MaxBranches = 100)] // we override again, maxbranches = 100

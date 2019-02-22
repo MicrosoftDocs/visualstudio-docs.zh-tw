@@ -6,16 +6,15 @@ helpviewer_keywords:
 - full solution analysis
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6e5d73f0a08511730cb79eccf60570bad804137
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dbd4cf06a5d51a668acc5c980e7e93a94f2992f2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937880"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930996"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>HOW TO：啟用和停用 managed 程式碼的完整解決方案分析
 

@@ -2,23 +2,21 @@
 title: Visual Studio 中的 Python 教學課程步驟 4，偵錯
 titleSuffix: ''
 description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 4，涵蓋如何在偵錯工具中執行 Python 程式碼。
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5facce6eff378586ece01b5774089e76058615f9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e165362a73a826c608f1ce93bc4ab910050c7b8c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060416"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948806"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>步驟 4：在偵錯工具中執行程式碼
 

@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4a4b4f111776dc083e4c29ae7944b1f61762fe07
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a42a15263b658acbbfc5e7500a776063ef58a51
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963747"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918452"
 ---
 # <a name="t4-include-directive"></a>T4 包含指示詞
 

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - sandboxed solutions [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, farm solutions
 - farm solutions [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e26c87d3280ca3cfdd44baa11b09bd007eaca08
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 28bdf4e9b116522256606bc9fbbe6b05edb45114
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862090"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872972"
 ---
 # <a name="sandboxed-solution-considerations"></a>沙箱化方案考量
   *沙箱化方案*是可讓網站集合的使用者上傳他們自己的自訂程式碼解決方案的 Microsoft SharePoint 2010 中的功能。 常見的沙箱化方案是上傳他們自己的 Web 組件的使用者。  

@@ -2,22 +2,21 @@
 title: Visual Studio 中的 Python 教學課程步驟 2，撰寫並執行程式碼
 titleSuffix: ''
 description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 2，包含編輯程式碼和執行專案。
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 201284ad236b2182ba6c4e69971ff15d0b43a009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 427aa1e0821d38488b626656a06e8952c381053e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935136"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918100"
 ---
 # <a name="step-2-write-and-run-code"></a>步驟 2：撰寫並執行程式碼
 
@@ -46,7 +45,7 @@ ms.locfileid: "53935136"
     ![IntelliSense 語法著色和錯誤醒目提示](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > 由於某個人的開發環境是非常私人的事情，因此 Visual Studio 可讓您擁有 Visual Studio 外觀和行為的完整控制權。 請選取 [工具] > [選項] 功能表命令，並瀏覽 [環境] 和 [文字編輯器] 索引標籤下方的設定。 根據預設，您會看到有限數目的選項。若要查看每種程式設計語言的每個選項，請選取對話方塊底部的 [顯示所有設定]。 
+    > 由於某個人的開發環境是非常私人的事情，因此 Visual Studio 可讓您擁有 Visual Studio 外觀和行為的完整控制權。 請選取 [工具] > [選項] 功能表命令，並瀏覽 [環境] 和 [文字編輯器] 索引標籤下方的設定。 根據預設，您會看到有限數目的選項。若要查看每種程式設計語言的每個選項，請選取對話方塊底部的 [顯示所有設定]。
 
 1. 按 **Ctrl**+**F5** 或選取 [偵錯] > [啟動但不偵錯] 功能表項目，來執行已撰寫到這個時間點的程式碼。 如果程式碼仍然發生錯誤，Visual Studio 會向您發出警告。
 

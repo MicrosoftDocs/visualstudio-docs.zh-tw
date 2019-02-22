@@ -1,22 +1,21 @@
 ---
 title: 逐步解說分析 Managed 程式碼的程式碼缺失 |Microsoft Docs
 ms.date: 01/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955249"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952837"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>逐步解說：分析 managed 程式碼的程式碼缺失
 
@@ -183,13 +182,11 @@ ms.locfileid: "53955249"
 
 ## <a name="exclude-code-analysis-warnings"></a>排除程式碼分析警告
 
-### <a name="to-exclude-code-defect-warnings"></a>若要排除程式碼缺失警告
-
 1. 針對每個剩餘的警告中，執行下列作業：
 
     1. 選取中的警告**錯誤清單**。
 
-    1. 以滑鼠右鍵按一下功能表或操作功能表，選擇**抑制** > **檔案中的隱藏項目**。
+    1. 從快顯功能表 （操作功能表），選擇**抑制** > **檔案中的隱藏項目**。
 
 1. 重建專案。
 

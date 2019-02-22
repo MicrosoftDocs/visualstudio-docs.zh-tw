@@ -3,29 +3,28 @@ title: 教學課程：開始使用 Visual Basic
 description: 逐步了解如何在 Visual Studio 中建立 Visual Basic 主控台應用程式。
 ms.custom: seodec18, get-started
 ms.date: 08/10/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 076d8ed69e742ccb228af26a10ec5f9e76767a70
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441927"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155691"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教學課程：Visual Studio 中的 Visual Basic 使用者入門
 
 在 Visual Basic (VB) 的這個教學課程中，您將使用 Visual Studio 建立和執行一些不同的主控台應用程式，並在這樣做的同時探索 [Visual Studio 整合式開發環境 (IDE)](visual-studio-ide.md) 的一些功能。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -142,10 +141,10 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 恭喜您完成此教學課程！ 若要更深入了解，請參閱下列教學課程。
 
 > [!div class="nextstepaction"]
-> [影片教學課程：Visual Basic fundamentals for absolute beginners](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507) (適合初學者的 Visual Basic 基礎課程)
+> [在 Visual Studio 中使用 Visual Basic 和 .NET Core SDK 來建置程式庫](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>另請參閱
 
-* [Visual Basic 的新功能](/dotnet/visual-basic/getting-started/whats-new)
-* [IntelliSense for Visual Basic 程式碼檔案](../../ide/visual-basic-specific-intellisense.md)
+* [Visual Basic 語言逐步解說](/dotnet/visual-basic/walkthroughs)
 * [Visual Basic 語言參考](/dotnet/visual-basic/language-reference/index)
+* [IntelliSense for Visual Basic 程式碼檔案](../../ide/visual-basic-specific-intellisense.md)

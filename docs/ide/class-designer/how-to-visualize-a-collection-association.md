@@ -1,8 +1,6 @@
 ---
 title: HOW TO：視覺化集合關聯 (類別設計工具)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
@@ -14,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2957492224f4d69a9536b4dfd6f47c136f72b0c
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: e734b84bb8c386c60f3fef9061d74b8b31277cec
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684060"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910945"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>HOW TO：在 [類別設計工具] 中將集合關聯視覺化
 

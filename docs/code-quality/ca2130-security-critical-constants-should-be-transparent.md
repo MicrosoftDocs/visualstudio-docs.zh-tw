@@ -1,22 +1,21 @@
 ---
 title: CA2130:安全性關鍵常數應該是透明的
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2130
 ms.assetid: 344c7f7b-9130-4675-ae7f-9fa260cc9789
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e91ac642f0ead181378af78dc9d48434ae0f51b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbe1f5c58b957cf3ed226af7c7b879c7a6dcfc0a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881963"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970058"
 ---
 # <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130:安全性關鍵常數應該是透明的
 
@@ -24,7 +23,7 @@ ms.locfileid: "53881963"
 |-|-|
 |TypeName|ConstantsShouldBeTransparent|
 |CheckId|CA2130|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

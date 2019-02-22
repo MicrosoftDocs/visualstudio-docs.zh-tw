@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d454fd82317d1e021b27da3366138bdf1a8091fa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61a833a2ea8fe9bc09845b369db896b491b65263
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924170"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344924"
 ---
 # <a name="ienumdebugextendedpropertyinfogetcount"></a>IEnumDebugExtendedPropertyInfo::GetCount
 取得數`ExtendedDebugPropertyInfo`列舉值中的結構。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetCount (  
    ULONG* pcelt  
 );  

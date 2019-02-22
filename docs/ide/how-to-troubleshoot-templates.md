@@ -1,20 +1,18 @@
 ---
 title: 針對專案範本和項目範本載入進行疑難排解
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2963bdbd4f788f6321d963bc52001f1875c48a14
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 2b3a94ab9a44776b0c6716b99f594ec0fd840938
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061865"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943411"
 ---
 # <a name="how-to-troubleshoot-templates"></a>HOW TO：針對範本進行疑難排解
 

@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumdebugstreams:: Clone |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e85ec592-de97-4f95-a774-1623315ba415
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6247e36ecc34c016cf4b976664f14d6e3fb5bb80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4b1420fabc81227ef57884416e9459ed42587b95
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836124"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031470"
 ---
 # <a name="idiaenumdebugstreamsclone"></a>IDiaEnumDebugStreams::Clone
 建立列舉值，包含目前的列舉值相同的列舉型別狀態。  
@@ -27,7 +25,7 @@ ms.locfileid: "49836124"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumDebugStreams** ppenum  
 );  
 ```  
@@ -39,5 +37,5 @@ HRESULT Clone (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

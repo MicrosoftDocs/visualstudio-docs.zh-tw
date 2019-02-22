@@ -1,7 +1,6 @@
 ---
 title: CA1506:應避免使用結合過度的類別
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AvoidExcessiveClassCoupling
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9f0943c0-e802-4e3f-8798-2ab8653ddc80
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa8d2e85ebacdedfde9d6731ff3e24a557de3e13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0312289379e8aea79ee4e8291d9f4ee984949aaa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988552"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934285"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506:應避免使用結合過度的類別
 

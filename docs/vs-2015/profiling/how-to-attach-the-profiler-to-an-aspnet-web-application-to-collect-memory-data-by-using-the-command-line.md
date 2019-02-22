@@ -1,25 +1,20 @@
 ---
-title: 如何：使用命令列將程式碼剖析工具附加至 ASP.NET Web 應用程式以收集記憶體資料 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：Profiler 附加至 ASP.NET Web 應用程式以收集記憶體資料使用命令列 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: d608f85a-41ae-4ca7-85e6-b96624dbc83c
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6818c7c23a1ca42fc4537e1024778cd4cab0f177
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1d824a567f5819125837dde401107a050561d08a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794567"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783468"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至 ASP.NET Web 應用程式以收集記憶體資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,9 +128,6 @@ ms.locfileid: "51794567"
 
     **IISReset /start**  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)
-
-
-

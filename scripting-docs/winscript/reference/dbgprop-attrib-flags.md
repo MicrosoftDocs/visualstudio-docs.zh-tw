@@ -20,19 +20,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 831f12d11515e6796941b64e114bdc084309b87d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb9b6585d1bf17e6c259b8507c74ab263d42aca4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862407"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096144"
 ---
 # <a name="dbgpropattribflags"></a>DBGPROP_ATTRIB_FLAGS
 描述 `IDebugProperty` 的各種屬性。 `DebugPropertyInfo` 結構的成員。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 enum {  
 DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,  
    DBGPROP_ATTRIB_VALUE_IS_INVALID  =0x00000008,  

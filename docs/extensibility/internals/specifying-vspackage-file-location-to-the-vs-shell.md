@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: beb8607a-4183-4ed2-9ac8-7527f11513b1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88cde80499cc56adc2b347b45a4776257ec0e040
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a1a28232b276456dd2b9a982533e1974ed9a088
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988300"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932411"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>為 VS Shell 指定 VSPackage 檔案位置
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須是找不到組件載入 VSPackage 的 DLL。 您可以找到以各種方式下, 表中所述。  

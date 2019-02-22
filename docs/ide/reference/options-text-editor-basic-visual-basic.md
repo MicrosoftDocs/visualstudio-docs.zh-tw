@@ -1,7 +1,6 @@
 ---
 title: 選項、文字編輯器、基本 (VB)、進階
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
@@ -16,22 +15,50 @@ helpviewer_keywords:
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca2178b61aa3cd2aa83314f00c231d564a10944
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a7ea9c2efd6a204932e24de0ef250ba143b8b34
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871235"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925458"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>選項、文字編輯器、基本 (Visual Basic)、進階
-位於 [選項] ([工具] 功能表) 對話方塊上 [文字編輯器] 資料夾的[基本] 資料夾中的 [VB 專用] 屬性頁面包含下列屬性：
+位於 [選項] ([工具] 功能表) 對話方塊上 [文字編輯器] 資料夾的 [基本] 資料夾中的 [VB 專用] 屬性頁面包含下列屬性：
+
+## <a name="analysis"></a>分析
+
+- 啟用完整解決方案分析
+
+   除了開啟程式碼檔案之外，您也必須為解決方案中的所有檔案啟用程式法分析。 如需詳細資訊，請參閱[完整解決方案分析](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)。
+
+## <a name="using-directives"></a>using 指示詞
+
+- 排序 using 時先放置 'System' 指示詞
+
+   選取後，快顯功能表中的 [移除並排序 Using] 命令會對 `using` 指示詞進行排序，並將 'System' 命名空間置於清單頂端。
+
+- 使用指示詞群組來進行分隔
+
+   選取後，快顯功能表中的 [移除並排序 Using] 命令會透過在具有相同根命名空間的指示詞群組之間插入空白行來分隔 `using` 指示詞。
+
+- 為參考組件中的類型建議 Using
+- 為 NuGet 套件中的類型建議 Using
+
+   選取這些選項後，[快速動作](../quick-actions.md)可用來安裝 NuGet 套件，並為未參考的類型新增 `using` 指示詞。
+
+   ![在 Visual Studio 中安裝 NuGet 套件的快速動作](media/nuget-lightbulb.png)
+
+
+## <a name="highlighting"></a>醒目提示
 
  **啟用參考和關鍵字的反白顯示**
 
 文字編輯器可以反白顯示符號的所有執行個體或子句中的所有關鍵字，例如 `If..Then`、`While...End While` 或 `Try...Catch...Finally`。 您可以按 **Ctrl** + **Shift** + **向下鍵**或 **Ctrl** + **Shift** + **向上鍵**，在反白顯示的參考或關鍵字之間巡覽。
+
+## <a name="outlining"></a>大綱
 
 **啟用大綱模式**
 
@@ -47,7 +74,13 @@ ms.locfileid: "53871235"
 |在一組的單一行建構之後|-   在重要的陳述式之後，類別檔中的型別定義之前<br />-   在類別中宣告的變數之後，任何程序之前|
 |在單一行宣告 (非區塊層級宣告) 之後|-   接在重要的陳述式、繼承陳述式、變數宣告、事件宣告、委派宣告和 DLL 宣告陳述式之後|
 
- **程式碼美化排列 (重新格式化)** 文字編輯器會適當地重新格式化您的程式碼。 選取此選項後，程式碼編輯器將會：
+## <a name="block-structure-guides"></a>區塊結構輔助線
+
+選取時，編輯器中會出現對齊結構化程式碼區塊的垂直線，可讓您輕鬆地識別個別程式碼區塊。 例如，您會在 `Sub` 陳述式中的 `Sub` 與 `EndSub` 之間看到線條。
+
+## <a name="editor-help"></a>編輯器說明
+
+**程式碼美化排列 (重新格式化)** 文字編輯器會適當地重新格式化您的程式碼。 選取此選項後，程式碼編輯器將會：
 
 -   將您的程式碼對齊正確的定位點位置
 
@@ -65,7 +98,7 @@ ms.locfileid: "53871235"
 
 **自動插入 End 建構**
 
- 在您輸入 (例如程序宣告 `Sub Main—` 的第一行 ) 並按 **Enter** 時，文字編輯器會新增對稱的 `End Sub` 行。 同樣地，如果新增 [For](/dotnet/visual-basic/language-reference/statements/for-next-statement) 迴圈，則文字編輯器會新增對稱的 `Next` 陳述式。 選取此選項後，程式碼編輯器會自動新增 End 建構。
+在您輸入 (例如，程序宣告 `Sub Main` 的第一行 ) 並按 **Enter** 時，文字編輯器會新增對稱的 `End Sub` 行。 同樣地，如果新增 [For](/dotnet/visual-basic/language-reference/statements/for-next-statement) 迴圈，則文字編輯器會新增對稱的 `Next` 陳述式。 選取此選項後，程式碼編輯器會自動新增 End 建構。
 
 **自動插入 Interface 及 MustOverride 成員**
 
@@ -75,7 +108,7 @@ ms.locfileid: "53871235"
 
 文字編輯器可以提供一般錯誤的解決方案建議，並讓您選取要套用到程式碼的適當修正措施。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)
 - [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)

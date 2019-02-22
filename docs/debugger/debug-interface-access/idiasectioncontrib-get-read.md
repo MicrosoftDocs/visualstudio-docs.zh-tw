@@ -1,8 +1,6 @@
 ---
-title: 'Idiasectioncontrib:: Get_read |Microsoft Docs'
-ms.custom: ''
+title: IDiaSectionContrib::get_read | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 68bfb35c-eabd-412a-bc8f-3094703b98c4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40919422ebdb60a6262d57958e961b1312f6fba4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f950984e69412dce4fc0420148755763eb8463ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861360"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916692"
 ---
 # <a name="idiasectioncontribgetread"></a>IDiaSectionContrib::get_read
 擷取旗標，指出是否可以讀取區段。  
@@ -27,7 +25,7 @@ ms.locfileid: "49861360"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_read (   
+HRESULT get_read (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_read (
  [out]會傳回`TRUE`可以讀取區段; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

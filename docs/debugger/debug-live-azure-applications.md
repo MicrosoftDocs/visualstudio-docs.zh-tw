@@ -1,25 +1,23 @@
 ﻿---
 title: 偵錯即時 ASP.NET Azure 應用程式
 description: 了解如何設定貼齊點與檢視快照集與快照集偵錯工具。
-ms.custom: mvc
+ms.custom: ''
 ms.date: 03/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
-ms.assetid: adb22512-4d4d-40e5-9564-1af421b7087e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: d3dcc5390eac698f3c135c23d497073340bbd8b2
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648816"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335593"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>偵錯即時 ASP.NET Azure 應用程式使用快照集偵錯工具
 
@@ -38,36 +36,57 @@ ms.locfileid: "53648816"
 
 * 快照偵錯工具僅適用於 Visual Studio 2017 Enterprise 15.5 版或更高版本**Azure 開發工作負載**。 (下**個別元件**索引標籤上，您會發現下**偵錯和測試** > **快照偵錯工具**。)
 
-    如果尚未安裝，安裝[Visual Studio 2017 Enterprise 版本 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)或更新版本。 如果您從舊版的 Visual Studio 2017 安裝中更新，執行 Visual Studio 安裝程式，並簽入的快照集偵錯工具元件**ASP.NET 和 web 開發工作負載**。
+    如果尚未安裝，安裝[Visual Studio 2017 Enterprise 版本 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)或更新版本。 如果您從舊版的 Visual Studio 2017 安裝中更新，執行 Visual Studio 安裝程式，並簽入的快照集偵錯工具元件**ASP.NET 和 web 開發工作負載**。
 
 * 基本或更高版本的 Azure App Service 方案。
 
 * 快照集合適用於 Azure App Service 中執行的下列 Web 應用程式：
-
-    * 執行 .NET Framework 4.6.1 或更新版本的 ASP.NET 應用程式。
-    * 在 Windows 上執行 .NET Core 2.0 或更新版本的 ASP.NET Core 應用程式。
+  * 執行 .NET Framework 4.6.1 或更新版本的 ASP.NET 應用程式。
+  * 在 Windows 上執行 .NET Core 2.0 或更新版本的 ASP.NET Core 應用程式。
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>開啟您的專案，並啟動快照集偵錯工具
 
 1. 開啟您想要的快照集偵錯的專案。
 
     > [!IMPORTANT]
-    > 快照集偵錯，您需要開啟**相同版本的原始程式碼**發行至 Azure App Service。
+    > 快照集偵錯，您需要開啟*相同版本的原始程式碼*發行至 Azure App Service。
+::: moniker range="< vs-2019"
 
-1. 在 [雲端總管] (**檢視 > Cloud Explorer**)，以滑鼠右鍵按一下您的專案部署至 Azure App Service，然後選取**附加快照偵錯工具**。
+2. 在 [雲端總管] (**檢視 > Cloud Explorer**)，以滑鼠右鍵按一下您的專案部署至 Azure App Service，然後選取**附加快照偵錯工具**。
 
    ![啟動快照集偵錯工具](../debugger/media/snapshot-launch.png)
 
     您選取的第一次**附加快照偵錯工具**，系統會提示您在 Azure App Service 上安裝快照偵錯工具網站延伸模組。 此安裝需要重新啟動您的 Azure App Service。
 
+::: moniker-end
+::: moniker range=">= vs-2019"
+2. 附加快照偵錯工具。 您可以使用數種不同的方法之一：
+
+    * 選擇**偵錯 > 附加快照偵錯工具...**.選取您的專案部署至 Azure App Service 和 Azure 儲存體帳戶，然後再按一下**附加**。
+  
+      ![啟動快照集偵錯工具偵錯 功能表](../debugger/media/snapshot-debug-menu-attach.png)
+
+    * 以滑鼠右鍵按一下專案，然後選取**發佈**，然後在發佈頁面上，按一下**附加快照偵錯工具**。 選取您的專案部署至 Azure App Service 和 Azure 儲存體帳戶，然後再按一下**附加**。
+    ![啟動快照集偵錯工具，從 [發行] 頁面](../debugger/media/snapshot-publish-attach.png)
+
+    * 在偵錯目標下拉式選單選取**快照集偵錯工具**、 點擊**F5**然後視需要選取 如果您的專案部署至 Azure App Service 和 Azure 儲存體帳戶，然後再按一下**附加**。
+    ![啟動快照集偵錯工具，從 [F5] 下拉式清單功能表](../debugger/media/snapshot-F5-dropdown-attach.png)
+
+    * 使用 [雲端總管] (**檢視 > Cloud Explorer**)，以滑鼠右鍵按一下您的專案部署至 Azure App Service 和選取 Azure 儲存體帳戶，然後按一下**附加快照偵錯工具**。
+  
+      ![啟動快照集偵錯工具，從 [雲端總管]](../debugger/media/snapshot-launch.png)
+
+    您選取的第一次**附加快照偵錯工具**，系統會提示您在 Azure App Service 上安裝快照偵錯工具網站延伸模組。 此安裝需要重新啟動您的 Azure App Service。
+::: moniker-end
+
    Visual Studio 現在是在快照集偵錯模式中。
 
-    > [!NOTE]
-    > Application Insights 網站延伸模組也支援快照集偵錯。 如果您遇到 「 網站過時的延伸模組 」 的錯誤訊息，請參閱[疑難排解秘訣和已知的問題的快照集偵錯](../debugger/debug-live-azure-apps-troubleshooting.md)升級詳細資料。
+  > [!NOTE]
+  > Application Insights 網站延伸模組也支援快照集偵錯。 如果您遇到 「 網站過時的延伸模組 」 的錯誤訊息，請參閱[疑難排解秘訣和已知的問題的快照集偵錯](../debugger/debug-live-azure-apps-troubleshooting.md)升級詳細資料。
 
    ![快照集偵錯模式](../debugger/media/snapshot-message.png)
 
-   **模組**視窗會顯示您的 Azure App Service 的所有模組已都載入時 (選擇**偵錯 / Windows / 模組**若要開啟此視窗)。
+   **模組**視窗會顯示您的 Azure App Service 的所有模組已都載入時 (選擇**偵錯 > Windows > 模組**若要開啟此視窗)。
 
    ![核取 [模組] 視窗](../debugger/media/snapshot-modules.png)
 
@@ -90,7 +109,7 @@ ms.locfileid: "53648816"
 
 ## <a name="inspect-snapshot-data"></a>檢查快照集的資料
 
-1. 當叫用的貼齊點時，快照集會出現在 [診斷工具] 視窗中。 若要開啟此視窗，選擇**偵錯 / Windows / 顯示診斷工具**。
+1. 當叫用的貼齊點時，快照集會出現在 [診斷工具] 視窗中。 若要開啟此視窗，選擇**偵錯 > Windows > 顯示診斷工具**。
 
    ![開啟貼齊點](../debugger/media/snapshot-diagsession-window.png)
 
@@ -134,7 +153,7 @@ ms.locfileid: "53648816"
 
     ![建立記錄點](../debugger/media/snapshot-logpoint.png)
 
-1. 在 [訊息] 欄位中，您可以輸入您想要記錄的新記錄檔訊息。 您也可以將它們放在大括號內，來評估您的記錄檔訊息中的變數。
+1. 在 [**訊息**] 欄位中，您可以輸入您想要記錄的新記錄檔訊息。 您也可以將它們放在大括號內，來評估您的記錄檔訊息中的變數。
 
     如果您選擇**傳送到輸出視窗**，當到達記錄點時，訊息會出現在 [診斷工具] 視窗。
 
@@ -144,7 +163,7 @@ ms.locfileid: "53648816"
 
 ## <a name="next-steps"></a>後續步驟
 
-在本教學課程中，您已了解如何使用快照集偵錯工具。 若要閱讀有關這項功能的更多詳細資料。
+在本教學課程中，您已了解如何使用 App service 的快照集偵錯工具。 若要閱讀有關這項功能的更多詳細資料。
 
 > [!div class="nextstepaction"]
 > [快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)

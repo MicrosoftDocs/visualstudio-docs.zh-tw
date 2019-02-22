@@ -3,7 +3,6 @@ title: 錯誤：目標電腦上的 Visual Studio 遠端偵錯工具服務無法�
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
@@ -14,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37caaea1f70771145f318d892025d566a99f4ea6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f2d2d637dfb74a6d3a0e4c8b4ae346aa8236f28a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062618"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018887"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>錯誤：目標電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦
 這個錯誤指出，Visual Studio 遠端偵錯工具服務正在某個使用者帳戶下執行，但是當該帳戶嘗試連接您在其中進行偵錯的電腦時無法進行驗證。  
@@ -33,11 +32,11 @@ ms.locfileid: "53062618"
 |-|-|-|-|  
 ||LocalSystem 帳戶|網域帳戶|在兩台電腦上都具有相同使用者名稱和密碼的本機帳戶|  
 |兩台電腦都位於相同的網域|是|[是]|是|  
-|網域上具有雙向信任的兩台電腦|否|否|[是]|  
+|網域上具有雙向信任的兩台電腦|否|否|是|  
 |工作群組中的一或兩台電腦|否|否|是|  
 |不同網域上的電腦|否|否|是|  
   
- 此外：  
+ 其他情況：  
   
 -   您用來執行 Visual Studio 遠端偵錯工具服務的帳戶，必須是遠端機器上的系統管理者，這樣才能偵錯任何處理序。  
   

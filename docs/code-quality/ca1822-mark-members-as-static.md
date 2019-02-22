@@ -1,7 +1,6 @@
 ---
 title: CA1822:將成員標記為 static
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - MarkMembersAsStatic
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 743f0af7-41d1-4852-8d97-af0688b31118
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a566518d41a37e12ce20188bfe84c02a6cabcf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5ac9aff8741654ee5799724feb09c53f588dafb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890189"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948520"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822:將成員標記為 static
 
@@ -28,7 +27,7 @@ ms.locfileid: "53890189"
 |-|-|
 |TypeName|MarkMembersAsStatic|
 |CheckId|CA1822|
-|類別|Microsoft.Performance|
+|分類|Microsoft.Performance|
 |中斷變更|非中斷-成員不是組件外部可見不論有變更您進行。 非中斷-如果您只要變更成員的執行個體成員為`this`關鍵字。<br /><br /> 中斷-如果您將成員從執行個體成員變更為靜態成員，而且它是組件外部可見。|
 
 ## <a name="cause"></a>原因

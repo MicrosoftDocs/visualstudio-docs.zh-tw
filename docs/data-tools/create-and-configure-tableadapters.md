@@ -11,17 +11,15 @@ helpviewer_keywords:
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b720072d5ccd695ff1e7006bda5221ae00db06ef
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: d4243bcedea1699ba02b3c3715cab7f61ba62281
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582342"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950015"
 ---
 # <a name="create-and-configure-tableadapters"></a>建立和設定 TableAdapter
 
@@ -58,7 +56,7 @@ Tableadapter 的簡介，請參閱 <<c0> [ 使用 Tableadapter 填入資料集](
 > [!NOTE]
 > 指派給 SELECT 命令的預存程序是由呼叫 TableAdapter 的方法命名，在精靈的下一個步驟中執行。 預設方法是`Fill`，因此通常用來執行 SELECT 程序的程式碼是`TableAdapter.Fill(tableName)`。 如果您變更預設名稱，從`Fill`，替代`Fill`名稱指派和"TableAdapter"取代為 TableAdapter 的實際名稱 (例如`CustomersTableAdapter`)。
 
-- 選取**建立將更新傳送至資料庫的直接方法**選項相當於設定`GenerateDBDirectMethods`屬性設為 true。 原始的 SQL 陳述式不會提供足夠的資訊或查詢不是可更新的查詢時，此選項為無法使用。 發生這種情況可以例如，在**聯結**查詢及傳回單一 （純量） 值的查詢。
+- 選取**建立將更新傳送至資料庫的直接方法**選項相當於設定`GenerateDBDirectMethods`屬性設為 true。 當原始 SQL 陳述式未提供足夠的資訊，或查詢不是可更新的查詢時，就無法使用此選項。 發生這種情況可以例如，在**聯結**查詢及傳回單一 （純量） 值的查詢。
 
 **進階選項**精靈可讓您：
 
@@ -82,7 +80,7 @@ Tableadapter 的簡介，請參閱 <<c0> [ 使用 Tableadapter 填入資料集](
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>若要開始使用新的查詢的 TableAdapter 查詢組態精靈
 
-1.  開啟您的資料集，在**Dataset 設計工具**。
+1.  在 **DataSet 設計工具**中開啟資料集。
 
 2.  如果您要建立新的查詢，拖曳**查詢**物件**資料集**索引標籤**工具箱**拖曳至<xref:System.Data.DataTable>，或選取**加入查詢**TableAdapter 的快顯功能表中。 您也可以拖曳**查詢**物件上的空白區域**Dataset 設計工具**，這會建立有關聯的 TableAdapter <xref:System.Data.DataTable>。 這些查詢只能傳回單一 （純量） 值或執行的更新、 插入或刪除對資料庫的命令。
 

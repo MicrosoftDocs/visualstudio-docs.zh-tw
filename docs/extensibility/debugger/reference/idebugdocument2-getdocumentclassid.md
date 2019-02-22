@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetDocumentClassID |Microsoft Docs
+title: IDebugDocument2::GetDocumentClassID | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69c9b5d351f3989bf7a9855274634ededa52f08a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e149f28ede22cffe34ea08999ab3d3487d37abf5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825713"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975474"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 取得文件的類別識別項。  

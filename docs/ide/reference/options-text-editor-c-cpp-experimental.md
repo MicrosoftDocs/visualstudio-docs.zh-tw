@@ -9,16 +9,14 @@ f1_keywords:
 author: mikeblome
 ms.author: mblome
 manager: wpickett
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f5ddf5a42199c8097e982c6ddd8e559185787fb
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 535f67f7456f26d3f61820e909c3f7622eb71c85
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672336"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954891"
 ---
 # <a name="options-text-editor-cc-experimental"></a>選項、文字編輯器、C/C++、實驗
 
@@ -37,7 +35,7 @@ Visual Studio 2017 安裝提供這些功能。
 
 ## <a name="enable-faster-project-load"></a>啟用更快的專案載入
 
-**Visual Studio 2017 版本 15.3 和更新版本**：這項功能現在稱為「啟用專案快取」，並已移至 [VC++ 專案設定](vcpp-project-settings-projects-and-solutions-options-dialog-box.md)屬性頁。
+**Visual Studio 2017 15.3 版和更新版本**：這項功能現在稱為**啟用專案快取**，並已移至 [VC++ 專案設定](vcpp-project-settings-projects-and-solutions-options-dialog-box.md)屬性頁。
 這個選項讓 Visual Studio 能夠快取專案資料，以便在您下次開啟專案時，載入那份快取的資料，而不必重新從專案檔計算資料。 使用快取資料可以大幅加速專案載入時間。
 
 ## <a name="additional-features-in-the-visual-studio-marketplace"></a>Visual Studio Marketplace 中的其他功能

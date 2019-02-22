@@ -9,17 +9,17 @@ helpviewer_keywords:
 - calendars [Office development in Visual Studio], deleting appointments
 - deleting appointments
 - appointments [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b5e719f8ebf8b1347c6ceec570fbd71895ef336a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc20ae31d6417d12d0a416fe3573e7f4fc8f2ee2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915178"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865550"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>HOW TO：以程式設計方式刪除約會
   本範例會刪除一個週期性約會執行個體。 本範例假設有個週期性約會執行個體發生於 2006 年 6 月 28 日 08:00。  

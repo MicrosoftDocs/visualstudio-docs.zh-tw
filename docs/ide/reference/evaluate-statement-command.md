@@ -1,7 +1,6 @@
 ---
 title: 評估陳述式命令
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0be6e57c0c741420006d20c0945b9b8c8b77d51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 98bdaf41aa34367d656e2bfb5694f3b615dbe3b8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864121"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911737"
 ---
 # <a name="evaluate-statement-command"></a>評估陳述式命令
 評估並顯示指定的陳述式。

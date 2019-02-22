@@ -1,7 +1,6 @@
 ---
 title: 元件索引標籤、工具箱
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.CHOOSEITEMS.FrameworkComponents
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - Toolbox, Components tab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3324063e80bdb33ec928135ef8760c5e15c7a8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24f5e486d49dca8290c9063625132f673bf79c3c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967066"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925614"
 ---
 # <a name="toolbox-components-tab"></a>工具箱, 元件索引標籤
 

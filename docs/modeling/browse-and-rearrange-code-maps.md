@@ -19,16 +19,15 @@ helpviewer_keywords:
 - dependency graphs, browsing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9bec9a2ceaee03d73f02511c84393902dd66839b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3daa6966412f9bc24c498a089656502a31bcf90e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968692"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954552"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>瀏覽和重新排列 Code Map
 
@@ -282,7 +281,7 @@ Code map 會顯示下列連結：
     |**若要變更**|**Choose**|
     |-|-|
     |背景色彩|**背景**|
-    |外框色彩|**筆觸**|
+    |外框色彩|**Stroke**|
     |文字色彩 （代號"f"會顯示以顯示結果）|**前景**|
     |圖示|**圖示**|
 

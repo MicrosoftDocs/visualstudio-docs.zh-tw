@@ -1,20 +1,19 @@
 ---
 title: 檢查 XML 結構描述設計工具中使用內容模型檢視節點的內容模型
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f698ab9c26b417c8f88a993863f50e0c3df574d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d188ef947c8c789f8de032522d43c09660f2ded
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936096"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920908"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>HOW TO：檢查使用內容模型檢視節點的內容模型
 

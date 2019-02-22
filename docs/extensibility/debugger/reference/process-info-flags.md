@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FLAGS |Microsoft Docs
+title: PROCESS_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 - PROCESS_INFO_FLAGS enumeration
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c7d319d2053cfa67bd4e7fe77c68474fceb03a2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1d3541355da9ea144129e730efe9876b4e6d642f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896119"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009566"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 

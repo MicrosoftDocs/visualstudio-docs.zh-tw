@@ -1,21 +1,20 @@
 ---
 title: 測試產生 | Microsoft IntelliTest 開發人員測試工具
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Test generation
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5f2a63c21a1d2f25f34bda3f27163783d9c96bcd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee6b01e2c154ddebf71f5ae2511ccfe693506db6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936642"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316531"
 ---
 # <a name="test-generation"></a>測試產生
 
@@ -238,8 +237,8 @@ namespace MyTests
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>進一步閱讀
 
-* [程式碼繫結測試](https://blogs.msdn.microsoft.com/devops/2015/04/18/smart-unit-tests-test-to-code-binding-test-case-management/)
-* [一項掌控全場的測試](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)
+* [程式碼繫結測試](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
+* [一項掌控全場的測試](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 
 ## <a name="got-feedback"></a>有任何意見反應嗎？
 

@@ -1,25 +1,20 @@
 ---
 title: Visual C++ Intellisense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 9d7c6414-4e6c-4889-a74c-a6033795eccc
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881673"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802625"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ Intellisense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,14 +80,14 @@ ms.locfileid: "49881673"
   
   請注意以下各點：  
   
-- 在第 6 行 #ifdef 分支呈現灰色，表示非使用中的區域，因為 *_ANDROID\\*  \_未定義的 iOS 專案。  
+- 第 6 行上的 #ifdef 分支呈現灰色，表示非使用中的區域，因為 *_ANDROID\\*\_ 並非針對 iOS 專案而定義。  
   
 - 位於第 11 行的問候語變數會使用識別碼 HELLO 進行初始化，現在它具有紅色波浪線。 這是因為目前使用中的 iOS 專案中並未定義任何識別碼 HELLO。  
   
 - 第 12 行會在識別碼 BYE 具有紫色波浪線；此識別項不會在目前選取的非使用中 Android.NativeActivity 專案中定義。  
   
 ## <a name="single-file-intellisense"></a>單一檔案 IntelliSense  
- 當您開啟任何專案以外的單一檔案時，仍可使用 IntelliSense。 您可以移至 [文字編輯器]、[C/C++]、[進階] 開啟或關閉 IntelliSense 功能，以便啟用或停用特定功能。 若要針對不是專案一部分的單一檔案設定 IntelliSense，請尋找 [進階] 區段中的 [非專案檔案的 IntelliSense 及瀏覽功能]。 請參閱 [Visual C++ 導覽](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)。  
+ 當您開啟任何專案以外的單一檔案時，仍可使用 IntelliSense。 您可以移至 [文字編輯器]、[C/C++]、[進階] 開啟或關閉 IntelliSense 功能，以便啟用或停用特定功能。 若要針對不是專案一部分的單一檔案設定 IntelliSense，請尋找 [進階] 區段中的 [非專案檔案的 IntelliSense 及瀏覽功能]。 請參閱 [Visual C++ 導覽](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)。  
   
  ![Visual C&#43;&#43; 單一檔案 IntelliSense](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   
@@ -100,8 +95,5 @@ ms.locfileid: "49881673"
   
  ![將路徑新增至標頭檔](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 IntelliSense](../ide/using-intellisense.md)
-
-
-

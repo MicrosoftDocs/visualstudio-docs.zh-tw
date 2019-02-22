@@ -1,7 +1,6 @@
 ---
 title: 專案和項目範本參數
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
@@ -10,19 +9,19 @@ helpviewer_keywords:
 - item templates, parameters
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e945ac065b2c7f5e3a677ae2175b45a94af2910a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 2626734653381701680e85cbb190c028d92048a4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935186"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907681"
 ---
 # <a name="template-parameters"></a>範本參數
 
 將範本具現化時，您可以取代範本中的值。 若要設定這項功能，請使用「範本參數」。 範本參數可以用來取代範本中的值，例如類別名稱和命名空間。 當使用者新增項目或專案取代這些參數時，範本精靈會在背景中執行。
 
-## <a name="declaring-and-enabling-template-parameters"></a>宣告和啟用範本參數
+## <a name="declare-and-enable-template-parameters"></a>宣告和啟用範本參數
 
 範本參數是以 $*parameter*$ 格式來宣告。 例如：
 
@@ -32,7 +31,7 @@ ms.locfileid: "53935186"
 
 - $guid5$
 
-### <a name="to-enable-parameter-substitution-in-templates"></a>若要啟用範本中的參數替換
+### <a name="enable-parameter-substitution-in-templates"></a>啟用範本中的參數替換
 
 1. 在範本的 *.vstemplate* 檔案中，針對您要啟用參數取代的項目，找出對應的 `ProjectItem` 元素。
 
@@ -46,11 +45,12 @@ ms.locfileid: "53935186"
 
 ## <a name="reserved-template-parameters"></a>保留的範本參數
 
-下表列出可用於任何範本的保留範本參數。
+下表列出可用於任何範本的保留範本參數：
 
-|參數|說明|
+|參數|描述|
 |---------------|-----------------|
 |clrversion|通用語言執行平台 (CLR) 的最新版本。|
+|ext_*|將 `ext_` 前置詞新增至任何參數，以參考父代範本的變數。 例如，`ext_safeprojectname`。|
 |guid[1-10]|GUID；用來取代專案檔中的專案 GUID。 您最多可以指定 10 個唯一的 GUID (例如，`guid1`)。|
 |itemname|使用者在 [新增項目] 對話方塊中所提供的名稱。|
 |machinename|目前的電腦名稱 (例如，Computer01)。|
@@ -118,6 +118,7 @@ namespace $safeprojectname$
 
 ## <a name="see-also"></a>另請參閱
 
+- [如何：替代範本中的參數](how-to-substitute-parameters-in-a-template.md)
 - [自訂範本](../ide/customizing-project-and-item-templates.md)
 - [如何：建立專案範本](../ide/how-to-create-project-templates.md)
 - [範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

@@ -1,8 +1,6 @@
 ---
 title: 建立呼叫堆疊的視覺導覽圖 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -28,26 +26,26 @@ helpviewer_keywords:
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede973d96ffe21fb9406bb471400ffa8e2b69251
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c5285149bbefa8230940cfad19b5e0391a1e99bd
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389574"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690498"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>偵錯時建立的視覺效果的對應呼叫堆疊 
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>建立視覺效果的對應呼叫堆疊偵錯時 (C#，Visual Basic、 c + +、 JavaScript)
 
 在您偵錯時建立 Code Map 以視覺方式追蹤呼叫堆疊。 您可以在地圖上做筆記來追蹤程式碼的執行狀況，以便專注於尋找 Bug。
 
-如需逐步解說，觀看此影片：[視訊： 使用 Code Map 偵錯工具整合 (Channel 9) 以視覺化方式進行偵錯](http://go.microsoft.com/fwlink/?LinkId=293418)
+如需逐步解說中，觀看此影片：[影片：使用 Code Map 偵錯工具整合 (Channel 9) 以視覺化方式進行偵錯](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 如需命令和動作，您可以使用 code map 的詳細資訊，請參閱 <<c0> [ 瀏覽和重新整理 code map](../modeling/browse-and-rearrange-code-maps.md)。
 
 >[!IMPORTANT]
->您可以建立 code map 只有[Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)。
+>您可以建立 code map 只有[Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)。
 
 以下是快速查看 code map:
 
@@ -55,7 +53,7 @@ ms.locfileid: "52389574"
 
 ##  <a name="MapStack"></a> 對應呼叫堆疊
 
-1. 在 Visual Studio Enterprise 中C#，Visual Basic、 c + +、 JavaScript 或 X + + 專案中，開始藉由選取偵錯**偵錯** > **開始偵錯**或按下**F5**.
+1. 在 Visual Studio Enterprise 中C#，Visual Basic、 c + + 或 JavaScript 專案中，開始藉由選取偵錯**偵錯** > **開始偵錯**或按下**F5**.
    
 1. 您的應用程式進入中斷模式或是您逐步執行函式之後，請選取**偵錯** > **Code Map**，或按**Ctrl**+**Shift**+**`**.
 

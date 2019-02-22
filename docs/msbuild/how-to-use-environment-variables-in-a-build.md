@@ -1,8 +1,6 @@
 ---
-title: 如何：在組建中使用環境變數 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：在組建中使用環境變數 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - environment variables, referencing
@@ -11,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 7f9e4469-8865-4b59-aab3-3ff26bd36e77
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d57709b2e1ff4f3721644f2f61e030ea8ccccf82
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7a0afa3d67ab78248ea983eedb0cd626dc7af499
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828351"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942879"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>如何：在組建中使用環境變數
+# <a name="how-to-use-environment-variables-in-a-build"></a>HOW TO：在組建中使用環境變數
 當您建置專案時，通常需要使用專案檔或構成專案之檔案中沒有的資源來設定組建選項。 此資訊通常會儲存於環境變數中。  
   
 ## <a name="reference-environment-variables"></a>參考環境變數  
@@ -67,4 +65,4 @@ ms.locfileid: "49828351"
 ## <a name="see-also"></a>另請參閱  
 [MSBuild ](../msbuild/msbuild.md)  
 [MSBuild 屬性](../msbuild/msbuild-properties.md)  
-[如何：使用不同選項來建置相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  
+[如何：使用不同選項來建置相同的來源檔案](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  

@@ -1,20 +1,19 @@
 ---
 title: 偵錯工具使用者介面 (XSLT)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd9ee5e1d86982b2e1b0a8495c9b43a14f43988
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb19167bd6d689d807f9eb910b8e9e1135819ab4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875293"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919686"
 ---
 # <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面 (XSLT)
 
@@ -101,5 +100,5 @@ ms.locfileid: "53875293"
 ## <a name="see-also"></a>另請參閱
 
 - [偵錯 XSLT](../xml-tools/debugging-xslt.md)
-- [偵錯工具簡介](../debugger/debugger-feature-tour.md)   
+- [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [檢查 [Visual Studio 中的] [自動變數] 和 [區域變數] 視窗中的變數](../debugger/autos-and-locals-windows.md)

@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, site definitions
 - site definitions [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66e3566b7bfabb7ec2049632937beaa697246403
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b2709426cca892e60d864fa62695b2eef8c776b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868322"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874038"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>建立適用於 SharePoint 的網站定義
   中的 SharePoint 網站定義專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]可讓您建立*站台定義*，做為新的 SharePoint 網站的基礎。 這些定義不只會決定的外觀和行為的 SharePoint 網站，但也其預設內容和功能。 在定義中，您可以輸入預先設定的清單、 內容類型、 事件接收器、 影像和其他項目。 例如，SharePoint 包含了一些網站定義 (例如 BLOG)。 當您建立站台上的部落格網站定義時，此網站包含清單、 Web 組件和部落格網站需要的其他項目。  
@@ -36,9 +36,9 @@ ms.locfileid: "53868322"
   
 |檔案名稱|描述|  
 |---------------|-----------------|  
-|*Default.aspx*|新的 SharePoint 網站預設 ASPX 首頁。|  
-|*Onet.xml*|指定新的站台組態]、 [站台定義範本，以及預設行為的元件。 這些設定可以包含屬性的內容類型都已啟用，預設清單檢視中，文件範本檔案，例如，與 Web 組件包含與站台。 根據預設，`Modules`區段會列出可以加入至 SharePoint 網站和設定方式的檔案。|  
-|*webtemp_\<SiteDefinitionName >.xml*|指定出現在站台定義組態**範本選擇**一節**新的 SharePoint 網站**頁面。|  
+|*default.aspx*|新的 SharePoint 網站預設 ASPX 首頁。|  
+|*onet.xml*|指定新的站台組態]、 [站台定義範本，以及預設行為的元件。 這些設定可以包含屬性的內容類型都已啟用，預設清單檢視中，文件範本檔案，例如，與 Web 組件包含與站台。 根據預設，`Modules`區段會列出可以加入至 SharePoint 網站和設定方式的檔案。|  
+|*webtemp_\<SiteDefinitionName>.xml*|指定出現在站台定義組態**範本選擇**一節**新的 SharePoint 網站**頁面。|  
   
  根據預設，所有的站台定義會儲存在*\<磁碟機： > \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates*資料夾。 每個網站定義都有它自己的子資料夾。  
   

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee6f047d7975aec39ecf44ea5c551ebffecda1b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8d7de9a5a6d159987db5816341a048e74065c128
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953720"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954659"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 呼叫函式，並傳回產生的值當做物件。  

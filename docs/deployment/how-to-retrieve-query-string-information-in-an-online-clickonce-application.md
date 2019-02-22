@@ -1,8 +1,6 @@
 ---
-title: 如何： 擷取在線上 ClickOnce 應用程式中的查詢字串資訊 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：擷取在線上 ClickOnce 應用程式中的查詢字串資訊 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 48ce098a-a075-481b-a5f5-c8ba11f63120
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e8ad899d7cf62b2d874d5dc4971c8e7ad7f950a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: df24beeb291efde66498e14fc9e95c980e04c553
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829757"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041265"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何： 擷取在線上 ClickOnce 應用程式中的查詢字串資訊
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>HOW TO：在線上 ClickOnce 應用程式中擷取查詢字串資訊
 *「查詢字串」* (query string) 是開頭為句號 (?) 之 URL 的部分，內含 *name=value*格式的任意資訊。 假設您有裝載於 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 且名為 `WindowsApp1` 的 `servername`應用程式，而且想要在啟動應用程式時傳入變數 `username` 的值。 URL 可能如下所示：  
   
  `http://servername/WindowsApp1.application?username=joeuser`  
@@ -41,7 +39,7 @@ ms.locfileid: "49829757"
 > [!NOTE]
 >  當您決定啟用這項功能之前，請參閱本主題後面的＜安全性＞一節。  
   
- 如需有關如何建立資訊[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署*Mage.exe*或是*MageUI.exe*，請參閱[逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+ 如需有關如何建立資訊[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署*Mage.exe*或是*MageUI.exe*，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
 > [!NOTE]
 >  從 .NET Framework 3.5 SP1 開始，可以將命令列引數傳遞至離線 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 如果您要提供應用程式的引數，則可以將參數傳入副檔名為 .APPREF-MS 的捷徑檔案。  
@@ -78,7 +76,7 @@ ms.locfileid: "49829757"
  如果您的應用程式只能在線上時使用，則一律會透過 URL 予以啟用。 不過，如果查詢字串參數遺失或損毀，則即使在此情況下，您的應用程式還是必須寫入才能正常運作。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
- 只有在使用之前想要清理任何惡意字元的輸入時，才允許將 URL 參數傳入 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 例如，如果在資料庫的 SQL 查詢中未進行篩選，則內嵌引號、斜線或分號的字串可能會執行任意資料作業。 如需有關查詢字串安全性的詳細資訊，請參閱 <<c0> [ 指令碼會利用概觀](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
+ 只有在使用之前想要清理任何惡意字元的輸入時，才允許將 URL 參數傳入 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 例如，如果在資料庫的 SQL 查詢中未進行篩選，則內嵌引號、斜線或分號的字串可能會執行任意資料作業。 如需查詢字串安全性的詳細資訊，請參閱 [指令碼惡意探索概觀](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
   
 ## <a name="see-also"></a>另請參閱  
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)

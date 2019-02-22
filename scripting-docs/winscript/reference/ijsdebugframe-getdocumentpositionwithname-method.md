@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: Getdocumentpositionwithname 方法 |Microsoft 文件'
+title: 'Ijsdebugframe:: Getdocumentpositionwithname 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49afb5903e190280d226a24b22dc389041861c52
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d6333f9c52c3ab4e0cd01c34f5e5228721aa55b4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728048"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093830"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithname-method"></a>IJsDebugFrame::GetDocumentPositionWithName 方法
 傳回此堆疊框架，在使用者層級文件中的目前位置。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetDocumentPositionWithName(  
    BSTR *pDocumentName,  
    DWORD *pLine,  
@@ -38,7 +38,7 @@ HRESULT GetDocumentPositionWithName(
   
 #### <a name="parameters"></a>參數  
  `pDocumentName`  
- [out]為靜態的指令碼、 文件的 URL。 動態指令碼，則會傳回包含類型的指令碼 （例如，評估版的程式碼，函式程式碼等） 的名稱。  
+ [out]為靜態的指令碼、 文件的 URL。 針對動態指令碼，會傳回包含指令碼 （例如，評估程式碼，函式程式碼等） 的類型名稱。  
   
  `pLine`  
  [out] 文件中的以 1 起始的行位置。  

@@ -2,7 +2,6 @@
 title: 偵錯多執行緒應用程式 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/06/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
@@ -20,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea1af90ae775ed24f5cceabeca04cdc901f545f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8158444662b7e0b2f7eb90d4ec5919314489dfc1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059674"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960593"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中對多執行緒應用程式進行偵錯
 執行緒是一連串的指示，作業系統授與處理器時間。 在作業系統中執行的每個處理序都包含至少一個執行緒。 具有一個以上執行緒的處理序就稱為多執行緒。  
@@ -41,7 +40,7 @@ ms.locfileid: "53059674"
 
 Visual Studio 會提供不同的工具，以用於偵錯多執行緒應用程式。
 
-- 偵錯執行緒的主要工具是以執行緒而言，**執行緒**視窗中，在來源視窗中的執行緒標記**平行堆疊**視窗中，**平行監看式**視窗中，而**偵錯位置**工具列。 若要了解**執行緒**視窗和**偵錯位置**工具列，請參閱[逐步解說：使用 [執行緒] 視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)。 若要了解如何使用**平行堆疊**並**平行監看式**windows，請參閱[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。 這兩個主題示範如何使用執行緒標記。
+- 偵錯執行緒的主要工具是以執行緒而言，**執行緒**視窗中，在來源視窗中的執行緒標記**平行堆疊**視窗中，**平行監看式**視窗中，而**偵錯位置**工具列。 若要了解**執行緒**視窗和**偵錯位置**工具列，請參閱[逐步解說：使用執行緒視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)。 若要了解如何使用**平行堆疊**並**平行監看式**windows，請參閱[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。 這兩個主題示範如何使用執行緒標記。
   
 - 使用程式碼[Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[並行執行階段](/cpp/parallel/concrt/concurrency-runtime/)，偵錯的主要工具是**平行堆疊**視窗中， **平行監看式** 視窗中，而**工作** 視窗，它也支援 JavaScript。 若要開始，請參閱[逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)和[逐步解說：C + + AMP 應用程式偵錯](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)。 
 
@@ -64,10 +63,10 @@ Visual Studio 也提供功能強大的中斷點和追蹤點，這有助於進行
  [對多重處理序進行偵錯](../debugger/debug-multiple-processes.md)  
  說明如何偵錯多重處理序
 
- [逐步解說：使用 [執行緒] 視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)。  
+ [逐步解說：使用執行緒視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)。  
  逐步解說，示範如何使用**執行緒**視窗和**偵錯位置**工具列。 
 
- [逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [逐步解說：對平行應用程式進行偵錯](../debugger/walkthrough-debugging-a-parallel-application.md)  
  逐步解說，示範如何使用**平行堆疊**並**工作**windows。  
   
  [如何：在偵錯時切換到另一個執行緒](../debugger/how-to-switch-to-another-thread-while-debugging.md)  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3f65b6d4daeb928cab1c59aaa5f1f2ded3225e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea0e10413581e7047b92b640f105023b0a1a8ff3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898212"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979578"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>舊版語言服務中對自動變數視窗的支援
 **自動變數**視窗會顯示運算式，例如變數和正在偵錯程式暫停 （可能是因為中斷點或例外狀況） 時，會在範圍內的參數。 運算式可以包含變數，本機或全域和已變更的區域範圍中的參數。 **自動變數**視窗也可以包含類別、 結構或其他類型的具現化。 運算式評估工具可以評估的任何項目可能顯示在**自動變數**視窗。  

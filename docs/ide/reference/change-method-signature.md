@@ -1,11 +1,10 @@
 ---
 title: 重構方法簽章
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.remove
 - vs.csharp.refactoring.reorder
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68c814fca9d5e1df2c01e803b13cd5b03e8935e4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89af8235f897858094058981df52d6a3fec8a7d6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968400"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934181"
 ---
 # <a name="change-a-method-signature-refactoring"></a>變更方法特徵標記重構
 
@@ -61,7 +60,7 @@ ms.locfileid: "53968400"
 
    ![[變更簽章] 對話方塊](media/changesignature-dialog-cs.png)
 
-   | 按鈕 | 說明
+   | 按鈕 | 描述
    | ------ | ---
    | **向上/向下** | 將選取的參數在清單中向上和向下移動
    | **移除** | 將選取的參數從清單中移除

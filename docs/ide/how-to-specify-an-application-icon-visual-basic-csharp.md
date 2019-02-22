@@ -1,8 +1,6 @@
 ---
-title: 如何：指定應用程式圖示 (Visual Basic、C#)
+title: HOW TO：指定應用程式圖示 (Visual Basic、C#)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], application
@@ -10,17 +8,17 @@ helpviewer_keywords:
 - application icons [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8da1de87031db962ede178a742325d9206e808c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f2903821c0e0843de43f68d67cc64c344ab95e02
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945216"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924565"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>如何：指定應用程式圖示 (Visual Basic、C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>HOW TO：指定應用程式圖示 (Visual Basic、C#)
 
 專案的 `Icon` 屬性指定已編譯的應用程式將會顯示在**檔案總管**和 Windows 工作列的圖示檔 (*.ico*)。
 

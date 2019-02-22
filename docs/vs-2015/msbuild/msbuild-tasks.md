@@ -1,14 +1,9 @@
 ---
 title: MSBuild 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - tasks
 - MSBuild, tasks
@@ -16,13 +11,13 @@ ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dff7c0ce45c71340f3b931e32843adb6a90ea075
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 611bc5c0fbb81d38aa10561d8603ef281a51d9a1
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176693"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54788685"
 ---
 # <a name="msbuild-tasks"></a>MSBuild 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,10 +68,8 @@ ms.locfileid: "49176693"
 ## <a name="overridden-tasks"></a>覆寫的工作  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會在數個位置中尋找工作。 第一個位置是在儲存於 .NET Framework 目錄中副檔名為 .OverrideTasks 的檔案中。 這些檔案中的工作會覆寫任何其他具有相同名稱的工作，包括專案檔中的工作。 第二個位置是在 .NET Framework 目錄中副檔名為 .Tasks 的檔案中。 如果在這兩個位置中找不到工作，就會使用專案檔中的工作。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild](msbuild.md)   
  [工作撰寫](../msbuild/task-writing.md)   
  [內嵌工作](../msbuild/msbuild-inline-tasks.md)
-
-

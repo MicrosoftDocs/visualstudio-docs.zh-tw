@@ -1,7 +1,6 @@
 ---
 title: Visual Basic IntelliSense
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.IntelliSense
@@ -10,15 +9,15 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio], Visual Basic
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e01c255a7e89298a2a4bd7548bab0b548520ceed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc0897f3b2964996b18a40cc8dda16068ff772f2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877886"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917671"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Visual Basic 程式碼檔案的 IntelliSense
 

@@ -2,7 +2,6 @@
 title: 檢視呼叫堆疊偵錯工具 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/29/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.callstack
@@ -27,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3b266ee44b326749ed555df77dee66b8e82aae
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 58b8e9bc37cde33a09a06503755f2646cca6f75c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062347"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018796"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>檢視呼叫堆疊，並使用偵錯工具中的 [呼叫堆疊] 視窗
 

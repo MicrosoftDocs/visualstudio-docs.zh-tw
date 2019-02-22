@@ -1,5 +1,5 @@
 ---
-title: 陣列或引數的物件必須是 |Microsoft 文件
+title: 陣列或引數物件必須是 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,20 +21,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0bc287026c88687274ad63cc6c1cd03309af8b93
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632738"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345353"
 ---
 # <a name="array-or-arguments-object-expected"></a>必須是陣列或引數物件
-您並未提供做為引數的陣列。 發生這個錯誤**Function.prototype.apply**只方法。 如果指定，此函式的第二個引數必須是`Array`物件或**引數**物件。  
+您並未提供做為引數的陣列。 此錯誤適用於**Function.prototype.apply**僅方法。 如果指定，此函式的第二個引數必須是`Array`物件或**引數**物件。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   指定`Array`或**引數**做為第二個引數的物件。  
+-   指定`Array`該**引數**做為第二個引數的物件。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用陣列](../../javascript/advanced/using-arrays-javascript.md)   
- [apply 方法 （函式）](../../javascript/reference/apply-method-function-javascript.md)   
+ [apply 方法 (Function)](../../javascript/reference/apply-method-function-javascript.md)   
  [函式](../../javascript/functions-javascript.md)

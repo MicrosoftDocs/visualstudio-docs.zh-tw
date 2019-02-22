@@ -2,7 +2,6 @@
 title: 回到呼叫 MFC，如果暫止的函式 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.mfc
@@ -22,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: d254a5a9-afbd-4923-9d7a-7422d824cabf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c746fc287435ea6219e0f6052bc9372fc2ae5d25
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8430c1814e83dbd8410b0f172a15d879bb221cf3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048564"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956671"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>HOW TO：於暫止時回到呼叫 MFC 的函式
 

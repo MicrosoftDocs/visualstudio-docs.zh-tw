@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 263df1391fcc9795b08a21a7e56b1113ef1fb82e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50b151358df90be3db423bbf3db8b5123d1069f3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895671"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949417"
 ---
 # <a name="writing-user-commands-and-actions"></a>撰寫使用者命令和動作
 您可以自訂網域指定的語言，方法為將命令加入圖表，以及回應手勢，例如拖放、按一下和按兩下事件。

@@ -7,14 +7,13 @@ helpviewer_keywords:
 ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 63b1c220edfccdbcd10f6d0380dc37324511507b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: fbcf0ec7aa9e7d0b22458006da6f18aba4de8162
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833432"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936196"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>HOW TO：建立 Web 效能測試編輯器的自訂 HTTP 本文編輯器
 

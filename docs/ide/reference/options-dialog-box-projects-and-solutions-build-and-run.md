@@ -1,7 +1,6 @@
 ---
 title: 選項對話方塊、專案和方案、建置和執行
 ms.date: 07/14/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Build_and_Run
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be6ac2a482e2e6fe52ad4458fec727f0da2dafe0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e2e62a0b9ece6052d222a8c228bbd7fe018b0a3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917792"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954773"
 ---
 # <a name="options-dialog-box-projects-and-solutions-build-and-run"></a>選項對話方塊、專案和方案、建置和執行
 

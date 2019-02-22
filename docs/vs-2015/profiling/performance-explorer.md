@@ -1,14 +1,9 @@
 ---
 title: 效能總管 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance
 - vs.performance.wizard.website
@@ -18,13 +13,13 @@ ms.assetid: df52b717-a55d-4b1d-8c2e-d5a6a38042f4
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ad140fcb81215a27381a75f051f07ca231f3deae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786102"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54784096"
 ---
 # <a name="performance-explorer"></a>效能總管
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,8 +48,5 @@ ms.locfileid: "51786102"
 |**以程式設計方式控制程式碼分析：** 了解如何使用 Managed 和原生程式碼剖析工具應用程式開發介面，直接從原始程式碼控制資料收集。|[程式碼剖析工具 API](../profiling/profiling-tools-apis.md)|  
 |**疑難排解分析問題**|[效能工具問題疑難排解](../profiling/troubleshooting-performance-tools-issues.md)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [分析工具](../profiling/profiling-tools.md)
-
-
-

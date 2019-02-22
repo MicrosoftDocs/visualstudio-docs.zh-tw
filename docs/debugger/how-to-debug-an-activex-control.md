@@ -1,8 +1,6 @@
 ---
-title: 'How to: Debug an ActiveX Control |Microsoft Docs'
-ms.custom: ''
+title: HOW TO：Debug an ActiveX Control |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vc.controls.debug
@@ -23,17 +21,17 @@ helpviewer_keywords:
 ms.assetid: bbc02cf7-a7e6-44fe-99af-87a43e1d7251
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d53c2601bc8c4490f9ca43a7e213a90d66b26aac
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 385f5c9e03aaeb84cf33c6d76a499b0d1e35d5c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389289"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931982"
 ---
-# <a name="how-to-debug-an-activex-control"></a>如何：偵錯 ActiveX 控制項
+# <a name="how-to-debug-an-activex-control"></a>HOW TO：對 ActiveX 控制項進行偵錯
 
 > [!NOTE]
 > 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
@@ -64,4 +62,4 @@ ms.locfileid: "52389289"
 - [使用測試容器測試屬性和事件](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [偵錯 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)
 - [Visual Studio 偵錯](../debugger/index.md)
-- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+- [偵錯工具簡介](../debugger/debugger-feature-tour.md)

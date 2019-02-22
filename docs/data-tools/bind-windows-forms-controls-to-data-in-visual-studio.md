@@ -14,17 +14,15 @@ helpviewer_keywords:
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 596475ed3a5e1cac535ca0cdf43980af44bd4bf1
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 6b961af0bf35bb4476f9f336fcf5298bb0bd3651
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304632"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951666"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>將 Windows Forms 控制項繫結至 Visual Studio 中的資料
 
@@ -41,7 +39,8 @@ ms.locfileid: "52304632"
 
 ## <a name="bindingsource-and-bindingnavigator-controls"></a>BindingSource 和 BindingNavigator 控制項
 
-<xref:System.Windows.Forms.BindingSource> 元件有兩種用途。 首先，它提供一個抽象層時的控制項繫結至資料。 在表單上的控制項繫結至<xref:System.Windows.Forms.BindingSource>而不是直接對資料來源元件。 其次，它可以管理物件的集合。 將類型加入<xref:System.Windows.Forms.BindingSource>會建立該類型的清單。
+
+  <xref:System.Windows.Forms.BindingSource> 元件有兩種用途。 首先，它提供一個抽象層時的控制項繫結至資料。 在表單上的控制項繫結至<xref:System.Windows.Forms.BindingSource>而不是直接對資料來源元件。 其次，它可以管理物件的集合。 將類型加入<xref:System.Windows.Forms.BindingSource>會建立該類型的清單。
 
 如需詳細資訊<xref:System.Windows.Forms.BindingSource>元件，請參閱：
 

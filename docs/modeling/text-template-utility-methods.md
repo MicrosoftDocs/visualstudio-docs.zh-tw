@@ -6,16 +6,15 @@ helpviewer_keywords:
 - text templates, utility methods
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 571f6b95b15af7e71167a12aca581a14c938981e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c65960b2ad7f0eb31a9c969fb4671f883dc477c7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864238"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914392"
 ---
 # <a name="text-template-utility-methods"></a>文字範本公用程式方法
 

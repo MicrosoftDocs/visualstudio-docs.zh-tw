@@ -6,12 +6,12 @@ titleSuffix: ''
 description: 了解如何使用 Visual Studio 2017 以您選擇的語言，為您的平台和裝置開發應用程式、服務及工具。
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: f84c7155fb46e462f899e0037deab925ecbbcda6
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 9bcd261ce7d6efbd7fac50352c9dfaa17ed6c41f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562135"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316778"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -107,7 +107,7 @@ ms.locfileid: "53562135"
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h2>選擇語言</h2>
+                                                <h2>追隨教學課程</h2>
                                                 <table cellpadding="0" cellspacing="0" border="0">
                                                     <tr>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">
@@ -141,8 +141,8 @@ Python</a>
                                                                 </li>
                                                                 <li>
                                                                     <a class="barLink" href="/visualstudio/javascript/">
-                                                                        <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="Node.js icon">
-Node.js</a>
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_js.svg" alt="JavaScript logo">
+JavaScript</a>
                                                                 </li>
                                                             </ul>
                                                         </td>
@@ -527,7 +527,7 @@ Unity 遊戲</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/scripting/">
+                                                <a href="/visualstudio/javascript/">
                                                     <h3>JavaScript</h3>
                                                     <p>跨平台的輕量型指令碼語言，經常用來製作更具互動性的網頁。</p>
                                                 </a>
@@ -988,7 +988,7 @@ Unity 遊戲</a>
         <h2>和我們保持連絡</h2>
         <ul class="links">
            <li>
-                <a href="https://blogs.msdn.microsoft.com/visualstudio/"> 部落格 </a>
+                <a href="https://devblogs.microsoft.com/visualstudio/"> 部落格 </a>
             </li>
             <li>
                 <a href="https://twitter.com/VisualStudio"> Twitter </a>

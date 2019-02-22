@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: d090abb6-d99f-4083-a3db-cd16bf81ce7d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8656f14f3a6c9cd52b73ac0fdd3573d008c7aa0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 75b5dc56ce2277c94ddae26d2bbdda89f12c9571
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847149"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005978"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>逐步解說：建立自訂編輯器
 VSPackage 專案範本可以在 c + + 建立簡單的自訂編輯器。 VSPackage 專案範本不再支援 C# 或 Visual Basic 專案。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  

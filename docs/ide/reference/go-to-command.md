@@ -1,7 +1,6 @@
 ---
 title: 移至命令
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - edit.goto
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f23c0dafcee52e3b4a9c38cc562aa1e428e06a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82dd3f226931dfeca2fa0dfad38daa24684fb8da
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946850"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947422"
 ---
 # <a name="go-to-command"></a>移至命令
 將游標移至指定的程式行。

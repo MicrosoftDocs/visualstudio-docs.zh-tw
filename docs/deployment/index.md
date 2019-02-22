@@ -4,16 +4,15 @@ title: 部署您的應用程式 |Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 部署應用程式、服務與元件。
 ms.custom: seodec18
 ms.topic: landing-page
-ms.prod: visual-studio-dev15
 ms.author: mikejo
 author: mikejo5000
-manager: douge
-ms.openlocfilehash: 875549bcc1158542fe19da05711a6d39bb4efb25
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 4f6d81af23ba5763b89b19b29cb493e6cb59c8ff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893454"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947117"
 ---
 # <a name="deployment-in-visual-studio"></a>Visual Studio 中的部署
 
@@ -83,7 +82,7 @@ Visual Studio 提供數種不同工具，協助您部署應用程式。
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy to Azure App Service">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -101,7 +100,7 @@ Visual Studio 提供數種不同工具，協助您部署應用程式。
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy to Azure App Service">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -124,7 +123,7 @@ Visual Studio 提供數種不同工具，協助您部署應用程式。
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy ASP.NET to Azure">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Deploy ASP.NET to Azure">
                         </div>
                     </div>
                     <div class="cardText">
@@ -160,7 +159,7 @@ Visual Studio 提供數種不同工具，協助您部署應用程式。
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy a .NET core app">
+                            <img src="https://docs.microsoft.com/media/logos/logo_NETcore.svg" alt="Deploy a .NET core app">
                         </div>
                     </div>
                     <div class="cardText">
@@ -196,7 +195,7 @@ Visual Studio 提供數種不同工具，協助您部署應用程式。
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to Azure App Service">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Import publish settings and deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -254,7 +253,7 @@ Visual Studio 提供數種不同工具，協助您部署應用程式。
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>使用 ClickOnce 部署傳統型應用程式</h3>
+                        <h3>使用 ClickOnce 部署傳統型應用程式 (C#)</h3>
                     </div>
                 </div>
             </div>
@@ -262,17 +261,35 @@ Visual Studio 提供數種不同工具，協助您部署應用程式。
         </a>
     </li>
     <li>
-        <a href="/cpp/ide/deployment-in-visual-cpp">
+        <a href="/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_learn-about.svg" alt="Learn about deployment in Visual C++">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="Learn about deployment in Visual C++">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>了解 Visual C++ 中的部署</h3>
+                        <h3>部署 C/C++ 應用程式</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/cpp/ide/clickonce-deployment-for-visual-cpp-applications">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="Learn about deployment in Visual C++">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>部署 C++/CLR 應用程式</h3>
                     </div>
                 </div>
             </div>

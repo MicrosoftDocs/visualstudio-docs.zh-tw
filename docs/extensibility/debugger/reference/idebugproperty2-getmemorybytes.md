@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetMemoryBytes |Microsoft Docs
+title: IDebugProperty2::GetMemoryBytes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b32042ed-7a06-4b4a-99ef-fe03b0aa61cc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80cd6e882e8131ed80e28cb90427a9c528487103
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0fb89111dbaed95d4c0aa875a8b2f8fa716b79d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884667"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967033"
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
 取得撰寫屬性的值的記憶體位元組。  

@@ -2,7 +2,6 @@
 title: 偵錯工具屬性的建議設定是C#，VB |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3d14a8d4-2925-44d0-be41-ec546d411db9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69b98fe00301ad9230cb4f560a0a1d9dc1d3922f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d15e41f07f4866b12937455b79f2f2f7a7ba4052
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064954"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971136"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>受控偵錯：建議的屬性設定
 在所有 Managed 偵錯案例中，某些屬性必須以相同的方式設定。  

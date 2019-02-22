@@ -1,22 +1,21 @@
 ---
 title: 使用程式碼分析規則集編輯器
 ms.date: 04/04/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548f50b3d348c520ed7746b7dc3d123ffeb4c6aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 719d8f1e11365de0b864f41f54546fb4bfc64cd2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826032"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937215"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>使用程式碼分析規則集編輯器
 
@@ -51,7 +50,7 @@ ms.locfileid: "53826032"
 
 |工具列控制項|描述|
 |---------------------|-----------------|
-|**全部展開**|在 所有群組顯示的規則。|
+|[全部展開]|在 所有群組顯示的規則。|
 |**全部摺疊**|隱藏所有群組中的規則。|
 |**Group By**|指定規則會分組的欄位。 按一下  **\<無 >** 顯示沒有群組規則。|
 |**資料行選項**|指定要顯示規則的欄位。|

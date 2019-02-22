@@ -1,7 +1,6 @@
 ---
 title: CA1410:應該和 COM 註冊方法對應
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1410
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: f3b2e62d-fd66-4093-9f0c-dba01ad995fd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1701ac1a432a9957e4350601ea55f13c6371147d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c606a55be00ac8e44d54bad289076498e2655af1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872891"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913336"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410:應該和 COM 註冊方法對應
 

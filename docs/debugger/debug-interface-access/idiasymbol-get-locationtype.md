@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_locationtype |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_locationType | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fbb09c43-ebb7-4b4f-be53-ccff86eb183a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e5c98d604881ead29605c0831e154293abee84f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d9d14f82eaa11a1791ff47bc8ba28fd3c7de2950
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902382"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009241"
 ---
 # <a name="idiasymbolgetlocationtype"></a>IDiaSymbol::get_locationType
 擷取資料符號的位置類型。  
@@ -27,7 +25,7 @@ ms.locfileid: "49902382"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_locationType (   
+HRESULT get_locationType (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,6 +40,6 @@ HRESULT get_locationType (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

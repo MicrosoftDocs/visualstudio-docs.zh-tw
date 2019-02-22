@@ -1,25 +1,20 @@
 ---
 title: Ptvs 快速入門： 互動式 Python |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: fa594314-bdd0-4da5-874a-57b03414b675
 caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 7d9438d7d80480349dd53384c2538742a22b4d36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4fba8bf658a50a7a7e28abace1eb622ab14f5f26
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183907"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54780982"
 ---
 # <a name="getting-started-with-ptvs-interactive-python"></a>PTVS 快速入門：互動式 Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,6 @@ ms.locfileid: "49183907"
   
  您可以在這段簡短的 [YouTube 影片 (英文)](https://www.youtube.com/watch?v=yc2CROtTsC0&index=5&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) 中觀看這些指示。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Wiki 文件 (英文)](https://github.com/Microsoft/PTVS/wiki/Interactive-REPL)   
  [PTVS 快速入門及深度剖析影片 (英文)](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
-

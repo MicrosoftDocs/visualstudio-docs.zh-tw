@@ -204,7 +204,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 * Visual Studio 2015 中開啟您的專案。
 * 建置您的專案，並確認在 VSIX 建置正確的輸出。
 * 瀏覽至您的專案目錄。
-* 開啟*\bin\Debug*資料夾。
+* 開啟 *\bin\Debug* 資料夾。
 * 按兩下 VSIX 檔案，並在 Visual Studio 2015 和 Visual Studio 2017 中安裝擴充功能。
 * 請確定您可以看到中的擴充功能**工具** > **擴充功能和更新**中**已安裝**一節。
 * 嘗試執行/使用的延伸模組來檢查它的運作。

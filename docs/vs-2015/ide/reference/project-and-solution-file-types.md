@@ -1,14 +1,9 @@
 ---
 title: 專案和方案檔類型 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - File Properties.CopyToOutputDirectory
 - File Properties.CustomToolNamespace
@@ -34,13 +29,13 @@ ms.assetid: 0ba5007b-465d-4efa-b1e4-f0ee68527649
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8ed5ce79944077c724534dc0d9fb3ea2b037fdfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b0c4a353923bbf5d98bd2ef4fcb3c5fe28447fe8
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283029"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54773332"
 ---
 # <a name="project-and-solution-file-types"></a>專案和方案檔類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,8 +61,5 @@ ms.locfileid: "49283029"
   
  [Unicode](http://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案和方案](../../ide/solutions-and-projects-in-visual-studio.md)
-
-
-

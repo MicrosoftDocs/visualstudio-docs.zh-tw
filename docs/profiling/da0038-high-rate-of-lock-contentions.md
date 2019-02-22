@@ -1,8 +1,6 @@
 ---
 title: DA0038：高比率的鎖定爭用 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.38
@@ -11,17 +9,17 @@ f1_keywords:
 ms.assetid: ae0c8b2f-17b2-4f3d-a834-aa2f6371753b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54788c20552380d22df8bad783d5012ac7157899
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d16630d444a8f1887b9aa8da9f05a24828d4b19
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922051"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944668"
 ---
-# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038：鎖定爭用的比率很高
+# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038：高比率的鎖定爭用
 
 |||  
 |-|-|  
@@ -48,7 +46,7 @@ ms.locfileid: "49922051"
  在分析執行期間所做的測量指出有非常大量的鎖定爭用時，就會引發這個規則。 鎖定爭用會延遲等待鎖定的執行緒執行。 即使是在較低階的硬體上執行的單元測試或負載測試中相當少量的鎖定爭用也還是應該進行調查。  
 
 > [!NOTE]
->  當分析資料中報告的鎖定爭用比率極高時，會引發 [DA0039︰非常高比率的鎖定爭用](../profiling/da0039-very-high-rate-of-lock-contentions.md)警告訊息而不是此資訊訊息。  
+>  當分析資料中報告的鎖定爭用比率極高時，會引發 [DA0039：極高比率的鎖定爭用](../profiling/da0039-very-high-rate-of-lock-contentions.md)警告訊息而不是此資訊訊息。  
 
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
  按兩下訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。  尋找 **.NET CLR LocksAndThreads\Contention Rate / sec** 欄。 判斷是否有特定的程式執行階段，當中的鎖定爭用比其他階段更繁重。  

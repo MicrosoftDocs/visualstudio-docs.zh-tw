@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1e579ab9e42ffd7448e3c0dbe62766c058e6f01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 831123caead6593fdbb548fd6e69a63646790d8a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874598"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969086"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>HOW TO：存取的內建的字型和色彩 ccheme
 Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的字型和色彩配置。 您可以透過此配置<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>介面。
@@ -49,7 +49,7 @@ Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的�
 
 1.  建構一種特殊的類別目錄中的下列位置的登錄項目：
 
-     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio 版本 > \FontAndColors\\\<類別 >*]
+     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>*]
 
      *\<類別目錄 >* 是類別目錄的非當地語系化名稱。
 
@@ -57,7 +57,7 @@ Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的�
 
     |名稱|類型|資料|描述|
     |----------|----------|----------|-----------------|
-    |類別|REG_SZ|GUID|任意的 GUID，識別包含內建的字型和色彩配置的分類。|
+    |分類|REG_SZ|GUID|任意的 GUID，識別包含內建的字型和色彩配置的分類。|
     |封裝|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> 所有使用預設字型和色彩組態的 Vspackage 會使用此 GUID。|
     |NameID|REG_DWORD|識別碼|在 VSPackage 中可當地語系化的類別目錄名稱的資源識別碼。|
     |ToolWindowPackage|REG_SZ|GUID|VSPackage 實作的 GUID<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>介面。|

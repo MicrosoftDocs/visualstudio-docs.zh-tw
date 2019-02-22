@@ -1,8 +1,6 @@
 ---
 title: '&lt;fileAssociation&gt;項目 （ClickOnce 應用程式） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -14,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62e099f949af3cc3ea336663224c1dd92726ac53
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: d506fc7023f01d305fee95c52a32f2ea3dafddaf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080021"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984505"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt;項目 （ClickOnce 應用程式）
 識別要與應用程式相關聯的副檔名。  
@@ -39,15 +37,15 @@ ms.locfileid: "39080021"
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>項目和屬性  
- `fileAssociation` 項目是選擇性的。 項目具有下列屬性。  
+## <a name="elements-and-attributes"></a>元素和屬性  
+ `fileAssociation` 項目是選擇性的。 此元素具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
-|`extension`|必要。 要與應用程式相關聯的副檔名。|  
-|`description`|必要。 Shell 所使用的檔案類型的描述。|  
-|`progid`|必要。 可唯一識別檔案類型的名稱。|  
-|`defaultIcon`|必要。 指定要用於與此延伸模組檔案的圖示。 必須使用指定的圖示檔[\<檔案 > 項目](../deployment/file-element-clickonce-application.md)內[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)，包含這個項目。|  
+|`extension`|必要項。 要與應用程式相關聯的副檔名。|  
+|`description`|必要項。 Shell 所使用的檔案類型的描述。|  
+|`progid`|必要項。 可唯一識別檔案類型的名稱。|  
+|`defaultIcon`|必要項。 指定要用於與此延伸模組檔案的圖示。 必須使用指定的圖示檔[\<檔案 > 項目](../deployment/file-element-clickonce-application.md)內[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)，包含這個項目。|  
   
 ## <a name="remarks"></a>備註  
  此元素必須包含的 XML 命名空間參考"urn: schemas-microsoft-microsoft-com:clickonce.v1"。 如果`<fileAssociation>`項目時，它必須緊跟在後`<application>`項目在其父代[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)。  

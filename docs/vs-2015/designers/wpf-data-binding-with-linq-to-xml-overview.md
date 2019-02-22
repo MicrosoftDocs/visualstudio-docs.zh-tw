@@ -1,25 +1,20 @@
 ---
 title: 使用 LINQ to XML 進行 WPF 資料繫結概觀 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 457a097d46f9af409580d3784bb577090db0c535
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a614a90fe6388d9189d2b63e02f9bf63f83f0b7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774174"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>WPF 資料繫結與 LINQ to XML 概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49852410"
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Windows Presentation Foundation 中的資料繫結  
  WPF 資料繫結可讓 UI 項目將其屬性中的一個屬性與資料來源產生關聯。 其中一個簡單的範例為 <xref:System.Windows.Controls.Label>，其文字表示使用者定義物件中公用屬性的值。 WPF 資料繫結依賴下列元件：  
   
-|元件|描述|  
+|元件|說明|  
 |---------------|-----------------|  
 |繫結目標|與資料來源相關聯的 UI 項目。 WPF 中的 Visual 項目衍生自 <xref:System.Windows.UIElement> 類別。|  
 |目標屬性|反映資料繫結來源值的繫結目標「相依性屬性」。 相依性屬性是由 <xref:System.Windows.DependencyObject> 類別 (可衍生 <xref:System.Windows.UIElement>) 直接支援。|  
@@ -93,12 +88,9 @@ ms.locfileid: "49852410"
   
  若要實作 WPF 動態繫結，動態屬性將搭配 <xref:System.Windows.Data> 命名空間 (特別是 <xref:System.Windows.Data.Binding> 類別) 所提供的功能使用。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 LINQ to XML 進行 WPF 資料繫結](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [LINQ to XML 動態屬性](../designers/linq-to-xml-dynamic-properties.md)   
  [WPF 中的 XAML](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
  [資料繫結 (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)   
  [使用工作流程標記](http://go.microsoft.com/fwlink/?LinkId=98685)
-
-
-

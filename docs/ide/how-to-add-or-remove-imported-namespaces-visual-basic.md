@@ -1,7 +1,6 @@
 ---
 title: HOW TO：新增或移除匯入的命名空間 (Visual Basic)
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - adding imported namespaces
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42beee330bcd8ab6003bd44277b77063937cf2d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c30a7d89065a7fbea9781d1972dc01fedd5c742
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955174"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970617"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>HOW TO：新增或移除匯入的命名空間 (Visual Basic)
 

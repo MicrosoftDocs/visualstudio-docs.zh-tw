@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 681e01702eeb9dda4e6770823e1c7211f56cfddf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e3accbd46ea20f5b37af21cdb4d7fd5c1f87a25
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924942"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008292"
 ---
 # <a name="attach-directly-to-a-program"></a>直接附加到程式
 想要偵錯程式已在通常執行的處理序中的使用者，請遵循此程序：  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: adf1cf2c408cf089d559c4c7d8c443470743fbc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0d8ea9367d364f0374d08423c2acf892fe3ddb7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956903"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996255"
 ---
 # <a name="scchistory-function"></a>SccHistory 函式
 此函式會顯示指定的檔案歷程記錄。  

@@ -1,14 +1,9 @@
 ---
 title: LC 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#LC
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: d5a53472-6f2a-42b8-a6db-593ca99c9790
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9f265e06deab522c0b994f0892fb6a96c7ac4a7f
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ec788e9f0ef80a1543aa15f4ff9bfb21daac6123
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645051"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54803465"
 ---
 # <a name="lc-task"></a>LC 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +70,6 @@ ms.locfileid: "51645051"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)
-
-
-

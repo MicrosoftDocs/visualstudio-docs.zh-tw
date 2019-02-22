@@ -1,7 +1,6 @@
 ---
 title: 尋找和取代文字，及多重游標選取
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -28,15 +27,15 @@ helpviewer_keywords:
 - multi-caret selection
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 189f56dd0017ee431a4e91c82684b8f678891e44
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 23bda0ccea91089957b9aa6bea97bb5b7b592b20
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866409"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937444"
 ---
 # <a name="find-and-replace-text"></a>尋找和取代文字
 

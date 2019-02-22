@@ -1,8 +1,6 @@
 ---
-title: 'Idiasession:: Findfile |Microsoft Docs'
-ms.custom: ''
+title: IDiaSession::findFile | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a215dc21-b316-40d7-9923-55bfa014976b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32c8fa5c6f3cd8ec3cf1cead397eadadb99e050d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 59d36847416801965841d79b5be9e9a654487b96
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909937"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986900"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
 擷取原始程式檔編譯模組和名稱。  
@@ -27,7 +25,7 @@ ms.locfileid: "49909937"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT findFile (   
+HRESULT findFile (   
    IDiaSymbol*           pCompiland,  
    LPCOLESTR             name,  
    DWORD                 option,  
@@ -58,7 +56,7 @@ IDiaEnumSourceFiles* pEnum;
 pSession->findFile( NULL, L"sourcefile.cpp", nsFNameExt, &pEnum );  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

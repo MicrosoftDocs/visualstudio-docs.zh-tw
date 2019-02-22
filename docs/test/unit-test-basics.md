@@ -1,21 +1,20 @@
 ---
 title: 單元測試基本概念
 ms.date: 2016-01-07
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1689f6780f88dd57d41090969082de7ac5685d
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 63d2da519bc51149051a3f2476fb6d3a7623bb39
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060799"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922351"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -83,7 +82,7 @@ public void Withdraw(double amount)
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>產生單元測試專案和單元測試虛設常式
 
-1. 從程式碼編輯器視窗中，自內容功能表以滑鼠右鍵按一下並選擇 [建立單元測試]  。
+1. 在程式碼編輯器視窗中，以滑鼠右鍵按一下並從右鍵功能表中選擇 [建立單元測試]。
 
     ![從編輯器視窗，檢視操作功能表](../test/media/createunittestsrightclick.png)
 
@@ -218,7 +217,7 @@ public void My_Test ()
 
 ![從 [測試總管] 的工具列執行測試](../test/media/ute_toolbar.png)
 
-您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。 執行一組測試之後，測試回合的摘要會出現在 [測試總管] 視窗的底部。 在底部窗格中選取某個測試以檢視該測試的詳細資料。 從操作功能表中選擇 [開啟測試] (鍵盤：**F12**) 以顯示所選測試的原始程式碼。
+您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。 執行一組測試之後，測試回合的摘要會出現在 [測試總管] 視窗的底部。 在底部窗格中選取某個測試以檢視該測試的詳細資料。 從右鍵功能表中選擇 [開啟測試] (鍵盤：**F12**) 以顯示所選測試的原始程式碼。
 
 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
@@ -227,7 +226,7 @@ public void My_Test ()
 > [!WARNING]
 > 只有 Visual Studio Enterprise 支援在每次建置之後執行單元測試。
 
-|按鈕|說明|
+|按鈕|描述|
 |-|-|
 |![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機組建之後執行單元測試，請選擇標準功能表上的 [測試]，然後在 [測試總管] 工具列上選擇 [建置之後執行測試]。|
 
@@ -237,7 +236,7 @@ public void My_Test ()
 
 ![搜尋篩選條件分類](../test/media/ute_searchfilter.png)
 
-|按鈕|說明|
+|按鈕|描述|
 |-|-|
 |![[測試總管] 的 [群組] 按鈕](../test/media/ute_groupby_btn.png)|若要依分類將測試分組，請選擇 [群組依據]  按鈕。|
 

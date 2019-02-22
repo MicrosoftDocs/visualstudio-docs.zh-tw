@@ -1,7 +1,6 @@
 ---
 title: CA2126:必須同時具有類型連結要求和繼承要求
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2126
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 07b604e5-5579-4df9-a578-dadd0d8370a7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 834f120994070e055fe5ac417d1fb39830c7bcef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2fdf92eae202f1ebb80b88e28307e7dacfbc0a39
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904136"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952121"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126:必須同時具有類型連結要求和繼承要求
 

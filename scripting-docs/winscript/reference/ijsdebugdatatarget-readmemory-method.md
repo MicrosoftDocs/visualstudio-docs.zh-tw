@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Readmemory 方法 |Microsoft 文件'
+title: 'Ijsdebugdatatarget:: Readmemory 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc1b67b33e17761a675d6ced9e175b4206ede2e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 66d3709dadfc8da2feb7e6845a7aeaa357235d9e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728498"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089176"
 ---
 # <a name="ijsdebugdatatargetreadmemory-method"></a>IJsDebugDataTarget::ReadMemory 方法
 讀取目標處理序的記憶體。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT ReadMemory(  
    UINT64 address,  
    JsDebugReadMemoryFlags flags,  
@@ -40,24 +40,24 @@ HRESULT ReadMemory(
   
 #### <a name="parameters"></a>參數  
  `address`  
- [in]要從其中讀取目標處理序的記憶體基底位址。  
+ [in]要從其中讀取目標處理序的記憶體的基底位址。  
   
  `flags`  
- [in]控制行為的 ReadMemory 旗標。  
+ [in]控制 ReadMemory 行為的旗標。  
   
  `pBuffer`  
- [out]從目標處理序的位址空間接收內容的緩衝區。 如果失敗，這個緩衝區的內容會是 unspecified。  
+ [out]從目標處理序的位址空間接收內容的緩衝區。 在失敗時，這個緩衝區的內容未指定。  
   
  `size`  
- [in]要從程序中讀取的位元組數目。  
+ [in]要從程序讀取的位元組數目。  
   
  `pBytesRead`  
- [out]指出從目標處理序所讀取的位元組數目。 如果 JsDebugAllowPartialRead 已取消選取，這個值一律會成功是完全等於輸入的大小。 如果指定 JsDebugAllowPartialRead，成功時，這個值會是小於或等於零。  
+ [out]表示從目標處理序讀取的位元組數目。 如果清除 JsDebugAllowPartialRead，成功時這個值一律會輸入大小完全相等。 如果已指定 JsDebugAllowPartialRead，成功時，這個值會是小於或等於零。  
   
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="remarks"></a>備註  
- 傳回 S_OK 上成功與失敗碼適用於任何錯誤。 如果位址不正確，請傳回 E_JsDEBUG_INVALID_MEMORY_ADDRESS。 如需詳細資訊，請參閱 JsDebugAllowPartialRead。  
+ 傳回 S_OK 成功和失敗碼適用於任何錯誤。 如果位址無效，則傳回 E_JsDEBUG_INVALID_MEMORY_ADDRESS。 如需詳細資訊，請參閱 JsDebugAllowPartialRead。  
   
 ## <a name="requirements"></a>需求  
  **標頭：** jscript9diag.h  

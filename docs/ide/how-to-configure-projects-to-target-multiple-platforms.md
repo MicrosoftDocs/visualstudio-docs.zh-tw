@@ -1,7 +1,6 @@
 ---
-title: 如何：將專案設定成以多重平台為目標
+title: HOW TO：將專案設定到多重目標平台
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 308858941d03f6341cf3d22af074be45d790e16b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1f302821b219266cf7080437a73cc577ffb0ffa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930215"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920089"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：將專案設定成以多重平台為目標
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>HOW TO：將專案設定到多重目標平台
 
 Visual Studio 提供一種方式，可以讓方案一次以數個不同 CPU 架構或平台為目標。 要設定這些項目的屬性是透過 [組態管理員] 對話方塊所存取。
 
@@ -64,6 +63,6 @@ Visual Studio 提供一種方式，可以讓方案一次以數個不同 CPU 架�
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)
+- [如何：建立及編輯組態](../ide/how-to-create-and-edit-configurations.md)
 - [了解建置組態](../ide/understanding-build-configurations.md)
 - [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

@@ -1,14 +1,9 @@
 ---
-title: 如何：自訂報表檢視資料行 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：自訂報表檢視資料行 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.test.columnchooser.dialogbox
 helpviewer_keywords:
@@ -18,15 +13,15 @@ ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bfa51d15145606b7f17dc21d91e240ec006826bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aec26c293c0603196613a325c48946f124573cbe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738797"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769275"
 ---
-# <a name="how-to-customize-report-view-columns"></a>如何：自訂報表檢視資料行
+# <a name="how-to-customize-report-view-columns"></a>HOW TO：自訂報表檢視資料行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio Team System Development 版的效能工具已完全整合至整合式開發環境 (Integrated Development Environment，IDE)，可提供流暢的使用者經驗。 下列清單是可透過新增、移除及重新排列資料行來自訂的代表性檢視︰  
@@ -64,6 +59,3 @@ Visual Studio Team System Development 版的效能工具已完全整合至整合
 4.  按一下箭號按鈕以重新排列資料行。  
   
 5.  按一下 [確定 **Deploying Office Solutions**]。
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 如何：累加建置 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, incremental builds
 - incremental builds
@@ -17,13 +12,13 @@ ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b1bcb8752d8defacadc641f55594e354e081d5cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844607"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803906"
 ---
 # <a name="how-to-build-incrementally"></a>如何：累加建置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "49844607"
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>指定目標的輸入和輸出  
   
-- 使用 `Target` 項目的 `Inputs` 和 `Outputs` 屬性。 例如:   
+- 使用 `Target` 項目的 `Inputs` 和 `Outputs` 屬性。 例如：  
   
   ```  
   <Target Name="Build"  
@@ -57,7 +52,7 @@ ms.locfileid: "49844607"
 </Target>  
 ```  
   
- 當目標中指定輸入和輸出時，可能每個輸出對應到唯一的一個輸入，或者是輸出和輸入之間不能有直接對應。 在舊版[Csc 工作](../msbuild/csc-task.md)，範例中，輸出 hello.exe 無法對應至任何單一輸入-它相依於所有人都。  
+ 當目標中指定輸入和輸出時，可能每個輸出對應到唯一的一個輸入，或者是輸出和輸入之間不能有直接對應。 例如，在先前的 [Csc 工作](../msbuild/csc-task.md)中，輸出 hello.exe 無法對應至任何單一輸入；它相依於全部的輸入。  
   
 > [!NOTE]
 >  輸入和輸出之間沒有直接對應的目標，一律會比每個輸出對應只能對應到一個輸入的目標更常建置，因為 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 無法判斷某些輸入變更的情況下，哪些輸出需要重建。  
@@ -110,12 +105,9 @@ ms.locfileid: "49844607"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [目標](../msbuild/msbuild-targets.md)   
  [Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)   
  [轉換](../msbuild/msbuild-transforms.md)   
  [Csc 工作](../msbuild/csc-task.md)   
  [Vbc 工作](../msbuild/vbc-task.md)
-
-
-

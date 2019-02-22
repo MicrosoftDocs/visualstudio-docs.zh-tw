@@ -1,7 +1,6 @@
 ---
 title: 自訂編輯器
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - editor, customizing
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - Text Editor, customizing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f89430827ba102b74b89adedde883b71583dc0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd5729f85e16dd5651c630771ac5c30fba73dbf1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848865"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938879"
 ---
 # <a name="customize-the-editor"></a>自訂編輯器
 

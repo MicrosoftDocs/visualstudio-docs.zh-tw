@@ -2,20 +2,18 @@
 title: R 變數總管
 description: Visual Studio 中的 [變數總管] 會顯示目前 R 工作階段中指定範圍內的所有變數。
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: fbd20c362c407148262d8e1e61e15d22d9cbcf2f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978121"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919036"
 ---
 # <a name="variable-explorer"></a>變數總管
 
@@ -71,7 +69,7 @@ n <- c(1,2,3,5,8,13)
 
 ## <a name="import-data-into-variable-explorer"></a>將資料匯入 [變數總管]
 
-[變數總管] 工具列上的兩個命令，也可以透過 [R 工具] > [資料] 功能表取得，將外部 CSV 資料集匯入 R 工作階段︰[將資料集從 Web URL 匯入 R 工作階段] 和 [將資料集從文字檔匯入 R 工作階段]。
+[變數總管] 工具列上的兩個命令 (也可以透過 [R 工具] > [資料] 功能表取得) 可將外部 CSV 資料集匯入 R 工作階段中︰[將資料集從 Web URL 匯入 R 工作階段] 和 [將資料集從文字檔匯入 R 工作階段]。
 
 一旦找到要匯入的 CSV 檔案，Visual Studio 就會顯示 [匯入資料集] 對話方塊，您可在此選擇如何控制該資料檔案的剖析方式 (也就是欄位分隔符號為何以及如何處理引號)。 您也可以預覽匯入的資料框架和原始資料檔案：
 

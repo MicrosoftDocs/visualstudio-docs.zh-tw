@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30c339bf38f8fc873b27b9c213fad21d66fb9fa7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e3697fe85d13e1131c58f28d572e443affa77a81
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914432"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875559"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>合併功能和封裝資訊清單中的 XML
   功能和封裝所定義[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]資訊清單檔案。 這些封裝資訊清單是從設計工具和自訂所產生的資料組合[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]輸入資訊清單範本中的使用者。 在封裝階段[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]合併自訂[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]陳述式與設計工具提供[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]形成封裝[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]資訊清單檔案。 類似的項目，稍後合併例外狀況，例外狀況會合併以避免[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]之後您將檔案部署到 SharePoint，並將資訊清單檔案較小且更有效率的驗證錯誤。  
@@ -35,7 +35,7 @@ ms.locfileid: "53914432"
   
  以下是一份合併例外狀況的功能和封裝[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]資訊清單檔案。  
   
-|設計工具|XML 項目|  
+|Designer|XML 項目|  
 |--------------|-----------------|  
 |功能設計工具|ActivationDependency|  
 |功能設計工具|UpgradeAction|  
@@ -45,7 +45,7 @@ ms.locfileid: "53914432"
 ## <a name="feature-manifest-elements"></a>功能資訊清單的項目
  下表是一份可合併所有功能資訊清單元素和其用來比對的唯一索引鍵。  
   
-|項目名稱|唯一索引鍵|  
+|元素名稱|唯一索引鍵|  
 |------------------|----------------|  
 |功能 （所有屬性）|*屬性名稱*（Feature 項目的每個屬性名稱是唯一的索引鍵）。|  
 |ElementFile|位置|  
@@ -60,7 +60,7 @@ ms.locfileid: "53914432"
 ## <a name="package-manifest-elements"></a>封裝資訊清單元素
  下表是一份可合併所有封裝資訊清單元素和其用來比對的唯一索引鍵。  
   
-|項目名稱|唯一索引鍵|  
+|元素名稱|唯一索引鍵|  
 |------------------|----------------|  
 |方案 （所有屬性）|*屬性名稱*（Solution 項目的每個屬性名稱是唯一的索引鍵）。|  
 |ApplicationResourceFiles/ApplicationResourceFile|位置|  
@@ -69,11 +69,11 @@ ms.locfileid: "53914432"
 |DwpFiles/DwpFile|位置|  
 |FeatureManifests/FeatureManifest|位置|  
 |資源/資源|位置|  
-|[Rootfiles] / RootFile|位置|  
+|RootFiles/RootFile|位置|  
 |SiteDefinitionManifests/SiteDefinitionManifest|位置|  
 |WebTempFile|位置|  
 |TemplateFiles/TemplateFile|位置|  
-|SolutionDependency|方案識別碼|  
+|SolutionDependency|SolutionID|  
   
 ## <a name="manually-add-deployed-files"></a>手動加入部署的檔案
  資訊清單的項目，例如 ApplicationResourceFile 和 DwpFiles，指定包含檔案名稱的位置。 不過，將檔案名稱項目新增至資訊清單的範本不會將基礎檔案加入封裝。 您必須將檔案加入至專案，以將它包含在封裝中，並據以設定其部署類型屬性。  

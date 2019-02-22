@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 32cdb45a57b218645e6f9eaa84c5e198aeacc620
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: dfd565deb8336346e127e084b720f391440dc6e4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987637"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928799"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>HOW TO：使用 Microsoft Word 手動建立負載測試效能報表
 

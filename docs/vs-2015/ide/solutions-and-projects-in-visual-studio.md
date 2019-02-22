@@ -1,14 +1,9 @@
 ---
 title: 專案和方案
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.savedeferredsaveprojectonclose
 - vs.untrustedtemplateopeningdocuments
@@ -54,13 +49,13 @@ ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 068fe27df565f83312040fa0bcf6412e4984d9fd
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 32b2f33af3c34cf6245e511cbd54d6ce7cc3a2bd
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067138"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54795248"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ ms.locfileid: "53067138"
  您也可以建立自訂專案與項目範本。 如需詳細資訊，請參閱[建立專案和項目範本](../ide/creating-project-and-item-templates.md)。
 
 ## <a name="creating-new-projects"></a>建立新專案
- 建立新專案最簡單的方式是從預先定義的專案範本開始，它們是由預先產生的程式碼檔案、組態檔、資產與設定的基本集合所組成，可讓您開始以特定的程式設計語言來建立特定類型的應用程式或網站。 當您從主功能表選擇 [檔案] &#124; [新增] &#124; [專案] 或 [檔案] &#124; [新增] &#124; [網站] 並巡覽時，可以在 [新增專案] 對話方塊中看到這些範本。 如需詳細資訊，請參閱[建立方案和專案](../ide/creating-solutions-and-projects.md)和 [NIB 根據範本建立專案](http://msdn.microsoft.com/en-us/7c36d86a-6b79-4480-8228-0f925f1204b2)。
+ 建立新專案最簡單的方式是從預先定義的專案範本開始，它們是由預先產生的程式碼檔案、組態檔、資產與設定的基本集合所組成，可讓您開始以特定的程式設計語言來建立特定類型的應用程式或網站。 當您從主功能表選擇 [檔案] &#124; [新增] &#124; [專案] 或 [檔案] &#124; [新增] &#124; [網站] 並巡覽時，可以在 [新增專案] 對話方塊中看到這些範本。 如需詳細資訊，請參閱[建立方案和專案](../ide/creating-solutions-and-projects.md)和 [NIB 根據範本建立專案](http://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2)。
 
 ## <a name="managing-projects-in-solution-explorer"></a>管理 [方案總管] 中的專案
  建立新專案之後，您可以使用 [方案總管]  來檢視及管理專案與方案，以及關聯的項目。 下圖顯示 [伺服器總管] 與包含兩個專案的 C# 方案。

@@ -1,8 +1,6 @@
 ---
 title: 原生執行階段會檢查自訂 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.crt
@@ -21,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 76a365fe-6439-49db-8603-34058b78e5a8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6df61b1e0fde088fca87fa7a99f5590768889b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 450c69ccffaa35b9dbe519782b28067e6f2beb8f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853924"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954081"
 ---
 # <a name="native-run-time-checks-customization"></a>自訂原生執行階段檢查
 當您編譯 **/RTC** （執行階段檢查），或使用`runtime_checks`pragma，C 執行階段程式庫提供原生執行階段檢查。 有時候，您可能想要自訂執行階段檢查：  
@@ -38,11 +36,11 @@ ms.locfileid: "49853924"
   
 - 若要指定使用協力廠商偵錯工具所出現的執行階段訊息之輸出目的端。  
   
-- 若要報告由 C 語言執行階段程式庫發行版本編譯的程式之執行階段檢查訊息 程式庫的發行版本在報告執行階段錯誤時並不使用 `_CrtDbgReportW`。 相反地，它們會顯示**Assert**對話方塊中，針對每個執行階段錯誤。  
+- 若要報告由 C 語言執行階段程式庫發行版本編譯的程式之執行階段檢查訊息 程式庫的發行版本在報告執行階段錯誤時並不使用 `_CrtDbgReportW`。 而是為每一個執行階段錯誤顯示一個 [判斷提示] 對話方塊。  
   
   若要自訂執行階段錯誤檢查，您可以：  
   
-- 撰寫執行階段錯誤報告函式。 如需詳細資訊，請參閱 <<c0> [ 如何： 撰寫執行階段錯誤報告函式](../debugger/how-to-write-a-run-time-error-reporting-function.md)。  
+- 撰寫執行階段錯誤報告函式。 如需詳細資訊，請參閱[＜How to：撰寫執行階段錯誤報告函式](../debugger/how-to-write-a-run-time-error-reporting-function.md)。  
   
 - 自訂錯誤訊息目的端  
   
@@ -56,7 +54,7 @@ ms.locfileid: "49853924"
 ## <a name="query-for-information-about-run-time-checks"></a>查詢執行階段檢查的相關資訊  
  `_RTC_NumErrors` 會傳回執行階段錯誤檢查偵測到的錯誤類型數目。 若要取得每個錯誤的簡短說明，您可以從 0 迴圈至 `_RTC_NumErrors` 傳回值，並將重複值傳給每一個迴圈上的 `_RTC_GetErrDesc`。 如需詳細資訊，請參閱 < [_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors)並[_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc)。  
   
-## <a name="see-also"></a>另請參閱  
- [如何： 使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)   
+## <a name="see-also"></a>請參閱  
+ [如何：使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [_CrtDbgReport、_CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9c1d940f-8a54-41f7-a8aa-c870e324371c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea8273c1db662d5184d1afb71b5cd39789d6794
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 85ae75501e705ef126ac11c3b13672b1713e7735
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929302"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033722"
 ---
 # <a name="project-types-architecture"></a>專案類型架構
 本章節包含在專案類型架構的詳細的資訊[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  

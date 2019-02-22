@@ -1,14 +1,9 @@
 ---
 title: 執行時間 (執行緒檢視) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.execution
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 80c100f8-2502-4613-bfef-4f4f2e09cc8d
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 89dd600976e151c377db8ebb2c0e67935c23e006
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b4306e030c2f48d87b12ba6338a847dc9e9aa892
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789859"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54766233"
 ---
 # <a name="execution-time-threads-view"></a>執行時間 (執行緒檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +31,6 @@ ms.locfileid: "51789859"
   
  若要在目前檢視中查看所有執行區段的傳統取樣分析，請在 [可見時間表分析] 中按一下 [執行]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行分析報表](../profiling/execution-profile-report.md)   
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)
-
-
-

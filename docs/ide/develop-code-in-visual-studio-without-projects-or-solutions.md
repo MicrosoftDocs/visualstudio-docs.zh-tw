@@ -1,7 +1,6 @@
 ---
 title: 不使用專案或方案來開發程式碼
 ms.date: 02/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1275a5c0ada3ddc12fe4257880e16d130243d0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45828cc73e679bdf177c212604b95820bc58011c
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968468"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155353"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼
 
@@ -62,10 +61,6 @@ ms.locfileid: "53968468"
    ![顯示資料夾檢視](./media/VSIDE_Code_Clone3_show.png)
 
    您現在可以瀏覽所複製存放庫中的資料夾和檔案，並在 Visual Studio 程式碼編輯器中檢視及搜尋程式碼，其中會包含語法色彩標示及其他功能。
-
-| | |
-|---------|---------|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png)| [觀看影片](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) 了解如何使用 Visual Studio 複製及開啟 GitHub 存放庫的程式碼。 |
 
 ## <a name="run-and-debug-your-code"></a>執行程式碼並對它進行偵錯
 

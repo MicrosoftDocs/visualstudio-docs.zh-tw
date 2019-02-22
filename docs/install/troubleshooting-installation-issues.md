@@ -3,7 +3,6 @@ title: 針對安裝或升級問題進行疑難排解
 description: 有時可能會發生一些問題。 如果您的 Visual Studio 安裝或升級失敗，則這個頁面會有所幫助。
 ms.date: 08/01/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 413c8a9874669e180a6436bf817704919da48049
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: edb6d9133fdf3a2a7a4109b9f438f86cc0cdec61
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910109"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931568"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>針對 Visual Studio 2017 安裝和升級問題進行疑難排解
 
@@ -49,7 +48,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 1. 關閉 Visual Studio 安裝程式。
 2. 刪除 Visual Studio 安裝程式目錄。 此目錄通常是 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`。
-3. 執行 Visual Studio 安裝程式啟動載入器。 您可以在 [下載] 資料夾中找到檔名遵循 `vs_[Visual Studio edition]__*.exe` 模式的啟動載入器。 如果找不到該應用程式，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)頁面並按一下您 Visual Studio 版本的 [下載] 來下載啟動載入器。 接著，執行該可執行檔來重設您的安裝中繼資料。
+3. 執行 Visual Studio 安裝程式啟動載入器。 您可以在 [下載] 資料夾中找到檔名遵循 `vs_[Visual Studio edition]__*.exe` 模式的啟動載入器。 如果找不到該應用程式，請移至 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面並按一下您 Visual Studio 版本的 [下載] 來下載啟動載入器。 接著，執行該可執行檔來重設您的安裝中繼資料。
 4. 嘗試重新安裝或更新 Visual Studio。 如果安裝程式持續失敗，請移至下一步驟。
 
 ### <a name="step-4---report-a-problem"></a>步驟 4 - 回報問題

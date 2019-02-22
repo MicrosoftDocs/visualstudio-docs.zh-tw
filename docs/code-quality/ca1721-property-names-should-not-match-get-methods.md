@@ -1,7 +1,6 @@
 ---
 title: CA1721:屬性名稱不應該和其中有 get 的方法名稱相符
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1721
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 45a0e853-1f06-4688-af1b-cc634409e295
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e0b9c348fc9131ede355c58408b517d20ed2500b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88a56a37248112d377b47054ed815a4aa2629f9d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920974"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953928"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721:屬性名稱不應該和其中有 get 的方法名稱相符
 

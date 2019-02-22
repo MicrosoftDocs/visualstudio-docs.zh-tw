@@ -1,14 +1,9 @@
 ---
 title: 效能工具入門 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, performance
 - getting started, profiling tools
@@ -16,13 +11,13 @@ ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3503c845bd9b8ef3b5362f689d856dd04b59280f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f075f6a10e34080f6abf406a5f5828d2cf0ea444
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777054"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770923"
 ---
 # <a name="getting-started-with-performance-tools"></a>效能工具入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +38,8 @@ ms.locfileid: "51777054"
 |**在不使用精靈的情況下對應用程式進行程式碼剖析：** 了解使用效能工作階段屬性頁建立效能工作階段。|-   [如何：手動建立效能工作階段](../profiling/how-to-manually-create-performance-sessions.md)|  
 |**試作︰** 對範例應用程式進行程式碼剖析以取得實際操作經驗。|-   [逐步解說：找出效能問題](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [PeopleTrax 範例](../profiling/peopletrax-sample-profiling-tools.md)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)   
  [使用效能規則分析資料](../profiling/using-performance-rules-to-analyze-data.md)   
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)
-
-
-

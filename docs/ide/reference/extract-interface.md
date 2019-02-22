@@ -1,11 +1,10 @@
 ---
 title: 擷取介面重構
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
 dev_langs:
@@ -13,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc315ed49e31e78bc549e446858a30979d7135b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc10a43cc5834453e6c5e11e1c7b787903f24c06
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838212"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909176"
 ---
 # <a name="extract-an-interface-refactoring"></a>擷取介面重構
 
@@ -60,7 +59,7 @@ ms.locfileid: "53838212"
    ![擷取介面](media/extractinterface-dialog-cs.png)
 
 
-   | 欄位 | 說明 |
+   | 欄位 | 描述 |
    | - | - |
    | **新介面名稱** | 要建立的介面名稱。 這會預設為 I*ClassName*，其中 *ClassName* 是您在上面選取的類別名稱。 |
    | **新檔名** | 所將產生之將包含介面的檔案名稱。 與介面名稱一樣，這會預設為 I*ClassName*，其中 *ClassName* 是您在上面選取的類別名稱。 |

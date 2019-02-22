@@ -1,8 +1,6 @@
 ---
 title: CvWriteAlert 函式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvWriteAlertVA
@@ -17,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 937aa9d6-278a-4df3-bef7-151441df16d5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d9def71b21fc68b7347ce9fb0596fd73bd44393
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 16ac2de5e97cd6dd6d007659c0e535bc2f9eb1ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749316"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013661"
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert 函式
 將警示寫入並行視覺化檢視追蹤檔。  
@@ -70,7 +68,7 @@ HRESULT CvWriteAlertVA(
  當訊息成功寫入時傳回 S_OK。 發生任何錯誤時傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
   
 ## <a name="requirements"></a>需求  
- **標頭︰***cvmarkers.h*  
+ **標頭︰** *cvmarkers.h*  
   
  **Unicode：** CvWriteAlertW、CvWriteAlertVW  
   

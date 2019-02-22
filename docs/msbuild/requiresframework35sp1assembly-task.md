@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 755c018a-8a8b-4c94-8aee-3f171fc419e5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915d837889153cf678695b493a853d9110522bee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3be616697b5299d5ef8b40733205802835fa5d9d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831923"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974707"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly 工作
 判斷應用程式是否需要 .NET Framework 3.5 SP1。  

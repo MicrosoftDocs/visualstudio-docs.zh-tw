@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, event receivers
 - event receivers [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a92b86d7e02487ff333fb8517086f9c6221d35ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00d92665fd34dda82e521cb8459b71412a6edc9e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818858"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865264"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>HOW TO：建立事件接收器的特定清單執行個體
   清單定義的任何執行個體中發生的事件回應的清單執行個體事件接收器。 雖然事件接收者範本不會啟用特定的清單執行個體的目標，您可以修改事件接收器來回應特定的清單執行個體中的事件清單定義範圍內。  

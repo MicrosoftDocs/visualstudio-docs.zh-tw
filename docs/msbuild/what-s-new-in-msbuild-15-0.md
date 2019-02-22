@@ -1,21 +1,19 @@
 ---
 title: MSBuild 15 中的新功能 | Microsoft Docs
-ms.custom: ''
 ms.date: 03/01/2017
-ms.technology: msbuild
 ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2333f45cca5510a4ba3bb0f54abf45a569454cf8
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: c6aabe66359c1f400eb06d6738615c1a81b679e0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028958"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069892"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 中的新功能
 
@@ -40,7 +38,7 @@ MSBuild 現在已可當作 [.NET Core SDK](https://www.microsoft.com/net/downloa
 - `SDK35ToolsPath` 和 `SDK40ToolsPath` 屬性指向與此版本 Visual Studio 一起封裝的 .NET Framework SDK (例如 4.X 工具的 10.0A)。
 
 ## <a name="updates"></a>更新
-- [Project 元素](../msbuild/project-element-msbuild.md)有新的 `SDK` 屬性。 而 `Xmlns` 屬性現在是選擇性的。 如需有關 `SDK` 屬性的詳細資訊，請參閱[如何：使用 MSBuild 專案 SDK](../msbuild/how-to-use-project-sdk.md)、[套件、中繼套件和架構](/dotnet/core/packages)，以及[適用於 .NET Core 之 csproj 格式的新增項目](/dotnet/core/tools/csproj)。
+- [Project 元素](../msbuild/project-element-msbuild.md)有新的 `SDK` 屬性。 而 `Xmlns` 屬性現在是選擇性的。 如需 `SDK` 屬性的詳細資訊，請參閱[如何：使用 MSBuild 專案 SDK](../msbuild/how-to-use-project-sdk.md)、[套件、中繼套件和架構](/dotnet/core/packages)，以及[適用於 .NET Core 之 csproj 格式的新增項目](/dotnet/core/tools/csproj)。
 - 目標外的 [Item 元素](../msbuild/item-element-msbuild.md)有新的 `Update` 屬性。 此外，已經移除對 `Remove` 屬性的限制。
 - *Directory.Build.props* 是使用者定義的檔案，可讓您自訂目錄下的專案。 除非屬性 `ImportDirectoryBuildTargets` 設為 **false**，否則系統會從 *Microsoft.Common.props* 自動匯入這個檔案。 *Directory.Build.targets* 是由 *Microsoft.Common.targets* 匯入的。
 - 任何未與目前屬性清單衝突的中繼資料，您即可選擇將其表示為屬性。 如需詳細資訊，請參閱 [Item 元素](../msbuild/item-element-msbuild.md)。
@@ -53,4 +51,4 @@ MSBuild 現在已可當作 [.NET Core SDK](https://www.microsoft.com/net/downloa
 - `GetPathOfFileAbove` 會傳回此檔案前一個檔案的路徑。 它在功能上相當於呼叫 `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`
 
 ## <a name="see-also"></a>另請參閱
-[ MSBuild](../msbuild/msbuild.md)
+[MSBuild](../msbuild/msbuild.md)

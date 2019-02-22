@@ -1,14 +1,9 @@
 ---
 title: 物件存留期檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.objectlifetime
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4cc2e17084809e691838ea0e681e3d2b766d0769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ef216c1220cbfda37da579d3ea2dfdd32837ab75
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756436"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54833683"
 ---
 # <a name="object-lifetime-view"></a>物件存留期檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51756436"
 ## <a name="instance-data"></a>執行個體資料  
  執行個體資料指出分析回合中所建立類型的物件數目，以及記憶體回收行程所解除配置物件的世代。  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**執行個體**|這類型之物件的配置數目。|  
 |**總執行個體 %**|分析回合中進行的配置總數百分比。|  
@@ -79,8 +74,5 @@ ms.locfileid: "51756436"
 |**大型物件堆積執行個體已收集**|位於大型物件堆積以及在分析回合中所收集之此類型的執行個體數目。|  
 |**大型物件堆積位元組已收集**|位於大型物件堆積以及在分析回合中所收集之此類型的執行個體大小 (以位元組為單位)。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)
-
-
-

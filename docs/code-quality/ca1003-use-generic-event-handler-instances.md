@@ -1,7 +1,6 @@
 ---
 title: CA1003：使用一般事件處理常式執行個體
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - UseGenericEventHandlerInstances
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 402101b6-555d-4cf7-b223-1d9fdfaaf1cd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 26630aa008e944f0af3fdcc66a16dc4c08bd4e8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89ee70694d81253c66fc83062c9736ba63f7e6e6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887327"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907304"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003：使用一般事件處理常式執行個體
 

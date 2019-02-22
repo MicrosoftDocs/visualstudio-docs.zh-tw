@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_classparentid |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_classParentId | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f11e3ccb-215d-418c-b8c3-e63159234915
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b335748c40d78cc2539e2c0700c1e7753935970
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d40893ce4cd5f550856ec044999b6c13d93687f2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863057"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939503"
 ---
 # <a name="idiasymbolgetclassparentid"></a>IDiaSymbol::get_classParentId
 擷取之符號的類別父識別碼。  
@@ -27,7 +25,7 @@ ms.locfileid: "49863057"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_classParentId (   
+HRESULT get_classParentId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -52,5 +50,5 @@ HRESULT get_classParentId (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -4,15 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0487ee8cdbb89b7c781cb13225d209d840eda134
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9db632ba38d408223928d43921da8dd188fe93d9
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836867"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227247"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15 的現有應用程式更新
 
@@ -77,7 +77,7 @@ MSBuild 套件的主要和次要版本，必須小於或等於您要支援的 Vi
 
 ```xml
     <PackageReference Include="Microsoft.Build.Locator">
-      <Version>1.0.7-preview-ge60d679b53</Version>
+      <Version>1.1.2</Version>
     </PackageReference>
 ```
 

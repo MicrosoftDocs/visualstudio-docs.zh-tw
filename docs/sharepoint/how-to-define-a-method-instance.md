@@ -10,17 +10,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], method instance
 - BDC [SharePoint development in Visual Studio], method
 - Business Data Connectivity service [SharePoint development in Visual Studio], method
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 84a03fe6066911b12ba0e5a413ea3521033bc283
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 630709bd674677d636abe471b8ff63b7f7339abc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952559"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867919"
 ---
 # <a name="how-to-define-a-method-instance"></a>HOW TO：定義方法執行個體
   在模型中，您必須定義至少一個方法執行個體，針對每個方法。  

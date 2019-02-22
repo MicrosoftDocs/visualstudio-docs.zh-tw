@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 56acd101-de77-4eec-92c6-f5c6d2187579
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb8d697351d29bbba8a5df47ce9bfdf6ca82ea6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b88e03f03eb0568ba2b71324010b19990f917b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915177"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035987"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference 工作
 解析原生參考。 實作 <xref:Microsoft.Build.Tasks.ResolveNativeReference> 類別。 此類別支援的 .NET Framework 基礎結構不適合直接從程式碼使用。  

@@ -1,7 +1,6 @@
 ---
 title: 文字編輯器選項對話方塊
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -16,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 90d4e522-6391-4571-927d-b466a9766342
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e034ecee379e2c0ff577392f89539cee7610dfd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8dbd5c55ac2f5c207f1dd75e0e6ce5f7927f5bc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833820"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926004"
 ---
 # <a name="text-editor-options-dialog-box"></a>文字編輯器選項對話方塊
 

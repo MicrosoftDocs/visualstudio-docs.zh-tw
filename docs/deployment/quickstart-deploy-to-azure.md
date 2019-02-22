@@ -1,25 +1,31 @@
 ﻿---
 title: 發佈至 Azure App Service
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: fc82b1f1-d342-4b82-9a44-590479f0a895
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 4e7cf13658c33caf6b58d6a4e661a8431f377845
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 114c6aca7ec7ed05858868b22f7547b0a071420f
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853589"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483753"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至 Azure App Service
 
-您可以使用 [發行] 工具，將 ASP.NET、ASP.NET Core、Node.js 和 .NET Core 應用程式發行至 Azure App Service 或 Azure App Service Linux (使用容器)。 針對 Python 應用程式，請遵循[發行至 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 的步驟。
+針對 ASP.NET、ASP.NET Core、Node.js 和 .NET Core 應用程式，使用下列其中一個方法發行至 Azure App Service 或 Azure App Service Linux (使用容器)。
+
+* 針對連續 (或自動) 部署應用程式，使用 Azure DevOps 與 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops)。
+
+* 針對一次 (或手動) 部署應用程式，使用 Visual Studio 中的 [發行] 工具將 ASP.NET、ASP.NET Core、Node.js 和 .NET Core 應用程式部署至 Azure App Service 或 App Service for Linux (使用容器)。 針對 Python 應用程式，請遵循[發行至 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 的步驟。
+
+本文說明如何使用 [發行] 工具來進行一次部署。
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
@@ -55,4 +61,4 @@ ms.locfileid: "53853589"
 在本快速入門中，您已了解如何使用 Visual Studio 建立發行設定檔，以部署至 Azure。 您也可以從 Azure App Service 匯入發行設定來設定發行設定檔。
 
 > [!div class="nextstepaction"]
-> [匯入發佈設定並部署至 Azure](tutorial-import-publish-settings-azure.md)
+> [匯入發行設定並部署至 Azure](tutorial-import-publish-settings-azure.md)

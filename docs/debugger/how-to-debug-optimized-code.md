@@ -1,8 +1,6 @@
 ---
-title: 如何： 偵錯最佳化程式碼 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：偵錯最佳化程式碼 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -20,17 +18,17 @@ helpviewer_keywords:
 ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e212129c17ec7b4fe6cb9a6808c91cb302deb3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 756b8859c2f13c53eb46a0d9ae9d32836997f70f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387853"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035922"
 ---
-# <a name="how-to-debug-optimized-code"></a>如何：偵錯最佳化程式碼
+# <a name="how-to-debug-optimized-code"></a>HOW TO：對最佳化程式碼進行偵錯
 
 > [!NOTE]
 > 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
@@ -76,7 +74,7 @@ ms.locfileid: "52387853"
 
 8. 如果您選擇 `Custom` 的 `Optimization` 選項，現在就可以為其他顯示在屬性清單裡的任一屬性設定其選項。
 
-9. 選取專案屬性頁的 [組態屬性 | C/C++ | 命令列] 節點，並將 `(`[/Zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)` 新增至 [其他選項] 文字方塊。
+9. 選取 [組態屬性 | C/c + +，命令列] 節點的 [專案屬性] 頁面中，並新增`(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)`來**其他選項**文字方塊。
 
     > [!WARNING]
     >  `/Zo` 需要 Visual Studio 2013 Update 3 或更新版本。

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetText |Microsoft 文件
+title: IDebugDocumentText::GetText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a1006304974fab4959ad6313ffdc26793cdd345
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 77cc255bcd04754cbfde4638b67a85f6fdc0a922
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728078"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091984"
 ---
 # <a name="idebugdocumenttextgettext"></a>IDebugDocumentText::GetText
-擷取字元和/或字元屬性，與字元位置範圍相關聯。  
+擷取字元和/或字元相關聯的屬性中的字元位置範圍。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetText(  
    ULONG              cCharacterPosition,  
    WCHAR*             pcharText,  
@@ -45,26 +45,26 @@ HRESULT GetText(
  [in]開始位置的字元位置範圍。  
   
  `pcharText`  
- [in、 out]字元的文字緩衝。 緩衝區的大小必須足夠容納`cMaxChars`字元。 這個參數是 NULL，如果方法沒有傳回的字元。  
+ [in、 out]字元的文字緩衝。 緩衝區必須夠大，無法保存`cMaxChars`字元。 如果此參數為 NULL，此方法沒有傳回字元。  
   
  `pstaTextAttr`  
- [in、 out]字元屬性緩衝區。 緩衝區的大小必須足夠容納`cMaxChars`字元。 如果這個參數是 NULL，方法就不會傳回屬性。  
+ [in、 out]字元屬性緩衝區。 緩衝區必須夠大，無法保存`cMaxChars`字元。 如果此參數為 NULL，此方法沒有傳回屬性。  
   
  `pcNumChars`  
- [in、 out]傳回的字元/屬性數目。 這個參數必須設定為零之前呼叫這個方法。  
+ [in、 out]傳回字元/屬性數目。 這個參數必須設定為零之前呼叫這個方法。  
   
  `cMaxChars`  
- [in]中的字元位置範圍的字元數。 也會指定要傳回字元的數目上限。  
+ [in]字元位置範圍中的字元數。 也會指定要傳回字元的數目上限。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會擷取字元及/或字元屬性，與字元位置範圍相關聯。 字元位置範圍是由字元位置和指定的字元數。  
+ 這個方法會擷取字元和/或字元相關聯的屬性中的字元位置範圍。 字元位置和字元數所指定的字元位置範圍。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentText 介面](../../winscript/reference/idebugdocumenttext-interface.md)   

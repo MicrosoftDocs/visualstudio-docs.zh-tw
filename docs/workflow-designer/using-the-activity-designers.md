@@ -2,22 +2,21 @@
 title: 工作流程設計工具-使用活動設計工具
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 helpviewer_keywords:
 - Workflow Designer [WFD], activity designer
 - Visual Studio Workflow Designer [WFD], activity designer
 ms.assetid: 3c2725c3-091b-49ab-81e7-d4c7028d47a2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6516e637b219f65613bd6e2052cd2f540428f3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc81d6f63abe97f05d4d2794c9fc157772399a1f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910369"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930944"
 ---
 # <a name="using-the-activity-designers"></a>使用活動設計工具
 

@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugprocess:: Createbreakpoint 方法 |Microsoft 文件'
+title: 'Ijsdebugprocess:: Createbreakpoint 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10d734f32d092d341dbb1b02a5cc7a0c127223a4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 661e584133f4ec3c4e571d157a63844c5b1145b7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728118"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097561"
 ---
 # <a name="ijsdebugprocesscreatebreakpoint-method"></a>IJsDebugProcess::CreateBreakPoint 方法
 在指定的文件的位置設定中斷點。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT CreateBreakPoint(  
    UINT64 documentId,  
    DWORD characterOffset,  
@@ -40,19 +40,19 @@ HRESULT CreateBreakPoint(
   
 #### <a name="parameters"></a>參數  
  `documentId`  
- [in]IDebugDocumentText 指標。  
+ [in]IDebugDocumentText 的指標。  
   
  `characterOffset`  
  [in]從檔案開頭的字元位移。  
   
  `characterCount`  
- [in]應該在其中插入中斷點的文件文字的長度。  
+ [in]應在其中插入中斷點的文件文字的長度。  
   
  `isEnabled`  
  [in]指定是否啟用中斷點。  
   
  `ppDebugBreakPoint`  
- [out]物件，表示已建立的中斷點。  
+ [out]物件，表示所建立的中斷點。  
   
 ## <a name="return-value"></a>傳回值  
   

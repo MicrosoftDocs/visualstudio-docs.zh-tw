@@ -9,16 +9,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f4a044481b1e359b2021b16da1f0b2b5aba8a872
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8f4a09950de9480604d922b0d3dd5cefda17256
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924419"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908773"
 ---
 # <a name="dependency-diagrams-guidelines"></a>相依性圖表： 指導方針
 
@@ -31,7 +30,7 @@ ms.locfileid: "53924419"
 
 ## <a name="what-is-a-dependency-diagram"></a>什麼是相依性圖表？
 
-傳統架構圖表，例如相依性圖表會識別主要元件的設計和及其相依性的功能單位。 在圖表中，每個節點稱為*層*，表示命名空間、 專案或其他成品的邏輯群組。 您可以繪製應該存在於您設計中的相依性。 與傳統架構圖表不同的是，您可以在原始程式碼中驗證實際的相依性是否符合所指定的預期相依性。 在 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] 上製作正常組建的驗證部分，就可以確保程式碼即使日後變更仍然會繼續依照系統架構。 請參閱[相依性圖表：參考](../modeling/layer-diagrams-reference.md)。
+傳統架構圖表，例如相依性圖表會識別主要元件的設計和及其相依性的功能單位。 在圖表中，每個節點稱為*層*，表示命名空間、 專案或其他成品的邏輯群組。 您可以繪製應該存在於您設計中的相依性。 與傳統架構圖表不同的是，您可以在原始程式碼中驗證實際的相依性是否符合所指定的預期相依性。 在 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] 上製作正常組建的驗證部分，就可以確保程式碼即使日後變更仍然會繼續依照系統架構。 請參閱[相依性圖表：參考資料](../modeling/layer-diagrams-reference.md)。
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>如何設計使用或更新您的應用程式相依性圖表
 

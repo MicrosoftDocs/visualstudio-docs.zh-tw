@@ -1,7 +1,7 @@
-# [Visual Studio for Mac 簡介](index.md)
-# [IDE 導覽](ide-tour.md)
+# [Visual Studio for Mac](index.yml)
+# [IDE 導覽](/visualstudio/mac/ide-tour/)
 
-# [安裝](installation.md)
+# [安裝](/visualstudio/mac/installation/)
 ## [在防火牆或 Proxy 後方安裝及使用](install-behind-a-firewall-or-proxy-server.md)
 ## [安裝預覽版本](install-preview.md)
 ## [更新](update.md)
@@ -9,7 +9,7 @@
 
 # [使用者帳戶](user-accounts.md)
 ## [登入](signing-in.md)
-## [啟用訂用帳戶](activation.md)
+## [啟用訂用帳戶](enable-subscription.md)
 
 # [自訂 IDE](customizing-the-ide.md)
 ## [擴充 Visual Studio for Mac](extending-visual-studio-mac.md)
@@ -41,9 +41,9 @@
 # [編譯和建置](compiling-and-building.md)
 ## [建置和清除專案與方案](building-and-cleaning-projects-and-solutions.md)
 ## [建置動作](build-actions.md)
-## [自訂建置系統](customizing-build-system.md)
-## [設定](configurations.md)
-### [建立及編輯設定](create-and-edit-configurations.md)
+## [自訂組建系統](customizing-build-system.md)
+## [組態](configurations.md)
+### [建立和編輯組態](create-and-edit-configurations.md)
 
 # [版本控制](version-control.md)
 ## [TF 版本控制](tf-version-control.md)
@@ -52,10 +52,14 @@
 ## [設定 Subversion 存放庫](set-up-subversion-repository.md)
 ## [使用 Subversion](working-with-subversion.md)
 
+# [Web 應用程式部署](web-app-deployment.md)
+## [發佈至 Azure App Service](publish-app-svc.md)
+## [發佈至資料夾](publish-folder.md)
+
 # [工作負載](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
-### [Javascript](javascript.md)
+### [JavaScript 和 TypeScript](javascript.md)
 ## [Azure](azure-workload.md)
 ### [Azure Functions 簡介](azure-functions.md)
 ### [教學課程：Azure Functions](azure-functions-lab.md)
@@ -65,6 +69,7 @@
 ### [使用 Unity 工具](using-vsmac-tools-unity.md)
 ### [在 Unity 中使用 .NET 4.x](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [變更記錄](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+## [使用 Xamarin 開發行動裝置應用程式](/visualstudio/mac/xamarin)
 
 # [協助工具選項](accessibility.md)
 

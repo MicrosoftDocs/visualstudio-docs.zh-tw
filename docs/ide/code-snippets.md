@@ -1,8 +1,6 @@
 ---
 title: 程式碼片段
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
@@ -12,23 +10,23 @@ helpviewer_keywords:
 - code snippets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ed3f2f8e588aa908827516fee44c1a38ad6a008
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 98dadaed75cf16ae6ae35da9d6589355a63bd35c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348483"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908448"
 ---
 # <a name="code-snippets"></a>程式碼片段
 
-程式碼片段是可重複使用的程式碼之小型區塊，可以使用操作功能表命令或快速鍵的組合在程式碼檔案中插入。 其常包含常用的程式碼區塊，例如 `try-finally` 或 `if-else` 區塊，但可以用來插入整個類別或方法。
+程式碼片段是可重複使用之程式碼的小型區塊，可以使用右鍵功能表 (操作功能表) 命令或快速鍵的組合在程式碼檔案中插入。 其常包含常用的程式碼區塊，例如 `try-finally` 或 `if-else` 區塊，但可以用來插入整個類別或方法。
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[程式碼片段 (Visual Studio for Mac)](/visualstudio/mac/snippets)。
@@ -62,7 +60,7 @@ finally
 }
 ```
 
-插入此程式碼片段的方式，是在程式碼視窗的操作功能表中依序按一下 [插入程式碼片段] 和 [Visual C#]，並鍵入 `tryf`，然後按 **TAB**。或者，您可以輸入 `tryf` 並按 **TAB** 兩次。
+插入此程式碼片段的方式是在程式碼視窗的右鍵功能表 (操作功能表) 中依序按一下 [插入程式碼片段] 和 [Visual C#]，接著輸入 `tryf`，然後按 **Tab**。或者，您可以輸入 `tryf` 並按 **TAB** 兩次。
 
 範圍陳述式程式碼片段的範例：在 C++中，捷徑 `if` 可用作插入程式碼片段或範圍陳述式程式碼片段。 如果您選取一行程式碼 (例如 `return FALSE;`)，然後選擇 [Surround With] \(範圍陳述式\) > [if]，程式碼片段隨即在此行周圍展開：
 

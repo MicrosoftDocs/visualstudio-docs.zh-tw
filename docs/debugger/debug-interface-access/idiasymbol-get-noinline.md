@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_noinline |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c610b78-f1a3-494a-acf8-c42b97935be1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24864562d11267cfc96bd3b3622864275eaecea2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c40ec5aa549239053848d6eb2a69bd07420df705
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950104"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944601"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
 擷取指定的函式是否已標示為不在內嵌的旗標 (使用[noinline](/cpp/cpp/noinline)屬性)。  
@@ -47,8 +45,8 @@ HRESULT get_noInline(
 |需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK 8.0 版|  
+|版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [noinline](/cpp/cpp/noinline)

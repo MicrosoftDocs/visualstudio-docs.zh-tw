@@ -10,15 +10,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5333b3d6f9ba107bde21bbc23566940ee5dbf80d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 571c010aa8b9cda1002a152ed2d528e22b1aa57e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960611"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865784"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>HOW TO：物件的資料填入文件
 

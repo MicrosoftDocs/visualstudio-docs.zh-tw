@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 66e88848-116c-4eb0-bc57-183394d35b57
 author: corob
 ms.author: mblome
-manager: douge
+manager: jillfra
 f1_keywords:
 - VC.Project.VCLinkerTool.OutputFile
 - VC.Project.VCLinkerTool.ShowProgress
@@ -32,16 +32,16 @@ f1_keywords:
 - VC.Project.VCLinkerTool.LibraryDependencies
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 1b491257c561af337afdfd0d066c9ed8cd550c15
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 16dcb7ff5925f341fc78b57f1d9a4f011a27d576
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230944"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016794"
 ---
 # <a name="clang-linker-properties-android-c"></a>Clang 連結器屬性 (Android C++)
 
-屬性 | 描述 | 選擇
+屬性 | 說明 | 選擇
 --- | ---| ---
 輸出檔案 | 此選項會覆寫連結器所建立之程式的預設名稱和位置。 (-o)
 顯示進度 | 列印連結器進度訊息。

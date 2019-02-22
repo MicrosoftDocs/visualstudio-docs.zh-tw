@@ -2,21 +2,20 @@
 title: 工作流程設計工具-工作流程設計工具中的鍵盤快速鍵
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 326a377cd93e15c52a699dfb83c7ec111866cc0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c8d86c206eca3ecb1e1fc43e9540485cd83f93a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858652"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918425"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流程設計中的鍵盤快速鍵
 
@@ -54,7 +53,7 @@ ms.locfileid: "53858652"
 
 - 若要調整流程圖的大小，請使用方向鍵將活動移出流程圖目前的框線外。 流程圖會自動調整大小。
 
-- 若要將活動設為 [啟動] 節點中，使用**Set as StartNode**的內容功能表命令。
+- 若要將活動設為 [啟動] 節點中，使用**Set as StartNode**中以滑鼠右鍵按一下功能表命令。
 
 - 若要連接活動：
 

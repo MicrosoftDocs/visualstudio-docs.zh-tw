@@ -1,8 +1,6 @@
 ---
 title: StopTrackingAndCleanup | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 apiname:
 - StopTrackingAndCleanup
@@ -14,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9f8c5994-2dfc-43c3-a5fb-89b2f8990429
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ffbebd651087d9aa877d0e257947352a0d0275e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9b6ed74dab67cc2ca718ba312fb657659897c78c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154820"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955592"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 停止所有的追蹤，並釋放追蹤工作階段使用的所有記憶體。  

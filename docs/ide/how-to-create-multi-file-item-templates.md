@@ -1,7 +1,6 @@
 ---
 title: 建立多檔案項目範本
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
@@ -9,13 +8,13 @@ helpviewer_keywords:
 - item templates, creating multi-file item templates
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0bffe46fa392a09b29eef224aaa50f5e02db826a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 1871b7270c462ea599450e48f0a86a4887ebc5ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877649"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970513"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>HOW TO：建立多重檔案項目範本
 

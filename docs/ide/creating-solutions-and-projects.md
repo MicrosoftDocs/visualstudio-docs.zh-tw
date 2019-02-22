@@ -1,7 +1,6 @@
 ---
 title: 建立方案和專案
 ms.date: 02/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
@@ -13,15 +12,15 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c3477926161da09d0b669d32316933d967ee98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2e4652bb6a0ea1ec138138e6966ab005362a45d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908888"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937516"
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
@@ -129,7 +128,7 @@ ms.locfileid: "53908888"
 
 ### <a name="to-permanently-delete-a-solution"></a>永久刪除方案
 
-1. 在**方案總管**中，於您要刪除之方案的操作功能表上，選擇 [在檔案總管中開啟資料夾]。
+1. 在 [方案總管] 中，於您要刪除之方案的右鍵功能表 (操作功能表) 上，選擇 [在檔案總管中開啟資料夾]。
 
 1. 在 [檔案總管] 中，瀏覽上一層。
 

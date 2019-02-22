@@ -1,7 +1,6 @@
 ---
-title: 如何：建立和編輯組態
+title: HOW TO：建立及編輯設定
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3f6b271eb6b9b663e30953fa597fb7d8cec6ac
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: a6a54909ad928cd923d7ab0d9df4cfcfdb400029
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348522"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928422"
 ---
-# <a name="how-to-create-and-edit-configurations"></a>如何：建立和編輯組態
+# <a name="how-to-create-and-edit-configurations"></a>HOW TO：建立及編輯設定
 
 您可以為方案建立數個組建組態。 例如，您可以設定偵錯組建讓測試人員可以用來尋找和修正問題，也可以設定不同類型的組建，散發給不同的客戶。
 

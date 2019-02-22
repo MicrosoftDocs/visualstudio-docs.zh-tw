@@ -1,7 +1,6 @@
 ---
 title: CA1036:必須在 Comparable 類型中覆寫方法
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1036
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2329f844-4cb8-426d-bee2-cd065d1346d0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05f4bd750f1ec2ad4d336acb1a00b8848de389bf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9ab36be0233ad83c5f1ec23b3511937eda07940c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825577"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952992"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036:必須在 Comparable 類型中覆寫方法
 

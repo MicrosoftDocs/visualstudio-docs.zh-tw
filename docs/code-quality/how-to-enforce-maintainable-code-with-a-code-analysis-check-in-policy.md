@@ -1,22 +1,21 @@
 ---
 title: HOW TO：以程式碼分析簽入原則來強制程式碼的可維護性
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d31e52ab2f158b73a0076414b6d18e0b7421b04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7139c952b40957a564fcd4074b1c931817dfb851
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825709"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911218"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>HOW TO：強制維護的程式碼的程式碼分析簽入原則
 
@@ -50,13 +49,13 @@ Team foundation 版本控制的系統管理員可以將程式碼分析可維護�
 
    - 複雜度：**CA1502 AvoidExcessiveComplexity** -臨界值：在多個 25 的警告
 
-   - 可維護性指數：**Ca1505 應 AvoidUnmaintainableCode** -臨界值：在少於 20 的警告
+   - 可維護性指數：**CA1505 AvoidUnmaintainableCode** - Threshold:在少於 20 的警告
 
    - 類別結合程度：**CA1506 AvoidExcessiveClassCoupling** -臨界值：在多個類別的 80 和多個方法的 30 的警告
 
      此外，如果您想避免成功的組建將規則違規時，請選取**將警告視為錯誤**規則描述旁邊的核取方塊。
 
-3. 按一下 [確定 **Deploying Office Solutions**]。 新的簽入原則現在適用於未來的簽入。
+3. 按一下 [確定] 。 新的簽入原則現在適用於未來的簽入。
 
 ## <a name="see-also"></a>另請參閱
 

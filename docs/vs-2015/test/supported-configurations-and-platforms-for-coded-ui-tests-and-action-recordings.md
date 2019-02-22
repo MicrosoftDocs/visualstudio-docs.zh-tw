@@ -1,26 +1,21 @@
 ---
 title: 自動程式化 UI 測試和動作記錄的支援組態和平台 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
 ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: 108
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 23c1c84180df7fd185ce29d265f89c6b905ff794
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bb4c7d76ab8ff58dc33c11c7b25c1417e24f671a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198766"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781430"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>自動程式化 UI 測試和動作記錄的支援組態和平台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
   
 ## <a name="supported-configurations"></a>支援的組態  
   
-|組態|支援|  
+|Configuration|支援|  
 |-------------------|---------------|  
 |作業系統|[!INCLUDE[win7](../includes/win7-md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]<br /><br /> [!INCLUDE[win8](../includes/win8-md.md)]<br /><br /> Windows 10|  
 |32 位元/ 64 位元支援|執行 32 位元 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 的 32 位元 Windows 可以測試 32 位元應用程式。<br /><br /> 執行 32 位元 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 的 64 位元 Windows，可以測試具有「UI 同步處理」的 32 位元 WOW 應用程式。<br /><br /> 執行 32 位元 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 的 64 位元 Windows 可以測試沒有「UI 同步處理」的 64 位元 Windows Form 和 WPF 應用程式。|  
@@ -48,7 +43,7 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
   
 ## <a name="platform-support"></a>平台支援  
   
-|平台|支援層級|  
+|Platform|支援層級|  
 |--------------|----------------------|  
 |Windows Phone App|只支援 WinRT-XAML 架構的 Phone 應用程式。|  
 |Windows 市集 App|只支援 XAML 架構的市集 App。|  
@@ -75,9 +70,6 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
   
  如需有關如何建立擴充功能以支援其他平台的資訊，請參閱[啟用控制項的自動程式化 UI 測試](../test/enable-coded-ui-testing-of-your-controls.md)和[擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [從現有的動作記錄產生自動程式化 UI 測試](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)
-
-
-

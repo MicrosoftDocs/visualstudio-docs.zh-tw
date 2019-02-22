@@ -1,8 +1,6 @@
 ---
 title: 在模擬器中執行 UWP app |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -12,15 +10,15 @@ dev_langs:
 ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e9e023bd560a67323a4a2fcf5e42acec6919d6c
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
-ms.translationtype: HT
+ms.openlocfilehash: 36e5d5285f59170afaa22338829d186e7eb3e2e2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53685714"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949791"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>在模擬器中執行 UWP 應用程式
 UWP 應用程式的 Visual Studio 模擬器是模擬 UWP 應用程式的桌面應用程式。 一般而言，您要在本機電腦、 連接的裝置或在遠端電腦上偵錯。 不過，在某些情況下，您可能想要使用 Visual Studio 模擬器來模擬不同的實體螢幕大小和解析度。 您也可以模擬常見觸控和旋轉事件，以及模擬網路連接屬性。
@@ -151,4 +149,4 @@ UWP 應用程式的 Visual Studio 模擬器是模擬 UWP 應用程式的桌面�
  您可以藉由按下關閉模擬器**CTRL + ALT + F4**。
 
 ## <a name="see-also"></a>請參閱
- [從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)
+ [從 Visual Studio 執行應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

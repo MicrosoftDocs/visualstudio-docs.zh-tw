@@ -1,19 +1,18 @@
 ---
 title: 使用查看定義
 ms.date: 01/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5013e04d1d5b6c73255be907d2b460cb186cea8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cda6865a4dee34976fa2885313db6aad253f32c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968705"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924444"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>HOW TO：使用查看定義 (Alt+F12) 檢視及編輯程式碼
 
@@ -25,7 +24,7 @@ ms.locfileid: "53968705"
 
 ### <a name="to-open-a-peek-definition-window"></a>若要開啟查看定義視窗
 
-1. 您可以從想要探索的型別或成員的操作功能表，選擇 [查看定義] 以查看定義。 在 Visual Studio 2017 15.4 版和更新版本中，如果已啟用選項，您也可以按 **Ctrl** 鍵 (或其他修飾鍵)，然後按一下成員名稱，以使用滑鼠查看定義。 或者，您也可以從鍵盤按 **Alt**+**F12**。
+1. 您可以從想要探索的型別或成員的右鍵功能表，選擇 [查看定義] 以查看定義。 在 Visual Studio 2017 15.4 版和更新版本中，如果已啟用選項，您也可以按 **Ctrl** 鍵 (或其他修飾鍵)，然後按一下成員名稱，以使用滑鼠查看定義。 或者，您也可以從鍵盤按 **Alt**+**F12**。
 
      下圖顯示名為 `Print()` 之方法的 [查看定義] 視窗：
 

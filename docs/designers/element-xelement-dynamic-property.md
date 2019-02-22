@@ -1,8 +1,6 @@
 ---
 title: Element (XElement 動態屬性)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 apiname:
 - XElement.Element
@@ -10,15 +8,15 @@ apitype: Assembly
 ms.assetid: c6c25b8d-a1da-41ff-aeff-867ff1dcf749
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8d964a41193d1db845a608749b0ca671dd9349
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: dbd197082174bcd23ab6b47d64eb4eb0f7944ca2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924049"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909111"
 ---
 # <a name="element-xelement-dynamic-property"></a>Element (XElement 動態屬性)
 

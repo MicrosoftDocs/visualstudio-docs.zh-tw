@@ -1,20 +1,19 @@
 ---
 title: HOW TO：評估 XPath 運算式
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eac1668a5d85f1f40d6defe4682f028674b5bf0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b43a82d476e4426b1428f072cc980dbc8631cff2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838644"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970396"
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>HOW TO：評估 XPath 運算式
 

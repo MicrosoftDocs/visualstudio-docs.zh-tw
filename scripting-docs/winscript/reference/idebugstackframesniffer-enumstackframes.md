@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSniffer::EnumStackFrames |Microsoft 文件
+title: IDebugStackFrameSniffer::EnumStackFrames |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d64d896dcc14a280a74f64f5093b6708a7fcb5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 245908b543bf1482022846801e5ac7d2f557ebb5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726788"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089299"
 ---
 # <a name="idebugstackframesnifferenumstackframes"></a>IDebugStackFrameSniffer::EnumStackFrames
 傳回目前執行緒的堆疊框架的列舉值。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT EnumStackFrames(  
    IEnumDebugStackFrames**  ppedsf  
 );  
@@ -43,12 +43,12 @@ HRESULT EnumStackFrames(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 堆疊框架列舉值傳回框架的堆疊，從頂端開始起最近推送的框架。  
+ 堆疊框架的列舉值傳回的框架的堆疊上，從頂端開始，從最近推送的框架開始。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugStackFrameSniffer 介面](../../winscript/reference/idebugstackframesniffer-interface.md)

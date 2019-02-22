@@ -1,8 +1,6 @@
 ---
 title: '&lt;RelatedProducts&gt;項目 （啟動載入器） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
@@ -20,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c541a9775025183a3b3ffbf21ef5b72c3f00cc87
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 7e04cc8a351ed99ec0b477b2db5052ac94b56054
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077799"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036130"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt;項目 （啟動載入器）
 `RelatedProducts`項目定義，或是相依於目前的產品中包含其他產品。  
@@ -51,7 +49,7 @@ ms.locfileid: "39077799"
 </RelatedProducts>  
 ```  
   
-## <a name="elements-and-attributes"></a>項目和屬性  
+## <a name="elements-and-attributes"></a>元素和屬性  
  `RelatedProducts`項目是子系`Product`項目。 它沒有任何屬性。  
   
 ## <a name="dependsonproduct"></a>DependsOnProduct  

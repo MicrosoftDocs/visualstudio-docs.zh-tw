@@ -1,7 +1,6 @@
 ---
 title: CA1800:不要執行不必要的轉換
 ms.date: 10/26/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1800
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: b79a010a-6627-421e-8955-6007e32fa808
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ef6e73812a63fdc4cc4392621ab49b279a32d18
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a13aeeffbc77e4f40ff886c0d890f181697fcc11
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822025"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950678"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800:不要執行不必要的轉換
 

@@ -1,5 +1,5 @@
 ---
-title: 'Ienumjsstackframes:: Next 方法 |Microsoft 文件'
+title: 'Ienumjsstackframes:: Next 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2068bd130e7eb03747b89e2ba107019aa1cd458
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f1838d6494311502faf99d86c80e0a74ded4c6e5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727708"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092400"
 ---
 # <a name="ienumjsstackframesnext-method"></a>IEnumJsStackFrames::Next 方法
 取得指定的框架數。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG cFrameCount,  
    JS_NATIVE_FRAME *pFrames,  
@@ -41,7 +41,7 @@ HRESULT Next(
  [in]若要取得的畫面格數目。  
   
  `pFrames`  
- [out]要儲存框架的陣列。  
+ [out]要儲存畫面格的陣列。  
   
  `pcFetched`  
  [out]傳回的畫面格數目。  

@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 156de08e8bd0ed2a8cadd0653facfa99d352cb20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac85538456f87464f951dd18b733db50d60b4038
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915584"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039185"
 ---
 # <a name="rc-task"></a>RC 工作
 包裝 Microsoft Windows 資源編譯器工具 (*rc.exe*)。 **RC** 工作會將游標、圖示、點陣圖、對話方塊和字型等資源編譯為資源 (*.res*) 檔案。 如需詳細資訊，請參閱[資源編譯器](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler) \(英文\)。

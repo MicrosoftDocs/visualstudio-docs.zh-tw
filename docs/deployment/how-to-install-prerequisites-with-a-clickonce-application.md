@@ -1,8 +1,6 @@
 ---
-title: 如何： 使用 ClickOnce 應用程式安裝必要條件 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用 ClickOnce 應用程式安裝必要條件 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,23 +13,23 @@ helpviewer_keywords:
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e363b021f8dfb82aa641a1baac4d2f33e0bd3d2e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: bf4e015da7f5661f0964e9f60d65f39b665fe9d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152470"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973963"
 ---
-# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>如何： 使用 ClickOnce 應用程式安裝必要條件
+# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>HOW TO：隨著 ClickOnce 應用程式安裝必要軟體
 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式需要它們才能執行，在電腦上安裝正確版本的.NET framework; 許多應用程式以及其他必要條件。 發佈時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式中，您可以選擇一組與您的應用程式一起封裝的必要元件。 在安裝期間，會檢查以判斷它是否已經存在; 每個必要條件如果在安裝之前未將已安裝[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。  
   
  而不是封裝和發行必要條件，您也可以指定元件的下載位置。 比方說，而不是包含每個應用程式，您將發行的必要條件，您可以使用集中式的檔案共用或包含的所有必要條件的安裝程式的 Web 位置，在安裝時，將下載的元件和安裝從該位置。  
   
 > [!IMPORTANT]
->  您應該將必要條件安裝程式封裝加入您的開發電腦，然後再發行您的第一個[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 ClickOnce 應用程式的 包含必要條件](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)。  
+>  您應該將必要條件安裝程式封裝加入您的開發電腦，然後再發行您的第一個[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 如需詳細資訊，請參閱[＜How to：隨著 ClickOnce 應用程式納入必要軟體](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)。  
   
  在進行管理的必要條件**必要條件** 對話方塊中，從可存取**發佈**窗格**專案設計工具**。  
   
@@ -70,5 +68,5 @@ ms.locfileid: "39152470"
     >  您必須確定在安裝程式指定的元件存在於指定的位置。  
   
 ## <a name="see-also"></a>另請參閱  
- [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
- [如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
+ [如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_slot |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_slot | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97e405b8-483f-4da0-91e7-ca4d88251ecd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e554ac5e414ccc34d1ab66962232a263535d9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: cd1a92b83ce6b5c04cc0225ffeb1173b641bdba2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852436"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036481"
 ---
 # <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
 擷取位置的位置編號。 使用時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)是`LocIsSlot`。  
@@ -27,7 +25,7 @@ ms.locfileid: "49852436"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_slot (   
+HRESULT get_slot (   
    DWORD* pRetVal  
 );  
 ```  
@@ -42,6 +40,6 @@ HRESULT get_slot (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示屬性不是適用於符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

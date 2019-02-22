@@ -1,8 +1,6 @@
 ---
 title: 分析 UWP App 中的能源耗用量 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -12,15 +10,15 @@ dev_langs:
 ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 08723f30957ece57af0f666a5464907a686ad604
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a9421df86166c76bda22bdecf166969e4a2142a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220732"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995657"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP App 中的能源耗用量
 Visual Studio [能源消耗] 分析工具可協助您分析 UWP App 在全部或部分時間使用自己的電池執行之低電源平板裝置上的功率和能源消耗情形。 在電池供電的裝置上，使用太多能源的應用程式可能導致客戶諸多不滿，最後客戶可能會解除安裝應用程式。 最佳化能源利用，可以提高客戶對應用程式的採用率。  
@@ -29,9 +27,9 @@ Visual Studio [能源消耗] 分析工具可協助您分析 UWP App 在全部或
  [能源消耗] 分析工具會在分析工作階段期間，擷取裝置的顯示器、CPU 和網路連線的活動。 然後它會產生這些活動的用電量評估，以及該分析工作階段的總計能源量。  
   
 > [!NOTE]
->  能源分析工具會使用代表可能執行應用程式的低電源平板裝置之標準參考裝置硬體的軟體模型，評估用電和能源利用。 為了提供最佳評估結果，建議您在低電源平板裝置上收集分析資料。  
+> 能源分析工具會使用代表可能執行應用程式的低電源平板裝置之標準參考裝置硬體的軟體模型，評估用電和能源利用。 為了提供最佳評估結果，建議您在低電源平板裝置上收集分析資料。  
 >   
->  雖然這個模型可針對各種低電源裝置提供良好評估，但是您所分析裝置的實際值仍可能有所不同。 使用這些值找出相對於其他資源來說耗用量較高，也因此可能是合適的最佳化候選項目的顯示器、CPU 和網路活動。  
+> 雖然這個模型可針對各種低電源裝置提供良好評估，但是您所分析裝置的實際值仍可能有所不同。 使用這些值找出相對於其他資源來說耗用量較高，也因此可能是合適的最佳化候選項目的顯示器、CPU 和網路活動。  
   
  [能源消耗] 分析工具使用下列「 *功率* 」(Power) 和「 *能源*」(Energy) 的定義：  
   
@@ -54,13 +52,13 @@ Visual Studio [能源消耗] 分析工具可協助您分析 UWP App 在全部或
   
  **將標記加入至 C#、Visual Basic、C++ 程式碼**  
   
- 若要將使用者標記新增至 C#、Visual Basic、C++ 程式碼，請先建立 [Windows.Foundation.Diagnostics LoggingChannel](xref:Windows.Foundation.Diagnostics.LoggingChannel) 物件。 接著，請在程式碼中您要標記的位置插入 [LoggingChannel.LogMessage](xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A) 方法的呼叫， 並在呼叫中使用 [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) 。  
+ 若要將使用者標記新增至 C#、Visual Basic、C++ 程式碼中，請先建立 <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=fullName> 物件。 接著，請在程式碼中您要標記的位置插入 <xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A?displayProperty=nameWithType> 方法的呼叫。 並在呼叫中使用 [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) 。  
   
  當方法執行時，使用者標記就會與訊息一起加入至分析資料中。  
   
 > [!NOTE]
 > - Windows.Foundation.Diagnostics LoggingChannel 會實作 [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) 介面 (等同於 C# 和 VB 中的 [System.IDisposable](/dotnet/api/system.idisposable))。為了避免作業系統資源流失，請在記錄頻道結束時呼叫 [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) (等同於 C# 和 VB 中的 [Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel))。  
->   -   每個開啟的記錄通道都必須具有唯一名稱。 嘗試使用與尚未處置的通道相同的名稱建立新記錄通道，將會造成例外狀況。  
+>  - 每個開啟的記錄通道都必須具有唯一名稱。 嘗試使用與尚未處置的通道相同的名稱建立新記錄通道，將會造成例外狀況。  
   
  如需相關範例，請參閱 [LoggingSession 範例](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336)這個 Windows SDK 範例。  
   
@@ -151,8 +149,9 @@ if (performance && performance.mark) {
   
      UWP App 適用的 Visual Studio 模擬器可讓您模擬網路資訊 API 的資料連線屬性。 請參閱[在模擬器中執行 UWP App](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
--   [JavaScript 函式計時]  和 [CPU 使用量]  工具可以協助您降低因為沒有效率的函式所造成的 CPU 負載。 請參閱[分析 CPU 使用量](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md)。
+-   [JavaScript 函式計時]  和 [CPU 使用量]  工具可以協助您降低因為沒有效率的函式所造成的 CPU 負載。 請參閱[分析 CPU 使用量](/visualstudio/profiling/beginners-guide-to-performance-profiling)。
 
 ## <a name="see-also"></a>另請參閱
- [Visual Studio 中的分析](../profiling/index.md)  
- [初步認識分析工具](../profiling/profiling-feature-tour.md)
+
+- [Visual Studio 中的分析](../profiling/index.md)  
+- [初步認識分析工具](../profiling/profiling-feature-tour.md)

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: eedda0a3-5e05-44fe-841d-a2f4866ac72d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28be8f34602a3a175c40d630463686f0ca99c919
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 864141055487b598a8f91641f40fe4c027c53b6c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958848"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918429"
 ---
 # <a name="terminating-a-program"></a>終止程式
 下節描述了單一的程式，而且其中一個執行緒終止。  

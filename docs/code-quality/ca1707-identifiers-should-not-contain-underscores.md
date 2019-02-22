@@ -1,7 +1,6 @@
 ---
 title: CA1707:識別項名稱不應該包含底線
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotContainUnderscores
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5fb539ef-c304-4323-90c0-b14386da9774
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c5e514599b655febc7086c21c6b037ebe3619e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1cbd6d3999525808180f69652290807d327b6814
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825107"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917736"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707:識別項名稱不應該包含底線
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2 |Microsoft Docs
+title: IDebugDocumentContext2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2a446c71-8100-4c09-a1cc-fd446bd74030
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dca62a511cd247f3344e319a7c3b4946b848103f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f648888e41557e7debe460d99c07cd1017150c0e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909694"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992291"
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 此介面代表來源檔案的文件中的位置。  

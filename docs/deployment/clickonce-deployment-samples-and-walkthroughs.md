@@ -1,8 +1,6 @@
 ---
 title: ClickOnce 部署範例和逐步解說 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -16,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3973276b-7b11-4692-a0a2-32bebf0b9c2a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc171010e1616ebe1fdf2d89397f6c796bf2686d
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
-ms.translationtype: MT
+ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459548"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018367"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 部署範例和逐步解說
 本章節包含範例應用程式、 程式碼範例和逐步解說，說明語法、 結構和技術來部署 Windows Form、 WPF 和主控台應用程式。
@@ -33,7 +31,7 @@ ms.locfileid: "49459548"
 
 ## <a name="clickonce-deployment"></a>ClickOnce 部署
 
-|主題|描述|
+|主題|說明|
 |-----------|-----------------|
 |[手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|說明如何使用.NET Framework 公用程式，部署 ClickOnce 應用程式。|
 |[下載依需求以 ClickOnce 部署 API 的組件](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|示範如何將標示為 「 選用 」 的應用程式中的某些組件，以及如何下載它們使用中的類別<xref:System.Deployment.Application>命名空間。|

@@ -1,7 +1,6 @@
 ---
 title: CA2226:運算子應該有對稱的多載
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - OperatorsShouldHaveSymmetricalOverloads
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d202401a-ea14-4559-b15e-0ea4f5b68789
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3322f4ca9c2e6bcfbd6ff80843a48b01e030f4d0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6264b440df01e02019938eb0f742cb9789fd4f5d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921026"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931100"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226:運算子應該有對稱的多載
 

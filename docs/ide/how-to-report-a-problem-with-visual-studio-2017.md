@@ -4,20 +4,19 @@ titleSuffix: ''
 description: 了解如何將 Visual Studio 2017 的問題回報給 Microsoft，以便我們可以診斷並修正問題。
 ms.date: 03/11/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ba1b46a8473336b95a7e90c4a80e4b1e961386b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e9ce21c0abf365606b1c09aa37c59e4217feb02
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882902"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936924"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>如何回報 Visual Studio 2017 的問題
 

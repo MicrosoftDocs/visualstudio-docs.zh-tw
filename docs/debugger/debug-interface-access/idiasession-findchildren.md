@@ -1,8 +1,6 @@
 ---
-title: 'Idiasession:: Findchildren |Microsoft Docs'
-ms.custom: ''
+title: IDiaSession::findChildren | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d19046f-f668-4aa9-8788-95cda9a98997
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16033fc289e5a1fe2a8331e927bba51ce1671fd2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e3271e1e322b37e474053f22084f8040b8bdedd3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896168"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930624"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 擷取指定的父識別碼的所有相符的名稱和符號類型的子系。  
@@ -27,7 +25,7 @@ ms.locfileid: "49896168"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT findChildren (   
+HRESULT findChildren (   
    IDiaSymbol*       parent,  
    SymTagEnum        symtag,  
    LPCOLESTR         name,  
@@ -63,7 +61,7 @@ IDiaEnumSymbols* pEnum;
 pSession->findChildren( pFunc, SymTagData, szVarName, nsCaseSensitive, &pEnum );  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

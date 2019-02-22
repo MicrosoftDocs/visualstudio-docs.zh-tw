@@ -1,8 +1,6 @@
 ---
-title: 如何： 使用原生執行階段檢查 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用原生執行階段檢查 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.runtime.errorchecks
@@ -36,17 +34,17 @@ helpviewer_keywords:
 ms.assetid: dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc4e4b9ee24bc7be9126866ae804f1b3c6d6dba6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5f09a7e796dbb1bffd5917eae75f6e5389ec74a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860808"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965168"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>如何：使用原生執行階段檢查
+# <a name="how-to-use-native-run-time-checks"></a>HOW TO：使用原生執行階段檢查
 您可以在 Visual C++ 中使用原生 [runtime_checks](/cpp/preprocessor/runtime-checks) 來攔截最常見的執行階段錯誤，例如：  
   
 - 堆疊指標損壞  
@@ -79,8 +77,8 @@ ms.locfileid: "49860808"
   
 -   使用 `runtime_checks` Pragma。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)   
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [執行階段錯誤檢查](/cpp/c-runtime-library/run-time-error-checking)

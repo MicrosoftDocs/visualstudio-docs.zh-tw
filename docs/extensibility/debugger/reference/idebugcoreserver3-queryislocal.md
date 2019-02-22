@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::QueryIsLocal |Microsoft Docs
+title: IDebugCoreServer3::QueryIsLocal | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cca030de-f853-4ed7-b2fb-395f08a6b884
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55bd57a26a3b982c5154b6d54734be2cb8255258
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd516411ddc032942a189b5b39b4bc152e3d92c8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891969"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976871"
 ---
 # <a name="idebugcoreserver3queryislocal"></a>IDebugCoreServer3::QueryIsLocal
 判斷伺服器是否為本機呼叫端。  

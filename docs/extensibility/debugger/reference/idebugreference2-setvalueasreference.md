@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsReference |Microsoft Docs
+title: IDebugReference2::SetValueAsReference | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 94a545d2-16b9-45e9-b2e7-4e49ff90aad0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d24cd6658fd4c971e2592a8b05b1593a1090784
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd192323407b7558bd05ee12ea95ab5799a35e1e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922768"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967530"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 設定參考，以從另一個參考的值。 保留供未來使用。  

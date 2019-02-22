@@ -1,8 +1,6 @@
 ---
 title: 支援程式碼變更 （c + +） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1d4333014f63bec73c13b3a7b1d5f9c7d59697f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2064d38400172a3aa7a653cd900431d8b24dcf01
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854113"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018550"
 ---
 # <a name="supported-code-changes-c"></a>支援的程式碼變更 (C++)
 Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 不過，有些變更無法在程式執行期間套用。 若要套用這些變更，您必須停止執行，並建置新版的程式碼。  
@@ -141,5 +139,5 @@ Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 �
 ##  <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 屬性的限制  
  [編輯後繼續] 不會重新產生介面定義 (IDL) 檔， 所以您偵錯時並不會反映出 IDL 屬性的變更。 若要看到 IDL 屬性的變更結果，就必須停止偵錯並重建應用程式。 如果 IDL 屬性有所變更，[編輯後繼續] 並不會產生錯誤或警告。 如需詳細資訊，請參閱 [IDL 屬性](/cpp/windows/idl-attributes)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

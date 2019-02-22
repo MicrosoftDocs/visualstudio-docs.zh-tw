@@ -1,22 +1,20 @@
 ---
 title: 建立自動程式化 UI 測試
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fe8bed9c1f1f8aee9ae8e6d1ba460bf226d7b818
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: d2cb1e2a05499c01cc1441db0a289cfc95b8e243
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895518"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955059"
 ---
-# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>逐步解說：建立、編輯和維護自動程式化 UI 測試
+# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>逐步解說：建立、編輯及維護自動程式化 UI 測試
 
 在本逐步解說中，您將了解如何建立、編輯和維護自動程式化 UI 測試來測試 Windows Presentation Framework (WPF) 應用程式。 本逐步解說提供解決方案用來修正各種因時間問題和控制項重構而中斷的測試。
 
@@ -355,11 +353,7 @@ ms.locfileid: "52895518"
 
 ## <a name="videos"></a>視訊
 
-![影片連結](../data-tools/media/playvideo.gif) [開始使用自動程式化 UI 測試](http://go.microsoft.com/fwlink/?LinkID=230573)
-
-![影片連結](../data-tools/media/playvideo.gif) [自動程式化 UI 測試的維護與偵錯](http://go.microsoft.com/fwlink/?LinkID=230574)
-
-![影片連結](../data-tools/media/playvideo.gif) [手動撰寫自動程式化 UI 測試的程式碼](http://go.microsoft.com/fwlink/?LinkID=230575)
+![影片連結](../data-tools/media/playvideo.gif) [開始使用自動程式化 UI 測試](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
 ## <a name="faq"></a>常見問題集
 

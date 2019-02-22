@@ -14,17 +14,15 @@ helpviewer_keywords:
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aae5ec2197ff2a899f27df20e7199fdeb7a02d31
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a3fb276b3efb0d437d66d3e38c9e55b45b43e9c6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949197"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957883"
 ---
 # <a name="insert-new-records-into-a-database"></a>在資料庫中插入新的記錄
 

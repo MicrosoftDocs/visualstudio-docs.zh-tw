@@ -1,14 +1,9 @@
 ---
 title: '&lt;簽章&gt;(JavaScript) |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <signature> JavaScript XML tag
 - signature JavaScript XML tag
@@ -16,13 +11,13 @@ ms.assetid: 319138e7-cfbe-4b37-9643-2ddb7f9c63d4
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b3278087545a4d49d5f4f2f0d3f6942c4ec6d9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 02a4c36f3969ca0f9ef61e817afb82eb8247f041
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293003"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54780313"
 ---
 # <a name="ltsignaturegt-javascript"></a>&lt;簽章&gt;(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,8 +93,5 @@ function add(a, b) {
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 文件註解](../ide/xml-documentation-comments-javascript.md)
-
-
-

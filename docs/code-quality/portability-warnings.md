@@ -1,7 +1,6 @@
 ---
 title: 可攜性警告
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.PortabilityRules
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 902e859a-2153-4970-baaa-8a5b4a11806f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f181411d8379c8583057419c2a31f6b27c9d884
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a6a3557cffec60de91da46f60040ec675c866cbf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882451"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946597"
 ---
 # <a name="portability-warnings"></a>可攜性警告
 支援跨不同的作業系統可攜性警告的可攜性。

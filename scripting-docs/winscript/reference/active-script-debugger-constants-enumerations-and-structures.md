@@ -1,5 +1,5 @@
 ---
-title: 使用中指令碼偵錯工具的常數、 列舉和結構 |Microsoft 文件
+title: 作用中的指令碼偵錯工具的常數、 列舉和結構 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,25 +16,25 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bd41fe91fdf030b957d800248343198f2617018
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 913c1b243bcc9c7a6653025fbfcb4f941df2950e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24642068"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345431"
 ---
 # <a name="active-script-debugger-constants-enumerations-and-structures"></a>動態指令碼偵錯工具的常數、列舉和結構
 Active Debugging 介面會使用下列常數、列舉和結構。  
   
 ## <a name="constants-enumerations-and-structures"></a>常數、列舉和結構  
   
-|常數|說明|  
+|常數|描述|  
 |---------------|-----------------|  
 |[APPBREAKFLAGS 常數](../../winscript/reference/appbreakflags-enumeration.md)|指出應用程式和執行緒的目前偵錯狀態。|  
-|[DEBUG_TEXT 常數](../../winscript/reference/debug-text-constants.md)|選項旗標用於[IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md)。|  
+|[DEBUG_TEXT 常數](../../winscript/reference/debug-text-constants.md)|選項期間所使用的旗標[IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md)。|  
 |[TEXT_DOC_ATTR 常數](../../winscript/reference/text-doc-attr-constants.md)|描述文件的屬性。|  
   
-|列舉|說明|  
+|列舉|描述|  
 |------------------|-----------------|  
 |[APPBREAKFLAGS 常數](../../winscript/reference/appbreakflags-enumeration.md)|指出應用程式和執行緒的目前偵錯狀態。|  
 |[APPLICATION_NODE_EVENT_FILTER 列舉](../../winscript/reference/application-node-event-filter-enumeration.md)|指出要使用篩選條件排除的節點。|  
@@ -50,7 +50,7 @@ Active Debugging 介面會使用下列常數、列舉和結構。
 |[SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND 列舉](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md)|指出擲回的例外狀況類型。|  
 |[SOURCE_TEXT_ATTR 常數](../../winscript/reference/source-text-attr-enumeration.md)|描述原始程式文字的單一字元的屬性。|  
   
-|結構|說明|  
+|結構|描述|  
 |----------------|-----------------|  
 |[DebugStackFrameDescriptor 結構](../../winscript/reference/debugstackframedescriptor-structure.md)|會列舉堆疊框架並合併相同執行緒上數個列舉值的輸出。|  
 |[JS_NATIVE_FRAME 結構](../../winscript/reference/js-native-frame-structure.md)|代表堆疊框架。|  

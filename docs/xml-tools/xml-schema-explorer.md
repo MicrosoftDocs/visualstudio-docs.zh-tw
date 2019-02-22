@@ -1,20 +1,19 @@
 ---
 title: XML 結構描述總管
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb49560074b3a4c43efe13ea568207b52536e562
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 99ac977be83440bfd3e0b1436635bbeb9c39c0ec
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918975"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915982"
 ---
 # <a name="xml-schema-explorer"></a>XML 結構描述總管
 
@@ -40,7 +39,7 @@ ms.locfileid: "53918975"
 
 -   如果您是在[開始檢視](../xml-tools/start-view.md)，按一下**XML 結構描述總管**連結。
 
--   如果您是在[圖表檢視](../xml-tools/graph-view.md)或[內容模型檢視](../xml-tools/content-model-view.md)和在您的工作區中的節點，請使用操作功能表選取**XML 結構描述總管**。
+-   如果您是在[圖表檢視](../xml-tools/graph-view.md)或[內容模型檢視](../xml-tools/content-model-view.md)並在您的工作區中的節點，請使用操作 （右鍵） 功能表選取**XML 結構描述總管**。
 
 -   您也可以選取**XML 結構描述總管**從**檢視**功能表。
 

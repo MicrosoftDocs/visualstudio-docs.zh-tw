@@ -1,26 +1,21 @@
 ---
 title: 使用程式碼涵蓋範圍來決定所測試的程式碼數量 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
 ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 46e9ad272dd7d7b6e4a1f6033f09e99cb4b289d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834054"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782655"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "49834054"
   
 2.  若要查看已執行的程式碼行，請選擇 ![顯示程式碼涵蓋範圍著色圖示](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")[顯示程式碼涵蓋範圍著色]。  
   
-     若要修改色彩或使用粗體格式，請選擇 [工具]、[選項]、[環境]、[字型和色彩]、[顯示設定: 文字編輯器]。 在 [顯示項目] 下，調整 [涵蓋範圍] 項目。  
+     若要修改色彩或使用粗體格式，請選擇**工具**，**選項**，**環境**，**字型和色彩**，**顯示設定：** 文字編輯器。 在 [顯示項目] 下，調整 [涵蓋範圍] 項目。  
   
 3.  如果結果顯示涵蓋範圍較小，請檢查不會執行的部分程式碼，並撰寫更多測試來涵蓋這些項目。 開發小組通常以 80% 的程式碼涵蓋範圍為目標。 某些情況可以接受較小的涵蓋範圍。 例如，從標準範本產生之程式碼涵蓋範圍較小是可接受的。  
   
@@ -101,7 +96,7 @@ ms.locfileid: "49834054"
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>在程式碼涵蓋範圍結果中排除項目  
  如果程式碼是從文字範本產生的，您可能會想要將程式碼中的特定項目從排除涵蓋範圍分數中排除。 將 `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` 屬性加入至下列任一程式碼項目：類別、結構、方法、屬性、屬性 setter 或 getter、事件。 請注意，排除類別並不會排除其衍生類別。  
   
- 例如:   
+ 例如：  
   
 ```csharp  
   
@@ -261,7 +256,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
     如果您有一個以上的測試來源定義，請針對每一個定義重複以上步驟。  
   
-   - <em>沒有名為的欄位，但是 **類型的執行設定檔</em>*。 *  
+   - <em>但沒有名為 [回合設定檔類型]** 的欄位。*  
   
       在 [自動化測試] 下，選取 [測試組件]，然後選擇行末的省略符號按鈕 [...]。 在 [加入/編輯測試回合] 對話方塊中，選擇 [測試執行器] 之下的 [Visual Studio 測試執行器]。  
   
@@ -286,12 +281,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>外部資源  
   
 ### <a name="guidance"></a>指引  
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [測試 for Continuous Delivery with Visual Studio 2012 – 第 2 章：單元測試測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)   
  [針對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)   
  [對程式碼進行單元測試](../test/unit-test-your-code.md)
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: 設定語言特定編輯器選項
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - editor options
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - editor settings
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 331f43bbc478eba1f6372d3cb9fa949969bf6871
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d99d6ccfb7b5a310726fdb1cf2dbfebd6591bef
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855227"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942293"
 ---
 # <a name="setting-language-specific-editor-options"></a>設定語言特定編輯器選項
 

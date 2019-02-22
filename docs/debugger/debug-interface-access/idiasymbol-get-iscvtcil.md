@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_iscvtcil |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_isCVTCIL | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 711b81fd-9549-44dc-9761-5eb862ed64c0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d721338e1dfc21a54ce663377aba0aa71c83a87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a6b92bc36a18125322ea105a7c99fb8b586f54cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836459"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020122"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
 擷取旗標，指出是否將模組已從通用中間語言 (CIL) 模組轉換為原生模組。  
@@ -50,8 +48,8 @@ HRESULT get_isCVTCIL(
 |需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK 8.0 版|  
+|版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

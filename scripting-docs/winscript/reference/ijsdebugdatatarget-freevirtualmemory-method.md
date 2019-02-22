@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Freevirtualmemory 方法 |Microsoft 文件'
+title: 'Ijsdebugdatatarget:: Freevirtualmemory 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b53d7f80227a1c4eb0ef0293093543c09c5a367
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ed5fabfca8ac9b0e9fe0dfba346b0354f4c0576f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728738"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086797"
 ---
 # <a name="ijsdebugdatatargetfreevirtualmemory-method"></a>IJsDebugDataTarget::FreeVirtualMemory 方法
-釋放及/或回收的目標處理序的虛擬位址空間中的記憶體區域。  
+釋放和 （或) 取消認可目標處理序虛擬位址空間中的記憶體區域。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT FreeVirtualMemory(  
    UINT64 address,  
    DWORD size,  
@@ -41,10 +41,10 @@ HRESULT FreeVirtualMemory(
  [in]目標處理序應該釋放記憶體內的位址。  
   
  `size`  
- [in]要認可的位元組數目。 若要釋放區域，這個值必須是記憶體的零。  
+ [in]若要取消認可的位元組數目。 若要釋放區域，這個值必須是記憶體的零。  
   
  `freeType`  
- [in]表示要執行的可用作業的類型。 這通常是 MEM_RELEASE (0x8000)，這會釋放頁面的指定的區域。 作業之後，頁面是處於可用狀態。 可以改為使用 MEM_DECOMMIT (0x4000)，才能認可頁面而未釋放它們。  
+ [in]表示要執行的可用作業的類型。 這通常是 MEM_RELEASE (0x8000)，這會釋放指定的頁面區域。 作業之後，頁面會處於可用狀態。 可以改為使用 MEM_DECOMMIT (0x4000)，才能取消認可頁面，但未釋放它們。  
   
 ## <a name="return-value"></a>傳回值  
   

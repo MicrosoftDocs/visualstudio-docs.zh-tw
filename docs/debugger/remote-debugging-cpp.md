@@ -2,7 +2,6 @@
 title: 遠端偵錯 Visual c + + 專案 |Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4677380081aaa0ac79f589ea7594f19f78750613
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 88deb9957766b4e4e0802a1eded352a6ccb04f98
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844103"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231567"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>遠端偵錯 Visual Studio 中的 Visual c + + 專案
 若要偵錯在不同電腦上的 Visual Studio 應用程式安裝，您將在其中部署您的應用程式的電腦上執行遠端工具，設定您的專案從 Visual Studio 中，連接到遠端電腦，然後部署並執行您的應用程式。
@@ -39,7 +38,7 @@ ms.locfileid: "49844103"
 > [!NOTE]
 > 不支援透過 proxy 連線的兩部電腦之間的偵錯。 透過高延遲或低頻寬連線，例如撥號網際網路，或透過網際網路偵錯跨國家/地區不建議使用和可能失敗或非常慢。
   
-## <a name="download-and-install-the-remote-tools"></a>下載並安裝遠端工具
+## <a name="download-and-install-the-remote-tools"></a>下載及安裝遠端工具
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
@@ -53,16 +52,16 @@ ms.locfileid: "49844103"
 > [!NOTE]
 > 如果您需要新增額外的使用者的權限變更驗證模式或遠端偵錯工具連接埠號碼，請參閱[設定遠端偵錯工具](../debugger/remote-debugging.md#configure_msvsmon)。
 
-## <a name="remote_cplusplus"></a> 遠端偵錯 Visual c + + 專案  
+## <a name="remote_cplusplus"></a> 遠端對 Visual C++ 專案進行偵錯  
  在下列程序中，名稱和專案的路徑是 C:\remotetemp\MyMfc，而遠端電腦的名稱是**MJO DL**。  
   
-1. 建立 MFC 應用程式名為**mymfc。**  
+1. 建立名為 **mymfc** 的 MFC 應用程式。  
   
-2. 在應用程式，輕鬆地達到時，例如在某處設定中斷點**MainFrm.cpp**，在開頭`CMainFrame::OnCreate`。  
+2. 在應用程式某處設定容易達到的中斷點，例如在 **MainFrm.cpp** 其中 `CMainFrame::OnCreate` 的開頭。  
   
-3. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選取**屬性**。 開啟**偵錯** 索引標籤。  
+3. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選取**屬性**。 開啟 [偵錯] 索引標籤。  
   
-4. 設定**偵錯工具來啟動**要**遠端 Windows 偵錯工具**。  
+4. 將 [要啟動的偵錯工具] 設為 [遠端 Windows 偵錯工具]。  
   
     ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
   
@@ -82,11 +81,11 @@ ms.locfileid: "49844103"
   
 6. 在 [方案總管] 中，以滑鼠右鍵按一下方案，然後選擇**Configuration Manager**。  
   
-7. 針對**偵錯**組態中，選取**部署**核取方塊。  
+7. 在 [偵錯] 組態中，選取 [部署] 核取方塊。  
   
     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
-8. 開始偵錯 (**偵錯 > 啟動偵錯**，或**F5**)。  
+8. 開始偵錯 ([偵錯] > [開始偵錯]，或 **F5**)。  
   
 9. 可執行檔會自動部署到遠端電腦。  
   
@@ -97,18 +96,20 @@ ms.locfileid: "49844103"
 11. 在 Visual Studio 的電腦上，您應該會看到執行過程在中斷點停止。  
   
     > [!TIP]
-    >  或者，您可以另外執行一個步驟來部署檔案。 在 [**方案總管] 中，** 上按一下滑鼠右鍵**mymfc**節點，然後選擇**部署**。  
+    > 或者，您可以另外執行一個步驟來部署檔案。 在 [方案總管] 中，以滑鼠右鍵按一下 [mymfc] 節點，然後選擇 [部署]。
   
-    如果您有應用程式所使用的非程式碼檔案，您需要將它們包含在 Visual Studio 專案。 建立其他檔案的專案資料夾 (在**方案總管**，按一下**新增 > 新的資料夾**。)然後將檔案加入資料夾 (在**方案總管**，按一下**新增 > 現有項目**，然後選取 檔案)。 在 **屬性**頁面上的每個檔案，將**複製到輸出目錄**來**永遠複製**。
+    如果您有應用程式所需的非程式碼檔案，您可以指定在**其他要部署的檔案**上**遠端 Windows 偵錯工具**頁面。
+
+    或者，您可以將檔案納入您的專案，並設定**內容**屬性設**是**中**屬性**每個檔案的頁面。 這些檔案會複製到**部署目錄**上指定**遠端 Windows 偵錯工具**頁面。 您也可以變更**項目類型**要**複製檔案**並指定額外的屬性，如果您需要的檔案複製到的子資料夾**部署目錄**。
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>設定遠端符號偵錯 
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)] 
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)   
- [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)   
+ [設定 Windows 防火牆以進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [在執行 IIS 的遠端電腦上對 ASP.NET 進行遠端偵錯](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
  [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)

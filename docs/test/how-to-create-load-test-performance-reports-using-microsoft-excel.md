@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 95f184628af5b56845f76d1c7279608b6826c151
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: fb820ccc72e0070f947e362def1da137d19d8494
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826783"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955592"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>HOW TO：使用 Microsoft Excel 建立負載測試效能報表
 

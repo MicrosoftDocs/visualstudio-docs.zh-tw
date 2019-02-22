@@ -1,14 +1,9 @@
 ---
 title: 列出執行緒命令 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listthreads
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ffad16bc121582b4f8a8ec4c58ac44aa2449617
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 627e361fca63522f47a1d472655573c14a44035a
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286659"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54804604"
 ---
 # <a name="list-threads-command"></a>列出執行緒命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,13 +47,10 @@ Debug.ListThreads [index]
 >Debug.ListThreads   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [列出呼叫堆疊命令](../../ide/reference/list-call-stack-command.md)   
  [列出反組譯碼命令](../../ide/reference/list-disassembly-command.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

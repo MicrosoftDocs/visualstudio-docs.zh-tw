@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 548140afa666bd3178928fa650773bf765812a25
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8538b315d099544fe466f8ab318c571020874175
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924523"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980606"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 這個方法會查詢偵錯的處理程序的指定的屬性值。  

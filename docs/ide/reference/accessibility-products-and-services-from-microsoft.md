@@ -2,7 +2,6 @@
 title: Microsoft 的協助工具產品和服務
 description: 深入了解 Microsoft 提供的產品與服務，可協助讓我們的作業系統、程式和應用程式更易於存取且可供每個人使用，包括身心障礙人士。
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -17,20 +16,20 @@ helpviewer_keywords:
 ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e209e609caf073a7360bad3d0991a6fbd873989
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 02b35ff8325c6cb155d54a2ada6bf6f7d63dc341
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886315"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318624"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 的協助工具產品和服務
 
 > [!TIP]
-> 若要深入了解 Visual Studio 最新的協助工具更新，請參閱 [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Visual Studio 2017 15.3 版中的協助工具改善) 部落格文章。
+> 若要深入了解 Visual Studio 最新的協助工具更新，請參閱 [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Visual Studio 2017 15.3 版中的協助工具改善) 部落格文章。
 
 Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下列主題提供讓行動不便人士更容易存取 Microsoft Windows 之功能、產品和服務的相關資訊：
 

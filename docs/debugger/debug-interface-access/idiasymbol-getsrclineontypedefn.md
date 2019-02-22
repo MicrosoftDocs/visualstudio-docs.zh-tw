@@ -1,26 +1,24 @@
 ---
-title: IDiaSymbol::getSrcLineOnTypeDefn |Microsoft 文件
-ms.custom: ''
+title: IDiaSymbol::getSrcLineOnTypeDefn | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: ad554d18-9988-4b64-ad71-e7594c266e94
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c2e105848a8c56f86eb71ef4c57dcd75c5f604
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 2112f7186ee8bb861cf4d283b0bb0b4499f2c4ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470598"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023989"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
-擷取指出指定的使用者定義型別定義所在的來源檔案和行號。  
+擷取表示指定的使用者定義型別定義所在的來源檔案和行號。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,8 +32,8 @@ HRESULT getSrcLineOnTypeDefn(
  [out]A`IDiaLineNumber`物件，其中包含來源檔案和行號位置的使用者定義。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

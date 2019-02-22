@@ -2,20 +2,19 @@
 title: 修正程式錯誤並改善程式碼
 description: 本文描述 Visual Studio 如何透過一些基本方法來協助您尋找並修正您程式碼中的問題，包括建置錯誤、程式碼分析、偵錯工具和單元測試。
 ms.date: 05/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e61c5917ee3d77161c31213d4851472e714d1679
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57650bbe01a9d93b9847fd42075492c158d4db59
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940173"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928305"
 ---
 # <a name="make-code-work-in-visual-studio"></a>讓程式碼在 Visual Studio 中運作
 
@@ -89,9 +88,9 @@ Visual Studio 2017 包含一組內建的 [.NET 編譯器平台分析器](../code
 
 ![Visual Studio 錯誤清單 (含警告)](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>使用燈泡來修正或重構程式碼
+## <a name="use-quick-actions-to-fix-or-refactor-code"></a>使用「快速動作」來修正或重構程式碼
 
-[快速動作](../ide/quick-actions.md)可從燈泡或螺絲起子圖示使用，讓您重構程式碼內嵌。 這是可迅速有效地修正 C#、C++ 和 Visual Basic 程式碼中常見警告的簡單方式。 若要存取，請以滑鼠右鍵按一下警告波浪線，然後選取 [快速動作與重構]。 您也可在游標停在彩色波浪線上時，按下 **Ctrl**+ 或是選取邊邊的燈泡或螺絲起子圖示。 您會看到一份可能的修正或重構清單，可套用至該程式碼行。
+[快速動作](../ide/quick-actions.md)可從燈泡或螺絲起子圖示使用，讓您重構程式碼內嵌。 這是可迅速有效地修正 C#、C++ 和 Visual Basic 程式碼中常見警告的簡單方式。 若要存取，請以滑鼠右鍵按一下警告波浪線，然後選取 [快速動作與重構]。 您也可在游標停在彩色波浪線上時，按下 **Ctrl**+ 或是選取邊邊的燈泡、錯誤燈泡或螺絲起子圖示。 您會看到一份可能的修正或重構清單，可套用至該程式碼行。
 
 ![Visual Studio 燈泡預覽](../ide/media/quick-actions-options.png)
 

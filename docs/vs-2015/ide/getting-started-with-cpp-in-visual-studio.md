@@ -1,25 +1,20 @@
 ---
 title: C++ 使用者入門
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e982db6bf37caf201f75e563a23a28a528a61e7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 264fcea4b04b1777a455199789ed1bb9c3757f7c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052380"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54758238"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,4 +148,4 @@ ms.locfileid: "53052380"
    恭喜您完成此逐步解說！ 如果您想要探索更多範例，請參閱 [Visual Studio 範例](../ide/visual-studio-samples.md)。
 
 ## <a name="see-also"></a>請參閱
- [逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[產能的秘訣](../ide/productivity-tips-for-visual-studio.md) [Visual Studio 範例](../ide/visual-studio-samples.md)[使用 Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)
+ [逐步解說： 建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[產能的秘訣](../ide/productivity-tips-for-visual-studio.md) [Visual Studio 範例](../ide/visual-studio-samples.md)[使用 Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)

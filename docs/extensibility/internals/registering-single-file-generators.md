@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ba4bb20eb5e3a98d20a3272a603e53a772b5f1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7de9afbb29b40717f662384c0a139f0cd76a769
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880967"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029267"
 ---
 # <a name="registering-single-file-generators"></a>註冊單一檔案產生器
 若要提供自訂的工具[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您必須註冊因此[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以加以具現化，並與特定專案類型關聯。  

@@ -1,7 +1,6 @@
 ---
 title: CA1048:不要在密封類型中宣告 virtual 成員
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotDeclareVirtualMembersInSealedTypes
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5dcf4a30-6f98-48a8-b8cc-7b89ea757262
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 026a1b2cbcd75bd2f39cc6f169b0a1a2feddb258
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84db1db9061eff1373ee3ad4f0316a1f3dba0474
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872878"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924496"
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048:不要在密封類型中宣告 virtual 成員
 

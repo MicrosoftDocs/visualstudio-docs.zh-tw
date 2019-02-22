@@ -1,8 +1,6 @@
 ---
-title: 如何：指定建置事件 (C#)
+title: HOW TO：指定建置事件 (C#)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa82c7f12b3932c1e9f5aac7392d6ef2b8e8a773
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af2329789e5eea4c9b0875f2986181f6d672757c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885844"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930452"
 ---
-# <a name="how-to-specify-build-events-c"></a>如何：指定建置事件 (C#)
+# <a name="how-to-specify-build-events-c"></a>HOW TO：指定建置事件 (C#)
 
 使用建置事件指定要在建置開始之前，或建置完成之後執行的命令。 只有在建置成功到達建置流程中的這些點時，建置事件才會執行。
 
@@ -61,7 +59,7 @@ ms.locfileid: "49885844"
     > [!NOTE]
     > 如果您的建置前或建置後事件未順利完成，您可以將代碼不為零 (0) 的事件動作結束 (若為 0 表示動作成功)，以終止建置。
 
-## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>範例：如何使用建置後事件變更資訊清單
+## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>範例：如何使用建置後事件變更資訊清單資訊
 
 下列程序示範如何使用從建置後事件呼叫的 *.exe* 命令 (專案目錄中的 *.exe.manifest* 檔案)，設定應用程式資訊清單中的最低作業系統版本。 最低作業系統版本是由四組號碼來表示，例如 4.10.0.0。 若要進行上述作業，請使用命令來變更資訊清單的 `<dependentOS>` 區段：
 

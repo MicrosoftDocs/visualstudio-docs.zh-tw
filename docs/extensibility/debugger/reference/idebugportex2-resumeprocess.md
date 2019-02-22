@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::ResumeProcess |Microsoft Docs
+title: IDebugPortEx2::ResumeProcess | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e80a6960-9456-4764-9320-e7b1bd57fe5d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbef6d7c6bf6640531f69996dd421c8400dbe356
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7a75befe3fd420edcd7b15033f4d518035127d5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866721"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953639"
 ---
 # <a name="idebugportex2resumeprocess"></a>IDebugPortEx2::ResumeProcess
 繼續執行的處理序。  

@@ -1,8 +1,6 @@
 ---
 title: FormatVersion 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -12,29 +10,29 @@ dev_langs:
 ms.assetid: 96e692f6-b581-46ca-8cc9-441a1861e371
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f9cae12a66e2b442d6c42032d3f4bf65942127
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 59dd767e36620deb30d3d5ccff361d989c9d3a4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946244"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928772"
 ---
 # <a name="formatversion-task"></a>FormatVersion 工作
 將修訂編號附加至版本號碼。  
   
--   Case #1: Input: Version=\<undefined>;  Revision=\<don't care>;   Output: OutputVersion="1.0.0.0"  
+-   Case #1:輸入：Version=\<undefined>;  Revision=\<don't care>;   Output:OutputVersion="1.0.0.0"  
   
--   Case #2: Input: Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"  
+-   Case #2:輸入：Version="1.0.0.*"  Revision="5"  Output:OutputVersion="1.0.0.5"  
   
--   Case #3: Input: Version="1.0.0.0"  Revision=\<don't care>;  Output: OutputVersion="1.0.0.0"  
+-   Case #3:輸入：Version="1.0.0.0"  Revision=\<don't care>;  Output:OutputVersion="1.0.0.0"  
   
 ## <a name="parameters"></a>參數  
  下表說明 `FormatVersion` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`FormatType`|選擇性的 `String` 參數。<br /><br /> 指定格式類型。<br /><br /> -   "Version" = 版本。<br />-   "Path" = 將 "." 取代為 "_"；|  
 |`OutputVersion`|選擇性的 `String` 輸出參數。<br /><br /> 指定包含修訂編號的輸出版本。|  

@@ -1,8 +1,6 @@
 ---
 title: 環境節點屬性、選項頁
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
@@ -10,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e22b24889a14d49afddd3c30858814ddec663e6a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 86f1f8ea2ca9f55610c666ad5fa28fa189bb3be1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672726"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955748"
 ---
 # <a name="options-page-environment-node-properties"></a>環境節點屬性、選項頁
 本文件描述與 [選項] 對話方塊的 [環境] 分類 `DTE.Properties("Environment", <Property Page>)` 相關聯的頁面 (或屬性集合)。 每一小節的標題就是用來存取屬性集合的呼叫，而每一小節中的表格會列出集合中的屬性。
@@ -134,7 +132,7 @@ ms.locfileid: "50672726"
 
 |屬性項目名稱|值|描述|
 | - |-----------|-----------------|
-|OnStartUp|Get/Set (列舉)|從 <xref:EnvDTE.vsStartUp> 啟動時所採取的動作，值為 0 到 5：<br /><br /> -   0：開啟首頁<br />-   1：載入上次載入的方案<br />-   2：顯示 [開啟專案] 對話方塊<br />-   3：顯示 [新增專案] 對話方塊<br />-   4：顯示空白環境<br />-   5：顯示起始頁|
+|OnStartUp|Get/Set (列舉)|從 <xref:EnvDTE.vsStartUp> 啟動時所採取的動作，值為 0 到 5：<br /><br /> -   0：開啟首頁<br />-   1：載入上次載入的方案<br />-   2：顯示 [開啟專案] 對話方塊<br />-   3：顯示 [新增專案] 對話方塊<br />-   4：顯示空白環境<br />-   5：顯示起始畫面|
 |StartPageRSSUrl|Get/Set (字串)|啟動時所使用之 RSS 摘要的 URL。|
 |StartPageRefreshDownloadedContent|Get/Set (布林值)|每隔 StartPageRefreshInterval 中所指定的間隔之後，重新整理起始頁。|
 |StartPageRefreshInterval|Get/Set (短整數)|重新整理起始頁的間隔，以分鐘為單位。|

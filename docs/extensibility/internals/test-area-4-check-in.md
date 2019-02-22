@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80b3603480964daf618040a983b181a9a82f7407
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81b96a97faef5bc86b0d8c6321674310e86ad1fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853290"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936602"
 ---
 # <a name="test-area-4-check-in"></a>測試區域 4:簽入
 此原始檔控制外掛程式的測試區域涵蓋版本存放區，以透過傳送更新的項目**簽入**命令。  

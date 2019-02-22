@@ -1,8 +1,6 @@
 ---
 title: 'Idiatable:: Get_count |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb47abe8-6706-4679-bc52-79f6444dae7e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a5d2002a68c7b11a6a4e81b6dbd04114aa8c2c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 822a32bdef1a9974c12b5f2b19e03cc4bedbcb0e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816570"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973872"
 ---
 # <a name="idiatablegetcount"></a>IDiaTable::get_Count
 擷取資料表中的項目數。  
@@ -27,7 +25,7 @@ ms.locfileid: "49816570"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_Count (   
+HRESULT get_Count (   
    LONG* pRetVal  
 );  
 ```  
@@ -39,6 +37,6 @@ HRESULT get_Count (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
  [IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)

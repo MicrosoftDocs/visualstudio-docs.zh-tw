@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::GetInfo |Microsoft Docs
+title: IDebugMemoryContext2::GetInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 08c7f091-1816-4d64-8834-f9ecaac5c58d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03c5f43e5e77f4a99962bdd0b31195f9a56488ab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09ecbd655f67b3dcd79d237d6a710cd7003395fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875254"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007473"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
 擷取[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)結構描述內容。  

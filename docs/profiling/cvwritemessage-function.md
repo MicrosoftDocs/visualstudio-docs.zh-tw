@@ -1,8 +1,6 @@
 ---
 title: CvWriteMessage 函式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvWriteMessageW
@@ -25,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: e20ae7be-bfa7-437a-b8c1-fa0f1baa7f83
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 966be7ab50c2e14ae43da7cf68d7ef6168255207
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: aa902b9f429f11f1f168503de55f74f112f8474f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749622"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948410"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage 函式
 將訊息寫入並行視覺化檢視追蹤檔。  
@@ -114,7 +112,7 @@ HRESULT CvWriteMessageExVA(
  當訊息成功寫入時傳回 S_OK。 發生任何錯誤時傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
   
 ## <a name="requirements"></a>需求  
- **標頭︰***cvmarkers.h*  
+ **標頭︰** *cvmarkers.h*  
   
  **Unicode：** CvWriteMessageW、CvWriteMessageVW、CvWriteMessageExW、CvWriteMessageExVW  
   

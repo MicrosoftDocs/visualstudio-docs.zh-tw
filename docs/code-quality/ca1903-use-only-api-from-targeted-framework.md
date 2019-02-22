@@ -1,7 +1,6 @@
 ---
 title: CA1903:只使用來自目標架構的 API
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - UseOnlyAPIFromTargetedFramework
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: efdb5cc7-bbd8-4fa7-9fff-02b91e59350e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eb85029cb9c3c419b88a31be88d8e1cfbd16142
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 086c4546d72042d2b2c7c1789cdf1695bc54b81d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908979"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955384"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903:只使用來自目標架構的 API
 

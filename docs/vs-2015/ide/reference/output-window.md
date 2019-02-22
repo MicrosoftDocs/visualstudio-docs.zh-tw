@@ -1,14 +1,9 @@
 ---
 title: 輸出視窗 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.build.output
 - vs.debug.output
@@ -21,13 +16,13 @@ ms.assetid: d8931d88-250e-4db4-963f-2c5b3e99b45f
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 55869ff13cf4048b6d256e57892d470062847501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 26b826b19a14731ba4fbbb11eccee5fc4337c4ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189900"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784815"
 ---
 # <a name="output-window"></a>輸出視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,12 +67,9 @@ ms.locfileid: "49189900"
 ## <a name="scrolling-behavior"></a>捲動行為  
  如果您在 [輸出] 視窗中使用自動捲動，然後使用滑鼠或方向鍵進行巡覽，則會停止自動捲動。 若要繼續自動捲動，請按 CTRL+END。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [輸出視窗中的診斷訊息](../../debugger/diagnostic-messages-in-the-output-window.md)   
  [如何：控制輸出視窗](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [編譯和建置](../../ide/compiling-and-building-in-visual-studio.md)   
  [了解組建組態](../../ide/understanding-build-configurations.md)   
  [類別庫概觀](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)
-
-
-

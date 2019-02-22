@@ -1,8 +1,6 @@
 ---
 title: 摘要檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.summary
@@ -14,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65da91ea1182a5c14d6c4b27057b6561221077e8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a07584130b89eb90da24ebf1ee4783a312033d07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220826"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940462"
 ---
 # <a name="summary-view"></a>摘要檢視
 [摘要] 檢視顯示分析回合中效能耗費最多資源的函式或物件資訊。 此檢視會提供時間軸圖表，以及根據分析方法效能計量之兩個以上耗費最多資源的函式或物件清單。 此檢視中的資料取決於所使用的分析方法 (取樣、檢測或並行) 以及是否收集 .NET 記憶體配置。  
 
  針對所有 [摘要] 檢視 (並行資料的 [摘要] 檢視除外)，[摘要] 檢視中的時間軸圖形會顯示已分析應用程式在分析期間的處理器 (CPU) 使用率。  
 
--   如果您指定圖形上的時段，則可以重新分析該時段的資料，或將時間軸顯示縮放到您指定的時段。 如需詳細資訊，請參閱[如何：從摘要時間軸篩選報表檢視](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)  
+-   如果您指定圖形上的時段，則可以重新分析該時段的資料，或將時間軸顯示縮放到您指定的時段。 如需詳細資訊，請參閱[＜How to：從摘要時間軸篩選報表檢視](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)  
 
 -   您可以按一下 [摘要] 檢視清單中的函式，以開啟函式的 [函式詳細資料] 檢視。 您也可以使用滑鼠右鍵按一下函式以取得其他檢視選項。  
 
@@ -52,8 +50,8 @@ ms.locfileid: "51220826"
 | **顯示修改過的呼叫樹狀圖** | 顯示 [呼叫樹狀圖檢視] 中耗費最多資源的執行路徑。 如需詳細資訊，請參閱[呼叫樹狀圖檢視](../profiling/call-tree-view.md)。 |
 | **顯示熱門程式行** | 不適用於使用檢測方法所收集的分析資料。 在 [程式行檢視] 中，顯示耗費最多資源的原始程式碼行。 如需詳細資訊，請參閱[程式行檢視](../profiling/lines-view.md)。 |
 | **比較報告** | 顯示 [選取要進行比較的分析檔案] 對話方塊，您可以在其中指定要與目前資料檔案比較的另一個分析資料檔案。 如需詳細資訊，請參閱[比較效能資料檔案](../profiling/comparing-performance-data-files.md)。 |
-| **匯出報告資料** | 顯示 [匯出報告] 對話方塊，您可以在其中指定一或多個報表檢視以將另存為逗號分隔值 (.csv) 或 .xml 檔案。 如需詳細資訊，請參閱[如何：匯出分析工具報表](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\))。 |
-| **儲存分析的報告** | 將目前分析資料檔案儲存為 .vsps 檔案，這在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的介面中開啟地更為快速。 如需詳細資訊，請參閱[如何：儲存已分析的分析資料檔案](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))。 |
+| **匯出報告資料** | 顯示 [匯出報告] 對話方塊，您可以在其中指定一或多個報表檢視以將另存為逗號分隔值 (.csv) 或 .xml 檔案。 如需詳細資訊，請參閱[＜How to：匯出分析工具報表](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\))。 |
+| **儲存分析的報告** | 將目前分析資料檔案儲存為 .vsps 檔案，這在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的介面中開啟地更為快速。 如需詳細資訊，請參閱[＜How to：儲存已分析的分析資料檔案](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))。 |
 | **篩選報告資料** | 顯示分析報表篩選窗格，您可以在其中指定準則來限制報表檢視中的資料。 如需詳細資訊，請參閱[效能報表檢視篩選](../profiling/performance-report-view-filter.md) |
 | **切換全螢幕** | 切換報表檢視的全螢幕模式。 |
 

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::Skip |Microsoft Docs
+title: IEnumDebugPropertyInfo::Skip | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91e80ca103addf4f726a373813b379197298109
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72445473a1fe090a468010b33381e8751f1bbc65
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821067"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344742"
 ---
 # <a name="ienumdebugpropertyinfoskip"></a>IEnumDebugPropertyInfo::Skip
 略過指定的數目的`DebugPropertyInfo`列舉型別序列中的結構。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT Skip(  
    ULONGcelt  
 );  

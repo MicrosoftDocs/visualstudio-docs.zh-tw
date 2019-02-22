@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ba1863ad-e35f-4d34-a2f2-5e68957d1915
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 171537a752818e31ba6a3e7e185fd02017dcb967
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2fed378aad3a988daa532bb22c0dfd6cb3cbfd2f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967705"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923222"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider 函式
 初始化標記提供者。 必須在任何其他並行視覺化檢視 SDK 函式之前呼叫。  
@@ -42,7 +42,7 @@ HRESULT CvInitProvider(
  成功初始化提供者時傳回 S_OK，發生任何錯誤時則傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
   
 ## <a name="requirements"></a>需求  
- **標頭︰***cvmarkers.h*  
+ **標頭︰** *cvmarkers.h*  
   
 ## <a name="see-also"></a>另請參閱  
  [C++ 程式庫參考](../profiling/cpp-library-reference.md)

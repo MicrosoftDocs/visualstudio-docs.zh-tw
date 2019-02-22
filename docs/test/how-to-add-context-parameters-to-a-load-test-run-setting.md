@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 378fc29fa7f867eee1be9e30e58c80149d1ed835
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 8b7af7b566e874941e72ae3a905ab2c1b58c89ff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898384"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907902"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>HOW TO：將內容參數新增至負載測試回合設定
 

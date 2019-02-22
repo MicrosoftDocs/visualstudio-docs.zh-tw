@@ -1,5 +1,5 @@
 ---
-title: Setter 函式必須具有一個引數 |Microsoft 文件
+title: Setter 函式必須具有一個引數 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,13 +21,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6e2a84ce078abfc053ed190f53c9ccbed3277928
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632708"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346640"
 ---
 # <a name="setter-functions-must-have-one-argument"></a>Setter 函式必須具有一個引數
-1051: setter 函式必須具有一個引數  
+1051:Setter 函式必須具有一個引數  
   
- 您必須只有一個 setter 函式的引數。
+ 您必須有 setter 函式的只有一個引數。

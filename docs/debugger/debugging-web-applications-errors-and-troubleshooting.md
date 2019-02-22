@@ -2,7 +2,6 @@
 title: 偵錯 web 應用程式-錯誤和疑難排解
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -25,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 63f2742e-2031-48a8-9773-d9b547c62230
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b089e3d095131e998729dc5d7a270d859673b2c7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9cc3bafc89b30d3f98dd4615eae22ee76c9e0ea6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053647"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018263"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>偵錯 Web 應用程式：錯誤和疑難排解
 當您嘗試對 Web 應用程式進行偵錯時，可能會遇到下列錯誤。  
@@ -58,4 +57,4 @@ ms.locfileid: "53053647"
   
 ## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
- [偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)
+ [偵錯 Web 應用程式和指令碼](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)

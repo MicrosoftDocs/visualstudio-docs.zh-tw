@@ -10,16 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: aeeacdd9fc52f26a14930f0756be463ac4f87eec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9bab7e6717ee3216e513fed9bbe3b8c5f6295667
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943768"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936937"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>HOW TO：建立特定領域語言方案
 特定領域語言 (DSL) 會建立使用特製化的 Visual Studio 方案。
@@ -51,7 +50,7 @@ ms.locfileid: "53943768"
 
    4. 按一下  **Domain-specific Language Designer**。
 
-   5. 在 **名稱**方塊中，輸入方案的名稱。 按一下 [確定 **Deploying Office Solutions**]。
+   5. 在 **名稱**方塊中，輸入方案的名稱。 按一下 [確定] 。
 
        **Domain-specific Language Designer 精靈**隨即出現。
 

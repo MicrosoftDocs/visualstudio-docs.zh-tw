@@ -9,13 +9,13 @@ searchscope: VS Subscription
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
-ms.openlocfilehash: 414a7a9ef25740505e08da74cd4dcfce0fe11ce9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 01d1aebf03e71d90e31010a3a5610017c01e1f92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927225"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003401"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的新功能
 
@@ -44,7 +44,7 @@ ms.locfileid: "49927225"
 
 * 探索[**新增訂用帳戶**體驗](assign-license.md)中所提供的新欄位：
 
-  * **通知電子郵件**：如果您的組織未使用 Azure AD，而且您想要使用登入電子郵件以外的不同電子郵件進行通知，則可以新增電子郵件。
+  * **通知電子郵件**：如果您的組織未使用 Azure AD，且您想要使用登入電子郵件以外的不同電子郵件進行通知，則可以新增電子郵件。
 
     ![新增通知電子郵件地址](media/add-new-subscriber-notification-email.png)
 
@@ -56,7 +56,7 @@ ms.locfileid: "49927225"
 
     ![將您自己的參考資訊新增至每個訂用帳戶](media/add-subscriber-reference-notes.png)
 
-* [**重新傳送指派電子郵件**](resend-assignment-email.md)：以您想要重新傳送的次數，再度將通知電子郵件傳送給訂閱者清單上的所有人。
+* [**重新傳送指派電子郵件**](resend-assignment-email.md)：以您想要重新傳送的次數，再次將通知電子郵件傳送給訂閱者清單上的所有人。
 
   ![您可隨時重新傳送啟用電子郵件給任何使用者或多位使用者](media/resend-subscriber-activation-emails.png)
 

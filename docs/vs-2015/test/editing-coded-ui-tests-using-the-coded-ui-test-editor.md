@@ -1,14 +1,9 @@
 ---
 title: 使用自動程式碼 UI 測試編輯器來編輯自動程式碼 UI 測試 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e25ce519510f9b003784806bf6055b19c11ba285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951253"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793759"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式化 UI 測試編輯器，編輯自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ ms.locfileid: "49951253"
 9. [全部尋找](#CodedUITestEditor_LocateDecendants) 可協助您驗證應用程式控制項的控制項屬性和重大變更。  
   
 ## <a name="how-do-i-do-this"></a>我要怎麼做？  
- 在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中，開啟附屬於您自動程式碼 UI 測試專案中自動程式碼 UI 測試的 UIMap.uitest 檔案，將在自動程式碼 UI 測試編輯器中自動顯示自動程式碼 UI 測試。 下列程序描述如何使用編輯器的工具列和捷徑功能表，找出並編輯您的測試方法、UI 動作的屬性及控制項。  
+ 在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中，開啟附屬於您自動程式碼 UI 測試專案中自動程式碼 UI 測試的 UIMap.uitest 檔案，將在自動程式碼 UI 測試編輯器中自動顯示自動程式碼 UI 測試。 下列程序描述如何使用編輯器的工具列和捷徑功能表，找出並編輯您的測試方法、UI 動作的屬性及控制項。  
   
 ## <a name="open-a-coded-ui-test"></a>開啟自動程式碼 UI 測試  
  您可以使用自動程式碼 UI 測試編輯器，檢視和編輯 Visual C# 和 Visual Basic 型自動程式碼 UI 測試。  
@@ -80,7 +75,7 @@ ms.locfileid: "49951253"
   
  若要修改 UI 動作的屬性，請在 [ **UI 動作** ] 窗格中，展開包含您想要編輯其屬性之 UI 動作的測試方法，選取 UI 動作，然後使用 [屬性] 視窗修改屬性。  
   
- 例如，如果伺服器無法使用，而且您有一個與 Web 瀏覽器建立關聯的 UI 動作，其說明 **移至網頁 <http://Contoso1/default.aspx’>'**，則您可以將 URL 變更為 `‘http://Contoso2/default.aspx’`。  
+ 比方說，如果伺服器無法使用，且您有一個與網頁瀏覽器建立關聯的 UI 動作，其說明**移至網頁 ‘<http://Contoso1/default.aspx’>**，則可以將 URL 變更為 `‘http://Contoso2/default.aspx’`。  
   
  ![控制項屬性](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 編輯控制項屬性  
@@ -125,7 +120,7 @@ ms.locfileid: "49951253"
  *我還應該知道什麼？*  
  **重要問題**  
   
-- ![注意圖示](../test/media/caution.gif "注意") **警告：** 分割方法時，如果您仍然想要併入那些 UI 動作，則必須將任何呼叫現有方法的程式碼修改為同時也呼叫您即將建立的新方法。 當您分割方法時，Microsoft Visual Studio 對話方塊隨即顯示。 它會警告您，必須將任何呼叫現有方法的程式碼修改為同時也呼叫您即將建立的新方法。 選擇 [ **是**]。  
+- ![注意圖示](../test/media/caution.gif "注意")**警告：** 分割方法時，如果您仍然想要併入那些 UI 動作，則必須將任何呼叫現有方法的程式碼修改為同時也呼叫您即將建立的新方法。 當您分割方法時，Microsoft Visual Studio 對話方塊隨即顯示。 它會警告您，必須將任何呼叫現有方法的程式碼修改為同時也呼叫您即將建立的新方法。 選擇 [ **是**]。  
   
   **祕訣**  
   
@@ -149,7 +144,7 @@ ms.locfileid: "49951253"
  *我還應該知道什麼？*  
  **重要問題**  
   
-- ![注意圖示](../test/media/caution.gif "注意") **警告：** 一旦移動方法，便無法再使用自動程式碼 UI 測試編輯器來編輯方法。 您必須使用 [程式碼編輯器] 加入及維護自訂程式碼。 當您移動方法時，Microsoft Visual Studio 對話方塊隨即顯示。 它會警告此方法將從 UIMap.uitest 檔案移至 UIMap.cs 或 UIMap.vb 檔案，而且您將無法再使用 [自動程式碼 UI 測試編輯器] 編輯此方法。 選擇 [ **是**]。  
+- ![注意圖示](../test/media/caution.gif "注意")**警告：** 一旦移動方法，便無法再使用 [自動程式化 UI 測試編輯器] 來編輯方法。 您必須使用 [程式碼編輯器] 加入及維護自訂程式碼。 當您移動方法時，Microsoft Visual Studio 對話方塊隨即顯示。 它會警告此方法將從 UIMap.uitest 檔案移至 UIMap.cs 或 UIMap.vb 檔案，而且您將無法再使用 [自動程式碼 UI 測試編輯器] 編輯此方法。 選擇 [ **是**]。  
   
   **祕訣**  
   
@@ -167,7 +162,7 @@ ms.locfileid: "49951253"
  *我還應該知道什麼？*  
  **重要問題**  
   
-- ![注意圖示](../test/media/caution.gif "注意") **警告：** 找出 UI 控制項之前，請確認與測試相關聯的應用程式正在執行。  
+- ![注意圖示](../test/media/caution.gif "注意")**警告：** 找出 UI 控制項之前，請確認與測試相關聯的應用程式正在執行。  
   
   **祕訣**  
   
@@ -185,7 +180,7 @@ ms.locfileid: "49951253"
  *我還應該知道什麼？*  
  **重要問題**  
   
--   ![注意圖示](../test/media/caution.gif "注意") **警告：** 找出 UI 控制項之前，請確認與測試相關聯的應用程式正在執行。  
+-   ![注意圖示](../test/media/caution.gif "注意")**警告：** 找出 UI 控制項之前，請確認與測試相關聯的應用程式正在執行。  
   
 ##  <a name="CodedUITestEditor_InsertDelay"></a> 在 UI 動作之前插入延遲  
  有時候，您可能想要指示測試等待特定事件發生 (例如出現視窗、進度列消失等)。 使用自動程式碼 UI 測試編輯器，您可以在 UI 動作之前插入延遲來完成此作業。 您可以指定您想要延遲的秒數。  
@@ -210,7 +205,7 @@ ms.locfileid: "49951253"
 ## <a name="external-resources"></a>外部資源  
   
 ### <a name="guidance"></a>指引  
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [測試 for Continuous Delivery with Visual Studio 2012 – 第 2 章：單元測試測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ### <a name="faq"></a>常見問題集  
  [自動程式碼 UI 測試常見問題集 - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
@@ -220,12 +215,9 @@ ms.locfileid: "49951253"
 ### <a name="forum"></a>論壇  
  [Visual Studio 使用者介面自動化測試 (包括 CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [建立資料驅動自動程式碼 UI 測試](../test/creating-a-data-driven-coded-ui-test.md)   
  [從現有的動作記錄產生自動程式化 UI 測試](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-
-
-

@@ -1,8 +1,6 @@
 ---
 title: '&lt;請為 PackageFiles&gt;項目 （啟動載入器） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -14,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84451a90e316a98a9998e1a64e68a72668bd4781
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3a51984484f2120bd853e90b3dabff6928c2dce1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813761"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958742"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;請為 PackageFiles&gt;項目 （啟動載入器）
 `PackageFiles`項目包含`PackageFile`項目，定義執行的安裝套件`Command`項目。  
@@ -43,7 +41,7 @@ ms.locfileid: "49813761"
 </PackageFiles>  
 ```  
 
-## <a name="elements-and-attributes"></a>項目和屬性  
+## <a name="elements-and-attributes"></a>元素和屬性  
  `PackageFiles` 項目具有下列屬性。  
 
 |屬性|描述|  
@@ -58,7 +56,7 @@ ms.locfileid: "49813761"
 
 | 屬性 | 描述 |
 |---------------| - |
-| `Name` | 必要。 封裝檔案的名稱。 這是名稱，`Command`它定義所在的套件會安裝的條件時，會參考項目。 此值也會用到索引鍵`Strings`資料表，以擷取這類工具的當地語系化的名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用來描述套件。 |
+| `Name` | 必要項。 封裝檔案的名稱。 這是名稱，`Command`它定義所在的套件會安裝的條件時，會參考項目。 此值也會用到索引鍵`Strings`資料表，以擷取這類工具的當地語系化的名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用來描述套件。 |
 | `HomeSite` | 選擇性。 在遠端伺服器上，如果它不會包含安裝程式封裝的位置。 |
 | `CopyOnBuild` | 選擇性。 指定啟動載入器是否應該在建置階段複製到磁碟上的封裝檔案。 預設值為 true。 |
 | `PublicKey` | 加密的套件的憑證簽署者的公開金鑰。 需要`HomeSite`使用; 否則為選擇性。 |
@@ -79,4 +77,4 @@ ms.locfileid: "49813761"
 ## <a name="see-also"></a>另請參閱  
  [\<產品 > 項目](../deployment/product-element-bootstrapper.md)   
  [\<封裝 > 項目](../deployment/package-element-bootstrapper.md)   
- [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)
+ [產品和套件結構描述參考](../deployment/product-and-package-schema-reference.md)

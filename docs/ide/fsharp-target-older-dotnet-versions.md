@@ -2,19 +2,18 @@
 title: 針對 F# 以舊版 .NET Framework 為目標
 description: 了解在 Visual Studio 中使用 F# 時，如何以舊版 .NET Framework 為目標。
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f5ef4e8b46681cc102a6678fcd4cb38f3e6f069
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1b347a5a2ef2ef9e82b65c768b4f8ec331c912d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888071"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942072"
 ---
 # <a name="target-older-versions-of-net-f"></a>以舊版 .NET 為目標 (F#)
 

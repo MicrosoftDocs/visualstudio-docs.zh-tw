@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791e76b462a7ae12ac11b9eb5f33c94baff49888
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: afb66ea504a51a726b1645b0886cf19f1d0ae940
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919569"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981346"
 ---
 # <a name="core-interfaces"></a>核心介面
 下列介面會擴充偵錯工具所使用的核心介面[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]。  
@@ -27,7 +27,7 @@ ms.locfileid: "53919569"
 
 - [內容](#Contexts)  
 
-- [核心伺服器](#CoreServer)  
+- [Core Server](#CoreServer)  
 
 - [偵錯引擎](#DebugEngines)  
 
@@ -93,7 +93,7 @@ ms.locfileid: "53919569"
 |---------------|--------------------|-----------------|  
 |[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|DE|表示程式碼指示的開始位置。|  
 |[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)|DE|擴充[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)介面，可讓模組和處理程序介面擷取。|  
-|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS DE|表示文件中的位置。|  
+|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, DE|表示文件中的位置。|  
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|表示要在其中評估運算式的內容。|  
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|代表記憶體位元組的集合中的起始位置。|  
 |[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|表示在中斷點或例外狀況的堆疊框架內容。|  
@@ -127,12 +127,12 @@ ms.locfileid: "53919569"
 |---------------|--------------------|-----------------|  
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|DE 傳送以要求開啟的文件。|  
 |[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|表示從文件的反組譯指令資料流。|  
-|[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VS DE|代表 DE，指定名稱和類別識別碼 (CLSID) 所提供的文件。|  
+|[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VS, DE|代表 DE，指定名稱和類別識別碼 (CLSID) 所提供的文件。|  
 |[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|DE EE|表示偵錯文件的總和檢查碼，並讓傳遞元件之間的總和檢查碼。|  
-|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS DE|表示文件內容，對應至特定的陳述式和程式碼內容的文件內的位置。|  
-|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VS DE|表示文件內的一般位置。|  
+|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, DE|表示文件內容，對應至特定的陳述式和程式碼內容的文件內的位置。|  
+|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VS, DE|表示文件內的一般位置。|  
 |[IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)|VS|表示原始程式檔中的字元位移的位置。|  
-|[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS DE|代表 DE 所提供的文字文件 (衍生自[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md))，提供實際的文字。|  
+|[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS, DE|代表 DE 所提供的文字文件 (衍生自[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md))，提供實際的文字。|  
 |[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|若要指定記憶體中的原始程式檔的變更傳送 DE。|  
 
 ##  <a name="Events"></a> 事件  
@@ -164,7 +164,7 @@ ms.locfileid: "53919569"
 | [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md) | DE | 載入或卸載模組時，由 DE 傳送。 |
 | [IDebugNoSymbolsEvent2](../../../extensibility/debugger/reference/idebugnosymbolsevent2.md) | DE | 訊號[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯工具 UI 來警告使用者符號找不到啟動可執行檔。 |
 | [IDebugOutputStringEvent2](../../../extensibility/debugger/reference/idebugoutputstringevent2.md) | DE | 傳送至 IDE 顯示 DE 的任意字串。 |
-| [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) | VS DE | 傳送埠進行通訊的任何接聽程式連接埠事件。 |
+| [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) | VS, DE | 傳送埠進行通訊的任何接聽程式連接埠事件。 |
 | [IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md) | DE PS | 在建立程序時，由 DE 或連接埠傳送。 |
 | [IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) | DE PS | 處理程序已被終結時傳送 DE 或連接埠。 |
 | [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) | DE PS | 在建立程式時，由 DE 或連接埠傳送。 |
@@ -215,9 +215,9 @@ ms.locfileid: "53919569"
 
 | 介面 | 藉由將 | 描述 |
 | - |----------------| - |
-| [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md) | VS PS | 代表本機電腦上的預設連接埠。 |
+| [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md) | VS, PS | 代表本機電腦上的預設連接埠。 |
 | [IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md) | VS | 可讓要求則會使用 DCOM 的偵錯引擎[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI，請確定防火牆會封鎖遠端偵錯。 |
-| [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) | VS PS | 表示連接埠。 |
+| [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) | VS, PS | 表示連接埠。 |
 | [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) | PS | 傳送埠進行通訊的任何接聽程式連接埠事件。 |
 | [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md) | PS | 表示可以啟動和終止處理序的連接埠。 |
 | [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) | PS | 用來註冊和取消註冊程式與連接埠;可讓以追蹤目前正在偵錯程式的連接埠。 |
@@ -227,7 +227,7 @@ ms.locfileid: "53919569"
 | [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md) | PS | 表示可以保存的連接埠的供應商 （儲存至磁碟） 它所建立的連接埠相關資訊。 |
 | [IDebugPortSupplierDescription2](../../../extensibility/debugger/reference/idebugportsupplierdescription2.md) | PS | 可讓[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI，以顯示內部文字**傳輸資訊**一節**附加至處理序** 對話方塊。 |
 | [IDebugWindowsComputerPort2](../../../extensibility/debugger/reference/idebugwindowscomputerport2.md) | VS | 可讓目標電腦的相關資訊的查詢。 |
-| [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) | VS PS | 列舉型別代表一組連接埠。 |
+| [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) | VS, PS | 列舉型別代表一組連接埠。 |
 | [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) | VS | 代表一組連接埠提供者的列舉型別。 |
 
 ##  <a name="Processes"></a> 處理程序  
@@ -235,8 +235,8 @@ ms.locfileid: "53919569"
 
 |介面|藉由將|描述|  
 |---------------|--------------------|-----------------|  
-|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS，DE|表示執行的電腦的處理序。|  
-|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS，DE|代表積極支援程序偵錯 (用來取代步驟，繼續執行，和執行方法[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面)。|  
+|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, DE|表示執行的電腦的處理序。|  
+|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, DE|代表積極支援程序偵錯 (用來取代步驟，繼續執行，和執行方法[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面)。|  
 |[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|DE PS|在建立程序時，由 DE 或連接埠傳送。|  
 |[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|DE PS|處理程序已被終結時傳送 DE 或連接埠。|  
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|表示必須追蹤哪些工作階段已附加的處理程序。|  

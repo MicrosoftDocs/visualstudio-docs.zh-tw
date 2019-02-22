@@ -1,8 +1,6 @@
 ---
-title: 錯誤： TRANSACT-SQL 執行未經偵錯即結束 |Microsoft Docs
-ms.custom: ''
+title: 錯誤：TRANSACT-SQL 執行未經偵錯即結束 |Microsoft Docs
 ms.date: 11/08/2018
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.sqlde_sql_executed_but_not_debugged
@@ -14,15 +12,15 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0efb83f6b6cbebc255f6f47c30e3934d74de7870
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 17c1854826de2314dfe8124d99f6ec6c8899ee70
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348996"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011217"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>錯誤：Transact-SQL 執行未經偵錯即結束
 
@@ -42,15 +40,15 @@ ms.locfileid: "51348996"
   
   若要更正這個錯誤，您可能需要：  
   
-  - 驗證使用權限設定。 如需詳細資訊，請參閱 <<c0> [ 如何： 設定 SQL Server 權限進行偵錯](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)。  
+  - 驗證使用權限設定。 如需詳細資訊，請參閱[＜How to：設定 SQL Server 權限偵錯](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)。  
   
   - 如果設定正確，請確定 SQL 偵錯作業。  
   
   - 請連絡網路或資料庫管理員。  
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [設定 SQL 偵錯](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [如何： 設定 SQL Server 權限偵錯](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [如何：設定 SQL Server 權限偵錯](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
 - [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)
 - [Remote Debugging](../debugger/remote-debugging.md)

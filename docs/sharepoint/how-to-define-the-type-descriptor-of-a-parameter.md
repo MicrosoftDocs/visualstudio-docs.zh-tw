@@ -10,17 +10,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], parameter types
 - BDC [SharePoint development in Visual Studio], type descriptor
 - Business Data Connectivity service [SharePoint development in Visual Studio], parameter types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1911f9b6a0031c53177ff15815dbb7ad16e4100a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953153"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866788"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>HOW TO：定義參數的型別描述元
   類型描述元包含描述參數資料類型的屬性。 類型描述元可以定義欄位、實體或實體集合。 如需詳細資訊，請參閱 < [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))。  
@@ -95,19 +95,19 @@ ms.locfileid: "53953153"
   
       下列範例會設定的值**TypeName**專案中的類別集合的屬性。  
   
-      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace。` `BdcModel1.Contact，BdcModel1]'  
+      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` `BdcModel1.Contact, BdcModel1]`  
   
    - 若為位於您方案之組件中的類型，完整名稱包含類型的名稱、組件的名稱、版本號碼、文化特性和公開金鑰語彙基元。  
   
       下列範例會設定的值**TypeName**您方案中參考的組件中的型別集合的屬性。  
   
-      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact、 myAssemblyName，版本 version=4.0.0.0，Culture = neutral，publickeytoken=b77a5c561934e089]'  
+      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]`  
   
    - 若為 BDC 物件模型中定義的類型，完整名稱僅包含該類型的命名空間和名稱。  
   
       下列範例會設定的值**TypeName** BDC 物件模型中定義的型別集合的屬性。  
   
-      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]'  
+      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]`  
   
 6. 在 [ **BDC 方法詳細資料**] 視窗中，開啟類型描述元，出現的清單，然後選擇**編輯**。  
   

@@ -1,24 +1,23 @@
 ---
-title: 建立 UI - Blend for Visual Studio
+title: Blend for Visual Studio 功能導覽
 titleSuffix: ''
 ms.date: 07/17/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b44f49c08be44ec16cbd90d06cef96cb091e67f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7886981dd3bc2ed93e987256a906f021e6ea5f2a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934501"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941074"
 ---
-# <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>使用 Blend for Visual Studio 建立 UI
+# <a name="blend-for-visual-studio-overview"></a>Blend for Visual Studio 概觀
 
 Blend for Visual Studio 可協助您設計以 XAML 為基礎的 Windows 及 Web 應用程式。 它提供與 Visual Studio 相同的基本 XAML 設計體驗，並新增可處理動畫和表現方式等進階工作的視覺化設計工具。 如需 Blend 和 Visual Studio之間的比較，請參閱[在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)。
 
@@ -60,7 +59,7 @@ Blend for Visual Studio 是 Visual Studio 的元件。 若要安裝 Blend，請�
 |![格線模式與清單模式](../designers/media/b1_2.png)|**格線模式與清單模式**：切換資產的 [格線模式] 檢視與 [清單模式] 檢視。|
 |![資產分類](../designers/media/b1_3.png)|**資產分類**：按一下分類或子分類可檢視該分類中的資產清單。|
 |![樣式](../designers/media/b1_4.png)|**樣式**：顯示資源字典中所包含的所有樣式。|
-|![說明](../designers/media/b1_5.png)|**描述**：檢視所選的資產分類或子分類的描述。|
+|![描述](../designers/media/b1_5.png)|**描述**：檢視所選的資產分類或子分類的描述。|
 
 ## <a name="tour-of-the-objects-and-timeline-panel"></a>[物件與時間軸] 面板導覽
 

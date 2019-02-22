@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: affb6fac59413fc80f07c6e5ff238b4f9d56ee33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47ee32c78588978f009c29f331fda90632cec42e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858312"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957477"
 ---
 # <a name="legacy-language-service-interfaces"></a>舊版語言服務介面
 針對任何特定的程式設計語言，可以有只有一個執行個體的語言服務一次。 不過，單一語言服務可以提供多個編輯器。  

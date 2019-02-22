@@ -1,21 +1,20 @@
 ---
 title: 使用 IntelliTest 為程式碼產生單元測試
 ms.date: 10/05/2015
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1d7c7886e407ab7f8151ecb8f79a7eb4090aed89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9edda9d12ad5dfea1e65bd0356010d97af6dc3ac
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958822"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317415"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 為程式碼產生單元測試
 
@@ -27,7 +26,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
 **建立 IntelliTest** 和**執行 IntelliTest** 功能表命令︰
 
-* 只提供於 Visual Studio 2015 及更新版本的 Enterprise Edition。
+* 只適用於 Visual Studio 2015 及更新版本的 Enterprise Edition。
 
 * 只支援以 .NET Framework 為目標的 C# 程式碼。
 
@@ -158,4 +157,4 @@ Visual Studio Marketplace 也提供測試架構延伸模組︰
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>問：我可以進一步了解如何產生測試嗎？
 
-**答：** 可以，如需高階概觀，請閱讀這篇[部落格文章](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)。
+**答：** 可以，如需高階概觀，請閱讀這篇[部落格文章](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)。

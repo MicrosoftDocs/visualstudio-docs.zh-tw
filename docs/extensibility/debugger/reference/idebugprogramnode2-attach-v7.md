@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::Attach_V7 |Microsoft Docs
+title: IDebugProgramNode2::Attach_V7 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IDebugProgramNode2::Attach
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0e7726786d3488cc4578dbc6efd016510a3d52d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42f269a62671864f3da2c0ca00c56a43a4ab9cba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935433"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975981"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 

@@ -1,8 +1,6 @@
 ---
-title: 錯誤： 安全性檢查失敗，因為 IIS Admin Service 未回應 |Microsoft Docs
-ms.custom: ''
+title: 錯誤：安全性檢查失敗，因為 IIS Admin Service 未回應 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.iis_not_responding
@@ -15,22 +13,22 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f307e84f5267036e480ab1ec8118c32ee632bff
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 21329a89e5ca6971143de9cf76d357be0f86e9ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058057"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992590"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>錯誤：安全性檢查失敗，因為 IIS 管理服務沒有回應
-當 IIS 管理服務沒有回應時，就會發生這個錯誤。 這通常表示 IIS 安裝有問題。 首先，請確認服務正在執行使用**Services**工具**系統管理工具**。  
+當 IIS 管理服務沒有回應時，就會發生這個錯誤。 這通常表示 IIS 安裝有問題。 首先，確認使用 [系統管理工具] 的 [服務] 工具驗證服務是否在執行。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   重新安裝 IIS，使用**新增或移除程式**控制台。  
+-   使用 [新增或移除程式] 控制台來重新安裝 IIS。  
   
 -   -或-  
   
@@ -46,5 +44,5 @@ ms.locfileid: "37058057"
   
      如需其他資訊，請參閱 IIS 文件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -1,7 +1,6 @@
 ---
 title: 資料繫結至 Office 方案中的控制項
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +15,15 @@ helpviewer_keywords:
 - controls, data binding
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc5136b3e5c5ea09c5574e1fd3ec7ab457181112
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c04ca05c85d36289154c9c62cbac7338ee217fc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898631"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908057"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>資料繫結至 Office 方案中的控制項
   您可以將 Microsoft Office Word 文件或 Microsoft Office Excel 工作表中的 Windows Form 控制項和「主控制項」  (host control) 繫結至資料來源，讓控制項自動顯示資料。 您可以將資料繫結至應用程式層級和文件層級專案中的控制項。  
@@ -52,7 +51,7 @@ ms.locfileid: "53898631"
 ## <a name="complex-data-binding"></a>複雜資料繫結  
  當控制項屬性繫結至多個資料項目時，例如資料表中的多個資料行，便存在複雜資料繫結。 Excel 的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項是唯一支援複雜資料繫結的主控制項。 另外還有許多支援複雜資料繫結的 Windows Form 控制項，例如 <xref:System.Windows.Forms.DataGridView> 控制項。  
   
- 若要執行複雜資料繫結，請將控制項的 `DataSource` 屬性設定為複雜資料繫結所支援的資料來源物件。 例如，<xref:Microsoft.Office.Tools.Excel.ListObject> 控制項的 <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> 屬性可以繫結至資料表中的多個資料行。 資料表中的所有資料會顯示在 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項中，而且當資料表中的資料變更時， <xref:Microsoft.Office.Tools.Excel.ListObject> 也會變更。 如需可用於複雜資料繫結的資料來源的清單，請參閱 < [Windows Form 支援的資料來源](/dotnet/framework/winforms/data-sources-supported-by-windows-forms)。  
+ 若要執行複雜資料繫結，請將控制項的 `DataSource` 屬性設定為複雜資料繫結所支援的資料來源物件。 例如， <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> 控制項的 <xref:Microsoft.Office.Tools.Excel.ListObject> 屬性可以繫結至資料表中的多個資料行。 資料表中的所有資料會顯示在 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項中，而且當資料表中的資料變更時， <xref:Microsoft.Office.Tools.Excel.ListObject> 也會變更。 如需可用於複雜資料繫結的資料來源的清單，請參閱 < [Windows Form 支援的資料來源](/dotnet/framework/winforms/data-sources-supported-by-windows-forms)。  
   
  下列程式碼範例會建立具有兩個 <xref:System.Data.DataSet> 物件的 <xref:System.Data.DataTable> ，並將資料填入其中一個資料表。 然後程式碼會將 <xref:Microsoft.Office.Tools.Excel.ListObject> 繫結至含有資料的資料表。 這是示範 Excel 文件層級專案的範例。  
   

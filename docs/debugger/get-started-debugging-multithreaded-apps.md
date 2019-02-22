@@ -3,7 +3,6 @@ title: 了解如何偵錯多執行緒應用程式
 description: 使用 平行堆疊 和 平行監看式的視窗，在 Visual Studio 中偵錯
 ms.custom: H1HackMay2017
 ms.date: 11/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,25 +12,21 @@ dev_langs:
 helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
-ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6ded522a917dd7207da7731850303535e19fdb
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
-ms.translationtype: MT
+ms.openlocfilehash: 8e30eafdc9a01b126f2a08bb8e4395298f446069
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948981"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155782"
 ---
-# <a name="get-started-debugging-multithreaded-applications"></a>開始偵錯多執行緒應用程式
-Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的使用者介面項目。 本教學課程示範如何使用執行緒標記**平行堆疊** 視窗中，**平行監看式**視窗、 條件式中斷點和篩選中斷點。 完成本教學課程將讓您熟悉 Visual Studio 進行偵錯多執行緒應用程式的功能。
+# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>開始偵錯多執行緒應用程式 (C#，Visual Basic、 c + +)
 
-| | |
-|---------|---------|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171)多執行緒偵錯，顯示類似的步驟。 |
+Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的使用者介面項目。 本教學課程示範如何使用執行緒標記**平行堆疊** 視窗中，**平行監看式**視窗、 條件式中斷點和篩選中斷點。 完成本教學課程將讓您熟悉 Visual Studio 進行偵錯多執行緒應用程式的功能。
 
 下列兩個主題提供有關使用其他的多執行緒偵錯工具的其他資訊：
 
@@ -107,39 +102,37 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
     ```
 
     ```C++
-    #include "stdafx.h"
+    #include "pch.h"
     #include <thread>
     #include <iostream>
     #include <vector>
-
-    using namespace;
 
     int count = 0;
 
     void doSomeWork() {
 
-        cout << "The doSomeWork function is running on another thread." << endl;
+        std::cout << "The doSomeWork function is running on another thread." << std::endl;
         int data = count++;
         // Pause for a moment to provide a delay to make
         // threads more apparent.
-        this_thread::sleep_for(chrono::seconds(3));
-        cout << "The function called by the worker thread has ended." << endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+        std::cout << "The function called by the worker thread has ended." << std::endl;
     }
 
     int main() {
-        vector<thread> threads;
+        std::vector<std::thread> threads;
 
         for (int i = 0; i < 10; ++i) {
 
-            threads.push_back(thread(doSomeWork));
-            cout << "The Main() thread calls this after starting the new thread" << endl;
-        }
+            threads.push_back(std::thread(doSomeWork));
+            std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
+    }
 
-        for (auto& thread : threads) {
-            thread.join();
-        }
+    for (auto& thread : threads) {
+        thread.join();
+    }
 
-        return 0;
+    return 0;
     }
     ```
 
@@ -194,7 +187,9 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
     End Class
     ```
   
-7.  在 **檔案**功能表上，選取**全部儲存**。  
+7.  在 [檔案] 功能表中，選取 [全部儲存]。  
+
+8. (僅限 Visual Basic)在 方案總管 （右窗格），以滑鼠右鍵按一下專案節點，選擇**屬性**。 底下**應用程式**索引標籤中變更**啟始物件**來**簡單**。
   
 ## <a name="debug-the-multithreaded-app"></a>偵錯多執行緒應用程式  
   
@@ -206,8 +201,8 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
     ```  
   
     ```C++  
-    this_thread::sleep_for(chrono::seconds(3));
-    cout << "The function called by the worker thread has ended." << endl; 
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    std::cout << "The function called by the worker thread has ended." << std::endl; 
     ```  
 
     ```VB
@@ -215,7 +210,7 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
     Console.WriteLine()
     ```
 
-1. 以滑鼠左鍵按一下中的左側裝訂邊上`Thread.Sleep`或`this_thread::sleep_for`陳述式來插入新的中斷點。  
+1. 以滑鼠左鍵按一下中的左側裝訂邊上`Thread.Sleep`或`std::this_thread::sleep_for`陳述式來插入新的中斷點。  
   
     在裝訂邊上，紅色圓圈會指示此位置已設定中斷點。 
   
@@ -343,7 +338,8 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
     > [!NOTE]
     > 當您進入偵錯工具時，會執行所有執行緒。 不過，偵錯工具不會中斷其他執行緒上的程式碼中，除非其中一個其他執行緒叫用中斷點。 
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
+
 [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
 [如何：在偵錯時切換到另一個執行緒](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
 [如何： 使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)  

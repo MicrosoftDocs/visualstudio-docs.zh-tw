@@ -3,29 +3,28 @@ title: 使用 Visual Studio 建立您的第一個 C# 主控台應用程式
 titleSuffix: ''
 description: 了解如何使用 C# 在 Visual Studio 中逐步建立簡單的 Hello World 主控台應用程式。
 ms.date: 09/21/2018
-ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b36051f3a316f2b00ebdd08110f22346a910512
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 12a08aa0e7509d04b522b74362347bc996e02946
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853914"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923730"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>快速入門：使用 Visual Studio 建立您的第一個 C# 主控台應用程式
 
 在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立在主控台上執行的簡單 C# 應用程式。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -49,7 +48,7 @@ ms.locfileid: "53853914"
 
 ## <a name="create-the-application"></a>建立應用程式
 
-在您選取 C# 專案範本並命名專案之後，Visual Studio 會為您建立簡單的 "Hello World" 應用程式。 
+在您選取 C# 專案範本並命名專案之後，Visual Studio 會為您建立簡單的 "Hello World" 應用程式。
 
 (它的做法是呼叫 <xref:System.Console.WriteLine%2A> 方法，以在主控台視窗中顯示常值字串 "Hello World!" 。)
 

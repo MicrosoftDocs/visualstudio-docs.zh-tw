@@ -1,7 +1,6 @@
 ---
 title: HOW TO：將類別圖表新增至專案 (類別設計工具)
 ms.date: 05/08/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df2047109ebd89b7dee621373bf30b9f55747a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26ac40b3ae84aad689df9884ad8453860f91d971
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866448"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919712"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>HOW TO：將類別圖表新增至專案
 

@@ -137,7 +137,7 @@
         },
         {
             "source_path": "docs/code-quality/measuring-complexity-and-maintainability-of-managed-code.md",
-            "redirect_url": "/visualstudio/code-quality/code-metrics-values/",
+            "redirect_url": "/visualstudio/code-quality/code-metrics-values",
             "redirect_document_id": false
         },
         {
@@ -333,6 +333,21 @@
         {
             "source_path": "docs/data-tools/saving-data.md",
             "redirect_url": "/visualstudio/data-tools/save-data-back-to-the-database",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/debugger/debugger-overview.md",
+            "redirect_url": "/visualstudio/debugger/what-is-debugging",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/debugger/how-to-debug-com-servers.md",
+            "redirect_url": "/visualstudio/debugger/com-server-and-container-debugging",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/debugger/sdi-server-applications.md",
+            "redirect_url": "/visualstudio/debugger/com-server-and-container-debugging",
             "redirect_document_id": false
         },
         {
@@ -677,12 +692,27 @@
         },
         {
             "source_path": "docs/debugger/first-look-at-the-debugger.md",
-            "redirect_url": "/visualstudio/debugger/getting-started-with-the-debugger",
+            "redirect_url": "/visualstudio/debugger/debugger-feature-tour",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/debugger/debugger-basics.md",
-            "redirect_url": "/visualstudio/debugger/getting-started-with-the-debugger",
+            "redirect_url": "/visualstudio/debugger/debugger-feature-tour",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/debugger/getting-started-with-the-debugger-vb.md",
+            "redirect_url": "/visualstudio/get-started/visual-basic/tutorial-debugger",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/debugger/getting-started-with-the-debugger.md",
+            "redirect_url": "/visualstudio/debugger/debugger-feature-tour",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/debugger/more-debugging-features.md",
+            "redirect_url": "/visualstudio/debugger/debugger-feature-tour",
             "redirect_document_id": false
         },
         {
@@ -807,7 +837,7 @@
         },
         {
             "source_path": "docs/extensibility/lightweight-solution-load-extension-impact.md",
-            "redirect_url": "/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk/",
+            "redirect_url": "/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk",
             "redirect_document_id": false
         },
         {
@@ -907,7 +937,7 @@
         },
         {
             "source_path": "docs/ide/advanced-search-operators-in-search-expressions.md",
-            "redirect_url": "/visualstudio/ide/logical-operators-in-search-expressions",
+            "redirect_url": "/visualstudio/help-viewer/logical-operators-search-expressions",
             "redirect_document_id": false
         },
         {
@@ -967,7 +997,7 @@
         },
         {
             "source_path": "docs/ide/full-text-search-tips.md",
-            "redirect_url": "/visualstudio/ide/how-to-search-for-topics",
+            "redirect_url": "/visualstudio/help-viewer/find-topics",
             "redirect_document_id": false
         },
         {
@@ -1042,7 +1072,7 @@
         },
         {
             "source_path": "docs/ide/how-to-customize-search-results.md",
-            "redirect_url": "/visualstudio/ide/how-to-search-for-topics",
+            "redirect_url": "/visualstudio/help-viewer/find-topics",
             "redirect_document_id": false
         },
         {
@@ -1087,7 +1117,7 @@
         },
         {
             "source_path": "docs/ide/index-search-tips.md",
-            "redirect_url": "/visualstudio/ide/how-to-find-topics-in-the-index",
+            "redirect_url": "/visualstudio/help-viewer/find-topics-index",
             "redirect_document_id": false
         },
         {
@@ -1097,12 +1127,12 @@
         },
         {
             "source_path": "docs/ide/locate-information.md",
-            "redirect_url": "/visualstudio/ide/microsoft-help-viewer",
+            "redirect_url": "/visualstudio/help-viewer/overview",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/manage-the-help-viewer-window.md",
-            "redirect_url": "/visualstudio/ide/customize-the-help-viewer",
+            "redirect_url": "/visualstudio/help-viewer/customize",
             "redirect_document_id": false
         },
         {
@@ -1117,7 +1147,7 @@
         },
         {
             "source_path": "docs/ide/optimize-solution-loading-in-visual-studio.md",
-            "redirect_url": "/visualstudio/ide/optimize-visual-studio-startup-time/",
+            "redirect_url": "/visualstudio/ide/optimize-visual-studio-startup-time",
             "redirect_document_id": false
         },
         {
@@ -1182,7 +1212,7 @@
         },
         {
             "source_path": "docs/ide/retain-topics-for-later-use.md",
-            "redirect_url": "/visualstudio/ide/microsoft-help-viewer",
+            "redirect_url": "/visualstudio/help-viewer/overview",
             "redirect_document_id": false
         },
         {
@@ -1207,12 +1237,12 @@
         },
         {
             "source_path": "docs/ide/targeting-a-specific-dotnet-framework-version.md",
-            "redirect_url": "/visualstudio/ide/visual-studio-multi-targeting-overview/",
+            "redirect_url": "/visualstudio/ide/visual-studio-multi-targeting-overview",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/troubleshooting-the-help-viewer.md",
-            "redirect_url": "/visualstudio/ide/microsoft-help-viewer",
+            "redirect_url": "/visualstudio/help-viewer/overview",
             "redirect_document_id": false
         },
         {
@@ -1621,6 +1651,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/scripting/javascript/javascript-in-vs-2017.md",
+            "redirect_url": "/visualstudio/javascript/javascript-in-vs-2017",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/nodejs/tutorial-nodejs.md",
             "redirect_url": "/visualstudio/javascript/tutorial-nodejs",
             "redirect_document_id": false
@@ -1781,6 +1816,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/python/azure-sdk-for-python.md",
+            "redirect_url": "/python/azure",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/python/code-editing.md",
             "redirect_url": "/visualstudio/python/editing-python-code-in-visual-studio",
             "redirect_document_id": false
@@ -1888,11 +1928,6 @@
         {
             "source_path": "docs/python/getting-started.md",
             "redirect_url": "/visualstudio/python/tutorial-working-with-python-in-visual-studio-step-01-create-project",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/python/index.md",
-            "redirect_url": "/visualstudio/python/overview-of-python-tools-for-visual-studio",
             "redirect_document_id": false
         },
         {
@@ -2192,7 +2227,7 @@
         },
         {
             "source_path": "docs/test/testing-store-apps-with-visual-studio.md",
-            "redirect_url": "/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio/",
+            "redirect_url": "/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio",
             "redirect_document_id": false
         },
         {
@@ -4033,7 +4068,7 @@
        },
        {
            "source_path":  "scripting-docs/javascript/reference/setuint32-method-dataview.md",
-           "redirect_url":  "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/DataView/setuint32.md",
+           "redirect_url":  "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/DataView/setuint32",
            "redirect_document_id":  false
        },
        {
@@ -6273,7 +6308,7 @@
        },
        {
            "source_path":  "scripting-docs/javascript/reference/number-property-error-javascript.md",
-           "redirect_url":  "https://developer.mozilla.org/docs/Web/JavaScript/Microsoft_JavaScript_extensions/Error.number.md",
+           "redirect_url":  "https://developer.mozilla.org/docs/Web/JavaScript/Microsoft_JavaScript_extensions/Error.number",
            "redirect_document_id":  false
        },
        {
@@ -6659,7 +6694,7 @@
         },
         {
             "source_path": "docs/what-s-new-in-visual-studio-2015.md",
-            "redirect_url": "/visualstudio/ide/whats-new-in-visual-studio",
+            "redirect_url": "/visualstudio/ide/whats-new-visual-studio-2019",
             "redirect_document_id": false
         },
         {
@@ -6675,6 +6710,11 @@
         {
             "source_path": "mac/benefits-vsmac-over-xs.md",
             "redirect_url": "/visualstudio/mac/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "mac/activation.md",
+            "redirect_url": "/visualstudio/mac/enable-subscription",
             "redirect_document_id": false
         },
         {
@@ -6814,7 +6854,7 @@
         },
         {
             "source_path": "docs/vs-2015/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-%2215%22.md",
-            "redirect_url": "/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017?view=vs-2015",
+            "redirect_url": "/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017",
             "redirect_document_id": false
         },
         {
@@ -6834,7 +6874,7 @@
         },
         {
             "source_path": "docs/cross-platform/learn-about-mobile-development-with-xamarin.md",
-            "redirect_url": "/xamarin/cross-platform/get-started/introduction-to-mobile-development/",
+            "redirect_url": "/xamarin/cross-platform/get-started/introduction-to-mobile-development",
             "redirect_document_id": false
         },
         {
@@ -6863,8 +6903,303 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "docs/javascript/index.md",
-            "redirect_url": "/visualstudio/javascript/quickstart-vuejs-with-nodejs",
+            "source_path": "docs/docker/vs-azure-tools-docker-machine-azure-config.md",
+            "redirect_url": "/visualstudio/docker/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md",
+            "redirect_url": "/visualstudio/get-started/csharp/tutorial-wpf",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/tutorial-csharp-aspnet-core.md",
+            "redirect_url": "/visualstudio/get-started/csharp/tutorial-aspnet-core",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/tutorial-csharp-console.md",
+            "redirect_url": "/visualstudio/get-started/csharp/tutorial-console",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/tutorial-visual-basic-console.md",
+            "redirect_url": "/visualstudio/get-started/visual-basic/tutorial-console",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/quickstart-editor.md",
+            "redirect_url": "/visualstudio/get-started/tutorial-editor",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/quickstart-projects-solutions.md",
+            "redirect_url": "/visualstudio/get-started/tutorial-projects-solutions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/test/how-to-analyze-errors-using-the-counters-panel.md",
+            "redirect_url": "/visualstudio/test/quickstart-create-a-load-test-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/test/sample-project-for-creating-a-diagnostic-data-adapter.md",
+            "redirect_url": "/visualstudio/test/quickstart-create-a-load-test-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md",
+            "redirect_url": "/visualstudio/test/quickstart-create-a-load-test-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/test/how-to-analyze-threshold-violations-using-the-counters-panel.md",
+            "redirect_url": "/visualstudio/test/quickstart-create-a-load-test-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/test/how-to-install-a-custom-diagnostic-data-adapter.md",
+            "redirect_url": "/visualstudio/test/quickstart-create-a-load-test-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/test/how-to-specify-how-frequently-test-logs-are-saved.md",
+            "redirect_url": "/visualstudio/test/quickstart-create-a-load-test-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/test/how-to-configure-load-tests-to-collect-full-details.md",
+            "redirect_url": "/visualstudio/test/quickstart-create-a-load-test-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/test/how-to-prevent-time-outs-for-diagnostic-data-adapters.md",
+            "redirect_url": "/visualstudio/test/quickstart-create-a-load-test-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/test/counters-panel-in-load-test-analyzer.md",
+            "redirect_url": "/visualstudio/test/quickstart-create-a-load-test-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/test/how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer.md",
+            "redirect_url": "/visualstudio/test/quickstart-create-a-load-test-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md",
+            "redirect_url": "/visualstudio/test/quickstart-create-a-load-test-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/test/how-to-add-comments-on-a-completed-load-test.md",
+            "redirect_url": "/visualstudio/test/quickstart-create-a-load-test-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/test/how-to-specify-plot-options-for-graphing-counters.md",
+            "redirect_url": "/visualstudio/test/quickstart-create-a-load-test-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/vs-2015/install/install-visual-studio-15-preview-5.md",
+            "redirect_url": "/visualstudio/install/install-visual-studio",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/vs-2015/install/modify-visual-studio-15-preview-5.md",
+            "redirect_url": "/visualstudio/install/modify-visual-studio",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/vs-2015/misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md",
+            "redirect_url": "/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/vs-2015/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md",
+            "redirect_url": "/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017?view=vs-2017",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/vs-2015/misc/application-insights-for-visual-studio-online.md",
+            "redirect_url": "/azure/application-insights/app-insights-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/vs-2015/extensibility/visual-studio-template-manifest-schema-reference.md",
+            "redirect_url": "/visualstudio/extensibility/visual-studio-template-manifest-schema-reference?view=vs-2017",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/visual-studio-ide.md",
+            "redirect_url": "/visualstudio/get-started/visual-studio-ide",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "subscriptions/vs-priority-support.md",
+            "redirect_url": "https://social.msdn.microsoft.com/Forums/vstudio/en-US/home",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/accessibility-features-of-the-help-viewer.md",
+            "redirect_url": "/visualstudio/help-viewer/accessibility-features",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/help-viewer-administrator-guide.md",
+            "redirect_url": "/visualstudio/help-viewer/administrator-guide",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/help-content-manager-overrides.md",
+            "redirect_url": "/visualstudio/help-viewer/behavior-overrides",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/command-line-arguments-for-the-help-content-manager.md",
+            "redirect_url": "/visualstudio/help-viewer/command-line-arguments",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/customize-the-help-viewer.md",
+            "redirect_url": "/visualstudio/help-viewer/customize",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/how-to-find-topics-in-the-index.md",
+            "redirect_url": "/visualstudio/help-viewer/find-topics-index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/how-to-find-topics-in-the-table-of-contents.md",
+            "redirect_url": "/visualstudio/help-viewer/find-topics-toc",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/how-to-search-for-topics.md",
+            "redirect_url": "/visualstudio/help-viewer/find-topics",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/install-and-manage-local-content.md",
+            "redirect_url": "/visualstudio/help-viewer/install-manage-local-content",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/microsoft-help-viewer-installation.md",
+            "redirect_url": "/visualstudio/help-viewer/installation",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/logical-operators-in-search-expressions.md",
+            "redirect_url": "/visualstudio/help-viewer/logical-operators-search-expressions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/microsoft-help-viewer.md",
+            "redirect_url": "/visualstudio/help-viewer/overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/shortcut-keys-help-viewer.md",
+            "redirect_url": "/visualstudio/help-viewer/shortcut-keys",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/reference/synchronized-settings-environment-options-dialog-box.md",
+            "redirect_url": "/visualstudio/ide/reference/accounts-environment-options-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/extensibility/buildprojectonload-visual-studio-templates.md",
+            "redirect_url": "/visualstudio/extensibility/buildonload-visual-studio-templates",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/reference/resetskippkgs-devenv-exe.md",
+            "redirect_url": "/visualstudio/extensibility/devenv-command-line-switches-for-vspackage-development",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/reference/setup-devenv-exe.md",
+            "redirect_url": "/visualstudio/extensibility/devenv-command-line-switches-for-vspackage-development",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/whats-new-in-visual-studio.md",
+            "redirect_url": "/visualstudio/ide/whats-new-visual-studio-2017",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/whats-new-visual-studio.md",
+            "redirect_url": "/visualstudio/ide/whats-new-visual-studio-2019",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/docker/vs-azure-tools-docker-edit-and-refresh.md",
+            "redirect_url": "/visualstudio/containers/vs-azure-tools-docker-edit-and-refresh",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/docker/docker-tools.md",
+            "redirect_url": "/visualstudio/containers/docker-tools",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/docker/vs-azure-tools-docker-hosting-web-apps-in-docker.md",
+            "redirect_url": "/visualstudio/containers/vs-azure-tools-docker-hosting-web-apps-in-docker",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/docker/vs-azure-tools-docker-setup.md",
+            "redirect_url": "/visualstudio/containers/vs-azure-tools-docker-setup",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/docker/vs-azure-tools-docker-troubleshooting-docker-errors.md",
+            "redirect_url": "/visualstudio/containers/vs-azure-tools-docker-troubleshooting-docker-errors",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md",
+            "redirect_url": "/visualstudio/ide/globalizing-and-localizing-applications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/globalizing-applications.md",
+            "redirect_url": "/visualstudio/ide/globalizing-and-localizing-applications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/hierarchical-organization-of-resources-for-localization.md",
+            "redirect_url": "/visualstudio/ide/globalizing-and-localizing-applications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/introduction-to-international-applications-based-on-the-dotnet-framework.md",
+            "redirect_url": "/visualstudio/ide/globalizing-and-localizing-applications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/localizing-applications.md",
+            "redirect_url": "/visualstudio/ide/globalizing-and-localizing-applications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/neutral-resources-languages-for-localization.md",
+            "redirect_url": "/visualstudio/ide/globalizing-and-localizing-applications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/security-and-localized-satellite-assemblies.md",
+            "redirect_url": "/visualstudio/ide/globalizing-and-localizing-applications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/version-numbers-for-main-and-localized-satellite-assemblies.md",
+            "redirect_url": "/visualstudio/ide/globalizing-and-localizing-applications",
             "redirect_document_id": false
         }
     ]

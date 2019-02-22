@@ -1,7 +1,6 @@
 ---
 title: CA1039:清單為強類型
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1039
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5ac366c4-fd87-4d5c-95d5-f755510c8e5c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 710e02cdafb8712cff4aabeb0dd37f3e1a4d34b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d11afe8a3ea8fcae971461b8e33fc4771b74eb75
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848989"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947467"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039:清單為強類型
 

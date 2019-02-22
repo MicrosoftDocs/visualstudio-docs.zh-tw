@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo2::GetCount |Microsoft Docs
+title: IEnumDebugPropertyInfo2::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9b0b3ce6-08cb-46fd-a6d9-92b36e60da19
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93dc5ce80395741b9022afbddc3624fb635336d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f182e6009358704c1f40c64017541d120a19be30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888656"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990091"
 ---
 # <a name="ienumdebugpropertyinfo2getcount"></a>IEnumDebugPropertyInfo2::GetCount
 列舉中傳回的項目數。  

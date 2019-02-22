@@ -1,7 +1,6 @@
 ---
 title: HOW TO：將類別圖表匯出為影像 (類別設計工具)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.exportdialog
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe46216957f6104869e9cad7e95ce46769fb2a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06c0b46c1c9fbb8aef5a2e31e42a02fe6a0db494
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873826"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910530"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>HOW TO：將類別圖表匯出為影像
 

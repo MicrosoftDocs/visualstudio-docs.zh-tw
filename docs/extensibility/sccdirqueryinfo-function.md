@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f710dfed6a6f5225fd74f828077eb228124714c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 971c7179b281771e20681da59753b774c395f32a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956799"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012751"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 函式
 此函式會檢查完整的目錄清單及其目前狀態。  

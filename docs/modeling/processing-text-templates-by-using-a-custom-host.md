@@ -7,16 +7,15 @@ helpviewer_keywords:
 - text templates, custom directive hosts
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 12c443879ebbe142dde69a713d214c3b79b254ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e72b279d55cbe11f6232ff1f91c8fee443d9c283
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865436"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910931"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>使用自訂主機處理文字範本
 
@@ -51,7 +50,7 @@ string output = engine.ProcessTemplate(templateString, host);
 
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 定義於**Microsoft.VisualStudio.TextTemplating。\*。0.log dll**，並<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>中定義**Microsoft.VisualStudio.TextTemplating.Interfaces。\*。0.log dll**。
 
-## <a name="in-this-section"></a>本章節內容
+## <a name="in-this-section"></a>本節內容
  [逐步解說：建立自訂的文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)示範如何建立自訂文字範本主機，讓 Visual Studio 之外，您可以使用文字範本功能。
 
 ## <a name="reference"></a>參考資料

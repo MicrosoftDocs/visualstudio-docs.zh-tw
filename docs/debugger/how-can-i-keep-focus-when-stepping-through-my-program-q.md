@@ -2,7 +2,6 @@
 title: 逐步執行我的應用程式時，將焦點保持 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.stepping
@@ -19,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 11a30580-3a1a-4be8-a241-0abdc758302e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d140617aed2e6d5310587ec9388b107404398a95
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 559c8fa5cf21a5f87d60167d586ef7d0d543100b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064507"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009488"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>逐步執行我的應用程式時，如何保持焦點？
 ## <a name="description"></a>說明  

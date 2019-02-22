@@ -1,7 +1,6 @@
 ---
 title: 設定目前堆疊框架命令
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.setcurrentstackframe
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3dcf52c0-6781-4598-bac2-0094dce67c20
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a4fa39ad3ce07792819544738185164fef8c985
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9eea69dc4d2931f66d4c6769667e23bdfb4eecf1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844521"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938279"
 ---
 # <a name="set-current-stack-frame-command"></a>設定目前堆疊框架命令
 可讓您設定特定堆疊框架。

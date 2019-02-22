@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e2617c374ba240c421ba0cac339b9488608f2c0
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: fea18c44522ea88d32ada4933be5d3bbb85ca29e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561456"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976926"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault 項目 （Visual Studio 範本）
 如果`false`，指定範本只會顯示在指定[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<ShowByDefault >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ShowByDefault>  
   
 ## <a name="syntax"></a>語法  
   
@@ -55,7 +55,7 @@ ms.locfileid: "53561456"
  此文字必須是 `true` 或 `false`。 如果為 true，請指定範本將會針對所有專案類型顯示。 如果為 false，則範本只會顯示在指定的 `TemplateGroupID` 之下。  
   
 ## <a name="remarks"></a>備註  
- `ShowByDefault` 是選擇性項目。 預設值是 `true`。  
+ `ShowByDefault` 是選擇性項目。 預設值為 `true`。  
   
 ## <a name="example"></a>範例  
  下列範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範本的中繼資料。  

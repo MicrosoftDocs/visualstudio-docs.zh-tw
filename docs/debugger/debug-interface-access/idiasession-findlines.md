@@ -1,8 +1,6 @@
 ---
 title: 'Idiasession:: Findlines |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d6e84916-fd55-457e-b057-57f97b51fe73
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2dc5e2509e3edda0c9cd89b84a3e109e0ac2d0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ae2278835f6de612b61e5fc0a2a1fc2689bad564
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828356"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019472"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
 擷取指定的編譯模組和來源檔案識別碼內的行號。  
@@ -27,7 +25,7 @@ ms.locfileid: "49828356"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT findLines (   
+HRESULT findLines (   
    IDiaSymbol*           compiland,  
    IDiaSourceFile*       file,  
    IDiaEnumLineNumbers** ppResult  
@@ -47,7 +45,7 @@ HRESULT findLines (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   

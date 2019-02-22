@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::RemoveApplication |Microsoft 文件
+title: IMachineDebugManagerCookie::RemoveApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe0849b2f580eac7759db36335823a737a198e55
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9ecd3c8f5b5ebed8419e6e916334552a44646fe9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728718"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087252"
 ---
 # <a name="imachinedebugmanagercookieremoveapplication"></a>IMachineDebugManagerCookie::RemoveApplication
 移除應用程式從執行的應用程式清單。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT RemoveApplication(  
    DWORD  dwDebugAppCookie,  
    DWORD  dwAppCookie  
@@ -42,17 +42,17 @@ HRESULT RemoveApplication(
  [in]Cookie 可識別偵錯應用程式。  
   
  `dwAppCookie`  
- [in]應用程式加入至應用程式清單時提供 cookie。  
+ [in]所提供的應用程式新增至應用程式清單中時的 cookie。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會呼叫處理序偵錯管理員每當`IProcessDebugManager::RemoveApplication`呼叫。  
+ 這個方法會呼叫處理序偵錯管理員只要`IProcessDebugManager::RemoveApplication`呼叫。  
   
 ## <a name="see-also"></a>另請參閱  
  [IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)   

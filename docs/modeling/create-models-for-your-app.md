@@ -1,7 +1,6 @@
 ---
 title: 建立應用程式模型
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.commentlink.properties
@@ -19,15 +18,15 @@ helpviewer_keywords:
 - software, modeling
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f608246af6311c03f4ed5ee31d4588ce2aa1a7ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79d116cfb7c9b6514032aa12d916b21b38ae94b3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942680"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942618"
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
 
@@ -45,7 +44,7 @@ ms.locfileid: "53942680"
 
 ## <a name="related-tasks"></a>相關工作
 
-|**主題**|**Task**|
+|**Topic**|**Task**|
 |-|-|
 |[視覺化程式碼](../modeling/visualize-code.md)|建立 code map 和相依性圖表，使其更了解不熟悉的程式碼。|
 |[模型使用者需求](../modeling/model-user-requirements.md)|使用模型來釐清和溝通使用者的需求。|

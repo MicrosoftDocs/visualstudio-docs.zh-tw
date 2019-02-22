@@ -1,14 +1,9 @@
 ---
 title: 執行緒檢視 (平行處理效能) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.threadblocking
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 39457684ba19ecbb0ad2ef82caa349e67cdaf8a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 34fe3cecc07d567c362e0dbdde3eb271c80dd61c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756341"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54756800"
 ---
 # <a name="threads-view-parallel-performance"></a>執行緒檢視 (平行處理效能)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -154,8 +149,5 @@ ms.locfileid: "51756341"
 #### <a name="disk-operations"></a>磁碟作業  
  此索引標籤會顯示和代表目前處理序的磁碟 I/O 相關的處理序和執行緒，接觸到哪些檔案 (例如，載入的 DLL)、一共讀取多少個位元組以及其他資訊。 您可以使用此報表來評估執行期間花費在存取檔案的時間，尤其是處理序似乎為 I/O 繫結時。 如需詳細資訊，請參閱[磁碟作業報告](../profiling/disk-operations-report-threads-view.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [並行視覺化檢視](../profiling/concurrency-visualizer.md)
-
-
-

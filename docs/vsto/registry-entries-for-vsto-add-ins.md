@@ -11,17 +11,17 @@ helpviewer_keywords:
 - registry keys [Office development in Visual Studio]
 - application-level add-ins [Office development in Visual Studio], registry entries
 - registry entries [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3436ddcdcb8c521985487738d4045e1e1bbd830a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8360194e9efc59634162781fd3b4e0787c1c3260
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909108"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870161"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO 增益集的登錄項目
   部署使用 Visual Studio 建立的 VSTO 增益集時，您必須建立一組特定的登錄項目。 這些登錄項目可提供讓 Microsoft Office 應用程式探索及載入 VSTO 增益集的資訊。  
@@ -59,15 +59,15 @@ ms.locfileid: "53909108"
   
 |Office 版本|組態路徑|  
 |--------------------|------------------------|  
-|32 位元|*根*\Software\Microsoft\Office\\*應用程式名稱*\Addins\\*增益集 ID*|  
-|64 位元|*根*\Software\Wow6432Node\Microsoft\Office\\*應用程式名稱*\Addins\\*增益集 ID*|  
+|32 位元|*Root*\Software\Microsoft\Office\\*application name*\Addins\\*add-in ID*|  
+|64 位元|*Root*\Software\Wow6432Node\Microsoft\Office\\*application name*\Addins\\*add-in ID*|  
   
  **Visio**  
   
 |Office 版本|組態路徑|  
 |--------------------|------------------------|  
-|32 位元|*根*\Software\Microsoft\Visio\Addins\\*增益集 ID*|  
-|64 位元|*根*\Software\Wow6432Node\Visio\Addins\\*增益集 ID*|  
+|32 位元|*Root*\Software\Microsoft\Visio\Addins\\*add-in ID*|  
+|64 位元|*Root*\Software\Wow6432Node\Visio\Addins\\*add-in ID*|  
   
  下表列出此登錄機碼下的項目。  
   
@@ -81,7 +81,7 @@ ms.locfileid: "53909108"
 ###  <a name="OutlookEntries"></a> Outlook 表單區域登錄項目  
  如果您在 Outlook 的 VSTO 增益集中建立自訂表單區域，則必須使用額外的登錄項目向 Outlook 註冊這個表單區域。 系統會在表單區域所支援之各個訊息類別的不同登錄機碼下建立這些項目。 這些登錄機碼位於下列位置，其中*根*是**HKEY_CURRENT_USER**或是**HKEY_LOCAL_MACHINE**。  
   
- *根*\Software\Microsoft\Office\Outlook\FormRegions\\*message 類別*  
+ *Root*\Software\Microsoft\Office\Outlook\FormRegions\\*message class*  
   
  當您建置專案時，Visual Studio 會在開發電腦上建立表單區域登錄項目，如同所有 VSTO 增益集共用的其他登錄項目一樣。 如果您使用 ClickOnce 部署 VSTO 增益集時，登錄項目會自動建立在使用者電腦上。 如果您使用 Windows Installer 部署 VSTO 增益集時，您必須設定 InstallShield Limited Edition 專案來建立在使用者電腦上的登錄項目。  
   

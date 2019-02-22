@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: ced826ae-09a9-4acf-af00-a2343d396bb8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e33555652b1d0de5e29fdb1d29390ef47f13480d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67f3656fc22e304419b3f0d48957fa7bc1fd2c08
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822569"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971542"
 ---
 # <a name="taskstatefaulted-field"></a>TASK_STATE_FAULTED 欄位
 工作因未處理的例外狀況而完成。  

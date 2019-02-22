@@ -1,5 +1,5 @@
 ---
-title: BREAKREASON 列舉 |Microsoft 文件
+title: BREAKREASON 列舉 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf1baa8b627df50db33cbd86302ce06e80c1cf34
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d5c0dc03d8d24014e28ecf9510fa3d5faa21dba2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641018"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096794"
 ---
 # <a name="breakreason-enumeration"></a>BREAKREASON 列舉
 指出造成中斷的原因。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 typedef enum tagBREAKREASON {  
    BREAKREASON_STEP,  
    BREAKREASON_BREAKPOINT,  
@@ -47,14 +47,14 @@ typedef enum tagBREAKREASON {
   
 |成員|描述|  
 |------------|-----------------|  
-|BREAKREASON_STEP|語言引擎是逐步執行模式。|  
+|BREAKREASON_STEP|語言引擎正在逐步執行模式。|  
 |BREAKREASON_BREAKPOINT|語言引擎發現明確的中斷點。|  
 |BREAKREASON_DEBUGGER_BLOCK|語言引擎遇到另一個執行緒上的偵錯工具區塊。|  
-|BREAKREASON_HOST_INITIATED|主應用程式要求中斷。|  
-|BREAKREASON_LANGUAGE_INITIATED|語言引擎要求中斷。|  
+|BREAKREASON_HOST_INITIATED|主機要求中斷。|  
+|BREAKREASON_LANGUAGE_INITIATED|語言引擎會要求中斷。|  
 |BREAKREASON_DEBUGGER_HALT|偵錯工具 IDE 要求中斷。|  
-|BREAKREASON_ERROR|執行錯誤造成中斷的原因。|  
-|BREAKREASON_JIT|JIT 偵錯啟動所造成。|  
+|BREAKREASON_ERROR|執行錯誤會造成中斷。|  
+|BREAKREASON_JIT|因為 JIT 偵錯啟動所造成。|  
   
 ## <a name="see-also"></a>另請參閱  
  [動態指令碼偵錯工具的常數、列舉和結構](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cf3efc91-1532-4022-bbb8-a18658424fee
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 815b9a176d747c2139a5d88326085d48120e1819
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f3816943ca3779b9110de2359fd10852330eb20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847317"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940254"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>CustomParameters 項目 （Visual Studio 範本）
 群組精靈會讓參數替代項目時，要傳遞至 [範本] 精靈的自訂參數。  
@@ -44,7 +44,7 @@ ms.locfileid: "53847317"
 |-------------|-----------------|  
 |[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 包含自訂的參數名稱和值，以從範本建立專案或項目時使用。 `CustomParameter` 項目中可能有零個或多個 `CustomParameters` 項目。|  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
 |元素|描述|  
 |-------------|-----------------|  

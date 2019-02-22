@@ -1,7 +1,6 @@
 ---
 title: CA2224:多載等號比較運算子時必須一併覆寫 Equals
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2224
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 7312afd9-84ba-417f-923e-7a159b53bf70
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af2b1af90620fa595d85f7c26d7e5e2c96041dfc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3fa6bfa5b590d330d791eb8c735099e619ffaf3a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826084"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922962"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224:多載等號比較運算子時必須一併覆寫 Equals
 

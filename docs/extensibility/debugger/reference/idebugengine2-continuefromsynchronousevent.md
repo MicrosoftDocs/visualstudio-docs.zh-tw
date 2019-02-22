@@ -9,82 +9,82 @@ helpviewer_keywords:
 ms.assetid: 9a57dfcd-df8e-4be5-b1fe-bd853e3c6bb2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eaa1d399de86864eb8d1c20e6b8e085a2e0d9f9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9e4a02fdccb15f959615c0e7e39d22a05c40ea2
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849450"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450460"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
-工作階段的偵錯管理員 (SDM)，表示同步的偵錯事件，先前傳送給 SDM，偵錯引擎 (DE) 已收到並處理呼叫。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT ContinueFromSynchronousEvent(   
-   IDebugEvent2* pEvent  
-);  
-```  
-  
-```csharp  
-HRESULT ContinueFromSynchronousEvent(   
-   IDebugEvent2 pEvent  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pEvent`  
- [in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)物件，代表從中偵錯工具現在應該會繼續先前傳送同步事件。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- DE 必須確認它已由事件來源的`pEvent`參數。  
-  
-## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CEngine`實作的物件[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)介面。  
-  
-```cpp  
-HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)  
-{  
-   HRESULT hr;  
-  
-   // Create a pointer to a unique event interface defined for batch file  
-   // breaks.    
-   IAmABatchFileEvent *pBatEvent;  
-   // Check for successful query for the unique batch file event  
-   // interface.  
-   if (SUCCEEDED(pEvent->QueryInterface(IID_IAmABatchFileEvent,  
-                                       (void **)&pBatEvent)))  
-   {  
-      // Release the result of the QI.  
-      pBatEvent->Release();  
-      // Check thread message for notification to continue.  
-      if (PostThreadMessage(GetCurrentThreadId(),  
-                            WM_CONTINUE_SYNC_EVENT,  
-                            0,  
-                            0))  
-      {    
-         hr = S_OK;  
-      }  
-      else  
-      {  
-         hr = HRESULT_FROM_WIN32(GetLastError());  
-      }  
-   }  
-   else  
-   {  
-      hr = E_INVALIDARG;  
-   }  
-   return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
+工作階段的偵錯管理員 (SDM)，表示同步的偵錯事件，先前傳送給 SDM，偵錯引擎 (DE) 已收到並處理呼叫。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT ContinueFromSynchronousEvent(
+    IDebugEvent2* pEvent
+);
+```
+
+```csharp
+HRESULT ContinueFromSynchronousEvent(
+    IDebugEvent2 pEvent
+);
+```
+
+#### <a name="parameters"></a>參數
+`pEvent`  
+[in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)物件，代表從中偵錯工具現在應該會繼續先前傳送同步事件。
+
+## <a name="return-value"></a>傳回值
+如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+DE 必須確認它已由事件來源的`pEvent`參數。
+
+## <a name="example"></a>範例
+下列範例示範如何實作這個方法來簡單`CEngine`實作的物件[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)介面。
+
+```cpp
+HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)
+{
+    HRESULT hr;
+
+    // Create a pointer to a unique event interface defined for batch file
+    // breaks.
+    IAmABatchFileEvent *pBatEvent;
+    // Check for successful query for the unique batch file event
+    // interface.
+    if (SUCCEEDED(pEvent->QueryInterface(IID_IAmABatchFileEvent,
+                                        (void **)&pBatEvent)))
+    {
+        // Release the result of the QI.
+        pBatEvent->Release();
+        // Check thread message for notification to continue.
+        if (PostThreadMessage(GetCurrentThreadId(),
+                              WM_CONTINUE_SYNC_EVENT,
+                              0,
+                              0))
+        {
+            hr = S_OK;
+        }
+        else
+        {
+            hr = HRESULT_FROM_WIN32(GetLastError());
+        }
+    }
+    else
+    {
+        hr = E_INVALIDARG;
+    }
+    return hr;
+}
+```
+
+## <a name="see-also"></a>另請參閱
+[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)  
+[IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

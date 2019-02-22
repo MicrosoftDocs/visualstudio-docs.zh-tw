@@ -1,7 +1,6 @@
 ---
 title: CA1010:集合應該實作泛型介面
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1010
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c7d7126f-fa70-40be-8f93-3243e1760dc5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c52bbd46d36923245a4df09eed7304074fa96115
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9998f54298107ce7a6fb31cf6eb8481998ddfbae
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880243"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955857"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010:集合應該實作泛型介面
 

@@ -1,24 +1,19 @@
 ---
 title: Microsoft Fakes 中的程式碼產生、編譯和命名慣例 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1de284c8d4fdfe5cb84a474641b880590c2094aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 70392f50ecd13539012672bf71900c30845af734
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895316"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54783367"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的程式碼產生、編譯和命名慣例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +80,7 @@ ms.locfileid: "49895316"
   
      `el!` 不符合 "hello"  
   
-     `hello!` 比對符合 "hello"  
+     `hello!` 比對 "hello"  
   
 -   將 `*` 加入篩選條件的結尾會讓它符合字串的前置詞：  
   
@@ -147,7 +142,7 @@ ms.locfileid: "49895316"
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]  
 ```  
   
- 您可以針對 Fakes 組件指定不同的公用金鑰，例如您已針對填充組件建立的金鑰，方法是指定 **.snk** 檔案的完整路徑，其中包含替代金鑰做為 **.fakes** 檔案之 `Fakes`\\`Compilation` 項目中的 `KeyFile` 屬性值。 例如:   
+ 您可以針對 Fakes 組件指定不同的公用金鑰，例如您已針對填充組件建立的金鑰，方法是指定 **.snk** 檔案的完整路徑，其中包含替代金鑰做為 **.fakes** 檔案之 `Fakes`\\`Compilation` 項目中的 `KeyFile` 屬性值。 例如：  
   
 ```xml  
 <-- FileSystem.Fakes.fakes -->  
@@ -292,8 +287,5 @@ attribute of the Assembly element in the .fakes:
 ###  <a name="BKMK_Guidance"></a> 指引  
  [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)
-
-
-

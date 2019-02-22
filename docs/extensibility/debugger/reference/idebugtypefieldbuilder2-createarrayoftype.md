@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder2::CreateArrayOfType |Microsoft Docs
+title: IDebugTypeFieldBuilder2::CreateArrayOfType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 85166ac9-0bff-49a0-b2fd-ca7f7a8eae4b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 006e8d7164da54c6fbba866eb9b0dd3c5f854262
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ebe88e8ec3980ee667e4f8bf96b6c5645193de68
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957828"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
 建立指定的類型和大小的陣列。  

@@ -1,22 +1,21 @@
 ---
 title: 快照集偵錯的常見問題集 |Microsoft Docs
 ms.date: 11/07/2017
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - debugger
 ms.assetid: 944f1eb0-a74b-4d28-ae2b-a370cd869add
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b35746a7b0d639d4c954c8ef1a5221973e1abc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 0899b70ce4a917b0479a9ac6623e33ee8bcdbe22
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154342"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335099"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>B80acca24f64">frequently Asked Questions for Visual Studio 偵錯快照集
 
@@ -58,4 +57,6 @@ ms.locfileid: "39154342"
 
 [Visual Studio 偵錯](../debugger/index.md)  
 [使用快照集偵錯工具的即時 ASP.NET 應用程式進行偵錯](../debugger/debug-live-azure-applications.md)  
+[偵錯即時 ASP.NET Azure 虛擬 Machines\Virtual 機器擴展集使用快照集偵錯工具](../debugger/debug-live-azure-virtual-machines.md)  
+[偵錯即時 ASP.NET Azure Kubernetes 中使用快照集偵錯工具](../debugger/debug-live-azure-kubernetes.md)  
 [疑難排解和已知問題的快照集偵錯](../debugger/debug-live-azure-apps-troubleshooting.md)

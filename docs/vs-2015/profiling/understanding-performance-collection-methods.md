@@ -1,14 +1,9 @@
 ---
 title: 了解效能收集方法 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.methodpage
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: ea4881fd-bd04-4875-9b7b-28490d6706f9
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1a941b3c9dff3a80adea61026c6176dcf4c44361
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 357623a6c93cf2ec87cc9d4b53f76cec535fd6c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809047"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805304"
 ---
 # <a name="understanding-performance-collection-methods"></a>了解效能收集方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,9 +128,6 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
   
  [階層互動檢視](../profiling/tier-interaction-views.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：收集網站的效能資料](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
  [效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)
-
-
-

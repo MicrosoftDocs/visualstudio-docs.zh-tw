@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::DeleteMemberByName |Microsoft 文件
+title: IDispatchEx::DeleteMemberByName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb9a9dfd979954c42101fde41819d7e12db59e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1866b5135d2c98ccacb34c2c776c69dd7d25db3f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728128"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096430"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
-依名稱刪除成員。  
+依名稱刪除的成員。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT DeleteMemberByName(  
    BSTR bstrName,  
    DWORD grfdex  
@@ -42,12 +42,12 @@ HRESULT DeleteMemberByName(
  要刪除的成員名稱。  
   
  `grfdex`  
- 決定是否區分大小寫的成員名稱。 這可以是下列值之一：  
+ 判斷是否區分大小寫的成員名稱。 這可以是下列值之一：  
   
 |值|意義|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|區分大小寫的方式進行名稱查閱的要求。 您可以忽略不支援區分大小寫對應的物件。|  
-|fdexNameCaseInsensitive|不區分大小寫的方式進行名稱查閱的要求。 您可以忽略不支援不區分大小寫對應的物件。|  
+|fdexNameCaseSensitive|名稱查閱會區分大小寫的方式完成的要求。 您可以忽略不支援區分大小寫的查閱的物件。|  
+|fdexNameCaseInsensitive|名稱查閱不區分大小寫的方式完成的要求。 您可以忽略不支援不區分大小寫的查閱的物件。|  
   
 ## <a name="return-value"></a>傳回值  
  會傳回下列值之一：  
@@ -58,13 +58,13 @@ HRESULT DeleteMemberByName(
 |`S_FALSE`|成員存在，但無法刪除。|  
   
 ## <a name="remarks"></a>備註  
- 如果刪除的成員，則必須一直保持有效的 DISPID `GetNextDispID`。  
+ 如果刪除的成員時，必須保持有效 DISPID `GetNextDispID`。  
   
- 如果已刪除具有指定名稱的成員之後重新建立具有相同名稱的成員，DISPID 應相同。 （只有大小寫不同的成員是否 「 相同 」 是物件而定）。  
+ 如果已刪除具有指定名稱的成員，而且稍後會重新建立具有相同名稱的成員，DISPID 應該相同。 （只有大小寫不同的成員是否 「 相同 」 是物件相依。）  
   
 ## <a name="example"></a>範例  
   
-```  
+```cpp
 BSTR bstrName;  
 IDispatchEx *pdex;  
   

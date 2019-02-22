@@ -1,7 +1,6 @@
 ---
 title: CA1801:必須檢閱未使用的參數
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AvoidUnusedParameters
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 5d73545c-e153-4b7c-a7b2-be6bf5aca5be
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b7fdbf4d842218b8a06146c777a1e468459d140
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee9500938feb893627069e9a83f3052fa84bc224
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921000"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949547"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801:必須檢閱未使用的參數
 

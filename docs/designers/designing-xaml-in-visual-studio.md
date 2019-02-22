@@ -1,20 +1,19 @@
 ---
 title: 使用 XAML
 ms.date: 07/17/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c93ab3ac466125c0751035bfc4ae712d7ee0f175
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 252e9d17ba272dd61af87427ad91f42d2fcd13ee
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827373"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908032"
 ---
 # <a name="design-xaml-in-visual-studio"></a>在 Visual Studio 中設計 XAML
 

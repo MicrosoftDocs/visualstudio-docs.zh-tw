@@ -1,8 +1,6 @@
 ---
 title: '&lt;entryPoint&gt;項目 （ClickOnce 應用程式） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#commandLine
@@ -17,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 10ad3083-10c1-4189-a870-9bba2eab244f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56996f83f0ac8d9e7b2bce81ab7e2c8e13faee52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b1d315a76ab66414dff42c00e62fb1e963722c32
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934622"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010294"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt;項目 （ClickOnce 應用程式）
 識別應該是組件時執行這[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]用戶端電腦上執行應用程式。  
@@ -51,7 +49,7 @@ ms.locfileid: "49934622"
 </entryPoint>  
 ```  
 
-## <a name="elements-and-attributes"></a>項目和屬性  
+## <a name="elements-and-attributes"></a>元素和屬性  
  `entryPoint` 項目是必要的，且位於 `urn:schemas-microsoft-com:asm.v2` 命名空間。 只能有一個`entryPoint`應用程式資訊清單中所定義的項目。  
 
  `entryPoint` 項目具有下列屬性。  
@@ -63,18 +61,18 @@ ms.locfileid: "49934622"
  `entryPoint` 具有下列項目。  
 
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- 必要。 所扮演的角色`assemblyIdentity`和其屬性定義於[\<組件識別 > 項目](../deployment/assemblyidentity-element-clickonce-application.md)。  
+ 必要項。 所扮演的角色`assemblyIdentity`和其屬性定義於[\<組件識別 > 項目](../deployment/assemblyidentity-element-clickonce-application.md)。  
 
  `processorArchitecture`這個項目的屬性和`processorArchitecture`中所定義的屬性`assemblyIdentity`其他位置中應用程式資訊清單必須相符。  
 
-## <a name="commandline"></a>命令列  
- 必要。 必須是子系`entryPoint`項目。 它沒有任何子項目，並具有下列屬性。  
+## <a name="commandline"></a>commandLine  
+ 必要項。 必須是子系`entryPoint`項目。 它沒有任何子項目，並具有下列屬性。  
 
 
 | 屬性 | 描述 |
 |--------------| - |
-| `file` | 必要。 啟動組件的本機參考[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 此值不能包含正斜線 （/） 或反斜線 (\\) 路徑分隔符號。 |
-| `parameters` | 必要。 描述要使用的進入點所採取的動作。 唯一有效的值是`run`; 如果提供了空白的字串，`run`假設。 |
+| `file` | 必要項。 啟動組件的本機參考[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 此值不能包含正斜線 （/） 或反斜線 (\\) 路徑分隔符號。 |
+| `parameters` | 必要項。 描述要使用的進入點所採取的動作。 唯一有效的值是`run`; 如果提供了空白的字串，`run`假設。 |
 
 ## <a name="customhostrequired"></a>customHostRequired  
  選擇性。 如果包含此項目，指定此部署包含將自訂主機，內部部署的元件，並不是獨立的應用程式。  

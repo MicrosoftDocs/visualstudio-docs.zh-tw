@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_indirectvirtualbaseclass |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 853b5c6f-e1cb-4675-ad36-9ee16e3341c3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7dcde1aa61ed9ce39fea15a6a21776afba24786
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 40764a85cca7b23567411bbea765f132667265b0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933465"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984024"
 ---
 # <a name="idiasymbolgetindirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
 擷取指定的使用者定義資料類型是否為間接虛擬基底類別的旗標。  
@@ -27,7 +25,7 @@ ms.locfileid: "49933465"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_indirectVirtualBaseClass (   
+HRESULT get_indirectVirtualBaseClass (   
    BOOL* pRetVal  
 );  
 ```  
@@ -49,5 +47,5 @@ HRESULT get_indirectVirtualBaseClass (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

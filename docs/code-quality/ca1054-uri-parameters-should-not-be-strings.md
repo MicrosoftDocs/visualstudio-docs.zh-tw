@@ -1,7 +1,6 @@
 ---
 title: CA1054:URI 參數不應該為字串
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1054
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 8e99d72b-a658-47a7-8dd5-9784ce2c30b8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 26118f2686abe7077f1c698a1c80e48de119fb9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 99360086732977d42508edc6af8fdf10e19e1972
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920705"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938042"
 ---
 # <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054:URI 參數不應該為字串
 

@@ -1,19 +1,18 @@
 ---
 title: 管理專案和解決方案屬性
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f1ae5ae9b0bd751deca5e26ac4ea09e884e5db0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb32a3b71a6868e763b9ad77c49f5cb06a4039fc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824297"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928032"
 ---
 # <a name="manage-project-and-solution-properties"></a>管理專案和解決方案屬性
 

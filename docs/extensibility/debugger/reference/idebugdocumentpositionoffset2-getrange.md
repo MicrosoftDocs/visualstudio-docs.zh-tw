@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 27da7130-0932-4f97-abde-05e6fb018606
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f780d5df2d111a371a4389cd29d4b724dfe3834
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e9e09ac0106e8c7a3c643592bb180af8a21c244
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855253"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925938"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 擷取目前的文件位置的範圍。  

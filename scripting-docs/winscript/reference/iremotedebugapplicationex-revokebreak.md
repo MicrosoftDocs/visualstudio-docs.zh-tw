@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEx:RevokeBreak |Microsoft 文件
+title: IRemoteDebugApplicationEx:RevokeBreak | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,33 +18,35 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8712431dd72cd25e2ba4203d2b076a163e005be6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: dd014defff65ee4b29566219ea3bc04ce0cc3a4e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728748"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754555"
 ---
 # <a name="iremotedebugapplicationexrevokebreak"></a>IRemoteDebugApplicationEx:RevokeBreak
-撤銷 break 命令。  
-  
-## <a name="syntax"></a>語法  
-  
-```  
-HRESULT RevokeBreak( );  
-```  
-  
-#### <a name="parameters"></a>參數  
- 無。  
-  
-## <a name="return-value"></a>傳回值  
- 方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
-  
-|值|說明|  
-|-----------|-----------------|  
-|`S_OK`|方法成功。|  
-  
-## <a name="remarks"></a>備註  
-  
-## <a name="see-also"></a>另請參閱  
- [IRemoteDebugApplicationEx 介面](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)
+
+撤銷 break 命令。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT RevokeBreak( );
+```
+
+### <a name="parameters"></a>參數
+
+無。
+
+## <a name="return-value"></a>傳回值
+
+方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。
+
+|值|描述|
+|-----------|-----------------|
+|`S_OK`|方法成功。|
+
+## <a name="see-also"></a>另請參閱
+
+- [IRemoteDebugApplicationEx 介面](iremotedebugapplicationex-interface.md)

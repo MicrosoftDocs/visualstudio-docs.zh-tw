@@ -1,5 +1,5 @@
 ---
-title: 運算子摘要 (JavaScript) |Microsoft 文件
+title: 運算子摘要 (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -18,15 +18,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 302ad9c9a853fb7ed7f24de9669d0cc7a66195aa
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: 85eb607ed868d034860d44b3ecaf69a5d8d55c89
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29753571"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349318"
 ---
 # <a name="operator-summary-javascript"></a>運算子摘要 (JavaScript)
-下表列出[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]各類別中的運算子。  
+下表列出[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]其各自的類別目錄中的運算子。  
   
 ## <a name="computational-operators"></a>計算運算子  
   
@@ -36,7 +36,7 @@ ms.locfileid: "29753571"
 |[遞減](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[除法](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
 |[遞增](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[Remainder](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[其餘部分](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[乘法](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[減法](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[一元否定運算](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
@@ -57,7 +57,7 @@ ms.locfileid: "29753571"
 |[邏輯 AND](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
 |[邏輯 NOT](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
 |[邏輯或](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
-|[非識別](../../javascript/reference/comparison-operators-javascript.md)|!==|  
+|[不同比較](../../javascript/reference/comparison-operators-javascript.md)|!==|  
   
 ## <a name="bitwise-operators"></a>位元運算子  
   

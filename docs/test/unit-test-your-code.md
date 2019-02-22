@@ -1,24 +1,22 @@
 ---
 title: 單元測試
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 84ed32f0d8ca966449c5795094fde1feeb4d49af
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 900492cf7a4e617a044ca60b3b72d9891bdaa15b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804256"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917645"
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
 

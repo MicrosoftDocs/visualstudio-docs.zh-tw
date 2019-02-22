@@ -1,7 +1,6 @@
 ---
 title: CA1056:URI 屬性不應該為字串
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - UriPropertiesShouldNotBeStrings
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: fdc99d29-0904-4a65-baa8-4f76833c953e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c111e1379c3421f7541d05b817dd10be6bd674
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 529b0d360c3301d7bb3eee79911e5d3fbb5d3af6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927515"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938898"
 ---
 # <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056:URI 屬性不應該為字串
 
@@ -32,7 +31,7 @@ ms.locfileid: "53927515"
 |-|-|
 |TypeName|UriPropertiesShouldNotBeStrings|
 |CheckId|CA1056|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

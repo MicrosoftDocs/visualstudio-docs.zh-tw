@@ -1,20 +1,19 @@
 ---
 title: 建立和編輯 XSD 結構描述檔案
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 015523e35f3593523ee362faeb6aa544139e1103
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c0628b4824ebb33199521b660112622b130a090b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855503"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937912"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>HOW TO：建立和編輯 XSD 結構描述檔案
 

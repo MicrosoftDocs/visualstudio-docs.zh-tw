@@ -1,23 +1,22 @@
 ---
-title: 如何：從組建中排除專案
+title: HOW TO：從組建排除專案
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e203fd9f1515e212591afe11c246cdeb78201b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef85067ca3478bb2387f1f47a35938805f5fe0c5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949980"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924587"
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>如何：從組建中排除專案
+# <a name="how-to-exclude-projects-from-a-build"></a>HOW TO：從組建排除專案
 
 您可以建置方案，而不建置它所包含的所有專案。 例如，您可能會排除會中斷組建的專案。 然後您可以在調查和處理這些問題之後才建置專案。
 
@@ -58,5 +57,5 @@ ms.locfileid: "31949980"
 ## <a name="see-also"></a>另請參閱
 
 - [了解建置組態](../ide/understanding-build-configurations.md)
-- [如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)
+- [如何：建立及編輯組態](../ide/how-to-create-and-edit-configurations.md)
 - [如何：同時建置多個組態](../ide/how-to-build-multiple-configurations-simultaneously.md)

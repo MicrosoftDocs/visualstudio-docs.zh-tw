@@ -7,14 +7,13 @@ helpviewer_keywords:
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4e145834210ea3c9aa2addd0673befe497592cda
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 9f8cb4c3c2cba9f7734aa50c95f28bb6cef6bcba
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967183"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928877"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>HOW TO：建立分散式負載測試的測試設定
 

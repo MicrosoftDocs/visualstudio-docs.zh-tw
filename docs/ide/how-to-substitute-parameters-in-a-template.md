@@ -1,7 +1,6 @@
 ---
 title: 在專案和項目範本中新增名稱參數
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - template parameters
@@ -9,13 +8,13 @@ helpviewer_keywords:
 - Visual Studio templates, using parameters
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fa06783acf3feaa863b788c3c0b976b0c762d0c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: cf9a990be3f5e87180967a4f9f274ec79fbc357e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986904"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943333"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>HOW TO：替代範本中的參數
 
@@ -25,7 +24,7 @@ ms.locfileid: "53986904"
 
 下節示範如何修改範本，以「安全的專案名稱」取代命名空間的名稱。
 
-## <a name="to-use-a-parameter-to-replace-the-namespace-name"></a>使用參數取代命名空間名稱
+## <a name="example---namespace-name"></a>範例 - 命名空間名稱
 
 1. 在範本的一或多個程式碼檔案中，插入參數。 例如：
 

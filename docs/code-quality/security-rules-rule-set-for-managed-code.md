@@ -1,20 +1,19 @@
 ---
 title: 適用於 Managed 程式碼的安全性規則規則集
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 564aeac6-03fa-41b0-b655-88179f0ab01b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6ab8f106b4d87b49546a2fa62f31c893210281b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52a7944de897d48322f78e4842756e4389e0026f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905029"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911240"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的安全性規則規則集
 您應該包含 Microsoft 安全性規則規則集以最大化所報告的潛在安全性問題數目。
@@ -23,13 +22,13 @@ ms.locfileid: "53905029"
 |----------|-----------------|
 |[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|必須檢閱 SQL 查詢中是否有安全性弱點|
 |[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|必須使用一般處理常式攔截非 CLSCompliant 例外狀況|
-|[CA2103 必須](../code-quality/ca2103-review-imperative-security.md)|必須檢閱命令式安全性|
+|[CA2103](../code-quality/ca2103-review-imperative-security.md)|必須檢閱命令式安全性|
 |[CA2104](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|不要宣告唯讀的可變動參考類型|
 |[CA2105](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|陣列欄位不應該為唯讀|
-|[CA2106 必須](../code-quality/ca2106-secure-asserts.md)|必須保護判斷提示|
-|[CA2107 必須](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|必須檢閱 Deny 和 Permit Only 的使用方式|
+|[CA2106](../code-quality/ca2106-secure-asserts.md)|必須保護判斷提示|
+|[CA2107](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|必須檢閱 Deny 和 Permit Only 的使用方式|
 |[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|必須檢閱實值類型上的宣告式安全性|
-|[CA2109 必須](../code-quality/ca2109-review-visible-event-handlers.md)|必須檢閱可見的事件處理常式|
+|[CA2109](../code-quality/ca2109-review-visible-event-handlers.md)|必須檢閱可見的事件處理常式|
 |[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|指標不應該為可見的|
 |[CA2112](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|受保護類型不應該公開欄位|
 |[CA2114](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md)|方法安全性應該是類型的超集|
@@ -38,7 +37,7 @@ ms.locfileid: "53905029"
 |[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|APTCA 類型應該只擴充 APTCA 基底類型|
 |[CA2118](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)|檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法|
 |[CA2119](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|密封方法以滿足私用介面的要求|
-|[CA2120 必須](../code-quality/ca2120-secure-serialization-constructors.md)|必須保護序列化建構函式|
+|[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|必須保護序列化建構函式|
 |[CA2121](../code-quality/ca2121-static-constructors-should-be-private.md)|靜態建構函式應該為私用的|
 |[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|不要間接公開具有連結要求的方法|
 |[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|覆寫連結要求應該與基底相同|

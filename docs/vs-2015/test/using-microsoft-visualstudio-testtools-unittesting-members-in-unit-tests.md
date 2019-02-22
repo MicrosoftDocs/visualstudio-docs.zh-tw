@@ -1,24 +1,19 @@
 ---
 title: 在單元測試中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成員 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 691b1e46f7657eb027fa48b31f31119cae0c7451
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c3b0e7cf2ddc4ada4fe015feba17c5adbcc328d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216641"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803263"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>在單元測試中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成員
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "49216641"
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>用來建立呼叫順序的屬性
- 以下列屬性裝飾的程式碼項目會在您指定的時間呼叫。 如需詳細資訊，請參閱[單元測試的結構](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)。
+ 以下列屬性裝飾的程式碼項目會在您指定的時間呼叫。 如需詳細資訊，請參閱[單元測試的結構](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)。
 
 ### <a name="for-assemblies"></a>針對組件
  AssemblyInitialize 和 AssemblyCleanup 會在載入您的組件之後以及卸載您的組件之前呼叫。
@@ -69,7 +64,7 @@ ms.locfileid: "49216641"
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>用來識別測試類別和方法的屬性
- 每個測試類別必須具有 TestClass 屬性，且每個測試方法必須具有 TestMethod 屬性。 如需詳細資訊，請參閱[單元測試的結構](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)。
+ 每個測試類別必須具有 TestClass 屬性，且每個測試方法必須具有 TestMethod 屬性。 如需詳細資訊，請參閱[單元測試的結構](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)。
 
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -123,7 +118,7 @@ ms.locfileid: "49216641"
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssProjectStructureAttribute>
 
 ## <a name="classes-used-with-private-accessors"></a>與私用存取子搭配使用的類別
- 如[使用 Publicize 建立私用存取子](http://msdn.microsoft.com/en-us/2056c6a7-6672-42a7-8f53-fead33c56deb)中所述，您可以產生適用於私用方法的單元測試。 這個層代會建立私用存取子類別，該類別會具現化 PrivateObject 類別的物件。 PrivateObject 類別是一種包裝函式類別，會使用反映做為私用存取子程序的一部分。 PrivateType 類別很類似，不過是用來呼叫私用靜態方法，而不是呼叫私用執行個體方法。
+ 如[使用 Publicize 建立私用存取子](http://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb)中所述，您可以產生適用於私用方法的單元測試。 這個層代會建立私用存取子類別，該類別會具現化 PrivateObject 類別的物件。 PrivateObject 類別是一種包裝函式類別，會使用反映做為私用存取子程序的一部分。 PrivateType 類別很類似，不過是用來呼叫私用靜態方法，而不是呼叫私用執行個體方法。
 
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject>
 

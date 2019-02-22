@@ -1,14 +1,9 @@
 ---
-title: 逐步解說：建立程式碼片段 | Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立程式碼片段 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
 - code snippets, shortcut
@@ -20,18 +15,18 @@ ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f9b09a8990de97357da2703f1d08dabec50ea75e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267742"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790109"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>逐步解說：建立程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您也可以將參考和取代參數新增至程式碼。 可以在程式碼片段管理員中使用匯入 按鈕將程式碼片段新增至您的 Visual Studio 安裝 (**工具/程式碼片段管理員**)。  
+只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您也可以將參考和取代參數新增至程式碼。 您可以使用 [程式碼片段管理員] ([工具]/[程式碼片段管理員]) 上的 [匯入] 按鈕，將程式碼片段新增至 Visual Studio 安裝。  
   
 > [!TIP]
 >  如需如何更輕鬆地撰寫程式碼片段，在 CodePlex 網站搜尋社群工具這類[程式碼片段編輯器](http://go.microsoft.com/fwlink/?LinkId=251033)。  
@@ -78,7 +73,7 @@ ms.locfileid: "49267742"
   
 ### <a name="to-add-a-code-snippet-to-visual-studio"></a>將程式碼片段新增至 Visual Studio  
   
-1.  您可以使用 [程式碼片段管理員]，將自己的程式碼片段新增至 Visual Studio 安裝。 開啟程式碼片段管理員 (**工具/程式碼片段管理員**)。  
+1.  您可以使用 [程式碼片段管理員]，將自己的程式碼片段新增至 Visual Studio 安裝。 開啟 [程式碼片段管理員] ([工具]/[程式碼片段管理員])。  
   
 2.  按一下 [匯出] 按鈕。  
   
@@ -266,8 +261,5 @@ ms.locfileid: "49267742"
   
     ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: MSBuild 進階概念 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, advanced concepts
 ms.assetid: f34a558a-ebd9-49bd-8510-32a2b581a4af
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 077cdf0fe5844b62176f40677c538e80070d575d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eff3d6234d4d7b9ae34824d4fec5b8ae0816a20c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198454"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54796594"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 進階概念
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +35,6 @@ ms.locfileid: "49198454"
 |[多目標](../msbuild/msbuild-multitargeting-overview.md)|說明如何編譯應用程式，讓它在數個版本的 .NET Framework 上都能執行。|  
 |[最佳做法](../msbuild/msbuild-best-practices.md)|建議撰寫 MSBuild 指令碼的最佳做法。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 中的記錄](../msbuild/logging-in-msbuild.md)
-
-
-

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 79221c6b-a924-4c8e-a778-e312e4e0c0c8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51f418483d58a5fce33fed0e49b695043c16cde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea48e83034a02f4c99bb1d9de03db0ee1b371281
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857148"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038418"
 ---
 # <a name="breakpoint-errors"></a>中斷點錯誤
 以下說明的程序時嘗試繫結至程式碼的中斷點，但會失敗。  

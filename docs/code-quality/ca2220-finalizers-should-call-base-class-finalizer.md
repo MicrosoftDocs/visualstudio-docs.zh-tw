@@ -1,7 +1,6 @@
 ---
 title: CA2220:完成項應該呼叫基底類別完成項
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2220
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 48329f42-170d-45ee-a381-e33f55a240c5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4befae0ca3095994c3d48d20647045d4825154e4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 034f80c9198ab098070e6642f4a4d96cff1744c5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825392"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927642"
 ---
 # <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220:完成項應該呼叫基底類別完成項
 

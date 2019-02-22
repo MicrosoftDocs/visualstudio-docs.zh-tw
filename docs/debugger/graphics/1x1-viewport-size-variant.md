@@ -1,21 +1,19 @@
 ---
 title: 1x1 Viewport 大小變異 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3dbc3247-00f5-4644-8ff9-72e9febcf09a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 168b358bf58dcb2c91814f5460b203873255e275
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
-ms.translationtype: MT
+ms.openlocfilehash: 1ee3d083e7956cf2bd1eff1f09769ef6ec85c979
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433239"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983634"
 ---
 # <a name="1x1-viewport-size-variant"></a>1x1 Viewport 大小變異
 將所有呈現目標上的檢視區維度減少為 1x1 個像素。  

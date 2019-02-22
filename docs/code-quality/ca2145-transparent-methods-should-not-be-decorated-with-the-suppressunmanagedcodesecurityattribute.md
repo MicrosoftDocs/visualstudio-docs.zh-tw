@@ -1,22 +1,21 @@
 ---
 title: CA2145:透明方法不可以使用 SuppressUnmanagedCodeSecurityAttribute 來裝飾
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2145
 ms.assetid: 81970700-b438-4b3b-9239-16887e16f7b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3d2fe5c2c4e75376f88af7679f6838561848c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9269a0862dacf928cffb31f722f382271d5f0e7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949348"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953850"
 ---
 # <a name="ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute"></a>CA2145:透明方法不可以使用 SuppressUnmanagedCodeSecurityAttribute 來裝飾
 

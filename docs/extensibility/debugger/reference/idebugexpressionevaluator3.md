@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator3 |Microsoft Docs
+title: IDebugExpressionEvaluator3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c27c2a14-300b-4535-be22-767c83602f69
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0acf22666546ca7ef960c6da67728aed0a0b8735
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab62726d4adf615a4617d3673590e03608e797be
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837676"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024769"
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 > [!IMPORTANT]

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStat |Microsoft 文件
+title: IActiveScriptStats::GetStat |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35e791661de6d360f747f8d823ad073c2eb81115
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0d00c438f0fe03566dfb7efb93645cad02dc7477
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725228"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095390"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
 傳回其中一個標準的指令碼統計資料。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetStat(  
    DWORD   stid,  
    ULONG*  pluHi,  
@@ -44,7 +44,7 @@ HRESULT GetStat(
   
 |常數|值|描述|  
 |--------------|-----------|-----------------|  
-|SCRIPTSTAT_STATEMENT_COUNT|1|傳回執行啟動指令碼或重設統計資料之後的陳述式的數目。|  
+|SCRIPTSTAT_STATEMENT_COUNT|1|傳回的陳述式執行，因為指令碼啟動或重設統計資料數目。|  
   
  `pluHi`  
  [out]表示統計資料的 64 位元不帶正負號的整數高 32 位元。  
@@ -55,12 +55,12 @@ HRESULT GetStat(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括但不限於下列資料表中的值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會傳回標準的指令碼統計資料。  
+ 這個方法會傳回其中一個標準的指令碼統計資料。  
   
 ## <a name="see-also"></a>另請參閱  
  [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   

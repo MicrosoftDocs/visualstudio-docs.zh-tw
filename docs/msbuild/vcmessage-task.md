@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 956675fd-05dc-40b4-856f-616145103498
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f51abd957f5a39cdc3af1f34bf3af28999ab80fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5543627332e7c70fa40df5be4091bca7fab7bcfd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928957"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004847"
 ---
 # <a name="vcmessage-task"></a>VCMessage 工作
 在組建期間記錄警告和錯誤訊息。  

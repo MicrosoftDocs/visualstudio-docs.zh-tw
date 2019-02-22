@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerHeapEnum::GetNameIdMap |Microsoft 文件
+title: IActiveScriptProfilerHeapEnum::GetNameIdMap |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0761517236fbcc05655365d77ce2990e9d1c566
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cdff1983524b9234d536a23378d300a0b815522d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724438"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092634"
 ---
 # <a name="iactivescriptprofilerheapenumgetnameidmap"></a>IActiveScriptProfilerHeapEnum::GetNameIdMap
-傳回對應的字串名稱[PROFILER_HEAP_OBJECT_NAME_ID 類型](../../winscript/reference/profiler-heap-object-name-id-type.md)值。  
+傳回字串的名稱對應至[PROFILER_HEAP_OBJECT_NAME_ID 類型](../../winscript/reference/profiler-heap-object-name-id-type.md)值。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetNameIdMap (    [out, size_is(,*pcelt)] LPCWSTR* pNameList[],     [out] UINT *pcelt);  
 ```  
   
@@ -33,7 +33,7 @@ HRESULT GetNameIdMap (    [out, size_is(,*pcelt)] LPCWSTR* pNameList[],     [out
  [out]與相關聯的名稱陣列[PROFILER_HEAP_OBJECT_NAME_ID 類型](../../winscript/reference/profiler-heap-object-name-id-type.md)值。  
   
  `pcelt`  
- [out]陣列中的名稱數目。  
+ [out]陣列中的名稱的數目。  
   
 ## <a name="return-value"></a>傳回值  
  HRESULT。

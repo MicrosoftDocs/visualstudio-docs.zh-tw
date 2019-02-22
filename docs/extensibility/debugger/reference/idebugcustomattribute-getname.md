@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ba509cc5-5816-4925-a094-4c72d88c360c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753964c19c27709af1adf7b38e92555a46559776
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e744839b7f0461249f16afec7c2186adc26e245f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944693"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021334"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 取得自訂屬性的名稱。  

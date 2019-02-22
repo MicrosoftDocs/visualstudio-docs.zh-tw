@@ -1,5 +1,5 @@
 items:
-- name: Visual Studio 中的 Visual Basic
+- name: Visual Basic 教學課程
   href: index.yml
   items:
   - name: 總覽
@@ -12,7 +12,7 @@ items:
       href: tutorial-projects-solutions.md
     - name: 更多 Visual Studio 功能
       href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
-  - name: 教學課程
+  - name: 建立應用程式
     items:
     - name: 建立主控台應用程式
       href: tutorial-console.md
@@ -39,9 +39,10 @@ items:
       href: ../../deployment/index.md
     - name: 存取資料
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
-ms.openlocfilehash: 9026d3a8b9ba8463ea126c3d94e45743bd4b2874
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+    expanded: true
+ms.openlocfilehash: c0ec7f39f6c9b04bf04e057deaf315927fb09433
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442891"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923645"

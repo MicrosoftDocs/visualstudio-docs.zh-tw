@@ -1,19 +1,18 @@
 ---
 title: 建立項目範本
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d921257e202e3b8175fcfd01910c00ece4306136
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 22d0fcfe1a048b83926cbd79e9c479e2f1ec85ab
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952257"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935572"
 ---
 # <a name="how-to-create-item-templates"></a>HOW TO：建立項目範本
 

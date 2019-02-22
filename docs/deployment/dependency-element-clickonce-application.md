@@ -1,8 +1,6 @@
 ---
 title: '&lt;相依性&gt;項目 （ClickOnce 應用程式） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
@@ -25,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d47775f928fc52fb7ffce2e0818fea19e30dee0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 195e574a3ae98bc43e41d2040e2070cf36b89067
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950208"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920652"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;相依性&gt;項目 （ClickOnce 應用程式）
 識別平台或組件的相依性所需的應用程式。  
@@ -88,7 +86,7 @@ ms.locfileid: "49950208"
 </dependency>  
 ```  
 
-## <a name="elements-and-attributes"></a>項目和屬性  
+## <a name="elements-and-attributes"></a>元素和屬性  
  `dependency`是必要元素。 可能有多個執行個體`dependency`相同的應用程式資訊清單中。  
 
  `dependency`項目沒有屬性，並且包含下列子元素。  
@@ -104,20 +102,20 @@ ms.locfileid: "49950208"
 |`description`|選擇性。 人類看得懂的格式，描述所描述的作業系統`dependentOS`項目。|  
 
 ### <a name="osversioninfo"></a>osVersionInfo  
- 必要。 這個元素是 `dependentOS` 元素的子項，並包含 `os` 元素。 這個元素沒有屬性。  
+ 必要項。 這個元素是 `dependentOS` 元素的子項，並包含 `os` 元素。 這個元素沒有屬性。  
 
-### <a name="os"></a>作業系統  
- 必要。 這個元素是 `osVersionInfo` 元素的子項。 這個項目具有下列屬性。  
+### <a name="os"></a>os  
+ 必要項。 這個元素是 `osVersionInfo` 元素的子項。 這個項目具有下列屬性。  
 
 |屬性|描述|  
 |---------------|-----------------|  
-|`majorVersion`|必要。 指定的 os 主要版本號碼。|  
-|`minorVersion`|必要。 指定作業系統次要版本號碼。|  
-|`buildNumber`|必要。 指定作業系統組建編號。|  
-|`servicePackMajor`|必要。 指定作業系統 service pack 主要版本號碼。|  
+|`majorVersion`|必要項。 指定的 os 主要版本號碼。|  
+|`minorVersion`|必要項。 指定作業系統次要版本號碼。|  
+|`buildNumber`|必要項。 指定作業系統組建編號。|  
+|`servicePackMajor`|必要項。 指定作業系統 service pack 主要版本號碼。|  
 |`servicePackMinor`|選擇性。 指定作業系統 service pack 次要版本號碼。|  
 |`productType`|選擇性。 識別產品類型值。 有效值為 `server`、`workstation` 及 `domainController`。 比方說，對於 Windows 2000 Professional，這個屬性值是`workstation`。|  
-|`suiteType`|選擇性。 識別系統或系統的組態類型上提供的產品套件。 有效值`backoffice`， `blade`， `datacenter`， `enterprise`， `home`， `professional`， `smallbusiness`， `smallbusinessRestricted`，和`terminal`。 比方說，對於 Windows 2000 Professional，這個屬性值是`professional`。|  
+|`suiteType`|選擇性。 識別系統或系統的組態類型上提供的產品套件。 有效值為 `backoffice`、`blade`、`datacenter`、`enterprise`、`home`、`professional`、`smallbusiness`、`smallbusinessRestricted` 和 `terminal`。 比方說，對於 Windows 2000 Professional，這個屬性值是`professional`。|  
 
 ### <a name="dependentassembly"></a>dependentAssembly  
  選擇性。 包含`assemblyIdentity`項目。 `dependentOS`並`dependentAssembly`是互斥的項目： 其中一種必須存在`dependency`項目，但非兩者。  
@@ -127,19 +125,19 @@ ms.locfileid: "49950208"
 
 | 屬性 | 描述 |
 |-----------------------| - |
-| `dependencyType` | 必要。 指定相依性類型。 有效值為 `preprequisite` 和 `install`。 `install`組件已安裝的一部分[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 A`prerequisite`組件必須位於全域組件快取 (GAC) 之前[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式安裝。 |
-| `allowDelayedBinding` | 必要。 指定是否可以在執行階段以程式設計方式載入組件。 |
+| `dependencyType` | 必要項。 指定相依性類型。 有效值為 `preprequisite` 和 `install`。 `install`組件已安裝的一部分[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 A`prerequisite`組件必須位於全域組件快取 (GAC) 之前[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式安裝。 |
+| `allowDelayedBinding` | 必要項。 指定是否可以在執行階段以程式設計方式載入組件。 |
 | `group` | 選擇性。 如果`dependencyType`屬性設為`install`，視該只有安裝指定的組件的具名的群組。 如需詳細資訊，請參閱[逐步解說：下載組件隨選與 ClickOnce 部署應用程式開發介面使用設計工具](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)。<br /><br /> 如果設定為`framework`而`dependencyType`屬性設為`prerequisite`，將組件指定為.NET Framework 的一部分。 在安裝時，這個組件不檢查全域組件快取 (GAC)[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]和更新版本。 |
 | `codeBase` | 當`dependencyType`屬性設為`install`。 相依的組件的路徑。 可能是絕對路徑或資訊清單的程式碼的相對路徑的基底。 此路徑必須是為了讓組件資訊清單有效的 URI。 |
 | `size` | 當`dependencyType`屬性設為`install`。 相依的組件，以位元組為單位的大小。 |
 
 ### <a name="assemblyidentity"></a>assemblyIdentity  
- 必要。 這個元素是 `dependentAssembly` 元素的子項，並具有下列屬性。  
+ 必要項。 這個元素是 `dependentAssembly` 元素的子項，並具有下列屬性。  
 
 |屬性|描述|  
 |---------------|-----------------|  
-|`name`|必要。 識別應用程式的名稱。|  
-|`version`|必要。 指定應用程式的版本號碼，格式如下： `major.minor.build.revision`|  
+|`name`|必要項。 識別應用程式的名稱。|  
+|`version`|必要項。 指定應用程式的版本號碼，格式如下： `major.minor.build.revision`|  
 |`publicKeyToken`|選擇性。 指定 16 個字元的十六進位字串，表示最後 8 個位元組`SHA-1`簽署的應用程式或組件之公開金鑰的雜湊值。 用來簽署類別目錄的公用金鑰必須是 2048 位元或更多。|  
 |`processorArchitecture`|選擇性。 指定的處理器。 有效值`x86`用於 32 位元 Windows 和`I64`的 64 位元 Windows。|  
 |`language`|選擇性。 識別兩個部分的語言代碼，例如 EN-US，組件。|  

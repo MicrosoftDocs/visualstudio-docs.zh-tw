@@ -2,21 +2,20 @@
 title: 工作流程設計工具-Send 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.ServiceModel.Activities.Send.UI
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 788884590054b29ae31df9c5ba2ca31ac0ea5c49
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b984a404ed8a33f2b4f78bca8e5a85f4d11bd91
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954017"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908513"
 ---
 # <a name="send-activity-designer"></a>Send 活動設計工具
 

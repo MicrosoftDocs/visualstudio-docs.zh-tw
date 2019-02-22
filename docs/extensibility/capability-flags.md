@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 958cbc17c843ba4d23ac83b928f7b517ada93080
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfbc456ea42342187b5d1d3039c10b3336714133
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922123"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934188"
 ---
 # <a name="capability-flags"></a>功能旗標
 SCC_CAP_*xxx*旗標是用來表示功能的原始檔控制外掛程式的位元旗標。 SCC_EXCAP_*xxx*旗標是累加的旗標，表示擴充的功能，並解析為整數值。  

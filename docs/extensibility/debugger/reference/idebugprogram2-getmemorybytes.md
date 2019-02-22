@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetMemoryBytes |Microsoft Docs
+title: IDebugProgram2::GetMemoryBytes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1cdedb47-caf8-468e-aaf4-163f16afb403
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ec3740bb170f4284f9ef7e9cb35ea66008694e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 217ff277e5d4fb3ba6edbbceb2b3b306f1bbf54e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913960"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011758"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
 擷取程式所佔用的記憶體位元組。  

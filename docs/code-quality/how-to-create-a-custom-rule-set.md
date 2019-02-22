@@ -1,7 +1,6 @@
 ---
 title: 建立自訂程式碼分析規則集
 ms.date: 11/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - rule sets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2a0b2de9450fc2e9350371b08f4a3a9bf8d9c1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a7ed11e7d3e093afaeaa19fd87ea68b7fecd266
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929909"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952446"
 ---
 # <a name="customize-a-rule-set"></a>自訂規則集
 

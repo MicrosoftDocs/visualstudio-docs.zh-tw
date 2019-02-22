@@ -1,20 +1,19 @@
 ---
 title: 適用於 Managed 程式碼的擴充正確性規則規則集
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 000b1780b0124d579ed0b9481c7d18966663ca51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987310"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930580"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充正確性規則規則集
 Microsoft 擴充正確性規則規則集最大化的邏輯和 framework 使用錯誤報告的程式碼分析。 額外的重點會放在特定的案例，例如 COM 互通性和行動應用程式。 您應該考慮包含這個規則集如果任一這些案例適用於您的專案或您的專案中找出其他問題。
@@ -90,24 +89,24 @@ Microsoft 擴充正確性規則規則集最大化的邏輯和 framework 使用�
 |[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|列舉值中應該要有值為零的成員|
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|多載加號和減號運算子時必須一併多載等號比較運算子|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|不要將常值當作已當地語系化的參數傳遞|
-|[CA1308 必須](../code-quality/ca1308-normalize-strings-to-uppercase.md)|必須將字串標準化為大寫字母|
+|[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|必須將字串標準化為大寫字母|
 |[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|不要忽略方法的結果|
 |[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|正確呼叫 GC.SuppressFinalize|
 |[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|屬性不應該傳回陣列|
-|[CA1820 應該](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|應該使用字串長度測試空白字串|
+|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|應該使用字串長度測試空白字串|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|只使用來自目標架構的 API|
-|[CA2004 必須](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|必須移除對 GC.KeepAlive 的呼叫|
+|[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|必須移除對 GC.KeepAlive 的呼叫|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|必須使用 SafeHandle 封裝原生資源|
 |[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|必須使用一般處理常式攔截非 CLSCompliant 例外狀況|
 |[CA2104](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|不要宣告唯讀的可變動參考類型|
 |[CA2105](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|陣列欄位不應該為唯讀|
-|[CA2106 必須](../code-quality/ca2106-secure-asserts.md)|必須保護判斷提示|
+|[CA2106](../code-quality/ca2106-secure-asserts.md)|必須保護判斷提示|
 |[CA2115](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)|使用原生資源時必須呼叫 GC.KeepAlive|
 |[CA2119](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|密封方法以滿足私用介面的要求|
-|[CA2120 必須](../code-quality/ca2120-secure-serialization-constructors.md)|必須保護序列化建構函式|
+|[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|必須保護序列化建構函式|
 |[CA2121](../code-quality/ca2121-static-constructors-should-be-private.md)|靜態建構函式應該為私用的|
 |[CA2130](../code-quality/ca2130-security-critical-constants-should-be-transparent.md)|安全性關鍵常數應該是透明的|
-|[CA2205 必須](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|必須使用 Win32 API 的受控對應項|
+|[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|必須使用 Win32 API 的受控對應項|
 |[CA2215](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|Dispose 方法應該呼叫基底類別處置|
 |[CA2221](../code-quality/ca2221-finalizers-should-be-protected.md)|Finalizer 方法應該為 protected|
 |[CA2222](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|不要降低繼承成員的可視性|
@@ -115,8 +114,8 @@ Microsoft 擴充正確性規則規則集最大化的邏輯和 framework 使用�
 |[CA2224](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|多載等號比較運算子時必須一併覆寫 Equals|
 |[CA2226](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|運算子應該有對稱的多載|
 |[CA2227](../code-quality/ca2227-collection-properties-should-be-read-only.md)|集合屬性應該為唯讀|
-|[CA2239 必須](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|必須為選擇性欄位提供還原序列化方法|
-|[CA1032 必須](../code-quality/ca1032-implement-standard-exception-constructors.md)|必須實作標準例外狀況建構函式|
+|[CA2239](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|必須為選擇性欄位提供還原序列化方法|
+|[CA1032](../code-quality/ca1032-implement-standard-exception-constructors.md)|必須實作標準例外狀況建構函式|
 |[CA1054](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|URI 參數不應該為字串|
 |[CA1055](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|URI 傳回值不應該為字串|
 |[CA1056](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|URI 屬性不應該為字串|
@@ -143,13 +142,13 @@ Microsoft 擴充正確性規則規則集最大化的邏輯和 framework 使用�
 |[CA2144](../code-quality/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)|透明程式碼不可以從位元組陣列載入組件|
 |[CA2145](../code-quality/ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md)|透明方法不可以使用 SuppressUnmanagedCodeSecurityAttribute 來裝飾|
 |[CA2204](../code-quality/ca2204-literals-should-be-spelled-correctly.md)|常值必須使用正確的拼字|
-|[CA2211 非常數](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|非常數欄位不應該為可見的|
+|[CA2211](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|非常數欄位不應該為可見的|
 |[CA2217](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)|不要以 FlagsAttribute 標記列舉|
 |[CA2218](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)|覆寫 Equals 時必須一併覆寫 GetHashCode|
 |[CA2219](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)|不要在 exception 子句中引發例外狀況|
 |[CA2225](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|運算子多載必須有具名的替代方法|
 |[CA2228](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|不要使用尚未發行版本所支援的格式建置資源|
-|[CA2230 必須](../code-quality/ca2230-use-params-for-variable-arguments.md)|必須使用 params 作為變數引數|
+|[CA2230](../code-quality/ca2230-use-params-for-variable-arguments.md)|必須使用 params 作為變數引數|
 |[CA2233](../code-quality/ca2233-operations-should-not-overflow.md)|運算不應該發生溢位|
-|[CA2234 必須](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|必須傳遞 System.Uri 物件而非字串|
+|[CA2234](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|必須傳遞 System.Uri 物件而非字串|
 |[CA2243](../code-quality/ca2243-attribute-string-literals-should-parse-correctly.md)|屬性字串常值必須正確剖析|

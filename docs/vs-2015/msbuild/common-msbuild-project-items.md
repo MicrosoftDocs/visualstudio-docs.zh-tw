@@ -1,14 +1,9 @@
 ---
 title: 一般 MSBuild 專案項目 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0d4975390802c8a04459750be5e5405bd17c3a68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238403"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54796873"
 ---
 # <a name="common-msbuild-project-items"></a>一般 MSBuild 專案項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +78,7 @@ ms.locfileid: "49238403"
 |項目名稱|描述|  
 |---------------|-----------------|  
 |名稱|選擇性字串。 參考的顯示名稱。|  
-|Project|選擇性字串。 參考的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|  
+|專案|選擇性字串。 參考的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|  
 |Package|選擇性字串。 所參考的專案檔路徑。|  
   
 ### <a name="compile"></a>編譯  
@@ -94,7 +89,7 @@ ms.locfileid: "49238403"
 |相依依據|選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。|  
 |自動產生|選擇性布林值。 指出是否已透過 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 整合式開發環境 (IDE) 為專案產生檔案。|  
 |連結|選擇性字串。 當檔案實際位於專案檔影響力之外時所顯示的標記路徑。|  
-|可見|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管中顯示檔案。|  
+|Visible|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管中顯示檔案。|  
 |複製到輸出目錄|選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1.永不<br />2.永遠<br />3.保留最新的|  
   
 ### <a name="embeddedresource"></a>內嵌資源  
@@ -107,11 +102,11 @@ ms.locfileid: "49238403"
 |最後產生輸出|必要的字串。 在此項目執行的任何檔案產生器所建立的檔案名稱。|  
 |自訂工具命名空間|必要的字串。 在此項目上執行的任何檔案產生器應在其中建立程式碼的命名空間。|  
 |連結|選擇性字串。 如果檔案實際位於專案影響力之外，便會顯示標記路徑。|  
-|可見|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管中顯示檔案。|  
+|Visible|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管中顯示檔案。|  
 |複製到輸出目錄|選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1.永不<br />2.永遠<br />3.保留最新的|  
 |邏輯名稱|必要的字串。 內嵌資源的邏輯名稱。|  
   
-### <a name="content"></a>Content  
+### <a name="content"></a>內容  
  代表不會編譯到專案中，但可能內嵌或一起發行的檔案。  
   
 |項目名稱|描述|  
@@ -123,7 +118,7 @@ ms.locfileid: "49238403"
 |連結|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管中顯示檔案。|  
 |發行狀態|必要的字串。 內容的發行狀態，可以是：<br /><br /> -   預設值<br />-   包含<br />-   排除<br />-   資料檔<br />-   必要條件|  
 |為組件|選擇性布林值。 指定檔案是否為組件。|  
-|可見|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管中顯示檔案。|  
+|Visible|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管中顯示檔案。|  
 |複製到輸出目錄|選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1.永不<br />2.永遠<br />3.保留最新的|  
   
 ### <a name="none"></a>無  
@@ -136,7 +131,7 @@ ms.locfileid: "49238403"
 |最後產生輸出|必要的字串。 在此項目執行的任何檔案產生器所建立的檔案名稱。|  
 |自訂工具命名空間|必要的字串。 在此項目上執行的任何檔案產生器應在其中建立程式碼的命名空間。|  
 |連結|選擇性字串。 如果檔案實際位於專案影響力之外，便會顯示標記路徑。|  
-|可見|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管中顯示檔案。|  
+|Visible|選擇性布林值。 指出是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的方案總管中顯示檔案。|  
 |複製到輸出目錄|選擇性字串。 決定是否要將檔案複製到輸出目錄。 值為：<br /><br /> 1.永不<br />2.永遠<br />3.保留最新的|  
   
 ### <a name="baseapplicationmanifest"></a>基本應用程式資訊清單  
@@ -148,8 +143,5 @@ ms.locfileid: "49238403"
 ### <a name="import"></a>匯入  
  代表應該由 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 編譯器匯入命名空間的組件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [通用的 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)
-
-
-

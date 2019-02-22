@@ -1,21 +1,19 @@
 ---
 title: 設計使用者介面
 ms.date: 07/17/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 880da508-7573-4434-b3a0-d48cf003c0a9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f178c2a129ca0c9817dfa3d8545236705739e5db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b3096242335a1e9d374da4a801c9ff4d2c80635
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938236"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951718"
 ---
 # <a name="design-user-interfaces"></a>設計使用者介面
 

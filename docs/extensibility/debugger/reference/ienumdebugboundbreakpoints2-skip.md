@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugBoundBreakpoints2::Skip |Microsoft Docs
+title: IEnumDebugBoundBreakpoints2::Skip | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 95659709-6d7c-44ca-b598-629eb688429f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cf66109aef6111fff0da1dab13e94cf351e7c87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d65f7e7852988aa065e7df03bcf55e11d26016ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841313"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977677"
 ---
 # <a name="ienumdebugboundbreakpoints2skip"></a>IEnumDebugBoundBreakpoints2::Skip
 略過指定的元素數目。  
@@ -41,7 +41,7 @@ int Skip(
  [in]略過的項目數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 會傳回`S_FALSE`如果`celt`大於其餘項目數目，否則會傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 會傳回`S_FALSE`如果`celt`大於其餘項目數目，否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  如果`celt`指定的值大於其餘的項目，列舉型別設定為結束和`S_FALSE`會傳回。  

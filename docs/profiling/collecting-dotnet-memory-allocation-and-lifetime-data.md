@@ -1,23 +1,21 @@
 ---
 title: 收集 .NET 記憶體配置和存留期資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
 - Profiling Tools,.NET memory method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2484072a0f85b002ff2e59512f44ca0826540fd3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3ab421e4a74b76d8caf8edba159b640c9313215c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775202"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006082"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>收集 .NET 記憶體配置和存留期資料
 
@@ -75,12 +73,12 @@ Visual Studio 分析工具支援收集 .NET 記憶體配置和物件存留期資
 |工作|相關內容|
 |----------|---------------------|
 |在 [二進位檔]  頁面上，請指定此模組已檢測複本的位置。 根據預設，會將原始二進位碼檔案移到備份資料夾中。|- [如何：重新配置所檢測的二進位檔](../profiling/how-to-relocate-instrumented-binaries.md)|
-|在 [檢測]  頁面上，從程式碼剖析排除小型函式，以減少程式碼剖析額外負荷，而且排除在 ASP.NET 網頁的設定檔 JavaScript 程式碼，並指定要在檢測程序之前和之後於命令提示字元執行的命令。|- [如何：從檢測排除或包含精簡函式](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [如何：指定檢測前置和檢測後續命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
+|在 [檢測]  頁面上，從程式碼剖析排除小型函式，以減少程式碼剖析額外負荷，而且排除在 ASP.NET 網頁的設定檔 JavaScript 程式碼，並指定要在檢測程序之前和之後於命令提示字元執行的命令。|- [如何：從檢測排除或包含精簡函式](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [如何：指定檢測前和檢測後命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
 |在 [CPU 計數器]  頁面上，指定將加入程式碼剖析資料的一或多個處理器效能計數器。|- [如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)|
 |在 [進階] 頁面上，指定您想要的任何其他 VSInstr.exe 選項，例如要包含或排除特定函式的選項。 如需有關 VSInstr 選項的詳細資訊，請參閱 [VSInstr](../profiling/vsinstr.md)|- [如何：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [如何：限制檢測特定函式](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 
 ## <a name="see-also"></a>另請參閱
 
 [設定效能工作階段](../profiling/configuring-performance-sessions.md)  
-[操作說明：選擇收集方法](../profiling/how-to-choose-collection-methods.md)  
+[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)  
 [效能工作階段屬性](../profiling/performance-session-properties.md)

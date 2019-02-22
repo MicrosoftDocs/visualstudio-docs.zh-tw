@@ -1,7 +1,6 @@
 ---
 title: CA2119:密封方法以滿足私用介面的要求
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - SealMethodsThatSatisfyPrivateInterfaces
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 483d02e1-cfaf-4754-a98f-4116df0f3509
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 48fbe9e56c1286acc2eb948d0ec692f441bd1975
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c019e98e7f1311b6521dff563cb8e7bb0a2356e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920731"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952043"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119:密封方法以滿足私用介面的要求
 

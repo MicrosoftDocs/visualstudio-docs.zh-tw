@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 78a5724a-3b9f-4c78-9c0d-8faa3924f81c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21978fef22f704c30de2859725fb2f5e704fcefc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 923ba2a517ae934fb83c0cb36a29dbe518a2a2a3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886354"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991056"
 ---
 # <a name="commandplacements-element"></a>CommandPlacements 元素
 CommandPlacements 元素分組 CommandPlacement 元素和其他 CommandPlacements 分組。  

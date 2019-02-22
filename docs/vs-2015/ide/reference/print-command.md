@@ -1,14 +1,9 @@
 ---
 title: 列印命令 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.print
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e742b1fa6a25525d33e7b8a6fcb321cfea86f693
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c72f6668e6babab6bd62cfb0e9a6ca8632df2a84
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232748"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54763566"
 ---
 # <a name="print-command"></a>列印命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Debug.Print text
   
 ## <a name="arguments"></a>引數  
  `text`  
- 必要。 要評估的運算式或要顯示的文字。  
+ 必要項。 要評估的運算式或要顯示的文字。  
   
 ## <a name="remarks"></a>備註  
  您可以使用問號 (?) 作為此命令的別名。 因此；例如，命令  
@@ -64,12 +59,9 @@ Debug.Print text
 >Debug.Print varA  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [評估陳述式命令](../../ide/reference/evaluate-statement-command.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

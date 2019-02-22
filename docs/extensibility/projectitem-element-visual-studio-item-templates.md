@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a27c297dd9b33bbbe02b7addb827323505a7156d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de479c78d5699fc904174368044a82af5dd64103
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956058"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980722"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 項目 （Visual Studio 項目範本）
 指定項目範本中所包含的檔案。  
@@ -27,9 +27,9 @@ ms.locfileid: "53956058"
 > [!NOTE]
 >  `ProjectItem`元素接受不同的屬性，根據該範本是否為專案或項目。 本主題說明`ProjectItem`項目的項目。 如需說明`ProjectItem`項目專案範本，請參閱[ProjectItem 項目 （Visual Studio 專案範本）](../extensibility/projectitem-element-visual-studio-project-templates.md)。  
   
- \<VSTemplate >  
- \<TemplateContent >  
- \<專案項目 >  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,7 +44,7 @@ ms.locfileid: "53956058"
 </ProjectItem>  
 ```  
   
-## <a name="attributes-and-elements"></a>屬性和項目  
+## <a name="attributes-and-elements"></a>屬性和元素  
  下列章節將說明屬性、子項目和父項目。  
   
 ### <a name="attributes"></a>屬性  
@@ -57,10 +57,10 @@ ms.locfileid: "53956058"
 | `ReplaceParameters` | 選擇性屬性。<br /><br /> 布林值，指定的項目是否有從範本建立專案時，必須被取代的參數值。 預設值為 `false`。 |
 | `TargetFileName` | 選擇性屬性。<br /><br /> 指定從範本建立的項目名稱。 這個屬性可用於建立項目名稱使用參數取代。 |
   
-### <a name="child-elements"></a>項目子系  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
 |元素|描述|  
 |-------------|-----------------|  

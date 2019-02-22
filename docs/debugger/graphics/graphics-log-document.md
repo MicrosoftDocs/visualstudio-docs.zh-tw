@@ -1,8 +1,6 @@
 ---
 title: 圖形記錄文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.vsglog.error
@@ -11,15 +9,15 @@ f1_keywords:
 ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab888fa800e8be695b6dca4cf38f2a0ed478ebb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ba089ace95308ddcf6067920da8484064e797ecd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931099"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015104"
 ---
 # <a name="graphics-log-document"></a>圖形記錄文件
 圖形記錄文件是在圖形診斷工作階段下執行應用程式時所發生圖形事件的記錄。 錄製之後，您可以在 Visual Studio 圖形分析器中檢查記錄來診斷轉譯和效能問題。  
@@ -31,35 +29,35 @@ ms.locfileid: "49931099"
 ## <a name="understanding-graphics-log-documents"></a>了解圖形記錄文件  
  使用圖形分析器檢查圖形記錄文件，可以將對擷取期間所發生的轉譯目標造成影響的 Direct3D 事件視覺化。 您可以找出含有非預期輸出之呈現目標的區域。 當您在受影響區域中選取像素時，可以使用圖形診斷檢查像素及其著色器、影響它的 Direct3D 事件、導致那些事件的應用程式呼叫堆疊，以及支援那些事件的 DirectX 物件。 您可以使用此資訊診斷遊戲或應用程式中的呈現問題。  
 
- 視窗的上半部 (**圖形 Experiment.vsglog**) 會顯示所選取的畫面格的下方顯示目前的轉譯目標輸出**畫面格清單**，其中包含的縮圖影像擷取的畫面格。  
+ 視窗 (**Graphics Experiment.vsglog**) 上方顯示所選取畫面目前的轉譯目標輸出，而下方顯示含有所擷取畫面之縮圖影像的 [畫面清單]。  
 
 #### <a name="to-inspect-a-frame"></a>檢查畫面格  
 
--   在 **畫面格清單**，選取您想要檢查之畫面格。 圖形記錄文件上方的呈現目標輸出隨即更新，以顯示選取的畫面格。  
+-   在 [畫面清單] 中，選取您要檢查的畫面。 圖形記錄文件上方的呈現目標輸出隨即更新，以顯示選取的畫面格。  
 
 #### <a name="to-inspect-a-pixel"></a>檢查像素  
 
--   在圖形記錄文件上方，從呈現目標輸出中選取您要的像素。 選取一個像素時，您可以使用**圖形像素歷史記錄**視窗來檢視選取的像素的詳細的資訊。 如需詳細資訊，請參閱 <<c0> [ 像素歷史記錄](graphics-pixel-history.md)。  
+-   在圖形記錄文件上方，從呈現目標輸出中選取您要的像素。 選取像素後，您可以使用 [圖形像素記錄] 視窗，檢視所選取像素的詳細資訊。 如需詳細資訊，請參閱 <<c0> [ 像素歷史記錄](graphics-pixel-history.md)。  
 
 ## <a name="playback-machine"></a>播放電腦  
- 也顯示在右上角**畫面格清單**是**播放電腦**。 播放電腦是一部電腦或一個裝置，用來在稍後的圖形診斷工作階段期間，從圖形記錄檔播放圖形事件。 透過使用不同的裝置 (非開發電腦) 播放所擷取的事件，您可以更精確地重現發生問題的執行環境；例如，您可以使用具有與開發電腦所使用之圖形硬體或驅動程式不同的電腦，或其他類型的裝置 (例如 ARM Windows RT 平板電腦或 Windows Phone 裝置)。  
+ [播放電腦] 也會顯示在 [畫面清單] 右上角。 播放電腦是一部電腦或一個裝置，用來在稍後的圖形診斷工作階段期間，從圖形記錄檔播放圖形事件。 透過使用不同的裝置 (非開發電腦) 播放所擷取的事件，您可以更精確地重現發生問題的執行環境；例如，您可以使用具有與開發電腦所使用之圖形硬體或驅動程式不同的電腦，或其他類型的裝置 (例如 ARM Windows RT 平板電腦或 Windows Phone 裝置)。  
 
- 如需有關如何指定播放電腦的資訊，請參閱 <<c0> [ 如何： 變更圖形診斷播放電腦](how-to-change-the-graphics-diagnostics-playback-machine.md)。  
+ 如需有關如何指定播放電腦的資訊，請參閱[How to:變更圖形診斷播放電腦](how-to-change-the-graphics-diagnostics-playback-machine.md)。  
 
 ## <a name="graphics-log-summary-information"></a>圖形記錄摘要資訊  
- 主動式文件中，圖形記錄檔時**屬性**視窗會顯示裝載圖形診斷擷取工作階段的環境的相關資訊。 隨即顯示數個分類的資訊。  
+ 當圖形記錄檔是使用中文件時，[屬性] 視窗會顯示裝載圖形診斷擷取工作階段之環境的相關資訊。 隨即顯示數個分類的資訊。  
 
  **Direct3D 資訊**  
  列出有關擷取工作階段期間，所使用之顯示卡的硬體和驅動程式功能資訊。  
 
 |屬性|描述|  
 |--------------|-----------------|  
-|**10 位元 XR 高彩格式**|**真**如果 10 位元 XR 高彩格式支援，否則**False**。|  
-|**DirectCompute CS 4.x**|**真**Compute Shader 4.0 是否支援，否則**False**。|  
-|**雙精確度著色器**|**True**如果顯示卡支援雙精確度 （64 位元） 浮點值; 否則**False**。|  
-|**驅動程式命令清單**|**真**如果驅動程式支援命令清單;，否則為**False**。|  
-|**驅動程式同時建立**|**True**如果驅動程式支援並行的 （非同步） 建立; 否則**False**。|  
-|**延伸的格式 （BGRA 等）**|**真**延伸的格式 （如 bgra） 是否支援，否則**False**。|  
+|**10 位元 XR 高彩格式**|如果支援 10 位元 XR 高彩格式，則為 **True**，否則為 **False**。|  
+|**DirectCompute CS 4.x**|如果支援計算著色器 4.0，則為 **True**，否則為 **False**。|  
+|**雙精確度著色器**|如果顯示卡支援雙精確度 (64 位元) 浮點數，則為 **True**，否則為 **False**。|  
+|**驅動程式命令清單**|如果驅動程式支援命令清單，則為 **True**，否則為 **False**。|  
+|**驅動程式同時建立**|如果驅動程式支援同時 (非同步) 建立，則為 **True**，否則為 **False**。|  
+|**延伸格式 (BGRA 等)**|如果支援延伸格式 (例如 BGRA)，則為 **True**，否則為 **False**。|  
 |**最大 HW 功能層級**|顯示顯示卡所支援的最高功能層級。|  
 
  **顯示資訊**  
@@ -78,7 +76,7 @@ ms.locfileid: "49931099"
 
 |屬性|描述|  
 |--------------|-----------------|  
-|**路徑**|.vsglog 檔案的路徑。 **注意：** 下舊版擷取，這個屬性是未使用。|  
+|**路徑**|.vsglog 檔案的路徑。 **注意：** 在舊版擷取下，未使用此屬性。|  
 
  **模組資訊**  
  列出應用程式已在擷取工作階段期間，所載入之動態連結程式庫 (DLL) 的名稱和版本。  
@@ -92,7 +90,7 @@ ms.locfileid: "49931099"
 |**OS 架構**|作業系統的目標 CPU 架構。|  
 |**OS 版本**|作業系統版本。|  
 |**處理器**|已安裝在電腦中的處理器。|  
-|**目標應用程式架構**|應用程式的目標 CPU 架構。 這可能會與不同**OS 架構**。|  
+|**目標應用程式架構**|應用程式的目標 CPU 架構。 這可能與 **OS 架構**不同。|  
 
  **目標應用程式**  
  列出做為擷取工作階段之原因的應用程式相關資訊。  
@@ -114,6 +112,6 @@ ms.locfileid: "49931099"
 | **工作階段開始時間** | 擷取工作階段開始的日期和時間。 |
 | **Size** | 圖形記錄文件的大小。 |
 
-## <a name="see-also"></a>另請參閱  
- [逐步解說： 因端點著色而遺漏的物件](walkthrough-missing-objects-due-to-vertex-shading.md)   
- [逐步解說：偵錯因著色而產生的顯示錯誤](walkthrough-debugging-rendering-errors-due-to-shading.md)
+## <a name="see-also"></a>請參閱  
+ [逐步解說：因頂點著色而遺漏的物件](walkthrough-missing-objects-due-to-vertex-shading.md)   
+ [逐步解說：針對因著色而產生的顯示錯誤進行偵錯](walkthrough-debugging-rendering-errors-due-to-shading.md)

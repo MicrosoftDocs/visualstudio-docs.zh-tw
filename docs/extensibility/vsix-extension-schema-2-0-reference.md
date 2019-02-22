@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f9019ca281dd86ef4665e8f6590798d4dfbd917
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e07fc492b5ed44e584870b4c891a9669152442d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914662"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993919"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 延伸結構描述 2.0 參考
 VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構描述所決定。 此結構描述的 2.0 版支援的自訂型別和屬性加入。  資訊清單的結構描述是 「 可延伸的。 它並不了解的 XML 元素和屬性，則會忽略資訊清單的載入器。  
@@ -45,7 +45,7 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
   
 -   `<Identity>` -定義此套件的識別資訊，並包含下列屬性：  
   
-    -   `Id` -此屬性必須是其作者所選封裝的唯一識別碼。 CLR 型別是命名空間的相同方式，應該限定名稱：Company.Product.Feature.Name。 `Id`屬性會限制為 100 個字元。  
+    -   `Id` -此屬性必須是其作者所選封裝的唯一識別碼。 CLR 型別是命名空間的相同方式，應該限定名稱：Company.Product.Feature.Name. `Id`屬性會限制為 100 個字元。  
   
     -   `Version` -定義此套件和其內容的版本。 這個屬性會遵循 CLR 組件版本控制格式：Major.Minor.Build.Revision (1.2.40308.00)。 具有較高的版本號碼的套件會被視為更新套件，並可以透過現有的安裝版本安裝。  
   
@@ -94,7 +94,7 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
   
 -   `<InstallationTarget>` -此項目會控制 VSIX 安裝程式會安裝套件的位置。 如果值`Scope`屬性是 「 ProductExtension"封裝必須為目標的 SKU，已安裝的資訊清單檔做為它的內容公告其可用性，可延伸模組的一部分。 `<InstallationTarget>`項目具有下列屬性`Scope`屬性已明確或預設值"ProductExtension 」:  
   
-    -   `Id` -此屬性會識別封裝。  屬性會遵循命名空間慣例：Company.Product.Feature.Name。 `Id`屬性只能包含英數字元，且上限為 100 個字元。 預期的值：  
+    -   `Id` -此屬性會識別封裝。  屬性會遵循命名空間慣例：Company.Product.Feature.Name. `Id`屬性只能包含英數字元，且上限為 100 個字元。 預期的值：  
   
         -   Microsoft.VisualStudio.IntegratedShell  
   
@@ -140,7 +140,7 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
   
 -   `<Dependency>` 項目-這個子項目具有下列屬性：  
   
-    -   `Id` -此屬性必須是相依的套件的唯一識別碼。 此身分識別值必須符合`<Metadata><Identity>Id`封裝這個封裝所相依的屬性。 `Id`屬性遵循的命名空間慣例：Company.Product.Feature.Name。 屬性只能包含英數字元，而且限制為 100 個字元。  
+    -   `Id` -此屬性必須是相依的套件的唯一識別碼。 此身分識別值必須符合`<Metadata><Identity>Id`封裝這個封裝所相依的屬性。 `Id`屬性遵循的命名空間慣例：Company.Product.Feature.Name. 屬性只能包含英數字元，而且限制為 100 個字元。  
   
     -   `Version` -此屬性會指定與此 SKU 的最小和最大支援版本的版本範圍。 封裝中可詳述支援的 Sku 的版本。 版本範圍標記法是 [12.0，13.0]，其中：  
   

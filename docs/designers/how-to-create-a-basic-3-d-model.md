@@ -1,23 +1,21 @@
 ---
-title: 如何：建立基本 3D 模型
+title: HOW TO：建立基本 3D 模型
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6242b80c1dcefe0e1a3a35561337a75e6098d25d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 45944afe3c5ebd1baa307f6063b021c09fd6bfa6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913445"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970266"
 ---
-# <a name="how-to-create-a-basic-3d-model"></a>如何：建立基本 3D 模型
+# <a name="how-to-create-a-basic-3d-model"></a>HOW TO：建立基本 3D 模型
 
 本文會示範如何使用模型編輯器來建立基本的 3D 模型。 涵蓋下列活動：
 
@@ -72,10 +70,10 @@ ms.locfileid: "49913445"
 
    ![精簡化房屋完成後的模型](../designers/media/gfx_model_demo_house_final.png)
 
-   下一步可以將著色器套用至這個 3D 模型。 如需資訊，請參閱[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
+   下一步可以將著色器套用至這個 3D 模型。 如需相關資訊，請參閱[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：為 3D 地形建立模型](../designers/how-to-model-3-d-terrain.md)
+- [如何：建立 3D 地形模型](../designers/how-to-model-3-d-terrain.md)
 - [模型編輯器](../designers/model-editor.md)
 - [著色器設計工具](../designers/shader-designer.md)

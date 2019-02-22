@@ -4,7 +4,6 @@ titleSuffix: ''
 description: 了解如何逐步解除安裝 Visual Studio。
 ms.date: 08/16/2017
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - uninstall
@@ -12,15 +11,15 @@ f1_keywords:
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9539f8ec113c9a59e6d0eeb1975393ee63286a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0fe26bb7e0139c1521de17dab7cd7e8146aa780a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823188"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907828"
 ---
 # <a name="uninstall-visual-studio-2017"></a>解除安裝 Visual Studio 2017
 

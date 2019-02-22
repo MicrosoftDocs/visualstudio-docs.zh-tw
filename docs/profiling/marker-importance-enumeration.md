@@ -1,8 +1,6 @@
 ---
 title: marker_importance 列舉 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_importance
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d5524ea0-0227-4d8e-9122-332291042df5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6541ddecceff6d9e7867dd5feead3457b2248b45
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 3d4049a3792fcc529352baef3e4649c6157aa7f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844114"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992148"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance 列舉
 表示並行視覺化檢視標記的重要性層級。  
@@ -42,7 +40,7 @@ enum marker_importance;
 |`normal_importance`|指定標記有一般重要性。|  
   
 ## <a name="requirements"></a>需求  
- **標頭：***cvmarkersobj.h*  
+ **標頭：** *cvmarkersobj.h*  
   
  **命名空間：** Concurrency::diagnostic  
   

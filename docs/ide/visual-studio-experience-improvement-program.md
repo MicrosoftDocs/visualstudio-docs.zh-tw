@@ -2,19 +2,18 @@
 title: 客戶經驗改進計畫
 description: 了解如何管理 Visual Studio 中的隱私權設定。
 ms.date: 05/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: PoulChapman
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71205231e3734fd5df876501f3880afa8b0779c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbebdd92941fcc7873e59973303289a60496383f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822767"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927525"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客戶經驗改進計畫
 

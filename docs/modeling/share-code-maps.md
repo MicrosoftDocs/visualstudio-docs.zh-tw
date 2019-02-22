@@ -4,16 +4,15 @@ ms.date: 05/16/2018
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c80c99effebab8d2dffa53621af8f7c60bcad629
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70c4cd238b6e5d31eced6a35ff0c7d24ab85a280
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900804"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907889"
 ---
 # <a name="share-code-maps"></a>共用 Code Map
 

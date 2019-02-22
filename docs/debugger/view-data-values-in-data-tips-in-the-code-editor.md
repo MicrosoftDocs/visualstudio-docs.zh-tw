@@ -2,7 +2,6 @@
 title: 檢視 DataTips 中的變數值 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c84c6c9049fe11de16267267df86c88851cfcdfe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: caca7622d2634a6da08d0d09aaef5b0a8634180e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066846"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986549"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>在資料提示方塊中，程式碼編輯器中的檢視資料值
 
-資料提示方塊提供方便的方法，讓您在偵錯期間檢視程式中的變數資訊。 資料提示方塊只能夠在中斷模式中運作，並且只能使用目前執行範圍內的變數。 如果這是您第一次您嘗試偵錯程式碼時，您可能想要讀取[修正 bug，藉由撰寫更好C#程式碼](../debugger/write-better-code-with-visual-studio.md)並[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)再通過這篇文章。
-
-如果這是您第一次，偵錯時，您可能想要閱讀[撰寫出更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)並[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)閱讀這篇文章之前。
+資料提示方塊提供方便的方法，讓您在偵錯期間檢視程式中的變數資訊。 資料提示方塊只能夠在中斷模式中運作，並且只能使用目前執行範圍內的變數。 如果這是您嘗試偵錯程式碼的第一次，您可能想要閱讀[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)並[偵錯的技術和工具](../debugger/write-better-code-with-visual-studio.md)之前，先透過這篇文章。
   
 ## <a name="work-with-datatips"></a>使用資料提示方塊
 
@@ -127,8 +124,7 @@ Float 固定資料提示方塊，將滑鼠停在資料提示方塊，並從操�
 
 ## <a name="see-also"></a>另請參閱  
  [什麼是偵錯？](../debugger/what-is-debugging.md)  
- [透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)  
+ [偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)  
  [第一次查看偵錯](../debugger/debugger-feature-tour.md)[偵錯工具中的檢視資料](../debugger/viewing-data-in-the-debugger.md)   
  [監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
-

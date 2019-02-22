@@ -1,7 +1,6 @@
 ---
 title: CA2114:方法安全性應該是類型的超集
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - MethodSecurityShouldBeASupersetOfType
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 663f7aa4-8be5-4bd5-be92-4e9444f07077
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec58e8060447a02309a0a902bcf63eea8805ca8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 623416e557759ace1ad6403ef8ef977df01da39e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881788"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911123"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114:方法安全性應該是類型的超集
 

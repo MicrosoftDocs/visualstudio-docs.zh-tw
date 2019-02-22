@@ -1,7 +1,6 @@
 ---
 title: 程式碼分析原則錯誤
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.policyfailures
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3edd9b341d2ccead65fee8f97f32ec54f7857dea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 103a48172665875c3615ce57b90dc77beeb6b5c4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987806"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921558"
 ---
 # <a name="code-analysis-policy-errors"></a>程式碼分析原則錯誤
 

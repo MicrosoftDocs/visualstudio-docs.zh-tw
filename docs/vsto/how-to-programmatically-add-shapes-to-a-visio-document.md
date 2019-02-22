@@ -10,15 +10,15 @@ helpviewer_keywords:
 - shapes [Office development in Visual Studio], adding Visio shapes
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79b71b89ef8923d311fd38684158dd1694aa893f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: accb45527d73c041600dd3216c85e54bdadd5f4a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865553"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862599"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>HOW TO：以程式設計方式在 Visio 文件中加入圖形
   您可以從樣板擷取主圖形並把圖形放在使用中的頁面上，即可在 Microsoft Office Visio 文件中加入圖形。  

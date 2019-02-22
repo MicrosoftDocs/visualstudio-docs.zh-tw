@@ -1,23 +1,21 @@
 ---
 title: 進階、C#、文字編輯器、選項
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 010f2a2e6dc163f24a29e8e352b21d8ef8d72b48
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670711"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927512"
 ---
 # <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 
@@ -48,7 +46,7 @@ ms.locfileid: "50670711"
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    排序之後：
 
    ```csharp
@@ -59,7 +57,7 @@ ms.locfileid: "50670711"
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - 使用指示詞群組來進行分隔
 
    選取後，快顯功能表中的 [移除並排序 Using] 命令會透過在具有相同根命名空間的指示詞群組之間插入空白行來分隔 `using` 指示詞。
@@ -74,28 +72,28 @@ ms.locfileid: "50670711"
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    排序之後：
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- 為參考組件中的類型建議 Using 
-- 為 NuGet 套件中的類型建議 Using 
+
+- 為參考組件中的類型建議 Using
+- 為 NuGet 套件中的類型建議 Using
 
    選取這些選項後，[快速動作](../quick-actions.md)可用來安裝 NuGet 套件，並為未參考的類型新增 `using` 指示詞。
 
    ![在 Visual Studio 中安裝 NuGet 套件的快速動作](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>醒目提示
 
 - 反白顯示游標下的符號參考
@@ -110,13 +108,17 @@ ms.locfileid: "50670711"
 
 - 顯示程序行分隔符號
 
-   文字編輯器會指出程序的可見範圍。 會在專案的 *.vb* 原始程式檔中描繪一行，而這些原始程式檔是位於下表所列的位置：
+   文字編輯器會指出程序的可見範圍。 系統會在專案的 *.cs* 原始程式檔中描繪一行，描繪的位置如下表所列：
 
-   |vb 原始程式檔中的位置|行位置的範例|
+   |.cs 原始程式檔中的位置|行位置的範例|
    |---------------------------------|------------------------------|
    |在區塊宣告建構關閉之後|-   在類別、結構、模組、介面和列舉的結尾處<br />-   在屬性、函式或子函式之後<br />-   不在屬性中的 get 與 set 子句之間|
    |在一組的單一行建構之後|-   在重要的陳述式之後，類別檔中的型別定義之前<br />-   在類別中宣告的變數之後，任何程序之前|
    |在單一行宣告 (非區塊層級宣告) 之後|-   接在重要的陳述式、繼承陳述式、變數宣告、事件宣告、委派宣告和 DLL 宣告陳述式之後|
+
+## <a name="block-structure-guides"></a>區塊結構輔助線
+
+選取這些核取方塊可在程式碼中的大括號 (**{}**) 之間顯示虛線垂直線。 然後，您可以輕鬆查看宣告層級和程式碼層級建構的個別程式碼區塊。
 
 ## <a name="editor-help"></a>編輯器說明
 

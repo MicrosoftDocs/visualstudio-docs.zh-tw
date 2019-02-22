@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_hasnestedtypes |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1a8306bd-10dd-40a9-81fc-01f71c348484
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb894c305fa45216a0c7b6be7dfe10c19145b7d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3c3673ec71fb5dfec22ab7be6d8013d1f2d223b9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936715"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965090"
 ---
 # <a name="idiasymbolgethasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
 擷取指定的使用者定義資料類型是否有巢狀型別定義的旗標。  
@@ -27,7 +25,7 @@ ms.locfileid: "49936715"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_hasNestedTypes (   
+HRESULT get_hasNestedTypes (   
    BOOL* pRetVal  
 );  
 ```  
@@ -49,5 +47,5 @@ HRESULT get_hasNestedTypes (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

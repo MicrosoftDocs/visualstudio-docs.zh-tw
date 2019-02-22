@@ -1,12 +1,32 @@
 ---
 title: 索引標籤、所有語言、文字編輯器、選項
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.ResJSON.Tabs
-- VS.ToolsOptionsPages.Text_Editor.JavaScript.Tabs
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.Tabs
+- VS.ToolsOptionsPages.Text_Editor.Basic.Tabs
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Tabs
+- VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Tabs
+- VS.ToolsOptionsPages.Text_Editor.CoffeeScript.Tabs
+- VS.ToolsOptionsPages.Text_Editor.CSS.Tabs
+- VS.ToolsOptionsPages.Text_Editor.Dockerfile.Tabs
+- VS.ToolsOptionsPages.Text_Editor.F%2523.Tabs
+- VS.ToolsOptionsPages.Text_Editor.HQL.Tabs
+- VS.ToolsOptionsPages.Text_Editor.HTML.Tabs
+- VS.ToolsOptionsPages.Text_Editor.HTMLX.Tabs
+- VS.ToolsOptionsPages.Text_Editor.JavaScript.Tabs
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.Tabs
+- VS.ToolsOptionsPages.Text_Editor.JSON.Tabs
+- VS.ToolsOptionsPages.Text_Editor.LESS.Tabs
+- VS.ToolsOptionsPages.Text_Editor.Plain_Text.Tabs
+- VS.ToolsOptionsPages.Text_Editor.ResJSON.Tabs
+- VS.ToolsOptionsPages.Text_Editor.SCSS.Tabs
+- VS.ToolsOptionsPages.Text_Editor.SQL_Server_Tools.Tabs
+- VS.ToolsOptionsPages.Text_Editor.StreamAnalytics.Tabs
+- VS.ToolsOptionsPages.Text_Editor.T-SQL90.Tabs
+- VS.ToolsOptionsPages.Text_Editor.U-SQL.Tabs
+- VS.ToolsOptionsPages.Text_Editor.XAML.Tabs
+- VS.ToolsOptionsPages.Text_Editor.XML.Tabs
 helpviewer_keywords:
 - indents, Code Editor
 - Code Editor, default behavior
@@ -18,15 +38,15 @@ helpviewer_keywords:
 ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7006f8a65f840906bbc082635322b8c549928312
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09bf4f205b7fc200038b2aedfcf3a8318cb1c7a9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985981"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954864"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>索引標籤、所有語言、文字編輯器、選項
 

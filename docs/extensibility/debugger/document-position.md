@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e30a7ca3846ae40f1fd830f2e16a30642f3925a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 713c6fb29b8fbce169139f498fc3bde4f3eea2bf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896028"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991394"
 ---
 # <a name="document-position"></a>文件位置
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯*文件位置*:  

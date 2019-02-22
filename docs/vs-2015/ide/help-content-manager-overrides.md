@@ -1,25 +1,20 @@
 ---
 title: Help Content Manager 覆寫設定 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 35c3d8a13ace801a06e7d1c658c9923e1432ef59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9dfd7f7d75a44cb28e2829e38c27b63a329eacaa
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190251"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54804462"
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 覆寫設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,8 +32,5 @@ ms.locfileid: "49190251"
 |指向網路共用上的本機內容存放區|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.2\Catalogs\VisualStudio11|LocationPath=”內容存放區網路共用”|  
 |停用第一次啟動 Visual Studio 功能時所安裝的內容。|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (在 64 位元電腦上)\Microsoft\VisualStudio\14.0\Help|DisableFirstRunHelpSelection - 設為 1 可停用第一次啟動 Visual Studio 時所設定的說明功能。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)
-
-
-

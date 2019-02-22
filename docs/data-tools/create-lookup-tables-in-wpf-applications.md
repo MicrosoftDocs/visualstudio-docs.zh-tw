@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5fd3e7867b74c9dab923e91fd76424e88b309743
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305477"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931607"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 應用程式中建立查閱資料表
 
@@ -39,7 +37,7 @@ ms.locfileid: "52305477"
 
     -   WCF 資料服務，WCF 服務或 web 服務。 如需詳細資訊，請參閱 <<c0> [ 如何： 連接到服務中的資料](../data-tools/how-to-connect-to-data-in-a-service.md)。
 
-    -   物件 如需詳細資訊，請參閱 <<c0> [ 繫結至 Visual Studio 中的物件](bind-objects-in-visual-studio.md)。
+    -   物件。 如需詳細資訊，請參閱 <<c0> [ 繫結至 Visual Studio 中的物件](bind-objects-in-visual-studio.md)。
 
     > [!NOTE]
     > 您可以建立查閱資料表之前，必須存在兩個相關的資料表或物件當做專案資料來源。
@@ -48,7 +46,7 @@ ms.locfileid: "52305477"
 
      如需有關有效置放目標的詳細資訊，請參閱 <<c0> [ 繫結 WPF 控制項新增至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
 
-3.  按一下 [資料 **] 功能表上的 [顯示資料來源**]，以開啟 [資料來源 **] 視窗。
+3.  按一下 [資料] 功能表上的 [顯示資料來源]，以開啟 [資料來源] 視窗。
 
 4.  展開中的節點**Zdroje dat**  視窗中，直到您可以看到父資料表或物件和關聯的子資料表或物件。
 

@@ -8,23 +8,24 @@ helpviewer_keywords:
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d84b8b6b186887fe9add71d5e70ac007e3157ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964633"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934201"
 ---
 # <a name="list-of-available-services"></a>可用服務清單
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和 Visual Studio SDK 支援下列服務。 某些套件提供自己此處未列出的服務 — 例如，語言服務並沒有單一服務的 GUID。 若要在登錄中尋找語言服務的 GUID，您必須使用的語言名稱。  
-  
- 若要取得的主要介面或介面顯示與每個服務使用此處所列，或從其他來源 （例如，語言服務） 取得的服務 Guid。  
-  
-## <a name="the-services"></a>服務  
-  
+
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和 Visual Studio SDK 支援下列服務。 某些套件提供自己此處未列出的服務 — 例如，語言服務並沒有單一服務的 GUID。 若要在登錄中尋找語言服務的 GUID，您必須使用的語言名稱。
+
+若要取得的主要介面或介面顯示與每個服務使用此處所列，或從其他來源 （例如，語言服務） 取得的服務 Guid。
+
+## <a name="the-services"></a>服務
+
 | 服務 | 介面 | Visual Studio | Visual Studio 2005 | 描述 |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | 是 | 是 | 用來取得 Vspackage<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>從 ActiveX 控制項來加速非同步資料傳輸的介面。 |
@@ -156,7 +157,7 @@ ms.locfileid: "53964633"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | 是 | 是 | 可讓 VSPackage 將 URL 新增至最近使用的 (MRU) 清單的 Url，並取得一份 MRU 清單中的所有 Url。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | 是 | 是 | 可讓 VSPackage 來取得在其中封裝的一部分可能平均分攤工作量的視窗框架。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | 是 | 是 | 提供特定的中繼資料檔案與相關聯的 XML 格式的文件檔案的存取權。 |
-  
-## <a name="see-also"></a>另請參閱  
- [COM 和受管理的服務](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
- [使用和提供服務](../../extensibility/using-and-providing-services.md)
+
+## <a name="see-also"></a>另請參閱
+
+- [使用和提供服務](../../extensibility/using-and-providing-services.md)

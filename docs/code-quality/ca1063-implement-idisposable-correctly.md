@@ -1,7 +1,6 @@
 ---
 title: CA1063:必須正確實作 IDisposable
 ms.date: 02/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 12afb1ea-3a17-4a3f-a1f0-fcdb853e2359
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 55ebe4c74bcaf2a8d5299018b7666328ff51c028
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e4bc426162919f4112ffdfcc0fbeeb0fefd2f09e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949046"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945751"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:必須正確實作 IDisposable
 

@@ -1,7 +1,6 @@
 ---
 title: CA1409:Com 可見類型應該是可建立的
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - ComVisibleTypesShouldBeCreatable
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9f59569b-de15-4a38-b7cb-cff152972243
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fd168c5174dcc403a38c6eb3e443c3711fce537
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05dbe964a16f838088fe8b053d59c1916daf38f7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821684"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933715"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409:Com 可見類型應該是可建立的
 

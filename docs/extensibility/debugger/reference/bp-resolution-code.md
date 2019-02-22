@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_CODE |Microsoft Docs
+title: BP_RESOLUTION_CODE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,50 +9,50 @@ helpviewer_keywords:
 ms.assetid: ac103ec5-771c-4667-92de-b5abb53bbb52
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e8295187087915feb8b0766e363f0d4883d56d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b792d8b113cf19fbc7f9bf3efb45963c447df564
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925283"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318468"
 ---
 # <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
-描述程式碼中斷點的位置。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-typedef struct _BP_RESOLUTION_CODE {   
-   IDebugCodeContext2* pCodeContext;  
-} BP_RESOLUTION_CODE;  
-```  
-  
-```csharp  
-public struct BP_RESOLUTION_CODE {   
-   public IDebugCodeContext2 pCodeContext;  
-};  
-```  
-  
-## <a name="members"></a>成員  
- `pCodeContext`  
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)識別中斷點的位置，在程式碼中的物件。  
-  
-## <a name="remarks"></a>備註  
- 此結構是隸屬[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)結構，也就是在開啟的成員[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)所傳回的結構[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法。  
-  
-## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
-  
- 命名空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>另請參閱  
- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)   
- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)   
- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)   
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
+描述程式碼中斷點的位置。
+
+## <a name="syntax"></a>語法
+
+```cpp
+typedef struct _BP_RESOLUTION_CODE {
+    IDebugCodeContext2* pCodeContext;
+} BP_RESOLUTION_CODE;
+```
+
+```csharp
+public struct BP_RESOLUTION_CODE {
+    public IDebugCodeContext2 pCodeContext;
+};
+```
+
+## <a name="members"></a>成員
+`pCodeContext`  
+[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)識別中斷點的位置，在程式碼中的物件。
+
+## <a name="remarks"></a>備註
+此結構是隸屬[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)結構，也就是在開啟的成員[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)所傳回的結構[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法。
+
+## <a name="requirements"></a>需求
+標頭： msdbg.h
+
+命名空間：Microsoft.VisualStudio.Debugger.Interop
+
+組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>另請參閱
+[結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)  
+[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
+[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)  
+[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

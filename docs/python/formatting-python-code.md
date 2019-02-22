@@ -1,22 +1,21 @@
 ---
 title: 格式化 Python 程式碼
 description: Visual Studio 可以自動重新設定 Python 程式碼格式，包括間距、陳述式、換行和註解。
-ms.date: 10/28/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/11/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b830640284fe5b44a76b5f7d2424e2c1ccd24ea0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46aba6fc0af8fa5c89f8d919fac17f7b59f7c2a2
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850212"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987492"
 ---
 # <a name="format-python-code"></a>格式化 Python 程式碼
 
@@ -44,8 +43,8 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 下表提供各種選項範例：
 
 | 類別定義選項 | 已核取 | 已清除 |
-| --- | --- | --- | 
-| **在類別宣告的名稱與基底清單之間插入空格** | `class X (object): pass` | `class X(object): pass` | 
+| --- | --- | --- |
+| **在類別宣告的名稱與基底清單之間插入空格** | `class X (object): pass` | `class X(object): pass` |
 | **在基底清單括號內插入空格** | `class X( object ): pass` | `class X(object): pass` |
 | **在空白基底清單括號內插入空格** | `class X( ): pass` | `class X(): pass` |
 
@@ -53,7 +52,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 | 函式定義選項 | 已核取 | 已清除 |
 | --- | --- | --- |
-| **在函式宣告的名稱與參數清單之間插入空格** | `def X (): pass` | `def X(): pass` | 
+| **在函式宣告的名稱與參數清單之間插入空格** | `def X (): pass` | `def X(): pass` |
 | **在參數清單括號內插入空格** | `def X( a, b ): pass` | `def X(a, b): pass` |
 | **在空白的參數清單括號內插入空格** | `def X( ): pass` | `def X(): pass` |
 | **在預設參數值的 '=' 前後插入空格** | `includes X(a = 42): pass` | `includes X(a=42): pass` |

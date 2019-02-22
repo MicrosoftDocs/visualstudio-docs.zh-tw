@@ -1,14 +1,9 @@
 ---
 title: 識別項的陳述式完成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [JavaScript], statement completion
 - statement completion, JavaScript IntelliSense
@@ -16,13 +11,13 @@ ms.assetid: c2cd4945-c67e-471b-8057-96cfd25f7fb2
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d58c5ecc1d787195f7f5c91a07da7a4e775fc27e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 89f507c2f4d01cf5e3e1e983cfcb5bafd9d9a7dd
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827049"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54787648"
 ---
 # <a name="statement-completion-for-identifiers"></a>識別項的陳述式完成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,8 +60,5 @@ JavaScript 不允許明確輸入的變數宣告。 如此一來，IntelliSense �
   
   您可以使用 XML 文件註解或 JavaScript IntelliSense 擴充性功能，以覆寫物件的完成清單。 使用這些功能，您可以提供類型資訊和更具描述性的 IntelliSense 資訊時，它可能否則無法使用。 如需詳細資訊，請參閱 <<c0> [ 擴充 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)並[建立的 XML 文件註解](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)
-
-
-

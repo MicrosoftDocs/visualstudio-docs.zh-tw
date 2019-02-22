@@ -1,25 +1,23 @@
 ---
-title: 如何：收集程式行層級取樣資料 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：收集程式行層級取樣資料 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, line-level sampling
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0920c9a506adaf562a8acc77b2b030e461f11ed1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af1e0bfd6aff9e7816feee5a627274f2645cf0b0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934884"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959157"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>如何：收集程式行層級取樣資料
+# <a name="how-to-collect-line-level-sampling-data"></a>HOW TO：收集程式行層級取樣資料
 程式行層級取樣是程式碼剖析工具的一項功能，可以在需要大量處理器資源的函式 (例如包含大量專有樣本的函式) 中判斷處理器花最多時間處理的程式碼。  
   
 ## <a name="overview"></a>總覽  

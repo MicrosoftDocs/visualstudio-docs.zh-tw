@@ -1,22 +1,21 @@
 ---
 title: Python 互動式視窗 (REPL)
 description: 在 Visual Studio 中使用互動式視窗 (REPL) 快速進行 Python 程式碼開發。
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/11/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d092feee3327af0f7ee7c439eb4c9fc1e74e9138
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835642"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155652"
 ---
 # <a name="work-with-the-python-interactive-window"></a>使用 Python 互動式視窗
 
@@ -26,20 +25,16 @@ Visual Studio 為您的每個 Python 環境提供互動式「讀取、求值、�
 
 Visual Studio 有多個 Python REPL 模式可供選擇：
 
-| REPL | 說明 | 編輯 | 偵錯 | 影像 |
+| REPL | 描述 | 編輯 | 偵錯 | 影像 |
 | --- | --- | --- | --- | --- |
 | 標準 | 預設的 REPL，直接與 Python 交談 | 標準編輯 (多行等)。 | 是，透過 `$attach` | 否 |
 | 偵錯 | 預設的 REPL，與已完成偵錯的 Python 程序交談 | 標準編輯 | 僅偵錯 | 否 |
 | IPython | REPL 與 IPython 後端交談 | IPython 命令、Pylab 便利性 | 否 | 是，內嵌於 REPL |
-| IPython (沒有 Pylab) | REPL 與 IPython 後端交談 | 標準 IPython | 否 | 是，獨立視窗 | 
+| IPython (沒有 Pylab) | REPL 與 IPython 後端交談 | 標準 IPython | 否 | 是，獨立視窗 |
 
 本文章描述**標準**和**偵錯** REPL 模式。 如需 IPython 模式的詳細資料，請參閱[使用 IPython REPL](interactive-repl-ipython.md)。
 
-如需範例的詳細逐步解說 (包含與編輯器的互動，例如 **Ctrl**+**Enter**)，請參閱[教學課程步驟 3：使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)。 
-
-|   |   |
-|---|---|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看有關互動式視窗的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) \(英文\) (2 分 22 秒)。|
+如需範例的詳細逐步解說 (包含與編輯器的互動，例如 **Ctrl**+**Enter**)，請參閱[教學課程步驟 3：使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)。
 
 ## <a name="open-an-interactive-window"></a>開啟互動式視窗
 
@@ -78,7 +73,7 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 
 <a name="meta-commands"></a>**互動式**視窗也支援數個中繼命令。 所有中繼命令的開頭都是 `$`，而且您可以輸入 `$help` 來取得中繼命令清單，並輸入 `$help <command>` 來取得特定命令的詳細使用方式。
 
-| 中繼命令 | 說明 |
+| 中繼命令 | 描述 |
 | --- | --- |
 | `$$` | 插入註解，這對於在工作階段期間為程式碼做出註解非常有用。 |
 | `$attach` | 將 Visual Studio 偵錯工具附加至 REPL 視窗程序以啟用偵錯。 |

@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_hassetjump |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_hasSetJump | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 22656206-dccf-40ed-b179-fc016d1b262a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29e31a9d3ef88732c06c9b0efa7cd37fc18cd8d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a9ce12ce3497e47e302233d739a11b4d0e527c40
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880035"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034164"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
 擷取指定的函式是否包含使用的旗標[setjmp](/cpp/c-runtime-library/reference/setjmp)命令 (搭配[longjmp](/cpp/c-runtime-library/reference/longjmp)命令時，這些形成例外狀況處理的 C 樣式方法)。  
@@ -47,10 +45,10 @@ HRESULT get_hasSetJump(
 |需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK 8.0 版|  
+|版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Idiasymbol:: Get_haslongjump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)   
+ [IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)   
  [longjmp](/cpp/c-runtime-library/reference/longjmp)   
  [setjmp](/cpp/c-runtime-library/reference/setjmp)

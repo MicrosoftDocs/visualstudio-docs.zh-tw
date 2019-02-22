@@ -1,8 +1,6 @@
 ---
 title: '&lt;相依性&gt;項目 （ClickOnce 部署） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
@@ -24,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33e210b0787c3325a009bc54505812f22c44da84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a322d201310121a843fd1fe805d502b5aa9364b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916890"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941297"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;相依性&gt;項目 （ClickOnce 部署）
 識別要安裝，應用程式的版本和應用程式資訊清單的位置。  
@@ -72,32 +70,32 @@ ms.locfileid: "49916890"
 </dependency>  
 ```  
 
-## <a name="elements-and-attributes"></a>項目和屬性  
+## <a name="elements-and-attributes"></a>元素和屬性  
  `dependency`是必要元素。 它沒有任何屬性。 部署資訊清單可以有多個`dependency`項目。  
 
  `dependency`項目通常表示主應用程式的相依性組件內含[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 如果 Main.exe 應用程式會使用稱為 DotNetAssembly.dll 的組件，該組件必須在相依性一節中所列。 相依性，不過，也可以表示其他類型的相依性，例如倚賴特定版本的 common language runtime 中，在全域組件快取 (GAC) 中的組件或 COM 物件上。 因為它是一種自動部署技術，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]無法起始下載和安裝這些類型的相依性，但它不會防止應用程式執行如果一或多個指定的相依性不存在。  
 
 ## <a name="dependentassembly"></a>dependentAssembly  
- 必要。 這個項目包含`assemblyIdentity`項目。 下表顯示的屬性`dependentAssembly`支援。  
+ 必要項。 這個項目包含`assemblyIdentity`項目。 下表顯示的屬性`dependentAssembly`支援。  
 
 
 | 屬性 | 描述 |
 |------------------| - |
 | `preRequisite` | 選擇性。 指定這個組件應該已經存在於 GAC。 有效值為 `true` 和 `false`。 如果`true`，和指定的組件不存在於 GAC、 應用程式無法執行。 |
 | `visible` | 選擇性。 識別最上層應用程式身分識別，包括其相依性。 在內部使用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]來管理應用程式存放區和啟用。 |
-| `dependencyType` | 必要。 此相依性和應用程式之間的關係。 有效值為：<br /><br /> -   `install`. 元件代表目前的應用程式是個別安裝。<br />-   `preRequisite`. 目前的應用程式需要的元件。 |
+| `dependencyType` | 必要項。 此相依性和應用程式之間的關係。 有效值為：<br /><br /> -   `install`. 元件代表目前的應用程式是個別安裝。<br />-   `preRequisite`. 目前的應用程式需要的元件。 |
 | `codebase` | 選擇性。 應用程式資訊清單的完整路徑。 |
 | `size` | 選擇性。 應用程式資訊清單，以位元組為單位的大小。 |
 
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- 必要。 這個元素是 `dependentAssembly` 元素的子項。 內容`assemblyIdentity`必須如所述相同[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單。 下表顯示的屬性`assemblyIdentity`項目。  
+ 必要項。 這個元素是 `dependentAssembly` 元素的子項。 內容`assemblyIdentity`必須如所述相同[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單。 下表顯示的屬性`assemblyIdentity`項目。  
 
 |屬性|描述|  
 |---------------|-----------------|  
-|`Name`|必要。 識別應用程式的名稱。|  
-|`Version`|必要。 指定的版本號碼的應用程式，以下列格式： `major.minor.build.revision`|  
-|`publicKeyToken`|必要。 指定 16 個字元的十六進位字串，表示簽署的應用程式或組件之公開金鑰的 sha-1 雜湊最後 8 個位元組。 用來登入的公用金鑰必須是 2048 位元或更高。|  
-|`processorArchitecture`|必要。 指定微處理器。 有效值`x86`用於 32 位元 Windows 和`IA64`的 64 位元 Windows。|  
+|`Name`|必要項。 識別應用程式的名稱。|  
+|`Version`|必要項。 指定的版本號碼的應用程式，以下列格式： `major.minor.build.revision`|  
+|`publicKeyToken`|必要項。 指定 16 個字元的十六進位字串，表示簽署的應用程式或組件之公開金鑰的 sha-1 雜湊最後 8 個位元組。 用來登入的公用金鑰必須是 2048 位元或更高。|  
+|`processorArchitecture`|必要項。 指定微處理器。 有效值`x86`用於 32 位元 Windows 和`IA64`的 64 位元 Windows。|  
 |`Language`|選擇性。 識別組件的兩個組件語言代碼。 例如，EN-US，代表針對英文 （美國）。 預設為 `neutral`。 此元素為`asmv2`命名空間。|  
 |`type`|選擇性。 針對回溯相容性 Windows-並存安裝技術。 唯一允許的值是`win32`。|  
 

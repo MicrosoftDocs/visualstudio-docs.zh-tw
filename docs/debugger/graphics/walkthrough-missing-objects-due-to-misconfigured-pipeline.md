@@ -1,21 +1,19 @@
 ---
-title: 逐步解說： 遺漏的物件，因為設定不正確的管線 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：遺漏的物件，因為設定不正確的管線 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e313b7db1306465bce530eea41e875227abc0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: cad880d3c16d2118364a0d9fbce17261b814619b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855179"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931892"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>逐步解說：因管線設定錯誤而遺漏的物件
 此逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷工具來調查因為沒有設定像素著色器而遺失的物件。  
@@ -73,7 +71,7 @@ ms.locfileid: "49855179"
   
 #### <a name="to-examine-device-context"></a>檢查裝置內容  
   
-1. 開啟 [d3d11 裝置內容] 。 在 [**圖形管線階段**] 視窗中，選擇**ID3D11DeviceContext**屬於連結`DrawIndexed`會顯示在視窗頂端的呼叫。  
+1. 開啟 [d3d11 裝置內容] 。 在 [圖形管線階段] 視窗中，選擇 **ID3D11DeviceContext** 連結，此連結為視窗頂端所顯示 `DrawIndexed` 呼叫的一部分。  
   
 2. 檢查顯示在 [d3d11 裝置內容]  索引標籤中的裝置狀態，以確認在繪製呼叫期間，沒有使用中的像素著色器。 在此情節中，在 **像素著色器狀態**下顯示的 **著色器一般資訊**表示著色器為 **NULL**：  
   

@@ -1,8 +1,6 @@
 ---
-title: 如何： 從尋找視窗開啟訊息檢視 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：從尋找視窗開啟訊息檢視 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Messages View in Spy++, opening
@@ -10,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: 601a193e-432a-417b-9406-6fec9e401264
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08f832e61bdb39bc87b59fdd64deab8cd86382a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5b31bd0a1eea92fcc881f3be008ce0ea633782de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839215"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967189"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>如何：從尋找視窗開啟訊息檢視
+# <a name="how-to-open-messages-view-from-find-window"></a>HOW TO：從尋找視窗開啟訊息檢視
 您可能會發現它使用方便**尋找視窗**對話方塊來選取目標視窗中，，然後開啟該視窗的 [訊息] 檢視。  
 
 ### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>若要開啟 訊息 檢視視窗使用 尋找視窗對話方塊  
@@ -39,7 +37,7 @@ ms.locfileid: "49839215"
 
 4. 底下**顯示**，選取**訊息**。  
 
-5. 按下**確定**。  
+5. 按 [確定]。  
 
     空白[訊息檢視](../debugger/messages-view.md)視窗隨即開啟，並有**訊息**功能表會加入至 Spy + + 工具列。  
 

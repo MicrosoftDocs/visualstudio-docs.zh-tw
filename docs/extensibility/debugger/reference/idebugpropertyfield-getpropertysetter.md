@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 744d76fd-2bcc-4917-a040-ce4cc714ef61
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf68cd07a2952d421010a75255b1e6261a2220e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b2f9ef2eabe27c2fb1d6c0b27bd1db9c8a11b490
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907744"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946773"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 取得設定屬性的方法。  

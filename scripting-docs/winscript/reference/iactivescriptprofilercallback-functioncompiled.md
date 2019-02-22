@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::FunctionCompiled |Microsoft 文件
+title: IActiveScriptProfilerCallback::FunctionCompiled |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 797476d4892224ad0b27c9caf579c0704693c835
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4bd032914605c61b13a0a56a42e510c2af252f7e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645908"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091399"
 ---
 # <a name="iactivescriptprofilercallbackfunctioncompiled"></a>IActiveScriptProfilerCallback::FunctionCompiled
-遇到函式物件的指令碼引擎編譯指令碼時通知分析工具。  
+編譯指令碼時，指令碼引擎的物件會發生函式會通知分析工具。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT FunctionCompiled(  
     [in] PROFILER_TOKEN functionId,  
     [in] PROFILER_TOKEN scriptId,  
@@ -39,25 +39,25 @@ HRESULT FunctionCompiled(
   
 #### <a name="parameters"></a>參數  
  `functionId`  
- [in]函式的唯一識別碼。 指令碼引擎所指派這個識別碼。  
+ [in]函式的唯一識別碼。 此識別碼會指定指令碼引擎。  
   
  `scriptId`  
- [in]指令碼屬於函式的唯一識別碼。  
+ [in]屬於此函式的指令碼的唯一識別碼。  
   
  `pwszFunctionName`  
- [in]匿名函式的函式或為 null 的名稱。  
+ [in]匿名函式名稱的函式，則為 null。  
   
  `pwszFunctionNameHint`  
- [in]推斷的名稱的函式，或如果指令碼引擎不會推斷的任何名稱為 null。  
+ [in]函式或如果指令碼引擎不會推斷的任何名稱為 null 的推斷的名稱。  
   
  `pIDebugDocumentContext`  
- [in]如果有的話，將指標`IUnknown`必須在查詢分析工具的介面[IDebugDocumentContext 介面](../../winscript/reference/idebugdocumentcontext-interface.md)指標。 否則為 null。  
+ [in]如果有的話，將指標`IUnknown`分析工具必須查詢的介面[IDebugDocumentContext 介面](../../winscript/reference/idebugdocumentcontext-interface.md)指標。 否則為 null。  
   
 ## <a name="return-value"></a>傳回值  
  這個方法的傳回值會忽略指令碼引擎。  
   
 ## <a name="remarks"></a>備註  
- 只有當這主機所支援的指令碼引擎可以提供的文件內容。  
+ 指令碼引擎可以提供的文件內容，只有當主應用程式支援此功能。  
   
 ## <a name="see-also"></a>另請參閱  
  [IActiveScriptProfilerCallback 介面](../../winscript/reference/iactivescriptprofilercallback-interface.md)

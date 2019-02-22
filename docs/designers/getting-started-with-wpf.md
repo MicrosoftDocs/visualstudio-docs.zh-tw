@@ -1,20 +1,19 @@
 ---
 title: 什麼是 WPF？
 ms.date: 04/16/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5585bf577bac21ec448f551f432589676b636e8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f07d4e2dc52ff05d67ec18d7f40f1119db582c0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986215"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947445"
 ---
 # <a name="get-started-with-wpf"></a>開始使用 WPF
 

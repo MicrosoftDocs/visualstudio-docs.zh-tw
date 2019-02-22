@@ -9,23 +9,25 @@ helpviewer_keywords:
 ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56e2045459af33e04c728cf5e8324c44a35b6774
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f341a0825c4fcacc41fc01b29c6d65882fa500d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874053"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335294"
 ---
 # <a name="project-property-user-interface"></a>專案屬性使用者介面
+
 專案子類型可以使用專案中的項目**屬性頁** 對話方塊中所提供的基底的專案中，隱藏或做唯讀控制項和整個網頁提供，或將專案子類型專用頁面新增至**屬性頁** 對話方塊。
 
 ## <a name="extending-the-project-property-dialog-box"></a>擴充專案的 [屬性] 對話方塊
- 專案子類型會實作 automation 擴充項和專案設定瀏覽物件。 這些擴充項實作<xref:EnvDTE.IFilterProperties>介面，可讓特定的屬性，隱藏或唯讀狀態。 **屬性頁**對話方塊中的基底的專案中，藉由將基底的專案中，會接受由 Automation 擴充項的篩選。
 
- 擴充程序**專案屬性** 對話方塊中所述：
+專案子類型會實作 automation 擴充項和專案設定瀏覽物件。 這些擴充項實作<xref:EnvDTE.IFilterProperties>介面，可讓特定的屬性，隱藏或唯讀狀態。 **屬性頁**對話方塊中的基底的專案中，藉由將基底的專案中，會接受由 Automation 擴充項的篩選。
+
+擴充程序**專案屬性** 對話方塊中所述：
 
 -   基底的專案從專案子類型擷取的擴充項，藉由實作<xref:EnvDTE80.IInternalExtenderProvider>介面。 瀏覽、 專案自動化和基底的所有專案的專案設定瀏覽物件會實作這個介面。
 
@@ -39,11 +41,11 @@ ms.locfileid: "53874053"
 
 -   專案子類型可以決定適當的 Catid 不同的可擴充物件的基底的專案，在執行階段擷取下列<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>值：
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
 
 若要判斷專案範圍的 Catid，專案子類型擷取的上述屬性[VSITEMID。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)從`VSITEMID typedef`。 專案子類型也可以控制哪些**屬性頁**對話方塊頁面會顯示專案的組態相依和獨立的設定。 某些專案子類型可能需要移除內建的頁面，並加入專案子類型的特定頁面。 若要啟用此功能，受管理的用戶端專案呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>方法的下列屬性：
 

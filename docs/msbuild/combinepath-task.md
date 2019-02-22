@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: c20edbf4-3d4f-4f66-b1d5-753a0d858ed8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 542efb2cb1de44da95f640efbc316dc2cf373212
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 27d7dd3a6ecfbaf86c607a5dd42dde1b9fe10e2c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966482"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936434"
 ---
 # <a name="combinepath-task"></a>CombinePath 工作
 將指定的路徑結合成單一路徑。  

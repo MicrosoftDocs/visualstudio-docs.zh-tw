@@ -1,23 +1,21 @@
 ---
 title: 了解資源爭用資料值 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
 - Profiling Tools, concurrency method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffacfcd5eac9fd88cfd7bbaa2c7d2546836d87c6
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: d5bfd571364dadb4d070634ee6a5d28951e90586
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948553"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960707"
 ---
 # <a name="understand-resource-contention-data-values"></a>了解資源爭用資料值
 

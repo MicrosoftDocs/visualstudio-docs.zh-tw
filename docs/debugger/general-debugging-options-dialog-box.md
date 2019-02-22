@@ -1,8 +1,6 @@
 ---
 title: 一般、 偵錯、 選項對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/09/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -20,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34fa13bbeee3289e19acdff7e45fe6e4a99f30d9
-ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
-ms.translationtype: HT
+ms.openlocfilehash: 45e4fb01613ab3d1ea2a5d521abccf81471a89bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443934"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985759"
 ---
 # <a name="general-debugging-options"></a>一般偵錯選項
 
@@ -43,7 +41,7 @@ ms.locfileid: "53443934"
 發生中斷時，同時中斷偵錯工具附加至的所有處理序。
 
 **例外狀況為跨 AppDomain 或受控/機器碼界限時中斷**：  
-在受控或混合模式偵錯中，當符合下列條件時，Common Language Runtime 就可以攔截跨應用程式定義域界限或 Managed/原生界限的例外狀況：
+在 Managed 或混合模式偵錯中，當符合下列條件，Common Language Runtime 就可以攔截跨應用程式定義域界限或 Managed/原生界限的例外狀況：
 
 1. 當機器碼使用 COM Interop 呼叫受控程式碼，且受控程式碼擲回例外狀況時。 請參閱 [COM Interop 簡介](/dotnet/articles/visual-basic/programming-guide/com-interop/introduction-to-com-interop)。
 
@@ -78,7 +76,7 @@ ms.locfileid: "53443934"
 允許偵錯工具逐步執行 .NET Framework 原始檔。 自動啟用此選項會停用 Just My Code。 .NET framework 符號將會下載至快取位置。 變更快取位置**選項** 對話方塊中，**偵錯**類別**符號**頁面。
 
 **不進入屬性和運算子 (僅限受控)**：  
-讓偵錯工具無法逐步執行受控程式碼中的屬性和運算子。
+讓偵錯工具無法逐步執行 Managed 程式碼中的屬性和運算子。
 
 **啟用屬性評估及其他隱含函式呼叫**：  
 開啟變數視窗和 [快速監看式] 對話方塊中的屬性自動評估與隱含函式呼叫。
@@ -87,7 +85,7 @@ ms.locfileid: "53443934"
     在評估變數視窗中的物件時，執行隱含的字串轉換呼叫。 結果會顯示為字串，而不是類型名稱。 只適用於偵錯 C# 程式碼時。 DebuggerDisplay 屬性可能會覆寫此設定 (請參閱[使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md))。
 
 **啟用來源伺服器支援**：  
-告知 Visual Studio Debugger 從實作 SrcSrv (`srcsrv.dll`) 通訊協定的來源伺服器取得來源檔。 Team Foundation Server 與 Windows 偵錯工具這兩部來源伺服器會實作通訊協定。 如需 SrcSrv 設定的詳細資訊，請參閱[SrcSrv](/windows-hardware/drivers/debugger/srcsrv)文件。 此外，請參閱 <<c0> [ 指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
+告知 Visual Studio Debugger 從實作 SrcSrv (`srcsrv.dll`) 通訊協定的來源伺服器取得來源檔。 Team Foundation Server 和 Windows 偵錯工具這兩個來源伺服器會實作通訊協定。 如需 SrcSrv 設定的詳細資訊，請參閱[SrcSrv](/windows-hardware/drivers/debugger/srcsrv)文件。 此外，請參閱 <<c0> [ 指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
 > [!IMPORTANT]
 > 因為讀取 *.pdb* 檔案可以執行檔案中的任意程式碼，請確定您信任伺服器。
@@ -123,7 +121,7 @@ ms.locfileid: "53443934"
 關閉所有物件結構檢視自訂。 如需有關檢視自訂的詳細資訊，請參閱[建立受管理物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)。
 
 **模組載入時隱藏 JIT 最佳化 (僅限受控)**：  
-在附加偵錯工具時若已載入模組且已編譯 JIT，便停用受控程式碼的 JIT 最佳化。 停用最佳化可更容易偵錯一些問題，但消耗較多效能。 如果正在使用 Just My Code，隱藏 JIT 最佳化會使非使用者程式碼顯示為使用者程式碼 ("My Code")。 如需詳細資訊，請參閱 < [JIT 最佳化和偵錯](../debugger/jit-optimization-and-debugging.md)。
+在附加偵錯工具時若已載入模組且已編譯 JIT，便停用 Managed 程式碼的 JIT 最佳化。 停用最佳化可更容易偵錯一些問題，但消耗較多效能。 如果正在使用 Just My Code，隱藏 JIT 最佳化會使非使用者程式碼顯示為使用者程式碼 ("My Code")。 如需詳細資訊，請參閱 < [JIT 最佳化和偵錯](../debugger/jit-optimization-and-debugging.md)。
 
 **為 ASP.NET 啟用 JavaScript 偵錯 (Chrome、Edge 及 IE)**：  
 可讓 ASP.NET 應用程式的指令碼偵錯工具。 在 Chrome 中的第一次使用，您可能需要登入瀏覽器，以啟用您已安裝的 Chrome 擴充功能。 停用此選項可還原為舊版的行為。

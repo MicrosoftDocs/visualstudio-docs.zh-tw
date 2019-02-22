@@ -1,14 +1,9 @@
 ---
 title: DA0038：高比率的鎖定爭用 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.38
 - vs.performance.rules.DA0038
@@ -17,18 +12,18 @@ ms.assetid: ae0c8b2f-17b2-4f3d-a834-aa2f6371753b
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c160ff4a61e8a0e2879cc0cacc59aae9e951361b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 21d5811493dff235b43d128ab7f62f32702e7961
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761141"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766198"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038：鎖定爭用的比率很高
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 的最新文件，請參閱 < [DA0038： 高比率的鎖定爭用](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions)docs.microsoft.com 上。  
+如需 Visual Studio 2017 的最新文件，請參閱[DA0038:高比率的鎖定爭用](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions)docs.microsoft.com 上。  
   
 |||  
 |-|-|  
@@ -61,4 +56,3 @@ ms.locfileid: "51761141"
  按兩下訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。  尋找 **.NET CLR LocksAndThreads\Contention Rate / sec** 欄。 判斷是否有特定的程式執行階段，當中的鎖定爭用比其他階段更繁重。  
   
  只有當您不使用並行分析方法時，才會引發此規則。 並行分析方法是用來診斷應用程式中與鎖定爭用相關效能問題的最佳工具。 收集並行分析資料可了解應用程式的鎖定行為。 這包括了解哪些鎖定嚴重爭用、執行緒執行時間因為等候爭用的鎖定而延遲多久，以及哪些特定的程式碼有關係。 並行分析會收集所有鎖定爭用的資料，包括原生 Windows 功能的鎖定行為、.NET Framework 類別以及應用程式參考的其他協力廠商程式庫。 如需從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 進行並行分析的相關資訊，請參閱[收集執行緒和處理序並行資料](../profiling/collecting-thread-and-process-concurrency-data.md)。 如需從命令列進行並行分析的相關資訊連結，請參閱[從命令列使用分析方法](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)的＜使用並行方法收集資源爭用和執行緒活動資料＞一節。
-

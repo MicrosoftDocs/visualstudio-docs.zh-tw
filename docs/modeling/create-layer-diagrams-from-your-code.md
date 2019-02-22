@@ -9,20 +9,19 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52919bc65366afc3e0fef5d3dbca1e5a9e7e77e1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846161"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913011"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>從您的程式碼建立相依性圖表
 
-若要視覺化軟體系統的高階邏輯結構，建立*相依性圖表*Visual Studio 中。 若要確定您的程式碼保持與此設計一致，以驗證程式碼相依性圖表。 您可以建立 Visual C# 和 Visual Basic 專案的相依性圖表。 若要查看哪些版本的 Visual Studio 支援此功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要視覺化軟體系統的高階邏輯結構，建立*相依性圖表*Visual Studio 中。 若要確定您的程式碼保持與此設計一致，以驗證程式碼相依性圖表。 您可以建立 Visual C# 和 Visual Basic 專案的相依性圖表。 若要查看哪些版本的 Visual Studio 支援此功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)。
 
 ![建立相依性圖表](../modeling/media/layerdiagramvisualizecode.png)
 
@@ -159,6 +158,7 @@ ms.locfileid: "53846161"
 
 ## <a name="see-also"></a>另請參閱
 
+- [Architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [影片：驗證即時架構相依性](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 - [相依性圖表中：參考](../modeling/layer-diagrams-reference.md)
 - [相依性圖表中：指導方針](../modeling/layer-diagrams-guidelines.md)

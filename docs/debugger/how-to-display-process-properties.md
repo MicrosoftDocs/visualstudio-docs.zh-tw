@@ -1,25 +1,23 @@
 ---
-title: 如何： 顯示處理序屬性 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：顯示處理序屬性 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Process properties
 ms.assetid: 5d9eb6e9-2e47-40f2-bf9c-464caa703dc9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25138eb6c9f7616f68841a45fcd1001ccd3dc84f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 51a8df6b84f248ca5cf48ad70f4f9fc1111ccbd2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826319"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022907"
 ---
-# <a name="how-to-display-process-properties"></a>如何：顯示處理序屬性
+# <a name="how-to-display-process-properties"></a>HOW TO：顯示處理序屬性
 若要深入了解處理程序中所列[處理序檢視](../debugger/processes-view.md)，使用[處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)。  
   
 ### <a name="to-open-a-process-properties-dialog-box"></a>若要開啟 處理序屬性對話方塊  

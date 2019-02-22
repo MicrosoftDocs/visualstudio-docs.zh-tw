@@ -16,16 +16,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: ac75be41d547905b122284fa09a654be368d73e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f5248609ed51f82cfbc69c883063a032ab48813f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907822"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317363"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -236,6 +235,6 @@ ms.locfileid: "53907822"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 2017 中的即時相依性驗證](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Visual Studio 2017 中的即時相依性驗證](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)
 - [影片：驗證即時架構相依性](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

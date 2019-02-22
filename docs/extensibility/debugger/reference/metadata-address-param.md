@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_PARAM |Microsoft Docs
+title: METADATA_ADDRESS_PARAM | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 90904f19-0e71-4cb3-a56e-6a2e92f66dfc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8664948689c872078df12ed9713c128b02c71121
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f91e8ddf00b191bd2574c3a360328fb00cb50960
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830926"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938064"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
 此結構表示的方法或函式的參數。  

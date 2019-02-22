@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db5af7d761df39e2a0fee29f27e3f34526f07a7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0b5738a5e8cf01466dd632797c3f92ffd135a44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870936"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942736"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>卸載及重新載入巢狀的專案的考量
 

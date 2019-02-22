@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_datakind |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_dataKind | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 45005ad0-8b29-4cde-9d33-6bef72f6e463
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e01dbb38b512832db4c3629f6169fbe3be9c3f79
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 997d330cc6ba2084ea01e9b661a3daac9497a2d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880518"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925133"
 ---
 # <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
 擷取資料符號的變數的分類。  
@@ -27,7 +25,7 @@ ms.locfileid: "49880518"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_dataKind (   
+HRESULT get_dataKind (   
    DWORD* pRetVal  
 );  
 ```  
@@ -49,6 +47,6 @@ HRESULT get_dataKind (
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [DataKind 列舉](../../debugger/debug-interface-access/datakind.md)

@@ -1165,6 +1165,8 @@ items:
       href: c26130.md
     - name: C26135
       href: c26135.md
+    - name: C26138
+      href: c26138.md
     - name: C26140
       href: c26140.md
     - name: C26160
@@ -1175,6 +1177,12 @@ items:
       href: c26166.md
     - name: C26167
       href: c26167.md
+    - name: C26800
+      href: c26800.md
+    - name: C26810
+      href: c26810.md
+    - name: C26811
+      href: c26811.md
     - name: C28020
       href: c28020.md
     - name: C28021
@@ -1460,9 +1468,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd 錯誤
       href: fxcopcmd-errors.md
-ms.openlocfilehash: 3b48cf2bd9f292a379eee34e3928698e33145893
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 4d6e4458e334cc1d51b65ae9ba8eaeb83fc70aa2
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648174"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835146"

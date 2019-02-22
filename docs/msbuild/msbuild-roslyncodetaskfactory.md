@@ -1,23 +1,21 @@
 ---
 title: 具有 RoslynCodeTaskFactory 的 MSBuild 內嵌工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 09/21/2017
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841a7d7bbf10fc4bba5ed99d7ffacf1b76f3a079
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: d0f391e39c815be289dc0985005ee10ff63b958a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204176"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982659"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>具有 RoslynCodeTaskFactory 的 MSBuild 內嵌工作
 類似於 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md)，RoslynCodeTaskFactory 使用跨平台 Roslyn 編譯器來產生用於作為內嵌工作的記憶體中工作組件。  RoslynCodeTaskFactory 工作以 .NET Standard 為目標，並且可以使用 .NET Framework 和 .NET Core 執行階段，以及 Linux 和 Mac OS 等其他平台。
@@ -26,7 +24,7 @@ ms.locfileid: "39204176"
 >RoslynCodeTaskFactory 僅適用於 MSBuild 15.8 和更新版本。
   
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>具有 RoslynCodeTaskFactory 之內嵌工作的結構
- RoslynCodeTaskFactory 內嵌工作的宣告方式與 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) 相同，唯一的差異是 RoslynCodeTaskFactory 內嵌工作以 .NET Standard 為目標。  內嵌工作與包含它的 `UsingTask` 元素通常會包含於 *.targets* 檔案中，並視需要匯入其他專案檔。 以下是基本的內嵌工作。 請注意，它不會執行任何動作。  
+ RoslynCodeTaskFactory 內嵌工作的宣告方式與 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) 相同，唯一的差異是 RoslynCodeTaskFactory 內嵌工作以 .NET Standard 為目標。  內嵌工作與包含它的 `UsingTask` 項目通常會包含於 *.targets* 檔案中，並視需要匯入其他專案檔。 以下是基本的內嵌工作。 請注意，它不會執行任何動作。  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -46,7 +44,7 @@ ms.locfileid: "39204176"
 </Project>  
 ```  
   
- 範例中的 `UsingTask` 元素具有三個描述工作的屬性，以及編譯工作的內嵌工作 Factory。  
+ 範例中的 `UsingTask` 項目具有三個描述工作的屬性，以及編譯工作的內嵌工作 Factory。  
   
 -   `TaskName` 屬性會為工作命名，在此案例中為 `DoNothing`。  
   
@@ -54,27 +52,27 @@ ms.locfileid: "39204176"
   
 -   `AssemblyFile` 屬性會提供內嵌工作 Factory 的位置。 或者，您可以使用 `AssemblyName` 屬性來指定內嵌工作 Factory 類別的完整名稱，通常位於全域組件快取 (GAC) 中。  
 
-`DoNothing` 工作的其餘元素是空的，它們的用途是用來說明內嵌工作的順序和結構。 本主題後續內容中將提供更強固的範例。  
+`DoNothing` 工作的其餘項目是空的，它們的用途是用來說明內嵌工作的順序和結構。 本主題後續內容中將提供更強固的範例。  
   
--   `ParameterGroup` 元素是選擇性的。 指定時，它將會宣告工作的參數。 如需輸入和輸出參數的詳細資訊，請參閱本主題稍後的[輸入和輸出參數](#input-and-output-parameters)。  
+-   `ParameterGroup` 項目是選擇性的。 指定時，它將會宣告工作的參數。 如需輸入和輸出參數的詳細資訊，請參閱本主題稍後的[輸入和輸出參數](#input-and-output-parameters)。  
   
--   `Task` 元素會描述並包含工作原始程式碼。  
+-   `Task` 項目會描述並包含工作原始程式碼。  
   
--   `Reference` 元素會指定您在程式碼中使用的 .NET 組件參考。 這相當於在 Visual Studio 中加入專案的參考。 `Include` 屬性會指定參考組件的路徑。  
+-   `Reference` 項目會指定您在程式碼中使用的 .NET 組件參考。 這相當於在 Visual Studio 中加入專案的參考。 `Include` 屬性會指定參考組件的路徑。  
   
--   `Using` 元素會列出您想要存取的命名空間。 這類似於 Visual C# 中的 `Using` 陳述式。 `Namespace` 屬性會指定要包含的命名空間。  
+-   `Using` 項目會列出您想要存取的命名空間。 這類似於 Visual C# 中的 `Using` 陳述式。 `Namespace` 屬性會指定要包含的命名空間。  
 
-`Reference` 和 `Using` 元素與語言無關。 內嵌工作可以使用任何一種受支援的 .NET CodeDom 語言來撰寫，例如：Visual Basic 或 Visual C#。  
+`Reference` 和 `Using` 項目與語言無關。 內嵌工作可以使用任何一種受支援的 .NET CodeDom 語言來撰寫，例如：Visual Basic 或 Visual C#。  
   
 > [!NOTE]
->  `Task` 元素包含的元素皆為工作 Factory (在此案例中為程式碼工作 Factory) 特定。  
+>  `Task` 項目包含的項目皆為工作 Factory (在此案例中為程式碼工作 Factory) 特定。  
   
 ### <a name="code-element"></a>程式碼項目  
-`Task` 元素內顯示的最後一個子元素是 `Code` 元素。 `Code` 元素會包含或尋找您想要編譯為工作的程式碼。 您放入 `Code` 元素的內容取決於您要撰寫工作的方式。  
+`Task` 項目內顯示的最後一個子項目是 `Code` 項目。 `Code` 項目會包含或尋找您想要編譯為工作的程式碼。 您放入 `Code` 項目的內容取決於您要撰寫工作的方式。  
 
 `Language` 屬性會指定您用來撰寫程式碼的語言。 可接受的值為 `cs` (適用於 C#)、`vb` (適用於 Visual Basic)。  
 
-`Type` 屬性會指定可在 `Code` 元素中找到的程式碼類型。  
+`Type` 屬性會指定可在 `Code` 項目中找到的程式碼類型。  
   
 -   如果 `Type` 的值是 `Class`，則 `Code` 元素會包含衍生自 <xref:Microsoft.Build.Framework.ITask> 介面的類別程式碼。  
   
@@ -84,13 +82,13 @@ ms.locfileid: "39204176"
 
 程式碼本身通常會出現在 `<![CDATA[` 標記和 `]]>` 標記之間。 因為此程式碼是在 CDATA 區段中，所以您不必擔心逸出保留的字元，如 "\<" 或 ">"。  
 
-或者，您可以使用 `Code` 元素的 `Source` 屬性，來指定包含您工作程式碼的檔案位置。 原始程式檔中的程式碼必須是 `Type` 屬性所指定的類型。 如果 `Source` 屬性存在，`Type` 的預設值為 `Class`。 如果 `Source` 不存在，預設值為 `Fragment`。  
+或者，您可以使用 `Code` 項目的 `Source` 屬性，來指定包含您工作程式碼的檔案位置。 原始程式檔中的程式碼必須是 `Type` 屬性所指定的類型。 如果 `Source` 屬性存在，`Type` 的預設值為 `Class`。 如果 `Source` 不存在，預設值為 `Fragment`。  
 
 > [!NOTE]
->  在原始程式檔中定義工作類別時，類別名稱必須與對應的 [UsingTask](../msbuild/usingtask-element-msbuild.md) 元素的 `TaskName` 屬性相符。  
+>  在原始程式檔中定義工作類別時，類別名稱必須與對應的 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目的 `TaskName` 屬性相符。  
   
 ## <a name="hello-world"></a>Hello World  
- 以下是具有 RoslynCodeTaskFactory 的更強大內嵌工作。 HelloWorld 工作會在預設的錯誤記錄裝置上顯示 "Hello, world!"， 此裝置通常是系統主控台或 Visual Studio 的 [輸出] 視窗。 範例所包含的 `Reference` 元素僅供說明之用。  
+ 以下是具有 RoslynCodeTaskFactory 的更強大內嵌工作。 HelloWorld 工作會在預設的錯誤記錄裝置上顯示 "Hello, world!"， 此裝置通常是系統主控台或 Visual Studio 的 [輸出] 視窗。 範例所包含的 `Reference` 項目僅供說明之用。  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -127,7 +125,7 @@ Log.LogError("Hello, world!");
 ```  
   
 ## <a name="input-and-output-parameters"></a>輸入和輸出參數  
- 內嵌工作參數是 `ParameterGroup` 元素的子元素。 每個參數都會採用定義它的元素名稱。 下列程式碼會定義參數 `Text`。  
+ 內嵌工作參數是 `ParameterGroup` 項目的子項目。 每個參數都會採用定義它的項目名稱。 下列程式碼會定義參數 `Text`。  
   
 ```xml  
 <ParameterGroup>  
@@ -161,7 +159,7 @@ Log.LogError("Hello, world!");
   
 -   `Tally` 是 System.Int32 類型的輸出參數。  
 
-如果 `Code` 元素具有 `Fragment` 或 `Method` 的 `Type` 屬性，則會自動為每個參數建立屬性。 否則，必須在工作原始程式碼中明確宣告屬性，而且屬性必須完全符合它們的參數定義。  
+如果 `Code` 項目具有 `Fragment` 或 `Method` 的 `Type` 屬性，則會自動為每個參數建立屬性。 否則，必須在工作原始程式碼中明確宣告屬性，而且屬性必須完全符合它們的參數定義。  
   
 ## <a name="example"></a>範例  
  下列內嵌工作記錄某些訊息，並傳回字串。  

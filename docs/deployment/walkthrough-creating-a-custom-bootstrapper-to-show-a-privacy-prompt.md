@@ -1,8 +1,6 @@
 ---
-title: 逐步解說： 建立自訂啟動載入器具有隱私權提示 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立具有隱私權提示的自訂啟動載入器 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -18,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ac2ad1125067109b0ca02d552e997f2c30482f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c8719f3dc6d892801135d14d093c265445e90fcb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873778"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021529"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>逐步解說：建立具有隱私權提示的自訂啟動載入器
 您可以設定為自動更新時使用較新的檔案版本和組件版本的組件，就可以使用 ClickOnce 應用程式。 若要確定您的客戶同意加入這項行為，您可以顯示隱私權提示給他們。 然後，他們可以選擇是否要自動更新應用程式的權限授與。 如果應用程式不允許自動更新，它不會安裝。  
@@ -129,7 +127,7 @@ ms.locfileid: "49873778"
        > [!NOTE]
        >  停用的應用程式架構，會停用功能，例如 Windows XP 視覺化樣式、 應用程式事件、 啟動顯示畫面、 單一執行個體的應用程式等等。 如需詳細資訊，請參閱[專案設計工具、應用程式頁 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)。  
   
-       適用於 Visual C# 只有開發人員：  
+       視覺效果C#開發人員只：  
   
        開啟*Program.cs*程式碼檔案，並新增下列程式碼。  
   
@@ -148,7 +146,7 @@ ms.locfileid: "49873778"
   
 -   軟體授權條款的文件中。  
   
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>步驟 1： 建立啟動載入器目錄  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>步驟 1：若要建立啟動載入器目錄  
   
 1.  建立名為**UpdateConsentDialog**中 *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*。  
   
@@ -160,7 +158,7 @@ ms.locfileid: "49873778"
     > [!NOTE]
     >  建立新的目錄，每個地區設定。 比方說，您可以新增 fr-fr，以 de 地區設定中的子目錄。 如有必要，這些目錄會包含法文與德文字串和語言套件。  
   
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>步驟 2： 建立 product.xml 資訊清單檔案  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>步驟 2：若要建立 product.xml 資訊清單檔  
   
 1.  建立文字檔案，稱為*product.xml*。  
   
@@ -192,7 +190,7 @@ ms.locfileid: "49873778"
   
 3.  將檔案儲存到 UpdateConsentDialog 啟動載入器目錄。  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>步驟 3： 建立 package.xml 資訊清單檔案和軟體授權條款  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>步驟 3：若要建立 package.xml 資訊清單檔案和軟體授權條款  
   
 1.  建立文字檔案，稱為*package.xml*。  
   
@@ -236,7 +234,7 @@ ms.locfileid: "49873778"
   
 1.  在 [**方案總管] 中**，按一下您想要部署的應用程式的名稱。  
   
-2.  在 **專案**功能表上，按一下*ProjectName* **屬性**。  
+2.  在 [專案] 功能表上，按一下 [ProjectName 屬性]。  
   
 3.  按一下 **發佈**頁面，然後再按一下**必要條件**。  
   
@@ -254,7 +252,7 @@ ms.locfileid: "49873778"
   
 1.  在 [**方案總管] 中**，按一下您想要部署的應用程式的名稱。  
   
-2.  在 **專案**功能表上，按一下*ProjectName* **屬性**。  
+2.  在 [專案] 功能表上，按一下 [ProjectName 屬性]。  
   
 3.  按一下 **發佈**頁面，然後再按一下**立即發佈**。  
   
@@ -266,13 +264,13 @@ ms.locfileid: "49873778"
   
 6.  閱讀軟體授權合約，然後按一下**接受**。  
   
-     同意對話方塊中更新應用程式隨即出現並顯示下列文字： 您即將安裝應用程式會檢查在網站上最新的更新。 藉由按一下我同意，您會授權應用程式會自動在網際網路上的更新檢查。  
+     同意對話方塊中更新應用程式隨即出現，並顯示下列文字：您即將安裝的應用程式會檢查在網站上最新的更新。 藉由按一下我同意，您會授權應用程式會自動在網際網路上的更新檢查。  
   
 7.  關閉應用程式，或按一下 [取消]。  
   
-     應用程式會顯示錯誤： 安裝的系統元件時發生錯誤*ApplicationName*。 安裝程式無法繼續，直到成功安裝所有系統元件。  
+     應用程式會顯示錯誤：安裝的系統元件時發生錯誤*ApplicationName*。 安裝程式無法繼續，直到成功安裝所有系統元件。  
   
-8.  按一下 詳細資料，以顯示下列錯誤訊息： 元件更新的同意對話方塊無法安裝並出現下列錯誤訊息: 「 自動更新協議不接受 」。 無法安裝下列元件:-更新同意對話方塊  
+8.  按一下 詳細資料，以顯示下列錯誤訊息：元件更新同意對話方塊無法安裝並出現下列錯誤訊息：「 自動更新協議不是接受 」。 無法安裝下列元件:-更新同意對話方塊  
   
 9. 按一下 [ **關閉**]。  
   
@@ -280,7 +278,7 @@ ms.locfileid: "49873778"
   
 1.  在 [**方案總管] 中**，按一下您想要部署的應用程式的名稱。  
   
-2.  在 **專案**功能表上，按一下*ProjectName* **屬性**。  
+2.  在 [專案] 功能表上，按一下 [ProjectName 屬性]。  
   
 3.  按一下 **發佈**頁面，然後再按一下**立即發佈**。  
   
@@ -292,7 +290,7 @@ ms.locfileid: "49873778"
   
 6.  閱讀軟體授權合約，然後按一下**接受**。  
   
-     同意對話方塊中更新應用程式隨即出現並顯示下列文字： 您即將安裝應用程式會檢查在網站上最新的更新。 藉由按一下我同意，您會授權應用程式會自動在網際網路上的更新檢查。  
+     同意對話方塊中更新應用程式隨即出現，並顯示下列文字：您即將安裝的應用程式會檢查在網站上最新的更新。 藉由按一下我同意，您會授權應用程式會自動在網際網路上的更新檢查。  
   
 7.  按一下 **我同意**，然後按一下**繼續**。  
   
@@ -303,6 +301,6 @@ ms.locfileid: "49873778"
 ## <a name="see-also"></a>另請參閱  
  [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)   
  [建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)   
- [如何： 建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)   
- [如何： 建立套件資訊清單](../deployment/how-to-create-a-package-manifest.md)   
- [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)
+ [如何：建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)   
+ [如何：建立套件資訊清單](../deployment/how-to-create-a-package-manifest.md)   
+ [產品和套件結構描述參考](../deployment/product-and-package-schema-reference.md)

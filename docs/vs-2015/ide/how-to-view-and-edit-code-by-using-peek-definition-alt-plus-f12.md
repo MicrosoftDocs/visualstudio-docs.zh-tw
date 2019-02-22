@@ -1,32 +1,27 @@
 ---
-title: 如何：使用查看定義檢視和編輯程式碼 (Alt+F12) | Microsoft Docs
-ms.custom: ''
+title: HOW TO：檢視和編輯程式碼使用查看定義 (alt+f12) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 45f3dd20-902a-4047-8cca-9f18216123f4
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cc99602fe1ca2003995594f75736d581fa37e0d0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 24db36d6bb3a431d5ee3848eb8a6a794980f919a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254471"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777299"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：使用查看定義檢視和編輯程式碼 (Alt+F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用 [查看定義] 命令來檢視和編輯程式碼，而不需要離開撰寫中的程式碼。 [查看定義] 和 [移至定義] 會顯示相同資訊，但是 [查看定義] 是在快顯視窗中顯示，而 [移至定義] 則在個別程式碼視窗中顯示程式碼。 [移至定義] 會讓內容 (也就是作用中的程式碼視窗、目前行和游標位置) 轉換成定義程式碼視窗。 使用 [查看定義] 可以檢視和編輯該定義並在定義檔中移動，同時保留您在原始程式碼檔案中的位置。  
   
- 您可以搭配使用 C#、Visual Basic 和 C++ 程式碼與 [查看定義]。 在 Visual Basic**查看定義**顯示的連結**物件瀏覽器**沒有定義中繼資料 (例如，.NET Framework 型別中內建） 的符號。  
+ 您可以搭配使用 C#、Visual Basic 和 C++ 程式碼與 [查看定義]。 在 Visual Basic 中，[預覽定義] 會針對沒有定義中繼資料的符號 (例如，內建的 .NET Framework 類型) 顯示 [物件瀏覽器] 的連結。  
   
 > [!IMPORTANT]
 >  您無法在 Visual Studio 2013 的任何 Express 版本中使用這個命令。  
@@ -83,8 +78,5 @@ ms.locfileid: "49254471"
     > [!NOTE]
     >  您也可以使用相同的鍵盤快速鍵，在 [查看定義] 視窗中編輯程式碼，就如同在 Visual Studio 中的其他位置使用。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [產能的秘訣](../ide/productivity-tips-for-visual-studio.md)
-
-
-

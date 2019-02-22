@@ -1,8 +1,6 @@
 ---
-title: 如何：序列化符號資訊 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：將符號資訊序列化 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Performance.General
@@ -12,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 9e0da706-6325-4073-83d1-aeab3b7c137a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b608b41ea4fd1b5b7544604e8d04bed02361b06
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: f7957917c999396f2e09bbb697474beb47ebcc47
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220862"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042435"
 ---
-# <a name="how-to-serialize-symbol-information"></a>如何：序列化符號資訊
+# <a name="how-to-serialize-symbol-information"></a>HOW TO：序列化符號資訊
 您可以將分析應用程式所需的符號序列化。 符號序列化會將符號新增至 .*vsp* 檔案。 透過將符號資訊新增至 .*vsp* 檔案，其他人就算沒有原始符號的存取權也可以分析效能報告。 如果符號未序列化，您必須擁有原始的已檢測 .*exe* 和 .*pdb* 檔案才能分析 .*vsp* 檔案。  
   
 ### <a name="to-automatically-serialize-symbol-information"></a>自動序列化符號資訊  

@@ -1,14 +1,9 @@
 ---
-title: 如何：在成員標記法和關聯標記法之間變更 (類別設計工具) | Microsoft Docs
-ms.custom: ''
+title: HOW TO：切換成員標記法和關聯標記法 （類別設計工具） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - notation, member
 - association notation
@@ -18,13 +13,13 @@ ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1ed7ee328e65f0e76426a21db8f2481e590b0546
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 23320b93f0cdafc7cd47ed5b04fcdf66754c4b67
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173598"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777321"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>如何：在成員標記法和關聯標記法之間變更 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,11 +46,8 @@ ms.locfileid: "49173598"
   
      關聯線隨即消失，而在圖表內該類型圖案的適當區間中會顯示屬性。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：建立類型之間的繼承 (類別設計工具)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
  [如何：檢視類型之間的繼承 (類別設計工具)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [檢視類型和關聯性 (類別設計工具)](../ide/viewing-types-and-relationships-class-designer.md)   
  [如何：視覺化集合關聯 (類別設計工具)](../ide/how-to-visualize-a-collection-association-class-designer.md)
-
-
-

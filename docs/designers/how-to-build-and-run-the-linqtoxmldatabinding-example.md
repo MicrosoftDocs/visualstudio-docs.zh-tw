@@ -1,19 +1,18 @@
 ---
 title: HOW TO：建置並執行 LinqToXmlDataBinding 範例
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4087ea9d97970621a2ec8b51dc37d38f0306b0e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b88b705a7dc64f46ba750feed1e5259f2b74c555
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989013"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951900"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>HOW TO：建置並執行 LinqToXmlDataBinding 範例
 

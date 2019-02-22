@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: fafde7c8355b5087c6168345c57540e0356227b1
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 74931c1636ef2e1f512579907c162cb13148ef3e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135532"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969021"
 documentType: LandingData
 title: FxCop 程式碼分析從移轉至.NET 編譯器平台分析器
 metadata:
@@ -16,7 +16,7 @@ metadata:
   ms.topic: landing-page
   ms.author: gewarren
   author: gewarren
-  manager: douge
+  manager: jillfra
 abstract:
   description: 了解如何分析程式碼第一次或如何從 FxCop 移轉至分析 managed 程式碼使用分析器的新方法。
   aside:

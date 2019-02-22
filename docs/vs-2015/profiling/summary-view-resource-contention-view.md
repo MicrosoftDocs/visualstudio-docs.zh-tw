@@ -1,27 +1,22 @@
 ---
 title: 摘要檢視 - 資源爭用檢視 | Microsoft Docs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Summary view
 ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 45052997e9dd8332518ce5fb7804963f88e97959
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 65f659b64b6a1e29e1e25ae344dd8033e631de09
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791848"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804104"
 ---
 # <a name="summary-view---resource-contention-view"></a>摘要檢視 - 資源爭用檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +26,14 @@ ms.locfileid: "51791848"
  如需包括通知連結和報表清單描述在內的詳細資訊，請參閱[摘要檢視](../profiling/summary-view.md)。  
   
 ## <a name="timeline-graph"></a>時間軸圖形  
- [摘要] 檢視的時間軸圖形會顯示已進行程式碼剖析的應用程式在程式碼剖析期間的爭用事件數目。 您可以使用時間軸圖形，將檢視篩選為選取的時間範圍。 如需詳細資訊，請參閱[如何：從摘要時間軸篩選報表檢視](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
+ [摘要] 檢視的時間軸圖形會顯示已進行程式碼剖析的應用程式在程式碼剖析期間的爭用事件數目。 您可以使用時間軸圖形，將檢視篩選為選取的時間範圍。 如需詳細資訊，請參閱[＜How to：從摘要時間軸篩選報表檢視](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
   
 ## <a name="most-contended-resources"></a>最多爭用的資源  
  [最多爭用的資源] 列出應用程式中造成最多爭用事件的資源。 您可以按一下資源名稱來顯示 [爭用] 檢視。 [爭用] 檢視會根據執行緒提供詳細的資源爭用時間軸。  
   
  [最多爭用的資源] 的每個資源都包含下列資料。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**名稱**|資源名稱。|  
 |**爭用 %**|就程式碼剖析資料中的所有爭用事件，爭用此資源所佔的百分比。|  
@@ -48,11 +43,8 @@ ms.locfileid: "51791848"
   
  [最多爭用的執行緒] 的每個執行緒都包含下列資料。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**ID**|執行緒識別碼。|  
 |**名稱**|擁有該執行緒的處理序名稱。|  
 |**爭用 %**|就程式碼剖析資料中的所有爭用事件，爭用此資源所佔的百分比。|
-
-
-

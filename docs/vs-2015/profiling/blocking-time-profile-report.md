@@ -1,14 +1,9 @@
 ---
 title: 封鎖時間分析報表 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.blocking
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 31be25e5fb41f2e7a92ee2c19803d74c442fcad4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807019"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54782290"
 ---
 # <a name="blocking-time-profile-report"></a>封鎖時間分析報表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "51807019"
 |內含封鎖時間|針對到呼叫堆疊樹狀圖的這個層級為止的所有堆疊花費的總封鎖時間。 此內含數字是此函式的獨佔封鎖時間和其所有子節點的專屬封鎖時間的總和。|  
 |獨佔封鎖時間|花費的總封鎖時間，在此期間內，此函式是呼叫堆疊的最低層級。 具有大量獨佔封鎖時間的唯一呼叫堆疊項目，可能是您感興趣的函式。|  
 |API/等候類別|只針對最下層呼叫堆疊的函式顯示。 已辨識封鎖呼叫的簽章時，會提供封鎖 API 的名稱。 如果無法辨識簽章，會提供核心所報表的資訊。|  
-|詳細資料|函式的完整格式名稱。 當有詳細資料可用時，其中會包括行數。|  
+|Details|函式的完整格式名稱。 當有詳細資料可用時，其中會包括行數。|  
   
 ### <a name="synchronization"></a>同步處理  
  同步處理報表顯示對封鎖同步處理之區段負責的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 如需詳細資訊，請參閱[同步處理時間](../profiling/synchronization-time.md)。  
@@ -66,8 +61,5 @@ ms.locfileid: "51807019"
 ### <a name="ui-processing"></a>UI 處理  
  UI 處理報表顯示對封鎖 UI 處理區塊之區段負責的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 如需詳細資訊，請參閱 [UI 處理時間](../profiling/ui-processing-time.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)
-
-
-

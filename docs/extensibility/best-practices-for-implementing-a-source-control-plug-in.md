@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 85e73b73-29dc-464f-8734-ed308742c435
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8e28733c91097094f38fa92ff0f21d54a194942
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb6d020e6333286ec7e73f3e7af62f1e97cfd922
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948403"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966334"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>實作原始檔控制外掛程式的最佳作法
 下列的技術詳細資料可協助您可靠地實作原始檔控制外掛程式在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  

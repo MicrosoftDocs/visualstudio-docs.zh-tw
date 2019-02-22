@@ -1,7 +1,6 @@
 ---
 title: CA2112:受保護類型不應該公開欄位
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2112
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9eb13a78-3487-49f2-81d1-3c3866db132f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4786b51536d9df7c51c8551b5fbd8d863879875
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d46c9fe1b97b5bdfb081150a44aa69363eced53
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920400"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922793"
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112:受保護類型不應該公開欄位
 

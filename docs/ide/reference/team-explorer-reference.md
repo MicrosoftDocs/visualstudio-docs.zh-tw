@@ -1,17 +1,16 @@
 ---
 title: Team Explorer 參考
 ms.date: 12/04/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
-ms.openlocfilehash: c4feda1f01e08807041efb9ae9b3d0bbe84d24b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.manager: jillfra
+ms.openlocfilehash: 56e6277b589f12563ad6dfa3912815b966db399a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840748"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946271"
 ---
 # <a name="team-explorer-reference"></a>Team Explorer 參考
 
@@ -80,8 +79,12 @@ ms.locfileid: "53840748"
 - [使用 Outlook 透過電子郵件傳送查詢結果清單](/azure/devops/boards/queries/share-plans)
 - [從 Excel 中的查詢建立報表](/azure/devops/report/excel/create-status-and-trend-excel-reports) (僅限 TFS)
 
+::: moniker range=">= vs-2019"
+
 > [!NOTE]
 > Visual Studio 2019 Preview 1 中有新的[工作項目體驗](/azure/devops/boards/work-items/set-work-item-experience-vs)。 如需在 Visual Studio 2019 Preview 1 中檢視工作項目的資訊，請參閱[檢視和新增工作項目](/azure/devops/boards/work-items/view-add-work-items)。
+
+::: moniker-end
 
 ## <a name="builds-page"></a>組建頁面
 

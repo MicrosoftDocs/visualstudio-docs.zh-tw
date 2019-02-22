@@ -1,8 +1,6 @@
 ---
 title: marker_series::write_flag 方法 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faff304831f8f2ffabed925d2ab3dfc5d64c18af
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: f70f6b357e8baaf721c751c57b21924afaff90e6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237454"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069770"
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag 方法
 將旗標寫入並行視覺化檢視追蹤檔。  
@@ -60,7 +58,7 @@ void write_flag(
  分類。  
   
 ## <a name="requirements"></a>需求  
- **標頭：***cvmarkersobj.h*  
+ **標頭：** *cvmarkersobj.h*  
   
  **命名空間：** Concurrency::diagnostic  
   

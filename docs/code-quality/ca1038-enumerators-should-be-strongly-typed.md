@@ -1,7 +1,6 @@
 ---
 title: CA1038:列舉程式應該是強類型
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - EnumeratorsShouldBeStronglyTyped
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8919f526-d487-42a4-87dc-2b2ee25260c4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 426dbcd4116ee4ff52befbcbd8e9beea62e8cb72
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 61eced11a61b8da92d01d26c0e66ad5d9c49f72d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954000"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922403"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038:列舉程式應該是強類型
 

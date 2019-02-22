@@ -2,19 +2,18 @@
 title: R Markdown
 description: 如何在 Visual Studio 中建立 R Markdown 文件，以產生高品質報表、簡報和儀表板。
 ms.date: 11/16/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 6394dcedc8c29f517d502d1a4e5475667f9b1f9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df723845fe99b32cd41231353142e0f03b667977
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938468"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941396"
 ---
 # <a name="create-r-markdown-documents"></a>建立 R Markdown 文件
 

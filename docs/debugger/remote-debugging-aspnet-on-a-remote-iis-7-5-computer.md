@@ -4,20 +4,19 @@ ms.custom:
 - remotedebugging
 - seodec18
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 336f34c1229e07eb3734f9d278070e5994957d16
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b6bb89772cf013b27d7f7cfd512d79144ffe235d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065554"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023950"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>在執行 IIS 的遠端電腦上對 ASP.NET 進行遠端偵錯
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝並部署您的應用程式的所在的電腦上執行遠端工具，然後連結至您執行的應用程式從 Visual Studio。
@@ -49,7 +48,7 @@ ms.locfileid: "53065554"
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>建立 ASP.NET 4.5.2 Visual Studio 電腦上的應用程式
   
-1. 建立新的 MVC ASP.NET 應用程式。 (**檔案 > 新增 > 專案**，然後選取<strong>視覺化C#> Web > ASP.NET Web 應用程式。在 [ASP.NET 4.5.2]  範本區段中選取 [MVC]</strong> 。 請確定**啟用 Docker 支援**未選取且**驗證**設定為**不需要驗證**。 將專案命名為**MyASPApp**。)
+1. 建立新的 MVC ASP.NET 應用程式。 (**檔案 > 新增 > 專案**，然後選取<strong>視覺化C#> Web > ASP.NET Web 應用程式。在 [ASP.NET 4.5.2]</strong> 範本區段中選取 **[MVC]**。 請確定**啟用 Docker 支援**未選取且**驗證**設定為**不需要驗證**。 將專案命名為**MyASPApp**。)
 
 2. 開啟 HomeController.cs 檔案，並在 `About()` 方法中設定中斷點。
 
@@ -81,7 +80,7 @@ ms.locfileid: "53065554"
     > [!NOTE]
     > 如果您使用的 Windows Server 2008 R2，請安裝 ASP.NET 4，改為使用下列命令：
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. 重新啟動系統 (或從命令提示字元依序執行 **net stop was /y** 和 **net start w3svc**，讓系統 PATH 的變更生效)。
 

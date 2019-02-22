@@ -1,27 +1,22 @@
 ---
-title: 逐步解說：建立逼真的 3D 撞球 | Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立逼真的 3d 撞球 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 29d45f4d5df6131182dfe70467e655bd23f6fcf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829582"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793301"
 ---
-# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>逐步解說：建立逼真的 3D 撞球
+# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>逐步解說：建立逼真的 3d 撞球
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本逐步解說示範如何在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中使用著色器設計工具與影像編輯器，建立逼真的 3D 撞球。 結合數種著色器技術與適當的紋理資源，達成 3D 撞球的外觀。  
@@ -193,7 +188,7 @@ ms.locfileid: "49829582"
   
    ![環境立方體貼圖的配置](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")  
   
-   頂端影像是正數 Y （+ Y） 立方體面;中間從左到右，請為 – X、 + Z、 + X 和-Z 立方體面;在底部是 – Y cube 面。  
+   頂端影像是正 Y (+Y) 立方體面，中間從左到右是 –X、+Z、+X 和 –Z 立方體面，底部是 –Y 立方體面。  
   
    您現在可以修改著色器，將立方體貼圖範例融入其他著色器。  
   
@@ -219,12 +214,9 @@ ms.locfileid: "49829582"
   
    在完稿影像中，請注意您新增的效果如何結合在一起，建立非常逼真的撞球。 形狀、紋理和光源建構了基本的 3D 物件外觀，而高光和反射則讓撞球更有趣且融入環境。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：匯出著色器](../designers/how-to-export-a-shader.md)   
- [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [如何：將著色器套用至 3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [著色器設計工具](../designers/shader-designer.md)   
  [影像編輯器](../designers/image-editor.md)   
  [著色器設計工具節點](../designers/shader-designer-nodes.md)
-
-
-

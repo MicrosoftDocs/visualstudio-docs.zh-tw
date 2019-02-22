@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e84909a4-d378-4f48-bf25-2c014c77c8e3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 871041c69fafef2154db2794e20212705eaea3c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f5dffc8e9bb5440fb1a05cd733c609af43104f72
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943992"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028409"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
 將標示為移除此別名。  

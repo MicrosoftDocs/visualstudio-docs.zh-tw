@@ -3,21 +3,20 @@ title: Visual Studio 中的了解 Flask 教學課程步驟 4，Web 專案範本
 titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識，特別是「Flask Web 專案」和「Flask/Jade Web 專案」範本所提供的功能。
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 74118aee63a67310656926d84300ba180ff74188
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: b17400aae5386a2d86cc13d0b81293bd2ef068fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060825"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908916"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步驟 4：使用完整的 Flask Web 專案範本
 
@@ -163,7 +162,7 @@ def about():
 
 如本文開頭所述，Visual Studio 提供「Flask/Jade Web 專案」範本，此範本所建立的應用程式會與「Flask Web 專案」所產生的應用程式看起來完全相同。 主要的差異在於，它使用 Jade 範本化引擎，這是 Jinja 的延伸模組，能夠以更簡潔的語言實作相同的概念。 例如，具體而言，Jade 使用關鍵字，而不是包含在 {% %} 分隔符號中的標記，並可讓您使用關鍵字來參考 CSS 樣式和 HTML 元素。
 
-為了啟用 Jade，專案範本會先在 *requirements.txt* 中包含 pyjade 套件。 
+為了啟用 Jade，專案範本會先在 *requirements.txt* 中包含 pyjade 套件。
 
 應用程式的 *\_\_init\_\_.py* 檔案會包含下行：
 

@@ -1,22 +1,21 @@
 ---
 title: C# IntelliSense
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf15c8015eb1a26cc418bcf11d9e189eb3875585
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d6bf678e40c999442d35caba53bcaabb8f9ba48
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885792"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936859"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -99,7 +98,7 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 ![新增 using，快速動作展開的影像](../ide/media/addusing-quickaction.png)
 
-按一下燈泡圖示，然後選擇 [using System.Xml;] 自動新增 using 指示詞。
+按一下錯誤燈泡圖示，然後選擇 [using System.Xml;] 自動新增 using 指示詞。
 
 ### <a name="remove-and-sort-usings"></a>移除和排序 Using
 
@@ -123,7 +122,7 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 每個未定義的識別碼下都會顯示紅色波浪底線。 當您將滑鼠指標放在識別碼時，工具提示中就會出現錯誤訊息。 若要顯示適當的選項，您可以使用下列其中一項程序：
 
-- 按一下未定義的識別碼。 [快速動作] 燈泡會出現在識別碼下。 按一下燈泡。
+- 按一下未定義的識別碼。 [快速動作] 錯誤燈泡會出現在識別碼下。 按一下錯誤燈泡。
 
 - 按一下未定義的識別碼，然後按 **Ctrl**+**.** (**Ctrl** + 句號)。
 

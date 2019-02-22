@@ -1,7 +1,6 @@
 ---
 title: 全球化警告
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.globalizationrules
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a8d12d41-14bf-4b43-af24-168312d7c390
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de70944f4bf8e4944b94285a570e6d85ec1a5bb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b61b0f10e4231ce1970a55cf352490cbf02a42d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821392"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936677"
 ---
 # <a name="globalization-warnings"></a>全球化警告
 全球化警告支援全球化程式庫和應用程式。

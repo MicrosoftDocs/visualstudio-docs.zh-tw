@@ -2,20 +2,19 @@
 title: 偵錯工具視窗 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d55f1ba3a9e0d30dda9d9e390bae0cc3a46f8444
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 4b802503fe612b80a171a328502f8074b2f596d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562343"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916609"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>深入了解 Visual Studio 中偵錯工具 Windows
 
@@ -35,13 +34,13 @@ ms.locfileid: "53562343"
 |即時運算|CTRL+ALT+I|[即時運算視窗](../ide/reference/immediate-window.md)|
 |平行堆疊|CTR:+SHIFT+D, S|[使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)|
 |平行監看式|CTR:+SHIFT+D, (1, 2, 3, 4)|[開始對多執行緒應用程式進行偵錯](../debugger/get-started-debugging-multithreaded-apps.md)|
-|執行緒|CTRL+ALT+H|[使用 [執行緒] 視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)|
+|執行緒|CTRL+ALT+H|[使用執行緒視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)|
 |模組|CTRL+ALT+U|[如何：使用模組視窗](../debugger/how-to-use-the-modules-window.md)|
 |GPU 執行緒|-|[如何：使用 GPU 執行緒視窗](../debugger/how-to-use-the-gpu-threads-window.md)|
 |工作|CTR:+SHIFT+D, K|[使用工作視窗](../debugger/using-the-tasks-window.md)|
 |Python 互動式偵錯|SHIFT+ALT+I|[Python 互動式 REPL](../python/python-interactive-repl-in-visual-studio.md)|
-|JavaScript 主控台|CTRL+ALT+V, C|[快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|DOM 總管|CTRL+ALT+V, D|[使用 DOM 總管偵錯配置](../debugger/debug-layout-using-dom-explorer.md)|
+|JavaScript 主控台|CTRL+ALT+V, C|[快速入門：針對 JavaScript 進行偵錯](../debugger/quickstart-debug-javascript-using-the-console.md)|
+|DOM 總管|CTRL+ALT+V, D|[使用 DOM 總管偵錯配置](/visualstudio/debugger/quickstart-debug-html-and-css)|
 |即時視覺化樹狀結構|-|[在偵錯時檢查 XAML 屬性](../debugger/inspect-xaml-properties-while-debugging.md)|
 |即時屬性總管|-|[在偵錯時檢查 XAML 屬性](../debugger/inspect-xaml-properties-while-debugging.md)|
 |處理序|CTRL+ALT+Z|[偵錯執行緒和處理序](../debugger/debug-threads-and-processes.md)|

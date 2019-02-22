@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_isnaked |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b16629dc-8e17-476b-9c7b-58e7277c61ed
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32280a8b4baaf82867065898b5478c11842a33df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ea9d30ff3762e8c429cdd92725ee79c6bff603db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915070"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924450"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 擷取指定函數是否有的旗標[naked](/cpp/cpp/naked-cpp)屬性 （也就是該函式具有由編譯器新增任何初構和終解程式碼）。  
@@ -47,8 +45,8 @@ HRESULT get_isNaked(
 |需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK 8.0 版|  
+|版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Naked 函式呼叫](/cpp/cpp/naked-function-calls)

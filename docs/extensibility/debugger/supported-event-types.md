@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fc11158987ecb1d7401f1127318138c0b865f96
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d272ae5499d28b0290d45947b35bf6e7f7f41b8c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901788"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952235"
 ---
 # <a name="supported-event-types"></a>支援的事件類型
 Visual Studio 偵錯目前支援下列事件類型：  

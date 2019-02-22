@@ -1,19 +1,18 @@
 ---
 title: 原生建議規則規則集
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12e9e271e0fd6881ae19581a1678f131719c4b34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a63abd92ae7791bbed107862a736cbd5fc5c649
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882798"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955397"
 ---
 # <a name="native-recommended-rules-rule-set"></a>原生建議規則規則集
 

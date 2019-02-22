@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b3cdec9f-ef7b-44d0-a775-d17ef7eae968
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efcfd4398053b6e95d7780a6f81d571b5a4fd1d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a47ae50baf0ea906815a0a95b8eccb3668ec7c40
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987436"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007553"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
 這個方法會取得欄位的型別。  

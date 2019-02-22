@@ -3,21 +3,20 @@ title: Visual Studio 中的了解 Django 教學課程步驟 2，檢視與頁面�
 titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Django 基本知識，特別是建立應用程式及使用檢視與範本的步驟。
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ce819f5d0a7167c4fce2871894df7c6edd26e6a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 696bb664cb7dd63e6b6964fca5d999652723d240
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871699"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955657"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本建立 Django 應用程式
 
@@ -35,7 +34,7 @@ ms.locfileid: "53871699"
 
 ## <a name="step-2-1-create-an-app-with-a-default-structure"></a>步驟 2-1：建立具有預設結構的應用程式
 
-Django 應用程式是個別的 Python 套件，其中包含具特定用途的相關檔案集。 Django 專案可包含任意數目的應用程式，這反映出 Web 主機可從單一網域名稱提供任意數目的個別進入點。 例如，針對 contoso.com 網域的 Django 專案可能包含三個應用程式，分別用於 www.contoso.com、support.contoso.com 及 docs.contoso.com。 在此情況下，Django 專案會處理網站層級 URL 路由與設定 (於其 *urls.py* 與 *settings.py* 檔案中)，同時每個應用程式都會透過其內部路由、檢視、模型、靜態檔案及系統管理介面，擁有屬於自己的獨特樣式與行為。
+Django 應用程式是個別的 Python 套件，其中包含具特定用途的相關檔案集。 Django 專案可包含任意數目的應用程式，這反映出 Web 主機可從單一網域名稱提供任意數目的個別進入點。 例如，針對 contoso.com 網域的 Django 專案可能包含三個應用程式，分別用於 `www.contoso.com`、support.contoso.com 及 docs.contoso.com。 在此情況下，Django 專案會處理網站層級 URL 路由與設定 (於其 *urls.py* 與 *settings.py* 檔案中)，同時每個應用程式都會透過其內部路由、檢視、模型、靜態檔案及系統管理介面，擁有屬於自己的獨特樣式與行為。
 
 Django 應用程式通常會以一組標準的檔案作為開始。 Visual Studio 提供項目範本以初始化 Django 專案內的 Django 應用程式，並提供具相同用途的整合式功能表命令：
 
@@ -49,7 +48,7 @@ Django 應用程式通常會以一組標準的檔案作為開始。 Visual Studi
 
 ![[方案總管] 中的 Django 應用程式檔案](media/django/step02-django-app-in-solution-explorer.png)
 
-| 項目 | 說明 |
+| 項目 | 描述 |
 | --- | --- |
 | **\_\_init\_\_.py** | 此檔案會將應用程式識別為套件。 |
 | **移轉** | Django 儲存指令碼的資料夾，這些指令碼會更新資料庫以配合對模型所做的變更。 接著，Django 的移轉工具會對任何舊版資料庫套用必要的變更，以使它符合目前的模型。 透過使用移轉，您可以專注於模型上，並讓 Django 處理基礎資料庫結構描述。 移轉會在步驟 6 中討論；現在，該資料夾只會包含 *\_\_init\_\_.py* 檔案 (表示該資料夾定義自己的 Python 套件)。 |

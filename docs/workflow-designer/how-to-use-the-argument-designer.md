@@ -2,22 +2,21 @@
 title: 工作流程設計工具-如何：使用引數設計工具
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e73dcd167f6f267c7979f5c3ffb806b9f12d534a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb4cbcb6b1310e6552dfd757a4b6347212f99cfc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891559"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941175"
 ---
 # <a name="how-to-use-the-argument-designer"></a>HOW TO：使用引數設計工具
 

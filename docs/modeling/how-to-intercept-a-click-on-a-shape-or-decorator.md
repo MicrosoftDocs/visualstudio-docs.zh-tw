@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: d71cb172929fd9d213c0f09be21c1a844acf4462
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eeb3a96889d96911f43e7c8c271cea12951f9cfc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892738"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916150"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>HOW TO：攔截圖形或裝飾項目上的點選
 下列程序示範如何攔截圖案或 decorator 上的圖示。 您可以攔截按一下、 按兩下、 拖曳，及其他筆勢，並讓回應項目。

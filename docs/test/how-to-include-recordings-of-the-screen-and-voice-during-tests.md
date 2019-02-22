@@ -7,24 +7,22 @@ helpviewer_keywords:
 ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+manager: jillfra
+ms.openlocfilehash: 9043411cd6681078e9e4d0418e6f3686aa37fc17
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894409"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949807"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>如何：使用測試設定在測試期間包含螢幕和聲音錄製
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>HOW TO：使用測試設定在測試期間包含螢幕和語音錄製
 
 您可以在 Visual Studio 的組態編輯器中設定診斷資料配接器，用於錄製執行測試之使用者的螢幕和聲音。 這個診斷資料配接器會儲存測試期間錄製的桌面工作階段螢幕和聲音。 錄製會和測試結果一起儲存，也可以附加至 Bug。 其他小組成員可以使用這段錄製內容找出難以重現的應用程式缺陷。
 
 > [!WARNING]
 > 螢幕和聲音錄製不支援多重監視器組態。
 
-螢幕和聲音錄製器可以搭配手動或自動化測試使用。 例如，如果遠端執行自動程式化 UI 測試，您可能想要錄製桌面來查看自動程式化 UI 測試執行時的情況。 如需如何從遠端擷取螢幕和聲音錄製的詳細資訊，請參閱[如何：將您的測試代理程式設定為執行與桌面互動的測試](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md)。
+螢幕和聲音錄製器可以搭配手動或自動化測試使用。 例如，如果遠端執行自動程式化 UI 測試，您可能想要錄製桌面來查看自動程式化 UI 測試執行時的情況。 如需如何從遠端擷取螢幕和語音錄製的詳細資訊，請參閱[如何：將測試代理程式設定為執行與桌面互動的測試](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md)。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -52,11 +50,11 @@ ms.locfileid: "52894409"
 
 6.  在 [螢幕錄製品質] 底下，設定下列下拉式清單選項：
 
-    1.  **畫面播放速率：** 指定您要在螢幕和聲音錄製中使用的每秒畫面格數。 預設值為每秒 4 個畫面格。 您可以指定介於 2 和 20 之間的值。
+    1.  **畫面播放速率：** 指定您要在螢幕和語音錄製中使用的每秒畫面格數。 預設值為每秒 4 個畫面格。 您可以指定介於 2 和 20 之間的值。
 
-    2.  **位元速率：** 指定要在螢幕和聲音錄製中使用的每秒 KB 數。 預設值為 512。 您可以指定介於 512 和 10,000 之間的值。
+    2.  **位元速率：** 指定要在螢幕和語音錄製中使用的每秒 KB 數。 預設值為 512。 您可以指定介於 512 和 10,000 之間的值。
 
-    3.  **品質(1-100)：** 您可以指定範圍介於 1 和 100 之間的螢幕和聲音錄製品質。 預設值為 50 (中間範圍)。
+    3.  **品質 (1-100)：** 您可以指定範圍介於 1 和 100 之間的螢幕和語音錄製品質。 預設值為 50 (中間範圍)。
 
 7.  選擇 [確定] 。 針對測試設定，現在已經設定和儲存診斷追蹤收集器設定。
 

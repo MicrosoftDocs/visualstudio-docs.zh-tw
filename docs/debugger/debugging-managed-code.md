@@ -1,8 +1,6 @@
 ---
 title: 偵錯 Managed 程式碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,15 +13,15 @@ helpviewer_keywords:
 - managed code, debugging
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92d8da8c03cb2b76e0b47043085af66731958b4b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: 81a0e4b872732fa0b776c163bafa4cc162d91da2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561888"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938103"
 ---
 # <a name="debugging-managed-code"></a>偵錯 Managed 程式碼
 
@@ -77,7 +75,7 @@ ms.locfileid: "53561888"
 [偵錯和分析](/dotnet/framework/debug-trace-profile/index)  
 討論偵錯 .NET Framework 應用程式，及其組態需求。
 
-[對指令碼和 Web 應用程式進行偵錯](../debugger/debugging-web-applications-and-script.md)  
+[對指令碼和 Web 應用程式進行偵錯](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
 描述您在偵錯指令碼和 Web 應用程式時會遇到的一般偵錯問題和技術。
 
 [Visual Studio 2015 中偵錯工具的新功能](../debugger/what-s-new-for-the-debugger-in-visual-studio.md)  
@@ -88,7 +86,7 @@ ms.locfileid: "53561888"
 
 ## <a name="see-also"></a>另請參閱
 
-[逐步解說：在設計階段偵錯自訂的 Windows Forms 控制項](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
-[偵錯工具安全性](../debugger/debugger-security.md)
-[Visual Studio 偵錯](../debugger/index.md)
- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+[逐步解說：在設計階段針對自訂 Windows Forms 控制項進行偵錯](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)  
+[偵錯工具安全性](../debugger/debugger-security.md)  
+[Visual Studio 偵錯](../debugger/index.md)  
+[偵錯工具簡介](../debugger/debugger-feature-tour.md)

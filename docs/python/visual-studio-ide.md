@@ -2,22 +2,21 @@
 title: 適用於 Python 開發人員的 Visual Studio 概觀
 titleSuffix: ''
 ms.date: 12/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d671a81c75483bfc21cf83954e03307d05a93ce8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 094a768f0b1b50e03bb445becb956e8e91a862da
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950747"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316609"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>歡迎使用 Visual Studio IDE | Python
 
@@ -27,8 +26,8 @@ Visual Studio 整合式開發環境是支援 Python (和其他語言) 且創作�
 
 此圖顯示 Visual Studio 有一個開啟的 Python 專案，以及數個您可能會用到的重要工具視窗：
 
-- [方案總管][](../ide/solutions-and-projects-in-visual-studio.md) (右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 [方案總管] 透過將程式碼的檔案分組到[解決方案和專案](/visualstudio/get-started/tutorial-projects-solutions)，以協助組織程式碼。
-    - 方案總管 旁的是 Python 環境[](managing-python-environments-in-visual-studio.md)，您可以在此環境中管理安裝在電腦上的其他 Python 解譯器。
+- [[方案總管]](../ide/solutions-and-projects-in-visual-studio.md) (右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 [方案總管] 透過將程式碼的檔案分組到[解決方案和專案](/visualstudio/get-started/tutorial-projects-solutions)，以協助組織程式碼。
+    - 方案總管 旁的是 [Python 環境](managing-python-environments-in-visual-studio.md)，您可以在此環境中管理安裝在電腦上的其他 Python 解譯器。
 
 - [編輯器視窗](../ide/writing-code-in-the-code-and-text-editor.md) (中間) 會顯示檔案內容，您大部分的時間可能都是花在這裡。 您可在這裡[編輯 Python 控制碼](editing-python-code-in-visual-studio.md)、瀏覽程式碼架構，以及在偵錯工作階段期間設定中斷點。 使用 Python 時，您也可按 Ctrl+Enter 在 [[互動式 REPL] 視窗](python-interactive-repl-in-visual-studio.md)中執行該程式碼。
 
@@ -135,5 +134,4 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - 探索[更多 Visual Studio 功能](../ide/advanced-feature-overview.md)
 - 瀏覽 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- 閱讀 [Visual Studio 部落格](https://blogs.msdn.microsoft.com/visualstudio/)
-- 前往 [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) 看看免費的 Visual Studio 課程
+- 閱讀 [Visual Studio 部落格](https://devblogs.microsoft.com/visualstudio/)

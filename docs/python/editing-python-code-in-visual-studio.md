@@ -2,31 +2,26 @@
 title: 編輯 Python 程式碼
 description: 對於 Python，Visual Studio 可提供豐富的 IntelliSense、程式碼片段及導覽功能，還有格式設定、Linting 和重構。
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 62d22b286b6f0e58f6b833ba1975a07a6ab0500b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964360"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155392"
 ---
 # <a name="edit-python-code"></a>編輯 Python 程式碼
 
 因為您大部分的開發時間都花在程式碼編輯器中，所以 [Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)提供的功能可協助您提高生產力。 功能包括了 IntelliSense 語法反白顯示、自動完成、簽章說明、方法覆寫、搜尋和瀏覽。
 
 編輯器也與 Visual Studio 中的 [互動式] 視窗整合，在兩者間交換程式碼變得更輕鬆。 如需詳細資訊，請參閱[教學課程步驟 3：使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)和[使用互動式視窗 - 傳送至互動式命令](python-interactive-repl-in-visual-studio.md#send-to-interactive-command)。
-
-|   |   |
-|---|---|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看示範編輯 Python 程式碼的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) \(英文\) (2 分 30 秒)。|
 
 如需有關在 Visual Studio 中編輯程式碼的一般文件，請參閱[程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)。 另請參閱[大綱](../ide/outlining.md)，這有助您專注於特定的程式碼區段。
 

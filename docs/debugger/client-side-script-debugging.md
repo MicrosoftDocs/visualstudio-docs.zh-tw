@@ -1,8 +1,6 @@
 ---
 title: 用戶端指令碼偵錯 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,21 +13,21 @@ helpviewer_keywords:
 ms.assetid: bb668527-2288-47bd-a6c8-cecbad76dde2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a42ee63b863393c3cc2bad789d14404def8d1f5d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: cec8e999ef4cf472ceabd56b30ec19c1077e31d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894985"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992713"
 ---
 # <a name="client-side-script-debugging"></a>用戶端指令碼偵錯
 Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.NET 頁面中用戶端指令碼的錯誤。  
   
 ## <a name="opening-script-documents"></a>開啟指令碼文件  
-您可以查看伺服器端和用戶端指令碼中的文件的清單**方案總管 中**檢視。 您可以從 [ **方案總管**] 開啟任何指令碼文件。 如需詳細資訊，請參閱 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)。  
+您可以在 [方案總管] 查看伺服器端與用戶端指令碼文件清單並加以檢視。 您可以從 [ **方案總管**] 開啟任何指令碼文件。 如需詳細資訊，請參閱[＜How to：檢視指令碼文件](../debugger/how-to-view-script-documents.md)。  
   
 ## <a name="breakpoint-mapping"></a>中斷點對應  
  在 Visual Studio 中，您無法直接對伺服器端程式碼進行偵錯，但是可以在伺服器端檔案內設定中斷點。 Visual Studio 會自動將中斷點對應至用戶端檔案內對應的位置，並且在用戶端程式碼中建立對應的中斷點。  
@@ -37,7 +35,7 @@ Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.N
 ## <a name="manually-or-automatically-attaching-to-script"></a>手動或自動附加至指令碼  
  若要開始在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]內偵錯指令碼，您必須將偵錯工具附加至要偵錯的指令碼。 這可以手動執行，也可以自動發生。  
   
- 您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具介面選擇要附加之執行中指令碼處理序，以手動方式附加至指令碼。 如需詳細資訊，請參閱 [How to: Attach to Script](../debugger/how-to-attach-to-script.md)。  
+ 您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具介面選擇要附加之執行中指令碼處理序，以手動方式附加至指令碼。 如需詳細資訊，請參閱[＜How to：附加至指令碼](../debugger/how-to-attach-to-script.md)。  
   
  偵錯工具會在發生下列其中一種情況時，自動附加至指令碼：  
   
@@ -61,9 +59,9 @@ Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.N
   
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375) 開啟任何指令碼文件。  
   
-## <a name="see-also"></a>另請參閱  
- [偵錯 ASP.NET 和 AJAX 應用程式](../debugger/debugging-aspnet-and-ajax-applications.md)   
+## <a name="see-also"></a>請參閱  
+ [對 ASP.NET 和 AJAX 應用程式進行偵錯](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)   
  [指令碼偵錯的限制](../debugger/limitations-on-script-debugging.md)   
- [變數的 Windows](../debugger/debugger-windows.md)   
+ [變數視窗](../debugger/debugger-windows.md)   
  [即時運算視窗](../ide/reference/immediate-window.md)   
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

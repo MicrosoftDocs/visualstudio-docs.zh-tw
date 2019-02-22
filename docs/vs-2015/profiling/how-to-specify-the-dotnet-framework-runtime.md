@@ -1,14 +1,9 @@
 ---
 title: 如何︰指定 .NET Framework 執行階段 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, .NET Framework versions
 - .NET Framework versions,profililng
@@ -16,13 +11,13 @@ ms.assetid: d39f3579-719a-4f47-a97d-5b4232fe4c64
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1c62b70816ac17789a4aa236e5abcca6832f7359
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5ce968e53dc00cd46d27154f4c6217fcc815ade1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749303"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771903"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>如何︰指定 .NET Framework 執行階段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +53,3 @@ ms.locfileid: "51749303"
     -   按一下您要進行程式碼剖析的 CLR 版本。  
   
     -   按一下 [自動]，對程式碼剖析工具附加至應用程式時所載入的版本進行程式碼剖析。
-
-
-

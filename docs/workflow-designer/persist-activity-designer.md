@@ -2,21 +2,20 @@
 title: 工作流程設計工具-Persist 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.Persist.UI
 ms.assetid: be8648dd-3eb9-4a50-8ec1-57a8be804692
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a954224062c38484b34aa21ceb812ac77fbd0d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c97d916d00d1c976b4e27381f55e42cbb7cb0db
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950565"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940616"
 ---
 # <a name="persist-activity-designer"></a>Persist 活動設計工具
 

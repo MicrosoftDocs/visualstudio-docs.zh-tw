@@ -1,7 +1,6 @@
 ---
 title: CA1304:必須指定 CultureInfo
 ms.date: 06/30/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - SpecifyCultureInfo
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b912d76a-54fd-4c93-b25d-16491e0ae319
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 564180330380a7076b091e0b2f793ea575606d53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59aada89df05d27644eb13aeef58b5573bb24478
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968481"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931347"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304:必須指定 CultureInfo
 

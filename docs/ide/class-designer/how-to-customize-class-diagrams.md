@@ -1,8 +1,6 @@
 ---
 title: HOW TO：自訂類別圖表 (類別設計工具)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, customizing
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79279c4450e8dbf325ce8b64879ad2cb9569455e
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: c23e24c9e087ff8ca64f90db1714ca2569bf02c0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684427"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923970"
 ---
 # <a name="how-to-customize-class-diagrams"></a>HOW TO：自訂類別圖表
 

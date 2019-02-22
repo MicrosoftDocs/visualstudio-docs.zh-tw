@@ -1,8 +1,6 @@
 ---
 title: marker_series::is_enabled 方法 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series::is_enabled
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8ce4dd50-ca29-4c72-98d6-582693f7d501
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4095381fffea29e4613d42d8ecbf2d189b4cb1b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 5a74a1d35128eb61c08d44fc430305a9ba7756c0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845115"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936527"
 ---
 # <a name="markerseriesisenabled-method"></a>marker_series::is_enabled 方法
 判斷是否有任何工作階段啟用該提供者。  
@@ -44,7 +42,7 @@ bool is_enabled(
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="requirements"></a>需求  
- **標頭：***cvmarkersobj.h*  
+ **標頭：** *cvmarkersobj.h*  
   
  **命名空間：** Concurrency::diagnostic  
   

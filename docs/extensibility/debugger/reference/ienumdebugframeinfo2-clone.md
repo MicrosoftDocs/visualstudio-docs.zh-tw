@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFrameInfo2::Clone |Microsoft Docs
+title: IEnumDebugFrameInfo2::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cdd10489-1772-47e3-815f-a6cfd32a3c60
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d14568b64d26d224e17cc35ae24e8d36cd660e7a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09aea894d6449b55713fdc4dab111aae58be8ea8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830254"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54915892"
 ---
 # <a name="ienumdebugframeinfo2clone"></a>IEnumDebugFrameInfo2::Clone
 傳回一份目前的列舉，為個別的物件。  

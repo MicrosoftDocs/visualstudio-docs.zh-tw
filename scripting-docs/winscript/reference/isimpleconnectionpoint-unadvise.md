@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Unadvise |Microsoft 文件
+title: ISimpleConnectionPoint::Unadvise |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f926f206bb8a27e6265fd147909a5adb13c3543
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 83fdf8f6a6e9378d328a9df61b1561a1ae747ae8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733898"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089257"
 ---
 # <a name="isimpleconnectionpointunadvise"></a>ISimpleConnectionPoint::Unadvise
-終止透過先前建立諮詢連接`ISimpleConnectionPoint::Advise`。  
+終止透過先前建立的諮詢連接`ISimpleConnectionPoint::Advise`。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT Unadvise(  
    DWORD  dwCookie  
 );  
@@ -38,17 +38,17 @@ HRESULT Unadvise(
   
 #### <a name="parameters"></a>參數  
  `dwCookie`  
- [in]結束，傳回的連線語彙基元`ISimpleConnectionPoint::Advise`。  
+ [in]連線終止，從傳回的語彙基元`ISimpleConnectionPoint::Advise`。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 當終止諮詢連接時，連接點上呼叫`Release`連線期間已儲存指標上的方法`ISimpleConnectionPoint::Advise`方法。 呼叫的反轉`AddRef`的期間執行`ISimpleConnectionPoint::Advise`當連接點呼叫通知的接收`QueryInterface`。  
+ 連接的諮詢連接終止時，點呼叫`Release`期間連線方法所儲存的指標上`ISimpleConnectionPoint::Advise`方法。 呼叫反轉`AddRef`期間，執行`ISimpleConnectionPoint::Advise`的連接點時呼叫的通知接收`QueryInterface`。  
   
 ## <a name="see-also"></a>另請參閱  
  [ISimpleConnectionPoint 介面](../../winscript/reference/isimpleconnectionpoint-interface.md)

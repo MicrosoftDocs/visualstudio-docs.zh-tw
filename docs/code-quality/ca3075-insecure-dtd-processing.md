@@ -1,20 +1,19 @@
 ---
 title: CA3075:不安全的 DTD 處理
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb8d3cf4a9a05710fc5f1d338d0ba134bce8417d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ec4ea49b9b5563382786b5cf83f577e0b8e96386
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861730"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921402"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075:不安全的 DTD 處理
 

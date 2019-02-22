@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::RemoveText |Microsoft 文件
+title: IDebugDocumentTextAuthor::RemoveText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24a366b35c777d09a14a0ad96e0f6dc25c03a26b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8972c0ed03a7d926d080382a7825c295ca7c72a1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726828"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097093"
 ---
 # <a name="idebugdocumenttextauthorremovetext"></a>IDebugDocumentTextAuthor::RemoveText
 移除文件中的文字。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT RemoveText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToRemove  
@@ -39,7 +39,7 @@ HRESULT RemoveText(
   
 #### <a name="parameters"></a>參數  
  `cCharacterPosition`  
- [in]啟動要移除的字元範圍的位置。  
+ [in]開始移除的字元範圍的位置。  
   
  `cNumToRemove`  
  [in]若要移除的字元數。  
@@ -47,7 +47,7 @@ HRESULT RemoveText(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

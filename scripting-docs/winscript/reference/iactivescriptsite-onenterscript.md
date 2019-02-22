@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnEnterScript |Microsoft 文件
+title: IActiveScriptSite::OnEnterScript | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb4514770faaaad46c8590e6df03488e3d5bc679
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ccef1b2bf63c4421843d3a33cab2e4f471a48251
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724828"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346510"
 ---
 # <a name="iactivescriptsiteonenterscript"></a>IActiveScriptSite::OnEnterScript
-通知主機指令碼引擎已開始執行指令碼的程式碼。  
+通知主機，指令碼引擎已開始執行的指令碼。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT OnEnterScript(void);  
 ```  
   
@@ -38,7 +38,7 @@ HRESULT OnEnterScript(void);
  若成功，會傳回 `S_OK`。  
   
 ## <a name="remarks"></a>備註  
- 指令碼引擎必須呼叫這個方法上每個項目或重新進入指令碼引擎。 例如，如果指令碼，呼叫物件，然後引發由指令碼引擎所處理的事件，指令碼引擎必須呼叫`IActiveScriptSite::OnEnterScript`之前執行事件，並必須呼叫[IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md)執行事件後再傳回，這個物件會引發此事件的方法。 呼叫此方法可以是巢狀。 每次呼叫此方法需要對應呼叫`IActiveScriptSite::OnLeaveScript`。  
+ 指令碼引擎必須呼叫這個方法在每個項目或重新進入到指令碼引擎。 例如，如果指令碼會呼叫物件，然後引發由指令碼引擎處理事件，指令碼引擎必須呼叫`IActiveScriptSite::OnEnterScript`之前執行事件，以及必須呼叫[IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md)在執行事件之後，但傳回，這個物件會引發事件之前的方法。 呼叫此方法可以是巢狀。 每次呼叫此方法需要對應呼叫`IActiveScriptSite::OnLeaveScript`。  
   
 ## <a name="see-also"></a>另請參閱  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

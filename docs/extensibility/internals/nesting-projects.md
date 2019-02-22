@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38b0544d58362a37113b0e193324a2ef5b8cdb49
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ee02bbe830c8ef3eab5766cd97a4c04837dc585
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860984"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013988"
 ---
 # <a name="nesting-projects"></a>巢狀專案
 企業應用程式開發人員使用您的 VS 套件可以方便地分組類似類型的專案在一起[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]利用*專案的巢狀結構*。 例如，Enterprise 範本專案會使用巢狀的群組專案的專案成類別目錄。 商業外觀專案、 Web UI 專案等等，則會在一個類別一起分組。  

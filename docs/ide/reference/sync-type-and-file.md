@@ -1,22 +1,21 @@
 ---
 title: 將檔案名稱重新命名以符合類型
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 42e1d3cad1752649446a35abd863390166a57271
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90783dcd609094659517d994c3a4d4e0610b7735
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834577"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940265"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>將類型同步至檔案名稱，或將檔案名稱同步至類型的重構
 
@@ -31,6 +30,9 @@ ms.locfileid: "53834577"
 **時機：** 您已將檔案或類型重新命名，但尚未更新對應的檔案或類型來使其相符。
 
 **原因：** 將類型放在不同名稱的檔案中 (或反之亦然) 會很難找出所要尋找項目。 藉由將類型或檔案名稱重新命名，程式碼會變得較容易閱讀及瀏覽。
+
+> [!NOTE]
+> 這項重構尚不適用於 .NET Standard 和 .NET Core 專案。
 
 ## <a name="how-to"></a>操作說明
 
@@ -62,8 +64,6 @@ ms.locfileid: "53834577"
    - Visual Basic：在下面的範例中，檔案 **Employee.vb** 已重新命名為 **Person.vb** 以符合類型名稱。
 
        ![內嵌結果 Visual Basic](media/synctype-result-vb.png)
-
-> ！[注意] 這項重構尚不適用於.NET Standard 和.NET Core 專案。
 
 ## <a name="see-also"></a>另請參閱
 

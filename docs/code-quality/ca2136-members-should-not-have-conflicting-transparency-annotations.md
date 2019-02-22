@@ -1,7 +1,6 @@
 ---
 title: CA2136:成員不應該具有衝突的透明度註釋
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2127
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ff5a1d18-7c52-4da5-8990-60be83a8ea81
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3186baa671aba3830d864434a519c6eb820d5204
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7b73148800c60280ed72e0d5f8014cfe6b97d217
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899846"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947623"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136:成員不應該具有衝突的透明度註釋
 

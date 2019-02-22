@@ -1,23 +1,21 @@
 ---
-title: IDiaSymbol::get_isPointerToMemberFunction |Microsoft 文件
-ms.custom: ''
+title: IDiaSymbol::get_isPointerToMemberFunction |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: aa9b5599-9602-41be-ab50-d84b90bee72f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d241fdc15af586dc218e9667e02c45dafda0e356
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 7d2bbe7c4133cdb6dcd77138b4d4eb398d3169a9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461794"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030882"
 ---
 # <a name="idiasymbolgetispointertomemberfunction"></a>IDiaSymbol::get_isPointerToMemberFunction
 指定這個符號是否為成員函式的指標。  
@@ -34,7 +32,7 @@ HRESULT get_isPointerToMemberFunction(
  [out]指標`BOOL`，指定這個符號是否為成員函式的指標。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

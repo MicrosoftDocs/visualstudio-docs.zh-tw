@@ -1,8 +1,6 @@
 ---
 title: 副檔名、文字編輯器、選項
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.File_Extension
@@ -14,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05fce2fd1735e1bed7f528467a1c32f399a9ce22
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 412a8489c3d7092aa87803f7dd3af5c7495b17a7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389036"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918867"
 ---
 # <a name="options-text-editor-file-extension"></a>副檔名、文字編輯器、選項
 

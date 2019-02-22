@@ -1,7 +1,6 @@
 ---
 title: CA1044:屬性不應該為唯寫的
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotBeWriteOnly
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 8386bf3a-b161-4841-bf8b-92591595aea9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e9d543c915cecbaa4f37a694786e80876bdf06cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f0e3c1cea0c1880bc13359c9b808eff0098609e6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959088"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918635"
 ---
 # <a name="ca1044-properties-should-not-be-write-only"></a>CA1044:屬性不應該為唯寫的
 

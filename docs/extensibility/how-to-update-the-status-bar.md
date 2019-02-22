@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 554b0c46074c4ffc1860250a0e9dfd8d2bb24b60
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49661e379c81bac935e2d2ae2279e32d548eb698
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874160"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929870"
 ---
 # <a name="how-to-update-the-status-bar"></a>HOW TO：更新狀態列
 **狀態列**一種控制列位於底部的許多應用程式視窗，其中包含一或多個狀態的文字行或指標。  

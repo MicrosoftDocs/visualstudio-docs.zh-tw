@@ -1,14 +1,9 @@
 ---
-title: 如何：建立多專案範本 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立多專案範本 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project templates
 - project templates, creating multi-project templates
@@ -17,13 +12,13 @@ ms.assetid: 8c7f7065-137e-40ad-868d-37e007270efd
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: eee52a4f77c7d3a07b237f01877c5cba30e53900
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1059e4035e620d9feb0498bacf5516eed99b5ba3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950845"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755335"
 ---
 # <a name="how-to-create-multi-project-templates"></a>如何：建立多專案的範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,14 +49,14 @@ ms.locfileid: "49950845"
   
   多專案範本的根 .vstemplate 檔案與單一專案範本在下列幾點有所不同：  
   
-- `VSTemplate` 項目的 `Type` 屬性包含值 `ProjectGroup`。 例如:   
+- `VSTemplate` 項目的 `Type` 屬性包含值 `ProjectGroup`。 例如：  
   
   ```  
   <VSTemplate Version="2.0.0" Type="ProjectGroup"  
       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
   ```  
   
-- `TemplateContent` 項目包含 `ProjectCollection` 項目，它具有一或多個 `ProjectTemplateLink` 項目，後者會定義所包含專案的 .vstemplate 檔案路徑。 例如:   
+- `TemplateContent` 項目包含 `ProjectCollection` 項目，它具有一或多個 `ProjectTemplateLink` 項目，後者會定義所包含專案的 .vstemplate 檔案路徑。 例如：  
   
   ```  
   <TemplateContent>  
@@ -154,13 +149,10 @@ ms.locfileid: "49950845"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [如何：建立專案範本](../ide/how-to-create-project-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [SolutionFolder 項目 (Visual Studio 範本)](../extensibility/solutionfolder-element-visual-studio-templates.md)   
  [ProjectTemplateLink 元素 (Visual Studio 範本)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
-
-
-

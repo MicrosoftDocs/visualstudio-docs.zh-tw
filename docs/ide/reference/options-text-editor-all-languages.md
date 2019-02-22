@@ -1,12 +1,34 @@
 ---
 title: 選項，文字編輯器，所有語言
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
 - VS.ToolsOptionsPages.Text_Editor.ResJSON.General
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.General
+- VS.ToolsOptionsPages.Text_Editor.Basic.General
+- VS.ToolsOptionsPages.Text_Editor.CSharp.General
+- VS.ToolsOptionsPages.Text_Editor.C/C++.General
+- VS.ToolsOptionsPages.Text_Editor.CoffeeScript.General
+- VS.ToolsOptionsPages.Text_Editor.CSS.General
+- VS.ToolsOptionsPages.Text_Editor.Dockerfile.General
+- VS.ToolsOptionsPages.Text_Editor.F#.General
+- VS.ToolsOptionsPages.Text_Editor.Fsharp.General
+- VS.ToolsOptionsPages.Text_Editor.HQL.General
+- VS.ToolsOptionsPages.Text_Editor.HTML.General
+- VS.ToolsOptionsPages.Text_Editor.HTML_(Web_Forms).General
+- VS.ToolsOptionsPages.Text_Editor.JavaScript.General
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.General
+- VS.ToolsOptionsPages.Text_Editor.JSON.General
+- VS.ToolsOptionsPages.Text_Editor.LESS.General
+- VS.ToolsOptionsPages.Text_Editor.Plain_Text.General
+- VS.ToolsOptionsPages.Text_Editor.SCSS.General
+- VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
+- VS.ToolsOptionsPages.Text_Editor.StreamAnalytics.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL90.General
+- VS.ToolsOptionsPages.Text_Editor.U-SQL.General
+- VS.ToolsOptionsPages.Text_Editor.XAML.General
+- VS.ToolsOptionsPages.Text_Editor.XML.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - statement completion
@@ -17,15 +39,15 @@ helpviewer_keywords:
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b8e0322a34d2f846f6db96cad372ebbe329f57b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8b1b7c4ea16151c94c825b6e5467e40e3e6099b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987910"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929332"
 ---
 # <a name="options-text-editor-all-languages"></a>選項，文字編輯器，所有語言
 

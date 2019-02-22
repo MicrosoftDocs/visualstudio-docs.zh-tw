@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::GetCount |Microsoft Docs
+title: IEnumDebugFields::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3f471b40-4db3-49f7-b504-58b2476eef74
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cabcbd6d56540c7c8014b439fd5c395e615131e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2cdbbc7f5c04436fbf98d47fea5116b63408f8b2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877185"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943964"
 ---
 # <a name="ienumdebugfieldsgetcount"></a>IEnumDebugFields::GetCount
 這個方法會傳回在列舉中的項目數。  

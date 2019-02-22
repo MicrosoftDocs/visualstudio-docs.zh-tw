@@ -1,20 +1,19 @@
 ---
 title: XML 結構描述設計工具圖形檢視
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7623198cc31e8ee955f00cd06b7ca91f8d32a31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26ce96a699abeaf9e5fd205c1e1f53add79ab56d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826990"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952641"
 ---
 # <a name="graph-view"></a>圖形檢視
 
@@ -42,7 +41,7 @@ ms.locfileid: "53826990"
 
  圖表檢視底部的階層連結列會顯示所選節點在結構描述集的位置。 如果選取多個項目，階層連結列會是空白的。
 
-## <a name="context-menu"></a>操作功能表
+## <a name="context-right-click-menu"></a>操作 （右鍵） 功能表
 
  下表描述圖表檢視設計介面上所有節點的可用選項。
 
@@ -92,7 +91,7 @@ ms.locfileid: "53826990"
 
 ## <a name="properties-window"></a>屬性視窗
 
- 使用操作功能表初次開啟**屬性**視窗。 根據預設，**屬性**視窗會出現在 Visual Studio 右下角。 當您按一下在內容模型檢視中呈現的節點時，該節點的屬性會顯示在**屬性**視窗。
+ 使用操作 （右鍵） 功能表初次開啟**屬性**視窗。 根據預設，**屬性**視窗會出現在 Visual Studio 右下角。 當您按一下在內容模型檢視中呈現的節點時，該節點的屬性會顯示在**屬性**視窗。
 
 ## <a name="xsd-toolbar"></a>XSD 工具列
 
@@ -141,7 +140,7 @@ ms.locfileid: "53826990"
 
 ## <a name="xml-editor-integration"></a>XML 編輯器整合
 
- 您可以按一下節點並使用 [檢視程式碼] 操作功能表，在圖表檢視和 XML 編輯器之間來回切換。
+ 按一下節點，然後使用 檢視程式碼操作 （右鍵） 功能表的 圖表 檢視與 XML 編輯器之間您可以來回切換。
 
  如果您在 XML 編輯器中變更結構描述集，圖表檢閱也會同步進行變更。 如需詳細資訊，請參閱 <<c0> [ 與 XML 編輯器整合](../xml-tools/integration-with-xml-editor.md)。
 

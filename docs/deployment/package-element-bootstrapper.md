@@ -1,8 +1,6 @@
 ---
 title: '&lt;封裝&gt;項目 （啟動載入器） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -14,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49867ddc897a9c1a1241a891a3ba3de866d84688
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 902b09ca2a5007f2e4e7d99d2856b01566131f98
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899236"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028505"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;封裝&gt;項目 （啟動載入器）
 `Package`項目是最上層 XML 元素內的封裝檔案。  
@@ -142,14 +140,14 @@ ms.locfileid: "49899236"
 </Package>  
 ```  
 
-## <a name="elements-and-attributes"></a>項目和屬性  
+## <a name="elements-and-attributes"></a>元素和屬性  
  `Package`是必要元素。 它具有下列屬性。  
 
 
-| 屬性 | 描述 |
+| 屬性 | 說明 |
 |--------------------| - |
-| `Culture` | 必要。 定義此套件，用來決定要使用之語言的文化特性。 這個屬性是索引鍵到`Strings`項目，它會列出在安裝期間的產品名稱和錯誤訊息的特定文化特性的字串。 |
-| `Name` | 必要。 這類顯示開發人員工具內的套件名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這個屬性是索引鍵中的`Strings`項目，其中應包含`String`具有項目`Name`並`Culture`屬性設定為符合`Name`並`Culture`屬性`Package`。 |
+| `Culture` | 必要項。 定義此套件，用來決定要使用之語言的文化特性。 這個屬性是索引鍵到`Strings`項目，它會列出在安裝期間的產品名稱和錯誤訊息的特定文化特性的字串。 |
+| `Name` | 必要項。 這類顯示開發人員工具內的套件名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這個屬性是索引鍵中的`Strings`項目，其中應包含`String`具有項目`Name`並`Culture`屬性設定為符合`Name`並`Culture`屬性`Package`。 |
 | `LicenseAgreement` | 選擇性。 指定的檔案名稱，其中包含使用者授權合約 (EULA) 的散發套件中。  這個檔案可以是純文字 (*.txt*) 或豐富文字格式。 (*.rtf*) |
 
 ## <a name="example"></a>範例  
@@ -191,4 +189,4 @@ ms.locfileid: "49899236"
 ```  
 
 ## <a name="see-also"></a>另請參閱  
- [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)
+ [產品和套件結構描述參考](../deployment/product-and-package-schema-reference.md)

@@ -1,8 +1,6 @@
 ---
-title: 'Idiaenumstackframes:: Next |Microsoft Docs'
-ms.custom: ''
+title: IDiaEnumStackFrames::Next | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09378a21-d5e3-4213-b7e2-10f04d85295f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42d096ce41c5ff9f254e7f44d595159130e43548
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 00be37ffa1724cb6ced2423ea388b2a24dae42f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949847"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919964"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
 擷取列舉型別序列中的堆疊框架項目指定的數目。  
@@ -27,7 +25,7 @@ ms.locfileid: "49949847"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT Next(   
+HRESULT Next(   
    ULONG             celt,  
    IDiaStackFrame**  rgelt,  
    ULONG*            pceltFetched  
@@ -45,8 +43,8 @@ HRESULT Next(
  [out]擷取列舉值中傳回的堆疊框架項目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`有沒有更多的堆疊框架。 反之則傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`有沒有更多的堆疊框架。 否則會傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

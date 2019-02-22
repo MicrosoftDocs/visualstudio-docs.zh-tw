@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStringCompare::StrComp |Microsoft 文件
+title: IActiveScriptStringCompare::StrComp |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b92b29f4e40f5e8de567337957aabbcb3c057fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4b2fea6ae4d5819680f38d19f2cd6ea1cf9bf9b5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725068"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090099"
 ---
 # <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
 定義指令碼引擎的字串比較方法。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT StrComp(  
 // The first string:  
     [in] BSTR bszStr1,    
@@ -49,7 +49,7 @@ HRESULT StrComp(
  第二個字串。  
   
  `iRet`  
- 比較的結果。 0 代表`bszStr1`和`bszStr2`都是一樣，則為-1 如果`bszStr1`  <  `bszStr2`; 1，否則`bszStr1`  >  `bszStr2`。  
+ 比較的結果。 0`bszStr1`並`bszStr2`相同;-1 表示`bszStr1`  <  `bszStr2`; 1，否則`bszStr1`  >  `bszStr2`。  
   
 ## <a name="return-value"></a>傳回值  
  會傳回下列值之一：  
@@ -58,13 +58,13 @@ HRESULT StrComp(
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_INVALIDARG`|引數無效。|  
-|`E_UNEXPECTED`|不應該呼叫 （例如，指令碼引擎有尚未載入或初始化）。|  
+|`E_UNEXPECTED`|不需要呼叫 （例如，指令碼引擎有尚未載入或初始化）。|  
   
 ## <a name="remarks"></a>備註  
  每次執行字串比較時，會呼叫這個方法。  
   
 ## <a name="example"></a>範例  
- 下列範例會示範如何多載字串比較函式。 當您使用多載允許[IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)設定 SCRIPTPROP_STRINGCOMPAREINSTANCE。  
+ 下列範例示範如何多載的字串比較函式。 當您使用多載允許[IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)設 SCRIPTPROP_STRINGCOMPAREINSTANCE。  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  

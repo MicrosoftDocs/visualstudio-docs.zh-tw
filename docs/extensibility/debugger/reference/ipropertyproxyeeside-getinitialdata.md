@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 36cceb19-2604-4ef9-b42b-5dd30cbe24b1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 205642c38e0db9045675fe1f1f26a387a78b748b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54a85cbd525f2578685f363f4ccee6ec0f94f208
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852975"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934175"
 ---
 # <a name="ipropertyproxyeesidegetinitialdata"></a>IPropertyProxyEESide::GetInitialData
 傳回此物件的初始資料。  

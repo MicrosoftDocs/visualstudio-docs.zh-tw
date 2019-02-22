@@ -10,16 +10,16 @@ helpviewer_keywords:
 - tokens [SharePoint development in Visual Studio]
 - replaceable parameters [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, replaceable parameters
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 792c7faf9ed704dd01226c750e9898965111c414
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989159"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871945"
 ---
 # <a name="replaceable-parameters"></a>可置換的參數
   可置換的參數，或*語彙基元*，可以使用專案檔內，以提供其實際的值不在設計階段已知的 SharePoint 方案項目中的值。 它們是類似的函式中的標準[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]範本語彙基元。 如需詳細資訊，請參閱 <<c0> [ 範本參數](../ide/template-parameters.md)。  
@@ -65,8 +65,8 @@ ms.locfileid: "53989159"
 |$SharePoint.Feature.DeploymentPath$|包含的功能套件中的資料夾名稱。 此權杖等同於功能設計工具中的 「 部署路徑 」 屬性。 值的範例是，「 Project1_Feature1"。|  
 |$SharePoint.Feature.Id$|包含的功能的 SharePoint 識別碼。 此語彙基元，為具有所有功能層級語彙基元，可供只包含一項功能，透過封裝中的檔案不直接新增至封裝之外的功能。|  
 |$SharePoint.ProjectItem.Name$|專案項目的名稱及其 （不是檔案名稱），以取得從**ISharePointProjectItem.Name**。|  
-|$SharePoint.Type。\<GUID >。AssemblyQualifiedName $|符合語彙基元的 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 之類型的組件限定名稱。 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 的格式為小寫且對應於 Guid.ToString("D") 格式 (也就是 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。|  
-|$SharePoint.Type。\<GUID >。FullName $|比對權杖中的 GUID 型別的完整名稱。 GUID 的格式為小寫且對應於 Guid.tostring 格式 (也就是 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。|  
+|$SharePoint.Type.\<GUID>.AssemblyQualifiedName$|符合語彙基元的 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 之類型的組件限定名稱。 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 的格式為小寫且對應於 Guid.ToString("D") 格式 (也就是 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。|  
+|$SharePoint.Type.\<GUID>.FullName$|比對權杖中的 GUID 型別的完整名稱。 GUID 的格式為小寫且對應於 Guid.tostring 格式 (也就是 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。|  
   
 ## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>語彙基元取代檔案延伸模組清單中加入延伸模組
  雖然權杖理論上可供 SharePoint 專案項目包含在封裝中，根據預設，屬於任何檔案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]搜尋在封裝檔案，資訊清單檔案，並具有下列副檔名的檔案中的權杖：  

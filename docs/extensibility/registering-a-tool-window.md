@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 8c8c4a24-3da4-497b-9db2-0ddd7cfbfdd2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ae73dec5b494e4f9d78949224a34bcdbc66361f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f09788cb69e90114839a66ff0652c779535b066b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884953"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944042"
 ---
 # <a name="register-a-tool-window"></a>註冊工具視窗
 您可以註冊您使用的工具視窗<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>和<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>。  

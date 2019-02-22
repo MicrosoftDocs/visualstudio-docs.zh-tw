@@ -1,7 +1,6 @@
 ---
 title: 環境選項對話方塊
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.OptionsDialog.Environment
@@ -9,15 +8,15 @@ f1_keywords:
 ms.assetid: 3f463cf0-734b-4fdc-b4ff-b47f9bb99069
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e120260559f60f0433770369b36e523e0fcd4cff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c76be48965aa49e0bad61afd0b70a6b8413075ec
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937344"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952823"
 ---
 # <a name="environment-options-dialog-box"></a>環境選項對話方塊
 

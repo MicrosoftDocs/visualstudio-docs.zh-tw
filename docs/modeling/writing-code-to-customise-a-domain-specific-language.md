@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f3fea8dded35e00ee42430c8373309ada8a65f61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42cba18e3b02bb1bb4a8316f82c62ae50700ca8f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991200"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955410"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>撰寫程式碼來自訂特定領域語言
 

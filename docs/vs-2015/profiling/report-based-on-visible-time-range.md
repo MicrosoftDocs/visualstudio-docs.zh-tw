@@ -1,14 +1,9 @@
 ---
 title: 以可見時間範圍為基礎的報表 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.profile
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: ef4f6259-a110-43b6-a325-364154e1ba00
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5576619a2e1c6f5ab955fb393316a873367fac48
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 793b0e49a8e2dcb38b5b2421f09bd2b2ad3d7eed
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728265"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54774584"
 ---
 # <a name="report-based-on-visible-time-range"></a>以可見時間範圍為基礎的報表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51728265"
   
  您可以在這裡的資料表中找到資料的詳細資訊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [沒有執行緒活動可顯示](../profiling/no-thread-activity-to-show-threads-view.md)   
  [執行分析報表](../profiling/execution-profile-report.md)   
  [同步處理時間](../profiling/synchronization-time.md)   
@@ -44,6 +39,3 @@ ms.locfileid: "51728265"
  [磁碟作業報告](../profiling/disk-operations-report-threads-view.md)   
  [個別執行緒摘要報表](../profiling/per-thread-summary-report.md)   
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)
-
-
-

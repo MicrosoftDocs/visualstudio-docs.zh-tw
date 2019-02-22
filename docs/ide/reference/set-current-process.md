@@ -1,7 +1,6 @@
 ---
 title: 設定目前處理序
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Debug.SetCurrentProcess command
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1e016ebd-aadd-411f-a606-03bf69d3f8aa
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c01c399dc76d1b328443edef27edd9a921b1b9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24f4c08147f72168f5207418a51d7a9cfa8a2b51
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855279"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938432"
 ---
 # <a name="set-current-process"></a>設定目前處理序
 將指定的處理序設為偵錯工具中的使用中處理序。

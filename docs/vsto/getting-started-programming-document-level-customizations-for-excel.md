@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Excel projects [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c75b02fa3624ab56539e7ea9fbe7792632c272c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47762c781b24a31b90c75e5f8d9f0d00a6d3363d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937448"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870135"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>開始使用適用於 Excel 的文件層級自訂程式設計
   如果您剛開始使用 Visual Studio 建立適用於 Microsoft Office Excel 的文件層級自訂，以下是您需要知道。  

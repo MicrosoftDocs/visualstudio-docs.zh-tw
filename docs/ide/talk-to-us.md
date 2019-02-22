@@ -1,7 +1,6 @@
 ---
 title: 告訴我們
 ms.date: 10/09/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97063980f22d96a88f0083912e75ca4aa5a33b4f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 222d96935418a46038f369c25472ed1a938215e7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896602"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946069"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio 產品意見反應
 

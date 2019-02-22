@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetSymAttribute |Microsoft Docs
+title: IDebugComPlusSymbolProvider::GetSymAttribute | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,100 +8,100 @@ helpviewer_keywords:
 ms.assetid: 6cbaac92-a60b-4165-a7f5-c34407770f3c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26b9ccab159e95d1248de7efa620a6fccecc7164
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c46719b7de97e2a55eefb28d9e27df1557a90e65
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921389"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413354"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
-擷取與指定的父屬性指定模組的偵錯符號。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT GetSymAttribute (  
-   ULONG32  ulAppDomainID,  
-   GUID     guidModule,  
-   _mdToken tokParent,  
-   LPOLESTR pstrName,  
-   ULONG32  cBuffer,  
-   ULONG32* pcBuffer,  
-   BYTE*    buffer  
-);  
-```  
-  
-```csharp  
-int GetSymAttribute (  
-   uint      ulAppDomainID,  
-   Guid      guidModule,  
-   int       tokParent,  
-   string    pstrName,  
-   uint      cBuffer,  
-   out uint  pcBuffer,  
-   out int[] buffer  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `ulAppDomainID`  
- [in]應用程式定義域的識別項。  
-  
- `guidModule`  
- [in]模組的唯一識別碼。  
-  
- `tokParent`  
- [in]父屬性的語彙基元。  
-  
- `pstrName`  
- [in]模組的名稱。  
-  
- `cBuffer`  
- [in]如輸出所需的位元組數目`buffer`。  
-  
- `pcBuffer`  
- [out]輸出的長度`buffer`。  
-  
- `buffer`  
- [out]包含符號的陣列。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::GetSymAttribute(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    _mdToken tokParent,  
-    __in_z LPOLESTR pstrName,  
-    ULONG32 cBuffer,  
-    ULONG32 *pcBuffer,  
-    BYTE buffer[])  
-{  
-    HRESULT hr = S_OK;  
-    CComPtr<CModule> pModule;  
-    Module_ID idModule(ulAppDomainID, guidModule);  
-  
-    METHOD_ENTRY( CDebugSymbolProvider::GetSymAttribute );  
-  
-    IfFailGo( GetModule( idModule, &pModule) );  
-  
-    IfFailGo( pModule->GetSymAttribute( tokParent, pstrName, cBuffer, pcBuffer, buffer ) );  
-  
-Error:  
-  
-    METHOD_EXIT(CDebugSymbolProvider::GetSymAttribute, hr);  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+擷取與指定的父屬性指定模組的偵錯符號。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT GetSymAttribute (
+    ULONG32  ulAppDomainID,
+    GUID     guidModule,
+    _mdToken tokParent,
+    LPOLESTR pstrName,
+    ULONG32  cBuffer,
+    ULONG32* pcBuffer,
+    BYTE*    buffer
+);
+```
+
+```csharp
+int GetSymAttribute (
+    uint      ulAppDomainID,
+    Guid      guidModule,
+    int       tokParent,
+    string    pstrName,
+    uint      cBuffer,
+    out uint  pcBuffer,
+    out int[] buffer
+);
+```
+
+#### <a name="parameters"></a>參數
+`ulAppDomainID`  
+[in]應用程式定義域的識別項。
+
+`guidModule`  
+[in]模組的唯一識別碼。
+
+`tokParent`  
+[in]父屬性的語彙基元。
+
+`pstrName`  
+[in]模組的名稱。
+
+`cBuffer`  
+[in]如輸出所需的位元組數目`buffer`。
+
+`pcBuffer`  
+[out]輸出的長度`buffer`。
+
+`buffer`  
+[out]包含符號的陣列。
+
+## <a name="return-value"></a>傳回值
+如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="example"></a>範例
+下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。
+
+```cpp
+HRESULT CDebugSymbolProvider::GetSymAttribute(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    _mdToken tokParent,
+    __in_z LPOLESTR pstrName,
+    ULONG32 cBuffer,
+    ULONG32 *pcBuffer,
+    BYTE buffer[])
+{
+    HRESULT hr = S_OK;
+    CComPtr<CModule> pModule;
+    Module_ID idModule(ulAppDomainID, guidModule);
+
+    METHOD_ENTRY( CDebugSymbolProvider::GetSymAttribute );
+
+    IfFailGo( GetModule( idModule, &pModule) );
+
+    IfFailGo( pModule->GetSymAttribute( tokParent, pstrName, cBuffer, pcBuffer, buffer ) );
+
+Error:
+
+    METHOD_EXIT(CDebugSymbolProvider::GetSymAttribute, hr);
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>另請參閱
+[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

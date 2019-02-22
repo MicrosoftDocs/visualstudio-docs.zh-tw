@@ -1,8 +1,6 @@
 ---
 title: 專案設計工具、建置頁 (C#)
 ms.date: 06/20/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuild
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b003b3f965ab4f3857e2a532ae715d99533aa8e7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 330c8bb033a167b03f62cf4fda95a58ea08ccd92
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783814"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922143"
 ---
 # <a name="build-page-project-designer-c"></a>專案設計工具、建置頁 (C#)
 您可以使用 [專案設計工具] 的 [建置] 頁面，來指定專案的組建組態屬性。 此頁面只適用於 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案。
@@ -33,11 +31,11 @@ ms.locfileid: "38783814"
 下列選項可讓您選取要顯示或修改的組態和平台。
 
 > [!NOTE]
-> 使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 因此不會顯示這些選項。 如需詳細資訊，請參閱[如何：設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
+> 使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 因此不會顯示這些選項。 如需詳細資訊，請參閱[＜How to：設定偵錯和版本組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
 **組態** 指定要顯示或修改的組態設定。 設定可以是 [使用中 (偵錯)] (這是預設值)、[偵錯]、[發行] 或 [所有組態]。
 
-**平台** 指定要顯示或修改的平台設定。 預設設定為 [使用中 (任何 CPU)]。 您可以使用 [組態管理員] 來變更使用中的平台。 如需詳細資訊，請參閱[如何：建立和編輯組態](../../ide/how-to-create-and-edit-configurations.md)。
+**平台** 指定要顯示或修改的平台設定。 預設設定為 [使用中 (任何 CPU)]。 您可以使用 [組態管理員] 來變更使用中的平台。 如需詳細資訊，請參閱[＜How to：建立和編輯組態](../../ide/how-to-create-and-edit-configurations.md)。
 
 ## <a name="general"></a>一般
 下列選項可讓您設定幾個 C# 編譯器設定。

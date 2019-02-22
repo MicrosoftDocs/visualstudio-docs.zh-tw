@@ -5,15 +5,15 @@ ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27f918b3ca3408303091dc5200ab8919ffc1eecc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 905e08bd1840e52c66a7d1cc6e87e1b560ee2b93
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986865"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951543"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 字彙表
 這些詞彙可用來說明 Microsoft Build Engine (MSBuild) 及其元件。  

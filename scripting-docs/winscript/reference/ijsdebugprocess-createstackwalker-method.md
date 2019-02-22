@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugprocess:: Createstackwalker 方法 |Microsoft 文件'
+title: 'Ijsdebugprocess:: Createstackwalker 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66ca7594f4e3c6ef44aa8cde1d92f17d46a9aa30
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8f9c39163eae1f3a9bad15697bbc5621661bc781
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727768"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088279"
 ---
 # <a name="ijsdebugprocesscreatestackwalker-method"></a>IJsDebugProcess::CreateStackWalker 方法
 堆疊查核器的 factory 方法。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT CreateStackWalker(  
    DWORD threadId,  
    IJsDebugStackWalker **ppStackWalker  
@@ -37,7 +37,7 @@ HRESULT CreateStackWalker(
   
 #### <a name="parameters"></a>參數  
  `threadId`  
- [in]執行緒識別碼。  
+ [in]執行緒 id。  
   
  `ppStackWalker`  
  [out]新的堆疊查核器物件。  
@@ -45,7 +45,7 @@ HRESULT CreateStackWalker(
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="remarks"></a>備註  
- 如果執行緒在其上沒有 JavaScript，傳回 E_JsDEBUG_UNKNOWN_THREAD。 目標處理序停止時，只會呼叫這個方法。  
+ 如果執行緒在其上沒有 JavaScript，則傳回 E_JsDEBUG_UNKNOWN_THREAD。 目標處理序停止時，可能只呼叫這個方法。  
   
 ## <a name="requirements"></a>需求  
  **標頭：** jscript9diag.h  

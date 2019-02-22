@@ -2,33 +2,29 @@
 title: JavaScript 開發人員編輯簡介
 description: 這個 Visual Studio 程式碼編輯器簡介，說明 Visual Studio 可讓撰寫、巡覽和了解 JavaScript 程式碼更加輕鬆的一些方式。
 ms.date: 12/13/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10557e8ce959be2d1170044e20fd0ad99c76fa86
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967423"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957841"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
 在這個 Visual Studio 程式碼編輯器簡介中，我們將探討 Visual Studio 讓撰寫、巡覽和了解程式碼更加輕鬆的一些方式。
 
 > [!TIP]
-> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。 根據您執行的應用程式開發類型，您可能需要安裝 Visual Studio 隨附的 **Node.js 開發工作負載**。
+> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。 根據您執行的應用程式開發類型，您可能需要安裝 Visual Studio 隨附的 **Node.js 開發工作負載**。
 
 本文假設您已熟悉 JavaScript 開發。 如果您不熟悉，建議您先瀏覽教學課程 (例如[建立 Node.js 和 Express 應用程式](../javascript/tutorial-nodejs.md))。
-
-> [!TIP]
-> 若要繼續遵循這篇文章，請確定您已為 Visual Studio 選取 JavaScript 設定。 如需選取整合式開發環境 (IDE) 的設定資訊，請參閱[環境設定](../ide/environment-settings.md)。 當您匯入設定時，請匯入 **JavaScript** 設定。
 
 ## <a name="add-a-new-project-file"></a>新增專案檔
 
@@ -96,7 +92,7 @@ Visual Studio 編輯器讓檢查類型、函式等定義變得十分輕鬆。其
 
    ![查看定義視窗](../javascript/media/write-code-peek-definition.png)
 
-1. 選擇快顯視窗右上方含 "x" 的小型方塊，以關閉查看的定義視窗。
+選擇快顯視窗右上方含 "x" 的小型方塊，以關閉查看的定義視窗。
 
 ## <a name="use-code-snippets"></a>使用程式碼片段
 

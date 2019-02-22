@@ -1,27 +1,22 @@
 ---
 title: 在設計階段時解析組件 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cc10169ac07efdeded41a9bb2990bdc206a17435
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6dca0197ee25bc56f3ab017530baeb842572fc16
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224649"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54801740"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>在設計階段時解析組件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,8 +40,5 @@ ms.locfileid: "49224649"
   
  現在隨附於 .NET Framework SDK 的目標套件包含 Framework 版本中所有執行階段組件的清單，稱為轉散發 (redist) 清單。 如此一來，使得建置系統不可能根據錯誤的組件版本來解析類別。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [進階概念](../msbuild/msbuild-advanced-concepts.md)
-
-
-

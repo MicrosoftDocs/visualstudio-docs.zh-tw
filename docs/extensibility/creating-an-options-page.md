@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 162c03fec6119985636122a414c00c96e384b340
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 35845ed22fa06ca7df62c71ddea4be3629534af9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843683"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953467"
 ---
 # <a name="create-an-options-page"></a>建立選項頁面
 本逐步解說會建立簡單的工具/選項頁面用以檢查和設定屬性的屬性方格。  

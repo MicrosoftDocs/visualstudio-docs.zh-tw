@@ -1,25 +1,20 @@
 ---
-title: 步驟 3：將隨機圖示指派給每個標籤 | Microsoft Docs
-ms.custom: ''
+title: 步驟 3：將隨機圖示指派給每個標籤 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8ce8047cbdf6d487a1b4ff00ae99c617a9548fca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 993f6533a5d654ab183fdee587f4968d7bff8c4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799663"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步驟 3：將隨機圖示指派給每個標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "49298775"
   
      第一行將 `control` 變數轉換為名為 `iconLabel` 的 Label。 下一行為 `if` 陳述式，會檢查以確定轉換是否成功。 如果轉換成功，則會執行 `if` 陳述式中的陳述式。 (您可以回想一下上一個教學課程中，其中 `if` 陳述式是用來評估您所指定的任何條件)。`if` 陳述式中的第一行會建立名稱為 `randomNumber` 的變數，其中包含亂數，對應到圖示清單中的其中一個項目。 若要這樣做，該行使用您先前建立之 `Next` 物件的 `Random` 方法。 `Next` 方法會傳回亂數。 這一行也使用 `Count` 清單的 `icons` 屬性，決定從中選擇亂數的範圍。 下一行將圖示清單的其中一個項目指定至標籤的 `Text` 屬性。 註解行在本主題稍後加以說明。 最後，`if` 陳述式中的最後一行從清單中移除已加入至表單的圖示。  
   
-     請記住，如果您不確定程式碼某些部分所執行的動作，可以將滑鼠指標放在程式碼項目上並檢閱顯示的工具提示。 使用 Visual Studio 偵錯工具時，您也可以在程式執行時對每一行程式碼進行逐步執行。 如需詳細資訊，請參閱 [How Do I: Step with The Debugger in Visual Studio?](http://msdn.microsoft.com/vstudio/ee672313.aspx) (如何：在 Visual Studio 中逐步執行偵錯工具？) 或[使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。  
+     請記住，如果您不確定程式碼某些部分所執行的動作，可以將滑鼠指標放在程式碼項目上並檢閱顯示的工具提示。 使用 Visual Studio 偵錯工具時，您也可以在程式執行時對每一行程式碼進行逐步執行。 如需詳細資訊，請參閱[如何：在 Visual Studio 中偵錯工具的步驟嗎？](http://msdn.microsoft.com/vstudio/ee672313.aspx)或是[使用 偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)如需詳細資訊。  
   
 3.  若要在程式啟動時使用圖示填滿遊戲面板，您必須呼叫 `AssignIconsToSquares()` 方法。 如果您使用的是 Visual C#，請在 `Form1` 建構函式中將陳述式新增至對 `InitializeComponent()` 方法的呼叫正下方，如此您的表單會呼叫新方法，在表單顯示之前自行設定。 當您建立新的物件 (例如類別或結構) 時會呼叫建構函式。 如需詳細資訊，請參閱[建構函式 (C# 程式設計手冊)](http://msdn.microsoft.com/library/ace5hbzh.aspx)，若是在 Visual Basic 中，則請參閱[使用建構函式和解構函式](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx)。  
   
@@ -90,6 +85,3 @@ ms.locfileid: "49298775"
 -   若要移至下一個教學課程步驟，請參閱[步驟 4：將 Click 事件處理常式新增至每個標籤](../ide/step-4-add-a-click-event-handler-to-each-label.md)。  
   
 -   若要返回上一個教學課程步驟，請參閱[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。
-
-
-

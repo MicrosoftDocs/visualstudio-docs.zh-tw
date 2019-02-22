@@ -9,15 +9,15 @@ helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6de8e63331c4cb5250ceadd6f7394dd54319e499
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8d21f1697ce3d566c27e9845ae4c2a9a9d5e068
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856406"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450174"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>全球化和當地語系化的 Excel 方案
   本節包含在非英文設定的 Windows 電腦上執行 Microsoft Office Excel 解決方案之特殊考量的相關資訊。 當您使用 Visual Studio 建立其他種類的解決方案時，遇到的 Microsoft Office 解決方案全球化和當地語系化問題層面，大部分都一樣。 如需一般資訊，請參閱 < [Globalize 和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)。
@@ -36,7 +36,7 @@ ms.locfileid: "53856406"
 
  雖然 Managed 程式碼傳遞或操作的資料使用了英文 (美國) 格式，但 Excel 仍會根據使用者的地區設定正確轉譯和顯示資料。 Excel 能夠正確地格式化資料，是因為 Managed 程式碼會把地區設定識別碼 1033 和資料一起傳遞，這表示資料是英文 (美國) 格式，因此必須重新格式以符合使用者的地區設定。
 
- 比方說，如果使用者有地區選項設為德文 （德國） 地區設定，則會預期要格式化的日期 2005 年 6 月 29 日：29.06.2005。 不過，如果您的解決方案會將日期傳遞至 Excel 做為字串，您必須設定格式英文 （美國） 格式的日期：6/29/2005。 如果儲存格已格式化為 [日期] 儲存格，Excel 就會以德文 (德國) 格式顯示日期。
+ 比方說，如果使用者有地區選項設為德文 （德國） 地區設定，則會預期要格式化的日期 2005 年 6 月 29 日：29.06.2005. 不過，如果您的解決方案會將日期傳遞至 Excel 做為字串，您必須設定格式英文 （美國） 格式的日期：6/29/2005. 如果儲存格已格式化為 [日期] 儲存格，Excel 就會以德文 (德國) 格式顯示日期。
 
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>將其他地區設定識別碼傳遞給 Excel 物件模型
  通用語言執行平台 (CLR) 會自動將地區設定識別碼 1033 傳遞給接受區分地區設定資料之 Excel 物件模型中的所有方法和屬性。 沒有任何方法可以自動為進入物件模型的所有呼叫變更此行為。 但是，您可以將不同的地區設定識別碼傳遞給特定的方法：使用 <xref:System.Type.InvokeMember%2A> 呼叫方法，並把地區設定識別碼傳遞給此方法的 *culture* 參數。
@@ -47,7 +47,7 @@ ms.locfileid: "53856406"
  您仍然必須確定與文件文字互動的任何程式碼部分會繼續符合文字語言，而書籤、命名的範圍和其他顯示欄位會配合 Office 文件對不同文法和文字長度的任何重新格式化進行必要的調整。 對於包含極少量文字的文件範本，您可能要考慮將文字儲存在資源檔，然後再載入 在執行階段的文字。
 
 ### <a name="text-direction"></a>文字方向
- 在 Excel 中，您可以設定工作表屬性呈現由右至左的文字。 裝載控制項或有任何控制項`RightToLeft`屬性，會自動放置在設計工具上符合這些設定，在執行階段。 Word 沒有雙向文字的文件設定 (您只能變更文字的對齊方式)，所以控制項無法對應到這個設定。 您必須改為每個控制項設定文字對齊方式。 也可以撰寫程式碼來梳理所有控制項，強制其文字由右至左呈現。
+ 在 Excel 中，您可以設定工作表屬性呈現由右至左的文字。 裝載控制項或有任何控制項`RightToLeft`屬性，會自動放置在設計工具上符合這些設定，在執行階段。 Word 沒有雙向文字 （您只能變更文字的對齊方式） 的文件設定好讓控制項無法對應到此設定。 您必須改為每個控制項設定文字對齊方式。 也可以撰寫程式碼來梳理所有控制項，強制其文字由右至左呈現。
 
 ### <a name="change-culture"></a>變更文化特性
  您的文件層級自訂程式碼通常會共用主要的 Excel UI 執行緒，讓您對執行緒文化特性進行的任何變更都會影響在該執行緒上執行的其他所有項目；變更不限於自訂項目。

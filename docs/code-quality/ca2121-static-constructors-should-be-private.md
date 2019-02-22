@@ -1,7 +1,6 @@
 ---
 title: CA2121:靜態建構函式應該為私用的
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2121
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ee93c620-8fc1-4e47-866c-d389c3ca9f2e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 124d65f1147bbc9aa0d38b2bca8f742bf1b60a9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9aecfe8e0be0f5d32df41b7eb164423fd4d405db
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954259"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939732"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121:靜態建構函式應該為私用的
 

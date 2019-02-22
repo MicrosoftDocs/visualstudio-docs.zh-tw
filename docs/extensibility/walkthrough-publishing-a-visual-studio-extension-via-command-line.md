@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb35365220ade512defc180b06e46b95999dfa7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a955331e4f6bfc0f50be3dfb60fba4cd211b987
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857211"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974145"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>逐步解說：發行的 Visual Studio 擴充功能，透過命令列
 
@@ -92,7 +92,7 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 |---------|---------|
 |personalAccessToken （必要項 | 個人存取權杖，用來驗證 「 發行者 」。 |
 |publisherName （必要） | 「 發行者 」 （例如，識別項） 的名稱。 |
-|覆寫 | 指定應該在新的個人存取權杖與覆寫任何現有的發行者。 |
+|overwrite | 指定應該在新的個人存取權杖與覆寫任何現有的發行者。 |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 42e0c220466291f845209f22917d728dee3e553e
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348312"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350111"
 ---
 # <a name="expected-"></a>必須是 '}'
 您未包含標記的函式主體、 迴圈、 程式碼區塊結尾的右大括號或物件初始設定式。 此錯誤的範例**針對**迴圈只左大括號標記迴圈的主體。  

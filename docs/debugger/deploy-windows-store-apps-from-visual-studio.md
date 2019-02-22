@@ -2,7 +2,6 @@
 title: 將 UWP 應用程式部署 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 01/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -11,15 +10,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d8006fb0ddcab4ab3eeee1616632d2dc513428ba
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 13dc1f44e329f35ad9871fe5969a65d4ad46e770
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056807"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043761"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>從 Visual Studio 部署 UWP 應用程式
 
@@ -29,7 +28,7 @@ Visual Studio 部署功能建置，並註冊的目標裝置使用 Visual Studio 
 
 - 目標是遠端裝置時，Visual Studio 會將必要檔案複製至遠端電腦，並在該裝置上註冊應用程式。
 
-當您使用下列選項從 Visual Studio 偵錯應用程式時，會自動進行部署：[開始偵錯]** 選項 (快速鍵：F5) 或**啟動但不偵錯**選項 (鍵盤：CTRL + F5 您也可以手動部署應用程式。 手動部署適用於下列情況：
+當您使用偵錯您的應用程式，從 Visual Studio 部署便會自動**開始偵錯**選項 (鍵盤： F5) 或**啟動但不偵錯**選項 (鍵盤： CTRL + F5)。 您也可以手動部署應用程式。 手動部署適用於下列情況：
 
 - 本機或遠端電腦上進行臨機操作測試。
 
@@ -119,4 +118,4 @@ Visual Studio 部署功能建置，並註冊的目標裝置使用 Visual Studio 
 
 - [進階遠端部署選項](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [對已安裝的應用程式套件進行偵錯](../debugger/debug-installed-app-package.md)
-- [從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)
+- [從 Visual Studio 執行應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

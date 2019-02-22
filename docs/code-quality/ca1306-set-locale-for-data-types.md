@@ -1,7 +1,6 @@
 ---
 title: CA1306:必須設定資料類型的地區設定
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1306
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 104297b2-5806-4de0-a8d9-c589380a796c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 376c7dc88047b861d087896a941079514c1e4303
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47faa5e496585940f61f94bb6dfb0b8d9d70f752
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944044"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932738"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306:必須設定資料類型的地區設定
 

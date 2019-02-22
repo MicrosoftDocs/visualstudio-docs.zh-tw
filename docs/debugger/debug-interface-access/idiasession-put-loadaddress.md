@@ -1,8 +1,6 @@
 ---
-title: 'Idiasession:: Put_loadaddress |Microsoft Docs'
-ms.custom: ''
+title: IDiaSession::put_loadAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b157b245-1ea0-4b80-8962-d8b278dbc742
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9794ba24de6702d4797b91e431853bed4e3912ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 488ae20ae4e38905b722f833a52676eea6ce0e81
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914121"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035766"
 ---
 # <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
 符號設定對應的可執行檔載入位址，此符號存放區中。  
@@ -27,7 +25,7 @@ ms.locfileid: "49914121"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT put_loadAddress (   
+HRESULT put_loadAddress (   
    ULONGLONG NewVal  
 );  
 ```  
@@ -42,5 +40,5 @@ HRESULT put_loadAddress (
 > [!NOTE]
 >  您必須先呼叫這個方法，當您取得[IDiaSession](../../debugger/debug-interface-access/idiasession.md)物件，並開始使用的物件，如果您需要使用任何虛擬屬性上符號之前。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

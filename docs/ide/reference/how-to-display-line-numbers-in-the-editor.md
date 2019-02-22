@@ -1,8 +1,6 @@
 ---
-title: 如何：顯示編輯器中的行號
+title: HOW TO：顯示編輯器中的行號
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - line numbers, displaying
@@ -12,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 40b38559-b8de-4041-91f2-68986767c976
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d7977fde404570808f0ee2d6514249a5e73286a
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6986394a63ea495971a8f375c3143b678f29898e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388846"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942917"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>如何：顯示編輯器中的行號
+# <a name="how-to-display-line-numbers-in-the-editor"></a>HOW TO：顯示編輯器中的行號
 
 您可以在程式碼中顯示或隱藏行號。
 

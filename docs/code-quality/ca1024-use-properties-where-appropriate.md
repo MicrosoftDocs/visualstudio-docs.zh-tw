@@ -1,7 +1,6 @@
 ---
 title: CA1024:建議在適當時使用屬性
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 3a04f765-af7c-4872-87ad-9cc29e8e657f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 54465448514f2c8b726fbc1c49b64c4ddc641ee7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a3fba3a733381642999d7bccb5666b7db895b87
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904912"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922299"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024:建議在適當時使用屬性
 

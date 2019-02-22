@@ -1,22 +1,21 @@
 ---
 title: 適用於 Python 的 Web 應用程式範本
 description: Visual Studio 提供使用 Bottle、Flask 和 Django 架構的 Python Web 應用程式範本，其支援包括偵錯組態並發佈到 Azure App Service。
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29730f6dfa2d220759a5e563305e4e0cbb9675c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81684f8069189f6ee3deed48d9f2a6718b01d7b4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850618"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957896"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 應用程式專案範本
 
@@ -40,7 +39,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 所有的 [空白 \<架構> Web 專案] 範本都會建立具有精簡樣板程式碼的專案，以及在 *requirements.txt* 檔案中宣告的必要相依性。
 
-| 範本 | 說明 |
+| 範本 | 描述 |
 | --- | --- |
 | **空白 Bottle Web 專案** | 在 *app.py* 中產生精簡應用程式，並包含 `/` 的首頁，以及使用非常短的內嵌頁面範本來回應 `<name>` 的 `/hello/<name>` 頁面。 |
 | **空白 Django Web 專案** | 產生具核心 Django 網站架構，但不含 Django 應用程式的 Django 網站。 如需詳細資訊，請參閱 [Django 範本](python-django-web-application-project-template.md)和[學習 Django 步驟 1](learn-django-in-visual-studio-step-01-project-and-solution.md)。 |
@@ -50,7 +49,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 不論選擇的架構為何，所有 [\<架構> Web 專案] 範本都會建立包含相同設計的入門 Web 應用程式。 該應用程式具有 [首頁]、[關於] 和 [連絡] 頁面，且包含使用 Bootstrap 的瀏覽列和回應式設計。 每個應用程式都已適當設定為提供靜態檔案 (CSS、JavaScript 和字型)，並使用適用於該架構的頁面範本機制。
 
-| 範本 | 說明 |
+| 範本 | 描述 |
 | --- | --- |
 | **Bottle Web 專案** | 產生其靜態檔案會包含在 *static* 資料夾中，且經由 *app.py* 中程式碼處理的應用程式。 個別頁面的路由會包含在 *routes.py* 中，且 *views* 資料夾會包含頁面範本。|
 | **Django Web 專案** | 產生 Django 專案和含三個頁面、驗證支援，以及 SQLite 資料庫 (但不含資料模型) 的 Django 應用程式。 如需詳細資訊，請參閱 [Django 範本](python-django-web-application-project-template.md)和[學習 Django 步驟 4](learn-django-in-visual-studio-step-04-full-django-project-template.md)。 |
@@ -61,7 +60,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 [投票 \<架構> Web 專案] 範本會建立入門 Web 應用程式，使用者可以透過它對不同的投票問題進行投票。 每個應用程式都建置在 [Web] 專案範本的結構上，以使用資料庫來管理投票和使用者回應。 應用程式會包含適當的資料模型，以及會從 *samples.json* 檔案載入投票項目的特殊應用程式頁面 (/seed)。
 
-| 範本 | 說明 |
+| 範本 | 描述 |
 | --- | --- |
 | **投票 Bottle Web 專案** | 產生能針對記憶體內資料庫、MongoDB 或 Azure 資料表儲存體執行的應用程式，這是使用 `REPOSITORY_NAME` 環境變數來設定。 資料模型和資料存放區程式碼會包含在 *models* 資料夾中，且 *settings.py* 檔案會包含程式碼以決定要使用哪個資料存放區。 |
 | **投票 Django Web 專案** | 會產生 Django 專案和包含三個頁面及 SQLite 資料庫的 Django 應用程式。 包含對 Django 系統管理介面的自訂項目，以允許已驗證的系統管理員建立及管理投票。 如需詳細資訊，請參閱 [Django 範本](python-django-web-application-project-template.md)和[學習 Django 步驟 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)。 |

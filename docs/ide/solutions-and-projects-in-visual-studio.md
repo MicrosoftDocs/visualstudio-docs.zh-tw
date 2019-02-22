@@ -1,7 +1,6 @@
 ---
 title: 方案和專案
 ms.date: 10/05/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewsolutionitem
@@ -21,15 +20,15 @@ helpviewer_keywords:
 - projects [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8331ff52da4b0d0e8afe81e66f5674258df709fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8302c517f28e32c154f688bd9f282070013f812
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938549"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957818"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 
@@ -58,7 +57,7 @@ ms.locfileid: "53938549"
 
 Visual Studio 使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存方案的設定。
 
-|副檔名|名稱|說明|
+|副檔名|名稱|描述|
 |---------------|----------|-----------------|
 |.sln|Visual Studio 方案|將專案、專案項目和方案項目組織到方案中。|
 |.suo|方案使用者選項|儲存使用者層級設定和自訂項目，例如中斷點。|

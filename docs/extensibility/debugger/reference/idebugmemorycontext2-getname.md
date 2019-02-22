@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::GetName |Microsoft Docs
+title: IDebugMemoryContext2::GetName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8c212556-7d9e-4d68-b2a9-8212f50d0287
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 708402de28b7385d33c014e3b7c216cddc124d96
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e97fcee5f64fc12f7100d2e796fbed8a954364ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907929"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929256"
 ---
 # <a name="idebugmemorycontext2getname"></a>IDebugMemoryContext2::GetName
 擷取此內容的使用者可顯示名稱。  

@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2627fcb19933d21021c97323982e03ff361bd36f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7e83f8fa52717c4e965f9e68b727b02a81c5a6b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834278"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917580"
 ---
 # <a name="defining-shapes-and-connectors"></a>定義圖案和連接器
 您可以使用數種基本圖形類型，來顯示網域指定的語言 (DSL) 圖表上的資訊。

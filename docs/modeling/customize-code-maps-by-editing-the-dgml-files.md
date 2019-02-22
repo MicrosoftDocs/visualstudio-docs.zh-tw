@@ -17,16 +17,15 @@ helpviewer_keywords:
 - dependency graphs, assigning categories and properties
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: bb354e3cd9f418b9a4a93d1cb9781a372dc9fa72
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 31f26acadcbeac4aa042f7372fd4c80a9e385c54
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886081"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937938"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 
@@ -293,7 +292,7 @@ ms.locfileid: "53886081"
 
     <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
 
-    <Operator> :: ="<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "！ =" &#124; 「 或 」 &#124; "和" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
     <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
 

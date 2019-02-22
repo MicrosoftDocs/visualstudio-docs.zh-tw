@@ -1,14 +1,9 @@
 ---
 title: 範本參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, reference
 - reference, Visual Studio templates
@@ -16,13 +11,13 @@ ms.assetid: 5ebdd6c4-5d3e-448c-b47d-f62ec5f44d51
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90fabf75d3e36d635a512a925e8ec32895b03ef2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 0690d37e90f910300f75880387a3f3ec44783206
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059917"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801137"
 ---
 # <a name="visual-studio-template-reference"></a>Visual Studio 樣板參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

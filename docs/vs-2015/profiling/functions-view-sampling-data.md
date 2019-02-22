@@ -1,14 +1,9 @@
 ---
 title: 函式檢視 - 取樣資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Functions View
 - Functions view
@@ -16,13 +11,13 @@ ms.assetid: 029d5ebb-e551-46b0-b64e-2c553d9dbb8e
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d74ed306c2e8396b1b7bc06910105552fc7d5873
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 68280c4da20ce063b93b7347cc2857d4a83b9a18
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733033"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54769148"
 ---
 # <a name="functions-view---sampling-data"></a>函式檢視 - 取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +42,8 @@ ms.locfileid: "51733033"
 |**專有樣本**|此函式主體中的程式碼執行時 (亦即此函式在呼叫堆疊最上方時) 所收集的樣本總數。 不包含此函式所呼叫之函式中所收集的樣本。|  
 |**專有樣本 %**|分析執行的所有樣本中，屬於此函式之專有樣本的百分比。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [函式檢視 - 檢測](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [函式檢視 - 取樣](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [函式檢視](../profiling/functions-view-instrumentation-data.md)
-
-
-

@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_virtualtableshape |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_virtualTableShape | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 92360cbd-0761-446e-93f9-04dc8f4b66c6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c5bc66938d6139eaacf23c5f269c507800d68f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1147635a3558f1743578acbedb59738dec7d9ca6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871845"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016885"
 ---
 # <a name="idiasymbolgetvirtualtableshape"></a>IDiaSymbol::get_virtualTableShape
 擷取使用者自訂類型的虛擬資料表之型別的符號介面。  
@@ -27,7 +25,7 @@ ms.locfileid: "49871845"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_virtualTableShape (   
+HRESULT get_virtualTableShape (   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -42,5 +40,5 @@ HRESULT get_virtualTableShape (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

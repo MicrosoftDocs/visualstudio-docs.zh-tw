@@ -1,8 +1,6 @@
 ---
-title: 'Idiasegment:: Get_write |Microsoft Docs'
-ms.custom: ''
+title: IDiaSegment::get_write | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5fcda988-6be1-4b2f-8660-b59aa78fc35d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4c312c0b2c6b4374ad407fa449ddbedfa774233
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7a2a5e1e56ed72bc744180a3600b24e12b2c8c5c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825987"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928494"
 ---
 # <a name="idiasegmentgetwrite"></a>IDiaSegment::get_write
 擷取旗標，指出是否可以修改的區段。  
@@ -27,7 +25,7 @@ ms.locfileid: "49825987"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_write (   
+HRESULT get_write (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_write (
  [out]會傳回`TRUE`如果區段可寫入，否則傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

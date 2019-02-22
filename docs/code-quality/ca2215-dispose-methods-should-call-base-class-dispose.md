@@ -1,7 +1,6 @@
 ---
 title: CA2215:Dispose 方法應該呼叫基底類別處置
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2215
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c772e7a6-a87e-425c-a70e-912664ae9042
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8531bfd8407415aa1868fb5e1f633be442ce9bc7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 203fc14097e0c6d2fbdaee1689deffdfe814eb63
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844219"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914314"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215:Dispose 方法應該呼叫基底類別處置
 

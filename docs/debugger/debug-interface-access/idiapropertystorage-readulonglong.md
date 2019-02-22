@@ -1,8 +1,6 @@
 ---
 title: IDiaPropertyStorage::ReadULONGLONG |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f80a2e24-5744-4fec-bab0-3ed51aef6e58
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 457ca1d493498e0592c572ae0c93d7d2d6a01d30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5dea61b14cdee1ac260e4a21db0056abbdcad74f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867646"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977378"
 ---
 # <a name="idiapropertystoragereadulonglong"></a>IDiaPropertyStorage::ReadULONGLONG
 讀取`ULONGLONG`屬性集合中的值。  
@@ -27,7 +25,7 @@ ms.locfileid: "49867646"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT ReadULONGLONG (   
+HRESULT ReadULONGLONG (   
    PROPID     id,  
    ULONGLONG* pValue  
 );  
@@ -46,5 +44,5 @@ HRESULT ReadULONGLONG (
 ## <a name="remarks"></a>備註  
  A`ULONGLONG`為 64 位元不帶正負號整數的 Windows 所定義。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

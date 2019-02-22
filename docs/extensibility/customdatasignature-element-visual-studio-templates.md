@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 8c3db51d-7014-4484-802a-15aa1353dbdb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3b62a8d88efbddaaf4032bf290730507bc62f3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf09080d3e7ceb3221006e11d47881549ecf5faa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832108"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956827"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature 元素 （Visual Studio 範本）
 指定的文字簽章，以尋找自訂資料。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<CustomDataSignature >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<CustomDataSignature>  
   
 ## <a name="syntax"></a>語法  
   

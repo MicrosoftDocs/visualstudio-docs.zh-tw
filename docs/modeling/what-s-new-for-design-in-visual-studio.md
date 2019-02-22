@@ -1,7 +1,6 @@
 ---
 title: 有關設計的新功能
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - what's new [VIsual Studio ALM], architecture and modeling
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - modeling software [Visual Studio ALM], What's New
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdea0b8e24347e608ad0e1736b55e34acb4e5854
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 958526ccd6145813589167c639cb10550e9e8869
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956019"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315998"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>在 Visual Studio 中設計的新功能
 
@@ -39,7 +38,7 @@ ms.locfileid: "53956019"
 
 您現在會看到您的變更，立即在方案中目前的程式碼分析結果的影響每次您儲存圖表。 您不必再等候完成 「 相依性驗證 」 命令。
 
-如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)。
+如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)。
 
 ## <a name="uml-designers-have-been-removed"></a>已移除 UML 設計工具
 
@@ -60,7 +59,7 @@ UML 設計工具已移除了此版本的 Visual Studio Enterprise。
 
 如果您是 UML 設計工具的大量使用者時，您可以繼續使用 Visual Studio 2015 或更早版本，而您決定針對您的 UML 需求的替代工具。
 
-如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)。
+如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)。
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

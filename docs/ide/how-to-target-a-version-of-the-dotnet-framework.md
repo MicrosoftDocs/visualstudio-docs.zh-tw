@@ -1,22 +1,21 @@
 ---
 title: 以一個 .NET Framework 版本為目標
 ms.date: 02/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - .NET Framework version [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95e2b6bef32bdc5830e54795eb2580e7dd1fa068
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc8a808ba3a5da46b4dbe3be3aa00921ea869cb6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860162"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954084"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>HOW TO：以一個 .NET Framework 版本為目標
 

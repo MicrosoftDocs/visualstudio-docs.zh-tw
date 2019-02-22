@@ -1,20 +1,19 @@
 ---
 title: HOW TO：根據 XSD 結構描述建立 XML 文件
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d675695b3d3e054d14e481c8c41ae06de5af5600
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2848fee32094ba9c79cc3190b48b8953a5f7e942
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820195"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912881"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>HOW TO：建立根據 XSD 結構描述的 XML 文件
 

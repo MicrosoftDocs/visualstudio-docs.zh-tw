@@ -1,8 +1,6 @@
 ---
-title: DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式 | Microsoft Docs
-ms.custom: ''
+title: DA0018：32 位元應用程式正以處理序受控記憶體限制執行 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.18
@@ -11,17 +9,17 @@ f1_keywords:
 ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 013f4b0ed19a2227d6b86fe5fca2f8343d88f554
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65ee298aab44613f87764bc66d901476e6ccbfd4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921245"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070379"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：32 位元應用程式正以處理序受控記憶體限制執行
 
 |||  
 |-|-|  

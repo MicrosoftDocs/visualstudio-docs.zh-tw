@@ -1,14 +1,9 @@
 ---
 title: 檔案中取代 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.replaceinfiles
 - vs.replaceinfiles
@@ -20,21 +15,21 @@ ms.assetid: ca361466-53bd-44db-a28a-3a74bc03b028
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 92029377d5e7d4faf4c6b7f38deda1eecdeaa395
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 87a9d344b6cad7d27979e73c73caf0dbf97f521d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228822"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779238"
 ---
 # <a name="replace-in-files"></a>檔案中取代
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-檔案 * * 中的取代 可讓您搜尋的一組指定的字串或運算式，檔案的程式碼，並變更部份或所有找到的相符結果。 在 [結果選項] 內選取的 [尋找結果] 視窗中，會列出找到的相符項目與所採取的動作。  
+[檔案中取代]** 可讓您在一組指定檔案中搜尋程式碼的字串或運算式，並變更部分或所有找到的相符項目。 在 [結果選項] 內選取的 [尋找結果] 視窗中，會列出找到的相符項目與所採取的動作。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  您可以使用下列方法之一，在 [檔案中尋找] 視窗中顯示 [檔案中取代]。  
   
@@ -95,10 +90,7 @@ ms.locfileid: "49228822"
 > [!CAUTION]
 >  只有在保持開啟可供編輯的檔案中，才可以使用 [復原]。 如果未選取這個選項，則未開啟以供編輯的檔案將會保持關閉狀態，其中也不會出現 [復原] 選項。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [尋找和取代文字](../ide/finding-and-replacing-text.md)   
  [檔案中尋找](../ide/find-in-files.md)   
  [Visual Studio 命令](../ide/reference/visual-studio-commands.md)
-
-
-

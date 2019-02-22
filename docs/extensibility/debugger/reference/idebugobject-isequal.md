@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsEqual |Microsoft Docs
+title: IDebugObject::IsEqual | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5f928d2fc845f6dbab99504d0967e11e7a51142
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b801594c4e3dd1edb04ae0d29dfe6c814fa4a094
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878149"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954445"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
 比較物件與這個物件。  

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], adding entity instances
 - BDC [SharePoint development in Visual Studio], adding entities
 - Business Data Connectivity service [SharePoint development in Visual Studio], Creator
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01ad692065a51d51fc1f6b72acc563688da3a217
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe40d6f8b5032dbbffeeda3edaff3b1c89aadb3f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925416"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867152"
 ---
 # <a name="how-to-add-a-creator-method"></a>HOW TO：新增建立者方法
   建立者方法會將新資料加入至實體的資料來源。 商務資料連接 (BDC) 服務會呼叫這個方法，當使用者選擇**新的項目**按鈕**功能區**的模型為基礎的清單。 如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
