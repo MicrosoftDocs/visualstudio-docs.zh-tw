@@ -13,12 +13,12 @@ author: dgriffen
 manager: jillfra
 ms.workload:
 - dagriffe
-ms.openlocfilehash: f145b1fe8c8209e9b86ec1546f7079ec4317144a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: acea36031b98693e1d618986720d9932f76a0a63
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969518"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702521"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 語言套件結構描述 2.0 參考
 

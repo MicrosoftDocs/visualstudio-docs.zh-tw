@@ -13,27 +13,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b93d09b29b961d0a7659d6be742bcf66d5560ce5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 00ccae86029e43933d5624c955ed6bfcc0a045be
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983062"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697259"
 ---
 # <a name="extend-user-settings-and-options"></a>擴充使用者設定和選項
-在 Visual Studio 中，有兩種主要的方式來維護使用者喜好設定。 **工具** > **選項**頁面可讓使用者設定自己的值為許多不同類型的一般和特定語言的設定。 使用者設定可讓使用者指定一般的 Visual Studio 組態屬性。 更多選項 頁面的詳細資訊，請參閱[選項和選項頁](../extensibility/internals/options-and-options-pages.md)。 如需有關使用者設定的詳細資訊，請參閱[支援的使用者設定](../extensibility/internals/support-for-user-settings.md)。  
-  
- [建立選項頁面](../extensibility/creating-an-options-page.md)  
- 說明如何建立選項頁面。  
-  
- [建立設定類別](../extensibility/creating-a-settings-category.md)  
- 說明如何建立設定類別目錄。  
-  
- [使用設定存放區](../extensibility/using-the-settings-store.md)  
- 說明如何使用 「 設定存放區。  
-  
- [從設定存放區取得服務資訊](../extensibility/getting-service-information-from-the-settings-store.md)  
- 說明如何從設定存放區取得可用的服務。  
-  
- [寫入使用者設定存放區](../extensibility/writing-to-the-user-settings-store.md)  
- 說明如何將寫入使用者設定存放區。
+在 Visual Studio 中，有兩種主要的方式來維護使用者喜好設定。 **工具** > **選項**頁面可讓使用者設定自己的值為許多不同類型的一般和特定語言的設定。 使用者設定可讓使用者指定一般的 Visual Studio 組態屬性。 更多選項 頁面的詳細資訊，請參閱[選項和選項頁](../extensibility/internals/options-and-options-pages.md)。 如需有關使用者設定的詳細資訊，請參閱[支援的使用者設定](../extensibility/internals/support-for-user-settings.md)。
+
+- [建立選項頁面](../extensibility/creating-an-options-page.md)說明如何建立選項頁面。
+
+- [建立設定類別](../extensibility/creating-a-settings-category.md)說明如何建立設定類別。
+
+- [使用設定存放區](../extensibility/using-the-settings-store.md)說明如何使用 「 設定存放區。
+
+- [從設定存放區取得服務資訊](../extensibility/getting-service-information-from-the-settings-store.md)說明如何從設定存放區取得可用的服務。
+
+- [寫入使用者設定存放區](../extensibility/writing-to-the-user-settings-store.md)說明如何將寫入使用者設定存放區。
