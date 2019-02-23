@@ -1,7 +1,7 @@
 ---
 title: IDebugAlias2::GetAppDomainId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetAppDomainId
 - IDebugAlias2::GetAppDomainId
@@ -11,39 +11,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b70b26cbf9248f654836a2d138ad0f79b80a3b54
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 890e215c7e575e67a4360717851bab538966f419
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011738"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715046"
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
-擷取應用程式定義域的識別項。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT GetAppDomainId (  
-   ULONG32* pappDomainId  
-);  
-```  
-  
-```csharp  
-int GetAppDomainId (  
-   out uint pappDomainId  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pappDomainId`  
- [out]傳回應用程式網域識別項。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- 建立的應用程式網域識別項的變更時重新啟動應用程式和新的應用程式定義域。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)
+擷取應用程式定義域的識別項。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT GetAppDomainId (
+   ULONG32* pappDomainId
+);
+```
+
+```csharp
+int GetAppDomainId (
+   out uint pappDomainId
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pappDomainId`
+
+ [out]傳回應用程式網域識別項。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+ 建立的應用程式網域識別項的變更時重新啟動應用程式和新的應用程式定義域。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)

@@ -1,7 +1,7 @@
 ---
 title: BP_RESOLUTION_LOCATION | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_RESOLUTION_LOCATION
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6f2449f1727ed31da97a80f0387e07f74e0c2a1
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 6637899e70262dc238b604ec64907eab1387baf9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317506"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696307"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 指定的中斷點解析位置的結構。
@@ -46,34 +46,41 @@ public struct BP_RESOLUTION_LOCATION {
 ```
 
 ## <a name="members"></a>成員
-`bpType`  
-值，以從[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)列舉，指定如何解譯`bpResLocation`聯集或`unionmemberX`成員。
+`bpType` 值，以從[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)列舉，指定如何解譯`bpResLocation`聯集或`unionmemberX`成員。
 
-`bpResLocation.bpresCode`  
-[只有 c + +]包含[BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)結構，如果`bpType`  =  `BPT_CODE`。
+`bpResLocation.bpresCode`
 
-`bpResLocation.bpresData`  
-[只有 c + +]包含[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)結構，如果`bpType`  =  `BPT_DATA`。
+ [只有 c + +]包含[BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)結構，如果`bpType`  =  `BPT_CODE`。
 
-`bpResLocation.unused`  
-[只有 c + +]預留位置。
+`bpResLocation.bpresData`
 
-`unionmember1`  
-[C#只]請參閱有關如何解譯的備註。
+ [只有 c + +]包含[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)結構，如果`bpType`  =  `BPT_DATA`。
 
-`unionmember2`  
-[C#只]請參閱有關如何解譯的備註。
+`bpResLocation.unused`
 
-`unionmember3`  
-[C#只]請參閱有關如何解譯的備註。
+ [只有 c + +]預留位置。
 
-`unionmember4`  
-[C#只]請參閱有關如何解譯的備註。
+`unionmember1`
+
+ [C#只]請參閱有關如何解譯的備註。
+
+`unionmember2`
+
+ [C#只]請參閱有關如何解譯的備註。
+
+`unionmember3`
+
+ [C#只]請參閱有關如何解譯的備註。
+
+`unionmember4`
+
+ [C#只]請參閱有關如何解譯的備註。
 
 ## <a name="remarks"></a>備註
 此結構是隸屬[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)並[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構。
 
-[C#只]`unionmemberX`成員會根據下表來解譯。 往下的左側資料行`bpType`來判斷每個值然後跨`unionmemberX`成員表示和封送處理`unionmemberX`據此。 請參閱的方式來解譯此結構在 C# 中的範例。
+
+ [C#只]`unionmemberX`成員會根據下表來解譯。 往下的左側資料行`bpType`來判斷每個值然後跨`unionmemberX`成員表示和封送處理`unionmemberX`據此。 請參閱的方式來解譯此結構在 C# 中的範例。
 
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|
 |----------------------|--------------------|--------------------|--------------------|--------------------|
@@ -118,10 +125,10 @@ namespace MyPackage
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)  
-[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)  
-[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
-[BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)  
-[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)  
-[BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)
+- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
+- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
+- [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)
+- [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)
+- [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)

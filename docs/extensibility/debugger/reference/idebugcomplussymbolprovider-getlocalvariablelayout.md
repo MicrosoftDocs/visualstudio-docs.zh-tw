@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetLocalVariablelayout | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetLocalVariablelayout
 - IDebugComPlusSymbolProvider::GetLocalVariablelayout
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8439b2a522405dae9fd8aa1e19f070c917f9ae9c
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: f5ed664c3c9b018be6e29b5129c375d1e8f5eb41
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413211"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723847"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
 擷取一組方法的區域變數的配置。
@@ -44,20 +44,25 @@ int GetLocalVariablelayout(
 ```
 
 #### <a name="parameters"></a>參數
-`ulAppDomainID`  
-[in]應用程式定義域的識別項。
+`ulAppDomainID`
 
-`guidModule`  
-[in]模組的唯一識別碼。
+ [in]應用程式定義域的識別項。
 
-`cMethods`  
-[in]方法的數字的語彙基元`rgMethodTokens`陣列。
+`guidModule`
 
-`rgMethodTokens`  
-[in]方法的語彙基元的陣列。
+ [in]模組的唯一識別碼。
 
-`pStreamLayout`  
-[out]包含變數的版面配置的文字資料流。
+`cMethods`
+
+ [in]方法的數字的語彙基元`rgMethodTokens`陣列。
+
+`rgMethodTokens`
+
+ [in]方法的語彙基元的陣列。
+
+`pStreamLayout`
+
+ [out]包含變數的版面配置的文字資料流。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -111,4 +116,4 @@ HRESULT CDebugSymbolProvider::GetLocalVariablelayout(
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

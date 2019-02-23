@@ -1,7 +1,7 @@
 ---
 title: GETNAME_TYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - GETNAME_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba394d725afd45664ad6cf4f69c9e048b7e1a74d
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: ae68c77e2d6a41adfff6b49e55bbc6df4393fec7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413107"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701715"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 指定要擷取檔案的名稱類型。
@@ -50,26 +50,19 @@ public enum enum_GETNAME_TYPE {
 ```
 
 ## <a name="members"></a>成員
-GN_NAME  
-指定的文件或內容的易記名稱。
+GN_NAME 指定文件或內容的易記名稱。
 
-GN_FILENAME  
-指定的文件或內容的完整路徑。
+GN_FILENAME 指定文件或內容的完整路徑。
 
-GN_BASENAME  
-指定的基底檔案名稱，而不是文件或內容的完整路徑。
+GN_BASENAME 指定的基底檔案名稱而非文件或內容的完整路徑。
 
-GN_MONIKERNAME  
-Moniker 的表單中指定的文件或內容的唯一名稱。
+GN_MONIKERNAME moniker 的表單中指定的文件或內容的唯一名稱。
 
-GN_URL  
-指定的文件或內容的 URL 名稱。
+GN_URL 指定文件或內容的 URL 名稱。
 
-GN_TITLE  
-如果有的話，請指定的文件的標題。
+如果有的話，GN_TITLE 將指定的文件的標題。
 
-GN_STARTPAGEURL  
-取得處理程序的起始頁面 URL。
+GN_STARTPAGEURL 取得的起始頁面 URL 處理。
 
 ## <a name="remarks"></a>備註
 這些值會做為參數傳遞[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)， [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)，並[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法，來指定要傳回名稱的類型。
@@ -82,7 +75,7 @@ GN_STARTPAGEURL
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)  
-[GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)  
-[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)
+- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)
+- [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)
+- [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)

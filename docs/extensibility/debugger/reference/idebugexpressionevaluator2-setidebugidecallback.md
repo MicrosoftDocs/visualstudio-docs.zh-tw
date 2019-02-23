@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator2::SetIDebugIDECallback | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetIDebugIDECallback
 - SetIDebugIDECallback
@@ -11,36 +11,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cb91a174eb98b4c19ed82248caecc1543e4eb8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1ac5027421ff73e00ee34d9928be6525187a6ae8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038314"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679290"
 ---
 # <a name="idebugexpressionevaluator2setidebugidecallback"></a>IDebugExpressionEvaluator2::SetIDebugIDECallback
-可讓要傳遞給運算式評估工具的回呼，在初始化期間的偵錯引擎。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT SetIDebugIDECallback (  
-   IDebugIDECallback * pCallback  
-);  
-```  
-  
-```csharp  
-int SetIDebugIDECallback (  
-   IDebugIDECallback pCallback  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pCallback`  
- [in]回呼介面。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+可讓要傳遞給運算式評估工具的回呼，在初始化期間的偵錯引擎。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT SetIDebugIDECallback (
+   IDebugIDECallback * pCallback
+);
+```
+
+```csharp
+int SetIDebugIDECallback (
+   IDebugIDECallback pCallback
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pCallback`
+
+ [in]回呼介面。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

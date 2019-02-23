@@ -1,7 +1,7 @@
 ---
 title: FIELD_INFO | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FIELD_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b34624672b64d88ca9b080094c5d661494c089cf
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 83cdacae192ad1286203139432a0eacd632b8511
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315894"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694223"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 此結構描述的本機變數、 參數或其他欄位。
@@ -45,20 +45,15 @@ public struct FIELD_INFO {
 ```
 
 ## <a name="members"></a>成員
-dwFields  
-從旗標的組合[FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)列舉，指定哪些成員會填入。
+dwFields A 中的旗標的組合[FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)列舉，指定哪些成員會填入。
 
-bstrFullName  
-欄位的完整名稱。
+bstrFullName 欄位的完整名稱。
 
-bstrName  
-欄位的簡短名稱。
+bstrName 欄位的簡短名稱。
 
-bstrType  
-欄位類型。
+bstrType 欄位的型別。
 
-dwModifiers  
-從旗標的組合[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)描述欄位的列舉型別。
+dwModifiers A 中的旗標的組合[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)描述欄位的列舉型別。
 
 ## <a name="remarks"></a>備註
 此結構會傳遞至[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)填滿其中的方法。
@@ -71,7 +66,7 @@ dwModifiers
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)  
-[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)
+- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)
+- [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)
