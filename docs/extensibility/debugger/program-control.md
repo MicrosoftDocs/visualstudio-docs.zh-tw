@@ -10,41 +10,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6cc27c70076a7c91b6c74e5f1cfed6402555fba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98c63d2eff11997a37d27f71d01403b59f276e2b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013193"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679134"
 ---
 # <a name="program-control"></a>程式控制權
-在 Visual Studio 中偵錯時，所有下列的逐步執行，並且繼續常式會執行的程式層級：  
-  
--   設定下一個陳述式，也就設為您的電腦在特定畫面格的環境中執行的下一個指令  
-  
--   結束 逐步執行模式執行，也就繼續  
-  
--   逐步執行至下一個指令  
-  
--   繼續進行目前的逐步執行模式  
-  
--   暫止程式所包含的執行緒  
-  
--   繼續執行程式所包含的執行緒  
-  
+在 Visual Studio 中偵錯時，所有下列的逐步執行，並且繼續常式會執行的程式層級：
+
+-   設定下一個陳述式，也就設為您的電腦在特定畫面格的環境中執行的下一個指令
+
+-   結束 逐步執行模式執行，也就繼續
+
+-   逐步執行至下一個指令
+
+-   繼續進行目前的逐步執行模式
+
+-   暫止程式所包含的執行緒
+
+-   繼續執行程式所包含的執行緒
+
 > [!NOTE]
->  檢視呼叫堆疊被實作在執行緒層級上。 若要列舉的畫面格的資訊，檢視執行緒的呼叫堆疊時，您必須實作的所有方法[IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)介面。  
-  
-## <a name="methods-of-program-control"></a>程式控制項的方法  
- 下表顯示的方法[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) ，必須實作功能最小的偵錯引擎 (DE) 和執行控制。  
-  
-|方法|描述|  
-|------------|-----------------|  
-|[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|會繼續執行已停止狀態的程式所包含的所有執行緒。 執行控制項的必要項。|  
-|[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|會繼續執行已停止狀態的程式所包含的所有執行緒。 執行控制項的必要項。|  
-|[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)|在指定的執行緒上執行的步驟。 會繼續執行其他程式所包含的所有執行緒。 執行控制項的必要項。|  
-  
- 對於多執行緒程式中，您必須同時實作[IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)方法及的所有方法[IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md)介面。  
-  
-## <a name="see-also"></a>另請參閱  
- [執行控制和狀態評估](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+>  檢視呼叫堆疊被實作在執行緒層級上。 若要列舉的畫面格的資訊，檢視執行緒的呼叫堆疊時，您必須實作的所有方法[IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)介面。
+
+## <a name="methods-of-program-control"></a>程式控制項的方法
+ 下表顯示的方法[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) ，必須實作功能最小的偵錯引擎 (DE) 和執行控制。
+
+|方法|描述|
+|------------|-----------------|
+|[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|會繼續執行已停止狀態的程式所包含的所有執行緒。 執行控制項的必要項。|
+|[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|會繼續執行已停止狀態的程式所包含的所有執行緒。 執行控制項的必要項。|
+|[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)|在指定的執行緒上執行的步驟。 會繼續執行其他程式所包含的所有執行緒。 執行控制項的必要項。|
+
+ 對於多執行緒程式中，您必須同時實作[IDebugProgram2::EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)方法及的所有方法[IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md)介面。
+
+## <a name="see-also"></a>另請參閱
+- [執行控制和狀態評估](../../extensibility/debugger/execution-control-and-state-evaluation.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionObject2::CreateObject |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugFunctionObject2::CreateObject
 - CreateObject
@@ -11,64 +11,70 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdba52a1b4d97e3c00046d2057a9cf079208f43f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7004e57aaf659b90b5323105c6d2c2b80baa4d0f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023037"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723119"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
-建立會使用指定評估旗標設定和逾時值的建構函式的物件。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT CreateObject (  
-   IDebugFunctionObject* pConstructor,  
-   DWORD                 dwArgs,  
-   IDebugObject*         pArgs[],  
-   DWORD                 dwEvalFlags,  
-   DWORD                 dwTimeout,  
-   IDebugObject**        ppObject  
-);  
-```  
-  
-```csharp  
-int CreateObject (  
-   IDebugFunctionObject pConstructor,  
-   uint                 dwArgs,  
-   IDebugObject[]       pArgs,  
-   uint                 dwEvalFlags,  
-   uint                 dwTimeout,  
-   out IDebugObject**   ppObject  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pConstructor`  
- [in][IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)物件，表示要建立之物件的建構函式。  
-  
- `dwArgs`  
- [in]中的參數數目`pArg`陣列。 表示傳遞至建構函式的參數數目。  
-  
- `pArgs`  
- [in]陣列[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示的參數傳遞至建構函式。  
-  
- `dwEvalFlags`  
- [in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉，指定要如何進行評估。  
-  
- `dwTimeout`  
- [in]最大時間 （毫秒），這個方法返回之前等候。 使用**無限**無限期等候。  
-  
- `ppObject`  
- [out]傳回**IDebugObject**代表新建立的物件。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- 呼叫這個方法來建立物件，表示類別或其他需要的建構函式，為參數的複雜類型的執行個體。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)
+建立會使用指定評估旗標設定和逾時值的建構函式的物件。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT CreateObject (
+   IDebugFunctionObject* pConstructor,
+   DWORD                 dwArgs,
+   IDebugObject*         pArgs[],
+   DWORD                 dwEvalFlags,
+   DWORD                 dwTimeout,
+   IDebugObject**        ppObject
+);
+```
+
+```csharp
+int CreateObject (
+   IDebugFunctionObject pConstructor,
+   uint                 dwArgs,
+   IDebugObject[]       pArgs,
+   uint                 dwEvalFlags,
+   uint                 dwTimeout,
+   out IDebugObject**   ppObject
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pConstructor`
+
+ [in][IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)物件，表示要建立之物件的建構函式。
+
+ `dwArgs`
+
+ [in]中的參數數目`pArg`陣列。 表示傳遞至建構函式的參數數目。
+
+ `pArgs`
+
+ [in]陣列[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示的參數傳遞至建構函式。
+
+ `dwEvalFlags`
+
+ [in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉，指定要如何進行評估。
+
+ `dwTimeout`
+
+ [in]最大時間 （毫秒），這個方法返回之前等候。 使用**無限**無限期等候。
+
+ `ppObject`
+
+ [out]傳回**IDebugObject**代表新建立的物件。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+ 呼叫這個方法來建立物件，表示類別或其他需要的建構函式，為參數的複雜類型的執行個體。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

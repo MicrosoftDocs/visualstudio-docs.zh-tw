@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c41981e205d56357bb206eaf6e4004a724080cf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e3d149a7cec711e59909ff21944ed52e3c074113
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947591"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710171"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>什麼&#39;Visual Studio 2017 SDK 的新功能
 

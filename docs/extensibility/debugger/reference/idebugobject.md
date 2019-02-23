@@ -1,7 +1,7 @@
 ---
 title: IDebugObject | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugObject
 helpviewer_keywords:
@@ -12,58 +12,58 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b29382a7a4a75ecb6292e6d239657b23257dea0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4b5ea1a18495e1660044001b6b4d45de1f07bc3e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941935"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680551"
 ---
 # <a name="idebugobject"></a>IDebugObject
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
-  
- 這個介面表示繫結器建立封裝的符號和運算式值的物件。  
-  
-## <a name="syntax"></a>語法  
-  
-```  
-IDebugObject : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>實作者的附註  
- 運算式評估工具會實作這個介面來代表的物件。  
-  
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 這個介面是運算式評估工具會使用已剖析的運算式中的所有物件的基底類別。 它由呼叫[繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)方法。 [QueryInterface](/cpp/atl/queryinterface)從這個介面取得更具特製化的介面。  
-  
-## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 下表顯示的方法`IDebugObject`。  
-  
-|方法|描述|  
-|------------|-----------------|  
-|[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)|取得物件的大小。|  
-|[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|取得物件的值做為一系列連續的位元組。|  
-|[SetValue](../../../extensibility/debugger/reference/idebugobject-setvalue.md)|設定物件的值從一系列連續的位元組。|  
-|[SetReferenceValue](../../../extensibility/debugger/reference/idebugobject-setreferencevalue.md)|設定參考值，這個物件。|  
-|[GetMemoryContext](../../../extensibility/debugger/reference/idebugobject-getmemorycontext.md)|取得代表物件的值的位址的記憶體內容。|  
-|[GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md)|偵錯引擎的位址空間中建立受管理物件的複本。|  
-|[IsNullReference](../../../extensibility/debugger/reference/idebugobject-isnullreference.md)|測試這個物件是否為 null 參考。|  
-|[IsEqual](../../../extensibility/debugger/reference/idebugobject-isequal.md)|比較這個物件。|  
-|[IsReadOnly](../../../extensibility/debugger/reference/idebugobject-isreadonly.md)|判斷這個物件是否為唯讀。|  
-|[IsProxy](../../../extensibility/debugger/reference/idebugobject-isproxy.md)|判斷物件是否為透明 proxy。|  
-  
-## <a name="remarks"></a>備註  
- 運算式評估工具會使用此介面的基底類別來代表剖析樹狀結構中的物件。  
-  
-## <a name="requirements"></a>需求  
- 標頭： ee.h  
-  
- 命名空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>另請參閱  
- [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
- [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)   
- [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+>  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+
+ 這個介面表示繫結器建立封裝的符號和運算式值的物件。
+
+## <a name="syntax"></a>語法
+
+```
+IDebugObject : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>實作者的附註
+ 運算式評估工具會實作這個介面來代表的物件。
+
+## <a name="notes-for-callers"></a>呼叫端資訊
+ 這個介面是運算式評估工具會使用已剖析的運算式中的所有物件的基底類別。 它由呼叫[繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)方法。 [QueryInterface](/cpp/atl/queryinterface)從這個介面取得更具特製化的介面。
+
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
+ 下表顯示的方法`IDebugObject`。
+
+|方法|描述|
+|------------|-----------------|
+|[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)|取得物件的大小。|
+|[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|取得物件的值做為一系列連續的位元組。|
+|[SetValue](../../../extensibility/debugger/reference/idebugobject-setvalue.md)|設定物件的值從一系列連續的位元組。|
+|[SetReferenceValue](../../../extensibility/debugger/reference/idebugobject-setreferencevalue.md)|設定參考值，這個物件。|
+|[GetMemoryContext](../../../extensibility/debugger/reference/idebugobject-getmemorycontext.md)|取得代表物件的值的位址的記憶體內容。|
+|[GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md)|偵錯引擎的位址空間中建立受管理物件的複本。|
+|[IsNullReference](../../../extensibility/debugger/reference/idebugobject-isnullreference.md)|測試這個物件是否為 null 參考。|
+|[IsEqual](../../../extensibility/debugger/reference/idebugobject-isequal.md)|比較這個物件。|
+|[IsReadOnly](../../../extensibility/debugger/reference/idebugobject-isreadonly.md)|判斷這個物件是否為唯讀。|
+|[IsProxy](../../../extensibility/debugger/reference/idebugobject-isproxy.md)|判斷物件是否為透明 proxy。|
+
+## <a name="remarks"></a>備註
+ 運算式評估工具會使用此介面的基底類別來代表剖析樹狀結構中的物件。
+
+## <a name="requirements"></a>需求
+ 標頭： ee.h
+
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop
+
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>另請參閱
+- [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
+- [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)
+- [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)

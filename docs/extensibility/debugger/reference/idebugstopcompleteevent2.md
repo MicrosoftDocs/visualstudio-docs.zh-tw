@@ -1,7 +1,7 @@
 ---
 title: IDebugStopCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugStopCompleteEvent2 interface
 author: gregvanl
@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33272f87ae30832588a998ebea2fc46e9adaae50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a3ec59d6e9a6008f195cab40fe5c1998aff24a50
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984232"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705277"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 
@@ -30,7 +30,7 @@ IDebugStopCompleteEvent2 : IUnknown
 
 使用 Visual Studio 2005 中引進這個介面。 先前的版本不支援非同步停止。
 
-[停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)SDM 多處理序或多重程式案例中會呼叫。 當某個程式停止將事件傳送到 SDM 時，SDM 會要求太停止其他程式。
+- [停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)SDM 多處理序或多重程式案例中會呼叫。 當某個程式停止將事件傳送到 SDM 時，SDM 會要求太停止其他程式。
 
 停駐點用來以非同步方式通知程式已停止在 SDM。 通知 SDM 適合用來解譯器偵錯引擎，有時也沒有任何程式碼執行內偵錯程式，因此[停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)未以同步方式完成。 如果偵錯引擎想要運用此非同步通知時，它必須傳回`S_ASYNC_STOP`從[停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)。
 
@@ -38,6 +38,6 @@ IDebugStopCompleteEvent2 : IUnknown
 
 標頭： msdbg.h
 
-命名空間:Microsoft.VisualStudio.Debugger.Interop
+命名空間：Microsoft.VisualStudio.Debugger.Interop
 
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll

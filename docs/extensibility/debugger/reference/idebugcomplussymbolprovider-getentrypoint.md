@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetEntryPoint |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetEntryPoint
 - GetEntryPoint
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 961655b82873b01596c5baaf5aaf08997d4b5abc
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: f57cfec75e186fabb7611b14815375571b6349ce
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413146"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722326"
 ---
 # <a name="idebugcomplussymbolprovidergetentrypoint"></a>IDebugComPlusSymbolProvider::GetEntryPoint
 擷取應用程式進入點。
@@ -40,14 +40,17 @@ int GetEntryPoint(
 ```
 
 #### <a name="parameters"></a>參數
-`ulAppDomainID`  
-[in]應用程式定義域的識別項。
+`ulAppDomainID`
 
-`guidModule`  
-[in]模組的唯一識別碼。
+ [in]應用程式定義域的識別項。
 
-`ppAddress`  
-[out]傳回所代表的進入點[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
+`guidModule`
+
+ [in]模組的唯一識別碼。
+
+`ppAddress`
+
+ [out]傳回所代表的進入點[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -88,4 +91,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

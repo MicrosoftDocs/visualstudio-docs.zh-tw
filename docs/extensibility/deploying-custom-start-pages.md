@@ -11,12 +11,13 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89ff96ef73070570b7295ab6256a501d5865b6e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: vs-2017
+ms.openlocfilehash: dcc184d6aedb3e15bfddd8396c54b351ef4d3288
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982763"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693005"
 ---
 # <a name="deploy-custom-start-pages"></a>部署自訂起始頁
 
@@ -43,13 +44,13 @@ ms.locfileid: "54982763"
 
 - 手動建立 *.vsix*檔案。 若要建立 *.vsix*手動檔案：
 
-  1.  建立*extension.vsixmanifest*檔案並 *[Content_Types].xml*的新資料夾中的檔案。 如需詳細資訊，請參閱 < [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)。
+   1. 建立*extension.vsixmanifest*檔案並 *[Content_Types].xml*的新資料夾中的檔案。 如需詳細資訊，請參閱 < [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)。
 
-  2.  在 Windows 檔案總管中，以滑鼠右鍵按一下包含兩個 XML 檔案的資料夾中，按一下**傳送到**，然後按一下 壓縮的 (zipped) 資料夾。 重新命名產生 *.zip*的檔案*Filename.vsix*，其中的檔案名稱是可轉散發檔案安裝封裝的名稱。
+   2. 在 Windows 檔案總管中，以滑鼠右鍵按一下包含兩個 XML 檔案的資料夾中，按一下**傳送到**，然後按一下 壓縮的 (zipped) 資料夾。 重新命名產生 *.zip*的檔案*Filename.vsix*，其中的檔案名稱是可轉散發檔案安裝封裝的名稱。
 
-  Visual Studio 能夠辨識 [入門] 頁面中，如`Content Element`VSIX 資訊清單必須包含`CustomExtension Element`具有`Type`屬性設為`"StartPage"`。 使用 VSIX 部署已安裝的起始頁延伸模組會出現在**自訂起始頁**上列出**啟動**選項頁面中以 **[安裝延伸模組]** *延伸模組名稱*。
+Visual Studio 能夠辨識 [入門] 頁面中，如`Content Element`VSIX 資訊清單必須包含`CustomExtension Element`具有`Type`屬性設為`"StartPage"`。 使用 VSIX 部署已安裝的起始頁延伸模組會出現在**自訂起始頁**上列出**啟動**選項頁面中以 **[安裝延伸模組]** *延伸模組名稱*。
 
-  如果您的起始頁套件包含組件，您必須先新增繫結路徑註冊，以便 Visual Studio 啟動時可供使用。 若要這樣做，請確定您的套件，包含 *.pkgdef*具有下列資訊的檔案。
+如果您的起始頁套件包含組件，您必須先新增繫結路徑註冊，以便 Visual Studio 啟動時可供使用。 若要這樣做，請確定您的套件，包含 *.pkgdef*具有下列資訊的檔案。
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]

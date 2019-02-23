@@ -1,7 +1,7 @@
 ---
 title: BP_RESOLUTION_DATA | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_RESOLUTION_DATA
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b2d887c10721693468ed907175399074f890588
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 70c1bb00fc8648cfe19f4bcecffdd0592e5f8deb
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317259"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711445"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
 描述繫結資料中斷點的結果。
@@ -43,17 +43,13 @@ public struct BP_RESOLUTION_DATA {
 ```
 
 ## <a name="members"></a>成員
-`bstrDataExpr`  
-已繫結的資料運算式。
+`bstrDataExpr` 已繫結的資料運算式。
 
-`bstrFunc`  
-函式的名稱 （如果有的話），資料中斷點已經在繫結。
+`bstrFunc` 函式的名稱 （如果有的話），資料中斷點已經在繫結。
 
-`bstrImage`  
-資料中斷點已繫結中的模組 (例如 MyModule.dll) 名稱。
+`bstrImage` 資料中斷點已繫結中的模組 (例如 MyModule.dll) 名稱。
 
-`dwFlags`  
-值，以從[BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)列舉，描述如何實作資料中斷點。
+`dwFlags` 值，以從[BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)列舉，描述如何實作資料中斷點。
 
 ## <a name="remarks"></a>備註
 此結構是隸屬[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)結構，也就是在開啟的成員[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)所傳回的結構[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法。
@@ -66,7 +62,7 @@ public struct BP_RESOLUTION_DATA {
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)  
-[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
-[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)
+- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)
+- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
+- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

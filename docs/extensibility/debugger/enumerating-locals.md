@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d014dad98e442f0cd1d93f157c6c38fc8677377
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: df5db60d81d6cb814764e935d5ead909c4c7c476
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317714"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695254"
 ---
 # <a name="enumerate-locals"></a>列舉區域變數
 > [!IMPORTANT]
@@ -246,6 +246,6 @@ STDMETHODIMP CFieldProperty::EnumChildren(
 ```
 
 ## <a name="see-also"></a>另請參閱
-[區域變數的範例實作](../../extensibility/debugger/sample-implementation-of-locals.md)  
-[實作 GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)  
-[評估內容](../../extensibility/debugger/evaluation-context.md)
+- [區域變數的範例實作](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [實作 GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)
+- [評估內容](../../extensibility/debugger/evaluation-context.md)

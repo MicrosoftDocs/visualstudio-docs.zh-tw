@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentContext2::GetStatementRange |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentContext2::GetStatementRange
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0707b241b52c1ea9c587970f3a3eb4ae097716c3
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 8c95951f7424b6151c78089d1de6c4661cb866e6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450239"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686856"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 取得檔案陳述式的範圍的文件內容。
@@ -39,11 +39,13 @@ int GetStatementRange(
 ```
 
 #### <a name="parameters"></a>參數
-`pBegPosition`  
-[in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)會填入的開始位置的結構。 如果不需要這項資訊，請將這個引數為 null 值。
+`pBegPosition`
 
-`pEndPosition`  
-[in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)會填入結束位置的結構。 如果不需要這項資訊，請將這個引數為 null 值。
+ [in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)會填入的開始位置的結構。 如果不需要這項資訊，請將這個引數為 null 值。
+
+`pEndPosition`
+
+ [in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)會填入結束位置的結構。 如果不需要這項資訊，請將這個引數為 null 值。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -86,6 +88,6 @@ HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)  
-[GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+- [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

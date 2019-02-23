@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317116"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719479"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>HOW TO：診斷延伸模組造成的 UI 延遲
 
@@ -21,7 +21,7 @@ UI 無回應時，Visual Studio 開始分葉，並朝向基底，就會檢查 UI
 
 通知會通知使用者 UI 延遲 （也就是在 UI 無回應） 可能已從擴充功能的程式碼的結果。 它也會提供選項來停用延伸模組或未來的通知，該延伸模組的使用者。
 
-本文件說明如何診斷延伸模組程式碼中導致 UI 延遲通知。 
+本文件說明如何診斷延伸模組程式碼中導致 UI 延遲通知。
 
 > [!NOTE]
 > 請勿使用 Visual Studio 的實驗執行個體來診斷 UI 延遲。 使用實驗的執行個體，這表示可能不會顯示 UI 延遲通知時，呼叫堆疊分析所需的 UI 延遲通知的某些部分為關閉狀態。
@@ -102,7 +102,7 @@ Perfview.exe collect C:\trace.etl /BufferSizeMB=1024 -CircularMB:2048 -Merge:tru
 然後，在左窗格中選取的追蹤檔案，並開啟該選擇**開啟**上按一下滑鼠右鍵功能表或操作功能表。
 
 > [!NOTE]
-> 根據預設 PerfView 會輸出 Zip 封存。 當您開啟*trace.zip*，它會自動解壓縮封存，並開啟追蹤。 您可以藉由取消核取 略過這個**Zip**追蹤收集期間的方塊。 不過，如果您打算傳送，並使用不同的機器的追蹤，我們強烈建議針對取消核取**Zip**  方塊中。 沒有這個選項時，所需的 Pdb，Ngen 組件會隨附於追蹤，並因此從 Ngen 組件的符號將不會解析目的地電腦上。 (請參閱[此部落格文章](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/)如需詳細資訊在 Pdb，Ngen 組件。) 
+> 根據預設 PerfView 會輸出 Zip 封存。 當您開啟*trace.zip*，它會自動解壓縮封存，並開啟追蹤。 您可以藉由取消核取 略過這個**Zip**追蹤收集期間的方塊。 不過，如果您打算傳送，並使用不同的機器的追蹤，我們強烈建議針對取消核取**Zip**  方塊中。 沒有這個選項時，所需的 Pdb，Ngen 組件會隨附於追蹤，並因此從 Ngen 組件的符號將不會解析目的地電腦上。 (請參閱[此部落格文章](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/)如需詳細資訊在 Pdb，Ngen 組件。)
 
 可能需要幾分鐘的時間來處理，並開啟追蹤 PerfView。 一旦開啟追蹤，各種 「 檢視 」 清單會出現在其下。
 

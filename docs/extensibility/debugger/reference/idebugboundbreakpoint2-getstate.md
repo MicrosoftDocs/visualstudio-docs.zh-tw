@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::GetState | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::GetState
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cf782a23c630153539f76b66c97af8db15a4d6a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 716721a94b5fa31bfff6dfcae647e1de2f45a995
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315959"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715605"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 取得這個繫結中斷點的狀態。
@@ -38,8 +38,9 @@ int GetState( 
 ```
 
 #### <a name="parameters"></a>參數
-`pState`  
-[out]傳回值，以從[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉，描述中斷點的狀態。
+`pState`
+
+ [out]傳回值，以從[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉，描述中斷點的狀態。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -68,5 +69,5 @@ HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)  
-[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
+- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

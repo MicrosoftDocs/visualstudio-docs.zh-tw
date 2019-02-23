@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::SetValue | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugObject::SetValue
 helpviewer_keywords:
@@ -12,45 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ba9b3983f3d6cab2525c391153457d362d2ad05
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ccfea65f7f24b3d48fc5ec5d68028c72b9b4eece
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038392"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692643"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
-設定物件的值從一系列連續的位元組。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT SetValue(   
-   BYTE* pValue,  
-   UINT  nSize  
-);  
-```  
-  
-```csharp  
-int SetValue(  
-   byte[] pValue,   
-   uint   nSize  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pValue`  
- [in]代表新值的位元組陣列。  
-  
- `nSize`  
- [in]值，以位元組為單位的大小。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- 陣列中的值會複製到這[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，取代任何現有的值。 新值的大小可以大於或小於現有的值。 這`IDebugObject`不能是 null 參考。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
- [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)
+設定物件的值從一系列連續的位元組。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT SetValue( 
+   BYTE* pValue,
+   UINT  nSize
+);
+```
+
+```csharp
+int SetValue(
+   byte[] pValue,
+   uint   nSize
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pValue`
+
+ [in]代表新值的位元組陣列。
+
+ `nSize`
+
+ [in]值，以位元組為單位的大小。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，會傳回 S_OK;否則，傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+ 陣列中的值會複製到這[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，取代任何現有的值。 新值的大小可以大於或小於現有的值。 這`IDebugObject`不能是 null 參考。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+- [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

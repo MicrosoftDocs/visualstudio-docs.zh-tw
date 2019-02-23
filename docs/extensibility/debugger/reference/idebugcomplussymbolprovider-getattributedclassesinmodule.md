@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAttributedClassesinModule | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 - GetAttributedClassesinModule
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04d6491560eecdae58fa5e62b13847f2cc390a47
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 4bd4a1a93a1dd7e4049efd886d5eca1f292d561b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413393"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719003"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 擷取與指定的屬性，指定模組中的類別。
 
 ## <a name="syntax"></a>語法
 
-```
-[C++]
+```cpp
 HRESULT GetAttributedClassesinModule (
     ULONG32            ulAppDomainID,
     GUID               guidModule,
@@ -33,8 +32,7 @@ HRESULT GetAttributedClassesinModule (
 );
 ```
 
-```
-[C#]
+```csharp
 int GetAttributedClassesinModule (
     uint                 ulAppDomainID,
     Guid                 guidModule,
@@ -44,17 +42,21 @@ int GetAttributedClassesinModule (
 ```
 
 #### <a name="parameters"></a>參數
-`ulAppDomainID`  
-[in]應用程式定義域的識別項。
+`ulAppDomainID`
 
-`guidModule`  
-[in]模組的唯一識別碼。
+ [in]應用程式定義域的識別項。
 
-`pstrAttribute`  
-[in]屬性的字串。
+`guidModule`
 
-`ppEnum`  
-[out]傳回列舉的屬性化類別。
+ [in]模組的唯一識別碼。
+
+`pstrAttribute`
+
+ [in]屬性的字串。
+
+`ppEnum`
+
+ [out]傳回列舉的屬性化類別。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -151,4 +153,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

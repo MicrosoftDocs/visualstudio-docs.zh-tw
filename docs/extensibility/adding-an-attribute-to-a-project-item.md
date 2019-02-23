@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3cf11a6ca7972a98b840ac514a4dff01d994778
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: b6992790be2a447c1539024d21d751041d43da2f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318260"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710067"
 ---
 # <a name="add-an-attribute-to-a-project-item"></a>將屬性加入專案項目
 方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>取得和設定的專案項目屬性的值。 SetItemAttribute 建立屬性如果已經存在，將它新增至專案項目中繼資料。
@@ -44,4 +44,4 @@ ms.locfileid: "56318260"
     ```
 
 ## <a name="see-also"></a>另請參閱
-[保存在 MSBuild 專案檔中的資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
+- [保存在 MSBuild 專案檔中的資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

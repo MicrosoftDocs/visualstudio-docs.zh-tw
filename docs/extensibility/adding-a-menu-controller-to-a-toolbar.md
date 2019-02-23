@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c355ba523bd16cce9d352d483af8c142f0ee439c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2938da8f5f24c5c60cfe8d09423be886de1d0c86
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318234"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705634"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>將功能表控制器加入工具列
 本逐步解說是根據[將工具列加入工具視窗](../extensibility/adding-a-toolbar-to-a-tool-window.md)逐步解說，並示範如何將功能表控制器加入至 [工具] 視窗工具列。 如下所示的步驟也可以套用到在中建立的工具列[新增工具列](../extensibility/adding-a-toolbar.md)逐步解說。
@@ -223,5 +223,5 @@ ms.locfileid: "56318234"
     訊息會出現一個對話方塊**選取功能表控制器項目 3**。 請注意，訊息就會對應到功能表控制器按鈕上的文字。 功能表控制器按鈕現在會顯示**MC 項目 3**。
 
 ## <a name="see-also"></a>另請參閱
-[新增工具列加入工具視窗](../extensibility/adding-a-toolbar-to-a-tool-window.md)  
-[新增工具列](../extensibility/adding-a-toolbar.md)
+- [新增工具列加入工具視窗](../extensibility/adding-a-toolbar-to-a-tool-window.md)
+- [新增工具列](../extensibility/adding-a-toolbar.md)

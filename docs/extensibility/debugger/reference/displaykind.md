@@ -1,7 +1,7 @@
 ---
 title: DisplayKind |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 152f3b501aad6bba9e87e861346fa9ddb876a44d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1bbb4af7b4269376d912ba312cfe8aacfef2e4ff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315621"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692758"
 ---
 # <a name="displaykind"></a>DisplayKind
 列舉有效的值，代表要從需要的資訊種類[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，並向使用者顯示。
@@ -42,14 +42,11 @@ public enum enum_DisplayKind
 ```
 
 #### <a name="parameters"></a>參數
-DisplayKind_Value  
-欄位的值。
+DisplayKind_Value 欄位的值。
 
-DisplayKind_Name  
-欄位的名稱。
+DisplayKind_Name 的欄位名稱。
 
-DisplayKind_Type  
-欄位型別。
+DisplayKind_Type 欄位的類型。
 
 ## <a name="requirements"></a>需求
 標頭：Ee.h
@@ -59,5 +56,5 @@ DisplayKind_Type
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)
+- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)

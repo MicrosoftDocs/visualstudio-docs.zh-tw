@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONTEXT_INFO_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da34a7b5e2c111f7e9385d729f6c3739d1ada285
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 13501c86eabd249e0e47137099862cd6db654415
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317519"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706089"
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
 指定要擷取記憶體內容的相關資訊。
@@ -50,23 +50,17 @@ public enum enum_CONTEXT_INFO_FIELDS {
 ```
 
 ## <a name="members"></a>成員
-CIF_MODULEURL  
-初始化/使用`bstrModuleUrl`欄位[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)結構。
+初始化/使用 CIF_MODULEURL`bstrModuleUrl`欄位[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)結構。
 
-CIF_FUNCTION  
-初始化/使用`bstrFunction`欄位`CONTEXT_INFO`結構。
+初始化/使用 CIF_FUNCTION`bstrFunction`欄位`CONTEXT_INFO`結構。
 
-CIF_FUNCTIONOFFSET  
-初始化/使用`posFunctionOffset`欄位`CONTEXT_INFO`結構。
+初始化/使用 CIF_FUNCTIONOFFSET`posFunctionOffset`欄位`CONTEXT_INFO`結構。
 
-CIF_ADDRESS  
-初始化/使用`bstrAddress`欄位`CONTEXT_INFO`結構。
+初始化/使用 CIF_ADDRESS`bstrAddress`欄位`CONTEXT_INFO`結構。
 
-CIF_ADDRESSOFFSET  
-初始化/使用`bstrAddressOffset`欄位`CONTEXT_INFO`結構。
+初始化/使用 CIF_ADDRESSOFFSET`bstrAddressOffset`欄位`CONTEXT_INFO`結構。
 
-CIF_ALLFIELDS  
-初始化/使用的所有欄位`CONTEXT_INFO`結構。
+CIF_ALLFIELDS 初始化/使用的所有欄位`CONTEXT_INFO`結構。
 
 ## <a name="remarks"></a>備註
 這些值會傳遞的參數[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)方法，以表示哪些欄位[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)結構會進行初始化。
@@ -83,6 +77,6 @@ CIF_ALLFIELDS
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
+- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)

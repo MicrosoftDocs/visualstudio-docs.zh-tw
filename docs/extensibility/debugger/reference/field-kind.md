@@ -1,7 +1,7 @@
 ---
 title: FIELD_KIND | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FIELD_KIND
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dd9bd533a8314f73c6d39c34638f018cf4dde53
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 46b965def820771b0bab883c1bdd9bf90d18414e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316297"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680370"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 指定之欄位中所包含的種類[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。
@@ -122,104 +122,71 @@ public enum enum_FIELD_KIND {
 ```
 
 ## <a name="members"></a>成員
-FIELD_KIND_TYPE  
-表示欄位是僅限型別。
+FIELD_KIND_TYPE 表示欄位是僅限型別。
 
-FIELD_KIND_SYMBOL  
-表示欄位是一種符號，使用型別、 名稱和其他資訊。
+FIELD_KIND_SYMBOL 表示欄位是一種符號，使用型別、 名稱和其他資訊。
 
-FIELD_TYPE_PRIMITIVE  
-表示欄位的基本資料類型。
+FIELD_TYPE_PRIMITIVE 表示欄位的基本資料類型。
 
-FIELD_TYPE_STRUCT  
-表示欄位是一種結構。
+FIELD_TYPE_STRUCT 表示欄位是一種結構。
 
-FIELD_TYPE_CLASS  
-表示欄位的類別。
+FIELD_TYPE_CLASS 表示欄位的類別。
 
-FIELD_TYPE_INTERFACE  
-表示欄位是一種介面。
+FIELD_TYPE_INTERFACE 表示欄位是一種介面。
 
-FIELD_TYPE_UNION  
-表示欄位是等位。
+FIELD_TYPE_UNION 表示欄位是等位。
 
-FIELD_TYPE_ARRAY  
-表示欄位是一個陣列。
+FIELD_TYPE_ARRAY 表示欄位是一個陣列。
 
-FIELD_TYPE_METHOD  
-表示欄位是一種方法。
+FIELD_TYPE_METHOD 表示欄位是一種方法。
 
-FIELD_TYPE_BLOCK  
-表示欄位是一個區塊。
+FIELD_TYPE_BLOCK 表示欄位是一個區塊。
 
-FIELD_TYPE_POINTER  
-表示欄位的指標。
+FIELD_TYPE_POINTER 指出欄位為指標。
 
-FIELD_TYPE_ENUM  
-表示欄位是列舉的資料類型。
+FIELD_TYPE_ENUM 表示欄位是列舉的資料類型。
 
-FIELD_TYPE_LABEL  
-表示欄位的標籤。
+FIELD_TYPE_LABEL 表示欄位的標籤。
 
-FIELD_TYPE_TYPEDEF  
-表示欄位是其 typedef。
+FIELD_TYPE_TYPEDEF 表示欄位是其 typedef。
 
-FIELD_TYPE_BITFIELD  
-表示欄位是位元欄位。
+FIELD_TYPE_BITFIELD 表示位元欄位的欄位。
 
-FIELD_TYPE_NAMESPACE  
-表示欄位是命名空間。
+FIELD_TYPE_NAMESPACE 表示欄位是命名空間。
 
-FIELD_TYPE_MODULE  
-表示欄位是一個模組。
+FIELD_TYPE_MODULE 會指出欄位為模組。
 
-FIELD_TYPE_DYNAMIC  
-表示欄位是動態。
+FIELD_TYPE_DYNAMIC 表示欄位是動態。
 
-FIELD_TYPE_PROP  
-表示欄位的屬性。
+FIELD_TYPE_PROP 表示欄位的屬性。
 
-FIELD_TYPE_INNERCLASS  
-表示欄位是內部的類別。
+FIELD_TYPE_INNERCLASS 表示欄位是內部的類別。
 
-FIELD_TYPE_REFERENCE  
-表示欄位的參考。
+FIELD_TYPE_REFERENCE 表示欄位的參考。
 
-FIELD_TYPE_EXTENDED  
-保留供未來使用。
+FIELD_TYPE_EXTENDED 保留供日後使用。
 
-FIELD_SYM_MEMBER  
-表示欄位的成員。
+FIELD_SYM_MEMBER 表示欄位是成員。
 
-FIELD_SYM_LOCAL  
-表示欄位是本機。
+FIELD_SYM_LOCAL 指示該欄位為本機。
 
-FIELD_SYM_PARAMETER  
-表示欄位是參數。
+FIELD_SYM_PARAMETER 會指出欄位為參數。
 
-FIELD_SYM_THIS  
-表示欄位是 「 this 」 指標。
+FIELD_SYM_THIS 表示欄位是 「 this 」 指標。
 
-FIELD_SYM_GLOBAL  
-表示全域欄位。
+FIELD_SYM_GLOBAL 指出欄位為全域。
 
-FIELD_SYM_PROP_GETTER  
-表示欄位擷取屬性。
+FIELD_SYM_PROP_GETTER 表示欄位擷取屬性。
 
-FIELD_SYM_PROP_SETTER  
-表示欄位設定屬性。
+FIELD_SYM_PROP_SETTER 表示欄位設定屬性。
 
-FIELD_SYM_EXTENDED  
-保留供未來使用。
+FIELD_SYM_EXTENDED 保留供日後使用。
 
-FIELD_KIND_MASK  
-表示遮罩的欄位類型。
+FIELD_KIND_MASK 表示遮罩的欄位類型。
 
-FIELD_TYPE_MASK  
-表示遮罩的欄位類型。
+FIELD_TYPE_MASK 表示遮罩的欄位類型。
 
-FIELD_SYM_MASK  
-表示符號資訊的遮罩。
+FIELD_SYM_MASK 表示符號資訊的遮罩。
 
 ## <a name="remarks"></a>備註
 從呼叫傳回[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法。
@@ -234,7 +201,7 @@ FIELD_SYM_MASK
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)  
-[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)  
-[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)
+- [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

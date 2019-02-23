@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionContext2::ParseText | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugExpressionContext2::ParseText
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e3a368f95354ad96b761658b78778e153b21adb
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 14debc141236558090116ff40f3f515c189b70ef
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449643"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56677952"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 剖析文字格式，供稍後評估的運算式。
@@ -47,23 +47,29 @@ int ParseText(
 ```
 
 #### <a name="parameters"></a>參數
-`pszCode`  
-[in]要剖析的運算式。
+`pszCode`
 
-`dwFlags`  
-[in]從旗標的組合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)控制剖析的列舉型別。
+ [in]要剖析的運算式。
 
-`nRadix`  
-[in]要用於剖析中的任何數字資訊基數`pszCode`。
+`dwFlags`
 
-`ppExpr`  
-[out]傳回[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)物件，表示剖析的運算式，可供繫結和評估。
+ [in]從旗標的組合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)控制剖析的列舉型別。
 
-`pbstrError`  
-[out]如果運算式包含錯誤，則傳回錯誤訊息。
+`nRadix`
 
-`pichError`  
-[out]傳回字元的索引中的錯誤`pszCode`如果運算式包含錯誤。
+ [in]要用於剖析中的任何數字資訊基數`pszCode`。
+
+`ppExpr`
+
+ [out]傳回[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)物件，表示剖析的運算式，可供繫結和評估。
+
+`pbstrError`
+
+ [out]如果運算式包含錯誤，則傳回錯誤訊息。
+
+`pichError`
+
+ [out]傳回字元的索引中的錯誤`pszCode`如果運算式包含錯誤。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -123,8 +129,8 @@ HRESULT CEnvBlock::ParseText(
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)  
-[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)  
-[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)  
-[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)  
-[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)
+- [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)
+- [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)
+- [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
+- [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)
+- [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)
