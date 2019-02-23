@@ -1,7 +1,7 @@
 ---
 title: EXCEPTION_STATE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - EXCEPTION_STATE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0d2063e892511f3de03ab2ee5db9fe41da48e16
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: a9c0c5ed3f4432deeb26e97ff21f6d89de9ee109
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412743"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720311"
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
 指定的例外狀況狀態。
@@ -74,50 +74,35 @@ public enum enum_EXCEPTION_STATE {
 ```
 
 ## <a name="members"></a>成員
-EXCEPTION_NONE  
-不會停止在例外狀況。
+EXCEPTION_NONE 不會停止在例外狀況。
 
-EXCEPTION_STOP_FIRST_CHANCE  
-停止在第一個引發的例外狀況。 描述例外狀況事件，當此旗標會指出例外狀況事件是第一個可能發生的例外狀況的事件。
+EXCEPTION_STOP_FIRST_CHANCE 停止在第一個引發的例外狀況。 描述例外狀況事件，當此旗標會指出例外狀況事件是第一個可能發生的例外狀況的事件。
 
-EXCEPTION_STOP_SECOND_CHANCE  
-停止在第二個引發的例外狀況。 當描述例外狀況事件，表示例外狀況事件的第二個可能發生例外狀況事件。
+EXCEPTION_STOP_SECOND_CHANCE 停止在第二個引發的例外狀況。 當描述例外狀況事件，表示例外狀況事件的第二個可能發生例外狀況事件。
 
-EXCEPTION_STOP_USER_FIRST_CHANCE  
-在使用者模式例外狀況的第一次引發處停止。 當描述例外狀況事件，表示例外狀況事件的第一個可能發生使用者例外狀況事件。
+EXCEPTION_STOP_USER_FIRST_CHANCE 停在使用者模式例外狀況的第一次引發。 當描述例外狀況事件，表示例外狀況事件的第一個可能發生使用者例外狀況事件。
 
-EXCEPTION_STOP_USER_UNCAUGHT  
-當未攔截到的使用者模式例外狀況時停止。 當描述例外狀況事件，表示例外狀況事件無法攔截的使用者模式例外狀況事件。
+當未攔截到的使用者模式例外狀況時，就會停止 EXCEPTION_STOP_USER_UNCAUGHT。 當描述例外狀況事件，表示例外狀況事件無法攔截的使用者模式例外狀況事件。
 
-EXCEPTION_STOP_ALL  
-停止的任何例外狀況。 描述例外狀況事件時，無法使用。
+EXCEPTION_STOP_ALL 停止的任何例外狀況。 描述例外狀況事件時，無法使用。
 
-EXCEPTION_CANNOT_BE_CONTINUED  
-描述例外狀況事件，表示例外狀況，無法繼續從。
+EXCEPTION_CANNOT_BE_CONTINUED 時描述例外狀況事件，表示例外狀況，無法繼續從。
 
-EXCEPTION_CODE_SUPPORTED  
-表示例外狀況有支援它的程式碼。 用來顯示例外狀況
+EXCEPTION_CODE_SUPPORTED 指出例外狀況包含支援它的程式碼。 用來顯示例外狀況
 
-EXCEPTION_CODE_DISPLAY_IN_HEX  
-表示以十六進位方式，應該會顯示例外狀況代碼。 用來顯示例外狀況。
+EXCEPTION_CODE_DISPLAY_IN_HEX 表示十六進位，應該會顯示例外狀況代碼。 用來顯示例外狀況。
 
-EXCEPTION_JUST_MY_CODE_SUPPORTED  
-表示例外狀況的程式碼支援 JustMyCode。 用來顯示例外狀況。
+EXCEPTION_JUST_MY_CODE_SUPPORTED 表示例外狀況的程式碼支援 JustMyCode。 用來顯示例外狀況。
 
-EXCEPTION_MANAGED_DEBUG_ASSISTANT  
-表示 managed 程式碼偵錯工具應該處理的例外狀況。 如果沒有設定，預設偵錯工具處理的例外狀況。 這會傳遞至[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)方法並不會用於[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構。
+EXCEPTION_MANAGED_DEBUG_ASSISTANT 表示 managed 程式碼偵錯工具應該處理的例外狀況。 如果沒有設定，預設偵錯工具處理的例外狀況。 這會傳遞至[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)方法並不會用於[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構。
 
-EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT  
-已淘汰，請勿使用。
+EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT 已經過時，請勿使用。
 
-EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT  
-已淘汰，請勿使用。
+EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT 已經過時，請勿使用。
 
-EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT  
-已淘汰，請勿使用。
+EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT 已經過時，請勿使用。
 
-EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT  
-已淘汰，請勿使用。
+EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT 已經過時，請勿使用。
 
 ## <a name="remarks"></a>備註
 做`dwState`隸屬[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)結構來表示的狀態，以及例外狀況有關它可以做什麼。
@@ -134,6 +119,6 @@ EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)  
-[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)
+- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)
+- [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)

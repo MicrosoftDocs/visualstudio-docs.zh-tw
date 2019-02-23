@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointRequest2::GetLocationType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBreakpointRequest2::GetLocationType
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afddb4f27eaae9ae9960ae07127d88d0d4588d1f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ef63656e645611e13bfc6e0fcf1fb3a5cc339abc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315673"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684685"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 取得此中斷點要求的中斷點位置類型。
@@ -37,7 +37,9 @@ int GetLocationType(
 ```
 
 #### <a name="parameters"></a>參數
-`pBPLocationType` [out]傳回值，以從[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)列舉，可描述此中斷點要求的位置。
+`pBPLocationType`
+
+ [out]傳回值，以從[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)列舉，可描述此中斷點要求的位置。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_FAIL`如果`bpLocation`欄位中相關聯[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)結構無效。
@@ -77,7 +79,7 @@ HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationTy
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)  
-[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)  
-[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)  
-[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+- [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
+- [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)
+- [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)
+- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

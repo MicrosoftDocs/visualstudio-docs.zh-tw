@@ -1,7 +1,7 @@
 ---
 title: BP_ERROR_RESOLUTION_INFO | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_ERROR_RESOLUTION_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03742dc00f0d42066eb80adfef6946904cae1d77
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7d89a871abf6a62dec712ce9d9ae486496c775b8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317103"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691198"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
 描述錯誤的中斷點，包括位置、 程式和執行緒的解析度。
@@ -47,23 +47,17 @@ public struct BP_ERROR_RESOLUTION_INFO {
 ```
 
 ## <a name="members"></a>成員
-`dwFields`  
-從值的組合[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)指定此結構的欄位都已填寫的列舉類型。
+`dwFields` 從值的組合[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)指定此結構的欄位都已填寫的列舉類型。
 
-`bpResLocation`  
-[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) union、 指定的中斷點解析位置。
+`bpResLocation` [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) union、 指定的中斷點解析位置。
 
-`pProgram`  
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示中斷點錯誤發生所在的應用程式。
+`pProgram` [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示中斷點錯誤發生所在的應用程式。
 
-`pThread`  
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示產生中斷點錯誤的應用程式執行所在的執行緒。
+`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示產生中斷點錯誤的應用程式執行所在的執行緒。
 
-`bstrMessage`  
-字串，包含此錯誤的解決方案所產生的任何警告或錯誤訊息。
+`bstrMessage` 字串，包含此錯誤的解決方案所產生的任何警告或錯誤訊息。
 
-`dwType`  
-值，以從[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)指定中斷點錯誤類型的列舉型別。
+`dwType` 值，以從[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)指定中斷點錯誤類型的列舉型別。
 
 ## <a name="remarks"></a>備註
 此結構會傳回從[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)方法。
@@ -76,10 +70,10 @@ public struct BP_ERROR_RESOLUTION_INFO {
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)  
-[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)  
-[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)  
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)  
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)  
-[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)
+- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)
+- [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)
+- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)

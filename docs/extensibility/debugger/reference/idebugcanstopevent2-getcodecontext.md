@@ -1,7 +1,7 @@
 ---
 title: IDebugCanStopEvent2::GetCodeContext | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCanStopEvent2::GetCodeContext
 helpviewer_keywords:
@@ -12,43 +12,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89f105135674fcb775bea064077f0d36b9a99d8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7d11a8a5bf3a0fc66487b8a0e58cd98aefdbd255
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917844"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713902"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
-取得描述這個事件的位置的程式碼內容。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT GetCodeContext(   
-   IDebugCodeContext2** ppCodeContext  
-);  
-```  
-  
-```csharp  
-int GetCodeContext(   
-   out IDebugCodeContext2 ppCodeContext  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `ppCodeContext`  
- [out]傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示目前的程式碼位置。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- 適用於大部分的執行階段架構程式碼內容可以視為指向特定的指令程式的執行資料流中的地址。  
-  
- 若要取得的文件內容，也就是導向的原始程式碼程式行，呼叫[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)方法。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
- [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)
+取得描述這個事件的位置的程式碼內容。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT GetCodeContext( 
+   IDebugCodeContext2** ppCodeContext
+);
+```
+
+```csharp
+int GetCodeContext( 
+   out IDebugCodeContext2 ppCodeContext
+);
+```
+
+#### <a name="parameters"></a>參數
+ `ppCodeContext`
+
+ [out]傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示目前的程式碼位置。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+ 適用於大部分的執行階段架構程式碼內容可以視為指向特定的指令程式的執行資料流中的地址。
+
+ 若要取得的文件內容，也就是導向的原始程式碼程式行，呼叫[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)方法。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
+- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
+- [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)

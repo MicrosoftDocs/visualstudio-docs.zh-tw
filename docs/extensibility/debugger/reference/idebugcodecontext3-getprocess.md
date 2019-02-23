@@ -1,7 +1,7 @@
 ---
 title: IDebugCodeContext3::GetProcess |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugCodeContext3::GetProcess
 ms.assetid: e082e494-2255-4d9d-a5a9-6dadd904bea8
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f892e9ee339f25f512c4036fb9e794c922b7404
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 81ee68246aa999c8ac610b9590f914388e6fbbf2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413172"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716489"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 擷取偵錯處理序的介面的參考。
@@ -35,8 +35,9 @@ public int GetProcess(
 ```
 
 #### <a name="parameters"></a>參數
-`ppProcess`  
-[out]偵錯程序介面參考。
+`ppProcess`
+
+ [out]偵錯程序介面參考。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -65,4 +66,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)
+- [IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)

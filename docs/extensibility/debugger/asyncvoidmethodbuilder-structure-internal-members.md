@@ -11,37 +11,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fa4eb73257b98a588102bee96c037e2d302e96c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0a4c51d76d38680945eaccbd3ace256813668c51
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54976650"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716801"
 ---
 # <a name="asyncvoidmethodbuilder-structure---internal-members"></a>AsyncVoidMethodBuilder 結構-內部成員
-本主題描述的內部成員<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>類別。 如需此類別的一般資訊，請參閱<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>參考主題。  
-  
- **命名空間︰** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
-  
- **組件：** mscorlib （在 mscorlib.dll 中)  
-  
- 因為您無法從.NET Framework 來存取這些內部成員，下列語法提供通用中繼語言 (CIL)。  
-  
-## <a name="syntax"></a>語法  
-  
-```csharp  
-.class public sequential ansi sealed beforefieldinit System.Runtime.CompilerServices.AsyncVoidMethodBuilder  
-       extends System.ValueType  
-       implements System.Runtime.CompilerServices.IAsyncMethodBuilder  
-```  
-  
-## <a name="internal-members"></a>內部成員  
-  
-|名稱|描述|  
-|----------|-----------------|  
-|[ObjectIdForDebugger 屬性](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|取得物件，可用來唯一識別這個產生器偵錯工具。|  
-|[m_objectIdForDebugger 欄位](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|表示偵錯工具用來唯一識別這個產生器的延遲初始化的物件。|  
-  
-## <a name="see-also"></a>另請參閱  
- <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   
- [適用於.NET Framework 的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+本主題描述的內部成員<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>類別。 如需此類別的一般資訊，請參閱<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>參考主題。
+
+ **命名空間︰** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+
+ **組件：** mscorlib （在 mscorlib.dll 中)
+
+ 因為您無法從.NET Framework 來存取這些內部成員，下列語法提供通用中繼語言 (CIL)。
+
+## <a name="syntax"></a>語法
+
+```csharp
+.class public sequential ansi sealed beforefieldinit System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+       extends System.ValueType
+       implements System.Runtime.CompilerServices.IAsyncMethodBuilder
+```
+
+## <a name="internal-members"></a>內部成員
+
+|名稱|描述|
+|----------|-----------------|
+|[ObjectIdForDebugger 屬性](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|取得物件，可用來唯一識別這個產生器偵錯工具。|
+|[m_objectIdForDebugger 欄位](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|表示偵錯工具用來唯一識別這個產生器的延遲初始化的物件。|
+
+## <a name="see-also"></a>另請參閱
+- <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
+- [適用於.NET Framework 的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
