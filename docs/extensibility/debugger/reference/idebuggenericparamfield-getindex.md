@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetIndex | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetIndex
 ms.assetid: 8e0bdb26-1247-44d9-8d80-ec6e35187fb4
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77fe5e06562292eaef477b77d05f685c7c1f9d35
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 77c5a2ccb8ff81cade0a110f8226f54a04ef65ea
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450187"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702768"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 擷取此泛型參數的索引。
@@ -35,8 +35,9 @@ int GetIndex(
 ```
 
 #### <a name="parameters"></a>參數
-`pIndex`  
-[out]此泛型參數的索引值。
+`pIndex`
+
+ [out]此泛型參數的索引值。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -66,4 +67,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
