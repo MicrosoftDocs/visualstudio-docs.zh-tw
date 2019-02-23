@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugObjects | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugObjects
 helpviewer_keywords:
@@ -12,52 +12,52 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a93d94a49ed331b74886f001fb2d4069d6b10ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8a0de2742b5fee3215d1fddbe7912943effe639d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919704"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680967"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
-  
- 此介面代表實作的物件的集合[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面。  
-  
-## <a name="syntax"></a>語法  
-  
-```  
-IEnumDebugObjects : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>實作者的附註  
- 運算式評估工具會實作這個介面來提供實作的物件的集合[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面。 請注意，這不是標準的 COM 列舉的緣故[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)方法。  
-  
-## <a name="notes-for-callers"></a>呼叫端資訊  
- [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)傳回此介面。  
-  
-## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 這個介面會實作下列方法。  
-  
-|方法|描述|  
-|------------|-----------------|  
-|[下一步](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|擷取下的一組[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)列舉中的物件。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|略過指定的數目的項目。|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|將列舉重設第一個項目中。|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|擷取一份目前的列舉型別。|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)|擷取列舉中的項目數。|  
-  
-## <a name="remarks"></a>備註  
- 這個介面允許列舉一組物件陣列中的偵錯引擎。  
-  
-## <a name="requirements"></a>需求  
- 標頭： ee.h  
-  
- 命名空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
- [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)
+>  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+
+ 此介面代表實作的物件的集合[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面。
+
+## <a name="syntax"></a>語法
+
+```
+IEnumDebugObjects : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>實作者的附註
+ 運算式評估工具會實作這個介面來提供實作的物件的集合[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)介面。 請注意，這不是標準的 COM 列舉的緣故[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)方法。
+
+## <a name="notes-for-callers"></a>呼叫端資訊
+- [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)傳回此介面。
+
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
+ 這個介面會實作下列方法。
+
+|方法|描述|
+|------------|-----------------|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|擷取下的一組[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)列舉中的物件。|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|略過指定的數目的項目。|
+|[Reset](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|將列舉重設第一個項目中。|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|擷取一份目前的列舉型別。|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)|擷取列舉中的項目數。|
+
+## <a name="remarks"></a>備註
+ 這個介面允許列舉一組物件陣列中的偵錯引擎。
+
+## <a name="requirements"></a>需求
+ 標頭： ee.h
+
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop
+
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>另請參閱
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+- [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugSettingsCallback2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2 interface
 ms.assetid: 7e525d0b-7d7a-4d1c-8b78-e1398fa922f2
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da1831bbea755ba0b403eb6f67dca70afb80cb53
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 3dea6edb6045e21931651ff5c20a01a5f000ff62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449772"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722677"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
 啟用偵錯引擎讀取計量設定從遠端。

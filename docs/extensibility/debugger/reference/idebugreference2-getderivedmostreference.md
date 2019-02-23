@@ -1,7 +1,7 @@
 ---
 title: IDebugReference2::GetDerivedMostReference | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugReference2::GetDerivedMostReference
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0427b9e8dcd4cd21fd6c1514d7b7ce80596678e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0d10c265ba8b77dc8cc434fd8a9c688f1c7188a8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971058"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679316"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
-取得參考的最具衍生性參考。 保留供未來使用。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT GetDerivedMostReference(   
-   IDebugReference2** ppDerivedMost  
-);  
-```  
-  
-```csharp  
-int GetDerivedMostReference(   
-   out IDebugReference2 ppDerivedMost  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `ppDerivedMost`  
- [out]傳回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，表示最具衍生性的屬性。  
-  
-## <a name="return-value"></a>傳回值  
- 一律傳回 `E_NOTIMPL`。  
-  
-## <a name="remarks"></a>備註  
- 例如，如果這個屬性會描述該物件會實作`ClassRoot`這是實際的具現化，但`ClassDerived`衍生自`ClassRoot`，則這個方法會傳回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件代表參考`ClassDerived`物件。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
+取得參考的最具衍生性參考。 保留供未來使用。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT GetDerivedMostReference( 
+   IDebugReference2** ppDerivedMost
+);
+```
+
+```csharp
+int GetDerivedMostReference( 
+   out IDebugReference2 ppDerivedMost
+);
+```
+
+#### <a name="parameters"></a>參數
+ `ppDerivedMost`
+
+ [out]傳回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，表示最具衍生性的屬性。
+
+## <a name="return-value"></a>傳回值
+ 一律傳回 `E_NOTIMPL`。
+
+## <a name="remarks"></a>備註
+ 例如，如果這個屬性會描述該物件會實作`ClassRoot`這是實際的具現化，但`ClassDerived`衍生自`ClassRoot`，則這個方法會傳回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件代表參考`ClassDerived`物件。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

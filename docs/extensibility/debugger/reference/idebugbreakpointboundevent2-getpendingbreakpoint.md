@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointBoundEvent2::GetPendingBreakpoint | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBreakpointBoundEvent2::GetPendingBreakpoint
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4039a8ca3b6759480ff1df7b2a9f648ae4ad01e9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e0a67ec99f553fd5201b1ee1bf17760fd94bb890
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316154"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699180"
 ---
 # <a name="idebugbreakpointboundevent2getpendingbreakpoint"></a>IDebugBreakpointBoundEvent2::GetPendingBreakpoint
 取得與所繫結的暫止中斷點。
@@ -37,8 +37,9 @@ int GetPendingBreakpoint(
 ```
 
 #### <a name="parameters"></a>參數
-`ppPendingBP`  
-[out]傳回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)物件，表示要繫結的暫止中斷點。
+`ppPendingBP`
+
+ [out]傳回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)物件，表示要繫結的暫止中斷點。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -73,5 +74,5 @@ STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)  
-[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+- [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)
+- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

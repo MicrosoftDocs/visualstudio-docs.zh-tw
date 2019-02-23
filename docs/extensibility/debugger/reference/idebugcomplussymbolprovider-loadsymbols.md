@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::LoadSymbols | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - LoadSymbols
 - IDebugComPlusSymbolProvider::LoadSymbols
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1469c2a0d8332371bb38be2616ae7dcf6a61fe37
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 4c19070dce95a1f88398fe57d03e9d578086e9ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413367"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678198"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 載入記憶體中指定的偵錯符號。
@@ -46,23 +46,29 @@ int LoadSymbols(
 ```
 
 #### <a name="parameters"></a>參數
-`ulAppDomainID`  
-[in]應用程式定義域的識別項。
+`ulAppDomainID`
 
-`guidModule`  
-[in]Mondule 的唯一識別碼。
+ [in]應用程式定義域的識別項。
 
-`baseAddress`  
-[in]基底的記憶體位址。
+`guidModule`
 
-`pUnkMetadataImport`  
-[in]包含符號的中繼資料的物件。
+ [in]Mondule 的唯一識別碼。
 
-`bstrModuleName`  
-[in]模組的名稱。
+`baseAddress`
 
-`bstrSymSearchPath`  
-[in]若要搜尋符號檔案的路徑。
+ [in]基底的記憶體位址。
+
+`pUnkMetadataImport`
+
+ [in]包含符號的中繼資料的物件。
+
+`bstrModuleName`
+
+ [in]模組的名稱。
+
+`bstrSymSearchPath`
+
+ [in]若要搜尋符號檔案的路徑。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -84,4 +90,4 @@ HRESULT CDebugSymbolProvider::LoadSymbols(
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

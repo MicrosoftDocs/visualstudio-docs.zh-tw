@@ -8,37 +8,37 @@ ms.author: v-brickg
 manager: jillfra
 ms.workload:
 - v-brickg
-ms.openlocfilehash: b26eb91439547b3d9837c1482e707dcb7ea62cd8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a17361536437e6ba4811a687fdc75a9b47d4c0e6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940709"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698478"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>適用於 Visual Studio 的視覺化語言字典
-Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖形的建置組塊的概念。 在設計新的圖示時，使用此字典來識別您想要傳遞自己的映像中的概念。  
-  
+Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖形的建置組塊的概念。 在設計新的圖示時，使用此字典來識別您想要傳遞自己的映像中的概念。
+
 ## <a name="general-guidelines"></a>一般方針
-  
--   這些 visual 概念必須使用其字典定義的一致的方式。 否則，可能會令人困惑的使用者，預期有一致的意義的通用元素。  
-  
--   選擇只有最相關或重要概念用於在您的圖示，以便圖像是清晰且容易區分。  
-  
--   用於每個映像只需要一個或兩個概念。  
-  
--   如需設計圖示的策略，請參閱[迶蒩飶耵](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign)。  
-  
-**跳到章節：**  
-  
-1.  [概念 A-Z、0-9](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)    
-2.  [產品與平台](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDProducts)    
-3.  [使用箭號的一般概念](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDArrows) 
-4.  [狀態指標](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDStatus)  
-  
-##  <a name="BKMK_VLDConcepts"></a> Concepts A-Z  
-  
-###  <a name="BKMK_VLDConceptsA"></a> A  
-  
+
+-   這些 visual 概念必須使用其字典定義的一致的方式。 否則，可能會令人困惑的使用者，預期有一致的意義的通用元素。
+
+-   選擇只有最相關或重要概念用於在您的圖示，以便圖像是清晰且容易區分。
+
+-   用於每個映像只需要一個或兩個概念。
+
+-   如需設計圖示的策略，請參閱[迶蒩飶耵](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign)。
+
+**跳到章節：**
+
+1.  [概念 A-Z、0-9](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)
+2.  [產品與平台](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDProducts)
+3.  [使用箭號的一般概念](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDArrows)
+4.  [狀態指標](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDStatus)
+
+##  <a name="BKMK_VLDConcepts"></a> Concepts A-Z
+
+###  <a name="BKMK_VLDConceptsA"></a> A
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | - | - | - | - |
 | **協助工具選項** | ![協助工具圖示](../../extensibility/ux-guidelines/media/vld_c_accessibility.png "VLD_C_Accessibility") | | |
@@ -61,27 +61,27 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **音效** | ![音訊圖示](../../extensibility/ux-guidelines/media/vld_c_audio.png "VLD_C_Audio") | ![靜音圖示](../../extensibility/ux-guidelines/media/vld_c_audio_audiomute.png "VLD_C_Audio_AudioMute")<br />音訊靜音<br />![音訊播放圖示](../../extensibility/ux-guidelines/media/vld_c_audio_audioplayback.png "VLD_C_Audio_AudioPlayback")<br />音訊播放<br />![音效檔圖示](../../extensibility/ux-guidelines/media/vld_c_audio_soundfile.png "VLD_C_Audio_SoundFile")<br />音效檔 | |
 | **音訊錄製** | ![錄音圖示](../../extensibility/ux-guidelines/media/vld_c_audiorecording.png "VLD_C_AudioRecording") | ![錄音靜音圖示](../../extensibility/ux-guidelines/media/vld_c_audiorecording_recordmute.png "VLD_C_AudioRecording_RecordMute")<br />錄音靜音<br />![記錄的螢幕及聲音圖示](../../extensibility/ux-guidelines/media/vld_c_audiorecording_recordscreenandvoice.png "VLD_C_AudioRecording_RecordScreenAndVoice")<br />錄製螢幕和聲音 | |
 | **Autosum** | ![自動加總圖示](../../extensibility/ux-guidelines/media/vld_c_autosum.png "VLD_C_Autosum") | | |
-  
-###  <a name="BKMK_VLDConceptsB"></a> B  
-  
+
+###  <a name="BKMK_VLDConceptsB"></a> B
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
-| --- | --- | --- | --- |  
-| **雙向** | ![雙向圖示](../../extensibility/ux-guidelines/media/vld_c_bidirectional.png "VLD_C_Bidirectional") |||  
-| **Binary** | ![二進位圖示](../../extensibility/ux-guidelines/media/vld_c_binary.png "VLD_C_Binary") | ![啟動檢測目標二進位圖示](../../extensibility/ux-guidelines/media/vld_c_binary_launchinstrumentationtargetbinary.png "VLD_C_Binary_LaunchInstrumentationTargetBinary")<br />啟動檢測目標二進位檔 ||  
-| **書籤** | ![書籤圖示](../../extensibility/ux-guidelines/media/vld_c_bookmark.png "VLD_C_Bookmark") | ![書籤專案圖示](../../extensibility/ux-guidelines/media/vld_c_bookmark_bookmarkproject.png "VLD_C_Bookmark_BookmarkProject")<br />書籤專案<br />![清除書籤圖示](../../extensibility/ux-guidelines/media/vld_c_bookmark_clearbookmark.png "VLD_C_Bookmark_ClearBookmark")<br />清除書籤<br />![移至前一個書籤](../../extensibility/ux-guidelines/media/vld_c_bookmark_gotopreviousbookmark.png "VLD_C_Bookmark_GoToPreviousBookmark")<br />移至上一個書籤 ||  
+| --- | --- | --- | --- |
+| **雙向** | ![雙向圖示](../../extensibility/ux-guidelines/media/vld_c_bidirectional.png "VLD_C_Bidirectional") |||
+| **Binary** | ![二進位圖示](../../extensibility/ux-guidelines/media/vld_c_binary.png "VLD_C_Binary") | ![啟動檢測目標二進位圖示](../../extensibility/ux-guidelines/media/vld_c_binary_launchinstrumentationtargetbinary.png "VLD_C_Binary_LaunchInstrumentationTargetBinary")<br />啟動檢測目標二進位檔 ||
+| **書籤** | ![書籤圖示](../../extensibility/ux-guidelines/media/vld_c_bookmark.png "VLD_C_Bookmark") | ![書籤專案圖示](../../extensibility/ux-guidelines/media/vld_c_bookmark_bookmarkproject.png "VLD_C_Bookmark_BookmarkProject")<br />書籤專案<br />![清除書籤圖示](../../extensibility/ux-guidelines/media/vld_c_bookmark_clearbookmark.png "VLD_C_Bookmark_ClearBookmark")<br />清除書籤<br />![移至前一個書籤](../../extensibility/ux-guidelines/media/vld_c_bookmark_gotopreviousbookmark.png "VLD_C_Bookmark_GoToPreviousBookmark")<br />移至上一個書籤 ||
 | **分支** | ![分支圖示](../../extensibility/ux-guidelines/media/vld_c_branch.png "VLD_C_Branch") | ![上傳的分支圖示](../../extensibility/ux-guidelines/media/vld_c_branch_branchuploaded.png "VLD_C_Branch_BranchUploaded") <br />上傳的分支<br />![遠端分支圖示](../../extensibility/ux-guidelines/media/vld_c_branch_remotebranch.png "VLD_C_Branch_RemoteBranch")<br />遠端分支 ||
 | **亮度** | ![亮度圖示](../../extensibility/ux-guidelines/media/vld_c_brightness.png "VLD_C_Brightness") | ![調低亮度圖示](../../extensibility/ux-guidelines/media/vld_c_brightness_brightnessdown.png "VLD_C_Brightness_BrightnessDown")<br />調低亮度<br />![調高亮度圖示](../../extensibility/ux-guidelines/media/vld_c_brightness_brightnessup.png "VLD_C_Brightness_BrightnessUp")<br />調高亮度 ||
-| **瀏覽** | ![瀏覽圖示](../../extensibility/ux-guidelines/media/vld_c_browse.png "VLD_C_Browse") | ![瀏覽下一步 圖示](../../extensibility/ux-guidelines/media/vld_c_browse_browsenext.png "VLD_C_Browse_BrowseNext")<br />瀏覽下一步<br />![瀏覽上一個圖示](../../extensibility/ux-guidelines/media/vld_c_browse_browseprevious.png "VLD_C_Browse_BrowsePrevious")<br />瀏覽上一個 ||  
-| **Bug** | ![Bug 圖示](../../extensibility/ux-guidelines/media/vld_c_bug.png "VLD_C_Bug") | ![建立新的 bug 圖示](../../extensibility/ux-guidelines/media/vld_c_bug_createnewbug.png "VLD_C_Bug_CreateNewBug")<br />建立新的 bug || 
+| **瀏覽** | ![瀏覽圖示](../../extensibility/ux-guidelines/media/vld_c_browse.png "VLD_C_Browse") | ![瀏覽下一步 圖示](../../extensibility/ux-guidelines/media/vld_c_browse_browsenext.png "VLD_C_Browse_BrowseNext")<br />瀏覽下一步<br />![瀏覽上一個圖示](../../extensibility/ux-guidelines/media/vld_c_browse_browseprevious.png "VLD_C_Browse_BrowsePrevious")<br />瀏覽上一個 ||
+| **Bug** | ![Bug 圖示](../../extensibility/ux-guidelines/media/vld_c_bug.png "VLD_C_Bug") | ![建立新的 bug 圖示](../../extensibility/ux-guidelines/media/vld_c_bug_createnewbug.png "VLD_C_Bug_CreateNewBug")<br />建立新的 bug ||
 | **建置** | ![組建圖示](../../extensibility/ux-guidelines/media/vld_c_build.png "VLD_C_Build") | ![選取組建圖示](../../extensibility/ux-guidelines/media/vld_c_build_buildselection.png "VLD_C_Build_BuildSelection")<br />建置選取範圍<br />![私用組建執行個體圖示](../../extensibility/ux-guidelines/media/vld_c_build_privatebuildinstance.png "VLD_C_Build_PrivateBuildInstance")<br />私用組建的執行個體<br />![使用者&#45;建立組建圖示](../../extensibility/ux-guidelines/media/vld_c_build_usercreatedbuild.png "VLD_C_Build_UserCreatedBuild")<br />使用者建立的組建 ||
 | **Builder** | ![產生器圖示](../../extensibility/ux-guidelines/media/vld_c_builder.png "VLD_C_Builder") | ![Cube 產生器圖示](../../extensibility/ux-guidelines/media/vld_c_builder_cubebuilder.png "VLD_C_Builder_CubeBuilder") <br />Cube 產生器<br />![維度產生器圖示](../../extensibility/ux-guidelines/media/vld_c_builder_dimensionbuilder.png "VLD_C_Builder_DimensionBuilder")<br />維度產生器 ||
 | **商務** | ![商務圖示](../../extensibility/ux-guidelines/media/vld_c_business.png "VLD_C_Business") | ![商務模型範本圖示](../../extensibility/ux-guidelines/media/vld_c_business_businessmodeltemplate.png "VLD_C_Business_BusinessModelTemplate")<br />商務模型範本<br />![商務物件資料來源圖示](../../extensibility/ux-guidelines/media/vld_c_business_businessobjectsdatasource.png "VLD_C_Business_BusinessObjectsDataSource")<br />商務物件資料來源<br />![線上商務圖示](../../extensibility/ux-guidelines/media/vld_c_business_onlinebusiness.png "VLD_C_Business_OnlineBusiness")<br />線上商務 ||
 | **Button** |![按鈕圖示](../../extensibility/ux-guidelines/media/vld_c_button.png "VLD_C_Button") | ![加入按鈕圖示](../../extensibility/ux-guidelines/media/vld_c_button_addbutton.png "VLD_C_Button_AddButton")<br />加入按鈕<br />![影像按鈕圖示](../../extensibility/ux-guidelines/media/vld_c_button_imagebutton.png "VLD_C_Button_ImageButton")<br />影像按鈕<br />![已連結的按鈕圖示](../../extensibility/ux-guidelines/media/vld_c_button_linkedbutton.png "VLD_C_Button_LinkedButton")<br />已連結的按鈕 ||
-  
-###  <a name="BKMK_VLDConceptsC"></a> C  
-  
-| 概念 | 主要圖示 | 其他範例 | 注意 |  
-| --- | --- | --- | --- |  
+
+###  <a name="BKMK_VLDConceptsC"></a> C
+
+| 概念 | 主要圖示 | 其他範例 | 注意 |
+| --- | --- | --- | --- |
 | **快取** | ![快取圖示](../../extensibility/ux-guidelines/media/vld_c_cache.png "VLD_C_Cache") | ![快取正常圖示](../../extensibility/ux-guidelines/media/vld_c_cache_cacheok.png "VLD_C_Cache_CacheOK")<br />快取 [確定]<br />![快取重新整理圖示](../../extensibility/ux-guidelines/media/vld_c_cache_cacherefresh.png "VLD_C_Cache_CacheRefresh")<br />快取重新整理 ||
 | **Calendar** | ![行事曆圖示](../../extensibility/ux-guidelines/media/vld_c_calendar.png "VLD_C_Calendar") | ![日期&#47;時間軸圖示](../../extensibility/ux-guidelines/media/vld_c_calendar_datetimeaxis.png "VLD_C_Calendar_DateTimeAxis")<br />日期/時間軸<br />![全球日曆圖示](../../extensibility/ux-guidelines/media/vld_c_calendar_globalcalendar.png "VLD_C_Calendar_GlobalCalendar")<br />全球的行事曆 ||
 | **Call** | ![呼叫圖示](../../extensibility/ux-guidelines/media/vld_c_call.png "VLD_C_Call") | ![呼叫瀏覽器圖示](../../extensibility/ux-guidelines/media/vld_c_call_callbrowser.png "VLD_C_Call_CallBrowser")<br />呼叫瀏覽器<br />![呼叫瀏覽器設定圖示](../../extensibility/ux-guidelines/media/vld_c_call_callbrowsersettings.png "VLD_C_Call_CallBrowserSettings") <br />呼叫瀏覽器設定<br />![呼叫端或被呼叫端檢視圖示](../../extensibility/ux-guidelines/media/vld_c_call_callerorcalleeview.png "VLD_C_Call_CallerOrCalleeView") <br />呼叫端或被呼叫端檢視 ||
@@ -91,15 +91,15 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **[MSSQLSERVER 的通訊協定內容]** | ![憑證圖示](../../extensibility/ux-guidelines/media/vld_c_certificate.png "VLD_C_Certificate") | ![憑證錯誤圖示](../../extensibility/ux-guidelines/media/vld_c_certificate_certificateerror.png "VLD_C_Certificate_CertificateError")<br />憑證錯誤<br />![憑證警告圖示](../../extensibility/ux-guidelines/media/vld_c_certificate_certificatewarning.png "VLD_C_Certificate_CertificateWarning")<br />憑證警告 ||
 | **Changeset** | ![變更集圖示](../../extensibility/ux-guidelines/media/vld_c_changeset.png "VLD_C_Changeset") | ![群組變更集圖示](../../extensibility/ux-guidelines/media/vld_c_changeset_groupchangesets.png "VLD_C_Changeset_GroupChangesets")<br />群組變更集<br />![新的變更集圖示](../../extensibility/ux-guidelines/media/vld_c_changeset_newchangeset.png "VLD_C_Changeset_NewChangeset")<br />新的變更集 ||
 | **選擇切換** | ![選擇切換圖示](../../extensibility/ux-guidelines/media/vld_c_choicetoggle.png "VLD_C_ChoiceToggle") | ![核取方塊欄位資料行圖示](../../extensibility/ux-guidelines/media/vld_c_choicetoggle_checkboxfieldcolumn.png "VLD_C_ChoiceToggle_CheckboxFieldColumn")<br />核取方塊欄位資料行<br />![核取方塊清單圖示](../../extensibility/ux-guidelines/media/vld_c_choicetoggle_checkboxlist.png "VLD_C_ChoiceToggle_CheckboxList")<br />核取方塊清單 ||
-| **類別** | ![類別圖示](../../extensibility/ux-guidelines/media/vld_c_class.png "VLD_C_Class") | ![加入類別圖示](../../extensibility/ux-guidelines/media/vld_c_class_addclass.png "VLD_C_Class_AddClass")<br />加入類別<br />![類別詳細資料工具視窗圖示](../../extensibility/ux-guidelines/media/vld_c_class_classdetailstoolwindow.png "VLD_C_Class_ClassDetailsToolWindow")<br />類別細節 工具視窗 || 
+| **類別** | ![類別圖示](../../extensibility/ux-guidelines/media/vld_c_class.png "VLD_C_Class") | ![加入類別圖示](../../extensibility/ux-guidelines/media/vld_c_class_addclass.png "VLD_C_Class_AddClass")<br />加入類別<br />![類別詳細資料工具視窗圖示](../../extensibility/ux-guidelines/media/vld_c_class_classdetailstoolwindow.png "VLD_C_Class_ClassDetailsToolWindow")<br />類別細節 工具視窗 ||
 | **清除**<br />如同 [取消]，並在 [刪除] | ![清除圖示](../../extensibility/ux-guidelines/media/vld_c_clear.png "VLD_C_Clear") | ![清除所有中斷點圖示](../../extensibility/ux-guidelines/media/vld_c_clear_clearallbreakpoints.png "VLD_C_Clear_ClearAllBreakpoints")<br />清除所有中斷點<br />![清除書籤圖示](../../extensibility/ux-guidelines/media/vld_c_clear_clearbookmark.png "VLD_C_Clear_ClearBookmark")<br />清除書籤<br />![清除集合圖示](../../extensibility/ux-guidelines/media/vld_c_clear_clearcollection.png "VLD_C_Clear_ClearCollection")<br />清除集合 ||
 | **關閉**<br />結束 | ![關閉圖示](../../extensibility/ux-guidelines/media/vld_c_close.png "VLD_C_Close") | ![全部關閉圖示](../../extensibility/ux-guidelines/media/vld_c_close_closeall.png "VLD_C_Close_CloseAll")<br />全部關閉<br />![關閉結果圖示](../../extensibility/ux-guidelines/media/vld_c_close_closeresults.png "VLD_C_Close_CloseResults")<br />關閉結果<br />![終止處理序圖示](../../extensibility/ux-guidelines/media/vld_c_close_terminateprocess.png "VLD_C_Close_TerminateProcess")<br />終止處理序 ||
 | **雲端** | ![雲端圖示](../../extensibility/ux-guidelines/media/vld_c_cloud.png "VLD_C_Cloud") | ![雲端套件圖示](../../extensibility/ux-guidelines/media/vld_c_cloud_cloudpackage.png "VLD_C_Cloud_CloudPackage")<br />雲端套件<br />![雲端服務圖示](../../extensibility/ux-guidelines/media/vld_c_cloud_cloudservice.png "VLD_C_Cloud_CloudService")<br />雲端服務 ||
-| **程式碼** | ![程式碼圖示](../../extensibility/ux-guidelines/media/vld_c_code.png "VLD_C_Code") | ![自動程式化的 UI 測試圖示](../../extensibility/ux-guidelines/media/vld_c_code_codeduitest.png "VLD_C_Code_CodedUITest")<br />自動程式碼 UI 測試<br />![將轉換成 自動程式化的 web 測試圖示](../../extensibility/ux-guidelines/media/vld_c_code_converttocodedwebtest.png "VLD_C_Code_ConvertToCodedWebTest")<br />將轉換成自動程式化 web 測試 ||  
-| [摺疊] | ![摺疊圖示](../../extensibility/ux-guidelines/media/vld_c_collapse.png "VLD_C_Collapse") | ![全部摺疊圖示](../../extensibility/ux-guidelines/media/vld_c_collapse_collapseall.png "VLD_C_Collapse_CollapseAll")<br />全部摺疊<br />![摺疊的值會傳回](../../extensibility/ux-guidelines/media/vld_c_collapse_returntocollapsedvalue.png "VLD_C_Collapse_ReturnToCollapsedValue")<br />還原成摺疊的值 ||  
-| **集合** | ![集合圖示](../../extensibility/ux-guidelines/media/vld_c_collection.png "VLD_C_Collection") | ![清除集合圖示](../../extensibility/ux-guidelines/media/vld_c_collection_clearcollection.png "VLD_C_Collection_ClearCollection")<br />清除集合<br />![計數集合圖示](../../extensibility/ux-guidelines/media/vld_c_collection_countcollection.png "VLD_C_Collection_CountCollection")<br />計數集合 ||  
+| **程式碼** | ![程式碼圖示](../../extensibility/ux-guidelines/media/vld_c_code.png "VLD_C_Code") | ![自動程式化的 UI 測試圖示](../../extensibility/ux-guidelines/media/vld_c_code_codeduitest.png "VLD_C_Code_CodedUITest")<br />自動程式碼 UI 測試<br />![將轉換成 自動程式化的 web 測試圖示](../../extensibility/ux-guidelines/media/vld_c_code_converttocodedwebtest.png "VLD_C_Code_ConvertToCodedWebTest")<br />將轉換成自動程式化 web 測試 ||
+| [摺疊] | ![摺疊圖示](../../extensibility/ux-guidelines/media/vld_c_collapse.png "VLD_C_Collapse") | ![全部摺疊圖示](../../extensibility/ux-guidelines/media/vld_c_collapse_collapseall.png "VLD_C_Collapse_CollapseAll")<br />全部摺疊<br />![摺疊的值會傳回](../../extensibility/ux-guidelines/media/vld_c_collapse_returntocollapsedvalue.png "VLD_C_Collapse_ReturnToCollapsedValue")<br />還原成摺疊的值 ||
+| **集合** | ![集合圖示](../../extensibility/ux-guidelines/media/vld_c_collection.png "VLD_C_Collection") | ![清除集合圖示](../../extensibility/ux-guidelines/media/vld_c_collection_clearcollection.png "VLD_C_Collection_ClearCollection")<br />清除集合<br />![計數集合圖示](../../extensibility/ux-guidelines/media/vld_c_collection_countcollection.png "VLD_C_Collection_CountCollection")<br />計數集合 ||
 | **資料行** | ![資料行圖示](../../extensibility/ux-guidelines/media/vld_c_column.png "VLD_C_Column") | ![自動調整資料行圖示](../../extensibility/ux-guidelines/media/vld_c_column_autosizecolumn.png "VLD_C_Column_AutosizeColumn")<br />自動調整資料行<br />![資料行詳細資料圖示](../../extensibility/ux-guidelines/media/vld_c_column_columndetails.png "VLD_C_Column_ColumnDetails")<br />資料行詳細資料<br />![資料行錯誤圖示](../../extensibility/ux-guidelines/media/vld_c_column_columnerror.png "VLD_C_Column_ColumnError")<br />資料行發生錯誤 ||
-| **註解**<br />意見反應，註解 | ![註解&#40;泡泡&#41;圖示](../../extensibility/ux-guidelines/media/vld_c_comment_bubble.png "VLD_C_Comment_bubble") | ![加入註解圖示](../../extensibility/ux-guidelines/media/vld_c_comment_bubble_addcomment.png "VLD_C_Comment_bubble_AddComment")<br />加入註解<br />![圖說文字圖示](../../extensibility/ux-guidelines/media/vld_c_comment_bubble_callout.png "VLD_C_Comment_bubble_Callout")<br />圖說文字 ||  
+| **註解**<br />意見反應，註解 | ![註解&#40;泡泡&#41;圖示](../../extensibility/ux-guidelines/media/vld_c_comment_bubble.png "VLD_C_Comment_bubble") | ![加入註解圖示](../../extensibility/ux-guidelines/media/vld_c_comment_bubble_addcomment.png "VLD_C_Comment_bubble_AddComment")<br />加入註解<br />![圖說文字圖示](../../extensibility/ux-guidelines/media/vld_c_comment_bubble_callout.png "VLD_C_Comment_bubble_Callout")<br />圖說文字 ||
 | **註解 （程式碼）** | ![註解&#40;程式碼&#41;](../../extensibility/ux-guidelines/media/vld_c_comment_lines.png "VLD_C_Comment_lines") | ![取消註解圖示](../../extensibility/ux-guidelines/media/vld_c_comment_lines_uncomment.png "VLD_C_Comment_lines_Uncomment") <br />取消註解 ||
 | **Compare** | ![比較圖示](../../extensibility/ux-guidelines/media/vld_c_compare.png "VLD_C_Compare") | ![比較資料圖示](../../extensibility/ux-guidelines/media/vld_c_compare_comparedata.png "VLD_C_Compare_CompareData")<br />比較資料<br />![比較資料夾圖示](../../extensibility/ux-guidelines/media/vld_c_compare_comparefolders.png "VLD_C_Compare_CompareFolders")<br />比較資料夾<br />![比較效能報告圖示](../../extensibility/ux-guidelines/media/vld_c_compare_compareperformancereports.png "VLD_C_Compare_ComparePerformanceReports")<br />比較效能報告 ||
 | **元件** | ![元件圖示](../../extensibility/ux-guidelines/media/vld_c_component.png "VLD_C_Component") | ![加入元件圖示](../../extensibility/ux-guidelines/media/vld_c_component_addcomponent.png "VLD_C_Component_AddComponent")<br />新增元件<br />![元件圖圖示](../../extensibility/ux-guidelines/media/vld_c_component_componentdiagram.png "VLD_C_Component_ComponentDiagram")<br />元件圖<br />![Windows Phone RT 元件圖示](../../extensibility/ux-guidelines/media/vld_c_component_phonewindowsrtcomponent.png "VLD_C_Component_PhoneWindowsRTComponent")<br />Windows Phone RT 元件 ||
@@ -116,11 +116,11 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **資料指標**<br />Pointer | ![資料指標圖示](../../extensibility/ux-guidelines/media/vld_c_cursor.png "VLD_C_Cursor") | ![檢查模式按鈕圖示](../../extensibility/ux-guidelines/media/vld_c_cursor_inspectmodebutton.png "VLD_C_Cursor_InspectModeButton") <br />檢查模式按鈕<br />![設定作用點工具圖示](../../extensibility/ux-guidelines/media/vld_c_cursor_sethotspottool.png "VLD_C_Cursor_SetHotspotTool")<br />設定作用點工具 ||
 | **自訂運算式**<br />預測 | ![自訂運算式圖示](../../extensibility/ux-guidelines/media/vld_c_customexpression.png "VLD_C_CustomExpression") | ![資料採礦預測](../../extensibility/ux-guidelines/media/vld_c_customexpression_dataminingprediction.png "VLD_C_CustomExpression_DataMiningPrediction")<br />資料採礦預測 ||
 | **剪下** | ![剪下圖示](../../extensibility/ux-guidelines/media/vld_c_cut.png "VLD_C_Cut") |||
-  
-###  <a name="BKMK_VLDConceptsD"></a> D  
-  
+
+###  <a name="BKMK_VLDConceptsD"></a> D
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
-| --- | --- | --- | --- | 
+| --- | --- | --- | --- |
 | **深色佈景主題** | ![深色佈景主題圖示](../../extensibility/ux-guidelines/media/vld_c_darktheme.png "VLD_C_DarkTheme") | ![深色佈景主題圖示](../../extensibility/ux-guidelines/media/vld_c_darktheme_darkthemeon.png "VLD_C_DarkTheme_DarkThemeOn")<br />在暗色調佈景主題 ||
 | **Data** | ![資料圖示](../../extensibility/ux-guidelines/media/vld_c_data.png "VLD_C_Data") | ![比較兩個資料庫圖示](../../extensibility/ux-guidelines/media/vld_c_data_comparebothdatabases.png "VLD_C_Data_CompareBothDatabases")<br />比較兩個資料庫<br />![資料庫稽核規格圖示](../../extensibility/ux-guidelines/media/vld_c_data_databaseauditspecification.png "VLD_C_Data_DatabaseAuditSpecification")<br />資料庫稽核規格<br />![資料庫專案圖示](../../extensibility/ux-guidelines/media/vld_c_data_databaseproject.png "VLD_C_Data_DatabaseProject")<br />資料庫專案 ||
 | **資料採礦** | ![資料採礦圖示](../../extensibility/ux-guidelines/media/vld_c_datamining.png "VLD_C_DataMining") | ![資料採礦資料行圖示](../../extensibility/ux-guidelines/media/vld_c_datamining_dataminingcolumn.png "VLD_C_DataMining_DataMiningColumn")<br />資料採礦資料行<br />![資料採礦預測圖示](../../extensibility/ux-guidelines/media/vld_c_datamining_dataminingprediction.png "VLD_C_DataMining_DataMiningPrediction")<br />資料採礦預測<br />![資料採礦結構圖示](../../extensibility/ux-guidelines/media/vld_c_datamining_dataminingstructure.png "VLD_C_DataMining_DataMiningStructure")<br />資料採礦結構 ||
@@ -138,10 +138,10 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **驅動程式** | ![驅動程式圖示](../../extensibility/ux-guidelines/media/vld_c_driver.png "VLD_C_Driver") | ![驅動程式套件範本圖示](../../extensibility/ux-guidelines/media/vld_c_driver_driverpackagetemplate.png "VLD_C_Driver_DriverPackageTemplate")<br />驅動程式套件範本<br />![驅動程式測試群組總管圖示](../../extensibility/ux-guidelines/media/vld_c_driver_drivertestgroupexplorer.png "VLD_C_Driver_DriverTestGroupExplorer")<br />驅動程式測試群組總管<br />![網路 NDIS 驅動程式範本圖示](../../extensibility/ux-guidelines/media/vld_c_driver_networkndisdrivertemplate.png "VLD_C_Driver_NetworkNDISDriverTemplate")<br />網路 NDIS 驅動程式範本 ||
 | **Dynamic** | ![動態圖示](../../extensibility/ux-guidelines/media/vld_c_dynamic.png "VLD_C_Dynamic") | ![ASP.NET 動態控制項圖示](../../extensibility/ux-guidelines/media/vld_c_dynamic_aspnetdynamiccontrol.png "VLD_C_Dynamic_ASPNETDynamicControl")<br />ASP.NET 動態控制項<br />![C&#35;動態資料網站圖示](../../extensibility/ux-guidelines/media/vld_c_dynamic_csdynamicdatawebsite.png "VLD_C_Dynamic_CSDynamicDataWebsite")<br />C# 動態資料網站<br />![動態驗證程式圖示](../../extensibility/ux-guidelines/media/vld_c_dynamic_dynamicvalidator.png "VLD_C_Dynamic_DynamicValidator")<br />動態驗證程式 ||
 | **動態值** | ![動態值圖示](../../extensibility/ux-guidelines/media/vld_c_dynamicvalue.png "VLD_C_DynamicValue") | ![複製動態值圖示](../../extensibility/ux-guidelines/media/vld_c_dynamicvalue_copydynamicvalue.png "VLD_C_DynamicValue_CopyDynamicValue")<br />複製動態值<br />![空白動態值圖示](../../extensibility/ux-guidelines/media/vld_c_dynamicvalue_emptydynamicvalue.png "VLD_C_DynamicValue_EmptyDynamicValue")<br />空白動態值 ||
-  
-###  <a name="BKMK_VLDConceptsE"></a> E  
-  
-| 概念 | 主要圖示 | 其他範例 | 注意 |  
+
+###  <a name="BKMK_VLDConceptsE"></a> E
+
+| 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **編輯** | ![編輯圖示](../../extensibility/ux-guidelines/media/vld_c_edit.png "VLD_C_Edit") | ![地址編輯器圖示](../../extensibility/ux-guidelines/media/vld_c_edit_addresseditor.png "VLD_C_Edit_AddressEditor")<br />地址編輯器<br />![編輯查詢圖示](../../extensibility/ux-guidelines/media/vld_c_edit_editquery.png "VLD_C_Edit_EditQuery")<br />編輯查詢<br />![編輯關聯性圖示](../../extensibility/ux-guidelines/media/vld_c_edit_editrelation.png "VLD_C_Edit_EditRelation")<br />編輯關聯性 | **編輯**註釋所面臨左或向右取決於基底的圖示的外觀。 選擇看起來最適合您整體的迶蒩飶耵的方向。 |
 | **Effects**<br />*「 函數 」，「 變數 （全域） 」 相同* | ![效果圖示](../../extensibility/ux-guidelines/media/vld_c_effects.png "VLD_C_Effects") |||
@@ -152,10 +152,10 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **Expand** | ![展開圖示](../../extensibility/ux-guidelines/media/vld_c_expand.png "VLD_C_Expand") | ![傳回值的展開的圖示](../../extensibility/ux-guidelines/media/vld_c_expand_returnvalueexpanded.png "VLD_C_Expand_ReturnValueExpanded")<br />傳回已展開的值 ||
 | **Expand/Contract** | ![展開圖示](../../extensibility/ux-guidelines/media/vld_c_contractexpand_expand.png "VLD_C_ContractExpand_expand") ![合約&#40;動詞&#41;圖示](../../extensibility/ux-guidelines/media/vld_c_contractexpand_contract.png "VLD_C_ContractExpand_contract") || **展開/折疊**圖示在版面配置的情況下用來表示兩個項目之間的空間將會壓縮。 |
 | **匯出**<br />*「 開啟 」 相同*| ![匯出圖示](../../extensibility/ux-guidelines/media/vld_c_export.png "VLD_C_Export") | ![匯出篩選圖示](../../extensibility/ux-guidelines/media/vld_c_export_exportfilter.png "VLD_C_Export_ExportFilter")<br />匯出篩選器<br />![匯出報告資料圖示](../../extensibility/ux-guidelines/media/vld_c_export_exportreportdata.png "VLD_C_Export_ExportReportData") <br />匯出報表資料<br />![匯出報告篩選器圖示](../../extensibility/ux-guidelines/media/vld_c_export_exportreportfilter.png "VLD_C_Export_ExportReportFilter")<br />匯出報表篩選 ||
-  
-###  <a name="BKMK_VLDConceptsF"></a> F  
-  
-| 概念 | 主要圖示 | 其他範例 | 注意 | 
+
+###  <a name="BKMK_VLDConceptsF"></a> F
+
+| 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **Favorite**<br />受保護、 評等 | ![我的最愛 圖示](../../extensibility/ux-guidelines/media/vld_c_favorite.png "VLD_C_Favorite") | ![加到我的最愛圖示](../../extensibility/ux-guidelines/media/vld_c_favorite_addtofavorites.png "VLD_C_Favorite_AddToFavorites")<br />加到我的最愛<br />![分級圖示](../../extensibility/ux-guidelines/media/vld_c_favorite_rating.png "VLD_C_Favorite_Rating")<br />分級 ||
 | **欄位** | ![欄位圖示](../../extensibility/ux-guidelines/media/vld_c_field.png "VLD_C_Field") | ![加入欄位圖示](../../extensibility/ux-guidelines/media/vld_c_field_addfield.png "VLD_C_Field_AddField")<br />新增欄位<br />![編輯欄位圖示](../../extensibility/ux-guidelines/media/vld_c_field_editfield.png "VLD_C_Field_EditField")<br />編輯欄位 ||
@@ -169,9 +169,9 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **Frame** | ![畫面格圖示](../../extensibility/ux-guidelines/media/vld_c_frame.png "VLD_C_Frame") |||
 | **Friend** | ![好友圖示](../../extensibility/ux-guidelines/media/vld_c_friend.png "VLD_C_Friend") |||
 | **Function**<br />運算式<br />*與 「 影響 」 和 「 變數 （全域） 」 相同* | ![函式圖示](../../extensibility/ux-guidelines/media/vld_c_function.png "VLD_C_Function") | ![函式警告圖示](../../extensibility/ux-guidelines/media/vld_c_function_functionwarning.png "VLD_C_Function_FunctionWarning")<br />函式警告<br />![WPF 頁面函式圖示](../../extensibility/ux-guidelines/media/vld_c_function_wpfpagefunction.png "VLD_C_Function_WPFPageFunction")<br />WPF 頁面函式 ||
-  
-###  <a name="BKMK_VLDConceptsG"></a> G  
-  
+
+###  <a name="BKMK_VLDConceptsG"></a> G
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **Get**<br />下載 | ![取得圖示](../../extensibility/ux-guidelines/media/vld_c_get.png "VLD_C_Get") | ![下載資料夾圖示](../../extensibility/ux-guidelines/media/vld_c_get_downloadfolder.png "VLD_C_Get_DownloadFolder")<br />取得下載資料夾<br />![取得字典值圖示](../../extensibility/ux-guidelines/media/vld_c_get_getdictionaryvalue.png "VLD_C_Get_GetDictionaryValue")<br />取得字典值<br />![取得項目從集合圖示](../../extensibility/ux-guidelines/media/vld_c_get_getitemfromcollection.png "VLD_C_Get_GetItemFromCollection")<br />從集合取得項目 ||
@@ -180,17 +180,17 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **格線** | ![資料格圖示](../../extensibility/ux-guidelines/media/vld_c_grid.png "VLD_C_Grid") | ![資產資料格控制項](../../extensibility/ux-guidelines/media/vld_c_grid_assetdatagridcontrol.png "VLD_C_Grid_AssetDataGridControl")<br />資產資料格控制項<br />![格線應用程式 C&#43; &#43;圖示](../../extensibility/ux-guidelines/media/vld_c_grid_gridappcpp.png "VLD_C_Grid_GridAppCPP")<br />格線應用程式 c + +<br />![切換格線圖示](../../extensibility/ux-guidelines/media/vld_c_grid_togglegrid.png "VLD_C_Grid_ToggleGrid")<br />切換格線 ||
 | **格線 web 版面配置** | ![資料格 web 版面配置圖示](../../extensibility/ux-guidelines/media/vld_c_gridweblayout.png "VLD_C_GridWebLayout") | ![方格項目圖示](../../extensibility/ux-guidelines/media/vld_c_gridweblayout_gridelement.png "VLD_C_GridWebLayout_GridElement")<br />方格項目<br />![格線分隔器項目圖示](../../extensibility/ux-guidelines/media/vld_c_gridweblayout_gridsplitterelement.png "VLD_C_GridWebLayout_GridSplitterElement")<br />格線分隔器項目 ||
 | **群組** | ![群組圖示](../../extensibility/ux-guidelines/media/vld_c_grouping.png "VLD_C_Grouping") | ![對話方塊群組圖示](../../extensibility/ux-guidelines/media/vld_c_grouping_dialoggroup.png "VLD_C_Grouping_DialogGroup")<br />對話方塊群組<br />![小組圖示](../../extensibility/ux-guidelines/media/vld_c_grouping_team.png "VLD_C_Grouping_Team")<br />小組<br />![虛擬機器 圖示](../../extensibility/ux-guidelines/media/vld_c_grouping_virtualmachines.png "VLD_C_Grouping_VirtualMachines")<br />虛擬機器| 堆疊在彼此之上的多個物件代表的概念**分組**或多重性。 |
-  
-###  <a name="BKMK_VLDConceptsH"></a> H  
-  
+
+###  <a name="BKMK_VLDConceptsH"></a> H
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **階層架構** | ![階層圖示](../../extensibility/ux-guidelines/media/vld_c_hierarchy.png "VLD_C_Hierarchy") | ![階層變數圖示](../../extensibility/ux-guidelines/media/vld_c_hierarchy_hierarchyvariable.png "VLD_C_Hierarchy_HierarchyVariable")<br />階層變數<br />![呼叫階層圖示](../../extensibility/ux-guidelines/media/vld_c_hierarchy_callhierarchy.png "VLD_C_Hierarchy_CallHierarchy") <br />呼叫階層 ||
 | **歷程記錄** | ![歷程記錄圖示](../../extensibility/ux-guidelines/media/vld_c_history.png "VLD_C_History") |||
 | **Home** | ![首頁圖示](../../extensibility/ux-guidelines/media/vld_c_home.png "VLD_C_Home") | ![LightSwitch 首頁畫面圖示](../../extensibility/ux-guidelines/media/vld_c_home_lightswitchhomescreen.png "VLD_C_Home_LightSwitchHomeScreen")<br />LightSwitch 首頁畫面 ||
-  
-###  <a name="BKMK_VLDConceptsI"></a> I  
-  
+
+###  <a name="BKMK_VLDConceptsI"></a> I
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **Idea** | ![構想圖示](../../extensibility/ux-guidelines/media/vld_c_idea.png "VLD_C_Idea") |||
@@ -201,16 +201,16 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **繼承 （箭頭）** | ![繼承&#40;箭號&#41;圖示](../../extensibility/ux-guidelines/media/vld_c_inheritance_arrow.png "VLD_C_Inheritance_arrow") || **繼承 （箭頭）** 圖示所代表的模型化介面的 [工具箱] 控制項。 |
 | **Interface** | ![介面圖示](../../extensibility/ux-guidelines/media/vld_c_interface.png "VLD_C_Interface") | ![實作介面圖示](../../extensibility/ux-guidelines/media/vld_c_interface_implementinterface.png "VLD_C_Interface_ImplementInterface")<br />實作介面 ||
 | **Item** | ![項目圖示](../../extensibility/ux-guidelines/media/vld_c_item.png "VLD_C_Item") | ![複製項目圖示](../../extensibility/ux-guidelines/media/vld_c_item_copyitem.png "VLD_C_Item_CopyItem")<br />複製項目<br />![建立清單項目圖示](../../extensibility/ux-guidelines/media/vld_c_item_createlistitem.png "VLD_C_Item_CreateListItem")<br />建立清單項目<br />![簽入項目圖示](../../extensibility/ux-guidelines/media/vld_c_item_checkinitem.png "VLD_C_Item_CheckInItem")<br />簽入項目 ||
-  
-###  <a name="BKMK_VLDConceptsK"></a> K  
-  
+
+###  <a name="BKMK_VLDConceptsK"></a> K
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **Key**<br />權限識別碼 | ![索引鍵圖示](../../extensibility/ux-guidelines/media/vld_c_key.png "VLD_C_Key") | ![新的索引鍵圖示](../../extensibility/ux-guidelines/media/vld_c_key_newkey.png "VLD_C_Key_NewKey")<br />新的金鑰<br />![權限 圖示](../../extensibility/ux-guidelines/media/vld_c_key_permission.png "VLD_C_Key_Permission")<br />權限<br />![取得目前的項目 ID 圖示](../../extensibility/ux-guidelines/media/vld_c_key_getcurrentitemid.png "VLD_C_Key_GetCurrentItemID")<br />取得目前的項目識別碼 ||
 | **關鍵效能指標 (KPI)** | ![KPI 圖示](../../extensibility/ux-guidelines/media/vld_c_kpi.png "VLD_C_KPI") | ![刪除 KPI 圖示](../../extensibility/ux-guidelines/media/vld_c_kpi_deletekpi.png "VLD_C_KPI_DeleteKPI")<br />刪除 KPI<br />![KPI 瀏覽器檢視圖示](../../extensibility/ux-guidelines/media/vld_c_kpi_kpibrowserview.png "VLD_C_KPI_KPIBrowserView")<br />KPI 瀏覽器檢視<br />![錯誤圖示的 KPI](../../extensibility/ux-guidelines/media/vld_c_kpi_kpiwitherror.png "VLD_C_KPI_KPIWithError")<br />發生錯誤的 KPI ||
-  
-###  <a name="BKMK_VLDConceptsL"></a> L  
-  
+
+###  <a name="BKMK_VLDConceptsL"></a> L
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **程式庫** | ![程式庫圖示](../../extensibility/ux-guidelines/media/vld_c_library.png "VLD_C_Library") | ![C&#43; &#43;類別庫專案圖示](../../extensibility/ux-guidelines/media/vld_c_library_cppclasslibraryproject.png "VLD_C_Library_CPPClassLibraryProject")<br />C + + 類別庫專案<br />![匯出程式庫圖示](../../extensibility/ux-guidelines/media/vld_c_library_exportslibrary.png "VLD_C_Library_ExportsLibrary")<br />匯出程式庫<br />![F&#35; Windows Form 控制項程式庫圖示](../../extensibility/ux-guidelines/media/vld_c_library_fswindowsformcontrollibrary.png "VLD_C_Library_FSWindowsFormControlLibrary")<br />F#Windows Form 控制項程式庫 ||
@@ -218,9 +218,9 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **Lock**<br />私用，權限 | ![鎖定圖示](../../extensibility/ux-guidelines/media/vld_c_lock.png "VLD_C_Lock") | ![鎖定 X 軸圖示](../../extensibility/ux-guidelines/media/vld_c_lock_lockxaxis.png "VLD_C_Lock_LockXAxis")<br />鎖定 X 軸<br />![分支權限圖示](../../extensibility/ux-guidelines/media/vld_c_lock_branchpermissions.png "VLD_C_Lock_BranchPermissions")<br />分支權限<br />![私用佇列圖示](../../extensibility/ux-guidelines/media/vld_c_lock_privatequeue.png "VLD_C_Lock_PrivateQueue")<br />私用佇列 ||
 | **Log** | ![記錄檔圖示](../../extensibility/ux-guidelines/media/vld_c_log.png "VLD_C_Log") | ![目錄屬性圖示](../../extensibility/ux-guidelines/media/vld_c_log_catalogproperties.png "VLD_C_Log_CatalogProperties")<br />目錄屬性<br />![動作記錄檔圖示](../../extensibility/ux-guidelines/media/vld_c_log_actionlog.png "VLD_C_Log_ActionLog")<br />動作記錄<br />![連接測試計劃圖示](../../extensibility/ux-guidelines/media/vld_c_log_connecttestplan.png "VLD_C_Log_ConnectTestPlan")<br />連接測試計劃 ||
 | **Loop** | ![迴圈圖示](../../extensibility/ux-guidelines/media/vld_c_loop.png "VLD_C_Loop") | ![加入或插入條件式迴圈圖示](../../extensibility/ux-guidelines/media/vld_c_loop_addorinsertconditionalloop.png "VLD_C_Loop_AddOrInsertConditionalLoop")<br />加入或插入條件式迴圈<br />![條件式迴圈圖示](../../extensibility/ux-guidelines/media/vld_c_loop_conditionalloop.png "VLD_C_Loop_ConditionalLoop")<br />條件式迴圈 ||
-  
-###  <a name="BKMK_VLDConceptsM"></a> M  
-  
+
+###  <a name="BKMK_VLDConceptsM"></a> M
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **郵件**<br />訊息 | ![郵件圖示](../../extensibility/ux-guidelines/media/vld_c_mail.png "VLD_C_Mail") | ![訊息佇列圖示](../../extensibility/ux-guidelines/media/vld_c_mail_messagequeue.png "VLD_C_Mail_MessageQueue")<br />訊息佇列<br />![收到的訊息追蹤圖示](../../extensibility/ux-guidelines/media/vld_c_mail_messagereceivedtrace.png "VLD_C_Mail_MessageReceivedTrace")<br />已接收訊息追蹤<br />![電子郵件地址檢視器圖示](../../extensibility/ux-guidelines/media/vld_c_mail_emailaddressviewer.png "VLD_C_Mail_EmailAddressViewer")<br />電子郵件地址檢視器 ||
@@ -241,26 +241,26 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **行動電話** | ![行動電話圖示](../../extensibility/ux-guidelines/media/vld_c_mobilephone.png "VLD_C_MobilePhone") | ![行動服務 圖示](../../extensibility/ux-guidelines/media/vld_c_mobilephone_mobileservices.png "VLD_C_MobilePhone_MobileServices")<br />行動服務<br />![行動遊戲元件圖示](../../extensibility/ux-guidelines/media/vld_c_mobilephone_mobilegamecomponents.png "VLD_C_MobilePhone_MobileGameComponents")<br />行動遊戲元件<br />![VB 行動 web 專案圖示](../../extensibility/ux-guidelines/media/vld_c_mobilephone_vbmobilewebproject.png "VLD_C_MobilePhone_VBMobileWebProject")<br />VB 行動 web 專案 ||
 | **模組** | ![模組圖示](../../extensibility/ux-guidelines/media/vld_c_module.png "VLD_C_Module") | ![合併模組專案圖示](../../extensibility/ux-guidelines/media/vld_c_module_mergemoduleproject.png "VLD_C_Module_MergeModuleProject")<br />合併模組專案<br />![加入模組圖示](../../extensibility/ux-guidelines/media/vld_c_module_addmodule.png "VLD_C_Module_AddModule")<br />新增模組<br />![合併模組排除圖示](../../extensibility/ux-guidelines/media/vld_c_module_mergemoduleexclude.png "VLD_C_Module_MergeModuleExclude")<br />合併模組排除 ||
 | **移動** | ![移動圖示](../../extensibility/ux-guidelines/media/vld_c_move.png "VLD_C_Move") |||
-  
-###  <a name="BKMK_VLDConceptsN"></a> N  
-  
+
+###  <a name="BKMK_VLDConceptsN"></a> N
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
-| --- | --- | --- | --- |  
+| --- | --- | --- | --- |
 | **命名空間** | ![命名空間圖示](../../extensibility/ux-guidelines/media/vld_c_namespace.png "VLD_C_Namespace") | ![移除使用命名空間圖示](../../extensibility/ux-guidelines/media/vld_c_namespace_removeusingnamespace.png "VLD_C_Namespace_RemoveUsingNamespace")<br />使用命名空間移除<br />![使用命名空間圖示排序](../../extensibility/ux-guidelines/media/vld_c_namespace_sortusingnamespace.png "VLD_C_Namespace_SortUsingNamespace")<br />使用命名空間的排序<br />![加入 using 命名空間圖示](../../extensibility/ux-guidelines/media/vld_c_namespace_addusingnamespace.png "VLD_C_Namespace_AddUsingNamespace")<br />加入 using 命名空間 ||
 | **Network**<br />連線 | ![網路圖示](../../extensibility/ux-guidelines/media/vld_c_network.png "VLD_C_Network") | ![網路驅動程式套件範本圖示](../../extensibility/ux-guidelines/media/vld_c_network_networkdriverpackagetemplate.png "VLD_C_Network_NetworkDriverPackageTemplate")<br />網路驅動程式套件範本<br />![連接離線圖示](../../extensibility/ux-guidelines/media/vld_c_network_connectionoffline.png "VLD_C_Network_ConnectionOffline")<br />離線連接<br />![未知的連接圖示](../../extensibility/ux-guidelines/media/vld_c_network_connectionunknown.png "VLD_C_Network_ConnectionUnknown")<br />未知的連線 ||
 | **Node**<br />十字形狀 | ![節點圖示](../../extensibility/ux-guidelines/media/vld_c_node.png "VLD_C_Node") |||
 | **Nonsubstantive (隱藏或範本)**<br />*與 「 虛擬 」 相同* | ![Nonsubstantive 圖示](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive.png "VLD_C_Nonsubstantive") | ![隱藏的欄位圖示](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfield.png "VLD_C_Nonsubstantive_HiddenField")<br />隱藏的欄位<br />![隱藏的資料夾圖示](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfolder.png "VLD_C_Nonsubstantive_HiddenFolder")<br />隱藏的資料夾<br />![動態範本圖示](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_dynamictemplate.png "VLD_C_Nonsubstantive_DynamicTemplate")<br />動態範本 | 物件的虛線的外框表示它是**隱藏或樣板化**。 |
 | **注意** | ![注意圖示](../../extensibility/ux-guidelines/media/vld_c_note.png "VLD_C_Note") |||
-  
-###  <a name="BKMK_VLDConceptsO"></a> O  
-  
+
+###  <a name="BKMK_VLDConceptsO"></a> O
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **開啟**<br />*「 匯出 」 相同* | ![開啟圖示](../../extensibility/ux-guidelines/media/vld_c_open.png "VLD_C_Open") | ![開啟附件圖示](../../extensibility/ux-guidelines/media/vld_c_open_openattachment.png "VLD_C_Open_OpenAttachment")<br />開啟附件<br />![開啟比較結果圖示](../../extensibility/ux-guidelines/media/vld_c_open_opencomparisonresult.png "VLD_C_Open_OpenComparisonResult")<br />開啟比較結果<br />![開啟檔案對話方塊圖示](../../extensibility/ux-guidelines/media/vld_c_open_openfiledialog.png "VLD_C_Open_OpenFileDialog")<br />開啟檔案 對話方塊 ||
 | **輸出** | ![輸出圖示](../../extensibility/ux-guidelines/media/vld_c_output.png "VLD_C_Output") |||
-  
-###  <a name="BKMK_VLDConceptsP"></a> P  
-  
+
+###  <a name="BKMK_VLDConceptsP"></a> P
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **套件** | ![封裝圖示](../../extensibility/ux-guidelines/media/vld_c_package.png "VLD_C_Package") | ![雲端套件圖示](../../extensibility/ux-guidelines/media/vld_c_package_cloudpackage.png "VLD_C_Package_CloudPackage")<br />雲端套件<br />![建立套件圖示](../../extensibility/ux-guidelines/media/vld_c_package_createpackage.png "VLD_C_Package_CreatePackage")<br />建立套件<br />![驅動程式套件範本圖示](../../extensibility/ux-guidelines/media/vld_c_package_driverpackagetemplate.png "VLD_C_Package_DriverPackageTemplate")<br />驅動程式套件範本 ||
@@ -277,15 +277,15 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **列印** | ![列印圖示](../../extensibility/ux-guidelines/media/vld_c_print.png "VLD_C_Print") | ![列印直接圖示](../../extensibility/ux-guidelines/media/vld_c_print_printdirect.png "VLD_C_Print_PrintDirect")<br />直接列印<br />![列印對話方塊圖示](../../extensibility/ux-guidelines/media/vld_c_print_printdialog.png "VLD_C_Print_PrintDialog")<br />[列印] 對話方塊<br />![列印文件控制項圖示](../../extensibility/ux-guidelines/media/vld_c_print_printdocumentcontrol.png "VLD_C_Print_PrintDocumentControl")<br />列印文件控制項 ||
 | **程序**<br />互動式視窗 | ![程序圖示](../../extensibility/ux-guidelines/media/vld_c_procedure.png "VLD_C_Procedure") | ![Python 互動式視窗圖示](../../extensibility/ux-guidelines/media/vld_c_procedure_pythoninteractivewindow.png "VLD_C_Procedure_PythonInteractiveWindow")<br />Python 互動式視窗<br />![程序警告圖示](../../extensibility/ux-guidelines/media/vld_c_procedure_procedurewarning.png "VLD_C_Procedure_ProcedureWarning")<br />程序警告<br />![預存程序圖示](../../extensibility/ux-guidelines/media/vld_c_procedure_storedprocedure.png "VLD_C_Procedure_StoredProcedure")<br />預存程序 ||
 | **Property**<br />設定組態 | ![屬性圖示](../../extensibility/ux-guidelines/media/vld_c_property.png "VLD_C_Property") | ![加入屬性圖示](../../extensibility/ux-guidelines/media/vld_c_property_addproperty.png "VLD_C_Property_AddProperty")<br />新增屬性<br />![擴充的屬性警告圖示](../../extensibility/ux-guidelines/media/vld_c_property_extendedpropertywarning.png "VLD_C_Property_ExtendedPropertyWarning")<br />擴充屬性&mdash;警告<br />![新的 [屬性] 圖示](../../extensibility/ux-guidelines/media/vld_c_property_newproperty.png "VLD_C_Property_NewProperty")<br />新的屬性 ||
-  
-###  <a name="BKMK_VLDConceptsQ"></a> Q  
-  
+
+###  <a name="BKMK_VLDConceptsQ"></a> Q
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **查詢** | ![查詢圖示](../../extensibility/ux-guidelines/media/vld_c_query.png "VLD_C_Query") | ![編輯查詢圖示](../../extensibility/ux-guidelines/media/vld_c_query_editquery.png "VLD_C_Query_EditQuery")<br />編輯查詢<br />![查詢擴充項圖示](../../extensibility/ux-guidelines/media/vld_c_query_queryextender.png "VLD_C_Query_QueryExtender")<br />查詢擴充項<br />![快速查詢圖示](../../extensibility/ux-guidelines/media/vld_c_query_quickquery.png "VLD_C_Query_QuickQuery")<br />快速的查詢 ||
-  
-###  <a name="BKMK_VLDConceptsR"></a> R  
-  
+
+###  <a name="BKMK_VLDConceptsR"></a> R
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **記錄** | ![記錄圖示](../../extensibility/ux-guidelines/media/vld_c_record.png "VLD_C_Record") | ![錄製畫面圖示](../../extensibility/ux-guidelines/media/vld_c_record_recordscreen.png "VLD_C_Record_RecordScreen")<br />錄製螢幕<br />![移至錄製的測試工作階段圖示](../../extensibility/ux-guidelines/media/vld_c_record_gotorecordedtestsession.png "VLD_C_Record_GoToRecordedTestSession")<br />移至錄製的測試工作階段 ||
@@ -301,9 +301,9 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **Report** | ![報表圖示](../../extensibility/ux-guidelines/media/vld_c_report.png "VLD_C_Report") | ![檔案對話方塊報表圖示](../../extensibility/ux-guidelines/media/vld_c_report_filedialogreport.png "VLD_C_Report_FileDialogReport")<br />檔案對話方塊報表<br />![檢測效能報表圖示](../../extensibility/ux-guidelines/media/vld_c_report_instrumentationperformancereport.png "VLD_C_Report_InstrumentationPerformanceReport")<br />檢測效能報表<br />![報表專案精靈圖示](../../extensibility/ux-guidelines/media/vld_c_report_reportprojectwizard.png "VLD_C_Report_ReportProjectWizard")<br />報表專案精靈 ||
 | **規則** | ![規則圖示](../../extensibility/ux-guidelines/media/vld_c_rule.png "VLD_C_Rule") | ![新的擷取規則圖示](../../extensibility/ux-guidelines/media/vld_c_rule_newextractionrule.png "VLD_C_Rule_NewExtractionRule")<br />新的擷取規則<br />![新的臨界值規則圖示](../../extensibility/ux-guidelines/media/vld_c_rule_newthresholdrule.png "VLD_C_Rule_NewThresholdRule")<br />新的臨界值規則<br />![新的驗證規則圖示](../../extensibility/ux-guidelines/media/vld_c_rule_newvalidationrule.png "VLD_C_Rule_NewValidationRule")<br />新的驗證規則 ||
 | **尺規**<br />量值指南 | ![尺規圖示](../../extensibility/ux-guidelines/media/vld_c_ruler.png "VLD_C_Ruler") | ![開啟測量模式圖示](../../extensibility/ux-guidelines/media/vld_c_ruler_measuremodeon.png "VLD_C_Ruler_MeasureModeOn")<br />開啟測量模式<br />![測量單位圖示](../../extensibility/ux-guidelines/media/vld_c_ruler_unitsofmeasure.png "VLD_C_Ruler_UnitsOfMeasure")<br />測量單位 ||
-  
-###  <a name="BKMK_VLDConceptsS"></a> S  
-  
+
+###  <a name="BKMK_VLDConceptsS"></a> S
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **儲存** | ![儲存圖示](../../extensibility/ux-guidelines/media/vld_c_save.png "VLD_C_Save") | ![全部儲存圖示](../../extensibility/ux-guidelines/media/vld_c_save_saveall.png "VLD_C_Save_SaveAll")<br />全部儲存<br />![儲存並關閉圖示](../../extensibility/ux-guidelines/media/vld_c_save_saveandclose.png "VLD_C_Save_SaveAndClose")<br />儲存並關閉<br />![儲存檔案對話方塊控制項圖示](../../extensibility/ux-guidelines/media/vld_c_save_savefiledialogcontrol.png "VLD_C_Save_SaveFileDialogControl")<br />儲存檔案對話方塊控制項 ||
@@ -322,8 +322,8 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **結構**<br />結構 | ![結構&#40;結構&#41;圖示](../../extensibility/ux-guidelines/media/vld_c_structure.png "VLD_C_Structure") |||
 | **樣式表** | ![樣式表圖示](../../extensibility/ux-guidelines/media/vld_c_stylesheet.png "VLD_C_StyleSheet") | ![新樣式表圖示](../../extensibility/ux-guidelines/media/vld_c_stylesheet_newstylesheet.png "VLD_C_StyleSheet_NewStyleSheet")<br />新樣式表<br />![附加樣式表圖示](../../extensibility/ux-guidelines/media/vld_c_stylesheet_attachstylesheet.png "VLD_C_StyleSheet_AttachStyleSheet")<br />附加樣式表 ||
 | **同步處理**<br />更新 | ![同步處理圖示](../../extensibility/ux-guidelines/media/vld_c_synchronize.png "VLD_C_Synchronize") | ![更新的 JavaScript 圖示](../../extensibility/ux-guidelines/media/vld_c_synchronize_updatedjavascript.png "VLD_C_Synchronize_UpdatedJavaScript")<br />已更新的 JavaScript<br />![資料庫更新項目圖示](../../extensibility/ux-guidelines/media/vld_c_synchronize_databaseupdateditems.png "VLD_C_Synchronize_DatabaseUpdatedItems")<br />更新項目資料庫。<br />![同步處理圖示](../../extensibility/ux-guidelines/media/vld_c_synchronize_sync.png "VLD_C_Synchronize_Sync")<br />同步 ||
-  
-###  <a name="BKMK_VLDConceptsT"></a> T  
+
+###  <a name="BKMK_VLDConceptsT"></a> T
 
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
@@ -338,18 +338,18 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **Timer** | ![計時器圖示](../../extensibility/ux-guidelines/media/vld_c_timer.png "VLD_C_Timer") | ![時間 [完成] 圖示](../../extensibility/ux-guidelines/media/vld_c_timer_timefinish.png "VLD_C_Timer_TimeFinish")<br />完成時間<br />![時間開始圖示](../../extensibility/ux-guidelines/media/vld_c_timer_timestart.png "VLD_C_Timer_TimeStart")<br />時間開始 ||
 | **Toggle** | ![切換圖示](../../extensibility/ux-guidelines/media/vld_c_toggle.png "VLD_C_Toggle") | ![切換所有中斷點圖示](../../extensibility/ux-guidelines/media/vld_c_toggle_toggleallbreakpoints.png "VLD_C_Toggle_ToggleAllBreakpoints")<br />切換所有中斷點<br />![切換圖示](../../extensibility/ux-guidelines/media/vld_c_toggle_toggle.png "VLD_C_Toggle_Toggle")<br />Toggle ||
 | **工具箱** | ![[工具箱] 圖示](../../extensibility/ux-guidelines/media/vld_c_toolbox.png "VLD_C_Toolbox") | ![Winform 工具箱控制項圖示](../../extensibility/ux-guidelines/media/vld_c_toolbox_winformtoolboxcontrol.png "VLD_C_Toolbox_WinformToolboxControl")<br />Winform 工具箱控制項<br />![WPF 工具箱控制項圖示](../../extensibility/ux-guidelines/media/vld_c_toolbox_wpftoolboxcontrol.png "VLD_C_Toolbox_WPFToolboxControl")<br />WPF 工具箱控制項 ||
-  
-###  <a name="BKMK_VLDConceptsU"></a> U  
-  
+
+###  <a name="BKMK_VLDConceptsU"></a> U
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **復原**<br />還原還原 | ![復原圖示](../../extensibility/ux-guidelines/media/vld_c_undo.png "VLD_C_Undo") | ![映像還原圖示](../../extensibility/ux-guidelines/media/vld_c_undo_imagerestore.png "VLD_C_Undo_ImageRestore")<br />映像還原<br />![復原簽出項目圖示](../../extensibility/ux-guidelines/media/vld_c_undo_undocheckoutitem.png "VLD_C_Undo_UndoCheckOutItem")<br />復原簽出項目 ||
 | **註冊**<br />上傳 | ![向上圖示](../../extensibility/ux-guidelines/media/vld_c_up.png "VLD_C_Up") | ![檔案上傳參數圖示](../../extensibility/ux-guidelines/media/vld_c_up_fileuploadparameter.png "VLD_C_Up_FileUploadParameter")<br />檔案上傳參數<br />![向上一層圖示](../../extensibility/ux-guidelines/media/vld_c_up_onelevelup.png "VLD_C_Up_OneLevelUp")<br />向上一層 ||
 | **User**<br />角色設定檔 | ![使用者圖示](../../extensibility/ux-guidelines/media/vld_c_user.png "VLD_C_User") | ![加入使用者圖示](../../extensibility/ux-guidelines/media/vld_c_user_adduser.png "VLD_C_User_AddUser")<br />新增使用者<br />![加入 web 使用者控制項圖示](../../extensibility/ux-guidelines/media/vld_c_user_addwebusercontrol.png "VLD_C_User_AddWebUserControl")<br />加入 web 使用者控制項<br />![SQL 使用者&#45;定義的類型圖示](../../extensibility/ux-guidelines/media/vld_c_user_sqluserdefinedtype.png "VLD_C_User_SQLUserDefinedType")<br />SQL 使用者定義型別 ||
 | **使用者介面**<br />UI | ![使用者介面圖示](../../extensibility/ux-guidelines/media/vld_c_userinterface.png "VLD_C_UserInterface") |||
-  
-###  <a name="BKMK_VLDConceptsV"></a> V  
-  
+
+###  <a name="BKMK_VLDConceptsV"></a> V
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **變數 （本機）** | ![變數&#40;本機&#41;圖示](../../extensibility/ux-guidelines/media/vld_c_variable_local.png "VLD_C_Variable_local") | ![新變數圖示](../../extensibility/ux-guidelines/media/vld_c_variable_local_newvariable.png "VLD_C_Variable_local_NewVariable")<br />新的變數<br />![變數&#40;本機&#41;圖示](../../extensibility/ux-guidelines/media/vld_c_variable_local_localvariable.png "VLD_C_Variable_local_LocalVariable")<br />本機變數<br />![SQL 變數圖示](../../extensibility/ux-guidelines/media/vld_c_variable_local_sqlvariable.png "VLD_C_Variable_local_SQLVariable")<br />SQL 變數 ||
@@ -358,33 +358,33 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **檢視**<br />稽核 | ![檢視&#40;稽核&#41;圖示](../../extensibility/ux-guidelines/media/vld_c_view_audit.png "VLD_C_View_audit") | ![資源檢視圖示](../../extensibility/ux-guidelines/media/vld_c_view_audit_resourceview.png "VLD_C_View_audit_ResourceView")<br />資源檢視<br />![ 檢視中瀏覽器圖示](../../extensibility/ux-guidelines/media/vld_c_view_audit_viewinbrowser.png "VLD_C_View_audit_ViewInBrowser")<br />在瀏覽器中檢視<br />![X&#45;光線檢視圖示](../../extensibility/ux-guidelines/media/vld_c_view_audit_xrayview.png "VLD_C_View_audit_XRayView")<br />雷射檢視 ||
 | **虛擬**<br />*與相同 「 Nonsubstantive (隱藏或範本) 」* | ![虛擬圖示](../../extensibility/ux-guidelines/media/vld_c_virtual.png "VLD_C_Virtual") | ![虛擬環境圖示](../../extensibility/ux-guidelines/media/vld_c_virtual_virtualenvironment.png "VLD_C_Virtual_VirtualEnvironment")<br />虛擬環境 ||
 | **可見** | ![可見圖示](../../extensibility/ux-guidelines/media/vld_c_visible.png "VLD_C_Visible") | ![隱匿或隱藏圖示](../../extensibility/ux-guidelines/media/vld_c_visible_cloakorhide.png "VLD_C_Visible_CloakOrHide")<br />隱匿或隱藏 ||
-  
-###  <a name="BKMK_VLDConceptsW"></a> W  
-  
+
+###  <a name="BKMK_VLDConceptsW"></a> W
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **監看式** | ![監看式 圖示](../../extensibility/ux-guidelines/media/vld_c_watch.png "VLD_C_Watch") | ![檔案系統監控程式圖示](../../extensibility/ux-guidelines/media/vld_c_watch_filesystemwatcher.png "VLD_C_Watch_FileSystemWatcher")<br />檔案系統監看員 ||
 | **Web** | ![Web 圖示](../../extensibility/ux-guidelines/media/vld_c_web.png "VLD_C_Web") | ![發行至網站圖示](../../extensibility/ux-guidelines/media/vld_c_web_publishtoweb.png "VLD_C_Web_PublishToWeb")<br />發佈至網路<br />![下載網站設定圖示](../../extensibility/ux-guidelines/media/vld_c_web_downloadwebsettings.png "VLD_C_Web_DownloadWebSettings")<br />下載 web 設定<br />![新的 [網站] 圖示](../../extensibility/ux-guidelines/media/vld_c_web_newwebsite.png "VLD_C_Web_NewWebsite")<br />新的網站 ||
 | **精靈** | ![精靈圖示](../../extensibility/ux-guidelines/media/vld_c_wizard.png "VLD_C_Wizard") | ![地圖圖層精靈圖示](../../extensibility/ux-guidelines/media/vld_c_wizard_maplayerwizard.png "VLD_C_Wizard_MapLayerWizard")<br />地圖圖層精靈<br />![MFC 類別精靈圖示](../../extensibility/ux-guidelines/media/vld_c_wizard_mfcclasswizard.png "VLD_C_Wizard_MFCCLassWizard")<br />MFC 類別精靈<br />![地圖精靈圖示](../../extensibility/ux-guidelines/media/vld_c_wizard_mapwizard.png "VLD_C_Wizard_MapWizard")<br />地圖精靈 ||
 | **工作項目** | ![工作項目圖示](../../extensibility/ux-guidelines/media/vld_c_workitem.png "VLD_C_WorkItem") | ![移至工作項目圖示](../../extensibility/ux-guidelines/media/vld_c_workitem_gotoworkitem.png "VLD_C_WorkItem_GoToWorkItem")<br />移至工作項目<br />![工作項目查詢圖示](../../extensibility/ux-guidelines/media/vld_c_workitem_workitemquery.png "VLD_C_WorkItem_WorkItemQuery")<br />工作項目查詢 ||
-  
-###  <a name="BKMK_VLDConceptsY"></a> Y  
-  
+
+###  <a name="BKMK_VLDConceptsY"></a> Y
+
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **Yield** | ![Yield 圖示](../../extensibility/ux-guidelines/media/vld_c_yield.png "VLD_C_Yield") |||
-  
-###  <a name="BKMK_VLDConceptsZ"></a> Z  
+
+###  <a name="BKMK_VLDConceptsZ"></a> Z
 
 | 概念 | 主要圖示 | 其他範例 | 注意 |
 | --- | --- | --- | --- |
 | **縮放** | ![顯示比例 圖示](../../extensibility/ux-guidelines/media/vld_c_zoom.png "VLD_C_Zoom") | ![放大圖示](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomin.png "VLD_C_Zoom_ZoomIn")<br />放大<br />![縮小圖示](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomout.png "VLD_C_Zoom_ZoomOut")<br />縮小 ||
-  
-##  <a name="BKMK_VLDProducts"></a> 產品與平台  
-  
+
+##  <a name="BKMK_VLDProducts"></a> 產品與平台
+
 | 概念 | 主要圖示 | 其他範例 |
 | --- | --- | --- |
-| **App Insights** | ![App Insights 圖示](../../extensibility/ux-guidelines/media/vld_p_appinsights.png "VLD_P_AppInsights") ||  
+| **App Insights** | ![App Insights 圖示](../../extensibility/ux-guidelines/media/vld_p_appinsights.png "VLD_P_AppInsights") ||
 | **ATL** | ![ATL 圖示](../../extensibility/ux-guidelines/media/vld_p_atl.png "VLD_P_ATL") | ![ATL active server 頁面元件圖示](../../extensibility/ux-guidelines/media/vld_p_atl_atlactiveserverpagecomponent.png "VLD_P_ATL_ATLActiveServerPageComponent")<br />ATL active server page 元件<br />![ATL 控制項類別圖示](../../extensibility/ux-guidelines/media/vld_p_atl_atlcontrolclass.png "VLD_P_ATL_ATLControlClass")<br />ATL 控制項類別<br />![ATL server 圖示](../../extensibility/ux-guidelines/media/vld_p_atl_atlserver.png "VLD_P_ATL_ATLServer")<br />ATL server |
 | **blend** | ![Blend 圖示](../../extensibility/ux-guidelines/media/vld_p_blend.png "VLD_P_Blend") | ![Blend SketchFlow 應用程式圖示](../../extensibility/ux-guidelines/media/vld_p_blend_blendsketchflowapplication.png "VLD_P_Blend_BlendSketchFlowApplication")<br />Blend SketchFlow 應用程式<br />![Blend Windows Phone 應用程式圖示](../../extensibility/ux-guidelines/media/vld_p_blend_blendwindowsphoneapplication.png "VLD_P_Blend_BlendWindowsPhoneApplication")<br />Blend Windows Phone 應用程式<br />![Blend Windows Phone 樞紐分析應用程式](../../extensibility/ux-guidelines/media/vld_p_blend_blendwindowsphonepivotapplication.png "VLD_P_Blend_BlendWindowsPhonePivotApplication")<br />Blend Windows Phone 樞紐分析應用程式 |
 | **CoffeeScript** | ![CoffeeScript 圖示](../../extensibility/ux-guidelines/media/vld_p_coffeescript.png "VLD_P_CoffeeScript") ||
@@ -395,9 +395,9 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **Microsoft Foundation Class**<br />MFC | ![MFC 圖示](../../extensibility/ux-guidelines/media/vld_p_mfc.png "VLD_P_MFC") | ![MFC ActiveX 控制項專案圖示](../../extensibility/ux-guidelines/media/vld_p_mfc_mfcactivexcontrolproject.png "VLD_P_MFC_MFCActiveXControlProject")<br />MFC ActiveX 控制項專案<br />![MFC 應用程式專案圖示](../../extensibility/ux-guidelines/media/vld_p_mfc_mfcapplicationproject.png "VLD_P_MFC_MFCApplicationProject")<br />MFC 應用程式專案<br />![C&#43; &#43; MFC DLL 專案圖示](../../extensibility/ux-guidelines/media/vld_p_mfc_cppmfcdllproject.png "VLD_P_MFC_CPPMFCDLLProject")<br />C + + MFC DLL 專案 |
 | **WCF** | ![WCF 圖示](../../extensibility/ux-guidelines/media/vld_p_wcf.png "VLD_P_WCF") | ![WCF data services 圖示](../../extensibility/ux-guidelines/media/vld_p_wcf_wcfdataservices.png "VLD_P_WCF_WCFDataServices")<br />WCF 資料服務<br />![WCF 專案 F&#35;圖示](../../extensibility/ux-guidelines/media/vld_p_wcf_wcfprojectfs.png "VLD_P_WCF_WCFProjectFS")<br />WCF 專案F#<br />![WCF 專案 VB 圖示](../../extensibility/ux-guidelines/media/vld_p_wcf_wcfprojectvb.png "VLD_P_WCF_WCFProjectVB")<br />WCF 專案 VB |
 | **WF** | ![WF 圖示](../../extensibility/ux-guidelines/media/vld_p_wf.png "VLD_P_WF") | ![WF 專案 C&#35;圖示](../../extensibility/ux-guidelines/media/vld_p_wf_wfprojectcs.png "VLD_P_WF_WFProjectCS")<br />WF 專案 C#<br />![WCF 專案 VB 圖示](../../extensibility/ux-guidelines/media/vld_p_wf_wfprojectvb.png "VLD_P_WF_WFProjectVB")<br />WF 專案 VB |
-  
-##  <a name="BKMK_VLDArrows"></a> 使用箭號的一般概念  
-  
+
+##  <a name="BKMK_VLDArrows"></a> 使用箭號的一般概念
+
 | 概念 | 主要圖示 | 其他範例 |
 | --- | --- | --- | --- |
 | **關聯線** | ![關聯線圖示](../../extensibility/ux-guidelines/media/vld_a_associationline.png "VLD_A_AssociationLine") ||
@@ -437,9 +437,9 @@ Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖
 | **Sync** | ![同步處理圖示](../../extensibility/ux-guidelines/media/vld_a_sync.png "VLD_A_Sync") | ![同步處理內容圖示](../../extensibility/ux-guidelines/media/vld_a_sync_synccontents.png "VLD_A_Sync_SyncContents")<br />同步處理內容 |
 | **復原**<br />還原還原 | ![復原圖示](../../extensibility/ux-guidelines/media/vld_a_undo.png "VLD_A_Undo") | ![映像還原圖示](../../extensibility/ux-guidelines/media/vld_a_undo_imagerestore.png "VLD_A_Undo_ImageRestore")<br />映像還原<br />![取消註解圖示](../../extensibility/ux-guidelines/media/vld_a_undo_uncomment.png "VLD_A_Undo_Uncomment")<br />取消註解 |
 | **註冊**<br />上傳 | ![向上圖示](../../extensibility/ux-guidelines/media/vld_a_up.png "VLD_A_Up") | ![檔案上傳參數圖示](../../extensibility/ux-guidelines/media/vld_a_up_fileuploadparameter.png "VLD_A_Up_FileUploadParameter")<br />檔案上傳參數<br />![向上一層圖示](../../extensibility/ux-guidelines/media/vld_a_up_onelevelup.png "VLD_A_Up_OneLevelUp")<br />向上一層 |
-  
-##  <a name="BKMK_VLDStatus"></a> 狀態指標  
-  
+
+##  <a name="BKMK_VLDStatus"></a> 狀態指標
+
 | 概念 | 主要圖示 | 其他範例 |
 | --- | --- | --- |
 | **動作狀態： 已暫停** | ![動作狀態： 暫停圖示](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused.png "VLD_S_ActionStatusPaused") | ![伺服器已暫停圖示](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused_serverpaused.png "VLD_S_ActionStatusPaused_ServerPaused")<br />伺服器已暫停 |
