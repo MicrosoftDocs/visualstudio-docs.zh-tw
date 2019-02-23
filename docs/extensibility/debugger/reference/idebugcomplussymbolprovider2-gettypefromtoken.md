@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::GetTypeFromToken | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::GetTypeFromToken
 - GetTypeFromToken
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 590e8705dec674b96a57b68934ab1bd5b75a6545
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 360ee8cb970dd4a1c181061e4ed99d9c6e06b452
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413458"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681930"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
 擷取給定其語彙基元型別。
@@ -42,17 +42,21 @@ int GetTypeFromToken(
 ```
 
 #### <a name="parameters"></a>參數
-`appDomain`  
-[in]應用程式定義域的識別項。
+`appDomain`
 
-`guidModule`  
-[in]模組的唯一識別碼。
+ [in]應用程式定義域的識別項。
 
-`tdToken`  
-[in]要擷取之型別的權杖。
+`guidModule`
 
-`ppField`  
-[out]傳回所表示的型別[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)。
+ [in]模組的唯一識別碼。
+
+`tdToken`
+
+ [in]要擷取之型別的權杖。
+
+`ppField`
+
+ [out]傳回所表示的型別[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -87,4 +91,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

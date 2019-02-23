@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_CODE_ADDRESS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION_CODE_ADDRESS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e90801f17690b48ba82e9fa80fba345e206c50b2
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: cce96e2edfcbc0dcb6dc4c6ff0e58617ad792ad8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315920"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697997"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
 描述在程式碼中的位址中斷點的位置。
@@ -34,17 +34,13 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 ```
 
 ## <a name="members"></a>成員
-`bstrContext`  
-中斷點的內容，通常是呼叫堆疊上所示的方法或函式的名稱。
+`bstrContext` 中斷點的內容，通常是呼叫堆疊上所示的方法或函式的名稱。
 
-`bstrModuleUrl`  
-包含中斷點之模組的 URL。
+`bstrModuleUrl` 包含中斷點之模組的 URL。
 
-`bstrFunction`  
-包含中斷點的函式的名稱。
+`bstrFunction` 包含中斷點的函式的名稱。
 
-`bstrAddress`  
-位址中斷點，以將它繫結的運算式評估工具會剖析[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件。
+`bstrAddress` 位址中斷點，以將它繫結的運算式評估工具會剖析[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件。
 
 ## <a name="remarks"></a>備註
 此結構是隸屬[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構的聯集的一部分。
@@ -57,6 +53,6 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
-[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
+- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
+- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

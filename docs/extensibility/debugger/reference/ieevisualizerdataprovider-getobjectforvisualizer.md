@@ -1,7 +1,7 @@
 ---
 title: IEEVisualizerDataProvider::GetObjectForVisualizer | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEEVisualizerDataProvider::GetObjectForVisualizer
 helpviewer_keywords:
@@ -12,41 +12,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f8be46a329c6bb62bf4fc039a418e98b577141e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f73b08d4a8a5380fb72cdd64db3865afafefda87
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027967"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706661"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
-這個方法會取得這個視覺化檢視表示的物件。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT GetObjectForVisualizer(  
-   IDebugObject** ppObject  
-);  
-```  
-  
-```csharp  
-int GetObjectForVisualizer(  
-   out IDebugObject ppObject  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `ppObject`  
- [out]這個視覺化檢視所要表示的物件  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- `GetObjectForVisualizer` 被允許傳回物件的快取的版本。 如果呼叫端想要確定物件是最新狀態，則它會呼叫[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)。  
-  
-## <a name="see-also"></a>另請參閱  
- [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
- [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)   
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+這個方法會取得這個視覺化檢視表示的物件。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT GetObjectForVisualizer(
+   IDebugObject** ppObject
+);
+```
+
+```csharp
+int GetObjectForVisualizer(
+   out IDebugObject ppObject
+);
+```
+
+#### <a name="parameters"></a>參數
+ `ppObject`
+
+ [out]這個視覺化檢視所要表示的物件
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+ `GetObjectForVisualizer` 被允許傳回物件的快取的版本。 如果呼叫端想要確定物件是最新狀態，則它會呼叫[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)。
+
+## <a name="see-also"></a>另請參閱
+- [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
+- [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramHost2::GetHostName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramHost2::GetHostName
 helpviewer_keywords:
@@ -12,45 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 040602eeca784ac6265403f615f9234864715949
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 45919c6c9fafceecca2cb53fa9c2c9f43b68e382
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923265"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707415"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
-取得標題、 易記名稱或此程式的裝載處理序的檔案名稱。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT GetHostName(   
-   DWORD dwType,  
-   BSTR* pbstrHostName  
-);  
-```  
-  
-```csharp  
-int GetHostName(   
-   uint dwType,  
-   out string pbstrHostName  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `dwType`  
- [in]值，以從[GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)列舉型別。  
-  
- `pbstrHostName`  
- [out]傳回要求的裝載處理序的名稱。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- 在典型的實作，這個方法，`dwType`參數會被忽略，並傳回主機電腦的易記名稱。 另一個可能的實作是將傳遞`dwType`參數來呼叫[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)方法來取得名稱。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)   
- [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)
+取得標題、 易記名稱或此程式的裝載處理序的檔案名稱。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT GetHostName( 
+   DWORD dwType,
+   BSTR* pbstrHostName
+);
+```
+
+```csharp
+int GetHostName( 
+   uint dwType,
+   out string pbstrHostName
+);
+```
+
+#### <a name="parameters"></a>參數
+ `dwType`
+
+ [in]值，以從[GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)列舉型別。
+
+ `pbstrHostName`
+
+ [out]傳回要求的裝載處理序的名稱。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+ 在典型的實作，這個方法，`dwType`參數會被忽略，並傳回主機電腦的易記名稱。 另一個可能的實作是將傳遞`dwType`參數來呼叫[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)方法來取得名稱。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)
+- [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)
