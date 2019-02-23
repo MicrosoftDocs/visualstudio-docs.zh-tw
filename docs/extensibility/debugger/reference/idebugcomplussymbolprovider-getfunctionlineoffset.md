@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetFunctionLineOffset |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetFunctionLineOffset
 - GetFunctionLineOffset
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ff64676ba99f16941044f18c8988a690bfc8a28
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 73bd3184396ec020e8337efe6397503263be5359
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412977"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706284"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
 擷取表示指定的行位移的函式內的位址。
@@ -40,14 +40,17 @@ int GetFunctionLineOffset(
 ```
 
 #### <a name="parameters"></a>參數
-`pAddress`  
-[in]表示函式的位址。
+`pAddress`
 
-`dwLine`  
-[in]位移從函式的開頭的行。
+ [in]表示函式的位址。
 
-`ppNewAddress`  
-[out]表示行位移函式的開頭的新位址。
+`dwLine`
+
+ [in]位移從函式的開頭的行。
+
+`ppNewAddress`
+
+ [out]表示行位移函式的開頭的新位址。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -101,4 +104,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

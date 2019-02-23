@@ -1,7 +1,7 @@
 ---
 title: BP_ERROR_TYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_ERROR_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a986191cb52ac76e06ab44fc9cf8faef72f0154
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2964c833abfa25b57678680f8b821f992cb31de8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317883"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689183"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 指定中斷點的錯誤類型。
@@ -58,38 +58,27 @@ public enum enum_BP_ERROR_TYPE {
 ```
 
 ## <a name="members"></a>成員
-BPET_NONE  
-不指定任何中斷點時發生錯誤。
+BPET_NONE 指定任何中斷點時發生錯誤。
 
-BPET_TYPE_WARNING  
-指定警告樣式中斷點時發生錯誤。
+BPET_TYPE_WARNING 指定警告樣式中斷點時發生錯誤。
 
-BPET_TYPE_ERROR  
-指定錯誤樣式中斷點時發生錯誤。
+BPET_TYPE_ERROR 指定錯誤樣式中斷點時發生錯誤。
 
-BPET_SEV_HIGH  
-指定高嚴重性中斷點時發生錯誤。
+BPET_SEV_HIGH 指定高嚴重性中斷點時發生錯誤。
 
-BPET_SEV_GENERAL  
-指定媒體嚴重性中斷點時發生錯誤。
+BPET_SEV_GENERAL 指定中度嚴重性中斷點時發生錯誤。
 
-BPET_SEV_LOW  
-指定低嚴重性中斷點時發生錯誤。
+BPET_SEV_LOW 指定低嚴重性中斷點時發生錯誤。
 
-BPET_TYPE_MASK  
-指定遮罩樣式中斷點時發生錯誤。
+BPET_TYPE_MASK 指定遮罩樣式中斷點時發生錯誤。
 
-BPET_SEV_MASK  
-指定嚴重性遮罩樣式中斷點時發生錯誤。
+BPET_SEV_MASK 指定嚴重性遮罩樣式中斷點時發生錯誤。
 
-BPET_GENERAL_WARNING  
-指定一般警告樣式中斷點時發生錯誤。
+BPET_GENERAL_WARNING 指定一般警告樣式中斷點時發生錯誤。
 
-BPET_GENERAL_ERROR  
-指定一般錯誤樣式中斷點時發生錯誤。
+BPET_GENERAL_ERROR 指定一般錯誤樣式中斷點時發生錯誤。
 
-BPET_ALL  
-指定所有中斷點錯誤類型。
+BPET_ALL 指定所有中斷點時發生錯誤類型。
 
 ## <a name="remarks"></a>備註
 這些值可能會合併的位元`OR`，並用於`dwType`隸屬[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)結構。 做為參數傳遞[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)方法。
@@ -104,6 +93,6 @@ BPET_ALL
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)  
-[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)
+- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+- [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

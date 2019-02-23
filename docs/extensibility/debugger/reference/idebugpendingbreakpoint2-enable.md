@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2::Enable | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2::Enable
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a06ed6e7d3c5f95e0de2ee88c63783924c2b015d
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 3d6498ffbad5fef4d387139b41cefc3d54468245
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450005"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720818"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 切換暫止中斷點的啟用的狀態。
@@ -38,8 +38,9 @@ int Enable(
 ```
 
 #### <a name="parameters"></a>參數
-`fEnable`  
-[in]設定為非零 (`TRUE`) 若要啟用暫止中斷點的行，或為零 (`FALSE`) 若要停用。
+`fEnable`
+
+ [in]設定為非零 (`TRUE`) 若要啟用暫止中斷點的行，或為零 (`FALSE`) 若要停用。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果中斷點已遭刪除。
@@ -83,4 +84,4 @@ HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

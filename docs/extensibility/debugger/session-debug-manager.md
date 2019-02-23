@@ -15,28 +15,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321b0a7c7eb2a30465098da39abc49cbc9261e11
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: edbb1510265307e1c9fe6c8a01cffc0115d879ac
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947201"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715852"
 ---
 # <a name="session-debug-manager"></a>工作階段偵錯管理員
-工作階段的偵錯管理員 (SDM) 管理任何偵錯引擎 (DE) 要進行偵錯跨任意數目的機器的任意數目的多個處理序中的程式的數目。 除了多工器的偵錯引擎，SDM 提供 ide 的偵錯工作階段的統一的檢視。  
-  
-## <a name="session-debug-manager-operation"></a>工作階段偵錯管理員作業  
- 工作階段的偵錯管理員 (SDM) 管理的裝置。 可以有多部電腦上同時執行的偵錯引擎。 若要進行多工處理 DEs，SDM 包裝 DEs 介面的數目，並公開這些屬性的單一介面與 IDE。  
-  
- 若要增加效能，某些介面不是多工。 相反地，它們會使用直接從德國，和呼叫這些介面並不會通過 SDM。 例如，搭配記憶體、 程式碼，以及文件內容的介面不是多工，因為它們參考特定的指示、 記憶體或在偵錯特定 DE 特定程式的文件。 沒有其他 DE 必須包含在該層級的通訊。  
-  
- 這不是所有內容的則為 true。 運算式評估內容介面的呼叫皆會透過在 SDM。 運算式評估期間包裝在 SDM [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)介面，它可讓 IDE 因為評估該運算式時，它可能會牽涉到多個正在偵錯程式可能會在相同處理序的 DEs在相同的執行緒上執行。  
-  
- 在 SDM 通常是做為委派機制，但它可能會做為廣播機制。 例如，運算式評估期間 SDM 做為廣播機制來通知所有 DEs，他們可以在指定的執行緒上執行程式碼。 同樣地，當 SDM 收到停止事件，它會廣播應該停止執行的程式。 呼叫步驟時，在 SDM 廣播的程式，他們可以繼續執行。 中斷點也會以每個裝置廣播。  
-  
- 在 SDM 不會追蹤目前的處理序、 執行緒或堆疊框架。 處理程序、 program 和執行緒資訊會傳送至特定的偵錯事件搭配 SDM 中。  
-  
-## <a name="see-also"></a>另請參閱  
- [偵錯引擎](../../extensibility/debugger/debug-engine.md)   
- [偵錯工具元件](../../extensibility/debugger/debugger-components.md)   
- [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)
+工作階段的偵錯管理員 (SDM) 管理任何偵錯引擎 (DE) 要進行偵錯跨任意數目的機器的任意數目的多個處理序中的程式的數目。 除了多工器的偵錯引擎，SDM 提供 ide 的偵錯工作階段的統一的檢視。
+
+## <a name="session-debug-manager-operation"></a>工作階段偵錯管理員作業
+ 工作階段的偵錯管理員 (SDM) 管理的裝置。 可以有多部電腦上同時執行的偵錯引擎。 若要進行多工處理 DEs，SDM 包裝 DEs 介面的數目，並公開這些屬性的單一介面與 IDE。
+
+ 若要增加效能，某些介面不是多工。 相反地，它們會使用直接從德國，和呼叫這些介面並不會通過 SDM。 例如，搭配記憶體、 程式碼，以及文件內容的介面不是多工，因為它們參考特定的指示、 記憶體或在偵錯特定 DE 特定程式的文件。 沒有其他 DE 必須包含在該層級的通訊。
+
+ 這不是所有內容的則為 true。 運算式評估內容介面的呼叫皆會透過在 SDM。 運算式評估期間包裝在 SDM [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)介面，它可讓 IDE 因為評估該運算式時，它可能會牽涉到多個正在偵錯程式可能會在相同處理序的 DEs在相同的執行緒上執行。
+
+ 在 SDM 通常是做為委派機制，但它可能會做為廣播機制。 例如，運算式評估期間 SDM 做為廣播機制來通知所有 DEs，他們可以在指定的執行緒上執行程式碼。 同樣地，當 SDM 收到停止事件，它會廣播應該停止執行的程式。 呼叫步驟時，在 SDM 廣播的程式，他們可以繼續執行。 中斷點也會以每個裝置廣播。
+
+ 在 SDM 不會追蹤目前的處理序、 執行緒或堆疊框架。 處理程序、 program 和執行緒資訊會傳送至特定的偵錯事件搭配 SDM 中。
+
+## <a name="see-also"></a>另請參閱
+- [偵錯引擎](../../extensibility/debugger/debug-engine.md)
+- [偵錯工具元件](../../extensibility/debugger/debugger-components.md)
+- [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)

@@ -12,19 +12,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf06084be7ea3d9f7dfa27a0d6dec49351ab5cd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+monikerRange: vs-2017
+ms.openlocfilehash: 5a5e8d752122432e27d7b6845f6d144856746387
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317753"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703236"
 ---
 # <a name="add-user-control-to-the-start-page"></a>將使用者控制項加入至 [入門] 頁面
+
 本逐步解說示範如何加入自訂的 [入門] 頁面的 DLL 參考。 此範例會將使用者控制項新增至方案、 建置使用者控制項，並再參考從 開始 頁面的 建置的組件 *.xaml*檔案。 新的索引標籤裝載使用者控制項，可當做基本網頁瀏覽器。
 
 您可以使用相同的程序，將可以從呼叫的任何組件 *.xaml*檔案。
 
 ## <a name="add-a-wpf-user-control-to-the-solution"></a>將 WPF 使用者控制項加入至方案
+
 首先，Windows Presentation Foundation (WPF) 使用者控制項加入起始頁的解決方案。
 
 1. 我們在建立建立使用起始頁[建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)。
@@ -36,6 +39,7 @@ ms.locfileid: "56317753"
 4. 將控制項`WebUserControl`，然後按一下  **確定**。
 
 ## <a name="implement-the-user-control"></a>實作使用者控制項
+
 若要實作 WPF 使用者控制項，建置在 XAML 中的使用者介面 (UI)，然後以 C# 或其他.NET 語言撰寫的程式碼後置事件。
 
 ### <a name="to-write-the-xaml-for-the-user-control"></a>撰寫使用者控制項的 XAML
@@ -132,7 +136,8 @@ ms.locfileid: "56317753"
 4. 建置方案。
 
 ## <a name="add-the-user-control-to-the-start-page"></a>將使用者控制項新增至 [入門] 頁面
- 若要讓此控制項的起始頁專案中，使用起始頁專案檔中，加入新的控制項程式庫的參考。 然後您可以將控制項加入 [開始] 頁面的 XAML 標記。
+
+若要讓此控制項的起始頁專案中，使用起始頁專案檔中，加入新的控制項程式庫的參考。 然後您可以將控制項加入 [開始] 頁面的 XAML 標記。
 
 1. 在 **方案總管 中**，在起始頁專案中，以滑鼠右鍵按一下**參考**，然後按一下 **加入參考**。
 
@@ -185,5 +190,6 @@ ms.locfileid: "56317753"
     應該會顯示您的自訂起始頁。 如果您想要變更任何檔案，您必須關閉實驗執行個體、 進行變更、 複製並貼變更的檔案，然後再重新開啟實驗的執行個體，以檢視所做的變更。
 
 ## <a name="see-also"></a>另請參閱
-[WPF 控制項](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)  
-[逐步解說：將自訂的 XAML 加入至 [入門] 頁面](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+
+- [WPF 控制項](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [逐步解說：將自訂的 XAML 加入至 [入門] 頁面](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
