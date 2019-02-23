@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionObject::CreateArrayObject | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugFunctionObject::CreateArrayObject
 helpviewer_keywords:
@@ -12,64 +12,70 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e179d3b96fd1aeb101ceb6df2bc0d9169c51cb9d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a7ee5d4a59442238b461361522b06087650547b3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006053"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685140"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
-建立的陣列物件。 此陣列可以包含任一個基本型別或物件執行個體的值。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT CreateArrayObject(   
-   OBJECT_TYPE    ot,  
-   IDebugField*   pClassField,  
-   DWORD          dwRank,  
-   DWORD          dwDims[],  
-   DWORD          dwLowBounds[],  
-   IDebugObject** ppObject  
-);  
-```  
-  
-```csharp  
-int CreateArrayObject(  
-   enum_OBJECT_TYPE ot,   
-   IDebugField      pClassField,   
-   uint             dwRank,   
-   uint[]           dwDims,   
-   uint[]           dwLowBounds,   
-   out IDebugObject ppObject  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `ot`  
- [in]指定的值從[OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md)列舉，指出新的陣列物件的類型。  
-  
- `pClassField`  
- [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示類別的物件，如果正在建立物件的陣列執行個體的值。 如果建立基本物件的陣列，這個參數為 null 值。  
-  
- `dwRank`  
- [in]陣序規範或陣列的維度數目。  
-  
- `dwDims`  
- [in]陣列的每個維度大小。  
-  
- `dwLowBounds`  
- [in]每個維度的來源 （通常是 0 或 1）。  
-  
- `ppObject`  
- [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，代表新建立的陣列。 這是實際[IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)物件。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- 呼叫這個方法來建立物件，表示函式表示的陣列參數[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+建立的陣列物件。 此陣列可以包含任一個基本型別或物件執行個體的值。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT CreateArrayObject( 
+   OBJECT_TYPE    ot,
+   IDebugField*   pClassField,
+   DWORD          dwRank,
+   DWORD          dwDims[],
+   DWORD          dwLowBounds[],
+   IDebugObject** ppObject
+);
+```
+
+```csharp
+int CreateArrayObject(
+   enum_OBJECT_TYPE ot,
+   IDebugField      pClassField,
+   uint             dwRank,
+   uint[]           dwDims,
+   uint[]           dwLowBounds,
+   out IDebugObject ppObject
+);
+```
+
+#### <a name="parameters"></a>參數
+ `ot`
+
+ [in]指定的值從[OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md)列舉，指出新的陣列物件的類型。
+
+ `pClassField`
+
+ [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示類別的物件，如果正在建立物件的陣列執行個體的值。 如果建立基本物件的陣列，這個參數為 null 值。
+
+ `dwRank`
+
+ [in]陣序規範或陣列的維度數目。
+
+ `dwDims`
+
+ [in]陣列的每個維度大小。
+
+ `dwLowBounds`
+
+ [in]每個維度的來源 （通常是 0 或 1）。
+
+ `ppObject`
+
+ [out]傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，代表新建立的陣列。 這是實際[IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)物件。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，會傳回 S_OK;否則，傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+ 呼叫這個方法來建立物件，表示函式表示的陣列參數[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

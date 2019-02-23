@@ -10,28 +10,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d689e2038563c0192a3f904b604a9a8d67256d1b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 19ad68ce060eca252befb033b3181fc9da7a28c2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038756"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706128"
 ---
 # <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger 欄位
-表示偵錯工具用來唯一識別這個產生器的延遲初始化的物件。  
-  
- **命名空間︰** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
-  
- **組件：** mscorlib （在 mscorlib.dll 中)  
-  
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。  
-  
-## <a name="syntax"></a>語法  
-  
-```csharp  
-.field private object m_objectIdForDebugger  
-```  
-  
-## <a name="see-also"></a>另請參閱  
- <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   
- [適用於.NET Framework 的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+表示偵錯工具用來唯一識別這個產生器的延遲初始化的物件。
+
+ **命名空間︰** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+
+ **組件：** mscorlib （在 mscorlib.dll 中)
+
+ 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。
+
+## <a name="syntax"></a>語法
+
+```csharp
+.field private object m_objectIdForDebugger
+```
+
+## <a name="see-also"></a>另請參閱
+- <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
+- [適用於.NET Framework 的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

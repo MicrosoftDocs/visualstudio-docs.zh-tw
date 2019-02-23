@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 047545f3b2ab3c08b84fbb4af95a46c44655f1cd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3c29c22ae4539d874ffc08c9ce5adf94ab33d404
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981286"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696970"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>支援 EditorConfig 語言服務
 
@@ -45,5 +45,5 @@ Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize<br/>Microsof
 
 ## <a name="see-also"></a>另請參閱
 
-[建立使用 EditorConfig 的可攜式的編輯器設定](../ide/create-portable-custom-editor-options.md)  
-[擴充的編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)
+- [建立使用 EditorConfig 的可攜式的編輯器設定](../ide/create-portable-custom-editor-options.md)
+- [擴充的編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)

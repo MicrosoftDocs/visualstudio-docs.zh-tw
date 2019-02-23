@@ -1,7 +1,7 @@
 ---
 title: IDebugArrayObject::GetRank |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugArrayObject::GetRank
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 333dca88fae59d4407e6be813b2241d070648648
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a0391030e77e5959fdc28c94f63e099e5c505d77
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923038"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683892"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
-取得陣列，也就是維度數目的順位。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT GetRank(   
-   DWORD* pdwRank  
-);  
-```  
-  
-```csharp  
-int GetRank(  
-   out uint pdwRank  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pdwRank`  
- [out]傳回順位。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- 使用[GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)方法來擷取每個維度的陣列物件的大小。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)
+取得陣列，也就是維度數目的順位。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT GetRank( 
+   DWORD* pdwRank
+);
+```
+
+```csharp
+int GetRank(
+   out uint pdwRank
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pdwRank`
+
+ [out]傳回順位。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，會傳回 S_OK;否則，傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+ 使用[GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)方法來擷取每個維度的陣列物件的大小。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

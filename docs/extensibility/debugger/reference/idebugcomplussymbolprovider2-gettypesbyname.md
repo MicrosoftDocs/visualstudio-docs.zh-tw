@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::GetTypesByName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetTypesByName
 - IDebugComPlusSymbolProvider2::GetTypesByName
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23b88cbb9bc2c87ef42ba729d7b98359ac3a2a1
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: be32b39df6da618e38dc9e62264412fce8c29e20
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413444"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678848"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 擷取指定其名稱的類型。
@@ -40,14 +40,17 @@ int GetTypesByName(
 ```
 
 #### <a name="parameters"></a>參數
-`pszClassName`  
-[in]型別的名稱。
+`pszClassName`
 
-`nameMatch`  
-[in]選取類型的相符項目，例如，區分大小寫。 值，以從[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉型別。
+ [in]型別的名稱。
 
-`ppEnum`  
-[out]列舉值，其中包含具有指定名稱的類型。
+`nameMatch`
+
+ [in]選取類型的相符項目，例如，區分大小寫。 值，以從[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉型別。
+
+`ppEnum`
+
+ [out]列舉值，其中包含具有指定名稱的類型。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -122,4 +125,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

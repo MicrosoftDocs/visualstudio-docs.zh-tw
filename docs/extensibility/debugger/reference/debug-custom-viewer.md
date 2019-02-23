@@ -1,7 +1,7 @@
 ---
 title: DEBUG_CUSTOM_VIEWER | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_CUSTOM_VIEWER
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe17c8747d5c678c14561a918ddd9d62bd658841
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f50f46376e21694bebeb4f13ab8ed8e658838bf2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315829"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680449"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
 識別自訂檢視器的結構，或輸入視覺化檢視。
@@ -47,23 +47,17 @@ public struct DEBUG_CUSTOM_VIEWER {
 ```
 
 ## <a name="members"></a>成員
-dwID  
-識別碼來區別多個檢視器或藉由將其中一個視覺化檢視`GUID`。
+dwID 來區別多個檢視器或藉由將其中一個視覺化檢視的識別碼`GUID`。
 
-bstrMenuName  
-文字會出現在下拉式選單中。
+bstrMenuName 會出現在下拉式選單的文字。
 
-bstrDescription  
-自訂檢視器或 （必須是 null 的值如果不使用） 的類型視覺化檢視的描述。
+（必須是 null 的值如果不使用） 的類型視覺化檢視的自訂檢視器 bstrDescription 的描述。
 
-guidLang  
-提供的運算式評估工具的語言。
+guidLang 提供的運算式評估工具的語言。
 
-guidVendor  
-提供的運算式評估工具的廠商。
+guidVendor 廠商提供的運算式評估工具。
 
-bstrMetric  
-計量在其下的自訂檢視器或類型視覺化檢視`CLSID`儲存。
+bstrMetric 計量在其下的自訂檢視器或類型視覺化檢視`CLSID`儲存。
 
 ## <a name="remarks"></a>備註
 此結構的清單由呼叫[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)方法 (和延伸[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)方法)。
@@ -76,6 +70,6 @@ bstrMetric
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)  
-[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)
+- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
+- [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)
