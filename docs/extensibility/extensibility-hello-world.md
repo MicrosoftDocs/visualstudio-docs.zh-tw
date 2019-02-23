@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c68ddea3f92c33056ba1dc98332755dfd3bb1b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f354b31e3979aacdb55aba566a646616ddc4108e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921034"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688338"
 ---
 # <a name="create-your-first-extension-hello-world"></a>建立您的第一個延伸模組：Hello World
 
@@ -50,7 +50,11 @@ ms.locfileid: "54921034"
 
 您現在應該會看到 [快速入門] 頁面，以及某些範例資源。
 
+::: moniker range="vs-2017"
+
 如果您需要保留本教學課程中，然後回到該刀鋒視窗，您可以找到新的 HelloWorld 專案**起始頁**中**最近**一節。
+
+::: moniker-end
 
 ## <a name="add-a-custom-command"></a>新增自訂命令
 

@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramPublisher2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramPublisher2
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 616966eea58ab0f458abdfe2dace936a251ec8e0
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 4a7547639fb2f7f3068dd7f738b0c0d10ea926f0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450291"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690301"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 此介面可讓偵錯引擎 (DE) 或自訂的連接埠提供者註冊進行偵錯的程式。
@@ -90,5 +90,5 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 ```
 
 ## <a name="see-also"></a>另請參閱
-[核心介面](../../../extensibility/debugger/reference/core-interfaces.md)  
-[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
+- [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

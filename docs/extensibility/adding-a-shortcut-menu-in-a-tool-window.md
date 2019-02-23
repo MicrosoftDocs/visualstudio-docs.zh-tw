@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bbaedce280924cbad81286992c9bdef586b4346
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316323"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681474"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>工具視窗中加入快顯功能表
 本逐步解說會置於工具視窗中的捷徑功能表。 快顯功能表是在使用者以滑鼠右鍵按一下按鈕、 文字方塊或視窗背景時出現。 快顯功能表上的命令行為與其他功能表或工具列上的命令相同。 若要支援快顯功能表，指定在 *.vsct*檔案，並顯示以回應滑鼠的按一下滑鼠右鍵。
@@ -277,5 +277,5 @@ ms.locfileid: "56316323"
 4. 按一下捷徑功能表上的色彩。 工具視窗背景色彩應該變更為選取的色彩。
 
 ## <a name="see-also"></a>另請參閱
-[命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)  
-[使用和提供服務](../extensibility/using-and-providing-services.md)
+- [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
+- [使用和提供服務](../extensibility/using-and-providing-services.md)

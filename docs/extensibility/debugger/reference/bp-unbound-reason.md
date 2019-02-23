@@ -1,7 +1,7 @@
 ---
 title: BP_UNBOUND_REASON | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_UNBOUND_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab701ef9886dddc0c2e32aa79092f22ad91d4630
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 65393f6e162cb15ded7a0e598e360c7ce90bb3cd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316063"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717659"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 提供中斷點已繫結的原因。
@@ -44,17 +44,13 @@ public enum enum_BP_UNBOUND_REASON {
 ```
 
 ## <a name="members"></a>成員
-BPUR_UNKNOWN  
-未知的原因。
+BPUR_UNKNOWN 原因不明。
 
-BPUR_CODE_UNLOADED  
-包含中斷點的程式碼已卸載。
+BPUR_CODE_UNLOADED 包含中斷點的程式碼已卸載。
 
-BPUR_BREAKPOINT_REBIND  
-中斷點具有已重新繫結至不同的位置中。 這可以在下班之後編輯並繼續作業時的中斷點會移動，或當中斷點繫結至已不再有效的路徑與檔案。
+BPUR_BREAKPOINT_REBIND 已重新中斷點繫結至不同的位置。 這可以在下班之後編輯並繼續作業時的中斷點會移動，或當中斷點繫結至已不再有效的路徑與檔案。
 
-BPUR_ BREAKPOINT_ERROR  
-中斷點會判斷它繫結之後會發生錯誤。 這是受管理的條件不再是有效的中斷點。
+BPUR_ BREAKPOINT_ERROR 中斷點會判斷它繫結之後會發生錯誤。 這是受管理的條件不再是有效的中斷點。
 
 ## <a name="remarks"></a>備註
 所傳回[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)方法。
@@ -67,5 +63,5 @@ BPUR_ BREAKPOINT_ERROR
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
+- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91db654370cb9a186484c0fd61688bcb25af4ba1
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316173"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710080"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>新增 最近使用的子功能表清單
 本逐步解說是根據在示範[子功能表加入至功能表](../extensibility/adding-a-submenu-to-a-menu.md)，並示範如何加入子功能表中的動態清單。 動態清單構成建立最近使用的 (MRU) 清單的基礎。
@@ -202,4 +202,4 @@ ms.locfileid: "56316173"
 4. 再次開啟子功能表。 請注意，**項目 3**現在位於清單頂端和其他項目已推送向下移動一個位置。 按一下 **項目 3**一次，請注意，仍會顯示訊息方塊**選取項目 3**，表示文字是否已正確地移到新位置，以及命令的標籤。
 
 ## <a name="see-also"></a>另請參閱
-[以動態方式加入功能表項目](../extensibility/dynamically-adding-menu-items.md)
+- [以動態方式加入功能表項目](../extensibility/dynamically-adding-menu-items.md)

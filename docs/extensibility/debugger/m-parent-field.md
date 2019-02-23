@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98464160de1d26854ceaee6a90247ce9793d7234
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 7de88b41615e2d42a13d8b5ee78b564409a79022
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227468"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714981"
 ---
 # <a name="mparent-field"></a>m_parent 欄位
 

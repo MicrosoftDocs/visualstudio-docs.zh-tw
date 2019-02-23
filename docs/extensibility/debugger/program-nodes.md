@@ -13,30 +13,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61e09651786870d892eaa85a01561ddb283785bf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 93c2d82ca683e7fb771ff3a443eb54746d4bde29
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921891"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722369"
 ---
 # <a name="program-nodes"></a>程式節點
-在偵錯工具架構中，*計劃節點*:  
-  
-- 是輕量型程式的描述。  
-  
-- 可以識別本身和它正在中執行的程序。 程式節點可以附加、 中斷連結，並描述建立的偵錯引擎 (DE)，如果有的話。  
-  
-- 由[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面，通常由 DE 或連接埠。 藉由呼叫程式的節點加入至連接埠[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)。 當程式節點加入至連接埠時，它會加入包含此程式節點所表示的程式處理序。  
-  
-  啟動偵錯工作階段的一段時間，可根據的偵錯封裝，實作後程式節點用來建立對應的程式。 當查詢其程式的處理程序，就會列舉程式，一個用於每個程式節點。  
-  
-  程式附加到之前，IDE 會要求程式的輕量級描述。 從 [程式] 節點，就可以取得此資訊。 在程式附加至時，IDE 會顯示更詳細的資訊，例如執行程式中的所有執行緒的清單。 這項資訊被取自程式本身。  
-  
-## <a name="see-also"></a>另請參閱  
- [程式](../../extensibility/debugger/programs.md)   
- [處理程序](../../extensibility/debugger/processes.md)   
- [偵錯引擎](../../extensibility/debugger/debug-engine.md)   
- [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)   
- [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)   
- [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)
+在偵錯工具架構中，*計劃節點*:
+
+- 是輕量型程式的描述。
+
+- 可以識別本身和它正在中執行的程序。 程式節點可以附加、 中斷連結，並描述建立的偵錯引擎 (DE)，如果有的話。
+
+- 由[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面，通常由 DE 或連接埠。 藉由呼叫程式的節點加入至連接埠[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)。 當程式節點加入至連接埠時，它會加入包含此程式節點所表示的程式處理序。
+
+  啟動偵錯工作階段的一段時間，可根據的偵錯封裝，實作後程式節點用來建立對應的程式。 當查詢其程式的處理程序，就會列舉程式，一個用於每個程式節點。
+
+  程式附加到之前，IDE 會要求程式的輕量級描述。 從 [程式] 節點，就可以取得此資訊。 在程式附加至時，IDE 會顯示更詳細的資訊，例如執行程式中的所有執行緒的清單。 這項資訊被取自程式本身。
+
+## <a name="see-also"></a>另請參閱
+- [程式](../../extensibility/debugger/programs.md)
+- [處理序](../../extensibility/debugger/processes.md)
+- [偵錯引擎](../../extensibility/debugger/debug-engine.md)
+- [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)
+- [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

@@ -13,79 +13,77 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74a0d12febf6c8529739463e0122cddf8c75379a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a7a70b59d08da09f6a06c3d5c38d330def11b86
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025929"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721390"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>隱藏的項目 （Visual Studio 範本）
-指定是否在該範本會出現**新的專案**或**加入新項目** 對話方塊。  
-  
- \<VSTemplate>  
- \<TemplateData>  
- \<隱藏 >  
-  
-## <a name="syntax"></a>語法  
-  
-```  
-<Hidden> true/false </Hidden>  
-```  
-  
-## <a name="attributes-and-elements"></a>屬性和元素  
- 下列章節說明屬性、子元素和父元素。  
-  
-### <a name="attributes"></a>屬性  
- 無。  
-  
-### <a name="child-elements"></a>子元素  
- 無。  
-  
-### <a name="parent-elements"></a>父元素  
-  
-|元素|描述|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
-  
-## <a name="text-value"></a>文字值  
- 需要文字值。  
-  
- 文字必須是`true`或`false`，這表示範本是否會出現在**新增專案**或是**加入新項目**對話方塊。  
-  
-## <a name="remarks"></a>備註  
- `Hidden` 是選擇性項目。  
-  
- 如果不指定的任何其他子項目`TemplateData`所需的項目。  
-  
-## <a name="example"></a>範例  
- 下列範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範本的中繼資料。  
-  
-```  
-<VSTemplate Type="Project" Version="3.0.0"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>My template</Name>  
-        <Description>A basic template</Description>  
-        <Icon>TemplateIcon.ico</Icon>  
-        <ProjectType>CSharp</ProjectType>  
-        <Hidden>true</Hidden>  
-    </TemplateData>  
-    <TemplateContent>  
-        <Project File="MyTemplate.csproj">  
-            <ProjectItem>Form1.cs<ProjectItem>  
-            <ProjectItem>Form1.Designer.cs</ProjectItem>  
-            <ProjectItem>Program.cs</ProjectItem>  
-            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>  
-            <ProjectItem>Properties\Resources.resx</ProjectItem>  
-            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>  
-            <ProjectItem>Properties\Settings.settings</ProjectItem>  
-            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>  
-        </Project>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立專案與項目範本](../ide/creating-project-and-item-templates.md)
+指定是否在該範本會出現**新的專案**或**加入新項目** 對話方塊。
+
+ \<VSTemplate> \<TemplateData> \<Hidden>
+
+## <a name="syntax"></a>語法
+
+```
+<Hidden> true/false </Hidden>
+```
+
+## <a name="attributes-and-elements"></a>屬性和元素
+ 下列章節說明屬性、子元素和父元素。
+
+### <a name="attributes"></a>屬性
+ 無。
+
+### <a name="child-elements"></a>子元素
+ 無。
+
+### <a name="parent-elements"></a>父元素
+
+|元素|描述|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|
+
+## <a name="text-value"></a>文字值
+ 需要文字值。
+
+ 文字必須是`true`或`false`，這表示範本是否會出現在**新增專案**或是**加入新項目**對話方塊。
+
+## <a name="remarks"></a>備註
+ `Hidden` 是選擇性項目。
+
+ 如果不指定的任何其他子項目`TemplateData`所需的項目。
+
+## <a name="example"></a>範例
+ 下列範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範本的中繼資料。
+
+```
+<VSTemplate Type="Project" Version="3.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>My template</Name>
+        <Description>A basic template</Description>
+        <Icon>TemplateIcon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <Hidden>true</Hidden>
+    </TemplateData>
+    <TemplateContent>
+        <Project File="MyTemplate.csproj">
+            <ProjectItem>Form1.cs<ProjectItem>
+            <ProjectItem>Form1.Designer.cs</ProjectItem>
+            <ProjectItem>Program.cs</ProjectItem>
+            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>
+            <ProjectItem>Properties\Resources.resx</ProjectItem>
+            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>
+            <ProjectItem>Properties\Settings.settings</ProjectItem>
+            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>另請參閱
+- [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
+- [建立專案與項目範本](../ide/creating-project-and-item-templates.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProvider | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugSymbolProvider
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 280494149225cb90ff60d4e3ac893061278f9641
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: db4e5592fac73f629aba69fa23d1a7163c794875
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450551"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693434"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 這個介面會表示提供符號和類型，將其傳回做為欄位的符號提供者。
@@ -104,4 +104,4 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
 ```
 
 ## <a name="see-also"></a>另請參閱
-[符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

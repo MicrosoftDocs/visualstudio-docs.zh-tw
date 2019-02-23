@@ -18,28 +18,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89114689f933f3b09aac1d7ffcec109e81f631ad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd95fe31949b51c7167337ad21c51251e84a19a7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970548"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705527"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>適用於 VSPackage 開發的 Devenv 命令列參數
 
-Visual Studio 可讓開發人員自動化工作，從命令列執行時`devenv.exe`，啟動 Visual Studio IDE 的檔案。  
+Visual Studio 可讓開發人員自動化工作，從命令列執行時`devenv.exe`，啟動 Visual Studio IDE 的檔案。
 
- 工作包括：  
+ 工作包括：
 
-- 在部署應用程式從 IDE 外的預先設計好組態。  
+- 在部署應用程式從 IDE 外的預先設計好組態。
 
-- 自動建置專案使用預設組建設定，或偵錯組態。  
+- 自動建置專案使用預設組建設定，或偵錯組態。
 
-- 在 IDE 外部，全部從載入在特定組態中，IDE。 您也可以自訂啟動 IDE。  
+- 在 IDE 外部，全部從載入在特定組態中，IDE。 您也可以自訂啟動 IDE。
 
 ## <a name="guidelines-for-switches"></a>參數的指導方針
 
-Visual Studio 文件說明了使用者層級`devenv`命令列參數。 如需詳細資訊，請參閱 < [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)。 `devenv`工具也支援搭配 VSPackage 開發、 部署和偵錯時非常實用的其他命令列參數。  
+Visual Studio 文件說明了使用者層級`devenv`命令列參數。 如需詳細資訊，請參閱 < [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)。 `devenv`工具也支援搭配 VSPackage 開發、 部署和偵錯時非常實用的其他命令列參數。
 
 | 命令列參數 | 描述 |
 |---------------------| - |

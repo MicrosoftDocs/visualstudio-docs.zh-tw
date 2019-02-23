@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6446df8f1f3334cac9ebb6e0501a42b3da408455
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317077"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691341"
 ---
 # <a name="change-the-appearance-of-a-command"></a>變更命令的外觀
 您可以變更命令的外觀，至您的使用者提供意見反應。 比方說，您可能會想看起來不同，無法使用時的命令。 您可以讓命令，可以或無法使用，隱藏或顯示，或核取或取消核取功能表上。
@@ -85,7 +85,7 @@ ms.locfileid: "56317077"
 8. 在 **工具**您現在應該會看到的功能表**新文字**。 按一下 **新的文字**。 此命令應該現在會變成灰色。
 
 ## <a name="see-also"></a>另請參閱
-[命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
-[擴充功能表和命令](../extensibility/extending-menus-and-commands.md)  
-[Visual Studio 命令表 (。Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)
+- [Visual Studio 命令表 (。Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

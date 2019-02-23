@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugExpressionEvaluator
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b54b8d4ab6c30bcefe99928409680ed5fa08cb0
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: f74579ba14a99cde35bb12b2a4d320c73802ad75
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449849"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706570"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
@@ -103,8 +103,8 @@ IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolPro
 ```
 
 ## <a name="see-also"></a>另請參閱
-[運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)  
-[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)  
-[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)  
-[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)  
-[適用於偵錯的 SDK 協助程式](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+- [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
+- [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
+- [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)
+- [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
+- [適用於偵錯的 SDK 協助程式](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57b711d91e50d0aecb579f7d02afe2123e365425
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316583"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687883"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>建立 Windows Forms 工具箱控制項
 Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工具 (VS SDK) 可讓您建立的控制項，會自動新增至**工具箱**安裝擴充功能時。 本主題說明如何使用範本來建立簡單的計數器控制項，您就可以散發給其他使用者。
@@ -209,7 +209,7 @@ Windows Forms 工具箱控制項範本建立未定義的使用者控制項，並
 當您建置**工具箱**控制項，Visual Studio 會建立名為的檔案*ProjectName.vsix*您專案的 \bin\debug\ 資料夾中。 您可以將控制項部署上傳 *.vsix*檔案到網路或網站。 當使用者在開啟 *.vsix*是安裝檔案，該控制項，並將其加入 Visual Studio**工具箱**使用者的電腦上。 或者，您可以上傳 *.vsix*的檔案[Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) ，讓使用者可以瀏覽來尋找它**工具** >  **延伸模組和更新**對話方塊。
 
 ## <a name="see-also"></a>另請參閱
-[擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)  
-[建立 WPF 工具箱控制項](../extensibility/creating-a-wpf-toolbox-control.md)  
-[擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Windows Form 控制項開發的基本概念](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)
+- [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
+- [建立 WPF 工具箱控制項](../extensibility/creating-a-wpf-toolbox-control.md)
+- [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Windows Form 控制項開發的基本概念](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)

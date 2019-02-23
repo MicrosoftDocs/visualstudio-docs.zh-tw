@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e33b0eba41b2faa7070452444779b14b85bf72f4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e1704a33abddada9a439786b408a8bc7bceeba0d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315907"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711224"
 ---
 # <a name="evaluate-a-watch-expression"></a>評估監看式運算式
 > [!IMPORTANT]
@@ -83,7 +83,6 @@ namespace EEMC
 這是實作`IDebugParsedExpression::EvaluateSync`unmanaged 程式碼中。 Helper 函式`Evaluate`剖析並評估的運算式，傳回`VARIANT`保留所產生的值。 Helper 函式`VariantValueToProperty`配套`VARIANT`到`CValueProperty`物件。
 
 ```cpp
-[C++]
 STDMETHODIMP CParsedExpression::EvaluateSync(
     in  DWORD                 evalFlags,
     in  DWORD                 dwTimeout,
@@ -173,5 +172,5 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 ```
 
 ## <a name="see-also"></a>另請參閱
-[評估監看式視窗運算式](../../extensibility/debugger/evaluating-a-watch-window-expression.md)  
-[運算式評估的範例實作](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)
+- [評估監看式視窗運算式](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
+- [運算式評估的範例實作](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)
