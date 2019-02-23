@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2::GetThreadId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugThread2::GetThreadId
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c77e2d5de5105b964beea0ad880358b59e10fab7
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 85dd439729763b594076e4fab076a213c10f5a46
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450110"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702079"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 取得系統執行緒識別碼。
@@ -37,7 +37,9 @@ int GetThreadId (
 ```
 
 #### <a name="parameters"></a>參數
-`pdwThreadId` [out]傳回系統執行緒識別碼。
+`pdwThreadId`
+
+ [out]傳回系統執行緒識別碼。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -56,4 +58,4 @@ HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

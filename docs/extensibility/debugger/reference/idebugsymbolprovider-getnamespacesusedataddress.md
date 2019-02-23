@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugSymbolProvider::GetNamespacesUsedAtAddress
 helpviewer_keywords:
@@ -12,45 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13e7aef1465ffe6e37a82fc3c685fef28bbf61e8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d016dd475effa099ac4471e8bc9716f1965b569f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978304"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705199"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
-這個方法會建立偵錯位址相關聯的命名空間的列舉值。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT GetNamespacesUsedAtAddress(   
-   IDebugAddress*     pAddress,  
-   IEnumDebugFields** ppEnum  
-);  
-```  
-  
-```csharp  
-int GetNamespacesUsedAtAddress(  
-   IDebugAddress        pAddress,  
-   out IEnumDebugFields ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pAddress`  
- [in]偵錯位址。  
-  
- `ppEnum`  
- [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)命名空間的列舉值。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- 可能有數個與指定的偵錯位址，例如，相關聯的命名空間巢狀命名空間或多個`using`陳述式。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
+這個方法會建立偵錯位址相關聯的命名空間的列舉值。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT GetNamespacesUsedAtAddress( 
+   IDebugAddress*     pAddress,
+   IEnumDebugFields** ppEnum
+);
+```
+
+```csharp
+int GetNamespacesUsedAtAddress(
+   IDebugAddress        pAddress,
+   out IEnumDebugFields ppEnum
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pAddress`
+
+ [in]偵錯位址。
+
+ `ppEnum`
+
+ [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)命名空間的列舉值。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+ 可能有數個與指定的偵錯位址，例如，相關聯的命名空間巢狀命名空間或多個`using`陳述式。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
+- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

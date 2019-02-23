@@ -1,7 +1,7 @@
 ---
 title: IDebugSettingsCallback2::GetMetricString | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricString
 - GetMetricString
@@ -11,51 +11,55 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45f88191dc626bfccccb7fad7ce1cadd398f47b4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c92709afbc5341a7507c89dc948daeae1f798b4e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959836"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705803"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
-擷取值字串，指定其名稱的度量。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT GetMetricString(  
-    LPCWSTR pszType,  
-    REFGUID guidSection,  
-    LPCWSTR pszMetric,  
-    BSTR*   pbstrValue  
-);  
-```  
-  
-```csharp  
-private int GetMetricString(  
-    string     pszType,  
-    ref Guid   guidSection,  
-    string     pszMetric,  
-    out string pbstrValue  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pszType`  
- [in]度量的類型。  
-  
- `guidSection`  
- [in]區段的唯一識別碼。  
-  
- `pszMetric`  
- [in]計量名稱。  
-  
- `pbstrValue`  
- [out]傳回度量的值字串。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)
+擷取值字串，指定其名稱的度量。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT GetMetricString(
+    LPCWSTR pszType,
+    REFGUID guidSection,
+    LPCWSTR pszMetric,
+    BSTR*   pbstrValue
+);
+```
+
+```csharp
+private int GetMetricString(
+    string     pszType,
+    ref Guid   guidSection,
+    string     pszMetric,
+    out string pbstrValue
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pszType`
+
+ [in]度量的類型。
+
+ `guidSection`
+
+ [in]區段的唯一識別碼。
+
+ `pszMetric`
+
+ [in]計量名稱。
+
+ `pbstrValue`
+
+ [out]傳回度量的值字串。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)
