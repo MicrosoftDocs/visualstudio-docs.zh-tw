@@ -1,7 +1,7 @@
 ---
 title: EVALFLAGS90 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - EVALFLAGS90 enumeration
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93345609a7dadc240aa33ce2a1751f6d04ab4384
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 73673d0b0ca7ccb640a3fab2043bc35b26657a9b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315660"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720298"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 列舉有效的控制運算式評估的旗標值。 這個列舉型別會擴充[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉型別。
@@ -62,35 +62,25 @@ public enum enum_EVALFLAGS90
 ```
 
 #### <a name="parameters"></a>參數
-EVAL90_RETURNVALUE  
-指定的評估傳回的值，如果有的話。
+EVAL90_RETURNVALUE 指定的評估傳回的值，如果有的話。
 
-EVAL90_NOSIDEEFFECTS  
-指定不允許副作用。
+EVAL90_NOSIDEEFFECTS 指定不允許副作用。
 
-EVAL90_ALLOWBPS  
-指定中斷點停止。
+EVAL90_ALLOWBPS 指定中斷點上停止。
 
-EVAL90_ALLOWERRORREPORT  
-指定允許主應用程式報告該錯誤。 主要用於在 Internet Explorer 中的指令碼中的運算式評估。
+EVAL90_ALLOWERRORREPORT 指定允許主應用程式報告該錯誤。 主要用於在 Internet Explorer 中的指令碼中的運算式評估。
 
-EVAL90_FUNCTION_AS_ADDRESS  
-要評估做為位址，而不是叫用函式的強制函式。
+要做為位址，而不是叫用函式評估 EVAL90_FUNCTION_AS_ADDRESS 強制函式。
 
-EVAL90_NOFUNCEVAL  
-函式可防止進行評估。 例如，請考慮`int`運算式中的語彙基元`myExpression(int) + 10`。 為位址，但不是能作為值，就可以正確評估此函式。
+正在評估 EVAL90_NOFUNCEVAL 可避免的函式。 例如，請考慮`int`運算式中的語彙基元`myExpression(int) + 10`。 為位址，但不是能作為值，就可以正確評估此函式。
 
-EVAL90_NOEVENTS  
-旗標，指出工作階段的偵錯管理員 (SDM) 或 ide，不應該傳送之運算式評估期間發生的事件。
+EVAL90_NOEVENTS 旗標，表示工作階段的偵錯管理員 (SDM) 或 ide，不應該傳送之運算式評估期間發生的事件。
 
-EVAL90_DESIGN_TIME_EXPR_EVAL  
-可讓設計階段運算式評估。
+EVAL90_DESIGN_TIME_EXPR_EVAL 可讓設計階段運算式評估。
 
-EVAL90_ALLOW_IMPLICIT_VARS  
-允許隱含變數的建立。
+EVAL90_ALLOW_IMPLICIT_VARS 允許隱含變數建立。
 
-EVAL90_FORCE_EVALUATION_NOW  
-若要立即發生強制評估。 服務要求，例如使用者要求時，這非常有用。
+若要立即發生 EVAL90_FORCE_EVALUATION_NOW 強制評估。 服務要求，例如使用者要求時，這非常有用。
 
 ## <a name="requirements"></a>需求
 標頭：Msdbg90.h
@@ -100,4 +90,4 @@ EVAL90_FORCE_EVALUATION_NOW
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

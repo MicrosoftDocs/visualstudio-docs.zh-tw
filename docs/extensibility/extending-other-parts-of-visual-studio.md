@@ -10,31 +10,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e742e2432596b4b31ecfcfc666a913076050cf06
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 34771bd005b298f73bcc2ee13e2d4cf9a123f1a9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927836"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683044"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>擴充 Visual Studio 的其他部分
-有許多的多個組件，您可以擴充的 Visual Studio 使用者介面。 這裡我們將示範一些。  
-  
-## <a name="create-a-vspackage"></a>建立 VSPackage  
- Visual Studio 擴充性的基本建置組塊是 Vspackage。  了解如何加入 VSPackage:[使用 VSPackage 建立擴充功能](../extensibility/creating-an-extension-with-a-vspackage.md)  
-  
-## <a name="extend-the-toolbox"></a>擴充工具箱  
- 了解如何將新控制項和其他項目新增至 [工具箱] 中，以及如何使用 [工具箱] 的功能：  
-  
--   [建立 WPF 工具箱控制項](../extensibility/creating-a-wpf-toolbox-control.md)  
-  
--   [建立 Windows Forms 工具箱控制項](../extensibility/creating-a-windows-forms-toolbox-control.md)  
-  
-## <a name="extend-the-status-bar"></a>擴充狀態列  
- 了解如何讀取和寫入狀態列的進度列，以及如何提供動畫和其他 UI:[擴充狀態列](../extensibility/extending-the-status-bar.md)。  
-  
-## <a name="create-custom-start-pages"></a>建立自訂起始頁  
- 了解如何讓您自己的起始頁，從頭開始或可下載的開始頁面範例：[建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)。  
-  
-## <a name="write-to-the-activity-log"></a>寫入活動記錄檔  
- 了解如何寫入活動記錄檔：[如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。
+
+有許多的多個組件，您可以擴充的 Visual Studio 使用者介面。 這裡我們將示範一些。
+
+## <a name="create-a-vspackage"></a>建立 VSPackage
+
+Visual Studio 擴充性的基本建置組塊是 Vspackage。  了解如何加入 VSPackage:[使用 VSPackage 建立擴充功能](../extensibility/creating-an-extension-with-a-vspackage.md)
+
+## <a name="extend-the-toolbox"></a>擴充工具箱
+
+了解如何將新控制項和其他項目新增至 [工具箱] 中，以及如何使用 [工具箱] 的功能：
+
+-   [建立 WPF 工具箱控制項](../extensibility/creating-a-wpf-toolbox-control.md)
+
+-   [建立 Windows Forms 工具箱控制項](../extensibility/creating-a-windows-forms-toolbox-control.md)
+
+## <a name="extend-the-status-bar"></a>擴充狀態列
+
+了解如何讀取和寫入狀態列的進度列，以及如何提供動畫和其他 UI:[擴充狀態列](../extensibility/extending-the-status-bar.md)。
+
+::: moniker range="vs-2017"
+
+## <a name="create-custom-start-pages"></a>建立自訂起始頁
+
+了解如何讓您自己的起始頁，從頭開始或可下載的開始頁面範例：[建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)。
+
+::: moniker-end
+
+## <a name="write-to-the-activity-log"></a>寫入活動記錄檔
+
+了解如何寫入活動記錄檔：[如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。
