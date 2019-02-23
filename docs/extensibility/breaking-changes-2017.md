@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fac02f024813e3ca747f498025e113ba4e7a59bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318741"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680468"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>在 Visual Studio 2017 擴充性的變更
 
@@ -103,6 +103,6 @@ VSIX 格式所做變更包括：
 ### <a name="reacting-to-this-breaking-change"></a>回應這項重大變更
 
 * 外部程式碼應該轉換成的 COM 元件，也使用免註冊啟用。
-* 外部元件可以找到 Visual Studio 位置[只要遵循這裡的指引](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)。
+* 外部元件可以找到 Visual Studio 位置[只要遵循這裡的指引](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup)。
 * 我們建議使用的外部元件[外部 Settings Manager](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager)而不是直接向 Visual Studio 登錄機碼的讀取/寫入。
 * 請檢查您的延伸模組所使用的元件是否已實作註冊的另一種技術。 比方說，可能可以利用新的偵錯工具擴充功能[msvsmon JSON 檔案 COM 註冊](migrate-debugger-COM-registration.md)。

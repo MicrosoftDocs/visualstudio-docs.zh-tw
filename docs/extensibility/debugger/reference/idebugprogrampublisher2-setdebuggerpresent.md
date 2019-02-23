@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramPublisher2::SetDebuggerPresent | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramPublisher2::SetDebuggerPresent
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de18d9d30bcddd8692535bff2d8f7723d79dba4b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: faa7263c3f5fa86a77c94271dec1b429d2f00543
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921852"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713460"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
-告知偵錯工具存在並在執行計劃發行者。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT SetDebuggerPresent(  
-   BOOL fDebuggerPresent  
-);  
-```  
-  
-```csharp  
-int SetDebuggerPresent(  
-   int fDebuggerPresent  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `fDebuggerPresent`  
- [in]非零 (`TRUE`) 如果偵錯工具，則為零 (`FALSE`) 如果不是。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- 偵錯工具的存在與否會反映在從傳回的資料[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法： 那里傳回值是設定或清除先前呼叫`SetDebuggerPresent`方法。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
+告知偵錯工具存在並在執行計劃發行者。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT SetDebuggerPresent(
+   BOOL fDebuggerPresent
+);
+```
+
+```csharp
+int SetDebuggerPresent(
+   int fDebuggerPresent
+);
+```
+
+#### <a name="parameters"></a>參數
+ `fDebuggerPresent`
+
+ [in]非零 (`TRUE`) 如果偵錯工具，則為零 (`FALSE`) 如果不是。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+ 偵錯工具的存在與否會反映在從傳回的資料[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法： 那里傳回值是設定或清除先前呼叫`SetDebuggerPresent`方法。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

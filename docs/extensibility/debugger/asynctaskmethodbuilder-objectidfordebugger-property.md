@@ -10,28 +10,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79f94eae5f2aa17b258a317a6031e7e72dede2c5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1178abab23119e5e6714a9d6c91bfe704f1084e0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014584"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716866"
 ---
 # <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>AsyncTaskMethodBuilder.ObjectIdForDebugger 屬性
-取得物件，可用來唯一識別這個產生器偵錯工具。  
-  
- **命名空間︰** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
-  
- **組件：** mscorlib （在 mscorlib.dll 中)  
-  
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。  
-  
-## <a name="syntax"></a>語法  
-  
-```csharp  
-private object ObjectIdForDebugger  
-```  
-  
-## <a name="see-also"></a>另請參閱  
- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>   
- [適用於.NET Framework 的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+取得物件，可用來唯一識別這個產生器偵錯工具。
+
+ **命名空間︰** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+
+ **組件：** mscorlib （在 mscorlib.dll 中)
+
+ 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。
+
+## <a name="syntax"></a>語法
+
+```csharp
+private object ObjectIdForDebugger
+```
+
+## <a name="see-also"></a>另請參閱
+- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
+- [適用於.NET Framework 的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

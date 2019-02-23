@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointResolution2::GetBreakpointType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBreakpointResolution2::GetBreakpointType
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91d1321e99705bd4173edacb13c99223c10eb2d1
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 2ab8bc16da26b1c47ecdda79db361e24b68e2e82
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413510"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709131"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 取得由這個解決方案的中斷點類型。
@@ -37,8 +37,9 @@ int GetBreakpointType( 
 ```
 
 #### <a name="parameters"></a>參數
-`pBPType`  
-[out]傳回值，以從[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)列舉，指定此中斷點的類型。
+`pBPType`
+
+ [out]傳回值，以從[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)列舉，指定此中斷點的類型。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則會傳回錯誤碼。 傳回 E_FAIL`bpResLocation`欄位相關聯[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構無效。
@@ -81,8 +82,8 @@ HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)  
-[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)  
-[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)  
-[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)  
-[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
+- [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
+- [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
+- [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)
+- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)
+- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
