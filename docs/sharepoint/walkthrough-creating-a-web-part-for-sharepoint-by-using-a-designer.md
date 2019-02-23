@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fa5817bb7c20cf58457281667dda76ac43608647
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 4a22d814ce50dea1ee67ed3bf1f071839e60a797
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875328"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607015"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>逐步解說：使用設計工具建立 SharePoint web 組件
 
@@ -187,6 +187,6 @@ ms.locfileid: "54875328"
 
 ## <a name="see-also"></a>另請參閱
 
-[建立 SharePoint web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[如何：建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[建立 SharePoint web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)
+[How to:建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)
 [逐步解說：建立 SharePoint web 組件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

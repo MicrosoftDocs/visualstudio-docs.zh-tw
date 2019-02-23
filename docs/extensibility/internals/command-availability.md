@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30a4992bed527b017f66f42067f88ec127fb9ed3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ae72a9f8ed20840da958c3c9314c8f25aada801f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070600"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625617"
 ---
 # <a name="command-availability"></a>命令可用性
 
@@ -49,7 +49,7 @@ Visual Studio 內容會決定哪些命令可供使用。 根據目前的專案�
 2.  取得 GUID 的內容的狀態，藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法。
 
 3.  藉由呼叫開啟內容的 Guid 和關閉<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法。
-   
+
 > [!CAUTION]
 > 請確定，VSPackage 不會影響任何現有內容的 Guid 因為其他 Vspackage 可能取決於它們。
 
