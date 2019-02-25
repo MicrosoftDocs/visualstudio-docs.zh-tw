@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3726ee6995e770d89e5916a922c0546439c3ba14
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 32d212b7deee3244847b3ae5f04c64d29621564f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953506"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681838"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>HOW TO：將擴充性專案移轉至 Visual Studio 2017
 
