@@ -18,7 +18,7 @@
 ### [訂閱者權益](subscriber-benefits.md)
 ## 使用訂閱者權益
 ### 工具
-#### [Visual Studio IDE ](vs-ide-benefit.md)
+#### [Visual Studio IDE](vs-ide-benefit.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Azure 點數](vs-azure.md)
 #### [Office 365 開發人員訂閱](vs-office-dev.md)
