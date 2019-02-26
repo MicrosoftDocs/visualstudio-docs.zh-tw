@@ -41,6 +41,7 @@
 # [編譯和建置](compiling-and-building.md)
 ## [建置和清除專案與方案](building-and-cleaning-projects-and-solutions.md)
 ## [建置動作](build-actions.md)
+## [如何：設定多個啟始專案](set-startup-projects.md)
 ## [自訂組建系統](customizing-build-system.md)
 ## [組態](configurations.md)
 ### [建立和編輯組態](create-and-edit-configurations.md)
