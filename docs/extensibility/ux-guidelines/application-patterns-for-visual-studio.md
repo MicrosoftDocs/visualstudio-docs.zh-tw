@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180a162e7ff75a23ea99277f875522aac88b6c84
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690457"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796877"
 ---
 # <a name="application-patterns-for-visual-studio"></a>適用於 Visual Studio 的應用程式模式
 ##  <a name="BKMK_WindowInteractions"></a> 視窗的互動
@@ -128,10 +128,22 @@ Visual Studio 工具視窗會有不同的狀態，其中有些是使用者已啟
 
 **其他工具視窗**
 
+::: moniker range="vs-2017"
+
 | 工具視窗 | 功能 |
 | --- | --- |
 | 工具箱 | 工具視窗，用來儲存要卸除到設計介面，提供一致的拖曳來源的所有設計工具上的項目。 |
-| 起始頁 | 使用者的入口網站以 Visual Studio 2017 中，開發人員相關新聞、 Visual Studio 說明和最近使用的專案摘要的存取。 使用者也可以藉由複製的 StartPage.xaml 檔案建立自訂起始頁 」 Common7\IDE\StartPages\" Visual Studio 程式檔案目錄，以便在 Visual Studio [startpages] 資料夾的文件目錄，然後再編輯 XAML藉由手動或在 Visual Studio 或其他程式碼編輯器中開啟它。 |
+| 起始頁 | 使用者的入口網站加入 Visual Studio，開發人員相關新聞、 Visual Studio 說明和最近使用的專案摘要的存取。 使用者也可以藉由複製的 StartPage.xaml 檔案建立自訂起始頁 」 Common7\IDE\StartPages\" Visual Studio 程式檔案目錄，以便在 Visual Studio [startpages] 資料夾的文件目錄，然後再編輯 XAML藉由手動或在 Visual Studio 或其他程式碼編輯器中開啟它。 |
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+| 工具視窗 | 功能 |
+| --- | --- |
+| 工具箱 | 工具視窗，用來儲存要卸除到設計介面，提供一致的拖曳來源的所有設計工具上的項目。 |
+
+::: moniker-end
 
 **偵錯工具視窗**
 

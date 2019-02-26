@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 311ccb546d1712fc21e6ca01a69b5aa50a21786b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721819"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796747"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>字型和格式適用於 Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> 環境字型
@@ -101,9 +101,22 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
 
 #### <a name="375-environment-font--light"></a>375%環境字型 + 細體
- **會顯示為：** 34 pt Segoe UI Light**用於：** （罕見） 唯一品牌的 UI，例如在 Visual Studio 2017 起始頁
 
- **程序的程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：
+**會顯示為：** 34 pt Segoe UI Light
+
+::: moniker range="vs-2017"
+
+**適用於：** （罕見） 唯一品牌的 UI，例如在 [開始] 頁面
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**適用於：** （罕見） 的唯一品牌的 UI
+
+::: moniker-end
+
+**程序的程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -112,7 +125,7 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);
 ```
 
- **XAML:** 設定樣式的 TextBlock 或標籤所示。
+**XAML:** 設定樣式的 TextBlock 或標籤所示。
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
@@ -406,9 +419,21 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 #### <a name="310-environment-font--light"></a>310%環境字型 + 細體
 
+::: moniker range="vs-2017"
+
 |||
 |-|-|
 |**使用方式：**<br /><br /> 簽章對話方塊中的較大標題<br />-主報表標題<br /><br /> **執行動作：**<br /><br /> -使用句子大小寫<br />-一律使用輕量<br /><br /> **沒有此項目：**<br /><br /> 使用 ui 以外的簽章例如起始頁的 UI<br />-粗體、 斜體或粗體斜體<br />使用的內文<br />-使用中工具視窗|**會顯示為：** 28 pt Segoe UI Light<br /><br /> **圖示的範例：**<br /><br /> ![310%環境字型的範例&#43;淺標題](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|||
+|-|-|
+|**使用方式：**<br /><br /> 簽章對話方塊中的較大標題<br />-主報表標題<br /><br /> **執行動作：**<br /><br /> -使用句子大小寫<br />-一律使用輕量<br /><br /> **沒有此項目：**<br /><br /> 使用 ui 以外的簽章 UI<br />-粗體、 斜體或粗體斜體<br />使用的內文<br />-使用中工具視窗|**會顯示為：** 28 pt Segoe UI Light<br /><br /> **圖示的範例：**<br /><br /> ![310%環境字型的範例&#43;淺標題](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
 
 #### <a name="200-environment-font--semilight"></a>200%環境字型 + 半細體
 

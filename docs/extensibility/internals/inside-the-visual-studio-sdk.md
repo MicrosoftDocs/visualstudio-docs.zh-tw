@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978265"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796669"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探索 Visual Studio SDK
 本節提供有關 Visual Studio 擴充功能，包括 Visual Studio 架構、 元件、 服務、 結構描述、 公用程式，以及類似的深入資訊。
@@ -55,13 +55,13 @@ ms.locfileid: "54978265"
 
  工具視窗通常會提供各種使用者可以與之互動的控制項。 比方說，**屬性**視窗可讓使用者設定屬性的物件，提供特定的用途。 **屬性**視窗是在這種情況下，特製化，但也一般，因為它可以用於許多不同的情況。 同樣地，**輸出**視窗特製化，因為它會提供以文字為基礎的輸出，但一般，因為在 Visual Studio 中的許多子系統可以用它來提供輸出給 Visual Studio 使用者。
 
- 請考慮下圖的 Visual Studio 中，其中包含數個工具視窗。
+ 請考慮下圖的 Visual Studio 中，其中包含數個工具視窗：
 
  ![螢幕擷取畫面](../../extensibility/internals/media/t1gui.png "T1gui")
 
  部分工具視窗會一起停駐的單一窗格會顯示 [方案總管] 工具視窗，也會隱藏其他工具視窗但使其可供透過按一下索引標籤。 圖中會顯示兩個其他的工具視窗中，**錯誤清單**並**輸出**視窗中，一起停駐的單一窗格。
 
- 也會顯示為主要的文件 窗格會顯示數個編輯器視窗。 雖然工具視窗通常會有一個執行個體 (例如，您可以在此處開啟只有一個**方案總管 中**)，編輯器視窗可以有多個執行個體，每一個都用來編輯個別的文件，但全部都停駐在同一個窗格中。 圖顯示具有兩個編輯器視窗、 一個表單設計工具視窗，以及瀏覽器視窗中顯示 [入門] 頁面的 [文件] 窗格。 文件 窗格中的所有視窗都都可以透過按一下索引標籤上，但包含 EditorPane.cs 檔案的 編輯器 視窗可見且作用中。
+ 也會顯示為主要的文件 窗格會顯示數個編輯器視窗。 雖然工具視窗通常會有一個執行個體 (例如，您可以在此處開啟只有一個**方案總管 中**)，編輯器視窗可以有多個執行個體，每一個都用來編輯個別的文件，但全部都停駐在同一個窗格中。 圖顯示具有兩個編輯器視窗、 一個表單設計工具視窗的文件 窗格。 文件 窗格中的所有視窗都都可以透過按一下索引標籤上，但包含 EditorPane.cs 檔案的 編輯器 視窗可見且作用中。
 
  當您擴充 Visual Studio 時，您可以使用您的延伸模組來建立的工具視窗，可以讓 Visual Studio 使用者互動。 您也可以建立您自己的編輯器，可讓 Visual Studio 使用者編輯文件。 因為您的工具視窗和編輯器將會整合到 Visual Studio 中，您不必撰寫它們來停駐或正確地顯示在索引標籤。 當它們正確地註冊 Visual Studio 中時，它們會自動在工具視窗和文件視窗，在 Visual Studio 中的一般功能。 如需詳細資訊，請參閱 <<c0> [ 延伸和自訂工具 Windows](../../extensibility/extending-and-customizing-tool-windows.md)。
 
