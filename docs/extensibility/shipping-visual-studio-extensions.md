@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a002ca0696f18aa8c524b27be27047ed29b9b25
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2ea2217614ed27a98281cce7a3d34b72f74ae803
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720493"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796591"
 ---
 # <a name="shipping-visual-studio-extensions"></a>推出 Visual Studio 延伸模組
 您完成開發您的擴充功能之後，您可以將它安裝在其他電腦上、 與朋友和同事，共用或 Visual Studio Marketplace 上發行它。 在本節中，我們說明您需要執行以發佈及維護您的延伸模組的所有項目： 使用.vsix 檔案、 發佈、 當地語系化，及更新。
@@ -25,7 +25,7 @@ ms.locfileid: "56720493"
 ## <a name="working-with-vsix-extensions"></a>使用 VSIX 擴充功能
  您可以藉由建立空白的 VSIX 專案，並再新增另一個項目範本來建立 VSIX 擴充功能。 如需詳細資訊，請參閱 < [VSIX 專案範本](../extensibility/vsix-project-template.md)。
 
- 您可以使用 VSIX 格式封裝專案範本、 項目範本，Vspackage，Managed Extensibility Framework (MEF) 元件，來**工具箱**控制項、 組件和自訂類型 （這包括自訂起始頁）。 VSIX 格式使用檔案為基礎的部署。 如需 VSIX 封裝的詳細資訊，請參閱[VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)。
+ 您可以使用 VSIX 格式封裝專案範本、 項目範本，Vspackage，Managed Extensibility Framework (MEF) 元件，來**工具箱**控制項、 組件和自訂類型 （這包括自訂起始頁視覺效果Studio 2017)。 VSIX 格式使用檔案為基礎的部署。 如需 VSIX 封裝的詳細資訊，請參閱[VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)。
 
  VSIX 格式不支援安裝的程式碼片段。 它也不支援某些其他案例，例如寫入至全域組件快取 (GAC) 中，或系統登錄。 如果您需要寫入至 GAC 中，或是在安裝中的登錄，您必須使用 Windows 安裝程式。 如需詳細資訊，請參閱 <<c0> [ 準備擴充功能的 Windows Installer 部署](../extensibility/preparing-extensions-for-windows-installer-deployment.md)。
 
