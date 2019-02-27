@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: d9563d45d9a09e4402f1586a18fe9e5d7d9775c1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027233"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611070"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>變更記錄檔 (Visual Studio Tools for Unity，Mac)
 Visual Studio Tools for Unity 變更記錄。
@@ -34,11 +34,11 @@ Visual Studio Tools for Unity 變更記錄。
 -   **偵錯工具：**
 
      -   已修正用於與 Unity 偵錯工具引擎通訊之程式庫中的死結，該死結造成 Visual Studio 或 Unity 凍結，特別是在按下 [附加到 Unity] 或重新啟動遊戲時。
-     
+
 -   **整合：**
 
      -   修正選取其他預設編輯器時的 Unity 外掛程式啟用問題。
-     
+
      -   修正 Unity 檔案範本建立問題。
 
 ## <a name="1602"></a>1.6.0.2
@@ -49,7 +49,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   **整合：**
 
      -   針對 Unity 已修正的 Unity 效能 Bug 復原因應措施。
-     
+
 ## <a name="1601"></a>1.6.0.1
  2018 年 7 月 10 日發行
 
@@ -58,7 +58,7 @@ Visual Studio Tools for Unity 變更記錄。
 -   **整合：**
 
      -   修正了著色器的程式碼著色支援。
-     
+
 ## <a name="1600"></a>1.6.0.0
  2018 年 7 月 26 日發行
 
@@ -71,23 +71,23 @@ Visual Studio Tools for Unity 變更記錄。
 -   **Project Generation:**
 
      -   Unity 效能 Bug 的暫時性因應措施：在產生專案時，會快取 MonoIslands。
-     
+
      -   在使用新 Unity 執行階段時，不會再將可攜式 pdb 轉換成 mdb。
-     
+
 ## <a name="1502"></a>1.5.0.2
  2018 年 4 月 18 日發行
- 
+
 ### <a name="new-features"></a>新功能
 
 -   **整合：**
 
     -   新增了基本著色器程式碼完成功能的支援。
-    
+
     -   新增了在切換著色器檔案中切換註解的支援。
 
 ## <a name="1501"></a>1.5.0.1
  2018 年 3 月 28 日發行
- 
+
 ### <a name="new-features"></a>新功能
 
 -   **整合：**
@@ -96,7 +96,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="1500"></a>1.5.0.0
  2018 年 3 月 21 日發行
- 
+
 ### <a name="new-features"></a>新功能
 
 -   **整合：**
@@ -105,7 +105,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="1403"></a>1.4.0.3
  2018 年 3 月 5 日發行
- 
+
 ### <a name="new-features"></a>新功能
 
 -   **Project Generation:**
@@ -118,7 +118,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="1402"></a>1.4.0.2
  2018 年 1 月 24 日發行
- 
+
 ### <a name="bug-fixes"></a>Bug 修正
 
 -   **Project Generation:**
@@ -133,7 +133,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="1401"></a>1.4.0.1
  2018 年 1 月 23 日發行
- 
+
 ### <a name="bug-fixes"></a>Bug 修正
 
 -   **整合：**
@@ -142,7 +142,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="1400"></a>1.4.0.0
  2017 年 12 月 13 日發行
- 
+
 ### <a name="new-features"></a>新功能
 
 -   **Project Generation:**
@@ -157,7 +157,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="1301"></a>1.3.0.1
  2017 年 12 月 12 日發行
- 
+
 ### <a name="bug-fixes"></a>Bug 修正
 
 -   **整合：**
@@ -170,7 +170,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="1300"></a>1.3.0.0
  2017 年 11 月 20 日發行
- 
+
 ### <a name="new-features"></a>新功能
 
 -   **精靈：**
@@ -181,7 +181,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="1200"></a>1.2.0.0
  2017 年 10 月 23 日發行
- 
+
 ### <a name="new-features"></a>新功能
 
 -   **偵錯工具：**
@@ -198,7 +198,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="1103"></a>1.1.0.3
  2017 年 10 月 23 日發行
- 
+
 ### <a name="new-features"></a>新功能
 
 -   **Project Generation:**
@@ -207,7 +207,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="1102"></a>1.1.0.2
  2017 年 8 月 8 日發行
- 
+
 ### <a name="new-features"></a>新功能
 
 -   **偵錯工具：**
@@ -220,7 +220,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="1101"></a>1.1.0.1
  2017 年 7 月 20 日發行
- 
+
 ### <a name="new-features"></a>新功能
 
 -   **整合：**
@@ -229,7 +229,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="1100"></a>1.1.0.0
  2017 年 7 月 12 日發行
- 
+
 ### <a name="new-features"></a>新功能
 
 -   **整合：**
@@ -240,9 +240,9 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   使用 mcs.rsp 檔案修正組件名稱參考。
 
-    -   已新增 assembly.json 編譯單位的支援。    
+    -   已新增 assembly.json 編譯單位的支援。
 
-    -   修正具有 API 層級的定義。    
+    -   修正具有 API 層級的定義。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -252,7 +252,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="1001"></a>1.0.0.1
  2017 年 5 月 4 日發行
- 
+
 ### <a name="bug-fixes"></a>Bug 修正
 
 -   **整合：**

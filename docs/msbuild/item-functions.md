@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e62482df42581b60e4e7758806efd5c7d9300c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d01de837deb5141b4b0bdbb7bebcb50412826b1f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950509"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617154"
 ---
 # <a name="item-functions"></a>Item 函式
 從 MSBuild 4.0 開始，工作和目標中的程式碼可以呼叫項目函式來取得專案中項目的相關資訊。 這些函式會簡化取得 Distinct() 項目的方式，速度比執行項目迴圈還快。
@@ -51,7 +51,7 @@ ms.locfileid: "55950509"
 ## <a name="intrinsic-item-functions"></a>內建項目函式
 下表列出項目可用的內建函式。
 
-|功能|範例|描述|
+|功能|範例|說明|
 |--------------|-------------|-----------------|
 |`Count`|`@(MyItem->Count())`|傳回項目計數。|
 |`DirectoryName`|`@(MyItem->DirectoryName())`|傳回每個項目之 `Path.DirectoryName` 的對等項目。|
@@ -100,4 +100,4 @@ ms.locfileid: "55950509"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[項目](../msbuild/msbuild-items.md)
+- [項目](../msbuild/msbuild-items.md)

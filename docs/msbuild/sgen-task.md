@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1d3b504f5987eca850cb2cbd73223c5c115fcde
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 548943b9d203cf84773385f6b12d70dcb246b708
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948215"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607352"
 ---
 # <a name="sgen-task"></a>SGen 工作
-針對指定組件中的型別建立 XML 序列化組件。 此工作會包裝 XML 序列化程式產生器工具 (*Sgen.exe*)。 如需詳細資訊，請參閱 [XML 序列化程式產生器工具 (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)。  
+針對指定組件中的型別建立 XML 序列化組件。 此工作會包裝 XML 序列化程式產生器工具 (*Sgen.exe*)。 如需詳細資訊，請參閱 [XML 序列化程式產生器工具 (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)。
 
-## <a name="parameters"></a>參數  
- 下表說明 `SGen` 工作的參數。  
+## <a name="parameters"></a>參數
+ 下表說明 `SGen` 工作的參數。
 
 
 | 參數 | 說明 |
@@ -50,10 +50,10 @@ ms.locfileid: "54948215"
 | `Types` | 選擇性的 `String[]` 參數。<br /><br /> 取得或設定產生序列化程式碼特定型別的清單。 SGen 只會針對那些型別產生序列化程式碼。 |
 | `UseProxyTypes` | 必要的 `Boolean` 參數。<br /><br /> 如果為 `true`，SGen 工作只會為 XML Web 服務 Proxy 型別產生序列化程式碼。 |
 
-## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數的清單及其描述，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。  
+## <a name="remarks"></a>備註
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數的清單及其描述，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。
 
-## <a name="see-also"></a>另請參閱  
- [工作參考](../msbuild/msbuild-task-reference.md)   
- [工作](../msbuild/msbuild-tasks.md)   
- [MSBuild 概念](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>另請參閱
+- [工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)

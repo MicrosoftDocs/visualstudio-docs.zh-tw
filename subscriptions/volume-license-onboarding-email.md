@@ -4,21 +4,19 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 3/14/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 提供給 VLSC 系統管理員的上線通訊範例
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a91626328b60fee748f465e3b5bde8bd29f227dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2f2b376ca3a7de91f67d45f7a138dbefd6b65988
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847839"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844317"
 ---
 # <a name="onboarding-email-communications-for-administrators"></a>適用於系統管理員的上線電子郵件通訊
 
-當您的組織準備好進行移轉時，在組織的大量授權 (VL) 合約上列出的個別使用者會收到此電子郵件。 此電子郵件概述公司內所有人移轉 Visual Studio 訂閱所需遵循的流程。 
+當您的組織準備好進行移轉時，在組織的大量授權 (VL) 合約上列出的個別使用者會收到此電子郵件。 此電子郵件概述公司內所有人移轉 Visual Studio 訂閱所需遵循的流程。
 
 ![頁首](_img/onboarding-email/header.png)
 

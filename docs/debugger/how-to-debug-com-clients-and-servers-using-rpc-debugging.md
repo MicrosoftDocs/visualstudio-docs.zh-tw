@@ -26,33 +26,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a9d649ddf3bb9814f837c132bef7d96574336f4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01dca60a19adcf27652bccd096d6e1596ec2fc15
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925530"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688039"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>HOW TO：使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯
-您可使用遠端程序呼叫 (Remote Procedure Call，RPC) 偵錯功能，對 COM 用戶端/伺服器應用程式偵錯。 您必須啟用 RPC 偵錯才能使用它。 啟用 RPC 偵錯後，當您從用戶端逐步執行伺服器呼叫時，偵錯工具會附加至伺服器，讓您偵錯其程式碼。 附加偵錯工具後，您就能夠對用戶端和伺服器處理序，使用偵錯工具的所有功能。  
-  
-### <a name="to-enable-rpc-debugging"></a>若要啟用 RPC 偵錯  
-  
-1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。  
-  
-2.  在 [選項] 對話方塊中按一下 [偵錯] 資料夾。  
-  
-3.  按一下 [原生] 頁面。  
-  
-4.  選取 [RPC 偵錯] 核取方塊。  
-  
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>如何：使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯
+您可使用遠端程序呼叫 (Remote Procedure Call，RPC) 偵錯功能，對 COM 用戶端/伺服器應用程式偵錯。 您必須啟用 RPC 偵錯才能使用它。 啟用 RPC 偵錯後，當您從用戶端逐步執行伺服器呼叫時，偵錯工具會附加至伺服器，讓您偵錯其程式碼。 附加偵錯工具後，您就能夠對用戶端和伺服器處理序，使用偵錯工具的所有功能。
+
+### <a name="to-enable-rpc-debugging"></a>若要啟用 RPC 偵錯
+
+1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。
+
+2.  在 [選項] 對話方塊中按一下 [偵錯] 資料夾。
+
+3.  按一下 [原生] 頁面。
+
+4.  選取 [RPC 偵錯] 核取方塊。
+
     > [!NOTE]
-    >  若要偵錯 RPC 呼叫，您必須擁有系統管理員 (Administrator) 或進階使用者 (Power User) 權限。  
-  
+    >  若要偵錯 RPC 呼叫，您必須擁有系統管理員 (Administrator) 或進階使用者 (Power User) 權限。
+
     > [!NOTE]
-    >  RPC 若逐步執行到執行 Microsoft Windows Vista 的遠端伺服器中，則只有在該遠端伺服器已附加原生偵錯工具的情況下才能運作。 否則，RPC 呼叫將會失敗，而且不會產生錯誤訊息。 要不然，RPC 呼叫將會完成，但逐步執行 RPC 呼叫將沒有作用。  
-  
-## <a name="see-also"></a>請參閱  
- [COM 伺服器和容器偵錯](../debugger/com-server-and-container-debugging.md)  
- [Visual Studio 偵錯](../debugger/index.md)  
- [偵錯工具簡介](../debugger/debugger-feature-tour.md)
+    >  RPC 若逐步執行到執行 Microsoft Windows Vista 的遠端伺服器中，則只有在該遠端伺服器已附加原生偵錯工具的情況下才能運作。 否則，RPC 呼叫將會失敗，而且不會產生錯誤訊息。 要不然，RPC 呼叫將會完成，但逐步執行 RPC 呼叫將沒有作用。
+
+## <a name="see-also"></a>請參閱
+- [COM 伺服器和容器偵錯](../debugger/com-server-and-container-debugging.md)
+- [Visual Studio 偵錯](../debugger/index.md)
+- [偵錯工具簡介](../debugger/debugger-feature-tour.md)

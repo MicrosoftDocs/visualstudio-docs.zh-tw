@@ -17,52 +17,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d735127be1b8a412395be8d19321deb8d589be
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f56121354e9c6e508ab591d306f7e210f6963694
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992486"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603576"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>HOW TO：為執行中的處理序附加和中斷連結效能工具
-程式碼剖析工具可以用來附加至或中斷連結執行中的處理序，以協助取樣與蒐集效能資料。 當您想要避免蒐集應用程式載入時間的資料，或是在處理序進入特定狀態後監視其效能時，就可以使用這種方法來執行處理序的程式碼剖析。  
-  
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>作法：為執行中的處理序附加和中斷連結效能工具
+程式碼剖析工具可以用來附加至或中斷連結執行中的處理序，以協助取樣與蒐集效能資料。 當您想要避免蒐集應用程式載入時間的資料，或是在處理序進入特定狀態後監視其效能時，就可以使用這種方法來執行處理序的程式碼剖析。
+
 > [!NOTE]
->  下列步驟適用於從 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 整合式開發環境 (IDE) 中附加和中斷連結處理序。 如需如何使用命令列工具的資訊，請參閱[從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)。 如需如何對服務進行分析的資訊，請參閱[對服務進行分析](../profiling/command-line-profiling-of-services.md)。  
-  
- 可以進行程式碼剖析的處理序，取決於電腦系統管理員所設定的使用者存取權限。 例如，使用者帳戶可能擁有下列任何一項的使用權限：  
-  
-- 進階程式碼剖析功能 (當系統管理員設定了要啟動的驅動程式和服務時)。  
-  
-- 只進行取樣程式碼剖析 (網域使用者)。  
-  
-- 拒絕任何人存取程式碼剖析。  
-  
-  如需詳細資訊，請參閱[分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)，以及 [VSPerfCmd](../profiling/vsperfcmd.md) 中的 ADMIN 選項。  
-  
-### <a name="to-attach-to-a-running-process"></a>若要附加至執行中的處理序  
-  
-1.  在 [偵錯] 功能表上，指向 [分析工具]、[效能總管]，然後按一下 [附加]。    
-  
-     [將程式碼剖析工具附加至處理序] 對話方塊隨即出現。  
-  
-2.  按一下您要附加至的處理序名稱。  
-  
-3.  按一下 [附加] 。  
-  
-### <a name="to-detach-from-a-running-process"></a>若要從執行中處理序中斷連結  
-  
-1.  在 [偵錯] 功能表上，指向 [分析工具]、[效能總管]，然後按一下 [中斷連結]。 
-  
-     [將程式碼剖析工具附加至處理序] 對話方塊隨即出現。  
-  
-2.  按一下您要中斷連結的映像名稱。  
-  
-3.  按一下 [中斷連結]。  
-  
-## <a name="see-also"></a>另請參閱  
- [控制資料收集](../profiling/controlling-data-collection.md)   
- [效能工作階段概觀](../profiling/performance-session-overview.md)   
- [如何：啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)   
- [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)   
- [VSPerfCmd](../profiling/vsperfcmd.md)
+>  下列步驟適用於從 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 整合式開發環境 (IDE) 中附加和中斷連結處理序。 如需如何使用命令列工具的資訊，請參閱[從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)。 如需如何對服務進行分析的資訊，請參閱[對服務進行分析](../profiling/command-line-profiling-of-services.md)。
+
+ 可以進行程式碼剖析的處理序，取決於電腦系統管理員所設定的使用者存取權限。 例如，使用者帳戶可能擁有下列任何一項的使用權限：
+
+- 進階程式碼剖析功能 (當系統管理員設定了要啟動的驅動程式和服務時)。
+
+- 只進行取樣程式碼剖析 (網域使用者)。
+
+- 拒絕任何人存取程式碼剖析。
+
+  如需詳細資訊，請參閱[分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)，以及 [VSPerfCmd](../profiling/vsperfcmd.md) 中的 ADMIN 選項。
+
+### <a name="to-attach-to-a-running-process"></a>若要附加至執行中的處理序
+
+1.  在 [偵錯] 功能表上，指向 [分析工具]、[效能總管]，然後按一下 [附加]。
+
+     [將程式碼剖析工具附加至處理序] 對話方塊隨即出現。
+
+2.  按一下您要附加至的處理序名稱。
+
+3.  按一下 [附加] 。
+
+### <a name="to-detach-from-a-running-process"></a>若要從執行中處理序中斷連結
+
+1.  在 [偵錯] 功能表上，指向 [分析工具]、[效能總管]，然後按一下 [中斷連結]。
+
+     [將程式碼剖析工具附加至處理序] 對話方塊隨即出現。
+
+2.  按一下您要中斷連結的映像名稱。
+
+3.  按一下 [中斷連結]。
+
+## <a name="see-also"></a>另請參閱
+- [控制資料收集](../profiling/controlling-data-collection.md)
+- [效能工作階段概觀](../profiling/performance-session-overview.md)
+- [如何：開始和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)
+- [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)
+- [VSPerfCmd](../profiling/vsperfcmd.md)

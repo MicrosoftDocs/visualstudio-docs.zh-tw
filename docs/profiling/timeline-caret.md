@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02add685cc3045fedca5bff8c8bf5efde17d371e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 370e19757890d6d9f56fad4e7b89b2197e515d9c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945043"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615035"
 ---
 # <a name="timeline-caret"></a>時間軸插入號
-當您在執行執行緒區段的時間軸上選取一點，時間軸插入號會出現在那點上方。 顯示在目前堆疊索引標籤上的呼叫堆疊，在時間上最接近您所按的區段。 插入號是用來和呼叫堆疊相關聯，其會在取樣的瞬間，顯示在 [目前] 索引標籤下方。 插入號顯示呼叫堆疊的確切位置，其是最接近使用者所選取位置的呼叫堆疊。  
-  
-## <a name="see-also"></a>另請參閱  
- [執行緒檢視](../profiling/threads-view-parallel-performance.md)
+當您在執行執行緒區段的時間軸上選取一點，時間軸插入號會出現在那點上方。 顯示在目前堆疊索引標籤上的呼叫堆疊，在時間上最接近您所按的區段。 插入號是用來和呼叫堆疊相關聯，其會在取樣的瞬間，顯示在 [目前] 索引標籤下方。 插入號顯示呼叫堆疊的確切位置，其是最接近使用者所選取位置的呼叫堆疊。
+
+## <a name="see-also"></a>另請參閱
+- [執行緒檢視](../profiling/threads-view-parallel-performance.md)

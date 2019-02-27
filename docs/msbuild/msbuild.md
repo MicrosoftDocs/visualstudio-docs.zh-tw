@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d270afeb4c0c0404ae83bbaa51938d7c741965
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce0e95a72c6c2400f5ac245f3ac4741423194c68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069859"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618233"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是用於建置應用程式的平台。 這個引擎也稱為 MSBuild，提供了專案檔的 XML 結構描述，以控制組建平台處理和建置軟體的方式。 Visual Studio 會使用 MSBuild，但 MSBuild 並不倚賴 Visual Studio。 藉由在專案或方案檔上叫用 *msbuild.exe*，就可以在未安裝 Visual Studio 的環境中組織及建置產品。
@@ -183,6 +183,6 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 | [其他資源](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | 列出社群和支援資源，以提供 MSBuild 的詳細資訊。 |
 
 ## <a name="reference"></a>參考資料
- [MSBuild 參考](../msbuild/msbuild-reference.md)：包含參考資訊的主題連結。
+- [MSBuild 參考](../msbuild/msbuild-reference.md)：包含參考資訊的主題連結。
 
- [字彙表](msbuild-glossary.md)定義通用的 MSBuild 字詞。
+- [字彙表](msbuild-glossary.md)定義通用的 MSBuild 字詞。

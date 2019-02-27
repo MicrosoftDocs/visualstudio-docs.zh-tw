@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8c76a867f67f94cb0ce3589cc8aa411fd70663
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 340d376308c9647895f814dbf6d3d438a98d75e2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316960"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843804"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 
@@ -38,7 +38,7 @@ ms.locfileid: "56316960"
 |[Xamarin 行動應用程式開發文件](/xamarin/) |
 |[使用 Xamarin 應用程式進行 DevOps](/xamarin/tools/ci/devops/) |
 |[了解 Visual Studio 的通用 Windows app](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
-|[了解 Swift 與 C# 之間的相似性](http://aka.ms/scposter) (download.microsoft.com)|
+|[了解 Swift 與 C# 之間的相似性](https://aka.ms/scposter) (download.microsoft.com)|
 
 ###  <a name="AndroidHTML"></a> 以 Android、iOS 和 Windows 為目標的單一程式碼基底
 

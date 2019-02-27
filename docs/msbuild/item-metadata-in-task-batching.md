@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93edaaf22dd59014a29c374ea3c4613d98d00d36
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946536"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623706"
 ---
 # <a name="item-metadata-in-task-batching"></a>工作批次處理中的項目中繼資料
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能夠根據項目中繼資料，將項目清單分割成不同的類別或批次，然後使用每個批次一次執行一個工作。 要確切了解哪個批次要傳遞哪些項目，可能會相當混亂。 本主題涵蓋下列與批次處理相關的常見案例。
@@ -218,9 +218,9 @@ Items in ExampColl: Item2;Item5
 ```
 
 ## <a name="see-also"></a>另請參閱
-[已知的項目中繼資料](../msbuild/msbuild-well-known-item-metadata.md)  
-[Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)  
-[ItemMetadata 項目 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[批次處理](../msbuild/msbuild-batching.md)  
-[MSBuild 概念](../msbuild/msbuild-concepts.md)  
-[MSBuild 參考](../msbuild/msbuild-reference.md)
+- [已知的項目中繼資料](../msbuild/msbuild-well-known-item-metadata.md)
+- [Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)
+- [ItemMetadata 項目 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [批次處理](../msbuild/msbuild-batching.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)
+- [MSBuild 參考](../msbuild/msbuild-reference.md)

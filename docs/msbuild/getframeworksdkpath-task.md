@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6c092921c38153a587ee9fb4548175385507a67
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 15346bdd7c049a152a5a2d1668891f9d97da31fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853257"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644350"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath 工作
 擷取 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 的路徑。
@@ -31,7 +31,7 @@ ms.locfileid: "55853257"
 ## <a name="task-parameters"></a>工作參數
 下表說明 `GetFrameworkSdkPath` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`FrameworkSdkVersion20Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 2.0 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|
 |`FrameworkSdkVersion35Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 3.5 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|
@@ -58,5 +58,5 @@ ms.locfileid: "55853257"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[工作](../msbuild/msbuild-tasks.md)  
-[工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

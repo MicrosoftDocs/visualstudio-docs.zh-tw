@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 020d631405586227d91fd06fb1794ab5554d1075
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 153daa1f43ba4945a5eb32aea82c5d58ff57c5f6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226906"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613579"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
 擷取指定函數是否為簡介的虛擬函式的旗標。
@@ -31,7 +31,8 @@ HRESULT get_intro ( 
 ```
 
 #### <a name="parameters"></a>參數
-`pRetVal`  
+`pRetVal`
+
 [out]會傳回`TRUE`函式是簡介虛擬; 否則會傳回`FALSE`。
 
 ## <a name="return-value"></a>傳回值
@@ -55,10 +56,10 @@ class B : public A {
 
 ## <a name="requirements"></a>需求
 
-|需求|描述|
+|需求|說明|
 |-----------------|-----------------|
 |標頭：|dia2.h|
 |版本:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>請參閱
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

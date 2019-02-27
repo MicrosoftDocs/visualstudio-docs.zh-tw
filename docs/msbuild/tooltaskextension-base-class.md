@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2cf9e45a07544820292482ac34c034e81a305af
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8e4cb02cdaf2827ac5c892c7565f446d8f84257c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010346"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623004"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 基底類別
-許多工作繼承自 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別，該類別繼承自 <xref:Microsoft.Build.Utilities.ToolTask> 類別，而其本身是繼承自 <xref:Microsoft.Build.Utilities.Task> 類別。 此繼承鏈結將數個參數加入至從它們衍生的工作。 本文件會列出這些參數。  
+許多工作繼承自 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別，該類別繼承自 <xref:Microsoft.Build.Utilities.ToolTask> 類別，而其本身是繼承自 <xref:Microsoft.Build.Utilities.Task> 類別。 此繼承鏈結將數個參數加入至從它們衍生的工作。 本文件會列出這些參數。
 
-## <a name="parameters"></a>參數  
- 下表說明基底類別的參數。  
+## <a name="parameters"></a>參數
+ 下表說明基底類別的參數。
 
 
 | 參數 | 說明 |
@@ -48,6 +48,6 @@ ms.locfileid: "55010346"
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | 選擇性的 `bool` 參數。<br /><br /> 當設為 `true` 時，這項工作會針對命令列建立批次檔，並且使用命令處理器來執行，而不是直接執行命令。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | 選擇性的 `bool` 參數。<br /><br /> 當設為 `true` 時，這項工作在執行其工作時，會產生節點。 |
 
-## <a name="see-also"></a>另請參閱  
- [工作參考](../msbuild/msbuild-task-reference.md)   
- [工作](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>另請參閱
+- [工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)

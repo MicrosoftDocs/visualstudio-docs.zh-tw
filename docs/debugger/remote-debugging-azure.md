@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 28f97dd46c38b356d45c4c0ded08f1c2790ab229
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d1a64da1e27f5d3504608441306e820b4547539
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981268"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710821"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 中的 Azure 中的 IIS 上的遠端偵錯 ASP.NET Core
 
@@ -47,7 +47,7 @@ ms.locfileid: "54981268"
 
 不支援透過 proxy 連線的兩部電腦之間的偵錯。 透過高延遲或低頻寬連線，例如撥號網際網路，或透過網際網路偵錯跨國家/地區不建議使用和可能失敗或非常慢。 需求的完整清單，請參閱 <<c0> [ 需求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 的電腦上建立 ASP.NET Core 應用程式 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 的電腦上建立 ASP.NET Core 應用程式
 
 1. 建立新的 ASP.NET Core 應用程式。 (選擇**檔案 > 新增 > 專案**，然後選取**視覺化C#> Web > ASP.NET Core Web 應用程式**)。
 
@@ -61,7 +61,7 @@ ms.locfileid: "54981268"
 
 ## <a name="remote_debug_azure_app_service"></a> Azure App Service 上的遠端偵錯 ASP.NET Core
 
-從 Visual Studio 中，您可以快速發行及偵錯您的應用程式至 IIS 的完整佈建執行個體。 不過，在預設的 IIS 設定，而且您無法自訂它。 如需詳細指示，請參閱 <<c0> [ 將 ASP.NET Core web 應用程式部署至 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果您需要自訂 IIS 功能，請嘗試偵錯[Azure VM](#remote_debug_azure_vm)。) 
+從 Visual Studio 中，您可以快速發行及偵錯您的應用程式至 IIS 的完整佈建執行個體。 不過，在預設的 IIS 設定，而且您無法自訂它。 如需詳細指示，請參閱 <<c0> [ 將 ASP.NET Core web 應用程式部署至 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果您需要自訂 IIS 功能，請嘗試偵錯[Azure VM](#remote_debug_azure_vm)。)
 
 #### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>若要部署應用程式，並使用伺服器總管 中的遠端偵錯
 
@@ -184,7 +184,7 @@ ms.locfileid: "54981268"
 在本教學課程中，我們會使用 Visual Studio 2017。
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ### <a name="BKMK_setup"></a> 設定 Windows Server 上的遠端偵錯工具
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -198,7 +198,7 @@ ms.locfileid: "54981268"
 2. 在 Visual Studio 中，按一下**偵錯 > připojit k procesu** （Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...** Shift+Alt+P 
+    > 在 Visual Studio 2017 中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...** Shift+Alt+P
 
 3. 將 [限定詞] 欄位設定為 **\<遠端電腦名稱>:4022**。
 4. 按一下 [重新整理]。
@@ -211,7 +211,7 @@ ms.locfileid: "54981268"
 5. 核取 [顯示所有使用者的處理序]  。
 
 6. 輸入以快速找出處理序名稱的第一個字母*dotnet.exe* （適用於 ASP.NET Core)。
-   
+
    ASP.NET Core 應用程式，先前的程序名稱已*dnx.exe*。
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -219,7 +219,7 @@ ms.locfileid: "54981268"
 7. 按一下 [附加] 。
 
 8. 開啟遠端電腦的網站。 在瀏覽器中，移至 **http://\<遠端電腦名稱>**。
-    
+
     您應該會看到 ASP.NET 網頁。
 9. 執行的 ASP.NET 應用程式中，按一下 連結**關於**頁面。
 
@@ -229,7 +229,7 @@ ms.locfileid: "54981268"
 
 在大部分的配置，所需的連接埠已開啟 ASP.NET 和遠端偵錯工具的安裝。 不過，如果您正在疑難排解部署問題的應用程式裝載在防火牆後方，您可能需要確認正確的連接埠已開啟。
 
-在 Azure VM 中，您必須開啟連接埠通過[網路安全性群組](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic)。 
+在 Azure VM 中，您必須開啟連接埠通過[網路安全性群組](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic)。
 
 必要的連接埠：
 

@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1a55b56c34f2d203f9e910acbdcdbd1f4816518
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fe41982faadeec8ac44a0f178045b3c4dfa69b24
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964921"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635276"
 ---
 # <a name="idiasymbolgetsamplerslot"></a>IDiaSymbol::get_samplerSlot
-擷取取樣器的位置。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_samplerSlot(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pRetVal`  
- [out]指標`DWORD`保存的取樣器的位置。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+擷取取樣器的位置。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_samplerSlot(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>參數
+ `pRetVal`
+
+[out]指標`DWORD`保存的取樣器的位置。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+
+## <a name="see-also"></a>請參閱
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

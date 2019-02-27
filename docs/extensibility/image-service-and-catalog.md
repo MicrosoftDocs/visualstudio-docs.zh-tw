@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9264d8b5129b52444cc551e3719167d04442480d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7b58e9110cfe919d355e4952c0d76f7c47bcdc2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679485"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844057"
 ---
 # <a name="image-service-and-catalog"></a>映像服務和目錄
 此操作手冊包含指導方針和最佳作法採用 Visual Studio 映像服務與 Visual Studio 2015 中導入的映像目錄。
@@ -651,7 +651,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  更新您的程式碼，使用映像服務要求透過更新對應的 moniker。 (這可能表示更新至**CrispImages**的 managed 程式碼，或從映像服務要求 HBITMAPs 或 HICONs 和將它們傳遞原生程式碼。)
 
 ## <a name="testing-your-images"></a>測試您的映像
- 您可以使用影像庫檢視器工具來測試您的映像資訊清單，請確定已正確撰寫的所有項目。 您可以找到中的工具[Visual Studio 2015 SDK](visual-studio-sdk.md)。 您可以找到這項工具和其他文件[此處](http://aka.ms/VSImageThemeTools)。
+ 您可以使用影像庫檢視器工具來測試您的映像資訊清單，請確定已正確撰寫的所有項目。 您可以找到中的工具[Visual Studio 2015 SDK](visual-studio-sdk.md)。 您可以找到這項工具和其他文件[此處](https://aka.ms/VSImageThemeTools)。
 
 ## <a name="additional-resources"></a>其他資源
 

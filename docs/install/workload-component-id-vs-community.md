@@ -7,21 +7,22 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.date: 11/13/2018
+ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.workload:
 - multiple
-ms.openlocfilehash: a70c7f4125c373041e8dc405143ad513079c9e57
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+monikerRange: vs-2017
+ms.openlocfilehash: deefd81ce08fe0991c0abc275edf15f11d5eb5c4
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945894"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844161"
 ---
 # <a name="visual-studio-community-2017-component-directory"></a>Visual Studio Community 2017 元件目錄
 

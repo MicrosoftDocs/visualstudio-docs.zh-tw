@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b35d09faab659d67f5534f3734172707cb7acd4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6cd79925023a32a68ff4a9ac5f86f85d9c6798bf
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700415"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843590"
 ---
 # <a name="save-data-in-project-files"></a>將資料儲存在專案檔
 專案子類型可以儲存並擷取專案檔中的子型別特定資料。 Managed Package Framework (MPF) 提供兩個介面，以完成這項工作：
@@ -206,7 +206,7 @@ ms.locfileid: "56700415"
     ```
 
 > [!NOTE]
->  本主題所提供的所有程式碼範例會在較大範例的組件[VSSDK 範例](http://aka.ms/vs2015sdksamples)。
+>  本主題所提供的所有程式碼範例會在較大範例的組件[VSSDK 範例](https://aka.ms/vs2015sdksamples)。
 
 ## <a name="see-also"></a>另請參閱
 - [保存在 MSBuild 專案檔中的資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: a190a17147530fe42cd6bb9e95b313527eb16b0d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155691"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840410"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教學課程：Visual Studio 中的 Visual Basic 使用者入門
 
@@ -38,7 +38,7 @@ ms.locfileid: "56155691"
 
    ![Visual Studio IDE 的 [新增專案] 對話方塊中的主控台應用程式 (.NET Core) 專案範本](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
-### <a name="add-a-workgroup-optional"></a>新增工作群組 (選擇性)
+### <a name="add-a-workload-optional"></a>新增工作負載 (選擇性)
 
 如果您看不到 [主控台應用程式] 專案範本，則其取得方式是新增 [.NET Core 跨平台開發] 工作負載。 您可以使用下列兩種方式的其中一種來新增此工作負載，視電腦上安裝的 Visual Studio 2017 更新而定。
 

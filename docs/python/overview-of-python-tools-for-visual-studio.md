@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 39d11b1b3bc17cd8a7329fd6f4c1a8010f461438
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 6b4e257f77d29a75e0400d9dd43030fc479c04c6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155834"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711198"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 的 Visual Studio 中使用 Python
 
@@ -147,7 +147,7 @@ Python 工作負載包含「適用於 Python 的 Azure SDK」，此 SDK 可簡�
 
 **問：Python 專案是否能產生獨立的可執行檔？**
 
-答： 一般來說，Python 是解譯的語言，並包含可在適當 Python 支援環境 (例如 Visual Studio 和網頁伺服器) 中視需要執行的程式碼。 目前，Visual Studio 本身不提供用來建立獨立可執行檔的工具，因為獨立可執行檔基本上表示內嵌 Python 解譯器的程式。 不過，Python 社群提供不同方式來建立可執行檔，如 [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 中所述。 CPython 也支援在原生的應用程式中內嵌，如[使用 CPython 的可內嵌 Zip 檔案](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)部落格文章中所述。
+答： 一般來說，Python 是解譯的語言，並包含可在適當 Python 支援環境 (例如 Visual Studio 和網頁伺服器) 中視需要執行的程式碼。 目前，Visual Studio 本身不提供用來建立獨立可執行檔的工具，因為獨立可執行檔基本上表示內嵌 Python 解譯器的程式。 不過，Python 社群提供不同方式來建立可執行檔，如 [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 中所述。 CPython 也支援在原生的應用程式中內嵌，如[使用 CPython 的可內嵌 Zip 檔案](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)部落格文章中所述。
 
 ## <a name="features-matrix"></a>功能對照表
 

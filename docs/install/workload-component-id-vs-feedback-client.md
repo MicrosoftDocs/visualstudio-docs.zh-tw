@@ -12,16 +12,15 @@ helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bf5692b47dc2b674310ab022e32a68b8901bb74
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2181d080875843c381d7498ac52a3bb0d381459a
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931490"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844401"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Visual Studio Feedback Client 2017 元件目錄
 

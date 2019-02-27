@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e07ed209b0e2fee460bd43e2a588a8deb25eeb1
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 8cb678a05b9301982b4842d272c3032cafa46a87
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854066"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610121"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>HOW TO：使用不同選項來建置相同的來源檔案
 當您建置專案時，經常會以不同的組建選項編譯相同的元件。 例如，您可以建立含有符號資訊的偵錯組建，或是不含符號資訊但已啟用最佳化的發行組建。 或者，您可以建置要在特定平台上執行的專案，例如 x86 或 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]。 在這些情況下，大部分的建置選項都會保持不變。只會變更某些選項來控制組建組態。 透過 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，您可以使用屬性和條件來建立不同的建置組態。
@@ -183,7 +183,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 ```
 
 ## <a name="see-also"></a>另請參閱
-[MSBuild](../msbuild/msbuild.md)  
-[MSBuild 概念](../msbuild/msbuild-concepts.md)  
-[MSBuild 參考](../msbuild/msbuild-reference.md)  
-[Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)
+- [MSBuild 參考](../msbuild/msbuild-reference.md)
+- [Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md)
