@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 280a721cd841014823382194465816f6b132d5a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8245c8a3decdd9e9576d3a24b37df4971dbb9284
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000701"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633703"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (C++)
 
@@ -57,64 +57,64 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
     #include <mutex>
     #include <random>
     #include <functional>
-    
+
     //.cpp file code:
-    
+
     static constexpr int MIN_ITERATIONS = std::numeric_limits<int>::max() / 1000;
     static constexpr int MAX_ITERATIONS = MIN_ITERATIONS + 10000;
-    
+
     long long m_totalIterations = 0;
     std::mutex m_totalItersLock;
-    
+
     int getNumber()
     {
-    
+
         std::uniform_int_distribution<int> num_distribution(MIN_ITERATIONS, MAX_ITERATIONS);
         std::mt19937 random_number_engine; // pseudorandom number generator
         auto get_num = std::bind(num_distribution, random_number_engine);
         int random_num = get_num();
-    
+
         auto result = 0;
         {
             std::lock_guard<std::mutex> lock(m_totalItersLock);
             m_totalIterations += random_num;
         }
-        // we're just spinning here  
-        // to increase CPU usage 
+        // we're just spinning here
+        // to increase CPU usage
         for (int i = 0; i < random_num; i++)
         {
             result = get_num();
         }
         return result;
     }
-    
+
     void doWork()
     {
         std::wcout << L"The doWork function is running on another thread." << std::endl;
-    
-        auto x = getNumber();    
+
+        auto x = getNumber();
     }
-    
+
     int main()
     {
         std::vector<std::thread> threads;
-    
+
         for (int i = 0; i < 10; ++i) {
-    
+
             threads.push_back(std::thread(doWork));
             std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
         }
-    
+
         for (auto& thread : threads) {
             thread.join();
         }
-    
+
         return 0;
     }
     ```
-  
-## <a name="step-1-collect-profiling-data"></a>步驟 1：收集分析資料 
-  
+
+## <a name="step-1-collect-profiling-data"></a>步驟 1：收集分析資料
+
 1.  首先，在 `main` 函式的這行程式碼上，於應用程式中設定中斷點：
 
     `for (int i = 0; i < 10; ++i) {`
@@ -127,7 +127,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
     > [!TIP]
     > 藉由設定兩個中斷點，您可以將資料收集的範圍限制在您想分析的程式碼部分。
-  
+
 3.  除非您關閉 [診斷工具] 視窗，否則該視窗已出現。 如需再次顯示視窗，請按一下 [偵錯] > [Windows] > [顯示診斷工具]。
 
 4.  按一下 [偵錯] > [開始偵錯] (或工具列上的 [開始] 或 **F5**)。
@@ -147,7 +147,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
      現在，您擁有在兩個中斷點之間執行的程式碼區域專屬的應用程式效能資料。
 
      程式碼剖析工具隨即開始準備執行緒資料。 等候它完成。
-  
+
      [CPU 使用量] 工具會在 [CPU Usage (CPU 使用量)] 索引標籤中顯示報告。
 
      此時，您可以開始分析資料。
@@ -165,7 +165,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
 2. 在函式清單中，按兩下 `getNumber` 函式。
 
-    當您按兩下函式時，[呼叫端/被呼叫端] 檢視會在左窗格中開啟。 
+    當您按兩下函式時，[呼叫端/被呼叫端] 檢視會在左窗格中開啟。
 
     ![診斷工具的呼叫端/被呼叫端檢視](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
 
@@ -184,7 +184,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 - [分析 CPU 使用量](../profiling/cpu-usage.md)以取得 CPU 使用量工具的詳細深入資訊。
 - 不附加偵錯工具或是以執行中的應用程式為目標來分析 CPU 使用量。如需詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[收集分析資料但不偵錯](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
 
- [Visual Studio 中的分析](../profiling/index.md)  
- [初步認識分析工具](../profiling/profiling-feature-tour.md)
+- [Visual Studio 中的分析](../profiling/index.md)
+- [初步認識分析工具](../profiling/profiling-feature-tour.md)

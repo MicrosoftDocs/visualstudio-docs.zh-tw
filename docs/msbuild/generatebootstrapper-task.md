@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a8736e27337aa2b2512eb96b3325489c96b0e93
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 277463ad717331980988f87cb070815e644a71ab
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853777"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643947"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 工作
 提供自動化方式來偵測、下載及安裝應用程式及其必要條件。 它可用來做為單一安裝程式，針對組成應用程式的所有元件整合個別的安裝程式。
@@ -31,42 +31,42 @@ ms.locfileid: "55853777"
 ## <a name="task-parameters"></a>工作參數
 以下描述 `GenerateBootstrapper` 工作的參數。
 
-- `ApplicationFile`  
-  
-   選擇性的 `String` 參數。  
-  
-   指定啟動載入器將用來在安裝所有必要條件之後開始安裝應用程式的檔案。 如果未指定 `BootstrapperItems` 和 `ApplicationFile` 參數，將會產生建置錯誤。  
-  
-- `ApplicationName`  
-  
-   選擇性的 `String` 參數。  
-  
-   指定啟動載入器將安裝的應用程式名稱。 此名稱將在安裝期間出現於啟動載入器所使用的 UI 中。  
-  
-- `ApplicationRequiresElevation`  
-  
-   選擇性的 `Boolean` 參數。  
-  
-   如果是 `true`，則在目標電腦上安裝元件時，該元件會以更高的權限來執行。  
-  
-- `ApplicationUrl`  
-  
-   選擇性的 `String` 參數。  
-  
-   指定裝載應用程式安裝程式的 Web 位置。  
-  
-- `BootstrapperComponentFiles`  
-  
-   選擇性的 `String[]` 輸出參數。  
-  
-   指定啟動載入器封裝檔案的建置位置。  
-  
-- `BootstrapperItems`  
-  
-   選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。  
-  
-   指定要在啟動載入器內建置的產品。 傳遞給此參數的項目應具有下列語法：  
-  
+- `ApplicationFile`
+
+   選擇性的 `String` 參數。
+
+   指定啟動載入器將用來在安裝所有必要條件之後開始安裝應用程式的檔案。 如果未指定 `BootstrapperItems` 和 `ApplicationFile` 參數，將會產生建置錯誤。
+
+- `ApplicationName`
+
+   選擇性的 `String` 參數。
+
+   指定啟動載入器將安裝的應用程式名稱。 此名稱將在安裝期間出現於啟動載入器所使用的 UI 中。
+
+- `ApplicationRequiresElevation`
+
+   選擇性的 `Boolean` 參數。
+
+   如果是 `true`，則在目標電腦上安裝元件時，該元件會以更高的權限來執行。
+
+- `ApplicationUrl`
+
+   選擇性的 `String` 參數。
+
+   指定裝載應用程式安裝程式的 Web 位置。
+
+- `BootstrapperComponentFiles`
+
+   選擇性的 `String[]` 輸出參數。
+
+   指定啟動載入器封裝檔案的建置位置。
+
+- `BootstrapperItems`
+
+   選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。
+
+   指定要在啟動載入器內建置的產品。 傳遞給此參數的項目應具有下列語法：
+
   ```xml
   <BootstrapperItem
       Include="ProductCode">
@@ -75,77 +75,77 @@ ms.locfileid: "55853777"
       </ProductName>
   </BootstrapperItem>
   ```
-  
-   `Include` 屬性代表應該安裝的必要條件名稱。 `ProductName` 項目中繼資料為選擇性，而且萬一找不到套件，建置引擎將使用它作為易記名稱。 除非未指定 `ApplicationFile`，否則這些項目不是必要的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 輸入參數。 您應該基於每個必須針對您應用程式安裝的必要條件包含一個項目。  
-  
-   如果未指定 `BootstrapperItems` 和 `ApplicationFile` 參數，將會產生建置錯誤。  
-  
-- `BootstrapperKeyFile`  
-  
-   選擇性的 `String` 輸出參數。  
-  
-   指定 *setup.exe* 的建置位置  
-  
-- `ComponentsLocation`  
-  
-   選擇性的 `String` 參數。  
-  
-   指定啟動載入器用來尋找要安裝之安裝必要條件的位置。 此參數的值如下：  
-  
-  - `HomeSite`：表示必要條件已由元件廠商所裝載。  
-  
-  - `Relative`：表示必要條件位於應用程式的相同位置。  
-  
-  - `Absolute`：表示可在集中式 URL 中找到所有元件。 此值應該與 `ComponentsUrl` 輸入參數搭配使用。  
-  
-    如果未指定 `ComponentsLocation`，預設會使用 `HomeSite`。  
-  
-- `ComponentsUrl`  
-  
-   選擇性的 `String` 參數。  
-  
-   指定包含安裝必要條件的 URL。  
-  
-- `CopyComponents`  
-  
-   選擇性的 `Boolean` 參數。  
-  
-   如果是 `true`，啟動載入器會將所有輸出檔案複製到 `OutputPath` 參數中指定的路徑。 `BootstrapperComponentFiles` 參數的值全部都應以此路徑為依據。 如果是 `false`，不會複製檔案，而 `BootstrapperComponentFiles` 值會以 `Path` 參數的值為依據。  此參數的預設值為 `true`。  
-  
-- `Culture`  
-  
-   選擇性的 `String` 參數。  
-  
-   指定用於啟動載入器 UI 和安裝必要條件的文化特性。 無法使用指定的文化特性時，工作會使用 `FallbackCulture` 參數的值。  
-  
-- `FallbackCulture`  
-  
-   選擇性的 `String` 參數。  
-  
-   指定用於啟動載入器 UI 和安裝必要條件的次要文化特性。  
-  
-- `OutputPath`  
-  
-   選擇性的 `String` 參數。  
-  
-   指定要複製 *setup.exe* 和所有套件檔案的位置。  
-  
-- `Path`  
-  
-   選擇性的 `String` 參數。  
-  
-   指定所有可用必要條件封裝的位置。  
-  
-- `SupportUrl`  
-  
-   選擇性的 `String` 參數。  
-  
-   指定在啟動載入器安裝失敗時提供的 URL。  
-  
-- `Validate`  
-  
-   選擇性的 `Boolean` 參數。  
-  
+
+   `Include` 屬性代表應該安裝的必要條件名稱。 `ProductName` 項目中繼資料為選擇性，而且萬一找不到套件，建置引擎將使用它作為易記名稱。 除非未指定 `ApplicationFile`，否則這些項目不是必要的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 輸入參數。 您應該基於每個必須針對您應用程式安裝的必要條件包含一個項目。
+
+   如果未指定 `BootstrapperItems` 和 `ApplicationFile` 參數，將會產生建置錯誤。
+
+- `BootstrapperKeyFile`
+
+   選擇性的 `String` 輸出參數。
+
+   指定 *setup.exe* 的建置位置
+
+- `ComponentsLocation`
+
+   選擇性的 `String` 參數。
+
+   指定啟動載入器用來尋找要安裝之安裝必要條件的位置。 此參數的值如下：
+
+  - `HomeSite`：表示必要條件已由元件廠商所裝載。
+
+  - `Relative`：表示必要條件位於應用程式的相同位置。
+
+  - `Absolute`：表示可在集中式 URL 中找到所有元件。 此值應該與 `ComponentsUrl` 輸入參數搭配使用。
+
+    如果未指定 `ComponentsLocation`，預設會使用 `HomeSite`。
+
+- `ComponentsUrl`
+
+   選擇性的 `String` 參數。
+
+   指定包含安裝必要條件的 URL。
+
+- `CopyComponents`
+
+   選擇性的 `Boolean` 參數。
+
+   如果是 `true`，啟動載入器會將所有輸出檔案複製到 `OutputPath` 參數中指定的路徑。 `BootstrapperComponentFiles` 參數的值全部都應以此路徑為依據。 如果是 `false`，不會複製檔案，而 `BootstrapperComponentFiles` 值會以 `Path` 參數的值為依據。  此參數的預設值為 `true`。
+
+- `Culture`
+
+   選擇性的 `String` 參數。
+
+   指定用於啟動載入器 UI 和安裝必要條件的文化特性。 無法使用指定的文化特性時，工作會使用 `FallbackCulture` 參數的值。
+
+- `FallbackCulture`
+
+   選擇性的 `String` 參數。
+
+   指定用於啟動載入器 UI 和安裝必要條件的次要文化特性。
+
+- `OutputPath`
+
+   選擇性的 `String` 參數。
+
+   指定要複製 *setup.exe* 和所有套件檔案的位置。
+
+- `Path`
+
+   選擇性的 `String` 參數。
+
+   指定所有可用必要條件封裝的位置。
+
+- `SupportUrl`
+
+   選擇性的 `String` 參數。
+
+   指定在啟動載入器安裝失敗時提供的 URL。
+
+- `Validate`
+
+   選擇性的 `Boolean` 參數。
+
    如果是 `true`，啟動載入器會在指定的輸入啟動載入器項目上執行 XSD 驗證。 此參數的預設值為 `false`。
 
 ## <a name="remarks"></a>備註
@@ -176,5 +176,5 @@ ms.locfileid: "55853777"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[工作](../msbuild/msbuild-tasks.md)  
-[工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638e49a2e2146503186eb26f25e67ff68bb4a354
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042058"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696736"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio 偵錯工具初探
 
@@ -27,7 +27,7 @@ ms.locfileid: "55042058"
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>設定中斷點，並啟動偵錯工具
 
-若要偵錯，您必須啟動已將偵錯工具附加到應用程式處理序的應用程式。 **F5** 鍵 ([偵錯] > [開始偵錯]) 是執行此作業的最常見方式。 不過，目前您可能尚未設定任何中斷點來檢查應用程式程式碼；因此我們會先執行此作業，再開始偵錯。 中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值或記憶體的行為，或查看程式碼分支是否正在執行。 
+若要偵錯，您必須啟動已將偵錯工具附加到應用程式處理序的應用程式。 **F5** 鍵 ([偵錯] > [開始偵錯]) 是執行此作業的最常見方式。 不過，目前您可能尚未設定任何中斷點來檢查應用程式程式碼；因此我們會先執行此作業，再開始偵錯。 中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值或記憶體的行為，或查看程式碼分支是否正在執行。
 
 如果您已在程式碼編輯器中開啟檔案，透過按一下程式碼行左側的邊界即可設定中斷點。
 

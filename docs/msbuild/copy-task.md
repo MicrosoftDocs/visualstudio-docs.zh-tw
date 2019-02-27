@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f974cde33103f86aa7330600e87c856119f537c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: d996aa0c16c67cfdda23a1ecb63adcbb32d02b15
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853543"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596291"
 ---
 # <a name="copy-task"></a>Copy 工作
 將檔案複製到檔案系統上的新位置。
@@ -34,7 +34,7 @@ ms.locfileid: "55853543"
 ## <a name="parameters"></a>參數
 下表說明 `Copy` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`CopiedFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含已成功複製的項目。|
 |`DestinationFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要將來源檔案複製到其中的檔案清單。 此清單與 `SourceFiles` 參數中指定的清單應該是一對一對應。 也就是，會將 `SourceFiles` 中指定的第一個檔案複製到 `DestinationFiles` 中指定的第一個位置，依此類推。|
@@ -111,5 +111,5 @@ ms.locfileid: "55853543"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[工作](../msbuild/msbuild-tasks.md)  
-[工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

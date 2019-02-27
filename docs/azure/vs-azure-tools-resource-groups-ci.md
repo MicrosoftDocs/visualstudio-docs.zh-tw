@@ -4,19 +4,19 @@ description: 使用 Visual Studio 中的 Azure 資源群組部署專案在 Azure
 author: mlearned
 manager: jillfra
 ms.assetid: b81c172a-be87-4adc-861e-d20b94be9e38
-ms.service: azure-resource-manager
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: bbe4fc4f59527b73b46d95f70541202f87ffab4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c91b52d10e3692be600bdee3a0e2dd60182f0668
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139741"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841788"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>使用 Azure 資源群組部署專案在 Azure DevOps Services 中進行持續整合
+
 若要部署 Azure 範本，您需要執行各種階段的工作：建置、測試、複製到 Azure (也稱為「暫存」) 及部署範本。 有兩種不同的方式，可將範本部署到 Azure DevOps Services。 兩種方法所產生的結果都相同，因此請選擇最符合您工作流程的方法。
 
 1. 在執行 PowerShell 指令碼的組建管線 (包含在 Azure 資源群組部署專案，Deploy-AzureResourceGroup.ps1) 中新增一個步驟。 指令碼會複製構件，接著部署範本。

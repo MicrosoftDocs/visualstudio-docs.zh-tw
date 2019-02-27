@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8ef9aa27638c01b0b941284b6c5a0fff442c4c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9c5bb6bbd3d05c22b7615a027ac3fcf6aa686156
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853517"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602477"
 ---
 # <a name="build-loggers"></a>組建記錄器
 記錄器提供一種方式，讓您能夠自訂組建的輸出，並顯示訊息、錯誤或警告來回應特定的建置事件。 每個記錄器都會實作為 .NET 類別，此類別會實作 <xref:Microsoft.Build.Framework.ILogger> 介面，此介面定義於 Microsoft.Build.Framework.dll 組件中。
@@ -25,8 +25,8 @@ ms.locfileid: "55853517"
 實作記錄器時有兩種方法可供使用：
 
 - 直接實作 <xref:Microsoft.Build.Framework.ILogger> 介面。
-- 從協助程式類別 <xref:Microsoft.Build.Utilities.Logger> 衍生您的類別，此協助程式類別定義於 *Microsoft.Build.Utilities.dll* 組件中。 <xref:Microsoft.Build.Utilities.Logger> 會實作 <xref:Microsoft.Build.Framework.ILogger> 並提供部分 <xref:Microsoft.Build.Framework.ILogger> 成員的預設實作。  
-  
+- 從協助程式類別 <xref:Microsoft.Build.Utilities.Logger> 衍生您的類別，此協助程式類別定義於 *Microsoft.Build.Utilities.dll* 組件中。 <xref:Microsoft.Build.Utilities.Logger> 會實作 <xref:Microsoft.Build.Framework.ILogger> 並提供部分 <xref:Microsoft.Build.Framework.ILogger> 成員的預設實作。
+
   本主題將說明如何撰寫衍生自 <xref:Microsoft.Build.Utilities.Logger> 的簡單記錄器，並在主控台上顯示訊息來回應特定的建置事件。
 
 ## <a name="register-for-events"></a>註冊事件
@@ -61,7 +61,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 ## <a name="example"></a>範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 下列範例包含記錄器的完整程式碼。
 
 ### <a name="code"></a>程式碼
@@ -69,12 +69,12 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 ## <a name="example"></a>範例
 
-### <a name="description"></a>描述
+### <a name="description"></a>說明
 下列範例示範如何實作要將記錄寫入檔案的記錄器，而不是將它顯示在主控台視窗中。
 
 ### <a name="code"></a>程式碼
 [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
 
 ## <a name="see-also"></a>另請參閱
-[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)  
-[MSBuild 概念](../msbuild/msbuild-concepts.md)
+- [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)

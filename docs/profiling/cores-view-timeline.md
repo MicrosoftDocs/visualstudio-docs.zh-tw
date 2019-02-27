@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb0d126616827e496abc9cf45d4f54444c94a238
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7ae006788f2704459de7ef32f01385e196e28c04
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958819"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596382"
 ---
 # <a name="cores-view-timeline"></a>核心檢視時間表
-時間軸中的每個資料列都代表已分析系統上的邏輯處理器核心。 針對每個資料列，水平軸會顯示哪一個執行緒在指定時間點的邏輯核心上執行。 您可以將滑鼠指標停留在時間軸中感興趣的色彩上方，以傳回可識別執行緒的工具提示。 為了協助執行緒識別，視窗底部的圖例會顯示每個色彩所代表的內容。 使用 [縮放] 工具來放大和縮小，方法是按一下並拖曳，或按 CTRL 鍵並移動滑鼠滾輪。 切換 [核心檢視] 與 [執行緒檢視] 時，會維護縮放一致性。  
-  
-## <a name="see-also"></a>另請參閱  
- [核心檢視](../profiling/cores-view.md)   
- [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)
+時間軸中的每個資料列都代表已分析系統上的邏輯處理器核心。 針對每個資料列，水平軸會顯示哪一個執行緒在指定時間點的邏輯核心上執行。 您可以將滑鼠指標停留在時間軸中感興趣的色彩上方，以傳回可識別執行緒的工具提示。 為了協助執行緒識別，視窗底部的圖例會顯示每個色彩所代表的內容。 使用 [縮放] 工具來放大和縮小，方法是按一下並拖曳，或按 CTRL 鍵並移動滑鼠滾輪。 切換 [核心檢視] 與 [執行緒檢視] 時，會維護縮放一致性。
+
+## <a name="see-also"></a>另請參閱
+- [核心檢視](../profiling/cores-view.md)
+- [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)

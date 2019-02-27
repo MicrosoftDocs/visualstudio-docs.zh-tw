@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aadbc72f3d7bb21f313ddaae0de97ec45a7e72a3
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 3e2d81701ae121b4666a10b6ce15fd8ae71e8920
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853764"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643791"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity 工作
 從指定的檔案擷取組件識別，並輸出識別資訊。
@@ -31,7 +31,7 @@ ms.locfileid: "55853764"
 ## <a name="task-parameters"></a>工作參數
 下表說明 `GetAssemblyIdentity` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`Assemblies`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含擷取的組件識別。|
 |`AssemblyFiles`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要從中擷取識別的檔案。|
@@ -58,5 +58,5 @@ ms.locfileid: "55853764"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[工作](../msbuild/msbuild-tasks.md)  
-[工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

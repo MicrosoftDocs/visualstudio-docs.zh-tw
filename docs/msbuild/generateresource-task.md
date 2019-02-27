@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c63e9293cffca2c1b071dcd537c0f49f8faa438
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9b47c3315236dc228d3c561c4a3e0f333f5c9600
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853975"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615908"
 ---
 # <a name="generateresource-task"></a>GenerateResource 工作
 在 *.txt* 與 *.resx* (XML 資源格式) 檔案，以及 Common Language Runtime 二進位 *.resources* 檔案 (可以內嵌在執行階段二進位可執行檔，或是編譯到附屬組件中) 之間轉換。 此工作一般用來將 *.txt* 或 *.resx* 檔轉換為 *.resources* 檔。 `GenerateResource` 工作的功能類似於 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)。
@@ -31,7 +31,7 @@ ms.locfileid: "55853975"
 ## <a name="parameters"></a>參數
 下表說明 `GenerateResource` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`AdditionalInputs`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 包含此工作所執行相依性檢查的其他輸入。 例如，專案與目標檔案通常應為輸入，如有所更新時，就會重新產生所有資源。|
 |`EnvironmentVariables`|選擇性的 `String[]` 參數。<br /><br /> 指定環境變數的名稱/值組陣列，該名稱/值組除了 (或選擇性覆寫) 一般環境區塊之外，還應該傳遞至繁衍的 *resgen.exe*。|
@@ -95,5 +95,5 @@ ms.locfileid: "55853975"
 沒有 \<LogicalName > 中繼資料時，則會將資源命名為 *myAssembly.myResource.resources*。  此範例僅適用於 Visual Basic 和 Visual C# 建置流程。
 
 ## <a name="see-also"></a>另請參閱
-[工作](../msbuild/msbuild-tasks.md)  
-[工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

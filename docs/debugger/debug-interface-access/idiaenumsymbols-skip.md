@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0168c3f58cf9bd701f0cc34edf77673c70e66222
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ea2b1ea99eb2801259d58a12c359e9fffd887a64
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021438"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641206"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
-略過指定的數目的列舉型別序列中的符號。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- celt  
- [in]略過列舉序列中的符號數目。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`有沒有更多的符號，以略過。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+略過指定的數目的列舉型別序列中的符號。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>參數
+ celt
+
+[in]略過列舉序列中的符號數目。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`有沒有更多的符號，以略過。
+
+## <a name="see-also"></a>請參閱
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

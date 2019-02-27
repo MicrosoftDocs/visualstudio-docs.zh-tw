@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9db632ba38d408223928d43921da8dd188fe93d9
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 39a6316265b6b3747f247890d45a769ef9240387
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227247"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596021"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15 的現有應用程式更新
 

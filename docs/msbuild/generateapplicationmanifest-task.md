@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854105"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626618"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 工作
 產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單或原生資訊清單。 原生資訊清單在描述元件時，會定義元件的唯一身分識別，並識別組成元件的所有組件和檔案。 透過指出應用程式的進入點並指定應用程式的安全性層級之後，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單就可以擴充原生資訊清單。
@@ -32,7 +32,7 @@ ms.locfileid: "55854105"
 ## <a name="parameters"></a>參數
 下表說明 `GenerateApplicationManifest` 工作的參數。
 
-| 參數 | 描述 |
+| 參數 | 說明 |
 |---------------------------------| - |
 | `AssemblyName` | 選擇性的 `String` 參數。<br /><br /> 針對產生的資訊清單指定組件識別的 `Name` 欄位。 如果未指定此參數，會從 `EntryPoint` 或 `InputManifest` 參數來推斷名稱。 如果無法建立名稱，工作便會擲回錯誤。 |
 | `AssemblyVersion` | 選擇性的 `String` 參數。<br /><br /> 針對產生的資訊清單指定組件識別的 `Version` 欄位。 如果未指定此參數，就會使用 "1.0.0.0" 的預設值。 |
@@ -73,7 +73,7 @@ ms.locfileid: "55854105"
 
 ## <a name="item-metadata"></a>項目中繼資料
 
-|中繼資料名稱|描述|
+|中繼資料名稱|說明|
 |-------------------|-----------------|
 |`DependencyType`|指出相依性是以應用程式或必要條件進行發行和安裝。 這項中繼資料可用於所有相依性，但不能用於檔案。 此中繼資料可用的值如下：<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Install 是預設值。|
 |`AssemblyType`|指出相依性為 Managed 或原生組件。 這項中繼資料可用於所有相依性，但不能用於檔案。 此中繼資料可用的值如下：<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` 是預設值，表示資訊清單產生器將會自動決定組件類型。|
@@ -88,7 +88,7 @@ ms.locfileid: "55854105"
 
 > [!NOTE]
 > 在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署。
-> 
+>
 > [!NOTE]
 > 如需本範例中 `SignFile` 工作所使用之 `Thumbprint` 屬性的詳細資訊，請參閱 [SignFile 工作](../msbuild/signfile-task.md)。
 
@@ -141,7 +141,7 @@ ms.locfileid: "55854105"
 
 > [!NOTE]
 > 在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署。
-> 
+>
 > [!NOTE]
 > 如需本範例中 `SignFile` 工作所使用之 `Thumbprint` 屬性的詳細資訊，請參閱 [SignFile 工作](../msbuild/signfile-task.md)。
 
@@ -199,7 +199,7 @@ ms.locfileid: "55854105"
 
 > [!NOTE]
 > 在以下範例中，所有應用程式二進位檔都會預先建置，以便讓您專注於資訊清單產生的各個方面。 這個範例會產生能夠完整運作的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署。
-> 
+>
 > [!NOTE]
 > 如需本範例中 `SignFile` 工作所使用之 `Thumbprint` 屬性的詳細資訊，請參閱 [SignFile 工作](../msbuild/signfile-task.md)。
 
@@ -350,7 +350,7 @@ ms.locfileid: "55854105"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[工作](../msbuild/msbuild-tasks.md)  
-[GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)  
-[SignFile 工作](../msbuild/signfile-task.md)  
-[工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)
+- [GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)
+- [SignFile 工作](../msbuild/signfile-task.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

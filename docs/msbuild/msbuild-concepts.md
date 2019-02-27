@@ -10,17 +10,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7226476942497121fd94fbfdf8c902ad5ec4c05f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12f0c8f2235db4c5eb332d52a454bd0093a34b68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987852"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606666"
 ---
 # <a name="msbuild-concepts"></a>MSBuild 概念
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供基本的 XML 結構描述，讓您可用來控制組建平台建置軟體的方式。 若要指定組建中的元件以及建置它們的方式，請使用下列這四個 MSBuild 組件︰屬性、項目、工作和目標。  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供基本的 XML 結構描述，讓您可用來控制組建平台建置軟體的方式。 若要指定組建中的元件以及建置它們的方式，請使用下列這四個 MSBuild 組件︰屬性、項目、工作和目標。
 
-## <a name="related-topics"></a>相關主題  
+## <a name="related-topics"></a>相關主題
 
 | 標題 | 說明 |
 | - | - |

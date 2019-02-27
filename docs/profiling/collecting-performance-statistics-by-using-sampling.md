@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d84af066a7d267c4fca6af206d6ff7c064f744e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 97644776f4197e2f3286d29cbd3f746f7ecd0b15
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917142"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56653901"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>使用取樣收集效能統計資料
 

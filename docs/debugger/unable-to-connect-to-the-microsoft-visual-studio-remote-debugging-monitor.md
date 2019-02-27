@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e10252a2065e45a1b2dd14e00972415e24738601
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b74b924d8d3e10192940686fac0ffce88e3f153
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926926"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692862"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 因為遠端偵錯監視未正確設定遠端電腦上或遠端電腦因為網路問題或防火牆存在而無法存取，可能會發生此訊息。
-  
+
 > [!IMPORTANT]
 >  如果您認為您收到此訊息是因為產品錯誤，請[報告這個問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)Visual studio。 如果您需要更多協助，請參閱 [Talk to Us](../ide/talk-to-us.md) 與 Microsoft 連絡。
 
@@ -106,16 +106,16 @@ Visual Studio 無法連接到遠端偵錯工具。 此訊息可能會發生，�
 
 ## <a name="security_package"></a> 發生了安全性套件的特定錯誤
 
-這可能是舊版的 Windows XP 和 Windows 7 的特定問題。 請參閱此[資訊](https://stackoverflow.com/questions/4786016/unable-to-connect-to-the-microsoft-remote-debugging-monitor-a-security-package)。 
+這可能是舊版的 Windows XP 和 Windows 7 的特定問題。 請參閱此[資訊](https://stackoverflow.com/questions/4786016/unable-to-connect-to-the-microsoft-remote-debugging-monitor-a-security-package)。
 
 ## <a name="causes-and-recommendations"></a>原因和建議
 
-### <a name="dns"></a> 找不到遠端電腦 
+### <a name="dns"></a> 找不到遠端電腦
 
 如果您無法連線使用的遠端電腦名稱，請嘗試改為使用的 IP 位址。 您可以使用`ipconfig`取得 IPv4 位址在遠端電腦上的命令列。 如果您使用主機檔案，請確認已正確設定。
 
 如果失敗，請確認遠端電腦是透過網路存取 ([ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10))遠端電腦)。 不支援透過網際網路的遠端偵錯，除非在一些 Microsoft Azure 」 案例。
-  
+
 ### <a name="server_incorrect"></a> 伺服器名稱不正確，或第三方軟體干擾遠端偵錯工具
 
 在 Visual Studio 中，查看專案屬性，並確定伺服器名稱正確。 請參閱主題[C#和 Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp)並[c + +](../debugger/remote-debugging-cpp.md#remote_cplusplus)。 針對 ASP.NET 中，開啟**屬性 / Web / 伺服器**或是**屬性 / 偵錯**視您的專案類型而定。
@@ -125,11 +125,11 @@ Visual Studio 無法連接到遠端偵錯工具。 此訊息可能會發生，�
 
 伺服器名稱正確無誤，如果您的防毒軟體或協力廠商防火牆可能封鎖了遠端偵錯工具。 當在本機偵錯，這可能是因為 Visual Studio 是 32 位元應用程式，讓它使用 64 位元版本的遠端偵錯工具偵錯 64 位元應用程式。 使用本機電腦內的區域網路進行通訊的 32 位元和 64 位元處理程序。 雖然沒有網路流量離開電腦，但協力廠商的安全性軟體很可能會封鎖通訊。
 
-### <a name="user_accounts"></a> 遠端偵錯工具在不同的使用者帳戶下執行 
+### <a name="user_accounts"></a> 遠端偵錯工具在不同的使用者帳戶下執行
 
-遠端偵錯工具，根據預設，僅接受來自啟動遠端偵錯工具和系統管理員群組的成員之使用者的連線。 其他使用者必須明確授與權限。 
- 
-您可以使用下列方式的其中之一解決這個問題：  
+遠端偵錯工具，根據預設，僅接受來自啟動遠端偵錯工具和系統管理員群組的成員之使用者的連線。 其他使用者必須明確授與權限。
+
+您可以使用下列方式的其中之一解決這個問題：
 
 -   Visual Studio 使用者加入遠端偵錯工具的權限 (在 [遠端偵錯工具] 視窗中，選擇**工具 > 權限**)。
 
@@ -137,33 +137,33 @@ Visual Studio 無法連接到遠端偵錯工具。 此訊息可能會發生，�
 
     > [!NOTE]
     > 如果您在遠端伺服器上執行遠端偵錯工具，以滑鼠右鍵按一下 遠端偵錯工具應用程式，並選擇**系統管理員身分執行**（或者，您可以執行遠端偵錯工具即服務）。 如果您不會執行它，在遠端伺服器上，只是正常方式啟動。
-  
--   您可以從命令列使用 **/allow \<使用者名稱>** 參數：`msvsmon /allow <username@computer>` 啟動遠端偵錯工具。 
-  
+
+-   您可以從命令列使用 **/allow \<使用者名稱>** 參數：`msvsmon /allow <username@computer>` 啟動遠端偵錯工具。
+
 -   或者，您可以允許任何使用者執行遠端偵錯。 在遠端偵錯工具視窗中，移至 [工具] > [選項] 對話方塊。 當您選取 [無驗證]   時，可以接著選取 [允許任何使用者執行偵錯] 。 不過，您應該嘗試此選項，只有當其他選項都失敗，或如果您是在私人網路上。
 
-### <a name="firewall"></a> 遠端電腦上的防火牆不允許連入連線至遠端偵錯工具  
+### <a name="firewall"></a> 遠端電腦上的防火牆不允許連入連線至遠端偵錯工具
  Visual Studio 電腦上的防火牆和遠端電腦上的防火牆必須設定為允許 Visual Studio 和遠端偵錯工具之間的通訊。 如需遠端偵錯工具所用連接埠的相關資訊，請參閱 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。 如需設定 Windows 防火牆的相關資訊，請參閱 [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md)。
-  
-### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>遠端偵錯工具的版本與 Visual Studio 版本不相符  
+
+### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>遠端偵錯工具的版本與 Visual Studio 版本不相符
  您在本機執行的 Visual Studio 版本必須符合遠端電腦執行的遠端偵錯監視版本。 若要修正這個問題，請下載並安裝相符的遠端偵錯監視版本。 若要取得正確的遠端偵錯工具版本，請參閱[遠端偵錯](../debugger/remote-debugging.md)。
-  
-### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>本機和遠端電腦的驗證模式不同  
+
+### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>本機和遠端電腦的驗證模式不同
  本機和遠端電腦必須使用相同的驗證模式。 若要修正此問題，請確定兩部電腦使用相同的驗證模式。 您可以變更驗證模式。 在 遠端偵錯工具 視窗中，移至**工具 > 選項** 對話方塊。
-  
- 如需驗證模式的詳細資訊，請參閱 [Windows 驗證概觀](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11))。   
-  
-### <a name="anti-virus-software-is-blocking-the-connections"></a>防毒軟體封鎖連線  
- Windows 防毒軟體允許遠端偵錯工具連接，但某些協力廠商的防毒軟體可能會封鎖它們。 請檢查防毒軟體文件以了解如何允許這些連線。  
-  
-### <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>網路安全性原則封鎖了遠端電腦與 Visual Studio 之間的通訊  
- 檢閱您的網路安全性確定它沒有封鎖通訊。 如需有關 Windows 網路安全性原則的詳細資訊，請參閱 <<c0> [ 安全性原則設定](/windows/device-security/security-policy-settings/security-policy-settings)。  
-  
-### <a name="the-network-is-too-busy-to-support-remote-debugging"></a>網路太忙碌無法支援遠端偵錯  
- 您可能需要在別的時間執行遠端偵錯，或重新排定其他時間的網路工作。  
-  
-## <a name="more-help"></a>詳細的說明  
+
+ 如需驗證模式的詳細資訊，請參閱 [Windows 驗證概觀](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11))。
+
+### <a name="anti-virus-software-is-blocking-the-connections"></a>防毒軟體封鎖連線
+ Windows 防毒軟體允許遠端偵錯工具連接，但某些協力廠商的防毒軟體可能會封鎖它們。 請檢查防毒軟體文件以了解如何允許這些連線。
+
+### <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>網路安全性原則封鎖了遠端電腦與 Visual Studio 之間的通訊
+ 檢閱您的網路安全性確定它沒有封鎖通訊。 如需有關 Windows 網路安全性原則的詳細資訊，請參閱 <<c0> [ 安全性原則設定](/windows/device-security/security-policy-settings/security-policy-settings)。
+
+### <a name="the-network-is-too-busy-to-support-remote-debugging"></a>網路太忙碌無法支援遠端偵錯
+ 您可能需要在別的時間執行遠端偵錯，或重新排定其他時間的網路工作。
+
+## <a name="more-help"></a>詳細的說明
  若要取得更多的遠端偵錯工具的說明，請開啟 遠端偵錯工具的 說明 頁面 (**協助 > 使用量**遠端偵錯工具中)。
-  
-## <a name="see-also"></a>請參閱  
- [Remote Debugging](../debugger/remote-debugging.md)
+
+## <a name="see-also"></a>請參閱
+- [Remote Debugging](../debugger/remote-debugging.md)
