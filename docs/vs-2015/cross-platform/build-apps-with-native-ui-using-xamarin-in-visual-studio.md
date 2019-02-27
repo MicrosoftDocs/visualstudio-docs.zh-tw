@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8cbcbb562267f776b04aad8387e853bd1f58b5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aaae5621f3e371deb34506a9f0bd5cc64602c3f3
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764574"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841801"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -519,7 +519,7 @@ ms.locfileid: "54764574"
 
 2.  選取適當的裝置或模擬器目標，然後按 F5 鍵以啟動應用程式。
 
-3.  在裝置或模擬器中，則將有效的美國郵遞區號輸入編輯方塊 (例如：60601)，然後按**獲知天氣**。 該地區的天氣資料隨即會顯示在控制項中。
+3.  在裝置上或模擬器中，於編輯方塊中輸入有效的美國郵遞區號 (例如：60601)，然後按 [Get Weather]\(獲知天氣)。 該地區的天氣資料隨即會顯示在控制項中。
 
      ![Android 及 Windows Phone 的氣象應用程式](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -625,7 +625,7 @@ ms.locfileid: "54764574"
 
 2.  按 F5 鍵以啟動應用程式。
 
-3.  在 Windows Phone 模擬器中，輸入有效的美國郵遞區號編輯方塊 (例如：60601)，然後按**獲知天氣**。 該地區的天氣資料隨即會顯示在控制項中。
+3.  在 Windows Phone 模擬器中，於編輯方塊中輸入有效的美國郵遞區號輸入 (例如：60601)，然後按 [Get Weather]\(獲知天氣)。 該地區的天氣資料隨即會顯示在控制項中。
 
      ![執行中應用程式的 Windows 版本](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
@@ -644,4 +644,4 @@ ms.locfileid: "54764574"
  PCL 中的共用程式碼是非平台相關的，因為 PCL 只編譯一次，並隨附於每個平台專屬的應用程式封裝中。 如果您想要撰寫共用程式碼，以使用條件式編譯來隔離平台專屬的程式碼，您可以使用「共用」專案。 如需詳細資訊，請參閱[程式碼共用選項 (英文)](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com)。
 
 ## <a name="see-also"></a>請參閱
- [Xamarin 開發人員網站](http://developer.xamarin.com/) [Windows 開發人員中心](https://dev.windows.com/en-us) [Swift 和C#快速參考海報](http://aka.ms/scposter)
+ [Xamarin 開發人員網站](http://developer.xamarin.com/) [Windows 開發人員中心](https://dev.windows.com/en-us) [Swift 和C#快速參考海報](https://aka.ms/scposter)

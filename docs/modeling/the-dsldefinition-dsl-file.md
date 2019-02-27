@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 876868d8c2faf483f1033bab1ff8ac14f6e9ab10
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88c2198f0908e0ef8f7918d42f4ba256378e0e60
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956905"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841840"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 檔
 
@@ -70,7 +70,7 @@ ms.locfileid: "55956905"
 
 此區段定義設計工具 （編輯器），它結合了**工具箱**，驗證設定、 圖表和序列化配置。 [設計工具] 區段也定義模型的根類別，此類別通常也是圖表的根類別。
 
-### <a name="explorer"></a>Explorer
+### <a name="explorer"></a>總管
 
 本節說明**DSL explorer** （定義於 XmlSerializationBehavior 區段） 的行為。
 
@@ -78,7 +78,7 @@ ms.locfileid: "55956905"
 
 在整個 DslDefinition.dsl 檔中，您都可以使用 Moniker 建立對特定項目的交互參考。 例如，每一個關聯性定義都包含 [來源] 子區段和 [目標] 子區段。 每一個子區段都包含可與該關聯性連結的物件類別 Moniker：
 
-```
+```xml
 <DomainRelationship ...        Name="LibraryHasMembers" Namespace="ExampleNamespace" >    <Source>      <DomainRole ...>
        <RolePlayer>
          <DomainClassMoniker Name="Library" />
@@ -89,7 +89,7 @@ ms.locfileid: "55956905"
 
 通常，所參考項目 (在本範例中為 `Library` 網域類別) 的命名空間與參考方項目 (在這個案例中是 LibraryHasMembers 網域關聯性) 相同。 在那些案例中，Moniker 必須僅提供類別的名稱。 否則，您應使用完整格式 /命名空間/名稱：
 
-```
+```xml
 <DomainClassMoniker Name="/ExampleNameSpace/Library" />
 ```
 
@@ -107,7 +107,7 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 每一個外部類型定義都由名稱和命名空間所組成，如 String 與 System：
 
-```
+```xml
 <ExternalType Name="String" Namespace="System" />
 ```
 
@@ -119,7 +119,7 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 一般的列舉規格類似以下範例：
 
-```
+```xml
 <DomainEnumeration IsFlags="true" Name="PageSort"          Namespace="Fabrikam.Wizard">
   <Literals>
     <EnumerationLiteral Name="Start" Value="1"/>
@@ -136,7 +136,7 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 每一個類別都有一組屬性，並可能具有基底類別。 在「元件圖」範例中，`NamedElement` 是具有 `Name` 屬性的抽象類別，其類型為字串：
 
-```
+```xml
 <DomainClass Id="ee3161ca-2818-42c8-b522-88f50fc72de8"  Name="NamedElement" Namespace="Fabrikam.CmptDsl5"      DisplayName="Named Element"  InheritanceModifier="Abstract">
   <Properties>
     <DomainProperty Id="ef553cf0-33b5-4e34-a30b-cfcfd86f2261"   Name="Name" DisplayName="Name"  DefaultValue="" Category="" IsElementName="true">
@@ -150,7 +150,7 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 `NamedElement` 是數個其他類別 (例如 `Component`) 的基底，此基底除了 `Name` 屬性 (繼承自 `NamedElement`) 外還有自己的屬性。 BaseClass 子節點包含 Moniker 參考。 由於參考的類別在相同的命名空間中，因此 Moniker 中只需要其名稱：
 
-```
+```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
   <BaseClass>
     <DomainClassMoniker Name="NamedElement" />
@@ -194,7 +194,7 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 類型必須參考 `Types` 區段中列出的其中一個類型。 一般而言，Moniker 必須包括命名空間。
 
-```
+```xml
 <DomainProperty Name="Name" DisplayName="Name"  DefaultValue="" Category="" IsElementName="true">
   <Type>
     <ExternalTypeMoniker Name="/System/String" />
@@ -246,13 +246,13 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 -   角色的 `Name` 是在 Relationship 類別內用來參考該連結端的名稱。 依照慣例，角色名稱一律為單數，因為每個連結在每一端都只有一個執行個體。 下列程式碼將可運作：
 
-    ```
+    ``` 
     Connection connectionLink = ...; OutPort op = connectionLink.Source;
     ```
 
 -   根據預設，`IsPropertyGenerator` 屬性設為 true。 如果它設為 false，則 Role Player 類別上不會建立任何屬性。 (在該情況下，`op.Targets` (舉例而言) 將無法運作。) 不過，如果自訂程式碼明確使用關聯性，仍然可以使用自訂程式碼周遊關聯性或取得連結本身的存取權：
 
-    ```
+    ``` 
     OutPort op = ...; foreach (InPort ip in Connection.GetTargets(op)) ...
     foreach (Connection link in Connection.GetLinksToTargets(op)) ...
     ```
@@ -287,7 +287,7 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 「元件圖」範例包含 ShapeMap for InPort 的 ParentElementPath 中之路徑。 這個路徑的開頭如下所示：
 
-```
+``` 
     ComponentHasPorts.Component
 ```
 
@@ -295,13 +295,13 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 在撰寫 C# 針對此模型時，您可以透過在一個步驟中的連結跳利用上每個類別與它相關的屬性關聯性產生：
 
-```
+``` 
      InPort port; ...  Component c = port.Component;
 ```
 
 不過，您必須在「路徑語法」中明確地執行兩個躍點。 由於此要求，您可以更輕鬆地存取中繼連結。 下列程式碼完成從連結到 Component 的躍點：
 
-```
+``` 
     ComponentHasPorts.Component / ! Component
 ```
 
@@ -313,7 +313,7 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 只有在可能的主機類別 (如 Component) 具有新項目之類別的項目合併指示詞時，該主機類別才會接受新項目。 例如，Name="Component" 的 DomainClass 節點包含：
 
-```
+```xml
 <DomainClass Name="Component" ...> ...
     <ElementMergeDirective>
       <Index>
@@ -337,7 +337,7 @@ ComponentModel 是語言的根類別，具有元件和註解的項目合併指�
 
 例如，您可以將此項目合併指示詞加入 Component 類別：
 
-```
+```xml
 <DomainClass Name="Component" ...> ...
   <ElementMergeDirective>
     <Index>
@@ -372,7 +372,7 @@ ComponentModel 是語言的根類別，具有元件和註解的項目合併指�
 
 -   **ElementName**字串，以決定此類別的序列化執行個體的 XML 標記。 依照慣例，ElementName 通常與類別名稱相同，但是例外情形為第一個字母是小寫。 例如，模型檔案範例的開頭如下：
 
-    ```
+    ```xml
     <componentModel ...
     ```
 
@@ -380,7 +380,7 @@ ComponentModel 是語言的根類別，具有元件和註解的項目合併指�
 
 -   **MonikerAttributeName**，以識別 moniker 內的 XML 屬性名稱。 在使用者序列化檔案的片段中，定義特定領域語言的作者**MonikerElementName**為"inPortMoniker"並**MonikerAttributeName**為"path":
 
-    ```
+    ```xml
     <inPortMoniker path="//Component2/InPort1" />
     ```
 
@@ -400,7 +400,7 @@ A **DomainPropertyMoniker**屬性會識別資料所參考的屬性。 此屬性 
 
 在序列化的模型檔案中，項目的完整 Moniker 是從模型根向下到內嵌關聯性之樹狀結構的路徑，引用每一個點上的 Moniker 索引鍵。 例如，InPorts 內嵌於元件內，而元件又內嵌於模型根。 因此，有效的 Moniker 為：
 
-```
+```xml
 <inPortMoniker name="//Component2/InPort1" />
 ```
 
@@ -418,7 +418,7 @@ A **DomainPropertyMoniker**屬性會識別資料所參考的屬性。 此屬性 
 
 例如，DslDefinition.dsl 檔包含：
 
-```
+```xml
 <XmlClassData ElementName="component" ...>
   <DomainClassMoniker Name="Component" />
   <ElementData>
@@ -429,10 +429,10 @@ A **DomainPropertyMoniker**屬性會識別資料所參考的屬性。 此屬性 
 
 因此，序列化的檔案包含：
 
-```
-<component name="Component1"> <!-- parent ->
-   <ports> <!-- role ->
-     <outPort name="OutPort1"> <!-- child element ->
+```xml
+<component name="Component1"> <!-- parent -->
+   <ports> <!-- role -->
+     <outPort name="OutPort1"> <!-- child element -->
        ...
      </outPort>
    </ports> ...
@@ -440,7 +440,7 @@ A **DomainPropertyMoniker**屬性會識別資料所參考的屬性。 此屬性 
 
 如果**UseFullForm**屬性設為 true，以增加額外的巢狀導入。 此圖層代表關聯性本身。 如果關聯性具有屬性 (properties)，則此屬性 (attribute) 必須設為 true。
 
-```
+```xml
 <XmlClassData ElementName="outPort">
    <DomainClassMoniker Name="OutPort" />
    <ElementData>
@@ -453,11 +453,11 @@ A **DomainPropertyMoniker**屬性會識別資料所參考的屬性。 此屬性 
 
 序列化的檔案包含：
 
-```
-<outPort name="OutPort1">  <!-- Parent ->
-   <targets>  <!-- role ->
-     <connection sourceRoleName="X">  <!-- relationship link ->
-         <inPortMoniker name="//Component2/InPort1" /> <!-- child ->
+```xml
+<outPort name="OutPort1">  <!-- Parent -->
+   <targets>  <!-- role -->
+     <connection sourceRoleName="X">  <!-- relationship link -->
+         <inPortMoniker name="//Component2/InPort1" /> <!-- child -->
      </connection>
     </targets>
   </outPort>
@@ -467,9 +467,9 @@ A **DomainPropertyMoniker**屬性會識別資料所參考的屬性。 此屬性 
 
 如果**OmitElement**屬性設為 true，關聯性角色名稱省略，則這縮寫序列化的檔案，並不會模糊不清，如果兩個類別有一個以上的關聯性。 例如: 
 
-```
+```xml
 <component name="Component3">
-  <!-- only one relationship could get here: ->
+  <!-- only one relationship could get here: -->
   <outPort name="OutPort1">
      <targets> ...
 ```
@@ -482,7 +482,7 @@ DslDefinition.dsl 檔本身是序列化的檔案，符合網域指定的語言�
 
 -   **類別**已**RoleElementName**定義域專屬語言與 DomainClass 之間的關聯性。
 
-```
+```xml
 <Dsl Name="CmptDsl5" ...>
   <Classes>
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
@@ -490,7 +490,7 @@ DslDefinition.dsl 檔本身是序列化的檔案，符合網域指定的語言�
 
 -   **XmlSerializationBehavior**屬性會在內嵌`Dsl`屬性，但**OmitElement**屬性已設定的內嵌關聯性上。 因此，沒有任何 `RoleElementName` 屬性介於其間。 相反地， **ClassData**屬性是`RoleElementName`屬性之間的內嵌關聯性**XmlSerializationBehavior**屬性和**XmlClassData**屬性。
 
-```
+```xml
 <Dsl Name="CmptDsl5" ...> ...
   <XmlSerializationBehavior Name="ComponentsSerializationBehavior" >
     <ClassData>
@@ -500,7 +500,7 @@ DslDefinition.dsl 檔本身是序列化的檔案，符合網域指定的語言�
 
 -   ConnectorHasDecorators 是 `Connector` 與 `Decorator` 之間的內嵌關聯性。 `UseFullForm` 已設定，可讓關聯性名稱和連接器物件之每個連結的屬性清單一起顯示 。 不過，`OmitElement` 也已設定，這樣就沒有任何 `RoleElementName` 會封入內嵌於 `Connector` 內的多個連結：
 
-```
+```xml
 <Connector Name="AssociationLink" ...>
   <ConnectorHasDecorators Position="TargetTop" ...>
     <TextDecorator Name="TargetRoleName"   />
@@ -527,7 +527,7 @@ DslDefinition.dsl 檔本身是序列化的檔案，符合網域指定的語言�
 
 在下列範例中，`ShapeMap` 項目最少具有網域類別的 Moniker、圖形的 Moniker，以及 `ParentElementPath` 項目：
 
-```
+```xml
 <ShapeMap>
   <DomainClassMoniker Name="InPort" />
   <ParentElementPath>
@@ -549,7 +549,7 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
 該模型的根目錄沒有圖形對應。 改為直接從具有 `Class` 項目的圖表參考根目錄：
 
-```
+```xml
 <Diagram Name="ComponentDiagram" >
     <Class>
       <DomainClassMoniker Name="ComponentModel" />
@@ -568,7 +568,7 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
 最小連接器對應會參考連接器和關聯性：
 
-```
+```xml
 <ConnectorMap>
   <ConnectorMoniker Name="CommentLink" />
   <DomainRelationshipMoniker Name="CommentsReferenceComponents" />
@@ -579,6 +579,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
 ## <a name="see-also"></a>另請參閱
 
-- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
 - [了解模型、類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e7e9e61ffd20828d73cef9c4ce3831d613d69bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 89bfc33aaf4b3f80ee6b80a93ad6b71dd3786599
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922221"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627060"
 ---
 # <a name="makedir-task"></a>MakeDir 工作
 建立目錄，以及任何父目錄 (如有必要)。
@@ -31,7 +31,7 @@ ms.locfileid: "55922221"
 ## <a name="parameters"></a>參數
 下表說明 `MakeDir` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`Directories`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要建立的目錄集合。|
 |`DirectoriesCreated`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 這項工作所建立的目錄。 如果無法建立某些目錄，就可能未包含所有已傳入 `Directories` 參數的項目。|
@@ -58,5 +58,5 @@ ms.locfileid: "55922221"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[工作](../msbuild/msbuild-tasks.md)  
-[工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

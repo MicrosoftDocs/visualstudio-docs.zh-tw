@@ -1,5 +1,5 @@
 ---
-title: HOW TO：在 MSBuild 中逸出特殊字元 | Microsoft Docs
+title: 作法：在 MSBuild 中逸出特殊字元 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 752f4c6535f498b074d2c85b4b7cb6e9870ea862
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 983e10f26e6fd1d8b4b7ff18c73edd65cb4810f4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853936"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634626"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>HOW TO：在 MSBuild 中逸出特殊字元
 
@@ -51,6 +51,6 @@ ms.locfileid: "55853936"
 請使用標記 `%<xx>` 取代特殊字元，其中 `<xx>` 代表 ASCII 字元的十六進位值。 例如，若要使用星號 (`*`) 作為常值字元，請使用值 `%2A`。
 
 ## <a name="see-also"></a>另請參閱
-[MSBuild 概念](../msbuild/msbuild-concepts.md)  
-[MSBuild](../msbuild/msbuild.md)  
-[項目](../msbuild/msbuild-items.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [項目](../msbuild/msbuild-items.md)

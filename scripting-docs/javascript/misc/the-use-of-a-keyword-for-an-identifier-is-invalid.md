@@ -1,14 +1,9 @@
 ---
 title: 識別項使用關鍵字是無效 |Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1048
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 04951b3b-a8b5-4d36-94f8-d2daee1ce0f8
-caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 009ac8a71a12b2bf9f6c079480f68a12deab846c
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: d4de3dd669dfb54fc01704b03989fa90d4412cfe
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348499"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843879"
 ---
 # <a name="the-use-of-a-keyword-for-an-identifier-is-invalid"></a>針對識別項使用關鍵字是無效的動作
 1048:針對識別項使用關鍵字是無效的動作  

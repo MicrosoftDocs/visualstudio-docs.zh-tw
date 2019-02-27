@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ebd50b42408dc7bd2642c257dece686245870f
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: ab5da58b125f86627d54547bd9f6f7cddc16c4de
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55485033"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622016"
 ---
 # <a name="getfilehash-task"></a>GetFileHash 工作
 
@@ -32,7 +32,7 @@ ms.locfileid: "55485033"
 
  下表說明 `GetFileHash` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`Files`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br />要進行雜湊的檔案。|
 |`Items`|<xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br />`Files` 輸入含設定至檔案雜湊的其他中繼資料。|
@@ -65,6 +65,6 @@ ms.locfileid: "55485033"
 
 ## <a name="see-also"></a>另請參閱
 
-[工作](../msbuild/msbuild-tasks.md)
+- [工作](../msbuild/msbuild-tasks.md)
 
-[工作參考](../msbuild/msbuild-task-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

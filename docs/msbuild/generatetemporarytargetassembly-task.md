@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3923cc545cc04b544db4771374fddabf2cc272fd
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 864c15203b0b9601f2c9f5bd1421acf48120bb41
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853865"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610030"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly 工作
 如果專案中有至少一個 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 網頁參考該專案中本機宣告的類型，<xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> 工作會產生組件。 建置流程完成之後，或如果建置流程失敗，都會將產生的組件移除。
 
 ## <a name="task-parameters"></a>工作參數
 
-| 參數 | 描述 |
+| 參數 | 說明 |
 |--------------------------| - |
 | `AssemblyName` | 必要的 **String** 參數。<br /><br /> 指定為專案所產生之組件的簡短名稱，它也是暫時產生之目標組件的名稱。 例如，如果專案產生名稱為 *WinExeAssembly.exe* 的 [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] 可執行檔，**AssemblyName** 參數的值會是 **WinExeAssembly**。 |
 | `CompileTargetName` | 必要的 **String** 參數。<br /><br /> 指定用來從原始程式碼檔產生組件的 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] 目標名稱。 一般的 **CompileTargetName** 值為 **CoreCompile**。 |
@@ -71,9 +71,9 @@ ms.locfileid: "55853865"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)  
-[工作參考](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild 參考](../msbuild/msbuild-reference.md)  
-[工作參考](../msbuild/msbuild-task-reference.md)  
-[建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[WPF XAML 瀏覽器應用程式概觀](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)
+- [工作參考](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild 參考](../msbuild/msbuild-reference.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)
+- [建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [WPF XAML 瀏覽器應用程式概觀](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

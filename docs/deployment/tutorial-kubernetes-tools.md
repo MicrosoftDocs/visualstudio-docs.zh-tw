@@ -7,18 +7,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: c6a0ba1f44d9e6d9cc0dbcce03af2705e370cbb6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e819e4935a14d3902245432b5a5c843071af0fbf
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965455"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843230"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>開始使用 Visual Studio 的 Kubernetes 工具
 
 Visual Studio Kubernetes 工具可協助簡化目標 Kubernetes 的容器化應用程式的開發。 Visual Studio 可以自動建立設定即程式碼所需的檔案來支援 Kubernetes 部署，例如 Dockerfile 和 Helm 圖表。 您可以偵錯您的程式碼，在即時 Azure Kubernetes Service (AKS) 叢集中使用 Azure 開發人員的空間，或直接發行至 AKS 叢集中從 Visual Studio 內。
 
-本教學課程涵蓋使用 Visual Studio 將 Kubernetes 支援新增至專案，並將發行至 AKS。 如果您主要使用感興趣[Azure 開發人員空格](http://aka.ms/get-azds)偵錯和測試您在 AKS 中執行的專案，您可以跳到[Azure 開發人員空格教學課程](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)改。
+本教學課程涵蓋使用 Visual Studio 將 Kubernetes 支援新增至專案，並將發行至 AKS。 如果您主要使用感興趣[Azure 開發人員空格](https://aka.ms/get-azds)偵錯和測試您在 AKS 中執行的專案，您可以跳到[Azure 開發人員空格教學課程](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)改。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -78,7 +78,7 @@ Visual Studio Kubernetes 工具可協助簡化目標 Kubernetes 的容器化應�
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>發佈至 Azure Kubernetes Service (AKS)
 
-使用中的所有這些檔案的位置，您可以撰寫和偵錯您的應用程式程式碼，使用 Visual Studio IDE，就像您永遠有。 您也可以使用[Azure 開發人員空格](http://aka.ms/get-azds)快速執行並偵錯即時在 AKS 叢集中執行程式碼。 如需詳細資訊，請參閱[Azure 開發人員空格教學課程](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
+使用中的所有這些檔案的位置，您可以撰寫和偵錯您的應用程式程式碼，使用 Visual Studio IDE，就像您永遠有。 您也可以使用[Azure 開發人員空格](https://aka.ms/get-azds)快速執行並偵錯即時在 AKS 叢集中執行程式碼。 如需詳細資訊，請參閱[Azure 開發人員空格教學課程](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
 
 一旦您的程式碼執行的方式，可以直接從 Visual Studio 發行至 AKS 叢集。
 
@@ -120,4 +120,4 @@ Visual Studio Kubernetes 工具可協助簡化目標 Kubernetes 的容器化應�
 
 深入了解在 Azure 上的 Kubernetes 開發，請閱讀[AKS 文件](/azure/aks)。
 
-深入了解 Azure 開發人員的空格，請閱讀[Azure 開發人員空間 > 文件](http://aka.ms/get-azds)
+深入了解 Azure 開發人員的空格，請閱讀[Azure 開發人員空間 > 文件](https://aka.ms/get-azds)

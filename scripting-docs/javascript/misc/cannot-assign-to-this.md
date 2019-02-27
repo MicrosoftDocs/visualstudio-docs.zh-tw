@@ -1,14 +1,9 @@
 ---
 title: 無法指派給 'this' |Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5000
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f47778075b0395e4f0791d8f485188d40fab87a4
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: f147e591969f803533bb23ff16d73ee9af2c3d27
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344170"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56839785"
 ---
 # <a name="cannot-assign-to-this"></a>無法指派給 'this'
 您嘗試指派值給**這**。 **這**是[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指的關鍵字：

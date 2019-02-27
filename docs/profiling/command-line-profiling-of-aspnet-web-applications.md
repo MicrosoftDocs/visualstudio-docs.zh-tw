@@ -11,21 +11,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 90fc485810c147ebb686382fca6bde4fd183d5ea
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 06d1f4fa13f2cdb51e7e2fe6939b449fdb1c3f78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988853"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638131"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>ASP.NET Web 應用程式的命令列分析
-本節說明從命令列使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式之效能資料的程序和選項。  
-  
+本節說明從命令列使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式之效能資料的程序和選項。
+
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
-  
+>  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
+
 ## <a name="common-tasks"></a>一般工作
-  
+
 | 工作 | 相關內容 |
 | - | - |
 | **輕鬆收集基本的 ASP.NET 分析資料：** 使用 **VSPerfASPNETCmd** 工具可收集取樣、檢測、.NET 記憶體、爭用或階層互動資料，不需要進行設定，也不需要像使用 **VSPerfCmd** 時必須重新啟動 Internet Information Services (IIS)。 **VSPerfASPNETCmd** 不允許您收集其他資料，或控制資料收集。 **注意：****VSPerfASPNETCmd** 是您使用獨立分析工具分析 ASP.NET 網站時偏好的工具。 | -   [使用 VSPerfASPNETCmd 快速進行網站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md) |
@@ -34,11 +34,11 @@ ms.locfileid: "54988853"
 | **收集 .NET 記憶體資料：** 使用取樣或檢測收集 .NET 記憶體配置資料，以顯示配置物件的大小和數目。 您也可以收集物件存留期資料，顯示每個記憶體回收層代中回收的物件大小和數目。 | -   [收集記憶體資料](../profiling/collecting-memory-data-from-an-aspnet-web-application.md) |
 | **收集並行資料：** 使用並行方法收集資源爭用資料。 **注意：** Web 應用程式不支援收集執行緒活動和視覺化資料。 | -   [收集並行資料](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md) |
 | **新增階層互動資料：** 您可以新增下列相關效能資料：[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式對 Microsoft [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] 資料庫發出的同步 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 呼叫。 | -   [收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md) |
-  
+
 ## <a name="related-tasks"></a>相關工作
 
-  
-|工作|相關內容|  
-|----------|---------------------|  
-|**分析獨立 (用戶端) 應用程式**|-   [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)|  
+
+|工作|相關內容|
+|----------|---------------------|
+|**分析獨立 (用戶端) 應用程式**|-   [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)|
 |**分析服務**|-   [分析服務](../profiling/command-line-profiling-of-services.md)|

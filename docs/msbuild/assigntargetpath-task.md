@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21678dd573030076d7248dfb7bbf47ea412cecae
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 3afe10d8bb912b911734437eb79684cdbfe9f78d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853452"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626501"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath 工作
 此工作接受檔案清單，並新增 `<TargetPath>` 屬性 (若尚未指定)。
@@ -26,7 +26,7 @@ ms.locfileid: "55853452"
 ## <a name="task-parameters"></a>工作參數
 下表說明 `AssignTargetPath` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`RootFolder`|選擇性 `string` 輸入參數。<br /><br /> 包含有目標連結的資料夾路徑。|
 |`Files`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸入參數。<br /><br /> 包含傳入的檔案清單。|
@@ -52,5 +52,5 @@ RootFolder="Resources"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[工作](../msbuild/msbuild-tasks.md)  
-[工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

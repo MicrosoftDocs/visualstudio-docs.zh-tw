@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解如何取得及管理您的 Visual Studio 訂用帳戶產品金鑰。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803820"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843715"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的產品金鑰
 
@@ -47,9 +45,9 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 
 ## <a name="locating-and-claiming-product-keys"></a>尋找和索取產品金鑰
 您必須登入 Visual Studio 訂用帳戶才能檢視您的產品金鑰。 在 [[下載]](https://my.visualstudio.com/downloads) 頁面選取特定產品的藍色 [取得金鑰] 連結，即可找到個別的產品金鑰，如下所示。  [產品金鑰](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)頁面也彙總提供所有金鑰。 如果單一產品存在多組金鑰，下載的 [備註] 欄上就會顯示附註，協助您識別應該使用的金鑰。
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![從下載頁面取得金鑰](_img/product-keys/download-get-key.png)
-    
+
 部分產品將該產品的多重版本包裝為單一下載。 在這種情況下，輸入的產品金鑰會決定要安裝的產品版本。
 有的金鑰會自動提供，例如「靜態」金鑰，因為它不需要啟用，所以您可以不限次數地使用。 有的金鑰則必須選取產品的 [取得金鑰] 連結才能領取。
 

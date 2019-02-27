@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bcf2c97e26e61b72a1279a11e8c95474099c3d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918560"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716515"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 C++ 進行偵錯
 
 Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用程式。 本主題提供了解一些基本功能的快速方法。
 
-## <a name="create-a-new-project"></a>建立新專案 
+## <a name="create-a-new-project"></a>建立新專案
 
 1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
 
@@ -47,7 +47,7 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
     取代為此程式碼 (請不要移除 `#include "stdafx.h"`)：
 
     ```c++
-    #include <list>  
+    #include <list>
     #include <iostream>
 
     using namespace std;
@@ -90,7 +90,7 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
     > [!TIP]
     > 如果在迴圈或遞迴中有中斷點，或是您有很多經常逐步執行的中斷點，請使用[條件中斷點](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)，以確保程式碼只在符合特定條件時暫停。 條件中斷點可節省時間，也可以讓您更輕鬆地偵錯難以重現的問題。
 
-    當您嘗試偵錯 C++ 中的記憶體相關失敗時，也可以使用中斷點來檢查位址值 (尋找 NULL) 和參考計數。 
+    當您嘗試偵錯 C++ 中的記憶體相關失敗時，也可以使用中斷點來檢查位址值 (尋找 NULL) 和參考計數。
 
 ## <a name="navigate-code"></a>巡覽程式碼
 
@@ -110,7 +110,7 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
     ![檢視資料提示](../debugger/media/dbg-qs-data-tip.png "檢視資料提示")
 
-    資料提示顯示 `c1` 變數的目前值，並可讓您檢查其屬性。 偵錯時，如果您看到非預期的值，則前面的數行程式碼或呼叫的數行程式碼可能有 Bug。 
+    資料提示顯示 `c1` 變數的目前值，並可讓您檢查其屬性。 偵錯時，如果您看到非預期的值，則前面的數行程式碼或呼叫的數行程式碼可能有 Bug。
 
 2. 展開資料提示以查看 `c1` 物件的目前屬性值。
 

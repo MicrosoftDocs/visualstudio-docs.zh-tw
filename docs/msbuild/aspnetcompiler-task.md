@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4ac8eef753f656e008187a23a9d9e40a0be19f16
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 90b9111d8d8ae78e5b937942df32fb84c97355fa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853595"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602269"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 工作
 `AspNetCompiler` 工作會包裝 aspnet_compiler.exe，此為先行編譯 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式的公用程式。
@@ -31,7 +31,7 @@ ms.locfileid: "55853595"
 ## <a name="task-parameters"></a>工作參數
 下表說明 `AspNetCompiler` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`AllowPartiallyTrustedCallers`|選擇性的 `Boolean` 參數。<br /><br /> 如果此參數為 `true`，強式名稱的組件將允許部分信任的呼叫端。|
 |`Clean`|選擇性的 `Boolean` 參數<br /><br /> 如果此參數為 `true`，將全新建置先行編譯的應用程式。 任何先前已編譯的元件都將重新編譯。 預設值為 `false`。 此參數 (Parameter) 對應到 aspnet_compiler.exe 上的 **-c** 參數 (Switch)。|
@@ -69,5 +69,5 @@ ms.locfileid: "55853595"
 ```
 
 ## <a name="see-also"></a>另請參閱
-* [工作](../msbuild/msbuild-tasks.md)  
+* [工作](../msbuild/msbuild-tasks.md)
 * [工作參考](../msbuild/msbuild-task-reference.md)

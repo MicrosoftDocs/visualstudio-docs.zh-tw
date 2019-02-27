@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ae786d3fa65bdf4ce591be1c8ec677a5ac757e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 853a131ce522da156f0e59aaea99bc289cd2a452
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615529"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840900"
 ---
 # <a name="projects"></a>專案
 在 Visual Studio 中，專案是容器，開發人員用來組織原始程式碼檔和其他資源，會出現在**方案總管 中**。 一般而言，專案會儲存原始程式檔和資源，例如點陣圖檔案的參考的檔案 （例如，C# 專案的.csproj 檔案）。 可讓您組織、 建置、 偵錯及部署來源的程式碼的專案，請參考 Web 服務、 資料庫和其他資源。 Vspackage 可以擴充 Visual Studio 專案系統，三種主要方式：*專案類型*，*專案子類型*，並*自訂工具*。
@@ -41,7 +41,7 @@ ms.locfileid: "56615529"
 
  說明實際發生的狀況時建立新的專案。
 
-- [VSSDK 範例](http://aka.ms/vs2015sdksamples)包含 VSSDK 處理專案和方案的範例。
+- [VSSDK 範例](https://aka.ms/vs2015sdksamples)包含 VSSDK 處理專案和方案的範例。
 
 ## <a name="related-sections"></a>相關章節
 - [深入探索 Visual Studio SDK](../../extensibility/internals/inside-the-visual-studio-sdk.md)

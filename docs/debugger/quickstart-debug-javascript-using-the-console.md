@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1056e65e769710a1092142104e87eaead37521
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: ca403045a22bb2f2aca6af537660d70c791064e3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227568"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720506"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>在 Visual Studio 中使用主控台偵錯 JavaScript
 
@@ -249,11 +249,11 @@ ms.locfileid: "56227568"
 您也可以使用 `cd` 命令來切換執行內容，但是必須知道另一個執行內容的名稱，而且您使用的參考必須在範圍內。 [目標]  清單提供更好的方式讓您存取其他執行內容。
 
 ## <a name="see-also"></a>請參閱
-[在 Visual Studio 中偵錯應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[JavaScript 主控台命令](../debugger/javascript-console-commands.md)  
-[重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[偵錯 HTML、CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)  
-[偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)  
-[產品支援和協助工具](https://visualstudio.microsoft.com/vs/support/)
+- [在 Visual Studio 中偵錯應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [JavaScript 主控台命令](../debugger/javascript-console-commands.md)
+- [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [偵錯 HTML、CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)
+- [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)
+- [產品支援和協助工具](https://visualstudio.microsoft.com/vs/support/)

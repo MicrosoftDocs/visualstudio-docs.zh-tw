@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b802503fe612b80a171a328502f8074b2f596d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbc1dd2eae7f5ef4048a1c6e92a34f7ad5aa3d9e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916609"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701702"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>深入了解 Visual Studio 中偵錯工具 Windows
 
@@ -30,7 +30,7 @@ ms.locfileid: "54916609"
 |快速監看式|SHIFT+F9|[監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)|
 |自動|CTRL+ALT+V, A|[[自動變數] 和 [區域變數] 視窗](../debugger/autos-and-locals-windows.md)|
 |區域變數|CTRL+ALT+V, L|[[自動變數] 和 [區域變數] 視窗](../debugger/autos-and-locals-windows.md)|
-|呼叫堆疊|CTRL+ALT+C|[如何：使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)|
+|呼叫堆疊|CTRL+ALT+C|[如何：使用呼叫堆疊視窗](../debugger/how-to-use-the-call-stack-window.md)|
 |即時運算|CTRL+ALT+I|[即時運算視窗](../ide/reference/immediate-window.md)|
 |平行堆疊|CTR:+SHIFT+D, S|[使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)|
 |平行監看式|CTR:+SHIFT+D, (1, 2, 3, 4)|[開始對多執行緒應用程式進行偵錯](../debugger/get-started-debugging-multithreaded-apps.md)|
@@ -39,7 +39,7 @@ ms.locfileid: "54916609"
 |GPU 執行緒|-|[如何：使用 GPU 執行緒視窗](../debugger/how-to-use-the-gpu-threads-window.md)|
 |工作|CTR:+SHIFT+D, K|[使用工作視窗](../debugger/using-the-tasks-window.md)|
 |Python 互動式偵錯|SHIFT+ALT+I|[Python 互動式 REPL](../python/python-interactive-repl-in-visual-studio.md)|
-|JavaScript 主控台|CTRL+ALT+V, C|[快速入門：針對 JavaScript 進行偵錯](../debugger/quickstart-debug-javascript-using-the-console.md)|
+|JavaScript 主控台|CTRL+ALT+V, C|[快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |DOM 總管|CTRL+ALT+V, D|[使用 DOM 總管偵錯配置](/visualstudio/debugger/quickstart-debug-html-and-css)|
 |即時視覺化樹狀結構|-|[在偵錯時檢查 XAML 屬性](../debugger/inspect-xaml-properties-while-debugging.md)|
 |即時屬性總管|-|[在偵錯時檢查 XAML 屬性](../debugger/inspect-xaml-properties-while-debugging.md)|

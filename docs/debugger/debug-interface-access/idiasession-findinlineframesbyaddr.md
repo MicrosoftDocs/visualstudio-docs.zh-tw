@@ -10,44 +10,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c46728d50531b77499d59260833a3a5f9f74e1a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e0f35f845642089a8ee2b14c6047e809d525e5bc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981710"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642894"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
-擷取列舉型別，可讓用戶端來逐一查看所有指定的位址上的內嵌框架。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT findInlineFramesByAddr (   
-   IDiaSymbol*       parent,   DWORD             isect,  
-   DWORD             offset,  
-   IDiaEnumSymbols** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `parent`  
- [in]`IDiaSymbol`物件表示父代。  
-  
- `isect`  
- [in]指定位址的區段元件。  
-  
- `offset`  
- [in]指定的位址位移的元件。  
-  
- `ppResult`  
- [out]保存`IDiaEnumSymbols`物件，其中包含所擷取的畫面格的清單。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+擷取列舉型別，可讓用戶端來逐一查看所有指定的位址上的內嵌框架。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT findInlineFramesByAddr ( 
+   IDiaSymbol*       parent,   DWORD             isect,
+   DWORD             offset,
+   IDiaEnumSymbols** ppResult
+);
+```
+
+#### <a name="parameters"></a>參數
+ `parent`
+
+[in]`IDiaSymbol`物件表示父代。
+
+ `isect`
+
+[in]指定位址的區段元件。
+
+ `offset`
+
+[in]指定的位址位移的元件。
+
+ `ppResult`
+
+[out]保存`IDiaEnumSymbols`物件，其中包含所擷取的畫面格的清單。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="see-also"></a>請參閱
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

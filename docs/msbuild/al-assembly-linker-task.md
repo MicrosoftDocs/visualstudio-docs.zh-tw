@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd28e67a629fd9922ed1ac30d497c1bb8bbe9a56
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 5e863b8a35d8ef0d5ced0a200d1033b3768df690
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854040"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624902"
 ---
 # <a name="al-assembly-linker-task"></a>AL (組件連結器) 工作
-AL 工作會包裝 AL.exe，這個工具會隨 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 而散發。 這個組件連結器工具可用來從一或多個屬於模組或資源檔的檔案中，建立包含資訊清單的組件。 編譯器和開發環境可能已經提供這些功能，因此通常不需直接使用此工作。 如果開發人員需要從多個元件檔案建立單一組件 (例如，可能是從混合式語言開發中產生的那些)，則組件連結器就非常實用。 此工作不能將多個模組合併成單一組件檔案；您仍需依序散發和提供個別的模組，才能讓產生的組件正確載入。 如需 AL.exe 的詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker)。  
+AL 工作會包裝 AL.exe，這個工具會隨 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 而散發。 這個組件連結器工具可用來從一或多個屬於模組或資源檔的檔案中，建立包含資訊清單的組件。 編譯器和開發環境可能已經提供這些功能，因此通常不需直接使用此工作。 如果開發人員需要從多個元件檔案建立單一組件 (例如，可能是從混合式語言開發中產生的那些)，則組件連結器就非常實用。 此工作不能將多個模組合併成單一組件檔案；您仍需依序散發和提供個別的模組，才能讓產生的組件正確載入。 如需 AL.exe 的詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker)。
 
-## <a name="parameters"></a>參數  
- 下表說明 `AL` 工作的參數。  
+## <a name="parameters"></a>參數
+ 下表說明 `AL` 工作的參數。
 
 
-| 參數 | 描述 |
+| 參數 | 說明 |
 |---------------------| - |
 | `AlgorithmID` | 選擇性的 `String` 參數。<br /><br /> 指定雜湊多檔案組件中所有檔案的演算法，但包含組件資訊清單的檔案除外。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中 `/algid` 選項的說明文件。 |
 | `BaseAddress` | 選擇性的 `String` 參數。<br /><br /> 指定在執行期間將 DLL 載入使用者電腦上的目標位址。 如果您指定 DLL 的基底位址，而不是讓作業系統重新找出處理序空間中的 DLL，應用程式載入的速度會更快。 此參數對應至 /base[address](/dotnet/framework/tools/al-exe-assembly-linker)。 |
@@ -69,30 +69,29 @@ AL 工作會包裝 AL.exe，這個工具會隨 [!INCLUDE[winsdklong](../deployme
 | `Win32Icon` | 選擇性的 `String` 參數。<br /><br /> 將 *.ico* 檔案插入組件中。 *.ico* 檔案會讓輸出檔案在檔案總管中以所要的外觀顯示。 此參數對應到 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中的 `/win32icon` 選項。 |
 | `Win32Resource` | 選擇性的 `String` 參數。<br /><br /> 將 Win32 資源 (*.res* 檔案) 插入輸出檔案中。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](/dotnet/framework/tools/al-exe-assembly-linker) 中 `/win32res` 選項的說明文件。 |
 
-## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數的清單及其描述，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。  
+## <a name="remarks"></a>備註
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數的清單及其描述，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。
 
-## <a name="example"></a>範例  
- 下列範例會使用指定的選項來建立組件。  
+## <a name="example"></a>範例
+ 下列範例會使用指定的選項來建立組件。
 
-```xml  
-<AL  
-    EmbedResources="@(EmbeddedResource)"  
-    Culture="%(EmbeddedResource.Culture)"  
-    TemplateFile="@(IntermediateAssembly)"  
-    KeyContainer="$(KeyContainerName)"  
-    KeyFile="$(KeyOriginatorFile)"  
-    DelaySign="$(DelaySign)"  
+```xml
+<AL
+    EmbedResources="@(EmbeddedResource)"
+    Culture="%(EmbeddedResource.Culture)"
+    TemplateFile="@(IntermediateAssembly)"
+    KeyContainer="$(KeyContainerName)"
+    KeyFile="$(KeyOriginatorFile)"
+    DelaySign="$(DelaySign)"
 
-    OutputAssembly=  
-       "%(EmbeddedResource.Culture)\$(TargetName).resources.dll">  
+    OutputAssembly=
+       "%(EmbeddedResource.Culture)\$(TargetName).resources.dll">
 
-    <Output TaskParameter="OutputAssembly"  
-        ItemName="SatelliteAssemblies"/>  
-</AL>  
-```  
+    <Output TaskParameter="OutputAssembly"
+        ItemName="SatelliteAssemblies"/>
+</AL>
+```
 
-## <a name="see-also"></a>另請參閱  
-* [工作參考](../msbuild/msbuild-task-reference.md)   
+## <a name="see-also"></a>另請參閱
+* [工作參考](../msbuild/msbuild-task-reference.md)
 * [工作](../msbuild/msbuild-tasks.md)
-

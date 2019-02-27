@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 02/12/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解有關您的 Visual Studio 訂用帳戶中包含的權益
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a3fb7fd86a5a875c16072792d9d82737b5f19160
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282218"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56839704"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>您的 Visual Studio 訂用帳戶中包含的權益
 
@@ -45,4 +43,3 @@ Visual Studio 訂用帳戶 提供最全面的一組資源，可供您在 Windows
 > 您的訂用帳戶也可能提供軟體下載的存取。  如需下載的詳細資訊，包括您的訂用帳戶隨附哪些下載，請前往 [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)。
 
 如需訂用帳戶中所包含權益的詳細資訊，請參閱 [Visual Studio 定價頁面](https://visualstudio.microsoft.com/vs/pricing/)。  特定權益的相關資訊 (包含哪些訂用帳戶包含這些權益) 可在下方的**使用訂閱者權益**主題中取得。
-

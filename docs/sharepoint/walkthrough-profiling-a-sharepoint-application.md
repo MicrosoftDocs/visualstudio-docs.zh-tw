@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf6957b0757da709a7f95ccf58b1b192e0edf098
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602035"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841717"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>逐步解說：分析 SharePoint 應用程式
   本逐步解說將示範如何使用 Visual Studio 中的程式碼剖析工具最佳化 SharePoint 應用程式的效能。 範例應用程式是 SharePoint 功能事件接收器，內含的閒置迴圈會降低功能事件接收器的效能。 Visual Studio 分析工具可讓您尋找並消除成本最高 （最慢執行） 專案的一部分，也稱為*最忙碌路徑*。
@@ -47,7 +47,7 @@ ms.locfileid: "56602035"
 ## <a name="create-a-sharepoint-project"></a>建立 SharePoint 專案
  首先，建立 SharePoint 專案。
 
-#### <a name="to-create-a-sharepoint-project"></a>若要建立 SharePoint 專案
+### <a name="to-create-a-sharepoint-project"></a>若要建立 SharePoint 專案
 
 1. 在功能表列上選擇 [**檔案** > **新增** > **專案**顯示**新專案**] 對話方塊。
 
@@ -70,7 +70,7 @@ ms.locfileid: "56602035"
 ## <a name="add-a-feature-and-feature-event-receiver"></a>新增功能和功能事件接收器
  接下來，在專案中加入功能與功能的事件接收器。 這個事件接收器會包含要分析的程式碼。
 
-#### <a name="to-add-a-feature-and-feature-event-receiver"></a>若要加入功能和功能事件接收器
+### <a name="to-add-a-feature-and-feature-event-receiver"></a>若要加入功能和功能事件接收器
 
 1.  在**方案總管 中**，開啟捷徑功能表**功能**節點，選擇**新增功能**，並將名稱保留預設值， **Feature1**.
 
@@ -191,7 +191,7 @@ ms.locfileid: "56602035"
 ## <a name="configure-and-deploy-the-sharepoint-application"></a>設定和部署 SharePoint 應用程式
  現在 SharePoint 專案已就緒，請設定它並將它部署至 SharePoint 伺服器。
 
-#### <a name="to-configure-and-deploy-the-sharepoint-application"></a>若要設定和部署 SharePoint 應用程式
+### <a name="to-configure-and-deploy-the-sharepoint-application"></a>若要設定和部署 SharePoint 應用程式
 
 1.  在 **分析**功能表上，選擇**啟動效能精靈**。
 
@@ -214,7 +214,7 @@ ms.locfileid: "56602035"
 ## <a name="run-the-sharepoint-application"></a>執行 SharePoint 應用程式
  啟用 SharePoint 中的功能，觸發 `FeatureActivation` 事件程式碼使其執行。
 
-#### <a name="to-run-the-sharepoint-application"></a>若要執行 SharePoint 應用程式
+### <a name="to-run-the-sharepoint-application"></a>若要執行 SharePoint 應用程式
 
 1.  在 SharePoint 中，開啟**網站動作**功能表，然後選擇**站台設定**。
 
@@ -235,7 +235,7 @@ ms.locfileid: "56602035"
 ## <a name="view-and-interpret-the-profile-results"></a>檢視和解譯的設定檔結果
  現在您已執行並分析 SharePoint 應用程式，接下來要檢視測試結果。
 
-#### <a name="to-view-and-interpret-the-profile-results"></a>若要檢視和解譯的設定檔結果
+### <a name="to-view-and-interpret-the-profile-results"></a>若要檢視和解譯的設定檔結果
 
 1.  在 **執行最多個別工作的函式**一節的範例程式碼剖析報表，請注意，`TimeCounter`會靠近清單的頂端。
 
@@ -256,7 +256,7 @@ ms.locfileid: "56602035"
 ## <a name="fix-the-code-and-reprofile-the-application"></a>修正程式碼，並重新分析應用程式
  現在已找出 SharePoint 應用程式中的作用點函式，加下來要進行修正。
 
-#### <a name="to-fix-the-code-and-reprofile-the-application"></a>若要修正程式碼並重新分析應用程式
+### <a name="to-fix-the-code-and-reprofile-the-application"></a>若要修正程式碼並重新分析應用程式
 
 1.  在功能事件接收器程式碼中，將 `TimeCounter` 中的 `FeatureActivated` 方法呼叫標記為註解，以防止呼叫它。
 

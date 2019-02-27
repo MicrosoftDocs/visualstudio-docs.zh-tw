@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a4a6e65929e6c437481397e5aadb6bbe4d1f33
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978928"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692563"
 ---
 # <a name="messages-menu-commands"></a>訊息功能表命令
-**訊息**功能表提供控制訊息檢視命令。  
-  
- **啟動/停止記錄**  
- 啟動或停止 [訊息] 檢視。  
-  
- [記錄選項]  
- 會開啟**MessageOptions**對話方塊中，您可以在其中指定訊息的搜尋準則。  
-  
- [清除記錄檔]  
- 清除 使用中的 訊息 檢視的內容。
+**訊息**功能表提供控制訊息檢視命令。
+
+ **啟動/停止記錄**會啟動或停止訊息檢視。
+
+ **記錄選項**會開啟**MessageOptions**對話方塊中，您可以在其中指定訊息的搜尋準則。
+
+ **清除記錄檔**清除作用中的 [訊息] 檢視的內容。

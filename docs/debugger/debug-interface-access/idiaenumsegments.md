@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39ac47f107c7365e2932d36084b2fc114934daba
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 255c55dff0dab0c7b36f5029de9e688db949a1fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227351"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623563"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 列舉各種資料來源中包含的區段。
@@ -31,7 +31,7 @@ IDiaEnumSegments : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
 下表顯示的方法`IDiaEnumSegments`。
 
-|方法|描述|
+|方法|說明|
 |------------|-----------------|
 |[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|擷取[IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)這個列舉值的版本。|
 |[IDiaEnumSegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md)|擷取區段的數目。|
@@ -72,6 +72,6 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>請參閱
-[介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaTable](../../debugger/debug-interface-access/idiatable.md)  
-[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

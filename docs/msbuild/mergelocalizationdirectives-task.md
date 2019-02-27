@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb537f045f3ed2409dfcf0def2826057fd55687
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5814ea188de7d3c5b7aba78ab1b239d1e9fe29e1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927735"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627216"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 工作
 <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> 工作會將一或多個 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 二進位格式檔案的當地語系化屬性和註解合併到適用於整個組件的單一檔案。
 
 ## <a name="task-parameters"></a>工作參數
 
-| 參數 | 描述 |
+| 參數 | 說明 |
 |------------------------------| - |
 | `GeneratedLocalizationFiles` | 必要的 **ITaskItem[]** 參數。<br /><br /> 針對個別的 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 二進位格式檔案指定當地語系化指示詞檔案清單。 |
 | `OutputFile` | 必要的 **String** 輸出參數。<br /><br /> 指定編譯的當地語系化指示詞組件的輸出路徑。 |
@@ -55,8 +55,8 @@ ms.locfileid: "55927735"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)  
-[WPF MSBuild 工作參考](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild 參考](../msbuild/msbuild-reference.md)  
-[MSBuild 工作參考](../msbuild/msbuild-task-reference.md)  
-[建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
+- [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)
+- [WPF MSBuild 工作參考](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild 參考](../msbuild/msbuild-reference.md)
+- [MSBuild 工作參考](../msbuild/msbuild-task-reference.md)
+- [建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

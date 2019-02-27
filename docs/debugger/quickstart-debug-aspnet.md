@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 01c523abf6b6302831fee53e2546ba606089467c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027362"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683593"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 ASP.NET 進行偵錯
 
 Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用程式。 本主題提供了解一些基本功能的快速方法。
 
-## <a name="create-a-new-project"></a>建立新專案 
+## <a name="create-a-new-project"></a>建立新專案
 
 1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
 
@@ -110,7 +110,7 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
     ![檢視資料提示](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    資料提示顯示 `c2` 變數的目前值，並可讓您檢查其屬性。 偵錯時，如果您看到非預期的值，則前面的數行程式碼或呼叫的數行程式碼可能有 Bug。 
+    資料提示顯示 `c2` 變數的目前值，並可讓您檢查其屬性。 偵錯時，如果您看到非預期的值，則前面的數行程式碼或呼叫的數行程式碼可能有 Bug。
 
 2. 展開資料提示以查看 `c2` 物件的目前屬性值。
 

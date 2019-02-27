@@ -18,57 +18,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 577a87d9faccbb110011eb1fe9bdc6ddb6b3d732
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8cfe294e94acce70f48b96265b3edc491b37e668
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919365"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56653865"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 工作
-將所指定項目的路徑寫入至指定的文字檔。  
-  
-## <a name="task-parameters"></a>工作參數  
- 下表說明 `WriteLinestoFile` 工作的參數。  
-  
-|參數|說明|  
-|---------------|-----------------|  
-|`File`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要寫入項目的檔案。|  
-|`Lines`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要寫入至檔案的項目。|  
-|`Overwrite`|選擇性的 `Boolean` 參數。<br /><br /> 如果 `true`，則工作會覆寫檔案中的任何現有內容。|  
-|`Encoding`|選擇性的 `String` 參數。<br /><br /> 選取字元編碼 (例如，"Unicode")。  請參閱 <xref:System.Text.Encoding>。|  
-|`WriteOnlyWhenDifferent`|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，則會先讀取指定的目標檔案 (如果存在)，以便與已經寫入的工作進行比較。 如果相同，則不會將檔案寫入到磁碟，而且將會保留時間戳記。|  
+將所指定項目的路徑寫入至指定的文字檔。
 
-## <a name="remarks"></a>備註  
- 如果 `Overwrite` 是 `true`，會建立新檔案，並將內容寫入至檔案，然後關閉檔案。 如果檔案已經存在，則會覆寫該檔案。 如果 `Overwrite` 是 `false`，會將內容附加至檔案，如果目標檔案不存在，則會建立該檔案。  
-  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
-  
-## <a name="example"></a>範例  
- 下列範例會使用 `WriteLinesToFile` 工作將 `MyItems` 項目集合中的項目路徑寫入至 `MyTextFile` 項目集合所指定的檔案。  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MyTextFile Include="Items.txt"/>  
-        <MyItems Include="*.cs"/>  
-    </ItemGroup>  
-  
-    <Target Name="WriteToFile">  
-        <WriteLinesToFile  
-            File="@(MyTextFile)"  
-            Lines="@(MyItems)"  
-            Overwrite="true"  
-            Encoding="Unicode"/>  
-    </Target>  
-  
-</Project>  
+## <a name="task-parameters"></a>工作參數
+ 下表說明 `WriteLinestoFile` 工作的參數。
+
+|參數|說明|
+|---------------|-----------------|
+|`File`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要寫入項目的檔案。|
+|`Lines`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要寫入至檔案的項目。|
+|`Overwrite`|選擇性的 `Boolean` 參數。<br /><br /> 如果 `true`，則工作會覆寫檔案中的任何現有內容。|
+|`Encoding`|選擇性的 `String` 參數。<br /><br /> 選取字元編碼 (例如，"Unicode")。  請參閱 <xref:System.Text.Encoding>。|
+|`WriteOnlyWhenDifferent`|選擇性的 `Boolean` 參數。<br /><br /> 若為 `true`，則會先讀取指定的目標檔案 (如果存在)，以便與已經寫入的工作進行比較。 如果相同，則不會將檔案寫入到磁碟，而且將會保留時間戳記。|
+
+## <a name="remarks"></a>備註
+ 如果 `Overwrite` 是 `true`，會建立新檔案，並將內容寫入至檔案，然後關閉檔案。 如果檔案已經存在，則會覆寫該檔案。 如果 `Overwrite` 是 `false`，會將內容附加至檔案，如果目標檔案不存在，則會建立該檔案。
+
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
+
+## <a name="example"></a>範例
+ 下列範例會使用 `WriteLinesToFile` 工作將 `MyItems` 項目集合中的項目路徑寫入至 `MyTextFile` 項目集合所指定的檔案。
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MyTextFile Include="Items.txt"/>
+        <MyItems Include="*.cs"/>
+    </ItemGroup>
+
+    <Target Name="WriteToFile">
+        <WriteLinesToFile
+            File="@(MyTextFile)"
+            Lines="@(MyItems)"
+            Overwrite="true"
+            Encoding="Unicode"/>
+    </Target>
+
+</Project>
 ```
 
 在此範例中，我們使用內嵌新行字元的屬性來撰寫多行文字檔案。 如果 `Lines` 中的項目內嵌新行字元，則輸出檔案中將會包含新行。 如此一來，就可以參考多行屬性。
 
-```xml  
+```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -89,8 +89,8 @@ dotnet %~dp0$(AssemblyName).dll %*
         Lines="$(LauncherCmd)" />
   </Target>
 </Project>
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [工作](../msbuild/msbuild-tasks.md)   
- [工作參考](../msbuild/msbuild-task-reference.md)
+```
+
+## <a name="see-also"></a>另請參閱
+- [工作](../msbuild/msbuild-tasks.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

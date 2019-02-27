@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41b157e3448c4000ddd49dc31b97dc26b0a40561
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 440c7d19382b813b3f34451d7c177c6e8b57f16f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944406"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613228"
 ---
 # <a name="idiastackwalkframeputregistervalue"></a>IDiaStackWalkFrame::put_registerValue
-設定暫存器值。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT put_registerValue (   
-   DWORD     index,  
-   ULONGLONG NewVal  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `index`  
- [in]值，以從[CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)指定將寫入暫存器的列舉類型。  
-  
- `NewVal`  
- [in]新的暫存器值。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
- [CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)
+設定暫存器值。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT put_registerValue ( 
+   DWORD     index,
+   ULONGLONG NewVal
+);
+```
+
+#### <a name="parameters"></a>參數
+ `index`
+
+[in]值，以從[CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)指定將寫入暫存器的列舉類型。
+
+ `NewVal`
+
+[in]新的暫存器值。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="see-also"></a>請參閱
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+- [CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)

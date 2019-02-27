@@ -1,6 +1,6 @@
 ---
 title: 單元測試基本概念
-ms.date: 2016-01-07
+ms.date: 01/07/2016
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63d2da519bc51149051a3f2476fb6d3a7623bb39
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922351"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796825"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -84,7 +84,7 @@ public void Withdraw(double amount)
 
 1. 在程式碼編輯器視窗中，以滑鼠右鍵按一下並從右鍵功能表中選擇 [建立單元測試]。
 
-    ![從編輯器視窗，檢視操作功能表](../test/media/createunittestsrightclick.png)
+    ![從編輯器視窗，檢視內容功能表](../test/media/createunittestsrightclick.png)
 
 2. 按一下 [確定] 接受預設值來建立單元測試，或變更過去用來建立和命名單元測試專案和單元測試的值。 您可以選取預設加入此單元測試方法的程式碼。
 
@@ -226,7 +226,7 @@ public void My_Test ()
 > [!WARNING]
 > 只有 Visual Studio Enterprise 支援在每次建置之後執行單元測試。
 
-|按鈕|描述|
+|按鈕|說明|
 |-|-|
 |![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機組建之後執行單元測試，請選擇標準功能表上的 [測試]，然後在 [測試總管] 工具列上選擇 [建置之後執行測試]。|
 
@@ -236,7 +236,7 @@ public void My_Test ()
 
 ![搜尋篩選條件分類](../test/media/ute_searchfilter.png)
 
-|按鈕|描述|
+|按鈕|說明|
 |-|-|
 |![[測試總管] 的 [群組] 按鈕](../test/media/ute_groupby_btn.png)|若要依分類將測試分組，請選擇 [群組依據]  按鈕。|
 

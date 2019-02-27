@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea5dc0d2516ab7cf3c4e26b5e8f39328eabe47cb
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 39b732a962f648f0c812f3f9d37df7dcf17296ce
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853439"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626605"
 ---
 # <a name="createproperty-task"></a>CreateProperty 工作
 將傳入的值填入屬性中。 這允許將值從某個屬性或字串複製至另一個屬性或字串。
@@ -31,7 +31,7 @@ ms.locfileid: "55853439"
 ## <a name="attributes"></a>屬性
 下表說明 `CreateProperty` 工作的參數。
 
-| 參數 | 描述 |
+| 參數 | 說明 |
 |------------------| - |
 | `Value` | 選擇性的 `String` 輸出參數。<br /><br /> 指定要複製至新屬性的值。 |
 | `ValueSetByTask` | 選擇性的 `String` 輸出參數。<br /><br /> 包含與 `Value` 參數相同的值。 因輸出具有最新資訊而略過封入目標時，只有在您想要避免具有 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所設定的輸出屬性時，才使用此參數。 |
@@ -67,5 +67,5 @@ ms.locfileid: "55853439"
 執行專案之後，`NewFile` 屬性的值是 *Module1.vb*。
 
 ## <a name="see-also"></a>另請參閱
-[工作參考](../msbuild/msbuild-task-reference.md)  
-[工作](../msbuild/msbuild-tasks.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：收集 Windows 事件追蹤 (ETW) 資料 | Microsoft Docs
+title: 作法：收集 Windows 事件追蹤 (ETW) 資料 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f4259a28976f7fc622c0b0cf8948bc2ad891a8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d9734c75f078380649009d10da13ed8c926e5e16
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024925"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620534"
 ---
-# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>HOW TO：收集 Windows 事件追蹤 (ETW) 資料
+# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>作法：收集 Windows 事件追蹤 (ETW) 資料
 
 Windows 事件追蹤 (ETW) 是高效率的核心層級追蹤功能，可讓程式碼剖析工具記錄核心或應用程式定義的事件。 從事件提供者收集的資料，只能透過 /**Summary:ETW** option of the [VSPerfReport](../profiling/vsperfreport.md)命令列工具檢視。 您可使用此報告來判斷應用程式中發生效能問題的癥結。
 

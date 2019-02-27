@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 893b073c2722fc91e342d37f0aeb2a490fccb53a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bc943fe059850b024a5067d36bcc14d258ca5565
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919985"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635068"
 ---
 # <a name="wpf-overview"></a>WPF 概觀
 
@@ -347,7 +347,7 @@ WPF 動畫支援可讓您將控制項設為放大、搖晃、旋轉和淡出，�
 
 下圖中的視窗顯示執行中的 <xref:System.Windows.Controls.MediaElement> 控制項。
 
-![具有音訊與視訊的 MediaElement 控制項](../designers/media/wpfintrofigure1.png)
+![具有視訊與音訊的 MediaElement 控制項](../designers/media/wpfintrofigure1.png)
 
 如需詳細資訊，請參閱[圖形和多媒體](/dotnet/framework/wpf/graphics-multimedia)。
 

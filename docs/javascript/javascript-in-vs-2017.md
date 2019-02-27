@@ -1,13 +1,8 @@
 ---
-title: Visual Studio 中的 JavaScript | Microsoft Docs
-ms.custom: ''
+title: JavaScript
 ms.date: 01/15/2019
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-nodejs
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-nodejs
+ms.topic: conceptual
 dev_langs:
 - JavaScript
 - TypeScript
@@ -17,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
-ms.openlocfilehash: ee22803c7a479c6d22821a9a6b267cd72938792e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: faee8d414f324adce2a3e732ace301d45b13f3df
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012998"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844083"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 

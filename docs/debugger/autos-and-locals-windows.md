@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec262838de1a154e35a13f0a1b14e7b075f934de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941979"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636901"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>檢查 [自動變數] 和 [區域變數] 視窗中的變數
 
 **自動變數**並**區域變數**在偵錯時，windows 會顯示變數的值。 在偵錯工作階段期間，才可以使用 windows。 **自動變數**視窗會顯示目前中斷點周圍使用的變數。 **區域變數**視窗會顯示在本機的範圍中，通常是目前函式或方法定義的變數。 如果這是您嘗試偵錯程式碼的第一次，您可能想要閱讀[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)並[偵錯的技術和工具](../debugger/write-better-code-with-visual-studio.md)之前，先透過這篇文章。
 
  **自動變數**視窗可供C#，Visual Basic、 c + + 和 Python 程式碼，但不適用於 JavaScript 或F#。
-  
-若要開啟 **自動變數**視窗中的，偵錯時，選取**偵錯** > **Windows** > **自動變數**，或按**Ctrl**+**Alt**+**V** > **A**。  
+
+若要開啟 **自動變數**視窗中的，偵錯時，選取**偵錯** > **Windows** > **自動變數**，或按**Ctrl**+**Alt**+**V** > **A**。
 
 若要開啟 **區域變數**視窗中的，偵錯時，選取**偵錯** > **Windows** > **區域變數**，或按**Alt**+**4**。
 
@@ -142,13 +142,15 @@ private static int subtractVars(int i, int j)
 
 若要查看的傳回值`sumVars()`和`subtractVars()`方法會呼叫 [自動變數] 視窗中：
 
-1. 在 `int x = sumVars(a, b) + subtractVars(c, d);` 行上設定中斷點。  
-   
-1. 開始偵錯，以及時的中斷點處暫停執行，選取**不進入函式**或按**F10**。 您應該會看到下列中的傳回值**自動變數**視窗：  
-   
-  ![自動變數傳回值C# ](../debugger/media/autosreturnvaluecsharp2.png "自動變數傳回值C#")  
-  
-## <a name="see-also"></a>另請參閱  
- [什麼是偵錯？](../debugger/what-is-debugging.md)  
- [偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)  
- [第一次查看偵錯](../debugger/debugger-feature-tour.md)[偵錯工具視窗](../debugger/debugger-windows.md)
+1. 在 `int x = sumVars(a, b) + subtractVars(c, d);` 行上設定中斷點。
+
+1. 開始偵錯，以及時的中斷點處暫停執行，選取**不進入函式**或按**F10**。 您應該會看到下列中的傳回值**自動變數**視窗：
+
+  ![自動變數傳回值C# ](../debugger/media/autosreturnvaluecsharp2.png "自動變數傳回值C#")
+
+## <a name="see-also"></a>另請參閱
+
+- [什麼是偵錯？](../debugger/what-is-debugging.md)
+- [偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)
+- [率先一睹偵錯](../debugger/debugger-feature-tour.md)
+- [偵錯工具視窗](../debugger/debugger-windows.md)

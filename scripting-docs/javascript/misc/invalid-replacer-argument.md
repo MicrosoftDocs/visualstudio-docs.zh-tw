@@ -1,14 +1,9 @@
 ---
 title: 無效的取代子引數 |Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5035
 dev_langs:
@@ -20,12 +15,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f144e733bf115cc98bf61b23a2ed3e4e3cda1e0
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 640eefb53304de48e4ad2398a02910a1cff1b57d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346211"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841282"
 ---
 # <a name="invalid-replacer-argument"></a>無效的取代子引數
 已嘗試叫用`JSON.stringify`不是有效的引數。 `replacer`引數必須是函式或陣列。  

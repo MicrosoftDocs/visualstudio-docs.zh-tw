@@ -12,43 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4924d7e18df75183f65233d237c4b76772c08b1d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6fb271a03a8932989d6201329c441a21a226f559
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016963"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614281"
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
-擷取這個符號的原始類型。 使用時機[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設為型別。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_unmodifiedType(   
-   IDiaSymbol** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pRetVal`  
- [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示這個符號的原始型別。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
-  
+擷取這個符號的原始類型。 使用時機[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設為型別。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_unmodifiedType( 
+   IDiaSymbol** pRetVal
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pRetVal`
+
+[out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示這個符號的原始型別。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
-  
-## <a name="remarks"></a>備註  
- 目前的類型是傳回的原始型別所做的修改。 符號的原始型別可以先取得符號的類型，和接著詢問所傳回的原始類型的類型來判斷。 請注意一些符號可能不會有原始類型的修改的類型。  
-  
-## <a name="requirements"></a>需求  
- 標頭：dia2.h  
-  
- 程式庫： diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。
+
+## <a name="remarks"></a>備註
+ 目前的類型是傳回的原始型別所做的修改。 符號的原始型別可以先取得符號的類型，和接著詢問所傳回的原始類型的類型來判斷。 請注意一些符號可能不會有原始類型的修改的類型。
+
+## <a name="requirements"></a>需求
+ 標頭： Dia2.h
+
+ 程式庫： diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>請參閱
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

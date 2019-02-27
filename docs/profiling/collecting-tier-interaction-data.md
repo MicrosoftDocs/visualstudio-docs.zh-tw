@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 453dd2d93b8ac3c1a9ba2d194f20ee14897d6fa3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fcdab1fcb776a729d00a143dfc318053b74c5cf5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918650"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600112"
 ---
 # <a name="collect-tier-interaction-data"></a>收集階層互動資料
 

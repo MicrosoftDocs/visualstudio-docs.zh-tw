@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12c7c2edc71843377c4213764dfb30727a14d4b5
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 8b8618cc3484584430bbe3ae3fde59b6e5d5fc78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987596"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612357"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
 起始的存取權的偵錯符號的來源。
@@ -31,7 +31,7 @@ IDiaDataSource : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
 下表顯示的方法`IDiaDataSource`。
 
-|方法|描述|
+|方法|說明|
 |------------|-----------------|
 |[IDiaDataSource::get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)|擷取最後一個載入錯誤的檔案名稱。|
 |[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|隨即開啟，並準備做為偵錯資料來源的程式資料庫 (.pdb) 檔。|
@@ -70,4 +70,4 @@ if (FAILED(hr))
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>請參閱
-[介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f552e9e21baf0be0b8ad2f1a0138323ea09c0502
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 40437dfe6d7b8d46a3850f55f181ecd0c3745b70
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009228"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640736"
 ---
 # <a name="idiastackwalkframesearchforreturnaddress"></a>IDiaStackWalkFrame::searchForReturnAddress
-搜尋指定的堆疊框架之最接近的函式傳回的位址。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT searchForReturnAddress (   
-   IDiaFrameData* frame,  
-   ULONGLONG*     returnAddress  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `frame`  
- [in][IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)物件，表示目前的堆疊框架。  
-  
- `returnAddress`  
- [out]傳回最接近的函式傳回的位址。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+搜尋指定的堆疊框架之最接近的函式傳回的位址。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT searchForReturnAddress ( 
+   IDiaFrameData* frame,
+   ULONGLONG*     returnAddress
+);
+```
+
+#### <a name="parameters"></a>參數
+ `frame`
+
+[in][IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)物件，表示目前的堆疊框架。
+
+ `returnAddress`
+
+[out]傳回最接近的函式傳回的位址。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="see-also"></a>請參閱
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

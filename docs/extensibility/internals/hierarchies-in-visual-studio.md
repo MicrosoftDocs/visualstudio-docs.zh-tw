@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9466e081aad6e5e928198b4d6f43d9f68c4eee8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 437372a5b88e58c12b7a7d34102d87afce5c086b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616881"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841775"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio 中的階層
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 會顯示與專案*階層*。 在 IDE 中，階層是樹狀結構的節點，其中每個節點都有一組相關聯的屬性。 A*專案階層架構*是保留的專案項目，這些項目的關聯性，和的項目相關聯的屬性和命令的容器。
@@ -35,4 +35,4 @@ ms.locfileid: "56616881"
 ## <a name="see-also"></a>另請參閱
 - [專案類型](../../extensibility/internals/project-types.md)
 - [選取項目及在 IDE 中的貨幣](../../extensibility/internals/selection-and-currency-in-the-ide.md)
-- [VSSDK 範例](http://aka.ms/vs2015sdksamples)
+- [VSSDK 範例](https://aka.ms/vs2015sdksamples)

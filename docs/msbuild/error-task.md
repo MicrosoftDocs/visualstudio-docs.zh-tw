@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc603d11a087fb413896b9ae897ee730e18aae1b
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: d3788fae176b344f99884efe7552f33762255ddc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853374"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610303"
 ---
 # <a name="error-task"></a>Error 工作
 停止組建，並根據評估的條件陳述式來記錄錯誤。
@@ -31,7 +31,7 @@ ms.locfileid: "55853374"
 ## <a name="parameters"></a>參數
 下表說明 `Error` 工作的參數。
 
-| 參數 | 描述 |
+| 參數 | 說明 |
 |---------------| - |
 | `Code` | 選擇性的 `String` 參數。<br /><br /> 與錯誤相關聯的錯誤碼。 |
 | `File` | 選擇性的 `String` 參數。<br /><br /> 包含錯誤的檔案名稱。 如果沒有提供檔案名稱，將會使用包含 Error 工作的檔案。 |
@@ -63,5 +63,5 @@ ms.locfileid: "55853374"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[工作參考](../msbuild/msbuild-task-reference.md)  
-[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)
+- [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)

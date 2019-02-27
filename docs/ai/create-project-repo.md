@@ -5,15 +5,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: fd0c71e9f426c5591f9ac3ecd135c1b230ca5e20
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 73f1595e0e6c8f182f0bedcece51011390964ed2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986055"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842524"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>在 Visual Studio 中複製 Python 程式碼存放庫
 
