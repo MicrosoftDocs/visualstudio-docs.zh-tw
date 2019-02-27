@@ -12,43 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 623163353f0e1c95c073eeef91518617ba68c658
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 30a2f26a1488500f256b6ba9a0ec96eca9b952f8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922635"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626387"
 ---
 # <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
-擷取旗標，指定是否使用安全的緩衝區中的前置指示詞。 使用時機[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設定為`SymTagFunction`。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_isSafeBuffers(   
-   BOOL* pRetVal)  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pRetVal`  
- [out]會傳回`TRUE`指標會使用前置處理器指示詞進行安全的緩衝區; 否則會傳回`FALSE`。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
-  
+擷取旗標，指定是否使用安全的緩衝區中的前置指示詞。 使用時機[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設定為`SymTagFunction`。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_isSafeBuffers( 
+   BOOL* pRetVal)
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pRetVal`
+
+[out]會傳回`TRUE`指標會使用前置處理器指示詞進行安全的緩衝區; 否則會傳回`FALSE`。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
-  
-## <a name="remarks"></a>備註  
-  
-## <a name="requirements"></a>需求  
- 標頭：dia2.h  
-  
- 程式庫： diaguids.lib  
-  
- DLL: msdia100.dll  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [strict_gs_check](/cpp/preprocessor/strict-gs-check)
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。
+
+## <a name="remarks"></a>備註
+
+## <a name="requirements"></a>需求
+ 標頭： Dia2.h
+
+ 程式庫： diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>請參閱
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [strict_gs_check](/cpp/preprocessor/strict-gs-check)

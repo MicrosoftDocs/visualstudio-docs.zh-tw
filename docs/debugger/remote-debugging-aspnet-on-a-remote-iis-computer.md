@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3499465c6b1027232cb42580b2e099a2f74b83ec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08b58dd22e47844e62c0d312efc17e332c53f2c1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947474"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702170"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>在 Visual Studio 2017 中的遠端執行 IIS 的電腦上的遠端偵錯 ASP.NET Core
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝並部署您的應用程式的所在的電腦上執行遠端工具，然後連結至您執行的應用程式從 Visual Studio。
@@ -40,7 +40,7 @@ ms.locfileid: "54947474"
 
 * 如果您需要協助，請確定您的應用程式呈現設定而無法選取，部署，並在 IIS 中正確執行，以便您可以偵錯，請遵循本主題中的所有步驟。
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 的電腦上建立 ASP.NET Core 應用程式 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 的電腦上建立 ASP.NET Core 應用程式
 
 1. 建立新的 ASP.NET Core 應用程式。 (**檔案 > 新增 > 專案**，然後選取**視覺化C#> Web > ASP.NET Core Web 應用程式**)。
 
@@ -147,7 +147,7 @@ ms.locfileid: "54947474"
 在本教學課程中，我們會使用 Visual Studio 2017。
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> 設定 Windows Server 上的遠端偵錯工具
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -163,7 +163,7 @@ ms.locfileid: "54947474"
 2. 在 Visual Studio 中，按一下**偵錯 > připojit k procesu** （Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...**（shift + Alt + P）。 
+    > 在 Visual Studio 2017 中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...**（shift + Alt + P）。
 
 3. 將 [限定詞] 欄位設定為 **\<遠端電腦名稱>:4022**。
 4. 按一下 [重新整理]。
@@ -181,7 +181,7 @@ ms.locfileid: "54947474"
 7. 按一下 [附加] 。
 
 8. 開啟遠端電腦的網站。 在瀏覽器中，移至 **http://\<遠端電腦名稱>**。
-    
+
     您應該會看到 ASP.NET 網頁。
 
 9. 執行的 ASP.NET 應用程式中，按一下 連結**關於**頁面。

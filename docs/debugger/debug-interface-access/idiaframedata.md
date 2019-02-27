@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d710699912a05839ac32c582f40571b04b2de7c2
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 4e4adb0747ce569bc372daf0d36cfe1719a2ff61
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155745"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597747"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 公開 （expose) 堆疊框架的詳細的資料。
@@ -31,7 +31,7 @@ IDiaFrameData : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
 下表顯示的方法`IDiaFrameData`。
 
-|方法|描述|
+|方法|說明|
 |------------|-----------------|
 |[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|擷取框架的程式碼位址中區段的一部分。|
 |[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|擷取框架的程式碼位址位移的一部分。|
@@ -120,7 +120,7 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>請參閱
-[介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
-[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)  
-[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)
+- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+- [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)
+- [IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)

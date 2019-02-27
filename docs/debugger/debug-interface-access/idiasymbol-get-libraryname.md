@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8f996ffdae69c1a31b4c8a09f7c93b47945e077
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f832bc0472cc6b04d803dc1e5871eda62bbe451d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042149"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605636"
 ---
 # <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
-擷取要從中載入物件的文件庫或物件檔案的檔案名稱。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_libraryName (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pRetVal`  
- [out]傳回從中載入物件的文件庫或物件檔案的檔案名稱。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
-  
+擷取要從中載入物件的文件庫或物件檔案的檔案名稱。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_libraryName ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pRetVal`
+
+[out]傳回從中載入物件的文件庫或物件檔案的檔案名稱。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。
+
+## <a name="see-also"></a>請參閱
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ece73b97ec0129b2acd26c8751ab8b10909ee4ed
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bb1502c875c04955578686113d8ad491311e800d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036117"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632559"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
-建立列舉值，包含目前的列舉值相同的列舉型別狀態。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumInjectedSources** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `ppenum`  
- [out]傳回[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)物件，包含列舉值重複。 插入的來源不會重複，列舉值。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+建立列舉值，包含目前的列舉值相同的列舉型別狀態。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumInjectedSources** ppenum
+);
+```
+
+#### <a name="parameters"></a>參數
+ `ppenum`
+
+[out]傳回[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)物件，包含列舉值重複。 插入的來源不會重複，列舉值。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="see-also"></a>請參閱
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

@@ -11,38 +11,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81725869c85ea5050a4bf4df7a7bc00f82ddb9e0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7df3b27164eab0b78cdce72a8f938cb6e9743bcf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952233"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709206"
 ---
 # <a name="search-tools-for-spy-views"></a>Spy++ 檢視的搜尋工具
-您可以使用這些對話方塊來指定 Spy + + 檢視視窗會顯示哪些資料：  
-  
-## <a name="in-this-section"></a>本節內容  
- [尋找視窗對話方塊](../debugger/find-window-dialog-box.md)  
- 用來檢視屬性或從特定的視窗訊息。  
-  
- [視窗搜尋對話方塊](../debugger/window-search-dialog-box.md)  
- 用來尋找特定的時間範圍，在 [Windows] 檢視中的節點。  
-  
- [訊息搜尋對話方塊](../debugger/message-search-dialog-box.md)  
- 用來尋找訊息 檢視中的特定訊息的節點。  
-  
- [處理序搜尋對話方塊](../debugger/process-search-dialog-box.md)  
- 用來尋找特定的處理程序，在處理序檢視中的節點。  
-  
- [執行緒搜尋對話方塊](../debugger/thread-search-dialog-box.md)  
- 用來為特定執行緒在執行緒檢視中尋找的節點。  
-  
-## <a name="related-sections"></a>相關章節  
- [Spy++ 檢視](../debugger/spy-increment-views.md)  
- 說明 windows、 訊息、 處理程序和執行緒的 Spy + + 樹狀結構檢視。  
-  
- [使用 Spy++](../debugger/using-spy-increment.md)  
- 介紹 Spy + + 工具，並說明如何使用它。  
-  
- [Spy++ 參考](../debugger/spy-increment-reference.md)  
- 包含描述每個 Spy + + 功能表和對話方塊方塊中的區段。
+您可以使用這些對話方塊來指定 Spy + + 檢視視窗會顯示哪些資料：
+
+## <a name="in-this-section"></a>本節內容
+ [尋找視窗對話方塊](../debugger/find-window-dialog-box.md)用來檢視屬性或從特定的視窗訊息。
+
+ [視窗搜尋對話方塊](../debugger/window-search-dialog-box.md)用來尋找特定的時間範圍，在 [Windows] 檢視中的節點。
+
+ [訊息搜尋對話方塊](../debugger/message-search-dialog-box.md)用來尋找訊息 檢視中的特定訊息的節點。
+
+ [處理序搜尋對話方塊](../debugger/process-search-dialog-box.md)用來尋找特定的處理程序，在處理序檢視中的節點。
+
+ [執行緒搜尋對話方塊](../debugger/thread-search-dialog-box.md)用來為特定執行緒在執行緒檢視中尋找的節點。
+
+## <a name="related-sections"></a>相關章節
+ [Spy + + 檢視](../debugger/spy-increment-views.md)說明 windows、 訊息、 處理程序和執行緒的 Spy + + 樹狀結構檢視。
+
+ [使用 Spy + +](../debugger/using-spy-increment.md)介紹 Spy + + 工具，並說明如何使用它。
+
+ [Spy + + 參考](../debugger/spy-increment-reference.md)包含各節描述每個 Spy + + 功能表和對話方塊方塊。

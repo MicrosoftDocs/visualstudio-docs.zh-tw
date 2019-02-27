@@ -1,5 +1,5 @@
 ---
-title: HOW TO：顯示訊息屬性 |Microsoft Docs
+title: 如何： 顯示訊息屬性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fba742bd2239ac28957e7d392e99168c8854028f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fddccbd116f65cb22cd0e12b8435f8229298f504
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985561"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720155"
 ---
-# <a name="how-to-display-message-properties"></a>HOW TO：顯示訊息屬性
-若要深入了解中所列的訊息[訊息檢視](../debugger/messages-view.md)，使用[訊息內容 對話方塊](../debugger/message-properties-dialog-box.md)。  
-  
-### <a name="to-open-a-message-properties-dialog-box"></a>若要開啟 [訊息屬性] 對話方塊  
-  
-1. 從樹狀結構顯示在訊息檢視中選取的訊息。  
-  
-2. 從**檢視**功能表上，選擇**屬性**。  
-  
+# <a name="how-to-display-message-properties"></a>如何：顯示訊息屬性
+若要深入了解中所列的訊息[訊息檢視](../debugger/messages-view.md)，使用[訊息內容 對話方塊](../debugger/message-properties-dialog-box.md)。
+
+### <a name="to-open-a-message-properties-dialog-box"></a>若要開啟 [訊息屬性] 對話方塊
+
+1. 從樹狀結構顯示在訊息檢視中選取的訊息。
+
+2. 從**檢視**功能表上，選擇**屬性**。
+
    屬性 對話方塊不是強制回應，因此您可以按一下 檢視 視窗中的另一個項目，並在對話方塊中會顯示在選取的項目上的資訊。

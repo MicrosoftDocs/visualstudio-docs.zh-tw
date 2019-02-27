@@ -1,5 +1,5 @@
 ---
-title: HOW TO：Page Up 或在記憶體中的向下 |Microsoft Docs
+title: 如何： Page Up 或在記憶體中的向下 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,34 +19,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a1c8cc86481e73bfa851714d6e6f23c5eda5daa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b554a197afe2deef3619551af2d45d4a80708afe
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013778"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715358"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>HOW TO：在記憶體中向上或向下翻頁
+# <a name="how-to-page-up-or-down-in-memory"></a>如何：在記憶體中向上或向下翻頁
 
-當您在 [記憶體] 視窗或 [反組譯碼] 視窗中檢視記憶體內容時，可以使用垂直捲軸在記憶體空間中上下移動。  
-  
-### <a name="to-page-up-or-down-in-memory"></a>若要在記憶體中向上或向下翻頁  
-  
-1. 若要向下翻頁 (移至較高的記憶體位址)，請按一下捲動方塊下方的垂直捲軸。  
-  
-2. 若要向上翻頁 (移至較低的記憶體位址)，請按一下拇指上方的垂直捲軸。  
-  
-   您也會發現垂直捲軸的操作方式沒有一定的標準。 現代電腦的位址空間很大，如果您抓取捲軸拇指並將它拖曳到隨機位置，很容易會遺失。 因此，拇指是「彈性載入」而且一定在捲軸的中央。 在機器碼應用程式中，您可以向上或向下翻頁，但不能自由捲動。  
-  
-   在 Managed 應用程式中時，反組譯碼只有一個函式，您可以正常捲動。  
-  
-   您會發現較高的位址出現在視窗底端。 若要檢視較高的位址，就必須向下而非向上移動。  
-  
-#### <a name="to-move-up-or-down-one-instruction"></a>若要向上或向下移動一個指令  
-  
--   請按一下垂直捲軸頂端或底端的箭頭。  
-  
-## <a name="see-also"></a>請參閱  
- [記憶體視窗](../debugger/memory-windows.md)   
- [如何：使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)   
- [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)
+當您在 [記憶體] 視窗或 [反組譯碼] 視窗中檢視記憶體內容時，可以使用垂直捲軸在記憶體空間中上下移動。
+
+### <a name="to-page-up-or-down-in-memory"></a>若要在記憶體中向上或向下翻頁
+
+1. 若要向下翻頁 (移至較高的記憶體位址)，請按一下捲動方塊下方的垂直捲軸。
+
+2. 若要向上翻頁 (移至較低的記憶體位址)，請按一下拇指上方的垂直捲軸。
+
+   您也會發現垂直捲軸的操作方式沒有一定的標準。 現代電腦的位址空間很大，如果您抓取捲軸拇指並將它拖曳到隨機位置，很容易會遺失。 因此，拇指是「彈性載入」而且一定在捲軸的中央。 在機器碼應用程式中，您可以向上或向下翻頁，但不能自由捲動。
+
+   在 Managed 應用程式中時，反組譯碼只有一個函式，您可以正常捲動。
+
+   您會發現較高的位址出現在視窗底端。 若要檢視較高的位址，就必須向下而非向上移動。
+
+#### <a name="to-move-up-or-down-one-instruction"></a>若要向上或向下移動一個指令
+
+-   請按一下垂直捲軸頂端或底端的箭頭。
+
+## <a name="see-also"></a>請參閱
+- [記憶體視窗](../debugger/memory-windows.md)
+- [如何：使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)
+- [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)

@@ -1,5 +1,5 @@
 ---
-title: 錯誤：Web 伺服器未正確設定 |Microsoft Docs
+title: 錯誤： Web 伺服器未正確設定 |Microsoft Docs
 ms.date: 09/20/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd59211da9228f2940c675f889d0536fbea9045d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc0c61b766b6f93fd1321b15861000d7c628f124
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019188"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711601"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>錯誤：未正確設定 Web 伺服器
 
@@ -44,9 +44,9 @@ ms.locfileid: "55019188"
 4. (IIS)請確定正確的 ASP.NET 版本安裝在伺服器上。
 
     ASP.NET 在 IIS 上和您的 Visual Studio 專案中的版本不相符，可能會導致此問題。 您可能需要在 web.config 中設定的 framework 版本。若要在 IIS 上安裝 ASP.NET，請使用[Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx)。 此外，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)或適用於 ASP.NET Core[使用 IIS 的 Windows 上的主機](https://docs.asp.net/en/latest/publishing/iis.html)。
-  
+
 4. 如果`maxConnection`限制在 IIS 中的為太低，並有太多連線，您可能需要[增加的連線限制](/iis/configuration/system.applicationhost/sites/sitedefaults/limits)。
-  
-## <a name="see-also"></a>請參閱  
- [在遠端 IIS 電腦上對 ASP.NET 進行遠端偵錯](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   
- [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+
+## <a name="see-also"></a>請參閱
+- [在執行 IIS 的遠端電腦上對 ASP.NET 進行遠端偵錯](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
+- [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -12,41 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcfde6e7824fa0df315cb843eedb92e4d249b618
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3f99530e790594e6966611b97a3d9a2c0a0cc04d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965142"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602698"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
-擷取這個符號的編緝器特定類型的陣列。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_types (   
-   DWORD       cTypes,  
-   DWORD*      pcTypes,  
-   IDiaSymbol* types[]  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `cTypes`  
- [in]保留的資料緩衝區的大小。  
-  
- `pcTypes`  
- [out]傳回的型別所撰寫，或者，如果`types`參數是`NULL`，然後可用類型的總數。  
-  
- `types[]`  
- [out]陣列，其中是要在以填滿[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)代表這個符號的所有類型的物件。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
-  
+擷取這個符號的編緝器特定類型的陣列。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_types ( 
+   DWORD       cTypes,
+   DWORD*      pcTypes,
+   IDiaSymbol* types[]
+);
+```
+
+#### <a name="parameters"></a>參數
+ `cTypes`
+
+[in]保留的資料緩衝區的大小。
+
+ `pcTypes`
+
+[out]傳回的型別所撰寫，或者，如果`types`參數是`NULL`，然後可用類型的總數。
+
+ `types[]`
+
+[out]陣列，其中是要在以填滿[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)代表這個符號的所有類型的物件。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。
+
+## <a name="see-also"></a>請參閱
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

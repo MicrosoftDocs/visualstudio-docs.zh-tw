@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c331171a62d2319666229f108428b9d62b7464e
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 759972fa02c7645ae457e0b715d835b2d717e26f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227614"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608587"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 擷取包含在符號存放區中的所有資料表的列舉值。
@@ -31,7 +31,8 @@ HRESULT getEnumTables (
 ```
 
 #### <a name="parameters"></a>參數
-`ppEnumTables`  
+`ppEnumTables`
+
 [out]傳回[IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)物件。 您可以使用這個介面來列舉在符號存放區中的資料表。
 
 ## <a name="return-value"></a>傳回值
@@ -67,5 +68,5 @@ IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
 ```
 
 ## <a name="see-also"></a>請參閱
-[IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
