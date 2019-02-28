@@ -1,5 +1,5 @@
 ---
-title: HOW TO：啟動 Spy + + |Microsoft Docs
+title: 如何： 啟動 Spy + + |Microsoft Docs
 ms.date: 12/16/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84e16c5d540aa59ae0c5d56ccb311618ab311bd9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 91eda74b4f83f38434117ab1217d0a20d66d2842
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993453"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712446"
 ---
-# <a name="how-to-start-spy"></a>HOW TO：啟動 Spy++
+# <a name="how-to-start-spy"></a>如何：啟動 Spy++
 
-您可以啟動 Spy + + 從 Visual Studio 或命令提示字元。  
-  
- 當您啟動 Spy + + 中，如果會顯示訊息要求權限來變更電腦，請選取**是**。  
-  
+您可以啟動 Spy + + 從 Visual Studio 或命令提示字元。
+
+ 當您啟動 Spy + + 中，如果會顯示訊息要求權限來變更電腦，請選取**是**。
+
 > [!NOTE]
 >  您可以執行 Spy + + 的只有一個執行的個體。 如果您嘗試啟動第二個執行個體，它只會導致目前正在執行的執行個體，以取得焦點。
 
@@ -34,23 +34,23 @@ Spy + + 需要下列元件。 您可以從 Visual Studio 安裝程式選取這�
 * 在 [開發活動] 下選取**Visual Studio c + + 核心功能**
 
 如果您進行任何變更，請依照下列提示來安裝這些元件。
-  
+
 ## <a name="start-spy-from-visual-studio"></a>從 Visual Studio 啟動 Spy + +
-  
-在 **工具**功能表上，選取**Spy + +**。  
-  
-因為 Spy + + 會獨立執行，您在開始之後，您可以關閉 Visual Studio。  
-  
+
+在 **工具**功能表上，選取**Spy + +**。
+
+因為 Spy + + 會獨立執行，您在開始之後，您可以關閉 Visual Studio。
+
 > [!NOTE]
->  當您使用 Spy + + 記錄訊息時，它可能會造成作業系統執行速度變慢。  
-  
-## <a name="start-spy-at-a-command-prompt"></a>在命令提示字元啟動 Spy + +  
-  
-1.  在命令提示字元視窗中，將目錄變更為包含 spyxx.exe 的資料夾。 一般而言，此資料夾的路徑是...\\ *Visual Studio 安裝資料夾*\Common7\Tools\\。  
-  
-2.  請輸入**spyxx.exe**。 
-  
-## <a name="see-also"></a>另請參閱  
- [使用 Spy++](../debugger/using-spy-increment.md)   
- [Spy++ 檢視](../debugger/spy-increment-views.md)   
- [Spy++ 參考](../debugger/spy-increment-reference.md)
+>  當您使用 Spy + + 記錄訊息時，它可能會造成作業系統執行速度變慢。
+
+## <a name="start-spy-at-a-command-prompt"></a>在命令提示字元啟動 Spy + +
+
+1.  在命令提示字元視窗中，將目錄變更為包含 spyxx.exe 的資料夾。 一般而言，此資料夾的路徑是...\\ *Visual Studio 安裝資料夾*\Common7\Tools\\。
+
+2.  請輸入**spyxx.exe**。
+
+## <a name="see-also"></a>另請參閱
+- [使用 Spy++](../debugger/using-spy-increment.md)
+- [Spy++ 檢視](../debugger/spy-increment-views.md)
+- [Spy++ 參考](../debugger/spy-increment-reference.md)

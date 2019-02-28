@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 728fce7348b94d458a6ce58a86e27ad48726f23c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bcd48f421dcae74e82b0d9249a958f2a834f0a45
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935055"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603283"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>獨立應用程式的命令列分析
-本節說明從命令列使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集獨立 (用戶端) 應用程式之效能資料的程序和選項。  
+本節說明從命令列使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集獨立 (用戶端) 應用程式之效能資料的程序和選項。
 
-## <a name="common-tasks"></a>一般工作  
+## <a name="common-tasks"></a>一般工作
 
 | 工作 | 相關內容 |
 | - | - |
@@ -32,9 +32,9 @@ ms.locfileid: "54935055"
 | **新增階層互動資料：** 您可以新增下列相關效能資料：應用程式對 Microsoft [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] 資料庫所發出的同步 ADO.NET 呼叫。 若要將階層互動資料加入至程式碼剖析回合中，則需要使用命令列程式碼剖析工具的特定程序。 | -   [收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md) |
 | **試試看：** 使用逐步程序利用取樣或檢測方法來分析範例用戶端應用程式。 | -   [逐步解說：使用取樣進行命令列分析](../profiling/walkthrough-command-line-profiling-using-sampling.md)<br />-   [逐步解說：使用檢測進行命令列分析](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications) |
 
-## <a name="related-tasks"></a>相關工作  
+## <a name="related-tasks"></a>相關工作
 
-|工作|相關內容|  
-|----------|---------------------|  
-|**分析 ASP.NET 應用程式**|-   [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)|  
+|工作|相關內容|
+|----------|---------------------|
+|**分析 ASP.NET 應用程式**|-   [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)|
 |**分析服務**|-   [分析服務](../profiling/command-line-profiling-of-services.md)|

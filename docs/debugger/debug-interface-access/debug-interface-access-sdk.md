@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 161934d30c7cd4ecb9d2658e7dac12e46049be1a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 915f594a984af41da167e0fd3d58beb2f6ddd978
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932294"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608080"
 ---
 # <a name="debug-interface-access-sdk"></a>偵錯 (偵錯介面存取 SDK)
 
@@ -27,17 +27,22 @@ Microsoft 偵錯介面存取軟體開發套件 (DIA SDK) 提供的偵錯資訊�
 
 ## <a name="in-this-section"></a>本節內容
 
-[快速入門](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
+[快速入門](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)
+
 概述 DIA SDK 功能，並指定 DIA SDK 以及必要的標頭和程式庫檔案的安裝位置。
 
-[查詢 .Pdb 檔案](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+[查詢 .Pdb 檔案](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+
 提供如何使用 DIA API 來查詢.pdb 檔案的指示。
 
-[符號和符號標記](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
+[符號和符號標記](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+
 討論如何在 DIA API 中使用符號和符號標記。
 
-[參考資料](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+[參考資料](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+
 包含介面、 方法、 列舉和結構的 DIA API。
 
-[Dia2dump 範例](../../debugger/debug-interface-access/dia2dump-sample.md)  
+[Dia2dump 範例](../../debugger/debug-interface-access/dia2dump-sample.md)
+
 說明如何使用 DIA API 來搜尋和瀏覽偵錯資訊。

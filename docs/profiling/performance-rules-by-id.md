@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ccb684de1bf45f1f9afd13f1b2dd454b94f89fc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3878f22e37c281235e62e025c6b73779d3478f8b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935107"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638591"
 ---
 # <a name="performance-rules-by-id"></a>依識別碼排序的效能規則
 

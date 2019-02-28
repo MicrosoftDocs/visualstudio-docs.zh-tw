@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a120a1610e6ca62ba4c19bb5dd2289628e1d273
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: ed505499efcabd7173fea9d668cd9afa5ed6d925
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987401"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608574"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>常數 (偵錯介面存取 SDK)
 這些字串常數可用來識別不同的區段，透過 DIA SDK 的程式偵錯資料庫 (PDB) 檔。
@@ -56,7 +56,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 標頭： dia2.h
 
 ## <a name="see-also"></a>請參閱
-[參考資料](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
-[列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)
+- [參考資料](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+- [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

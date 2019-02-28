@@ -15,7 +15,6 @@ helpviewer_keywords:
 - menus, customizing
 - Windows menu customizing
 - status bars, displaying
-- Visual Studio Start page, setting
 - IDE, startup options
 - editors, autocompletion
 - Options dialog box, General Environment
@@ -25,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ab1f5535d15912c01e7766bbd806bca0d9a9352
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4faae6f061da675efdecdea5f8c4a0e606d486b8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949729"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710834"
 ---
 # <a name="general-environment-options-dialog-box"></a>選項對話方塊、環境、一般
 

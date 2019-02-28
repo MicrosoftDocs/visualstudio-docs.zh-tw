@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 444e26aa0f4ec4cb7270f6632b6d5f7e56a34853
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 327b9ca623c6d7f949c0d516798865de48fd94be
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600281"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840321"
 ---
 # <a name="handle-specialized-deployment"></a>處理特製化的部署
 部署是專案的選擇性作業。 Web 專案，例如，支援，讓更新的 Web 伺服器專案的部署。 同樣地，**智慧型裝置**專案支援複製到目標裝置的內建應用程式的部署。 專案子類型可以藉由實作提供特製化的部署行為<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>介面。 這個介面會定義一組完整的部署作業：
@@ -288,7 +288,7 @@ ms.locfileid: "56600281"
     ```
 
 > [!NOTE]
->  本主題所提供的所有程式碼範例會在較大範例的組件[VSSDK 範例](http://aka.ms/vs2015sdksamples)。
+>  本主題所提供的所有程式碼範例會在較大範例的組件[VSSDK 範例](https://aka.ms/vs2015sdksamples)。
 
 ## <a name="see-also"></a>另請參閱
 - [專案子類型](../../extensibility/internals/project-subtypes.md)

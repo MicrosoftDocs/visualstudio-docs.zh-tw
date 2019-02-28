@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5759be35cda11557847d128233811d8aaffced7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa9a210b61a1ba28d2dca2f81184b3d20a91ff7f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938926"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638697"
 ---
 # <a name="lc-task"></a>LC 工作
 包裝 *LC.exe* (會從 *.licx* 檔案產生 *.license* 檔案)。 如需有關 *LC.exe* 的詳細資訊，請參閱 [Lc.exe (授權編譯器)](/dotnet/framework/tools/lc-exe-license-compiler)。
@@ -31,7 +31,7 @@ ms.locfileid: "55938926"
 ## <a name="parameters"></a>參數
 下表說明 `LC` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`LicenseTarget`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要產生 *.licenses* 檔案的可執行檔。|
 |`NoLogo`|選擇性的 `Boolean` 參數。<br /><br /> 隱藏 Microsoft 程式啟始資訊顯示。|
@@ -67,5 +67,5 @@ ms.locfileid: "55938926"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[工作](../msbuild/msbuild-tasks.md)  
-[工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e62fb21f33658c07a5c7b60885c0cc83310e15f4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 485f503d237cbc98918357eee79a3309fe8d33a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927791"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609066"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 部署資訊清單
-部署資訊清單是 XML 檔案，描述 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，包括要部署的目前 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式版本之識別。  
+部署資訊清單是 XML 檔案，描述 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，包括要部署的目前 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式版本之識別。
 
- 部署資訊清單具有下列項目和屬性。  
+ 部署資訊清單具有下列項目和屬性。
 
 
 | 元素 | 說明 | 屬性 |
@@ -40,83 +40,83 @@ ms.locfileid: "54927791"
 | [\<簽章 > 項目](../deployment/signature-element-clickonce-deployment.md) | 選擇性。 包含對此部署資訊清單進行數位簽章時所需的資訊。 | 無 |
 | [\<customErrorReporting > 項目](../deployment/customerrorreporting-element-clickonce-deployment.md) | 選擇性。 指定要在錯誤發生時顯示的 URI。 | URI |
 
-## <a name="remarks"></a>備註  
- 部署資訊清單檔會識別 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式部署，包含目前的版本與其他部署設定。 這會參考應用程式資訊清單，其中描述此應用程式的目前版本和部署內包含的所有檔案。  
+## <a name="remarks"></a>備註
+ 部署資訊清單檔會識別 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式部署，包含目前的版本與其他部署設定。 這會參考應用程式資訊清單，其中描述此應用程式的目前版本和部署內包含的所有檔案。
 
- 如需詳細資訊，請參閱 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。  
+ 如需詳細資訊，請參閱 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。
 
-## <a name="file-location"></a>檔案位置  
- 部署資訊清單檔案會參考目前應用程式版本的正確應用程式資訊清單。 當您提供新版本的應用程式部署時，必須更新部署資訊清單才能參考新的應用程式資訊清單。  
+## <a name="file-location"></a>檔案位置
+ 部署資訊清單檔案會參考目前應用程式版本的正確應用程式資訊清單。 當您提供新版本的應用程式部署時，必須更新部署資訊清單才能參考新的應用程式資訊清單。
 
- 部署資訊清單檔必須以強式名稱的方式命名，同時也可以包含發行者驗證的憑證。  
+ 部署資訊清單檔必須以強式名稱的方式命名，同時也可以包含發行者驗證的憑證。
 
-## <a name="file-name-syntax"></a>檔案名稱語法  
- 部署資訊清單的檔名必須以 *.application* 副檔名做為結尾。  
+## <a name="file-name-syntax"></a>檔案名稱語法
+ 部署資訊清單的檔名必須以 *.application* 副檔名做為結尾。
 
-## <a name="examples"></a>範例  
- 下列程式碼範例會說明部署資訊清單。  
+## <a name="examples"></a>範例
+ 下列程式碼範例會說明部署資訊清單。
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>  
-<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"  
-  manifestVersion="1.0"  
-  xmlns:asmv3="urn:schemas-microsoft-com:asm.v3"  
-  xmlns:dsig=http://www.w3.org/2000/09/xmldsig#  
-  xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1"  
-  xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2"  
-  xmlns="urn:schemas-microsoft-com:asm.v2"  
-  xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"  
-  xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"  
-  xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS"  
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
-  <assemblyIdentity   
-    name="My Application Deployment.app"  
-    version="1.0.0.0"  
-    publicKeyToken="43cb1e8e7a352766"  
-    language="neutral"  
-    processorArchitecture="x86"  
-    xmlns="urn:schemas-microsoft-com:asm.v1" />  
-  <description  
-    asmv2:publisher="My Company Name"  
-    asmv2:product="My Application"  
-    xmlns="urn:schemas-microsoft-com:asm.v1" />  
-  <deployment install="true">  
-    <subscription>  
-      <update>  
-        <expiration maximumAge="0" unit="days" />  
-      </update>  
-    </subscription>  
-    <deploymentProvider codebase="\\myServer\sampleDeployment\MyApplicationDeployment.application" />  
-  </deployment>  
-  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">  
-    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.20506" />  
-    <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.20506" />  
-  </compatibleFrameworks>  
-  <dependency>  
-    <dependentAssembly  
-      dependencyType="install"  
-      codebase="1.0.0.0\My Application Deployment.exe.manifest"  
-      size="6756">  
-      <assemblyIdentity  
-        name="My Application Deployment.exe"  
-        version="1.0.0.0"  
-        publicKeyToken="43cb1e8e7a352766"  
-        language="neutral"  
-        processorArchitecture="x86"  
-        type="win32" />  
-      <hash>  
-        <dsig:Transforms>  
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />  
-        </dsig:Transforms>  
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />  
-        <dsig:DigestValue>E506x9FwNauks7UjQywmzgtd3FE=</dsig:DigestValue>  
-      </hash>  
-    </dependentAssembly>  
-  </dependency>  
-<publisherIdentity name="CN=DOMAIN\MyUsername" issuerKeyHash="18312a18a21b215ecf4cdb20f5a0e0b0dd263c08" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#">  
-...  
-</Signature></asmv1:assembly>  
-```  
+<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"
+  manifestVersion="1.0"
+  xmlns:asmv3="urn:schemas-microsoft-com:asm.v3"
+  xmlns:dsig=http://www.w3.org/2000/09/xmldsig#
+  xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1"
+  xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2"
+  xmlns="urn:schemas-microsoft-com:asm.v2"
+  xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"
+  xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"
+  xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <assemblyIdentity
+    name="My Application Deployment.app"
+    version="1.0.0.0"
+    publicKeyToken="43cb1e8e7a352766"
+    language="neutral"
+    processorArchitecture="x86"
+    xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description
+    asmv2:publisher="My Company Name"
+    asmv2:product="My Application"
+    xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <deployment install="true">
+    <subscription>
+      <update>
+        <expiration maximumAge="0" unit="days" />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="\\myServer\sampleDeployment\MyApplicationDeployment.application" />
+  </deployment>
+  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
+    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.20506" />
+    <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.20506" />
+  </compatibleFrameworks>
+  <dependency>
+    <dependentAssembly
+      dependencyType="install"
+      codebase="1.0.0.0\My Application Deployment.exe.manifest"
+      size="6756">
+      <assemblyIdentity
+        name="My Application Deployment.exe"
+        version="1.0.0.0"
+        publicKeyToken="43cb1e8e7a352766"
+        language="neutral"
+        processorArchitecture="x86"
+        type="win32" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>E506x9FwNauks7UjQywmzgtd3FE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=DOMAIN\MyUsername" issuerKeyHash="18312a18a21b215ecf4cdb20f5a0e0b0dd263c08" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#">
+...
+</Signature></asmv1:assembly>
+```
 
-## <a name="see-also"></a>另請參閱  
- [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)
+## <a name="see-also"></a>另請參閱
+- [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)

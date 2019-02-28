@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3640cebfda96b0c618352017e982c695ad908de0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 393abb3b1e1872a416865cbfee5c142bef98ce78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155587"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637070"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 開啟查詢符號的工作階段。
@@ -31,13 +31,14 @@ HRESULT openSession ( 
 ```
 
 #### <a name="parameters"></a>參數
-ppSession  
+ppSession
+
 [out]傳回[IDiaSession](../../debugger/debug-interface-access/idiasession.md)物件，表示開啟的工作階段。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示可能的傳回值，這個方法。
 
-|值|描述|
+|值|說明|
 |-----------|-----------------|
 |E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)物件先前尚未初始化符號的來源。|
 |E_INVALIDARG|無效的 `ppSession` 參數。|
@@ -60,7 +61,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>請參閱
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
-[查詢 .Pdb 檔案](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [查詢 .Pdb 檔案](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

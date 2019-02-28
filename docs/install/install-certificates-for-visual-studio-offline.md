@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6855603c0cc322d5ed235ac81e0f9f15cef725c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab235393996396aaba8331b8e55001ad292bdc51
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936638"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645715"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安裝 Visual Studio 離線安裝所需的憑證
 
@@ -61,6 +61,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+
    **更新**：針對 Visual Studio 2017 版本 15.8 Preview 2 或更新版本，請使用下列命令建立批次檔：
 
    ```cmd
@@ -123,7 +124,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 
 ## <a name="install-visual-studio"></a>安裝 Visual Studio
 
-在您安裝憑證之後，可以使用＜建立 Visual Studio 的網路安裝＞頁面之[從網路安裝部署](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation)一節中的指示，繼續部署 Visual Studio。
+在您安裝憑證之後，可以使用＜建立 Visual Studio 的網路安裝＞頁面之[從網路安裝部署](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation)一節中的指示，繼續部署 Visual Studio。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

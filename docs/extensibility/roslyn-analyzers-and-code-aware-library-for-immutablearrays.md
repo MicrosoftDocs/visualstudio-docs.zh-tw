@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d6b603a59ad27052ab8eb9bbb88942584aa5293
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 753201d8f09b93186cac279d20dee2c7f3e1534d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000896"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843308"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 分析器和程式碼感知程式庫，適用於 Immutablearray
 
@@ -25,7 +25,7 @@ ms.locfileid: "55000896"
 
 * Visual Studio 2015 (非 Express Edition) 或更新版本。 您可以使用免費[Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。 您也可以 Visual Studio，安裝時檢查**Visual Studio Extensibility Tools**下方**常見工具**同時安裝 SDK。 如果您已安裝 Visual Studio，您也可以安裝此 SDK 移至主功能表**檔案** > **新增** > **專案**，選擇**C#** 左瀏覽窗格中，然後選擇**擴充性**。 當您選擇 「**安裝 Visual Studio Extensibility Tools**"階層連結專案範本，它會提示您下載並安裝 SDK。
-* [.NET 編譯器平台 ("Roslyn") SDK](http://aka.ms/roslynsdktemplates)。 您也可以安裝此 SDK 移至主功能表**檔案** > **新增** > **專案**選擇**C#** 左瀏覽窗格中，然後選擇**擴充性**。 當您選擇 「**下載.NET Compiler Platform SDK**"階層連結專案範本，它會提示您下載並安裝 SDK。 此 SDK 包含[Roslyn 語法視覺化檢視](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。 這個實用的工具會協助您找出哪些程式碼模型類型您應該尋找在您的分析器。 分析器基礎結構會呼叫您的程式碼對於特定的程式碼模型型別，因此您的程式碼只會在必要時執行，並可以只著重於分析相關的程式碼。
+* [.NET 編譯器平台 ("Roslyn") SDK](https://aka.ms/roslynsdktemplates)。 您也可以安裝此 SDK 移至主功能表**檔案** > **新增** > **專案**選擇**C#** 左瀏覽窗格中，然後選擇**擴充性**。 當您選擇 「**下載.NET Compiler Platform SDK**"階層連結專案範本，它會提示您下載並安裝 SDK。 此 SDK 包含[Roslyn 語法視覺化檢視](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。 這個實用的工具會協助您找出哪些程式碼模型類型您應該尋找在您的分析器。 分析器基礎結構會呼叫您的程式碼對於特定的程式碼模型型別，因此您的程式碼只會在必要時執行，並可以只著重於分析相關的程式碼。
 
 ## <a name="whats-the-problem"></a>是什麼問題？
 

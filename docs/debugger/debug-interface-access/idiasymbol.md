@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e0bdf7c5c22794fa271e43dd1b4c4605480cc3f
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: b6698159828c6092f0bb00b9ccc132415df82d7b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227848"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603114"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 描述符號的執行個體的屬性。
@@ -34,7 +34,7 @@ IDiaSymbol : IUnknown
 > [!NOTE]
 > 符號會傳回有意義的資料，只是部分這些方法，根據符號的類型。 如果方法傳回`S_OK`，則該方法已經傳回有意義的資料。
 
-|方法|描述|
+|方法|說明|
 |------------|-----------------|
 |[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)|擷取所有的子系的符號。|
 |[IDiaSymbol::findChildrenEx](../../debugger/debug-interface-access/idiasymbol-findchildrenex.md)|擷取之符號的子系。 這個方法是擴充的版[idiasymbol:: Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)。|
@@ -343,10 +343,10 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>請參閱
-[介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)  
-[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
-[符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)  
-[符號和符號標記](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
-[編譯模組](../../debugger/debug-interface-access/compiland.md)
+- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
+- [符號和符號標記](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+- [編譯模組](../../debugger/debug-interface-access/compiland.md)

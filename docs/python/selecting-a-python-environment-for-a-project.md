@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ec1ed469a4384c2ba826f8677a0d4fb4c8fef20
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: b505a350cdb66cafb975585cb7ed0209104dabac
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987453"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721800"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>如何選取要用於專案的 Python 環境
 
@@ -37,7 +37,7 @@ Visual Studio 中所有新的 Python 專案一開始都會設定為使用預設�
 
 [Python 環境] 節點上的操作功能表也會提供其他命令：
 
-| 命令 | 描述 |
+| 命令 | 說明 |
 | --- | --- |
 | **新增虛擬環境** | 開始在專案中新建虛擬環境的程序。 請參閱[建立虛擬環境](#create-a-virtual-environment)。 |
 | **新增現有的虛擬環境** | 提示您選取包含虛擬環境的資料夾，並將它新增至 [Python 環境] 底下的清單，但不會加以啟用。 [啟用現有的虛擬環境](#activate-an-existing-virtual-environment)。 |
@@ -113,7 +113,7 @@ Visual Studio 中所有新的 Python 專案一開始都會設定為使用預設�
 另請注意，Visual Studio 目前不支援使用 `conda` 將套件安裝到 Conda 環境中。 請改為從命令列使用 `conda`。
 
 > [!Tip]
-> 有一個 pip 無法安裝套件的常見情況，就是當套件的 *\*.pyd* 檔案中包含原生元件的原始程式碼時。 如果未安裝所需的 Visual Studio 版本，pip 就無法編譯這些元件。 此情況中顯示的錯誤訊息為**錯誤：找不到 vcvarsall.bat**。 `easy_install` 通常能夠下載預先編譯的二進位檔，而您可以從 [https://aka.ms/VCPython27](https://aka.ms/VCPython27) 下載適用於舊版 Python 的編譯器。 如需詳細資訊，請參閱 Python 工具小組部落格中的[如何處理「找不到 vcvarsallbat」的困擾 (英文)](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/)。
+> 有一個 pip 無法安裝套件的常見情況，就是當套件的 *\*.pyd* 檔案中包含原生元件的原始程式碼時。 如果未安裝所需的 Visual Studio 版本，pip 就無法編譯這些元件。 此情況中顯示的錯誤訊息為**錯誤：找不到 vcvarsall.bat**。 `easy_install` 通常能夠下載預先編譯的二進位檔，而您可以從 [https://aka.ms/VCPython27](https://aka.ms/VCPython27) 下載適用於舊版 Python 的編譯器。 如需詳細資訊，請參閱 Python 工具小組部落格中的[如何處理「找不到 vcvarsallbat」的困擾 (英文)](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8122f1a3869efe32d7ae35ff05cdbb77ad84375
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: faf7738019680085020b9650094931d5860bc29b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55485036"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618376"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash 工作
 
@@ -32,7 +32,7 @@ ms.locfileid: "55485036"
 
  下表說明 `VerifyFileHash` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`File`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br />要雜湊處理及驗證的檔案。|
 |`Hash`|必要的 `String` 參數。<br /><br />檔案的預期雜湊。|
@@ -64,6 +64,5 @@ ms.locfileid: "55485036"
 
 ## <a name="see-also"></a>另請參閱
 
-[工作](../msbuild/msbuild-tasks.md)
-
-[工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

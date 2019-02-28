@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b374d897b3c2e03504a334c41d6eafc682e38f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36e5e8f59474a9a2fcbfef7a1c6b3d75febe3086
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913076"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708767"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>將 Visual Studio IDE 個人化
 
@@ -50,9 +50,13 @@ ms.locfileid: "55913076"
 
 若要新增或移除功能表或工具列項目，請參閱[如何：自訂功能表與工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。
 
+::: moniker range="vs-2017"
+
 ## <a name="start-page"></a>起始頁
 
 若要為您和小組建立自訂起始頁，請參閱[自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)。
+
+::: moniker-end
 
 ## <a name="window-layouts"></a>視窗配置
 

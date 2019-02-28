@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2503707b8fd5907cd028b7af3e67cd5acd76a00
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 29f3f714cdcbe529dac98948f6568934a6f508af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227783"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646821"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 擷取包含指定的虛擬位址 (VA) 範圍中的行的行號資訊。
@@ -33,13 +33,16 @@ HRESULT findLinesByVA (
 ```
 
 #### <a name="parameters"></a>參數
-`va`  
+`va`
+
 [in]指定的位址為瑞斯
 
-`length`  
+`length`
+
 [in]指定的位址範圍，以涵蓋此查詢使用的位元組數目。
 
-`ppResult`  
+`ppResult`
+
 [out]傳回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)物件，其中包含一份所有列的數字，涵蓋的指定的位址範圍。
 
 ## <a name="example"></a>範例
@@ -62,5 +65,5 @@ IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession
 ```
 
 ## <a name="see-also"></a>請參閱
-[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

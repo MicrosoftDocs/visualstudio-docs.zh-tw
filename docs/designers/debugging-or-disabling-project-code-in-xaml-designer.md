@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d29c23873bc22172e73c5bf8db0789177b8e9f75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 50ebaad52473eaccb39d8253e9af5fbb9f4a3cbf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919270"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596734"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>偵錯或停用 XAML 設計工具的專案程式碼
 
@@ -88,7 +88,7 @@ ms.locfileid: "55919270"
 ## <a name="control-display-options"></a>控制項顯示選項
 
 > [!NOTE]
-> **控制項顯示選項**僅適用於以 Windows 10 Fall Creators Update (組建 16299) 或更新版本為目標的通用 Windows 平台應用程式。 Visual Studio 2017 15.9 或更新版本中提供了**控制項顯示選項**功能。 
+> **控制項顯示選項**僅適用於以 Windows 10 Fall Creators Update (組建 16299) 或更新版本為目標的通用 Windows 平台應用程式。 Visual Studio 2017 15.9 或更新版本中提供了**控制項顯示選項**功能。
 
 在 XAML 設計工具中，您可以將控制項顯示選項變更為僅顯示來自 Windows SDK 的平台控制項。 這可以提高 XAML 設計工具的可靠性。
 

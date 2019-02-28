@@ -9,15 +9,14 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 51ee7cb2ea1e90a749fe8f2409125b42b02970c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 249db51cf178d8f1c266b9421fbfbdfbc95ef4c4
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800924"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842831"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 

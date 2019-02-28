@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab68c077ea6897d32ca215ae1fa2726900622f7
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 3252d15ebfb06fa840bfad6bf74dc3b8748776ef
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227299"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623238"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 公開的堆疊框架的屬性。
@@ -31,7 +31,7 @@ IDiaStackFrame : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
 以下是支援此介面的方法：
 
-|方法|描述|
+|方法|說明|
 |------------|-----------------|
 |[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|擷取表示基底的指標會配置此位址範圍中的程式碼的旗標。 此方法已淘汰。|
 |[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|擷取框架的位址基底。|
@@ -108,7 +108,7 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>請參閱
-[介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)  
-[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)  
-[IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
+- [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

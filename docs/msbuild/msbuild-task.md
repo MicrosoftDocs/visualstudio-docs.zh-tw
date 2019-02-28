@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aea567014e32930e25960b069d2b755e2c0212b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b3a8b210c91019b2b7285288c7826f4983dfed6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923051"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627320"
 ---
 # <a name="msbuild-task"></a>MSBuild 工作
-從另一個 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案建置[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案。  
+從另一個 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案建置[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案。
 
-## <a name="parameters"></a>參數  
- 下表說明 `MSBuild` 工作的參數。  
+## <a name="parameters"></a>參數
+ 下表說明 `MSBuild` 工作的參數。
 
 
 | 參數 | 說明 |
@@ -49,144 +49,144 @@ ms.locfileid: "54923051"
 | `UnloadProjectsOnCompletion` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，將會在作業完成之後卸載專案。 |
 | `UseResultsCache` | 選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，將會傳回快取的結果 (如果有的話)。<br /><br />  如果執行 MSBuild 工作，將會在範圍中快取其結果 <br /><br /> (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> 做為組建項目清單 |
 
-## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
+## <a name="remarks"></a>備註
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
 
- 不同於使用 [Exec 工作](../msbuild/exec-task.md)來啟動 *MSBuild.exe*，此工作會使用相同的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 程序來建置子專案。 父組建和子組建之間能夠共用已經建置且可略過的目標清單。 此工作的速度也會比較快，因為不會建立新的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 程序。  
+ 不同於使用 [Exec 工作](../msbuild/exec-task.md)來啟動 *MSBuild.exe*，此工作會使用相同的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 程序來建置子專案。 父組建和子組建之間能夠共用已經建置且可略過的目標清單。 此工作的速度也會比較快，因為不會建立新的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 程序。
 
- 此工作不只會處理專案檔，也會處理方案檔。  
+ 此工作不只會處理專案檔，也會處理方案檔。
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 要讓專案能夠同時建置所需的任何組態，即使組態牽涉到遠端基礎結構 (例如，連接埠、通訊協定、逾時、重試等)，還是必須使用組態檔，以使其成為可設定的。 如果可能，應該能夠在 `MSBuild` 工作上指定組態項目做為工作參數。  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 要讓專案能夠同時建置所需的任何組態，即使組態牽涉到遠端基礎結構 (例如，連接埠、通訊協定、逾時、重試等)，還是必須使用組態檔，以使其成為可設定的。 如果可能，應該能夠在 `MSBuild` 工作上指定組態項目做為工作參數。
 
- 從 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 開始，Solution 專案現在會呈現來自其所建置之所有子專案的 TargetOutputs。  
+ 從 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 開始，Solution 專案現在會呈現來自其所建置之所有子專案的 TargetOutputs。
 
-## <a name="pass-properties-to-projects"></a>將屬性傳遞至專案  
- 在早於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 版本中，將不同的專案組傳遞到 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 項目中所列的不同專案是一項挑戰。 如果您使用了 [MSBuild 工作](../msbuild/msbuild-task.md)的 Properties 屬性，則除非您批次處理了 [MSBuild 工作](../msbuild/msbuild-task.md)，並且有條件地針對項目清單中的每個專案提供不同的屬性，否則會將其設定套用到所有已建置的專案。  
+## <a name="pass-properties-to-projects"></a>將屬性傳遞至專案
+ 在早於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 版本中，將不同的專案組傳遞到 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 項目中所列的不同專案是一項挑戰。 如果您使用了 [MSBuild 工作](../msbuild/msbuild-task.md)的 Properties 屬性，則除非您批次處理了 [MSBuild 工作](../msbuild/msbuild-task.md)，並且有條件地針對項目清單中的每個專案提供不同的屬性，否則會將其設定套用到所有已建置的專案。
 
- 不過，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 提供兩個新的保留中繼資料項目 (Properties 和 AdditionalProperties)，讓您能夠彈性地使用 [MSBuild 工作](../msbuild/msbuild-task.md)，為建置的不同專案傳遞不同的屬性。  
-
-> [!NOTE]
->  這些新的中繼資料項目僅適用於 [MSBuild 工作](../msbuild/msbuild-task.md)的 Projects 屬性中所傳遞的項目。  
-
-## <a name="multi-processor-build-benefits"></a>多處理器組建的優點  
- 使用這個新中繼資料主要優點之一是發生在您於多處理器系統上同時建置專案時。 中繼資料可讓您將所有專案合併成單一 [MSBuild 工作](../msbuild/msbuild-task.md)呼叫，而不需執行任何批次處理或條件式 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作。 而且，當您只呼叫單一 [MSBuild 工作](../msbuild/msbuild-task.md)時，將會同時建置 Projects 屬性中列出的所有專案 (不過，只有在 `BuildInParallel=true` 屬性出現於 [MSBuild 工作](../msbuild/msbuild-task.md)時)。如需詳細資訊，請參閱[同時建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)。  
-
-## <a name="properties-metadata"></a>Properties 中繼資料  
- 常見的案例是當您使用 [MSBuild 工作](../msbuild/msbuild-task.md)建置多個方案檔時，只會使用不同的建置組態。 您可能想要使用 Debug 組態來建置方案 a1，使用 Release 組態來建置方案 a2。 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 中，這個專案檔看起來如下：  
+ 不過，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 提供兩個新的保留中繼資料項目 (Properties 和 AdditionalProperties)，讓您能夠彈性地使用 [MSBuild 工作](../msbuild/msbuild-task.md)，為建置的不同專案傳遞不同的屬性。
 
 > [!NOTE]
->  在下列範例中，"..." 代表其他方案檔。  
+>  這些新的中繼資料項目僅適用於 [MSBuild 工作](../msbuild/msbuild-task.md)的 Projects 屬性中所傳遞的項目。
 
-### <a name="aproj"></a>a.proj  
+## <a name="multi-processor-build-benefits"></a>多處理器組建的優點
+ 使用這個新中繼資料主要優點之一是發生在您於多處理器系統上同時建置專案時。 中繼資料可讓您將所有專案合併成單一 [MSBuild 工作](../msbuild/msbuild-task.md)呼叫，而不需執行任何批次處理或條件式 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作。 而且，當您只呼叫單一 [MSBuild 工作](../msbuild/msbuild-task.md)時，將會同時建置 Projects 屬性中列出的所有專案 (不過，只有在 `BuildInParallel=true` 屬性出現於 [MSBuild 工作](../msbuild/msbuild-task.md)時)。如需詳細資訊，請參閱[同時建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)。
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="Build">  
-        <MSBuild Projects="a1.sln..." Properties="Configuration=Debug"/>  
-        <MSBuild Projects="a2.sln" Properties="Configuration=Release"/>  
-    </Target>  
-</Project>  
-```  
+## <a name="properties-metadata"></a>Properties 中繼資料
+ 常見的案例是當您使用 [MSBuild 工作](../msbuild/msbuild-task.md)建置多個方案檔時，只會使用不同的建置組態。 您可能想要使用 Debug 組態來建置方案 a1，使用 Release 組態來建置方案 a2。 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 中，這個專案檔看起來如下：
 
- 不過，您可以使用 Properties 中繼資料，簡化此動作來使用單一 [MSBuild 工作](../msbuild/msbuild-task.md)，如下列所示：  
+> [!NOTE]
+>  在下列範例中，"..." 代表其他方案檔。
 
-### <a name="aproj"></a>a.proj  
+### <a name="aproj"></a>a.proj
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ProjectToBuild Include="a1.sln...">  
-            <Properties>Configuration=Debug</Properties>  
-        </ProjectToBuild>  
-        <ProjectToBuild Include="a2.sln">  
-            <Properties>Configuration=Release</Properties>  
-        </ProjectToBuild>  
-    </ItemGroup>  
-    <Target Name="Build">  
-        <MSBuild Projects="@(ProjectToBuild)"/>  
-    </Target>  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="Build">
+        <MSBuild Projects="a1.sln..." Properties="Configuration=Debug"/>
+        <MSBuild Projects="a2.sln" Properties="Configuration=Release"/>
+    </Target>
+</Project>
+```
 
- \-或-  
+ 不過，您可以使用 Properties 中繼資料，簡化此動作來使用單一 [MSBuild 工作](../msbuild/msbuild-task.md)，如下列所示：
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ProjectToBuild Include="a1.sln..."/>  
-        <ProjectToBuild Include="a2.sln">  
-            <Properties>Configuration=Release</Properties>  
-        </ProjectToBuild>  
-    </ItemGroup>  
-    <Target Name="Build">  
-        <MSBuild Projects="@(ProjectToBuild)"   
-          Properties="Configuration=Debug"/>  
-    </Target>  
-</Project>  
-```  
+### <a name="aproj"></a>a.proj
 
-## <a name="additionalproperties-metadata"></a>AdditionalProperties 中繼資料  
- 請考慮下列案例，您正在使用 [MSBuild 工作](../msbuild/msbuild-task.md)建置兩個方案檔，同時使用 Release 組態，但一個使用 x86 架構，而另一個使用 ia64 架構。 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 中，您必須建立 [MSBuild 工作](../msbuild/msbuild-task.md)的多個執行個體︰一個使用 Release 組態搭配 x86 架構建置專案，另一個則使用 Release 組態搭配 ia64 架構建置專案。 您的專案檔看起來如下：  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <ProjectToBuild Include="a1.sln...">
+            <Properties>Configuration=Debug</Properties>
+        </ProjectToBuild>
+        <ProjectToBuild Include="a2.sln">
+            <Properties>Configuration=Release</Properties>
+        </ProjectToBuild>
+    </ItemGroup>
+    <Target Name="Build">
+        <MSBuild Projects="@(ProjectToBuild)"/>
+    </Target>
+</Project>
+```
 
-### <a name="aproj"></a>a.proj  
+ \-或-
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="Build">  
-        <MSBuild Projects="a1.sln..." Properties="Configuration=Release;   
-          Architecture=x86"/>  
-        <MSBuild Projects="a2.sln" Properties="Configuration=Release;   
-          Architecture=ia64"/>  
-    </Target>  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <ProjectToBuild Include="a1.sln..."/>
+        <ProjectToBuild Include="a2.sln">
+            <Properties>Configuration=Release</Properties>
+        </ProjectToBuild>
+    </ItemGroup>
+    <Target Name="Build">
+        <MSBuild Projects="@(ProjectToBuild)"
+          Properties="Configuration=Debug"/>
+    </Target>
+</Project>
+```
 
- 藉由使用 AdditionalProperties 中繼資料，您可以使用下列方式，來簡化此動作以使用單一 [MSBuild 工作](../msbuild/msbuild-task.md)：  
+## <a name="additionalproperties-metadata"></a>AdditionalProperties 中繼資料
+ 請考慮下列案例，您正在使用 [MSBuild 工作](../msbuild/msbuild-task.md)建置兩個方案檔，同時使用 Release 組態，但一個使用 x86 架構，而另一個使用 ia64 架構。 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 中，您必須建立 [MSBuild 工作](../msbuild/msbuild-task.md)的多個執行個體︰一個使用 Release 組態搭配 x86 架構建置專案，另一個則使用 Release 組態搭配 ia64 架構建置專案。 您的專案檔看起來如下：
 
-### <a name="aproj"></a>a.proj  
+### <a name="aproj"></a>a.proj
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ProjectToBuild Include="a1.sln...">  
-            <AdditionalProperties>Architecture=x86  
-              </AdditionalProperties>  
-        </ProjectToBuild>  
-        <ProjectToBuild Include="a2.sln">  
-            <AdditionalProperties>Architecture=ia64  
-              </AdditionalProperties>  
-        </ProjectToBuild>  
-    </ItemGroup>  
-    <Target Name="Build">  
-        <MSBuild Projects="@(ProjectToBuild)"   
-          Properties="Configuration=Release"/>  
-    </Target>  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="Build">
+        <MSBuild Projects="a1.sln..." Properties="Configuration=Release;
+          Architecture=x86"/>
+        <MSBuild Projects="a2.sln" Properties="Configuration=Release;
+          Architecture=ia64"/>
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>範例  
- 下列範例會使用 `MSBuild` 工作來建置 `ProjectReferences` 項目集合所指定的專案。 所產生的目標輸出會儲存在 `AssembliesBuiltByChildProjects` 項目集合中。  
+ 藉由使用 AdditionalProperties 中繼資料，您可以使用下列方式，來簡化此動作以使用單一 [MSBuild 工作](../msbuild/msbuild-task.md)：
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+### <a name="aproj"></a>a.proj
 
-    <ItemGroup>  
-        <ProjectReferences Include="*.*proj" />  
-    </ItemGroup>  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <ProjectToBuild Include="a1.sln...">
+            <AdditionalProperties>Architecture=x86
+              </AdditionalProperties>
+        </ProjectToBuild>
+        <ProjectToBuild Include="a2.sln">
+            <AdditionalProperties>Architecture=ia64
+              </AdditionalProperties>
+        </ProjectToBuild>
+    </ItemGroup>
+    <Target Name="Build">
+        <MSBuild Projects="@(ProjectToBuild)"
+          Properties="Configuration=Release"/>
+    </Target>
+</Project>
+```
 
-    <Target Name="BuildOtherProjects">  
-        <MSBuild  
-            Projects="@(ProjectReferences)"  
-            Targets="Build">  
-            <Output  
-                TaskParameter="TargetOutputs"  
-                ItemName="AssembliesBuiltByChildProjects" />  
-        </MSBuild>  
-    </Target>  
+## <a name="example"></a>範例
+ 下列範例會使用 `MSBuild` 工作來建置 `ProjectReferences` 項目集合所指定的專案。 所產生的目標輸出會儲存在 `AssembliesBuiltByChildProjects` 項目集合中。
 
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-## <a name="see-also"></a>另請參閱  
- [工作](../msbuild/msbuild-tasks.md)   
- [工作參考](../msbuild/msbuild-task-reference.md)
+    <ItemGroup>
+        <ProjectReferences Include="*.*proj" />
+    </ItemGroup>
+
+    <Target Name="BuildOtherProjects">
+        <MSBuild
+            Projects="@(ProjectReferences)"
+            Targets="Build">
+            <Output
+                TaskParameter="TargetOutputs"
+                ItemName="AssembliesBuiltByChildProjects" />
+        </MSBuild>
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>另請參閱
+- [工作](../msbuild/msbuild-tasks.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

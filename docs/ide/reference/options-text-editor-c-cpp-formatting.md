@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae24e69ddceea88155d7185157a6ed25daab5430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922117"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645481"
 ---
 # <a name="options-text-editor-cc-formatting"></a>格式、C/C++、文字編輯器、選項
 
@@ -42,7 +42,7 @@ ms.locfileid: "55922117"
 
 ### <a name="configuring-clangformat-options"></a>設定 ClangFormat 選項
 
-在 Visual Studio 2017 15.7 版及更新版本，預設會啟用 ClangFormat 支援。 您可以選擇要將這些常見格式設定慣例的哪些項目，套用至所有專案：LLVM、Google、Chrome、Mozilla 或 WebKit。 您也可以建立自訂的格式定義 .clang-format 或 _clang-format 檔案。 如果這樣的檔案存在於專案資料夾，則 Visual Studio 會使用它來格式化該資料夾及其子資料夾中的所有原始程式碼檔。 
+在 Visual Studio 2017 15.7 版及更新版本，預設會啟用 ClangFormat 支援。 您可以選擇要將這些常見格式設定慣例的哪些項目，套用至所有專案：LLVM、Google、Chrome、Mozilla 或 WebKit。 您也可以建立自訂的格式定義 .clang-format 或 _clang-format 檔案。 如果這樣的檔案存在於專案資料夾，則 Visual Studio 會使用它來格式化該資料夾及其子資料夾中的所有原始程式碼檔。
 
 根據預設，Visual Studio 在背景中執行 clangformat.exe，並在您鍵入時套用格式。 您也可以指定只針對以手動方式叫用的格式化命令**格式化文件 (Ctrl+K、Ctrl+D)** 或**格式化選取範圍 (Ctrl+K、Ctrl+F)** 來執行它。
 

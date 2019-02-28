@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9b6e655ea9c5eb6c598d7a4bdbb09ed3345903
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 2cde5e140bb9dd2019de684124f69096d2022fe0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853504"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610212"
 ---
 # <a name="downloadfile-task"></a>DownloadFile 工作
 使用超文字傳輸通訊協定 (HTTP)，下載指定的檔案。
@@ -38,7 +38,7 @@ ms.locfileid: "55853504"
 ## <a name="parameters"></a>參數
 下表說明 `DownloadFile` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`DestinationFileName`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數<br /><br /> 要用於已下載檔案的名稱。  根據預設，檔案名稱衍生自 `SourceUrl` 或遠端伺服器。|
 |`DestinationFolder`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定檔案下載的目的地資料夾。  如果資料夾不存在，則會予以建立。|
@@ -73,5 +73,5 @@ ms.locfileid: "55853504"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[工作](../msbuild/msbuild-tasks.md)  
-[工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)

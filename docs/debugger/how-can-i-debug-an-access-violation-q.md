@@ -19,29 +19,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ceb160c93e79d43428685d7b0e82a8a0670cc01
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 2be6c13e2a3c83d31540399dd3387addb08e8686
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55767798"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710431"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>如何偵錯 c + + 存取違規？
 
 ## <a name="problem-description"></a>問題說明
 
-我的程式產生存取違規。 該如何偵錯？  
-  
+我的程式產生存取違規。 該如何偵錯？
+
 ## <a name="solution"></a>方案
 
-如果您在對多個指標取值的程式碼行上取得存取違規，可能很難找出哪個指標造成存取違規。 從 Visual Studio 2015 Update 1 開始，例外狀況對話方塊現在會明確地指出造成存取違規的指標。  
-  
-例如，您應該會在下列程式碼中取得存取違規：  
+如果您在對多個指標取值的程式碼行上取得存取違規，可能很難找出哪個指標造成存取違規。 從 Visual Studio 2015 Update 1 開始，例外狀況對話方塊現在會明確地指出造成存取違規的指標。
+
+例如，您應該會在下列程式碼中取得存取違規：
 
 ```C++
-#include <iostream>  
-using namespace std;  
-  
+#include <iostream>
+using namespace std;
+
 class ClassC {
 public:
   void printHello() {
@@ -71,13 +71,13 @@ int main() {
   A->B->C->printHello();
 
 }
-```  
+```
 
-如果您在 Visual Studio 2015 Update 1 中執行這段程式碼，您應該會看到下列例外狀況對話方塊：  
-  
-![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")  
-  
-如果您無法判斷指標造成存取違規的原因，請追蹤整個程式碼，確定已正確指派造成問題的指標。  如果將指標當作參數傳遞，請確定其已正確地傳遞，而且您沒有不小心建立[淺層複製](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy)。 然後確認這些值未在程式中的某處意外變更，方法是為有問題的指標建立資料中斷點，以確定此指標未在程式中的其他位置修改。 如需資料中斷點的詳細資訊，請參閱 [Using Breakpoints](../debugger/using-breakpoints.md)中的＜資料中斷點＞一節。  
-  
-## <a name="see-also"></a>請參閱  
- [偵錯機器碼常見問題集](../debugger/debugging-native-code-faqs.md)
+如果您在 Visual Studio 2015 Update 1 中執行這段程式碼，您應該會看到下列例外狀況對話方塊：
+
+![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")
+
+如果您無法判斷指標造成存取違規的原因，請追蹤整個程式碼，確定已正確指派造成問題的指標。  如果將指標當作參數傳遞，請確定其已正確地傳遞，而且您沒有不小心建立[淺層複製](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy)。 然後確認這些值未在程式中的某處意外變更，方法是為有問題的指標建立資料中斷點，以確定此指標未在程式中的其他位置修改。 如需資料中斷點的詳細資訊，請參閱 [Using Breakpoints](../debugger/using-breakpoints.md)中的＜資料中斷點＞一節。
+
+## <a name="see-also"></a>請參閱
+- [偵錯機器碼常見問題集](../debugger/debugging-native-code-faqs.md)

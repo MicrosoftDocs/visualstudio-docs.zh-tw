@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解所選取 Visual Studio 訂用帳戶中所含的 Azure 社群權益。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ab3b750395fc09b52cf1d6ab290e21cfdbb7d3d8
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 78c6954cd6dbbee48a3754d7d58eaa34b2e17158
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380333"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842100"
 ---
 # <a name="azure-community"></a>Azure 社群
 

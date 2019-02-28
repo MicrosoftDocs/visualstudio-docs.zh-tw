@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 924f6ba126ab4663d6daa7b3744102b2365d521b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8a3bf4f5fd7ab18efb13e1c52847daf647e908b7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982139"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640840"
 ---
 # <a name="tier-interactions-view"></a>階層互動檢視
 

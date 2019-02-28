@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用 MSBuild.exe 在方案中建置特定目標 | Microsoft Docs
+title: 作法：使用 MSBuild.exe 在方案中建置特定目標 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,25 +12,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dea60c8d7001b906bf9f994e2d48974fe0e2da1f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 695ca538a872677f5ed24b7fef9b7c3b8ee5641c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937362"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610446"
 ---
-# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>HOW TO：使用 MSBuild.exe 在方案中建置特定目標
-您可以使用 *MSBuild.exe*，在方案中建置特定專案的特定目標。  
-  
-#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>在方案中建置特定專案的特定目標  
-  
-1.  在命令列中，輸入 `MSBuild.exe <SolutionName>.sln`，其中 `<SolutionName>` 會對應至包含您想要執行之目標的方案檔案名稱。  
-  
+# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>作法：使用 MSBuild.exe 在方案中建置特定目標
+您可以使用 *MSBuild.exe*，在方案中建置特定專案的特定目標。
+
+#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>在方案中建置特定專案的特定目標
+
+1.  在命令列中，輸入 `MSBuild.exe <SolutionName>.sln`，其中 `<SolutionName>` 會對應至包含您想要執行之目標的方案檔案名稱。
+
 2. 以 \<ProjectName>:\<TargetName> 格式，在 `-target:` 參數之後指定目標。 如果專案名稱包含以下任何字元：`%`、`$`、`@`、`;`、`.`、`(`、`)` 或 `'`，將其取代為指定目標名稱中的 `_`。
-  
-## <a name="example"></a>範例  
- 下列範例會執行 `NotInSlnFolder` 專案的 `Rebuild` 目標，然後執行 `InSolutionFolder` 專案的 `Clean` 目標，其位於 NewFolder 方案資料夾中。  
-  
+
+## <a name="example"></a>範例
+ 下列範例會執行 `NotInSlnFolder` 專案的 `Rebuild` 目標，然後執行 `InSolutionFolder` 專案的 `Clean` 目標，其位於 NewFolder 方案資料夾中。
+
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
 ```
@@ -41,8 +41,8 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 除非您需要這個內部檢視，否則請勿以此環境變數設定來建置。 此設定可能會在解決方案中建置專案時造成問題。
 
-## <a name="see-also"></a>另請參閱  
- [命令列參考](../msbuild/msbuild-command-line-reference.md)   
- [MSBuild 參考](../msbuild/msbuild-reference.md)   
- [MSBuild](../msbuild/msbuild.md)  
- [MSBuild 概念](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>另請參閱
+- [命令列參考](../msbuild/msbuild-command-line-reference.md)
+- [MSBuild 參考](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)

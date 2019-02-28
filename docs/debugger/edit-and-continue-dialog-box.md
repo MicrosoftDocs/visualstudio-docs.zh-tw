@@ -17,19 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e5f8471a42632f9425df75a6f6b6870fd45348
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fdf515e5ca4aeb20cd9fce0b2a2ea829ad3d2e10
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958845"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722703"
 ---
 # <a name="edit-and-continue-dialog-box"></a>[編輯後繼續] 對話方塊
-(僅限原生) 如果您在偵錯時已編輯程式碼，而且 [編輯後繼續] 認為可以套用程式碼變更，這個對話方塊就會出現。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。  
-  
- **不要再顯示這個對話方塊**  
- 如果選取這個核取方塊，[編輯後繼續] 以後將直接套用程式碼變更，並且不再請求允許變更。 您可以在 [選項] 對話方塊中開啟 [偵錯] 資料夾，按一下 [編輯後繼續] 頁面，然後選取 [由偵錯命令叫用] 和 [先詢問我]，即可重新開啟這個警告。  
-  
-## <a name="see-also"></a>請參閱  
- [偵錯工具安全性](../debugger/debugger-security.md)   
- [選項對話方塊、偵錯、編輯後繼續](https://msdn.microsoft.com/library/bcew296c.aspx)
+(僅限原生) 如果您在偵錯時已編輯程式碼，而且 [編輯後繼續] 認為可以套用程式碼變更，這個對話方塊就會出現。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。
+
+ **不要再顯示此對話方塊再次**如果您選取此核取方塊，**編輯後繼續**會套用程式碼變更，並且不再請求允許未來。 您可以在 [選項] 對話方塊中開啟 [偵錯] 資料夾，按一下 [編輯後繼續] 頁面，然後選取 [由偵錯命令叫用] 和 [先詢問我]，即可重新開啟這個警告。
+
+## <a name="see-also"></a>請參閱
+- [偵錯工具安全性](../debugger/debugger-security.md)
+- [選項對話方塊、偵錯、編輯後繼續](https://msdn.microsoft.com/library/bcew296c.aspx)

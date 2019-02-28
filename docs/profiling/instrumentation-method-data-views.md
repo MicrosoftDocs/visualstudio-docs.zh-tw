@@ -11,48 +11,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f41220860d4147ef2185d1b44dd7645454a082
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0da4ea0080bfbfb3e4192902f63f50a640b14c8a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018198"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640944"
 ---
 # <a name="instrumentation-method-data-views"></a>檢測方法資料檢視
-本節包含使用檢測方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。  
-  
-## <a name="in-this-section"></a>本節內容  
- [摘要檢視](../profiling/summary-view-instrumentation-data.md)  
- 列出耗用最多時間的函式，以及執行最多個別工作的函式。  
-  
- [呼叫樹狀圖檢視](../profiling/call-tree-view-instrumentation-data.md)  
- 顯示階層式樹狀結構中函式的執行路徑。  
-  
- [模組檢視](../profiling/modules-view-instrumentation-data.md)  
- 依模組來組織程式碼剖析資料並列出模組中函式的程式碼剖析資料。  
-  
- [呼叫者/被呼叫者檢視 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)  
- 顯示所選取函式父代和子函式的程式碼剖析資料。  
-  
- [函式檢視](../profiling/functions-view-instrumentation-data.md)  
- 依函式列出程式碼剖析資料。  
-  
-## <a name="reference"></a>參考資料  
- [函式詳細資料檢視](../profiling/function-details-view.md)  
- 顯示選取的函式及所呼叫函式 (由該所選函式呼叫的函式) 之間關聯性的圖形化圖表。  
-  
- [處理序檢視](../profiling/process-view.md)  
- 針對所有剖析過的處理序列出開始、結束和存留期時間。  
-  
-## <a name="related-sections"></a>相關章節  
- [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)  
- 使用取樣方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。  
-  
- [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)  
- 包含 .NET 記憶體資料的分析工具資料檔案之檢視和報告的參考資訊。  
-  
- [資源爭用資料檢視](../profiling/resource-contention-data-views.md)  
- 使用執行緒爭用方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。  
-  
-## <a name="see-also"></a>另請參閱  
- [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)
+本節包含使用檢測方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。
+
+## <a name="in-this-section"></a>本節內容
+- [摘要檢視](../profiling/summary-view-instrumentation-data.md)
+
+ 列出耗用最多時間的函式，以及執行最多個別工作的函式。
+
+- [呼叫樹狀圖檢視](../profiling/call-tree-view-instrumentation-data.md)
+
+ 顯示階層式樹狀結構中函式的執行路徑。
+
+- [模組檢視](../profiling/modules-view-instrumentation-data.md)
+
+ 依模組來組織程式碼剖析資料並列出模組中函式的程式碼剖析資料。
+
+- [呼叫者/被呼叫者檢視 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)
+
+ 顯示所選取函式父代和子函式的程式碼剖析資料。
+
+- [函式檢視](../profiling/functions-view-instrumentation-data.md)
+
+ 依函式列出程式碼剖析資料。
+
+## <a name="reference"></a>參考資料
+- [函式詳細資料檢視](../profiling/function-details-view.md)
+
+ 顯示選取的函式及所呼叫函式 (由該所選函式呼叫的函式) 之間關聯性的圖形化圖表。
+
+- [處理序檢視](../profiling/process-view.md)
+
+ 針對所有剖析過的處理序列出開始、結束和存留期時間。
+
+## <a name="related-sections"></a>相關章節
+- [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)
+
+ 使用取樣方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。
+
+- [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)
+
+ 包含 .NET 記憶體資料的分析工具資料檔案之檢視和報告的參考資訊。
+
+- [資源爭用資料檢視](../profiling/resource-contention-data-views.md)
+
+ 使用執行緒爭用方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。
+
+## <a name="see-also"></a>另請參閱
+- [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)

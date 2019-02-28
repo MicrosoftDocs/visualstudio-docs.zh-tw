@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8d1026ca2ac677a98d36dbf4fffe12428151885
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cf319dd00048a4abf6cc4e3806845200c9eefc64
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992694"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703574"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>使用 Visual Studio 中的 IntelliTrace 回溯，檢查先前的應用程式狀態 (Visual Studio Enterprise)
 
@@ -29,14 +29,14 @@ IntelliTrace 回溯可用於 Visual Studio Enterprise 2017 15.5 版和更新版�
 > * 啟用 IntelliTrace 事件與快照集
 > * 使用回溯和快轉命令來巡覽事件
 > * 檢視事件快照
-  
-## <a name="enable-intellitrace-events-and-snapshots-mode"></a>啟用 Intellitrace 事件與快照模式 
+
+## <a name="enable-intellitrace-events-and-snapshots-mode"></a>啟用 Intellitrace 事件與快照模式
 
 1. 在 Visual Studio Enterprise 中開啟您的專案。
 
-1. 開啟 [工具] > [選項] > [IntelliTrace] 設定，然後選取 [IntelliTrace 事件與快照] 選項。 
+1. 開啟 [工具] > [選項] > [IntelliTrace] 設定，然後選取 [IntelliTrace 事件與快照] 選項。
 
-    從 Visual Studio 2017 Enterprise 15.9 Preview 2 版開始，此選項是 [IntelliTrace 快照 (受控與原生)]。 
+    從 Visual Studio 2017 Enterprise 15.9 Preview 2 版開始，此選項是 [IntelliTrace 快照 (受控與原生)]。
 
     ![啟用 IntelliTrace 事件與快照模式](../debugger/media/intellitrace-enable-snapshots.png "啟用 IntelliTrace 事件與快照模式")
 
@@ -55,7 +55,7 @@ IntelliTrace 回溯可用於 Visual Studio Enterprise 2017 15.5 版和更新版�
 
     IntelliTrace 會在每個偵錯工具步驟、中斷點事件和未處理的例外狀況事件上，建立應用程式程序的快照。 這些事件會與其他 IntelliTrace 事件一起記錄在 [診斷工具] 視窗的 [事件] 索引標籤中。 若要開啟此視窗，請選擇 [偵錯] > [視窗] > [顯示診斷工具]。
 
-    快照可供使用的事件旁會顯示相機圖示。 
+    快照可供使用的事件旁會顯示相機圖示。
 
     ![具有快照的事件索引標籤](../debugger/media/intellitrace-events-tab-with-snapshots.png "在中斷點和步驟上具有快照的事件索引標籤")
 
@@ -69,15 +69,15 @@ IntelliTrace 回溯可用於 Visual Studio Enterprise 2017 15.5 版和更新版�
 
     ![[回溯] 和 [快轉] 按鈕](../debugger/media/intellitrace-step-back-icons-description.png "[回溯] 和 [快轉] 按鈕")
 
-    當您回溯或快轉時，Visual Studio 會進入歷程偵錯模式。 在此模式中，偵錯工具內容會切換到記錄所選事件時的當時間。 Visual Studio 也會將指標移到來源視窗中對應的程式碼行。 
+    當您回溯或快轉時，Visual Studio 會進入歷程偵錯模式。 在此模式中，偵錯工具內容會切換到記錄所選事件時的當時間。 Visual Studio 也會將指標移到來源視窗中對應的程式碼行。
 
     在此檢視中，您可以檢查 [呼叫堆疊]、[本機]、[自動]和 [監看] 視窗中的值。 您也可以將游標暫留在變數上以檢視資料提示，並在 [立即] 視窗中執行運算式評估。 您所看到資料來自該時間點應用程式程序的快照。
 
-    因此；例如，如果您遇到了中斷點並採取步驟了逐步執行 (**F10**)，則 [回溯] 按鈕會將 Visual Studio 置於歷程模式中與中斷點對應的程式碼行。 
+    因此；例如，如果您遇到了中斷點並採取步驟了逐步執行 (**F10**)，則 [回溯] 按鈕會將 Visual Studio 置於歷程模式中與中斷點對應的程式碼行。
 
     ![在具有快照的事件上啟用歷程模式](../debugger/media/intellitrace-historical-mode-with-snapshot.png "在具有快照的事件上啟用歷程模式")
 
-2. 若要返回即時執行，請選擇 [繼續 (F5)] 或按一下資訊列中的 [返回即時偵錯] 連結。 
+2. 若要返回即時執行，請選擇 [繼續 (F5)] 或按一下資訊列中的 [返回即時偵錯] 連結。
 
 3. 您也可以從 [事件] 索引標籤檢視快照。若要執行此作業，請選取具有快照的事件，然後按一下 [啟用歷程偵錯]。
 
@@ -87,28 +87,28 @@ IntelliTrace 回溯可用於 Visual Studio Enterprise 2017 15.5 版和更新版�
 
     ![IntelliTrace 回溯概觀](../debugger/media/intellitrace-step-back-overview.png "IntelliTrace 回溯概觀")
 
-    若要深入了解如何檢查 Visual Studio 中的變數，請參閱[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)  
+    若要深入了解如何檢查 Visual Studio 中的變數，請參閱[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 #### <a name="how-is-intellitrace-step-back-different-from-intellitrace-events-only-mode"></a>IntelliTrace 回溯與 IntelliTrace 事件唯一模式有何不同？
 
-事件唯一模式下的 IntelliTrace，可讓您啟用偵錯工具步驟和中斷點上的歷程偵錯。 但是，如果視窗已開啟，則 IntelliTrace 只會擷取 [本機] 和 [自動] 視窗中的資料，並且只會擷取已展開且在檢視中的資料。 在事件唯一模式中，您通常沒有變數和複雜物件的完整檢視。 此外，不支援 [監看] 視窗中的運算式評估和檢視資料。 
+事件唯一模式下的 IntelliTrace，可讓您啟用偵錯工具步驟和中斷點上的歷程偵錯。 但是，如果視窗已開啟，則 IntelliTrace 只會擷取 [本機] 和 [自動] 視窗中的資料，並且只會擷取已展開且在檢視中的資料。 在事件唯一模式中，您通常沒有變數和複雜物件的完整檢視。 此外，不支援 [監看] 視窗中的運算式評估和檢視資料。
 
 在事件與快照模式中，IntelliTrace 會擷取整個應用程式程序的快照，包括複雜物件。 在一行程式碼中，您可以看到與在中斷點停止時相同的資訊 (無論您先前是否展開過資訊)。 檢視快照時，也支援運算式評估。  
 
 #### <a name="what-is-the-performance-impact-of-this-feature"></a>這項功能對效能有何影響？ 
 
 對整體逐步執行效能的影響，取決於您的應用程式。 建立快照的額外負荷大約是 30 毫秒。 建立快照時，應用程式的程序將會分支，並且分支的複本將會暫止。 當您檢視快照時，Visual Studio 附加至該程序的分支複本。 針對每個快照，Visual Studio 僅會複製頁面資料表，並將頁面設定為寫入時複製。 如果堆積上的物件在偵錯工具步驟與相關聯快照之間發生變更，則會複製對應的頁面資料表，進而最大限度降低記憶體成本。 如果 Visual Studio 偵測到沒有足夠的記憶體來擷取快照，則不會進行擷取。
- 
-## <a name="known-issues"></a>已知問題  
+
+## <a name="known-issues"></a>已知問題
 * 如果在早於 Windows 10 Fall Creators Update (RS3) 的 Windows 版本上使用IntelliTrace 事件和快照模式，且如果應用程式的偵錯平台目標設定為 x86，則 IntelliTrace 不會建立快照。
 
     因應措施︰
-  * 如果您使用的是 Windows 10 年度更新 (RS1) 並低於 10.0.14393.2273 版，請[安裝 KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720)。 
+  * 如果您使用的是 Windows 10 年度更新 (RS1) 並低於 10.0.14393.2273 版，請[安裝 KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720)。
   * 如果您使用的是 Windows 10 Creators Update (RS2) 並低於 10.0.15063.1112 版，請[安裝 KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722)。
-  * 安裝或升級至 Windows 10 Fall Creators Update (RS3)。 
-  * 或者： 
+  * 安裝或升級至 Windows 10 Fall Creators Update (RS3)。
+  * 或者：
     1. 從 Visual Studio 安裝程式安裝適用於桌上型電腦 (x86、x64) 的 VC++ 2015.3 v140 工具組。
     2. 建置目標應用程式。
     3. 從命令列使用 editbin 工具來設定目標可執行檔的 `Largeaddressaware` 旗標。 例如，您可以使用此命令 (在更新路徑之後)："C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe"。
@@ -120,11 +120,11 @@ IntelliTrace 回溯可用於 Visual Studio Enterprise 2017 15.5 版和更新版�
 * 當在使用持續性記憶體對應檔案的應用程式上建立應用程式程序快照時，具有快照的程序會在記憶體對應檔案上保持獨佔鎖定 (即使在父程序已解除其鎖定之後)。 其他程序仍然能夠讀取，但不能寫入記憶體對應檔案。
 
     因應措施：
-    * 藉由結束偵錯工作階段來清除所有快照。 
+    * 藉由結束偵錯工作階段來清除所有快照。
 
-* 對其程序具有大量唯一記憶體區域的應用程式 (例如載入大量 DLL 的應用程式) 進行偵錯時，啟用快照的逐步執行效能可能會受到影響。 在未來的 Windows 版本中將會解決這個問題。 如果您遇到此問題，請透過 stepback@microsoft.com 與我們連絡。 
+* 對其程序具有大量唯一記憶體區域的應用程式 (例如載入大量 DLL 的應用程式) 進行偵錯時，啟用快照的逐步執行效能可能會受到影響。 在未來的 Windows 版本中將會解決這個問題。 如果您遇到此問題，請透過 stepback@microsoft.com 與我們連絡。
 
-* 在事件和快照模式下透過 [偵錯] > [IntelliTrace] > [儲存 IntelliTrace 工作階段] 儲存檔案時，無法從 .itrace 檔案中取得從快照擷取的其他資料。 在中斷點和步驟事件中，您會看到與在 IntelliTrace 事件唯一模式中儲存檔案相同的資訊。 
+* 在事件和快照模式下透過 [偵錯] > [IntelliTrace] > [儲存 IntelliTrace 工作階段] 儲存檔案時，無法從 .itrace 檔案中取得從快照擷取的其他資料。 在中斷點和步驟事件中，您會看到與在 IntelliTrace 事件唯一模式中儲存檔案相同的資訊。
 
 ## <a name="next-steps"></a>後續步驟
 

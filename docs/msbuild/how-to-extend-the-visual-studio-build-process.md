@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8353bc1cfd9b3b48357979345ba29532cd3102bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908487"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603257"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>HOW TO：延伸 Visual Studio 建置流程
+# <a name="how-to-extend-the-visual-studio-build-process"></a>作法：延伸 Visual Studio 建置流程
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建置處理序是由匯入至您專案檔的一系列 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .targets 檔案所定義。 可以擴充其中一個已匯入的檔案 (Microsoft.Common.targets)，以讓您在建置處理序的數個點執行自訂工作。 本文說明您可以使用兩種方法來擴充 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建置處理序：
 
 - 覆寫 *Microsoft.Common.targets* 中所定義的特定預先定義目標。
@@ -35,8 +35,8 @@ ms.locfileid: "55908487"
 
 1. 識別 *Microsoft.Common.targets* 中您要覆寫的預先定義目標。 如需您可安全覆寫之目標的完整清單，請參閱下表。
 
-2. 在專案檔結尾，於 `</Project>` 標記的正前方定義目標。 例如：  
-  
+2. 在專案檔結尾，於 `</Project>` 標記的正前方定義目標。 例如：
+
     ```xml
     <Project>
         ...
@@ -48,12 +48,12 @@ ms.locfileid: "55908487"
         </Target>
     </Project>
     ```
-  
+
 3. 建置專案檔。
 
 下表顯示 *Microsoft.Common.targets* 中您可安全覆寫的所有目標。
 
-|目標名稱|描述|
+|目標名稱|說明|
 |-----------------|-----------------|
 |`BeforeCompile`、 `AfterCompile`|在核心編譯完成之前或之後，會執行插入至其中一個目標的工作。 大部分的自訂是在這兩個目標的其中一個中完成。|
 |`BeforeBuild`、 `AfterBuild`|在組建的任何其他項目之前或之後，將會執行其中一個目標中插入的工作。 **注意：**`BeforeBuild` 和 `AfterBuild` 目標已定義於大部分專案檔結尾的註解中，可讓您輕鬆地將建置前和建置後事件新增至專案檔。|
@@ -117,13 +117,13 @@ ms.locfileid: "55908487"
 
 ### <a name="commonly-overridden-dependson-properties"></a>經常覆寫的 DependsOn 屬性
 
-|屬性名稱|描述|
+|屬性名稱|說明|
 |-------------------|-----------------|
 |`BuildDependsOn`|如果您想要在整個建置處理序之前或之後插入自訂目標，這是要覆寫的屬性。|
 |`CleanDependsOn`|如果您想要清除自訂建置處理序的輸出，這是要覆寫的屬性。|
 |`CompileDependsOn`|如果您想要在編譯步驟之前或之後插入自訂處理序，這是要覆寫的屬性。|
 
 ## <a name="see-also"></a>另請參閱
-[Visual Studio 整合](../msbuild/visual-studio-integration-msbuild.md)  
-[MSBuild 概念](../msbuild/msbuild-concepts.md)  
-[.targets 檔案](../msbuild/msbuild-dot-targets-files.md)
+- [Visual Studio 整合](../msbuild/visual-studio-integration-msbuild.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)
+- [.targets 檔案](../msbuild/msbuild-dot-targets-files.md)

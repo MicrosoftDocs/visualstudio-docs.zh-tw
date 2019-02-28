@@ -12,34 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ee7144e77fe007ce4c8219e668ddd161cd6e6d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12a554eae05d02dda57fe29b2c627f261ba10b89
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024122"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626852"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：資料庫專案的收集階層互動度量
 
-|||  
-|-|-|  
-|規則 ID|DA0030|  
-|分類|分析工具使用方式|  
-|程式碼剖析方法|取樣|  
-|訊息|收集多層應用程式的互動度量可協助您了解資料庫使用模式和關鍵資料存取延遲。 請嘗試在啟用 [階層互動分析] 選項的情況下再次分析應用程式。|  
-|規則型別|資訊|  
+|||
+|-|-|
+|規則 ID|DA0030|
+|分類|分析工具使用方式|
+|程式碼剖析方法|取樣|
+|訊息|收集多層應用程式的互動度量可協助您了解資料庫使用模式和關鍵資料存取延遲。 請嘗試在啟用 [階層互動分析] 選項的情況下再次分析應用程式。|
+|規則型別|資訊|
 
-## <a name="cause"></a>原因  
- <xref:System.Data> 方法呼叫大部分是分析資料，您還不會在執行分析中收集階層互動資料。 請考慮再次進行分析，並加入階層互動資料。  
+## <a name="cause"></a>原因
+ <xref:System.Data> 方法呼叫大部分是分析資料，您還不會在執行分析中收集階層互動資料。 請考慮再次進行分析，並加入階層互動資料。
 
-## <a name="rule-description"></a>規則描述  
- 只要位於 System.Data 命名空間 (包括 <xref:System.Data.Linq><xref:System.Data.Linq>) 的函式中有大量活動時，就會引發此規則。  
+## <a name="rule-description"></a>規則描述
+ 只要位於 System.Data 命名空間 (包括 <xref:System.Data.Linq><xref:System.Data.Linq>) 的函式中有大量活動時，就會引發此規則。
 
- 多層應用程式針對其展示層及資料層使用多層式服務。 資料層通常是一個執行資料庫管理系統 (例如 Microsoft SQL Server) 的個別處理序。 資料層可能甚至與應用程式其餘部分，在不同的電腦上執行。 取樣分析深入探究函式和執行跨處理序或遠端執行的服務。  
+ 多層應用程式針對其展示層及資料層使用多層式服務。 資料層通常是一個執行資料庫管理系統 (例如 Microsoft SQL Server) 的個別處理序。 資料層可能甚至與應用程式其餘部分，在不同的電腦上執行。 取樣分析深入探究函式和執行跨處理序或遠端執行的服務。
 
- 分析工具可以收集使用 ADO.NET 服務的非同步呼叫與 Microsoft SQL Server 資料層互動之多層應用程式的計時資訊。 您必須明確啟用「階層互動分析」。 此功能不是預設開啟。  
+ 分析工具可以收集使用 ADO.NET 服務的非同步呼叫與 Microsoft SQL Server 資料層互動之多層應用程式的計時資訊。 您必須明確啟用「階層互動分析」。 此功能不是預設開啟。
 
-## <a name="how-to-fix-violations"></a>如何修正違規  
- 此規則僅供參考，可能不需要更正措施。  
+## <a name="how-to-fix-violations"></a>如何修正違規
+ 此規則僅供參考，可能不需要更正措施。
 
  如需如何從 Visual Studio IDE 將階層互動資料新增至分析資料的資訊，請參閱[收集階層互動資料](../profiling/collecting-tier-interaction-data.md)。 如需如何從命令列新增至階層互動資料的資訊，請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。

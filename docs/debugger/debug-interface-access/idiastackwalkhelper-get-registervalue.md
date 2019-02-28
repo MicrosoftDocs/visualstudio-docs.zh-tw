@@ -12,38 +12,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc08aed6f059a505bab6a1acb26c9e3a35bd5a65
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 275941aaf3a1eb2cab6554b18c6d9aa66605121a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031038"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613033"
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
-擷取暫存器的值。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_registerValue (   
-   DWORD      index,  
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `index`  
- [in]值，以從[CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)列舉指定的註冊並取得的值。  
-  
- `pRetVal`  
- [out]傳回目前的暫存器值。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- 大小雖然`pRetVal`參數，實作應儲存只哪些暫存器通常會保留。 比方說，8 位元暫存器保留只最低 8 位元的指定值。 這個 8 位元值已擴充成 64 位元，從這個方法傳回時。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)
+擷取暫存器的值。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_registerValue ( 
+   DWORD      index,
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>參數
+ `index`
+
+[in]值，以從[CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)列舉指定的註冊並取得的值。
+
+ `pRetVal`
+
+[out]傳回目前的暫存器值。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+ 大小雖然`pRetVal`參數，實作應儲存只哪些暫存器通常會保留。 比方說，8 位元暫存器保留只最低 8 位元的指定值。 這個 8 位元值已擴充成 64 位元，從這個方法傳回時。
+
+## <a name="see-also"></a>請參閱
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)

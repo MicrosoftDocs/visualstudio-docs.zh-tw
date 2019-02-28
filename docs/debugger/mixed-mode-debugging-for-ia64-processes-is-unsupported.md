@@ -15,39 +15,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0668ff847922934f88f98b20c1ac01e6b119e401
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 961ee6e14ea7b9f6292f14b9356e5d1ab233c8a4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980930"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713980"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>不支援 IA64 處理序的混合模式偵錯。
-Visual Studio 不支援對 IA64 處理序中的 Managed 程式碼和機器碼進行混合模式偵錯。 這表示在偵錯時，您無法從 Managed 程式碼逐步執行到機器碼，或從機器碼逐步執行到 Managed 程式碼。  
-  
-### <a name="workarounds"></a>替代解決辦法  
-  
--   在不同的偵錯工作階段中分別偵錯 Managed 程式碼和機器碼。  
-  
-     -或-  
-  
-     將混合程式碼當做 32 位元處理序來偵錯，如下列程序所述。  
-  
-### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>若要將平台變更為 32 位元 (Visual Basic 或 C#)  
-  
-1.  在**方案總管** 中，以滑鼠右鍵按一下您的專案，然後按一下捷徑功能表中的 [屬性]。  
-  
-2.  在屬性頁中，按一下 [編譯] 或 [偵錯] 索引標籤。  
-  
-3.  按一下 [平台]，並從平台清單中選取 [x86]。  
-  
-     根據預設，Visual Basic 和 C# 編譯器會產生可在任何 CPU 上執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理序上執行，您必須選擇 [Win32]，而非 [AnyCPU]。  
-  
-### <a name="to-change-the-platform-to-32-bit-cc"></a>若要將平台變更為 32 位元 (C/C++)  
-  
-1.  在**方案總管** 中，以滑鼠右鍵按一下您的專案，然後按一下捷徑功能表中的 [屬性]。  
-  
-2.  在屬性頁中，按一下 [平台]，並從平台清單中選取 [Win32]。  
-  
-## <a name="see-also"></a>請參閱  
- [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)
+Visual Studio 不支援對 IA64 處理序中的 Managed 程式碼和機器碼進行混合模式偵錯。 這表示在偵錯時，您無法從 Managed 程式碼逐步執行到機器碼，或從機器碼逐步執行到 Managed 程式碼。
+
+### <a name="workarounds"></a>替代解決辦法
+
+-   在不同的偵錯工作階段中分別偵錯 Managed 程式碼和機器碼。
+
+     -或-
+
+     將混合程式碼當做 32 位元處理序來偵錯，如下列程序所述。
+
+### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>若要將平台變更為 32 位元 (Visual Basic 或 C#)
+
+1.  在**方案總管** 中，以滑鼠右鍵按一下您的專案，然後按一下捷徑功能表中的 [屬性]。
+
+2.  在屬性頁中，按一下 [編譯] 或 [偵錯] 索引標籤。
+
+3.  按一下 [平台]，並從平台清單中選取 [x86]。
+
+     根據預設，Visual Basic 和 C# 編譯器會產生可在任何 CPU 上執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理序上執行，您必須選擇 [Win32]，而非 [AnyCPU]。
+
+### <a name="to-change-the-platform-to-32-bit-cc"></a>若要將平台變更為 32 位元 (C/C++)
+
+1.  在**方案總管** 中，以滑鼠右鍵按一下您的專案，然後按一下捷徑功能表中的 [屬性]。
+
+2.  在屬性頁中，按一下 [平台]，並從平台清單中選取 [Win32]。
+
+## <a name="see-also"></a>請參閱
+- [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)

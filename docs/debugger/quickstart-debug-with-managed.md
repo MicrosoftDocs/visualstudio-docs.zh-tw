@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 040b0f5f657b41a268f69d7f34d6c0072646a8e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 617783019a8a8b5a1ac2623ed113b78308466501
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034086"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696879"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 C# 或 Visual Basic 進行偵錯
 
 Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用程式。 本主題提供了解一些基本功能的快速方法。
 
-## <a name="create-a-new-project"></a>建立新專案 
+## <a name="create-a-new-project"></a>建立新專案
 
 1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
 
@@ -158,7 +158,7 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
     ![檢視資料提示](../debugger/media/dbg-qs-data-tip-csharp.png "檢視資料提示")
 
-    資料提示顯示 `c1` 變數的目前值，並可讓您檢查其屬性。 偵錯時，如果您看到非預期的值，則前面的數行程式碼或呼叫的數行程式碼可能有 Bug。 
+    資料提示顯示 `c1` 變數的目前值，並可讓您檢查其屬性。 偵錯時，如果您看到非預期的值，則前面的數行程式碼或呼叫的數行程式碼可能有 Bug。
 
 2. 展開資料提示以查看 `c1` 物件的目前屬性值。
 

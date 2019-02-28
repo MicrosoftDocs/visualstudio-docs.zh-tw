@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios, iterations
 - load test, iterations
-- load tests, sceanrios
+- load tests, scenarios
 ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ba46588cd20ede6e6d410f668ed628e9ed7a39c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6c3ebadd34988c83dbb688d3864ab88280d7a077
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943320"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796448"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>在負載測試情節中設定測試反覆項目
 
@@ -49,7 +49,7 @@ ms.locfileid: "55943320"
 
 1. 開啟負載測試。
 
-2. [負載測試編輯器] 隨即出現。 負載測試樹狀隨即顯示。
+2. [負載測試編輯器] 隨即出現。 負載測試樹狀結構隨即顯示。
 
 3. 在負載測試樹狀目錄的 [情節] 資料夾中，選擇您要對其指定測試反覆項目數上限的情節節點。
 
@@ -77,7 +77,7 @@ ms.locfileid: "55943320"
 
 1. 開啟負載測試。
 
-     [負載測試編輯器] 隨即出現。 負載測試樹狀隨即顯示。
+     [負載測試編輯器] 隨即出現。 負載測試樹狀結構隨即顯示。
 
 2. 在負載測試樹狀目錄的 [情節] 資料夾中，選擇您要為其指定考慮時間的情節節點。
 

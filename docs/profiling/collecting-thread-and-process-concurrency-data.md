@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 248c025b23fe2a39203a414c7af252bdfd3c2129
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c3310a87a4b25e560ea5303553e3eb75c0da001
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014899"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603608"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>收集執行緒和處理序並行資料
 

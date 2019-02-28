@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a30699a225cc5ce3cd30c9b2291dd9b0ec3cbb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5ad67acae549f67e16b34eb352cdebe5937c8de4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55015741"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602815"
 ---
 # <a name="performance-explorer"></a>效能總管
 

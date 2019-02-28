@@ -12,40 +12,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c12b03973736cc867c76cbe10a29548bfc6bd1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 29424c2b12884cae7f803a46e15f7183d9690d96
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973339"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631779"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
-擷取列舉序列中的原始程式檔中指定的數目。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT Next (   
-   ULONG            celt,  
-   IDiaSourceFile** rgelt,  
-   ULONG*           pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- celt  
- [in]要擷取列舉值中的來源檔案的數目。  
-  
- rgelt  
- [out]陣列，其中是要在以填滿[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)代表所需的原始程式檔的物件。  
-  
- pceltFetched  
- [out]擷取列舉值中傳回原始程式檔的數目。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`如果不有任何更多的原始程式檔。 否則會傳回錯誤碼。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+擷取列舉序列中的原始程式檔中指定的數目。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT Next ( 
+   ULONG            celt,
+   IDiaSourceFile** rgelt,
+   ULONG*           pceltFetched
+);
+```
+
+#### <a name="parameters"></a>參數
+ celt
+
+[in]要擷取列舉值中的來源檔案的數目。
+
+ rgelt
+
+[out]陣列，其中是要在以填滿[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)代表所需的原始程式檔的物件。
+
+ pceltFetched
+
+[out]擷取列舉值中傳回原始程式檔的數目。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`如果不有任何更多的原始程式檔。 否則會傳回錯誤碼。
+
+## <a name="see-also"></a>請參閱
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
+- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

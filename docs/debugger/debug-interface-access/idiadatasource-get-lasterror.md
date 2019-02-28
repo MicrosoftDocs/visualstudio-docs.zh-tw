@@ -12,37 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dfb9968aac05c9bbe79de1d37b13eb03dd31714
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 34954cd32b350a7c5f9c176deffd9943f8e05100
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972806"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641386"
 ---
 # <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
-擷取最後一個載入錯誤的檔案名稱。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_lastError (  
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- pRetVal  
- [out]傳回包含與最後一個載入錯誤相關聯的.pdb 檔案名稱的字串。  
-  
-## <a name="return-value"></a>傳回值  
- 傳回載入作業所造成的最後一個錯誤碼。 傳回`E_INVALIDARG`如果`pRetVal`參數是`NULL`。  
-  
-## <a name="example"></a>範例  
-  
-```C++  
-BSTR    fileName;  
-HRESULT errorCode = pSource->get_lastError( &fileName );  
-```  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+擷取最後一個載入錯誤的檔案名稱。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_lastError (
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>參數
+ pRetVal
+
+[out]傳回包含與最後一個載入錯誤相關聯的.pdb 檔案名稱的字串。
+
+## <a name="return-value"></a>傳回值
+ 傳回載入作業所造成的最後一個錯誤碼。 傳回`E_INVALIDARG`如果`pRetVal`參數是`NULL`。
+
+## <a name="example"></a>範例
+
+```C++
+BSTR    fileName;
+HRESULT errorCode = pSource->get_lastError( &fileName );
+```
+
+## <a name="see-also"></a>請參閱
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

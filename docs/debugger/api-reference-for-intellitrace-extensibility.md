@@ -10,27 +10,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5292cf3e9650264603772676da9738aecd52fb59
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1fb5044059fa005c1d67b3b7055a294bb22e124e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009605"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606581"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 擴充性的 API 參考
 
-使用本節中的資訊，您可以使用 IntelliTrace 擴充性 API 來讀取及解碼應用程式中的 .itrace 檔案。  
-  
+使用本節中的資訊，您可以使用 IntelliTrace 擴充性 API 來讀取及解碼應用程式中的 .itrace 檔案。
+
 ## <a name="in-this-section"></a>本節內容
 
 這個命名空間包含 IntelliTrace 擴充性 Api:
-  
-- <xref:Microsoft.VisualStudio.IntelliTrace>  
-  
+
+- <xref:Microsoft.VisualStudio.IntelliTrace>
+
 ## <a name="related-sections"></a>相關章節
 
-[IntelliTrace](../debugger/intellitrace.md)  
-提供如何使用 IntelliTrace 進行偵錯的詳細資訊。  
-  
-[開發人員程式碼範例](https://code.msdn.microsoft.com/)  
-管理顯示如何使用 IntelliTrace 擴充性的範例應用程式。
+[IntelliTrace](../debugger/intellitrace.md)提供有關如何使用 IntelliTrace 偵錯資訊。
+
+[開發人員程式碼範例](https://code.msdn.microsoft.com/)裝載範例應用程式示範如何使用 IntelliTrace 擴充性。

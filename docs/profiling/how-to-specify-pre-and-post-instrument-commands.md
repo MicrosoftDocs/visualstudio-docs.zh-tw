@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0471d51ef00e176ab379a79a141ffd49c23aa28
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dec06f7f45666845dfcc7080ed4b18db8baba993
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923697"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626865"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>HOW TO：指定檢測前置和檢測後續命令
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>作法：指定檢測前置和檢測後續命令
 
 您可以指定要在檢測效能工作階段中的二進位檔之前或之後執行的命令。 任何可從命令列發出的命令都可以指定為檢測前置或檢測後續事件。 例如，您可以在檢測二進位檔之後執行的批次檔中，指定使用強式名稱金鑰自動重新簽署組件的命令。
 

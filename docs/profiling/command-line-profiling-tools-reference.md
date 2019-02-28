@@ -8,31 +8,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 018ef620438a678ac90c92d319cc8bb23757b742
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3e5bdd0897d5b53a6949731a233909664d3fce7d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952635"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615360"
 ---
 # <a name="command-line-profiling-tools-reference"></a>命令列分析工具參考
-命令列效能工具可讓程式設計人員在命令提示字元上剖析他們的應用程式。 下列命令列程式碼剖析工具可讓您在命令提示字元上剖析程式碼。  
-  
-## <a name="in-this-section"></a>本節內容  
- [VSInstr](../profiling/vsinstr.md)  
- 列出 VSInstr.exe 檢測選項。  
-  
- [VSInstr 警告](../profiling/vsinstr-warnings.md)  
- 列出 VSInstr 工具所發出的警告。  
-  
- [VSPerfCLREnv](../profiling/vsperfclrenv.md)  
- 列出 VSPerfCLREnv.exe 選項，以設定用來剖析 Managed 程式碼的環境。  
-  
- [VSPerfCmd](../profiling/vsperfcmd.md)  
- 列出用來收集效能資料的 VSPerfCmd.exe 選項。  
-  
- [VSPerfMon](../profiling/vsperfmon.md)  
- 列出用來蒐集資料收集的 VSPerfMon.exe 選項。  
-  
- [VSPerfReport](../profiling/vsperfreport.md)  
+命令列效能工具可讓程式設計人員在命令提示字元上剖析他們的應用程式。 下列命令列程式碼剖析工具可讓您在命令提示字元上剖析程式碼。
+
+## <a name="in-this-section"></a>本節內容
+- [VSInstr](../profiling/vsinstr.md)
+
+ 列出 VSInstr.exe 檢測選項。
+
+- [VSInstr 警告](../profiling/vsinstr-warnings.md)
+
+ 列出 VSInstr 工具所發出的警告。
+
+- [VSPerfCLREnv](../profiling/vsperfclrenv.md)
+
+ 列出 VSPerfCLREnv.exe 選項，以設定用來剖析 Managed 程式碼的環境。
+
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+
+ 列出用來收集效能資料的 VSPerfCmd.exe 選項。
+
+- [VSPerfMon](../profiling/vsperfmon.md)
+
+ 列出用來蒐集資料收集的 VSPerfMon.exe 選項。
+
+- [VSPerfReport](../profiling/vsperfreport.md)
+
  列出用來建立報表的 VSPerfReport.exe 命令列選項。

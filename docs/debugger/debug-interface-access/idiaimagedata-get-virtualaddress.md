@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09e4ba99f22ef620f1f761bfa88dd0cd1ec00906
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c5df2098c4859205ef07648c214f43b74e53673d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919833"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638565"
 ---
 # <a name="idiaimagedatagetvirtualaddress"></a>IDiaImageData::get_virtualAddress
-擷取映像的虛擬記憶體位置。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_virtualAddress (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pRetVal`  
- [out]傳回映像的虛擬位址。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)
+擷取映像的虛擬記憶體位置。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_virtualAddress ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pRetVal`
+
+[out]傳回映像的虛擬位址。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="see-also"></a>請參閱
+- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

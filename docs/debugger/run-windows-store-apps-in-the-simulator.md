@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 36e5d5285f59170afaa22338829d186e7eb3e2e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 628683ae87bc53d59a61e13d3c21d45bfa4eee79
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949791"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710535"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>在模擬器中執行 UWP 應用程式
 UWP 應用程式的 Visual Studio 模擬器是模擬 UWP 應用程式的桌面應用程式。 一般而言，您要在本機電腦、 連接的裝置或在遠端電腦上偵錯。 不過，在某些情況下，您可能想要使用 Visual Studio 模擬器來模擬不同的實體螢幕大小和解析度。 您也可以模擬常見觸控和旋轉事件，以及模擬網路連接屬性。
@@ -107,7 +107,7 @@ UWP 應用程式的 Visual Studio 模擬器是模擬 UWP 應用程式的桌面�
      ![螢幕擷取畫面設定操作功能表](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")
 
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> 模擬網路連接屬性
- 您可以藉由維護網路連線成本或數據傳輸方案狀態變更的感知，並讓您的應用程式使用此資訊來避免因為漫遊或超出指定的資料傳輸限制而產生額外費用，協助應用程式使用者管理計量付費網路連接的費用。 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API 可讓您回應簽署的 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 和 [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) 事件。 (若仍對處理序不熟悉，請參閱[快速入門：管理計量付費的網路費用限制](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。
+ 您可以藉由維護網路連線成本或數據傳輸方案狀態變更的感知，並讓您的應用程式使用此資訊來避免因為漫遊或超出指定的資料傳輸限制而產生額外費用，協助應用程式使用者管理計量付費網路連接的費用。 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API 可讓您回應簽署的 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 和 [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) 事件。 請參閱 [快速入門：管理計量付費網路費用限制](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。
 
  若要偵錯或測試您的網路成本感知程式碼，模擬器可以模擬透過 [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation) 傳回的 [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) 物件所公開之網路屬性。
 
@@ -131,7 +131,7 @@ UWP 應用程式的 Visual Studio 模擬器是模擬 UWP 應用程式的桌面�
 
    **管理網路連接的詳細資訊**
 
-   [快速入門：管理計量付費的網路費用限制](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+   [快速入門：管理計量付費網路費用限制](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
 
    [網路資訊範例](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
@@ -149,4 +149,4 @@ UWP 應用程式的 Visual Studio 模擬器是模擬 UWP 應用程式的桌面�
  您可以藉由按下關閉模擬器**CTRL + ALT + F4**。
 
 ## <a name="see-also"></a>請參閱
- [從 Visual Studio 執行應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [從 Visual Studio 執行應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

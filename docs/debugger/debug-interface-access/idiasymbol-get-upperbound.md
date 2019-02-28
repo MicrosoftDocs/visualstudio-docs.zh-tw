@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ed8f3bcb1b4e8e2253dc1531bcdf8fd08be1e1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e489741692c7b308c34388fd1d6d5e5a13b50e21
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021685"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637486"
 ---
 # <a name="idiasymbolgetupperbound"></a>IDiaSymbol::get_upperBound
-擷取表示 FORTRAN 陣列維度的上限的符號。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_upperBound (   
-   IDiaSymbol** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pRetVal`  
- [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示 FORTRAN 陣列維度的上限。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
-  
+擷取表示 FORTRAN 陣列維度的上限的符號。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_upperBound ( 
+   IDiaSymbol** pRetVal
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pRetVal`
+
+[out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示 FORTRAN 陣列維度的上限。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。
+
+## <a name="see-also"></a>請參閱
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

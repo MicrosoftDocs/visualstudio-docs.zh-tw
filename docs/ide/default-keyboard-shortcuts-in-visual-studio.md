@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9680087162cbfa89e12cb7d9b44d7079cba4ef2
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270650"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607404"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
@@ -461,7 +461,7 @@ ms.locfileid: "56270650"
 |Edit.RemovefromDiagram|**刪除**|
 |View.ViewCode|**Enter**|
 
-##  <a name="coded-ui-test-editor"></a>自動程式化 UI 測試編輯器
+##  <a name="coded-ui-test-editor"></a>自動程式碼 UI 測試編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -807,8 +807,8 @@ ms.locfileid: "56270650"
 | Edit.HideSelection | **Ctrl+M、Ctrl+H** |
 | Edit.IncreaseFilterLevel | **Alt+.** |
 | Edit.IncrementalSearch | **Ctrl+I** |
-| Edit.InsertCaretsatAllMatching | **Shift+Alt+;** | 
-| Edit.InsertNextMatchingCaret | **Shift+Alt+.** | 
+| Edit.InsertCaretsatAllMatching | **Shift+Alt+;** |
+| Edit.InsertNextMatchingCaret | **Shift+Alt+.** |
 | Edit.InsertTab | **Tab** |
 | Edit.LineCut | **Ctrl+L** |
 | Edit.LineDelete | **Ctrl+Shift+L** |

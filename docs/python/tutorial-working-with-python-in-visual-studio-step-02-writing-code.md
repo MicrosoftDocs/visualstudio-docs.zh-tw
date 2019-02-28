@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 427aa1e0821d38488b626656a06e8952c381053e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 13590ffaed624a8704d74d738dab35da28b5443b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918100"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843087"
 ---
 # <a name="step-2-write-and-run-code"></a>步驟 2：撰寫並執行程式碼
 
@@ -53,7 +53,7 @@ ms.locfileid: "55918100"
 
     ![第一次執行程式的輸出](media/vs-getting-started-python-07-output.png)
 
-1. 除了陳述式和函式的自動完成以外，IntelliSense 還提供了 Python `import` 和 `from` 陳述式的自動完成。 這些自動完成可協助您輕鬆地找出哪些模組可用於您的環境，以及那些模組的成員。 在編輯器中，刪除 `print` 行，並開始輸入 `import `。 鍵入空格時，會顯示模組清單：
+1. 除了陳述式和函式的自動完成以外，IntelliSense 還提供了 Python `import` 和 `from` 陳述式的自動完成。 這些自動完成可協助您輕鬆地找出哪些模組可用於您的環境，以及那些模組的成員。 在編輯器中，刪除 `print` 行，並開始輸入 `import`。 鍵入空格時，會顯示模組清單：
 
     ![IntellSense 顯示 import 陳述式可用的模組](media/vs-getting-started-python-08-import1.png)
 

@@ -7,16 +7,9 @@ layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 083522aae47abdfdec37d5add756457f18590953
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856823"
 ---
+
 # <a name="visual-studio-subscriptions"></a>Visual Studio 訂閱
 
 Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS、Android 及 Linux 等慣用平台及裝置上，建立、部署與管理絕佳的應用程式。  訂閱即享有使用開發人員工具、雲端服務與軟體及訓練的權益，還可取得滿足您開發與測試需求的支援。

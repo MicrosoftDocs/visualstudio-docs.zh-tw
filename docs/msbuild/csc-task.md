@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc4dd56b3746d58d96af5790dd7719bbd435b75
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: a505194a71058d791b7d67d74cd203c43298d684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854118"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643934"
 ---
 # <a name="csc-task"></a>Csc 工作
 包裝 csc.exe，並產生可執行檔 (.*exe* 檔案)、動態連結程式庫 (*.dll* 檔案) 或程式碼模組 (.netmodule 檔案)。 如需 *csc.exe* 的詳細資訊，請參閱 [C# 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)。
@@ -31,7 +31,7 @@ ms.locfileid: "55854118"
 ## <a name="parameters"></a>參數
 下表說明 `Csc` 工作的參數。
 
-| 參數 | 描述 |
+| 參數 | 說明 |
 |------------------------------| - |
 | `AdditionalLibPaths` | 選擇性的 `String[]` 參數。<br /><br /> 指定要搜尋參考的其他目錄。 如需詳細資訊，請參閱 [-lib (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option)。 |
 | `AddModules` | 選擇性的 `String` 參數。<br /><br /> 指定要成為組件一部分的一個或多個模組。 如需詳細資訊，請參閱 [-addmodule (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option)。 |
@@ -94,5 +94,5 @@ ms.locfileid: "55854118"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[工作參考](../msbuild/msbuild-task-reference.md)  
-[工作](../msbuild/msbuild-tasks.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)

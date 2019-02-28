@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a4482069d16ef6f0f64472b838057949890a6d3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 190372e44f068296f7fea14819a3520803b89406
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335151"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843128"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>HOW TO：提供適用於 windows 的自動化
 
@@ -38,7 +38,7 @@ ms.locfileid: "56335151"
 
 標準<xref:EnvDTE.Document>物件也會提供在環境中，雖然編輯器可以有它自己的實作<xref:EnvDTE.Document>藉由實作的物件`IExtensibleObject`介面及回應`GetAutomationObject`。
 
-此外，編輯器可以提供 VSPackage 特有的自動化物件，透過擷取<xref:EnvDTE.Document.Object%2A>方法，藉由實作`IVsExtensibleObject`或`IExtensibleObject`介面。 [VSSDK 範例](http://aka.ms/vs2015sdksamples)提供 RTF 文件特定的自動化物件。
+此外，編輯器可以提供 VSPackage 特有的自動化物件，透過擷取<xref:EnvDTE.Document.Object%2A>方法，藉由實作`IVsExtensibleObject`或`IExtensibleObject`介面。 [VSSDK 範例](https://aka.ms/vs2015sdksamples)提供 RTF 文件特定的自動化物件。
 
 ## <a name="see-also"></a>另請參閱
 

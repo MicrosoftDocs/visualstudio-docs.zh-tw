@@ -10,30 +10,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49aa4df8c37a51ee5347c2a983c383c2ecca8ee0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8880d207a41418e12cab4374578fea4f3c4f338c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951959"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622445"
 ---
 # <a name="idiasymbolgetbasesymbolid"></a>IDiaSymbol::get_baseSymbolId
-擷取的指標為基礎的符號 ID。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_baseSymbolId(   
-   DWORD *pRetVal);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pRetVal`  
- [out]指標`DWORD`保存從中指標為基礎的符號 ID。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_baseSymbol](../../debugger/debug-interface-access/idiasymbol-get-basesymbol.md)
+擷取的指標為基礎的符號 ID。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_baseSymbolId(
+   DWORD *pRetVal);
+```
+
+#### <a name="parameters"></a>參數
+ `pRetVal`
+
+[out]指標`DWORD`保存從中指標為基礎的符號 ID。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+
+## <a name="see-also"></a>請參閱
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_baseSymbol](../../debugger/debug-interface-access/idiasymbol-get-basesymbol.md)

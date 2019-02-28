@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 463bb6510e304de8d9068e1c8d133c4ab331ea4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9fc9dd62c3d264d3b502845cb4d0f3e9c2a8fa78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978668"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615139"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>了解記憶體配置和物件存留期資料值
 

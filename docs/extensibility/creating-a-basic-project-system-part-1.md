@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf49998d2aecdce37992cf51337a4d96201c9111
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fd695c5a33ea8ea7bb9895d34995abd37db7019
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692693"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843957"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>建立基本專案系統，第 1 部分
 在 Visual Studio 中，專案會是開發人員用來組織原始程式碼檔和其他資產的容器。 專案會顯示為子系中的解決方案**方案總管 中**。 專案可讓您組織、 建置、 偵錯和部署來源的程式碼及建立 Web 服務、 資料庫和其他資源的參考。
@@ -35,7 +35,7 @@ ms.locfileid: "56692693"
  本逐步解說會示範如何建立具有專案副檔名的專案類型 *.myproj*。 本逐步解說會藉助現有的 Visual C# 專案系統。
 
 > [!NOTE]
->  如需擴充功能專案的範例，請參閱[VSSDK 範例](http://aka.ms/vs2015sdksamples)。
+>  如需擴充功能專案的範例，請參閱[VSSDK 範例](https://aka.ms/vs2015sdksamples)。
 
  本逐步解說將說明如何完成這些工作：
 

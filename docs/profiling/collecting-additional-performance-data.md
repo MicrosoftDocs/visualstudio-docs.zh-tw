@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d73897f9d02111fa686eb66c00d9a8ada0f621bc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c68ddbcf6d2284cc3cb2ec103fa9417a6e0338f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027359"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645013"
 ---
 # <a name="collect-additional-performance-data"></a>收集其他效能資料
 

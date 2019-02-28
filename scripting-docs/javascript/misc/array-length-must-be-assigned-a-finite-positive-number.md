@@ -1,14 +1,9 @@
 ---
 title: 陣列長度必須被指派為有限正數 |Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5030
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: c51c66a4-a543-4e95-b18d-2cfbcb3d1fdd
-caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63a9d714173334192028b9096de41968befa85ef
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 0c6e536047aaebb9bd3a06e38574330937817748
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348694"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840788"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>陣列長度必須被指派為有限的正值
 設定時**長度**屬性的現有**陣列**物件，指定了不是正數或零的陣列長度。 當您指派的值時，會發生此錯誤**長度**屬性`Array`物件，為負數或不是數字 (`NaN`)。 請注意，[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]自動將小數點後數字轉換成整數。  

@@ -12,36 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 243cfebc1f96c293c43d7179ea46d97f7ffdb2b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d63047375ce1e224a8e4ba70d4e1de8bf276c703
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980293"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643024"
 ---
 # <a name="idiasymbolgetthisadjust"></a>IDiaSymbol::get_thisAdjust
-擷取邏輯`this`adjustor 方法。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_thisAdjust (   
-   LONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pRetVal`  
- [out]傳回邏輯`this`adjustor 方法。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
-  
+擷取邏輯`this`adjustor 方法。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_thisAdjust ( 
+   LONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pRetVal`
+
+[out]傳回邏輯`this`adjustor 方法。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於符號。  
-  
-## <a name="remarks"></a>備註  
- 在某些多重繼承的情況下，方法本身必須計算真正`this`加上位移值`this`。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。
+
+## <a name="remarks"></a>備註
+ 在某些多重繼承的情況下，方法本身必須計算真正`this`加上位移值`this`。
+
+## <a name="see-also"></a>請參閱
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
