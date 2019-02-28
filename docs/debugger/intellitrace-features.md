@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ab4bf684fae4919869bb4c3ad170c5dee29eda9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317766"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720181"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace 功能 (C#，Visual Basic、 c + +)
 
@@ -56,7 +56,7 @@ Visual Studio Enterprise 版本 (而非 Visual Studio Professional 或 Community
 
 這預設不會予以啟用，但 IntelliTrace 可以記錄方法呼叫和事件。 若要啟用的方法呼叫，請移至集合**工具 > 選項 > IntelliTrace > 一般**，然後選取**IntelliTrace 事件和呼叫資訊 (僅限 managed)**。
 
-呼叫資訊不是目前適用於.NET Core 和 ASP.NET Core 應用程式。 
+呼叫資訊不是目前適用於.NET Core 和 ASP.NET Core 應用程式。
 
 這可讓您查看呼叫堆疊記錄，並在程式碼中逐步返回及逐步前進。 IntelliTrace 會記錄資料 (例如方法名稱、方法進入點與結束點，以及特定參數值與傳回值)。
 

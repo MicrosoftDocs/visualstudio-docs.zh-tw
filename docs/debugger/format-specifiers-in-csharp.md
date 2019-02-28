@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc36b13d6b6bdc6df0b881f2b4b91c32995a08d5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227679"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698985"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>格式規範，在C#在 Visual Studio 偵錯工具
 您可以變更在顯示值的格式**監看式**視窗使用格式規範。 您也可以使用中的格式規範**即時運算** 視窗中，**命令**視窗中[追蹤點](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，並在來源視窗中。 如果您暫停在這些視窗中的運算式，結果會出現在[DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中指定的格式顯示。
@@ -68,5 +68,5 @@ ms.locfileid: "56227679"
 |結果|搭配實作 IEnumerable 或 IEnumerable 型別的變數\<T >，通常是查詢運算式的結果。 只顯示包含查詢結果的成員。|顯示所有成員|顯示符合查詢條件的成員|
 
 ## <a name="see-also"></a>另請參閱
-[監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)  
-[自動變數和區域變數視窗](../debugger/autos-and-locals-windows.md)
+- [監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)
+- [自動變數和區域變數視窗](../debugger/autos-and-locals-windows.md)

@@ -13,12 +13,12 @@ monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 7a0363c26171382b0cab13e529b08378681f3f65
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b2baf119259c749e8da99a9326eb22aa1e034b4a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335977"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646469"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>偵錯 Azure 虛擬機器上的即時 ASP.NET 應用程式和 Azure 虛擬機器擴展集使用快照集偵錯工具
 
@@ -53,7 +53,7 @@ ms.locfileid: "56335977"
 1. 附加快照偵錯工具。 您可以使用數種不同的方法之一：
 
     * 選擇**偵錯 > 附加快照偵錯工具...**.選取您的 web 應用程式部署至 Azure VM/VMSS 和 Azure 儲存體帳戶，然後再按一下**附加**。
-  
+
       ![啟動快照集偵錯工具偵錯 功能表](../debugger/media/snapshot-debug-menu-attach.png)
 
     * 以滑鼠右鍵按一下專案，然後選取**發佈**，然後在發佈頁面上，按一下**附加快照偵錯工具**。 選取您的 web 應用程式部署至 Azure VM/VMSS 和 Azure 儲存體帳戶，然後再按一下**附加**。
@@ -63,7 +63,7 @@ ms.locfileid: "56335977"
     ![啟動快照集偵錯工具，從 [F5] 下拉式清單功能表](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * 使用 [雲端總管] (**檢視 > Cloud Explorer**)，以滑鼠右鍵按一下您的 web 應用程式部署至 Azure VM/VMSS 和選取 Azure 儲存體帳戶，然後按一下**附加快照偵錯工具**。
-  
+
       ![啟動快照集偵錯工具，從 [雲端總管]](../debugger/media/snapshot-launch.png)
 
     > [!IMPORTANT]

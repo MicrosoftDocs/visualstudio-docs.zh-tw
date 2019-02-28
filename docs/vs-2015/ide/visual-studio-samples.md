@@ -11,12 +11,12 @@ caps.latest.revision: 58
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6a899de205fc22940aa0d48f897ea4ecd6f49ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b9161420df2c45aae9ddc0c206a80002a0450710
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752334"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842870"
 ---
 # <a name="visual-studio-samples"></a>Visual Studio 範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,8 +38,8 @@ ms.locfileid: "54752334"
 |[JavaScript 範例](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=JavaScript)|示範如何使用 JavaScript 中的不同功能。|
 |[C++ 範例](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B)|示範如何使用 C++ 中的不同功能。|
 |[DirectX 範例](http://code.msdn.microsoft.com/site/search?query=DirectX&f%5B1%5D.Value=DirectX&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=C%20%20&f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Text=Invalid%20Value&ac=2)|示範如何使用 DirectX。|
-|[Office 程式開發範例](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|示範如何在 Visual Studio 中使用 Office 開發工具。 如需最新的範例，請參閱[MSDN 開發人員範例：了解程式碼透過](http://go.microsoft.com/fwlink/?LinkID=248199)。|
-|[VSSDK 範例](http://aka.ms/vs2015sdksamples)|示範如何擴充 Visual Studio。|
+|[Office 程式開發範例](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|示範如何在 Visual Studio 中使用 Office 開發工具。 如需最新範例，請參閱 [MSDN 開發人員範例：透過程式碼來了解](http://go.microsoft.com/fwlink/?LinkID=248199)。|
+|[VSSDK 範例](https://aka.ms/vs2015sdksamples)|示範如何擴充 Visual Studio。|
 
 ## <a name="see-also"></a>請參閱
  [Visual C# 和 Visual Basic 使用者入門](../ide/getting-started-with-visual-csharp-and-visual-basic.md)

@@ -21,66 +21,66 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e04cc8a351ed99ec0b477b2db5052ac94b56054
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f45b8c07cf03dc83969c3500c80b8ee215e3ad69
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036130"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621626"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt;項目 （啟動載入器）
-`RelatedProducts`項目定義，或是相依於目前的產品中包含其他產品。  
-  
-## <a name="syntax"></a>語法  
-  
-```xml  
-<RelatedProducts>  
-    <DependsOnProduct  
-        Code  
-    />  
-    <EitherProducts>  
-        <DependsOnProduct  
-            Code  
-        />  
-    </EitherProducts>  
-    <IncludesProduct  
-        Code  
-    />  
-</RelatedProducts>  
-```  
-  
-## <a name="elements-and-attributes"></a>元素和屬性  
- `RelatedProducts`項目是子系`Product`項目。 它沒有任何屬性。  
-  
-## <a name="dependsonproduct"></a>DependsOnProduct  
- `DependsOnProduct`項目表示目前的產品取決為指定的產品，並為指定的產品，應該在目前之前安裝。 它是子系`RelatedProducts`項目。 A`RelatedProducts`項目可能會有一或多個`DependsOnProduct`項目。  
-  
- `DependsOnProduct` 具有下列屬性。  
-  
-|屬性|描述|  
-|---------------|-----------------|  
-|`Code`|包含的產品，為所指定的程式碼名稱`ProductCode`屬性的`Product`項目。 如需詳細資訊，請參閱 < [\<產品 > 項目](../deployment/product-element-bootstrapper.md)。|  
-  
-## <a name="eitherproducts"></a>EitherProducts  
- `EitherProducts`項目會定義零或多個`DependsOnProduct`項目，且沒有屬性。 至少一個`DependsOnProduct`此集中之前必須先安裝目前的產品。 A`RelatedProducts`項目可以有零或多個`EitherProducts`項目。  
-  
-## <a name="includesproduct"></a>IncludesProduct  
- `IncludesProduct`項目表示產品隨附於目前的安裝，而且不需要另外安裝。 它是子系`RelatedProducts`項目。 A`RelatedProducts`項目可能會有一或多個`IncludesProduct`項目。  
-  
- `IncludesProduct` 具有下列屬性。  
-  
-|屬性|描述|  
-|---------------|-----------------|  
-|`Code`|包含的產品，為所指定的程式碼名稱`ProductCode`屬性的`Product`項目。 如需詳細資訊，請參閱 < [\<產品 > 項目](../deployment/product-element-bootstrapper.md)。|  
-  
-## <a name="example"></a>範例  
- 下列程式碼範例會指定 Microsoft 安裝程式會隨[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，因此將不需要另外安裝。  
-  
-```xml  
-<RelatedProducts>  
-    <IncludesProduct Code="Microsoft.Windows.Installer.2.0" />  
-</RelatedProducts>  
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [\<產品 > 項目](../deployment/product-element-bootstrapper.md)
+`RelatedProducts`項目定義，或是相依於目前的產品中包含其他產品。
+
+## <a name="syntax"></a>語法
+
+```xml
+<RelatedProducts>
+    <DependsOnProduct
+        Code
+    />
+    <EitherProducts>
+        <DependsOnProduct
+            Code
+        />
+    </EitherProducts>
+    <IncludesProduct
+        Code
+    />
+</RelatedProducts>
+```
+
+## <a name="elements-and-attributes"></a>元素和屬性
+ `RelatedProducts`項目是子系`Product`項目。 它沒有任何屬性。
+
+## <a name="dependsonproduct"></a>DependsOnProduct
+ `DependsOnProduct`項目表示目前的產品取決為指定的產品，並為指定的產品，應該在目前之前安裝。 它是子系`RelatedProducts`項目。 A`RelatedProducts`項目可能會有一或多個`DependsOnProduct`項目。
+
+ `DependsOnProduct` 具有下列屬性。
+
+|屬性|說明|
+|---------------|-----------------|
+|`Code`|包含的產品，為所指定的程式碼名稱`ProductCode`屬性的`Product`項目。 如需詳細資訊，請參閱 < [\<產品 > 項目](../deployment/product-element-bootstrapper.md)。|
+
+## <a name="eitherproducts"></a>EitherProducts
+ `EitherProducts`項目會定義零或多個`DependsOnProduct`項目，且沒有屬性。 至少一個`DependsOnProduct`此集中之前必須先安裝目前的產品。 A`RelatedProducts`項目可以有零或多個`EitherProducts`項目。
+
+## <a name="includesproduct"></a>IncludesProduct
+ `IncludesProduct`項目表示產品隨附於目前的安裝，而且不需要另外安裝。 它是子系`RelatedProducts`項目。 A`RelatedProducts`項目可能會有一或多個`IncludesProduct`項目。
+
+ `IncludesProduct` 具有下列屬性。
+
+|屬性|說明|
+|---------------|-----------------|
+|`Code`|包含的產品，為所指定的程式碼名稱`ProductCode`屬性的`Product`項目。 如需詳細資訊，請參閱 < [\<產品 > 項目](../deployment/product-element-bootstrapper.md)。|
+
+## <a name="example"></a>範例
+ 下列程式碼範例會指定 Microsoft 安裝程式會隨[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，因此將不需要另外安裝。
+
+```xml
+<RelatedProducts>
+    <IncludesProduct Code="Microsoft.Windows.Installer.2.0" />
+</RelatedProducts>
+```
+
+## <a name="see-also"></a>另請參閱
+- [\<產品 > 項目](../deployment/product-element-bootstrapper.md)

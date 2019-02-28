@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb649915179bc6e6b767970150df99caff306b4c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 511beae100529f0db555eca0a8ddb995d7a335d1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317727"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636576"
 ---
 # <a name="udtkind"></a>UdtKind
 描述各種不同的使用者定義型別 (UDT)。
@@ -34,17 +34,13 @@ enum UdtKind {
 ```
 
 ## <a name="elements"></a>項目
-UdtStruct  
-UDT 是一種結構。
+UdtStruct UDT 是一種結構。
 
-UdtClass  
-UDT 是一個類別。
+UdtClass UDT 是一個類別。
 
-UdtUnion  
-UDT 是等位。
+UdtUnion UDT 是等位。
 
-UdtInterface  
-UDT 是一種介面。
+UdtInterface UDT 是一種介面。
 
 ## <a name="remarks"></a>備註
 傳回這個列舉型別中的值[idiasymbol:: Get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)方法。
@@ -53,5 +49,5 @@ UDT 是一種介面。
 標頭： cvconst.h
 
 ## <a name="see-also"></a>請參閱
-[列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)
+- [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

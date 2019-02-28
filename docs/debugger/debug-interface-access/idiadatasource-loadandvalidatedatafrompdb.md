@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0024acf89af28e3496443c0e0dd74377618564
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 5426e27d7b100c42cd571935b1634d6dbd6e990f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987349"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626137"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 開啟和驗證的程式資料庫 (.pdb) 檔案符合簽章提供的資訊，並準備做為偵錯資料來源的.pdb 檔案。
@@ -34,22 +34,26 @@ HRESULT loadAndValidateDataFromPdb ( 
 ```
 
 #### <a name="parameters"></a>參數
-`pdbPath`  
+`pdbPath`
+
 [in].pdb 檔案的路徑。
 
-`pcsig70`  
+`pcsig70`
+
 [in]若要驗證的.pdb 檔案簽章的 GUID 簽章。 只有.pdb 檔案中[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]和更新版本中有 GUID 簽章。
 
-`sig`  
+`sig`
+
 [in]若要驗證的.pdb 檔案簽章 32 位元簽章。
 
-`age`  
+`age`
+
 [in]若要確認的存留期值。 存留期不一定會對應至任何已知的時間值，它用來判斷是否與對應的.exe 檔案不同步的.pdb 檔案。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示可能的傳回值，這個方法。
 
-|值|描述|
+|值|說明|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|無法開啟檔案，或檔案格式無效。|
 |E_PDB_FORMAT|嘗試存取已過時的格式的檔案。|
@@ -88,7 +92,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>請參閱
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)  
-[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)  
-[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)
+- [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

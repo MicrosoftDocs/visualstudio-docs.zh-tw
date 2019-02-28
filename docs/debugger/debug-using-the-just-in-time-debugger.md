@@ -1,6 +1,6 @@
 ---
 title: 使用 Just-In-Time 偵錯工具進行偵錯 |Microsoft Docs
-ms.date: 09/24/18
+ms.date: 09/24/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a593548936b84f852015a09dd8f63f7fceb7472b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c8a9661673adf6cdab2d9a880ce27197a4e53127
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921428"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796552"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用 Just-In-Time 偵錯工具進行偵錯
 
@@ -24,14 +24,14 @@ ms.locfileid: "55921428"
 在 Just-in-time 偵錯適用於 Windows 桌面應用程式。 它不適用於通用 Windows 應用程式，或裝載於原生應用程式，例如視覺化檢視中的 managed 程式碼。
 
 > [!TIP]
-> 如果您只想要停止 [Just-In-Time 偵錯工具] 對話方塊中，不會出現，但不安裝 Visual studio，請參閱[停用 Just-In-Time 偵錯工具](../debugger/just-in-time-debugging-in-visual-studio.md)。 如果您一次安裝 Visual Studio，您可能需要[停用 Just In Time 偵錯從 Windows 登錄](#disable-just-in-time-debugging-from-the-windows-registry)。 
+> 如果您只想要停止 [Just-In-Time 偵錯工具] 對話方塊中，不會出現，但不安裝 Visual studio，請參閱[停用 Just-In-Time 偵錯工具](../debugger/just-in-time-debugging-in-visual-studio.md)。 如果您一次安裝 Visual Studio，您可能需要[停用 Just In Time 偵錯從 Windows 登錄](#disable-just-in-time-debugging-from-the-windows-registry)。
 
 ##  <a name="BKMK_Enabling"></a> 啟用或停用 Just In Time Visual Studio 偵錯
 
 >[!NOTE]
->若要啟用或停用 Just 時間偵錯，您必須執行 Visual Studio 系統管理員身分。 啟用或停用 Just In Time 偵錯設定登錄機碼，並可能需要系統管理員權限，才能變更該金鑰。 若要開啟 Visual Studio 以系統管理員，以滑鼠右鍵按一下 Visual Studio 應用程式，然後選擇**系統管理員身分執行**。 
+>若要啟用或停用 Just 時間偵錯，您必須執行 Visual Studio 系統管理員身分。 啟用或停用 Just In Time 偵錯設定登錄機碼，並可能需要系統管理員權限，才能變更該金鑰。 若要開啟 Visual Studio 以系統管理員，以滑鼠右鍵按一下 Visual Studio 應用程式，然後選擇**系統管理員身分執行**。
 
-您可以設定只需的時間從 Visual Studio 偵錯**工具** > **選項**(或**偵錯** > **選項**) 對話方塊。 
+您可以設定只需的時間從 Visual Studio 偵錯**工具** > **選項**(或**偵錯** > **選項**) 對話方塊。
 
 **啟用或停用 Just-In-Time 偵錯：**
 
@@ -40,7 +40,7 @@ ms.locfileid: "55921428"
    ![啟用或停用 JIT 偵錯](../debugger/media/dbg-jit-enable-or-disable.png "啟用或停用 JIT 偵錯")
 
 1. 在 **啟用的 Just-In-Time 偵錯這些程式碼類型的**方塊中，選取您想要只需時間偵錯來偵錯的程式碼類型：**受控**，**原生**，和/或**指令碼**。
-   
+
 1. 選取 [確定]。
 
 如果您啟用的時間只需偵錯工具，但它未開啟時的應用程式當機或錯誤，請參閱[疑難排解 Just-In-Time 偵錯](#jit_errors)。
@@ -80,34 +80,34 @@ ms.locfileid: "55921428"
 若要啟用 Just-in-time 時間偵錯，而不標準的 Windows 表單錯誤處理，請新增這些設定：
 
 -  在 `system.windows.forms`一節*machine.config*或*\<應用程式名稱 >。 .exe.config*檔案中，設定`jitDebugging`值`true`:
-    
+
     ```xml
     <configuration>
         <system.windows.forms jitDebugging="true" />
     </configuration>
     ```
-    
+
 -  在 c + + Windows Form 應用程式中，也設定`DebuggableAttribute`要`true`中 *.config*檔案或程式碼中。 如果您使用 [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) 而且未使用 [/Og](/cpp/build/reference/og-global-optimizations) 進行編譯，則編譯器將會設定這個屬性 (Attribute)。 如果您想要偵錯非最佳化的發行組建，不過，您必須設定`DebuggableAttribute`藉由在您的應用程式中加入下列這一行*AssemblyInfo.cpp*檔案：
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
    ```
-   
+
    如需詳細資訊，請參閱<xref:System.Diagnostics.DebuggableAttribute>。
 
 ## <a name="BKMK_Using_JIT"></a>使用 Just In Time 偵錯
  此範例會引導您只要時間偵錯時應用程式擲回錯誤。
 
  - 您必須遵循下列步驟安裝的 Visual Studio。 如果您沒有 Visual Studio，您可以下載免費[Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)。
-   
+
  - 請確定 Just In Time 偵錯[啟用](#BKMK_Enabling)中**工具** > **選項** > **偵錯** > **-Just-in-time**。
 
 針對此範例中，您將建立C#會擲回的 Visual Studio 中的主控台應用程式[NullReferenceException](/dotnet/api/system.nullreferenceexception)。
 
 1. 在 Visual Studio 中建立C#主控台應用程式 (**檔案** > **新增** > **專案** > **Visual C#**   > **主控台應用程式**) 名為*ThrowsNullException*。 如需在 Visual Studio 中建立專案的詳細資訊，請參閱[逐步解說： 建立簡單的應用程式](/visualstudio/get-started/csharp/tutorial-wpf)。
-   
+
 1. 當專案開啟時 Visual Studio 中時，開啟*Program.cs*檔案。 取代為下列程式碼，這會列印到主控台一行，然後擲回 NullReferenceException 的 main （） 方法：
-   
+
    ```csharp
    static void Main(string[] args)
    {
@@ -115,30 +115,31 @@ ms.locfileid: "55921428"
        throw new NullReferenceException("this is the exception thrown by the console app");
    }
    ```
-   
-1. 若要建置方案時，選擇**偵錯**（預設值） 或**Release**組態，然後選取**建置** > **重建方案**. 
-   
-   >[!NOTE]
-   >- 選擇**偵錯**設定完整的偵錯體驗。 
-   >- 如果您選取[Release](../debugger/how-to-set-debug-and-release-configurations.md)組態，您必須關閉[Just My Code](../debugger/just-my-code.md)運作此程序。 底下**工具** > **選項** > **偵錯**，取消選取**啟用 Just My Code**。
+
+1. 若要建置方案時，選擇**偵錯**（預設值） 或**Release**組態，然後選取**建置** > **重建方案**.
+
+   > [!NOTE]
+   > - 選擇**偵錯**設定完整的偵錯體驗。
+   > - 如果您選取[Release](../debugger/how-to-set-debug-and-release-configurations.md)組態，您必須關閉[Just My Code](../debugger/just-my-code.md)運作此程序。 底下**工具** > **選項** > **偵錯**，取消選取**啟用 Just My Code**。
+
    如需組建組態的詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)。
-   
-1. 開啟 建置的應用程式*ThrowsNullException.exe*中您C#專案資料夾 (*...\ThrowsNullException\ThrowsNullException\bin\Debug*或是 *...\ThrowsNullException\ThrowsNullException\bin\Release*)。 
-   
+
+1. 開啟 建置的應用程式*ThrowsNullException.exe*中您C#專案資料夾 (*...\ThrowsNullException\ThrowsNullException\bin\Debug*或是 *...\ThrowsNullException\ThrowsNullException\bin\Release*)。
+
    您應該會看到下列的 [命令] 視窗：
-   
+
    ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
-   
+
 1. **選擇 Just-In-Time 偵錯工具** 對話方塊隨即開啟。
-   
+
    ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
-   
-   底下**可用的偵錯工具**，選取**的新執行個體\<您慣用 Visual Studio 版本 >**，如果尚未選取。 
-   
+
+   底下**可用的偵錯工具**，選取**的新執行個體\<您慣用 Visual Studio 版本 >**，如果尚未選取。
+
 1. 選取 [確定]。
-   
+
    在擲回例外狀況的行已停止執行，在 Visual Studio 中的新執行個體中開啟 ThrowsNullException 專案：
-   
+
    ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
 
 您可以開始在此時偵錯。 如果您已將實際的應用程式偵錯，您必須了解為什麼程式碼會擲回例外狀況。
@@ -146,29 +147,26 @@ ms.locfileid: "55921428"
 > [!CAUTION]
 > 如果您的應用程式包含不受信任的程式碼，會出現安全性警告對話方塊，讓您決定是否要繼續進行偵錯。 繼續偵錯，請先決定您是否信任的程式碼。 這是您自行撰寫的程式碼嗎？ 如果應用程式在遠端電腦上執行，您認得它的處理序名稱嗎？ 如果在本機執行應用程式，請考慮在您的電腦上執行的惡意程式碼的可能性。 如果您決定是值得信任的程式碼，請選取**確定**。 否則，請選取 [取消]。
 
-## <a name="jit_errors"></a> 疑難排解 Just In Time 偵錯 
+## <a name="jit_errors"></a> 疑難排解 Just In Time 偵錯
 
 如果 Just In Time 偵錯不啟動應用程式當機，即使它在 Visual Studio 中啟用：
 
-- Windows 錯誤報告可以接管您的電腦上處理的錯誤。 
-  
+- Windows 錯誤報告可以接管您的電腦上處理的錯誤。
+
   若要修正此問題，請使用登錄編輯器，將**DWORD 值**的**停用**，使用**數值資料**的**1**，下列的登錄機碼：
-  
-  
 
   - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows 錯誤報告**
-    
+
   - （適用於 64 位元電腦）： **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows 錯誤報告**
-  
+
   如需詳細資訊，請參閱[。WER 設定](https://docs.microsoft.com/windows/desktop/wer/wer-settings)。
-  
-- 已知的 Windows 問題造成的時間就失敗的偵錯工具。 
-  
+
+- 已知的 Windows 問題造成的時間就失敗的偵錯工具。
+
   修正方法是新增**DWORD 值**的**自動**，使用**數值資料**的**1**，下列的登錄機碼：
-  
-  
+
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
-    
+
   - （適用於 64 位元電腦）： **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 您可能會看到下列錯誤訊息在 Just In Time 期間偵錯：

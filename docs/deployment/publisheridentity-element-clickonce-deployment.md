@@ -16,41 +16,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1fa91423a5c0ddf6b276095b53ae4461d7057c4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005523"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628438"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt;項目 （ClickOnce 部署）
-包含簽署此部署資訊清單之發行者的資訊。  
-  
-## <a name="syntax"></a>語法  
-  
-```xml  
-<publisherIdentity  
-   name  
-   issuerKeyHash  
-/>  
-```  
-  
-## <a name="elements-and-attributes"></a>元素和屬性  
- `publisherIdentity` ，則需要簽署資訊清單元素。 下表顯示的屬性，`publisherIdentity`項目支援。  
-  
-|屬性|說明|  
-|---------------|-----------------|  
-|`name`|必要項。 描述發行此應用程式的合作對象的識別。|  
-|`issuerKeyHash`|必要項。 包含憑證簽發者的公開金鑰的 sha-1 雜湊。|  
-  
-#### <a name="parameters"></a>參數  
-  
-## <a name="property-valuereturn-value"></a>屬性值/傳回值  
-  
-## <a name="exceptions"></a>例外狀況  
-  
-## <a name="remarks"></a>備註  
-  
-## <a name="requirements"></a>需求  
-  
+包含簽署此部署資訊清單之發行者的資訊。
+
+## <a name="syntax"></a>語法
+
+```xml
+<publisherIdentity
+   name
+   issuerKeyHash
+/>
+```
+
+## <a name="elements-and-attributes"></a>元素和屬性
+ `publisherIdentity` ，則需要簽署資訊清單元素。 下表顯示的屬性，`publisherIdentity`項目支援。
+
+|屬性|說明|
+|---------------|-----------------|
+|`name`|必要項。 描述發行此應用程式的合作對象的識別。|
+|`issuerKeyHash`|必要項。 包含憑證簽發者的公開金鑰的 sha-1 雜湊。|
+
+#### <a name="parameters"></a>參數
+
+## <a name="property-valuereturn-value"></a>屬性值/傳回值
+
+## <a name="exceptions"></a>例外狀況
+
+## <a name="remarks"></a>備註
+
+## <a name="requirements"></a>需求
+
 ## <a name="subhead"></a>子標題

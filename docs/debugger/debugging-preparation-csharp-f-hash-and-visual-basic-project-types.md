@@ -21,37 +21,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a07bfcba0550392c01d7e67abe96ff88bc397805
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6cedb5e0b8dd80aadc3ee3a9507b2210811fb1bf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043060"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686882"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>偵錯準備：C#、F# 和 Visual Basic 專案類型
-本章節內的主題說明如何偵錯由 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案範本所建立的 C#、F# 和 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案類型。  
-  
- 請注意，這些專案類型建立 Dll 為輸出均已分組為[偵錯 DLL 專案](../debugger/debugging-dll-projects.md)因為它們共用通用的功能。  
-  
-## <a name="in-this-section"></a>本節內容  
- [建議的屬性設定](../debugger/managed-debugging-recommended-property-settings.md)  
- 本節說明 C#、F# 和 Visual Basic 專案與偵錯相關的建議屬性設定。  
-  
- [Windows Forms 應用程式](../debugger/debugging-preparation-windows-forms-applications.md)  
- 說明 Windows 應用程式專案，並提供偵錯、變更預設偵錯組態，以及在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 外啟動應用程式再附加至該應用程式的指示。  
-  
- [主控台專案](../debugger/debugging-preparation-console-projects.md)  
- 提供偵錯 C# 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 主控台應用程式時的其他考量。 包括指定命令列引數、從命令提示字元啟動應用程式、寫入至 [輸出] 視窗，和 [主控台] 視窗的疑難排解。  
-  
- [Windows 服務](../debugger/debugging-preparation-windows-services.md)  
- 說明 Windows 服務，並提供偵錯 Windows 服務應用程式的說明連結。  
-  
-## <a name="related-sections"></a>相關章節  
- [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)  
- 本章節內容涵蓋使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具偵錯程式時，必須執行的設定和準備。  
-  
- [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)  
- 涵蓋對以 Managed 程式碼撰寫的應用程式進行偵錯時，會遇到的問題以及所需的技巧。  
-  
-## <a name="see-also"></a>請參閱  
- [偵錯工具安全性](../debugger/debugger-security.md)
+本章節內的主題說明如何偵錯由 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案範本所建立的 C#、F# 和 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案類型。
+
+ 請注意，這些專案類型建立 Dll 為輸出均已分組為[偵錯 DLL 專案](../debugger/debugging-dll-projects.md)因為它們共用通用的功能。
+
+## <a name="in-this-section"></a>本節內容
+ [建議的屬性設定](../debugger/managed-debugging-recommended-property-settings.md)本章節描述偵錯相關的建議的屬性設定為C#， F#，和 Visual Basic 專案。
+
+ [Windows Forms 應用程式](../debugger/debugging-preparation-windows-forms-applications.md)描述的 Windows 應用程式專案，並提供偵錯、 變更預設偵錯組態，以及啟動外部的應用程式的指示[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和附加至它。
+
+ [主控台專案](../debugger/debugging-preparation-console-projects.md)提供的偵錯的其他考量C#或[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]主控台應用程式。 包括指定命令列引數、從命令提示字元啟動應用程式、寫入至 [輸出] 視窗，和 [主控台] 視窗的疑難排解。
+
+ [Windows Services](../debugger/debugging-preparation-windows-services.md)描述 Windows 服務，並提供偵錯 Windows 服務應用程式的連結。
+
+## <a name="related-sections"></a>相關章節
+ [偵錯工具設定和準備](../debugger/debugger-settings-and-preparation.md)涵蓋的設定和偵錯與程式時，您必須執行的準備[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]偵錯工具。
+
+ [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)涵蓋常見的偵錯問題和撰寫 managed 程式碼中的應用程式的技術。
+
+## <a name="see-also"></a>請參閱
+- [偵錯工具安全性](../debugger/debugger-security.md)

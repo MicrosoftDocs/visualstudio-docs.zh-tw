@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5550ed7551e58140301f6a434d252a534b78228
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 4fa57b1f289f9cc5e8c57c08b6d51bb1677c3db4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227192"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608249"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
 擷取代表這個符號的類型的符號。
@@ -31,7 +31,8 @@ HRESULT get_type (
 ```
 
 #### <a name="parameters"></a>參數
-`pRetVal`  
+`pRetVal`
+
 [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示這個符號的類型。
 
 ## <a name="return-value"></a>傳回值
@@ -57,6 +58,6 @@ if (SUCCEEDED(pType->get_type( &pBaseType ))) {
 ```
 
 ## <a name="see-also"></a>請參閱
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
-[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)  
-[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

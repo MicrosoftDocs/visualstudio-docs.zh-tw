@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1902985a459a867d389fe61740c8d0b8fee8e41b
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 0f7eee2acc1c131e146f115d75130eabbb5fd1a8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227204"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686362"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
 擷取常數的值。
@@ -31,7 +31,8 @@ HRESULT get_value (
 ```
 
 #### <a name="parameters"></a>參數
-`pRetVal`  
+`pRetVal`
+
 [in、 out]A`VARIANT`常數的值會填入的物件。
 
 ## <a name="return-value"></a>傳回值
@@ -69,4 +70,4 @@ void ProcessValue2(IDiaSymbol *pSymbol)
 ```
 
 ## <a name="see-also"></a>請參閱
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -13,29 +13,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7590cec386fbb455284b59d1d37f32b2eaa56546
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f74c55cf6b21b67cf0f1ab8b1f862f84964e3eae
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012166"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600216"
 ---
 # <a name="configure-performance-sessions"></a>設定效能工作階段
-使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具，您可以收集大量應用程式類型的各種效能資料。 本節說明如何使用效能精靈，以及效能工作階段的屬性和目標二進位檔，來設定分析工具收集您感興趣的資料。 分析工具的組態屬性也可以用來控制要在分析執行中收集的資料量。 如需詳細資訊，請參閱[控制資料收集](../profiling/controlling-data-collection.md)。  
-  
+使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具，您可以收集大量應用程式類型的各種效能資料。 本節說明如何使用效能精靈，以及效能工作階段的屬性和目標二進位檔，來設定分析工具收集您感興趣的資料。 分析工具的組態屬性也可以用來控制要在分析執行中收集的資料量。 如需詳細資訊，請參閱[控制資料收集](../profiling/controlling-data-collection.md)。
+
 > [!NOTE]
->  在許多情況下，使用效能精靈的預設屬性是收集分析資料的有效方式。 如需詳細資訊，請參閱[效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)和[使用者入門](../profiling/getting-started-with-performance-tools.md)。  
-  
+>  在許多情況下，使用效能精靈的預設屬性是收集分析資料的有效方式。 如需詳細資訊，請參閱[效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)和[使用者入門](../profiling/getting-started-with-performance-tools.md)。
+
 ## <a name="common-tasks"></a>一般工作
-  
+
 | 工作 | 相關內容 |
 | - | - |
 | **設定基本分析選項：** 您應該設定 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 來使用 Microsoft 符號伺服器。 如此可確保您可以存取目前 Windows 版本和其他 Microsoft 應用程式的符號，例如函式和參數名稱。 在分析工作階段開始之前，您也可以指定其他一般選項，例如分析工具的系統權限和分析資料檔案的名稱。 | -   [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)<br />-   [如何：序列化符號資訊](../profiling/how-to-serialize-symbol-information.md)<br />-   [如何：設定目前的工作階段](../profiling/how-to-set-the-current-session.md)<br />-   [如何：設定權限](../profiling/how-to-set-permissions.md)<br />-   [如何：設定效能資料檔案名稱選項](../profiling/how-to-set-performance-data-file-name-options.md) |
 | **指定您想要收集的資料：** 您用來設定分析工作階段的程序取決於您要分析的目標應用程式類型和您想要收集的效能資料類型。 | -   [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)<br />-   [使用取樣收集效能統計資料](../profiling/collecting-performance-statistics-by-using-sampling.md)<br />-   [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [使用檢測設備收集詳細計時資料](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)<br />-   [如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [收集執行緒和處理序並行資料](../profiling/collecting-thread-and-process-concurrency-data.md)<br />-   [收集其他效能資料](../profiling/collecting-additional-performance-data.md) |
 | **設定進階組態選項：** 當您分析載入多個 Common Language Run-time (CLR) 版本的 .NET Framework 應用程式時，可以指定要分析的版本。 當您的效能工作階段中有多個 .exe 檔案時，可以設定二進位檔的啟動順序。 | -   [如何：指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)<br />-   [如何：指定要啟動的二進位檔](../profiling/how-to-specify-the-binary-to-start.md) |
-  
-## <a name="related-sections"></a>相關章節  
- [控制資料收集](../profiling/controlling-data-collection.md)  
-  
-## <a name="see-also"></a>另請參閱  
- [效能總管](../profiling/performance-explorer.md)
+
+## <a name="related-sections"></a>相關章節
+- [控制資料收集](../profiling/controlling-data-collection.md)
+
+## <a name="see-also"></a>另請參閱
+- [效能總管](../profiling/performance-explorer.md)

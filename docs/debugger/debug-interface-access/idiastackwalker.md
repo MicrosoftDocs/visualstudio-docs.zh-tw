@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67c19b37fbe6d5867e44a81233c44aceb5138b68
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 5ad74f92765ee449eab1e3089511a063e70d96a0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227221"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617063"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 提供方法，以執行堆疊查核行程使用.pdb 檔案中的資訊。
@@ -31,7 +31,7 @@ IDiaStackWalker: IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
 下表顯示的方法`IDiaStackWalker`。
 
-|方法|描述|
+|方法|說明|
 |------------|-----------------|
 |[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|擷取堆疊框架的列舉值適用於 x86 平台。|
 |[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|擷取特定平台類型的堆疊框架的列舉值。|
@@ -67,5 +67,5 @@ if (FAILED(hr))
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>請參閱
-[介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

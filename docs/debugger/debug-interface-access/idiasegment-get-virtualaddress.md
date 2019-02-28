@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dff89e6d2552773e78e3e3de051e68cf81de9fc7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a7daec26817638be5338eb10dce83b59a1283d15
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042084"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642166"
 ---
 # <a name="idiasegmentgetvirtualaddress"></a>IDiaSegment::get_virtualAddress
-擷取區段開頭的虛擬位址 (VA)。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_virtualAddress (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pRetVal`  
- [out]傳回區段開頭的 VA。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+擷取區段開頭的虛擬位址 (VA)。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_virtualAddress ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pRetVal`
+
+[out]傳回區段開頭的 VA。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+
+## <a name="see-also"></a>請參閱
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

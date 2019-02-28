@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76b7fa5b722851357ed7f383b3f9c8e4ad4dc95e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
+ms.openlocfilehash: 24ee1588555d51c20989d782375b32e5874df878
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605987"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841734"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>逐步解說：從現有的 SharePoint 網站匯入項目
   本逐步解說示範如何從現有的 SharePoint 網站將匯入項目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。
@@ -43,7 +43,7 @@ ms.locfileid: "56605987"
 ## <a name="customize-a-sharepoint-site"></a>自訂 SharePoint 網站
  此範例中，您會建立並自訂 SharePoint 子網站，藉由將新的網站欄和建立另一個子網站，供後續使用。 更新版本中，您將匯出到.wsp 檔案的第一個子網站，並接著使用匯入自訂的網站資料行至第二個的子網站.wsp 匯入專案。
 
-#### <a name="to-create-and-customize-a-sharepoint-site"></a>若要建立和自訂 SharePoint 網站
+### <a name="to-create-and-customize-a-sharepoint-site"></a>若要建立和自訂 SharePoint 網站
 
 1. 開啟 SharePoint 網站使用網頁瀏覽器，例如 http://<em>系統名稱</em>/SitePages/Home.aspx。
 
@@ -77,7 +77,7 @@ ms.locfileid: "56605987"
 > [!IMPORTANT]
 >  如果您收到執行階段錯誤，執行下列程序，您必須對 SharePoint 網站存取的系統上執行程序。
 
-#### <a name="to-export-an-existing-sharepoint-site"></a>將現有的 SharePoint 網站
+### <a name="to-export-an-existing-sharepoint-site"></a>將現有的 SharePoint 網站
 
 1.  在 SharePoint 網站中，選擇**站台設定**上**站台動作**索引標籤，顯示 [站台設定] 頁面。
 
@@ -100,7 +100,7 @@ ms.locfileid: "56605987"
 ## <a name="import-the-wsp-file"></a>匯入.wsp 檔案
  您現在已 *.wsp*檔案，其中包含您想要重複使用 （自訂的網站資料行測試資料行），匯入的項目 *.wsp*檔案來存取它。
 
-#### <a name="to-import-a-wsp-file"></a>若要匯入.wsp 檔案
+### <a name="to-import-a-wsp-file"></a>若要匯入.wsp 檔案
 
 1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在功能表列上選擇 [**檔案** > **新增** > **專案**顯示**新專案**] 對話方塊。 如果您的 IDE 設定為使用 Visual Basic 開發設定，在功能表列上，選擇**檔案** > **新專案**。
 
@@ -128,7 +128,7 @@ ms.locfileid: "56605987"
 ## <a name="deploy-the-project"></a>部署專案
  最後，部署**WspImportProject1**到第二個 SharePoint 子網站，您稍早建立若要檢視自訂的網站資料行。
 
-#### <a name="to-deploy-the-project"></a>若要將專案部署
+### <a name="to-deploy-the-project"></a>若要將專案部署
 
 1.  在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，選擇**F5**來部署和執行的索引鍵 *.wsp*匯入專案。
 
