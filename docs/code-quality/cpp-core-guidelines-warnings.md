@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c023e6200f9e0b0efaf730fdca3a068f73c29262
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 89406cfa114d91cc6e6a33064bf073cc35181cdf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957935"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954302"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ Core Guidelines 檢查工具
 
@@ -161,27 +161,28 @@ Microsoft Visual c + + 編譯器會有有限的支援 GSL 隱藏屬性。 它可
 
 有時候可能蠻有用已取得焦點的執行程式碼分析，仍然繼續利用 Visual Studio IDE。 以下是範例案例可針對大型專案以儲存建置階段，並讓它更容易篩選結果。
 
-1.  在命令殼層設定`esp.extension`和`esp.annotationbuildlevel`環境變數。
-2.  啟動 Visual Studio，從命令殼層繼承這些變數。
-3.  載入您的專案，並開啟其內容。
-4.  啟用程式碼分析，挑選適當的規則集，但不是啟用程式碼分析延伸模組。
-5.  請移至您想要分析使用 c + + 核心指南檢查工具並開啟其內容的檔案。
-6.  選擇**C / C + + \Command 列選項**並新增 `/analyze:plugin EspXEngine.dll`
-7.  停用的先行編譯標頭 (**C / C + + 標頭 \Precompiled**)。 這是必要的因為延伸模組引擎可能會嘗試從先行編譯標頭讀取其內部的資訊，而且後者以編譯專案的預設選項，如果它不會相容。
-8.  重建專案。 常見的 PREFast 檢查應該執行的所有檔案。 因為預設不啟用 c + + 核心指南檢查工具，它應該只執行上已設定為使用它的檔案。
+1. 在命令殼層設定`esp.extension`和`esp.annotationbuildlevel`環境變數。
+2. 啟動 Visual Studio，從命令殼層繼承這些變數。
+3. 載入您的專案，並開啟其內容。
+4. 啟用程式碼分析，挑選適當的規則集，但不是啟用程式碼分析延伸模組。
+5. 請移至您想要分析使用 c + + 核心指南檢查工具並開啟其內容的檔案。
+6. 選擇**C / C + + \Command 列選項**並新增 `/analyze:plugin EspXEngine.dll`
+7. 停用的先行編譯標頭 (**C / C + + 標頭 \Precompiled**)。 這是必要的因為延伸模組引擎可能會嘗試從先行編譯標頭讀取其內部的資訊，而且後者以編譯專案的預設選項，如果它不會相容。
+8. 重建專案。 常見的 PREFast 檢查應該執行的所有檔案。 因為預設不啟用 c + + 核心指南檢查工具，它應該只執行上已設定為使用它的檔案。
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>如何使用 c + + 核心指南檢查功能，Visual Studio 外部
 您可以使用 c + + Core Guidelines 檢查自動化組建中。
 
 ### <a name="msbuild"></a>MSBuild
- 原生程式碼分析檢查程式 (PREfast) 已整合到 MSBuild 環境所自訂的目標檔案。 您可以使用專案屬性來啟用它，並新增 c + + 核心指南檢查工具 （此作業取決於 PREfast）：
 
- ```xml
-  <PropertyGroup>
-    <EnableCppCoreCheck>true</EnableCppCoreCheck>
-    <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
-    <RunCodeAnalysis>true</RunCodeAnalysis>
-  </PropertyGroup>
+原生程式碼分析檢查程式 (PREfast) 已整合到 MSBuild 環境所自訂的目標檔案。 您可以使用專案屬性來啟用它，並新增 c + + 核心指南檢查工具 （此作業取決於 PREfast）：
+
+```xml
+<PropertyGroup>
+  <EnableCppCoreCheck>true</EnableCppCoreCheck>
+  <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
+  <RunCodeAnalysis>true</RunCodeAnalysis>
+</PropertyGroup>
 ```
 
 請確定您新增這些屬性，才能匯入 Microsoft.Cpp.targets 檔案。 您可以挑選特定的規則集或建立自訂規則集，或使用預設規則集包含其他 PREfast 的檢查。
@@ -221,14 +222,16 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
    - `/analyze:plugin EspXEngine.dll` 此選項會將程式碼分析延伸模組引擎載入 PREfast。 接著，這個引擎會載入 c + + 核心指南檢查工具。
 
 ## <a name="use-the-guideline-support-library"></a>使用指導方針的支援程式庫
- 指導方針的支援程式庫可協助您遵循核心指導方針。 GSL 包含可讓您以更安全的替代項目取代出錯建構的定義。 例如，您可以取代`T*, length`的參數組`span<T>`型別。 將會位於 GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl)。 程式庫是開放原始碼，因此您可以檢視的來源、 註解，或提供。 專案，請參閱[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。
 
- ## <a name="vs2015_corecheck"></a> 在 Visual Studio 2015 專案中使用的 c + + Core Check 指導方針
-  如果您使用 Visual Studio 2015，預設不會安裝 c + + Core Check 的程式碼分析規則集。 您可以啟用 Visual Studio 2015 中的 c + + Core Check 程式碼分析工具之前，您必須執行一些額外的步驟。 Microsoft Visual Studio 2015 專案提供支援，藉由使用 Nuget 套件。 封裝名為 Microsoft.CppCoreCheck，且可在[ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck)。 此封裝需要有至少安裝 Visual Studio 2015 Update 1。
+指導方針的支援程式庫可協助您遵循核心指導方針。 GSL 包含可讓您以更安全的替代項目取代出錯建構的定義。 例如，您可以取代`T*, length`的參數組`span<T>`型別。 將會位於 GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl)。 程式庫是開放原始碼，因此您可以檢視的來源、 註解，或提供。 專案，請參閱[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。
 
- 封裝也會安裝為相依性，僅限標頭的指導方針的支援程式庫 (GSL) 另一個套件。 GSL 也是在 GitHub 上的可用[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。
+## <a name="vs2015_corecheck"></a> 在 Visual Studio 2015 專案中使用的 c + + Core Check 指導方針
 
- 由於程式碼分析規則已載入的方式，您必須安裝到每個您想要檢查 Visual Studio 2015 中的 c + + 專案的 Microsoft.CppCoreCheck NuGet 套件。
+如果您使用 Visual Studio 2015，預設不會安裝 c + + Core Check 的程式碼分析規則集。 您可以啟用 Visual Studio 2015 中的 c + + Core Check 程式碼分析工具之前，您必須執行一些額外的步驟。 Microsoft Visual Studio 2015 專案提供支援，藉由使用 Nuget 套件。 封裝名為 Microsoft.CppCoreCheck，且可在[ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck)。 此封裝需要有至少安裝 Visual Studio 2015 Update 1。
+
+封裝也會安裝為相依性，僅限標頭的指導方針的支援程式庫 (GSL) 另一個套件。 GSL 也是在 GitHub 上的可用[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。
+
+由於程式碼分析規則已載入的方式，您必須安裝到每個您想要檢查 Visual Studio 2015 中的 c + + 專案的 Microsoft.CppCoreCheck NuGet 套件。
 
 ### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>若要將 Microsoft.CppCoreCheck 套件新增至您的專案在 Visual Studio 2015
 

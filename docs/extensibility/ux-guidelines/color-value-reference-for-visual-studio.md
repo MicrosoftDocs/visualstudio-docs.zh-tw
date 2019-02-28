@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cb345d756e748703f407b0601a4ac321452af6a6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722274"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954425"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio 的色彩值參考
 
@@ -553,7 +553,7 @@ ms.locfileid: "56722274"
 
 | 亮色調 | 暗色調 | 藍色 | 用於... |
 | :---: | :---: | :---: | --- |
-| ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5`   | ![#FF2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 樣本")<br />`#FF2D2D30`   | ![#FFFDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF swatch")<br />`#FFFDF4BF` | 動作按鈕、 下拉式方塊項目、 命令列按鈕、 下拉式按鈕和功能表項目： 背景 |
+| ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 樣本")<br />`#FF2D2D30` | ![#FFFDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF swatch")<br />`#FFFDF4BF` | 動作按鈕、 下拉式方塊項目、 命令列按鈕、 下拉式按鈕和功能表項目： 背景 |
 | ![#FFCCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 樣本")<br />`#FFCCCEDB` | ![#FF3F3F46 色樣](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 樣本")<br />`#FF3F3F46` | ![#FF465A7D 色樣](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D 樣本")<br />`#FF465A7D` | 自動隱藏索引標籤的框線 |
 | ![#FFEEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 樣本")<br />`#FFEEEEF2` | ![#FF2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 樣本")<br />`#FF2D2D30` | ![#FF293955 swatch](../../extensibility/ux-guidelines/media/293955.png "#FF293955 swatch")<br />`#FF293955` | 自動隱藏 索引標籤上的預設和暫留時背景 |
 | ![#FF444444 色樣](../../extensibility/ux-guidelines/media/444444.png "#FF444444 樣本")<br />`#FF444444` | ![#FFD0D0D0 swatch](../../extensibility/ux-guidelines/media/D0D0D0.png "#FFD0D0D0 swatch")<br />`#FFD0D0D0` | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | 自動隱藏索引標籤文字、 未取得焦點的工具視窗標題列文字和工具視窗索引標籤文字 |
@@ -570,7 +570,7 @@ ms.locfileid: "56722274"
 | ![#FF007ACC 色樣](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 樣本")<br />`#FF007ACC` | ![#FF007ACC 色樣](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 樣本")<br />`#FF007ACC` | ![#FF1B293E swatch](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E swatch")<br />`#FF1B293E` | 命令列選項： 將滑鼠移至 圖像 （glyph） |
 | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FF1B293E swatch](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E swatch")<br />`#FF1B293E` | 命令列選項： 滑鼠向下圖像 （glyph） |
 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1B293E swatch](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E swatch")<br />`#FF1B293E` | 命令列文字、 下拉式清單和下拉式方塊的功能表項目文字 |
-| ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF000000   swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | 命令列： 暫留時，滑鼠，並已選取的文字 |
+| ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#Ff000000 色樣](../../extensibility/ux-guidelines/media/000000.png "#ff000000 樣本")<br />`#FF000000` | 命令列： 暫留時，滑鼠，並已選取的文字 |
 | ![#FFCCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 樣本")<br />`#FFCCCEDB` | ![#FF222222 色樣](../../extensibility/ux-guidelines/media/222222.png "#FF222222 樣本")<br />`#FF222222` | ![#FF8591A2 swatch](../../extensibility/ux-guidelines/media/8591A2.png "#FF8591A2 swatch")<br />`#FF8591A2` | 命令列： 工具列分隔符號 |
 | ![#Fff5f5f5 色樣](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 樣本")<br />`#FFF5F5F5` | ![#FF46464A swatch](../../extensibility/ux-guidelines/media/46464A.png "#FF46464A swatch")<br />`#FF46464A` | ![#FFD6DBE9 swatch](../../extensibility/ux-guidelines/media/D6DBE9.png "#FFD6DBE9 swatch")<br />`#FFD6DBE9` | 命令列： 分隔符號反白顯示的工具列 |
 | ![#FFEEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 樣本")<br />`#FFEEEEF2` | ![#FF2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 樣本")<br />`#FF2D2D30` | ![#FFD6DBE9 swatch](../../extensibility/ux-guidelines/media/D6DBE9.png "#FFD6DBE9 swatch")<br />`#FFD6DBE9` | 命令櫃背景 |
