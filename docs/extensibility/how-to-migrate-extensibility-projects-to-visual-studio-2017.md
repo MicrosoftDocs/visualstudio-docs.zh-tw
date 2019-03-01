@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d212b7deee3244847b3ae5f04c64d29621564f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bc1964fdb3860702818454ee4e918cc93c0156c3
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681838"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954245"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>HOW TO：將擴充性專案移轉至 Visual Studio 2017
 
@@ -164,7 +164,7 @@ VSIX 成功安裝在電腦安裝所有必要先決條件的測試。
 
 延伸模組類型 | 顯示名稱 | ID
 --- | --- | ---
-編輯器 | Visual Studio 核心編輯器  | Microsoft.VisualStudio.Component.CoreEditor
+編輯器 | Visual Studio 核心編輯器 | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# 和 Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
 WPF | Managed 桌面工作負載核心 | Microsoft.VisualStudio.Component.ManagedDesktop.Core
 偵錯工具 | Just-in-Time 偵錯工具 | Microsoft.VisualStudio.Component.Debugger.JustInTime
