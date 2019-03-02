@@ -4,7 +4,7 @@ items:
   items:
   - name: 總覽
     items:
-    - name: Visual Studio 2017 概觀
+    - name: Visual Studio 概觀
       href: visual-studio-ide.md
     - name: 程式碼編輯器概觀
       href: tutorial-editor.md
@@ -40,9 +40,9 @@ items:
     - name: 存取資料
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
     expanded: true
-ms.openlocfilehash: c0ec7f39f6c9b04bf04e057deaf315927fb09433
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6ee764349953a03bcb24902adaf51bb2c71f702b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923645"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223412"
