@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9016ee501c0fc4064e15358c3c8e2e4e0ac11cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 44d68b83f9364885ea33af2184f2a911bf916325
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938997"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222330"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>HOW TO：將新的項目新增至工作流程專案
 
@@ -38,7 +38,7 @@ ms.locfileid: "55938997"
 1. 在左側窗格中，選取**工作流程**類別，然後再選取工作流程項目範本。
 
    > [!NOTE]
-   > 如果您沒有看到**工作流程**類別，第一次安裝**Windows Workflow Foundation**元件的 Visual Studio 2017。 如需詳細指示，請參閱 <<c0> [ 安裝的 Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
+   > 如果您沒有看到**工作流程**類別，第一次安裝**Windows Workflow Foundation** Visual Studio 的元件。 如需詳細指示，請參閱 <<c0> [ 安裝的 Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
 
 1. 輸入的名稱中的項目**名稱**底部的對話方塊 方塊中。
 

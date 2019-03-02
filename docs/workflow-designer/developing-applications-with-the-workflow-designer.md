@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1b746e862385395089fe0ccf3bd2d4bfdb8d33
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 45c687be4efc5a83827836cd1ac89bbc38ad4cb1
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909241"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223282"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>使用工作流程設計工具開發應用程式
 
@@ -29,7 +29,7 @@ ms.locfileid: "55909241"
 
 ## <a name="install-windows-workflow-foundation"></a>安裝 Windows Workflow Foundation
 
-若要在 Visual Studio 2017 中使用工作流程專案範本，第一次安裝**Windows Workflow Foundation**元件。
+若要在 Visual Studio 中使用工作流程專案範本，第一次安裝**Windows Workflow Foundation**元件。
 
 1. 開啟 Visual Studio 安裝程式。 開啟它的快速方法是選取**工具** > **取得工具和功能**Visual Studio 中。
 
@@ -37,7 +37,7 @@ ms.locfileid: "55909241"
 
 1. 向下捲動至**開發活動**類別目錄，然後選取**Windows Workflow Foundation**元件。
 
-   ![Visual Studio 2017 的 Windows Workflow Foundation 元件](media/windows-workflow-foundation-component.png)
+   ![適用於 Visual Studio 的 Windows Workflow Foundation 元件](media/windows-workflow-foundation-component.png)
 
 1. 選取 [修改]。
 

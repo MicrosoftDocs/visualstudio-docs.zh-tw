@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8f4a09950de9480604d922b0d3dd5cefda17256
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cb6908db6b111f2ff67f2e1ca3761b11c302f5d4
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908773"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223815"
 ---
 # <a name="dependency-diagrams-guidelines"></a>相依性圖表： 指導方針
 
@@ -26,7 +26,7 @@ ms.locfileid: "55908773"
 若要查看哪些版本的 Visual Studio 支援此功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 > [!NOTE]
-> Visual Studio 2017 中的.NET Core 專案不支援相依性圖表。
+> Visual Studio 中的.NET Core 專案不支援相依性圖表。
 
 ## <a name="what-is-a-dependency-diagram"></a>什麼是相依性圖表？
 

@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b7caed64a263e5f347558dcea479b2e5ee27c96
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f6c72146f6e76605cc379c4db269982f6eed1c6f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913898"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221836"
 ---
 # <a name="debugging-xslt"></a>偵錯 XSLT
 
 您可以使用 Visual Studio 偵錯工具來偵錯 XSLT。 偵錯工具支援設定中斷點、檢視 XSLT 執行狀態等。
 
 > [!NOTE]
-> 只有 Enterprise 版的 Visual Studio 2017 中使用 XSLT 偵錯工具。
+> 只有 Enterprise 版的 Visual Studio 中使用 XSLT 偵錯工具。
 
 ## <a name="xslt-profiler"></a>XSLT 分析工具
 

@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: e85ca90dac30ad348dfeb91357ded153c1764a16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927811"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223078"
 ---
 # <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
 
@@ -33,7 +33,7 @@ ms.locfileid: "55927811"
 > 您不應該在發行組建中，使用在原始程式檔的隱藏項目，以避免不小心傳送來源在隱藏項目中繼資料。 此外，在原始程式檔隱藏項目處理成本，因為您的應用程式的效能可能會降低。
 
 > [!NOTE]
-> 如果您將專案移轉至 Visual Studio 2017 時，可能會突然面臨大量程式碼分析警告。 來自這些警告[Roslyn 分析器](roslyn-analyzers-overview.md)。 如果您尚未準備好，修正警告，您就可以隱藏所有人都選擇**分析** > **執行程式碼分析和隱藏作用中問題**。
+> 如果您將專案移轉至 Visual Studio 2017 或 Visual Studio 2019 時，可能會突然面臨大量程式碼分析警告。 來自這些警告[Roslyn 分析器](roslyn-analyzers-overview.md)。 如果您尚未準備好，修正警告，您就可以隱藏所有人都選擇**分析** > **執行程式碼分析和隱藏作用中問題**。
 >
 > ![執行程式碼分析並隱藏在 Visual Studio 中的問題](media/suppress-active-issues.png)
 

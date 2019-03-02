@@ -7,18 +7,20 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: c591ecdb206d14e217fb38c01864aa2691ffe2d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914993"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223347"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ Core Guidelines 檢查工具
-C + + Core Guidelines 是可攜性的集合的指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。 Visual Studio 目前支援 c + + 做為其程式碼分析工具的一部分，這些規則的子集。 在 Visual Studio 2017 中，預設會安裝核心指南檢查工具，並會[以 Visual Studio 2015 的 NuGet 套件形式提供](#vs2015_corecheck)。
+
+C + + Core Guidelines 是可攜性的集合的指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。 Visual Studio 目前支援 c + + 做為其程式碼分析工具的一部分，這些規則的子集。 核心指南檢查工具會安裝預設會在 Visual Studio 2017 和 Visual Studio 2019，而且[以 Visual Studio 2015 的 NuGet 套件形式提供](#vs2015_corecheck)。
 
 ## <a name="the-c-core-guidelines-project"></a>C + + Core Guidelines 的專案
- C + + Core Guidelines Bjarne Stroustrup 和其他人所建立，是安全且有效地使用新式 c + + 的指南。 指導方針強調靜態型別安全和資源的安全。 它們會找出方法來消除或是減少最容易出錯的組件的語言，並建議如何簡化您的程式碼，以及更好的效能，可靠的方式。 這些指導方針是由標準 c + + Foundation 維護。 若要進一步了解，請參閱文件中， [c + + Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)，並存取 c + + Core Guidelines 的文件的專案檔上[GitHub](https://github.com/isocpp/CppCoreGuidelines)。
+
+C + + Core Guidelines Bjarne Stroustrup 和其他人所建立，是安全且有效地使用新式 c + + 的指南。 指導方針強調靜態型別安全和資源的安全。 它們會找出方法來消除或是減少最容易出錯的組件的語言，並建議如何簡化您的程式碼，以及更好的效能，可靠的方式。 這些指導方針是由標準 c + + Foundation 維護。 若要進一步了解，請參閱文件中， [c + + Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)，並存取 c + + Core Guidelines 的文件的專案檔上[GitHub](https://github.com/isocpp/CppCoreGuidelines)。
 
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>啟用程式碼分析的 c + + Core Check 指導方針
  您也可以選取您的專案上啟用程式碼分析**建置時啟用程式碼分析**核取方塊**程式碼分析**一節**屬性頁**對話方塊您的專案。
