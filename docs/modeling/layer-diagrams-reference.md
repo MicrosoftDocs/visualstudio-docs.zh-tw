@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baee97f08a4e6015d6c2e1d88f83f5835431578b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957909"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223009"
 ---
 # <a name="dependency-diagrams-reference"></a>相依性圖表： 參考
 
@@ -34,7 +34,7 @@ ms.locfileid: "55957909"
 若要查看哪些版本的 Visual Studio 支援此功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 > [!NOTE]
-> Visual Studio 2017 中的.NET Core 專案不支援相依性圖表。
+> Visual Studio 中的.NET Core 專案不支援相依性圖表。
 
 您可以指定圖層之間的預期或現有相依性。 這些以箭號代表的相依性，表示哪些圖層可以使用或目前使用其他圖層代表的功能。 藉由將您的系統組織成描述不同角色和功能的層級，相依性圖表有助於讓您更輕鬆地了解、 重複使用，及維護您的程式碼。
 

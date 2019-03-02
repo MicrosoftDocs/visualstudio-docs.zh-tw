@@ -8,16 +8,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89406cfa114d91cc6e6a33064bf073cc35181cdf
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954302"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223490"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ Core Guidelines 檢查工具
 
-C + + Core Guidelines 是可攜性的集合的指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。 Visual Studio 目前支援 c + + 做為其程式碼分析工具的一部分，這些規則的子集。 在 Visual Studio 2017 中，預設會安裝核心指南檢查工具，並會[以 Visual Studio 2015 的 NuGet 套件形式提供](#vs2015_corecheck)。
+C + + Core Guidelines 是可攜性的集合的指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。 Visual Studio 目前支援 c + + 做為其程式碼分析工具的一部分，這些規則的子集。 核心指南檢查工具會安裝預設會在 Visual Studio 2017 和 Visual Studio 2019，而且[以 Visual Studio 2015 的 NuGet 套件形式提供](#vs2015_corecheck)。
 
 ## <a name="the-c-core-guidelines-project"></a>C + + Core Guidelines 的專案
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52919bc65366afc3e0fef5d3dbca1e5a9e7e77e1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913011"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223230"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>從您的程式碼建立相依性圖表
 
@@ -41,7 +41,7 @@ ms.locfileid: "55913011"
 ### <a name="add-a-new-dependency-diagram-to-a-modeling-project"></a>將新的相依性圖表加入至模型專案
 
 > [!NOTE]
-> Visual Studio 2017 中的.NET Core 專案不支援相依性圖表。
+> Visual Studio 中的.NET Core 專案不支援相依性圖表。
 
 1.  在 **架構**功能表上，選擇**新的相依性圖表**。
 

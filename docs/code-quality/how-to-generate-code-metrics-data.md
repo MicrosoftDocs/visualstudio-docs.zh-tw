@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007354"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223724"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>HOW TO：產生程式碼度量資料
 
@@ -206,7 +206,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 ### <a name="previous-versions"></a>舊版本
 
-舊版的 Visual Studio 中，包括 Visual Studio 2015 中，包含已也稱為命令列的程式碼度量資訊工具*Metrics.exe*。 這個舊版本的工具沒有二進位檔的分析，也就是組件為基礎的分析。 新的工具會改為分析原始程式碼。 因為新的命令列的程式碼度量工具是程式碼為基礎的來源，結果是不同的先前版本所產生的內容*Metrics.exe*和 Visual Studio 2017 IDE 內。
+Visual Studio 2015 包含也呼叫的命令列程式碼度量工具*Metrics.exe*。 這個舊版本的工具沒有二進位檔的分析，也就是組件為基礎的分析。 新*Metrics.exe*工具會改為分析原始程式碼。 因為新*Metrics.exe*工具是來源的程式碼為基礎、 命令列的程式碼度量結果有差異，以便產生由 Visual Studio IDE 和舊版的那些*Metrics.exe*。
 
 新的命令列的程式碼度量工具會計算計量，即使來源的程式碼錯誤，只要載入方案和專案。
 
@@ -214,7 +214,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 `LinesOfCode`度量是更精確且可靠，在新的命令列程式碼度量資訊工具。 它是獨立於任何 codegen 差異並不會變更為工具組或執行階段變更時。 新的工具會計算實際的程式碼，包括空白的行和註解的行數。
 
-其他計量，例如`CyclomaticComplexity`並`MaintainabilityIndex`使用相同的公式為舊版*Metrics.exe*，但新的工具會計算數`IOperations`（邏輯來源指示） 而不是中繼language (IL) 指令。 數字將會從舊版的稍有不同*Metrics.exe*以及從 Visual Studio 2017 IDE 的程式碼度量結果。
+其他計量，例如`CyclomaticComplexity`並`MaintainabilityIndex`使用相同的公式為舊版*Metrics.exe*，但新的工具會計算數`IOperations`（邏輯來源指示） 而不是中繼language (IL) 指令。 數字會稍有不同所產生的 Visual Studio ide 和舊版*Metrics.exe*。
 
 ## <a name="see-also"></a>另請參閱
 

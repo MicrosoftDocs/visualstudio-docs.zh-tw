@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30eb3183d261297295d9d6d3715f3683e4b6ee34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950223"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223698"
 ---
 # <a name="map-dependencies-with-code-maps"></a>使用 code map 對應相依性
 
@@ -47,7 +47,7 @@ ms.locfileid: "55950223"
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>安裝程式碼對應和即時相依性驗證
 
-若要在 Visual Studio 2017 中建立 code map，請先安裝**Code Map**並**即時相依性驗證**元件：
+若要在 Visual Studio 中建立 code map，請先安裝**Code Map**並**即時相依性驗證**元件：
 
 1. 開啟**Visual Studio 安裝程式**。 您可以開啟它從 Windows [開始] 功能表中，或在 Visual Studio 中選取**工具** > **取得工具和功能**。
 
@@ -102,7 +102,7 @@ ms.locfileid: "55950223"
 
 4. 不過，這可能不適用於大型的方案。 事實上，對於複雜的方案而言，記憶體限制可能會導致您無法展開所有群組。 相反地，若要查看個別節點的內部，請展開它。 將滑鼠指標移至節點上方，然後按一下出現的＞形箭號 (向下箭號)。
 
-   ![展開 Code Map 中的節點](../modeling/media/dependencygraph_containment.png)
+   ![展開程式碼對應中的節點](../modeling/media/dependencygraph_containment.png)
 
    或使用鍵盤選取項目，然後按下加號鍵 (**+**)。 若要瀏覽更深層的程式碼，請為命名空間、類型和成員執行相同的作業。
 
