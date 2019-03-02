@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8aa9a1f369b228b7e1c68a12381bf52d692173
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909202"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007354"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>HOW TO：產生程式碼度量資料
 
@@ -25,6 +25,8 @@ ms.locfileid: "55909202"
 此外，您可以安裝[NuGet 套件](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01)包含四個程式碼度量[分析器](roslyn-analyzers-overview.md)規則：CA1501、 CA1502、 ca1505 應及 CA1506。 根據預設，會停用這些規則，但您也可以將它們從啟用**方案總管**或是在[規則集](using-rule-sets-to-group-code-analysis-rules.md)檔案。
 
 ## <a name="visual-studio-ide-code-metrics"></a>Visual Studio IDE 的程式碼度量
+
+使用在 IDE 中產生的一個或所有開啟的專案程式碼度量**分析** > **計算程式碼度量**功能表。
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>產生整個方案的程式碼度量結果
 
@@ -45,6 +47,16 @@ ms.locfileid: "55909202"
 1. 從功能表列中，選擇**分析** > **計算程式碼度量** > **針對選取的專案**。
 
 就會產生結果和**程式碼度量結果** 視窗隨即顯示。 若要檢視結果的詳細資訊，請展開 樹狀目錄中的**階層**。
+
+::: moniker range="vs-2017"
+
+> [!NOTE]
+> **計算程式碼度量**命令不適用於.NET Core 和.NET Standard 專案。 若要計算的.NET Core 或.NET Standard 專案的程式碼度量，您可以：
+>
+> - 計算從程式碼度量[命令列](#command-line-code-metrics)改為
+> - 升級至 Visual Studio 2019
+
+::: moniker-end
 
 ## <a name="command-line-code-metrics"></a>命令列程式碼度量
 
