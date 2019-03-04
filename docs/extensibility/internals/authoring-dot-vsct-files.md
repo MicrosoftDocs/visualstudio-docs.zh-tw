@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27624f4b5336d91b30410303c9fd3823cc00fb88
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 442d78f494381021bd480f5649dbb6957bec5ae1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620911"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954046"
 ---
 # <a name="author-vsct-files"></a>撰寫.vsct 檔案
 本文件說明如何撰寫 *.vsct*將功能表項目、 工具列和其他使用者介面 (UI) 項目新增至 Visual Studio 整合式的開發環境 (IDE) 的檔案。 當您將 UI 項目新增到還沒有 Visual Studio 封裝 (VSPackage) 使用這些步驟 *.vsct*檔案。
