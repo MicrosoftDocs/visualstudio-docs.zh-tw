@@ -172,7 +172,7 @@ items:
         href: ide/creating-solutions-and-projects.md
       - name: 移植、移轉及升級專案
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-      - name: 在 Visual Studio 2019 Preview 中移植、移轉及升級專案
+      - name: 在 Visual Studio 2019 中移植、移轉及升級專案
         href: porting/port-migrate-upgrade-visual-studio-projects-2019.md
       - name: 管理專案和解決方案屬性
         href: ide/managing-project-and-solution-properties.md
@@ -1135,9 +1135,9 @@ items:
   - name: 告訴我們
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: d741f539d2db3e4e9df2c686adeea494cfe71a2e
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 5aa0ef8e9053a4321041ff87742de7772cab95f6
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007380"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223568"
