@@ -1,18 +1,12 @@
 ---
 layout: LandingPage
 title: 程式碼分析
-description: 了解如何使用 Visual Studio 2017 分析程式碼品質。
+description: 了解如何使用 Visual Studio 分析程式碼品質。
 ms.date: 12/03/2018
 ms.topic: landing-page
 ms.author: gewarren
 author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99d1ab0dd6eea79380b33fec76a2ba1869559f3c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949009"
 ---
 # <a name="code-analysis-in-visual-studio"></a>Visual Studio 中的程式碼分析
 
