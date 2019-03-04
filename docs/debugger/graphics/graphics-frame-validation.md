@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b353954f56cc71922d1ec5e7aef483c7bad2f47f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991524"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694812"
 ---
 # <a name="graphics-frame-validation"></a>圖形畫面格驗證
 <!-- VERSIONLESS --> Visual Studio 2017 和更新版本支援**框架驗證**工具。  [畫面格驗證] 視窗會顯示錯誤和事件清單相關聯的警告。  若要檢視此視窗，請選取**檢視 > 畫面格驗證**功能表。
@@ -33,6 +33,6 @@ ms.locfileid: "54991524"
 | 訊息 | 與事件相關聯的訊息。 |
 | Event - 事件 | 相關聯的錯誤或警告事件。 |
 
-## <a name="see-also"></a>請參閱  
-[圖形診斷 (偵錯 DirectX 圖形)](visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>請參閱
+[圖形診斷 (對 DirectX 圖形進行偵錯)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->
