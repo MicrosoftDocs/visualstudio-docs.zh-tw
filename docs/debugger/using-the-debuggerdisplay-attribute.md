@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5304da009aa35eefb91f064929a58444f139f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316999"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680180"
 ---
 # <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 屬性 (C#，Visual Basic 中， F#、 C + + /cli CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> 控制物件、屬性或欄位在偵錯工具變數視窗中顯示的方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。
@@ -62,7 +62,7 @@ csc /t:library autoexp.cs
 ## <a name="using-expressions-in-debuggerdisplay"></a>在 DebuggerDisplay 中使用運算式
 雖然您可以在 DebuggerDisplay 屬性中使用大括號括住的一般運算式，但不建議採取這種做法。
 
-DebuggerDisplay 中的一般運算式只能隱含存取目標類型之目前執行個體的 `this` 指標。 運算式無法存取別名、區域變數或指標。 如果運算式參考屬性 (Property)，則不會處理這些屬性 (Property) 中的屬性 (Attribute)。 例如，如果欄位 `[DebuggerDisplay("Object {count - 2}")]` 為 8，則 C# 程式碼 `Object 6` 會顯示 `count`。
+DebuggerDisplay 中的一般運算式只能隱含存取目標類型之目前執行個體的 `this` 指標。 運算式無法存取別名、區域變數或指標。 如果運算式參考屬性 (Property)，則不會處理這些屬性 (Property) 中的屬性 (Attribute)。 例如，如果欄位 `count` 為 8，則 C# 程式碼 `[DebuggerDisplay("Object {count - 2}")]` 會顯示 `Object 6`。
 
 在 DebuggerDisplay 中使用運算式可能導致下列問題：
 
@@ -178,7 +178,8 @@ class MyHashtable
 ```
 
 ## <a name="see-also"></a>請參閱
-[使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)  
-[建立 Managed 物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)  
-[C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)  
-[使用偵錯工具顯示屬性增強偵錯功能](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+
+- [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)
+- [建立 Managed 物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)
+- [使用偵錯工具顯示屬性增強偵錯功能](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

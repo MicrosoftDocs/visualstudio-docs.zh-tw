@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: f24c8d79f0b300be4e65b9a14e7675ddf2dcf195
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227403"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701949"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 主控台命令
 
@@ -37,7 +37,7 @@ ms.locfileid: "56227403"
 > [!TIP]
 > 舊版的 Visual Studio 不支援完整的命令集。 請使用主控台物件中的 IntelliSense，取得支援命令的快速資訊。
 
-|命令|描述|範例|
+|命令|說明|範例|
 |-------------|-----------------|-------------|
 |`assert(expression, message)`|如果 `expression` 評估為 **false**，則會傳送訊息。|`console.assert((x == 1), "assert message: x != 1");`|
 |`clear()`|清除主控台視窗中的訊息 (包括指令碼錯誤訊息) 和顯示的指令碼， 但是不會清除您在主控台輸入提示中輸入的指令碼。|`console.clear();`|
@@ -63,7 +63,7 @@ ms.locfileid: "56227403"
 ## <a name="miscellaneous-commands"></a>其他命令
 在 [JavaScript 主控台] 視窗中也可以使用這些命令 (程式碼不提供)。
 
-|命令|描述|範例|
+|命令|說明|範例|
 |-------------|-----------------|-------------|
 |`$0`, `$1`, `$2`, `$3`, `$4`|將指定的項目傳回主控台視窗。 `$0` 會傳回目前在 [DOM 總管] 中選取的項目，`$1` 則會傳回前次在 [DOM 總管] 中選取的項目，依此類推，最多可回推至前四次選取的項目。|$3|
 |`$(id)`|依 ID 傳回項目。 這是 `document.getElementById(id)`的捷徑命令，其中 `id` 是代表項目 ID 的字串。|`$("contenthost")`|
@@ -103,13 +103,7 @@ console.log(user.first, user.last);
 
  支援的替代模式如下：
 
-- %s-字串 %i-整數  
-  %d - 整數  
-  %f - 浮點數  
-  %o - 物件  
-  %b - 二進位  
-  %x - 十六進位  
-  %e - 指數  
+- %s - 字串 %i - 整數 %d - 整數 %f - 浮點數 %o - 物件 %b - 二進位 %x - 十六進位 %e - 指數
 
   以下是在 `console.log`中使用替代模式的一些範例：
 
@@ -129,5 +123,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>請參閱
-[快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)  
-[快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)
+- [快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

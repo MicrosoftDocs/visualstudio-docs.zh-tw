@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0da99377a6e0f5405029c0ac194484de3a3a1c90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909136"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222593"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>在 Visual Studio 中的 managed 程式碼的靜態程式碼分析的概觀
 
-Visual Studio 2017 可以執行的 managed 程式碼的程式碼分析，有兩種： 使用*FxCop*靜態分析 managed 組件，並以更多新式*Roslyn 分析器*。 本主題涵蓋 FxCop 靜態程式碼分析。 若要深入了解使用程式碼分析器來分析程式碼，請參閱[概觀的 Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
+Visual Studio 可以執行的 managed 程式碼的程式碼分析，有兩種： 使用*FxCop*靜態分析 managed 組件，並以更多新式*Roslyn 分析器*。 本主題涵蓋 FxCop 靜態程式碼分析。 若要深入了解使用程式碼分析器來分析程式碼，請參閱[概觀的 Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
 
 Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組件的資訊，例如是否違反 Microsoft .NET Framework 設計方針所制定的程式設計和設計規則。
 
@@ -34,13 +34,13 @@ Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組
 
 您可以在您的專案上執行程式碼分析，手動或自動。
 
-若要執行程式碼分析每次建置專案，選取**建置時啟用程式碼分析**專案的屬性頁上。 如需詳細資訊，請參閱[＜How to：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
+若要執行程式碼分析每次建置專案，選取**建置時啟用程式碼分析**專案的屬性頁上。 如需詳細資訊，請參閱[如何：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
 
 若要在專案上手動執行程式碼分析，從功能表列選擇**分析** > **執行程式碼分析** > **上執行程式碼分析\<專案>**。
 
 ## <a name="rule-sets"></a>規則集
 
-Managed 程式碼的程式碼分析規則分為[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。 您可以使用其中一個 Microsoft 標準規則集，或者您可以[建立自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)來滿足特定需求。
+受控碼的程式碼分析規則會分組成[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。 您可以使用其中一個 Microsoft 標準規則集，或者您可以[建立自訂規則集](../code-quality/how-to-create-a-custom-rule-set.md)來滿足特定需求。
 
 ## <a name="suppress-warnings"></a>隱藏警告
 
@@ -59,7 +59,7 @@ Public class MyClass
 如需詳細資訊，請參閱 <<c0> [ 隱藏警告](../code-quality/in-source-suppression-overview.md)。
 
 > [!NOTE]
-> 如果您將專案移轉至 Visual Studio 2017 時，可能會突然面臨大量程式碼分析警告。 如果您尚未準備好，修正警告，而且想要立即上手，您可以*基準*您專案的分析狀態。 從**分析**功能表上，選取**執行的程式碼分析和隱藏作用中問題**。
+> 如果您將專案移轉至 Visual Studio 2017 或 Visual Studio 2019 時，可能會突然面臨大量程式碼分析警告。 如果您尚未準備好，修正警告，而且想要立即上手，您可以*基準*您專案的分析狀態。 從**分析**功能表上，選取**執行的程式碼分析和隱藏作用中問題**。
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>執行程式碼分析做為簽入原則的一部分
 

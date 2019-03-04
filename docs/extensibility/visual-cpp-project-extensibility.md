@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d765d9d4299821b0e940311cdb9d73b96b59327b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9474bd1dc78dd9b2896749d92fa796a3febd1104
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692056"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223555"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 專案系統擴充性和工具組之間的整合
 
@@ -604,7 +604,7 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 
 ## <a name="project-cache-and-extensibility"></a>專案快取和擴充性
 
-若要改善效能，使用在 Visual Studio 2017 中，大型 c + + 方案時[專案快取](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-solution-load-with-vs-15/)引進。 它會實作為 SQLite 資料庫填入專案資料，以及用來載入專案而不需要載入記憶體中的 MSBuild 或 CPS 專案。
+若要改善效能，使用在 Visual Studio 2017 中，大型 c + + 方案時[專案快取](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/)引進。 它會實作為 SQLite 資料庫填入專案資料，以及用來載入專案而不需要載入記憶體中的 MSBuild 或 CPS 專案。
 
 因為沒有 CPS 物件從快取載入的.vcxproj 專案存在，擴充功能的 MEF 元件，匯入`UnconfiguredProject`或`ConfiguredProject`無法建立。 若要支援擴充性，Visual Studio 會偵測是否專案會使用 （或可能會使用） MEF 擴充功能時，不使用專案快取。
 
