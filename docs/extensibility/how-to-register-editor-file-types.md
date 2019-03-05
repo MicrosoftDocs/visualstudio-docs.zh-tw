@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f26b7421676081b32060dd4f342ee05098d90a7c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8f4aad26418c61ea450d697e294203b7f844577f
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980319"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324152"
 ---
 # <a name="how-to-register-editor-file-types"></a>HOW TO：登錄編輯程式檔案類型
 登錄編輯程式檔案類型的最簡單方式是使用隨附的登錄屬性[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]managed 封裝架構 (MPF) 類別。 如果您要實作您的套件，以原生[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，您也可以撰寫會註冊您的編輯器和相關聯的延伸模組的登錄指令碼。
@@ -26,12 +26,12 @@ ms.locfileid: "54980319"
 
 1. 提供<xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>以適當的參數，讓您的編輯器，VSPackage 的類別中的類別。
 
-   ```
-   [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
+    ```
+    [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
         ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
         TemplateDir = "..\\..\\Templates",
         NameResourceID = 106)]
-   ```
+    ```
 
     其中 *。範例*是此編輯器中，已註冊的延伸模組和"32"是它的優先順序等級。
 
@@ -45,17 +45,17 @@ ms.locfileid: "54980319"
 
     在您實作<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法中，呼叫<xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A>方法並傳遞做為編輯器 factory 的執行個體，則以下所示。
 
-   ```csharp
-   protected override void Initialize()
-   {
-       Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
-       "Entering Initialize() of: {0}", this.ToString()));
-       base.Initialize();
-          //Create Editor Factory
-       editorFactory = new EditorFactory(this);
-       base.RegisterEditorFactory(editorFactory);
-   }
-   ```
+    ```csharp
+    protected override void Initialize()
+    {
+        Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
+        "Entering Initialize() of: {0}", this.ToString()));
+        base.Initialize();
+           //Create Editor Factory
+        editorFactory = new EditorFactory(this);
+        base.RegisterEditorFactory(editorFactory);
+    }
+    ```
 
     此步驟中註冊編輯器 factory 及編輯器的副檔名。
 
@@ -64,14 +64,21 @@ ms.locfileid: "54980319"
     處置 VSPackage 時，會自動解除登錄編輯器 factory。 如果編輯器 factory 物件會實作<xref:System.IDisposable>介面，其`Dispose`方法呼叫之後的處理站已移除註冊使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
 
 ## <a name="registration-using-a-registry-script"></a>使用登錄指令碼的註冊
- 在原生註冊 editor factory 與檔案類型[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]完成寫入 windows 登錄中，使用登錄指令碼，如下列所示。
+在原生註冊 editor factory 與檔案類型[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]完成寫入 windows 登錄中，使用登錄指令碼，如下列所示。
 
 ### <a name="to-register-editor-file-types-using-a-registry-script"></a>若要註冊使用登錄指令碼編輯器的檔案類型
 
-1.  在您登錄指令碼中，定義編輯器 factory 及編輯器 factory 的 GUID 字串中所示`GUID_BscEditorFactory`下列登錄指令碼區段。 此外，定義延伸模組及編輯器擴充功能的優先權：
+1. 在您登錄指令碼中，定義編輯器 factory 及編輯器 factory 的 GUID 字串中所示`GUID_BscEditorFactory`下列登錄指令碼區段。 此外，定義延伸模組及編輯器擴充功能的優先權：
 
     ```
-          NoRemove Editors     {         %GUID_BscEditorFactory% = s 'RTF Editor'         {             val Package = s '%CLSID_Package%'             val DisplayName = s 'An RTF Editor'             val ExcludeDefTextEditor = d 1             val AcceptBinaryFiles = d 0
+    NoRemove Editors
+    {
+        %GUID_BscEditorFactory% = s 'RTF Editor'
+        {
+            val Package = s '%CLSID_Package%'
+            val DisplayName = s 'An RTF Editor'
+            val ExcludeDefTextEditor = d 1
+            val AcceptBinaryFiles = d 0
 
             LogicalViews
             {
@@ -82,18 +89,21 @@ ms.locfileid: "54980319"
             {
             }
 
-            Extensions            {                val rtf = d 50            }
+            Extensions
+            {
+                val rtf = d 50
+            }
         }
     }
     ```
 
-     編輯器檔案延伸模組，在此範例中便會被視為 *.rtf*和它的優先順序是"50"。 中所定義的 GUID 字串*Resource.h* BscEdit 範例專案檔案。
+    編輯器檔案延伸模組，在此範例中便會被視為 *.rtf*和它的優先順序是"50"。 中所定義的 GUID 字串*Resource.h* BscEdit 範例專案檔案。
 
-2.  註冊 VSPackage。
+2. 註冊 VSPackage。
 
-3.  登錄編輯器 factory。
+3. 登錄編輯器 factory。
 
-     編輯器 factory 會在中註冊<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A>實作。
+    編輯器 factory 會在中註冊<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A>實作。
 
     ```cpp
     // create editor factory.
@@ -101,27 +111,27 @@ ms.locfileid: "54980319"
     {
         CComObject<CBscEditorFactory> *pEdFact = new CComObject<CBscEditorFactory>;
         if (NULL == pEdFact)
-          return E_OUTOFMEMORY;
+            return E_OUTOFMEMORY;
 
         if (!pEdFact->FInit(this))
-          return E_UNEXPECTED;
+            return E_UNEXPECTED;
 
         m_srpEdFact = (IVsEditorFactory *) pEdFact;    // Note: assignment to a smart pointer does an AddRef()
     }
     // Query service for IVsRegisterEditors, register the editor factory
     CComPtr<IVsRegisterEditors> srpRegEd;
     if ((SUCCEEDED(m_srpPkgSiteSP->QueryService(SID_SVsRegisterEditors, IID_IVsRegisterEditors,(void **)&srpRegEd ))) && (srpRegEd != NULL))
-      {
-        ATLTRACE(TEXT(">> CVsPackage, registering editor factory.\n"));
-          if (FAILED(srpRegEd->RegisterEditor(GUID_BscEditorFactory,
-                      m_srpEdFact, &m_dwEditorCookie)))
-          {
-             ATLTRACE(TEXT(">> CVsPackage, RegisterEditor() failed.\n"));
-            return E_FAIL;
-          }
-      }
+        {
+            ATLTRACE(TEXT(">> CVsPackage, registering editor factory.\n"));
+            if (FAILED(srpRegEd->RegisterEditor(GUID_BscEditorFactory,
+                    m_srpEdFact, &m_dwEditorCookie)))
+            {
+                ATLTRACE(TEXT(">> CVsPackage, RegisterEditor() failed.\n"));
+                return E_FAIL;
+            }
+        }
         return S_OK;
     }
     ```
 
-     中所定義的 GUID 字串*Resource.h* BscEdit 專案檔案。
+    中所定義的 GUID 字串*Resource.h* BscEdit 專案檔案。

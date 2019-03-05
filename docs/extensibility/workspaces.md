@@ -7,12 +7,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: da61f3f46d9737bef6c14cf69a52be1951da28fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925432"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324230"
 ---
 # <a name="workspaces"></a>工作區
 
@@ -175,7 +175,19 @@ UI 內容可以用於自動載入您的套件。 值為 `4646B819-1AE0-4E79-97F4
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>SourceExplorerPackage 封裝未正確載入
 
-工作區擴充性是大量 MEF 為基礎，並撰寫錯誤會造成裝載開啟資料夾，無法載入封裝。 例如，如果延伸模組匯出的型別`ExportFileContextProviderAttribute`，但只會實作類型`IWorkspaceProviderFactory<IFileContextActionProvider>`，嘗試在 Visual Studio 中開啟資料夾時，會發生錯誤。 錯誤詳細資料可在 _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_。 解決任何錯誤，您的延伸模組所實作的型別。
+工作區擴充性是大量 MEF 為基礎，並撰寫錯誤會造成裝載開啟資料夾，無法載入封裝。 例如，如果延伸模組匯出的型別`ExportFileContextProviderAttribute`，但只會實作類型`IWorkspaceProviderFactory<IFileContextActionProvider>`，嘗試在 Visual Studio 中開啟資料夾時，會發生錯誤。
+
+::: moniker range="vs-2017"
+
+錯誤詳細資料可在 _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_。 解決任何錯誤，您的延伸模組所實作的型別。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+錯誤詳細資料可在 _%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_。 解決任何錯誤，您的延伸模組所實作的型別。
+
+::: moniker-end
 
 ## <a name="next-steps"></a>後續步驟
 

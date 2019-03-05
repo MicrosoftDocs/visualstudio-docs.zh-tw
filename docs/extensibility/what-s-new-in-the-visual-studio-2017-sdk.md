@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3d149a7cec711e59909ff21944ed52e3c074113
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: caa7593c85351512e683f2cf93adeb3211e3e4d8
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710171"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323915"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>什麼&#39;Visual Studio 2017 SDK 的新功能
 
@@ -31,7 +31,7 @@ Visual Studio SDK for Visual Studio 2017 具有下列全新和更新功能。
 
 若要深入了解這些變更，請參閱下列主題：
 
-* [適用於 2017年的擴充性的變更](breaking-changes-2017.md)
+* [Visual Studio 2017 的擴充性的變更](breaking-changes-2017.md)
 * [VSIX v3 中的 Ngen 支援](ngen-support.md)
 * [安裝擴充功能資料夾以外之處](set-install-root.md)
 * [Visual Studio 2017 擴充性的常見問題集](faq-2017.md)

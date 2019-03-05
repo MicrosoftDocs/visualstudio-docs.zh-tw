@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae4b85aa39f2323ed3e4a4353b28239a015ae7f7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5cb2453d42517982cc1dd1e2a2f5c51814496392
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719271"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324009"
 ---
 # <a name="how-to-use-the-activity-log"></a>HOW TO：使用活動記錄
 Vspackage 可以將訊息寫入活動記錄檔。 這項功能是對於在零售環境中偵錯 Vspackage 特別有用。
@@ -46,7 +46,9 @@ Vspackage 可以將訊息寫入活動記錄檔。 這項功能是對於在零售
 
 1. 執行使用 Visual Studio [/log](../ide/reference/log-devenv-exe.md) ActivityLog.xml 寫入磁碟，在您的工作階段期間的命令列參數。
 
-2. 之後關閉 Visual Studio，尋找活動記錄檔的子資料夾中的 Visual Studio 的資料：  <em>*%appdata%</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*。
+2. 關閉 Visual Studio 之後, 找到活動記錄檔的子資料夾中的 Visual Studio 的資料：
+
+   <em>*%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
 
 3. 使用任何文字編輯器中開啟活動記錄檔。 以下是典型的項目：
 
@@ -55,11 +57,13 @@ Vspackage 可以將訊息寫入活動記錄檔。 這項功能是對於在零售
    ```
 
 ## <a name="robust-programming"></a>穩固程式設計
- 活動記錄檔是一項服務，因為活動記錄檔是 VSPackage 的建構函式中無法使用。
 
- 您應該取得活動記錄檔之前對其寫入。 不要快取或儲存活動記錄檔，以供日後使用。
+活動記錄檔是一項服務，因為活動記錄檔是 VSPackage 的建構函式中無法使用。
+
+您應該取得活動記錄檔之前對其寫入。 不要快取或儲存活動記錄檔，以供日後使用。
 
 ## <a name="see-also"></a>另請參閱
+
 - [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>
