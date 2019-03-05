@@ -7,27 +7,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e84ff96381fb29a1728ad43df4ff558abd17243
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d9ae6220ac38de7bf2edc7b5c305ecb377a46f18
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689834"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323996"
 ---
 # <a name="troubleshooting-template-installation"></a>疑難排解安裝的範本
 
 如果您遇到問題，部署您的專案或項目範本時，您可以啟用診斷記錄。
 
-1. 使用下列內容建立 pkgdef 檔案 Common7\IDE\CommonExtensions 資料夾中的安裝 (例如 C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef):
+::: moniker range="vs-2017"
+
+1. 建立在 pkgdef 檔案*Common7\IDE\CommonExtensions*為您的安裝資料夾。 例如， *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 建立在 pkgdef 檔案*Common7\IDE\CommonExtensions*為您的安裝資料夾。 例如， *C:\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*。
+
+::: moniker-end
+
+2. 將下列新增至 pkgdef 檔案：
 
     ```
     [$RootKey$\VsTemplate]
     "EnableTemplateDiscoveryLog"=dword:00000001
     ```
 
-1. 藉由搜尋它，在 Windows 搜尋中，開啟安裝的 「 開發人員命令提示字元，然後執行`devenv /updateConfiguration`。
+3. 開啟[開發人員命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)針對您的安裝和執行`devenv /updateConfiguration`。
 
-1. 啟動 Visual Studio，並啟動 [新增專案] 和 [新增項目] 對話方塊，來初始化兩個範本樹狀結構。 範本記錄現在會出現在 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** （對應至您的 Visual Studio 執行個體的安裝識別碼的執行個體識別碼）。 每個範本的樹狀目錄中初始化會將項目附加至這個記錄檔。
+::: moniker range="vs-2017"
+
+4. 啟動 Visual Studio，並啟動 [新增專案] 和 [新增項目] 對話方塊，來初始化兩個範本樹狀結構。
+
+   範本記錄現在會出現在 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** （對應至您的 Visual Studio 執行個體的安裝識別碼的執行個體識別碼）。 每個範本的樹狀目錄中初始化會將項目附加至這個記錄檔。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. 啟動 Visual Studio，並啟動 [新增專案] 和 [新增項目] 對話方塊，來初始化兩個範本樹狀結構。
+
+   範本記錄現在會出現在 **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** （對應至您的 Visual Studio 執行個體的安裝識別碼的執行個體識別碼）。 每個範本的樹狀目錄中初始化會將項目附加至這個記錄檔。
+
+::: moniker-end
 
 記錄檔包含下列資料行：
 

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e297493226478c27f3c3eb6d22e45cb5769e42d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9a405b2758b40dda65f614c6231afc4251a30ac
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023911"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323928"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -29,7 +29,8 @@ ms.locfileid: "55023911"
 
 -   其他資源
 
-### <a name="creating-a-topic-f1-support"></a>建立主題 （F1 支援）
+## <a name="create-a-topic-f1-support"></a>建立主題 （F1 支援）
+
 本節將提供的主題、 主題需求、 如何以其呈現的結果建立主題 （包括 F1 支援需求） 和最後，範例主題的簡短描述元件的概觀。
 
 **說明檢視器的主題概觀**
@@ -95,13 +96,13 @@ Visual Studio 品牌封裝支援的控制項：
 
 -   在此情況下，我們將使用我們自己商標套件，Visual Studio 說明檢視器的品牌封裝的變數。
 
--   新增 F1 中繼名稱和值 ("Microsoft.Help.F1 」 內容 ="ContosoTopic4 」)，會比對 IDE 屬性包中提供的 F1 值。  （請參閱 [F1 支援] 區段，如需詳細資訊）。 這是對應到 F1 的值從 ide 即可顯示這個主題，在 IDE 中選擇 f1 鍵時所呼叫。
+-   新增 F1 中繼名稱和值 ("Microsoft.Help.F1 」 內容 ="ContosoTopic4 」)，會比對 IDE 屬性包中提供的 F1 值。 （請參閱 [F1 支援] 區段，如需詳細資訊）。這是對應到 F1 的值從 ide 即可顯示這個主題，在 IDE 中選擇 f1 鍵時所呼叫。
 
--   新增主題識別碼。 這是可由其他主題來連結至本主題的字串。  它是本主題說明檢視器識別碼。
+-   新增主題識別碼。 這是可由其他主題來連結至本主題的字串。 它是本主題說明檢視器識別碼。
 
 -   針對目錄中，新增本主題的父節點，即可定義此主題的目錄節點會出現的位置。
 
--   針對目錄中，新增本主題的節點順序。 N 的數字的子系節點的父節點時，定義子節點順序本主題的位置。 例如，本主題是數字 4 的 4 子主題。)
+-   針對目錄中，新增本主題的節點順序。 當父節點具有`n`數目的子系節點，定義子節點順序本主題的位置。 例如，本主題是數字 4 的 4 子主題。
 
 範例中繼資料 > 一節：
 
@@ -124,7 +125,6 @@ Visual Studio 品牌封裝支援的控制項：
 
 </body>
 </html>
-
 ```
 
 **主題內文**
@@ -141,10 +141,10 @@ Visual Studio 品牌封裝支援的控制項：
 
 5.  加入程式碼特定語言的文字：`<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` 請注意，`devLangnu=`可讓您輸入其他語言。 比方說，`devLangnu="Fortran"`顯示 Fortran 時程式碼片段 DisplayLanguage = Fortran
 
-6.  新增頁面的連結： `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6.  新增頁面的連結： `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  注意： 針對不受支援新的 「 顯示語言 」 (範例中， F#、 Cobol、 Fortran) 程式碼顏色標示程式碼片段中的將會是單色。
+> 注意： 針對不受支援新的 「 顯示語言 」 (範例中， F#、 Cobol、 Fortran) 程式碼顏色標示程式碼片段中的將會是單色。
 
 **範例說明檢視器主題**的程式碼說明如何定義中繼資料、 程式碼片段、 可摺疊的區域和語言特定的文字。
 
@@ -257,7 +257,7 @@ some F# code
 
     <div id="seeAlsoSection" class="section">
     <div class="seeAlsoStyle">
-        <a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>
+        <a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>
     </div>
  </div>
 </div>
@@ -340,9 +340,21 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 
 新增下列登錄機碼和值：
 
-HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic 說明鍵：零售值中顯示偵錯的輸出：[是]
+::: moniker range="vs-2017"
 
-在 IDE 中，[說明] 功能表項目之下，選取 [偵錯協助內容]
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
+
+::: moniker-end
+
+值:在零售資料的顯示偵錯輸出：[是]
+
+在 IDE 中，[說明] 功能表項目之下，選取**偵錯協助內容**。
 
 **內容的中繼資料**
 
@@ -366,7 +378,8 @@ HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic 說明鍵：零�
 | \< 中繼 name="Microsoft.Help.TopicVersion 內容 ="[主題版本號碼]"/ > | 在目錄中的多個版本存在時，請指定此版本的主題。 Microsoft.Help.Id 不保證是唯一的因為此標記時，需要多個版本的主題時存在，在目錄中，例如，目錄包含.NET Framework 3.5 和主題的主題，適用於.NET Framework 4 而且兩者都有相同的 Micro軟性。Help.Id。 |
 | \< 中繼名稱 ="SelfBranded"content ="[為 TRUE 或 FALSE]"/ > | 指定本主題使用 Help Library 管理員啟動商標或商標套件的特定主題。 此標記必須是 TRUE 或 FALSE。 如果是 TRUE，則相關主題的品牌封裝會覆寫 Help Library 管理員啟動，以便讓主題呈現如預期般，即使其不同於其他內容的轉譯時，會設定品牌封裝。 如果是 FALSE，目前的主題是根據 Help Library 管理員啟動時設定品牌封裝中呈現。 根據預設，Help Library 管理員假設自我品牌除非 SelfBranded 變數宣告為 TRUE; 否則為 false因此，您並不需要宣告\<中繼名稱 ="SelfBranded"content ="FALSE"/ >。 |
 
-### <a name="creating-a-branding-package"></a>建立品牌封裝
+## <a name="create-a-branding-package"></a>建立品牌封裝
+
 Visual Studio 版本包含幾個不同的 Visual Studio 產品，包括適用於 Visual Studio 合作夥伴的隔離和整合式的 shell。  每個這些產品都需要某種程度的主題為基礎說明內容的支援，唯一產品的商標。  例如，Visual Studio 主題需要有一致的品牌的簡報，而 SQL Studio，包裝 ISO Shell，則需要使用它自己唯一說明內容的商標每個主題。  整合式 Shell 合作夥伴可能會想要能在 Visual Studio 產品的說明內容的父系，同時維持自己的主題商標其 [說明] 主題。
 
 安裝商標套件，其中包含說明檢視器的產品。  適用於 Visual Studio 產品：
@@ -432,7 +445,6 @@ Branding.xml 檔案包含用於以一致的方式呈現在主題中的特定項�
 注意： 記下的"{n}"的變數具有程式碼相依性-移除或變更這些值會導致錯誤和可能的應用程式當機。 Visual Studio 品牌封裝中包含當地語系化的識別項 (範例 _locID="codesnippet.n")。
 
 **Branding.xml**
-
 
 | | |
 | - | - |
@@ -603,7 +615,8 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
 |ccOn.png|隱藏式輔助字幕的圖形||
 |ImageSprite.png|用來呈現可摺疊區域|展開或摺疊圖形|
 
-### <a name="deploying-a-set-of-topics"></a>部署一組的主題
+## <a name="deploy-a-set-of-topics"></a>部署一組主題
+
 這是簡單且快速的教學課程，建立說明檢視器內容部署集 MSHA 檔案及 cab 或其中包含主題的 MSHCs 組所組成。 描述一組的 cab 檔案的 XML 檔案或 MSHC 檔案 MSHA。 說明檢視器可以讀取以取得一份內容 (MSHA。封包或。MSHC 檔案） 可供本機安裝。
 
 這是只描述非常基本的 XML 結構描述的說明檢視器 MSHA 入門指南。  沒有這個簡短的概觀和範例 HelpContentSetup.msha 下方的範例實作。
@@ -677,14 +690,14 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
 </div>
 </body>
 </html>
-
 ```
 
 **摘要**
 
 使用及延伸上述的步驟可讓 Vsp 來部署 Visual Studio 說明檢視器及其內容的集合。
 
-### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>將說明加入至 Visual Studio Shell （整合模式和獨立模式）
+### <a name="add-help-to-the-visual-studio-shell-integrated-and-isolated"></a>將說明加入至 Visual Studio Shell （整合模式和獨立模式）
+
 **簡介**
 
 本逐步解說示範如何併入 Visual Studio Shell 應用程式中的說明內容，然後再加以部署。
@@ -786,7 +799,7 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
 
 6. 建立 CatalogType.xml 並加入要包含的內容存放區 （上一個步驟）：
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <catalogType>UserManaged</catalogType>
    ```
@@ -817,7 +830,7 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
 
 12. 在 Contoso IDE 中，選擇 F1 鍵，以測試 F1 功能。
 
-### <a name="additional-resources"></a>其他資源
+## <a name="additional-resources"></a>其他資源
 
 針對執行階段 API，請參閱[Windows 說明 API](/previous-versions/windows/desktop/helpapi/helpapi-portal)。
 
