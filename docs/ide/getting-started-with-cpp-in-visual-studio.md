@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 102b48131a705b39afb45fb59377d76114a426dd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920479"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796643"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
 
@@ -30,11 +30,23 @@ ms.locfileid: "55920479"
 
 ## <a name="create-a-console-app"></a>建立主控台應用程式
 
-如果尚未執行，請啟動 Visual Studio。
+如果尚未執行，請開啟 Visual Studio。
+
+::: moniker range="vs-2017"
 
 ![已套用 Visual C&#43;&#43; 設定的 IDE](../ide/media/get-started-cpp-ide-layout.png)
 
 開啟 Visual Studio 之後，您會看到 IDE 的三個基本部分：工具視窗、功能表和工具列，以及主視窗空間。 工具視窗停駐在應用程式視窗的左側和右側。 [快速啟動] 方塊、功能表列和標準工具列位於頂端。 視窗中央包含 [起始頁]。 當您開啟方案或專案時，編輯器和設計工具就會出現在此空間中。 開發應用程式時，您大部分的時間都花在此中央區域。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+開啟 Visual Studio 後，會先出現 [啟動] 視窗。 選取 [繼續但不使用程式碼] 來開啟開發環境。
+
+您會看到 IDE 的三個基本部分：工具視窗、功能表和工具列，以及主視窗空間。 工具視窗停駐在應用程式視窗的左側和右側。 [快速啟動] 方塊、功能表列和標準工具列位於頂端。 當您載入方案或專案時，編輯器和設計工具會出現在應用程式視窗的中央區域。 在開發應用程式時，您大部分時間都會在此中央區域工作。
+
+::: moniker-end
 
 Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用「解決方案」來組織專案。 專案包含用來建置您應用程式的所有選項、組態和規則。 它也會管理所有專案之檔案與任何外部檔案間的關聯性。 若要建立您的應用程式，請先建立新的專案和解決方案。
 

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 每月或每年租 Visual Studio Professional 或 Visual Studio Enterprise，沒有長期合約。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 23926cd28032c1e1b201312220770a83a269c839
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 5aee20e2c96dd79455968e8aeb87b8f17ec0cf65
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269744"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842217"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>購買 Visual Studio Professional 和 Visual Studio Enterprise 雲端訂用帳戶
 
@@ -24,14 +22,14 @@ ms.locfileid: "54269744"
 [比較雲端訂閱權益和定價](https://visualstudio.microsoft.com/vs/pricing/)
 
 > [!NOTE]
-> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。 您仍可購買新的每月雲端訂用帳戶。 
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。 您仍可購買新的每月雲端訂用帳戶。
 
 ## <a name="before-you-start"></a>開始之前
 
 *   若要為您的購買計費，您將需要一個 [Azure 訂用帳戶](https://azure.microsoft.com/pricing/purchase-options/)。 您可以在 Visual Studio Marketplace 中第一次購買之前或第一次購買期間[註冊](https://portal.azure.com)。
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>誰可以購買 Visual Studio 雲端訂閱？
-擁有 Azure 訂用帳戶的[擁有者和參與者存取權](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0)的任何人都可以購買雲端訂用帳戶。  
+擁有 Azure 訂用帳戶的[擁有者和參與者存取權](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0)的任何人都可以購買雲端訂用帳戶。
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>如何購買雲端訂用帳戶
 
@@ -83,47 +81,46 @@ ms.locfileid: "54269744"
 
 ### <a name="for-new-customers"></a>新客戶：
 #### <a name="q--i-was-considering-the-annual-cloud-subscription-and-now-i-cant-find-it-what-should-i-do"></a>問：我之前考慮年度雲端訂用帳戶，但現在找不到它。  我該怎麼辦？
-A:請前往 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以了解其他購買選項。 
+答：請前往 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以了解其他購買選項。
 
 #### <a name="q-what-purchasing-options-are-available-to-me"></a>問：我有哪些購買選項？
-A:我們在直銷通路中提供每月訂用帳戶和標準訂用帳戶。 如需詳細資訊，請參閱 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)。  
-我們也透過大量授權方案提供許多選項。 您可以在下列網址探索這些選項和價格：  
-[https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy](https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy).
+答：我們在直銷通路中提供每月訂用帳戶和標準訂用帳戶。 如需詳細資訊，請參閱 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)。
+我們也透過大量授權方案提供許多選項。 您可以在下列網址探索這些選項和價格：[https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy](https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy)。
 
-#### <a name="q-the-price-for-a-retail-subscription-is-higher-what-additional-benefits-am-i-receiving"></a>問：零售訂用帳戶的價格較高。 我會獲得哪些額外的權益？ 
-A:您會獲得訂用帳戶隨附 Visual Studio IDE 的永久使用權限。 更新時，您只需要支付相當少的軟體保證費用。  
+#### <a name="q-the-price-for-a-retail-subscription-is-higher-what-additional-benefits-am-i-receiving"></a>問：零售訂用帳戶的價格較高。 我會獲得哪些額外的權益？
+答：您會獲得訂用帳戶隨附 Visual Studio IDE 的永久使用權限。 更新時，您只需要支付相當少的軟體保證費用。
 
 ### <a name="for-existing-annual-cloud-subscribers"></a>現有的年度雲端訂閱者
 #### <a name="q--how-will-this-change-impact-me"></a>問：這項變更對我有何影響？
-A:這項變更不會影響現有訂閱者。 
+答：這項變更不會影響現有訂閱者。
 
 #### <a name="q--do-i-need-to-do-anything-as-a-result-of-these-changes"></a>問：我需要基於這些變更採取任何動作嗎？
-A:否。  您的訂用帳戶會保持不變，而且您可以如往常般進行管理。  
+答：否。  您的訂用帳戶會保持不變，而且您可以如往常般進行管理。
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-my-company-owns"></a>問：如果我想要增加公司擁有的訂用帳戶數目，該怎麼辦？
-A:您的系統管理員仍可增加訂用帳戶數目，只要瀏覽 [https://manage.visualstudio.com](https://manage.visualstudio.com) 並遵循這篇文章中的指示增加訂用帳戶計數。
+答：您的系統管理員仍可增加訂用帳戶數目，只要瀏覽 [https://manage.visualstudio.com](https://manage.visualstudio.com) 並遵循這篇文章中的指示增加訂用帳戶計數。
 
-#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-my-company-owns"></a>問：如果我想要減少公司擁有的訂用帳戶數目，該怎麼辦？ 
-A:您的系統管理員仍可減少訂用帳戶數目，只要瀏覽 [https://manage.visualstudio.com](https://manage.visualstudio.com) 並遵循這篇文章中的指示減少訂用帳戶計數。
+#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-my-company-owns"></a>問：如果我想要減少公司擁有的訂用帳戶數目，該怎麼辦？
+答：您的系統管理員仍可減少訂用帳戶數目，只要瀏覽 [https://manage.visualstudio.com](https://manage.visualstudio.com) 並遵循這篇文章中的指示減少訂用帳戶計數。
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>問：如果我取消訂用帳戶，稍後是否可以購買其他年度雲端訂用帳戶？
-A:雖然您無法購買其他年度雲端訂用帳戶，但還有許多購買 Visual Studio 訂用帳戶的選項。  若要深入了解，請參閱 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)。
+答：雖然您無法購買其他年度雲端訂用帳戶，但還有許多購買 Visual Studio 訂用帳戶的選項。  若要深入了解，請參閱 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)。
 
 ### <a name="for-cloud-solution-providers-csp"></a>雲端解決方案提供者 (CSP)
-#### <a name="q-how-will-this-change-impact-my-customers"></a>問：這項變更對我的客戶有何影響？ 
-A:您的客戶無法購買新的 Visual Studio 年度雲端訂用帳戶。 
+#### <a name="q-how-will-this-change-impact-my-customers"></a>問：這項變更對我的客戶有何影響？
+答：您的客戶無法購買新的 Visual Studio 年度雲端訂用帳戶。
 
-#### <a name="q-do-my-customers-need-to-do-anything-because-of-these-changes"></a>問：我的客戶需要基於這些變更採取任何動作嗎？ 
-A:現有客戶不會受到影響。 新的客戶必須決定要購買 Visual Studio 每月訂用帳戶，還是前往其他通路 (例如大量授權) 購買 Visual Studio 訂用帳戶。
+#### <a name="q-do-my-customers-need-to-do-anything-because-of-these-changes"></a>問：我的客戶需要基於這些變更採取任何動作嗎？
+答：現有客戶不會受到影響。 新的客戶必須決定要購買 Visual Studio 每月訂用帳戶，還是前往其他通路 (例如大量授權) 購買 Visual Studio 訂用帳戶。
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>問：如果我想要增加客戶的訂用帳戶數目，該怎麼辦？
-A:您的系統管理員仍可增加訂用帳戶數目，只要瀏覽 [https://manage.visualstudio.com](https://manage.visualstudio.com) 並遵循這篇文章中的指示增加訂用帳戶計數。
+答：您的系統管理員仍可增加訂用帳戶數目，只要瀏覽 [https://manage.visualstudio.com](https://manage.visualstudio.com) 並遵循這篇文章中的指示增加訂用帳戶計數。
 
-#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>問：如果我想要減少客戶的訂用帳戶數目，該怎麼辦？ 
-A:您的系統管理員仍可減少訂用帳戶數目，只要瀏覽 [https://manage.visualstudio.com](https://manage.visualstudio.com) 並遵循這篇文章中的指示減少訂用帳戶計數。
+#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>問：如果我想要減少客戶的訂用帳戶數目，該怎麼辦？
+答：您的系統管理員仍可減少訂用帳戶數目，只要瀏覽 [https://manage.visualstudio.com](https://manage.visualstudio.com) 並遵循這篇文章中的指示減少訂用帳戶計數。
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>問：如果我的客戶取消訂用帳戶，稍後是否可以購買其他年度雲端訂用帳戶？
-A:雖然他們無法購買其他年度雲端訂用帳戶，但還有許多購買 Visual Studio 訂用帳戶的選項。  若要深入了解，請參閱 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)。
+答：雖然他們無法購買其他年度雲端訂用帳戶，但還有許多購買 Visual Studio 訂用帳戶的選項。  若要深入了解，請參閱 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)。
 
 ## <a name="related-resources"></a>相關資源
 

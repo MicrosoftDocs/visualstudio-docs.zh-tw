@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶所含的 Azure 權益。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cabfc5a539954a066847b5ed7f62bdddd81ba04c
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 5ef69bbaeeeed7de66e1cf206182bb83f4f42ff2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380133"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843204"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 
@@ -28,7 +26,7 @@ ms.locfileid: "54380133"
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     每月信用點數 $150 美元     |                             是                             ||
 |               Visual Studio Enterprise 每月               |        無法使用        |                                                             |
-|             Visual Studio Professional Standard              |     每月信用點數 $50 美元      |                             是                            
+|             Visual Studio Professional Standard              |     每月信用點數 $50 美元      |                             是
 |              Visual Studio Professional 每月              |        無法使用        |                                                             |
 |                    Visual Studio Test Pro                    |     每月信用點數 $50 美元      |                             是                             |
 |                        MSDN 平台                        |     每月信用點數 $100 美元     |                             是                             |
@@ -77,7 +75,7 @@ ms.locfileid: "54380133"
 ## <a name="faq"></a>常見問題集
 
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>問：如何在 Azure 入口網站內提交技術支援事件？
-A:從 Azure 入口網站提交支援事件包含三個步驟。
+答：從 Azure 入口網站提交支援事件包含三個步驟。
 1. 啟用您的技術支援權益，然後取得您的合約識別碼存取識別碼。
 2. 將您的支援合約連結到您的 Azure 訂用帳戶。
 3. 提交支援事件。
@@ -86,7 +84,7 @@ A:從 Azure 入口網站提交支援事件包含三個步驟。
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>問：我收到一則訊息，指出我的 Azure 存取權很快將會結束。  我要怎麼做才能繼續使用 Azure？
 
-A:您收到這封電子郵件的原因，是因為您使用與您的 Visual Studio 訂用帳戶建立關聯的 Azure 權益，而該訂用帳戶已過期或已被移除。  若要繼續使用 Azure，您有數個選項：
+答：您收到這封電子郵件的原因，是因為您使用與您的 Visual Studio 訂用帳戶建立關聯的 Azure 權益，而該訂用帳戶已過期或已被移除。  若要繼續使用 Azure，您有數個選項：
 
 **建議的動作：**
 

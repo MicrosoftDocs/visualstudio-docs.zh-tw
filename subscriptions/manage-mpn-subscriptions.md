@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/11/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 如何針對 MPN 夥伴，將 Visual Studio 訂用帳戶指派給您的使用者。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4a113d88b93b5fe7532a72956ca6129be1773ebe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b9d7aa6095b6d5147482b139fdfe43378ad346c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949106"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842472"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>管理透過 Microsoft 合作夥伴網路 (MPN) 提供的 Visual Studio 訂用帳戶
 
@@ -33,7 +31,7 @@ Microsoft 行動套件訂閱者與 Visual Studio 訂用帳戶
 4. 選取第一個、第二個或第三個 [Technical Contact] \(技術連絡人\) 並按一下 [Save] \(儲存\)
 5. 選取 [Requirements & Assets] \(需求與資產\)
 6. 選取 [Privileges] \(權限\)
-7. 選取 [Visual Studio Subscriptions] \(Visual Studio 訂用帳戶\) (注意：Visual Studio 訂用帳戶更新擱置中)
+7. 選取 [Visual Studio 訂閱小組] (注意：Visual Studio 訂用帳戶更新暫止)
 8. 選取想要的 [Individual] \(個人\)
 9. 按一下 [Submit] \(提交\)
 10. 該使用者將會收到電子郵件

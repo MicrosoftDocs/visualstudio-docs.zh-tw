@@ -6,15 +6,13 @@ manager: lank
 ms.date: 10/31/2018
 ms.topic: conceptual
 description: 了解無法存取訂用帳戶時，訂閱者資料的匿名方式。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4570ff43f946c25c50d298e22de3b0c8a261f870
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: a4249aa2520df6e9c1870fec121de2fdb2135308
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51811248"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842542"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>將 Visual Studio 訂閱者資訊匿名化
 
@@ -37,10 +35,10 @@ ms.locfileid: "51811248"
 ## <a name="faq"></a>常見問題集
 
 ### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>問：訂閱者的個人資訊匿名化會導致其無法存取訂用帳戶嗎？
-答：不會。  匿名化會回應導致無法存取訂用帳戶的事件，但並不會導致缺乏存取權。
+答：否。  匿名化會回應導致無法存取訂用帳戶的事件，但並不會導致缺乏存取權。
 
 ### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>問：我是組織訂用帳戶的系統管理員。  如果訂閱者的其中一項資訊已匿名化，可以將該訂用帳戶重新指派給另一位使用者嗎？
-答：可以，只要訂用帳戶尚未過期，它可以重新指派給另一位訂閱者。
+答：可以，只要訂用帳戶尚未過期，可以將其重新指派給另一位訂閱者。
 
 ## <a name="next-steps"></a>後續步驟
 

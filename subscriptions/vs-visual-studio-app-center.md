@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中所含的 Visual Studio App Center 權益。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fd90f301abae9f0d85509a46255317282f284b9e
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 30953834e36cb88e79a800e0356ac59189165aee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380100"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843553"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Visual Studio App Center
 
@@ -63,7 +61,7 @@ App Center 是應用程式的任務控制機制。
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 ### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>問：我收到不支援瀏覽器的錯誤。  出了什麼問題？
-A:App Center 需要一些較舊瀏覽器不提供的較新功能。  若不支援您的瀏覽器，請依照這些步驟執行：
+答：App Center 需要一些較舊瀏覽器不提供的較新功能。  若不支援您的瀏覽器，請依照這些步驟執行：
 1.  開啟不同的瀏覽器，例如 Microsoft Edge 或最新版本的 Google Chrome 或 Firefox，或 Safari。
 2.  連線至 Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 並登入。
 3.  現在按一下 Visual Studio App Center 圖格上的 [開始使用] 連結。

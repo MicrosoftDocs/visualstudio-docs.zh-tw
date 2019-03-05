@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45828cc73e679bdf177c212604b95820bc58011c
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155353"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718544"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼
 
-在 Visual Studio 2017 中，您可以在 Visual Studio 中從幾乎任何類型的目錄型專案開啟程式碼，而不需使用方案或專案檔。 例如，這表示您可以在 GitHub 上複製存放庫，然後直接在 Visual Studio 中開啟它並開始開發，而不需建立方案或專案。 若有需要，您可以透過簡單的 JSON 檔案指定自訂建置工作並啟動參數。
+您可以在 Visual Studio 中從幾乎任何類型的目錄型專案開啟程式碼，而不需使用解決方案或專案檔。 例如，這表示您可以在 GitHub 上複製存放庫，然後直接在 Visual Studio 中開啟它並開始開發，而不需建立方案或專案。 若有需要，您可以透過簡單的 JSON 檔案指定自訂建置工作並啟動參數。
 
 當您在 Visual Studio 中開啟程式碼檔案之後，方案總管便會顯示資料夾中的所有檔案。 您可以按一下任何檔案以開始編輯它。 Visual Studio 會在背景開始編制檔案的索引，以啟用 IntelliSense、瀏覽及重構功能。 當您編輯、建立、移動或刪除檔案時，Visual Studio 會自動追蹤變更並持續更新其 IntelliSense 索引。 程式碼的語法會以色彩標示，並且在許多情況下包含基本的 IntelliSense 陳述式完成。
 
@@ -29,9 +29,19 @@ ms.locfileid: "56155353"
 您可以透過下列方式在 Visual Studio 中開啟任何程式碼：
 
 - 在 Visual Studio 功能表列上，選擇 [檔案] > [開啟] > [資料夾]，然後瀏覽至程式碼位置。
+
 - 在包含程式碼之資料夾 (按一下滑鼠右鍵) 的操作功能表上，選擇 [在 Visual Studio 中開啟] 命令。
+
+::: moniker range="vs-2017"
 - 在 Visual Studio [起始頁] 上，選擇 [開啟資料夾] 連結。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- 在 [開始] 視窗上，選擇 [開啟資料夾] 連結。
+::: moniker-end
+
 - 如果您是鍵盤使用者，請在 Visual Studio 中按 **Ctrl**+**Shift**+**Alt**+**O**。
+
 - 從複製的 GitHub 存放庫開啟程式碼。
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>從複製的 GitHub 儲存機制開啟程式碼

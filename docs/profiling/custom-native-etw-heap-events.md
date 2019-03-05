@@ -10,12 +10,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089262"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615542"
 ---
 # <a name="custom-native-etw-heap-events"></a>自訂原生 ETW 堆積事件
 
@@ -34,7 +34,7 @@ public:
 
 ...
 
-// MemoryPool is a custom managed heap, which allocates 8192 bytes 
+// MemoryPool is a custom managed heap, which allocates 8192 bytes
 // on the standard Windows Heap named "Windows NT"
 MemoryPool<Foo, 8192> mPool;
 
@@ -66,7 +66,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
-   
+
    > [!NOTE]
    > 此裝飾項目會告知編譯器，此函式為配置器的其中一項呼叫。  每個函式呼叫皆會將 CallSite 的位址、呼叫指令的大小和新物件的 typeId 輸出至新的 `S_HEAPALLOCSITE` 符號。  進行 CallStack 配置時，Windows 就會發出 ETW 事件與上述資訊。  記憶體分析工具會逐步引導 CallStack 尋找與 `S_HEAPALLOCSITE` 符號相符的傳回位址；符號中的 typeId 資訊則會用來顯示配置的執行階段類型。
    >
@@ -79,7 +79,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    ```
 
    如果您是使用 C，請改用 `OpenHeapTracker` 函式。  此函式傳回的控制代碼，可讓您在呼叫其他追蹤函式時使用：
-  
+
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
@@ -136,7 +136,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    ```
 
 ## <a name="track-memory-usage"></a>追蹤記憶體使用量
-這些呼叫就緒時，您即可使用 Visual Studio 中的標準 [記憶體使用量] 工具，追蹤自訂堆積的使用量。  如需如何使用這項工具的詳細資訊，請參閱[記憶體使用量](../profiling/memory-usage.md)文件。 請確定您已啟用堆積分析快照，否則不會顯示您的自訂堆積使用量。 
+這些呼叫就緒時，您即可使用 Visual Studio 中的標準 [記憶體使用量] 工具，追蹤自訂堆積的使用量。  如需如何使用這項工具的詳細資訊，請參閱[記憶體使用量](../profiling/memory-usage.md)文件。 請確定您已啟用堆積分析快照，否則不會顯示您的自訂堆積使用量。
 
 ![啟用堆積分析](media/heap-enable-heap.png)
 
@@ -156,5 +156,5 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 > Visual Studio 的 [效能分析] 工具集中也包含 [記憶體使用量] 工具，您可從 [偵錯] > [效能分析工具] 功能表選項或 **Alt**+**F2** 鍵盤組合，加以啟用。  這項功能不包含堆積追蹤，亦不會顯示此處所述的自訂堆積。  只有 [診斷工具] 視窗才包含這項功能 (您可以透過 [偵錯] > [視窗] > [顯示診斷工具] 功能表，或 **Ctrl**+**Alt**+**F2** 鍵盤組合，加以啟用)。
 
 ## <a name="see-also"></a>另請參閱
-[初步認識分析工具](../profiling/profiling-feature-tour.md)  
+[初步認識分析工具](../profiling/profiling-feature-tour.md)
 [記憶體使用量](../profiling/memory-usage.md)

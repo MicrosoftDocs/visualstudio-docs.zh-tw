@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de60c41cd8110a4fe9b7db89d77f16a9609292e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943139"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627684"
 ---
 # <a name="zoom-control-threads-view"></a>縮放控制 (執行緒檢視)
-縮放控制是可以放大和縮小時間軸的滑桿，讓您能專注在特別感興趣的區域。 此控制項會從時間軸檢視的中央放大，因此請先將感興趣的區域置中再放大。  
-  
-## <a name="zoom-in-by-dragging-in-the-timeline-view"></a>在時間軸檢視中拖曳以放大  
- 在時間軸檢視中拖曳，建立黃色醒目提示的區域以放大。 放開滑鼠按鈕之後，選取的範圍就會在時間軸檢視中放大。  
-  
-## <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>使用滑鼠滾輪來縮放  
- 按一下時間軸上的任一點 (確定滑鼠焦點在該點上)，然後按下 **Ctrl** 並移動滑鼠滾輪 (向前放大、向後縮小)。  
-  
-## <a name="see-also"></a>另請參閱  
- [管理通道](../profiling/manage-channels.md)   
- [開啟/關閉測量模式](../profiling/measure-mode-on-off.md)   
- [執行緒檢視](../profiling/threads-view-parallel-performance.md)   
- [使用率導覽](../profiling/utilization-navigator.md)
+縮放控制是可以放大和縮小時間軸的滑桿，讓您能專注在特別感興趣的區域。 此控制項會從時間軸檢視的中央放大，因此請先將感興趣的區域置中再放大。
+
+## <a name="zoom-in-by-dragging-in-the-timeline-view"></a>在時間軸檢視中拖曳以放大
+ 在時間軸檢視中拖曳，建立黃色醒目提示的區域以放大。 放開滑鼠按鈕之後，選取的範圍就會在時間軸檢視中放大。
+
+## <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>使用滑鼠滾輪來縮放
+ 按一下時間軸上的任一點 (確定滑鼠焦點在該點上)，然後按下 **Ctrl** 並移動滑鼠滾輪 (向前放大、向後縮小)。
+
+## <a name="see-also"></a>另請參閱
+- [管理通道](../profiling/manage-channels.md)
+- [開啟/關閉測量模式](../profiling/measure-mode-on-off.md)
+- [執行緒檢視](../profiling/threads-view-parallel-performance.md)
+- [使用率導覽](../profiling/utilization-navigator.md)

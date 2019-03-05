@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/14/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解訂用帳戶管理員可以如何存取系統管理入口網站，並管理透過大量授權 (VL) 取得的訂閱
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de5992adc2ada56ad213ef29e879dadf7b7daad8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 846eb6ecf69253086079cf06fe4c53a8860d996d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379536"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843129"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>存取入口網站與管理系統管理員 - 適用於透過大量授權 (VL) 取得的訂閱
 
@@ -22,8 +20,8 @@ ms.locfileid: "39379536"
 
 自 2017 年 3 月 1 日起，如果客戶仍在進行入口網站的上線及移轉程序，即需要透過大量授權服務中心 (VLSC) 來管理訂閱。
 
-如需在 VLSC 中管理訂閱的詳細資訊，請參閱這些指南：[了解適用於 VLSC 的 Visual Studio 訂閱](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf) \(英文\) 
-[管理適用於 VLSC 的 Visual Studio 訂閱](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf) \(英文\)
+如需使用 VLSC 來管理訂用帳戶的詳細資訊，請參閱下列指南：[了解 VLSC 的 Visual Studio 訂用帳戶](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
+[管理 VLSC 的 Visual Studio 訂用帳戶](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
 
 **Visual Studio 訂閱系統管理員入口網站** 如果您的組織已經移轉，但尚未將您設定於新的入口網站中，則組織大量授權合約的「主要連絡人」或「通知連絡人」需要採取幾個步驟來將組織上線，並將您設定為系統管理員。
 

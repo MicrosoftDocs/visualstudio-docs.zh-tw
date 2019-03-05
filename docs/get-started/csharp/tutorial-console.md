@@ -2,7 +2,7 @@
 title: 教學課程：建立簡單的 C# 主控台應用程式
 description: 了解如何逐步在 Visual Studio 中建立 C# 主控台應用程式。
 ms.custom: seodec18, get-started
-ms.date: 01/25/2019
+ms.date: 02/26/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156068"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841169"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立簡單的 C# 主控台應用程式
 
@@ -39,7 +39,7 @@ ms.locfileid: "56156068"
 
    ![Visual Studio IDE 的 [新增專案] 對話方塊中的主控台應用程式 (.NET Core) 專案範本](./media/new-project-csharp-calculator-console-app.png)
 
-### <a name="add-a-workgroup-optional"></a>新增工作群組 (選擇性)
+### <a name="add-a-workload-optional"></a>新增工作負載 (選擇性)
 
 如果您看不到 [主控台應用程式] 專案範本，則其取得方式是新增 [.NET Core 跨平台開發] 工作負載。 方式如下：
 
@@ -80,6 +80,7 @@ ms.locfileid: "56156068"
             Console.WriteLine(c);
             Console.ReadKey();
     ```
+
 1. 選擇 [Calculator] 來執行您的程式 (或按 **F5**)。
 
    ![選擇 [Calculator] 按鈕以從工具列執行應用程式](./media/csharp-console-calculator-button.png)
@@ -151,6 +152,7 @@ ms.locfileid: "56156068"
         }
     }
     ```
+
 1. 選擇 [Calculator] 來執行您的程式 (或按 **F5**)。
 
    ![選擇 [Calculator] 按鈕以從工具列執行應用程式](./media/csharp-console-calculator-button.png)
@@ -382,6 +384,7 @@ ms.locfileid: "56156068"
         }
     }
     ```
+
 1. 選擇 [Calculator] 來執行您的程式 (或按 **F5**)。
 
 1. 遵循提示，將數字 **42** 除以數字 **119**。 應用程式看起來應類似下圖：
@@ -404,7 +407,7 @@ ms.locfileid: "56156068"
 
 ## <a name="code-complete"></a>程式碼完成
 
-在此教學課程中，我們對計算機應用程式進行了許多變更。 應用程式現在會更有效率處理運算資源，並處理大部分的使用者輸入錯誤。
+在本教學課程中，我們對計算機應用程式進行了許多變更。 應用程式現在會更有效率處理運算資源，並處理大部分的使用者輸入錯誤。
 
 以下是完整程式碼總整理：
 

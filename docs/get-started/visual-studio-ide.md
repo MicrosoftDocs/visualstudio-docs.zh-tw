@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 2017 的概觀
 titleSuffix: ''
-ms.date: 10/26/2018
+ms.date: 2/21/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.custom: vs-get-started
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38f102dd0a61d80c383307abdc96a03b50c0d74
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f49d4e9c734d1a7f20a765a75c4dcb6b950b38f8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316817"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705501"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>歡迎使用 Visual Studio IDE
 
@@ -62,6 +62,8 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 - [快速啟動](../ide/reference/quick-launch-environment-options-dialog-box.md)
 
    Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 **快速啟動**搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，[快速啟動] 提供的結果可開啟 Visual Studio 安裝程式，安裝工作負載或個別元件。
+
+   您可以找到 IDE 右上角的 [快速啟動] 搜尋方塊。 (或者，按下 **Ctrl**+**Q** 加以存取。)
 
    ![Visual Studio 的 [快速啟動] 搜尋方塊](media/quick-launch-nuget.png)
 

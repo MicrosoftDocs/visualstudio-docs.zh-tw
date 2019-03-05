@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 394ac9b7f3a1a72485c8b435c776ca98c7c9fdb4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 96faf382145d7c4541f1fe66f872ad3622f64631
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963459"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620730"
 ---
-# <a name="how-to-relocate-instrumented-binaries"></a>HOW TO：重新配置所檢測的二進位檔
+# <a name="how-to-relocate-instrumented-binaries"></a>作法：重新配置所檢測的二進位檔
 
 在檢測期間，會將探查插入二進位檔，以便測量應用程式效能。 藉由選擇重新配置所檢測的二進位檔，可以檢測原始二進位檔的複本，並將此複本放在指定的位置。 如果您不想讓分析工具重新命名原始的二進位檔，這個選項會很有用。 如果未重新配置二進位檔，則會覆寫二進位檔的原始版本。
 
@@ -37,5 +37,5 @@ ms.locfileid: "54963459"
 
 ## <a name="see-also"></a>另請參閱
 
-[設定效能工作階段](../profiling/configuring-performance-sessions.md)  
+[設定效能工作階段](../profiling/configuring-performance-sessions.md)
 [VSInstr](../profiling/vsinstr.md)

@@ -1,7 +1,7 @@
 ---
 title: 更新網路型安裝
 description: 了解如何使用 --layout 命令來更新網路型 Visual Studio 安裝
-ms.date: 08/14/2017
+ms.date: 2/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9159651ea1f7c8890cdf8832a8898743e91bb222
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a59bbac5140e4267a52847a2152862057ce24210
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937535"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796630"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>更新 Visual Studio 2017 的網路型安裝
 
@@ -26,13 +26,13 @@ ms.locfileid: "55937535"
 
 ## <a name="how-to-update-a-network-layout"></a>如何更新網路配置
 
-若要重新整理您的網路安裝共用，讓它能包含最新的更新，請執行 --layout 命令，以累加方式下載更新的套件。
+若要重新整理您的網路安裝共用，以便其包含最新的更新，請執行 `--layout` 命令，以累加方式下載更新的套件。
 
-如果您在最初建立網路配置時已選取部分配置，則會儲存這些設定。  任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項  (這是 15.3 的新功能)。如果您要使用舊版本的配置，則應該使用您最初建立網路安裝配置時所使用的相同命令列參數 (亦即，相同的工作負載和語言) 來更新其內容。
+**15.3 中的新功能**：如果您在最初建立網路配置時已選取部分配置，則會儲存這些設定。  任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項 但是如果您要使用舊版本的配置，則應該使用您最初建立網路安裝配置時所使用的相同命令列參數 (亦即，相同的工作負載和語言) 來更新其內容。
 
 如果您在檔案共用上裝載配置，則應該更新該配置的私用複本 (例如 c:\vs2017offline))，然後在下載所有已更新的內容之後，將該複本複製到檔案共用 (例如 \\server\products\VS2017)。 如果不這麼做，則在您更新配置時執行安裝程式的任何使用者，都很有可能無法取得配置的所有內容，因為配置尚未完全更新。
 
-讓我們逐步解說如何在建立後更新配置：
+讓我們以一些範例來逐步解說如何在建立後更新配置：
 
 * 首先，以下是如何建立只包含一份英文工作負載的配置範例：
 
@@ -58,7 +58,11 @@ ms.locfileid: "55937535"
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
-* 最後，以下是如何新增額外的工作負載和當地語系化語言，而不需要更新版本。 (這個命令會新增 ASP.NET 和 Web 工作負載)。現在，Managed 桌面、Azure 以及 ASP.NET 和 Web 工作負載都會包含在此配置中。  所有這些工作負載也會包含英文、德文和法文的語言資源。  不過，執行此命令時，不會將配置更新為最新可用版本。  它會保持現有的版本。
+    > [!IMPORTANT]
+    > 即使您將所新增選擇性元件包含在[回應檔案](automated-installation-with-response-file.md)的「新增」區段中，更新作業也不會安裝這些元件。 這是因為新增作業不會在更新期間使用。<br>
+    > **因應措施**：在升級後執行個別修改作業，以安裝遺漏的元件。
+
+* 最後，以下是如何新增額外的工作負載和當地語系化語言，而不需要更新版本。 (這個命令會新增 ASP.NET 和 Web 工作負載)。現在，Managed 桌面、Azure 以及 ASP.NET 和 Web 工作負載都會包含在此配置中。 所有這些工作負載也會包含英文、德文和法文的語言資源。  不過，執行此命令時，不會將配置更新為最新可用版本。 它會保持現有的版本。
 
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion

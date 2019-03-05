@@ -4,24 +4,22 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中所含的 Enterprise Mobility + Security 權益。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fe6d44b64de314153d7ba00fe4540dbecf1d6ba2
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: b1d3aa39f4d3f53d10bcc692da96bfe6c50b981d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380066"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841191"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Enterprise Mobility + Security (EMS)
 
 Visual Studio Enterprise 年度雲端和標準訂用帳戶包含 Enterprise Mobility + Security (EMS)。  使用 EMS 保護和管理身分識別、裝置、應用程式和資料 - Azure Active Directory、Microsoft Intune、Azure Information Protection、Microsoft Advanced Threat Analytics 和 Microsoft Cloud App Security.
 
 > [!NOTE]
-> 如果您透過大量授權購買多年訂用帳戶，則目前只有第一年才提供 EMS 權益。  
+> 如果您透過大量授權購買多年訂用帳戶，則目前只有第一年才提供 EMS 權益。
 
 ## <a name="activation-steps"></a>啟用步驟
 

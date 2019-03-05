@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf8f72f0d9b0c2d847ddb2c5e7e6c3c8d4ae4467
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6daa21f9db7eef9a651577ad829d884dccf353dc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932491"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717516"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -31,15 +31,21 @@ devenv /Command CommandName
 
 ## <a name="arguments"></a>引數
 
-- *CommandName*
+*CommandName*
 
-  必要項。 Visual Studio 命令的完整名稱或其別名，以雙引號括住。 如需命令和別名語法的詳細資訊，請參閱 [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)。
+必要項。 Visual Studio 命令的完整名稱或其別名，以雙引號括住。 如需命令和別名語法的詳細資訊，請參閱 [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)。
 
 ## <a name="remarks"></a>備註
 
-啟動完成後，IDE 會執行具名命令。 如果您使用此參數，IDE 就不會在啟動時顯示 Visual Studio 起始頁。
+啟動完成後，IDE 會執行具名命令。
 
-如果增益集公開某個命令，則可從命令列中使用此參數啟動增益集。 如需詳細資訊，請參閱[＜How to：使用增益集管理員來控制增益集](/previous-versions/xwdatdwh(v=vs.140))。
+::: moniker range="vs-2017"
+
+如果您使用此參數，IDE 在啟動時就不會顯示 [起始頁]。
+
+::: moniker-end
+
+如果增益集公開某個命令，則可從命令列中使用此參數啟動增益集。 如需詳細資訊，請參閱[如何：使用增益集管理員來控制增益集](/previous-versions/xwdatdwh(v=vs.140))。
 
 ## <a name="example"></a>範例
 

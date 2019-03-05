@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解所選取 Visual Studio 訂用帳戶隨附的 DataCamp 訓練課程訂用帳戶。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: afda11bd8cbc0a8f0be1c25ab0b23d9f7b3a39b8
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 83cbb3cb0b10faddab860caf71e11ca4a03d4e4a
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380405"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841425"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 DataCamp 訓練課程權益
 
@@ -33,7 +31,7 @@ DataCamp 權益的持續時間取決於您的 Visual Studio 訂用帳戶。
 3. 在 DataCamp 頁面上，您可以建立新帳戶。  您可以選擇輸入電子郵件地址和密碼，或是使用現有的 Facebook、LinkedIn 或 Google 帳戶登入。  提供登入資訊之後，按一下 [Get Started] (開始)。
    > [!div class="mx-imgBorder"]
    > ![DataCamp 建立新帳戶](_img/vs-datacamp/vs-datacamp-create-account.png)
-   > 
+   >
    > [!NOTE]
    > 當您開始建立帳戶時，可能會收到下列錯誤訊息：「糟糕！  您的促銷代碼無效或已到期。」  由於您的促銷代碼會在建立後的數分鐘到期，因此可能發生這個情況。  若您收到此訊息，只要回到[權益](https://my.visualstudio.com/benefits)頁面並按一下 DataCamp 權益磚上的 [啟用] 連結即可。
 
@@ -62,7 +60,7 @@ DataCamp 權益的持續時間取決於您的 Visual Studio 訂用帳戶。
 
 您可以隨時停止，並在下一個工作階段繼續訓練。  只要前往 [http://www.datacamp.com](http://www.datacamp.com)，並登入。  您會看到儀表板，並可以直接從暫停的地方繼續訓練。 只要按一下 [Continue Track] (繼續路徑) 即可。
 
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![DataCamp 繼續訓練](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>資格
