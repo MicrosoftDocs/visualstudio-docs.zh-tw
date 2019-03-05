@@ -1,18 +1,18 @@
 ---
 title: 生產力祕訣
-ms.date: 11/04/2016
+ms.date: 2/21/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 860583dffd4076db9c4c4660928b75419bd36218
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913024"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702716"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高生產力的祕訣
 
@@ -66,11 +66,13 @@ ms.locfileid: "55913024"
 
 - **只顯示您要處理的錯誤**。 如果您選擇 [錯誤清單] 工具列上的 [篩選] 按鈕，則可以減少 [錯誤清單] 視窗中出現的錯誤數目。 您可以選擇顯示只在目前編輯器開啟之檔案中的錯誤、只在目前檔案中的錯誤或只在目前專案中的錯誤。 您也可以在 [錯誤清單] 視窗中搜尋以找出特定錯誤。
 
-- **尋找對話方塊、功能表命令和選項**。 在 [快速啟動](../ide/reference/quick-launch-environment-options-dialog-box.md) 方塊中，輸入您嘗試尋找之項目的關鍵字或片語。 例如，如果您輸入 `new project`，則會出現下列選項︰
+- **尋找對話方塊、功能表命令和選項**。 在[快速啟動](../ide/reference/quick-launch-environment-options-dialog-box.md)搜尋方塊中，輸入您嘗試尋找項目的關鍵字或片語。 例如，如果您輸入 `new project`，則會出現下列選項︰
 
     ![「新增專案」在 [快速啟動] 中的結果](../ide/media/productivity_quicklaunch.png)
 
     [快速啟動] 會顯示 [新增專案] 對話方塊、[新增項目] 對話方塊以及 [選項] 對話方塊中的 [專案和方案] 頁面的連結。 快速啟動結果也可以包含專案檔和工具視窗。
+
+  找出 IDE 右上角的 [快速啟動] 搜尋方塊。 (或者，按下 **Ctrl**+**Q** 加以存取。)
 
 ## <a name="debug-code"></a>偵錯程式碼
 
@@ -116,7 +118,7 @@ ms.locfileid: "55913024"
 
      您也可以建立另一個方案總管執行個體並移至其他監視器，更輕鬆地管理檔案。 若要建立另一個方案總管執行個體，請開啟方案總管中的捷徑功能表，然後選擇 [新增方案總管檢視]。
 
-- **自訂出現在 Visual Studio 中的字型**。 您可以為 IDE 中使用的文字變更字體、大小和色彩。 例如，您可以為編輯器裏的某一種程式碼項目自訂色彩，以及變更工具視窗或整個 IDE 的字體。 如需詳細資訊，請參閱[＜How to：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)及[如何：在編輯器中變更字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+- **自訂出現在 Visual Studio 中的字型**。 您可以為 IDE 中使用的文字變更字體、大小和色彩。 例如，您可以為編輯器裏的某一種程式碼項目自訂色彩，以及變更工具視窗或整個 IDE 的字體。 如需詳細資訊，請參閱[如何：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)及[如何：在編輯器中變更字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
 ## <a name="see-also"></a>另請參閱
 

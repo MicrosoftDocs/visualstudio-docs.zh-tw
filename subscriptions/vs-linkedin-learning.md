@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解包含為所選取 Visual Studio 訂用帳戶中所含 LinkedIn Premium 訂用帳戶一部分的 LinkedIn Learning 權益。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fc77d1ebe0fe96c55000123e4bf040a35a37b619
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 2f1e465be1d9c81235af1bad723f827a0f04147c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380218"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841545"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 LinkedIn Learning 權益
 
@@ -113,7 +111,7 @@ ms.locfileid: "54380218"
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 ### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>問：如果更新我的訂用帳戶，也會更新我的 LinkedIn Learning 權益嗎？
-A:否，LinkedIn Learning 供應項目僅提供給新訂用帳戶者使用。
+答：否，LinkedIn Learning 供應項目僅提供給新訂用帳戶者使用。
 
 ## <a name="support-resources"></a>支援資源
 -  需要有關 LinkedIn Learning 的說明？  請參閱這些資源：

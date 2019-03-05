@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822159"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842659"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 
@@ -91,7 +89,7 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 
 **標準訂閱**
 
-- Microsoft 市集：如果您是從 [Microsoft 市集](http://www.microsoft.com/store)購買訂閱，即可在同樣的位置更新憑證。
+- Microsoft Store：如果您是從 [Microsoft 市集](http://www.microsoft.com/store)購買訂閱，即可在同樣的位置更新憑證。
 - 大量授權：如果您的公司是透過大量授權購買訂閱，則應該由系統管理員連絡轉銷商以更新您的訂閱。
 
 **雲端訂用帳戶：** 雲端訂用帳戶不需要續約。 只要訂閱已付費，即持續有效。

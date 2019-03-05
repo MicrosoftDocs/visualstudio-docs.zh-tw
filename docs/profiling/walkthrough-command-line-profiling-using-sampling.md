@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cfa4afeda38180825a9f17b47a4e959fdac092d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bf9fd3006ab584dddfcb089ae31fb945fe69049a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960538"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624889"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>逐步解說：使用取樣進行命令列分析
 
@@ -41,7 +41,7 @@ ms.locfileid: "54960538"
 「取樣」是一種剖析的方法，會定期輪詢特定處理序以判斷使用中的函數。 產生的資料會提供計數，表示在取樣處理序時，函式位於呼叫堆疊頂端的頻率。
 
 > [!NOTE]
->  若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。  
+>  若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>使用取樣方法剖析 PeopleTrax 應用程式
 
@@ -99,8 +99,8 @@ ms.locfileid: "54960538"
 
 ## <a name="see-also"></a>另請參閱
 
-[效能工作階段概觀](../profiling/performance-session-overview.md)  
-[從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)  
-[VSPerfCmd](../profiling/vsperfcmd.md)  
-[認識取樣資料值](../profiling/understanding-sampling-data-values.md)  
-[效能報告檢視](../profiling/performance-report-views.md)
+[效能工作階段概觀](../profiling/performance-session-overview.md)
+[從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[VSPerfCmd](../profiling/vsperfcmd.md)
+[了解取樣資料值](../profiling/understanding-sampling-data-values.md)
+[效能報表檢視](../profiling/performance-report-views.md)

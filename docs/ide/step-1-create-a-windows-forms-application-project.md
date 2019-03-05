@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9451dea474f5d3ae460af20561e80f0660e33026
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2b8552adfd4a7f94c58bcb32a60fbe8cd4c9323b
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956063"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796526"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>步驟 1：建立 Windows Forms 應用程式專案
 
@@ -37,20 +37,21 @@ ms.locfileid: "55956063"
 
      Visual Studio 會為您的程式建立方案。 方案會做為您程式所需的全部專案和檔案的容器。 本教學課程稍後將會詳細說明這些詞彙。
 
-4. 下圖顯示您現在會在 Visual Studio 介面中看到的內容。
-
-    > [!NOTE]
-    > 您的視窗配置看起來可能不會與下圖完全相同。 確切的視窗配置取決於 Visual Studio 版本、您使用的程式語言及其他因素。 不過，您應該確認三個視窗都已出現。
-
-     ![IDE 視窗](../ide/media/express_ideoverview_visio.png)<br/>**IDE** 視窗
-
-     介面中包含三個視窗：主視窗、方案總管和 [屬性] 視窗。
+4. 開發環境包含三個視窗：主視窗、[方案總管] 和 [屬性] 視窗。
 
      如果遺漏任一個視窗，請還原成預設視窗版面配置，方法是在功能表列上依序選擇 [視窗] > [重設視窗版面配置]。 您也可以使用功能表命令顯示視窗。 在功能表列上，依序選擇 [檢視] > [屬性視窗] 或 [方案總管]。 如果有任何其他視窗開啟，請選擇視窗右上角的 [關閉] (x) 按鈕將視窗關閉。
 
-5. 圖中會顯示下列視窗 (從左上角開始，依順時針方向)：
+    ::: moniker range="vs-2017"
 
-    - **主視窗**：您將在這個視窗中進行大部分的工作，例如，使用表單和編輯程式碼。 在圖中，視窗在 [表單編輯器] 中顯示表單。 視窗頂端會出現 [起始頁] 索引標籤和 [Form1.cs [Design]] 索引標籤 (在 Visual Basic 中，索引標籤名稱的結尾是 *.vb*，而不是 *.cs*)。
+    - **主視窗**：您將在這個視窗中進行大部分的工作，例如，使用表單和編輯程式碼。 視窗在 [表單編輯器] 中顯示表單。 視窗頂端會出現 [起始頁] 索引標籤和 [Form1.cs [Design]] 索引標籤 (在 Visual Basic 中，索引標籤名稱的結尾是 *.vb*，而不是 *.cs*)。
+
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+
+    - **主視窗**：您將在這個視窗中進行大部分的工作，例如，使用表單和編輯程式碼。 視窗在 [表單編輯器] 中顯示表單。
+
+    ::: moniker-end
 
     - **方案總管視窗**：在這個視窗中，您可以檢視和巡覽至方案中的所有項目。 如果您選擇一個檔案，[屬性] 視窗的內容會隨著變更。 如果您開啟程式碼檔 (在 Visual C# 中結尾為 *.cs*，在 Visual Basic 中則是 *.vb*)，程式碼檔或程式碼檔的設計工具隨即出現。 設計工具是一個視覺化介面，您可以將控制項 (例如按鈕和清單) 加入該介面中。 Visual Studio 表單的設計工具稱為 **Windows Forms 設計工具**。
 

@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82385221988a0a2eb9ed562742abc16c8552f9d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967267"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639943"
 ---
 # <a name="measure-mode-onoff"></a>開啟/關閉測量模式
-您可以使用此工具精確地測量時間軸中的時間長度。 若要啟用測量模式，請按一下 [量值] 按鈕 (有尺規圖示)，然後拖曳到時間軸中。 拖曳時請注意，指標下方的區域會以黃色反白顯示，而測量的時間會出現在工具列按鈕的右邊。 您拖曳時會動態計算此值，讓您立即看到特定事件所花的時間長短。 當您放開滑鼠按鈕時，時間值仍保持可見狀態。  
-  
- 您可以重複測量程序，但只會顯示最新的量值。 再按一下 [量值] 按鈕，關閉測量模式。  
-  
-## <a name="see-also"></a>另請參閱  
- [管理通道](../profiling/manage-channels.md)   
- [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)   
- [執行緒檢視](../profiling/threads-view-parallel-performance.md)
+您可以使用此工具精確地測量時間軸中的時間長度。 若要啟用測量模式，請按一下 [量值] 按鈕 (有尺規圖示)，然後拖曳到時間軸中。 拖曳時請注意，指標下方的區域會以黃色反白顯示，而測量的時間會出現在工具列按鈕的右邊。 您拖曳時會動態計算此值，讓您立即看到特定事件所花的時間長短。 當您放開滑鼠按鈕時，時間值仍保持可見狀態。
+
+ 您可以重複測量程序，但只會顯示最新的量值。 再按一下 [量值] 按鈕，關閉測量模式。
+
+## <a name="see-also"></a>另請參閱
+- [管理通道](../profiling/manage-channels.md)
+- [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)
+- [執行緒檢視](../profiling/threads-view-parallel-performance.md)

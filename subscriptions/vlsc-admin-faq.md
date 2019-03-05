@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/13/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 大量授權服務中心系統管理移轉常見問題集
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4bc2902c819f4e677127d4c2c857ed1fb5dc015
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297543"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844096"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio 訂閱系統管理移轉
 
@@ -60,7 +58,7 @@ ms.locfileid: "36297543"
 
     輸入 PCN 之後，系統會將他們引導至可供他們新增超級管理員和系統管理員 (先前稱為「訂閱管理員」) 的頁面。 在理想的情況下，這應該在組織的移轉日期之前完成，如此才不會干擾您的訂閱管理工作。
 
-3.  **存取新版訂閱管理入口網站：** 移轉組織之後，將會傳送電子郵件給超級管理員和系統管理員，邀請他們存取新版入口網站以開始管理訂閱。
+3.  **存取新的訂用帳戶管理入口網站：** 組織一旦移轉，就會向超級管理員和系統管理員傳送電子郵件，邀請他們存取新的入口網站並開始管理訂用帳戶。
 
 > [!NOTE]
 > 如果「主要連絡人」或「通知連絡人」收到多封電子郵件，即表示他們有多個 PCN。 他們將需要使用每封電子郵件中所參考的唯一 PCN 連結來完成程序。
@@ -77,10 +75,10 @@ ms.locfileid: "36297543"
 您將繼續透過 VLSC 管理訂閱，直到您收到來自「Visual Studio 訂閱」的電子郵件，通知您已移轉組織並已可在新版入口網站中進行管理為止。
 
 ### <a name="where-can-i-locate-my-organizations-public-customer-number-pcn-or-authorization-number"></a>要到哪裡尋找我組織的「公開客戶編號」(PCN) 或「授權編號」？
-請登入 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx)，然後瀏覽下列路徑：[訂閱] > [Visual Studio 訂閱]。 PCN 會位在 [合約/公開客戶編號結果] 底下。 請參閱這篇[說明文章](find-pcn.md)，了解有關尋找 PCN 的逐步指引。
+登入 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 並巡覽下列路徑：**訂用帳戶** > **Visual Studio 訂用帳戶**。 PCN 會位在 [合約/公開客戶編號結果] 底下。 請參閱這篇[說明文章](find-pcn.md)，了解有關尋找 PCN 的逐步指引。
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>要如何找出誰是我的主要或通知連絡人？
-請登入 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx)，然後瀏覽下列路徑：[授權] > [關聯摘要]。選取您的 [授權識別碼] > [連絡人]。 請參閱這篇[說明文章](find-primary-contact.md)，了解有關尋找「主要連絡人」或「通知連絡人」的逐步指引。
+登入 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 並巡覽下列路徑：[授權] > [關聯性摘要] 選取您的 [授權識別碼] > [連絡人]。 請參閱這篇[說明文章](find-primary-contact.md)，了解有關尋找「主要連絡人」或「通知連絡人」的逐步指引。
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>如果我的主要或通知連絡人不見、已離職或無法完成上線工作時，該怎麼辦？
 您將需要[連絡支援人員](https://visualstudio.microsoft.com/subscriptions/support/#talktous)，並提供您在 VLSC 中用來管理訂閱的電子郵件。 驗證之後，支援人員將能夠協助您進行上線程序。
@@ -98,7 +96,7 @@ ms.locfileid: "36297543"
 是，仍會將組織移轉至新系統。 越權能力 (適用於允許此情況的合約類型) 將存在於新系統中。
 
 ### <a name="what-if-my-organization-has-more-than-one-subscription-assigned-to-a-single-useremail-address"></a>如果我的組織有多個訂閱指派給單一使用者/電子郵件地址，該怎麼辦？
-仍會移轉組織。  不過，您將無法指派相同層級 (亦即：Enterprise、Professional 等) 的任何額外訂閱給該使用者/電子郵件地址。 任何具有相同電子郵件地址的相同層級訂閱在移轉時仍然可見，但系統管理員將需要變更電子郵件地址，使它們成為唯一的。 在新版入口網站中，您將無法指派多個相同層級的訂閱給單一使用者/電子郵件地址。
+仍會移轉組織。  不過，您將無法指派相同層級 (例如：Enterprise、Professional 等) 的任何額外訂閱給該使用者/電子郵件地址。 任何具有相同電子郵件地址的相同層級訂閱在移轉時仍然可見，但系統管理員將需要變更電子郵件地址，使它們成為唯一的。 在新版入口網站中，您將無法指派多個相同層級的訂閱給單一使用者/電子郵件地址。
 
 ### <a name="where-can-i-find-the-most-up-to-date-information-about-the-migration"></a>我可以在哪裡找到有關移轉的最新資訊？
 如需有關此移轉的最新資訊，請瀏覽我們的「Visual Studio 訂閱」系統管理員[網頁](https://aka.ms/vs-admin)。 如果您需要支援，請查看 Visual Studio 訂閱[支援頁面](http://visualstudio.microsoft.com/subscriptions/support/#!collections/962-subscriptions)，其中包含自助資訊和支援連絡資訊。 在接下來的幾個月，我們將繼續提供有關系統管理員網頁的更新，並透過電子郵件協助輕鬆進行這項轉換。

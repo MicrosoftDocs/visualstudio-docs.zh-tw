@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8580163b0bc6c56480479794658019a22d0ea02c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f91646575fba2df1f48c08adc7a9233bb63f27df
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970314"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630479"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>HOW TO：收集網站的效能資料
 
@@ -101,7 +101,7 @@ ms.locfileid: "54970314"
 
 ## <a name="see-also"></a>另請參閱
 
-[概觀](../profiling/overviews-performance-tools.md)  
-[設定效能工作階段](../profiling/configuring-performance-sessions.md)  
-[了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)  
-[認識取樣資料值](../profiling/understanding-sampling-data-values.md)
+[概觀](../profiling/overviews-performance-tools.md)
+[設定效能工作階段](../profiling/configuring-performance-sessions.md)
+[了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)
+[了解取樣資料值](../profiling/understanding-sampling-data-values.md)

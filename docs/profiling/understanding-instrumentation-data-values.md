@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed8131f7fecfcb28ad15fa4987767be4fa9955d0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0f10a3f434def1c96c2f096c4b299b47dd8aad9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029722"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620768"
 ---
 # <a name="understand-instrumentation-data-values"></a>了解檢測資料值
 
@@ -97,5 +97,5 @@ Visual Studio 的「檢測」分析方法會記錄所分析應用程式中函式
 
 ## <a name="see-also"></a>另請參閱
 
-[分析效能工具資料](../profiling/analyzing-performance-tools-data.md)  
+[分析效能工具資料](../profiling/analyzing-performance-tools-data.md)
 [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)

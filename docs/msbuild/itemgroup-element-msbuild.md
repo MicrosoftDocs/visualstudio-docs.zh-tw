@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ad52674ce6d1c0e0c5d0dea4f1b7238bdf1e41d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 64667ef01d1b21cce8303e2f72be3f252ec4245e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909995"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56595863"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 項目 (MSBuild)
 包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 項目。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個項目 (Item)，都必須指定為 `ItemGroup` 項目 (Element) 的子系。
 
-\<Project>  
-\<ItemGroup>
+\<Project> \<ItemGroup>
 
 ## <a name="syntax"></a>語法
 
@@ -45,19 +44,19 @@ ms.locfileid: "55909995"
 
 ### <a name="attributes"></a>屬性
 
-|屬性|描述|
+|屬性|說明|
 |---------------|-----------------|
 |`Condition`|選擇性屬性。 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|說明|
 |-------------|-----------------|
 |[Item](../msbuild/item-element-msbuild.md)|定義建置程序的輸入。 `ItemGroup` 中可能有零或多個 `Item` 項目。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 描述 |
+| 元素 | 說明 |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
 | [Target](../msbuild/target-element-msbuild.md) | 從 .NET Framework 3.5 開始，`ItemGroup` 項目可以出現在 `Target` 項目內部。 如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。 |
@@ -83,6 +82,6 @@ ms.locfileid: "55909995"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)  
-[項目](../msbuild/msbuild-items.md)  
-[通用的 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)
+- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+- [項目](../msbuild/msbuild-items.md)
+- [通用的 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)

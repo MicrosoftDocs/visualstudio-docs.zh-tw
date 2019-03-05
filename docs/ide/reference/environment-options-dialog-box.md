@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c76be48965aa49e0bad61afd0b70a6b8413075ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952823"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703249"
 ---
 # <a name="environment-options-dialog-box"></a>環境選項對話方塊
 
@@ -35,7 +35,7 @@ ms.locfileid: "55952823"
 |設定鍵盤對應選項。|[選項對話方塊、環境、鍵盤](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |指定是否啟用通知。|[選項對話方塊、環境、通知](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |指定 [快速啟動] 視窗的選項。|[選項對話方塊、環境、快速啟動](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
-|指定起始頁選項。|[選項對話方塊、環境、啟動](../../ide/reference/startup-environment-options-dialog-box.md)|
+|指定啟動選項。|[選項對話方塊、環境、啟動](../../ide/reference/startup-environment-options-dialog-box.md)|
 |指定是否要在電腦之間漫遊設定。|[選項對話方塊、環境、同步設定](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |學習如何設定工作和工作清單的選項。|[選項對話方塊、環境、工作清單](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |變更預設的首頁和搜尋網頁、變更系統原始檔編輯器，並設定 Internet Explorer 選項。|[選項對話方塊、環境、Web 瀏覽器](../../ide/reference/web-browser-environment-options-dialog-box.md)|

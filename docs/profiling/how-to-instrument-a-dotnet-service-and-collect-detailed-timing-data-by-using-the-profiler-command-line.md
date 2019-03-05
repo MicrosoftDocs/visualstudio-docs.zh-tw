@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用分析工具命令列檢測 .NET 服務並收集詳細計時資料 | Microsoft Docs
+title: 作法：使用分析工具命令列檢測 .NET 服務並收集詳細計時資料 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
@@ -7,20 +7,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c329755c1468d0ced5ab7f85335086a2388e21c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 57cc289b64db3cd4f22fd549ea9b28046f7f652b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933279"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638981"
 ---
-# <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>HOW TO：使用分析工具命令列以檢測 .NET 服務並收集詳細計時資料
+# <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>作法：使用分析工具命令列以檢測 .NET 服務並收集詳細計時資料
 
 本文描述如何使用 Visual Studio 分析工具命令列工具來檢測 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務，並收集詳細的計時資料。
 
 > [!NOTE]
 > 如果某項服務無法在電腦啟動後重新啟動 (這類服務只會在作業系統啟動時啟動)，則無法使用檢測方法來分析服務。
-> 
+>
 > 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
 >
 > 若要將階層互動資料新增至分析回合中，則需要使用命令列分析工具的特定程序。 請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。
@@ -108,5 +108,5 @@ ms.locfileid: "54933279"
 
 ## <a name="see-also"></a>另請參閱
 
-[分析服務](../profiling/command-line-profiling-of-services.md)  
+[分析服務](../profiling/command-line-profiling-of-services.md)
 [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)

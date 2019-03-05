@@ -13,19 +13,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 37061173a7bc0b3d9c3b9b7e011428ec3a297b72
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 30479614158686ee50ba704bcf148760136138f0
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043709"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796760"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>不使用方案或專案在 Visual Studio 中開發 JavaScript 和 TypeScript 程式碼
 
-Visual Studio 2017 引進了[不使用專案或方案開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)的功能，可讓您開啟程式碼的資料夾，並立即開始使用豐富的編輯器支援，例如 IntelliSense、搜尋、重構及偵錯等。
-除了這些功能之外，適用於 Visual Studio 的 Node.js 工具還新增了建置 TypeScript 檔案、管理 npm 套件及執行 npm 指令碼的支援。
+Visual Studio 2017 引進了[不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)的功能，可讓您開啟程式碼的資料夾，並立即開始使用豐富的編輯器支援，例如 IntelliSense、搜尋、重構及偵錯等。 除了這些功能之外，適用於 Visual Studio 的 Node.js 工具還新增了建置 TypeScript 檔案、管理 npm 套件及執行 npm 指令碼的支援。
 
-若要開始使用，請從您開啟 Visual Studio 時顯示的起始頁中選取 [開啟資料夾]，也可以從工具列中選取 [檔案] > [開啟] > 資料夾。 [方案總管] 顯示資料夾中的所有檔案，您可以開啟任何檔案以開始編輯。 在背景中，Visual Studio 會編製檔案的索引，以啟用 npm、建置功能，以及對功能進行偵錯。
+若要開始使用，請從工具列選取 [檔案] > [開啟] > [資料夾]。 [方案總管] 顯示資料夾中的所有檔案，您可以開啟任何檔案以開始編輯。 在背景中，Visual Studio 會編製檔案的索引，以啟用 npm、建置功能，以及對功能進行偵錯。
 
 > [!IMPORTANT]
 > 本文中所述的許多功能 (包括 npm 整合) 都需要 Visual Studio 2017 15.8 版。

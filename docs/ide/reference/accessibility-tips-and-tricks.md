@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 協助工具祕訣和訣竅
 description: 深入了解可讓 Visual Studio 整合式開發環境 (IDE) 更便於每個人 (包括行動不便人士) 使用的祕訣和訣竅。
-ms.date: 09/15/2017
+ms.date: 02/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8660d60706e903895e1be8471620666d812c7862
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318548"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680928"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 協助工具祕訣和訣竅
 
 > [!TIP]
-> 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
+> 若要深入了解協助工具更新，請參閱 [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Visual Studio 2017 15.3 版中的協助工具改善) 部落格文章。
 
 Visual Studio 有與螢幕助讀程式和其他輔助技術相容的內建協助工具功能。 本主題列出的常見快速組合鍵，可用以執行只能使用鍵盤的工作，包括使用高對比佈景主題以改善可見性的相關資訊。 它也會向您示範如何使用註解顯示實用的程式碼資訊，以及如何設定組建和中斷點事件的音效提示。
 
@@ -48,7 +48,7 @@ Visual Studio 編輯器包含許多文字「裝飾」，讓您知道程式碼特
 
 Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速鍵組合可協助您進行存取。
 
-|功能|描述|按鍵組合|
+|功能|說明|按鍵組合|
 |-------------|-----------------| - |
 |IDE 工具列|選取 [標準] 工具列上的第一個按鈕。|**ALT**、**CTRL** + **TAB**|
 |工作視窗工具列|將焦點移至工具視窗中的工具列。 <br> <br> **注意：** 這適用於大部分的工具視窗，但只限焦點位於在工具視窗中時。 此外，您必須先選擇 SHIFT 鍵再選擇 ALT 鍵。 在部分工具視窗 (例如 Team Explorer) 中，您必須先按住 SHIFT 鍵再選擇 ALT 鍵。|**SHIFT** + **ALT**|
@@ -58,12 +58,13 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 
 有些其他實用快速鍵組合包括下列項目。
 
-|功能|描述|按鍵組合|
+|功能|說明|按鍵組合|
 |-------------|-----------------| - |
 |IDE|開啟或關閉高對比。 <br> <br> **注意：** 標準 Windows 捷徑|**左 ALT + 左 SHIFT + PRINT SCREEN**|
 |對話方塊|選取或清除對話方塊中的核取方塊選項。 <br> <br> **注意：** 標準 Windows 捷徑|**空格鍵**|
 |操作功能表|開啟操作 (滑鼠右鍵) 功能表。 <br> <br> **注意：** 標準 Windows 捷徑|**SHIFT** + **F10**|
 |Menus|使用其快速鍵來快速存取功能表項目。 選擇後接功能表中加底線字母的 **ALT** 鍵，來啟動命令。 例如，若要檢視 Visual Studio 中的 [開啟專案] 對話方塊，您將選擇 **ALT** + **F** + **O** + **P**。  <br><br> **注意：** 標準 Windows 捷徑|**ALT** + **[字母]**|
+|[快速啟動] 搜尋方塊| 使用 Visual Studio 中的搜尋功能|**Ctrl** + **Q**|
 |[工具箱] 視窗|在 [工具箱] 索引標籤之間移動。|**CTRL** + **向上鍵**<br /><br /> 和<br /><br /> **CTRL** + **向下鍵**|
 |[工具箱] 視窗|將控制項從 [工具箱] 新增至表單或設計工具。|**ENTER**|
 |選項對話方塊、環境、鍵盤|刪除 [按快速鍵] 選項中所輸入的按鍵組合。|**退格鍵**|

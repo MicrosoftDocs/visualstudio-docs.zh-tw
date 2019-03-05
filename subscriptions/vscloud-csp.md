@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/15/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 如何為您的客戶購買和管理 Visual Studio 雲端訂用帳戶的雲端解決方案提供者資訊。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7ca04ab81462c2126068ed5a5710cee663944431
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: b17c5bb663f364cda4a9a93d63f2583e59426bac
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270004"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842633"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>為您的客戶購買及管理 Visual Studio 雲端訂閱
 
@@ -34,7 +32,7 @@ ms.locfileid: "54270004"
 [進一步了解](/azure/devops/organizations/billing/csp/set-up-csp-customer)
 
 ## <a name="who-can-buy-visual-studio-subscriptions"></a>誰可以購買 Visual Studio 訂用帳戶？
-擁有 Azure 訂用帳戶[擁有者或參與者存取權](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0)的任何人都可以購買 Visual Studio 訂用帳戶。 
+擁有 Azure 訂用帳戶[擁有者或參與者存取權](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0)的任何人都可以購買 Visual Studio 訂用帳戶。
 
 ## <a name="how-to-buy"></a>如何購買
 
@@ -93,14 +91,14 @@ ms.locfileid: "54270004"
 
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>問：雲端訂用帳戶的**月租方案**如何收費？
 
-A:首次購買時，我們會依當月剩餘天數按比例分配的數量來計價。 例如，如果在 4 月 15 日購買了 10 個 Visual Studio Professional 雲端訂閱的月租方案，我們會收取 5 單位的費用，因為 4 月有 30 天，還剩下 15 天；或收取 50% 的費用，然後將 50% 按比例分配到收費的單位。
+答：首次購買時，我們會依當月剩餘天數按比例分配的數量來計價。 例如，如果在 4 月 15 日購買了 10 個 Visual Studio Professional 雲端訂閱的月租方案，我們會收取 5 單位的費用，因為 4 月有 30 天，還剩下 15 天；或收取 50% 的費用，然後將 50% 按比例分配到收費的單位。
 自 5 月 1 日起至您取消前的每個月，會依完整的 10 個單位計費。
 
 稍後當您增加付費數量時，我們也會將增加的單位按比例分配至當月的剩餘天數。 因此，如果您在 5 月 10 日購買 1 個以上的 Visual Studio Professional 雲端訂閱月租方案，我們大約收取 0.677 個單位的費用 (5 月有 31 天，還有 21 天)。
 
 ### <a name="q-how-do-cancellations-work"></a>問：取消如何運作？
 
-A:當您取消 Visual Studio 雲端訂用帳戶時，您即取消自動續約。 訂閱保持有效直至其正常的續約日期，然後就到期。
+答：當您取消 Visual Studio 雲端訂用帳戶時，您即取消自動續約。 訂閱保持有效直至其正常的續約日期，然後就到期。
 到期時，Visual Studio 訂閱者即無法再使用 Visual Studio 或來自訂用帳戶的任何其他權益。
 
 雲端訂閱月租方案的取消會在次月一日生效。 如果您只取消某些客戶的雲端訂閱月租方案，請務必於次月一日移除使用者，以確保正確的使用者能繼續獲指派有效的訂用帳戶。
@@ -109,7 +107,7 @@ A:當您取消 Visual Studio 雲端訂用帳戶時，您即取消自動續約。
 
 ### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>問：Visual Studio 訂用帳戶有哪些大量採購折扣？
 
-A:「每種類型」的訂用帳戶，自第 6 個開始，所有後續訂用帳戶都會獲得 5% 的折扣：
+答：「每種類型」的訂用帳戶，自第 6 個開始，所有後續訂用帳戶都會獲得 5% 的折扣：
 
 * Visual Studio Professional 每月
 * Visual Studio Enterprise 每月
@@ -122,8 +120,8 @@ A:「每種類型」的訂用帳戶，自第 6 個開始，所有後續訂用帳
 
 ### <a name="q-are-there-renewal-discounts"></a>問：續約是否有折扣？
 
-A:沒有。Visual Studio 訂用帳戶為統一價格。 新訂用帳戶和續訂帳戶的價格一樣。
+答：沒有。Visual Studio 訂用帳戶為統一價格。 新訂用帳戶和續訂帳戶的價格一樣。
 
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>問：CSP 有 Azure 開發/測試的定價選項嗎？
 
-A:目前沒有。 您的客戶可以充分利用 [Azure 開發/測試定價](http://aka.ms/azuredevtestpricing)，但我們並沒有任何針對 CSP 的特殊優惠。
+答：目前沒有。 您的客戶可以充分利用 [Azure 開發/測試定價](https://aka.ms/azuredevtestpricing)，但我們並沒有任何針對 CSP 的特殊優惠。

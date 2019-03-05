@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/04/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶入口網站上提供給您的完整權益
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6bd5e0ac308a8644f6428deb7468e00007f7c70b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859016"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843796"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>使用訂閱者入口網站 - my.<span></span>visualstudio<span></span>.com
 
@@ -22,10 +20,10 @@ Visual Studio 訂閱者入口網站 ([https://my.visualstudio.com](https://my.vi
 
 若要使用入口網站，您必須以和訂閱相關聯的身分識別登入。  這可能是您的 Microsoft 帳戶 (MSA)，或是由組織 (例如您的雇主或學校) 提供給您的電子郵件地址。  了解[登入](signing-in.md)。
 
-入口網站一共整理為六個頁面。  每個頁面都能讓您存取包含在您訂閱中各種不同的產品或服務。  六個頁面為 [權益]、[下載]、[產品金鑰]、[訂閱]、[支援] 及 [Marketplace]。 
+入口網站一共整理為六個頁面。  每個頁面都能讓您存取包含在您訂閱中各種不同的產品或服務。  六個頁面為 [權益]、[下載]、[產品金鑰]、[訂閱]、[支援] 及 [Marketplace]。
 
 ## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[權益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-包含在您訂閱中的工具和服務，都會在 [權益] 頁面上以「磚」的形式顯示。  訂閱並不一定會包含全部的權益。 磚會分組為三個類別：[工具]、[專業開發] 及 [支援]。  如果您正在使用 Visual Studio Dev Essentials，您也會看到名為 [精選] 的類別，其中可能會包含來自其他三個類別的特定權益。
+包含在您訂閱中的工具和服務，都會在 [權益] 頁面上以「磚」的形式顯示。  訂閱並不一定會包含全部的權益。 磚可分為三個類別：工具、專業開發、支援。  如果您正在使用 Visual Studio Dev Essentials，您也會看到名為 [精選] 的類別，其中可能會包含來自其他三個類別的特定權益。
 
 ### <a name="tools"></a>工具
 您可以在 [工具] 類別找到核心開發工具，例如 Visual Studio IDE、Azure DevOps，以及由我們合作夥伴所提供的工具。  您也會看到 Azure 和 Visual Studio App Center 等服務。

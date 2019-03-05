@@ -10,16 +10,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fde00d3e9911c8c2b125ac44aff4200037dfeb50
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0877205c906727d35073a8e280bb4700ae455b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942280"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696489"
 ---
 # <a name="startup-environment-options-dialog-box"></a>選項對話方塊、環境、啟動
-您可以使用這個頁面，自訂 Visual Studio 起始頁，或設定 Visual Studio 啟動時的不同預設動作。 如需詳細資訊，請參閱[自訂起始頁](../../ide/customizing-the-start-page-for-visual-studio.md)。
 
-## <a name="see-also"></a>請參閱
+::: moniker range="vs-2017"
+
+您可以使用這個頁面，自訂 Visual Studio 起始頁，或設定 Visual Studio 啟動時的不同預設動作。 如需詳細資訊，請參閱[自訂啟動](../../ide/customizing-the-start-page-for-visual-studio.md)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+您可以使用這個頁面來設定 Visual Studio 啟動時的不同預設動作。 在 [啟動時] 中開啟清單，從 [開始視窗] (這可讓您開啟新或現有的專案)、[最新的解決方案] 或 [空白環境] 中進行選擇。
+
+::: moniker-end
+
+## <a name="see-also"></a>另請參閱
 
 - [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)

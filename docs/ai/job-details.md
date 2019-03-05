@@ -5,15 +5,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: b51f6d72455e455f8be5177fc99987eb703d7e94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a2970c0086ec18789347eebdea752487be18ce7d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801878"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842766"
 ---
 # <a name="view-recent-job-performance-and-details"></a>檢視最近的作業效能和詳細資料
 

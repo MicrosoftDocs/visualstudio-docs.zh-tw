@@ -1,5 +1,5 @@
 ---
-title: HOW TO：參考 MSBuild 專案 SDK | Microsoft Docs
+title: 作法：參考 MSBuild 專案 SDK | Microsoft Docs
 ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 361b64191d10056d80ab89dd6d4254ca128dcc96
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020590"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638175"
 ---
-# <a name="how-to-use-msbuild-project-sdks"></a>HOW TO：使用 MSBuild 專案 SDK
+# <a name="how-to-use-msbuild-project-sdks"></a>作法：使用 MSBuild 專案 SDK
 
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 版導入「專案 SDK」的概念，簡化了需要匯入屬性和目標之軟體開發套件的使用。
 
@@ -94,7 +94,7 @@ ms.locfileid: "55020590"
 在評估匯入時，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 根據您指定的名稱和版本，動態地解析專案 SDK 的路徑。  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 也具有已註冊之 SDK 解析程式的清單，它們是在電腦上找出專案 SDK 的外掛程式。  這些外掛程式包括：
 
 1. 以 NuGet 為基礎的解析程式，可查詢 NuGet 套件的設定套件摘要，以尋找符合您所指定 SDK 的識別碼和版本。<br/>
-   只有當您指定選擇性的版本，且它可用於任何自訂專案 SDK 時，此解析程式才會啟動。  
+   只有當您指定選擇性的版本，且它可用於任何自訂專案 SDK 時，此解析程式才會啟動。
 2. .NET CLI 解析程式，可解析使用 .NET CLI 安裝的 SDK。<br/>
    此解析程式會找出 `Microsoft.NET.Sdk` 和 `Microsoft.NET.Sdk.Web` 等屬於產品一部分的專案 SDK。
 3. 預設的解析程式，可解析使用 MSBuild 安裝的 SDK。
@@ -110,11 +110,11 @@ ms.locfileid: "55020590"
 }
 ```
 
-在建置期間每個專案 SDK 都只能使用一個版本。  如果您參考同一個專案 SDK 的兩個不同版本，MSBuild 會發出警告。  如果您的 *global.json* 中已經指定了版本，建議您**不要**再於專案中指定版本。  
+在建置期間每個專案 SDK 都只能使用一個版本。  如果您參考同一個專案 SDK 的兩個不同版本，MSBuild 會發出警告。  如果您的 *global.json* 中已經指定了版本，建議您**不要**再於專案中指定版本。
 
 ## <a name="see-also"></a>另請參閱
 
- [MSBuild 概念](../msbuild/msbuild-concepts.md)   
- [自訂您的組建](../msbuild/customize-your-build.md)   
- [套件、中繼套件和架構](/dotnet/core/packages)   
- [適用於 .NET Core 之 csproj 格式的新增項目](/dotnet/core/tools/csproj)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)
+- [自訂組建](../msbuild/customize-your-build.md)
+- [套件、中繼資料和架構](/dotnet/core/packages)
+- [適用於 .NET Core 之 csproj 格式的新增項目](/dotnet/core/tools/csproj)

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bf4e4b1828253d002ab15f80584d7a8c2b2894a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954643"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796617"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
@@ -81,10 +81,10 @@ ms.locfileid: "55954643"
 
 為了確保您在防火牆或 Proxy 伺服器後方使用 Visual 或 Azure 服務時能存取所有所需的服務，以下是您應該加入允許清單的 URL，以及建議開啟的連接埠和通訊協定。
 
-| 服務或案例 | DNS 端點 | 通訊協定 | 連接埠 | 描述 |
+| 服務或案例 | DNS 端點 | 通訊協定 | 連接埠 | 說明 |
 | - | - | - | - | - |
 | URL<br>解析 | go.microsoft.com<br><br>aka.ms | | | 用來縮短 URL，其將會進一步解析為較長的 URL |
-| 起始頁 | vsstartpage.blob.core.windows.net | | 443 | 用來於 Visual Studio 的起始頁上顯示「開發人員新聞」 |
+| 起始頁 | vsstartpage.blob.core.windows.net | | 443 | 用來顯示起始頁上的「開發人員新聞」(僅限 Visual Studio 2017) |
 | 目標式<br> 通知 <br>服務 | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | 用來將通知全域清單篩選為僅適用於特定電腦/使用方式情節類型的清單 |
 | 副檔名 <br>更新檢查 | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | 用來於已安裝的擴充功能有可用更新時提供通知 <br><br> 以登入位置的形式使用 |
 | AI 專案 <br>整合 | az861674.vo.msecnd.net | | 443<br> | 用來設定新專案以將使用方式資料傳送至您已註冊的 Application Insights 帳戶 |

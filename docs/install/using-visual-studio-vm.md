@@ -2,7 +2,7 @@
 title: 在 Azure 虛擬機器上使用 Visual Studio
 titleSuffix: ''
 description: 了解如何在 Azure 虛擬機器上使用 Visual Studio
-ms.date: 09/12/2018
+ms.date: 02/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1dbda84c1e8eee48c4a442e922c1852496155ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12d99cf2e15bf1d806035598f9c92b5ed3319d25
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952901"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450395"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -34,8 +34,8 @@ ms.locfileid: "55952901"
 
 | 發行版本                                              | 版本                     |     產品版本      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019：Preview (Preview 2)                   |           企業         | 16.0.0 Preview 2 版 |
-| Visual Studio 2017：最新版本 (版本 15.9)                    |    Enterprise、Community     |      15.9.4 版      |
+|    Visual Studio 2019：預覽版 (Preview 3)                   |           企業         | 16.0.0 Preview 3 版 |
+| Visual Studio 2017：最新版本 (版本 15.9)                    |    Enterprise、Community     |      15.9.7 版      |
 |         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.20 版     |
 |   Visual Studio 2015：最新版本 (Update 3)                      |    Enterprise、Community     |  14.0.25431.01 版   |
 |         Visual Studio 2015：RTW                              |             無             | (維護已過期)  |
@@ -52,7 +52,7 @@ ms.locfileid: "55952901"
 * 所有可用的工作負載，包含每個工作負載的建議選擇性元件
 * .NET 4.6.2 和 .NET 4.7 SDK、目標套件和開發人員工具
 * Visual F#
-* Visual Studio 的 GitHub 擴充
+* Visual Studio 的 GitHub 延伸模組
 * LINQ to SQL 工具
 
 我們使用下列命令列來在建置映像時安裝 Visual Studio：

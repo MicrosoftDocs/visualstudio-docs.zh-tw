@@ -8,85 +8,71 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48957b7078f8348f4ac1489267b603992e04a56a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aff97e69b3dea8de9e13c351aa199bc81bdf733c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965755"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627580"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
-*VSPerfCmd.exe* **Events** 選項會控制 Windows 事件追蹤 (ETW) 記錄。 ETW 資料會儲存至與分析工具資料檔案不同的 .etl 檔案。 使用 [VSPerfReport](../profiling/vsperfreport.md) /summary:etw 命令，即可透過報表形式來檢視資料。  
-  
- 呼叫 VSPerfCmd **Shutdown** 命令停止分析之前，隨時都可以呼叫 **Events** 選項。  
-  
-## <a name="syntax"></a>語法  
-  
-```cmd  
-VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]  
-```  
-  
-#### <a name="parameters"></a>參數  
- **On**&#124;**Off**  
- 啟動或停止收集事件資料。  
-  
- `Guid`  
- 提供者控制項的 GUID。  
-  
- `ProviderName`  
- 向 Windows Management Instrumentation (WMI) 註冊的提供者名稱。  
-  
- `Flags`  
- 由事件提供者所定義而且前面加上 "0x" 的十六進位旗標值。  
-  
- `Level`  
- 指定所收集的資料量。 `Level` 是由事件提供者所定義。  
-  
- **Events** 選項了解下列核心關鍵字作為提供者名稱：  
-  
- **Process**  
- 處理序事件  
-  
- **Thread**  
- 執行緒事件  
-  
- **影像**  
- 影像載入和卸載事件  
-  
- **Disk**  
- 磁碟 I/O 事件  
-  
- **檔案**  
- 檔案 I/O 事件  
-  
- **Hardfault**  
- 硬性分頁錯誤  
-  
- **Pagefault**  
- 軟性分頁錯誤  
-  
- **Network**  
- 網路事件  
-  
- **Registry**  
- 登錄存取事件  
-  
- 請注意，只能啟用核心提供者。 不可以予以停用，也不可以在關閉監視器之前修改其旗標。  
-  
-## <a name="remarks"></a>備註  
-  
+*VSPerfCmd.exe* **Events** 選項會控制 Windows 事件追蹤 (ETW) 記錄。 ETW 資料會儲存至與分析工具資料檔案不同的 .etl 檔案。 使用 [VSPerfReport](../profiling/vsperfreport.md) /summary:etw 命令，即可透過報表形式來檢視資料。
+
+ 呼叫 VSPerfCmd **Shutdown** 命令停止分析之前，隨時都可以呼叫 **Events** 選項。
+
+## <a name="syntax"></a>語法
+
+```cmd
+VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
+```
+
+#### <a name="parameters"></a>參數
+ **On**&#124;**Off** 啟動或停止收集事件資料。
+
+ `Guid` 提供者控制項的 GUID。
+
+ `ProviderName` 向 Windows Management Instrumentation (WMI) 註冊的提供者名稱。
+
+ `Flags` 由事件提供者所定義且前面加上 "0x" 的十六進位旗標值。
+
+ `Level` 指定所收集的資料量。 `Level` 是由事件提供者所定義。
+
+ **Events** 選項了解下列核心關鍵字作為提供者名稱：
+
+ **Process** 處理序事件
+
+ **Thread** 執行緒事件
+
+ **Image** 影像載入和卸載事件
+
+ **Disk** 磁碟 I/O 事件
+
+ **File** 檔案 I/O 事件
+
+ **Hardfault** 硬性分頁錯誤
+
+ **Pagefault** 軟性分頁錯誤
+
+ **Network** 網路事件
+
+ **Registry** 登錄存取事件
+
+ 請注意，只能啟用核心提供者。 不可以予以停用，也不可以在關閉監視器之前修改其旗標。
+
+## <a name="remarks"></a>備註
+
 > [!NOTE]
->  啟用 CLR ETW 事件時，也會透過「追蹤檢視」報表收集其他啟動資料。 若要排除啟動事件使其不出現在報表中，請使用下列命令：  
-  
-```cmd  
-C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5  
-```  
-  
+>  啟用 CLR ETW 事件時，也會透過「追蹤檢視」報表收集其他啟動資料。 若要排除啟動事件使其不出現在報表中，請使用下列命令：
+
+```cmd
+C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
+```
+
 > [!IMPORTANT]
->  如果您不要排除啟動事件，則因為這些事件不會列出在受控物件格式 (MOF) 檔案中，所以它們在報表中會顯示為 GUID。 如需詳細資訊，請參閱 Microsoft 網站上的下列網頁：[受控物件格式 (MOF) 範例檔案](http://go.microsoft.com/fwlink/?linkid=37118)。  
-  
-## <a name="see-also"></a>另請參閱  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [分析服務](../profiling/command-line-profiling-of-services.md)
+>  如果您不要排除啟動事件，則因為這些事件不會列出在受控物件格式 (MOF) 檔案中，所以它們在報表中會顯示為 GUID。 如需詳細資訊，請參閱 Microsoft 網站上的下列網頁：[受控物件格式 (MOF) 範例檔案](http://go.microsoft.com/fwlink/?linkid=37118)。
+
+## <a name="see-also"></a>另請參閱
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [分析服務](../profiling/command-line-profiling-of-services.md)

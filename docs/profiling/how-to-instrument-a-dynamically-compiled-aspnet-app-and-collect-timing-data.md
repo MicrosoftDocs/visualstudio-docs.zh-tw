@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用命令列以分析工具檢測動態編譯的 ASP.NET Web 應用程式並收集詳細計時資料 | Microsoft Docs
+title: 作法：使用命令列以分析工具檢測動態編譯的 ASP.NET Web 應用程式並收集詳細計時資料 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8daab493a867d2a62d85ecafc57420dfa195c68d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ae33644c72288f79d6be9fcc1aec476939980a5c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000792"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646157"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>HOW TO：使用命令列以分析工具檢測動態編譯的 ASP.NET Web 應用程式並收集詳細計時資料
 
@@ -115,5 +115,5 @@ ms.locfileid: "55000792"
 
 ## <a name="see-also"></a>另請參閱
 
-[分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+[分析 ASP.NET Web 應用程式程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)

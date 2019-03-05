@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c779b9f51d9b73d945d10edc2d6f80999f91536
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3ebe0d73aa2cd4a030e99d4501c5d3d726888f64
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004483"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620287"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>針對 .NET Framework 目標錯誤進行疑難排解
 本主題說明可能因參考問題造成的 MSBuild 錯誤，以及如何解決這些錯誤。
@@ -54,4 +54,7 @@ ms.locfileid: "55004483"
 >  在關閉並重新開啟專案後，您也應該重建它，以確保能夠正確解析所有參考。
 
 ## <a name="see-also"></a>另請參閱
- [如何：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md) [.NET Framework 用戶端設定檔](/dotnet/framework/deployment/client-profile) [以特定的 .NET Framework 版本為目標](../ide/visual-studio-multi-targeting-overview.md)[多目標](../msbuild/msbuild-multitargeting-overview.md)
+- [如何：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
+- [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile)
+- [以特定的 .NET Framework 版本為目標](../ide/visual-studio-multi-targeting-overview.md)
+- [多目標](../msbuild/msbuild-multitargeting-overview.md)

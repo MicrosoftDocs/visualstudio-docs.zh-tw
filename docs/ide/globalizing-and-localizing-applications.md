@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f90590c0273b886fe3f9a8e1c406ddf9aa7f11c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc6d0b3fb2eb143cfdc288485ab9e40499b6fccb
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335255"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450473"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>開發全球化和當地語系化應用程式
 

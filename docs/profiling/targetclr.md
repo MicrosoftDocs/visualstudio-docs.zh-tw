@@ -8,41 +8,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf48109107e6e2ef0c4f2d5d4c8f72a8f8fc0443
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 479f7e1cbd85c0421497020ae1fc108154ca639a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973651"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596304"
 ---
 # <a name="targetclr"></a>TargetCLR
-**TargetCLR** 選項指定當應用程式載入多個 CLR 版本時要分析的 Common Language Runtime (CLR) 版本。  
-  
- 根據預設，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具以應用程式載入的第一個 CLR 版本為目標。  
-  
-## <a name="syntax"></a>語法  
-  
-```cmd  
-VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]   
-```  
-  
-#### <a name="parameters"></a>參數  
- `ClrVersion`  
- CLR 的版本號碼。 使用版本格式 **vN.N.NNNNN**。  
-  
-## <a name="required-options"></a>必要選項  
- **TargetCLR** 選項僅能與 [啟動] 或 [附加] 選項一起使用。  
-  
- **Launch：** `AppName`  
- 啟動指定的應用程式並開始分析。  
-  
- **Attach:** `PID`  
- 開始分析指定的處理序。  
-  
-## <a name="example"></a>範例  
- 本例使用 TargetCLR 選項確定分析的 CLR 版本是 4.0.11003。  
-  
-```cmd  
-VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
-VSPerfCmd.exe /Launch:TestApp.exe /TargetCLR:v4.0.11003  
+**TargetCLR** 選項指定當應用程式載入多個 CLR 版本時要分析的 Common Language Runtime (CLR) 版本。
+
+ 根據預設，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具以應用程式載入的第一個 CLR 版本為目標。
+
+## <a name="syntax"></a>語法
+
+```cmd
+VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
+```
+
+#### <a name="parameters"></a>參數
+ `ClrVersion` CLR 的版本號碼。 使用版本格式 **vN.N.NNNNN**。
+
+## <a name="required-options"></a>必要選項
+ **TargetCLR** 選項僅能與 [啟動] 或 [附加] 選項一起使用。
+
+ **Launch:**`AppName` 啟動指定的應用程式並開始分析。
+
+ **Attach：**`PID` 開始分析指定的處理序。
+
+## <a name="example"></a>範例
+ 本例使用 TargetCLR 選項確定分析的 CLR 版本是 4.0.11003。
+
+```cmd
+VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
+VSPerfCmd.exe /Launch:TestApp.exe /TargetCLR:v4.0.11003
 ```
