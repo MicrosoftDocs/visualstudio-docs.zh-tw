@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: cb345d756e748703f407b0601a4ac321452af6a6
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954425"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428826"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio 的色彩值參考
 
@@ -134,7 +134,7 @@ ms.locfileid: "56954425"
 | 前景： 停用 | ![#FFA2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 swatch")<br />`#FFA2A4A5` | ![#FF656565 色樣](../../extensibility/ux-guidelines/media/656565.png "#FF656565 樣本")<br />`#FF656565` | ![#FFA2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 swatch")<br />`#FFA2A4A5` | ![GrayText 色樣](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText 樣本")<br />`GrayText` |
 | 背景： 停用 | ![#Fff5f5f5 色樣](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 樣本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 樣本")<br />`#FFF6F6F6` | ![控制色樣](../../extensibility/ux-guidelines/media/HCControl.png "控制項樣本")<br />`Control` |
 | Border | ![#FFCCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 樣本")<br />`#FFCCCEDB` | ![#FF434346 色樣](../../extensibility/ux-guidelines/media/434346.png "#FF434346 樣本")<br />`#FF434346` | ![#FFCCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 樣本")<br />`#FFCCCEDB` | ![ControlDark 色樣](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 樣本")<br />`ControlDark` |
-| 框線： 停用 | ![#FFCCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 樣本")<br />`#FFCCCEDB` | ![#FF434346 色樣](../../extensibility/ux-guidelines/media/434346.png "#FF434346 樣本")<br />`#FF434346` | ![#FFC6C6C6 swatch](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 swatch")<br />`#FFC6C6C6` | ![ControlDark 色樣](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 樣本")<br />`ControlDark ` |
+| 框線： 停用 | ![#FFCCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 樣本")<br />`#FFCCCEDB` | ![#FF434346 色樣](../../extensibility/ux-guidelines/media/434346.png "#FF434346 樣本")<br />`#FF434346` | ![#FFC6C6C6 swatch](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 swatch")<br />`#FFC6C6C6` | ![ControlDark 色樣](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 樣本")<br />`ControlDark` |
 
 ### <a name="list-items"></a>清單項目
 
