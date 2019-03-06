@@ -8,16 +8,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbb34e93b4faf8df206353d2a06649f652cbcaeb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+monikerRange: vs-2017
+ms.openlocfilehash: efad4455ab5d3cb0daa16482e303cc82296cc2e4
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689820"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323983"
 ---
-# <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>升級 Visual Studio 2017 的自訂專案和項目範本
+# <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>升級自訂專案與 Visual Studio 2017 的項目範本
 
-從 Visual Studio 2017 開始，Visual Studio 會探索已安裝的.vsix 或.msi 方式不同於舊版的 Visual Studio 的專案和項目範本。 如果您擁有使用自訂專案或項目範本的延伸模組，您需要更新您的擴充功能。 本主題說明您必須。
+從 Visual Studio 2017 開始，Visual Studio 會探索已安裝的.vsix 或.msi 方式不同於舊版的 Visual Studio 的專案和項目範本。 如果您擁有使用自訂專案或項目範本的延伸模組，您需要更新您的擴充功能。 這篇文章說明您必須。
 
 這項變更會影響僅 Visual Studio 2017。 它不會影響舊版的 Visual Studio。
 
@@ -27,7 +28,7 @@ ms.locfileid: "56689820"
 
 在舊版的 Visual Studio 中， **devenv /setup**或是**devenv /installvstemplates**掃描本機磁碟，若要尋找專案和項目範本。 從 Visual Studio 2017 中，掃描是只能執行使用者層級的位置。 預設使用者層級位置是 **%USERPROFILE%\Documents\\< Visual Studio 版本\>\Templates\\**。 這個位置用於所產生的範本**專案** > **匯出範本...** 命令時，如果**會自動將範本匯入 Visual Studio**精靈中選取選項。
 
-其他 （非使用者） 的位置，您必須包含指定的位置和範本的其他特性 manifest(.vstman) 檔案。 .Vstman 檔案會產生以及用於範本的.vstemplate 檔案。 如果您安裝您使用.vsix 的延伸模組，您可以完成這需要重新編譯的 Visual Studio 2017 中的擴充功能。 但如果您使用.msi 時，您需要以手動方式進行變更。 如需您要如何進行這些變更的清單，請參閱**升級與安裝的擴充功能。MSI**本主題稍後的。
+其他 （非使用者） 的位置，您必須包含指定的位置和範本的其他特性 manifest(.vstman) 檔案。 .Vstman 檔案會產生以及用於範本的.vstemplate 檔案。 如果您安裝您使用.vsix 的延伸模組，您可以完成這需要重新編譯的 Visual Studio 2017 中的擴充功能。 但如果您使用.msi 時，您需要以手動方式進行變更。 如需您要如何進行這些變更的清單，請參閱**升級與安裝的擴充功能。MSI**稍後在此頁面。
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>如何更新 VSIX 擴充功能專案或項目範本
 
@@ -58,9 +59,9 @@ ms.locfileid: "56689820"
 
 -   請避免使用壓縮的範本檔案。 壓縮檔案必須為未壓縮，以擷取資源和內容的範本，因此它們會來使用。 相反地，您應該部署專案和項目範本，以加速範本初始化自己目錄下的個別檔案。 VSIX 擴充功能，SDK 建置工作會自動將解壓縮壓縮的任何範本建立 VSIX 檔案時。
 
--   請避免使用以範本探索期間避免不必要的資源組件載入的封裝/資源識別碼的項目範本名稱、 描述、 圖示或預覽。 相反地，您可以使用當地語系化的資訊清單來建立每個地區設定使用當地語系化的名稱或屬性的範本項目。
+-   避免在使用範本名稱、 描述、 圖示、 封裝/資源識別碼的項目，或為範本探索期間避免不必要的資源組件載入預覽。 相反地，您可以使用當地語系化的資訊清單來建立每個地區設定使用當地語系化的名稱或屬性的範本項目。
 
--   如果您要納入做為檔案項目範本，資訊清單產生過程，可能無法提供您預期的結果。 在此情況下，您必須以手動方式產生資訊清單加入 VSIX 專案。
+-   如果您要納入做為檔案項目範本，資訊清單產生過程，可能無法提供您預期的結果。 在此情況下，您必須以手動方式產生的資訊清單加入 VSIX 專案。
 
 ## <a name="file-changes-in-project-and-item-templates"></a>專案和項目範本中的檔案變更
 如此您就可以正確地建立新的檔案，我們會示範 Visual Studio 2015 和 Visual Studio 2017 版本的範本檔案，之間差異的點。
@@ -168,7 +169,6 @@ ms.locfileid: "56689820"
     </VSTemplateHeader>
   </VSTemplateContainer>
 </VSTemplateManifest>
-
 ```
 
  所提供的資訊 **\<TemplateData >** 項目維持不變。  **\<VSTemplateContainer >** 元素指向相關聯的範本的.vstemplate 檔案
@@ -177,7 +177,7 @@ ms.locfileid: "56689820"
 
 ## <a name="upgrades-for-extensions-installed-with-an-msi"></a>安裝擴充功能的升級。MSI
 
-有些以 MSI 為基礎的延伸模組會將範本部署到一般的範本位置，如下所示：
+有些以 MSI 為基礎的延伸模組會將範本部署到一般的範本位置，例如下列目錄：
 
 - **\<Visual Studio 安裝目錄 > \Common7\IDE\\< ProjectTemplates/項目範本 >**
 
@@ -185,7 +185,7 @@ ms.locfileid: "56689820"
 
 如果您的延伸模組執行 MSI 為基礎的部署，您需要手動產生範本資訊清單，並確保它包含延伸模組安裝程式中。 比較上述.vstman 範例和[Visual Studio 範本資訊清單結構描述參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
 
-您應該建立個別專案和項目範本資訊清單，它們應該指向根範本指定目錄上方。 建立每個延伸模組和地區設定的一份資訊清單。
+建立專案和項目範本的不同資訊清單，並應指向根範本指定目錄上方。 建立每個延伸模組和地區設定的一份資訊清單。
 
 ## <a name="see-also"></a>另請參閱
 
