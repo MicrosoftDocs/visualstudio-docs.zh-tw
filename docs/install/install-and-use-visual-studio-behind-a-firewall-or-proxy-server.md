@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: feb115bb3fe7114b6379e27c09279165e6ca7a7e
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796617"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954344"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
@@ -133,7 +133,7 @@ ms.locfileid: "56796617"
 
 以下是一些支援選項：
 
-* 您可以透過 Visual Studio 安裝程式及 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具回報產品的問題。
+* 您可以透過 Visual Studio 安裝程式及 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio.md)工具回報產品的問題。
 * 在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/) \(英文\) 中建議功能、追蹤產品問題和尋找解答。
 * 您可以使用您的 [GitHub](https://github.com/) 帳戶與我們連絡，以及參加 [Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與其他 Visual Studio 開發人員對話。
 

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 896fa055c536f9f3ee693773ad4f4ae0edd7e7fe
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349435"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953443"
 ---
 # <a name="data-visualizations"></a>資料視覺效果
 
@@ -88,18 +88,18 @@ IEnumerable 會列舉所有值；透過按一下 [顯示值] 按鈕，即可檢�
 
 ![其他視覺效果](media/data-visualizations-image23.png)
 
-*   **Primitives**
-    *   這會顯示基本類型的原始值。
-*   **Enum**
-    *   這會顯示不含 enum 類型限定詞的欄位值。
-*   **Tuple**
-    *   以格式 (,) 顯示
-*   **Null**
-    *   顯示 "null" 值。
-*   **URL**
-    *   這會顯示可按式超連結。
-*   **IntPtr**
-    *   這會顯示 IntPtr 的十六進位表示法。
+* **Primitives**
+  * 這會顯示基本類型的原始值。
+* **Enum**
+  * 這會顯示不含 enum 類型限定詞的欄位值。
+* **Tuple**
+  * 以格式 (,) 顯示
+* **Null**
+  * 顯示 "null" 值。
+* **URL**
+  * 這會顯示可按式超連結。
+* **IntPtr**
+  * 這會顯示 IntPtr 的十六進位表示法。
 
 ## <a name="see-also"></a>另請參閱
 

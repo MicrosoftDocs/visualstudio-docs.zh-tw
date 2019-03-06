@@ -7,22 +7,23 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: 了解訂用帳戶系統管理員的責任。
 searchscope: VS Subscription
-ms.openlocfilehash: ca1dc2dd7a2232a85a7e6aefece63272bb0039fc
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842347"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954476"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>系統管理員責任概觀
 身為系統管理員，您可以管理組織的訂用帳戶。  系統管理員角色也有責任確保訂用帳戶根據授權條款進行管理。 本文章概述系統管理員角色的責任、權益和限制。
 
 ## <a name="roles--responsibilities"></a>角色與責任
 Visual Studio 系統管理員具有四項重要的責任：
-1.  **了解 Visual Studio 訂用帳戶的權益和限制。** 正確了解您的權益，可讓您使用雲端服務減少硬體成本，並減少生產前環境的每個使用者授權的軟體成本。
-2.  **將 Visual Studio 訂用帳戶指派給特定的具名個人，並且鼓勵大家使用。** 您的合約要求將 Visual Studio 訂用帳戶指派給特定的具名個人。 請追蹤您所指派的個人，確保他們可存取並充分利用其 Visual Studio 訂用帳戶中所包含的權益。
-3.  **正確清查生產前環境。** 若要確保與 Visual Studio 授權軟體互動的所有使用者都已使用他們自己的 Visual Studio 訂用帳戶取得適當的授權，這是不可或缺的作業。
-4.  **根據時間表追蹤使用者指派變更，並取得的額外授權。** Microsoft 大量授權 (VL) 合約和 MPSA 可讓您靈活地使用及指派 Visual Studio 訂用帳戶。 相對地，您應該根據協議中所述的時間表追蹤軟體使用和使用者指派的變更，並下單取得額外的授權。
+
+1. **了解 Visual Studio 訂用帳戶的權益和限制。** 正確了解您的權益，可讓您使用雲端服務減少硬體成本，並減少生產前環境的每個使用者授權的軟體成本。 
+2. **將 Visual Studio 訂用帳戶指派給特定的具名個人，並且鼓勵大家使用。** 您的合約要求將 Visual Studio 訂用帳戶指派給特定的具名個人。 請追蹤您所指派的個人，確保他們可存取並充分利用其 Visual Studio 訂用帳戶中所包含的權益。
+3. **正確清查生產前環境。** 若要確保與 Visual Studio 授權軟體互動的所有使用者都已使用他們自己的 Visual Studio 訂用帳戶取得適當的授權，這是不可或缺的作業。 
+4. **根據時間表追蹤使用者指派變更，並取得的額外授權。** Microsoft 大量授權 (VL) 合約和 MPSA 可讓您靈活地使用及指派 Visual Studio 訂用帳戶。 相對地，您應該根據協議中所述的時間表追蹤軟體使用和使用者指派的變更，並下單取得額外的授權。
 
 ## <a name="benefits-and-limitations"></a>權益與限制
 Visual Studio 訂用帳戶允許開發小組成員安裝和使用軟體來設計、開發、測試、評估及示範其他軟體。 Visual Studio 訂用帳戶軟體未授權用於生產環境。
@@ -70,9 +71,10 @@ Visual Studio 訂用帳戶系統管理員應該要根據大量授權合約或 Mi
 - 使用者會與 Visual Studio 軟體互動。
 
 採購義務完成與否取決於**使用量的上限標準**。 此上限標準是每日的使用者指派或與 Visual Studio 軟體互動的使用者所產生的用量，以較高者為準。
-1.  Visual Studio 訂用帳戶系統管理員可以將 Visual Studio 訂用帳戶指派給個人，藉以提高使用量高水位線。
-2.  如果從原始指派以來已經過 90 天，Visual Studio 訂用帳戶系統管理員就可以將某個訂閱者的訂用帳戶重新指派給另一個訂閱者。 若要避免虛高的上限標準，請務必要先移除現有的訂用帳戶，再新增新的訂用帳戶。
-3.  Visual Studio 訂用帳戶系統管理員可能會變更個人的指派訂用帳戶層級，這會造成某個指派的用量降低，而另一個指派的用量增加。 當您降低某個訂閱者的指派訂用帳戶層級時，該人員必須立即停止使用並解除安裝只能在較高層級的訂用帳戶中使用的任何項目。
+
+1. Visual Studio 訂用帳戶系統管理員可以將 Visual Studio 訂用帳戶指派給個人，藉以提高使用量高水位線。
+2. 如果從原始指派以來已經過 90 天，Visual Studio 訂用帳戶系統管理員就可以將某個訂閱者的訂用帳戶重新指派給另一個訂閱者。 若要避免虛高的上限標準，請務必要先移除現有的訂用帳戶，再新增新的訂用帳戶。
+3. Visual Studio 訂用帳戶系統管理員可能會變更個人的指派訂用帳戶層級，這會造成某個指派的用量降低，而另一個指派的用量增加。 當您降低某個訂閱者的指派訂用帳戶層級時，該人員必須立即停止使用並解除安裝只能在較高層級的訂用帳戶中使用的任何項目。 
 
 ### <a name="cloud-subscriptions-open-license-or-open-value"></a>雲端訂用帳戶，Open License 或 Open Value
 您可能會透過方案 (例如 Microsoft Cloud 訂用帳戶、Open Licens 或 Open Value) 獲得訂用帳戶的指派。 如果是這樣，您必須在使用者 (員工或外部承包商) 開始與 Visual Studio 授權軟體進行互動的當月內處理額外使用者的訂單。

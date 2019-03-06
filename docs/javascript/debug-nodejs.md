@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 27e990c300702301fc7c701339254bbe6f385cd0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: af11a16c94f50c5d7614d8d630534433332a4d91
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843789"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223386"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行偵錯
 
@@ -172,4 +172,4 @@ Visual Studio 僅提供 Chrome 和 Internet Explorer 的偵錯支援。 它會�
 
    針對 Internet Explorer，請移至 [方案總管] > [指令碼文件] > [Windows Internet Explorer] > [您的頁面名稱]。
 
-如需詳細資訊，請參閱 [Client-side debugging of ASP.NET projects in Google Chrome](https://blogs.msdn.microsoft.com/webdev/2016/11/21/client-side-debugging-of-asp-net-projects-in-google-chrome/) (Google Chrome 中 ASP.NET 專案的用戶端偵錯)。
+如需詳細資訊，請參閱 [Client-side debugging of ASP.NET projects in Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/) (Google Chrome 中 ASP.NET 專案的用戶端偵錯)。

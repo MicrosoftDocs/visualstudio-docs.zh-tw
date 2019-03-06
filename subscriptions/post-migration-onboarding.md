@@ -7,12 +7,12 @@ ms.date: 07/12/2018
 ms.topic: conceptual
 description: 了解如何在移轉至管理入口網站後，成功將組織上架於 Visual Studio 訂用帳戶。
 searchscope: VS Subscription
-ms.openlocfilehash: 1862361ec6ce38acc3376d972c29d56c5aa7bd51
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 3916fd762e9a2feaaa4892e4233d08a345db44a1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842152"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954224"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>在您的組織移轉之後，上架至 Visual Studio 訂用帳戶系統管理入口網站
 
@@ -24,9 +24,9 @@ ms.locfileid: "56842152"
 
 您可能會遇到其中一種情節：
 
-1. [主要連絡人未完成上架程序。](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup>
-2. [主要連絡人已完成上線程序，但未將您加入為系統管理員。您的認證已列在 VLSC 中。](#Primary-Contact-did-not-provide-you-administrator-access)
-3. [主要連絡人已完成上線程序，但未將您加入為系統管理員。您的認證未列在 VLSC 中。](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)
+1. [主要連絡人未完成上線程序。](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup> 
+2. [主要連絡人已完成上線程序，但未將您加入為系統管理員。您的認證已列在 VLSC 中。](#Primary-Contact-did-not-provide-you-administrator-access) 
+3. [主要連絡人已完成上線程序，但未將您加入為系統管理員。您的認證未列在 VLSC 中。](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)  
 
 <sup>1</sup> 若您是主要或通知連絡人且未完成上線程序，您將必須依照情節一中的步驟完成設定組織的作業。
 

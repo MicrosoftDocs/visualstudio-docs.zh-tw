@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: 了解如何取得及管理您的 Visual Studio 訂用帳戶產品金鑰。
 searchscope: VS Subscription
-ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843715"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953897"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的產品金鑰
 
@@ -104,10 +104,10 @@ Visual Studio 訂閱者可輸入[訂閱者入口網站](https://my.visualstudio.
 Windows Server 2008 R2 提供每種類型各五組金鑰，每組金鑰支援 20 個連線。 Windows Server 2012 R2 提供每種類型各四組金鑰，每組金鑰支援 50 個連線。
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>若要在 Windows Server 中允許更多的連線：
-1.  開啟伺服器管理員。
-2.  開啟左側功能窗格中的 [伺服器] 清單。
-3.  在您的授權伺服器上按一下滑鼠右鍵，然後選擇 [安裝授權]。
-4.  請依照精靈中的步驟執行。  在選取合約類型時，選擇 [授權套件 (零售)]，然後輸入您從「我的」入口網站取得的產品金鑰。
+1. 開啟伺服器管理員。
+2. 開啟左側功能窗格中的 [伺服器] 清單。
+3. 在您的授權伺服器上按一下滑鼠右鍵，然後選擇 [安裝授權]。
+4. 請依照精靈中的步驟執行。  在選取合約類型時，選擇 [授權套件 (零售)]，然後輸入您從「我的」入口網站取得的產品金鑰。
 
 符合下列條件的使用者，可以透過 RDS 連線來存取應用程式：
 - 使用者必須匿名 (處於未經驗證的狀態)。

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 每月或每年租 Visual Studio Professional 或 Visual Studio Enterprise，沒有長期合約。
 searchscope: VS Subscription
-ms.openlocfilehash: 5aee20e2c96dd79455968e8aeb87b8f17ec0cf65
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: eb9d7034a18d8be6fd4c20ddde1c3708cc206fa0
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842217"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953417"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>購買 Visual Studio Professional 和 Visual Studio Enterprise 雲端訂用帳戶
 
@@ -26,28 +26,28 @@ ms.locfileid: "56842217"
 
 ## <a name="before-you-start"></a>開始之前
 
-*   若要為您的購買計費，您將需要一個 [Azure 訂用帳戶](https://azure.microsoft.com/pricing/purchase-options/)。 您可以在 Visual Studio Marketplace 中第一次購買之前或第一次購買期間[註冊](https://portal.azure.com)。
+* 若要為您的購買計費，您將需要一個 [Azure 訂用帳戶](https://azure.microsoft.com/pricing/purchase-options/)。 您可以在 Visual Studio Marketplace 中第一次購買之前或第一次購買期間[註冊](https://portal.azure.com)。
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>誰可以購買 Visual Studio 雲端訂閱？
 擁有 Azure 訂用帳戶的[擁有者和參與者存取權](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0)的任何人都可以購買雲端訂用帳戶。
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>如何購買雲端訂用帳戶
 
-1.  登入 [Visual Studio Marketplace > Subscriptions](https://marketplace.visualstudio.com/subscriptions) (Visual Studio Marketplace > 訂用帳戶)。
+1. 登入 [Visual Studio Marketplace > Subscriptions](https://marketplace.visualstudio.com/subscriptions) (Visual Studio Marketplace > 訂用帳戶)。
 
-2.  選擇您想要購買的訂用帳戶，例如：Visual Studio Professional - 按月訂閱。
+2. 選擇您想要購買的訂用帳戶，例如：Visual Studio Professional - 按月訂閱。
 
-3.  選取要用於計費的 Azure 訂用帳戶。 如果沒有 Azure 訂用帳戶，您可以建立新的帳戶。
+3. 選取要用於計費的 Azure 訂用帳戶。 如果沒有 Azure 訂用帳戶，您可以建立新的帳戶。
     > [!div class="mx-imgBorder"]
     > ![選取 Azure 訂用帳戶付費](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
 
-4.  選取要購買的訂用帳戶數目。
+4. 選取要購買的訂用帳戶數目。
     > [!div class="mx-imgBorder"]
     > ![選取訂用帳戶數目](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
 
     如果您不想將訂用帳戶指派給自己，請清除**將這個訂用帳戶指派給我**。
 
-5.  確認及完成購買程序。 如果您將訂用帳戶指派給自己，您可以瀏覽 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com)開始下載軟體，並使用其他訂閱者權益。
+5. 確認及完成購買程序。 如果您將訂用帳戶指派給自己，您可以瀏覽 [Visual Studio 訂閱者入口網站](https://my.visualstudio.com)開始下載軟體，並使用其他訂閱者權益。
 
 > [!div class="mx-imgBorder"]
 > ![已成功完成購買](_img/buy-vs-subscriptions/buy-vs-sub-success.png)

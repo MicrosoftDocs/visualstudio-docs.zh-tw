@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: 大量授權服務中心系統管理移轉常見問題集
 searchscope: VS Subscription
-ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844096"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953939"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio 訂閱系統管理移轉
 
@@ -44,21 +44,21 @@ ms.locfileid: "56844096"
 ### <a name="what-is-the-onboarding-process"></a>什麼是上線程序？
 「主要/通知連絡人」將會收到邀請他們完成上線程序的電子郵件。
 請參閱下面有關此程序的指示。
-1.  **尋找您的 PCN 並登入：**
+1. **尋找您的 PCN 並登入：**
 
-    a.  在電子郵件中，會提供「主要/通知連絡人」一個唯一的連結及其「公開客戶編號」(PCN) 的末三碼。*
+    a. 在電子郵件中，會提供「主要/通知連絡人」一個唯一的連結及其「公開客戶編號」(PCN) 的末三碼。*
 
-    b.  為取得完整的 PCN，「主要連絡人」將需要登入 VLSC (可以在下面找到尋找 PCN 的指示)。
+    b. 為取得完整的 PCN，「主要連絡人」將需要登入 VLSC (可以在下面找到尋找 PCN 的指示)。
 
-    c.   取得 PCN 之後，他們需要選取提示他們登入的唯一連結。 他們將能夠使用工作/學校帳戶 (如果組織在 Azure AD 中) 或 Microsoft 帳戶 (MSA) (如果組織不在 Azure AD 中) 來登入。
+    c.  取得 PCN 之後，他們需要選取提示他們登入的唯一連結。 他們將能夠使用工作/學校帳戶 (如果組織在 Azure AD 中) 或 Microsoft 帳戶 (MSA) (如果組織不在 Azure AD 中) 來登入。
 
-    d.  接著，系統會提示他們輸入 PCN。
+    d. 接著，系統會提示他們輸入 PCN。
 
-2.  **設定您的系統管理員：**
+2. **設定您的系統管理員：**
 
     輸入 PCN 之後，系統會將他們引導至可供他們新增超級管理員和系統管理員 (先前稱為「訂閱管理員」) 的頁面。 在理想的情況下，這應該在組織的移轉日期之前完成，如此才不會干擾您的訂閱管理工作。
 
-3.  **存取新的訂用帳戶管理入口網站：** 組織一旦移轉，就會向超級管理員和系統管理員傳送電子郵件，邀請他們存取新的入口網站並開始管理訂用帳戶。
+3. **存取新的訂用帳戶管理入口網站：** 組織一旦移轉，就會向超級管理員和系統管理員傳送電子郵件，邀請他們存取新的入口網站並開始管理訂用帳戶。
 
 > [!NOTE]
 > 如果「主要連絡人」或「通知連絡人」收到多封電子郵件，即表示他們有多個 PCN。 他們將需要使用每封電子郵件中所參考的唯一 PCN 連結來完成程序。

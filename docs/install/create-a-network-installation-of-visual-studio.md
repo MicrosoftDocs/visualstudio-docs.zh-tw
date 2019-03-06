@@ -1,7 +1,7 @@
 ---
 title: 建立網路型安裝
 description: 了解如何建立網路安裝點以在企業內部署 Visual Studio。
-ms.date: 02/12/2019
+ms.date: 02/27/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e25bdc20393c0d3faff5faa72c89bd531972e5d4
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 076782f8f6e5d654c66e6a39f3ffe0342a74c560
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796396"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954017"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>建立 Visual Studio 2017 的網路安裝
 
@@ -201,7 +201,7 @@ vs_enterprise.exe --layout c:\VS2017Layout --all
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>如何取得離線安裝程式的支援
 
-如果您的離線安裝發生問題，我們會想要進行了解。 告訴我們的最簡單方式就是使用[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具。 使用此工具時，您可以將我們所需的遙測和記錄檔傳送給我們，來協助我們診斷及修正問題。
+如果您的離線安裝發生問題，我們會想要進行了解。 告訴我們的最簡單方式就是使用[回報問題](../ide/how-to-report-a-problem-with-visual-studio.md)工具。 使用此工具時，您可以將我們所需的遙測和記錄檔傳送給我們，來協助我們診斷及修正問題。
 
 我們也提供[**即時聊天**](https://visualstudio.microsoft.com/vs/support/#talktous) (僅限英文) 支援選項，可回答有關安裝的相關問題。
 
@@ -210,6 +210,7 @@ vs_enterprise.exe --layout c:\VS2017Layout --all
 ## <a name="see-also"></a>另請參閱
 
 * [更新 Visual Studio 2017 的網路型安裝](update-a-network-installation-of-visual-studio.md)
+* [控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 * [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)

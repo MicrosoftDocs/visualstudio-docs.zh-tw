@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edb6d9133fdf3a2a7a4109b9f438f86cc0cdec61
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931568"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953965"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>針對 Visual Studio 2017 安裝和升級問題進行疑難排解
 
@@ -84,7 +84,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 ## <a name="how-to-get-visual-studio-installation-logs"></a>如何取得 Visual Studio 安裝記錄檔
 
-針對大部分安裝問題進行疑難排解時，將會需要安裝記錄檔。 使用 Visual Studio 安裝程式中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)來提交問題時，會自動將這些記錄檔包含在報告中。
+針對大部分安裝問題進行疑難排解時，將會需要安裝記錄檔。 使用 Visual Studio 安裝程式中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio.md)來提交問題時，會自動將這些記錄檔包含在報告中。
 
 當您連絡 Microsoft 支援服務時，可能需要使用 [Microsoft Visual Studio 與 .NET Framework 記錄收集工具](https://aka.ms/vscollect) \(英文\) 來提供這些安裝記錄檔。 記錄收集工具會收集 Visual Studio 2017 所安裝全部元件的安裝記錄檔，包括 .NET Framework、Windows SDK，以及 SQL Server。 它也會收集電腦資訊、Windows Installer 詳細目錄與 Windows 事件記錄檔資訊，以供 Visual Studio 安裝程式、Windows Installer 與系統還原使用。
 

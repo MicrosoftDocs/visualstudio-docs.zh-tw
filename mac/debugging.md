@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: e17a423e9db6826c8cc693e1c75c75bb067a19e8
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e184daa5271497e158c68989cb43889a03a98802
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295289"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953482"
 ---
 # <a name="debugging-with-xamarin"></a>以 Xamarin 偵錯
 
@@ -79,10 +79,10 @@ Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程�
 
 下面是四個按鈕：
 
-*   **播放** - 這會開始執行程式碼，直到下一個中斷點。
-*   **不進入函式** - 這會執行下一行程式碼。 如果下一行是函式呼叫，不進入函式會執行該函式，並在函式「之後」的下一行程式碼停止。
-*   **逐步執行** - 這也會執行下一行程式碼。 如果下一行是函式呼叫，逐步執行會停止在函式的第一行，讓您繼續一行一行地進行函式的偵錯。 如果下一行不是函式，它的行為與「不進入函式」相同。
-*   **跳離函式** - 這會回到呼叫目前函式的行。
+* **播放** - 這會開始執行程式碼，直到下一個中斷點。
+* **不進入函式** - 這會執行下一行程式碼。 如果下一行是函式呼叫，不進入函式會執行該函式，並在函式「之後」的下一行程式碼停止。
+* **逐步執行** - 這也會執行下一行程式碼。 如果下一行是函式呼叫，逐步執行會停止在函式的第一行，讓您繼續一行一行地進行函式的偵錯。 如果下一行不是函式，它的行為與「不進入函式」相同。
+* **跳離函式** - 這會回到呼叫目前函式的行。
 
 ## <a name="debugging-monos-class-libraries"></a>Mono 類別庫偵錯
 

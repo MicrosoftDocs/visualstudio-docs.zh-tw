@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Microsoft 產品和服務合約 (MPSA) 中的 Visual Studio 訂閱
 searchscope: VS Subscription
-ms.openlocfilehash: 59332dcc1d993df414a9c5981778767adaf155e9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841665"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953803"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Microsoft 產品和服務合約 (MPSA) 中的 Visual Studio 訂閱
 
@@ -29,21 +29,22 @@ ms.locfileid: "56841665"
 在完成租用戶關聯程序之前，以下是成為「Visual Studio 訂閱」系統管理員所需的幾個需求和步驟。
 
 ## <a name="pre-tenant-association-managed-tenant"></a>建立租用戶關聯之前 (受控租用戶)
--   您必須是「商務中心」的已註冊使用者。
--   您必須是所屬租用戶的「使用者管理員」(至少需具備此角色) 或「全域管理員」。 (這適用於公司已經使用「雲端服務」的情況)。 必須具備其中一個角色，才能成為 Visual Studio 訂閱系統管理員。
--   您必須是所屬租用戶中的「全域管理員」，才能將「購買帳戶」與租用戶建立關聯。
--   您必須是「商務中心」中的「帳戶管理員」(Account Admin) 或「帳戶管理員」(Account Manager)。
--   [Azure](https://portal.azure.com/) 中您個人設定檔 (和任何其他使用者) 內的 [國家或地區] 欄位必須依據您的地區適當地填入資訊 (亦即 US、CA 等)。
+
+- 您必須是「商務中心」的已註冊使用者。
+- 您必須是所屬租用戶的「使用者管理員」(至少需具備此角色) 或「全域管理員」。 (這適用於公司已經使用「雲端服務」的情況)。 必須具備其中一個角色，才能成為 Visual Studio 訂閱系統管理員。
+- 您必須是所屬租用戶中的「全域管理員」，才能將「購買帳戶」與租用戶建立關聯。
+- 您必須是「商務中心」中的「帳戶管理員」(Account Admin) 或「帳戶管理員」(Account Manager)。
+- [Azure](https://portal.azure.com/) 中您個人設定檔 (和任何其他使用者) 內的 [國家或地區] 欄位必須依據您的地區適當地填入資訊 (亦即 US、CA 等)。 
 
 > [!NOTE]
 > 任何您想要設定為 Visual Studio 訂閱系統管理員的使用者都不一定要是「商務中心」中的使用者，因為他們只需要符合步驟 2 和 5 中的準則即可。
 
 在您符合上述 5 個步驟中的準則之後，即可依照下面的步驟繼續將「購買帳戶」與租用戶建立關聯。
-1.  登入[商務中心](https://businessaccount.microsoft.com/)。
-2.  按一下 [帳戶] 索引標籤，然後選擇 [建立網域關聯]。
-3.  選取您的 [購買帳戶] (如果您有多個)。
-4.  選取您的**租用戶** (亦即 contoso.onmicrosoft.com)。
-5.  按一下 [建立網域關聯]。
+1. 登入[商務中心](https://businessaccount.microsoft.com/)。
+2. 按一下 [帳戶] 索引標籤，然後選擇 [建立網域關聯]。
+3. 選取您的 [購買帳戶] (如果您有多個)。
+4. 選取您的**租用戶** (亦即 contoso.onmicrosoft.com)。
+5. 按一下 [建立網域關聯]。
 
 建立關聯時，所有符合所需準則的使用者通常在幾分鐘內就會佈建成 Visual Studio 訂閱系統管理員。 不過，有時可能會花費長達 24 小時的時間。 佈建完成之後，您將能夠存取「Visual Studio 訂閱系統管理入口網站」。 如果費時超過 24 小時，請連絡 MPSA 支援服務。
 
