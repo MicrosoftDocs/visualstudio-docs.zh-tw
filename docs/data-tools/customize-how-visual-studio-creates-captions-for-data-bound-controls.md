@@ -13,16 +13,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 60e67e7150f00abb44f4af6b812f0ede43be8037
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1745aef29da9fc8efd49789f0112c903128f6f74
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939836"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323692"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自訂 Visual Studio 為資料繫結的控制項建立標題的方式
 
-當您拖曳項目從[資料來源 視窗](add-new-data-sources.md#data-sources-window)拖曳至設計工具中，特殊的考量派上用場： 標題標籤中的資料行名稱重新格式化成更容易閱讀的字串當兩個或更多的字發現串連在一起。 您可以自訂這些標籤建立所在，藉由設定的方式**SmartCaptionExpression**， **SmartCaptionReplacement**，並**SmartCaptionSuffix**中的值**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data 設計工具**登錄機碼。
+當您拖曳項目從[資料來源 視窗](add-new-data-sources.md#data-sources-window)拖曳至設計工具中，特殊的考量派上用場： 標題標籤中的資料行名稱重新格式化成更容易閱讀的字串當兩個或更多的字發現串連在一起。
+
+::: moniker range="vs-2017"
+
+您可以藉由設定會建立這些標籤的方式自訂**SmartCaptionExpression**， **SmartCaptionReplacement**，並**SmartCaptionSuffix**中的值**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data 設計工具**登錄機碼。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+您可以藉由設定會建立這些標籤的方式自訂**SmartCaptionExpression**， **SmartCaptionReplacement**，並**SmartCaptionSuffix**中的值**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data 設計工具**登錄機碼。
+
+::: moniker-end
 
 > [!NOTE]
 > 此登錄機碼不存在，您必須建立它。
@@ -31,7 +43,7 @@ ms.locfileid: "55939836"
 
 下表描述控制項標題標籤的登錄值。
 
-|登錄項目|描述|
+|登錄項目|說明|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|您用來比對模式的規則運算式。|
 |**SmartCaptionReplacement**|若要顯示在比對任何群組的格式**SmartCaptionExpression**。|
@@ -46,21 +58,31 @@ ms.locfileid: "55939836"
 |**SmartCaptionSuffix**|**:**|表示附加至傳回字串的字元。 例如，如果標題是`Company Name`後, 置詞可讓 `Company Name:`|
 
 > [!CAUTION]
-> 您必須非常小心進行任何項目在 登錄編輯時。 編輯前先備份登錄。 如果您不當使用登錄編輯程式，您可以會造成嚴重的問題，可能會要求您重新安裝作業系統。 Microsoft 不保證您不當使用登錄編輯程式而造成的問題，可以解決。 您必須自行承擔使用登錄編輯器的風險。
+> 務必特別小心進行任何項目在 登錄編輯。 編輯前先備份登錄。 如果您不當使用登錄編輯程式，您可以會造成嚴重的問題，可能會要求您重新安裝作業系統。 Microsoft 不保證您不當使用登錄編輯程式而造成的問題，可以解決。 您必須自行承擔使用登錄編輯器的風險。
 >
-> 下列知識庫文件包含針對備份、 編輯和還原登錄的指示： [Microsoft Windows 登錄說明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; en-us-我們; 256986)
+> 如需備份的資訊，編輯和還原登錄中，請參閱[進階使用者的 Windows 登錄資訊](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users)。
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>修改資料來源 視窗的智慧型隱藏式輔助字幕行為
 
-1.  開啟命令視窗中，依序按一下**開始**，然後**執行**。
+1. 開啟命令視窗中，依序按一下**開始**，然後**執行**。
 
-2.  型別`regedit`中**執行** 對話方塊中，然後按一下**確定**。
+2. 型別`regedit`中**執行** 對話方塊中，然後按一下**確定**。
 
-3.  依序展開**HKEY_CURRENT_USER** > **軟體** > **Microsoft** > **VisualStudio**節點。
+3. 依序展開**HKEY_CURRENT_USER** > **軟體** > **Microsoft** > **VisualStudio**節點。
 
-4.  以滑鼠右鍵按一下**15.0**節點，並建立新**金鑰**名為`Data Designers`。
+::: moniker range="vs-2017"
 
-5.  以滑鼠右鍵按一下**資料設計工具** 節點，並建立三個新的字串值：
+4. 以滑鼠右鍵按一下**15.0**節點，並建立新**金鑰**名為`Data Designers`。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. 以滑鼠右鍵按一下**16.0**節點，並建立新**金鑰**名為`Data Designers`。
+
+::: moniker-end
+
+5. 以滑鼠右鍵按一下**資料設計工具** 節點，並建立三個新的字串值：
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
@@ -82,15 +104,25 @@ ms.locfileid: "55939836"
 
 ## <a name="turn-off-the-smart-captioning-feature"></a>關閉智慧型的隱藏式輔助字幕功能
 
-1.  開啟命令視窗中，依序按一下**開始**，然後**執行**。
+1. 開啟命令視窗中，依序按一下**開始**，然後**執行**。
 
-2.  型別`regedit`中**執行** 對話方塊中，然後按一下**確定**。
+2. 型別`regedit`中**執行** 對話方塊中，然後按一下**確定**。
 
-3.  依序展開**HKEY_CURRENT_USER** > **軟體** > **Microsoft** > **VisualStudio**節點。
+3. 依序展開**HKEY_CURRENT_USER** > **軟體** > **Microsoft** > **VisualStudio**節點。
 
-4.  以滑鼠右鍵按一下**15.0**節點，並建立新**金鑰**名為`Data Designers`。
+::: moniker range="vs-2017"
 
-5.  以滑鼠右鍵按一下**資料設計工具** 節點，並建立三個新的字串值：
+4. 以滑鼠右鍵按一下**15.0**節點，並建立新**金鑰**名為`Data Designers`。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. 以滑鼠右鍵按一下**16.0**節點，並建立新**金鑰**名為`Data Designers`。
+
+::: moniker-end
+
+5. 以滑鼠右鍵按一下**資料設計工具** 節點，並建立三個新的字串值：
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`

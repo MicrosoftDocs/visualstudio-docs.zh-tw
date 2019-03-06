@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a063a42cd3597f69d0500012d74c7be700e02138
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c70782190bbfd76f5536a68eb597dbf3d122e773
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634990"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323824"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>逐步解說： 下載附屬組件，依需求以 ClickOnce 部署 API 使用設計工具
 透過使用附屬組件，Windows Forms 應用程式可以設定為適用多個文化特性。 *「附屬組件」* (Satellite Assembly) 為包含文化特性 (除了應用程式的預設文化特性以外) 之應用程式資源的組件。
@@ -53,7 +53,7 @@ ms.locfileid: "56634990"
 
 6.  關閉 [應用程式檔案] 對話方塊。
 
-### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>在 C# 內視需要下載附屬組件
+### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>在 C\# 內視需要下載附屬組件
 
 1.  開啟 *Program.cs* 檔案。 如果您沒有在 [方案總管] 內看到這個檔案，請選取您的專案，並在 [專案] 功能表上按一下 [顯示所有檔案]。
 

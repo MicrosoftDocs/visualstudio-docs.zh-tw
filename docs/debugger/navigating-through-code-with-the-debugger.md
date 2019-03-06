@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8c9a2f68427cfa7c5db69dca202a619c86444c2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 05458481a691f74f1746860e537d915dcad90efc
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706703"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428748"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 偵錯工具巡覽程式碼
 
@@ -133,7 +133,7 @@ Visual Studio 的中斷點提供一組豐富的其他功能，例如條件式中
 ![執行至點選處](../debugger/media/dbg-run-to-click.png "執行至點選處")
 
 > [!NOTE]
-> **執行至點選處**的新[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
+> **執行至點選處**可用以啟動[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
 
 ### <a name="manually-break-into-code"></a>手動中斷程式碼
 

@@ -1,20 +1,15 @@
 ---
 title: 適用於 Visual Studio 的 R 工具
-description: Visual Studio R 工具 (RTVS) 是免費的開放原始碼延伸模組，提供許多語言功能，包括 IntelliSense、偵錯及遠端工作區。
+description: Visual Studio 2017 R 工具 (RTVS) 是免費的開放原始碼延伸模組，提供許多語言功能，包括 IntelliSense、偵錯及遠端工作區。
 ms.date: 11/13/2017
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
-- data-science
-ms.openlocfilehash: 3fa12091493bda23c7eae52377f93b45cfe4c6e7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933557"
+  - data-science
 ---
+
 # <a name="work-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 
 R 專供統計運算與圖形設計之用，是高可延伸性的語言及環境。 它是依據 GNU General Public License 免費散發、享有堅強的社群支援，且以能夠產生出版物水平的繪圖 (包括數學符號和公式) 而聞名。 您可以透過 [r-project.org (英文)](https://www.r-project.org/about.html) 和[簡介 R (英文)](https://cran.r-project.org/doc/manuals/r-release/R-intro.html) 深入了解 R。
@@ -22,7 +17,7 @@ R 專供統計運算與圖形設計之用，是高可延伸性的語言及環境
 Visual Studio R 工具 (RTVS) 為適用於 Visual Studio 2017 和 Visual Studio 2015 Update 3 (或更新版本) 的免費[開放原始碼 (英文)](https://github.com/microsoft/RTVS) 擴充功能，並依據 MIT 授權發行。 (另一個會連結至 R 解譯器二進位檔，稱為 [RHost (英文)](https://github.com/microsoft/R-Host) 的開放原始碼元件，是依據 GNU Public License V2 發行)。
 
 > [!Note]
-> 目前只有 Windows 上的 Visual Studio 支援 RTVS，Visual Studio for Mac 則不支援。
+> 目前只有 Windows 上的 Visual Studio 2017 支援 RTVS，Visual Studio for Mac 則不支援。 Visual Studio 2019 無法使用此延伸模組。
 
 在 Visual Studio 中體驗 R：
 
@@ -31,7 +26,7 @@ Visual Studio R 工具 (RTVS) 為適用於 Visual Studio 2017 和 Visual Studio 
 
 然後遵循下列連結以深入了解 R 的相關功能，以及 Visual Studio 本身的一般功能。
 
-| 功能 | 描述 | 一般 Visual Studio 文件 |
+| 功能 | 說明 | 一般 Visual Studio 文件 |
 | --- | --- | --- |
 | [Visual Studio 專案系統](r-projects-in-visual-studio.md) | 在便利的結構中組織並管理相關檔案，並利用適用於各種項目 (例如 R 程式碼、R 文件、R Markdown、SQL 查詢及預存程序) 的有用範本。 同時也能運用[套件管理員](r-package-manager-in-visual-studio.md)和 [SQL Server 整合](integrating-sql-server-with-r.md)。  | [Visual Studio 中的方案和專案](../ide/solutions-and-projects-in-visual-studio.md) |
 | [工作區](r-workspaces-in-visual-studio.md) | RTVS 可繫結至本機及遠端工作區，讓您能夠使用更小的資料集於本機開發 R 程式碼，然後輕鬆地利用更大的資料集在更為強大的雲端電腦上執行程式碼。 | N/A |

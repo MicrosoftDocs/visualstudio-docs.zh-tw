@@ -9,16 +9,16 @@ helpviewer_keywords:
 author: poppastring
 ms.author: madownie
 manager: andster
-monikerRange: vs-2019
+monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2baf119259c749e8da99a9326eb22aa1e034b4a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 608745fc2c96836163e1406abda6869d52b1da1b
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646469"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007264"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>偵錯 Azure 虛擬機器上的即時 ASP.NET 應用程式和 Azure 虛擬機器擴展集使用快照集偵錯工具
 

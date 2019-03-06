@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d114ec9b108dad33e36ba9c9bfd7726501b13c0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4b8b0d507328022746682142c8d0720ba0de3fe0
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637499"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428761"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具附加至執行中處理序
 您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 此程序執行之後，請選取**偵錯** > **připojit k procesu**或按**Ctrl**+**Alt** +**P**在 Visual Studio 中，並使用**附加至處理序**對話方塊，即可將偵錯工具附加至處理程序。
@@ -95,9 +95,20 @@ ms.locfileid: "56637499"
 
    - 選取下拉式箭號旁**連線目標**，並從下拉式清單中選取的電腦名稱。
    - 輸入中的電腦名稱**連線目標** 方塊中。
+   
+     ::: moniker range="vs-2017"
 
      > [!NOTE]
      > 如果您無法連線使用的遠端電腦名稱，請嘗試使用的 IP 和連接埠位址 (例如`123.45.678.9:4022`)。 4022 是 Visual Studio 2017 x64 遠端偵錯工具的預設連接埠。 其他遠端偵錯工具的連接埠指派，請參閱[遠端偵錯工具連接埠指派](remote-debugger-port-assignments.md)。
+
+     ::: moniker-end
+     
+     ::: moniker range=">= vs-2019"
+
+     > [!NOTE]
+     > 如果您無法連線使用的遠端電腦名稱，請嘗試使用的 IP 和連接埠位址 (例如`123.45.678.9:4022`)。 4024 是 Visual Studio 2019 x64 遠端偵錯工具的預設連接埠。 其他遠端偵錯工具的連接埠指派，請參閱[遠端偵錯工具連接埠指派](remote-debugger-port-assignments.md)。
+
+     ::: moniker-end
 
    - 選取 [**尋找**按鈕旁**連線目標**方塊，以開啟**遠端連線**] 對話方塊。 **的遠端連線**對話方塊會列出位於您本機子網路，或直接連接到電腦的所有裝置。 您可能需要[開啟 UDP 連接埠 3702](../debugger/remote-debugger-port-assignments.md)伺服器以探索遠端裝置上。 選取的電腦或裝置，您想要，然後按一下**選取**。
 
@@ -142,7 +153,7 @@ ms.locfileid: "56637499"
 您可以快速重新附加至您先前選擇附加至處理程序**偵錯** > **重新附加至處理程序**(**Shift** +**Alt**+**P**)。 當您選擇此命令時，偵錯工具會立即嘗試將附加到最後一個處理序附加至藉由先嘗試比對上一個處理序識別碼，以及如果失敗，藉由比對上一個處理序名稱。 如果找不到任何相符項目，或是數個程序有相同的名稱，**附加至處理序**對話方塊隨即開啟，因此您可以選取正確的處理序。
 
 > [!NOTE]
-> **重新附加至處理序**命令是 Visual Studio 2017 的新功能。
+> **重新附加至處理序**命令是從 Visual Studio 2017 中推出。
 
 ## <a name="BKMK_Scenarios"></a> 常見的偵錯案例
 

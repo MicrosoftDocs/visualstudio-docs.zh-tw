@@ -26,18 +26,18 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: cd3017768bd44891a6db91020e93ffafcedf6bdc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 49ee21943f63cee3fff35d2bb92817294169c61f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694604"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223581"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何： 啟用和停用編輯後繼續 (C#、 VB、 c + +)
 
 您可以停用或啟用**編輯後繼續**在 Visual Studio**選項**在設計階段的對話方塊。 [編輯後繼續] 只能用於偵錯組建中。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。
 
-原生 c + + 中，**編輯後繼續**需要使用`/INCREMENTAL`選項。 如需有關 c + + 中的功能需求的詳細資訊，請參閱此[部落格文章](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)並[編輯後繼續 （Visual c + +）](../debugger/edit-and-continue-visual-cpp.md)。
+原生 c + + 中，**編輯後繼續**需要使用`/INCREMENTAL`選項。 如需有關 c + + 中的功能需求的詳細資訊，請參閱此[部落格文章](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)並[編輯後繼續 （Visual c + +）](../debugger/edit-and-continue-visual-cpp.md)。
 
 **若要啟用或停用編輯後繼續：**
 

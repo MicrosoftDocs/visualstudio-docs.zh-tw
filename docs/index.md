@@ -580,7 +580,7 @@ Unity 遊戲</a>
                                             <div class="cardText">
                                                 <a href="/visualstudio/rtvs/">
                                                     <h3>R</h3>
-                                                    <p>可延伸的程式設計語言，一般用於統計資料運算和圖形。</p>
+                                                    <p>(僅限 Visual Studio 2017) 可延伸的程式設計語言，一般用於統計資料運算和圖形。</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -699,7 +699,7 @@ Unity 遊戲</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
+                                <a href="python/data-science-and-analytical-applications-workload.md">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
@@ -710,7 +710,7 @@ Unity 遊戲</a>
                                         </div>
                                           <div class="cardText">
                                             <h3>資料科學和分析應用程式</h3>
-                                            <p>用於建立資料科學應用程式的語言與工具，包括 Python、R 及 F#。</p>
+                                            <p>用於建立資料科學應用程式的語言與工具，包括 Python 與 F# (以及僅限於 Visual Studio 2017 中的 R)。</p>
                                         </div>
                                       </div>
                                     </div>

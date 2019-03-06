@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703704"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428644"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>快照集偵錯工具使用者入門
 
@@ -69,6 +69,6 @@ Visual Studio 快照集偵錯工具現在會連接到您的服務，您可以開
 
 ## <a name="dont-show-me-this-again"></a>不要再顯示此訊息
 
-若要永遠不會顯示快照集偵錯工具 [入門] 頁面一次快照集偵錯工具的連線時，變更**顯示 [Getting Started] 頁面上的工作階段開始**選項**工具** >  **選項** > **快照集偵錯工具**。
+若要永遠不會在您連線的快照集偵錯工具時，再次顯示快照集偵錯工具起始頁，請變更**顯示 [Getting Started] 頁面上的工作階段開始**選項**工具** >  **選項** > **快照集偵錯工具**。
 
 ![快照集偵錯工具 工具選項頁面](../media/snapshot-startpage-tools-options.png)

@@ -95,25 +95,25 @@ items:
       - name: Visual Studio 工作負載與元件識別碼
         href: install/workload-and-component-ids.md
         items:
-        - name: Visual Studio Enterprise 2017
+        - name: Visual Studio 企業版
           href: install/workload-component-id-vs-enterprise.md
-        - name: Visual Studio Professional 2017
+        - name: Visual Studio Professional
           href: install/workload-component-id-vs-professional.md
-        - name: Visual Studio Community 2017
+        - name: Visual Studio Community
           href: install/workload-component-id-vs-community.md
-        - name: Visual Studio Team Explorer 2017
+        - name: Visual Studio Team Explorer
           href: install/workload-component-id-vs-team-explorer.md
-        - name: Visual Studio Desktop Express 2017
+        - name: Visual Studio Desktop Express
           href: install/workload-component-id-vs-express.md
-        - name: Visual Studio Build Tools 2017
+        - name: Visual Studio Build Tools
           href: install/workload-component-id-vs-build-tools.md
-        - name: Visual Studio Test Agent 2017
+        - name: Visual Studio Test Agent
           href: install/workload-component-id-vs-test-agent.md
-        - name: Visual Studio Test Controller 2017
+        - name: Visual Studio Test Controller
           href: install/workload-component-id-vs-test-controller.md
-        - name: Visual Studio Test Professional 2017
+        - name: Visual Studio Test Professional
           href: install/workload-component-id-vs-test-professional.md
-        - name: Visual Studio Feedback Client 2017
+        - name: Visual Studio Feedback Client
           href: install/workload-component-id-vs-feedback-client.md
       - name: Visual Studio 組建編號和發行日期
         href: install/visual-studio-build-numbers-and-release-dates.md
@@ -305,12 +305,16 @@ items:
             href: ide/reference/generate-field-property-local.md
           - name: 產生建構函式
             href: ide/reference/generate-constructor.md
+          - name: 產生解構函式
+            href: ide/reference/generate-deconstructor.md
           - name: 將參數新增至方法
             href: ide/reference/add-parameter.md
           - name: 產生覆寫
             href: ide/reference/generate-override.md
           - name: 產生 Equals 與 GetHashCode 方法的覆寫
             href: ide/reference/generate-equals-gethashcode-methods.md
+          - name: 產生的 using
+            href: ide/reference/generate-usings.md
           - name: 實作抽象類別
             href: ide/reference/implement-abstract-class.md
           - name: 實作介面
@@ -330,6 +334,10 @@ items:
             href: ide/reference/convert-for-loop-to-foreach.md
           - name: Get 方法與屬性之間的轉換
             href: ide/reference/convert-get-method-to-property.md
+          - name: 將區域函式轉換為方法
+            href: ide/reference/convert-local-function-method.md
+          - name: 將 foreach 迴圈轉換為 LINQ
+            href: ide/reference/convert-foreach-linq.md
           - name: 將 LINQ 查詢轉換成 foreach 陳述式
             href: ide/reference/convert-linq-to-foreach.md
           - name: 封裝欄位
@@ -340,6 +348,10 @@ items:
             href: ide/reference/extract-method.md
           - name: 內嵌暫存變數
             href: ide/reference/inline-temporary-variable.md
+          - name: 轉換條件運算式和邏輯運算
+            href: ide/reference/invert-conditional-logical.md
+          - name: 反轉 if 陳述式
+            href: ide/reference/invert-if-statement.md
           - name: 移動參考附近的宣告
             href: ide/reference/move-declaration-near-reference.md
           - name: 將類型移至相符的檔案
@@ -354,6 +366,10 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: 使用明確類型
             href: ide/reference/convert-var-to-explicit-type.md
+          - name: 使用 Lambda 運算式或區塊主體
+            href: ide/reference/use-block-body-lambda.md
+          - name: 未使用的值和參數
+            href: ide/reference/unused-values-parameters.md
           - name: 使參數換行、縮排及對齊
             href: ide/reference/wrap-align-indent-parameters.md
         - name: 逐步解說：使用時產生程式碼
@@ -1135,9 +1151,9 @@ items:
   - name: 告訴我們
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 5aa0ef8e9053a4321041ff87742de7772cab95f6
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a54443258922e37da185b8abd7897a2ab6a525cb
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223568"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324256"
