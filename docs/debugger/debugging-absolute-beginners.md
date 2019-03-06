@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917e9927e6eb8771ea911ee938d9226ecb2eadff
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484221"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713148"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>完全初學者如何偵錯
 
@@ -101,7 +101,7 @@ ms.locfileid: "55484221"
     ```csharp
     using System;
     using System.Collections.Generic;
-    
+
     namespace ConsoleApp_FirstApp
     {
         class Program
@@ -112,7 +112,7 @@ ms.locfileid: "55484221"
                 IterateThroughList();
                 Console.ReadKey();
             }
-    
+
             private static void IterateThroughList()
             {
                 var theGalaxies = new List<Galaxy>
@@ -124,33 +124,33 @@ ms.locfileid: "55484221"
                 new Galaxy() { Name="Andromeda", MegaLightYears=3, GalaxyType=new GType('S')},
                 new Galaxy() { Name="Maffei 1", MegaLightYears=11, GalaxyType=new GType('E')}
             };
-    
+
                 foreach (Galaxy theGalaxy in theGalaxies)
                 {
                     Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
                 }
-    
-                // Expected Output:  
-                //  Tadpole  400,  Spiral 
-                //  Pinwheel  25,  Spiral 
+
+                // Expected Output:
+                //  Tadpole  400,  Spiral
+                //  Pinwheel  25,  Spiral
                 //  Cartwheel, 500,  Lenticular
                 //  Small Magellanic Cloud .2,  Irregular
                 //  Andromeda  3,  Spiral
                 //  Maffei 1,  11,  Elliptical
             }
         }
-    
+
         public class Galaxy
         {
             public string Name { get; set; }
-    
+
             public double MegaLightYears { get; set; }
             public object GalaxyType { get; set; }
-    
+
         }
-    
+
         public class GType
-        { 
+        {
             public GType(char type)
             {
                 switch(type)
@@ -188,8 +188,8 @@ ms.locfileid: "55484221"
     應用程式隨即啟動，而且偵錯工具不會顯示任何例外狀況。 不過，您在主控台視窗中看到的輸出不符合預期。 以下是預期的輸出：
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,  Irregular
     Andromeda  3,  Spiral
@@ -199,8 +199,8 @@ ms.locfileid: "55484221"
     但輸出如下：
 
     ```
-    Tadpole  400,  ConsoleApp_FirstApp.GType 
-    Pinwheel  25,  ConsoleApp_FirstApp.GType 
+    Tadpole  400,  ConsoleApp_FirstApp.GType
+    Pinwheel  25,  ConsoleApp_FirstApp.GType
     Cartwheel, 500,  ConsoleApp_FirstApp.GType
     Small Magellanic Cloud .2,  ConsoleApp_FirstApp.GType
     Andromeda  3,  ConsoleApp_FirstApp.GType
@@ -217,7 +217,7 @@ ms.locfileid: "55484221"
     foreach (Galaxy theGalaxy in theGalaxies)
     {
         Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
-    }    
+    }
     ```
 
     當您設定中斷點時，左邊界會出現紅點。
@@ -247,13 +247,13 @@ ms.locfileid: "55484221"
 1. 仔細檢查與設定銀河類型相關的程式碼，您會發現 `Galaxy` 類別的 `GalaxyType` 屬性已指定為 `object`，而不是 `GType`。
 
     ```csharp
-    public object GalaxyType { get; set; }     
+    public object GalaxyType { get; set; }
     ```
 
 1. 將上述程式碼變更為：
 
     ```csharp
-    public GType GalaxyType { get; set; }     
+    public GType GalaxyType { get; set; }
     ```
 
 1. 按一下偵錯工具列中的 [重新啟動] ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp") 按鈕 (**Ctrl** + **Shift** + **F5**) 以重新編譯程式碼並重新啟動。
@@ -265,8 +265,8 @@ ms.locfileid: "55484221"
     應用程式隨即執行並顯示輸出。 現在看起來相當不錯，但您注意到一點：您預期小麥哲倫星系在主控台輸出中顯示為不規則銀河，但卻完全顯示為沒有銀河類型。
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,
     Andromeda  3,  Spiral
@@ -283,7 +283,7 @@ ms.locfileid: "55484221"
 
 1. 按一下偵錯工具列中的 [重新啟動] ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp") 按鈕 (**Ctrl** + **Shift** + **F5**) 以重新啟動。
 
-    偵錯工具會在您設定中斷點的程式碼行上暫停。  
+    偵錯工具會在您設定中斷點的程式碼行上暫停。
 
 1. 將滑鼠游標移至 `type` 變數上方。 您會看到 `S` 值 (後面接著字元碼)。 您對 `I` 值感興趣，因為您知道這是不規則的銀河類型。
 
@@ -323,7 +323,7 @@ ms.locfileid: "55484221"
 * 檢查您的應用程式是否正在執行您所預期程式碼。 (例如，在範例應用程式中，我們預期 switch 陳述式的程式碼將銀河類型設定為不規則，但由於錯字，應用程式已略過該程式碼。)
 
 > [!TIP]
-> 您可以使用偵錯工具協助找出 Bug。 偵錯工具只有在知道您程式碼的意圖時，才可「為您」找出 Bug。 您身為開發人員必須表示程式碼的意圖，工具才能知道該意圖。 您可以撰寫[單元測試](../test/improve-code-quality.md)來執行這項作業。 
+> 您可以使用偵錯工具協助找出 Bug。 偵錯工具只有在知道您程式碼的意圖時，才可「為您」找出 Bug。 您身為開發人員必須表示程式碼的意圖，工具才能知道該意圖。 您可以撰寫[單元測試](../test/improve-code-quality.md)來執行這項作業。
 
 ## <a name="next-steps"></a>後續步驟
 

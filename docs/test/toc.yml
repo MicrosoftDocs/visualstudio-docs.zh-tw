@@ -52,9 +52,9 @@ items:
     href: configure-unit-tests-by-using-a-dot-runsettings-file.md
   - name: 撰寫受控碼的單元測試
     items:
-    - name: 逐步解說：為受控碼建立和執行單元測試
+    - name: 逐步解說：針對受控碼建立和執行單元測試
       href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-    - name: 快速入門：搭配測試清單編輯器進行測試驅動開發
+    - name: 快速入門：搭配 [測試總管] 進行以測試為導向的開發工作
       href: quick-start-test-driven-development-with-test-explorer.md
     - name: 在單元測試中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成員
       href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
@@ -72,7 +72,7 @@ items:
     - name: 建立資料驅動的單元測試
       href: how-to-create-a-data-driven-unit-test.md
       items:
-      - name: 逐步解說：使用組態檔定義資料來源
+      - name: 逐步解說：使用設定檔定義資料來源
         href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
     - name: 泛型方法的單元測試
       href: unit-tests-for-generic-methods.md
@@ -93,7 +93,7 @@ items:
       href: how-to-use-ctest-for-cpp.md
     - name: 撰寫 C/C++ DLL 的單元測試
       href: how-to-write-unit-tests-for-cpp-dlls.md
-    - name: 逐步解說：撰寫 C/C++ DLL 的單元測試
+    - name: 逐步解說：撰寫 C++ DLL 的單元測試
       href: walkthrough-writing-unit-tests-for-cpp-dlls.md
     - name: 適用於 C++ 的 Microsoft 單元測試架構 API 參考
       href: microsoft-visualstudio-testtools-cppunittestframework-api-reference.md
@@ -103,7 +103,7 @@ items:
       href: unit-testing-a-visual-cpp-dll-for-store-apps.md
     - name: 對 UWP 應用程式中的 Visual C# 程式碼進行單元測試
       href: unit-testing-visual-csharp-code-in-a-store-app.md
-    - name: 逐步解說：建立並執行 UWP 應用程式的單元測試
+    - name: 逐步解說：建立並執行 UWP App 的單元測試
       href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
   - name: 使用程式碼涵蓋範圍來決定所測試的程式碼數量
     href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
@@ -121,7 +121,7 @@ items:
     href: live-unit-testing-whats-new.md
   - name: Live Unit Testing 的使用者入門
     href: live-unit-testing-start.md
-  - name: 使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing
+  - name: 使用 Enterprise Edition 中的 Live Unit Testing
     href: live-unit-testing.md
   - name: Live Unit Testing 常見問題集
     href: live-unit-testing-faq.md
@@ -331,7 +331,7 @@ items:
 - name: UI 測試自動化
   href: use-ui-automation-to-test-your-code.md
   items:
-  - name: 逐步解說：建立、編輯及維護程式碼 UI 測試
+  - name: 逐步解說：建立、編輯及維護自動程式化 UI 測試
     href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
   - name: 使用程式碼 UI 測試來測試 UWP 應用程式
     href: test-uwp-app-with-coded-ui-test.md
@@ -370,9 +370,9 @@ items:
     href: lab-management/use-build-or-rm-instead-of-lab-management.md
   - name: 安裝測試代理程式和測試控制器
     href: lab-management/install-configure-test-agents.md
-ms.openlocfilehash: 3035030458d8d0a3914952d606ca775ad33a62fc
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: c361abfb14ec9c89054b08d561c11e060d05a6af
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621509"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223789"

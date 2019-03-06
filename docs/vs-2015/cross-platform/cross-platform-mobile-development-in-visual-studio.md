@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: e2052dda4062ea120c529a03c3c0c7e43a4c8421
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b5495e4548ed5a9303d70bd949249ac9d98ce77
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789290"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843822"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "54789290"
 |[Visual Studio 和 Xamarin](../cross-platform/visual-studio-and-xamarin.md) (MSDN Library)|
 |[應用程式生命週期管理 (ALM) 與 Xamarin 應用程式](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) (MSDN Library)|
 |[了解 Visual Studio 中的通用 Windows 應用程式](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
-|[了解 Swift 與 C# 之間的相似性](http://aka.ms/scposter) (download.microsoft.com)|
+|[了解 Swift 與 C# 之間的相似性](https://aka.ms/scposter) (download.microsoft.com)|
 |[了解 Visual Studio 的 Android 模擬器](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ###  <a name="AndroidHTML"></a> 以 Android、iOS 和 Windows 為目標的單一程式碼基底

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae109558c19f408c2300830b64960d11fb57e39
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74787c9b310742e94b45c09748ec5b6c0210b2fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000831"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611915"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>快速入門：初步認識分析工具
 
@@ -149,22 +149,22 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 
 ![效能總管工具](../profiling/media/prof-tour-performance-explorer.png "效能總管")
 
-## <a name="which-tool-should-i-use"></a>應該使用哪一種工具？  
+## <a name="which-tool-should-i-use"></a>應該使用哪一種工具？
 
 以下資料表列出 Visual Studio 提供的各種工具和您可以用它們處理的不同專案類型︰
-  
-|效能工具|Windows 桌面|UWP|ASP.NET/ASP.NET Core| 
-|----------------------|---------------------|-------------|-------------|  
+
+|效能工具|Windows 桌面|UWP|ASP.NET/ASP.NET Core|
+|----------------------|---------------------|-------------|-------------|
 |[CPU 使用量](../profiling/cpu-usage.md)|是|是|是|
-|[記憶體使用量](../profiling/memory-usage.md)|是|是|是| 
-|[GPU 使用量](../debugger/gpu-usage.md)|是|是|no| 
+|[記憶體使用量](../profiling/memory-usage.md)|是|是|是|
+|[GPU 使用量](../debugger/gpu-usage.md)|是|是|no|
 |[應用程式時間軸](../profiling/application-timeline.md)|是|是|否|
 |[效能提示](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|
 |[效能總管](../profiling/performance-explorer.md)|是|否|是|
 |[IntelliTrace](../debugger/intellitrace.md)|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|僅限 .NET 與 Visual Studio Enterprise|
 |[網路使用量](../profiling/network-usage.md)|否|是|否|
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|否|對 HTML 為是，對 XAML 為否|否| 
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|否|對 HTML 為是，對 XAML 為否|否|
 |[JavaScript 記憶體](../profiling/javascript-memory.md)|否|對 HTML 為是，對 XAML 為否|否|
 
-## <a name="see-also"></a>另請參閱  
- [Visual Studio 偵錯](/visualstudio/debugger/debugger-feature-tour)
+## <a name="see-also"></a>另請參閱
+- [Visual Studio 偵錯](/visualstudio/debugger/debugger-feature-tour)

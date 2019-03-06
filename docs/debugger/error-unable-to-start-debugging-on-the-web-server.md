@@ -1,5 +1,5 @@
 ---
-title: 錯誤：無法啟動網頁伺服器上偵錯 |Microsoft Docs
+title: 錯誤： 無法啟動網頁伺服器上偵錯 |Microsoft Docs
 ms.date: 05/23/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -26,18 +26,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bf131634dc673fdeefe61fa2238c35fcc2ed8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e4c9d783fb68372e67f41eb84a1697ea3e1123b5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938450"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688208"
 ---
-# <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在網頁伺服器上開始偵錯
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在 Web 伺服器上啟動偵錯
 
 當您嘗試偵錯 Web 伺服器上執行的 ASP.NET 應用程式時，您可能會收到這個錯誤訊息： `Unable to start debugging on the Web server`。
 
-通常，因為發生錯誤或組態變更，需要更新您的應用程式集區、 IIS 重設，或兩者皆會發生此錯誤。 您可以開啟提升權限的命令提示字元並輸入重設 IIS `iisreset`。 
+通常，因為發生錯誤或組態變更，需要更新您的應用程式集區、 IIS 重設，或兩者皆會發生此錯誤。 您可以開啟提升權限的命令提示字元並輸入重設 IIS `iisreset`。
 
 ## <a name="specificerrors"></a>什麼是詳細的錯誤訊息？
 
@@ -61,7 +61,7 @@ ms.locfileid: "54938450"
 
 ## <a name="web_server_config"></a> 未正確設定網頁伺服器
 
-- 請參閱[錯誤：](../debugger/error-the-web-server-is-not-configured-correctly.md) 未正確設定網頁伺服器
+- 請參閱[錯誤： 未正確設定 web 伺服器](../debugger/error-the-web-server-is-not-configured-correctly.md)。
 
 ## <a name="unabletoconnect"></a> 無法連接到 web 伺服器
 
@@ -106,12 +106,12 @@ ms.locfileid: "54938450"
 
 ##  <a name="vxtbshttpservererrorsthingstocheck"></a> 檢查您的 IIS 設定
 
-之後若要解決此問題，以下詳述的步驟，並再重新嘗試偵錯，您可能也需要重設 IIS。 可以這麼做，開啟提升權限的命令提示字元並輸入`iisreset`。 
+之後若要解決此問題，以下詳述的步驟，並再重新嘗試偵錯，您可能也需要重設 IIS。 可以這麼做，開啟提升權限的命令提示字元並輸入`iisreset`。
 
-* 停止並重新啟動您的 IIS 應用程式集區，然後再試一次。 
+* 停止並重新啟動您的 IIS 應用程式集區，然後再試一次。
 
     應用程式集區可能因錯誤而停止。 或者，您所做的其他組態變更可能需要您停止並重新啟動您的應用程式集區。
-    
+
     > [!NOTE]
     > 如果應用程式集區會停止，您可能需要從控制台解除安裝 URL Rewrite Module。 您可以使用 Web Platform Installer (WebPI) 它重新安裝。 重大系統升級之後，可能會發生此問題。
 
@@ -120,7 +120,7 @@ ms.locfileid: "54938450"
     應用程式集區可能設定不符合您的 Visual Studio 專案的 ASP.NET 版本。 更新應用程式集區中的 ASP.NET 版本，然後重新啟動它。 如需詳細資訊，請參閱 < [IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
     此外，如果密碼認證已變更，您可能需要更新您的應用程式集區或網站。  應用程式集區中更新的認證**進階設定 > 處理序模型 > 識別**。 網站，更新的認證**基本設定 > 身分連接...**.重新啟動您的應用程式集區。
-    
+
 * 檢查您的 Web 應用程式的資料夾具有正確的權限。
 
     請確定您授與 IIS_IUSRS，IUSR，或特定使用者相關聯[應用程式集區](/iis/manage/configuring-security/application-pool-identities)讀取和執行 Web 應用程式資料夾的權限。 修正問題，然後重新啟動您的應用程式集區。
@@ -128,11 +128,11 @@ ms.locfileid: "54938450"
 * 請確定已在 IIS 上安裝正確的 ASP.NET 版本。
 
     ASP.NET 在 IIS 上和您的 Visual Studio 專案中的版本不相符，可能會導致此問題。 您可能需要在 web.config 中設定的 framework 版本。若要在 IIS 上安裝 ASP.NET，請使用[Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx)。 此外，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)或適用於 ASP.NET Core[使用 IIS 的 Windows 上的主機](https://docs.asp.net/en/latest/publishing/iis.html)。
-  
+
 * 若您只使用 IP 位址，請解決驗證錯誤
 
      根據預設，IP 位址被假設為網際網路的一部分，且不會透過網際網路完成 NTLM 驗證。 如果您的網站已設定為需要驗證的 IIS 中，此驗證將會失敗。 若要更正這個問題，您可以指定遠端電腦，而不是 IP 位址的名稱。
-     
+
 ## <a name="other-causes"></a>其他原因
 
 如果 IIS 設定不會造成問題，請嘗試下列步驟：
@@ -140,7 +140,7 @@ ms.locfileid: "54938450"
 - 重新啟動 Visual Studio 系統管理員權限並再試一次。
 
     某些 ASP.NET 偵錯案例，例如使用 Web Deploy for Visual Studio 需要提高權限。
-    
+
 - 如果執行的 Visual Studio 的多個執行個體，重新開啟您的專案中 （以系統管理員權限），在 Visual studio 的一個執行個體，並再試一次。
 
 - 如果您使用本機位址的主機檔案，請嘗試使用回送位址，而不電腦的 IP 位址。
@@ -152,12 +152,12 @@ ms.locfileid: "54938450"
 * 顯示在瀏覽器中的伺服器上的 [localhost] 頁面。
 
      若 IIS 未正確安裝，則您在瀏覽器中輸入 `http://localhost` 時應該會發生錯誤。
-     
+
      如需有關部署至 IIS 的詳細資訊，請參閱 < [IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)和適用於 ASP.NET Core[使用 IIS 的 Windows 上的主機](https://docs.asp.net/en/latest/publishing/iis.html)。
 
 * 在伺服器上建立基本的 ASP.NET 應用程式 （或使用基本的 web.config 檔案）。
 
     如果您無法取得您的應用程式使用偵錯工具，請嘗試在伺服器上，在本機建立基本的 ASP.NET 應用程式，然後再次嘗試基本的應用程式進行偵錯。 （您可能想要使用預設 ASP.NET MVC 範本。）如果您可以偵錯的基本應用程式，可協助您識別兩個組態之間的差異。 尋找設定的差異在 web.config 檔案中，例如 URL 重寫規則。
 
-## <a name="see-also"></a>請參閱  
- [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+## <a name="see-also"></a>請參閱
+- [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

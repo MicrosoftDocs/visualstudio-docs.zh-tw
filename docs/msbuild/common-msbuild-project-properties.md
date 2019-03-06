@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e16cf15e4c2f201c76fba72f547b939ce883ad2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020876"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610602"
 ---
 # <a name="common-msbuild-project-properties"></a>一般 MSBuild 專案屬性
-下表列出 Visual Studio 專案檔中所定義或 MSBuild 提供的 *.targets* 檔案中所包含的最常用屬性。  
-  
- Visual Studio 中的專案檔 (*.csproj*、*.vbproj*、*.vcxproj* 及其他) 包含 MSBuild XML 程式碼，該程式碼會在您使用 IDE 建置專案時執行。 專案通常會匯入一或多個 *.targets* 檔案，用於定義其建置流程。 如需詳細資訊，請參閱 [MSBuild .targets 檔案](../msbuild/msbuild-dot-targets-files.md)。  
-  
-## <a name="list-of-common-properties-and-parameters"></a>通用屬性和參數的清單  
-  
+下表列出 Visual Studio 專案檔中所定義或 MSBuild 提供的 *.targets* 檔案中所包含的最常用屬性。
+
+ Visual Studio 中的專案檔 (*.csproj*、*.vbproj*、*.vcxproj* 及其他) 包含 MSBuild XML 程式碼，該程式碼會在您使用 IDE 建置專案時執行。 專案通常會匯入一或多個 *.targets* 檔案，用於定義其建置流程。 如需詳細資訊，請參閱 [MSBuild .targets 檔案](../msbuild/msbuild-dot-targets-files.md)。
+
+## <a name="list-of-common-properties-and-parameters"></a>通用屬性和參數的清單
+
 | 屬性或參數名稱 | 說明 |
 |------------------------------------| - |
 | AdditionalLibPaths | 指定其他資料夾，編譯器會在這些資料夾中尋找參考組件。 |
@@ -128,6 +128,6 @@ ms.locfileid: "55020876"
 | WarningsNotAsErrors | 指定不要視為錯誤的警告清單。 這個參數 (Parameter) 相當於 `/warnaserror` 編譯器參數 (Switch)。 |
 | Win32Manifest | 應內嵌於最終組件中的資訊清單檔案名稱。 這個參數 (Parameter) 相當於 `/win32Manifest` 編譯器參數 (Switch)。 |
 | Win32Resource | 要內嵌於最終組件中的 Win32 資源檔案名稱。 這個參數 (Parameter) 相當於 `/win32resource` 編譯器參數 (Switch)。 |
-  
-## <a name="see-also"></a>另請參閱  
- [通用的 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)
+
+## <a name="see-also"></a>另請參閱
+- [通用的 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)

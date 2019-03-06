@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68647dbcbeaedd8ce3a6a493b685142434eec2c2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a833478a8dec3b9fe82b22295482fed6f5562d14
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923090"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641542"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>設計 XML 命令表檔案 (.vsct)
 XML 命令資料表 (*.vsct*) 檔案描述的版面配置和外觀 VSPackage 的命令項目。 命令的項目包括按鈕、 下拉式方塊、 功能表、 工具列和命令項目的群組。 本文說明 XML 命令表檔案、 它們如何影響命令的項目和功能表，以及如何加以建立。
@@ -61,39 +61,39 @@ XML 命令資料表 (*.vsct*) 檔案描述的版面配置和外觀 VSPackage 的
 - 按鍵繫結關係：您不再需要指定模擬器。 如果您指定其中一個，編譯器會假設編輯器和模擬器都相同。
 
 - Keychord:已經卸除 Keychord。 新的格式是*Key1、 Mod1、 Key2、 Mod2*。  您可以指定字元、 十六進位或 VK 常數。
-       
+
 新的編譯器中， *vsct.exe*，會同時編譯 *.ctc*並 *.vsct*檔案。 舊*ctc.exe*不過，編譯器會無法辨識或編譯 *.vsct*檔案。
 
-您可以使用*vsct.exe*編譯器来轉換的現有 *.cto*檔案載入 *.vsct*檔案。 如需詳細資訊，請參閱[＜How to：從現有的.cto 檔建立.vsct 檔](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)。
+您可以使用*vsct.exe*編譯器来轉換的現有 *.cto*檔案載入 *.vsct*檔案。 如需詳細資訊，請參閱[如何：從現有的.cto 檔建立.vsct 檔](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)。
 
 ## <a name="the-vsct-file-elements"></a>.Vsct 檔項目
  命令資料表具有下列階層和項目：
 
- [CommandTable 元素](../../extensibility/commandtable-element.md):表示所有的命令、 功能表群組和 VSPackage 相關聯的功能表。
+- [CommandTable 元素](../../extensibility/commandtable-element.md):表示所有的命令、 功能表群組和 VSPackage 相關聯的功能表。
 
- [Extern 元素](../../extensibility/extern-element.md):參考任何您想要合併的外部的.h 檔案 *.vsct*檔案。
+- [Extern 元素](../../extensibility/extern-element.md):參考任何您想要合併的外部的.h 檔案 *.vsct*檔案。
 
- [包含項目](../../extensibility/include-element.md):您想要編譯連同任何其他標頭 (.h) 檔案會參考您 *.vsct*檔案。 A *.vsct*檔案可以包含 *.h*檔案包含定義命令、 功能表群組和功能表的 IDE 或另一個 VSPackage 提供的常數。
+- [包含項目](../../extensibility/include-element.md):您想要編譯連同任何其他標頭 (.h) 檔案會參考您 *.vsct*檔案。 A *.vsct*檔案可以包含 *.h*檔案包含定義命令、 功能表群組和功能表的 IDE 或另一個 VSPackage 提供的常數。
 
- [Commands 元素](../../extensibility/commands-element.md):代表所有可執行的個別命令。 每個命令有下列 4 個子元素：
+- [Commands 元素](../../extensibility/commands-element.md):代表所有可執行的個別命令。 每個命令有下列 4 個子元素：
 
- [功能表項目](../../extensibility/menus-element.md):代表所有的功能表和工具列在 VSPackage 中。 功能表是容器群組的命令。
+- [功能表項目](../../extensibility/menus-element.md):代表所有的功能表和工具列在 VSPackage 中。 功能表是容器群組的命令。
 
- [Groups 元素](../../extensibility/groups-element.md):代表所有在 VSPackage 中的群組。 群組為個別命令的集合。
+- [Groups 元素](../../extensibility/groups-element.md):代表所有在 VSPackage 中的群組。 群組為個別命令的集合。
 
- [Buttons 元素](../../extensibility/buttons-element.md):表示所有的命令按鈕和功能表項目，在 VSPackage 中。 按鈕是可以與命令相關聯的視覺控制項。
+- [Buttons 元素](../../extensibility/buttons-element.md):表示所有的命令按鈕和功能表項目，在 VSPackage 中。 按鈕是可以與命令相關聯的視覺控制項。
 
- [Bitmaps 元素](../../extensibility/bitmaps-element.md):代表所有針對所有的按鈕，在 VSPackage 中的點陣圖。 點陣圖是顯示旁，或在 [命令] 按鈕，視內容而定的圖片。
+- [Bitmaps 元素](../../extensibility/bitmaps-element.md):代表所有針對所有的按鈕，在 VSPackage 中的點陣圖。 點陣圖是顯示旁，或在 [命令] 按鈕，視內容而定的圖片。
 
- [CommandPlacements 元素](../../extensibility/commandplacements-element.md):指出其中應設置個別的命令功能表的 VSPackage 中的其他位置。
+- [CommandPlacements 元素](../../extensibility/commandplacements-element.md):指出其中應設置個別的命令功能表的 VSPackage 中的其他位置。
 
- [VisibilityConstraints 元素](../../extensibility/visibilityconstraints-element.md):指定命令完全顯示時間，或只在特定內容中，例如特定的對話方塊或視窗會顯示。 功能表和命令的值，這個項目會顯示指定的內容為作用中時，才。 預設行為是以隨時顯示命令。
+- [VisibilityConstraints 元素](../../extensibility/visibilityconstraints-element.md):指定命令完全顯示時間，或只在特定內容中，例如特定的對話方塊或視窗會顯示。 功能表和命令的值，這個項目會顯示指定的內容為作用中時，才。 預設行為是以隨時顯示命令。
 
- [KeyBindings 元素](../../extensibility/keybindings-element.md):指定命令的任何索引鍵繫結。 也就是一或多個按鍵組合，必須執行的命令，例如按下**Ctrl**+**S**。
+- [KeyBindings 元素](../../extensibility/keybindings-element.md):指定命令的任何索引鍵繫結。 也就是一或多個按鍵組合，必須執行的命令，例如按下**Ctrl**+**S**。
 
- [UsedCommands 元素](../../extensibility/usedcommands-element.md):通知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境雖然指定的命令由其他程式碼中，實作，使用目前的 VSPackage 時，它會提供命令的實作。
+- [UsedCommands 元素](../../extensibility/usedcommands-element.md):通知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境雖然指定的命令由其他程式碼中，實作，使用目前的 VSPackage 時，它會提供命令的實作。
 
- [Symbols 元素](../../extensibility/symbols-element.md):包含符號名稱和 GUID 識別碼，所有您在封裝中的命令。
+- [Symbols 元素](../../extensibility/symbols-element.md):包含符號名稱和 GUID 識別碼，所有您在封裝中的命令。
 
 ## <a name="vsct-file-design-guidelines"></a>.vsct 檔的設計指導方針
  已成功設計 *.vsct*檔案，請遵循下列指導方針。
@@ -122,4 +122,4 @@ XML 命令資料表 (*.vsct*) 檔案描述的版面配置和外觀 VSPackage 的
  使用命令來執行此工具**CreateExpInstance /Reset**。 請記住，此工具會移除從實驗登錄區通常不會安裝使用的所有已註冊的 Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
 
 ## <a name="see-also"></a>另請參閱
- [擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)
+- [擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)

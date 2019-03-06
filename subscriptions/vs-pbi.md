@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解所選取 Visual Studio 訂用帳戶隨附的 Power BI Pro 訂用帳戶。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a437dd537caa75865a245a22387a4db53d94927f
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 176ce1d13faad7143da591f4f04f9feee1b5b2a0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380189"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843866"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Power BI Pro
 
@@ -94,17 +92,17 @@ ms.locfileid: "54380189"
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 ### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>問：如果權益是免費的，為什麼我必須提供信用卡號碼？
-A:權益是免費的，但啟用會使用用來處理付費訂單的相同系統。  有兩個可用的付款類型。 
-- 信用卡。  如果您提供信用卡號碼，將不會向您的卡片收費。 
-- 發票。  如果您選取「發票」作為付款類型，則不需要提供信用卡號碼。  您也可以將間隔設定為「年度」。  如此一來，您會收到單一電子郵件，讓您知道已為您準備好發票。  發票金額將會是美金 $0.00 元。  
+答：權益是免費的，但啟用會使用用來處理付費訂單的相同系統。  有兩個可用的付款類型。
+- 信用卡。  如果您提供信用卡號碼，將不會向您的卡片收費。
+- 發票。  如果您選取「發票」作為付款類型，則不需要提供信用卡號碼。  您也可以將間隔設定為「年度」。  如此一來，您會收到單一電子郵件，讓您知道已為您準備好發票。  發票金額將會是美金 $0.00 元。
 
 ### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>問：在生產環境中，是否可以使用我訂用帳戶授權中所包含的 Power BI Pro 權益？
-A:是，您可以在生產環境中使用它，但有兩個重要的注意事項：
-- 此供應項目要求安裝於它自己的租用戶上。  如果您在公司租用戶中需要有與公司認證相關聯的 Power BI 授權，請洽詢貴公司的管理員來購買並指派授權。 
-- 您無法在政府租用戶上使用這項 Power BI Pro權益。  
+答：是，您可以在生產環境中使用它，但有兩個重要的注意事項：
+- 此供應項目要求安裝於它自己的租用戶上。  如果您在公司租用戶中需要有與公司認證相關聯的 Power BI 授權，請洽詢貴公司的管理員來購買並指派授權。
+- 您無法在政府租用戶上使用這項 Power BI Pro權益。
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>問：當我嘗試啟動 Power BI Pro 時，收到訊息「您已透過工作取得帳戶」。  我仍然可以使用這項權益嗎？
-A:可以。  此訊息指出您要登入的網域已經有您不是系統管理員的使用中 Office 365 租用戶。  若要將 Power BI Pro 新增至租用戶，您必須是該租用戶的系統管理員。  若要解決此問題，請遵循下列步驟來建立自己的租用戶。
+答：可以。  此訊息指出您要登入的網域已經有您不是系統管理員的使用中 Office 365 租用戶。  若要將 Power BI Pro 新增至租用戶，您必須是該租用戶的系統管理員。  若要解決此問題，請遵循下列步驟來建立自己的租用戶。
 1.  當您看到「您已透過工作取得帳戶」的訊息時，請按一下 [建立新帳戶]。
 
 2.  在下一個畫面上，提供您的連絡資訊，然後按一下 [下一步]。
@@ -112,12 +110,12 @@ A:可以。  此訊息指出您要登入的網域已經有您不是系統管理�
 3.  建立您的使用者識別碼和密碼。  若要利用免費的供應項目，請務必選取 **.onmicrosoft.com** 作為網域。 按一下 [Create my account] (建立我的帳戶)。
     > [!div class="mx-imgBorder"]
     > ![Power BI Pro 權益建立專用租用戶使用者識別碼](_img/vs-pbi/vs-pbi-work-userid.png)
-    
+
 4.  從步驟 6 開始，此處理序的其餘步驟與本文內文中所列步驟完全相同。
 
 
-### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>問：我位在政府租用戶上。  我可以使用這項權益嗎？ 
-A:否。  無法新增 Power BI Pro 權益至政府租用戶。 
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>問：我位在政府租用戶上。  我可以使用這項權益嗎？
+答：否。  無法新增 Power BI Pro 權益至政府租用戶。
 
 ## <a name="support-resources"></a>支援資源
 -  需要使用 Power BI Pro 的說明嗎？

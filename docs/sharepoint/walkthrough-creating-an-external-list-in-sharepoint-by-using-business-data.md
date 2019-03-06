@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 930edf4483d946c92a0c3c21242bfe0bb421a229
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874172"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600294"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>逐步解說：使用商務資料在 SharePoint 中建立外部清單
 
@@ -186,7 +186,7 @@ ms.locfileid: "54874172"
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
-    |電話|System.String|
+    |Phone|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
@@ -276,7 +276,7 @@ ms.locfileid: "54874172"
 
 ## <a name="see-also"></a>另請參閱
 
-[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  
-[建立 business data connectivity 模型](../sharepoint/creating-a-business-data-connectivity-model.md)  
-[BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)  
-[將商務資料整合到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)
+[建立 business data connectivity 模型](../sharepoint/creating-a-business-data-connectivity-model.md)
+[BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)
+ [將商務資料整合到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 596f36457627e8da435c2a8c4223487aa35c60f4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: c2cce521a78c9e7c3c2e9ba9dd6240c5380de64a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227390"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692264"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的運算式
 當您在 [ **快速監看式** ] 對話方塊、[ **監看式** ] 視窗或 [ **即時運算** ] 視窗中輸入運算式時，都能使用 Visual Studio 偵錯工具所包含的運算式評估工具。 在 [ **中斷點** ] 視窗和偵錯工具中的其他許多地方，也都可以使用運算式評估工具。
@@ -205,7 +205,7 @@ int main()
 - 命名空間或模組層級關鍵字，例如 `End Sub` 或 `Module`。
 
 ## <a name="see-also"></a>請參閱
-[C++ 中的格式規範](../debugger/format-specifiers-in-cpp.md)  
-[內容運算子 (C++)](../debugger/context-operator-cpp.md)  
-[C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)  
-[虛擬變數](../debugger/pseudovariables.md)
+- [C++ 中的格式規範](../debugger/format-specifiers-in-cpp.md)
+- [內容運算子 (C++)](../debugger/context-operator-cpp.md)
+- [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)
+- [虛擬變數](../debugger/pseudovariables.md)

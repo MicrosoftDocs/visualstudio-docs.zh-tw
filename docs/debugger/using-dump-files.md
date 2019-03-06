@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0adb7e86f2b14dd25fa333fe54cc5121bbc8c1f3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b392cf5eddaab877af56ee952074cff646e10a59
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012491"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693447"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中的傾印檔案
 
-<a name="BKMK_What_is_a_dump_file_"></a> A*傾印檔案*是快照集，其中顯示正在執行的程序和時間點的應用程式已載入的模組。 包含堆積資訊的傾印也在該點包含應用程式的記憶體的快照集。 
+<a name="BKMK_What_is_a_dump_file_"></a> A*傾印檔案*是快照集，其中顯示正在執行的程序和時間點的應用程式已載入的模組。 包含堆積資訊的傾印也在該點包含應用程式的記憶體的快照集。
 
 開啟 Visual Studio 中的堆積傾印檔案，就像在偵錯工作階段中的中斷點處停止。 雖然您無法繼續執行，您可以在傾印時檢查堆疊、 執行緒和應用程式的變數值。
 
-傾印主要用於偵錯從開發人員沒有存取權的機器的問題。 您無法重現當機，或您自己的電腦上的停止回應時，您可以使用客戶電腦的傾印檔案。 測試人員也會建立傾印來儲存損毀，或用來設定測試的詳細資料的停止回應。 
+傾印主要用於偵錯從開發人員沒有存取權的機器的問題。 您無法重現當機，或您自己的電腦上的停止回應時，您可以使用客戶電腦的傾印檔案。 測試人員也會建立傾印來儲存損毀，或用來設定測試的詳細資料的停止回應。
 
 Visual Studio 偵錯工具可以儲存 Managed 程式碼或機器碼的傾印檔案。 它可以由 Visual Studio 或其他儲存在檔案的應用程式建立的傾印檔案進行偵錯*小型傾印*格式。
 
@@ -55,23 +55,23 @@ Visual Studio 偵錯工具可以儲存 Managed 程式碼或機器碼的傾印檔
 
 傾印檔案可能會或可能沒有堆積資訊。
 
--   **堆積的傾印檔案**包含應用程式的記憶體，包括變數的值，在傾印時的快照集。 Visual Studio 也會儲存已載入的原生模組二進位的檔可以讓您更容易偵錯堆積的傾印檔案中。 Visual Studio 可以從傾印檔案包含堆積，載入符號，即使找不到應用程式二進位。 
+-   **堆積的傾印檔案**包含應用程式的記憶體，包括變數的值，在傾印時的快照集。 Visual Studio 也會儲存已載入的原生模組二進位的檔可以讓您更容易偵錯堆積的傾印檔案中。 Visual Studio 可以從傾印檔案包含堆積，載入符號，即使找不到應用程式二進位。
 
 -   **傾印檔案，不含堆積**會遠低於傾印的堆積，但偵錯工具必須載入的應用程式二進位檔，以尋找符號資訊。 載入的二進位檔必須完全符合傾印建立期間執行的項目。 不含堆積的傾印檔案儲存只有堆疊變數的值。
 
 ##  <a name="BKMK_Create_a_dump_file"></a> 建立傾印檔案
 
-雖然您正在偵錯在 Visual Studio 中的程序，您可以在偵錯工具停止於例外狀況或中斷點時儲存傾印。 
+雖然您正在偵錯在 Visual Studio 中的程序，您可以在偵錯工具停止於例外狀況或中斷點時儲存傾印。
 
 具有[Just-In-Time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)啟用，您還可以將 Visual Studio 偵錯工具附加至 Visual Studio 中，外部的損毀處理序，然後從 偵錯工具中儲存傾印檔案。 請參閱[附加至執行中處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。
 
 **儲存傾印檔案：**
 
-1. 於錯誤或中斷點停止偵錯期間，當選取**偵錯** > **存傾印**。 
+1. 於錯誤或中斷點停止偵錯期間，當選取**偵錯** > **存傾印**。
 
 1. 在 **存傾印**對話方塊的 **將儲存為類型**，選取**小型傾印**或**包含堆積的小型傾印**（預設值）。
 
-1. 瀏覽路徑並選取傾印檔案的名稱，然後選取**儲存**。 
+1. 瀏覽路徑並選取傾印檔案的名稱，然後選取**儲存**。
 
 >[!NOTE]
 >您可以使用任何支援 Windows 小型傾印格式的程式，以建立傾印檔案。 例如，[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) 提供的 **Procdump** 命令列公用程式可以根據觸發程序或視需要建立處理序損毀傾印檔案。 請參閱[需求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)如需使用其他工具建立傾印檔案的詳細資訊。
@@ -99,7 +99,7 @@ Visual Studio 偵錯工具可以儲存 Managed 程式碼或機器碼的傾印檔
 - *.Exe*並 *.pdb*完全符合的版本和組建的檔案的檔案傾印建立。
 - 相關的模組的原始程式檔。 如果找不到原始程式檔，您可以使用反組譯碼的模組。
 
-傾印包含堆積資料，如果 Visual Studio 可以應付遺漏二進位檔的某些模組，但它必須擁有足夠的模組，才能產生有效的呼叫堆疊的二進位檔。 
+傾印包含堆積資料，如果 Visual Studio 可以應付遺漏二進位檔的某些模組，但它必須擁有足夠的模組，才能產生有效的呼叫堆疊的二進位檔。
 
 ### <a name="search-paths-for-exe-files"></a>.Exe 檔案的搜尋路徑
 

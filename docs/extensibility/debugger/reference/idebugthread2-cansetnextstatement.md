@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2::CanSetNextStatement |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugThread2::CanSetNextStatement
 helpviewer_keywords:
@@ -12,47 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cee011efedff2cec442e386f32c66d1398b35d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 43ec2c5d157832834f76834f7b93e193629b66d8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933603"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703041"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
-判斷目前指令指標是否可以設定特定的堆疊框架。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT CanSetNextStatement (   
-   IDebugStackFrame2*  pStackFrame,  
-   IDebugCodeContext2* pCodeContext  
-);  
-```  
-  
-```csharp  
-int CanSetNextStatement (   
-   IDebugStackFrame2  pStackFrame,  
-   IDebugCodeContext2 pCodeContext  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pStackFrame`  
- 保留供未來使用;設定為 null 的值。 如果這是 null 值時，使用目前的堆疊框架。  
-  
- `pCodeContext`  
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)描述將要執行的程式碼位置的物件和其內容。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- 如果這個方法會傳回`S_OK`，然後呼叫[SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)實際設定下一個陳述式的方法。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
- [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)
+判斷目前指令指標是否可以設定特定的堆疊框架。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT CanSetNextStatement ( 
+   IDebugStackFrame2*  pStackFrame,
+   IDebugCodeContext2* pCodeContext
+);
+```
+
+```csharp
+int CanSetNextStatement ( 
+   IDebugStackFrame2  pStackFrame,
+   IDebugCodeContext2 pCodeContext
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pStackFrame` 保留供未來使用;設定為 null 的值。 如果這是 null 值時，使用目前的堆疊框架。
+
+ `pCodeContext`
+
+ [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)描述將要執行的程式碼位置的物件和其內容。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+ 如果這個方法會傳回`S_OK`，然後呼叫[SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)實際設定下一個陳述式的方法。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
+- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
+- [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)

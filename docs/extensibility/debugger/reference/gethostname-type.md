@@ -1,7 +1,7 @@
 ---
 title: GETHOSTNAME_TYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - GETHOSTNAME_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f158cdaba17c030ce830c8adf26b6985c9b86dad
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: d8578056f907c70e3b900b1f3cdbcbeefc39688b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413432"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689232"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
 指定主機名稱的類型。
@@ -40,11 +40,9 @@ public enum enum_GETHOSTNAME_TYPE {
 ```
 
 ## <a name="members"></a>成員
-GHN_FRIENDLY_NAME  
-指定主應用程式的易記名稱。
+GHN_FRIENDLY_NAME 指定主應用程式的易記名稱。
 
-GHN_FILE_NAME  
-指定主機的檔案名稱。
+GHN_FILE_NAME 指定主應用程式的檔案名稱。
 
 ## <a name="remarks"></a>備註
 這些值會傳遞做為引數[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)方法來擷取主機名稱格式不同。
@@ -57,5 +55,5 @@ GHN_FILE_NAME
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)
+- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

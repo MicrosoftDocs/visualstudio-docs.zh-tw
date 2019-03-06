@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAssemblyName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAssemblyName
 - GetAssemblyName
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60ea9a6f498a776bc8db0b7ee0fe12aa3c23e19f
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 491e3cbb2003dc293f41a207ab7ae13a7e76cc68
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412925"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692303"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
 擷取其模組和應用程式定義域的組件名稱。
 
 ## <a name="syntax"></a>語法
 
-```
-[C++]
+```cpp
 HRESULT GetAssemblyName(
     ULONG32 ulAppDomainID,
     GUID    guidModule,
@@ -32,8 +31,7 @@ HRESULT GetAssemblyName(
 );
 ```
 
-```
-[C#]
+```csharp
 int GetAssemblyName(
     uint   ulAppDomainID,
     Guid   guidModule,
@@ -42,14 +40,17 @@ int GetAssemblyName(
 ```
 
 #### <a name="parameters"></a>參數
-`ulAppDomainID`  
-[in]應用程式定義域的識別項。
+`ulAppDomainID`
 
-`guidModule`  
-[in]模組的唯一識別碼。
+ [in]應用程式定義域的識別項。
 
-`pbstrName`  
-[out]傳回組件的名稱。
+`guidModule`
+
+ [in]模組的唯一識別碼。
+
+`pbstrName`
+
+ [out]傳回組件的名稱。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -84,4 +85,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

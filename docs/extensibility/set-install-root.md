@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc8d0ccac452d82ed1a2f5fbce7c88fd82efc1d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 09b3b23a89450bb1abac4f8ebb10d00396a251b2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983101"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709677"
 ---
 # <a name="installing-outside-the-extensions-folder"></a>擴充功能資料夾之外進行安裝
 

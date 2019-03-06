@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5248609ed51f82cfbc69c883063a032ab48813f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317363"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223191"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -49,7 +49,7 @@ ms.locfileid: "56317363"
 - 具有相依性圖表的模型專案的方案。 此相依性圖表必須連結到您想要驗證的 C# 或 Visual Basic 專案中的成品。 請參閱[從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)。
 
 > [!NOTE]
-> Visual Studio 2017 中的.NET Core 專案不支援相依性圖表。
+> Visual Studio 中的.NET Core 專案不支援相依性圖表。
 
 若要查看哪些版本的 Visual Studio 支援此功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
@@ -235,6 +235,6 @@ ms.locfileid: "56317363"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 2017 中的即時相依性驗證](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
+- [在 Visual Studio 中的即時相依性驗證](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)
 - [影片：驗證即時架構相依性](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

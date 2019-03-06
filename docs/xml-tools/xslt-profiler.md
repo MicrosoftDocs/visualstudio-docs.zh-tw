@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f352e63a2fa848aec1547a54a489eac7dccd094d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa1f9196b8592b4ace30a9003f9920a8b5f66b33
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912387"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222187"
 ---
 # <a name="xslt-profiler"></a>XSLT 分析工具
 
@@ -24,7 +24,7 @@ XSLT Profiler 是 Visual Studio 的一部分，而且都可從**XML**功能表�
 ![XSLT 分析工具](../xml-tools/media/profile-xslt-menu.png)
 
 > [!NOTE]
-> 只有 Enterprise 版的 Visual Studio 2017 中使用 XSLT Profiler。
+> 只有 Enterprise 版的 Visual Studio 中使用 XSLT Profiler。
 
 ## <a name="see-also"></a>另請參閱
 

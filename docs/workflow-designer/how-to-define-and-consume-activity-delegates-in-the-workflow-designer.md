@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 29475ef3b5bf25c2fca67d6aa7f4708787350cb3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d0176113b444c2d5b7e4c9f304e35974fdb31e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914772"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222879"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>HOW TO：定義並取用工作流程設計工具中的活動委派
 
@@ -26,7 +26,7 @@ ms.locfileid: "55914772"
 2. 在**新的專案**對話方塊中，選取**工作流程**左側的類別目錄，然後選取**工作流程主控台應用程式**專案範本。 （如有需要） 的專案命名，然後按一下**Ok**。
 
    > [!NOTE]
-   > 如果您沒有看到**工作流程**類別，第一次安裝**Windows Workflow Foundation**元件的 Visual Studio 2017。 如需詳細指示，請參閱 <<c0> [ 安裝的 Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
+   > 如果您沒有看到**工作流程**類別，第一次安裝**Windows Workflow Foundation** Visual Studio 的元件。 如需詳細指示，請參閱 <<c0> [ 安裝的 Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
 
 3. 中的專案上按一下滑鼠右鍵**方案總管**，然後選取**新增** > **新項目**。 選取 **工作流程**類別目錄，然後選取**活動**項目範本。 新活動命名**MyForEach.xaml** ，然後選取**確定**。
 

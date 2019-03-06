@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cfd6153389bbfe9cbbd36f33f6a2e4384509297
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2fc5e8a7e0bbc80fd7fa0aa2d242239a9be6a219
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227057"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714968"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>如何：偵錯 OnStart 方法
 您可以藉由啟動服務並將偵錯工具附加到服務處理序，對 Windows 服務進行偵錯。 如需詳細資訊，請參閱 [How to: Debug Windows Service Applications](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)。 但是若要對 Windows 服務的 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 方法進行偵錯，您必須從方法內啟動偵錯工具。
@@ -53,5 +53,5 @@ ms.locfileid: "56227057"
 5. Visual Studio 的新執行個體隨即啟動，並在 `Debugger.Launch()` 方法停止執行。
 
 ## <a name="see-also"></a>請參閱
-[偵錯工具安全性](../debugger/debugger-security.md)  
-[偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)
+- [偵錯工具安全性](../debugger/debugger-security.md)
+- [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

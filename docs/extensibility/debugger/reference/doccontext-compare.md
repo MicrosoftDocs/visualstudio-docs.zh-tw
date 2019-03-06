@@ -1,7 +1,7 @@
 ---
 title: DOCCONTEXT_COMPARE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DOCCONTEXT_COMPARE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5805f34528225849afb51ce6a854ef5028acb3a5
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: e36e9c3c0870cb81dd02f646636eeb758f1ddb62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413029"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686245"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 指定的準則來比較兩個文件內容。
@@ -44,17 +44,13 @@ enum enum_DOCCONTEXT_COMPARE {
 ```
 
 ## <a name="members"></a>成員
-DOCCONTEXT_EQUAL  
-找到的第一個文件內容等於目標文件內容的清單中。
+DOCCONTEXT_EQUAL 等於目標文件內容的清單中找到的第一個文件內容。
 
-DOCCONTEXT_LESS_THAN  
-小於目標文件內容的清單中找到的第一個文件內容。
+DOCCONTEXT_LESS_THAN 小於目標文件內容的清單中找到的第一個文件內容。
 
-DOCCONTEXT_GREATER_THAN  
-大於目標文件內容的清單中找到的第一個文件內容。
+DOCCONTEXT_GREATER_THAN 大於目標文件內容清單中找到的第一個文件內容。
 
-DOCCONTEXT_SAME_DOCUMENT  
-在目標文件內容相同文件中的清單中找到的第一個文件內容。
+DOCCONTEXT_SAME_DOCUMENT 是目標文件內容相同文件中的清單中找到的第一個文件內容。
 
 ## <a name="remarks"></a>備註
 作為引數[比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。
@@ -69,5 +65,5 @@ DOCCONTEXT_SAME_DOCUMENT
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

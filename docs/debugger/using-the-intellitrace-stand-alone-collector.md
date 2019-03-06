@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 446348078f79ae49408dac9a1d00cb29f968b184
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 62fabe86798a957f148c4b497f36e9512663cd17
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316843"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710587"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 獨立收集器 (C#，Visual Basic)
 
@@ -172,7 +172,7 @@ ms.locfileid: "56316843"
    > [!NOTE]
    > - 若要避免讓應用程式變慢，請選擇本機高速磁碟上不是非常活躍的位置。
    >   -   您可以將 .iTrace 檔案和收集器檔案放在相同的位置。 不過，如果您有 Web App 或 SharePoint 應用程式，請確認這個位置是在裝載應用程式的目錄外部。
-   > 
+   >
    > [!IMPORTANT]
    > - 限制 iTrace 檔案目錄，僅供必須使用收集器的識別使用。 .ITrace 檔案可能包含機密資訊 (例如使用者、資料庫、其他來源位置和連接字串中的資料)，因為 IntelliTrace 可以記錄傳遞給方法參數或做為傳回值的任何資料。
    >   -   請確定可以開啟 .iTrace 檔案的人具有檢視機密資料的授權。 共用 .iTrace 檔案時請小心。 如果其他人必須具有存取權，請將檔案複製到安全的共用位置。

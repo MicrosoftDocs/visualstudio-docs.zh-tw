@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eea2b3e903e3311773bc1fcfe9df7d67949dc5e5
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: db06efe400106260556d8eab5fd644bbfc27f0c2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155562"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645052"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 列舉各種資料來源中包含的框架資料項目。
@@ -31,7 +31,7 @@ IDiaEnumFrameData : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
 下表顯示的方法`IDiaEnumFrameData`。
 
-|方法|描述|
+|方法|說明|
 |------------|-----------------|
 |[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|擷取`IEnumVARIANT Interface`這個列舉值的版本。|
 |[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|擷取畫面格的資料元素的數目。|
@@ -95,7 +95,7 @@ void ShowFrameData(IDiaSession *pSession)
             PrintFrameData(pFrameData);
             pFrameData->Release();
         }
-        pEnumFrameData->Release(); 
+        pEnumFrameData->Release();
     }
 }
 ```
@@ -108,6 +108,6 @@ void ShowFrameData(IDiaSession *pSession)
 **DLL:** msdia80.dll
 
 ## <a name="see-also"></a>請參閱
-[介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)  
-[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

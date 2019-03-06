@@ -16,60 +16,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78be9b906efd9720d9bc7ccdbe09614899ef6818
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 825c6b897447a5a628d9a97e4c7e64f1427fb4d7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989584"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644311"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 項目 (MSBuild)
-包含使用者定義的項目中繼資料索引鍵，其中含有項目中繼資料值。 項目可能有任何數目的中繼資料索引鍵值組。  
+包含使用者定義的項目中繼資料索引鍵，其中含有項目中繼資料值。 項目可能有任何數目的中繼資料索引鍵值組。
 
- \<Project>  
- \<ItemGroup>  
- \<Item>  
+ \<Project> \<ItemGroup> \<Item>
 
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>語法
 
-```xml  
-<ItemMetadataName> Item Metadata value</ItemMetadataName>  
-```  
+```xml
+<ItemMetadataName> Item Metadata value</ItemMetadataName>
+```
 
-## <a name="attributes-and-elements"></a>屬性和元素  
- 下列章節說明屬性、子元素和父元素。  
+## <a name="attributes-and-elements"></a>屬性和元素
+ 下列章節說明屬性、子元素和父元素。
 
-### <a name="attributes"></a>屬性  
+### <a name="attributes"></a>屬性
 
-|屬性|說明|  
-|---------------|-----------------|  
-|`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
+|屬性|說明|
+|---------------|-----------------|
+|`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|
 
-### <a name="child-elements"></a>子元素  
- 無。  
+### <a name="child-elements"></a>子元素
+ 無。
 
-### <a name="parent-elements"></a>父元素  
+### <a name="parent-elements"></a>父元素
 
-|元素|說明|  
-|-------------|-----------------|  
-|[Item](../msbuild/item-element-msbuild.md)|使用者定義的元素，可定義建置程序的輸入。|  
+|元素|說明|
+|-------------|-----------------|
+|[Item](../msbuild/item-element-msbuild.md)|使用者定義的元素，可定義建置程序的輸入。|
 
-## <a name="text-value"></a>文字值  
- 可選擇使用文字值。  
+## <a name="text-value"></a>文字值
+ 可選擇使用文字值。
 
- 此文字會指定項目中繼資料值，它可以是文字或 XML。  
+ 此文字會指定項目中繼資料值，它可以是文字或 XML。
 
-## <a name="example"></a>範例  
- 下列程式碼範例示範如何新增含有值 `fr` 的 `Culture` 中繼資料到項目 `CSFile`。  
+## <a name="example"></a>範例
+ 下列程式碼範例示範如何新增含有值 `fr` 的 `Culture` 中繼資料到項目 `CSFile`。
 
-```xml  
-<ItemGroup>  
-    <CSFile Include="main.cs" >  
-        <Culture>fr</Culture>  
-    </CSFile>  
-</ItemGroup>  
-```  
+```xml
+<ItemGroup>
+    <CSFile Include="main.cs" >
+        <Culture>fr</Culture>
+    </CSFile>
+</ItemGroup>
+```
 
-## <a name="see-also"></a>另請參閱  
- [專案檔結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
- [項目](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>另請參閱
+- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+- [項目](../msbuild/msbuild-items.md)

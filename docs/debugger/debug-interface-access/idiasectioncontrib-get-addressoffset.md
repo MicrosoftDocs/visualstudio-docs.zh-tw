@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb4a6519410c484daecba0fbd801d4db40535445
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c0fa8b7a61a5b74558dc16bfea4726a763bf03f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920717"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625799"
 ---
 # <a name="idiasectioncontribgetaddressoffset"></a>IDiaSectionContrib::get_addressOffset
-擷取所佔比重的位址位移的一部分。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_addressOffset (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pRetVal`  
- [out]傳回所佔比重的位址位移的一部分。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+擷取所佔比重的位址位移的一部分。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_addressOffset ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pRetVal`
+
+[out]傳回所佔比重的位址位移的一部分。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+
+## <a name="see-also"></a>請參閱
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -7,18 +7,18 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d4a5b28686b2af356d1247bf9690708739fea8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d4d7dfc1f010b860653edbe14fa7af9050bddba4
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907835"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323649"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>使用規則集來指定要執行的 c + + 規則
 
 在 Visual Studio 中，您可以建立和修改自訂*規則集*以符合程式碼分析與相關聯的特定專案需求。 預設的規則集儲存在`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`。
 
-**Visual Studio 2017 15.7 版**您可以建立自訂規則集使用任何文字編輯器，並將它們套用在命令列組建，不論建置的系統所使用的項目。 如需詳細資訊，請參閱 < [/analyze: ruleset](/cpp/build/reference/analyze-code-analysis)。
+**Visual Studio 2017 15.7 版及更新版本**您可以建立自訂規則集使用任何文字編輯器，並將它們套用在命令列組建，不論建置的系統所使用的項目。 如需詳細資訊，請參閱 < [/analyze: ruleset](/cpp/build/reference/analyze-code-analysis)。
 
 若要建立自訂的 c + + 規則，設定 Visual Studio 中，C/c + + 專案必須在 Visual Studio IDE 中開啟。 然後規則集編輯器中開啟的標準規則集，然後新增或移除特定規則及選擇性變更 程式碼分析會判斷已違反規則時所發生的動作之後。
 
@@ -82,8 +82,9 @@ ms.locfileid: "55907835"
 
 下列範例示範基本的規則集檔案，您可以使用做為起點：
 
-```xml
+::: moniker range="vs-2017"
 
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RuleSet Name="New Rule Set" Description=" " ToolsVersion="15.0">
   <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
@@ -92,3 +93,19 @@ ms.locfileid: "55907835"
   </Rules>
 </RuleSet>
 ```
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="New Rule Set" Description=" " ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
+    <Rule Id="C6001" Action="Warning" />
+    <Rule Id="C26494" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+::: moniker-end

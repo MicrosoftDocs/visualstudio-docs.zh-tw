@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cc99869276588da43a897e7b087f6e1251651b7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0395f58d9e4cf700784ee632dc860823cd50e11f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026771"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624954"
 ---
 # <a name="set-general-performance-session-options"></a>設定一般效能工作階段選項
 
@@ -27,8 +27,8 @@ ms.locfileid: "55026771"
 |||
 |-|-|
 |**取樣**。 取樣方法會依固定間隔收集分析資訊。 此方法可用來尋找處理器使用率問題，建議用來調查大多數效能問題。|- [使用取樣收集效能統計資料](../profiling/collecting-performance-statistics-by-using-sampling.md)|
-|**檢測**。 檢測方法會插入至模組分析程式碼的複本，以記錄分析回合期間模組中函式的每個進入、結束和函式呼叫。 此方法可用來收集程式碼區段的詳細計時資訊，以及了解輸入和輸出作業對應用程式效能的影響。|- [使用檢測收集詳細計時資料](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)|
-|**並行**。 並行方法會收集每個封鎖執行程式碼之事件的資料，例如，執行緒等待釋放鎖定應用程式資源存取時。 此方法適用於分析多執行緒應用程式。|- [收集執行緒和處理序並行資料](../profiling/collecting-thread-and-process-concurrency-data.md)|
+|**檢測**。 檢測方法會插入至模組分析程式碼的複本，以記錄分析回合期間模組中函式的每個進入、結束和函式呼叫。 這個方法適合用來收集關於您的程式碼的某個區段的詳細時間資訊，以及了解輸入和輸出作業對應用程式效能的影響。|- [使用檢測收集詳細計時資料](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)|
+|**並行**。 並行方法會收集每個封鎖執行程式碼之事件的資料，例如，執行緒等待釋放鎖定應用程式資源存取時。 這個方法對於分析多執行緒應用程式很實用。|- [收集執行緒和處理序並行資料](../profiling/collecting-thread-and-process-concurrency-data.md)|
 
  您可以使用取樣或檢測方法來收集 .NET 記憶體資料。 您可以在 [.NET 記憶體分析] 下選取資料類型。
 

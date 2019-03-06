@@ -8,43 +8,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcff858e8cf79d0665d717a576b9c2389e69131a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b4de8aa278adab0127f3a39d9adcf105f906e152
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979318"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625240"
 ---
 # <a name="lineoff"></a>LineOff
-根據預設，分析工具會在您使用取樣分析方法時，收集原始程式碼行號和位移資料行號。 VSPerfCmd 的 **LineOff** 選項在使用 VSPerfCmd 啟動應用程式時，會停用行號資料收集。 指定 [LineOff] 時，分析資料會收集至函式層級。  
-  
- **LineOff** 只能搭配 [啟動] 選項，而且只能在已初始化分析工具，使用 [啟動]：[取樣] 選項進行取樣時。  
-  
-## <a name="syntax"></a>語法  
-  
-```cmd  
-VSPerfCmd.exe /Launch:AppName /LineOff [Options]  
-```  
-  
-#### <a name="parameters"></a>參數  
- 無  
-  
-## <a name="required-options"></a>必要選項  
- **LineOff** 選項只能用在包含 [啟動] 選項的命令列中。  
-  
- **Launch：** `AppName`  
- 啟動指定的應用程式，並使用取樣方法開始程式碼剖析。  
-  
-## <a name="example"></a>範例  
- 這個範例會啟動應用程式和分析工具，並停用程式碼層級的取樣。  
-  
-```cmd  
-VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
-VSPerfCmd.exe /Launch:TestApp.exe /LineOff  
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [分析服務](../profiling/command-line-profiling-of-services.md)
+根據預設，分析工具會在您使用取樣分析方法時，收集原始程式碼行號和位移資料行號。 VSPerfCmd 的 **LineOff** 選項在使用 VSPerfCmd 啟動應用程式時，會停用行號資料收集。 指定 [LineOff] 時，分析資料會收集至函式層級。
+
+ **LineOff** 只能搭配 [啟動] 選項，而且只能在已初始化分析工具，使用 [啟動]：[取樣] 選項進行取樣時。
+
+## <a name="syntax"></a>語法
+
+```cmd
+VSPerfCmd.exe /Launch:AppName /LineOff [Options]
+```
+
+#### <a name="parameters"></a>參數
+ 無
+
+## <a name="required-options"></a>必要選項
+ **LineOff** 選項只能用在包含 [啟動] 選項的命令列中。
+
+ **Launch:**`AppName` 啟動指定的應用程式，並使用取樣方法開始分析。
+
+## <a name="example"></a>範例
+ 這個範例會啟動應用程式和分析工具，並停用程式碼層級的取樣。
+
+```cmd
+VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
+VSPerfCmd.exe /Launch:TestApp.exe /LineOff
+```
+
+## <a name="see-also"></a>另請參閱
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [分析服務](../profiling/command-line-profiling-of-services.md)

@@ -8,12 +8,12 @@ ms.author: greggm
 manager: jillfra
 ms.workload:
 - greggm
-ms.openlocfilehash: 91c834e61452667a0af236eddb65355f23234715
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74fbb959f8272be001aad8a576724d5eb1ad6157
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990533"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712199"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>移轉 64 位元偵錯工具 COM 類別註冊
 

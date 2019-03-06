@@ -1,5 +1,5 @@
 ---
-title: HOW TO：分析網頁中的 JavaScript 程式碼 | Microsoft Docs
+title: 作法：分析網頁中的 JavaScript 程式碼 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 139cc1ad17448334098dc8e0ac0bbfbdf9ef6d5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d8e4c2b8b5f557f9f7eff26972593c4f40146be
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043514"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646131"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>HOW TO：分析網頁中的 JavaScript 程式碼
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>作法：分析網頁中的 JavaScript 程式碼
 
 Visual Studio 分析工具可以使用檢測分析方法，針對 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式、任意網頁或 JavaScript 應用程式中執行的 JavaScript 程式碼來收集效能資料。 需要 Internet Explorer 8 或更新版本。
 
 > [!WARNING]
-> 若要對 UWP 應用程式中的 JavaScript 進行程式碼剖析，請參閱 [JavaScript 記憶體](../profiling/javascript-memory.md) 
+> 若要對 UWP 應用程式中的 JavaScript 進行程式碼剖析，請參閱 [JavaScript 記憶體](../profiling/javascript-memory.md)
 
 您可以使用 [程式碼剖析精靈] 建立效能工作階段。 指定檢測方法，然後在效能工作階段的 [屬性] 對話方塊中，於 [檢測] 頁面上指定 JavaScript 程式碼剖析選項。
 

@@ -16,35 +16,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c2bdc2f2b7285e9d7bd29e17fec4b9be33fdff2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 148d6e1680dce6e140f111b745edcd96449b588b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979734"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607001"
 ---
-# <a name="how-to-specify-where-visual-studio-copies-the-files"></a>HOW TO：指定 Visual Studio 複製檔案的位置
-當您使用 ClickOnce 發行應用程式時，`Publish Location`屬性會指定放置應用程式檔案和資訊清單的位置。 這可以是檔案路徑或 FTP 伺服器的路徑。  
-  
- 您可以在 [專案設計工具] 的 [發佈] 頁面上，或使用 [發佈精靈] 來指定 `Publish Location` 屬性。 如需詳細資訊，請參閱[＜How to：使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
-  
+# <a name="how-to-specify-where-visual-studio-copies-the-files"></a>How to: Specify where Visual Studio copies the files (如何：指定 Visual Studio 複製檔案的位置)
+當您使用 ClickOnce 發行應用程式時，`Publish Location`屬性會指定放置應用程式檔案和資訊清單的位置。 這可以是檔案路徑或 FTP 伺服器的路徑。
+
+ 您可以在 [專案設計工具] 的 [發佈] 頁面上，或使用 [發佈精靈] 來指定 `Publish Location` 屬性。 如需詳細資訊，請參閱 <<c0> [ 如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+
 > [!NOTE]
->  當您使用 ClickOnce 安裝多個版本的應用程式時，安裝會將舊版應用程式移至您指定之發行位置中名為 Archive 的資料夾。 以這種方式封存先前的版本可將安裝目錄與舊版的資料夾分開。  
-  
-### <a name="to-specify-a-publishing-location"></a>指定發行位置  
-  
-1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
-  
-2. 按一下 [發佈] 索引標籤。  
-  
-3. 在 [發佈位置] 欄位中，使用下列其中一種格式輸入發佈位置：  
-  
-   - 若要發佈至檔案共用或磁碟路徑，請使用 UNC 路徑 (*\\\Server\ApplicationName*) 或檔案路徑 (*C:\Deploy\ApplicationName*) 來輸入路徑。  
-  
-   - 若要發佈至 FTP 伺服器，請使用 <em>ftp://ftp.microsoft.com/\<ApplicationName></em> 格式來輸入路徑。  
-  
-     請注意，文字必須出現在 [發佈位置] 方塊中才能讓 [瀏覽] (**...**) 按鈕運作。  
-  
-## <a name="see-also"></a>另請參閱  
- [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
- [如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+>  當您使用 ClickOnce 安裝多個版本的應用程式時，安裝會將舊版應用程式移至您指定之發行位置中名為 Archive 的資料夾。 以這種方式封存先前的版本可將安裝目錄與舊版的資料夾分開。
+
+### <a name="to-specify-a-publishing-location"></a>指定發行位置
+
+1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。
+
+2. 按一下 [發佈] 索引標籤。
+
+3. 在 [發佈位置] 欄位中，使用下列其中一種格式輸入發佈位置：
+
+   - 若要發佈至檔案共用或磁碟路徑，請使用 UNC 路徑 (*\\\Server\ApplicationName*) 或檔案路徑 (*C:\Deploy\ApplicationName*) 來輸入路徑。
+
+   - 若要發佈至 FTP 伺服器，請使用 <em>ftp://ftp.microsoft.com/\<ApplicationName></em> 格式來輸入路徑。
+
+     請注意，文字必須出現在 [發佈位置] 方塊中才能讓 [瀏覽] (**...**) 按鈕運作。
+
+## <a name="see-also"></a>另請參閱
+- [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)
+- [如何：使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

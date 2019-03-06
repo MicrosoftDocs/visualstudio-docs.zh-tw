@@ -1,5 +1,5 @@
 ---
-title: HOW TO：安裝視覺化檢視 |Microsoft Docs
+title: 如何： 安裝視覺化檢視 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,33 +17,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e2ff65e5d410295e9ce7fa0512588b68ca25e55
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d1a552c07443e4dd38070a86b7d9513d8cfa0136
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965532"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691419"
 ---
-# <a name="how-to-install-a-visualizer"></a>HOW TO：安裝視覺化檢視
-建立視覺化檢視後，您必須安裝該視覺化檢視，使 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以使用它。 安裝視覺化檢視的程序很簡單。  
-  
+# <a name="how-to-install-a-visualizer"></a>如何：安裝視覺化檢視
+建立視覺化檢視後，您必須安裝該視覺化檢視，使 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以使用它。 安裝視覺化檢視的程序很簡單。
+
 > [!NOTE]
->  在 UWP 應用程式，僅限標準的文字，支援 HTML、 XML 及 JSON 視覺化檢視。 不支援自訂 (使用者建立的) 視覺化檢視。  
-  
-### <a name="to-install-a-visualizer"></a>安裝視覺化檢視  
-  
-1.  找出包含您已建置之視覺化檢視的 DLL。  
-  
-2.  將該 DLL 複製至下列其中一個位置：  
-  
-    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`  
-  
-    -   `My Documents\` *VisualStudioVersion* `\Visualizers`  
-  
-3.  如果要使用 Managed 視覺化檢視進行遠端偵錯，請將 DLL 複製到遠端電腦上的相同路徑中。  
-  
-4.  重新啟動偵錯工作階段。  
-  
-## <a name="see-also"></a>請參閱  
- [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
- [如何：撰寫視覺化檢視](/visualstudio/debugger/create-custom-visualizers-of-data)
+>  在 UWP 應用程式，僅限標準的文字，支援 HTML、 XML 及 JSON 視覺化檢視。 不支援自訂 (使用者建立的) 視覺化檢視。
+
+### <a name="to-install-a-visualizer"></a>安裝視覺化檢視
+
+1.  找出包含您已建置之視覺化檢視的 DLL。
+
+2.  將該 DLL 複製至下列其中一個位置：
+
+    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
+
+    -   `My Documents\` *VisualStudioVersion* `\Visualizers`
+
+3.  如果要使用 Managed 視覺化檢視進行遠端偵錯，請將 DLL 複製到遠端電腦上的相同路徑中。
+
+4.  重新啟動偵錯工作階段。
+
+## <a name="see-also"></a>請參閱
+- [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)
+- [如何：撰寫視覺化檢視](/visualstudio/debugger/create-custom-visualizers-of-data)

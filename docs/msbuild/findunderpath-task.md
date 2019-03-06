@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfe88fc7f31f90b6c6d4dd3935d7c40e4cc223c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9c22e2465b79faa68f8789cefeeb181c2e15b73b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853751"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602179"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath 工作
 判斷指定項目集合中哪些項目的路徑位於指定資料夾或其子資料夾中。
@@ -31,7 +31,7 @@ ms.locfileid: "55853751"
 ## <a name="parameters"></a>參數
 下表說明 `FindUnderPath` 工作的參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |`Files`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定其路徑應該與 `Path` 參數所指定的路徑進行比較的檔案。|
 |`InPath`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含指定路徑下找到的項目。|
@@ -73,6 +73,6 @@ ms.locfileid: "55853751"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[工作參考](../msbuild/msbuild-task-reference.md)  
-[工作](../msbuild/msbuild-tasks.md)  
-[MSBuild 概念](../msbuild/msbuild-concepts.md)
+- [工作參考](../msbuild/msbuild-task-reference.md)
+- [工作](../msbuild/msbuild-tasks.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)

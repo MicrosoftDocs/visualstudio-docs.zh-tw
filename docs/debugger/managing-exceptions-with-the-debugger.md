@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a43e42f68b93c358ed5808a6cffc9570fcbef9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918105"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428696"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>使用 Visual Studio 中偵錯工具管理例外狀況
 
@@ -204,7 +204,7 @@ public class GenericException<T> : Exception
 使用**例外狀況設定**視窗來設定條件的例外狀況。 目前支援的條件包括要包含或排除例外狀況的模組名稱。 藉由設定模組名稱做為條件，您可以選擇只在特定的程式碼模組上例外狀況中斷。 您也可以選擇以避免在特定的模組。
 
 > [!NOTE]
-> 將條件加入至例外狀況的新[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
+> 將條件加入至例外狀況從開始支援[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
 
 若要新增條件式的例外狀況：
 
@@ -222,8 +222,8 @@ public class GenericException<T> : Exception
 
 ## <a name="see-also"></a>另請參閱
 
-[於例外狀況之後繼續執行](../debugger/continuing-execution-after-an-exception.md)<br/>
-[如何：在發生例外狀況後檢查系統程式碼](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-[如何：使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[不使用 C 執行階段程式庫進行執行階段檢查](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[偵錯工具簡介](../debugger/debugger-feature-tour.md)
+- [於例外狀況之後繼續執行](../debugger/continuing-execution-after-an-exception.md)<br/>
+- [如何：在發生例外狀況後檢查系統程式碼](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [如何：使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [不使用 C 執行階段程式庫進行執行階段檢查](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+- [偵錯工具簡介](../debugger/debugger-feature-tour.md)

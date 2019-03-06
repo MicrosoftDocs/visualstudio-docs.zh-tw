@@ -3,15 +3,9 @@ layout: HubPage
 hide_bc: true
 title: Visual Studio 文件 | Microsoft Docs
 titleSuffix: ''
-description: 了解如何使用 Visual Studio 2017 以您選擇的語言，為您的平台和裝置開發應用程式、服務及工具。
+description: 了解如何使用 Visual Studio 以您選擇的語言，為您的平台和裝置開發應用程式、服務及工具。
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: 9bcd261ce7d6efbd7fac50352c9dfaa17ed6c41f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316778"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -55,7 +49,7 @@ ms.locfileid: "56316778"
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/whats-new-in-visual-studio">
+                <a href="/visualstudio/ide/whats-new-visual-studio-2017">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -65,7 +59,7 @@ ms.locfileid: "56316778"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Visual Studio 2017 的新功能</h3>
+                                    <h3>Visual Studio 的新功能</h3>
                                 </div>
                             </div>
                         </div>
@@ -586,7 +580,7 @@ Unity 遊戲</a>
                                             <div class="cardText">
                                                 <a href="/visualstudio/rtvs/">
                                                     <h3>R</h3>
-                                                    <p>可延伸的程式設計語言，一般用於統計資料運算和圖形。</p>
+                                                    <p>(僅限 Visual Studio 2017) 可延伸的程式設計語言，一般用於統計資料運算和圖形。</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -705,7 +699,7 @@ Unity 遊戲</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
+                                <a href="python/data-science-and-analytical-applications-workload.md">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
@@ -716,7 +710,7 @@ Unity 遊戲</a>
                                         </div>
                                           <div class="cardText">
                                             <h3>資料科學和分析應用程式</h3>
-                                            <p>用於建立資料科學應用程式的語言與工具，包括 Python、R 及 F#。</p>
+                                            <p>用於建立資料科學應用程式的語言與工具，包括 Python 與 F# (以及僅限於 Visual Studio 2017 中的 R)。</p>
                                         </div>
                                       </div>
                                     </div>

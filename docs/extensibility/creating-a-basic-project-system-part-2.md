@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3650f59f4ad9fe690064d9972b3280bf5bbd15d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318481"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681305"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>建立基本專案系統，第 2 部分
 在此系列中，第一個逐步解說[建立基本專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)，示範如何建立基本的專案系統。 本逐步解說建立基本專案系統上加上 Visual Studio 範本、 屬性頁和其他功能。 您必須先完成第一個逐步解說，才能啟動它。
@@ -40,7 +40,7 @@ ms.locfileid: "56318481"
 > 在本逐步解說的步驟是以 C# 專案為基礎。 不過，除了例如副檔名的檔案和程式碼的詳細資訊，您可以使用相同的步驟針對 Visual Basic 專案。
 
 ## <a name="create-a-visual-studio-template"></a>建立 Visual Studio 範本
-[建立基本專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)示範如何建立基本的專案範本，並將它新增至專案系統。 它也會示範如何使用 Visual Studio 中註冊此範本，使用<xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute>屬性，其會將寫入的完整路徑*\\Templates\Projects\SimpleProject\\*系統中的資料夾登錄中。
+- [建立基本專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)示範如何建立基本的專案範本，並將它新增至專案系統。 它也會示範如何使用 Visual Studio 中註冊此範本，使用<xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute>屬性，其會將寫入的完整路徑*\\Templates\Projects\SimpleProject\\*系統中的資料夾登錄中。
 
 使用 Visual Studio 範本 (*.vstemplate*檔案) 而不是基本的專案範本，您可以控制的範本顯示於**新的專案** 對話方塊中，以及範本參數取代。 A *.vstemplate*檔案是 XML 檔案，描述使用專案系統範本建立專案時要包含的原始程式檔的方式。 專案系統本身是藉由收集 *.vstemplate*檔案和原始程式檔中的 *.zip*檔案，並藉由複製部署 *.zip*檔案的位置Visual studio 的已知。 更多詳細資料，在此逐步解說稍後會說明此程序。
 
@@ -271,7 +271,7 @@ Visual Studio 範本不包含路徑資訊。 因此，範本 *.zip*檔案必須�
     ![簡單專案主控台節點](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")
 
 ## <a name="substitute-project-template-parameters"></a>替代的專案範本參數
-[建立基本的專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)示範如何覆寫`ProjectNode.AddFileFromTemplate`方法來執行基本的一種範本參數替代。 本章節將說明如何使用更複雜的 Visual Studio 範本參數。
+- [建立基本的專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)示範如何覆寫`ProjectNode.AddFileFromTemplate`方法來執行基本的一種範本參數替代。 本章節將說明如何使用更複雜的 Visual Studio 範本參數。
 
 當您使用 Visual Studio 範本中的，會在建立專案時**新的專案** 對話方塊中，若要自訂專案範本會以取代參數字串。 樣板參數是一種特殊的權杖，開頭和結尾貨幣符號，例如 $time$。 下列兩個參數是啟用自訂範本為基礎的專案中特別有用：
 

@@ -5,15 +5,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: e8b3f7a12b13c931513962a10d1eb5fcd4344174
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b537d80b8db9150c6804aff2ee3de0e6c879bb9
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786105"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840587"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>在 Visual Studio 中從範本建立 AI 專案
 

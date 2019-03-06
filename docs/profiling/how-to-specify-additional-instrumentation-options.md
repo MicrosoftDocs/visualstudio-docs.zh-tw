@@ -1,5 +1,5 @@
 ---
-title: HOW TO：指定其他的檢測選項 | Microsoft Docs
+title: 作法：指定其他的檢測選項 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e93a249572c34d801426b9919a274aa133639a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c95add435824663e798d226e0be11ddbe06b8aba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963719"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618675"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>HOW TO：指定其他的檢測選項
+# <a name="how-to-specify-additional-instrumentation-options"></a>作法：指定其他的檢測選項
 
 您可以使用 Visual Studio IDE 或使用命令列工具來檢測二進位檔。 如果是從 IDE 中檢測二進位檔，您可以為 [VSInstr](../profiling/vsinstr.md) 工具指定其他的檢測選項，藉以控制檢測期間所收集的資料量。 這些選項可以在工作階段或目標層級中使用。 例如，若要在檢測程序期間包含或排除特定函式，請在目標層級使用其他的檢測選項。
 
@@ -41,5 +41,5 @@ ms.locfileid: "54963719"
 
 ## <a name="see-also"></a>另請參閱
 
-[設定效能工作階段](../profiling/configuring-performance-sessions.md)  
+[設定效能工作階段](../profiling/configuring-performance-sessions.md)
 [從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

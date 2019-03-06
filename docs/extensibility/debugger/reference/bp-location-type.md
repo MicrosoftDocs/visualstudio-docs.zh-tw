@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_TYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 781aa55f26fbd332b901dacdb3b4ac12d85579cf
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1695c61a829cf1439ed773e48088430f36f8c653
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318507"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715657"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 指定中斷點要求的中斷點位置類型。
@@ -66,50 +66,35 @@ public enum enum_BP_LOCATION_TYPE {
 ```
 
 ## <a name="members"></a>成員
-BPLT_NONE  
-不指定任何中斷點的位置。
+BPLT_NONE 指定任何中斷點的位置。
 
-BPLT_FILE_LINE  
-指定中斷點的位置類型為的檔案。
+BPLT_FILE_LINE 指定中斷點的位置類型為的檔案。
 
-BPLT_FUNC_OFFSET  
-指定中斷點的位置類型當作函式位移。
+BPLT_FUNC_OFFSET 指定中斷點的位置類型當作函式位移。
 
-BPLT_CONTEXT  
-指定中斷點的位置類型做為內容。
+BPLT_CONTEXT 做為內容指定中斷點的位置類型。
 
-BPLT_STRING  
-指定中斷點的位置類型為字串。
+BPLT_STRING 指定中斷點的位置類型為字串。
 
-BPLT_ADDRESS  
-指定中斷點的位置類型為位址。
+BPLT_ADDRESS 會指定為位址中斷點的位置類型。
 
-BPLT_RESOLUTION  
-指定中斷點的位置類型做為解析度。
+BPLT_RESOLUTION 解析為指定中斷點位置的類型。
 
-BPLT_CODE_FILE_LINE  
-指定中斷點的位置類型做為來源的程式碼行。
+BPLT_CODE_FILE_LINE 會指定為來源的程式碼行中斷點的位置類型。
 
-BPLT_CODE_FUNC_OFFSET  
-指定中斷點的位置類型的程式碼的函式位移。
+BPLT_CODE_FUNC_OFFSET 指定中斷點的位置類型的程式碼的函式位移。
 
-BPLT_CODE_CONTEXT  
-指定中斷點的位置類型做為程式碼內容。
+BPLT_CODE_CONTEXT 指定中斷點的位置類型做為程式碼內容。
 
-BPLT_CODE_STRING  
-為程式碼字串中指定中斷點位置的類型。
+BPLT_CODE_STRING 指定中斷點的位置類型做為程式碼的字串。
 
-BPLT_CODE_ADDRESS  
-為程式碼位址中指定中斷點位置的類型。
+BPLT_CODE_ADDRESS 指定中斷點的位置類型做為程式碼位址。
 
-BPLT_DATA_STRING  
-指定中斷點的位置類型做為資料字串。
+BPLT_DATA_STRING 指定中斷點的位置類型做為資料字串。
 
-BPLT_TYPE_MASK  
-指定位元遮罩，如此中斷點類型可擷取出的值。
+BPLT_TYPE_MASK 指定位元遮罩，如此中斷點類型可擷取出的值。
 
-BPLT_LOCATION_TYPE_MASK  
-指定位元遮罩，如此中斷點位置類型可以擷取出的值。
+BPLT_LOCATION_TYPE_MASK 指定位元遮罩，如此中斷點位置類型可以擷取出的值。
 
 ## <a name="remarks"></a>備註
 做為參數傳遞[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)方法。
@@ -126,6 +111,6 @@ BPLT_LOCATION_TYPE_MASK
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)  
-[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
+- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)
+- [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

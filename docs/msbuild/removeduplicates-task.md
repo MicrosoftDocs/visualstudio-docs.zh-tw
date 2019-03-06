@@ -18,78 +18,78 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9e732d55858b713d73cbf1ba4f325f40560503
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 027e1f4894660b0198ed8a6df862e66e41cde409
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987371"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642920"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates 工作
-從指定的項目集合中移除重複項目。  
-  
-## <a name="parameters"></a>參數  
- 下表說明 `RemoveDuplicates` 工作的參數。  
-  
-|參數|說明|  
-|---------------|-----------------|  
-|`Filtered`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含已移除所有重複項目的項目集合。 系統會保存輸入項目的順序，保留每個重複項目的第一個執行個體。|  
-|`Inputs`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要從中移除重複項目的項目集合。|  
-  
-## <a name="remarks"></a>備註  
- 此工作不區分大小寫，而且在判斷重複項目時不會比較項目中繼資料。  
-  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
-  
-## <a name="example"></a>範例  
- 下列範例使用 `RemoveDuplicates` 工作，以從 `MyItems` 項目集合中移除重複項目。 工作完成時，`FilteredItems` 項目集合會包含一個項目。  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MyItems Include="MyFile.cs"/>  
-        <MyItems Include="MyFile.cs">  
-            <Culture>fr</Culture>  
-        </MyItems>  
-        <MyItems Include="myfile.cs"/>  
-    </ItemGroup>  
-  
-    <Target Name="RemoveDuplicateItems">  
-        <RemoveDuplicates  
-            Inputs="@(MyItems)">  
-            <Output  
-                TaskParameter="Filtered"  
-                ItemName="FilteredItems"/>  
-        </RemoveDuplicates>  
-    </Target>  
-</Project>  
-```  
+從指定的項目集合中移除重複項目。
 
- 下列範例顯示 `RemoveDuplicates` 工作會保留其輸入順序。 當工作完成時，`FilteredItems` 項目集合會以該順序包含 *MyFile2.cs*、*MyFile1.cs* 和 *MyFile3.cs* 項目。  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MyItems Include="MyFile2.cs"/>  
-        <MyItems Include="MyFile1.cs" />  
-        <MyItems Include="MyFile3.cs" />  
-        <MyItems Include="myfile1.cs"/>  
-    </ItemGroup>  
-  
-    <Target Name="RemoveDuplicateItems">  
-        <RemoveDuplicates  
-            Inputs="@(MyItems)">  
-            <Output  
-                TaskParameter="Filtered"  
-                ItemName="FilteredItems"/>  
-        </RemoveDuplicates>  
-    </Target>  
-</Project>  
-```  
+## <a name="parameters"></a>參數
+ 下表說明 `RemoveDuplicates` 工作的參數。
 
-## <a name="see-also"></a>另請參閱  
- [工作參考](../msbuild/msbuild-task-reference.md)   
- [MSBuild 概念](../msbuild/msbuild-concepts.md)   
- [工作](../msbuild/msbuild-tasks.md)
+|參數|說明|
+|---------------|-----------------|
+|`Filtered`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含已移除所有重複項目的項目集合。 系統會保存輸入項目的順序，保留每個重複項目的第一個執行個體。|
+|`Inputs`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要從中移除重複項目的項目集合。|
+
+## <a name="remarks"></a>備註
+ 此工作不區分大小寫，而且在判斷重複項目時不會比較項目中繼資料。
+
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
+
+## <a name="example"></a>範例
+ 下列範例使用 `RemoveDuplicates` 工作，以從 `MyItems` 項目集合中移除重複項目。 工作完成時，`FilteredItems` 項目集合會包含一個項目。
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MyItems Include="MyFile.cs"/>
+        <MyItems Include="MyFile.cs">
+            <Culture>fr</Culture>
+        </MyItems>
+        <MyItems Include="myfile.cs"/>
+    </ItemGroup>
+
+    <Target Name="RemoveDuplicateItems">
+        <RemoveDuplicates
+            Inputs="@(MyItems)">
+            <Output
+                TaskParameter="Filtered"
+                ItemName="FilteredItems"/>
+        </RemoveDuplicates>
+    </Target>
+</Project>
+```
+
+ 下列範例顯示 `RemoveDuplicates` 工作會保留其輸入順序。 當工作完成時，`FilteredItems` 項目集合會以該順序包含 *MyFile2.cs*、*MyFile1.cs* 和 *MyFile3.cs* 項目。
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MyItems Include="MyFile2.cs"/>
+        <MyItems Include="MyFile1.cs" />
+        <MyItems Include="MyFile3.cs" />
+        <MyItems Include="myfile1.cs"/>
+    </ItemGroup>
+
+    <Target Name="RemoveDuplicateItems">
+        <RemoveDuplicates
+            Inputs="@(MyItems)">
+            <Output
+                TaskParameter="Filtered"
+                ItemName="FilteredItems"/>
+        </RemoveDuplicates>
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>另請參閱
+- [工作參考](../msbuild/msbuild-task-reference.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)
+- [工作](../msbuild/msbuild-tasks.md)

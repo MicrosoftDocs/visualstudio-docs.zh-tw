@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8540a3aef4460ec022c3da8d69da44d14863d7e1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 96ce674e9bfc15913c8b7c142ee36780bf74c7ea
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068663"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641984"
 ---
 # <a name="idiaenumsymbolsreset"></a>IDiaEnumSymbols::Reset
-將列舉型別序列重設到開頭。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT Reset ();  
-```  
-  
-## <a name="return-value"></a>傳回值  
- 傳回 `S_OK`。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+將列舉型別序列重設到開頭。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT Reset ();
+```
+
+## <a name="return-value"></a>傳回值
+ 傳回 `S_OK`。
+
+## <a name="see-also"></a>請參閱
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

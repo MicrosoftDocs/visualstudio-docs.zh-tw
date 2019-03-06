@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39d3385b56e35018093ceaaf26472d425847b100
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd5bfc24fcf1cd8a465bafe1e5bcf6c4df61308c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947397"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722287"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>逐步解說：建立檢視裝飾、 命令和設定 （分欄輔助線）
 您可以擴充 Visual Studio 文字/程式碼編輯器與命令和檢視效果。 這篇文章會示範如何開始使用熱門的擴充功能，分欄輔助線。 分欄輔助線是以視覺化方式淺色可協助您管理您的程式碼，以特定的資料行寬度的文字編輯器的檢視上所繪製的線條。 具體來說，格式化程式碼可以是很重要的範例包含在文件，部落格文章，或錯誤報告。
@@ -24,10 +24,10 @@ ms.locfileid: "54947397"
 - 新增對儲存和取得設定 （其中繪製分欄輔助線和色彩） 的支援
 - 新增命令 （新增/移除資料行的輔助線，變更其色彩）
 - 將命令放在 [編輯] 功能表和文字文件內容功能表
-- 新增支援叫用的命令，從 Visual Studio 命令視窗  
-  
-  您可以試試看這個 Visual Studio 組件庫的資料行指南功能的版本[延伸模組](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)。  
-  
+- 新增支援叫用的命令，從 Visual Studio 命令視窗
+
+  您可以試試看這個 Visual Studio 組件庫的資料行指南功能的版本[延伸模組](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)。
+
   **注意**：在本逐步解說中，您需要將大量的程式碼貼到 Visual Studio 擴充功能範本所產生的一些檔案上。 但是，很快就本逐步解說會參考 GitHub 上與其他延伸模組範例已完成的方案。 已完成的程式碼會稍微不同，在於它有實際的命令圖示，而不是使用 generictemplate 圖示。
 
 ## <a name="get-started"></a>開始使用
@@ -38,14 +38,14 @@ ms.locfileid: "54947397"
 - 您有建立文字檢視建立接聽程式`ColumnGuideAdornment`每個檢視的物件。 這個物件接聽檢視變更的相關事件或變更的設定，視引導更新或重新繪製的資料行。
 - 沒有`GuidesSettingsManager`可處理從 Visual Studio 設定儲存體讀取和寫入。 Settings manager 也有更新的設定，以支援使用者命令的作業 （加入資料行、 移除資料行、 變更色彩）。
 - VSIP 封裝所需，如果您有使用者命令，但它是只將命令實作物件初始化未定案程式碼。
-- 沒有`ColumnGuideCommands`所執行的使用者物件的命令和命令中所宣告的連結命令處理常式 *.vsct*檔案。  
-  
-  **VSIX**。 使用**檔案&#124;新的...** 命令來建立專案。 選擇**擴充性**下方的節點**C#** 左側的導覽窗格中，然後選擇  **VSIX 專案**右窗格中。 輸入名稱**ColumnGuides** ，然後選擇**確定**建立專案。  
-  
-  **檢視裝飾**。 在 [方案總管] 中的專案節點上，請按右指標按鈕。 選擇**新增&#124;新項目...** 命令，以加入新的檢視裝飾項目。 選擇**擴充性&#124;編輯器**左側的導覽窗格中，然後選擇 **編輯器檢視區 Adornment**右窗格中。 輸入名稱**ColumnGuideAdornment**作為項目名稱，然後選擇**新增**將它加入。  
-  
-  您可以看到這個項目範本加入至專案 （以及參考等等） 的兩個檔案：**ColumnGuideAdornment.cs**並**ColumnGuideAdornmentTextViewCreationListener.cs**。 範本會繪製在檢視上紫色的矩形。 在下列區段中，方法，您可以變更檢視建立接聽程式中的行數，並取代的內容**ColumnGuideAdornment.cs**。  
-  
+- 沒有`ColumnGuideCommands`所執行的使用者物件的命令和命令中所宣告的連結命令處理常式 *.vsct*檔案。
+
+  **VSIX**。 使用**檔案&#124;新的...** 命令來建立專案。 選擇**擴充性**下方的節點**C#** 左側的導覽窗格中，然後選擇  **VSIX 專案**右窗格中。 輸入名稱**ColumnGuides** ，然後選擇**確定**建立專案。
+
+  **檢視裝飾**。 在 [方案總管] 中的專案節點上，請按右指標按鈕。 選擇**新增&#124;新項目...** 命令，以加入新的檢視裝飾項目。 選擇**擴充性&#124;編輯器**左側的導覽窗格中，然後選擇 **編輯器檢視區 Adornment**右窗格中。 輸入名稱**ColumnGuideAdornment**作為項目名稱，然後選擇**新增**將它加入。
+
+  您可以看到這個項目範本加入至專案 （以及參考等等） 的兩個檔案：**ColumnGuideAdornment.cs**並**ColumnGuideAdornmentTextViewCreationListener.cs**。 範本會繪製在檢視上紫色的矩形。 在下列區段中，方法，您可以變更檢視建立接聽程式中的行數，並取代的內容**ColumnGuideAdornment.cs**。
+
   **命令**。 在 [**方案總管] 中**，按右指標按鈕，在專案節點上。 選擇**新增&#124;新項目...** 命令，以加入新的檢視裝飾項目。 選擇**擴充性&#124;VSPackage**左側的導覽窗格中，然後選擇 **自訂命令**右窗格中。 輸入名稱**ColumnGuideCommands**當做項目名稱，然後選擇**新增**。 數個參考，除了新增的命令和封裝也加入**ColumnGuideCommands.cs**， **ColumnGuideCommandsPackage.cs**，和**ColumnGuideCommandsPackage.vsct**. 在下一節中，您會取代定義並實作命令的第一個和最後一個檔案的內容。
 
 ## <a name="set-up-the-text-view-creation-listener"></a>設定文字檢視建立接聽程式
@@ -370,7 +370,7 @@ namespace ColumnGuides
         /// <summary>
         /// Creates editor column guidelines
         /// </summary>
-        /// <param name="view">The <see cref="IWpfTextView"/> upon 
+        /// <param name="view">The <see cref="IWpfTextView"/> upon
         /// which the adornment will be drawn</param>
         public ColumnGuideAdornment(IWpfTextView view)
         {
@@ -378,7 +378,7 @@ namespace ColumnGuides
             _guidelines = CreateGuidelines();
             GuidesSettingsManager.SettingsChanged +=
                 new GuidesSettingsManager.SettingsChangedHandler(SettingsChanged);
-            view.LayoutChanged += 
+            view.LayoutChanged +=
                 new EventHandler<TextViewLayoutChangedEventArgs>(OnViewLayoutChanged);
             _view.Closed += new EventHandler(OnViewClosed);
         }
@@ -466,7 +466,7 @@ namespace ColumnGuides
 
         void AddGuidelinesToAdornmentLayer()
         {
-            // Grab a reference to the adornment layer that this adornment 
+            // Grab a reference to the adornment layer that this adornment
             // should be added to
             // Must match exported name in ColumnGuideAdornmentTextViewCreationListener
             IAdornmentLayer adornmentLayer =
@@ -710,7 +710,7 @@ namespace ColumnGuides
                 value="{e914e5de-0851-4904-b361-1a3a9d449704}" />
 
     <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidColumnGuidesCommandSet" 
+    <GuidSymbol name="guidColumnGuidesCommandSet"
                 value="{c2bc0047-8bfa-4e5a-b5dc-45af8c274d8e}">
       <IDSymbol name="GuidesContextMenuGroup" value="0x1020" />
       <IDSymbol name="GuidesMenuItemsGroup" value="0x1021" />
@@ -843,7 +843,7 @@ namespace ColumnGuides
         /// <summary>
         /// Command menu group (command set GUID).
         /// </summary>
-        static readonly Guid CommandSet = 
+        static readonly Guid CommandSet =
             new Guid("c2bc0047-8bfa-4e5a-b5dc-45af8c274d8e");
 
         /// <summary>
@@ -1143,7 +1143,7 @@ namespace ColumnGuides
                                                              color.B);
                 if (picker.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    GuidesSettingsManager.GuidelinesColor = 
+                    GuidesSettingsManager.GuidelinesColor =
                         System.Windows.Media.Color.FromRgb(picker.Color.R,
                                                            picker.Color.G,
                                                            picker.Color.B);
@@ -1204,7 +1204,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```csharp
    IVsMonitorSelection selection =
-       this.ServiceProvider.GetService(typeof(IVsMonitorSelection)) 
+       this.ServiceProvider.GetService(typeof(IVsMonitorSelection))
            as IVsMonitorSelection;
    object frameObj = null;
 
@@ -1339,9 +1339,9 @@ private int GetApplicableColumn(EventArgs e)
 您可以試試看這個 Visual Studio 組件庫的資料行指南功能的版本[延伸模組](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)。
 
 ## <a name="see-also"></a>另請參閱
-[在編輯器內](../extensibility/inside-the-editor.md)
-[編輯器和語言服務延伸](../extensibility/extending-the-editor-and-language-services.md) 
-[語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md) 
- [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)
-[加入至功能表的子功能表](../extensibility/adding-a-submenu-to-a-menu.md)
-[使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [在編輯器內](../extensibility/inside-the-editor.md)
+- [編輯器和語言服務延伸](../extensibility/extending-the-editor-and-language-services.md)
+- [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)
+- [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)
+- [將子功能表加入至功能表](../extensibility/adding-a-submenu-to-a-menu.md)
+- [使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)

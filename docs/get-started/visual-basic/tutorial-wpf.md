@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0eb1f0e404bf6815bc26e3c1a14aeff79cde40e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b6dc096eebde5c47bfa74214b24b91a05511894d
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945376"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56800554"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教學課程：使用 Visual Basic 建立簡單的應用程式
 
@@ -32,9 +32,19 @@ ms.locfileid: "55945376"
 
 ![選擇設定對話方塊](../media/exploreide-settings.png)
 
+::: moniker range="vs-2017"
+
 Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以及主視窗空間。 工具視窗會停駐在應用程式視窗的左右端，同時 [ **快速啟動**]、功能表列和標準工具列則位於視窗的上方。 位於應用程式視窗中央的是 [ **起始頁**]。 當您載入方案或專案時，編輯器和設計工具會出現在 [起始頁]  所在的空間中。 在開發應用程式時，您大部分時間都會在此中央區域工作。
 
-![已套用一般設定的 IDE](../media/exploreide-idewithgeneralsettings.png)
+![已套用一般設定的 Visual Studio 2017 IDE](../media/exploreide-idewithgeneralsettings.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+當您啟動 Visual Studio，[啟動] 視窗會先開啟。 選取 [繼續但不使用程式碼] 來開啟開發環境。 您會看到工具視窗、功能表和工具列，以及主視窗空間。 工具視窗會停駐在應用程式視窗的左右端，同時 [ **快速啟動**]、功能表列和標準工具列則位於視窗的上方。 當您載入方案或專案時，編輯器和設計工具會出現在應用程式視窗的中央區域。 在開發應用程式時，您大部分時間都會在此中央區域工作。
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>建立專案
 

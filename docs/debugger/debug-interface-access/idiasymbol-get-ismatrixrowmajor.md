@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c532f38fcdcd5a41cfa188c0dc175a8293548442
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 146ef53f8a5d893e394834c7d5702c8992fdd20a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927089"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611005"
 ---
 # <a name="idiasymbolgetismatrixrowmajor"></a>IDiaSymbol::get_isMatrixRowMajor
-指定矩陣是否為主要的資料列。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_isMatrixRowMajor(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pRetVal`  
- [out]指標`BOOL`，指定矩陣是否為主要的資料列。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+指定矩陣是否為主要的資料列。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_isMatrixRowMajor(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>參數
+ `pRetVal`
+
+[out]指標`BOOL`，指定矩陣是否為主要的資料列。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。
+
+## <a name="see-also"></a>請參閱
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

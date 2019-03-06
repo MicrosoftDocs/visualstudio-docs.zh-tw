@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 82231756568c8b8139443a168ed22c28528c385c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: adcc5ce422cdd06e641408b3506fb751a4c730d1
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920012"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840879"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Visual Studio R 工具範例專案
 
@@ -65,7 +65,7 @@ ms.locfileid: "55920012"
 
 ## <a name="whats-special-about-microsoft-r-open-and-microsoft-ml-server"></a>Microsoft R Open 與 Microsoft Machine Learning Server 有什麼特別之處？
 
-[Microsoft R Open](http://aka.ms/rtvs-r-open)，是 Microsoft 的 R 發行版本，它與 [CRAN R](https://cran.r-project.org/) 的不同有兩個重要的方面︰
+[Microsoft R Open](https://aka.ms/rtvs-r-open)，是 Microsoft 的 R 發行版本，它與 [CRAN R](https://cran.r-project.org/) 的不同有兩個重要的方面︰
 
 1. 搭配 [Intel Math Kernel Library](https://software.intel.com/intel-mkl) (Intel 數學核心程式庫) 使用時[計算效能較高](https://mran.revolutionanalytics.com/rro/#intelmkl1)。 程式庫可以從 Microsoft 免費下載，以便搭配 Microsoft R Open 使用。
 
@@ -81,7 +81,7 @@ ms.locfileid: "55920012"
 
 ![比較 MLS 和使用 MKL 的 MRO，以及 R 和沒有 MKL 的 MRO](media/samples-speed-comparison.png)
 
-如需 R 與 MRO 和 MLS 的技術比較，請參閱 [Lixun Zhang 關於這主題的詳細討論](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html)。
+如需 R 與 MRO 和 MLS 的技術比較，請參閱 [Lixun Zhang 關於這主題的詳細討論](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html)。
 
 然後，下圖比較建立使用羅吉斯迴歸模型來預測航班延遲超過 15 分鐘時，耗用的時間 (以秒為單位)。  當增加少量的資料列時，CRAN R 中使用的已耗用時間會大幅增加，而 MLS 則只增加大約兩倍。 如需此基準測試的詳細資料，請參閱 *Benchmarks/rxGlm_benchmark.R* 範例。
 

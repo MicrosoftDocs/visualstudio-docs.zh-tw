@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f5f9b7e700ff21bac570cf8545207bb75fda820e
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335593"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428735"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>偵錯即時 ASP.NET Azure 應用程式使用快照集偵錯工具
 
@@ -50,7 +50,7 @@ ms.locfileid: "56335593"
 
     > [!IMPORTANT]
     > 快照集偵錯，您需要開啟*相同版本的原始程式碼*發行至 Azure App Service。
-::: moniker range="< vs-2019"
+::: moniker range="vs-2019"
 
 2. 在 [雲端總管] (**檢視 > Cloud Explorer**)，以滑鼠右鍵按一下您的專案部署至 Azure App Service，然後選取**附加快照偵錯工具**。
 
@@ -63,7 +63,7 @@ ms.locfileid: "56335593"
 2. 附加快照偵錯工具。 您可以使用數種不同的方法之一：
 
     * 選擇**偵錯 > 附加快照偵錯工具...**.選取您的專案部署至 Azure App Service 和 Azure 儲存體帳戶，然後再按一下**附加**。
-  
+
       ![啟動快照集偵錯工具偵錯 功能表](../debugger/media/snapshot-debug-menu-attach.png)
 
     * 以滑鼠右鍵按一下專案，然後選取**發佈**，然後在發佈頁面上，按一下**附加快照偵錯工具**。 選取您的專案部署至 Azure App Service 和 Azure 儲存體帳戶，然後再按一下**附加**。
@@ -73,7 +73,7 @@ ms.locfileid: "56335593"
     ![啟動快照集偵錯工具，從 [F5] 下拉式清單功能表](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * 使用 [雲端總管] (**檢視 > Cloud Explorer**)，以滑鼠右鍵按一下您的專案部署至 Azure App Service 和選取 Azure 儲存體帳戶，然後按一下**附加快照偵錯工具**。
-  
+
       ![啟動快照集偵錯工具，從 [雲端總管]](../debugger/media/snapshot-launch.png)
 
     您選取的第一次**附加快照偵錯工具**，系統會提示您在 Azure App Service 上安裝快照偵錯工具網站延伸模組。 此安裝需要重新啟動您的 Azure App Service。

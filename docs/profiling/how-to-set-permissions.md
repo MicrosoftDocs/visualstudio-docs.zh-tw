@@ -1,5 +1,5 @@
 ---
-title: HOW TO：設定權限 | Microsoft Docs
+title: 作法：設定權限 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fb0887802d6995e790ec0e61629b478b7b26ccc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e40438b6b14414371adaba6cb7eafc6377ae1187
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042513"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620820"
 ---
 # <a name="how-to-set-permissions"></a>HOW TO：設定權限
 
@@ -121,6 +121,6 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
 
 ## <a name="see-also"></a>另請參閱
 
-[設定效能工作階段](../profiling/configuring-performance-sessions.md)  
-[VSPerfCmd](../profiling/vsperfcmd.md)  
+[設定效能工作階段](../profiling/configuring-performance-sessions.md)
+[VSPerfCmd](../profiling/vsperfcmd.md)
 [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)

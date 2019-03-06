@@ -9,16 +9,16 @@ helpviewer_keywords:
 author: poppastring
 ms.author: madownie
 manager: andster
-monikerRange: vs-2019
+monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b3bbffc0ae04fa9a91739a14ce4b0b4d85215ea8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 21142ada9b8a922e5a66a673eae1059a845f6231
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335973"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007289"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>偵錯快照集偵錯工具使用即時的 ASP.NET Azure Kubernetes 服務
 
@@ -57,7 +57,7 @@ ms.locfileid: "56335973"
 1. 附加快照偵錯工具。 您可以使用數種不同的方法之一：
 
     * 選擇**偵錯 > 附加快照偵錯工具...**.選取您的 web 應用程式部署到 AKS 資源和 Azure 儲存體帳戶，然後再按一下**附加**。
-  
+
       ![啟動快照集偵錯工具偵錯 功能表](../debugger/media/snapshot-debug-menu-attach.png)
 
     * 以滑鼠右鍵按一下專案，然後選取**發佈**，然後在發佈頁面上，按一下**附加快照偵錯工具**。 選取您的 web 應用程式部署到 AKS 資源和 Azure 儲存體帳戶，然後再按一下**附加**。
@@ -67,7 +67,7 @@ ms.locfileid: "56335973"
     ![啟動快照集偵錯工具，從 [F5] 下拉式清單功能表](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * 使用 [雲端總管] (**檢視 > Cloud Explorer**)，您的 web 應用程式部署到 AKS 資源和 Azure 儲存體帳戶，以滑鼠右鍵按一下，然後按一下**附加快照偵錯工具**。
-  
+
       ![啟動快照集偵錯工具，從 [雲端總管]](../debugger/media/snapshot-launch.png)
 
     > [!NOTE]

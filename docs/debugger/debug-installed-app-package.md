@@ -1,6 +1,6 @@
 ---
 title: 偵錯已安裝的 UWP 應用程式套件 |Microsoft Docs
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/07/2018
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 84d2296a467bb1fc2c3e1466b715578c94c7d0d8
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 10e10b512dc8deb63db7ade2075347d9e6405b6b
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317926"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428709"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>偵錯在 Visual Studio 中的已安裝的 UWP 應用程式套件
 
@@ -33,7 +33,7 @@ Visual Studio 可以偵錯已安裝的 Windows 10 電腦和 Xbox、 HoloLens、 
 
 >[!NOTE]
 >在手機上不支援 visual Studio 偵錯已安裝的 UWP 應用程式。
-   
+
 如需偵錯 UWP 應用程式的詳細資訊，請參閱部落格文章[偵錯已安裝的應用程式套件](https://devblogs.microsoft.com/devops/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/)並[建置通用 Windows App (UWP)](https://devblogs.microsoft.com/visualstudio/universal-windows-apps-targeting-windows-10-anniversary-sdk/)。
 
 ## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>偵錯在本機電腦上的已安裝的 UWP 應用程式

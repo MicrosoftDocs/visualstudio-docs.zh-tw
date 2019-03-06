@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4889c0d9c7342652063633e11c82e7e8eb6d2c6
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853699"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603227"
 ---
-# <a name="how-to-configure-targets-and-tasks"></a>HOW TO：設定目標和工作
+# <a name="how-to-configure-targets-and-tasks"></a>作法：設定目標和工作
 不論開發電腦的環境是哪一種，您都可以將選取的 MSBuild 工作設定為在所針對的環境中執行。 例如，當您使用 64 位元電腦來建置以 32 位元架構為目標的應用程式時，就會在 32 位元處理程序中執行選取的工作。
 
 > [!NOTE]
@@ -108,4 +108,4 @@ MSBuild 會在執行工作之前，先檢查看看它是否是指定為在目前
 > 工作參數是在父節點的內容中評估，不是工作主機的內容。 執行階段或架構相依的環境變數 (例如「程式檔案」位置) 將評估為符合父節點的值。 不過，如果工作直接讀取相同的環境變數，它會正確地在工作主機的內容中進行評估。
 
 ## <a name="see-also"></a>另請參閱
-[設定目標和工作](../msbuild/configuring-targets-and-tasks.md)
+- [設定目標和工作](../msbuild/configuring-targets-and-tasks.md)

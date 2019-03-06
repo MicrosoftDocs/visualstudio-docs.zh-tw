@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e95c89633c047a0a56a1efed5aba46e6632da7cc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c87fc29b24b3c5ab4bd59d9cca25113f82895ff4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983426"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631259"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 部署中的安全性、版本控制和資訊清單問題
 
@@ -96,6 +96,6 @@ ms.locfileid: "54983426"
 
 ## <a name="see-also"></a>另請參閱
 
-[針對 ClickOnce 部署進行疑難排解](../deployment/troubleshooting-clickonce-deployments.md)  
-[Securw ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)  
+[疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)
+[Securw ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)
 [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)

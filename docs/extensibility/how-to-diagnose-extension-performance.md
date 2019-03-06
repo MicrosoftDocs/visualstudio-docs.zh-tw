@@ -8,12 +8,12 @@ ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 94a4febb30e2c476230bd038c014a1d4604a89d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2d9337b443fdaabe713f1708b2be9051c2f02b3c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955228"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707064"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>測量的延伸模組影響啟動
 

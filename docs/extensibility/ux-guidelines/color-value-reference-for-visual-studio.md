@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 9807f37925620b3672c3fcb9319913194d09d6ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016235"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428826"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio 的色彩值參考
 
-本主題是建立新的色彩語彙基元的參考。 當您建立新的 UI 時，您可以使用現有的 UI 中的類似色彩選擇針對每個主要的佈景主題色彩和高對比佈景主題用於該元素的系統色彩名稱。 
+本主題是建立新的色彩語彙基元的參考。 當您建立新的 UI 時，您可以使用現有的 UI 中的類似色彩選擇針對每個主要的佈景主題色彩和高對比佈景主題用於該元素的系統色彩名稱。
 
 如需有關建立新的色彩語彙基元的實作資訊，請參閱[色彩佈景主題工具](../../extensibility/internals/color-theming-tools.md)。
 
@@ -26,11 +26,11 @@ ms.locfileid: "55016235"
 
 當使用此參考指南，請記住：
 
--   **一律在一起複製前景和背景的色調。** 不要從一個 UI 項目和從另一個背景選擇前景，只因為您喜歡的色調。  
+-   **一律在一起複製前景和背景的色調。** 不要從一個 UI 項目和從另一個背景選擇前景，只因為您喜歡的色調。
 
 -   **這些是十六進位碼，而不是色彩語彙基元。** 由於您無法控制如何權杖可能會變更在未來，您無法使用的實際色彩語彙基元名稱，這些 UI 項目。 相反地，建立您自己的類別內的語彙基元，並使用表格所示的色調值。 可以找到現有的 UI 中的色彩語彙基元[適用於 Visual Studio 共用色彩](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md)。
 
-- **比較只會顯示高對比樣本。** 使用系統色彩名稱用於高對比的使用者介面，並請勿使用滴管] 或 [色彩選擇器上這些樣本。 本主題中的高對比樣本會反映在 Windows 中的高對比 #1 佈景主題。 看起來不同，在其他高對比佈景主題色彩。 
+- **比較只會顯示高對比樣本。** 使用系統色彩名稱用於高對比的使用者介面，並請勿使用滴管] 或 [色彩選擇器上這些樣本。 本主題中的高對比樣本會反映在 Windows 中的高對比 #1 佈景主題。 看起來不同，在其他高對比佈景主題色彩。
 
 -   **為了獲得最佳結果，對色彩設定 ui 類似範例。**
 
@@ -39,17 +39,17 @@ ms.locfileid: "55016235"
 ![Light （左）、 暗色調 （中間） 和藍色 （右） 的佈景主題中的 [屬性] 視窗](../../extensibility/ux-guidelines/media/properties-window-light-dark-blue.png "光線、 暗色調，而藍色佈景主題中的 [屬性] 視窗")<br />在光線、 暗色調，而藍色佈景主題中的 [屬性] 視窗
 
 > [!NOTE]
-> **比較只會顯示高對比樣本。** 使用系統色彩名稱用於高對比的使用者介面，並請勿使用滴管] 或 [色彩選擇器上這些樣本。 本主題中的高對比樣本會反映在 Windows 中的高對比 #1 佈景主題。 看起來不同，在其他高對比佈景主題色彩。 
+> **比較只會顯示高對比樣本。** 使用系統色彩名稱用於高對比的使用者介面，並請勿使用滴管] 或 [色彩選擇器上這些樣本。 本主題中的高對比樣本會反映在 Windows 中的高對比 #1 佈景主題。 看起來不同，在其他高對比佈景主題色彩。
 
 ### <a name="divider-lines"></a>分割線
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 預設 | ![#FFEEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 樣本")<br />`#FFEEEEF2` | ![#FF2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 樣本")<br />`#FF2D2D30` | ![#FFEEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 樣本")<br />`#FFEEEEF2` | ![ControlDark 色樣](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 樣本")<br />`ControlDark` |
 
 ### <a name="expander-glyph"></a>展開器字符
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 |![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![ControlText 色樣](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
 | 背景 | ![#Fff5f5f5 色樣](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 樣本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 樣本")<br />`#FFF6F6F6` | ![視窗色樣](../../extensibility/ux-guidelines/media/HCWindow.png "視窗樣本")<br />`Window`|
@@ -60,7 +60,7 @@ ms.locfileid: "55016235"
 
 ### <a name="embedded-tab-control-body"></a>內嵌的索引標籤控制項： 主體
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![ControlText 色樣](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
 | 背景 | ![#FFE7E8EC 色樣](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC 樣本")<br />`#FFE7E8EC` | ![#FF1B1B1C 色樣](../../extensibility/ux-guidelines/media/1B1B1C.png "#FF1B1B1C 樣本")<br />`#FF1B1B1C` | ![#FFE7E8EC 色樣](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC 樣本")<br />`#FFE7E8EC` | ![控制色樣](../../extensibility/ux-guidelines/media/HCControl.png "控制項樣本")<br />`Control` |
@@ -68,7 +68,7 @@ ms.locfileid: "55016235"
 
 ### <a name="embedded-tab-control-active-tab"></a>內嵌的索引標籤控制項： 使用索引標籤
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` |![ControlText 色樣](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
 | 背景 | ![##FFE7E8EC swatch](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC swatch")<br />`#FFE7E8EC` | ![#FF1B1B1C swatch](../../extensibility/ux-guidelines/media/1B1B1C.png "##FF1B1B1C swatch")<br />`#FF1B1B1C` | ![#FFE7E8EC 色樣](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC 樣本")<br />`#FFE7E8EC` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
@@ -76,7 +76,7 @@ ms.locfileid: "55016235"
 
 ### <a name="embedded-tab-control-inactive-tab"></a>內嵌的索引標籤控制項： 非使用中 索引標籤
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![ControlText 色樣](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
 | 背景 | ![#Fff5f5f5 色樣](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 樣本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 樣本")<br />`#FFF6F6F6` | ![控制色樣](../../extensibility/ux-guidelines/media/HCControl.png "控制項樣本")<br />`Control` |
@@ -85,12 +85,12 @@ ms.locfileid: "55016235"
 | 前景： 停用 | ![#FFA2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 swatch")<br />`#FFA2A4A5` | ![#FF656565 色樣](../../extensibility/ux-guidelines/media/656565.png "#FF656565 樣本")<br />`#FF656565` | ![#FFA2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 swatch")<br />`#FFA2A4A5` | ![GrayText 色樣](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText 樣本")<br />`GrayText` |
 | 背景： 停用 | ![##FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "##FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 樣本")<br />`#FFF6F6F6` | ![控制色樣](../../extensibility/ux-guidelines/media/HCControl.png "控制項樣本")<br />`Control` |
 | Border | ![#Fff5f5f5 色樣](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 樣本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 樣本")<br />`#FFF6F6F6` | ![WindowFrame 色樣](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 樣本")<br />`WindowFrame` |
-| 框線： 暫留 | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 色樣](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 樣本")<br />`#FF3E3E40` | ![#FFFEFEFE 色樣](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 樣本")<br />`#FFFEFEFE` | ![WindowFrame 色樣](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 樣本")<br />`WindowFrame` | 
+| 框線： 暫留 | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 色樣](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 樣本")<br />`#FF3E3E40` | ![#FFFEFEFE 色樣](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 樣本")<br />`#FFFEFEFE` | ![WindowFrame 色樣](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 樣本")<br />`WindowFrame` |
 | 框線： 停用 | ![#Fff5f5f5 色樣](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 樣本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 樣本")<br />`#FFF6F6F6` | ![WindowFrame 色樣](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 樣本")<br />`WindowFrame` |
 
 ### <a name="section-header"></a>區段標頭
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![##FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![ControlText 色樣](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
 | 前景： 暫留 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![HighlightText 色樣](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
@@ -101,7 +101,7 @@ ms.locfileid: "55016235"
 
 ### <a name="category-group"></a>類別目錄群組
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 主體前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![ControlText 色樣](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
 | 主體背景 | ![#Fff5f5f5 色樣](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 樣本")<br />`#FFF5F5F5` | ![FF252526 色樣](../../extensibility/ux-guidelines/media/252526.png "#FF252526 樣本")<br />`#FF252526` | ![#FFF6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 樣本")<br />`#FFF6F6F6` | ![控制色樣](../../extensibility/ux-guidelines/media/HCControl.png "控制項樣本")<br />`Control` |
@@ -110,7 +110,7 @@ ms.locfileid: "55016235"
 
 ### <a name="toggle-buttons"></a>切換按鈕
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![WindowText 色樣](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText 樣本")<br />`WindowText` |
 | 背景 | ![#Fff5f5f5 色樣](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 樣本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 樣本")<br />`#FFF6F6F6` | ![視窗色樣](../../extensibility/ux-guidelines/media/HCWindow.png "視窗樣本")<br />`Window` |
@@ -127,18 +127,18 @@ ms.locfileid: "55016235"
 
 ### <a name="input-fields"></a>輸入的欄位
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![ControlText 色樣](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
 | 背景 | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FF333337 色樣](../../extensibility/ux-guidelines/media/333337.png "#FF333337 樣本")<br />`#FF333337` | ![#FFFCFCFC 色樣](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC 樣本")<br />`#FFFCFCFC` | ![控制色樣](../../extensibility/ux-guidelines/media/HCControl.png "控制項樣本")<br />`Control` |
 | 前景： 停用 | ![#FFA2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 swatch")<br />`#FFA2A4A5` | ![#FF656565 色樣](../../extensibility/ux-guidelines/media/656565.png "#FF656565 樣本")<br />`#FF656565` | ![#FFA2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 swatch")<br />`#FFA2A4A5` | ![GrayText 色樣](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText 樣本")<br />`GrayText` |
 | 背景： 停用 | ![#Fff5f5f5 色樣](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 樣本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 樣本")<br />`#FFF6F6F6` | ![控制色樣](../../extensibility/ux-guidelines/media/HCControl.png "控制項樣本")<br />`Control` |
 | Border | ![#FFCCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 樣本")<br />`#FFCCCEDB` | ![#FF434346 色樣](../../extensibility/ux-guidelines/media/434346.png "#FF434346 樣本")<br />`#FF434346` | ![#FFCCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 樣本")<br />`#FFCCCEDB` | ![ControlDark 色樣](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 樣本")<br />`ControlDark` |
-| 框線： 停用 | ![#FFCCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 樣本")<br />`#FFCCCEDB` | ![#FF434346 色樣](../../extensibility/ux-guidelines/media/434346.png "#FF434346 樣本")<br />`#FF434346` | ![#FFC6C6C6 swatch](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 swatch")<br />`#FFC6C6C6` | ![ControlDark 色樣](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 樣本")<br />`ControlDark ` |
+| 框線： 停用 | ![#FFCCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 樣本")<br />`#FFCCCEDB` | ![#FF434346 色樣](../../extensibility/ux-guidelines/media/434346.png "#FF434346 樣本")<br />`#FF434346` | ![#FFC6C6C6 swatch](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 swatch")<br />`#FFC6C6C6` | ![ControlDark 色樣](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 樣本")<br />`ControlDark` |
 
 ### <a name="list-items"></a>清單項目
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![ControlText 色樣](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
 | 前景： 暫留 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![HighlightText 色樣](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
@@ -151,7 +151,7 @@ ms.locfileid: "55016235"
 
 ### <a name="command-buttons"></a>命令按鈕
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![ControlText 色樣](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
 | 背景： 暫留 | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 色樣](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 樣本")<br />`#FF3E3E40` | ![#FFFEFEFE 色樣](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 樣本")<br />`#FFFEFEFE` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
@@ -172,7 +172,7 @@ ms.locfileid: "55016235"
 
 ### <a name="content"></a>內容
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#Ff000000 色樣](../../extensibility/ux-guidelines/media/000000.png "#ff000000 樣本")<br />`#FF000000` | ![WindowText 色樣](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText 樣本")<br />`WindowText` |
 | 背景 | ![#Fff5f5f5 色樣](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 樣本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![控制色樣](../../extensibility/ux-guidelines/media/HCControl.png "控制項樣本")<br />`Control` |
@@ -184,7 +184,7 @@ ms.locfileid: "55016235"
 
 ### <a name="header"></a>頁首
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#Ff000000 色樣](../../extensibility/ux-guidelines/media/000000.png "#ff000000 樣本")<br />`#FF000000` | ![WindowText 色樣](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText 樣本")<br />`WindowText` |
 | 背景 | ![#FF2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 樣本")<br />`#FFEEEEF2` | ![#FF2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 樣本")<br />`#FF2D2D30` | ![#FFEEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 樣本")<br />`#FFEEEEF2` | ![ControlDark 色樣](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 樣本")<br />`ControlDark` |
@@ -193,7 +193,7 @@ ms.locfileid: "55016235"
 
 ![CodeLens UI](../../extensibility/ux-guidelines/media/codelens.png "CodeLens UI")
 
-> [!NOTE] 
+> [!NOTE]
 > CodeLens UI 色彩都是相同的光線、 暗色調，而藍色佈景主題。
 
 > [!NOTE]
@@ -201,7 +201,7 @@ ms.locfileid: "55016235"
 
 ### <a name="body"></a>本文
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![WindowText 色樣](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText 樣本")<br />`WindowText` |
 | 背景 | ![#FFFCFCFC 色樣](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC 樣本")<br />`#FFFCFCFC` | ![#FFFCFCFC 色樣](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC 樣本")<br />`#FFFCFCFC` | ![#FFFCFCFC 色樣](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC 樣本")<br />`#FFFCFCFC` | ![視窗色樣](../../extensibility/ux-guidelines/media/HCWindow.png "視窗樣本")<br />`Window` |
@@ -212,7 +212,7 @@ ms.locfileid: "55016235"
 
 ### <a name="hyperlink-and-separator"></a>超連結和分隔符號
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 超連結前景 | ![#FF0E70C0 色樣](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 樣本")<br />`#FF0E70C0` | ![#FF0E70C0 色樣](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 樣本")<br />`#FF0E70C0` | ![#FF0E70C0 色樣](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 樣本")<br />`#FF0E70C0` | ![HotTrack 色樣](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack 樣本")<br />`HotTrack` |
 | 分隔符號前景 | ![#FF9C9C9C 色樣](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C 樣本")<br />`#FF9C9C9C` | ![#FF9C9C9C 色樣](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C 樣本")<br />`#FF9C9C9C` | ![#FF9C9C9C 色樣](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C 樣本")<br />`#FF9C9C9C` | ![HotTrack 色樣](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack 樣本")<br />`HotTrack` |
@@ -226,14 +226,14 @@ ms.locfileid: "55016235"
 
 ### <a name="body"></a>本文
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#Ff000000 色樣](../../extensibility/ux-guidelines/media/000000.png "#ff000000 樣本")<br />`#FF000000` | ![WindowText 色樣](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText 樣本")<br />`WindowText` |
 | 前景： 選取 | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![HighlightText 色樣](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
 
 ### <a name="subsection-header"></a>子區段標頭
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF717171 色樣](../../extensibility/ux-guidelines/media/717171.png "#FF717171 樣本")<br />`#FF717171` | ![#FF999999 swatch](../../extensibility/ux-guidelines/media/999999.png "#FF999999 swatch")<br />`#FF999999` | ![#FF717171 色樣](../../extensibility/ux-guidelines/media/717171.png "#FF717171 樣本")<br />`#FF717171` | ![GrayText 色樣](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText 樣本")<br />`GrayText` |
 | 背景 | ![#Fff5f5f5 色樣](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 樣本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![視窗色樣](../../extensibility/ux-guidelines/media/HCWindow.png "視窗樣本")<br />`Window` |
@@ -241,7 +241,7 @@ ms.locfileid: "55016235"
 
 ### <a name="grid-lines"></a>格線
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 項目 （前景） | ![#FFF0F0F0 swatch](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 swatch")<br />`#FFF0F0F0` | ![#Ff000000 色樣](../../extensibility/ux-guidelines/media/000000.png "#ff000000 樣本")<br />`#FF000000` | ![#FFF0F0F0 swatch](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 swatch")<br />`#FFF0F0F0` | ![捲軸色樣](../../extensibility/ux-guidelines/media/HCScrollBar.png "捲軸樣本")<br />`ScrollBar` |
 | 標頭 （前景） | ![#FFE0E3E6 swatch](../../extensibility/ux-guidelines/media/E0E3E6.png "#FFE0E3E6 swatch")<br />`#FFE0E3E6` | ![#FF333337 色樣](../../extensibility/ux-guidelines/media/333337.png "#FF333337 樣本")<br />`#FF333337` | ![#FFBEC3CB 色樣](../../extensibility/ux-guidelines/media/BEC3CB.png "#FFBEC3CB 樣本")<br />`#FFBEC3CB` | ![ControlDark 色樣](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 樣本")<br />`ControlDark` |
@@ -255,21 +255,21 @@ ms.locfileid: "55016235"
 
 ### <a name="body"></a>本文
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![ControlText 色樣](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
 | 背景 | ![#Fff5f5f5 色樣](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 樣本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 樣本")<br />`#FFF6F6F6` | ![控制色樣](../../extensibility/ux-guidelines/media/HCControl.png "控制項樣本")<br />`Control` |
 
 ### <a name="active-tab"></a>使用中索引標籤
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![ActiveCaptionText 色樣](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText 樣本")<br />`ActiveCaptionText` |
 | 背景 | ![#Fff5f5f5 色樣](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 樣本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 樣本")<br />`#FFF6F6F6` |![ActiveCaption 色樣](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption 樣本")<br />`ActiveCaption` |
 
 ### <a name="inactive-tab"></a>非使用中 索引標籤
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![InactiveCaptionText 色樣](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText 樣本")<br />`InactiveCaptionText` |
 | 背景 | ![#FFFEFEFE 色樣](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 樣本")<br />`#FFFEFEFE` | ![#FF333337 色樣](../../extensibility/ux-guidelines/media/333337.png "#FF333337 樣本")<br />`#FF333337` | ![#FFFEFEFE 色樣](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 樣本")<br />`#FFFEFEFE` | ![HighlightText 色樣](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
@@ -278,14 +278,14 @@ ms.locfileid: "55016235"
 
 ### <a name="watermark-text"></a>浮水印文字
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF717171 色樣](../../extensibility/ux-guidelines/media/717171.png "#FF717171 樣本")<br />`#FF999999` | ![#FF999999 swatch](../../extensibility/ux-guidelines/media/717171.png "999999 swatch")<br />`#FF999999` | ![#FF717171 色樣](../../extensibility/ux-guidelines/media/717171.png "#FF717171 樣本")<br />`#FF717171` | ![GrayText 色樣](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText 樣本")<br />`GrayText` |
 | 背景 | ![#Fff5f5f5 色樣](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 樣本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 樣本")<br />`#FFF6F6F6` | ![控制色樣](../../extensibility/ux-guidelines/media/HCControl.png "控制項樣本")<br />`Control` |
 
 ### <a name="description-pane"></a>描述窗格
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![ControlText 色樣](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
 | 背景 | ![#FFEEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 樣本")<br />`#FFEEEEF2` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![控制色樣](../../extensibility/ux-guidelines/media/HCControl.png "控制項樣本")<br />`Control` |
@@ -299,7 +299,7 @@ ms.locfileid: "55016235"
 
 ### <a name="tags"></a>Tags
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 （文字） | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![ActiveCaptionText 色樣](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText 樣本")<br />`ActiveCaptionText` |
 | 背景 | ![#FFE1E6F1 色樣](../../extensibility/ux-guidelines/media/E1E6F1.png "#FFE1E6F1 樣本")<br />`#FFE1E6F1` | ![#FF424242 色樣](../../extensibility/ux-guidelines/media/424242.png "#FF424242 樣本")<br />`#FF424242` | ![#FFE9ECEE 色樣](../../extensibility/ux-guidelines/media/E9ECEE.png "#FFE9ECEE 樣本")<br />`#FFE9ECEE` | ![ActiveCaption 色樣](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption 樣本")<br />`ActiveCaption` |
@@ -312,7 +312,7 @@ ms.locfileid: "55016235"
 
 ### <a name="glyph-on-hover"></a>暫留時顯示的圖像 （glyph)
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 圖像 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![HighlightText 色樣](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
 | 背景 | ![#FFF7F7F9 色樣](../../extensibility/ux-guidelines/media/F7F7F9.png "#FFF7F7F9 樣本")<br />`#FFF7F7F9` | ![#FF393939 色樣](../../extensibility/ux-guidelines/media/393939.png "#FF393939 樣本")<br />`#FF393939` | ![#FFFFFCF4 色樣](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 樣本")<br />`#FFFFFCF4` | ![HighlightText 色樣](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
@@ -323,7 +323,7 @@ ms.locfileid: "55016235"
 
 ### <a name="selected-glyph"></a>選取圖像 （glyph)
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 圖像 | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![HighlightText 色樣](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
 | 背景 | ![#FF52B0EF swatch](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF swatch")<br />`#FF52B0EF` | ![#FF52B0EF swatch](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF swatch")<br />`#FF52B0EF` | ![#FF52B0EF swatch](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF swatch")<br />`#FF52B0EF` | ![HighlightText 色樣](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
@@ -339,7 +339,7 @@ ms.locfileid: "55016235"
 
 ### <a name="default"></a>預設
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![淺色佈景主題中的預設按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.png "淺色佈景主題中的預設按鈕") | ![深色佈景主題中的預設按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.dark.png "暗色調佈景主題中的預設按鈕") | ![藍色佈景主題中的預設按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.blue.png "藍色佈景主題中的預設按鈕") | ![高對比佈景主題中的預設按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.hc.png "高對比佈景主題中的預設按鈕") |
 | 前景 | ![#1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![#F1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 樣本")<br />`#F1F1F1` | ![#1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![ControlText 色樣](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 樣本")<br />`ControlText` |
@@ -348,7 +348,7 @@ ms.locfileid: "55016235"
 
 ### <a name="disabled"></a>已停用
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![淺色佈景主題的已停用的按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.png "淺色佈景主題的已停用按鈕") | ![深色佈景主題的已停用的按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.dark.png "深色的佈景主題的已停用按鈕") | ![藍色佈景主題的已停用的按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.blue.png "藍色佈景主題的已停用按鈕") | ![高對比佈景主題的已停用的按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.hc.png "高對比佈景主題的已停用按鈕") |
 | 前景 | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![#656565 色樣](../../extensibility/ux-guidelines/media/656565.png "#656565 樣本")<br />`#656565` | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![InactiveCaptionText 色樣](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText 樣本")<br />`InactiveCaptionText` |
@@ -357,7 +357,7 @@ ms.locfileid: "55016235"
 
 ### <a name="hover"></a>暫留
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![淺色佈景主題的動態顯示狀態 按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.png "淺色佈景主題的動態顯示狀態 按鈕") | ![深色佈景主題的動態顯示狀態 按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.dark.png "深色的佈景主題的動態顯示狀態 按鈕") | ![藍色佈景主題的動態顯示狀態 按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.blue.png "藍色佈景主題的動態顯示狀態 按鈕") | ![高對比佈景主題的動態顯示狀態 按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "高對比佈景主題的動態顯示狀態 按鈕") |
 | 前景 | ![#1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![#F1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 樣本")<br />`#F1F1F1` | ![#1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![ActiveCaptionText 色樣](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText 樣本")<br />`ActiveCaptionText` |
@@ -366,7 +366,7 @@ ms.locfileid: "55016235"
 
 ### <a name="pressed"></a>按下
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![淺色佈景主題的已按下的按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.png "淺色佈景主題的已按下的按鈕") | ![深色佈景主題的已按下的按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.dark.png "深色的佈景主題的已按下的按鈕") | ![藍色佈景主題的已按下的按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.blue.png "藍色佈景主題的已按下的按鈕") | ![高對比佈景主題的已按下的按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "高對比佈景主題的已按下的按鈕") |
 | 前景 | ![#FFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF 樣本")<br />`#FFFFFF` | ![#F1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 樣本")<br />`#F1F1F1` | ![#FFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF 樣本")<br />`#FFFFFF` | ![HighlightText 色樣](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
@@ -375,7 +375,7 @@ ms.locfileid: "55016235"
 
 ### <a name="focused"></a>已取得焦點
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![淺色佈景主題中的 [Focused] 按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.png "Focused 淺色佈景主題的按鈕") | ![深色佈景主題的 Focused 按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.dark.png "暗色調佈景主題中的 [Focused] 按鈕") | ![藍色佈景主題中的 [Focused] 按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.blue.png "Focused 藍色佈景主題的按鈕") | ![高對比佈景主題的 Focused 按鈕](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "Focused 高對比佈景主題的按鈕") |
 | 前景 | ![#1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![#F1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 樣本")<br />`#F1F1F1` | ![#1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 樣本")<br />`#1E1E1E` | ![HighlightText 色樣](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
@@ -389,7 +389,7 @@ ms.locfileid: "55016235"
 
 ### <a name="default"></a>預設
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![淺色佈景主題預設核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.png "淺色佈景主題預設核取方塊") | ![深色佈景主題預設核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.dark.png "暗色調佈景主題中的預設核取方塊") | ![藍色佈景主題中的預設核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.blue.png "預設藍色佈景主題中的核取方塊") | ![預設高對比佈景主題的核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.hc.png "預設高對比佈景主題的核取方塊") |
 | 背景 | ![#FEFEFE 色樣](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE 樣本")<br />`#FEFEFE` | ![#252526 色樣](../../extensibility/ux-guidelines/media/252526.png "#252526 樣本")<br />`#252526` | ![#FEFEFE 色樣](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE 樣本")<br />`#FEFEFE` | ![控制色樣](../../extensibility/ux-guidelines/media/HCControl.png "控制項樣本")<br />`Control` |
@@ -399,7 +399,7 @@ ms.locfileid: "55016235"
 
 ### <a name="disabled"></a>已停用
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![淺色佈景主題的已停用核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.png "淺色佈景主題的核取方塊已停用") | ![深色佈景主題的已停用核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.dark.png "停用在暗色調佈景主題中的核取方塊") | ![藍色佈景主題的已停用核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.blue.png "藍色佈景主題的核取方塊已停用") | ![高對比佈景主題的已停用核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.hc.png "停用高對比佈景主題的核取方塊") |
 | 背景 | ![#F6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 樣本")<br />`#F6F6F6` | ![#2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 樣本")<br />`#2D2D30` | ![#F6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 樣本")<br />`#F6F6F6` | ![InactiveCaption 色樣](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption 樣本")<br />`InactiveCaption` |
@@ -409,7 +409,7 @@ ms.locfileid: "55016235"
 
 ### <a name="hover"></a>暫留
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![淺色佈景主題中的暫留狀態核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.png "淺色佈景主題中的暫留狀態核取方塊") | ![深色佈景主題中的暫留狀態核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.dark.png "暗色調佈景主題中的暫留狀態核取方塊") | ![藍色佈景主題中的暫留狀態核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.blue.png "藍色佈景主題中的暫留狀態核取方塊") | ![高對比佈景主題中的暫留狀態核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "高對比佈景主題中的暫留狀態核取方塊") |
 | 背景 | ![#F3F9FF 色樣](../../extensibility/ux-guidelines/media/F3F9FF.png "#F3F9FF 樣本")<br />`#F3F9FF` | ![#1F1F20 色樣](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 樣本")<br />`#1F1F20` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
@@ -419,7 +419,7 @@ ms.locfileid: "55016235"
 
 ### <a name="pressed"></a>按下
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![淺色佈景主題的已按下核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.png "淺色佈景主題的已按下核取方塊") | ![深色佈景主題的已按下核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.dark.png "深色的佈景主題的已按下核取方塊") | ![藍色佈景主題的已按下核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.blue.png "藍色佈景主題的已按下核取方塊") | ![高對比佈景主題的已按下核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "高對比佈景主題的已按下核取方塊") |
 | 背景 | ![#007ACC 色樣](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC 樣本")<br />`#007ACC` | ![#007ACC 色樣](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC 樣本")<br />`#007ACC` | ![#E5C365 swatch](../../extensibility/ux-guidelines/media/E5C365.png "#E5C365 swatch")<br />`#E5C365` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
@@ -429,7 +429,7 @@ ms.locfileid: "55016235"
 
 ### <a name="focused"></a>已取得焦點
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![淺色佈景主題的 Focused 核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.png "Focused 淺色佈景主題的核取方塊") | ![Focused 暗色調佈景主題中的核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.dark.png "Focused 暗色調佈景主題中的核取方塊") | ![藍色佈景主題的 Focused 核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.blue.png "Focused 藍色佈景主題中的核取方塊") | ![Focused 高對比佈景主題的核取方塊](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "Focused 高對比佈景主題的核取方塊") |
 | 背景 | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![#1F1F20 色樣](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 樣本")<br />`#1F1F20` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
@@ -446,7 +446,7 @@ ms.locfileid: "55016235"
 
 #### <a name="default"></a>預設
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![淺色佈景主題的預設清單/下拉式方塊](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.png "淺色佈景主題的預設清單/下拉式方塊") | ![深色的佈景主題的預設下拉式清單下拉式方塊](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.dark.png "深色的佈景主題的預設下拉式清單下拉式方塊") | ![藍色佈景主題的預設清單/下拉式方塊](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.blue.png "藍色佈景主題的預設清單/下拉式方塊") | ![高對比佈景主題的預設清單/下拉式方塊](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.hc.png "高對比佈景主題的預設清單/下拉式方塊") |
 | 背景 | ![# # 007ACC 色樣](../../extensibility/ux-guidelines/media/007ACC.png "# # 007ACC 樣本")<br />`##007ACC` | ![#333337 色樣](../../extensibility/ux-guidelines/media/333337.png "#333337 樣本")<br />`#333337` | ![#FCFCFC 色樣](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC 樣本")<br />`#FCFCFC` | ![控制色樣](../../extensibility/ux-guidelines/media/HCControl.png "控制項樣本")<br />`Control` |
@@ -457,19 +457,19 @@ ms.locfileid: "55016235"
 
 #### <a name="disabled"></a>已停用
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![淺色佈景主題的已停用的下拉式清單下拉式方塊](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.png "停用淺色佈景主題的下拉式清單下拉式方塊") | ![深色佈景主題的停用的下拉式清單下拉式方塊](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.dark.png "停用深色的佈景主題的下拉式清單下拉式方塊") | ![藍色佈景主題的已停用的下拉式清單下拉式方塊](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.blue.png "停用藍色佈景主題的下拉式清單下拉式方塊") | ![高對比佈景主題的停用的下拉式清單下拉式方塊](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.hc.png "停用高對比佈景主題的下拉式清單下拉式方塊") |
 | 背景 | ![#EEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 樣本")<br />`#EEEEF2` | ![#2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 樣本")<br />`#2D2D30` | ![#DFE7F3 色樣](../../extensibility/ux-guidelines/media/DFE7F3.png "#DFE7F3 樣本")<br />`#DFE7F3` | ![InactiveCaption 色樣](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption 樣本")<br />`InactiveCaption` |
 | Border | ![#CCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 樣本")<br />`#CCCEDB` | ![#434346 色樣](../../extensibility/ux-guidelines/media/434346.png "#434346 樣本")<br />`#434346` | ![#A4ADBA 色樣](../../extensibility/ux-guidelines/media/A4ADBA.png "#A4ADBA 樣本")<br />`#A4ADBA` | ![InactiveBorder 色樣](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder 樣本")<br />`InactiveBorder` |
 | 文字 | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![# 656565swatch](../../extensibility/ux-guidelines/media/656565.png "#656565 樣本")<br />`#656565` | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![InactiveCaptionText 色樣](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText 樣本")<br />`InactiveCaptionText` |
-| Separator | ![#EEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 樣本")<br />`#EEEEF2` | ![#2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 樣本")<br />`#2D2D30` | ![#D5DCE8 swatch](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 swatch")<br />`#D5DCE8` | ![InactiveBorder 色樣](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder 樣本")<br />`InactiveBorder` | 
+| Separator | ![#EEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 樣本")<br />`#EEEEF2` | ![#2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 樣本")<br />`#2D2D30` | ![#D5DCE8 swatch](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 swatch")<br />`#D5DCE8` | ![InactiveBorder 色樣](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder 樣本")<br />`InactiveBorder` |
 | 圖像 | ![#CCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 樣本")<br />`#CCCEDB` | ![#656565 色樣](../../extensibility/ux-guidelines/media/656565.png "#656565 樣本")<br />`#656565` | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![InactiveCaptionText 色樣](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText 樣本")<br />`InactiveCaptionText` |
 | 字符背景 | ![#EEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 樣本")<br />`#EEEEF2` | ![#2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 樣本")<br />`#2D2D30` | ![#D5DCE8 swatch](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 swatch")<br />`#D5DCE8` | ![InactiveCaption 色樣](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption 樣本")<br />`InactiveCaption` |
 
 #### <a name="hover"></a>暫留
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![淺色佈景主題的暫留時狀態下拉式清單下拉式方塊](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.png "淺色佈景主題的暫留時狀態下拉式清單下拉式方塊") | ![暫留狀態卸除-清單/下拉式方塊深色的佈景主題](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.dark.png "暫留狀態卸除-清單/下拉式方塊深色的佈景主題") | ![暫留狀態下拉式清單下拉式方塊藍色佈景主題的](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.blue.png "暫留狀態下拉式清單下拉式方塊藍色佈景主題的") | ![暫留狀態卸除-清單 / 下拉式方塊中的高對比佈景主題](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.hc.png "暫留狀態卸除-清單 / 下拉式方塊中的高對比佈景主題") |
 | 背景 | ![#007ACC 色樣](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC 樣本")<br />`#007ACC` | ![#3F3F46 色樣](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 樣本")<br />`#3F3F46` | ![#FCFCFC 色樣](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC 樣本")<br />`#FCFCFC` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
@@ -481,7 +481,7 @@ ms.locfileid: "55016235"
 
 #### <a name="pressed"></a>按下
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![淺色佈景主題的已按下的下拉式清單下拉式方塊](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.png "淺色佈景主題的已按下的下拉式清單下拉式方塊") | ![深色佈景主題的已按下的下拉式清單下拉式方塊](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.dark.png "深色的佈景主題的已按下的下拉式清單下拉式方塊") | ![藍色佈景主題的已按下的下拉式清單下拉式方塊](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.blue.png "藍色佈景主題的已按下的下拉式清單下拉式方塊") | ![高對比佈景主題的已按下的下拉式清單下拉式方塊](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.hc.png "高對比佈景主題的已按下的下拉式清單下拉式方塊") |
 | 背景 | ![#FFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF 樣本")<br />`#FFFFFF` | ![#3F3F46 色樣](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 樣本")<br />`#3F3F46` | ![#FCFCFC 色樣](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC 樣本")<br />`#FCFCFC` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
@@ -493,7 +493,7 @@ ms.locfileid: "55016235"
 
 #### <a name="focused"></a>已取得焦點
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![淺色佈景主題的 Focused 下拉式清單下拉式方塊](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.png "淺色佈景主題的 Focused 下拉式清單下拉式方塊") | ![Focused 卸除-清單/方塊深色的佈景主題](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.dark.png "Focused 卸除-清單/方塊深色的佈景主題") | ![藍色佈景主題的 Focused 下拉式清單下拉式方塊](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.blue.png "藍色佈景主題的 Focused 下拉式清單下拉式方塊") | ![Focused 下拉式清單下拉式方塊高對比佈景主題](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.hc.png "Focused 下拉式清單下拉式方塊高對比佈景主題") |
 | 背景 | ![#FFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF 樣本")<br />`#FFFFFF` | ![#3F3F46 色樣](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 樣本")<br />`#3F3F46` | ![#FCFCFC 色樣](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC 樣本")<br />`#FCFCFC` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
@@ -511,7 +511,7 @@ ms.locfileid: "55016235"
 
 #### <a name="default"></a>預設
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 背景 | ![#F6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 樣本")<br />`#F6F6F6` | ![#1B1B1C 色樣](../../extensibility/ux-guidelines/media/1B1B1C.png "#1B1B1C 樣本")<br />`#1B1B1C` | ![#EFEFEF 色樣](../../extensibility/ux-guidelines/media/EFEFEF.png "#EFEFEF 樣本")<br />`#EFEFEF` | ![功能表色樣](../../extensibility/ux-guidelines/media/HCMenu.png "功能表樣本")<br />`Menu` |
 | Border | ![#CCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 樣本")<br />`#CCCEDB` | ![#3F3F46 色樣](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 樣本")<br />`#3F3F46` | ![#98A7B7 色樣](../../extensibility/ux-guidelines/media/98A7B7.png "#98A7B7 樣本")<br />`#98A7B7`| ![MenuText 色樣](../../extensibility/ux-guidelines/media/HCMenuText.png "MenuText 樣本")<br />`MenuText` |
@@ -520,7 +520,7 @@ ms.locfileid: "55016235"
 
 #### <a name="hover"></a>暫留
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 背景 | ![#C9DEF5 色樣](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 樣本")<br />`#C9DEF5` | ![#3F3F46 色樣](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 樣本")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
 | Border | ![#CCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 樣本")<br />`#CCCEDB` |![#3F3F46 色樣](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 樣本")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![HighlightText 色樣](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
@@ -528,7 +528,7 @@ ms.locfileid: "55016235"
 
 #### <a name="pressed"></a>按下
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 背景 |![#C9DEF5 色樣](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 樣本")<br />`#C9DEF5` |![#3F3F46 色樣](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 樣本")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
 | Border | ![#CCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 樣本")<br />`#CCCEDB` |![#3F3F46 色樣](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 樣本")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![HighlightText 色樣](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
@@ -536,7 +536,7 @@ ms.locfileid: "55016235"
 
 #### <a name="focused"></a>已取得焦點
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 背景 | ![#F6F6F6 色樣](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 樣本")<br />`#F6F6F6` |![#3F3F46 色樣](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 樣本")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![反白顯示樣本](../../extensibility/ux-guidelines/media/HCHighlight.png "反白顯示樣本")<br />`Highlight` |
 | Border | ![#C9DEF5 色樣](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 樣本")<br />`#C9DEF5` |![#3F3F46 色樣](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 樣本")<br />`#3F3F46` |![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![HighlightText 色樣](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
@@ -544,16 +544,16 @@ ms.locfileid: "55016235"
 
 ### <a name="text-input-selection"></a>文字輸入選取範圍
 
-| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 | 
+| | 淺色佈景主題 | 暗色調佈景主題 | 藍色佈景主題 | 高對比 |
 | --- | :---: | :---: | :---: | :---: |
 | 外觀 | ![下拉式清單下拉式方塊文字輸入選取項目淺色佈景主題](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.png "下拉式清單下拉式方塊文字輸入淺色佈景主題中的選取範圍") | ![下拉式清單下拉式方塊文字輸入選取深色的佈景主題](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.dark.png "下拉式清單下拉式方塊文字輸入暗色調佈景主題中的選取範圍") | ![下拉式清單下拉式方塊文字輸入藍色佈景主題中的選取範圍](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.blue.png "下拉式清單下拉式方塊文字輸入藍色佈景主題中的選取範圍") | ![下拉式清單下拉式方塊文字輸入中的高對比佈景主題選取範圍](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.hc.png "下拉式清單下拉式方塊文字輸入中的高對比佈景主題選取範圍") |
 | 文字輸入選取範圍 | ![#66007ACC 色樣](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC 樣本")<br />`#66007ACC` | ![#66007ACC 色樣](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC 樣本")<br />`#66007ACC` | ![#66007ACC 色樣](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC 樣本")<br />`#66007ACC` | ![HighlightText 色樣](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 樣本")<br />`HighlightText` |
 
 ## <a name="color-swatches-by-function"></a>色樣函式
 
-| 亮色調 | 暗色調 | 藍色 | 用於... | 
+| 亮色調 | 暗色調 | 藍色 | 用於... |
 | :---: | :---: | :---: | --- |
-| ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5`   | ![#FF2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 樣本")<br />`#FF2D2D30`   | ![#FFFDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF swatch")<br />`#FFFDF4BF` | 動作按鈕、 下拉式方塊項目、 命令列按鈕、 下拉式按鈕和功能表項目： 背景 |
+| ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 樣本")<br />`#FF2D2D30` | ![#FFFDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF swatch")<br />`#FFFDF4BF` | 動作按鈕、 下拉式方塊項目、 命令列按鈕、 下拉式按鈕和功能表項目： 背景 |
 | ![#FFCCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 樣本")<br />`#FFCCCEDB` | ![#FF3F3F46 色樣](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 樣本")<br />`#FF3F3F46` | ![#FF465A7D 色樣](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D 樣本")<br />`#FF465A7D` | 自動隱藏索引標籤的框線 |
 | ![#FFEEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 樣本")<br />`#FFEEEEF2` | ![#FF2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 樣本")<br />`#FF2D2D30` | ![#FF293955 swatch](../../extensibility/ux-guidelines/media/293955.png "#FF293955 swatch")<br />`#FF293955` | 自動隱藏 索引標籤上的預設和暫留時背景 |
 | ![#FF444444 色樣](../../extensibility/ux-guidelines/media/444444.png "#FF444444 樣本")<br />`#FF444444` | ![#FFD0D0D0 swatch](../../extensibility/ux-guidelines/media/D0D0D0.png "#FFD0D0D0 swatch")<br />`#FFD0D0D0` | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | 自動隱藏索引標籤文字、 未取得焦點的工具視窗標題列文字和工具視窗索引標籤文字 |
@@ -570,7 +570,7 @@ ms.locfileid: "55016235"
 | ![#FF007ACC 色樣](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 樣本")<br />`#FF007ACC` | ![#FF007ACC 色樣](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 樣本")<br />`#FF007ACC` | ![#FF1B293E swatch](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E swatch")<br />`#FF1B293E` | 命令列選項： 將滑鼠移至 圖像 （glyph） |
 | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FFFFFFFF 色樣](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 樣本")<br />`#FFFFFFFF` | ![#FF1B293E swatch](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E swatch")<br />`#FF1B293E` | 命令列選項： 滑鼠向下圖像 （glyph） |
 | ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF1B293E swatch](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E swatch")<br />`#FF1B293E` | 命令列文字、 下拉式清單和下拉式方塊的功能表項目文字 |
-| ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#FF000000   swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | 命令列： 暫留時，滑鼠，並已選取的文字 |
+| ![#FF1E1E1E 色樣](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 樣本")<br />`#FF1E1E1E` | ![#FFF1F1F1 色樣](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 樣本")<br />`#FFF1F1F1` | ![#Ff000000 色樣](../../extensibility/ux-guidelines/media/000000.png "#ff000000 樣本")<br />`#FF000000` | 命令列： 暫留時，滑鼠，並已選取的文字 |
 | ![#FFCCCEDB 色樣](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 樣本")<br />`#FFCCCEDB` | ![#FF222222 色樣](../../extensibility/ux-guidelines/media/222222.png "#FF222222 樣本")<br />`#FF222222` | ![#FF8591A2 swatch](../../extensibility/ux-guidelines/media/8591A2.png "#FF8591A2 swatch")<br />`#FF8591A2` | 命令列： 工具列分隔符號 |
 | ![#Fff5f5f5 色樣](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 樣本")<br />`#FFF5F5F5` | ![#FF46464A swatch](../../extensibility/ux-guidelines/media/46464A.png "#FF46464A swatch")<br />`#FF46464A` | ![#FFD6DBE9 swatch](../../extensibility/ux-guidelines/media/D6DBE9.png "#FFD6DBE9 swatch")<br />`#FFD6DBE9` | 命令列： 分隔符號反白顯示的工具列 |
 | ![#FFEEEEF2 色樣](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 樣本")<br />`#FFEEEEF2` | ![#FF2D2D30 色樣](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 樣本")<br />`#FF2D2D30` | ![#FFD6DBE9 swatch](../../extensibility/ux-guidelines/media/D6DBE9.png "#FFD6DBE9 swatch")<br />`#FFD6DBE9` | 命令櫃背景 |

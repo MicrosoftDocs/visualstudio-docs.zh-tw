@@ -1,5 +1,5 @@
 ---
-title: HOW TO：選取要建置的檔案 | Microsoft Docs
+title: 作法：選取要建置的檔案 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54cd1e9855bbc09a0045cd50ac26c1aef38bac2c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942802"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610537"
 ---
 # <a name="how-to-select-the-files-to-build"></a>HOW TO：選取要建置的檔案
 建置包含數個檔案的專案時，您可以在專案檔中分別列出每個檔案，或是您可以使用萬用字元來包含一個目錄或巢狀目錄集合中的所有檔案。
@@ -29,25 +29,25 @@ ms.locfileid: "55942802"
 
 #### <a name="to-declare-items-individually"></a>個別宣告項目
 
-- 使用 `Include` 屬性，類似如下︰  
-  
-    `<CSFile Include="form1.cs"/>`  
-  
-    或  
-  
-    `<VBFile Include="form1.vb"/>`  
-  
+- 使用 `Include` 屬性，類似如下︰
+
+    `<CSFile Include="form1.cs"/>`
+
+    或
+
+    `<VBFile Include="form1.vb"/>`
+
     > [!NOTE]
     > 如果項目集合中的項目不在與專案檔相同的目錄中，您必須指定項目的完整或相對路徑。 例如：`Include="..\..\form2.cs"`。
 
 #### <a name="to-declare-multiple-items"></a>宣告多個項目
 
--   使用 `Include` 屬性，類似如下︰  
-  
-    `<CSFile Include="form1.cs;form2.cs"/>`  
-  
-    或  
-  
+-   使用 `Include` 屬性，類似如下︰
+
+    `<CSFile Include="form1.cs;form2.cs"/>`
+
+    或
+
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>使用萬用字元指定輸入
@@ -63,24 +63,24 @@ ms.locfileid: "55942802"
 
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>包含 *Images* 目錄和子目錄中的所有 *.jpg* 檔案
 
-- 使用下列 `Include` 屬性：  
-  
+- 使用下列 `Include` 屬性：
+
     `Include="Images\**\*.jpg"`
 
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>包含開頭為 *img* 的所有 *.jpg* 檔案
 
-- 使用下列 `Include` 屬性：  
-  
+- 使用下列 `Include` 屬性：
+
     `Include="Images\**\img*.jpg"`
 
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>包含目錄中名稱結尾為 *jpgs* 的所有檔案
 
-- 使用下列其中一個 `Include` 屬性：  
-  
-    `Include="Images\**\*jpgs\*.*"`  
-  
-    或  
-  
+- 使用下列其中一個 `Include` 屬性：
+
+    `Include="Images\**\*jpgs\*.*"`
+
+    或
+
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>將項目傳遞至工作
@@ -88,17 +88,17 @@ ms.locfileid: "55942802"
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>使用所有 Visual C# 或 Visual Basic 檔案作為輸入
 
-- 使用 `Include` 屬性，類似如下︰  
-  
-    `<CSC Sources="@(CSFile)">...</CSC>`  
-  
-    或  
-  
+- 使用 `Include` 屬性，類似如下︰
+
+    `<CSC Sources="@(CSFile)">...</CSC>`
+
+    或
+
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
 >  您必須對項目使用萬用字元來指定組建的輸入；您不能使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作中的 `Sources` 屬性 (例如 [Csc](../msbuild/csc-task.md) 或 [Vbc](../msbuild/vbc-task.md)) 指定輸入。 下列範例在專案檔案中無效︰
-> 
+>
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>範例
@@ -170,5 +170,5 @@ ms.locfileid: "55942802"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)  
-[項目](../msbuild/msbuild-items.md)
+- [如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)
+- [項目](../msbuild/msbuild-items.md)

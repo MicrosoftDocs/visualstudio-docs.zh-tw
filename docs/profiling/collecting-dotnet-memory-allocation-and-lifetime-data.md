@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ab421e4a74b76d8caf8edba159b640c9313215c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dbdc92ff0d8a4020c664de527b60e95ed6113329
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006082"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635094"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>收集 .NET 記憶體配置和存留期資料
 
@@ -79,6 +79,6 @@ Visual Studio 分析工具支援收集 .NET 記憶體配置和物件存留期資
 
 ## <a name="see-also"></a>另請參閱
 
-[設定效能工作階段](../profiling/configuring-performance-sessions.md)  
-[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)  
+[設定效能工作階段](../profiling/configuring-performance-sessions.md)
+[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
 [效能工作階段屬性](../profiling/performance-session-properties.md)

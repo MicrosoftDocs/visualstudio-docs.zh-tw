@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5e5a4791b6703db72f67c9b18abcb3b0592916be
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 753a3816b6432a58c5f79077c4e438db753297b9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945056"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692221"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>支援的程式碼變更 (C#和 Visual Basic)
 [編輯後繼續] 會處理方法主體內大多數程式碼的變更。 但是在偵錯期間，無法套用方法主體外的變更和方法主體內的某些變更。 若要套用這些不支援的變更，您必須停止偵錯，然後使用新版程式碼重新啟動偵錯。
@@ -43,12 +43,12 @@ ms.locfileid: "54945056"
 > 較新的語言功能，例如字串內插補點和 null 條件運算子通常支援編輯後繼續。 最新的資訊，請參閱[Enc 支援編輯](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)頁面。
 
 ## <a name="unsupported-changes-to-code"></a>不支援的變更程式碼
- 下列變更無法套用至C#和 Visual Basic 程式碼偵錯工作階段：  
-  
--   變更目前的陳述式或任何其他使用中陳述式。  
-  
-     使用中陳述式包含了在呼叫堆疊的函式中，為了取得目前陳述式而呼叫的任何陳述式。  
-  
+ 下列變更無法套用至C#和 Visual Basic 程式碼偵錯工作階段：
+
+-   變更目前的陳述式或任何其他使用中陳述式。
+
+     使用中陳述式包含了在呼叫堆疊的函式中，為了取得目前陳述式而呼叫的任何陳述式。
+
      目前的陳述式在來源視窗中會以黃色背景標示。 其他使用中陳述式會以灰色背景標示，而且是唯讀的。 這些預設色彩可以在 [選項] 對話方塊中進行變更。
 
 - 下表顯示不支援的變更程式碼的語言項目。
@@ -76,9 +76,9 @@ ms.locfileid: "54945056"
 |Using 陳述式|新增|
 |非同步方法/lambda|修改非同步方法/lambda 中以.NET Framework 4 為目標的專案，並降低 (請參閱[詳細資料](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 |迭代器|修改迭代器，在以.NET Framework 4 為目標的專案，並降低 (請參閱[詳細資料](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-  
-## <a name="unsafe-code"></a>Unsafe 程式碼  
- 變更 Unsafe 程式碼的限制與變更 Safe 程式碼的限制相同，但前者多了下列這一項額外限制：編輯後繼續不支援包含的方法內的 unsafe 程式碼變更`stackalloc`運算子。  
+
+## <a name="unsafe-code"></a>Unsafe 程式碼
+ 變更 Unsafe 程式碼的限制與變更 Safe 程式碼的限制相同，但前者多了下列這一項額外限制：[編輯後繼續] 不支援對包含 `stackalloc` 運算子之方法內的 Unsafe 程式碼進行變更。
 
 ## <a name="unsupported-app-scenarios"></a>不支援的應用程式案例
 
@@ -86,24 +86,24 @@ ms.locfileid: "54945056"
 
 > [!NOTE]
 > 支援的應用程式在 Windows 10 和 x86 和 x64.NET Framework 4.6 為目標的應用程式中包含 UWP 桌面或更新版本的版本 （.NET Framework 是僅限桌面版本）。
-  
-## <a name="unsupported-scenarios"></a>不支援的情節  
- [編輯後繼續] 無法用於下列偵錯案例中：  
-  
--   混合模式 (原生/Managed) 偵錯。  
-  
--   SQL 偵錯  
-  
--   偵錯 Dr.Watson 傾印。  
-  
--   偵錯內嵌的執行階段應用程式。  
-  
--   偵錯應用程式使用附加至處理序 (**偵錯 > připojit k procesu**) 而不是藉由選擇執行應用程式**開始**從**偵錯**功能表。  
-  
--   偵錯最佳化程式碼  
-  
+
+## <a name="unsupported-scenarios"></a>不支援的情節
+ [編輯後繼續] 無法用於下列偵錯案例中：
+
+-   混合模式 (原生/Managed) 偵錯。
+
+-   SQL 偵錯
+
+-   偵錯 Dr.Watson 傾印。
+
+-   偵錯內嵌的執行階段應用程式。
+
+-   偵錯應用程式使用附加至處理序 (**偵錯 > připojit k procesu**) 而不是藉由選擇執行應用程式**開始**從**偵錯**功能表。
+
+-   偵錯最佳化程式碼
+
 -   由於建置錯誤以致新版本建置失敗之後，對舊版程式碼進行偵錯。
-  
-## <a name="see-also"></a>請參閱  
- [編輯後繼續 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [如何：使用編輯後繼續 (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+
+## <a name="see-also"></a>請參閱
+- [編輯後繼續 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
+- [如何：使用編輯後繼續 (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

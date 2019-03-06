@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e387bb9af6c1fa8cf42a606087c264a7c27c3ee9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970916"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796656"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>建立資料驅動自動程式碼 UI 測試
 
@@ -35,7 +35,7 @@ ms.locfileid: "55970916"
 
 1. 建立專案。
 
-    ![建立自動程式化 UI 測試](../test/media/cuit_datadriven_.png)
+    ![建立自動程式碼 UI 測試](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
    > 如果您沒有看到 [自動程式化 UI 測試專案] 範本，則需要[安裝自動程式化 UI 測試元件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
@@ -181,11 +181,11 @@ ms.locfileid: "55970916"
 
     -   開啟 UIMap.uitest 檔案。
 
-         ![開啟自動程式化 UI 測試編輯器](../test/media/cuit_datadriven_opentesteditor.png)
+         ![開啟自動程式碼 UI 測試編輯器](../test/media/cuit_datadriven_opentesteditor.png)
 
     -   選擇 UI 動作，並觀察對應的 UI 控制項對應。 請注意，對應如何對應至程式碼 (例如，`this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`)。
 
-         ![使用自動程式化 UI 測試編輯器來協助您的程式碼](../test/media/cuit_datadriven_testeditor.png)
+         ![使用自動程式碼 UI 測試編輯器來協助您的程式碼](../test/media/cuit_datadriven_testeditor.png)
 
     -   在 [屬性] 視窗中，開啟 [搜尋屬性]。 搜尋屬性 **Name** 值是程式碼中使用資料來源所操作的值。 例如，會將每個資料列的第一欄中的值指派給 `SearchProperties`：`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`。 對於三個反覆項目，這項測試會依序將搜尋屬性的 **Name** 值變更為 3、5 和 6。
 

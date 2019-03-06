@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支援權益。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de53a94bd8ab0513e27f7c62461165d9ff8e865c
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: fc1fabec9e6f220162ace335e69e63e8bc1c7286
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089220"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841697"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用 Visual Studio 訂用帳戶中的技術支援權益
 
@@ -22,13 +20,13 @@ ms.locfileid: "55089220"
 
 > [!NOTE]
 > 指定層級的訂用帳戶不一定全部符合接收支援事件的資格。 透過 FTE、NFR、MPN、MCT 和其他方案取得的訂用帳戶無法接收支援事件。 如果您的訂用帳戶不符合接收技術支援事件的資格，[技術支援] 磚將不會出現在您的可用權益中。
-> 
+>
 > [!div class="mx-imgBorder"]
 > ![技術支援權益磚](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. 若要開始使用您的技術支援權益，請前往 https://my.visualstudio.com/Benefits，向下捲動至 [支援] 區段，然後在 [技術支援] 磚上，按一下 [Chat to activate] \(要啟動的聊天\)。 
-2. 這會起始與代表的聊天工作階段，該代表可建立您的合約識別碼和存取識別碼，並將這些識別碼提供給您。 
+1. 若要開始使用您的技術支援權益，請前往 https://my.visualstudio.com/Benefits，向下捲動至 [支援] 區段，然後在 [技術支援] 磚上，按一下 [Chat to activate] \(要啟動的聊天\)。
+2. 這會起始與代表的聊天工作階段，該代表可建立您的合約識別碼和存取識別碼，並將這些識別碼提供給您。
 3. 若要完成此程序，您必須提供代表：
    - 您用於登入訂用帳戶的電子郵件地址
    - 可在 [[訂閱](https://my.visualstudio.com/subscriptions)] 索引標籤上找到的訂用帳戶識別碼。
@@ -38,7 +36,7 @@ ms.locfileid: "55089220"
 
 
 > [!NOTE]
-> 若要使用英文以外語言啟用您的支援帳戶，請從[此清單](https://support.microsoft.com/help/14084/activate-support-contract)選擇您的國家/地區。   
+> 若要使用英文以外語言啟用您的支援帳戶，請從[此清單](https://support.microsoft.com/help/14084/activate-support-contract)選擇您的國家/地區。
 
 
 ## <a name="how-to-submit-an-incident"></a>如何提交事件
@@ -48,12 +46,12 @@ ms.locfileid: "55089220"
 ### <a name="submit-an-incident-online"></a>線上提交事件
 
 1. 若要[線上提交事件](http://support.microsoft.com/oas/)，請指定需要協助的產品。 您可以從各種不同的清單中選取，或按名稱搜尋。 例如，若要提交 Visual Studio Enterprise 2017 事件，請按一下**開發人員工具**群組中的 [Visual Studio]。
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![技術支援權益選取事件產品](_img/vs-tech-support/vs-tech-support-select-product.png)
 
 2. 選擇您需要支援的產品 (例如，按一下 Visual Studio 產品清單中的 [Visual Studio Enterprise 2017])。
 3. 在 [建立事件] 頁面上，從下拉式清單中選取適用的問題類型。 我們在範例中會選擇 [整合式開發環境 (IDE)]。
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![技術支援權益建立事件](_img/vs-tech-support/vs-tech-support-create-incident.png)
 
 4. 然後選擇最符合您問題的 [類別目錄]。 我們在範例中會選擇 [Architect tools] (架構設計師工具)。
@@ -64,7 +62,7 @@ ms.locfileid: "55089220"
    - 輸入您的存取識別碼和合約識別碼
    - 按一下 [新增]
 7. 一旦新增支援合約，它就會出現在 Professional 支援合約清單中。 選擇它並按一下 [繼續]。
-   > [!div class="mx-imgBorder"]     
+   > [!div class="mx-imgBorder"]
    > ![技術支援權益付款](_img/vs-tech-support/vs-tech-support-payment.png)
 
 8. 提供您的連絡資訊和偏好的連絡方法，然後按一下 [繼續]。

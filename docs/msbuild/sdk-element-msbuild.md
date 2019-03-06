@@ -17,47 +17,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24392fe34069025209f0e2c02e1231d1cbbe3397
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 36132dce94bb4836242858c82c47562259e83f2e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993270"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596140"
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 元素 (MSBuild)
-參考 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案 SDK。  
+參考 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案 SDK。
 
- \<Project>  
- \<Sdk>  
+ \<Project> \<SDK>
 
 
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>語法
 
-```xml  
+```xml
 <Sdk Name="My.Custom.Sdk"
-     Version="1.0.0" />  
-```  
+     Version="1.0.0" />
+```
 
-## <a name="attributes-and-elements"></a>屬性和元素  
- 下列章節說明屬性、子元素和父元素。  
+## <a name="attributes-and-elements"></a>屬性和元素
+ 下列章節說明屬性、子元素和父元素。
 
-### <a name="attributes"></a>屬性  
+### <a name="attributes"></a>屬性
 
-|屬性|說明|  
-|---------------|-----------------|  
-|`Name`|必要屬性。<br /><br /> 專案 SDK 的名稱。|  
-|`Version`|選擇性屬性。<br /><br /> 專案 SDK 的版本|  
+|屬性|說明|
+|---------------|-----------------|
+|`Name`|必要屬性。<br /><br /> 專案 SDK 的名稱。|
+|`Version`|選擇性屬性。<br /><br /> 專案 SDK 的版本|
 
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子元素
  無。
 
-### <a name="parent-elements"></a>父元素  
+### <a name="parent-elements"></a>父元素
 
 | 元素 | 說明 |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
 
-## <a name="see-also"></a>另請參閱  
- [如何：參考 MSBuild 專案 SDK](../msbuild/how-to-use-project-sdk.md)   
- [專案檔結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>另請參閱
+- [如何：參考 MSBuild 專案 SDK](../msbuild/how-to-use-project-sdk.md)
+- [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

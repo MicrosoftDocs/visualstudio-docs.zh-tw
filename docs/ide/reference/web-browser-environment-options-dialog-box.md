@@ -9,7 +9,6 @@ f1_keywords:
 helpviewer_keywords:
 - browsers, customizing
 - searching, search page for Web browser
-- Visual Studio Start page, default URL
 - Web browsers, customizing
 - searches, default Web browser search page
 - URLs, specifying VS home page
@@ -22,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2434cfa4897bf85bcbc1dafb55e37ebbe9a80ad9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9166cc6ae8695cc4e00688e4add998d61b394701
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912492"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700000"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>選項對話方塊、環境、Web 瀏覽器
 

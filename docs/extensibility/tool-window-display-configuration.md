@@ -11,29 +11,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 089b0ac1a30a7605df61d5e5e5545e6f4c80549a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce6345a07aa8476dd9d102e71bbfd8cdfd848d93
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973404"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707038"
 ---
 # <a name="tool-window-display-configuration"></a>工具視窗中顯示組態
-當向 VSPackage 註冊工具視窗、 預設位置、 大小、 停駐樣式，以及其他的可見性資訊，被指定選擇性的值。 如需有關工具視窗中註冊的詳細資訊，請參閱[工具 Windows 登錄中](../extensibility/tool-windows-in-the-registry.md)  
+當向 VSPackage 註冊工具視窗、 預設位置、 大小、 停駐樣式，以及其他的可見性資訊，被指定選擇性的值。 如需有關工具視窗中註冊的詳細資訊，請參閱[工具 Windows 登錄中](../extensibility/tool-windows-in-the-registry.md)
 
-## <a name="window-display-information"></a>視窗顯示資訊  
- 工具視窗的基本顯示組態儲存在最多六個選擇性的值：  
+## <a name="window-display-information"></a>視窗顯示資訊
+ 工具視窗的基本顯示組態儲存在最多六個選擇性的值：
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        <Version>\  
-          ToolWindows\  
-            <Tool Window GUID>\  
-              (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        <Version>\
+          ToolWindows\
+            <Tool Window GUID>\
+              (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000
+```
 
 
 | 名稱 | 類型 | 資料 | 描述 |
@@ -45,67 +45,67 @@ HKEY_LOCAL_MACHINE\
 | 方向 | REG_SZ | "Left"<br /><br /> 權利 」<br /><br /> "Top"<br /><br /> 「 下 」 | 請參閱下方的註解區段。 |
 | DontForceCreate | REG_DWORD | 0 或 1 | 當此項目存在，且其值不是零時，是視窗載入，但不是會立即顯示。 |
 
-### <a name="comments"></a>註解  
- 方向的項目定義按兩下標題列時的工具視窗停駐的位置。 這個位置是相對於視窗項目中指定的視窗。 如果樣式項目設定為 「 連結 」，方向的項目可以是"Left"、"Right"、"Top"或 「 底部 」。 如果樣式項目是 「 索引標籤式 」、 方向的項目可以 「 保留 」 或 「 右 」，並指定 [] 索引標籤加入的位置。 如果樣式項目是 「 浮動 」，第一次浮動工具視窗。 按兩下標題列時，將套用的方向和視窗的項目，和視窗使用 「 索引標籤式 」 樣式。 如果"AlwaysFloat 」 的樣式項目，不能停駐工具視窗。 如果"MDI"的樣式項目，工具視窗會連結到 MDI 區域中，並會忽略視窗項目。  
+### <a name="comments"></a>註解
+ 方向的項目定義按兩下標題列時的工具視窗停駐的位置。 這個位置是相對於視窗項目中指定的視窗。 如果樣式項目設定為 「 連結 」，方向的項目可以是"Left"、"Right"、"Top"或 「 底部 」。 如果樣式項目是 「 索引標籤式 」、 方向的項目可以 「 保留 」 或 「 右 」，並指定 [] 索引標籤加入的位置。 如果樣式項目是 「 浮動 」，第一次浮動工具視窗。 按兩下標題列時，將套用的方向和視窗的項目，和視窗使用 「 索引標籤式 」 樣式。 如果"AlwaysFloat 」 的樣式項目，不能停駐工具視窗。 如果"MDI"的樣式項目，工具視窗會連結到 MDI 區域中，並會忽略視窗項目。
 
-### <a name="example"></a>範例  
+### <a name="example"></a>範例
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        8.0Exp\  
-          ToolWindows\  
-            {A0C5197D-0AC7-4B63-97CD-8872A789D233}\  
-              (Default)       = reg_sz: {DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}  
-              DontForceCreate = reg_dword: 0x00000000  
-              Float           = reg_sz: 100,100,450,300  
-              Name            = reg_sz: Bookmarks  
-              Orientation     = reg_sz: Left  
-              Style           = reg_sz: Tabbed  
-              Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        8.0Exp\
+          ToolWindows\
+            {A0C5197D-0AC7-4B63-97CD-8872A789D233}\
+              (Default)       = reg_sz: {DA9FB551-C724-11D0-AE1F-00A0C90FFFC3}
+              DontForceCreate = reg_dword: 0x00000000
+              Float           = reg_sz: 100,100,450,300
+              Name            = reg_sz: Bookmarks
+              Orientation     = reg_sz: Left
+              Style           = reg_sz: Tabbed
+              Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}
+```
 
-## <a name="tool-window-visibility"></a>工具視窗可見性  
- 選擇性的可見性子機碼中的值可決定工具視窗的可見性設定。 值的名稱會用來儲存需要視窗的可見性的命令的 Guid。 如果命令執行時，IDE 會保證是建立工具視窗，並顯示。  
+## <a name="tool-window-visibility"></a>工具視窗可見性
+ 選擇性的可見性子機碼中的值可決定工具視窗的可見性設定。 值的名稱會用來儲存需要視窗的可見性的命令的 Guid。 如果命令執行時，IDE 會保證是建立工具視窗，並顯示。
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        <Version>\  
-          ToolWindows\  
-            <Tool Window GUID>\  
-              Visibility\  
-                (Default) = reg_sz:  
-                <GUID>    = reg_dword:  
-                <GUID>    = reg_dword:  
-                <GUID>    = reg_sz:  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        <Version>\
+          ToolWindows\
+            <Tool Window GUID>\
+              Visibility\
+                (Default) = reg_sz:
+                <GUID>    = reg_dword:
+                <GUID>    = reg_dword:
+                <GUID>    = reg_sz:
+```
 
-|名稱|類型|資料|描述|  
-|----------|----------|----------|-----------------|  
-|(預設值)|REG_SZ|無|將保留空白。|  
-|*\<GUID>*|REG_DWORD 或 REG_SZ|0 或描述性字串。|選擇性。 項目名稱必須是需要可見性命令的 GUID。 值只會保留資訊的字串。 值通常是`reg_dword`設為 0。|  
+|名稱|類型|資料|描述|
+|----------|----------|----------|-----------------|
+|(預設值)|REG_SZ|無|將保留空白。|
+|*\<GUID>*|REG_DWORD 或 REG_SZ|0 或描述性字串。|選擇性。 項目名稱必須是需要可見性命令的 GUID。 值只會保留資訊的字串。 值通常是`reg_dword`設為 0。|
 
-### <a name="example"></a>範例  
+### <a name="example"></a>範例
 
-```  
-HKEY_LOCAL_MACHINE\  
-  Software\  
-    Microsoft\  
-      VisualStudio\  
-        8.0Exp\  
-          ToolWindows\  
-            {EEFA5220-E298-11D0-8F78-00A0C9110057}\  
-              Visibility\  
-                (Default) = reg_sz:  
-                {93694fa0-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
-                {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000  
-                {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
-```  
+```
+HKEY_LOCAL_MACHINE\
+  Software\
+    Microsoft\
+      VisualStudio\
+        8.0Exp\
+          ToolWindows\
+            {EEFA5220-E298-11D0-8F78-00A0C9110057}\
+              Visibility\
+                (Default) = reg_sz:
+                {93694fa0-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000
+                {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000
+                {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000
+```
 
-## <a name="see-also"></a>另請參閱  
- [VSPackage](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>另請參閱
+- [VSPackage](../extensibility/internals/vspackages.md)

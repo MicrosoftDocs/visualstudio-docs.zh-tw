@@ -1,7 +1,7 @@
 ---
 title: BPREQI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BPREQI_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 448cdf3087014b927a9c144fbc756c5cc8f4a37e
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 25b95e2934de9d09ef9541162b05920a04f645bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317402"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723041"
 ---
 # <a name="bpreqifields"></a>BPREQI_FIELDS
 指定要擷取中斷點要求的相關資訊。
@@ -64,47 +64,33 @@ public enum enum_BPREQI_FIELDS {
 ```
 
 ## <a name="members"></a>成員
-BPREQI_BPLOCATION  
-初始化/使用`bpLocation`（中斷點位置） 欄位[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)或是[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。
+初始化/使用 BPREQI_BPLOCATION `bpLocation` （中斷點位置） 欄位[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)或是[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。
 
-BPREQI_LANGUAGE  
-初始化/使用`guidLanguage`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
+初始化/使用 BPREQI_LANGUAGE`guidLanguage`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
 
-BPREQI_PROGRAM  
-初始化/使用`pProgram`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
+初始化/使用 BPREQI_PROGRAM`pProgram`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
 
-BPREQI_PROGRAMNAME  
-初始化/使用`bstrProgramName`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
+初始化/使用 BPREQI_PROGRAMNAME`bstrProgramName`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
 
-BPREQI_THREAD  
-初始化/使用`pThread`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
+初始化/使用 BPREQI_THREAD`pThread`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
 
-BPREQI_THREADNAME  
-初始化/使用`bstrThreadName`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
+初始化/使用 BPREQI_THREADNAME`bstrThreadName`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
 
-BPREQI_PASSCOUNT  
-初始化/使用`bpPassCount`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
+初始化/使用 BPREQI_PASSCOUNT`bpPassCount`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
 
-BPREQI_CONDITION  
-初始化/使用`bpCondition`（中斷點條件） 欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
+初始化/使用 BPREQI_CONDITION `bpCondition` （中斷點條件） 欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
 
-BPREQI_FLAGS  
-初始化/使用`dwFlags`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
+初始化/使用 BPREQI_FLAGS`dwFlags`欄位`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`結構。
 
-BPREQI_ALLOLDFIELDS  
-初始化/使用的所有欄位的`BP_REQUEST_INFO`結構。
+BPREQI_ALLOLDFIELDS 初始化/使用所有欄位的`BP_REQUEST_INFO`結構。
 
-BPREQI_VENDOR  
-初始化/使用`guidVendor`欄位`BP_REQUEST_INFO2`結構。
+初始化/使用 BPREQI_VENDOR`guidVendor`欄位`BP_REQUEST_INFO2`結構。
 
-BPREQI_CONSTRAINT  
-初始化/使用`bstrConstraint`欄位`BP_REQUEST_INFO2`結構。
+初始化/使用 BPREQI_CONSTRAINT`bstrConstraint`欄位`BP_REQUEST_INFO2`結構。
 
-BPREQI_TRACEPOINT  
-初始化/使用`bstrTracepoint`欄位`BP_REQUEST_INFO2`結構。
+初始化/使用 BPREQI_TRACEPOINT`bstrTracepoint`欄位`BP_REQUEST_INFO2`結構。
 
-BPREQI_ALLFIELDS  
-指定的所有欄位`BP_REQUEST_INFO2`結構。
+BPREQI_ALLFIELDS 指定所有欄位`BP_REQUEST_INFO2`結構。
 
 ## <a name="remarks"></a>備註
 作為引數[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)並[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)方法，來指定哪些欄位[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)並[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構會進行初始化。
@@ -121,7 +107,7 @@ BPREQI_ALLFIELDS
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)  
-[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
-[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
+- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
+- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

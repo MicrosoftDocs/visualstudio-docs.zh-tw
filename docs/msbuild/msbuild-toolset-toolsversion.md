@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8b1e43a311936a35b15cf7a73c4f00a4793268
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2684ed1389556dfb96bf8eeb113f82336eb8c6d0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947616"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605181"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般而言，MSBuild 工具組包括 *microsoft.common.tasks* 檔案、*microsoft.common.targets* 檔案和編譯器，例如 *csc.exe* 和 *vbc.exe*。 大部分的工具組都可用來將應用程式編譯為多個版本的 .NET Framework 和多個系統平台。 不過，MSBuild 2.0 工具組僅能以 .NET Framework 2.0 為使用目標。
@@ -116,4 +116,5 @@ MSBuild 會提供 `ToolLocationHelper` 方法的多載，這些方法可加入 `
 子工具組已引進 .NET Framework 4.5。
 
 ## <a name="see-also"></a>另請參閱
- [標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md) [多目標](../msbuild/msbuild-multitargeting-overview.md)
+- [標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)
+- [多目標](../msbuild/msbuild-multitargeting-overview.md)

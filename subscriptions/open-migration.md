@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: lank
 ms.date: 07/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解 Open 和 Open License 移轉至 Visual Studio 訂用帳戶管理入口網站。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3f846be049ce8e3aaae8c1e49653869c37d0f72b
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995838"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843191"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Open 和 Open License 移轉至新的 Visual Studio 訂用帳戶管理入口網站
 
@@ -28,22 +26,22 @@ ms.locfileid: "43995838"
 
 - 登入之後，他們就可以存取其公司的訂用帳戶。
 
-在移轉日期之後，客戶和夥伴會落入下面其中一種情節。 
+在移轉日期之後，客戶和夥伴會落入下面其中一種情節。
 
 ## <a name="open-and-open-license-management-for-new-orders"></a>新訂單的 Open 和 Open License 管理
 
-若要在 [Visual Studio 訂用帳戶管理入口網站](https://manage.visualstudio.com)中管理訂用帳戶，夥伴和客戶需要遵循一些步驟。 程序將會： 
+若要在 [Visual Studio 訂用帳戶管理入口網站](https://manage.visualstudio.com)中管理訂用帳戶，夥伴和客戶需要遵循一些步驟。 程序將會：
 
 - 夥伴將代表客戶下單，並輸入客戶的公司電子郵件地址。
 
 - 客戶將會收到一則通知，邀請他們指派系統管理員並在 [Visual Studio 訂用帳戶管理入口網站](https://manage.visualstudio.com)中存取其訂用帳戶。
 
-- 若要讓夥伴代表客戶管理訂用帳戶，他們需要在管理入口網站上註冊。 下面列出取得存取權的各種方式 (與 add-open 程序類似)。 
+- 若要讓夥伴代表客戶管理訂用帳戶，他們需要在管理入口網站上註冊。 下面列出取得存取權的各種方式 (與 add-open 程序類似)。
 
 
 ## <a name="existing-partners-adding-a-new-license"></a>新增授權的現有夥伴
 
-這適用於下列夥伴：這些夥伴已可存取 [Visual Studio 訂用帳戶管理入口網站](https://manage.visualstudio.com)，但已使用他們需要管理的 Visual Studio 訂用帳戶來下 Open License 訂單。 
+這適用於下列夥伴：這些夥伴已可存取 [Visual Studio 訂用帳戶管理入口網站](https://manage.visualstudio.com)，但已使用他們需要管理的 Visual Studio 訂用帳戶來下 Open License 訂單。
 
 - 夥伴直接前往 https://manage.visualstudio.com 並登入。
 
@@ -57,9 +55,9 @@ ms.locfileid: "43995838"
 
 ## <a name="new-partners-who-register-on-the-volume-licensing-service-center-vlsc"></a>在大量授權服務中心 (VLSC) 上註冊的新夥伴
 
-這適用於下列新夥伴：這些夥伴在嘗試存取 [Visual Studio 訂用帳戶管理入口網站](https://manage.visualstudio.com)之前，下新 Open License 訂單但透過 add-open 流程在 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 上註冊。 
+這適用於下列新夥伴：這些夥伴在嘗試存取 [Visual Studio 訂用帳戶管理入口網站](https://manage.visualstudio.com)之前，下新 Open License 訂單但透過 add-open 流程在 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 上註冊。
 
-- 夥伴將會登入 VLSC 並巡覽至 [關聯摘要]。 
+- 夥伴將會登入 VLSC 並巡覽至 [關聯摘要]。
 
 - 他們接著會選取想要管理的 Open License。
 
@@ -75,9 +73,9 @@ ms.locfileid: "43995838"
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal--directly"></a>直接瀏覽 Visual Studio 訂用帳戶管理入口網站的新夥伴
 
-此情節適用於下列新夥伴：這些夥伴已下新 Open License 訂單，但尚未在 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 上註冊，並直接前往 [Visual Studio 訂用帳戶管理入口網站](https://manage.visualstudio.com)。 
+此情節適用於下列新夥伴：這些夥伴已下新 Open License 訂單，但尚未在 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 上註冊，並直接前往 [Visual Studio 訂用帳戶管理入口網站](https://manage.visualstudio.com)。
 
-- 夥伴直接前往 https://manage.visualstudio.com。 
+- 夥伴直接前往 https://manage.visualstudio.com。
 
 - 他們會收到錯誤，指出其為不可辨識的使用者。
 

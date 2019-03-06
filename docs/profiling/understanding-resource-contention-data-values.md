@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5bfd571364dadb4d070634ee6a5d28951e90586
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ed72fe023e849d68dc8c417fc237bdd9e3d8c0f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960707"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622497"
 ---
 # <a name="understand-resource-contention-data-values"></a>了解資源爭用資料值
 

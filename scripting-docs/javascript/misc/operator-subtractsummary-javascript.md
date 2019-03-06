@@ -1,29 +1,23 @@
 ---
 title: 運算子摘要 (JavaScript) |Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 3bc55336-912f-4ff8-8d28-1e26e0144840
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 85eb607ed868d034860d44b3ecaf69a5d8d55c89
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: dadd47684978bf4be6c9029646d4b6041cb431ee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349318"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844330"
 ---
 # <a name="operator-summary-javascript"></a>運算子摘要 (JavaScript)
 下表列出[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]其各自的類別目錄中的運算子。  

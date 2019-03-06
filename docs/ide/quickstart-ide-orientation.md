@@ -1,19 +1,19 @@
 ---
 title: Visual Studio IDE 導覽
 titleSuffix: ''
-ms.date: 07/12/2018
+ms.date: 02/21/2019
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e847829877328cff1a244eae4cd5d29616c7a8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0e70a28dd3bfc9511cdfec3656ff84c77802fa8f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955826"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712524"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio 整合式開發環境 (IDE) 初探
 
@@ -78,6 +78,8 @@ Visual Studio 頂端的功能表列可將命令依類別分組。 例如，[專�
 ## <a name="quick-launch"></a>快速啟動
 
 透過 [快速啟動] 方塊可以快速且輕鬆地執行 Visual Studio 中大部分的工作。 您可以輸入想要執行工作的相關文字，它就會顯示與該文字相關的選項清單。 例如，假設您想要增加建置輸出的詳細資料，以顯示建置實際工作內容的其他詳細資料。 您可能使用的方法如下：
+
+1. 找出 IDE 右上角的 [快速啟動] 方塊。 (或者，按下 **Ctrl**+**Q** 加以存取。)
 
 1. 在 [快速啟動] 方塊中，鍵入**詳細資訊**。 從顯示的結果中，選擇 [選項] 類別下的 [專案和方案] --> [建置並執行]。
 

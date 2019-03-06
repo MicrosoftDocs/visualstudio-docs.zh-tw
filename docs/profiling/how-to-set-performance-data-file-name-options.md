@@ -1,5 +1,5 @@
 ---
-title: HOW TO：設定效能資料檔案名稱選項 | Microsoft Docs
+title: 作法：設定效能資料檔案名稱選項 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67297fdfaa7d5ac797cd78b1fd1999c65f336f10
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b83b0aa083ca115797c9dc1cd8345d397307177
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919183"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626956"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>HOW TO：設定效能資料檔案名稱選項
+# <a name="how-to-set-performance-data-file-name-options"></a>作法：設定效能資料檔案名稱選項
 
 根據預設，您要使用下列語法來儲存分析資料檔 (.*vsp*)：
 

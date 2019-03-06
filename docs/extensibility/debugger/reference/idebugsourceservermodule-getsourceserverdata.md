@@ -1,7 +1,7 @@
 ---
 title: IDebugSourceServerModule::GetSourceServerData | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugSourceServerModule::GetSourceServerData
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8880f00528b1c2b1f081b6c306e1f94cccc109ec
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: fc99d014c1e31616ebd2a6cc16608a1d1bc741ce
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450278"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683866"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 擷取來源伺服器資訊的陣列。
@@ -37,11 +37,13 @@ public int GetSourceServerData(
 ```
 
 #### <a name="parameters"></a>參數
-`pDataByteCount`  
-[out]中的資料陣列的位元組數目。
+`pDataByteCount`
 
-`ppData`  
-[out]參考的資料陣列。
+ [out]中的資料陣列的位元組數目。
+
+`ppData`
+
+ [out]參考的資料陣列。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -72,4 +74,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)
+- [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6fa54b0a0931c5bbefd7efb3a86d668f6cb7c64
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: dd56fc50dda1dcbc7eee01ebca8f1e789a839851
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853062"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600959"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>使用 MSBuild 同時建置多個專案
 您可以使用 MSBuild 透過讓專案平行執行的方式，加快建置多個專案的速度。 若要平行執行組建，您可以使用多核心或多處理器電腦上的下列設定：
@@ -70,6 +70,6 @@ msbuild.exe myproj.proj -maxcpucount:3
 ```
 
 ## <a name="see-also"></a>另請參閱
-[使用多個處理器來建置專案](../msbuild/using-multiple-processors-to-build-projects.md)  
-[撰寫能夠辨識多處理器的記錄器](../msbuild/writing-multi-processor-aware-loggers.md)  
-[Tuning C++ build parallelism blog](http://go.microsoft.com/fwlink/?LinkId=251457) (調整 C++ 組建平行處理原則部落格)
+- [使用多個處理器來建置專案](../msbuild/using-multiple-processors-to-build-projects.md)
+- [撰寫能夠辨識多處理器的記錄器](../msbuild/writing-multi-processor-aware-loggers.md)
+- [Tuning C++ build parallelism blog](http://go.microsoft.com/fwlink/?LinkId=251457) (調整 C++ 組建平行處理原則部落格)

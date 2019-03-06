@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/13/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 尋找訂用帳戶管理的相關詳細資訊
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 04b2170e38954f4806a35bd960a2d4d41080d212
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 8b5c0840c8ef3576b070e190302c111d84440f4f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283415"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843733"
 ---
 # <a name="learn-about-subscription-management"></a>了解訂用帳戶管理
 

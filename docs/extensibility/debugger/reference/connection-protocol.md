@@ -1,7 +1,7 @@
 ---
 title: CONNECTION_PROTOCOL | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONNECTION_PROTOCOL
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dcf3d271d331664d6d2ef210868245b50c264d6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2a7d8d056fb816a428d78a8e13455cf6ccdd8a90
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316480"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705829"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 表示用來偵錯伺服器和偵錯封裝 (DE) 之間進行通訊的通訊協定。
@@ -49,26 +49,19 @@ public enum CONNECTION_PROTOCOL {
 ```
 
 #### <a name="parameters"></a>參數
-CONNECTION_NONE  
-沒有已連接到伺服器。
+CONNECTION_NONE 否已連接到伺服器。
 
-CONNECTION_UNKNOWN  
-已建立的連接，但它是未知的類型。
+CONNECTION_UNKNOWN 的已連線，但它是未知的類型。
 
-CONNECTION_LOCAL  
-連接是在本機伺服器。
+CONNECTION_LOCAL 連接是在本機伺服器。
 
-CONNECTION_PIPE  
-連線是透過具名管道。
+CONNECTION_PIPE 連線是透過具名管道。
 
-CONNECTION_TCPIP  
-連線使用 TCP/IP。
+CONNECTION_TCPIP 連線使用 TCP/IP。
 
-CONNECTION_HTTP  
-連線使用 HTTP （透過 Web 伺服器）。
+CONNECTION_HTTP 連線使用 HTTP （透過 Web 伺服器）。
 
-CONNECTION_OTHER  
-已建立其他類型的連接 （這個值目前未使用）。
+其他類型的連線已建立的 CONNECTION_OTHER （此值目前未使用）。
 
 ## <a name="remarks"></a>備註
 會傳回這些值從[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)方法。
@@ -81,5 +74,5 @@ CONNECTION_OTHER
 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另請參閱
-[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)
+- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

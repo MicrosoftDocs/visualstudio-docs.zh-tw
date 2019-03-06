@@ -1091,6 +1091,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/ide/how-to-report-a-problem-with-visual-studio-2017.md",
+            "redirect_url": "/visualstudio/ide/how-to-report-a-problem-with-visual-studio",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/ide/how-to-restore-csharp-refactoring-snippets.md",
             "redirect_url": "/visualstudio/ide/reference/refactoring-in-visual-studio",
             "redirect_document_id": false
@@ -2067,7 +2072,12 @@
         },
         {
             "source_path": "docs/rtvs/data-science-workload.md",
-            "redirect_url": "/visualstudio/rtvs/data-science-and-analytical-applications-workload",
+            "redirect_url": "/visualstudio/python/data-science-and-analytical-applications-workload",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/rtvs/data-science-and-analytical-applications-workload.md",
+            "redirect_url": "/visualstudio/python/data-science-and-analytical-applications-workload",
             "redirect_document_id": false
         },
         {

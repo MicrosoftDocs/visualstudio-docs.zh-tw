@@ -3,7 +3,7 @@ items:
   href: ide/index.yml
 - name: 總覽
   items:
-  - name: Visual Studio 2017 概觀
+  - name: Visual Studio 概觀
     href: get-started/visual-studio-ide.md
   - name: 程式碼編輯器概觀
     href: get-started/tutorial-editor.md
@@ -95,25 +95,25 @@ items:
       - name: Visual Studio 工作負載與元件識別碼
         href: install/workload-and-component-ids.md
         items:
-        - name: Visual Studio Enterprise 2017
+        - name: Visual Studio 企業版
           href: install/workload-component-id-vs-enterprise.md
-        - name: Visual Studio Professional 2017
+        - name: Visual Studio Professional
           href: install/workload-component-id-vs-professional.md
-        - name: Visual Studio Community 2017
+        - name: Visual Studio Community
           href: install/workload-component-id-vs-community.md
-        - name: Visual Studio Team Explorer 2017
+        - name: Visual Studio Team Explorer
           href: install/workload-component-id-vs-team-explorer.md
-        - name: Visual Studio Desktop Express 2017
+        - name: Visual Studio Desktop Express
           href: install/workload-component-id-vs-express.md
-        - name: Visual Studio Build Tools 2017
+        - name: Visual Studio Build Tools
           href: install/workload-component-id-vs-build-tools.md
-        - name: Visual Studio Test Agent 2017
+        - name: Visual Studio Test Agent
           href: install/workload-component-id-vs-test-agent.md
-        - name: Visual Studio Test Controller 2017
+        - name: Visual Studio Test Controller
           href: install/workload-component-id-vs-test-controller.md
-        - name: Visual Studio Test Professional 2017
+        - name: Visual Studio Test Professional
           href: install/workload-component-id-vs-test-professional.md
-        - name: Visual Studio Feedback Client 2017
+        - name: Visual Studio Feedback Client
           href: install/workload-component-id-vs-feedback-client.md
       - name: Visual Studio 組建編號和發行日期
         href: install/visual-studio-build-numbers-and-release-dates.md
@@ -172,7 +172,7 @@ items:
         href: ide/creating-solutions-and-projects.md
       - name: 移植、移轉及升級專案
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-      - name: 在 Visual Studio 2019 Preview 中移植、移轉及升級專案
+      - name: 在 Visual Studio 2019 中移植、移轉及升級專案
         href: porting/port-migrate-upgrade-visual-studio-projects-2019.md
       - name: 管理專案和解決方案屬性
         href: ide/managing-project-and-solution-properties.md
@@ -305,12 +305,16 @@ items:
             href: ide/reference/generate-field-property-local.md
           - name: 產生建構函式
             href: ide/reference/generate-constructor.md
+          - name: 產生解構函式
+            href: ide/reference/generate-deconstructor.md
           - name: 將參數新增至方法
             href: ide/reference/add-parameter.md
           - name: 產生覆寫
             href: ide/reference/generate-override.md
           - name: 產生 Equals 與 GetHashCode 方法的覆寫
             href: ide/reference/generate-equals-gethashcode-methods.md
+          - name: 產生的 using
+            href: ide/reference/generate-usings.md
           - name: 實作抽象類別
             href: ide/reference/implement-abstract-class.md
           - name: 實作介面
@@ -330,6 +334,10 @@ items:
             href: ide/reference/convert-for-loop-to-foreach.md
           - name: Get 方法與屬性之間的轉換
             href: ide/reference/convert-get-method-to-property.md
+          - name: 將區域函式轉換為方法
+            href: ide/reference/convert-local-function-method.md
+          - name: 將 foreach 迴圈轉換為 LINQ
+            href: ide/reference/convert-foreach-linq.md
           - name: 將 LINQ 查詢轉換成 foreach 陳述式
             href: ide/reference/convert-linq-to-foreach.md
           - name: 封裝欄位
@@ -340,6 +348,10 @@ items:
             href: ide/reference/extract-method.md
           - name: 內嵌暫存變數
             href: ide/reference/inline-temporary-variable.md
+          - name: 轉換條件運算式和邏輯運算
+            href: ide/reference/invert-conditional-logical.md
+          - name: 反轉 if 陳述式
+            href: ide/reference/invert-if-statement.md
           - name: 移動參考附近的宣告
             href: ide/reference/move-declaration-near-reference.md
           - name: 將類型移至相符的檔案
@@ -354,6 +366,10 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: 使用明確類型
             href: ide/reference/convert-var-to-explicit-type.md
+          - name: 使用 Lambda 運算式或區塊主體
+            href: ide/reference/use-block-body-lambda.md
+          - name: 未使用的值和參數
+            href: ide/reference/unused-values-parameters.md
           - name: 使參數換行、縮排及對齊
             href: ide/reference/wrap-align-indent-parameters.md
         - name: 逐步解說：使用時產生程式碼
@@ -673,15 +689,15 @@ items:
       href: ide/environment-settings.md
     - name: 同步設定
       href: ide/synchronized-settings-in-visual-studio.md
-    - name: 變更字型與色彩
+    - name: 字型和色彩
       href: ide/how-to-change-fonts-and-colors-in-visual-studio.md
-    - name: 自訂功能表與工具列
+    - name: 功能表與工具列
       href: ide/how-to-customize-menus-and-toolbars-in-visual-studio.md
-    - name: 自訂視窗版面配置
+    - name: 視窗配置
       href: ide/customizing-window-layouts-in-visual-studio.md
-    - name: 自訂 [方案總管] 中的檔案巢狀
+    - name: '[方案總管] 中的檔案巢狀'
       href: ide/file-nesting-solution-explorer.md
-    - name: 自訂起始頁
+    - name: 啟動行為
       href: ide/customizing-the-start-page-for-visual-studio.md
     - name: 尋找和使用 Visual Studio 延伸模組
       href: ide/finding-and-using-visual-studio-extensions.md
@@ -1092,7 +1108,7 @@ items:
   items:
   - name: Visual Studio 2017 的新功能
     href: ide/whats-new-visual-studio-2017.md
-  - name: Visual Studio 2019 Preview 的新功能
+  - name: Visual Studio 2019 RC 的新功能
     href: ide/whats-new-visual-studio-2019.md
   - name: 版本資訊與系統需求
     items:
@@ -1119,7 +1135,7 @@ items:
     - name: 開發人員社群資料隱私權
       href: ide/developer-community-privacy.md
   - name: 如何在 Visual Studio 中回報問題
-    href: ide/how-to-report-a-problem-with-visual-studio-2017.md
+    href: ide/how-to-report-a-problem-with-visual-studio.md
     items:
     - name: 回報問題狀態和常見問題集
       href: ide/report-a-problem.md
@@ -1135,9 +1151,9 @@ items:
   - name: 告訴我們
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: f956b9a47ffe8fcf3f082711a742e36c90c95304
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: a54443258922e37da185b8abd7897a2ab6a525cb
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450603"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324256"

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b472c52934353e6324d72077f8ea878467159cbd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318637"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637083"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 描述中對應的位址的項目。
@@ -32,11 +32,9 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>項目
-`rva`  
-在圖中 A.相對虛擬位址 (RVA)
+`rva` 在圖中 A.相對虛擬位址 (RVA)
 
-`rvaTo`  
-相對虛擬位址`rva`會對應到像 b。
+`rvaTo` 相對虛擬位址`rva`會對應到像 b。
 
 ## <a name="remarks"></a>備註
 對應的位址會提供從一個映像版面配置的翻譯 （A） 到另一個 （B）。 陣列`DiaAddressMapEntry`依排序的結構`rva`定義對應的位址。
@@ -55,5 +53,5 @@ struct DiaAddressMapEntry {
 標頭： dia2.h
 
 ## <a name="see-also"></a>請參閱
-[列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
+- [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

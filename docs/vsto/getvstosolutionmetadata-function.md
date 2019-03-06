@@ -10,31 +10,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e066499352b9c9244941efc1b26169d40ec51f60
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d7714e78e897e6c8b391a6c30e9a548671ce80c4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875351"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635003"
 ---
 # <a name="getvstosolutionmetadata-function"></a>GetVstoSolutionMetadata 函式
-  此 API 支援 Office 基礎結構，但不適合直接從您的程式碼使用。  
-  
-## <a name="syntax"></a>語法  
-  
+  此 API 支援 Office 基礎結構，但不適合直接從您的程式碼使用。
+
+## <a name="syntax"></a>語法
+
 ```csharp
-HRESULT WINAPI GetVstoSolutionMetadata(  
-    LPCWSTR lpwszSolutionMetadataKey,  
-    ISolutionMetadata** ppSolutionInfo  
-);  
-```  
-  
-### <a name="parameters"></a>參數  
-  
-|參數|描述|  
-|---------------|-----------------|  
-|*lpwszSolutionMetadataKey*|請勿使用。|  
-|*ppSolutionInfo*|請勿使用。|  
-  
-## <a name="return-value"></a>傳回值  
- 如果此函數就會成功，它會傳回**S_OK**。 如果函式失敗，它會傳回錯誤碼。  
+HRESULT WINAPI GetVstoSolutionMetadata(
+    LPCWSTR lpwszSolutionMetadataKey,
+    ISolutionMetadata** ppSolutionInfo
+);
+```
+
+### <a name="parameters"></a>參數
+
+|參數|描述|
+|---------------|-----------------|
+|*lpwszSolutionMetadataKey*|請勿使用。|
+|*ppSolutionInfo*|請勿使用。|
+
+## <a name="return-value"></a>傳回值
+ 如果此函數就會成功，它會傳回**S_OK**。 如果函式失敗，它會傳回錯誤碼。

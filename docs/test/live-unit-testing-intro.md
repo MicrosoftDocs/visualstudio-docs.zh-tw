@@ -1,7 +1,7 @@
 ---
 title: Live Unit Testing 簡介
 description: 了解 Live Unit Testing 優點，以及在對專案進行單元測試時如何使用它。
-ms.date: 2017-09-11
+ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: b55e30529cdf02d8fea235b7a84cb27aeee1f3a7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8464ecd96234511017953b6bc0dce7fabdef810b
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955563"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796728"
 ---
 # <a name="introducing-live-unit-testing"></a>Live Unit Testing 簡介
 

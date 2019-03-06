@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0febbf31dcf9f0ae1e7a4e47dae2e9cf3d291dbf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e93500195ec98cf7df84a45ae52abc75ad91c59d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909163"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606857"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 建立簡單的資料應用程式
 
@@ -197,7 +197,7 @@ Visual Studio 所產生的預設排列方式不適合您的應用程式，因此
          <Label Content="Contact Name:" Grid.Row="2" Style="{StaticResource Label}"/>
          <TextBox x:Name="contactNameTextBox" Grid.Row="2" Style="{StaticResource CustTextBox}"
                   Text="{Binding ContactName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
-         <Label Content="Contact Title:" Grid.Row="3" Style="{StaticResource Label}"/>
+         <Label Content="Contact title:" Grid.Row="3" Style="{StaticResource Label}"/>
          <TextBox x:Name="contactTitleTextBox" Grid.Row="3" Style="{StaticResource CustTextBox}"
                   Text="{Binding ContactTitle, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
          <Label Content="Address:" Grid.Row="4" Style="{StaticResource Label}"/>
@@ -244,7 +244,7 @@ Visual Studio 所產生的預設排列方式不適合您的應用程式，因此
          <Label Content="Contact Name:" Grid.Row="2" Style="{StaticResource Label}"/>
          <TextBox x:Name="add_contactNameTextBox" Grid.Row="2" Style="{StaticResource CustTextBox}"
                   Text="{Binding ContactName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
-         <Label Content="Contact Title:" Grid.Row="3" Style="{StaticResource Label}"/>
+         <Label Content="Contact title:" Grid.Row="3" Style="{StaticResource Label}"/>
          <TextBox x:Name="add_contactTitleTextBox" Grid.Row="3" Style="{StaticResource CustTextBox}"
                   Text="{Binding ContactTitle, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
          <Label Content="Address:" Grid.Row="4" Style="{StaticResource Label}"/>

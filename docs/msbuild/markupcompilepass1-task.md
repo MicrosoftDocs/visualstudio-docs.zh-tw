@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5f9ec3f2db14369cf8f469b718b027fd394649
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dfcd34daa6a9a2b4cb4bd095bc91ac5962c7335d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027330"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643050"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 工作
 
@@ -102,11 +102,11 @@ ms.locfileid: "55027330"
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <UsingTask 
-    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass1" 
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass1"
     AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
   <Target Name="MarkupCompilePass1Task">
-    <MarkupCompilePass1 
+    <MarkupCompilePass1
       AssemblyName="WPFMSBuildSample"
       Language="C#"
       OutputType="WinExe"
@@ -121,9 +121,9 @@ ms.locfileid: "55027330"
 
 ## <a name="see-also"></a>另請參閱
 
-[WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)  
-[WPF MSBuild 工作參考](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild 參考](../msbuild/msbuild-reference.md)  
-[MSBuild 工作參考](../msbuild/msbuild-task-reference.md)  
-[建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[WPF XAML 瀏覽器應用程式概觀](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)
+- [WPF MSBuild 工作參考](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild 參考](../msbuild/msbuild-reference.md)
+- [MSBuild 工作參考](../msbuild/msbuild-task-reference.md)
+- [建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [WPF XAML 瀏覽器應用程式概觀](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

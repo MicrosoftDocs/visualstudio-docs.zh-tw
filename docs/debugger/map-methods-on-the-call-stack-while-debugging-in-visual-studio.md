@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5285149bbefa8230940cfad19b5e0391a1e99bd
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 118b8a6c8d857e626d39cf27d2767f75cd0550ee
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690498"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704809"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>建立視覺效果的對應呼叫堆疊偵錯時 (C#，Visual Basic、 c + +、 JavaScript)
 
@@ -54,7 +54,7 @@ ms.locfileid: "55690498"
 ##  <a name="MapStack"></a> 對應呼叫堆疊
 
 1. 在 Visual Studio Enterprise 中C#，Visual Basic、 c + + 或 JavaScript 專案中，開始藉由選取偵錯**偵錯** > **開始偵錯**或按下**F5**.
-   
+
 1. 您的應用程式進入中斷模式或是您逐步執行函式之後，請選取**偵錯** > **Code Map**，或按**Ctrl**+**Shift**+**`**.
 
    目前的呼叫堆疊會在新的 Code Map 上顯示為橙色：
@@ -73,19 +73,19 @@ ms.locfileid: "55690498"
 ## <a name="map-external-code"></a>將外部程式碼對應
 
 根據預設，只有您的程式碼會出現在對應圖上。 若要在地圖上查看外部程式碼：
-  
+
 - 以滑鼠右鍵按一下**呼叫堆疊**視窗，然後選取**顯示外部程式碼**:
-  
+
   ![顯示外部程式碼，使用 [呼叫堆疊] 視窗](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
 - 或者，您也可以取消選取**啟用 Just My Code** Visual Studio 中**工具**(或**偵錯**) >**選項** >  **偵錯**:
-  
+
   ![顯示外部程式碼，使用 [選項] 對話方塊](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
 ## <a name="control-the-maps-layout"></a>控制地圖的版面配置
 
-變更地圖的配置不會影響以任何方式的程式碼。 
+變更地圖的配置不會影響以任何方式的程式碼。
 
-若要控制地圖的版面配置，請選取**版面配置**map 工具列上的功能表。 
+若要控制地圖的版面配置，請選取**版面配置**map 工具列上的功能表。
 
 在 [**版面配置**] 功能表中，您可以：
 
@@ -95,9 +95,9 @@ ms.locfileid: "55690498"
 
 ##  <a name="MakeNotes"></a> 製作程式碼的筆記
 
-您可以加入註解，以追蹤程式碼中的情況。 
+您可以加入註解，以追蹤程式碼中的情況。
 
-若要加入註解，以滑鼠右鍵按一下 code map，然後選取**編輯** > **新註解**，然後輸入註解。 
+若要加入註解，以滑鼠右鍵按一下 code map，然後選取**編輯** > **新註解**，然後輸入註解。
 
 若要加入新的一行的註解，請按**Shift**+**Enter**。
 
@@ -109,11 +109,11 @@ ms.locfileid: "55690498"
 
 ![更新 code map，包含下一個呼叫堆疊](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
-若要停止從將新增新的呼叫堆疊會自動對應，請選取![顯示呼叫堆疊 code map 上自動](../debugger/media/debuggermap_automaticupdateicon.gif "顯示呼叫堆疊 code map 上自動")code map 工具列上。 地圖會繼續反白顯示現有的呼叫堆疊。 若要手動新增至對應的目前呼叫堆疊，請按**Ctrl**+**Shift**+**`**。 
+若要停止從將新增新的呼叫堆疊會自動對應，請選取![顯示呼叫堆疊 code map 上自動](../debugger/media/debuggermap_automaticupdateicon.gif "顯示呼叫堆疊 code map 上自動")code map 工具列上。 地圖會繼續反白顯示現有的呼叫堆疊。 若要手動新增至對應的目前呼叫堆疊，請按**Ctrl**+**Shift**+**`**。
 
 ##  <a name="AddRelatedCode"></a> 將相關程式碼新增至地圖
 
-現在，您有一個對應，在C#或 Visual Basic 中，您可以新增欄位、 屬性和其他方法，來追蹤程式碼中的事情等項目。 
+現在，您有一個對應，在C#或 Visual Basic 中，您可以新增欄位、 屬性和其他方法，來追蹤程式碼中的事情等項目。
 
 若要移到程式碼中方法的定義，按兩下的方法，在對應中，或選取它然後按**F12**，或以滑鼠右鍵按一下它，然後選取**移至定義**。
 
@@ -151,7 +151,7 @@ ms.locfileid: "55690498"
 
 您可以匯出對應、 與 Microsoft Outlook 傳送給其他人、 將它儲存到您的方案，並將它簽入版本控制。
 
-若要共用或儲存對應，使用**共用**在 code map 工具列。 
+若要共用或儲存對應，使用**共用**在 code map 工具列。
 
 ![共用堆疊呼叫 code map 與他人](../debugger/media/debuggermap_sharewithothers.png "共用堆疊呼叫 code map 與其他人")
 

@@ -5,15 +5,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 44803eea573860074f67d2e97f1160614f452ac5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8990252f78a9e89b9bdaa825d5443e4d38d2ae89
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766377"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843295"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>瀏覽儲存體以上傳資料或下載模型和記錄檔
 

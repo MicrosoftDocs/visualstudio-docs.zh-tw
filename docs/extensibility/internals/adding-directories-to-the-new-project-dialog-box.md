@@ -10,42 +10,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26fe254a168ae1834fba804ca34d4e48bd240ca6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d8e68413795b7004542ee312dcb27492e55e7f0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941086"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626189"
 ---
 # <a name="add-directories-to-the-new-project-dialog-box"></a>將目錄新增至 [新增專案] 對話方塊
-當您建立新的專案類型時，您也可以註冊新的目錄中**新的專案**對話方塊來顯示它們做為範本使用。 下列程式碼範例說明如何註冊新的目錄，也稱為節點。 在範例中，VSPackage，所公開的範本*CLSID_Package*，註冊。 如此一來，左邊**新的專案**對話方塊會提供加入的節點名稱，取決於*Folder_Label_ResID*資源。 此資源會從 VSPackage 附屬 DLL 載入。  
-  
- **資料夾**的值代表所在資料夾的 GUID *Folder_Label_ResID*節點會顯示。 在此範例中，代表 GUID**其他專案**資料夾中的**專案類型**窗格**新專案** 對話方塊。 如果**其他專案**值不存在，此標籤位於最上層。  
-  
- `TemplatesDir`值會指定包含專案範本的目錄的完整路徑。 這些檔案可以是 *.vsz*檔案或要複製的一般範本檔案。  
-  
- 如果您指定`TemplatesLocalizedSubDir`，它必須是字串，可命名的子目錄的資源識別碼`TemplatesDir`保存當地語系化的範本。 因為[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]載入字串資源的附屬 DLL 如果您沒有帳戶，每個附屬 DLL 可包含不同的子目錄名稱。 `SortPriority`值指定排序的優先順序。  
-  
-```  
-NoRemove NewProjectTemplates  
-{  
-    NoRemove TemplateDirs  
-  {  
-    ForceRemove %CLSID_Package%  
-    {  
-      ForceRemove /1 = s '#%Folder_Label_ResID%'  
-      {  
-        val Folder = s '{DCF2A94A-45B0-11D1-ADBF-00C04FB6BE4C}'  
-        val TemplatesDir = s '%Template_Path%'  
-        val TemplatesLocalizedSubDir = s '#100'  
-        val SortPriority = d 1000  
-      }  
-    }  
-  }  
-}  
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)   
- [將項目新增至 [加入新項目] 對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [將目錄新增至 [加入新項目] 對話方塊](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+當您建立新的專案類型時，您也可以註冊新的目錄中**新的專案**對話方塊來顯示它們做為範本使用。 下列程式碼範例說明如何註冊新的目錄，也稱為節點。 在範例中，VSPackage，所公開的範本*CLSID_Package*，註冊。 如此一來，左邊**新的專案**對話方塊會提供加入的節點名稱，取決於*Folder_Label_ResID*資源。 此資源會從 VSPackage 附屬 DLL 載入。
+
+ **資料夾**的值代表所在資料夾的 GUID *Folder_Label_ResID*節點會顯示。 在此範例中，代表 GUID**其他專案**資料夾中的**專案類型**窗格**新專案** 對話方塊。 如果**其他專案**值不存在，此標籤位於最上層。
+
+ `TemplatesDir`值會指定包含專案範本的目錄的完整路徑。 這些檔案可以是 *.vsz*檔案或要複製的一般範本檔案。
+
+ 如果您指定`TemplatesLocalizedSubDir`，它必須是字串，可命名的子目錄的資源識別碼`TemplatesDir`保存當地語系化的範本。 因為[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]載入字串資源的附屬 DLL 如果您沒有帳戶，每個附屬 DLL 可包含不同的子目錄名稱。 `SortPriority`值指定排序的優先順序。
+
+```
+NoRemove NewProjectTemplates
+{
+    NoRemove TemplateDirs
+  {
+    ForceRemove %CLSID_Package%
+    {
+      ForceRemove /1 = s '#%Folder_Label_ResID%'
+      {
+        val Folder = s '{DCF2A94A-45B0-11D1-ADBF-00C04FB6BE4C}'
+        val TemplatesDir = s '%Template_Path%'
+        val TemplatesLocalizedSubDir = s '#100'
+        val SortPriority = d 1000
+      }
+    }
+  }
+}
+```
+
+## <a name="see-also"></a>另請參閱
+- [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)
+- [將項目新增至 [加入新項目] 對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [將目錄新增至 [加入新項目] 對話方塊](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

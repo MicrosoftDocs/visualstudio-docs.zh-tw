@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttribute::GetParentField |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCustomAttribute::GetParentField
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a9f7987a2646b0235ffb266cf273704dce87c74
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 158887e9f2d7d7b250b435570d6780e460508816
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002500"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693369"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
-取得要附加自訂屬性的欄位。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT GetParentField(   
-   IDebugField** ppField  
-);  
-```  
-  
-```csharp  
-int GetParentField(  
-   out IDebugField ppField  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `ppField`  
- [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示要附加自訂屬性的欄位。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- 呼叫[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)來判斷什麼種類的欄位的父物件。  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+取得要附加自訂屬性的欄位。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT GetParentField( 
+   IDebugField** ppField
+);
+```
+
+```csharp
+int GetParentField(
+   out IDebugField ppField
+);
+```
+
+#### <a name="parameters"></a>參數
+ `ppField`
+
+ [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示要附加自訂屬性的欄位。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，會傳回 S_OK;否則，傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+ 呼叫[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)來判斷什麼種類的欄位的父物件。
+
+## <a name="see-also"></a>另請參閱
+- [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

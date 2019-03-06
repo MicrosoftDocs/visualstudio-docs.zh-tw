@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 081f48f89b533862125069f751996c72a4cf00f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 734898fdaffe067025d45a0b4905443f87450d3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025640"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629569"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>舊版語言服務中的語法著色
 
@@ -63,11 +63,17 @@ Visual Studio 會使用色彩服務識別語言的項目，並使用指定的色
 >  除了使用語言服務色彩標示器，VSPackage 也可以使用一般用途的 Visual Studio 文字著色機制。 如需有關這項機制的詳細資訊，請參閱 <<c0> [ 使用的字型和色彩](../../extensibility/using-fonts-and-colors.md)。
 
 ## <a name="in-this-section"></a>本節內容
- [實作語法著色](../../extensibility/internals/implementing-syntax-coloring.md)編輯器如何存取語言服務的語法著色和語言服務必須實作以支援語法著色的討論。
+- [實作語法著色](../../extensibility/internals/implementing-syntax-coloring.md)
 
- [如何：使用內建可設定色彩的項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)示範如何使用內建可設定色彩的項目從語言服務。
+ 討論如何編輯器存取語言服務的語法著色和語言服務必須實作以支援的語法著色。
 
- [自訂色彩的項目](../../extensibility/internals/custom-colorable-items.md)討論如何實作自訂色彩的項目。
+- [如何：使用內建可設定色彩的項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+
+ 示範如何使用內建可設定色彩的項目從語言服務。
+
+- [自訂可設定色彩的項目](../../extensibility/internals/custom-colorable-items.md)
+
+ 討論如何實作自訂色彩的項目。
 
 ## <a name="see-also"></a>另請參閱
 

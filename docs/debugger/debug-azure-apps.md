@@ -1,6 +1,6 @@
 ---
 title: Azure 服務進行偵錯 |Microsoft Docs
-ms.date: 09/14/2017
+ms.date: 09/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 6190f4e735b7b3f05efe80f8d8562ac03f1ee3c8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9cf5752c43e22f2df73fa6701374805cf4770a82
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335025"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428618"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>偵錯 Visual Studio 中的 Azure 服務
 
@@ -33,5 +33,6 @@ ms.locfileid: "56335025"
 
 - 若要遠端偵錯 Azure Service Fabric 上的 ASP.NET，請參閱[偵錯遠端 Service Fabric 應用程式](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
-## <a name="see-also"></a>請參閱  
- [Visual Studio 偵錯](../debugger/index.md)
+## <a name="see-also"></a>請參閱
+
+- [Visual Studio 偵錯](../debugger/index.md)

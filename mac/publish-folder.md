@@ -1,5 +1,5 @@
 ---
-title: 發佈到資料夾 - Visual Studio for Mac
+title: 發行至資料夾
 ms.date: 01/22/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -8,13 +8,13 @@ ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
 author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
-ms.prod: visual-studio-mac-dev15
-ms.openlocfilehash: 505d65bc070446fa4b3f30a31fc12c3ee5c51026
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.prod: visual-studio-mac
+ms.openlocfilehash: c59e19434edcb19982fa72d3ddc96d7cb6a870a8
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55767841"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840363"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 將 Web 應用程式發佈到資料夾
 

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 02203ba84ee2d394ca9b714d74f607480ba68460
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: e1f430268549da74c1039899e828d37a21ac336c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227809"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721052"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 應用程式中偵錯 HTML 和 CSS
 
@@ -162,7 +162,7 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")
 
     > [!TIP]
-    > 您也可以在 [JavaScript 主控台] 視窗的左下角，於 >> 輸入提示下輸入 `select(fView)`，然後按 ENTER 來選取 DIV 項目。
+    > 您也可以在 [JavaScript 主控台] 視窗的左下角，於 >> 輸入提示下鍵入 `select(fView)`，然後按 ENTER 來選取 DIV 項目。
 
     在 [DOM 總管] 視窗右邊索引標籤上的值會自動更新，以反映 DOM 總管中的目前項目。
 
@@ -240,7 +240,7 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
 
   當您使用 [DOM 總管] 視窗選取項目，並將滑鼠指標放在項目上時，對應的項目會在執行的應用程式中反白顯示。 您必須在 [DOM 總管] 中按一下元素將它選取，或者也可以使用方向鍵來反白顯示及選取元素。此外，您還可以使用 [ **選取元素** ] 按鈕來選取 [DOM 總管] 中的元素。 下圖顯示 [ **選取項目** ] 按鈕。
 
-  ![在 [DOM 總管] 中選取項目 按鈕](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")
+  ![在 [DOM 總管] 中選取項目按鈕](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")
 
   按一下 [ **選取元素** ] (或按 Ctrl+B) 會變更選取模式，讓您可以在執行的應用程式中按一下元素，即可選取 [DOM 總管] 中的項目。 只要再按一下，就會回到一般選取模式。 按一下 [ **選取項目**] 時，應用程式會移至前景，而游標會改變以反映新的選取模式。 按一下加框項目時，DOM 總管會回到前景，並已選取所指定的項目。
 
@@ -254,10 +254,10 @@ DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更�
 > Windows Phone 模擬器僅部分支援藉由滑鼠游標停留來醒目提示示項目。
 
 ## <a name="see-also"></a>請參閱
-[在 Visual Studio 中偵錯應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)  
-[鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[JavaScript 主控台命令](../debugger/javascript-console-commands.md)  
-[偵錯 HTML、CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[產品支援和協助工具](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
+- [在 Visual Studio 中偵錯應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)
+- [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [JavaScript 主控台命令](../debugger/javascript-console-commands.md)
+- [偵錯 HTML、CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [產品支援和協助工具](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

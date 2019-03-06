@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用分析工具命令列以檢測 .NET Framework 服務並收集記憶體資料 | Microsoft Docs
+title: 作法：使用分析工具命令列以檢測 .NET Framework 服務並收集記憶體資料 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
@@ -8,68 +8,68 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 987e0c080f684286fbc49308ca25535aca2f14ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9db76f90f50fd2eda6fcb443b2b7ca34a8bbc169
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003084"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604700"
 ---
-# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>HOW TO：使用分析工具命令列以檢測 .NET Framework 服務並收集記憶體資料
-本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具來檢測 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務，並收集記憶體使用量資料。 您可以收集記憶體配置資料，或收集記憶體配置和物件存留期資料。  
+# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>作法：使用分析工具命令列以檢測 .NET Framework 服務並收集記憶體資料
+本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具來檢測 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務，並收集記憶體使用量資料。 您可以收集記憶體配置資料，或收集記憶體配置和物件存留期資料。
 
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
-> 
+>  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
+>
 > [!NOTE]
->  如果某項服務無法在電腦啟動後重新啟動 (這類服務會在作業系統啟動時一併啟動)，則無法使用檢測方法來分析服務。  
-> 
->  若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 
+>  如果某項服務無法在電腦啟動後重新啟動 (這類服務會在作業系統啟動時一併啟動)，則無法使用檢測方法來分析服務。
+>
+>  若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
 
-## <a name="start-the-profiling-session"></a>啟動分析工作階段  
- 若要收集 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務的效能資料，請使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具來初始化適當的環境變數，並使用 [VSInstr.exe](../profiling/vsinstr.md) 工具來建立服務二進位檔的已檢測複本。  
+## <a name="start-the-profiling-session"></a>啟動分析工作階段
+ 若要收集 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務的效能資料，請使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具來初始化適當的環境變數，並使用 [VSInstr.exe](../profiling/vsinstr.md) 工具來建立服務二進位檔的已檢測複本。
 
- 裝載服務的電腦必須重新啟動，才能設定它進行分析。 此外還必須從 [服務控制管理員] 手動啟動服務。 接著啟動分析工具，再啟動 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務。  
+ 裝載服務的電腦必須重新啟動，才能設定它進行分析。 此外還必須從 [服務控制管理員] 手動啟動服務。 接著啟動分析工具，再啟動 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務。
 
- 執行已檢測的元件時，記憶體資料會自動收集到資料檔案。 程式碼剖析工作階段期間，您可以暫停和繼續資料收集。  
+ 執行已檢測的元件時，記憶體資料會自動收集到資料檔案。 程式碼剖析工作階段期間，您可以暫停和繼續資料收集。
 
- 若要結束分析工作階段，請關閉服務，並明確地關閉分析工具。 在大部分情況下，建議您在工作階段結束時清除程式碼剖析環境變數。  
+ 若要結束分析工作階段，請關閉服務，並明確地關閉分析工具。 在大部分情況下，建議您在工作階段結束時清除程式碼剖析環境變數。
 
-#### <a name="to-begin-profiling-a-net-framework-service"></a>開始分析 .NET Framework 服務  
+#### <a name="to-begin-profiling-a-net-framework-service"></a>開始分析 .NET Framework 服務
 
-1. 開啟 [命令提示字元] 視窗。  
+1. 開啟 [命令提示字元] 視窗。
 
-2. 使用 [VSInstr] 工具產生服務二進位檔的已檢測版本。  
+2. 使用 [VSInstr] 工具產生服務二進位檔的已檢測版本。
 
-3. 使用 [服務控制管理員] 將原始二進位檔取代成已檢測版本。 確定服務的 [啟動類型] 設定為 [手動]。  
+3. 使用 [服務控制管理員] 將原始二進位檔取代成已檢測版本。 確定服務的 [啟動類型] 設定為 [手動]。
 
-4. 初始化程式碼剖析環境變數。 類型：  
+4. 初始化程式碼剖析環境變數。 類型：
 
-    **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}  
+    **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}
 
-   -   **/globaltracegc** 和 **/globaltracegclife** 會啟用記憶體配置和物件存留期資料的收集功能。  
+   -   **/globaltracegc** 和 **/globaltracegclife** 會啟用記憶體配置和物件存留期資料的收集功能。
 
-       |選項|說明|  
-       |------------|-----------------|  
-       |**/globaltracegc**|僅收集記憶體配置資料。|  
-       |**/globaltracegclife**|收集記憶體配置和物件存留期資料。|  
+       |選項|說明|
+       |------------|-----------------|
+       |**/globaltracegc**|僅收集記憶體配置資料。|
+       |**/globaltracegclife**|收集記憶體配置和物件存留期資料。|
 
-5. 重新啟動電腦。  
+5. 重新啟動電腦。
 
-6. 開啟 [命令提示字元] 視窗。  
+6. 開啟 [命令提示字元] 視窗。
 
-7. 啟動分析工具。 類型：  
+7. 啟動分析工具。 類型：
 
-    **VSPerfCmd**  [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
+    **VSPerfCmd**  [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
-   - **/start: contention** 選項會將分析工具初始化。  
+   - **/start: contention** 選項會將分析工具初始化。
 
-   - **/output:**`OutputFile` 選項必須搭配 **/start** 使用。 `OutputFile` 指定程式碼剖析資料 (.vsp) 檔案的名稱和位置。  
+   - **/output:**`OutputFile` 選項必須搭配 **/start** 使用。 `OutputFile` 指定程式碼剖析資料 (.vsp) 檔案的名稱和位置。
 
-     您可以使用下列任一選項搭配 **/start:sample** 選項。  
+     您可以使用下列任一選項搭配 **/start:sample** 選項。
 
    > [!NOTE]
-   >  **/User** 和 **/crosssession** 選項通常是服務的必要選項。  
+   >  **/User** 和 **/crosssession** 選項通常是服務的必要選項。
 
    | 選項 | 說明 |
    | - | - |
@@ -83,46 +83,46 @@ ms.locfileid: "55003084"
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.*etl*) 檔案。 |
 
 
-8. 如有必要，請啟動服務。  
+8. 如有必要，請啟動服務。
 
-9. 將程式碼剖析工具附加至服務。 類型：  
+9. 將程式碼剖析工具附加至服務。 類型：
 
-     **VSPerfCmd /attach:** `PID`&#124;`ProcessName`  
+     **VSPerfCmd /attach:** `PID`&#124;`ProcessName`
 
-    -   指定服務的處理序識別碼或處理序名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序識別碼和名稱。  
+    -   指定服務的處理序識別碼或處理序名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序識別碼和名稱。
 
-## <a name="control-data-collection"></a>控制資料收集  
- 當服務執行時，您可以使用 *VSPerfCmd.exe* 選項開始和停止將資料寫入至檔案，以控制資料收集。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
+## <a name="control-data-collection"></a>控制資料收集
+ 當服務執行時，您可以使用 *VSPerfCmd.exe* 選項開始和停止將資料寫入至檔案，以控制資料收集。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。
 
-#### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
+#### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集
 
--   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
+-   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|說明|  
-    |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|  
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|開始 (**/threadon**) 或停止 (**/threadoff**) 執行緒識別碼 (`TID`) 所指定執行緒的資料收集。|  
+    |選項|說明|
+    |------------|-----------------|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|開始 (**/threadon**) 或停止 (**/threadoff**) 執行緒識別碼 (`TID`) 所指定執行緒的資料收集。|
 
-## <a name="end-the-profiling-session"></a>結束程式碼剖析工作階段  
- 若要結束分析工作階段，請關閉正在執行已檢測元件的應用程式，然後啟動 **VSPerfCmd** [/shutdown](../profiling/shutdown.md) 選項以關閉分析工具，並關閉分析資料檔案。 **VSPerfClrEnv /globaloff** 命令會清除分析環境變數。  
+## <a name="end-the-profiling-session"></a>結束程式碼剖析工作階段
+ 若要結束分析工作階段，請關閉正在執行已檢測元件的應用程式，然後啟動 **VSPerfCmd** [/shutdown](../profiling/shutdown.md) 選項以關閉分析工具，並關閉分析資料檔案。 **VSPerfClrEnv /globaloff** 命令會清除分析環境變數。
 
-#### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段  
+#### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段
 
-1.  從服務控制管理員停止服務。  
+1.  從服務控制管理員停止服務。
 
-2.  關閉分析工具。 類型：  
+2.  關閉分析工具。 類型：
 
-     **VSPerfCmd /shutdown**  
+     **VSPerfCmd /shutdown**
 
-3.  當您完成所有分析時，請清除分析環境變數。 類型：  
+3.  當您完成所有分析時，請清除分析環境變數。 類型：
 
-     **VSPerfClrEnv /globaloff**  
+     **VSPerfClrEnv /globaloff**
 
-     以原始模組取代檢測過的模組。 如有必要，請重新設定服務的啟動類型。  
+     以原始模組取代檢測過的模組。 如有必要，請重新設定服務的啟動類型。
 
-4.  重新啟動電腦。  
+4.  重新啟動電腦。
 
-## <a name="see-also"></a>另請參閱  
- [分析服務](../profiling/command-line-profiling-of-services.md)   
- [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)
+## <a name="see-also"></a>另請參閱
+- [分析服務](../profiling/command-line-profiling-of-services.md)
+- [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

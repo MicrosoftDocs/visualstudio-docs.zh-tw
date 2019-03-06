@@ -14,30 +14,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0dc88a5075d5830a26c5a9d3eaa99a885b6ddde1
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bb8cf959d5f1d915f5614dc2b92d74a603493f7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871789"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621249"
 ---
 # <a name="data-in-office-solutions"></a>在 Office 方案中的資料
   許多 Office 方案都可以讓使用者擷取或修改資料。 當您使用 Visual Studio 建立 Office 方案時，可運用數種方式來處理資料。
 
 ## <a name="in-this-section"></a>本節內容
- [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)說明如何將資料繫結至 Office 方案中的控制項。
+- [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
 
- [自訂 XML 組件概觀](../vsto/custom-xml-parts-overview.md)描述如何使用 Office 方案中的資料搭配使用的自訂 XML 組件。
+ 說明如何在 Office 方案中將資料繫結至控制項。
 
- [快取文件層級自訂中的資料](../vsto/cached-data-in-document-level-customizations.md)說明如何將資料儲存在不需要啟動 Office 應用程式是可存取內嵌的資料島。
+- [自訂 XML 組件概觀](../vsto/custom-xml-parts-overview.md)
 
- [XML 結構描述和資料在文件層級自訂](../vsto/xml-schemas-and-data-in-document-level-customizations.md)描述如何使用文件層級自訂中的 XML 結構描述，以建立繫結至 XML 資料的控制項。
+ 說明如何使用自訂 XML 組件，在 Office 方案中處理資料。
 
- [使用 Office 方案概觀中的本機資料庫檔案](../vsto/using-local-database-files-in-office-solutions-overview.md)描述如何匯入資料庫檔案，到您的專案，以及您可以快取資料供離線使用。
+- [文件層級自訂中的快取的資料](../vsto/cached-data-in-document-level-customizations.md)
+
+ 說明如何將資料儲存至內嵌的資料島中，而您不用啟動 Office 應用程式即可存取該資料島。
+
+- [XML 結構描述和文件層級自訂中的資料](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
+
+ 說明如何在文件層級自訂中使用 XML 結構描述，建立繫結至 XML 資料的控制項。
+
+- [使用本機資料庫檔案，在 Office 方案概觀](../vsto/using-local-database-files-in-office-solutions-overview.md)
+
+ 說明如何將資料庫檔案匯入專案，以及何時可快取資料以供離線使用。
 
 ## <a name="related-sections"></a>相關章節
- [在 Visual Studio 中存取資料](../data-tools/accessing-data-in-visual-studio.md)列出主題，說明如何使用 Visual Studio 中的資料。
+- [使用 Visual Studio 存取資料](../data-tools/accessing-data-in-visual-studio.md)
 
- [將資料儲存](../data-tools/saving-data.md)提供主題的連結，有關使用資料集，包括修改資料集內的資料，以及將變更寫回資料來源。
+ 列出的主題會示範如何在 Visual Studio 中處理資料。
 
- [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)提供有關如何開始使用 Visual Studio 建立 Office 專案的資訊連結。
+- [將資料儲存](../data-tools/saving-data.md)
+
+ 提供處理資料集的主題連結，包括修改資料集中的資料以及將變更寫回資料來源。
+
+- [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)
+
+ 提供如何使用 Visual Studio 開始建立 Office 專案的相關資訊連結。

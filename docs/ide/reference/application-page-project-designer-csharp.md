@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f287de1e756d20575e1c72775719b2c366534b6d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ba118f9b0b08b5e092fa85ccc3940cd41a7ff9c8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927551"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222528"
 ---
 # <a name="application-page-project-designer-c"></a>專案設計工具，應用程式頁 (C#)
 
@@ -57,7 +57,7 @@ ms.locfileid: "55927551"
 > [!NOTE]
 > 第一次開啟該對話方塊時，會自動設定[必要條件對話方塊](../../ide/reference/prerequisites-dialog-box.md)中所列的必要條件套件。 如果您接著變更專案的目標架構，就必須手動選取必要條件以符合新的目標架構。
 
-如需詳細資訊，請參閱[＜How to：以 .NET Framework 版本為目標](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)和 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)。
+如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)和 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)。
 
 **輸出類型**
 
@@ -71,7 +71,7 @@ ms.locfileid: "55927551"
 
 **自動產生繫結重新導向**
 
-若應用程式或其元件參考相同組件的多個版本，則繫結重新導向會新增至您的專案。 如果您希望手動定義專案檔中的繫結重新導向，請取消選取 [自動產生繫結重新導向]。 Visual Studio 2017 15.7 版引入此核取方塊。
+若應用程式或其元件參考相同組件的多個版本，則繫結重新導向會新增至您的專案。 如果您希望手動定義專案檔中的繫結重新導向，請取消選取 [自動產生繫結重新導向]。
 
 如需重新導向的詳細資訊，請參閱[重新導向組件版本](/dotnet/framework/configure-apps/redirect-assembly-versions)。
 

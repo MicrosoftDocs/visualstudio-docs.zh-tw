@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e165362a73a826c608f1ce93bc4ab910050c7b8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0496e9319db9351c6315f77886a1a22451a1d14
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948806"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716502"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>步驟 4：在偵錯工具中執行程式碼
 
@@ -47,12 +47,9 @@ ms.locfileid: "55948806"
 1. 按下 **F5**，或選取 [偵錯] > [開始偵錯] 功能表命令，檢查程式碼運作是否正常。 此命令會在偵錯工具中執行程式碼，但因為您在執行程式時尚未執行任何作業來暫停程式，所以它只會輸出反覆幾次的波浪圖樣。 按任意鍵以關閉輸出視窗。
 
     > [!Tip]
-    > 若要在程式完成時自動關閉輸出視窗，請使用下列程式碼取代 `main()` 呼叫：
+    > 若要在程式完成時自動關閉輸出視窗，請選取 [工具] > [選項] 功能表命令，展開 [Python] 節點，選取 [偵錯]，然後清除 [處理序正常結束時等候輸入] 選項：
     >
-    > ```python
-    > if __name__ == "__main__":
-    >     sys.exit(int(main() or 0))
-    > ```
+    > ![Python 偵錯選項，可在正常的程式結束下關閉輸出視窗](media/vs-getting-started-python-22-debugging5.png)
 
 1. 在 `for` 陳述式上設定中斷點，方法是按一下該行旁的灰色邊界，或者將插入點放在該行，並使用 [偵錯] > [切換中斷點] 命令 (**F9**)。 灰色邊界會出現紅點，以指出中斷點 (如下方箭號所註)：
 

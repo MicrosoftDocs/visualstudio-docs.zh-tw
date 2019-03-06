@@ -10,29 +10,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49f71edcdb2f5fb13be5465292ed7d9f7a3e1632
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6898f8ce028a270bbf9d83b073439cc4576f56f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016272"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702963"
 ---
 # <a name="objects"></a>物件
-下列參考資訊會說明用來建立核心文字編輯器的執行個體的物件。  
-  
-## <a name="in-this-section"></a>本節內容  
- [VSCodeWindow 物件](../extensibility/vscodewindow-object.md)  
- 描述程式碼視窗的物件，可以將一或多個文字檢視的特製化的文件視窗。  
-  
- [VSCodeWindowManager 物件](../extensibility/vscodewindowmanager-object.md)  
- 描述的語言服務會實作，而且會負責管理裝飾的程式碼視窗管理員物件。  
-  
- [VSTextBuffer 物件](../extensibility/vstextbuffer-object.md)  
- 描述文字緩衝區物件，代表的 Unicode 文字，檔案的資料流。  
-  
- [VSTextView 物件](../extensibility/vstextview-object.md)  
- 描述 [文字] 檢視中，可讓使用者檢視和編輯文字緩衝的 Unicode 文字的視窗。  
-  
-## <a name="related-sections"></a>相關章節  
- [Visual Studio SDK 參考](../extensibility/visual-studio-sdk-reference.md)  
- 顯示參考主題的清單。
+下列參考資訊會說明用來建立核心文字編輯器的執行個體的物件。
+
+## <a name="in-this-section"></a>本節內容
+- [VSCodeWindow 物件](../extensibility/vscodewindow-object.md)描述程式碼視窗物件，可以將一或多個文字檢視的特製化的文件視窗。
+
+- [VSCodeWindowManager 物件](../extensibility/vscodewindowmanager-object.md)描述的語言服務會實作，而且會負責管理裝飾的程式碼視窗管理員物件。
+
+- [VSTextBuffer 物件](../extensibility/vstextbuffer-object.md)描述文字緩衝區物件，代表的 Unicode 文字，檔案的資料流。
+
+- [VSTextView 物件](../extensibility/vstextview-object.md)描述 [文字] 檢視中，可讓使用者檢視和編輯文字緩衝的 Unicode 文字的視窗。
+
+## <a name="related-sections"></a>相關章節
+- [Visual Studio SDK 參考](../extensibility/visual-studio-sdk-reference.md)顯示的參考主題清單。

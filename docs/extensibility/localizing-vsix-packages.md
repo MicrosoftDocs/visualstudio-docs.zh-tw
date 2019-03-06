@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28426c7cad7abeb159434108656b5c16d47b148e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936641"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687077"
 ---
 # <a name="localizing-vsix-packages"></a>將 VSIX 套件當地語系化
 
@@ -27,7 +27,7 @@ ms.locfileid: "54936641"
 
 ## <a name="directory-structure"></a>目錄結構
 
- 當使用者安裝延伸模組，**擴充功能和更新**檢查最高層級的 VSIX 封裝，其名稱符合 Visual Studio 電腦的地區設定目標的資料夾。 如果**擴充功能和更新**尋找 *.vsixlangpack*檔案的資料夾中，它會取代該檔案中的對應值的當地語系化的值 *.vsixmanifest*檔案。 正在安裝延伸模組時，會顯示這些值。 下列範例顯示 VSIX 封裝當地語系化為西班牙文 (ES-ES) 和法文 (FR-FR) 的目錄結構。  
+ 當使用者安裝延伸模組，**擴充功能和更新**檢查最高層級的 VSIX 封裝，其名稱符合 Visual Studio 電腦的地區設定目標的資料夾。 如果**擴充功能和更新**尋找 *.vsixlangpack*檔案的資料夾中，它會取代該檔案中的對應值的當地語系化的值 *.vsixmanifest*檔案。 正在安裝延伸模組時，會顯示這些值。 下列範例顯示 VSIX 封裝當地語系化為西班牙文 (ES-ES) 和法文 (FR-FR) 的目錄結構。
 
 ```text
 .
@@ -63,7 +63,7 @@ ms.locfileid: "54936641"
 
 ### <a name="code"></a>程式碼
 
- [*Extension.vsixmanifest*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,7 @@ ms.locfileid: "54936641"
 </PackageManifest>
 ```
 
- [*Extension.vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

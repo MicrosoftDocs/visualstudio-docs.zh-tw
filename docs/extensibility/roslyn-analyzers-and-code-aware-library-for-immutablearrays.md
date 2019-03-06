@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d6b603a59ad27052ab8eb9bbb88942584aa5293
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000896"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323636"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 分析器和程式碼感知程式庫，適用於 Immutablearray
 
@@ -25,7 +25,7 @@ ms.locfileid: "55000896"
 
 * Visual Studio 2015 (非 Express Edition) 或更新版本。 您可以使用免費[Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。 您也可以 Visual Studio，安裝時檢查**Visual Studio Extensibility Tools**下方**常見工具**同時安裝 SDK。 如果您已安裝 Visual Studio，您也可以安裝此 SDK 移至主功能表**檔案** > **新增** > **專案**，選擇**C#** 左瀏覽窗格中，然後選擇**擴充性**。 當您選擇 「**安裝 Visual Studio Extensibility Tools**"階層連結專案範本，它會提示您下載並安裝 SDK。
-* [.NET 編譯器平台 ("Roslyn") SDK](http://aka.ms/roslynsdktemplates)。 您也可以安裝此 SDK 移至主功能表**檔案** > **新增** > **專案**選擇**C#** 左瀏覽窗格中，然後選擇**擴充性**。 當您選擇 「**下載.NET Compiler Platform SDK**"階層連結專案範本，它會提示您下載並安裝 SDK。 此 SDK 包含[Roslyn 語法視覺化檢視](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。 這個實用的工具會協助您找出哪些程式碼模型類型您應該尋找在您的分析器。 分析器基礎結構會呼叫您的程式碼對於特定的程式碼模型型別，因此您的程式碼只會在必要時執行，並可以只著重於分析相關的程式碼。
+* [.NET 編譯器平台 ("Roslyn") SDK](https://aka.ms/roslynsdktemplates)。 您也可以安裝此 SDK 移至主功能表**檔案** > **新增** > **專案**選擇**C#** 左瀏覽窗格中，然後選擇**擴充性**。 當您選擇 「**下載.NET Compiler Platform SDK**"階層連結專案範本，它會提示您下載並安裝 SDK。 此 SDK 包含[Roslyn 語法視覺化檢視](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。 這個實用的工具會協助您找出哪些程式碼模型類型您應該尋找在您的分析器。 分析器基礎結構會呼叫您的程式碼對於特定的程式碼模型型別，因此您的程式碼只會在必要時執行，並可以只著重於分析相關的程式碼。
 
 ## <a name="whats-the-problem"></a>是什麼問題？
 
@@ -298,7 +298,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 您現在可以按下**F5** Visual Studio 的第二個執行個體中執行您的分析器。 開啟您之前使用的主控台專案。 現在您應該會看到燈泡會出現新的物件建立運算式會為`ImmutableArray<int>`。 如果您按下**Ctrl**+**。** （期間），然後您會看到您的程式碼修正，，，您會看到燈泡 UI 中的自動產生的程式碼差異預覽。 Roslyn 為您建立這。
 
-**Pro 提示：** 如果您啟動 Visual Studio 中，第二個執行個體，而且您沒有看到與您的程式碼修正的燈泡，您可能需要清除 Visual Studio 元件快取。 清除快取會強制 Visual Studio 來重新檢查的元件，因此 Visual Studio 應該會挑選您最新的元件。 首先，請關閉 Visual Studio 的第二個執行個體。 然後，在**Windows 檔案總管**，瀏覽至 *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*。 （"15.0"會變更版本與 Visual Studio。） 刪除子目錄*ComponentModelCache*。
+**Pro 提示：** 如果您啟動 Visual Studio 中，第二個執行個體，而且您沒有看到與您的程式碼修正的燈泡，您可能需要清除 Visual Studio 元件快取。 清除快取會強制 Visual Studio 來重新檢查的元件，因此 Visual Studio 應該會挑選您最新的元件。 首先，請關閉 Visual Studio 的第二個執行個體。 然後，在**Windows 檔案總管**，瀏覽至 *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*。 （「 16.0"會變更版本與 Visual Studio）。刪除子目錄*ComponentModelCache*。
 
 ## <a name="talk-video-and-finish-code-project"></a>視訊並完成程式碼專案
 

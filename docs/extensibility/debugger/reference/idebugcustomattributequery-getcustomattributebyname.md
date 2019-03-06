@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery::GetCustomAttributeByName |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery::GetCustomAttributeByName
 - GetCustomAttributeByName
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb887a7d8e164616a987e475e4617e9ea88f90bf
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 60341aa39a61f7179d0b913ec78aca10fae5b84c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413419"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56725017"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 擷取自訂屬性，指定其名稱。
@@ -40,14 +40,17 @@ int GetCustomAttributeByName(
 ```
 
 #### <a name="parameters"></a>參數
-`pszCustomAttributeName`  
-[in]自訂屬性的名稱。
+`pszCustomAttributeName`
 
-`ppBlob`  
+ [in]自訂屬性的名稱。
+
+`ppBlob`
+
 [in、 out]包含自訂屬性資料的位元組陣列。
 
-`pdwLen`  
-[out]以位元組為單位的長度`ppBlob`參數。
+`pdwLen`
+
+ [out]以位元組為單位的長度`ppBlob`參數。
 
 ## <a name="return-value"></a>傳回值
 如果成功，會傳回 `S_OK`。 如果自訂屬性不存在，就會傳回`S_FALSE`。 否則會傳回錯誤碼。
@@ -91,4 +94,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
+- [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

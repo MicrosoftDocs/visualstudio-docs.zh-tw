@@ -12,39 +12,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c764e99fc9c5e5024ccc3d508949fd3a9d9b39e8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 56a79ea8ba7c4e5622ee468cec8fe6cb53dd197c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920587"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615984"
 ---
 # <a name="idialinenumbergetaddresssection"></a>IDiaLineNumber::get_addressSection
-擷取區塊的開始位置的記憶體位址的區段部分。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_addressSection (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- pRetVal  
- [out]傳回的記憶體位址的區段部分區塊的開始位置。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
-  
-## <a name="example"></a>範例  
-  
-```C++  
-CComPtr< IDiaLineNumber > pLine;  
-DWORD seg;  
-pLine->get_addressSection( &seg );  
-```  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
- [IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)
+擷取區塊的開始位置的記憶體位址的區段部分。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_addressSection ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>參數
+ pRetVal
+
+[out]傳回的記憶體位址的區段部分區塊的開始位置。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。
+
+## <a name="example"></a>範例
+
+```C++
+CComPtr< IDiaLineNumber > pLine;
+DWORD seg;
+pLine->get_addressSection( &seg );
+```
+
+## <a name="see-also"></a>請參閱
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+- [IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)

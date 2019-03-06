@@ -11,31 +11,31 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a80212a2de88a5896caf0b655b9710afbce096f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 00bebd0a08acb9eeab369f5aa80b94e6805277b0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005952"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598995"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>相關的服務和介面 (原始檔控制 VSPackage)
-此區段會列出所有的原始檔控制 VSPackage 相關的介面，在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。 原始檔控制 VSPackage 實作這些介面部分，並使用其他人來完成原始檔控制工作。  
-  
-## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>原始檔控制 Vspackage 和所實作的介面  
- 下列介面詳述於[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，和原始檔控制 VSPackage 實作根據其所需的功能集的子集。 某些介面中會標示為需要，而且必須由每個原始檔控制 VSPackage 實作。  
-  
- 封裝不會實作，這些介面[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供的預設實作。 請注意，預設實作專為不註冊任何 VSPackage 的情況下並沒有任何專案被控制。 適當撰寫的原始檔控制 VSPackage 實作所有必要的介面，而不是讓這些介面的預設實作。  
-  
- 原始檔控制 VSPackage 必須實作封裝部分或所有下列介面的私用服務。  
-  
- 介面包括：  
-  
--   必要屬性：適當的實體 （原始檔控制 VSPackage，原始檔控制虛設常式，專案） 必須實作介面。  
-  
--   建議使用：實體應該實作這個介面中;否則，原始檔控制功能可能有限。  
-  
--   選擇性： 實體可以實作這個介面，以提供更豐富的功能集。  
-  
+此區段會列出所有的原始檔控制 VSPackage 相關的介面，在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。 原始檔控制 VSPackage 實作這些介面部分，並使用其他人來完成原始檔控制工作。
+
+## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>原始檔控制 Vspackage 和所實作的介面
+ 下列介面詳述於[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，和原始檔控制 VSPackage 實作根據其所需的功能集的子集。 某些介面中會標示為需要，而且必須由每個原始檔控制 VSPackage 實作。
+
+ 封裝不會實作，這些介面[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供的預設實作。 請注意，預設實作專為不註冊任何 VSPackage 的情況下並沒有任何專案被控制。 適當撰寫的原始檔控制 VSPackage 實作所有必要的介面，而不是讓這些介面的預設實作。
+
+ 原始檔控制 VSPackage 必須實作封裝部分或所有下列介面的私用服務。
+
+ 介面包括：
+
+-   必要屬性：適當的實體 （原始檔控制 VSPackage，原始檔控制虛設常式，專案） 必須實作介面。
+
+-   建議使用：實體應該實作這個介面中;否則，原始檔控制功能可能有限。
+
+-   選擇性： 實體可以實作這個介面，以提供更豐富的功能集。
+
 | 介面 | 用途 | 藉由將 | 實作？ |
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | 編輯器呼叫這個介面之前修改或儲存檔案。 原始檔控制 VSPackage 可以簽出檔案，或拒絕作業，如果簽出失敗。 | 原始檔控制 VSPackage | 建議 |
@@ -60,6 +60,6 @@ ms.locfileid: "55005952"
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> | 此介面用來儲存原始檔控制設定方案 (.sln) 檔案中。 設定包括的原始檔控制位置和原始檔控制狀態旗標。 | 原始檔控制 VSPackage | 建議 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | 此介面用來儲存方案選項 (.suo) 檔案中的原始檔控制設定。 這可能包括使用者專屬的原始檔控制設定，例如目前使用者的登錄位置。 | 原始檔控制 VSPackage | 建議 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | 若要執行作業，例如簽入之前關閉方案，或開啟專案時，取得新的檔案從原始檔控制的專案檔，這個介面用來監視事件。 | 原始檔控制 VSPackage | 建議 |
-  
-## <a name="see-also"></a>另請參閱  
- [設計元素](../../extensibility/internals/source-control-vspackage-design-elements.md)
+
+## <a name="see-also"></a>另請參閱
+- [設計元素](../../extensibility/internals/source-control-vspackage-design-elements.md)

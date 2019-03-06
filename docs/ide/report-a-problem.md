@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f955642b0dd3a3784f1779ca65967f4b1e606bd7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911191"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56800527"
 ---
 # <a name="overview-report-a-problem"></a>概觀：回報問題
 
@@ -52,7 +52,7 @@ ms.locfileid: "55911191"
 
 ![問題回報在開發人員社群上的 [需要更多資訊] 狀態](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-[需要更多資訊] 表示我們需要您提供更多診斷資訊，讓我們能夠繼續進行調查。  [了解如何回應「需要更多資訊」要求。](./how-to-report-a-problem-with-visual-studio-2017.md#when-further-information-is-needed-need-more-info)
+[需要更多資訊] 表示我們需要您提供更多診斷資訊，讓我們能夠繼續進行調查。  [了解如何回應「需要更多資訊」要求。](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
 
 - - -
 
@@ -110,7 +110,7 @@ ms.locfileid: "55911191"
 
 建議您使用搜尋來確保您即將回報的問題尚未回報。 如果發現符合您問題的現有項目，請追蹤該問題票證並對其進行投票。
 
- 請提供可協助我們小組重現您所遭遇問題的一切資訊。  這項資訊包含所需的重現步驟、程式碼片段、螢幕擷取畫面、重現記錄、記錄檔和其他成品。  以下是[如何在 Visual Studio 中回報問題](./how-to-report-a-problem-with-visual-studio-2017.md)。
+ 請提供可協助我們小組重現您所遭遇問題的一切資訊。  這項資訊包含所需的重現步驟、程式碼片段、螢幕擷取畫面、重現記錄、記錄檔和其他成品。  以下是[如何在 Visual Studio 中回報問題](./how-to-report-a-problem-with-visual-studio.md)。
 
 ### <a name="how-is-my-feedback-prioritized"></a>如何設定意見反應的優先順序？
 

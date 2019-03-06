@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugFields | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugFields
 helpviewer_keywords:
@@ -12,50 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4f95ef4dba92baffb15723d5e140b15fece4f23
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f557b722a36665b20f5e06093027f8085a014ed
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946008"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716749"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
-此介面代表實作的物件的集合[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面。  
-  
-## <a name="syntax"></a>語法  
-  
-```  
-IEnumDebugFields : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>實作者的附註  
- 符號提供者來提供實作的物件組實作這個介面[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面。 請注意，這不是標準的 COM 列舉的緣故[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)方法。  
-  
-## <a name="notes-for-callers"></a>呼叫端資訊  
- 這個介面由[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)並[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)。  
-  
-## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 這個介面會實作下列方法。  
-  
-|方法|描述|  
-|------------|-----------------|  
-|[下一步](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|擷取下的一組[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)列舉中的物件。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|略過指定的數目的項目。|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|將列舉重設第一個項目中。|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|擷取一份目前的列舉型別。|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|擷取列舉中的項目數。|  
-  
-## <a name="remarks"></a>備註  
-  
-## <a name="requirements"></a>需求  
- 標頭： sh.h  
-  
- 命名空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>另請參閱  
- [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)   
- [GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)
+此介面代表實作的物件的集合[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面。
+
+## <a name="syntax"></a>語法
+
+```
+IEnumDebugFields : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>實作者的附註
+ 符號提供者來提供實作的物件組實作這個介面[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面。 請注意，這不是標準的 COM 列舉的緣故[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)方法。
+
+## <a name="notes-for-callers"></a>呼叫端資訊
+ 這個介面由[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)並[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)。
+
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
+ 這個介面會實作下列方法。
+
+|方法|描述|
+|------------|-----------------|
+|[下一步](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|擷取下的一組[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)列舉中的物件。|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|略過指定的數目的項目。|
+|[Reset](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|將列舉重設第一個項目中。|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|擷取一份目前的列舉型別。|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|擷取列舉中的項目數。|
+
+## <a name="remarks"></a>備註
+
+## <a name="requirements"></a>需求
+ 標頭： sh.h
+
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop
+
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>另請參閱
+- [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
+- [GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)

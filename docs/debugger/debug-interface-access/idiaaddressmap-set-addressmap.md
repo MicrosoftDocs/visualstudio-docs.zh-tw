@@ -12,44 +12,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3150cc591c77d1ab3abc31ed9b07062d094d3d4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 963ee64b639780bae60a4c2655db8b666d87c702
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973092"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641869"
 ---
 # <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
-提供支援映像的版面配置轉譯對應的位址。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT set_addressMap (   
-   DWORD                     cbData,  
-   struct DiaAddressMapEntry data[],  
-   BOOL                      imagetoSymbols  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `cbData`  
- [in]中的項目數`data`參數。  
-  
- `data[]`  
- [in]陣列[DiaAddressMapEntry 結構](../../debugger/debug-interface-access/diaaddressmapentry.md)結構會定義轉譯對應。  
-  
- `imagetoSymbols`  
- [in]`TRUE`如果`data`參數會定義新的映像版面配置的原始配置對應 （如偵錯符號所述）。 `FALSE` 如果`data`是取自原始配置新的映像版面配置的對應。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- 通常，DIA 會將位址轉譯對應擷取程式資料庫 (.pdb) 檔案中。 如果這些值遺失，則[idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)方法呼叫兩次，一次使用`imagetoSymbols`參數設定為`TRUE`並一次使用`imagetoSymbols`參數設為`FALSE`。 無法使用啟用位址對應翻譯[idiaaddressmap:: Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)方法，因此除非兩個轉譯對應所提供。  
-  
-## <a name="see-also"></a>請參閱  
- [DiaAddressMapEntry 結構](../../debugger/debug-interface-access/diaaddressmapentry.md)   
- [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)   
- [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)
+提供支援映像的版面配置轉譯對應的位址。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT set_addressMap ( 
+   DWORD                     cbData,
+   struct DiaAddressMapEntry data[],
+   BOOL                      imagetoSymbols
+);
+```
+
+#### <a name="parameters"></a>參數
+ `cbData`
+
+[in]中的項目數`data`參數。
+
+ `data[]`
+
+[in]陣列[DiaAddressMapEntry 結構](../../debugger/debug-interface-access/diaaddressmapentry.md)結構會定義轉譯對應。
+
+ `imagetoSymbols`
+
+[in]`TRUE`如果`data`參數會定義新的映像版面配置的原始配置對應 （如偵錯符號所述）。 `FALSE` 如果`data`是取自原始配置新的映像版面配置的對應。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+ 通常，DIA 會將位址轉譯對應擷取程式資料庫 (.pdb) 檔案中。 如果這些值遺失，則[idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)方法呼叫兩次，一次使用`imagetoSymbols`參數設定為`TRUE`並一次使用`imagetoSymbols`參數設為`FALSE`。 無法使用啟用位址對應翻譯[idiaaddressmap:: Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)方法，因此除非兩個轉譯對應所提供。
+
+## <a name="see-also"></a>請參閱
+- [DiaAddressMapEntry 結構](../../debugger/debug-interface-access/diaaddressmapentry.md)
+- [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
+- [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)
+- [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c483f7fb4941430355ef287bce973e1a1659e
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: f0353234e5a266ca1a344ce7bc304f27d8c3af95
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227128"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700441"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>如何：測試和偵錯視覺化檢視
 當您撰寫完視覺化檢視之後，必須對其進行偵錯和測試。
@@ -54,6 +54,6 @@ ms.locfileid: "56227128"
     如需更完整的範例，請參閱 <<c0> [ 逐步解說： 撰寫視覺化檢視C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)。</c0>
 
 ## <a name="see-also"></a>請參閱
-[逐步解說：在 C# 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
-[如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)  
-[建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)
+- [逐步解說：在 C# 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)
+- [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)

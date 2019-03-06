@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27b96dff857d49f12ffaa10e22c9189eb3a1d5b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: efbc02bb536ca8e39454fbbb476460c4cbd51363
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925445"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638723"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>在多處理器環境中記錄
 MSBuild 雖能夠使用多個處理器來大幅縮短專案建置時間，但同時也增加了記錄的複雜性。 在單一處理器環境中，記錄器可以透過可預測的循序方式來處理傳入的事件、訊息、警告和錯誤。 不過，在多處理器環境中，來自數個來源的事件可能會同時或不依順序到達。 MSBuild 提供可辨識多處理器的新記錄器，並啟用建立自訂「轉送記錄器」。
@@ -71,5 +71,5 @@ Culture=neutral
 星號 (*) 可分隔 `-dl` 參數中的兩個記錄器名稱。
 
 ## <a name="see-also"></a>另請參閱
-[組建記錄器](../msbuild/build-loggers.md)  
-[建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)
+- [組建記錄器](../msbuild/build-loggers.md)
+- [建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)

@@ -10,56 +10,56 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3627398d4a0b7d069b626ee8dc2b9e95ab81d10c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ee63e2fe4409921a36daba5ac85cce417d5564aa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013063"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612318"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>並行視覺化檢視命令列公用程式 (CVCollectionCmd)
-您可以使用並行視覺化檢視命令列公用程式 (*CVCollectionCmd.exe*) 從命令列收集追蹤，以便在 Visual Studio 的並行視覺化檢視中進行檢視。 此工具可在未安裝 Visual Studio 的電腦上使用。  
+您可以使用並行視覺化檢視命令列公用程式 (*CVCollectionCmd.exe*) 從命令列收集追蹤，以便在 Visual Studio 的並行視覺化檢視中進行檢視。 此工具可在未安裝 Visual Studio 的電腦上使用。
 
 > [!NOTE]
->  從 Visual Studio 2013 開始，並行視覺化檢視是選擇性擴充功能。 (先前它包含在 Visual Studio 中。)您可以從下載中心下載 [Visual Studio 2015 並行視覺化檢視收集工具](http://www.microsoft.com/download/details.aspx?id=49103)。  
+>  從 Visual Studio 2013 開始，並行視覺化檢視是選擇性擴充功能。 (先前它包含在 Visual Studio 中。)您可以從下載中心下載 [Visual Studio 2015 並行視覺化檢視收集工具](http://www.microsoft.com/download/details.aspx?id=49103)。
 
-## <a name="download-the-concurrency-visualizer-command-line-utility"></a>下載並行視覺化檢視命令列公用程式  
- 若要下載及安裝此命令列公用程式，請移至 Microsoft 下載中心網站上的 [Visual Studio 2015 的並行視覺化檢視收集工具](http://www.microsoft.com/download/details.aspx?id=49103) ，並遵循指示進行。 根據預設，*CVCollectionCmd.exe* 會安裝在 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (x64 電腦上為 %ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\)。  
+## <a name="download-the-concurrency-visualizer-command-line-utility"></a>下載並行視覺化檢視命令列公用程式
+ 若要下載及安裝此命令列公用程式，請移至 Microsoft 下載中心網站上的 [Visual Studio 2015 的並行視覺化檢視收集工具](http://www.microsoft.com/download/details.aspx?id=49103) ，並遵循指示進行。 根據預設，*CVCollectionCmd.exe* 會安裝在 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (x64 電腦上為 %ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\)。
 
-## <a name="collect-a-trace-with-cvcollectioncmd"></a>使用 CVCollectionCmd 收集追蹤  
- 您可以使用 CVCollectionCmd 啟動應用程式，或將 CVCollectionCmd 附加至應用程式，來收集追蹤。 請參閱下列與選項相關的命令參考。 例如  
+## <a name="collect-a-trace-with-cvcollectioncmd"></a>使用 CVCollectionCmd 收集追蹤
+ 您可以使用 CVCollectionCmd 啟動應用程式，或將 CVCollectionCmd 附加至應用程式，來收集追蹤。 請參閱下列與選項相關的命令參考。 例如
 
-```cmd  
-<Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data  
-```  
+```cmd
+<Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data
+```
 
-## <a name="commands-and-parameters"></a>命令和參數  
- 若要取得命令列公用程式中命令和參數的說明，請在命令提示字元中輸入下列命令：  
+## <a name="commands-and-parameters"></a>命令和參數
+ 若要取得命令列公用程式中命令和參數的說明，請在命令提示字元中輸入下列命令：
 
- **CvCollectionCmd /?**  
+ **CvCollectionCmd /?**
 
-|選項|說明|參數|傳回值|  
-|------------|-----------------|----------------|-------------------|  
-|查詢|傳回是否可以開始收集。|無|0，表示準備開始收集。<br /><br /> 1，表示收集已在進行中。<br /><br /> 2，表示收集不在進行中，但已啟用一或多個所需的 [ETW](/dotnet/framework/wcf/samples/etw-tracing) 工作階段。|  
-|啟動|在並行視覺化檢視下執行指定的處理序。|可執行檔的路徑。|0，表示執行成功。<br /><br /> 1，表示執行失敗，因為無法啟動目標應用程式。<br /><br /> 13，表示執行失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|  
-|附加|開始收集系統範圍追蹤；如果指定處理序，則附加至該處理序。|無。|0，表示附加成功。<br /><br /> 1，表示附加失敗，因為指定的處理序無效或模稜兩可。<br /><br /> 13，表示附加失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|  
-|中斷連結|停止收集。|無。|0，表示中斷連結成功。<br /><br /> 1，表示中斷連結失敗，因為目前正在收集。<br /><br /> 2，表示中斷連結失敗，因為無法停止收集。|  
-|分析|分析指定的追蹤。|CVTrace 檔案的完整路徑。|0，表示分析成功。<br /><br /> 1，表示無法開始分析，因為指定的追蹤是系統範圍追蹤，但未指定目標處理序。<br /><br /> 2，表示無法開始分析，因為追蹤不是系統範圍追蹤，但已指定處理序。<br /><br /> 3，表示分析失敗，因為指定的處理序無效。<br /><br /> 4，表示分析失敗，因為指定的 CVTrace 檔案無效。|  
-|LaunchArgs|指定目標可執行檔引數。 這個選項僅適用於 Launch 命令。|傳遞給應用程式的命令列引數。|無。|  
-|Outdir|指定要在其中儲存追蹤檔案的目錄。 適用於 Launch 和 Attach 命令。|目錄路徑或相對路徑。|無。|  
-|處理序|指定執行 Attach 命令時要附加的處理序，或執行 Analyze 命令時要在追蹤中分析的處理序。 適用於 Attach 和 Analyze 命令。|處理序的 PID 或名稱。|無。|  
-|組態|指定組態檔的路徑 (如果需要預設值以外的收集設定)。   適用於 Launch、Attach 和 Analyze 命令。|XML 組態檔的目錄路徑或相對路徑。|無。|  
+|選項|說明|參數|傳回值|
+|------------|-----------------|----------------|-------------------|
+|查詢|傳回是否可以開始收集。|無|0，表示準備開始收集。<br /><br /> 1，表示收集已在進行中。<br /><br /> 2，表示收集不在進行中，但已啟用一或多個所需的 [ETW](/dotnet/framework/wcf/samples/etw-tracing) 工作階段。|
+|啟動|在並行視覺化檢視下執行指定的處理序。|可執行檔的路徑。|0，表示執行成功。<br /><br /> 1，表示執行失敗，因為無法啟動目標應用程式。<br /><br /> 13，表示執行失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|
+|附加|開始收集系統範圍追蹤；如果指定處理序，則附加至該處理序。|無。|0，表示附加成功。<br /><br /> 1，表示附加失敗，因為指定的處理序無效或模稜兩可。<br /><br /> 13，表示附加失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|
+|中斷連結|停止收集。|無。|0，表示中斷連結成功。<br /><br /> 1，表示中斷連結失敗，因為目前正在收集。<br /><br /> 2，表示中斷連結失敗，因為無法停止收集。|
+|分析|分析指定的追蹤。|CVTrace 檔案的完整路徑。|0，表示分析成功。<br /><br /> 1，表示無法開始分析，因為指定的追蹤是系統範圍追蹤，但未指定目標處理序。<br /><br /> 2，表示無法開始分析，因為追蹤不是系統範圍追蹤，但已指定處理序。<br /><br /> 3，表示分析失敗，因為指定的處理序無效。<br /><br /> 4，表示分析失敗，因為指定的 CVTrace 檔案無效。|
+|LaunchArgs|指定目標可執行檔引數。 這個選項僅適用於 Launch 命令。|傳遞給應用程式的命令列引數。|無。|
+|Outdir|指定要在其中儲存追蹤檔案的目錄。 適用於 Launch 和 Attach 命令。|目錄路徑或相對路徑。|無。|
+|處理序|指定執行 Attach 命令時要附加的處理序，或執行 Analyze 命令時要在追蹤中分析的處理序。 適用於 Attach 和 Analyze 命令。|處理序的 PID 或名稱。|無。|
+|組態|指定組態檔的路徑 (如果需要預設值以外的收集設定)。   適用於 Launch、Attach 和 Analyze 命令。|XML 組態檔的目錄路徑或相對路徑。|無。|
 
-## <a name="customize-configuration-settings"></a>自訂組態設定  
- 如果您使用 CVCollectionCmd 收集追蹤並想自訂收集設定，請使用組態檔指定這些設定。  
+## <a name="customize-configuration-settings"></a>自訂組態設定
+ 如果您使用 CVCollectionCmd 收集追蹤並想自訂收集設定，請使用組態檔指定這些設定。
 
 > [!NOTE]
->  當您使用 Visual Studio 收集追蹤時，不要直接修改組態檔。  請改用 [[進階設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 對話方塊來修改設定。  
+>  當您使用 Visual Studio 收集追蹤時，不要直接修改組態檔。  請改用 [[進階設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 對話方塊來修改設定。
 
- 若要修改收集設定，請在您要執行 CVCollectionCmd 公用程式的電腦上建立組態檔。 您可以從頭開始建立組態檔，也可以從已安裝 Visual Studio 的電腦上複製組態檔，再進行修改。 檔案名稱為 *UserConfig.xml*，並位在 *Local AppData* 資料夾中。 當您執行公用程式時，請搭配 Launch、Attach 或 Analyze 命令使用 Config 選項。  在與 Config 選項相關聯的參數中，指定組態檔的路徑。  
+ 若要修改收集設定，請在您要執行 CVCollectionCmd 公用程式的電腦上建立組態檔。 您可以從頭開始建立組態檔，也可以從已安裝 Visual Studio 的電腦上複製組態檔，再進行修改。 檔案名稱為 *UserConfig.xml*，並位在 *Local AppData* 資料夾中。 當您執行公用程式時，請搭配 Launch、Attach 或 Analyze 命令使用 Config 選項。  在與 Config 選項相關聯的參數中，指定組態檔的路徑。
 
-### <a name="configuration-file-tags"></a>組態檔標記  
- 組態檔採用 XML 格式。 以下是有效的標記和值：  
+### <a name="configuration-file-tags"></a>組態檔標記
+ 組態檔採用 XML 格式。 以下是有效的標記和值：
 
 
 | 標記 | 說明 | 值 |
@@ -92,62 +92,62 @@ ms.locfileid: "55013063"
 | JustMyCode | 指定 Just My Code 目錄的清單。 | 零個或多個 MyCodeDirectory 項目的清單。 |
 | MyCodeDirectory | 指定包含程式碼的目錄。 | 絕對路徑。 |
 
-### <a name="example"></a>範例  
- 您可以複製下列範例，然後依照您的需求進行修改，而不用從頭開始建立組態檔。  
+### <a name="example"></a>範例
+ 您可以複製下列範例，然後依照您的需求進行修改，而不用從頭開始建立組態檔。
 
-```xml  
-<?xml version="1.0"?>  
-<LocalConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MajorVersion="1" MinorVersion="0">  
+```xml
+<?xml version="1.0"?>
+<LocalConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MajorVersion="1" MinorVersion="0">
 
-  <IncludeEnvSymbolPath>true</IncludeEnvSymbolPath>  
+  <IncludeEnvSymbolPath>true</IncludeEnvSymbolPath>
 
-  <DeleteEtlsAfterAnalysis>true</DeleteEtlsAfterAnalysis>  
+  <DeleteEtlsAfterAnalysis>true</DeleteEtlsAfterAnalysis>
 
-  <TraceLocation>C:\traces</TraceLocation>  
+  <TraceLocation>C:\traces</TraceLocation>
 
-  <SymbolPath>http://symweb</SymbolPath>  
+  <SymbolPath>http://symweb</SymbolPath>
 
-  <Markers>  
-    <MarkerProvider Name="Default" Guid="8d4925ab-505a-483b-a7e0-6f824a07a6f0" Level="Low" />  
-    <MarkerProvider Name="TPL" Guid="2e5dba47-a3d2-4d16-8ee0-6671ffdcd7b5" Level="Normal" />  
-    <MarkerProvider Name="TPL Dataflow" Guid="16f53577-e41d-43d4-b47e-c17025bf4025" Level="Normal" />  
-    <MarkerProvider Name="TPL Synchronization" Guid="ec631d38-466b-4290-9306-834971ba0217" Level="Normal" />  
-    <MarkerProvider Name="PLINQ" Guid="159eeeec-4a14-4418-a8fe-faabcd987887" Level="Normal" />  
-    <MarkerProvider Name="Concurrency Runtime" Guid="f7b697a3-4db5-4d3b-be71-c4d284e6592f" Level="Normal" />  
-    <MarkerProvider Name="Scenario Markers" Guid="fb9244c9-f23a-4966-8a9c-97a51f8c355b" Level="Low" />  
+  <Markers>
+    <MarkerProvider Name="Default" Guid="8d4925ab-505a-483b-a7e0-6f824a07a6f0" Level="Low" />
+    <MarkerProvider Name="TPL" Guid="2e5dba47-a3d2-4d16-8ee0-6671ffdcd7b5" Level="Normal" />
+    <MarkerProvider Name="TPL Dataflow" Guid="16f53577-e41d-43d4-b47e-c17025bf4025" Level="Normal" />
+    <MarkerProvider Name="TPL Synchronization" Guid="ec631d38-466b-4290-9306-834971ba0217" Level="Normal" />
+    <MarkerProvider Name="PLINQ" Guid="159eeeec-4a14-4418-a8fe-faabcd987887" Level="Normal" />
+    <MarkerProvider Name="Concurrency Runtime" Guid="f7b697a3-4db5-4d3b-be71-c4d284e6592f" Level="Normal" />
+    <MarkerProvider Name="Scenario Markers" Guid="fb9244c9-f23a-4966-8a9c-97a51f8c355b" Level="Low" />
 
-    <!-- The IsEnabled and Categories elements are optional -->  
-    <MarkerProvider Name="myMarker1" Guid="d0dbb3a3-895c-4ce6-96d9-28f69d664dc3" Level="Critical" IsEnabled="false" Categories="0,1,3-5,8" />  
-    <MarkerProvider Name="myMarker2" Guid="03452127-a617-4302-9e30-c0d10442e4ee" Level="Low" IsEnabled="false" Categories="0,1,3-5,8-10,11-13" />  
-  </Markers>  
+    <!-- The IsEnabled and Categories elements are optional -->
+    <MarkerProvider Name="myMarker1" Guid="d0dbb3a3-895c-4ce6-96d9-28f69d664dc3" Level="Critical" IsEnabled="false" Categories="0,1,3-5,8" />
+    <MarkerProvider Name="myMarker2" Guid="03452127-a617-4302-9e30-c0d10442e4ee" Level="Low" IsEnabled="false" Categories="0,1,3-5,8-10,11-13" />
+  </Markers>
 
-  <FilterConfig>  
-    <CollectClrEvents>true</CollectClrEvents>  
-    <ClrCollectionOptions>CollectForNative DisableNGenRundown</ClrCollectionOptions>  
-    <CollectSampleEvents>true</CollectSampleEvents>  
-    <CollectGpuEvents>true</CollectGpuEvents>  
-    <CollectFileIO>true</CollectFileIO>  
-  </FilterConfig>  
+  <FilterConfig>
+    <CollectClrEvents>true</CollectClrEvents>
+    <ClrCollectionOptions>CollectForNative DisableNGenRundown</ClrCollectionOptions>
+    <CollectSampleEvents>true</CollectSampleEvents>
+    <CollectGpuEvents>true</CollectGpuEvents>
+    <CollectFileIO>true</CollectFileIO>
+  </FilterConfig>
 
-  <UserBufferSettings>  
-    <BufferFlushTimer>0</BufferFlushTimer>  
-    <BufferSize>256</BufferSize>  
-    <MinimumBuffers>512</MinimumBuffers>  
-    <MaximumBuffers>1024</MaximumBuffers>  
-  </UserBufferSettings>  
+  <UserBufferSettings>
+    <BufferFlushTimer>0</BufferFlushTimer>
+    <BufferSize>256</BufferSize>
+    <MinimumBuffers>512</MinimumBuffers>
+    <MaximumBuffers>1024</MaximumBuffers>
+  </UserBufferSettings>
 
-  <KernelBufferSettings>  
-    <BufferFlushTimer>0</BufferFlushTimer>  
-    <BufferSize>256</BufferSize>  
-    <MinimumBuffers>512</MinimumBuffers>  
-    <MaximumBuffers>1024</MaximumBuffers>  
-  </KernelBufferSettings>  
+  <KernelBufferSettings>
+    <BufferFlushTimer>0</BufferFlushTimer>
+    <BufferSize>256</BufferSize>
+    <MinimumBuffers>512</MinimumBuffers>
+    <MaximumBuffers>1024</MaximumBuffers>
+  </KernelBufferSettings>
 
-  <!-- List of MyCodeDirectory directories -->  
-  <JustMyCode>  
-    <MyCodeDirectory>C:\myBinaries1</MyCodeDirectory>  
-    <MyCodeDirectory>C:\myBinaries2</MyCodeDirectory>  
-  </JustMyCode>  
-</LocalConfig>  
+  <!-- List of MyCodeDirectory directories -->
+  <JustMyCode>
+    <MyCodeDirectory>C:\myBinaries1</MyCodeDirectory>
+    <MyCodeDirectory>C:\myBinaries2</MyCodeDirectory>
+  </JustMyCode>
+</LocalConfig>
 
 ```

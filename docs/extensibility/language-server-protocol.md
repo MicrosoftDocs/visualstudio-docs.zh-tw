@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a41bccbec31f11a30d5e9ccf0e97806d3e7efb4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6d3fb814fa202e8a5211ab9db3cb1d71923ccac6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023453"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679095"
 ---
 # <a name="language-server-protocol"></a>語言伺服器通訊協定
 

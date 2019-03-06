@@ -8,27 +8,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d00ab3ca18997fe61fc4b36e1f9f9a098b0aa727
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: edf0bc2b233a44893e9a526e172fa75043ebaa42
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952115"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689261"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>歷程偵錯 (C#，Visual Basic、 c + +)
 
-歷程偵錯是取決於 IntelliTrace 所收集資訊的偵錯模式。 它可讓您向後和向前逐步執行您的應用程式，並檢查其狀態。  
-  
- 您可以在 Visual Studio Enterprise 版本 (而非 Professional 或 Community 版本) 中使用 IntelliTrace。  
-  
+歷程偵錯是取決於 IntelliTrace 所收集資訊的偵錯模式。 它可讓您向後和向前逐步執行您的應用程式，並檢查其狀態。
+
+ 您可以在 Visual Studio Enterprise 版本 (而非 Professional 或 Community 版本) 中使用 IntelliTrace。
+
 ## <a name="why-use-historical-debugging"></a>為何使用歷程偵錯？
 
- 設定中斷點來找出 Bug 可能相當容易出錯。 您可以在接近程式碼中懷疑為 Bug 所在的位置設定中斷點，然後在偵錯工具中執行應用程式，並希望您的中斷點找到錯誤位置，以及執行中斷可能會顯示 Bug 來源的位置。 否則，您必須嘗試在程式碼的某一處設定中斷點，然後重新執行偵錯工具，以重複執行測試步驟，直到找出問題。  
-  
- ![設定中斷點](../debugger/media/breakpointprocesa.png "BreakpointProcesa")  
-  
- 您可以使用 IntelliTrace 和歷程偵錯來漫遊應用程式，並檢查其狀態 (呼叫堆疊和區域變數)，而不需要設定中斷點、重新啟動偵錯，以及重複測試步驟。 這可以節省許多時間，特別是當 Bug 位於測試案例的較深處而需要花很長的時間執行時。  
-  
+ 設定中斷點來找出 Bug 可能相當容易出錯。 您可以在接近程式碼中懷疑為 Bug 所在的位置設定中斷點，然後在偵錯工具中執行應用程式，並希望您的中斷點找到錯誤位置，以及執行中斷可能會顯示 Bug 來源的位置。 否則，您必須嘗試在程式碼的某一處設定中斷點，然後重新執行偵錯工具，以重複執行測試步驟，直到找出問題。
+
+ ![設定中斷點](../debugger/media/breakpointprocesa.png "BreakpointProcesa")
+
+ 您可以使用 IntelliTrace 和歷程偵錯來漫遊應用程式，並檢查其狀態 (呼叫堆疊和區域變數)，而不需要設定中斷點、重新啟動偵錯，以及重複測試步驟。 這可以節省許多時間，特別是當 Bug 位於測試案例的較深處而需要花很長的時間執行時。
+
 ## <a name="how-do-i-start-using-historical-debugging"></a>如何開始使用歷程偵錯？
 
  預設會開啟 IntelliTrace。 您必須執行的只是決定哪些事件和函式呼叫感興趣，以及您是否要檢視完整的應用程式狀態的快照集。 如需定義您想要尋找之項目的詳細資訊，請參閱 [IntelliTrace 功能](../debugger/intellitrace-features.md)。 功能支援會因語言和應用程式類型。

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9507e7791f1ecd61a2f7a6321bdf45fe256feb4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 8dfb0330f08dab158c298bbc944d8dc6410f719f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227546"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602296"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 對應至區段的位址空間資料區段數目。
@@ -31,7 +31,7 @@ IDiaSegment : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
 下表顯示的方法`IDiaSegment`。
 
-|方法|描述|
+|方法|說明|
 |------------|-----------------|
 |[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|擷取的區段數目。|
 |[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|擷取一節的開始處的區段中的位移。|
@@ -101,6 +101,6 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>請參閱
-[介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)  
-[IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)
+- [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)
+- [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)

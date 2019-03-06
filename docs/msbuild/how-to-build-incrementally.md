@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f4845fe01e5b197126b6da73c1439ff08be482
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853897"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621327"
 ---
-# <a name="how-to-build-incrementally"></a>HOW TO：以累加方式建置
+# <a name="how-to-build-incrementally"></a>作法：以累加方式建置
 當您建置大型專案時，很重要的一點是，如果先前建置的元件仍是最新，就不會重建。 如果每次都建置所有目標，每次建置會花很長的時間才能完成。 若要啟用累加建置 (在這些建置中，只會重建先前尚未建置過的目標，或是已過期的目標)，[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 可以比較輸入檔案的時間戳記，與輸出檔案的的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 不過，在輸入和輸出之間必須有一對一的對應。 您可以使用轉換，讓目標可以找出這種直接對應。 如需轉換的詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。
 
 ## <a name="specify-inputs-and-outputs"></a>指定輸入和輸出
@@ -38,12 +38,12 @@ ms.locfileid: "55853897"
   [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以比較輸入檔案的時間戳記與輸出檔案的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 在下列範例中，如果 `@(CSFile)` 項目清單中的任何檔案比 *hello.exe* 檔案新，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 將會執行目標，否則將會予以略過︰
 
 ```xml
-<Target Name="Build" 
-    Inputs="@(CSFile)" 
+<Target Name="Build"
+    Inputs="@(CSFile)"
     Outputs="hello.exe">
 
     <Csc
-        Sources="@(CSFile)" 
+        Sources="@(CSFile)"
         OutputAssembly="hello.exe"/>
 </Target>
 ```
@@ -103,8 +103,8 @@ ms.locfileid: "55853897"
 ```
 
 ## <a name="see-also"></a>另請參閱
-[目標](../msbuild/msbuild-targets.md)  
-[Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)  
-[轉換](../msbuild/msbuild-transforms.md)  
-[Csc 工作](../msbuild/csc-task.md)  
-[Vbc 工作](../msbuild/vbc-task.md)
+- [目標](../msbuild/msbuild-targets.md)
+- [Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)
+- [轉換](../msbuild/msbuild-transforms.md)
+- [Csc 工作](../msbuild/csc-task.md)
+- [Vbc 工作](../msbuild/vbc-task.md)

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解如何取得及管理您的 Visual Studio 訂用帳戶產品金鑰。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803820"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953897"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的產品金鑰
 
@@ -47,9 +45,9 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 
 ## <a name="locating-and-claiming-product-keys"></a>尋找和索取產品金鑰
 您必須登入 Visual Studio 訂用帳戶才能檢視您的產品金鑰。 在 [[下載]](https://my.visualstudio.com/downloads) 頁面選取特定產品的藍色 [取得金鑰] 連結，即可找到個別的產品金鑰，如下所示。  [產品金鑰](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)頁面也彙總提供所有金鑰。 如果單一產品存在多組金鑰，下載的 [備註] 欄上就會顯示附註，協助您識別應該使用的金鑰。
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![從下載頁面取得金鑰](_img/product-keys/download-get-key.png)
-    
+
 部分產品將該產品的多重版本包裝為單一下載。 在這種情況下，輸入的產品金鑰會決定要安裝的產品版本。
 有的金鑰會自動提供，例如「靜態」金鑰，因為它不需要啟用，所以您可以不限次數地使用。 有的金鑰則必須選取產品的 [取得金鑰] 連結才能領取。
 
@@ -106,10 +104,10 @@ Visual Studio 訂閱者可輸入[訂閱者入口網站](https://my.visualstudio.
 Windows Server 2008 R2 提供每種類型各五組金鑰，每組金鑰支援 20 個連線。 Windows Server 2012 R2 提供每種類型各四組金鑰，每組金鑰支援 50 個連線。
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>若要在 Windows Server 中允許更多的連線：
-1.  開啟伺服器管理員。
-2.  開啟左側功能窗格中的 [伺服器] 清單。
-3.  在您的授權伺服器上按一下滑鼠右鍵，然後選擇 [安裝授權]。
-4.  請依照精靈中的步驟執行。  在選取合約類型時，選擇 [授權套件 (零售)]，然後輸入您從「我的」入口網站取得的產品金鑰。
+1. 開啟伺服器管理員。
+2. 開啟左側功能窗格中的 [伺服器] 清單。
+3. 在您的授權伺服器上按一下滑鼠右鍵，然後選擇 [安裝授權]。
+4. 請依照精靈中的步驟執行。  在選取合約類型時，選擇 [授權套件 (零售)]，然後輸入您從「我的」入口網站取得的產品金鑰。
 
 符合下列條件的使用者，可以透過 RDS 連線來存取應用程式：
 - 使用者必須匿名 (處於未經驗證的狀態)。

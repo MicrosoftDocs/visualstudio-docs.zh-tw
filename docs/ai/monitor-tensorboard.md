@@ -5,15 +5,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 177a9b252507df16788a8ef0659fcebb0fd8fe85
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: daf7c7fbc9ea7f9a3bfb04d6df600712b0be5237
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781118"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841054"
 ---
 # <a name="monitor-with-tensorboard"></a>使用 TensorBoard 監視
 

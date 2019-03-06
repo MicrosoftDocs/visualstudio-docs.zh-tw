@@ -13,38 +13,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 062f39644ee69ac03169ab2e59b49ab446654c6f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3f0071e98c9e36f3af11d318f480b4b9c6ec4cc1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042487"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615217"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio 分析工具 API 參考 (原生)
-Visual Studio 分析工具 API 可讓您以程式設計方式控制收集的資料量，並在分析期間插入時間戳記和設定檔標記。 若要使用原生 API，您可以在您的專案中包含 *VSPerf.h* 標頭檔，並新增 *VSPerf.lib*。  
-  
+Visual Studio 分析工具 API 可讓您以程式設計方式控制收集的資料量，並在分析期間插入時間戳記和設定檔標記。 若要使用原生 API，您可以在您的專案中包含 *VSPerf.h* 標頭檔，並新增 *VSPerf.lib*。
+
 > [!NOTE]
 > 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
-  
-## <a name="in-this-section"></a>本節內容  
- [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  
-  
- [CommentMarkProfile](../profiling/commentmarkprofile.md)  
-  
- [MarkProfile](../profiling/markprofile.md)  
-  
- [NameProfile](../profiling/nameprofile.md)  
-  
- [ResumeProfile](../profiling/resumeprofile.md)  
-  
- [StartProfile](../profiling/startprofile.md)  
-  
- [StopProfile](../profiling/stopprofile.md)  
-  
- [SuspendProfile](../profiling/suspendprofile.md)  
-  
- [PROFILE_CURRENTID](../profiling/profile-currentid.md)  
-  
-## <a name="see-also"></a>另請參閱  
- [分析工具 API](../profiling/profiling-tools-apis.md)   
- [逐步解說：使用分析工具 API](../profiling/walkthrough-using-profiler-apis.md)
+
+## <a name="in-this-section"></a>本節內容
+[CommentMarkAtProfile](../profiling/commentmarkatprofile.md)
+
+[CommentMarkProfile](../profiling/commentmarkprofile.md)
+
+[MarkProfile](../profiling/markprofile.md)
+
+[NameProfile](../profiling/nameprofile.md)
+
+[ResumeProfile](../profiling/resumeprofile.md)
+
+[StartProfile](../profiling/startprofile.md)
+
+[StopProfile](../profiling/stopprofile.md)
+
+[SuspendProfile](../profiling/suspendprofile.md)
+
+[PROFILE_CURRENTID](../profiling/profile-currentid.md)
+
+## <a name="see-also"></a>另請參閱
+
+- [分析工具 API](../profiling/profiling-tools-apis.md)
+- [逐步解說：使用分析工具 API](../profiling/walkthrough-using-profiler-apis.md)

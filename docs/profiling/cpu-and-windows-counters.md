@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e63919a13a948f7e6be2d2789aa778bd39514e51
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 37025177c026d0b6578644ca5765a6878be984ea
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950828"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625682"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 計數器
 
@@ -129,7 +129,7 @@ Visual Studio 分析工具會繼續支援特定平台的特定事件。 例如�
 
 ## <a name="see-also"></a>另請參閱
 
-[概觀](../profiling/overviews-performance-tools.md)  
-[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)  
-[如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)  
+[概觀](../profiling/overviews-performance-tools.md)
+[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)
+[如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)
 [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)

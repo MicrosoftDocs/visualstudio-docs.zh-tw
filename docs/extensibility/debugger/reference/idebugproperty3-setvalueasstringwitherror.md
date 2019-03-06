@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee3d317cf45692a8214f15c1473eb8f781b21451
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 1f3bc987cf097f3573b40d4d907204c742608fd0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450304"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709274"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 設定這個屬性的值，並傳回錯誤訊息，如有必要。
@@ -43,17 +43,21 @@ int SetValueAsStringWithError(
 ```
 
 #### <a name="parameters"></a>參數
-`pszValue`  
-[in]若要設定的值。
+`pszValue`
 
-`dwRadix`  
-[in]所設定的值的基數。
+ [in]若要設定的值。
 
-`dwTimeout`  
-[in]要設定之值的等待時間長度 (`INFINITE`表示永遠等待)。
+`dwRadix`
 
-`errorString`  
-[out]如果設定值時發生錯誤，這會保留失敗的原因。
+ [in]所設定的值的基數。
+
+`dwTimeout`
+
+ [in]要設定之值的等待時間長度 (`INFINITE`表示永遠等待)。
+
+`errorString`
+
+ [out]如果設定值時發生錯誤，這會保留失敗的原因。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -167,4 +171,4 @@ HRESULT CProperty::SetValueAsStringWithError(
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

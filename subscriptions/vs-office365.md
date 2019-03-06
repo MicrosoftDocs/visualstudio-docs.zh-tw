@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解某些 Visual Studio 訂用帳戶中所含的 Office 365 權益。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ded8c37cfcd737e9285b6a1e2a5f9eb51ede2680
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 6d6fdcbe7ae5bb5182f7c123120d632a4221f642
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380150"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841064"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365 Pro Plus
 
@@ -23,9 +21,9 @@ ms.locfileid: "54380150"
 ## <a name="getting-started-with-office-365-pro-plus"></a>開始使用 Office 365 Pro Plus
 
 遵循下列步驟下載並啟用 Office 365 Pro Plus：
-1. 登入您的 Visual Studio Enterprise 訂用帳戶。  
+1. 登入您的 Visual Studio Enterprise 訂用帳戶。
 2. 按一下 [下載] 索引標籤。
-3. 您會看到一份精選下載的清單。 在 Office 清單中，選擇 **Office 365**。 
+3. 您會看到一份精選下載的清單。 在 Office 清單中，選擇 **Office 365**。
    > [!div class="mx-imgBorder"]
    > ![Office 365 下載](_img/vs-office365/vs-office365-downloads.png)
 0. 若要安裝 Office 365，您需要產品金鑰。  按一下 Office 365 清單下的 [取得金鑰] 連結。
@@ -36,7 +34,7 @@ ms.locfileid: "54380150"
    > ![Office 365 領取產品金鑰](_img/vs-office365/vs-office365-claim-key.png)
 0. 記錄您剛才索取的金鑰。 (您可以隨時返回此清單再次查看)。
 0. 關閉飛出視窗。
-0. 按一下 [下載] 按鈕。 
+0. 按一下 [下載] 按鈕。
    > [!div class="mx-imgBorder"]
    > ![Office 365 開始下載](_img/vs-office365/vs-office365-download-button.png)
 0. 使用 Microsoft 帳戶登入。 (若您已登入，請按一下 [下一步])。
@@ -44,7 +42,7 @@ ms.locfileid: "54380150"
    > [!div class="mx-imgBorder"]
    > ![Office 365 輸入產品金鑰](_img/vs-office365/vs-office365-enter-key.png)
 0. 再按一下 [下一步]。
-0. 按一下 [安裝] 以安裝 Office 應用程式。 
+0. 按一下 [安裝] 以安裝 Office 應用程式。
 
 ## <a name="next-steps"></a>後續步驟
 

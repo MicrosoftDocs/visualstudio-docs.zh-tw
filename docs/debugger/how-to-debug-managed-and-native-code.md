@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: c9bdc4afb0d5f2b9f9f4ae0385b63372644929f8
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 055e7d106611d23254f317bdbe29a1ac1e3d9ec9
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690238"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953858"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教學課程：在同一個偵錯工作階段中進行 C# 和 C++ 偵錯
 
-Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，稱為混合模式偵錯。 在本教學課程中，您將了解如何在單一偵錯工作階段中，同時對受控程式碼與機器碼進行偵錯。 
+Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，稱為混合模式偵錯。 在本教學課程中，您將了解如何在單一偵錯工作階段中，同時對受控程式碼與機器碼進行偵錯。
 
 本教學課程示範如何從受控應用程式偵錯機器碼，但您也可[從原生應用程式偵錯受控程式碼](../debugger/how-to-debug-in-mixed-mode.md)。 此偵錯工具也支援其他類型的混合模式偵錯 (例如偵錯 [Python 和機器碼](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md))，並在 ASP.NET 等應用程式類型中使用指令碼偵錯工具。
 
@@ -60,7 +60,7 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 
    Visual Studio 會建立空白專案，並在 [方案總管] 中顯示。
 
-1. 在 [方案總管] 中，選取 [來源檔案]，然後選取 [專案] > [新增項目]。 或者，以滑鼠右鍵按一下 [來源檔案]，然後選取 [新增] > [新增項目]。 
+1. 在 [方案總管] 中，選取 [來源檔案]，然後選取 [專案] > [新增項目]。 或者，以滑鼠右鍵按一下 [來源檔案]，然後選取 [新增] > [新增項目]。
 
 1. 在 [新增項目] 對話方塊中，選取 [C++ 檔 (.cpp)]。 在 [名稱] 欄位中，鍵入 **Mixed_Mode.cpp**，然後選取 [新增]。
 
@@ -71,7 +71,7 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
     ```cpp
     #include "Mixed_Mode.h"
     ```
-1. 在 [方案總管] 中，選取 [標頭檔]，然後選取 [專案] > [新增項目]。 或者，以滑鼠右鍵按一下 [標頭檔]，然後選取 [新增] > [新增項目]。 
+1. 在 [方案總管] 中，選取 [標頭檔]，然後選取 [專案] > [新增項目]。 或者，以滑鼠右鍵按一下 [標頭檔]，然後選取 [新增] > [新增項目]。
 
 1. 在 [新增項目] 對話方塊中，選取 [標頭檔 (.h)]。 在 [名稱] 欄位中，鍵入 **Mixed_Mode.h**，然後選取 [新增]。
 
@@ -85,9 +85,9 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 
     extern "C"
     {
-        __declspec(dllexport) int __stdcall mixed_mode_multiply(int a, int b) {
-            return a * b;
-        }
+      __declspec(dllexport) int __stdcall mixed_mode_multiply(int a, int b) {
+        return a * b;
+      }
     }
     #endif
     ```
@@ -100,10 +100,10 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 
 1. 在 [方案總管] 中，選取 **Mixed_Mode_Debugging** 專案節點，然後選取**屬性**圖示；或以滑鼠右鍵按一下專案節點，然後選取選取 [屬性]。
 
-1. 在 [屬性] 窗格頂端，確定 [組態] 已設定 [作用中 (偵錯)]，且 [平台] 是您在工具列中設定的相同平台：[x64] (若為 x86 平台，則為 [Win32])。 
+1. 在 [屬性] 窗格頂端，確定 [組態] 已設定 [作用中 (偵錯)]，且 [平台] 是您在工具列中設定的相同平台：[x64] (若為 x86 平台，則為 [Win32])。
 
    > [!IMPORTANT]
-   > 如果您在 [x86] 與 [x64] 之間切換平台，則必須重新設定新平台的屬性。 
+   > 如果您在 [x86] 與 [x64] 之間切換平台，則必須重新設定新平台的屬性。
 
 1. 在左窗格的 [組態屬性] 下，選取 [連結器] > [進階]，然後在 [無進入點] 旁的下拉式清單中選取 [否]。 如果您必須將它變更為 [否]，請選取 [套用]。
 
@@ -125,7 +125,7 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 1. 在 [新增專案] 對話方塊中選取 [Visual C#]，然後在中間窗格內：
 
    - 針對 .NET Framework 應用程式，請選取 [主控台應用程式 (.NET Framework)]。
-   
+
    - 針對 .NET Core 應用程式，請選取 [主控台應用程式 (.NET Core)]。
 
 1. 在 [名稱] 欄位中，鍵入 **Mixed_Mode_Calling_App**，然後選取 [確定]。
@@ -164,9 +164,9 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 
 1. 選取 [檔案] > [儲存 Program.cs]，或按 **Ctrl**+**S** 以儲存檔案。
 
-## <a name="configure-mixed-mode-debugging"></a>設定混合模式偵錯 
+## <a name="configure-mixed-mode-debugging"></a>設定混合模式偵錯
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>設定 .NET Framework 應用程式的混合模式偵錯 
+### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>設定 .NET Framework 應用程式的混合模式偵錯
 
 1. 在 [方案總管] 中，選取 **Mixed_Mode_Calling_App** 專案節點，然後選取**屬性**圖示；或以滑鼠右鍵按一下專案節點，然後選取選取 [屬性]。
 
@@ -174,11 +174,11 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 
     ![啟用混合模式偵錯](../debugger/media/mixed-mode-enable-native-code-debugging.png)
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>設定 .NET Core 應用程式的混合模式偵錯 
+### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>設定 .NET Core 應用程式的混合模式偵錯
 
 在 Visual Studio 2017 的大多數版本中，您必須使用 *launchSettings.json* 檔案 (而不是專案屬性) 為 .NET Core 應用程式中的機器碼啟用混合模式偵錯。 若要追蹤這項功能的 UI 更新，請參閱此 [GitHub 問題](https://github.com/dotnet/project-system/issues/1125)。
 
-1. 在 [方案總管] 中，展開 [屬性]，然後開啟 *launchSettings.json* 檔案。 
+1. 在 [方案總管] 中，展開 [屬性]，然後開啟 *launchSettings.json* 檔案。
 
    >[!NOTE]
    >根據預設，*launchSettings.json* 位於 *C:\Users\username\source\repos\Mixed_Mode_Calling_App\Properties* 中。 如果 *launchSettings.json* 不存在，請在 [方案總管] 中選取 **Mixed_Mode_Calling_App** 專案，然後選取**屬性**圖示；或以滑鼠右鍵按一下專案，然後選取 [屬性]。 在 [偵錯] 索引標籤中暫時變更，然後建置專案。 這會建立 *launchSettings.json* 檔案。 還原您在 [偵錯] 索引標籤中所做的變更。

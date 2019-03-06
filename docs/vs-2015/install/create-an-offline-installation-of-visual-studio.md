@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8d76e4b1c9a7f7b6882eccab4a250e95c7419ea0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 89575318a8dd5357e5f786e25d3e3518d35348d6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763129"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954289"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "54763129"
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dotfuscator 和 Analytics Community Edition 5.19.1 (Community、 Professional 和 Enterprise 版本的 Visual Studio 中，因為安裝於**Windows 7 SP1**並**Windows Server 2008 R2**) |                                                                                                                                       如果您的離線電腦執行**Windows 7 SP1**或是**Windows Server 2008 R2**，您必須先執行下列步驟，才能安裝 Visual Studio 2015:<br /><br /> 1.若要下載 CTL 檔案的檔案或 web 伺服器設定。<br /><br /> 2.  重新導向 Microsoft 自動更新 URL 已中斷連線的環境。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 設定信任的根目錄和不允許的憑證](https://technet.microsoft.com/library/dn265983.aspx)Microsoft TechNet 網站上的頁面。                                                                                                                                       |
 |                                                                                  Android SDK 安裝程式 (API 層級)                                                                                   |                                                                        您必須連接網際網路，才能安裝 Android SDK (API 層級) 套件。 如果您是在受限網路上，則必須在安裝 Visual Studio 時允許存取下列 URL：<br /><br /> -   http://dl.google.com:443<br />-   http://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />如需如何解決 Proxy 設定可能問題的詳細資訊，請參閱 [Visual Studio 2015 install failures (Android SDK Setup) behind a Proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) (受 Proxy 保護的 Visual Studio 2015 安裝失敗 (Android SDK 安裝程式)) 部落格文章。                                                                         |
-|                             Visual Studio 擴充性項目範本<br /><br /> Visual Studio 的 GitHub 擴充<br /><br /> PowerShell Tools for Visual Studio                             | 如果當您安裝 Visual Studio 2015 時，您還沒有網際網路連線，您可以使用特殊的離線摘要來產生離線安裝版面配置。 **注意：** 此特殊的摘要包含 Visual Studio 2015 最新的更新。 <br /><br /> 若要建立離線摘要的特殊，執行下列命令： /layout*磁碟機：* \VisualStudio2015 /overridefeeduri *xml 來摘要 URL*<br /><br /> 例如，英文特殊離線摘要的 Visual Studio 2015 Enterprise，請執行：<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> 如您可以使用自選的語言建立離線摘要的特殊的 Url 的完整清單，請參閱下表。 |
+|                             Visual Studio 擴充性項目範本<br /><br /> Visual Studio 的 GitHub 延伸模組<br /><br /> PowerShell Tools for Visual Studio                             | 如果當您安裝 Visual Studio 2015 時，您還沒有網際網路連線，您可以使用特殊的離線摘要來產生離線安裝版面配置。 **注意：** 此特殊的摘要包含 Visual Studio 2015 最新的更新。 <br /><br /> 若要建立離線摘要的特殊，執行下列命令： /layout*磁碟機：* \VisualStudio2015 /overridefeeduri *xml 來摘要 URL*<br /><br /> 例如，英文特殊離線摘要的 Visual Studio 2015 Enterprise，請執行：<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> 如您可以使用自選的語言建立離線摘要的特殊的 Url 的完整清單，請參閱下表。 |
 
  上表中所述，請使用下列 Url 來建立特定語言的特殊離線摘要。
 
@@ -87,4 +87,4 @@ ms.locfileid: "54763129"
 |        土耳其文        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
 ## <a name="see-also"></a>請參閱
- [安裝 Visual Studio]()
+ [安裝 Visual Studio](../install/install-visual-studio-2015.md)

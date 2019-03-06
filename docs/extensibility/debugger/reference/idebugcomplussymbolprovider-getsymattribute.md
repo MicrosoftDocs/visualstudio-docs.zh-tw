@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetSymAttribute | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymAttribute
 - GetSymAttribute
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c46719b7de97e2a55eefb28d9e27df1557a90e65
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: bc0b5f5c8b435358464bd8b8f3984aee54af79b1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413354"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701221"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 擷取與指定的父屬性指定模組的偵錯符號。
@@ -48,26 +48,33 @@ int GetSymAttribute (
 ```
 
 #### <a name="parameters"></a>參數
-`ulAppDomainID`  
-[in]應用程式定義域的識別項。
+`ulAppDomainID`
 
-`guidModule`  
-[in]模組的唯一識別碼。
+ [in]應用程式定義域的識別項。
 
-`tokParent`  
-[in]父屬性的語彙基元。
+`guidModule`
 
-`pstrName`  
-[in]模組的名稱。
+ [in]模組的唯一識別碼。
 
-`cBuffer`  
-[in]如輸出所需的位元組數目`buffer`。
+`tokParent`
 
-`pcBuffer`  
-[out]輸出的長度`buffer`。
+ [in]父屬性的語彙基元。
 
-`buffer`  
-[out]包含符號的陣列。
+`pstrName`
+
+ [in]模組的名稱。
+
+`cBuffer`
+
+ [in]如輸出所需的位元組數目`buffer`。
+
+`pcBuffer`
+
+ [out]輸出的長度`buffer`。
+
+`buffer`
+
+ [out]包含符號的陣列。
 
 ## <a name="return-value"></a>傳回值
 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
@@ -104,4 +111,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>另請參閱
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

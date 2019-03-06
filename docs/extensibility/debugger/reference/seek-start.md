@@ -1,7 +1,7 @@
 ---
 title: SEEK_START | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SEEK_START
 helpviewer_keywords:
@@ -12,66 +12,61 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 203371cd1ee2d1a9efe4c50f8d5a73f2fa7d7980
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e003b74faeb7c6ed165c43380a7c4c6b0520ea0c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961868"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56677991"
 ---
 # <a name="seekstart"></a>SEEK_START
-指定要啟動的反組譯碼資料流中搜尋的位置。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-enum enum_SEEK_START {   
-   SEEK_START_BEGIN       = 0x0001,  
-   SEEK_START_END         = 0x0002,  
-   SEEK_START_CURRENT     = 0x0003,  
-   SEEK_START_CODECONTEXT = 0x0004,  
-   SEEK_START_CODELOCID   = 0x0005  
-};  
-typedef DWORD SEEK_START;  
-```  
-  
-```csharp  
-public enum enum_SEEK_START {   
-   SEEK_START_BEGIN       = 0x0001,  
-   SEEK_START_END         = 0x0002,  
-   SEEK_START_CURRENT     = 0x0003,  
-   SEEK_START_CODECONTEXT = 0x0004,  
-   SEEK_START_CODELOCID   = 0x0005  
-};  
-```  
-  
-## <a name="members"></a>成員  
- SEEK_START_BEGIN  
- 搜尋目前文件的開頭開始。  
-  
- SEEK_START_END  
- 啟動搜尋目前文件的結尾。  
-  
- SEEK_START_CURRENT  
- 啟動搜尋目前文件目前的位置。  
-  
- SEEK_START_CODECONTEXT  
- 開始搜尋在目前文件指定的程式碼內容。  
-  
- SEEK_START_CODELOCID  
- 開始搜尋在指定的程式碼位置識別碼。 透過呼叫所取得的程式碼位置識別項[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)。  
-  
-## <a name="remarks"></a>備註  
- 作為引數[搜尋](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)方法。  
-  
-## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
-  
- 命名空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [搜尋](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
- [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)
+指定要啟動的反組譯碼資料流中搜尋的位置。
+
+## <a name="syntax"></a>語法
+
+```cpp
+enum enum_SEEK_START { 
+   SEEK_START_BEGIN       = 0x0001,
+   SEEK_START_END         = 0x0002,
+   SEEK_START_CURRENT     = 0x0003,
+   SEEK_START_CODECONTEXT = 0x0004,
+   SEEK_START_CODELOCID   = 0x0005
+};
+typedef DWORD SEEK_START;
+```
+
+```csharp
+public enum enum_SEEK_START { 
+   SEEK_START_BEGIN       = 0x0001,
+   SEEK_START_END         = 0x0002,
+   SEEK_START_CURRENT     = 0x0003,
+   SEEK_START_CODECONTEXT = 0x0004,
+   SEEK_START_CODELOCID   = 0x0005
+};
+```
+
+## <a name="members"></a>成員
+ SEEK_START_BEGIN 開始搜尋目前文件的開頭。
+
+ SEEK_START_END 開始搜尋目前文件的結尾。
+
+ SEEK_START_CURRENT 開始搜尋目前文件目前的位置。
+
+ SEEK_START_CODECONTEXT 開始搜尋在目前文件指定的程式碼內容。
+
+ SEEK_START_CODELOCID 開始搜尋在指定的程式碼位置識別碼。 透過呼叫所取得的程式碼位置識別項[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)。
+
+## <a name="remarks"></a>備註
+ 作為引數[搜尋](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)方法。
+
+## <a name="requirements"></a>需求
+ 標頭： msdbg.h
+
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop
+
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>另請參閱
+- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
+- [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)

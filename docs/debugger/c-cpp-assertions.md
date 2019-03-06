@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 461c2c4bc5525eee61c413cb8c25afd6090852a5
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987466"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628321"
 ---
 # <a name="cc-assertions"></a>C/C++ 判斷提示
 判斷提示陳述式會指定您預期要在程式中的某一點，則為 true 的條件。 如果該條件不成立，判斷提示失敗，將會中斷程式執行，而[判斷提示失敗對話方塊](../debugger/assertion-failed-dialog-box.md)隨即出現。
@@ -46,7 +46,7 @@ Visual c + + 支援下列建構為基礎的判斷提示陳述式：
 
 - 使用 C 執行階段程式庫的程式的 CRT 判斷提示。
 
-- ANSI [assert 函式](/cpp/c-runtime-library/reference/assert-macro-assert-wassert)其他 C/c + + 程式。  
+- ANSI [assert 函式](/cpp/c-runtime-library/reference/assert-macro-assert-wassert)其他 C/c + + 程式。
 
   若要攔截邏輯錯誤，檢查作業的結果及測試應該已處理的錯誤狀況，您可以使用判斷提示。
 
@@ -63,7 +63,7 @@ Visual c + + 支援下列建構為基礎的判斷提示陳述式：
 
 - [MFC ASSERT_VALID 和 CObject::AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)
 
-- [AssertValid 的限制](#BKMK_Limitations_of_AssertValid)  
+- [AssertValid 的限制](#BKMK_Limitations_of_AssertValid)
 
   [使用判斷提示](#BKMK_Using_assertions)
 
@@ -339,6 +339,7 @@ _ASSERT(!myErr); // Don't do this, either!
 [本主題內容](#BKMK_In_this_topic)
 
 ## <a name="see-also"></a>請參閱
-[偵錯工具安全性](../debugger/debugger-security.md)  
-[偵錯機器碼](../debugger/debugging-native-code.md)  
-[Managed 程式碼中的判斷提示](../debugger/assertions-in-managed-code.md)
+
+- [偵錯工具安全性](../debugger/debugger-security.md)
+- [偵錯機器碼](../debugger/debugging-native-code.md)
+- [Managed 程式碼中的判斷提示](../debugger/assertions-in-managed-code.md)

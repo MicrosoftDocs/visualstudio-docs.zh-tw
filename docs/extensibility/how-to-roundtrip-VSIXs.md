@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 809ca83d164b4cb589f19438b1fc5672cc1b4b8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880948"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323811"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>HOW TO：讓擴充功能與 Visual Studio 2017 和 Visual Studio 2015 相容
 
@@ -51,7 +51,7 @@ ms.locfileid: "53880948"
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>請確定沒有任何以 project.json 參考
 
-在本文中，稍後我們會插入條件式匯入陳述式中的您 **.csproj*檔案。  如果您的 NuGet 參考會儲存在這將無法運作*project.json*。 因此，建議您移動所有 NuGet 參考*packages.config*檔案。
+在本文中，稍後我們會插入條件式匯入陳述式中的您 **.csproj*檔案。 如果您的 NuGet 參考會儲存在這將無法運作*project.json*。 因此，建議您移動所有 NuGet 參考*packages.config*檔案。
 如果您的專案包含*project.json*檔案：
 
 * 請記下的在參考*project.json*。
@@ -61,7 +61,7 @@ ms.locfileid: "53880948"
     * Visual Studio 會自動建立*packages.config*為您的檔案。
 
 > [!NOTE]
-> 如果您的專案包含 EnvDTE 套件，它們可能需要以滑鼠右鍵按一下要加入**參考**選取**將參考加入**並新增適當的參考。  使用 NuGet 套件，可能會嘗試建置專案時建立的錯誤。
+> 如果您的專案包含 EnvDTE 套件，它們可能需要以滑鼠右鍵按一下要加入**參考**選取**將參考加入**並新增適當的參考。 使用 NuGet 套件，可能會嘗試建置專案時建立的錯誤。
 
 ## <a name="add-appropriate-build-tools"></a>新增適當的建置工具
 
@@ -84,18 +84,18 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 ### <a name="1-installation-targets"></a>1.安裝目標
 
-我們要告訴 Visual Studio 版本為目標來建置 VSIX。  一般而言，這些參考會為 14.0 (Visual Studio 2015) 的版本或版本 15.0 (Visual Studio 2017)。  在我們的案例中，我們想要建置會針對兩者安裝延伸模組，因此我們需要以這兩個版本為目標的 VSIX。  若要讓您建置和 14.0 比更早版本上安裝的 VSIX，做法是藉由設定較早的版本號碼;不過，不再支援 10.0 及更早版本。
+我們要告訴 Visual Studio 版本為目標來建置 VSIX。 一般而言，這些參考會為 14.0 (Visual Studio 2015) 版，版本 15.0 (Visual Studio 2017) 或版本 16.0 (Visual Studio 2019)。 在我們的案例中，我們想要建置會針對兩者安裝延伸模組，因此我們需要以這兩個版本為目標的 VSIX。 若要讓您建置和 14.0 比更早版本上安裝的 VSIX，做法是藉由設定較早的版本號碼;不過，不再支援 10.0 及更早版本。
 
 * 開啟*source.extension.vsixmanifest* Visual Studio 中的檔案。
 * 開啟**安裝目標** 索引標籤。
-* 變更**版本範圍**到 [14.0，16.0）。  ' [' 會告知 Visual Studio 包括 14.0 和所有的版本，過去它。  ')' 會告知要包含的 15.0，但不是包含版本 16.0 的所有版本的 Visual Studio。
+* 變更**版本範圍**到 [14.0，17.0）。 ' [' 會告知 Visual Studio 包括 14.0 和所有的版本，過去它。 ')' 會告訴 Visual Studio 中以達，包含所有版本，但不是包括、 17.0 版。
 * 儲存所有變更並關閉所有 Visual Studio 執行個體。
 
 ![安裝目標映像](media/visual-studio-installation-targets-example.png)
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2.加入必要條件*extension.vsixmanifest*檔案
 
-必要條件是使用 Visual Studio 2017 的新功能。  在此案例中，我們需要 Visual Studio 核心編輯器做為必要條件。 因為 Visual Studio 2015 VSIX 設計工具不會處理新`Prerequisites` 區段中，您必須編輯此組件中的 XML 程式碼以手動方式。  或者，您可以開啟 Visual Studio 2017，並使用更新的資訊清單設計工具插入的必要條件。
+必要條件是使用 Visual Studio 2017 的新功能。 在此案例中，我們需要 Visual Studio 核心編輯器做為必要條件。 因為 Visual Studio 2015 VSIX 設計工具不會處理新`Prerequisites` 區段中，您必須編輯此組件中的 XML 程式碼以手動方式。 或者，您可以開啟 Visual Studio 2017，並使用更新的資訊清單設計工具插入的必要條件。
 
 若要以手動方式這樣：
 
@@ -112,7 +112,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 * 儲存並關閉檔案。
 
 > [!NOTE]
-> 如果您選擇達成此目的使用 VSIX 設計工具，Visual Studio 2017 中，您必須手動編輯必要的版本，以確保它是與所有版本的 Visual Studio 2017 相容。  這是因為設計工具會為您目前版本的 Visual Studio (比方說，15.0.26208.0) 插入的最小版本。  不過，因為其他使用者可能會有較早版本，您會想要以手動方式編輯這個檔案為 15.0。
+> 如果您選擇達成此目的使用 VSIX 設計工具，Visual Studio 2017 中，您必須手動編輯必要的版本，以確保它是與所有版本的 Visual Studio 2017 相容。 這是因為設計工具會為您目前版本的 Visual Studio (比方說，15.0.26208.0) 插入的最小版本。 不過，因為其他使用者可能會有較早版本，您會想要以手動方式編輯這個檔案為 15.0。
 
 此時，您的資訊清單檔應看起來像這樣：
 
@@ -120,14 +120,14 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 ## <a name="modify-the-project-file-myprojectcsproj"></a>修改專案檔 (myproject.csproj)
 
-強烈建議將修改後的.csproj 開啟時執行此步驟的參考。  您可以找到數個範例[此處](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。  選取任何擴充性範例中，尋找 *.csproj*檔案的參考，然後執行下列步驟：
+強烈建議將修改後的.csproj 開啟時執行此步驟的參考。 您可以找到數個範例[此處](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。 選取任何擴充性範例中，尋找 *.csproj*檔案的參考，然後執行下列步驟：
 
 * 瀏覽至專案目錄中**檔案總管**。
 * 開啟*myproject.csproj*使用文字編輯器的檔案。
 
 ### <a name="1-update-the-minimumvisualstudioversion"></a>1.更新 MinimumVisualStudioVersion
 
-* 若要設定的最小的 visual studio 版本`$(VisualStudioVersion)`，並將它加入的條件陳述式。  如果它們尚不存在，請新增這些標記。  確定設定標記，如下所示：
+* 若要設定的最小的 visual studio 版本`$(VisualStudioVersion)`，並將它加入的條件陳述式。 如果它們尚不存在，請新增這些標記。 確定設定標記，如下所示：
 
 ```xml
 <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
@@ -163,7 +163,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 ### <a name="4-add-conditions-to-the-build-tools-imports"></a>4.將條件加入至組建工具匯入
 
-* 加入額外的條件式陳述式來`<import>`Microsoft.VSSDK.BuildTools 參考的標記。  插入`'$(VisualStudioVersion)' != '14.0' And`條件陳述式前面。  這些陳述式會出現在頁首和頁尾的 csproj 檔案。
+* 加入額外的條件式陳述式來`<import>`Microsoft.VSSDK.BuildTools 參考的標記。 插入`'$(VisualStudioVersion)' != '14.0' And`條件陳述式前面。 這些陳述式會出現在頁首和頁尾的 csproj 檔案。
 
 例如: 
 
@@ -179,7 +179,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
-* 加入額外的條件式陳述式來`<Error>`Microsoft.VSSDK.BuildTools 參考的標記。  執行這項操作，藉由插入`'$(VisualStudioVersion)' != '14.0' And`條件陳述式前面。 這些陳述式會出現在頁尾中的 csproj 檔案。
+* 加入額外的條件式陳述式來`<Error>`Microsoft.VSSDK.BuildTools 參考的標記。 執行這項操作，藉由插入`'$(VisualStudioVersion)' != '14.0' And`條件陳述式前面。 這些陳述式會出現在頁尾中的 csproj 檔案。
 
 例如: 
 
@@ -187,7 +187,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
-* 加入額外的條件式陳述式來`<Error>`Microsoft.VisualStudio.Sdk.BuildTasks.14.0 的標記。  插入`'$(VisualStudioVersion)' == '14.0' And`條件陳述式前面。 這些陳述式會出現在頁尾中的 csproj 檔案。
+* 加入額外的條件式陳述式來`<Error>`Microsoft.VisualStudio.Sdk.BuildTasks.14.0 的標記。 插入`'$(VisualStudioVersion)' == '14.0' And`條件陳述式前面。 這些陳述式會出現在頁尾中的 csproj 檔案。
 
 例如: 
 

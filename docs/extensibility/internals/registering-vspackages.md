@@ -11,19 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc8082d63376abeab2da0e8fa7b999c12195d4e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 426adc0cd150d5867760a8570df5777fec8260a2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006069"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601573"
 ---
 # <a name="registering-vspackages"></a>註冊 VSPackage
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 依賴.pkgdef 檔案，來描述及尋找 VSPackage。 .Pkgdef 檔案包含所有的註冊資訊，否則會新增至系統登錄。 將屬性加入至原始碼，然後執行註冊 managed 的 Vspackage [CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md)上產生的組件，以產生.pkgdef 檔。  
-  
-## <a name="in-this-section"></a>本節內容  
- [為 VS Shell 指定 VSPackage 檔案位置](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
- 描述 Vspackage 的載入路徑。  
-  
- [註冊和取消註冊 VSPackage](../../extensibility/registering-and-unregistering-vspackages.md)  
- 說明如何註冊 VSPackage。  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 依賴.pkgdef 檔案，來描述及尋找 VSPackage。 .Pkgdef 檔案包含所有的註冊資訊，否則會新增至系統登錄。 將屬性加入至原始碼，然後執行註冊 managed 的 Vspackage [CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md)上產生的組件，以產生.pkgdef 檔。
+
+## <a name="in-this-section"></a>本節內容
+- [為 VS Shell 指定 VSPackage 檔案位置](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)
+
+ 描述 Vspackage 的載入路徑。
+
+- [註冊和取消註冊 VSPackage](../../extensibility/registering-and-unregistering-vspackages.md)
+
+ 說明如何註冊 VSPackage。

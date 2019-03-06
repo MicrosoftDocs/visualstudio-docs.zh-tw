@@ -1,14 +1,9 @@
 ---
 title: 必須是 VBArray |Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5013
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: f2998d7d-13a4-4bbe-b872-3ff3316551e4
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4b5416c6e37e59a60206bd21606b5214f05a269
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 159a5dd0195cc0cbb244664d75e19d1ac6af3dec
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347451"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843412"
 ---
 # <a name="vbarray-expected"></a>必須是 VBArray
 您提供不是 Visual Basic 的 safeArray，當一個預期的物件。  

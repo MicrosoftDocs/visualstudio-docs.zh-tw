@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841a420a278849f1f26de6869a8b723617e7fd8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939786"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428644"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>快照集偵錯工具使用者入門
 
@@ -27,7 +27,7 @@ Visual Studio 快照集偵錯工具現在會連接到您的服務，您可以開
 
 ### <a name="set-a-snappoint"></a>設定貼齊點
 
-1. 在程式碼編輯器中，按一下您感興趣設定貼齊點的程式碼行旁的左裝訂邊。 請確定它是您知道將會執行的程式碼。 
+1. 在程式碼編輯器中，按一下您感興趣設定貼齊點的程式碼行旁的左裝訂邊。 請確定它是您知道將會執行的程式碼。
 
     ![在編輯器中設定貼齊點](../media/snapshot-startpage-set-snappoint.png)
 
@@ -37,7 +37,7 @@ Visual Studio 快照集偵錯工具現在會連接到您的服務，您可以開
 
 ### <a name="open-a-snapshot"></a>開啟快照集
 
-1. 當叫用的貼齊點時，快照集會出現在右邊的 [診斷工具] 視窗中。 如果視窗未開啟，您可以選擇其開啟**偵錯** > **Windows** > **顯示診斷工具**。 
+1. 當叫用的貼齊點時，快照集會出現在右邊的 [診斷工具] 視窗中。 如果視窗未開啟，您可以選擇其開啟**偵錯** > **Windows** > **顯示診斷工具**。
 
     ![在 [診斷工具] 視窗中的快照集](../media/snapshot-startpage-diagsession-window.png)
 
@@ -59,7 +59,7 @@ Visual Studio 快照集偵錯工具現在會連接到您的服務，您可以開
 
 3. 在 **訊息**欄位中，輸入您想要記錄的記錄訊息。 您也可以將它們放在大括號內，來評估您的記錄檔訊息中的變數。
 
-    如果您選擇**傳送到輸出視窗**，訊息會出現在 [診斷工具] 視窗，當叫用的記錄點時。 
+    如果您選擇**傳送到輸出視窗**，訊息會出現在 [診斷工具] 視窗，當叫用的記錄點時。
 
     如果您選擇**傳送至應用程式記錄檔**，則訊息會出現任何位置，您可以看到來自`System.Diagnostics.Trace`(或`ILogger`.NET core)，例如 App Insights 記錄點叫用時。
 
@@ -69,6 +69,6 @@ Visual Studio 快照集偵錯工具現在會連接到您的服務，您可以開
 
 ## <a name="dont-show-me-this-again"></a>不要再顯示此訊息
 
-若要永遠不會顯示快照集偵錯工具 [入門] 頁面一次快照集偵錯工具的連線時，變更**顯示 [Getting Started] 頁面上的工作階段開始**選項**工具** >  **選項** > **快照集偵錯工具**。 
+若要永遠不會在您連線的快照集偵錯工具時，再次顯示快照集偵錯工具起始頁，請變更**顯示 [Getting Started] 頁面上的工作階段開始**選項**工具** >  **選項** > **快照集偵錯工具**。
 
 ![快照集偵錯工具 工具選項頁面](../media/snapshot-startpage-tools-options.png)

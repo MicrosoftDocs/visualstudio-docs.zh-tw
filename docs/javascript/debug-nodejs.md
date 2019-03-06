@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b6bc2aa2dff6a1d71428041e17bffe39c7d624e9
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: af11a16c94f50c5d7614d8d630534433332a4d91
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768401"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223386"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行偵錯
 
@@ -168,8 +168,8 @@ Visual Studio 僅提供 Chrome 和 Internet Explorer 的偵錯支援。 它會�
    針對 Chrome，請移至 [方案總管] > [指令碼文件] > [您的頁面名稱]。
 
     > [!NOTE]
-    > 使用 Chrome 時，您可能會收到訊息 `no source is available between `<script>` tags.` This is OK, just continue debugging.
+    > 使用 Chrome 時，您可能會收到訊息，指出**在 \<指令碼 > 標籤之間沒有可用的來源**。 這是正常的，您可以繼續偵錯。
 
    針對 Internet Explorer，請移至 [方案總管] > [指令碼文件] > [Windows Internet Explorer] > [您的頁面名稱]。
 
-如需詳細資訊，請參閱 [Client-side debugging of ASP.NET projects in Google Chrome](https://blogs.msdn.microsoft.com/webdev/2016/11/21/client-side-debugging-of-asp-net-projects-in-google-chrome/) (Google Chrome 中 ASP.NET 專案的用戶端偵錯)。
+如需詳細資訊，請參閱 [Client-side debugging of ASP.NET projects in Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/) (Google Chrome 中 ASP.NET 專案的用戶端偵錯)。

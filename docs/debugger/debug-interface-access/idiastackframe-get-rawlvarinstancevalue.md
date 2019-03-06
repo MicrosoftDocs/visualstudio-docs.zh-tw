@@ -12,42 +12,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96851912abb6593ce1fe72bd3eebdd67c120c26b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a8ad236307360a96f64999313764424305980fc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992785"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624018"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
-這個方法會擷取指定的本機變數的值做為未經處理位元組。  
-  
-## <a name="syntax"></a>語法  
-  
-```C++  
-HRESULT get_rawLVarInstanceValue(  
-   IDiaLVarInstance* pInstance,  
-   DWORD             cbDataMax,  
-   DWORD*            pcbData,  
-   BYTE*             pbData  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `pInstance`  
- [in]`IDiaLVarInstance`物件，表示要取得其值的本機變數的執行個體。  
-  
- `cbDataMax`  
- [in]所指向的緩衝區中的位元組數目上限`pbData`。 這最多可有 8 個位元組 (`sizeof(ULONGLONG)`)。  
-  
- `pcbData`  
- [out]傳回的實際儲存在緩衝區的位元組數目。  
-  
- `pbData`  
- [out]要填入資料緩衝區。 不可為 `NULL`。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="see-also"></a>請參閱  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+這個方法會擷取指定的本機變數的值做為未經處理位元組。
+
+## <a name="syntax"></a>語法
+
+```C++
+HRESULT get_rawLVarInstanceValue(
+   IDiaLVarInstance* pInstance,
+   DWORD             cbDataMax,
+   DWORD*            pcbData,
+   BYTE*             pbData
+);
+```
+
+#### <a name="parameters"></a>參數
+ `pInstance`
+
+[in]`IDiaLVarInstance`物件，表示要取得其值的本機變數的執行個體。
+
+ `cbDataMax`
+
+[in]所指向的緩衝區中的位元組數目上限`pbData`。 這最多可有 8 個位元組 (`sizeof(ULONGLONG)`)。
+
+ `pcbData`
+
+[out]傳回的實際儲存在緩衝區的位元組數目。
+
+ `pbData`
+
+[out]要填入資料緩衝區。 不可為 `NULL`。
+
+## <a name="return-value"></a>傳回值
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="see-also"></a>請參閱
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
