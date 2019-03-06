@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b74b924d8d3e10192940686fac0ffce88e3f153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692862"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953646"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 因為遠端偵錯監視未正確設定遠端電腦上或遠端電腦因為網路問題或防火牆存在而無法存取，可能會發生此訊息。
 
 > [!IMPORTANT]
->  如果您認為您收到此訊息是因為產品錯誤，請[報告這個問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)Visual studio。 如果您需要更多協助，請參閱 [Talk to Us](../ide/talk-to-us.md) 與 Microsoft 連絡。
+>  如果您認為您收到此訊息是因為產品錯誤，請[報告這個問題](../ide/how-to-report-a-problem-with-visual-studio.md)Visual studio。 如果您需要更多協助，請參閱 [Talk to Us](../ide/talk-to-us.md) 與 Microsoft 連絡。
 
 ## <a name="specificerrors"></a>什麼是詳細的錯誤訊息？
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7129b6056f2c8e35e277b548c048d7bd994afa9b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d9e41de9fc395b673f38fa1f7b343594bf905a8d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915859"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223165"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>逐步解說︰使用 WPF 和 Entity Framework 建立 WCF 資料服務
 在本逐步解說中，會示範如何建立裝載於 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的簡單 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，並從 Windows Forms 應用程式存取此服務。
@@ -104,7 +104,7 @@ ms.locfileid: "55915859"
 7. 在 [選擇您的版本] 頁面上，選擇 [Entity Framework 5.0] 選項按鈕，然後選擇 [下一步] 按鈕。
 
     > [!NOTE]
-    > 若要使用最新版的 Entity Framework 6 與 WCF 服務，您還需要安裝 WCF Data Services Entity Framework Provider NuGet 套件。 請參閱[使用 WCF Data Services 5.6.0 和 Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/)。
+    > 若要使用最新版的 Entity Framework 6 與 WCF 服務，您還需要安裝 WCF Data Services Entity Framework Provider NuGet 套件。 請參閱[使用 WCF Data Services 5.6.0 和 Entity Framework 6 +](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/)。
 
 8. 展開 [選擇您的資料庫物件] 頁面上的 [資料表] 節點，選取 [客戶] 核取方塊，然後選擇 [完成] 按鈕。
 

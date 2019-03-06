@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 89c66d0ce71a77dcfcaa6364cba6d31cf5707c4a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f5f9b7e700ff21bac570cf8545207bb75fda820e
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613371"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428735"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>偵錯即時 ASP.NET Azure 應用程式使用快照集偵錯工具
 
@@ -50,7 +50,7 @@ ms.locfileid: "56613371"
 
     > [!IMPORTANT]
     > 快照集偵錯，您需要開啟*相同版本的原始程式碼*發行至 Azure App Service。
-::: moniker range="< vs-2019"
+::: moniker range="vs-2019"
 
 2. 在 [雲端總管] (**檢視 > Cloud Explorer**)，以滑鼠右鍵按一下您的專案部署至 Azure App Service，然後選取**附加快照偵錯工具**。
 

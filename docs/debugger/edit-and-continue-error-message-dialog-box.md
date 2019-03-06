@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47693c6fbb25fb0a7c2468abbad515f8aaf63159
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6531311e00d25947a8bb5ca2e691c941a20307ba
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694981"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222343"
 ---
 # <a name="edit-and-continue-error-message"></a>編輯後繼續錯誤訊息
 
@@ -46,6 +46,6 @@ ms.locfileid: "56694981"
 -   開始偵錯舊版的應用程式，因為最新版本有建置錯誤。
 
 如需詳細資訊，請參閱:
-- [C + + 編輯後繼續的部落格文章](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)
+- [C + + 編輯後繼續的部落格文章](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)
 - [支援的程式碼變更 (C++)](../debugger/supported-code-changes-cpp.md)
 - [編輯後繼續](../debugger/edit-and-continue.md)

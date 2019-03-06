@@ -1,6 +1,6 @@
 ---
 title: 偵錯已安裝的 UWP 應用程式套件 |Microsoft Docs
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/07/2018
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b6a41ad863ee25e4294d5d0242b3113cd405fb00
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 10e10b512dc8deb63db7ade2075347d9e6405b6b
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637343"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428709"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>偵錯在 Visual Studio 中的已安裝的 UWP 應用程式套件
 

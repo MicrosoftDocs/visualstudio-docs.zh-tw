@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaeaa4e27b360e10c368255367892628ed45bd5f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2dc6aae5530d436e693c667682219e474d7a782d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722482"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223672"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>只有使用 Just My Code 的使用者程式碼進行偵錯
 
@@ -97,7 +97,7 @@ Just My Code.NET Framework、 c + + 和 JavaScript 專案中的運作方式。
 - 中指定的函式 *\*.natjmc*中的檔案 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾。
 
 > [!NOTE]
-> 如需程式碼逐步執行 Just My Code 中的支援，c + + 程式碼必須編譯使用 MSVC 編譯器在 Visual Studio 15.8 Preview 3 或更新版本，而且您必須啟用 /JMC 編譯器參數 （它預設啟用）。 如需詳細資訊，請參閱 <<c0> [ 自訂 c + + 的呼叫堆疊和程式碼逐步執行行為](#BKMK_CPP_Customize_call_stack_behavior))，而這[部落格文章](https://blogs.msdn.microsoft.com/vcblog/2018/06/29/announcing-jmc-stepping-in-visual-studio/)。 使用舊版的編譯器編譯的程式碼 *.natstepfilter*檔案是唯一的辦法自訂程式碼逐步執行，也就是獨立的 Just My Code。 請參閱[自訂 c + + 逐步執行行為](#BKMK_CPP_Customize_stepping_behavior)。
+> 如需程式碼逐步執行 Just My Code 中的支援，c + + 程式碼必須編譯使用 MSVC 編譯器在 Visual Studio 15.8 Preview 3 或更新版本，而且您必須啟用 /JMC 編譯器參數 （它預設啟用）。 如需詳細資訊，請參閱 <<c0> [ 自訂 c + + 的呼叫堆疊和程式碼逐步執行行為](#BKMK_CPP_Customize_call_stack_behavior))，而這[部落格文章](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/)。 使用舊版的編譯器編譯的程式碼 *.natstepfilter*檔案是唯一的辦法自訂程式碼逐步執行，也就是獨立的 Just My Code。 請參閱[自訂 c + + 逐步執行行為](#BKMK_CPP_Customize_stepping_behavior)。
 
 <a name="BKMK_CPP_Stepping_behavior"></a> 在 c + + 偵錯：
 

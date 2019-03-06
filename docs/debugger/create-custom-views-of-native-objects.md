@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 931200e6f921c26d23fddde4a8420f042240e32f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637850"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428800"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>在偵錯工具中建立原生物件的自訂檢視
 
@@ -99,11 +99,21 @@ Visual Studio 偵錯工具載入 *.natvis* c + + 專案中的檔案自動執行�
 
 1. 任何 *.natvis*檔案中內嵌 *.pdb*您偵錯時，除非已載入的專案中的相同名稱的檔案存在。
 
-1. 任何 *.natvis*位於已載入的 c + + 專案或最上層方案的檔案。 此群組包含所有已載入的 c + + 專案，包括 其他語言中的 類別庫，但不是專案。
+2. 任何 *.natvis*位於已載入的 c + + 專案或最上層方案的檔案。 此群組包含所有已載入的 c + + 專案，包括 其他語言中的 類別庫，但不是專案。
 
-1.  使用者專屬的 Natvis 目錄 (例如 *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*)。
+::: moniker range="vs-2017"
 
-1.  全系統 Natvis 目錄 (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 此目錄已 *.natvis*與 Visual Studio 一起安裝的檔案。 如果您有系統管理員權限，您可以將檔案新增到這個目錄。
+3.  使用者專屬的 Natvis 目錄 (例如 *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*)。
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+3.  使用者專屬的 Natvis 目錄 (例如 *%USERPROFILE%\Documents\Visual Studio 2019\Visualizers*)。
+
+::: moniker-end
+
+4.  全系統 Natvis 目錄 (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 此目錄已 *.natvis*與 Visual Studio 一起安裝的檔案。 如果您有系統管理員權限，您可以將檔案新增到這個目錄。
 
 ## <a name="modify-natvis-files-while-debugging"></a>偵錯時修改.natvis 檔案
 

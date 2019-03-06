@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35cc3e8336dc2f4b618be10626c014692fdfa650
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: HT
+ms.openlocfilehash: 3afb55c41f48c6d5e5a153c12cd364d130129d79
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694994"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222352"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 您可以在 Visual C++ 專案中，使用 [編輯後繼續]。 請參閱[支援的程式碼變更 （c + +）](../debugger/supported-code-changes-cpp.md)如編輯後繼續的限制的相關資訊。
 
-如需 Visual Studio 2015 Update 3 的增強功能的詳細資訊，請參閱[c + + 編輯後繼續在 Visual Studio 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)。
+如需 Visual Studio 2015 Update 3 的增強功能的詳細資訊，請參閱[c + + 編輯後繼續在 Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)。
 
  在 Visual Studio 2013 Update 3 中推出的 [/Zo (增強最佳化偵錯)](/cpp/build/reference/zo-enhance-optimized-debugging) 編譯器選項會將額外資訊新增至不使用 [/Od (停用 (偵錯))](https://msdn.microsoft.com/library/aafb762y.aspx) 選項編譯之二進位碼檔案的 .pdb (符號) 檔案。
 
@@ -37,7 +37,7 @@ ms.locfileid: "56694994"
  如果您不希望在目前的偵錯工作階段中套用正在編輯的程式碼內容，您可能需要停用 [編輯後繼續] 的自動引動過程。 您也可以重新啟用自動的 [編輯後繼續]。
 
 > [!IMPORTANT]
-> 如需的建置設定和功能的相容性的其他資訊，請參閱 [c + + 編輯後繼續在 Visual Studio 2015 Update 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/。
+> 如需的建置設定和功能的相容性的其他資訊，請參閱[c + + 編輯後繼續在 Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)。
 
 1. 如果您是在偵錯工作階段中，停止偵錯 (**Shift + F5**)。
 
