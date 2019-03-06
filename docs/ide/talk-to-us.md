@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bfd75dfaeb31ae9864824ff0ab14c874e86d36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609432"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953515"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio 產品意見反應
 
@@ -24,7 +24,7 @@ ms.locfileid: "56609432"
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>我想要回報 Visual Studio 的問題
 
-如果您使用 Visual Studio 時遇到問題&mdash;如當機、效能緩慢或非預期行為&mdash;請使用 [回報問題] 工具讓我們知道。 在 Visual Studio 中，選擇 [快速啟動] 旁的意見反應圖示，或從功能表列選擇 [說明] > [傳送意見反應] > [回報問題]。 接下來，Visual Studio 會在瀏覽器中開啟[開發人員社群](https://developercommunity.visualstudio.com) \(英文\) 頁面，您可以登入以回報問題。 如需詳細資訊，請參閱[如何回報 Visual Studio 2017 的問題](how-to-report-a-problem-with-visual-studio-2017.md)。
+如果您使用 Visual Studio 時遇到問題&mdash;如當機、效能緩慢或非預期行為&mdash;請使用 [回報問題] 工具讓我們知道。 在 Visual Studio 中，選擇 [快速啟動] 旁的意見反應圖示，或從功能表列選擇 [說明] > [傳送意見反應] > [回報問題]。 接下來，Visual Studio 會在瀏覽器中開啟[開發人員社群](https://developercommunity.visualstudio.com) \(英文\) 頁面，您可以登入以回報問題。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio.md)。
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>我想要提供有關 Visual Studio 功能的建議
 
@@ -59,6 +59,6 @@ Microsoft 支援服務可能因當時的價格、條款和條件而有所變更�
 
 ## <a name="see-also"></a>另請參閱
 
-* [如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio-2017.md)
+* [如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio.md)
 * [Developer Community](https://developercommunity.visualstudio.com)
 * [Developer Community 資料隱私權](developer-community-privacy.md)

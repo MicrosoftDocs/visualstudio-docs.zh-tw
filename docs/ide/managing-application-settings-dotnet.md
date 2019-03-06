@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2693d661e7bc442f8de2ba707487e7d35068e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91d3004edc39b2fd4f9cc6be72407fd6a46274d1
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954240"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323567"
 ---
 # <a name="manage-application-settings-net"></a>管理應用程式設定 (.NET)
 
@@ -84,7 +84,9 @@ ms.locfileid: "55954240"
 
 強烈建議您使用 `My.Settings` 物件和預設的 *.settings* 檔案來存取設定。 因為您可以使用 [設定設計工具] 將屬性指派給設定，並且會在應用程式關閉前自動儲存使用者設定。 然而，Visual Basic 應用程式可以直接存取設定。 在這種情況下，您必須存取 `MySettings` 類別，並使用專案根目錄下的自訂 *.settings* 檔案。 您必須在結束應用程式之前儲存使用者設定，如同您針對 C# 應用程式所做的一樣 (將於下一節中描述)。
 
-## <a name="access-or-change-application-settings-at-run-time-in-c"></a>在 C# 中於執行階段存取或變更應用程式設定 #
+<!-- markdownlint-disable MD003 -->
+## <a name="access-or-change-application-settings-at-run-time-in-c"></a>在 C# 中於執行階段存取或變更應用程式設定
+<!-- markdownlint-enable MD003 -->
 
 在除了 Visual Basic 之外的語言中 (例如 C#)，您必須直接存取 `Settings` 類別，如下列 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範例所示。
 

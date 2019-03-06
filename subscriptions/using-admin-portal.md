@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: 了解如何使用系統管理員入口網站管理組織的 Visual Studio 訂用帳戶。
 searchscope: VS Subscription
-ms.openlocfilehash: ec741707f061de7e7173da9c4a07a50469cf50da
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0c22fa379a3bca8987b50f1e8c19240e4a30fb98
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843707"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953947"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>使用 Visual Studio 訂用帳戶系統管理員入口網站
 
@@ -38,13 +38,14 @@ ms.locfileid: "56843707"
 ### <a name="onboarding"></a>上架
 
 當您的組織隨時可以上架到 Visual Studio 訂用帳戶管理入口網站時，會向主要連絡人及通知連絡人傳送一封電子郵件給，邀請他們完成上架程序。 以下詳細資料是上架到新入口網站的必要步驟。 如果想要處理程序的逐步解說，請參考這段[系統管理員上架影片](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)或這篇[支援文件] (https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Visual Studio 的訂閱：系統管理員遷移程序")。
-1.  **尋找您的 PCN 並登入：**
-    - 在電子郵件中，會以唯一的連結提供主要與通知連絡人以及其公開客戶號碼 (PCN) 的末三碼。 *
-    - 為取得完整的 PCN，主要連絡人需要登入 VLSC (在此可以找到尋找 PCN 的指示)。
-    - 取得 PCN 之後，他們需要選取提示他們登入的唯一連結。 他們可以使用工作/學校帳戶 (如果您的組織在 AAD 中) 或 Microsoft 帳戶 (MSA) 登入，如果您的組織不在 AAD 中。
-    - 接下來，他們需要輸入 PCN。
-2.  **設定您的系統管理員。** 輸入 PCN 之後，他們會在新的系統中註冊為超級管理員，可以新增其他超級管理員和系統管理員 (前稱為「訂用帳戶管理員」)。 為避免遺失存取，此項作業應在貴組織的移轉日期前完成。
-3.  **存取新的訂用帳戶管理入口網站。**  組織一旦移轉，就會向最近新增的超級管理員和系統管理員傳送電子郵件，邀請他們存取新的入口網站，開始管理訂用帳戶。
+
+1. **尋找您的 PCN 並登入：**
+    - 在電子郵件中，會以唯一的連結提供主要與通知連絡人以及其公開客戶號碼 (PCN) 的末三碼。 * 
+    - 為取得完整的 PCN，主要連絡人需要登入 VLSC (在此可以找到尋找 PCN 的指示)。 
+    - 取得 PCN 之後，他們需要選取提示他們登入的唯一連結。 他們可以使用工作/學校帳戶 (如果您的組織在 AAD 中) 或 Microsoft 帳戶 (MSA) 登入，如果您的組織不在 AAD 中。 
+    - 接下來，他們需要輸入 PCN。 
+2. **設定您的系統管理員。** 輸入 PCN 之後，他們會在新的系統中註冊為超級管理員，可以新增其他超級管理員和系統管理員 (前稱為「訂用帳戶管理員」)。 為避免遺失存取，此項作業應在貴組織的移轉日期前完成。 
+3. **存取新的訂用帳戶管理入口網站。**  組織一旦移轉，就會向最近新增的超級管理員和系統管理員傳送電子郵件，邀請他們存取新的入口網站，開始管理訂用帳戶。  
 
 > [!NOTE]
 > 如果「主要連絡人」或「通知連絡人」收到多封電子郵件，即表示他們有多個 PCN。 他們將需要使用每封電子郵件中所參考的唯一 PCN 連結來完成程序。*

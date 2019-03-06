@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00002de014e36f53976009f0904c987214f0c28b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685127"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953378"
 ---
 # <a name="customize-startup"></a>自訂啟動
 
@@ -34,17 +34,17 @@ ms.locfileid: "56685127"
 
 1. 在功能表列上選擇 [工具] > [選項]。
 
-1. 展開 [環境]，然後選擇 [啟動]。
+2. 展開 [環境]，然後選擇 [啟動]。
 
 ::: moniker range="vs-2017"
 
-1. 在 [啟動時] 清單中，選擇在 Visual Studio 啟動之後要顯示的項目。
+3. 在 [啟動時] 清單中，選擇在 Visual Studio 啟動之後要顯示的項目。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 在 [啟動時] 中開啟清單，選擇您想要在 Visual Studio 啟動後發生的狀況。 您可以從 [開始視窗] (這可讓您開啟新或現有的專案)、[最新的解決方案] 或 [空白環境] 中選擇。
+3. 在 [啟動時] 中開啟清單，選擇您想要在 Visual Studio 啟動後發生的狀況。 您可以從 [開始視窗] (這可讓您開啟新或現有的專案)、[最新的解決方案] 或 [空白環境] 中選擇。
 
 ::: moniker-end
 
