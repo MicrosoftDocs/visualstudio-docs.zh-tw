@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6daa7667c26e2394e86833f6d0ce633ea9a4a168
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637330"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428722"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆進行遠端偵錯
 
@@ -52,11 +52,25 @@ Visual Studio 和遠端偵錯工具嘗試在安裝或啟動期間開啟正確的
 
 遠端偵錯，必須在遠端電腦上開啟下列連接埠：
 
+::: moniker range="vs-2017"
+
 |**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|
 |-|-|-|-|
 |4022|傳入|TCP|針對 VS 2017。 針對每個 Visual Studio 版本 2 通訊埠數字會遞增。 如需詳細資訊，請參閱 [Visual Studio 遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)。|
 |4023|傳入|TCP|針對 VS 2017。 針對每個 Visual Studio 版本 2 通訊埠數字會遞增。 此連接埠是只用於從遠端偵錯從 64 位元版本的遠端偵錯工具的 32 位元處理程序。 如需詳細資訊，請參閱 [Visual Studio 遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)。|
 |3702|傳出|UDP|（選擇性）遠端偵錯工具探索的必要項。|
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+|**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|
+|-|-|-|-|
+|4024|傳入|TCP|針對 VS 2019。 針對每個 Visual Studio 版本 2 通訊埠數字會遞增。 如需詳細資訊，請參閱 [Visual Studio 遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)。|
+|4025|傳入|TCP|針對 VS 2019。 針對每個 Visual Studio 版本 2 通訊埠數字會遞增。 此連接埠是只用於從遠端偵錯從 64 位元版本的遠端偵錯工具的 32 位元處理程序。 如需詳細資訊，請參閱 [Visual Studio 遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)。|
+|3702|傳出|UDP|（選擇性）遠端偵錯工具探索的必要項。|
+
+::: moniker-end
 
 如果您選取**使用 Managed 相容性模式**下方**工具** > **選項** > **偵錯**，開啟這些額外的遠端偵錯工具連接埠。 偵錯工具 Managed 相容性模式可讓舊版、 偵錯工具的 Visual Studio 2010 版本。
 
