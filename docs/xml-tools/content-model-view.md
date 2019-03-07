@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cad1b3087b1a7cd8b530ca659ad6c87868a3ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933570"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525787"
 ---
 # <a name="content-model-view"></a>內容模型檢視
 
@@ -52,7 +52,7 @@ ms.locfileid: "55933570"
 |**產生範例 XML**|僅適用於全域項目。 針對全域項目產生範例 XML 檔案。|
 |**顯示文件**|顯示或隱藏附註/文件節點內容。|
 |**將圖表匯出為影像**|將設計介面儲存至 XPS 檔案。|
-|**檢視程式碼**|在 XML 編輯器中開啟包含所選節點的檔案。 中已選取的項目**XML 結構描述總管**也會選取在 XML 編輯器 中。|
+|**檢視程式碼**|開啟包含所選取的節點，在 XML 編輯器中的檔案。 中已選取的項目**XML 結構描述總管**也會在 XML 編輯器中選取。|
 |**屬性視窗**|會開啟**屬性**視窗 （如果它尚未開啟）。 這個視窗會顯示與節點有關的資訊。|
 
 下表描述的選項，可供**工作區**面板。
@@ -66,7 +66,7 @@ ms.locfileid: "55933570"
 |**全部移除，但從工作區的選取範圍**|從工作空間和設計介面移除未選取的節點。|
 |**產生範例 XML**|僅適用於全域項目。 針對全域項目產生範例 XML 檔案。|
 |**全選**|選取中的所有節點**工作區**面板。|
-|**檢視程式碼**|在 XML 編輯器中開啟包含所選節點的檔案。 中已選取的項目**XML 結構描述總管**也會選取在 XML 編輯器 中。|
+|**檢視程式碼**|開啟包含所選取的節點，在 XML 編輯器中的檔案。 中已選取的項目**XML 結構描述總管**也會在 XML 編輯器中選取。|
 |**屬性視窗**|會開啟**屬性**視窗 （如果它尚未開啟）。 這個視窗會顯示與節點有關的資訊。|
 
 ## <a name="properties-window"></a>屬性視窗
@@ -121,7 +121,7 @@ ms.locfileid: "55933570"
 
 您可以在之間來回切換**XSD 設計工具**和 XML 編輯器，使用滑鼠右鍵 （內容） 功能表。
 
-如果您變更結構描述設定在 XML 編輯器 中所做的變更會同步處理的內容模型檢視中。 如需詳細資訊，請參閱 <<c0> [ 與 XML 編輯器整合](../xml-tools/integration-with-xml-editor.md)。
+如果您變更 XML 編輯器中設定的結構描述所做的變更會同步處理的內容模型檢視中。 如需詳細資訊，請參閱 <<c0> [ 與 XML 編輯器整合](../xml-tools/integration-with-xml-editor.md)。
 
 ## <a name="see-also"></a>另請參閱
 

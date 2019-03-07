@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0628b4824ebb33199521b660112622b130a090b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e89b09c3f868a3a1c67a0ca1dd9a42f73639d598
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937912"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525354"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>HOW TO：建立和編輯 XSD 結構描述檔案
 
@@ -31,12 +31,8 @@ ms.locfileid: "55937912"
 
 1. 選取 **使用 XML 編輯器檢視與編輯基礎 XML 結構描述檔案**開始檢視上的連結。
 
-   XML 編輯器隨即出現，並且開啟新的檔案。
+   XML 編輯器隨即出現並開啟新的檔案。
 
 2. XML 結構描述範例程式碼複製[採購單結構描述](../xml-tools/sample-xsd-file-simple-schema.md)並貼上取代預設新增至新 XSD 檔案的程式碼。
 
    **XML 結構描述總管**會更新為新的結構描述集。
-
-## <a name="see-also"></a>另請參閱
-
-- [使用 XML 資料](../xml-tools/working-with-xml-data.md)

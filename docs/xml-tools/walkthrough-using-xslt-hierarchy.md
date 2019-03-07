@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 83081b7fb03a4272622c25f783abbc7134fac12b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e7c7e93fa0ba58f7888212c48e28d21bd564ae7c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970383"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526304"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>逐步解說：使用 XSLT 階層
 
@@ -111,4 +111,4 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
 
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說：XSLT 分析工具](../xml-tools/walkthrough-xslt-profiler.md)
+- [XSLT 分析工具](../xml-tools/xslt-profiler.md)

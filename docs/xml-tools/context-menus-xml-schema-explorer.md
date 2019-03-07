@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1bc769b27ee9dcc22cfa822eb488b0f0ea9f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4d6ab950c31bc6444eb0b8ae054d74c9a69ed466
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910543"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526486"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>操作功能表 （XML 結構描述總管）
 
@@ -50,7 +50,7 @@ ms.locfileid: "55910543"
 |**顯示所有對外參考**|尋找並反白顯示下列項目：<br /><br /> -所有命名空間中的所有命名空間屬性指定匯入陳述式沒有`schemaLocation`屬性。<br />-所有檔案中指定`schemaLocation`屬性之所有 import 和 include 陳述式。|
 |**顯示全域型別**|尋找並反白顯示此檔案中的所有全域型別。|
 |**顯示全域項目**|尋找並反白顯示此檔案中的所有全域項目。|
-|**檢視程式碼**|在 XML 編輯器中開啟包含所選節點的檔案。 在 XML 結構描述總管中選取的項目也會在 XML 編輯器中選取。|
+|**檢視程式碼**|開啟包含所選取的節點，在 XML 編輯器中的檔案。 在 XML 結構描述總管中選取的項目也會在 XML 編輯器中選取。|
 |**屬性視窗**|會開啟**屬性**視窗 （如果它尚未開啟）。 這個視窗會顯示與節點有關的資訊。|
 
 ## <a name="all-global-node-types"></a>所有全域節點型別
@@ -60,7 +60,7 @@ ms.locfileid: "55910543"
 |-|-----------------|
 |**在 [圖形] 檢視中顯示**|開啟圖表檢視。 如果所選的節點不在工作空間中，請將其加入至工作空間並選取該節點。|
 |**在內容模型檢視中顯示**|開啟內容模型檢視。 如果所選的節點不在工作空間中，請將其加入至工作空間並選取該節點。|
-|**檢視程式碼**|在 XML 編輯器中開啟包含所選節點的檔案。 在 XML 結構描述總管中選取的項目也會在 XML 編輯器中選取。|
+|**檢視程式碼**|開啟包含所選取的節點，在 XML 編輯器中的檔案。 在 XML 結構描述總管中選取的項目也會在 XML 編輯器中選取。|
 |**屬性視窗**|會開啟**屬性**視窗 （如果它尚未開啟）。 這個視窗會顯示與節點有關的資訊。|
 
 ## <a name="node-type-element"></a>節點型別：元素
@@ -86,7 +86,7 @@ ms.locfileid: "55910543"
 |**顯示所有祖系**|顯示所有父 (基底) 型別。|
 
 ## <a name="node-type-attribute"></a>節點型別：屬性
- 除了上述的全域節點選項外，屬性節點的操作功能表還有下列選項：
+ 除了上述的全域節點選項外，屬性節點的內容功能表還有下列選項：
 
 |選項|描述|
 |-|-----------------|

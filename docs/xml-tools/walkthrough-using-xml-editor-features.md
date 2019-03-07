@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae8a554f4ce9e5c9a38f17ee4f491d7a537b3d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57f1f8274d121b5370f47dfdb62be3a8e5cdd017
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954682"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525865"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>逐步解說：使用 XML 編輯器功能
 
-此逐步教學中的步驟顯示如何建立新的 XML 文件。 逐步教學還會使用 XML 編輯器的部分功能，使其在 XML 撰寫上具有價值。
+此逐步教學中的步驟顯示如何建立新的 XML 文件。 本逐步解說也會使用部分，可讓您更有價值的 XML 撰寫的 XML 編輯器功能。
 
 > [!NOTE]
 > 開始本逐步解說之前, 儲存*hireDate.xsd*到本機電腦 （本主題中所包含以下） 的檔案。
@@ -96,9 +96,11 @@ ms.locfileid: "55954682"
 
 ## <a name="to-format-the-xml-document"></a>格式化 XML 文件
 
-- 選取 [**格式化文件**從 XML 編輯器] 工具列上的按鈕。
+- 選取 **格式化文件**上的 XML 編輯器工具列中或按下按鈕**Ctrl**+**電子**，**D**。
 
-    會重新格式化 XML 文件。
+   ![在 Visual Studio 中的格式 XML 文件 按鈕](media/format-xml-document.png)
+
+   會重新格式化 XML 文件。
 
 ## <a name="to-save-the-xml-document"></a>儲存 XML 文件
 
@@ -109,7 +111,8 @@ ms.locfileid: "55954682"
 2.  輸入檔案名稱和 XML 文件的位置，然後按一下**儲存**。
 
 ## <a name="hiredatexsd-file"></a>hireDate.xsd 檔案
- 下列結構描述檔案由逐步教學使用。
+
+下列的結構描述檔案會在本逐步解說：
 
 ```xml
 <?xml version="1.0"?>
