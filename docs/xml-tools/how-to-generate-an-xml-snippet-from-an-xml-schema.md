@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f9d984cabdb9e29ff1f5eac1734105d2a3e2f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 311503aed0787fece7985d7df1f6dc2d4ddd03b2
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913950"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526239"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>HOW TO：從 XML 結構描述產生 XML 片段
 
@@ -43,7 +43,7 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
 
 ## <a name="example"></a>範例
 
- 在本節中的步驟示範如何使用結構描述產生 XML 片段功能在 XML 編輯器。
+ 在本節中的步驟示範如何使用 XML 編輯器的結構描述產生 XML 片段功能。
 
 > [!NOTE]
 > 先將結構描述檔案儲存到本機電腦上，再啟動這些程序。

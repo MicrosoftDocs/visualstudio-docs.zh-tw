@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d892ba202a73560568bdb6c43427a8ee0f7c1aee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913622"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526213"
 ---
 # <a name="how-to-use-xml-snippets"></a>HOW TO：使用 XML 片段
 
-您可以使用 XML 編輯器捷徑功能表上的下列兩個命令叫用 XML 片段。 **插入程式碼片段**命令會將 XML 程式碼片段插入游標位置。 **環繞**命令會以 XML 片段環繞選定文字。 每個 XML 片段都具有指定的片段型別。 程式碼片段類型可讓您決定是否可與程式碼片段**插入程式碼片段**命令**環繞**命令，或兩者。
+您可以使用 XML 編輯器捷徑功能表上的下列兩個命令，以叫用 XML 片段。 **插入程式碼片段**命令會將 XML 程式碼片段插入游標位置。 **環繞**命令會以 XML 片段環繞選定文字。 每個 XML 片段都具有指定的片段型別。 程式碼片段類型可讓您決定是否可與程式碼片段**插入程式碼片段**命令**環繞**命令，或兩者。
 
 將 XML 片段加入編輯器後，片段中所有可編輯的欄位均會以黃色反白顯示，且游標位於第一個可編輯欄位上。
 
@@ -80,7 +80,7 @@ ms.locfileid: "55913622"
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>若要從內容功能表使用範圍陳述式
 
-1. 在 [XML 編輯器] 中選取要環繞的文字。
+1. 選取要環繞在 XML 編輯器中的文字。
 
 2. 以滑鼠右鍵按一下並選取**環繞**。
 
@@ -90,7 +90,7 @@ ms.locfileid: "55913622"
 
 ### <a name="to-use-surround-with-from-the-intellisense-menu"></a>若要從 IntelliSense 功能表使用範圍陳述式
 
-1. 在 [XML 編輯器] 中選取要環繞的文字。
+1. 選取要環繞在 XML 編輯器中的文字。
 
 2. 從**編輯**功能表上，指向**IntelliSense**，然後選取**環繞**。
 
@@ -108,7 +108,7 @@ ms.locfileid: "55913622"
 
 按下**Enter**或是**Esc**取消欄位編輯，並將編輯器返回正常狀態。
 
-可以變更可編輯的程式碼片段欄位的預設色彩，藉由修改**程式碼片段欄位**中設定**字型和色彩**窗格**選項** 對話方塊。 如需詳細資訊，請參閱[＜How to：變更編輯器中的字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+可以變更可編輯的程式碼片段欄位的預設色彩，藉由修改**程式碼片段欄位**中設定**字型和色彩**窗格**選項** 對話方塊。 如需詳細資訊，請參閱[如何：變更編輯器中的字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
 ## <a name="see-also"></a>另請參閱
 

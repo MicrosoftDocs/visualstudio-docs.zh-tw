@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9ef409b305901cc36e67eeadfe0000202c935b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602282"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525895"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 主要 Interop 組件
 
@@ -57,15 +57,15 @@ Visual Studio 在開發電腦上使用不同的 PIA 集合。 這些不同的組
 
 如果在全域組件快取中註冊了不同版本的 PIA，這些 PIA 複本可協助 Visual Studio 避免發生一些開發問題。
 
-Visual Studio 會將這些 PIA 複本安裝到開發電腦的下列位置：
+從 Visual Studio 2017 開始，這些 Pia 複本會在開發電腦上下列共用的位置安裝：
 
-- *%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14*
+- *%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\*
 
-  (或 *%programfiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14* 64 位元作業系統上)
+- (或 * %programfiles (x86) %\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\* 64 位元作業系統上)
 
-- *%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15*
-
-  (或 *%programfiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15* 64 位元作業系統上)
+> [!NOTE]
+> 針對舊版的 Visual Studio 中，這些 Pia 會安裝到 Visual Studio Tools for Office\PIA 資料夾下 * %programfiles%資料夾，為該版本的 Visual Studio。  
+> 例如: * %programfiles (x86) %\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>在全域組件快取中的主要 interop 組件
 
@@ -79,7 +79,7 @@ Visual Studio 會將這些 PIA 複本安裝到開發電腦的下列位置：
 
 Visual Studio 中的每一個 Office 專案範本設計成只能搭配一個 Microsoft Office 應用程式使用。 若要使用多個 Microsoft Office 應用程式中的功能，或是要使用未在 Visual Studio 中擁有專案之應用程式或元件中的功能，您必須加入所需 PIA 的參考。
 
-在大部分情況下，您應該將參考加入至 Visual Studio 的 安裝 Pia`%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\`目錄。 這些版本的組件出現在**Framework**索引標籤**參考管理員** 對話方塊。 如需詳細資訊，請參閱[如何：目標 Office 應用程式可以透過主要 interop 組件](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。
+在大部分情況下，您應該將參考加入至 Visual Studio 的 安裝 Pia`%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`目錄。 這些版本的組件出現在**Framework**索引標籤**參考管理員** 對話方塊。 如需詳細資訊，請參閱[如何：目標 Office 應用程式可以透過主要 interop 組件](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。
 
 如果您已在全域組件快取中安裝及註冊 PIA，這些版本的組件會顯示在 [參考管理員]  對話方塊的 [COM]  索引標籤上。 您應該避免加入這些版本的組件參考，因為使用這些版本的組件參考可能會發生一些開發問題。 例如，如果您在全域組件快取中註冊了不同版本的 PIA，您的專案將會自動建置為最後註冊的組件版本 (即使在 [參考管理員]  對話方塊的 [COM]  索引標籤上指定了不同版本的組件亦然)。
 
@@ -90,7 +90,7 @@ Visual Studio 中的每一個 Office 專案範本設計成只能搭配一個 Mic
 
 ## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Microsoft Office 應用程式的主要 interop 組件
 
-下表列出 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 和 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]適用的主要 Interop 組件。
+下表列出主要 interop 組件可供[!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)]，[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]和[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]。
 
 <br/>
 

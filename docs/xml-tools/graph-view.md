@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ce96a699abeaf9e5fd205c1e1f53add79ab56d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952641"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526642"
 ---
 # <a name="graph-view"></a>圖形檢視
 
@@ -27,7 +27,7 @@ ms.locfileid: "55952641"
 
  [圖表] 檢視的設計介面顯示的內容[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)。 如果工作空間包含結構描述集中的任何全域節點，則這些節點會顯示在圖表檢視的設計介面中，並在具有關聯性的節點之間畫上箭號。
 
- 按兩下圖表檢視中的節點，就會顯示 XML 編輯器。
+ 按兩下 [圖表] 檢視中的節點會顯示 XML 編輯器。
 
  若要從工作區中刪除選取的節點，使用 XSD 設計工具工具列或**刪除**索引鍵。
 
@@ -55,7 +55,7 @@ ms.locfileid: "55952641"
 |**全部移除，但從工作區的選取範圍**|從工作空間和設計介面移除未選取的節點。|
 |**將圖表匯出為影像**|將設計介面儲存至 XPS 檔案。|
 |**全選**|選取設計介面上的所有節點。|
-|**檢視程式碼**|在 XML 編輯器中開啟包含所選節點的檔案。 中已選取的項目**XML 結構描述總管**也會選取在 XML 編輯器 中。|
+|**檢視程式碼**|開啟包含所選取的節點，在 XML 編輯器中的檔案。 中已選取的項目**XML 結構描述總管**也會在 XML 編輯器中選取。|
 |**屬性視窗**|會開啟**屬性**視窗 （如果它尚未開啟）。 這個視窗會顯示與節點有關的資訊。|
 
  除了上述的通用選項外，全域項目的內容功能表還包含下列選項：
@@ -142,7 +142,7 @@ ms.locfileid: "55952641"
 
  按一下節點，然後使用 檢視程式碼操作 （右鍵） 功能表的 圖表 檢視與 XML 編輯器之間您可以來回切換。
 
- 如果您在 XML 編輯器中變更結構描述集，圖表檢閱也會同步進行變更。 如需詳細資訊，請參閱 <<c0> [ 與 XML 編輯器整合](../xml-tools/integration-with-xml-editor.md)。
+ 如果您變更 XML 編輯器中設定的結構描述時，所做的變更都將圖表檢視中進行同步處理。 如需詳細資訊，請參閱 <<c0> [ 與 XML 編輯器整合](../xml-tools/integration-with-xml-editor.md)。
 
 ## <a name="see-also"></a>另請參閱
 

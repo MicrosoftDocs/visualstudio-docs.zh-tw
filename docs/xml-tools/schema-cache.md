@@ -8,21 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa9d2ca4e22a4255ea5a1d35024ed200cb080a31
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 28f5a7ffe202e7e02b06e676501ab508ee1a4ab2
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936586"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525800"
 ---
 # <a name="schema-cache"></a>結構描述快取
 
-XML 編輯器提供位於結構描述快取 *%InstallRoot%\Xml\Schemas*目錄。 結構描述快取對於您電腦上的所有使用者都是通用的，它包括用於 IntelliSense 及 XML 文件驗證的標準 XML 結構描述。
+XML 編輯器提供位於結構描述快取 *%VSInstallDir%\xml\Schemas*目錄。 結構描述快取是通用的電腦上的所有使用者，以及用於 IntelliSense 及 XML 文件驗證的標準 XML 結構描述。
 
 在 XML 編輯器也可以尋找位於解決方案的結構描述，指定結構描述**結構描述**欄位的文件**屬性**視窗中，與所識別的結構描述`xsi:schemaLocation`並`xsi:noNamespaceSchemaLocation`屬性。
 
-下表說明隨 XML 編輯器安裝的結構描述。
-
+下表說明安裝與 XML 編輯器結構描述。
 
 | Filename | 描述 |
 |-| - |
@@ -31,7 +30,7 @@ XML 編輯器提供位於結構描述快取 *%InstallRoot%\Xml\Schemas*目錄。
 | *msbuild.xsd* | MSBuild make 檔中，結構描述 」 “<http://schemas.microsoft.com/developer/msbuild/2003>" 。 |
 | *msdata.xsd* | <xref:System.Data.DataSet> 類別所加入之 XSD 附註的結構描述 urn:schemas-microsoft-com:xml-msdata。 |
 | *msxsl.xsd* | Microsoft XSLT 指令碼區塊擴充程式的結構描述 urn:schemas-microsoft-com:xslt。 |
-| *SnippetFormat.xsd* | 程式碼片段 XML 檔案的結構描述。 如需範例，請參閱 *%InstallDir%\VC#\Expansions*。 |
+| *SnippetFormat.xsd* | 程式碼片段 XML 檔案的結構描述。 如需範例，請參閱 *%VSInstallDir%\VC#\Expansions*。 |
 | *Soap1.1.xsd* | 簡單物件存取通訊協定 (SOAP) 1.1 中，結構描述 http://schemas.xmlsoap.org/soap/envelope/ 。 |
 | *Soap1.2.xsd* | 簡易物件存取通訊協定 1.2 的結構描述。 |
 | *SiteMapSchema.xsd* | ASP.NET sitemap XML 檔案的結構描述 」<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>"。 |
@@ -45,39 +44,39 @@ XML 編輯器提供位於結構描述快取 *%InstallRoot%\Xml\Schemas*目錄。
 | *xslt.xsd* | XML 結構描述轉換 http://www.w3.org/1999/XSL/Transform。 |
 
 ## <a name="update-schemas-in-the-cache"></a>更新快取中的結構描述
- 編輯器會在載入 XML 編輯器封裝時，載入結構描述快取目錄，並於執行期間監看是否發生任何變更。 如果已加入結構描述，則會將其自動載入已知結構描述的記憶體中索引。 如果已移除結構描述，則會將其自動從記憶體中索引移除。 如果已更新結構描述，則會自動讓此結構描述的記憶體中快取失效。
+
+編輯器會在載入 XML 編輯器封裝時，載入結構描述快取目錄，並於執行期間監看是否發生任何變更。 如果已加入結構描述，則會將其自動載入已知結構描述的記憶體中索引。 如果已移除結構描述，則會將其自動從記憶體中索引移除。 如果已更新結構描述，則會自動讓此結構描述的記憶體中快取失效。
 
 > [!NOTE]
 > 因為結構描述快取目錄對您的電腦是通用的，所以在這裡您應該僅加入標準的、且對您電腦上可能建立之所有 Visual Studio 專案皆有用的結構描述。
 
-
- XML 編輯器亦支援結構描述快取目錄中任意數目的結構描述目錄檔案。 結構描述目錄可指向您通常想要編輯器瞭解之結構描述的其他位置。 *Catalog.xsd*檔案定義類別目錄檔案的格式，而且會包含在結構描述快取目錄。 *Catalog.xml*檔案是預設目錄，其中包含其他結構描述中的連結 *%installdir%*。 下列是取樣*catalog.xml*檔案：
+XML 編輯器亦支援結構描述快取目錄中任意數目的結構描述目錄檔案。 結構描述目錄可指向您通常想要編輯器瞭解之結構描述的其他位置。 *Catalog.xsd*檔案定義類別目錄檔案的格式，而且會包含在結構描述快取目錄。 *Catalog.xml*檔案是預設目錄，其中包含其他結構描述中的連結 *%vsinstalldir%*。 下列是取樣*catalog.xml*檔案：
 
 ```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">
-  <Schema href="%InstallDir%/help/schemas/Favorites.xsd" targetNamespace="urn:Favorites-Schema"/>
-  <Schema href="%InstallDir%/help/schemas/Links.xsd" targetNamespace="urn:Links-Schema"/>
-  <Schema href="%InstallDir%/help/schemas/MyHelp.xsd" targetNamespace="urn:VSHelp-Schema"/>
+  <Schema href="%VSInstallDir%/help/schemas/Favorites.xsd" targetNamespace="urn:Favorites-Schema"/>
+  <Schema href="%VSInstallDir%/help/schemas/Links.xsd" targetNamespace="urn:Links-Schema"/>
+  <Schema href="%VSInstallDir%/help/schemas/MyHelp.xsd" targetNamespace="urn:VSHelp-Schema"/>
 </SchemaCatalog>
 ```
 
- `href` 屬性可以是指向結構描述的任意檔案路徑或 http URL。 檔案路徑是對目錄文件的相對路徑。 編輯器會辨識以 %% 分隔的下列變數，並在路徑中展開它們：
+`href` 屬性可以是指向結構描述的任意檔案路徑或 http URL。 檔案路徑是對目錄文件的相對路徑。 下列的變數，以分隔 %%、 編輯器所辨識和展開路徑中：
 
--   InstallDir
+- VSInstallDir
 
--   系統
+- 系統
 
--   ProgramFiles
+- ProgramFiles
 
--   Programs
+- Programs
 
--   CommonProgramFiles
+- CommonProgramFiles
 
--   ApplicationData
+- ApplicationData
 
--   CommonApplicationData
+- CommonApplicationData
 
--   LCID
+- LCID
 
 目錄文件可包含指向其他目錄的 `Catalog` 項目。 您可以使用 `Catalog` 項目指向小組或公司共用的中心目錄，或與業務夥伴共用的線上目錄。 `href` 屬性是其他目錄的檔案路徑或 http URL。 以下是 `Catalog` 項目的範例：
 
@@ -85,16 +84,17 @@ XML 編輯器提供位於結構描述快取 *%InstallRoot%\Xml\Schemas*目錄。
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>
 ```
 
- 目錄還可以使用特殊的 `Association` 項目，來控制結構描述如何與 XML 文件產生關聯。 此項目將沒有目標命名空間的結構描述與特定的副檔名相關聯，這樣做很有用，因為 XML 編輯器不會自動關聯任何沒有 `targetNamespace` 屬性的結構描述。 在下列範例中，`Association` 項目將 dotNetConfig 結構描述，與具有 config 副檔名的所有檔案相關聯：
+目錄還可以使用特殊的 `Association` 項目，來控制結構描述如何與 XML 文件產生關聯。 此項目有關聯副檔名為特定檔案，這會很有用，因為 XML 編輯器不會自動關聯任何沒有的結構描述沒有目標命名空間的結構描述`targetNamespace`屬性。 在下列範例中，`Association` 項目將 dotNetConfig 結構描述，與具有 config 副檔名的所有檔案相關聯：
 
 ```xml
-<Association extension="config" schema="%InstallDir%/xml/schemas/dotNetConfig.xsd"/>
+<Association extension="config" schema="%VSInstallDir%/xml/schemas/dotNetConfig.xsd"/>
 ```
 
 ## <a name="localized-schemas"></a>當地語系化結構描述
- 在許多情況下*catalog.xml*檔案未包含當地語系化結構描述的項目。 您可以新增額外的項目，以*catalog.xml*指向當地語系化結構描述目錄的檔案。
 
- 在下列範例中，已經建立使用 %LCID% 變數指向當地語系化結構描述的新 `Schema` 項目。
+在許多情況下*catalog.xml*檔案未包含當地語系化結構描述的項目。 您可以新增額外的項目，以*catalog.xml*指向當地語系化結構描述目錄的檔案。
+
+在下列範例中，已經建立使用 %LCID% 變數指向當地語系化結構描述的新 `Schema` 項目。
 
 ```xml
 <Schema href="%InstallRoot%/Common7/IDE/Policy/Schemas/%LCID%/TDLSchema.xsd"
@@ -110,23 +110,23 @@ XML 編輯器提供位於結構描述快取 *%InstallRoot%\Xml\Schemas*目錄。
 
 ### <a name="to-change-the-schema-cache-location"></a>變更結構描述快取位置
 
-1.  從**工具**功能表上，選取**選項**。
+1. 從**工具**功能表上，選取**選項**。
 
-2.  依序展開**文字編輯器**，展開**XML**，然後按一下**其他**。
+2. 依序展開**文字編輯器**，展開**XML**，然後按一下**其他**。
 
-3.  按一下 **瀏覽**按鈕**結構描述**欄位。
+3. 按一下 **瀏覽**按鈕**結構描述**欄位。
 
-4.  選取結構描述快取的資料夾，然後按一下**確定**。
+4. 選取結構描述快取的資料夾，然後按一下**確定**。
 
 ### <a name="to-add-another-directory-of-common-schemas"></a>加入通用結構描述的其他目錄
 
-1.  編輯*catalog.xml* XML 編輯器結構描述快取目錄中的檔案。
+1. 編輯*catalog.xml* XML 編輯器結構描述快取目錄中的檔案。
 
-2.  加入指向其他結構描述目錄的新 `<Catalog href="..."/>` 項目。
+2. 加入指向其他結構描述目錄的新 `<Catalog href="..."/>` 項目。
 
-3.  儲存您的變更。
+3. 儲存您的變更。
 
-     目錄會自動重新載入。
+   目錄會自動重新載入。
 
 ## <a name="see-also"></a>另請參閱
 

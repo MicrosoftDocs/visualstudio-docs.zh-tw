@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de1dbc3b98850e7a4cde3f5be60ccfa09a34e11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e7da94f8fe07620a67e2df8876cf1d3adda443c5
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931750"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525449"
 ---
 # <a name="how-to-edit-xml-files"></a>HOW TO：編輯 XML 檔案
 
-XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或與 Visual Studio 專案相關的檔案上。 XML 編輯器是具有下列副檔名相關聯： *.config*， *.dtd*， *.xml*， *.xsd*， *.xdr*， *.xsl*， *.xslt*，和 *.vssettings*。 XML 編輯器也與未登錄特定編輯器，且包含 XML 或 DTD 內容的任何其他檔案類型相關聯。
+XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或與 Visual Studio 專案相關的檔案上。 XML 編輯器是具有下列副檔名相關聯： *.config*， *.dtd*， *.xml*， *.xsd*， *.xdr*， *.xsl*， *.xslt*，和 *.vssettings*。 XML 編輯器也會與任何其他檔案類型，其沒有登錄特定編輯器，並包含 XML 或 DTD 內容相關聯的。
 
 > [!NOTE]
 > HTML 編輯器可處理 XHTML 文件。
@@ -34,7 +34,7 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
 
 3.  輸入中的檔案名稱**名稱**欄位，然後按**新增**。
 
-     將 XML 檔案加入至專案，並在 XML 編輯器中開啟它。 檔案包含預設的 XML 宣告，`<?xml version="1.0" encoding="utf-8" ?>`。
+     XML 檔案會加入至專案，並在 XML 編輯器中開啟。 檔案包含預設的 XML 宣告，`<?xml version="1.0" encoding="utf-8" ?>`。
 
 ## <a name="to-add-an-existing-xml-file-to-a-project"></a>將現有 XML 檔案加入至專案
 
@@ -64,7 +64,7 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
 
 3.  將 XML 檔案加入至專案。
 
-     XML 編輯器會找到加入至此專案的結構描述，並在此專案開啟時編輯的任何 XML、結構描述或 XSLT 檔案中使用它們進行驗證及 IntelliSense。
+     XML 編輯器中尋找您新增至這個專案的結構描述，並使用它們進行驗證，並在任何 XML、 結構描述或您編輯此專案開啟時的 XSLT 檔案中的 IntelliSense。
 
 ## <a name="see-also"></a>另請參閱
 

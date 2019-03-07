@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8a17f5699ffc5bfe33e86370a9c5ef114331e90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fd29a8d31d425529db377c812611f1efddc60f11
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907330"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526616"
 ---
 # <a name="how-to-create-xml-snippets"></a>HOW TO：建立 XML 片段
 
-XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippet 的 XML 片段，其為建立新 XML 片段的重複使用片段。
+XML 編輯器可用來建立新的 XML 片段。 該編輯器包括名為 Snippet 的 XML 片段，其為建立新 XML 片段的重複使用片段。
 
 ## <a name="to-create-a-new-xml-snippet"></a>建立新的 XML 片段
 
@@ -80,7 +80,7 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
 
 - $name$ 為使用者定義的變數。 它可建立 `name` 項目，其具有預設為 name 的可編輯值。 使用者定義變數使用 `Literal` 項目來定義。
 
-- $selected$ 為預先定義的變數。 它表示叫用片段之前在 XML 編輯器中選取的文字。 這個變數的位置決定了所選文字在環繞該選取內容之程式碼片段中出現的位置。
+- $selected$ 為預先定義的變數。 它代表之前叫用程式碼片段 XML 編輯器中選取的文字。 這個變數的位置決定了所選文字在環繞該選取內容之程式碼片段中出現的位置。
 
 - $end$ 為預先定義的變數。 當使用者按下**Enter**完成編輯程式碼片段欄位，此變數會決定插入號 (^) 移至其中。
 
