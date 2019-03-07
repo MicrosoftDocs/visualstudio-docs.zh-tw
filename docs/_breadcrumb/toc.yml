@@ -48,7 +48,7 @@ items:
           topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
       - name: 使用者體驗指南
         tocHref: /visualstudio/extensibility/ux-guidelines/
-        topicHref: /visualstudio/extensibility/visual-studio-user-experience-guidelines
+        topicHref: /visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines
     - name: IDE 類別設計工具
       tocHref: /visualstudio/ide/class-designer
       topicHref: /visualstudio/ide/class-designer/designing-and-viewing-classes-and-types
@@ -89,9 +89,9 @@ items:
     - name: XML 工具
       tocHref: /visualstudio/xml-tools/
       topicHref: /visualstudio/xml-tools/xml-tools-in-visual-studio
-ms.openlocfilehash: 8b42a0904175451fda32b8c46af76efa3f372b46
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: e294d5a294f9c63f95862b38e863bb171b723a6b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398308"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525423"

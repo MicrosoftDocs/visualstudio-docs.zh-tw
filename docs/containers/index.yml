@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: b4f58ccc019571894c0f2b3eca4df0e59c6bdbbb
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: d10b3064b423d414b6aa4dff9dd737be29d42241
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223847"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525215"
 documentType: LandingData
 title: Visual Studio 中的容器工具
 metadata:
@@ -42,7 +42,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_build.svg
       title: 在容器中執行建置工具
-    - href: /visualstudio/deployment/tutorial-kubernetes-tools
+    - href: tutorial-kubernetes-tools.md
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_kubernetes.svg
