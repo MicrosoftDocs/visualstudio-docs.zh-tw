@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82f464e6c58c8403ffee34957f9bd49b39471114
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 289d21b4828e22877ac139f2f29b6500907cf4e0
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940278"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567311"
 ---
 # <a name="develop-tests-from-a-model"></a>透過模型開發測試
 您可以使用需求和架構模型來協助您組織整理系統及其元件的測試。 這種做法有助於確保測試使用者和其他利害關係人的重要需求，並且可協助您在需求變更時快速更新測試。 如果您使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，則也可以維護模型與測試之間的連結。
@@ -59,7 +59,7 @@ ms.locfileid: "55940278"
 
 1. 在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，建立需求，並以它為測試套件的基礎。
 
-    您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 它可能是使用者劇本、 需求或使用案例工作項目，根據您的專案使用 Team Foundation 的流程範本。 如需詳細資訊，請參閱 <<c0> [ 有關敏捷式工具和 Agile 專案管理](/azure/devops/boards/backlogs/overview?view=vsts)。
+    您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 它可能是使用者劇本、 需求或使用案例工作項目，根據您的專案使用 Team Foundation 的流程範本。 如需詳細資訊，請參閱 <<c0> [ 有關敏捷式工具和 Agile 專案管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)。
 
 2. 將需求工作項目連結至模型中的一個或多個使用案例。
 
@@ -147,7 +147,7 @@ Assert (countAfter == countBefore = 1);
 
 1. 在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，建立需求，並以它為測試套件的基礎。
 
-    您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 它可能是使用者劇本、 需求或使用案例工作項目，根據您的專案使用 Team Foundation 的流程範本。 如需詳細資訊，請參閱 <<c0> [ 有關敏捷式工具和 Agile 專案管理](/azure/devops/boards/backlogs/overview?view=vsts)。
+    您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 它可能是使用者劇本、 需求或使用案例工作項目，根據您的專案使用 Team Foundation 的流程範本。 如需詳細資訊，請參閱 <<c0> [ 有關敏捷式工具和 Agile 專案管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)。
 
 2. 將需求工作項目連結至模型中的一個或多個項目。
 
