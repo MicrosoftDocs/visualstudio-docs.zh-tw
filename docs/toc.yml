@@ -1,6 +1,7 @@
 items:
 - name: Visual Studio 文件
   href: ide/index.yml
+  pdf_name: Visual Studio documentation
 - name: 總覽
   items:
   - name: Visual Studio 概觀
@@ -131,6 +132,7 @@ items:
 - name: 快速入門
   items:
   - name: Visual Studio 簡介
+    displayName: Feature tour
     href: ide/quickstart-ide-orientation.md
   - name: C++：建立主控台應用程式
     href: ide/getting-started-with-cpp-in-visual-studio.md
@@ -236,12 +238,15 @@ items:
           href: ide/template-parameters.md
       - name: 64 位元支援
         href: ide/visual-studio-ide-64-bit-support.md
-    - name: 不使用專案或解決方案 ([開啟資料夾]) 進行開發
+    - name: 不使用專案或方案來開發
+      displayName: Open folder
       href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
       items:
       - name: 自訂建置與偵錯工作
+        displayName: makefile tasks.vs.json
         href: ide/customize-build-and-debug-tasks-in-visual-studio.md
     - name: 連線到專案或存放庫
+      displayName: Azure DevOps VSTS GitHub
       href: ide/connect-team-project.md
     - name: 使用編輯器
       href: ide/writing-code-in-the-code-and-text-editor.md
@@ -251,6 +256,7 @@ items:
         items:
         - name: 使用規則運算式
           href: ide/using-regular-expressions-in-visual-studio.md
+          dispayName: RegEx
         - name: 尋找命令方塊
           href: ide/find-command-box.md
         - name: 檔案中尋找
@@ -263,6 +269,7 @@ items:
         - name: 以編碼來儲存及開啟檔案
           href: ide/how-to-save-and-open-files-with-encoding.md
       - name: 大綱
+        displayName: Expand and collapse
         href: ide/outlining.md
       - name: 產生及修正程式嗎
         href: ide/code-generation-in-visual-studio.md
@@ -389,6 +396,7 @@ items:
           - name: 所有鍵盤快速鍵
             href: ide/default-keyboard-shortcuts-in-visual-studio.md
         - name: .NET 開發人員的祕訣
+          displayName: ReSharper
           href: ide/visual-studio-2017-for-dotnet-developers.md
       - name: 使用 IntelliSense
         href: ide/using-intellisense.md
@@ -438,6 +446,7 @@ items:
         href: ide/code-styles-and-quick-actions.md
         items:
         - name: 使用 EditorConfig 檔案作為程式碼樣式
+          displayName: Configure code style analyzers
           href: ide/create-portable-custom-editor-options.md
           items:
           - name: .NET 語言及格式設定慣例
@@ -530,11 +539,12 @@ items:
       items:
       - name: 以舊版 .NET 為目標
         href: ide/fsharp-target-older-dotnet-versions.md
-    - name: Office 和 SharePoint 程式開發
+    - name: Office 和 SharePoint 開發
       href: vsto/office-and-sharepoint-development-in-visual-studio.md
     - name: 使用 XML 與 XSLT 檔案
       href: xml-tools/xml-tools-in-visual-studio.md
     - name: 開發國際化應用程式
+      displayName: Globalization localization world-ready
       href: ide/globalizing-and-localizing-applications.md
       items:
       - name: 雙向語言
@@ -611,8 +621,10 @@ items:
           - name: 步驟 9：嘗試其他功能
             href: ide/step-9-try-other-features.md
   - name: 存取資料...
+    displayName: Data connections
     href: data-tools/accessing-data-in-visual-studio.md
   - name: 設計使用者介面...
+    displayName: XAML designer
     href: designers/designing-user-interfaces.md
   - name: 編譯和建置
     href: ide/compiling-and-building-in-visual-studio.md
@@ -659,6 +671,7 @@ items:
     - name: MSBuild...
       href: msbuild/msbuild.md
     - name: Azure Pipelines 與 TFS...
+      displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
       href: /azure/devops/pipelines/index?view=vsts
     - name: 指定建置事件 (Visual Basic)
       href: ide/how-to-specify-build-events-visual-basic.md
@@ -671,14 +684,18 @@ items:
   - name: 偵錯...
     href: debugger/index.md
   - name: 測試...
+    displayName: Unit testing
     href: test/improve-code-quality.md
   - name: 測量效能...
+    displayName: Profiling
     href: profiling/index.md
   - name: 分析程式碼品質...
+    displayName: Code analysis FxCop Analyzers
     href: code-quality/index.md
   - name: 部署...
     href: deployment/index.md
   - name: 延伸 Visual Studio...
+    displayName: Visual Studio SDK
     href: extensibility/visual-studio-sdk.md
   - name: 分析架構並製作架構模型...
     href: modeling/analyze-and-model-your-architecture.md
@@ -700,6 +717,7 @@ items:
     - name: '[方案總管] 中的檔案巢狀'
       href: ide/file-nesting-solution-explorer.md
     - name: 啟動行為
+      displayName: Start page window
       href: ide/customizing-the-start-page-for-visual-studio.md
     - name: 尋找和使用 Visual Studio 延伸模組
       href: ide/finding-and-using-visual-studio-extensions.md
@@ -730,6 +748,7 @@ items:
 - name: 參考資料
   items:
   - name: 一般使用者介面項目
+    displayName: Windows and dialogs
     items:
     - name: 呼叫階層
       href: ide/reference/call-hierarchy.md
@@ -1078,6 +1097,7 @@ items:
     href: help-viewer/overview.md
     items:
     - name: 安裝與管理本機內容
+      displayName: Offline books docs
       href: help-viewer/install-manage-local-content.md
     - name: 在說明檢視器中尋找主題
       items:
@@ -1114,28 +1134,40 @@ items:
     href: ide/whats-new-visual-studio-2019.md
   - name: 版本資訊與系統需求
     items:
-    - name: 目前版本資訊
-      href: /visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017
-    - name: 預覽版本資訊
-      href: /visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017
-    - name: 版本資訊歷程記錄
-      href: /visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default&contextView=vs-2017
     - name: 發行節奏
-      href: /visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default&contextView=vs-2017
-    - name: Visual Studio 藍圖
-      href: /visualstudio/productinfo/vs2018-roadmap?context=visualstudio/default&contextView=vs-2017
-    - name: 系統需求
-      href: /visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017
-    - name: 平台相容性
-      href: /visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default&contextView=vs-2017
-    - name: 授權
+      href: /visualstudio/productinfo/release-rhythm/
+    - name: Visual Studio 2017
+      items:
+      - name: 目前版本資訊
+        href: /visualstudio/releasenotes/vs2017-relnotes/
+      - name: 預覽版本資訊
+        href: /visualstudio/releasenotes/vs2017-preview-relnotes/
+      - name: 版本資訊歷程記錄
+        href: /visualstudio/releasenotes/vs2017-relnotes-history/
+      - name: 可散發程式碼
+        href: /visualstudio/productinfo/2017-redistribution-vs/
+      - name: 平台相容性
+        href: /visualstudio/productinfo/vs2017-compatibility-vs/
+      - name: 系統需求
+        href: /visualstudio/productinfo/vs2017-system-requirements-vs/
+    - name: Visual Studio 2019
+      items:
+      - name: 目前版本資訊
+        href: /visualstudio/releases/2019/release-notes/
+      - name: 預覽版本資訊
+        href: /visualstudio/releases/2019/release-notes-preview/
+      - name: 版本資訊歷程記錄
+        href: /visualstudio/releases/2019/release-notes-history/
+      - name: 可散發程式碼
+        href: /visualstudio/releases/2019/redistribution/
+      - name: 平台相容性
+        href: /visualstudio/releases/2019/compatibility/
+      - name: 系統需求
+        href: /visualstudio/releases/2019/system-requirements/
+    - name: 授權條款
       href: https://visualstudio.microsoft.com/license-terms/
-    - name: 可散發程式碼
-      href: /visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default&contextView=vs-2017
     - name: 支援生命週期和服務
-      href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default&contextView=vs-2017
-    - name: 開發人員社群資料隱私權
-      href: ide/developer-community-privacy.md
+      href: /visualstudio/productinfo/vs-servicing-vs/
   - name: 如何在 Visual Studio 中回報問題
     href: ide/how-to-report-a-problem-with-visual-studio.md
     items:
@@ -1143,6 +1175,8 @@ items:
       href: ide/report-a-problem.md
   - name: 提出 Visual Studio 功能建議
     href: ide/suggest-a-feature.md
+  - name: 開發人員社群資料隱私權
+    href: ide/developer-community-privacy.md
   - name: 客戶經驗改進計畫
     href: ide/visual-studio-experience-improvement-program.md
     items:
@@ -1151,11 +1185,12 @@ items:
   - name: IDE 錯誤疑難排解資源
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
+    displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 3ee3f3df16357d6a39090dc64504ef7f7fae6351
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: fb7a40cf8558fb5c3732fba0ec32ebbbb35fb0bb
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526551"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683394"

@@ -116,6 +116,8 @@ items:
       items:
       - name: 以編輯後繼續在中斷模式中套用編輯
         href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
+    - name: 撰寫 XAML 程式碼及針對其執行進行偵錯
+      href: xaml-edit-and-continue.md
     - name: F# 不支援編輯後繼續
       href: edit-and-continue-not-supported-for-f-hash.md
   - name: 檢視偵錯工具資料
@@ -763,7 +765,7 @@ items:
         items:
         - name: Spy 功能表命令
           href: spy-menu-commands.md
-        - name: 樹狀功能表命令
+        - name: 樹狀結構功能表命令
           href: tree-menu-commands.md
         - name: 搜尋功能表命令
           href: search-menu-commands.md
@@ -841,9 +843,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 703836e5453534998db5090d904aae4339993c43
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 60b141b0f9a7b00dda32a68f5f33e2bc8321dad6
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335463"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699651"
