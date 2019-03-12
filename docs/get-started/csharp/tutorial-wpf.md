@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8604164a329dbccd7e93a39b97fcdb674eccd83e
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: d59cb6a94259342b635df6632d54db825a427c63
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796799"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323850"
 ---
-# <a name="tutorial-create-a-simple-application-with-c"></a>教學課程：使用 C# 建立一個簡單的應用程式
+# <a name="tutorial-create-a-simple-application-with-c"></a>教學課程：使用 C\# 建立一個簡單的應用程式
 
 藉由完成這個逐步解說，讓自己更熟悉許多可在使用 Visual Studio 開發應用程式時運用的工具、對話方塊和設計工具。 當您在學習如何使用整合式開發環境 ([IDE](visual-studio-ide.md)) 時，您會建立簡單的 "Hello, World" 應用程式、設計 UI、新增程式碼，以及進行偵錯。
 

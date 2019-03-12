@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 515cd501044b1b83f8adbd365e13336322c20f3f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dc927a9d3f4414d8bdf769ad697e9e209ae8f5c5
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931295"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323192"
 ---
-# <a name="learn-about-projects-and-solutions-using-c"></a>使用 C# 了解專案與解決方案
+# <a name="learn-about-projects-and-solutions-using-c"></a>了解使用 C\# 的專案與解決方案
 
 在這篇簡介文章中，我們將探討在 Visual Studio 中建立「解決方案」和「專案」的意義。 解決方案是用來組織一或多個相關程式碼專案的容器，例如類別庫專案和對應的測試專案。 我們會查看專案的屬性以及它可包含的一些檔案。 我們也會建立兩個專案之間的參考。
 

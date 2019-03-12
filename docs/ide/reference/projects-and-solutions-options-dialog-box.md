@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684c129ed104ed11b7cd6c88a7b603956acf64cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 51d4d81667bed3df6f970cd59c21286b7ef9a6a2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922208"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223438"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>選項對話方塊、專案和方案頁面
 
@@ -71,7 +71,7 @@ ms.locfileid: "55922208"
 
 ### <a name="reopen-documents-on-solution-load"></a>在解決方案載入時重新開啟文件
 
-**Visual Studio 2017 15.8 版 preview 2 和更新版本**
+**已在 Visual Studio 2017 15.8 版引進**
 
 選取此選項時，會在開啟解決方案時，自動開啟上次關閉此解決方案時處於開啟狀態的文件。
 
@@ -87,11 +87,11 @@ ms.locfileid: "55922208"
 
 ### <a name="user-project-templates-location"></a>使用者專案範本位置
 
-指定 [新增專案] 對話方塊用來建立 [我的範本] 清單的預設位置。 如需詳細資訊，請參閱[＜How to：尋找並整理範本](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+指定 [新增專案] 對話方塊用來建立 [我的範本] 清單的預設位置。 如需詳細資訊，請參閱[如何：尋找並整理範本](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ### <a name="user-item-templates-location"></a>使用者項目範本位置
 
-指定 [新增新項目] 對話方塊用來建立 [我的範本] 清單的預設位置。 如需詳細資訊，請參閱[＜How to：尋找並整理範本](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+指定 [新增新項目] 對話方塊用來建立 [我的範本] 清單的預設位置。 如需詳細資訊，請參閱[如何：尋找並整理範本](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ## <a name="see-also"></a>另請參閱
 

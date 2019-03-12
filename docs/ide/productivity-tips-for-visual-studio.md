@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702716"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223139"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高生產力的祕訣
 
@@ -24,7 +24,7 @@ ms.locfileid: "56702716"
 
 您可以使用下列功能，更快速地撰寫程式碼。
 
-- **使用便捷命令**。 Visual Studio 包含各種可協助您更快速完成常用編輯工作的命令。 例如，在 **Visual Studio 2017 15.6 版**及更新版本中，您可以選擇一個命令來輕鬆複製一行程式碼，而不必先複製程式碼，調整游標位置，然後再將它貼上。 選擇 [編輯] > [重製] 或按 **Ctrl**+**E**、**V**。 您可以快速地展開或折疊所選取的文字，方法是選擇 [編輯] > [進階] > [展開選取範圍] 或 [編輯] > [進階] > [縮小選取範圍]，或按 **Shift**+**Alt**+**=** 或 **Shift**+**Alt**+**-** (適用於 **Visual Studio 2017 15.5 版**和更新版本)。
+- **使用便捷命令**。 Visual Studio 包含各種可協助您更快速完成常用編輯工作的命令。 例如，您可以選擇一個命令來輕鬆複製一行程式碼，而不必先複製程式碼、調整游標位置，然後再將它貼上。 選擇 [編輯] > [重製] 或按 **Ctrl**+**E**、**V**。 您可以快速地展開或折疊所選取的文字，方法是選擇 [編輯] > [進階] > [展開選取範圍] 或 [編輯] > [進階] > [縮小選取範圍]，或按 **Shift**+**Alt**+**=** 或 **Shift**+**Alt**+**-**。
 
 - **使用 IntelliSense**。 當您在編輯器中輸入程式碼時，將會顯示 IntelliSense 資訊，例如列出成員、參數資訊、快速諮詢、簽章說明和自動完成文字。 這些功能支援文字的模糊比對。例如，列出成員的結果清單不僅會包含以您所輸入的字母為開頭的項目，同時也會包含名稱中包含該字母組合的項目。 如需詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。
 
@@ -102,9 +102,19 @@ ms.locfileid: "56702716"
 
 如果您將開發人員命令提示字元或其他 Visual Studio 工具釘選至 [開始] 功能表或工作列，就可以更輕鬆地存取它。
 
-1. 在 [Windows 檔案總管] 中，瀏覽至 `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`。
+::: moniker range="vs-2017"
 
-1. 以滑鼠右鍵按一下 [開發人員命令提示字元] 或開啟其快顯功能表，然後選擇 [釘選到 [開始]] 或 [釘選到工作列]。
+1. 在 Windows 檔案總管中，瀏覽至 *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools*。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 在 Windows 檔案總管中，瀏覽至 *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*。
+
+::: moniker-end
+
+2. 以滑鼠右鍵按一下 [開發人員命令提示字元] 或開啟其快顯功能表，然後選擇 [釘選到 [開始]] 或 [釘選到工作列]。
 
 ## <a name="manage-files-toolbars-and-windows"></a>管理檔案、工具列和視窗
 

@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e6fefeac5ecdaf03f4e672ea6804b0c20c79136
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4fba419605dd332346885dbf93460c1a4e53c9d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934610"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223178"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>HOW TO：在 Visual Studio 2017 中變更編輯器的字型和色彩
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>HOW TO：在 Visual Studio 中變更編輯器的字型和色彩
 
 在程式碼編輯器的 [顯示項目] 中，您可以變更預設字體、調整字型大小，亦可變更各種文字的前景和背景色彩。 當您變更字型設定時，請記住下列資訊：
 

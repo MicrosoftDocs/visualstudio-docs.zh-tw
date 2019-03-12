@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fd4d6366f9da97454f3b82c4f683f9e77dd447cf
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796643"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222515"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
 
@@ -26,7 +26,17 @@ ms.locfileid: "56796643"
 
 您不需要熟悉 C++ 即可完成此快速入門，但應該熟悉一些一般程式設計和偵錯概念。 Visual Studio 文件不會教導您如何在 C++ 中進行程式設計。 不錯的 C++ 學習資源指南是 ISO C++ 網站上的[使用者入門](https://isocpp.org/get-started)頁面。
 
-若要跟著做，則您需要已安裝**使用 C++ 的桌面開發**工作負載的 Visual Studio 2017 15.3 版或更新版本複本。 如需安裝的快速指南，請參閱[在 Visual Studio 中安裝 C++ 支援](/cpp/build/vscpp-step-0-installation)。
+::: moniker range="vs-2017"
+
+若要跟著做，您需要一份 Visual Studio 2017 複本，其中已安裝**使用 C++ 的桌面開發**工作負載。 如需安裝的快速指南，請參閱[在 Visual Studio 中安裝 C++ 支援](/cpp/build/vscpp-step-0-installation)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+若要跟著做，您需要一份 Visual Studio 2019 複本，其中已安裝**使用 C++ 的桌面開發**工作負載。 如需安裝的快速指南，請參閱[在 Visual Studio 中安裝 C++ 支援](/cpp/build/vscpp-step-0-installation)。
+
+::: moniker-end
 
 ## <a name="create-a-console-app"></a>建立主控台應用程式
 

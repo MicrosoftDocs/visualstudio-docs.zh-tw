@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: aaa5443c8fdbe2dd8a39f082ee92e9522c6de7bc
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 69c39404f82f1d0ae56996ff931fa011b5fca308
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317220"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323902"
 ---
-# <a name="welcome-to-the-visual-studio-ide--c"></a>歡迎使用 Visual Studio IDE | C#
+# <a name="welcome-to-the-visual-studio-ide--c"></a>歡迎使用 Visual Studio IDE | C\#
 
 Visual Studio「整合式開發環境」是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 

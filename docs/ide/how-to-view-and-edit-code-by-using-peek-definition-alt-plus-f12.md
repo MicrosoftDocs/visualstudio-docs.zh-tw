@@ -7,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cda6865a4dee34976fa2885313db6aad253f32c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924444"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223594"
 ---
-# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>HOW TO：使用查看定義 (Alt+F12) 檢視及編輯程式碼
+# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>作法：使用查看定義 (Alt+F12) 檢視及編輯程式碼
 
 您可以使用 [查看定義] 命令來檢視和編輯程式碼，而不需要離開撰寫中的程式碼。 [查看定義] 和 [移至定義] 會顯示相同資訊，但是 [查看定義] 是在快顯視窗中顯示，而 [移至定義] 則在個別程式碼視窗中顯示程式碼。 [移至定義] 會讓內容 (也就是作用中的程式碼視窗、目前行和游標位置) 轉換成定義程式碼視窗。 使用 [查看定義] 可以檢視和編輯該定義並在定義檔中移動，同時保留您在原始程式碼檔案中的位置。
 
@@ -24,7 +24,7 @@ ms.locfileid: "55924444"
 
 ### <a name="to-open-a-peek-definition-window"></a>若要開啟查看定義視窗
 
-1. 您可以從想要探索的型別或成員的右鍵功能表，選擇 [查看定義] 以查看定義。 在 Visual Studio 2017 15.4 版和更新版本中，如果已啟用選項，您也可以按 **Ctrl** 鍵 (或其他修飾鍵)，然後按一下成員名稱，以使用滑鼠查看定義。 或者，您也可以從鍵盤按 **Alt**+**F12**。
+1. 您可以從想要探索的型別或成員的右鍵功能表，選擇 [查看定義] 以查看定義。 如果已啟用選項，您也可以按 **Ctrl** 鍵 (或其他輔助按鍵)，然後按一下成員名稱，以使用滑鼠查看定義。 或者，您也可以從鍵盤按 **Alt**+**F12**。
 
      下圖顯示名為 `Print()` 之方法的 [查看定義] 視窗：
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d76c5eb725545fd1fd8ab1a1ec2f4eaadcd39d3b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15a36378efe7b6e3151882d5e6927cd7fbfa4542
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927109"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428605"
 ---
 # <a name="refactor-code"></a>重構程式碼
 
@@ -22,7 +22,11 @@ ms.locfileid: "55927109"
 
 ## <a name="programming-languages"></a>程式語言
 
-針對不同的程式設計語言，Visual Studio 中提供不同的重構作業。 本節中的主題涵蓋適用於 C# 與 Visual Basic 的重構作業。 如需重構 C++ 程式碼的資訊，請參閱[撰寫和重構程式碼 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)。 支援 F# 的重構由協力廠商 Visual Studio 延伸模組 [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools) 提供。
+針對不同的程式設計語言，Visual Studio 提供不同的重構作業：
+
+- 目錄中的本節頁面涵蓋適用於 C# 與 Visual Basic 重構作業。 其中一些範例包括[擷取方法重構](reference/extract-method.md)和[將類型移到對應的檔案重構](reference/move-type-to-matching-file.md)。
+- 如需重構 C++ 程式碼的資訊，請參閱[撰寫和重構程式碼 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)。
+- 支援 F# 的重構由協力廠商 Visual Studio 延伸模組 [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools) 提供。
 
 ## <a name="see-also"></a>另請參閱
 

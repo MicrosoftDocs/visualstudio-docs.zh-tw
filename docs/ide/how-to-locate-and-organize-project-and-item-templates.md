@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40abd872863231b2631830cd214fc9060da364d3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a228c882ff573b9e319d5fdbeb1ba6472cc5e3d5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952303"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221642"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>HOW TO：尋找及整理專案與項目範本
 
@@ -30,13 +30,29 @@ ms.locfileid: "55952303"
 
 如果您將包含 *.vstemplate* 檔案的壓縮檔 (*.zip*) 新增到使用者範本目錄，範本將出現在 [新增專案] 或 [新增項目] 對話方塊中。 根據預設，自訂範本位於：
 
-- *%USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ProjectTemplates*
+::: moniker range="vs-2017"
 
-- *%USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ItemTemplates*
+- *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates*
+
+- *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*
 
 例如，下列目錄有 C# 的使用者專案範本：
 
 - *C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ProjectTemplates*
+
+- *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*
+
+例如，下列目錄有 C# 的使用者專案範本：
+
+- *C:\Users\UserName\Documents\Visual Studio 2019\Templates\ProjectTemplates\Visual C#*
+
+::: moniker-end
 
 > [!TIP]
 > 您可以在 [工具] > [選項] > [專案和方案] >  [位置] 中設定使用者範本的位置。

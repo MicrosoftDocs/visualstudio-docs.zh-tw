@@ -9,21 +9,23 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: f3aefd7ec3f50538ed0986c0e6e80acf75b8e84f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7ac13299a8b727a3ef8e717e3d0a4c2c9f3738cf
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947389"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223056"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
 
 ## <a name="latest-features"></a>最新功能
+
 **Live Unit Testing 會定期改善並增強。如何找出最新功能和增強功能的相關資訊？**
 
-若要了解從 Visual Studio 2017 15.3 版開始對 Live Unit Testing 進行的新功能和增強功能，請參閱 [Live Unit Testing 中的新功能](live-unit-testing-whats-new.md)。
+若要了解 Live Unit Testing 的新功能和增強功能，請參閱 [Live Unit Testing 中的新功能](live-unit-testing-whats-new.md)。
 
 ## <a name="supported-frameworks-and-versions"></a>支援的架構與版本
+
 **Live Unit Testing 支援哪些測試架構，而且支援的最低版本為何？**
 
 Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其配接器與架構所支援的最小版本也列於表格中。 單元測試架構全都可從 NuGet.org 取得。
@@ -51,23 +53,25 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 </tr>
 </table>
 
-如果您的舊型 MSTest 測試專案參考 `Microsoft.VisualStudio.QualityTools.UnitTestFramework`，而且您不想要移至新版 MSTest NuGet 套件，請升級至 Visual Studio 2017 15.4 版。
+如果您的舊型 MSTest 測試專案參考 `Microsoft.VisualStudio.QualityTools.UnitTestFramework`，但您不想要移至新版 MSTest NuGet 套件，請升級至 Visual Studio 2017 15.4 版或更新版本。
 
 在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 若要還原套件，您可以在啟用 Living Unit Testing 之前，明確地建置方案 (從最上層的 Visual Studio 功能表中依序選取 [建置] 和 [重建方案])，或是以滑鼠右鍵按一下方案，然後選取 [還原 NuGet 套件])。
 
 ## <a name="net-core-support"></a>.NET Core 支援
+
 **Live Unit Testing 是否可以與 .NET Core 搭配使用？**
 
-可以。 Live Unit Testing 可以與 .NET Core 和 .NET Framework 搭配使用。 在 Visual Studio 2017 版本 15.3 中，最近新增 .NET Core 支援。 如果您想要針對 .NET Core 的 Live Unit Testing 支援，請升級至此版本的 Visual Studio。
+可以。 Live Unit Testing 可以與 .NET Core 和 .NET Framework 搭配使用。 Visual Studio 2017 15.3 版已新增支援 .NET Core。 如果您想要支援 .NET Core 的 Live Unit Testing，請升級至此版本或更新版本的 Visual Studio。
 
 ## <a name="configuration"></a>Configuration
+
 **當我開啟 Live Unit Testing 時，為什麼它不會運作？**
 
-[輸出] 視窗 (選取 Live Unit Testing 下拉式清單時) 應該會告訴您為什麼 Live Unit Testing 不會運作。 Live Unit Testing 不會運作的可能原因如下：
+[輸出] 視窗 (選取 Live Unit Testing 下拉式清單時) 應該會說明 Live Unit Testing 為何無法運作。 Live Unit Testing 不會運作的可能原因如下：
 
 - 如果方案中之專案所參考的 NuGet 封裝尚未還原，Live Unit Testing 將不會運作。 在開啟 Live Unit Testing 之前明確地建置方案，或是還原方案中的 NuGet 套件，應該就能解決此問題。
 
-- 如果您在專案中使用以 MSTest 為基礎的測試，請務必移除對 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的參考，然後新增對最新 MSTest NuGet 套件的參考，`MSTest.TestAdapter` (至少需要版本 1.1.11) 和 `MSTest.TestFramework` (至少需要版本 1.1.11)。 如需詳細資訊，請參閱[使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing](live-unit-testing.md#supported-test-frameworks) 文章中的＜支援的測試架構＞一節。
+- 如果您在專案中使用以 MSTest 為基礎的測試，請務必移除對 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的參考，然後新增對最新 MSTest NuGet 套件的參考，`MSTest.TestAdapter` (至少需要版本 1.1.11) 和 `MSTest.TestFramework` (至少需要版本 1.1.11)。 如需詳細資訊，請參閱[使用 Visual Studio 中的 Live Unit Testing](live-unit-testing.md#supported-test-frameworks) 一文的＜支援的測試架構＞一節。
 
 - 您的方案中應該至少要有一個專案含有參考 xUnit、NUnit 或 MSTest 測試架構的 NuGet 參考或直接參考。 此專案應該也要參考對應的 Visual Studio 測試配接器 NuGet 封裝。 Visual Studio 測試配接器也可以透過 *.runsettings* 檔案來參考。 *.runsettings* 檔案必須具有類似下列範例的項目：
 
@@ -80,6 +84,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 ```
 
 ## <a name="incorrect-coverage-after-upgrade"></a>升級後不正確的涵蓋範圍
+
 **為什麼您將 Visual Studio 專案中參考的測試配接器升級到支援版本之後，Live Unit Testing 顯示不正確的涵蓋範圍？**
 
 - 如果解決方案中的多個專案參考 NuGet 測試配接器套件時，每個都必須升級為支援的版本。
@@ -91,6 +96,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
    ```
 
 ## <a name="customize-builds"></a>自訂組建
+
 **我是否可以自訂 Live Unit Testing 組建？**
 
 如果您的解決方案需要非「一般」非檢測組建所需的自訂步驟，以針對檢測設備 (Live Unit Testing) 進行建置，您可以將程式碼新增至專案或 *.targets* 檔案來檢查 `BuildingForLiveUnitTesting` 屬性，並執行自訂的建置前/後步驟。 您也可以根據這個專案屬性，選擇針對 Live Unit Testing 組建移除特定的建置步驟 (例如發佈或產生封裝)，或新增建置步驟 (例如複製必要條件)。 根據這個屬性自訂您的組建不會以任何方式更改您的一般組建，且只會影響 Live Unit Testing 組建。
@@ -104,6 +110,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 ```
 
 ## <a name="error-messages-with-ltoutputpathgt-or-ltoutdirgt"></a>具有 &lt;OutputPath&gt; 或 &lt;OutDir&gt; 的錯誤訊息
+
 **為什麼我會在 Live Unit Testing 嘗試建置我的方案時，收到下列錯誤：「...似乎會無條件地設定 `<OutputPath>` 或 `<OutDir>`。Live Unit Testing 將不會從輸出組件執行測試」？**
 
 如果您解決方案的建置流程會無條件地覆寫 `<OutputPath>` 或 `<OutDir>`，使它非為 `<BaseOutputPath>` 的子目錄，即會發生此錯誤。 在這種情況下，Live Unit Testing 將無法運作，因為它也會覆寫這些值，以確保組建成品會卸除到 `<BaseOutputPath>` 下方的資料夾中。 如果您必須覆寫您想要在一般組建中卸除組建成品的位置，請根據 `<BaseOutputPath>` 有條件地覆寫 `<OutputPath>`。
@@ -134,11 +141,13 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 請勿直接在建置流程中覆寫 `<OutDir>`，請改為覆寫 `<OutputPath>` 以將組建成品卸除到特定位置。
 
 ## <a name="set-the-location-of-build-artifacts"></a>設定組建成品的位置
+
 **我想要使 Live Unit Testing 組建的成品移到特定位置，而不是 *.vs* 資料夾下方的預設位置。如何變更該位置？**
 
 將 `LiveUnitTesting_BuildRoot` 使用者層級環境變數設為您想要卸除 Live Unit Testing 組建成品的路徑。 
 
 ## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>測試總管與Live Unit Testing 測試回合的比較
+
 **從 [測試總管] 視窗執行測試，與在 Live Unit Testing 中執行測試有何不同？**
 
 差異如下：
@@ -154,9 +163,10 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 - 根據預設，[測試總管] 目前會在單一執行緒 Apartment (STA) 中執行測試，而 Live Unit Testing 會在多執行緒 Apartment (MTA) 中執行測試。 若要在 Live Unit Testing 於 STA 中執行 MSTest 測試，請利用可在 `MSTest.STAExtensions 1.0.3-beta` NuGet 封裝中找到的 `<STATestMethod>` 或 `<STATestClass>` 屬性，來裝飾測試方法或包含類別。 針對 NUnit，請使用 `<RequiresThread(ApartmentState.STA)>` 屬性來裝飾測試方法，而針對 xUnit，請使用 `<STAFact>` 屬性。
 
 ## <a name="exclude-tests"></a>排除測試
+
 **如何從 Live Unit Testing 排除測試？**
 
-請參閱[使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing](live-unit-testing.md#include-and-exclude-test-projects-and-test-methods) 文章中的＜包含和排除測試專案與測試方法＞一節，以了解使用者的特定設定。 若您想要針對特定的編輯工作階段執行一組特定的測試，或保存您個人的喜好設定，包含或排除測試非常有用。
+請參閱[使用 Visual Studio 中的 Live Unit Testing](live-unit-testing.md#include-and-exclude-test-projects-and-test-methods) 一文章的＜包含和排除測試專案與測試方法＞一節，以了解使用者的特定設定。 若您想要針對特定的編輯工作階段執行一組特定的測試，或保存您個人的喜好設定，包含或排除測試非常有用。
 
 針對方案特定的設定，您可以以程式設計方式套用 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> 屬性，以排除方法、屬性、類別或結構，使 Live Unit Testing 不會檢測它們。 此外，您也可以在專案檔中將 `<ExcludeFromCodeCoverage>` 屬性設為 `true`，以排除對整個專案的檢測。 Live Unit Testing 仍然會執行尚未檢測的測試，但不會將它們的涵蓋範圍視覺化。
 
@@ -182,9 +192,10 @@ public class Class1
 ```
 
 ## <a name="win32-pe-headers"></a>Win32 PE 標頭
+
 **為什麼 Live Unit Testing 所建置之已檢測組件中的 Win32 PE 標頭會不一樣？**
 
-此問題已修正，且已不存在於 Visual Studio 2017 15.3 版中。 請升級至此版本的 Visual Studio。
+此問題已修正，不存在於 Visual Studio 2017 15.3 版和更新版本中。
 
 在舊版 Visual Studio 2017 中，有一個已知 Bug 可能會造成 Live Unit Testing 組建無法內嵌下列 Win32 PE 標頭資料：
 
@@ -197,6 +208,7 @@ public class Class1
 透過 Live Unit Testing 執行時，依賴這些值的測試可能會失敗。
 
 ## <a name="continuous-builds"></a>連續組建
+
 **為什麼 Live Unit Testing 會持續建置我的方案，即使我沒有做出任何編輯也一樣？**
 
 如果您解決方案的建置流程會產生屬於解決方案本身的原始程式碼，而您的建置目標檔案並未指定適當的輸入和輸出，即使您未進行編輯，您也可以建置解決方案。 您應該為目標提供輸入和輸出清單，讓 MSBuild 可以執行適當的更新狀態檢查，並判斷是否需要新的組建。
@@ -204,6 +216,7 @@ public class Class1
 每當 Live Unit Testing 偵測到原始程式檔已變更時，即會開始建置。 由於您方案的組建會產生原始程式檔，Live Unit Testing 將陷入無限的建置迴圈。 不過，如果在 Live Unit Testing 開始第二個組建時 (從上一個組建中偵測到新產生的原始程式檔之後) 檢查目標的輸入和輸出，它就會脫離該建置迴圈，因為輸入和輸出檢查將指出一切均為最新狀態。  
 
 ## <a name="lightweight-solution-load"></a>輕量型解決方案載入
+
 **Live Unit Testing 如何與輕量型解決方案載入功能搭配運作？**
 
 Live Unit Testing 目前無法與輕量型解決方案載入功能良好搭配。 它只有在載入至少一個測試專案之後才會運作。 在那之前，它將不會運作，因為 Live Unit Testing 相依於至少一個參考所載入測試配接器 (MSTest、xUnit 或 NUnit) 的測試專案。
@@ -212,23 +225,27 @@ Live Unit Testing 目前無法與輕量型解決方案載入功能良好搭配�
 > Visual Studio 2017 15.5 版和更新版本不再提供輕量型解決方案載入。 在 Visual Studio 2017 15.5 版和更新版本中，即便不使用輕量型解決方案載入，含有受控碼之大型解決方案的載入速度也比過去更快。
 
 ## <a name="new-process-coverage"></a>新的程序涵蓋範圍
+
 **為什麼 Live Unit Testing 無法從測試所建立的新程序中擷取涵蓋範圍？**
 
-這是已知問題，應該在 Visual Studio 2017 的後續更新中修正此問題。
+這是已知問題，後續版本應會將其修正。
 
-## <a name="including-or-excluding-tests-not-working"></a>包含或排除測試無法運作
+## <a name="including-or-excluding-tests-doesnt-work"></a>包含或排除測試無法運作
+
 **為什麼在我將測試包含或排除於即時測試組之後，什麼都沒有發生？**
 
-此問題已修正，且已不存在於 Visual Studio 2017 15.3 版中。 請升級至此版本的 Visual Studio。
+此問題已修正，不存在於 Visual Studio 2017 15.3 版和更新版本中。
 
-在舊版 Visual Studio 2017 中，這是已知問題。 此問題的因應措施為在包含或排除測試之後，對任意檔案進行編輯。 
+在舊版 Visual Studio 2017 中，這是已知問題。 此問題的因應措施為在包含或排除測試之後，對任意檔案進行編輯。
 
 ## <a name="editor-icons"></a>編輯器圖示
+
 **儘管根據輸出視窗中的訊息，Live Unit Testing 似乎正在執行測試，但為什麼我在編輯器中看不到任何圖示？**
 
 如果 Live Unit Testing 正在運作的組件基於任何原因而未進行檢測，您可能在編輯器中看不到圖示。 例如，Live Unit Testing 與設定 `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>` 的專案不相容。 在此情況下，您的建置流程需要更新以移除此設定，或將該設定變更為 `true`，Live Unit Testing 才能夠運作。 
 
 ## <a name="capture-logs"></a>擷取記錄
+
 **如何收集更詳細的記錄以提出錯誤報告？**
 
 您可以執行數個動作來收集更詳細的記錄：

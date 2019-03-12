@@ -7,19 +7,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdfc350305400a42565aa55fa5e29cc40286ed0c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318767"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222983"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 
 Visual Studio 效能建議是要針對記憶體不足的情況，但這極少發生。 在這些情況下，您可以最佳化可能不會使用的特定 Visual Studio 功能。 下列祕訣不適合作為一般建議。
 
 > [!NOTE]
-> 如果您在使用產品時因記憶體問題而發生困難，請透過[意見反應工具](../ide/how-to-report-a-problem-with-visual-studio-2017.md)讓我們知道。
+> 如果您在使用產品時因記憶體問題而發生困難，請透過[意見反應工具](../ide/how-to-report-a-problem-with-visual-studio.md)讓我們知道。
 
 ## <a name="use-a-64-bit-os"></a>使用 64 位元 OS
 
@@ -41,9 +41,9 @@ Visual Studio 會在自動文件還原導致解決方案載入時間明顯變慢
 
 - 若是一般**移至**功能，請選取 [編輯] > [移至] > [移至全部]，或按 **Ctrl**+**T**。
 
-- 在 Visual Studio 2017 15.8 版及更新版本中，您可以跳到解決方案中最後編輯的位置，方法是使用 [編輯] > [移至] > [移至最後編輯位置]，或按 **Ctrl**+**Shift**+**Backspace**。
+- 您可以跳到方案中最後編輯的位置，方法是使用 [編輯] > [移至] > [移至最後編輯位置]，或按 **Ctrl**+**Shift**+**Backspace**。
 
-- 在 Visual Studio 2017 15.8 版及最新版本中，請使用 [移至最近使用的檔案] 查看最近在解決方案中瀏覽的檔案清單。 選取 [編輯] > [移至] > [移至最近使用的檔案]，或按 **Ctrl**+**1**、**Ctrl**+**R**。
+- 使用 [移至最近使用的檔案]，查看最近在方案中瀏覽的檔案清單。 選取 [編輯] > [移至] > [移至最近使用的檔案]，或按 **Ctrl**+**1**、**Ctrl**+**R**。
 
 ## <a name="configure-debugging-options"></a>設定偵錯選項
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df5340d64087068f5da3b48c1057e3a6a8fb700a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bab3cf50dfc860a857b3e9875ae6c71aff79014e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919231"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223477"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 
@@ -48,7 +48,7 @@ ms.locfileid: "55919231"
 
 ## <a name="install-the-coded-ui-test-component"></a>安裝自動程式化 UI 測試元件
 
-若要存取自動程式化 UI 測試工具和範本，請安裝 Visual Studio 2017 的「自動程式化 UI 測試」元件。
+若要存取自動程式化 UI 測試工具和範本，請安裝 Visual Studio 的**自動程式碼 UI 測試**元件。
 
 1. 選擇 [工具] > [取得工具和功能] 以啟動 **Visual Studio 安裝程式**。
 
@@ -58,9 +58,9 @@ ms.locfileid: "55919231"
 
 1. 選取 [修改]。
 
-## <a name="create-a-coded-ui-test"></a>建立自動程式化 UI 測試
+## <a name="create-a-coded-ui-test"></a>建立自動程式碼 UI 測試
 
-1. 建立自動程式化 UI 測試專案
+1. 建立自動程式碼 UI 測試專案
 
    自動程式化 UI 測試必須包含在自動程式化 UI 測試專案中。 如果您還沒有自動程式化 UI 測試專案，請予以建立。 選擇 [檔案] > [新增] > [專案] 以開啟 [新增專案] 對話方塊。 在左邊的 [類別] 窗格中，依序展開 [已安裝] > [Visual Basic] 或者 [Visual C#] > [測試]。 選取 [自動程式化 UI 測試專案] 範本，然後選擇 [確定]。
 
@@ -69,7 +69,7 @@ ms.locfileid: "55919231"
    > [!NOTE]
    > 如果您沒有看到 [自動程式化 UI 測試專案] 範本，則需要[安裝自動程式化 UI 測試元件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
 
-2. 加入自動程式化 UI 測試檔案。
+2. 加入自動程式碼 UI 測試檔案。
 
      如果您剛剛建立自動程式碼 UI 專案，則自動加入第一個 CUIT 檔案。 若要加入另一個測試檔案，請在 [方案總管] 中的自動程式化 UI 測試專案上開啟捷徑功能表，然後選擇 [新增] > [自動程式化 UI 測試]。
 
@@ -79,7 +79,7 @@ ms.locfileid: "55919231"
 
      [自動程式化 UI 測試產生器] 隨即出現。
 
-     ![自動程式化 UI 測試產生器](../test/media/codedui_testbuilder.png)
+     ![自動程式碼 UI 測試產生器](../test/media/codedui_testbuilder.png)
 
 3. 錄製一連串的動作。
 
@@ -100,7 +100,7 @@ ms.locfileid: "55919231"
 
      關閉判斷提示視窗，然後選擇 [產生程式碼]。
 
-     ![自動程式化 UI 測試目標項目](../test/media/codedui_1.png)
+     ![自動程式碼 UI 測試目標項目](../test/media/codedui_1.png)
 
     > [!TIP]
     > 在錄製動作與確認值之間替換。 在每串動作或驗證結束時產生程式碼。 如果您想要，則可以稍後插入新的動作和驗證。
@@ -134,7 +134,7 @@ ms.locfileid: "55919231"
 
      開啟 *UIMap.uitest*。 此檔案會在 [自動程式化 UI 測試編輯器] 中開啟，而您可以在其中編輯所錄製的任何一串動作，以及編輯您的判斷提示。
 
-     ![自動程式化 UI 測試編輯器](../test/media/cuit_editor_edit.png)
+     ![自動程式碼 UI 測試編輯器](../test/media/cuit_editor_edit.png)
 
      如需詳細資訊，請參閱[使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
 
@@ -164,20 +164,20 @@ ms.locfileid: "55919231"
 
 若要產生 UI 控制項的判斷提示，請選擇 [自動程式化 UI 測試產生器] 中的 [加入判斷提示] 工具，並將它拖曳至受測試應用程式上想要驗證是否正確的控制項。 有方塊括住控制項時，請放開滑鼠。 此控制類別程式碼會立即在 *UIMap.Designer.cs* 檔案中建立。
 
-![自動程式化 UI 測試目標項目](../test/media/codedui_1.png)
+![自動程式碼 UI 測試目標項目](../test/media/codedui_1.png)
 
 此控制項的屬性現在會列在 [加入判斷提示] 對話方塊中。
 
 另一種巡覽至特定控制項的方式，是選擇箭號 **(<<)** 展開 [UI 控制項對應] 的檢視。 若要尋找父控制項、同層級控制項或子控制項，您可以按一下對應中的任何位置，並使用方向鍵在樹狀目錄中移動。
 
-![自動程式化 UI 測試屬性](../test/media/codedui_2.png)
+![自動程式碼 UI 測試屬性](../test/media/codedui_2.png)
 
 > [!TIP]
 > 如果在應用程式中選取控制項時沒有看到任何屬性，或是在 UI 控制項對應中沒有看到控制項，請確認控制項在應用程式程式碼中有唯一的識別碼。 唯一識別碼可以是 HTML ID 屬性或 WPF UId。
 
 接下來，開啟想要驗證之 UI 控制項的屬性的捷徑功能表，然後指向 [加入判斷提示]。 在 [新增判斷提示] 對話方塊中，選取您判斷提示的 [比較子] (例如 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>)，然後在 [比較值] 中輸入您判斷提示的值。
 
-![自動程式化 UI 測試判斷提示](../test/media/codedui_3.png)
+![自動程式碼 UI 測試判斷提示](../test/media/codedui_3.png)
 
 加入您測試的所有判斷提示之後，請選擇 [確定]。
 
@@ -198,7 +198,7 @@ ms.locfileid: "55919231"
 
 - 將稱為 `AssertForAddTwoNumbers` 的方法加入至 UI 對應 (*UIMap.uitest*)。 此檔案會在 [自動程式化 UI 測試編輯器] 中開啟，而您可以在此編輯器中編輯判斷提示。
 
-     ![使用 [自動程式化 UI 測試編輯器] 編輯判斷提示](../test/media/cuit_editor_assert.png)
+     ![使用 [自動程式碼 UI 測試編輯器] 編輯判斷提示](../test/media/cuit_editor_assert.png)
 
      如需詳細資訊，請參閱[使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
 
@@ -295,7 +295,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
     - 自動程式化 UI 測試支援 Internet Explorer 9 和 Internet Explorer 10 所含的一些 HTML5 控制項。 如需詳細資訊，請參閱[在自動程式化 UI 測試中使用 HTML5 控制項](../test/using-html5-controls-in-coded-ui-tests.md)。
 
-    - 自動程式化 UI 測試編寫指導：
+    - 自動程式碼 UI 測試編寫指導：
 
        - [自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)
 

@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: a9571456a5c9b277b69e6045e1277f78d586f3e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1f5ad2f5860c148d4bb9d0ee026eee9b1e83c74c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923366"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223126"
 ---
 # <a name="code-style-preferences"></a>程式碼樣式喜好設定
 
@@ -38,11 +38,11 @@ ms.locfileid: "55923366"
 
 ## <a name="format-document-command"></a>將文件格式化命令
 
-在 Visual Studio 2017 15.8 及更新版本中，您可以設定**將文件格式化**命令 ([編輯] > [進階] > [將文件格式化]) 以對檔案執行額外的程式碼清理，例如移除及排序 using，或套用程式碼樣式喜好設定。 您可在 [[格式化] 選項頁面](reference/options-text-editor-csharp-formatting.md#format-document-settings)定義您希望**將文件格式化**套用哪些設定。
+您可以設定 **Format Document** 命令 ([編輯] > [進階] > [格式化文件]) 以對檔案執行額外的程式碼清理，例如移除及排序 Using，或套用程式碼樣式喜好設定。 您可在 [[格式化] 選項頁面](reference/options-text-editor-csharp-formatting.md#format-document-settings)定義您希望**將文件格式化**套用哪些設定。
 
 程式碼清理會遵循在 *.editorconfig* 檔案中進行的設定，若缺少該規則會檔案，則遵循 [工具] > [選項] > [文字編輯器] > [C#] > [程式碼樣式] 或 [格式化] 中的設定。
 
-當您初次在 Visual Studio 2017 中觸發**將文件格式化**命令時，黃色的資訊列會提示您進行程式碼清理設定。
+當您第一次在 Visual Studio 中觸發 **Format Document** 命令時，黃色的資訊列會提示您進行程式碼清理設定。
 
 > [!TIP]
 > 在 *.editorconfig* 檔案中設為 **none** 的規則不會對清理有影響，但可透過 [快速動作與重構] 功能表另外套用。

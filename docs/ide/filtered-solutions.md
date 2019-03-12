@@ -10,18 +10,18 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2f7163ecda377d8fa8b7c27ed50dae4068d39600
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952914"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007172"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio 中已篩選的方案
 
-**Visual Studio 2019 Preview 1 的新功能**
+**Visual Studio 2019 的新功能**
 
-大型開發團隊經常使用包含多個專案的單一大型方案來共同作業。 然而，個別開發人員通常只會負責這些專案中的一小部分。 為了在開啟大型方案時改善效能，Visual Studio 2019 Preview 1 推出了「方案篩選」。 方案篩選可讓您開啟僅載入所選專案的方案。 在方案中載入專案的子集，可減少方案負載、組建和測試執行時間，並提供更聚焦的檢閱。
+大型開發團隊經常使用包含多個專案的單一大型方案來共同作業。 然而，個別開發人員通常只會負責這些專案中的一小部分。 為了改善開啟大型方案時的效能，Visual Studio 2019 引進「方案篩選」功能。 方案篩選可讓您開啟僅載入所選專案的方案。 在方案中載入專案的子集，可減少方案負載、組建和測試執行時間，並提供更聚焦的檢閱。
 
 提供下列功能︰
 

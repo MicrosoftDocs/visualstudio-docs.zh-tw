@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22d0fcfe1a048b83926cbd79e9c479e2f1ec85ab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935572"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222083"
 ---
-# <a name="how-to-create-item-templates"></a>HOW TO：建立項目範本
+# <a name="how-to-create-item-templates"></a>作法：建立項目範本
 
 本文會向您示範如何使用 [匯出範本精靈] 建立項目範本。 如果您的範本中包含多個檔案，請參閱[如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)。
 
@@ -24,7 +24,7 @@ ms.locfileid: "55935572"
 
 1. 如有需要，可將項目新增至專案並加以修改。
 
-1. 修改程式碼檔，指出要執行參數取代的地方。 如需詳細資訊，請參閱[＜How to：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
+1. 修改程式碼檔，指出要執行參數取代的地方。 如需詳細資訊，請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
 
 1. 選擇 [專案] 功能表上的 [匯出範本]。
 
@@ -109,19 +109,29 @@ ms.locfileid: "55935572"
 
 1. 建立專案和專案項目。
 
-1. 修改專案項目，直到它準備好儲存成範本。
+2. 修改專案項目，直到它準備好儲存成範本。
 
-1. 修改程式碼檔案，指出要執行參數取代的位置 (如有)。 如需參數取代的詳細資訊，請參閱[如何：替代範本中的參數。](../ide/how-to-substitute-parameters-in-a-template.md)
+3. 修改程式碼檔案，指出要執行參數取代的位置 (如有)。 如需參數取代的詳細資訊，請參閱[如何：替代範本中的參數。](../ide/how-to-substitute-parameters-in-a-template.md)
 
-1. 在與專案項目檔案相同的目錄中，使用 *.vstemplate* 檔案副檔名來建立並儲存 XML 檔案。
+4. 在與專案項目檔案相同的目錄中，使用 *.vstemplate* 檔案副檔名來建立並儲存 XML 檔案。
 
-1. 編輯 *.vstemplate* XML 檔案，以提供項目範本中繼資料。 如需詳細資訊，請參閱[範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md) 和上一節中的範例。
+5. 編輯 *.vstemplate* XML 檔案，以提供項目範本中繼資料。 如需詳細資訊，請參閱[範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md) 和上一節中的範例。
 
-1. 儲存並關閉 *.vstemplate* 檔案。
+6. 儲存並關閉 *.vstemplate* 檔案。
 
-1. 在 **Windows 檔案總管**中選取您想要併入範本的檔案。 以滑鼠右鍵按一下選項，選擇 [傳送到] > [壓縮的 (zipped) 資料夾]。 您選取的檔案即會壓縮成 *.zip* 檔。
+7. 在 **Windows 檔案總管**中選取您想要併入範本的檔案。 以滑鼠右鍵按一下選項，選擇 [傳送到] > [壓縮的 (zipped) 資料夾]。 您選取的檔案即會壓縮成 *.zip* 檔。
 
-1. 複製 *.zip* 檔案，並在使用者項目範本位置中貼上它。 在 Visual Studio 2017 中，預設目錄是 *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*。 如需詳細資訊，請參閱[＜How to：尋找及整理專案與項目範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+::: moniker range="vs-2017"
+
+8. 複製 *.zip* 檔案，並在使用者項目範本位置中貼上它。 預設目錄為 *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*。 如需詳細資訊，請參閱[如何：尋找及整理專案與項目範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. 複製 *.zip* 檔案，並在使用者項目範本位置中貼上它。 預設目錄為 *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*。 如需詳細資訊，請參閱[如何：尋找及整理專案與項目範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+
+::: moniker-end
 
 ## <a name="see-also"></a>另請參閱
 

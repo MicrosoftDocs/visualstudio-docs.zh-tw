@@ -1,61 +1,46 @@
 ---
-title: Visual Studio Test Controller 2017 工作負載和元件識別碼
+title: Visual Studio Test Controller 工作負載和元件識別碼
 titleSuffix: ''
 description: 使用 Visual Studio 工作負載和元件識別碼將自動化測試散發到多部電腦
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
-ms.workload:
-- multiple
-ms.openlocfilehash: 0af631c4422a4e139cc799a8f4489e0d71e1e7b5
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 546ae0fe1660c6b04198f2b562d4358cebbdb192
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840545"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324100"
 ---
-# <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017 元件目錄
+# <a name="visual-studio-test-controller-component-directory"></a>Visual Studio Test Controller 元件目錄
 
-此頁面上的表格列出您可以用來透過命令列安裝 Visual Studio 的識別碼，或是您可以在 VSIX 資訊清單中指定為相依性的識別碼。 請注意，我們將會在發行 Visual Studio 更新時新增其他元件。
+[!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
-此外，也請注意此頁面的下列相關注意事項：
+::: moniker range="vs-2017"
 
-* 每個工作負載都有自己的小節 (後面接著工作負載識別碼)，以及一張工作負載可用元件的表格。
-* 安裝工作負載時，預設會安裝「必要」元件。
-* 您也可以選擇安裝「建議」元件和「選擇性」元件。
-* 我們還新增了一個章節，當中列出不屬於任何工作負載的額外元件。
+[!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-當您在 VSIX 資訊清單中設定相依性時，必須僅指定「元件識別碼」。 請使用此頁面上的表格來決定我們的最基本元件相依性。 在某些情況下，這可能意謂著您僅指定一個來自工作負載的元件。 在其他情況下，則可能意謂著您指定來自單一工作負載的多個元件，或來自多個工作負載的多個元件。 如需詳細資訊，請參閱[如何：將擴充性專案移轉至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 頁面。
+[!include[Visual Studio Test Controller 2017](includes/vs-2017/workload-component-id-vs-test-controller.md)]
 
-如需有關如何使用這些識別碼的詳細資訊，請參閱[使用命令列參數安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) 頁面。 而如需其他產品的工作負載和元件識別碼清單，請參閱 [Visual Studio 2017 工作負載和元件識別碼 (英文)](workload-and-component-ids.md) 頁面。
+::: moniker-end
 
-## <a name="test-controller"></a>測試控制器
+::: moniker range=">= vs-2019"
 
-**識別碼：** Microsoft.VisualStudio.Workload.TestController
+[!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-**描述：** 將自動化的測試散發至多部電腦
+[!include[Visual Studio Test Controller 2019](includes/vs-2019/workload-component-id-vs-test-controller.md)]
 
-### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
-
-元件識別碼 | 名稱 | 版本 | 相依性類型
---- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Test Controller 核心功能 | 15.6.27309.0 | 必要
-
-## <a name="unaffiliated-components"></a>非附屬元件
-
-這些是未隨附於任何工作負載但可選取來作為個別元件的元件。
-
-元件識別碼 | 名稱 | 版本
---- | --- | ---
-N/A | N/A | N/A
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

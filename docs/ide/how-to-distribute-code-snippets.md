@@ -1,5 +1,5 @@
 ---
-title: HOW TO：散發程式碼片段
+title: 作法：散發程式碼片段
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b3b9a8045fdda71df1f979aef09aa368e03749
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2dde020192e4b301083c69963720f6222639f7b1
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917801"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323049"
 ---
-# <a name="how-to-distribute-code-snippets"></a>HOW TO：散發程式碼片段
+# <a name="how-to-distribute-code-snippets"></a>作法：散發程式碼片段
 
 您可以使用 [程式碼片段管理員]，將您的程式碼片段提供給您的朋友，並讓他們在自己的電腦上安裝程式碼片段。 不過，如果您有數個程式碼片段要散發，或想要更廣泛地散發，請在 Visual Studio 延伸模組中包含您的程式碼片段檔案。 Visual Studio 使用者可以接著安裝此延伸模組。
 
@@ -67,7 +67,17 @@ ms.locfileid: "55917801"
 
 ### <a name="add-the-pkgdef-file"></a>新增 .pkgdef 檔
 
+::: moniker range="vs-2017"
+
 1. 將文字檔新增至 *HelloWorldVB* 資料夾，並將它命名為 *HelloWorldVB.pkgdef*。 這個檔案用來將特定機碼加入登錄。 在此情況下，它會將新的子機碼加入 **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic** 機碼。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 將文字檔新增至 *HelloWorldVB* 資料夾，並將它命名為 *HelloWorldVB.pkgdef*。 這個檔案用來將特定機碼加入登錄。 在此情況下，它會將新的子機碼新增至 **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Languages\CodeExpansions\Basic** 機碼。
+
+::: moniker-end
 
 2. 將下列各行加入檔案。
 

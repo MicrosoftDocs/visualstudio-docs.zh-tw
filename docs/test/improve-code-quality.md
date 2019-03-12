@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6cace8f9728f71648300f3dfd9a073453e74ada7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7bcb75da8a21090450c18080240f76ae17c10281
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957165"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221576"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio 中的測試工具
 
@@ -36,7 +36,7 @@ Visual Studio 測試工具可協助您和小組開發及維持絕佳的高標準
 - [負載測試](../test/quickstart-create-a-load-test-project.md)會執行單元測試和 Web 效能測試，模擬伺服器應用程式的負載。
 
 > [!NOTE]
-> 所有版本的 Visual Studio 都提供單元測試。 只有 Visual Studio Enterprise 版才提供其他測試工具 (例如 Live Unit Testing、IntelliTest 和自動程式化 UI 測試)。 如需版本的詳細資訊，請參閱[比較 Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/)。
+> 所有版本的 Visual Studio 都提供單元測試。 只有 Visual Studio Enterprise 版才提供其他測試工具 (例如 Live Unit Testing、IntelliTest 和自動程式化 UI 測試)。 如需版本的詳細資訊，請參閱[比較 Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare/)。
 
 ## <a name="related-scenarios"></a>相關案例
 

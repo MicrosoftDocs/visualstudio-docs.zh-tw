@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1b347a5a2ef2ef9e82b65c768b4f8ec331c912d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3572e48328317634f036e8c1301d81c38314a21c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942072"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221953"
 ---
 # <a name="target-older-versions-of-net-f"></a>以舊版 .NET 為目標 (F#)
 
@@ -53,7 +53,7 @@ ms.locfileid: "55942072"
 
 ### <a name="to-install-the-f-20-runtime"></a>安裝 F# 2.0 執行階段
 
-請遵循[修復 Visual Studio 2017 的步驟](../install/repair-visual-studio.md)。
+請遵循[修復 Visual Studio 的步驟](../install/repair-visual-studio.md)。
 
 ## <a name="see-also"></a>另請參閱
 

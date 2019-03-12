@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a74c5992699fa321839c671f527c513ae2b9291
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 38cb805978396c8c1744a953a7b1ef7417f43483
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155483"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323247"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安裝 Python 支援
 
@@ -47,7 +47,17 @@ ms.locfileid: "56155483"
 
     ![Visual Studio 安裝程式中的 Python 開發工作負載](media/installation-python-workload.png)
 
-    選擇性：如果您要使用資料科學，也請考慮 [資料科學與分析應用程式] 工作負載。 此工作負載支援 Python 以及 R 和 F# 語言。 如需詳細資訊，請參閱[資料科學與分析應用程式工作負載](../rtvs/data-science-and-analytical-applications-workload.md)。
+   ::: moniker range="vs-2017"
+
+    選擇性：如果您要使用資料科學，也請考慮 [資料科學與分析應用程式] 工作負載。 此工作負載支援 Python、R 以及 F# 語言。 如需詳細資訊，請參閱[資料科學與分析應用程式工作負載](data-science-and-analytical-applications-workload.md)。
+    
+    ::: moniker-end
+    
+   ::: moniker range=">=vs-2019"
+
+    選擇性：如果您要使用資料科學，也請考慮 [資料科學與分析應用程式] 工作負載。 此工作負載支援 Python 以及 F# 語言。 如需詳細資訊，請參閱[資料科學與分析應用程式工作負載](data-science-and-analytical-applications-workload.md)。
+    
+    ::: moniker-end
 
     > [!Note]
     > 只有 Visual Studio 2017 15.2 版和更新版本才提供 Python 和「資料科學」工作負載。
@@ -56,7 +66,7 @@ ms.locfileid: "56155483"
 
     ![Visual Studio 安裝程式中的 Python 開發選項](media/installation-python-options.png)
 
-    | 選項 | 描述 |
+    | 選項 | 說明 |
     | --- | --- |
     | Python 散發 | 選擇您要使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 散發的任何 32 位元和 64 位元變異組合。 每個都包含散發的解譯器、執行階段和程式庫。 具體而言，Anaconda 是包含各種預先安裝套件的開放型資料科學平台。 (您隨時都可以回到 Visual Studio 安裝程式，以新增或移除散發)。**注意**：如果您已經安裝 Visual Studio 安裝程式以外的發行版本，就不需要在此檢查對應選項。 Visual Studio 會自動偵測現有的 Python 安裝。 請參閱 [Python 環境視窗](managing-python-environments-in-visual-studio.md#the-python-environments-window)。 此外，如果已提供比安裝程式中所示還要新的 Python 版本，您可以另外安裝該版本，而且 Visual Studio 將會偵測到該版本。 |
     | **Cookiecutter 範本支援** | 安裝 Cookiecutter 圖形化 UI 來探索範本、輸入範本選項，以及建立專案和檔案。 請參閱[使用 Cookiecutter 延伸模組](using-python-cookiecutter-templates.md)。 |

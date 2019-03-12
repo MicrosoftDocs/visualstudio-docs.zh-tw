@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b423f666ed27df1723a30a0413d8388a6c5fa903
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1033eb38b10eaaf85a20eedf0a8260654a793962
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919738"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222749"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>尋找和使用 Visual Studio 延伸模組
 
@@ -61,9 +61,9 @@ Visual Studio Marketplace 有新版本可用時，就會自動更新延伸模組
 
 ## <a name="extension-crash-and-unresponsiveness-notifications"></a>延伸模組當機和無回應通知
 
-Visual Studio 2017 15.3 版中的新功能，如果 Visual Studio 懷疑延伸模組與前一個工作階段期間的當機有關，則會通知您。 Visual Studio 當機時，會儲存例外狀況堆疊。 下次 Visual Studio 啟動時會檢查堆疊，而且是從分葉節點和工作節點開始往基礎節點方向開始檢查。 如果 Visual Studio 判斷框架屬於已安裝並啟用之延伸模組的模組，則會顯示通知。
+如果 Visual Studio 懷疑某個延伸模組與之前工作階段期間的當機有關，則會通知您。 Visual Studio 當機時，會儲存例外狀況堆疊。 下次 Visual Studio 啟動時會檢查堆疊，而且是從分葉節點和工作節點開始往基礎節點方向開始檢查。 如果 Visual Studio 判斷框架屬於已安裝並啟用之延伸模組的模組，則會顯示通知。
 
-**Visual Studio 2017 15.6 版**中的新功能：Visual Studio 在懷疑某擴充功能造成 UI 無回應時也會通知您。
+如果 Visual Studio 懷疑某個延伸模組導致 UI 無回應，也會通知您。
 
 當顯示這些通知時，您可以略過此通知，或採取下列其中一個動作：
 

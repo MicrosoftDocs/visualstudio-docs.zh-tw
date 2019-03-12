@@ -1,5 +1,5 @@
 ---
-title: HOW TO：將類別圖表新增至專案 (類別設計工具)
+title: 作法：將類別圖表新增至專案 (類別設計工具)
 ms.date: 05/08/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ac40b3ae84aad689df9884ad8453860f91d971
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919712"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223737"
 ---
-# <a name="how-to-add-class-diagrams-to-projects"></a>HOW TO：將類別圖表新增至專案
+# <a name="how-to-add-class-diagrams-to-projects"></a>作法：將類別圖表新增至專案
 
 若要設計、編輯和重構類別及其他類型，請將類別圖加入至 C#、Visual Basic 或 C++ 專案。 若要在專案中視覺化程式碼的不同部分，請將多個類別圖加入至專案。
 
@@ -26,7 +26,7 @@ ms.locfileid: "55919712"
 
 ## <a name="install-the-class-designer-component"></a>安裝類別設計工具元件
 
-若您執行 Visual Studio 2017 而未安裝**類別設計工具**元件，請遵循下列步驟加以安裝。
+若您尚未安裝**類別設計工具**元件，請遵循下列步驟安裝。
 
 1. 從 Windows [開始] 功能表開啟 **Visual Studio 安裝程式**，或從 Visual Studio 的功能表列選取 [工具] > [取得工具與功能]。
 

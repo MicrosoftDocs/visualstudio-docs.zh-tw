@@ -7,16 +7,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 259d1c3ca0d86125e0b7c59c39851c2bb2f20b83
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 211e9ca6e5b30d2a2b88f03430090c155ef7627a
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953044"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223753"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 建立可攜式自訂編輯器設定
 
-在 Visual Studio 2017 中，您可以在專案或程式碼基底中新增 [EditorConfig](http://editorconfig.org/) 檔案，強制使用程式碼基底的所有人都使用一致的編碼樣式。 EditorConfig 設定優先於全域 Visual Studio 文字編輯器設定。 這表示您可以自訂每個程式碼基底，以使用該專案專屬的文字編輯器設定。 您仍然可以在 Visual Studio 的 [選項] 對話方塊中設定自己的個人編輯器喜好設定。 每當您使用沒有 *.editorconfig* 檔案的程式碼基底時，或 *.editorconfig* 檔案不覆寫特定設定時，就會套用那些設定。 縮排樣式&mdash;定位點或空格，即為這類喜好設定的範例之一。
+您可以在專案或程式碼基底中新增 [EditorConfig](http://editorconfig.org/) 檔案，強制使用程式碼基底的所有人都使用一致的編碼樣式。 EditorConfig 設定優先於全域 Visual Studio 文字編輯器設定。 這表示您可以自訂每個程式碼基底，以使用該專案專屬的文字編輯器設定。 您仍然可以在 Visual Studio 的 [選項] 對話方塊中設定自己的個人編輯器喜好設定。 每當您使用沒有 *.editorconfig* 檔案的程式碼基底時，或 *.editorconfig* 檔案不覆寫特定設定時，就會套用那些設定。 縮排樣式&mdash;定位點或空格，即為這類喜好設定的範例之一。
 
 許多程式碼編輯器和 IDE，包括 Visual Studio，都支援 EditorConfig 設定。 它是隨附於程式碼的可攜式元件，甚至可以強制規範 Visual Studio 之外的編碼樣式。
 
