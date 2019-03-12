@@ -10,16 +10,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8101697ad225becb1fcddc5ee737fc4c6195cc7
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 95cbdeb9a4e8a3f98fefa7650b36cc4dd59ed550
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796578"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221537"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing 的新功能
 
-本主題列出從 Visual Studio 2017 15.3 版開始，各版 Visual Studio 中新增至 Live Unit Testing 的新功能。 如需如何使用 Live Unit Testing 的概觀，請參閱 [Visual Studio 2017 的 Live Unit Testing](live-unit-testing.md)。
+本主題列出從 Visual Studio 2017 15.3 版開始，各版 Visual Studio 中新增至 Live Unit Testing 的新功能。 如需如何使用 Live Unit Testing 的概觀，請參閱 [Visual Studio 的 Live Unit Testing](live-unit-testing.md)。
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-154"></a>Live Unit Testing for Visual Studio 2017 15.4 版的新功能
 
@@ -45,7 +45,7 @@ ms.locfileid: "56796578"
 
 - .NET Core 和 .NET Standard 支援。 您可以在以 C# 或 Visual Basic 所撰寫的 .NET Core 和 .NET Standard 方案上使用 Live Unit Testing。
 
--  效能改善。 在 Live Unit Testing 下完成首次完整建置和執行測試之後，您會發現效能已大幅加快。 後續於相同方案上啟動 Live Unit Testing 時，您也會察覺到顯著的效能改善。 我們現在會持續保存 Live Unit Testing 所產生的資料，並使用最新檢查盡可能重複使用它。
+- 效能改善。 在 Live Unit Testing 下完成首次完整建置和執行測試之後，您會發現效能已大幅加快。 後續於相同方案上啟動 Live Unit Testing 時，您也會察覺到顯著的效能改善。 我們現在會持續保存 Live Unit Testing 所產生的資料，並使用最新檢查盡可能重複使用它。
 
 除了這些主要新增功能之外，Live Unit Testing 也包含下列增強功能：
 
@@ -58,10 +58,12 @@ ms.locfileid: "56796578"
 - 已將數個額外的功能表項目新增至 [測試]/[Live Unit Testing] 的功能表列底下。 [重設清除] 會刪除保存資料並再次產生它。 [選項] 會跳至 [工具]/[選項]/[Live Unit Testing]/[一般]。
 
 - 您現在可以使用下列屬性，以在原始程式碼中指定要從 Live Unit Testing 排除已設定目標的測試方法：
+
    - 針對 xUnit：`[Trait("Category", "SkipWhenLiveUnitTesting")]`
    - 針對 NUnit：`[Category("SkipWhenLiveUnitTesting")]`
    - 針對 MSTest：`[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>另請參閱
+
 - [Live Unit Testing 簡介](live-unit-testing-intro.md)
-- [Visual Studio 2017 的 Live Unit Testing](live-unit-testing.md)
+- [Visual Studio 的 Live Unit Testing](live-unit-testing.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe76cc490523325c8334ad7ada3273f101e0bbc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2be76e5af3dafd3eebb8649fa82db6a14d46bb0d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626124"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323532"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>如何：使用並行視覺化檢視標記 SDK
 本主題說明如何使用並行視覺化檢視 SDK 建立範圍和寫入旗標、訊息和警示。
@@ -78,7 +78,7 @@ ms.locfileid: "56626124"
 
      ![包含 3 個自訂標記系列的並行視覺化檢視](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
-### <a name="to-use-visual-basic-or-c"></a>使用 Visual Basic 或 C# #
+### <a name="to-use-visual-basic-or-c"></a>使用 Visual Basic 或 C\#
 
 1.  在應用程式中加入並行視覺化檢視 SDK 支援。 如需詳細資訊，請參閱[視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)。
 

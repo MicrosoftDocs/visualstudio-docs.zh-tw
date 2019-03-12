@@ -1,6 +1,5 @@
 ---
-title: Visual Studio 2017 的進階功能
-titleSuffix: ''
+title: 進階功能
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: gewarren
@@ -8,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da502b2f527f811f20bbce299107cac20517048a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fe209a28f74866cf13b6dbd58b01eac2450557b2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317831"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221771"
 ---
-# <a name="features-of-visual-studio-2017"></a>Visual Studio 2017 的功能
+# <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
 [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)一文提供 Visual Studio 的基本介紹。 本文描述的功能可能更適合資深開發人員或已十分熟悉 Visual Studio 的開發人員使用。
 
@@ -23,9 +22,19 @@ ms.locfileid: "56317831"
 
 Visual Studio 的模組安裝程式可讓您選擇並安裝「工作負載」。 工作負載是您慣用程式設計語言或平台所需的功能群組。 此策略有助於將 Visual Studio 安裝項的資源使用量降到更低，這意謂著它的安裝和更新速度也更快。
 
-如果您尚未安裝 Visual Studio 2017，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+::: moniker range="vs-2017"
 
-若要深入了解如何在您的系統上設定 Visual Studio，請參閱 [Install Visual Studio 2017](../install/install-visual-studio.md)。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+
+::: moniker-end
+
+若要深入了解如何在您的系統上設定 Visual Studio，請參閱[安裝 Visual Studio](../install/install-visual-studio.md)。
 
 ## <a name="create-cloud-enabled-apps-for-azure"></a>建立已啟用雲端的 Azure 應用程式
 
@@ -99,7 +108,7 @@ Visual Studio 中的 [SQL Server 物件總管] 提供與 SQL Server Management S
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>管理您的原始程式碼並與其他人共同作業
 
-您可以在任何提供者所裝載的 Git 儲存機制 (包括 GitHub) 中管理您的原始程式碼。 或使用 [Azure DevOps Services](/azure/devops/index) 為整個專案同時管理程式碼與 Bug 及工作項目。 若要深入了解如何在 Visual Studio 中使用 Team Explorer 來管理 Git 存放庫，請參閱 [Get Started with Git and Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) (開始使用 Git 和 Azure Repos)。 Visual Studio 也有其他內建原始檔控制功能。 如需詳細資訊，請參閱 [New Git Features in Visual Studio 2017 (blog)](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/) (Visual Studio 2017 的新 Git 功能 (部落格))。
+您可以在任何提供者所裝載的 Git 儲存機制 (包括 GitHub) 中管理您的原始程式碼。 或使用 [Azure DevOps Services](/azure/devops/index) 為整個專案同時管理程式碼與 Bug 及工作項目。 若要深入了解如何在 Visual Studio 中使用 Team Explorer 來管理 Git 存放庫，請參閱 [Get Started with Git and Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) (開始使用 Git 和 Azure Repos)。 Visual Studio 也有其他內建原始檔控制功能。 如需深入了解，請參閱 [New Git Features in Visual Studio](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/) (Visual Studio 的新 Git 功能) 部落格。
 
 Azure DevOps Services 是雲端式服務，可規劃、裝載，自動化和部署軟體，以及在小組中啟用共同作業。 Azure DevOps Services 支援 Git 存放庫 (分散式版本控制) 和 Team Foundation 版本控制 (集中式版本控制)。 它們支援可連續建置和發行 (CI/CD) 儲存於版本控制系統中程式碼的管線。 Azure DevOps Services 也支援 Scrum、CMMI 和敏捷式開發方法。
 
@@ -127,4 +136,4 @@ Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理
 
 - [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017 的新功能](../ide/whats-new-visual-studio-2017.md)
-- [Visual Studio 2019 Preview 的新功能](../ide/whats-new-visual-studio-2019.md)
+- [Visual Studio 2019 的新功能](../ide/whats-new-visual-studio-2019.md)

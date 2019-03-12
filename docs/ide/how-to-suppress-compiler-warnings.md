@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e9f995c8fc1107da7bc90b230eddc265e6082b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b228bbacb69449803847847932163a05f3cf5310
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913128"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323970"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>HOW TO：隱藏編譯器警告
+# <a name="how-to-suppress-compiler-warnings"></a>作法：隱藏編譯器警告
 
 您可以簡化組建記錄檔，方法是篩選掉一或多個類型的編譯器警告。 例如，您可能只想檢閱當您將組建記錄檔詳細等級設定為 [一般]、[詳細資料] 或 [診斷] 時所產生的部分輸出。 如需詳細資訊層級的詳細資訊，請參閱[如何：檢視、儲存及設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
 
-## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>隱藏 Visual C# 或 F# 的特定警告 #
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>隱藏 Visual C# 或 F\# 的特定警告
 
 使用 [組建] 屬性頁隱藏 C# 或 F# 專案的特定警告。
 

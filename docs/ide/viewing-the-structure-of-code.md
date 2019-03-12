@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e535ca76fd7b85d8267c0c002ffc8090430c5f0d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926368"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323863"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>使用不同的工具視窗來檢視程式碼結構
 
@@ -126,7 +126,19 @@ ms.locfileid: "55926368"
 
 [物件瀏覽器] 視窗會顯示專案中程式碼的描述。
 
-您可以使用視窗頂端的下拉式清單來篩選您要檢視的元件。 自訂元件可包含受控碼可執行檔、程式庫組件、類型程式庫及 *.ocx* 檔案。 無法加入 C + + 自訂元件。 自訂設定儲存在 Visual Studio 使用者應用程式目錄 *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat* 中。
+您可以使用視窗頂端的下拉式清單來篩選您要檢視的元件。 自訂元件可包含受控碼可執行檔、程式庫組件、類型程式庫及 *.ocx* 檔案。 無法加入 C + + 自訂元件。
+
+::: moniker range="vs-2017"
+
+自訂設定儲存在 Visual Studio 使用者應用程式目錄 *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat* 中。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+自訂設定儲存在 Visual Studio 使用者應用程式目錄 *%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat* 中。
+
+::: moniker-end
 
 [物件瀏覽器] 的左窗格會顯示組件。 您可以展開組件以顯示其包含的命名空間，然後展開命名空間以顯示其包含的類型。 選取類型時，其成員 (例如屬性及方法) 將會列於右窗格中。 右下方的窗格會顯示有關所選項目的詳細資訊。
 

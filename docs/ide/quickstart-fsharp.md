@@ -11,14 +11,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 166ff1fae5cbc494fe287a47a2983fc52364493b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7fba20b7b01ab0c55e9bef9b4bcc62813cab895
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934662"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323273"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>快速入門：使用 Visual Studio 以 F# 建立您的第一個 ASP.NET Core Web 服務
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>快速入門：使用 Visual Studio 以 F\# 建立您的第一個 ASP.NET Core Web 服務
 
 在 Visual Studio 中 F# 的這個 5-10 分鐘簡介中，您將建立 F# ASP.NET Core Web 應用程式。
 
@@ -28,7 +28,7 @@ ms.locfileid: "55934662"
 
 首先，您將建立 ASP.NET Core Web API 專案。 在新增任何項目之前，專案類型隨附的範本檔案可構成功能性 Web 服務！
 
-1. 開啟 Visual Studio 2017。
+1. 開啟 Visual Studio。
 
 2. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 

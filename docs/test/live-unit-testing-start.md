@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4676727f70b8065aee34578f563f286bc85bcb25
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3082f2a3acaac7b874f98d675ae28d11ea0374ae
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950301"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223766"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>在 Visual Studio 中開始使用 Live Unit Testing
 
@@ -34,13 +34,13 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 
 ## <a name="prerequisites"></a>必要條件
 
-本教學課程需要您已安裝具有 .NET Core 2.0 工作負載的 Visual Studio 2017 Enterprise Edition 15.3 版。
+本教學課程需要您已安裝具有 .NET Core 2.0 工作負載的 Visual Studio Enterprise Edition。
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>建立方案和類別庫專案
 
 從建立名為 `UtilityLibraries` 的 Visual Studio 方案開始，而此方案包含單一 .NET Standard 類別庫專案 `StringLibrary`。 您可以使用 C# 或 Visual Basic 撰寫 `StringLibrary`。
 
-方案只是一或多個專案的容器。 若要建立方案，請開啟 Visual Studio 2017，並執行下列作業：
+方案只是一或多個專案的容器。 若要建立方案，請開啟 Visual Studio，並執行下列作業：
 
 1. 從頂層 Visual Studio 功能表中，依序選取 [檔案] > 、[新增] > [專案]。
 

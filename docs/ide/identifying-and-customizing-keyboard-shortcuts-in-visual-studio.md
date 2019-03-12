@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a54f18e6e69fd71f1d46205903728a909c668383
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1dc65b29bafd67fa8265feb75b533d66504d33c8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935715"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222057"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>識別及自訂 Visual Studio 中的鍵盤快速鍵
 
@@ -106,11 +106,21 @@ ms.locfileid: "55935715"
 
 4. 選取 [鍵盤] 核取方塊，然後選擇 [下一步] 按鈕。
 
-    ![僅匯出自訂的鍵盤快速鍵](../ide/media/exportshortcuts.png)
+   ![僅匯出自訂的鍵盤快速鍵](../ide/media/exportshortcuts.png)
 
 5. 在 [您要將設定檔命名為什麼?] 和 [在此目錄中儲存我的設定檔] 方塊中，保留預設值或指定不同的值，然後選擇 [完成] 按鈕。
 
-    根據預設，您的快速鍵會儲存在 *%USERPROFILE%\Documents\Visual Studio 2017\Settings* 資料夾的檔案中。 當您匯出設定時，檔案的名稱會反映日期，其副檔名為 *.vssettings*。
+::: moniker range="vs-2017"
+
+根據預設，您的快速鍵會儲存在 *%USERPROFILE%\Documents\Visual Studio 2017\Settings* 資料夾的檔案中。 當您匯出設定時，檔案的名稱會反映日期，其副檔名為 *.vssettings*。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+根據預設，您的捷徑會儲存在 *%USERPROFILE%\Documents\Visual Studio 2019\Settings* 資料夾的檔案中。 當您匯出設定時，檔案的名稱會反映日期，其副檔名為 *.vssettings*。
+
+::: moniker-end
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>只匯入鍵盤快速鍵
 

@@ -9,19 +9,19 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e631c5b4d9b02b38939e6a1aba6337f633f83fa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e73e6939dd5b2cad382d56616e7cf1f2d64934e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921532"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223711"
 ---
-# <a name="live-unit-testing-with-visual-studio-2017"></a>Visual Studio 2017 的 Live Unit Testing
+# <a name="live-unit-testing-with-visual-studio"></a>Visual Studio 的 Live Unit Testing
 
 當您開發應用程式時，Live Unit Testing 會在背景自動執行任何受影響的單元測試，並立即在 Visual Studio IDE 中呈現即時的結果和程式碼涵蓋範圍。 當您修改程式碼時，Live Unit Testing 會針對您的變更如何影響現有測試，以及您所增加的新程式碼是否受到一或多個現有測試所涵蓋提供反饋。 這可在您進行錯誤修正或新增功能時，委婉地提醒您撰寫單元測試。
 
 > [!NOTE]
-> Live Unit Testing 適用於以 Visual Studio 2017 Enterprise Edition 中的 .NET Core 或 .NET Framework 為目標的 C# 和 Visual Basic 專案。
+> Live Unit Testing 適用於以 Visual Studio Enterprise Edition 中 .NET Core 或 .NET Framework 為目標的 C# 和 Visual Basic 專案。
 
 當您使用 Live Unit Testing 進行測試時，Live Unit Testing 會保存有關測試狀態的資料。 它使用保存資料的能力可讓 Live Unit Testing 提供卓越的效能，同時隨著程式碼變更動態執行您的測試。
 
@@ -51,7 +51,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 </tr>
 </table>
 
-如果您的舊版 MSTest 測試專案參考 `Microsoft.VisualStudio.QualityTools.UnitTestFramework`，而且您不想要移至新版 MSTest NuGet 套件，請升級至 Visual Studio 2017 15.4 版。
+如果您的舊版 MSTest 測試專案參考 `Microsoft.VisualStudio.QualityTools.UnitTestFramework`，但您不想要移至新版 MSTest NuGet 套件，請升級至 Visual Studio 2017 15.4 版或更新版本。
 
 在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 若要執行此動作，您可以在啟用 Live Unit Testing 之前，明確地建置方案 (從最上層的 Visual Studio 功能表中依序選取 [建置] > [重建方案])，或是在方案中還原套件 (以滑鼠右鍵按一下方案，然後選取 [還原 NuGet 套件])。
 
@@ -178,8 +178,8 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 若要在單元測試中選取個別專案，請在啟動 Live Unit Testing 之後執行下列動作：
 
-1.  以滑鼠右鍵按一下 [方案總管] 中的方案，然後依序選擇 [即時測試] > [排除] 來排除整個方案。
-1.  以滑鼠右鍵按一下您想要包含於測試中的每個測試專案，然後依序選擇 [即時測試] > [包含]。
+1. 以滑鼠右鍵按一下 [方案總管] 中的方案，然後依序選擇 [即時測試] > [排除] 來排除整個方案。
+1. 以滑鼠右鍵按一下您想要包含於測試中的每個測試專案，然後依序選擇 [即時測試] > [包含]。
 
 **從程式碼編輯器視窗排除個別測試**
 
@@ -200,4 +200,4 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 - [程式碼測試工具](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Live Unit Testing 部落格](https://go.microsoft.com/fwlink/?linkid=842514) \(英文\)
 - [即時單元測試常見問題集](live-unit-testing-faq.md)
-- [Channel 9 影片：Live Unit Testing in Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105) (Visual Studio 2017 中的 Live Unit Testing)
+- [Channel 9 影片：Live Unit Testing in Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105) (Visual Studio 中的 Live Unit Testing)

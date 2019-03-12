@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b8552adfd4a7f94c58bcb32a60fbe8cd4c9323b
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 6ccf9ebad32a82f88740e4f7dc0c920d348b6d48
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796526"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222996"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>步驟 1：建立 Windows Forms 應用程式專案
 
@@ -33,7 +33,7 @@ ms.locfileid: "56796526"
 3. 在範本清單中，選擇 [Windows Forms 應用程式 (.NET Framework)]。 將新表單命名為 **PictureViewer**，然後選擇 [確定] 按鈕。
 
     >[!NOTE]
-    >如果您未看到 [Windows Forms 應用程式 (.NET Framework)] 範本，請使用 Visual Studio 安裝程式來安裝 [.NET 桌面開發] 工作負載。<br/><br/>![Visual Studio 安裝程式中的 .NET 桌面開發工作負載](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> 如需詳細資訊，請參閱[安裝 Visual Studio 2017](../install/install-visual-studio.md) 頁面。
+    >如果您未看到 [Windows Forms 應用程式 (.NET Framework)] 範本，請使用 Visual Studio 安裝程式來安裝 [.NET 桌面開發] 工作負載。<br/><br/>![Visual Studio 安裝程式中的 .NET 桌面開發工作負載](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> 如需詳細資訊，請參閱[安裝 Visual Studio](../install/install-visual-studio.md) 頁面。
 
      Visual Studio 會為您的程式建立方案。 方案會做為您程式所需的全部專案和檔案的容器。 本教學課程稍後將會詳細說明這些詞彙。
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98c93f193a17c8581694079ce0c9d7add0341bd1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 55c4514ddcc312a6d3ae72f1fc9b5f573ac562b5
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925978"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324217"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 
@@ -43,7 +43,7 @@ ms.locfileid: "55925978"
 
 ## <a name="prerequisites"></a>必要條件
 
-- 已安裝 [.NET 桌面開發] 工作負載的 Visual Studio。
+已安裝 [.NET 桌面開發] 工作負載的 Visual Studio。
 
 ## <a name="install-software-on-the-computers"></a>在電腦上安裝軟體
 
@@ -59,13 +59,13 @@ ms.locfileid: "55925978"
 
 本節說明如何將特定檔案、編譯器、建置工具、MSBuild 資產和登錄設定從主機電腦複製到組建電腦。 這些指示假設您已在主機電腦上的預設位置安裝 Visual Studio；如果您安裝在其他位置，請據以調整步驟。
 
-- 在 x86 電腦上，預設位置為 *C:\Program Files\Microsoft Visual Studio 11.0*
-- 在 x64 電腦上，預設位置為 *C:\Program Files (x86)\Microsoft Visual Studio 11.0*
+- 在 x86 電腦上，預設位置為 *C:\Program Files\Microsoft Visual Studio*
+- 在 x64 電腦上，預設位置為 *C:\Program Files (x86)\Microsoft Visual Studio*
 
 請注意，*Program Files* 資料夾的名稱取決於所安裝的作業系統。 在 x86 電腦上，此名稱會是 *Program Files*；在 x64 電腦上，此名稱會是 *Program Files (x86)*。 不論系統架構為何，本逐步解說會將 *Program Files* 資料夾稱為 *%ProgramFiles%*。
 
 > [!NOTE]
-> 在組建電腦上，所有相關檔案都必須在相同的磁碟機上；不過，該磁碟機的磁碟機代號可能會與 Visual Studio 安裝在主機電腦上之磁碟機的磁碟機代號不同。 在任何情況下，當您建立登錄項目時，您必須考慮檔案的位置，如本文件稍後所述。
+> 在組建電腦中，所有相關檔案都必須位於相同的磁碟機上。 不過，該磁碟機的磁碟機代號可能會與安裝在主機電腦之 Visual Studio 磁碟機的磁碟機代號不同。 在任何情況下，當您建立登錄項目時，您必須考慮檔案的位置，如本文件稍後所述。
 
 ### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>將 Windows SDK 檔案複製到組建電腦
 
@@ -85,7 +85,7 @@ ms.locfileid: "55925978"
 
    - %ProgramFiles%\Windows Kits\8.0\References\
 
-     如果您還有下列其他 Windows 8 套件...
+   如果您還有下列其他 Windows 8 套件...
 
    - Microsoft Windows 評定及部署套件
 
@@ -93,7 +93,7 @@ ms.locfileid: "55925978"
 
    - Microsoft Windows 硬體認證套件
 
-     ...這些套件可能已將檔案安裝到上一個步驟所列的 *%ProgramFiles%\Windows Kits\8.0* 資料夾中，而且其授權條款可能不允許這些檔案的組建伺服器權限。 請檢查每個已安裝 Windows 套件的授權條款，以確認檔案是否可以複製到組建電腦。 如果授權條款不允許組建伺服器權限，則從組建電腦移除檔案。
+   ...這些套件可能已將檔案安裝到上一個步驟所列的 *%ProgramFiles%\Windows Kits\8.0* 資料夾中，而且其授權條款可能不允許這些檔案的組建伺服器權限。 請檢查每個已安裝 Windows 套件的授權條款，以確認檔案是否可以複製到組建電腦。 如果授權條款不允許組建伺服器權限，則從組建電腦移除檔案。
 
 2. 將下列資料夾從主機電腦遞迴複製到組建電腦：
 
@@ -101,11 +101,11 @@ ms.locfileid: "55925978"
 
     - %ProgramFiles%\Common Files\Merge Modules\
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\VC\
+    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\VC\
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\
+    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\Tools\ProjectComponents\
 
-    - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\
+    - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\
 
     - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\
 
@@ -113,23 +113,23 @@ ms.locfileid: "55925978"
 
 3. 將下列檔案從主機電腦複製到組建電腦：
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE\msobj110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE\mspdb110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE\mspdbcore.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe
+    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE\mspdbsrv.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE\msvcdis110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe
+    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\Tools\makehm.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat
+    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\Tools\VCVarsQueryRegistry.bat
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat
+    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\Tools\vsvars32.bat
 
-4. 下列 Visual C++ 執行階段程式庫只有在您於組建電腦上執行建置輸出時才需要，例如作為自動化測試的一部分。 這些檔案通常位於 *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86* 或 *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64* 資料夾下的子資料夾中，視系統架構而定。 在 x86 系統上，將 x86 二進位檔複製到 *Windows\System32* 資料夾。 在 x64 系統上，將 x86 二進位檔複製到 *Windows\SysWOW64* 資料夾，並將 x64 二進位檔複製到 *Windows\System32* 資料夾。
+4. 下列 Visual C++ 執行階段程式庫只有在您於組建電腦上執行建置輸出時才需要，例如作為自動化測試的一部分。 這些檔案通常位於 *%ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\VC\redist\x86* 或 *%ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\VC\redist\x64* 資料夾下的子資料夾中，視系統架構而定。 在 x86 系統上，將 x86 二進位檔複製到 *Windows\System32* 資料夾。 在 x64 系統上，將 x86 二進位檔複製到 *Windows\SysWOW64* 資料夾，並將 x64 二進位檔複製到 *Windows\System32* 資料夾。
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -254,7 +254,7 @@ ms.locfileid: "55925978"
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>使用 vcvarsall.bat 設定環境變數
 
-在組建電腦上開啟 [命令提示字元] 視窗，然後執行 *%Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat*。 您可以使用命令列引數，指定要使用的工具組：x86、x64 Native 或 x64 Cross 編譯器。 如果您未指定命令列引數，則會使用 x86 工具組。
+在組建電腦上開啟 [命令提示字元] 視窗，然後執行 *%Program Files%\Microsoft Visual Studio\\\<版本>\\\<版次>\VC\vcvarsall.bat*。 您可以使用命令列引數，指定要使用的工具組：x86、x64 Native 或 x64 Cross 編譯器。 如果您未指定命令列引數，則會使用 x86 工具組。
 
 下表描述 *vcvarsall.bat* 支援的引數：
 
@@ -270,7 +270,7 @@ ms.locfileid: "55925978"
 
 1. 若要手動設定命令列環境，將此路徑新增至 PATH 環境變數：
 
-    - %Program Files%\Microsoft Visual Studio 11.0\Common7\IDE
+    - %Program Files%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE
 
 2. 或者，您也可以將下列路徑新增至 PATH 變數，以更輕鬆地使用 MSBuild 來建置方案。
 
@@ -294,9 +294,9 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<版本>\\\<版次>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
 2. 若要將組件安裝到 GAC，請在組建電腦上尋找 *gacutil.exe* (通常位於 %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\ 中)。 如果找不到此資料夾，請重複本逐步解說之[將檔案從主機電腦複製到組建電腦](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)一節中的步驟。
 
@@ -364,7 +364,7 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
     <VCTargetsPath11>$(DepotRoot)MSBuild\Microsoft.Cpp\v4.0\v110\</VCTargetsPath11>
     <MSBuildExtensionsPath>$(DepotRoot)MSBuild</MSBuildExtensionsPath>
     <MSBuildExtensionsPath32>$(DepotRoot)MSBuild</MSBuildExtensionsPath32>
-    <VCInstallDir_110>$(DepotRoot)Microsoft Visual Studio 11.0\VC\</VCInstallDir_110>
+    <VCInstallDir_110>$(DepotRoot)Microsoft Visual Studio\2017\Enterprise\VC\</VCInstallDir_110>
     <VCInstallDir>$(VCInstallDir_110)</VCInstallDir>
     <WindowsKitRoot>$(DepotRoot)Windows Kits\</WindowsKitRoot>
     <WindowsSDK80Path>$(WindowsKitRoot)</WindowsSDK80Path>
@@ -381,13 +381,29 @@ MSBuild 必須將一些額外的組件安裝到組建電腦上的 GAC。
     <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Partner.AutoImports.props))\Partner.AutoImports.props"/>
     ```
 
+::: moniker range="vs-2017"
+
 6. 變更命令列環境，如下所示：
 
     - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」
 
     - 設定 path=%path%;電腦上的 MSBuild 位置;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
 
-       如需原生 64 位元建置，請指向 64 位元 MSBuild。
+       如需原生 64 位元建置，請指向 64 位元版本的 MSBuild。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+6. 變更命令列環境，如下所示：
+
+    - 設定 Depot=「您在步驟 1 中建立的 Depot 目錄位置」
+
+    - 設定 path=%path%;*電腦上的 MSBuild 位置*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
+
+       如需原生 64 位元建置，請指向 64 位元版本的 MSBuild。
+
+::: moniker-end
 
 ## <a name="see-also"></a>另請參閱
 

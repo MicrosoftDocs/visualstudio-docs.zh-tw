@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e4652bb6a0ea1ec138138e6966ab005362a45d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7faad2a4d10b304cd273f51559fb67dbd0f876a2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937516"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223243"
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
@@ -53,7 +53,7 @@ ms.locfileid: "55937516"
    ![[新增專案] 對話方塊](./media/vside-newproject-templates-list.png)
 
    > [!NOTE]
-   > 所顯示的可用語言和專案範本清單取決於您執行的 Visual Studio 版本及安裝的工作負載。 若要了解如何安裝額外的工作負載，請參閱[透過新增或移除工作負載和元件來修改 Visual Studio 2017](../install/modify-visual-studio.md)。
+   > 所顯示的可用語言和專案範本清單取決於您執行的 Visual Studio 版本及安裝的工作負載。 若要了解如何安裝額外的工作負載，請參閱[透過新增或移除工作負載和元件來修改 Visual Studio](../install/modify-visual-studio.md)。
 
 2. 顯示您要使用之程式設計語言的範本清單，方法是選擇語言名稱旁的三角形，然後選擇專案類型。
 

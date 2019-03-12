@@ -1,6 +1,6 @@
 ---
-title: 評估陳述式命令
-ms.date: 11/04/2016
+title: EvaluateStatement
+ms.date: 02/25/2019
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -13,51 +13,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bdaf41aa34367d656e2bfb5694f3b615dbe3b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7eff96d1b413ea10b1274eb7d7938148727acbc
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911737"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953051"
 ---
 # <a name="evaluate-statement-command"></a>評估陳述式命令
+
 評估並顯示指定的陳述式。
 
 ## <a name="syntax"></a>語法
 
 ```cmd
-Debug.EvaluateStatement text
+>Debug.EvaluateStatement text
 ```
 
 ## <a name="arguments"></a>引數
- `text` 必要項。 要評估的陳述式。
 
-## <a name="remarks"></a>備註
- 用來輸入 **EvaluateStatement** 命令的視窗可判斷是否將等號 (=) 解譯為比較運算子或指派運算子。
+`text`
 
- 在 [命令] 視窗中，等號 (=) 會解譯為比較運算子。 因此；例如，如果 `a` 和 `b` 變數的值不同，則命令
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- 會傳回值 `false`。
-
- 相較之下，在 [即時運算] 視窗中，等號 (=) 會解譯為指派運算子。 因此；例如，命令
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- 會將 `b` 變數的值指派給變數 `a`。
+必要項。 要評估的陳述式。
 
 ## <a name="example"></a>範例
 
 ```cmd
->Debug.EvaluateStatement(a+b)
+>Debug.EvaluateStatement args.Length
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [列印命令](../../ide/reference/print-command.md)
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
