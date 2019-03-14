@@ -1,6 +1,6 @@
 ---
 title: 在 UWP 應用程式中偵錯 HTML 和 CSS |Microsoft Docs
-ms.date: 07/17/2017
+ms.date: 07/17/2018
 ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: e1f430268549da74c1039899e828d37a21ac336c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3bb136367d08fa430080cb26290fff9aa4e15d13
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721052"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526252"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 應用程式中偵錯 HTML 和 CSS
 

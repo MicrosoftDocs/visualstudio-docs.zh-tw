@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 264ac57a0d159b9cdd2627d7a62372fa070e31de
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715176"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526226"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>如何：在機器碼中設定執行緒名稱
-在所有 Visual Studio 版本中，都可以將執行緒命名。 執行緒命名適合用來識別感興趣的執行緒**執行緒**執行中處理序進行偵錯時的視窗。 具有名為執行緒也可以很有幫助執行透過損毀傾印的檢查和分析效能會擷取使用各種工具，事後進行偵錯時。
+在所有 Visual Studio 版本中，都可以將執行緒命名。 執行緒命名適合用來識別感興趣的執行緒**執行緒**執行中處理序進行偵錯時的視窗。 具有 名為執行緒也可以很有幫助執行透過損毀傾印的檢查和分析效能會擷取使用各種工具，事後進行偵錯時。
 
 ## <a name="ways-to-set-a-thread-name"></a>如何設定執行緒名稱
 
@@ -40,7 +40,7 @@ ms.locfileid: "56715176"
 * 執行緒名稱也會顯示當您使用其他工具中，這類[WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)偵錯工具和有[Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer)效能分析器。
 
 警告：
-* 執行緒名稱只會顯示在 Visual Studio 2017 15.6 版及更新版本。
+* 執行緒名稱只會顯示在 Visual Studio 2017 15.6 版和更新版本的。
 * 當事後進行偵錯損毀傾印檔案時，則執行緒名稱才看得到，如果損毀在 Windows 10 1607年版、 Windows Server 2016 或更新版本的 Windows 上建立。
 
 *範例：*

@@ -2,7 +2,7 @@
 title: 在 Visual Studio 2019 中移植、移轉及升級專案
 titleSuffix: ''
 description: 為在舊版 Visual Studio 中建立之專案所提供的 Visual Studio 2019 支援參考，以及 Visual Studio 決定何時遷移專案的方式。
-ms.date: 12/06/2018
+ms.date: 02/26/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 9c5bf46f3626f5929f615437781495cd766f6ff4
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 7447dff5d8855fb141ab66f23ab9bd9b272c3d0d
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428787"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683355"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019"></a>Visual Studio 2019 的專案移轉與升級參考
 
@@ -71,7 +71,7 @@ ms.locfileid: "57428787"
 | Silverlight | Visual Studio 2019 Preview 不支援 Silverlight 專案。 若要維護 Silverlight 應用程式，請繼續使用 Visual Studio 2015。 |
 | SQL - Redgate | Visual Studio 安裝程式不再隨附 Redgate 的 SQL Change Automation Core (之前稱為 ReadyRoll Core)、SQL Prompt Core 和 SQL Search。<br/><br/>您可以繼續使用 Visual Studio 2017 來取得這些功能。 在 Visual Studio 2019 Preview 中，您可以升級為 Redgate SQL Toolbelt 中所提供的付費 SQL Change Automation 和 SQL Prompt 產品。|
 | SQL Server Reporting Services 和 SQL Server Analysis Services (SSRS、SSDT、SSAS、MSAS) | 這些專案類型的支援會透過 Visual Studio 資源庫中的兩個延伸模組提供：[Microsoft Analysis Services Modeling Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) 與 [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 SSDT 支援也隨附於 Visual Studio 2019 Preview 中的資料儲存和處理工作負載。 |
-| SQL Server Integration Services (SSIS) | 透過 SQL Server Data Tools (SSDT) 可取得 Visual Studio 2019 Preview 的支援。 如需詳細資訊，請參閱 [SQL Server Integration Services 部落格](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/)。 |
+| SQL Server Integration Services (SSIS) | Visual Studio 2019 Preview 的支援即將推出。 您可從 [SSIS 官方部落格](https://blogs.msdn.microsoft.com/ssis/)取得最新消息。 |
 | 測試視窗延伸模組 | 在 Visual Studio 2019 中，會移除一些先前標記為公用，但從未正式記載的測試視窗 API。 許多 API 已在 Visual Studio 2017 中標示為已淘汰，可為延伸模組維護人員提供初期警告。 據我們所知，很少有延伸模組相依於這些 API。 如需詳細資訊和更新，請檢視[已淘汰之測試相關 API 的完整清單](https://github.com/Microsoft/vstest/issues/1830)。 如果這會影響您的案例，請在[開發人員社群](https://developercommunity.visualstudio.com)中讓我們知道。 |
 | Visual C++ | 您可以使用 Visual Studio 2019 Preview 來處理在較早之 Visual Studio 版本 (自 Visual Studio 2010 起) 中建立的專案。 當您第一次開啟專案時，可以選擇要升級到最新的編譯器和工具組，或是繼續使用原本的編譯器和工具組。 如果您選擇繼續使用原本的編譯器和工具組，Visual Studio 2019 Preview 不會修改專案檔，並且會使用較早之 Visual Studio 安裝的工具組來建置您的專案。 保留原本的選項表示您仍然可以視需要在原始的 Visual Studio 版本中開啟該專案。 如需詳細資訊，請參閱[在 Visual Studio 中使用原生多目標來建置舊專案](/cpp/porting/use-native-multi-targeting)。 |
 | Visual Studio 擴充性/VSIX | 系統會更新含 MinimumVersion 14.0 或以下版本的專案，以宣告 MinimumVersion 15.0；如此一來，即無法在舊版的 Visual Studio 中開啟專案。 若要允許在舊版本中開啟專案，請將 MinimumVersion 設定為 `$(VisualStudioVersion)`。 另請參閱[如何：將擴充性專案移轉至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。 |

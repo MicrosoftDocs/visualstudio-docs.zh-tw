@@ -2,34 +2,37 @@
 title: 更新 Visual Studio 2017
 titleSuffix: ''
 description: 了解如何將 Visual Studio 逐步更新至最新版本。
-ms.date: 04/23/2018
+ms.date: 03/09/2019
 ms.custom: seodec18
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
 helpviewer_keywords:
-- update Visual Studio
-- change visual studio
-- changing Visual Studio
+- update [Visual Studio]
+- change [Visual Studio]
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e972c86f4a3dfecdcd36d2aec768e0ea3b0065
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d0808708360db6aa35cb20ce42c75fea04f5131b
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953954"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737007"
 ---
-# <a name="update-visual-studio-2017-to-the-most-recent-release"></a>將 Visual Studio 2017 更新至最新版本
+# <a name="update-visual-studio-to-the-most-recent-release"></a>將 Visual Studio 更新至最新版本
 
-我們建議您更新到[最新版本](/visualstudio/releasenotes/vs2017-relnotes)的 Visual Studio 2017，使您可以持續取得最新的功能、修正及功能改進。
+::: moniker range="vs-2017"
 
-如果您想要在功能正式發行之前搶先試用它們，也請考慮下載下個版本的[預覽版本](/visualstudio/releasenotes/vs2017-preview-relnotes)。
+我們建議您更新到[最新版本](/visualstudio/releasenotes/vs2017-relnotes/)的 Visual Studio 2017，使您可以持續取得最新的功能、修正及功能改進。
+
+如果您希望試用下一個版本，請考慮一併下載 [Visual Studio 2019](//visualstudio/releases/2019/release-notes/) 的候選版。
 
 > [!IMPORTANT]
 > 您必須以具有安裝、更新或修改 Visual Studio 之系統管理權限的帳戶登入。 如需詳細資訊，請參閱[使用者權限和 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
-
+>
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[更新 Visual Studio for Mac](/visualstudio/mac/update)。
 
@@ -43,11 +46,11 @@ ms.locfileid: "55953954"
 
 1. 儲存您的工作。
 
-2. 選擇通知旗標以開啟 [通知] 中樞，然後選擇您要安裝的更新。
+1. 選擇通知旗標以開啟 [通知] 中樞，然後選擇您要安裝的更新。
 
    ![使用 [通知] 中樞更新 Visual Studio 2017](media/vs-install-notifications-hub-15dot6.png "Visual Studio 2017 中的 [通知] 中樞")
 
-3. 當 [更新] 對話方塊開啟時，選擇 [立即更新]。
+1. 當 [更新] 對話方塊開啟時，選擇 [立即更新]。
 
     ![使用 [通知] 中樞的 [更新] 對話方塊來更新 Visual Studio 2017](media/vs-update-now-from-notifications-hub.png "Visual Studio 中 [通知] 中樞的 [更新] 對話方塊")
 
@@ -66,11 +69,11 @@ ms.locfileid: "55953954"
 
 1. 儲存您的工作。
 
-2. 選擇 [說明] > [檢查更新]。
+1. 選擇 [說明] > [檢查更新]。
 
      ![Visual Studio 15.6 版中的新 [說明] 功能表](media/vs-help-menu-check-for-updates.png "Visual Studio 15.6 版中的新 [說明] 功能表")
 
-3. 當 [更新] 對話方塊開啟時，選擇 [立即更新]。
+1. 當 [更新] 對話方塊開啟時，選擇 [立即更新]。
 
    更新會以如上一節所述的方式執行，然後 Visual Studio 會在完成後重新啟動。
 
@@ -83,14 +86,14 @@ ms.locfileid: "55953954"
 
 1. 儲存您的工作。
 
-2. 開啟安裝程式。 Visual Studio 安裝程式可能會需要更新才能繼續執行。
+1. 開啟安裝程式。 Visual Studio 安裝程式可能會需要更新才能繼續執行。
 
    > [!NOTE]
    > 若要在執行 Windows 10 的電腦上尋找安裝程式，您可在字母 **V** 底下找到 **Visual Studio 安裝程式**，或是在字母 **M** 底下找到 **Microsoft Visual Studio 安裝程式**。
 
-3. 在安裝程式的 [產品] 頁面上，尋找您已安裝的 Visual Studio 版本。
+1. 在安裝程式的 [產品] 頁面上，尋找您已安裝的 Visual Studio 版本。
 
-4. 如果有更新可供使用，您會看到 [更新] 按鈕。 (安裝程式可能需要幾秒鐘的時間來判斷是否有更新可供使用)。
+1. 如果有更新可供使用，您會看到 [更新] 按鈕。 (安裝程式可能需要幾秒鐘的時間來判斷是否有更新可供使用)。
 
    選擇 [更新] 按鈕，以安裝更新。
 
@@ -110,11 +113,11 @@ ms.locfileid: "55953954"
 
    ![使用通知中樞更新 Visual Studio 2017](media/notifications-hub.png "Visual Studio 中的通知中樞")
 
-2. 選擇 ["Visual Studio Update" is available] (有 "Visual Studio 更新" 可供使用)，以開啟 [延伸模組和更新] 對話方塊。
+1. 選擇 ["Visual Studio Update" is available] (有 "Visual Studio 更新" 可供使用)，以開啟 [延伸模組和更新] 對話方塊。
 
    ![使用通知中樞更新 Visual Studio 2017](media/notifications-hub-select.png "Visual Studio 中的通知中樞")
 
-3. 在 [延伸模組和更新] 對話方塊中，選擇 [更新] 按鈕。
+1. 在 [延伸模組和更新] 對話方塊中，選擇 [更新] 按鈕。
 
    ![使用通知中樞更新 Visual Studio 2017](media/notifications-extensions-and-updates.png "Visual Studio 中的 [擴充功能和更新] 對話方塊")
 
@@ -141,9 +144,9 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
    > [!NOTE]
    > 若要在執行 Windows 10 的電腦上尋找安裝程式，您可在字母 **V** 底下找到 **Visual Studio 安裝程式**，或是在字母 **M** 底下找到 **Microsoft Visual Studio 安裝程式**。
 
-2. 在安裝程式的 [產品] 頁面上，尋找您已安裝的 Visual Studio 版本。
+1. 在安裝程式的 [產品] 頁面上，尋找您已安裝的 Visual Studio 版本。
 
-3. 如果有更新可供使用，您會看到 [更新] 按鈕。 (安裝程式可能需要幾秒鐘的時間來判斷是否有更新可供使用)。
+1. 如果有更新可供使用，您會看到 [更新] 按鈕。 (安裝程式可能需要幾秒鐘的時間來判斷是否有更新可供使用)。
 
    選擇 [更新] 按鈕，以安裝更新。
 
@@ -156,3 +159,47 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 * [修改 Visual Studio 2017](modify-visual-studio.md)
 * [解除安裝 Visual Studio 2017](uninstall-visual-studio.md)
 * [更新 Visual Studio for Mac](/visualstudio/mac/update)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+我們建議您更新到[最新版本](/visualstudio/releases/2019/release-notes/)的 Visual Studio 2019，使您可以持續取得最新的功能、修正及功能改進。
+
+> [!IMPORTANT]
+> 您必須以具有安裝、更新或修改 Visual Studio 之系統管理權限的帳戶登入。 如需詳細資訊，請參閱[使用者權限和 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
+>
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[更新 Visual Studio for Mac](/visualstudio/mac/update)。
+
+## <a name="update-visual-studio-2019"></a>更新 Visual Studio 2019
+
+以下是使用 Visual Studio 安裝程式來更新 Visual&nbsp;Studio&nbsp;2019&nbsp;Preview 或 Visual&nbsp;Studio&nbsp;2019&nbsp;RC 的方式。
+
+1. 開啟安裝程式。
+
+     ![開啟 Visual Studio 安裝程式](media/vs2019-visual-studio-installer.png "開啟 Visual Studio 安裝程式")
+
+   您可能需要更新安裝程式才能繼續。 若是如此，請遵循提示。
+
+1. 請在安裝程式中尋找您安裝的 Visual Studio 版本。
+
+   舉例來說，如果您之前安裝了 Visual&nbsp;Studio Community&nbsp;2019&nbsp;RC 且其有更新，安裝程式中就會出現**有可用的更新**訊息。
+
+     ![請選取您要更新的 Visual Studio 2019 版本](media/vs2019-update-visual-studio-community-rc.png "請選取您要更新的 Visual Studio 2019 版本")
+
+1. 選擇 [更新] 按鈕，以安裝更新。
+
+    ![請選取 [更新] 按鈕來安裝更新](media/vs2019-choose-update-visual-studio-community-rc.png "請選取 [更新] 按鈕來安裝更新")
+
+1. 更新完成後，請選取 [啟動] 來啟動 Visual Studio。
+
+    ![請選取 [啟動] 按鈕來啟動 Visual Studio](media/vs2019-choose-launch-visual-studio-community-rc.png "請選取 [啟動] 按鈕來啟動 Visual Studio")
+
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+
+## <a name="see-also"></a>另請參閱
+
+* [更新 Visual Studio for Mac](/visualstudio/mac/update)
+
+::: moniker-end

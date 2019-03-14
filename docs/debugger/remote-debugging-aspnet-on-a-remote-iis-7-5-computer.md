@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4cefca3c40b36c24fa5c1c78c7b6bca3d2a599ba
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2abc097809e05a8e7072e0dd6adfa06af23736fa
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720026"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526696"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>在執行 IIS 的遠端電腦上對 ASP.NET 進行遠端偵錯
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝並部署您的應用程式的所在的電腦上執行遠端工具，然後連結至您執行的應用程式從 Visual Studio。
@@ -48,7 +48,7 @@ ms.locfileid: "56720026"
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>建立 ASP.NET 4.5.2 Visual Studio 電腦上的應用程式
 
-1. 建立新的 MVC ASP.NET 應用程式。 (**檔案 > 新增 > 專案**，然後選取<strong>視覺化C#> Web > ASP.NET Web 應用程式。在 [ASP.NET 4.5.2]</strong> 範本區段中選取 **[MVC]**。 請確定**啟用 Docker 支援**未選取且**驗證**設定為**不需要驗證**。 將專案命名為**MyASPApp**。)
+1. 建立新的 MVC ASP.NET 應用程式。 (**檔案 > 新增 > 專案**，然後選取<strong>視覺化C#> Web > ASP.NET Web 應用程式。在 ASP.NET 4.5.2</strong>範本區段中，選取**MVC**。 請確定**啟用 Docker 支援**未選取且**驗證**設定為**不需要驗證**。 將專案命名為**MyASPApp**。)
 
 2. 開啟 HomeController.cs 檔案，並在 `About()` 方法中設定中斷點。
 
@@ -184,7 +184,7 @@ ms.locfileid: "56720026"
 2. 在 Visual Studio 中，按一下**偵錯 > připojit k procesu** （Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...** Shift+Alt+P
+    > 在 Visual Studio 2017 和更新版本中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...** Shift+Alt+P
 
 3. 將 [限定詞] 欄位設定為 **\<遠端電腦名稱>:4022**。
 4. 按一下 [重新整理]。

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a53d29e7d72c10b3b7b9f295cb5b7adebab45e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8f8bc5a19e3cb91634b5a61e0b3e917fb0a3f9a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949157"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736998"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>選項對話方塊、環境、快速啟動
 
@@ -36,9 +36,9 @@ ms.locfileid: "55949157"
 |分類|快速鍵|快速鍵描述|
 |--------------|--------------| - |
 |最近使用|@mru<br /><br /> 例如：`@mru font`|最多顯示您 [最近用過的函式] 的五個項目。|
-|Menus|@menu<br /><br /> 例如：`@menu font`|限制搜尋功能表項目。|
+|Menus|@menu<br /><br /> 例如：`@menu project`|限制搜尋功能表項目。|
 |選項|@opt<br /><br /> 例如：`@opt font`|限制搜尋 [選項] 對話方塊中的設定。|
-|文件|@doc<br /><br /> 例如：`@doc font`|限制搜尋符合搜尋準則之開啟文件的檔案名稱和路徑，但不會搜尋檔案本身內的文字。|
+|文件|@doc<br /><br /> 例如：`@doc program.cs`|限制搜尋符合搜尋準則之開啟文件的檔案名稱和路徑，但不會搜尋檔案本身內的文字。|
 
 > [!NOTE]
 > 您可以在 [選項] 對話方塊的 [一般] 和 [鍵盤] 頁面上，變更快速鍵。

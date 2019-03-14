@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: c378067a9078ab3e1c4c845412c886227a3c9197
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 4da1fcce5d959c3c5a46902dc4e425524b041b10
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324703"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525946"
 ---
 ## <a name="express-for-windows-desktop"></a>Express for Windows Desktop
 
@@ -28,7 +28,7 @@ ms.locfileid: "57324703"
 元件識別碼 | 名稱 | 版本 | 相依性類型
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | ClickOnce 發行 | 15.8.27825.0 | 必要
-Microsoft.Component.HelpViewer | 說明檢視器 | 15.6.27323.2 | 必要
+Microsoft.Component.HelpViewer | 說明檢視器 | 15.9.28307.421 | 必要
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必要
 Microsoft.Component.VC.Runtime.OSSupport | UWP 的 Visual C++ 執行階段 | 15.6.27406.0 | 必要
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目標套件 | 15.6.27406.0 | 必要
@@ -60,7 +60,7 @@ Microsoft.VisualStudio.Component.VC.Tools.ARM | 適用於 ARM 的 Visual C++ 編
 Microsoft.VisualStudio.Component.VC.Tools.ARM64 | 適用於 ARM64 的 Visual C++ 編譯器與程式庫 | 15.9.28230.55 | 必要
 Microsoft.VisualStudio.Component.VisualStudioData | 資料來源與服務參考 | 15.6.27406.0 | 必要
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | 必要
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | 必要
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | 必要
 
 ## <a name="unaffiliated-components"></a>非附屬元件
 
