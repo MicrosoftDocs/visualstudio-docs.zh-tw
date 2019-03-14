@@ -6,22 +6,22 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: b60003c1b0f0ceabddae37a31b184cec49b37bc9
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: d258a6d58571fb3fae718433a307471119a526bf
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324793"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57524909"
 ---
 ## <a name="feedback-client"></a>Feedback Client
 
 **識別碼：** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**描述：** 意見反應用戶端可讓專案關係人針對 Azure DevOps Services 或 Team Foundation Server 提供豐富的意見反應。
+**描述：** 意見反應用戶端可讓專案關係人針對 Visual Studio Team Services 或 Team Foundation Server 提供豐富的意見反應。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 

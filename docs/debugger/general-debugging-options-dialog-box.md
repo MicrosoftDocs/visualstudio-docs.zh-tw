@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0347e2948538b8d4149ce6228656d190c5f972a6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e97f2f844c53a6bf26fecc4559b65ae69970c6b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689300"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526535"
 ---
 # <a name="general-debugging-options"></a>一般偵錯選項
 
@@ -54,7 +54,7 @@ ms.locfileid: "56689300"
 
 **啟用中斷點篩選條件**： 可讓您設定中斷點篩選條件，它們會影響特定處理程序、 執行緒或電腦。
 
-**使用新的例外狀況協助程式**： 可讓例外狀況協助程式 (Visual Studio 2017)，它會取代例外狀況助理。
+**使用新的例外狀況協助程式**： 可讓取代例外狀況助理的例外狀況協助程式。 （例外狀況協助程式支援從 Visual Studio 2017 開始）
 
 > [!NOTE]
 > Managed 程式碼，這個選項先前已呼叫**啟用例外狀況助理**。
@@ -158,7 +158,7 @@ ms.locfileid: "56689300"
 
 如果您使用較舊版本的 Visual Studio，則可能會存在一些其他選項。
 
-**啟用例外狀況助理**： 針對 managed 程式碼，可讓例外狀況助理。 在 Visual Studio 2017 中，例外狀況協助程式會取代例外狀況助理。
+**啟用例外狀況助理**： 針對 managed 程式碼，可讓例外狀況助理。 從 Visual Studio 2017 中，例外狀況協助程式取代例外狀況助理。
 
 **回溯呼叫堆疊上未處理例外狀況**： 會導致**呼叫堆疊**回復的呼叫堆疊點未處理的例外狀況發生之前的視窗。
 

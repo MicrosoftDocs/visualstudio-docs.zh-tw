@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7a17431fa2ad85c660164110ab005fa00053ff17
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683593"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525397"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 ASP.NET 進行偵錯
 
@@ -94,7 +94,7 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
 ## <a name="navigate-code"></a>巡覽程式碼
 
-您可以透過不同的命令來指示偵錯工具繼續。 我們將顯示 Visual Studio 2017 中新增的實用程式碼導覽命令。
+您可以透過不同的命令來指示偵錯工具繼續。 我們會示出 Visual Studio 2017 開始可用的實用程式碼導覽命令。
 
 在中斷點處暫停時，將滑鼠游標移至陳述式 `return c2` 上方，直到出現綠色的 [執行至點選處] 按鈕 ![執行至點選處](../debugger/media/dbg-tour-run-to-click.png)，然後按 [執行至點選處] 按鈕。
 

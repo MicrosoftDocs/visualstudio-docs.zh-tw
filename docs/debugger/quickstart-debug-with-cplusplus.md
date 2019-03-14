@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1f346e02bfc2eee1556a4f8ade3a472a36860daa
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716515"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526512"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 C++ 進行偵錯
 
@@ -94,7 +94,7 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
 ## <a name="navigate-code"></a>巡覽程式碼
 
-您可以透過不同的命令來指示偵錯工具繼續。 我們將顯示 Visual Studio 2017 中新增的實用程式碼導覽命令。
+您可以透過不同的命令來指示偵錯工具繼續。 我們會示出 Visual Studio 2017 開始可用的實用程式碼導覽命令。
 
 在中斷點處暫停時，將滑鼠游標移至陳述式 `c1.push_back(20)` 上方，直到出現綠色的 [執行至點選處] 按鈕 ![執行至點選處](../debugger/media/dbg-tour-run-to-click.png "RunToClick")，然後按 [執行至點選處] 按鈕。
 

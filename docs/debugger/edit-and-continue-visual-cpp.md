@@ -1,6 +1,6 @@
 ---
 title: 編輯後繼續 （Visual c + +） |Microsoft Docs
-ms.date: 05/31/2017
+ms.date: 05/31/2018
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3afb55c41f48c6d5e5a153c12cd364d130129d79
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1122e59d804387172d14f5ac9b24b6fad42213f9
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222352"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526525"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 您可以在 Visual C++ 專案中，使用 [編輯後繼續]。 請參閱[支援的程式碼變更 （c + +）](../debugger/supported-code-changes-cpp.md)如編輯後繼續的限制的相關資訊。

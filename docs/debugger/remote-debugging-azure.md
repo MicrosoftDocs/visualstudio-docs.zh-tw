@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 9d1a64da1e27f5d3504608441306e820b4547539
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 161683697ee66286e1d43e6730584f0660bd390c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710821"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526460"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 中的 Azure 中的 IIS 上的遠端偵錯 ASP.NET Core
 
@@ -198,7 +198,7 @@ ms.locfileid: "56710821"
 2. 在 Visual Studio 中，按一下**偵錯 > připojit k procesu** （Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...** Shift+Alt+P
+    > 在 Visual Studio 2017 和更新版本中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...** Shift+Alt+P
 
 3. 將 [限定詞] 欄位設定為 **\<遠端電腦名稱>:4022**。
 4. 按一下 [重新整理]。

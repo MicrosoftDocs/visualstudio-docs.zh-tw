@@ -12,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26635f9f6680931d02993613f96dcfcbe623af1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: acfa1e274b7c0744c2d9968682960b1cd50e0044
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919673"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736923"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>逐步解說：分析 C/C++ 程式碼的缺失
 
@@ -67,7 +67,7 @@ ms.locfileid: "55919673"
 
      警告 C6230:語意不相同的類型之間發生不當隱含轉換： 在布林內容中使用 HRESULT。
 
-     程式碼編輯器中顯示的函式中造成警告的行`bool``ProcessDomain()`。 這則警告表示 HRESULT 正在使用 'if' 陳述式中所預期布林結果的位置。
+     程式碼編輯器中顯示的函式中造成警告的行`bool ProcessDomain()`。 這則警告表示 HRESULT 正在使用 'if' 陳述式中所預期布林結果的位置。
 
 3. 使用 SUCCEEDED 巨集，以更正這個警告。 您的程式碼看起來應該像下列程式碼：
 

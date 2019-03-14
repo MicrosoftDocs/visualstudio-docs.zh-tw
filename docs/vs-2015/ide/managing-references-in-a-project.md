@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3da4501d472949a89ad9120a07da99aaff3ebd1b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763646"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567211"
 ---
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ ms.locfileid: "54763646"
 ## <a name="project-to-project-references"></a>專案對專案參考  
  專案對專案參考是包含組件的專案參考；您可以使用 [專案]  索引標籤建立專案對專案參考。當給定專案路徑時，Visual Studio 即可找出組件。  
   
- 當您有會產生組件的專案時，您應該參考該專案，而不要使用檔案參考 (請參閱下文)。 專案對專案參考的優點是它會在組建系統中建立專案之間的相依性。 如果自上次建置的參考專案已變更，則將會建立相依專案。 檔案參考不會建立組建相依性，因此可以建置參考專案而不需建置相依專案，且參考可能會遭到淘汰。 (也就是專案可以參考先前建置的專案版本。)這會導致在 bin 目錄中需要單一 DLL 的數個版本，但這不可能達成。 發生這個衝突時，您會看到類似[警告：無法將專案 'project' 中的相依性 'file' 複製至執行目錄，因為它會覆寫參考 'file'](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied) 的訊息。 如需詳細資訊，請參閱[針對中斷參考進行疑難排解](../ide/troubleshooting-broken-references.md)以及[如何：建立和移除專案相依性](../ide/how-to-create-and-remove-project-dependencies.md)。  
+ 當您有會產生組件的專案時，您應該參考該專案，而不要使用檔案參考 (請參閱下文)。 專案對專案參考的優點是它會在組建系統中建立專案之間的相依性。 如果自上次建置的參考專案已變更，則將會建立相依專案。 檔案參考不會建立組建相依性，因此可以建置參考專案而不需建置相依專案，且參考可能會遭到淘汰。 (也就是專案可以參考先前建置的專案版本。)這會導致在 bin 目錄中需要單一 DLL 的數個版本，但這不可能達成。 發生這個衝突時，您會看到類似[警告：無法將專案 'project' 中的相依性 'file' 複製至執行目錄，因為它會覆寫參考 'file'](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md) 的訊息。 如需詳細資訊，請參閱[針對中斷參考進行疑難排解](../ide/troubleshooting-broken-references.md)以及[如何：建立和移除專案相依性](../ide/how-to-create-and-remove-project-dependencies.md)。  
   
 > [!NOTE]
 >  如果某個專案的 .NET Framework 目標版本為 4.5 版，而其他專案的目標版本為第 2 版、第 3 版、3.5 版或 4.0 版，則會建立檔案參考而非專案對專案參考。  

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 962657d19026f85e98b1f1d22241aa57013d7df6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 66132724b5ece0570ead7c12949dfc5650521b29
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834068"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567379"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio 中的 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio
 
 - 若要使用 Apache Cordova 來建立跨平台應用程式，請[取得 Visual Studio Tools for Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606)。
 
-- 若要建立 [Windows 市集](http://dev.windows.com/develop)、[Windows Phone](http://dev.windows.com/develop) 及通用應用程式 (支援這兩種平台)，請[取得工具](http://dev.windows.com/develop/downloads)。
+- 若要建立 [Windows 市集](http://dev.windows.com/develop)、[Windows Phone](http://dev.windows.com/develop) 及通用應用程式 (支援這兩種平台)，請[取得工具](https://developer.microsoft.com/windows/downloads)。
 
 - 若要建立雲端式服務，請參閱 [Microsoft Azure 網站](http://azure.microsoft.com/documentation/)。
 
@@ -44,15 +44,15 @@ JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio
 |功能|說明|
 |-------------|-----------------|
 |類別|新的語法支援[類別](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript)宣告。|
-|Promise|[Promise](/visualstudio/scripting-docs/javascript/reference/promise-object-javascript) 使非同步撰寫程式碼更方便、更俐落。 同時支援 Promise 建構函式及 `all` 和 `race` 公用程式方法。|
-|迭代器|現在您可以反覆查看遞迴的物件 (包括陣列、類似陣列的物件和迭代器) ，叫用自訂的反覆項目攔截程序，來執行每個相異的屬性值陳述式。 如需詳細資訊，請參閱[迭代器和產生器](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript)。 **注意：** 目前仍未支援產生器。|
+|Promise|[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) 使非同步撰寫程式碼更方便、更俐落。 同時支援 Promise 建構函式及 `all` 和 `race` 公用程式方法。|
+|迭代器|現在您可以反覆查看遞迴的物件 (包括陣列、類似陣列的物件和迭代器) ，叫用自訂的反覆項目攔截程序，來執行每個相異的屬性值陳述式。 如需詳細資訊，請參閱[迭代器和產生器](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript)。 **注意：** 目前還不支援產生器。|
 |Arrow 函式|Arrow 函式 (=>) 提供簡寫語法，用於 `function` 關鍵字，以語彙 `this` 繫結為特色。|
-|內建物件的新方法|[Array 物件](/visualstudio/scripting-docs/javascript/reference/array-object-javascript)、[Math 物件](/visualstudio/scripting-docs/javascript/reference/math-object-javascript)、[Number 物件](/visualstudio/scripting-docs/javascript/reference/number-object-javascript)、[Object 物件](/visualstudio/scripting-docs/javascript/reference/object-object-javascript)及 [String 物件](/visualstudio/scripting-docs/javascript/reference/string-object-javascript)等內建物件包含許多新的公用程式函式和屬性，可用來操作和檢查資料。|
+|內建物件的新方法|[Array 物件](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)、[Math 物件](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math)、[Number 物件](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)、[Object 物件](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)及 [String 物件](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)等內建物件包含許多新的公用程式函式和屬性，可用來操作和檢查資料。|
 |物件常值的增強功能|物件現在支援計算的屬性、簡潔的方法定義，以及簡寫語法，用於其值已初始化為相同名稱變數的屬性。 如需詳細資訊，請參閱[建立物件](/visualstudio/scripting-docs/javascript/creating-objects-javascript)。|
-|Proxy|[Proxy](/visualstudio/scripting-docs/javascript/reference/proxy-object-javascript) 可為物件啟用自訂行為。|
+|Proxy|[Proxy](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) 可為物件啟用自訂行為。|
 |剩餘參數|剩餘參數可讓您將函式呼叫中連續的引數轉為陣列。 如需詳細資訊，請參閱[函式](/visualstudio/scripting-docs/javascript/functions-javascript)。|
-|Spread 運算子|[spread 運算子](/visualstudio/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript) (`…`) 會把可逐一查看的運算式擴充成個別的引數。 例如，`a.b(…array)` 和 `a.b.apply(a, array)` 大致上相同。|
-|Symbol|[Symbol](/visualstudio/scripting-docs/javascript/reference/symbol-object-javascript) 物件可允許由其他程式碼將屬性新增到現有的物件，而不會干擾現有的物件屬性，也不會有非預期的可視性和其他未經協調的新增。|
-|範本字串|[範本字串](/visualstudio/scripting-docs/javascript/advanced/template-strings-javascript)是一種字串常值，可讓運算式被評估並與字串常值串連。|
-|Unicode 增強功能|已改善 Unicode 支援。 例如，新的逸出序列格式支援 astral 字碼指標 (超過 4 個十六進位數字的字碼指標)。 如需詳細資訊，請參閱[特殊字元](/visualstudio/scripting-docs/javascript/advanced/special-characters-javascript)。|
-|WeakSet|[WeakSet](/visualstudio/scripting-docs/javascript/reference/weakset-object-javascript) 是一種物件集合，如果沒有任何其他地方參考它，就會由記憶體回收。|
+|Spread 運算子|[spread 運算子](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) (`…`) 會把可逐一查看的運算式擴充成個別的引數。 例如，`a.b(…array)` 和 `a.b.apply(a, array)` 大致上相同。|
+|Symbol|[Symbol](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) 物件可允許由其他程式碼將屬性新增到現有的物件，而不會干擾現有的物件屬性，也不會有非預期的可視性和其他未經協調的新增。|
+|範本字串|[範本字串](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals)是一種字串常值，可讓運算式被評估並與字串常值串連。|
+|Unicode 增強功能|已改善 Unicode 支援。 例如，新的逸出序列格式支援 astral 字碼指標 (超過 4 個十六進位數字的字碼指標)。 如需詳細資訊，請參閱[特殊字元](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions#Types_of_special_characters)。|
+|WeakSet|[WeakSet](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) 是一種物件集合，如果沒有任何其他地方參考它，就會由記憶體回收。|

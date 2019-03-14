@@ -1,5 +1,5 @@
 ---
-title: HOW TO：在混合模式偵錯 |Microsoft Docs
+title: 如何： 在混合模式偵錯 |Microsoft Docs
 ms.date: 11/05/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1da9b01c32b82948718ef5045005eb0d9beb37
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968527"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526720"
 ---
-# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>HOW TO：在混合模式偵錯 (C#，c + +、 Visual Basic)
+# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>如何： 在混合模式偵錯 (C#，c + +、 Visual Basic)
 
 下列程序說明如何啟用 managed 和原生程式碼在一起，也就是會在混合模式偵錯的偵錯。 有兩種的混合模式偵錯的案例：
 
@@ -34,7 +34,7 @@ ms.locfileid: "54968527"
 
 您可以讓呼叫的應用程式專案中的 managed 和原生偵錯工具**屬性**頁面。 原生和 managed 應用程式之間的不同設定。
 
-如果您沒有存取呼叫端應用程式專案，您可以偵錯 DLL 專案的 DLL。 您不需要混合的模式偵錯 DLL 專案。 如需詳細資訊，請參閱[＜How to：從 DLL 專案進行偵錯](../debugger/how-to-debug-from-a-dll-project.md)。
+如果您沒有存取呼叫端應用程式專案，您可以偵錯 DLL 專案的 DLL。 您不需要混合的模式偵錯 DLL 專案。 如需詳細資訊，請參閱[如何從 DLL 專案進行偵錯](../debugger/how-to-debug-from-a-dll-project.md) \(機器翻譯\)。
 
 > [!NOTE]
 > 在本文中，根據您的 Visual Studio 設定或版本中的可能會與不同的對話方塊和命令，您會看到。 若要變更您的設定，請選擇**工具** > **匯入和匯出設定**。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
@@ -62,7 +62,7 @@ ms.locfileid: "54968527"
    ![啟用機器碼偵錯](../debugger/media/dbg-mixed-mode-from-csharp.png "啟用機器碼偵錯")
 
 > [!NOTE]
-> 在 Visual Studio 2017 的大多數版本中，您必須使用 *launchSettings.json* 檔案 (而不是專案屬性) 為 .NET Core 應用程式中的機器碼啟用混合模式偵錯。 如需詳細資訊，請參閱 <<c0> [ 偵錯 managed 和原生程式碼](../debugger/how-to-debug-managed-and-native-code.md)。
+> 在大部分的 Visual Studio 2017 中 Visual Studio 中，您必須使用*launchSettings.json*檔案而不是專案屬性，以啟用混合模式偵錯的.NET Core 應用程式中的原生程式碼。 如需詳細資訊，請參閱 <<c0> [ 偵錯 managed 和原生程式碼](../debugger/how-to-debug-managed-and-native-code.md)。
 
 ## <a name="see-also"></a>另請參閱
 
