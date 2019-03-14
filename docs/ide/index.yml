@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 003e6ce539b5e7a1ac77c757ad5556db62813228
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 804260be1adbfa0a7188088543f83eac14a1e0fc
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222463"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872101"
 documentType: LandingData
 title: Visual Studio IDE 文件
 metadata:
@@ -26,7 +26,7 @@ sections:
   - type: list
     style: cards
     className: cardsM
-    columns: 3
+    columns: 4
     items:
     - href: ../install/install-visual-studio.md
       html: <p></p>
@@ -43,6 +43,11 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
       title: Visual Studio 2017 的新功能
+    - href: ../ide/whats-new-visual-studio-2019.md
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+      title: Visual Studio 2019 的新功能
 - title: 教學課程
   items:
   - type: paragraph
