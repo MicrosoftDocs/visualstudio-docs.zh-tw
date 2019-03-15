@@ -1,6 +1,6 @@
 ---
 title: CA1008:列舉值中應該要有值為零的成員
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1008
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8d7646ddb294cef27b58b5b5e212c33b11fb46
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4bb79d2944bdb49c59fd53fb30e1497c57c5c516
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955293"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868281"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008:列舉值中應該要有值為零的成員
 
@@ -36,7 +36,9 @@ ms.locfileid: "55955293"
 
 ## <a name="cause"></a>原因
 
-列舉型別沒有套用<xref:System.FlagsAttribute?displayProperty=fullName>不會定義其值為零或已套用的列舉成員<xref:System.FlagsAttribute>定義的成員，其值為零，但其名稱不是 'None' 或列舉定義零值的多個成員。
+列舉型別沒有套用<xref:System.FlagsAttribute?displayProperty=fullName>不會定義具有零值的成員。 或列舉型別具有套用<xref:System.FlagsAttribute>定義的成員，其值為零，但其名稱不是 'None'。 或者，您也可以列舉會定義多個值為零的成員。
+
+根據預設，此規則只會查看外部可見的列舉型別，但這[可設定](#configurability)。
 
 ## <a name="rule-description"></a>規則描述
 
@@ -51,6 +53,16 @@ ms.locfileid: "55955293"
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
 請勿隱藏除了先前所提供的旗標屬性列舉此規則的警告。
+
+## <a name="configurability"></a>設定功能
+
+如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
+
+```
+dotnet_code_quality.ca1008.api_surface = private, internal
+```
+
+此類別 （設計） 中，您可以設定此選項，只是這項規則，所有規則，或所有的規則。 如需詳細資訊，請參閱 <<c0> [ 設定的 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="example"></a>範例
 

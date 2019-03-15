@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 946dcfecb43aa5a0390f752b5e40cb5869bb1b68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1194dba5069913d01a6e4858801ea2890db94224
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635198"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871600"
 ---
 # <a name="author-a-windows-installer-package"></a>撰寫的 Windows Installer 套件
 資料磁碟機的 Windows 安裝程式的模型。 而非撰寫程序的指令碼，以將檔案複製和寫入登錄項目，例如，您撰寫資料列和資料行包含檔案和登錄資料的資料庫資料表中。
@@ -47,7 +47,7 @@ ms.locfileid: "56635198"
 
    Windows Installer XML (WiX) 工具組建置 XML 原始程式檔的 Windows Installer 封裝。 WiX 工具組是 Microsoft 的開放原始碼專案。 您可以下載原始程式碼和可執行檔[Wix 工具組](http://sourceforge.net/projects/wix)。
 
-   適用於整合的商業產品[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]利用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，請參閱[ http://visualstudiogallery.com ](http://visualstudiogallery.com/)。
+   適用於整合的商業產品[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]利用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，請參閱[Visual Studio Marketplace](https://marketplace.visualstudio.com/)。
 
 ## <a name="see-also"></a>另請參閱
 - [使用 Windows Installer 安裝 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

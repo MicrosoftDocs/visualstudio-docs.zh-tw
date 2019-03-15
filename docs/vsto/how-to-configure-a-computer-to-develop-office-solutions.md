@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff441de5d3643a1c8c4e9b57a98c7a5563d1ea62
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9ab7ffdf6e9323b3d4ee67b2bf237b271abb1a7d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653966"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869343"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>HOW TO：設定電腦以開發 Office 方案
   若要設定開發電腦，讓您可以使用 Visual Studio 中的 Microsoft Office Developer Tools，請遵循本主題中的指示。 您必須擁有開發電腦上的系統管理權限，才能執行這些步驟。
@@ -34,7 +34,7 @@ ms.locfileid: "56653966"
 3.  如果您有 Visual Studio 的英文版，但使用非英文設定的 Windows，您可以安裝[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]語言套件，查看[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中與 Windows 相同語言的訊息。 非英文版的 Visual Studio 會自動安裝語言套件。 語言套件是可從[Microsoft 下載中心](http://go.microsoft.com/fwlink/?LinkId=140386)。
 
 ## <a name="see-also"></a>另請參閱
-- [中的 Office 程式開發最新消息](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)
+
 - [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [如何：安裝 Visual Studio Tools for Office runtime 可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 - [如何：安裝 Office 主要 interop 組件](../vsto/how-to-install-office-primary-interop-assemblies.md)

@@ -21,15 +21,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fdfb851b2fc0fad6e6c394f30697dd39aa078d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2142b73dc44b16e8e7ac149b7377959ae3c5cfcc
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961672"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526434"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
-您可以偵錯已部署在不同電腦的 Visual Studio 應用程式。 若要這樣做，您可以使用 Visual Studio 遠端偵錯工具。
+您可以針對已部署在不同電腦上的 Visual Studio 應用程式進行偵錯。 若要這樣做，您可以使用 Visual Studio 遠端偵錯工具。
 
 如需有關遠端偵錯的深入指示，請參閱下列主題。
 
@@ -57,11 +57,22 @@ ms.locfileid: "54961672"
 
 您可以找到遠端偵錯工具 (*msvsmon.exe*) Visual Studio Community、 Professional 或 Enterprise 已安裝的電腦上。 某些情況下，設定遠端偵錯的最簡單方式是從檔案共用執行遠端偵錯工具 (msvsmon.exe)。 如需使用方式限制，請參閱遠端偵錯工具的 [說明] 頁面 (**協助 > 使用量**遠端偵錯工具中)。
 
-1. 尋找*msvsmon.exe*比對您的 Visual Studio 版本的目錄中。 Visual Studio enterprise 2017:
+1. 尋找*msvsmon.exe*比對您的 Visual Studio 版本的目錄中：
 
-      *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+   ::: moniker range=">=vs-2019"
 
-      *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+   *Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+
+   *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
 
 2. 共用**遠端偵錯工具**Visual Studio 電腦上的資料夾。
 
@@ -96,9 +107,9 @@ ms.locfileid: "54961672"
 
  如果您想要設定遠端偵錯工具 as a service，請遵循下列步驟。
 
-1. 尋找 [遠端偵錯工具組態精靈]  (rdbgwiz.exe)。 (這是和 [遠端偵錯工具] 不同的應用程式)。僅當您安裝遠端工具時，才可使用。 它不會隨 Visual Studio 一同安裝。
+1. 尋找 [遠端偵錯工具組態精靈]  (rdbgwiz.exe)。 (這是和「遠端偵錯工具」不同的應用程式)。僅當您安裝遠端工具時，才可使用。 它不會隨 Visual Studio 一同安裝。
 
-2. 開始執行 [組態精靈]。 當第一頁出現時，按一下 [下一步] 。
+2. 開始執行 [組態精靈]。 當第一頁出現時，按一下 [下一步]。
 
 3. 核取 [以服務方式執行 Visual Studio 2015 遠端偵錯工具]  核取方塊。
 

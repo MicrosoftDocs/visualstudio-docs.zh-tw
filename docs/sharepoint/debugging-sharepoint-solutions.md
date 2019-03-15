@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d375386da4d62117105bc732425a2678e0a48d0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640229"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873106"
 ---
 # <a name="debug-sharepoint-solutions"></a>偵錯 SharePoint 方案
   您可以使用偵錯 SharePoint 方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 當您啟動偵錯，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]專案會將檔案部署到 SharePoint 伺服器，然後開啟 網頁瀏覽器中的 SharePoint 網站的執行個體。 下列各節將說明如何偵錯 SharePoint 應用程式[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
--   [啟用偵錯](#EnableDebug)
+-   [啟用偵錯](#enable-debugging)
 
--   [F5 偵錯和部署程序](#Deployment)
+-   [F5 偵錯和部署程序](#f5-debug-and-deployment-process)
 
--   [SharePoint 專案功能](#Features)
+-   [SharePoint 專案功能](#sharepoint-project-features)
 
--   [偵錯工作流程](#Workflow)
+-   [偵錯工作流程](#debug-workflows)
 
--   [偵錯功能事件接收器](#FeatureEvents)
+-   [偵錯功能事件接收器](#debug-feature-event-receivers)
 
--   [啟用增強型偵錯資訊](#EnhancedDebug)
+-   [啟用 ehanced 偵錯資訊](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>啟用偵錯
  當您第一次偵錯 SharePoint 方案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，對話方塊中，系統會通知您，web.config 檔案未設定為啟用偵錯。 （當您安裝 SharePoint server 時，會建立 web.config 檔案。 如需詳細資訊，請參閱 <<c0> [ 處理 Web.config 檔案](http://go.microsoft.com/fwlink/?LinkID=149266)。)對話方塊可讓您選擇執行專案但不偵錯，或修改的 web.config 檔案，以啟用偵錯。 如果您選擇第一個選項，專案將會正常執行。 如果您選擇第二個選項，則 web.config 檔案會設定為：
@@ -137,7 +137,7 @@ ms.locfileid: "56640229"
 
  若要停用自動啟動 sharepoint 功能，並允許適當的功能事件接收器進行偵錯，來設定專案的值**現用部署組態**屬性設**無啟用**進行偵錯之前。 接著，您在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中開始對 SharePoint 應用程式進行偵錯之後，請手動啟用 SharePoint 中的功能。 若要啟用的功能，請開啟**站台動作**功能表，在 SharePoint 中，選擇**站台設定**，選擇**管理網站功能**連結，然後再選擇  **Activate**此功能，以繼續偵錯正常旁的按鈕。
 
-## <a name="enable-enhanced-debug-information"></a>啟用增強型偵錯資訊
+## <a name="enable-enhanced-debugging-information"></a>啟用增強型偵錯資訊
  由於之間可能很複雜的互動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]程序 (devenv.exe)， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 主機處理序 (*vssphost4.exe*)，SharePoint，與 WCF 層，診斷所發生的錯誤時建置、 部署及其他等等，可以是一項挑戰。 為了協助您解決這類錯誤，您可以啟用增強型偵錯資訊。 若要這樣做，請移至下列登錄機碼，在 Windows 登錄中：
 
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**

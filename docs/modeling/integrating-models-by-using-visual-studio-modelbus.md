@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fceccf63c4b28b8181bc3d652067ac6bdef1020f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 05164cf426c8156000377d980a40ae9f54d13c4b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946884"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873511"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 整合模型
 
@@ -27,7 +27,7 @@ ModelBus 可讓您建立模型或模型內特定項目的唯一參考。 這個�
 
 -   [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
--   [Modeling SDK for Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)
+-   [Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -518,6 +518,6 @@ ModelBus 擴充功能在 DSL 方案中進行了下列變更。
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [如何：在程式碼中開啟檔案的模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [使用文字範本中的 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)

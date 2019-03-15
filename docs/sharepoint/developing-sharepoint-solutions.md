@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 820eee92ef81f8821a25c8e490592cd1092e9256
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6639a52eb71d7cd826a1882e6e79cf124f2045d6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618142"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870424"
 ---
 # <a name="develop-sharepoint-solutions"></a>開發 SharePoint 方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中提供數個 SharePoint 專案類型範本，以用來建立 SharePoint 網站和網站元素。 如需可用的專案類型的清單，請參閱 < [SharePoint 專案和專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是 SharePoint 專案的元素和屬性描述。
 
- 如需 SharePoint 2013 與 SharePoint 增益集的相關資訊，請參閱 [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) 與 [建置 SharePoint 增益集](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
+ 如需 SharePoint 2013 與 SharePoint 增益集的相關資訊，請參閱 [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) 與 [建置 SharePoint 增益集](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
 
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint 專案的項目
  SharePoint 專案下方的節點稱為 *「SharePoint 項目」*(SharePoint item)。 SharePoint 項目也可能會包含一個以上的子檔案，稱為 *「SharePoint 項目檔案」*(SharePoint item file)，例如 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 組態檔、.aspx 表單等等。

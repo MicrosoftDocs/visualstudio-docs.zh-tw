@@ -14,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52596dcc89aa1fedadf016e69fceed8549c42e57
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1f2272323d13121865ace371b2dc1a921106e34e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873206"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869014"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>取得已啟動 （中的 SharePoint 開發 Visual Studio）
   本節可協助您開始使用利用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 的 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]開發 SharePoint 解決方案。
 
- 如需 SharePoint 2013 與 SharePoint 增益集的相關資訊，請參閱 [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) 與 [建置 SharePoint 增益集](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
+ 如需 SharePoint 2013 與 SharePoint 增益集的相關資訊，請參閱 [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) 與 [建置 SharePoint 增益集](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
 
  SharePoint 提供網頁型的共同作業平台。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供許多專案範本，可用來建立 SharePoint 網站和內容，包括清單定義、工作流程、商務資料連接模型以及網站定義。 此外，您還可以在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中建立 SharePoint 專案的擴充功能和工具。
 

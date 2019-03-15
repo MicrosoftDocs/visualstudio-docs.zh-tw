@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 992937ea0c90e3734a38ba6f2e56b19918fd7375
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f6f9f2ad3d9eb1e9aca68250c2d9e0702027f687
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709170"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867322"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>逐步解說：將自訂的 XAML 加入至 [開始] 頁面
 
@@ -85,7 +85,7 @@ ms.locfileid: "56709170"
 
 ## <a name="next-steps"></a>後續步驟
 
-Visual Studio 起始頁現在包含網頁瀏覽器索引標籤和 MyButton 索引標籤會顯示索引標籤。您可以建立具有其他功能使用的自訂起始頁*程式碼後置*模型中所示，新增自訂.dll[新增至 [入門] 頁面的使用者控制項](../extensibility/adding-user-control-to-the-start-page.md)。 您也可以發行至產生的.vsix 檔案與其他使用者共用自訂起始頁[Visual Studio 元件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站，或以另一個網站或網路共用。 如需詳細資訊，請參閱 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。
+Visual Studio 起始頁現在包含網頁瀏覽器索引標籤和 MyButton 索引標籤會顯示索引標籤。您可以建立具有其他功能使用的自訂起始頁*程式碼後置*模型中所示，新增自訂.dll[新增至 [入門] 頁面的使用者控制項](../extensibility/adding-user-control-to-the-start-page.md)。 您也可以發行至產生的.vsix 檔案與其他使用者共用自訂起始頁[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站，或以另一個網站或網路共用。 如需詳細資訊，請參閱 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。
 
 ## <a name="see-also"></a>另請參閱
 

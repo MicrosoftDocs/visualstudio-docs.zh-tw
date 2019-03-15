@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd18443e36a48967b4eb9fdf24f8d5e7869c323
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 94a6f4b69648c94e6530cb28180193e5a74c1265
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700142"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870576"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 項目 (Visual Studio 範本)
 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。
@@ -58,7 +58,7 @@ ms.locfileid: "56700142"
 | [CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定是否要包含的資料夾建立在具現化的專案。 |
 | [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 建立時，請指定 Visual Studio 專案系統會產生的專案或項目的名稱。 |
 | [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定 Visual Studio 專案系統是否會在建立時產生的預設名稱的專案或項目。 |
-| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定專案是否可以建立為暫存專案。 |
+| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定專案是否可以建立為暫存專案 (Visual Studio 2017 只)。 |
 | [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定是否**瀏覽** 按鈕位於**新的專案**對話方塊，讓使用者可以輕鬆地修改儲存新專案的預設目錄。 |
 | [Hidden](../extensibility/hidden-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定是否在該範本會出現**新的專案**或**加入新項目** 對話方塊。 |
 | [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定的數目會顯示在範本的父類別**新的專案** 對話方塊。 |

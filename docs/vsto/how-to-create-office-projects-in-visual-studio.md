@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 617ca350f318a8617b28d4bface3d09106b3b591
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614307"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868168"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>HOW TO：在 Visual Studio 中建立 Office 專案
   您可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立 VSTO 增益集和文件層級自訂的 Microsoft Office 應用程式。 如需這些專案類型的詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -85,17 +85,18 @@ ms.locfileid: "56614307"
 
 7. 選擇 [確定]  按鈕。
 
-    > [!NOTE]
-    >  建立增益集專案時，一律會進行儲存， 而無法建立為暫存專案。 如需有關暫存專案的詳細資訊，請參閱[暫存專案](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)。
+   ::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > 建立增益集專案時，一律會進行儲存， 而無法建立為暫存專案。 如需有關暫存專案的詳細資訊，請參閱[暫存專案](../ide/creating-solutions-and-projects.md#create-a-temporary-project)。
+
+   ::: moniker-end
 
 ### <a name="to-create-a-document-level-customization-project"></a>若要建立文件層級的自訂專案
 
 1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。 如果您的 IDE 設定上使用 Visual Basic 開發設定，**檔案**功能表上，選擇**新增** > **專案**。
 
     [ **新增專案** ] 對話方塊隨即出現。
-
-   > [!NOTE]
-   >  Office 專案的目標預設為 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]。  如需詳細資訊，請參閱 < [.NET Framework client profile](/dotnet/framework/deployment/client-profile)。
 
 2. 在 [範本] 窗格中，您要使用的語言節點下方展開**Office/SharePoint**。
 
@@ -104,12 +105,12 @@ ms.locfileid: "56614307"
 4. 在專案範本清單中，選取文件層級的專案範本。 如需可用文件層級專案範本的清單，請參閱 < [Office 專案範本概觀](../vsto/office-project-templates-overview.md)。
 
    > [!NOTE]
-   >  如果專案範本不會顯示當您選取**Office 增益集**節點，請確定 **.NET Framework 4**或更新版本已在對話方塊頂端的下拉式方塊中選取。 Office 專案範本會顯示這兩個版本的 .NET Framework。
+   > 如果專案範本不會顯示當您選取**Office 增益集**節點，請確定 **.NET Framework 4**或更新版本已選取。
 
 5. 在 **名稱**方塊中，輸入專案的名稱。 根據預設，此名稱也適用於文件。 如果您的 IDE 設定為使用 Visual C# 開發設定或一般開發設定，也請輸入位置和方案名稱。
 
    > [!NOTE]
-   >  在專案位置的路徑或專案名稱中，您不能使用 Surrogate 字元。 此外，如果您打算將方案部署為供離線使用，則專案名稱中的字元必須符合 HTTP 通訊協定規格。
+   > 在專案位置的路徑或專案名稱中，您不能使用 Surrogate 字元。 此外，如果您打算將方案部署為供離線使用，則專案名稱中的字元必須符合 HTTP 通訊協定規格。
 
 6. 選擇 [確定]  按鈕。
 

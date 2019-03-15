@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 8e94b67d1924e2144f658cd6bcd5989751efdb85
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699677"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869285"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007:不直接等候工作
 
@@ -71,6 +71,26 @@ public async Task Execute()
     await task.ConfigureAwait(false);
 }
 ```
+
+## <a name="configurability"></a>設定功能
+
+您可以設定是否要排除不傳回值的這項規則的非同步方法。 若要排除這類方法，加入專案中的.editorconfig 檔案中的下列索引鍵 / 值組：
+
+```
+# Package version 2.9.0 and later
+dotnet_code_quality.CA2007.exclude_async_void_methods = true
+
+# Package version 2.6.3 and earlier
+dotnet_code_quality.CA2007.skip_async_void_methods = true
+```
+
+您也可以設定哪一種輸出組件類型，要套用此規則。 比方說，為只套用此規則會產生一個主控台應用程式或動態連結程式庫 （亦即，沒有 UI 應用程式） 的程式碼，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
+
+```
+dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
+```
+
+如需詳細資訊，請參閱 <<c0> [ 設定的 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="see-also"></a>另請參閱
 

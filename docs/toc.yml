@@ -984,6 +984,8 @@ items:
       href: ide/reference/deploy-devenv-exe.md
     - name: -Diff (devenv.exe)
       href: ide/reference/diff.md
+    - name: -DoNotLoadProjects (devenv.exe)
+      href: ide/reference/donotloadprojects-devenv-exe.md
     - name: -Edit (devenv.exe)
       href: ide/reference/edit-devenv-exe.md
     - name: -LCID (devenv.exe)
@@ -1188,9 +1190,9 @@ items:
     displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: fb7a40cf8558fb5c3732fba0ec32ebbbb35fb0bb
-ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
+ms.openlocfilehash: 6b2aef6cb17789a665cb4a7a0360b2bc7dd396ab
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57683394"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873770"

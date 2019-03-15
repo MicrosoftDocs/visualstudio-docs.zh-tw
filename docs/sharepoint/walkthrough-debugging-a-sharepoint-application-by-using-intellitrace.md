@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad0d12560b1da99beadf2e519d2e430e8d76a45f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6cf4cd222c511d1ae9071d07f0fab517e36eb30e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875364"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868255"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式
 
@@ -33,15 +33,15 @@ ms.locfileid: "54875364"
 
  這個逐步解說將說明下列工作：
 
-- [建立功能接收器](#BKMK_CreateReceiver)
+- [建立功能接收器](#create-a-feature-receiver)
 
-- [將程式碼加入至功能接收器](#BKMK_AddCode)
+- [將程式碼加入至功能接收器](#add-code-to-the-feature-receiver)
 
-- [測試專案](#BKMK_Test1)
+- [測試專案](#test-the-project)
 
-- [使用 Microsoft Monitoring Agent 收集 IntelliTrace 資料](#BKMK_CollectDiagnosticData)
+- [使用 Microsoft Monitoring Agent 收集 IntelliTrace 資料](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
 
-- [偵錯和修正 SharePoint 方案](#BKMK_DebugSolution)
+- [偵錯和修正 SharePoint 方案](#debug-and-fix-the-sharepoint-solution)
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

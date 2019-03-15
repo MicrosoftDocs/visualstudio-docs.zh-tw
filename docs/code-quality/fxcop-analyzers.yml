@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 74931c1636ef2e1f512579907c162cb13148ef3e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3ded7e5593f40f469ad93dd64e27c24be37b3ed4
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969021"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868962"
 documentType: LandingData
 title: FxCop 程式碼分析從移轉至.NET 編譯器平台分析器
 metadata:
@@ -48,10 +48,10 @@ sections:
         src: https://docs.microsoft.com/media/common/i_setup.svg
       title: 安裝分析器
     - href: use-roslyn-analyzers.md
-      html: <p>了解如何設定您的 C# 或 Visual Basic 程式碼分析器。</p>
+      html: <p>了解如何使用分析器和隱藏的違規C#或 Visual Basic 程式碼。</p>
       image:
         src: https://docs.microsoft.com/media/common/i_config-tools.svg
-      title: 設定和使用分析器
+      title: 設定規則的嚴重性，並隱藏錯誤
     - href: use-roslyn-analyzers.md#command-line-usage
       html: <p>了解如何使用從命令列分析器。</p>
       image:

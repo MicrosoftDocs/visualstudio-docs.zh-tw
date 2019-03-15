@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e0445e66b10ca8bfa0ae4f5d2c35246d71745788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 79c27ec92d93f9f9cd88cc1155521b04ea7c2908
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604857"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868100"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>逐步解說：使用專案範本，第 2 部分建立網站資料行專案項目
   您定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的專案範本產生關聯之後，您也可以提供範本的精靈。 您可以使用精靈，在使用您的範本來建立新的專案，其中包含的專案項目時，從使用者收集資訊。 您所收集的資訊可以用來初始化專案項目中。
@@ -195,7 +195,7 @@ ms.locfileid: "56604857"
 
 - 專案的簽章管理員。
 
-  如需有關這些元件的詳細資訊，請參閱 <<c0> [ 了解精靈元件](#wizardcomponents)。
+  如需有關這些元件的詳細資訊，請參閱 <<c0> [ 了解精靈元件](#understand-the-wizard-components)。
 
 #### <a name="to-define-the-sharepoint-command-ids"></a>若要定義的 SharePoint 命令識別碼
 

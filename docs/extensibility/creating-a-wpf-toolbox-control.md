@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5495d5aaa3591a5d090b9c0324fb75d2f17d9a4a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316765"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867977"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>建立 WPF 工具箱控制項
 (Windows Presentation Framework) 的 WPF 工具箱控制項 範本可讓您建立會自動新增至 WPF 控制項**工具箱**安裝擴充功能時。 本主題說明如何使用範本來建立**工具箱**可以散發給其他使用者的控制項。
@@ -97,4 +97,4 @@ ms.locfileid: "56316765"
 
 3. 上傳 *.vsix*檔案到網路或網站。
 
-    如果您上傳檔案[Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站，其他使用者可以使用**工具** > **擴充功能和更新**在 Visual Studio 中找不到控制項線上並安裝它。
+    如果您上傳檔案[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站，其他使用者可以使用**工具** > **擴充功能和更新**在 Visual Studio 中尋找上線控制，並安裝它。
