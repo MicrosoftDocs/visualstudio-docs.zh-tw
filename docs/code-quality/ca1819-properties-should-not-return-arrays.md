@@ -1,6 +1,6 @@
 ---
 title: CA1819:屬性不應該傳回陣列
-ms.date: 09/28/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af31c925420602329eb20b803c92879210518ebd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11209ec181e2c2b61c7767787ee99c2d69eabe8b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919205"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872739"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819:屬性不應該傳回陣列
 
@@ -35,7 +35,9 @@ ms.locfileid: "55919205"
 
 ## <a name="cause"></a>原因
 
-公用類型中的公用或受保護的屬性會傳回陣列。
+屬性會傳回陣列。
+
+根據預設，此規則只會查看外部可見的屬性及型別，但這[可設定](#configurability)。
 
 ## <a name="rule-description"></a>規則描述
 
@@ -52,6 +54,16 @@ ms.locfileid: "55919205"
 您可以隱藏警告，如果屬性是屬於[資料傳輸物件 (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10))類別。
 
 否則，請勿隱藏此規則的警告。
+
+## <a name="configurability"></a>設定功能
+
+如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
+
+```
+dotnet_code_quality.ca1819.api_surface = private, internal
+```
+
+此類別 （效能） 中，您可以設定此選項，只是這項規則，所有規則，或所有的規則。 如需詳細資訊，請參閱 <<c0> [ 設定的 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="example-violation"></a>範例違規
 

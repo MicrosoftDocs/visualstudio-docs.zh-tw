@@ -29,16 +29,24 @@ items:
   items:
   - name: 受控碼的程式碼分析
     items:
-    - name: FxCop 分析器常見問題集
-      href: fxcop-analyzers-faq.md
-    - name: 從 FxCop 移轉
-      href: fxcop-analyzers.yml
+    - name: FxCop 分析器
       items:
-      - name: 安裝 FxCop 分析器
+      - name: 常見問題集
+        href: fxcop-analyzers-faq.md
+      - name: 安裝
         href: install-fxcop-analyzers.md
+      - name: 設定
+        href: configure-fxcop-analyzers.md
+        items:
+        - name: 組態選項
+          href: fxcop-analyzer-options.md
+      - name: 從靜態程式碼分析移轉
+        href: fxcop-analyzers.yml
+    - name: 分析器常見問題集
+      href: analyzers-faq.md
     - name: 安裝 Roslyn 分析器
       href: install-roslyn-analyzers.md
-    - name: 設定與使用 Roslyn 分析器
+    - name: 使用及設定 Roslyn 分析器
       href: use-roslyn-analyzers.md
     - name: 啟用自動程式碼分析
       href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
@@ -1470,9 +1478,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd 錯誤
       href: fxcopcmd-errors.md
-ms.openlocfilehash: d922322159ed52441168ab7bfec76c0f92804501
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: daaf61f508d3e14c26044b181c478e5701afe6ed
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699664"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868114"

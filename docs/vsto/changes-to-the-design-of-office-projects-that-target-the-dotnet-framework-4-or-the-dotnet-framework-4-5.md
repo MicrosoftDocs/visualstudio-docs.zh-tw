@@ -6,19 +6,19 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
-- Office development in Visual Studio, what's new
+- Office development in Visual Studio 2010, what's new
 - what's new [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: daf4633f3c372d4288826de1b3ca2d96819eccfb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 146ece23d1ff4ed516d5c7d009bfc439c2387bb5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602932"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870327"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>如果要對目標為.NET Framework 4 或.NET Framework 4.5 之 Office 專案的設計變更
   從 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]開始，Visual Studio 導入了一些以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的 Office 專案的設計變更。 如果您熟悉舊版 Visual Studio 中的 Office 專案，在您開發以 .NET Framework 4.0 或更新版本為目標的 Office 專案之前，就該意識到這些變更。 使用 Visual Studio 2013 或更新版本建立的所有專案，預設目標都是 .NET Framework 4.0 或更新版本。

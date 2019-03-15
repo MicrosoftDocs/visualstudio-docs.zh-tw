@@ -1,5 +1,5 @@
 ---
-title: 使用，並設定 Roslyn 分析器
+title: 分析器規則的嚴重性和隱藏項目
 ms.date: 03/26/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 887fb6101773a86d346215f558f10216ca4612b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924600"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873498"
 ---
-# <a name="configure-and-use-roslyn-analyzer-rules"></a>設定和使用 Roslyn 分析器規則
+# <a name="use-roslyn-analyzers"></a>使用 Roslyn 分析器
 
 .NET 編譯器平台 ("Roslyn") 分析器規則，或*診斷*，當您輸入時，分析 C# 或 Visual Basic 程式碼。 每一個診斷已為您的專案將會覆寫預設嚴重性和隱藏狀態。 本文章涵蓋設定規則的重要性，使用規則集，並抑制違規。
 
@@ -91,7 +91,7 @@ A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
 
 ### <a name="to-set-rule-severity-in-the-rule-set-file"></a>若要設定規則在規則中的嚴重性設定檔
 
-1. 開啟的規則集檔案按兩下**方案總管 中**，並選取**開啟作用中規則集中**上按一下滑鼠右鍵功能表上**分析器** 節點，或選取**開放**上**程式碼分析**專案屬性頁。
+1. 開啟[規則集](analyzer-rule-sets.md)按兩下檔案**方案總管**，並選取**開啟作用中規則集**上按一下滑鼠右鍵功能表**分析器**節點，或選取**開放**上**程式碼分析**專案屬性頁。
 
 1. 瀏覽至規則，藉由展開其包含的組件。
 

@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223490"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872430"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ Core Guidelines 檢查工具
 
@@ -187,7 +187,7 @@ Microsoft Visual c + + 編譯器會有有限的支援 GSL 隱藏屬性。 它可
 
 請確定您新增這些屬性，才能匯入 Microsoft.Cpp.targets 檔案。 您可以挑選特定的規則集或建立自訂規則集，或使用預設規則集包含其他 PREfast 的檢查。
 
-您也可以使用相同的方法為只在指定的檔案上執行 c + + Core Checker[稍早所述](#coreckeck_per_file)，但是使用 MSBuild 檔案。 可以透過設定環境變數`BuildMacro`項目：
+您也可以使用相同的方法為只在指定的檔案上執行 c + + Core Checker[稍早所述](#corecheck_per_file)，但是使用 MSBuild 檔案。 可以透過設定環境變數`BuildMacro`項目：
 
 ```xml
 <ItemGroup>

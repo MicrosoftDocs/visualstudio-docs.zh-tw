@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6286c787b1f69c0e44541e156b06440c7267f79d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223191"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870356"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -102,14 +102,14 @@ ms.locfileid: "57223191"
     > [!NOTE]
     > 根據預設，**建置動作**上的相依性圖表 (.layerdiagram) 檔案的屬性設定為**Validate** ，讓圖表納入驗證程序。
 
-     **錯誤清單**視窗會報告所發生的任何錯誤。 如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。
+     **錯誤清單**視窗會報告所發生的任何錯誤。 如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 針對圖層驗證問題進行疑難排解](#troubleshoot-layer-validation-issues)。
 
 2.  若要檢視每個錯誤的來源，請連按兩下中的錯誤**錯誤清單**視窗。
 
     > [!NOTE]
     > Visual Studio 可能會顯示 code map，而不是錯誤的來源。 發生這種情況的程式碼不由相依性圖表中，指定的組件有相依性，或程式碼遺失相依性圖表中所指定的相依性時。 請檢閱 Code Map 或程式碼，以判斷相依性是否應存在。 如需 code map 的詳細資訊，請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)。
 
-3.  若要管理錯誤，請參閱[管理驗證錯誤](#ManageErrors)。
+3.  若要管理錯誤，請參閱[解決圖層驗證錯誤](#resolve-layer-validation-errors)。
 
 ### <a name="validate-code-at-the-command-prompt"></a>驗證程式碼，在命令提示字元
 
@@ -147,7 +147,7 @@ ms.locfileid: "57223191"
 
      發生的任何錯誤都將列出。 如需 MSBuild 的詳細資訊，請參閱[MSBuild](../msbuild/msbuild.md)並[MSBuild 工作](../msbuild/msbuild-task.md)。
 
-   如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。
+   如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 針對圖層驗證問題進行疑難排解](#troubleshoot-layer-validation-issues)。
 
 ### <a name="manage-validation-errors"></a>管理驗證錯誤
 
@@ -195,11 +195,11 @@ ms.locfileid: "57223191"
 
     這會將相依性圖表納入驗證程序。
 
-若要管理 [錯誤清單] 視窗中的錯誤，請參閱[管理驗證錯誤](#ManageErrors)。
+若要管理 [錯誤清單] 視窗中的錯誤，請參閱[解決圖層驗證錯誤](#resolve-layer-validation-errors)。
 
 ## <a name="troubleshoot-layer-validation-issues"></a>疑難排解圖層驗證問題
 
-下列表格描述圖層驗證的問題及其解決方式。 這些問題不同於因程式碼與設計衝突而導致的錯誤。 如需有關這些錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。
+下列表格描述圖層驗證的問題及其解決方式。 這些問題不同於因程式碼與設計衝突而導致的錯誤。 如需有關這些錯誤的詳細資訊，請參閱 <<c0> [ 針對圖層驗證問題進行疑難排解](#troubleshoot-layer-validation-issues)。
 
 |**問題**|**可能的原因**|**解決方法**|
 |-|-|-|

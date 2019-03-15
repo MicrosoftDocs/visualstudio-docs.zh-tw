@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: cb7f2ee59c9b02e7c4ff85c36bc0ea5a67e962a5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796669"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870269"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探索 Visual Studio SDK
 本節提供有關 Visual Studio 擴充功能，包括 Visual Studio 架構、 元件、 服務、 結構描述、 公用程式，以及類似的深入資訊。
@@ -90,7 +90,7 @@ ms.locfileid: "56796669"
  如需詳細資訊，請參閱 <<c0> [ 專案](../../extensibility/internals/projects.md)並[解決方案](../../extensibility/internals/solutions.md)。
 
 ## <a name="project-and-item-templates"></a>專案與項目範本
- Visual Studio 包含預先定義的專案範本和專案項目範本。 您可以也讓您自己的範本或取得社群中的範本，並再將它們整合到 Visual Studio。 [MSDN Code Gallery](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio)是範本和擴充功能的位置。
+ Visual Studio 包含預先定義的專案範本和專案項目範本。 您可以也讓您自己的範本或取得社群中的範本，並再將它們整合到 Visual Studio。 [MSDN Code Gallery](https://code.msdn.microsoft.com/site/search?query=visual%20studio)是範本和擴充功能的位置。
 
  範本包含的專案結構和基本建置特定類型的應用程式、 控制項、 程式庫或類別所需的檔案。 當您想要開發的軟體，類似於其中一個範本時，建立以範本為基礎的專案，然後修改 該專案中的檔案。
 

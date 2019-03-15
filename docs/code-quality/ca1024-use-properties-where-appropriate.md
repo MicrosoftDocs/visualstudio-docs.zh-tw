@@ -1,6 +1,6 @@
 ---
 title: CA1024:建議在適當時使用屬性
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3fba3a733381642999d7bccb5666b7db895b87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4008872a7cb96386ef702d21ba8a18d96037d83
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922299"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869253"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024:建議在適當時使用屬性
 
@@ -35,7 +35,9 @@ ms.locfileid: "55922299"
 
 ## <a name="cause"></a>原因
 
-公用或受保護的方法有名稱開頭為`Get`、 不採用任何參數和傳回值，這個值不是陣列。
+方法具有名稱開頭`Get`、 不採用任何參數和傳回值，這個值不是陣列。
+
+根據預設，此規則只會查看公用和受保護的方法，但這[可設定](#configurability)。
 
 ## <a name="rule-description"></a>規則描述
 
@@ -69,11 +71,21 @@ ms.locfileid: "55922299"
 
 如果方法會符合至少其中一個先前所列的準則，則隱藏此規則的警告。
 
-## <a name="controlling-property-expansion-in-the-debugger"></a>控制偵錯工具中的屬性擴充
+## <a name="configurability"></a>設定功能
 
-程式設計師可讓您避免使用屬性的其中一個原因是因為不想偵錯工具自動展開。 例如，配置大型物件或呼叫 P/Invoke，可能會牽涉到的屬性，但它可能實際上沒有任何可預見的副作用。
+如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
 
-您可以防止偵錯工具自動擴充屬性，藉由套用<xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>。 下列範例示範套用至執行個體屬性的這個屬性。
+```
+dotnet_code_quality.ca1024.api_surface = private, internal
+```
+
+此類別 （設計） 中，您可以設定此選項，只是這項規則，所有規則，或所有的規則。 如需詳細資訊，請參閱 <<c0> [ 設定的 FxCop 分析器](configure-fxcop-analyzers.md)。
+
+## <a name="control-property-expansion-in-the-debugger"></a>在 偵錯工具中的控制項屬性擴充
+
+程式設計師可讓您避免使用屬性的其中一個原因是因為不想偵錯工具自動展開它。 例如，配置大型物件或呼叫 P/Invoke，可能會牽涉到的屬性，但它可能實際上沒有任何可預見的副作用。
+
+您可以藉由套用防止偵錯工具從 autoexpanding 屬性<xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>。 下列範例示範套用至執行個體屬性的這個屬性。
 
 ```vb
 Imports System
@@ -123,6 +135,6 @@ namespace Microsoft.Samples
 
 ## <a name="example"></a>範例
 
-下列範例包含數種方法，應該轉換成屬性，以及數個，應該不是因為它們不行為與欄位一樣。
+下列範例包含數種方法，應該轉換成屬性，以及數個，應該不是因為它們不與欄位類似的行為。
 
 [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

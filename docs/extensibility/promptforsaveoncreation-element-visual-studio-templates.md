@@ -13,17 +13,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 309c02abb29b599a5753a39c28d9b95314088550
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+monikerRange: vs-2017
+ms.openlocfilehash: 882465acd61f3f76d358f52ae75c9041c311dcd5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696710"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867278"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 項目 （Visual Studio 範本）
-指定是否會提示使用者輸入專案儲存位置，透過**新的專案**對話方塊中，建立專案時。 如果這個項目設定為`true`，則會提示使用者輸入新的儲存位置; 如果`false`，則不會提示。 （也就是會建立暫存的專案）。
 
- \<VSTemplate> \<TemplateData> \<PromptForSaveOnCreation>
+指定是否會提示使用者輸入專案儲存位置，透過**新的專案**對話方塊中，建立專案時。 如果這個項目設定為`true`，則會提示使用者輸入新的儲存位置。 如果`false`，則不會提示 （也就是建立暫存的專案）。
+
+```xml
+\<VSTemplate>
+\<TemplateData>
+\<PromptForSaveOnCreation>
+```
 
 ## <a name="syntax"></a>語法
 
@@ -59,7 +65,7 @@ ms.locfileid: "56696710"
 ## <a name="example"></a>範例
  下列範例會設定的值`PromptForSaveOnCreation`等於`false`，指定允許專案建立為暫存專案。
 
-```
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,5 +91,6 @@ ms.locfileid: "56696710"
 ```
 
 ## <a name="see-also"></a>另請參閱
+
 - [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
 - [建立專案與項目範本](../ide/creating-project-and-item-templates.md)

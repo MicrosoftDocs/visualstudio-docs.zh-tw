@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: 使用分析測量應用程式效能 |Microsoft Docs
-description: 了解如何使用 Visual Studio 2017，以您選擇的語來言分析應用程式、服務及工具的效能。
+description: 了解如何使用 Visual Studio，以您選擇的語來言分析應用程式、服務及工具的效能。
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000

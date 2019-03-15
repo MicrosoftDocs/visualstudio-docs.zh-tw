@@ -1,24 +1,26 @@
 ---
-title: 有關設計的新功能
+title: 在 Visual Studio 2017 中設計的新功能
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
-- what's new [VIsual Studio ALM], architecture and modeling
-- architecture [Visual Studio Ultimate], modeling
-- modeling software [Visual Studio ALM], What's New
+- what's new [Visual Studio], architecture and modeling
+- architecture [Visual Studio], modeling
+- modeling software [Visual Studio], What's New
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6e43b27695e582e75b27258875f2276a558ca1
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+monikerRange: vs-2017
+ms.openlocfilehash: fb7ef710d117318d475e32f19b5ca2511b94f8bc
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223373"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869885"
 ---
-# <a name="whats-new-for-design-in-visual-studio"></a>在 Visual Studio 中設計的新功能
+# <a name="whats-new-for-design-in-visual-studio-2017"></a>在 Visual Studio 2017 中設計的新功能
 
 ## <a name="live-dependency-validation"></a>即時相依性驗證
 

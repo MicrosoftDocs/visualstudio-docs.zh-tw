@@ -1,6 +1,6 @@
 ---
 title: CA1052:靜態預留位置類型應該為密封的
-ms.date: 11/09/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldBeSealed
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 36bd459f2a9f7300328aadd3509530f4802e71cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 46a8c9a4e22c7a54a4b2b68f95bb2b81f3a0888e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922446"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870382"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052:靜態預留位置類型應該為密封的
 
@@ -36,7 +36,9 @@ ms.locfileid: "55922446"
 
 ## <a name="cause"></a>原因
 
-公用或受保護，非抽象型別只包含靜態成員，並不以宣告[密封](/dotnet/csharp/language-reference/keywords/sealed)([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) 修飾詞。
+非抽象類型只包含靜態成員，並不以宣告[密封](/dotnet/csharp/language-reference/keywords/sealed)([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) 修飾詞。
+
+根據預設，此規則只會查看外部可見的類型，但這[可設定](#configurability)。
 
 ## <a name="rule-description"></a>規則描述
 
@@ -50,9 +52,19 @@ ms.locfileid: "55922446"
 
 只有型別設計為繼承，則隱藏此規則的警告。 缺少`sealed`或`NotInheritable`修飾詞表示型別是有用的基底類型。
 
+## <a name="configurability"></a>設定功能
+
+如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
+
+```
+dotnet_code_quality.ca1052.api_surface = private, internal
+```
+
+此類別 （設計） 中，您可以設定此選項，只是這項規則，所有規則，或所有的規則。 如需詳細資訊，請參閱 <<c0> [ 設定的 FxCop 分析器](configure-fxcop-analyzers.md)。
+
 ## <a name="example-of-a-violation"></a>發生違規的範例
 
-下列範例顯示違反規則的型別。
+下列範例顯示違反規則的型別：
 
 [!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
 [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
@@ -60,10 +72,10 @@ ms.locfileid: "55922446"
 
 ## <a name="fix-with-the-static-modifier"></a>修正使用 static 修飾詞
 
-下列範例示範如何修正此規則的違規情形，來標記具有類型`static`修飾詞C#。
+下列範例示範如何修正此規則的違規情形，來標記具有類型`static`修飾詞C#:
 
 [!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]
 
 ## <a name="related-rules"></a>相關的規則
 
-[CA1053:靜態預留位置類型不應該有建構函式](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+- [CA1053:靜態預留位置類型不應該有建構函式](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
