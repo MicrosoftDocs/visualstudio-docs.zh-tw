@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ebb82353b3137e03e559a3b60132f4c25a306ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 34a9a97e018642660d7424b0bfce2a1bbbc9c073
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716099"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983516"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>逐步解說：發行 Visual Studio 擴充功能
 
@@ -154,7 +154,7 @@ Marketplace 可支援授與其他使用者的權限來存取和管理發佈者�
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>若要從電腦移除擴充功能
 
-1. 在 Visual Studio 中，在**工具**功能表上，按一下**延伸模組和更新**。
+1. 在 Visual Studio 中，在**工具**功能表上，按一下**擴充功能和更新**。
 
 2. 選取  **TestPublish** ，然後按一下**解除安裝**。 然後延伸模組已排程解除安裝。
 

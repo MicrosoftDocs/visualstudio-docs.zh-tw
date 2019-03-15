@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84d83cba5afb201725354069ff1816dd8985b15c
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: a8b13e9f5ed76b61279212bfdedf33b25f694221
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270572"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983451"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>在 Visual Studio 中安裝 FxCop 分析器
 
@@ -54,12 +54,27 @@ Microsoft 建立了一組的分析器，稱為[Microsoft.CodeAnalysis.FxCopAnaly
 
 在 Visual Studio 2017 15.5 版和更新版本，您可以安裝[Microsoft 程式碼分析 2017年](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)延伸模組，其中包含所有的 managed 專案的 FxCop 分析器。
 
+::: moniker range="vs-2017"
+
 1. 在 Visual Studio 中，選取**工具** > **擴充功能和更新**。
 
    [擴充功能和更新] 對話方塊隨即開啟。
 
    > [!NOTE]
    > 或者，下載的擴充功能，直接從[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 在 Visual Studio 中，選取**延伸模組** > **管理延伸模組**。
+
+   **管理延伸模組**對話方塊隨即開啟。
+
+   > [!NOTE]
+   > 或者，下載的擴充功能，直接從[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)。
+
+::: moniker-end
 
 1. 依序展開**線上**左的窗格中，然後選取**Visual Studio Marketplace**。
 
@@ -83,7 +98,17 @@ Microsoft 建立了一組的分析器，稱為[Microsoft.CodeAnalysis.FxCopAnaly
 
 1. 重新開啟 Visual Studio。
 
+::: moniker range="vs-2017"
+
 如果您想要檢查擴充功能是否已安裝，請選取**工具** > **擴充功能和更新**。 在**擴充功能和更新**對話方塊中，選取**已安裝**在左側的類別目錄，然後依名稱搜尋延伸模組。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+如果您想要檢查擴充功能是否已安裝，請選取**延伸模組** > **管理延伸模組**。 在**管理延伸模組**對話方塊中，選取**已安裝**在左側的類別目錄，然後依名稱搜尋延伸模組。
+
+::: moniker-end
 
 ## <a name="see-also"></a>另請參閱
 

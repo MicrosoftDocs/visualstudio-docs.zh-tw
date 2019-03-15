@@ -10,12 +10,12 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d42e5239378886840f8943d26c5e21138907fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fa19618baba46b56337714a633a993b232f78a46
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718353"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983009"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>逐步解說：建立延伸模組套件
 
@@ -85,7 +85,7 @@ ms.locfileid: "56718353"
 
 若要從您的電腦中移除擴充功能：
 
-1. 在 Visual Studio 中，在**工具**功能表上，按一下 **延伸模組和更新...**.
+1. 在 Visual Studio 中，在**工具**功能表上，按一下**擴充功能和更新**。
 
 2. 選取  `Test Extension Pack` ，然後按一下 **解除安裝**。 擴充功能和擴充功能套件中包含的延伸模組清單然後會排程進行解除安裝。
 
