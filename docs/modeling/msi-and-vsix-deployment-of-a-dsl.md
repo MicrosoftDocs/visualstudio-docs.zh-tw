@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548a8a4ec05c0ee88e68095a5322a8831e77b9b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 664d323976692d20a3f9f9bb8a7e66c0aa4f9761
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937246"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58069602"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 您可以安裝特定領域語言，在您自己的電腦或其他電腦上。 在目標電腦上時，必須已安裝 visual Studio。
@@ -25,14 +25,15 @@ ms.locfileid: "55937246"
 |VSX （Visual Studio 擴充功能）|非常容易部署：複製並執行 **.vsix** DslPackage 專案中的檔案。<br /><br /> 如需詳細資訊，請參閱[安裝和解除安裝 DSL 使用 VSX](#Installing)。|
 |MSI （安裝程式檔案）|-允許使用者按兩下 DSL 檔案開啟 Visual Studio。<br />-建立與目標電腦中的 DSL 檔案類型關聯圖示。<br />-將與 DSL 檔案類型關聯的 XSD （XML 結構描述）。 檔案載入到 Visual Studio 時，這可避免警告。<br /><br /> 您必須將安裝專案加入方案以建立 MSI。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 使用 MSI 檔案部署 DSL](#msi)。|
 
-## <a name="Installing"></a> 安裝及解除安裝使用 VSX 的 DSL
- 這個方法所安裝 DSL 時，使用者可以開啟在 Visual Studio 中，從 DSL 檔案，但無法從 Windows 檔案總管中開啟檔案。
+## <a name="Installing"></a> 安裝和解除安裝使用 VSX 的 DSL
 
-#### <a name="to-install-a-dsl-by-using-the-vsx"></a>若要使用的 VSX 安裝 DSL
+這個方法所安裝 DSL 時，使用者可以開啟在 Visual Studio 中，從 DSL 檔案，但無法從 Windows 檔案總管中開啟檔案。
 
-1. 在您的電腦，尋找 **.vsix** DSL 封裝專案所建置的檔案。
+### <a name="to-install-a-dsl-by-using-the-vsx"></a>若要使用的 VSX 安裝 DSL
 
-   1.  在 **方案總管**，以滑鼠右鍵按一下**DslPackage**專案，然後再按一下**在 Windows 檔案總管中開啟資料夾**。
+1. 找出 **.vsix** DSL 封裝專案所建置的檔案：
+
+   1.  在 [**方案總管**，以滑鼠右鍵按一下**DslPackage**專案，然後再按一下**在檔案總管] 中開啟資料夾**。
 
    2.  找出檔案**筒\\\*\\**_YourProject_**。DslPackage.vsix**
 
@@ -50,9 +51,9 @@ ms.locfileid: "55937246"
 
 5. 若要測試 DSL，請建立新的檔案副檔名為您的 DSL 定義中使用 Visual Studio。
 
-#### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>若要解除安裝使用 VSX 所安裝的 DSL
+### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>若要解除安裝使用 VSX 所安裝的 DSL
 
-1. 在 **工具**功能表上，按一下**延伸模組管理員**。
+1. 在 [工具]  功能表中選擇 [擴充功能和更新] 。
 
 2. 展開 [已安裝的擴充功能] 。
 
@@ -69,7 +70,7 @@ ms.locfileid: "55937246"
 
  若要建置 MSI，您可以新增安裝專案到您的 Visual Studio 方案。 建立安裝專案的最簡單方法是使用 CreateMsiSetupProject.tt 範本中，您可以從下載[VMSDK 網站](http://go.microsoft.com/fwlink/?LinkID=186128)。
 
-#### <a name="to-deploy-a-dsl-in-an-msi"></a>若要部署 MSI 中的 DSL
+### <a name="to-deploy-a-dsl-in-an-msi"></a>若要部署 MSI 中的 DSL
 
 1. 設定`InstalledByMsi`延伸模組資訊清單中。 這會讓 VSX 安裝和解除安裝 MSI 除外。 這很重要，如果您將會包含 MSI 中的其他元件。
 
@@ -127,7 +128,7 @@ ms.locfileid: "55937246"
 
     如果您想，您可以在以手動的方式，而不是使用文字範本中建立安裝專案。 如需逐步解說，其中包含此程序，請參閱第 5 章的[Visualization and Modeling SDK 實驗室](http://go.microsoft.com/fwlink/?LinkId=208878)。
 
-#### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>若要解除安裝已從 MSI 安裝 DSL
+### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>若要解除安裝已從 MSI 安裝 DSL
 
 1.  在 Windows 中，開啟**程式和功能**控制台。
 
