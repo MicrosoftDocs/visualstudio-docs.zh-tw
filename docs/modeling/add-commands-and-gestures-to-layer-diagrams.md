@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c595465a9791f00036fb5358c49afae808dce13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b29735eeb8b35b2d674f3574343b19665c87fa19
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932712"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983841"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>將命令和軌跡新增至相依性圖表
 
@@ -54,7 +54,17 @@ ms.locfileid: "55932712"
 
     [定義軌跡處理常式](#gesture)
 
+::: moniker range="vs-2017"
+
 6. 若要安裝延伸模組，Visual Studio 中，或在另一部電腦上的主要執行個體，尋找 *.vsix*中的檔案*bin*目錄。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要解除安裝它，請選擇**擴充功能和更新**上**工具**功能表。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+6. 若要安裝延伸模組，Visual Studio 中，或在另一部電腦上的主要執行個體，尋找 *.vsix*中的檔案*bin*目錄。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要解除安裝它，請選擇**管理延伸模組**上**延伸模組**功能表。
+
+::: moniker-end
 
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>將命令或軌跡加入個別 VSIX
 
@@ -104,11 +114,9 @@ ms.locfileid: "55932712"
 
      另請參閱[瀏覽和更新圖層的程式碼中的模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。
 
-6.  若要測試此功能，請按下 CTRL+F5 或 F5。 Visual Studio 的實驗執行個體隨即開啟。 在此情況下，建立或開啟相依性圖表。
+6.  若要測試此功能，請按**Ctrl**+**F5**或是**F5**。 Visual Studio 的實驗執行個體隨即開啟。 在此情況下，建立或開啟相依性圖表。
 
 7.  若要安裝 VSIX 的 Visual Studio，或在另一部電腦上的主要執行個體中，尋找 **.vsix**中的檔案**bin** VSIX 專案的目錄。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下 VSIX 檔案。
-
-     若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。
 
 ##  <a name="command"></a> 定義功能表命令
 
