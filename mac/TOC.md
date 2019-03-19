@@ -33,7 +33,7 @@
 ## [區塊選取](block-selection.md)
 ## [編輯器佈景主題](editor-themes.md)
 ## [EditorConfig](editorconfig.md)
-## [常用鍵盤快速鍵](keyboard-shortcuts.md)
+## [預設鍵盤快速鍵](keyboard-shortcuts.md)
 
 # [偵錯](debugging.md)
 ## [資料視覺效果](data-visualizations.md)
