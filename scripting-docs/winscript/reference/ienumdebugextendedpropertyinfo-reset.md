@@ -2,7 +2,6 @@
 title: IEnumDebugExtendedPropertyInfo::Reset |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88d4d48cdd94d743b701f46a0f653a5f72245791
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 3560c63d20d8761ef8114e59d35c6d1ab4185455
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345392"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151839"
 ---
 # <a name="ienumdebugextendedpropertyinforeset"></a>IEnumDebugExtendedPropertyInfo::Reset
 將列舉型別序列重設到開頭。  

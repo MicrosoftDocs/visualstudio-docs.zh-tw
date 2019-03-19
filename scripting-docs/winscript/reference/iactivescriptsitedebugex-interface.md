@@ -2,7 +2,6 @@
 title: IActiveScriptSiteDebugEx 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e390b610d6912de0078b817c9dfb503e5924a374
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 605505d101611dfe39835671b042852eab5ca9cb
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797423"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146938"
 ---
 # <a name="iactivescriptsitedebugex-interface"></a>IActiveScriptSiteDebugEx 介面
 

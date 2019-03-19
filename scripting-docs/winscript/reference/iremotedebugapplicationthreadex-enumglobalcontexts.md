@@ -2,7 +2,6 @@
 title: IRemoteDebugApplicationThreadEx:EnumGlobalContexts | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5112ea59584544669b995d20490a1f01fac971ed
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 47fb195a2292f04c5dc2dd40ecdf94564a3b16bb
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347940"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58158262"
 ---
 # <a name="iremotedebugapplicationthreadexenumglobalcontexts"></a>IRemoteDebugApplicationThreadEx:EnumGlobalContexts
 列舉在此執行緒中執行的所有語言通用的運算式內容。  

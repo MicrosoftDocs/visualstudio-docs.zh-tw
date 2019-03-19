@@ -2,7 +2,6 @@
 title: JsDebugReadMemoryFlags 列舉 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bef1f16ebcf678452f2fe4b0df3ade6350120f05
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: c908fdbf17b13b84355dff208b7f3106bfc72087
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094025"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58156407"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>JsDebugReadMemoryFlags 列舉
 旗標，用於指定讀取記憶體時的行為。  

@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca9786183f2d814459e650c6018a99d7ee37f6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a5c195697a94462ce1239318a309160220117b8e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601019"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146522"
 ---
 # <a name="project-persistence"></a>專案持續性
 持續性是重要的設計考量，為您的專案。 大部分的專案使用的專案項目代表檔案;[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]也支援其中的資料為非檔案型的專案。 這兩個專案和專案檔案所擁有的檔案必須被 persisted。 IDE 會指示專案，以儲存本身或專案項目。
 
- 專案範本會傳遞至 project factory。 範本應該支援所有的專案項目，根據特定專案類型的需求的初始化。 這些範本稍後會儲存為專案檔，IDE 中透過此解決方案所管理。 如需詳細資訊，請參閱 <<c0> [ 建立專案執行個體所使用 Project Factory](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)並[解決方案](../../extensibility/internals/solutions.md)。
+ 專案範本會傳遞至 project factory。 範本應該支援所有的專案項目，根據特定專案類型的需求的初始化。 這些範本稍後會儲存為專案檔，IDE 中透過此解決方案所管理。 如需詳細資訊，請參閱 <<c0> [ 建立專案執行個體所使用 Project Factory](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)並[解決方案](../../extensibility/internals/solutions-overview.md)。
 
  專案項目可以是檔案為基礎，或非檔案型：
 

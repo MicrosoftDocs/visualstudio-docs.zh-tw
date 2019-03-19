@@ -2,7 +2,6 @@
 title: IDebugApplicationThread110::AsynchronousCallIntoThread | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2392d34a4971389b293e44a6223c2159d6d6a9cb
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: f5b2152409c22d7a6e91a83bc85c6d6608386f3b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345847"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152599"
 ---
 # <a name="idebugapplicationthread110asynchronouscallintothread"></a>IDebugApplicationThread110::AsynchronousCallIntoThread
 在主執行緒上進行非同步呼叫。  

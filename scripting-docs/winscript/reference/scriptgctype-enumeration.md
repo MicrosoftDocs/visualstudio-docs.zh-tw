@@ -2,7 +2,6 @@
 title: SCRIPTGCTYPE 列舉 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b25ffb530bf16fff0008bb73b55ecb0c523efe0d
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 0a5de3ea949203ad7a6dca0ea777fdbc9514ba6d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349097"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160611"
 ---
 # <a name="scriptgctype-enumeration"></a>SCRIPTGCTYPE 列舉
 若要執行記憶體回收的類型。 用於[IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md)方法。  

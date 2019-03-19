@@ -2,7 +2,6 @@
 title: TEXT_DOC_ATTR 的常數 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e3fd21ba720dfed394e497a9a56a1bb6898dc60
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: d22b178d85d304f19e52727ef2c67d77f16da1b3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348772"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58147380"
 ---
 # <a name="textdocattr-constants"></a>TEXT_DOC_ATTR 的常數
 描述文件的屬性。  

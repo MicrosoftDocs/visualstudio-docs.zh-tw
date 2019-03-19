@@ -1,21 +1,20 @@
 ---
-title: 適用於 Visual Studio 的視覺化語言字典 |Microsoft Docs
+title: 視覺化語言參考
 ms.date: 08/04/2017
 ms.reviewer: Jamie.Young
 ms.topic: conceptual
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
-ms.author: v-brickg
+ms.author: brgeorge
 manager: jillfra
-ms.workload:
-- v-brickg
-ms.openlocfilehash: a17361536437e6ba4811a687fdc75a9b47d4c0e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b550f75731874da5581c967034cd91260674f974
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698478"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58158077"
 ---
-# <a name="visual-language-dictionary-for-visual-studio"></a>適用於 Visual Studio 的視覺化語言字典
+# <a name="visual-language-dictionary"></a>視覺化語言字典
+
 Visual Studio 會使用常見的視覺化語言來說明其遙控器和其他圖形的建置組塊的概念。 在設計新的圖示時，使用此字典來識別您想要傳遞自己的映像中的概念。
 
 ## <a name="general-guidelines"></a>一般方針

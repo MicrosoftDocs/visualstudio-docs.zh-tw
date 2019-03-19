@@ -2,7 +2,6 @@
 title: 'Ijsdebugdatatarget:: Readbstr 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: afd216c869cd88a643f68f0abd1fc095a675e24b
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 2e821893318cfe1d8f0b4239a077fc91c26be47f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095793"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154214"
 ---
 # <a name="ijsdebugdatatargetreadbstr-method"></a>IJsDebugDataTarget::ReadBSTR 方法
 從偵錯目標讀取 BSTR。  

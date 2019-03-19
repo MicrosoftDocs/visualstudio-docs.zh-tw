@@ -11,14 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f168a896c218f33735c4e67f43a9833a474191ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5ccdd4cd8bafc4bc4a899ea47d62ec10e578569c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624187"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58148200"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>新的專案產生：在幕後，第二部分
+
 在 [產生新專案：在幕後，第一段](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我們可了解如何**新的專案**就會填入方塊的對話方塊。 假設您已選取**Visual C# Windows 應用程式**、 填入**名稱**並**位置**文字方塊中，然後按下的 [確定]。
 
 ## <a name="generating-the-solution-files"></a>產生的方案檔
@@ -31,7 +32,7 @@ ms.locfileid: "56624187"
 
  讓我們看看一般專案項目範本。 擷取並檢查在 Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 資料夾中的 Program.cs 中。
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -45,9 +46,9 @@ namespace $safeprojectname$
 }
 ```
 
- 如果您建立新的 Windows 應用程式專案，名為 Simple 時，範本將會取代`$safeprojectname$`參數與專案的名稱。
+如果您建立新的 Windows 應用程式專案，名為 Simple 時，範本將會取代`$safeprojectname$`參數與專案的名稱。
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -66,7 +67,7 @@ namespace Simple
 ## <a name="a-look-inside-a-vstemplate-file"></a>深入了解。VSTemplate 檔案
  基本.vstemplate 檔案的格式
 
-```
+```xml
 <VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
     <TemplateData>
     </TemplateData>
@@ -79,7 +80,7 @@ namespace Simple
 
  中的標記\<TemplateContent > 區段控制產生新的專案和專案項目。 以下是\<TemplateContent > 從 cswindowsapplication.vstemplate 檔案 \Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 資料夾中的區段。
 
-```
+```xml
 <TemplateContent>
   <Project File="WindowsApplication.csproj" ReplaceParameters="true">
     <ProjectItem ReplaceParameters="true"
@@ -121,7 +122,7 @@ namespace Simple
 
  第一個且唯一\<專案 > 範本讀取的標記：
 
-```
+```xml
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">
 ```
 
@@ -132,7 +133,7 @@ namespace Simple
 
  以下是\<ItemGroup > 從 Simple.csproj 所建立的專案參考：
 
-```
+```xml
 <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -145,7 +146,7 @@ namespace Simple
 
  您所見，這些是出現在 [方案總管] 中的六個專案參考。 以下是從另一個區段\<ItemGroup >。 為了清楚起見已刪除的程式碼行數。 這個區段會使 Settings.Designer.cs Settings.settings 而定：
 
-```
+```xml
 <ItemGroup>
     <Compile Include="Properties\Settings.Designer.cs">
         <DependentUpon>Settings.settings</DependentUpon>
@@ -154,5 +155,6 @@ namespace Simple
 ```
 
 ## <a name="see-also"></a>另請參閱
+
 - [新的專案產生：在幕後，第一部](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

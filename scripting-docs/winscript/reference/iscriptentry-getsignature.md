@@ -1,8 +1,7 @@
 ---
-title: IScriptEntry::GetSignature |Microsoft Docs
+title: IScriptEntry::GetSignature | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 245b5806006ad94740e09e23f881e26e071a3bc1
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 70cc1939ae4eb1e3c58d31b3d42b7f1b4603ce9e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092725"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145300"
 ---
 # <a name="iscriptentrygetsignature"></a>IScriptEntry::GetSignature
 傳回的型別資訊`IScriptEntry`函式物件。  

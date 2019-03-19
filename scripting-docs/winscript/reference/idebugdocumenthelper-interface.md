@@ -2,7 +2,6 @@
 title: IDebugDocumentHelper 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fdb153a81d63a7a6cffd0b42001405ecfb87596
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 7322ea5e2026ff3f4491ed1106dceb97a5f11c73
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346968"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58153457"
 ---
 # <a name="idebugdocumenthelper-interface"></a>IDebugDocumentHelper 介面
 提供智慧裝載時，所需的許多介面的實作，例如`IDebugDocument`， `IDebugDocumentContext`， `IDebugDocumentProvider`， `IDebugDocumentText`，和`IDebugDocumentTextEvents`介面。  

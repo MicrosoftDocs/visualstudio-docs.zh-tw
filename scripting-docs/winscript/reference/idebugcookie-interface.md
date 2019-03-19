@@ -2,7 +2,6 @@
 title: IDebugCookie 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d47995fbf6c713af0f1d0213dbf5c3c98d54a0e
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 8ee129526113a1c8af8f918de81c1f286d5cb703
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344018"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154461"
 ---
 # <a name="idebugcookie-interface"></a>IDebugCookie 介面
 可讓偵錯 cookie 設定，以搭配`IMachineDebugManagerCookie`介面。 如需詳細資訊，請參閱 < [IMachineDebugManagerCookie 介面](../../winscript/reference/imachinedebugmanagercookie-interface.md)。 此介面是實作處理程序進行偵錯管理員 (PDM)，並由指令碼偵錯工具。  

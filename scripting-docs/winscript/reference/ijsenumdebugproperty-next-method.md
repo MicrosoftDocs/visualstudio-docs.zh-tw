@@ -2,7 +2,6 @@
 title: 'Ijsenumdebugproperty:: Next 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e6b0e3499f9420d42660880f616d2d0873d7a0f
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 3ec6a1dded8c24de06a5746261a19b6609a97ada
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54086771"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58147081"
 ---
 # <a name="ijsenumdebugpropertynext-method"></a>IJsEnumDebugProperty::Next 方法
 會讀取這個物件的屬性。  

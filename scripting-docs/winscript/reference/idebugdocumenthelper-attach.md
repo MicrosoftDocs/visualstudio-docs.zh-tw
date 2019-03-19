@@ -2,7 +2,6 @@
 title: 'Idebugdocumenthelper:: Attach |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0f397f70d994d0997163a06766d32c35e9b2ab7
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8f4fbd1686d27e594b748ca97c82c645de1b93de
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090138"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151202"
 ---
 # <a name="idebugdocumenthelperattach"></a>IDebugDocumentHelper::Attach
 將這份文件加入至文件樹狀目錄中。  
