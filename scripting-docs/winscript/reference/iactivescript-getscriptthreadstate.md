@@ -1,8 +1,7 @@
 ---
-title: IActiveScript::GetScriptThreadState |Microsoft Docs
+title: IActiveScript::GetScriptThreadState | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b191f1b70aa522cba0a04e0781ada69a8fe5ca5
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: a0066894830c111a8e0ad18f7acdc09d6114162e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097522"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145963"
 ---
 # <a name="iactivescriptgetscriptthreadstate"></a>IActiveScript::GetScriptThreadState
 擷取的指令碼執行緒的目前狀態。  

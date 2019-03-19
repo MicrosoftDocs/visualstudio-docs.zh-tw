@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c7a98a3c03f63b74cefa3ab3a4586408cfccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4fdbb093abdf0d99f17c9bd27af3623d529a31ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621002"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146340"
 ---
 # <a name="checklist-create-new-project-types"></a>檢查清單：建立新的專案類型
 您必須完成數個工作，以建立新的專案類型。 下列檢查清單提供這些工作的指引：
@@ -37,7 +37,7 @@ ms.locfileid: "56621002"
 
     -   專案項目管理，包括加入您的專案**新的專案** 對話方塊。 如需詳細資訊，請參閱 <<c0> [ 加入專案和專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)並[註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)。
 
-    -   持續性的專案狀態與個別項目。 如需詳細資訊，請參閱 <<c0> [ 開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)。 持續性解決方案的資訊，請參閱 <<c0> [ 解決方案](../../extensibility/internals/solutions.md)。
+    -   持續性的專案狀態與個別項目。 如需詳細資訊，請參閱 <<c0> [ 開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)。 持續性解決方案的資訊，請參閱 <<c0> [ 解決方案](../../extensibility/internals/solutions-overview.md)。
 
     -   在 [屬性] 視窗中顯示的設定獨立屬性。 如需詳細資訊，請參閱 <<c0> [ 擴充屬性](../../extensibility/internals/extending-properties.md)。
 

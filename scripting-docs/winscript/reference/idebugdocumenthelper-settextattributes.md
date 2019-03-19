@@ -2,7 +2,6 @@
 title: IDebugDocumentHelper::SetTextAttributes |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bef4ae1ccff730d6865e00174ec73e991245bd43
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 5d6ef4130cd9383cf4f59c2e3f5407bdb7780a0e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096495"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152612"
 ---
 # <a name="idebugdocumenthelpersettextattributes"></a>IDebugDocumentHelper::SetTextAttributes
 在某個範圍的文字，覆寫對該文字其他屬性上設定的屬性。  
@@ -60,7 +59,7 @@ HRESULT SetTextAttributes(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [Idebugdocumenthelper:: Addunicodetext](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
- [Idebugdocumenthelper:: Adddbcstext](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
- [Adddeferredtext](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

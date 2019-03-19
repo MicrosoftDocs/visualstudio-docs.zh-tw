@@ -2,7 +2,6 @@
 title: IDebugDocumentTextEvents::onUpdateDocumentAttributes |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10a423e90733174cbc6feebae138e59145e01df3
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: ef8791a68086c02b7e1cc8d0a603deba63943af4
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087096"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58144767"
 ---
 # <a name="idebugdocumenttexteventsonupdatedocumentattributes"></a>IDebugDocumentTextEvents::onUpdateDocumentAttributes
 表示文件屬性的變更。  
