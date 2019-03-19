@@ -2,7 +2,6 @@
 title: IDebugDocumentHelper::Detach |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd86e1860cf4bd22a71b6f728ca36dbd3b7414a4
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 74b6ce51e78cb376263227461d653169fd6a406b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089488"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151319"
 ---
 # <a name="idebugdocumenthelperdetach"></a>IDebugDocumentHelper::Detach
 移除文件樹狀結構中的這份文件。  
@@ -48,5 +47,5 @@ HRESULT Detach();
  這個方法會將這份文件移除文件樹狀結構。  
   
 ## <a name="see-also"></a>另請參閱  
- [Idebugdocumenthelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
+ [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)

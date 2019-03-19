@@ -2,7 +2,6 @@
 title: 'Ienumjsstackframes:: Reset 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9d66f6e36284f0627af7fd44f41fafd6b798e50
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: e94331f8b6b9f68c01109ef355a4cba3cc398f4d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349890"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157235"
 ---
 # <a name="ienumjsstackframesreset-method"></a>IEnumJsStackFrames::Reset 方法
 將堆疊框架重設之前的第一個元素的位置。  

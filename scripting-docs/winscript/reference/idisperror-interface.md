@@ -2,7 +2,6 @@
 title: IDispError 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b717ebfe740a9b356513bb0f15e90c629a14e147
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 2c67ff6e458f8350ef36a8a454e017b3ce6ea114
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345834"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58144923"
 ---
 # <a name="idisperror-interface"></a>IDispError 介面
 提供詳細內容錯誤訊息。  

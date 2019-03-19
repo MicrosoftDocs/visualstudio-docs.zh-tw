@@ -1,8 +1,7 @@
 ---
-title: IDebugDocumentText::GetPositionOfContext |Microsoft Docs
+title: IDebugDocumentText::GetPositionOfContext | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: adc921ab461cd0cafb144c9d54061947e160c392
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 6058502c076dd4f75dbbb44fdb161b889a965fec
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092751"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145118"
 ---
 # <a name="idebugdocumenttextgetpositionofcontext"></a>IDebugDocumentText::GetPositionOfContext
 傳回對應至文件內容的字元位置範圍。  

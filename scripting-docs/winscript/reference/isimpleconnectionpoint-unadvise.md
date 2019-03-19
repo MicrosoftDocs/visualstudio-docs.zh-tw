@@ -1,8 +1,7 @@
 ---
-title: ISimpleConnectionPoint::Unadvise |Microsoft Docs
+title: ISimpleConnectionPoint::Unadvise | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83fdf8f6a6e9378d328a9df61b1561a1ae747ae8
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 189c07c10e93df9a61218b6a94a0b317999676d2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089257"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154656"
 ---
 # <a name="isimpleconnectionpointunadvise"></a>ISimpleConnectionPoint::Unadvise
 終止透過先前建立的諮詢連接`ISimpleConnectionPoint::Advise`。  

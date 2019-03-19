@@ -1,8 +1,7 @@
 ---
-title: IDebugApplication::RemoveStackFrameSniffer |Microsoft Docs
+title: IDebugApplication::RemoveStackFrameSniffer | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46b46c8ba2cd4e87492c5cc23330baf0da27ef41
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 1462ff1382f3ccb844ccc98c6e6eec676a86c669
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087915"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58159253"
 ---
 # <a name="idebugapplicationremovestackframesniffer"></a>IDebugApplication::RemoveStackFrameSniffer
 移除此應用程式中的堆疊框架的列舉值提供者。  

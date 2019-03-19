@@ -1,8 +1,7 @@
 ---
-title: IRemoteDebugApplicationEvents::OnCreateThread |Microsoft Docs
+title: IRemoteDebugApplicationEvents::OnCreateThread | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ff45733723395dc80d85c6c3242f24ba1474060
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 64317666fe5c449207c2eedac550ca6a1effc1ab
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088916"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154318"
 ---
 # <a name="iremotedebugapplicationeventsoncreatethread"></a>IRemoteDebugApplicationEvents::OnCreateThread
 會建立執行緒事件的處理。  

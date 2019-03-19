@@ -1,8 +1,7 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentContextToTop |Microsoft Docs
+title: IApplicationDebuggerUI::BringDocumentContextToTop | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 890cc1b6c38f44c4140274dcaa19deff1fd276e2
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 596f9357a8553bf6c39140a6948d8ae3085c3210
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095507"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58147671"
 ---
 # <a name="iapplicationdebuggeruibringdocumentcontexttotop"></a>IApplicationDebuggerUI::BringDocumentContextToTop
 會包含偵錯工具使用者介面中的第一個指定的文件內容的視窗，以及捲動視窗至內容。  

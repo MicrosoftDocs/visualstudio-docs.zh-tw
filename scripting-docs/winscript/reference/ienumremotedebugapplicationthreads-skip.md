@@ -1,8 +1,7 @@
 ---
-title: IEnumRemoteDebugApplicationThreads::Skip |Microsoft Docs
+title: IEnumRemoteDebugApplicationThreads::Skip | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b4369eb0cbe8d27938ee1b8ec3e217e3b69c7eb5
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: a8ef51b7e1b5e038534fda6e3585304515c7d165
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093076"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58149402"
 ---
 # <a name="ienumremotedebugapplicationthreadsskip"></a>IEnumRemoteDebugApplicationThreads::Skip
 略過指定的數目的列舉型別序列中的區段。  

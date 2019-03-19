@@ -1,8 +1,7 @@
 ---
-title: IScriptEntry::GetName |Microsoft Docs
+title: IScriptEntry::GetName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c388340c35afe2ae7e5e7d0f5078e70b46c0b1bc
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: d23843aa72ce5cf79f6442048b6493d17eb6ef64
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090879"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58147913"
 ---
 # <a name="iscriptentrygetname"></a>IScriptEntry::GetName
 代表單一物件 （例如函式） 的項目，傳回物件的名稱。  

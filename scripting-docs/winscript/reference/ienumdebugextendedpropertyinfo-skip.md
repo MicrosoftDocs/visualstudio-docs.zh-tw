@@ -2,7 +2,6 @@
 title: IEnumDebugExtendedPropertyInfo::Skip |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc88f41e1c75a2b6616cc6aba363b8824605a696
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 87913f15f8799be0ad3f6616eeea53a8a627e3d0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345288"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157132"
 ---
 # <a name="ienumdebugextendedpropertyinfoskip"></a>IEnumDebugExtendedPropertyInfo::Skip
 略過指定的數目的`ExtendedDebugPropertyInfo`列舉型別序列中的結構。  

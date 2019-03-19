@@ -1,8 +1,7 @@
 ---
-title: IRemoteDebugApplicationThread::GetSystemThreadId |Microsoft Docs
+title: IRemoteDebugApplicationThread::GetSystemThreadId | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3688ba15c61e4d2ff4c73844f9489115c9e66a7d
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 9d5119db4108ef7fa0783bccc3f747fbd2ed26d0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094727"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58144975"
 ---
 # <a name="iremotedebugapplicationthreadgetsystemthreadid"></a>IRemoteDebugApplicationThread::GetSystemThreadId
 傳回與執行緒相關聯的操作系統相關識別碼。  

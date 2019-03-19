@@ -2,7 +2,6 @@
 title: IActiveScriptAuthor 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd9d9c2a330ee72c6a843cd42586a09bb1d51e3c
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 6b3d9725d72f5213aadc3d9400bef87cecb20ba0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346367"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58159292"
 ---
 # <a name="iactivescriptauthor-interface"></a>IActiveScriptAuthor 介面
 表示撰寫服務，包括 IntelliSense 和定序的資訊。  

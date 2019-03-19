@@ -1,8 +1,7 @@
 ---
-title: IScriptEntry::GetItemName |Microsoft Docs
+title: IScriptEntry::GetItemName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fc82dbd26fc2b9956b3d32596e5fa730b96f9a8
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 9d8abc6d1264ce532adcbc59c262510a39ea7a91
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093453"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157785"
 ---
 # <a name="iscriptentrygetitemname"></a>IScriptEntry::GetItemName
 傳回項目名稱可識別`IScriptEntry`物件。  
