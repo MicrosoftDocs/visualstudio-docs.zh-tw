@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/29/2019
+ms.date: 03/01/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: f0ff504f889cf04bc4f8216b3e4a6014a87fa027
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: e69cdb2491286d0fbe1cf2d22746191f60824940
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324913"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160999"
 ---
 ## <a name="test-controller"></a>測試控制器
 

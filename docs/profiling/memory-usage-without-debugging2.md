@@ -1,6 +1,6 @@
 ---
 title: 分析記憶體使用量 (不偵錯) | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/15/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a51f86da8eac527ed7744e345ff811797afcd36d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615909"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873450"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>分析記憶體使用量 (不使用偵錯工具)
 
@@ -72,7 +72,7 @@ ms.locfileid: "56615909"
 
 [快照] 窗格中的數字顯示擷取每個快照時，記憶體中的位元組和物件，以及快照與上一個快照之間的差異。
 
-數字是連結，其會在新的 Visual Studio 視窗中開啟詳細的 [記憶體使用量] 報表檢視。 [快照詳細資料報表](#snapshot-details-report)顯示一張快照中的類型和執行個體。 [快照差異 (diff) 報表](#snapshot-difference-diff-reports)會比較兩張快照的類型和執行個體。
+數字是連結，其會在新的 Visual Studio 視窗中開啟詳細的 [記憶體使用量] 報表檢視。 [快照詳細資料報表](#snapshot-details-reports)顯示一張快照中的類型和執行個體。 [快照差異 (diff) 報表](#snapshot-difference-diff-reports)會比較兩張快照的類型和執行個體。
 
   ![快照檢視連結](../profiling/media/memuse__snapshotview_numbered.png "快照檢視連結")
 

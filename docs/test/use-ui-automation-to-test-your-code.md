@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab3cf50dfc860a857b3e9875ae6c71aff79014e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223477"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145222"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 
@@ -140,7 +140,7 @@ ms.locfileid: "57223477"
 
 8. 執行測試。
 
-   使用 [測試總管]，或開啟測試方法中的捷徑功能表，然後選擇 [執行測試]。 如需如何執行測試的詳細資訊，請參閱[使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)以及本主題結尾[後續動作](#what's-next?)節中的*執行自動程式化 UI 測試的其他選項*。
+   使用 [測試總管]，或開啟測試方法中的捷徑功能表，然後選擇 [執行測試]。 如需如何執行測試的詳細資訊，請參閱[使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)以及本主題結尾[後續動作](#whats-next?)節中的*執行自動程式化 UI 測試的其他選項*。
 
 本主題中的其餘各節提供此程序中各步驟的更多詳細資料。
 

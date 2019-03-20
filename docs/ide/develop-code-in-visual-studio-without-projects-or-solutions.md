@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed08d8d94fbf94b8be3d1bf4b11eb116ceb6d4d1
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718544"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194946"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼
 
@@ -103,7 +103,7 @@ ms.locfileid: "56718544"
 
 ### <a name="codebases-that-contain-c-code"></a>包含 C++ 程式碼的程式碼基底
 
-如需在 Visual Studio 中不搭配方案或專案開啟 C++ 程式碼的相關資訊，請參閱[適用於 C++ 的「開啟資料夾」專案](/cpp/ide/non-msbuild-projects)。
+如需在 Visual Studio 中不搭配方案或專案開啟 C++ 程式碼的相關資訊，請參閱[適用於 C++ 的「開啟資料夾」專案](/cpp/build/open-folder-projects-cpp)。
 
 ### <a name="codebases-that-contain-a-visual-studio-project"></a>包含 Visual Studio 專案的程式碼基底
 
@@ -118,6 +118,6 @@ ms.locfileid: "56718544"
 ## <a name="see-also"></a>另請參閱
 
 - [自訂建置與偵錯工作](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [適用於 C++ 的「開啟資料夾」專案](/cpp/ide/non-msbuild-projects)
-- [C++ 中的 CMake 專案](/cpp/ide/cmake-tools-for-visual-cpp)
+- [適用於 C++ 的「開啟資料夾」專案](/cpp/build/open-folder-projects-cpp)
+- [C++ 中的 CMake 專案](/cpp/build/cmake-projects-in-visual-studio)
 - [在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)

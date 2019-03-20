@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e670e90f29e0ceb33fb52b4e29bf1bb917df1a8e
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: 9e0c9d47968d6e120beb8815a900ff8cc0b82603
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737053"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982996"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安裝 Visual Studio 離線安裝所需的憑證
 
@@ -113,6 +113,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 ## <a name="checking-if-certificates-are-already-installed"></a>檢查是否已安裝憑證
 
 在安裝系統上的一個檢查方法是遵循下列步驟：
+
 1. 執行 **mmc.exe**。<br/>
   a. 按一下 [檔案]，然後選取 [新增/移除嵌入式管理單元]。<br/>
   b. 按兩下 [憑證]，並選取 [電腦帳戶]，然後按一下 [下一步]。<br/>

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a7d9d72f38b6ac166eb5c92998fbe6c4d8c096
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 0cbf7582c5089d99a71b2354878b03c265755e65
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318728"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869079"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
 
@@ -25,7 +25,7 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
 > 在大部分情況下，建議使用 Google Android 模擬器，而不是 Visual Studio 的 Android 模擬器：
 > - Visual Studio Emulator for Android 在 Visual Studio 2015 之後不受支援。
 > - Android 6.0 版以上的模擬器映像不適用於 Visual Studio Emulator for Android。
-> - Google Android 模擬器現在支援 [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v)。
+> - Google Android 模擬器現在支援 [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v)。
 > - Visual Studio Tools for Apache Cordova 可與 Google Android 模擬器搭配使用。 如需詳細資訊，請參閱[在 Android 上執行 Apache Cordova 應用程式](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (請注意，您不再需要停用 Hyper-V，如本文中所述)。
 >
 > 如需設定和使用 Google Android 模擬器的詳細資訊，請參閱 [Android Emulator 安裝](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/)。

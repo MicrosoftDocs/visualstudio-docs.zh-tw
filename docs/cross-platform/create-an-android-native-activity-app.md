@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 60e2fccf4b26516e88b05b5fb8fc0f8d0eb20f85
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbe0942226e44e5ca2908f7c13f34595bef34887
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983725"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069693"
 ---
 # <a name="create-an-android-native-activity-app"></a>建立 Android Native Activity 應用程式
 
@@ -31,9 +31,7 @@ ms.locfileid: "54983725"
 
 在本教學課程中，您會建立新的 Android Native Activity 專案，然後在 Visual Studio Emulator for Android 中建置並執行預設的應用程式。
 
-### <a name="to-create-a-new-project"></a>建立新的專案
-
-1. 開啟 Visual Studio。 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+1. 在 Visual Studio 中，選擇 [檔案] > [新增] > [專案]。
 
 2. 在 [新增專案] 對話方塊中的 [範本] 底下，選擇 [Visual C++] > [跨平台]，然後選擇 [Native-Activity 應用程式 (Android)] 範本。
 

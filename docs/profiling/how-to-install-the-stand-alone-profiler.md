@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26d28825d03c6deeeaa0ee33ccf62620398e1d52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1f69e73274429a0da032760ab563d5aadf71a655
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612773"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867252"
 ---
-# <a name="how-to-install-the-stand-alone-profiler"></a>作法：安裝獨立分析工具
+# <a name="how-to-install-the-stand-alone-profiler"></a>HOW TO：安裝獨立分析工具
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供命令列型獨立分析工具，不用安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 即可執行。 當電腦未安裝或無法安裝開發環境時，就會發生這種情況。 例如，您不應該在生產環境的網頁伺服器上安裝開發環境。
 
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "56612773"
 
 ### <a name="to-install-the-stand-alone-profiler"></a>安裝獨立分析工具
 
-1. 下載 [Visual Studio 效能工具](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio-2017)。
+1. 下載 [Visual Studio 效能工具](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio)。
 
 1. 在您下載效能工具處找到獨立分析工具安裝程式 (*vs_standaloneprofiler.exe*) 並執行它。
 

@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/29/2019
+ms.date: 03/01/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 7c281bfbf0c4f835ca41f38529b5d5d9ab74850c
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: f63c6c88fa2a639d0e8dcbc8cc336b4ef613f45b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324723"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160776"
 ---
 ## <a name="test-agent"></a>測試代理程式
 
