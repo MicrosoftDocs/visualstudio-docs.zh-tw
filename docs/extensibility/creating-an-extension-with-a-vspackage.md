@@ -1,6 +1,6 @@
 ---
 title: Creating an Extension with VSPackage |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 author: gregvanl
@@ -8,22 +8,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0f5e7b94c4aa8ff4bcdea88741c8be0319bcc16
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a0d76e0055c4bae6df270a304364c80cd945f4a1
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316272"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194531"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>使用 VSPackage 建立擴充功能
+
 本逐步解說會示範如何建立 VSIX 專案，並加入 VSPackage 專案項目。 我們將使用 VSPackage 來取得，UI Shell 服務以顯示訊息方塊。
 
 ## <a name="prerequisites"></a>必要條件
+
 從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-vspackage"></a>建立 VSPackage
 
-1. 建立 VSIX 專案，名為**FirstPackage**。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C#** > **擴充性**。
+1. 建立 VSIX 專案，名為**FirstPackage**。 您可以找到在 VSIX 專案範本**新的專案**藉由搜尋 「 vsix 」 的對話方塊。
 
 2. 當專案開啟時，新增名為 Visual Studio 封裝項目範本**FirstPackage**。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#** > **擴充性**，然後選取**Visual Studio Package**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為*FirstPackage.cs*。
 
@@ -34,9 +36,10 @@ ms.locfileid: "56316272"
 4. 在實驗執行個體中，開啟**工具** > **擴充功能和更新**視窗。 您應該會看到**FirstPackage**延伸模組。 (如果您開啟**擴充功能和更新**在您的 Visual Studio 的工作執行個體，您將不會看到**FirstPackage**)。
 
 ## <a name="load-the-vspackage"></a>載入 VSPackage
-此時的延伸模組未載入，因為沒有任何會導致它載入。 互動 （按一下功能表命令，開啟 [工具] 視窗），其 UI 或藉由指定特定的 UI 內容中，應該載入 VSPackage 時，您通常可以載入延伸模組。 如需有關載入 Vspackage 和 UI 內容的詳細資訊，請參閱[載入 Vspackage](../extensibility/loading-vspackages.md)。 此程序，我們將示範如何載入 VSPackage，開啟方案時。
 
-1. 開啟*FirstPackage.cs*檔案。 尋找宣告`FirstPackage`類別。 取代下列項目取代現有的屬性：
+到目前為止，延伸模組不會載入，因為沒有任何會導致它載入。 互動 （按一下功能表命令，開啟 [工具] 視窗），其 UI 或藉由指定特定的 UI 內容中，應該載入 VSPackage 時，您通常可以載入延伸模組。 如需有關載入 Vspackage 和 UI 內容的詳細資訊，請參閱[載入 Vspackage](../extensibility/loading-vspackages.md)。 此程序，我們將示範如何載入 VSPackage，開啟方案時。
+
+1. 開啟*FirstPackage.cs*檔案。 尋找宣告`FirstPackage`類別。 取代現有的屬性具有下列屬性：
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]

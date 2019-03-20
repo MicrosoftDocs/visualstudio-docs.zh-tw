@@ -1,6 +1,6 @@
 ---
 title: 建立 Windows Forms 工具箱控制項 |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - winforms
@@ -12,31 +12,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 725d35d957e1b7aef285e0d666dc4ea15e5ceefd
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: a3c423361b860c5769d9555409b44973fdc25896
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872998"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194573"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>建立 Windows Forms 工具箱控制項
-Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工具 (VS SDK) 可讓您建立的控制項，會自動新增至**工具箱**安裝擴充功能時。 本主題說明如何使用範本來建立簡單的計數器控制項，您就可以散發給其他使用者。
+
+Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工具 (VS SDK)，可讓您建立**工具箱**安裝擴充功能時，會自動新增的控制項。 本逐步解說示範如何使用範本來建立簡單的計數器控制項，您就可以散發給其他使用者。
 
 ## <a name="prerequisites"></a>必要條件
+
 從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
-## <a name="create-a-windows-forms-toolbox-control"></a>建立 Windows Forms 工具箱控制項
+## <a name="create-the-toolbox-control"></a>建立工具箱控制項
+
 Windows Forms 工具箱控制項範本建立未定義的使用者控制項，並提供的所有功能，才能將控制項加入**工具箱**。
 
 ### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>建立使用 Windows Forms 工具箱控制項的延伸模組
 
-1. 建立 VSIX 專案，名為`MyWinFormsControl`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C#** > **擴充性**。
+1. 建立 VSIX 專案，名為`MyWinFormsControl`。 您可以找到在 VSIX 專案範本**新的專案**對話方塊中的，藉由搜尋 「 vsix"。
 
 2. 當專案開啟時，新增**Windows Forms 工具箱控制項**名為的項目範本`Counter`。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#** > **擴充性**，然後選取**Windows Forms 工具箱控制項**
 
 3. 這會將使用者控制項，新增`ProvideToolboxControlAttribute`<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>要放置在控制項**工具箱**，和**Microsoft.VisualStudio.ToolboxControl**資產部署的 VSIX 資訊清單中的項目。
 
 ### <a name="build-a-user-interface-for-the-control"></a>建置使用者介面控制項
+
 `Counter`控制項，需要兩個子控制項：<xref:System.Windows.Forms.Label>來顯示目前的計數，和<xref:System.Windows.Forms.Button>計數重設為 0。 沒有任何其他子控制項所需的因為呼叫端會以程式設計方式遞增計數器。
 
 #### <a name="to-build-the-user-interface"></a>建置使用者介面
@@ -58,6 +62,7 @@ Windows Forms 工具箱控制項範本建立未定義的使用者控制項，並
     |`Button1`|**Text**|重設|
 
 ### <a name="code-the-user-control"></a>使用者控制項的程式碼
+
 `Counter`控制項會公開遞增計數器，此計數器會遞增，每當引發事件的方法**重設**按鈕，然後將目前的計數、 顯示文字，以及是否要顯示的三個屬性或隱藏**重設** 按鈕。 `ProvideToolboxControl` 屬性會決定 [工具箱]  顯示 `Counter` 控制項的位置。
 
 #### <a name="to-code-the-user-control"></a>使用者控制項的程式碼
@@ -146,13 +151,14 @@ Windows Forms 工具箱控制項範本建立未定義的使用者控制項，並
     ```
 
 ### <a name="test-the-control"></a>測試控制項
+
  若要測試**工具箱**控制第一次在開發環境中進行測試，然後在已編譯的應用程式中進行測試。
 
 #### <a name="to-test-the-control"></a>測試控制項
 
-1. 請按 **F5**。
+1. 按下**F5**要**開始偵錯**。
 
-    這會建置專案，並開啟第二個安裝了控制項的 Visual Studio 的實驗性執行個體。
+    此命令會建置專案，並開啟第二個安裝了控制項的 Visual Studio 的實驗性執行個體。
 
 2. 在 Visual Studio 的實驗性執行個體，建立**Windows Forms 應用程式**專案。
 
@@ -199,16 +205,18 @@ Windows Forms 工具箱控制項範本建立未定義的使用者控制項，並
 
 16. 按一下 **測試**直到在計數器達到**5**關閉訊息方塊的每一次。
 
-    **重設**按鈕會再度出現。
+    **重設**按鈕隨即再度出現。
 
 17. 按一下 [重設] 。
 
     此計數器會重設為**0**。
 
 ## <a name="next-steps"></a>後續步驟
-當您建置**工具箱**控制項，Visual Studio 會建立名為的檔案*ProjectName.vsix*您專案的 \bin\debug\ 資料夾中。 您可以將控制項部署上傳 *.vsix*檔案到網路或網站。 當使用者在開啟 *.vsix*是安裝檔案，該控制項，並將其加入 Visual Studio**工具箱**使用者的電腦上。 或者，您可以上傳 *.vsix*的檔案[Visual Studio Marketplace](https://marketplace.visualstudio.com/) ，讓使用者可以瀏覽來尋找它**工具** >  **延伸模組和更新**對話方塊。
+
+當您建置**工具箱**控制項，Visual Studio 會建立名為的檔案*ProjectName.vsix*您專案的 \bin\debug\ 資料夾中。 您可以將控制項部署上傳 *.vsix*檔案到網路或網站。 當使用者在開啟 *.vsix*是安裝檔案，該控制項，並將其加入 Visual Studio**工具箱**使用者的電腦上。 或者，您可以上傳 *.vsix*的檔案[Visual Studio Marketplace](https://marketplace.visualstudio.com/) ，讓使用者可以瀏覽來尋找它**工具** >  **擴充功能和更新**對話方塊。
 
 ## <a name="see-also"></a>另請參閱
+
 - [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
 - [建立 WPF 工具箱控制項](../extensibility/creating-a-wpf-toolbox-control.md)
 - [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)

@@ -1,6 +1,6 @@
 ---
 title: 建立 WPF 工具箱控制項 |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
@@ -12,23 +12,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 811c87f73d1122b3e97ffdef9b4d3f6c044ce941
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867977"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194823"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>建立 WPF 工具箱控制項
-(Windows Presentation Framework) 的 WPF 工具箱控制項 範本可讓您建立會自動新增至 WPF 控制項**工具箱**安裝擴充功能時。 本主題說明如何使用範本來建立**工具箱**可以散發給其他使用者的控制項。
+
+(Windows Presentation Framework) 的 WPF 工具箱控制項 範本可讓您建立會自動新增至 WPF 控制項**工具箱**安裝擴充功能時。 本逐步解說示範如何使用範本來建立**工具箱**可以散發給其他使用者的控制項。
 
 從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
-## <a name="create-a-wpf-toolbox-control"></a>建立 WPF 工具箱控制項
+## <a name="create-the-toolbox-control"></a>建立工具箱控制項
 
 ### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>建立 WPF 工具箱控制項擴充功能
 
-1. 建立 VSIX 專案，名為`MyToolboxControl`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C#** > **擴充性**。
+1. 建立 VSIX 專案，名為`MyToolboxControl`。 您可以找到在 VSIX 專案範本**新的專案**藉由搜尋 「 vsix 」 的對話方塊。
 
 2. 當專案開啟時，新增**WPF 工具箱控制項**名為的項目範本`MyToolboxControl`。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 **加入新項目**對話方塊中，移至**Visual C#** > **擴充性**，然後選取**WPF 工具箱控制項**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為*MyToolboxControl.cs*。
 
@@ -53,6 +54,7 @@ ms.locfileid: "57867977"
     ```
 
 ## <a name="renaming-the-control"></a>重新命名控制項
+
  根據預設，您的控制項將會出現在**工具箱**作為**MyToolboxControl**群組中名為**MyToolboxControl.MyToolboxControl**。 您可以變更這些名稱*MyToolboxControl.xaml.cs*檔案。
 
 1. 開啟*MyToolboxControl.xaml.cs*程式碼檢視中。
@@ -75,6 +77,7 @@ ms.locfileid: "57867977"
     ```
 
 ## <a name="build-test-and-deployment"></a>建置、 測試和部署
+
  當您偵錯專案時，您應該會發現在安裝控制項**工具箱**的 Visual Studio 的實驗執行個體。
 
 ### <a name="to-build-and-test-the-control"></a>建置和測試控制項
