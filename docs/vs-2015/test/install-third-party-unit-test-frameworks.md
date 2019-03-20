@@ -8,12 +8,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0901c16d4e467869768b3863a194ea524b5f9472
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ae69e33d60c4d6bc4257c6c9006b795d8cbdced
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787877"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868703"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>安裝協力廠商單元測試架構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Visual Studio 測試總管可以執行任何已針對總管開發配接器介面
 ### <a name="installing-from-the-web"></a>從 Web 安裝  
  如果您知道對哪個架構感興趣：  
   
-1. 開啟 MSDN 網站上的 [Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkId=236267)。  
+1. 開啟 [Visual Studio Marketplace](https://marketplace.visualstudio.com)。  
   
 2. 在 [尋找] 方塊中鍵入架構的名稱。  
   
@@ -50,7 +50,7 @@ Visual Studio 測試總管可以執行任何已針對總管開發配接器介面
   
    若要瀏覽架構和其他測試工具的清單：  
   
-4. 開啟 MSDN 網站上的 [Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkId=236267)。  
+4. 開啟 [Visual Studio Marketplace](https://marketplace.visualstudio.com)。  
   
 5. 選擇 [瀏覽]。  
   

@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立 WPF 桌面應用程式連接到 Azure 行動服務 |Microsoft Docs
+title: 逐步解說：建立連接至 Azure 行動服務的 WPF 桌面應用程式 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 21e8a2e56da1ab319cbd3f78c70d696a2388d2d3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803727"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195069"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>逐步解說：建立連接至 Azure 行動服務的 WPF 桌面應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -484,7 +484,7 @@ ms.locfileid: "54803727"
     > [!NOTE]
     >  您可能需要變更 URL 的數字部分。 Microsoft Azure 要求每個行動服務皆具備唯一的 URL。  
   
-     這會設定服務的 URL *https://wpfquickstart01.azure-mobile.net/*。  
+     這會設定服務的 URL `https://wpfquickstart01.azure-mobile.net/`。  
   
 4.  在 [資料庫]  清單中，選擇資料庫選項。 由於這個應用程式應該不常使用，您可以選擇 [建立免費的 20MB SQL 資料庫]  選項，或選擇已與訂閱相關聯的免費資料庫。  
   

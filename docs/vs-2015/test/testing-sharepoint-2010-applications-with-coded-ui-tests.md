@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 96a3a9fc38d82a2eaeb1adfbcfdd59f9ae503275
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f512ac0788128db87269407c10ae400268283f5
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775006"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873540"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ uiGridKeyboardInputEdit.Text=value;
   
 3. 安裝 [Fiddler](http://www.fiddler2.com/fiddler2/)。 這是擷取和記錄 HTTP 流量的簡單工具。  
   
-4. 下載 [fiddlerXap 專案](http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-36-48-70/FiddlerXapProxy.zip)。 將它解壓縮、進行建置，並執行 "CopySLHelper.bat" 指令碼，安裝使用 Fiddler 工具測試 Silverlight Web 組件時所需的協助程式 DLL。  
+4. 下載 [fiddlerXap 專案](https://40jajy3iyl373v772m19fybm-wpengine.netdna-ssl.com/wp-content/uploads/sites/6/2019/02/FiddlerXapProxy.zip)。 將它解壓縮、進行建置，並執行 "CopySLHelper.bat" 指令碼，安裝使用 Fiddler 工具測試 Silverlight Web 組件時所需的協助程式 DLL。  
   
    設定電腦之後，依照下列步驟，開始測試您的 SharePoint 2010 應用程式與 Silverlight Web 組件：  
   

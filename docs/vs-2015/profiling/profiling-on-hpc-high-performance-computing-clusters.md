@@ -21,17 +21,17 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8390fcfd5dd89607422b7614d064ec736f98f61b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802309"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867913"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>程式碼剖析 HPC (高效能運算) 叢集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用 [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] 或 [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] 程式碼剖析工具的取樣方法，在 Microsoft Windows HPC 叢集的計算節點上進行程式碼剖析。 如需有關 HPC 的詳細資訊，請參閱 Microsoft 網站上的 [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393)。  
+您可以使用 [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] 或 [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] 程式碼剖析工具的取樣方法，在 Microsoft Windows HPC 叢集的計算節點上進行程式碼剖析。 如需 HPC 的詳細資訊請參閱 < [Big Compute: HPC 與 Batch](https://azure.microsoft.com/solutions/big-compute/) Microsoft 網站上。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要在 HPC 計算節點上進行程式碼剖析，您必須執行下列動作︰  
@@ -55,8 +55,8 @@ ms.locfileid: "54802309"
 |||  
 |-|-|  
 |*%HeadNode%*|叢集前端節點的名稱。|  
-|*%FxPath%*|[!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 安裝程式的路徑。 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]安裝媒體的路徑是：WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|獨立版本的程式碼剖析工具安裝程式路徑。 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]安裝媒體的路徑是：Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|[!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 安裝程式的路徑。 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 安裝媒體的路徑是︰WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|獨立版本的程式碼剖析工具安裝程式路徑。 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 安裝媒體的路徑是︰Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>在 HPC 計算節點上進行程式碼剖析  
  您可以使用 HPC 效能精靈來指定 HPC 叢集和目標資訊，以設定程式碼剖析工作階段。 您可以在效能工作階段屬性頁中指定其他選項。 程式碼剖析工具會自動部署必要的目標二進位檔，並啟動分析工具和 HPC 應用程式。  

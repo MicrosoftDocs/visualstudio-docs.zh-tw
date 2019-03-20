@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b3e5a1ce334f0d5cb567eb8c4cefd27f1bca408b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9b12906c5a1a2f8e2473d2b0088600830a291744
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752962"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151176"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI 回應性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ ms.locfileid: "54752962"
   
     -   使用 [檢視診斷工作階段時間軸](#Ruler) 來檢視 [標記程式碼以供分析](#ProfileMark)、應用程式週期事件，以及這些事件的相關聯時間軸與其他圖表資料的時間軸。  
   
-    -   使用 [CPU utilization graph](#CPUutilization) 可檢視在特定時段中，CPU 活動及其處理之工作類型的一般資訊。 過多的 CPU 活動很可能會造成回應性問題及畫面格減少。  
+    -   使用 [CPU utilization graph](#CPUUtilization) 可檢視在特定時段中，CPU 活動及其處理之工作類型的一般資訊。 過多的 CPU 活動很可能會造成回應性問題及畫面格減少。  
   
     -   如果您要開發遊戲或多媒體應用程式，請使用 [檢視視覺輸送量 (FPS)](#VisualThroughput) 以找出畫面播放速率下降的時段。  
   

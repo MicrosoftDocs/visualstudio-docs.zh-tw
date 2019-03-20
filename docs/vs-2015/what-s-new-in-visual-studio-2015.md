@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844135"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195160"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 的新功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -131,14 +131,13 @@ ms.locfileid: "56844135"
 
      [Xamarin 開發人員指南](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) 中的 [偵錯](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) (iOS) 和 [在裝置上偵錯](http://developer.xamarin.com/guides) 說明偵錯經驗。
 
--   **C++ / Android**。 使用 [適用於跨平台行動裝置開發的 Visual C++](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) 範本以及如 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) 的協力廠商工具，建立適用於 Windows 和 Android 的原生應用程式。
+-   **C++ / Android**。 使用 [適用於跨平台行動裝置開發的 Visual C++](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) 範本以及如 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) 的協力廠商工具，建立適用於 Windows 和 Android 的原生應用程式。
 
 ## <a name="debugging-and-diagnostics"></a>偵錯和診斷
- 如需偵錯新功能的相關資訊，請參閱 [What’s New for the Debugger in Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015)。
 
- 在診斷中的新功能相關資訊，請參閱[What's New in 程式碼剖析工具](./profiling/what-s-new-in-profiling-tools.md)。
+在診斷中的新功能相關資訊，請參閱[What's New in 程式碼剖析工具](./profiling/what-s-new-in-profiling-tools.md)。
 
- 下列新的或改進的工具可對程式碼執行不同類型的診斷和分析：
+下列新的或改進的工具可對程式碼執行不同類型的診斷和分析：
 
 ### <a name="perftips"></a>效能提示
  效能提示顯示偵錯期間方法的執行時間，可讓您快速發現瓶頸，而不需要叫用分析工具。 若要開始，請參閱 [效能提示：使用 Visual Studio 偵錯，效能資訊快速檢視](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)。
