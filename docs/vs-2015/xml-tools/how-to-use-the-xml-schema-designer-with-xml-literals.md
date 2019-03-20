@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 592886a1cfe9d0ffc9c7165729cede3340bc65c8
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49218363"
@@ -25,7 +25,7 @@ ms.locfileid: "49218363"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-本主題描述如何在 Visual Studio 專案中檢視與 XML 常值相關的結構描述。  
+本主題描述如何在 Visual Basic 專案中檢視與 XML 常值相關的結構描述。  
   
 ### <a name="to-create-a-new-visual-basic-console-application-project"></a>建立新的 Visual Basic 主控台應用程式專案  
   

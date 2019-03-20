@@ -48,7 +48,7 @@ ms.locfileid: "54782083"
 5.  選擇 [確定] 按鈕，然後重建方案。  
   
 ## <a name="suppressing-warnings-for-visual-basic"></a>隱藏 Visual Basic 的警告  
- 編輯專案的 .vbproj 檔案，即可隱藏 Visual basic 的特定編譯器警告。 您也可以使用[專案設計工具、編譯頁面](../ide/reference/compile-page-project-designer-visual-basic.md)，依分類來隱藏警告。 如需詳細資訊，請參閱[在 Visual Basic 中設定警告](../ide/configuring-warnings-in-visual-basic.md)。  
+ 編輯專案的 .vbproj 檔案，即可隱藏 Visual Basic 的特定編譯器警告。 您也可以使用[專案設計工具、編譯頁面](../ide/reference/compile-page-project-designer-visual-basic.md)，依分類來隱藏警告。 如需詳細資訊，請參閱[在 Visual Basic 中設定警告](../ide/configuring-warnings-in-visual-basic.md)。  
   
 #### <a name="to-suppress-specific-warnings-for-visual-basic"></a>隱藏 Visual Basic 的特定警告  
   
