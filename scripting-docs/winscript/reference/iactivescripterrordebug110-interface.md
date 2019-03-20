@@ -2,7 +2,6 @@
 title: IActiveScriptErrorDebug110 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 067a62ec8b87c448577cfd6e5789ae5e073b5fb8
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 1bac0c15f31f12ae48f6669bf9a0853550f8c191
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345899"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58150643"
 ---
 # <a name="iactivescripterrordebug110-interface"></a>IActiveScriptErrorDebug110 介面
 將功能加入至[IActiveScriptDebug 介面](../../winscript/reference/iactivescriptdebug-interface.md)。 這個介面是由 JavaScript 引擎所實作，用於判斷為何會發生 BREAKREASON_ERROR 事件。  

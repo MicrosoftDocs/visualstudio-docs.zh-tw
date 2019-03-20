@@ -2,7 +2,6 @@
 title: IDebugDocumentHost 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46684bf2264813a8daaa466b98119496ba85d4b9
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 226e2700b471cd34496682d233e57946e124ff3b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346536"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155663"
 ---
 # <a name="idebugdocumenthost-interface"></a>IDebugDocumentHost 介面
 會公開主應用程式特有的功能，例如語法著色、 偵錯工具。 `IDebugDocumentHelper::SetDebugDocumentHost`方法會採用此介面做為引數。  

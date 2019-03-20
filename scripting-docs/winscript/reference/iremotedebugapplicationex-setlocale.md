@@ -1,8 +1,7 @@
 ---
-title: IRemoteDebugApplicationEx:SetLocale |Microsoft Docs
+title: IRemoteDebugApplicationEx:SetLocale | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3565a966b74e6af18b2c397790fcd8d923e6bb15
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 23bcbd089803c2a2c61af688ec58e289c9a77616
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095702"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155874"
 ---
 # <a name="iremotedebugapplicationexsetlocale"></a>IRemoteDebugApplicationEx:SetLocale
 設定偵錯工具當地語系化的語言。  

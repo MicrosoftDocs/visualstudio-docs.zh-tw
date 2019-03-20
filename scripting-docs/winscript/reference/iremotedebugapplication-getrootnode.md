@@ -1,8 +1,7 @@
 ---
-title: 'Iremotedebugapplication:: Getrootnode |Microsoft Docs'
+title: IRemoteDebugApplication::GetRootNode | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75b398ddac53f2633cbc090f5d49574bd4d94d36
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: ef8337e27bb5a666e8d5d8d38abcafb044da02ba
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097769"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145196"
 ---
 # <a name="iremotedebugapplicationgetrootnode"></a>IRemoteDebugApplication::GetRootNode
 傳回在其下加入應用程式相關聯的所有節點的應用程式節點。  
@@ -38,7 +37,7 @@ HRESULT GetRootNode(
   
 #### <a name="parameters"></a>參數  
  `ppdanRoot`  
- [out]偵錯應用程式] 節點下加入應用程式相關聯的所有節點。  
+ [out]偵錯應用程式 節點下加入應用程式相關聯的所有節點。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  

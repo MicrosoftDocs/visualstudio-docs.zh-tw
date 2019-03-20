@@ -2,7 +2,6 @@
 title: IPerPropertyBrowsing2::SetPredefinedValue |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2710ebdad171d4281deeee3b210319d58a638e2
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 4d35e087cc057608666e104681d65fa8009f8167
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088721"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146574"
 ---
 # <a name="iperpropertybrowsing2setpredefinedvalue"></a>IPerPropertyBrowsing2::SetPredefinedValue
 設定所指定的屬性值`dispID`。 語彙基元所識別的預先定義的值 `dwCookie.`  

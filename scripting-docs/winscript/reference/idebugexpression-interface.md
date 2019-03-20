@@ -2,7 +2,6 @@
 title: IDebugExpression 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9684253343aa83cf95f7d816781705eab7fbc327
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 589c231afbc149c4eeface784d3cdbd43c4e5e40
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345510"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58156342"
 ---
 # <a name="idebugexpression-interface"></a>IDebugExpression 介面
 代表非同步評估的運算式。 指令碼引擎通常會實作這個介面。 偵錯工具 IDE 通常會使用此介面來啟用 [立即執行] 視窗或監看式視窗。  

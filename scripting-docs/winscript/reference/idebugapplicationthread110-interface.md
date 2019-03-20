@@ -2,7 +2,6 @@
 title: IDebugApplicationThread110 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 170b345bdb4587d1fd29c1f0f906df0157abd877
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: a40b1a6f194ef0f335d8c6516b101250b0d980fe
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348915"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58158405"
 ---
 # <a name="idebugapplicationthread110-interface"></a>IDebugApplicationThread110 介面
 提供更多的功能，如[IDebugApplicationThread 介面](../../winscript/reference/idebugapplicationthread-interface.md)介面。  
