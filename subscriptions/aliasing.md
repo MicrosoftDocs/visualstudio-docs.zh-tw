@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: 登入可能會因為使用別名或易記名稱而失敗
 searchscope: VS Subscription
-ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f0b18aca4c6188c23998c8a87f86359895198b95
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841623"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195147"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>登入 Visual Studio 訂用帳戶可能會因為使用別名而失敗
 
@@ -28,7 +28,7 @@ ms.locfileid: "56841623"
 
 身為系統管理員，[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 上有兩個選項可確保您的訂閱者可獲得成功的登入體驗。
 - 第一個選項 (建議使用) 是利用目錄帳戶作為大量授權服務中心 (VLSC) 中的已指派地址。 如需詳細資訊，請參閱此文章中的[將訂閱者指派到目錄帳戶](#assigning-subscribers-to-a-directory-account)一節。
-- 第二個選項 (較不安全) 是允許您的訂閱者將其「公司或學校」電子郵件地址與「個人」帳戶 (亦即 Microsoft 帳戶或 MSA) 建立關聯。 如需詳細資訊，請參閱此文章中的[將公司或學校帳戶定義為個人帳戶](#defining-a-work-or-school-account-as-a-personal-account )一節。
+- 第二個選項 (較不安全) 是允許您的訂閱者將其「公司或學校」電子郵件地址與「個人」帳戶 (亦即 Microsoft 帳戶或 MSA) 建立關聯。 如需詳細資料，請參閱本文中的[將工作或學校帳戶定義為個人帳戶](#defining-a-work-or-school-account-as-a-personal-account)一節。
 
 > [!NOTE]
 > 一旦您的公司移轉到新的 Visual Studio 訂用帳戶[管理入口網站](https://manage.visualstudio.com)，您將可以獲得新系統管理體驗的優點，此體驗允許使用者提供目錄與電子郵件地址作為訂閱者設定檔的一部分。 深入了解[移轉](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details)。

@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/29/2019
+ms.date: 03/01/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 1b9ff98070d5cd3e8348fc938a4b39a83b61ce99
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 46ff8b55cf3236a3fbb16f1c4c086c3c2b09295f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57325073"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58161180"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2019"></a>Visual Studio 核心編輯器 (隨附於 Visual Studio Professional 2019)
 

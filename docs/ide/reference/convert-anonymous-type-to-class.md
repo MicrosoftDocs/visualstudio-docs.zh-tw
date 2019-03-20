@@ -3,18 +3,18 @@ title: 將匿名型別轉換為類別
 ms.date: 02/13/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e3613f365b2510111f6854087a597df387ab1a4c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f29e31fb87d8b18e7f5a46d16f90217ee08d51f6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335784"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154578"
 ---
 # <a name="convert-anonymous-type-to-class"></a>將匿名型別轉換為類別
 

@@ -3,18 +3,18 @@ title: 將 Foreach 迴圈轉換為 LINQ
 ms.date: 02/20/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc0f94d6aa9f13ac038f1af19a1ab1c78158ea14
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: eadad8fdbec990607450b374a32758547194f734
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324953"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160270"
 ---
 # <a name="convert-foreach-loop-to-linq"></a>將 Foreach 迴圈轉換為 LINQ
 

@@ -3,19 +3,19 @@ title: 未使用的值和參數
 ms.date: 02/15/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ea80887fff6dcb1afba80feb782b23d1e790579
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: afcf85fff188853890b86cf7deb13b2457f5e0b8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57325023"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157694"
 ---
 # <a name="unused-expression-values-and-parameters"></a>未使用的運算式值和參數
 

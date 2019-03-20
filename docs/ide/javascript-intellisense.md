@@ -2,6 +2,7 @@
 title: JavaScript IntelliSense
 ms.date: 06/28/2017
 ms.topic: conceptual
+ms.technology: vs-javascript
 helpviewer_keywords:
 - IntelliSense [JavaScript]
 - <reference> JavaScript XML tag
@@ -24,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eeb443684e769a119ae2e319351abc5a72b1417
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6cb8540fd53a66d67907de47f6332a05c6240f09
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223685"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868894"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 

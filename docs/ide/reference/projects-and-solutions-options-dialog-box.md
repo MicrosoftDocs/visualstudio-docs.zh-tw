@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d4d81667bed3df6f970cd59c21286b7ef9a6a2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223438"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867809"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>選項對話方塊、專案和方案頁面
 
@@ -49,9 +49,13 @@ ms.locfileid: "57223438"
 
 選取此選項時，IDE 一律會顯示方案以及針對方案執行的所有命令。 清除此選項時，所有專案都會建立為獨立專案；如果方案只包含一個專案，您就不會在 [方案總管] 中看到方案，也不會在 IDE 中看到針對方案執行的命令。
 
+::: moniker range="vs-2017"
+
 ### <a name="save-new-projects-when-created"></a>在建立新專案時予以儲存
 
 選取此選項時，您可以在 [新增專案] 對話方塊中指定專案的位置。 清除此選項時，所有新專案都會建立為暫存專案。 當您使用暫存專案時，可以建立和測試專案，而不需要指定磁碟位置。
+
+::: moniker-end
 
 ### <a name="warn-user-when-the-project-location-is-not-trusted"></a>在專案位置未受信任時警告使用者
 
