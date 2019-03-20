@@ -2,7 +2,6 @@
 title: IDebugApplicationNode::Attach |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49df95e2c5298fc9bb7025982e75a90548d9613f
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: c41d06c116c7c15ad308ce2ace837ea01d90ab1d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094948"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155559"
 ---
 # <a name="idebugapplicationnodeattach"></a>IDebugApplicationNode::Attach
 此應用程式將節點加入至指定的專案樹狀結構。  
@@ -38,7 +37,7 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>參數  
  `pdanParent`  
- [in]要新增此應用程式] 節點的專案樹狀結構。  
+ [in]要新增此應用程式 節點的專案樹狀結構。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  

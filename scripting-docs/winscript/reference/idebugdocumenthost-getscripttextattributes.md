@@ -2,7 +2,6 @@
 title: 'Idebugdocumenthost:: Getscripttextattributes |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 016073d2ce22ab814716efc204ce573ea17cd510
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 6a5e56468e51f6d90e37e90c885b6b9df48d5f6e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092712"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58158993"
 ---
 # <a name="idebugdocumenthostgetscripttextattributes"></a>IDebugDocumentHost::GetScriptTextAttributes
 傳回的文件的文字區塊的文字屬性。  
@@ -45,7 +44,7 @@ HRESULT GetScriptTextAttributes(
  [in]指令碼區塊的文字。 這個字串不需要以 null 結尾。  
   
  `uNumCodeChars`  
- [in]在 [指令碼區塊文字的字元數。  
+ [in]在 指令碼區塊文字的字元數。  
   
  `pstrDelimiter`  
  [in]End 的指令碼區塊分隔符號的位址。 當`pstrCode`剖析文字資料流，從主應用程式通常會使用分隔符號，例如兩個單引號 （'），來偵測指令碼區塊的結尾。 這個參數指定主應用程式使用，允許以提供一些條件式的基本前置處理指令碼引擎的分隔符號 （比方說，取代兩個單引號以做為分隔符號使用的單引號 [']）。 究竟要如何 （以及是否） 這項資訊會取決於指令碼引擎的指令碼引擎使用。 如果主機未使用的分隔符號來標示指令碼區塊的結尾，請設定此參數為 NULL。  
