@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立項目範本 |Microsoft Docs
+title: 如何：建立項目範本 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,21 +14,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788242"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867916"
 ---
 # <a name="how-to-create-item-templates"></a>如何：建立項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主題的[第一個程序](../ide/how-to-create-item-templates.md#export_template)步驟，說明如何使用 [匯出範本精靈] 建立項目範本。 如果您的範本中包含多個檔案，請參閱[如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)。  
+本主題的[第一個程序](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box)步驟，說明如何使用 [匯出範本精靈] 建立項目範本。 如果您的範本中包含多個檔案，請參閱[如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)。  
   
- 此精靈會執行許多工作，為您建立基本範本，但在許多情況下，您將需要在匯出了範本之後手動修改.vstemplate 檔案。 例如，如果您想要在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式專案的 [新增項目] 對話方塊中顯示項目，您必須執行一些額外的步驟。 本主題的[第二個程序](../ide/how-to-create-item-templates.md#modify_template)可協助您完成上述工作。  
+ 此精靈會執行許多工作，為您建立基本範本，但在許多情況下，您將需要在匯出了範本之後手動修改.vstemplate 檔案。 例如，如果您想要在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式專案的 [新增項目] 對話方塊中顯示項目，您必須執行一些額外的步驟。 本主題的[第二個程序](#to-enable-the-item-template-to-be-used-in-a-store-project)可協助您完成上述工作。  
  
- 在某些情況下，您可能想要或需要從頭開始手動建立項目範本。 [第三個程序](../ide/how-to-create-item-templates.md#create_template)說明如何執行上述作業。  
+ 在某些情況下，您可能想要或需要從頭開始手動建立項目範本。 [第三個程序](#to-enable-templates-for-specific-project-sub-types)說明如何執行上述作業。  
   
  如需可用於 .vstemplate 檔案中的項目資訊，請參閱 [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)。  
   

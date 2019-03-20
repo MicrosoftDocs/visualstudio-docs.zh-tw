@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 47285fe9fb57b9c4d5d80c60f9e626f394e11934
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 504f7f002c41832294e61fa968f7cfd2d32b54b0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762855"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869118"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>安裝 Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ ms.locfileid: "54762855"
   
    依預設，安裝程式會將 Apache Ant 放在 C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps 中。  
   
-- [Android 版 Microsoft Visual Studio 模擬器](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
+- [Android 版 Microsoft Visual Studio 模擬器](https://visualstudio.microsoft.com/vs/msft-android-emulator/)  
   
    您可以從 Visual Studio 組件庫安裝和更新 Microsoft Visual Studio Emulator for Android。  
   

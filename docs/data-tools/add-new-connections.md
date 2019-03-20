@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: da6763cffedccb1dae296e2959732237cd126b25
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b01af2aa269cbaddbd84d24827b1a77e97d52d8a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909916"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982801"
 ---
 # <a name="add-new-connections"></a>新增連線
 
@@ -24,7 +24,7 @@ ms.locfileid: "55909916"
 
 - Cloud Explorer
 
-   選取此視窗手動安裝為 Visual Studio 延伸模組**工具** > **擴充功能和更新** > **線上** >  **Visual Studio Marketplace**。 提供探索及連接到 Azure 服務的特製化的功能。
+   從 Visual Studio 擴充功能為手動安裝此視窗[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS)。 提供探索及連接到 Azure 服務的特製化的功能。
 
 - SQL Server 物件總管
 

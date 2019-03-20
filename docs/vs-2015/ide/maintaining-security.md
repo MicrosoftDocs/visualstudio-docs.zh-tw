@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 72e1351d593059d83efede7676b0182cd60c9f7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b99db8a9e1f34bc724059ff9cbf2a065df39e78f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752878"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872825"
 ---
 # <a name="maintaining-security"></a>維護安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +33,13 @@ ms.locfileid: "54752878"
  [安全性、隱私權和帳戶](http://go.microsoft.com/fwlink/?LinkId=72881)  
  取得安全性、隱私權和使用者帳戶的說明，包含病毒、密碼、家長監護、防火牆和磁碟機加密的相關資訊。  
   
- [Microsoft 資訊安全佈告欄搜尋](http://go.microsoft.com/fwlink/?LinkId=110396)  
+ [Microsoft 資訊安全佈告欄搜尋](/security-updates/)  
  這個網頁可讓您輕鬆地尋找之前發佈的佈告欄內容。 安全性佈告欄是專門為 IT 專業人員所設計，會提供關於安全性更新的詳細資訊。  
   
- [Windows Server 2003 安全性指南](http://go.microsoft.com/fwlink/?LinkId=65300)  
- 為 IT 專業人員提供需要的指引，以安全地操作 Windows Server 2003 環境，同時確保由正確的人員適當地存取正確的內容。  
+ [Windows Server 2003 安全性指南]（/previous-versions/tn-archive/cc163140(v=technet.10) 提供 IT 專業人員安全地操作 Windows Server 2003 環境，同時確保由正確的人員將正確的內容的權限存取所需的指引。  
   
- [企業安全性最佳做法](http://go.microsoft.com/fwlink/?LinkId=72879)  
+ [企業安全性最佳做法](/previous-versions/tn-archive/cc750076%28v%3dtechnet.10%29)  
  提供大量的白皮書，其中焦點放在企業網路中不同層面的安全性。  
   
- [Microsoft Baseline Security Analyzer](http://go.microsoft.com/fwlink/?LinkId=9173)  
+ [Microsoft Baseline Security Analyzer](/windows/security/threat-protection/mbsa-removal-and-guidance)  
  Microsoft Baseline Security Analyzer (MBSA) 是一種工具，可以讓個別的家庭使用者、公司使用者或系統管理員，針對一般安全性的設定錯誤，掃描一或多部 Windows 架構電腦。

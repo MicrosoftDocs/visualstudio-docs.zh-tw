@@ -15,17 +15,17 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49e636e223cc699aa73419bca0c41688eea2620c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798476"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867757"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>尋找及使用 Visual Studio 擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 擴充功能是在 Visual Studio 內執行的程式碼封裝，並提供全新或改良的 Visual Studio 功能。 您可以在這裡找到有關 Visual Studio 延伸模組的詳細資訊：[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
+Visual Studio 擴充功能是在 Visual Studio 內執行的程式碼封裝，並提供全新或改良的 Visual Studio 功能。 您可以在這裡找到有關 Visual Studio 擴充功能的詳細資訊： [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
  您可以使用 [ **擴充功能和更新** ] 對話方塊來安裝 Visual Studio 擴充功能和來自網站及其他位置的範例，然後啟用、停用、更新或將它們解除安裝。 ([工具/擴充功能和更新]，或在 [快速啟動]  視窗中輸入 **擴充功能** )。 對話方塊也會顯示已安裝的範例和擴充功能的更新。 您也可以從網站下載擴充功能，或從其他開發人員取得。
 
@@ -33,7 +33,7 @@ Visual Studio 擴充功能是在 Visual Studio 內執行的程式碼封裝，並
 >  從 Visual Studio 2015 開始，裝載於 Visual Studio 組件庫的擴充功能將自動更新。  您可以透過 [擴充功能和更新]  對話方塊變更此設定。  如需詳細資訊，請參閱下方〈自動更新擴充功能〉  的章節。
 
 ## <a name="finding-visual-studio-extensions"></a>尋找 Visual Studio 擴充功能
- 您可以從 [Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=178891) 或 Microsoft 網站上的 [範例庫](http://go.microsoft.com/fwlink/?LinkId=245175) 安裝擴充功能。 這些擴充功能可能是增強 Visual Studio 功能的控制項、範例、範本、工具或其他元件。 Visual Studio 支援 VSIX 套件格式的擴充功能，包括專案範本、項目範本、 **工具箱** 項目、Managed Extension Framework (MEF) 元件和 VSPackage。 您也可以下載和安裝 MSI 架構的擴充功能，不過 [擴充功能和更新]  對話方塊無法啟用或停用它們。 Visual Studio 組件庫包含 VSIX 和 MSI 擴充功能。
+ 您可以安裝擴充功能[Visual Studio Marketplace](https://marketplace.visualstudio.com/)或[範例庫](https://code.msdn.microsoft.com/vstudio)Microsoft 網站上。 這些擴充功能可能是增強 Visual Studio 功能的控制項、範例、範本、工具或其他元件。 Visual Studio 支援 VSIX 套件格式的擴充功能，包括專案範本、項目範本、 **工具箱** 項目、Managed Extension Framework (MEF) 元件和 VSPackage。 您也可以下載和安裝 MSI 架構的擴充功能，不過 [擴充功能和更新]  對話方塊無法啟用或停用它們。 Visual Studio 組件庫包含 VSIX 和 MSI 擴充功能。
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>安裝或解除安裝 Visual Studio 擴充功能
  在 [擴充功能和更新] 尋找您想要安裝的擴充功能。 (如果您知道延伸模組的名稱或部分名稱，則可以在 [搜尋 Visual Studio 組件庫] 視窗內搜尋。)按一下 [下載] 及 [安裝]。 您必須重新啟動 Visual Studio，以載入擴充功能。
