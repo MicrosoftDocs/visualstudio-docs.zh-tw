@@ -47,7 +47,7 @@ ms.locfileid: "56626306"
 
 ### <a name="use-the-dom-explorer-to-inspect-and-debug-a-webview-control"></a>使用 [DOM 總管] 檢查及偵錯 WebView 控制項
 
-1.  (C#、Visual  Basic、C++)  將指令碼偵錯工具附加到應用程式。 請參閱第一節裡的指示。
+1.  (C#、Visual Basic、C++)  將指令碼偵錯工具附加到應用程式。 請參閱第一節裡的指示。
 
 2.  如果您尚未這麼做，請將 `WebView` 控制項加入到應用程式，然後按 F5 開始偵錯。
 
@@ -63,7 +63,7 @@ ms.locfileid: "56626306"
 
 ### <a name="use-the-javascript-console-window-to-inspect-and-debug-a-webview-control"></a>使用 [JavaScript 主控台] 視窗檢查及偵錯 WebView 控制項
 
-1.  (C#、Visual  Basic、C++)  將指令碼偵錯工具附加到應用程式。 請參閱第一節裡的指示。
+1.  (C#、Visual Basic、C++)  將指令碼偵錯工具附加到應用程式。 請參閱第一節裡的指示。
 
 2.  如果您尚未這麼做，請將 `WebView` 控制項加入到應用程式，然後按 F5 開始偵錯。
 

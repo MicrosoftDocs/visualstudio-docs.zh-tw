@@ -19,7 +19,7 @@ ms.locfileid: "58070213"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>HOW TO：搭配使用 XML 結構描述設計工具和 XML 常值
 
-本主題描述如何在 Visual Studio 專案中檢視與 XML 常值相關的結構描述。
+本主題描述如何在 Visual Basic 專案中檢視與 XML 常值相關的結構描述。
 
 ## <a name="create-a-new-visual-basic-project"></a>建立新的 Visual Basic 專案
 
