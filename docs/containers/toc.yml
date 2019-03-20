@@ -10,18 +10,18 @@ items:
     href: tutorial-multicontainer.md
   - name: 教學課程：Visual Studio 中的 Kubernetes
     href: tutorial-kubernetes-tools.md
-  - name: 在本機 Docker 容器內針對應用程式進行偵錯
+  - name: 對本機 Docker 容器中的應用程式偵錯
     href: vs-azure-tools-docker-edit-and-refresh.md
-  - name: 使用 Visual Studio 將 ASP.NET 容器部署到容器登錄
+  - name: 部署到容器登錄
     href: vs-azure-tools-docker-hosting-web-apps-in-docker.md
-  - name: 使用 VirtualBox 設定 Docker 主機
-    href: vs-azure-tools-docker-setup.md
-  - name: 針對使用 Docker 進行 Visual Studio 2017 開發問題進行疑難排解
+  - name: 部署到 Azure App Service
+    href: docker-deploy-app-service.md
+  - name: 對使用 Docker 進行的 Visual Studio 開發進行疑難排解
     href: vs-azure-tools-docker-troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: 9269e4b0f090b170f234433ff802f41d0dd8790a
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: af94841d54c8c045af72dfc4597bae047778a5a3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525901"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160023"
