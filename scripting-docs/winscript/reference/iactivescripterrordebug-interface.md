@@ -2,7 +2,6 @@
 title: IActiveScriptErrorDebug 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d773724d23c61aa72b8cd48917f2cd0bef4a7cb
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 936770859d3bdfe81c84245d32ae63346b142a01
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345197"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58153743"
 ---
 # <a name="iactivescripterrordebug-interface"></a>IActiveScriptErrorDebug 介面
 提供編譯時期錯誤和執行階段例外狀況的文件內容資訊。 `IActiveScriptError::QueryInterface`方法可支援`IActiveScriptErrorDebug`介面。  

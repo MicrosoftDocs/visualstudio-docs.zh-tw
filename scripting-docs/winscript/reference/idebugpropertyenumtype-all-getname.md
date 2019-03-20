@@ -2,7 +2,6 @@
 title: IDebugPropertyEnumType_All::GetName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25fd535d983d477a86b83953cf56852789747bd0
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 1c4f416e7cf525d28ad544c361168f55b964f353
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346341"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146639"
 ---
 # <a name="idebugpropertyenumtypeallgetname"></a>IDebugPropertyEnumType_All::GetName
 傳回包含名稱的 BSTR `EnumType`。  

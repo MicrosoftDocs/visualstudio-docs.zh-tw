@@ -2,7 +2,6 @@
 title: IDebugAsyncOperation 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0088fddd2661d6711c9a18495f4b8704f782b3c
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 820ecc40924ace4153b76f46c8b8fd1603512ebb
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349983"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58150812"
 ---
 # <a name="idebugasyncoperation-interface"></a>IDebugAsyncOperation 介面
 處理序偵錯管理員實作`IDebugAsyncOperation`介面。 語言引擎會呼叫`IDebugApplication::CreateAsyncDebugOperation`方法，以取得此介面的參考。 語言引擎就可以使用`IDebugAsyncOperation`介面，以提供同步偵錯作業的非同步存取。  

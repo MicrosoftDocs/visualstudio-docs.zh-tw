@@ -1,8 +1,7 @@
 ---
-title: IMachineDebugManager::AddApplication |Microsoft Docs
+title: IMachineDebugManager::AddApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e056a62ac498c0b4061ed0982189de9747832ccc
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 96c1b865c722a3cceab331b81b1204ee682b911f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087070"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155611"
 ---
 # <a name="imachinedebugmanageraddapplication"></a>IMachineDebugManager::AddApplication
 新增應用程式執行的應用程式清單。  

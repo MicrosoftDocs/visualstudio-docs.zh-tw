@@ -2,7 +2,6 @@
 title: IScriptNode 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d8897d783f8a101b41dd7263061604fb1d82ec56
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 13bf20f9e1e642b948ddaa72ae9dca7bb457fba2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344612"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155835"
 ---
 # <a name="iscriptnode-interface"></a>IScriptNode 介面
 物件，實作`IScriptNode`介面代表網頁。  

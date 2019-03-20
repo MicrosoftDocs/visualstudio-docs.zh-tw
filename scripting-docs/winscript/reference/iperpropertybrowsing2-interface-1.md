@@ -2,7 +2,6 @@
 title: IPerPropertyBrowsing2 介面 1 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bded7159b72fc8c1ae8408611ce858105e6734da
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 156cf9a1e104b8a2d7ffe4e48bd39642ef1abbd0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344019"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58159578"
 ---
 # <a name="iperpropertybrowsing2-interface-1"></a>IPerPropertyBrowsing2 介面 1
 存取物件所提供的屬性頁中的資訊。  

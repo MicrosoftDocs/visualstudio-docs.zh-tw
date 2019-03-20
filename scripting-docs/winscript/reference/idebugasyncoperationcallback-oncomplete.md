@@ -1,8 +1,7 @@
 ---
-title: IDebugAsyncOperationCallBack::onComplete |Microsoft Docs
+title: IDebugAsyncOperationCallBack::onComplete | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4909f469b558ef4664a74c4a7926001d20adc40e
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: f9e5532a55901d8e29addfee58594645440991f6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089397"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151332"
 ---
 # <a name="idebugasyncoperationcallbackoncomplete"></a>IDebugAsyncOperationCallBack::onComplete
 結果是可從非同步偵錯作業的訊號。  
@@ -48,5 +47,5 @@ HRESULT onComplete();
  此方法可讓您表示結果是可從`IDebugAsyncOperation`物件。 在 偵錯工具執行緒就會引發事件。  
   
 ## <a name="see-also"></a>另請參閱  
- [IDebugAsyncOperationCallBack 介面](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
+ [IDebugAsyncOperationCallBack Interface](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
  [IDebugAsyncOperation 介面](../../winscript/reference/idebugasyncoperation-interface.md)

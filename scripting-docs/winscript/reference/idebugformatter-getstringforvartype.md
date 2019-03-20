@@ -2,7 +2,6 @@
 title: IDebugFormatter::GetStringForVarType |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06c4833e2d9a88b63a80b2ee9437dc5547579380
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 3d83df97ac9cb6c38d989470b71da93aceb5d50b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087538"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146444"
 ---
 # <a name="idebugformattergetstringforvartype"></a>IDebugFormatter::GetStringForVarType
 傳回字串，表示指定的 VARTYPE 值。  

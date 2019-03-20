@@ -2,7 +2,6 @@
 title: IEnumRemoteDebugApplications 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 078fd67b73cec29d14287246a13cca4375d27061
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 430551002bc7603d86f9c7fb624ec438734bd766
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346172"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58150617"
 ---
 # <a name="ienumremotedebugapplications-interface"></a>IEnumRemoteDebugApplications 介面
 列舉應用程式物件。 此介面可用來列舉"附加至應用程式 」 的對話方塊中的機器上執行的應用程式。  
