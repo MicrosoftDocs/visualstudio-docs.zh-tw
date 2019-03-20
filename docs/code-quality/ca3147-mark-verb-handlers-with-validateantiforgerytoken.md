@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c8c43ceb19aa6b4407fd4639f952ced859390b1
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 0cd54f932a99ea79bf792ebe4175ddc6a031ddcb
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567324"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194440"
 ---
 # <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147:使用 ValidateAntiForgeryToken 標示動詞處理常式
 
@@ -45,7 +45,7 @@ ASP.NET MVC 控制器動作方法不與標示[ValidateAntiForgeryTokenAttribute]
 
    如果您有 ASP.NET MVC 控制器動作，以處理 HTTP GET 要求，並具有例如修改機密資料可能會造成損害的副作用，您的應用程式是容易遭受跨網站偽造要求攻擊。  您必須重新設計應用程式，因此只有 HTTP POST、 PUT 或 DELETE 要求執行敏感性作業。
 
-- 適用於 ASP.NET MVC 控制器動作處理 HTTP POST、 PUT 或 DELETE 要求，新增[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))並指定允許的 HTTP 動詞命令的屬性 ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)[HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29)， [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29)，或[HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29))。 此外，您必須呼叫[HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/web-frameworks/dd504812%28v%3dvs.118%29)從您的 MVC 檢視或 Razor 網頁的方法。 如需範例，請參閱[檢查編輯方法與編輯檢視](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)。
+- 適用於 ASP.NET MVC 控制器動作處理 HTTP POST、 PUT 或 DELETE 要求，新增[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))並指定允許的 HTTP 動詞命令的屬性 ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)[HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29)， [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29)，或[HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29))。 此外，您必須呼叫[HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29)從您的 MVC 檢視或 Razor 網頁的方法。 如需範例，請參閱[檢查編輯方法與編輯檢視](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 

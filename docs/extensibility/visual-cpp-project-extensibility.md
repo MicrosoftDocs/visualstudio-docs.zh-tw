@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d4a4c4038c34f2cfa1dc2b4fcc022b24c135aef
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868139"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195173"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 專案系統擴充性和工具組之間的整合
 
@@ -418,7 +418,7 @@ Visual c + + 專案系統根據[VS 專案系統](https://github.com/Microsoft/VS
 
 一般設計資訊，請參閱[平台擴充性-第 1 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/)並[平台擴充性-第 2 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/)。
 
-簡單地說，屬性頁 所示**專案屬性**所定義的 c + + 專案 對話方塊*規則*檔案。 規則檔案指定要顯示在 [屬性] 頁面上，以及如何在它們應儲存在專案和檔案屬性的集。 規則檔案是使用 Xaml 格式的.xml 檔案。 用來序列化它們的型別所述[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)。 如需有關使用的專案中的規則檔案，請參閱[屬性頁面 XML 規則檔案](/cpp/ide/property-page-xml-files)。
+簡單地說，屬性頁 所示**專案屬性**所定義的 c + + 專案 對話方塊*規則*檔案。 規則檔案指定要顯示在 [屬性] 頁面上，以及如何在它們應儲存在專案和檔案屬性的集。 規則檔案是使用 Xaml 格式的.xml 檔案。 用來序列化它們的型別所述[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)。 如需有關使用的專案中的規則檔案，請參閱[屬性頁面 XML 規則檔案](/cpp/build/reference/property-page-xml-files)。
 
 規則檔案必須新增至`PropertyPageSchema`項目群組：
 
@@ -636,8 +636,8 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 
 ## <a name="additional-resources"></a>其他資源
 
-Microsoft 建置系統 ([MSBuild](../msbuild/msbuild.md)) 提供的專案檔建置引擎和可延伸的 XML 格式。 您應該先熟悉與 basic [MSBuild 概念](../msbuild/msbuild-concepts.md)與如何[Visual c + + 的 MSBuild](/cpp/build/msbuild-visual-cpp-overview)運作，以擴充 Visual c + + 專案系統。
+Microsoft 建置系統 ([MSBuild](../msbuild/msbuild.md)) 提供的專案檔建置引擎和可延伸的 XML 格式。 您應該先熟悉與 basic [MSBuild 概念](../msbuild/msbuild-concepts.md)與如何[Visual c + + 的 MSBuild](/cpp/build/reference/msbuild-visual-cpp-overview)運作，以擴充 Visual c + + 專案系統。
 
 Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 提供延伸模組 CPS 和 Visual c + + 專案系統所使用的 Api。 CPS 如何使用 MEF 的概觀，請參閱[CPS 和 MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef)中[VSProjectSystem MEF 概觀](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)。
 
-您可以自訂現有的建置系統，以新增建置步驟或新的檔案類型。 如需詳細資訊，請參閱 < [MSBuild （Visual c + +） 概觀](/cpp/build/msbuild-visual-cpp-overview)並[使用專案屬性](/cpp/ide/working-with-project-properties)。
+您可以自訂現有的建置系統，以新增建置步驟或新的檔案類型。 如需詳細資訊，請參閱 < [MSBuild （Visual c + +） 概觀](/cpp/build/reference/msbuild-visual-cpp-overview)並[使用專案屬性](/cpp/build/working-with-project-properties)。

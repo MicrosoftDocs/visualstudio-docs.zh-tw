@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aefe931bf4b53f0637c4bac1216e313b7a6fb092
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 7d6ef8332a5adc21e25f2a414c5b359e48cf1ba7
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526499"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194586"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>HOW TO：建立和修改自訂文件屬性
   上列 Microsoft Office 應用程式提供與文件一起儲存的內建屬性。 此外，如果您有想要與文件一起儲存的其他資訊，則可以建立和修改自訂文件屬性。
@@ -30,7 +30,7 @@ ms.locfileid: "57526499"
 
  下列範例示範如何在 Excel 的文件層級自訂中加入自訂屬性，並指派該屬性的值。
 
- ## <a name="example"></a>範例
+## <a name="example"></a>範例
  [!code-vb[Trin_VstcoreProgramming#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#6)]
  [!code-csharp[Trin_VstcoreProgramming#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#6)]
 

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ab66596dd550a74a18e425769a0c7120cf3220a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873437"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193892"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>支援 Visual Studio SDK
 數個支援選項可供客戶有關於如何擴充 Visual Studio 整合式的開發環境 (IDE) 的問題。
@@ -54,9 +54,9 @@ ms.locfileid: "57873437"
 
 ### <a name="developer-tools-support"></a>開發人員工具支援
 
-也可購買的支援。 各種不同的支援供應項目會在 [開發人員工具] 類別底下[Microsoft 說明及支援中心](http://go.microsoft.com/fwlink/?LinkID=82383)。
+也可購買的支援。 各種不同的支援供應項目會在 [開發人員工具] 類別底下[Microsoft 說明及支援中心](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8)。
 
-想要使用的客戶[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]開發複雜的封裝，可以考慮購買 Microsoft 頂級支援合約。 如需詳細資訊，請參閱 < [Microsoft Premier Support](https://support.microsoft.com/premier)。 對小型公司而言，[合作夥伴利用支援](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx)可能吸引人的選項，以傳統的頂級支援供應項目。
+想要使用的客戶[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]開發複雜的封裝，可以考慮購買 Microsoft 頂級支援合約。 如需詳細資訊，請參閱 < [Microsoft Premier Support](https://support.microsoft.com/premier)。 對小型公司而言，[適用於合作夥伴的進階支援](https://partner.microsoft.com/support/advanced-cloud-support)可能吸引人的選項，以傳統的頂級支援供應項目。
 
 > [!NOTE]
 > 不能用於標準支援，諮詢或若要取得建議。

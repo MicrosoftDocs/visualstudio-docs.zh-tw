@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910e1890fd07c0888c47735451cba29aa08ec916
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160702"
+ms.locfileid: "58194732"
 ---
 # <a name="create-your-first-extension-hello-world"></a>建立您的第一個延伸模組：Hello World
 
@@ -44,7 +44,7 @@ ms.locfileid: "58160702"
 
 ::: moniker range="vs-2017"
 
-步驟 1： 從**檔案**功能表上，選取**新的專案**。
+步驟 1： 從 [檔案] 功能表選取 [新增] > [專案]。
 
 步驟 2： 在右上角的 [搜尋] 方塊中，輸入 「 vsix 」 並選取視覺效果C# **VSIX 專案**。 輸入"HelloWorld"**名稱**底部的對話方塊，然後選取**確定**。
 
@@ -58,7 +58,7 @@ ms.locfileid: "58160702"
 
 ::: moniker range=">=vs-2019"
 
-步驟 1： 從**檔案**功能表上，選取**新的專案**。 搜尋"vsix 」 並選取視覺效果C# **VSIX 專案**，然後**下一步**。
+步驟 1： 從 [檔案] 功能表選取 [新增] > [專案]。 搜尋"vsix 」 並選取視覺效果C# **VSIX 專案**，然後**下一步**。
 
 步驟 2： 輸入"HelloWorld"**專案名稱**，然後選取**建立**。
 
@@ -84,7 +84,7 @@ ms.locfileid: "58160702"
 
 ## <a name="modify-the-source-code"></a>修改原始程式碼
 
-此時，命令和按鈕文字會是自動產生且不有趣。 如果您想要進行變更，您可以修改的 VSCT 檔和 CS 檔案。
+此時，命令和按鈕文字會自動產生並不是很有趣。 如果您想要進行變更，您可以修改的 VSCT 檔和 CS 檔案。
 
 * 您可以在此重新命名您的命令，以及定義隨處在 Visual Studio 命令系統 VSCT 檔案。 當您瀏覽 VSCT 檔案，您會發現說明哪些的 VSCT 程式碼控制項的每個區段的註解。
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8abfceedb112bb638dde2ff826182ad044573c74
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955371"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195082"
 ---
 # <a name="security-warnings"></a>安全性警告
 
@@ -77,5 +77,5 @@ ms.locfileid: "55955371"
 |[CA2153:避免處理損毀狀態例外狀況](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[損毀狀態例外狀況 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) 指出您的處理序中有記憶體損毀的狀況。 如果攻擊者將攻擊放入損毀的記憶體區域，則攔截這些處理序而非讓它們損毀，會導致安全性弱點。|
 |[CA3075:不安全 DTD 處理](../code-quality/ca3075-insecure-dtd-processing.md)|如果您使用不安全的 DTDProcessing 執行個體或參考外部實體來源，剖析器可能會接受未受信任的輸入，而將機密資訊洩漏給攻擊者。|
 |[CA3076:不安全的 XSLT 指令碼執行](../code-quality/ca3076-insecure-xslt-script-execution.md)|如果您在 .NET 應用程式中以不安全的方式執行可延伸樣式表語言轉換 (XSLT)，處理器可能會解析不受信任的 URI 參考，而這些參考可能會將機密資訊洩漏給攻擊者，導致拒絕服務和跨網站攻擊。|
-|[CA3077:API 設計、 XML 文件和 XML 文字讀取器中的不安全處理](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|針對衍生自 XMLDocument 和 XMLTextReader 的 API 進行設計時，請留意 DtdProcessing。  若在參考或解析外部實體來源時使用不安全的 DTDProcessing 執行個體，或在 XML 中設定不安全的值，都可能會導致資訊洩漏。|
+|[CA3077:API 設計、 XML 文件和 XML 文字讀取器中的不安全處理](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|針對衍生自 XMLDocument 和 XMLTextReader 的 API 進行設計時，請留意 DtdProcessing。 若在參考或解析外部實體來源時使用不安全的 DTDProcessing 執行個體，或在 XML 中設定不安全的值，都可能會導致資訊洩漏。|
 |[CA3147:標示 ValidateAntiForgeryToken 動詞命令處理常式](../code-quality/ca3147-mark-verb-handlers-with-validateantiforgerytoken.md)|當設計 ASP.NET MVC 控制器，請留意跨網站偽造要求攻擊。 跨網站要求偽造攻擊可以從已驗證的使用者傳送惡意要求到您的 ASP.NET MVC 控制站。|

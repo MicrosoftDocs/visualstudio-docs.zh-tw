@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 5388EEBA-211D-4114-8CD9-70C899919F7E
-author: chitray
-ms.author: chitray
+author: gregvanl
+ms.author: gregvanl
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa19618baba46b56337714a633a993b232f78a46
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 7899a096bb2a56e93ea55a4ba0a17cde272bd615
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983009"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193701"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>逐步解說：建立延伸模組套件
 
@@ -23,7 +23,7 @@ ms.locfileid: "57983009"
 
 ## <a name="prerequisites"></a>必要條件
 
-從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+從 Visual Studio 2015 開始，Visual Studio SDK 是 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 延伸模組套件功能可從 Visual Studio 15.8 Preview 2 開始。
 
@@ -31,9 +31,9 @@ ms.locfileid: "57983009"
 
 延伸模組組件項目範本建立與一組可一起安裝的擴充功能的延伸模組組件。
 
-1. 在 **新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic** ，然後按一下 **擴充性**。 在 **範本**窗格中，選取**VSIX 專案**。 在 [名稱]  方塊中，輸入 `Test Extension Pack`。 按一下 [確定] 。
+1. 在 **新的專案**對話方塊中，搜尋"vsix 」 並選取**VSIX 專案**。 針對**專案名稱**，輸入 「 測試延伸模組組件 」。 選取 [建立]。
 
-2. 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 移至 Visual C#**擴充性**節點，然後選取**延伸模組套件**。 保留預設的檔案名稱 (ExtensionPack1.cs)。
+2. 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 移至 Visual C#**擴充性**節點，然後選取**延伸模組套件**。 保留預設的檔案名稱 (ExtensionPack1.cs)。
 
 3. ExtensionPack1.vsext 檔案會加入包含下列程式碼
 
@@ -69,13 +69,23 @@ ms.locfileid: "57983009"
 
 現在，發佈擴充功能時，將它安裝在 Visual Studio，並測試其存在。
 
-1. 在 Visual Studio 中，在**工具**功能表上，按一下 **擴充功能和更新...**.
+::: moniker range="vs-2017"
 
-2. 按一下 **線上**，然後搜尋`Test Extension Pack`。
+1. 在 Visual Studio 中，在**工具**功能表上，按一下**擴充功能和更新**。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 在 Visual Studio 中，在**延伸模組**功能表上，按一下**Managed Extensions**。
+
+::: moniker-end
+
+2. 按一下  **Online** ，然後搜尋 「 測試延伸模組組件 」。
 
 3. 按一下 [ **下載**]。 擴充功能和擴充功能套件中包含的延伸模組的清單則會排程進行安裝。
 
-4. 以下是範例延伸模組套件，下載檢視**擴充功能和更新**對話方塊。 如果您想要只是一些包含擴充功能安裝延伸模組組件中，您可以修改的延伸模組清單中**排定安裝**。
+4. 以下是範例延伸模組套件，下載檢視**管理延伸模組**對話方塊。 如果您想要只是一些包含擴充功能安裝延伸模組組件中，您可以修改的延伸模組清單中**排定安裝**。
 
     ![從 Marketplace 下載延伸模組組件](media/vside-extensionpack.png)
 
@@ -85,8 +95,18 @@ ms.locfileid: "57983009"
 
 若要從您的電腦中移除擴充功能：
 
+::: moniker range="vs-2017"
+
 1. 在 Visual Studio 中，在**工具**功能表上，按一下**擴充功能和更新**。
 
-2. 選取  `Test Extension Pack` ，然後按一下 **解除安裝**。 擴充功能和擴充功能套件中包含的延伸模組清單然後會排程進行解除安裝。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 在 Visual Studio 中，在**延伸模組**功能表上，按一下**Managed Extensions**。
+
+::: moniker-end
+
+2. 選取 **測試延伸模組套件**，然後按一下**解除安裝**。 擴充功能和擴充功能套件中包含的延伸模組清單然後會排程進行解除安裝。
 
 3. 若要完成解除安裝，請關閉所有 Visual Studio 執行個體。
