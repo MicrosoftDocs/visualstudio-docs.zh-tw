@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195173"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268722"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 專案系統擴充性和工具組之間的整合
 
@@ -416,7 +416,7 @@ Visual c + + 專案系統根據[VS 專案系統](https://github.com/Microsoft/VS
 
 ### <a name="project-property-pages"></a>專案屬性頁
 
-一般設計資訊，請參閱[平台擴充性-第 1 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/)並[平台擴充性-第 2 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/)。
+一般設計資訊，請參閱[VC + + 專案的 Framework 多目標](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/)。
 
 簡單地說，屬性頁 所示**專案屬性**所定義的 c + + 專案 對話方塊*規則*檔案。 規則檔案指定要顯示在 [屬性] 頁面上，以及如何在它們應儲存在專案和檔案屬性的集。 規則檔案是使用 Xaml 格式的.xml 檔案。 用來序列化它們的型別所述[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)。 如需有關使用的專案中的規則檔案，請參閱[屬性頁面 XML 規則檔案](/cpp/build/reference/property-page-xml-files)。
 
