@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698985"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870516"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>格式規範，在C#在 Visual Studio 偵錯工具
 您可以變更在顯示值的格式**監看式**視窗使用格式規範。 您也可以使用中的格式規範**即時運算** 視窗中，**命令**視窗中[追蹤點](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，並在來源視窗中。 如果您暫停在這些視窗中的運算式，結果會出現在[DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中指定的格式顯示。
@@ -51,6 +51,14 @@ ms.locfileid: "56698985"
 新增`my_var1`變數設為**監看式**偵錯時，視窗**偵錯** > **Windows** > **觀看** > **監看式 1**。 接下來，以滑鼠右鍵按一下變數，然後選取**十六進位顯示**。 現在**監看式**視窗會顯示了值 0x0065。 若要查看此值為十進位整數，而不是十六進位整數，加入十進位格式規範 **，d**中**名稱**的變數名稱後面的資料行。 **值**資料行現在會顯示**101**。
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+
+::: moniker range=">= vs-2019" 
+
+您可以檢視，並藉由在值後面附加一個逗號 （，） 中選取 從清單中可用的格式規範**監看式**視窗。 
+
+![FormatSpecCSharp](../debugger/media/vs-2019/format-specs-csharp.png "FormatSpecCSharp")
+
+::: moniker-end
 
 ## <a name="format-specifiers"></a>格式規範
 下表描述C#格式規範，Visual Studio 偵錯工具。

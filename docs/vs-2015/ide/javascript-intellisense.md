@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b96ceed46b9411e128a34861fbd06fd53817a18a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763280"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194453"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 
 -   在使用中文件內所有指令碼區塊中定義的函式。 具有 .aspx.、.ascx、.master、.html 和 .htm 等副檔名的檔案所支援之內嵌 (Inline) 指令碼區塊。
 
--   具有指向另一個指令碼檔案之 `script` 屬性的 `src` 項目。 目標指令碼檔必須以 .js 為副檔名。
+-   具有指向另一個指令碼檔案之 `script` 屬性的 `src` 元素。 目標指令碼檔必須以 .js 為副檔名。
 
 -   以 `reference` 指示詞參考其他 JavaScript 檔案的 JavaScript 檔。
 
@@ -122,7 +122,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
  JavaScript IntelliSense 提供動態超文字標記語言 (DHTML) DOM 項目的程式設計參考，例如：`body`、`form` 和 `div`。 IntelliSense 只會顯示包含在目前文件內的項目和主版頁面 (Master Page)。 JavaScript IntelliSense 也支援 `window` 和 `document` 物件及其成員。
 
 ###  <a name="IntrinsicObjects"></a> 內建物件
- JavaScript IntelliSense 提供了內建物件 `Array`、`String`、`Math`、`Date` 和 `Number` 的程式設計參考。 如需內建物件的詳細資訊，請參閱[內建物件](/visualstudio/scripting-docs/javascript/intrinsic-objects-javascript)。
+ JavaScript IntelliSense 提供了內建物件 `Array`、`String`、`Math`、`Date` 和 `Number` 的程式設計參考。 如需有關內建物件的詳細資訊，請參閱[標準的內建物件](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects)。
 
 ###  <a name="UserDefined"></a> 使用者定義的變數、函式和物件
  變更 JavaScript 檔時，[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 會掃描已開啟及已參考的文件，以判斷所有可用的程式碼資源。 這包括您建立的變數、函式和物件。 隨後 JavaScript IntelliSense 便可以使用這些資源。
@@ -137,7 +137,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 
  如果您目前未使用具備 ASP.NET AJAX 能力的網頁，則可以使用 `src` 項目之開頭標記內的 `script` 屬性參考外部指令碼檔。 `src` 屬性指定了包含原始程式碼或資料之外部檔案的 URL。
 
- 下列範例顯示在 <`script`> 標記 (Tag) 內使用 `src` 屬性來參考指令碼檔的標記 (Markup)。
+ 下列範例示範使用的標記`src`屬性中 <`script`> 標記來參考指令碼檔案。
 
 ```html
 <script type="text/javascript" src="~/Scripts/JavaScript.js">
@@ -266,7 +266,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 >  JavaScript IntelliSense 不會顯示私用成員。 私用成員在 ASP.NET AJAX 中是以底線 (_) 為起始的成員來代表。
 
 ##  <a name="Extensibility"></a> JavaScript IntelliSense 擴充性
- JavaScript Language Service 提供的物件和函式，可讓您為使用協力廠商程式庫的開發人員改變 IntelliSense 經驗。 當預設語言服務無法提供您要為客戶提供的所有資訊時，這些功能特別有用。 如需詳細資訊，請參閱[擴充 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)。
+ JavaScript 語言服務提供的物件和函式，可讓您為使用協力廠商程式庫的開發人員改變 IntelliSense 經驗。 當預設語言服務無法提供您要為客戶提供的所有資訊時，這些功能特別有用。 如需詳細資訊，請參閱[擴充 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)。
 
 ##  <a name="Validation"></a> JavaScript 驗證
  JavaScript 指令碼驗證通常會在背景中執行。 當 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 在 JavaScript 程式碼中偵測到語法錯誤時，會以下列方式提供意見：
