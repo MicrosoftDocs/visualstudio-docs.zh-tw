@@ -19,6 +19,7 @@ Visual Studio 訂用帳戶是一組全方位資源，可供您在 Windows、iOS�
 系統管理員請登入 [https://manage.visualstudio.com](https://manage.visualstudio.com) 以指派訂用帳戶給您的小組。<br>
 訂閱者請登入 [https://my.visualstudio.com](https://my.visualstudio.com) 來存取您的訂用帳戶權益。
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">

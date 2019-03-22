@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio 提供數種不同工具，協助您部署應用程式。
 
+<!-- markdownlint-disable MD033 -->
+
 <h2>透過 5 分鐘的快速入門體驗 Visual Studio 部署</h2>
 
 <ul class="panelContent cardsFTitle">

@@ -8,17 +8,13 @@ ms.author: jasgro
 ms.topic: landing-page
 ms.technology: vs-ide-mobile
 ms.workload:
-- apexprodleads
-ms.openlocfilehash: 92314fc4151604007944541706718ec166ffdc09
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955930"
+  - apexprodleads
 ---
 # <a name="mobile-development-with-c-documentation"></a>使用 C++ 進行行動裝置開發文件
 
 使用 Visual Studio 建立適用於 iOS、Android 和 Windows 裝置的原生 C++ 應用程式。
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsF">
     <li>
