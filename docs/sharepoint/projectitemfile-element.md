@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76da5221d8f5bbdeb40f22559c6fabba727986b4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 57c491c79030eea1a01024235c01aec425d5994c
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645351"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322908"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile 項目
   代表功能項目檔案，以包含與專案項目時將它部署至 SharePoint 的 SharePoint 檔案。
@@ -60,7 +60,7 @@ ms.locfileid: "56645351"
 
 |||
 |-|-|
-|**命名空間**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**命名空間**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**結構描述名稱**|SharePoint 專案項目結構描述|
 |**驗證檔案**|ProjectItemModelSchema.xsd|
 |**可以是空的**|否|

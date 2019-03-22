@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 140c72e124143860fee80054ab3fe7e6e921b918
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194667"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324637"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>HOW TO：使用精靈與專案範本
 
@@ -68,7 +68,7 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
 
 3. 做為資產中加入 VSIX 專案的組件。 開啟*source.extension.vsixmanifest*檔案，然後選取**資產** 索引標籤。中**加入新資產** 視窗中，如**型別**選取**Microsoft.VisualStudio.Assembly**，如**來源**選取**的目前方案中的專案**，並針對**專案**選取**MyProjectWizard**。
 
-4. 將下列參考加入 VSIX 專案。 (在**方案總管**，VSIX 專案節點下，選取**參考**，按一下滑鼠右鍵，然後選取**加入參考**。)在 **加入參考**對話方塊，請在**Framework**索引標籤上，尋找**System.Windows 表單**組件並加以選取。 現在，選取**延伸模組** 索引標籤。尋找**EnvDTE**組件並加以選取。 也會發現**Microsoft.VisualStudio.TemplateWizardInterface**組件並加以選取。 按一下 [確定] 。
+4. 將下列參考加入 VSIX 專案。 (在**方案總管**，VSIX 專案節點下，選取**參考**，按一下滑鼠右鍵，然後選取**加入參考**。)在 **加入參考**對話方塊，請在**Framework**索引標籤上，尋找**System.Windows 表單**組件並加以選取。 現在，選取**延伸模組** 索引標籤。尋找**EnvDTE**組件並加以選取。 也會發現**Microsoft.VisualStudio.TemplateWizardInterface**組件並加以選取。 按一下 [確定 **Deploying Office Solutions**]。
 
 5. 加入 VSIX 專案的精靈實作的類別。 (在**方案總管**，以滑鼠右鍵按一下 VSIX 專案節點，然後選取**新增**，然後**新項目**，然後**類別**。)將類別命名為**WizardImplementation**。
 
@@ -242,7 +242,7 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
 
      同樣地，別忘了引號。 您應該會看到如下的輸出中的資料行
 
-     **公開金鑰語彙基元是 <token>**
+     **公開金鑰語彙基元是\<權杖 >**
 
      記下此值。
 

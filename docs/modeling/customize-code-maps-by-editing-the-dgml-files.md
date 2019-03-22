@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31f26acadcbeac4aa042f7372fd4c80a9e385c54
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5394e7918c623fee3c1fed4008a952ca7a9e0f22
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937938"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323145"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 
@@ -47,7 +47,7 @@ ms.locfileid: "55937938"
 
     若要加入新的群組，請找出 `<Nodes>` 區段。 加入新的 `<Node/>` 項目。
 
-3. 在 `<Node/>` 項目中加入 `Group` 屬性，指定群組呈現為展開或摺疊的狀態。 例如：
+3. 在 `<Node/>` 項目中加入 `Group` 屬性，指定群組呈現為展開或摺疊的狀態。 例如: 
 
    ```xml
    <Nodes>
@@ -201,7 +201,7 @@ ms.locfileid: "55937938"
     Shape="ShapeFilePathLocation"
     ```
 
-     例如：
+     例如: 
 
     ```xml
     <Nodes>
@@ -236,7 +236,7 @@ ms.locfileid: "55937938"
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     例如：
+     例如: 
 
     ```xml
     <Links>
@@ -286,35 +286,35 @@ ms.locfileid: "55937938"
 
     這個運算式會使用下列 Backus-Naur 格式 (BNF) 語法：
 
-    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>
+    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>
 
-    <BinaryExpression> ::= <Expression> <Operator> <Expression>
+    \<BinaryExpression> ::= \<Expression> \<Operator> \<Expression>
 
-    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
+    \<UnaryExpression> ::= "!"\<運算式 > &#124; "+"\<運算式 > &#124; "-"\<運算式 >
 
-    <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
+    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding >"。"\<MemberBinding>
 
-    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>
+    \<MemberBinding> ::= \<MethodCall> &#124; \<PropertyGet>
 
-    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"
+    \<MethodCall> ::= \<Identifier> "(" \<MethodArgs> ")"
 
-    <PropertyGet> :: = 識別碼
+    \<PropertyGet >:: = 識別碼
 
-    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>
+    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>
 
-    <Identifier> ::= [^. ]*
+    \<識別項 >:: = [^。 ]*
 
-    <Literal> :: = 單引號或雙引號括住字串常值
+    \<常值 >:: = 單引號或雙引號括住字串常值
 
-    <Number> :: = 包含選擇性小數點的數字的字串
+    \<數字 >:: = 包含選擇性小數點的數字的字串
 
     您可以指定多個`<Condition/>`項目，都必須要套用樣式，則為 true。
 
 3. 在 `<Condition/>` 項目的下一行加入一個或多個 `<Setter/>` 項目來指定 `Property` 屬性與固定的 `Value` 屬性，或加入計算的 `Expression` 屬性，以套用至符合條件的對應、程式碼項目或連結。
 
-    例如：
+    例如: 
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -373,9 +373,9 @@ ms.locfileid: "55937938"
 
  在這個範例中：
 
-1.  如果 `Coverage` 為 > 80，則將 `Background` 屬性設定為綠色。
+1.  如果`Coverage`為 > 80，然後設定`Background`屬性為綠色。
 
-2.  如果 `Coverage` 為 > 50，則根據 `Background` 屬性值，將 `Coverage` 屬性設定為深淺程度不同的橙色。
+2.  Else if`Coverage`為 > 50，然後設定`Background`的橙色陰影的屬性，根據值`Coverage`屬性。
 
 3.  如果是上述所有條件以外的情況，則根據 `Background` 屬性值，將 `Coverage` 屬性設定為深淺程度不同的紅色。
 
@@ -442,7 +442,7 @@ ms.locfileid: "55937938"
 
 1.  在文字或 XML 編輯器中開啟此 .dgml 檔案。
 
-2.  找出該程式碼項目的 `<Node/>` 項目。 指定此屬性的名稱及值。 例如：
+2.  找出該程式碼項目的 `<Node/>` 項目。 指定此屬性的名稱及值。 例如: 
 
     ```xml
     <Nodes>
@@ -464,7 +464,7 @@ ms.locfileid: "55937938"
 
 2.  找出同時包含來源程式碼項目與目標程式碼項目名稱的 `<Link/>` 項目。
 
-3.  在 `<Node/>` 項目中，指定屬性名稱及其值。 例如：
+3.  在 `<Node/>` 項目中，指定屬性名稱及其值。 例如: 
 
     ```xml
     <Links>
@@ -489,7 +489,7 @@ ms.locfileid: "55937938"
 
 -   找出您要的程式碼項目之 `<Node/>` 項目。
 
--   在 `<Node/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如：
+-   在 `<Node/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如: 
 
     ```xml
     <Nodes>
@@ -511,7 +511,7 @@ ms.locfileid: "55937938"
 
 2.  找出同時包含來源程式碼項目與目標程式碼項目名稱的 `<Link/>` 項目。
 
-3.  在 `<Link/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如：
+3.  在 `<Link/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如: 
 
     ```xml
     <Links>
@@ -533,7 +533,7 @@ ms.locfileid: "55937938"
 
 2.  加入父分類的 `<Category/>` 項目，然後將 `BasedOn` 屬性加入至子分類的 `<Category/>` 項目。
 
-     例如：
+     例如: 
 
     ```xml
     <Nodes>
@@ -582,7 +582,7 @@ ms.locfileid: "55937938"
      > [!NOTE]
      >  每個項目只能有一個 `Reference` 屬性。
 
-     例如：
+     例如: 
 
    ```xml
    <Nodes>

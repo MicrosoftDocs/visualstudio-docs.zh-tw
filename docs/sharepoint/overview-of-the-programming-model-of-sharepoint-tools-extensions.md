@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bec1627af7bbef1c3fcd264f2d74aca86d1cfad4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d4cac8341adb61a6644e7e331f00584c5c341471
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639332"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325232"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>概觀的程式設計模型的 SharePoint 工具擴充功能
   在 Visual Studio 中建立 SharePoint 工具的延伸模組時，您會從實作 SharePoint 工具公開的一或多個擴充性介面開始。 在大部分情況下，您也會使用 SharePoint 工具所提供的其他類型，在您的延伸模組中實作功能。 在某些情況下，您也可以使用 Visual Studio 和 SharePoint 所提供的其他物件模型中的類型。 您必須了解每個這些物件模型的用途，而且知道如何與其他用來建立 SharePoint 工具擴充功能。
@@ -83,7 +83,7 @@ ms.locfileid: "56639332"
 ### <a name="visual-studio-automation-object-model"></a>Visual Studio 自動化物件模型
  Visual Studio 自動化物件模型會提供可用來自動化 Visual Studio 專案 和 IDE 的 API。 使用 Visual Studio 物件模型來執行非 SharePoint 專案特定的專案相關工作，或在 Visual Studio 中執行其他一般自動化工作。 傳統上，此物件模型常用於 Visual Studio 增益集和巨集，但您也可以在 SharePoint 工具擴充功能中使用它。
 
- Visual Studio 自動化物件模型的主要部分定義於*EnvDTE.dll*組件。 *EnvDTE\\<version>.dll*組件提供特定版本的 Visual Studio 中引進的其他功能。 這些組件隨附於 Visual Studio。
+ Visual Studio 自動化物件模型的主要部分定義於*EnvDTE.dll*組件。 *EnvDTE\\\<版本 >.dll*組件提供特定版本的 Visual Studio 中引進的其他功能。 這些組件隨附於 Visual Studio。
 
  如需自動化物件模型的詳細資訊，請參閱[Visual Studio SDK 參考](../extensibility/visual-studio-sdk-reference.md)。
 
