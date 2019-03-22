@@ -8,16 +8,12 @@ ms.technology: vs-ide-nodejs
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: c6987cfe4934933bc85680d7ae4d3b3cda8fa060
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920854"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio 中的 JavaScript
 
 Visual Studio 提供數個不同的工具來協助您使用 JavaScript 或 TypeScript 建立應用程式。
+
+<!-- markdownlint-disable MD033 -->
 
 <h2>透過 5 分鐘快速入門了解如何在 Visual Studio 中使用 JavaScript</h2>
 
@@ -225,5 +221,4 @@ Visual Studio 提供數個不同的工具來協助您使用 JavaScript 或 TypeS
         </a>
     </li>
 </ul><p>
-
 ---

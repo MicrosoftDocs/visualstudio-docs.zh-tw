@@ -176,6 +176,8 @@ items:
         href: ide/create-new-project.md
       - name: 建立方案和專案
         href: ide/creating-solutions-and-projects.md
+      - name: 從存放庫開啟專案
+        href: get-started/tutorial-open-project-from-repo.md
       - name: 移植、移轉及升級專案
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
       - name: 在 Visual Studio 2019 中移植、移轉及升級專案
@@ -1193,9 +1195,9 @@ items:
     displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: c230bbe05320a57aecf0b7141f44f069eadd2a8d
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 9df9ac7c4440ae6d968f0925a086921bf49a309d
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268735"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324035"

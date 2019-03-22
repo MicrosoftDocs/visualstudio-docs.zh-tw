@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出問題。 偵錯工具可以與所有 Visual Studio 程式設計語言及其相關程式庫搭配使用。 透過偵錯工具，您可以中斷程式執行，以檢查程式碼、檢查與編輯變數、檢視暫存器、查看由原始程式碼所建立的指令，以及檢視應用程式所使用的記憶體空間。
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://docs.microsoft.com/visualstudio/debugger/what-is-debugging">

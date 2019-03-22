@@ -12,6 +12,8 @@ manager: jillfra
 
 程式碼剖析和診斷工具可協助您診斷記憶體和 CPU 使用量，以及其他應用程式層級的問題。 利用這些工具，您可以隨著您在偵錯工具中執行應用程式時間而累積資料 (例如變數值、函式呼叫和事件)。 您可以在執行程式碼時檢視應用程式在不同時間點的狀態。
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour">
