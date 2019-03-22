@@ -63,15 +63,15 @@ ms.locfileid: "56632390"
 除了上述項目，對應至 MSBuild 語言項目的名稱也無法用於使用者定義的屬性、項目或項目中繼資料：
 
 * VisualStudioProject
-* 目標
+* Target
 * PropertyGroup
-* 輸出
+* Output
 * ItemGroup
 * UsingTask
 * ProjectExtensions
 * OnError
 * ImportGroup
-* 選擇
+* Choose
 * When
 * Otherwise
 
