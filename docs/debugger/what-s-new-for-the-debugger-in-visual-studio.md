@@ -1,5 +1,6 @@
 ---
 title: 什麼是 Visual Studio 2017 中偵錯工具的新功能 |Microsoft Docs
+titleSuffix: ''
 ms.date: 01/22/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,18 +19,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff14414415f86aeb704920f722eb221a2530a35c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: vs-2017
+ms.openlocfilehash: 9c6f2eb4be56be8cf5e25c3238a91819df3bc574
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993230"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867615"
 ---
-# <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>偵錯工具中最新消息 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Visual Studio 2017 中偵錯工具的新功能
 
 偵錯工具會包含下列新功能：
 
-- 15.5 的新功能：**快照集偵錯工具**會在您感興趣的程式碼執行時，擷取實際執行應用程式的快照集。 若要指示偵錯工具擷取快照集，您可以在程式碼中設定快照點和記錄點。 偵錯工具可讓您清楚了解發生什麼問題，而不會影響實際執行應用程式的流量。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
+- 在 15.5 版中，新**快照集偵錯工具**您感興趣的程式碼執行時，會在生產應用程式的快照集。 若要指示偵錯工具擷取快照集，您可以在程式碼中設定快照點和記錄點。 偵錯工具可讓您清楚了解發生什麼問題，而不會影響實際執行應用程式的流量。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
 
     快照集合適用於 Azure App Service 中執行的下列 Web 應用程式：
 
@@ -38,7 +40,7 @@ ms.locfileid: "54993230"
 
     如需詳細資訊，請參閱[使用快照偵錯工具偵錯即時 ASP.NET 應用程式](../debugger/debug-live-azure-applications.md)。
 
-- 僅在 Visual Studio Enterprise 15.5 的新功能**IntelliTrace 回溯**自動快照的應用程式在每個中斷點和偵錯工具逐步執行事件。 記錄的快照集可讓您回溯到先前的中斷點或步驟，以檢視應用程式過去的狀態。 如果您想要查看先前的應用程式狀態，但不想要重新啟動偵錯或重新建立所需的應用程式狀態，IntelliTrace 回溯可節省您的時間。
+- 15.5 版 Visual Studio Enterprise 中，新**IntelliTrace 回溯**自動快照的應用程式在每個中斷點和偵錯工具逐步執行事件。 記錄的快照集可讓您回溯到先前的中斷點或步驟，以檢視應用程式過去的狀態。 如果您想要查看先前的應用程式狀態，但不想要重新啟動偵錯或重新建立所需的應用程式狀態，IntelliTrace 回溯可節省您的時間。
 
     您可以使用[偵錯] 工具列的 [逐步返回] 和 [逐步前進] 按鈕，來巡覽及檢視快照集。 這些按鈕可巡覽出現在 [診斷工具] 視窗之 [事件] 索引標籤中的事件。
 
@@ -66,7 +68,7 @@ ms.locfileid: "54993230"
 
     ![中的搜尋 připojit k procesu](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-如需有關這些新功能的詳細資訊，請參閱 <<c0> [ 版本資訊[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag)。
+如需有關這些新功能的詳細資訊，請參閱 <<c0> [ 版本資訊[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes)。
 
 ## <a name="see-also"></a>另請參閱
 
