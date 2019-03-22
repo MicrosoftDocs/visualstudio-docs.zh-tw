@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d662ef0e0b838b324250da8dca4255a6237bccb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39a31a7eca86daa390ed1bb4ad32ab5e8859b2d7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969716"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873472"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用儲存的 IntelliTrace 資料 (C#，Visual Basic、 c + +)
 
@@ -38,7 +38,7 @@ ms.locfileid: "54969716"
     |----------------|-------------|
     |在 Visual Studio Enterprise (但不是 Professional 或 Community 版本) 中的 IntelliTrace 工作階段|[IntelliTrace 功能](../debugger/intellitrace-features.md)|
     |Microsoft Test Manager 中的測試工作階段。 這會將 .iTrace 檔案附加至 Team Foundation Server 工作項目。|[在手動測試中收集更多診斷資料](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
-    |如果是在部署中執行的 ASP.NET Web App 和 SharePoint 應用程式，則來源為 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 R2 Operations Manager 運作)|-   [於部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新功能](http://technet.microsoft.com/library/dn249700.aspx)|
+    |如果是在部署中執行的 ASP.NET Web App 和 SharePoint 應用程式，則來源為 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 R2 Operations Manager 運作)|-   [於部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新功能](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ##  <a name="GetStarted"></a> 請您指定選項。
 
@@ -109,7 +109,7 @@ ms.locfileid: "54969716"
 
 3.  展開該呼叫，以檢閱該時間點所記錄的所有巢狀呼叫和參數值。
 
-     (鍵盤：若要顯示或隱藏巢狀的呼叫，請按**向右箭號**或是**向左鍵**分別。 若要顯示和隱藏巢狀呼叫的參數值，請按 **空格鍵** )
+     (鍵盤：若要顯示或隱藏巢狀呼叫，請分別按下 **向右鍵** 或 **向左鍵** 。 若要顯示和隱藏巢狀呼叫的參數值，請按 **空格鍵** )
 
      從該呼叫開始偵錯。
 
@@ -206,7 +206,7 @@ ms.locfileid: "54969716"
 
     ![IntelliTrace 記錄檔&#45;SharePoint 未處理例外狀況](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   如需逐步解說，請參閱[逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 代理程式記錄，請參閱資料種類[IntelliTrace 功能](../debugger/intellitrace-features.md)。
+   如需逐步解說，請參閱 <<c0> [ 逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 代理程式記錄，請參閱資料種類[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
 ###  <a name="ThreadsList"></a> 執行緒清單
  檢查在目標處理序中執行的已記錄執行緒。 您可以從所選取之執行緒中的第一個有效 IntelliTrace 事件開始進行偵錯。
@@ -272,4 +272,4 @@ ms.locfileid: "54969716"
  [Visual Studio 偵錯工具](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 #### <a name="guidance"></a>指引
- [測試 for Continuous Delivery with Visual Studio 2012-第 6 章：測試工具箱](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [使用 Visual Studio 2012 測試持續傳遞 - 第 6 章：測試工具箱](http://go.microsoft.com/fwlink/?LinkID=255203)

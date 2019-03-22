@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb6b9a9a213932662a548314bcc39c75e9d35bc3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909683"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069771"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>將 WPF 控制項繫結至 WCF 資料服務
 
@@ -50,7 +50,7 @@ ms.locfileid: "55909683"
 
 預先了解下列概念也有助於完成此逐步解說 (但非必要)：
 
-- WCF 資料服務。 如需詳細資訊，請參閱 <<c0> [ 概觀](/dotnet/framework/data/wcf/wcf-data-services-overview)。
+- [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview)。
 
 - [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]中的資料模型。
 
@@ -60,21 +60,9 @@ ms.locfileid: "55909683"
 
 ## <a name="create-the-service-project"></a>建立服務專案
 
-WCF 資料服務中建立專案，以開始此逐步解說：
+1. 開始本逐步解說中建立C#或 Visual Basic **ASP.NET Web 應用程式**專案。 將專案命名為**AdventureWorksService**。
 
-1. 啟動 Visual Studio。
-
-2. 在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。
-
-3. 展開 [Visual C#] 或 [Visual Basic]，然後選取 **Web**。
-
-4. 選取 [ASP.NET Web 應用程式] 專案範本。
-
-5. 在 [名稱] 方塊中，鍵入 **AdventureWorksService**，然後按一下 [確定]。
-
-     Visual Studio 隨即建立 **AdventureWorksService** 專案。
-
-6. 在 [方案總管] 中，以滑鼠右鍵按一下 **Default.aspx**，並選取 [刪除]。 在此逐步解說中不需要此檔案。
+2. 在 [方案總管] 中，以滑鼠右鍵按一下 **Default.aspx**，並選取 [刪除]。 這個檔案不需要在這個逐步解說。
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>建立實體資料模型服務
 

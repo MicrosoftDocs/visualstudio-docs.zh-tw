@@ -27,12 +27,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836c5be9df565d6171949845e36febc22024b20a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5db2476f16010f61af23c460fdd2bc78066c0e4a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752286"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868118"
 ---
 # <a name="general-environment-options-dialog-box"></a>選項對話方塊、環境、一般
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "54752286"
  **色彩佈景主題**  
  選擇 IDE 的 [藍色]、[淺色] 或 [深色] 色彩佈景主題。  
   
- 您可以從 [Visual Studio 組件庫](https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=tools)下載和安裝 **Visual Studio 2015 色彩佈景主題編輯器**，來安裝其他預先定義的佈景主題，以及建立自訂佈景主題。 安裝此工具之後，其他色彩佈景主題會出現在 [色彩佈景主題] 清單方塊中。  
+ 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 下載並安裝 **Visual Studio 2015 色彩佈景主題編輯器**，以安裝其他預先定義的佈景主題，以及建立自訂佈景主題。 安裝此工具之後，其他色彩佈景主題會出現在 [色彩佈景主題] 清單方塊中。  
   
  將標題大小寫套用至功能表列  
  在 Visual Studio 2015 中，功能表預設是在 [Title Casing (標題大小寫)] 中。 取消核取此選項，藉此設為 [全部大寫]。  
