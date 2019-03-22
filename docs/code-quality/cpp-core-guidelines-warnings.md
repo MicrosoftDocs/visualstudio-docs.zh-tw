@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872430"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323447"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ Core Guidelines 檢查工具
 
@@ -84,7 +84,7 @@ C + + Core Guidelines 是為了幫助您撰寫更好且更安全的程式碼。 
 
 當新規則加入至 c + + 核心指南檢查工具時，可能會增加預先存在的程式碼所產生的警告數目。 若要篩選哪些類型的規則，來啟用，您可以使用預先定義的規則集。 截至 Visual Studio 2017 15.3 版，是支援的規則集：
 
-  - **擁有者指標規則**強制[擁有者相關的資源管理檢查<T>c + + Core guidelines 的](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
+  - **擁有者指標規則**強制[擁有者相關的資源管理檢查\<T > c + + Core guidelines 的](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
   - **常數規則**強制[c + + Core guidelines 的常數相關檢查](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)。
 
@@ -162,7 +162,7 @@ Microsoft Visual c + + 編譯器會有有限的支援 GSL 隱藏屬性。 它可
 有時候可能蠻有用已取得焦點的執行程式碼分析，仍然繼續利用 Visual Studio IDE。 以下是範例案例可針對大型專案以儲存建置階段，並讓它更容易篩選結果。
 
 1. 在命令殼層設定`esp.extension`和`esp.annotationbuildlevel`環境變數。
-2. 啟動 Visual Studio，從命令殼層繼承這些變數。
+2. 開啟 Visual Studio，從命令殼層繼承這些變數。
 3. 載入您的專案，並開啟其內容。
 4. 啟用程式碼分析，挑選適當的規則集，但不是啟用程式碼分析延伸模組。
 5. 請移至您想要分析使用 c + + 核心指南檢查工具並開啟其內容的檔案。

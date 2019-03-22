@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d28836e1213e65fa7537937b9b6ce27b87f1c3ba
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875715"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324496"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>偵錯在 Visual Studio 中 SharePoint 工具擴充功能
   您可以偵錯的實驗執行個體或一般的執行個體的 Visual Studio 中 SharePoint 工具擴充功能。 如果您需要的行為延伸模組進行疑難排解，您也可以修改登錄值以顯示其他錯誤資訊，並設定 Visual Studio 執行 SharePoint 命令的方式。
@@ -56,7 +56,7 @@ ms.locfileid: "54875715"
 
 #### <a name="to-debug-the-extension"></a>若要偵錯擴充功能
 
-1.  以系統管理員權限啟動 Visual Studio，然後開啟 擴充功能專案。 下列的步驟，請參閱 Visual studio 這個執行個體*第一次執行個體*。
+1.  使用系統管理員權限開啟 Visual Studio，然後開啟 擴充功能專案。 下列的步驟，請參閱 Visual studio 這個執行個體*第一次執行個體*。
 
 2.  系統管理員權限啟動 Visual studio 的另一個執行個體。 下列的步驟，請參閱 Visual studio 這個執行個體*第二個執行個體*。
 

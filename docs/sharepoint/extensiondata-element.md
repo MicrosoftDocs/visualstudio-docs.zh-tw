@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbbd291888c9df1875afed64de034ab070ce8ef6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 192b745580ab676dab476b4dcf31c15b9095be2a
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608314"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324010"
 ---
 # <a name="extensiondata-element"></a>ExtensionData 項目
   代表 SharePoint 專案項目相關聯的自訂資料項目的集合。
@@ -38,7 +38,7 @@ ms.locfileid: "56608314"
 
 ### <a name="child-elements"></a>子元素
 
-|項目|描述|
+|元素|描述|
 |-------------|-----------------|
 |[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|選擇性項目。<br /><br /> 表示索引鍵/值格式中的 SharePoint 專案項目相關聯的自訂資料項目。 金鑰和值必須是字串。|
 
@@ -55,7 +55,7 @@ ms.locfileid: "56608314"
 
 |||
 |-|-|
-|**命名空間**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**命名空間**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**結構描述名稱**|SharePoint 專案項目結構描述|
 |**驗證檔案**|ProjectItemModelSchema.xsd|
 |**可以是空的**|否|

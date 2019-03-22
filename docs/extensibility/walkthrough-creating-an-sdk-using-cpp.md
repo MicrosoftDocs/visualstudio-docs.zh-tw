@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18627c629e428e00c719459f7a243b74b7c4f26a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: da9be257587936088ee5f91c5e1723d71be11965
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689677"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325064"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>逐步解說：建立使用 c + + SDK
 本逐步解說示範如何建立原生 c + + 數學程式庫 SDK，封裝 SDK 作為 Visual Studio 擴充功能 (VSIX)，並接著使用它來建立應用程式。 本逐步解說分為下列步驟：
@@ -135,7 +135,7 @@ ms.locfileid: "56689677"
 
 17. 在 **檔案總管**，瀏覽至 *$SolutionRoot$ \NativeMathVSIX\bin\Debug*資料夾，然後再執行*NativeMathVSIX.vsix*開始安裝。
 
-18. 選擇**安裝**按鈕，等候安裝完成，然後再啟動 Visual Studio。
+18. 選擇**安裝**按鈕，等候安裝完成，然後再開啟 Visual Studio。
 
 ##  <a name="createSample"></a> 若要建立範例應用程式使用的類別庫
 

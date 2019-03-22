@@ -7,12 +7,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9ae6220ac38de7bf2edc7b5c305ecb377a46f18
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: c98c13528facb08f475614a6cbca9cee3c426ef9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323996"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323103"
 ---
 # <a name="troubleshooting-template-installation"></a>疑難排解安裝的範本
 
@@ -41,7 +41,7 @@ ms.locfileid: "57323996"
 
 ::: moniker range="vs-2017"
 
-4. 啟動 Visual Studio，並啟動 [新增專案] 和 [新增項目] 對話方塊，來初始化兩個範本樹狀結構。
+4. 開啟 Visual Studio，並啟動初始化兩個範本樹狀結構的 [新增專案] 和 [新增項目] 對話方塊。
 
    範本記錄現在會出現在 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** （對應至您的 Visual Studio 執行個體的安裝識別碼的執行個體識別碼）。 每個範本的樹狀目錄中初始化會將項目附加至這個記錄檔。
 
@@ -49,7 +49,7 @@ ms.locfileid: "57323996"
 
 ::: moniker range=">=vs-2019"
 
-4. 啟動 Visual Studio，並啟動 [新增專案] 和 [新增項目] 對話方塊，來初始化兩個範本樹狀結構。
+4. 開啟 Visual Studio，並啟動初始化兩個範本樹狀結構的 [新增專案] 和 [新增項目] 對話方塊。
 
    範本記錄現在會出現在 **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** （對應至您的 Visual Studio 執行個體的安裝識別碼的執行個體識別碼）。 每個範本的樹狀目錄中初始化會將項目附加至這個記錄檔。
 

@@ -8,12 +8,12 @@ ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 2d9337b443fdaabe713f1708b2be9051c2f02b3c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3d8fb5de23cbc4664ea322a9149653598956aed7
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707064"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323681"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>測量的延伸模組影響啟動
 
@@ -74,11 +74,11 @@ ms.locfileid: "56707064"
 
 套件初始化中常見的模式來初始化服務所使用，或提供該套件在套件中有`constructor`或`initialize`方法。 雖然這可確保服務可供使用，它也可以將封裝載入如果這些服務不會立即使用的不必要成本。 而是這類服務應該初始化隨選套件初始化完成的工作降到最低。
 
-針對套件所提供的全域服務，您可以使用`AddService`採用延遲初始化的服務，只會由元件在要求時，才函式的方法。 封裝內所使用的服務，您可以使用 「 延遲<T>或 AsyncLazy<T>並確定服務為第一次使用初始化/查詢。
+針對套件所提供的全域服務，您可以使用`AddService`採用延遲初始化的服務，只會由元件在要求時，才函式的方法。 封裝內所使用的服務，您可以使用 「 延遲\<T > 或 AsyncLazy\<T > 若要確定服務會在第一次使用初始化/查詢。
 
 ## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>衡量影響自動載入延伸模組使用活動記錄檔
 
-從 Visual Studio 2017 Update 3 開始，Visual Studio 活動記錄檔現在會包含封裝的效能影響的項目啟動和方案載入期間。 若要查看這些測量結果，您必須使用 /log 參數啟動 Visual Studio，然後開啟*ActivityLog.xml*檔案。
+從 Visual Studio 2017 Update 3 開始，Visual Studio 活動記錄檔現在會包含封裝的效能影響的項目啟動和方案載入期間。 若要查看這些測量結果，您必須使用 /log 參數開啟 Visual Studio，並開啟*ActivityLog.xml*檔案。
 
 活動記錄檔中的項目將會在 [管理 Visual Studio 效能] 來源之下，並看起來如下列範例所示：
 
@@ -141,9 +141,9 @@ private void DoMoreWork()
 
 ![perfview 收集功能表](media/perfview-collect-menu.png)
 
-預設選項會提供 CPU 耗用量的呼叫堆疊，但由於我們有興趣使用封鎖的時間，您也應該讓**執行緒時間**堆疊。 設定可以在準備好您可以按一下**開始收集**並啟動 Visual Studio，一旦開始錄製。
+預設選項會提供 CPU 耗用量的呼叫堆疊，但由於我們有興趣使用封鎖的時間，您也應該讓**執行緒時間**堆疊。 一旦設定準備好時，您可以按一下**開始收集**，然後開啟錄製作業開始之後的 Visual Studio。
 
-停止集合之前，您會想要確定 Visual Studio 已完全初始化，主視窗是完全可見，而且如果您的延伸模組會自動顯示任何 UI 項目，它們也會顯示。 Visual Studio 完全載入，且您的延伸模組會初始化之後, 您可以停止分析追蹤記錄。
+停止集合之前，您會想要確定 Visual Studio 已完全初始化，主視窗是完全可見，而且如果您的延伸模組會自動顯示任何 UI 項目，它們也會顯示。 當 Visual Studio 是完全載入並初始化您的延伸模組時，您可以停止分析追蹤記錄。
 
 **分析使用 PerfView 追蹤：**
 
