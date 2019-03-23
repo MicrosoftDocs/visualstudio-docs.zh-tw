@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b7ba2b707ea6a9d79e15891e85b66a82d3a832
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 68ad2e66a4cecff01005f49aa6304a515a010170
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633859"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355574"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>逐步解說：設計 Outlook 表單區域
   自訂的表單區域會擴充標準或自訂的 Microsoft Office Outlook 表單。 在此逐步解說中，您要設計自訂的表單區域，它在連絡人項目的 [偵測器] 視窗中會顯示為新頁面。 這個表單區域會將地址資訊傳送至 Windows Live 當地搜尋網站，顯示連絡人清單中每個地址的對應。 如需表單區域的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
@@ -44,7 +44,7 @@ ms.locfileid: "56633859"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 或 [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]。
+- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] 或更新版本。
 
   ![影片連結](../vsto/media/playvideo.gif "影片連結")如本主題的影片版本，請參閱[視訊操作說明：設計 Outlook 表單區域](http://go.microsoft.com/fwlink/?LinkID=140824)。
 
@@ -160,6 +160,8 @@ ms.locfileid: "56633859"
 4.  儲存並關閉連絡人項目。
 
 5.  重新開啟**王美美**連絡人項目。
+
+    在 Outlook 中，這還**尋找**分組開啟通訊錄的連絡人，或輸入到王美美**搜尋人員**。
 
 6.  在 **顯示**群組的項目功能區中，按一下**Map It**開啟 Map It 表單區域。
 
