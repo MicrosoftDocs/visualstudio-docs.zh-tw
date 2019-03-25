@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e8ddc4e7a44aa0d5d42a64556092874413e3a3b2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315101"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982762"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用建立單元測試命令來建立單元測試方法虛設常式
 
@@ -38,17 +38,28 @@ Visual Studio [建立單元測試] 命令可讓您建立單元測試方法虛設
 
 ![使用建立單元測試命令](media/createunittestcommand.png)
 
-## <a name="setting-unit-test-traits"></a>設定單元測試特性
+## <a name="set-unit-test-traits"></a>設定單元測試特性
 
 如果您計劃執行這些測試作為測試自動化程序的一部分，則可能會考慮在另一個測試專案中建立測試 (上述對話方塊中的第二個選項)，以及設定單元測試的單元測試特性。 這可讓您更輕鬆地包含或排除這些特定測試作為持續整合或持續部署管線的一部分。 特性是透過直接將中繼資料新增至單元測試所設定，如下所示。
 
 ![設定單元測試特性](media/createunittest.png)
 
-## <a name="using-third-party-unit-test-frameworks"></a>使用協力廠商單元測試架構
+## <a name="use-third-party-unit-test-frameworks"></a>使用協力廠商單元測試架構
 
 使用 Visual Studio，您可以使用任何測試架構輕鬆地建立單元測試。 若要安裝其他測試架構：
 
-1. 選擇 [工具] > [延伸模組和更新]。
+::: moniker range="vs-2017"
+
+1. 選擇 [工具] > [擴充功能和更新]。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 選擇 [擴充功能] > [管理擴充功能]。
+
+::: moniker-end
+
 2. 依序展開 [線上] > [Visual Studio Marketplace] > [工具]，然後選擇 [測試]。
 
 ![使用協力廠商測試架構](media/createunittestfx.png)

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6d1e485e89c3455c61b1050575398cae17b4aaa1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dab9cd1600e77a480ca49c131aee2dbdcb8f0521
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941903"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194758"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>使用 Windows PowerShell 指令碼來發行至開發和測試環境
 
@@ -24,7 +24,7 @@ ms.locfileid: "55941903"
 
 ## <a name="prerequisites"></a>必要條件
 
-* Azure SDK 2.3 或更新版本。 請參閱 [Visual Studio 下載](http://go.microsoft.com/fwlink/?LinkID=624384)。 (要產生 Web 專案的指令碼並不需要用到 Azure SDK。 這項功能是供 Web 專案使用，而非供雲端服務中的 Web 角色使用。)
+* 已安裝 **Azure 工作負載**的 Visual Studio 2015 或更新版本，或 Visual Studio 2013 和 Azure SDK 2.3 或更新版本。 請參閱 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)。 (要產生 Web 專案的指令碼並不需要用到 Azure SDK。 這項功能是供 Web 專案使用，而非供雲端服務中的 Web 角色使用。)
 * Azure PowerShell 0.7.4 或更新版本。 請參閱 [如何安裝和設定 Azure PowerShell](/powershell/azure/overview)。
 * [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) 或更新版本。
 
@@ -154,7 +154,7 @@ JSON 檔案建立在 [組態]  資料夾，其包含的組態資料可確切指�
 
    ![建立 Web Deploy 封裝](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Web 部署套件](https://msdn.microsoft.com/library/dd465323.aspx)。 您也可以自動建立 Web Deploy 套件，如[自訂和擴充發佈指令碼](#customizing-and-extending-publish-scripts)中所述。
+   如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Web 部署套件](https://msdn.microsoft.com/library/dd465323.aspx)。 您也可以自動建立 Web Deploy 套件，如[自訂和擴充發佈指令碼](#customizing-and-extending-the-publish-scripts)中所述。
 
 1. 在 [方案總管] 中，開啟指令碼的內容功能表，然後選擇 [以 PowerShell ISE 開啟]。
 1. 如果第一次在此電腦上執行 Windows PowerShell 指令碼，請以系統管理員權限開啟命令提示字元視窗，並輸入下列命令：
@@ -242,7 +242,7 @@ JSON 檔案建立在 [組態]  資料夾，其包含的組態資料可確切指�
     }
     ```
 
-1. 以下列程式碼取代 `New-WebDeployPackage`，並取代建構 `$msbuildCmd` 的程式行中的預留位置。 此程式碼係用於 Visual Studio 2017。 如果您使用 Visual Studio 2015，請將 **VisualStudioVersion** 屬性變更為 `14.0` (對於 Visual Studio 2013 則為 `12.0`)。
+1. 以下列程式碼取代 `New-WebDeployPackage`，並取代建構 `$msbuildCmd` 的程式行中的預留位置。 此程式碼係用於 Visual Studio 2019。 如果您使用 Visual Studio 2017，請將 **VisualStudioVersion** 屬性變更為 `15.0`、針對 Visual Studio 2015 變更為 '14.0'，或針對 Visual Studio 2013 變更為 `12.0`。
 
     ```powershell
     function New-WebDeployPackage
@@ -255,7 +255,7 @@ JSON 檔案建立在 [組態]  資料夾，其包含的組態資料可確切指�
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
 
-    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=15.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
+    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=16.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
 
     Write-VerboseWithTime ('Build-WebDeployPackage: ' + $msbuildCmd)
     ```

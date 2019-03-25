@@ -1,5 +1,5 @@
 ---
-title: 選項對話方塊、環境、擴充功能和更新
+title: 擴充功能、環境、選項對話方塊
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8625d24be0e5bffa465cb2d5116cd021e99a017
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9a9b890f57fc8148233a17e3910477a4e8697564
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912855"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983932"
 ---
-# <a name="extensions-and-updates-environment-options-dialog-box"></a>選項對話方塊、環境、擴充功能和更新
+# <a name="extensions-environment-options-dialog-box"></a>擴充功能、環境、選項對話方塊
 
 您可以使用這個頁面，設定有關 Visual Studio 如何執行更新，以及如何更新和探索擴充功能的選項。
 
@@ -35,7 +35,7 @@ ms.locfileid: "55912855"
 
 ## <a name="additional-extension-galleries"></a>其他擴充組件庫
 
-這個企業版功能可支援專屬擴充功能的組件庫。 如需詳細資訊，請參閱[私用組件庫](../../extensibility/private-galleries.md)。
+這個企業版功能可支援專屬擴充功能的組件庫。 如需詳細資訊，請參閱[私人資源庫](../../extensibility/private-galleries.md)。
 
 ## <a name="see-also"></a>請參閱
 

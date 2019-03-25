@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 38b77b4461303cd4bf21b98c63c1ae0b93a4cdc6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 77c33bc24162af0aacba9e86108a4301cdb882e6
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913388"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195186"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>步驟 5：使用 Polls Flask Web 專案範本
 
@@ -52,7 +52,7 @@ Visual Studio 也提供「投票 Flask/Jade Web 專案」範本，此範本會�
 
     ![「投票 Flask Web 專案」應用程式的完整檢視](media/flask/step06-full-app-view.png)
 
-1. 在首頁上，[Create Sample Polls] \(建立範例投票項目\) 按鈕會以 *models/samples.json* 頁面所述的三種不同投票將應用程式資料存放區初始化。 此應用程式預設會使用記憶體內部資料庫 (如 [About] \(關於\) 頁面所示)，每次重新啟動應用程式時都會重設此資料庫。 此應用程式也包含與「Azure 儲存體」和 Mongo DB 搭配運作的程式碼，如本文稍後所述。
+1. 在首頁上，[Create Sample Polls] \(建立範例投票項目\) 按鈕會以 *models/samples.json* 頁面所述的三種不同投票將應用程式資料存放區初始化。 此應用程式預設會使用記憶體內部資料庫 (如 [About] \(關於\) 頁面所示)，每次重新啟動應用程式時都會重設此資料庫。 此應用程式也包含與「Azure 儲存體」和 Mongo DB 搭配運作的程式碼，如此文章稍後所述。
 
 1. 在您將資料存放區初始化之後，即可在不同的投票項目中進行投票，如首頁所示 (為了簡潔起見，已省略導覽列和頁尾)：
 
@@ -72,7 +72,7 @@ Visual Studio 也提供「投票 Flask/Jade Web 專案」範本，此範本會�
 
 ### <a name="examine-the-project-contents"></a>檢查專案內容
 
-如前文所述， 如果您已瀏覽 Visual Studio 中的其他專案範本，則對於從「投票 Flask Web 專案」範本建立的專案內容，應該會相當熟悉。 本文章中的其他步驟會歸納更重大的修改和增添，也就是資料模型和其他檢視。
+如前文所述， 如果您已瀏覽 Visual Studio 中的其他專案範本，則對於從「投票 Flask Web 專案」範本建立的專案內容，應該會相當熟悉。 此文章中的其他步驟會歸納更重大的修改和增添，也就是資料模型和其他檢視。
 
 ## <a name="step-5-2-understand-the-data-models"></a>步驟 5-2：了解資料模型
 
@@ -356,4 +356,4 @@ def results(key):
 
 - 新增使用另一個生產環境層級資料存放區 (例如 PostgreSQL、MySQL 及 SQL Server；這些全都可以裝載在 Azure 上) 的存放庫實作。 您也可以使用 [Azure SDK for Python](/python/azure/?view=azure-python) 來除了搭配 Cosmos DB 運作之外，也可以搭配 Azure 儲存體服務 (例如資料表和 Blob) 運作。
 
-- 在 Azure DevOps 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (透過 Azure Repos、GitHub 或其他位置)，您可以設定 Azure DevOps 專案來自動執行單元測試作為發行必要條件，另外也請設定管線來部署至預備伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 此外，Azure DevOps 還會與 App Insights 等監視解決方案整合，並使用敏捷式規劃工具來關閉整個週期。 如需詳細資訊，請參閱[使用 Azure DevOps 專案建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts)，以及一般的 [Azure DevOps 文件](/azure/devops/?view=vsts)。
+- 在 Azure DevOps 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (透過 Azure Repos、GitHub 或其他位置)，您可以設定 Azure DevOps 專案來自動執行單元測試作為發行必要條件，另外也請設定管線來部署至預備伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 此外，Azure DevOps 還會與 App Insights 等監視解決方案整合，並使用敏捷式規劃工具來關閉整個週期。 如需詳細資訊，請參閱[使用 Azure DevOps 專案建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts)，以及一般的[Azure DevOps 文件](/azure/devops/?view=vsts)。

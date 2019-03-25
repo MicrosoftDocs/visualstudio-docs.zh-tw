@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf114093c6ba3e267cab901864c5442df8e33236
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 03dbfd8140249a93dfb649894dabab1c57b203c2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957295"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983997"
 ---
-# <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>透過新增或移除工作負載和元件來修改 Visual Studio 2017
+# <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>透過新增或移除工作負載和元件來修改 Visual Studio
 
 我們不僅讓您可以更輕鬆地將 Visual Studio 個人化以配合您要完成的工作，也讓您可以更輕鬆地自訂 Visual Studio。 若要這樣做，請啟動新的 Visual Studio 安裝程式並進行所需的變更。
 
@@ -69,6 +69,6 @@ ms.locfileid: "55957295"
 
 ## <a name="see-also"></a>另請參閱
 
-* [安裝 Visual Studio 2017](install-visual-studio.md)
-* [更新 Visual Studio 2017](update-visual-studio.md)
-* [解除安裝 Visual Studio 2017](uninstall-visual-studio.md)
+* [安裝 Visual Studio](install-visual-studio.md)
+* [更新 Visual Studio](update-visual-studio.md)
+* [解除安裝 Visual Studio](uninstall-visual-studio.md)

@@ -11,17 +11,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38d63de6c223d8a77bd2c1fa2e0a13b0e814ef8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e3a77797cb519294c16329a432cf742746293c13
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620313"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983399"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>標準和自訂工具組的設定
 MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用程式專案。 MSBuild 包含標準的工具組，但您也可以建立自訂工具組。 如需如何指定工具組的相關資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
 
 ## <a name="standard-toolset-configurations"></a>標準工具組設定
+
+::: moniker range=">=vs-2019"
+ MSBuild 16.0 包含下列標準工具組：
+
+|ToolsVersion|工具組路徑 (如 MSBuildToolsPath 或 MSBuildBinPath 組建屬性中所指定)|
+|------------------| - |
+|2.0|*\<Windows 安裝路徑>\Microsoft.Net\Framework\v2.0.50727\\\*|
+|3.5|*\<Windows 安裝路徑>\Microsoft.NET\Framework\v3.5\\*|
+|4.0|*\<Windows 安裝路徑>\Microsoft.NET\Framework\v4.0.30319\\*|
+|目前|*\<Visual Studio 安裝路徑>\MSBuild\Current\bin*|
+
+ `ToolsVersion` 值決定 Visual Studio 產生的專案使用哪一個工具組。 在 Visual Studio 2019 中，預設值是 "Current" (不論專案檔中指定何種版本)，但您可以在命令提示字元中使用 **/toolsversion** 參數來覆寫該屬性。 如需此屬性的相關資訊以及指定 `ToolsVersion` 的其他方式，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。
+
+ ::: moniker-end
+
+::: moniker range="vs-2017"
  MSBuild 15.0 包含下列標準工具組：
 
 |ToolsVersion|工具組路徑 (如 MSBuildToolsPath 或 MSBuildBinPath 組建屬性中所指定)|
@@ -32,8 +48,9 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
 |15.0|*\<Visual Studio 安裝路徑>\MSBuild\15.0\bin*|
 
  `ToolsVersion` 值決定 Visual Studio 產生的專案使用哪一個工具組。 在 Visual Studio 2017 中，預設值是 "15.0" (不論專案檔中指定何種版本)，但您可以在命令提示字元使用 **/toolsversion** 參數覆寫該屬性。 如需此屬性的相關資訊以及指定 `ToolsVersion` 的其他方式，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。
+ ::: moniker-end
 
- Visual Studio 2017 不會使用登錄機碼作為 MSBuild 的路徑。 若為與 Visual Studio 2017 一同安裝，且為 15.0 版之前的 MSBuild，下列登錄機碼會指定 MSBuild.exe 的安裝路徑。
+Visual Studio 2017 及更新版本不會使用登錄機碼作為 MSBuild 的路徑。 若為與 Visual Studio 2017 一同安裝，且為 15.0 版之前的 MSBuild，下列登錄機碼會指定 MSBuild.exe 的安裝路徑。
 
 |登錄機碼|機碼名稱|字串索引鍵值|
 |------------------|--------------|----------------------|
@@ -56,11 +73,11 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
 ## <a name="custom-toolset-definitions"></a>自訂工具組定義
  當標準工具組無法滿足您的組建需求時，您可以建立自訂的工具組。 例如，您可能有個組建置實驗室案例，必須使用個別的系統組建 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案。 使用自訂工具組，您就可以在建立專案或執行 *MSBuild.exe* 時，將自訂值指派給 `ToolsVersion` 屬性。 透過這樣做，您也可以使用 `$(MSBuildToolsPath)` 屬性匯入該目錄的 *.targets* 檔案，以及定義您自己的自訂工具組屬性，這些屬性可用於使用該工具組的任何專案。
 
- 在 *MSBuild.exe* (如果使用 MSBuild 引擎，則為裝載 MSBuild 引擎的自訂工具) 的設定檔中指定自訂工具組。 例如，如果您想要覆寫 ToolsVersion 15.0 的預設行為，*MSBuild.exe* 的設定檔可以包含下列工具組定義。
+ 在 *MSBuild.exe* (如果使用 MSBuild 引擎，則為裝載 MSBuild 引擎的自訂工具) 的設定檔中指定自訂工具組。 例如，如果您想要定義名為 *MyCustomToolset* 的工具組，*MSBuild.exe* 的設定檔可以包含下列工具組定義。
 
 ```xml
-<msbuildToolsets default="15.0">
-   <toolset toolsVersion="15.0">
+<msbuildToolsets default="MyCustomToolset">
+   <toolset toolsVersion="MyCustomToolset">
       <property name="MSBuildToolsPath"
         value="C:\SpecialPath" />
    </toolset>

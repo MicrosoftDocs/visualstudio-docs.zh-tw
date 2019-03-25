@@ -3,19 +3,19 @@ title: 將區域函式轉換為方法
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55c82aa896de5c3f3bf18468a1da98253a3def74
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 96064b16e53081e0456ed43275acd5edf7ead468
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324673"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152950"
 ---
 # <a name="convert-local-function-to-method"></a>將區域函式轉換為方法
 

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9259b5a813dc09389c57288e13eafd5a3adb0064
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 58d8cba033fd3e43b8e54afdc7651a45df17a59a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55770566"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069979"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 React 應用程式
 
@@ -57,11 +57,18 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
 ## <a name="prerequisites"></a>必要條件
 
-* 您必須安裝 Visual Studio 2017 和 Node.js 開發工作負載。
+* 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
 
-    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 頁面免費進行安裝。
+    ::: moniker range=">=vs-2019"
+    如果您尚未安裝 Visual Studio 2019，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    如果您尚未安裝 Visual Studio 2017，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
+    ::: moniker-end
 
-    如果您需要安裝工作負載，但已擁有 Visual Studio，請在 [新增專案] 對話方塊的左窗格中，選取 [開啟 Visual Studio 安裝程式]。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
+    如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
+
+    ![VS 安裝程式中的 Node.js 工作負載](../ide/media/quickstart-nodejs-workload.png)
 
 * 您必須安裝 Node.js 執行階段。
 
@@ -73,13 +80,19 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
 首先，請建立 Node.js Web 應用程式專案。
 
-1. 開啟 Visual Studio 2017。
+1. 開啟 Visual Studio。
 
 1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
-1. 在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選擇 [空白的 Node.js Web 應用程式]，鍵入名稱 **NodejsWebAppBlank**，然後選擇 [確定]。
+1. 建立新的專案。
 
-     如果沒有看到 [空白的 Node.js Web 應用程式] 專案範本，您必須先安裝 Node.js 開發工作負載。
+    ::: moniker range=">=vs-2019"
+    在 [建立新專案] 對話方塊中，於搜尋方塊中輸入 **javascript** 以篩選結果，然後依序選擇 [空白的 Node.js Web 應用程式] 和 [下一步]。 接著，選擇 [建立]。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選擇 [空白的 Node.js Web 應用程式]、輸入名稱 **NodejsWebAppBlank**，然後選擇 [確定]。
+    ::: moniker-end
+    如果您看不到 [空白的 Node.js Web 應用程式] 專案範本，則必須新增 **Node.js 開發**工作負載。 如需詳細指示，請參閱[必要條件](#prerequisites)。
 
     Visual Studio 會建立新的方案，並開啟專案。
 
@@ -377,7 +390,7 @@ Webpack 搭配 JavaScript 檔案，讓它們可以在瀏覽器中執行。 它�
 
     ![附加至處理序](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    當 [DOM 總管] 和 JavaScript 主控台在 Visual Studio 中開啟時，您就知道偵錯工具已正確附加。 這些偵錯工具類似於 Chrome Developer Tools 和 Edge 的 F12 工具。
+    當 [DOM 總管] 和 JavaScript 主控台在 Visual Studio 中開啟時，您就知道偵錯工具已正確附加。 這些偵錯工具類似適用於 Microsoft Edge 的 Chrome Developer Tools 和 F12 工具。
 
     > [!NOTE]
     > 如果偵錯工具未附加，而且您看到訊息「無法附加到處理序。 作業在目前狀態中不合法。請在將 Chrome 啟動為偵錯模式之前，先使用工作管理員關閉 Chrome 的所有執行個體。 Chrome 擴充功能可能會執行，並防止完整的偵錯模式。

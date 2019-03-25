@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c49cbb49b6ee28e7bb184c22052a7bc4bee57d13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c799d903c29d745d97a407c4c25f1285a5f35151
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913271"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069823"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Visual Studio 的環境設定
 
-當您第一次啟動 Visual Studio 時，可以透過選擇設定集合，針對您最常執行的開發類型最佳化開發環境。 每個集合都會最佳化項目 (例如，鍵盤快速鍵、視窗配置、專案和項目範本) 及命令的可見度。
+當您第一次開啟 Visual Studio 時，可以透過選擇設定集合，針對您最常執行的開發類型來將開發環境最佳化。 每個集合都會最佳化項目 (例如，鍵盤快速鍵、視窗配置、專案和項目範本) 及命令的可見度。
 
 可以使用下列設定集合：
 
@@ -30,7 +30,7 @@ ms.locfileid: "55913271"
 
 ## <a name="reset-settings"></a>重設設定
 
-若要在第一次啟動 Visual Studio 之後變更開發設定，請遵循下列步驟：
+若要在第一次開啟 Visual Studio 之後變更開發設定，請遵循下列步驟：
 
 1. 從功能表列中選取 [工具] > [匯入和匯出設定] 以開啟 [匯入和匯出設定精靈]。
 

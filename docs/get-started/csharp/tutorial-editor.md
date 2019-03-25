@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 496dbfb48b8cc8052d174ba1dd69faa3b4fc9d01
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a9b03a1d78e929ed3e21be086ea78ab09c334da6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722495"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069667"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
@@ -26,7 +26,7 @@ ms.locfileid: "56722495"
 > [!TIP]
 > 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
 
-本文假設您已熟悉 C#。 如果您不熟悉 C#，我們建議您先瀏覽教學課程 (例如[開始使用 Visual Studio 中的 C# 和 ASP.NET Core](tutorial-aspnet-core.md))。
+此文章假設您已熟悉 C#。 如果您不熟悉 C#，我們建議您先瀏覽教學課程 (例如[開始使用 Visual Studio 中的 C# 和 ASP.NET Core](tutorial-aspnet-core.md))。
 
 > [!TIP]
 > 若要繼續遵循這篇文章，請確定您已為 Visual Studio 選取 C# 設定。 如需選取整合式開發環境 (IDE) 的設定資訊，請參閱[選取環境設定](visual-studio-ide.md#select-environment-settings)。
@@ -35,9 +35,21 @@ ms.locfileid: "56722495"
 
 從建立新檔案並在其中新增一些程式碼開始。
 
-1. 開啟 Visual Studio，然後從功能表列的 [檔案] 功能表中選擇 [新增] > [檔案]。
+::: moniker range="vs-2017"
 
-1. 在 [新增檔案] 對話方塊的 [一般] 類別下，選擇 [Visual C# 類別]，然後選擇 [開啟]。
+1. 開啟 Visual Studio。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 開啟 Visual Studio。 在開始視窗中按 **Esc** 或按一下 [不使用程式碼繼續]，以開啟開發環境。
+
+::: moniker-end
+
+2. 從功能表列的 [檔案] 功能表中，選擇 [新增] > [檔案]。
+
+3. 在 [新增檔案] 對話方塊的 [一般] 類別下，選擇 [Visual C# 類別]，然後選擇 [開啟]。
 
    使用 C# 類別的基本架構，在編輯器中開啟新的檔案。 (請注意，我們不需要建立完整的 Visual Studio 專案，才能享有程式碼編輯器提供的一些優點，您只需要一份程式碼檔案！)
 

@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72a047512b8f6434661193f088f981c52c0ad118
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d358d4f608437ad7ca004d4adef614632a123012
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939433"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983196"
 ---
-# <a name="repair-visual-studio-2017"></a>修復 Visual Studio 2017
+# <a name="repair-visual-studio"></a>修復 Visual Studio
 
 有時您的 Visual Studio 安裝會損壞或損毀。 修復可以修正此問題。
 
@@ -39,7 +39,7 @@ ms.locfileid: "55939433"
 
 ## <a name="see-also"></a>另請參閱
 
-* [安裝 Visual Studio 2017](install-visual-studio.md)
-* [更新 Visual Studio 2017](update-visual-studio.md)
-* [解除安裝 Visual Studio 2017](uninstall-visual-studio.md)
-* [針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)
+* [安裝 Visual Studio](install-visual-studio.md)
+* [更新 Visual Studio](update-visual-studio.md)
+* [解除安裝 Visual Studio](uninstall-visual-studio.md)
+* [針對 Visual Studio 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)

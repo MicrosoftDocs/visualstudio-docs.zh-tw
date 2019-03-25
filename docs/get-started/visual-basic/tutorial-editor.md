@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: baed4947d6e31cb06a64f04b0cb68d17d31c6f2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3af730ae4d5b358eab223e2a5a8288daaf632071
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939472"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069628"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
@@ -26,7 +26,7 @@ ms.locfileid: "55939472"
 > [!TIP]
 > 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
 
-本文假設您已熟悉 Visual Basic。 如果您不熟悉，建議您先瀏覽教學課程 (例如 [Visual Studio 中的 Visual Basic 使用者入門](../../get-started/visual-basic/tutorial-console.md))。
+此文章假設您已熟悉 Visual Basic。 如果您不熟悉，建議您先瀏覽教學課程 (例如 [Visual Studio 中的 Visual Basic 使用者入門](../../get-started/visual-basic/tutorial-console.md))。
 
 > [!TIP]
 > 若要繼續遵循這篇文章，請確定您已為 Visual Studio 選取 Visual Basic 設定。 如需選取整合式開發環境 (IDE) 的設定資訊，請參閱[選取環境設定](visual-studio-ide.md#select-environment-settings)。
@@ -35,9 +35,21 @@ ms.locfileid: "55939472"
 
 從建立新檔案並在其中新增一些程式碼開始。
 
-1. 開啟 Visual Studio，然後從功能表列的 [檔案] 功能表中選擇 [新增檔案]。
+::: moniker range="vs-2017"
 
-1. 在 [新增檔案] 對話方塊的 [一般] 類別下，選擇 [Visual Basic 類別]，然後選擇 [開啟]。
+1. 開啟 Visual Studio。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 開啟 Visual Studio。 在開始視窗中按 **Esc** 或按一下 [不使用程式碼繼續]，以開啟開發環境。
+
+::: moniker-end
+
+2. 從功能表列的 [檔案] 功能表中，選擇 [新增檔案]。
+
+3. 在 [新增檔案] 對話方塊的 [一般] 類別下，選擇 [Visual Basic 類別]，然後選擇 [開啟]。
 
    使用 Visual Basic 類別的基本架構，在編輯器中開啟新的檔案。 (您可能已注意到不需要建立完整的 Visual Studio 專案，即可享有程式碼編輯器提供的一些優點，例如語法醒目提示。 您只需要一個程式碼檔案！)
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f346e02bfc2eee1556a4f8ade3a472a36860daa
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b704386f1a1c26530cd24fc4bc2d3e355c9d7e03
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526512"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151241"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 C++ 進行偵錯
 
@@ -25,17 +25,20 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
 ## <a name="create-a-new-project"></a>建立新專案
 
-1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
+1. 在 Visual Studio 中，選擇 [檔案] > [新增] > [專案]。
 
-2. 在 [Visual C++] 下方，選擇 [Windows 桌面]，然後在中間窗格中選擇 [Windows 主控台應用程式]。
+    ::: moniker range=">=vs-2019"
+    [建立新專案] 對話方塊隨即開啟。 在搜尋方塊中輸入 **asp.net** 以篩選結果、選擇 [ASP.NET Core Web 應用程式]，然後按 [下一步]。 接著，輸入 **MyDbgApp** 之類的名稱，然後選擇 [建立]。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    [新增專案] 對話方塊隨即開啟。 在 [Visual C++] 下方，選擇 [Windows 桌面]，然後在中間窗格中選擇 [Windows 主控台應用程式]。 接著，輸入 **MyDbgApp** 之類的名稱，然後按一下 [確定]。
+    ::: moniker-end
 
-    如果您沒有看到 [Windows 主控台應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
-
-3. 鍵入 **MyDbgApp** 這類名稱，然後按一下 [確定]。
+    如果您看不到 [Windows 主控台應用程式] 專案範本，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
 
     Visual Studio 會建立專案。
 
-4. 在 MyDbgApp.cpp 中，將下列程式碼
+1. 在 MyDbgApp.cpp 中，將下列程式碼
 
     ```c++
     int main()

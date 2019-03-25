@@ -6,17 +6,17 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 4f3c868edb19cc45e25d73a11e7a65ead37c0b11
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 238370c5f8de5efdb37a29fea9d3e91763a0aa18
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316726"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070031"
 ---
-# <a name="visual-studio-2017-for-mac-preview-tour"></a>Visual Studio 2017 for Mac Preview 導覽
+# <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 for Mac 導覽
 
 > [!NOTE]
-> Visual Studio 2019 for Mac [現已開放](installation.md)以預覽版形式進行測試。
+> Visual Studio 2019 for Mac [現已開放](installation.md?view=vsmac-2019)以預覽版形式進行測試。
 
 Visual Studio for Mac 是 Mac 上的 _.NET 整合式開發環境_，可用來編輯、偵錯及建置程式碼，然後發佈應用程式。 除了必備功能 (如標準編輯器和偵錯工具) 外，Visual Studio for Mac 還有編譯器、程式碼完成工具、圖形設計工具和原始檔控制，讓軟體開發程序變得輕鬆容易。
 
@@ -33,7 +33,7 @@ Visual Studio for Mac 支援下列幾種開發作業：
 - 使用 C# 或 F# 和 XAML 在 Xamarin 中開發 Android、iOS、tvOS 和 watchOS 應用程式
 - 使用 C# 或 F# 開發 Cocoa 傳統型應用程式
 
-本文探討 Visual Studio for Mac 的各個部分，提供一些功能的相關資訊，讓它成為建立這些應用程式的強大工具。
+此文章探討 Visual Studio for Mac 的各個部分，提供一些功能的相關資訊，讓它成為建立這些應用程式的強大工具。
 
 ## <a name="ide-tour"></a>IDE 教學課程
 

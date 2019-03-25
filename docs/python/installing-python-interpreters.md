@@ -1,7 +1,7 @@
 ---
 title: 選取並安裝 Python 解譯器
 description: Visual Studio 中所支援 Python 解譯器的完整清單，其中包含在何處找到其安裝程式的簡要說明。
-ms.date: 12/06/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,16 +10,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cafa97873c168102dff66f602d4d117269718810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c8c2d96aeb24b9311998528d0360b1c3eac38e5f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920999"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194174"
 ---
 # <a name="install-python-interpreters"></a>安裝 Python 解譯器
 
-根據預設，在 Visual Studio 2017 中安裝 Python 開發工作負載，也會安裝 Python 3 (64 位元)。 如[安裝](installing-python-support-in-visual-studio.md)中所述，您可以選擇安裝 32 位元和 64 位元版本的 Python 2、Python 3、Anaconda 2 和 Anaconda 3。
+根據預設，會在 Visual Studio 2017 中安裝 Python 開發工作負載，之後也會安裝 Python 3 (64 位元)。 如[安裝](installing-python-support-in-visual-studio.md)中所述，您可以選擇安裝 32 位元和 64 位元版本的 Python 2 與 Python 3，以及 Miniconda (Visual Studio 2019) 或 Anaconda 2/Anaconda 3 (Visual Studio 2017)。
+
+::: moniker range=">=vs-2019"
+或者，可以從 [新增環境] 對話方塊安裝標準 Python 解譯器。 在 [Python 環境] 視窗或 Python 工具列中選取 [新增環境] 命令，選取 [Python 安裝] 索引標籤，指出要安裝哪一個解譯器，然後選取 [安裝]。
+::: moniker-end
 
 您也可以手動安裝下表所列出 Visual Studio 安裝程式以外的任何解譯器。 例如，如果您在安裝 Visual Studio 前已經安裝了 Anaconda 3，就不需透過 Visual Studio 安裝程式再次安裝。 如果可用的新版本未出現在 Visual Studio 安裝程式中，您也可以手動安裝解譯器。
 
@@ -31,7 +35,7 @@ Visual Studio (所有版本) 會根據 [PEP 514 - Python registration in the Win
 
 Visual Studio 會在 [[Python 環境]](managing-python-environments-in-visual-studio.md#the-python-environments-window) 視窗中顯示所有已知的環境，並自動偵測現有解譯器的更新。
 
-| 解譯器 | 描述 |
+| 解譯器 | 說明 |
 | --- | --- |
 | [CPython](https://www.python.org/) | 這是「原生」且最常用的解譯器，提供 32 位元和 64 位元版本 (建議使用 32 位元)。 包含最新的語言功能、最大的 Python 套件相容性、完整的偵錯支援，以及與 [IPython](https://ipython.org/) 的互通性。 另請參閱：[Should I use Python 2 or Python 3?](https://wiki,python.org/moin/Python2orPython3) (我應該使用 Python 2 還是 Python 3？)。 請注意，Visual Studio 2015 及更舊版本不支援 Python 3.6+，因此可能會出現**不支援 python 3.6 版**這樣的錯誤。 請改用 Python 3.5 或更早版本。 |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Python 的 .NET 實作具有 32 位元和 64 位元版本，除了提供 C#/F#/Visual Basic 互通性之外，還可存取 .NET API、標準 Python 偵錯 (但不包括 C++ 混合模式偵錯) 及混合式 IronPython/C# 偵錯。 不過，IronPython 並不支援虛擬環境。 |

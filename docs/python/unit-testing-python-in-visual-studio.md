@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3290c091cd406bdf21aa841fc6148c9c2f6cd5b0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d4cab82a8fc7d3aec512ead169ff2be4b528eda6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155977"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983802"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>設定 Python 程式碼的單元測試
 
@@ -23,7 +23,7 @@ ms.locfileid: "56155977"
 
 在設計程式時，Python 會廣泛地使用單元測試來驗證案例。 Visual Studio 中的 Python 支援包含在開發程序的內容內針對單元測試進行探索、執行及偵錯，而且不需要個別執行測試。
 
-本文章提供搭配 Python 的 Visual Studio 中的單元測試功能簡介。 如需單元測試的整體詳細資訊，請參閱[對程式碼進行單元測試](../test/unit-test-your-code.md)。
+此文章提供搭配 Python 的 Visual Studio 中的單元測試功能簡介。 如需單元測試的整體詳細資訊，請參閱[對程式碼進行單元測試](../test/unit-test-your-code.md)。
 
 ## <a name="discover-and-view-tests"></a>探索及檢視測試
 
@@ -86,7 +86,7 @@ ms.locfileid: "56155977"
 
 ![對測試進行偵錯](media/unit-test-debugging.png)
 
-視您的 Visual Studio 版本而定 (請參閱[功能比較表](overview-of-python-tools-for-visual-studio.md#features-matrix))，您也可以使用 [分析選取之測試的程式碼涵蓋範圍] 和 [程式碼剖析測試] 命令。
+您也可以使用 [分析選取之測試的程式碼涵蓋範圍] 和 [程式碼剖析測試] 命令。
 
 ### <a name="known-issues"></a>已知問題
 

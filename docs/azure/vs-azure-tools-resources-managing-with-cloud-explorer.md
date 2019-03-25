@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: fc72fdc63fefd5b60ecfc8ab001b94b87b69e481
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 922e13e77713e7f4ba5bd18af93507855d292537
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323798"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194689"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>在 Visual Studio Cloud Explorer 中管理與 Azure 帳戶關聯的資源
 
@@ -24,17 +24,17 @@ Cloud Explorer 可讓您從 Visual Studio 內檢視您的 Azure 資源和資源�
 
 ## <a name="prerequisites"></a>必要條件
 
-* 已選取「Azure 工作負載」的 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)，或是具備 [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) 的舊版 Visual Studio。
+* Visual Studio 2017 或更新版本 (請參閱[Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc))，且已選取 **Azure 工作負載**。 您也可以透過 [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) \(英文\) 來使用舊版 Visual Studio。
 * Microsoft Azure 帳戶 - 如果您沒有帳戶，您可以[申請免費試用](http://go.microsoft.com/fwlink/?LinkId=623901)，或是[啟用您的 Visual Studio 訂閱者權益](http://go.microsoft.com/fwlink/?LinkId=623901)。
 
 > [!NOTE]
-> 若要檢視 Cloud Explorer，請在功能表列上，選取 [檢視] > [Cloud Explorer]。
+> 若要檢視 [Cloud Explorer]，請按 **Ctrl**+**Q** 以叫用 [快速啟動]，然後輸入 **Cloud Explorer**。
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>將 Azure 帳戶新增到 Cloud Explorer
 
-若要檢視與 Azure 帳戶關聯的資源，您必須先將帳戶新增到 Cloud Explorer。
+若要檢視與 Azure 帳戶相關聯的資源，您必須先將帳戶新增到 **Cloud Explorer**。
 
-1. 在 [Cloud Explorer] 中，選取 [Azure 帳戶設定]。
+1. 在 [Cloud Explorer] 中，選擇 [帳戶管理] 按鈕。
 
    ![Cloud Explorer 的 [Azure 帳戶設定] 圖示](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 

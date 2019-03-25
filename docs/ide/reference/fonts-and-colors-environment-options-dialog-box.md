@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3fd18198811f6235c4e5d0627303e4243ad595b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e33aaded85c7931dfc3a95d653ff35f257c9137b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700259"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070252"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>選項對話方塊、環境、字型和色彩
 
@@ -218,7 +218,7 @@ ms.locfileid: "56700259"
 
 **Default**
 
-第一次啟動 Visual Studio 時的項目顯示色彩。 按一下 [使用預設] 按鈕會重設成這個色彩。
+當您第一次開啟 Visual Studio 時的項目顯示色彩。 按一下 [使用預設] 按鈕會重設成這個色彩。
 
 **自訂**
 
@@ -237,7 +237,7 @@ ms.locfileid: "56700259"
 
 **Default**
 
-第一次啟動 Visual Studio 時的項目顯示色彩。 按一下 [使用預設] 按鈕會重設成這個色彩。
+當您第一次開啟 Visual Studio 時的項目顯示色彩。 按一下 [使用預設] 按鈕會重設成這個色彩。
 
 **自訂**
 

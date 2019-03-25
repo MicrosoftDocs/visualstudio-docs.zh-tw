@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce001f4ec7b036581a99e4feb8693b7220470d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487597c160a294c935f3f7670410e82927a86210
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911893"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194641"
 ---
 # <a name="learn-about-projects-and-solutions"></a>了解專案與解決方案
 
@@ -35,9 +35,11 @@ ms.locfileid: "55911893"
 
 我們會建立空白解決方案以開始探索。 在您了解 Visual Studio 之後，可能不會發現自己太過頻繁地建立空白方案。 當您建立新的專案時，Visual Studio 會自動建立要儲存專案的方案 (若尚未開啟方案)。
 
+::: moniker range="vs-2017"
+
 1. 開啟 Visual Studio。
 
-1. 在功能表列上 (例如 [檔案] 和 [編輯] 功能表列)，選擇 [檔案] > [新增] > [專案]。
+1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
 
    [ **新增專案** ] 對話方塊隨即開啟。
 
@@ -46,6 +48,22 @@ ms.locfileid: "55911893"
    ![Visual Studio 中的空白方案範本](media/tutorial-projects-new-solution.png)
 
    [起始頁] 隨即關閉，而且方案會出現在 Visual Studio 視窗右側的 [方案總管] 中。 您可能會經常使用方案總管來瀏覽專案的內容。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 開啟 Visual Studio。
+
+2. 在開始視窗中，選擇 [建立新專案]。
+
+3. 在 [建立新專案] 頁面上，於搜尋方塊中輸入**空白的解決方案**、選取 [空白的解決方案] 範本，然後選擇 [下一步]。
+
+4. 將解決方案命名為 **QuickSolution**，然後選擇 [建立]。
+
+   解決方案隨即會出現在 Visual Studio 視窗右側的 [方案總管] 中。 您可能會經常使用方案總管來瀏覽專案的內容。
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>新增專案
 
@@ -146,7 +164,7 @@ ms.locfileid: "55911893"
    End Class
    ```
 
-   您會在一些程式碼下方看到紅色「曲線」。 我們將修正這個錯誤，方法是將測試專案設為 **QuickDate** 專案的 [friend 組件](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies)。
+   您會在一些程式碼下方看到紅色「曲線」。 我們將修正這個錯誤，方法是將測試專案設為 **QuickDate** 專案的 [friend 組件](/dotnet/standard/assembly/friend-assemblies)。
 
 1. 回到 **QuickDate** 專案，開啟尚未開啟的 *Calendar.cs* 檔案，並將下列 [using 陳述式](/dotnet/csharp/language-reference/keywords/using-statement)和 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 屬性新增至檔案頂端，以解決測試專案中的錯誤。
 

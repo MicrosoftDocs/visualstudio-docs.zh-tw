@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7538342cad63d820992fe699e65386f4f3c8e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908461"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868904"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令列參數
 
@@ -62,11 +62,12 @@ Devenv 可讓您從命令列針對 IDE 設定不同選項、建置專案、偵�
 
 下列命令列參數會顯示 IDE，並執行所述的工作。
 
-|命令列參數|描述|
+|命令列參數|說明|
 | - |-----------------|
 |[/Command](command-devenv-exe.md)|啟動 IDE，並執行指定的命令。<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|在偵錯工具的控制下載入 C++ 可執行檔。 此參數不適用於 Visual Basic 或 C# 可執行檔。 如需詳細資訊，請參閱[在偵錯工具中自動啟動處理序](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。<br /><br /> `devenv /debugexe mysln.exe`|
 |[/Diff](diff.md)|比較兩個檔案。 接受四個參數：*SourceFile*、*TargetFile*、*SourceDisplayName* (選擇性) 及 *TargetDisplayName* (選擇性)。<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
+|[/DoNotLoadProjects](donotloadprojects-devenv-exe.md)|開啟指定的解決方案，而不載入任何專案。<br /><br /> `devenv /donotloadprojects mysln.sln`|
 |[/Edit](edit-devenv-exe.md)|在這個應用程式的作用中執行個體中開啟指定的檔案。 如果沒有執行中的執行個體，則會以簡易視窗配置啟動新的執行個體。<br /><br /> `devenv /edit File1 File2`|
 |[/LCID 或 /L](lcid-devenv-exe.md)|設定 IDE 的預設語言。 如果 Visual Studio 安裝中未包含指定的語言，則會忽略此設定。<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|啟動 Visual Studio，並將所有活動記錄至記錄檔。<br /><br /> `devenv /log mylogfile.xml`|
@@ -78,7 +79,7 @@ Devenv 可讓您從命令列針對 IDE 設定不同選項、建置專案、偵�
 
 下列命令列參數不會顯示 IDE。
 
-|命令列參數|描述|
+|命令列參數|說明|
 | - |-----------------|
 |[/?](q-devenv-exe.md)|在 [命令提示字元] 視窗中顯示 `devenv` 參數的說明。<br /><br /> 此參數不需使用引數。|
 |[/Build](build-devenv-exe.md)|根據所指定方案的組態，建置指定的方案或專案。<br /><br /> `devenv mysln.sln /build`|

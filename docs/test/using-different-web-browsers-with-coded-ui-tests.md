@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0a5cf418b04f43be9d10b39b9ffc518255092a8a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318429"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983024"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>使用不同的網頁瀏覽器搭配自動程式化 UI 測試
 
@@ -51,11 +51,23 @@ ms.locfileid: "56318429"
 
 ### <a name="install-selenium-components"></a>安裝 Selenium 元件
 
-1.  在 [工具]  功能表中選擇 [擴充功能和更新] 。
+::: moniker range="vs-2017"
 
-2.  在 [延伸模組和更新] 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
+1. 在 [工具]  功能表中選擇 [擴充功能和更新] 。
 
-3.  反白顯示延伸模組並選擇 [下載]。
+2. 在 [擴充功能和更新] 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 在 [擴充功能] 功能表中，選擇 [管理擴充功能]。
+
+2. 在 [管理擴充功能] 對話方塊中，搜尋 `Selenium components for Cross Browser Testing`。
+
+::: moniker-end
+
+3. 反白顯示延伸模組並選擇 [下載]。
 
     > [!TIP]
     > 您也可以在[這裡](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)下載自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件。
@@ -84,7 +96,7 @@ ms.locfileid: "56318429"
 
 - 不支援 Apple Safari Web 瀏覽器。
 
-- 自動程式化 UI 測試必須包含啟動 Web 瀏覽器的動作。
+- 自動程式碼 UI 測試必須包含啟動 Web 瀏覽器的動作。
 
    如果您已開啟一個 Web 瀏覽器，並且想要在其中執行步驟，除非使用 Internet Explorer，否則會播放失敗。 因此，最佳作法是在自動程式化 UI 測試中包含啟動 Web 瀏覽器的動作。
 

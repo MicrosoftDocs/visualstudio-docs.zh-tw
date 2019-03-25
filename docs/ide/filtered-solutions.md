@@ -10,12 +10,12 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007172"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983880"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio 中已篩選的方案
 
@@ -37,7 +37,7 @@ ms.locfileid: "57007172"
 
 1. 在功能表列上選擇 [檔案] > [開啟] > [專案/方案]。
 
-2. 在 [新增專案] 對話方塊中選取方案，並選取 [不載入專案]。
+2. 在 [開啟專案] 對話方塊中選取解決方案，然後選取 [不要載入專案]。
 
    ![已選取不載入專案的 Visual Studio 開啟專案對話方塊](media/filtered-solutions/do-not-load-projects.png)
 

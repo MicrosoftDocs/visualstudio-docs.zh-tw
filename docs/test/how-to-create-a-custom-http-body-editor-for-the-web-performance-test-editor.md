@@ -8,14 +8,14 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbcf0ec7aa9e7d0b22458006da6f18aba4de8162
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed23869b999f3ced51377dd8d648280fcce7ee7e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936196"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069888"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>HOW TO：建立 Web 效能測試編輯器的自訂 HTTP 本文編輯器
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>作法：建立 Web 效能測試編輯器的自訂 HTTP 本文編輯器
 
 您可以建立自訂內容編輯器，讓您能夠編輯 Web 服務要求的字串內容或二進位內容，例如 SOAP、REST、asmx、wcf、RIA 和其他 Web 服務要求類型。
 
@@ -31,9 +31,7 @@ ms.locfileid: "55936196"
 
 ## <a name="create-a-windows-control-library-project"></a>建立 Windows 控制項程式庫專案
 
-### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>使用 Windows 控制項程式庫專案建立使用者控制項
-
-1. 在 Visual Studio 的 [檔案] 功能表中，選擇 [新增]，然後選取 [專案]。
+1. 在 Visual Studio 中的 [檔案] 功能表上選擇 [新增] > **[專案]**。
 
     [新增專案] 對話方塊隨即出現。
 
@@ -137,27 +135,27 @@ private MessageEditorControl messageEditorControl
 
  當完成編輯字串內容而且使用者按一下外掛程式對話方塊中的 [確定] 時，便會呼叫 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*>，以取得作為字串的已編輯文字，並且更新 [Web 測試效能編輯器] 之要求中的 [字串內容]。
 
-### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>建立類別並實作 IStringHttpBodyEditorPlugin 介面程式碼
+### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>建立類別並實作 IStringHttpBodyEditorPlugin 介面
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下 [Windows Form 控制項程式庫] 專案，然後選取 [新增新項目]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下 [Windows Form 控制項程式庫] 專案，然後選取 [新增新項目]。
 
-2.  隨即顯示 [ 新增項目] 對話方塊。
+   隨即顯示 [ 新增項目] 對話方塊。
 
-3.  選取 [類別]。
+2. 選取 [類別]。
 
-4.  在 [名稱] 文字方塊中鍵入有意義的類別名稱，例如 `MessageEditorPlugins`。
+3. 在 [名稱] 文字方塊中鍵入有意義的類別名稱，例如 `MessageEditorPlugins`。
 
-5.  選擇 [新增]。
+4. 選擇 [新增]。
 
-     Class1 會加入至專案，並顯示在 [程式碼編輯器] 中。
+   Class1 會加入至專案，並顯示在 [程式碼編輯器] 中。
 
-6.  在 [程式碼編輯器] 中，加入下列 using 陳述式：
+5. 在 [程式碼編輯器] 中，加入以下 `using` 陳述式：
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     ```
 
-7.  撰寫或複製下列程式碼，以便從 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 介面具現化 XmlMessageEditor 類別，並實作需要的方法：
+6. 貼上以下程式碼以實作介面：
 
     ```csharp
     /// <summary>
@@ -185,7 +183,7 @@ private MessageEditorControl messageEditorControl
         /// plugin dialog which provides OK and Cancel buttons.
         /// </summary>
         /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-        /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+        /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
         /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
         public object CreateEditor(string contentType, string initialValue)
         {
@@ -252,11 +250,11 @@ messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestT
             }
 
             /// <summary>
-            /// Create a UserControl to edit the specified bytes.  This control will be hosted in the
+            /// Create a UserControl to edit the specified bytes. This control will be hosted in the
             /// plugin dialog which provides OK and Cancel buttons.
             /// </summary>
             /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-            /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+            /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
             /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
             public object CreateEditor(string contentType, byte[] initialValue)
             {
@@ -280,36 +278,32 @@ messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestT
 
 ## <a name="build-and-deploy-the-plug-ins"></a>建置和部署外掛程式
 
-### <a name="to-build-and-deploy-the-resulting-dll-for-the-istringhttpbodyeditorplugin-and-ibinaryhttpbodyeditorplugin"></a>建置和部署針對 IStringHttpBodyEditorPlugin 和 IBinaryHttpBodyEditorPlugin 產生的 DLL
+1. 在 [建置] 功能表上選擇 [建置 \<Windows Form 控制項程式庫專案名稱>]。
 
-1.  在 [建置] 功能表上選擇 [建置 \<Windows Form 控制項程式庫專案名稱>]。
+2. 關閉所有 Visual Studio 執行個體。
 
-2.  關閉所有 Visual Studio 執行個體。
+   > [!NOTE]
+   > 關閉 Visual Studio 可確保在您嘗試複製 *.dll* 檔之前，這個檔案不會遭到鎖定。
 
-    > [!NOTE]
-    > 關閉 Visual Studio 可確保在您嘗試複製 *.dll* 檔之前，這個檔案不會遭到鎖定。
+3. 從您專案的 *bin\debug* 資料夾將產生的 *.dll* 檔 (例如 *MessageEditors.dll*) 複製到 *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*。
 
-3.  從您專案的 *bin\debug* 資料夾將產生的 *.dll* 檔 (例如 *MessageEditors.dll*) 複製到 *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*。
+4. 開啟 Visual Studio。
 
-4.  開啟 Visual Studio。
-
-     *.dll* 現在已向 Visual Studio 註冊。
+   *.dll* 現在已向 Visual Studio 註冊。
 
 ## <a name="verify-the-plug-ins-using-a-web-performance-test"></a>使用 Web 效能測試驗證外掛程式
 
-### <a name="to-test-your-plug-ins"></a>測試您的外掛程式
+1. 建立測試專案。
 
-1.  建立測試專案。
+2. 建立 Web 效能測試，並在瀏覽器中輸入 Web 服務的 URL。
 
-2.  建立 Web 效能測試，並在瀏覽器中輸入 Web 服務的 URL。
+3. 完成錄製時，在 [Web 效能測試編輯器] 中展開 Web 服務的要求，並選取 [字串內容] 或 [二進位內容]。
 
-3.  完成錄製時，在 [Web 效能測試編輯器] 中展開 Web 服務的要求，並選取 [字串內容] 或 [二進位內容]。
+4. 在 [屬性] 視窗中，選取 [字串內容] 或 [二進位內容]，然後選擇省略符號 **(…)**。
 
-4.  在 [屬性] 視窗中，選取 [字串內容] 或 [二進位內容]，然後選擇省略符號 **(…)**。
+   [編輯 HTTP 內容資料] 對話方塊隨即顯示。
 
-     [編輯 HTTP 內容資料] 對話方塊隨即顯示。
-
-5.  現在您可以編輯資料並選擇 [確定]。 這樣會叫用適用的 GetNewValue 方法，以更新 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> 中的內容。
+5. 現在您可以編輯資料並選擇 [確定]。 這樣會叫用適用的 GetNewValue 方法，以更新 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> 中的內容。
 
 ## <a name="compile-the-code"></a>編譯程式碼
 

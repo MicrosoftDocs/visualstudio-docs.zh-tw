@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 36b1d371846ad65fd34a7a5cbd4e8bdcdc0ebd9b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703249"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983711"
 ---
 # <a name="environment-options-dialog-box"></a>環境選項對話方塊
 
@@ -27,7 +27,7 @@ ms.locfileid: "56703249"
 |自訂視窗、功能表和其他 IDE 項目的外觀和行為。|[選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)|
 |變更檔案自動儲存和還原的設定值。|[選項對話方塊、環境、自動回復](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |建立包括其他檔案行為的文件顯示和管理設定。|[選項對話方塊、環境、文件](../../ide/reference/documents-environment-options-dialog-box.md)|
-|自訂更新如何發生，以及如何管理擴充功能。|[選項對話方塊、環境、延伸模組和更新](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
+|自訂更新如何發生，以及如何管理擴充功能。|[擴充功能、環境、選項對話方塊](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
 |自訂訊息方塊出現的時機，以及 [尋找和取代] 視窗如何在 [快速尋找] 或 [快速取代] 期間作用，以及自動填入 [尋找目標]。|[選項對話方塊、環境、尋找和取代](../../ide/reference/find-and-replace-environment-options-dialog-box.md)|
 |設定某些編輯器、對話方塊、工具視窗，和其他使用者介面 (UI) 項目內的字型和色彩。|[選項對話方塊、環境、字型和色彩](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)|
 |自訂儲存使用者設定資訊之 vssettings 檔案的位置。|[選項對話方塊、環境、匯入和匯出設定](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|

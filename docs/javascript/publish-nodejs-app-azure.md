@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f52e1cb8538204dbf0e29ccdadcc4cb2894255ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20df5476a2ca6cf8fb0ffbf22e8106e51d17128d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021867"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070304"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>將 Node.js 應用程式發佈到 Azure (Linux App Service)
 
@@ -36,15 +36,44 @@ Linux App Service 會部署 Linux Docker 容器來執行 Node.js 應用程式 (�
 > * 在 Azure 上建立 Linux App Service
 > * 部署至 Linux
 
+## <a name="prerequisites"></a>必要條件
+
+* 您必須安裝 Visual Studio 和 Node.js 開發工作負載。 
+
+    ::: moniker range=">=vs-2019"
+    如果您尚未安裝 Visual Studio 2019，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    如果您尚未安裝 Visual Studio 2017，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
+    ::: moniker-end
+
+    如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
+
+    ![VS 安裝程式中的 Node.js 工作負載](../ide/media/quickstart-nodejs-workload.png)
+
+* 您必須安裝 Node.js 執行階段。
+
+    如果您沒有安裝，請從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本。 一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果偵測不到已安裝的執行階段，您可以在屬性頁面中將專案設定為參考已安裝的執行階段 (建立專案之後，以滑鼠右鍵按一下專案節點，然後選擇 [屬性])。
+
 ## <a name="create-a-nodejs-project-to-run-in-azure"></a>建立 Node.js 專案以在 Azure 執行
 
-1. 使用 [檔案] > [新增專案] 對話方塊建立新的 TypeScript Express 應用程式。
+1. 開啟 Visual Studio。
 
-1. 在 [TypeScript] 節點下方，選取 [基本 Node.js Express 4 應用程式]。
+1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
+
+1. 建立新的 TypeScript Express 應用程式。
+
+    ::: moniker range=">=vs-2019"
+    在 [建立新專案] 對話方塊中，於搜尋方塊中輸入 **javascript** 以篩選結果，然後依序選擇 [基本的 Azure Node.js Express 4 應用程式] 和 [下一步]。 接著，選擇 [建立]。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選擇 [基本的 Azure Node.js Express 4 應用程式]，然後選擇 [確定]。
 
     ![建立新的 TypeScript Express 應用程式](../javascript/media/azure-ts-express-app.png)
+    ::: moniker-end
+    如果您看不到 [基本的 Azure Node.js Express 4 應用程式] 專案範本，則必須新增 **Node.js 開發**工作負載。 如需詳細指示，請參閱[必要條件](#prerequisites)。
 
-1. 按一下 [確定] 在 Visual Studio 中建立專案。
+    Visual Studio 隨即建立專案，並在 [方案總管] (右窗格) 中開啟該專案。
 
 1. 按 **F5** 來建置和執行應用程式，並確定一切都如預期般運作。
 

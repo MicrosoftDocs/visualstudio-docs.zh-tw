@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: f7d4b36003d097fc4750b80f62fc1267908b8c0b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155652"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151137"
 ---
 # <a name="work-with-the-python-interactive-window"></a>使用 Python 互動式視窗
 
@@ -25,14 +25,14 @@ Visual Studio 為您的每個 Python 環境提供互動式「讀取、求值、�
 
 Visual Studio 有多個 Python REPL 模式可供選擇：
 
-| REPL | 描述 | 編輯 | 偵錯 | 影像 |
+| REPL | 說明 | 編輯 | 偵錯 | 影像 |
 | --- | --- | --- | --- | --- |
 | 標準 | 預設的 REPL，直接與 Python 交談 | 標準編輯 (多行等)。 | 是，透過 `$attach` | 否 |
 | 偵錯 | 預設的 REPL，與已完成偵錯的 Python 程序交談 | 標準編輯 | 僅偵錯 | 否 |
 | IPython | REPL 與 IPython 後端交談 | IPython 命令、Pylab 便利性 | 否 | 是，內嵌於 REPL |
 | IPython (沒有 Pylab) | REPL 與 IPython 後端交談 | 標準 IPython | 否 | 是，獨立視窗 |
 
-本文章描述**標準**和**偵錯** REPL 模式。 如需 IPython 模式的詳細資料，請參閱[使用 IPython REPL](interactive-repl-ipython.md)。
+此文章描述**標準**和**偵錯** REPL 模式。 如需 IPython 模式的詳細資料，請參閱[使用 IPython REPL](interactive-repl-ipython.md)。
 
 如需範例的詳細逐步解說 (包含與編輯器的互動，例如 **Ctrl**+**Enter**)，請參閱[教學課程步驟 3：使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)。
 
@@ -56,7 +56,7 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 
 ## <a name="interactive-window-options"></a>互動式視窗選項
 
-您可以透過 [工具] > [選項] > [Python 工具] > [互動式視窗] 控制**互動式**視窗的各方面 (請參閱[選項](python-support-options-and-settings-in-visual-studio.md))：
+您可以透過 [工具] > [選項] > [Python] > [互動式視窗] 控制**互動式**視窗的各方面 (請參閱[選項](python-support-options-and-settings-in-visual-studio.md))：
 
 ![Python 互動式視窗選項](media/options-interactive-windows.png)
 
@@ -73,7 +73,7 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 
 <a name="meta-commands"></a>**互動式**視窗也支援數個中繼命令。 所有中繼命令的開頭都是 `$`，而且您可以輸入 `$help` 來取得中繼命令清單，並輸入 `$help <command>` 來取得特定命令的詳細使用方式。
 
-| 中繼命令 | 描述 |
+| 中繼命令 | 說明 |
 | --- | --- |
 | `$$` | 插入註解，這對於在工作階段期間為程式碼做出註解非常有用。 |
 | `$attach` | 將 Visual Studio 偵錯工具附加至 REPL 視窗程序以啟用偵錯。 |
@@ -121,4 +121,4 @@ Visual Studio 也會偵測以例如 `# In[1]:` 的註解開始的程式碼儲存
 
 **互動式**視窗包含以即時物件為基礎的 IntelliSense，而不像程式碼編輯器的 IntelliSense，僅以原始程式碼分析為基礎。 這些建議在**互動式**視窗中更加正確，尤其是針對動態產生的程式碼。 缺點是，具有附加作用 (例如記錄訊息) 的函數可能會影響您的開發體驗。
 
-如果此行為會造成問題，請在 [工具] > [選項] > [Python 工具] > [互動式視窗] 底下的 [完成模式] 群組中變更設定，如[選項 - 互動式視窗選項](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)中所述。
+如果此行為會造成問題，請在 [工具] > [選項] > [Python] > [互動式視窗] 底下的 [完成模式] 群組中變更設定，如[選項 - 互動式視窗選項](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)中所述。

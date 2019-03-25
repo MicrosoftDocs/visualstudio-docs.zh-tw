@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222983"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868226"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 
@@ -25,7 +25,7 @@ Visual Studio 效能建議是要針對記憶體不足的情況，但這極少發
 
 如果您將系統從 32 位元版本的 Windows 升級至 64 位元版本，請將 Visual Studio 可用的虛擬記憶體數量從 2 GB 擴充為 4 GB。 這可讓 Visual Studio 處理更大量的工作負載，即使是 32 位元處理序亦然。
 
-如需詳細資訊，請參閱[記憶體限制](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits)和 [Use /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) (在 64 位元 Windows 上使用 /LARGEADDRESSAWARE)。
+如需詳細資訊，請參閱[記憶體限制](/windows/desktop/Memory/memory-limits-for-windows-releases)和 [Use /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) (在 64 位元 Windows 上使用 /LARGEADDRESSAWARE)。
 
 ## <a name="disable-automatic-file-restore"></a>停用自動檔案還原
 
@@ -105,7 +105,17 @@ Visual Studio 會在自動文件還原導致解決方案載入時間明顯變慢
 
     延伸模組是新增至 Visual Studio 的額外軟體元件，可提供新功能或延伸現有功能。 延伸模組通常可能是記憶體資源問題的來源。 如果您遇到記憶體資源問題，請嘗試一次停用一個延伸模組，以查看它對案例或工作流程的影響。
 
-    若要停用延伸模組，請移至 [工具] > [延伸模組和更新]，然後停用特定延伸模組。
+   ::: moniker range="vs-2017"
+
+    若要停用擴充功能，移至 [工具] > [擴充功能和更新]，然後停用特定擴充功能。
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    若要停用擴充功能，移至 [擴充功能] > [管理擴充功能]，然後停用特定擴充功能。
+
+   ::: moniker-end
 
 - **停用 XAML 設計工具**
 

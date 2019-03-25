@@ -7,12 +7,12 @@ ms.date: 01/04/2018
 ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶入口網站上提供給您的完整權益
 searchscope: VS Subscription
-ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ba353c6c13d0a538e0030b10c95d054805d0ec39
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843796"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867586"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>使用訂閱者入口網站 - my.<span></span>visualstudio<span></span>.com
 
@@ -51,4 +51,4 @@ Visual Studio 訂閱者入口網站 ([https://my.visualstudio.com](https://my.vi
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/) \(英文\)
 
-是否需要更新 Visual Studio 雲端訂閱？  想要下載適用於 Visual Studio 產品系列的最新擴充功能？  Marketplace 可協助使用者尋找延伸模組、工具與服務，以進一步改進 Azure DevOps、Team Foundation Server 與 Visual Studio Code。 您甚至可以成為發行者，並將自己的擴充功能發行到 Marketplace 上。
+是否需要更新 Visual Studio 雲端訂閱？  想要下載適用於 Visual Studio 產品系列的最新擴充功能？  Marketplace 可協助使用者尋找延伸模組、工具與服務，以進一步改進 Azure DevOps、Azure DevOps Server 與 Visual Studio Code。 您甚至可以成為發行者，並將自己的擴充功能發行到 Marketplace 上。

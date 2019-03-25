@@ -7,18 +7,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39a6316265b6b3747f247890d45a769ef9240387
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 03353225507dca8700daa71b5dd0331c782e78ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596021"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984036"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15 的現有應用程式更新
 
 在 15.0 之前的 MSBuild 版本，MSBuild 是從全域組件快取 (GAC) 載入，而 MSBuild 延伸模組則已安裝在登錄中。 這可確保所有應用程式都使用相同版本的 MSBuild，且能存取相同的工具組，但導致無法並存安裝不同版本的 Visual Studio。
 
-為了支援更快、更小且並存的安裝，Visual Studio 2017 不再將 MSBuild 放在 GAC 中或修改登錄。 不幸的是，這表示想要使用 MSBuild API 評估或建置專案的應用程式，無法以隱含方式依賴 Visual Studio 安裝。
+為了支援更快、更小且並存的安裝，Visual Studio 2017 及更新版本不再將 MSBuild 放置於 GAC 中或修改登錄。 不幸的是，這表示想要使用 MSBuild API 評估或建置專案的應用程式，無法以隱含方式依賴 Visual Studio 安裝。
 
 ## <a name="use-msbuild-from-visual-studio"></a>從 Visual Studio 使用 MSBuild
 
@@ -42,7 +42,7 @@ ms.locfileid: "56596021"
 
 變更您的專案檔案，以從其 NuGet 套件參考 MSBuild 組件。 指定 `ExcludeAssets=runtime` 以告訴 NuGet，只有在建置時需要組件，且不應複製到輸出目錄。
 
-MSBuild 套件的主要和次要版本，必須小於或等於您要支援的 Visual Studio 最小版本。 如果您想要支援任何版本的 Visual Studio 2017，請參考套件版本 `15.1.548`。
+MSBuild 套件的主要和次要版本，必須小於或等於您要支援的 Visual Studio 最小版本。 例如，如果您想要支援 Visual Studio 2017 及更新版本，請參考套件版本 `15.1.548`。
 
 例如，您可以使用這個 XML：
 

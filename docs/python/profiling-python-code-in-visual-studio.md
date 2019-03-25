@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 985b0120d54cf7a606bcf2bab5b11ae416d986a3
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 840ebd6d5341bd38fb8961f4ead15fe5181e1ca3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155132"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58149623"
 ---
 # <a name="profile-python-code"></a>分析 Python 程式碼
 
@@ -32,7 +32,7 @@ ms.locfileid: "56155132"
 ![分析效能報告](media/profiling-results.png)
 
 > [!Note]
-> Visual Studio 目前只支援此層級的完整應用程式剖析，我們非常願意聆聽您對未來功能的意見反應。 請使用此頁面底部的 [[產品意見反應] 按鈕](#feedback)。
+> Visual Studio 目前只支援此層級的完整應用程式剖析，我們非常願意聆聽您對未來功能的意見反應。 請使用此頁面底部的 [產品意見反應] 按鈕。
 
 ## <a name="profiling-for-ironpython"></a>針對 IronPython 的分析
 
