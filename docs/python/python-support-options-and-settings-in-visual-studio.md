@@ -1,7 +1,7 @@
 ---
 title: 適用於 Python 的選項和設定
 description: Visual Studio 中與 Python 程式碼和專案相關的各種設定參考。
-ms.date: 02/11/2019
+ms.date: 03/13/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
@@ -17,18 +17,23 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 04f696325da6f9f5b08f37b3d0d0f90498aacd85
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a25c7aa9404cf0a10b6c55313016c30577eef504
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702014"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151163"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中 Python 的選項
 
-若要檢視 Python 選項，請使用 [工具] > [選項] 功能表命令，並確定選取 [顯示所有設定]，然後瀏覽 至 [Python 工具]：
+若要檢視 Python 選項，請使用 [工具] > [選項] 功能表命令，並確定選取 [顯示所有設定]，然後瀏覽至 [Python]：
 
+::: moniker range="vs-2017"
 ![Python 選項對話方塊、一般索引標籤](media/options-general.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Python 選項對話方塊、一般索引標籤](media/options-general-2019.png)
+::: moniker-end
 
 在 [文字編輯器] > [Python] > [進階] 索引標籤上以及 [文字編輯器] 群組內的 [環境] > [字型和色彩] 索引標籤上，也有其他 Python 特定選項。
 
@@ -43,16 +48,36 @@ ms.locfileid: "56702014"
 | --- | --- | --- |
 | **建立虛擬環境時顯示輸出視窗**| 開啟 | 清除即可防止 [輸出] 視窗出現。 |
 | **安裝或移除套件時顯示輸出視窗** | 開啟 | 清除即可防止 [輸出] 視窗出現。 |
-| **一律以系統管理員身分執行 pip** | Off | 一律提高所有環境的 `pip install` 作業。 安裝套件時，如果環境位在檔案系統的受保護區域 (例如 *c:\Program Files*)，則 Visual Studio 會提示需要系統管理員權限。 在該提示中，您可以選擇一律只提高該環境的 `pip install`。 請參閱[套件索引標籤](python-environments-window-tab-reference.md#packages-tab)。 |
+| **顯示建立環境的通知列** | 開啟 | *僅限 Visual Studio 2019。* 當設定這個選項且使用者開啟包含 *requirements.txt* 或 *environment.yml* 檔案的專案時，Visual Studio 會顯示資訊列，其中包含個別建立虛擬環境或 conda 環境，而不是使用預設全域環境的建議。 |
+| **顯示安裝套件的通知列** | 開啟 | *僅限 Visual Studio 2019。* 當設定這個選項且使用者開啟包含 *requirements.txt* 檔案的專案 (且沒有使用預設全域環境) 時，Visual Studio 會比較那些需求與目前環境中已安裝的套件。 如果遺失任何套件，Visual Studio 會顯示安裝那些相依項目的提示。 |
+| **一律以系統管理員身分執行套件管理員** | Off | 一律提高所有環境的 `pip install` 和類似套件管理員作業的權限。 安裝套件時，如果環境位在檔案系統的受保護區域 (例如 *c:\Program Files*)，則 Visual Studio 會提示需要系統管理員權限。 您可以在該提示中選擇一律只針對該環境提高安裝命令的權限。 請參閱[套件索引標籤](python-environments-window-tab-reference.md#packages-tab)。 |
 | **第一次使用時自動產生完成 DB** | 開啟 | 適用於 Visual Studio 2017 15.5 版及較舊版本，也適用於使用 IntelliSense 資料庫的較新版本。 當您撰寫使用程式庫的程式碼時，系統會優先完成該程式庫的資料庫。 如需詳細資訊，請參閱 [IntelliSense 索引標籤](python-environments-window-tab-reference.md#intellisense-tab)。 |
 | **略過全系統的 PYTHONPATH 變數** | 開啟 | 因為 Visual Studio 提供更多直接方法來指定環境和專案中的搜尋路徑，所以預設會略過 PYTHONPATH。 如需詳細資訊，請參閱[搜尋路徑](search-paths.md)。 |
 | **新增連結的檔案時更新搜尋路徑** | 開啟 | 設定時，將[連結的檔案](managing-python-projects-in-visual-studio.md#linked-files)新增至專案更新[搜尋路徑](search-paths.md)，讓 IntelliSense 可以將所連結檔案資料夾的內容包含在完成資料庫中。 清除此選項，可從完成資料庫排除這類內容。 |
 | **找不到匯入的模組時發出警告** | 開啟 | 清除此選項，可在您知道匯入的模組目前不可用但不會影響程式碼作業時隱藏警告。 |
 | **回報不一致的縮排為** | **警告** | 因為 Python 解譯器大量取決於正確的縮排來判斷範圍，所以 Visual Studio 預設會在偵測到可能指出程式碼錯誤的不一致縮排時發出警告。 設定為 Errors 甚至更為嚴格，在這類情況下會結束程式。 若要完全停用此行為，請選取 [不]。 |
-| **查看是否有問卷/新聞** | **一週一次** | 設定您允許 Visual Studio 開啟所含網頁具有 Python 相關問卷和新聞項目 (如果有的話) 之視窗的頻率。 選項為 [永不]、[一天一次]、[一週一次] 和 [一個月一次]。 |
+| **查看是否有問卷/新聞** | **一週一次** | *Visual Studio 2017 和更早版本。* 設定您允許 Visual Studio 開啟所含網頁具有 Python 相關問卷和新聞項目 (如果有的話) 之視窗的頻率。 選項為 [永不]、[一天一次]、[一週一次] 和 [一個月一次]。 |
 | **重設所有永久隱藏的對話方塊**按鈕 | N/A | 不同的對話方塊會提供 [不要再顯示] 這類選項。 使用此按鈕，可清除這些選項，並重新顯示對話方塊。 |
 
+::: moniker range="vs-2017"
 ![Python 選項對話方塊、一般索引標籤](media/options-general.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Python 選項對話方塊、一般索引標籤](media/options-general-2019.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="conda-options"></a>Conda 選項
+
+([工具] > [選項] > [Python] > [Conda] 索引標籤。)
+
+| 選項 | 預設 | 說明 |
+| --- | --- | --- |
+| **Conda 可執行檔路徑** | (空白) | 請指定 *conda.exe* 可執行檔的確切路徑，而不要依賴 Python 工資負載隨附的預設 Miniconda 安裝。 如果在這裡指定另一個路徑，其優先順序會高於預設安裝和登錄中指定的任何其他 conda.exe 可執行檔。 如果手動安裝較新版本的 Anaconda 或 Miniconda，或想要使用 32 位元發行版本，而不是預設的 64 位元發行版本，您可以變更此設定。 |
+
+![Python 選項對話方塊、語言伺服器索引標籤](media/options-conda.png)
+
+::: moniker-end
 
 ## <a name="debugging-options"></a>偵錯選項
 
@@ -65,8 +90,15 @@ ms.locfileid: "56702014"
 | **將 Tee 程式輸出至偵錯輸出視窗** | 開啟 | 在不同的主控台視窗和 Visual Studio [輸出] 視窗中，顯示程式輸出。 清除此選項，只在不同的主控台視窗中顯示輸出。 |
 | **發生 SystemExit 例外狀況時中斷，結束代碼為零** | Off | 如果設定，請停止此例外狀況的偵錯工具。 清除時，會結束偵錯工具，而不中斷。 |
 | **啟用 Python 標準程式庫的偵錯** | Off | 可在偵錯時逐步執行標準程式庫原始程式碼，但會增加啟動偵錯工具所花費的時間。|
+| **顯示函數傳回值** | 開啟 | *僅限 Visual Studio 2019。* 在偵錯工具 (F10) 中逐步執行函式呼叫時，[區域] 視窗中會顯示函數傳回值 |
+| **使用舊版偵錯工具** | Off | *僅限 Visual Studio 2019。* 會指示 Visual Studio 預設使用舊版偵錯工具。 如需詳細資訊，請參閱 [偵錯 - 使用舊版偵錯工具](debugging-python-in-visual-studio.md#use-the-legacy-debugger)。 |
 
+::: moniker range="vs-2017"
 ![Python 選項對話方塊、偵錯索引標籤](media/options-debugging.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Python 選項對話方塊、偵錯索引標籤](media/options-debugging-2019.png)
+::: moniker-end
 
 ## <a name="diagnostics-options"></a>診斷選項
 
@@ -92,6 +124,20 @@ ms.locfileid: "56702014"
 | **隱藏靜態分析建議** | Off | 設定時，只會顯示評估運算式所取得的建議。 如果與 [完成模式] 值 [一律不評估運算式] 合併使用，則**互動式**視窗中不會出現任何有用的完成。 |
 
 ![Python 選項對話方塊、互動式視窗索引標籤](media/options-interactive-windows.png)
+
+::: moniker range=">=vs-2019"
+## <a name="language-server-options"></a>語言伺服器選項
+
+([工具] > [選項] > [Python] > [語言伺服器] 索引標籤。)
+
+| 選項 | 預設 | 說明 |
+| --- | --- | --- |
+| **停用從 Typeshed 自動完成** | Off | Visual Studio IntelliSense 通常會使用 Typeshed 的配套版本 (一組 *.pyi*  檔案) ，以尋找 Python 2 和 Python 3 的標準程式庫和協力廠商程式庫類型提示。 設定此選項會停用配套的 TypeShed 行為。 |
+| **自訂 Typeshed 路徑** | (空白) | 如果設定，Visual Studio 會使用此路徑的 Typeshed 檔案，而不是其配套版本。 如果設定了**停用從 Typeshed 自動完成**，則會忽略。 |
+
+![Python 選項對話方塊、語言伺服器索引標籤](media/options-language-server.png)
+
+::: moniker-end
 
 ## <a name="advanced-python-editor-options"></a>進階 Python 編輯器選項
 

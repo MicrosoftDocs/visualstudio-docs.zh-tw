@@ -8,16 +8,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323114"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070018"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客戶經驗改進計畫
 
-Visual Studio 客戶經驗改進計畫 (VSCEIP) 是設計來協助 Microsoft 隨著時間改善 Visual Studio。 此計畫會[收集有關錯誤](../ide/diagnostic-data-collection.md)、電腦硬體以及使用者如何使用 Visual Studio 的資訊，而不會中斷使用者在電腦上的工作。 所收集的資訊可協助 Microsoft 找出應改善的功能。 本文討論如何選擇加入或退出 VSCEIP。
+Visual Studio 客戶經驗改進計畫 (VSCEIP) 是設計來協助 Microsoft 隨著時間改善 Visual Studio。 此計畫會[收集有關錯誤](../ide/diagnostic-data-collection.md)、電腦硬體以及使用者如何使用 Visual Studio 的資訊，而不會中斷使用者在電腦上的工作。 所收集的資訊可協助 Microsoft 找出應改善的功能。 此文件討論如何選擇加入或退出 VSCEIP。
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
 
@@ -25,9 +25,7 @@ Visual Studio 客戶經驗改進計畫 (VSCEIP) 是設計來協助 Microsoft 隨
 
 VSCEIP 預設為開啟。 您可以遵循下列指示將它關閉，或重新開啟：
 
-1. 啟動 Visual Studio。
-
-1. 從 [協助] 功能表上，指向 [傳送意見反應]，然後選取 [設定]。
+1. 在 Visual Studio 中，選擇 [說明] > [傳送意見反應]，然後選取 [設定]。
 
    [Visual Studio 經驗改進計畫] 對話方塊隨即開啟。
 

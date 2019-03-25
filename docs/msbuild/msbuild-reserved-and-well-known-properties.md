@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35ef81aba75e42e7d3d713d5f6efb7129b55b2d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eefff14fd2277f791b61677fb9a23894c974c353
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632390"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070135"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild 保留和已知屬性
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供一組預先定義的屬性，用來儲存專案檔和 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 二進位檔的相關資訊。 這些屬性的評估方式與其他 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 屬性相同。 例如，若要使用 `MSBuildProjectFile` 屬性，請輸入 `$(MSBuildProjectFile)`。
@@ -57,6 +57,7 @@ ms.locfileid: "56632390"
 | `MSBuildThisFileName` | 保留 | `MSBuildThisFileFullPath` 的檔案名稱部分，不包含副檔名。 |
 | `MSBuildToolsPath` | 保留 | 與 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 的值相關聯之 `MSBuildToolsVersion` 版本的安裝路徑。<br /><br /> 不要在路徑中包含結尾的反斜線。<br /><br /> 這個屬性無法覆寫。 |
 | `MSBuildToolsVersion` | 保留 | 用來建置專案的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工具組版本。<br /><br /> 注意:[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工具組包含用於建置應用程式的工作、目標和工具。 工具包括編譯器，例如 *csc.exe* 和 vbc.exe。 如需詳細資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 及[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)。 |
+| `MSBuildVersion` | 保留 | 用來建置專案的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 版本。 <br /><br/> 這個屬性無法覆寫，否則就會傳回錯誤訊息 `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.`。 |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>與 MSBuild 項目發生衝突的名稱
 

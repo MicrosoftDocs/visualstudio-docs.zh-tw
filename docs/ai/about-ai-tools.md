@@ -8,15 +8,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.devlang: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 249db51cf178d8f1c266b9421fbfbdfbc95ef4c4
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 39d562509a62874a32e8442e18dece8e3c26fbfc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842831"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155585"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
@@ -30,21 +29,21 @@ Visual Studio Tools for AI 是建置、測試及部署深度學習/ AI 解決方
 ![深度學習 IDE](media/about/ide.png)
 
 ## <a name="get-started-quickly-with-the-azure-machine-learning-sample-gallery"></a>快速開始使用 Azure Machine Learning 範例庫
-Visual Studio Tools for AI 與 Azure Machine Learning 整合，讓您輕鬆瀏覽使用 CNTK、TensorFlow、MMLSpark 等的實驗範例庫。
+Visual Studio Tools for AI 會與 Azure Machine Learning 整合，讓您能夠使用 CNTK、TensorFlow、MMLSpark 等工具輕鬆瀏覽實驗範例庫。
 
 ![範例總管](media/about/gallery.png)
 
 [深入了解如何從範例庫建立專案](create-project-gallery.md)
 
 ## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>將深度學習模型定型及/或推斷擴充到雲端
-此延伸模組可讓您輕鬆定型本機電腦上的模型，或利用我們與 Azure Machine Learning 的整合將作業提交至雲端。 您可以將作業提交至 Spark 叢集、Azure GPU 虛擬機器等不同計算目標
+此延伸模組可讓您輕鬆定型本機電腦上的模型，或利用我們與 Azure Machine Learning 的整合將作業提交至雲端。 您可以將作業提交至 Spark 叢集、Azure GPU 虛擬機器等不同計算目標。
 
 ![提交作業](media/about/submitjobs.png)
 
 [深入了解雲端中的定型模型](tensorflow-vm.md)
 
 ## <a name="supported-operating-systems"></a>Supported Operating Systems
-此延伸模組目前支援 Windows 64 位元作業系統
+此擴充功能目前支援 Windows 64 位元作業系統。
 
 ## <a name="support"></a>支援
-[GitHub Issue Tracker](http://github.com/Microsoft/vs-tools-for-ai/issues) 上提供此延伸模組的支援。 您可以提交問題報告、功能建議，或參與討論。
+[GitHub Issue Tracker](http://github.com/Microsoft/vs-tools-for-ai/issues) 上提供此延伸模組的支援。 您可以提交問題報告或功能建議，以及參與討論。

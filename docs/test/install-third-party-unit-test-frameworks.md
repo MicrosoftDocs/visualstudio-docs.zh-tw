@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316141"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982918"
 ---
 # <a name="install-unit-test-frameworks"></a>安裝單元測試架構
 
@@ -26,9 +26,19 @@ Visual Studio 測試總管可以執行任何已針對總管開發配接器介面
 
 ### <a name="install-from-visual-studio"></a>從 Visual Studio 安裝
 
-1. 選擇標準功能表上的 [工具]，然後選擇 [延伸模組和更新]。
+::: moniker range="vs-2017"
 
-2. 依序展開 [線上] > [Visual Studio Marketplace] > [工具]。 選擇 [測試]。
+1. 選擇 [工具] > [擴充功能和更新]。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 選擇 [擴充功能] > [管理擴充功能]。
+
+::: moniker-end
+
+2. 依序展開 [線上] > [Visual Studio Marketplace] > [工具]，然後選擇 [測試]。
 
 3. 瀏覽清單以尋找架構。
 

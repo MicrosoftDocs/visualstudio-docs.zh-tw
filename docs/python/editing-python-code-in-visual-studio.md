@@ -1,7 +1,7 @@
 ---
 title: 編輯 Python 程式碼
 description: 對於 Python，Visual Studio 可提供豐富的 IntelliSense、程式碼片段及導覽功能，還有格式設定、Linting 和重構。
-ms.date: 11/19/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155392"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155520"
 ---
 # <a name="edit-python-code"></a>編輯 Python 程式碼
 
@@ -109,10 +109,20 @@ commas_to_colons(1)
 
 ![mypy 驗證類型提示的範例結果](media/code-editing-type-hints-validation-error.png)
 
+::: moniker range="vs-2017"
 > [!Tip]
-> 如果是 3.5 之前的 Python 版本，Visual Studio 也會顯示您透過「虛設常式檔案」 (*.pyi*) 提供的類型提示。 只要您不想在程式碼中直接包含類型提示，或者您想要針對不會直接使用類型提示的程式庫建立類型提示時，就可以使用虛設常式檔案。 如需詳細資訊，請參閱 mypy 專案 Wiki 中的 [Create stubs for Python modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (建立 Python 模組的虛設常式)。
+> 如果是 3.5 之前的 Python 版本，Visual Studio 也會顯示您透過「Typeshed 虛設常式檔案」 (*.pyi*) 提供的類型提示。 只要您不想在程式碼中直接包含類型提示，或者您想要針對不會直接使用類型提示的程式庫建立類型提示時，就可以使用虛設常式檔案。 如需詳細資訊，請參閱 mypy 專案 Wiki 中的 [Create stubs for Python modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (建立 Python 模組的虛設常式)。
 >
 > 目前，Visual Studio 不支援註解的類型提示。
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!Tip]
+> 如果是 3.5 之前的 Python 版本，Visual Studio 也會顯示您透過「Typeshed 虛設常式檔案」 (*.pyi*) 提供的類型提示。 只要您不想在程式碼中直接包含類型提示，或者您想要針對不會直接使用類型提示的程式庫建立類型提示時，就可以使用虛設常式檔案。 如需詳細資訊，請參閱 mypy 專案 Wiki 中的 [Create stubs for Python modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (建立 Python 模組的虛設常式)。
+>
+> Visual Studio 包括一組 Python 2 和 3，的配套 Typeshed 檔案，因此不需要下載其他項目。 但是如果您想要使用一組不同的檔案，可以指定 [工具] >  [選項] >  [Python]  >  [語言伺服器] 選項。 請參閱[選項 - 語言伺服器](python-support-options-and-settings-in-visual-studio.md#language-server-options)。
+>
+> 目前，Visual Studio 不支援註解的類型提示。
+::: moniker-end
 
 ### <a name="signature-help"></a>簽章說明
 

@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b33e08e8aa639540461216b057ae80d1eb7701f6
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 78feb97dc2d738636667df21db1327f968ae6f69
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796539"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983048"
 ---
-# <a name="create-an-offline-installation-of-visual-studio-2017"></a>建立 Visual Studio 2017 的離線安裝
+# <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 
 我們已設計 Visual Studio 2017 可在各種網路和電腦組態中正常運作。 雖然建議您嘗試 [Visual Studio Web 安裝程式](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) (這是小型檔案，並可讓您掌握所有最新修正程式和功能)，但我們了解您可能無法這麼做。
 
@@ -32,7 +32,7 @@ ms.locfileid: "56796539"
 
 ## <a name="use-the-download-all-then-install-feature"></a>使用 [全部下載後安裝] 功能
 
-[**15.8 中的新功能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)：在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝] 選項。 然後，繼續執行您的安裝。
+[**15.8 版的新功能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)：在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝] 選項。 然後，繼續執行您的安裝。
 
    ![[全部下載後安裝] 選項](media/download-all-then-install.png)
 
@@ -143,7 +143,7 @@ c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDe
 
 ## <a name="see-also"></a>另請參閱
 
-- [建立 Visual Studio 2017 的網路安裝](../install/create-a-network-installation-of-visual-studio.md)
+- [建立 Visual Studio 的網路安裝](../install/create-a-network-installation-of-visual-studio.md)
 - [安裝 Visual Studio 離線安裝所需的憑證](../install/install-certificates-for-visual-studio-offline.md)
 - [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-- [Visual Studio 2017 工作負載和元件識別碼](workload-and-component-ids.md)
+- [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)

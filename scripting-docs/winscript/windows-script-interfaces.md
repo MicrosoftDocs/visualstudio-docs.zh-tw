@@ -2,7 +2,6 @@
 title: Windows 指令碼介面 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f98e60a82735ae561edf404763e0700f71b3a3d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905359"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154422"
 ---
 # <a name="windows-script-interfaces"></a>Windows 指令碼的介面
 
@@ -37,7 +36,7 @@ Windows 指令碼文件分成下列各節：
 
 ## <a name="windows-script-background"></a>Windows 指令碼背景
 
-Windows 指令碼介面分成兩個類別：Windows 指令碼主機和 Windows 指令碼引擎。 主機會建立指令碼引擎，並呼叫引擎來執行指令碼。 Windows 指令碼主機的範例包含：
+Windows 指令碼的介面分為兩類：Windows 指令碼主機與 Windows 指令碼引擎。 主機會建立指令碼引擎，並呼叫引擎來執行指令碼。 Windows 指令碼主機的範例包含：
 
 - Microsoft Internet Explorer
 
@@ -81,7 +80,7 @@ Windows 指令碼設計可隔離只有製作環境才需要的介面項目；因
 
 ## <a name="windows-script-terms"></a>Windows 指令碼條款
 
-此清單包含本文件中所使用之指令碼相關術語的定義。
+此清單包含此文件中所使用之指令碼相關術語的定義。
 
 |詞彙|定義|
 |----------|----------------|

@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 076782f8f6e5d654c66e6a39f3ffe0342a74c560
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: bf78bc26a2eb0c0a217a48b7c663851447aa4f7f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954017"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57871323"
 ---
-# <a name="create-a-network-installation-of-visual-studio-2017"></a>建立 Visual Studio 2017 的網路安裝
+# <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
 一般而言，企業系統管理員會建立網路安裝點，以部署至用戶端工作站。 我們已經設計 Visual Studio 2017，讓您可以快取初始安裝的檔案以及單一資料夾的所有產品更新 (這個程序也稱為「建立配置」)。 
 
@@ -48,7 +48,7 @@ ms.locfileid: "56954017"
 您必須具有網際網路連線才能完成此步驟。 若要建立包含所有語言和所有功能的離線安裝，請下列範例中的其中一個命令。
 
    > [!IMPORTANT]
-   > 完整的 Visual Studio 2017 配置至少需要 35 GB 的磁碟空間，並可能需要花費一些時間才能完成下載。  請參閱[自訂網路配置](#customizing-the-network-layout)一節，以了解僅搭配想要安裝的元件來建立配置的方式。
+   > 完整的 Visual Studio 2017 配置至少需要 35 GB 的磁碟空間，並可能需要花費一些時間才能完成下載。  如需如何僅使用您想要安裝的元件來建立配置的詳細資料，請參閱[自訂網路配置](#customize-the-network-layout)一節。
    >
    > [!TIP]
    > 請確定您是從 [下載] 目錄執行命令。 通常在執行 Windows 10 的電腦上，這會是 `C:\Users\<username>\Downloads`。
@@ -127,7 +127,7 @@ xcopy /e c:\vs2017offline \\server\products\VS2017
     vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
 
-### <a name="new-in-153"></a>15.3 的新功能
+### <a name="new-in-version-153"></a>15.3 版的新功能
 
 當您執行配置命令時，會儲存您指定的選項 (例如工作負載和語言)。 後續配置命令會包含所有先前的選項。  以下是只包含一份英文工作負載的配置範例：
 
@@ -209,7 +209,7 @@ vs_enterprise.exe --layout c:\VS2017Layout --all
 
 ## <a name="see-also"></a>另請參閱
 
-* [更新 Visual Studio 2017 的網路型安裝](update-a-network-installation-of-visual-studio.md)
+* [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)
 * [控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 * [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

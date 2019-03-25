@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2af264ec8cf44f435f640a81a61dbd4cdbd84bd3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c87bba495353bec059c6edc7a394f991e81b39bc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223308"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195056"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
@@ -131,7 +131,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 如需有關自動化測試的詳細資訊，請參閱 [DevOps 中自動化測試的 CI/CD 管線](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) \(英文\) 部落格文章。
 
-此外，如需 [Visual Studio 持續傳遞工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 延伸模組新功能的詳細資訊，請參閱 [Commit with confidence:Commit time code quality](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/) (有信心地認可：認可時的程式碼品質) 部落格文章。
+此外，如需 [Visual Studio 持續傳遞工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 延伸模組新功能的詳細資訊，請參閱 [Commit with confidence:Commit time code quality](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/) (有信心地認可：認可時的程式碼品質) 部落格文章。
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE 加強功能
 
@@ -188,7 +188,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
   ![Visual Studio 2017 結構視覺化檢視](media/vsIDE-StructureVisualizer.png)
 
-如需新生產力功能的詳細資訊，請參閱 Mark Wilson-Thomas 所撰寫的 [Productivity in Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/) (Visual Studio 2017 中的生產力) 部落格文章。
+如需具生產力的新功能詳細資訊，請參閱 [Visual Studio 2017：生產力、效能和夥伴](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/) \(英文\) 部落格文章。
 
 ### <a name="visual-c"></a>Visual C++
 
@@ -381,8 +381,8 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ## <a name="see-also"></a>另請參閱
 
-* [Visual Studio 2017 版本資訊](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
-* [Visual Studio 2017 SDK 的新功能](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk?view=vs-2017)
+* [Visual Studio 2017 版本資訊](/visualstudio/releasenotes/vs2017-relnotes)
+* [Visual Studio 2017 SDK 的新功能](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 * [Visual C++ 的新功能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# 的新功能](/dotnet/csharp/whats-new)
 * [Team Foundation Server 的新功能](/tfs/server/whats-new?view=vsts)

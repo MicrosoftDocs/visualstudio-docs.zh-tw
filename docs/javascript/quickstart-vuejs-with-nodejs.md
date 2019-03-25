@@ -13,19 +13,38 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ac09fa17ea550df127660a56a04d315f8f1a788f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a3bd2c65ccca172eca46eb5d935ef7735734a608
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911165"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069589"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Vue.js 應用程式
 
-在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立並執行簡單的 Vue.js Web 應用程式。 如果您尚未安裝 Visual Studio 2017，請前往 [Visual Studio 下載](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)頁面免費進行安裝。
+在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立並執行簡單的 Vue.js Web 應用程式。
 
 > [!IMPORTANT]
-> 本文需要 Vue.js 範本，該範本是從 Visual Studio 2017 15.8 版開始提供。
+> 此文章需要 Vue.js 範本，該範本是從 Visual Studio 2017 15.8 版開始提供。
+
+## <a name="prerequisites"></a>必要條件
+
+* 您必須安裝 Visual Studio 和 Node.js 開發工作負載。
+
+    ::: moniker range=">=vs-2019"
+    如果您尚未安裝 Visual Studio 2019，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    如果您尚未安裝 Visual Studio 2017，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
+    ::: moniker-end
+
+    如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
+
+    ![VS 安裝程式中的 Node.js 工作負載](../ide/media/quickstart-nodejs-workload.png)
+
+* 您必須安裝 Node.js 執行階段。
+
+    如果您沒有安裝，請從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本。 一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果偵測不到已安裝的執行階段，您可以在屬性頁面中將專案設定為參考已安裝的執行階段 (建立專案之後，以滑鼠右鍵按一下專案節點，然後選擇 [屬性])。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -35,21 +54,23 @@ ms.locfileid: "55911165"
 
     一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果偵測不到已安裝的執行階段，您可以在屬性頁面中將專案設定為參考已安裝的執行階段 (建立專案後，以滑鼠右鍵按一下專案節點，然後選擇 [屬性])。
 
-1. 開啟 Visual Studio 2017。
+1. 開啟 Visual Studio。
 
 1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
-1. 在 [新增專案] 對話方塊的 [JavaScript] > [Node.js] 或 [TypeScript] > [Node.js] 下，選擇 [基本 Vue.js Web 應用程式]。 輸入專案名稱，然後按一下 [確定]。
+1. 建立新的專案。
 
-     ![Vue.js 範本](../javascript/media/vuejs-template.png)
+    ::: moniker range=">=vs-2019"
+    在 [建立新專案] 對話方塊中，於搜尋方塊中輸入 **javascript** 或 **typescript** 以篩選結果，然後依序選擇 [基本 Vue.js Web 應用程式] 和 [下一步]。 接著，選擇 [建立]。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選擇 [基本 Vue.js Web 應用程式]，然後選擇 [確定]。
+    ::: moniker-end
+    如果您看不到 [基本 Vue.js Web 應用程式] 專案範本，則必須新增 **Node.js 開發**工作負載。 如需詳細指示，請參閱[必要條件](#prerequisites)。
+
+    ![Vue.js 範本](../javascript/media/vuejs-template.png)
 
     Visual Studio 會建立新專案。 隨即在 [方案總管] 右窗格中開啟新專案。
-
-     如果您看不到 [基本的 Vue.js Web 應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
-
-     ![VS 安裝程式中的 Node.js 工作負載](../ide/media/quickstart-nodejs-workload.png)
-
-    Visual Studio 會建立新的方案並開啟專案。
 
 1. 檢查 [輸出] 視窗 (下方窗格)，以取得安裝應用程式所需 npm 套件的進度。
 

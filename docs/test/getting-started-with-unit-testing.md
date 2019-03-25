@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 52a3d63bb7f632f1eacea603c96787dbb36d90fa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223516"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984114"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
@@ -112,25 +112,39 @@ ms.locfileid: "57223516"
 
 以下是啟用協力廠商測試架構的步驟：
 
-1. 選擇工具列上的 [工具] > [延伸模組和更新]。
+::: moniker range="vs-2017"
 
-1. 在 [延伸模組和更新] 對話方塊中，展開 [線上] 分類，然後選擇 [Visual Studio Marketplace]。 然後，選擇 [工具] > [測試]。
+1. 從功能表列選擇 [工具] > [擴充功能和更新]。
+
+2. 在 [延伸模組和更新] 對話方塊中，展開 [線上] 分類，然後選擇 [Visual Studio Marketplace]。 然後，選擇 [工具] > [測試]。
 
    ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
 
-1. 選取您想要安裝架構或配接器，然後選擇 [下載]。
+::: moniker-end
 
-1. 建立類別庫專案，並將它新增至您的方案。
+::: moniker range=">=vs-2019"
+
+1. 從功能表列選擇 [擴充功能] > [管理擴充功能]。
+
+2. 在 [管理擴充功能] 對話方塊中，展開 [線上] 分類，然後選擇 [Visual Studio Marketplace]。 然後，選擇 [工具] > [測試]。
+
+   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+
+::: moniker-end
+
+3. 選取您想要安裝架構或配接器，然後選擇 [下載]。
+
+4. 建立類別庫專案，並將它新增至您的方案。
 
    ![為類別庫專案命名，並將其新增](media/create3rdpartyunittest3.png)
 
-1. 安裝外掛程式。 在 [方案總管] 中選取類別庫專案，然後從其右鍵功能表或快顯功能表中選擇 [管理 NuGet 套件]。
+5. 安裝外掛程式。 在 [方案總管] 中選取類別庫專案，然後從其右鍵功能表或快顯功能表中選擇 [管理 NuGet 套件]。
 
    ![管理 NuGet 套件來安裝外掛程式](media/create3rdpartyunittest3a.png)
 
    [NuGet](https://www.nuget.org/) 是 Visual Studio 的延伸模組，您可以用來新增和更新專案的程式庫和工具。
 
-1. 在 [NuGet 套件管理員] 視窗中，搜尋並選取外掛程式，然後選擇 [安裝]。
+6. 在 [NuGet 套件管理員] 視窗中，搜尋並選取外掛程式，然後選擇 [安裝]。
 
    ![安裝協力廠商架構](media/create3rdpartyunittest4.png)
 
@@ -138,15 +152,15 @@ ms.locfileid: "57223516"
 
    ![協力廠商單元測試架構的參考已新增至方案](media/create3rdpartyunittest6.png)
 
-1. 從類別庫專案中的 [參考] 節點中，選取 [新增參考]。
+7. 從類別庫專案中的 [參考] 節點中，選取 [新增參考]。
 
    ![將參考新增至專案](media/createunittest6.png)
 
-1. 在 [參考管理員] 對話方塊方塊中，選取包含您要測試之程式碼的專案。
+8. 在 [參考管理員] 對話方塊方塊中，選取包含您要測試之程式碼的專案。
 
    ![選取您要測試的程式碼專案](media/createunittest7.png)
 
-1. 撰寫單元測試的程式碼。
+9. 撰寫單元測試的程式碼。
 
    ![將程式碼新增至您的單元測試程式碼檔案](media/create3rdpartyunittest7.png)
 

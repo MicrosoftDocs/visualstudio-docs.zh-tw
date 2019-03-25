@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de2d4832a1c45cbfd2b6f3893dd2b011151d9e48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951338"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869359"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>安裝 Python 解譯器的偵錯符號
 
@@ -54,7 +54,7 @@ Visual Studio 會在需要符號時提示您，一般來說，這是指啟動混
 
     ![混合模式偵錯工具符號選項](media/mixed-mode-debugging-symbols.png)
 
-1. 偵錯工作階段期間，Visual Studio 也可能會提示您輸入 Python 解譯器的原始程式檔位置。 如果您已經下載原始程式檔 (例如從 [python.org/downloads](https://www.python.org/downloads) 下載)，當然也可以指向它們。
+1. 偵錯工作階段期間，Visual Studio 也可能會提示您輸入 Python 解譯器的原始程式檔位置。 如果您已經下載原始程式檔 (例如從 [python.org/downloads](https://www.python.org/downloads/) 下載)，當然也可以指向它們。
 
 > [!Note]
 > 對話方塊顯示的符號快取功能，可用來建立從線上來源取得之符號的本機快取。 既然符號已存在於本機，Python 解譯器的符號就不需要這些功能。 在任何情況下，請參閱[指定 Visual Studio 偵錯工具中的符號和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)，以取得詳細資訊。

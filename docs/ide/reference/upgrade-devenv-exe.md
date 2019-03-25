@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ca13af8cd6b1a144ee3202165908f1d282ca81
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0fa2e2eaa583f7da0437907fdaa3e7af2fe4a0e2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924067"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070239"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 
@@ -49,7 +49,7 @@ devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 
 必須先簽出原始檔控制的方案或專案，才能進行升級。
 
-使用 `/Upgrade` 參數不會啟動 Visual Studio。 在方案或專案之開發語言的升級報表中可以看到升級結果。 不會傳回任何錯誤或使用方式資訊。 如需在 Visual Studio 中升級專案的詳細資訊，請參閱[移植、移轉及升級 Visual Studio 專案](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)。
+使用 `/Upgrade` 參數不會開啟 Visual Studio。 在方案或專案之開發語言的升級報表中可以看到升級結果。 不會傳回任何錯誤或使用方式資訊。 如需在 Visual Studio 中升級專案的詳細資訊，請參閱[移植、移轉及升級 Visual Studio 專案](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)。
 
 ## <a name="example"></a>範例
 

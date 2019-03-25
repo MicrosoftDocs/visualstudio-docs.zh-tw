@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07666efb673702e20c3c5c4a9b279de729e4c838
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cad2d1a83ed60cde4f3a410f8183e5ee6074321c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605399"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983906"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>在 Visual Studio 中匯入發行設定，即可將應用程式發行至 IIS
 
-您可以使用 [發行] 工具匯入發行設定，然後部署您的應用程式。 在本文中，我們會使用 IIS 的發行設定，但您可以使用類似步驟匯入 [Azure App Service](../deployment/tutorial-import-publish-settings-azure.md) 的發行設定。 在某些情況下，使用發行設定的設定檔速度，比起針對每個 Visual Studio 安裝手動設定 IIS 部署還要快。
+您可以使用 [發行] 工具匯入發行設定，然後部署您的應用程式。 在此文章中，我們會使用 IIS 的發行設定，但您可以使用類似步驟匯入 [Azure App Service](../deployment/tutorial-import-publish-settings-azure.md) 的發行設定。 在某些情況下，使用發行設定的設定檔速度，比起針對每個 Visual Studio 安裝手動設定 IIS 部署還要快。
 
-這些步驟適用於 Visual Studio 中的 ASP.NET、ASP.NET Core 和 .NET Core 應用程式。 這些步驟對應於 Visual Studio 2017 15.6 版。
+這些步驟適用於 Visual Studio 中的 ASP.NET、ASP.NET Core 和 .NET Core 應用程式。
 
 在本教學課程中，您將進行下列作業：
 
@@ -38,9 +38,19 @@ ms.locfileid: "56605399"
 
 ## <a name="prerequisites"></a>必要條件
 
-* 在您的開發電腦上，您必須安裝 Visual Studio 2017 以及 **ASP.NET 和 Web 開發**工作負載。
+::: moniker range=">=vs-2019"
 
-    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 頁面免費進行安裝。
+* 您必須安裝 Visual Studio 2019 及 **ASP.NET 與網頁程式開發**工作負載。
+
+    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+* 您必須安裝 Visual Studio 2017 以及 **ASP.NET 和 Web 開發**工作負載。
+
+    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
+::: moniker-end
 
 * 在您的伺服器上，您必須執行 Windows Server 2012 或 Windows Server 2016，且必須正確安裝 [IIS 網頁伺服器角色](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (產生發行設定檔案 (*\*.publishsettings*) 時需要此角色)。 另外還必須在伺服器上安裝 ASP.NET 4.5 或 ASP.NET Core。 若要設定 ASP.NET 4.5，請參閱[使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。 若要設定 ASP.NET Core，請參閱[在使用 IIS 的 Windows 上裝載 ASP.NET Core](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 

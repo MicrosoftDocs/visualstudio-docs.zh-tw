@@ -112,7 +112,7 @@
 ### [錯誤：您沒有檢查此處理序身分識別的權限](error-you-do-not-have-permission-to-inspect-the-process-s-identity.md)
 ### [錯誤：目標電腦上的 Visual Studio 遠端偵錯工具服務無法連回這部電腦](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)
 ### [錯誤：網站背景工作處理序已被 IIS 終止](error-web-site-worker-process-has-been-terminated-by-iis.md)
-### [錯誤：無法連線至電腦 <name>。網路上找不到這部電腦](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
+### [錯誤：無法連線至電腦 \<名稱>。網路上找不到這部電腦](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 ### [錯誤：只有使用 Microsoft .NET Framework 2.0 或更新版本時才支援混合模式偵錯](error-mixed-mode-debugging-is-supported-only-when-using-microsoft-dotnet-framework-2-0-or-greater.md)
 ### [錯誤：不支援 IA64 處理序的混合模式偵錯](error-mixed-mode-debugging-for-ia64-processes-is-unsupported.md)
 ### [錯誤：只有使用 Microsoft .NET Framework 4 或更新版本時才支援 x64 處理序的混合模式偵錯](error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-dotnet-framework-4-or-greater.md)

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建置並執行 LinqToXmlDataBinding 範例
+title: 作法：建置並執行 LinqToXmlDataBinding 範例
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,24 +7,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b88b705a7dc64f46ba750feed1e5259f2b74c555
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 846b71b768d5b1909f29c8135616714d0124193c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951900"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069914"
 ---
-# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>HOW TO：建置並執行 LinqToXmlDataBinding 範例
+# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>作法：建置並執行 LinqToXmlDataBinding 範例
 
 這個主題顯示如何建立與建置 LinqToXmlDataBinding Visual Studio 專案，以及如何執行所產生的 LinqToXmlDataBinding Windows Presentation Foundation (WPF) 範例程式。
 
 如需 Visual Studio 的詳細資訊，請參閱 [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)。
 
-## <a name="create-and-populate-the-project"></a>建立並填入專案
+## <a name="create-the-project"></a>建立專案
 
-### <a name="to-create-the-starting-project"></a>若要建立起始專案
-
-1. 啟動 Visual Studio，然後建立名稱為 LinqToXmlDataBinding 的 C# WPF 應用程式。 該專案必須使用 .NET Framework 3.5 (或更新版本)。
+1. 開啟 Visual Studio，然後建立名為 **LinqToXmlDataBinding** 的 C# **WPF 應用程式**。 專案應該將目標設定為 .NET Framework 3.5 (或更新版本)。
 
 1. 如果尚未存在，加入下列 .NET 組件的專案參考：
 
@@ -38,7 +36,7 @@ ms.locfileid: "55951900"
 
 1. 按 **Ctrl**+**Shift**+**B** 來建置方案，然後按 **F5** 鍵來執行。 專案的編譯應該沒有錯誤，而且應該當做一般 WPF 應用程式執行。
 
-### <a name="to-add-custom-code-to-the-project"></a>若要將自訂程式碼加入至專案
+## <a name="add-code-to-the-project"></a>將程式碼新增到專案
 
 1. 在 [方案總管] 中，將原始程式檔 **Window1.xaml** 重新命名為 **L2XDBForm.xaml**。 相依的原始程式檔 **Window1.xaml.cs** 應該會自動重新命名為 **L2XDBForm.xaml.cs**。
 
@@ -56,9 +54,7 @@ LinqToXmlDataBinding 程式可讓使用者檢視與管理儲存為內嵌 XML 項
 
 ### <a name="to-run-the-program-and-view-the-book-list"></a>若要執行程式與檢視書籍清單
 
-- 按 **F5** (開始偵錯) 或 **Ctrl**+**F5** (啟動但不偵錯)，執行 LinqToXmlDataBinding。
-
-   標題為 [使用 LINQ to XML 進行 WPF 資料繫結] 的程式視窗隨即出現。
+按 **F5** (開始偵錯) 或 **Ctrl**+**F5** (啟動但不偵錯)，執行 LinqToXmlDataBinding。 標題為 [使用 LINQ to XML 進行 WPF 資料繫結] 的程式視窗隨即出現。
 
 - 請注意 UI 的上方區段，其中會顯示代表書籍清單的原始 **XML**。 它會使用 WPF <xref:System.Windows.Controls.TextBlock> 控制項顯示，不會透過滑鼠或鍵盤啟用互動。
 

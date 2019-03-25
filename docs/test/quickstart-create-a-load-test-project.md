@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c53d458a3ca80492abd83f5081be220835a613b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ac5e6b8cdce628fb37aea79d965a4721fe5560e0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948468"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069966"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>快速入門：建立負載測試專案
 
@@ -42,15 +42,33 @@ ms.locfileid: "55948468"
 
 在本節中，我們將建立 C# 負載測試專案。 如果您想要的話，您也可以建立 Visual Basic 負載測試專案。
 
-1. 開啟 Visual Studio，然後從功能表列選擇 [檔案] > [新增] > [專案]。
+::: moniker range="vs-2017"
+
+1. 開啟 Visual Studio。
+
+2. 從功能表列選擇 [檔案] > [新增] > [專案]。
 
    [ **新增專案** ] 對話方塊隨即開啟。
 
-1. 在 [新增專案] 對話方塊中，依序展開 [已安裝的] 和 [Visual C#]，然後選取 [測試] 分類。 選擇 [Web 效能和負載測試專案] 範本。
+3. 在 [新增專案] 對話方塊中，依序展開 [已安裝的] 和 [Visual C#]，然後選取 [測試] 分類。 選擇 [Web 效能和負載測試專案] 範本。
 
    ![Web 效能和負載測試專案範本](media/web-perf-load-test-project-template.png)
 
-1. 如果您不想要使用預設名稱，請輸入專案的名稱，然後選擇 [確定]。
+4. 如果您不想要使用預設名稱，請輸入專案的名稱，然後選擇 [確定]。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 開啟 Visual Studio。
+
+2. 在 [開始] 視窗中，選擇 [建立新專案]。
+
+3. 在 [建立新專案] 對話方塊中，於搜尋方塊內輸入 **web test**，然後再選取 C# 的 [Web 效能和負載測試專案] \[已過時] 範本。 選擇 [下一步]。
+
+4. 如果您不想要使用預設名稱，請輸入專案的名稱，然後選擇 [建立]。
+
+::: moniker-end
 
    Visual Studio 會建立專案，並在 [方案總管] 中顯示檔案。 專案一開始只會包含一個名為 *WebTest1.webtest* 的 Web 測試檔案。
 

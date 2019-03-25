@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: bbaa2b35266a305eb7115c84cd627b5e223479b5
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: b9b709c14cf0f22d12054322635c852e09214316
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567337"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323184"
 documentType: LandingData
 title: Visual Basic 教學課程 | Visual Basic
 metadata:
@@ -45,6 +45,11 @@ sections:
     className: cardsM
     columns: 3
     items:
+    - href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_pull-request.svg
+      title: 從存放庫開啟程式碼
     - href: tutorial-console.md
       html: <p></p>
       image:

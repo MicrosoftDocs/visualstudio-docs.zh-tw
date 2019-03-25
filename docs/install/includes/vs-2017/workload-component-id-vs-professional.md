@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 93653851ffdbc642530a977436714faf85a50bda
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 3d871f6e84dc96a1e1fd5c20a95c234f13a30ab2
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57325083"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "58161179"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2017"></a>Visual Studio 核心編輯器 (隨附於 Visual Studio Professional 2017)
 
@@ -55,16 +55,16 @@ Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.6.1 開
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 開發工具 | 15.8.27924.0 | 必要
 Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | .NET Core 2.1 開發工具 | 15.8.27924.0 | 必要
 Microsoft.NetCore.ComponentGroup.Web.2.1 | .NET Core 2.1 開發工具 | 15.8.27924.0 | 必要
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 15.8.27825.0 | 必要
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 15.9.28307.421 | 必要
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 15.0.26208.0 | 必要
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 15.0.26621.2 | 必要
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 15.9.28307.421 | 必要
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 15.9.28125.51 | 必要
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.9.28230.55 | 必要
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 15.9.28107.0 | 必要
 Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 15.8.27906.1 | 必要
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 容器開發工具 - 建置工具 | 15.7.27617.1 | 必要
 Microsoft.VisualStudio.Component.FSharp | F# 語言支援 | 15.8.27825.0 | 必要
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | Web 專案的 F# 語言支援 | 15.8.27705.0 | 必要
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | Web 專案的 F# 語言支援 | 15.9.28307.421 | 必要
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | 必要
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 15.8.27729.1 | 必要
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScript 語言支援 | 15.9.28125.51 | 必要
@@ -151,9 +151,9 @@ Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 15.6.2
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.6.1 開發工具 | 15.8.27825.0 | 建議
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開發工具 | 15.6.27406.0 | 建議
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 開發工具 | 15.8.27924.0 | 建議
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 15.8.27825.0 | 建議
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 15.9.28307.421 | 建議
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 15.0.26208.0 | 建議
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 15.0.26621.2 | 建議
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 15.9.28307.421 | 建議
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 15.9.28125.51 | 建議
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure 雲端服務核心工具 | 15.9.28107.0 | 建議
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure 雲端服務建置工具 | 15.7.27617.1 | 建議
@@ -219,7 +219,7 @@ Component.Anaconda2.x64 | Anaconda2 64 位元 (5.2.0) | 5.2.0 | Optional
 Component.Anaconda2.x86 | Anaconda2 32 位元 (5.2.0) | 5.2.0 | Optional
 Component.Anaconda3.x86 | Anaconda3 32 位元 (5.2.0) | 5.2.0 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 15.6.27309.0 | Optional
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python 原生開發工具 | 15.8.27729.1 | Optional
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python 原生開發工具 | 15.9.28307.102 | Optional
 Microsoft.VisualStudio.Component.Graphics.Tools | 適用於 DirectX 的圖形偵錯工具與 GPU 分析工具 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Graphics.Win81 | 圖形工具 Windows 8.1 SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.VC.140 | 桌上型電腦版的 VC++ 2015.3 v14.00 (v140) 工具組 | 15.7.27617.1 | Optional
@@ -227,7 +227,7 @@ Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ 核心功能 | 1
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 分析工具 | 15.0.26823.1 | Optional
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 15.9 版 v14.16 最新的 v141 工具 | 15.9.28230.55 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 執行階段 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Optional
 
 ## <a name="net-desktop-development"></a>.NET 桌面開發
@@ -322,7 +322,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn �
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.8.27729.1 | 必要
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 靜態分析工具 | 15.0.26208.0 | 必要
 Microsoft.VisualStudio.Component.Unity | Visual Studio Tools for Unity | 15.7.27617.1 | 必要
-Component.UnityEngine.x64 | Unity 2018.1 64 位元編輯器 | 15.8.27924.0 | 建議
+Component.UnityEngine.x64 | Unity 2018.3 64 位元編輯器 | 15.9.28307.271 | 建議
 Component.UnityEngine.x86 | Unity 5.6 32 位元編輯器 | 15.6.27406.0 | 建議
 
 ## <a name="linux-development-with-c"></a>使用 C++ 的 Linux 程式開發
@@ -338,10 +338,10 @@ Component.UnityEngine.x86 | Unity 5.6 32 位元編輯器 | 15.6.27406.0 | 建議
 Component.MDD.Linux | 適用於 Linux 開發的 Visual C++ | 15.6.27406.0 | 必要
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ 核心功能 | 15.6.27406.0 | 必要
 Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 執行階段 | 15.6.27406.0 | 必要
-Component.Linux.CMake | 適用於 CMake 和 Linux 的 Visual C++ 工具 | 15.8.27906.1 | 建議
+Component.Linux.CMake | 適用於 CMake 和 Linux 的 Visual C++ 工具 | 15.9.28307.102 | 建議
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 靜態分析工具 | 15.0.26208.0 | 建議
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 15.9 版 v14.16 最新的 v141 工具 | 15.9.28230.55 | 建議
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | 建議
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | 建議
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 15.8.27825.0 | 建議
 Component.MDD.Linux.GCC.arm | 內嵌及 IoT 開發 | 15.6.27309.0 | Optional
 
@@ -367,12 +367,12 @@ Microsoft.VisualStudio.Component.Graphics.Win81 | 圖形工具 Windows 8.1 SDK |
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 15.9.28016.0 | 建議
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 靜態分析工具 | 15.0.26208.0 | 建議
 Microsoft.VisualStudio.Component.VC.ATL | x86 與 x64 版 Visual C++ ATL | 15.7.27625.0 | 建議
-Microsoft.VisualStudio.Component.VC.CMake.Project | 適用於 CMake 的 Visual C++ 工具 | 15.8.27906.1 | 建議
+Microsoft.VisualStudio.Component.VC.CMake.Project | 適用於 CMake 的 Visual C++ 工具 | 15.9.28307.102 | 建議
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 分析工具 | 15.0.26823.1 | 建議
 Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest | Boost.Test 的測試配接器 | 15.8.27906.1 | 建議
 Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest | 適用於 Google Test 的測試配接器 | 15.8.27906.1 | 建議
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 15.9 版 v14.16 最新的 v141 工具 | 15.9.28230.55 | 建議
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | 建議
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | 建議
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 15.8.27825.0 | 建議
 Component.Incredibuild | IncrediBuild - 組建加速 | 15.7.27617.1 | Optional
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Optional
@@ -393,6 +393,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 適用於桌面 C+
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 適用於桌面 C++ 的 Windows 10 SDK (10.0.16299.0) [ARM 及 ARM64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 適用於 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB、JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 適用於 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.WinXP | C++ 的 Windows XP 支援 | 15.8.27924.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK 與 UCRT SDK | 15.6.27406.0 | Optional
@@ -418,18 +419,17 @@ Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 執行階段 | 
 Microsoft.VisualStudio.Component.Graphics.Tools | 適用於 DirectX 的圖形偵錯工具與 GPU 分析工具 | 15.6.27406.0 | 建議
 Microsoft.VisualStudio.Component.Graphics.Win81 | 圖形工具 Windows 8.1 SDK | 15.6.27406.0 | 建議
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 分析工具 | 15.0.26823.1 | 建議
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | 建議
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | 建議
 Component.Android.NDK.R12B | Android NDK (R12B) | 12.1.10 | Optional
 Component.Android.SDK23.Private | Android SDK 安裝程式 (API 層級 23) (可供使用 JavaScript / C++ 進行行動裝置開發之用的本機安裝) | 15.9.28016.0 | Optional
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | Optional
 Component.Cocos | Cocos | 15.0.26906.1 | Optional
 Component.Incredibuild | IncrediBuild - 組建加速 | 15.7.27617.1 | Optional
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Optional
-Component.JavaJDK | Java SE 開發套件 (8.0.1120.15) | 15.6.27406.0 | Optional
 Component.MDD.Android | C++ Android 開發工具 | 15.0.26606.0 | Optional
 Component.OpenJDK | Microsoft 的 OpenJDK 散發 | 15.9.28125.51 | Optional
 Component.Unreal | Unreal Engine 安裝程式 | 15.8.27729.1 | Optional
-Component.Unreal.Android | Unreal 引擎的 Visual Studio Android 支援 | 15.0.27005.2 | Optional
+Component.Unreal.Android | Unreal 引擎的 Visual Studio Android 支援 | 15.9.28307.341 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 15.6.27309.0 | Optional
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目標套件 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 | 15.6.27406.0 | Optional
@@ -453,6 +453,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 適用於桌面 C+
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 適用於桌面 C++ 的 Windows 10 SDK (10.0.16299.0) [ARM 及 ARM64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 適用於 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB、JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 適用於 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK 與 UCRT SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | Optional
@@ -484,7 +485,7 @@ Component.Android.NDK.R13B | Android NDK (R13B) | 13.1.7 | Optional
 Component.Android.NDK.R13B_3264 | Android NDK (R13B) (32 位元) | 13.1.8 | Optional
 Component.Android.NDK.R15C_3264 | Android NDK (R15C) (32 位元) | 15.2.1 | Optional
 Component.Google.Android.Emulator.API23.Private | Google Android 模擬器 (API 層級 23) (本機安裝) | 15.6.27413.0 | Optional
-Component.HAXM.Private | Intel Hardware Accelerated Execution Manager (HAXM) (本機安裝) | 15.6.27413.0 | Optional
+Component.HAXM.Private | Intel Hardware Accelerated Execution Manager (HAXM) (本機安裝) | 15.9.28307.421 | Optional
 Component.Incredibuild | IncrediBuild - 組建加速 | 15.7.27617.1 | Optional
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Optional
 Component.MDD.IOS | C++ iOS 開發工具 | 15.0.26621.2 | Optional
@@ -516,7 +517,7 @@ Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 15
 Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 15.8.27906.1 | 必要
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 容器開發工具 - 建置工具 | 15.7.27617.1 | 必要
 Microsoft.VisualStudio.Component.FSharp | F# 語言支援 | 15.8.27825.0 | 必要
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | Web 專案的 F# 語言支援 | 15.8.27705.0 | 必要
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | Web 專案的 F# 語言支援 | 15.9.28307.421 | 必要
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | 必要
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 15.8.27729.1 | 必要
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScript 語言支援 | 15.9.28125.51 | 必要
@@ -540,9 +541,9 @@ Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必�
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 15.8.27825.0 | 必要
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Microsoft Azure WebJobs 工具 | 15.7.27617.1 | 建議
 Microsoft.VisualStudio.Component.AppInsights.Tools | 開發人員分析工具 | 15.8.27825.0 | 建議
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 15.8.27825.0 | 建議
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 15.9.28307.421 | 建議
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 15.0.26208.0 | 建議
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 15.0.26621.2 | 建議
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 15.9.28307.421 | 建議
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 15.9.28125.51 | 建議
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.9.28230.55 | 建議
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.8.27729.1 | 建議
@@ -585,8 +586,8 @@ Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic |
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 靜態分析工具 | 15.0.26208.0 | 必要
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine | ASP.NET 範本引擎 | 15.8.27729.1 | 必要
 Component.Android.SDK27 | Android SDK 安裝程式 (API 層級 27) | 15.9.28016.0 | 建議
-Component.Google.Android.Emulator.API27 | Google Android 模擬器 (API 層級 27) | 15.9.28016.0 | 建議
-Component.HAXM | Intel Hardware Accelerated Execution Manager (HAXM) (全域安裝) | 15.6.27413.0 | 建議
+Component.Google.Android.Emulator.API27 | Google Android 模擬器 (API 層級 27) | 15.9.28307.421 | 建議
+Component.HAXM | Intel Hardware Accelerated Execution Manager (HAXM) (全域安裝) | 15.9.28307.421 | 建議
 Component.OpenJDK | Microsoft 的 OpenJDK 散發 | 15.9.28125.51 | 建議
 Component.Xamarin.Inspector | Xamarin Workbooks | 15.0.26606.0 | Optional
 Microsoft.Component.ClickOnce | ClickOnce 發行 | 15.8.27825.0 | Optional
@@ -596,8 +597,8 @@ Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.8.2772
 Microsoft.VisualStudio.Component.Graphics | 影像與 3D 模型編輯器 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 資料類型 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.VisualStudioData | 資料來源與服務參考 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | 適用於 Xamarin 的通用 Windows 平台工具 | 15.7.27617.1 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Optional
+Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | 適用於 Xamarin 的通用 Windows 平台工具 | 15.9.28307.102 | Optional
 
 ## <a name="aspnet-and-web-development"></a>ASP.NET 與網頁程式開發
 
@@ -626,7 +627,7 @@ Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 15
 Microsoft.VisualStudio.Component.DockerTools | 容器開發工具 | 15.8.27906.1 | 必要
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 容器開發工具 - 建置工具 | 15.7.27617.1 | 必要
 Microsoft.VisualStudio.Component.FSharp | F# 語言支援 | 15.8.27825.0 | 必要
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | Web 專案的 F# 語言支援 | 15.8.27705.0 | 必要
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | Web 專案的 F# 語言支援 | 15.9.28307.421 | 必要
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | 必要
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 15.8.27729.1 | 必要
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScript 語言支援 | 15.9.28125.51 | 必要
@@ -656,9 +657,9 @@ Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 15.6.2
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開發工具 | 15.6.27406.0 | 建議
 Microsoft.VisualStudio.Component.AppInsights.Tools | 開發人員分析工具 | 15.8.27825.0 | 建議
 Microsoft.VisualStudio.Component.AspNet45 | 進階的 ASP.NET 功能 | 15.7.27625.0 | 建議
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 15.8.27825.0 | 建議
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 15.9.28307.421 | 建議
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 15.0.26208.0 | 建議
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 15.0.26621.2 | 建議
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 15.9.28307.421 | 建議
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 15.9.28125.51 | 建議
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.9.28230.55 | 建議
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.8.27729.1 | 建議
@@ -691,7 +692,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **識別碼：** Microsoft.VisualStudio.Workload.Node
 
-**描述：** 使用非同步事件驅動的 JavaScript 執行階段 Node.js 來建置可調整網路應用程式。
+**描述：** 使用非同步事件驅動的 JavaScript 執行階段 Node.js 來建置可調整網路應用程式。 
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -816,7 +817,7 @@ Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Optional
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Optional
 Microsoft.Component.PythonTools.UWP | Python IoT 支援 | 15.0.26606.0 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 15.6.27309.0 | Optional
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python 原生開發工具 | 15.8.27729.1 | Optional
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python 原生開發工具 | 15.9.28307.102 | Optional
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Optional
@@ -824,9 +825,9 @@ Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.6.1 開發工具 | 15.8.27825.0 | Optional
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 開發工具 | 15.8.27924.0 | Optional
 Microsoft.VisualStudio.Component.AppInsights.Tools | 開發人員分析工具 | 15.8.27825.0 | Optional
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 15.8.27825.0 | Optional
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 15.9.28307.421 | Optional
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 15.9.28307.421 | Optional
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 15.9.28125.51 | Optional
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure 雲端服務核心工具 | 15.9.28107.0 | Optional
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure 雲端服務建置工具 | 15.7.27617.1 | Optional
@@ -859,7 +860,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 15.9 版 v14.16 �
 Microsoft.VisualStudio.Component.Web | ASP.NET 與網頁程式開發工具 | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 執行階段 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必要條件 | 15.9.28219.51 | Optional
 
@@ -894,13 +895,13 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | 靜態分析工具 | 15
 Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 SDK | 15.0.28218.60 | 必要
 Microsoft.VisualStudio.Component.UWP.Support | 通用 Windows 平台工具 | 15.9.28119.51 | 必要
 Microsoft.VisualStudio.Component.VisualStudioData | 資料來源與服務參考 | 15.6.27406.0 | 必要
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | 必要
-Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | 適用於 Cordova 的通用 Windows 平台工具 | 15.7.27617.1 | 必要
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | 必要
+Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | 適用於 Cordova 的通用 Windows 平台工具 | 15.9.28307.102 | 必要
 Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard | .NET Native 和.NET Standard | 15.8.27906.1 | 必要
-Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | 適用於 Xamarin 的通用 Windows 平台工具 | 15.7.27617.1 | 必要
+Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | 適用於 Xamarin 的通用 Windows 平台工具 | 15.9.28307.102 | 必要
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 15.8.27825.0 | 必要
 Microsoft.Component.VC.Runtime.OSSupport | UWP 的 Visual C++ 執行階段 | 15.6.27406.0 | Optional
-Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.Graphics.Tools | 適用於 DirectX 的圖形偵錯工具與 GPU 分析工具 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Graphics.Win81 | 圖形工具 Windows 8.1 SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Windows 10 行動模擬器 (Fall Creators Update) | 15.0.27406.0 | Optional
@@ -919,9 +920,9 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 適用於桌面 C+
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 適用於桌面 C++ 的 Windows 10 SDK (10.0.16299.0) [ARM 及 ARM64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 適用於 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB、JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 適用於 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28218.60 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | USB 裝置連線 | 15.7.27625.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.UWP.VC | C++ 通用 Windows 平台工具 | 15.9.28107.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | USB 裝置連線 | 15.9.28307.102 | Optional
+Microsoft.VisualStudio.ComponentGroup.UWP.VC | C++ 通用 Windows 平台工具 | 15.9.28307.102 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | Optional
 
@@ -982,8 +983,7 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 SDK | 15.0.2821
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 15.8.27825.0 | 必要
 Component.Android.SDK23.Private | Android SDK 安裝程式 (API 層級 23) (可供使用 JavaScript / C++ 進行行動裝置開發之用的本機安裝) | 15.9.28016.0 | Optional
 Component.Google.Android.Emulator.API23.Private | Google Android 模擬器 (API 層級 23) (本機安裝) | 15.6.27413.0 | Optional
-Component.HAXM.Private | Intel Hardware Accelerated Execution Manager (HAXM) (本機安裝) | 15.6.27413.0 | Optional
-Component.JavaJDK | Java SE 開發套件 (8.0.1120.15) | 15.6.27406.0 | Optional
+Component.HAXM.Private | Intel Hardware Accelerated Execution Manager (HAXM) (本機安裝) | 15.9.28307.421 | Optional
 Component.OpenJDK | Microsoft 的 OpenJDK 散發 | 15.9.28125.51 | Optional
 Microsoft.Component.ClickOnce | ClickOnce 發行 | 15.8.27825.0 | Optional
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Optional
@@ -994,8 +994,8 @@ Microsoft.VisualStudio.Component.Graphics | 影像與 3D 模型編輯器 | 15.6.
 Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Windows 10 行動模擬器 (Fall Creators Update) | 15.0.27406.0 | Optional
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 資料類型 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.VisualStudioData | 資料來源與服務參考 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | 適用於 Cordova 的通用 Windows 平台工具 | 15.7.27617.1 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Optional
+Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | 適用於 Cordova 的通用 Windows 平台工具 | 15.9.28307.102 | Optional
 
 ## <a name="unaffiliated-components"></a>非附屬元件
 
@@ -1012,7 +1012,7 @@ Component.GitHub.VisualStudio | Visual Studio 的 GitHub 擴充功能 | 2.5.2.25
 Component.Google.Android.Emulator.API23.V2 | Google Android 模擬器 (API 層級 23) (全域安裝) | 15.6.27413.0
 Component.Google.Android.Emulator.API25 | Google Android 模擬器 (API 層級 25) | 15.7.27604.0
 Microsoft.Component.Blend.SDK.WPF | 適用於 .NET 的 Blend for Visual Studio SDK | 15.6.27406.0
-Microsoft.Component.HelpViewer | 說明檢視器 | 15.6.27323.2
+Microsoft.Component.HelpViewer | 說明檢視器 | 15.9.28307.421
 Microsoft.VisualStudio.Component.DependencyValidation.Community | 相依性驗證 | 15.0.26208.0
 Microsoft.VisualStudio.Component.GraphDocument | DGML 編輯器 | 15.0.27005.2
 Microsoft.VisualStudio.Component.LinqToSql | LINQ to SQL 工具 | 15.6.27406.0

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c8b31f033b9c04871e57836dd263071d87a24fda
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953378"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070109"
 ---
 # <a name="customize-startup"></a>自訂啟動
 
@@ -65,7 +65,7 @@ ms.locfileid: "56953378"
 1. 在 [自訂起始頁] 清單中，選擇您要的頁面。
 
 > [!TIP]
-> 如果自訂起始頁中的錯誤導致 Visual Studio 當掉，請以安全模式啟動 Visual Studio，然後設定它使用預設起始頁。 請參閱 [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)。
+> 如果自訂起始頁中的錯誤導致 Visual Studio 當機，請以安全模式開啟 Visual Studio，然後將它設定為使用預設起始頁。 請參閱 [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)。
 
 ## <a name="see-also"></a>另請參閱
 

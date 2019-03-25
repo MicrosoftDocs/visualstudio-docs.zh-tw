@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 340d376308c9647895f814dbf6d3d438a98d75e2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843804"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069680"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 
@@ -96,7 +96,7 @@ ms.locfileid: "56843804"
 
  ![具有 Javascript 的 Multi-Device Hybrid App](../cross-platform/media/multidevicehybridapps.png "具有 Javascript 的 Multi-Device Hybrid App")
 
- 若要開始，請安裝 Visual Studio 2017，然後在設定期間選擇 [使用 JavaScript 進行行動開發] 功能。 Cordova 工具會自動安裝建置多重平台應用程式所需的所有協力廠商軟體。
+ 首先，安裝 Visual Studio，然後在設定期間選擇 [使用 JavaScript 進行行動開發] 功能。 Cordova 工具會自動安裝建置多重平台應用程式所需的所有協力廠商軟體。
 
  安裝延伸模組之後，請開啟 Visual Studio 並建立**空白應用程式 (Apache Cordova)** 專案。 然後，您可以使用 JavaScript 或 TypeScript 來開發應用程式。 您也可以加入外掛程式以擴充應用程式的功能，而外掛程式中的 API 會在您撰寫程式碼時出現在 IntelliSense 中。
 

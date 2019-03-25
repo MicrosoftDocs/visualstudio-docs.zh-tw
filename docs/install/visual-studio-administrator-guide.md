@@ -15,20 +15,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b30a104afcbadc9397cc5c7bd79fa746b0e69a9f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710106"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983815"
 ---
-# <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 系統管理員指南
+# <a name="visual-studio-administrator-guide"></a>Visual Studio 系統管理員指南
 
 在企業環境中，系統管理員從網路共用或是使用系統管理軟體將安裝部署給終端使用者，是很常見的。 我們已設計 Visual Studio 安裝程式引擎來支援企業部署，讓系統管理員可以建立網路安裝位置、預先設定安裝預設值、在安裝程序期間部署產品金鑰，以及在成功推出後管理產品更新。 此系統管理員指南針對網路環境中的企業部署，提供以案例為基礎的指導方針。
 
-## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>在企業環境中部署 Visual Studio 2017
+## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>在企業環境中部署 Visual Studio
 
-只要每部目標電腦符合[最小安裝需求](/visualstudio/productinfo/vs2017-system-requirements-vs)，您就可以將 Visual Studio 2017 部署到用戶端工作站。 不論您是透過 System Center 這類軟體還是透過批次檔進行部署，一般都會想要執行下列步驟︰
+只要每部目標電腦符合[最小安裝需求](/visualstudio/productinfo/vs2017-system-requirements-vs)，您就可以將 Visual Studio 部署到用戶端工作站。 不論您是透過 System Center 這類軟體還是透過批次檔進行部署，一般都會想要執行下列步驟︰
 
 1. 在網路位置[建立包含 Visual Studio 產品檔案的網路共用](create-a-network-installation-of-visual-studio.md)。
 
@@ -47,14 +47,14 @@ ms.locfileid: "56710106"
 8. 定期執行您在步驟 1 所使用的命令來新增更新過的元件，以[使用 Visual Studio 最新更新來重新整理網路位置](update-a-network-installation-of-visual-studio.md)。
 
 > [!IMPORTANT]
-> 請注意，從網路共用安裝將會「記住」它們的來源位置。 這表示用戶端電腦的修復可能需要回到用戶端原先安裝開始處的網路共用。 請小心選擇網路位置，以便它能與您預期在組織中執行 Visual Studio 2017 用戶端的存留期一致。
+> 請注意，從網路共用安裝將會「記住」它們的來源位置。 這表示用戶端電腦的修復可能需要回到用戶端原先安裝開始處的網路共用。 請謹慎選擇網路位置，以便它能與您預期在組織中執行 Visual Studio 用戶端的存留期一致。
 
 ## <a name="use-visual-studio-tools"></a>使用 Visual Studio Tools
 
 我們提供數種工具來協助您[偵測和管理用戶端電腦上已安裝的 Visual Studio 執行個體](tools-for-managing-visual-studio-instances.md)。
 
 > [!TIP]
-> 除了系統管理員指南中的文件外，另外一個有關 Visual Studio 2017 安裝的實用資訊來源是 [Visual Studio Setup Archives](https://devblogs.microsoft.com/setup/tag/vs2017/) (Visual Studio 安裝封存)。
+> 除了系統管理員指南中的文件外，另外一個有關 Visual Studio 安裝的實用資訊來源是 [Visual Studio 安裝封存](https://devblogs.microsoft.com/setup/tag/vs2017/) \(英文\)。
 
 ## <a name="specify-customer-feedback-settings"></a>指定客戶回函設定
 
@@ -74,8 +74,8 @@ ms.locfileid: "56710106"
 
 ## <a name="see-also"></a>另請參閱
 
-* [安裝 Visual Studio 2017](install-visual-studio.md)
-* [使用命令列參數安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [安裝 Visual Studio](install-visual-studio.md)
+* [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [命令列參數範例](command-line-parameter-examples.md)
   * [工作負載與元件識別碼參考](workload-and-component-ids.md)
 * [建立 Visual Studio 的網路型安裝](create-a-network-installation-of-visual-studio.md)
