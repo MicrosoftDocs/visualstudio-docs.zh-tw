@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f35f9dfddeb905277084de9f20d46daf43d69f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dd44ef0a239f85078856c785ea4b5e2e6050b46e
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913859"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194881"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>選項對話方塊、專案和方案、VC++ 專案設定
 此對話方塊可讓您定義與記錄、效能和支援檔案類型相關的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 組建和專案設定。
@@ -93,5 +93,5 @@ ms.locfileid: "55913859"
 
 ## <a name="see-also"></a>另請參閱
 
-- [建置 C/C++ 程式](/cpp/build/building-c-cpp-programs)
+- [建置 C/C++ 程式](/cpp/build/projects-and-build-systems-cpp)
 - [C/C++ 建置參考](/cpp/build/reference/c-cpp-building-reference)

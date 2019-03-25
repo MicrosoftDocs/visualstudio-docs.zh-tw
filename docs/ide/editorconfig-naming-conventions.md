@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6844c20a5be1a963b37aa1e24536d4d33565405
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908188"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983270"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
 
@@ -73,18 +73,19 @@ ms.locfileid: "55908188"
 - private
 - protected
 - protected\_internal 或 protected_friend
+- private\_protected
 - 本機
 
 > [!NOTE]
 > 如果存取範圍不適用於您設定為目標的符號，則請勿將存取層級指定為命名慣例的一部分。 例如，參數沒有存取層級。 如果您為參數命名慣例指定存取層級，命名規則將不會正確運作。
 
-### <a name="symbol-modifiers"></a>符號修飾詞
+### <a name="symbol-modifiers-optional"></a>符號修飾詞 (選擇性)
 
 描述您要套用命名規則之符號的修飾詞。請使用下列格式來指定一個屬性名稱：
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-以下清單會顯示允許的值，您可以逗號分隔來指定多個值。 命名規則只會比對擁有 `required_modifiers` 中指定所有修飾詞的簽章。 如果您省略此屬性時，則會使用空白清單的預設值；換句話說，不需要比對特定修飾詞。 這表示不論是否套用此規則，符號的修飾詞都不會造成影響。
+以下清單會顯示允許的值 (以逗號分隔多個值)：
 
 - `abstract` 或 `must_inherit`
 - `async`
@@ -95,7 +96,10 @@ ms.locfileid: "55908188"
    > [!NOTE]
    > 如果您有 `static` 或 `shared` 符號的命名規則，則它也套用到 `const` 符號，因為它們是隱含靜態的。 如果您不想要 `static` 命名規則套用到 `const` 符號，請針對 `const` 符號建立個別的命名規則。
 
-`required_modifiers` 是選擇性屬性。 若您省略這個屬性，您的命名規則將會套用至所有修飾詞。
+命名規則會比對擁有 `required_modifiers` 中指定之「所有」修飾詞的簽章。 如果您省略此屬性時，則會使用空白清單的預設值；換句話說，不需要比對特定修飾詞。 這表示不論是否套用此規則，符號的修飾詞都不會造成影響。
+
+> [!TIP]
+> 不要為 `required_modifiers` 指定 `*` 的值。 相反地，只需完全省略 `required_modifiers` 屬性，而您的命名規則將套用至任何種類的修飾詞。
 
 ## <a name="style"></a>樣式
 

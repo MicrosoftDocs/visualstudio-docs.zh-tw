@@ -1,22 +1,18 @@
 ---
 layout: LandingPage
 title: 為您的應用程式偵錯 |Microsoft Docs
-description: 了解如何使用 Visual Studio 2017 以您選擇的語言，針對您的平台和裝置進行應用程式、服務及工具的偵錯。
+description: 了解如何使用 Visual Studio，來以您的語言為平台和服務偵錯應用程式、服務和工具。
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: 81ecddbfdb3f1b36a28156686e5d07ff4e6ee558
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156029"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio 偵錯
 
 Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出問題。 偵錯工具可以與所有 Visual Studio 程式設計語言及其相關程式庫搭配使用。 透過偵錯工具，您可以中斷程式執行，以檢查程式碼、檢查與編輯變數、檢視暫存器、查看由原始程式碼所建立的指令，以及檢視應用程式所使用的記憶體空間。
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>

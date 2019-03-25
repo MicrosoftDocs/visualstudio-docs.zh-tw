@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15ccf8ab1b3f2fa97faaae5b97c47ac3179a672d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0c80ee3cebe003eff7248626f0d8e27b3c179453
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679381"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323801"
 ---
 # <a name="language-service-and-editor-extension-points"></a>語言服務及編輯器擴充點
 編輯器會提供您可以擴充為 Managed Extensibility Framework (MEF) 元件組件，其中包括大部分的語言服務功能的擴充點。 這些是主要擴充點類別：
@@ -260,7 +260,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 
   下列範例會顯示標記者提供者匯出屬性。
 
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>下列種類的標記都已內建：
+\<CodeContentPlaceHolder > 8</CodeContentPlaceHolder>下列種類的標記都已內建：
 
 - <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>： 與相關聯<xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>。
 

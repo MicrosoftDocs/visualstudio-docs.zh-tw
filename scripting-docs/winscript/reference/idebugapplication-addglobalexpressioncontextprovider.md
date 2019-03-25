@@ -1,8 +1,7 @@
 ---
-title: IDebugApplication::AddGlobalExpressionContextProvider |Microsoft Docs
+title: IDebugApplication::AddGlobalExpressionContextProvider | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a17e952ef48041d8354753d27d7c40fef4599d55
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 278811ae7c7f853396efb5f41a92a5350176943a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54086823"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58144936"
 ---
 # <a name="idebugapplicationaddglobalexpressioncontextprovider"></a>IDebugApplication::AddGlobalExpressionContextProvider
 將此應用程式全域運算式的內容提供者。  

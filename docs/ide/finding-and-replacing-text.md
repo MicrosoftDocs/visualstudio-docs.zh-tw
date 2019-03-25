@@ -30,16 +30,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bda0ccea91089957b9aa6bea97bb5b7b592b20
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5fc437d1365fe58c8eb7ae725196c4ad3370836
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937444"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323730"
 ---
 # <a name="find-and-replace-text"></a>尋找和取代文字
 
-您可以在 Visual Studio 編輯器中使用[尋找和取代](#find-and-replace-control)或[檔案中尋找/取代](#find-in-files-and-replace-in-files)來尋找和使用文字。 Visual Studio 2017 15.8 中有一項新功能，讓您可以使用「[多重游標選取](#multi-caret-selection)」，來尋找和取代模式的「某些」執行個體。
+您可以在 Visual Studio 編輯器中使用 [尋找和取代](#find-and-replace-control) (**Ctrl**+**F** 或 **Ctrl**+**H**) 或 [檔案中尋找/取代](#find-in-files-and-replace-in-files) (**Ctrl**+**Shift**+**F** 或 **Ctrl**+**Shift**+**H**) 來尋找和取代文字。 您也可以使用[多重游標選取](#multi-caret-selection)，僅尋找和取代模式的「某些」執行個體。
 
 > [!TIP]
 > 如果您要重新命名程式碼符號 (例如變數和方法)，比起使用尋找和取代，最好是*[重構](../ide/reference/rename.md)* 它們。 重構是智慧型功能，可了解範圍，而尋找和取代則會盲目地取代所有執行個體。
@@ -53,7 +53,10 @@ ms.locfileid: "55937444"
 
 ## <a name="find-and-replace-control"></a>尋找和取代控制項
 
-[尋找和取代] 控制項會出現在程式碼編輯器視窗的右上角。 [尋找和取代] 控制項會立即反白顯示目前文件中每個出現的指定搜尋字串。 您可以選擇搜尋控制項上的 [找下一個] 按鈕或 [找上一個] 按鈕，以從第一個出現位置巡覽至另一個出現位置。
+- 按 **Ctrl**+**F**，其為「尋找」目前檔案中字串的快速鍵。
+- 按 **Ctrl**+**H**，其為「尋找和取代」目前檔案中字串的快速鍵。
+
+[尋找和取代] 控制項會出現在程式碼編輯器視窗的右上角。 它會立即醒目提示目前文件中每個出現的指定搜尋字串。 您可以選擇搜尋控制項上的 [找下一個] 按鈕或 [找上一個] 按鈕，以從第一個出現位置巡覽至另一個出現位置。
 
 ![Visual Studio 中的尋找和取代](media/find-and-replace-box.png)
 
@@ -69,7 +72,10 @@ ms.locfileid: "55937444"
 
 ## <a name="find-in-files-and-replace-in-files"></a>檔案中尋找和檔案中取代
 
-[檔案中尋找/取代] 的運作方式與 [尋找和取代] 控制項類似，不同之處在於您可以定義搜尋範圍。 您不只可以在編輯器中搜尋目前開啟的檔案，還可以搜尋所有開啟的文件、整個方案、目前專案以及選取的資料夾集。 您也可以依副檔名進行搜尋。 若要存取 [檔案中尋找/取代] 對話方塊，請選取 [編輯] 功能表上的 [尋找和取代] 或按 **Ctrl+Shift+F**。
+- 按 **Ctrl**+**Shift**+**F**，其為「尋找」 多個檔案中字串的快速鍵。
+- 按 **Ctrl**+**Shift**+**H**，其為「尋找和取代」多個檔案中字串的快速鍵。
+
+[檔案中尋找/取代] 的運作方式與 [尋找和取代] 控制項類似，不同之處在於您可以定義搜尋範圍。 您不只可以在編輯器中搜尋目前開啟的檔案，還可以搜尋所有開啟的文件、整個方案、目前專案以及選取的資料夾集。 您也可以依副檔名進行搜尋。 若要存取 [檔案中尋找/取代] 對話方塊，請選取 [編輯] 功能表上的 [尋找和取代] (或按 **Ctrl**+**Shift**+**F**)。
 
 ![Visual Studio 中的檔案中尋找](media/find-in-files-box.png)
 
@@ -93,7 +99,7 @@ ms.locfileid: "55937444"
 > [!NOTE]
 > 本節適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[區塊選取](/visualstudio/mac/block-selection)。
 
-**Visual Studio 2017 15.8 版的新功能**
+**已在 Visual Studio 2017 15.8 版引進**
 
 使用「多重游標選取」，同時對兩處以上進行相同的編輯。 舉例來說，您可以同時在多個位置插入相同的文字或修改現有文字。
 

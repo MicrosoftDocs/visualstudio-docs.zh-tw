@@ -2,7 +2,6 @@
 title: BREAKRESUMEACTION 列舉 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3186ac39353d11f327f7940ae5fc03ae2238ddd9
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: e5c79aacc64eb57282bf09f7e4673980396b37ea
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090464"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154643"
 ---
 # <a name="breakresumeaction-enumeration"></a>BREAKRESUMEACTION 列舉
 描述從中斷點繼續執行的方式。  

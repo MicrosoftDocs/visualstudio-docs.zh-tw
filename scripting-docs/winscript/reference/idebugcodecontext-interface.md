@@ -2,7 +2,6 @@
 title: IDebugCodeContext 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0840bf0a77a671bd2a37c49db48d1eb1cd5fa222
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: f3d3d1834d176a323778ae9b7d215951d1a26bb4
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349162"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152573"
 ---
 # <a name="idebugcodecontext-interface"></a>IDebugCodeContext 介面
 抽象型別，表示可執行程式碼中的位置。  

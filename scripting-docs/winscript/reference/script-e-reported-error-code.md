@@ -2,7 +2,6 @@
 title: SCRIPT_E_REPORTED 錯誤碼 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a4ced10b24d80b30ddacd2b2d7c4c04312d576a
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 4466869f4da6a0efe20955af6e6ef35ca9479f6c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349201"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58150387"
 ---
 # <a name="scriptereported-error-code"></a>SCRIPT_E_REPORTED 錯誤碼
 指令碼引擎已報告未處理的例外狀況，以透過主機[IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)。 主應用程式可以忽略此錯誤。  

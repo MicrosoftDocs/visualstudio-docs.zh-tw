@@ -11,7 +11,7 @@ items:
     - name: 專案與解決方案概觀
       href: tutorial-projects-solutions.md
     - name: 更多 Visual Studio 功能
-      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
   - name: 建立應用程式
     items:
     - name: 建立您的第一個 C# 應用程式
@@ -25,6 +25,8 @@ items:
     expanded: true
   - name: 了解 Visual Studio
     items:
+    - name: 從存放庫開啟專案
+      href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: 撰寫和編輯程式碼
       href: tutorial-editor.md
     - name: 編譯和建置
@@ -32,15 +34,15 @@ items:
     - name: 偵錯程式碼
       href: ../csharp/tutorial-debugger.md
     - name: 單元測試
-      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: 部署您的專案
       href: ../../deployment/index.md
     - name: 存取資料
-      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     expanded: true
-ms.openlocfilehash: cc0478d8d9084d37f1c58670e2815ebfd0ee6f1c
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 4e759c9b344f71b3c4c47170a23854b41ad8c23a
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222697"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323616"

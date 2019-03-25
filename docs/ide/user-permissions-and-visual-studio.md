@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af1caf11a871cee04d4baa4b2efc750e0603f626
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946058"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222853"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 
@@ -50,11 +50,25 @@ ms.locfileid: "55946058"
 > [!NOTE]
 > 這些指示適用於 Windows 10。 其他 Windows 版本的指示與這些相似。
 
+::: moniker range="vs-2017"
+
 1. 開啟 [開始] 功能表，然後捲動至 Visual Studio 2017。
 
-1. 從 **Visual Studio 2017** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多] > [以系統管理員身分執行]。
+1. 從 **Visual Studio 2017** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多] >[以系統管理員身分執行]。
 
    在 Visual Studio 啟動時，**(系統管理員)** 會顯示在標題列的產品名稱之後。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 開啟 [開始] 功能表，然後捲動至 Visual Studio 2019。
+
+1. 從 **Visual Studio 2019** 的操作功能表 (按一下滑鼠右鍵)，選取 [更多] >[以系統管理員身分執行]。
+
+   在 Visual Studio 啟動時，**(系統管理員)** 會顯示在標題列的產品名稱之後。
+
+::: moniker-end
 
 您也可以將應用程式捷徑修改為一律以系統管理權限執行。
 

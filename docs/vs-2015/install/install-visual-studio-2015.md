@@ -19,12 +19,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecb6e2ef6927638aa06bbb04a09f64f8ca4c4a46
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ddc63faae9a23485badb57f0e50ae8d46dd94b91
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799173"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873690"
 ---
 # <a name="install-visual-studio-2015"></a>安裝 Visual Studio 2015
 
@@ -38,11 +38,11 @@ ms.locfileid: "54799173"
 
 |||
 |------------------|----------------|
-|![下載 Visual Studio](../install/media/downloads.png "下載") |**下載**若要安裝 Visual Studio 2015，您可以下載產品可執行檔[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)頁面 （需要訂用帳戶），或使用盒裝產品的安裝媒體。 [深入了解如何下載目前或先前版本的 Visual Studio](https://www.visualstudio.com/vs/older-downloads/)。|
-|![深入了解功能](../install/media/features.png "功能") |**功能**若要深入了解 Visual Studio 2015 中的功能，請參閱版本資訊[RTM](https://www.visualstudio.com/news/vs2015-vs)， [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs)， [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs)，以及[Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)。|
+|![下載 Visual Studio](../install/media/downloads.png "下載") |**下載**： 若要安裝 Visual Studio 2015，您可以下載產品可執行檔[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)頁面 （需要訂用帳戶），或使用盒裝產品的安裝媒體。 [深入了解如何下載目前或先前版本的 Visual Studio](https://www.visualstudio.com/vs/older-downloads/)。|
+|![深入了解功能](../install/media/features.png "功能") |**功能**： 若要深入了解 Visual Studio 2015 中的功能，請參閱版本資訊[RTM](https://www.visualstudio.com/news/vs2015-vs)， [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs)， [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs)，以及[Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)。|
 |![了解什麼是每個 SKU](../install/media/sku.png "Sku") |**SKU**：若要了解每一個版本的 Visual Studio 2015 有哪些可用功能，請參閱 [Compare Visual Studio Offerings](http://go.microsoft.com/fwlink/?LinkID=242142) (比較 Visual Studio 供應項目) 頁面。|
 |![檢視系統需求](../install/media/system-requirements.png "系統需求") |**系統需求**： 若要檢視每個版本的 Visual Studio 2015 的系統需求，請參閱[Visual Studio 2015 相容性](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs)頁面。|
-|![找出產品金鑰](../install/media/product-keys.png "產品金鑰") |**產品金鑰**若要找出產品金鑰，請參閱[How to:尋找 Visual Studio 產品金鑰](../install/how-to-locate-the-visual-studio-product-key.md)主題。|
+|![找出產品金鑰](../install/media/product-keys.png "產品金鑰") |**產品金鑰**： 若要找出產品金鑰，請參閱[如何： 尋找 Visual Studio 產品金鑰](../install/how-to-locate-the-visual-studio-product-key.md)主題。|
 |![了解授權](../install/media/licensing.png "授權") |**授權**： 若要了解授權適用於個人或企業客戶的選項，請參閱[Visual Studio 和 MSDN 授權](https://www.microsoft.com/download/details.aspx?id=13350)白皮書 （英文）。|
 
 ##  <a name="custom"></a> 預設與自訂設定
@@ -108,7 +108,7 @@ ms.locfileid: "54799173"
 
  如果 Windows Server 2008 R2 是在啟用 Hyper-V 的情況下使用加速圖形卡來執行，您可能會感受到系統速度變慢。
 
- 如需詳細資訊，請參閱 Microsoft 網站上的下列網頁：[當 Windows Server 2008，視訊效能可能會降低或 Windows Server 2008 R2 電腦已啟用 HYPER-V 角色且有安裝加速的顯示卡](http://go.microsoft.com/fwlink/?LinkID=231084)。
+ 如需詳細資訊，請參閱 Microsoft 網站的下列網頁： [當 Windows Server 2008 或 Windows Server 2008 R2 電腦已啟用 Hyper-V 角色且有安裝加速顯示卡時，視訊效能可能會降低](http://go.microsoft.com/fwlink/?LinkID=231084)。
 
  **使用 HYPER-V 模擬裝置**
 
@@ -143,7 +143,7 @@ ms.locfileid: "54799173"
    如需如何安裝或部署離線說明的詳細資訊，請參閱[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)。
 
 ##  <a name="serviceReleases"></a> 檢查服務版本與產品更新
- 因為並非所有延伸模組都相容，從舊版升級時，Visual Studio 不會自動升級延伸模組。 您必須重新安裝擴充功能[Visual Studio 元件庫](http://go.microsoft.com/fwlink/?LinkId=178891)或來自軟體發行者。
+ 因為並非所有延伸模組都相容，從舊版升級時，Visual Studio 不會自動升級延伸模組。 您必須重新安裝擴充功能[Visual Studio Marketplace](https://marketplace.visualstudio.com/)或來自軟體發行者。
 
 #### <a name="to-automatically-check-for-service-releases"></a>自動檢查版本更新服務
 
@@ -184,7 +184,7 @@ ms.locfileid: "54799173"
 
 ##  <a name="relatedTopics"></a> 相關主題
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[建立 Visual Studio 的離線安裝](../install/create-an-offline-installation-of-visual-studio.md)|描述如何安裝 Visual Studio，當您未連線到網際網路。
 |[並存安裝 Visual Studio 版本](../install/install-visual-studio-versions-side-by-side.md)|提供如何在同一部電腦上安裝多個 Visual Studio 版本的相關資訊。|

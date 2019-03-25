@@ -8,12 +8,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07d97707034946f4711ac7df92c6a0f0743d13fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+monikerRange: vs-2017
+ms.openlocfilehash: 0353249712fefc0052a27469b075c52b9fdd5d06
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612656"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982905"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 中的新功能
 

@@ -12,22 +12,26 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 3094d6fbfa561d995c5cc72e0a6e56fbdd47ee63
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 193343c8fce810280f380b11a72b7cb6892ef18e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317675"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223754"
 ---
 # <a name="optimize-visual-studio-performance"></a>最佳化 Visual Studio 效能
 
 本文提供在發現 Visual Studio 執行速度變慢時要嘗試的一些建議。 如需如何改善效能的建議，您也可以查看 [Visual Studio 效能祕訣和訣竅](../ide/visual-studio-performance-tips-and-tricks.md)。
 
-## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>升級至 Visual Studio 2017 15.6 版或更新版本
+## <a name="upgrade-visual-studio"></a>升級 Visual Studio
 
-如果您目前使用 Visual Studio 2015，請免費下載 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 簽出其改善的效能。 Visual Studio 2017 中的解決方案載入速度快兩或三倍，而其他領域的效能也會改善。 Visual Studio 2017 與 Visual Studio 2015 並存相容，因此您試用並不會遺失任何項目。
+如果您目前使用 Visual Studio 2015，請免費下載 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 或 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 以查看其改善的效能。 其方案載入速度比 Visual Studio 2015 快二到三倍，而其他領域的效能亦有改善。 Visual Studio 2015 與 Visual Studio 2017 和 Visual Studio 2019 並存相容，試用看看並不會造成任何損失。
 
-如果您目前使用 Visual Studio 2017，則請確定執行 15.6 版或更新版本。 資料顯示 15.6 版中的解決方案載入速度快兩或三倍。 在[這裡](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)下載。
+::: moniker range="vs-2017"
+
+如果您已在使用 Visual Studio 2017，請確認執行的是 15.6 版或更新版本。 資料顯示 15.6 版中的解決方案載入速度快兩或三倍。 在[這裡](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)下載。
+
+::: moniker-end
 
 ## <a name="extensions-and-tool-windows"></a>延伸模組和工具視窗
 
@@ -45,7 +49,7 @@ ms.locfileid: "56317675"
 
 ## <a name="help-us-improve"></a>協助我們改善
 
-您的意見反應可協助我們改善。 使用 [回報問題] 功能，「記錄」追蹤，並將它傳送給我們。 選取 [快速啟動] 旁的意見反應圖示，或從功能表列中選取 [說明] > [傳送意見反應] > [回報問題]。 如需詳細資訊，請參閱[如何回報 Visual Studio 2017 的問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)。
+您的意見反應可協助我們改善。 使用 [回報問題] 功能，「記錄」追蹤，並將它傳送給我們。 選取 [快速啟動] 旁的意見反應圖示，或從功能表列中選取 [說明] > [傳送意見反應] > [回報問題]。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](../ide/how-to-report-a-problem-with-visual-studio.md)。
 
 ## <a name="see-also"></a>另請參閱
 

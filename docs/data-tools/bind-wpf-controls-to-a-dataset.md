@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b8f5f701299d08d79147a4d2d1932f3f23c011b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939160"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069862"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>將 WPF 控制項繫結至資料集
 
@@ -56,15 +56,29 @@ ms.locfileid: "55939160"
 
 建立新的 WPF 專案，以顯示產品記錄。
 
-1. 啟動 Visual Studio。
+::: moniker range="vs-2017"
 
-2. 在 [檔案] 功能表上選取 [新增] > [專案]。
+1. 開啟 Visual Studio。
+
+2. 在 [檔案] 功能表上，選取 [新增] > [專案]。
 
 3. 展開 [Visual Basic] 或 [Visual C#]，然後選取 **Windows**。
 
-4. 選取 [WPF 應用程式] 專案範本。
+4. 選取  **WPF 應用程式**專案範本。
 
 5. 在 **名稱**方塊中，輸入**AdventureWorksProductsEditor** ，然後選取**確定**。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 開啟 Visual Studio。
+
+2. 在 [開始] 視窗中，選擇**建立新的專案**。
+
+3. 搜尋C# **WPF 應用程式**專案範本，並遵循步驟來建立專案，命名專案**AdventureWorksProductsEditor**。
+
+::: moniker-end
 
    Visual Studio 隨即建立 AdventureWorksProductsEditor 專案。
 

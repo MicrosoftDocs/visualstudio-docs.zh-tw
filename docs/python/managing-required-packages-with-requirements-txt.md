@@ -1,7 +1,7 @@
 ---
 title: 使用 requirements.txt 檔案管理套件相依性
 description: requirements.txt 檔案會描述專案的相依性。 如果您收到包含 requirements.txt 檔案的專案，就可以輕鬆地在單一步驟中安裝那些相依性。
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2026c80141c29e14ca1d7c8f1f7e1bc5cecd2e32
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88cd2ee237a92aff4ca6f641556b8003be550c3d
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924340"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194836"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>使用 requirements.txt 管理必要套件
 
@@ -25,11 +25,13 @@ ms.locfileid: "55924340"
 
 - 若您已載入包含 *requirements.txt* 的專案，並想要安裝該檔案中列出的所有套件，請展開 [方案總管] 中的 [Python 環境] 節點，然後以滑鼠右鍵按一下環境節點，並選取 [從 requirements.txt 安裝]：
 
-    ![Install from requirements.txt (從 requirements.txt 安裝)](media/environments-requirements-txt-install.png)
+    ![Install from requirements.txt (從 requirements.txt 安裝)](media/environments/environments-requirements-txt-install.png)
+
+- 如果想要在虛擬環境中安裝相依項目，請先建立並啟動該環境，然後使用 [從 requirements.txt 安裝] 命令。 如需建立虛擬環境的詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
 
 - 若您已在環境中安裝所有必要套件，可以在 [方案總管] 中的環境上按一下滑鼠右鍵，然後選取 [產生 requirements.txt] 以建立必要的檔案。 如果該檔案已經存在，系統會提示您如何更新它：
 
-    ![更新 requirements.txt 選項](media/environments-requirements-txt-replace.png)
+    ![更新 requirements.txt 選項](media/environments/environments-requirements-txt-replace.png)
 
   - [Replace entire file (取代整個檔案)] 會移除所有已存在的項目、註解及選項。
   - [重新整理現有項目] 會偵測套件需求並更新版本規範，以符合您目前已安裝的版本。

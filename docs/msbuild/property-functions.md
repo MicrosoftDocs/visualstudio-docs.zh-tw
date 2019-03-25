@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc410e02fe43bebd4668dd78280308e38dcc857
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623056"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737041"
 ---
 # <a name="property-functions"></a>屬性函式
 
@@ -166,7 +166,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |int BitwiseXor(int first, int second)|對第一和第二個整數 (第一 ^ 第二) 執行位元 `XOR`。|
 |int BitwiseNot(int first)|執行位元 `NOT` (~第一)。|
 |bool IsOsPlatform(string platformString)|指定目前的作業系統平台是否為 `platformString`。 `platformString` 必須是 <xref:System.Runtime.InteropServices.OSPlatform> 的成員。|
-|bool IsOSUnixLike|如果目前的作業系統是 UNIX 系統，則為 true。|
+|bool IsOSUnixLike()|如果目前的作業系統是 UNIX 系統，則為 true。|
 |string NormalizePath(params string[] path)|取得所提供路徑的規範化完整路徑，並確保它包含目前作業系統的正確目錄分隔符號字元。|
 |string NormalizeDirectory(params string[] path)|取得所提供目錄的規範化完整路徑，並確保它包含目前作業系統的正確目錄分隔符號字元，且後面有斜線。|
 |string EnsureTrailingSlash(string path)|如果指定的路徑後面沒有斜線，請新增一個。 如果此路徑是空字串，請不要修改它。|

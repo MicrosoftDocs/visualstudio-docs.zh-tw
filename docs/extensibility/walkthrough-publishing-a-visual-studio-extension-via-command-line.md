@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aebd1cbd46eeaf80d165140dc58c5e81a0e02b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695368"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983373"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>逐步解說：發行的 Visual Studio 擴充功能，透過命令列
 
@@ -290,7 +290,7 @@ This is test extension.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>若要從電腦移除擴充功能
 
-1. 在 Visual Studio 中，在**工具**功能表上，按一下 **延伸模組和更新...**.
+1. 在 Visual Studio 中，在**工具**功能表上，按一下**擴充功能和更新**。
 
 2. 選取 「 MyVsixExtension"，然後按一下**解除安裝**。 然後將排程延伸模組解除安裝。
 

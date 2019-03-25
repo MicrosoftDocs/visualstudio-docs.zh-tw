@@ -3,23 +3,25 @@ items:
   href: index.yml
   items:
   - name: 總覽
-    href: /dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker?toc=/visualstudio/containers/toc.json&bc=/visualstudio/containers/breadcrumb/toc.json
+    href: visual-studio-tools-for-docker.md
   - name: 快速入門：Visual Studio 中的 Docker
     href: docker-tools.md
   - name: 教學課程：具有 Docker Compose 的多容器應用程式
     href: tutorial-multicontainer.md
-  - name: 在本機 Docker 容器內針對應用程式進行偵錯
+  - name: 教學課程：Visual Studio 中的 Kubernetes
+    href: tutorial-kubernetes-tools.md
+  - name: 對本機 Docker 容器中的應用程式偵錯
     href: vs-azure-tools-docker-edit-and-refresh.md
-  - name: 使用 Visual Studio 將 ASP.NET 容器部署到容器登錄
+  - name: 部署到容器登錄
     href: vs-azure-tools-docker-hosting-web-apps-in-docker.md
-  - name: 使用 VirtualBox 設定 Docker 主機
-    href: vs-azure-tools-docker-setup.md
-  - name: 針對使用 Docker 進行 Visual Studio 2017 開發問題進行疑難排解
+  - name: 部署到 Azure App Service
+    href: docker-deploy-app-service.md
+  - name: 對使用 Docker 進行的 Visual Studio 開發進行疑難排解
     href: vs-azure-tools-docker-troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: 6b2ede8520ff6919c5bbd370e320bdb661fa487e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 75905587ed44c64495610bd76c8dab63664c2bb2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223334"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354813"

@@ -1,19 +1,21 @@
 ---
-title: XML 結構描述對話方塊
+title: XML 結構描述
 ms.date: 11/04/2016
 ms.topic: reference
+f1_keywords:
+- vs.xmleditor.schemasdialog
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed45f6444eb76d89488e8d9b27d1725c217d6fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5323582bfe945bc031b9fd02fcf96bb615bcceb
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930868"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57524919"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML 結構描述 對話方塊
 
@@ -22,15 +24,16 @@ ms.locfileid: "55930868"
 您可以存取**XML 結構描述**對話方塊中，按一下**結構描述**按鈕，在 [文件屬性] 視窗中，或選取**結構描述**從**XML**功能表。
 
 ## <a name="uielement-list"></a>UIElement 清單
- **使用**
 
- 選取如何使用 XML 結構描述。
+**使用**
 
--   **自動**。 目前的文件沒有使用這個結構描述，但是可用於自動關聯。 如果 XML 文件宣告符合此結構描述之 `targetNamespace` 的命名空間，將會自動關聯該結構描述，而且會包含在結構描述集中。
+選取如何使用 XML 結構描述。
 
--   **使用此結構描述**。 此結構描述正由目前的文件所使用。 使用者已經明確要求藉由按一下此結構描述來使用該結構描述，或者讓結構描述根據相符的 `targetNamespace` 自動關聯。
+- **自動**。 目前的文件沒有使用這個結構描述，但是可用於自動關聯。 如果 XML 文件宣告符合此結構描述之 `targetNamespace` 的命名空間，將會自動關聯該結構描述，而且會包含在結構描述集中。
 
--   **請勿使用選取的結構描述**。 即使結構描述擁有相符的 `targetNamespace`，目前的文件也不會使用此結構描述。 在結構描述快取或方案中有一個以上相同結構描述的版本時，這個設定對於解決衝突可能很實用。
+- **使用此結構描述**。 此結構描述正由目前的文件所使用。 使用者已經明確要求藉由按一下此結構描述來使用該結構描述，或者讓結構描述根據相符的 `targetNamespace` 自動關聯。
+
+- **請勿使用選取的結構描述**。 即使結構描述擁有相符的 `targetNamespace`，目前的文件也不會使用此結構描述。 在結構描述快取或方案中有一個以上相同結構描述的版本時，這個設定對於解決衝突可能很實用。
 
 **目標命名空間**
 
@@ -50,6 +53,5 @@ ms.locfileid: "55930868"
 
 ## <a name="see-also"></a>另請參閱
 
-- [XML 編輯器元件](../xml-tools/xml-editor-components.md)
 - [如何：選取要使用的 XML 結構描述](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [結構描述快取](../xml-tools/schema-cache.md)

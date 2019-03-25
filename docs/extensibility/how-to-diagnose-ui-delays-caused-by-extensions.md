@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719479"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324340"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>HOW TO：診斷延伸模組造成的 UI 延遲
 
@@ -43,7 +43,7 @@ UI 無回應時，Visual Studio 開始分葉，並朝向基底，就會檢查 UI
 
 ## <a name="restart-vs-with-activity-logging-on"></a>登入的活動，並重新啟動 VS
 
-Visual Studio 可以產生 「 活動記錄 」 的問題進行偵錯時提供有用的資訊。 若要開啟活動記錄在 Visual Studio 中，啟動 Visual Studio 中使用`/log`命令列選項。 Visual Studio 啟動之後，活動記錄檔會儲存在下列位置：
+Visual Studio 可以產生 「 活動記錄 」 的問題進行偵錯時提供有用的資訊。 若要開啟活動記錄在 Visual Studio 中，開啟 Visual Studio 中使用`/log`命令列選項。 Visual Studio 啟動之後，活動記錄檔會儲存在下列位置：
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml

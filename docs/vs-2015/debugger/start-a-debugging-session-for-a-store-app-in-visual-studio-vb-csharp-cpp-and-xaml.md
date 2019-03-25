@@ -41,7 +41,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: cb49d00d069a86be83ec02b92efe4ac93fc706b3
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51802573"
@@ -51,7 +51,7 @@ ms.locfileid: "51802573"
 
 適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
 
- 本主題說明如何對於以 XAML 和 Visual  C++、Visual  C# 或 Visual  Basic撰寫的市集應用程式，開始偵錯工作階段。 要對應用程式進行偵錯，必須設定偵錯工作階段並選擇應用程式的啟動方式。  
+ 本主題說明如何對於以 XAML 和 Visual  C++、Visual C# 或 Visual Basic撰寫的市集應用程式，開始偵錯工作階段。 要對應用程式進行偵錯，必須設定偵錯工作階段並選擇應用程式的啟動方式。  
 
 > [!NOTE]
 >  如以 JavaScript 和 HTML 撰寫的應用程式，請參閱[啟動偵錯工作階段 (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)。  

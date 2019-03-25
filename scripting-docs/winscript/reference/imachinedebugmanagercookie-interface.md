@@ -2,7 +2,6 @@
 title: IMachineDebugManagerCookie Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d315f4ff99d8de6d4e29a40f3d5e134d1274062
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: fdc02498360f2e3900012166474c5d1e35abd6ee
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347082"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151046"
 ---
 # <a name="imachinedebugmanagercookie-interface"></a>IMachineDebugManagerCookie 介面
 類似於`IMachineDebugManager`介面，`IMachineDebugManagerCookie`介面支援偵錯 cookie。  

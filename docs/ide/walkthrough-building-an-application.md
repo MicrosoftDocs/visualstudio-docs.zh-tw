@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31806b05dc088da2e4cb5920f28a2e4cd04f0053
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bcd805c420b636225bc12c31afd79d47c6732d28
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954123"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323941"
 ---
 # <a name="walkthrough-build-an-application"></a>逐步解說：建置應用程式
 
@@ -129,7 +129,7 @@ ms.locfileid: "55954123"
 
    ![Visual Basic 建置警告、輸出視窗](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
-   如需詳細資訊，請參閱[＜How to：隱藏編譯器警告](../ide/how-to-suppress-compiler-warnings.md)。
+   如需詳細資訊，請參閱[如何：隱藏編譯器警告](../ide/how-to-suppress-compiler-warnings.md)。
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>在輸出視窗中顯示其他組建詳細資料
 
@@ -161,13 +161,13 @@ ms.locfileid: "55954123"
     > [!TIP]
     > 如果您選擇 **Ctrl**+**F** 鍵顯示 [尋找] 對話方塊，即可搜尋 [輸出] 視窗的內容。
 
-如需詳細資訊，請參閱[＜How to：檢視、儲存及設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
+如需詳細資訊，請參閱[如何：檢視、儲存及設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
 
 ## <a name="create-a-release-build"></a>建立發行組建
 
 您可以建置已針對交付最佳化的範例應用程式版本。 針對發行組建，您將指定在開始建置之前將可執行檔複製到網路共用。
 
-如需詳細資訊，請參閱[＜How to：變更組建輸出目錄](../ide/how-to-change-the-build-output-directory.md)和[在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)。
+如需詳細資訊，請參閱[如何：變更組建輸出目錄](../ide/how-to-change-the-build-output-directory.md)和[在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)。
 
 ### <a name="specify-a-release-build-for-visual-basic"></a>指定 Visual Basic 的發行組建
 
@@ -192,7 +192,7 @@ ms.locfileid: "55954123"
 
      ![[建置] 功能表上的 [建置方案] 命令](../ide/media/exploreide-buildsolution.png)
 
-### <a name="specify-a-release-build-for-c"></a>指定 C# 的發行組建 #
+### <a name="specify-a-release-build-for-c"></a>指定 C\# 的發行組建
 
 1. 開啟 [專案設計工具]。
 

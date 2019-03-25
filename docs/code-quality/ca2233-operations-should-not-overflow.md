@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 06c50ba5ecd8ef8e7eda9bbf2df9fdfa43fac0b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 013571a948c6c3fdca5da3c5c9278ca21e1f3698
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928942"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869105"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233:運算不應該發生溢位
 

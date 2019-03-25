@@ -1,8 +1,7 @@
 ---
-title: IDebugProperty::GetPropertyInfo |Microsoft Docs
+title: IDebugProperty::GetPropertyInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7db7403f4f7fc737145db8b4a395a865a82ef56
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 51cf7fae597d95b0d9098d6b2dc6950c2d06bfa0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095624"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151802"
 ---
 # <a name="idebugpropertygetpropertyinfo"></a>IDebugProperty::GetPropertyInfo
 取得值`IDebugProperty`說明一種方法或索引的屬性。  

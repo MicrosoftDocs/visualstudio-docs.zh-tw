@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4dff468ff42173e61c2f7006802c96a11120bd30
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d7a7ee6b8dec07284e35ff6807859136a1223fb7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769066"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868036"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "54769066"
   
 -   Visual Studio Ultimate、Visual Studio Premium 或 Visual Studio Professional 的授權複本  
   
--   您可以從 [Visual Studio](http://www.microsoft.com/visualstudio/eng/downloads#d-additional-software) 網站下載 .NET Framework 4.5.1 的複本。  
+-   您可以從下載.NET Framework 4.5.1 的複本[Microsoft](https://www.microsoft.com/download/details.aspx?id=40779)網站。  
   
 ##  <a name="InstallingSoftware"></a> 在電腦上安裝軟體  
  首先設定主機電腦，然後設定組建電腦。  

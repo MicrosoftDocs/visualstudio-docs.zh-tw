@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf7e7bf78baede7e964aeeed7484261fdab2ef7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924459"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873664"
 ---
 # <a name="analyze-and-model-your-architecture"></a>分析架構並製作架構模型
 
@@ -109,5 +109,5 @@ DSL 是您為特定目的所設計的標記法。 在 Visual Studio 中，通常
 
 ## <a name="see-also"></a>另請參閱
 
-- [新增功能](../modeling/what-s-new-for-design-in-visual-studio.md)
+- [Visual Studio 2017 中的模型化的最新消息](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps 與應用程式生命週期管理](/azure/devops/user-guide/devops-alm-overview)

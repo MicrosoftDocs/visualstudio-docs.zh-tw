@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c8d580ace576f7b2a4512e5bc91f83529fba77
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7547a6bb4670640733a64e7a60bfc92076df1460
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939576"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982970"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>如何在回應檔中定義設定
 
@@ -99,4 +99,4 @@ vs_enterprise.exe --in customInstall.json
 
 ## <a name="see-also"></a>另請參閱
 
-* [Visual Studio 2017 工作負載和元件識別碼](workload-and-component-ids.md)
+* [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)

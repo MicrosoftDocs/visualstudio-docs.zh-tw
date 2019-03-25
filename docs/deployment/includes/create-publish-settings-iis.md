@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MTE95
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57874486"
+---
 
 1. 關閉並重新開啟 IIS 管理主控台，以在 UI 中顯示更新的組態選項。
 
@@ -34,6 +42,6 @@
    * 如果您無法使用主機名稱連線到 Visual Studio 中的遠端主機 (在稍後步驟中)，請測試 IP 位址以取代主機名稱。
 
      > [!NOTE]
-     > 如果您要發行至 Azure VM 上執行的 IIS，您必須開啟 Web Deploy 及網路安全性群組中的 IIS 連接埠。 如需詳細資訊，請參閱[安裝及執行 IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic)。
+     > 如果您要發行至 Azure VM 上執行的 IIS，您必須開啟 Web Deploy 及網路安全性群組中的 IIS 連接埠。 如需詳細資訊，請參閱[安裝及執行 IIS](/azure/virtual-machines/windows/quick-create-portal#install-web-server)。
 
 5. 將此檔案複製到您執行 Visual Studio 的電腦。

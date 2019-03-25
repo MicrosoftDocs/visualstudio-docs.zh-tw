@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2ec13113d8b7707c404a8af9788dacc98b12bb42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921233"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868010"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>在 Visual Studio 中編輯 R 程式碼
 
@@ -97,7 +97,7 @@ f <- function(a) { return(a + 1) }
 
 ## <a name="inserting-roxygen-comments"></a>插入 Roxygen 註解
 
-RTVS 提供使用函式參數名稱產生 [Roxygen](http://roxygen.org/) 註解的捷徑。 只要在函式定義上方的空白行上輸入 `###`︰
+RTVS 提供使用函式參數名稱產生 [Roxygen](https://cran.r-project.org/web/packages/roxygen2/index.html) 註解的捷徑。 只要在函式定義上方的空白行上輸入 `###`︰
 
 ![插入 Roxygen 註解的動畫](media/editing-roxygen-comments.gif)
 
@@ -113,7 +113,7 @@ RTVS 提供使用函式參數名稱產生 [Roxygen](http://roxygen.org/) 註解�
 
 [R] > [進階] 索引標籤上的選項為專屬於 RTVS:
 
-| 群組 | 選項 | 預設 | 描述 |
+| 群組 | 選項 | 預設 | 說明 |
 | --- | --- | --- | --- |
 | 格式化 | 自動格式化 | 開啟 | 會在您鍵入時重新格式化程式碼。 不會影響 [格式化選取範圍] 或 [格式化文件] 命令。 |
 | | 展開的大括弧 | Off | 在新的一行放置開始的 {。 |

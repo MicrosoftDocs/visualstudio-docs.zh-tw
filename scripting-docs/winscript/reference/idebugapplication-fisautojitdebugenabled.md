@@ -2,7 +2,6 @@
 title: IDebugApplication::FIsAutoJitDebugEnabled |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b06d223d76ed741eef6b379ace6b522248ded2e1
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: f594c5ce48ebd31a265ed438db176c5707d9b079
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348213"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152073"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
 決定在 just-in-time (JIT) 偵錯工具的自動偵錯無聲主機已向。  
@@ -38,7 +37,7 @@ BOOL FIsAutoJitDebugEnabled();
  這個方法會接受任何參數。  
   
 ## <a name="return-value"></a>傳回值  
- 如果方法成功，而且 JIT 偵錯工具已向自動偵錯無聲主機，此方法會傳回`TRUE`。 否則它會傳回 `FALSE`。  
+ 如果方法成功，而且 JIT 偵錯工具已向自動偵錯無聲主機，此方法會傳回`TRUE`。 否則，它會傳回 `FALSE`。  
   
 ## <a name="remarks"></a>備註  
  這個方法會判斷如果 JIT 偵錯工具已向自動偵錯無聲主機。  

@@ -2,7 +2,6 @@
 title: IActiveScriptProfilerCallback Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2511b3e622dfa977c0ed05212203ad59fb0e71bd
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: a0eb8ef209e1fc55fabf37c0c4469fd390f5a478
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345860"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146327"
 ---
 # <a name="iactivescriptprofilercallback-interface"></a>IActiveScriptProfilerCallback 介面
 提供指令碼引擎用來通知分析工具物件發生事件的方法。 分析工具物件會實作這個介面。  

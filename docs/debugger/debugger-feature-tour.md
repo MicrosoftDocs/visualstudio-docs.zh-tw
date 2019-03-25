@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696736"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428683"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio 偵錯工具初探
 
@@ -77,7 +77,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 ![執行至點選處](../debugger/media/dbg-tour-run-to-click-2.png "執行至點選處")
 
 > [!NOTE]
-> [執行至點選處] (執行到這裡) 按鈕是 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 的新功能。
+> [執行至點選處] (執行到這裡) 按鈕會於 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 開始提供。
 
 按一下 [執行至點選處] (執行到這裡) 按鈕。 偵錯工具將前進至您所點選的程式碼行。
 

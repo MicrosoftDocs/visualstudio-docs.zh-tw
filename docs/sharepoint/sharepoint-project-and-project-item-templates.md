@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3a535f1b9051835f0a26ae62ca63cc30f289ddea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6250577a5a1b6793001b1d4b732c3b3101690aad
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612916"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867869"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 專案與專案項目範本
   下列各節說明可用的 SharePoint 專案和專案項目範本，以及如何使用它們。
@@ -74,7 +74,7 @@ ms.locfileid: "56612916"
  **（僅限陣列方案） 的應用程式頁面上**項目可讓您設計[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]的 SharePoint 網站的網頁。 只能在伺服器陣列方案中可用的應用程式頁面。 這個專案項目只能加入伺服器陣列方案。 如需詳細資訊，請參閱[如何：建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)並[應用程式 _layouts 頁面類型](http://go.microsoft.com/fwlink/?LinkId=179434)。
 
 ### <a name="business-data-connectivity-model-farm-solution-only"></a>商務資料連接模型 （僅限陣列方案）
- A **Business Data Connectivity 模型 （僅限陣列方案）** 項目可讓您整合商務資料至 SharePoint。 商務資料可來自後端伺服器應用程式，例如[!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)]、 Siebel 和服務廣告通訊協定 」 (SAP)。 商務資料連接模型只能用於陣列方案。 這個專案項目只能加入伺服器陣列方案。 如需詳細資訊，請參閱[如何：建立 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)， [How to:使用資源檔來指定當地語系化的名稱、 屬性和權限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)，和[的新功能：Business Connectivity Services](http://go.microsoft.com/fwlink/?LinkId=179411)。
+ A **Business Data Connectivity 模型 （僅限陣列方案）** 項目可讓您整合商務資料至 SharePoint。 商務資料可來自後端伺服器應用程式，例如[!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)]、 Siebel 和服務廣告通訊協定 」 (SAP)。 商務資料連接模型只能用於陣列方案。 這個專案項目只能加入伺服器陣列方案。 如需詳細資訊，請參閱[如何：建立 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)， [How to:使用資源檔來指定當地語系化的名稱、 屬性和權限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)，和[的新功能：Business Connectivity Services](/previous-versions/office/developer/sharepoint-2010/ee534979(v=office.14))。
 
 ### <a name="content-type"></a>內容類型
  *內容類型*項目可讓您建立文件、 通知、 或工作等現有的 （基底） 內容類型為基礎的自訂內容類型。 自訂內容類型會提供相同的屬性和欄位做為基底內容類型以及您定義任何站台資料行 （欄位）。 例如，您可以建立自訂的 Contact 內容類型為基礎的基底的連絡人內容類型出現在 SharePoint 中。 您可以藉由變更現有的網站欄或多個站台資料行加入已包含在基底內容類型的自訂內容類型。
@@ -109,7 +109,7 @@ ms.locfileid: "56612916"
  *模組*(不到與混淆[!include[vbprvb](../sharepoint/includes/vbprvb-md.md)]模組) 包含您想要部署到 SharePoint 伺服器，例如影像或資訊的任何檔案。 模組專案項目包含**模組**節點。 在模組節點包含兩個專案項目範本： XML 定義檔，作為模組資訊清單，以及*sample.txt*檔案、 將預留位置檔案。 如需詳細資訊，請參閱 <<c0> [ 使用模組來包含方案中的檔案](../sharepoint/using-modules-to-include-files-in-the-solution.md)並[模組](http://go.microsoft.com/fwlink/?LinkId=179425)。
 
 ### <a name="sequential-workflow-farm-solution-only"></a>循序工作流程 （僅限陣列方案）
- A*循序工作流程*是一系列的商務邏輯步驟，直到完成最後一個步驟，依序執行。 循序工作流程用來管理涉及 SharePoint 項目，例如清單和文件的程序。 您可以建立網站層級 （全域） 工作流程或清單層級 (local) 的工作流程，而且您可以選擇是否自動或手動啟動的工作流程。 這個專案項目只用於陣列方案。 這個專案項目只能加入伺服器陣列方案。 如需詳細資訊，請參閱 <<c0> [ 建立 SharePoint 工作流程解決方案](../sharepoint/creating-sharepoint-workflow-solutions.md)， [SharePoint Server 2010 中的工作流程](http://go.microsoft.com/fwlink/?LinkId=260555)，和[的新功能：工作流程改進](http://go.microsoft.com/fwlink/?LinkId=179418)。
+ A*循序工作流程*是一系列的商務邏輯步驟，直到完成最後一個步驟，依序執行。 循序工作流程用來管理涉及 SharePoint 項目，例如清單和文件的程序。 您可以建立網站層級 （全域） 工作流程或清單層級 (local) 的工作流程，而且您可以選擇是否自動或手動啟動的工作流程。 這個專案項目只用於陣列方案。 這個專案項目只能加入伺服器陣列方案。 如需詳細資訊，請參閱 <<c0> [ 建立 SharePoint 工作流程解決方案](../sharepoint/creating-sharepoint-workflow-solutions.md)， [SharePoint Server 2010 中的工作流程](http://go.microsoft.com/fwlink/?LinkId=260555)，和[的新功能：工作流程改進](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))。
 
 ### <a name="silverlight-web-part"></a>Silverlight web 組件
  *Silverlight web 組件*專案項目可讓您建立的 web 組件 for SharePoint，以便顯示 Silverlight 應用程式。 當您將這個專案項目加入您的解決方案時，您可以選擇是否要加入新的 Silverlight 應用程式，或於稍後參考現有。 如需詳細資訊，請參閱 <<c0> [ 建立適用於 SharePoint 的 web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)和[逐步解說：建立顯示 SharePoint 之 OData 的 Silverlight web 組件](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)。
@@ -129,7 +129,7 @@ ms.locfileid: "56612916"
   新增網站定義之後，您可以加入程式碼和檔案引入功能。 這個專案項目只用於陣列方案。 這個專案項目只能加入伺服器陣列方案。 如需詳細資訊，請參閱 <<c0> [ 建立的 SharePoint 網站定義](../sharepoint/creating-site-definitions-for-sharepoint.md)並[網站定義和組態](http://go.microsoft.com/fwlink/?LinkId=260554)。
 
 ### <a name="state-machine-workflow-farm-solution-only"></a>狀態機器工作流程 （僅限陣列方案）
- A*狀態機器工作流程*是一組商務邏輯狀態、 轉換及動作。 狀態機器工作流程中的步驟不會在序列中，執行相反地，它們會觸發動作和狀態。 循序工作流程，例如狀態機器工作流程是 SharePoint 項目，例如清單和文件相關聯。 同樣地，您可以建立站台層級 （全域） 的工作流程或清單層級 （本機）。 您也可以選取是否自動或手動啟動的工作流程。 這個專案項目只用於陣列方案。 這個專案項目只能加入伺服器陣列方案。 如需詳細資訊，請參閱 <<c0> [ 建立 SharePoint 工作流程解決方案](../sharepoint/creating-sharepoint-workflow-solutions.md)， [SharePoint Server 2010 中的工作流程](http://go.microsoft.com/fwlink/?LinkId=260555)，和[的新功能：工作流程改進](http://go.microsoft.com/fwlink/?LinkId=179418)。
+ A*狀態機器工作流程*是一組商務邏輯狀態、 轉換及動作。 狀態機器工作流程中的步驟不會在序列中，執行相反地，它們會觸發動作和狀態。 循序工作流程，例如狀態機器工作流程是 SharePoint 項目，例如清單和文件相關聯。 同樣地，您可以建立站台層級 （全域） 的工作流程或清單層級 （本機）。 您也可以選取是否自動或手動啟動的工作流程。 這個專案項目只用於陣列方案。 這個專案項目只能加入伺服器陣列方案。 如需詳細資訊，請參閱 <<c0> [ 建立 SharePoint 工作流程解決方案](../sharepoint/creating-sharepoint-workflow-solutions.md)， [SharePoint Server 2010 中的工作流程](http://go.microsoft.com/fwlink/?LinkId=260555)，和[的新功能：工作流程改進](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))。
 
 ### <a name="user-control-farm-solution-only"></a>使用者控制項 （僅限陣列方案）
  A*使用者控制項*是自訂、 可重複使用的控制項，您可以加入其他 ASP.NET 控制項和 SharePoint 控制項。 將使用者控制項可以加入至應用程式頁面和 web 組件，在 SharePoint 中執行。 這個專案項目只用於陣列方案。 這個專案項目只能加入伺服器陣列方案。 如需詳細資訊，請參閱 < [Web 組件或應用程式頁面建立可重複使用控制項](http://go.microsoft.com/fwlink/?LinkId=226841)。

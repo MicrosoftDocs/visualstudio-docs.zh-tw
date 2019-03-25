@@ -25,15 +25,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 205b4739d152186415a811b934a210d5f9a38ac4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f034797a773602f714ce69193ce6987ba9560bf5
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615399"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526697"
 ---
 # <a name="custom-task-panes"></a>自訂工作窗格
-  工作窗格是通常停駐在 Microsoft Office 應用程式視窗一邊的使用者介面面板。 自訂工作窗格為您提供建立個人專屬工作窗格的方法，也為使用者提供了熟悉的介面，供他們用來存取您方案的功能。 例如，介面中可以包含控制項，而這些控制項則會執行程式碼來修改文件或顯示資料來源中的資料。
+  工作窗格是通常停駐在 Microsoft Office 應用程式視窗一側的使用者介面面板。 自訂工作窗格為您提供建立個人專屬工作窗格的方法，也為使用者提供了熟悉的介面，供他們用來存取您方案的功能。 例如，介面中可以包含控制項，而這些控制項則會執行程式碼來修改文件或顯示資料來源中的資料。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -91,7 +91,7 @@ ms.locfileid: "56615399"
 ### <a name="make-the-custom-task-pane-visible"></a>顯示自訂工作窗格
  根據預設，工作窗格為隱藏狀態。 若要顯示 [工作] 窗格，您必須設定<xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A>屬性，以 **，則為 true**。
 
- 使用者可以關閉在任何時間的工作窗格，即可**關閉**角的 [工作] 窗格的按鈕 (X)。 但是，無法透過任何預設方法再次開啟自訂工作窗格。 如果使用者關閉了自訂工作窗格，除非您提供顯示工作窗格的方法，否則使用者將無法再次檢視該自訂工作窗格。
+ 使用者可以關閉在任何時間的工作窗格，即可**關閉**角的 [工作] 窗格的按鈕 (X)。 但是，無法透過任何預設方法再次開啟自訂工作窗格。 如果使用者關閉了自訂工作窗格，除非您提供顯示工作窗格的方法，否則使用者將無法再次檢閱該自訂工作窗格。
 
  如果在 VSTO 增益集中建立自訂工作窗格，則應同時建立 UI 項目，例如使用者可以按一下來顯示或隱藏自訂工作窗格的按鈕。 如果您在支援自訂功能區的 Microsoft Office 應用程式中建立自訂工作窗格，可以將控制項群組加入功能區，且該功能區的按鈕可顯示或隱藏自訂工作窗格。 如需示範如何執行這項操作的逐步解說，請參閱[逐步解說：與功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。
 
@@ -129,15 +129,13 @@ ms.locfileid: "56615399"
 ##  <a name="Managing"></a> 管理多個應用程式視窗中的自訂工作窗格
  在使用多重視窗的應用程式中建立自訂工作窗格以顯示文件和其他項目時，需要採取額外步驟以確保工作窗格能夠在使用者需要時顯示。
 
- 所有應用程式中的自訂工作窗格會與文件框架視窗產生關聯，而該框架視窗會對使用者呈現文件或項目的檢視。 顯示相關聯的視窗時才能顯示工作窗格。 但是，並非所有應用程式都以相同方式來使用文件框架視窗。
+ 所有應用程式中的自訂工作窗格會與文件框架視窗產生關聯，而該框架視窗會對使用者呈現文件或項目的檢閱。 顯示相關聯的視窗時才能顯示工作窗格。 但是，並非所有應用程式都以相同方式來使用文件框架視窗。
 
  下列應用程式群組具有不同的開發需求：
 
 - [Outlook](#Outlook)
 
 - [Word、 InfoPath 和 PowerPoint](#WordAndInfoPath)
-
-  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:管理 Word VSTO 增益集的工作窗格？](http://go.microsoft.com/fwlink/?LinkId=136781).
 
 ##  <a name="Outlook"></a> Outlook
  當您建立 Outlook 的自訂工作窗格時，自訂工作窗格將與特定 [總管] 或 [檢查] 視窗相關聯。 總管視窗，顯示資料夾的內容，而偵測器顯示的項目，例如電子郵件訊息或工作的 windows。

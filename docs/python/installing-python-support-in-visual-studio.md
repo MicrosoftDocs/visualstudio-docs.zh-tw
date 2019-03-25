@@ -1,7 +1,7 @@
 ---
 title: 安裝 Python 支援
 description: 如何在 Visual Studio 2017、2015、2013、2012 和 2010 中安裝「適用於 Visual Studio 的 Python 工具」(PTVS)，包括選項和安裝位置。
-ms.date: 12/06/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a74c5992699fa321839c671f527c513ae2b9291
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 790d6d866619b19a81bd0e92ecb043385736eaac
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155483"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983301"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安裝 Python 支援
 
 若要為 Visual Studio 安裝 Python 支援 (也稱為「適用於 Visual Studio 的 Python 工具」或 PTVS)，請遵循符合您 Visual Studio 版本之小節中的指示：
 
-- [Visual Studio 2017](#visual-studio-2017)
+- [Visual Studio 2017 和 Visual Studio 2019](#visual-studio-2017-and-2019)
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 和更早版本](#visual-studio-2013-and-earlier)
 
@@ -33,32 +33,45 @@ ms.locfileid: "56155483"
 > [!Note]
 > 目前在 Visual Studio for Mac 中沒有 Python 支援，但可透過 Visual Studio Code 在 Mac 和 Linux 上取得。 請參閱[問與答](overview-of-python-tools-for-visual-studio.md#questions-and-answers)。
 
-## <a name="visual-studio-2017"></a>Visual Studio 2017
+<a name="visual-studio-2017-and-2019"></a>
+## <a name="visual-studio-2019-and-visual-studio-2017"></a>Visual Studio 2019 和 Visual Studio 2017
 
-1. 下載並執行最新的 Visual Studio 2017 安裝程式。 如果您已經安裝 Visual Studio，請執行 Visual Studio 安裝程式、選取 [修改] 選項 (請參閱[修改 Visual Studio](../install/modify-visual-studio.md)) 並移至步驟 2。
+1. 下載並執行最新的 Visual Studio 安裝程式。 如果您已經安裝 Visual Studio，請執行 Visual Studio 安裝程式、選取 [修改] 選項 (請參閱[修改 Visual Studio](../install/modify-visual-studio.md)) 並移至步驟 2。
 
     > [!div class="nextstepaction"]
-    > [安裝 Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
+    > [安裝 Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
-    > Community Edition 是針對個別開發人員、課堂學習、學術研究和開放原始碼開發。 針對其他用途，請安裝 [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) 或 [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)。
+    > Community Edition 是針對個別開發人員、課堂學習、學術研究和開放原始碼開發。 針對其他用途，請安裝 [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) 或 [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)。
 
 1. 安裝程式會顯示一份工作負載清單，而工作負載是特定開發區域的相關選項群組。 針對 Python，選取 [Python 開發] 工作負載。
 
     ![Visual Studio 安裝程式中的 Python 開發工作負載](media/installation-python-workload.png)
 
-    選擇性：如果您要使用資料科學，也請考慮 [資料科學與分析應用程式] 工作負載。 此工作負載支援 Python 以及 R 和 F# 語言。 如需詳細資訊，請參閱[資料科學與分析應用程式工作負載](../rtvs/data-science-and-analytical-applications-workload.md)。
+    ::: moniker range="vs-2017"
+    選擇性：如果您要使用資料科學，也請考慮 [資料科學與分析應用程式] 工作負載。 此工作負載支援 Python、R 以及 F# 語言。 如需詳細資訊，請參閱[資料科學與分析應用程式工作負載](data-science-and-analytical-applications-workload.md)。
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+    選擇性：如果您要使用資料科學，也請考慮 [資料科學與分析應用程式] 工作負載。 此工作負載支援 Python 以及 F# 語言。 如需詳細資訊，請參閱[資料科學與分析應用程式工作負載](data-science-and-analytical-applications-workload.md)。
+    ::: moniker-end
 
     > [!Note]
     > 只有 Visual Studio 2017 15.2 版和更新版本才提供 Python 和「資料科學」工作負載。
 
 1. 在安裝程式右側，視需要選擇其他選項。 跳過此步驟，以接受預設選項。
 
+    ::: moniker range="vs-2017"
     ![Visual Studio 安裝程式中的 Python 開發選項](media/installation-python-options.png)
+    ::: moniker-end
 
-    | 選項 | 描述 |
+    ::: moniker range=">=vs-2019"
+    ![Visual Studio 2019 安裝程式中的 Python 開發選項](media/installation-python-options-2019.png)
+    ::: moniker-end
+
+    | 選項 | 說明 |
     | --- | --- |
-    | Python 散發 | 選擇您要使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 散發的任何 32 位元和 64 位元變異組合。 每個都包含散發的解譯器、執行階段和程式庫。 具體而言，Anaconda 是包含各種預先安裝套件的開放型資料科學平台。 (您隨時都可以回到 Visual Studio 安裝程式，以新增或移除散發)。**注意**：如果您已經安裝 Visual Studio 安裝程式以外的發行版本，就不需要在此檢查對應選項。 Visual Studio 會自動偵測現有的 Python 安裝。 請參閱 [Python 環境視窗](managing-python-environments-in-visual-studio.md#the-python-environments-window)。 此外，如果已提供比安裝程式中所示還要新的 Python 版本，您可以另外安裝該版本，而且 Visual Studio 將會偵測到該版本。 |
+    | Python 散發 | 選擇任何可用選項的組合，例如您計劃使用的 Python 2、Python 3、Miniconda、Anaconda2 和 Anaconda3 散發的任何 32 位元和 64 位元變異組合。 每個都包含散發的解譯器、執行階段和程式庫。 具體而言，Anaconda 是包含各種預先安裝套件的開放型資料科學平台。 (您隨時都可以回到 Visual Studio 安裝程式，以新增或移除散發)。**注意**：如果您已經安裝 Visual Studio 安裝程式以外的發行版本，就不需要在此檢查對應選項。 Visual Studio 會自動偵測現有的 Python 安裝。 請參閱 [Python 環境視窗](managing-python-environments-in-visual-studio.md#the-python-environments-window)。 此外，如果已提供比安裝程式中所示還要新的 Python 版本，您可以另外安裝該版本，而且 Visual Studio 將會偵測到該版本。 |
     | **Cookiecutter 範本支援** | 安裝 Cookiecutter 圖形化 UI 來探索範本、輸入範本選項，以及建立專案和檔案。 請參閱[使用 Cookiecutter 延伸模組](using-python-cookiecutter-templates.md)。 |
     | **Python Web 支援** | 安裝進行 Web 開發的工具 (包含 HTML、CSS 和 JavaScript 編輯支援)，以及使用 Bottle、Flask 和 Django 架構之專案的範本。 請參閱 [Python Web 專案範本](python-web-application-project-templates.md)。 |
     | **Python IoT 支援** | 使用 Python 支援 Windows IoT Core 開發。 |
@@ -105,7 +118,7 @@ ms.locfileid: "56155483"
 
 根據預設，系統會為電腦上的所有使用者安裝 Python 支援。
 
-針對 Visual Studio 2017，Python 工作負載會安裝在 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<VS_edition>Common7\IDE\Extensions\Microsoft\Python*，其中 &lt;VS_edition&gt; 是 Community、Professional 或 Enterprise。
+針對 Visual Studio 2019 和 Visual Studio 2017，Python 工作負載會安裝在 *%ProgramFiles(x86)%\Microsoft Visual Studio\\<VS_version>\\<VS_edition>Common7\IDE\Extensions\Microsoft\Python*，其中 &lt;VS_version&gt; 是 2019 或 2017，&lt;VS_edition&gt; 是 Community、Professional 或 Enterprise。
 
 針對 Visual Studio 2015 和更早版本，安裝路徑如下：
 

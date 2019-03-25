@@ -2,7 +2,6 @@
 title: IActiveScriptTraceInfo Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ec8ef67220a70e8eb38ca8f66f7397337fb87a9
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 260ee42db6ae0fb743c170cf84aa0793721dffd5
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349188"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58147783"
 ---
 # <a name="iactivescripttraceinfo-interface"></a>IActiveScriptTraceInfo 介面
 提供方法來啟動和停止追蹤。  

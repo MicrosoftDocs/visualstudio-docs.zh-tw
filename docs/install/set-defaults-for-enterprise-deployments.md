@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f523aaa61e1908d0e947de4cf555ec95ad2d4306
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91a2bda02f62391c84ff5b39a934192eccbd6bb8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910814"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984136"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>設定 Visual Studio 2017 企業部署的預設
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>設定 Visual Studio 企業部署的預設值
 
 您可以設定會影響 Visual Studio 部署的登錄原則。 這些原則全面適用於新的安裝程式，而且會影響︰
 
@@ -62,6 +62,6 @@ ms.locfileid: "55910814"
 
 ## <a name="see-also"></a>另請參閱
 
- * [安裝 Visual Studio](install-visual-studio.md)
- * [停用或移動套件快取](disable-or-move-the-package-cache.md)
- * [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [安裝 Visual Studio](install-visual-studio.md)
+- [停用或移動套件快取](disable-or-move-the-package-cache.md)
+- [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

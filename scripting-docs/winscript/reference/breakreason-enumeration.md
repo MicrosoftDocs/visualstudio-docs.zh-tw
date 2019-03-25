@@ -2,7 +2,6 @@
 title: BREAKREASON 列舉 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5c0dc03d8d24014e28ecf9510fa3d5faa21dba2
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 939d9f36c9838f02e58bc433d1a7bb9bef43c28d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096794"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160585"
 ---
 # <a name="breakreason-enumeration"></a>BREAKREASON 列舉
 指出造成中斷的原因。  

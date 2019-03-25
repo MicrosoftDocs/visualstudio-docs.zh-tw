@@ -12,20 +12,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cbd581da1e2a081636c4f4cf7885241c15eff97
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2dd787168d906ce90a50562e5147b45308c54ff5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876261"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868055"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>部署適用於 Visual Studio 中 SharePoint 工具擴充功能
 
 若要部署的 SharePoint 工具延伸模組，建立[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝，其中包含延伸模組組件和任何其他您想要將副檔名的檔案。 VSIX 封裝是壓縮的檔案，遵循開放封裝慣例 (OPC) 標準。 VSIX 封裝，需要 *.vsix*延伸模組。
 
-建立 VSIX 封裝之後，其他使用者可以執行安裝擴充功能的.vsix 檔案。 當使用者安裝您的延伸模組時，所有的檔案會安裝到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions 資料夾。 若要部署的延伸模組，您可以上傳至 VSIX 封裝[Visual Studio 元件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站上，或者您可以將套件發佈至您的客戶透過其他方法，例如裝載在網路共用或一些其他網站上的套件。
+建立 VSIX 封裝之後，其他使用者可以執行安裝擴充功能的.vsix 檔案。 當使用者安裝您的延伸模組時，所有的檔案會安裝到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions 資料夾。 若要部署的延伸模組，您可以上傳至 VSIX 封裝[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站上，或者您可以將套件發佈至您的客戶透過其他方法，例如裝載在網路共用或某些其他網頁套件站台。
 
-如需有關建立 VSIX 封裝和部署他們[Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847)，請參閱[運送 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)。
+如需有關建立 VSIX 封裝和部署他們[Visual Studio Marketplace](https://marketplace.visualstudio.com/)，請參閱[運送 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)。
 
  您可以使用，以建立 VSIX 封裝**VSIX 專案**範本在 Visual Studio 中，或者您可以手動建立 VSIX 封裝。
 

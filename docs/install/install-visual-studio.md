@@ -18,14 +18,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87026ab387d2a3c7d84a7c546034a7a404db5bf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf1497e79b6f41104664013efcf63adea5223f11
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607018"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983542"
 ---
-# <a name="install-visual-studio-2017"></a>安裝 Visual Studio 2017
+# <a name="install-visual-studio"></a>安裝 Visual Studio
 
 歡迎使用安裝 Visual Studio 的新方式！ 在此版本中，您能夠更輕鬆地選取和安裝所需的功能。 我們也已經減少 Visual Studio 的最少使用量，使它能以更快的速度完成安裝，並對系統產生較少的影響。
 
@@ -130,9 +130,9 @@ ms.locfileid: "56607018"
 
 ## <a name="see-also"></a>另請參閱
 
-* [更新 Visual Studio 2017](update-visual-studio.md)
-* [修改 Visual Studio 2017](modify-visual-studio.md)
-* [解除安裝 Visual Studio 2017](uninstall-visual-studio.md)
-* [建立 Visual Studio 2017 的離線安裝](create-an-offline-installation-of-visual-studio.md)
-* [使用命令列參數安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [更新 Visual Studio](update-visual-studio.md)
+* [修改 Visual Studio](modify-visual-studio.md)
+* [解除安裝 Visual Studio](uninstall-visual-studio.md)
+* [建立 Visual Studio 的離線安裝](create-an-offline-installation-of-visual-studio.md)
+* [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [安裝 Visual Studio for Mac](/visualstudio/mac/installation)

@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90969307d328519c95997be2ff0e8fad87fdc0a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2db56b4957165a8608e0ed61f07ae0ff64c403ef
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939797"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983296"
 ---
 # <a name="advanced-example-for-containers"></a>容器的進階範例
 
@@ -124,4 +124,4 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 * [將建置工具安裝至容器](build-tools-container.md)
 * [容器的已知問題](build-tools-container-issues.md)
-* [Visual Studio Build Tools 2017 工作負載和元件識別碼](workload-component-id-vs-build-tools.md)
+* [Visual Studio Build Tools 工作負載和元件識別碼](workload-component-id-vs-build-tools.md)

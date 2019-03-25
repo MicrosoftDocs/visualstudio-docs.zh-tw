@@ -2,6 +2,7 @@
 title: JavaScript IntelliSense
 ms.date: 06/28/2017
 ms.topic: conceptual
+ms.technology: vs-javascript
 helpviewer_keywords:
 - IntelliSense [JavaScript]
 - <reference> JavaScript XML tag
@@ -19,31 +20,31 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], about
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91ea140ffef8d564cc1380d2fe3fd30a252fef14
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 6cb8540fd53a66d67907de47f6332a05c6240f09
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318449"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868894"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
-Visual Studio 2017 提供現成可用的強大 JavaScript 編輯體驗。 由 TypeScript 型語言服務提供，Visual Studio 提供更豐富的 IntelliSense、支援最新的 JavaScript 功能，並改善如移至定義、重構及更多的生產力功能。
+Visual Studio 提供現成可用的強大 JavaScript 編輯體驗。 由 TypeScript 型語言服務提供，Visual Studio 提供更豐富的 IntelliSense、支援最新的 JavaScript 功能，並改善如移至定義、重構及更多的生產力功能。
 
 > [!NOTE]
-> Visual Studio 2017 中的 JavaScript 語言服務使用新的語言服務引擎 (稱為 "Salsa")。 本主題包含詳細資料，您也可以閱讀本[部落格文章](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/)。 新的編輯經驗大部分也適用於 Visual Studio Code。 如需詳細資訊，請參閱 [JavaScript in VS Code](https://code.visualstudio.com/docs/languages/javascript) (VS 程式碼中的 JavaScript)。
+> 從 Visual Studio 2017 開始，JavaScript 語言服務即使用新的語言服務引擎 (稱為 "Salsa")。 本文包含詳細資料；您也可以閱讀這篇[部落格文章](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/)。 新的編輯經驗大部分也適用於 Visual Studio Code。 如需詳細資訊，請參閱 [JavaScript in VS Code](https://code.visualstudio.com/docs/languages/javascript) (VS 程式碼中的 JavaScript)。
 
 如需一般 Visual Studio IntelliSense 功能的詳細資訊，請參閱[使用 IntelliSense](../ide/using-intellisense.md)。
 
 ## <a name="whats-new-in-the-javascript-language-service-in-visual-studio-2017"></a>Visual Studio 2017 中 JavaScript 語言服務的新功能
 
-從 Visual Studio 2017 開始，JavaScript IntelliSense 會顯示更多有關參數和成員清單的資訊。
-此項新資訊是由 TypeScript 語言服務提供，使用程式碼更容易了解的幕後靜態分析。
+從 Visual Studio 2017 開始，JavaScript IntelliSense 會顯示更多有關參數和成員清單的資訊。 此項新資訊是由 TypeScript 語言服務提供，使用程式碼更容易了解的幕後靜態分析。
+
 TypeScript 使用數個來源建立這項資訊：
 
 - [以型別推斷為基礎的 IntelliSense](#TypeInference)

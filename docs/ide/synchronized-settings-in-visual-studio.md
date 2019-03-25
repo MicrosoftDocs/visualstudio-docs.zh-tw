@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6faaf37c3a1c8e67412898ca631210eb551f3331
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926043"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869040"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>跨多部電腦同步處理 Visual Studio 設定
 
@@ -41,7 +41,7 @@ ms.locfileid: "55926043"
 
    - [環境] > [啟動] 選項頁面上的所有設定。
 
-   - [文字編輯器] 選項頁面上的所有設定。
+   - [文字編輯器] 選項頁面上的所有設定，例如[程式碼樣式喜好設定](code-styles-and-quick-actions.md)。
 
    - [XAML 設計工具] 選項頁面上的所有設定。
 
@@ -60,20 +60,30 @@ Visual Studio 的同步設定預設為開啟。 您可以移至 [工具] > [選�
 
 ## <a name="side-by-side-synchronized-settings"></a>並存同步設定
 
-在 Visual Studio 2017 15.3 版和更新版本中，不會在不同的 Visual Studio 2017 並存安裝之間共用特定設定 (例如工具視窗配置)。 *%userprofile%\Documents\Visual Studio 2017\Settings* 中的 *CurrentSettings.vssettings* 檔案位於安裝特定資料夾中，類似於 *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*。
+::: moniker range="vs-2017"
+
+您無法於不同 Visual Studio 並存安裝之間共用特定設定 (例如工具視窗配置)。 *%userprofile%\Documents\Visual Studio 2017\Settings* 中的 *CurrentSettings.vssettings* 檔案位於安裝特定資料夾中，類似於 *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*。
 
 > [!NOTE]
-> 若要使用新的安裝特定設定，請執行全新安裝。 當您將現有的 Visual Studio 2017 安裝升級為最新的更新時，它會使用現有的共用位置。
+> 若要使用新的安裝特定設定，請執行全新安裝。 當您升級現有的 Visual Studio 安裝時，它會使用現有的共用位置。
 
-如果您目前有 Visual Studio 2017 的並存安裝，並且想要使用新的安裝特定設定檔案位置，請遵循下列步驟：
+如果您目前有 Visual Studio 的並存安裝，並想要使用新的安裝特定設定檔位置，請遵循下列步驟：
 
 1. 升級至 Visual Studio 2017 15.3 版或更新版本。
 
-1. 使用 [匯入\匯出設定精靈] 將您所有現有的設定匯出至 *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* 資料夾外的某個位置。
+2. 使用 [匯入\匯出設定精靈] 將您所有現有的設定匯出至 *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* 資料夾外的某個位置。
 
-1. 開啟已升級 Visual Studio 安裝的**適用於 VS 2017 的開發人員命令提示字元**，並執行 `devenv /resetuserdata`。
+3. 開啟 [VS 2017 的開發人員命令提示字元]，並執行 `devenv /resetuserdata`。
 
-1. 啟動 Visual Studio，並從匯出的設定檔匯入儲存的設定。
+1. 開啟 Visual Studio，並從匯出的設定檔中匯入儲存的設定。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+您無法於不同 Visual Studio 並存安裝之間共用特定設定 (例如工具視窗配置)。 *%userprofile%\Documents\Visual Studio 2019\Settings* 中的 *CurrentSettings.vssettings* 檔案位於安裝特定資料夾中，類似於 *%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*。
+
+::: moniker-end
 
 ## <a name="see-also"></a>另請參閱
 

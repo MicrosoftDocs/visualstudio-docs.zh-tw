@@ -13,25 +13,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8ecd06b2c340640db082c5d0a6bbdb6a30596748
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d948234846a3d4f9fe240a6bf30854d3f0c7007
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624408"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872044"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP App 中的能源耗用量
+
 Visual Studio [能源消耗] 分析工具可協助您分析 UWP App 在全部或部分時間使用自己的電池執行之低電源平板裝置上的功率和能源消耗情形。 在電池供電的裝置上，使用太多能源的應用程式可能導致客戶諸多不滿，最後客戶可能會解除安裝應用程式。 最佳化能源利用，可以提高客戶對應用程式的採用率。
 
 ## <a name="what-the-energy-consumption-profiler-is-how-it-works-and-what-it-measures"></a>能源消耗分析工具是什麼，它的運作方式為何，以及測量什麼內容
- [能源消耗] 分析工具會在分析工作階段期間，擷取裝置的顯示器、CPU 和網路連線的活動。 然後它會產生這些活動的用電量評估，以及該分析工作階段的總計能源量。
+
+[能源消耗] 分析工具會在分析工作階段期間，擷取裝置的顯示器、CPU 和網路連線的活動。 然後它會產生這些活動的用電量評估，以及該分析工作階段的總計能源量。
 
 > [!NOTE]
 > 能源分析工具會使用代表可能執行應用程式的低電源平板裝置之標準參考裝置硬體的軟體模型，評估用電和能源利用。 為了提供最佳評估結果，建議您在低電源平板裝置上收集分析資料。
 >
 > 雖然這個模型可針對各種低電源裝置提供良好評估，但是您所分析裝置的實際值仍可能有所不同。 使用這些值找出相對於其他資源來說耗用量較高，也因此可能是合適的最佳化候選項目的顯示器、CPU 和網路活動。
 
- [能源消耗] 分析工具使用下列「 *功率* 」(Power) 和「 *能源*」(Energy) 的定義：
+[能源消耗] 分析工具使用下列「 *功率* 」(Power) 和「 *能源*」(Energy) 的定義：
 
 - 「*功率* 」(Power) 用於測量在某段時間內完成工作的用電速率。 在電子學中，功率的標準單位是「 *瓦*」(Watt)，其定義為一安培電流流經一伏特電位差時，工作完成的速率。 在 [用電量]  圖形上，單位顯示為毫瓦 **mW** ，相當於千分之一瓦特。
 
@@ -39,9 +41,9 @@ Visual Studio [能源消耗] 分析工具可協助您分析 UWP App 在全部或
 
 - 「*能源* 」(Energy) 用於測量總功率，以容量或電位、電池的電量，或某段時間的累計總用電量表示。 能源的單位是瓦-小時，一小時內連續產生的一瓦功率數。 在 [ **能源摘要**] 中，單位顯示為毫瓦-小時 [ **mW-h**]。
 
-  ![能源容量、耗電量、消耗的能源總計](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")
+![能源容量、耗電量、消耗的能源總計](../profiling/media/energyprof_capcitypowerused.png)
 
-  例如，平板電腦中完全充電的電池有特定的儲存電能量。 當能源用來執行像是網路通訊、計算值或顯示圖形這類工作時，電池的電力會以不同的速率消耗。 任一段時間內的總耗電量也是以能源測量。
+例如，平板電腦中完全充電的電池有特定的儲存電能量。 當能源用來執行像是網路通訊、計算值或顯示圖形這類工作時，電池的電力會以不同的速率消耗。 任一段時間內的總耗電量也是以能源測量。
 
 ## <a name="identify-scenarios-with-user-marks"></a>透過使用者標記識別情節
  您可以將「 *使用者標記* 」(User Mark) 加入至分析資料，以便識別時間軸尺規中的區段。
@@ -57,14 +59,14 @@ Visual Studio [能源消耗] 分析工具可協助您分析 UWP App 在全部或
  當方法執行時，使用者標記就會與訊息一起加入至分析資料中。
 
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel 會實作 [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) 介面 (等同於 C# 和 VB 中的 [System.IDisposable](/dotnet/api/system.idisposable))。為了避免作業系統資源流失，請在記錄頻道結束時呼叫 [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) (等同於 C# 和 VB 中的 [Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel))。
->  - 每個開啟的記錄通道都必須具有唯一名稱。 嘗試使用與尚未處置的通道相同的名稱建立新記錄通道，將會造成例外狀況。
+> - <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=nameWithType> 會實作 <xref:Windows.Foundation.IClosable?displayProperty=nameWithType> 介面 (在 C# 和 VB 中投影為 <xref:System.IDisposable?displayProperty=nameWithType>)。 若要避免作業系統資源流失，請在完成記錄通道時呼叫 <xref:Windows.Foundation.Diagnostics.LoggingChannel.Close%2A?displayProperty=nameWithType> (在 C# 和 VB 中呼叫 <xref:Windows.Foundation.Diagnostics.LoggingChannel.Dispose%2A?displayProperty=nameWithType>)。
+> - 每個開啟的記錄通道都必須具有唯一名稱。 如果您嘗試使用與尚未處置的通道相同的名稱來建立新的記錄通道，則會擲回例外狀況。
 
- 如需相關範例，請參閱 [LoggingSession 範例](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336)這個 Windows SDK 範例。
+如需範例程式碼，請參閱 Windows SDK 範例：[LoggingSession 範例](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) \(英文\)。
 
- **將標記加入至 JavaScript 程式碼**
+**將標記加入至 JavaScript 程式碼**
 
- 若要加入使用者標記，請在程式碼中您要標記的位置，插入下列程式碼：
+若要加入使用者標記，請在程式碼中您要標記的位置，插入下列程式碼：
 
 ```JavaScript
 if (performance && performance.mark) {
@@ -72,15 +74,15 @@ if (performance && performance.mark) {
 }
 ```
 
- *markDescription* 這個字串包含要在使用者標記工具提示中顯示的訊息。
+*markDescription* 這個字串包含要在使用者標記工具提示中顯示的訊息。
 
 ## <a name="configure-your-environment-for-profiling"></a>設定您的環境以進行分析
  為了獲得較佳的評估結果，建議您分析以本身電池供電之低電源裝置上的應用程式能源使用情形。 由於這類裝置大部分不會執行 Visual Studio，因此您需要將 Visual Studio 電腦連接到使用 Visual Studio 遠端工具的裝置。 若要連接到遠端裝置，您必須設定 Visual Studio 專案和遠端裝置。 如需詳細資訊，請參閱[在遠端電腦上執行 UWP App](../debugger/run-windows-store-apps-on-a-remote-machine.md)。
 
 > [!TIP]
 > - 我們不建議在 UWP 模擬器或 Visual Studio 電腦上進行能源分析。 在實際裝置上進行分析可提供更實際的資料。
->   -   在以電池供電的目標裝置上進行分析。
->   -   關閉其他可能使用相同資源 (網路、CPU 或顯示器) 的應用程式。
+> - 在以電池供電的目標裝置上進行分析。
+> - 關閉其他可能使用相同資源 (網路、CPU 或顯示器) 的應用程式。
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>收集應用程式的能源分析資料
 
@@ -91,7 +93,7 @@ if (performance && performance.mark) {
 2.  選擇 [ **能源消耗** ]，然後選擇 [ **開始**]。
 
     > [!NOTE]
-    >  當您啟動 [能源消耗] 分析工具時，可能會看到 [使用者帳戶控制] 視窗，要求您提供執行 *VsEtwCollector.exe* 的權限。 選擇 [ **是**]。
+    > 當您啟動 [能源消耗] 分析工具時，可能會看到 [使用者帳戶控制] 視窗，要求您提供執行 *VsEtwCollector.exe* 的權限。 選擇 [ **是**]。
 
 3.  執行您的應用程式進行資料收集。
 
@@ -145,11 +147,11 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>其他資源
 
--   Windows 開發人員中心有關 **C#/VB/C++ 和 XAML** 和 [JavaScript 和 HTML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) 的 [連線狀態和成本管理](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) 章節中，描述了提供網路連線資訊的 Windows API，這些資訊可讓您的應用程式用來減少網路流量的成本。
+- 有關 **C#/VB/C++ 和 XAML** 及 [JavaScript 和 HTML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) 的[連線狀態和成本管理](/previous-versions/windows/apps/hh452983(v=win.10))小節，會描述提供網路連線資訊的 Windows API，您的應用程式可以使用這些資訊來降低網路流量的成本。
 
-     UWP App 適用的 Visual Studio 模擬器可讓您模擬網路資訊 API 的資料連線屬性。 請參閱[在模擬器中執行 UWP App](../debugger/run-windows-store-apps-in-the-simulator.md)
+   UWP App 適用的 Visual Studio 模擬器可讓您模擬網路資訊 API 的資料連線屬性。 請參閱[在模擬器中執行 UWP App](../debugger/run-windows-store-apps-in-the-simulator.md)
 
--   [JavaScript 函式計時]  和 [CPU 使用量]  工具可以協助您降低因為沒有效率的函式所造成的 CPU 負載。 請參閱[分析 CPU 使用量](/visualstudio/profiling/beginners-guide-to-performance-profiling)。
+- [JavaScript 函式計時]  和 [CPU 使用量]  工具可以協助您降低因為沒有效率的函式所造成的 CPU 負載。 請參閱[分析 CPU 使用量](../profiling/beginners-guide-to-performance-profiling.md)。
 
 ## <a name="see-also"></a>另請參閱
 

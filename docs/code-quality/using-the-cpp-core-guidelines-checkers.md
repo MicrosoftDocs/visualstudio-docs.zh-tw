@@ -7,14 +7,14 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d888204de33ba870111be08ae91bb09d09416d4
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223347"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323694"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ Core Guidelines 檢查工具
+# <a name="use-the-c-core-guidelines-checkers"></a>使用 C++ Core Guidelines 檢查工具
 
 C + + Core Guidelines 是可攜性的集合的指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。 Visual Studio 目前支援 c + + 做為其程式碼分析工具的一部分，這些規則的子集。 核心指南檢查工具會安裝預設會在 Visual Studio 2017 和 Visual Studio 2019，而且[以 Visual Studio 2015 的 NuGet 套件形式提供](#vs2015_corecheck)。
 
@@ -80,7 +80,7 @@ C + + Core Guidelines 是為了幫助您撰寫更好且更安全的程式碼。 
 參考主題中的大部分規則正在[Visual Studio c + + Core 檢查參考](code-analysis-for-cpp-corecheck.md)。
 
 截至 Visual Studio 2017 15.3 版，是支援的規則集：
-- **擁有者指標規則**強制[擁有者相關的資源管理檢查<T>c + + Core guidelines 的](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
+- **擁有者指標規則**強制[擁有者相關的資源管理檢查\<T > c + + Core guidelines 的](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
 - **常數規則**強制[c + + Core guidelines 的常數相關檢查](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)。
 
@@ -153,7 +153,7 @@ Microsoft Visual c + + 編譯器會有有限的支援 GSL 隱藏屬性。 它可
 }
 ```
 
-## <a name="suppressing-analysis-by-using-command-line-options"></a>使用命令列選項隱藏分析
+## <a name="suppress-analysis-by-using-command-line-options"></a>使用命令列選項隱藏分析
 
 而不是 #pragmas，您可以使用命令列選項的檔案屬性頁中，隱藏警告的專案或單一檔案。 例如，若要停用警告 26400 檔案：
 
@@ -170,7 +170,7 @@ Microsoft Visual c + + 編譯器會有有限的支援 GSL 隱藏屬性。 它可
 有時候可能蠻有用已取得焦點的執行程式碼分析，仍然繼續使用 Visual Studio IDE。 下列範例案例可以用於大型專案，以儲存建置階段，並讓它更容易篩選結果：
 
 1. 在命令殼層設定`esp.extension`和`esp.annotationbuildlevel`環境變數。
-2. 若要繼承這些變數，請從命令殼層啟動 Visual Studio。
+2. 若要繼承這些變數，請從命令殼層中開啟 Visual Studio。
 3. 載入您的專案，並開啟其內容。
 4. 啟用程式碼分析，挑選適當的規則集，但不是啟用程式碼分析延伸模組。
 5. 請移至您想要分析使用 c + + 核心指南檢查工具並開啟其內容的檔案。

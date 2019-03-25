@@ -94,12 +94,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac0f1d9fe779e1d2c3109b69bc29d8067fbebb2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c660138437d9b08d49f9cf0c212e7b3612e9215
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783257"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869859"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於疑難排解整合式開發環境錯誤的資源
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ ms.locfileid: "54783257"
 ## <a name="the-developer-community"></a>開發人員社群  
  論壇也可讓您與其他開發人員和 Microsoft 員工互動。 如果您遇到找不到解決方案的錯誤，則可以在論壇張貼有關問題的疑問。 您也可以搜尋新聞群組，以查看是否有其他人已經張貼相同的問題。  
   
- 您可以在 [Microsoft 技術社群](http://go.microsoft.com/fwlink/?LinkID=144922)網站存取論壇、部落格、聊天室和其他資源。  
+ 您可以在 [Microsoft 技術社群](https://techcommunity.microsoft.com/)網站存取論壇、部落格、聊天室和其他資源。  
   
 ## <a name="product-support"></a>產品支援  
  如果您在嘗試其他資源之後仍有疑問，則可以前往 [Microsoft 支援服務](http://go.microsoft.com/fwlink/?linkid=1782)網站，連絡 Microsoft 支援服務。 如需您地區中可用的產品支援資訊，請參閱[告訴我們](../../ide/talk-to-us.md)。

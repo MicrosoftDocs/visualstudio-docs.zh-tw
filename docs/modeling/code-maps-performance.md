@@ -7,18 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f53376d1cff79dd69b7fb17704c4ddae8803c46
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12ba03ab97da3295a93b54dfc012d10fc012fd30
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913180"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872384"
 ---
 # <a name="improve-performance-for-code-maps"></a>改善效能的 code map
 
 當您第一次產生對應時，Visual Studio 會為所有找到的相依性編製索引。 此程序可能需要一些時間，特別是針對大型方案，但可改善之後的效能。 如果程式碼變更，則 Visual Studio 只會重新編製更新過的程式碼索引。 若要完成轉譯對應所花費的時間降到最低，請考慮下列建議：
 
-- [只對應您感興趣的相依性。](#create-a-code-map-to-see-specific-dependencies)
+- 只對應您感興趣的相依性。
 
 - 在您產生整個方案的對應前，請縮小方案範圍。
 

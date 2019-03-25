@@ -8,16 +8,16 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8452410235226b3d7a1446d7a8c5a2ee709eff6e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e20b2f7ebe351aa050ea66468fb33aba8e4a31bc
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943541"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525065"
 ---
 # <a name="options-text-editor-xml-formatting"></a>選項、文字編輯器、XML、格式化
 
-使用 [格式化] 屬性頁來指定如何格式化您 XML 文件中的項目和屬性。 若要開啟 [選項] 對話方塊，請按一下 [工具] 功能表，然後按一下 [選項]。 若要存取 [格式化] 屬性頁，請展開 [文字編輯器] > [XML] > [格式化] 節點。
+使用 [格式化] 選項來指定如何將您 XML 文件中的項目和屬性格式化。 如果要存取 XML 格式化選項，請選擇 [工具] > [選項] > [文字編輯器] > [XML]，然後選擇 [格式化]。
 
 ## <a name="attributes"></a>屬性
 
@@ -30,7 +30,7 @@ ms.locfileid: "55943541"
 
 **對齊位於各行上的屬性**
 
-垂直對齊第二個屬性及後續屬性，使其符合第一個屬性的縮排。 下列 XML 文字為如何對齊屬性的範例。
+垂直對齊第二個屬性及後續屬性，使其符合第一個屬性的縮排。 下列 XML 文字為如何對齊屬性的範例：
 
 ```xml
 <item id = "123-A"
@@ -66,5 +66,5 @@ ms.locfileid: "55943541"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：建立 XML 文件 (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [程式碼產生](../code-generation-in-visual-studio.md)
+- [XML 選項 - 其他](options-text-editor-xml-miscellaneous.md)
+- [Visual Studio 中的 XML 工具](../../xml-tools/xml-tools-in-visual-studio.md)

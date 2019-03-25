@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864866"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194054"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>設定 C++ IntelliSense 專案
 
@@ -48,11 +48,11 @@ IntelliSense 能產生最多 1000 個錯誤。 如果來源檔案所包含的標
 
 ![Makefile 專案包含路徑](media/vcpp-intellisense-makefile-include-paths.png)
 
-如需詳細資訊，請參閱[＜How to：在 Makefile 專案中啟用 IntelliSense](/cpp/ide/how-to-enable-intellisense-for-makefile-projects)。
+如需詳細資訊，請參閱[如何：在 Makefile 專案中啟用 IntelliSense](/cpp/ide/how-to-enable-intellisense-for-makefile-projects)。
 
 ### <a name="open-folder-projects"></a>「開啟資料夾」專案
 
-針對 CMake 專案，請確定已針對 CMakeLists.txt 中的所有設定正確指定 #include 路徑。 其他專案類型可能會需要 CppProperties.json 檔案。 如需詳細資訊，請參閱[使用 CppProperties.json 設定 IntelliSense](/cpp/ide/non-msbuild-projects#cppproperties)。 確定定義於檔案中之每個設定的路徑皆正確無誤。
+針對 CMake 專案，請確定已針對 CMakeLists.txt 中的所有設定正確指定 #include 路徑。 其他專案類型可能會需要 CppProperties.json 檔案。 如需詳細資訊，請參閱[使用 CppProperties.json 設定 IntelliSense](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson)。 確定定義於檔案中之每個設定的路徑皆正確無誤。
 
 如果 CppProperties.json 檔案中有語法錯誤，受影響檔案中的 IntelliSense 將會不正確。 Visual Studio 將會在 [輸出視窗] 中顯示該錯誤。
 
@@ -72,9 +72,9 @@ IntelliSense 能產生最多 1000 個錯誤。 如果來源檔案所包含的標
 
    ![標記剖析器建議定義現有函式](media/vcpp-intellisense-tag-parser-function.png)
 
-若要修正此類問題，請將名為 **cpp.hint** 的檔案新增到您方案目錄的根目錄。 如需詳細資訊，請參閱[提示檔案](/cpp/ide/hint-files)。
+若要修正此類問題，請將名為 **cpp.hint** 的檔案新增到您方案目錄的根目錄。 如需詳細資訊，請參閱[提示檔案](/cpp/build/reference/hint-files)。
 
-**Visual Studio 2017 15.7 版** 標記剖析器錯誤出現在 [錯誤清單] 視窗中。
+[錯誤清單] 視窗中出現標記剖析器錯誤。
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>搭配診斷記錄驗證專案設定
 
@@ -107,7 +107,7 @@ Visual Studio 使用專用的 C++ 編譯器來建立並維護提供所有 Intell
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>對 IntelliSense 組建失敗進行疑難排解
 
-IntelliSense 組建並不會產生二進位檔，但它仍可能會失敗。 其中一個可能的失敗原因是自訂的 .props 或 .targets 檔案。 在 Visual Studio 2017 15.6 版中，僅限 IntelliSense 的組建錯誤會記錄到 [輸出] 視窗。 若要查看它們，請將 [顯輸出來源] 設定為 [方案]：
+IntelliSense 組建並不會產生二進位檔，但它仍可能會失敗。 其中一個可能的失敗原因是自訂的 .props 或 .targets 檔案。 在 Visual Studio 2017 15.6 版和更新版本中，會將僅限 IntelliSense 的組建錯誤記錄至 [輸出] 視窗。 若要查看它們，請將 [顯輸出來源] 設定為 [方案]：
 
 ![顯示 [方案] 錯誤的 [輸出] 視窗](media/vcpp-intellisense-output-window.png)
 

@@ -11,14 +11,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 166ff1fae5cbc494fe287a47a2983fc52364493b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4b6a9bcc9828d0fdeb76f3f74732d8d5496e59c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934662"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069758"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>快速入門：使用 Visual Studio 以 F# 建立您的第一個 ASP.NET Core Web 服務
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>快速入門：使用 Visual Studio 以 F\# 建立您的第一個 ASP.NET Core Web 服務
 
 在 Visual Studio 中 F# 的這個 5-10 分鐘簡介中，您將建立 F# ASP.NET Core Web 應用程式。
 
@@ -28,7 +28,9 @@ ms.locfileid: "55934662"
 
 首先，您將建立 ASP.NET Core Web API 專案。 在新增任何項目之前，專案類型隨附的範本檔案可構成功能性 Web 服務！
 
-1. 開啟 Visual Studio 2017。
+::: moniker range="vs-2017"
+
+1. 開啟 Visual Studio。
 
 2. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
@@ -38,7 +40,23 @@ ms.locfileid: "55934662"
 
      ![VS 安裝程式中的 ASP.NET 工作負載](../ide/media/quickstart-aspnet-workload.png)
 
-4. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.1]  (如果您在清單中看不到 [ASP.NET Core 2.1]，請遵循應該出現在接近對話方塊頂端之黃色列中的 [下載] 連結來進行安裝)。選擇 [確定] 。
+4. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.1] (如果您在清單中看不到 [ASP.NET Core 2.1]，請遵循應該出現在接近對話方塊頂端之黃色列中的 [下載] 連結來進行安裝)。選擇 [確定] 。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 開啟 Visual Studio。
+
+2. 在開始視窗中，選擇 [建立新專案]。
+
+3. 在 [建立新專案] 頁面上，於搜尋方塊中輸入 **f# web**，然後選擇 [ASP.NET Core Web 應用程式] 專案範本。 選擇 [下一步]。
+
+4. 在 [設定新專案] 頁面上輸入名稱，然後選擇 [建立]。
+
+5. 在 [建立新的 ASP.NET Core Web 應用程式] 頁面上，從上方的下拉式功能表中選取 [ASP.NET Core 2.1]，然後選擇 [建立]。
+
+::: moniker-end
 
 ## <a name="explore-the-ide"></a>探索 IDE
 

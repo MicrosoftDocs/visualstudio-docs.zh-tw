@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d495f4f64e56981637680f8333936647fe70c68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941045"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867851"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 
 CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在工作上，且無須離開編輯器。 您可以尋找程式碼片段的參考、程式碼的變更、已連結的錯誤、工作項目、程式碼檢閱和單元測試。
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
 > CodeLens 僅適用於 Visual Studio Enterprise 與 Visual Studio Professional 版。 其不適用於 Visual Studio Community 版。
+
+::: moniker-end
 
 請參閱在解決方案中的何處使用程式碼的各個部分，及使用方式：
 
@@ -62,7 +66,7 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 
 您需要：
 
-- Visual Studio Enterprise 或 Visual Studio Professional
+- Visual Studio 2019 (或是 Visual Studio 2017 Enterprise 或 Professional 版本)
 
 - Team Foundation Server 2013 或更新版本、Azure DevOps Services 或 Git
 
@@ -182,7 +186,7 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 
 選取**檢閱**指標，尋找已連結的程式碼檢閱。 若要使用鍵盤，請按住 **Alt** 鍵，然後按**向左鍵**或**向右鍵**以巡覽指標選項。
 
-![CodeLens - 檢視程式碼檢閱要求](../ide/media/codelens-code-reviews.png)
+![CodeLens - 檢閱程式碼檢閱要求](../ide/media/codelens-code-reviews.png)
 
 ## <a name="linked-bugs"></a>已連結的錯誤
 

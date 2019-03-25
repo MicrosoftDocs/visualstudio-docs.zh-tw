@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be70da79b1edc6142be1c45464097a027f859979
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 38601f8d88b56c3957943b28be298ac24eb12c91
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413562"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983919"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>在 Visual Studio 中匯入發行設定，即可將應用程式發行至 Azure App Service
 
-您可以使用 [發行] 工具匯入發行設定，然後部署您的應用程式。 在本文中，我們會使用 Azure App Service 的發行設定，但您可以使用類似步驟從 [IIS](../deployment/tutorial-import-publish-settings-iis.md) 匯入發行設定。 在某些情況下，使用發行設定的設定檔速度，比起針對每個 Visual Studio 安裝手動設定服務部署還要快。
+您可以使用 [發行] 工具匯入發行設定，然後部署您的應用程式。 在此文章中，我們會使用 Azure App Service 的發行設定，但您可以使用類似步驟從 [IIS](../deployment/tutorial-import-publish-settings-iis.md) 匯入發行設定。 在某些情況下，使用發行設定的設定檔速度，比起針對每個 Visual Studio 安裝手動設定服務部署還要快。
 
-這些步驟適用於 Visual Studio 中的 ASP.NET、ASP.NET Core 和 .NET Core 應用程式。 您也可以匯入 [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 應用程式的發行設定。 這些步驟對應於 Visual Studio 2017 15.6 版。
+這些步驟適用於 Visual Studio 中的 ASP.NET、ASP.NET Core 和 .NET Core 應用程式。 您也可以匯入 [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 應用程式的發行設定。
 
 在本教學課程中，您將進行下列作業：
 
@@ -37,9 +37,19 @@ ms.locfileid: "56413562"
 
 ## <a name="prerequisites"></a>必要條件
 
+::: moniker range=">=vs-2019"
+
+* 您必須安裝 Visual Studio 2019 及 **ASP.NET 與網頁程式開發**工作負載。
+
+    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 * 您必須安裝 Visual Studio 2017 以及 **ASP.NET 和 Web 開發**工作負載。
 
-    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 頁面免費進行安裝。
+    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
+::: moniker-end
 
 * 建立 Azure App Service。 如需詳細指示，請參閱[使用 Visual Studio 將 ASP.NET Core Web 應用程式部署至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
 

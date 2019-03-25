@@ -1,8 +1,7 @@
 ---
-title: IDispError::GetDescription |Microsoft Docs
+title: IDispError::GetDescription | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa0c837be9a98829551b9c7820faf154779479e4
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: aff28f0f552bcad6792e4d252a92e45e9a6fd38c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096950"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146691"
 ---
 # <a name="idisperrorgetdescription"></a>IDispError::GetDescription
 傳回此錯誤的文字描述。  

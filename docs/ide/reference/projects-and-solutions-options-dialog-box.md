@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684c129ed104ed11b7cd6c88a7b603956acf64cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922208"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867809"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>選項對話方塊、專案和方案頁面
 
@@ -49,9 +49,13 @@ ms.locfileid: "55922208"
 
 選取此選項時，IDE 一律會顯示方案以及針對方案執行的所有命令。 清除此選項時，所有專案都會建立為獨立專案；如果方案只包含一個專案，您就不會在 [方案總管] 中看到方案，也不會在 IDE 中看到針對方案執行的命令。
 
+::: moniker range="vs-2017"
+
 ### <a name="save-new-projects-when-created"></a>在建立新專案時予以儲存
 
 選取此選項時，您可以在 [新增專案] 對話方塊中指定專案的位置。 清除此選項時，所有新專案都會建立為暫存專案。 當您使用暫存專案時，可以建立和測試專案，而不需要指定磁碟位置。
+
+::: moniker-end
 
 ### <a name="warn-user-when-the-project-location-is-not-trusted"></a>在專案位置未受信任時警告使用者
 
@@ -71,7 +75,7 @@ ms.locfileid: "55922208"
 
 ### <a name="reopen-documents-on-solution-load"></a>在解決方案載入時重新開啟文件
 
-**Visual Studio 2017 15.8 版 preview 2 和更新版本**
+**已在 Visual Studio 2017 15.8 版引進**
 
 選取此選項時，會在開啟解決方案時，自動開啟上次關閉此解決方案時處於開啟狀態的文件。
 
@@ -87,11 +91,11 @@ ms.locfileid: "55922208"
 
 ### <a name="user-project-templates-location"></a>使用者專案範本位置
 
-指定 [新增專案] 對話方塊用來建立 [我的範本] 清單的預設位置。 如需詳細資訊，請參閱[＜How to：尋找並整理範本](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+指定 [新增專案] 對話方塊用來建立 [我的範本] 清單的預設位置。 如需詳細資訊，請參閱[如何：尋找並整理範本](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ### <a name="user-item-templates-location"></a>使用者項目範本位置
 
-指定 [新增新項目] 對話方塊用來建立 [我的範本] 清單的預設位置。 如需詳細資訊，請參閱[＜How to：尋找並整理範本](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+指定 [新增新項目] 對話方塊用來建立 [我的範本] 清單的預設位置。 如需詳細資訊，請參閱[如何：尋找並整理範本](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ## <a name="see-also"></a>另請參閱
 

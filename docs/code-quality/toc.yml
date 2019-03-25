@@ -29,16 +29,24 @@ items:
   items:
   - name: 受控碼的程式碼分析
     items:
-    - name: FxCop 分析器常見問題集
-      href: fxcop-analyzers-faq.md
-    - name: 從 FxCop 移轉
-      href: fxcop-analyzers.yml
+    - name: FxCop 分析器
       items:
-      - name: 安裝 FxCop 分析器
+      - name: 常見問題集
+        href: fxcop-analyzers-faq.md
+      - name: 安裝
         href: install-fxcop-analyzers.md
+      - name: 設定
+        href: configure-fxcop-analyzers.md
+        items:
+        - name: 組態選項
+          href: fxcop-analyzer-options.md
+      - name: 從靜態程式碼分析移轉
+        href: fxcop-analyzers.yml
+    - name: 分析器常見問題集
+      href: analyzers-faq.md
     - name: 安裝 Roslyn 分析器
       href: install-roslyn-analyzers.md
-    - name: 設定與使用 Roslyn 分析器
+    - name: 使用及設定 Roslyn 分析器
       href: use-roslyn-analyzers.md
     - name: 啟用自動程式碼分析
       href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
@@ -153,7 +161,7 @@ items:
   - name: 受控碼的程式碼分析警告
     href: code-analysis-for-managed-code-warnings.md
     items:
-    - name: 依據 CheckId 列出 Managed 程式碼的程式碼分析警告
+    - name: 依據 CheckId 列出受控程式碼的程式碼分析警告
       href: code-analysis-warnings-for-managed-code-by-checkid.md
     - name: 密碼編譯警告
       href: cryptography-warnings.md
@@ -479,6 +487,8 @@ items:
         href: ca2004-remove-calls-to-gc-keepalive.md
       - name: CA2006:必須使用 SafeHandle 封裝原生資源
         href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+      - name: CA2007:不直接等候工作
+        href: ca2007-do-not-directly-await-task.md
     - name: 安全性警告
       href: security-warnings.md
       items:
@@ -1468,9 +1478,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd 錯誤
       href: fxcopcmd-errors.md
-ms.openlocfilehash: 4d6e4458e334cc1d51b65ae9ba8eaeb83fc70aa2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: daaf61f508d3e14c26044b181c478e5701afe6ed
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835146"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868114"

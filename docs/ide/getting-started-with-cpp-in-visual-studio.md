@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 2a5edfb7983de5cb794c27907abc19191be99dee
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796643"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070278"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
 
@@ -26,7 +26,17 @@ ms.locfileid: "56796643"
 
 您不需要熟悉 C++ 即可完成此快速入門，但應該熟悉一些一般程式設計和偵錯概念。 Visual Studio 文件不會教導您如何在 C++ 中進行程式設計。 不錯的 C++ 學習資源指南是 ISO C++ 網站上的[使用者入門](https://isocpp.org/get-started)頁面。
 
-若要跟著做，則您需要已安裝**使用 C++ 的桌面開發**工作負載的 Visual Studio 2017 15.3 版或更新版本複本。 如需安裝的快速指南，請參閱[在 Visual Studio 中安裝 C++ 支援](/cpp/build/vscpp-step-0-installation)。
+::: moniker range="vs-2017"
+
+若要跟著做，您需要一份 Visual Studio 2017 複本，其中已安裝**使用 C++ 的桌面開發**工作負載。 如需安裝的快速指南，請參閱[在 Visual Studio 中安裝 C++ 支援](/cpp/build/vscpp-step-0-installation)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+若要跟著做，您需要一份 Visual Studio 2019 複本，其中已安裝**使用 C++ 的桌面開發**工作負載。 如需安裝的快速指南，請參閱[在 Visual Studio 中安裝 C++ 支援](/cpp/build/vscpp-step-0-installation)。
+
+::: moniker-end
 
 ## <a name="create-a-console-app"></a>建立主控台應用程式
 
@@ -42,7 +52,7 @@ ms.locfileid: "56796643"
 
 ::: moniker range=">=vs-2019"
 
-開啟 Visual Studio 後，會先出現 [啟動] 視窗。 選取 [繼續但不使用程式碼] 來開啟開發環境。
+開啟 Visual Studio 後，會先出現 [啟動] 視窗。 選取 [不使用程式碼繼續] 以開啟開發環境。
 
 您會看到 IDE 的三個基本部分：工具視窗、功能表和工具列，以及主視窗空間。 工具視窗停駐在應用程式視窗的左側和右側。 [快速啟動] 方塊、功能表列和標準工具列位於頂端。 當您載入方案或專案時，編輯器和設計工具會出現在應用程式視窗的中央區域。 在開發應用程式時，您大部分時間都會在此中央區域工作。
 

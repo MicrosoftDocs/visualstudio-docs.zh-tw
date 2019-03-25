@@ -1,6 +1,6 @@
 ---
 title: CA1711:識別項名稱不應該使用不正確的後置字元
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1711
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9773dc808d6fbbc7161053dcd4d7a1d7d4e6f13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 83eff2b91a62d389f2273ff600e077eaea379d88
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970227"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871885"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711:識別項名稱不應該使用不正確的後置字元
 
@@ -33,6 +33,8 @@ ms.locfileid: "55970227"
 ## <a name="cause"></a>原因
 
 識別項具有不正確的後置詞。
+
+根據預設，此規則只會查看外部可見的識別項，但這[可設定](#configurability)。
 
 ## <a name="rule-description"></a>規則描述
 
@@ -72,6 +74,16 @@ ms.locfileid: "55970227"
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
 除非後置字元在應用程式定義域中具有明確的意義，否則請不要隱藏這項規則的警告。
+
+## <a name="configurability"></a>設定功能
+
+如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
+
+```
+dotnet_code_quality.ca1711.api_surface = private, internal
+```
+
+此類別 （命名） 中，您可以設定此選項，只是這項規則，所有規則，或所有的規則。 如需詳細資訊，請參閱 <<c0> [ 設定的 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="related-rules"></a>相關的規則
 

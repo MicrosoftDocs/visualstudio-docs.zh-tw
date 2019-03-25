@@ -2,7 +2,6 @@
 title: IDebugProperty 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e5e5274e8a3d1c81ce010afc3893b27510a0fad
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 963b11a4760fad8086822f13db129fae76467802
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348356"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145755"
 ---
 # <a name="idebugproperty-interface"></a>IDebugProperty 介面
 用來描述任何階層式實體的屬性進行偵錯具有名稱、 類型和值。 大多數情況下，`IDebugProperty`用來描述運算式評估、 陳述式的評估或註冊評估的結果。  

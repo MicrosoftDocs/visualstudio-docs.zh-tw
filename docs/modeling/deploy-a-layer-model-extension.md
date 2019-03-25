@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594f4118f8c6876857b862d6423180403f4f96c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8fe915f31181af4158bdfe7e292313886ed7d4c
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915617"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983100"
 ---
 # <a name="deploy-a-layer-model-extension"></a>部署圖層模型擴充功能
 
@@ -37,9 +37,19 @@ ms.locfileid: "55915617"
 
 ### <a name="to-uninstall-the-extension"></a>安裝擴充功能
 
-1.  在 Visual Studio 中，在**工具**功能表上，按一下**擴充功能和更新**。
+::: moniker range="vs-2017"
 
-2.  按一下 延伸模組的名稱，然後按一下**解除安裝**。
+1. 在 Visual Studio 中，選擇**工具** > **擴充功能和更新**。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 在 Visual Studio 中，選擇**延伸模組** > **管理延伸模組**。
+
+::: moniker-end
+
+2. 按一下 延伸模組的名稱，然後按一下**解除安裝**。
 
 ## <a name="install-an-extension-on-team-foundation-server"></a>Team Foundation Server 上安裝擴充功能
 

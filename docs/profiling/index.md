@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: 使用分析測量應用程式效能 |Microsoft Docs
-description: 了解如何使用 Visual Studio 2017，以您選擇的語來言分析應用程式、服務及工具的效能。
+description: 了解如何使用 Visual Studio，以您選擇的語來言分析應用程式、服務及工具的效能。
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
@@ -11,6 +11,8 @@ manager: jillfra
 # <a name="measure-app-performance-in-visual-studio"></a>在 Visual Studio 中測量應用程式的效能
 
 程式碼剖析和診斷工具可協助您診斷記憶體和 CPU 使用量，以及其他應用程式層級的問題。 利用這些工具，您可以隨著您在偵錯工具中執行應用程式時間而累積資料 (例如變數值、函式呼叫和事件)。 您可以在執行程式碼時檢視應用程式在不同時間點的狀態。
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>

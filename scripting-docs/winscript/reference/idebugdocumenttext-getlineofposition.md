@@ -1,8 +1,7 @@
 ---
-title: IDebugDocumentText::GetLineOfPosition |Microsoft Docs
+title: IDebugDocumentText::GetLineOfPosition | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c916f0a76021afea82b4021ed1ce7d411317807
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 4d5d33a68b4bc87307281e37ff96f84834257a22
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087707"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58156004"
 ---
 # <a name="idebugdocumenttextgetlineofposition"></a>IDebugDocumentText::GetLineOfPosition
 傳回指定的字元位置的行號，並選擇性地對應之行內的字元位移。  

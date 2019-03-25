@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603761f2886ffc64170774a2d6c460d39596454b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e6530f5f2856953041039171b2604236706bfd3
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922026"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525135"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>HOW TO：取得使用 [圖形] 檢視設定的結構描述的概觀
 
@@ -27,7 +27,7 @@ ms.locfileid: "55922026"
 
 3.  XML 結構描述範例程式碼複製[範例 XML 結構描述： 關聯性](../xml-tools/sample-xsd-file-relationships.md)並貼上取代預設新增至新 XSD 檔案的程式碼。
 
-4.  以滑鼠右鍵按一下 XML 編輯器中，然後選取**檢視表設計工具**。
+4.  以滑鼠右鍵按一下 XML 編輯器中的任何位置，然後選取**檢視表設計工具**。
 
 5.  選取 [圖形] 檢視，從**XSD 工具列**。
 

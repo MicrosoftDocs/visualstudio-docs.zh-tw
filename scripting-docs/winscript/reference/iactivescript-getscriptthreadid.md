@@ -1,8 +1,7 @@
 ---
-title: IActiveScript::GetScriptThreadID |Microsoft Docs
+title: IActiveScript::GetScriptThreadID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b1c68d60b827e7540711cdf6ba34260fb8642ed
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: d329e08e6a17d9edcdf26e14b468c3c56f036c00
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094870"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154396"
 ---
 # <a name="iactivescriptgetscriptthreadid"></a>IActiveScript::GetScriptThreadID
 擷取與指定的 Win32 執行緒相關聯執行緒的指令碼引擎-定義識別碼。  

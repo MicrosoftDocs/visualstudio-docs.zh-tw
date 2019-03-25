@@ -2,7 +2,6 @@
 title: ExtendedDebugPropertyInfo 結構 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0251d4b578a33a9eb5448c1ceb2b2607f82d43a
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 1fe0eef00d2bf064a8a002925f4ba5607d36f31c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096761"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160468"
 ---
 # <a name="extendeddebugpropertyinfo-structure"></a>ExtendedDebugPropertyInfo 結構
 擴充`DebugPropertyInfo`結構描述的擴充的屬性的其他成員。  

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: bb470e245f41bc83245d8c2234753ad84c0ee8db
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa0af441071c90ca42d7aa7169c75803bebeb255
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936300"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869001"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>作法：從 Visual Studio 將 Web 應用程式移轉及發佈到 Azure 雲端服務
 
@@ -30,7 +30,7 @@ ms.locfileid: "55936300"
 1. 對於 MVC 2、MVC 3、MVC 4 和 Silverlight 商務應用程式所需的組件，Visual Studio 也會將 [複製到本機] 屬性設定為 true。 此屬性會將這些組件新增到用於部署的服務封裝中。
 
    > [!Important]
-   > 如果此 Web 應用程式有其他必要組件或檔案，您必須手動設定這些檔案的屬性。 如需如何設定這些屬性的資訊，請參閱[將檔案包含在服務封裝內](#include-files-in-the-service-package)。
+   > 如果此 Web 應用程式有其他必要組件或檔案，您必須手動設定這些檔案的屬性。 如需如何設定這些屬性的資訊，請參閱[將檔案包含在服務封裝內](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package)。
 
 ### <a name="errors-and-warnings"></a>錯誤和警告
 

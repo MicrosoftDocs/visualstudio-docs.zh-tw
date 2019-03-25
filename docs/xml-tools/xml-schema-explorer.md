@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ac977be83440bfd3e0b1436635bbeb9c39c0ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24dd2c13a0d2d4d2a98d11e5154b96261d19d492
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915982"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525706"
 ---
 # <a name="xml-schema-explorer"></a>XML 結構描述總管
 
@@ -31,7 +31,7 @@ ms.locfileid: "55915982"
 
 -   依據文件順序、類型或名稱排序樹狀。 如需詳細資訊，請參閱 <<c0> [ 排序、 篩選和群組](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)。
 
--   開啟 XML 編輯器並跳到 XSD 檔中的程式碼位置。 如需詳細資訊，請參閱 <<c0> [ 使用 XML 編輯器整合](../xml-tools/integration-with-xml-editor.md)。
+-   XML 編輯器中開啟，並跳至 XSD 檔案中的程式碼位置。 如需詳細資訊，請參閱 <<c0> [ 與 XML 編輯器整合](../xml-tools/integration-with-xml-editor.md)。
 
 -   針對全域項目產生範例 XML。
 
@@ -45,7 +45,7 @@ ms.locfileid: "55915982"
 
 -   您可以存取**XML 結構描述總管**從 *.vb*具有相關聯的 Visual Basic XML 常值的檔案 *.xsd*檔案。 若要查看結構描述中設定**XML 結構描述總管**，以滑鼠右鍵按一下 XML 常值或 XML 命名空間匯入中的 XML 節點，然後選取**在結構描述總管中顯示**命令。 如需詳細資訊，請參閱 <<c0> [ 整合的 XML 常值與 XML 結構描述總管](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)。
 
-## <a name="tree-view"></a>樹狀檢閱
+## <a name="tree-view"></a>樹狀檢視
  **XML 結構描述總管**顯示預先編譯的結構描述樹狀結構中設定資訊。 此樹狀會依照下列方式組織：
 
 -   最上層是結構描述設定節點。

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab79e4cbc9ab9b37a9052ee1337a5e9b94a6947
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742452"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983854"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio 中的部署簡介
 
@@ -107,9 +107,9 @@ ms.locfileid: "55742452"
 
 - MSI 型安裝程式套件可以使用 [WiX 工具組 Visual Studio 2017 延伸模組](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)來建立。 這是命令列工具組。
 
-- 可以使用 Flexera Software 的 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) 來建立 MSI 或 EXE 安裝程式套件。 InstallShield 可以與 Visual Studio 2017 (不支援 Community Edition) 搭配使用。 請注意，InstallShield Limited Edition 不再隨附於 Visual Studio，且 Visual Studio 2017 不支援該版本；請洽詢 [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) 以了解未來的供應狀況。
+- 可以使用 Flexera Software 的 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) 來建立 MSI 或 EXE 安裝程式套件。 InstallShield 可能會與 Visual Studio 2017 和更新版本 (不支援 Community Edition) 搭配使用。 請注意，InstallShield Limited Edition 不再隨附於 Visual Studio，且 Visual Studio 2017 和更新版本不支援該版本；請洽詢 [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) \(英文\) 以了解未來的供應狀況。
 
-- 可以使用安裝專案 (vdproj) 建立 MSI 或 EXE 安裝程式套件。 若要使用此選項，請安裝 [Visual Studio 2017 安裝程式專案延伸模組](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview)。
+- 可以使用安裝專案 (vdproj) 建立 MSI 或 EXE 安裝程式套件。 若要使用此選項，請安裝 [Visual Studio 安裝程式專案擴充功能](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview) \(英文\)。
 
 - 您也可以藉由設定泛型安裝程式 (稱為啟動載入器) 來安裝傳統型應用程式的必要條件元件。 如需詳細資訊，請參閱[應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)。
 
@@ -127,7 +127,7 @@ ms.locfileid: "55742452"
 | --- | --- | --- |
 | **Office 應用程式** | 您可以從 Visual Studio 發行 Office 的增益集。 | [部署和發行 Office 增益集](https://dev.office.com/docs/add-ins/publish/publish) |
 | **WCF 或 OData 服務** | 其他應用程式可以使用您部署至 Web 伺服器的 WCF RIA 服務。 | [開發和部署 WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | Visual Studio 2017 中不再支援 LightSwitch，但仍然能夠從 Visual Studio 2015 和更早版本加以部署。 | [部署 LightSwitch 應用程式](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
+| **LightSwitch** | 從 Visual Studio 2017 開始就不再支援 LightSwitch，但仍然能夠從 Visual Studio 2015 和更早版本加以部署。 | [部署 LightSwitch 應用程式](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>後續步驟
 

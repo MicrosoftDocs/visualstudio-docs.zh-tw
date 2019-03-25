@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,21 +14,21 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 41582f9f27b16a41c3ef10196f3cd29323579b4b
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: c4475836a9d4cdd394bff78280c5c075dd960e1d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450252"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223542"
 ---
-# <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 Preview 的新功能
+# <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
-**[Preview 3 版本](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)的更新**
+**[候選版 (RC)](/visualstudio/releases/2019/release-notes/) 的更新**
 
 >[!div class="button"]
->[下載預覽](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
+>[下載 RC](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
 
-Visual Studio 2019 Preview 包含許多一般性改良，以及將開發人員生產力及小組共同作業最佳化的新功能。 無論您是第一次使用 Visual Studio 還是多年的使用者，皆能在開發週期的各種面向上利用其功能&mdash;從建立簡化的專案和程式碼健康狀態管理，到團隊與開放原始碼共同作業的工作流程。<br/><br/>
+Visual Studio 2019 包含許多一般性改善，以及可最佳化開發人員生產力與小組共同作業的新功能。 無論您是第一次使用 Visual Studio 還是多年的使用者，皆能在開發週期的各種面向上利用其功能&mdash;從建立簡化的專案和程式碼健康狀態管理，到團隊與開放原始碼共同作業的工作流程。<br/><br/>
 
 >[!VIDEO https://channel9.msdn.com/Events/Connect/Microsoft-Connect--2018/D190/player]
 
@@ -39,7 +39,7 @@ Visual Studio 2019 Preview 包含許多一般性改良，以及將開發人員�
 * **[持續創新](#continuous-innovation)**。 利用雲端等智慧支援項目，高效編寫程式碼。
 
 > [!NOTE]
-> 如需 Visual Studio 2019 Preview 中新功能的完整清單，請參閱[版本資訊](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)。
+> 如需 Visual Studio 2019 新功能的完整清單，請參閱[版本資訊](/visualstudio/releases/2019/release-notes/) 和 [Preview 4 版本資訊](/visualstudio/releases/2019/release-notes-preview/)。 如需這兩個最新版本的詳細資訊，請參閱 [Visual Studio 2019 Release Candidate now available](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-release-candidate-rc-now-available/) (Visual Studio 2019 候選版現已開放下載) 部落格文章。
 
 ## <a name="personal-and-team-productivity"></a>個人和團隊生產力
 
@@ -75,7 +75,7 @@ Visual Studio 2019 Preview 包含許多一般性改良，以及將開發人員�
 
 #### <a name="search-within-a-watch-window-and-format-watch-values"></a>在 [監看式] 視窗中搜尋，並將監看值格式化
 
-在 [監看式] 視窗中查看一組值中的字串，您先前可能已進行過。 在 Visual Studio 2019 Preview 中，我們在 [監看式]、[區域變數] 和 [自動變數] 視窗中新增了搜尋功能，可協助您尋找物件和值。
+在 [監看式] 視窗中查看一組值中的字串，您先前可能已進行過。 在 Visual Studio 2019 中，我們在 [監看式]、[區域變數] 和 [自動變數] 視窗中新增了搜尋功能，可協助您尋找物件和值。
 
 在 [監看式]、[區域變數] 和 [自動變數] 視窗的顯示方式，您也能加以格式化。  在任一視窗中的其中一個項目上按兩下，並新增逗號 (",") 來存取可用格式規範的下拉式清單，其中每一項都包含其預期效果的描述。
 
@@ -87,7 +87,7 @@ Visual Studio 2019 Preview 包含許多一般性改良，以及將開發人員�
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 這項開發人員服務可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當自然且安全。
 
-這項服務預設會安裝於 Visual Studio 2019 Preview。
+Visual Studio 2019 預設會安裝這項服務。
 
 ![顯示 Visual Studio 2019 中 Live Share 共同作業功能的動畫 GIF 檔案](media/live-share-collaboration.gif)
 
@@ -97,7 +97,7 @@ Visual Studio 2019 Preview 包含許多一般性改良，以及將開發人員�
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>管理來自 IDE 的提取要求 (PR)
 
-此次推出新的延伸模組，您可以下載來與 Visual Studio 2019 Preview 搭配使用。 使用這個新的延伸模組，您可以檢閱、執行偵錯要求，或是從您的團隊提取這些要求，而無需離開 Visual Studio IDE [(整合式開發環境)](../get-started/visual-studio-ide.md)。 我們目前支援 Azure Repos 中的程式碼，但正在將支援擴大至 GitHub 並改善整體體驗。
+此次推出新的延伸模組，您可以下載並與 Visual Studio 2019 搭配使用。 使用這個新的延伸模組，您可以檢閱、執行偵錯要求，或是從您的團隊提取這些要求，而無需離開 Visual Studio IDE [(整合式開發環境)](../get-started/visual-studio-ide.md)。 我們目前支援 Azure Repos 中的程式碼，但正在將支援擴大至 GitHub 並改善整體體驗。
 
 若要立即開始，您可以從 Visual Studio Marketplace 下載[適用於 Visual Studio 的提取要求](https://aka.ms/pr4vs)延伸模組。
 
@@ -110,7 +110,7 @@ Visual Studio 2019 的預覽版本支援為任何平台建置 [.NET Core 3](http
 如需詳細資訊，請參閱下列頁面：
 
 * [.NET Core 3 Preview 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) \(英文\) 和 [.NET Core 3 Preview 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md)版本資訊
-* [宣佈推出 .NET Core 3 Preview 1](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) \(英文\) 和[宣佈推出 .NET Core 3 Preview 2](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/) \(英文\) 部落格文章
+* [宣佈推出 .NET Core 3 Preview 1](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) \(英文\) 和[宣佈推出 .NET Core 3 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/) \(英文\) 部落格文章
 
 ## <a name="continuous-innovation"></a>持續創新
 
@@ -118,7 +118,7 @@ Visual Studio 2019 的預覽版本支援為任何平台建置 [.NET Core 3](http
 
 如果您以不同顯示比例因素設定監視器，或從遠端連線到具有不同於您主要裝置顯示比例因素的機器，您可能會發現 Visual Studio 的顯示模糊，或以錯誤的比例轉譯。
 
-對 Visual Studio 而言，Visual Studio 2019 Preview 版本使其往個別監視器感知 (PMA) 應用程式的方向邁進。 我們正在進行能讓 Visual Studio 正確轉譯的基礎工作，不論您使用的顯示比例因素為何。
+Visual Studio 2019 的發行意謂著 Visual Studio 已往個別監視器感知 (PMA) 應用程式的方向踏出第一步。 我們正在進行能讓 Visual Studio 正確轉譯的基礎工作，不論您使用的顯示比例因素為何。
 
    ![Visual Studio 2019 中的個別監視器感知 (PMA) 轉譯](media/per-monitor-aware-dpi-scaling.png)
 
@@ -153,6 +153,7 @@ Visual Studio 2019 的預覽版本支援為任何平台建置 [.NET Core 3](http
 
 ## <a name="see-also"></a>另請參閱
 
-* [Visual Studio 2019 版本資訊](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Visual Studio 2019 版本資訊](/visualstudio/releases/2019/release-notes/)
+* [Visual Studio 2019 SDK 的新功能](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Microsoft Connect(); 2018 會議](https://www.microsoft.com/connectevent)
 * [Visual Studio 2017 的新功能](whats-new-visual-studio-2017.md)

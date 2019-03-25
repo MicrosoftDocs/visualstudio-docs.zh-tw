@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7fd6319c9c4527988511c423cd2094ffa34d93c3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805549"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194920"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Porting, Migrating, and Upgrading Visual Studio Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "54805549"
 |Office 2007 VSTO|如果您升級專案，以 Office 2013 和 .NET Framework 4 為目標，則可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]或 Visual Studio 2010 SP1 中開啟這個專案。|
 |Office 2010 VSTO|如果專案是以 .NET Framework 4 為目標，您就可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟專案。 所有其他專案則需要單向升級。|
 |豐富網際網路應用程式|如果您升級專案，則可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟專案。|
-|SharePoint 2007|這個專案無法在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中開啟。 不過，如果您手動升級專案至 SharePoint 2010，就可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟專案。 如需如何升級 SharePoint 2007 的詳細資訊，請參閱 [Migrating from SharePoint 2007 to SharePoint 2010 for the IT Pro](http://go.microsoft.com/fwlink/?LinkId=238224) (從 SharePoint 2007 移轉到 SharePoint 2010 (IT 專業人士適用))、[Migrating a 2007 Workflow to Visual Studio & SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=238225) (將 2007 工作流程移轉到 Visual Studio) 和 [SharePoint Enterprise Search Migration Tool for SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=238226)。|
+|SharePoint 2007|這個專案無法在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中開啟。 不過，如果您手動升級專案至 SharePoint 2010，就可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟專案。 如需如何升級 SharePoint 2007 的詳細資訊，請參閱[從 SharePoint 2007 移轉至 SharePoint 2010 IT 專業人員](http://go.microsoft.com/fwlink/?LinkId=238224)和[SharePoint Enterprise Search Migration Tool for SharePoint Server 2010](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)).|
 |SharePoint 2010|您可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟專案。|
 |SketchFlow|如果您允許 Visual Studio 升級專案至 WPF 4.5/Silverlight 5，則可以在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 和 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中開啟專案。|
 |[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] 資料庫|您可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟專案。 如果您有舊版 SQL Server 建立的資料庫檔案 (.mdf)，則必須將其升級至 [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] ，才能搭配 SQL Server Express LocalDB 使用該資料庫檔案，但是該資料庫不再與舊版 SQL Server 相容。 如果您不升級，則在同一台電腦上安裝和使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ，就可以繼續在 [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] 中使用資料庫。 如需詳細資訊，請參閱 <<c0> [ 升級的.mdf 檔案](../data-tools/upgrade-dot-mdf-files.md)。|
@@ -91,7 +91,7 @@ ms.locfileid: "54805549"
 
 - 如果您嘗試在 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]中開啟桌面應用程式的專案，將會發生錯誤並顯示下列其中一個訊息：「這個版本的 Visual Studio 僅支援 [!INCLUDE[win81](../includes/win81-md.md)] 應用程式」或「這個專案與目前的 Visual Studio 版本不相容」。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 只能用於開發、測試和部署針對 Windows 8.1 所設計的 Windows 市集應用程式。 若要開啟桌面應用程式專案，您必須使用支援該專案類型的 Visual Studio 版本。
 
-   如需 Visual Studio 版本的詳細資訊，請參閱 [Microsoft Visual Studio 產品](http://go.microsoft.com/fwlink/?LinkId=254332)
+   如需 Visual Studio 版本的詳細資訊，請參閱 [Microsoft Visual Studio 產品](https://visualstudio.microsoft.com/products/)
 
 - 如果您嘗試在 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop 中開啟 Windows 市集應用程式專案，會發生錯誤。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop 不可用來建置 Windows 市集應用程式。 如果您想要建置 Windows 市集應用程式，您也可以安裝 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]。 或者，若要開發適用於所有 Microsoft 平台和 Web 的應用程式，請嘗試 Visual Studio Professional 2013。
 

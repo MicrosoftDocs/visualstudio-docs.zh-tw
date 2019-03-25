@@ -12,16 +12,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: c46644b18188475bd6389a795625209f74a7d9b5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f24e3460cb1298a36d0365781aa82cf55d8478d3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021984"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983321"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>使用 C++ 來安裝跨平台行動裝置應用程式開發
 
-您可以使用 Visual Studio 中的 C++ 來建置 Windows 傳統型應用程式、通用 Windows 平台 (UWP) 應用程式、Linux 應用程式，現在還可以建立適用於 Android 和 iOS 的應用程式。 「使用 C++ 進行行動開發」工作負載是 Visual Studio 中一組可安裝的元件，其中包括了跨平台 iOS、Android 及 UWP Visual Studio 範本。 它會安裝快速入門所需的跨平台工具和 SDK，讓您無須自行尋找、下載及設定它們。 您可以使用 Visual Studio 中的這些工具來輕鬆建立、編輯、偵錯及測試跨平台專案。 本主題描述如何安裝使用 Visual Studio 以 C++ 開發跨平台應用程式時，所需的工具和協力廠商軟體。 如需相關概觀，請參閱 [Visual C++ 跨平台行動開發](https://go.microsoft.com/fwlink/p/?LinkId=536383)
+您可以使用 Visual Studio 中的 C++ 來建置 Windows 傳統型應用程式、通用 Windows 平台 (UWP) 應用程式、Linux 應用程式，現在還可以建立適用於 Android 和 iOS 的應用程式。 「使用 C++ 進行行動開發」工作負載是 Visual Studio 中一組可安裝的元件，其中包括了跨平台 iOS、Android 及 UWP Visual Studio 範本。 它會安裝快速入門所需的跨平台工具和 SDK，讓您無須自行尋找、下載及設定它們。 您可以使用 Visual Studio 中的這些工具來輕鬆建立、編輯、偵錯及測試跨平台專案。 本主題描述如何安裝使用 Visual Studio 以 C++ 開發跨平台應用程式時，所需的工具和協力廠商軟體。 如需相關概觀，請參閱 [Visual C++ 跨平台行動開發](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)
 
 ## <a name="requirements"></a>需求
 
@@ -40,7 +40,7 @@ ms.locfileid: "55021984"
 
 ## <a name="get-the-tools"></a>取得工具
 
-Visual Studio Community、Professional 及 Enterprise 版本中都有提供「使用 C++ 進行行動開發」。 若要取得 Visual Studio，請前往 [Visual Studio 下載](https://go.microsoft.com/fwlink/p/?linkid=517106)頁面。 從 Visual Studio 2015 Update 2 或更新版本開始，即有提供跨平台行動裝置應用程式開發工具。
+Visual Studio Community、Professional 及 Enterprise 版本中都有提供「使用 C++ 進行行動開發」。 若要取得 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/)頁面。 從 Visual Studio 2015 開始，即提供跨平台行動裝置應用程式開發工具。
 
 ## <a name="install-the-tools"></a>安裝工具
 
@@ -52,7 +52,7 @@ Visual Studio Community、Professional 及 Enterprise 版本中都有提供「�
 
 - Google Android Emulator 和 Intel Hardware Accelerated Execution Manager 是選用但建議使用的元件。 您可以在 Android 裝置上直接進行開發和偵錯，但在桌面上使用模擬器來進行偵錯通常較簡單。 Microsoft 也提供可個別安裝的 Visual Studio Android 模擬器。
 
-#### <a name="to-install-the-mobile-development-with-c-workload-in-visual-studio-2017"></a>安裝 Visual Studio 2017 中的「使用 C++ 進行行動開發」工作負載
+### <a name="install-the-mobile-development-with-c-workload"></a>安裝「使用 C++ 進行行動開發」工作負載
 
 1. 從 [開始] 功能表執行 [Visual Studio 安裝程式]。
 
@@ -71,37 +71,10 @@ Visual Studio Community、Professional 及 Enterprise 版本中都有提供「�
    > [!IMPORTANT]
    > 您必須重新啟動，確定一切都已正確安裝。
 
-1. 開啟 Visual Studio。 如果這是您第一次執行 Visual Studio，可能需要一些時間來設定和登入。 當 Visual Studio 準備就緒時，請檢查是否有任何更新並加以安裝。
+1. 開啟 Visual Studio。
 
-#### <a name="to-install-the-mobile-development-component-and-third-party-tools-in-visual-studio-2015"></a>安裝 Visual Studio 2015 中的行動裝置應用程式開發元件和協力廠商工具
-
-如果您使用 Visual Studio 2015，其安裝程式會包括一個可安裝「適用於跨平台行動裝置應用程式開發的 Visual C++」的選項，這會安裝 Visual Studio 2015 中必要的 C++ 語言工具、範本及元件。
-
-1. 執行 Visual Studio 2015 安裝程式。 若要安裝選用元件，請選擇 [自訂]  做為安裝類型。 選擇 [下一步]  ，選取要安裝的選用元件。
-
-1. 在 [選取功能] 中，展開 [跨平台行動開發]，然後核取 [Visual C++ 行動開發]。
-
-   ![選取 Visual C++ 行動開發](../cross-platform/media/cppmdd_install_vcmdd.png "CPPMDD_Install_VCMDD")
-
-   根據預設，當您選取 [Visual C++ 行動開發] 時，會設定 [程式語言] 選項以安裝 [Visual C++]，並設定 [常用工具及軟體開發套件] 選項以安裝協力廠商的必要元件。 您可以視需要選擇其他元件。 預設也會選取 [Android 版 Microsoft Visual Studio 模擬器]。 已安裝的元件在清單中會顯示為非使用中。
-
-   若要建置通用 Windows 應用程式，並在您的 Android 和 iOS 專案之間共用程式碼，在 [選取功能] 中，展開 [Windows 及 Web 程式開發]，然後核取 [通用 Windows 應用程式開發工具]。 如果您不打算建置通用 Windows 應用程式，則可略過此選項。
-
-   選擇 [下一步]  繼續進行。
-
-1. 協力廠商元件會有自己的授權條款。 您可以選擇每個元件旁的 [授權條款]  連結，以檢視授權條款。 選擇 [安裝] 來新增元件，並安裝 Visual Studio 和適用於跨平台行動裝置開發的 Visual C++。
-
-1. 安裝完成時，關閉安裝程式，然後重新啟動電腦。 適用於協力廠商元件的部分安裝動作要在重新啟動電腦之後才會生效。
-
-   > [!IMPORTANT]
-   > 您必須重新啟動，確定一切都已正確安裝。
-
-   如果無法安裝 Android 版 Microsoft Visual Studio 模擬器元件，則您的電腦可能並未啟用 HYPER-V。 使用 [開啟或關閉 Windows 功能] 控制台應用程式來啟用 HYPER-V，然後再次執行 Visual Studio 安裝程式。
-
-   > [!NOTE]
-   > 如果您的電腦或 Windows 版本不支援 HYPER-V，您就無法使用Android 版 Microsoft Visual Studio 模擬器元件。 Windows 的 Home Edition 不包含 HYPER-V 支援。
-
-1. 開啟 Visual Studio。 如果這是您第一次執行 Visual Studio，可能需要一些時間來設定和登入。 當 Visual Studio 就緒時，請在 [工具]  功能表中依序選取 [擴充功能和更新] 、[更新] 。 如果有適用於 Visual C++ for Cross-Platform Mobile Development 或 Microsoft Visual Studio Emulator for Android 的 Visual Studio 更新，請加以安裝。
+> [!NOTE]
+> 如果您使用 Visual Studio 2015，請參閱[安裝適用於跨平台行動裝置應用程式開發的 Visual C++ (Visual Studio 2015)](/cross-platform/install-visual-cpp-for-cross-platform-mobile-development?view=vs-2015)
 
 ## <a name="install-tools-for-ios"></a>Install tools for iOS
 

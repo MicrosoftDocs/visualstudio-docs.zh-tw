@@ -2,7 +2,6 @@
 title: IScriptNode::GetCookie |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e133afbac4b75a5b9c24ee33148edd1114b33452
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: b05d184af3ecd6302fc05893600fd7026eeca3ad
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094233"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58149389"
 ---
 # <a name="iscriptnodegetcookie"></a>IScriptNode::GetCookie
 傳回應用程式定義的值，用來與主機物件關聯的程式碼片段。  

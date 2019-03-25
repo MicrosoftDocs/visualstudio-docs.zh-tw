@@ -1,7 +1,7 @@
 ---
 title: 如何套用 Python 搜尋路徑
 description: Visual Studio 提供更具體方法來指定環境和專案的搜尋路徑，以避免使用全系統變數。
-ms.date: 11/12/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4befbce86d05fc9e3c52247ed71abc8c5ca5e6a6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 55995d53f763bcc3f13338e52b255135bbefa15b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929904"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58147731"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio 如何使用 Python 搜尋路徑
 
@@ -31,7 +31,12 @@ ms.locfileid: "55929904"
 
 若要新增搜尋路徑，請前往 [方案總管]、展開您的專案節點、以滑鼠右鍵按一下 [搜尋路徑]、選取 [將資料夾新增至搜尋路徑]：
 
+::: moniker range="vs-2017"
 ![[方案總管] 中，搜尋路徑上的 [將資料夾新增至搜尋路徑] 命令](media/search-paths-command.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![[方案總管] 中，搜尋路徑上的 [將資料夾新增至搜尋路徑] 命令](media/search-paths-command-2019.png)
+::: moniker-end
 
 此命令會顯示瀏覽器，然後您會在其中選取要包含的資料夾。
 

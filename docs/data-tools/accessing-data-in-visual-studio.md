@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 447c51193845e4cc558ed70bcd89b68ceef888fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3adedb95931dfc2f683595fc97bb98821e32fb38
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919166"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983490"
 ---
 # <a name="access-data-in-visual-studio"></a>使用 Visual Studio 存取資料
 
@@ -65,10 +65,20 @@ JavaScript、 Python、 PHP、 Ruby 或 c + + 中的應用程式，您連接到�
 - VelocityDB
 - 等等...
 
-許多資料庫供應商，以及第三方支援 Visual Studio 整合的 NuGet 套件。 在 nuget.org 上或透過 NuGet 套件管理員在 Visual Studio 中，您可以瀏覽供應項目 (**工具** > **NuGet 套件管理員** > **管理 nuget 封裝方案套件**)。 與 Visual Studio 整合擴充功能為其他資料庫產品。 您可以瀏覽至連線，瀏覽這些供應項目，在 Visual Studio Marketplace**工具**，**擴充功能和更新**，然後選取**Online**的左窗格中 對話方塊。 如需詳細資訊，請參閱 <<c0> [ 相容的資料庫系統，適用於 Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md)。
+::: moniker range="vs-2017"
+
+許多資料庫供應商，以及第三方支援 Visual Studio 整合的 NuGet 套件。 在 nuget.org 上或透過 NuGet 套件管理員在 Visual Studio 中，您可以瀏覽供應項目 (**工具** > **NuGet 套件管理員** > **管理 nuget 封裝方案套件**)。 與 Visual Studio 整合擴充功能為其他資料庫產品。 您可以瀏覽這些供應項目[Visual Studio Marketplace](https://marketplace.visualstudio.com/)或瀏覽至**工具** > **擴充功能和更新**，然後選取**線上**對話方塊的左窗格中。 如需詳細資訊，請參閱 <<c0> [ 相容的資料庫系統，適用於 Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+許多資料庫供應商，以及第三方支援 Visual Studio 整合的 NuGet 套件。 在 nuget.org 上或透過 NuGet 套件管理員在 Visual Studio 中，您可以瀏覽供應項目 (**工具** > **NuGet 套件管理員** > **管理 nuget 封裝方案套件**)。 與 Visual Studio 整合擴充功能為其他資料庫產品。 您可以瀏覽這些供應項目[Visual Studio Marketplace](https://marketplace.visualstudio.com/)或瀏覽至**擴充功能** > **管理延伸模組**，然後選取**線上**對話方塊的左窗格中。 如需詳細資訊，請參閱 <<c0> [ 相容的資料庫系統，適用於 Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md)。
+
+::: moniker-end
 
 > [!NOTE]
-> SQL Server 2005 的延長的支援已於 2016 年 4 月 12 日結束。 沒有 data tools 在 Visual Studio 2015 和更新版本會繼續使用 SQL Server 2005，此日期之後無法保證。 如需詳細資訊，請參閱 <<c0> [ 適用於 SQL Server 2005 的結束支援公告](https://www.microsoft.com/sql-server/sql-server-2005)。
+> SQL Server 2005 的延長的支援已於 2016 年 4 月 12 日結束。 沒有 data tools 在 Visual Studio 2015 和更新版本會繼續使用 SQL Server 2005 保證。 如需詳細資訊，請參閱 <<c0> [ 適用於 SQL Server 2005 的結束支援公告](https://www.microsoft.com/sql-server/sql-server-2005)。
 
 ## <a name="net-languages"></a>.NET 語言
 

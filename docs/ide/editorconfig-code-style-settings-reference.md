@@ -16,18 +16,22 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 52848599e05f5b7e5050e408f98d9ff4d670ca72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 443e181edfb0fc60c73d528063a6e6a2be5ab62a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911867"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868374"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 
-在 Visual Studio 2017 中，您可以使用 [EditorConfig](../ide/create-portable-custom-editor-options.md) 檔案定義程式碼基底的程式碼樣式並維持一致。 EditorConfig 包含數個核心格式設定屬性，例如 `indent_style` 和 `indent_size`。 在 Visual Studio 中，也可以使用 EditorConfig 檔案設定 .NET 編碼慣例設定。 EditorConfig 檔案可讓您啟用或停用個別的 .NET 編碼慣例，並設定要強制執行慣例的程度 (透過嚴重性層級)。 若要深入了解使用 EditorConfig 在程式碼基底上強制一致性的方式，請參閱[使用 EditorConfig 建立可攜式自訂編輯器設定](../ide/create-portable-custom-editor-options.md)。
+您可以使用 [EditorConfig](../ide/create-portable-custom-editor-options.md) 檔案定義程式碼基底的程式碼樣式並維持一致。 EditorConfig 包含數個核心格式設定屬性，例如 `indent_style` 和 `indent_size`。 在 Visual Studio 中，也可以使用 EditorConfig 檔案來設定 .NET 編碼慣例設定。 您可以啟用或停用個別的 .NET 編碼慣例，並設定您希望強制執行每個規則的程度 (透過嚴重性等級)。
 
-如需[範例 .editorconfig 檔案](#example-editorconfig-file)，請參閱此文章結尾。
+> [!TIP]
+> - 當您在 .editorconfig 檔案中定義編碼慣例時，需設定您希望 Visual Studio 內建的[程式碼樣式分析器](../code-quality/roslyn-analyzers-overview.md)用來分析程式碼的方式。 .editorconfig 檔案為適用於這些分析器的設定檔。
+> - 您也可以在[文字編輯器的 [選項]](code-styles-and-quick-actions.md) 對話方塊中，設定適用於 Visual Studio 的程式碼樣式喜好設定。 不過，.editorconfig 設定具有較高的優先順序，而您在 [選項] 中設定的喜好設定不會與特定專案建立關聯。
+
+此文章結尾包含[範例 .editorconfig 檔案](#example-editorconfig-file)。
 
 ## <a name="convention-categories"></a>慣例類別
 
@@ -327,7 +331,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 此規則不接受 **true** 或 **false** 值，但接受下列資料表中的值：
 
-| 值 | 描述 |
+| 值 | 說明 |
 | ----- |:----------- |
 | always | 偏好指定存取範圍修飾詞 |
 | for\_non\_interface_members | 偏好宣告存取範圍修飾詞，但公用介面成員除外。 這是與**一律**相同，且已新增以便未來 C# 新增預設介面方法時校訂之用。 |
@@ -992,7 +996,7 @@ csharp_style_var_elsewhere = true:suggestion
 
 此規則接受下表中的值：
 
-| 值 | 描述 |
+| 值 | 說明 |
 | ----- |:----------- |
 | true | 偏好針對方法使用運算式主體的成員 |
 | when_on_single_line | 當所有方法都在同一行時，偏好針對方法使用運算式主體的成員 |
@@ -1012,7 +1016,7 @@ public int GetAge() { return this.Age; }
 
 此規則接受下表中的值：
 
-| 值 | 描述 |
+| 值 | 說明 |
 | ----- |:----------- |
 | true | 偏好針對建構函式使用運算式主體的成員 |
 | when_on_single_line | 當所有建構函式都在同一行時，偏好針對建構函式使用運算式主體的成員 |
@@ -1032,7 +1036,7 @@ public Customer(int age) { Age = age; }
 
 此規則接受下表中的值：
 
-| 值 | 描述 |
+| 值 | 說明 |
 | ----- |:----------- |
 | true | 偏好針對運算子使用運算式主體的成員 |
 | when_on_single_line | 當所有運算子都在同一行時，偏好針對運算子使用運算式主體的成員 |
@@ -1054,7 +1058,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 此規則接受下表中的值：
 
-| 值 | 描述 |
+| 值 | 說明 |
 | ----- |:----------- |
 | true | 偏好針對屬性使用運算式主體的成員 |
 | when_on_single_line | 當所有屬性都在同一行時，偏好針對屬性使用運算式主體的成員 |
@@ -1074,7 +1078,7 @@ public int Age { get { return _age; }}
 
 此規則接受下表中的值：
 
-| 值 | 描述 |
+| 值 | 說明 |
 | ----- |:----------- |
 | true | 偏好針對索引子使用運算式主體的成員 |
 | when_on_single_line | 當所有索引子都在同一行時，偏好針對索引子使用運算式主體的成員 |
@@ -1094,7 +1098,7 @@ public T this[int i] { get { return _values[i]; } }
 
 此規則接受下表中的值：
 
-| 值 | 描述 |
+| 值 | 說明 |
 | ----- |:----------- |
 | true | 偏好針對存取子使用運算式主體的成員 |
 | when_on_single_line | 當所有存取子都在同一行時，偏好針對存取子使用運算式主體的成員 |
@@ -1513,7 +1517,7 @@ dotnet_separate_import_directive_groups = true
 
 此規則是有關左大括弧 `{` 應該和前面的程式碼放在同一行還是放在新行中。 此規則不指定 **true** 或 **false**。 請改為指定 [全部]、[無] 或一或多個程式碼項目，例如**方法**或**屬性**，來定義應於何時套用此規則。 下表顯示允許變數的完整清單：
 
-| 值 | 描述
+| 值 | 說明
 | ------------- |:-------------|
 | accessors、anonymous_methods、anonymous_types、control_blocks、events、indexers、lambdas、local_functions、methods、object_collection_array_initializers、properties、types。<br>(請以 ',' 分隔多種類型)。 | 指定的程式碼項目 (也稱為 "Allman" 樣式) 在新行需有括弧 |
 | all | 針對所有運算式要求大括弧位於新行上 ("Allman" 樣式) |
@@ -1778,7 +1782,7 @@ default:
 
 此規則不接受 **true** 或 **false** 值，但接受下列資料表中的值：
 
-| 值 | 描述 |
+| 值 | 說明 |
 | ----- |:----------- |
 | flush_left | 標籤放在最左邊的資料行 |
 | one_less_than_current | 將標籤置於比目前內容的縮排少一個單位的位置 |
@@ -1921,7 +1925,7 @@ MyMethod(argument);
 
 此規則接受下表中的一或多個值：
 
-| 值 | 描述 |
+| 值 | 說明 |
 | ----- |:------------|
 | control_flow_statements | 在控制流程陳述式的括號之間加入空格 |
 | 運算式 | 在運算式的括號之間加入空格 |
@@ -2008,7 +2012,7 @@ class C :I
 
 此規則接受下表中的一個值：
 
-| 值 | 描述 |
+| 值 | 說明 |
 | ----- |:------------|
 | before_and_after | 在二元運算子前後插入空格 |
 | none | 移除二元運算子前後的空格 |

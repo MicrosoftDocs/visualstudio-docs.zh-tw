@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: dcc184d6aedb3e15bfddd8396c54b351ef4d3288
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed8f06513b240719364539a24295a403b83265f4
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693005"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872997"
 ---
 # <a name="deploy-custom-start-pages"></a>部署自訂起始頁
 
@@ -29,7 +29,7 @@ ms.locfileid: "56693005"
 
 -   您可以將放 *.vsix*公用網站或網路共用上的檔案。 當有人開啟檔案時，會自動安裝 [入門] 頁面。
 
--   您可以上傳 *.vsix*的檔案[Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站，使用者可以使用來安裝它**擴充管理員**。
+-   您可以上傳 *.vsix*的檔案[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站，使用者可以使用來安裝它**擴充管理員**。
 
 起始頁專案範本會建立一份預設 Visual Studio 起始頁，讓您可以修改複本，並保留原始。
 

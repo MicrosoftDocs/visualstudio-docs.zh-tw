@@ -2,7 +2,6 @@
 title: IBindEventHandler 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bad504bf1fc417e185759b1def641d366c778c5
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 6c65a659f333de282f380b9b6a6e462b40ec6c4d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346848"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58159071"
 ---
 # <a name="ibindeventhandler-interface"></a>IBindEventHandler 介面
 可讓呼叫者提供處理指定的事件處理常式的物件。  

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab235393996396aaba8331b8e55001ad292bdc51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9e0c9d47968d6e120beb8815a900ff8cc0b82603
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645715"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982996"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安裝 Visual Studio 離線安裝所需的憑證
 
@@ -71,6 +71,16 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 
    certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+   
+   或是使用以下命令，來建立使用 certutil.exe (隨附於 Windows) 的批次檔：
+   
+      ```cmd
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+
+   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
+   ```
 
 3. 將批次檔部署至用戶端。 此命令應該從提升權限的程序執行。
 
@@ -103,6 +113,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 ## <a name="checking-if-certificates-are-already-installed"></a>檢查是否已安裝憑證
 
 在安裝系統上的一個檢查方法是遵循下列步驟：
+
 1. 執行 **mmc.exe**。<br/>
   a. 按一下 [檔案]，然後選取 [新增/移除嵌入式管理單元]。<br/>
   b. 按兩下 [憑證]，並選取 [電腦帳戶]，然後按一下 [下一步]。<br/>

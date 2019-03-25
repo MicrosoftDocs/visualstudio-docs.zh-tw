@@ -7,25 +7,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdfc350305400a42565aa55fa5e29cc40286ed0c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318767"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868226"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 
 Visual Studio 效能建議是要針對記憶體不足的情況，但這極少發生。 在這些情況下，您可以最佳化可能不會使用的特定 Visual Studio 功能。 下列祕訣不適合作為一般建議。
 
 > [!NOTE]
-> 如果您在使用產品時因記憶體問題而發生困難，請透過[意見反應工具](../ide/how-to-report-a-problem-with-visual-studio-2017.md)讓我們知道。
+> 如果您在使用產品時因記憶體問題而發生困難，請透過[意見反應工具](../ide/how-to-report-a-problem-with-visual-studio.md)讓我們知道。
 
 ## <a name="use-a-64-bit-os"></a>使用 64 位元 OS
 
 如果您將系統從 32 位元版本的 Windows 升級至 64 位元版本，請將 Visual Studio 可用的虛擬記憶體數量從 2 GB 擴充為 4 GB。 這可讓 Visual Studio 處理更大量的工作負載，即使是 32 位元處理序亦然。
 
-如需詳細資訊，請參閱[記憶體限制](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits)和 [Use /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) (在 64 位元 Windows 上使用 /LARGEADDRESSAWARE)。
+如需詳細資訊，請參閱[記憶體限制](/windows/desktop/Memory/memory-limits-for-windows-releases)和 [Use /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) (在 64 位元 Windows 上使用 /LARGEADDRESSAWARE)。
 
 ## <a name="disable-automatic-file-restore"></a>停用自動檔案還原
 
@@ -41,9 +41,9 @@ Visual Studio 會在自動文件還原導致解決方案載入時間明顯變慢
 
 - 若是一般**移至**功能，請選取 [編輯] > [移至] > [移至全部]，或按 **Ctrl**+**T**。
 
-- 在 Visual Studio 2017 15.8 版及更新版本中，您可以跳到解決方案中最後編輯的位置，方法是使用 [編輯] > [移至] > [移至最後編輯位置]，或按 **Ctrl**+**Shift**+**Backspace**。
+- 您可以跳到方案中最後編輯的位置，方法是使用 [編輯] > [移至] > [移至最後編輯位置]，或按 **Ctrl**+**Shift**+**Backspace**。
 
-- 在 Visual Studio 2017 15.8 版及最新版本中，請使用 [移至最近使用的檔案] 查看最近在解決方案中瀏覽的檔案清單。 選取 [編輯] > [移至] > [移至最近使用的檔案]，或按 **Ctrl**+**1**、**Ctrl**+**R**。
+- 使用 [移至最近使用的檔案]，查看最近在方案中瀏覽的檔案清單。 選取 [編輯] > [移至] > [移至最近使用的檔案]，或按 **Ctrl**+**1**、**Ctrl**+**R**。
 
 ## <a name="configure-debugging-options"></a>設定偵錯選項
 
@@ -105,7 +105,17 @@ Visual Studio 會在自動文件還原導致解決方案載入時間明顯變慢
 
     延伸模組是新增至 Visual Studio 的額外軟體元件，可提供新功能或延伸現有功能。 延伸模組通常可能是記憶體資源問題的來源。 如果您遇到記憶體資源問題，請嘗試一次停用一個延伸模組，以查看它對案例或工作流程的影響。
 
-    若要停用延伸模組，請移至 [工具] > [延伸模組和更新]，然後停用特定延伸模組。
+   ::: moniker range="vs-2017"
+
+    若要停用擴充功能，移至 [工具] > [擴充功能和更新]，然後停用特定擴充功能。
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    若要停用擴充功能，移至 [擴充功能] > [管理擴充功能]，然後停用特定擴充功能。
+
+   ::: moniker-end
 
 - **停用 XAML 設計工具**
 

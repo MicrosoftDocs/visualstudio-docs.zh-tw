@@ -1,8 +1,7 @@
 ---
-title: IRemoteDebugApplication::GetName |Microsoft Docs
+title: IRemoteDebugApplication::GetName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acdce6ab03f6858cc6af85e34b115753564d5dd9
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 58dd62710a5674265a9487dacf51b2f368589ba6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089046"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58149337"
 ---
 # <a name="iremotedebugapplicationgetname"></a>IRemoteDebugApplication::GetName
 傳回此應用程式節點的名稱。  

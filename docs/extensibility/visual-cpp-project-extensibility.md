@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c439c5bbd35f4ece7ad57302737835622409b353
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323584"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268722"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 專案系統擴充性和工具組之間的整合
 
@@ -55,7 +55,7 @@ Visual c + + 專案系統用於.vcxproj 檔案。 它根據[Visual Studio 通用
 
 這些屬性值會指定下的資料夾名稱`$(VCTargetsPath)`根資料夾：
 
-`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*應用程式類型*\\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;<c58 > &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *平台*\\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c158><spanclass="notranslate">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;</c252>平台</span>\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Used when `$(ApplicationType)` is empty, for Windows Desktop projects) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*應用程式類型*\\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *平台*\\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;平台\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（對於Windows桌面項目，當 `$(ApplicationType)` 為空時使用） &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
 
 ### <a name="add-a-new-platform-toolset"></a>加入新的平台工具組
 
@@ -215,7 +215,7 @@ C + + 建置具有三個主要的步驟，由下列目標：
 
 ## <a name="msbuild-tasks-to-use-in-toolset-targets"></a>若要使用工具組目標的 MSBuild 工作
 
-若要叫用實際的建置工具，目標必須呼叫 MSBuild 工作。 沒有基本[Exec 工作](../msbuild/exec-task.md)，可讓您指定要執行的命令列。 不過，建置工具通常會有許多選項，輸入。 並輸出到追蹤的累加建置，因此合理更多可以有特殊的工作。 比方說，`CL`工作 MSBuild 屬性轉譯為 CL.exe 交換器、 將其寫入至回應檔案，以及呼叫 CL.exe。 它也會追蹤所有的輸入和輸出檔案的後續累加組建。 如需詳細資訊，請參閱 <<c0> [ 累加建置，並保持最新狀態的檢查](#incremental-build-and-up-to-date-check)。
+若要叫用實際的建置工具，目標必須呼叫 MSBuild 工作。 沒有基本[Exec 工作](../msbuild/exec-task.md)，可讓您指定要執行的命令列。 不過，建置工具通常會有許多選項，輸入。 並輸出到追蹤的累加建置，因此合理更多可以有特殊的工作。 比方說，`CL`工作 MSBuild 屬性轉譯為 CL.exe 交換器、 將其寫入至回應檔案，以及呼叫 CL.exe。 它也會追蹤所有的輸入和輸出檔案的後續累加組建。 如需詳細資訊，請參閱 <<c0> [ 累加組建 」 和 「 最新檢查](#incremental-builds-and-up-to-date-checks)。
 
 Microsoft.Cpp.Common.Tasks.dll 會實作下列工作：
 
@@ -416,9 +416,9 @@ Visual c + + 專案系統根據[VS 專案系統](https://github.com/Microsoft/VS
 
 ### <a name="project-property-pages"></a>專案屬性頁
 
-一般設計資訊，請參閱[平台擴充性-第 1 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/)並[平台擴充性-第 2 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/)。
+一般設計資訊，請參閱[VC + + 專案的 Framework 多目標](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/)。
 
-簡單地說，屬性頁 所示**專案屬性**所定義的 c + + 專案 對話方塊*規則*檔案。 規則檔案指定要顯示在 [屬性] 頁面上，以及如何在它們應儲存在專案和檔案屬性的集。 規則檔案是使用 Xaml 格式的.xml 檔案。 用來序列化它們的型別所述[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)。 如需有關使用的專案中的規則檔案，請參閱[屬性頁面 XML 規則檔案](/cpp/ide/property-page-xml-files)。
+簡單地說，屬性頁 所示**專案屬性**所定義的 c + + 專案 對話方塊*規則*檔案。 規則檔案指定要顯示在 [屬性] 頁面上，以及如何在它們應儲存在專案和檔案屬性的集。 規則檔案是使用 Xaml 格式的.xml 檔案。 用來序列化它們的型別所述[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)。 如需有關使用的專案中的規則檔案，請參閱[屬性頁面 XML 規則檔案](/cpp/build/reference/property-page-xml-files)。
 
 規則檔案必須新增至`PropertyPageSchema`項目群組：
 
@@ -636,8 +636,8 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 
 ## <a name="additional-resources"></a>其他資源
 
-Microsoft 建置系統 ([MSBuild](../msbuild/msbuild.md)) 提供的專案檔建置引擎和可延伸的 XML 格式。 您應該先熟悉與 basic [MSBuild 概念](../msbuild/msbuild-concepts.md)與如何[Visual c + + 的 MSBuild](/cpp/build/msbuild-visual-cpp-overview)運作，以擴充 Visual c + + 專案系統。
+Microsoft 建置系統 ([MSBuild](../msbuild/msbuild.md)) 提供的專案檔建置引擎和可延伸的 XML 格式。 您應該先熟悉與 basic [MSBuild 概念](../msbuild/msbuild-concepts.md)與如何[Visual c + + 的 MSBuild](/cpp/build/reference/msbuild-visual-cpp-overview)運作，以擴充 Visual c + + 專案系統。
 
 Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 提供延伸模組 CPS 和 Visual c + + 專案系統所使用的 Api。 CPS 如何使用 MEF 的概觀，請參閱[CPS 和 MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef)中[VSProjectSystem MEF 概觀](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)。
 
-您可以自訂現有的建置系統，以新增建置步驟或新的檔案類型。 如需詳細資訊，請參閱 < [MSBuild （Visual c + +） 概觀](/cpp/build/msbuild-visual-cpp-overview)並[使用專案屬性](/cpp/ide/working-with-project-properties)。
+您可以自訂現有的建置系統，以新增建置步驟或新的檔案類型。 如需詳細資訊，請參閱 < [MSBuild （Visual c + +） 概觀](/cpp/build/reference/msbuild-visual-cpp-overview)並[使用專案屬性](/cpp/build/working-with-project-properties)。

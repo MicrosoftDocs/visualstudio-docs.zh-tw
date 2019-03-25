@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cbe2e3318d01d7b50767c13d09687526c00b49f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722261"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324064"
 ---
 # <a name="create-a-software-development-kit"></a>建立軟體開發套件
 軟體開發套件 (SDK) 是一系列 Api，您可以參考 Visual Studio 中的單一項目。 **參考管理員**對話方塊會列出所有與專案相關的 Sdk。 當您將 SDK 加入專案時，就有一個 Api 可在 Visual Studio 中。
@@ -65,17 +65,17 @@ ms.locfileid: "56722261"
 ### <a name="installation"></a>安裝
  擴充功能 Sdk 可以針對特定的使用者或是針對所有使用者安裝但未指定登錄機碼。 若要安裝的 SDK 給所有使用者，請使用下列路徑：
 
- *%Program Files%\Microsoft Sdk\<目標平台 > \v<platform version number>\ExtensionSDKs*
+ *%Program Files%\Microsoft Sdk\<目標平台\>\v < 平台的版本號碼\>\ExtensionSDKs*
 
  使用者特定安裝中，使用下列路徑：
 
- *Sdk %USERPROFILE%\AppData\Local\Microsoft\<目標平台 > \v<platform version number>\ExtensionSDKs*
+ *Sdk %USERPROFILE%\AppData\Local\Microsoft\<目標平台\>\v < 平台的版本號碼\>\ExtensionSDKs*
 
  如果您想要使用不同的位置，您必須執行下列其中一種：
 
 1.  您可以指定它在登錄機碼：
 
-     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs\<SDKName>\<SDKVersion>**\
+     **HKLM\Software\Microsoft\Microsoft Sdk\<目標平台 > \v < 平台的版本號碼\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
 
      並將其值為 （預設值） 子機碼`<path to SDK><SDKName><SDKVersion>`。
 

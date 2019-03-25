@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763306"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194505"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio 會裝載 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]
   
  本主題將針對 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 裝載部分，說明在自訂您想要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中載入和建置的專案與 .targets 檔時所應考慮的幾個特定層面。 這些內容將可幫助您確定像是 IntelliSense 和偵錯等 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 功能在自訂專案中能夠正常運作。  
   
- 如需 C++ 專案的資訊，請參閱[專案檔](http://msdn.microsoft.com/library/5261cf45-3136-40a6-899e-dc1339551401)。  
+ 如需 C++ 專案的資訊，請參閱[專案檔](/cpp/build/reference/project-files)。  
   
 ## <a name="project-file-name-extensions"></a>專案副檔名  
  MSBuild.exe 能夠辨認任何副檔名符合 .*proj 的專案， 但是，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 只能辨認這些專案副檔名的一部分，這些專案副檔名會決定載入專案所使用的特定語言專案系統。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 並沒有中性語言的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案系統。  

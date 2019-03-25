@@ -10,18 +10,18 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2f7163ecda377d8fa8b7c27ed50dae4068d39600
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952914"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983880"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio 中已篩選的方案
 
-**Visual Studio 2019 Preview 1 的新功能**
+**Visual Studio 2019 的新功能**
 
-大型開發團隊經常使用包含多個專案的單一大型方案來共同作業。 然而，個別開發人員通常只會負責這些專案中的一小部分。 為了在開啟大型方案時改善效能，Visual Studio 2019 Preview 1 推出了「方案篩選」。 方案篩選可讓您開啟僅載入所選專案的方案。 在方案中載入專案的子集，可減少方案負載、組建和測試執行時間，並提供更聚焦的檢閱。
+大型開發團隊經常使用包含多個專案的單一大型方案來共同作業。 然而，個別開發人員通常只會負責這些專案中的一小部分。 為了改善開啟大型方案時的效能，Visual Studio 2019 引進「方案篩選」功能。 方案篩選可讓您開啟僅載入所選專案的方案。 在方案中載入專案的子集，可減少方案負載、組建和測試執行時間，並提供更聚焦的檢閱。
 
 提供下列功能︰
 
@@ -37,7 +37,7 @@ ms.locfileid: "55952914"
 
 1. 在功能表列上選擇 [檔案] > [開啟] > [專案/方案]。
 
-2. 在 [新增專案] 對話方塊中選取方案，並選取 [不載入專案]。
+2. 在 [開啟專案] 對話方塊中選取解決方案，然後選取 [不要載入專案]。
 
    ![已選取不載入專案的 Visual Studio 開啟專案對話方塊](media/filtered-solutions/do-not-load-projects.png)
 

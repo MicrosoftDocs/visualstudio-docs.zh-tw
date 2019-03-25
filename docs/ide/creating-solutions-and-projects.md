@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e4652bb6a0ea1ec138138e6966ab005362a45d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e7a4304fbda284a78350b83447753533983e65d1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937516"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867883"
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
@@ -53,7 +53,7 @@ ms.locfileid: "55937516"
    ![[新增專案] 對話方塊](./media/vside-newproject-templates-list.png)
 
    > [!NOTE]
-   > 所顯示的可用語言和專案範本清單取決於您執行的 Visual Studio 版本及安裝的工作負載。 若要了解如何安裝額外的工作負載，請參閱[透過新增或移除工作負載和元件來修改 Visual Studio 2017](../install/modify-visual-studio.md)。
+   > 所顯示的可用語言和專案範本清單取決於您執行的 Visual Studio 版本及安裝的工作負載。 若要了解如何安裝額外的工作負載，請參閱[透過新增或移除工作負載和元件來修改 Visual Studio](../install/modify-visual-studio.md)。
 
 2. 顯示您要使用之程式設計語言的範本清單，方法是選擇語言名稱旁的三角形，然後選擇專案類型。
 
@@ -113,11 +113,17 @@ ms.locfileid: "55937516"
 
 如前所述，您也可以開啟程式碼檔案而不需要專案或解決方案。 若要了解以此方式開發程式碼，請參閱[在 Visual Studio 中不使用專案或解決方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)。
 
-## <a name="create-a-temporary-project-c-and-visual-basic"></a>建立暫存的專案 (C# 和 Visual Basic)
+::: moniker range="vs-2017"
+
+## <a name="create-a-temporary-project"></a>建立暫存專案
+
+(僅限 C# 和 Visual Basic)
 
 如果您建立 .NET 專案而不指定磁碟位置，它會是暫存專案。 暫存專案可讓您試驗 .NET 專案。 使用暫存專案時，隨時都可以選擇儲存或捨棄它。
 
 若要建立暫存專案，請先移至 [工具] > [選項] > [專案和方案] > [一般]，並取消選取 [建立時儲存新專案] 核取方塊。 然後像往常一樣開啟 [新增專案] 對話方塊。
+
+::: moniker-end
 
 ## <a name="delete-a-solution-project-or-item"></a>刪除方案、專案或項目
 

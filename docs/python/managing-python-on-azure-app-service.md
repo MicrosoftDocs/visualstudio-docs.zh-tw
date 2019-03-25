@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f68f12578ea7b5148aa018c21e14c334c33ad9a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c0f0cdb6c1807aa8ce0a30e7371fe8ad4270ca7b
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918919"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324178"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>如何在 Azure App Service 上設定 Python 環境 (Windows)
 
@@ -76,7 +76,7 @@ Azure App Service 是以一組 App Service「網站延伸模組」的形式來�
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>將 web.config 設定為指向 Python 解譯器
 
-安裝網站延伸模組之後 (透過入口網站或 Azure Resource Manager 範本)，您要將應用程式的 *web.config* 檔案指向 Python 解譯器。 *web.config* 檔案會指示在 App Service 上執行的 IIS (7+) 網頁伺服器應如何透過 FastCGI 或 HttpPlatform 來處理 Python 要求。
+安裝網站延伸模組之後 (透過入口網站或 Azure Resource Manager 範本)，您要將應用程式的 *web.config* 檔案指向 Python 解譯器。 *web.config* 檔案會指示在 App Service 上執行的 IIS (7+) 網頁伺服器應如何透過 HttpPlatform (建議使用) 或 FastCGI 來處理 Python 要求。
 
 請先從尋找網站延伸模組的 *python.exe* 完整路徑開始，然後建立並修改適當的 *web.config* 檔案。
 
@@ -97,6 +97,33 @@ Python 網站延伸模組會安裝在伺服器的 *d:\home* 下方，適當的 P
 1. 在您的 [App Service] 頁面上，選取 [開發工具] > [主控台]。
 1. 輸入 `ls ../home` 或 `dir ..\home` 命令，以查看最上層的延伸模組資料夾，例如 *Python361x64*。
 1. 輸入 `ls ../home/python361x64` 或 `dir ..\home\python361x64` 之類的命令，以驗證該資料夾中包含 *python.exe* 和其他解譯器檔案。
+
+### <a name="configure-the-httpplatform-handler"></a>設定 HTTP 平台處理常式
+
+HTTP 平台處理常式模組會將通訊端連線直接傳遞給獨立的 Python 處理序。 這個傳遞可讓您執行任何喜歡的網頁伺服器，但需要執行本機網頁伺服器的啟動指令碼。 您可以在 *web.config* 的 `<httpPlatform>` 元素中指定指令碼，其中 `processPath` 屬性指向網站延伸模組的 Python 解譯器，而 `arguments` 屬性則指向您的指令碼以及您想要提供的任何引數：
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+    <handlers>
+      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
+    </handlers>
+    <httpPlatform processPath="D:\home\Python361x64\python.exe"
+                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
+                  stdoutLogEnabled="true"
+                  stdoutLogFile="D:\home\LogFiles\python.log"
+                  startupTimeLimit="60"
+                  processesPerApplication="16">
+      <environmentVariables>
+        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
+      </environmentVariables>
+    </httpPlatform>
+  </system.webServer>
+</configuration>
+```
+
+此處所顯示的 `HTTP_PLATFORM_PORT` 環境變數包含本機伺服器應該接聽 localhost 連線的連接埠。 此範例也會示範如何建立另一個環境變數 (如有需要)，在此情況下，是 `SERVER_PORT`。
 
 ### <a name="configure-the-fastcgi-handler"></a>設定 FastCGI 處理常式
 
@@ -128,33 +155,6 @@ FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並�
 - `WSGI_LOG` 是選擇性的，但建議用於偵錯應用程式。
 
 如需 Bottle、Flask 與 Django Web 應用程式的 *web.config* 內容詳細資料，請參閱[發行至 Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)。
-
-### <a name="configure-the-httpplatform-handler"></a>設定 HTTP 平台處理常式
-
-HTTP 平台處理常式模組會將通訊端連線直接傳遞給獨立的 Python 處理序。 這個傳遞可讓您執行任何喜歡的網頁伺服器，但需要執行本機網頁伺服器的啟動指令碼。 您可以在 *web.config* 的 `<httpPlatform>` 元素中指定指令碼，其中 `processPath` 屬性指向網站延伸模組的 Python 解譯器，而 `arguments` 屬性則指向您的指令碼以及您想要提供的任何引數：
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <system.webServer>
-    <handlers>
-      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
-    </handlers>
-    <httpPlatform processPath="D:\home\Python361x64\python.exe"
-                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
-                  stdoutLogEnabled="true"
-                  stdoutLogFile="D:\home\LogFiles\python.log"
-                  startupTimeLimit="60"
-                  processesPerApplication="16">
-      <environmentVariables>
-        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
-      </environmentVariables>
-    </httpPlatform>
-  </system.webServer>
-</configuration>
-```
-
-此處所顯示的 `HTTP_PLATFORM_PORT` 環境變數包含本機伺服器應該接聽 localhost 連線的連接埠。 此範例也會示範如何建立另一個環境變數 (如有需要)，在此情況下，是 `SERVER_PORT`。
 
 ## <a name="install-packages"></a>安裝套件
 

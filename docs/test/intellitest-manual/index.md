@@ -3,18 +3,12 @@ title: IntelliTest 參考手冊 | Microsoft 開發人員測試工具
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- IntelliTest Reference Manual, IntelliTest
+  - 'IntelliTest Reference Manual, IntelliTest'
 ms.author: gewarren
 manager: jillfra
 ms.workload:
-- multiple
+  - multiple
 author: gewarren
-ms.openlocfilehash: 2ba7a355b5fe8e2b332928c351753a99faed6681
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948940"
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest 參考手冊
 
@@ -30,11 +24,11 @@ ms.locfileid: "55948940"
     * [Language](introduction.md#language)
     * [符號推理](introduction.md#symbolic-reasoning)
     * [不正確的堆疊追蹤](introduction.md#incorrect-stack-traces)
-  - [進一步閱讀](introduction.md#further-reading)<p>&nbsp;</p>
+  - [進一步閱讀](introduction.md#further-reading)
 
 * **[開始使用 IntelliTest](getting-started.md)**
   - [重要屬性](getting-started.md#important-attributes)
-  - [重要靜態協助程式類別](getting-started.md#helper-classes)<p>&nbsp;</p>
+  - [重要靜態協助程式類別](getting-started.md#helper-classes)
 
 * **[測試產生](test-generation.md)**
   - [測試產生](test-generation.md#test-generators)
@@ -47,7 +41,7 @@ ms.locfileid: "55948940"
   - [後置條件](test-generation.md#postcondition)
   - [測試失敗](test-generation.md#test-failures)
   - [設定和卸除](test-generation.md#setup-teardown)
-  - [進一步閱讀](test-generation.md#further-reading)<p>&nbsp;</p>
+  - [進一步閱讀](test-generation.md#further-reading)
 
 * **[輸入產生](input-generation.md)**
   - [限制式求解](input-generation.md#constraint-solver)
@@ -60,7 +54,7 @@ ms.locfileid: "55948940"
   - [結構](input-generation.md#structs)
   - [陣列和字串](input-generation.md#arrays-and-strings)
   - [取得其他輸入](input-generation.md#additional-inputs)
-  - [進一步閱讀](input-generation.md#further-reading)<p>&nbsp;</p>
+  - [進一步閱讀](input-generation.md#further-reading)
 
 * **[探索界限](exploration-bounds.md)**
   - [MaxConstraintSolverTime](exploration-bounds.md#maxconstraintsolvertime)
@@ -75,7 +69,7 @@ ms.locfileid: "55948940"
   - [MaxExceptions](exploration-bounds.md#maxexceptions)
   - [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded)
   - [TestEmissionFilter](exploration-bounds.md#testemissionfilter)
-  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)<p>&nbsp;</p>
+  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)
 
 * **[屬性字彙](attribute-glossary.md)**
   - [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull)
@@ -90,7 +84,7 @@ ms.locfileid: "55948940"
   - [PexAllowedException](attribute-glossary.md#pexallowedexception)
   - [PexAllowedExceptionFromAssembly](attribute-glossary.md#pexallowedexceptionfromassembly)
   - [PexAllowedExceptionFromType](attribute-glossary.md#pexallowedexceptionfromtype)
-  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)<p>&nbsp;</p>
+  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)
 
 * **[設定瀑布圖](settings-waterfall.md)**
 
@@ -99,7 +93,7 @@ ms.locfileid: "55948940"
   - [PexAssert](static-helper-classes.md#pexassert)
   - [PexChoose](static-helper-classes.md#pexchoose)
   - [PexObserve](static-helper-classes.md#pexobserve)
-  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)<p>&nbsp;</p>
+  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)
 
 * **[警告與錯誤](warnings-and-errors.md)**
   - [超過 MaxBranches](warnings-and-errors.md#maxbranches-exceeded)
@@ -121,7 +115,7 @@ ms.locfileid: "55948940"
   - [可測試性問題](warnings-and-errors.md#testability-issue)
   - [限制](warnings-and-errors.md#limitation)
   - [觀察到呼叫不相符](warnings-and-errors.md#observed-call-mismatch)
-  - [儲存在靜態欄位的值](warnings-and-errors.md#value-static-field)<p>&nbsp;</p>
+  - [儲存在靜態欄位的值](warnings-and-errors.md#value-static-field)
 
 ## <a name="got-feedback"></a>有任何意見反應嗎？
 

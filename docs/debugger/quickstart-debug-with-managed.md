@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 617783019a8a8b5a1ac2623ed113b78308466501
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8dc08ce4ef3f4afd8cd7630848ef1ee67e1f2970
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696879"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152924"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 C# 或 Visual Basic 進行偵錯
 
@@ -25,17 +25,20 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
 ## <a name="create-a-new-project"></a>建立新專案
 
-1. 在 Visual Studio 中，選擇 [檔案] > [新增專案]。
+1. 在 Visual Studio 中，選擇 [檔案] > [新增] > [專案]。
 
-2. 在 [Visual C#] 或 [Visual Basic] 下方，選擇 [.NET Core]，然後在中間窗格中選擇 [主控台應用程式 (.NET Core)]。
+    ::: moniker range=">=vs-2019"
+    [建立新專案] 對話方塊隨即開啟。 在搜尋方塊中輸入 **.net** 以篩選結果、選擇 [主控台應用程式 (.NET Core)]，然後按 [下一步]。 接著，輸入 **MyDbgApp** 之類的名稱，然後選擇 [建立]。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    [新增專案] 對話方塊隨即開啟。 在 [Visual C#] 下方，選擇 [.NET Core]，然後在中間窗格中選擇 [主控台應用程式 (.NET Core)]。 接著，輸入 **MyDbgApp** 之類的名稱，然後按一下 [確定]。
+    ::: moniker-end
 
-     如果您看不到 [主控台應用程式 (.NET Core)] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [.NET 桌面開發] 和 [.NET Core] 工作負載，然後選擇 [修改]。
-
-3. 鍵入 **MyDbgApp** 這類名稱，然後按一下 [確定]。
+     如果您看不到 [主控台應用程式 (.NET Core)] 專案範本，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 [.NET 桌面開發] 和 [.NET Core] 工作負載，然後選擇 [修改]。
 
     Visual Studio 會建立專案。
 
-4. 在 *Program.cs* 或 *Module1.vb* 中，將下列程式碼
+1. 在 *Program.cs* 或 *Module1.vb* 中，將下列程式碼
 
     ```csharp
     class Program
@@ -142,7 +145,7 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
 ## <a name="navigate-code"></a>巡覽程式碼
 
-您可以透過不同的命令來指示偵錯工具繼續。 我們將顯示 Visual Studio 2017 中新增的實用程式碼導覽命令。
+您可以透過不同的命令來指示偵錯工具繼續。 我們會示出 Visual Studio 2017 開始可用的實用程式碼導覽命令。
 
 在中斷點處暫停時，將滑鼠游標移至陳述式 `c1.AddLast(20)` 上方，直到出現綠色的 [執行至點選處] 按鈕 ![執行至點選處](../debugger/media/dbg-tour-run-to-click.png "RunToClick")，然後按 [執行至點選處] 按鈕。
 

@@ -2,7 +2,6 @@
 title: IRemoteDebugApplicationThread 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f502749453e1701c8e6e52e69745408fdcd9812d
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: fd0574fe6093c6d53a63dfbbc97a7a313eaedc5f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349708"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58159997"
 ---
 # <a name="iremotedebugapplicationthread-interface"></a>IRemoteDebugApplicationThread 介面
 代表特定應用程式內執行的執行緒。  

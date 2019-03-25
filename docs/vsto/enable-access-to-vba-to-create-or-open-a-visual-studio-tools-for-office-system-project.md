@@ -19,18 +19,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca3810df7751245acc3f7a93372d565b88170b07
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 10dc439946cb209c9a8d8e0c5ff50a7e8cfe5363
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634821"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869314"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>啟用存取權建立或開啟 Visual Studio Tools for the Microsoft Office system 專案的 VBA
 
 您可以建立或開啟 Visual Studio Tools for the Microsoft Office system 專案之前，您必須明確啟用對 Visual Basic for Applications (VBA) 專案系統，Microsoft Office 中的存取權。
 
- Microsoft Office 開發專案需要存取 Visual Basic for Applications (VBA) 專案系統，在 Microsoft Office Word 和 Microsoft Office Excel 時，即使專案不使用 Visual Basic 應用程式。 設計階段所支援 Visual Basic 和 C# 專案的控制項，取決於 Visual Basic for Applications 專案系統。
+ Microsoft Office 開發專案需要存取 Visual Basic for Applications (VBA) 專案系統，在 Microsoft Office Word 和 Microsoft Office Excel 時，即使專案不使用 Visual Basic 應用程式。 執行階段所支援 Visual Basic 和 C# 專案的控制項，取決於 Visual Basic for Applications 專案系統。
 
  某些 Microsoft Office 巨集病毒會嘗試自動執行 Visual Basic for Applications 專案系統，以傳播自己本身。 當您啟用對 Visual Basic for Applications 專案系統的存取時，您將會移除協助防止巨集病毒散播的保護機制。 不過仍會保留一般的巨集安全性，因此會使用您為 Office 應用程式所維護的巨集安全性層級和受信任發行者清單來判斷是否可以在電腦上執行巨集。
 
@@ -40,8 +40,6 @@ ms.locfileid: "56634821"
  請務必注意，只是停用對 Visual Basic for Applications 專案系統的存取並不會保護您不受病毒的攻擊，這樣做只會在您的電腦真的遭到巨集病毒的危害時，停止將某些病毒散播到其他文件。 此選項預設為停用狀態，以便為電腦增加一個保護層，但是如果您依照下列安全性最佳做法進行再啟用此選項，您的電腦就比較不容易遭到病毒的危害。
 
  針對 Office 巨集病毒會為了高或極高的安全性層級，只信任來自巨集上執行 Office 驗證，已知的來源，並保持最新安全性修補程式和病毒掃描程式的最佳保護。
-
- 如需有關如何保護您的電腦免於病毒及其他惡意程式碼的詳細資訊，請參閱[ http://www.microsoft.com/protect ](http://www.microsoft.com/protect)。
 
  您可以啟用或停用此選項**信任存取 Visual Basic 專案**以手動方式。
 

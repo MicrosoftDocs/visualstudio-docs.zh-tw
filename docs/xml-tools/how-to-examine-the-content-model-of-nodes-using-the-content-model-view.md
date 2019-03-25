@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d188ef947c8c789f8de032522d43c09660f2ded
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 63edeb597c3c085df3c9c9eb15f6c051e524a476
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920908"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525995"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>HOW TO：檢查使用內容模型檢視節點的內容模型
 
@@ -27,7 +27,7 @@ ms.locfileid: "55920908"
 
 3.  XML 結構描述範例程式碼複製[範例 XML 結構描述： 採購單結構描述](../xml-tools/sample-xsd-file-purchase-order-schema.md)並貼上取代預設新增至新 XSD 檔案的程式碼。
 
-4.  選取 `purchaseOrder`項目在結構描述總管 中，以滑鼠右鍵按一下`purchaseOrder`項目在 XML 編輯器 中，然後選取**在 XML 總管中顯示**。
+4.  選取`purchaseOrder`項目在結構描述總管 中，以滑鼠右鍵按一下`purchaseOrder`項目在 XML 編輯器，然後選取**在 XML 總管中顯示**。
 
 5.  以滑鼠右鍵按一下`purchaseOrder`XML 總管，然後選取**在內容模型檢視中顯示**。
 

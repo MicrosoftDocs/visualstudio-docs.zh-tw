@@ -1,8 +1,7 @@
 ---
-title: IDebugSessionProviderEx:CanJITDebug |Microsoft Docs
+title: IDebugSessionProviderEx:CanJITDebug | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edde03cbb72f090bf6e8432721866de06d7b439e
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 295be698e02264c81522b70d0377c2030da6190e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087460"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154695"
 ---
 # <a name="idebugsessionproviderexcanjitdebug"></a>IDebugSessionProviderEx:CanJITDebug
 判斷指定的處理序是否可偵錯的 Just In Time 偵錯。  

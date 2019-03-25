@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a91bf1a43a5cbb92713b1068f882bd6248c4f70a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 124d27b5dc139e57f9041694afe42d42eef03fb5
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955618"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069615"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>了解使用 Visual Basic 的專案與解決方案
 
@@ -38,17 +38,35 @@ ms.locfileid: "55955618"
 
 我們會建立空白解決方案以開始探索。 在您了解 Visual Studio 之後，可能不會發現自己太過頻繁地建立空白方案。 當您建立新的專案時，Visual Studio 會自動建立要儲存專案的方案 (若尚未開啟方案)。
 
+::: moniker range="vs-2017"
+
 1. 開啟 Visual Studio。
 
-1. 在功能表列上 (例如 [檔案] 和 [編輯] 功能表列)，選擇 [檔案] > [新增] > [專案]。
+1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
 
    [ **新增專案** ] 對話方塊隨即開啟。
 
-1. 在左窗格中，展開 [其他專案類型]，然後選擇 [Visual Studio 解決方案]。 在中央窗格中，選擇 [空白方案] 範本。 將方案命名為 **QuickSolution**，然後選擇 [確定] 按鈕。
+1. 在左窗格中，展開 [其他專案類型]，然後選擇 [Visual Studio 解決方案]。 在中央窗格中，選擇 [空白方案] 範本。 將解決方案命名為 **QuickSolution**，然後選擇 [確定]。
 
    ![Visual Studio 中的空白方案範本](../media/tutorial-projects-new-solution.png)
 
    [起始頁] 隨即關閉，而且方案會出現在 Visual Studio 視窗右側的 [方案總管] 中。 您可能會經常使用方案總管來瀏覽專案的內容。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 開啟 Visual Studio。
+
+2. 在開始視窗中，選擇 [建立新專案]。
+
+3. 在 [建立新專案] 頁面上，於搜尋方塊中輸入**空白的解決方案**、選取 [空白的解決方案] 範本，然後選擇 [下一步]。
+
+4. 將解決方案命名為 **QuickSolution**，然後選擇 [建立]。
+
+   解決方案隨即會出現在 Visual Studio 視窗右側的 [方案總管] 中。 您可能會經常使用方案總管來瀏覽專案的內容。
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>新增專案
 

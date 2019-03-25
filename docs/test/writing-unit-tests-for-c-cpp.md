@@ -7,12 +7,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 561b55ee961162adb37cd393cac9ecf8b78c5ade
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926784"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223048"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中撰寫 C/C++ 的單元測試
 
@@ -30,11 +30,11 @@ Visual Studio 隨附這些 C++ 測試架構，不需另外下載：
 
 除了已安裝的架構之外，您也可以針對想要用於 Visual Studio 的任何架構撰寫自己的測試配接器。 測試配接器可以將單元測試與**測試總管**視窗整合。 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 上提供幾個協力廠商配接器。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](install-third-party-unit-test-frameworks.md)。
 
-**Visual Studio 2017 15.7 版 (Professional 與 Enterprise)**
+**Visual Studio 2017 15.7 版和更新版本 (Professional 與 Enterprise)**
 
 C++ 單元測試專案支援 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)。
 
-**Visual Studio 2017 15.5 版**
+**Visual Studio 2017 15.5 版和更新版本**
 
 - **Google Test 配接器**隨附作為 [使用 C++ 的桌面開發] 工作負載的預設元件。 它具有可透過 [方案總管] 中方案節點上的 [加入新的專案] 右鍵功能表新增至方案的專案範本，以及可透過 [工具] > [選項] 來設定的選項。 如需詳細資訊，請參閱[如何：在 Visual Studio 中使用 Google Test](how-to-use-google-test-for-cpp.md)。
 
@@ -117,7 +117,9 @@ TEST_METHOD(TestClassInit)
 
 ## <a name="use-codelens"></a>使用 CodeLens
 
-**僅限 Visual Studio 2017 15.7 版 Professional 與 Enterprise**：[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) 可讓您快速查看單元測試的狀態，而不用離開程式碼編輯器。 您可以採用下列任何一種方式為 C++ 單元測試專案初始化 CodeLens：
+**Visual Studio 2017 15.7 版和更新版本 (僅限 Professional 與 Enterprise Edition)**
+
+[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) 可讓您快速查看單元測試的狀態，而不用離開程式碼編輯器。 您可以採用下列任何一種方式為 C++ 單元測試專案初始化 CodeLens：
 
 - 編輯及建置測試專案或方案。
 - 重建您的專案或方案。
@@ -127,10 +129,10 @@ TEST_METHOD(TestClassInit)
 
 ![C++ CodeLens 圖示](media/cpp-test-codelens-icons.png)
 
- 按一下圖示以取得詳細資訊，或執行單元測試或對單元測試進行偵錯：
+按一下圖示以取得詳細資訊，或執行單元測試或對單元測試進行偵錯：
 
 ![C++ CodeLens 執行及偵錯](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>另請參閱
 
-[對程式碼進行單元測試](unit-test-your-code.md)
+- [對程式碼進行單元測試](unit-test-your-code.md)

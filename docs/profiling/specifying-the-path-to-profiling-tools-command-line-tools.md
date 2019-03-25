@@ -8,24 +8,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c89e741e4f854f0426a3b3908b896a8908325684
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 03b11b478ef441dc7a09902a7185bfdf45e20dc3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634808"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868946"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>指定分析工具命令列工具的路徑
+
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼分析工具命令列工具的路徑不會加入 PATH 環境變數中。 在 32 位元電腦上，這些工具會在一個目錄中。 在 64 位元電腦上，程式碼分析工具有 32 位元和 64 位元兩種版本。
 
 ## <a name="32-bit-computers"></a>32 位元電腦
+::: moniker range=">=vs-2019"
+ 針對機器碼，Visual Studio 分析工具 API 位在 *VSPerf.dll* 中。 標頭檔 (*VSPerf.h*) 和匯入程式庫 (*VSPerf.lib*) 位在 *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK* 目錄中。
+::: moniker-end
+::: moniker range="vs-2017"
  針對機器碼，Visual Studio 分析工具 API 位在 *VSPerf.dll* 中。 標頭檔 (*VSPerf.h*) 和匯入程式庫 (*VSPerf.lib*) 位在 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* 目錄中。
+::: moniker-end
 
  針對受控碼，分析工具 API 位在 *Microsoft.VisualStudio.Profiler.dll* 中。 這個 DLL 位於 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄。
 
 ## <a name="64-bit-computers"></a>64 位元電腦
- 在 64 位元電腦上，則會根據已進行程式碼剖析之應用程式的目標平台指定路徑。
 
+在 64 位元電腦上，則會根據已進行程式碼剖析之應用程式的目標平台指定路徑。
+
+::: moniker range=">=vs-2019"
+-   若是 32 位元應用程式，預設程式碼剖析工具目錄是：
+
+     (原生) *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK* (受控) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
+
+-   若是 64 位元應用程式，預設程式碼剖析工具目錄是：
+
+     (原生) *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK* (受控) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
+::: moniker-end
+
+::: moniker range="vs-2017"
 -   若是 32 位元應用程式，預設程式碼剖析工具目錄是：
 
      (原生) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (受控) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
@@ -33,3 +51,4 @@ ms.locfileid: "56634808"
 -   若是 64 位元應用程式，預設程式碼剖析工具目錄是：
 
      (原生) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (受控) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
+::: moniker-end

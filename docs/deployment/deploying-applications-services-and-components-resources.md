@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c2294ee956595eea051b9b04906c446a82b58cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2572f66acf20efb322323fa3be28f0cfe790594d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628984"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870288"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio 中的部署概觀
 
@@ -35,7 +35,7 @@ ms.locfileid: "56628984"
 - [Azure App Service](#azure-app-service)
 - [Azure 虛擬機器](#azure-virtual-machines)
 - [檔案系統](#file-system)
-- [自訂目標 (IIS、FTP 等)](#custom-targets)，包含所有任意 Web 伺服器。
+- [自訂目標 (IIS、FTP 等)](#custom-targets-iis-ftp)，包含所有任意 Web 伺服器。
 
 在 [發行] 索引標籤上，您可以選取現有的發行設定檔、匯入現有的發行設定檔，或使用這裡所述的選項建立新的發行設定檔。 若要了解 IDE 中不同應用程式類型的發佈選項，請參閱[部署簡介](../deployment/deploying-applications-services-and-components.md)。
 

@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 26988b2fd74ae66bd1ef2724c55248371a81adf1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b1b40fe963b6a48a6fa9848c4d9e205bae5503e9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922286"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069654"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：針對受控碼建立和執行單元測試
 
-本文會引導您使用適用於受控碼的 Microsoft 單元測試架構和 Visual Studio [測試總管]，來建立、執行和自訂一系列的單元測試。 您可以從開發中的 C# 專案開始，建立執行其程式碼的測試、執行測試，並檢查結果。 然後，您可以變更專案程式碼並重新執行測試。
+此文章會引導您使用適用於受控碼的 Microsoft 單元測試架構和 Visual Studio [測試總管]，來建立、執行和自訂一系列的單元測試。 您可以從開發中的 C# 專案開始，建立執行其程式碼的測試、執行測試，並檢查結果。 然後，您可以變更專案程式碼並重新執行測試。
 
 > [!NOTE]
 > 本逐步解說會使用適用於 Managed 程式碼的 Microsoft 單元測試架構。 [測試總管] 也可以從已安裝 [測試總管] 配接器的協力廠商單元測試架構來執行測試。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)
@@ -35,32 +35,42 @@ ms.locfileid: "55922286"
 
 ## <a name="create-a-project-to-test"></a>建立要測試的專案
 
+::: moniker range="vs-2017"
+
 1. 開啟 Visual Studio。
 
-2. 在 [檔案] 功能表上選取 [新增] > [專案]。
+2. 在 [檔案] 功能表上，選取 [新增] > [專案]。
 
    [ **新增專案** ] 對話方塊隨即出現。
 
-3. 在 [ **已安裝的範本**] 下，按一下 [ **Visual C#**]。
+::: moniker-end
 
-4. 在應用程式類型清單中，按一下 [ **類別庫**]。
+::: moniker range=">=vs-2019"
 
-5. 在 [名稱] 方塊中，鍵入 **Bank**，然後按一下 [確定]。
+1. 開啟 Visual Studio。
 
-   新的 Bank 專案會建立並顯示在 [方案總管] 中，並於程式碼編輯器中開啟 *Class1.cs* 檔案。
+2. 在 [開始] 視窗中，選擇 [建立新專案]。
+
+::: moniker-end
+
+3. 選擇 C# 類別庫專案範本。
+
+4. 將專案命名為 **Bank**，然後按一下 [確定] 或 [建立]。
+
+   就會建立 Bank 專案並顯示在 [方案總管] 中，並於程式碼編輯器中開啟 *Class1.cs* 檔案。
 
    > [!NOTE]
    > 如果 *Class1.cs* 檔案並未在程式碼編輯器中開啟，請在 [方案總管] 中按兩下 *Class1.cs* 檔案加以開啟。
 
-6. 從[用於建立單元測試的範例專案](../test/sample-project-for-creating-unit-tests.md)複製原始程式碼，並以複製的程式碼取代 *Class1.cs* 的原始內容。
+5. 從[用於建立單元測試的範例專案](../test/sample-project-for-creating-unit-tests.md)複製原始程式碼，並以複製的程式碼取代 *Class1.cs* 的原始內容。
 
-7. 另存新檔成 *BankAccount.cs* 檔案。
+6. 另存新檔成 *BankAccount.cs* 檔案。
 
-8. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
+7. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 
 現在您已經有一個名為 Bank 的專案。 其中包含要測試的原始程式碼和用來測試它的工具。 Bank 的命名空間 BankAccountNS，包含公用類別 BankAccount，您將會在下列程序中測試其方法。
 
-在本文中，測試著重在 Debit 方法。 從帳戶中提領金額時，就會呼叫 Debit 方法。 以下是方法定義：
+在此文章中，測試著重在 Debit 方法。 從帳戶中提領金額時，就會呼叫 Debit 方法。 以下是方法定義：
 
 ```csharp
 // Method to be tested.
@@ -148,7 +158,7 @@ using BankAccountNS;
 
 ## <a name="create-the-first-test-method"></a>建立第一個測試方法
 
-在這個程序中，您會撰寫單元測試方法以驗證 `BankAccount` 類別之 `Debit` 方法的行為。 `Debit` 方法先前已在本文中顯示。
+在這個程序中，您會撰寫單元測試方法以驗證 `BankAccount` 類別之 `Debit` 方法的行為。 `Debit` 方法先前已在此文章中顯示。
 
 至少有三項需要檢查的行為：
 

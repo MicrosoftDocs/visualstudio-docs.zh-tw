@@ -1,6 +1,6 @@
 ---
 title: CA1710:識別項應該使用正確的後置字元
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1710
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a3c602c249c7507d516e74c32f2d4db8447b645
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65ac417476752da832e5e9ebe693f6c83a5c1cfe
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944451"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868071"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710:識別項應該使用正確的後置字元
 
@@ -33,6 +33,8 @@ ms.locfileid: "55944451"
 ## <a name="cause"></a>原因
 
 識別項並沒有正確的後置詞。
+
+根據預設，此規則只會查看外部可見的識別項，但這[可設定](#configurability)。
 
 ## <a name="rule-description"></a>規則描述
 
@@ -54,7 +56,7 @@ ms.locfileid: "55944451"
 |<xref:System.Collections.Stack?displayProperty=fullName>|集合或堆疊|
 |<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|集合|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|字典|
-|<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
+|<xref:System.Data.DataSet?displayProperty=fullName>|資料集|
 |<xref:System.Data.DataTable?displayProperty=fullName>|集合或 DataTable|
 |<xref:System.IO.Stream?displayProperty=fullName>|資料流|
 |<xref:System.Security.IPermission?displayProperty=fullName>|權限|
@@ -90,6 +92,16 @@ A<xref:System.Data.DataSet>物件所組成的集合<xref:System.Data.DataTable>�
 它可安全地隱藏警告，如果類型是一種通用的資料結構，可能會擴充，或將保留任意一組的各種不同的項目，請使用 ' collection '。 在此情況下，提供有意義的資訊有關實作、 效能或資料結構中的其他特性的名稱可能意義 (比方說，BinaryTree)。 在其中的型別代表特定的型別 (例如 StringCollection) 集合的情況下，請勿隱藏此規則的警告，可以藉由使用列舉類型的後置詞表示因為`foreach`陳述式。
 
 對於其他後置字元，請勿隱藏此規則的警告。 後置詞允許的用途是明顯的是從型別名稱。
+
+## <a name="configurability"></a>設定功能
+
+如果您執行這項規則，從[FxCop 分析器](install-fxcop-analyzers.md)（而不是透過靜態程式碼分析），您可以設定的哪些部分您程式碼基底上執行這項規則，根據其存取範圍。 比方說，若要指定執行規則時，應該只針對非公用 API 介面，將下列索引鍵 / 值組新增至專案中的.editorconfig 檔案：
+
+```
+dotnet_code_quality.ca1710.api_surface = private, internal
+```
+
+此類別 （命名） 中，您可以設定此選項，只是這項規則，所有規則，或所有的規則。 如需詳細資訊，請參閱 <<c0> [ 設定的 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="related-rules"></a>相關的規則
 

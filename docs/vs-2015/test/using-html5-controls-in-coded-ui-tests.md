@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6002c3636030b67e9dca5e76c7ef57fbd93b6e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b13b8af221e317461f68a793e9b84420cd5dab48
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805072"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867896"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,18 +33,18 @@ ms.locfileid: "54805072"
 ## <a name="supported-html5-controls"></a>支援的 HTML5 控制項  
  自動程式化 UI 測試包括記錄、播放和驗證下列 HTML5 控制項的支援：  
   
--   [音訊控制項](#UsingHTML5ControlsCodedUITestsAudio)  
+-   [音訊控制項](#audio-control)  
   
--   [視訊控制項](#UsingHTML5ControlsCodedUITestsVideo)  
+-   [視訊控制項](#video-control)  
   
--   [滑桿](#UsingHTML5ControlsCodedUITestsSlider)  
+-   [滑桿](#slider)  
   
--   [進度列](#UsingHTML5ControlsCodedUITestsProgressBar)  
+-   [ProgressBar](#progressbar)  
   
-###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> 音訊控制項  
+### <a name="audio-control"></a>音訊控制項  
  **音訊控制項：** 正確記錄和播放 HTML5 Audio 控制項上的動作。  
   
- ![HTML5 Audio 控制項](../test/media/codedui-html5-audio.png "CodedUI_HTML5_Audio")  
+ ![HTML5 Audio 控制項](../test/media/codedui-html5-audio.png)  
   
 |動作|錄製|產生的程式碼|  
 |------------|---------------|--------------------|  
@@ -74,7 +74,6 @@ string ReadyState
 string Seeking  
 string Src  
 string Volume  
-  
 ```  
   
  **搜尋屬性：**`HtmlAudio` 的搜尋屬性是 `Id`、`Name` 和 `Title`。  
@@ -84,10 +83,10 @@ string Volume
 > [!NOTE]
 >  搜尋和暫停的時間量可以很大。 在播放時，自動程式碼 UI 測試會等到 `(TimeSpan)` 中指定的時間才暫停音訊。 如果因為某些特殊情況，已經過所指定的時間才按下 [暫停] 命令，就會擲回例外狀況。  
   
-###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> 視訊控制項  
+### <a name="video-control"></a>視訊控制項  
  **視訊控制項：** 正確記錄和播放 HTML5 Video 控制項上的動作。  
   
- ![HTML5 Video 控制項](../test/media/codedui-html5-video.png "CodedUI_HTML5_Video")  
+ ![HTML5 Video 控制項](../test/media/codedui-html5-video.png)  
   
 |動作|錄製|產生的程式碼|  
 |------------|---------------|--------------------|  
@@ -114,10 +113,10 @@ string VideoWidth
 > [!NOTE]
 >  如果您使用 -30s 或 +30s 標籤倒轉或向前快轉視訊時，會彙總以搜尋至適當的時間。  
   
-###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> 滑桿  
+### <a name="slider"></a>滑桿  
  **滑桿控制項：** 正確記錄和播放 HTML5 Slider 控制項上的動作。  
   
- ![HTML5 Slider 控制項](../test/media/codedui-html5-slider.png "CodedUI_HTML5_Slider")  
+ ![HTML5 滑桿控制項](../test/media/codedui-html5-slider.png)  
   
 |動作|錄製|產生的程式碼|  
 |------------|---------------|--------------------|  
@@ -134,14 +133,15 @@ string Step
 string ValueAsNumber  
 ```  
   
-###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> 進度列  
- **進度列控制項：** 進度列是不可互動的控制項。 您可以在此控制項的 `Value` 和 `Max` 屬性上加入判斷提示。  
+### <a name="progressbar"></a>進度列  
+ **ProgressBar 控制項：** ProgressBar 是不可互動的控制項。 您可以在此控制項的 `Value` 和 `Max` 屬性上加入判斷提示。  
   
- ![HTML5 ProgressBar 控制項](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![HTML5 ProgressBar 控制項](../test/media/codedui-html5-progressbar.png)  
   
-## <a name="see-also"></a>請參閱  
- [HTML 項目](http://go.microsoft.com/fwlink/?LinkID=232441)   
- [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
- [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [自訂您的自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>另請參閱
+
+- [HTML 元素](https://www.w3schools.com/HTML/html_elements.asp)   
+- [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
+- [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
+- [自訂您的自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
+- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

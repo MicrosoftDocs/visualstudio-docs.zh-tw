@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 73e1616af5665fc7ae89a3aa1019f2600afc24fd
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953965"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984127"
 ---
-# <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>針對 Visual Studio 2017 安裝和升級問題進行疑難排解
+# <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>針對 Visual Studio 安裝和升級問題進行疑難排解
 
 > [!IMPORTANT]
 > 遇到安裝問題嗎？ 我們可以幫您。 我們提供[**即時交談**](https://visualstudio.microsoft.com/vs/support/#talktous) (僅限英文) 支援選項。
@@ -86,7 +86,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 針對大部分安裝問題進行疑難排解時，將會需要安裝記錄檔。 使用 Visual Studio 安裝程式中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio.md)來提交問題時，會自動將這些記錄檔包含在報告中。
 
-當您連絡 Microsoft 支援服務時，可能需要使用 [Microsoft Visual Studio 與 .NET Framework 記錄收集工具](https://aka.ms/vscollect) \(英文\) 來提供這些安裝記錄檔。 記錄收集工具會收集 Visual Studio 2017 所安裝全部元件的安裝記錄檔，包括 .NET Framework、Windows SDK，以及 SQL Server。 它也會收集電腦資訊、Windows Installer 詳細目錄與 Windows 事件記錄檔資訊，以供 Visual Studio 安裝程式、Windows Installer 與系統還原使用。
+當您連絡 Microsoft 支援服務時，可能需要使用 [Microsoft Visual Studio 與 .NET Framework 記錄收集工具](https://aka.ms/vscollect) \(英文\) 來提供這些安裝記錄檔。 記錄收集工具會收集來自 Visual Studio 所安裝之所有元件的安裝記錄，包括 .NET Framework、Windows SDK 及 SQL Server。 它也會收集電腦資訊、Windows Installer 詳細目錄與 Windows 事件記錄檔資訊，以供 Visual Studio 安裝程式、Windows Installer 與系統還原使用。
 
 若要收集記錄檔：
 
@@ -104,7 +104,7 @@ Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可
 
 ## <a name="see-also"></a>另請參閱
 
-* [移除 Visual Studio 2017](remove-visual-studio.md)
+* [移除 Visual Studio](remove-visual-studio.md)
 * [在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [用於偵測及管理 Visual Studio 執行個體的工具](tools-for-managing-visual-studio-instances.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
