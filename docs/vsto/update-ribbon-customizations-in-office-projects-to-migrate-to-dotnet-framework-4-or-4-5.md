@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f57356cfe2d382ec0f4199555515e08e765e9486
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ee1dcd72e80b38eb4dd31603b0133b7ee7f7636b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634925"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324678"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案中的功能區自訂
   如果您的專案包含使用所建立的功能區自訂**功能區 （視覺化設計工具）** 專案項目，您必須進行下列變更您的專案程式碼，如果目標 framework 變更為[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本。
@@ -103,9 +103,9 @@ ms.locfileid: "56634925"
 
      例如，假設在目標為 .NET Framework 3.5 的專案中，您的檔案包含下列處理 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> 事件的程式碼行。
 
-    <CodeContentPlaceHolder>8</CodeContentPlaceHolder>為目標的專案中[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本中，您必須改為使用下列程式碼。
+    \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder>為目標的專案中[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本中，您必須改為使用下列程式碼。
 
-    <CodeContentPlaceHolder>9</CodeContentPlaceHolder>功能區委派的完整清單，請參閱[處理功能區事件](#ribbonevents)。
+    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder>功能區委派的完整清單，請參閱[處理功能區事件](#ribbonevents)。
 
 5.  在 Visual Basic 專案中，尋找位於檔案結尾的 `ThisRibbonCollection` 類別。 修改此類別的宣告，使其不再繼承自 `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`。
 
@@ -120,8 +120,7 @@ ms.locfileid: "56634925"
 
   下列程式碼範例示範如何為目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本的專案，在功能區類別中建立 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton>。
 
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>
-<CodeContentPlaceHolder>11</CodeContentPlaceHolder>下表列出您可以透過程式設計方式建立這些控制項，而且要用來建立控制項，在專案中目標方法[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本。
+\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder>下表列出您可以透過程式設計方式建立這些控制項，而且要用來在目標專案中建立控制項的方法[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本。
 
 |控制項|用於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 和更新版本專案的 RibbonFactory 方法|
 |-------------| - |
