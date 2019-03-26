@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7da94f8fe07620a67e2df8876cf1d3adda443c5
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b25eebad9efc70e4fda45131e232983e81961625
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525449"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415053"
 ---
 # <a name="how-to-edit-xml-files"></a>HOW TO：編輯 XML 檔案
 
@@ -22,49 +22,63 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
 > [!NOTE]
 > HTML 編輯器可處理 XHTML 文件。
 
-## <a name="to-edit-an-xml-file"></a>編輯 XML 檔案
+若要編輯的 XML 檔案，按兩下您想要編輯的檔案。
 
-1.  按兩下要編輯的檔案。
+## <a name="add-a-new-xml-file-to-a-project"></a>將新的 XML 檔案加入專案
 
-### <a name="to-add-a-new-xml-file-to-a-project"></a>將新的 XML 檔案加入至專案
+1. 從**專案**功能表上，選取**加入新項目**。
 
-1.  從**專案**功能表上，選取**加入新項目**。
+2. 選取  **XML 檔案**從**範本**窗格。
 
-2.  選取  **XML 檔案**從**範本**窗格。
+3. 輸入中的檔案名稱**名稱**欄位，然後按**新增**。
 
-3.  輸入中的檔案名稱**名稱**欄位，然後按**新增**。
+   XML 檔案加入至專案，並在 XML 編輯器中開啟。 檔案包含預設的 XML 宣告，`<?xml version="1.0" encoding="utf-8" ?>`。
 
-     XML 檔案會加入至專案，並在 XML 編輯器中開啟。 檔案包含預設的 XML 宣告，`<?xml version="1.0" encoding="utf-8" ?>`。
+## <a name="add-an-existing-xml-file-to-a-project"></a>將現有的 XML 檔案加入專案
 
-## <a name="to-add-an-existing-xml-file-to-a-project"></a>將現有 XML 檔案加入至專案
+1. 從**專案**功能表上，選取**加入現有項目**。
 
-1.  從**專案**功能表上，選取**加入現有項目**。
+   **加入現有項目** 對話方塊隨即出現。
 
-     **加入現有項目** 對話方塊隨即出現。
+2. 選取 XML 檔案並按**新增**。
 
-2.  選取 XML 檔案並按**新增**。
+## <a name="create-a-new-xml-or-xslt-file"></a>建立新的 XML 或 XSLT 檔案
 
-## <a name="to-create-a-new-xml-or-xslt-file"></a>建立新的 XML 或 XSLT 檔
+1. 從**檔案**功能表上，選取**新增**。
 
-1.  從**檔案**功能表上，選取**新增**。
+   **新的檔案** 對話方塊隨即出現。
 
-     **新的檔案** 對話方塊隨即出現。
+2. 選取  **XML 檔案**來建立新的 XML 檔案; 或者，選取**XSLT 檔**來建立新的 XSLT 樣式表。
 
-2.  選取  **XML 檔案**來建立新的 XML 檔案; 或者，選取**XSLT 檔**來建立新的 XSLT 樣式表。
+3. 按一下 [開啟]。
 
-3.  按一下 [開啟]。
+## <a name="create-an-empty-project-for-xml-files"></a>建立 XML 檔案的空白專案
 
-## <a name="to-create-a-project-for-xml-files"></a>建立 XML 檔案的專案
+::: moniker range="vs-2017"
 
-1.  從**檔案**功能表上，選取**新增**，然後選取**專案**。
+1. 從**檔案**功能表上，選取**新增** > **專案**。
 
-     [ **新增專案** ] 對話方塊隨即出現。
+   [ **新增專案** ] 對話方塊隨即出現。
 
-2.  選取您的選擇，選取的程式碼語言**空專案**，然後按一下**確定**。
+2. 選取您的選擇，選取的程式碼語言**空專案**。
 
-3.  將 XML 檔案加入至專案。
+3. 按一下 [確定 **Deploying Office Solutions**]。
 
-     XML 編輯器中尋找您新增至這個專案的結構描述，並使用它們進行驗證，並在任何 XML、 結構描述或您編輯此專案開啟時的 XSLT 檔案中的 IntelliSense。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 從**檔案**功能表上，選取**新增** > **專案**。
+
+2. 請輸入**空專案**在範本的 搜尋 方塊中選取**空白專案 (.NET Framework)** 範本，然後再按**下一步**。
+
+3. 按一下 [建立] 。
+
+::: moniker-end
+
+4. 將 XML 檔案加入至專案。
+
+   XML 編輯器中尋找您新增至這個專案的結構描述，並使用它們進行驗證，並在任何 XML、 結構描述或您編輯此專案開啟時的 XSLT 檔案中的 IntelliSense。
 
 ## <a name="see-also"></a>另請參閱
 

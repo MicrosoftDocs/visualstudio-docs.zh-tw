@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8572ecf95790fdc5f6e73ce0b137e5532c44bdc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 898c1e88e4fd1ac0fc5f3d1f338b70a2d038fe79
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911815"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416315"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 在使用 Visual Studio Visualization and Modeling SDK 建立特定領域語言 (DSL)，您可能會改變使用者複製及貼上項目時，會發生什麼事。
@@ -556,7 +556,6 @@ namespace Company.MyDsl
 
 - [自訂項目的建立和移動](../modeling/customizing-element-creation-and-movement.md)
 - [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [自訂刪除行為](../modeling/customizing-deletion-behavior.md)
 - [範例：VMSDK 電路圖表範例](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

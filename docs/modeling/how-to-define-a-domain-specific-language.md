@@ -16,40 +16,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46dc8def91a15b8534d597f8cc0d14eb99f9002
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5ed2b15c59ca4b9955a2f28985325a2d5e244ee
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927876"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416418"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 若要定義特定領域語言 (DSL)，您可以從範本建立 Visual Studio 方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。
 
-如果您不熟悉 dsl，建議您逐步**DSL 工具實驗室**，您可以找到此站台：[Visualizaton 與模型 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+如果您不熟悉 dsl，建議您逐步**DSL 工具實驗室**，您可以找到此站台：[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> 選取範本方案
- 若要定義 DSL，您必須已安裝下列元件：
 
+若要定義 DSL，您必須已安裝下列元件：
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
-| Visual Studio Visualization and Modeling SDK | |
+- Visual Studio
+- Visual Studio 延伸模組開發工作負載 （包括 Visual Studio SDK）
+- Modeling SDK （將它安裝為 Visual Studio 中的個別元件）
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
+若要建立新的定義域專屬語言，您可以建立新的 Visual Studio 方案，使用特定領域語言專案範本。
 
- 若要建立新的定義域專屬語言，您可以建立新的 Visual Studio 方案，使用特定領域語言專案範本。
+### <a name="to-create-a-dsl-solution"></a>建立 DSL 方案
 
-#### <a name="to-create-a-dsl-solution"></a>建立 DSL 方案
+1. 建立新**Domain-specific Language**專案。
 
-1. 建立方案**Domain-specific Language**範本，您可以找到**其他專案類型/擴充性**中**新專案** 對話方塊。
+   ::: moniker range="vs-2017"
 
     ![[建立 DSL] 對話方塊](../modeling/media/create_dsldialog.png)
 
-    當您按一下  **確定**，則**定義域專屬語言精靈**會開啟並顯示範本 DSL 方案清單。
+   ::: moniker-end
+
+    **定義域專屬語言精靈**會開啟並顯示範本 DSL 方案清單。
 
 2. 按一下每一個範本可查看說明。 選擇與您要建立的方案最相似的方案。
 
@@ -606,7 +607,7 @@ ms.locfileid: "55927876"
  另請參閱[如何：變更定義域專屬語言命名空間](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。
 
 ## <a name="trouble"></a> 疑難排解
- 下表列出在設計 DSL 時會遇到的一些最常見的問題，以及對其方案的建議事項。 更多建議位於[視覺效果工具可擴充性論壇](http://go.microsoft.com/fwlink/?LinkId=186074)。
+ 下表列出在設計 DSL 時會遇到的一些最常見的問題，以及對其方案的建議事項。 更多建議位於[視覺效果工具擴充性論壇](http://go.microsoft.com/fwlink/?LinkId=186074)。
 
 
 | 問題 | 建議 |
