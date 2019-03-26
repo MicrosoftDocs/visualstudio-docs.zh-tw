@@ -13,51 +13,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab7e6717ee3216e513fed9bbe3b8c5f6295667
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936937"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416184"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>HOW TO：建立特定領域語言方案
 特定領域語言 (DSL) 會建立使用特製化的 Visual Studio 方案。
 
 ## <a name="prerequisites"></a>必要條件
- 您可以啟動此程序之前，您必須先安裝這些元件：
 
+您可以啟動此程序之前，安裝這些元件：
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
-| Visual Studio Visualization and Modeling SDK | |
+- Visual Studio
+- Visual Studio SDK (隨**Visual Studio 延伸模組開發**工作負載)
+- Modeling SDK （做為 Visual Studio 元件安裝）
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-
 ## <a name="creating-a-domain-specific-language-solution"></a>建立特定領域語言方案
 
-#### <a name="to-create-a-domain-specific-language-solution"></a>若要建立特定領域語言方案
+1. 啟動建立新的 DSL 精靈**定義域專屬語言設計工具**專案。
 
-1. 啟動 [DSL] 精靈。
+   > [!NOTE]
+   > 最好是您選擇專案的名稱應該是有效的視覺效果C#識別項因為它可能會用來產生程式碼。
 
-   1. 在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。
+   ::: moniker range="vs-2017"
 
-   2. [ **新增專案** ] 對話方塊隨即出現。
+   ![[建立 DSL] 對話方塊](../modeling/media/create_dsldialog.png)
 
-   3. 底下**專案類型**，展開**其他專案類型**節點，然後按一下**擴充性**。
-
-   4. 按一下  **Domain-specific Language Designer**。
-
-   5. 在 **名稱**方塊中，輸入方案的名稱。 按一下 [確定] 。
-
-       **Domain-specific Language Designer 精靈**隨即出現。
-
-      > [!NOTE]
-      >  最好是您所輸入的名稱應該是有效的 Visual C# 識別項，因為它可能會用來產生程式碼。
-
-      ![[建立 DSL] 對話方塊](../modeling/media/create_dsldialog.png)
+   ::: moniker-end
 
 2. 選擇 DSL 」 範本。
 
@@ -132,4 +119,4 @@ ms.locfileid: "55936937"
 ## <a name="see-also"></a>另請參閱
 
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
-- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

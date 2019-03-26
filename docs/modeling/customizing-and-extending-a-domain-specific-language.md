@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 001b0efc5beaa5f76f979070e8e73c2d59fb3e8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 140a79e3771e4097a58c6974c8e088006ae2105a
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949794"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415651"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自訂及擴充網域指定的語言
 Visual Studio 模型和視覺效果 SDK (VMSDK) 提供在中，您可以定義模型化工具的數個層級：
@@ -51,14 +51,14 @@ Visual Studio 模型和視覺效果 SDK (VMSDK) 提供在中，您可以定義�
 |變更名稱、 圖示和可見性，您的 DSL 模型總管 中的節點。|請參閱[自訂模型總管](../modeling/customizing-the-model-explorer.md)。|
 |啟用複製、 剪下和貼上|設定**啟用複製貼上**屬性**編輯器**DSL 總管 中的節點。|
 |請將複製參考連結和其目標，每當複製的項目。 例如，將複製的項目附加註解。|設定**Propagates Copy** （由位於在 DSL 定義圖表中的網域關聯性的一端） 的來源角色的內容。<br /><br /> 撰寫程式碼來覆寫 ProcessOnCopy 來達成更複雜的效果。<br /><br /> 請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。|
-|刪除、 重設父代，或刪除項目時，請重新連結相關的項目。|設定**傳播刪除**關聯性角色的值。 針對更複雜的影響，會覆寫`ShouldVisitRelationship`並`ShouldVisitRolePlayer`中的方法`MyDslDeleteClosure`中所定義的類別**DomainModel.cs**<br /><br /> 請參閱[自訂刪除行為](../modeling/customizing-deletion-behavior.md)|
+|刪除、 重設父代，或刪除項目時，請重新連結相關的項目。|設定**傳播刪除**關聯性角色的值。 針對更複雜的影響，會覆寫`ShouldVisitRelationship`並`ShouldVisitRolePlayer`中的方法`MyDslDeleteClosure`中所定義的類別**DomainModel.cs**。|
 |保留圖形版面配置和外觀上複製和拖放。|將圖形和連接器新增至所複製`ElementGroupPrototype`。 若要覆寫最方便的方法是 `ElementOperations.CreateElementGroupPrototype()`<br /><br /> 請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。|
 |在選擇的位置貼上圖形，例如目前的游標位置。|覆寫`ClipboardCommandSet.ProcessOnCopy()`若要使用的特定位置的新版`ElementOperations.Merge().`請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。|
 |貼上建立其他連結|Override ClipboardCommandSet.ProcessOnPasteCommand()|
 |啟用從拖放此圖中，其他的 Dsl 和 Windows 項目|請參閱[如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |讓圖形或工具拖曳至 「 子 」 圖形，例如連接埠，如同它已拖曳至父代。|定義目標物件類別，來卸除的物件轉送給父項目合併指示詞。 請參閱[自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)。|
 |讓圖形或將它們拖曳至圖形，並讓其他連結的工具或建立的物件。 例如，若要允許的註解可以放到它為連結的項目。|在目標網域類別，定義項目合併指示詞，並定義要產生的連結。 在複雜的情況下，您可以加入自訂程式碼。 請參閱[自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)。|
-|利用單一工具中建立一組項目。 例如，具有一組固定的連接埠的元件。|覆寫 ToolboxHelper.cs 中的 [工具箱] 初始化方法。 建立項目群組原型 (EGP) 包含的項目和其關聯性連結。 請參閱[自訂工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)。<br /><br /> 包含主體和連接埠圖形中的 EGP，或是定義 BoundsRules EGP 具現化時通訊埠圖案的位置。 請參閱[BoundsRules 限制圖案位置和大小](../modeling/boundsrules-constrain-shape-location-and-size.md)。|
+|利用單一工具中建立一組項目。 例如，具有一組固定的連接埠的元件。|覆寫 ToolboxHelper.cs 中的 [工具箱] 初始化方法。 建立項目群組原型 (EGP) 包含的項目和其關聯性連結。 請參閱[自訂工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)。<br /><br /> 包含主體和連接埠圖形中的 EGP，或是定義 BoundsRules EGP 具現化時通訊埠圖案的位置。|
 |您可以使用一個連接工具來產生數種類型的關聯性。|加入連接產生器工具所叫用連結連線指示詞 (LCD)。 Lcd 判斷兩個項目類型的關聯性的類型。 若要讓這項目的狀態而定，您可以加入自訂程式碼。 請參閱[自訂工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)。|
 |自黏便箋的工具-使用者可以按兩下任何工具來建立連續的許多圖形或連接器。|在 DSL 總管 中，選取 `Editor`節點。 在 [屬性] 視窗中，設定**使用黏性工具箱項目**。|
 |定義功能表命令|請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|

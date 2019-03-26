@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fad34e853aee65f32d87145d1d0300495e07b9c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a5343fc177afce6baa6d9f4727d118606cc1b57
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953993"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415963"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>HOW TO：擴充特定領域語言設計工具
 
@@ -26,15 +26,13 @@ ms.locfileid: "55953993"
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>若要建立的 DSL 設計工具擴充功能方案
 
-1.  建立新的專案使用類別庫專案範本。 在 **新的專案** 對話方塊中，按一下**Visual C#** ，然後在中間視窗中的，按一下 **類別庫**。
+1.  建立新的專案使用**類別庫**專案範本。 這個專案會包含您的擴充功能的程式碼。
 
-     這個專案會包含您的擴充功能的程式碼。
-
-2.  建立新的專案使用 VSIX 專案範本。 在 **新的專案**對話方塊方塊中，展開**Visual C#**，按一下**擴充性**，，然後在中間視窗中選取**VSIX 專案**。
+2.  建立新**VSIX 專案**專案。
 
      選取 **加入至方案**。
 
-     在 VSIX 資訊清單編輯器中，開啟 Source.extension.vsixmanifest。
+     *Source.extension.vsixmanifest* VSIX 資訊清單編輯器中開啟。
 
 3.  上方的 [內容] 欄位中，按一下**加入內容**。
 

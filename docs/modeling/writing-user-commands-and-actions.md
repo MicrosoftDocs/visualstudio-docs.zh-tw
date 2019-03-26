@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b151358df90be3db423bbf3db8b5123d1069f3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e7241e6f74d3ac034d52636b1bba1ee73b92c6
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949417"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415677"
 ---
 # <a name="writing-user-commands-and-actions"></a>撰寫使用者命令和動作
 您可以自訂網域指定的語言，方法為將命令加入圖表，以及回應手勢，例如拖放、按一下和按兩下事件。
@@ -28,8 +28,6 @@ ms.locfileid: "55949417"
 -   [如何：攔截圖案或 Decorator 上](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)-允許使用者從項目逐一點選至它所參考的另一個項目。
 
 -   [如何：存取及限制目前的選取範圍](../modeling/how-to-access-and-constrain-the-current-selection.md)
-
--   [自訂項目工具](../modeling/customizing-element-tools.md)
 
 ## <a name="see-also"></a>另請參閱
 

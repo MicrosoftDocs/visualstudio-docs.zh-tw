@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b08dab6be6a959b6a7ac37b243ff1bb94fbb4b1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40442d9cf740bd4122aaf48f82fdba425aff261e
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939615"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415573"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 擴充您的 DSL
 
@@ -117,15 +117,15 @@ ms.locfileid: "55939615"
 
 您的 DSL 現在是 MEF 啟用。 您可以將功能表命令、 軌跡處理常式和驗證條件約束撰寫成 MEF 擴充功能中。 您可以在您的 DSL 方案，以及其他自訂程式碼中撰寫這些擴充功能。 此外，您或其他開發人員可以撰寫擴充您的 DSL 的個別 Visual Studio 擴充功能。
 
-## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>建立已啟用 MEF 的 DSL 延伸模組
+## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>建立已啟用 MEF 的 DSL 延伸模組
 
 如果您有啟用 MEF 的 DSL，由自己還是他人的存取，您可以為它撰寫延伸模組。 擴充功能可用來加入功能表命令、 軌跡處理常式或驗證條件約束。 若要製作這些擴充功能，您可以使用 Visual Studio 擴充功能 (VSIX) 方案。 方案有兩個部分： 建置程式碼組件的類別庫專案和封裝組件的 VSIX 專案。
 
-#### <a name="to-create-a-dsl-extension-vsix"></a>若要建立的 DSL 延伸模組的 VSIX
+### <a name="to-create-a-dsl-extension-vsix"></a>若要建立的 DSL 延伸模組的 VSIX
 
-1. 建立新的類別庫專案。 若要這樣做，請在**新的專案**對話方塊中，選取**Visual Basic**或是**Visual C#** ，然後選取**類別庫**。
+1. 建立新**類別庫**專案。
 
-2. 在新的類別庫專案，加入 DSL 的組件的參考。
+2. 在新的專案中，加入 DSL 的組件的參考。
 
    - 這個組件通常具有名稱的結尾 」。Dsl.dll"。
 
@@ -145,9 +145,9 @@ ms.locfileid: "55939615"
 
    -   System.Windows.Forms.dll
 
-4. 建立 VSIX 專案，在相同的方案。 若要這樣做，請在**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#**，按一下 **擴充性**，然後選取  **VSIX 專案**。
+4. 建立新**VSIX 專案**專案。
 
-5. 在 方案總管 中，以滑鼠右鍵按一下 VSIX 專案，並再按**設定為啟始專案**。
+5. 在 **方案總管**，以滑鼠右鍵按一下 VSIX 專案，然後選擇**設定為啟始專案**。
 
 6. 在新的專案中，開啟**source.extension.vsixmanifest**。
 
@@ -247,7 +247,7 @@ namespace MyMefExtension
 
 軌跡處理常式可以處理拖曳至圖表，來源內的任何位置，或在 Visual Studio 外部的物件。 下列範例可讓使用者從 Windows 檔案總管將檔案拖曳到圖表上。 它會建立包含檔案名稱的項目。
 
-您可以撰寫處理常式來處理來自其他 DSL 模型和 UML 模型拖曳的。 如需詳細資訊，請參閱[＜How to：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。
+您可以撰寫處理常式來處理來自其他 DSL 模型和 UML 模型拖曳的。 如需詳細資訊，請參閱[如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。
 
 ```csharp
 using System.ComponentModel.Composition;

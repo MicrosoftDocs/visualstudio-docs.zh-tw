@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b727f1e4de34a0bde6b4caba570840cea6e1a201
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af0bd2c315114444057ca05e9bb85691fe72e966
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950145"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416232"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>巡覽及更新程式碼中的模型
 
@@ -190,7 +190,7 @@ using (Transaction t =
 
 - 設定新的項目，特別是為其屬性的屬性`IsName`是 DslDefinition 中，則為 true。 這個旗標標記是用來識別在其擁有者的唯一元素的屬性。 在此情況下，[名稱] 屬性會有該旗標。
 
-- 此 DSL 的 DSL 定義必須載入到存放區。 如果您正在撰寫擴充功能，例如功能表命令，這通常會是已經為 true。 在其他情況下，您可以明確地將模型載入存放區，或使用<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>載入它。 如需詳細資訊，請參閱[＜How to：從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。
+- 此 DSL 的 DSL 定義必須載入到存放區。 如果您正在撰寫擴充功能，例如功能表命令，這通常會是已經為 true。 在其他情況下，您可以明確地將模型載入存放區，或使用<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>載入它。 如需詳細資訊，請參閱[如何：從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。
 
   當您建立的項目，如此一來時，圖形會自動建立 （如果 DSL 圖表）。 它會出現在 自動指派的位置，而預設圖形、 色彩和其他功能。 如果您想要控制相關聯的圖形顯示的位置和方式，請參閱 <<c0> [ 建立項目和其圖形](#merge)。
 
@@ -226,27 +226,28 @@ using (Transaction t =
   當您建立的項目，如此一來時，在圖表上的連接器會自動建立，但它有 「 預設 」 圖形、 色彩和其他功能。 若要控制相關聯的連接器的建立方式，請參閱[建立項目和其圖形](#merge)。
 
 ##  <a name="deleteelements"></a> 刪除項目
- 刪除項目，藉由呼叫`Delete()`:
 
- `henry.Delete();`
+刪除項目，藉由呼叫`Delete()`:
 
- 此外，也會刪除這項作業：
+`henry.Delete();`
+
+此外，也會刪除這項作業：
 
 - 關聯性的連結項目。 例如，`edward.Parents`就不再包含`henry`。
 
 - 在角色的項目`PropagatesDelete`旗標為 true。 比方說，將刪除的圖形顯示的項目。
 
-  根據預設，每個內嵌關聯性具有`PropagatesDelete`在目標角色，則為 true。 正在刪除`henry`不會刪除`familyTree`，但`familyTree.Delete()`會刪除所有`Persons`。 如需詳細資訊，請參閱 <<c0> [ 自訂刪除行為](../modeling/customizing-deletion-behavior.md)。
+根據預設，每個內嵌關聯性具有`PropagatesDelete`在目標角色，則為 true。 正在刪除`henry`不會刪除`familyTree`，但`familyTree.Delete()`會刪除所有`Persons`。
 
-  根據預設，`PropagatesDelete`不適用於參考關聯性的角色。
+根據預設，`PropagatesDelete`不適用於參考關聯性的角色。
 
-  您可能會導致刪除規則，當您刪除物件時，請略過特定的傳用。 這非常有用，如果您會取代另一個項目。 您提供為其刪除不應散佈的一或多個角色的 GUID。 從關聯性類別，可以取得 GUID:
+您可能會導致刪除規則，當您刪除物件時，請略過特定的傳用。 這非常有用，如果您會取代另一個項目。 您提供為其刪除不應散佈的一或多個角色的 GUID。 從關聯性類別，可以取得 GUID:
 
-  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+`henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
-  (這個特定範例中會有任何作用中，，因為`PropagatesDelete`已`false`的角色`ParentsHaveChildren`關聯性。)
+(這個特定範例中會有任何作用中，，因為`PropagatesDelete`已`false`的角色`ParentsHaveChildren`關聯性。)
 
-  在某些情況下，禁止刪除鎖定，項目或項目，會刪除傳播的存在。 您可以使用`element.CanDelete()`來檢查是否可以刪除的項目。
+在某些情況下，禁止刪除鎖定，項目或項目，會刪除傳播的存在。 您可以使用`element.CanDelete()`來檢查是否可以刪除的項目。
 
 ##  <a name="deletelinks"></a> 刪除關聯性連結
  您可以藉由移除角色屬性中的項目來刪除關聯性連結：
@@ -473,7 +474,7 @@ partial class MyDiagram
  您也可以設定色彩和公開的其他屬性使用此方法的連接器。
 
 ### <a name="use-transactions"></a>使用交易
- 圖形、 連接器和圖表是的子類型<xref:Microsoft.VisualStudio.Modeling.ModelElement>選和即時存放區中。 您因此必須只在交易內，它們進行變更。 如需詳細資訊，請參閱[＜How to：使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
+ 圖形、 連接器和圖表是的子類型<xref:Microsoft.VisualStudio.Modeling.ModelElement>選和即時存放區中。 您因此必須只在交易內，它們進行變更。 如需詳細資訊，請參閱[如何：使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
 
 ##  <a name="docdata"></a> 文件檢視和文件資料
  ![標準圖表類型的類別圖表](../modeling/media/dsldiagramsanddocs.png)
@@ -486,6 +487,6 @@ partial class MyDiagram
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [特定領域語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)
 - [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)
-- [如何：使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)
+- [如何：使用異動來更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)
 - [使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00796a43326d26fa7f25d6cb925851f411f916e3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355785"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415692"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 設計階段 T4 文字範本可讓您在 Visual Studio 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓他們變更其根據從資料產生的程式碼*模型*。 模型是檔案或資料庫，其中包含您的應用程式需求的重要資訊。
@@ -34,13 +34,9 @@ ms.locfileid: "58355785"
 
  文字範本混合了您想要產生的文字以及產生文字變動部分的程式碼。 程式碼可讓您重複或有條件地省略所產生文字的組件。 所產生的文字本身可以是形成您應用程式一部分的程式碼。
 
-## <a name="creating-a-design-time-t4-text-template"></a>建立設計階段 T4 文字範本
+## <a name="create-a-design-time-t4-text-template"></a>建立設計階段 T4 文字範本
 
-#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>在 Visual Studio 中建立設計階段 T4 範本
-
-1. 建立 Visual Studio 專案，或開啟現有實驗。
-
-    例如，在**檔案**功能表上，選擇**新增** > **專案**。
+1. 建立新的 Visual Studio 專案，或開啟現有實驗。
 
 2. 將文字範本檔案新增至您的專案，並為它命名副檔名 **.tt**。
 
@@ -70,10 +66,11 @@ ms.locfileid: "58355785"
 6. 在 **方案總管**，展開範本檔節點，然後您會發現副檔名的檔案 **.txt**。 此檔案包含從範本產生的文字。
 
    > [!NOTE]
-   >  如果您的專案是 Visual Basic 專案，您必須按一下**顯示所有檔案**才能看到輸出檔案。
+   > 如果您的專案是 Visual Basic 專案，您必須按一下**顯示所有檔案**才能看到輸出檔案。
 
-### <a name="regenerating-the-code"></a>重新產生程式碼
- 在下列任何情況下，將會執行範本，並產生附帶檔案：
+### <a name="regenerate-the-code"></a>重新產生程式碼
+
+在下列任何情況下，將會執行範本，並產生附帶檔案：
 
 - 編輯範本，然後將焦點變更至不同的 Visual Studio 視窗。
 
@@ -83,12 +80,11 @@ ms.locfileid: "58355785"
 
 - 在 **方案總管**，在快顯功能表的任何檔案，選擇**執行自訂工具**。 使用此方法可以轉換所選取的範本子集。
 
-  您也可以設定 Visual Studio 專案，因此它們所讀取的資料檔案變更時，範本會執行的。 如需詳細資訊，請參閱 <<c0> [ 自動重新產生程式碼](#Regenerating)。
+您也可以設定 Visual Studio 專案，因此它們所讀取的資料檔案變更時，範本會執行的。 如需詳細資訊，請參閱 <<c0> [ 自動重新產生程式碼](#Regenerating)。
 
-## <a name="generating-variable-text"></a>產生變數文字
- 文字範本可讓您使用程式碼，讓所產生檔案的內容不同。
+## <a name="generate-variable-text"></a>產生變數文字
 
-#### <a name="to-generate-text-by-using-program-code"></a>使用程式碼來產生文字
+文字範本可讓您使用程式碼，讓所產生檔案的內容不同。
 
 1. 變更 `.tt` 檔案的內容：
 

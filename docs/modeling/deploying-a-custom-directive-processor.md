@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad29fbc042e9f6397dc1f09fe3fce81f20403aa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c139e2a9675bdbe204b54220709ac8cdc794e5b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932049"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416054"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自訂指示詞處理器
 
@@ -46,9 +46,7 @@ ms.locfileid: "55932049"
 
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>若要在 VSIX 專案中開發自訂指示詞處理器
 
-1.  Visual Studio 中建立 VSIX 專案。
-
-    -   在**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#**，然後展開**擴充性**。 按一下  **VSIX 專案**。
+1.  建立新**VSIX 專案**專案。
 
 2.  在  **source.extension.vsixmanifest**、 內容類型設定和支援的版本。
 
