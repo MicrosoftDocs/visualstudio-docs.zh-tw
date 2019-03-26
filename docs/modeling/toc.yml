@@ -74,12 +74,6 @@ items:
       href: add-custom-architecture-validation-to-layer-diagrams.md
     - name: 將自訂屬性新增至相依性圖表
       href: add-custom-properties-to-layer-diagrams.md
-    - name: 巡覽及更新程式碼中的相依性模型
-      href: navigate-and-update-layer-models-in-program-code.md
-    - name: 部署相依性模型延伸模組
-      href: deploy-a-layer-model-extension.md
-    - name: 針對相依性圖表延伸模組進行疑難排解
-      href: troubleshoot-extensions-for-layer-diagrams.md
   - name: Modeling SDK for Visual Studio - 網域指定的語言
     href: modeling-sdk-for-visual-studio-domain-specific-languages.md
     items:
@@ -115,8 +109,6 @@ items:
         href: customizing-element-creation-and-movement.md
       - name: 自訂複製行為
         href: customizing-copy-behavior.md
-      - name: 自訂刪除行為
-        href: customizing-deletion-behavior.md
       - name: 自訂屬性視窗
         href: customizing-the-properties-window.md
       - name: 自訂模型總管
@@ -177,8 +169,6 @@ items:
         href: adding-extensions-to-dsl-definitions.md
       - name: 在特定領域語言定義中新增追蹤屬性
         href: adding-a-tracking-property-to-a-domain-specific-language-definition.md
-      - name: 使用存放區檢視進行偵錯
-        href: debugging-by-using-the-store-viewer.md
       - name: DslDefinition.dsl 檔
         href: the-dsldefinition-dsl-file.md
       - name: 了解 DSL 程式碼
@@ -198,8 +188,6 @@ items:
         href: how-to-intercept-a-click-on-a-shape-or-decorator.md
       - name: 存取及限制目前的選取範圍
         href: how-to-access-and-constrain-the-current-selection.md
-      - name: 自訂項目工具
-        href: customizing-element-tools.md
     - name: 回應及散佈變更
       href: responding-to-and-propagating-changes.md
       items:
@@ -211,8 +199,6 @@ items:
         href: rules-propagate-changes-within-the-model.md
       - name: 事件處理常式傳播模型外的變更
         href: event-handlers-propagate-changes-outside-the-model.md
-      - name: BoundsRules 限制圖案位置和大小
-        href: boundsrules-constrain-shape-location-and-size.md
       - name: 更新圖形和接點來反映模型
         href: updating-shapes-and-connectors-to-reflect-the-model.md
     - name: 從特定領域語言產生程式碼
@@ -344,9 +330,9 @@ items:
           href: walkthrough-creating-a-custom-text-template-host.md
     - name: T4 文字範本 API 參考
       href: api-reference-for-t4-text-templates.md
-ms.openlocfilehash: 04587f1fed1b83cf8ebac8d42be9e1031c7dcf9d
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 25393b9c38dc994f41d8f78dd7f8b901f4f298b3
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872043"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415705"

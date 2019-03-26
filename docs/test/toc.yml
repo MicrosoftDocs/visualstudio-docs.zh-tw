@@ -112,8 +112,6 @@ items:
       href: customizing-code-coverage-analysis.md
     - name: 對程式碼涵蓋範圍進行疑難排解
       href: troubleshooting-code-coverage.md
-  - name: 使用模擬器來隔離 Sharepoint 2010 應用程式的單元測試
-    href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
 - name: 即時單元測試
   href: live-unit-testing-intro.md
   items:
@@ -339,8 +337,6 @@ items:
     href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
   - name: 在自動程式化 UI 測試中使用 HTML5 控制項
     href: using-html5-controls-in-coded-ui-tests.md
-  - name: 使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式
-    href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
   - name: 建立資料驅動式自動程式化 UI 測試
     href: creating-a-data-driven-coded-ui-test.md
   - name: 在播放期間等候特定事件
@@ -370,9 +366,9 @@ items:
     href: lab-management/use-build-or-rm-instead-of-lab-management.md
   - name: 安裝測試代理程式和測試控制器
     href: lab-management/install-configure-test-agents.md
-ms.openlocfilehash: c361abfb14ec9c89054b08d561c11e060d05a6af
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: d63258d61d94ca52208b89267b92743e95d3664c
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223789"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416275"
