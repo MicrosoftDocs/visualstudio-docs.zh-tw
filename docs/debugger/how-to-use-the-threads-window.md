@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b205a92607d55b9999a846c860235c7deb5b13ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 80ef787bb9293bb26ba9ab706abf805005153752
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680213"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476029"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>逐步解說： 偵錯多執行緒的應用程式，使用 [執行緒] 視窗 (C#，Visual Basic、 c + +)
 
@@ -34,15 +34,27 @@ ms.locfileid: "56680213"
 
 建立下列的多執行緒應用程式專案，以使用在本教學課程：
 
-1. 在 Visual Studio 中，選取 [檔案] > [新增] > [專案]。
+1. 開啟 Visual Studio 並建立新專案。
 
-1. 在 [新增專案] 對話方塊中：
-   - 針對C#應用程式，選取**視覺化C#**    > **主控台應用程式 (.NET Framework)**。
-   - C + + 應用程式中，選取**Visual c + +** > **Windows 主控台應用程式**。
+    ::: moniker range=">=vs-2019"
+    型別**Ctrl + Q**來開啟 [搜尋] 方塊中，輸入**主控台**(或**c + +**)，選擇**範本**，然後：
+    
+    - 針對C#，選擇**建立新的主控台應用程式 (.NET Framework) 專案**的C#。 在出現的對話方塊中，選擇**建立**。
+    - C + +，請選擇**建立新的主控台應用程式專案**。 在出現的對話方塊中，選擇**建立**。
 
-1. 名稱 MyThreadWalkthroughApp，應用程式，然後選取**確定**。
+    然後，輸入名稱，例如**MyThreadWalkthroughApp**然後按一下**建立**。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在左窗格中**新的專案**對話方塊方塊中，選擇下列：
+    - 針對C#應用程式底下**視覺化C#** ，選擇**Windows 桌面**，然後在中間窗格選擇 **主控台應用程式 (.NET Framework)**。
+    - C + + 應用程式中下, **Visual c + +**，選擇**Windows 桌面**，然後選擇  **Windows 主控台應用程式**。
 
-   新的專案會出現在**方案總管 中**，和原始程式檔名*Program.cs*或是*MyThreadWalkthroughApp.cpp*會在原始程式碼視窗中開啟。
+    然後，輸入名稱，例如**MyThreadWalkthroughApp**然後按一下**確定**。
+    ::: moniker-end
+
+    如果您沒有看到**主控台應用程式**專案範本，請移至**工具** > **取得工具與功能...**，這會開啟 Visual Studio 安裝程式。 選擇 [NET 桌面開發] 或 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
+
+    新的專案會出現在**方案總管 中**，和原始程式檔名*Program.cs*或是*MyThreadWalkthroughApp.cpp*會在原始程式碼視窗中開啟。
 
 1. 原始程式檔與程式碼取代C#或 c + + 範例程式碼，從[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。
 
