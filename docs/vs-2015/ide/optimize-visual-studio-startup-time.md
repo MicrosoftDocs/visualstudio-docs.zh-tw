@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ceed13cc320e2c98d413e6694acb2b473ad72eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 98d54f1e43090e8e1cacf8aecac9eebd18ffcbd7
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780271"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355366"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>最佳化 Visual Studio 啟動時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54780271"
 
 ## <a name="control-startup-behavior"></a>控制啟動行為
 
-為了避免延長啟動時間，Visual Studio 2017 會使用依需求載入方式，以避免在啟動時載入擴充功能。 這表示延伸模組不會在 Visual Studio 啟動之後立即開啟，而是在啟動之後視需要非同步開啟。 此外，因為在先前的 Visual Studio 工作階段中保持開啟的工具視窗可能會讓啟動時間變慢，所以 Visual Studio 會以更智慧的方式開啟工具視窗，以避免影響啟動時間。
+若要避免延長啟動時間，Visual Studio 2017，並稍後避免在啟動期間，使用依需求載入方式載入擴充功能。 這表示延伸模組不會在 Visual Studio 啟動之後立即開啟，而是在啟動之後視需要非同步開啟。 此外，因為在先前的 Visual Studio 工作階段中保持開啟的工具視窗可能會讓啟動時間變慢，所以 Visual Studio 會以更智慧的方式開啟工具視窗，以避免影響啟動時間。
 
 如果 Visual Studio 偵測到啟動變慢，就會出現快顯訊息，警告您導致速度變慢的延伸模組或工具視窗。 此訊息也會提供 [管理 Visual Studio 效能] 對話方塊的連結，而在此對話方塊中，會列出影響啟動效能的延伸模組和工具視窗。 這個對話方塊可讓您變更延伸模組和工具視窗設定，以改善啟動效能。
 

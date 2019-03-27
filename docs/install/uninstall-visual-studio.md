@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5188a46807eef84b942c3d551c938d97f372413e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 3836ee8d0f2f503b415eb84d811067617266c3b1
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982879"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324808"
 ---
 # <a name="uninstall-visual-studio"></a>解除安裝 Visual Studio
 

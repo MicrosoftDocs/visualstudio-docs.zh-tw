@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 18848503f80000bf81c2020797a466aa43a29c9d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 8634f1852d10a1935b3ee55b6e80ad9503923fe9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316895"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323538"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>使用動態符號執行產生輸入
 
@@ -96,11 +96,11 @@ IntelliTest 在執行測試和待測程式時，會監視已執行的指令。 �
 
 * **內部成員的可見性**
   * IntelliTest 假設所產生的測試可以存取封入 [PexClass](attribute-glossary.md#pexclass) 可見的內部成員。
-  .NET 有 **InternalsVisibleToAttribute** 可將內部成員的可見性延伸到其他組件。<p />
+  .NET 有 **InternalsVisibleToAttribute** 可將內部成員的可見性延伸到其他組件。
 
 * **[PexClass](attribute-glossary.md#pexclass) 的私人和家庭 (在 C# 中為受保護) 成員的可見性**
   * IntelliTest 一律會將產生的測試直接放入 [PexClass](attribute-glossary.md#pexclass) 或子類別中。 因此，IntelliTest 假設它可能會使用所有可見的家庭成員 (在 C# 中為**受保護**)。
-  * 如果產生的測試直接放入 [PexClass](attribute-glossary.md#pexclass) 中(通常是透過使用部分類別)，IntelliTest 會假設它也可以使用 [PexClass](attribute-glossary.md#pexclass) 的所有私人成員。<p />
+  * 如果產生的測試直接放入 [PexClass](attribute-glossary.md#pexclass) 中(通常是透過使用部分類別)，IntelliTest 會假設它也可以使用 [PexClass](attribute-glossary.md#pexclass) 的所有私人成員。
 
 * **公用成員的可見性**
   * IntelliTest 假設它可能會使用 [PexClass](attribute-glossary.md#pexclass) 內容中可見的所有已匯出成員。

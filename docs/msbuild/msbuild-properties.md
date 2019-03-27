@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a42396236c88bdc574a10a7557963dfc39922a1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fed1fff9e776521581455a89db48897f22de7bf5
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631129"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355613"
 ---
 # <a name="msbuild-properties"></a>MSBuild 屬性
 屬性是名稱/值組，可以用來設定組建。 屬性可用於將值傳遞給工作、評估條件，以及儲存將在整個專案檔中參考的值。
@@ -118,7 +118,6 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
  屬性可以包含任意的 XML，其有助於將值傳遞給工作，或是顯示記錄資訊。 下列範例示範 `ConfigTemplate` 屬性，其值會包含 XML 和其他屬性參考。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會藉由使用其各自的屬性值來取代屬性參考。 屬性值是以其出現的順序來指派。 因此，在此範例中，應該已經定義 `$(MySupportedVersion)`、`$(MyRequiredVersion)` 及 `$(MySafeMode)`。
 
 ```xml
-
 <PropertyGroup>
     <ConfigTemplate>
         <Configuration>

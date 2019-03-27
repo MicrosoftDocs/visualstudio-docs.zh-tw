@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f59dceabb076ebce36755c41caa6de00258be883
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: afd4b758332d9357dc20dd84e726d72da4d2db74
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160637"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355179"
 ---
 # <a name="generate-usings-in-visual-studio"></a>在 Visual Studio 中產生 using
 
@@ -22,7 +22,7 @@ ms.locfileid: "58160637"
 
 - C#
 
-**功能：****功能：** 可讓您立即新增必要的匯入，或複製並貼上程式碼的 [using 陳述式](/dotnet/csharp/language-reference/keywords/using-statement)。
+**功能：** 可讓您立即新增必要的匯入，或複製並貼上程式碼的 [using 陳述式](/dotnet/csharp/language-reference/keywords/using-statement)。
 
 **時機：** 常見做法是從專案或其他程式碼來源中的不同位置複製並貼上程式碼。 此快速動作會分析複製並貼上程式碼所遺失的匯入，並會提示您將其新增。
 

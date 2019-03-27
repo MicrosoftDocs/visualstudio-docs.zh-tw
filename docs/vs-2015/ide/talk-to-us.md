@@ -11,17 +11,17 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 198953116a6489c0e771a66b463e44da48590a4f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02320e4e47f98212d49d81e302510bce4573e685
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785935"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354852"
 ---
 # <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 的最新文件，請參閱 <<c0> [ 告訴我們](https://docs.microsoft.com/visualstudio/ide/talk-to-us)docs.microsoft.com 上。  
+如需 Visual Studio 的最新文件，請參閱 <<c0> [ 告訴我們](https://docs.microsoft.com/visualstudio/ide/talk-to-us)docs.microsoft.com 上。  
 
   
 

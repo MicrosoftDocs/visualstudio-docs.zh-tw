@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: HT
+ms.openlocfilehash: b85999a22bf49923630a0abe2f9ef33950edd8fe
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069862"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325077"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>將 WPF 控制項繫結至資料集
 
@@ -74,7 +74,7 @@ ms.locfileid: "58069862"
 
 1. 開啟 Visual Studio。
 
-2. 在 [開始] 視窗中，選擇**建立新的專案**。
+2. 在開始視窗中，選擇 [建立新專案]。
 
 3. 搜尋C# **WPF 應用程式**專案範本，並遵循步驟來建立專案，命名專案**AdventureWorksProductsEditor**。
 

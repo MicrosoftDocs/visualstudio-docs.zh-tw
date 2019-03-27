@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee70d3cf580caaea4207f1d830ef1500f18942ff
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 94f8b26536a657698dfcb0c0fa3de3876e1452b1
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221391"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325210"
 ---
 # <a name="options-text-editor-cc-experimental"></a>選項、文字編輯器、C/C++、實驗
 
@@ -37,7 +37,7 @@ ms.locfileid: "57221391"
 
 ## <a name="enable-predictive-intellisense"></a>啟用預測性 IntelliSense
 
-預測性 IntelliSense 會限制顯示在 IntelliSense 下拉式清單中的結果數，讓您只看到內容相關的結果。 例如，如果您鍵入 <code>int x =</code> 並叫用 IntelliSense 下拉式清單，則只會看到整數或傳回整數的函式。 根據預設，會關閉預測性 IntelliSense。
+預測性 IntelliSense 會限制顯示在 IntelliSense 下拉式清單中的結果數，讓您只看到內容相關的結果。 例如，如果您鍵入 `int x =` 並叫用 IntelliSense 下拉式清單，則只會看到整數或傳回整數的函式。 根據預設，會關閉預測性 IntelliSense。
 
 ::: moniker range="vs-2017"
 
