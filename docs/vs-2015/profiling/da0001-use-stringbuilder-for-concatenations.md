@@ -14,17 +14,17 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da0de740155936497c2e21213d7e063fa761aade
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5a374e867283e4dad614d8bebce88a9bababa7d5
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804897"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355173"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001：使用 StringBuilder 進行串連
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 的最新文件，請參閱[DA0001:使用 StringBuilder 進行串連](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations)docs.microsoft.com 上。  
+如需 Visual Studio 的最新文件，請參閱 < [DA0001： 使用 StringBuilder 進行串連](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations)docs.microsoft.com 上。  
   
 |||  
 |-|-|  

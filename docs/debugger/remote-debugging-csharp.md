@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55265b24a60697b7d84940968c192b7e6a38a2f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526733"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355159"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>遠端偵錯C#或 Visual Studio 中的 Visual Basic 專案
 若要偵錯已部署在不同電腦的 Visual Studio 應用程式，安裝和您用來部署您的應用程式的電腦上執行遠端工具，設定您的專案從 Visual Studio 中，連線到遠端電腦，然後執行您的應用程式。
@@ -71,7 +71,15 @@ ms.locfileid: "57526733"
 
 5. 確認 [工作目錄] 文字方塊為空白。
 
-6. 選擇**使用遠端電腦**，然後輸入**MJO-DL:4022**在文字方塊中。 （4022 是遠端偵錯工具視窗中顯示的連接埠號碼。 連接埠號碼會遞增每個版本的 Visual Studio 中的 2）。
+6. 選擇**使用遠端電腦**，然後輸入**yourmachinename:port**在文字方塊中。 （連接埠號碼會顯示在遠端偵錯工具視窗中。 連接埠號碼會遞增每個版本的 Visual Studio 中的 2）。
+
+    在此範例中，使用：
+    ::: moniker range=">=vs-2019"
+    **MJO-DL:4024**於 Visual Studio 2019
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **MJO-DL:4022** Visual Studio 2017
+    ::: moniker-end
 
 7. 請確定未選取 [啟用原生程式碼偵錯]。
 

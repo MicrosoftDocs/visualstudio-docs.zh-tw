@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 487597c160a294c935f3f7670410e82927a86210
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 1a87080f2c6bc92bc37cc98a08bfc6643e3d12c4
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194641"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324129"
 ---
 # <a name="learn-about-projects-and-solutions"></a>了解專案與解決方案
 

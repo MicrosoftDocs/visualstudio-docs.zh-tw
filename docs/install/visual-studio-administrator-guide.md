@@ -15,12 +15,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b30a104afcbadc9397cc5c7bd79fa746b0e69a9f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: c9dbd7c3687596df0ccb0397cc5d52ff7888f9ff
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983815"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324931"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 系統管理員指南
 

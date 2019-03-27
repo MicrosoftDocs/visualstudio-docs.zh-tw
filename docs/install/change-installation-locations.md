@@ -14,16 +14,28 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e026b85a990e0186decc9c67ebecb169c0fa98
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 842fed287a6035684534c3d735d146e1b9a0fbfb
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983893"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324970"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>在 Visual Studio 2017 中選取安裝位置
 
+::: moniker range="vs-2017"
+
 **15.7 版的新功能**：您可以變更某些檔案的位置，來減少 Visual Studio 在系統磁碟機上的安裝磁碟使用量。 具體而言，您可以針對下載快取、共用元件、SDK 和工具檔案使用不同的位置。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+您可以變更某些檔案的位置，來減少 Visual Studio 在系統磁碟機上的安裝磁碟使用量。 具體而言，您可以針對下載快取、共用元件、SDK 和工具檔案使用不同的位置。
+
+::: moniker-end
 
    > [!NOTE]
    > 某些工具和 SDK 對於可安裝的位置有不同的規則。 這類工具和 SDK 會安裝在您的系統磁碟機上，即使您選擇其他位置也一樣。

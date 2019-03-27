@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607a3d9ac015232e882d20e8514b3143b411df20
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 69ebbf2401432b9afec5a66fb6a7322e3e2df035
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526772"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325327"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>只有使用 Just My Code 的使用者程式碼進行偵錯
 
@@ -115,7 +115,7 @@ Just My Code.NET Framework、 c + + 和 JavaScript 專案中的運作方式。
 C + + 專案，您可以指定模組、 原始程式檔和函式**呼叫堆疊**藉由指定在視窗會將視為非使用者程式碼 *\*.natjmc*檔案。 這項自訂也適用於逐步執行，如果您使用最新編譯器的程式碼 (請參閱[c + + Just My Code](#BKMK_CPP_User_and_non_user_code))。
 
 - 若要指定非使用者程式碼，在 Visual Studio 電腦的所有使用者，新增 *.natjmc*的檔案 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾。
-- 若要指定非使用者程式碼，針對個別使用者，新增 *.natjmc*的檔案 *%USERPROFILE%\My Documents\\<Visual Studio version>\Visualizers*資料夾。
+- 若要指定非使用者程式碼，針對個別使用者，新增 *.natjmc*的檔案 *%USERPROFILE%\My Documents\\< Visual Studio 版本\>\Visualizers*資料夾。
 
 A *.natjmc*檔案是 XML 檔案使用此語法：
 
@@ -165,7 +165,7 @@ A *.natjmc*檔案是 XML 檔案使用此語法：
 在 c + + 專案中，您可以指定函式依其列出中的非使用者程式碼逐步 *\*.natstepfilter*檔案。 函式中所列 *\*.natstepfilter*檔案不相依於 Just My Code 設定值。
 
 - 若要指定非使用者程式碼，為所有本機 Visual Studio 使用者，新增 *.natstepfilter*的檔案 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾。
-- 若要指定非使用者程式碼，針對個別使用者，新增 *.natstepfilter*的檔案 *%USERPROFILE%\My Documents\\<Visual Studio version>\Visualizers*資料夾。
+- 若要指定非使用者程式碼，針對個別使用者，新增 *.natstepfilter*的檔案 *%USERPROFILE%\My Documents\\< Visual Studio 版本\>\Visualizers*資料夾。
 
 A *.natstepfilter*檔案是 XML 檔案使用此語法：
 

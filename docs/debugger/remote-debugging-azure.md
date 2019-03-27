@@ -11,16 +11,16 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: caf4a90b55e53cb9e4887f32c0388d7b313486dd
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 694a9f7ba6bd5870a54b6b10e028c463d47ababf
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194933"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355798"
 ---
-# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 中的 Azure 中的 IIS 上的遠端偵錯 ASP.NET Core
+# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>在 Visual Studio 中的 Azure 中的 IIS 上的遠端偵錯 ASP.NET Core
 
-本指南說明如何安裝和設定 Visual Studio 2017 ASP.NET Core 應用程式、 將它部署到 IIS 使用 Azure，並附加遠端偵錯工具從 Visual Studio。
+本指南說明如何安裝和設定 Visual Studio ASP.NET Core 應用程式、 將它部署到 IIS 使用 Azure，並附加遠端偵錯工具從 Visual Studio。
 
 在 Azure 上的遠端偵錯的建議的方式取決於您的案例：
 
@@ -42,22 +42,31 @@ ms.locfileid: "58194933"
 > [!WARNING]
 > 請務必刪除您已完成的步驟，在本教學課程時所建立的 Azure 資源。 這樣一來，您可以避免產生不必要的費用。
 
+## <a name="prerequisites"></a>必要條件
 
-### <a name="requirements"></a>需求
+::: moniker range=">=vs-2019"
+Visual Studio 2019，才能遵循本文中所示的步驟。
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio 2017，才能遵循本文中所示的步驟。
+::: moniker-end
+
+### <a name="network-requirements"></a>網路需求
 
 不支援透過 proxy 連線的兩部電腦之間的偵錯。 透過高延遲或低頻寬連線，例如撥號網際網路，或透過網際網路偵錯跨國家/地區不建議使用和可能失敗或非常慢。 需求的完整清單，請參閱 <<c0> [ 需求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 的電腦上建立 ASP.NET Core 應用程式
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Visual Studio 電腦上建立 ASP.NET Core 應用程式
 
-1. 建立新的 ASP.NET Core 應用程式。 (選擇**檔案 > 新增 > 專案**，然後選取**視覺化C#> Web > ASP.NET Core Web 應用程式**)。
+1. 建立新的 ASP.NET Core 應用程式。
 
-    在  **ASP.NET Core**範本區段中，選取**Web 應用程式**。
+    ::: moniker range=">=vs-2019"
+    在 Visual Studio 2019，輸入**Ctrl + Q**來開啟 搜尋 方塊中，輸入**asp.net**，選擇 **範本**，然後選擇 **建立新的 ASP.NET Core Web 應用程式**. 在出現的對話方塊中，為專案名稱**MyASPApp**，然後選擇**建立**。 接下來，選擇**Web 應用程式 （模型-檢視-控制器）**，然後選擇**建立**。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    在 Visual Studio 2017 中，選擇**檔案 > 新增 > 專案**，然後選取**視覺化C#> Web > ASP.NET Core Web 應用程式**。 在 [ASP.NET Core 範本] 區段中，選取**Web 應用程式 （模型-檢視-控制器）**。 請確定選取 ASP.NET Core 2.1，，**啟用 Docker 支援**未選取且**驗證**設定為**不需要驗證**。 將專案命名為**MyASPApp**。
+    ::: moniker-end
 
-2. 請確定**ASP.NET Core 2.0**選取時，所**啟用 Docker 支援**是**不**選取且**驗證**設為**沒有驗證**。
-
-3. 將專案命名為**MyASPApp** ，按一下 **確定**建立新的方案。
-
-4. 開啟 About.cshtml.cs 檔案，並中設定中斷點`OnGet`方法 (在較舊的範本中，開啟 HomeController.cs 改為和中設定中斷點`About()`方法)。
+1. 開啟 About.cshtml.cs 檔案，並中設定中斷點`OnGet`方法 (在較舊的範本中，開啟 HomeController.cs 改為和中設定中斷點`About()`方法)。
 
 ## <a name="remote_debug_azure_app_service"></a> Azure App Service 上的遠端偵錯 ASP.NET Core
 
@@ -87,9 +96,9 @@ ms.locfileid: "58194933"
 
 您可以建立 Windows Server Azure VM，然後安裝並設定 IIS 和其他必要的軟體元件。 這花費的時間超出部署至 Azure App Service，而且需要您在本教學課程中遵循的其餘步驟。
 
-首先，遵循所述的所有步驟[安裝和執行的 IIS](/azure/virtual-machines/windows/quick-create-portal)。
-
-當您在網路安全性群組中開啟連接埠 80 時，也開啟連接埠 4022，遠端偵錯工具。 這樣一來，您就不必更新版本加以開啟。
+這些伺服器設定過這些程序：
+* Windows Server 2012 R2 和 IIS 8
+* Windows Server 2016 和 IIS 10
 
 ### <a name="app-already-running-in-iis-on-the-azure-vm"></a>已經執行 Azure VM 上的 在 IIS 中的應用程式嗎？
 
@@ -98,6 +107,10 @@ ms.locfileid: "58194933"
 * 如果您的應用程式在 IIS 中執行，而且只想要下載遠端偵錯工具並開始偵錯，請移至[下載並安裝 Windows Server 上的遠端工具](#BKMK_msvsmon)。
 
 * 如果您需要協助，請確定您的應用程式呈現設定而無法選取，部署，並在 IIS 中正確執行，以便您可以偵錯，請遵循本主題中的所有步驟。
+
+    * 在開始之前，請依照下列所述的所有步驟[安裝和執行的 IIS](/azure/virtual-machines/windows/quick-create-portal)。
+
+    * 當您在網路安全性群組中開啟連接埠 80 時，也開啟[更正連接埠](#bkmk_openports)遠端偵錯工具 （4024 或 4022）。 這樣一來，您就不必更新版本加以開啟。
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>更新 Windows Server 上的瀏覽器安全性設定
 
@@ -181,7 +194,7 @@ ms.locfileid: "58194933"
 
 ### <a name="BKMK_msvsmon"></a> 下載並安裝 Windows Server 上的遠端工具
 
-在本教學課程中，我們會使用 Visual Studio 2017。
+下載符合您的 Visual Studio 版本的遠端工具版本。
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -200,7 +213,15 @@ ms.locfileid: "58194933"
     > [!TIP]
     > 在 Visual Studio 2017 和更新版本中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...** Shift+Alt+P
 
-3. 將 [限定詞] 欄位設定為 **\<遠端電腦名稱>:4022**。
+3. [限定詞] 欄位設定為**\<遠端電腦名稱 >： 連接埠**。
+
+    ::: moniker range=">=vs-2019"
+    **\<遠端電腦名稱 >: 4024**於 Visual Studio 2019
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **\<遠端電腦名稱 >: 4022**上 Visual Studio 2017
+    ::: moniker-end
+
 4. 按一下 [重新整理]。
     您應該會看到有些處理程序會出現在 [可使用的處理序]  視窗。
 
@@ -233,9 +254,14 @@ ms.locfileid: "58194933"
 
 必要的連接埠：
 
-- 80-所需的 IIS
-- 4022-所需的 Visual Studio 2017 的遠端偵錯 (請參閱[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)如需詳細資訊)。
-- UDP 3702-（選擇性） 探索連接埠即可**尋找**按鈕附加至 Visual Studio 中的遠端偵錯工具時。
+* 80-所需的 IIS
+::: moniker range=">=vs-2019"
+* 4024-所需的 Visual Studio 2019 的遠端偵錯 (請參閱[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)如需詳細資訊)。
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022-所需的 Visual Studio 2017 的遠端偵錯 (請參閱[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)如需詳細資訊)。
+::: moniker-end
+* UDP 3702-（選擇性） 探索連接埠即可**尋找**按鈕附加至 Visual Studio 中的遠端偵錯工具時。
 
 此外，應該已經開啟這些連接埠，ASP.NET 安裝：
 - 8172-（選擇性） 所需的 Web Deploy 來部署應用程式從 Visual Studio

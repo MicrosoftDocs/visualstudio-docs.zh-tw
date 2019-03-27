@@ -14,12 +14,13 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c4475836a9d4cdd394bff78280c5c075dd960e1d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+monikerRange: vs-2019
+ms.openlocfilehash: 0e770b385b385713c262347c62d10e1be0769b40
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223542"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475886"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 

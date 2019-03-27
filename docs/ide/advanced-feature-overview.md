@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe209a28f74866cf13b6dbd58b01eac2450557b2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d3630dd316ec137b63ec11fc8a87634d0f24bf7
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221771"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268607"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
@@ -42,9 +42,13 @@ Visual Studio 提供一套工具，可讓您輕鬆建立由 Microsoft Azure 提�
 
 ![Azure 開發工作負載](../data-tools/media/azure-development-workload.png)
 
+::: moniker range="vs-2017"
+
 安裝 **Azure 開發**工作負載之後，即可在 [新增專案] 對話方塊中使用 C# 的下列**雲端**範本：
 
 ![Visual Studio 的雲端專案範本](media/cloud-project-templates.png)
+
+::: moniker-end
 
 Visual Studio 的 [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) 可讓您在 Visual Studio 內檢視和管理 Azure 型雲端資源。 這些資源可能包含虛擬機器、資料表、SQL 資料庫等。 **Cloud Explorer** 會顯示在您所登入 Azure 訂用帳戶下管理之所有帳戶中的 Azure 資源。 此外，如果特定作業需要 Azure 入口網站，**Cloud Explorer** 會提供連結，將您帶到入口網站中您所需前往的位置。
 

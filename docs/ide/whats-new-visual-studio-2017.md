@@ -16,12 +16,13 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c87bba495353bec059c6edc7a394f991e81b39bc
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+monikerRange: vs-2017
+ms.openlocfilehash: 22276c844da259600770862327bc316243c9c239
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195056"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476068"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
