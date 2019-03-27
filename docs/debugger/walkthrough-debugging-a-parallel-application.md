@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ecb3d7658cc89207551af7df875eba0b2c1e4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0c6a8c564e6786c2919bcf61ae8f23c990e9abc1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709404"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476055"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>逐步解說： 偵錯在 Visual Studio 中的平行應用程式 (C#，Visual Basic、 c + +)
 
@@ -62,23 +62,39 @@ ms.locfileid: "56709404"
 
 #### <a name="to-create-the-sample-project"></a>建立範例專案
 
-1. 在 Visual Studio 的 [檔案] 功能表上，指向 [新增]，然後按一下 [專案]。
+1. 開啟 Visual Studio 並建立新專案。
 
-2. 選取  **Visual C#** ， **Visual Basic**，或**Visual c + +**。 至於 Managed 語言，請確定架構方塊中有顯示 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]。
+    ::: moniker range=">=vs-2019"
+    型別**Ctrl + Q**來開啟 [搜尋] 方塊中，輸入**主控台**(或**c + +**)，選擇**範本**，然後：
+    
+    - 針對C#或 Visual Basic 中，選擇**建立新的主控台應用程式 (.NET Framework) 專案**或C#或 Visual Basic。 在出現的對話方塊中，選擇**建立**。
+    - C + +，請選擇**建立新的主控台應用程式專案**c + +。 在出現的對話方塊中，選擇**建立**。
 
-3. 底下**Windows 桌面**，選擇**主控台應用程式**，然後按一下 **確定**。 保留偵錯組態，這是預設值。
+    然後，輸入名稱或使用預設名稱，然後按一下**建立**。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在左窗格中**新的專案**對話方塊方塊中，選擇下列：
 
-4. 在專案中開啟 .cpp、.cs 或 .vb 程式碼檔案。 刪除其內容，建立空白程式碼檔案。
+    - 針對C#應用程式底下**視覺化C#** ，選擇**Windows 桌面**，然後在中間窗格選擇 **主控台應用程式 (.NET Framework)**。
+    - Visual Basic 應用程式中，在**Visual Basic**，選擇**Windows 桌面**，然後在中間窗格選擇 **主控台應用程式 (.NET Framework)**。
+    - C + + 應用程式中下, **Visual c + +**，選擇**Windows 桌面**，然後選擇  **Windows 主控台應用程式**。
 
-5. 將所選擇語言的下列程式碼貼到空白程式碼檔案中。
+    然後，輸入名稱或使用預設名稱，然後按一下**確定**。
+    ::: moniker-end
+
+    如果您沒有看到**主控台應用程式**專案範本，請移至**工具** > **取得工具與功能...**，這會開啟 Visual Studio 安裝程式。 選擇 [NET 桌面開發] 或 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
+
+1. 在專案中開啟 .cpp、.cs 或 .vb 程式碼檔案。 刪除其內容，建立空白程式碼檔案。
+
+1. 將所選擇語言的下列程式碼貼到空白程式碼檔案中。
 
    [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-6. 在 [檔案] 功能表上按一下 [全部儲存]。
+1. 在 [檔案] 功能表上按一下 [全部儲存]。
 
-7. 在 [建置] 功能表上，按一下 [重建方案]。
+1. 在 [建置] 功能表上，按一下 [重建方案]。
 
     請注意，由於 `Debugger.Break` (C++ 範例中的 `DebugBreak`) 的呼叫有四個，因此，您不需要插入中斷點，只要執行應用程式就會在偵錯工具中斷最多四次。
 

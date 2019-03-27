@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 671af69cf31ad1b8b5adafa413e4f20a8761d5ce
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e6d72edaf889aaf682f40a36278ea1fdf05ff989
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526034"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475990"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>開始偵錯多執行緒應用程式 (C#，Visual Basic、 c + +)
 
@@ -38,21 +38,33 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
 
 ## <a name="create-a-multithreaded-app-project"></a>建立多執行緒應用程式專案
 
-1.  在 [檔案] 功能表上選取 [新增] > [專案]。
+1. 開啟 Visual Studio 並建立新專案。
 
-     [ **新增專案** ] 對話方塊隨即出現。
+    ::: moniker range=">=vs-2019"
+    型別**Ctrl + Q**來開啟 [搜尋] 方塊中，輸入**主控台**(或**c + +**)，選擇**範本**，然後：
+    
+    - 針對C#或 Visual Basic 中，選擇**建立新的主控台應用程式 (.NET Framework) 專案**或C#或 Visual Basic。 在出現的對話方塊中，選擇**建立**。
+    - C + +，請選擇**建立新的主控台應用程式專案**c + +。 在出現的對話方塊中，選擇**建立**。
 
-2.  選取的語言： **Visual C#** ， **Visual c + +**，或**Visual Basic**。
+    然後，輸入名稱，例如**MyThreadWalkthroughApp**然後按一下**建立**。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在左窗格中**新的專案**對話方塊方塊中，選擇下列：
 
-3.  底下**Windows 桌面**，選擇**主控台應用程式**。
+    - 針對C#應用程式底下**視覺化C#** ，選擇**Windows 桌面**，然後在中間窗格選擇 **主控台應用程式 (.NET Framework)**。
+    - Visual Basic 應用程式中，在**Visual Basic**，選擇**Windows 桌面**，然後在中間窗格選擇 **主控台應用程式 (.NET Framework)**。
+    - C + + 應用程式中下, **Visual c + +**，選擇**Windows 桌面**，然後選擇  **Windows 主控台應用程式**。
 
-4.  在 **名稱**欄位中，輸入 MyThreadWalkthroughApp。
+    然後，輸入名稱，例如**MyThreadWalkthroughApp**然後按一下**確定**。
+    ::: moniker-end
 
-5.  選取 [確定]。
+    如果您沒有看到**主控台應用程式**專案範本，請移至**工具** > **取得工具與功能...**，這會開啟 Visual Studio 安裝程式。 選擇 [NET 桌面開發] 或 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
 
-     新的主控台專案隨即出現。 在建立專案之後，便會出現原始程式檔。 根據您所選擇的語言，可能呼叫的原始程式檔*Program.cs*， *MyThreadWalkthroughApp.cpp*，或*Module1.vb*。
+1. 選取 [確定]。
 
-6.  刪除出現在原始程式檔中的程式碼，並在下方列出的適當範例程式碼取代它。
+    新的主控台專案隨即出現。 在建立專案之後，便會出現原始程式檔。 根據您所選擇的語言，可能呼叫的原始程式檔*Program.cs*， *MyThreadWalkthroughApp.cpp*，或*Module1.vb*。
+
+1. 刪除出現在原始程式檔中的程式碼，並在下方列出的適當範例程式碼取代它。
 
     ```csharp
     using System;
@@ -187,9 +199,9 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
     End Class
     ```
 
-7.  在 [檔案] 功能表中，選取 [全部儲存]。
+1. 在 [檔案] 功能表中，選取 [全部儲存]。
 
-8. (僅限 Visual Basic)在 方案總管 （右窗格），以滑鼠右鍵按一下專案節點，選擇**屬性**。 底下**應用程式**索引標籤中變更**啟始物件**來**簡單**。
+1. (僅限 Visual Basic)在 方案總管 （右窗格），以滑鼠右鍵按一下專案節點，選擇**屬性**。 底下**應用程式**索引標籤中變更**啟始物件**來**簡單**。
 
 ## <a name="debug-the-multithreaded-app"></a>偵錯多執行緒應用程式
 
