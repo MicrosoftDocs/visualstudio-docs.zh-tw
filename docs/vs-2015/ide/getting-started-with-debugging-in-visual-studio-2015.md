@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfa68202d7f73d45b8422bb34c90954528d6af7b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54764844"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324769"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015 中的偵錯入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 2015 提供一組強大的整合式專案建置和偵錯工具。 
 
  開始之後，只要使用 [偵錯] 和 [x86] 分別作為您的建置組態和平台。 完成程式碼撰寫和偵錯時，請將組態變更為 [發行]，並且以特定平台為目標 (舊版 Visual Studio 提供 .Net 程式碼專案的 **AnyCPU** 預設平台)。
 
- 注意：當您建置專案時，組態和平台值也可用來判斷要建立哪些專案目錄路徑來儲存可執行檔。 這通常是 **\<path-to-project>\\<project-name>\\<configuration\>\\<platform\>**。 例如，在 `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86` 下會找到組態為 `Debug` 且平台為 `x86` 的專案。 如果您有自己管理這些內建可執行檔的工具或指令碼，則這會非常有用。
+ 注意：當您建置專案時，組態和平台值也可用來判斷要建立哪些專案目錄路徑來儲存可執行檔。 這通常是 **\<path-to-project>\\<project-name\>\\<configuration\>\\<platform\>**。 例如，在 `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86` 下會找到組態為 `Debug` 且平台為 `x86` 的專案。 如果您有自己管理這些內建可執行檔的工具或指令碼，則這會非常有用。
 
 ### <a name="building-your-code"></a>建置您的程式碼
  當您的建置設定完之後，就可以真正開始建置您的專案。 最簡單的作法是按下 F7，但您也可以從主功能表選取 [建置] -> [建置方案] 來開始建置。
