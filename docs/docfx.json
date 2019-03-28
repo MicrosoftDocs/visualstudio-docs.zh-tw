@@ -95,7 +95,14 @@
     },
     "fileMetadata": {
       "open_to_public_contributors": {
-        "vs-2015/**/**.md": false
+        "vs-2015/**/**.md": false,
+        "code-quality/**/**.md": false,
+        "extensibility/**/**.md": false,
+        "modeling/**/**.md": false,
+        "sharepoint/**/**.md": false,
+        "vsto/**/**.md": false,
+        "workflow-designer/**/**.md": false,
+        "xml-tools/**/**.md": false
       },
       "ms.prod": {
         "rtvs/**/**.md": "visual-studio-dev15",
@@ -109,9 +116,9 @@
         "azure/**/**.md": "vs-azure",
         "code-quality/**/**.md": "vs-ide-code-analysis",
         "data-tools/**/**.md": "vs-data-tools",
-        "debugger/**/**.md": "vs-izh-twbug",
-        "deployment/**/**.md": "vs-izh-twployment",
-        "designers/**/**.md": "vs-izh-twsigners",
+        "debugger/**/**.md": "vs-ide-debug",
+        "deployment/**/**.md": "vs-ide-deployment",
+        "designers/**/**.md": "vs-ide-designers",
         "extensibility/**/**.md": "vs-ide-sdk",
         "help-viewer/**/**.md": "vs-help-viewer",
         "ide/**/**.md": "vs-ide-general",
@@ -119,7 +126,7 @@
         "javascript/**/**.md": "vs-javascript",
         "modeling/**/**.md": "vs-ide-modeling",
         "msbuild/**/**.md": "msbuild",
-        "profiling/**/**.md": "vs-izh-twbug",
+        "profiling/**/**.md": "vs-ide-debug",
         "python/**/**.md": "vs-python",
         "rtvs/**/**.md": "vs-rtvs",
         "sharepoint/**/**.md": "sharepoint-development",
