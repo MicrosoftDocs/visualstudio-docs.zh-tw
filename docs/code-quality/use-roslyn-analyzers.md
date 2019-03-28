@@ -1,6 +1,6 @@
 ---
 title: 分析器規則的嚴重性和隱藏項目
-ms.date: 03/26/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873498"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515333"
 ---
 # <a name="use-roslyn-analyzers"></a>使用 Roslyn 分析器
 
@@ -46,12 +46,17 @@ ms.locfileid: "57873498"
 
 ## <a name="rule-sets"></a>規則集
 
-A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是儲存個別的診斷的嚴重性和隱藏項目狀態的 XML 檔案。 規則集套用到單一專案中，而且專案可以有多個規則集。 若要檢視作用中的規則集編輯器中，以滑鼠右鍵按一下**分析器**中的節點**方案總管**，然後選取**開啟作用中規則集**。 如果這是您要存取此規則的第一次設定，檔案名*\<專案名稱 >.ruleset*加入至專案，而且會出現在**方案總管 中**。
+A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是儲存個別的診斷的嚴重性和隱藏項目狀態的 XML 檔案。
 
 > [!NOTE]
-> 規則集包含靜態 （二進位） 的程式碼分析和 Roslyn 分析器規則。
+> 規則集可以包含靜態 （二進位） 的程式碼分析和 Roslyn 分析器的規則。
 
-您可以變更作用中的規則上設定的專案**程式碼分析**專案屬性 索引標籤。 選取中的規則集**執行此規則集**下拉式清單。 您也可以開啟規則集從**程式碼分析** 屬性頁面中的選取**開啟**。
+若要編輯的規則集編輯器中設定使用中的規則，以滑鼠右鍵按一下**參考** > **分析器**中的節點**方案總管] 中**，然後選取**開啟 [作用中的規則集**。 如果這是您正在編輯的規則集的第一次時，Visual Studio 會建立一份預設的規則集檔案，它*\<專案名稱 >.ruleset*，並將它加入至您的專案。 此自訂的規則集也會變成作用中的規則設定為您的專案。
+
+若要變更專案中設定使用中的規則，瀏覽至**程式碼分析**專案屬性 索引標籤。 選取下方的清單設定的規則**執行此規則集**。 若要開啟規則集，請選取**開啟**。
+
+> [!NOTE]
+> .NET core 和.NET Standard 專案不會支援功能表命令的規則集所適用**方案總管**，例如**開啟作用中規則集**。 若要指定非預設規則集，是針對.NET Core 或.NET Standard 專案，以手動方式[新增**CodeAnalysisRuleSet**屬性設為專案檔案](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project)。 您可以設定 Visual Studio 中設定的規則，規則集編輯器 UI 內的規則。
 
 ## <a name="rule-severity"></a>規則嚴重性
 
@@ -63,7 +68,7 @@ A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
 |警告|違規如下所示*警告*中**錯誤清單**和在命令列建置輸出，但不是會造成建置失敗。|違規的程式碼會加上底線以綠色曲線，並標示在捲軸的小型綠色方塊。|
 |資訊|違規如下所示*訊息*中**錯誤清單**，完全不會在命令列組建輸出。|違規的程式碼會加上底線以灰色曲線，並標示在捲軸的小型灰色方塊。|
 |Hidden|非-使用者可以看見。|非-使用者可以看見。 診斷會回報給 IDE 診斷引擎，不過。|
-|無|完全隱藏。|完全隱藏。|
+|None|完全隱藏。|完全隱藏。|
 
 此外，您可以 「 重設 」 規則的嚴重性設定為**預設**。 每一個診斷的中可以看到預設嚴重性**屬性**視窗。
 
@@ -79,7 +84,7 @@ A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
 
 ![在 [方案總管] 中的規則集檔案](media/ruleset-in-solution-explorer.png)
 
-### <a name="to-set-rule-severity-from-solution-explorer"></a>若要從方案總管 中設定規則嚴重性
+### <a name="set-rule-severity-from-solution-explorer"></a>從 [方案總管] 中的設定規則嚴重性
 
 1. 在 **方案總管**，展開**參考** > **分析器**(**相依性** >  **分析器**.NET Core 專案)。
 
@@ -89,7 +94,7 @@ A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
 
    此規則的嚴重性會儲存在使用中的規則集檔案。
 
-### <a name="to-set-rule-severity-in-the-rule-set-file"></a>若要設定規則在規則中的嚴重性設定檔
+### <a name="set-rule-severity-in-the-rule-set-file"></a>在 規則集檔案中設定規則嚴重性
 
 1. 開啟[規則集](analyzer-rule-sets.md)按兩下檔案**方案總管**，並選取**開啟作用中規則集**上按一下滑鼠右鍵功能表**分析器**節點，或選取**開放**上**程式碼分析**專案屬性頁。
 

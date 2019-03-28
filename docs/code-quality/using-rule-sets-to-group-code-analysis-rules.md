@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701b178ea161884ef748008b1f933a53fc35a1cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914470"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515229"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用規則集分組程式碼分析規則
 
-當您在 Visual Studio 中設定程式碼分析時，您可以從內建清單中選擇*規則集*。 規則集適用於專案，而且是一組的程式碼分析規則，識別目標的問題，以及該專案的特定條件。 比方說，您可以將套用的規則集是設計用來公開可用的 Api，掃描程式碼，或只是最小建議規則。 您也可以套用的規則集包含所有規則。
+當您在 Visual Studio 中設定程式碼分析時，您可以從內建清單中選擇*規則集*。 規則集是找出目標的問題與該專案的特定條件的程式碼分析規則的群組。 例如，您可以套用的規則集是設計來掃描公開可用的 Api 程式碼。 您也可以套用的規則集包含所有可用的規則。
 
-您可以自訂規則集顯示為警告或錯誤中的新增或刪除規則，或變更規則嚴重性**錯誤清單**。 自訂的規則集可滿足您特定的開發環境的需求。 當您自訂規則集時，規則集編輯器會提供搜尋和篩選工具，可協助您在程序。
+您可以自訂規則集藉由新增或刪除規則，或變更規則的嚴重性，顯示為警告或錯誤**錯誤清單**。 自訂的規則集可滿足您特定的開發環境的需求。 當您自訂規則集時，規則集編輯器會提供搜尋和篩選工具，可協助您在程序。
 
 規則集可供[的 managed 程式碼靜態分析](how-to-configure-code-analysis-for-a-managed-code-project.md)， [c + + 程式碼分析](using-rule-sets-to-specify-the-cpp-rules-to-run.md)，並[Roslyn 分析器](analyzer-rule-sets.md)。
 
