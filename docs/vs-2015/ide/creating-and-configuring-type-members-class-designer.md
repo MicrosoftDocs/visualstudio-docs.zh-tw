@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51e9f831941fff79c42c8e7fc529db3df0d46b0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c036680d540854eb3143875663aeac35a466884
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795299"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323603"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>建立和設定類型成員 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -209,7 +209,7 @@ ms.locfileid: "54795299"
   
 - **\<新增參數>**  
   
-   成員的最後一個參數列包含 [名稱] 儲存格中的 **<add parameter>** 文字。 按一下這個儲存格即可建立新參數。 如需詳細資訊，請參閱[將參數新增至方法](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod)。  
+   成員的最後一個參數列包含 [**<加入參數\>**] 字樣，位於 [**名稱**] 儲存格中。 按一下這個儲存格即可建立新參數。 如需詳細資訊，請參閱[將參數新增至方法](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod)。  
   
   **屬性視窗中的參數屬性**  
   
@@ -322,7 +322,7 @@ ms.locfileid: "54795299"
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|描述|  
+|標題|說明|  
 |-----------|-----------------|  
 |[檢視類型和關聯性 (類別設計工具)](../ide/viewing-types-and-relationships-class-designer.md)|您可以在類別圖中檢視現有的類型、成員和關聯性。|  
 |[重構類別和類型 (類別設計工具)](../ide/refactoring-classes-and-types-class-designer.md)|使用重構可讓您輕鬆地重新命名類型和類型成員。 您也可以在類別之間移動成員、將類別分割成部分類別，以及實作介面。|

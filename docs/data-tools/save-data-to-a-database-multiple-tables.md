@@ -16,32 +16,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 945a04213ab902c17459eba6e418aeebea78f6d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936612"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268553"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>將資料儲存至資料庫 (多個資料表)
 
-在應用程式的開發過程中，最常見的一個情節是在 Windows 應用程式的表單上顯示資料並編輯資料，以及將更新的資料傳送回資料庫。 此逐步解說會建立表單，以顯示來自兩個關聯資料表的資料，並示範如何編輯記錄，以及將變更儲存回資料庫。 此範例使用 Northwind 範例資料庫中的 `Customers` 和 `Orders` 資料表。
+在應用程式的開發過程中，最常見的一個情節是在 Windows 應用程式的表單上顯示資料並編輯資料，以及將更新的資料傳送回資料庫。 此逐步解說會建立表單，以顯示來自兩個關聯資料表的資料，並示範如何編輯記錄，以及將變更儲存回資料庫。 此範例使用 Northwind 範例資料庫的 `Customers` 和 `Orders` 資料表。
 
 您可以透過呼叫 TableAdapter 的 `Update` 方法，將應用程式的資料存回資料庫。 當您將資料表從**Zdroje dat**視窗拖曳到表單時，必須先儲存資料的程式碼會自動加入。 加入至表單的任何其他資料表都需要手動加入此程式碼。 此逐步解說會示範如何加入程式碼，以儲存多個資料表的更新。
 
 這個逐步解說中所述的工作包括：
 
--   建立新**Windows Forms 應用程式**專案。
+-  建立及設定您的應用程式中的資料來源[資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)。
 
--   建立及設定您的應用程式中的資料來源[資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)。
+-  設定控制項中項目的[資料來源 視窗](add-new-data-sources.md#data-sources-window)。 如需詳細資訊，請參閱 <<c0> [ 設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
--   設定控制項中項目的[資料來源 視窗](add-new-data-sources.md#data-sources-window)。 如需詳細資訊，請參閱 <<c0> [ 設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
+-  從 [資料來源] 視窗將項目拖曳至表單，以建立資料繫結控制項。
 
--   從 [資料來源] 視窗將項目拖曳至表單，以建立資料繫結控制項。
+-  修改資料集中的每個資料表中的一些記錄。
 
--   修改資料集中的每個資料表中的一些記錄。
-
--   修改程式碼，以將資料集中更新的資料傳送回資料庫。
+-  修改程式碼，以將資料集中更新的資料傳送回資料庫。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -63,17 +61,7 @@ ms.locfileid: "55936612"
 
 ## <a name="create-the-windows-forms-application"></a>建立 Windows Forms 應用程式
 
-第一個步驟是建立**Windows Forms 應用程式**。 指派至專案的名稱是在此步驟中，選擇性，但因為我們將稍後儲存專案將會賦予它名稱。
-
-1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增** > **專案**。
-
-2. 展開  **Visual C#** 或是**Visual Basic**左窗格中，然後選取**Windows Desktop**。
-
-3. 在中間窗格中，選取**Windows Forms 應用程式**專案類型。
-
-4. 將專案命名為**UpdateMultipleTablesWalkthrough**，然後選擇**確定**。
-
-     隨即建立 **UpdateMultipleTablesWalkthrough** 專案，並將其新增至 [方案總管]。
+建立新**Windows Forms 應用程式**專案，或C#或 Visual Basic。 將專案命名為 **UpdateMultipleTablesWalkthrough**。
 
 ## <a name="create-the-data-source"></a>建立資料來源
 
@@ -89,11 +77,11 @@ ms.locfileid: "55936612"
 
 4. 在 **選擇您的資料連接**畫面上，執行下列其中一項：
 
-    -   如果下拉式清單中有提供 Northwind 範例資料庫的資料連接，請選取這個資料連接。
+    - 如果下拉式清單中有提供 Northwind 範例資料庫的資料連接，請選取這個資料連接。
 
          -或-
 
-    -   選取 [新增連線]，以開啟 [新增/修改連線] 對話方塊。
+    - 選取 [新增連線]，以開啟 [新增/修改連線] 對話方塊。
 
 5. 如果您的資料庫需要密碼，請選取選項來加入敏感性資料，然後選取**下一步**。
 
@@ -121,14 +109,14 @@ ms.locfileid: "55936612"
 
 1. 從 [資料來源] 視窗，將 [客戶] 主節點拖曳至 **Form1**。
 
-     會在表單上顯示具有描述性標籤的資料繫結控制項，以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>)。 A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)， `CustomersTableAdapter`， <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>會出現在元件匣。
+     會在表單上顯示具有描述性的資料繫結控制項，以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>)。 A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)， `CustomersTableAdapter`， <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>會出現在元件匣。
 
 2. 從 [資料來源] 視窗將關聯的 [Orders] 節點拖曳至 [Form1]。
 
     > [!NOTE]
     > 關聯的 [Orders] 節點位於 [Fax] 節點之下，而且是 [Customers] 節點的子節點。
 
-     <xref:System.Windows.Forms.DataGridView> 控制項以及用於巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 `OrdersTableAdapter`和<xref:System.Windows.Forms.BindingSource>會出現在元件匣。
+     <xref:System.Windows.Forms.DataGridView> 控制項以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 `OrdersTableAdapter`和<xref:System.Windows.Forms.BindingSource>會出現在元件匣。
 
 ## <a name="add-code-to-update-the-database"></a>加入程式碼以更新資料庫
 

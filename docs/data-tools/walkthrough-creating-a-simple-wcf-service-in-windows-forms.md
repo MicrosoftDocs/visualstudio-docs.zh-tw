@@ -16,114 +16,137 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 08b55652fbadd0b27f4519b94e083409c9de3af5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 97bbf8212caf87f28849df15d350811579f22ccd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951107"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325223"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>逐步解說： 在 Windows Forms 中建立簡單的 WCF 服務
 
-本逐步解說示範如何建立簡單的 [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] 服務、予以測試，然後從 Windows Form 應用程式加以存取。
+本逐步解說示範如何建立簡單的 Windows Communication Foundation (WCF) 服務，測試它，然後從在 Windows Forms 應用程式存取它。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="create-the-service"></a>建立服務
+## <a name="create-a-service"></a>建立服務
 
-### <a name="to-create-a-wcf-service"></a>建立 WCF 服務
+1. 開啟 Visual Studio。
 
-1.  在 [ **檔案** ] 功能表上，指向 [ **新增** ]，然後按一下 [ **專案**]。
+::: moniker range="vs-2017"
 
-2.  在 [新增專案] 對話方塊中，展開 [Visual Basic] 或 [Visual C#] 節點，按一下 [WCF]，接著是 [WCF 服務程式庫]。 按一下 [確定] 開啟專案。
+2. 在 [檔案]  功能表上，依序選擇 [新增] 和 [專案] >。
 
-     ![WCF 服務程式庫專案](../data-tools/media/wcf1.png)
+3. 在 **新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#** 節點，然後選擇  **WCF**，後面接著**WCF 服務程式庫**。
 
-    > [!NOTE]
-    >  這樣會建立一個可進行測試和存取的工作服務。 以下兩個步驟示範如何修改預設方法以使用不同的資料類型。 在實際的應用程式中，您也會將自己的功能加入服務。
+4. 按一下 [確定] 建立專案。
 
-3.  ![IService1 檔案](../data-tools/media/wcf2.png)
+   ![WCF 服務程式庫專案](../data-tools/media/wcf1.png)
 
-     在 [方案總管] 中，按兩下 **IService1.vb** 或 **IService1.cs**，並尋找下面這一行：
+::: moniker-end
 
-     [!code-csharp[WCFWalkthrough#4](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.cs)]
-     [!code-vb[WCFWalkthrough#4](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.vb)]
+::: moniker range=">=vs-2019"
 
-     變更的類型`value`字串參數：
+2. 在開始視窗中，選擇 [建立新專案]。
 
-     [!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.cs)]
-     [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.vb)]
+3. 型別**wcf 服務程式庫**上的 [搜尋] 方塊中**建立新的專案**頁面。 選取C#或 Visual Basic 範本，如**WCF 服務程式庫**，然後按一下**下一步**。
 
-     請注意上述程式碼中的 `<OperationContract()>` 或 `[OperationContract]` 屬性。 服務所公開的所有方法都需要這些屬性。
+   ![在 Visual Studio 2019 中建立新的 WCF 服務程式庫專案](media/vs-2019/create-new-wcf-service-library.png)
 
-4.  ![Service1 檔案](../data-tools/media/wcf3.png)
+   > [!TIP]
+   > 如果您沒有看到任何範本，您可能需要安裝**Windows Communication Foundation** Visual Studio 的元件。 選擇**安裝更多的工具和功能**來開啟 Visual Studio 安裝程式。 選擇**個別元件**索引標籤上，向下捲動至**開發活動**，然後選取**Windows Communication Foundation**。 按一下 [修改]。
 
-     在 [方案總管] 中，按兩下 **Service1.vb** 或 **Service1.cs**，並尋找下面這一行：
+4. 在 **設定新專案**頁面上，按一下**建立**。
 
-     [!code-vb[WCFWalkthrough#5](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.vb)]
-     [!code-csharp[WCFWalkthrough#5](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.cs)]
+::: moniker-end
 
-     變更的類型`value`字串參數：
+   > [!NOTE]
+   > 這樣會建立一個可進行測試和存取的工作服務。 以下兩個步驟示範如何修改預設方法以使用不同的資料類型。 在實際的應用程式中，您也會將自己的功能加入服務。
 
-     [!code-csharp[WCFWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.cs)]
-     [!code-vb[WCFWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.vb)]
+5. 在 **方案總管**，按兩下**IService1.vb**或是**IService1.cs**。
+
+   ![IService1 檔案](../data-tools/media/wcf2.png)
+
+   找到下列這一行：
+
+   [!code-csharp[WCFWalkthrough#4](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.cs)]
+   [!code-vb[WCFWalkthrough#4](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.vb)]
+
+   變更的類型`value`字串參數：
+
+   [!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.cs)]
+   [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.vb)]
+
+   請注意上述程式碼中的 `<OperationContract()>` 或 `[OperationContract]` 屬性。 服務所公開的所有方法都需要這些屬性。
+
+6. 在 **方案總管**，按兩下**Service1.vb**或是**Service1.cs**。
+
+   ![Service1 檔案](../data-tools/media/wcf3.png)
+
+   找到下列這一行：
+
+   [!code-vb[WCFWalkthrough#5](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.vb)]
+   [!code-csharp[WCFWalkthrough#5](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.cs)]
+
+   變更的類型`value`字串參數：
+
+   [!code-csharp[WCFWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.cs)]
+   [!code-vb[WCFWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.vb)]
 
 ## <a name="test-the-service"></a>測試服務
 
-### <a name="to-test-a-wcf-service"></a>測試 WCF 服務
+1. 按 **F5** 執行服務。 A **WCF 測試用戶端**表單隨即出現，並載入服務。
 
-1.  按 **F5** 執行服務。 A **WCF 測試用戶端**表單隨即出現，並載入服務。
-
-2.  在 [WCF 測試用戶端] 表單中，按兩下 [IService1] 下的 [GetData()] 方法。 **GetData**  索引標籤隨即出現。
+2. 在 [WCF 測試用戶端] 表單中，按兩下 [IService1] 下的 [GetData()] 方法。 **GetData**  索引標籤隨即出現。
 
      ![GetData&#40; &#41;方法](../data-tools/media/wcf4.png)
 
-3.  在 [要求] 方塊中，選取 [值] 欄位，然後鍵入 `Hello`。
+3. 在 [要求] 方塊中，選取 [值] 欄位，然後鍵入 `Hello`。
 
      ![值欄位](../data-tools/media/wcf5.png)
 
-4.  按一下 [叫用] 按鈕。 如果**安全性警告** 對話方塊出現時，按一下**確定**。 結果會顯示在**回應** 方塊中。
+4. 按一下 [叫用] 按鈕。 如果**安全性警告** 對話方塊出現時，按一下**確定**。 結果會顯示在**回應** 方塊中。
 
      ![[回應] 方塊中的結果](../data-tools/media/wcf6.png)
 
-5.  在 [檔案] 功能表上，按一下 [結束] 關閉測試表單。
+5. 在 [檔案] 功能表上，按一下 [結束] 關閉測試表單。
 
 ## <a name="access-the-service"></a>存取服務
 
-### <a name="to-reference-a-wcf-service"></a>參考 WCF 服務
+### <a name="reference-the-wcf-service"></a>參考 WCF 服務
 
-1.  在 [檔案] 功能表上，指向 [新增]，然後按一下 [新增專案]。
+1. 在 [檔案] 功能表上，指向 [新增]，然後按一下 [新增專案]。
 
-2.  中**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#** 節點，然後選取**Windows**，然後選取  **Windows Forms 應用程式**。 按一下 [確定] 開啟專案。
+2. 中**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#** 節點，然後選取**Windows**，然後選取  **Windows Forms 應用程式**。 按一下 [確定] 開啟專案。
 
-     ![Windows Forms 應用程式專案](../data-tools/media/wcf7.png)
+     ![Windows Form 應用程式專案](../data-tools/media/wcf7.png)
 
-3.  以滑鼠右鍵按一下 [WindowsApplication1]，然後按一下 [新增服務參考]。 **加入服務參考** 對話方塊隨即出現。
+3. 以滑鼠右鍵按一下 [WindowsApplication1]，然後按一下 [新增服務參考]。 **加入服務參考** 對話方塊隨即出現。
 
-4.  在 [新增服務參考] 對話方塊中，按一下 [探索]。
+4. 在 [新增服務參考] 對話方塊中，按一下 [探索]。
 
      ![[新增服務參考] 對話方塊](../data-tools/media/wcf8.png)
 
      **Service1**中會顯示**Services**窗格。
 
-5.  按一下 [確定] 新增服務參考。
+5. 按一下 [確定] 新增服務參考。
 
-### <a name="to-build-a-client-application"></a>建置用戶端應用程式
+### <a name="build-a-client-application"></a>建置用戶端應用程式
 
-1.  在 [方案總管] 中，按兩下 [Form1.vb] 或 [Form1.cs] 開啟 Windows Form 設計工具 (如果尚未開啟)。
+1. 在 [方案總管] 中，按兩下 [Form1.vb] 或 [Form1.cs] 開啟 Windows Form 設計工具 (如果尚未開啟)。
 
-2.  從 [工具箱] 中，將 `TextBox` 控制項、`Label` 控制項及 `Button` 控制項拖曳至表單。
+2. 從 [工具箱] 中，將 `TextBox` 控制項、`Label` 控制項及 `Button` 控制項拖曳至表單。
 
      ![將控制項新增至表單](../data-tools/media/wcf9.png)
 
-3.  按兩下 [`Button`]，並將下列程式碼加入 `Click` 事件處理常式：
+3. 按兩下 [`Button`]，並將下列程式碼加入 `Click` 事件處理常式：
 
      [!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_5.cs)]
      [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_5.vb)]
 
-4.  在 [方案總管] 中，以滑鼠右鍵按一下 [WindowsApplication1]，然後按一下 [設定為啟始專案]。
+4. 在 [方案總管] 中，以滑鼠右鍵按一下 [WindowsApplication1]，然後按一下 [設定為啟始專案]。
 
-5.  按 **F5** 執行專案。 輸入一些文字，然後按一下按鈕。 標籤會顯示 「 您輸入:"，並顯示您所輸入的文字。
+5. 按 **F5** 執行專案。 輸入一些文字，然後按一下按鈕。 標籤會顯示 「 您輸入:"，並顯示您所輸入的文字。
 
      ![結果的顯示格式](../data-tools/media/wcf10.png)
 
