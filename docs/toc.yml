@@ -400,9 +400,9 @@ items:
             href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
           - name: 所有鍵盤快速鍵
             href: ide/default-keyboard-shortcuts-in-visual-studio.md
-        - name: .NET 開發人員的祕訣
+        - name: C# 開發人員的祕訣
           displayName: ReSharper
-          href: ide/visual-studio-2017-for-dotnet-developers.md
+          href: ide/csharp-developer-productivity.md
       - name: 使用 IntelliSense
         href: ide/using-intellisense.md
         items:
@@ -1195,9 +1195,9 @@ items:
     displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 8fc8123e3c9b2a77ba4bd05dc3a7efa8bcfa652c
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 91a495ff1f48243244f4c68bb6a8a87a6acdd7ea
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416381"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58568019"

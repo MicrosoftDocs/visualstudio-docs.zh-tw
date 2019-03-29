@@ -68,6 +68,7 @@
 #### [搜尋訂閱](search-license.md)
 #### [匯出訂用帳戶](exporting-subscriptions.md)
 #### [過度分派](handle-overclaimed-license.md)
+#### [使用量上限](maximum-usage.md)
 #### [過期的訂閱](handle-expired-license.md)
 #### [具有個人電子郵件登入的訂閱者](personal-email-sign-ins.md)
 ## 取得 Visual Studio 訂閱
