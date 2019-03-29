@@ -1,7 +1,7 @@
 # [Visual Studio for Mac](index.yml)
-# [IDE 導覽](/visualstudio/mac/ide-tour/)
+# [IDE 導覽](ide-tour.md)
 
-# [安裝](/visualstudio/mac/installation/)
+# [安裝](installation.md)
 ## [在防火牆或 Proxy 後方安裝及使用](install-behind-a-firewall-or-proxy-server.md)
 ## [安裝預覽版本](install-preview.md)
 ## [更新](update.md)
