@@ -1,14 +1,14 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 6b16d58a760b92d71eabcad95ffacc2aed9db94d
+ms.openlocfilehash: 7629349f0d9adec6bc0843c2844295e48010c609
 ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568058"
+ms.locfileid: "58568950"
 documentType: LandingData
-title: Visual Studio 2019 for Mac 文件
+title: Visual Studio for Mac 文件
 metadata:
-  description: 本文介紹 Visual Studio for Mac 的功能。
+  description: 本文介紹 Visual Studio 2017 for Mac 的功能。
   author: conceptdev
   ms.author: crdun
   ms.date: 02/06/2019
@@ -35,6 +35,11 @@ sections:
       image:
         src: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
       title: 導覽 Visual Studio for Mac
+    - href: ~/installation.md?view=vsmac-2019
+      html: <p></p>
+      image:
+        src: media/index-2019-preview.png
+      title: 試用 2019 Preview！
 - title: 我可以建置哪些應用程式？
   items:
   - type: paragraph
