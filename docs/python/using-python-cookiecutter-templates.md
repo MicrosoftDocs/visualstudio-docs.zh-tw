@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14482019ceb3e7d717592923b4e6b59eacc0eba2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5b090c1e833a791593e5332b632d64b832b5cb1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957974"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354736"
 ---
 # <a name="use-the-cookiecutter-extension"></a>使用 Cookiecutter 延伸模組
 
-[Cookiecutter (英文)](https://cookiecutter.readthedocs.io/en/latest/) 提供尋找範本、輸入範本選項和建立專案及檔案的圖形化使用者介面。 它隨附於 Visual Studio 2017，並可在舊版的 Visual Studio 中獨立安裝。
+[Cookiecutter (英文)](https://cookiecutter.readthedocs.io/en/latest/) 提供尋找範本、輸入範本選項和建立專案及檔案的圖形化使用者介面。 它隨附於 Visual Studio 2017 和更新版本，並可在舊版的 Visual Studio 中另行安裝。
 
 Cookiecutter 需要 Python 3.3 或更新版本 (32 位元或 64 位元) 或 Anaconda 3 4.2 或更新版本 (32 位元或 64 位元)。 如果沒有適合的 Python 解譯器，Visual Studio 會顯示警告。 如果您在 Visual Studio 執行時安裝 Python 解譯器，按一下 Cookiecutter 工具列上的 [首頁] 按鈕可以偵測新安裝的解譯器。 (請參閱 [Python 環境](managing-python-environments-in-visual-studio.md)以取得環境的一般資訊)。
 
@@ -35,7 +35,7 @@ Cookiecutter 的使用程序包含瀏覽和選取範本、將其複製到本機�
 
 Cookiecutter 首頁會顯示可選擇的範本清單，並分為下列群組︰
 
-| 群組 | 描述 |
+| 群組 | 說明 |
 | --- | --- |
 | **已安裝** | 已安裝到本機電腦的範本。 使用線上範本時，其存放庫會自動複製到 *~/.cookiecutters* 的子資料夾。 您可以透過按下 **Delete** 來刪除選取的已安裝範本。 |
 | **建議** | 從建議的摘要載入的範本。 預設摘要是由 Microsoft 組織。 如需自訂摘要的詳細資訊，請參閱下列 [Cookiecutter 選項](#cookiecutter-options)。 |
@@ -79,7 +79,7 @@ Cookiecutter 選項可透過 [工具] > [選項] > [Cookiecutter] 存取：
 
 ![Cookiecutter 選項](media/cookiecutter-tools-options.png)
 
-| 選項 | 描述 |
+| 選項 | 說明 |
 | --- | --- |
 | **建議的摘要 URL** | 建議的範本摘要的位置。 它可以是 URL 或本機檔案的路徑。 將 URL 留白，會使用 Microsoft 組織的預設摘要。 摘要提供簡單的範本位置清單 (以新行區隔)。 若要要求變更已組織的摘要，請針對 [GitHub 上的來源 (英文)](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt) 提出提取要求。 |
 | **顯示說明** | 控制 Cookiecutter 視窗頂端的說明資訊列的可見性。 |
@@ -95,10 +95,10 @@ Cookiecutter 選項可透過 [工具] > [選項] > [Cookiecutter] 存取：
 
 透過在 Visual Studio 特定 (且由 Cookiecutter CLI 忽略) 的 *cookiecutter.json* 檔案中指定額外的中繼資料，可針對此轉譯做改善。 所有屬性都是選擇性的︰
 
-| 屬性 | 描述 |
+| 屬性 | 說明 |
 | --- | --- |
 | ThisAddIn | 指定變數的編輯器上方顯示的內容，取代變數的名稱。 |
-| 描述 | 指定編輯控制項上顯示的工具提示，取代該變數的預設值。 |
+| 說明 | 指定編輯控制項上顯示的工具提示，取代該變數的預設值。 |
 | URL | 將標籤變更成超連結，並含有一個顯示 URL 的工具提示。 按一下超連結，會以使用者的預設瀏覽器開啟該 URL。 |
 | 選取器 | 可自訂變數的編輯器。 目前支援下列選取器︰<ul><li>`string`：標準文字方塊，字串的預設。</li><li>`list`：標準下拉式方塊，清單的預設。</li><li>`yesno`：可在 `y` 和 `n` 之間選擇的下拉式方塊，適用於字串。</li><li>`odbcConnection`：包含 [...] 按鈕的文字方塊，會顯示資料庫連接對話方塊。</li></ul> |
 

@@ -7,41 +7,36 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8c7a92820d52dbade817ead287541470cc2b2b1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925237"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415599"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>快速入門：搭配 [測試總管] 進行以測試為導向的開發工作
 
 我們建議您建立單元測試，以便讓您的程式碼在經歷許多漸進的開發步驟後仍然能夠正確運作。 有數種架構都可以用來撰寫單元測試，包含由協力廠商所開發的架構。 某些測試架構是專門讓您使用不同的語言或平台來進行測試。 [測試總管] 提供單一介面，讓您使用任一種架構來進行單元測試。 目前已有適用於最常用架構的配接器可供使用，而您也可以自己撰寫適用於其他架構的配接器。
 
- [測試總管] 取代了舊版 Visual Studio 中的單元測試視窗。 它的優點包括：
+[測試總管] 取代了舊版 Visual Studio 中的單元測試視窗。 它的優點包括：
 
--   使用單一介面執行 .NET、Unmanaged、資料庫以及其他種類的測試。
+- 使用單一介面執行 .NET、Unmanaged、資料庫以及其他種類的測試。
 
--   使用您選擇的單元測試架構，例如 NUnit 或 MSTest 架構。
+- 使用您選擇的單元測試架構，例如 NUnit 或 MSTest 架構。
 
--   可在一個視窗中查看需要的所有資訊。
+- 可在一個視窗中查看需要的所有資訊。
 
 ## <a name="use-test-explorer"></a>使用測試總管
- ![顯示 [全部執行] 按鈕的 [單元測試總管]](../test/media/unittestexplorer-beta-.png)
+
+![顯示 [全部執行] 按鈕的 [測試總管]](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>使用測試總管來執行單元測試
 
-1. 建立使用您選擇的測試架構的單元測試。
+1. 建立使用您選擇的測試架構的單元測試。 例如，建立使用 MSTest 架構的測試：
 
-    例如，建立使用 MSTest 架構的測試：
+   1. 建立適用於 C#、Visual Basic 或 C++ 的**單元測試專案**專案。
 
-   1.  建立測試專案。
-
-        在 [新增專案] 對話方塊中，展開 [Visual Basic]、[Visual C#] 或 [Visual C++]，然後選擇 [測試]。
-
-        選取 [ **單元測試專案**]。
-
-   2.  將每個單元測試撰寫成方法。 在每個測試方法的前面加上 `[TestMethod]` 屬性。
+   2. 將每個單元測試撰寫成方法。 在每個測試方法的前面加上 `[TestMethod]` 屬性。
 
 2. 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
@@ -66,19 +61,17 @@ ms.locfileid: "55925237"
 > [!NOTE]
 > 如果未出現任何測試，請確定已安裝配接器將 [測試總管] 連接至您使用的測試架構。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](install-third-party-unit-test-frameworks.md)。
 
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>逐步解說：使用單元測試來開發方法
 
-##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>逐步解說：使用單元測試來開發方法
- 本逐步解說示範如何使用 Microsoft 單元測試架構以 C# 來開發受測方法。 您可以輕鬆地將它改寫成其他語言，並使用其他測試架構 (例如 NUnit)。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](install-third-party-unit-test-frameworks.md)。
+本逐步解說示範如何使用 Microsoft 單元測試架構以 C# 來開發受測方法。 您可以輕鬆地將它改寫成其他語言，並使用其他測試架構 (例如 NUnit)。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](install-third-party-unit-test-frameworks.md)。
 
 ### <a name="create-the-test-and-method"></a>建立測試和方法
 
-1. 建立一個 Visual C# 類別庫專案。 這個專案會包含所要提供的程式碼。 在此範例中，它的名稱是 `MyMath`。
+1. 建立 C# **類別庫**專案。 這個專案會包含所要提供的程式碼。 在此範例中，其名稱是 `MyMath`。
 
-2. 建立測試專案。
+2. 建立新的**單元測試專案**專案。
 
-   -   在 [新增專案] 對話方塊中，選擇 [Visual C#] > [測試]，然後選擇 [單元測試專案]。
-
-        ![新程式碼和測試專案](../test/media/unittestexplorerwalk1.png)
+   ![新程式碼和測試專案](../test/media/unittestexplorerwalk1.png)
 
 3. 撰寫基本測試方法。 驗證特定輸入所產生的結果：
 
@@ -145,7 +138,7 @@ ms.locfileid: "55925237"
 
      測試就會成功。
 
-     ![顯示成功之測試的單元測試總管。](../test/media/unittestexplorerwalkthrough3.png)
+     ![顯示成功之測試的 [單元測試總管]。](../test/media/unittestexplorerwalkthrough3.png)
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>加入測試以擴充輸入的範圍
 

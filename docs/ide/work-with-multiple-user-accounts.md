@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c910ab867be379264464650cef6bec00fc9d82f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933388"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355324"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 
@@ -55,7 +55,7 @@ ms.locfileid: "55933388"
 
 Azure Active Directory (AAD) 可支援在 ASP.NET MVC Web 應用程式中進行終端使用者單一登入，或是在 Web API 服務中進行 AD 驗證。 網域驗證與個別使用者帳戶驗證不同。 對 Active Directory 網域具有存取權的使用者，可以使用其現有 AAD 帳戶連線至您的 Web 應用程式。 Office 365 應用程式也可以使用網域驗證。
 
-若要查看此作業如何進行，請建立 Web 應用程式 ([檔案] > [新增專案] > [C#] > [雲端] > [ASP.NET Web 應用程式])。 然後在 [ASP.NET 新專案] 對話方塊中，選擇 [變更驗證]。 隨即會出現驗證精靈，供您選擇要在應用程式中使用何種驗證。
+若要查看此動作，請建立新的 **ASP.NET Web 應用程式**專案。 然後在 [ASP.NET 新專案] 對話方塊中，選擇 [變更驗證]。 隨即會出現驗證精靈，供您選擇要在應用程式中使用何種驗證。
 
 ![ASP.NET 的 [變更驗證] 對話方塊](../ide/media/vs2015_change_authentication.png)
 

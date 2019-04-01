@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e80c09978aa313aa3392ef8221d0e58bda26e385
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b6b0a5525bfb80b5b9af2fe23e7a4b02cb542fd3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928448"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355282"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入門：在 Visual Studio 中複製 Python 程式碼存放庫
 
-[在 Visual Studio 2017 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，您可以為 Visual Studio 新增 GitHub 延伸模組。 延伸模組可讓您輕鬆地複製 Python 程式碼的存放庫，並在 IDE 中透過該存放庫建立專案。 您也可以一律在命令列上複製存放庫，然後在 Visual Studio 中使用它們。
+[在 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，您可以為 Visual Studio 新增 GitHub 延伸模組。 延伸模組可讓您輕鬆地複製 Python 程式碼的存放庫，並在 IDE 中透過該存放庫建立專案。 您也可以一律在命令列上複製存放庫，然後在 Visual Studio 中使用它們。
 
 ## <a name="install-the-github-extension-for-visual-studio"></a>安裝適用於 Visual Studio Code 的 GitHub 延伸模組 \(英文\)。
 

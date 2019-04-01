@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b228bbacb69449803847847932163a05f3cf5310
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323970"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323460"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>作法：隱藏編譯器警告
 
@@ -63,7 +63,7 @@ ms.locfileid: "57323970"
 
 1. 在功能表列上，依序選擇 [專案] > [卸載專案]。
 
-1. 在**方案總管**中，以滑鼠右鍵按一下開啟專案的捷徑功能表，然後選擇 [編輯 <ProjectName>.vbproj]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下開啟專案的捷徑功能表，然後選擇 [編輯 \<專案名稱>.vbproj]。
 
     隨即在程式碼編輯器中開啟 XML 專案檔。
 

@@ -23,16 +23,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8302c517f28e32c154f688bd9f282070013f812
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957818"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355140"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 
-本文描述 Visual Studio 中的「專案」和「方案」概念。 同時簡短說明如何建立新的專案，以及 [方案總管] 工具視窗。
+本文描述 Visual Studio 中的「專案」和「方案」概念。 同時簡短說明如何建立新的專案以及 [方案總管] 工具視窗。
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中的專案和方案](/visualstudio/mac/projects-and-solutions)。
@@ -57,14 +57,14 @@ ms.locfileid: "55957818"
 
 Visual Studio 使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存方案的設定。
 
-|副檔名|名稱|描述|
+|副檔名|名稱|說明|
 |---------------|----------|-----------------|
 |.sln|Visual Studio 方案|將專案、專案項目和方案項目組織到方案中。|
 |.suo|方案使用者選項|儲存使用者層級設定和自訂項目，例如中斷點。|
 
 ## <a name="create-new-projects"></a>建立新專案
 
-建立新專案的最簡單方式是從特定類型的應用程式或網站的專案範本開始。 專案範本是由一組基本預先產生的程式碼檔案、組態檔、資產和設定所組成。 這些範本是當您選擇 [檔案] > [新增] > [專案] 時，在 [新增專案] 對話方塊中看到的內容。 如需詳細資訊，請參閱[建立方案和專案](../ide/creating-solutions-and-projects.md)。
+建立新專案的最簡單方式是從特定類型的應用程式或網站的專案範本開始。 專案範本是由一組基本預先產生的程式碼檔案、組態檔、資產和設定所組成。 這些範本可在您建立新專案的對話方塊中使用 ([檔案] > [新增] > [專案])。 如需詳細資訊，請參閱[建立方案和專案](../ide/creating-solutions-and-projects.md)。
 
 您也可以建立自訂專案與項目範本。 如需詳細資訊，請參閱[建立專案與項目範本](../ide/creating-project-and-item-templates.md)。
 

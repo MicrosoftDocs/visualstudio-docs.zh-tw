@@ -11,14 +11,14 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29f6cfe21537cd74ffa135edc3f93b9d8548aab7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c72eb3db36310efd69d18078ca43c1907697453b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946661"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414966"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>HOW TO：將測試控制器或測試代理程式繫結至網路介面卡
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>作法：將測試控制器或測試代理程式繫結至網路介面卡
 
 如果安裝測試控制器或測試代理程式軟體的電腦上有多個網路介面卡，則您必須指定 IP 位址 (而不是電腦名稱)，以識別該測試控制器或測試代理程式。
 
@@ -55,7 +55,7 @@ ms.locfileid: "55946661"
 
      `net stop vsttcontroller`
 
-3.  開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE* 中的 *QTCcontroller.exe.config* XML 組態檔。
+3.  開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition\Common7\IDE* 中的 *QTCcontroller.exe.config XML* 組態檔。
 
 4.  找出 `<appSettings>` 標記。
 
@@ -101,7 +101,7 @@ ms.locfileid: "55946661"
 
      **net stop vsttagent**
 
-3.  開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE* 中的 *QTAgentService.exe.config* XML 組態檔。
+3.  開啟位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition\Common7\IDE* 中的 *QTAgentService.exe.config* 組態檔。
 
 4.  找出 `<appSettings>` 標記。
 
@@ -133,5 +133,4 @@ ms.locfileid: "55946661"
 - [安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)
 - [修改負載測試記錄設定](../test/modify-load-test-logging-settings.md)
 - [設定測試控制器和測試代理程式的連接埠](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [如何：指定記錄檔的大小上限](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [如何：指定測試控制器和測試代理程式的逾時期間](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

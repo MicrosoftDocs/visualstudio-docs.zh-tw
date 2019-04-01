@@ -1,6 +1,6 @@
 ---
-title: 作法：散發程式碼片段
-ms.date: 11/04/2016
+title: 將程式碼片段散發為延伸模組
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -12,24 +12,28 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dde020192e4b301083c69963720f6222639f7b1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323049"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355418"
 ---
 # <a name="how-to-distribute-code-snippets"></a>作法：散發程式碼片段
 
-您可以使用 [程式碼片段管理員]，將您的程式碼片段提供給您的朋友，並讓他們在自己的電腦上安裝程式碼片段。 不過，如果您有數個程式碼片段要散發，或想要更廣泛地散發，請在 Visual Studio 延伸模組中包含您的程式碼片段檔案。 Visual Studio 使用者可以接著安裝此延伸模組。
+您可以使用 [程式碼片段管理員]，將您的程式碼片段提供給您的朋友，並讓他們在自己的電腦上安裝程式碼片段。 不過，如果您有數個程式碼片段要散發，或想要更廣泛地散發，您可在 Visual Studio 延伸模組中包含您的程式碼片段檔案。 然後，Visual Studio 使用者可以安裝此延伸模組以取得程式碼片段。
 
-若要建立 Visual Studio 擴充功能，您必須安裝 Visual Studio SDK。 請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)，以尋找符合您 Visual Studio 安裝的 VSSDK 版本。
+## <a name="prerequisites"></a>必要條件
+
+安裝 **Visual Studio 延伸模組開發**工作負載，以存取 [VSIX 專案] 專案範本。
+
+![Visual Studio 延伸模組開發工作負載](media/vs-2019/extension-development-workload.png)
 
 ## <a name="set-up-the-extension"></a>設定延伸模組
 
-在此程序中，我們將使用在下列文章所建立的相同 Hello World 程式碼片段：[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)。 我們將提供 *.snippet* 文字，所以您不需返回再做一次。
+在此程序中，您會使用相同的 Hello World 程式碼片段，它是建立在[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)。 本文提供程式碼片段 XML，所以您不必回頭建立程式碼片段。
 
-1. 建立新的 VSIX 專案，名為 **TestSnippet**。 ([檔案] > [新增] > [專案] > [Visual C#] 或 [Visual Basic] > [擴充性])。
+1. 從 [空的 VSIX 專案] 範本建立新專案，並將專案命名為 **TestSnippet**。
 
 2. 在 **TestSnippet** 專案中加入新的 XML 檔案，並將其命名為 *VBCodeSnippet.snippet*。 使用下列 XML 取代此內容：
 
@@ -111,7 +115,9 @@ ms.locfileid: "57323049"
 
 4. 測試程式碼片段。 在實驗性執行個體中，開啟 Visual Basic 專案，並開啟其中一個程式碼檔案。 將游標放在程式碼中的某處，按一下滑鼠右鍵，然後在 [操作功能表] 上選取 [插入程式碼片段]。
 
-5. 您應該會看到 *HelloWorldVB* 作為其中一個資料夾。 對它按兩下。 您應該會看到快顯視窗 [插入程式碼片段：HelloWorldVB >]，這具有下拉式清單 [HelloWorldVB]。 按一下這個 **HelloWorldVB** 下拉式清單。 您應該會看到下面這一行已加入此檔案：
+5. 您應該會看到 *HelloWorldVB* 作為其中一個資料夾。 對它按兩下。 您應該會看到快顯視窗 [插入程式碼片段：HelloWorldVB >]，這具有下拉式清單 [HelloWorldVB]。 按一下這個 **HelloWorldVB** 下拉式清單。
+
+   會將下行新增至程式碼檔案：
 
     ```vb
     Console.WriteLine("Hello, World!")

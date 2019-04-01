@@ -7,22 +7,24 @@ assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
 ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 03/21/2017
+ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 2ef17bab90ae1f2c9df66a85a6a78b1494bd5c3d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 900e677ce670c49036ea6d76596ff509129ce979
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926956"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323814"
 ---
-# <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>使用 Visual Studio 建立 Azure 雲端服務專案
+# <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>使用 Visual Studio 來建立 Azure 雲端服務專案
+
 Azure Tools for Visual Studio 提供可讓您建立 [Azure 雲端服務](/azure/cloud-services/cloud-services-choose-me)的專案範本，是個一般用途的簡單 Azure 服務。 一旦建立專案之後，Visual Studio 可讓您對雲端服務進行設定和偵錯，以及部署至 Azure。
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>在 Visual Studio 中建立 Azure 雲端服務專案的步驟
 本節將逐步引導您在 Visual Studio 中使用一或多個 Web 角色來建立 Azure 雲端服務專案。
 
-1. 以系統管理員身分啟動 Visual Studio。
+::: moniker range="vs-2017"
+1. 以系統管理員身分開啟 Visual Studio。
 
 1. 在主功能表中，選取 [檔案] > [新增] > [專案]。
 
@@ -35,6 +37,18 @@ Azure Tools for Visual Studio 提供可讓您建立 [Azure 雲端服務](/azure/
 1. 輸入專案的名稱和位置以及方案的名稱。
 
 1. 選取 [確定]。
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. 在 [開始] 視窗中，選擇 [建立新專案]。
+
+1. 在 [搜尋] 方塊中，鍵入「雲端」，然後選擇 [Azure 雲端服務]。
+
+   ![新增 Azure 雲端服務](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service.png)
+
+1. 提供專案名稱，然後選擇 [建立]。
+
+   ![提供專案名稱](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service-2.png)
+::: moniker-end
 
 1. 在 [新增 Microsoft Azure 雲端服務] 對話方塊中，選取您想要新增的角色，然後選擇向右箭號按鈕以將它們新增到您的方案。
 

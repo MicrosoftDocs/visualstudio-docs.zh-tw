@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796825"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416366"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -38,7 +38,7 @@ ms.locfileid: "56796825"
 
 ## <a name="the-mybank-solution-example"></a>MyBank 解決方案範例
 
-在本主題中，我們會使用稱為 `MyBank` 的虛構應用程式開發來做為範例。 您不需要實際程式碼來照著本主題中的說明進行。 測試方法是以 C# 所撰寫並使用 Microsoft 受控程式碼單元測試架構呈現。 不過，很容易就可以將概念移轉到其他語言與架構。
+在本文中，我們會使用稱為 `MyBank` 的虛構應用程式開發來作為範例。 您不需要實際程式碼來照著本主題中的說明進行。 測試方法是以 C# 所撰寫並使用 Microsoft 受控程式碼單元測試架構呈現。 不過，很容易就可以將概念移轉到其他語言與架構。
 
 ![MyBank 方案](../test/media/ute_mybanksolution.png)
 
@@ -102,14 +102,26 @@ public void Withdraw(double amount)
 
 **將單元測試專案加入方案：**
 
-1. 在 [檔案] 功能表上，選擇 [新增]，然後選擇 [專案] (鍵盤 **Ctrl**+**Shift**+**N**)。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下方案，然後選擇 [新增] > [新增專案]。
 
-2. 在 [新增專案] 對話方塊上，展開 [已安裝] 節點，並選擇您想要用於測試專案的語言，然後選擇 [測試]。
+::: moniker range="vs-2017"
+
+2. 在 [新增專案] 對話方塊中，展開 [已安裝] 節點，選擇您想要用於測試專案的語言，然後選擇 [測試]。
 
 3. 若要使用其中一個 Microsoft 單元測試架構，請從專案範本清單中選擇 [單元測試專案]  。 否則，請選擇您所要使用單元測試架構的專案範本。 若要測試本例的 `Accounts` 專案，請將專案命名為 `AccountsTests`。
 
-   > [!WARNING]
+   > [!NOTE]
    > 並非所有協力廠商和開放原始碼的單元測試架構都提供 Visual Studio 專案範本。 如需建立專案的相關資訊，請參閱架構文件。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. 使用專案範本搜尋方塊來尋找您希望使用之測試架構的單元測試專案範本。
+
+3. 請在下一頁命名專案。 若要測試本範例的 `Accounts` 專案，您可以將專案命名為 `AccountsTests`。
+
+::: moniker-end
 
 4. 在您的單元測試專案中，可在本例中將受測程式碼專案的參考加入帳戶專案。
 

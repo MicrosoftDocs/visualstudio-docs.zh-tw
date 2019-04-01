@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 80507633538e28650ed53e74794ddda173382878
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 496ca9b5a0c7501cd9493e06233b1473e8526ed6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195134"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355681"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中建立及管理 Python 環境
 
 Python「環境」是您執行 Python 程式碼的內容，其中包含全域、虛擬和 Conda 環境。 環境是由解譯器、程式庫 (通常是 Python 標準程式庫) 及一組已安裝的套件所組成。 這些元件共同決定有效的語言建構和語法、您可存取的作業系統功能，以及您可以使用的套件。
 
-在 Windows 上的 Visual Studio 中，您可以在此文章所描述的 [Python 環境] 視窗中，管理環境並選取其中之一作為新專案的預設環境。 下列文章中可找到環境的其他方面：
+在 Windows 上的 Visual Studio 中，您可以在本文所描述的 [Python 環境] 視窗中，管理環境並選取其中之一作為新專案的預設環境。 下列文章中可找到環境的其他方面：
 
 - 針對任何指定的專案，您可以[選取特定環境](selecting-a-python-environment-for-a-project.md)，而不使用預設環境。
 
@@ -123,7 +123,7 @@ Visual Studio 提供的命令也可從虛擬環境產生 *requirements.txt* 檔�
 
 #### <a name="conda-environments"></a>Conda 環境
 
-Conda 環境是使用 `conda` 工具建立的環境，或在 Visual Studio 2017 15.7 版及更新版本使用整合式 Conda 管理建立的環境。 (需要 Anaconda 或 Miniconda，Anaconda 可透過 Visual Studio 安裝程式取得，請參閱[安裝](installing-python-support-in-visual-studio.md#visual-studio-2019-and-visual-studio-2017)。)
+Conda 環境是使用 `conda` 工具建立的環境，或在 Visual Studio 2017 15.7 版及更新版本使用整合式 Conda 管理建立的環境。 (需要 Anaconda 或 Miniconda，可透過 Visual Studio 安裝程式取得，請參閱[安裝](installing-python-support-in-visual-studio.md#visual-studio-2019-and-visual-studio-2017)。)
 
 ::: moniker range="vs-2017"
 

@@ -9,14 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d9434ac138f848442a32986d85ae816bb8d78e71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946937"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416353"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>HOW TO：建立 Web 效能測試結果檢視器的 Visual Studio 增益集
+# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>作法：建立 Web 效能測試結果檢視器的 Visual Studio 增益集
 
 您可以使用下列命名空間來擴充 [Web 效能測試結果檢視器] 的 UI：
 
@@ -24,7 +24,7 @@ ms.locfileid: "55946937"
 
 -   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-此外，您必須新增 LoadTestPackage DLL 的參考，這個檔案位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* 資料夾中。
+此外，您必須新增 LoadTestPackage DLL 的參考，這個檔案位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\Enterprise\Common7\IDE\PrivateAssemblies* 資料夾中。
 
 若要擴充 [Web 效能測試結果檢視器] 的 UI，您必須建立 Visual Studio 增益集和使用者控制項。 下列程序將說明如何建立增益集、使用者控制項，以及如何實作必要的類別，以便擴充 [Web 效能測試結果檢視器] 的 UI。
 
@@ -51,46 +51,38 @@ ms.locfileid: "55946937"
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇 [新增]，然後選取 [新增專案]。
 
-    [新增專案] 對話方塊隨即出現。
-
-2. 展開 [已安裝的範本] 底下的 [其他專案類型]，然後選取 [擴充性]。
-
-3. 在範本的清單中，選取 [Visual Studio 增益集]。
-
-4. 在 [名稱] 底下，鍵入增益集的名稱。 例如，**WebPerfTestResultsViewerAddin**。
-
-5. 選擇 [確定] 。
+2. 建立新的 **Visual Studio 增益集**專案。
 
     Visual Studio [增益集精靈] 隨即啟動。
 
-6. 選擇 [下一步]。
+3. 選擇 [下一步]。
 
-7. 在 [選取程式設計語言] 頁面上，選取您要用來撰寫增益集的程式設計語言。
+4. 在 [選取程式設計語言] 頁面上，選取您要用來撰寫增益集的程式設計語言。
 
    > [!NOTE]
    > 本主題將針對範例程式碼使用 Visual C#。
 
-8. 在 [選擇主應用程式] 頁面上，選取 [Visual Studio] 並清除 [Visual Studio 巨集]。
+5. 在 [選擇主應用程式] 頁面上，選取 [Visual Studio] 並清除 [Visual Studio 巨集]。
 
-9. 選擇 [下一步]。
+6. 選擇 [下一步]。
 
-10. 在 [輸入名稱和描述] 頁面中，鍵入增益集的名稱和描述。
+7. 在 [輸入名稱和描述] 頁面中，鍵入增益集的名稱和描述。
 
      建立增益集之後，其名稱和描述會顯示在 [增益集管理員] 的 [可用的增益集] 清單中。 您可以為增益集加入詳細的描述資料，讓使用者了解增益集的功能、運作方式等。
 
-11. 選擇 [下一步]。
+8. 選擇 [下一步]。
 
-12. 在 [選擇增益集選項] 頁面上，選取 [當主應用程式啟動時載入增益集]。
+9. 在 [選擇增益集選項] 頁面上，選取 [當主應用程式啟動時載入增益集]。
 
-13. 清除其餘核取方塊。
+10. 清除其餘核取方塊。
 
-14. 在 [[關於] 對話方塊資訊選擇] 頁面上，您可以指定是否要將增益集的相關資訊顯示在 [關於] 對話方塊中。 如果您想要顯示這項資訊，請選取 [是，我希望增益集可以提供 [關於] 對話方塊資訊] 核取方塊。
+11. 在 [[關於] 對話方塊資訊選擇] 頁面上，您可以指定是否要將增益集的相關資訊顯示在 [關於] 對話方塊中。 如果您想要顯示這項資訊，請選取 [是，我希望增益集可以提供 [關於] 對話方塊資訊] 核取方塊。
 
      可新增至 Visual Studio [關於] 對話方塊的資訊包括版本號碼、支援詳細資料、授權資料等等。
 
-15. 選擇 [下一步]。
+12. 選擇 [下一步]。
 
-16. 您所選取的選項就會顯示在 [摘要] 頁面上，供您檢閱。 如果您對設定感到滿意，請選擇 [完成] 建立增益集。 如果您想要變更某些設定，請選擇 [上一頁] 按鈕。
+13. 您所選取的選項就會顯示在 [摘要] 頁面上，供您檢閱。 如果您對設定感到滿意，請選擇 [完成] 建立增益集。 如果您想要變更某些設定，請選擇 [上一頁] 按鈕。
 
      此時，系統已建立新的方案和專案，而且新增益集的 *Connect.cs* 檔案會顯示在 [程式碼編輯器] 中。
 
@@ -119,24 +111,11 @@ ms.locfileid: "55946937"
 
 1.  在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇 [新增]，然後選取 [新增專案]。
 
-     [新增專案] 對話方塊隨即出現。
+2. 建立新的 **Windows Forms 控制項程式庫**專案。
 
-2.  在 [已安裝的範本] 底下，展開 [Visual Basic] 或 [Visual C#]，然後選取 [Windows]。
+3.  從 [工具箱] 中，將 <xref:System.Windows.Forms.DataGridView> 拖曳至 userControl1 的介面上。
 
-    > [!NOTE]
-    > 本主題將針對範例程式碼使用 Visual C#。
-
-3.  在範本的清單中，選取 [Windows Form 控制項程式庫]。
-
-4.  在 [名稱] 底下，鍵入增益集的名稱。 例如，**WebPerfTestResultsViewerControl**。
-
-5.  選擇 [確定] 。
-
-     Windows Form 控制項程式庫專案 WebPerfTestResultsViewerControl 就會加入至 [方案總管]，而且 *UserControl1.cs* 會以設計模式顯示。
-
-6.  從 [工具箱] 中，將 <xref:System.Windows.Forms.DataGridView> 拖曳至 userControl1 的介面上。
-
-7.  按一下 <xref:System.Windows.Forms.DataGridView> 右上角的動作標籤字符 (![智慧標籤字符](../test/media/vs_winformsmttagglyph.gif))，然後依照下列步驟進行操作：
+4. 按一下 <xref:System.Windows.Forms.DataGridView> 右上角的動作標籤字符 (![智慧標籤字符](../test/media/vs_winformsmttagglyph.gif))，然後依照下列步驟進行操作：
 
     1.  選擇 [停駐於父容器中]。
 
@@ -154,13 +133,13 @@ ms.locfileid: "55946937"
 
     7.  選擇 [關閉]。
 
-8.  在 [屬性] 視窗中，將 <xref:System.Windows.Forms.DataGridView> 的 [(名稱)] 屬性變更為 **resultControlDataGridView**。
+5.  在 [屬性] 視窗中，將 <xref:System.Windows.Forms.DataGridView> 的 [(名稱)] 屬性變更為 **resultControlDataGridView**。
 
-9. 以滑鼠右鍵按一下設計介面，然後選取 [檢視程式碼]。
+6. 以滑鼠右鍵按一下設計介面，然後選取 [檢視程式碼]。
 
      *UserControl1.cs* 檔案就會顯示在 [程式碼編輯器] 中。
 
-10. 將具現化 <xref:System.Windows.Forms.UserControl> 類別的名稱從 UserContro1 變更為 resultControl：
+7. 將具現化 <xref:System.Windows.Forms.UserControl> 類別的名稱從 UserContro1 變更為 resultControl：
 
     ```csharp
     namespace WebPerfTestResultsViewerControl
@@ -178,8 +157,6 @@ ms.locfileid: "55946937"
      您稍後會將其他程式碼加入至 *Connect.cs* 檔案。
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>將程式碼加入至 WebPerfTestResultsViewerAddin
-
-### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>若要將程式碼加入至 Visual Studio 增益集以擴充 Web 測試結果檢視器
 
 1.  在 [方案總管] 中，以滑鼠右鍵按一下 WebPerfTestResultsViewerAddin 專案中的 [參考] 節點，然後選取 [新增參考]。
 
@@ -276,8 +253,6 @@ ms.locfileid: "55946937"
      現在 Visual Studio 增益集的程式碼已經完成，您必須將 Update 方法加入至 WebPerfTestResultsViewerControl 專案中的 resultControl。
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>將程式碼加入至 WebPerfTestResultsViewerControl
-
-### <a name="to-add-code-to-the-user-control"></a>若要將程式碼加入至使用者控制項
 
 1.  在 [方案總管] 中，以滑鼠右鍵按一下 WebPerfTestResultsViewerControl 專案節點，然後選取 [屬性]。
 

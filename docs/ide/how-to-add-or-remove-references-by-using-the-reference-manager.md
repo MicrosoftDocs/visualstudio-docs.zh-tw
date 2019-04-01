@@ -21,14 +21,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7a4810cd6b45df7b305ebc4c086d60d500ed83
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1b26c700e90189882f850d4bda1d47fb6f54c025
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943463"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322320"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>HOW TO：使用參考管理員新增或移除參考
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>作法：使用參考管理員新增或移除參考
 
 針對由您本身、Microsoft 或其他公司所開發的元件，您可以使用 [參考管理員] 對話方塊新增並管理這些元件的參考。 如果您正在開發通用 Windows app，您的專案會自動參考所有正確的 Windows SDK DLL。 如果您正在開發 .NET 應用程式，您的專案會自動參考 *mscorlib.dll*。 某些 .NET API 是在您手動加入的元件中公開。 您必須手動加入對 COM 元件或自訂元件的參考。
 
@@ -46,9 +46,7 @@ ms.locfileid: "55943463"
 
 - **瀏覽**，包含 [最近] 子群組。
 
-## <a name="add-and-remove-a-reference"></a>新增和移除參考
-
-### <a name="to-add-a-reference"></a>若要加入參考
+## <a name="add-a-reference"></a>加入參考
 
 1. 在**方案總管**中，以滑鼠右鍵按一下 [參考] 或 [相依性] 節點，然後選擇 [新增參考]。 您也可以使用滑鼠右鍵按一下專案節點，然後選取 [新增] > [參考]。
 
@@ -147,44 +145,27 @@ ms.locfileid: "55943463"
 
 目標為 [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] 的專案無法將專案參考新增至目標為 .NET Framework 的專案，反之亦然。
 
-## <a name="windows-tab"></a>Windows 索引標籤
+## <a name="universal-windows-tab"></a>[通用 Windows] 索引標籤
 
-[Windows] 索引標籤會列出 Windows 作業系統執行所在平台專用的 SDK。
-
-您可以在 Visual Studio 中透過兩種方式產生 WinMD 檔案：
-
-- **Windows 8.x Store 應用程式受控專案**：Windows 8.x Store 應用程式專案可以透過設定 [專案屬性] > [輸出類型 = WinMD 檔案] 的方式輸出 WinMD 二進位檔。 WinMD 檔案名稱必須是本身包含之所有命名空間的超集命名空間。 例如，如果專案包括命名空間 `A.B` 和 `A.B.C`，則其輸出的 WinMD 可能名稱為 *A.winmd* 和 *A.B.winmd*。 如果使用者輸入的 [專案屬性] > [組件名稱] 或 [專案屬性] > [命名空間] 值與專案中的命名空間集合不相鄰，或是專案內沒有超集命名空間，則會產生建置警告：「'A.winmd' 不是這個組件的有效 .winmd 檔案名稱」。 Windows 中繼資料檔中的所有類型都必須存在檔案名稱的子命名空間內。 在執行階段將找不到不存在檔案名稱之子命名空間中的類型。 在這個組件中，最小通用命名空間為 `CSWSClassLibrary1`。 傳統型 Visual Basic 或 C# 專案只能使用以 Windows 8 SDK 產生的 WinMD，它稱為第一方 WinMD，而且無法產生 WinMD。
-
-- **Windows 8.x Store 應用程式原生專案**：原生 WinMD 檔案只包含中繼資料。 它的實作會出現在個別 DLL 中。 在 [新增專案] 對話方塊中選擇 Windows 執行階段元件專案範本，或是從空白專案開始並修改專案屬性來產生 WinMD 檔案，就可以產生原生二進位檔。 如果專案包含不相鄰的命名空間，則會產生建置錯誤，告訴使用者將其命名空間結合或執行 MSMerge 工具。
-
-[Windows] 索引標籤包括兩個子群組。
+[通用 Windows] 索引標籤會列出 Windows 作業系統執行所在平台特定的所有 SDK。
+此索引標籤有兩個子群組：[核心] 和 [延伸模組]。
 
 ### <a name="core-subgroup"></a>[核心] 子群組
 
-[核心] 子群組會列出目標版本 Windows 的 SDK 中所有的 WinMD (針對 Windows 執行階段項目)。
-
-Windows 8.x 市集應用程式專案預設包含專案建立時，Windows 8 SDK 中的所有 WinMD 參考。 在受管專案中，**方案總管**之 [參考] 資料夾下的唯讀節點表示整個 Windows 8 SDK 的參考。 因此，[參考管理員] 中的 [核心] 子群組不會列舉 Windows 8 SDK 中的任何組件，並改為顯示下列訊息：「Windows SDK 已經被參考了。 請使用物件瀏覽器瀏覽 Windows SDK 中的參考」。
-
-根據預設，在傳統型專案中，[核心] 子群組不會出現。 您可以開啟專案節點的捷徑功能表、選擇 [卸載專案]、加入下列程式碼片段，然後重新開啟專案 (在專案節點上選擇 [重新載入專案])，即可新增 Windows 執行階段。 當您叫用 [參考管理員] 對話方塊時，[核心] 子群組隨即出現。
-
-```xml
-<PropertyGroup>
-  <TargetPlatformVersion>8.0</TargetPlatformVersion>
-</PropertyGroup>
-```
-
-確定已在這個子群組上選取 [Windows] 核取方塊。 接著您應該就能使用 Windows 執行階段項目。 不過，您可能也會想要新增 <xref:System.Runtime>，讓 Windows 執行階段定義一些標準類別和介面，例如 <xref:System.Collections.IEnumerable>，以便在整個 Windows 執行階段程式庫中使用。 如需如何新增 <xref:System.Runtime> 的詳細資訊，請參閱[受控的傳統型應用程式與 Windows 執行階段](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types)。
+根據預設，通用 Windows 應用程式專案具有通用 Windows SDK 的參考。 因此，[參考管理員] 中的 [核心] 子群組不會列舉 Windows SDK 中的任何組件。
 
 ### <a name="extensions-subgroup"></a>[延伸模組] 子群組
 
-[延伸模組] 會列出擴充目標 Windows 平台的使用者 SDK。 這個索引標籤只會針對 Windows 8.x 市集應用程式專案顯示。 傳統型專案不會顯示這個索引標籤，因為這類專案只能使用第一方 *.winmd* 檔案。
+[延伸模組] 會列出擴充目標 Windows 平台的使用者 SDK。
 
-SDK 是檔案集合，Visual Studio 會將這個集合視為單一元件。 在 [延伸模組] 索引標籤中，適用於叫用 [參考管理員] 對話方塊所在專案的 SDK 會以單一項目形式列出。 新增至專案時，Visual Studio 會使用所有 SDK 內容，因此使用者不需要採取任何進一步動作就可以在 IntelliSense、工具箱、設計工具、物件瀏覽器、組建、部署、偵錯和封裝中利用 SDK 內容。 如需如何在 [延伸模組] 索引標籤中顯示 SDK 的資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)。
+SDK 是檔案集合，Visual Studio 會將這個集合視為單一元件。 在 [延伸模組] 索引標籤中，適用於叫用 [參考管理員] 對話方塊所在專案的 SDK 會以單一項目形式列出。 新增至專案時，Visual Studio 會使用所有 SDK 內容，因此使用者不需要採取任何進一步動作就可以在 IntelliSense、工具箱、設計工具、物件瀏覽器、組建、部署、偵錯和封裝中利用 SDK 內容。
+
+如需如何在 [延伸模組] 索引標籤中顯示 SDK 的資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)。
 
 > [!NOTE]
-> 如果專案參考的 SDK 取決於另一個 SDK，則除非使用者手動新增另一個 SDK 的參考，否則 Visual Studio 不會使用另一個 SDK。 當使用者在 [延伸模組] 索引標籤上選擇 SDK 時，[參考管理員] 對話方塊除了列出 SDK 的名稱和版本之外，還會在詳細資料窗格中列出所有 SDK 相依性的名稱，藉此幫助使用者識別 SDK。 如果使用者未注意到相依性，而只新增該 SDK，MSBuild 將會提示使用者新增相依性。
+> 如果專案參考的 SDK 取決於另一個 SDK，則除非您手動新增第二個 SDK 的參考，否則 Visual Studio 不會使用第二個 SDK。 當使用者在 [延伸模組] 索引標籤中選擇 SDK 時，[參考管理員] 對話方塊會在 [詳細資料] 窗格中列出所有相依性，幫助您識別 SDK 相依性。
 
-如果專案類型不支援延伸模組，這個索引標籤就不會出現在 [參考管理員] 對話方塊中。
+如果專案類型不支援延伸模組，此索引標籤就不會出現在 [參考管理員] 對話方塊中。
 
 ## <a name="com-tab"></a>COM 索引標籤
 
@@ -202,11 +183,11 @@ SDK 是檔案集合，Visual Studio 會將這個集合視為單一元件。 在 
 
 您無法瀏覽至 SDK，並將它新增至您的專案。 您只能瀏覽至檔案 (例如，組件或 *.winmd*)，並將它新增至專案。
 
-進行對 WinMD 的檔案參考時，預期的配置是將 <FileName>.winmd、<FileName>.dll 和 <FileName>.pri 檔案全部放置在一起。 如果您在下列情境中參考 WinMD，會將不完整的檔案集合複製到專案輸出目錄中，因此造成建置和執行階段失敗發生。
+對 WinMD 執行檔案參考時，預期的配置是將 \<檔案名稱>.winmd、\<檔案名稱>.dll 和 \<檔案名稱>.pri 檔案全部放置在一起。 如果您在下列情境中參考 WinMD，會將不完整的檔案集合複製到專案輸出目錄中，因此造成建置和執行階段失敗發生。
 
-- **原生元件**：原生專案會為每一個不相鄰的命名空間集合建立一個 WinMD，並且建立一個包含實作的 DLL。 WinMD 會有不同的名稱。 參考這個原生元件檔時，MSBuild 不會將採用不同名稱的 WinMD 辨識為同一個元件。 因此，只會複製名稱相同的 <FileName>.dll 和 <FileName>.winmd，並且發生執行階段錯誤。 若要解決這個問題，請建立延伸模組 SDK。 如需詳細資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)。
+- **原生元件**：原生專案會為每一個不相鄰的命名空間集合建立一個 WinMD，並且建立一個包含實作的 DLL。 WinMD 會有不同的名稱。 參考這個原生元件檔時，MSBuild 不會將採用不同名稱的 WinMD 辨識為同一個元件。 因此，只會複製同名的 \<檔案名稱>.dll 和 \<檔案名稱>.winmd，並會發生執行階段錯誤。 若要解決這個問題，請建立延伸模組 SDK。 如需詳細資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)。
 
-- **使用控制項**：XAML 控制項至少包含 <FileName>.winmd、<FileName>.dll、<FileName>.pri、<XamlName>.xaml 和 <ImageName>.jpg。 專案建置後，與檔案參考建立關聯的資源檔不會複製到專案的輸出目錄中，而只會複製 <FileName>.winmd、<FileName>.dll 和 <FileName>.pri。 此時會記錄建置錯誤，通知使用者遺漏 <XamlName>.xaml 和 <ImageName>.jpg 資源。 若要成功，使用者必須手動將這些資源檔複製到專案輸出目錄中供建置和偵錯/執行階段使用。 若要解決這個問題，請遵循[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)中的步驟建立延伸模組 SDK，或編輯專案檔以新增下列屬性：
+- **使用控制項**：XAML 控制項至少包含 \<檔案名稱>.winmd、\<檔案名稱>.dll、\<檔案名稱>.pri\<XamlName>.xaml、 和 \<ImageName>.jpg。 專案建置後，系統不會將已與檔案參考建立關聯的資源檔複製到專案輸出目錄中，只會複製 \<檔案名稱>.winmd、\<檔案名稱>.dll 和 \<檔案名稱>.pri。 此時會記錄建置錯誤，通知使用者遺漏 \<XAML 名稱>.xaml 和 \<影像名稱>.jpg 資源。 若要成功，使用者必須手動將這些資源檔複製到專案輸出目錄中供建置和偵錯/執行階段使用。 若要解決這個問題，請遵循[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)中的步驟建立延伸模組 SDK，或編輯專案檔以新增下列屬性：
 
     ```xml
     <PropertyGroup>

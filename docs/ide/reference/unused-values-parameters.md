@@ -10,33 +10,35 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: afcf85fff188853890b86cf7deb13b2457f5e0b8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2d0875f9a298af24575cc05008713cbb6c3e2ead
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157694"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414677"
 ---
-# <a name="unused-expression-values-and-parameters"></a>未使用的運算式值和參數
+# <a name="unused-value-assignments-variables-and-parameters"></a>未使用的值指派、變數及參數
 
 此重構適用於：
 
 - C#
 - Visual Basic
 
-**功能：** 淡化未使用的參數，並為未使用的運算式值產生警告。
+**功能：** 淡化未使用的參數，並為未使用的運算式值產生警告。 編譯器也會執行資料流程分析，以尋找任何未使用的值指派。 未使用的值指派會淡出，並會顯示包含[快速動作](../quick-actions.md)的燈泡，以移除重複的指派。 包含未知值的未使用變數會顯示[快速動作](../quick-actions.md)建議，以改用 [Discard](/dotnet/csharp/discards)。 (Discard 是應用程式程式碼中刻意未使用的暫存虛擬變數。 可以減少記憶體配置，並使您的程式碼更易於閱讀。)
 
-**時機：** 您擁有從未使用的參數或運算式值。
+**時機：** 您擁有從未使用的值指派、參數或運算式值。
 
-**原因：** 有時候很難分辨值或參數是否已不再使用。 藉由淡出這些值或發出警告，您就能清楚了解哪些程式碼可以刪除。
+**原因：** 有時候很難分辨值指派、變數或參數是否已不再使用。 藉由淡出這些值或產生警告，您就能清楚了解哪些程式碼可以刪除。
 
 ## <a name="unused-expression-values-and-parameters-diagnostic"></a>未使用的運算式值和參數診斷
 
-1. 具有任何未使用的運算式值或參數。
-2. 未使用的參數會淡出顯示。未使用的運算式值會收到警告。
+1. 擁有未使用的值指派、變數或參數。
+2. 未使用的值指派或參數會以淡出顯示。未使用的運算式值會產生警告。
 
   ![未使用的參數](media/unused-parameter.png)
   ![未使用的值](media/unused-value.png)
+  ![未使用的值指派](media/unused-value-assignment.png)
+  ![未使用的值 Discard](media/unused-value-discard.png)
 
 ## <a name="see-also"></a>另請參閱
 

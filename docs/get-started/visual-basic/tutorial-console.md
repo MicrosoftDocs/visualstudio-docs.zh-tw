@@ -2,8 +2,9 @@
 title: 教學課程：開始使用 Visual Basic
 description: 逐步了解如何在 Visual Studio 中建立 Visual Basic 主控台應用程式。
 ms.custom: seodec18, get-started
-ms.date: 08/10/2018
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -13,22 +14,34 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: a190a17147530fe42cd6bb9e95b313527eb16b0d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ee6866e2f40f70e2f804dc9b61b0db21c213232f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840410"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416158"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教學課程：Visual Studio 中的 Visual Basic 使用者入門
 
 在 Visual Basic (VB) 的這個教學課程中，您將使用 Visual Studio 建立和執行一些不同的主控台應用程式，並在這樣做的同時探索 [Visual Studio 整合式開發環境 (IDE)](visual-studio-ide.md) 的一些功能。
 
+::: moniker range="vs-2017"
+
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)頁面免費進行安裝。
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>建立專案
 
 首先，我們將建立 Visual Basic 應用程式專案。 在您新增任何項目之前，專案類型會隨附您需要的所有範本檔案！
+
+::: moniker range="vs-2017"
 
 1. 開啟 Visual Studio 2017。
 
@@ -54,13 +67,53 @@ ms.locfileid: "56840410"
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
 
-1. 請取消 [新專案] 對話方塊，然後從頂端功能表列中選擇 [工具] > [取得工具和功能]。
+1. 請取消 [新專案] 對話方塊，然後從頂端功能表列中選擇 [工具]>[取得工具和功能]。
 
 1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!NOTE]
+> 本教學課程中的某些螢幕擷取畫面使用深色佈景主題。 如果您未使用深色佈景主題，但想要使用，請參閱[將 Visual Studio IDE 和編輯器個人化](../../ide/quickstart-personalize-the-ide.md)頁面以了解做法。
+
+1. 開啟 Visual Studio 2019。
+
+1. 在開始視窗中，選擇 [建立新專案]。
+
+   ![檢視 [建立新專案] 視窗](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. 在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從語言清單中選擇 **Visual Basic**，然後從平台清單中選擇 **Windows**。 
+
+   在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。
+
+   ![選擇主控台應用程式 (.NET Framework) 的 Visual Basic 專案範本](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > 如果您未看到 [主控台應用程式 (.NET Core)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   >
+   > ![[建立新專案] 視窗中 [找不到您要找的資料嗎?] 訊息的 [安裝更多的工具和功能] 連結](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > 接下來，在 Visual Studio 安裝程式中選擇 **.NET Core 跨平台開發**工作負載。
+   >
+   > ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../../get-started/media/dot-net-core-xplat-dev-workload.png)
+   >
+   > 接下來，選擇 Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作；如果出現的話，就請您這麼做。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
+
+1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *WhatIsYourName*。 接著，選擇 [建立]。
+
+   ![在 [設定您的新專案] 視窗中，以 'WhatIsYourName' 命名您的專案](./media/vs-2019/vb-name-your-project.-whatname.png)
+
+   Visual Studio 會隨即開啟您的新專案。
+
+::: moniker-end
 
 ## <a name="create-a-what-is-your-name-application"></a>建立 "What Is Your Name" 應用程式
 
 讓我們建立應用程式，提示您輸入您的名稱，然後顯示它與日期和時間。 方式如下：
+
+ ::: moniker range="vs-2017"
 
 1. 如果尚未開啟，則請開啟 *WhatIsYourName* 專案。
 
@@ -77,7 +130,7 @@ ms.locfileid: "56840410"
 
     此程式碼取代現有的 <xref:System.Console.WriteLine%2A>、<xref:System.Console.Write%2A> 和 <xref:System.Console.ReadKey%2A> 陳述式。
 
-   ![程式碼視窗顯示 What Is Your Name 程式碼](media/vb-codewindow-what-name.png)
+   ![程式碼視窗顯示 What Is Your Name 程式碼](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
 1. 主控台視窗開啟時，請輸入您的名稱。 主控台視窗應該類似下列螢幕擷取畫面：
 
@@ -85,7 +138,36 @@ ms.locfileid: "56840410"
 
 1. 按任意鍵以關閉主控台視窗。
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 在 *WhatIsYourName* 專案中，於 `Sub Main(args As String())` 行之後的左括弧後方，以及 `End Sub` 行之前，輸入下列 Visual Basic 程式碼：
+
+     ```vb
+     Console.WriteLine(vbCrLf + "What is your name? ")
+     Dim name = Console.ReadLine()
+     Dim currentDate = DateTime.Now
+     Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}")
+     Console.Write(vbCrLf + "Press any key to exit... ")
+     Console.ReadKey(True)
+    ```
+
+    此程式碼取代現有的 <xref:System.Console.WriteLine%2A>、<xref:System.Console.Write%2A> 和 <xref:System.Console.ReadKey%2A> 陳述式。
+
+   ![程式碼視窗顯示 What Is Your Name 程式碼](./media/vs-2019/vb-codewindow-what-name-dark.png)
+
+1. 主控台視窗開啟時，請輸入您的名稱。 主控台視窗應該類似下列螢幕擷取畫面：
+
+   ![主控台視窗顯示 What Is Your Name、時間和日期，以及「請按任意鍵繼續」訊息](media/vb-console-what-name.png)
+
+1. 按任意鍵以關閉主控台視窗。
+
+ ::: moniker-end
+
 ## <a name="create-a-calculate-this-application"></a>建立 "Calculate This" 應用程式
+
+::: moniker range="vs-2017"
 
 1. 開啟 Visual Studio 2017，然後從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
@@ -110,11 +192,50 @@ ms.locfileid: "56840410"
 
    您的程式碼視窗應該類似下列螢幕擷取畫面：
 
-   ![程式碼視窗顯示 Calculate This code](media/vb-codewindow-calculate-this.png)
+   ![顯示 CalculateThis 程式碼的程式碼視窗](media/vb-codewindow-calculate-this.png)
 
 1. 按一下 **CalculateThis** 以執行程式。 主控台視窗應該類似下列螢幕擷取畫面：
 
-    ![主控台視窗顯示 CaluculateThis 應用程式，其中包含提示要採取的動作。](media/vb-console-calculate-this.png)
+    ![顯示 CalculateThis 應用程式的主控台視窗，其中包含提示要採取的動作。](media/vb-console-calculate-this.png)
+
+::: moniker-end 
+
+::: moniker range="vs-2019"
+
+1. 在開始視窗中，選擇 [建立新專案]。 
+
+1. 在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從語言清單中選擇 **Visual Basic**，然後從平台清單中選擇 **Windows**。 
+
+1. 在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。
+
+   然後，在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *WhatIsYourName*。 接著，選擇 [建立]。
+
+1. 在 `Module Program` 行與 `End Module` 行之間輸入下列程式碼：
+
+   ```vb
+   Public num1 As Integer
+   Public num2 As Integer
+   Public answer As Integer
+   Sub Main()
+       Console.WriteLine("Type a number and press Enter")
+       num1 = Console.ReadLine()
+       Console.WriteLine("Type another number to add to it and press Enter")
+       num2 = Console.ReadLine()
+       answer = num1 + num2
+       Console.WriteLine("The answer is " & answer)
+       Console.ReadLine()
+   End Sub
+   ```
+
+   您的程式碼視窗應該類似下列螢幕擷取畫面：
+
+   ![顯示 CalculateThis 程式碼的程式碼視窗](media/vb-codewindow-calculate-this.png)
+
+1. 按一下 **CalculateThis** 以執行程式。 主控台視窗應該類似下列螢幕擷取畫面：
+
+    ![顯示 CalculateThis 應用程式的主控台視窗，其中包含提示要採取的動作。](media/vb-console-calculate-this.png)
+
+::: moniker-end
 
 ## <a name="quick-answers-faq"></a>常見問題集快問快答
 

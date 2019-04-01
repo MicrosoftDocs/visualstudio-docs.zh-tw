@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b5d2d878cb7f9597c0341f26fa41df8e4834a886
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 758f7549eeb1726b13da31a96b4c006194da6ee6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713538"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355311"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>發佈至 Windows 上的 Azure App Service
 
@@ -25,10 +25,10 @@ ms.locfileid: "56713538"
 
 Visual Studio 能夠將 Python Web 應用程式直接發佈到 Windows 上的 Azure App Service。 為了發佈到 Windows 上的 Azure App Service，您必須將必要的檔案複製到伺服器，並設定適當的 `web.config` 檔案，以指示 Web 伺服器如何啟動您的應用程式。
 
-Visual Studio 2017 和 Visual Studio 2015 的發佈程序有所不同。 具體而言，Visual Studio 2015 會自動執行一些步驟，包括建立 `web.config`，但這項自動化會導致長期的彈性和控制受到侷限。 Visual Studio 2017 則需要更多的手動步驟，但可讓您更精確地控制 Python 環境。 此處會說明這兩種選項。
+Visual Studio 2017 和更新版本以及 Visual Studio 2015 的發佈程序有所不同。 具體而言，Visual Studio 2015 會自動執行一些步驟，包括建立 `web.config`，但這項自動化會導致長期的彈性和控制受到侷限。 Visual Studio 2017 和更新版本則需要更多的手動步驟，但可讓您更精確地控制 Python 環境。 此處會說明這兩種選項。
 
 > [!Note]
-> 若要了解 Visual Studio 2015 和 Visual Studio 2017 之間的變更背景，請參閱 [Publish to Azure in Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/) (使用 Visual Studio 2017 發佈到 Azure) 部落格文章。
+> 若要了解 Visual Studio 2015 以及 Visual Studio 2017 和更新版本之間的變更背景，請參閱 [Publish to Azure in Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/) (使用 Visual Studio 2017 發佈到 Azure) 部落格文章。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -71,13 +71,13 @@ Visual Studio 2017 和 Visual Studio 2015 的發佈程序有所不同。 具體�
 
 ## <a name="configure-python-on-azure-app-service"></a>設定 Azure App Service 上的 Python
 
-一旦您已開始執行 App Service 與空白 Web 應用程式 (不論執行於訂用帳戶或是免費網站中)，請安裝所選版本的 Python，如[管理 Azure App Service 上的 Python](managing-python-on-azure-app-service.md) 所述。 若要從 Visual Studio 2017 進行發佈，請將與網站延伸模組一起安裝的 Python 解譯器確切路徑記錄下來，如該文章所述。
+一旦您已開始執行 App Service 與空白 Web 應用程式 (不論執行於訂用帳戶或是免費網站中)，請安裝所選版本的 Python，如[管理 Azure App Service 上的 Python](managing-python-on-azure-app-service.md) 所述。 若要從 Visual Studio 2017 和更新版本發佈，請將與網站延伸模組一起安裝的 Python 解譯器確切路徑記錄下來，如該文章中所述。
 
 如有需要，您也可以使用這些指示中的程序安裝 `bottle` 套件，因為這個套件會在此逐步解說的其他步驟期間進行安裝。
 
-## <a name="publish-to-app-service---visual-studio-2017"></a>發佈至 App Service - Visual Studio 2017
+## <a name="publish-to-app-service---visual-studio-2017-and-later"></a>發佈至 App Service - Visual Studio 2017 和更新版本
 
-從 Visual Studio 2017 發佈至 Azure App Service 時，僅會將您專案中的檔案複製到伺服器。 因此，您必須建立必要的檔案來設定伺服器環境。
+從 Visual Studio 2017 和更新版本發佈至 Azure App Service 時，僅會將您專案中的檔案複製到伺服器。 因此，您必須建立必要的檔案來設定伺服器環境。
 
 1. 在 Visual Studio 的 [方案總管] 中，以滑鼠右鍵按一下專案，然後選取 [新增] > [新增項目...]。在出現的對話方塊中，選取 "Azure web.config (Fast CGI)" 範本並選取 [確定]。 這會在您的專案根目錄中建立 `web.config` 檔案。
 
@@ -143,11 +143,11 @@ Visual Studio 2017 和 Visual Studio 2015 的發佈程序有所不同。 具體�
 
     a. 您自己的 Azure 訂用帳戶：依序選取 [Microsoft Azure App Service]、[選取現有] 以及 [發行]。 對話方塊隨即出現，您可以在其中選取適當的訂用帳戶和 App Service。 如果未顯示 App Service，請如下所述，使用下載的發行設定檔以取得暫時的 App Service。
 
-    ![發佈至 Azure 步驟 1, Visual Studio 2017, 現有的訂用帳戶](media/tutorials-common-publish-1a-2017.png)
+    ![發佈至 Azure 步驟 1 (Visual Studio 2017 和更新版本)，現有的訂用帳戶](media/tutorials-common-publish-1a-2017.png)
 
     b. 如果您是在 try.azurewebsites.net 上使用暫時的 App Service，或需要使用發行設定檔，請選取 **>** 控制項以尋找 [匯入設定檔]，然後依序選取該選項與 [發行]。 即會提示先前下載的 `.publishsettings` 檔案位置。
 
-    ![發佈至 Azure 步驟 1, Visual Studio 2017, 暫時的 App Service](media/tutorials-common-publish-1b-2017.png)
+    ![發佈至 Azure 步驟 1 (Visual Studio 2017 和更新版本)，暫時的 App Service](media/tutorials-common-publish-1b-2017.png)
 
 1. Visual Studio 會在 [Web 發行活動] 視窗和 [發行] 視窗中顯示發行狀態。 當發行完成之後，預設瀏覽器會開啟網站 URL。 URL 也會顯示在 [發行] 視窗中。
 

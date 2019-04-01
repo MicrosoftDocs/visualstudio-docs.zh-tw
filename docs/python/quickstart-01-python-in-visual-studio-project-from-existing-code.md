@@ -10,19 +10,19 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9e6488d21538d49a6bb33648725fb164cdd8acaf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 56660aaa920fc5813f73bfcc9c191ee0baafb113
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929943"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354920"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>快速入門：從現有程式碼建立 Python 專案
 
-[在 Visual Studio 2017 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，就可以輕鬆地將現有 Python 程式碼帶入 Visual Studio 專案。
+[在 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，就可以輕鬆將現有的 Python 程式碼帶入 Visual Studio 專案。
 
 > [!Important]
-> 此處所述的處理序不會移動或複製原始程式檔。 如果您想要使用複本，請先複製資料夾。
+> 此處所述的程序不會移動或複製原始來源檔案。 如果您想要使用複本，請先複製資料夾。
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 

@@ -1,6 +1,6 @@
 ---
 title: 以一個 .NET Framework 版本為目標
-ms.date: 02/06/2018
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -10,41 +10,49 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc8a808ba3a5da46b4dbe3be3aa00921ea869cb6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ba8bdcade321c3660e89ab6b7cf6e0b79471b393
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954084"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355388"
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>HOW TO：以一個 .NET Framework 版本為目標
+# <a name="how-to-target-a-version-of-the-net-framework"></a>作法：以一個 .NET Framework 版本為目標
 
-本文件描述如何在建立專案時以某個 .NET Framework 版本為目標，以及如何變更現有 Visual Basic、Visual C# 或 Visual F# 專案的目標版本。
+本文描述如何在建立專案時設定目標 .NET framework 版本。 其也會描述如何變更現有 Visual Basic、C# 或 F# 專案中的目標版本。
 
 > [!IMPORTANT]
 > 如需如何變更 C++ 專案目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
 
-## <a name="to-target-a-version-when-you-create-a-project"></a>若要在建立專案時設定目標版本
+## <a name="target-a-version-when-you-create-a-project"></a>在建立專案時設定目標版本
 
-當您建立專案時，可用的 .NET Framework 版本視已安裝的版本，以及在 [新增專案] 對話方塊中選取的範本而定。
+當您建立專案時，可用的 .NET Framework 版本視已安裝版本及所選專案範本而定。
 
 1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
 
-1. 在已安裝範本的清單中，選擇您要建立之專案的類型，然後輸入專案名稱。
+1. 選擇您想要建立的專案類型範本。 輸入專案名稱。
 
-1. 從 [新增專案] 對話方塊方塊底部的 [Framework] 下拉式清單中，選擇您想要作為專案目標的 .NET Framework 版本。
+1. 從對話方塊底部的 [Framework] 下拉式清單中，選擇您想要作為專案目標的 .NET Framework 版本。
 
-    架構清單只會顯示適用於您所選範本的版本。 某些專案類型 (如 .NET Core) 不需要.NET Framework。 在此情況下，系統會隱藏 [Framework] 下拉式清單。
+   架構清單只會顯示適用於您所選範本的版本。 某些專案類型 (如 .NET Core) 不需要.NET Framework。 在此情況下，系統會隱藏 [Framework] 下拉式清單。
 
-    ![[新增專案] 對話方塊中的 [Framework] 下拉式清單](media/vside-newproject-framework.png)
+   ::: moniker range="vs-2017"
 
-1. 選擇 [確定]  按鈕。
+   ![[新增專案] 對話方塊中的 [Framework] 下拉式清單](media/vside-newproject-framework.png)
 
-## <a name="to-change-the-targeted-version"></a>若要變更目標版本
+   ::: moniker-end
 
-您可以遵循下列順序變更 Visual Basic、C# 或 Visual F# 專案中的目標 .NET Framework 版本。
+   ::: moniker range=">=vs-2019"
 
-如需如何變更 C++ 專案目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
+   ![VS 2019 的 Framework 選取器](media/vs-2019/configure-new-project-framework.png)
+
+   ::: moniker-end
+
+1. 繼續[建立專案](create-new-project.md)。
+
+## <a name="change-the-targeted-version"></a>變更目標版本
+
+您可以遵循此程序變更 Visual Basic、C# 或 F# 專案中的目標 .NET Framework 版本。
 
 1. 在方案總管中開啟您所要變更專案的捷徑功能表，然後選擇 [屬性]。
 

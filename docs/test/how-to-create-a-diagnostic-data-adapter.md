@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立診斷資料配接器
+title: 作法：建立診斷資料配接器
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,14 +8,14 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914015"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416319"
 ---
-# <a name="how-to-create-a-diagnostic-data-adapter"></a>HOW TO：建立診斷資料配接器
+# <a name="how-to-create-a-diagnostic-data-adapter"></a>作法：建立診斷資料配接器
 
 若要建立「診斷資料配接器」，您可以使用 Visual Studio 建立類別庫，然後將 Visual Studio Enterprise 提供的診斷資料配接器 API 新增類別庫。 在處理測試回合期間引發的事件時，請以資料流或檔案的形式將您所需要的資訊傳送至架構所提供的 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>。 測試完成時，傳送至 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> 的資料流或檔案會儲存為測試結果的附件。 如果從這些測試結果建立 Bug，或當使用[!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]時，檔案也會連結至 Bug。
 
@@ -32,7 +32,7 @@ ms.locfileid: "55914015"
 
 以下是您在建立診斷資料配接器時可以使用之關鍵事件的部分清單。 如需診斷資料配接器事件的完整清單，請參閱抽象 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 類別。
 
-|Event - 事件|描述|
+|Event - 事件|說明|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|啟動測試回合|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|結束測試回合|
@@ -48,21 +48,9 @@ ms.locfileid: "55914015"
 
 如需診斷資料配接器專案的完整範例 (包括自訂組態編輯器)，請參閱[建立診斷資料配接器的專案範例](../test/quickstart-create-a-load-test-project.md)。
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>建立和安裝診斷資料配接器
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>建立和安裝診斷資料配接器
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>若要建立和安裝診斷資料配接器
-
-1. 建立新的類別庫。
-
-   1.  在 [檔案] 功能表上選擇 [新增]，然後指向 [新增專案]。
-
-   2.  從 [專案類型] 選取要使用的語言。
-
-   3.  從 [Visual Studio 安裝的範本] 中選取 [類別庫]。
-
-   4.  輸入診斷資料配接器的名稱。
-
-   5.  選擇 [確定] 。
+1. 建立新的**類別庫**專案。
 
 2. 新增組件 **Microsoft.VisualStudio.QualityTools.ExecutionCommon**。
 

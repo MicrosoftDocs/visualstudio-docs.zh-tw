@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5c5a3170a2fa66a68fd010b616afcd24e8661776
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8aaa1c3d4164946c43dbd40264838d84e4fd2dcb
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843100"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355124"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入門：從 Cookiecutter 範本建立專案
 
-[在 Visual Studio 2017 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，就可以從 Cookiecutter 範本輕鬆地建立新專案 (包含發行至 GitHub 的許多專案)。 [Cookiecutter (英文)](https://cookiecutter.readthedocs.io/en/latest/) 提供尋找範本、輸入範本選項和建立專案及檔案的圖形化使用者介面。 它隨附於 Visual Studio 2017，並可在舊版的 Visual Studio 中獨立安裝。
+[在 Visual Studio 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，就可以從 Cookiecutter 範本輕鬆地建立新專案，包含發佈至 GitHub 的許多專案。 [Cookiecutter (英文)](https://cookiecutter.readthedocs.io/en/latest/) 提供尋找範本、輸入範本選項和建立專案及檔案的圖形化使用者介面。 它隨附於 Visual Studio 2017 和更新版本，並可在舊版的 Visual Studio 中另行安裝。
 
 1. 在本快速入門中，會先安裝 Anaconda3 Python 散發，其中包含這裡所示的 Cookiecutter 範本的必要 Python 套件。 執行 Visual Studio 安裝程式，並選取 [修改]，再展開右側的 [Python 開發] 的選項，然後選取 [Anaconda3] (32 位元或 64 位元)。 請注意，根據您的網際網路速度，安裝可能需要一些時間，但這是安裝所需套件的最簡單方式。
 

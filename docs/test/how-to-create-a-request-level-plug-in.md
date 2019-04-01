@@ -9,14 +9,14 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f27ef33b03d6b8c7d9f84fab67a7791c9ba42735
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6aec2dfe707fb7c7cbae6a3220cedade47e0c0c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914457"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415547"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>HOW TO：建立要求層級外掛程式
+# <a name="how-to-create-a-request-level-plug-in"></a>作法：建立要求層級外掛程式
 
 「要求」是指構成 Web 效能測試的宣告式陳述式。 Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式陳述式之外找出及重複使用程式碼。 您可以建立外掛程式，並將其加入到個別的要求中，也可以加入到包含要求的 Web 效能測試中。 自訂的「要求外掛程式」提供您一種方式，可以在特別要求於 Web 效能測試中執行時呼叫程式碼。
 
@@ -32,50 +32,42 @@ ms.locfileid: "55914457"
 
 1.  在 [方案總管] 中，以滑鼠右鍵按一下方案，選取 [新增]，然後選擇 [新增專案]。
 
-     [新增專案] 對話方塊隨即顯示。
+2. 建立新的**類別庫**專案。
 
-2.  在 [已安裝的範本] 底下，選取 [Visual C#]。
-
-3.  在範本清單中，選取 [類別庫]。
-
-4.  在 [名稱] 文字方塊中鍵入類別的名稱，然後選擇 [確定]。
-
-     新的類別庫專案會加入至 [方案總管]，而且新的類別會出現在 [程式碼編輯器] 中。
-
-5.  在 [方案總管] 中，以滑鼠右鍵按一下新類別庫中的 [參考] 資料夾，然後選取 [新增參考]。
+3.  在 [方案總管] 中，以滑鼠右鍵按一下新類別庫中的 [參考] 資料夾，然後選取 [新增參考]。
 
      [新增參考] 對話方塊隨即顯示。
 
-6.  選擇 [.NET] 索引標籤並向下捲動，然後選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**，再選擇 [確定]
+4.  選擇 [.NET] 索引標籤並向下捲動，然後選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**，再選擇 [確定]
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** 的參考就會新增至 [方案總管] 中的 [參考] 資料夾。
 
-7.  在 [方案總管] 中，以滑鼠右鍵按一下 Web 效能和負載測試專案的頂端節點，此專案包含要新增 Web 效能測試要求測試外掛程式的負載測試。 選取 [新增參考]。
+5.  在 [方案總管] 中，以滑鼠右鍵按一下 Web 效能和負載測試專案的頂端節點，此專案包含要新增 Web 效能測試要求測試外掛程式的負載測試。 選取 [新增參考]。
 
      [新增參考] 對話方塊隨即顯示。
 
-8.  選擇 [專案] 索引標籤，並選取 [類別庫專案]，然後選擇 [確定]。
+6.  選擇 [專案] 索引標籤，並選取 [類別庫專案]，然後選擇 [確定]。
 
-9. 在 [程式碼編輯器] 中，撰寫外掛程式的程式碼。 首先，建立衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> 的新公用類別。
+7. 在 [程式碼編輯器] 中，撰寫外掛程式的程式碼。 首先，建立衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> 的新公用類別。
 
-10. 在 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> 這兩個事件處理常式的其中一個或同時在兩個內實作程式碼。 如需範例實作，請參閱下列的＜範例＞一節。
+8. 在 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> 這兩個事件處理常式的其中一個或同時在兩個內實作程式碼。 如需範例實作，請參閱下列的＜範例＞一節。
 
-11. 程式碼撰寫完成之後，請建置新專案。
+9. 程式碼撰寫完成之後，請建置新專案。
 
-12. 開啟您想加入要求外掛程式的 Web 效能測試。
+10. 開啟您想加入要求外掛程式的 Web 效能測試。
 
-13. 以滑鼠右鍵按一下要在其中新增要求外掛程式的要求，然後選取 [新增要求外掛程式]。
+11. 以滑鼠右鍵按一下要在其中新增要求外掛程式的要求，然後選取 [新增要求外掛程式]。
 
      [新增 Web 要求外掛程式] 對話方塊隨即顯示。
 
-14. 在 [選取外掛程式] 底下，選取新的外掛程式。
+12. 在 [選取外掛程式] 底下，選取新的外掛程式。
 
-15. 在 [所選外掛程式的屬性] 窗格中，設定外掛程式要在執行階段中使用的初始值。
+13. 在 [所選外掛程式的屬性] 窗格中，設定外掛程式要在執行階段中使用的初始值。
 
     > [!NOTE]
     > 您可以從外掛程式公開任意數目的屬性，只要讓這些屬性成為公用、可設定且屬於基底型別 (例如整數、布林或字串) 的屬性即可。 您之後也可以使用 [屬性] 視窗來變更 Web 效能測試外掛程式屬性。
 
-16. 選擇 [確定] 。
+14. 選擇 [確定] 。
 
      外掛程式就會新增至 [要求外掛程式] 資料夾，這是 HTTP 要求的子資料夾。
 
@@ -86,8 +78,8 @@ ms.locfileid: "55914457"
     >
     > 如果您對任何外掛程式進行程式碼變更並建立新的 DLL 版本 **(Version=0.0.0.0)**，但是外掛程式仍然參考原始的外掛程式版本，就會導致此錯誤發生。 若要更正此問題，請依照下列步驟執行：
     >
-    > 1.  在 Web 效能和負載測試專案中，您將會在參考中看見警告。 移除並重新加入外掛程式 DLL 的參考。
-    > 2.  從測試或適當的位置中移除外掛程式，然後再重新加入。
+    > 1. 在 Web 效能和負載測試專案中，您將會在參考中看見警告。 移除並重新加入外掛程式 DLL 的參考。
+    > 2. 從測試或適當的位置中移除外掛程式，然後再重新加入。
 
 ## <a name="example"></a>範例
 

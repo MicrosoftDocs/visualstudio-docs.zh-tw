@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0e7b4041097fe0170d51692369c0d7f70783cca0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145222"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416262"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 
@@ -62,9 +62,13 @@ ms.locfileid: "58145222"
 
 1. 建立自動程式碼 UI 測試專案
 
-   自動程式化 UI 測試必須包含在自動程式化 UI 測試專案中。 如果您還沒有自動程式化 UI 測試專案，請予以建立。 選擇 [檔案] > [新增] > [專案] 以開啟 [新增專案] 對話方塊。 在左邊的 [類別] 窗格中，依序展開 [已安裝] > [Visual Basic] 或者 [Visual C#] > [測試]。 選取 [自動程式化 UI 測試專案] 範本，然後選擇 [確定]。
+   自動程式化 UI 測試必須包含在自動程式化 UI 測試專案中。 如果您還沒有自動程式化 UI 測試專案，請予以建立。 選擇 [檔案] > [新增] > [專案]。 搜尋並選取 [自動程式化 UI 測試專案] 專案範本。
+
+   ::: moniker range="vs-2017"
 
    ![[新增專案] 對話方塊中的 [自動程式化 UI 測試專案] 範本](media/coded-ui-test-project-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > 如果您沒有看到 [自動程式化 UI 測試專案] 範本，則需要[安裝自動程式化 UI 測試元件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。

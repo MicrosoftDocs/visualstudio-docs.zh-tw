@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 055e7d106611d23254f317bdbe29a1ac1e3d9ec9
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953858"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476003"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教學課程：在同一個偵錯工作階段中進行 C# 和 C++ 偵錯
 
@@ -52,7 +52,18 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 
 **若要建立 DLL 專案檔：**
 
-1. 在 Visual Studio 中，選取 [檔案] > [新增] > [專案]。
+1. 開啟 Visual Studio 並建立專案。
+
+    ::: moniker range=">=vs-2019"
+    鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **空白專案**，選擇 [範本]，然後為 C++ 選擇 [建立新的空白專案專案]。 在出現的對話方塊中選擇 [建立]。 然後，鍵入像 **Mixed_Mode_Debugging** 的名稱，並按一下 [建立]。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新專案] 對話方塊的左窗格中，於 [Visual C++] 下，選擇 [其他]，然後在中間的窗格中選擇 [空白專案]。 然後，鍵入像 **Mixed_Mode_Debugging** 的名稱，並按一下 [確定]。
+    ::: moniker-end
+
+    如果您未看到 [空白專案] 專案範本，請前往 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 Visual Studio 安裝程式即會啟動。 選擇 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
+
+    Visual Studio 會建立專案。
 
 1. 在 [新增專案] 對話方塊的 [Visual C++] 下，選取 [其他]，然後選取中間窗格內的 [空白專案]。
 
@@ -71,6 +82,7 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
     ```cpp
     #include "Mixed_Mode.h"
     ```
+
 1. 在 [方案總管] 中，選取 [標頭檔]，然後選取 [專案] > [新增項目]。 或者，以滑鼠右鍵按一下 [標頭檔]，然後選取 [新增] > [新增項目]。
 
 1. 在 [新增項目] 對話方塊中，選取 [標頭檔 (.h)]。 在 [名稱] 欄位中，鍵入 **Mixed_Mode.h**，然後選取 [新增]。
@@ -117,18 +129,23 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 
 ## <a name="create-a-simple-managed-app-to-call-the-dll"></a>建立呼叫 DLL 的簡單受控應用程式
 
-1. 在 Visual Studio 中，選擇 [檔案] > [新增] > [專案]。
+1. 開啟 Visual Studio 並建立新專案。
 
-   > [!NOTE]
-   > 雖然您也可以將新的受控專案新增至現有 C++ 方案，但建立新的方案可支援更多偵錯案例。
+    ::: moniker range=">=vs-2019"
+    鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入**主控台**，選擇 [範本]，然後為 C# 選擇 [建立新的主控台應用程式 (.NET Framework) 專案]。 在出現的對話方塊中選擇 [建立]。
 
-1. 在 [新增專案] 對話方塊中選取 [Visual C#]，然後在中間窗格內：
+    然後，鍵入像 **Mixed_Mode_Calling_App** 的名稱，並按一下 [建立]。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新專案] 對話方塊的左窗格中，於 [Visual C#] 下選擇 [Windows Desktop]，然後在中間的窗格中選擇 [主控台應用程式 (.NET Framework)] 或 [主控台應用程式 (.NET Core)]。
 
-   - 針對 .NET Framework 應用程式，請選取 [主控台應用程式 (.NET Framework)]。
+    然後，鍵入像 **Mixed_Mode_Calling_App** 的名稱，並按一下 [確定]。
+    ::: moniker-end
 
-   - 針對 .NET Core 應用程式，請選取 [主控台應用程式 (.NET Core)]。
+    如果您未看到 [主控台應用程式] 專案範本，請前往 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 [.NET 桌面開發] 工作負載，然後選擇 [修改]。
 
-1. 在 [名稱] 欄位中，鍵入 **Mixed_Mode_Calling_App**，然後選取 [確定]。
+    > [!NOTE]
+    > 雖然您也可以將新的受控專案新增至現有 C++ 方案，但建立新的方案可支援更多偵錯案例。
 
    Visual Studio 會建立空白專案，並在 [方案總管] 中顯示。
 
