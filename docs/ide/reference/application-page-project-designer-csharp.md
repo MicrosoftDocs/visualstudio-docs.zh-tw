@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba118f9b0b08b5e092fa85ccc3940cd41a7ff9c8
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 18527e9b45726dbd76f1e76f5d63976278800f6f
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222528"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355337"
 ---
 # <a name="application-page-project-designer-c"></a>專案設計工具，應用程式頁 (C#)
 
@@ -52,7 +52,7 @@ ms.locfileid: "57222528"
 
 指定應用程式作為目標的 .NET Framework 版本。 此選項可能會有不同的值，而這些值取決於電腦上安裝的 .NET Framework 版本。
 
-值預設會與您在 [新增專案] 對話方塊中選取的目標架構相同。
+根據預設，值會與您建立專案時選取的目標 Framework 相同。
 
 > [!NOTE]
 > 第一次開啟該對話方塊時，會自動設定[必要條件對話方塊](../../ide/reference/prerequisites-dialog-box.md)中所列的必要條件套件。 如果您接著變更專案的目標架構，就必須手動選取必要條件以符合新的目標架構。

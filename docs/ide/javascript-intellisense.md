@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cb8540fd53a66d67907de47f6332a05c6240f09
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868894"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324392"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -53,6 +53,7 @@ TypeScript 使用數個來源建立這項資訊：
 - [自動擷取型別定義](#Auto)
 
 <a name="TypeInference"></a>
+
 ### <a name="intellisense-based-on-type-inference"></a>以型別推斷為基礎的 IntelliSense
 
 在 JavaScript 中，大部分的時間不提供任何明確的類型資訊。 幸運的是，只要指定周圍的程式碼內容，通常很容易就能找出類型。
@@ -90,6 +91,7 @@ exports.Foo = Foo;
 ```
 
 <a name="JsDoc"></a>
+
 ### <a name="intellisense-based-on-jsdoc"></a>以 JSDoc 為基礎的 IntelliSense
 
 遇到不提供所需類型資訊 (或支援文件) 的型別推斷，可能會透過 JSDoc 註解明確提供類型資訊。  例如，若要為部分宣告的物件提供特定的類型，您可以使用 `@type` 標記，如下所示︰
@@ -123,7 +125,7 @@ function Foo(param1) {
 
 以下簡單示範 TypeScript 定義檔案 (透過介面) 向同一專案中的 JavaScript 檔案 (使用 `JsDoc` 標記) 提供此類的類型資訊。
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
+![TypeScript 定義檔](https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png)
 
 <a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>自動擷取型別定義

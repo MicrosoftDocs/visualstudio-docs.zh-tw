@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c92ae058caa140f036ac8828899620bcc8d426ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943034"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355626"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>逐步解說：以 [使用時產生] 功能進行測試優先開發
 
@@ -34,15 +34,19 @@ ms.locfileid: "55943034"
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>建立 Windows 類別庫專案和測試專案
 
-1. 在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中建立新的 **Windows 類別庫**專案。 將其命名為 `GFUDemo_VB` 或 `GFUDemo_CS`，視所用語言而定。
+1. 在 C# 或 Visual Basic 中，建立新的 **Windows 類別庫**專案。 將其命名為 `GFUDemo_VB` 或 `GFUDemo_CS`，視所用語言而定。
 
-2. 在**方案總管**中，以滑鼠右鍵按一下上方的解決方案，選擇 [新增]，然後選擇 [新增專案]。 在 [新增專案] 對話方塊的左窗格中，選擇 [測試]。
+2. 在 [方案總管] 中，以滑鼠右鍵按一下上方的方案，選擇 [新增] > [新增專案]。
 
-3. 在中間的窗格中，選擇 [單元測試專案]，並接受預設名稱 `UnitTestProject1`。 下圖顯示當它出現在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]時的對話方塊。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，對話方塊看起來很類似。
+3. 建立新的**單元測試專案 (.NET Framework)** 專案。
 
-    ![[新增測試專案] 對話方塊](../ide/media/newproject_test.png)
+   ::: moniker range="vs-2017"
 
-4. 選擇 [確定] 關閉 [新增專案] 對話方塊。
+   下圖顯示 C# 範本的 [新增專案] 對話方塊。
+
+   ![單元測試專案範本](../ide/media/newproject_test.png)
+
+   ::: moniker-end
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>在類別庫專案中新增參考
 

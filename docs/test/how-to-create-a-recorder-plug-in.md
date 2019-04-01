@@ -8,14 +8,14 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbbad4e48aaba41672a1f795e8b3d7851f7bd5e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926251"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415897"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>HOW TO：建立錄製器外掛程式
+# <a name="how-to-create-a-recorder-plug-in"></a>作法：建立錄製器外掛程式
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 讓您修改錄製的 Web 效能測試。 修改會在您選擇 [Web 效能測試錄製器] 工具列中的 [停止] 之後，並且在 [Web 效能測試編輯器] 中儲存及呈現測試之前發生。
 
@@ -35,34 +35,24 @@ ms.locfileid: "55926251"
 
 1.  開啟方案，其中包含的 Web 效能和負載測試專案有您要為其建立錄製器外掛程式的 Web 效能測試。
 
-2.  在 [方案總管] 中，以滑鼠右鍵按一下方案，選取 [新增]，然後選擇 [新增專案]。
+2.  將新的**類別庫**專案新增至方案。
 
-     [新增專案] 對話方塊隨即顯示。
-
-3.  在 [已安裝的範本] 底下，選取 [Visual C#]。
-
-4.  在範本清單中，選取 [類別庫]。
-
-5.  在 [名稱] 文字方塊中，鍵入錄製器外掛程式的名稱。
-
-     類別庫會加入至 [方案總管]，而且新的類別會在 [程式碼編輯器] 中開啟。
-
-6.  在 [方案總管] 中，以滑鼠右鍵按一下新類別庫專案資料夾中的 [參考] 資料夾，然後選取 [新增參考]。
+3.  在 [方案總管] 中，以滑鼠右鍵按一下新類別庫專案資料夾中的 [參考] 資料夾，然後選取 [新增參考]。
 
     > [!TIP]
     > 新類別庫專案資料夾的範例是 **RecorderPlugins**。
 
      [新增參考] 對話方塊隨即顯示。
 
-7.  選取 [.NET] 索引標籤。
+4.  選取 [.NET] 索引標籤。
 
-8.  向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**，然後選擇 [確定]。
+5.  向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**，然後選擇 [確定]。
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** 就會新增至 [方案總管] 中的 [參考] 資料夾。
 
-9. 撰寫錄製器外掛程式的程式碼。 首先，建立衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 的新公用類別。
+6. 撰寫錄製器外掛程式的程式碼。 首先，建立衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 的新公用類別。
 
-10. 覆寫 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> 方法。
+7. 覆寫 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> 方法。
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -79,11 +69,11 @@ ms.locfileid: "55926251"
     > [!NOTE]
     > 如果修改 Web 效能測試，同時也需要將 <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> 屬性設定為 true：`e.RecordedWebTestModified = true;`
 
-11. 依據您要錄製器外掛程式在 Web 錄製發生之後執行的動作，加入其他程式碼。 例如，您可以加入程式碼以處理自訂相互關聯，如下列範例所示。 此外，也可以建立錄製器外掛程式，以用於將註解轉換為異動，或將驗證規則加入至 Web 效能測試等作業。
+8. 依據您要錄製器外掛程式在 Web 錄製發生之後執行的動作，加入其他程式碼。 例如，您可以加入程式碼以處理自訂相互關聯，如下列範例所示。 此外，也可以建立錄製器外掛程式，以用於將註解轉換為異動，或將驗證規則加入至 Web 效能測試等作業。
 
-12. 選擇 [建置] 功能表上的 [建置 \<類別庫專案名稱>]。
+9. 選擇 [建置] 功能表上的 [建置 \<類別庫專案名稱>]。
 
-13. 接下來，您必須部署錄製器外掛程式，以便向 Visual Studio 註冊。
+接下來，請部署錄製器外掛程式，以便向 Visual Studio 註冊。
 
 ### <a name="deploy-the-recorder-plug-in"></a>部署錄製器外掛程式
 
@@ -96,7 +86,7 @@ ms.locfileid: "55926251"
 > [!WARNING]
 > 將錄製器外掛程式複製到這兩個位置之一後，您必須重新啟動 Visual Studio，以便註冊錄製器外掛程式。
 
-### <a name="to-execute-the-recorder-plug-in"></a>若要執行錄製器外掛程式
+### <a name="execute-the-recorder-plug-in"></a>執行錄製器外掛程式
 
 1.  建立新的 Web 效能測試。
 
@@ -123,9 +113,7 @@ ms.locfileid: "55926251"
 > [!NOTE]
 > 範例程式碼完整清單位在本主題底部。
 
-**檢閱範例程式碼**
-
-## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>逐一查看結果，以尋找有 ReportSession 的第一頁
+### <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>逐一查看結果，以尋找有 ReportSession 的第一頁
 
 程式碼範例的這個部分會逐一查看每個錄製的物件並搜尋 ReportSession 的回應主體。
 
@@ -142,7 +130,7 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
              {
 ```
 
-## <a name="add-an-extraction-rule"></a>加入擷取規則
+### <a name="add-an-extraction-rule"></a>加入擷取規則
 
 現在已找到回應，您需要加入擷取規則。 程式碼範例的這個部分會使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference> 類別建立擷取規則，然後在 Web 效能測試中尋找要加入擷取規則的正確要求。 每個結果物件中都會加入 DeclarativeWebTestItemId 新屬性，程式碼中使用這個屬性從 Web 效能測試取得正確要求。
 
@@ -166,7 +154,7 @@ ExtractionRuleReference ruleReference = new ExtractionRuleReference();
      }
 ```
 
-## <a name="replace-query-string-parameters"></a>取代查詢字串參數
+### <a name="replace-query-string-parameters"></a>取代查詢字串參數
 
 現在程式碼尋找名稱為 ReportSession 的所有查詢字串參數，並將值變更為 {{SessionId}}，如程式碼範例的這個部分所示：
 

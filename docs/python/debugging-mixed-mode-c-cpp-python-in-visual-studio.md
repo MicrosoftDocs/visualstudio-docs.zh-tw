@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8bba4541f27a64f553c985f50dbe535b82440cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc7148e9ba2ad9882f42d3c2acdb067329ec4ee5
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916826"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355230"
 ---
 # <a name="debug-python-and-c-together"></a>同時對 Python 和 C++ 進行偵錯
 
@@ -57,13 +57,13 @@ Visual Studio 有針對 Python 及原生 C/C++ 提供整合式的同時混合模
 
     除了選取 (或不選取) [原生] 以外，您還可以選取其他程式碼類型。 例如，如果某個受控應用程式裝載 CPython，而 CPython 又使用原生延伸模組，且您想對這三者進行偵錯，則可以同時核取 [Python]、[原生] 及 [受控] 以提供整合的偵錯體驗，包括合併的呼叫堆疊，以及在這三個執行階段之間逐步執行。
 
-1. 當您首次在混合模式開始偵錯時，可能會看到 [需要 Python 符號] 對話方塊 (請參閱[混合模式偵錯的符號](debugging-symbols-for-mixed-mode-c-cpp-python.md))。 針對任何指定的 Python 環境，符號只需安裝一次。 如果您透過 Visual Studio 2017 安裝程式來安裝 Python 支援，就會自動包含符號。
+1. 當您首次在混合模式開始偵錯時，可能會看到 [需要 Python 符號] 對話方塊 (請參閱[混合模式偵錯的符號](debugging-symbols-for-mixed-mode-c-cpp-python.md))。 針對任何指定的 Python 環境，符號只需安裝一次。 如果您透過 Visual Studio 安裝程式 (Visual Studio 2017 和更新版本) 安裝 Python 支援，就會自動包含符號。
 
 1. 若要在偵錯時提供標準 Python 本身的原始程式碼，請瀏覽 [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/)，下載適用於您版本的封存，並將它解壓縮至資料夾。 每當提示您時，請將 Visual Studio 指向該資料夾中的特定檔案。
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>在 C/C++ 專案中啟用混合模式偵錯
 
-Visual Studio 2017 (15.5 版和更新版本) 支援從 C/C++ 專案進行混合模式偵錯 (例如，[以 python.org 上所述方式將 Python 內嵌至另一個應用程式](https://docs.python.org/3/extending/embedding.html)時)。 若要啟用混合模式偵錯，請設定 C/C++ 專案以啟動 [Python/原生偵錯工具]：
+Visual Studio (2017 15.5 版和更新版本) 支援從 C/C++ 專案進行混合模式偵錯 (例如，[以 python.org 所述方式將 Python 內嵌至另一個應用程式](https://docs.python.org/3/extending/embedding.html)時)。 若要啟用混合模式偵錯，請設定 C/C++ 專案以啟動 [Python/原生偵錯工具]：
 
 1. 以滑鼠右鍵按一下 [方案總管] 中的 C/C++ 專案，然後選取 [屬性]。
 1. 選取 [偵錯] 索引標籤，從 [要啟動的偵錯工具] 中選取 [Python/原生偵錯工具]，然後選取 [確定]。

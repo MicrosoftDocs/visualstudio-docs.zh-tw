@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d2cb1e2a05499c01cc1441db0a289cfc95b8e243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cae9138c881115651ebd9e862e912ff10da20d2f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955059"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416397"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>逐步解說：建立、編輯及維護自動程式化 UI 測試
 
@@ -22,41 +22,27 @@ ms.locfileid: "55955059"
 
 ## <a name="create-a-wpf-app"></a>建立 WPF 應用程式
 
-1.  在 [檔案] 功能表上，指向 [新增]，然後選取 [專案]。
+1. 建立新 **WPF 應用程式 (.NET Framework)** 專案，並命名為 **SimpleWPFApp**。
 
-     [ **新增專案** ] 對話方塊隨即出現。
+     **WPF 設計工具**隨即開啟，並顯示專案的MainWindow。
 
-2.  在 [已安裝] 窗格中，展開 [Visual C#]，然後選取 [Windows 桌面]。
+2. 如果目前未開啟工具箱，請開啟它。 選擇 [檢視] 功能表，然後選擇 [工具箱]。
 
-3.  在中間窗格上方，檢查 [目標 Framework] 下拉式清單是否設定為 [.NET Framework 4.5]。
+3. 在 [所有 WPF 控制項] 區段底下，將 [Button]、[CheckBox] 和 [ProgressBar] 控制項拖曳至設計介面中的 [MainWindow]。
 
-4.  在中間窗格中選取 [WPF 應用程式] 範本。
+4. 選取 [Button] 控制項。 在 [屬性] 視窗中，將 [Name] 屬性的值從 \<No Name> 變更為 button1。 然後將 [Content] 屬性的值從 Button 變更為 Start。
 
-5.  在 [名稱] 文字方塊中輸入 **SimpleWPFApp**。
+5. 選取 [ProgressBar] 控制項。 在 [屬性] 視窗中，將 [Name] 屬性的值從 \<No Name> 變更為 progressBar1。 然後將 [Maximum] 屬性的值從 **100** 變更為 **10000**。
 
-6.  指定要儲存專案的資料夾。 在 [位置] 文字方塊中輸入資料夾的名稱。
-
-7.  選擇 [確定] 。
-
-     [WPF Designer for Visual Studio] 隨即開啟，並顯示專案的 MainWindow。
-
-8.  如果目前未開啟工具箱，請開啟它。 選擇 [檢視] 功能表，然後選擇 [工具箱]。
-
-9. 在 [所有 WPF 控制項] 區段底下，將 [Button]、[CheckBox] 和 [ProgressBar] 控制項拖曳至設計介面中的 [MainWindow]。
-
-10. 選取 [Button] 控制項。 在 [屬性] 視窗中，將 [Name] 屬性的值從 \<No Name> 變更為 button1。 然後將 [Content] 屬性的值從 Button 變更為 Start。
-
-11. 選取 [ProgressBar] 控制項。 在 [屬性] 視窗中，將 [Name] 屬性的值從 \<No Name> 變更為 progressBar1。 然後將 [Maximum] 屬性的值從 **100** 變更為 **10000**。
-
-12. 選取 [Checkbox] 控制項。 在 [屬性] 視窗中，將 [Name] 屬性的值從 \<No Name> 變更為 checkBox1，然後清除 [IsEnabled] 屬性。
+6. 選取 [Checkbox] 控制項。 在 [屬性] 視窗中，將 [Name] 屬性的值從 \<No Name> 變更為 checkBox1，然後清除 [IsEnabled] 屬性。
 
      ![簡單 WPF 應用程式](../test/media/codedui_wpfapp.png)
 
-13. 按兩下按鈕控制項以加入 Click 事件處理常式。
+7. 按兩下按鈕控制項以加入 Click 事件處理常式。
 
      *MainWindow.xmal.cs* 會顯示在 [程式碼編輯器] 中，而且游標位於新的 button1_Click 方法。
 
-14. 在 MainWindow 類別的頂端，加入一個委派。 這個委派將用於進度列。 若要加入委派，請加入下列程式碼：
+8. 在 MainWindow 類別的頂端，加入一個委派。 這個委派將用於進度列。 若要加入委派，請加入下列程式碼：
 
     ```csharp
     public partial class MainWindow : Window
@@ -70,7 +56,7 @@ ms.locfileid: "55955059"
         }
     ```
 
-15. 在 button1_Click 方法中，加入下列程式碼：
+9. 在 button1_Click 方法中，加入下列程式碼：
 
     ```csharp
     private void button1_Click(object sender, RoutedEventArgs e)
@@ -95,7 +81,7 @@ ms.locfileid: "55955059"
     }
     ```
 
-16. 儲存檔案。
+10. 儲存檔案。
 
 ### <a name="run-the-wpf-app"></a>執行 WPF 應用程式
 
@@ -120,22 +106,14 @@ ms.locfileid: "55955059"
 
 ## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>為 SimpleWPFApp 建立自動程式化 UI 測試
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇 [新增]，然後選取 [新增專案]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下方案，然後選擇 [新增] > [新增專案]。
 
-     [ **加入新的專案** ] 對話方塊隨即出現。
-
-1. 在 [已安裝] 窗格中，展開 [Visual C#]，然後選取 [測試]。
-
-1. 在中間窗格中選取 [自動程式化 UI 測試專案] 範本。
+2. 搜尋並選取 [自動程式化 UI 測試專案] 專案範本，且繼續執行步驟直到專案建立完成。
 
    > [!NOTE]
    > 如果您沒有看到 [自動程式化 UI 測試專案] 範本，則需要[安裝自動程式化 UI 測試元件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
 
-1. 選擇 [確定] 。
-
-     名為 **CodedUITestProject1** 的新自動程式化 UI 測試專案會新增至您的方案。
-
-     [產生自動程式化 UI 測試的程式碼] 對話方塊隨即出現。
+     名為 **CodedUITestProject1** 的新自動程式化 UI 測試專案會新增至方案，且 [產生自動程式化 UI 測試的程式碼] 對話方塊會隨即出現。
 
 1. 選取 [錄製動作、編輯 UI 對應或加入判斷提示] 選項，然後選擇 [確定]。
 

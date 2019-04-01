@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428657"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325288"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Visual Studio 整合式開發環境 (IDE) 初探
 
@@ -27,7 +27,7 @@ ms.locfileid: "57428657"
 
 啟動 Visual Studio 之後，首先會看到的畫面是啟動視窗。 啟動視窗旨在協助您更快速「開始撰寫程式碼」。 其選項可讓您關閉或簽出代碼、開啟現有專案或方案、建立新專案、或僅開啟包含某些程式碼檔案的資料夾。
 
-[![](media/vs-2019/start-window.png "Visual Studio 2019 中的啟動視窗")](media/vs-2019/start-window.png)
+[![](media/vs-2019/start-window.png "Visual Studio 2019 中的 [開始] 視窗")](media/vs-2019/start-window.png)
 
 如果這是您第一次使用 Visual Studio，則最近使用的專案清單會是空白。
 
@@ -57,13 +57,13 @@ ms.locfileid: "57428657"
 
 ::: moniker range=">=vs-2019"
 
-1. 在 [啟動視窗] 上選取 [建立新專案]，並在搜尋方塊中鍵入 **javascript**，從專案類型清單中篩選出名稱或語言類型中包含 "javascript" 的專案類型。
+1. 在 [開始] 視窗中，選取 [建立新專案]，並在 [搜尋] 方塊中鍵入 **javascript**，從專案類型清單中篩選出名稱或語言類型中包含 "javascript" 的專案類型。
 
    Visual Studio 提供各種專案範本，協助您開始快速撰寫程式碼。 (或者，如果您是 TypeScript 開發人員，請放心以該語言建立專案。 我們稍後要介紹的 UI 在所有程式設計語言中都很類似)。
 
    ![在 Visual Studio 啟動視窗上搜尋專案範本](media/vs-2019/create-new-project.png)
 
-1. 選擇 [空白 Node.js Web 應用程式] 專案範本並按一下 [下一步]。 
+1. 選擇 [空白 Node.js Web 應用程式] 專案範本並按一下 [下一步]。
 
 1. 在出現的 [設定您的新專案] 對話方塊中，接受預設專案名稱，並選擇 [建立]。
 

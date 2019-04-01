@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b55b2e1a34afa78ac1e122081eca261f3dcdabc8
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195202"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355772"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python 環境視窗索引標籤參考
 
@@ -24,7 +24,7 @@ ms.locfileid: "58195202"
 - 選取 [檢視] > **[其他視窗]** > **[Python 環境]** 功能表命令。
 - 在 [方案總管] 中，以滑鼠右鍵按一下專案的 [Python 環境] 節點，然後選取 [檢視所有 Python 環境]。
 
-如果您將 [Python 環境] 視窗展開至足夠寬度，便會以索引標籤的形式來顯示這些選項，以方便您使用。 為了清楚起見，此文章中的索引標籤會以展開檢視來顯示。
+如果您將 [Python 環境] 視窗展開至足夠寬度，便會以索引標籤的形式來顯示這些選項，以方便您使用。 為了清楚起見，本文章中的索引標籤會以展開檢視來顯示。
 
 ::: moniker range="vs-2017"
 ![[Python Environments (Python 環境)] 視窗展開檢視](media/environments/environments-expanded-view.png)
@@ -60,7 +60,7 @@ ms.locfileid: "58195202"
 
 啟動指令碼包含**互動式**視窗所載入並自動執行的程式碼，包括匯入、函式定義，以及文字形式的任何其他項目。 這類指令碼是使用兩種方式進行參考：
 
-1. 當您安裝環境時，Visual Studio 會建立資料夾 *Documents\Visual Studio 2017\Python Scripts\\\<environment>*，其中的 &lt;environment&gt; 會符合環境的名稱。 您可以使用 [探索互動式指令碼] 命令，輕鬆地巡覽至環境特定資料夾。 當您啟動該環境的**互動式**視窗時，只要依字母順序在這裡找到 *.py* 檔案，就會載入並執行互動式視窗。
+1. 當您安裝環境時，Visual Studio 會建立資料夾 *Documents\Visual Studio <version>\Python Scripts\\\<environment>*，其中 &lt;version&gt; 是 Visual Studio 版本 (例如 2017 或 2019)，而 &lt;environment&gt; 會符合環境的名稱。 您可以使用 [探索互動式指令碼] 命令，輕鬆地巡覽至環境特定資料夾。 當您啟動該環境的**互動式**視窗時，只要依字母順序在這裡找到 *.py* 檔案，就會載入並執行互動式視窗。
 
 1. [工具] > [選項] > **[Python]** > **[互動式視窗]** 索引標籤中的 [指令碼] 控制項 (請參閱[互動式視窗選項](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) 是用來指定在所有環境中載入和執行之啟動指令碼的其他資料夾。 不過，此功能目前無法使用。
 
@@ -156,8 +156,8 @@ ms.locfileid: "58195202"
 
 ![Python 環境的 [IntelliSense] 索引標籤](media/environments/environments-intellisense-tab.png)
 
-- 在 **Visual Studio 2017 15.5 版**及較舊版本中，IntelliSense 完成取決於已針對該程式庫進行編譯的資料庫。 安裝程式庫時，系統會在背景建置資料庫，但這可能需要花費一些時間，且在您開始撰寫程式碼時可能尚未完成。
-- **Visual Studio 2017 15.6 版**及更新版本預設會使用較快速的方法，來在不仰賴資料庫的情況下提供完成。 因此，索引標籤會標示為 [IntelliSense [資料庫已停用]]。 您可以藉由清除 [工具] > [選項] > [Python] > [實驗] > [Use new style IntelliSense for environments] \(在環境中使用新樣式 IntelliSense\) 選項來啟用資料庫。
+- 在 Visual Studio 2017 15.5 版及較舊版本中，IntelliSense 完成取決於已針對該程式庫進行編譯的資料庫。 安裝程式庫時，系統會在背景建置資料庫，但這可能需要花費一些時間，且在您開始撰寫程式碼時可能尚未完成。
+- Visual Studio 2017 15.6 版及更新版本預設會使用較快速的方法，以在不仰賴資料庫的情況下提供完成。 因此，索引標籤會標示為 [IntelliSense [資料庫已停用]]。 您可以藉由清除 [工具] > [選項] > [Python] > [實驗] > [Use new style IntelliSense for environments] \(在環境中使用新樣式 IntelliSense\) 選項來啟用資料庫。
 
 當 Visual Studio 偵測到新環境 (或您新增環境) 時，會透過分析程式庫原始程式檔來自動開始編譯資料庫。 視所安裝的項目而定，這個程序會花費一分鐘到一小時或數小時不等的時間。 (例如，Anaconda 隨附許多程式庫，因此就需要一些時間來編譯資料庫)。完成之後，您會獲得詳細的 IntelliSense，而在您安裝其他程式庫之前，就不需要再次重新整理資料庫 (使用 [Refresh DB] (重新整理資料庫) 按鈕)。
 

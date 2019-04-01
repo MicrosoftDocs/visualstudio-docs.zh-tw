@@ -1,8 +1,10 @@
 ---
 title: 以 C# 建立 ASP.NET Core Web 應用程式
 description: 了解如何在 Visual Studio 中使用 C# 與 ASP.NET Core 逐步建立簡單的 Hello World Web 應用程式。
-ms.date: 02/01/2019
 ms.custom: mvc,seodec18
+ms.date: 03/23/2019
+ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
@@ -12,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 60f7c7bd7d0a3073f75d4ece7012601ded8eb059
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 247906426dcf57463a36ea85ce781b39aae2ffba
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957778"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475847"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
@@ -27,7 +29,17 @@ ms.locfileid: "55957778"
 
 ### <a name="install-visual-studio"></a>安裝 Visual Studio
 
+::: moniker range="vs-2017"
+
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)頁面免費進行安裝。
+
+::: moniker-end
 
 ### <a name="choose-your-theme-optional"></a>選擇您的佈景主題 (選擇性)
 
@@ -36,6 +48,8 @@ ms.locfileid: "55957778"
 ## <a name="create-a-project"></a>建立專案
 
 首先，您將建立 ASP.NET Core Web 應用程式專案。 此專案類型隨附建立 Web 應用程式所需的範本檔案，甚至是在您新增任何項目之前便已完備！
+
+::: moniker range="vs-2017"
 
 1. 開啟 Visual Studio 2017。
 
@@ -61,9 +75,46 @@ ms.locfileid: "55957778"
    ![新增 ASP.NET Core Web 應用程式對話方塊](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > 如果您沒有看到 **ASP.NET Core 2.1** 或更新版本，請確定您執行最新版本的 Visual Studio。 如需如何更新安裝的詳細資訊，請參閱[將 Visual Studio 2017 更新至最新版本](../install/update-visual-studio.md)頁面。
+   > 如果您沒有看到 **ASP.NET Core 2.1** 或更新版本，請確定您執行最新版本的 Visual Studio。 如需如何更新安裝的詳細資訊，請參閱[將 Visual Studio 更新至最新版本](../install/update-visual-studio.md)頁面。
 
 Visual Studio 隨即開啟您的專案檔。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 在開始視窗中，選擇 [建立新專案]。
+
+   ![檢視 [建立新專案] 視窗](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. 在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 *ASP.NET*。 接下來，從語言清單中選擇 **C#**，然後從平台清單中選擇 **Windows**。 
+
+   在您套用語言和平台的篩選條件之後，請選擇 [ASP.NET Core Web 應用程式] 範本，然後選擇 [下一步]。
+
+   ![為 ASP.NET Core Web 應用程式選擇 C# 範本](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+
+   > [!NOTE]
+   > 如果您看不見 [ASP.NET Core Web 應用程式] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   >
+   > ![[建立新專案] 視窗中 [找不到您要找的資料嗎?] 訊息的 [安裝更多的工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > 然後，在 Visual Studio 安裝程式中選擇 **ASP.NET 與網頁程式開發**工作負載。
+   >
+   > ![Visual Studio 安裝程式中的 ASP.NET Core Web 應用程式工作負載](../get-started/media/aspnet-core-web-dev-workload.png)
+   >
+   > 接下來，選擇 Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作；如果出現的話，就請您這麼做。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
+
+1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *HelloWorld*。 接著，選擇 [建立]。
+
+   ![在 [設定您的新專案] 視窗中，以 'HelloWorld' 命名您的專案](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
+
+1. 在 [建立新的 ASP.NET Core Web 應用程式] 視窗中，確認上方的下拉式功能表出現 **ASP.NET Core 2.1** 或更新版本。 然後，請選擇包含範例 Razor 頁面的 **Web 應用程式**。 接著，選擇 [建立]。
+
+   ![[建立新的 ASP.NET Core Web 應用程式] 視窗](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+
+   Visual Studio 會隨即開啟您的新專案。
+
+::: moniker-end
 
 ## <a name="create-and-run-the-app"></a>建立並執行應用程式
 

@@ -3,8 +3,9 @@ title: 教學課程：開始使用 C# 及 ASP.NET Core
 titleSuffix: ''
 description: 了解如何在 Visual Studio 中使用 C# 逐步建立 ASP.NET Core Web 應用程式。
 ms.custom: seodec18, get-started
-ms.date: 10/29/2018
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -15,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 7f123646ce3b702d6e76e92009eba2ef12da7626
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cb45386795077289e14e19ec9ad7e0071521db22
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928994"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475899"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教學課程：Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
 
@@ -30,11 +31,21 @@ ms.locfileid: "55928994"
 
 ### <a name="install-visual-studio"></a>安裝 Visual Studio
 
+::: moniker range="vs-2017"
+
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)頁面免費進行安裝。
+
+::: moniker-end
 
 ### <a name="update-visual-studio"></a>更新 Visual Studio 2017
 
-如果您已經安裝 Visual Studio，請確定您執行的是最新版本。 如需如何更新安裝的詳細資訊，請參閱[將 Visual Studio 2017 更新至最新版本](../../install/update-visual-studio.md)頁面。
+如果您已經安裝 Visual Studio，請確定您執行的是最新版本。 如需如何更新安裝的詳細資訊，請參閱[將 Visual Studio 更新至最新版本](../../install/update-visual-studio.md)頁面。
 
 ### <a name="choose-your-theme-optional"></a>選擇您的佈景主題 (選擇性)
 
@@ -43,6 +54,8 @@ ms.locfileid: "55928994"
 ## <a name="create-a-project"></a>建立專案
 
 首先，您會建立 ASP.NET Core 專案。 在您新增任何內容之前，專案類型已包含完整功能之網站所需要的所有範本檔案！
+
+::: moniker range="vs-2017"
 
 1. 開啟 Visual Studio 2017。
 
@@ -85,7 +98,44 @@ ms.locfileid: "55928994"
    ![新增 ASP.NET Core Web 應用程式對話方塊](media/new-project-csharp-aspnet-razor-web-app.png)
 
    > [!NOTE]
-   > 如果您在頂端的下拉式選單中沒有看到 [ASP.NET Core 2.0] 或更新版本，請確定您執行最新版本的 Visual Studio。 如需如何更新安裝的詳細資訊，請參閱[將 Visual Studio 2017 更新至最新版本](../../install/update-visual-studio.md)頁面。
+   > 如果您在頂端的下拉式功能表中沒有看到 [ASP.NET Core 2.1] 或更新版本，請確定您執行的是最新版 Visual Studio。 如需如何更新安裝的詳細資訊，請參閱[將 Visual Studio 更新至最新版本](../../install/update-visual-studio.md)頁面。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 在開始視窗中，選擇 [建立新專案]。
+
+   ![檢視 [建立新專案] 視窗](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. 在 [建立新專案] 視窗中，在搜尋方塊內輸入或鍵入 *ASP.NET*。 接下來，從語言清單中選擇 [C#]，然後從平台清單中選擇 [Windows]。 
+
+   在您套用語言和平台的篩選後，請選擇 [ASP.NET Core Web 應用程式] 範本，然後選擇 [下一步]。
+
+   ![為 ASP.NET Core Web 應用程式選擇 C# 範本](./media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+
+   > [!NOTE]
+   > 如果您未看到 [ASP.NET Core Web 應用程式] 範本，可以從 [建立新專案] 視窗加以安裝。 在 [找不到你要尋找的項目嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   >
+   > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > 然後，在 Visual Studio 安裝程式中選擇 [ASP.NET 與網頁程式開發] 工作負載。
+   >
+   > ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../../get-started/media/aspnet-core-web-dev-workload.png)
+   >
+   > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回這個「[建立專案](#create-a-project)」程序中的第 2 步。
+
+1. 在 [設定新專案] 視窗中，於 [專案名稱] 方塊中鍵入或輸入 *MyCoreApp*。 接著，選擇 [建立]。
+
+   ![在 [設定新專案] 視窗中，將專案命名為 'MyCoreApp'](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
+
+1. 在 [建立新的 ASP.NET Core Web 應用程式] 視窗中，確認頂端的下拉式功能表出現 [ASP.NET Core 2.1] 或更新版本。 然後，請選擇包含範例 Razor Pages 的 [Web 應用程式]。 接著，選擇 [建立]。
+
+   ![[建立新的 ASP.NET Core Web 應用程式] 視窗](./media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+
+   Visual Studio 會開啟您的新專案。
+
+::: moniker-end
 
 ### <a name="about-your-solution"></a>關於方案
 
@@ -131,10 +181,15 @@ ms.locfileid: "55928994"
 
      > [!NOTE]
      > 如果您收到錯誤訊息指出「無法連線到網頁伺服器 'IIS Express'」，請關閉 Visual Studio，然後使用右鍵或操作功能表中的 [以系統管理員身分執行] 選項來開啟它。 接著，再次執行應用程式。
+     >
+     > 您也可能會收到訊息，詢問您是否要接受 IIS SSL Express 憑證。 若要在網頁瀏覽器中檢視程式碼，請選擇 [是]，如果您收到後續的安全性警告訊息，請再次選擇 [是]。 
 
 1. Visual Studio 會啟動瀏覽器視窗。 您應該會在功能表列中看到 [首頁]、[關於] 和 [連絡人] 頁面。 (如果沒有看到，請選擇「漢堡」功能表項目來檢視它們。)
 
     ![在 Web 應用程式的功能表列上選取「漢堡」功能表項目](media/csharp-aspnet-razor-browser-page.png)
+
+     > [!TIP]
+     > 當您的專案在瀏覽器視窗中開啟時，您無法使用 Visual Studio 程式碼編輯器編輯程式碼。 
 
 1. 從功能表列選擇 [關於]。
 

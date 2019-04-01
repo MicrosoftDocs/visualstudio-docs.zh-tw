@@ -2,8 +2,8 @@
 title: 在 Visual Studio 2019 中移植、移轉及升級專案
 titleSuffix: ''
 description: 為在舊版 Visual Studio 中建立之專案所提供的 Visual Studio 2019 支援參考，以及 Visual Studio 決定何時遷移專案的方式。
-ms.date: 02/26/2019
-ms.prod: visual-studio-dev16
+ms.date: 03/20/2019
+ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
@@ -20,16 +20,16 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 7447dff5d8855fb141ab66f23ab9bd9b272c3d0d
-ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
+ms.openlocfilehash: 2350f98c5db2428bdb48f57d2dd5ed1236ee4446
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57683355"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415768"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019"></a>Visual Studio 2019 的專案移轉與升級參考
 
-一般來說，每個新版本的 Visual Studio 都會支援大多數舊版類型的專案、檔案和其他資產。 因此，您可以[一如既往地](../ide/solutions-and-projects-in-visual-studio.md)使用這些項目；如果您不需要新版的功能，Visual Studio 通常會嘗試保留與 Visual Studio 2017、Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012 等舊版的回溯相容性。 (請參閱[版本資訊](/visualstudio/releases/2019/release-notes-preview)，以了解哪些功能專屬於哪一個版本)。
+一般來說，每個新版本的 Visual Studio 都會支援大多數舊版類型的專案、檔案和其他資產。 因此，您可以[一如既往地](../ide/solutions-and-projects-in-visual-studio.md)使用這些項目；如果您不需要新版的功能，Visual Studio 通常會嘗試保留與 Visual Studio 2017、Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012 等舊版的回溯相容性。 (請參閱 [Visual Studio 2019 Preview 版本資訊](/visualstudio/releases/2019/release-notes-preview)和 [Visual Studio 2019 RC 版本資訊](/visualstudio/releases/2019/release-notes/)以了解哪些功能特定於哪些版本。)
 
 有些專案類型的支援也會隨時間而改變。 新版的 Visual Studio 可能完全不再支援某些專案，或者需要更新專案，使它們不再具有回溯相容性。 如需移轉問題的目前狀態，請參閱 [Visual Studio Developer Community](https://developercommunity.visualstudio.com)。
 
@@ -71,7 +71,7 @@ ms.locfileid: "57683355"
 | Silverlight | Visual Studio 2019 Preview 不支援 Silverlight 專案。 若要維護 Silverlight 應用程式，請繼續使用 Visual Studio 2015。 |
 | SQL - Redgate | Visual Studio 安裝程式不再隨附 Redgate 的 SQL Change Automation Core (之前稱為 ReadyRoll Core)、SQL Prompt Core 和 SQL Search。<br/><br/>您可以繼續使用 Visual Studio 2017 來取得這些功能。 在 Visual Studio 2019 Preview 中，您可以升級為 Redgate SQL Toolbelt 中所提供的付費 SQL Change Automation 和 SQL Prompt 產品。|
 | SQL Server Reporting Services 和 SQL Server Analysis Services (SSRS、SSDT、SSAS、MSAS) | 這些專案類型的支援會透過 Visual Studio 資源庫中的兩個延伸模組提供：[Microsoft Analysis Services Modeling Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) 與 [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 SSDT 支援也隨附於 Visual Studio 2019 Preview 中的資料儲存和處理工作負載。 |
-| SQL Server Integration Services (SSIS) | Visual Studio 2019 Preview 的支援即將推出。 您可從 [SSIS 官方部落格](https://blogs.msdn.microsoft.com/ssis/)取得最新消息。 |
+| SQL Server Integration Services (SSIS) | Visual Studio 2019 Preview 的支援即將推出。 從 [SQL Server Data Tools 小組部落格](https://devblogs.microsoft.com/ssdt/)取得最新消息。 |
 | 測試視窗延伸模組 | 在 Visual Studio 2019 中，會移除一些先前標記為公用，但從未正式記載的測試視窗 API。 許多 API 已在 Visual Studio 2017 中標示為已淘汰，可為延伸模組維護人員提供初期警告。 據我們所知，很少有延伸模組相依於這些 API。 如需詳細資訊和更新，請檢視[已淘汰之測試相關 API 的完整清單](https://github.com/Microsoft/vstest/issues/1830)。 如果這會影響您的案例，請在[開發人員社群](https://developercommunity.visualstudio.com)中讓我們知道。 |
 | Visual C++ | 您可以使用 Visual Studio 2019 Preview 來處理在較早之 Visual Studio 版本 (自 Visual Studio 2010 起) 中建立的專案。 當您第一次開啟專案時，可以選擇要升級到最新的編譯器和工具組，或是繼續使用原本的編譯器和工具組。 如果您選擇繼續使用原本的編譯器和工具組，Visual Studio 2019 Preview 不會修改專案檔，並且會使用較早之 Visual Studio 安裝的工具組來建置您的專案。 保留原本的選項表示您仍然可以視需要在原始的 Visual Studio 版本中開啟該專案。 如需詳細資訊，請參閱[在 Visual Studio 中使用原生多目標來建置舊專案](/cpp/porting/use-native-multi-targeting)。 |
 | Visual Studio 擴充性/VSIX | 系統會更新含 MinimumVersion 14.0 或以下版本的專案，以宣告 MinimumVersion 15.0；如此一來，即無法在舊版的 Visual Studio 中開啟專案。 若要允許在舊版本中開啟專案，請將 MinimumVersion 設定為 `$(VisualStudioVersion)`。 另請參閱[如何：將擴充性專案移轉至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。 |
@@ -86,13 +86,13 @@ ms.locfileid: "57683355"
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Visual Studio 如何決定移轉專案的時間
 
-Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，使得相同的專案可以在不同的版本中開啟、修改和建置。 不過，隨著時間變化出現無可避免的變更，而導致某些專案類型可能不再受支援。 (請參閱[平台目標及相容性](/visualstudio/releases/2019/compatibility)，以了解 Visual Studio 2019 Prevew 中支援哪些專案類型)。在這些情況下，較新版本的 Visual Studio 不會載入專案，而且不會提供移轉路徑；您需要在確實支援該專案的舊版 Visual Studio 中維護該專案。
+Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，使得相同的專案可以在不同的版本中開啟、修改和建置。 不過，隨著時間變化出現無可避免的變更，而導致某些專案類型可能不再受支援。 (請參閱[平台目標及相容性](/visualstudio/releases/2019/compatibility)，以了解 Visual Studio 2019 中支援哪些專案類型。)在這些情況下，較新版本的 Visual Studio 不會載入專案，而且不會提供移轉路徑；您需要在確實支援該專案的舊版 Visual Studio 中維護該專案。
 
 在其他情況下，較新版本的 Visual Studio 可以開啟專案，但必須以可能會使其與舊版不相容的方式更新或移轉專案。 Visual Studio 會使用幾個準則，來判斷是否必須進行這類移轉：
 
 - 與目標版本平台的相容性，回溯到 Visual Studio 2013 RTM。
 
-- 設計階段資產與舊版 Visual Studio 的相容性。 (也就是 Visual Studio 2019、Visual Studio 2017、Visual Studio 2015 RTM & Update 3、Visual Studio 2013 RTM & Update 5、Visual Studio 2012 Update 4、Visual Studio 2010 SP 1 的不同通道)。Visual Studio 2019 的目的在於讓已淘汰的設計階段資產正常失敗而不會損毀，使得舊版仍然可以開啟專案。
+- 設計階段資產與舊版 Visual Studio 的相容性。 (也就是 Visual Studio 2019、Visual Studio 2017、Visual Studio 2015 RTM & Update 3、Visual Studio 2013 RTM & Update 5、Visual Studio 2012 Update 4、Visual Studio 2010 SP1 的不同通道。)Visual Studio 2019 的目的在於讓已淘汰的設計階段資產正常失敗而不會損毀，使得舊版仍然可以開啟專案。
 
 - 新的設計階段資產是否會中斷與回溯到 Visual Studio 2013 RTM 和 Update 5 的舊版相容性。
 

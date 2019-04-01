@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: c411df964d0f0ffb6a96484f6ad4d245d561410c
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 63e39c3879d51a34bc61f703eaae1e75dc2fd742
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070330"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58342745"
 ---
 Visual Studio「整合式開發環境」是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 
@@ -45,7 +45,7 @@ Visual Studio「整合式開發環境」是一個有創意的啟動控制板，�
 
 ::: moniker range="vs-2017"
 
-Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2017 相同的功能，並已針對開發跨平台和行動應用程式最佳化。 此文章著重於 Windows 版的 Visual Studio 2017。
+Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2017 相同的功能，並已針對開發跨平台和行動應用程式最佳化。 本文著重於 Windows 版的 Visual Studio 2017。
 
 有三種 Visual Studio 2017 的版本：Community、Professional 及 Enterprise。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/)。
 
@@ -232,11 +232,11 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 1. 開啟 Visual Studio。
 
-   開始視窗即會出現，並顯示可用來複製存放庫、開啟最近使用的專案或建立全新專案的各種選項。
+   [開始] 視窗即會出現，並顯示可用來複製存放庫、開啟最近專案或建立全新專案的各種選項。
 
 1. 選擇 [建立新專案]。
 
-   ![Visual Studio 開始視窗會建立新專案](../media/vs-2019/start-window-create-new-project.png)
+   ![Visual Studio [開始] 視窗建立新專案](../media/vs-2019/start-window-create-new-project.png)
 
    [建立新專案] 視窗隨即開啟，並顯示數個專案「範本」。 範本包含指定專案類型所需的基本檔案和設定。
 

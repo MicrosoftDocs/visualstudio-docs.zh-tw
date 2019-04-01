@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97a7886ba57c9e4076121ec8071e52f29af784f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 962b3ef149730772c01c8cfe3a3bf026d59fd3b0
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956853"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324236"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在類別設計工具中建立及設定類型成員
 
@@ -205,7 +205,7 @@ ms.locfileid: "55956853"
 
 - **\<新增參數>**
 
-     成員的最後一個參數列包含 [名稱] 儲存格中的 **<add parameter>** 文字。 按一下這個儲存格即可建立新參數。 如需詳細資訊，請參閱[將參數新增至方法](creating-and-configuring-type-members.md#add-parameters-to-methods)。
+     成員的最後一個參數列在 [名稱] 儲存格中包含 **<新增參數\>** 字樣。 按一下這個儲存格即可建立新參數。 如需詳細資訊，請參閱[將參數新增至方法](creating-and-configuring-type-members.md#add-parameters-to-methods)。
 
 [屬性] 視窗會顯示 [類別細節] 視窗中顯示的相同參數屬性：[名稱]、[類型]、[修飾詞]、[摘要] 及 [選擇性預設] 屬性。 在其中一個位置變更屬性將會全域更新屬性值，包括在另一個位置的顯示值。
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a546f1e0d40e810d696fb37bbee29d98ab8861fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 451464cd2576c1dd70c7b8235cead327b2f05ca2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949638"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355269"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目標概觀
 
@@ -35,13 +35,13 @@ Framework 目標包括下列功能：
 
 - 當您開啟以舊版 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 為目標的專案時，Visual Studio 會自動將專案升級，或保留其目標。
 
-- 當您建立專案時，您可以指定要以哪一個版本的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 為目標。
+- 當您建立專案時，您可以指定目標 .NET Framework 版本。
 
-- 您可以變更現有專案的目標 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。
+- 您可以變更現有專案的目標 .NET Framework 版本。
 
-- 您可以在相同方案的數個不同專案中，以不同版本的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 為目標。
+- 您可以在相同解決方案的每個專案中，以不同版本的 .NET Framework 為目標。
 
-- 當您變更專案的目標 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本時，[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 會對參考和組態檔進行任何必要的變更。
+- 當您變更專案的目標 .NET Framework 版本時，[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 會對參考和組態檔進行必要的變更。
 
 當您使用以舊版 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 為目標的專案時，Visual Studio 會動態變更開發環境，例如：
 
@@ -62,17 +62,27 @@ Framework 目標包括下列功能：
 
 ## <a name="select-a-target-framework-version"></a>選取目標 Framework 版本
 
-當您建立專案時，請在 [新增專案] 對話方塊中選取目標 .NET Framework 版本。 可用架構的清單包含適用於所選取範本類型的已安裝之架構版本。 對於不需要 .NET Framework 的範本類型 (如 .NET Core 範本)，系統會隱藏 [Framework] 下拉式清單。
+當您建立專案時，請在選取專案範本後，選取目標 .NET Framework 版本。 可用架構的清單包含適用於所選取範本類型的已安裝之架構版本。 對於不需要 .NET Framework 的範本類型 (如 .NET Core 範本)，系統會隱藏 [Framework] 下拉式清單。
 
-![[新增專案] 對話方塊中的 [Framework] 下拉式清單](media/vside-newproject-framework.png)
+::: moniker range="vs-2017"
 
-在現有專案中，您可以在專案屬性對話方塊中變更目標 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 如需詳細資訊，請參閱[＜How to：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+![VS 2017 的 Framework 下拉式清單](media/vside-newproject-framework.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![VS 2019 的 Framework 下拉式清單](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
+
+在現有專案中，您可以在 [專案屬性] 對話方塊中變更目標 .NET Framework 版本。 如需詳細資訊，請參閱[如何：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
 ## <a name="resolve-system-and-user-assembly-references"></a>解析系統與使用者組件參考
 
 若要設定目標 .NET Framework 版本，您必須先安裝適當的組件參考。 您可以在 [.NET 下載](https://www.microsoft.com/net/download/windows)頁面下載不同 .NET Framework 版本的開發人員套件。
 
-[加入參考] 對話方塊會停用與目標 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本無關的系統組件，如此一來就不會不慎將系統組件新增至專案。 (系統組件是包含在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本中的 *.dll* 檔案)。無法解析屬於晚於目標版本之 Framework 版本的參考，也無法新增相依於這類參考的控制項。 如果您想要啟用這類參考，請將專案的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 目標重設為包含參考的目標。  如需詳細資訊，請參閱[＜How to：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+[新增參考] 對話方塊會停用與目標 .NET Framework 版本無關的系統組件，如此一來就不會不慎將系統組件新增至專案。 (系統組件是包含在 .NET Framework 版本中的 *.dll* 檔案)。無法解析屬於晚於目標版本之 Framework 版本的參考，也無法新增相依於這類參考的控制項。 如果您想要啟用這類參考，請將專案的 .NET Framework 目標重設為包含參考的目標。  如需詳細資訊，請參閱[如何：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
 如需組件參考的詳細資訊，請參閱[在設計階段時解析組件](../msbuild/resolving-assemblies-at-design-time.md)。
 

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立及編輯設定
+title: 作法：建立及編輯設定
 ms.date: 06/21/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -19,14 +19,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a54909ad928cd923d7ab0d9df4cfcfdb400029
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928422"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268637"
 ---
-# <a name="how-to-create-and-edit-configurations"></a>HOW TO：建立及編輯設定
+# <a name="how-to-create-and-edit-configurations"></a>作法：建立及編輯設定
 
 您可以為方案建立數個組建組態。 例如，您可以設定偵錯組建讓測試人員可以用來尋找和修正問題，也可以設定不同類型的組建，散發給不同的客戶。
 
@@ -46,17 +46,13 @@ ms.locfileid: "55928422"
 
  設定您需要的組態之後，您可以設定適用於這些組態的專案屬性。
 
-### <a name="to-set-properties-based-on-configurations"></a>根據組態來設定屬性
+### <a name="set-properties-based-on-configurations"></a>根據組態來設定屬性
 
--   在方案總管中，開啟專案的捷徑功能表，然後選擇 [屬性]。
+若要根據組態來設定屬性，請在 [方案總管] 中，開啟專案的捷徑功能表，然後選擇 [屬性]。 您可以設定組態的屬性。 例如，針對版本組態，您可以指定在建置方案時將程式碼最佳化，而針對偵錯組態，您可以指定包含 `DEBUG` 條件式編譯符號。
 
-     [屬性頁] 視窗隨即開啟。
+如需屬性頁設定的詳細資訊，請參閱[管理專案和方案屬性](../ide/managing-project-and-solution-properties.md)。
 
-     您可以設定組態的屬性。 例如，針對版本組態，您可以指定在建置方案時將程式碼最佳化，而針對偵錯組態，您可以指定包含 `DEBUG` 條件式編譯符號。 如需屬性頁設定的詳細資訊，請參閱[管理專案和方案屬性](../ide/managing-project-and-solution-properties.md)。
-
-## <a name="create-and-modify-project-configurations"></a>建立和修改專案組態
-
-### <a name="to-create-a-project-configuration"></a>建立專案組態
+## <a name="create-a-project-configuration"></a>建立專案組態
 
 1.  開啟 [組態管理員] 對話方塊。
 
@@ -72,7 +68,7 @@ ms.locfileid: "55928422"
 
 6.  若要同時建立整個方案的組態，請選取 [建立新方案組態] 核取方塊。
 
-### <a name="to-rename-a-project-configuration"></a>重新命名專案組態
+## <a name="rename-a-project-configuration"></a>重新命名專案組態
 
 1.  開啟 [組態管理員] 對話方塊。
 

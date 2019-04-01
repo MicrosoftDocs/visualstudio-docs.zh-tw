@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 02c1629b11e33de0ce8a24ffc7f5b939a7841705
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223139"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355759"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高生產力的祕訣
 
@@ -66,13 +66,23 @@ ms.locfileid: "57223139"
 
 - **只顯示您要處理的錯誤**。 如果您選擇 [錯誤清單] 工具列上的 [篩選] 按鈕，則可以減少 [錯誤清單] 視窗中出現的錯誤數目。 您可以選擇顯示只在目前編輯器開啟之檔案中的錯誤、只在目前檔案中的錯誤或只在目前專案中的錯誤。 您也可以在 [錯誤清單] 視窗中搜尋以找出特定錯誤。
 
-- **尋找對話方塊、功能表命令和選項**。 在[快速啟動](../ide/reference/quick-launch-environment-options-dialog-box.md)搜尋方塊中，輸入您嘗試尋找項目的關鍵字或片語。 例如，如果您輸入 `new project`，則會出現下列選項︰
+- **尋找對話方塊、功能表命令、選項和其他**。 在[快速啟動](../ide/reference/quick-launch-environment-options-dialog-box.md)搜尋方塊中，輸入您嘗試尋找項目的關鍵字或片語。 例如，如果您輸入**新增專案**，則會出現下列選項︰
 
-    ![「新增專案」在 [快速啟動] 中的結果](../ide/media/productivity_quicklaunch.png)
+   ::: moniker range="vs-2017"
 
-    [快速啟動] 會顯示 [新增專案] 對話方塊、[新增項目] 對話方塊以及 [選項] 對話方塊中的 [專案和方案] 頁面的連結。 快速啟動結果也可以包含專案檔和工具視窗。
+   ![「新增專案」在 [快速啟動] 中的結果](../ide/media/productivity_quicklaunch.png)
 
-  找出 IDE 右上角的 [快速啟動] 搜尋方塊。 (或者，按下 **Ctrl**+**Q** 加以存取。)
+   [快速啟動] 會顯示建立新專案、將新項目新增至專案，以及 [選項] 對話方塊中 [專案和方案] 頁面的連結和其他連結。 搜尋結果結果也可以包含專案檔和工具視窗。
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![「新增專案」的快速啟動搜尋結果](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+
+   ::: moniker-end
+
+   按 **Ctrl**+**Q** 直接跳到 [快速啟動] 搜尋方塊。
 
 ## <a name="debug-code"></a>偵錯程式碼
 

@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a5edfb7983de5cb794c27907abc19191be99dee
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 485516a92f2b669aa24d6da69653621e07a6c9cd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070278"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325090"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
 
@@ -52,7 +52,7 @@ ms.locfileid: "58070278"
 
 ::: moniker range=">=vs-2019"
 
-開啟 Visual Studio 後，會先出現 [啟動] 視窗。 選取 [不使用程式碼繼續] 以開啟開發環境。
+開啟 Visual Studio 後，會先出現 [開始] 視窗。 選取 [不使用程式碼繼續] 以開啟開發環境。
 
 您會看到 IDE 的三個基本部分：工具視窗、功能表和工具列，以及主視窗空間。 工具視窗停駐在應用程式視窗的左側和右側。 [快速啟動] 方塊、功能表列和標準工具列位於頂端。 當您載入方案或專案時，編輯器和設計工具會出現在應用程式視窗的中央區域。 在開發應用程式時，您大部分時間都會在此中央區域工作。
 

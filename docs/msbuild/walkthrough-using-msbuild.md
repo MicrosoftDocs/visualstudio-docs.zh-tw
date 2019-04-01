@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac73f7c7915c3142cd496ebf8a76bb22995028b4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c0abf64442c6a31758f3a3c24c4268b6aee5720a
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947058"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324918"
 ---
 # <a name="walkthrough-use-msbuild"></a>逐步解說：使用 MSBuild
 MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介紹 MSBuild 的建置區塊，以及示範如何撰寫和管理 MSBuild 專案及進行偵錯。 學習內容：
@@ -125,7 +125,7 @@ Message 工作會取得 Text 屬性的字串值做為輸入，並顯示於輸出
 
    (Windows 10) 在工作列的搜尋方塊中開始鍵入工具名稱，例如 `dev` 或 `developer command prompt`。 這會顯示符合搜尋模式的已安裝應用程式清單。
 
-   如果您需要以手動方式尋找，檔案是 *LaunchDevCmd.bat*，位於 <visualstudio installation folder>\<版本>\Common7\Tools 資料夾。
+   如果您需要以手動方式尋找，檔案是 *LaunchDevCmd.bat*，位於 <visualstudio 安裝資料夾\>\<版本>\Common7\Tools 資料夾。
 
 2. 從命令視窗，瀏覽至包含專案檔的資料夾，在此案例中為 *D:\BuildApp\BuildApp*。
 
@@ -227,10 +227,10 @@ $(PropertyName)
  幾乎所有的 MSBuild 項目都會有一個 Condition 屬性。 如需使用 Condition 屬性的詳細討論，請參閱[條件](../msbuild/msbuild-conditions.md)。
 
 ### <a name="reserved-properties"></a>保留的屬性
- MSBuild 保留一些屬性名稱來儲存專案檔和 MSBuild 二進位檔案的相關資訊。 MSBuildToolsPath 是保留的屬性範例。 保留的屬性是使用 $ 標記法來參考，如同任何其他屬性。 如需詳細資訊，請參閱[＜How to：參考專案檔的名稱或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留和已知的屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。
+ MSBuild 保留一些屬性名稱來儲存專案檔和 MSBuild 二進位檔案的相關資訊。 MSBuildToolsPath 是保留的屬性範例。 保留的屬性是使用 $ 標記法來參考，如同任何其他屬性。 如需詳細資訊，請參閱[如何：參考專案檔的名稱或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留和已知的屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。
 
 ### <a name="environment-variables"></a>環境變數
- 您可以使用和組建屬性一樣的方式，來參考專案檔中的環境變數。 例如，若要在專案檔中使用 PATH 環境變數，請使用 $(Path)。 如果專案包含與環境變數相同名稱的專案定義，則專案中的屬性會覆寫環境變數的值。 如需詳細資訊，請參閱[＜How to：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。
+ 您可以使用和組建屬性一樣的方式，來參考專案檔中的環境變數。 例如，若要在專案檔中使用 PATH 環境變數，請使用 $(Path)。 如果專案包含與環境變數相同名稱的專案定義，則專案中的屬性會覆寫環境變數的值。 如需詳細資訊，請參閱[如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。
 
 ## <a name="set-properties-from-the-command-line"></a>從命令列設定屬性
  您可以在命令列上，使用 -property 或 -p 命令列參數定義屬性。 接收自命令列的屬性值會覆寫專案檔和環境變數中所設定的屬性值。

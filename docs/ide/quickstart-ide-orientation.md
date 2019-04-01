@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be4d194ab0b308f436692be5dd0e7d1bc3315725
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867822"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354722"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio 整合式開發環境 (IDE) 初探
 
@@ -39,9 +39,9 @@ ms.locfileid: "57867822"
 
 ## <a name="start-window"></a>啟動視窗
 
-開啟 Visual Studio 之後，首先看到的畫面是開始視窗。 開始視窗旨在協助您更快速「開始撰寫程式碼」。 其選項可讓您複製或簽出程式碼、開啟現有專案或解決方案、建立新專案，或僅開啟包含某些程式碼檔案的資料夾。
+開啟 Visual Studio 之後，首先看到的畫面是 [開始] 視窗。 啟動視窗旨在協助您更快速「開始撰寫程式碼」。 其選項可讓您複製或簽出程式碼、開啟現有專案或解決方案、建立新專案，或僅開啟包含某些程式碼檔案的資料夾。
 
-[![](media/vs-2019/start-window-labeled.png "Visual Studio 2019 中的啟動視窗")](media/vs-2019/start-window-labeled.png#lightbox)
+[![](media/vs-2019/start-window-labeled.png "Visual Studio 2019 中的 [開始] 視窗")](media/vs-2019/start-window-labeled.png#lightbox)
 
 如果這是您第一次使用 Visual Studio，則最近使用的專案清單會是空白。
 
@@ -71,7 +71,7 @@ ms.locfileid: "57867822"
 
 1. 在開始視窗中，選擇 [建立新專案]。
 
-   隨即開啟一個視窗，表示要**建立新專案**。 此視窗有時稱為 [新增專案] 對話方塊，而您可以在此處瀏覽並挑選專案範本。 它也會保存一份最近使用的專案範本清單。
+   隨即開啟一個對話方塊，表示要**建立新專案**。 在這裡，您可以搜尋、篩選和選取專案範本。 它也會顯示一份最近使用的專案範本清單。
 
 1. 在上方的搜尋方塊中，輸入 **console**，從專案類型清單中篩選出名稱包含 "console" 的專案類型。 從 [語言] 選擇器中挑選 [C#] (或您選擇的另一個語言)，進一步精簡搜尋結果。
 

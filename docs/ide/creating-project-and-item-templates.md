@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 603920aac4a7ba6d91996f3717927112ec8e5ec5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933856"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415950"
 ---
 # <a name="project-and-item-templates"></a>專案範本與項目範本
 
@@ -23,11 +23,11 @@ ms.locfileid: "55933856"
 
 ## <a name="visual-studio-templates"></a>Visual Studio 範本
 
-安裝 Visual Studio 時會安裝一些預先定義的專案範本和項目範本。 例如，[新增專案] 對話方塊中顯示的 Visual Basic 和 C# **Windows Forms 應用程式**以及**類別庫**範本，就是專案範本。 項目範本會顯示在 [新增項目] 對話方塊中，並且包含程式碼檔案、XML 檔案、HTML 網頁和樣式表等項目。
+安裝 Visual Studio 時會安裝一些預先定義的專案範本和項目範本。 這些範本 (例如 **ASP.NET Web 應用程式**和**類別庫**範本) 可讓您在建立新專案時選擇。 項目範本 (例如程式碼檔案、XML 檔案、HTML 頁面和樣式表) 會顯示在 [新增項目] 對話方塊中。
 
 使用者可將這些範本當作起點開始建立專案，或擴充現有的專案。 專案範本提供特定專案類型所需的檔案、包含標準組件參考，並設定預設專案屬性和編譯器選項。 項目範本複雜多變，從有特定副檔名的單一空檔案，到具有虛設常式程式碼的多個原始程式碼檔案、設計工具資訊檔案和內嵌資源，都有可能。
 
-您可以使用 [新增專案] 和 [新增項目] 對話方塊中的已安裝範本、撰寫自己的範本，或下載並使用社群所建立的範本。 如需詳細資訊，請參閱[＜How to：建立專案範本](../ide/how-to-create-project-templates.md)和[如何：建立項目範本](../ide/how-to-create-item-templates.md)。
+您可以使用已安裝範本、撰寫自己的自訂範本，或下載並使用社群所建立的範本。 如需詳細資訊，請參閱[如何：建立專案範本](../ide/how-to-create-project-templates.md)和[如何：建立項目範本](../ide/how-to-create-item-templates.md)。
 
 ## <a name="contents-of-a-template"></a>範本的內容
 
@@ -35,13 +35,35 @@ ms.locfileid: "55933856"
 
 - 使用範本時要建立的檔案。 這些檔案包含原始程式碼檔案、內嵌資源、專案檔等等。
 
-- 一個 .vstemplate 檔案包含 [新增專案] 和 [新增項目] 對話方塊中顯示範本所需的中繼資料，以及從範本建立專案或項目。 如需 .vstemplate 檔案的詳細資訊，請參閱[範本參數](../ide/template-parameters.md)。
+::: moniker range="vs-2017"
+
+- .vstemplate 檔案，包含從 [新增專案] 和 [新增項目] 視窗中從範本建立專案或項目以及顯示範本所需的中繼資料。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- .vstemplate 檔案，包含從 [新增專案] 頁面或 [新增項目] 對話方塊中從範本建立專案或項目以及顯示範本所需的中繼資料。
+
+::: moniker-end
+
+   如需 .vstemplate 檔案的詳細資訊，請參閱[範本參數](../ide/template-parameters.md)。
 
 當這些檔案壓縮成 .zip 檔案並放入正確的資料夾時，Visual Studio 會自動在下列位置顯示它們：
 
-- 專案範本會出現在 [新增專案] 對話方塊中。
+::: moniker range="vs-2017"
 
-- 項目範本會出現在 [新增項目] 對話方塊中。
+- 專案範本會出現在 [新增專案] 視窗。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- 專案範本會出現在 [建立新專案] 頁面。
+
+::: moniker-end
+
+- 項目範本會出現在 [新增項目] 視窗。
 
 如需範本資料夾的詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 

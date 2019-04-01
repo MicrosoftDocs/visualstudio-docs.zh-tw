@@ -8,12 +8,12 @@ ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c60aa8284dd19401fb2f4b6db3dc0ec0fc9c7942
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9751ce3b08a0ac963cccdf091ccb99001c6f2c9f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948845"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416080"
 ---
 # <a name="modify-load-test-logging-settings"></a>修改負載測試記錄設定
 
@@ -26,7 +26,7 @@ ms.locfileid: "55948845"
 |工作|相關主題|
 |-|-----------------------|
 |**負載測試失敗時儲存記錄：** 您可以指定是否要在每次負載測試失敗時都儲存一次測試記錄。|-   [如何：指定測試失敗是否會儲存至測試記錄](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**設定記錄檔的檔案大小上限：** 您可以編輯與測試控制器服務建立關聯的 XML 組態檔，指定要用於記錄檔的檔案大小上限。|[如何：指定記錄檔的大小上限](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
+|**設定記錄檔的檔案大小上限：** 您可以編輯與測試控制器服務建立關聯的 XML 組態檔，指定要用於記錄檔的檔案大小上限。|修改 *QTCcontroller.exe.config* XML 組態檔中的 `<add key="LogSizeLimitInMegs" value="20"/>`。|
 
 ## <a name="see-also"></a>另請參閱
 

@@ -4,7 +4,6 @@ ms.date: 02/06/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
-- vs.newproject
 - VS.ToolsOptionsPages.Projects.General
 - SolutionItemsProject
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a4304fbda284a78350b83447753533983e65d1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867883"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268577"
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
@@ -39,35 +38,9 @@ ms.locfileid: "57867883"
 
 也就是說，在 Visual Studio 中開發應用程式不需要方案和專案。 您也可以直接開啟從 Git 複製或從其他位置下載的程式碼。 如需詳細資訊，請參閱[在 Visual Studio 中不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)。
 
-> [!NOTE]
-> 本主題中的描述以 Visual Studio Community 版本為基礎。 您看到的對話方塊與功能表命令，可能會依您的設定與 Visual Studio 版本而與此處描述的有所不同。 若要變更您的設定 (例如變更為 [一般] 或 [Visual C++] 設定)，請選擇 [工具] > [匯入和匯出設定]，然後選擇 [重設所有設定]。
+## <a name="create-a-project-from-a-project-template"></a>從專案範本建立專案
 
-## <a name="to-create-a-project-from-a-project-template"></a>從專案範本建立專案
-
-1. 在 Visual Studio 中建立新的專案有多種方式。 在 [起始頁] 上，於 [搜尋專案範本] 方塊中輸入專案範本的名稱，或選擇 [建立新專案] 連結以開啟 [新增專案] 對話方塊。 您也可以選擇功能表列上的 [檔案] > [新增] > [專案]，或選擇工具列上的 [新增專案] 按鈕。
-
-   ![起始頁](./media/vside-newproject1.png)
-
-   在 [新增專案] 對話方塊中，可用的專案範本會出現在清單中的 [範本] 類別下。 範本會依程式設計語言和專案類型組織，例如 Visual C#、JavaScript 和 Azure Data Lake。
-
-   ![[新增專案] 對話方塊](./media/vside-newproject-templates-list.png)
-
-   > [!NOTE]
-   > 所顯示的可用語言和專案範本清單取決於您執行的 Visual Studio 版本及安裝的工作負載。 若要了解如何安裝額外的工作負載，請參閱[透過新增或移除工作負載和元件來修改 Visual Studio](../install/modify-visual-studio.md)。
-
-2. 顯示您要使用之程式設計語言的範本清單，方法是選擇語言名稱旁的三角形，然後選擇專案類型。
-
-   下列範例示範適用於 Visual C# .NET Core 專案的專案範本。
-
-   ![專案範本](./media/new-project-dialog-net-core.png)
-
-3. 在 [名稱] 方塊中輸入新專案的名稱。 您可以選擇將專案儲存在系統上的預設位置，或選擇 [瀏覽] 按鈕以尋找其他位置。
-
-   您也可以選擇性地選擇變更方案名稱，或選擇 [新增至原始檔控制] 以將新專案新增至 Git 存放庫。
-
-4. 選擇 [確定] 按鈕以建立方案和專案。
-
-5. 如果您想要將其他專案新增至解決方案，請在方案總管中選擇方案節點，然後在功能表列上選擇 [專案] > [新增項目]。
+如需從範本建立新專案的資訊，請參閱[在 Visual Studio 中建立新專案](create-new-project.md)。
 
 ## <a name="create-a-project-from-existing-code-files"></a>從現有程式碼檔案建立專案
 
@@ -88,12 +61,26 @@ ms.locfileid: "57867883"
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>建立以特定 .NET Framework 版本為目標的 .NET 專案
 
-當您建立專案時，您可以指定專案所要使用的特定 .NET Framework 版本。 若要指定 .NET Framework 版本，請選擇 [新增專案] 對話方塊中的 [Framework] 下拉式功能表。
+當您建立專案時，您可以指定專案所要使用的特定 .NET Framework 版本。
+
+::: moniker range="vs-2017"
+
+若要指定 .NET Framework 版本，請選擇 [新增專案] 對話方塊中的 [Framework] 下拉式功能表。
 
 ![[新增專案] 對話方塊中的 [Framework] 下拉式清單](./media/vside-newproject-framework.png)
 
 > [!NOTE]
 > 您必須在系統上安裝 .NET Framework 3.5，才能存取早於 .NET Framework 4 的 .NET Framework 版本。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+若要指定 .NET Framework 版本，請選擇 [建立新專案] 頁面中的 [Framework] 下拉式功能表。
+
+![[設定新專案] 中的 Framework 選取器](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
 
 ## <a name="create-empty-solutions"></a>建立空的方案
 
@@ -101,13 +88,27 @@ ms.locfileid: "57867883"
 
 ### <a name="to-create-an-empty-solution"></a>建立空的方案
 
-1. 在功能表上，選擇 [檔案] > [新增] > [專案]。
+1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
 
-1. 在左側 ([範本]) 窗格中，在展開的清單中選擇 [其他專案類型] > [Visual Studio 方案]。
+::: moniker range="vs-2017"
 
-1. 在中間窗格選擇 [空白方案]。
+2. 在左窗格 ([範本]) 中，從展開的清單中選擇 [其他專案類型] > [Visual Studio 解決方案]。
 
-1. 為您的方案輸入 [名稱] 和 [位置] 值，然後選擇 [確定]。
+3. 在中間窗格選擇 [空白方案]。
+
+4. 輸入您解決方案的 [名稱] 和 [位置] 值，然後選擇 [確定]。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. 在 [建立新專案] 頁面的 [搜尋] 方塊中鍵入**解決方案**。
+
+3. 選取 [空白方案] 範本，然後按一下 [下一步]。
+
+4. 輸入您解決方案的 [名稱] 和 [位置] 值，然後選擇 [建立]。
+
+::: moniker-end
 
 建立空的方案之後，您可以在 [專案] 功能表上，選擇 [新增項目] 或 [新增現有項目]，將新專案或項目或是現有專案或項目新增至該方案。
 
@@ -132,13 +133,13 @@ ms.locfileid: "57867883"
 > [!NOTE]
 > .suo 檔案是隱藏檔案，不會顯示在預設檔案總管設定下。 若要顯示隱藏的檔案，請在檔案總管的 [檢視] 功能表中，選取 [隱藏的項目] 核取方塊。
 
-### <a name="to-permanently-delete-a-solution"></a>永久刪除方案
+### <a name="permanently-delete-a-solution"></a>永久刪除解決方案
 
 1. 在 [方案總管] 中，於您要刪除之方案的右鍵功能表 (操作功能表) 上，選擇 [在檔案總管中開啟資料夾]。
 
 1. 在 [檔案總管] 中，瀏覽上一層。
 
-1. 選擇包含解決方案的資料夾，然後選擇 **DELETE** 鍵。
+1. 選擇包含解決方案的資料夾，然後按 **Delete** 鍵。
 
 ## <a name="see-also"></a>另請參閱
 

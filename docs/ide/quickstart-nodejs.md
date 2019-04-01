@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 17bd74a9c5a484d7e3539e787f4ae05d078aa80b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 79197d99ea04d95c369738af5832f70f4f7dc7e7
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867008"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355295"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Node.js 應用程式
 
@@ -53,15 +53,13 @@ ms.locfileid: "57867008"
 
 1. 開啟 Visual Studio。
 
-1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
-
 1. 建立新的專案。
 
     ::: moniker range=">=vs-2019"
-    在 [建立新專案] 對話方塊中，於搜尋方塊中輸入 **javascript** 以篩選結果，然後依序選擇 [空白的 Node.js Web 應用程式] 和 [下一步]。 接著，選擇 [建立]。
+    鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，鍵入 **Node.js**，然後選擇 [Create new Blank Node.js Web application project] \(建立新的空白 Node.js Web 應用程式專案\) (JavaScript)。 在出現的對話方塊中，選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在 [新增專案] 對話方塊的左窗格中，展開 [JavaScript]，然後選擇 [Node.js]。 在中間窗格中，選擇 [Blank Node.js Web application] (空白的 Node.js Web 應用程式)，然後選擇 [確定]。
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [Blank Node.js Web application] (空白的 Node.js Web 應用程式)，然後選擇 [確定]。
     ::: moniker-end
     如果您看不到 [空白的 Node.js Web 應用程式] 專案範本，則必須新增 **Node.js 開發**工作負載。 如需詳細指示，請參閱[必要條件](#prerequisites)。
 

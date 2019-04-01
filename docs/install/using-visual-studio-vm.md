@@ -2,7 +2,7 @@
 title: 在 Azure 虛擬機器上使用 Visual Studio
 titleSuffix: ''
 description: 了解如何在 Azure 虛擬機器上使用 Visual Studio
-ms.date: 02/19/2019
+ms.date: 03/25/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12d99cf2e15bf1d806035598f9c92b5ed3319d25
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 3853d91d6bd473499f47ad47c9d72e708420a1f3
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450395"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476016"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -34,9 +36,9 @@ ms.locfileid: "56450395"
 
 | 發行版本                                              | 版本                     |     產品版本      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019：預覽版 (Preview 3)                   |           企業         | 16.0.0 Preview 3 版 |
-| Visual Studio 2017：最新版本 (版本 15.9)                    |    Enterprise、Community     |      15.9.7 版      |
-|         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.20 版     |
+|       Visual Studio 2019：預覽 (RC3)                      |           企業         |    16.0.0 RC3 版    |
+| Visual Studio 2017：最新版本 (版本 15.9)                    |    Enterprise、Community     |      15.9.9 版      |
+|         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.22 版     |
 |   Visual Studio 2015：最新版本 (Update 3)                      |    Enterprise、Community     |  14.0.25431.01 版   |
 |         Visual Studio 2015：RTW                              |             無             | (維護已過期)  |
 
@@ -101,7 +103,9 @@ Visual Studio 遵循 Azure 中的「自備授權」模型。 與在專用硬體�
 
 快速摘要：使用系統準備工具 (Sysprep) 並將執行中的 VM 關機，然後透過 Azure 入口網站中的 UI 將 VM 擷取 (圖 1) 為映像。 Azure 會將包含該映像的 `.vhd` 檔案儲存在您所選擇的儲存體帳戶中。 新映像會在您訂用帳戶的資源清單中顯示為映像資源。
 
-<img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*(圖 1) 透過 Azure 入口網站的 UI 擷取映像。*</center>
+![透過 Azure 入口網站的 UI 擷取映像](media/capture-vm.png)
+
+(圖 1) 透過 Azure 入口網站的 UI 擷取映像。
 
 如需詳細資訊，請參閱[在 Azure 中建立一般化 VM 的受控映像](/azure/virtual-machines/windows/capture-image-resource)。
 

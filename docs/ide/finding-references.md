@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335268"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324743"
 ---
 # <a name="find-references-in-your-code"></a>在您的程式碼中尋找參考
 
 您可以使用 [尋找所有參考] 命令，來尋找在整個程式碼基底中參考特定程式碼項目的位置。 在您想要尋找其參考之項目的操作 (右鍵) 功能表上會提供 [尋找所有參考] 命令。 或者，如果您是鍵盤使用者，請按 **Shift + F12**。
 
-結果會顯示在名為 **<element> references** 的工具視窗中，其中 *element* 是所搜尋項目的名稱。 [參考] 視窗中的工具列可讓您︰
+結果會顯示在名為 [\<項目> 參考] 的工具視窗中，其中 <項目> 是您搜尋的項目名稱。 [參考] 視窗中的工具列可讓您︰
 - 變更下拉式清單方塊中的搜尋範圍。 您可以選擇只查看整個方案中變更的文件。
 - 選擇 [複製] 按鈕，以複製所選取的參考項目。
 - 選擇按鈕以移至清單中的下一個或上一個位置，或按 **F8** 和 **Shift + F8** 鍵執行同樣的動作。

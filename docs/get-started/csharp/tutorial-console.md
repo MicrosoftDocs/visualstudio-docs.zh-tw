@@ -2,8 +2,9 @@
 title: 教學課程：建立簡單的 C# 主控台應用程式
 description: 了解如何逐步在 Visual Studio 中建立 C# 主控台應用程式。
 ms.custom: seodec18, get-started
-ms.date: 03/12/2019
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,22 +15,34 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: ccd5ff0f0e77a2f59135b2bf7950c4c6ddf58e02
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57736922"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416167"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立簡單的 C# 主控台應用程式
 
 在 C# 的這個教學課程中，您將使用 Visual Studio 建立並執行主控台應用程式，並在這樣做的同時探索 Visual Studio 整合式開發環境 (IDE) 的一些功能。
 
+::: moniker range="vs-2017"
+
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)頁面免費進行安裝。
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>建立專案
 
 首先，我們將建立 C# 應用程式專案。 在您新增任何項目之前，專案類型會隨附您需要的所有範本檔案！
+
+::: moniker range="vs-2017"
 
 1. 開啟 Visual Studio 2017。
 
@@ -56,13 +69,48 @@ ms.locfileid: "57736922"
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
 
-1. 請取消 [新專案] 對話方塊，然後從頂端功能表列中選擇 [工具] > [取得工具和功能]。
+1. 請取消 [新增專案] 對話方塊，然後從頂端功能表列中選擇 [工具]>[取得工具和功能]。
 
 1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 開啟 Visual Studio 2019。
+
+1. 在開始視窗中，選擇 [建立新專案]。
+
+   ![檢視 [建立新專案] 視窗](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. 在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從語言清單中選擇 **C#**，然後從平台清單中選擇 **Windows**。 
+
+   在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core] 範本，然後選擇 [下一步]。
+
+   ![選擇主控台應用程式 (.NET Framework) 的 C# 專案範本](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > 如果您未看到 [主控台應用程式 (.NET Core)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到您要找的資料嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   >
+   > ![[建立新專案] 視窗中 [找不到您要找的資料嗎?] 訊息的 [安裝更多的工具和功能] 連結](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > 接下來，在 Visual Studio 安裝程式中選擇 **.NET Core 跨平台開發**工作負載。
+   >
+   > ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](./media/dot-net-core-xplat-dev-workload.png)
+   >
+   > 接下來，選擇 Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作；如果出現的話，就請您這麼做。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
+
+1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *Calculator*。 接著，選擇 [建立]。
+
+   ![在 [設定您的新專案] 視窗中，以 'Calculator' 命名您的專案](./media/vs-2019/csharp-name-your-calculator-project.png)
+
+   Visual Studio 會隨即開啟您的新專案，其中包含預設 "Hello World" 程式碼。
+   
+::: moniker-end
+
 ## <a name="create-the-app"></a>建立應用程式
 
-首先，我們將探索一些以 C# 撰寫的基本整數運算。 然後，我們將新增程式碼來建立基本的計算機。 下一步，。 然後，我們會對應用程式進行偵錯以找出錯誤，將其修正。 最後，我們會精簡程式碼，讓其更有效率。
+首先，我們將探索一些以 C# 撰寫的基本整數運算。 然後，我們將新增程式碼來建立基本的計算機。 然後，我們會對應用程式進行偵錯以找出錯誤，將其修正。 最後，我們會精簡程式碼，讓其更有效率。
 
 ### <a name="explore-integer-math"></a>探索整數運算
 
@@ -404,7 +452,7 @@ ms.locfileid: "57736922"
 
 1. 選擇 [Calculator] 來執行您的程式 (或按 **F5**)。
 
-1. 遵循提示，將數字 **42** 除以數字 **119**。 應用程式看起來應類似下圖：
+1. 遵循提示，將數字 **42** 除以數字 **119**。 您的應用程式看起來應該類似下列螢幕擷取畫面：
 
     ![主控台視窗顯示重構的應用程式，包含要採取那些動作和處理不正確輸入的提示](./media/csharp-console-calculator-refactored.png)
 

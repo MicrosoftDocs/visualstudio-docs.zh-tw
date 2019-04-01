@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8815e4cf58703efa0ab092f6030f6eeb22a813cd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983386"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268550"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>尋找和使用 Visual Studio 延伸模組
 
@@ -141,7 +141,7 @@ Visual Studio Marketplace 有新版本可用時，就會自動更新延伸模組
 
 當您安裝線上範例時，方案會儲存在兩個位置中：
 
-- 工作複本會儲存在您於 [ **新增專案** ] 對話方塊中所指定的位置。
+- 工作複本會儲存在您建立專案時指定的位置。
 
 - 個別的主複本則會儲存在您的電腦中。
 
@@ -163,7 +163,7 @@ Visual Studio Marketplace 有新版本可用時，就會自動更新延伸模組
 
 - 安裝範例套件 (是與某個技術或功能相關的範例集合)。
 
-- 安裝個別的線上範例 (您也可以在 [ **新增專案** ] 對話方塊中執行這項作業)。
+- 安裝個別的線上範例
 
 - 當安裝的範例原始程式碼變更發行時，檢視更新通知。
 

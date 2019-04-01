@@ -13,12 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731c2ca6993ed4d71238a290f782bdd079271039
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983828"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475977"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新 Visual Studio 的網路型安裝
 
@@ -100,6 +102,9 @@ vs_enterprise.exe 可以在 layoutDir 內進行叫用。
 > `--verify` 選項所需的一些重要中繼資料檔案必須在配置離線快取中。 如果遺失這些中繼資料檔案，則無法執行 "--verify"，而且安裝程式會產生錯誤。 如果您遇到此錯誤，請將新的離線配置重新建立到不同的資料夾 (或相同的離線快取資料夾)。 若要這麼做，請執行您用來建立初始離線配置的相同配置命令。 例如，`Vs_enterprise.exe --layout <layoutDir>`。
 
 Microsoft 會定期提供 Visual Studio 更新，因此，您建立的新配置可能不是與初始配置相同的版本。
+
+> [!NOTE]
+> 驗證僅適用於特定 Visual Studio 次要版本的最新版。 新的版本發行後，驗證即不再適用於同一個次要版本的較舊修補層級版本。
 
 ## <a name="how-to-fix-a-layout"></a>如何修正配置
 

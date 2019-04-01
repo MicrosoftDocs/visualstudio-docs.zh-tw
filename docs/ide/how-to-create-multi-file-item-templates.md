@@ -9,14 +9,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1871b7270c462ea599450e48f0a86a4887ebc5ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970513"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416340"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>HOW TO：建立多重檔案項目範本
+# <a name="how-to-create-multi-file-item-templates"></a>作法：建立多重檔案項目範本
 
 項目範本只能指定一個項目，但有時項目是由多個檔案所構成。 例如，Windows Forms 項目範本需要下列三個檔案：
 
@@ -28,11 +28,11 @@ ms.locfileid: "55970513"
 
 多檔案項目範本需要參數，確保建立項目時使用正確的檔案副檔名。 如果您使用 [匯出範本精靈] 建立多檔案項目範本，就會自動產生這些參數，而且不需要進行任何進一步編輯。
 
-## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>使用 [匯出範本精靈] 建立多檔案項目範本
+## <a name="use-the-export-template-wizard"></a>[匯出範本精靈] 隨即開啟
 
 建立多檔案項目範本使用的方式和建立單一檔案項目範本一樣。 請參閱[如何：建立項目範本](../ide/how-to-create-item-templates.md)。 在精靈的 [選取要匯出的項目] 頁面中，選取有相依檔案的檔案 (例如，Windows Forms 表單檔案)。 精靈會自動納入範本的所有相依檔案，例如設計工具和資源檔。
 
-## <a name="to-manually-create-a-multi-file-item-template"></a>手動建立多檔案項目範本
+## <a name="manually-create-a-multi-file-item-template"></a>手動建立多檔案項目範本
 
 1. 以手動建立單一檔案項目範本的方式建立項目範本，但包含構成多檔案項目的每一個檔案。
 
@@ -57,7 +57,7 @@ ms.locfileid: "55970513"
 
    您選取的檔案即會壓縮成 *.zip* 檔。
 
-1. 將 *.zip* 檔案複製到使用者項目範本的位置。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ItemTemplates*。 如需詳細資訊，請參閱[＜How to：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+1. 將 *.zip* 檔案複製到使用者項目範本的位置。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ItemTemplates*。 如需詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 1. 結束再重新開啟 Visual Studio。
 

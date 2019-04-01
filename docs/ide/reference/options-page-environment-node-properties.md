@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ee14cddc6a3eb4b0348b88be1d7c2b0a48b44c01
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708325"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355600"
 ---
 # <a name="options-page-environment-node-properties"></a>環境節點屬性、選項頁
 
@@ -120,7 +120,7 @@ ms.locfileid: "56708325"
 |屬性項目名稱|值|說明|
 | - |-----------|-----------------|
 |OnRunOrPreview|Get/Set (字串)|決定 IDE 是否先將一切存檔，然後再預覽或執行所建置的專案。|
-|ProjectsLocation|Get/Set (字串)|決定 [新增專案] 對話方塊儲存新專案的預設目錄。|
+|ProjectsLocation|Get/Set (字串)|決定儲存新專案的預設目錄。|
 |ShowOutputWindowBeforeBuild|Get/Set (布林值)|決定是否在開始組建時顯示 [輸出] 視窗。|
 |ShowTaskListAfterBuild|Get/Set (布林值)|決定當組建完成但建置作業失敗時，是否顯示 [工作清單]。|
 |TrackFileSelectionInExplorer|Get/Set (布林值)|決定是否在方案總管中追蹤目前項目。|

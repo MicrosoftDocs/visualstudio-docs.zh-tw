@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: c1273c5475fe6090648b61ca351ae3b507702708
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2bba6a290e8d34b2f809916341e9258ae5d36fa9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873255"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324077"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>歡迎使用 Visual Studio IDE | Visual Basic
 
@@ -46,7 +46,7 @@ Visual Studio「整合式開發環境」是一個有創意的啟動控制板，�
 
 ## <a name="editions"></a>版本
 
-Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2017 相同的功能，並已針對開發跨平台和行動應用程式最佳化。 此文章著重於 Windows 版的 Visual Studio 2017。
+Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2017 相同的功能，並已針對開發跨平台和行動應用程式最佳化。 本文著重於 Windows 版的 Visual Studio 2017。
 
 有三種 Visual Studio 2017 的版本：Community、Professional 及 Enterprise。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/)。
 
@@ -225,9 +225,9 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ::: moniker range=">=vs-2019"
 
-1. 開啟 Visual Studio。 在開始視窗中，選擇 [不使用程式碼繼續]。
+1. 開啟 Visual Studio。 在 [開始] 視窗中，選擇 [不使用程式碼繼續]。
 
-   ![Visual Studio 2019 中的開始視窗](media/vs-2019/continue-without-code.png)
+   ![Visual Studio 2019 中的 [開始] 視窗](media/vs-2019/continue-without-code.png)
 
    IDE 隨即開啟。
 
