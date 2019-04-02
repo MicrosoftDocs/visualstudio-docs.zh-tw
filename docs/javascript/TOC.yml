@@ -3,6 +3,8 @@ items:
   href: index.yml
 - name: 總覽
   items:
+  - name: Visual Studio 2019 中的 JavaScript 2019
+    href: javascript-in-vs-2019.md
   - name: Visual Studio 2017 中的 JavaScript
     href: javascript-in-vs-2017.md
 - name: 快速入門
@@ -45,9 +47,9 @@ items:
     href: configure-packages-with-package-json.md
   - name: JavaScript 和 TypeScript 的 Wiki 文件
     href: https://github.com/Microsoft/nodejstools/wiki
-ms.openlocfilehash: ef90117b0e8b3a4bc0695db384d7f30fd32130aa
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 9f6b674bf7c3f278e6fe925667fe74180462cac6
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742491"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58788765"

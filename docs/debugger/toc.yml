@@ -400,15 +400,10 @@ items:
           href: refresh-an-app-javascript.md
         - name: 偵錯 WebView 控制項
           href: debug-a-webview-control.md
-        - name: 鍵盤快速鍵 (HTML 和 JavaScript)
-          href: keyboard-shortcuts-html-and-javascript.md
         - name: 對 HTML 和 CSS 範例程式碼進行偵錯
           href: debug-html-css-and-javascript-sample-code.md
       - name: 使用主控台對 JavaScript 進行偵錯
         href: quickstart-debug-javascript-using-the-console.md
-        items:
-        - name: JavaScript Console commands
-          href: javascript-console-commands.md
       - name: 如何觸發暫止、繼續及背景事件
         href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
       - name: 預先擷取 Microsoft Store 應用程式的內容
@@ -583,6 +578,10 @@ items:
     - name: 對 Web 應用程式進行偵錯
       href: debugging-web-applications.md
       items:
+      - name: JavaScript Console commands
+        href: javascript-console-commands.md
+      - name: 鍵盤快速鍵 (HTML 和 JavaScript)
+        href: keyboard-shortcuts-html-and-javascript.md
       - name: 用戶端指令碼偵錯
         href: client-side-script-debugging.md
         items:
@@ -843,9 +842,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 3c2439a70b883c6d6380d4ddc55365e296579179
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 9d5ba973ffafe79b4c9b1f4f23ee08792d24bb7b
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873629"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790741"
