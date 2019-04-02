@@ -42,10 +42,10 @@ items:
     href: application-timeline.md
   - name: 使用效能提示
     href: perftips.md
-  - name: 分析 JavaScript 記憶體
-    href: javascript-memory.md
   - name: 分析網路使用量
     href: network-usage.md
+  - name: 分析 JavaScript 記憶體
+    href: javascript-memory.md
   - name: 分析 HTML UI 回應性
     href: html-ui-responsiveness.md
   - name: 使用效能總管
@@ -533,7 +533,7 @@ items:
             href: start.md
           - name: CrossSession
             href: crosssession.md
-          - name: 輸出
+          - name: Output
             href: output.md
           - name: WinCounter
             href: wincounter.md
@@ -807,9 +807,9 @@ items:
   items:
   - name: 程式碼剖析工具的新功能
     href: what-s-new-in-profiling-tools.md
-ms.openlocfilehash: bb8084e155ff87a596fdb5374cb3e67f86243f3d
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 8369f284b302be0240f85c26aa7c89d13566af5f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007367"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790780"
