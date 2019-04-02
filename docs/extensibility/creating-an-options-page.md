@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9830178d936e912caf6ab21761f7a072c29a4d4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194414"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790156"
 ---
 # <a name="create-an-options-page"></a>建立選項頁面
 
@@ -101,7 +101,7 @@ ms.locfileid: "58194414"
 
      在左窗格中，您應該會看到**My Category**。 （選項會列出分類依字母順序，因此它應該會出現有關中途往下到清單。）開啟**My Category** ，然後按一下**我的格線頁**。 選項方格會出現在右窗格中。 屬性類別目錄會**My Options**，而屬性名稱為**My 整數選項**。 屬性描述**我整數選項**，出現在窗格的底部。 將值從 256 其初始值變更為其他項目。 按一下  **確定**，然後再重新開啟**我的格線頁**。 您可以看到新的值仍然存在。
 
-     也可透過 Visual Studio 的快速啟動您的 [選項] 頁面。 在 [快速啟動] 視窗在 IDE 右上角中，輸入**My Category** ，您會看到**My Category]-> [我的格線頁**列在下拉式清單中。
+     也可透過 Visual Studio 的 [搜尋] 方塊選項頁面。 在 IDE 頂端附近的 [搜尋] 方塊中，輸入**My Category** ，您會看到**My Category]-> [我的格線頁**結果清單中。
 
 ## <a name="create-a-tools-options-custom-page"></a>建立自訂工具選項 頁面
 
