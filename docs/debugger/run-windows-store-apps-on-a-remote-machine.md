@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0fa9749a06c568f7fab55cd6c7a862fa616ecf6d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1d0ff9d8f3113b1df1e10891a3bd2197dd92482d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708692"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789896"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>從 Visual Studio 的遠端電腦上的 UWP 應用程式進行偵錯
 
@@ -55,9 +55,9 @@ ms.locfileid: "56708692"
 
     ![受管理的遠端偵錯專案屬性](../debugger/media/vsrun_managed_projprop_remote.png "Managed 偵錯專案屬性")
 
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> 設定 JavaScript 或 c + + 專案進行遠端偵錯
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> 設定遠端偵錯 c + + 專案
 
-1.  選取 Visual Studio 中的 c + + 或 JavaScript 專案**方案總管**，然後選取**屬性**圖示，並按下**Alt**+**Enter**，或以滑鼠右鍵按一下並選擇 **屬性**。
+1.  選取 Visual Studio 中的 c + + 專案**方案總管**，然後選取**屬性**圖示，並按下**Alt**+**Enter**，或以滑鼠右鍵按一下並選擇 **屬性**。
 
 1.  選取 [**偵錯**] 索引標籤。
 

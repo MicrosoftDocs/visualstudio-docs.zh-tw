@@ -29,7 +29,7 @@ ms.locfileid: "56699258"
  您可以使用圖形診斷，透過遠端偵錯來偵錯 ARM 裝置上的 Direct3D 應用程式。 如需詳細資訊，請參閱[如何： 搭配 ARM 裝置使用圖形診斷](/visualstudio/debugger/graphics/graphics-diagnostics-examples)。
 
 ## <a name="playing-back-graphics-information"></a>播放圖形資訊
- 在您從執行中應用程式擷取圖形資訊之後，就可以播放擷取的事件以診斷呈現問題。 若要播放，您可以使用開發電腦，也可以使用您所連接的遠端電腦或裝置。 如需詳細資訊，請參閱 [How to: Change the Graphics Diagnostics Playback Machine](how-to-change-the-graphics-diagnostics-playback-machine.md) (如何：變更圖形診斷播放電腦)。
+ 在您從執行中應用程式擷取圖形資訊之後，就可以播放擷取的事件以診斷呈現問題。 若要播放，您可以使用開發電腦，也可以使用您所連接的遠端電腦或裝置。 如需詳細資訊，請參閱 [如何：變更圖形診斷播放電腦](how-to-change-the-graphics-diagnostics-playback-machine.md)。
 
 ## <a name="debugging-missing-objects"></a>偵錯遺漏物件
  遺漏物件是圖形開發人員最常遇到的呈現問題之一。 這類問題很難進行診斷，因為數個不同類型的錯誤可能會導致物件明顯消失。 遺漏物件的一般原因包括設定錯誤的裝置狀態、轉換物件的幾何時發生問題，或設定錯誤的圖形管線。

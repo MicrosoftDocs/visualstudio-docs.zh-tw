@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ef787bb9293bb26ba9ab706abf805005153752
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476029"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790793"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>逐步解說： 偵錯多執行緒的應用程式，使用 [執行緒] 視窗 (C#，Visual Basic、 c + +)
 
@@ -37,10 +37,10 @@ ms.locfileid: "58476029"
 1. 開啟 Visual Studio 並建立新專案。
 
     ::: moniker range=">=vs-2019"
-    型別**Ctrl + Q**來開啟 [搜尋] 方塊中，輸入**主控台**(或**c + +**)，選擇**範本**，然後：
-    
-    - 針對C#，選擇**建立新的主控台應用程式 (.NET Framework) 專案**的C#。 在出現的對話方塊中，選擇**建立**。
-    - C + +，請選擇**建立新的主控台應用程式專案**。 在出現的對話方塊中，選擇**建立**。
+    按下**Esc**以關閉開始時間範圍。 型別**Ctrl + Q**來開啟 [搜尋] 方塊中，輸入**主控台**(或**c + +**)，選擇**範本**，然後：
+
+    - 針對C#，選擇**建立新的主控台應用程式 (.NET Framework) 專案**的C#。 在出現的對話方塊中選擇 [建立]。
+    - C + +，請選擇**建立新的主控台應用程式專案**。 在出現的對話方塊中選擇 [建立]。
 
     然後，輸入名稱，例如**MyThreadWalkthroughApp**然後按一下**建立**。
     ::: moniker-end
@@ -52,7 +52,7 @@ ms.locfileid: "58476029"
     然後，輸入名稱，例如**MyThreadWalkthroughApp**然後按一下**確定**。
     ::: moniker-end
 
-    如果您沒有看到**主控台應用程式**專案範本，請移至**工具** > **取得工具與功能...**，這會開啟 Visual Studio 安裝程式。 選擇 [NET 桌面開發] 或 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
+    如果您未看到 [主控台應用程式] 專案範本，請前往 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 [NET 桌面開發] 或 [使用 C++ 的桌面開發] 工作負載，然後選擇 [修改] 按鈕。
 
     新的專案會出現在**方案總管 中**，和原始程式檔名*Program.cs*或是*MyThreadWalkthroughApp.cpp*會在原始程式碼視窗中開啟。
 

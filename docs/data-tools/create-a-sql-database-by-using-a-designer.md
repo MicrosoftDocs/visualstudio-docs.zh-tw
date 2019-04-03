@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cd7ea5df54d1ef740feddaeb5fbedbc9b9a42fd4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943112"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647241"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>建立資料庫，並在 Visual Studio 中新增資料表
 
@@ -26,11 +26,11 @@ ms.locfileid: "55943112"
 
 ## <a name="prerequisites"></a>必要條件
 
-若要完成此逐步解說中，您必須擁有選擇性**資料儲存和處理**安裝 Visual Studio 中的工作負載。 若要安裝，請開啟**Visual Studio 安裝程式**，然後選擇**工作負載** 索引標籤。底下**Web 和雲端**，選擇**資料儲存和處理**。 選擇**修改**按鈕以新增至 Visual Studio 的工作負載。
+若要完成此逐步解說中，您必須擁有選擇性**資料儲存和處理**安裝 Visual Studio 中的工作負載。 若要安裝，請開啟**Visual Studio 安裝程式**，然後選擇**詳細** > **修改**旁邊的 Visual Studio 您想要修改的版本 (如果您有多個一個安裝的版本）。 上**工作負載**索引標籤之下**Web 與雲端**，選擇 **資料儲存和處理**，然後按一下**修改**新增的工作負載Visual Studio。
 
 ## <a name="create-a-project-and-a-local-database-file"></a>建立專案和本機資料庫檔案
 
-1. 建立名為 **SampleDatabaseWalkthrough** 的 Windows Forms 專案。
+1. 建立新**Windows Forms 應用程式**專案，並命名**SampleDatabaseWalkthrough**。
 
 2. 在功能表列上選取**專案** > **加入新項目**。
 
@@ -38,7 +38,7 @@ ms.locfileid: "55943112"
 
      ![項目範本對話方塊](../data-tools/media/raddata-vsitemtemplates.png)
 
-4. 為資料庫命名**命名為 SampleDatabase**，然後選取**新增** 按鈕。
+4. 為資料庫命名**命名為 SampleDatabase**，然後按一下**新增**。
 
 ### <a name="add-a-data-source"></a>新增資料來源
 
@@ -62,9 +62,9 @@ ms.locfileid: "55943112"
 
 您可以檢視連接字串*SampleDatabase.mdf*開啟資料連接的 [屬性] 視窗的檔案：
 
-- 在 Visual Studio 中，選取**檢視** > **SQL Server 物件總管**如果視窗尚未開啟。 開啟 [屬性] 視窗，展開**資料連接**節點，開啟捷徑功能表*SampleDatabase.mdf*，然後選取**屬性**。
+- 選取 **檢視** > **SQL Server 物件總管**以開啟**SQL Server 物件總管**視窗。 依序展開 **(localdb) \MSSQLLocalDB** > **資料庫**，然後按一下滑鼠右鍵上*SampleDatabase.mdf* ，然後選取**屬性**.
 
-- 或者，您可以選取**檢視** > **伺服器總管**，如果視窗尚未開啟。 開啟 [屬性] 視窗，展開**資料連接**節點。 開啟捷徑功能表*SampleDatabase.mdf*，然後選取**屬性**。
+- 或者，您可以選取**檢視** > **伺服器總管**，如果視窗尚未開啟。 開啟 [屬性] 視窗，展開**資料連接**節點，開啟捷徑功能表*SampleDatabase.mdf*，然後選取**屬性**。
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>使用資料表設計工具中建立資料表和索引鍵
 
@@ -72,7 +72,7 @@ ms.locfileid: "55943112"
 
 ### <a name="create-the-customers-table"></a>建立 「 客戶 」 資料表
 
-1. 中**伺服器總管**或**SQL Server 物件總管**，展開**資料連接** 節點，然後展開**SampleDatabase.mdf**節點。
+1. 在**伺服器總管**，展開**資料連接**節點，然後展開**SampleDatabase.mdf**節點。
 
 2. 開啟捷徑功能表**資料表**，然後選取**加入新的資料表**。
 
@@ -101,9 +101,9 @@ ms.locfileid: "55943112"
 
     ![資料表設計工具](../data-tools/media/raddata-table-designer.png)
 
-7. 在左上角**資料表設計工具**，選取**更新** 按鈕。
+7. 在左上角**資料表設計工具**，選取**更新**。
 
-8. 在 [**預覽資料庫更新**對話方塊中，選取**更新資料庫**] 按鈕。
+8. 在 **預覽資料庫更新**對話方塊中，選取**更新資料庫**。
 
     您所做的變更會儲存到本機資料庫檔案中。
 

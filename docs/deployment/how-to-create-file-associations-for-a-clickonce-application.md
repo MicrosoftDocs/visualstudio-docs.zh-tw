@@ -41,7 +41,7 @@ ms.locfileid: "56633040"
 
    - `progid`： 用來唯一識別檔案類型，將它標記在登錄中一個字串。
 
-   - `defaultIcon`： 若要使用此檔案類型一個圖示。 圖示必須新增為應用程式資訊清單中的檔案資源。 如需詳細資訊，請參閱 [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。
+   - `defaultIcon`： 若要使用此檔案類型一個圖示。 圖示必須新增為應用程式資訊清單中的檔案資源。 如需詳細資訊，請參閱 [如何：在 ClickOnce 應用程式中包含資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。
 
      如需`file`並`fileAssociation`項目，請參閱[ \<fileAssociation > 項目](../deployment/fileassociation-element-clickonce-application.md)。
 

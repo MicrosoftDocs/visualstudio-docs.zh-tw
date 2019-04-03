@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961711"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790325"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>偵錯技術和工具，可協助您撰寫更好的程式碼
 
@@ -42,7 +42,7 @@ ms.locfileid: "54961711"
 
 建立應用程式：
 
-1. 開啟 Visual Studio，然後選擇**檔案 > 新增專案**。 底下**Visual C#** ，選擇**Windows 桌面**或是 **.NET Core**，然後在中間窗格選擇**主控台應用程式**。
+1. 開啟 Visual Studio，然後選擇**檔案** > **新增** > **專案**。 底下**Visual C#** ，選擇**Windows 桌面**或是 **.NET Core**，然後在中間窗格選擇**主控台應用程式**。
 
     > [!NOTE]
     > 如果您沒有看到 [主控台應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [.NET 桌面開發] (或 [.NET Core 跨平台開發]) 工作負載，然後選擇 [修改]。

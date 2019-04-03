@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576a6d219a27ad51c096ee3ddb177b656b0552e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636953"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567837"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>從命令列建置 ClickOnce 應用程式
 在  [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，即使它們建立在整合式的開發環境 (IDE) 中，您可以建置專案，從命令列。 事實上，您可以重建專案，以建立[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]只有另一部電腦上[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安裝。 這可讓您重現組建，使用自動化程序，比方說，在中央的組建實驗室，或使用進階指令碼撰寫技巧，建置專案本身的範圍之外。
@@ -41,21 +41,21 @@ ms.locfileid: "56636953"
 
 #### <a name="to-create-and-publish-a-clickonce-project"></a>若要建立及發行 ClickOnce 專案
 
-1. 按一下 **新的專案**從**檔案**功能表。 [ **新增專案** ] 對話方塊隨即出現。
+1. 開啟 Visual Studio 並建立新專案。
 
-2. 選取  **Windows 應用程式**並將它命名`CmdLineDemo`。
+    選擇**Windows 桌面應用程式**專案範本，並將專案命名為`CmdLineDemo`。
 
-3. 從**建置**功能表上，按一下**發佈**命令。
+1. 從**建置**功能表上，按一下**發佈**命令。
 
     這個步驟可確保專案是否已正確設定來產生[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式部署。
 
     [發行精靈] 隨即出現。
 
-4. 在 [發行精靈] 中，按一下**完成**。
+1. 在 [發行精靈] 中，按一下**完成**。
 
     Visual Studio 會產生並顯示預設的網頁，稱為*Publish.htm*。
 
-5. 儲存專案，並記下儲存所在的資料夾位置。
+1. 儲存專案，並記下儲存所在的資料夾位置。
 
    上述步驟建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]專案已發行的第一次。 現在您可以重現組建在 IDE 外面。
 
