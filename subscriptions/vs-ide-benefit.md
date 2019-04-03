@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何下載和安裝 Visual Studio 訂用帳戶中所含的 Visual Studio IDE。
 searchscope: VS Subscription
-ms.openlocfilehash: cb959ebdfcdce74ebcd024529fd5fcf012a51ca8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844070"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789883"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>使用 Visual Studio 2017 權益
 
@@ -53,9 +53,12 @@ ms.locfileid: "56844070"
 
 13. 選擇您慣用的佈景主題，然後按一下 [啟動 Visual Studio]。
 
-14. [啟動] 頁面隨即顯示。  您已準備好開始使用 Visual Studio！
+14. Visual Studio 隨即開啟。 您已準備好開始使用 Visual Studio！
+
+    ::: moniker range="vs-2017"
     > [!div class="mx-imgBorder"]
     > ![開始使用 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+    ::: moniker-end
 
 ## <a name="eligibility"></a>資格
 

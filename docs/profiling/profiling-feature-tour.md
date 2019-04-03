@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05d598d0eee46ec2d84b7d2bbf859dd455473a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: af87464f8fb49ca68ecf8c442a099c71b9df5b69
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873174"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790806"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>快速入門：初步認識分析工具
 
@@ -119,6 +119,7 @@ CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會
 
 您也可以使用圖形來判斷是否有佔用 CPU 或 GPU 資源的效能瓶頸。
 
+::: moniker range="vs-2017"
 ## <a name="analyze-performance-javascript-uwp"></a>分析效能 (JavaScript UWP)
 
 針對 UWP 應用程式，您可以使用 JavaScript 記憶體工具與 HTML UI 回應性工具。
@@ -130,6 +131,7 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 若要診斷 UWP 應用程式中的 UI 回應性、慢速載入時間，以及慢速視覺效果更新等問題，請使用 HTML UI 回應性工具。 其使用方式類似於其他應用程式類型的應用程式時間軸工具。 如需詳細資訊，請參閱 [HTML UI 回應性](../profiling/html-ui-responsiveness.md)。
 
 ![HTML UI 回應性分析工具](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
+::: moniker-end
 
 ## <a name="analyze-network-usage-uwp"></a>分析網路使用量 (UWP)
 

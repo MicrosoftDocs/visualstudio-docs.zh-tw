@@ -12,12 +12,13 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
-ms.openlocfilehash: c0eabc286cbeafc3d9b2651e5f6f2ec6c61d7e04
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+monikerRange: vs-2017
+ms.openlocfilehash: 88de2703db119f4124eb02658efb327df2ae899f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870301"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790468"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 

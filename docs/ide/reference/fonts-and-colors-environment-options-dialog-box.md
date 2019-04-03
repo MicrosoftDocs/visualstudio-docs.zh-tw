@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e33aaded85c7931dfc3a95d653ff35f257c9137b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070252"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647462"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>選項對話方塊、環境、字型和色彩
 
-[選項] 對話方塊的 [字型和色彩] 頁面可讓您為整合式開發環境 (IDE) 中的各種使用者介面項目建立自訂的字型和色彩配置。 按一下 [工具] > [選項]，然後選取 [環境] > [字型和色彩]，即可存取此對話方塊。 如果此頁面未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定]。
+[選項] 對話方塊的 [字型和色彩] 頁面可讓您為整合式開發環境 (IDE) 中的各種使用者介面項目建立自訂的字型和色彩配置。 按一下 [工具] > [選項]，然後選取 [環境] > [字型和色彩]，即可存取此對話方塊。
 
 色彩配置變更在您進行變更的工作階段期間不會生效。 您可以開啟 Visual Studio 的另一個執行個體，並產生您希望套用變更的情況，來評估色彩變更。
 
