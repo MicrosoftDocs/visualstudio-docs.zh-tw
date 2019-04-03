@@ -2,7 +2,7 @@
 title: Visual Studio 系統管理員指南
 titleSuffix: ''
 description: 深入了解如何在企業環境中部署 Visual Studio。
-ms.date: 05/29/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c9dbd7c3687596df0ccb0397cc5d52ff7888f9ff
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0c12ae3e101f2f59f0f7f6560ea86f1e6161c6ff
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324931"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790091"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 系統管理員指南
 
@@ -30,7 +30,17 @@ ms.locfileid: "58324931"
 
 ## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>在企業環境中部署 Visual Studio
 
-只要每部目標電腦符合[最小安裝需求](/visualstudio/productinfo/vs2017-system-requirements-vs)，您就可以將 Visual Studio 部署到用戶端工作站。 不論您是透過 System Center 這類軟體還是透過批次檔進行部署，一般都會想要執行下列步驟︰
+::: moniker range="vs-2017"
+
+只要每部目標電腦符合[最小安裝需求](/visualstudio/productinfo/vs2017-system-requirements-vs/)，您就可以將 Visual Studio 部署到用戶端工作站。 不論您是透過 System Center 這類軟體還是透過批次檔進行部署，一般都會想要執行下列步驟︰
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+只要每部目標電腦符合[最小安裝需求](/visualstudio/releases/2019/system-requirements/)，您就可以將 Visual Studio 部署到用戶端工作站。 不論您是透過 System Center 這類軟體還是透過批次檔進行部署，一般都會想要執行下列步驟︰
+
+::: moniker-end
 
 1. 在網路位置[建立包含 Visual Studio 產品檔案的網路共用](create-a-network-installation-of-visual-studio.md)。
 

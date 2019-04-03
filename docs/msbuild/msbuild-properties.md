@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fed1fff9e776521581455a89db48897f22de7bf5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355613"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515203"
 ---
 # <a name="msbuild-properties"></a>MSBuild 屬性
 屬性是名稱/值組，可以用來設定組建。 屬性可用於將值傳遞給工作、評估條件，以及儲存將在整個專案檔中參考的值。
@@ -59,7 +59,7 @@ ms.locfileid: "58355613"
  如需詳細資訊，請參閱[如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。
 
 ## <a name="registry-properties"></a>登錄屬性
- 您可以使用下列語法來讀取系統登錄值，其中 `Hive` 是登錄區 (例如 **HKEY_LOCAL_MACHINE**)、`Key` 是機碼名稱、`SubKey` 是子機碼名稱，而 `Value` 是子機碼的值。
+ 您可以使用下列語法來讀取系統登錄值，其中 `Hive` 是登錄區 (例如 **HKEY_LOCAL_MACHINE**)、`MyKey` 是機碼名稱、`MySubKey` 是子機碼名稱，而 `Value` 是子機碼的值。
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)

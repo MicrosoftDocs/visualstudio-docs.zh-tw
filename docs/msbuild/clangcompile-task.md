@@ -14,15 +14,15 @@ helpviewer_keywords:
 - MSBuild (Visual C++), ClangCompile task
 - ClangCompile task (MSBuild (Visual C++))
 author: mikeblome
-ms.author: Michael.Blome
+ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 05843f3deec46dc790e0a5bee761abbad7ae1552
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 218ef07fa3b086a2240362011067bf526088d1f4
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070378"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515307"
 ---
 # <a name="clangcompile-task"></a>ClangCompile 工作
 
