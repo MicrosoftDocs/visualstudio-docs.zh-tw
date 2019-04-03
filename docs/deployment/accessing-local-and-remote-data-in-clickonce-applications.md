@@ -56,7 +56,7 @@ ms.locfileid: "56603911"
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]
 
- 如需在您的部署中將檔案標示為資料檔案的詳細資訊，請參閱 [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。
+ 如需在您的部署中將檔案標示為資料檔案的詳細資訊，請參閱 [如何：在 ClickOnce 應用程式中包含資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。
 
  您也可以使用 <xref:System.Windows.Forms.Application> 類別上的相關變數 (例如 <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>)，來取得資料目錄路徑。
 

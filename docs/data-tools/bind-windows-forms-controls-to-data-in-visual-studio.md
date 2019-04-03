@@ -39,8 +39,7 @@ ms.locfileid: "55951666"
 
 ## <a name="bindingsource-and-bindingnavigator-controls"></a>BindingSource 和 BindingNavigator 控制項
 
-
-  <xref:System.Windows.Forms.BindingSource> 元件有兩種用途。 首先，它提供一個抽象層時的控制項繫結至資料。 在表單上的控制項繫結至<xref:System.Windows.Forms.BindingSource>而不是直接對資料來源元件。 其次，它可以管理物件的集合。 將類型加入<xref:System.Windows.Forms.BindingSource>會建立該類型的清單。
+<xref:System.Windows.Forms.BindingSource> 元件有兩種用途。 首先，它提供一個抽象層時的控制項繫結至資料。 在表單上的控制項繫結至<xref:System.Windows.Forms.BindingSource>而不是直接對資料來源元件。 其次，它可以管理物件的集合。 將類型加入<xref:System.Windows.Forms.BindingSource>會建立該類型的清單。
 
 如需詳細資訊<xref:System.Windows.Forms.BindingSource>元件，請參閱：
 

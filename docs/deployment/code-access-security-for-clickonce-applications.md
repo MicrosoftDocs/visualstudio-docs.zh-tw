@@ -67,7 +67,7 @@ ClickOnce 應用程式是以 .NET Framework 為基礎，並且受限於程式碼
 
  此外，當您撰寫程式碼，程式碼編輯器中的 IntelliSense 功能將會停用已設定之安全性權限中不包含的任何成員。
 
- 如需詳細資訊，請參閱 [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。
+ 如需詳細資訊，請參閱 [如何：以限制使用權限偵錯 ClickOnce 應用程式](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。
 
 ## <a name="security-permissions-for-browser-hosted-applications"></a>瀏覽器裝載應用程式的安全性權限
  Visual Studio 針對 Windows Presentation Foundation (WPF) 應用程式提供下列專案類型：
