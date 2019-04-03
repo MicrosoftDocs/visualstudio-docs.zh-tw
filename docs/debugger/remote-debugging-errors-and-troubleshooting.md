@@ -30,7 +30,7 @@ ms.locfileid: "56702105"
 # <a name="remote-debugging-errors-and-troubleshooting"></a>遠端偵錯錯誤和疑難排解
 您可能會在嘗試進行遠端偵錯時，發生下列錯誤。
 
--   [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)
+-   [錯誤：無法自動逐步執行伺服器](../debugger/error-unable-to-automatically-step-into-the-server.md)
 
 -   [錯誤：Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)
 
