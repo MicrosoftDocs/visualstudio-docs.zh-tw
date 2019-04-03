@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323811"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790416"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>HOW TO：讓擴充功能與 Visual Studio 2017 和 Visual Studio 2015 相容
 
@@ -95,7 +95,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2.加入必要條件*extension.vsixmanifest*檔案
 
-必要條件是使用 Visual Studio 2017 的新功能。 在此案例中，我們需要 Visual Studio 核心編輯器做為必要條件。 因為 Visual Studio 2015 VSIX 設計工具不會處理新`Prerequisites` 區段中，您必須編輯此組件中的 XML 程式碼以手動方式。 或者，您可以開啟 Visual Studio 2017，並使用更新的資訊清單設計工具插入的必要條件。
+我們需要 Visual Studio 核心編輯器，做為必要條件。 開啟 Visual Studio，並使用更新的資訊清單設計工具插入的必要條件。
 
 若要以手動方式這樣：
 
@@ -112,7 +112,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 * 儲存並關閉檔案。
 
 > [!NOTE]
-> 如果您選擇達成此目的使用 VSIX 設計工具，Visual Studio 2017 中，您必須手動編輯必要的版本，以確保它是與所有版本的 Visual Studio 2017 相容。 這是因為設計工具會為您目前版本的 Visual Studio (比方說，15.0.26208.0) 插入的最小版本。 不過，因為其他使用者可能會有較早版本，您會想要以手動方式編輯這個檔案為 15.0。
+> 您可能需要手動編輯必要的版本，以確保它是與所有版本的 Visual Studio 2017 相容。 這是因為設計工具會為您目前版本的 Visual Studio (比方說，15.0.26208.0) 插入的最小版本。 不過，因為其他使用者可能會有較早版本，您會想要以手動方式編輯這個檔案為 15.0。
 
 此時，您的資訊清單檔應看起來像這樣：
 
