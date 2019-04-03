@@ -76,7 +76,7 @@ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以�
    </compatibleFrameworks>
    ```
 
-7. 一旦您以手動方式已改變應用程式資訊清單，您必須重新簽署應用程式資訊清單中使用您的數位憑證，然後更新並重新簽署部署資訊清單。 使用*Mage.exe*或是*MageUI.exe*若要完成這項工作，以重新產生這些檔案使用的 SDK 工具[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]會清除您手動變更。 如需有關如何使用 Mage.exe 來重新簽署資訊清單的詳細資訊，請參閱 < [How to: re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
+7. 一旦您以手動方式已改變應用程式資訊清單，您必須重新簽署應用程式資訊清單中使用您的數位憑證，然後更新並重新簽署部署資訊清單。 使用*Mage.exe*或是*MageUI.exe*若要完成這項工作，以重新產生這些檔案使用的 SDK 工具[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]會清除您手動變更。 如需有關如何使用 Mage.exe 來重新簽署資訊清單的詳細資訊，請參閱 < [如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
 
 ## <a name="net-framework-security"></a>.NET Framework 安全性
  支援 URL 不會顯示在對話方塊中，如果應用程式標記為在部分信任中執行。

@@ -1,7 +1,7 @@
 ---
 title: 偵錯 UWP 應用程式 |Microsoft Docs
 ms.custom: seodec18
-ms.date: 01/17/2017
+ms.date: 03/28/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0c5427d96edc2db2b935cd809019049828274706
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 41fbfb4a19c4c730c046f4c44fc9d88fd9882c45
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699089"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790260"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>偵錯在 Visual Studio 中的通用 Windows App (UWP)
 
@@ -26,7 +26,6 @@ Visual Studio 偵錯工具進行偵錯 UWP 應用程式提供完整的支援。 
 
 |偵錯工作|文件|
 |-|-|
-|偵錯 Windows 8.1 應用程式|[在 Visual Studio 中偵錯市集應用程式](debug-store-apps-in-visual-studio.md)|
 |在本機電腦、 遠端或連接裝置或應用程式模擬器上執行 UWP 應用程式。|[開始 UWP app 的偵錯工作階段](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
 |已部署應用程式，本機和遠端偵錯。|[對已安裝的應用程式套件進行偵錯](../debugger/debug-installed-app-package.md)|
 |分析 ContentPrefetcher 類別對 UWP 應用程式的影響。|[UWP 應用程式的預先擷取內容](../debugger/prefetch-content-for-windows-store-apps.md)|

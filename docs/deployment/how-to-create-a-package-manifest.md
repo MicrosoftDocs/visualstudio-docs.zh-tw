@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cf0d92169974970c041214e53f8a8feb5f07a24
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dd678d7db2a3af56a89756f65f8f7b98ef1e37a6
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598033"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567798"
 ---
 # <a name="how-to-create-a-package-manifest"></a>How to: Create a package manifest (如何：建立封裝資訊清單)
 若要部署您的應用程式的必要條件，您可以使用啟動載入器套件。 啟動載入器套件會包含單一產品資訊清單檔案的套件資訊清單但每個地區設定。 在不同的當地語系化版本之間共用的功能應該移入產品資訊清單。
 
- 如需有關套件資訊清單的詳細資訊，請參閱[如何： 建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)。
+ 如需有關產品資訊清單的詳細資訊，請參閱[如何： 建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)。
 
 ## <a name="create-the-package-manifest"></a>建立封裝資訊清單
 

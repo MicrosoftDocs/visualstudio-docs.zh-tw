@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 293df62cc82295a9d2eea577df4e3f46dd14cef6
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227640"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647345"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>連線至 Access 資料庫中的資料 (Windows Forms)
 
@@ -95,7 +95,7 @@ ms.locfileid: "56227640"
 
 8. 在 [**資料庫檔名**，指定的路徑和名稱 *.mdb*您想要連線到]，然後選取的檔案 **[確定]**。
 
-   ![加入連線存取資料庫檔案](../data-tools/media/dataaddconnectionaccessmdb.png)
+   ![加入連線存取資料庫檔案](../data-tools/media/add-connection-access-db.png)
 
 9. 選取 **下一步**上**選擇資料連接**頁面。
 

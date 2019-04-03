@@ -89,7 +89,7 @@ ms.locfileid: "56597793"
 |`.msp`|`application/octet-stream`|
 
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce 和對應的磁碟機
- 如果您使用 Visual Studio 來發行 ClickOnce 應用程式時，您無法指定對應的磁碟機做為安裝位置。 不過，您可以修改 ClickOnce 應用程式，若要使用的資訊清單產生器和編輯器 （Mage.exe 和 MageUI.exe） 安裝的磁碟機。 如需詳細資訊，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)並[MageUI.exe (Manifest Generation and Editing Tool，Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。
+ 如果您使用 Visual Studio 來發行 ClickOnce 應用程式時，您無法指定對應的磁碟機做為安裝位置。 不過，您可以修改 ClickOnce 應用程式，若要使用的資訊清單產生器和編輯器 （Mage.exe 和 MageUI.exe） 安裝的磁碟機。 如需詳細資訊，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)並[MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。
 
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>不支援如安裝應用程式的 FTP 通訊協定
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從任何 HTTP 1.1 Web 伺服器或檔案伺服器安裝應用程式的支援。 FTP 檔案傳輸通訊協定不支援如安裝應用程式。 您可以使用 FTP 發行應用程式。 下表摘要說明這些差異：

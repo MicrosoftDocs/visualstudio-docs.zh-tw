@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: ea8b7f378562d31cfcfde786664e227a3fec6b0c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f5ef78f64ecea712083a25ab999f1554672d3381
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708858"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790351"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何觸發暫止、 繼續及背景事件偵錯在 Visual Studio 中的 UWP 應用程式時
 不在偵錯模式時，由 Windows **處理程序生命週期管理** (PLM) 控制您應用程式的執行狀態：啟動、暫停、繼續和終止應用程式，以便回應使用者動作和裝置的狀態。 而處於偵錯模式時，Windows 會停用這些啟用事件。 本主題說明如何在偵錯工具中引發這些事件。
@@ -72,7 +72,7 @@ ms.locfileid: "56708858"
 
 2.  開啟啟始專案的偵錯屬性頁。 在 [方案總管] 中選取專案。 在 [ **偵錯** ] 功能表上，選擇 [ **屬性**]。
 
-     若是 c + + 和 JavaScript 專案中，依序展開**組態屬性**，然後選擇**偵錯**。
+     若是 c + + 專案中，依序展開**組態屬性**，然後選擇**偵錯**。
 
 3.  執行下列任一步驟：
 
@@ -80,7 +80,7 @@ ms.locfileid: "56708858"
 
          ![C&#35;&#47;VB 偵錯啟動應用程式屬性](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    -   若是 JavaScript 和 Visual C++ 專案，請從 [ **啟動應用程式** ] 清單中選擇 [ **否** ]。
+    -   若是 Visual c + + 專案，選擇  **No**從**啟動應用程式**清單。
 
          ![C&#43;&#43;&#47;VB 啟動應用程式偵錯屬性](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 

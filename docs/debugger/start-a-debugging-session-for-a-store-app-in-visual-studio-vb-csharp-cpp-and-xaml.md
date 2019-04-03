@@ -35,16 +35,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 28a35f37e298533fe3181f9325241bbef116f2d4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699466"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790507"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>啟動 UWP 應用程式 的偵錯工作階段
 
-本文說明如何啟動的通用 Windows 平台 (UWP) 應用程式的 Visual Studio 偵錯工作階段。 可以在 XAML 和 c + +、 XAML 撰寫 UWP 應用程式和C#/Visual Basic，或 HTML 和 JavaScript。 開始偵錯的 UWP 應用程式，請設定偵錯工作階段，然後選擇 啟動應用程式的方式。
+本文說明如何啟動的通用 Windows 平台 (UWP) 應用程式的 Visual Studio 偵錯工作階段。 可以在 XAML 和 c + +、 XAML 撰寫 UWP 應用程式和C#/Visual Basic。 開始偵錯的 UWP 應用程式，請設定偵錯工作階段，然後選擇 啟動應用程式的方式。
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> 不再支援從 Visual Studio 2019，HTML 和 JavaScript 的 UWP 應用程式。
+::: moniker-end
+::: moniker range="vs-2017"
+在 Visual Studio 2017 中，大部分的命令和本文中所顯示的選項也適用於 UWP 應用程式的 HTML 和 JavaScript。 命令的不同位置之間受管理和 c + + 應用程式，JavaScript 應用程式通常是 c + + UWP 應用程式的命令相同。
+::: moniker-end
 
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a>從 Visual Studio 工具列中開始偵錯
 
@@ -90,7 +98,7 @@ ms.locfileid: "56699466"
 
      ![C#和 Visual Basic 專案偵錯屬性頁](../debugger/media/dbg_csvb_debugpropertypage.png)
 
-   - 針對 c + + 和 JavaScript 的應用程式，請選取**組態屬性** > **偵錯**。
+   - 針對 c + + 應用程式中，選取**組態屬性** > **偵錯**。
 
      ![C + + UWP 應用程式偵錯屬性頁](../debugger/media/dbg_cpp_debugpropertypage.png)
 
@@ -98,13 +106,13 @@ ms.locfileid: "56699466"
 
 針對C#和 Visual Basic 應用程式，Visual Studio 會偵錯 managed 程式碼的預設值。 您可以選擇其他的或額外的程式碼類型進行偵錯。 您也可以設定**偵錯工具類型**是專案一部分的任何背景工作的值。
 
-在 c + + 應用程式，Visual Studio 進行偵錯原生程式碼，根據預設。 JavaScript 應用程式，在 Visual Studio 進行偵錯指令碼，根據預設。 您可以選擇偵錯特定類型的程式碼，或除了原生程式碼。
+在 c + + 應用程式，Visual Studio 進行偵錯原生程式碼，根據預設。 您可以選擇偵錯特定類型的程式碼，或除了原生程式碼。
 
 **若要指定要偵錯的程式碼類型：**
 
 - 針對C#和 Visual Basic 應用程式中，選取從下列偵錯工具的其中一個**應用程式類型**並**背景處理程序類型**底下的下拉式清單**偵錯工具類型**上**偵錯**屬性頁。
 
-- C + /cli JavaScript 應用程式，選取 從下列偵錯工具的其中一個**偵錯工具類型**下拉式清單中**偵錯**屬性頁。
+- 針對 c + + 應用程式中，選取其中一個從下列偵錯工具**偵錯工具類型**下拉式清單中**偵錯**屬性頁。
 
 |||
 |-|-|
@@ -124,10 +132,10 @@ ms.locfileid: "56699466"
 
 -   針對C#和 Visual Basic 應用程式，取消選取**允許區域網路回送**底下的核取方塊**起始選項**上**偵錯** 屬性頁。
 
--   針對 Visual c + + 和 JavaScript 的應用程式，請選取**No**從**允許本機網路 Loopback**上的下拉式清單**偵錯**屬性頁。
+-   針對 Visual c + + 應用程式中，選取**No**從**允許本機網路 Loopback**上的下拉式清單**偵錯**屬性頁。
 
 ###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> 重新安裝應用程式，當您啟動偵錯 （選擇性）
- 若要診斷安裝問題C#或 Visual Basic 應用程式，選取**解除安裝再重新安裝我的包裹**上**偵錯** 屬性頁。 當您啟動偵錯時，此選項會重新建立原始安裝。 此選項不適用於 c + + 和 JavaScript 專案。
+ 若要診斷安裝問題C#或 Visual Basic 應用程式，選取**解除安裝再重新安裝我的包裹**上**偵錯** 屬性頁。 當您啟動偵錯時，此選項會重新建立原始安裝。 此選項不適用於 c + + 專案。
 
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> 設定遠端偵錯的驗證選項
 
@@ -139,7 +147,7 @@ ms.locfileid: "56699466"
 
 - 針對C#和 Visual Basic 應用程式，在**偵錯**屬性頁上，選取**遠端機器**做為**目標裝置**。 然後，選取**無**或**通用 （未加密的通訊協定）** for **Mode**。
 
-- 針對 c + + 和 JavaScript 的應用程式，請選取**遠端電腦**下方**偵錯工具啟動**上**偵錯**屬性頁。 然後，選取**不需要驗證**或**通用 （未加密的通訊協定）** for**驗證類型**。
+- 針對 c + + 應用程式中，選取**遠端電腦**下方**偵錯工具啟動**上**偵錯**屬性頁。 然後，選取**不需要驗證**或**通用 （未加密的通訊協定）** for**驗證類型**。
 
 > [!CAUTION]
 > 當您在執行遠端偵錯工具時，會不具有網路安全性**無**或是**通用 （未加密的通訊協定）** 模式。 選擇這些模式，只在您的受信任網路上確定不是從惡意程式碼或惡意流量的風險。
@@ -156,7 +164,7 @@ ms.locfileid: "56699466"
 
 - 針對C#和 Visual Basic 應用程式，選取**不啟動，但啟動時，將我的程式碼進行偵錯**底下**起始選項**上**偵錯** 屬性頁。
 
-- 針對 c + + 和 JavaScript 的應用程式，請選取**No**從**啟動應用程式**上的下拉式清單**偵錯**屬性頁。
+- 針對 c + + 應用程式中，選取**No**從**啟動應用程式**上的下拉式清單**偵錯**屬性頁。
 
 如需有關偵錯背景工作的詳細資訊，請參閱 <<c0> [ 觸發程序暫止、 繼續及背景事件用於 UWP 應用程式](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。
 
@@ -202,10 +210,12 @@ ms.locfileid: "56699466"
 
  Visual Studio 會將偵錯工具附加至處理序。 執行會持續到中斷點為止，若以手動方式暫停執行，就會發生未處理的例外狀況，或結束應用程式。
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > JavaScript 應用程式會在 *wwahost.exe* 處理序的執行個體中執行。 如果一個以上的 JavaScript 應用程式正在執行，您必須知道您的應用程式的數字的處理序識別碼 (PID) *wwahost.exe*來附加至它的程序。
 >
 > 附加至您的 JavaScript 應用程式的最簡單方式是關閉所有其他 JavaScript 應用程式。 或者，您可以記下執行的 Pid *wwahost.exe* Windows 工作管理員 中才啟動應用程式的程序。 當您啟動您的應用程式，其*wwahost.exe* PID 會是不同於您先前記下的一個。
+::: moniker-end
 
 ## <a name="see-also"></a>另請參閱
 - [在 Visual Studio 中偵錯應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

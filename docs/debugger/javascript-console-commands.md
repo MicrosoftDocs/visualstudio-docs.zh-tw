@@ -1,7 +1,7 @@
 ---
 title: JavaScript 主控台命令 |Microsoft Docs
-ms.custom: seodec18
-ms.date: 07/17/2017
+ms.custom: ''
+ms.date: 03/28/2019
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -13,21 +13,28 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701949"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790767"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 主控台命令
 
-您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 如需示範如何使用該視窗的範例，請參閱[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主題資訊適用於 UWP 應用程式和使用 Visual Studio Tools for Apache Cordova 建立的應用程式。 如需 Cordova 應用程式支援的主控台命令相關資訊，請參閱 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 如需在 Internet Explorer F12 工具中使用主控台的詳細資訊，請參閱 [本主題](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85))。
+::: moniker range=">=vs-2019"
+您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 本主題資訊適用於建立使用 Visual Studio 中使用的 Node.js 應用程式**Node.js 開發**安裝工作負載。
+::: moniker-end
+::: moniker range="vs-2017"
+您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 如需示範如何使用此視窗的範例，請參閱[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)。 本主題資訊適用於 Node.js 應用程式，UWP 應用程式，並使用 Visual Studio Tools for Apache Cordova 建立的應用程式。 如需 Cordova 應用程式支援的主控台命令相關資訊，請參閱 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。
+::: moniker-end
 
 如果 [JavaScript 主控台] 視窗已關閉，您可以開啟偵錯時在 Visual Studio 中選擇**偵錯** > **Windows** > **JavaScript主控台**。
 
 > [!NOTE]
 > 如果在偵錯工作階段期間無法使用該視窗，請確定在專案的 [偵錯] 屬性中的偵錯工具類型已設為 [指令碼]  。
+
+在 Microsoft Edge 開發人員工具中使用主控台的資訊，請參閱[本主題](/microsoft-edge/devtools-guide)。
 
 ## <a name="console-object-commands"></a>主控台物件命令
 此表格顯示 `console` 物件命令的語法，該命令可用於 [JavaScript 主控台] 視窗，也可以用來從程式碼傳送訊息至主控台。 此物件提供數種格式，以便您在必要時可區分告知性訊息與錯誤訊息。
@@ -123,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>請參閱
-- [快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
-- [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)
+- [快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

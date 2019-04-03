@@ -16,14 +16,15 @@ ms.assetid: fd99ee60-fa94-46df-8b17-369f60bfd908
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 4bd14f0d0a8fa0697ed8fead43bac69b0b002ed3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 751deec205eabb8bc6e4a492c7242095b2d67475
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690561"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790286"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>重新整理 Visual Studio 中的 UWP 應用程式
 
