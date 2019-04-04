@@ -25,7 +25,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a47ef550f18a0d26e6e0cea9894382ff8fdecb4a
 ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/21/2019
 ms.locfileid: "56629504"
@@ -95,6 +95,6 @@ ClickOnce 應用程式是以 .NET Framework 為基礎，並且受限於程式碼
 - [How to: Enable ClickOnce security settings](../deployment/how-to-enable-clickonce-security-settings.md) (如何：啟用 ClickOnce 安全性設定)
 - [How to: Set a security zone for a ClickOnce application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md) (如何：設定 ClickOnce 應用程式的安全性區域)
 - [How to: Set custom permissions for a ClickOnce application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md) (如何：設定 ClickOnce 應用程式的自訂權限)
-- [How to: Debug a ClickOnce application with restricted permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) (如何：以限制的權限對 ClickOnce 應用程式進行偵錯)
+- [如何：以限制的權限對 ClickOnce 應用程式進行偵錯](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [Trusted application deployment overview](../deployment/trusted-application-deployment-overview.md) (信任的應用程式部署概觀)
 - [專案設計工具、安全性頁面](../ide/reference/security-page-project-designer.md)

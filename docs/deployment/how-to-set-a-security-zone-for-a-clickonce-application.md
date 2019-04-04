@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: bcb89fea3e364c5933a4b1cfeaf90b44dc14e83d
 ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/21/2019
 ms.locfileid: "56606833"
@@ -43,6 +43,6 @@ ms.locfileid: "56606833"
 5.  在 [安裝應用程式的區域]  下拉式清單中，選取安全性區域。
 
 ## <a name="see-also"></a>另請參閱
-- [How to: Set custom permissions for a ClickOnce application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md) (如何：設定 ClickOnce 應用程式的自訂權限)
+- [如何：設定 ClickOnce 應用程式的自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)
