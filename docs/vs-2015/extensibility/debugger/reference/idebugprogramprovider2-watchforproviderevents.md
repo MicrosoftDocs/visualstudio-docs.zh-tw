@@ -1,14 +1,9 @@
 ---
 title: IDebugProgramProvider2::WatchForProviderEvents |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgramProvider2::WatchForProviderEvents
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6034898ad8c10583a8fa982a978fa05aa884d25a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 64ee4b40aefc848d89068076fb3176ae6b625e9f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787688"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929954"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -179,7 +174,7 @@ STDMETHODIMP CDebugEngine::WatchForProviderEvents(
                                 if ( 0 == m_pPidList->GetCount() )  
                                     this->Cleanup();  
                             }  
-                            // This is needed for cases where the SDM has not yet recieved program create  
+                            // This is needed for cases where the SDM has not yet received program create  
                             // by the time that we need to detach (example: the managed attach succeeds,  
                             // but some other attach step fails).  
                             else  
@@ -221,4 +216,3 @@ STDMETHODIMP CDebugEngine::WatchForProviderEvents(
  [CONST_GUID_ARRAY](../../../extensibility/debugger/reference/const-guid-array.md)   
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   
  [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)
-

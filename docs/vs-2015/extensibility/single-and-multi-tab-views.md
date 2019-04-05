@@ -1,33 +1,28 @@
 ---
 title: 單一和多重索引標籤的檢視 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8231581761199be4df9c368494fb27bdc7926c51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 804a37a43ffe25335dc522542f5035b0882e63ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748986"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939260"
 ---
 # <a name="single-and-multi-tab-views"></a>單一和多重索引標籤檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 編輯器可以建立不同類型的檢視。 其中一個範例的程式碼編輯器 視窗，另一個是表單設計工具。  
   
- 多個索引標籤的檢視是具有多個索引標籤的檢視。 例如，HTML 編輯器有兩個索引標籤底部：**設計**並**來源**，每個邏輯檢視。 [設計] 檢視會顯示呈現的網頁，而另一個則顯示包含網頁的 HTML。  
+ 多個索引標籤的檢視是具有多個索引標籤的檢視。 例如，HTML 編輯器底部有兩個索引標籤：**設計**並**來源**，每個邏輯檢視。 [設計] 檢視會顯示呈現的網頁，而另一個則顯示包含網頁的 HTML。  
   
 ## <a name="accessing-physical-views"></a>存取實體的檢視  
  實體的檢視裝載的文件檢視物件，每個都代表一個緩衝區，例如程式碼或表單中的資料檢視。 因此，每個文件檢視物件有一個實體檢視 （又稱為實體檢視字串所識別），以及通常是單一的邏輯檢視。  
@@ -121,6 +116,5 @@ Error:
   
 ## <a name="see-also"></a>另請參閱  
  [支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)   
- [如何： 將檢視附加至文件資料](../extensibility/how-to-attach-views-to-document-data.md)   
+ [如何：將檢視附加至文件資料](../extensibility/how-to-attach-views-to-document-data.md)   
  [建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md)
-

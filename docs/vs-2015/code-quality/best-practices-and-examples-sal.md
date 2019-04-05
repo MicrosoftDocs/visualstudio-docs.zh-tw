@@ -1,25 +1,20 @@
 ---
 title: 最佳做法和範例 (SAL) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 666276fb-99c2-4dc9-8bac-d74861c203ea
 caps.latest.revision: 14
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 9327ab850bb5f62158e48abc4c8445d3f9b6fe9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 56e57d182a21429d73b8eae0b79f96532732ae7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743740"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940934"
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳作法和範例 (SAL)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -254,6 +249,3 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
  [註釋鎖定行為](../code-quality/annotating-locking-behavior.md)   
  [指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [內建函式](../code-quality/intrinsic-functions.md)
-
-
-
