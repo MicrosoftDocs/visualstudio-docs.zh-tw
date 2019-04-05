@@ -1,11 +1,8 @@
 ---
 title: 選取條件對話方塊 （舊版） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: fe3b415c-cb55-4295-b853-3f40765b28d0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8ac5600f22239a751bddde528664eac052b82565
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897767"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944215"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>選取條件對話方塊 (舊版)
 本主題描述如何使用**選取條件**對話方塊中，在舊版[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -36,7 +33,7 @@ ms.locfileid: "49897767"
   
 - [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
-  如需有關如何存取資訊**選取條件** 對話方塊中，請參閱[如何： 建立宣告式規則條件 （舊版）](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)。  
+  如需有關如何存取資訊**選取條件** 對話方塊中，請參閱[How to:建立宣告式規則條件 （舊版）](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)。  
   
   下表描述的使用者介面 (UI) 項目**選取條件** 對話方塊。  
   
@@ -55,7 +52,7 @@ ms.locfileid: "49897767"
   
 ## <a name="see-also"></a>另請參閱  
  [規則條件編輯器對話方塊 （舊版）](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)   
- [如何： 建立宣告式規則條件 （舊版）](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)   
+ [如何：建立宣告式規則條件 （舊版）](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)   
  [工作流程中使用條件](http://go.microsoft.com/fwlink?LinkID=65009)   
  [使用 ConditionedActivityGroup 活動](http://go.microsoft.com/fwlink?LinkID=65066)   
  [使用 IfElseBranchActivity 活動](http://go.microsoft.com/fwlink?LinkID=65075)   

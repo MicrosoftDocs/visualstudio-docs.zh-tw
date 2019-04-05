@@ -1,25 +1,20 @@
 ---
 title: 格式、 XML、 文字編輯器、 選項對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5c8379393dd5327359789f8621cf67ed55e89209
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d4f759b947344298eca36c3fd99d024f7fcde2c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256668"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943842"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>格式化、XML、文字編輯器 (選項對話方塊)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49256668"
 >  這些設定都是當您選取**文字編輯器**資料夾中， **XML**資料夾，然後**格式化**選項**選項**  對話方塊。  
   
 ## <a name="attributes"></a>屬性  
- **保留手動屬性格式化**  
+ **保留手動屬性的格式**  
  不重新格式化屬性。 這是預設值。  
   
 > [!NOTE]
@@ -51,7 +46,7 @@ ms.locfileid: "49256668"
  **從剪貼簿貼上**  
  重新格式化從剪貼簿貼上的 XML 文字。  
   
- **結束標記完成時**  
+ **結束標記完成**  
  結束標記完成時重新格式化項目。  
   
 ## <a name="mixed-content"></a>混合內容  
@@ -70,6 +65,3 @@ ms.locfileid: "49256668"
 ## <a name="see-also"></a>另請參閱  
  [屬性視窗、 XML 文件屬性](../xml-tools/xml-document-properties-properties-window.md)   
  [XML 編輯器元件](../xml-tools/xml-editor-components.md)
-
-
-

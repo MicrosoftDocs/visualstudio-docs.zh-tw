@@ -1,24 +1,19 @@
 ---
 title: 建立軟體開發套件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7c3ff7a3a8c872c4b624c8d2956a6802a0ab139
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0a03611dcf06c5ecd7c2e638bdced6551bcb3a37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723669"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945197"
 ---
 # <a name="creating-a-software-development-kit"></a>建立軟體開發套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,8 +57,8 @@ ms.locfileid: "51723669"
 |[參考] 資料夾|包含二進位檔，包含可以比照的 Api。 這些可能包括 Windows 中繼資料 (WinMD) 檔案或組件。|  
 |DesignTime 資料夾|包含只能在後置入執行/偵錯階段所需的檔案。 這些可能是 XML 文件、 程式庫、 標頭、 工具箱設計階段二進位檔，MSBuild 成品等等<br /><br /> XML 文件，在理想情況下，放在 \DesignTime 資料夾中，但是參考的 XML 文件將會繼續被放置在一起的 Visual Studio 中的參考檔案。 例如，XML 文件的參考 \References\\[設定]\\[arch]\sample.dll 會 \References\\[config]\\[arch]\sample.xml 和，文件的當地語系化的版本會 \References\\[設定]\\[arch]\\[locale]\sample.xml。|  
 |設定資料夾|可以有三個資料夾： 偵錯、 零售和 CommonConfiguration。 如果相同的 SDK 檔案集應該取用，不論 SDK 取用者會為目標的組態，SDK 作者可以放置在 CommonConfiguration 檔案。|  
-|架構資料夾|可以存在的任何支援的架構資料夾。 Visual Studio 支援下列架構： x86、 x64、 ARM、 忍受及無感。 注意： Win32 對應設為 x86，而 AnyCPU 對應到中性。<br /><br /> MSBuild 會只有在 \CommonConfiguration\neutral 平台 Sdk。|  
-|SDKManifest.xml|此檔案會描述 Visual Studio 應該如何使用 SDK。 在 SDK 資訊清單看起來[!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** 物件瀏覽器會顯示在瀏覽清單中的值。<br /><br /> **PlatformIdentity:** 是否存在，這個屬性會告知 Visual Studio 和 MSBuild SDK 是平台 SDK，並從它所加入的參考，不應該複製在本機。<br /><br /> **TargetFramework:** Visual Studio 會使用此屬性以確保，只會為這個值指定相同的架構目標的專案屬性可使用 SDK。<br /><br /> **MinVSVersion:** Visual Studio 會使用這個屬性使用套用至該 Sdk。<br /><br /> **參考：** 這個屬性必須指定只包含控制項的參考。 如需如何指定參考是否包含控制項相關的資訊，如下所示。|  
+|架構資料夾|可以存在的任何支援的架構資料夾。 Visual Studio 支援下列架構： x86、 x64、 ARM、 忍受及無感。 注意:Win32 對應設為 x86，而 AnyCPU 對應到中性。<br /><br /> MSBuild 會只有在 \CommonConfiguration\neutral 平台 Sdk。|  
+|SDKManifest.xml|此檔案會描述 Visual Studio 應該如何使用 SDK。 在 SDK 資訊清單看起來[!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** 物件瀏覽器會顯示在瀏覽清單中的值。<br /><br /> **PlatformIdentity:** 此屬性存在本機告訴 Visual Studio 和 MSBuild SDK 是一個平台 SDK，而且不應該複製從它所加入的參考。<br /><br /> **TargetFramework:** Visual Studio 會使用此屬性以確保，只會為這個值指定相同的架構目標的專案屬性可使用 SDK。<br /><br /> **MinVSVersion:** Visual Studio 會使用這個屬性，使用套用至該 Sdk。<br /><br /> **參考：** 這個屬性必須指定只包含控制項的參考。 如需如何指定參考是否包含控制項相關的資訊，如下所示。|  
   
 ##  <a name="ExtensionSDKs"></a> 擴充功能 Sdk  
  下列各節說明您需要如何部署擴充功能 SDK。  
@@ -133,7 +128,7 @@ ms.locfileid: "51723669"
   
      XML 參考文件放在一起的參考檔案。 例如，XML 參考文件**\References\\< 組態\>\\< a c h\>\sample.dll**組件是**\References\\< 組態\>\\< a c h\>\sample.xml**，，文件的當地語系化的版本，而且**\References\\< 組態\>\\<arch\>\\< 地區設定\>\sample.xml**。  
   
-5.  設定資料夾： 三個子資料夾： 偵錯、 零售版和 CommonConfiguration。 相同的 SDK 檔案集應該取用，不論目標 SDK 取用者的組態時，SDK 作者可以放置在 CommonConfiguration 檔案。  
+5.  設定資料夾： 三個子資料夾：偵錯、 零售版和 CommonConfiguration。 相同的 SDK 檔案集應該取用，不論目標 SDK 取用者的組態時，SDK 作者可以放置在 CommonConfiguration 檔案。  
   
 6.  架構資料夾： 支援下列架構： x86、 x64、 ARM、 中性。 Win32 對應設為 x86，而 AnyCPU 對應到中性。  
   
@@ -166,7 +161,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 1.  DisplayName： 參考管理員、 方案總管 中，物件瀏覽器，Visual Studio 使用者介面中的其他位置中出現的值。  
   
-2.  ProductFamilyName: 整體 SDK 的產品名稱。 比方說， [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] SDK 名為"Microsoft.WinJS.1.0 」 和 「 Microsoft.WinJS.2.0"，屬於相同系列的 SDK 產品系列，「 Microsoft.WinJS"。 此屬性可讓 Visual Studio 和 MSBuild 來建立連線。 如果這個屬性不存在，則 SDK 名稱會使用為產品系列名稱。  
+2.  ProductFamilyName:整體的 SDK 產品名稱。 比方說， [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] SDK 名為"Microsoft.WinJS.1.0 」 和 「 Microsoft.WinJS.2.0"，屬於相同系列的 SDK 產品系列，「 Microsoft.WinJS"。 此屬性可讓 Visual Studio 和 MSBuild 來建立連線。 如果這個屬性不存在，則 SDK 名稱會使用為產品系列名稱。  
   
 3.  FrameworkIdentity： 指定此屬性的值會放入使用的應用程式資訊清單的一個或多個 Windows 元件庫相依性。 這個屬性是僅適用於 Windows 的元件程式庫。  
   
@@ -174,13 +169,13 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 5.  MinVSVersion： 最小 Visual Studio 版本。  
   
-6.  MaxPlatformVerson： 最大的目標平台版本應該用來指定擴充功能 SDK 將無法運作所在的平台版本。 比方說，Microsoft Visual c + + Runtime Package v11.0 應只由 Windows 8 專案參考。 因此，Windows 8 專案的 MaxPlatformVersion 為 8.0。 也就是說，針對 Windows 8.1 專案，參考管理員會篩選掉 Microsoft Visual c + + Runtime Package，MSBuild 就會擲回錯誤時[!INCLUDE[win81](../includes/win81-md.md)]專案會參考它。 注意： 這個項目從開始支援[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]。  
+6.  MaxPlatformVerson:最大的目標平台版本應該用於指定擴充功能 SDK 將無法運作所在的平台版本。 比方說，Microsoft Visual c + + Runtime Package v11.0 應只由 Windows 8 專案參考。 因此，Windows 8 專案的 MaxPlatformVersion 為 8.0。 也就是說，針對 Windows 8.1 專案，參考管理員會篩選掉 Microsoft Visual c + + Runtime Package，MSBuild 就會擲回錯誤時[!INCLUDE[win81](../includes/win81-md.md)]專案會參考它。 注意： 這個項目從開始支援[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]。  
   
-7.  AppliesTo： 指定藉由指定適用的 Visual Studio 專案類型會在參考管理員 中可用的 Sdk。 辨識九個值： WindowsAppContainer、 VisualC、 VB、 CSharp、 WindowsXAML、 JavaScript、 受管理和原生。 SDK 撰寫者可以使用和 ("+')，或 (「&#124;")，而非 ("！")若要指定完全適用於 SDK 的專案類型的範圍運算子。  
+7.  AppliesTo： 指定藉由指定適用的 Visual Studio 專案類型會在參考管理員 中可用的 Sdk。 辨識九個值：WindowsAppContainer、 VisualC、 VB、 CSharp、 WindowsXAML、 管理、 JavaScript 和原生。 SDK 撰寫者可以使用和 ("+')，或 (「&#124;")，而非 ("！")若要指定完全適用於 SDK 的專案類型的範圍運算子。  
   
      WindowsAppContainer 識別專案[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式。  
   
-8.  SupportPrefer32Bit： 支援的值為"True"和"False"。 預設值為"True"。 如果值設定為"False"時，MSBuild 會傳回的錯誤[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]專案 （或警告對於傳統型專案） 如果參考 SDK 的專案已啟用的 Prefer32Bit。 如需 Prefer32Bit 的詳細資訊，請參閱[建置 Page，Project Designer (C#)](../ide/reference/build-page-project-designer-csharp.md)或是[編譯的 Page，Project Designer (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)。  
+8.  SupportPrefer32Bit:支援的值為"True"和"False"。 預設值為"True"。 如果值設定為"False"時，MSBuild 會傳回的錯誤[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]專案 （或警告對於傳統型專案） 如果參考 SDK 的專案已啟用的 Prefer32Bit。 如需 Prefer32Bit 的詳細資訊，請參閱[建置 Page，Project Designer (C#)](../ide/reference/build-page-project-designer-csharp.md)或是[編譯的 Page，Project Designer (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)。  
   
 9. SupportedArchitectures： 以分號分隔的清單的 SDK 支援的架構。 如果不支援目標的 SDK 架構中使用的專案，MSBuild 就會顯示警告。 如果未指定此屬性，MSBuild 會永遠不會顯示這種類型的警告。  
   
@@ -190,7 +185,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 12. CopyRedistToSubDirectory： 指定在 \redist 資料夾下的檔案複製目的地相對於應用程式封裝根目錄 (亦即**封裝位置**選擇建立應用程式套件精靈 中) 和執行階段配置根。 預設位置是根的應用程式封裝和 F5 版面配置。  
   
-13. DependsOn： 定義此 SDK 所依賴之 Sdk 的 SDK 身分識別清單。 這個屬性會出現在 [參考管理員] 的詳細資料窗格中。  
+13. DependsOn:定義此 SDK 所依賴之 Sdk 的 SDK 身分識別清單。 這個屬性會出現在 [參考管理員] 的詳細資料窗格中。  
   
 14. MoreInfo： 提供說明和詳細資訊的網頁 URL。 這個值會在右窗格的 [參考管理員中的詳細資訊] 連結。  
   
@@ -270,7 +265,6 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
     ```  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說： 建立使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [逐步解說： 建立使用 C# 或 Visual Basic 的 SDK](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+ [逐步解說：使用 c + + 建立 SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [逐步解說：使用 SDK 建立C#或 Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [管理專案中的參考](../ide/managing-references-in-a-project.md)
-

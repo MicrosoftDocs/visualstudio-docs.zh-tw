@@ -1,28 +1,23 @@
 ---
-title: 逐步解說︰ 大綱 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：大綱 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 897ff6a39716f424c40fa587d905847a0dbb3682
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3a5d54bdd3d2b7fad348df195560ad5b3cc461f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805264"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945354"
 ---
-# <a name="walkthrough-outlining"></a>逐步解說︰大綱
+# <a name="walkthrough-outlining"></a>逐步解說：大綱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以實作語言為基礎的功能，例如藉由定義的類型，您想要展開或摺疊的文字區域的大綱。 您可以定義區域中的內容語言服務，或您可以定義您自己的檔案名稱擴充功能和內容類型，並區定義套用至該類型，或您可以將區域定義套用至現有的內容類型 （例如 「 文字 」）。 本逐步解說示範如何定義及顯示大綱區域。  
@@ -139,5 +134,4 @@ ms.locfileid: "51805264"
 4.  應該包含這兩個大括號的大綱區域。 您應該能夠按一下減號左邊的左大括號來摺疊大綱區域。 當區域已摺疊，省略符號 （...） 應該已摺疊的區域，並包含文字的快顯視窗的左邊會出現**暫留文字**當您移動滑鼠指標的省略符號時，應該會出現。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

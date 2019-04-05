@@ -1,25 +1,20 @@
 ---
 title: XML 程式碼片段 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bf1ebeb70931e2e12f056ecfbaa45a6833e031df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c6c3155ee65031b57ec70cc7f22ed53cdef67ebf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183959"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943595"
 ---
 # <a name="xml-snippets"></a>XML 片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,20 +41,17 @@ XML 編輯器會提供一項功能，稱為*XML 程式碼片段*，可讓您更�
   
  插入片段的方式有兩種。 **插入程式碼片段**命令會將 XML 程式碼片段插入游標位置。 **環繞**命令會以 XML 片段環繞選定文字。 這兩個命令有可能是從**IntelliSense**下方的子功能表**編輯** 功能表中，或編輯器捷徑功能表。  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)。  
+ 如需詳細資訊，請參閱[如何：使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)。  
   
 ## <a name="schema-generated-xml-snippets"></a>結構描述產生的 XML 片段  
  XML 編輯器還具有從 XML 結構描述產生 XML 片段的功能。 此功能可讓您以從該項目的結構描述資訊產生的 XML 項目來填入項目。  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 產生的 XML 程式碼片段從 XML 結構描述](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)。  
+ 如需詳細資訊，請參閱[如何：從 XML 結構描述產生 XML 片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)。  
   
 ## <a name="create-new-xml-snippets"></a>建立新的 XML 片段  
  除了隨附的程式碼片段[!INCLUDE[msCoName](../includes/msconame-md.md)]Visual Studio 根據預設，您也可以建立及使用您自己的 XML 片段。  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 建立 XML 片段](../xml-tools/how-to-create-xml-snippets.md)。  
+ 如需詳細資訊，請參閱[如何：建立 XML 片段](../xml-tools/how-to-create-xml-snippets.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)
-
-
-

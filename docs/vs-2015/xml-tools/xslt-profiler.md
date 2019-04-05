@@ -1,25 +1,20 @@
 ---
 title: XSLT Profiler |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 8e852628-99fc-4e6e-8602-e1c13dde3b95
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03e72ab9b1050bd63804f2695a6547524e555fa1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2a91fabdd48609adc290a0f8980cf84f34aa97a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306835"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943596"
 ---
 # <a name="xslt-profiler"></a>XSLT 分析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,4 +32,3 @@ XSLT 分析工具是一種效能分析工具，可協助您開發並偵錯 XSLT 
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說：XSLT 分析工具](../xml-tools/walkthrough-xslt-profiler.md)
-
