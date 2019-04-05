@@ -1,24 +1,22 @@
 ---
 title: 使用 c + + Core Guidelines 檢查工具 |Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-code-analysis
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 1153f7a32c26946fafb1230699c4afcae976cd9e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799557"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944376"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + Core Guidelines 檢查工具
+# <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ Core Guidelines 檢查工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 C + + Core Guidelines 是可攜性的集合的指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。  Visual Studio 現在支援增益集封裝，建立其他規則的程式碼分析工具，以檢查您的程式碼與 c + + Core Guidelines 的合規性，並提供改善建議。  
@@ -81,32 +79,29 @@ int main()
   
  此範例會示範幾個可以找到的 c + + Core Check 規則的警告：  
   
-- C26494 是規則 Type.5： 一律初始化物件。  
+- C26494 是規則 Type.5:一律初始化物件。  
   
-- C26485 是規則 Bounds.3： 沒有陣列到指標 」 衰減。  
+- C26485 是規則 Bounds.3:任何陣列到指標 」 衰減。  
   
-- C26481 是規則 Bounds.1： 不使用指標算術。 請改用 `span`。  
+- C26481 是規則 Bounds.1:請勿使用指標算術。 請改用 `span`。  
   
   如果安裝和啟用，當您編譯此程式碼時前, 兩個警告皆為輸出，但會隱藏第三個 c + + Core Check 的程式碼分析規則集。 以下是範例程式碼的組建輸出：  
   
-  **1 >---已開始建置： 專案： CoreCheckExample、 組態： Debug Win32-**  
+  **1 >---已經開始建立：專案:CoreCheckExample，組態：偵錯 Win32-**  
 **----**  
 **1 > CoreCheckExample.cpp**  
-**1 > CoreCheckExample.vcxproj]-> [C:\Users\username\documents\visual studio 2015\P**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
-**1 > CoreCheckExample.vcxproj]-> [C:\Users\username\documents\visual studio 2015\P**  
-**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (完整 PDB)**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(6)： 警告 C26494： 變數 'arr' 是 uninitializ**  
+**ckexample\corecheckexample.cpp(6)： 警告 C26494:變數 'arr' 是 uninitializ**  
 **ed.一律會初始化物件。(type.5: http://go.microsoft.com/fwlink/p/?Link**  
-**識別碼 = 620421)**  
+**ID=620421)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7)： 警告 C26485： 運算式 'arr': 沒有陣列**  
+**ckexample\corecheckexample.cpp(7)： 警告 C26485:運算式 'arr':沒有陣列**  
  **指標 」 衰減。(bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
-**=== 建置： 1 成功、 0 失敗、 0 最新狀態，0 個略過 ===** 的 c + + Core Guidelines 是否有可協助您撰寫更好且更安全的程式碼。 不過，如果您有一個規則或設定檔不應該套用的位置執行個體，很容易就能直接在程式碼中隱藏它。 您可以使用`gsl::suppress`讓 c + + Core Check 偵測和報告任何違反規則，以下列程式碼區塊中的屬性。 您可以將標記個別的陳述式，以隱藏特定的規則。 您甚至可以隱藏整個 「 範圍 」 設定檔，藉由撰寫`[[gsl::suppress(bounds)]]`且不包含特定的規則數目。  
+**=== 組建中：1 個成功，0 失敗、 0 最新狀態，0 個略過 ===** 的 c + + Core Guidelines 是否有可協助您撰寫更好且更安全的程式碼。 不過，如果您有一個規則或設定檔不應該套用的位置執行個體，很容易就能直接在程式碼中隱藏它。 您可以使用`gsl::suppress`讓 c + + Core Check 偵測和報告任何違反規則，以下列程式碼區塊中的屬性。 您可以將標記個別的陳述式，以隱藏特定的規則。 您甚至可以隱藏整個 「 範圍 」 設定檔，藉由撰寫`[[gsl::suppress(bounds)]]`且不包含特定的規則數目。  
   
 ## <a name="use-the-guideline-support-library"></a>使用指導方針的支援程式庫  
  Microsoft.CppCoreCheck NuGet 套件也會安裝包含 Microsoft 實作的指導方針的支援程式庫 (GSL) 中的封裝。 GSL 中也會提供獨立表單[ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl)。 如果您想要遵循核心指導方針，有幫助。 此程式庫。 GSL 包含可讓您以更安全的替代項目取代出錯建構的定義。 例如，您可以取代`T*, length`的參數組`span<T>`型別。 GSL 開放原始碼，因此如果您想要看一下程式庫來源註解，或參與編輯，專案，請參閱[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。
-
-
-

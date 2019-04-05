@@ -1,14 +1,9 @@
 ---
 title: CreateExpInstance 公用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
 - experimental hive
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 73a6761e844cee41c1a6f0df79f0d6529f4a8215
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 7d778f0f31a7651412915a898bff9e4bdfe6c55f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768252"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943172"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 公用程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,19 +33,19 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 ```  
   
 #### <a name="parameters"></a>參數  
- / 建立  
+ /Create  
  建立實驗執行個體。  
   
- / 重設  
+ /Reset  
  刪除實驗的執行個體，並接著會建立一個新。  
   
  /Clean  
  刪除實驗性執行個體。  
   
- / VSInstance  
+ /VSInstance  
  包含要複製基底的 Visual Studio 執行個體的目錄名稱。  
   
- / RootSuffix  
+ /RootSuffix  
  要附加至實驗執行個體目錄的名稱尾碼。  
   
 ## <a name="remarks"></a>備註  
@@ -64,8 +59,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
   
  下列範例會重設 Visual Studio 的預設實驗性執行個體。  
   
- **CreateExpInstance.exe /Reset /VSInstance = 14.0 /RootSuffix Exp 的 =**  
+ **CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp**  
   
 ## <a name="see-also"></a>另請參閱  
  [發行產品](../../misc/releasing-a-visual-studio-integration-product.md)
-

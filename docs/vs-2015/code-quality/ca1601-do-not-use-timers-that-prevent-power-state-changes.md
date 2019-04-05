@@ -1,14 +1,9 @@
 ---
-title: CA1601： 不要使用會妨礙電源狀態變更的計時器 |Microsoft Docs
-ms.custom: ''
+title: CA1601:不要使用會妨礙電源狀態變更的計時器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1601
 - DoNotUseTimersThatPreventPowerStateChanges
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 27c4098412dfead4a17945b389d9a14ffddbc495
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 228c95a8f0c3e1b9b1643e529e78f52f1e059bc5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912743"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930133"
 ---
-# <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601：不要使用會妨礙電源狀態變更的計時器
+# <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601:不要使用會妨礙電源狀態變更的計時器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -48,6 +43,3 @@ ms.locfileid: "49912743"
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  只有當所引發的計時器每秒超過一次，而且行動力考量可以放心地忽略，則應該隱藏此規則。
-
-
-

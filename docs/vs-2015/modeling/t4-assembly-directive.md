@@ -1,23 +1,20 @@
 ---
 title: T4 組件指示詞 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 44949749-ce3c-4fb5-8690-a17f1564ac2f
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 97e28347ba6985d99386647219f92aac9a221398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f81bdcad4f255585c2c554add59ed04dea5872d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873574"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944579"
 ---
 # <a name="t4-assembly-directive"></a>T4 組件指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +39,7 @@ ms.locfileid: "49873574"
   
 - 組件的絕對路徑  
   
-  `$(variableName)` 語法可用來參考 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 變數 (例如 `$(SolutionDir)`)，而 `%VariableName%` 可用來參考環境變數。 例如:   
+  `$(variableName)` 語法可用來參考 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 變數 (例如 `$(SolutionDir)`)，而 `%VariableName%` 可用來參考環境變數。 例如：  
   
 ```  
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>  
@@ -97,6 +94,3 @@ ms.locfileid: "49873574"
   
 ## <a name="see-also"></a>另請參閱  
  [T4 包含指示詞](../modeling/t4-include-directive.md)
-
-
-

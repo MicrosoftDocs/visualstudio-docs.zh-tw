@@ -1,28 +1,23 @@
 ---
-title: 如何： 建立。Vsct 檔案 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立。Vsct 檔案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bbfdcf605a1c4346874ec222937a458225788151
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 2d3def90d568b77ccfd781d573b49551313d733f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802625"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944739"
 ---
-# <a name="how-to-create-a-vsct-file"></a>如何： 建立。Vsct 檔案
+# <a name="how-to-create-a-vsct-file"></a>HOW TO：建立 .Vsct 檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 有數種方式可建立 XML 型 Visual Studio Command Table (.vsct) 組態檔。  
@@ -102,7 +97,6 @@ ms.locfileid: "51802625"
 ## <a name="see-also"></a>另請參閱  
  [撰寫。Vsct 檔案](../../extensibility/internals/authoring-dot-vsct-files.md)   
  [Visual Studio 命令資料表 (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [如何： 建立。從現有的 Vsct 檔案。Ctc 檔案](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file.md)   
- [如何： 建立。從現有的 Vsct 檔案。Cto 檔案](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)   
+ [如何：建立。從現有的 Vsct 檔案。Ctc 檔案](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file.md)   
+ [如何：建立。從現有的 Vsct 檔案。Cto 檔案](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)   
  [VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)
-

@@ -1,28 +1,23 @@
 ---
 title: 列舉值 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, enumerators
 ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90ba436dcfbd09c29f68bff056e315f057e1a983
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 65a03a8dc741ec86aca3137f49cd753722ede215
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810274"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942677"
 ---
-# <a name="enumerators"></a>列舉值
+# <a name="enumerators"></a>列舉程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 此區段會列出原始檔控制外掛程式必須了解原始檔控制外掛程式 API 中的列舉值資料類型。  
@@ -55,4 +50,3 @@ ms.locfileid: "51810274"
   
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)  
  提供原始檔控制外掛程式 API 中的所有項目的完整清單。
-

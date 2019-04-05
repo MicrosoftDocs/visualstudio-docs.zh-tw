@@ -1,27 +1,22 @@
 ---
 title: 舊版語言服務剖析器和掃描器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fd419c569a298afd37548fd7b85a23cad733e371
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4d5110c0289a630640fdb2c2383234173d931c72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786392"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942162"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>舊版語言服務的剖析器和掃描器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -120,7 +115,7 @@ namespace MyNamespace
 12. 完成此項目。  
   
 ### <a name="summary"></a>總結  
- 比對的大括號作業僅限於通常簡單組的語言項目。 更複雜的項目，例如比對三合一 ("`if(…)`"，"`{`"和"`}`"，或 「`else`"，"`{`"和"`}`」)，可以反白顯示文字自動完成作業的一部分。 例如，"else"word 完成時，比對"`if`」 陳述式可以反白顯示。 如果有一系列`if` / `else if`陳述式中，所有人都可以使用相同的機制，做為對稱的括號反白顯示。 <xref:Microsoft.VisualStudio.Package.Source>基底類別已經支援此做法，，如下所示： 掃描器必須傳回語彙基元的觸發程序的值<xref:Microsoft.VisualStudio.Package.TokenTriggers>結合觸發程序值<xref:Microsoft.VisualStudio.Package.TokenTriggers>游標位置之前的語彙基元。  
+ 比對的大括號作業僅限於通常簡單組的語言項目。 更複雜的項目，例如比對三合一 ("`if(…)`"，"`{`"和"`}`"，或 「`else`"，"`{`"和"`}`」)，可以反白顯示文字自動完成作業的一部分。 例如，"else"word 完成時，比對"`if`」 陳述式可以反白顯示。 如果有一系列`if` / `else if`陳述式中，所有人都可以使用相同的機制，做為對稱的括號反白顯示。 <xref:Microsoft.VisualStudio.Package.Source>基底類別已經支援此做法，，如下所示：掃描器必須傳回的語彙基元的觸發程序值<xref:Microsoft.VisualStudio.Package.TokenTriggers>結合的觸發程序值<xref:Microsoft.VisualStudio.Package.TokenTriggers>游標位置之前的語彙基元。  
   
  如需詳細資訊，請參閱 <<c0> [ 舊版語言服務中的大括號比對](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)。  
   
@@ -143,4 +138,3 @@ namespace MyNamespace
  [舊版語言服務概觀](../../extensibility/internals/legacy-language-service-overview.md)   
  [舊版語言服務中的語法上色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
  [舊版語言服務中的括號對稱](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
-

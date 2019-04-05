@@ -1,27 +1,24 @@
 ---
-title: 如何： 存取及限制目前的選取範圍 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：存取及限制目前的選取範圍 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, accessing the current selection
 ms.assetid: 2990981e-dfae-416f-b0d0-7197f1242dfa
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ec8ff7ae0b0e006528b11604f54dc74170857cf7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 731968f79565742595b4f574e986d69a311d5f90
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187567"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940991"
 ---
-# <a name="how-to-access-and-constrain-the-current-selection"></a>如何：存取及限制目前的選取範圍
+# <a name="how-to-access-and-constrain-the-current-selection"></a>HOW TO：存取及限制目前的選取範圍
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 當您撰寫您的網域特定語言的命令或軌跡處理常式時，您可以判斷哪些使用者以滑鼠右鍵按一下的項目。 您也可以防止某些圖形或欄位被選取。 例如，您可以排列，當使用者按一下圖示裝飾項目，包含它的形狀會改為選取。 限制這種方式中的選取範圍減少，您必須撰寫處理常式。 它也會讓您更輕鬆的使用者，可以按一下任何位置中的圖形而不需要避免裝飾項目。  
@@ -219,6 +216,3 @@ namespace CompanyName.ProductName.GroupingDsl
  <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService>   
  <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules>   
  <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>
-
-
-

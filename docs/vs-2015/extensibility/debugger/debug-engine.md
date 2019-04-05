@@ -1,26 +1,21 @@
 ---
 title: 偵錯引擎 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bf2335b907601bb17276b06ae1bef033a1641515
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2426ba49a3ef0035adc04b5b3267bedc9c51b366
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733321"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929974"
 ---
 # <a name="debug-engine"></a>偵錯引擎
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,4 +43,3 @@ ms.locfileid: "51733321"
  [偵錯工具元件](../../extensibility/debugger/debugger-components.md)   
  [運算式評估工具](../../extensibility/debugger/expression-evaluator.md)   
  [符號提供者](../../extensibility/debugger/symbol-provider.md)
-

@@ -1,27 +1,22 @@
 ---
 title: 取得連接埠 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - ports, getting
 - debugging [Debugging SDK], ports
 ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 660ead58af40f85b4da4d68d7172866f5fe1fd0c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9e39dcbcdb3fe8396c3d4d42003a7aa40b5f527a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789898"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945063"
 ---
 # <a name="getting-a-port"></a>取得連接埠
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -108,4 +103,3 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
  [啟用要偵錯程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)   
  [連接埠提供者](../../extensibility/debugger/port-suppliers.md)   
  [連接埠](../../extensibility/debugger/ports.md)
-

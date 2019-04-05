@@ -1,14 +1,9 @@
 ---
-title: 逐步解說： 建立基本獨立 Shell 應用程式 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立基本獨立 Shell 應用程式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, walkthroughs
 - Shell [Visual Studio], walkthroughs
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 901bbf12c9c1d153b84b3ed74f6ae8e97ebb2c9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8eec2db11d97cec957e16f29838564a729370eeb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777314"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942097"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>逐步解說： 建立基本的 Isolated 的 Shell 應用程式
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>逐步解說：建立基本的 Isolated 的 Shell 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本逐步解說示範如何建立獨立模式的 shell 解決方案、 自訂 [關於說明] 工具視窗中，並建立安裝程式來安裝獨立模式的 shell。  
@@ -120,7 +115,7 @@ ms.locfileid: "51777314"
   
 2.  下面這行取消註解：  
   
-     [$RootKey$ \Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3.  重建方案，並開始偵錯 isolated 的 shell。 開啟 XML 檔案，比方說，\MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct。 請確認檔案中的 XML 關鍵字會不以色彩標示和輸入"<"該行不會使 XML 工具提示。  
   
@@ -265,4 +260,3 @@ ms.locfileid: "51777314"
   
 ## <a name="testing-the-installation-program"></a>測試安裝程式  
  若要測試安裝，請將 setup.exe 檔案複製到另一部電腦並執行安裝程式可執行檔。 您應該能夠執行 isolated 的 shell 應用程式。
-

@@ -1,26 +1,21 @@
 ---
 title: 調整至編輯器的舊版程式碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapters
 ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 660ce81898750851f3b1b3f0c89fadc262a154ba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4cbce5c13c51747a08b3832440ef91ace3d6a89c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740651"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930250"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>調整至編輯器的舊版程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,4 +148,3 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     textBufferFactoryService =  
          componentModel.GetService<ITextBufferFactoryService>();     
     ```
-

@@ -1,14 +1,9 @@
 ---
 title: Shell （獨立模式或整合式） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell
 - Visual Studio, Shell
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 856e32d4569e5dcb73e783d0a6b66e186fbb1848
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d8b08dfe812245a21160fa2f16b4c94728785ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755887"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944525"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell （獨立模式或整合）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "51755887"
  若要發佈您的整合式或外掛式 shell 應用程式，您需要包括您的應用程式、 特殊整合式或外掛式 shell 可轉散發套件，以及安裝程式。 如需有關散發與安裝的詳細資訊，請參閱[散發獨立 Shell 應用程式](../extensibility/distributing-isolated-shell-applications.md)。  
   
 > [!IMPORTANT]
->  [終端使用者授權合約 (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552)殼層的 Visual Studio 整合，並隔離包含資料收集 區段 (**第 3 節。資料**)。  它會描述可能會由 Microsoft 的整合式或外掛式 shell 軟體建置到您的應用程式的使用者收集的客戶使用量資料。 如需詳細資訊，請參閱 < [Microsoft Visual Studio 產品系列隱私權聲明](https://www.visualstudio.com/en-us/dn948229)。  
+>  [終端使用者授權合約 (EULA)](https://www.visualstudio.com/support/legal/mt171552)殼層的 Visual Studio 整合，並隔離包含資料收集 區段 (**第 3 節。資料**)。  它會描述可能會由 Microsoft 的整合式或外掛式 shell 軟體建置到您的應用程式的使用者收集的客戶使用量資料。 如需詳細資訊，請參閱 < [Microsoft Visual Studio 產品系列隱私權聲明](https://www.visualstudio.com/dn948229)。  
 > 
 >  如果您透過您的應用程式，從您的客戶收集不同的使用方式資料，您必須提供適當的通知給您的收集您應用程式的使用者。  當您將獨立或整合式 shell 軟體發佈為應用程式的一部分，根據 Visual Studio 軟體開發套件的授權，您必須包含下列其中一項：  
 > 
@@ -64,4 +59,3 @@ ms.locfileid: "51755887"
   
 ## <a name="see-also"></a>另請參閱  
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)
-

@@ -1,32 +1,27 @@
 ---
 title: BuildProjectOnload 元素 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0b349ff80532bd8e724070fcc65183ac6897145f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 464c427008c739f23431c58bd647aaa3b1f5609d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742956"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930346"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 項目 (Visual Studio 樣板)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 當您建立並將它們新增至方案，請建立新的專案。 不會建置整個方案。  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>語法  
@@ -56,7 +51,7 @@ ms.locfileid: "51742956"
  文字必須是`true`或`false`，指出要從範本建立時建置新的專案。  
   
 ## <a name="remarks"></a>備註  
- `BuildProjectOnLoad` 是選擇性項目。 預設值是 `false`。  
+ `BuildProjectOnLoad` 是選擇性項目。 預設值為 `false`。  
   
 ## <a name="example"></a>範例  
  下列範例說明 Visual C# 範本的中繼資料。  
@@ -89,4 +84,3 @@ ms.locfileid: "51742956"
 ## <a name="see-also"></a>另請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
-

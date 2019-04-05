@@ -1,29 +1,24 @@
 ---
-title: 如何： 實作巢狀的專案 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：實作巢狀的專案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8a392b8b336c57c47055357147075f29ba173d8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810126"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944480"
 ---
-# <a name="how-to-implement-nested-projects"></a>如何： 實作巢狀的專案
+# <a name="how-to-implement-nested-projects"></a>HOW TO：實作巢狀專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 當您建立巢狀的專案類型，有幾個額外步驟必須實作。 父專案會採用一些相同的方案具有及其巢狀 （子系） 專案的責任。 父專案是類似於方案的專案的容器。 特別是，有數個必須在解決方案，以及若要建立巢狀專案的階層的父專案所引發的事件。 這些事件是以建立巢狀的專案的下列程序所述。  
@@ -96,7 +91,6 @@ ms.locfileid: "51810126"
 ## <a name="see-also"></a>另請參閱  
  [新增項目加入新項目對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)   
- [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [內容參數](../../extensibility/internals/context-parameters.md)   
  [精靈檔 (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
-
