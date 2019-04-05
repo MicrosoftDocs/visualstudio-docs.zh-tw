@@ -1,25 +1,22 @@
 ---
 title: 將自訂屬性加入分層圖 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom properties
 ms.assetid: 52b3ac25-d10b-4507-a1fe-209ccb4d2777
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9024ccda38e6b261b29d808e6fafb7837776fc8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 511f19e48f91c6719c8b0021ff7eae4071ce89b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789274"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942560"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>將自訂屬性加入分層圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,6 +164,3 @@ namespace MyNamespace
   
 ## <a name="see-also"></a>另請參閱  
  [擴充分層圖](../modeling/extend-layer-diagrams.md)
-
-
-

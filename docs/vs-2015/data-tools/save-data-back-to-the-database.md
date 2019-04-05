@@ -1,12 +1,9 @@
 ---
 title: 將資料儲存回資料庫 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +25,13 @@ ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: 413a92f2e42b6bacfeb62deb3bae0e50d5ef908b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281845"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945654"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,22 +79,22 @@ ms.locfileid: "52281845"
   
 |DataRowVersion|目標資料集|來源資料集|  
 |--------------------|--------------------|--------------------|  
-|原始|James Wilson|James C.Wilson|  
-|目前|Jim Wilson|James C.Wilson|  
+|原始|James Wilson|James C. Wilson|  
+|目前|Jim Wilson|James C. Wilson|  
   
  呼叫<xref:System.Data.DataSet.Merge%2A>方法的先前資料表上`preserveChanges=false targetDataset.Merge(sourceDataset)`產生下列結果：  
   
 |DataRowVersion|目標資料集|來源資料集|  
 |--------------------|--------------------|--------------------|  
-|原始|James C.Wilson|James C.Wilson|  
-|目前|James C.Wilson|James C.Wilson|  
+|原始|James C. Wilson|James C. Wilson|  
+|目前|James C. Wilson|James C. Wilson|  
   
  呼叫<xref:System.Data.DataSet.Merge%2A>方法使用`preserveChanges = true targetDataset.Merge(sourceDataset, true)`產生下列結果：  
   
 |DataRowVersion|目標資料集|來源資料集|  
 |--------------------|--------------------|--------------------|  
-|原始|James C.Wilson|James C.Wilson|  
-|目前|Jim Wilson|James C.Wilson|  
+|原始|James C. Wilson|James C. Wilson|  
+|目前|Jim Wilson|James C. Wilson|  
   
 > [!CAUTION]
 >  在 `preserveChanges = true`案例中，如果<xref:System.Data.DataSet.RejectChanges%2A>記錄，以在目標資料集上呼叫方法，則它會還原為原始資料，從*來源*資料集。 這表示，如果您嘗試更新原始資料來源與目標資料集，它可能無法以尋找要更新原始的資料列。 您可以防止並行存取違規，另一個資料集填入資料來源更新的記錄，然後再執行合併以防止並行存取違規。 （當另一位使用者已填入資料集之後，請修改資料來源中的記錄會發生並行存取違規）。  
@@ -170,7 +167,7 @@ ms.locfileid: "52281845"
   
  `GetChanges` 本身會傳回所有已變更的記錄。 相反地，藉由傳遞所需<xref:System.Data.DataRowState>做為參數`GetChanges`方法中，您可以指定您想要變更的資料錄的哪些子集： 新加入的記錄，記錄會標示為刪除，卸離的記錄，或修改記錄。  
   
- 取得已變更的記錄的子集時，您想要將記錄傳送至另一個元件進行處理。 而不是傳送整個資料集，您可以減少取得元件所需的記錄與其他元件通訊額外的負荷。 如需詳細資訊，請參閱 <<c0> [ 如何： 擷取變更資料列](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
+ 取得已變更的記錄的子集時，您想要將記錄傳送至另一個元件進行處理。 而不是傳送整個資料集，您可以減少取得元件所需的記錄與其他元件通訊額外的負荷。 如需詳細資訊，請參閱[如何：擷取已變更的資料列](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
   
 ## <a name="committing-changes-in-the-dataset"></a>認可資料集中的變更  
  如果進行變更時，資料集中<xref:System.Data.DataRow.RowState%2A>屬性已變更的資料列的設定。 建立、 維護，而且可供您的資料錄的原始和目前版本<xref:System.Data.DataRowView.RowVersion%2A>屬性。 必須將正確的更新傳送至資料來源的中繼資料會儲存在這些變更的資料列的屬性。  
@@ -221,14 +218,14 @@ ms.locfileid: "52281845"
   
  您可以驗證資料透過數種方式：  
   
-- 在商務層中，將程式碼加入至您的應用程式，以驗證資料。 資料集是執行這項操作的一個位置。 資料集提供的一些後端驗證的優點，例如能夠驗證變更，因為資料行和資料列的值變更。 如需詳細資訊，請參閱 <<c0> [ 驗證資料集中](../data-tools/validate-data-in-datasets.md)。  
+- 在商務層中，將程式碼加入至您的應用程式，以驗證資料。 資料集是執行這項操作的一個位置。 DataSet 設計工具提供了一些後端驗證的優點，例如能夠驗證變更，因為資料行和資料列的值變更。 如需詳細資訊，請參閱 <<c0> [ 驗證資料集中](../data-tools/validate-data-in-datasets.md)。  
   
 - 在 將驗證新增至表單的展示層。 如需詳細資訊，請參閱 <<c0> [ 在 Windows Form 中驗證使用者輸入](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1)。  
   
 - 在資料後端，將資料傳送至資料來源 — 比方說，資料庫，並讓它接受或拒絕資料。 如果您正在使用的資料庫，具有複雜的驗證資料，以及提供錯誤資訊的設備，這可能是實用的方法，因為您可以驗證的資料，不論其來自何處。 不過，這種方法可能不會配合特定應用程式的驗證需求。 此外，驗證資料的資料來源可能會導致許多往返到資料來源，取決於您的應用程式可由後端所引發的驗證錯誤的解析的協助。  
   
   > [!IMPORTANT]
-  >  使用資料命令時<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>屬性設為<xref:System.Data.CommandType>，仔細檢查，然後將它傳遞到您的資料庫用戶端傳來的資訊。 惡意使用者可能會嘗試傳送 （插入） 修改過或其他的 SQL 陳述式，以取得未經授權的存取，或資料庫損毀。 傳送至資料庫的使用者輸入之前，請務必確認資訊有效。 最好一律使用參數化的查詢或預存程序，可能的話。 如需詳細資訊，請參閱 [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07) (指令碼攻擊概觀)。  
+  >  使用資料命令時<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>屬性設為<xref:System.Data.CommandType>，仔細檢查，然後將它傳遞到您的資料庫用戶端傳來的資訊。 惡意的使用者可能會嘗試傳送 (插入) 修改過或額外的 SQL 陳述式，以獲得未授權的存取權或藉此破壞資料庫。 傳送至資料庫的使用者輸入之前，請務必確認資訊有效。 最好一律使用參數化的查詢或預存程序，可能的話。 如需詳細資訊，請參閱 [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07) (指令碼攻擊概觀)。  
   
   集中進行完變更之後，您可以將變更傳送至資料來源。 大多數情況下，您可以呼叫`Update`TableAdapter （或資料配接器） 的方法。 方法會迴圈每一筆記錄資料表中的資料，判斷需要該類型的更新 （更新、 插入或刪除），如果有的話，然後再執行適當的命令。  
   
@@ -275,14 +272,7 @@ ms.locfileid: "52281845"
 >  您也可以在 設定值`Parameters`收集程式碼，您通常會執行中的資料配接器的事件處理常式中自行<xref:System.Data.DataTable.RowChanging>事件。  
   
 ## <a name="see-also"></a>另請參閱  
- [TableAdapter 概觀](../data-tools/tableadapter-overview.md)   
  [使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)   
- [在 Visual Studio 中的資料應用程式的概觀](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [連接到 Visual Studio 中的資料](../data-tools/connecting-to-data-in-visual-studio.md)   
- [準備您的應用程式接收資料](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [將資料擷取至您的應用程式](../data-tools/fetching-data-into-your-application.md)   
+ [準備您的應用程式以接收資料](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)  \(機器翻譯\)  
  [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [在您的應用程式中編輯資料](../data-tools/editing-data-in-your-application.md)   
- [驗證資料](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [儲存資料](../data-tools/saving-data.md)
-
+ [驗證資料](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e) \(機器翻譯\)   

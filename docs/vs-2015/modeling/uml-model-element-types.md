@@ -1,25 +1,22 @@
 ---
 title: UML 模型項目類型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, types
 ms.assetid: 25345a53-7246-4eb7-8ad9-0b695aa171a2
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 55311d02bef9654637a1b413519cc562a5c7f52b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4c755a0293e6bbf5dd119002f367f266a69bc3ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758527"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942747"
 ---
 # <a name="uml-model-element-types"></a>UML 模型項目類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -201,6 +198,3 @@ Classes.IElement
  [定義要擴充 UML 的設定檔](../modeling/define-a-profile-to-extend-uml.md)   
  [定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)   
  [UML 模型擴充性的 API 參考](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

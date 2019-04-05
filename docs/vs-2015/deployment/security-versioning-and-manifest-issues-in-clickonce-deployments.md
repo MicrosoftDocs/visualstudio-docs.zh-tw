@@ -1,14 +1,9 @@
 ---
 title: 安全性、 版本設定和 ClickOnce 部署中的資訊清單問題 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +23,13 @@ ms.assetid: d5d0c90b-ac1a-44e2-88dc-0d0ffd881624
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 77685b2eb6397d1edf9a342c25838fcefac2e619
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1227dea199ebff465fc2dde3ec30568bb50e9ec6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289220"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943559"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 部署中的安全性、版本控制和資訊清單問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,6 +94,3 @@ ms.locfileid: "49289220"
  [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)
-
-
-

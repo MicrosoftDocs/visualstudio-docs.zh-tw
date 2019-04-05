@@ -1,23 +1,20 @@
 ---
 title: 更新 UML 模型，從背景執行緒 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 42c06b0b-b681-4e19-b5f3-6116dd2a4072
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4173b70cda9df39ce8a4500817fff199ed1a2996
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cd0707ec7838ffb2dcebc8a176c79810f2614133
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750016"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945095"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>從背景執行緒更新 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +38,9 @@ ms.locfileid: "51750016"
   
    -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.[版本]  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[版本]  
   
    -   Microsoft.VisualStudio.Uml.Interfaces  
   
@@ -193,6 +190,3 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
 ## <a name="see-also"></a>另請參閱  
  [在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [在模型圖表上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)
-
-
-

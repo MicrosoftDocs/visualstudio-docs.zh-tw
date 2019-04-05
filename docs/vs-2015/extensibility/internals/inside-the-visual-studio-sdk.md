@@ -1,14 +1,9 @@
 ---
 title: 深入探索 Visual Studio SDK |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b7a7642d8cd33d53bb7d6d2a472a0690713e25d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ded1741c9364ca9fa706441b5cfa313ce6e58569
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795826"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000731"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探索 Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Visual Studio 架構一般化的檢視
  Visual Studio shell 提供的基本功能，並支援其元件的 Vspackage 和 MEF 擴充功能之間的跨通訊。 如需詳細資訊，請參閱 < [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md)。  
   
 ## <a name="user-experience-guidelines"></a>使用者體驗指南  
- 如果您計劃適用於 Visual Studio 中設計的新功能，您應該看看這些指導方針來設計和可用性的祕訣︰ [Visual Studio 使用者經驗指導方針](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。  
+ 如果您計劃適用於 Visual Studio 中設計的新功能，您應該看看這些指導方針來設計和可用性的秘訣：[Visual Studio 使用者經驗指導方針](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。  
   
 ## <a name="commands"></a>命令  
  命令是完成工作 (例如，列印文件、重新整理檢視，或建立新檔案) 的功能。  
@@ -95,10 +90,10 @@ Visual Studio 架構一般化的檢視
   
  專案也可能會收集成是一組共同運作以建立應用程式的一或多個專案的解決方案。 屬於方案的專案和狀態資訊會儲存在兩個方案檔，以文字為基礎的方案 (.sln) 檔和二進位的解決方案使用者選項 (.suo) 檔案。 這些檔案是類似於在舊版中所使用的群組 (.vbg) 檔案[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]，以及工作區 (.dsw) 和使用者選項 (.opt) 檔案中較早版本所使用的[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]。  
   
- 如需詳細資訊，請參閱 <<c0> [ 專案](../../extensibility/internals/projects.md)並[解決方案](../../extensibility/internals/solutions.md)。  
+ 如需詳細資訊，請參閱 <<c0> [ 專案](../../extensibility/internals/projects.md)並[解決方案](../../extensibility/internals/solutions-overview.md)。  
   
 ## <a name="project-and-item-templates"></a>專案與項目範本  
- Visual Studio 包含預先定義的專案範本和專案項目範本。 您可以也讓您自己的範本或取得社群中的範本，並再將它們整合到 Visual Studio。 [MSDN Code Gallery](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio)是範本和擴充功能的位置。  
+ Visual Studio 包含預先定義的專案範本和專案項目範本。 您可以也讓您自己的範本或取得社群中的範本，並再將它們整合到 Visual Studio。 [MSDN Code Gallery](https://code.msdn.microsoft.com/site/search?query=visual%20studio)是範本和擴充功能的位置。  
   
  範本包含的專案結構和基本建置特定類型的應用程式、 控制項、 程式庫或類別所需的檔案。 當您想要開發的軟體，類似於其中一個範本時，建立以範本為基礎的專案，然後修改 該專案中的檔案。  
   
@@ -108,9 +103,9 @@ Visual Studio 架構一般化的檢視
  如需詳細資訊，請參閱 <<c0> [ 加入專案和專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)。  
   
 ## <a name="properties-and-options"></a>屬性和選項  
- **屬性**視窗中顯示的單一或多個選取的項目屬性：[擴充屬性](../../extensibility/internals/extending-properties.md)選項 頁面包含以特定的元件，例如相關的選項集程式設計語言或 VSPackage:[選項和選項頁](../../extensibility/internals/options-and-options-pages.md)。 設定是否通常與 UI 相關的功能，可以匯入和匯出：[支援的使用者設定](../../extensibility/internals/support-for-user-settings.md)。  
+ **屬性**視窗會顯示單一或多個選取的項目屬性：[擴充屬性](../../extensibility/internals/extending-properties.md)選項 頁面包含屬於特定的元件，例如程式設計語言或 VSPackage 選項組：[選項和選項頁](../../extensibility/internals/options-and-options-pages.md)。 這是通常與 UI 相關的功能，可以匯入和匯出設定：[支援使用者設定](../../extensibility/internals/support-for-user-settings.md)。  
   
-## <a name="visual-studio-services"></a>Visual Studio 服務  
+## <a name="visual-studio-services"></a>Visual Studio Services  
  服務提供一組特定的元件使用的介面。 Visual Studio 提供一組可供任何元件，包括擴充功能的服務。 例如，Visual Studio 服務可讓工具視窗，顯示或隱藏起來，以動態方式啟用 Help、 狀態列或使用者介面事件的存取。 Visual Studio 編輯器也提供服務，可以匯入的編輯器延伸模組。 如需詳細資訊，請參閱 <<c0> [ 使用和提供服務](../../extensibility/using-and-providing-services.md)。  
   
 ## <a name="debugger"></a>偵錯工具  
@@ -133,4 +128,3 @@ Visual Studio 架構一般化的檢視
   
 ## <a name="help-viewer"></a>說明檢視器  
  您可以將您自己的說明和 F1 頁面整合到說明檢視器中。 如需詳細資訊，請參閱 < [Microsoft Help Viewer SDK](../../extensibility/internals/microsoft-help-viewer-sdk.md)。
-

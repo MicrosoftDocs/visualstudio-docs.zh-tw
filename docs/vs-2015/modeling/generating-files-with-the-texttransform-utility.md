@@ -1,12 +1,9 @@
 ---
 title: 使用 TextTransform 公用程式產生檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
@@ -14,13 +11,13 @@ ms.assetid: 06a48235-fe02-403e-a1cf-2ae70b4db62f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7dbe189c9b46c10dc7bac5da4b87457d7c6ecbf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 75438b5a2ffa5917f667ab3fdc3a9bd3528f0e55
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227444"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945768"
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>使用 TextTransform 公用程式產生檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,6 +61,3 @@ TextTransform [<options>] <templateName>
 |在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中產生檔案。|[使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
 |撰寫指示詞處理器，以轉換您專屬的資料來源。|[自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)|  
 |撰寫文字範本化主應用程式，可讓您叫用您自己的應用程式從文字範本。|[使用自訂主機處理文字範本](../modeling/processing-text-templates-by-using-a-custom-host.md)|
-
-
-

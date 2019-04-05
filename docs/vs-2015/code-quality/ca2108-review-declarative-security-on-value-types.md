@@ -1,14 +1,9 @@
 ---
-title: ： Ca2108 實值型別上的宣告式安全性 |Microsoft Docs
-ms.custom: ''
+title: CA2108:必須檢閱實值型別上的宣告式安全性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ReviewDeclarativeSecurityOnValueTypes
 - CA2108
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b437fa656c2a2d0650463fd0ab78119f67099ac7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b8bafb021e2a73b0a5bed7feba21fbb38fff8ce
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889658"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943240"
 ---
-# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108：必須檢查實值類型上的宣告式安全性
+# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108:必須檢閱實值類型上的宣告式安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -61,11 +56,8 @@ ms.locfileid: "49889658"
 
  此範例會產生下列輸出。
 
- **結構的自訂建構函式： 要求失敗。** 
+ **結構自訂建構函式：要求失敗。** 
 **新值 SecuredTypeStructure 100 100**
 **新值 SecuredTypeStructure 200 200**
 ## <a name="see-also"></a>另請參閱
  [連結要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)[資料與模型化](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
-
-
-

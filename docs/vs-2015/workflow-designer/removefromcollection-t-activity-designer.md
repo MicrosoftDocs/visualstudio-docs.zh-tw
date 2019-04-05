@@ -1,11 +1,8 @@
 ---
 title: RemoveFromCollection&lt;T&gt;活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.RemoveFromCollection`1.UI
@@ -13,13 +10,13 @@ ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 341ed640666cc4501ac8917b568bf3f41b89b823
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 45a426d4703ed2a402ee7f06341e55d65ae410ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170921"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943271"
 ---
 # <a name="removefromcollectionlttgt-activity-designer"></a>RemoveFromCollection&lt;T&gt;活動設計工具
 **RemoveFromCollection\<T >** 活動設計工具會用來建立及設定<xref:System.Activities.Statements.RemoveFromCollection%601>活動。  
@@ -35,7 +32,7 @@ ms.locfileid: "49170921"
 ### <a name="the-removefromcollectiont-properties"></a>RemoveFromCollection\<T > 屬性  
  下表顯示 <xref:System.Activities.Statements.RemoveFromCollection%601> 屬性，並且描述屬性在設計工具中的使用方式。  
   
-|屬性名稱|必要項|使用方式|  
+|屬性名稱|必要|使用量|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.RemoveFromCollection%601> 活動可選用的易記名稱。 預設值是 RemoveFromCollection\<Int32 >。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|  
 |<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|要加入的項目**集合\<T >**。 此項目屬於類型*T*，這是型別的*TypeArgument*。 若要指定項目，請在屬性方格中輸入 Visual Basic 運算式。|  
@@ -45,6 +42,6 @@ ms.locfileid: "49170921"
   
 ## <a name="see-also"></a>另請參閱  
  [集合](../workflow-designer/collection-activity-designers.md)   
- [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)   
- [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)   
+ [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)   
+ [ClearCollection\<T>](../workflow-designer/clearcollection-t-activity-designer.md)   
  [ExistsInCollection\<T>](../workflow-designer/existsincollection-t-activity-designer.md)

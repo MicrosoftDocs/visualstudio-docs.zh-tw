@@ -1,14 +1,9 @@
 ---
 title: IEnumDebugCustomAttributes::Reset |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumCustomAttributes::Reset
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e0db6518-5a71-4adb-a407-4d2ac7a3e369
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: df775b8464249a5c6d8db8e7a71a50dcb989b7c4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff86808bfd33cf7112091b028140f538932dee28
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791718"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944508"
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -48,4 +43,3 @@ int Reset();
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)   
  [下一步](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)
-

@@ -1,12 +1,9 @@
 ---
 title: 編輯資料集中 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +16,13 @@ ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5a983b671b5c6b43009ad3cc32c2cb287977f05c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 41467515e172b34fe96200020189a02a6a4fc8a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949288"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944571"
 ---
 # <a name="edit-data-in-datasets"></a>編輯資料集中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,9 +78,9 @@ ms.locfileid: "49949288"
   
 - 每個資料列包含它的相關資訊<xref:System.Data.DataRow.RowState%2A>(例如<xref:System.Data.DataRowState>， <xref:System.Data.DataRowState>， <xref:System.Data.DataRowState>，或<xref:System.Data.DataRowState>)。  
   
-- 每個已變更的資料列包含該資料列的多個版本 (<xref:System.Data.DataRowVersion>)，原始的版本 （在之前的變更） 和目前的版本 （在之後變更）。 情況下，變更已暫止的時期間 (當您可以回應的時間<xref:System.Data.DataTable.RowChanging>事件)、 第三個版本 — 建議的版本 — 也有提供。 如需詳細資訊，請參閱 <<c0> [ 如何： 取得特定版本 DataRow](../data-tools/how-to-get-specific-versions-of-a-datarow.md)。  
+- 每個已變更的資料列包含該資料列的多個版本 (<xref:System.Data.DataRowVersion>)，原始的版本 （在之前的變更） 和目前的版本 （在之後變更）。 情況下，變更已暫止的時期間 (當您可以回應的時間<xref:System.Data.DataTable.RowChanging>事件)、 第三個版本 — 建議的版本 — 也有提供。
   
-  <xref:System.Data.DataSet.HasChanges%2A>資料集的方法會傳回`true`如果已變更資料集內。 決定之後變更的資料列存在，您可以呼叫`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>傳回一組已變更的資料列。 如需詳細資訊，請參閱 <<c0> [ 如何： 擷取變更資料列](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
+  <xref:System.Data.DataSet.HasChanges%2A>資料集的方法會傳回`true`如果已變更資料集內。 決定之後變更的資料列存在，您可以呼叫`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>傳回一組已變更的資料列。 如需詳細資訊，請參閱[如何：擷取已變更的資料列](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>若要判斷是否已變更的所有資料列  
   
@@ -115,4 +112,3 @@ ms.locfileid: "49949288"
   
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]
-

@@ -1,14 +1,9 @@
 ---
-title: 錯誤： 偵錯不&#39;t，可能因為在系統上啟用核心偵錯 |Microsoft Docs
-ms.custom: ''
+title: 錯誤：偵錯不&#39;t，可能因為在系統上啟用核心偵錯 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.kernel_dbg_enabled
 dev_langs:
@@ -25,15 +20,15 @@ ms.assetid: 630a7abd-3303-4aaa-888a-6de3de14bc01
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eea2e7d8277bc67df75be3d05d907a8bd13c29c5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cdc000a4ad825be495c28bb59d35f8ef378c563f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725280"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942884"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤： 偵錯不&#39;t，可能因為在系統上啟用核心偵錯
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤：偵錯不&#39;t，可能因為在系統上啟用核心偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 當您對 Managed 程式碼進行偵錯時，可能會收到下列錯誤訊息：  
@@ -86,7 +81,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>若要停用所有工作階段的核心偵錯 (其他 Windows 作業系統)  
   
-1.  您的系統磁碟機上尋找 boot.ini (通常是 c:\\)。 boot.ini 檔案可能為隱藏或唯讀狀態。 因此，您必須使用下列命令才能看見該檔案：  
+1.  在您的系統磁碟機 (通常是 C:\\) 上尋找 boot.ini。 boot.ini 檔案可能為隱藏或唯讀狀態。 因此，您必須使用下列命令才能看見該檔案：  
   
     ```  
     dir /ASH  
@@ -113,6 +108,3 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)
-
-
-

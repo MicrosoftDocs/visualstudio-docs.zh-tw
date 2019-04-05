@@ -1,14 +1,9 @@
 ---
-title: 如何： 開啟專案特定的編輯器 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：開啟專案特定的編輯器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, opening a project-specific editor
 - editors [Visual Studio SDK], opening project-specific editors
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 52d1fda1c3a1c2e8aac116c52afc8bf6738e23ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbafb5938f26b4cdb702168ee2f3500def7ac9c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817668"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944262"
 ---
-# <a name="how-to-open-project-specific-editors"></a>如何： 開啟專案特定的編輯器
+# <a name="how-to-open-project-specific-editors"></a>HOW TO：開啟專案特定的編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果在開啟的專案項目檔本質上繫結至特定的編輯器中為該專案，專案必須使用專案特定編輯器開啟檔案。 檔案無法委派到 IDE 的機制，來選取一個編輯器。 比方說，而不是使用標準的點陣圖編輯器中，您可以使用此專案特定編輯器選項來指定特定的點陣圖編輯器可辨識對您的專案是唯一的檔案中的資訊。  
@@ -60,6 +55,5 @@ ms.locfileid: "51817668"
   
 ## <a name="see-also"></a>另請參閱  
  [開啟和儲存專案項目](../extensibility/internals/opening-and-saving-project-items.md)   
- [如何： 開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)   
- [如何︰針對開啟的文件開啟編輯器](../extensibility/how-to-open-editors-for-open-documents.md)
-
+ [如何：開啟標準編輯器](../extensibility/how-to-open-standard-editors.md)   
+ [如何：開啟編輯器開啟的文件](../extensibility/how-to-open-editors-for-open-documents.md)

@@ -1,33 +1,28 @@
 ---
 title: 在舊版 API 中的文字緩衝區事件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffer events
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 677824142f2e7e497888627041cfe7a82487d342
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e82fa31ca435d0c850a4d9e75e927cff9613b046
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735506"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944305"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>在舊版 API 中的文字緩衝區事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 文字緩衝區物件會發出數個不同的事件，讓您能夠回應不同的情況。  
   
- 當您使用舊版 API 時，您應該實作下列介面以接收通知的文字緩衝區變更。 公開介面，以文字緩衝區使用`IConnectionPointContainer`文字緩衝區，以接收通知列上的介面變更緩衝區。 如需詳細資訊，請參閱 <<c0> [ 如何： 註冊使用舊版 API 的文字緩衝區事件](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)。 若是`IVsTextStreamEvents`或`IVsTextLinesEvents`介面，會傳回的變更可能是一個或 two 維度座標中，分別。  
+ 當您使用舊版 API 時，您應該實作下列介面以接收通知的文字緩衝區變更。 公開介面，以文字緩衝區使用`IConnectionPointContainer`文字緩衝區，以接收通知列上的介面變更緩衝區。 如需詳細資訊，請參閱[如何：註冊使用舊版 API 的文字緩衝區事件](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)。 若是`IVsTextStreamEvents`或`IVsTextLinesEvents`介面，會傳回的變更可能是一個或 two 維度座標中，分別。  
   
 ## <a name="text-buffer-interfaces"></a>文字緩衝區介面  
  以下是文字緩衝區物件所實作的介面。  
@@ -58,5 +53,4 @@ ms.locfileid: "51735506"
   
 ## <a name="see-also"></a>另請參閱  
  [使用舊版 API 存取的文字緩衝區](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [如何：使用舊版 API 註冊文字緩衝區事件](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
-
+ [如何：註冊使用舊版 API 的文字緩衝區事件](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

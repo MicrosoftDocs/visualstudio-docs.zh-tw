@@ -1,14 +1,9 @@
 ---
-title: IDebugEngine2::GetEngineID |Microsoft Docs
-ms.custom: ''
+title: IDebugEngine2::GetEngineID | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2::GetEngineID
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 00a99d1b9456fd529d079197433db919c9e29c84
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ab0bfe52090ab719bbc2fbd442b9b609b5991e84
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750496"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943919"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -72,4 +67,3 @@ HRESULT CEngine::GetEngineId(GUID *pguidEngine){
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
-

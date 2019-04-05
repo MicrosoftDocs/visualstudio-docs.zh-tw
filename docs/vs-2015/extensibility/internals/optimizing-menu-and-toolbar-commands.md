@@ -1,14 +1,9 @@
 ---
 title: 將功能表和工具列命令最佳化 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands [Visual Studio], menus
 - commands [Visual Studio], toolbars
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 47a95f4152e1c0779fc3def057f49b9ec9130259
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 25a721c77269837ad8d158db186274586ad638df
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736727"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944846"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>將功能表和工具列命令最佳化
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,4 +36,3 @@ Vspackage 和其對應的命令，以新增[!INCLUDE[vsprvs](../../includes/vspr
 ## <a name="related-sections"></a>相關章節  
  [命令、功能表及工具列](../../extensibility/internals/commands-menus-and-toolbars.md)  
  說明如何建立包含功能表、工具列和命令下拉式方塊的 UI。
-

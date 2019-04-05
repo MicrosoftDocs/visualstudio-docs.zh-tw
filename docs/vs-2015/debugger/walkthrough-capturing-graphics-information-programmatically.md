@@ -1,25 +1,20 @@
 ---
-title: 逐步解說： 以程式設計方式擷取圖形資訊 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：以程式設計方式擷取圖形資訊 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a5adeff9-afaf-4047-b5ce-ef0aefe710eb
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: feff1af744bd9f42d2fe8af67a72ec4856a09acc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bb12e0691d4e867a73b9c8999d0ad57cebd7ec44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747683"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942667"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>逐步解說：以程式設計方式擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -148,14 +143,14 @@ ms.locfileid: "51747683"
 -   使用 `CaptureCurrentFrame` API  
   
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>準備電腦以使用程式設計擷取  
- 程式設計擷取 API 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的遠端工具來提供擷取功能。 要執行應用程式的電腦必須已安裝遠端工具，即使在本機電腦上使用程式設計擷取也是一樣。 當您在本機電腦上執行程式設計擷取時，不需要執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+ 程式設計擷取 API 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的遠端工具來提供擷取功能。 要執行應用程式的電腦必須已安裝遠端工具，即使在本機電腦上使用程式設計擷取也是一樣。 當您在本機電腦上執行程式設計擷取時，不需要執行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
   
  若要在於電腦上執行的應用程式中使用遠端擷取 API，則需要先在該電腦上安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 遠端工具。 不同版本的遠端工具支援不同的硬體平台。 如需如何安裝遠端工具的資訊，請參閱 Microsoft 下載網站的 [遠端工具下載頁面](http://go.microsoft.com/fwlink/p/?LinkId=246691) 。  
   
  或者， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會安裝必要元件來執行 32 位元應用程式的遠端擷取。  
   
 > [!NOTE]
->  因為 ARM 裝置的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 不支援大部分的 Windows 桌面應用程式 (包括 [!INCLUDE[win8](../includes/win8-md.md)])，所以搭配程式設計擷取 API 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 遠端工具，是在 ARM 裝置上擷取圖形診斷的唯一方式。  
+>  因為 ARM 裝置的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]不支援大部分的 Windows 桌面應用程式 (包括 [!INCLUDE[win8](../includes/win8-md.md)] )，所以搭配程式設計擷取 API 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 遠端工具，是在 ARM 裝置上擷取圖形診斷的唯一方式。  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>準備應用程式以使用程式設計擷取  
  若要使用圖形診斷工具，您需要先擷取它所依賴的圖形資訊。 您可以使用 `CaptureCurrentFrame` API，透過程式設計方式來擷取資訊。  
@@ -190,7 +185,7 @@ ms.locfileid: "51747683"
   針對[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式，暫存目錄的位置是專門針對每個使用者及應用程式，而且通常中的位置，例如 C:\users\\*username*\AppData\Local\Packages\\ *套件系列名稱*\TempState\\。 傳統型應用程式，暫存目錄的位置是每位使用者特有而且通常位於的位置，例如 C:\Users\\*使用者名稱*\AppData\Local\Temp\\。  
   
 > [!NOTE]
->  若要寫入至特定位置，您必須具有寫入至該位置的權限；否則會發生錯誤。 請記住，在寫入資料的位置方面，[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]應用程式的限制多於桌面應用程式，而且可能需要進行額外設定才能寫入至特定位置。  
+>  若要寫入至特定位置，您必須具有寫入至該位置的權限；否則會發生錯誤。 請記住，在寫入資料的位置方面， [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的限制多於桌面應用程式，而且可能需要進行額外設定才能寫入至特定位置。  
   
 ### <a name="capturing-the-graphics-information"></a>擷取圖形資訊  
  準備好應用程式，以供進行程式設計擷取，並選擇性地設定圖形記錄檔的位置和名稱之後，請建置應用程式，然後執行它，或對它進行偵錯以擷取資料；當您使用程式設計擷取 API 時，請勿從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 啟動圖形診斷。 圖形記錄會寫入至您指定的位置。 如果您想要保留這版的記錄檔，請將它移至另一個位置；否則，將會於再次執行應用程式時遭到覆寫。  
@@ -204,9 +199,6 @@ ms.locfileid: "51747683"
 -   了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[概觀](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說： 擷取圖形資訊](../debugger/walkthrough-capturing-graphics-information.md)   
+ [逐步解說：擷取圖形資訊](../debugger/walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [命令列擷取工具](../debugger/command-line-capture-tool.md)
-
-
-

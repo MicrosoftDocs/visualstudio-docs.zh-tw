@@ -1,14 +1,9 @@
 ---
-title: IEnumDebugThreads2 |Microsoft Docs
-ms.custom: ''
+title: IEnumDebugThreads2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugThreads2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9b60d62846ce777897784e005457fe6cf2ca272a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 97bc8383f990f6c0c35a402f2ab36b2595d82a9e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754512"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945613"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -58,9 +53,9 @@ IEnumDebugThreads2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
@@ -69,4 +64,3 @@ IEnumDebugThreads2 : IUnknown
  [步驟](../../../extensibility/debugger/reference/idebugprocess3-step.md)   
  [繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)   
  [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)
-

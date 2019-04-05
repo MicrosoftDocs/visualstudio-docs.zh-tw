@@ -1,23 +1,20 @@
 ---
 title: Transaction 活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 8dd0f60f-88ec-4258-bc8d-233689be9997
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 85afc69eae7e2478be9d98ec714048509bac3236
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b73a28e9a3f0fb5a3b5aa618296fe5a44b88cff2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266146"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945149"
 ---
 # <a name="transaction-activity-designers"></a>Transaction 活動設計工具
 [異動] 設計工具會用來建立及設定異動式活動，例如補償及確認。 本節包含的主題以及下表所列的主題會提供如何使用 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 活動與範本設計工具的指引。  

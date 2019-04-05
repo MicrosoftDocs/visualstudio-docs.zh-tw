@@ -1,26 +1,21 @@
 ---
-title: 'CA3077: API 設計、 XML 文件和 XML 文字讀取器中的不安全處理 |Microsoft Docs'
-ms.custom: ''
+title: CA3077:這是不安全，以設計、 XML 文件和 XML 文字讀取器處理 |Microsoft Docs
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 7f33771b-f3c8-4c02-bef6-f581b623c303
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0e75f86b958d0f2602a3f32830e8c6f18c185584
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cc43a90941cef8efe1e4cb87a9d411ada5cfe7b2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925071"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944659"
 ---
-# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077：API 設計、XML 文件和 XML 文字讀取器中的不安全處理
+# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077:API 設計、XML 文件和 XML 文字讀取器中的不安全處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -98,6 +93,3 @@ namespace TestNamespace
     }
 }
 ```
-
-
-

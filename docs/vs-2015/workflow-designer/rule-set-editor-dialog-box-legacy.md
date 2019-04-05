@@ -1,11 +1,8 @@
 ---
 title: 規則集編輯器對話方塊 （舊版） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: 7cfd5df1-1115-4e5c-9b72-121f39419e83
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942396"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945174"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>規則集編輯器對話方塊 (舊版)
 本主題描述如何使用**規則集編輯器**對話方塊中，在舊版[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -31,7 +28,7 @@ ms.locfileid: "49942396"
 > [!NOTE]
 >  如果您想要開啟.rules 副檔名**含編碼的 XML 編輯器**，您必須先關閉工作流程或活動相關聯的設計工具視窗。  
   
- 如需有關如何存取資訊**規則集編輯器** 對話方塊中，請參閱[如何： 建立 PolicyActivity 規則集 （舊版）](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)。  
+ 如需有關如何存取資訊**規則集編輯器** 對話方塊中，請參閱[How to:建立 PolicyActivity 規則集 （舊版）](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)。  
   
 > [!WARNING]
 >  舊版 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 的規則編輯器，它所針對的 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 不支援多重目標。  
@@ -50,7 +47,7 @@ ms.locfileid: "49942396"
 |**名稱：**|輸入規則名稱。|  
 |**優先順序：**|輸入規則的優先權。 預設優先權為 0。|  
 |**重新評估：**|指定規則要使用哪一種規則重新評估。 可用的選項如下：<br /><br /> -   **一律**，但會視需要重新評估規則。<br />-   **永遠不會**，讓規則永不重新評估。 在此狀況下，規則只執行一次。|  
-|**使用中**|核取可讓規則成為作用中。|  
+|[使用中]|核取可讓規則成為作用中。|  
 |**條件：**|輸入規則條件的運算式。 如需運算式語法的詳細資訊，請參閱本頁的「輸入條件和動作運算式」一節。|  
 |**Then 動作：**|輸入 Then 動作的運算式。 如需運算式語法的詳細資訊，請參閱本頁的「輸入條件和動作運算式」一節。|  
 |**Else 動作：**|輸入 Else 動作的運算式。 如需運算式語法的詳細資訊，請參閱本頁的「輸入條件和動作運算式」一節。|  
@@ -73,13 +70,13 @@ ms.locfileid: "49942396"
   
 - 算術運算子：+、-、*、/、MOD  
   
-- 邏輯運算子:，& &、 OR、 &#124; &#124;、 NOT、 ！  
+- 邏輯運算子：AND, &&, OR, &#124;&#124;, NOT, !  
   
 - 位元運算子： &，&#124;  
   
   運算式運算子的優先順序是按照 C# 運算子優先順序規則。  
   
-  如需有關條件的詳細資訊，請參閱[在工作流程中使用條件](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77)。  
+  如需有關條件的詳細資訊，請參閱[在工作流程中使用條件](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77)。  
   
 ### <a name="halt-and-update-functions"></a>暫止和更新函式  
  **Then 動作：** 並**Else 動作：** 運算式支援**暫止**並**更新**函式。 若要使用**暫止**函式中，輸入**暫止**成**Then 動作：** 或**Else 動作：** 文字方塊。 **暫止**動作造成規則集執行立即停止，且控制項會傳回至呼叫的程式碼。 您使用**更新**函式與向前鏈結。  

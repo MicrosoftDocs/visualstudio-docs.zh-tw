@@ -1,14 +1,9 @@
 ---
-title: CA1064： 例外狀況必須是公用 |Microsoft Docs
-ms.custom: ''
+title: CA1064:例外狀況必須是公用 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1064
 - ExceptionsShouldBePublic
@@ -20,14 +15,14 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e9d85fef6cd581f32be9438b94264c201869ba01
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00d188188f722907c2bac20e84cb9291ef8bc0fe
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888472"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58946049"
 ---
-# <a name="ca1064-exceptions-should-be-public"></a>CA1064：例外狀況必須是公用
+# <a name="ca1064-exceptions-should-be-public"></a>CA1064:例外狀況必須是公用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -55,6 +50,3 @@ ms.locfileid: "49888472"
  因為例外狀況類別直接衍生自例外狀況，而且內部的第一個範例方法，FirstCustomException 會引發此規則。 此規則不會引發 SecondCustomException 類別上，因為雖然此類別也直接衍生自例外狀況，該類別已宣告為公用。 第三個類別也不會引發此規則因為它不是直接從衍生<xref:System.Exception?displayProperty=fullName>， <xref:System.SystemException?displayProperty=fullName>，或<xref:System.ApplicationException?displayProperty=fullName>。
 
  [!code-csharp[FxCop.Design.ExceptionsShouldBePublic.CA1064#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.design.exceptionsshouldbepublic.ca1064/cs/ca1064 - exceptionsshouldbepublic.cs#1)]
-
-
-

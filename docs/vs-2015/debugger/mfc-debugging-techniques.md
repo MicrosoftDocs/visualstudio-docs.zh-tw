@@ -1,14 +1,9 @@
 ---
 title: MFC 偵錯技術 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
 - CMemoryState
@@ -31,13 +26,13 @@ ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f1e7a1ea69da1cafa38ae2a7bfa4551d3d40a8d4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4ed7d3a9db7a6bc486ad70236d9e39834c851dd2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745114"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000771"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 偵錯技術
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,7 +102,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
 ```  
   
- TRACE 巨集適當處理 char * 和 wchar_t\*參數。 下列範例示範搭配不同類型的字串參數來使用 TRACE 巨集。  
+ TRACE 巨集會適當處理 char* 和 wchar_t\* 這兩種參數。 下列範例示範搭配不同類型的字串參數來使用 TRACE 巨集。  
   
 ```  
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
@@ -167,7 +162,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> 擷取記憶體快照  
   
-1. 建立 [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 物件並呼叫 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) 成員函式。 這會建立第一個記憶體快照。  
+1. 建立 [CMemoryState](http://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 物件並呼叫 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) 成員函式。 這會建立第一個記憶體快照。  
   
 2. 程式執行記憶體配置和解除配置操作之後，會建立另一個 `CMemoryState` 物件並且呼叫此物件的 `Checkpoint` 。 這會取得記憶體使用的第二個快照。  
   
@@ -241,7 +236,7 @@ Total allocations: 67 bytes
  在 MFC 程式中，您可以使用[cmemorystate:: Dumpallobjectssince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)傾印堆積上尚未解除配置的所有物件的描述。 `DumpAllObjectsSince` 會傾印從上一個 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)。 如果沒有發生 `Checkpoint` 呼叫， `DumpAllObjectsSince` 會傾印目前在記憶體的所有物件和非物件。  
   
 > [!NOTE]
->  您必須先 [啟用診斷追蹤](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_Memory_Diagnostics)，才能使用 MFC 物件傾印。  
+>  您必須先 [啟用診斷追蹤](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics)，才能使用 MFC 物件傾印。  
   
 > [!NOTE]
 >  MFC 會在程式結束時自動傾印所有的流失物件，因此您不需要建立程式碼來傾印這個時候的物件。  
@@ -441,11 +436,11 @@ pMyPerson->Dump( afxDump );
   
 3. 首先，您要建立新專案組態。  
   
-   1.  在 [ **\<專案 > 屬性頁**] 對話方塊中，按一下 [ **Configuration Manager** ] 按鈕。  
+   1.  在 [\<專案> 屬性頁] 對話方塊中，按一下 [組態管理員] 按鈕。  
   
-   2.  在 [組態管理員對話方塊](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)裡，在方格中尋找專案。 在 **組態**欄中，選取**\<新增...>**。  
+   2.  在 [組態管理員對話方塊](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)裡，在方格中尋找專案。 在 [組態] 一欄中，選取 [\<新增...>]。  
   
-   3.  在 [新增專案組態對話方塊](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)裡，於 [ **專案組態名稱** ] 方塊內輸入新組態的名稱，例如「部分偵錯」。  
+   3.  在 [新增專案組態對話方塊](http://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)裡，於 [ **專案組態名稱** ] 方塊內輸入新組態的名稱，例如「部分偵錯」。  
   
    4.  在 [ **複製設定值** ] 清單裡，選擇 [ **發行**]。  
   
@@ -479,11 +474,11 @@ pMyPerson->Dump( afxDump );
   
    4.  在 [ **屬性頁** ] 對話方塊的 [ **組態設定** ] 資料夾底下，開啟 [ **C/C++** ] 資料夾，然後選取 [ **一般** ] 分類。  
   
-   5.  在 [屬性] 方格中，尋找**偵錯資訊格式。**  
+   5.  在屬性方格中，尋找 [偵錯資訊格式]。  
   
    6.  按一下 [ **偵錯資訊格式** ] 設定並且選取偵錯資訊需要的選項 (通常是 [ **/ZI**])。  
   
-   7.  如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 您可以藉由變更關閉先行編譯標頭**建立/使用先行編譯標頭**中設定**\<專案 > 屬性**對話方塊中 (**組態屬性**資料夾中， **C/c + +** 子資料夾，**先行編譯標頭**類別)。  
+   7.  如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 若要關閉先行編譯標頭檔，可以變更 [\<專案> 屬性] 對話方塊中的 [建立/使用先行編譯標頭檔] 設定 (依序選取 [組態屬性] 資料夾、[C/C++] 子資料夾、[先行編譯標頭檔] 分類)。  
   
 7. 從 [ **建置** ] 功能表，選取 [ **建置** ] 來重建過期的專案檔案。  
   
@@ -493,6 +488,3 @@ pMyPerson->Dump( afxDump );
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Visual C++](../debugger/debugging-native-code.md)
-
-
-

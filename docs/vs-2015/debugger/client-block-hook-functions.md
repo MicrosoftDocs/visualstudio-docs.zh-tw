@@ -1,14 +1,9 @@
 ---
 title: 用戶端區塊攔截函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.hooks
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: f21c197e-565d-4e3f-9b27-4c018c9b87fc
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2b16dc9eaff974e98e411d4f49d8aed6f9f656e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3eb0891911e5dacbad2447ba3d141a81286e7dc8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773934"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943290"
 ---
 # <a name="client-block-hook-functions"></a>用戶端區塊攔截函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +40,11 @@ void YourClientDump(void *, size_t)
   
 ```  
   
- 換句話說，您攔截函式應該接受**void**指標至配置區塊的開頭**size_t**輸入值，指出的配置大小，並傳回`void`. 除此之外，其他的內容則由您決定。  
+ 換句話說，攔截函式應該接受配置區塊一開頭的 **void** 指標，以及表示配置大小的 **size_t** 類型值，並且傳回 `void`。 除此之外，其他的內容則由您決定。  
   
- 一旦您已安裝您的攔截函式使用[_CrtSetDumpClient](http://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033)，則會呼叫每次`_CLIENT_BLOCK`區塊傾印。 然後您可以使用[_CrtReportBlockType](http://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b)以取得有關的型別或傾印區塊的子類型。  
+ 當您使用 [_CrtSetDumpClient](http://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033) 來安裝攔截函式後，每一次 `_CLIENT_BLOCK` 區塊傾印時都會呼叫它。 然後您可以使用 [_CrtReportBlockType](http://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) 來取得傾印區塊的類型或子類型資訊。  
   
- 您傳遞至函式指標`_CrtSetDumpClient`屬於型別 **_CRT_DUMP_CLIENT**、 CRTDBG 中所定義。H:  
+ 您傳入 `_CrtSetDumpClient` 的函式指標是定義在 CRTDBG.H 中的 **_CRT_DUMP_CLIENT** 類型：  
   
 ```  
 typedef void (__cdecl *_CRT_DUMP_CLIENT)  
@@ -58,8 +53,5 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)
   
 ## <a name="see-also"></a>另請參閱  
  [撰寫偵錯攔截函式](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 範例](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)   
+ [crt_dbg2 範例](http://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)   
  [_CrtReportBlockType](http://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b)
-
-
-

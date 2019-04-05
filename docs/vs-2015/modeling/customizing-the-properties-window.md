@@ -1,25 +1,22 @@
 ---
 title: 自訂屬性視窗 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
 ms.assetid: b6658de5-4e85-4628-93b2-5cc12f63d25b
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c2a4e9075bc45c052f28ee4a20e34c16651211a9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942953"
 ---
 # <a name="customizing-the-properties-window"></a>自訂屬性視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +26,7 @@ ms.locfileid: "49845741"
 ## <a name="names-descriptions-and-categories"></a>名稱、 描述和類別  
  **名稱和顯示名稱**。 在網域屬性的定義中，屬性的顯示名稱會出現在 [屬性] 視窗中的執行階段的名稱。 相反地，當您撰寫程式碼來更新屬性時，會使用的名稱。 名稱必須是正確的 CLR 英數字元名稱，但顯示名稱可以包含空格。  
   
- 當您在 DSL 定義中設定的屬性名稱時，其顯示名稱會自動設定複本的名稱。 如果您撰寫 pascal 命名法大小寫的名稱，例如"FuelGauge 」 時，顯示名稱會自動包含空格: 「 油表 」。 不過，您可以為另一個值明確設定顯示名稱。  
+ 當您在 DSL 定義中設定的屬性名稱時，其顯示名稱會自動設定複本的名稱。 如果您撰寫 pascal 命名法大小寫的名稱，例如"FuelGauge 」 時，顯示名稱會自動包含空格：「 油表 」。 不過，您可以為另一個值明確設定顯示名稱。  
   
  **描述**。 網域屬性的描述會出現在兩個地方：  
   
@@ -46,7 +43,7 @@ ms.locfileid: "49845741"
   
  您可以在圖形上公開**FillColor**， **OutlineColor**， **TextColor**， **OutlineDashStyle**， **OutlineThickness**並**FillGradientMode**屬性。 您可以在連接器上公開**色彩**`,`**TextColor**，**考慮到 DashStyle**，並**粗細**屬性。 您可以在圖表上，公開**FillColor**並**TextColor**屬性。  
   
-## <a name="forwarding-displaying-properties-of-related-elements"></a>轉送： 會顯示相關項目的屬性  
+## <a name="forwarding-displaying-properties-of-related-elements"></a>轉送：顯示相關項目的屬性  
  當您的 DSL 使用者模型中，選取項目時，該項目的屬性會顯示在 [屬性] 視窗中。 不過，您也可以顯示指定的相關項目的屬性。 這非常有用，如果您已經定義一組項目，然後搭配運作。 例如，您可以定義主要的項目和選擇性的外掛程式項目。 如果主要的項目對應至某個圖形，另一個不是很有用，若要查看其所有屬性，如同它們是上一個項目。  
   
  這種效果名為*屬性轉送*，它會自動在有些情況下。 您可以在其他情況下，達到轉送藉由定義網域類型描述元的屬性。  
@@ -187,7 +184,7 @@ ms.locfileid: "49845741"
 > [!NOTE]
 >  在不同的程式碼檔案中加入程式碼**Dsl**專案。  
   
- 例如:   
+ 例如：  
   
 ```  
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor  
@@ -227,7 +224,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
   
 ```  
   
- 定義衍生自 <xref:System.ComponentModel.TypeConverter> 的類別。 中的個別檔案中加入程式碼**Dsl**專案。 例如:   
+ 定義衍生自 <xref:System.ComponentModel.TypeConverter> 的類別。 中的個別檔案中加入程式碼**Dsl**專案。 例如：  
   
 ```csharp  
 /// <summary>  
@@ -323,6 +320,3 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   
 ## <a name="see-also"></a>另請參閱  
  [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
-
-
-

@@ -1,11 +1,8 @@
 ---
 title: 建立工作流程專案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
@@ -15,13 +12,13 @@ ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 4ba558e77aae5ae40d5b754c30b648f4ba2ea2af
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236713"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58945303"
 ---
 # <a name="creating-a-workflow-project"></a>建立工作流程專案
 工作流程、[!INCLUDE[indigo1](../includes/indigo1-md.md)]、工作流程服務、自訂活動與自訂活動設計工具都可使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案範本建立。 本節描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中提供的專案範本來建立程式庫和應用程式。  
@@ -43,7 +40,7 @@ ms.locfileid: "49236713"
  [如何：建立活動設計工具程式庫](../workflow-designer/how-to-create-an-activity-designer-library.md)  
  描述如何特別為多個目標對象量身訂做設計工具。  
   
- [如何：新增項目至工作流程專案](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  
+ [如何：將新項目新增至工作流程專案](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  
  描述如何將其他工作流程活動或設計工具以及其他 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 項目 (如程式碼活動) 加入至現有的專案。  
   
 ## <a name="related-sections"></a>相關章節  

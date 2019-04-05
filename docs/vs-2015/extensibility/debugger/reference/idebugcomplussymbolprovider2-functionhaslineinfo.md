@@ -1,27 +1,22 @@
 ---
-title: IDebugComPlusSymbolProvider2::FunctionHasLineInfo |Microsoft Docs
-ms.custom: ''
+title: IDebugComPlusSymbolProvider2::FunctionHasLineInfo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - FunctionHasLineInfo
 - IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 ms.assetid: e1b508f1-6521-492f-b110-ab957744a037
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e461aa9ca5b15a1fff1e62ac557dbcd2e63ad880
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a6669d06b75877e548758f08d92fcb8ade7bcb04
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765859"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942465"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -91,4 +86,3 @@ Error:
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
-

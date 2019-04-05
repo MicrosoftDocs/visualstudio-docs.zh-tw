@@ -1,14 +1,9 @@
 ---
-title: 'Idialoadcallback:: Notifyopenpdb |Microsoft Docs'
-ms.custom: ''
+title: IDiaLoadCallback::NotifyOpenPDB | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c0547f99-8468-4e57-82ca-9ef7d6707c8a
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d8302394471f83ae2de3655a1c2a7a131825d0c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 89ab553fdbe75470853db4506261ab719061f10d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756276"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942508"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,6 +46,3 @@ HRESULT NotifyOpenPDB ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
-
-
-

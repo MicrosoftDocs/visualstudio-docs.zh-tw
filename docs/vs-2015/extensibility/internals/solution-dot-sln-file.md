@@ -1,14 +1,9 @@
 ---
 title: 方案 (。Sln) 檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - sln files, VSPackages
 - solutions, .sln files
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bc61824e7df36fa3b615d1a2c4b729cd7b7c8c1c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d9e045ab707620fe985e34174238081f6168e5af
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796177"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000778"
 ---
 # <a name="solution-sln-file"></a>方案檔 (.Sln)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -108,5 +103,4 @@ EndGlobal
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   
  [方案使用者選項 (。Suo) 檔案](../../extensibility/internals/solution-user-options-dot-suo-file.md)   
- [方案](../../extensibility/internals/solutions.md)
-
+ [方案](../../extensibility/internals/solutions-overview.md)

@@ -1,14 +1,9 @@
 ---
-title: ： 執行 ca2217 以 flagsattribute 標記列舉 |Microsoft Docs
-ms.custom: ''
+title: CA2217:執行不以 FlagsAttribute 標記列舉 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
 - CA2217
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 57e49dcfe0d6aa09ba97d48b5b10411850b4a3f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70078d89f2de8038e4a1143679d0614a5479a2b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853398"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942714"
 ---
-# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217：不要以 FlagsAttribute 標記列舉
+# <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217:不要以 FlagsAttribute 標記列舉
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -64,10 +59,7 @@ ms.locfileid: "49853398"
  [!code-vb[FxCop.Usage.EnumNoFlags2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.EnumNoFlags2/vb/FxCop.Usage.EnumNoFlags2.vb#1)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1027：必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027:以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.FlagsAttribute?displayProperty=fullName>
-
-
-

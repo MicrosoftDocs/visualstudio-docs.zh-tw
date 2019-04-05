@@ -1,14 +1,9 @@
 ---
-title: 如何： 偵錯自我裝載的 WCF 服務 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：自我裝載的 WCF 服務進行偵錯 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,18 +17,18 @@ ms.assetid: 288922be-ba3f-411e-af50-bba39c9529cc
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cb9e7d965470a85d41b856d42c6e2c0b291723b4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fb50b9ed0c3debbde0ef41cd474df1f8fd9f4517
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943834"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：偵錯自我裝載的 WCF 服務
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>HOW TO：對自我裝載的 WCF 服務進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A*自我裝載的服務*是 iis 中，WCF 服務主機，不會執行的 WCF 服務或[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]程式開發伺服器。 若要偵錯自我裝載的 WCF 的最簡單方式是設定[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以啟動用戶端和伺服器，當您選擇**啟動偵錯**上**偵錯**功能表。  
+*自我裝載的服務 (Self-Hosted Service)* 是一項不會在 IIS、WCF 服務主機或 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程式開發伺服器內部執行的 WCF 服務。 若要偵錯自我裝載的 WCF 的最簡單方式是設定[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以啟動用戶端和伺服器，當您選擇**啟動偵錯**上**偵錯**功能表。  
   
  如果內部或無法啟動，請在這種方式，例如 NT 服務的程序，將自我裝載 WCF 服務，您無法使用這個方法。 相反地，您可以執行下列其中一項：  
   
@@ -62,9 +57,6 @@ A*自我裝載的服務*是 iis 中，WCF 服務主機，不會執行的 WCF 服
     6.  按一下 [確定 **Deploying Office Solutions**]。  
   
 ## <a name="see-also"></a>另請參閱  
- [偵錯 WCF 服務](../debugger/debugging-wcf-services.md)   
+ [對 WCF 服務進行偵錯](../debugger/debugging-wcf-services.md)   
  [WCF 偵錯的限制](../debugger/limitations-on-wcf-debugging.md)   
  [如何：逐步執行 WCF 服務](../debugger/how-to-step-into-wcf-services.md)
-
-
-
