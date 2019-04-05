@@ -1,14 +1,9 @@
 ---
-title: Ca2000： 必須在超出範圍前處置物件 |Microsoft Docs
-ms.custom: ''
+title: CA2000:範圍前處置物件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2000
 - Dispose objects before losing scope
@@ -21,14 +16,14 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3456ec773b233da3ef2be1dfa7731460bdf6b44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857857"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939941"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000：必須在超出範圍前處置物件
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000:必須在超出範圍前處置物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -72,7 +67,7 @@ ms.locfileid: "49857857"
 ## <a name="related-rules"></a>相關的規則  
  [CA2213：可處置的欄位應該受到處置](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
- [CA2202：不要多次處置物件](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
+ [CA2202:不要多次處置物件](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
   
 ## <a name="example"></a>範例  
  如果您要實作的方法，傳回可處置的物件，使用 try/finally 區塊沒有 catch 區塊，藉此確定物件已處置。 藉由使用 try/finally 區塊，您可以允許在錯誤點引發，並確定在處置該物件的例外狀況。  

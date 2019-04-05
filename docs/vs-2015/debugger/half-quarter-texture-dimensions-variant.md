@@ -1,25 +1,20 @@
 ---
 title: 半 / 四分之一紋理維度變異 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6ef44ff579fbd96026fcd7c285b173ad19317275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03485a3b9df9c06b1ef4755a5758cf2c8c997d1e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805979"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939686"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>半/四分之一紋理維度變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +47,5 @@ ms.locfileid: "51805979"
  此變異會先在執行階段調整紋理大小，再呼叫 `CreateTexture2D`。 建議您不要對實際執行程式碼使用此方式，因為完整大小的紋理會耗用較多的磁碟空間，而且因為額外步驟可能會增加應用程式中的載入時間，特別是針對壓縮過的紋理，畢竟這類紋理需要大量計算資源來進行編碼。 建議您改用屬於您組建管線的影像編輯器或影像處理器，來離線調整紋理大小。 這些方式會減少磁碟空間需求，並去除應用程式中的執行階段額外負荷，以及提供更多的處理時間，讓您可以在壓縮紋理時保留最佳影像品質。  
   
 ## <a name="see-also"></a>另請參閱  
- [Mip-map 產生變異](../debugger/mip-map-generation-variant.md)   
+ [Mip-map 產生變化](../debugger/mip-map-generation-variant.md)   
  [BC 紋理壓縮變異](../debugger/bc-texture-compression-variant.md)
-
-
-
