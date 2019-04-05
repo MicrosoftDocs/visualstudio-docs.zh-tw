@@ -1,29 +1,24 @@
 ---
-title: 如何： 建立使用 Windows Forms 工具箱控制項 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立使用 Windows Forms 工具箱控制項 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox control
 - winforms
 - toolbox
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
-manager: douge
-ms.openlocfilehash: 2860f3fca32b3a87967a404fb47626416d9f5dce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7bb327ff7cd3909e4d860203322a9b72aa71fbf3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263714"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000570"
 ---
-# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>如何：建立使用 Windows Forms 的 [工具箱] 控制項
+# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>HOW TO：建立使用 Windows Forms 工具箱控制項
 隨附於 [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] 的 [WPF 工具箱控制項] 範本，可讓您建立在安裝擴充功能時會自動加入 [工具箱]  的 Windows Forms 控制項。 本主題會示範如何使用範本建立可散發給其他使用者的 [工具箱]  控制項。  
   
 > [!NOTE]
@@ -92,7 +87,7 @@ ms.locfileid: "49263714"
   
 2.  將 .vsix 檔案上傳到網路或網站。  
   
-     如果將檔案上傳到 [Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847) 網站，其他使用者就可以使用 Visual Studio 的 [擴充管理員]  尋找並安裝控制項。  
+     如果您上傳檔案[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站，其他使用者可以使用**延伸模組管理員**在 Visual Studio 中尋找的控制項，並將它安裝。  
   
 ## <a name="see-also"></a>另請參閱  
  [建立 WPF 工具箱控制項](../extensibility/creating-a-wpf-toolbox-control.md)

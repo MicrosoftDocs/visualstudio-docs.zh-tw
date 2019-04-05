@@ -1,14 +1,9 @@
 ---
-title: 如何： 建立套件資訊清單 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立封裝資訊清單 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,20 +18,20 @@ ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2941000e9fa2c6f1d9fd4835c9fd0b8fa1fd1b4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 725f2a7882b0825795ac75906bdfd6ef1cfef669
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182425"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945597"
 ---
-# <a name="how-to-create-a-package-manifest"></a>如何：建立封裝資訊清單
+# <a name="how-to-create-a-package-manifest"></a>HOW TO：建立封裝資訊清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要部署您的應用程式的必要條件，您可以使用啟動載入器套件。 啟動載入器套件會包含單一產品資訊清單檔案的套件資訊清單但每個地區設定。 在不同的當地語系化版本之間共用的功能應該移入產品資訊清單。  
   
- 如需有關套件資訊清單的詳細資訊，請參閱[How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md)。  
+ 如需有關套件資訊清單的詳細資訊，請參閱[How to:建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)。  
   
 ## <a name="creating-the-package-manifest"></a>建立封裝資訊清單  
   
@@ -108,6 +103,3 @@ installing this package.</String>
   
 ## <a name="see-also"></a>另請參閱  
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)
-
-
-

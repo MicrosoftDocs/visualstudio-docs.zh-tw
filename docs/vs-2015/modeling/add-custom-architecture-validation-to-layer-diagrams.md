@@ -1,25 +1,22 @@
 ---
 title: 將自訂架構驗證加入分層圖 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom validation
 ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9748f2f7b43426f7f981d027400f097b260bf23d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 6cf1dad590a8d7632e9077764e85f432373cc54b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817512"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945117"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>在分層圖中加入自訂架構驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -211,7 +208,7 @@ ms.locfileid: "51817512"
 ### <a name="launch-the-debugger-explicitly"></a>明確地啟動偵錯工具  
  驗證會在個別的處理序中執行。 因此，不會觸發驗證方法中的中斷點。 驗證開始時，您必須明確地將偵錯工具附加到處理序。  
   
- 若要將偵錯工具附加到驗證處理序，請在驗證方法的開頭，插入對 `System.Diagnostics.Debugger.Launch()` 的呼叫。 偵錯對話方塊出現時，選取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的主要執行個體。  
+ 若要將偵錯工具附加到驗證處理序，請在驗證方法的開頭，插入對 `System.Diagnostics.Debugger.Launch()` 的呼叫。 偵錯對話方塊出現時，選取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主要執行個體。  
   
  或者，您可以插入對 `System.Windows.Forms.MessageBox.Show()`的呼叫。 訊息方塊出現時，請移至 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的主要執行個體，並在 [偵錯]  功能表上，按一下 [附加至處理序] 。 選取名為 **Graphcmd.exe**的處理序。  
   
@@ -283,6 +280,3 @@ namespace Validator3
   
 ## <a name="see-also"></a>另請參閱  
  [擴充分層圖](../modeling/extend-layer-diagrams.md)
-
-
-

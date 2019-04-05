@@ -1,14 +1,9 @@
 ---
 title: 管理 Vspackage |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, delayed loading
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8cb96dfbdecd5182d328d425a209f52833ede23c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b56ab490342cfbda9c16408aa0937abd80728c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781591"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945436"
 ---
 # <a name="managing-vspackages"></a>管理 VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,14 +35,13 @@ ms.locfileid: "51781591"
  Vspackage 可以自動載入 CMDUICONTEXT GUID 開啟某一特定設定。 如需詳細資訊，請參閱 <<c0> [ 載入 Vspackage](../extensibility/loading-vspackages.md)。  
   
 ## <a name="using-asyncpackage-to-load-vspackages-in-the-background"></a>使用 AsyncPackage 載入 Vspackage 在背景中  
- AsyncPackage 類別可讓您更好的 UI 回應性，在 Visual Studio 中的背景執行緒上載入的封裝。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 AsyncPackage 載入 vspackage 在背景中](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)。  
+ AsyncPackage 類別可讓您更好的 UI 回應性，在 Visual Studio 中的背景執行緒上載入的封裝。 如需詳細資訊，請參閱[如何：使用 AsyncPackage 載入 Vspackage 在背景中的](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)。  
   
 ## <a name="rule-based-ui-context-for-extensions"></a>延伸模組的規則為基礎的 UI 內容  
- 以規則為基礎的 UI 內容可讓延伸模組作者定義用以啟動 UI 內容，以及相關聯的 Vspackage 載入的精確條件。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用規則式 Visual Studio 擴充功能的 UI 內容](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)。  
+ 以規則為基礎的 UI 內容可讓延伸模組作者定義用以啟動 UI 內容，以及相關聯的 Vspackage 載入的精確條件。 如需詳細資訊，請參閱[如何：使用 Visual Studio 擴充功能的規則為基礎的 UI 內容](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)。  
   
 ## <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解  
- 了解針對 Vspackage 未載入或發生錯誤進行疑難排解的技術：[疑難排解 Vspackage](../extensibility/troubleshooting-vspackages.md)  
+ 找出針對 Vspackage 未載入或發生錯誤進行疑難排解的技術：[針對 VSPackage 進行疑難排解](../extensibility/troubleshooting-vspackages.md)  
   
 ## <a name="see-also"></a>另請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)
-

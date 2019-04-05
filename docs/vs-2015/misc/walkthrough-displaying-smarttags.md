@@ -1,28 +1,23 @@
 ---
-title: 逐步解說： 顯示智慧標籤 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：顯示智慧標籤 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - smart tags
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
-manager: douge
-ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939094"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943120"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>逐步解說：顯示智慧標籤
-智慧標籤已取代為燈泡。 請參閱 [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)。  
+智慧標籤已取代為燈泡。 請參閱[逐步解說：Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)。  
   
  智慧標籤是文字上展開以顯示一組動作的標籤。 例如，在 Visual Basic 或 Visual C# 專案中，當您重新命名識別項 (例如變數名稱) 時，會在這個字組下方出現紅線。 當您將指標移至底線上方時，會在指標附近顯示按鈕。 如果您按一下該按鈕，則會顯示建議的動作 (例如，[將 IsRead 重新命名為 IsReady] )。 如果您按一下該動作，專案中的所有 **IsRead** 參考都會重新命名為 **IsReady**。  
   
@@ -31,7 +26,7 @@ ms.locfileid: "49939094"
 > [!NOTE]
 >  其他類型的標籤可以透過類似的方式實作。  
   
- 下列逐步解說示範如何建立智慧標籤，而智慧標籤出現在目前字組上，而且有兩項建議的動作：[轉換為大寫]  和 [轉換為小寫] 。  
+ 下列逐步解說示範如何建立智慧標籤會出現在目前的文字，有兩個建議的動作：**轉換為大寫**並**轉換為小寫**。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
@@ -90,7 +85,7 @@ ms.locfileid: "49939094"
      [!code-csharp[VSSDKSmartTagTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#6)]
      [!code-vb[VSSDKSmartTagTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#6)]  
   
-8.  實作 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>，以為目前字組建立標籤。 (這種方法也會呼叫稍後說明的私用方法 `GetSmartTagActions`)。  
+8.  實作 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>，以為目前字組建立標籤。 (這種方法也會呼叫稍後說明的私用方法 `GetSmartTagActions` )。  
   
      [!code-csharp[VSSDKSmartTagTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#7)]
      [!code-vb[VSSDKSmartTagTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#7)]  
@@ -138,7 +133,7 @@ ms.locfileid: "49939094"
   
 #### <a name="to-implement-smart-tag-actions"></a>實作智慧標籤動作  
   
-1. 建立兩個類別：第一個命名為 `UpperCaseSmartTagAction`，第二個則命名為 `LowerCaseSmartTagAction`。 這兩個類別都會實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction>。  
+1. 建立兩個類別：第一個命名為 `UpperCaseSmartTagAction` ，第二個則命名為 `LowerCaseSmartTagAction`。 這兩個類別都會實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction>。  
   
     [!code-csharp[VSSDKSmartTagTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#15)]
     [!code-vb[VSSDKSmartTagTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#15)]  
@@ -185,7 +180,7 @@ ms.locfileid: "49939094"
   
      應該會在指標附近顯示按鈕。  
   
-5.  當您按一下該按鈕時，應該會顯示兩項建議的動作：[轉換為大寫]  和 [轉換為小寫] 。 如果您按一下第一個動作，則應該會將目前字組中的所有文字都轉換為大寫。 如果您按一下第二個動作，則應該會將所有文字都轉換為小寫。  
+5.  當您按一下按鈕時，應該會顯示兩個建議的動作：**轉換為大寫**並**轉換為小寫**。 如果您按一下第一個動作，則應該會將目前字組中的所有文字都轉換為大寫。 如果您按一下第二個動作，則應該會將所有文字都轉換為小寫。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

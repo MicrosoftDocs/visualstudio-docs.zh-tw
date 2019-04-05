@@ -1,14 +1,9 @@
 ---
-title: Ca2106： 必須保護判斷提示 |Microsoft Docs
-ms.custom: ''
+title: CA2106:必須保護判斷提示 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2106
 - SecureAsserts
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6ca37a7bdcad290f9ab0c6d54814615731f6678c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0351304c2fd9ab2f581850e578828b2a297d72b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864727"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942233"
 ---
-# <a name="ca2106-secure-asserts"></a>CA2106：必須保護判斷提示
+# <a name="ca2106-secure-asserts"></a>CA2106:必須保護判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -51,6 +46,3 @@ ms.locfileid: "49864727"
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> [安全程式碼撰寫指導方針](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: SccGetExtendedCapabilities 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGetExtendedCapabilities
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b84565713edda09c029d6565e0fdbfdfa11e7d42
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f02591eac6a3f69ae5513aa9dc0abed381cd1c8a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809528"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942006"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,4 +59,3 @@ SCCRTN SccGetExtendedCapabilities(
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [錯誤碼](../extensibility/error-codes.md)   
  [功能旗標](../extensibility/capability-flags.md)
-

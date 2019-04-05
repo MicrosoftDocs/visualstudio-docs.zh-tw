@@ -1,27 +1,22 @@
 ---
 title: 按鍵繫結關係項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 32dafc1b16282657db40531e34d1eccb02841481
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780928"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942354"
 ---
 # <a name="keybinding-element"></a>KeyBinding 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,10 +38,10 @@ ms.locfileid: "51780928"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|guid|必要。|  
-|id|必要。|  
-|編輯器|必要。 編輯器 GUID 表示會使用此鍵盤快速鍵的編輯內容。 全域的繫結範圍值是"guidVSStd97 」。|  
-|key1|必要。 有效值包括所有可輸入的英數字元，以及加上 0 的 x 和 VK_constants 的兩位數十六進位值。|  
+|guid|必要項。|  
+|id|必要項。|  
+|編輯器|必要項。 編輯器 GUID 表示會使用此鍵盤快速鍵的編輯內容。 全域的繫結範圍值是"guidVSStd97 」。|  
+|key1|必要項。 有效值包括所有可輸入的英數字元，以及加上 0 的 x 和 VK_constants 的兩位數十六進位值。|  
 |mod1|選擇性。 CTRL、 ALT 和 shift 鍵以空格分隔的任何組合。|  
 |key2|選擇性。 有效值包括所有可輸入的英數字元，以及加上 0 的 x 和 VK_constants 的兩位數十六進位值。|  
 |mod2|選擇性。 CTRL、 ALT 和 shift 鍵以空格分隔的任何組合。|  
@@ -80,4 +75,3 @@ ms.locfileid: "51780928"
 ## <a name="see-also"></a>另請參閱  
  [KeyBindings 元素](../extensibility/keybindings-element.md)   
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

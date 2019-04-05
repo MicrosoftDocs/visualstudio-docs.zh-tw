@@ -1,31 +1,26 @@
 ---
 title: Creating a Settings Category |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30d7b4c95a02d841723a4ddf1dcf51dd0ef011b4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d73acf8f46966cd0de9eb779acb5a5c53ad4e329
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730353"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944628"
 ---
 # <a name="creating-a-settings-category"></a>建立設定分類
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在本逐步解說您可以建立 Visual Studio 設定類別目錄，並使用它來儲存值，並還原從設定檔的值。 設定類別是一組顯示為 「 自訂設定點; 」 的相關內容也就是為核取方塊**匯入和匯出設定**精靈。 (您可以上找到**工具**功能表。)設定會儲存或還原為類別，並個別設定不會顯示在精靈中。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+在本逐步解說您可以建立 Visual Studio 設定類別目錄，並使用它來儲存值，並還原從設定檔的值。 設定類別是一組顯示為 「 自訂設定點; 」 的相關內容也就是為核取方塊**匯入和匯出設定**精靈。 (您可以上找到**工具**功能表。)設定會儲存或還原為類別，並個別設定不會顯示在精靈中。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  您建立設定類別從<xref:Microsoft.VisualStudio.Shell.DialogPage>類別。  
   
@@ -104,7 +99,7 @@ ms.locfileid: "51730353"
   
 4.  值變更**OptionFloat** 3.1416 到並**OptionInteger**到 12。 按一下 [確定 **Deploying Office Solutions**]。  
   
-5.  在 **工具**功能表上，按一下**匯入和匯出設定**。  
+5.  按一下 [工具] 功能表上的 [匯入和匯出設定]。  
   
      **匯入和匯出設定** 精靈隨即出現。  
   
@@ -160,4 +155,3 @@ ms.locfileid: "51730353"
 16. 請確定**My Settings**已選取，然後按一下**完成**。 當**匯入完整** 頁面出現時，按一下**關閉**。  
   
 17. 上**工具**功能表上，按一下**選項**，展開**My Category**，按一下 **我的格線頁**並確認屬性類別目錄值具有已還原。
-

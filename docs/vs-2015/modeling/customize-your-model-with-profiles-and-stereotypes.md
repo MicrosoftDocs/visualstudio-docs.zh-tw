@@ -1,12 +1,9 @@
 ---
 title: 自訂您的模型，使用設定檔和造型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, profiles
 - UML model, stereotypes
@@ -15,13 +12,13 @@ ms.assetid: fd607157-0d3a-4583-a84e-427a4b2a5acb
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 33e887764c535083c2449a7d333868b2ccd9c4c5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 85bdd48f37d8b8d60df6821934980bf46ebf29cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727698"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939912"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>使用設定檔和造型自訂您的模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +46,3 @@ ms.locfileid: "51727698"
 |[安裝 UML 設定檔](../modeling/install-a-uml-profile.md)|如果有人給您 UML 設定檔，您可以在電腦上安裝它。|  
 |[定義自訂模型工具箱項目](../modeling/define-a-custom-modeling-toolbox-item.md)|自訂工具箱項目能讓您不必反覆地在新的項目上設定造型。|  
 |[依據造型將 UML 類別上色](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|此範例程式碼會擴充 UML 圖表。 它會自動根據項目的造型設定 UML 圖形的色彩。|
-
-
-

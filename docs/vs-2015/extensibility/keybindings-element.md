@@ -1,14 +1,9 @@
 ---
 title: 按鍵繫結關係項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - KeyBindings
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1c9eb2b42afa627a8bbee3529d059592763bad81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2649dee6bbf87b43caee260ddb2b6bbd217c7ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792485"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940867"
 ---
 # <a name="keybindings-element"></a>KeyBindings 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ ms.locfileid: "51792485"
 |項目|描述|  
 |-------------|-----------------|  
 |[KeyBinding 元素](../extensibility/keybinding-element.md)|指定命令的鍵盤快速鍵。|  
-|[按鍵繫結關係](../extensibility/keybindings-element.md)|群組按鍵繫結關係項目和其他按鍵繫結關係分組。|  
+|[KeyBindings](../extensibility/keybindings-element.md)|群組按鍵繫結關係項目和其他按鍵繫結關係分組。|  
   
 ### <a name="parent-elements"></a>父項目  
   
@@ -75,4 +70,3 @@ ms.locfileid: "51792485"
 ## <a name="see-also"></a>另請參閱  
  [KeyBinding 元素](../extensibility/keybinding-element.md)   
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

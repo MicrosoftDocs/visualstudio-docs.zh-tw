@@ -1,25 +1,20 @@
 ---
 title: 'Vsgdbg:: Vsgdbg （建構函式） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 670651e6-5e79-4845-b0c2-671beb7055a8
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 056c5f5e19a4d1e025969aa40ad75f3852b4201b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f3bd179aea7d961df6145b7af2f074927fcdc3e3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781916"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940819"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (建構函式)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,10 +39,7 @@ VsgDbg(
  當建構函式呼叫`bDefaultInit`設定為`false`，在應用程式元件的圖形診斷可以準備好主動擷取與記錄圖形資訊稍後藉由呼叫`Init`函式。  
   
 ## <a name="see-also"></a>另請參閱  
- [VsgDbg:: ~ VsgDbg （解構函式）](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)   
+ [VsgDbg::~VsgDbg (解構函式)](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)   
  [Init](../debugger/init.md)   
  [DONT_SAVE_VSGLOG_TO_TEMP](../debugger/dont-save-vsglog-to-temp.md)   
  [VSG_DEFAULT_RUN_FILENAME](../debugger/vsg-default-run-filename.md)
-
-
-

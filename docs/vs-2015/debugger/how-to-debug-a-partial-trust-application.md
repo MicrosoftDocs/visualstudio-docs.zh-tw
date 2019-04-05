@@ -1,14 +1,9 @@
 ---
-title: 如何： 偵錯部分信任應用程式 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：偵錯部分信任應用程式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,15 +17,15 @@ ms.assetid: 9d30ad92-28ce-4b21-91d8-698474cddf64
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 76cce8cfcf57f956b5de16b72f7a275e1d629630
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7864728237e1fc84958d3edea6806508f1339902
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782046"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939695"
 ---
-# <a name="how-to-debug-a-partial-trust-application"></a>How to: Debug a Partial Trust Application
+# <a name="how-to-debug-a-partial-trust-application"></a>HOW TO：偵錯部分信任應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 適用於 Windows 和主控台應用程式。  
@@ -66,7 +61,7 @@ ms.locfileid: "51782046"
   
 ### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>若要在發生安全性例外狀況時加入額外使用權限  
   
-1.  **例外狀況助理** 對話方塊隨即出現並顯示訊息： **SecurityException 未處理。**  
+1.  **例外狀況助理** 對話方塊隨即出現並顯示訊息：**SecurityException 未處理的。**  
   
 2.  在 **例外狀況助理**對話方塊的 **動作**，按一下 **新增至專案的權限**。  
   
@@ -89,6 +84,3 @@ ms.locfileid: "51782046"
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)
-
-
-

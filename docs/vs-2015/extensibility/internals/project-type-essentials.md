@@ -1,26 +1,21 @@
 ---
 title: 專案類型的基本資訊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5a719ea26473874cb0d771b46ee05ea15092fb17
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cdb6aabe2e7379c063e7347389deb467d724be3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746461"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944757"
 ---
 # <a name="project-type-essentials"></a>專案類型的基本資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "51746461"
   
 - 專案類型是在 VSPackage 中實作的介面集合的物件[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]預期。 如果您使用 C# 來開發專案類型，Managed Package Framework 專案類別會為您實作必要的介面，並可讓您繼承該實作。 如需詳細資訊，請參閱 <<c0> [ 使用 Managed Package Framework 實作專案類型 (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md)。  
   
-- 適用於 c + + 開發人員，HierUtil 文件庫中的類別會以類似的方式運作。 如需詳細資訊，請參閱 <<c0> [ 不在組建中： 使用 HierUtil7 專案類別以實作專案類型 （c + +）](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)。  
+- 適用於 c + + 開發人員，HierUtil 文件庫中的類別會以類似的方式運作。 如需詳細資訊，請參閱[不在組建中：使用 HierUtil7 專案類別來實作專案類型 （c + +）](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)。  
   
 - 專案類型可支援典型的原始檔建置為.exe 或.dll 的組件的程式碼檔案以外的資料。 例如，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]資料庫專案包含指令碼，並查詢儲存在磁碟上的檔案的參考，並將命令加入至**方案總管 中**執行指令碼和查詢資料庫，但專案不支援建置行為。 如需詳細資訊，請參閱 <<c0> [ 開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)。  
   
@@ -73,4 +68,3 @@ ms.locfileid: "51746461"
   
 ## <a name="see-also"></a>另請參閱  
  [部署專案類型](../../extensibility/internals/deploying-project-types.md)
-

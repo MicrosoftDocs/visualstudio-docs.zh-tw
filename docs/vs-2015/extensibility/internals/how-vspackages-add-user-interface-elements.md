@@ -1,14 +1,9 @@
 ---
 title: Vspackage 如何新增使用者介面項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, adding elements
 - UI element design [Visual Studio SDK], VSPackages
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 88b1a71964ddae67241025dd32c1a1384c79765f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d020dd0e1d20facd431a31f5aabffb4ec9e2631a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753378"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945353"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage 如何新增使用者介面項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -195,7 +190,7 @@ priority="0x0100" type="Menu">
 ### <a name="parenting"></a>父代  
  下列規則可管理項目可以呼叫另一個項目，做為其父系的方式。  
   
-|元素|在本節中的命令資料表的定義|可能包含 (當做父代，或放置在`CommandPlacements` 區段中，或兩者)|可能包含 （又稱為父代）|  
+|項目|在本節中的命令資料表的定義|可能包含 (當做父代，或放置在`CommandPlacements` 區段中，或兩者)|可能包含 （又稱為父代）|  
 |-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
 |群組|[群組項目](../../extensibility/groups-element.md)，IDE、 其他 Vspackage|功能表中，群組中，項目本身|功能表、 群組和命令|  
 |功能表|[功能表項目](../../extensibility/menus-element.md)，IDE、 其他 Vspackage|1 到*n*群組|0 表示*n*群組|  
@@ -308,4 +303,3 @@ priority="0x0100" type="Menu">
   
 ## <a name="see-also"></a>另請參閱  
  [擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)
-

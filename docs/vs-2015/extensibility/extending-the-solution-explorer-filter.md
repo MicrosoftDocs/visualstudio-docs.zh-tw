@@ -1,27 +1,22 @@
 ---
 title: 擴充方案總管篩選 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0d218744a4fcfcb498054105e48019bf2b0ce66b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27812d10c720d0507309513bd908498d9abcf92a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750193"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944642"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>延伸方案總管篩選
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -200,4 +195,3 @@ ms.locfileid: "51750193"
 3.  尋找您加入 [方案總管] 工具列的按鈕。 它應該是從左邊的第四個按鈕。  
   
 4.  當您按一下按鈕時，所有檔案應該都篩選掉，以及您應該會看到 「 所有項目已都篩選檢視中。 」 在 [方案總管] 中。
-

@@ -1,14 +1,9 @@
 ---
-title: 如何： 使用模組視窗 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用模組視窗 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.modules
 dev_langs:
@@ -31,18 +26,18 @@ ms.assetid: d840fdca-b035-4452-b652-72580c831896
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fea513b7593e260b5f5fb71e40ced98a1f8cc279
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 105325341d8f93f9531c2c85deb8ef21266e872c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940999"
 ---
-# <a name="how-to-use-the-modules-window"></a>如何：使用模組視窗
+# <a name="how-to-use-the-modules-window"></a>HOW TO：使用模組視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-附註]
+注意]
 >  這個功能不能用於 SQL 或指令碼偵錯。  
   
  **模組**視窗會列出 Dll 和 EXE，供您的程式，並顯示每個的相關資訊。  
@@ -51,7 +46,7 @@ ms.locfileid: "51764410"
   
 -   在 [**偵錯**] 功能表中，選擇**Windows**，然後按一下**模組**。  
   
-     根據預設，**模組**視窗會依載入順序來排序模組。 但您也可以選擇依任何資料行來排序。  
+     根據預設，[模組] 視窗會依載入順序來排序模組。 但您也可以選擇依任何資料行來排序。  
   
 ### <a name="to-sort-by-any-column"></a>若要依任何欄位排序  
   
@@ -70,7 +65,7 @@ ms.locfileid: "51764410"
   
 #### <a name="to-change-symbol-load-settings"></a>若要變更符號載入設定  
   
-1.  在 [**模組**] 視窗中，以滑鼠右鍵按一下任何模組。  
+1.  在 [模組] 視窗中，以滑鼠右鍵按一下任一模組。  
   
 2.  按一下 **符號設定**。  
   
@@ -78,16 +73,11 @@ ms.locfileid: "51764410"
   
 #### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>若要變更特定模組的符號載入行為  
   
-1.  在 [**模組**] 視窗中，以滑鼠右鍵按一下模組。  
+1.  在 [模組] 視窗中，以滑鼠右鍵按一下模組。  
   
 2.  指向**自動符號載入設定**，然後按一下**永遠手動載入**或是**預設**。 在重新啟動偵錯工作階段之前，變更不會生效。  
   
 ## <a name="see-also"></a>另請參閱  
- [中斷執行](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
- [在 偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
+ [中斷執行](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
  [指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-
-
-

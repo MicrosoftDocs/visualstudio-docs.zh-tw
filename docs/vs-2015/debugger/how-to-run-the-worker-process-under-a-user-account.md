@@ -1,14 +1,9 @@
 ---
-title: 如何： 執行背景工作處理序，使用者帳戶 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：執行背景工作處理序，使用者帳戶 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
 caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d5d9e9cbadd2b7154eeb84bad99239e0b026eecd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: da7f0374c8185ef091b89dde99f3c6e053458480
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734439"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58939828"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在使用者帳戶下執行背景工作處理序
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>HOW TO：在使用者帳戶下執行背景工作處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要設定電腦以便在某個使用者帳戶下執行 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序 (aspnet_wp.exe 或 w3wp.exe)，請依照下列步驟執行。  
@@ -43,7 +38,7 @@ ms.locfileid: "51734439"
   
 1.  開啟 machine.config 檔，這個檔案位於電腦中安裝執行階段之路徑下的 CONFIG 資料夾內。  
   
-2.  尋找&lt;processModel&gt;區段，然後將 user 和 password 屬性變更為您要用來執行 aspnet_wp.exe 的使用者帳戶的密碼與名稱。  
+2.  尋找 &lt;processModel&gt; 區段，然後將 user 和 password 屬性變更為您要用來執行 aspnet_wp.exe 之使用者帳戶的名稱和密碼。  
   
 3.  儲存 machine.config 檔。  
   
@@ -91,8 +86,3 @@ ms.locfileid: "51734439"
   
 ## <a name="see-also"></a>另請參閱  
 [ASP.NET 偵錯：系統需求](../debugger/aspnet-debugging-system-requirements.md)  
-  
-
-
-
-

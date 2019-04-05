@@ -1,14 +1,9 @@
 ---
-title: 如何： 套用在中斷模式中的編輯，以編輯後繼續 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：套用在中斷模式中的編輯，以編輯後繼續 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.variables.failededit
 dev_langs:
@@ -28,15 +23,15 @@ ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5f6024d0c00e492110d7d34172cf225e4712f213
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bd247cd50566130504110bd37c4b87f9e4783ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807493"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944764"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>如何：以編輯後繼續在中斷模式套用編輯
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>HOW TO：套用在中斷模式中的編輯，以編輯後繼續
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以在中斷模式中使用 [編輯後繼續] 編輯程式碼，並繼續進行而不需停止及重新啟動執行。  
@@ -65,11 +60,11 @@ ms.locfileid: "51807493"
   
 1.  執行下列其中一種方法進入中斷模式  
   
-    -   您的程式碼中設定中斷點，然後選擇**開始偵錯**從**偵錯**功能表，然後等待應用程式叫用中斷點。  
+    -   在程式碼中設定中斷點，然後從 [偵錯] 功能表中選擇 [開始偵錯]，並等待應用程式叫用中斷點。  
   
          -或-  
   
-    -   開始偵錯，然後按**全部中斷**從**偵錯**功能表。  
+    -   開始偵錯，然後從 [偵錯] 功能表中選取 [全部中斷]。  
   
          -或-  
   
@@ -82,13 +77,10 @@ ms.locfileid: "51807493"
     > [!NOTE]
     >  如果您嘗試進行 [編輯後繼續] 不允許的程式碼變更，您的編輯會被加上紫色波浪線，而且 [工作清單] 中會出現工作。 除非您復原不合法的程式碼變更，否則將無法繼續執行程式碼。  
   
-3.  在 [**偵錯**] 功能表中，按一下**繼續**恢復執行。  
+3.  在 [偵錯] 功能表上，按一下 [繼續] 以恢復執行。  
   
      這時程式碼便會一併執行您套用至專案的編輯。  
   
 ## <a name="see-also"></a>另請參閱  
  [編輯後繼續在 Visual Basic 中的不支援的編輯](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
  [編輯後繼續 (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

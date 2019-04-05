@@ -1,14 +1,9 @@
 ---
 title: 選取項目及在 IDE 中的貨幣 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - currency, Visual Studio IDE
 - IDE, selection
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 45fc57bf2d5763527f9f8c2c6d8d22ca1d6369f8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ca6993d8d8d56f1ea2ccf8b4b6c41909606e8755
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786739"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940466"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE 中的選取項目和貨幣
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "51786739"
 ## <a name="selection-context"></a>選取項目內容  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 全域追蹤的 IDE 貨幣，在它自己的全域選擇內容物件。 下表顯示的項目組成的選取項目內容。  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
 |目前的階層|通常是目前的專案;NULL 目前的階層表示整個方案是最新。|  
 |目前的項目識別碼|在目前的階層架構中，選取的項目在 [專案] 視窗中的多個選取項目時，可以有多個目前的項目。|  
@@ -72,4 +67,3 @@ ms.locfileid: "51786739"
 ## <a name="see-also"></a>另請參閱  
  [選取內容物件](../../extensibility/internals/selection-context-objects.md)   
  [使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)
-

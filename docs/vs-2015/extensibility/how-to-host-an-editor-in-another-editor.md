@@ -1,28 +1,23 @@
 ---
-title: 如何： 裝載在其他編輯器中的編輯器 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：裝載在其他編輯器中的編輯器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - host a nested editor
 ms.assetid: 2b0eb705-fe94-4ca8-93e0-9dbd8ce61a44
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fead1aa7b1094fe5bcd1cac989b6853d3564b00b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 38e47e918683d375f6a6baded2bf946a60020e64
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803158"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942146"
 ---
-# <a name="how-to-host-an-editor-in-another-editor"></a>如何： 裝載在其他編輯器中的編輯器
+# <a name="how-to-host-an-editor-in-another-editor"></a>HOW TO：裝載在其他編輯器中的編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual Studio 中您可以藉由指定為父視窗的 裝載的視窗裝載在另一個編輯器。 若要這樣做，請設定參數<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2>和<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2>子視窗框架上。  
@@ -45,4 +40,3 @@ ms.locfileid: "51803158"
   
 ## <a name="robust-programming"></a>穩固程式設計  
  **應用程式設計師**在 Visual Studio Team Edition for Architects 是裝載另一個編輯器編輯器視窗框架的範例。 **應用程式設計師**裝載在其右窗格中的其他設計工具。 設計工具面板 (或**屬性**頁面) 包含的設計工具的每個都會加入至包含的視窗框架。
-

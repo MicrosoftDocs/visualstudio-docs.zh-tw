@@ -1,14 +1,9 @@
 ---
 title: ClickOnce 和 Authenticode |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: ab5b6712-f32a-4e33-842f-e88ab4818ccf
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6057aa437aa4fc0d14bd21f20e3fa657f5c5c15d
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289480"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59000402"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,19 +44,19 @@ Authenticode * 是一種 Microsoft 技術，使用業界標準密碼編譯簽署
   
 -   由貴組織負責建立數位憑證的群組提供。  
   
--   使用隨附於 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] 的 MakeCert.exe，自己產生憑證。  
+-   使用隨附於 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]的 MakeCert.exe，自己產生憑證。  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>如何使用憑證授權單位幫助使用者  
- 使用 MakeCert.exe 公用程式產生的憑證通常稱為「自助憑證」  或「測試憑證」 。這種憑證的運作方式與 .NET Framework 之 .snk 檔案的運作方式相同。 它只有公開/私密密碼編譯金鑰組，不包含任何可驗證的發行者資訊。 您可以使用自助憑證部署在內部網路高度信任的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。 不過，當這些應用程式在用戶端電腦上執行時，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 會視之為來自未知的發行者。 根據預設，使用自我憑證簽署並透過網際網路部署的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，不能使用受信任的應用程式部署。  
+ 使用 MakeCert.exe 公用程式產生的憑證通常稱為「自助憑證」  或「測試憑證」 。這種憑證的運作方式與 .NET Framework 之 .snk 檔案的運作方式相同。 它只有公開/私密密碼編譯金鑰組，不包含任何可驗證的發行者資訊。 您可以使用自助憑證部署在內部網路高度信任的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。 不過，當這些應用程式在用戶端電腦上執行時， [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 會視之為來自未知的發行者。 根據預設，使用自我憑證簽署並透過網際網路部署的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，不能使用受信任的應用程式部署。  
   
  相反地，來自 CA 的憑證，例如，憑證廠商或貴企業內部的部門，能為您的使用者提供更高的安全性。 它不只會識別簽署軟體的發行者，還會檢查簽署的 CA 驗證身分識別。 如果 CA 不是根授權單位，Authenticode 也會「鏈結」回根授權單位，確認 CA 有權發行憑證。 為了更高的安全性，您應該盡可能使用 CA 發出的憑證。  
   
  如需有關如何產生自助憑證的詳細資訊，請參閱 < [Makecert.exe （憑證建立工具）](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d)。  
   
 ### <a name="timestamps"></a>時間戳記  
- 簽署 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式所用的憑證會在一定時間後過期，通常是十二個月。 為免經常需要使用新憑證重新簽署應用程式，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 支援時間戳記。 使用時間戳記簽署應用程式後，只要時間戳記有效，憑證即使到期仍被接受。 這可讓使用過期憑證，但時間戳記有效的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，能夠下載並執行。 它也允許使用過期憑證的已安裝應用程式，能夠繼續下載並安裝更新。  
+ 簽署 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式所用的憑證會在一定時間後過期，通常是十二個月。 為免經常需要使用新憑證重新簽署應用程式， [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 支援時間戳記。 使用時間戳記簽署應用程式後，只要時間戳記有效，憑證即使到期仍被接受。 這可讓使用過期憑證，但時間戳記有效的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，能夠下載並執行。 它也允許使用過期憑證的已安裝應用程式，能夠繼續下載並安裝更新。  
   
- 若要在應用程式伺服器中包含時間戳記，必須有可用的時間戳記伺服器。 如需如何選取時間戳記伺服器的資訊，請參閱 [How to: Sign Application and Deployment Manifests](../ide/how-to-sign-application-and-deployment-manifests.md)。  
+ 若要在應用程式伺服器中包含時間戳記，必須有可用的時間戳記伺服器。 如需有關如何選取時間戳記伺服器的資訊，請參閱[How to:簽署應用程式與部署資訊清單](../ide/how-to-sign-application-and-deployment-manifests.md)。  
   
 ### <a name="updating-expired-certificates"></a>更新過期的憑證  
  在舊版的 .NET Framework 中，更新憑證已過期的應用程式可能會導致應用程式停止運作。 為解決此問題，請使用下列其中一種方法：  
@@ -81,6 +76,3 @@ Authenticode * 是一種 Microsoft 技術，使用業界標準密碼編譯簽署
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)   
  [Mage.exe (資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)
-
-
-

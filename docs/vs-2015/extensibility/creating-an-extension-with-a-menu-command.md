@@ -1,14 +1,9 @@
 ---
 title: Creating an Extension with 功能表命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - write a vspackage
 - vspackage
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fb99149a7b617d8e48e036d9e706e5e1c0a6169b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 644f763c64897eda4896c1431c815519dcc9b65f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779303"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941805"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>建立具有功能表命令的延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +108,7 @@ ms.locfileid: "51779303"
   
  您可以找到此延伸模組的.vsix 檔 FirstMenuCommand bin 目錄中。 具體來說，假設您已建立的發行組態，它會是：  
   
- **\<程式碼目錄 > \FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix**  
+ **\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix**  
   
  若要安裝擴充功能，您的朋友必須關閉所有開啟的 Visual Studio 中，執行個體，然後按兩下.vsix 檔案時，會顯示**VSIX 安裝程式**。 檔案會複製到 **%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions**目錄。  
   
@@ -124,19 +119,18 @@ ms.locfileid: "51779303"
   
 1. 您可以使用簡單的功能表命令的更多項目：  
   
-   1.  新增您自己的圖示：[新增圖示加入至功能表命令](../extensibility/adding-icons-to-menu-commands.md)  
+   1.  新增您自己的圖示：[將圖示加入至功能表命令](../extensibility/adding-icons-to-menu-commands.md)  
   
    2.  變更功能表命令文字：[變更功能表命令的文字](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  將功能表捷徑新增至命令：[繫結至功能表項目的的鍵盤快速鍵](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3.  將功能表捷徑新增至命令：[將鍵盤快速鍵繫結至功能表項目](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2. 新增不同類型的命令、 功能表和工具列：[擴充的功能表和命令](../extensibility/extending-menus-and-commands.md)  
+2. 新增不同類型的命令、 功能表和工具列：[擴充功能表和命令](../extensibility/extending-menus-and-commands.md)  
   
-3. 加入工具視窗，並擴充內建的 Visual Studio 工具視窗：[延伸和自訂工具 Windows](../extensibility/extending-and-customizing-tool-windows.md)  
+3. 加入工具視窗，並擴充內建的 Visual Studio 工具視窗：[擴充和自訂工具視窗](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4. 加入 IntelliSense、 程式碼的建議，和其他功能，現有的程式碼編輯器：[擴充編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)  
+4. 加入現有的程式碼編輯器的 IntelliSense、 程式碼的建議，以及其他功能：[擴充編輯器和語言服務](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. 加入您的延伸模組中的選項和 [屬性] 頁面和使用者設定：[擴充屬性和 [屬性] 視窗](../extensibility/extending-properties-and-the-property-window.md)和[Extending User Settings and 選項](../extensibility/extending-user-settings-and-options.md)  
+5. 加入您的延伸模組的選項和 [屬性] 頁面和使用者設定：[擴充屬性和屬性視窗](../extensibility/extending-properties-and-the-property-window.md)和[擴充使用者設定和選項](../extensibility/extending-user-settings-and-options.md)  
   
-   其他類型的延伸模組需要多一點的工作，例如建立新的專案類型 ([擴充的專案](../extensibility/extending-projects.md))，建立新類型的編輯器 ([建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md))，或在 獨立模式 shell 中實作您的延伸模組： [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)
-
+   其他類型的延伸模組需要多一點的工作，例如建立新的專案類型 ([擴充的專案](../extensibility/extending-projects.md))，建立新類型的編輯器 ([建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md))，或在 獨立模式 shell 實作您的延伸模組：[Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)

@@ -1,26 +1,21 @@
 ---
 title: 編輯器匯入 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759033"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942679"
 ---
 # <a name="editor-imports"></a>編輯器匯入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,15 +44,15 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  如需使用 匯入的範例，請參閱下列逐步解說：  
   
- [逐步解說：建立邊界字符](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [逐步解說：建立邊界圖像](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [逐步解說︰自訂文字檢視](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [逐步解說：自訂文字檢視](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [逐步解說︰反白顯示文字](../extensibility/walkthrough-highlighting-text.md)  
+ [逐步解說：反白顯示文字](../extensibility/walkthrough-highlighting-text.md)  
   
- [逐步解說︰顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [逐步解說：顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [逐步解說︰顯示簽章說明](../extensibility/walkthrough-displaying-signature-help.md)  
+ [逐步解說：顯示簽章說明](../extensibility/walkthrough-displaying-signature-help.md)  
   
  [逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)  
   
@@ -71,7 +66,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- 請參閱[逐步解說： 從編輯器擴充功能存取 DTE 物件](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md)如需詳細資訊。  
+ 請參閱[逐步解說：從編輯器擴充功能存取 DTE 物件](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md)如需詳細資訊。  
   
 ## <a name="services"></a>服務  
  編輯器服務是提供服務和多個元件之間共用的通常單一實體。  
@@ -129,4 +124,3 @@ internal SVsServiceProvider ServiceProvider = null;
   
 ## <a name="see-also"></a>另請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)
-

@@ -1,25 +1,20 @@
 ---
-title: 逐步解說： 使用 XML 編輯器功能 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：使用 XML 編輯器功能 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b054f7bfc4a70ee19e60315e3e7bc2a790db3cba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f965bf147454d2076445170ea6fb6748782052d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252280"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942374"
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>逐步解說：使用 XML 編輯器功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +72,7 @@ ms.locfileid: "49252280"
   
 5.  鍵入 `>` 以關閉標記。  
   
-6.  編輯器會加入結束標記。 加入的結束標記會帶有波浪底線，表示驗證錯誤。 工具提示會顯示訊息：項目「employee」的內容不完整。 預期的是 'ID'。  
+6.  編輯器會加入結束標記。 加入的結束標記會帶有波浪底線，表示驗證錯誤。 工具提示會顯示訊息：項目 employee 的內容不完整。 預期的是 'ID'。  
   
 7.  型別`<`，然後選取**識別碼**從成員清單。 然後鍵入 `>`。  
   
@@ -85,7 +80,7 @@ ms.locfileid: "49252280"
   
 8.  型別**abc**。  
   
-     **Abc**文字帶有波浪底線。 工具提示會顯示訊息：根據其資料型別，「ID」項目有無效的值。  
+     **Abc**文字帶有波浪底線。 工具提示會顯示訊息：根據其資料型別，ID 項目有無效的值。  
   
 9. ID 項目上按一下滑鼠右鍵，然後選取**移至定義**。  
   
@@ -93,7 +88,7 @@ ms.locfileid: "49252280"
   
 10. 返回至 XML 檔案，並取代**abc**文字**123**。  
   
-     會清除 ID 項目值之下的波浪底線及工具提示。 此時 employee 結束標記的工具提示會顯示訊息：項目「employee」的內容不完整。 預期的 hire-date。  
+     會清除 ID 項目值之下的波浪底線及工具提示。 employee 結束標記的工具提示現在會顯示訊息：項目 employee 的內容不完整。 預期的 hire-date。  
   
 11. 將游標置於 ID 結束標記的後面，鍵入 `<`，並自成員清單中選取 hire-date，然後鍵入 `>`。  
   
@@ -136,4 +131,3 @@ ms.locfileid: "49252280"
   
 ## <a name="see-also"></a>另請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)
-
