@@ -1,14 +1,9 @@
 ---
 title: 命令、 功能表和工具列 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
 - commands [Visual Studio]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 caps.latest.revision: 61
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5c9641f788951e79efb392927371bb55b49ec294
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 337bc4de9171d2f98bf0be0068b298b7f600b979
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752576"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942664"
 ---
 # <a name="commands-menus-and-toolbars"></a>命令、功能表及工具列
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51752576"
   
 - 建立命令時，也必須一併建立它的事件處理常式。 事件處理常式可判斷命令的顯示和啟用時間、可讓您修改其文字，並確保在啟動時適當地回應命令 (路由遞送)。 在大部分情況下，IDE 會使用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面來處理命令。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 中的命令會以階層方式路由遞送，即從最內層命令內容開始 (根據本機選取範圍) 到最外層內容 (根據全域選取範圍)。 加入主功能表的命令可立即用於指令碼編寫。 如需詳細資訊，請參閱[Menucommand 對比。OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)並[選取內容物件](../../extensibility/internals/selection-context-objects.md)。  
   
-  若要定義新的功能表和工具列，您必須以 Visual Studio 命令表 (.vsct) 檔案描述它們。 Visual Studio 封裝樣板會建立這個檔案以及必要項目，以支援您在樣板中所選取的任何命令、工具列和編輯器。 或者，您可以使用這裡所描述的 XML 結構描述來撰寫專屬 .vsct 檔案： [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)。  
+  若要定義新的功能表和工具列，您必須以 Visual Studio 命令表 (.vsct) 檔案描述它們。 Visual Studio 封裝樣板會建立這個檔案以及必要項目，以支援您在樣板中所選取的任何命令、工具列和編輯器。 或者，您可以撰寫專屬.vsct 檔案中，使用此處描述的 xml 結構描述：[VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)。  
   
   如需使用.vsct 檔案的詳細資訊，請參閱[Visual Studio Command Table (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   
@@ -69,4 +64,3 @@ ms.locfileid: "51752576"
 ## <a name="related-sections"></a>相關章節  
  [在 VSPackage 中路由傳送命令](../../extensibility/internals/command-routing-in-vspackages.md)  
  說明在 Vspackage 中路由的命令。
-

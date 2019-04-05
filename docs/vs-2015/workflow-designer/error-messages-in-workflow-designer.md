@@ -1,11 +1,8 @@
 ---
 title: 在工作流程設計工具中的錯誤訊息 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDErrorMessages.UI
@@ -15,13 +12,13 @@ ms.assetid: 4d8bbc2e-34fc-477f-9140-4adfd70c34a0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: efd6bc680be42f1074da8d2313b1a4b8e9307580
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 005a1db9d99b5eb91fb49d1694610cdc4ace9826
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894842"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943546"
 ---
 # <a name="error-messages-in-workflow-designer"></a>工作流程設計工具的錯誤訊息
 本主題描述處理 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 時可能遇到的錯誤訊息類型。  

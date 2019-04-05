@@ -1,14 +1,9 @@
 ---
-title: IEEDataStorage::GetData |Microsoft Docs
-ms.custom: ''
+title: IEEDataStorage::GetData | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEEDataStorage::GetData
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d0d23ecbc348d4aab4fdbbb83abaaba54fdad345
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a58f644a71601b16317c4fe63271f4f816da77d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751079"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943371"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -66,4 +61,3 @@ int GetData(
 ## <a name="see-also"></a>另請參閱  
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)
-

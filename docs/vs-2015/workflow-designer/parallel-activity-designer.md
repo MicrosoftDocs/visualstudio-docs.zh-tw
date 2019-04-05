@@ -1,11 +1,8 @@
 ---
 title: Parallel 活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
@@ -13,13 +10,13 @@ ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f557eb013cb313321b336fb22fd1299e51faaa82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 627a99fec632871b815904abd798c0e4bbfd6505
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221562"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944440"
 ---
 # <a name="parallel-activity-designer"></a>Parallel 活動設計工具
 <xref:System.Activities.Statements.Parallel> 活動會並行執行屬於同一集合的子活動。  
@@ -39,7 +36,7 @@ ms.locfileid: "49221562"
 ### <a name="parallel-activity-properties-in-the-workflow-designer"></a>工作流程設計工具中的 Parallel 活動屬性  
  下表顯示 Parallel 活動屬性，並且說明它們在設計工具中的使用方式。  
   
-|屬性名稱|必要項|使用方式|  
+|屬性名稱|必要|使用量|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定活動設計工具在標頭中的易記顯示名稱。 預設值是**平行**。 值可以在中選擇性地編輯**屬性**方格或直接在活動設計工具標頭。|  
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|包含要執行之子活動的集合。|  
@@ -47,5 +44,5 @@ ms.locfileid: "49221562"
   
 ## <a name="see-also"></a>另請參閱  
  [順序](../workflow-designer/sequence-activity-designer.md)   
- [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)   
+ [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)   
  [控制流程](../workflow-designer/control-flow-activity-designers.md)
