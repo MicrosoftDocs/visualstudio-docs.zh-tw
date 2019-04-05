@@ -1,14 +1,9 @@
 ---
 title: '&lt;簽章&gt;項目 （ClickOnce 部署） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +14,13 @@ ms.assetid: c99b07ad-e8ba-43f2-b0d6-3745e7a7c8b3
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: fe93a951fdde4a1aa4ad6d2c300551988e42c82b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: df18b63ff306525cba74ef0932c97edd64eee797
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266944"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942128"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;簽章&gt;項目 （ClickOnce 部署）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,8 +31,8 @@ ms.locfileid: "49266944"
   
 ```  
   
-      <Signature>   
-   XML signature information   
+      <Signature>   
+   XML signature information   
 </Signature>  
 ```  
   
@@ -80,6 +75,3 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)
-
-
-

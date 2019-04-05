@@ -1,14 +1,9 @@
 ---
-title: 如何： 建立或更新標準程式碼分析簽入原則 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立或更新標準程式碼分析簽入原則 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
@@ -18,14 +13,14 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6821d218c22f2d83108205d8753fc2d5beac4f28
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: caaf9026d949b2e1327e7d88507f27392bf07283
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939432"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58941529"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：建立或更新標準程式碼分析簽入原則
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>HOW TO：建立或更新標準程式碼分析簽入原則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以要求所有 team 專案中的程式碼專案上執行程式碼分析，使用程式碼分析簽入原則。 需要程式碼分析，可以改善簽入程式碼基底的程式碼的品質。  
@@ -79,6 +74,3 @@ ms.locfileid: "49939432"
   
 ## <a name="see-also"></a>另請參閱  
  [建立和使用程式碼分析簽入原則](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
-
-
-

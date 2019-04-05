@@ -1,14 +1,9 @@
 ---
-title: CA2118： 檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法 |Microsoft Docs
-ms.custom: ''
+title: CA2118:檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2118
 - ReviewSuppressUnmanagedCodeSecurityUsage
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6d4cee2d7758f467a13875f89a9534ceb0d883b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ebe26e81bdee6be1b2e3a795f50c753d9bb66814
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941165"
 ---
-# <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118：必須檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法
+# <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118:檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -77,7 +72,4 @@ ms.locfileid: "49904475"
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypeInvokeAndSuppress/cs/FxCop.Security.TypeInvokeAndSuppress.cs#1)]
 
 ## <a name="see-also"></a>另請參閱
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [安全程式碼撰寫指導方針](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[安全性最佳化](http://msdn.microsoft.com/en-us/cf255069-d85d-4de3-914a-e4625215a7c0)[資料與模型化](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)[連結要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
-
-
-
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [安全程式碼撰寫指導方針](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[安全性最佳化](http://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0)[資料與模型化](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)[連結要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

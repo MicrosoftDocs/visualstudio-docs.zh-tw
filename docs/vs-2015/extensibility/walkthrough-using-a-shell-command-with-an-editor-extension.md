@@ -1,28 +1,23 @@
 ---
-title: 逐步解說： 搭配編輯器擴充功能使用 Shell 命令 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：搭配編輯器擴充功能使用 Shell 命令 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e64d50dcd56f1421e4ffe1ab33b5396c436eeeda
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b898273defe7da4cf8d082b01089c8d6476e8357
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773037"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930300"
 ---
-# <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>逐步解說︰搭配編輯器延伸模組使用 Shell 命令
+# <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>逐步解說：搭配編輯器延伸模組使用 Shell 命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 從 VSPackage，您可以將功能，例如功能表命令新增至編輯器。 本逐步解說示範如何加入在編輯器中文字檢視中的裝飾，藉由叫用功能表命令。  
@@ -724,10 +719,9 @@ ms.locfileid: "51773037"
   
 3.  在 **工具**功能表上，按一下**叫用加入 Adornment**。 球形文字說明應該會顯示 [文字] 視窗中，右邊，而且應該包含類似下列文字的文字。  
   
-     您的使用者名稱  
+     YourUserName  
   
      Fourscore...  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

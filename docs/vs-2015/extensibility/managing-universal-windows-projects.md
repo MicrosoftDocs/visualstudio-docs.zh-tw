@@ -1,24 +1,19 @@
 ---
 title: 管理通用 Windows 專案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c10232b917e8343ace8d1a31fcd3609ecdfb95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e905ca4a34399c1ec590d5ff16441bd5afe9ce23
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941235"
 ---
 # <a name="managing-universal-windows-projects"></a>管理通用 Windows 專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -578,4 +573,3 @@ ms.locfileid: "51783775"
     ```  
   
 13. 建置並執行專案。 在實驗執行個體中建立 C# 通用專案，請前往**工具**功能表，然後按一下**叫用 TestUniversalProject**，並檢查一般輸出窗格中的文字。 平台專案中的檔案重新命名之後，您應該會看到兩者<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>事件和<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>事件。 因為變更檔案造成的變更，沒有其他檔案，因為平台專案中的項目已變更不在任何位置取得傳播，都只有一個每個事件。
-

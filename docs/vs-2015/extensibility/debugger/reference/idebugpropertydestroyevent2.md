@@ -1,14 +1,9 @@
 ---
-title: IDebugPropertyDestroyEvent2 |Microsoft Docs
-ms.custom: ''
+title: IDebugPropertyDestroyEvent2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPropertyDestroyEvent2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 301b7a75-ecfa-46f1-9131-66cf3e4be147
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4140544cd9fe6de530416e77b891dceaff169b54
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0bc0520e6f030ad6746748ac269eb97bc885e2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743656"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930402"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -54,9 +49,9 @@ IDebugPropertyDestroyEvent2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
@@ -64,4 +59,3 @@ IDebugPropertyDestroyEvent2 : IUnknown
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)
-

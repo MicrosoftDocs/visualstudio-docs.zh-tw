@@ -1,25 +1,22 @@
 ---
 title: 撰寫程式碼來自訂特定領域語言 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming
 ms.assetid: a4a17f5b-9c97-4575-b2d1-3182c1896b72
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: affa3db292ed23ca52b0cca810daf5ca70ad0fd1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 03b92c8ea9b764df517b02dc0dc256b5837a6c10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866320"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941194"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>撰寫程式碼來自訂網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ ms.locfileid: "49866320"
   
  有數種內容中，您可以撰寫與 DSL 搭配運作的程式碼：  
   
-- **自訂命令。** 您可以建立命令的使用者可以用滑鼠右鍵按一下圖表中，叫用，並且它也可以修改模型。 如需詳細資訊，請參閱 <<c0> [ 如何： 將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
+- **自訂命令。** 您可以建立命令的使用者可以用滑鼠右鍵按一下圖表中，叫用，並且它也可以修改模型。 如需詳細資訊，請參閱[如何：將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
   
 - **Validation (驗證)，** 您可以撰寫程式碼，確認模型處於正確狀態。 如需詳細資訊，請參閱 <<c0> [ 定義域專屬語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)。  
   
@@ -36,7 +33,7 @@ ms.locfileid: "49866320"
   
 - **文字轉換。** 您可以撰寫文字範本，其中包含存取模型，並產生文字檔案，例如若要產生程式碼的程式碼。 如需詳細資訊，請參閱 <<c0> [ 特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。  
   
-- **其他 Visual Studio 擴充功能。** 您可以撰寫個別的 VSIX 擴充功能來讀取和修改模型。 如需詳細資訊，請參閱[How to： 從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- **其他 Visual Studio 擴充功能。** 您可以撰寫個別的 VSIX 擴充功能來讀取和修改模型。 如需詳細資訊，請參閱[如何：在程式碼中開啟檔案的模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
   您在 DslDefinition.dsl 中定義之類別執行個體保留在資料結構，稱為*記憶體中存放區*(IMS) 或*存放區*。 您一律在 DSL 中定義的類別建構函式做為引數需要存放區。 例如，如果您的 DSL 定義名為範例的類別：  
   
@@ -80,6 +77,3 @@ ms.locfileid: "49866320"
   
 ## <a name="see-also"></a>另請參閱  
  [自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 如何： 搭配專案範本使用精靈 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用精靈與專案範本 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
 - Visual Studio templates, wizards
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 650b9c360013d06216e607269f77afd24f3cc22c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 801f6f02c94b60b95949d41cb1c762516d2c58b5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783749"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "59000819"
 ---
-# <a name="how-to-use-wizards-with-project-templates"></a>如何：搭配專案範本使用精靈
+# <a name="how-to-use-wizards-with-project-templates"></a>HOW TO：搭配專案範本使用精靈
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面，這個介面實作時，可讓您執行自訂程式碼，當使用者從範本建立專案。  
@@ -228,23 +223,23 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
   
 9. 尋找**sn.exe**簽署工具。 比方說，Windows 10 64 位元作業系統上，典型的路徑會是下列：  
   
-     **C:\Program Files (x86) \Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools**  
+     **C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools**  
   
      如果找不到工具，請嘗試執行**其中 /R。 sn.exe**命令視窗中。 記下路徑。  
   
 10. 從 key.snk 檔案中擷取的公開金鑰。 在 [命令] 視窗中，輸入  
   
-     **\<sn.exe 的位置 > \sn.exe-p key.snk outfile.key。**  
+     **\<location of sn.exe>\sn.exe - p key.snk outfile.key.**  
   
      別忘了用 sn.exe 加上引號的路徑，如果目錄名稱中有空格 ！  
   
 11. 從 outfile 取得的公開金鑰語彙基元：  
   
-     **\<sn.exe 的位置 > \sn.exe-t outfile.key。**  
+     **\<location of sn.exe>\sn.exe - t outfile.key.**  
   
      同樣地，別忘了引號。 您應該會看到如下的輸出中的資料行  
   
-     **公開金鑰語彙基元是 <token>**  
+     **公開金鑰語彙基元是\<權杖 >**  
   
      記下此值。  
   
