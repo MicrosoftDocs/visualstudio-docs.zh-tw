@@ -1,26 +1,21 @@
 ---
 title: 註冊副檔名的動詞命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3a1300f7f66e9c3e9e9cebe3a7b0c7c84e7df4c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff021643313d267cc92d2f08afa8f41a3ce806b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782423"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945551"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>註冊適用於副檔名的動詞命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,4 +115,3 @@ ms.locfileid: "51782423"
   
 ## <a name="see-also"></a>另請參閱  
  [管理並存的檔案關聯](../extensibility/managing-side-by-side-file-associations.md)
-

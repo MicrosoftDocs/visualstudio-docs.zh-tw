@@ -1,25 +1,22 @@
 ---
 title: 模型化應用程式&#39;s 架構 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
 ms.assetid: aedce746-9df5-49e1-9662-67eb1b83d313
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 770f93c0ede93201ee873820d6701356837f4ea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 043d6e743df1069e268e63e8ef8acb52555ce659
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803847"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945631"
 ---
 # <a name="model-your-app39s-architecture"></a>模型化應用程式&#39;s 架構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +105,7 @@ ms.locfileid: "51803847"
   這些重點將在本節的其餘部分中詳述。  
   
 ### <a name="components"></a>元件  
- 架構模型的中央檢視為元件圖表，其中顯示了此系統的主要部分以及它們如何彼此相依。 如需元件圖的詳細資訊，請參閱 < [UML 元件圖： 參考](../modeling/uml-component-diagrams-reference.md)。  
+ 架構模型的中央檢視為元件圖表，其中顯示了此系統的主要部分以及它們如何彼此相依。 如需元件圖的詳細資訊，請參閱[UML 元件圖：參考資料](../modeling/uml-component-diagrams-reference.md)。  
   
  ![顯示組件的 UML 元件圖表](../modeling/media/uml-barecomponent.png "UML_BareComponent")  
   
@@ -137,7 +134,7 @@ ms.locfileid: "51803847"
   
   您可以直接顯示元件之間的相依性，也可以顯示附加至此元件之必要和提供的介面之間的相依性。 您可以使用介面來定義每個相依性中使用的作業。 通常在先繪製圖表時，就會顯示元件之間的相依性，而在加入更多資訊之後，這些相依性會由介面之間的相依性所取代。 雖然這兩種版本都是此軟體的正確描述，不過包含介面的版本會比先前的版本提供更多詳細資料。  
   
-  對於生產容易維護的軟體而言，管理相依性是最重要的工作。 元件圖應該要反映出您程式碼中的所有相依性。 如果此程式碼已經存在，請確定所有相依性都顯示在該圖表中。 如果程式碼正在開發中，請確定它不包含此元件圖中沒有規劃的相依性。 若要協助您探索程式碼中的相依性，您可以產生分層圖。 若要協助您確定規劃的相依性條件約束已符合，您可以針對分層圖驗證此程式碼。 如需詳細資訊，請參閱 <<c0> [ 分層圖： 參考](../modeling/layer-diagrams-reference.md)。  
+  對於生產容易維護的軟體而言，管理相依性是最重要的工作。 元件圖應該要反映出您程式碼中的所有相依性。 如果此程式碼已經存在，請確定所有相依性都顯示在該圖表中。 如果程式碼正在開發中，請確定它不包含此元件圖中沒有規劃的相依性。 若要協助您探索程式碼中的相依性，您可以產生分層圖。 若要協助您確定規劃的相依性條件約束已符合，您可以針對分層圖驗證此程式碼。 如需詳細資訊，請參閱[分層圖：參考資料](../modeling/layer-diagrams-reference.md)。  
   
 ### <a name="interfaces"></a>介面  
  您可以將介面放在元件上，藉以分隔每個元件所提供的主要作業群組並加以命名。 例如，網頁式銷售系統中的元件可能會具有讓客戶用以購買商品的介面、讓供應商用以更新其目錄的介面，以及用以管理系統的第三個介面。  
@@ -161,7 +158,7 @@ ms.locfileid: "51803847"
 ### <a name="decomposing-a-component-into-parts"></a>將元件分解成組件  
  您可以將上述章節中所描述的程序套用至每個元件。  
   
- 您可以將每個元件內部的子元件顯示成「組件」(Part)。 組件實際上就是其父元件的屬性，也是一種類別。 每個組件都具有它自己的類型，這也可以是元件。 您可以將這個元件放在圖表上並顯示其組件。 如需詳細資訊，請參閱 < [UML 元件圖： 方針](../modeling/uml-component-diagrams-guidelines.md)。  
+ 您可以將每個元件內部的子元件顯示成「組件」(Part)。 組件實際上就是其父元件的屬性，也是一種類別。 每個組件都具有它自己的類型，這也可以是元件。 您可以將這個元件放在圖表上並顯示其組件。 如需詳細資訊，請參閱[UML 元件圖：指導方針](../modeling/uml-component-diagrams-guidelines.md)。  
   
  將這項技術套用至整個系統會很有用。 請將它繪製為單一元件，並將其主要元件顯示成組件。 這有助於您清楚識別系統的介面和外部環境。  
   
@@ -199,7 +196,7 @@ ms.locfileid: "51803847"
 ### <a name="identifying-the-initiating-events"></a>識別啟始事件  
  您可以輕鬆地依照系統提供給不同輸入或事件的回應劃分大部分軟體系統所做的工作。 啟始事件可能是下列其中一個事件：  
   
--   使用案例中的第一個動作。 它可能會在此需求模型中顯示為使用案例中的步驟或活動圖中的動作。 如需詳細資訊， [UML 使用案例圖： 方針](../modeling/uml-use-case-diagrams-guidelines.md)並[UML 活動圖表： 指導方針](../modeling/uml-activity-diagrams-guidelines.md)。  
+-   使用案例中的第一個動作。 它可能會在此需求模型中顯示為使用案例中的步驟或活動圖中的動作。 如需詳細資訊， [UML 使用案例圖：指導方針](../modeling/uml-use-case-diagrams-guidelines.md)和[UML 活動圖表：指導方針](../modeling/uml-activity-diagrams-guidelines.md)。  
   
 -   程式設計介面中的訊息。 如果您正在開發的系統是較大系統中的元件，就應該將它描述成其中一個元件介面的作業。 請參閱[元件和其介面](#Components)。  
   
@@ -210,9 +207,9 @@ ms.locfileid: "51803847"
   
  針對按照一般順序參與的每個元件執行個體繪製生命線。 在某些情況下，每個類型可能會有多個執行個體。 如果您已將整個系統描述為單一元件，則它所包含的每個組件都應該要有一條生命線。  
   
- 如需詳細資訊，請參閱 < [UML 循序圖： 方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
+ 如需詳細資訊，請參閱[UML 循序圖：指導方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
- 活動圖在某些情況下也很有用。 例如，如果您的元件具有連續資料流，就可以將它描述為物件流程。 如果您的元件具有複雜的演算法，就可以將它描述為控制流程。 請確定您清楚地指出每個動作會由哪些元件來執行 (例如使用註解)。 如需詳細資訊，請參閱 < [UML 活動圖表： 指導方針](../modeling/uml-activity-diagrams-guidelines.md)。  
+ 活動圖在某些情況下也很有用。 例如，如果您的元件具有連續資料流，就可以將它描述為物件流程。 如果您的元件具有複雜的演算法，就可以將它描述為控制流程。 請確定您清楚地指出每個動作會由哪些元件來執行 (例如使用註解)。 如需詳細資訊，請參閱[UML 活動圖表：指導方針](../modeling/uml-activity-diagrams-guidelines.md)。  
   
 ### <a name="specify-the-operations"></a>指定作業  
  這些圖表會顯示每個元件所執行的作業，而這些作業會表示成循序圖上的訊息或活動圖中的動作。  
@@ -247,7 +244,7 @@ ms.locfileid: "51803847"
   
 -   主要部分及其關聯性的模型。 這些可能是類別或元件和介面，以及它們之間的關聯和相依性。 這些項目通常可分為兩類：  
   
-    -   在使用此模式的程式碼之任何一部分中，開發人員必須複寫的項目。 您可以使用範本類型來描述這些項目。 如需詳細資訊，請參閱 < [UML 使用案例圖： 參考](../modeling/uml-use-case-diagrams-reference.md)。  
+    -   在使用此模式的程式碼之任何一部分中，開發人員必須複寫的項目。 您可以使用範本類型來描述這些項目。 如需詳細資訊，請參閱[UML 使用案例圖：參考資料](../modeling/uml-use-case-diagrams-reference.md)。  
   
     -   描述開發人員應該使用之架構類別的項目。  
   
@@ -265,6 +262,3 @@ ms.locfileid: "51803847"
  [模型使用者需求](../modeling/model-user-requirements.md)   
  [透過模型開發測試](../modeling/develop-tests-from-a-model.md)   
  [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)
-
-
-
