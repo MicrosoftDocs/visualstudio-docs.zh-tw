@@ -1,28 +1,23 @@
 ---
-title: 逐步解說： 搭配編輯器擴充功能使用攠摝坫 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：編輯器擴充功能搭配使用攠摝坫 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1e68cf9d3e33ad07ab092de680078972dfaf2d70
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b40c0590b19b555f757af1e0a38481b0b245c07d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797451"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939877"
 ---
-# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>逐步解說︰搭配編輯器延伸模組使用快速鍵
+# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>逐步解說：在編輯器延伸模組中使用快速鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以在您的編輯器延伸模組中回應快速鍵。 下列逐步解說會示範如何使用快速鍵將文字檢視的檢視裝飾。 本逐步解說根據檢視區 adornment 編輯器範本，並可讓您使用新增 adornment + 字元。  
@@ -248,4 +243,3 @@ private void CreateVisuals(ITextViewLine line)
 2.  建立或開啟文字檔案。 輸入一些文字包含字元 'a'，然後輸入 + [文字] 檢視中的任何位置。  
   
      紫色的平方應該會出現在檔案中的每個 'a' 字元。
-

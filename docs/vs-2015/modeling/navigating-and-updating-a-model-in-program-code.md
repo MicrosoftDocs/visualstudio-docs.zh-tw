@@ -1,25 +1,22 @@
 ---
 title: 巡覽及更新模型，以在程式碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 ms.assetid: 1427ae91-be8a-4ce7-85df-00038faa2cbb
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6707f585e8f432a96c2a8cdeef06acb9e903c58e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1b9f53f1c2e28ce84cc59afa1d1db205da61e735
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863161"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938870"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>巡覽及更新程式碼中的模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ ms.locfileid: "49863161"
   
  [DocView 和 DocData](#docdata)  
   
- 圖形、 連接器和圖表和模型項目間的關係的個別主題所述。 如需詳細資訊，請參閱 <<c0> [ 如何： 巡覽及更新圖表](../misc/how-to-navigate-and-update-a-diagram.md)。  
+ 圖形、 連接器和圖表和模型項目間的關係的個別主題所述。 如需詳細資訊，請參閱[如何：瀏覽及更新圖表](../misc/how-to-navigate-and-update-a-diagram.md)。  
   
 ##  <a name="example"></a> DSL 定義的範例  
  這是本主題中的範例 DslDefinition.dsl 的主要部分：  
@@ -123,7 +120,7 @@ ms.locfileid: "49863161"
   
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`  
   
- 另外還有其他方法，以存取連結。 例如:   
+ 另外還有其他方法，以存取連結。 例如：  
   
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`  
   
@@ -229,7 +226,7 @@ using (Transaction t =
   
 - 設定新的項目，特別是為其屬性的屬性`IsName`是 DslDefinition 中，則為 true。 這個旗標標記是用來識別在其擁有者的唯一元素的屬性。 在此情況下，[名稱] 屬性會有該旗標。  
   
-- 此 DSL 的 DSL 定義必須載入到存放區。 如果您正在撰寫擴充功能，例如功能表命令，這通常會是已經為 true。 在其他情況下，您可以明確地將模型載入存放區，或使用<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>載入它。 如需詳細資訊，請參閱 <<c0> [ 如何： 從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。  
+- 此 DSL 的 DSL 定義必須載入到存放區。 如果您正在撰寫擴充功能，例如功能表命令，這通常會是已經為 true。 在其他情況下，您可以明確地將模型載入存放區，或使用<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>載入它。 如需詳細資訊，請參閱[如何：從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。  
   
   當您建立的項目，如此一來時，圖形會自動建立 （如果 DSL 圖表）。 它會出現在 自動指派的位置，而預設圖形、 色彩和其他功能。 如果您想要控制相關聯的圖形顯示的位置和方式，請參閱 <<c0> [ 建立項目和其圖形](#merge)。  
   
@@ -238,13 +235,13 @@ using (Transaction t =
   
  有三種方式，您可以在其中建立關聯性的執行個體。 每一種方法有相同的效果：  
   
-- 設定來源角色扮演者的屬性。 例如:   
+- 設定來源角色扮演者的屬性。 例如：  
   
   -   `familyTree.People.Add(edward);`  
   
   -   `edward.Parents.Add(henry);`  
   
-- 設定目標角色扮演者的屬性。 例如:   
+- 設定目標角色扮演者的屬性。 例如：  
   
   -   `edward.familyTreeModel = familyTree;`  
   
@@ -254,7 +251,7 @@ using (Transaction t =
   
        此角色的多重性是 「 `0..*`，因此我們將新增至集合。  
   
-- 明確建構關聯性執行的個體。 例如:   
+- 明確建構關聯性執行的個體。 例如：  
   
   -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   
@@ -513,7 +510,7 @@ partial class MyDiagram
  您也可以設定色彩和公開的其他屬性使用此方法的連接器。  
   
 ### <a name="use-transactions"></a>使用交易  
- 圖形、 連接器和圖表是的子類型<xref:Microsoft.VisualStudio.Modeling.ModelElement>選和即時存放區中。 您因此必須只在交易內，它們進行變更。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。  
+ 圖形、 連接器和圖表是的子類型<xref:Microsoft.VisualStudio.Modeling.ModelElement>選和即時存放區中。 您因此必須只在交易內，它們進行變更。 如需詳細資訊，請參閱[如何：使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。  
   
 ##  <a name="docdata"></a> 文件檢視和文件資料  
  ![標準圖表類型的類別圖表](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
@@ -525,9 +522,6 @@ partial class MyDiagram
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>   
  [特定領域語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)   
  [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)   
- [如何： 使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)   
+ [如何：使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)   
  [使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)
-
-
-

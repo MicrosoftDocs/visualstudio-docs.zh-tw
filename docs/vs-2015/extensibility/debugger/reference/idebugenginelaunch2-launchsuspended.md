@@ -1,14 +1,9 @@
 ---
 title: IDebugEngineLaunch2::LaunchSuspended |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEngineLaunch2::LaunchSuspended
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4ec15be6da5d20fc743c1a2655eb2d67d8247ccc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 08f59f9f099f4cec52760c8a8364feb8f5481ffa
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768364"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58939862"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -123,4 +118,3 @@ int LaunchSuspended(
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)   
  [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)
-

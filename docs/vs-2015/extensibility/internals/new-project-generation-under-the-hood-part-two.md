@@ -1,37 +1,32 @@
 ---
-title: 產生新專案︰ 深入來看，第二部分 |Microsoft Docs
-ms.custom: ''
+title: 新專案產生：在幕後，第二部分 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a5732db4ab36a7e198ee6ebdce185294d3b5bc31
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 60ff1f32d66daca4c37a7cfe7effb51361bb6f26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722485"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940181"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>產生新專案︰深入探討，第二部分
+# <a name="new-project-generation-under-the-hood-part-two"></a>新專案產生：一探究竟，第二部份
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-在[產生新專案： Under the Hood、 第一段](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我們可了解如何**新的專案**就會填入方塊的對話方塊。 假設您已選取**Visual C# Windows 應用程式**、 填入**名稱**並**位置**文字方塊中，然後按下的 [確定]。  
+在 [產生新專案：在幕後，第一段](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我們可了解如何**新的專案**就會填入方塊的對話方塊。 假設您已選取**Visual C# Windows 應用程式**、 填入**名稱**並**位置**文字方塊中，然後按下的 [確定]。  
   
 ## <a name="generating-the-solution-files"></a>產生的方案檔  
  選擇應用程式範本會指示[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]解壓縮和開啟對應的.vstemplate 檔案，並啟動範本，以解譯此檔案中的 XML 命令。 這些命令會建立新的或現有方案中專案和專案項目。  
   
- 範本會來源檔案，稱為項目範本，從相同的.vstemplate 檔案的.zip 資料夾解壓縮。 範本會將這些檔案複製到新的專案，並據此自訂它們。 如需專案和項目範本的概觀，請參閱 < [NIB: Visual Studio 範本](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041)。  
+ 範本會來源檔案，稱為項目範本，從相同的.vstemplate 檔案的.zip 資料夾解壓縮。 範本會將這些檔案複製到新的專案，並據此自訂它們。 如需專案和項目範本的概觀，請參閱[NIB:Visual Studio 範本](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)。  
   
 ### <a name="template-parameter-replacement"></a>範本參數取代  
  當範本會複製至新的專案項目範本時，它會取代任何範本參數來自訂檔案的字串。 樣板參數是特殊的語彙基元，為前面和後面接著貨幣符號，例如、 $date$。  
@@ -82,7 +77,7 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- 我們討論過\<TemplateData > 一節[產生新專案： Under the Hood、 第一段](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)。 在本節中的標記用來控制的外觀**新的專案** 對話方塊。  
+ 我們討論過\<TemplateData > 一節中[產生新專案：在幕後，第一部](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)。 在本節中的標記用來控制的外觀**新的專案** 對話方塊。  
   
  中的標記\<TemplateContent > 區段控制產生新的專案和專案項目。 以下是\<TemplateContent > 從 cswindowsapplication.vstemplate 檔案 \Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 資料夾中的區段。  
   
@@ -161,7 +156,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [產生新專案︰深入探討，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [新的專案產生：在幕後，第一部](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)
-
-

@@ -1,26 +1,21 @@
 ---
 title: 在自訂編輯器中檢視的文件資料和文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 55f082711de306e9dd22fdf55e769282ad150f17
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2f73ffde43f2ef3608ae492a9643f7920243d818
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755293"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939428"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>自訂編輯器中的文件資料和文件檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +41,10 @@ ms.locfileid: "51755293"
 ## <a name="see-also"></a>另請參閱  
  [支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)   
  [簡化嵌入](../extensibility/simplified-embedding.md)   
- [如何： 將檢視附加至文件資料](../extensibility/how-to-attach-views-to-document-data.md)   
+ [如何：將檢視附加至文件資料](../extensibility/how-to-attach-views-to-document-data.md)   
  [文件鎖定持有者管理](../extensibility/document-lock-holder-management.md)   
  [單一和多重索引標籤的檢視](../extensibility/single-and-multi-tab-views.md)   
  [正在儲存標準文件](../extensibility/internals/saving-a-standard-document.md)   
  [持續性和執行文件資料表](../extensibility/internals/persistence-and-the-running-document-table.md)   
  [決定編輯器開啟專案中的檔案](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)   
  [編輯器處理站](../extensibility/editor-factories.md)
-

@@ -1,29 +1,24 @@
 ---
-title: 檢查清單︰ 建立舊版語言服務 |Microsoft Docs
-ms.custom: ''
+title: 檢查清單：建立舊版語言服務 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 330270b34d55e88c883b9d8a6270b4abad02d9c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782982"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939037"
 ---
-# <a name="checklist-creating-a-legacy-language-service"></a>檢查清單︰建立舊版語言服務
+# <a name="checklist-creating-a-legacy-language-service"></a>檢查清單：建立舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 下列檢查清單摘要說明您必須採取才能建立語言服務的基本步驟[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]核心編輯器。 若要整合到您的語言服務[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，您必須建立偵錯運算式評估工具。 如需詳細資訊，請參閱 <<c0> [ 撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)中[Visual Studio 偵錯工具擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)。  
@@ -116,7 +111,7 @@ ms.locfileid: "51782982"
   
 - 大綱  
   
-   有數個選項，以支援大綱。 例如，您可以支援**摺疊至定義**命令，請提供編輯器控制項的大綱區域，或支援用戶端控制的區域。 如需詳細資訊，請參閱 <<c0> [ 如何： 提供展開大綱中的支援舊版語言服務](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)。  
+   有數個選項，以支援大綱。 例如，您可以支援**摺疊至定義**命令，請提供編輯器控制項的大綱區域，或支援用戶端控制的區域。 如需詳細資訊，請參閱[如何：提供展開大綱的支援，在舊版語言服務](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)。  
   
 - 語言服務登錄  
   
@@ -133,4 +128,3 @@ ms.locfileid: "51782982"
 ## <a name="see-also"></a>另請參閱  
  [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

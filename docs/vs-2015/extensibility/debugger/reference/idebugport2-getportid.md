@@ -1,14 +1,9 @@
 ---
-title: IDebugPort2::GetPortId |Microsoft Docs
-ms.custom: ''
+title: IDebugPort2::GetPortId | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPort2::GetPortId
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 837cb924-c113-4224-aa86-3e02b33dfa70
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 46239dafa3dfa5c5f10d69108d691d6f0adaed62
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a18e8743be6c7459ed877c93a77cec8e564626d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755993"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940306"
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,4 +47,3 @@ int GetPortId( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
-

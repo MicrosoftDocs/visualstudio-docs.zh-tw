@@ -1,14 +1,9 @@
 ---
 title: SccOpenProject 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccOpenProject
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a0bcb33ee214c11c369e17dc90bce138c0014fc6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0c89c98203306b287a3d4a3eb45ef673146a42b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768264"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940651"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,4 +115,3 @@ SCCRTN SccOpenProject (
  [SccUninitialize](../extensibility/sccuninitialize-function.md)   
  [字串長度限制](../extensibility/restrictions-on-string-lengths.md)   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)
-

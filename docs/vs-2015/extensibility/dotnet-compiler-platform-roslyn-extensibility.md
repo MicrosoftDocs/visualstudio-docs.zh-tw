@@ -1,24 +1,19 @@
 ---
 title: .NET 編譯器平台 (&quot;Roslyn&quot;) 擴充性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 564201b3-1e18-4b88-b615-42c2f57f3fe8
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: de01ec4f857042c6eaaaa70632b28cfc830886cb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fba277731444a294f276f43cc67b098039f4a64f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817083"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939375"
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET 編譯器平台 (&quot;Roslyn&quot;) 擴充性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,4 +24,3 @@ ms.locfileid: "51817083"
   
 ## <a name="see-also"></a>另請參閱  
  [開始使用 Roslyn 分析器](../extensibility/getting-started-with-roslyn-analyzers.md)
-

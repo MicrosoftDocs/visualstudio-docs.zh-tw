@@ -1,27 +1,22 @@
 ---
-title: 範例 XSD 檔案： 簡單的結構描述 |Microsoft Docs
-ms.custom: ''
+title: XSD 範例檔：簡單的結構描述 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 026201bcc2f02b91662990c71e648fe9f6c8f1f3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dd61a665e50c04516d8c3c62489f9ccab7880b6a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261621"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940053"
 ---
-# <a name="sample-xsd-file-simple-schema"></a>範例 XSD 檔案：簡單結構描述
+# <a name="sample-xsd-file-simple-schema"></a>XSD 範例檔：簡單結構描述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -53,6 +48,3 @@ XSD 結構描述設計工具文件中的數個範例使用下列 XSD 檔案。 �
  </xsd:complexType>  
 </xsd:schema>  
 ```
-
-
-

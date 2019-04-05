@@ -7,6 +7,12 @@ ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+ms.openlocfilehash: e47f44a78fbd8632b834c46c451f5f3106c85fcd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323004"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>在 Visual Studio 中測量應用程式的效能
 

@@ -1,14 +1,9 @@
 ---
 title: Visual Studio 範本結構描述參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - VSTEMPLATE files
 - Visual Studio templates, schema
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3b49b15047d11e8d09690c90dd3011700481fcef
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a15a08dc674940897bf465946efd2ec350cc7c42
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817421"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940054"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio 範本結構描述參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +26,9 @@ ms.locfileid: "51817421"
   
  您可以使用 vstemplate.xsd 驗證自訂 .vstemplate 檔。 此檔案位於...\\ *Visual Studio 安裝資料夾*\Xml\Schemas\1033\vstemplate.xsd。  
   
-|元素|子元素|屬性|  
+|項目|子元素|屬性|  
 |-------------|--------------------|----------------|  
-|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|無|無|  
+|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|None|None|  
 |[Assembly （範本）](../extensibility/assembly-element-visual-studio-templates.md)|--|--|  
 |[Assembly （精靈副檔名）](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|  
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|  
@@ -43,18 +38,18 @@ ms.locfileid: "51817421"
 |[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|名稱<br /><br /> 值|  
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|CustomParameter|--|  
 |[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|  
-|[描述](../extensibility/description-element-visual-studio-templates.md)|--|Package<br /><br /> 識別碼|  
+|[描述](../extensibility/description-element-visual-studio-templates.md)|--|套件<br /><br /> 識別碼|  
 |[EnableEditOfLocationField](../extensibility/enableeditoflocationfield-element-visual-studio-templates.md)|--|--|  
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|--|--|  
 |[資料夾](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> 資料夾|名稱|  
 ||[已被取代]|--|  
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|  
-|[隱藏](../extensibility/hidden-element-visual-studio-templates.md)|--|--|  
-|[圖示](../extensibility/icon-element-visual-studio-templates.md)|--|Package<br /><br /> 識別碼|  
+|[Hidden](../extensibility/hidden-element-visual-studio-templates.md)|--|--|  
+|[圖示](../extensibility/icon-element-visual-studio-templates.md)|--|套件<br /><br /> 識別碼|  
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|  
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|  
 |[MaxFrameworkVersion](../extensibility/maxframeworkversion-element-visual-studio-templates.md)|--|--|  
-|[名稱](../extensibility/name-element-visual-studio-templates.md)|--|Package<br /><br /> 識別碼|  
+|[名稱](../extensibility/name-element-visual-studio-templates.md)|--|套件<br /><br /> 識別碼|  
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|  
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|  
 |[Project](../extensibility/project-element-visual-studio-templates.md)|資料夾<br /><br /> ProjectItem|檔案<br /><br /> TargetFileName<br /><br /> ReplaceParameters|  
@@ -70,7 +65,7 @@ ms.locfileid: "51817421"
 |[參考](../extensibility/references-element-visual-studio-templates.md)|參考資料|--|  
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|  
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|版本|  
-|[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Package|  
+|[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|套件|  
 |[ShowByDefault](../extensibility/showbydefault-visual-studio-templates.md)|--|--|  
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|名稱|  
 |[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|--|--|  
