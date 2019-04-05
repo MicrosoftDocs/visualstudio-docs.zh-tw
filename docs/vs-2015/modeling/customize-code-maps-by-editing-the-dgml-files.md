@@ -1,12 +1,9 @@
 ---
 title: 藉由編輯 DGML 檔案自訂 code map |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency graphs, creating path aliases
 - dependency graphs, linking items to nodes
@@ -24,13 +21,13 @@ ms.assetid: a2e141f4-4fd8-4611-b236-6b9e7bc54fc1
 caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e370e805df8e3a6ee253e3560738e882a247d2de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 98d754bfc5f68acf693f37f98347c8c60075beaa
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817455"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "59000811"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +67,7 @@ ms.locfileid: "51817455"
   
    - `Category` 屬性，指定群組程式碼項目與其子程式碼項目之間的 `Contains` 關聯性  
   
-     例如:   
+     例如：  
   
    ```xml  
    <Links>  
@@ -102,7 +99,7 @@ ms.locfileid: "51817455"
     Stroke="StrokeValue"  
     ```  
   
-     例如:   
+     例如：  
   
     ```xml  
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >  
@@ -272,7 +269,7 @@ ms.locfileid: "51817455"
   
 2. 在 `<Style/>` 項目中加入包含 `<Condition/>` 屬性的 `Expression` 項目，以指定傳回布林值的運算式。  
   
-    例如:   
+    例如：  
   
    ```xml  
    <Condition Expression="MyCategory"/>  
@@ -292,29 +289,29 @@ ms.locfileid: "51817455"
   
     這個運算式會使用下列 Backus-Naur 格式 (BNF) 語法：  
   
-    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
+    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>  
   
-    <BinaryExpression> ::= <Expression> <Operator> <Expression>  
+    \<BinaryExpression> ::= \<Expression> \<Operator> \<Expression>  
   
-    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
+    \<UnaryExpression> ::= "!"\<運算式 > &#124; "+"\<運算式 > &#124; "-"\<運算式 >  
   
-    <Operator> :: ="<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "！ =" &#124; 「 或 」 &#124; "和" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
+    \<Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
-    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
+    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding >"。"\<MemberBinding>  
   
-    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
+    \<MemberBinding> ::= \<MethodCall> &#124; \<PropertyGet>  
   
-    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
+    \<MethodCall> ::= \<Identifier> "(" \<MethodArgs> ")"  
   
-    <PropertyGet> :: = 識別碼  
+    \<PropertyGet >:: = 識別碼  
   
-    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
+    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>  
   
-    <Identifier> ::= [^. ]*  
+    \<識別項 >:: = [^。 ]*  
   
-    <Literal> :: = 單引號或雙引號括住字串常值  
+    \<常值 >:: = 單引號或雙引號括住字串常值  
   
-    <Number> :: = 包含選擇性小數點的數字的字串  
+    \<數字 >:: = 包含選擇性小數點的數字的字串  
   
     您可以指定多個`<Condition/>`項目，都必須要套用樣式，則為 true。  
   
@@ -379,9 +376,9 @@ ms.locfileid: "51817455"
   
  在這個範例中：  
   
-1.  如果 `Coverage` 為 > 80，則將 `Background` 屬性設定為綠色。  
+1.  如果`Coverage`為 > 80，然後設定`Background`屬性為綠色。  
   
-2.  如果 `Coverage` 為 > 50，則根據 `Background` 屬性值，將 `Coverage` 屬性設定為深淺程度不同的橙色。  
+2.  Else if`Coverage`為 > 50，然後設定`Background`的橙色陰影的屬性，根據值`Coverage`屬性。  
   
 3.  如果是上述所有條件以外的情況，則根據 `Background` 屬性值，將 `Coverage` 屬性設定為深淺程度不同的紅色。  
   
@@ -613,7 +610,7 @@ ms.locfileid: "51817455"
   
       4.  使用`Label`屬性來指定程式碼項目上的顯示文字**移至參考**快顯功能表。  
   
-      例如:   
+      例如：  
   
    ```xml  
    <Nodes>  

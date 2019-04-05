@@ -1,26 +1,21 @@
 ---
 title: 新增項目加入新項目對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ca9ae7d9e4f0ffc031d2dc8db3e940c9b844c57e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7bc8ca8e9b38283c647cfde2d593e292d44ce43
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778549"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59000444"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>將項目新增至新增項目對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,17 +29,17 @@ ms.locfileid: "51778549"
   
  第一個 GUID 是這種; 專案的 CLSID第二個 GUID 指出新增的項目範本的已註冊的專案類型。  
   
- \\{C061DB26-5833-11D2-96F5-000000000000} \AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000} \1  
+ \\{C061DB26-5833-11D2-96F5-000000000000}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1  
   
  @="#6"  
   
- 「 TemplatesDir"="\<Visual Studio SDK 安裝路徑\\\VSIntegration\\\SomeFolder\\\SomePackage\\\SomeProject\\\SomeProjectItems"  
+ "TemplatesDir"="\<Visual Studio SDK installation path\\\VSIntegration\\\SomeFolder\\\SomePackage\\\SomeProject\\\SomeProjectItems"  
   
- 「 SortPriority"= dword:00000064  
+ "SortPriority"=dword:00000064  
   
 |名稱|類型|（從.rgs 檔案） 的資料|描述|  
 |----------|----------|-----------------------------|-----------------|  
-|@ （預設值）|REG_SZ|#%IDS_ADDITEM_TEMPLATES_ENTRY %|資源識別碼**加入項目**範本。|  
+|@ （預設值）|REG_SZ|#%IDS_ADDITEM_TEMPLATES_ENTRY%|資源識別碼**加入項目**範本。|  
 |Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\SomeProjectItems|在對話方塊中顯示的專案項目路徑**加入新項目**精靈。|  
 |Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|判斷樹狀節點中顯示的檔案中的排序次序**加入新項目** 對話方塊。|  
   
@@ -89,4 +84,3 @@ ms.locfileid: "51778549"
  [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [範本目錄描述 (。Vsdir) 檔案](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
  [精靈檔 (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
-

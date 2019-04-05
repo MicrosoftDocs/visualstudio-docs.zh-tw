@@ -1,35 +1,30 @@
 ---
-title: 什麼&#39;在 Visual Studio 中設計的新 |Microsoft Docs
-ms.custom: ''
+title: 什麼&#39;的新設計
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
-- what's new [VIsual Studio ALM], architecture and modeling
+- what's new [VIsual Studio], architecture and modeling
 - architecture [Visual Studio Ultimate], modeling
-- modeling software [Visual Studio ALM], What's New
+- modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee504d0054c52649d48676451168e7dea171b6af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84b5ed45bfa7117eec4cbaa86ad9ca4533339d62
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771291"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000739"
 ---
-# <a name="whats-new-for-design-in-visual-studio"></a>在 Visual Studio 中設計的新功能
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>在 Visual Studio 2015 的 Visual Studio 中設計的最新消息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 這個版本的 Visual Studio 包括下列改進，協助您進一步了解和設計程式碼。
 
- **Code map 和相依性圖形**
+ **Code Map 和相依性圖形**
 
  在 Visual Studio Enterprise 中，當您想要了解程式碼中的特定相依性時，請建立 Code Map 來將其視覺化。 然後，您可以使用出現在您程式碼旁邊的對應，來巡覽這些關聯性。 Code Map 也可以在您工作或偵錯程式碼時，協助追蹤您在程式碼中的位置，如此一來，當您進一步了解程式碼設計時，便可以少看一些程式碼。
 
@@ -61,7 +56,7 @@ ms.locfileid: "51771291"
 
   請參閱 [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)。
 
-  **在此版本中其他設計和模型變更：**
+  **本版中的其他設計和模型變更：**
 
 - **分層圖**。 使用類別檢視和物件瀏覽器來更新這些圖表。 為了達到軟體設計需求，請使用分層圖來描述軟體所需的相依性。 透過尋找不符合這些條件約束的程式碼，並使用這個基準來驗證未來的程式碼，讓程式碼與這個設計保持一致。
 
@@ -73,7 +68,7 @@ ms.locfileid: "51771291"
 
 Visual Studio 2015 有數個版本。 並非所有版本都提供 architecture and modeling tools 的支援。 下表顯示每個工具的可用性。
 
-|**功能**|**企業**|**Professional**|**Community**|**Express**|
+|**功能**|**Enterprise**|**Professional**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
 |**Code Map**|是|只支援讀取和篩選 code map、 加入新的泛型節點，以及從選取範圍建立新的導向圖形。|-|-|
 |**UML 類別圖表**|是|-|-|-|

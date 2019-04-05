@@ -1,14 +1,9 @@
 ---
 title: 擴充 UML 模型和圖表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -16,13 +11,13 @@ ms.assetid: b5bfa61e-ea59-4c3b-b5af-53475d7d13cd
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 74f3c518682997dca57a630c6f084437f7175d80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2c13d30b1657917d55e5d3218c70aa8f2a69ec67
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794760"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59000502"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>擴充 UML 模型和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51794760"
   
  Fabrikam 的工具小組製作了一系列的增強功能來協助此開發小組。 下列各節描述您可以定義的各種擴充功能。 您可以將多項技術合併成單一 Visual Studio 擴充功能。  
   
- 如需詳細資訊，請參閱這段影片中：![影片連結](../data-tools/media/playvideo.gif "PlayVideo")[MSDN 「 如何 」 系列： UML 工具和擴充性](http://go.microsoft.com/fwlink/?LinkId=214467)。  
+ 如需詳細資訊，請參閱這段影片中：![影片連結](../data-tools/media/playvideo.gif "PlayVideo")[MSDN 「 如何 」 系列：UML 工具和擴充性](http://go.microsoft.com/fwlink/?LinkId=214467)。  
   
 ##  <a name="Requirements"></a> 需求  
   
@@ -63,7 +58,7 @@ ms.locfileid: "51794760"
  如需詳細資訊，請參閱 <<c0> [ 定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)。  
   
 ## <a name="menu-commands"></a>功能表命令  
- 您可以定義使用者以滑鼠右鍵按一下 UML 圖表上的項目即可叫用的命令。 此命令可以更新該模型和圖表，或在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 中執行其他作業。  
+ 您可以定義使用者以滑鼠右鍵按一下 UML 圖表上的項目即可叫用的命令。 這些命令可以更新該模型和圖表，或在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]中執行其他作業。  
   
  Fabrikam 定義了功能表命令來自動化經常執行的作業，例如建立登機報到櫃檯並將它連接到選取的輸送帶，或根據公司的配置規則重新排列圖表。  
   
@@ -81,10 +76,10 @@ ms.locfileid: "51794760"
   
  Fabrikam 的開發人員建立程式碼，根據造型自動設定項目的色彩。 這讓使用者更容易區別模型中項目所扮演的不同角色。  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 回應 UML 模型中的變更](../misc/how-to-respond-to-changes-in-a-uml-model.md)。  
+ 如需詳細資訊，請參閱[如何：回應 UML 模型中的變更](../misc/how-to-respond-to-changes-in-a-uml-model.md)。  
   
 ## <a name="model-bus"></a>模型匯流排  
- 「模型匯流排」可讓您從另一個圖表或另一個 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充功能存取圖表或模型。  除此之外，您還可以將資訊散佈至多個模型，讓許多人能夠同時在合併的模型上執行工作。  
+ 「模型匯流排」可讓您從另一個圖表或另一個 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充功能存取圖表或模型。 除此之外，您還可以將資訊散佈至多個模型，讓許多人能夠同時在合併的模型上執行工作。  
   
  Fabrikam 使用活動圖表上的項目表示行李處理設備。 每一個設備項目都可以在另一個圖表上擁有更詳細的規格，而該圖表可以位於另一個模型上。 行李流程圖上的驗證條件約束可從其他圖表擷取此設備的相關屬性。 其他圖表的參考會儲存在造型中定義的其他屬性中。  
   
@@ -118,7 +113,7 @@ ms.locfileid: "51794760"
   
 |**分類**|**連結**|  
 |------------------|---------------|  
-|**影片**|![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 「 如何 」 系列： UML 工具和擴充性](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML 搭配 Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
+|**影片**|![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 「 如何 」 系列：UML 工具和擴充性](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9:使用 Visual Studio 的 UML](http://go.microsoft.com/fwlink/?LinkId=199957)|  
 |**論壇**|-   [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**部落格**|[Visual Studio ALM + Team Foundation Server 部落格](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)|  
@@ -126,6 +121,3 @@ ms.locfileid: "51794760"
 ## <a name="see-also"></a>另請參閱  
  [建立應用程式模型](../modeling/create-models-for-your-app.md)   
  [UML 模型擴充性的 API 參考](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

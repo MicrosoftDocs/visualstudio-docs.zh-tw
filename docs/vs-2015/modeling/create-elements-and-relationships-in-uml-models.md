@@ -1,25 +1,22 @@
 ---
 title: 在 UML 模型中建立項目和關聯性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: cae81d32-8cc7-4f7c-9f00-20119952bc51
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5ed918bc96168196400dd34d87ec65574fdfc5b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4b31faa7c71a0f4072d922528a1abc4d040e7dae
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785868"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59000410"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>在 UML 模型中建立項目和關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|  
   
 ### <a name="invoke-the-create-method-on-the-owner"></a>在擁有者上叫用 Create 方法  
- 方法名稱的格式為： `Create`*擁有的類型*`()`。 例如:   
+ 方法名稱是格式的：`Create`*擁有的類型*`()`。 例如：  
   
 ```  
 IUseCase usecase1 = linkedPackage.CreateUseCase();  
@@ -96,14 +93,14 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 3.  設定關聯性的屬性，例如其名稱。  
   
-     例如：  
+     例如:   
   
     ```  
     IAssociation association = subject.Package.CreateAssociation(subject, observer);  
     association .Name = "Observes";  
     ```  
   
-4.  設定關聯性各端的屬性。 總是會有兩個 `MemberEnds`。 例如：  
+4.  設定關聯性各端的屬性。 總是會有兩個 `MemberEnds`。 例如:   
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -135,6 +132,3 @@ anElement.Delete();
 ## <a name="see-also"></a>另請參閱  
  [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)   
  [在圖表上顯示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)
-
-
-

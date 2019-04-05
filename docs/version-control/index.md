@@ -2,7 +2,7 @@
 layout: LandingPage
 title: 版本控制
 description: Visual Studio 中的版本控制使用者入門指南
-keywords: 'VSTS, TFS, 版本控制'
+keywords: VSTS, TFS, 版本控制
 author: steved0x
 ms.manager: jillfra
 ms.author: sdanie
@@ -11,7 +11,13 @@ ms.topic: landing-page
 ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
-  - multiple
+- multiple
+ms.openlocfilehash: 97facaed877030dca4a6a2257147c4d92201ab55
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322700"
 ---
 # <a name="version-control-in-visual-studio"></a>Visual Studio 中的版本控制
 
