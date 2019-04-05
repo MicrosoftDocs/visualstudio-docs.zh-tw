@@ -1,14 +1,9 @@
 ---
 title: '&lt;封裝&gt;項目 （啟動載入器） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: b605d891fac3dceae77eb9bd3a1c0707b3fd6650
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 62c19953d1c4d82c0040e728fc2c2645c68589c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298671"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942816"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;封裝&gt;項目 （啟動載入器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,8 +148,8 @@ ms.locfileid: "49298671"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Culture`|必要。 定義此套件，用來決定要使用之語言的文化特性。 這個屬性是索引鍵到`Strings`項目，它會列出在安裝期間的產品名稱和錯誤訊息的特定文化特性的字串。|  
-|`Name`|必要。 這類顯示開發人員工具內的套件名稱[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 這個屬性是索引鍵中的`Strings`項目，其中應包含`String`具有項目`Name`並`Culture`屬性設定為符合`Name`並`Culture`屬性`Package`。|  
+|`Culture`|必要項。 定義此套件，用來決定要使用之語言的文化特性。 這個屬性是索引鍵到`Strings`項目，它會列出在安裝期間的產品名稱和錯誤訊息的特定文化特性的字串。|  
+|`Name`|必要項。 這類顯示開發人員工具內的套件名稱[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 這個屬性是索引鍵中的`Strings`項目，其中應包含`String`具有項目`Name`並`Culture`屬性設定為符合`Name`並`Culture`屬性`Package`。|  
 |`LicenseAgreement`|選擇性。 指定的檔案名稱，其中包含使用者授權合約 (EULA) 的散發套件中。  這個檔案可以是純文字 (.txt) 或豐富文字格式。 (.rtf)|  
   
 ## <a name="example"></a>範例  
@@ -197,6 +192,3 @@ ms.locfileid: "49298671"
   
 ## <a name="see-also"></a>另請參閱  
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)
-
-
-

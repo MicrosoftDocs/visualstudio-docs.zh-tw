@@ -1,25 +1,20 @@
 ---
-title: 如何： 使用 XML 程式碼片段 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用 XML 程式碼片段 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 774a0f5639057ea5b1dc190ce475278477a7f373
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: ec1b206bffa5ea49a17bd76487cdc398395c1f48
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219610"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945365"
 ---
 # <a name="how-to-use-xml-snippets"></a>HOW TO：使用 XML 片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,12 +108,9 @@ ms.locfileid: "50219610"
   
  按 ENTER 鍵或 ESC 鍵以取消欄位編輯，並將編輯器返回到正常狀態。  
   
- 可以藉由修改中的程式碼片段欄位設定變更可編輯的程式碼片段欄位的預設色彩**字型和色彩**窗格**選項** 對話方塊。 如需詳細資訊，請參閱 <<c0> [ 如何： 變更字型和色彩編輯器中的](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。  
+ 可以藉由修改中的程式碼片段欄位設定變更可編輯的程式碼片段欄位的預設色彩**字型和色彩**窗格**選項** 對話方塊。 如需詳細資訊，請參閱[如何：在編輯器中變更字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [XML 程式碼片段](../xml-tools/xml-snippets.md)   
- [如何： 從 XML 結構描述產生 XML 片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)   
- [如何：建立 XML 片段](../xml-tools/how-to-create-xml-snippets.md)
-
-
-
+ [如何：從 XML 結構描述產生 XML 片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)   
+ [如何：建立 XML 程式碼片段](../xml-tools/how-to-create-xml-snippets.md)

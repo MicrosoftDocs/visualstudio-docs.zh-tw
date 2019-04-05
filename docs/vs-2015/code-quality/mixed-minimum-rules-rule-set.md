@@ -1,25 +1,20 @@
 ---
 title: 混合最小規則規則集 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 50a327173bd1d5edac9a378e0251a50ce045a256
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8fb6cecf9c1e8798e5f545f5ad0155a4960f75aa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831441"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000674"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>混合最小規則規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Microsoft 混合最小規則的重點在於支援 Common Language Runtime，包�
 |                              [C6504](../code-quality/c6504.md)                              |                                              非指標上的 Null                                              |
 |                              [C6505](../code-quality/c6505.md)                              |                                               Void 上的 MustCheck                                               |
 |                              [C6506](../code-quality/c6506.md)                              |                                      非指標或陣列上的緩衝區大小                                      |
-|        [C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       取值零時的 Null 不符                                       |
+|        [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       取值零時的 Null 不符                                       |
 |                              [C6508](../code-quality/c6508.md)                              |                                           寫入存取常數                                            |
 |                              [C6509](../code-quality/c6509.md)                              |                                          先前的條件所用的 Return                                          |
 |                              [C6510](../code-quality/c6510.md)                              |                                        非指標上的 Null Terminated                                         |
@@ -76,13 +71,12 @@ Microsoft 混合最小規則的重點在於支援 Common Language Runtime，包�
 |                              [C6516](../code-quality/c6516.md)                              |                                          屬性 (Attribute) 上沒有屬性 (Property)                                           |
 |                              [C6517](../code-quality/c6517.md)                              |                                       不能讀取的緩衝區上的有效大小                                       |
 |                              [C6518](../code-quality/c6518.md)                              |                                     不能寫入的緩衝區上的可寫入大小                                      |
-|        [C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)        |                  無效的註釋：'NeedsRelease' 屬性的值必須為 Yes 或 No                   |
-|        [C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        無效的大小字串取值                                        |
+|        [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        無效的大小字串取值                                        |
 |                              [C6522](../code-quality/c6522.md)                              |                                           無效的大小字串類型                                            |
-|        [C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         無效的大小字串參數                                         |
+|        [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         無效的大小字串參數                                         |
 |                              [C6525](../code-quality/c6525.md)                              |                                   無效的大小字串不可能執行到的位置                                    |
-|        [C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)        |                                        無效的大小字串緩衝區類型                                        |
-|                              [C6527](../code-quality/c6527.md)                              |              無效的註釋：'NeedsRelease' 屬性不能用於 void 類型的值               |
+|        [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        無效的大小字串緩衝區類型                                        |
+|                              [C6527](../code-quality/c6527.md)                              |              無效的附註：'NeedsRelease' 屬性不能用於 void 類型的值               |
 |                              [C6530](../code-quality/c6530.md)                              |                                       無法辨認的格式字串樣式                                        |
 |                              [C6540](../code-quality/c6540.md)                              | 在這個函式上使用屬性註釋會使其所有現有的 __declspec 註釋無效。  |
 |                              [C6551](../code-quality/c6551.md)                              |                              無效的大小規格: 無法剖析運算式                              |
@@ -97,18 +91,18 @@ Microsoft 混合最小規則的重點在於支援 Common Language Runtime，包�
 |                             [C28182](../code-quality/c28182.md)                             |         取值的指標為 NULL。 指標所包含的 NULL 值與另一個指標相同。          |
 |                             [C28202](../code-quality/c28202.md)                             |                                    非靜態成員的參考不合法                                     |
 |                             [C28203](../code-quality/c28203.md)                             |                                     類別成員的參考模稜兩可。                                      |
-|                             [C28205](../code-quality/c28205.md)                             |                           \_成功\_或是\_On_failure\_不合法的內容中使用                            |
+|                             [C28205](../code-quality/c28205.md)                             |                           在不合法的內容中使用了 \_Success\_ 或 \_On_failure\_                            |
 |                             [C28206](../code-quality/c28206.md)                             |                                   左運算元指向結構，請使用 '->'                                   |
 |                             [C28207](../code-quality/c28207.md)                             |                                       左運算元是結構，請使用 '.'                                       |
 |                             [C28210](../code-quality/c28210.md)                             |                 _On_failure_ 內容的註釋不能在明確 pre context 中                  |
 |                             [C28211](../code-quality/c28211.md)                             |                                 SAL_context 需要靜態內容名稱                                  |
 |                             [C28212](../code-quality/c28212.md)                             |                                  註釋需要指標運算式                                   |
-|                             [C28213](../code-quality/c28213.md)                             | \_Use_decl_annotations\_註解必須用來參考，不需修改之前的宣告。 |
+|                             [C28213](../code-quality/c28213.md)                             | \_Use_decl_annotations\_ 註釋必須不需修改就能用來參考預先宣告。 |
 |                             [C28214](../code-quality/c28214.md)                             |                                   屬性參數名稱必須是 p1...p9                                   |
 |                             [C28215](../code-quality/c28215.md)                             |                    typefix 不能套用到已經有 typefix 的參數                    |
 |                             [C28216](../code-quality/c28216.md)                             |        checkReturn 註釋只適用於特定函式參數的後置條件。         |
 |                             [C28217](../code-quality/c28217.md)                             |            對於函式，註釋的參數數目不符合檔案中找到的參數數目             |
-|                             [C28218](../code-quality/c28218.md)                             |             對於函式參數，註釋的參數不符合檔案中找到的參數              |
+|                             [C28218](../code-quality/c28218.md)                             |             函式參數，註釋的參數不符合找到的檔案              |
 |                             [C28219](../code-quality/c28219.md)                             |                 註釋中標註的參數需要列舉的成員                 |
 |                             [C28220](../code-quality/c28220.md)                             |                  註釋中標註的參數需要整數運算式                   |
 |                             [C28221](../code-quality/c28221.md)                             |                        註釋中的參數需要字串運算式                         |
@@ -142,31 +136,29 @@ Microsoft 混合最小規則的重點在於支援 Common Language Runtime，包�
 |                             [C28254](../code-quality/c28254.md)                             |                               註釋中不支援 dynamic_cast<>()                                |
 |                             [C28262](../code-quality/c28262.md)                             |                    在函式 (隸屬於註釋) 中找到註釋的語法錯誤                     |
 |                             [C28263](../code-quality/c28263.md)                             |                 找到內建註釋的條件式註釋語法錯誤                 |
-|       [C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c)        |                                    結果清單值必須是常數。                                     |
 |                             [C28267](../code-quality/c28267.md)                             |                    在函式 (隸屬於註釋) 中找到註釋的語法錯誤。                    |
 |                             [C28272](../code-quality/c28272.md)                             |      函式參數的註釋在檢查時，與函式宣告不一致      |
 |                             [C28273](../code-quality/c28273.md)                             |                    對於函式，線索與函式宣告不一致                     |
-|                             [C28275](../code-quality/c28275.md)                             |                                   參數\_Macro_value\_為 null                                    |
+|                             [C28275](../code-quality/c28275.md)                             |                                   \_Macro_value\_ 的參數為 Null                                    |
 |                             [C28279](../code-quality/c28279.md)                             |                           找到符號的 'begin'，但沒有相符的 'end'                            |
 |                             [C28280](../code-quality/c28280.md)                             |                           找到符號的 'end'，但沒有相符的 'begin'                           |
 |                             [C28282](../code-quality/c28282.md)                             |                                    格式字串必須在前置條件中                                    |
 |                             [C28285](../code-quality/c28285.md)                             |                                    對於函式，參數中有語法錯誤                                    |
 |                             [C28286](../code-quality/c28286.md)                             |                                    對於函式，結尾附近發生語法錯誤                                    |
-|                             [C28287](../code-quality/c28287.md)                             |                函式的語法錯誤中\_在\_（） 註釋 （無法辨認的參數名稱）                |
-|                             [C28288](../code-quality/c28288.md)                             |                  函式的語法錯誤中\_在\_（） 註釋 （無效的參數名稱）                   |
-|                             [C28289](../code-quality/c28289.md)                             |                對於函式：ReadableTo 或 WritableTo 沒有有限的規格做為參數                |
+|                             [C28287](../code-quality/c28287.md)                             |                函式的 \_At\_() 註釋中有語法錯誤 (無法辨認的參數名稱)                |
+|                             [C28288](../code-quality/c28288.md)                             |                  函式的 \_At\_() 註釋中有語法錯誤 (無效的參數名稱)                   |
+|                             [C28289](../code-quality/c28289.md)                             |                函式：ReadableTo 或 WritableTo 沒有規格做為參數                |
 |                             [C28290](../code-quality/c28290.md)                             |           函式的註釋包含比實際參數數目還多的外部            |
 |                             [C28291](../code-quality/c28291.md)                             |                        位於 deref 層級 0 的 post null/notnull 對函式是無意義的。                        |
 |                             [C28300](../code-quality/c28300.md)                             |                            運算子的運算式運算元類型不相容                             |
 |                             [C28301](../code-quality/c28301.md)                             |                               函式的第一個宣告沒有註釋。                               |
-|                             [C28302](../code-quality/c28302.md)                             |                             額外\_Deref\_註釋上找不到運算子。                              |
-|                             [C28303](../code-quality/c28303.md)                             |                           模稜兩可\_Deref\_註釋上找不到運算子。                            |
-|                             [C28304](../code-quality/c28304.md)                             |                     不當放置\_Notref\_找不到運算子套用到語彙基元。                      |
+|                             [C28302](../code-quality/c28302.md)                             |                             在註釋中發現額外的 \_Deref\_ 運算子。                              |
+|                             [C28303](../code-quality/c28303.md)                             |                           在註釋發現模擬兩可的 \_Deref\_ 運算子。                            |
+|                             [C28304](../code-quality/c28304.md)                             |                     發現有位置不正確的 \_Notref\_ 運算子套用至語彙基元。                      |
 |                             [C28305](../code-quality/c28305.md)                             |                                剖析語彙基元時發現錯誤。                                 |
 |                             [C28350](../code-quality/c28350.md)                             |                  註釋描述了條件不適用的狀況。                   |
 |                             [C28351](../code-quality/c28351.md)                             |         註釋描述條件中不可以使用動態值 (變數)。          |
-|  [CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  |                             可處置欄位的類型應該是可處置的                             |
-|                 [CA1821](../code-quality/ca1821-remove-empty-finalizers.md)                 |                                            移除空的完成項                                            |
+|  [CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  |                             具有可處置欄位的類型應該為可處置                             |
+|                 [CA1821](../code-quality/ca1821-remove-empty-finalizers.md)                 |                                            必須移除空的完成項                                            |
 |          [CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)           |                                     可處置的欄位應該受到處置                                      |
-| [CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) |                            多載覆寫 ValueType.Equals 的等號比較運算子                            |
-
+| [CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) |                            在覆寫 ValueType.Equals 上多載等號運算子                            |

@@ -1,12 +1,9 @@
 ---
 title: 使用 DSL 定義圖 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.diagram
 - vs.dsltools.dsldesigner.dsldiagram
@@ -20,13 +17,13 @@ ms.assetid: 1a4c7a58-e134-438e-848e-efd98f92bf10
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fc0dbc007dcb3e15891a4176fc5bdb96babbfa8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fe01664694b8c4ebdf5a5edcd57d9d4fc600d6fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208581"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944479"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>使用 DSL 定義圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,14 +68,11 @@ ms.locfileid: "49208581"
 ### <a name="bring-tree-here"></a>Bring Tree Here  
  您可以合併圖表，以滑鼠右鍵按一下預留位置網域類別，然後按一下**此處將樹狀結構**。 預留位置網域類別會成為定義項目，並顯示繼承和關聯性樹狀結構。 如果先前的定義項目是關聯性目標或繼承關聯性中的子項，該項目會成為預留位置項目；否則該項目不會出現。  
   
-### <a name="split-tree"></a>Split Tree  
+### <a name="split-tree"></a>分割樹狀結構  
  您可以中斷 out 繼承或關聯性樹狀結構顯示網域類別定義上按一下滑鼠右鍵，然後按一下**分割樹狀結構**。 定義項目會成為預留位置項目，而定義網域類別現在會與其繼承和關聯性樹狀結構一起顯示在分割區底部。  
   
 ### <a name="show-as-class"></a>Show As Class  
  如果網域關聯性已衍生關聯性，或如果是內嵌或參考關聯性，與其他網域關聯性，您可以用滑鼠右鍵按一下 關聯性，然後按一下做為類別顯示關聯性**顯示為類別**. 會顯示關聯性**定義域屬性**區間，而且會顯示繼承和關聯性樹狀結構。  
   
 ## <a name="see-also"></a>另請參閱  
- [特定領域語言工具字彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

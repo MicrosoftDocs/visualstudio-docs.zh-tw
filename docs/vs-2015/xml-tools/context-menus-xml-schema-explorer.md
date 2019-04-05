@@ -1,27 +1,22 @@
 ---
 title: 操作功能表 （XML 結構描述總管） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 854ea473f2f606b28052b093978253372b4fec59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5398cea07863e17a8e430e7f827aac0b4e217355
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294609"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938941"
 ---
-# <a name="context-menus-xml-schema-explorer"></a>操作功能表 (XML 結構描述總管)
+# <a name="context-menus-xml-schema-explorer"></a>內容功能表 (XML 結構描述總管)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -71,7 +66,7 @@ ms.locfileid: "49294609"
 |**屬性視窗**|會開啟**屬性**視窗 （如果它尚未開啟）。 這個視窗會顯示與節點有關的資訊。|  
   
 ## <a name="node-type-element"></a>節點型別：項目  
- 除了上述的全域節點選項外，項目節點的內容功能表還包含下列選項：  
+ 除了上述的全域節點選項外，項目節點的操作功能表還包含下列選項：  
   
 |選項|描述|  
 |------------|-----------------|  
@@ -83,7 +78,7 @@ ms.locfileid: "49294609"
 |**產生範例 XML**|僅適用於全域項目。 針對全域項目產生範例 XML 檔案。|  
   
 ## <a name="node-type-global-types"></a>節點型別：全域型別  
- 除了上述的全域節點選項外，全域型別節點的內容功能表還有下列選項：  
+ 除了上述的全域節點選項外，全域型別節點的操作功能表還有下列選項：  
   
 |選項|描述|  
 |------------|-----------------|  
@@ -102,7 +97,7 @@ ms.locfileid: "49294609"
 |**顯示所有參考**|針對全域屬性，尋找並反白顯示所選屬性的所有參考 (其他具有 `ref="selectedAttribute"` 的屬性)。|  
   
 ## <a name="node-type-attribute-group"></a>節點型別：屬性群組  
- 除了上述的全域節點選項外，屬性群組節點的內容功能表還包含下列選項：  
+ 除了上述的全域節點選項外，屬性群組節點的操作功能表還包含下列選項：  
   
 |選項|描述|  
 |------------|-----------------|  
@@ -110,8 +105,8 @@ ms.locfileid: "49294609"
 |**顯示所有成員**|尋找並反白顯示屬性群組的所有成員。|  
 |**顯示所有參考**|尋找並反白顯示所選屬性群組的所有參考 (具有 `ref="selectedAttributeGroup"` 的屬性群組)。|  
   
-## <a name="node-type-named-group"></a>節點型別：具名群組  
- 除了上述的全域節點選項外，具名群組節點的內容功能表還包含下列選項：  
+## <a name="node-type-named-group"></a>節點型別：具名的群組  
+ 除了上述的全域節點選項外，具名群組節點的操作功能表還包含下列選項：  
   
 |選項|描述|  
 |------------|-----------------|  
@@ -122,6 +117,3 @@ ms.locfileid: "49294609"
 ## <a name="see-also"></a>另請參閱  
  [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)   
  [搜尋結構描述集合](../xml-tools/searching-the-schema-set.md)
-
-
-

@@ -1,35 +1,30 @@
 ---
-title: 逐步解說： Displaying Light Bulb Suggestions |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：Displaying Light Bulb Suggestions |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7e5bf7ad795615e70e990dd29c05f5efe3a1c78
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1e13ce65888ace73ca58bfbc5690330fd8265ad8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781097"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939381"
 ---
-# <a name="walkthrough-displaying-light-bulb-suggestions"></a>逐步解說︰顯示燈泡建議
+# <a name="walkthrough-displaying-light-bulb-suggestions"></a>逐步解說：顯示燈泡建議
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 燈泡是 Visual Studio 編輯器中所使用的圖示展開以顯示一組動作，例如修正程式的內建的程式碼分析器或重構程式碼所識別的問題。  
   
  在 Visual C# 和 Visual Basic 編輯器中，您也可以撰寫和封裝您自己的程式碼分析器會自動顯示燈泡動作，以使用.NET 編譯器平台 ("Roslyn")。 如需詳細資訊，請參閱:  
   
-- [如何： 撰寫 C# 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [如何：寫入C#診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
-- [如何： 撰寫 Visual Basic 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [如何：撰寫 Visual Basic 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
   C + + 等其他語言也會提供燈泡一些快速動作，例如建立該函式的虛設常式實作的建議。  
   
@@ -370,4 +365,3 @@ ms.locfileid: "51781097"
      ![測試燈泡，已展開](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
 6.  如果您按一下第一個動作，則應該會將目前字組中的所有文字都轉換為大寫。 如果您按一下第二個動作，則應該會將所有文字都轉換為小寫。
-

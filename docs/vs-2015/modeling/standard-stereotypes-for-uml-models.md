@@ -1,12 +1,9 @@
 ---
 title: UML 模型的標準造型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, stereotypes
 - UML diagrams, stereotypes
@@ -14,13 +11,13 @@ ms.assetid: 8a8c2321-1cae-4ba8-bb9e-23495c3404d8
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fcc876a847429c0de9600a5a727b19334819119
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763234"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941199"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>UML 模型的標準造型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,13 +90,13 @@ ms.locfileid: "51763234"
 |可執行檔|成品|可執行檔 «檔案»。|  
 |檔案|成品|實體檔案。|  
 |焦點|類別|定義核心商務邏輯的類別，由數個 «輔助» 類別支援。|  
-|架構|Package|此套件會定義可重複使用的設計模式。|  
+|架構|套件|此套件會定義可重複使用的設計模式。|  
 |實作|元件|«規格» 的實作。|  
 |implementationClass|類別|此類別描述實作，並且每個執行階段執行個體都有一個固定的實作類別。 與 «類型» 對照。|  
 |執行個體化|相依性|用戶端會建立供應商的執行個體。|  
 |程式庫|成品|程式庫 «檔案»。|  
 |metaclass|類別|此類別的執行個體也是類別。|  
-|modelLibrary|Package|包含以匯入套件方式要重複使用的模型項目。 通常定義為設定檔，並且由設定檔的應用程式自動匯入。|  
+|modelLibrary|套件|包含以匯入套件方式要重複使用的模型項目。 通常定義為設定檔，並且由設定檔的應用程式自動匯入。|  
 |處理序|元件|以交易為基礎的元件，或攜帶執行緒的元件。|  
 |實現|類別、介面、元件|描述實作。|  
 |精簡|相依性|用戶端類別、元件或套件提供比供應商更多的規格或設計詳細資訊。|  
@@ -122,10 +119,10 @@ ms.locfileid: "51763234"
 |造型|適用於|描述|  
 |----------------|----------------|-----------------|  
 |buildComponent|元件|用來定義組建的元素集合。|  
-|metamodel|模型|定義模型語言 (例如 UML 的變數) 或網域的特定語言。|  
-|systemModel|模型|一個模型，是套用至相同系統之模型的集合，例如規格、實現和兩者之間的追蹤關聯性。|  
+|metamodel|型號|定義模型語言 (例如 UML 的變數) 或網域的特定語言。|  
+|systemModel|型號|一個模型，是套用至相同系統之模型的集合，例如規格、實現和兩者之間的追蹤關聯性。|  
   
-##  <a name="NetProfile"></a> C# 設定檔  
+##  <a name="NetProfile"></a> C# Profile  
  在此設定檔中定義的造型，可讓您表示模型項目是用於轉譯成程式碼。 每個造型都會定義您可以在模型項目設定的其他屬性。  
   
  若要讓這些造型可用，請將模型或套件連結到 C# 設定檔。 然後，您就可以將造型套用至該模型或套件中的模型項目。  
@@ -145,6 +142,3 @@ ms.locfileid: "51763234"
  [將造型加入 UML 模型項目](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [自訂您的模型，使用設定檔和造型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [定義要擴充 UML 的設定檔](../modeling/define-a-profile-to-extend-uml.md)
-
-
-

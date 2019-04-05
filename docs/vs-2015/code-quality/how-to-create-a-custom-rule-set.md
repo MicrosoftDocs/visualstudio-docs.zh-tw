@@ -1,14 +1,9 @@
 ---
-title: 如何： 建立自訂規則集 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立自訂規則集 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
@@ -18,14 +13,14 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d21ad2edd01ee5b7a939c6c0ddfdaa882e38754
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812461"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943758"
 ---
-# <a name="how-to-create-a-custom-rule-set"></a>如何：建立自訂規則集
+# <a name="how-to-create-a-custom-rule-set"></a>HOW TO：建立自訂規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在  [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]， [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]，並[!INCLUDE[vsPro](../includes/vspro-md.md)]，您可以建立和修改自訂*規則集*以符合程式碼分析與相關聯的特定專案需求。 若要建立自訂規則集、 開啟一個或更標準的規則集規則集編輯器中。 您接著可以新增或移除特定規則，您可以變更程式碼分析會判斷已違反規則時所發生的動作。  
@@ -117,8 +112,5 @@ ms.locfileid: "49812461"
 -   若要新增或移除的 Microsoft 預設規則將設定為目前的規則集，請按一下**新增或移除子規則集**。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [如何：設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [程式碼分析規則集參考](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

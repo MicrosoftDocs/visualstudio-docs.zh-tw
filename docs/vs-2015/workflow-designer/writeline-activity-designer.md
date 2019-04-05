@@ -1,11 +1,8 @@
 ---
 title: WriteLine 活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.WriteLine.UI
@@ -13,13 +10,13 @@ ms.assetid: 1b5f29a8-b7fd-477e-949e-2f689cae3c96
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 8fa22ecee8bf365b02dcce9e4bc5607bb3a9838b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 591ecf53e04eaff115d45e1358f385a009ab29f5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280958"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940287"
 ---
 # <a name="writeline-activity-designer"></a>WriteLine 活動設計工具
 **WriteLine**活動設計工具會用來建立及設定<xref:System.Activities.Statements.WriteLine>活動。  
@@ -35,7 +32,7 @@ ms.locfileid: "49280958"
 ### <a name="the-writeline-properties"></a>WriteLine 屬性  
  下表顯示 <xref:System.Activities.Statements.WriteLine> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中進行編輯，其中有一些可以在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 設計工具介面上編輯。  
   
-|屬性名稱|必要項|使用方式|  
+|屬性名稱|必要|使用量|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.WriteLine> 活動的易記名稱。 預設值為 WriteLine。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|  
 |<xref:System.Activities.Statements.WriteLine.Text%2A>|False|要寫入的文字。 若要設定此屬性，輸入 在 Visual Basic 運算式**文字**方塊**WriteLine**活動設計工具上或在屬性方格中。|  
