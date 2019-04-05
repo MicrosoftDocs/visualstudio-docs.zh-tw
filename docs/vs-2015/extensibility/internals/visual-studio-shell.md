@@ -1,27 +1,22 @@
 ---
-title: Visual Studio Shell |Microsoft Docs
-ms.custom: ''
+title: Visual Studio Shell | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7ebe79d8ee93206e8d7950112386793a65812d38
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 31afa6229a7eeb39c146d40992effd8969e76725
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748910"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941125"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -91,4 +86,3 @@ ms.locfileid: "51748910"
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>   
  [VSPackage](../../extensibility/internals/vspackages.md)
-

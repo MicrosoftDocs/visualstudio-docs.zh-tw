@@ -1,14 +1,9 @@
 ---
 title: CompilandDetails |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: ddc7d794-c622-4c63-b2a6-72f8b2d0022a
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e94993440a8fba4b215cb7a7b32f55f98475fb51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c91fbd8a4fc3775272e578df43025bd7052c72ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769067"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943078"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51769067"
 |[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|`BOOL`|`TRUE` 如果編譯模組用來編譯[/hotpatch （建立可線上修補的影像）](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798)編譯器參數 （只在 DIA SDK 8.0 版或更新版本）。|  
 |[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|`BOOL`|`TRUE` 如果編譯模組用來編譯[/LTCG （連結時間程式碼產生）](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2)編譯器參數 （只在 DIA SDK 8.0 版或更新版本）。|  
 |[IDiaSymbol::get_isMSILNetmodule](../../debugger/debug-interface-access/idiasymbol-get-ismsilnetmodule.md)|`BOOL`|如果編譯為 Microsoft Intermediate Language (MSIL) 模組 （只有在 DIA SDK 8.0 版或更新版本），則為 TRUE。|  
-|[IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)|`DWORD`|原始碼程式碼語言。|  
+|[IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)|`DWORD`|原始程式碼語言。|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|編譯模組的符號。|  
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|語彙父符號的識別碼。|  
 |[IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)|`DWORD`|編譯模組編譯所在的平台 (其中[CV_CPU_TYPE_e 列舉](../../debugger/debug-interface-access/cv-cpu-type-e.md)值)。|  
@@ -64,6 +59,3 @@ ms.locfileid: "51769067"
 ## <a name="see-also"></a>另請參閱  
  [編譯模組](../../debugger/debug-interface-access/compiland.md)   
  [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
-
-
-

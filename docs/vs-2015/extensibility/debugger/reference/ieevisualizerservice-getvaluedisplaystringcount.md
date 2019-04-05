@@ -1,27 +1,22 @@
 ---
 title: IEEVisualizerService::GetValueDisplayStringCount |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IEEVisualizerService::GetValueDisplayStringCount
 - GetValueDisplayStringCount
 ms.assetid: d683a833-fbfb-4042-84df-6905124a268a
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 412a2585a35c7503f99207050d07d3b27d434e99
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6785be367430443f92a9cc54a2d636582053228e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764065"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929992"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -61,4 +56,3 @@ int GetValueDisplayStringCount (
   
 ## <a name="see-also"></a>另請參閱  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
-

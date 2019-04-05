@@ -1,14 +1,9 @@
 ---
 title: IDebugField::GetType |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugField::GetType
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b3cdec9f-ef7b-44d0-a775-d17ef7eae968
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ba32934e189c0eaaae5d06b8aaf28a486d126239
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d076b97ac777a56befdfa7d60a56361906ea3965
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807292"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940023"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,4 +47,3 @@ int GetType(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
-

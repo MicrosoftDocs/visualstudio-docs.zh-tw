@@ -1,14 +1,9 @@
 ---
 title: 產品和封裝結構描述參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -30,13 +25,13 @@ ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271025"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941990"
 ---
 # <a name="product-and-package-schema-reference"></a>產品和封裝結構描述參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +40,15 @@ A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCL
   
  產品和套件檔案包含的其中一個最上層`Product`或`Package`項目，每個均包含下列項目。  
   
-|元素|描述|屬性|  
+|項目|描述|屬性|  
 |-------------|-----------------|----------------|  
-|[\<產品 > 項目](../deployment/product-element-bootstrapper.md)|產品檔案的必要項最上層項目。|無|  
-|[\<封裝 > 項目](../deployment/package-element-bootstrapper.md)|必要的封裝檔案的最上層項目。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts > 項目](../deployment/relatedproducts-element-bootstrapper.md)|產品檔案的選擇性元素。 其他產品，這項產品安裝，或相依。|無|  
-|[\<InstallChecks > 項目](../deployment/installchecks-element-bootstrapper.md)|必要項目。 列出在安裝期間，在本機電腦上執行的相依性檢查。|無|  
-|[\<命令 > 項目](../deployment/commands-element-bootstrapper.md)|必要項目。  如所述，執行一或多個安裝檢查`InstallChecks`，代表要安裝哪一個套件應該檢查失敗。|無|  
-|[\<請為 PackageFiles > 項目](../deployment/packagefiles-element-bootstrapper.md)|必要項目。 列出此安裝程序可能安裝的套件。|無|  
-|[\<字串 > 項目](../deployment/strings-element-bootstrapper.md)|必要項目。 存放區的當地語系化版本的產品名稱和錯誤字串。|無|  
+|[\<Product> 元素](../deployment/product-element-bootstrapper.md)|產品檔案的必要項最上層項目。|None|  
+|[\<Package> 元素](../deployment/package-element-bootstrapper.md)|必要的封裝檔案的最上層項目。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[\<RelatedProducts> 元素](../deployment/relatedproducts-element-bootstrapper.md)|產品檔案的選擇性元素。 其他產品，這項產品安裝，或相依。|None|  
+|[\<InstallChecks> 元素](../deployment/installchecks-element-bootstrapper.md)|必要項目。 列出在安裝期間，在本機電腦上執行的相依性檢查。|None|  
+|[\<Commands> 元素](../deployment/commands-element-bootstrapper.md)|必要項目。  如所述，執行一或多個安裝檢查`InstallChecks`，代表要安裝哪一個套件應該檢查失敗。|None|  
+|[\<PackageFiles> 元素](../deployment/packagefiles-element-bootstrapper.md)|必要項目。 列出此安裝程序可能安裝的套件。|None|  
+|[\<Strings> 元素](../deployment/strings-element-bootstrapper.md)|必要項目。 存放區的當地語系化版本的產品名稱和錯誤字串。|None|  
   
 ## <a name="remarks"></a>備註  
  封裝結構描述是由 Setup.exe，MS Build 啟動工作，其中包含它自己的一些硬式編碼的邏輯所產生的虛設常式程式取用。 結構描述驅動的安裝程序的各個層面。  
@@ -168,6 +163,3 @@ A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCL
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)   
  [ndptecclick](../deployment/clickonce-application-manifest.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 偵錯多個處理序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
 - vs.debug.processes.attaching
@@ -24,13 +19,13 @@ ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56982a3b5c0a0d8a5cb0b682ab67b6f5eb133dd1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1d0986e1780cb9fea061132b5985972cf9635c8b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793044"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930035"
 ---
 # <a name="debug-multiple-processes"></a>偵錯多重處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,10 +52,10 @@ ms.locfileid: "51793044"
   
    ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> 尋找來源和符號 (.pdb) 檔  
+##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> 尋找來來源和符號 (.pdb) 檔案  
  若要巡覽處理序的原始程式碼，偵錯工具需要存取處理序的原始程式檔和符號檔。 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
- 如果您無法存取處理序的檔案，可以使用 [反組譯碼] 視窗進行巡覽。 請參閱[How to： 使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)  
+ 如果您無法存取處理序的檔案，可以使用 [反組譯碼] 視窗進行巡覽。 請參閱[如何：使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)  
   
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
@@ -135,7 +130,7 @@ ms.locfileid: "51793044"
   
 7. 在 編輯字串 對話方塊中，輸入`vsjitdebugger.exe`中**數值資料** 方塊中。  
   
-    ![編輯字串 對話方塊](../debugger/media/dbg-execution-automaticstart-editstringdlg.png "DBG_Execution_AutomaticStart_EditStringDlg")  
+    ![Edit String dialog box](../debugger/media/dbg-execution-automaticstart-editstringdlg.png "DBG_Execution_AutomaticStart_EditStringDlg")  
   
    ![自動偵錯工具起始項目在 regedit.exe](../debugger/media/dbg-execution-automaticstart-result.png "DBG_Execution_AutomaticStart_Result")  
   
@@ -145,7 +140,7 @@ ms.locfileid: "51793044"
   
 -   [切換處理序](#BKMK_Switch_between_processes)•[中斷、 逐步執行和繼續命令](#BKMK_Break__step__and_continue_commands)  
   
-###  <a name="BKMK_Switch_between_processes"></a> 處理序之間切換  
+###  <a name="BKMK_Switch_between_processes"></a> 在處理序之間切換  
  進行偵錯時，您可以附加至多個處理序，但是無論在任何時間，偵錯工具一次只能有一個使用中處理序。 您可以設定使用中或*目前*或 [偵錯位置] 工具列中的處理序**處理程序**視窗。 若要在處理序之間切換，兩個處理序必須處於中斷模式。  
   
  **若要設定目前的處理序**  
@@ -168,7 +163,7 @@ ms.locfileid: "51793044"
   
   ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-###  <a name="BKMK_Break__step__and_continue_commands"></a> 中斷、 逐步執行和繼續命令  
+###  <a name="BKMK_Break__step__and_continue_commands"></a> 中斷、逐步執行和繼續命令  
   
 > [!NOTE]
 >  根據預設，中斷、繼續和逐步執行偵錯工具命令會影響所有正在偵錯的處理序。 若要變更此行為，請參閱[設定多個處理序的執行行為](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
@@ -181,7 +176,7 @@ ms.locfileid: "51793044"
 |**偵錯**功能表：<br /><br /> -   **逐步執行**<br />-   **不進入函式**<br />-   **跳離函式**|當目前處理序逐步執行時，所有處理序仍會執行。<br /><br /> 然後所有處理序都會中斷。|目前處理序會逐步執行。<br /><br /> 暫止的處理序會繼續執行。<br /><br /> 執行中的處理序會繼續執行。|  
 |**偵錯**功能表：<br /><br /> -   **執行目前處理序的步驟**<br />-   **不進入目前處理序**<br />-   **跳離目前處理序的函式**|N/A|目前處理序會逐步執行。<br /><br /> 其他處理序維持其現有的狀態 (已暫止或執行中)。|  
 |來源視窗<br /><br /> -   **中斷點**|所有處理序都會中斷。|只要來源視窗處理序會中斷。|  
-|來源視窗操作功能表：<br /><br /> -   **執行至游標處**<br /><br /> 來源視窗必須在目前處理序中。|當來源視窗處理序執行至游標處然後中斷時，所有處理序仍會執行。<br /><br /> 然後所有其他處理序都會中斷。|來源視窗處理序會執行至游標處。<br /><br /> 其他處理序維持其現有的狀態 (已暫止或執行中)。|  
+|來源視窗內容功能表：<br /><br /> -   **執行至游標處**<br /><br /> 來源視窗必須在目前處理序中。|當來源視窗處理序執行至游標處然後中斷時，所有處理序仍會執行。<br /><br /> 然後所有其他處理序都會中斷。|來源視窗處理序會執行至游標處。<br /><br /> 其他處理序維持其現有的狀態 (已暫止或執行中)。|  
 |**處理序**視窗操作功能表：<br /><br /> -   **中斷處理序**|N/A|選取的處理序會中斷。<br /><br /> 其他處理序維持其現有的狀態 (已暫止或執行中)。|  
 |**處理序**視窗操作功能表：<br /><br /> -   **繼續進行程序**|N/A|選取的處理序會繼續執行。<br /><br /> 其他處理序維持其現有的狀態 (已暫止或執行中)。|  
   
@@ -218,18 +213,15 @@ ms.locfileid: "51793044"
 |**偵錯**功能表：<br /><br /> -   **中斷所有連結**|偵錯工具會從所有處理序中斷連結。|  
 |**處理序**視窗操作功能表：<br /><br /> -   **中斷處理序**|偵錯工具會從選取的處理序中斷連結。<br /><br /> 其他處理序維持其現有的狀態 (已暫止或執行中)。|  
 |**處理序**視窗操作功能表：<br /><br /> -   **終止處理序**|選取的處理序將會結束。<br /><br /> 其他處理序維持其現有的狀態 (已暫止或執行中)。|  
-|**處理序**視窗操作功能表：<br /><br /> -   **偵錯停止時中斷連結**|切換的行為**偵錯**，**停止偵錯**所選處理序：<br /><br /> -Checked： 偵錯工具會中斷連結程序。<br />-清除： 處理序終止。|  
+|**處理序**視窗操作功能表：<br /><br /> -   **偵錯停止時中斷連結**|切換的行為**偵錯**，**停止偵錯**所選處理序：<br /><br /> -Checked:偵錯工具會中斷連結程序。<br />-清除：已結束此處理序。|  
   
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [停止偵錯、 終止或中斷處理序連結](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
   
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
 ## <a name="see-also"></a>另請參閱  
- [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [附加至執行中處理程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [附加到執行中的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)   
  [在 Just-in-time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-
-
-

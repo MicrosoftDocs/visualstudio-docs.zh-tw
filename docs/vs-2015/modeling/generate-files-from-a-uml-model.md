@@ -1,25 +1,22 @@
 ---
 title: 從 UML 模型產生檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, generating files
 ms.assetid: 4e28b0e6-ce8f-45ee-9e3a-e4d600a0ad81
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: afbb81a67d8d5f8f587979ab8adca4251562072a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03b2cf5b03ea7f2cfc2d8fa90346ac47c1e4ae84
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804529"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930617"
 ---
 # <a name="generate-files-from-a-uml-model"></a>透過 UML 模型產生檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -336,6 +333,3 @@ namespace Test{
 -   **將程式碼移到不同的組件**。 不建議在範本中撰寫大型程式碼主體。 最好保持區隔產生的內容不進行運算，而且編輯程式碼時也不支援文字範本。  
   
      而是，如果您需要執行大量運算來產生文字，請在不同的組件建置這些函式，並透過範本呼叫其方法。
-
-
-

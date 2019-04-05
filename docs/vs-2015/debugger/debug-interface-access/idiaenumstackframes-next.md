@@ -1,14 +1,9 @@
 ---
-title: 'Idiaenumstackframes:: Next |Microsoft Docs'
-ms.custom: ''
+title: IDiaEnumStackFrames::Next | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 09378a21-d5e3-4213-b7e2-10f04d85295f
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aaaf66da29711a279111c1f7d63ca285dc779596
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1c66e8b281f27e13a1176dd32f21856367e5f1ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944379"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,11 +46,8 @@ HRESULT Next( 
  [out]擷取列舉值中傳回的堆疊框架項目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`有沒有更多的堆疊框架。 反之則傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`有沒有更多的堆疊框架。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
-
-
-

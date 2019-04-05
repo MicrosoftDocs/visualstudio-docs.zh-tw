@@ -1,14 +1,9 @@
 ---
 title: SccCreateSubProject 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccCreateSubProject
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 905a3319627a54ef84b5d473d3725069a9f1eecb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c2f28d8bb9ebc440db69085324becb6a96c19afe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766439"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930010"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +87,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>SccCreateSubProject 和 SccGetParentProjectPath 的技術提示  
  已簡化方案和專案加入原始檔控制在 Visual Studio 中的系統會提示使用者在原始檔控制系統中選取位置的次數降到最低。 如果原始檔控制外掛程式支援這兩個新函數，這些變更會啟動 Visual Studio`SccCreateSubProject`和`SccGetParentProjectPath`。 不過，下列的登錄項目可用來停用這些變更並還原成先前的 Visual Studio (原始檔控制外掛程式 API 版本 1.1) 行為：  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]「 DoNotCreateSolutionRootFolderInSourceControl"= dword: 00000001  
+ [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001  
   
  如果此登錄項目不存在，或設為 dword:00000000，Visual Studio 會嘗試使用新的函式`SccCreateSubProject`和`SccGetParentProjectPath`。  
   
@@ -102,4 +97,3 @@ SCCRTN SccCreateSubProject(
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)
-

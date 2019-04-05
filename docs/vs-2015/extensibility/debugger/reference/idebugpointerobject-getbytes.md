@@ -1,14 +1,9 @@
 ---
 title: IDebugPointerObject::GetBytes |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPointerObject::GetBytes
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90b5548dc6963532947f151d4ca68ff81b5be24d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2ef0c01d86259b6ec8c23f2874244b018a74febc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816433"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940099"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -71,4 +66,3 @@ int GetBytes(
 ## <a name="see-also"></a>另請參閱  
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)   
  [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)
-

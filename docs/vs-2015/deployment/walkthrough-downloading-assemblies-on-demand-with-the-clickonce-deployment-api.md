@@ -1,14 +1,9 @@
 ---
-title: 逐步解說： 下載組件隨選與 ClickOnce 部署 API |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：依需求以 ClickOnce 部署 API 下載組件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,18 @@ ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6e1f9e1a2115e61e46e0050c1e6504e73c0180fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 767c1b93972a5e8fc78b7de46a69d8f464fe85cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199130"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945048"
 ---
-# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：依 ClickOnce 部署 API 的要求下載組件
+# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：依需求以 ClickOnce 部署 API 下載組件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-根據預設，所有組件包含在[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]第一次執行應用程式時，會下載應用程式。 不過，您可能有應用程式的較少的使用者所使用的部分。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將標示為 「 選用 」，應用程式中的某些組件，以及如何下載它們使用中的類別<xref:System.Deployment.Application>common language runtime (CLR) 要求它們時的命名空間。  
+根據預設，所有組件包含在[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]第一次執行應用程式時，會下載應用程式。 不過，您可能有應用程式的較少的使用者所使用的部分。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將應用程式中的特定組件標示為「選擇性」，以及在 Common Language Runtime 需要時，使用 <xref:System.Deployment.Application> 命名空間中的類別來下載它們。  
   
 > [!NOTE]
 >  您的應用程式必須以完全信任執行，才能使用此程序。  
@@ -108,7 +103,7 @@ ms.locfileid: "49199130"
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>使用 MageUI.exe 中標示為 ClickOnce 應用程式中的選用組件  
   
-1.  使用 MageUI.exe 建立應用程式資訊清單中所述[逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 應用程式資訊清單，請使用下列設定：  
+1.  使用 MageUI.exe 建立應用程式資訊清單中所述[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 應用程式資訊清單，請使用下列設定：  
   
     -   命名應用程式資訊清單`ClickOnceOnDemand`。  
   
@@ -116,7 +111,7 @@ ms.locfileid: "49199130"
   
     -   在上**檔案**頁面上，在 ClickOnceLibrary.dll 列中，型別`ClickOnceLibrary.dll`中**群組**資料行。  
   
-2.  使用 MageUI.exe 建立部署資訊清單中所述[逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 部署資訊清單，請使用下列設定：  
+2.  使用 MageUI.exe 建立部署資訊清單中所述[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 部署資訊清單，請使用下列設定：  
   
     -   命名的部署資訊清單`ClickOnceOnDemand`。  
   
@@ -132,10 +127,7 @@ ms.locfileid: "49199130"
     http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
     ```  
   
-3.  您的主要表單出現時，請按 <xref:System.Windows.Forms.Button>。 您應該會看到"Hello World ！"訊息方塊視窗中的字串。  
+3.  您的主要表單出現時，請按 <xref:System.Windows.Forms.Button>。 您應該會在訊息方塊視窗中看見內容為 "Hello, World!" 的字串。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.Deployment.Application.ApplicationDeployment>
-
-
-

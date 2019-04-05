@@ -1,14 +1,9 @@
 ---
 title: 在中斷模式中的運算式評估 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - break mode, expression evaluation
 - debugging [Debugging SDK], expression evaluation
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b5b307dead1d2fb193f7d34b28ef4eaec11c6dad
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b23b93a5c7f278c01d06c5cda5cfcab418580361
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728998"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942788"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>中斷模式中的運算式評估
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "51728998"
   
 3.  如果 ParseText 不會傳回 s_ok 時，會傳回錯誤的原因。  
   
-     -否則-  
+     -otherwise-  
   
      如果 ParseText 確實傳回 S_OK，SDM 然後呼叫[IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或是[IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)從剖析的運算式取得最終的值。  
   
@@ -48,4 +43,3 @@ ms.locfileid: "51728998"
   
 ## <a name="see-also"></a>另請參閱  
  [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)
-

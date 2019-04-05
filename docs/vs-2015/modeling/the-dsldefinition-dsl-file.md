@@ -1,25 +1,22 @@
 ---
 title: DslDefinition.dsl 檔 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: f3fc3ed7-2438-4e5a-b3d7-fe7e0e8a134c
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7f61ceef7248c143fd904751da58d32f75dfc0c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1c62483ad8edac88fe3d14c6590dfb7e6d17285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937644"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945635"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +62,7 @@ ms.locfileid: "49937644"
  Designer  
  此區段定義設計工具 （編輯器），它結合了**工具箱**，驗證設定、 圖表和序列化配置。 [設計工具] 區段也定義模型的根類別，此類別通常也是圖表的根類別。  
   
- Explorer  
+ 總管  
  本節說明**DSL explorer** （定義於 XmlSerializationBehavior 區段） 的行為。  
   
 ## <a name="monikers-in-the-dsldefinitiondsl-file"></a>DslDefinition.dsl 檔中的 Moniker  
@@ -90,7 +87,7 @@ ms.locfileid: "49937644"
   
  Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於此原因，如果您嘗試儲存具有兩個同名類別 (舉例而言) 的網域指定語言定義，則會發生驗證錯誤。 您應該一律在儲存 DslDefinition.dsl 檔之前更正這類的重複名稱錯誤，以便在稍後正確地重新載入它。  
   
- 每一種類型都有自己的 Moniker 類型：DomainClassMoniker、DomainRelationshipMoniker 等等。  
+ 每個類型都有它自己的 moniker 類型：DomainClassMoniker、 DomainRelationshipMoniker 等等。  
   
 ## <a name="types"></a>型別  
  [類型] 區段將 DslDefinition.dsl 檔包含的所有類型指定為屬性的類型。 這些類型分成兩種：外部類型 (如 System.String) 和列舉類型。  
@@ -108,7 +105,7 @@ ms.locfileid: "49937644"
   
  外部類型不限於標準程式庫類型。  
   
-### <a name="enumerations"></a>列舉型別  
+### <a name="enumerations"></a>列舉  
  一般的列舉規格類似以下範例：  
   
 ```  
@@ -214,7 +211,7 @@ ms.locfileid: "49937644"
 ### <a name="source-and-target-roles"></a>來源和目標角色  
  每一個關聯性都包含具有下列屬性的來源和目標角色：  
   
--   `RolePlayer` 屬性參考連結之執行個體的網域類別：OutPort 適用於來源，InPort 適用於目標。  
+-   `RolePlayer`屬性會參考連結的執行個體的網域類別：做為來源，inport 適用於目標 outPort。  
   
 -   `Multiplicity` 屬性有四個可能的值 (ZeroMany、ZeroOne、One 和 OneMany)。 此屬性參考可與一個角色扮演者相關聯的關聯性連結數。  
   
@@ -281,7 +278,7 @@ ms.locfileid: "49937644"
  在撰寫 C# 針對此模型時，您可以透過在一個步驟中的連結跳利用上每個類別與它相關的屬性關聯性產生：  
   
 ```  
-     InPort port; ...  Component c = port.Component;  
+     InPort port; ...  Component c = port.Component;  
 ```  
   
  不過，您必須在「路徑語法」中明確地執行兩個躍點。 由於此要求，您可以更輕鬆地存取中繼連結。 下列程式碼完成從連結到 Component 的躍點：  
@@ -552,9 +549,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  連接器對應也可以包含裝飾項目對應。  
   
 ## <a name="see-also"></a>另請參閱  
- [特定領域語言工具字彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)   
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   
  [了解模型、類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)
-
-
-
