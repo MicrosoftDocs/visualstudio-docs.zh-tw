@@ -1,26 +1,21 @@
 ---
 title: 準備 Windows Installer 部署擴充功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - vsix msi
 ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90dc7fb0ca361e6c1994cfd7108b171cda2ad1f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9576b220ed3624ee1ee5dbf83630affc38041231
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755095"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945927"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>準備適用於 Windows Installer 部署的延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,6 +57,5 @@ ms.locfileid: "51755095"
 5.  安裝程式專案中加入其餘的檔案。  
   
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio Installer 部署](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [逐步解說： 建立自訂動作](http://msdn.microsoft.com/en-us/4bd4b63a-2b91-431e-839c-5752443f0eaf)
-
+ [Visual Studio Installer 部署](http://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)   
+ [逐步解說：建立自訂動作](http://msdn.microsoft.com/4bd4b63a-2b91-431e-839c-5752443f0eaf)

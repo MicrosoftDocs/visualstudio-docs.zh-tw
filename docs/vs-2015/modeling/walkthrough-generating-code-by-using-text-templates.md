@@ -1,12 +1,9 @@
 ---
-title: 逐步解說： 使用文字範本產生程式碼 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：使用文字範本產生程式碼 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -14,13 +11,13 @@ ms.assetid: 24602ade-baca-425e-a6ce-be09a2c7f7e1
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 6c59d6ba8b6e807b4380a3f7abad3869e5108448
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932546"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942957"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +108,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
    .  
   
 ### <a name="add-a-test-code-file"></a>新增測試程式碼檔案  
- 將 C# 檔案新增至您的專案，並在其中撰寫您可撰寫的程式碼範例。 例如:   
+ 將 C# 檔案新增至您的專案，並在其中撰寫您可撰寫的程式碼範例。 例如：  
   
 ```  
 using System;  
@@ -426,6 +423,3 @@ namespace MyProject
 ## <a name="see-also"></a>另請參閱  
  [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 如何： 設定 Managed 程式碼專案的程式碼分析 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：設定 Managed 程式碼專案的程式碼分析 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
 helpviewer_keywords:
@@ -19,20 +14,20 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 98f3d14b73b0219d0fcec4312648bf613f37378e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7814bd356dfa50c121fc73c1b88c1ae12dfa3df4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239183"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944308"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>如何：設定 Managed 程式碼專案的程式碼分析
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>HOW TO：設定受控碼專案的程式碼分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]，[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]並[!INCLUDE[vsPro](../includes/vspro-md.md)]，您可以從程式碼分析的清單中選擇*規則集*来套用至 managed 程式碼專案。 預設規則設為 Microsoft 最小建議規則。 您可以套用設定至專案或方案中的所有專案的另一個規則。  
   
 > [!NOTE]
->  如需如何設定 ASP.NET Web 應用程式設定的規則資訊，請參閱[如何： 設定 ASP.NET Web 應用程式的程式碼分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。  
+>  如需如何設定 ASP.NET Web 應用程式設定的規則資訊，請參閱[How to:設定 ASP.NET Web 應用程式的程式碼分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。  
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>若要設定的規則集的.NET Framework 專案  
   
@@ -61,6 +56,3 @@ ms.locfileid: "49239183"
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說：設定和使用自訂規則集](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
-
-
-

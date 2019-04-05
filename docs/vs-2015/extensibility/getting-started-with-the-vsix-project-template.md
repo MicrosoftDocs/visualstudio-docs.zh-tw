@@ -1,26 +1,21 @@
 ---
 title: 開始使用 VSIX 專案範本 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, VSIX project template
 ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1f7230bce49342ad8e31baeb3f46c72f1c45d776
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 9f5db7f20cf77df72a8c103eea68b3e64cc148b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787727"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945239"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>開始使用 VSIX 專案範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,4 +86,3 @@ ms.locfileid: "51787727"
 6.  開啟 VSIX 資訊清單。  
   
 7.  在 VSIX 資訊清單中，更新**資產**範本，讓它指向包含範本檔案的目錄樹狀結構根的路徑。 例如，如果範本位於 \CSharp\Windows，參考應該會指向 \CSharp。
-

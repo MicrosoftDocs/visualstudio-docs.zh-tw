@@ -1,27 +1,22 @@
 ---
 title: 服務的指導方針獨立模式 Shell 應用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Shell integrated mode, serviceability
 - Shell integrated mode [Visual Studio], serviceability
 ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a795e5dc71183550e660f8ce7d67f1a41bddbcf4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13ec970b309c09bdbd0bffbc0a10c42b862ebe9b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726782"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943174"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Isolated 的 Shell 應用程式的服務方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +42,3 @@ ms.locfileid: "51726782"
 -   更新共用的檔案可能會導致應用程式相容性問題，因為一個應用程式的更新可能會變更的版本未更新的第二個應用程式所使用的檔案。 安裝程式共用檔案的產品計數共用檔案的參考。 因此，解除安裝產品不會影響共用的檔案超過遞減已安裝的執行個體的計數。  
   
 -   Quick Fix Engineering (QFE) 安裝程式會還原檔案的 QFE 安裝程式服務的產品版本的版本。 此程序可能會中斷應用程式必須傳遞已更新的共用的檔案。
-

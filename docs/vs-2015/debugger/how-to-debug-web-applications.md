@@ -1,14 +1,9 @@
 ---
-title: 如何： 偵錯 Web 應用程式 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：偵錯 Web 應用程式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,15 +18,15 @@ ms.assetid: 6440d12e-6b29-42c5-a958-99aeaaff480f
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d2a5110a6801aafb6eaf98cb4fb4164b045b2408
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39c5c5062841dd0a9c5c34e86d96c5d2fc6ac2be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793629"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946000"
 ---
-# <a name="how-to-debug-web-applications"></a>如何：偵錯 Web 應用程式
+# <a name="how-to-debug-web-applications"></a>HOW TO：偵錯 Web 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 是開發 Web 應用程式中的主要技術[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 偵錯工具提供在本機環境或遠端伺服器上，偵錯 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式所用的強大工具。 本主題描述如何偵錯[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]在開發期間的專案。 如需如何偵錯資訊[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Web 應用程式已部署在實際執行伺服器上，請參閱 <<c2> [ 偵錯部署 Web 應用程式](../debugger/debugging-deployed-web-applications.md)。  
@@ -44,7 +39,7 @@ ms.locfileid: "51793629"
   
 -   應用程式的組態檔 (Web.config) 必須設為偵錯模式。 偵錯模式會導致 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 產生動態產生之檔案的符號，並使偵錯工具附加到 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式。 如果您已從 Web 專案範本建立專案，則 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會在開始偵錯時自動設定這個項目。  
   
--   如需詳細資訊，請參閱 <<c0> [ 如何： 啟用 ASP.NET 應用程式的偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)。  
+-   如需詳細資訊，請參閱[如何：啟用 ASP.NET 應用程式的偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)。  
   
 ### <a name="to-debug-a-web-application-during-development"></a>若要在開發期間偵錯 Web 應用程式  
   
@@ -60,8 +55,5 @@ ms.locfileid: "51793629"
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)   
- [偵錯 ASP.NET 和 AJAX 應用程式](../debugger/debugging-aspnet-and-ajax-applications.md)   
+ [對 ASP.NET 和 AJAX 應用程式進行偵錯](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [如何：啟用 ASP.NET 應用程式的偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-
-
-

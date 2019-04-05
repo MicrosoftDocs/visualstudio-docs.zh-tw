@@ -1,14 +1,9 @@
 ---
-title: IDebugProgramPublisher2 |Microsoft Docs
-ms.custom: ''
+title: IDebugProgramPublisher2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgramPublisher2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 89d0dd95f4587950e1381f5fd16d690d010109c3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3cad86071904b2af4c22a2cb1a0ef67d7de95d84
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747102"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942430"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -58,12 +53,12 @@ IDebugProgramPublisher2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>範例  
- 此範例示範如何具現化程式發行者及註冊程式 節點。 這取自教學課程中，[發佈程式節點](http://msdn.microsoft.com/en-us/d0100e02-4e2b-4e72-9e90-f7bc11777bae)。  
+ 此範例示範如何具現化程式發行者及註冊程式 節點。 這取自教學課程中，[發佈程式節點](http://msdn.microsoft.com/d0100e02-4e2b-4e72-9e90-f7bc11777bae)。  
   
 ```cpp#  
 // This is how m_srpProgramPublisher is defined in the class definition:  
@@ -99,4 +94,3 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
-

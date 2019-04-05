@@ -1,14 +1,9 @@
 ---
 title: 原始檔中隱藏項目概觀 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
@@ -17,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209036"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944666"
 ---
 # <a name="in-source-suppression-overview"></a>原始檔中隱藏項目概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "49209036"
  您不應該使用在原始程式檔的隱藏項目上的發行組建，以避免不小心傳送來源在隱藏項目中繼資料。 在原始程式檔隱藏項目處理成本，因為您的應用程式的效能也會降低包含在原始程式檔隱藏項目中繼資料。  
   
 > [!NOTE]
->  您沒有交給程式碼這些屬性自行。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用功能表項目隱藏的警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。 找不到適用於 c + + 程式碼的功能表項目。  
+>  您沒有交給程式碼這些屬性自行。 如需詳細資訊，請參閱[如何：使用功能表項目隱藏警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。 找不到適用於 c + + 程式碼的功能表項目。  
   
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 屬性  
  當您以滑鼠右鍵按一下中的程式碼分析警告**錯誤清單**，然後按一下 **隱藏訊息**，則**SuppressMessage**屬性會加入您的程式碼或為專案的全域隱藏項目檔案。  
@@ -104,7 +99,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="generated-code"></a>產生的程式碼  
  Managed 程式碼編譯器和某些協力廠商工具產生程式碼，以便快速的程式碼開發。 編譯器所產生的程式碼會出現在原始程式檔，通常會標示**GeneratedCodeAttribute**屬性。  
   
- 您可以選擇是否要隱藏程式碼分析警告與錯誤產生的程式碼。 如需如何隱藏這類警告和錯誤的資訊，請參閱[如何： 隱藏的警告，產生的程式碼](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)。  
+ 您可以選擇是否要隱藏程式碼分析警告與錯誤產生的程式碼。 如需如何隱藏這類警告和錯誤的資訊，請參閱[How to:隱藏所產生的程式碼的警告](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)。  
   
  請注意，程式碼分析忽略**GeneratedCodeAttribute**套用至整個組件或單一參數時。 這些情況下很少發生。  
   
@@ -126,10 +121,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 >  目標永遠會包含完整項目名稱。  
   
 ## <a name="global-suppression-file"></a>全域隱藏項目檔  
- 全域隱藏項目檔案會維護的全域層級隱藏項目或未指定目標的隱藏項目會隱藏項目。 比方說，隱藏項目組件層級的違規會儲存此檔案中。 此外，有些 ASP.NET 隱藏項目會儲存在這個檔案中，因為專案層級設定不適用於表單後面的程式碼。 建立全域隱藏項目並將其加入您的專案，您選取第一次**專案隱藏項目檔中的流程範本**選項**隱藏訊息**命令，在 [錯誤清單] 視窗。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用功能表項目隱藏的警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。  
+ 全域隱藏項目檔案會維護的全域層級隱藏項目或未指定目標的隱藏項目會隱藏項目。 比方說，隱藏項目組件層級的違規會儲存此檔案中。 此外，有些 ASP.NET 隱藏項目會儲存在這個檔案中，因為專案層級設定不適用於表單後面的程式碼。 建立全域隱藏項目並將其加入您的專案，您選取第一次**專案隱藏項目檔中的流程範本**選項**隱藏訊息**命令，在 [錯誤清單] 視窗。 如需詳細資訊，請參閱[如何：使用功能表項目隱藏警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.Diagnostics.CodeAnalysis>
-
-
-
