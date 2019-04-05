@@ -1,14 +1,9 @@
 ---
 title: 共用和建立版本的 Vspackage 之間做選擇 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - SxS
 - side-by-side installation
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9fcae5b736310424f220d08aefa4e061e1f6c860
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 49b5e5b7c36b09e08932fcb414478849a12a7c7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756832"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930256"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>在共用和建立版本的 VSPackage 之間進行選擇
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51756832"
   
     -   程式設計 VSPackage 來適應的新版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中它正在執行。 然後，如果較新的服務的查詢失敗，VSPackage 可以提供其他服務所支援的舊版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
--   適當地註冊 VSPackage。 如需詳細資訊，請參閱 < [VSPackage 註冊](../extensibility/internals/vspackage-registration.md)並[Managed VSPackage 註冊](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)。  
+-   適當地註冊 VSPackage。 如需詳細資訊，請參閱 < [VSPackage 註冊](../extensibility/internals/vspackage-registration.md)並[Managed VSPackage 註冊](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)。  
   
 -   適當地註冊副檔名。 如需詳細資訊，請參閱 <<c0> [ 並排顯示部署的註冊檔案名稱副檔名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)。  
   
@@ -71,4 +66,3 @@ ms.locfileid: "51756832"
 ## <a name="see-also"></a>另請參閱  
  [使用 Windows Installer 安裝 Vspackage](../extensibility/internals/installing-vspackages-with-windows-installer.md)   
  [元件管理](../extensibility/internals/component-management.md)
-

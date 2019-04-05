@@ -1,12 +1,9 @@
 ---
 title: 定義要擴充 UML 的設定檔 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - profiles, UML
 - stereotypes, UML
@@ -18,13 +15,13 @@ ms.assetid: 776589cb-f89d-48d5-aafa-04a4c074b0d6
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 37c4560b767828be0ec43419ff92ec5b6f9863ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 832b7b148e73e8d21d56dea6b676910019294e13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730334"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941201"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>定義要擴充 UML 的設定檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +30,7 @@ ms.locfileid: "51730334"
   
  數個設定檔會與支援的 Visual Studio 版本一起安裝。 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。 如需有關這些設定檔，以及有關如何套用造型的詳細資訊，請參閱[來自訂您的模型，使用設定檔和造型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)。  
   
- 您可以定義專屬設定檔來調整 UML 並將其擴充至專屬商業領域或架構。 例如：  
+ 您可以定義專屬設定檔來調整 UML 並將其擴充至專屬商業領域或架構。 例如:   
   
 - 如果您經常定義網站，則可以定義專屬設定檔，以提供可套用至類別圖中類別的 «網頁» 造型。 您接著可以使用類別圖來規劃網站。 每個 «網頁» 類別都會有頁面內容、樣式等的額外屬性。  
   
@@ -138,7 +135,7 @@ ms.locfileid: "51730334"
   
 1.  建立包含下列三個檔案的 Windows 目錄：  
   
-    -   *一個* `.profile`  
+    -   *YourProfile* `.profile`  
   
     -   `extension.vsixmanifest`  
   
@@ -223,9 +220,9 @@ ms.locfileid: "51730334"
 7.  建置 Visual Studio 擴充功能，方法是建置擴充功能專案或壓縮所有檔案 (如前面小節所述)。  
   
 ##  <a name="Schema"></a> 設定檔結構  
- UML 設定檔的 XSD 檔案可在下列範例：[設定造型和設定檔 XSD](http://go.microsoft.com/fwlink/?LinkID=213811)。 為了協助您編輯設定檔，請將 `.xsd` 檔案安裝在下列位置：  
+ UML 設定檔的 XSD 檔案可在下列範例中：[設定造型和設定檔 XSD](http://go.microsoft.com/fwlink/?LinkID=213811)。 為了協助您編輯設定檔，請將 `.xsd` 檔案安裝在下列位置：  
   
- **%ProgramFiles%\Microsoft visual Studio [版本] \Xml\Schemas**  
+ **%ProgramFiles%\Microsoft Visual Studio [version]\Xml\Schemas**  
   
  本節使用 C# 設定檔做為範例。 您可以在下列位置看到完整設定檔定義：  
   
@@ -345,7 +342,7 @@ ms.locfileid: "51730334"
  我的造型未出現我的 UML 模型。  
  您必須在套件或模型中選取設定檔。 造型接著會出現在套件或模型內的項目上。 如需詳細資訊，請參閱 <<c0> [ 新增造型，加入 UML 模型項目](../modeling/add-stereotypes-to-uml-model-elements.md)。  
   
- 當我開啟 UML 模型時，就會出現下列錯誤： **VS1707： 無法載入下列設定檔，因為發生序列化錯誤： MyProfile.profile**  
+ 當我開啟 UML 模型時，就會出現下列錯誤：**VS1707:無法載入下列設定檔，因為發生序列化錯誤：MyProfile.profile**  
  1.  確認 .profile 的基本 XML 語法正確。  
   
 2. 確定每個 Moniker 名稱的格式都是 /profileName/nodeName。 profileName 是根設定檔節點中 name 屬性的值。 nodeName 是 metaclass、externalType 或 enumerationType 的 name 屬性值。  
@@ -371,8 +368,5 @@ ms.locfileid: "51730334"
  [將造型加入 UML 模型項目](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [自訂您的模型，使用設定檔和造型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [UML 模型的標準造型](../modeling/standard-stereotypes-for-uml-models.md)   
- [範例： 依據造型色彩 UML 項目](http://go.microsoft.com/fwlink/?LinkID=213841)   
- [範例： 設定造型、 設定檔 XSD](http://go.microsoft.com/fwlink/?LinkID=213811)
-
-
-
+ [範例：色彩依據造型將 UML 項目](http://go.microsoft.com/fwlink/?LinkID=213841)   
+ [範例：設定造型、 設定檔 XSD](http://go.microsoft.com/fwlink/?LinkID=213811)

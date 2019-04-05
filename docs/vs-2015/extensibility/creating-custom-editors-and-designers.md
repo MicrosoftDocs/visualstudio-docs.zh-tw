@@ -1,27 +1,22 @@
 ---
 title: 建立自訂編輯器和設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK]
 - editors [Visual Studio SDK], custom
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 324284a6cac44c995d652cce2f2e82a4c13702c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8dd9b637571bfd7d2480992c7a2fef74a0d5b393
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753257"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942340"
 ---
 # <a name="creating-custom-editors-and-designers"></a>建立自訂編輯器和設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,10 +72,10 @@ Visual Studio 整合式的開發環境 (IDE) 可裝載不同類型的編輯器�
      如果它可以內嵌，您應該針對外部編輯器建立主視窗，然後呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>方法和 set<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列舉值，以`DP_External`。 如果編輯器無法內嵌，IDE 會自動為它建立另一個視窗。  
   
 ## <a name="in-this-section"></a>本節內容  
- [逐步解說︰建立自訂編輯器](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [逐步解說：建立自訂編輯器](../extensibility/walkthrough-creating-a-custom-editor.md)  
  說明如何建立自訂編輯器。  
   
- [逐步解說︰將功能加入至自訂編輯器](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [逐步解說：將功能加入至自訂編輯器](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  說明如何將功能加入至自訂編輯器。  
   
  [設計工具初始化和中繼資料組態](../extensibility/designer-initialization-and-metadata-configuration.md)  
@@ -107,4 +102,3 @@ Visual Studio 整合式的開發環境 (IDE) 可裝載不同類型的編輯器�
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>
-

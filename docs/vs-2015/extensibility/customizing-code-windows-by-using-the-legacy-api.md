@@ -1,26 +1,21 @@
 ---
 title: 使用舊版 API 來自訂程式碼的 Windows |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
 ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 45788e3fdfff2898a0d2d2ed36c81425c225b54c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f15c649b8d857d2e920bb957e5975d296749cb86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809762"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942333"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>使用舊版 API 的自訂程式碼 Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +35,10 @@ ms.locfileid: "51809762"
  `Customizing Code Windows by Using the Legacy API`  
  說明如何自訂使用舊版 API 的程式碼視窗。  
   
- [如何：在其他編輯器中裝載編輯器](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [如何：裝載在其他編輯器中的編輯器](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  說明如何裝載在編輯器視窗內的第二個編輯器。  
   
- [如何：在編輯器失去焦點時引發事件](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [如何：引發事件當編輯器失去焦點時](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  說明如何將文件檢視附加至文件資料物件。  
   
 ## <a name="see-also"></a>另請參閱  
@@ -53,4 +48,3 @@ ms.locfileid: "51809762"
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
  [使用舊版 API，核心編輯器具現化](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
  [使用舊版 API 存取文字檢視](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
-

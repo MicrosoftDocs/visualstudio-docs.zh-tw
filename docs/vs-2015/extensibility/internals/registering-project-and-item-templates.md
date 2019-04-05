@@ -1,14 +1,9 @@
 ---
 title: 註冊專案和項目範本 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 06a9840680c76103373cde00ac37310bb6138095
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764288"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941289"
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ ms.locfileid: "51764288"
 |----------|----------|-----------------|  
 |@|REG_SZ|這種專案的預設名稱。|  
 |DisplayName|REG_SZ|要從附屬 DLL 擷取的資源識別碼名稱的註冊套件。|  
-|Package|REG_SZ|註冊套件的套件的類別識別碼。|  
+|套件|REG_SZ|註冊套件的套件的類別識別碼。|  
 |ProjectTemplatesDir|REG_SZ|預設的專案範本檔案的路徑。 專案範本檔案會顯示**新的專案**範本。|  
   
 ### <a name="registering-item-templates"></a>註冊項目範本  
@@ -117,7 +112,7 @@ ms.locfileid: "51764288"
   
  \Form  
   
- \Web 頁面  
+ \Web Page  
   
  \HelperFiles （包含多個檔案的專案項目中使用的檔案）  
   
@@ -128,4 +123,3 @@ ms.locfileid: "51764288"
  [精靈](../../extensibility/internals/wizards.md)   
  [當地語系化應用程式](../../ide/localizing-applications.md)   
  [通常用來擴充專案的物件 CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
-

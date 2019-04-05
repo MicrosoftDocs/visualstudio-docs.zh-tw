@@ -1,14 +1,9 @@
 ---
 title: 偵錯工具元件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], components
 - components [Visual Studio SDK], debugging
@@ -16,26 +11,26 @@ helpviewer_keywords:
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: aabd6311212b866b9171758c8bec39e3beebbfea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 12f865e7d4c44cfa4002b330ed85ec95f95a8ef9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797490"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945285"
 ---
 # <a name="debugger-components"></a>偵錯工具元件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具會實作為 VSPackage 和管理整個偵錯工作階段。 偵錯工作階段包含下列項目：  
   
-- **偵錯封裝：** [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具會提供相同的使用者介面，不論項目正在進行偵錯。  
+- **偵錯封裝：**[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具會提供相同的使用者介面，不論項目正在進行偵錯。  
   
 - **工作階段偵錯管理員 (SDM):** 提供一致的程式設計介面，以[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯工具進行偵錯引擎的各種不同的管理。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
-- **處理序偵錯管理員 (PDM):** 的所有執行的執行個體的管理， [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，可以是或正在進行偵錯的所有程式的清單。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+- **處理序偵錯管理員 (PDM):** 管理的所有執行的執行個體[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，可以是或正在進行偵錯的所有程式的清單。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
-- **偵錯引擎 (DE):** 須負責監視正在偵錯程式進行通訊的 SDM 和 PDM，執行中的程式狀態，並與其互動的運算式評估工具和符號提供者，以提供即時的分析程式的記憶體和變數的狀態。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]（適用於支援的語言） 和第三方廠商想要支援他們自己的執行的階段。  
+- **偵錯引擎 (DE):** 負責監視程式，偵錯，通訊 SDM 和 PDM，執行程式的狀態，並與其互動的運算式評估工具和符號提供者提供的程式的記憶體狀態的即時分析和變數。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]（適用於支援的語言） 和第三方廠商想要支援他們自己的執行的階段。  
   
 - **運算式評估工具 (EE):** 提供支援以動態方式評估變數和使用者所提供的程式已停止在特定時間點時的運算式。 它由實作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]（適用於支援的語言） 和第三方廠商想要支援他們自己的語言。  
   
@@ -82,4 +77,3 @@ ms.locfileid: "51797490"
   
 ## <a name="see-also"></a>另請參閱  
  [快速入門](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
-

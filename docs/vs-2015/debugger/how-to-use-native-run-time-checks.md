@@ -1,14 +1,9 @@
 ---
-title: 如何： 使用原生執行階段檢查 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用原生執行階段檢查 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.runtime.errorchecks
 dev_langs:
@@ -45,15 +40,15 @@ ms.assetid: dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4efbb4e151ea47f655f0b28e19d2811d5541e944
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8f6fc8c2019e8798411a10cd61272c2f6c1684c0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798751"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944769"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>如何：使用原生執行階段檢查
+# <a name="how-to-use-native-run-time-checks"></a>HOW TO：使用原生執行階段檢查
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以在 Visual C++ 中使用原生 [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) 來攔截最常見的執行階段錯誤，例如：  
@@ -92,8 +87,3 @@ ms.locfileid: "51798751"
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)   
  [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
  [執行階段錯誤檢查](http://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)
-
-
-
-
-

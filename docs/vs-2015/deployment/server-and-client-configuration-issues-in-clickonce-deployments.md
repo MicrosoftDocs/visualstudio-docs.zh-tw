@@ -1,14 +1,9 @@
 ---
 title: 伺服器和 ClickOnce 部署中的用戶端組態問題 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948937"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942142"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ ms.locfileid: "49948937"
   
 - .deploy  
   
-  不過，您可以停用此選項藉由清除**使用".deploy"副檔名**選項[發行選項 對話方塊中](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，在此情況下，您必須設定網頁伺服器，以解除封鎖所有的檔案副檔名在應用程式中使用。  
+  不過，您可以停用此選項藉由清除**使用".deploy"副檔名**選項[發行選項 對話方塊中](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，在此情況下，您必須設定網頁伺服器，以解除封鎖所有的檔案副檔名在應用程式中使用。  
   
   您必須設定.manifest、.application，以及使用.deploy，比方說，如果您使用未安裝了的 IIS [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，或如果您使用另一部 Web 伺服器 (例如 Apache)。  
   
@@ -97,27 +92,27 @@ ms.locfileid: "49948937"
 |`.msp`|`application/octet-stream`|  
   
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce 和對應的磁碟機  
- 如果您使用 Visual Studio 來發行 ClickOnce 應用程式時，您無法指定對應的磁碟機做為安裝位置。 不過，您可以修改 ClickOnce 應用程式，若要使用的資訊清單產生器和編輯器 （Mage.exe 和 MageUI.exe） 安裝的磁碟機。 如需詳細資訊，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)並[MageUI.exe (Manifest Generation and Editing Tool，Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
+ 如果您使用 Visual Studio 來發行 ClickOnce 應用程式時，您無法指定對應的磁碟機做為安裝位置。 不過，您可以修改 ClickOnce 應用程式，若要使用的資訊清單產生器和編輯器 （Mage.exe 和 MageUI.exe） 安裝的磁碟機。 如需詳細資訊，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)並[MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP 通訊協定不支援如安裝應用程式  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 從任何 HTTP 1.1 Web 伺服器或檔案伺服器安裝應用程式的支援。 FTP 檔案傳輸通訊協定不支援如安裝應用程式。 您可以使用 FTP 發行應用程式。 下表摘要說明這些差異：  
   
 |URL 類型|描述|  
 |--------------|-----------------|  
-|ftp: / /|您可以發佈[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式使用此通訊協定。|  
+|ftp://|您可以發佈[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式使用此通訊協定。|  
 |http://|您可以安裝[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式使用此通訊協定。|  
 |https://|您可以安裝[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式使用此通訊協定。|  
 |file://|您可以安裝[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式使用此通訊協定。|  
   
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Windows 防火牆  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2：Windows 防火牆  
  根據預設，Windows XP SP2 會啟用 Windows 防火牆。 如果您正在開發您的應用程式已安裝的 Windows XP 的電腦上，您就仍然能夠發行和執行[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]從本機伺服器執行 IIS 的應用程式。 不過，您無法存取該伺服器是從另一部電腦執行 IIS，除非您開啟 Windows 防火牆。 如需管理 Windows 防火牆的指示，請參閱 Windows 說明。  
   
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server： 啟用 FrontPage server extensions  
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server：啟用 FrontPage server extensions  
  應用程式發佈到使用 HTTP 的 Windows Web 伺服器需要 Microsoft 的 FrontPage Server Extensions。  
   
  根據預設，Windows Server 並沒有安裝的 FrontPage Server Extensions。 如果您想要使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]来發行至 Windows Server 網頁伺服器會使用 FrontPage Server Extensions 中的 HTTP，您必須先安裝 FrontPage Server Extensions。 您可以使用 Windows Server 中的 管理您的伺服器管理工具來執行安裝。  
   
-## <a name="windows-server-locked-down-content-types"></a>Windows Server： 鎖定的內容類型  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server：鎖定的內容類型  
  上的 IIS[!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)]鎖定特定已知的內容類型 （例如.htm、.html、.txt 等等） 以外的所有檔案類型。 若要啟用部署[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]使用此伺服器應用程式，您需要變更 IIS 設定，以允許下載類型.application.manifest 及您的應用程式所使用的任何其他自訂的檔案類型的檔案。  
   
  如果您使用 IIS 伺服器部署，執行 inetmgr.exe，並新增新的檔案類型的預設網頁：  
@@ -144,6 +139,3 @@ ms.locfileid: "49948937"
  [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)   
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)
-
-
-

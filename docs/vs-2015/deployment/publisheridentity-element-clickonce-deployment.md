@@ -1,14 +1,9 @@
 ---
 title: '&lt;publisherIdentity&gt;項目 （ClickOnce 部署） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: 34c579db-d2f2-4b66-b9c8-47207f33d950
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1d25b9ff6c4d8a3eb43d18d5c9849ba7199ffe79
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 486e0bc5059e041f02e8dac4836c5ff59b27f63e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226937"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940600"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt;項目 （ClickOnce 部署）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,8 +43,8 @@ ms.locfileid: "49226937"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`name`|必要。 描述發行此應用程式的合作對象的識別。|  
-|`issuerKeyHash`|必要。 包含憑證簽發者的公開金鑰的 sha-1 雜湊。|  
+|`name`|必要項。 描述發行此應用程式的合作對象的識別。|  
+|`issuerKeyHash`|必要項。 包含憑證簽發者的公開金鑰的 sha-1 雜湊。|  
   
 #### <a name="parameters"></a>參數  
   
@@ -62,6 +57,3 @@ ms.locfileid: "49226937"
 ## <a name="requirements"></a>需求  
   
 ## <a name="subhead"></a>子標題
-
-
-

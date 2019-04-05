@@ -1,30 +1,27 @@
 ---
 title: 開始使用特定領域語言 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 29699609ee095c7e95434492afc531869453da4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3ac51765fd89324c3d4098a4aa92afc9e5bbc1bf
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877762"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000554"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>開始使用網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題說明在定義和使用適用於 Visual Studio 中使用 Modeling SDK 建立特定領域語言 (DSL) 的基本概念。  
   
- 如果您不熟悉 dsl，建議您逐步**DSL 工具實驗室**，您可以找到此站台中： [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+ 如果您不熟悉 dsl，建議您逐步**DSL 工具實驗室**，您可以找到此站台：[Visualizaton 與模型 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>您可以使用特定領域語言來做什麼？  
  使用標記法，通常是圖形，是設計用來針對特定用途使用定義域專屬語言。 相較之下，例如 UML 的語言是一般用途。 在 DSL 中，您可以定義類型的模型項目和其關聯性，以及在螢幕上的呈現方式。  
@@ -46,7 +43,7 @@ ms.locfileid: "49877762"
 |-|-|  
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
-|Modeling SDK for Visual Studio|[下載 MSDK](http://www.microsoft.com/download/details.aspx?id=40754)|  
+|Modeling SDK for Visual Studio|[下載 MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|  
   
 ## <a name="creating-a-dsl-solution"></a>建立 DSL 方案  
  若要建立新的定義域專屬語言，您建立新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]使用定義域專屬語言專案範本的方案。  
@@ -86,7 +83,7 @@ ms.locfileid: "49877762"
   
    這時使用者介面類似以下圖片。  
   
-   ![dsl 設計工具](../modeling/media/dsl-designer.png "dsl_designer")  
+   ![DSL 設計工具](../modeling/media/dsl-designer.png "dsl_designer")  
   
    此方案定義網域指定的語言。 如需詳細資訊，請參閱 < [Domain-specific Language Tools 使用者介面概觀](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)。  
   
@@ -107,7 +104,7 @@ ms.locfileid: "49877762"
 1. 按一下 **轉換所有範本**在 方案總管 工具列中。 這樣會重新產生大部分的 DslDefinition.dsl 中的原始程式碼。  
   
    > [!NOTE]
-   >  每當您變更 DslDefinition.dsl 時，您必須按一下 **轉換所有範本**重新建置方案之前。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
+   >  每當您變更 DslDefinition.dsl 時，您必須按一下 **轉換所有範本**重新建置方案之前。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
   
 2. 按 f5 鍵，或在**偵錯**功能表上，按一下**開始偵錯**。  
   
@@ -377,7 +374,7 @@ ms.locfileid: "49877762"
 ## <a name="validation-and-commands"></a>驗證和命令  
  您可以開發進一步此 DSL 加入驗證條件約束。 這些條件約束是方法，您可以定義，請確認模型處於正確狀態。 例如，您可以定義條件約束，確保孩子的出生日期晚於其父代的。 如果 DSL 使用者嘗試儲存模型，會中斷任何條件約束，驗證的功能就會顯示警告。 如需詳細資訊，請參閱 <<c0> [ 定義域專屬語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)。  
   
- 您也可以定義使用者可以叫用的功能表命令。 命令可以修改模型。 也可以與其他模型中互動[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]與外部資源。 如需詳細資訊，請參閱 <<c0> [ 如何： 修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
+ 您也可以定義使用者可以叫用的功能表命令。 命令可以修改模型。 也可以與其他模型中互動[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]與外部資源。 如需詳細資訊，請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
   
 ## <a name="deploying-the-dsl"></a>部署 DSL  
  若要允許其他使用者使用特定領域語言，您將散發[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]擴充功能 (VSIX) 檔案。 建置 DSL 方案時，會建立此項目。  
@@ -386,7 +383,7 @@ ms.locfileid: "49877762"
   
  您可以使用相同的程序，讓您不必使用實驗性執行個體，在您自己的電腦上安裝 DSL [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
- 如需詳細資訊，請參閱 <<c0> [ 部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
+ 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
 ##  <a name="Reset"></a> 移除舊的實驗性 Dsl  
  如果您建立實驗性的 Dsl，您不想再，您可以從您的電腦中移除它們，藉由重設[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]實驗執行個體。  
@@ -405,6 +402,3 @@ ms.locfileid: "49877762"
  [了解模型、 類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)   
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   
  [Visualizaton 與模型 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
-
-
-

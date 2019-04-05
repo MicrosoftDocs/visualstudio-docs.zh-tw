@@ -1,14 +1,9 @@
 ---
-title: CA2225： 運算子多載必須有具名的替代項目 |Microsoft Docs
-ms.custom: ''
+title: CA2225:運算子多載必須有具名的替代項目 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OperatorOverloadsHaveNamedAlternates
 - CA2225
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 427bd7756e1bf7a9e1b7056a84dd90c29bf504fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860249"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943681"
 ---
-# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225：運算子多載必須有具名的替代方法
+# <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225:運算子多載必須有具名的替代方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -49,22 +44,22 @@ ms.locfileid: "49860249"
 |---------|------------------|-----------|--------------------|
 |+ （二進位）|+|+ （二進位）|新增|
 |+=|+=|+=|新增|
-|&|及|&|BitwiseAnd|
-|&=|和 =|&=|BitwiseAnd|
+|&|和|&|BitwiseAnd|
+|&=|And=|&=|BitwiseAnd|
 |&#124;|或|&#124;|BitwiseOr|
-|&#124;=|或 =|&#124;=|BitwiseOr|
+|&#124;=|Or=|&#124;=|BitwiseOr|
 |--|N/A|--|遞減|
 |/|/|/|分割|
 |/=|/=|/=|分割|
 |==|=|==|等於|
 |^|Xor|^|Xor|
-|^=|Xor =|^=|Xor|
+|^=|Xor=|^=|Xor|
 |>|>|>|比較|
 |>=|>=|>=|比較|
 |++|N/A|++|遞增|
 |<>|!=|等於|
-|<<|<<|<<|Shift|
-|<<=|<<=|<<=|Shift|
+|<<|<<|<<|LeftShift|
+|<<=|<<=|<<=|LeftShift|
 |<|<|<|比較|
 |<=|<=|\<=|比較|
 |&&|N/A|&&|LogicalAnd|
@@ -74,9 +69,9 @@ ms.locfileid: "49860249"
 |%=|N/A|%=|Mod|
 |* （二進位）|*|*|乘法|
 |*=|N/A|*=|乘法|
-|~|not|~|OnesComplement|
-|>>|>>|>>|右 Shift|
-=|N/A|>>=|右 Shift|
+|~|否|~|OnesComplement|
+|>>|>>|>>|RightShift|
+=|N/A|>>=|RightShift|
 |-（二進位）|-（二進位）|-（二進位）|差集|
 |-=|N/A|-=|差集|
 |true|IsTrue|N/A|IsTrue （屬性）|
@@ -102,15 +97,12 @@ ms.locfileid: "49860249"
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorOverloadsHaveNamedAlternates/cs/FxCop.Usage.OperatorOverloadsHaveNamedAlternates.cs#1)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1046：請勿多載參考類型上的等號比較運算子](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046:不要多載參考類型上的等號比較運算子](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2226：運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226:運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224：多載等號比較運算子時必須一併覆寫 Equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224:覆寫等於多載等號比較運算子](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2218：覆寫 Equals 時必須一併覆寫 GetHashCode](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218:Equals 覆寫 GetHashCode](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
- [CA2231：覆寫 ValueType.Equals 時必須一併多載等號比較運算子](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
-
-
-
+ [CA2231：在覆寫 ValueType.Equals 上多載等號運算子](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

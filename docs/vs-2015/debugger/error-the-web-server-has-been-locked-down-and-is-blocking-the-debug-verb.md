@@ -1,14 +1,9 @@
 ---
-title: 錯誤： Web 伺服器已經鎖定並會封鎖 DEBUG 動詞命令 |Microsoft Docs
-ms.custom: ''
+title: 錯誤：Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
 dev_langs:
@@ -22,13 +17,13 @@ ms.assetid: 9c8c4812-17db-484d-9c1b-ffd9e3bfef5a
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 60fffd146516bca57497bfdaaabe0f51407063b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 64527c784cf61c02ad3031e9ba922ebf707e7e6f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770242"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941368"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>錯誤：Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "51770242"
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  建立一份檔案，並將它命名**為 Urlscan.old**。  
+2.  建立該檔案的複本，並命名為 **Urlscan.old**。  
   
 3.  使用 [記事本] 或您選擇的文字編輯器開啟 Urlscan.ini 檔的原始複本。  
   
@@ -58,8 +53,5 @@ ms.locfileid: "51770242"
 7.  重新啟動伺服器或重新啟動 IIS。  
   
 ## <a name="see-also"></a>另請參閱  
- [偵錯的 Web 應用程式： 錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [錯誤：Web 伺服器找不到要求的資源](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
-
-
-

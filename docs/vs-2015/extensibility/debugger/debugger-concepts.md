@@ -1,26 +1,21 @@
 ---
 title: 偵錯工具概念 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK]
 ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 076fc9aee3cf794d587b736c2bd0d37f572d30ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0f8dd5567fb21fafbac3c63b84dae1e0e33b0b91
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729513"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945810"
 ---
 # <a name="debugger-concepts"></a>偵錯工具概念
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,4 +65,3 @@ ms.locfileid: "51729513"
   
  [偵錯工作](../../extensibility/debugger/debugging-tasks.md)  
  包含各種不同的偵錯工作，例如啟動程式，以及評估運算式的連結。
-

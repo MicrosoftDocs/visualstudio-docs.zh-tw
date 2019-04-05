@@ -1,12 +1,9 @@
 ---
-title: 逐步解說： 建立 N-tier 資料應用程式 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立多層式架構資料應用程式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,23 +16,23 @@ ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 37876502a464e263ebd6803216b29bd62b65af5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f3185a6b7ebe4f5f37428e04f1b4215431921c51
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890175"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941027"
 ---
-# <a name="walkthrough-creating-an-n-tier-data-application"></a>逐步解說：建立 N-Tier 資料應用程式
+# <a name="walkthrough-creating-an-n-tier-data-application"></a>逐步解說：建立多層式架構 (N-Tier) 資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層，或*層*。 將應用程式元件分成離散層級，可增加應用程式的可維護性和延展性。 原因是可以更輕鬆地採用套用至單一層級的新技術，而且您不需要重新設計整個方案。 多層式架構包括呈現層、中介層和資料層。 中介層通常包括資料存取層、商務邏輯層和共用元件 (如驗證 (authentication) 和驗證 (validation))。 資料層包括關聯式資料庫。 多層式架構應用程式通常會將敏感性資訊儲存至中介層的資料存取層，以與存取呈現層的終端使用者隔離。 如需詳細資訊，請參閱 <<c0> [ 多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)。  
+N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層，或*層*。 將應用程式元件分成離散層級，可增加應用程式的可維護性和延展性。 原因是可以更輕鬆地採用套用至單一層級的新技術，而且您不需要重新設計整個方案。 多層式架構包括呈現層、中介層和資料層。 中介層通常包括資料存取層、商務邏輯層和共用元件 (如驗證 (authentication) 和驗證 (validation))。 資料層包括關聯式資料庫。 多層式架構應用程式通常會將敏感性資訊儲存至中介層的資料存取層，以與存取呈現層的使用者隔離。 如需詳細資訊，請參閱 <<c0> [ 多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)。  
   
  其中一種在多層式架構應用程式中分為各種層級的方式，是針對您要併入應用程式中的每個層級建立離散專案。 具類型資料集所含的 `DataSet Project` 屬性可以決定所產生的資料集和 `TableAdapter` 程式碼應該進入的專案。  
   
- 本逐步解說示範如何以不同的資料集和`TableAdapter`程式碼分成離散類別庫專案，使用**Dataset 設計工具**。 您可將資料集和 TableAdapter 程式碼之後，您會建立[Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)来呼叫到資料存取層的服務。 最後，您將建立 Windows Forms 應用程式做為呈現層。 此層級會存取資料服務中的資料。  
+ 此逐步解說示範如何使用 [DataSet 設計工具] 將資料集和 `TableAdapter` 程式碼分成離散類別庫專案。 您可將資料集和 TableAdapter 程式碼之後，您會建立[Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)来呼叫到資料存取層的服務。 最後，您將建立 Windows Forms 應用程式做為呈現層。 此層級會存取資料服務中的資料。  
   
  在這個逐步解說期間，您將執行下列步驟：  
   
@@ -43,7 +40,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
   
 - 將兩個類別庫專案加入至多層式架構方案。  
   
-- 使用建立具類型資料集**資料來源組態精靈**。  
+- 使用 [資料來源組態精靈]，以建立具類型資料集。  
   
 - 將產生[TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)和資料集的程式碼分成離散專案。  
   
@@ -51,24 +48,24 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
   
 - 在服務中建立函式，以擷取資料存取層中的資料。  
   
-- 建立 Windows Form 應用程式，以做為呈現層。  
+- 建立 Windows Forms 應用程式，以做為呈現層。  
   
 - 建立繫結至資料來源的 Windows Form 控制項。  
   
 - 撰寫程式碼以填入資料表。  
   
-  ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如本主題的影片版本，請參閱[影片-如何： 建立多層式架構資料應用程式](http://go.microsoft.com/fwlink/?LinkId=115188)。  
+  ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如本主題的影片版本，請參閱[作法影片：建立多層式架構資料應用程式](http://go.microsoft.com/fwlink/?LinkId=115188)。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要完成這個逐步解說，您需要：  
   
--   Northwind 範例資料庫的存取權。 如需詳細資訊，請參閱 <<c0> [ 如何： 安裝範例資料庫](../data-tools/how-to-install-sample-databases.md)。  
+-   Northwind 範例資料庫的存取權。
   
 ## <a name="creating-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>建立多層式架構方案和類別庫以保留資料集 (DataEntityTier)  
- 這個逐步解說的第一個步驟是建立一個方案和兩個類別庫專案。 第一個類別庫將會保留資料集 (產生的具類型 DataSet 類別以及將保留應用程式資料的 DataTables)。 此專案是用做應用程式的資料實體層，而且通常位於中介層。 [建立和編輯具類型資料集](../data-tools/creating-and-editing-typed-datasets.md)用來建立初始資料集，並自動將程式碼分成兩個類別程式庫。  
+ 這個逐步解說的第一個步驟是建立一個方案和兩個類別庫專案。 第一個類別庫將會保留資料集 (產生的具類型 DataSet 類別以及將保留應用程式資料的 DataTables)。 此專案是用做應用程式的資料實體層，而且通常位於中介層。 Dataset 設計工具用來建立初始資料集，並自動將程式碼分成兩個類別程式庫。  
   
 > [!NOTE]
->  請務必正確地命名專案和方案為再按一下 **確定**。 這麼做可以讓您輕鬆地完成這個逐步解說。  
+>  請確認正確命名專案和方案，然後按一下 [確定]。 這麼做可以讓您輕鬆地完成這個逐步解說。  
   
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>建立多層式架構方案和 DataEntityTier 類別庫  
   
@@ -81,13 +78,13 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
   
 3.  按一下 **類別庫**範本。  
   
-4.  將專案命名為**DataEntityTier**。  
+4.  將專案命名為 **DataEntityTier**。  
   
 5.  將方案命名為**NTierWalkthrough**。  
   
 6.  按一下 [確定 **Deploying Office Solutions**]。  
   
-     會建立含有 DataEntityTier 專案的 NTierWalkthrough 方案，並將其加入**方案總管 中**。  
+     隨即建立含有 DataEntityTier 專案的 NTierWalkthrough 方案，並將其新增至 [方案總管]。  
   
 ## <a name="creating-the-class-library-to-hold-the-tableadapters-dataaccesstier"></a>建立類別庫以保留 TableAdapter (DataAccessTier)  
  建立 DataEntityTier 專案之後的下一個步驟是建立另一個類別庫專案。 此專案將保留產生`TableAdapter`s，稱為*資料存取層*應用程式。 資料存取層包含連接至資料庫所需的資訊，而且通常位於中介層。  
@@ -106,7 +103,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
  下一個步驟是建立具類型資料集。 在單一專案中，建立具有資料集類別 (包括 DataTables 類別) 和 `TableAdapter` 類別的具類型資料集  (所有類別都會產生到單一檔案)。當您將資料集和 `TableAdapter` 分隔到不同的專案時，是將資料集類別移至另一個專案，而 `TableAdapter` 類別會保留在原始專案中。 因此，在最後會包含 `TableAdapter` 的專案 (DataAccessTier 專案) 中建立資料集。 您將使用來建立資料集**資料來源組態精靈**。  
   
 > [!NOTE]
->  您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需有關如何設定 Northwind 範例資料庫的資訊，請參閱 <<c0> [ 如何： 安裝範例資料庫](../data-tools/how-to-install-sample-databases.md)。  
+> 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。
   
 #### <a name="to-create-the-dataset"></a>建立資料集  
   
@@ -118,7 +115,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
   
 4.  在 **選擇資料來源類型**頁面上，按一下**資料庫**，然後按一下 **下一步**。  
   
-5.  在 **選擇資料連接**頁面上，執行下列動作之一：  
+5.  在 [選擇資料連線] 頁面上，執行下列其中一項動作：  
   
      如果下拉式清單中提供 Northwind 範例資料庫的資料連接，請按一下這個資料連接。  
   
@@ -137,27 +134,27 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
   
 9. 按一下核取方塊**客戶**並**訂單**資料表，然後再按一下**完成**。  
   
-     NorthwindDataSet 會加入至 DataAccessTier 專案，而且會出現在**Zdroje dat**視窗。  
+     NorthwindDataSet 會新增至 DataAccessTier 專案，並出現在 [資料來源] 視窗中。  
   
 ## <a name="separating-the-tableadapters-from-the-dataset"></a>分隔 TableAdapter 與資料集  
- 在您建立資料集之後，請分隔產生的資料集類別與 TableAdapter。 您可以設定**資料集 Project**屬性，以在其中儲存分開之資料集類別的專案的名稱。  
+ 在您建立資料集之後，請分隔產生的資料集類別與 TableAdapter。 做法是將 [資料集專案] 屬性設定為在其中儲存分開之資料集類別的專案名稱。  
   
 #### <a name="to-separate-the-tableadapters-from-the-dataset"></a>分隔 TableAdapter 與資料集  
   
-1. 按兩下**NorthwindDataSet.xsd**中**方案總管**若要開啟中的資料集**Dataset 設計工具**。  
+1. 在 [方案總管] 中，按兩下 **NorthwindDataSet.xsd** 開啟 [DataSet 設計工具]。  
   
 2. 按一下設計工具上的空白區域。  
   
-3. 找出**資料集 Project**中的節點**屬性**視窗。  
+3. 在 [屬性] 視窗中，找到 [資料集專案] 節點。  
   
 4. 在 **資料集 Project**清單中，按一下**DataEntityTier**。  
   
 5. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
-   資料集和 TableAdapter 會分隔到兩個類別庫專案。 原本包含整個資料集的專案 (DataAccessTier) 現在只會包含 TableAdapter。 中指定的專案**資料集 Project**屬性 (DataEntityTier) 包含具類型資料集： NorthwindDataSet.Dataset.Designer.vb （或 NorthwindDataSet.Dataset.Designer.cs）。  
+   資料集和 TableAdapter 會分隔到兩個類別庫專案。 原本包含整個資料集的專案 (DataAccessTier) 現在只會包含 TableAdapter。 中指定的專案**資料集 Project**屬性 (DataEntityTier) 包含具類型資料集：NorthwindDataSet.Dataset.Designer.vb （或 NorthwindDataSet.Dataset.Designer.cs）。  
   
 > [!NOTE]
->  當您分隔資料集和 Tableadapter (藉由設定**資料集 Project**屬性)，在專案中的現有部份資料集類別不會自動移動。 現有資料集部分類別必須手動移至資料集專案。  
+>  當您分隔資料集與 TableAdapter 時 (設定 [資料集專案] 屬性)，將不會自動移動專案中的現有部份資料集類別。 現有資料集部分類別必須手動移至資料集專案。  
   
 ## <a name="creating-a-new-service-application"></a>建立新的服務應用程式  
  因為這個逐步解說示範如何使用 WCF 服務來存取資料存取層，所以請建立新的 WCF 應用程式服務。  
@@ -173,21 +170,21 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
      隨即建立 DataService 專案，並將它加入至 NTierWalkthrough 方案。  
   
 ## <a name="creating-methods-in-the-data-access-tier-to-return-the-customers-and-orders-data"></a>在資料存取層中建立方法，以傳回 Customers 和 Orders 資料  
- 資料服務必須在資料存取層中呼叫兩種方法：GetCustomers 和 GetOrders。 這些方法會傳回 Northwind Customers 和 Orders 資料表。 在 DataAccessTier 專案中，建立 GetCustomers 和 GetOrders 方法。  
+ 資料服務必須在資料存取層中呼叫兩個方法：GetCustomers 和 GetOrders。 這些方法會傳回 Northwind Customers 和 Orders 資料表。 在 DataAccessTier 專案中，建立 GetCustomers 和 GetOrders 方法。  
   
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>在資料存取層中建立可傳回 Customers 資料表的方法  
   
-1.  在 **方案總管**，連按兩下 [NorthwindDataset.xsd]，以開啟中的資料集[建立及編輯具類型資料集](../data-tools/creating-and-editing-typed-datasets.md)。  
+1.  在 **方案總管 中**，按兩下 NorthwindDataset.xsd 以開啟 Dataset 設計工具中的 資料集。  
   
-2.  CustomersTableAdapter 上按一下滑鼠右鍵，然後按一下 **加入查詢**來開啟[編輯 TableAdapters](../data-tools/editing-tableadapters.md)。  
+2.  CustomersTableAdapter 上按一下滑鼠右鍵，然後按一下 **加入查詢**編輯 Tableadapter。  
   
-3.  在 [**選擇命令類型**頁面上，保留預設值**使用 SQL 陳述式**然後按一下**下一步]**。  
+3.  在 [選擇命令類型] 頁面上，保留 [使用 SQL 陳述式] 的預設值，然後按一下 [下一步]。  
   
-4.  在上**選擇查詢類型**頁面上，保留預設值**會傳回資料列選取**，按一下 [**下一步]**。  
+4.  在 [選擇查詢類型] 頁面上，保留 [傳回資料列的 SELECT] 的預設值，然後按一下 [下一步]。  
   
-5.  在 [**指定 SQL SELECT 陳述式**頁面上，保留預設查詢，然後按一下**下一步]**。  
+5.  在 [指定 SQL SELECT 陳述式] 頁面上，保留預設查詢，然後按一下 [下一步]。  
   
-6.  在上**選擇要產生的方法**頁面上，輸入**GetCustomers** for**方法名稱**中**傳回 DataTable**一節。  
+6.  在 [選擇要產生的方法] 頁面上，於 [傳回 DataTable] 區段的 [方法名稱] 中鍵入 **GetCustomers**。  
   
 7.  按一下 [ **完成**]。  
   
@@ -195,13 +192,13 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
   
 1.  OrdersTableAdapter 上按一下滑鼠右鍵，然後按一下 **加入查詢**。  
   
-2.  在 [**選擇命令類型**頁面上，保留預設值**使用 SQL 陳述式**然後按一下**下一步]**。  
+2.  在 [選擇命令類型] 頁面上，保留 [使用 SQL 陳述式] 的預設值，然後按一下 [下一步]。  
   
-3.  在上**選擇查詢類型**頁面上，保留預設值**會傳回資料列選取**，按一下 [**下一步]**。  
+3.  在 [選擇查詢類型] 頁面上，保留 [傳回資料列的 SELECT] 的預設值，然後按一下 [下一步]。  
   
-4.  在 [**指定 SQL SELECT 陳述式**頁面上，保留預設查詢，然後按一下**下一步]**。  
+4.  在 [指定 SQL SELECT 陳述式] 頁面上，保留預設查詢，然後按一下 [下一步]。  
   
-5.  在上**選擇要產生的方法**頁面上，輸入**GetOrders** for**方法名稱**中**傳回 DataTable**一節。  
+5.  在 [選擇要產生的方法] 頁面上，於 [傳回 DataTable] 區段的 [方法名稱] 中鍵入 **GetOrders**。  
   
 6.  按一下 [ **完成**]。  
   
@@ -214,9 +211,9 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
   
 1.  以滑鼠右鍵按一下中的，於 DataService**方案總管] 中**，按一下 [**加入參考**。  
   
-2.  按一下 [**專案**索引標籤中**加入參考**] 對話方塊。  
+2.  在 [新增參考] 對話方塊中，按一下 [專案] 索引標籤。  
   
-3.  選取這兩個**DataAccessTier**並**DataEntityTier**專案。  
+3.  選取 **DataAccessTier** 和 **DataEntityTier** 專案。  
   
 4.  按一下 [確定 **Deploying Office Solutions**]。  
   
@@ -230,7 +227,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
   
 1.  在  **DataService**專案中，按兩下 IService1.vb 或 IService1.cs。  
   
-2.  新增下列程式碼底下**新增您的服務作業**註解：  
+2.  在 [在此新增您的服務作業] 註解下方，新增下列程式碼：  
   
     ```vb  
     <OperationContract()> _  
@@ -295,7 +292,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
   
 2.  在 **新的專案**對話方塊的 **專案類型**窗格中，按一下**Windows**。 在 [範本]  窗格中，按一下 [Windows Form 應用程式] 。  
   
-3.  將專案命名為**PresentationTier**然後按一下**確定**。  
+3.  將專案命名為 **PresentationTier**，然後按一下 [確定]。  
   
 4.  隨即建立 PresentationTier 專案，並將它加入至 NTierWalkthrough 方案。  
   
@@ -304,7 +301,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
   
 #### <a name="to-set-the-new-presentation-tier-project-as-the-startup-project"></a>將新的呈現層專案設定為啟始專案  
   
--   在 **方案總管**，以滑鼠右鍵按一下**PresentationTier** ，按一下 **設定為啟始專案**。  
+-   在 [方案總管] 中，以滑鼠右鍵按一下 **PresentationTier**，然後按一下 [設定為啟始專案]。  
   
 ## <a name="adding-references-to-the-presentation-tier"></a>加入呈現層的參考  
  用戶端應用程式 PresentationTier 需要有資料服務的服務參考，才能存取服務中的方法。 此外，還需要有資料集參考，才能透過 WCF 服務啟用類型共用。 除非您透過資料服務啟用類型共用，否則呈現層將無法使用加入至部分資料集類別的程式碼。 因為您通常會將驗證這類程式碼加入至變更資料表事件的資料列和資料行，所以可能會想要從用戶端存取此程式碼。  
@@ -321,7 +318,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
   
 1.  在 **方案總管**，於 PresentationTier 上按一下滑鼠右鍵，然後按一下**加入服務參考**。  
   
-2.  在 [**加入服務參考**] 對話方塊中，按一下**Discover**。  
+2.  在 [新增服務參考] 對話方塊中，按一下 [探索]。  
   
 3.  選取  **Service1**然後按一下**確定**。  
   
@@ -329,19 +326,19 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
     >  如果您在目前電腦上有多個服務，則請選取先前在這個逐步解說中建立的服務 (含有 GetCustomers 和 GetOrders 方法的服務)。  
   
 ## <a name="adding-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>將 DataGridViews 加入至表單以顯示資料服務所傳回的資料  
- 加入服務參考加入資料服務之後, **Zdroje dat**視窗會自動填入服務所傳回的資料。  
+ 在您新增資料服務的服務參考之後，會將服務所傳回的資料自動填入 [資料來源] 視窗。  
   
 #### <a name="to-add-two-data-bound-datagridviews-to-the-form"></a>將兩個繫結 DataGridViews 的資料加入至表單  
   
 1.  在 [**方案總管] 中**，選取 PresentationTier 專案。  
   
-2.  在 [**資料來源**] 視窗中，展開**NorthwindDataSet**並找出**客戶**節點。  
+2.  在 [資料來源] 視窗中，展開 **NorthwindDataSet**，並找到 [客戶] 節點。  
   
-3.  拖曳**客戶**節點拖曳至 Form1。  
+3.  將 [客戶] 節點拖曳至 Form1。  
   
-4.  在 [**資料來源**] 視窗中，展開**客戶**節點並找到相關**訂單**節點 (**訂單**巢狀於**客戶**節點)。  
+4.  在 [資料來源] 視窗中，展開 [客戶] 節點，並找到相關的 [訂單] 節點 (巢狀於 [客戶] 節點中的 [訂單] 節點)。  
   
-5.  將相關**訂單**節點拖曳至 Form1。  
+5.  將相關的 [訂單] 節點拖曳至 Form1。  
   
 6.  按兩下表單的空白區域，以建立 `Form1_Load` 事件處理常式。  
   
@@ -371,7 +368,7 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
   
 1.  在 [**方案總管] 中**，按兩下 PresentationTier 專案中的 app.config 檔案。  
   
-2.  找出**maxReceivedMessage**大小屬性，並將值變更為`6553600`。  
+2.  找到 **maxReceivedMessage** 大小屬性，並將值變更為 `6553600`。  
   
 ## <a name="testing-the-application"></a>測試應用程式  
  執行應用程式。 資料是擷取自資料服務，並顯示在表單上。  
@@ -383,9 +380,9 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
 2.  Customers 和 Orders 資料表中的資料是擷取自資料服務，並顯示在表單上。  
   
 ## <a name="next-steps"></a>後續步驟  
- 根據應用程式需求，當您在 Windows 應用程式中儲存相關資料之後，可能會有幾個想要執行的步驟。 例如，您可以對此應用程式進行下列增強：  
+ 視應用程式的需求而定，在您儲存 Windows 應用程式中的關聯資料後，可能還要執行幾個步驟。 例如，您可以對此應用程式進行下列增強：  
   
--   將驗證加入至資料集。 如需資訊，請參閱[逐步解說： 多層式架構資料應用程式中加入驗證](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)。  
+-   將驗證加入至資料集。 如需資訊，請參閱[逐步解說：將驗證新增至多層式架構資料應用程式](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)。  
   
 -   將其他方法加入至服務，以將資料更新回資料庫。  
   
@@ -393,4 +390,3 @@ N-層 * 資料應用程式是應用程式存取資料而且分成多個邏輯層
  [使用多層式架構應用程式中的資料集](../data-tools/work-with-datasets-in-n-tier-applications.md)   
  [階層式更新](../data-tools/hierarchical-update.md)   
  [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)
-

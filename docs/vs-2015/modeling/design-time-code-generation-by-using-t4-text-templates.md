@@ -1,12 +1,9 @@
 ---
 title: 使用 T4 文字範本在設計階段的程式碼產生 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -19,13 +16,13 @@ ms.assetid: 2774b83d-1adb-4c66-a607-746e019b80c0
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859274"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942330"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ ms.locfileid: "49859274"
  例如，您的模型可以將工作流程定義為表格或圖表。 您可以透過模型產生執行工作流程的軟體。 當您使用者的需求變更時，很容易就可以與使用者討論新的工作流程。 透過工作流程重新產生程式碼，會比手動更新程式碼更為可靠。  
   
 > [!NOTE]
->  A*模型*是描述應用程式的特定層面的資料來源。 它可以是任何形式、任何類型的檔案或資料庫。 它不需要是任何特定形式 (如 UML 模型或「網域指定的語言」模型)。 一般模型的格式是表格或 XML 檔案。  
+>  A*模型*是描述應用程式的特定層面的資料來源。 它可以是任何形式、任何類型的檔案或資料庫。 它不需要是任何特定形式 (如 UML 模型或「特定領域語言」模型)。 一般模型的格式是表格或 XML 檔案。  
   
  您可能已熟悉如何產生程式碼。 當您定義中的資源 **.resx**檔案中您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]解決方案、 一組類別和方法會自動產生。 編輯資源檔案中的資源，會比編輯類別和方法更為簡單也較可靠。 運用文字範本，您可以使用相同的方式透過您專屬設計的原始檔產生程式碼。  
   
@@ -64,7 +61,7 @@ ms.locfileid: "49859274"
   
      如果您已將該範本加入至 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案，則語言屬性會是 "`VB`"。  
   
-4.  在檔案結尾加入一些文字。 例如：  
+4.  在檔案結尾加入一些文字。 例如:   
   
     ```  
     Hello, world!  
@@ -128,7 +125,7 @@ ms.locfileid: "49859274"
   
    請注意，陳述式會用 `<#...#>` 括住，單一運算式則用 `<#=...#>` 括住。 如需詳細資訊，請參閱 <<c0> [ 撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)。  
   
-   如果您使用 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 撰寫產生的程式碼，則 `template` 指示詞應該包含 `language="VB"`。 `"C#"` 是預設值。  
+   如果您使用 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 撰寫產生的程式碼，則 `template` 指示詞應該包含 `language="VB"`。 `"C#"` 預設值。  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>偵錯設計階段 T4 文字範本  
  偵錯文字範本：  
@@ -375,6 +372,3 @@ Warning("A warning message");
   
 ## <a name="see-also"></a>另請參閱  
  [撰寫 T4 文字範本的方針](../modeling/guidelines-for-writing-t4-text-templates.md)
-
-
-

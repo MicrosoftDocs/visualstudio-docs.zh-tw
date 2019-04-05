@@ -1,29 +1,24 @@
 ---
-title: 如何： 安裝原始檔控制外掛程式 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：安裝原始檔控制外掛程式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5f151653387c95e77d775bfc9f37cbdfb9f824e7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c9c93c83a6385ad45b3f402867b7f7e734447f98
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741639"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942321"
 ---
-# <a name="how-to-install-a-source-control-plug-in"></a>如何： 安裝原始檔控制外掛程式
+# <a name="how-to-install-a-source-control-plug-in"></a>HOW TO：安裝原始檔控制外掛程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 建立原始檔控制外掛程式包含三個步驟：  
@@ -86,7 +81,7 @@ ms.locfileid: "51741639"
   
      此項目的名稱 （如同 SCCServerName 項目指定的值），提供者的使用者可讀名稱且值為，同樣地，在步驟 1 中建立的子機碼。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[顯示名稱]* = SOFTWARE\\ *[公司名稱]* \\ *[產品名稱]*。  
   
-     例如:   
+     例如：  
   
     |範例登錄項目|範例值|  
     |---------------------------|------------------|  
@@ -125,4 +120,3 @@ ms.locfileid: "51741639"
   
 ## <a name="see-also"></a>另請參閱  
  [快速入門](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
-

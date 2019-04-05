@@ -1,27 +1,22 @@
 ---
 title: 實作運算式評估工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: e9ada7be-845e-4baa-bf8f-e4890e7ba490
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b32ae1580ccba207f7d5e86fc4ac48d38fec7fbf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b075a674d56dc7f1e79fdd03b31601b79f0b3f6e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786830"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941255"
 ---
 # <a name="implementing-an-expression-evaluator"></a>實作運算式評估工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -71,4 +66,3 @@ ms.locfileid: "51786830"
   
 ## <a name="see-also"></a>另請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

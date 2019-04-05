@@ -1,11 +1,8 @@
 ---
-title: 如何： 將活動新增至工具箱 （舊版） |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將活動新增至工具箱 （舊版） |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Toolbox, adding activities
@@ -14,13 +11,13 @@ ms.assetid: b66ea29c-120b-40ba-8a61-c1c8240850fa
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0fafcc260f451c4ead24d7a9dbb72a4db22c0b79
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 51c9d43a1dee05d1b1cb77e50aa2d54d4f4e7f2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249362"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943142"
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>HOW TO：將活動新增至工具箱 (舊版)
 建立舊版工作流程方案時[!INCLUDE[wfd1](../includes/wfd1-md.md)]目標[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]或[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]自訂活動可以加入至工作流程專案，其設計工具會置於**工具箱**的簡單存取權。 您也可以直接將活動新增**工具箱**從動態連結程式庫 (DLL)。  

@@ -1,28 +1,23 @@
 ---
-title: 如何： 登錄編輯程式檔案類型 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：登錄編輯程式檔案類型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register file types
 ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 39b1cde8dec71df9cb85bf737c23c883fbdcd615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 697565600ef37024abde3acd8f2092c690f31e32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777253"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945741"
 ---
-# <a name="how-to-register-editor-file-types"></a>如何： 登錄編輯程式檔案類型
+# <a name="how-to-register-editor-file-types"></a>HOW TO：登錄編輯程式檔案類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 登錄編輯程式檔案類型的最簡單方式是使用隨附的登錄屬性[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]managed 封裝架構 (MPF) 類別。 如果您要實作您的套件，以原生[!INCLUDE[vcprvc](../includes/vcprvc-md.md)]，您也可以撰寫會註冊您的編輯器和相關聯的延伸模組的登錄指令碼。  
@@ -133,4 +128,3 @@ ms.locfileid: "51777253"
     ```  
   
      BscEdit 專案 Resource.h 檔案中定義的 GUID 字串。
-

@@ -1,11 +1,8 @@
 ---
 title: TryCatch 活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.TryCatch.UI
@@ -14,13 +11,13 @@ ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 74b54ef6b82e4f98ab94972b5d9b0155c16060a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e9d8c539d91c95b03f4946e256de7a825a6df7ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240990"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945878"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 活動設計工具
 **TryCatch**活動設計工具會用來建立及設定<xref:System.Activities.Statements.TryCatch>活動。  
@@ -40,7 +37,7 @@ ms.locfileid: "49240990"
 ### <a name="the-trycatch-properties"></a>TryCatch 屬性  
  下表顯示<xref:System.Activities.Statements.TryCatch>內容並描述在設計工具的使用方式。  
   
-|屬性名稱|必要項|使用方式|  
+|屬性名稱|必要|使用量|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.TryCatch> 活動選用的易記名稱。 預設為 TryCatch。|  
 |<xref:System.Activities.Statements.TryCatch.Try%2A>|False|當 <xref:System.Activities.Statements.TryCatch> 執行時，首先執行的活動。|  

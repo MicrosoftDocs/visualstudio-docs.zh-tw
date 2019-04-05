@@ -1,14 +1,9 @@
 ---
-title: 如何： 啟用 ASP.NET 應用程式的偵錯 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：啟用 ASP.NET 應用程式的偵錯 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,15 +17,15 @@ ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c199e03af8a21b3134ae0e2afac7bd9b153be2f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0dbedf6f2bc0832fa3ba54f691cbf713ccb533a9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749123"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939142"
 ---
-# <a name="how-to-enable-debugging-for-aspnet-applications"></a>如何：啟用 ASP.NET 應用程式的偵錯
+# <a name="how-to-enable-debugging-for-aspnet-applications"></a>HOW TO：啟用 ASP.NET 應用程式的偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要啟用偵錯，您必須先在 **專案屬性** 頁面以及應用程式的 web.config 檔案中啟用它。  
@@ -51,7 +46,7 @@ ms.locfileid: "51749123"
 1.  使用任何標準文字編輯器或 XML 剖析器，以開啟 web.config 檔案。  
   
     > [!NOTE]  
-    > 不過，您無法使用網頁瀏覽器從遠端存取檔案。 基於安全性原因，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 會設定 Microsoft IIS，以協助防止瀏覽器直接存取 Web.config 檔案。 如果您嘗試使用瀏覽器來存取組態檔，則會收到 HTTP 存取錯誤 403 (禁止)。  
+    > 不過，您無法使用網頁瀏覽器從遠端存取檔案。 基於安全性原因， [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 會設定 Microsoft IIS，以協助防止瀏覽器直接存取 Web.config 檔案。 如果您嘗試使用瀏覽器來存取組態檔，則會收到 HTTP 存取錯誤 403 (禁止)。  
   
 2.  Web.config 是一個 XML 檔案，因此會包含透過標記所標記的巢狀區段。 找到 `configuration/system.web/compilation` 項目。 如果 compilation 項目不存在，請建立它。  
   
@@ -94,8 +89,3 @@ web.config 檔案應該如下列範例所示。 請注意，configuration 與 sy
   
 ## <a name="see-also"></a>另請參閱  
 [偵錯 ASP.NET 和 AJAX 應用程式](../debugger/debugging-aspnet-and-ajax-applications.md)  
-  
-
-
-
-

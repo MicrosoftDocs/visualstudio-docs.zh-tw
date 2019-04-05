@@ -1,14 +1,9 @@
 ---
 title: 使用 開啟檔案命令顯示檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open File command
 - Open File command
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1f1a2ca2b87cadf118c83501bbd6b6bf78af761a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 286f310765db6fff14f6b134c6107ff1c9e36215
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727269"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945854"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>使用開啟檔案命令顯示檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,11 +51,10 @@ ms.locfileid: "51727269"
   
 4.  IDE 判斷哪一個專案開啟的檔案，因為它會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>該專案的方法。  
   
-5.  專案則會有使用專案特定編輯器] 或 [標準編輯器開啟檔案的選項。 如需詳細資訊，請參閱 <<c0> [ 如何： 開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)並[如何： 開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)分別。  
+5.  專案則會有使用專案特定編輯器] 或 [標準編輯器開啟檔案的選項。 如需詳細資訊，請參閱[如何：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)和[How to:開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)分別。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 [開啟] 命令顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)   
- [如何： 開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)   
- [如何︰開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)
-
+ [如何：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)   
+ [如何：開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)

@@ -1,14 +1,9 @@
 ---
 title: 編輯後繼續在 Visual Basic 中的不支援的編輯 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 9b8fdc41-a193-49ad-ad72-dfcadd46f4b3
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc6e7a5d1d72464849bff20be066ea70e8264623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b22f4cdc9fa4bf3816b1b5644eee34279e20da1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787896"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58946099"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Visual Basic 編輯後繼續中不支援的編輯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ ms.locfileid: "51787896"
  如果您必須進行任何不支援的變更，則必須先停止偵錯，進行變更，然後開始新的偵錯工作階段。  
   
 ###  <a name="BKMK_MethodandPropertyBodyEdits"></a> 方法和屬性主體編輯  
- **不支援靜態區域變數變更**： 新增或更新本機變數，或如果，會導致編譯錯誤，請移除靜態區域變數。  
+ **不支援靜態區域變數變更**:新增或更新本機變數，或如果該移除靜態區域變數會導致編譯錯誤。  
   
- **不支援變更泛型**： 不支援變更泛型方法本身或泛型方法主體。 可以加入、刪除或變更泛型類型的具現化或對現有泛型方法的呼叫。  
+ **不支援變更泛型**:不支援對泛型方法本身或泛型方法主體進行變更。 可以加入、刪除或變更泛型類型的具現化或對現有泛型方法的呼叫。  
   
  **其他不支援的變更**  
   
@@ -94,7 +89,7 @@ ms.locfileid: "51787896"
   
 -   編輯任何使用泛型的方法。  
   
--   變更非私用屬性或方法的簽章或傳回型別。  
+-   變更非私用屬性或方法的簽章或傳回類型。  
   
 -   覆寫或遮蔽基底類別中的成員。  
   
@@ -223,8 +218,5 @@ ms.locfileid: "51787896"
 -   變更欄位類型。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 套用在中斷模式中的編輯，以編輯後繼續](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
+ [如何：套用在中斷模式中的編輯，以編輯後繼續](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [編輯後繼續 (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

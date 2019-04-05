@@ -1,26 +1,21 @@
 ---
 title: SetNotificationForWaitCompletion 方法 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - SetNotificationForWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: da149c9a-20f4-4543-a29e-429c8c1d2e19
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2ea475696342808d207fc7283ee07f6d4c09e43f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 874e31c331f16e760e030f337dda715473b77af8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734607"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930206"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion 方法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,4 +46,3 @@ internal void SetNotificationForWaitCompletion(bool enabled)
   
 ## <a name="see-also"></a>另請參閱  
  [Task 類別](../../extensibility/debugger/task-class-internal-members.md)
-

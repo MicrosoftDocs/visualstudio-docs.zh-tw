@@ -1,11 +1,8 @@
 ---
-title: 如何： 建立工作流程專案 （舊版） |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立工作流程專案 （舊版） |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflow projects, creating
@@ -14,13 +11,13 @@ ms.assetid: 32299555-662c-469d-a90d-89f4700dc78c
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 15be712dd0bd1cf2a5f91f566860709fa49e6709
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f9c67f16e81bd0176ec25aa490c2119267b94159
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196615"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930521"
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>HOW TO：建立工作流程專案 (舊版)
 請依照這些步驟來建立以 [!INCLUDE[wf](../includes/wf-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標的 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 專案。 這個程序會使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 所提供的舊版 [!INCLUDE[vs2010](../includes/vs2010-md.md)]。  

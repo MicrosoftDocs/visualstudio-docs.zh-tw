@@ -1,14 +1,9 @@
 ---
 title: '&lt;fileAssociation&gt;項目 （ClickOnce 應用程式） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e827f0829cfe0436f491196b7f1dab99ac87c4fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4b31ac34627b244cb61b6fdb5c6ca214675ec045
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234451"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941792"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt;項目 （ClickOnce 應用程式）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +41,14 @@ ms.locfileid: "49234451"
 ```  
   
 ## <a name="elements-and-attributes"></a>項目和屬性  
- `fileAssociation` 項目是選擇性的。 項目具有下列屬性。  
+ `fileAssociation` 項目是選擇性的。 此元素具有下列屬性。  
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`extension`|必要。 要與應用程式相關聯的副檔名。|  
-|`description`|必要。 Shell 所使用的檔案類型的描述。|  
-|`progid`|必要。 可唯一識別檔案類型的名稱。|  
-|`defaultIcon`|必要。 指定要用於與此延伸模組檔案的圖示。 必須使用指定的圖示檔[\<檔案 > 項目](../deployment/file-element-clickonce-application.md)內[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)，包含這個項目。|  
+|`extension`|必要項。 要與應用程式相關聯的副檔名。|  
+|`description`|必要項。 Shell 所使用的檔案類型的描述。|  
+|`progid`|必要項。 可唯一識別檔案類型的名稱。|  
+|`defaultIcon`|必要項。 指定要用於與此延伸模組檔案的圖示。 必須使用指定的圖示檔[\<檔案 > 項目](../deployment/file-element-clickonce-application.md)內[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)，包含這個項目。|  
   
 ## <a name="remarks"></a>備註  
  此元素必須包含的 XML 命名空間參考"urn: schemas-microsoft-microsoft-com:clickonce.v1"。 如果`<fileAssociation>`項目時，它必須緊跟在後`<application>`項目在其父代[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)。  
@@ -88,6 +83,3 @@ ms.locfileid: "49234451"
   
 ## <a name="see-also"></a>另請參閱  
  [ndptecclick](../deployment/clickonce-application-manifest.md)
-
-
-

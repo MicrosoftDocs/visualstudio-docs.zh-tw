@@ -1,12 +1,9 @@
 ---
 title: 定義與安裝模型擴充功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: 82a58dc5-c7cf-4521-a6da-7ff09cd0de9d
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f7895916cc4ee877c53b056f703d8e46b64b409
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 415d63717e5702b0faa1b49d1d0d18ebbf773b8f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805563"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941198"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>定義和安裝模型擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,8 +76,8 @@ ms.locfileid: "51805563"
         |-|-|  
         |**型別** =|**Microsoft.VisualStudio.MefComponent**|  
         |**Source** =|**目前的方案中的專案**|  
-        |**專案** =|*您的類別庫專案*|  
-        |**嵌入此資料夾** =|*（空白）*|  
+        |**Project** =|*您的類別庫專案*|  
+        |**嵌入此資料夾** =|*(empty)*|  
   
          對於其他元件類型，請參閱下一節中的連結。  
   
@@ -141,13 +138,10 @@ ms.locfileid: "51805563"
   
    在很少見的情況下，故障的擴充功能無法載入並且會在錯誤視窗中建立報告，但不會顯示在擴充管理員中。 在此情況下，您可以移除延伸模組，從下列位置刪除檔案所在 *%localappdata%* 通常*DriveName*: \Users\\*的使用者名稱*\AppData\Local:  
   
-   *%Localappdata%* **\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ## <a name="see-also"></a>另請參閱  
  [定義要擴充 UML 的設定檔](../modeling/define-a-profile-to-extend-uml.md)   
  [定義自訂模型工具箱項目](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)   
  [在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-
-

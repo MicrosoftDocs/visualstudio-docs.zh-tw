@@ -1,14 +1,9 @@
 ---
 title: 移除參數重構 (C#) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.remove
 dev_langs:
@@ -21,13 +16,13 @@ ms.assetid: f4fc3265-0ef8-4398-a691-c338178697a6
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: c9559deda5c5cdc60adc10246196fb66646cfee5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8962dd95aa46ae75a2d214738e7713ae9da42534
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284384"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941957"
 ---
 # <a name="remove-parameters-refactoring-c"></a>移除參數重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

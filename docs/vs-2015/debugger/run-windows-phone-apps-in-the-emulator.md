@@ -1,14 +1,9 @@
 ---
 title: 在模擬器中執行 Windows Phone 應用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e7035e4a77b67fb5207f878c8e0650236afda7c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc85d1a38143e626fc659979eea727a0b41ef00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739977"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939845"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>在模擬器中執行 Windows Phone 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Phone 模擬器提供一個虛擬化環境，在此環境中，就算沒有實體裝置，您還是可以在電腦上偵錯和測試 Windows Phone 應用程式。 您可以模擬常見觸控和旋轉事件，以及選擇您要模擬的實體螢幕大小和解析度。 您也可以測試許多常用功能，例如位置、網路、通知、感應器、加速計和選擇性的 SD 記憶卡。  
   
- 如需您可以在模擬器中測試之功能的詳細資訊，請參閱 <<c0> [ 在 Windows Phone 模擬器中測試應用程式功能](http://msdn.microsoft.com/en-us/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1)。  
+ 如需您可以在模擬器中測試之功能的詳細資訊，請參閱 <<c0> [ 在 Windows Phone 模擬器中測試應用程式功能](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1)。  
   
  模擬器與 Visual Studio 搭配使用，能提供讓您用來設計、開發、偵錯和測試 Windows Phone 應用程式的完整環境。  
   
@@ -225,6 +220,3 @@ Windows Phone 模擬器提供一個虛擬化環境，在此環境中，就算沒
 -   在 Visual Studio 中指定版本組建。 指定版本組建之後，請選取，您的應用程式啟動**Deploy _[應用程式名稱]_** 連結**建置**功能表。  
   
 -   或者，您可以註解化 app.xaml.cs 或 app.xaml.vb 檔案中將 `EnableFrameRateCounter` 的值設為 `true` 的程式碼行。
-
-
-

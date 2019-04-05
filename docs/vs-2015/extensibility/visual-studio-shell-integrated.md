@@ -1,27 +1,22 @@
 ---
 title: Visual Studio Shell （整合模式） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, integrated mode features
 - Shell [Visual Studio], integrated mode features
 ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3eb0c8dd0588e1af9b3aad500c8bc9f899b44513
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765285"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "59000871"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell （整合模式）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,10 +39,10 @@ Visual Studio 整合式 shell 包含整合式的開發環境 (IDE)、 偵錯工�
 |IDE|<ul><li>設定<br /><br /> <ul><li>建立設定</li><li>匯入和匯出設定</li><li>重設設定</li></ul></li><li>**工具箱**整合</li><li>**工作清單**整合</li><li>說明整合</li><li>**選項**對話方塊</li><li>字型和色彩管理</li><li>**輸出**視窗</li><li>**命令**視窗</li><li>視窗管理</li><li>命令、 功能表和索引鍵繫結</li><li>特定領域語言 (DSL) 執行階段</li></ul>|  
 |專案系統和專案類型|-解決方案和解決方案資料夾<br />解決方案組態管理員<br />項目管理<br />-單一專案和多專案解決方案<br />應用程式的設計工具 （簡化的專案屬性）<br />新增 Web 參考<br />新增服務參考<br />-單一專案<br />-網站專案類型<br />-Web 應用程式專案|  
 |組建|-在 IDE 中的自訂建置步驟<br />-先行編譯的智慧財產權 (IP) 保護<br />-程式碼簽署<br />     MSBuild|  
-|編輯器|-程式碼瀏覽工具合併的尋找、 來源定義 （繼承）<br />-程式碼巡覽<br />IntelliSense<br />-智慧標籤<br />-重構<br />-美化排列<br />IntelliSense 篩選<br />-   **程式碼定義**視窗|  
+|編輯器|-程式碼瀏覽工具合併的尋找、 來源定義 （繼承）<br />-程式碼巡覽<br />-   IntelliSense<br />-   SmartTags<br />-重構<br />-美化排列<br />IntelliSense 篩選<br />-   **程式碼定義**視窗|  
 |Designer|-Windows Presentation Foundation 設計工具<br />-Windows Form 設計工具<br />-Web 設計工具] 和 [HTML 編輯器|  
 |資料|-   **伺服器總管**(簡化： 僅限資料)。 請參閱「注意 1」。<br />-   **資料來源**視窗<br />-完整的資料控制項<br />XML 編輯器<br />資料繫結至本機資料來源 (。MDF 或。MDB)<br />資料繫結至物件<br />資料繫結至 Web 服務<br />資料繫結至本機資料庫伺服器<br />資料繫結至遠端資料庫伺服器<br />遠端資料的 DDL 工具<br />-   **伺服器總管**擴充性 ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]範例)|  
-|偵錯工具|-本機偵錯。 請參閱附註 2。<br />-Managed 偵錯<br />-本機偵錯<br />附加至本機處理程序<br />附加至遠端程序<br />匿名委派<br />-應用程式定義域<br />-ASPX 偵錯<br />-屬性<br />-在函式評估期間中斷<br />-中斷點<br />中斷點條件約束<br />-呼叫堆疊<br />-   **命令**視窗<br />-跨執行緒偵錯<br />資料提示<br />資料視覺化檢視<br />-Managed 偵錯助理 (Mda) 偵錯工具支援<br />-類型轉送子偵錯工具支援<br />-OTB DTEEvents 支援<br />-JMC 步進<br />偵錯 AppID 測試 (DBGCLR)<br />偵錯設定檔<br />-偵錯工具的工具和選項<br />-偵錯迭代器<br />-設計階段運算式評估<br />-C# 運算式評估工具<br />-反組譯碼<br />-編輯後繼續<br />運算式評估工具 windows (區域變數、 監看式，[自動變數])<br />-例外狀況協助程式<br />例外狀況<br />-執行<br />-   泛型<br />-取得正確的來源<br />-HPC/叢集偵錯<br />整合多國語言偵錯<br />-InterOp 偵錯<br />--Just-in-time 偵錯<br />-本機偵錯<br />-Managed 偵錯<br />-手動控制項 （[處理序] 視窗）<br />記憶體內部<br />-小型傾印支援<br />-模組<br />-多處理序偵錯<br />原生偵錯<br />-新的偵錯引擎支援<br />-最佳化的程式碼偵錯<br />-篩選的輸出視窗<br />-處理序裝載進行受控偵錯<br />-處理序<br />-快速監看式<br />-註冊<br />在堆疊中註冊<br />-遠端偵錯<br />-傳回值<br />-指令碼偵錯<br />原始碼服務支援<br />-安全性<br />---並存<br />-SQL<br />-符號伺服器<br />追蹤點<br />執行緒<br />-視覺效果<br />可延伸樣式表語言轉換 (XSLT) 偵錯工具|  
+|偵錯工具|-本機偵錯。 請參閱附註 2。<br />-Managed 偵錯<br />-本機偵錯<br />附加至本機處理程序<br />附加至遠端程序<br />匿名委派<br />-應用程式定義域<br />-ASPX 偵錯<br />-屬性<br />-在函式評估期間中斷<br />-中斷點<br />中斷點條件約束<br />-呼叫堆疊<br />-   **命令**視窗<br />-跨執行緒偵錯<br />資料提示<br />資料視覺化檢視<br />-Managed 偵錯助理 (Mda) 偵錯工具支援<br />-類型轉送子偵錯工具支援<br />-OTB DTEEvents 支援<br />-   JMC Stepper<br />偵錯 AppID 測試 (DBGCLR)<br />偵錯設定檔<br />-偵錯工具的工具和選項<br />-偵錯迭代器<br />-設計階段運算式評估<br />-C# 運算式評估工具<br />-反組譯碼<br />-編輯後繼續<br />運算式評估工具 windows (區域變數、 監看式，[自動變數])<br />-例外狀況協助程式<br />例外狀況<br />-執行<br />-   泛型<br />-取得正確的來源<br />-HPC/叢集偵錯<br />整合多國語言偵錯<br />-InterOp 偵錯<br />--Just-in-time 偵錯<br />-本機偵錯<br />-Managed 偵錯<br />-手動控制項 （[處理序] 視窗）<br />記憶體內部<br />-小型傾印支援<br />-模組<br />-多處理序偵錯<br />原生偵錯<br />-新的偵錯引擎支援<br />-最佳化的程式碼偵錯<br />-篩選的輸出視窗<br />-處理序裝載進行受控偵錯<br />-處理序<br />-快速監看式<br />-註冊<br />在堆疊中註冊<br />-遠端偵錯<br />-傳回值<br />-指令碼偵錯<br />原始碼服務支援<br />-安全性<br />---並存<br />-   SQL<br />-符號伺服器<br />追蹤點<br />執行緒<br />-視覺效果<br />可延伸樣式表語言轉換 (XSLT) 偵錯工具|  
 |64 位元支援|-64 位元偵錯 managed 和原生程式碼中，所有語言<br />-x64 原生支援|  
 |原始程式碼控制 (SCC)|-基本 SCC 整合。 請參閱「注意 3」。<br />-工具和選項，驗證|  
 |擴充性|-使用 Vspackage 和 MEF 元件|  
@@ -75,7 +70,7 @@ Visual Studio 整合式 shell 包含整合式的開發環境 (IDE)、 偵錯工�
   
 -   類別設計工具  
   
--   先佔式 DotFuscator  
+-   PreEmptive Protection - Dotfuscator  
   
 -   語言功能  
   

@@ -1,12 +1,9 @@
 ---
-title: UML 循序圖： 方針 |Microsoft Docs
-ms.custom: ''
+title: UML 循序圖：指導方針 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.sequencediagram.linktosequencediagram
 - vs.teamarch.logicalclassdiagram.createlifeline
@@ -25,15 +22,15 @@ ms.assetid: 5990ef7c-ba60-4e20-a36d-e29c1fa6c8bb
 caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56ecc5c54611f94cdbfb0f08ec54a4e0722f0cbd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: efdb6b30785820ae7bef852988628efde5b517b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803626"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941876"
 ---
-# <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
+# <a name="uml-sequence-diagrams-guidelines"></a>UML 循序圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual Studio 中，您可以繪製*循序圖*顯示互動。 互動是類別、元件、子系統或行動之一般執行個體間的一連串訊息。  
@@ -60,9 +57,9 @@ ms.locfileid: "51803626"
 ##  <a name="Using"></a> 使用 UML 循序圖  
  您可以將循序圖用於不同程式詳細程度的各種用途。 繪製循序圖的一般情況如下：  
   
-- 如果您的使用案例圖彙總系統使用者和其目標，則可以繪製循序圖來描述系統的主要元件如何互動以滿足每個使用案例的目標。 如需詳細資訊，請參閱 < [UML 使用案例圖： 方針](../modeling/uml-use-case-diagrams-guidelines.md)。  
+- 如果您的使用案例圖彙總系統使用者和其目標，則可以繪製循序圖來描述系統的主要元件如何互動以滿足每個使用案例的目標。 如需詳細資訊，請參閱[UML 使用案例圖：指導方針](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
-- 如果您已識別到達元件之介面的訊息，則可以繪製循序圖來描述元件的內部組件如何互動以達成每個內送訊息所需的結果。 如需詳細資訊，請參閱 < [UML 元件圖： 方針](../modeling/uml-component-diagrams-guidelines.md)。  
+- 如果您已識別到達元件之介面的訊息，則可以繪製循序圖來描述元件的內部組件如何互動以達成每個內送訊息所需的結果。 如需詳細資訊，請參閱[UML 元件圖：指導方針](../modeling/uml-component-diagrams-guidelines.md)。  
   
   繪製循序圖具有數個優點：  
   
@@ -80,10 +77,10 @@ ms.locfileid: "51803626"
  您也可以在 UML 類別圖中描述參數類型以及生命線之間傳送之訊息中所使用的傳回值。  
   
 #### <a name="use-case-details"></a>使用案例詳細資料  
- 使用案例代表使用者目標，以及達成目標的一連串步驟。 您可以使用數種方式來描述這一連串的步驟。 其中一個選項是繪製循序圖，以顯示使用者與系統主要元件之間的互動。 如需詳細資訊，請參閱 < [UML 使用案例圖： 方針](../modeling/uml-use-case-diagrams-guidelines.md)。  
+ 使用案例代表使用者目標，以及達成目標的一連串步驟。 您可以使用數種方式來描述這一連串的步驟。 其中一個選項是繪製循序圖，以顯示使用者與系統主要元件之間的互動。 如需詳細資訊，請參閱[UML 使用案例圖：指導方針](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
 ##  <a name="BasicSteps"></a> 繪製循序圖的基本步驟  
- 如在循序圖上項目的完整清單，請參閱[UML 循序圖： 參考](../modeling/uml-sequence-diagrams-reference.md)。  
+ 如在循序圖上項目的完整清單，請參閱[UML 循序圖：參考資料](../modeling/uml-sequence-diagrams-reference.md)。  
   
 > [!NOTE]
 >  如何建立任何模型圖的詳細的步驟所述[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
@@ -118,7 +115,7 @@ ms.locfileid: "51803626"
 3.  若要顯示來自未知事件來源 (9) 或廣播給未知收件者 (10) 的訊息，請繪製圖表上傳送至空白空間或從中接收的非同步訊息。 這些訊息稱為*找到訊息*(9) 和*遺失訊息*(10)。  
   
     > [!NOTE]
-    >  若要移動具有遺失或尋訊息的生命線群組，請遵循下列步驟來選取生命線，然後移動它們： 繪製矩形套住這些生命線，或按住不放**CTRL**鍵同時按一下每個生命線。 如果您使用**全選**或是**CTRL**+**A**來選取所有生命線，然後移動它們，任何遺失或尋附加至這些生命線的訊息將不會移動。 如果發生此案例，則您可以分別移動這些訊息。  
+    >  若要移動具有遺失或尋得訊息的生命線群組，請遵循以下步驟來選取生命線，然後移動它們：繪製矩形套住這些生命線，或按住不放**CTRL**鍵同時按一下每個生命線。 如果您使用**全選**或是**CTRL**+**A**來選取所有生命線，然後移動它們，任何遺失或尋附加至這些生命線的訊息將不會移動。 如果發生此案例，則您可以分別移動這些訊息。  
   
 4.  為送至相同元件或系統的每個主要訊息，繪製循序圖。  
   
@@ -446,13 +443,10 @@ ms.locfileid: "51803626"
 5.  若要將新訊息加入片段中，請使用訊息工具，或進行複製並貼上。  
   
 ## <a name="see-also"></a>另請參閱  
- [UML 循序圖： 參考](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML 順序圖表：參考](../modeling/uml-sequence-diagrams-reference.md)   
  [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)   
- [UML 使用案例圖： 參考](../modeling/uml-use-case-diagrams-reference.md)   
- [UML 類別圖： 參考](../modeling/uml-class-diagrams-reference.md)   
- [UML 元件圖： 參考](../modeling/uml-component-diagrams-reference.md)   
- [UML 元件圖： 參考](../modeling/uml-component-diagrams-reference.md)   
- [影片： 使用循序圖草擬互動](http://go.microsoft.com/fwlink/?LinkId=201113)
-
-
-
+ [UML 使用案例圖表：參考](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)   
+ [UML 元件圖表：參考](../modeling/uml-component-diagrams-reference.md)   
+ [UML 元件圖表：參考](../modeling/uml-component-diagrams-reference.md)   
+ [影片：使用循序圖草擬互動](http://go.microsoft.com/fwlink/?LinkId=201113)

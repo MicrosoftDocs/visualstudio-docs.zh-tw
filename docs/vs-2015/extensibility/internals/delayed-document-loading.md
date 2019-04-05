@@ -1,24 +1,19 @@
 ---
 title: 延遲載入文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 94d79af00fced81dc7da38f323598ade926d26f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e3f3948756022c71e54699822715cf9a5b6d7896
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940149"
 ---
 # <a name="delayed-document-loading"></a>已延遲載入文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,4 +65,3 @@ ms.locfileid: "51755480"
  沒有任何可見的提示來指出是否已初始化文件，因此它可能難以找出初始化時，是否要強制您的延伸模組。 您可以設定登錄機碼，更輕鬆驗證，因為這會導致文字並未完全初始化每個文件的標題`[Stub]`標題中。  
   
  在 [ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**，將**StubTabTitleFormatString**來 **{0} [Stub]**。
-

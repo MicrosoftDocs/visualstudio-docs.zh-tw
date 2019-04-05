@@ -1,14 +1,9 @@
 ---
 title: 偵錯版本的堆積配置函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crt
 dev_langs:
@@ -29,13 +24,13 @@ ms.assetid: 91748bdc-f4cd-4d8b-ab98-0493dab7ed0d
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f7a649d8afd3ae7bf7d6d9abff98734ac96e05cd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 26d81d7b2aaa3bd8661e0da4b1590e9c8c0d0191
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802088"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940364"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>堆積配置函式的偵錯版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +53,3 @@ C 執行階段程式庫包含堆積配置 (Heap Allocation) 函式的特殊偵�
   
 ## <a name="see-also"></a>另請參閱  
  [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)
-
-
-

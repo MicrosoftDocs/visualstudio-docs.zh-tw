@@ -1,13 +1,8 @@
 ---
 title: '[自動變數] 和 [區域變數] Windows |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
@@ -25,13 +20,13 @@ ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 51e62df0fb98a9c7b04b09b3e58fb52828e1bd5a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 612ed741e373b27c3564c185cc3e9bacffcb7739
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942060"
 ---
 # <a name="autos-and-locals-windows"></a>[自動變數] 和 [區域變數] 視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,8 +148,3 @@ private static int subtractVars(int i, int j)
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具視窗](../debugger/debugger-windows.md)
-
-
-
-
-

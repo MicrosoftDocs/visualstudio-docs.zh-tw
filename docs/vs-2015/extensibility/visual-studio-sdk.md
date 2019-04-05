@@ -1,14 +1,9 @@
 ---
-title: Visual Studio SDK |Microsoft Docs
-ms.custom: ''
+title: Visual Studio SDK | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSSDK.v90.StartPage
 helpviewer_keywords:
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e64506ca544dd3811864358f9c928f6893dc8448
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8184ae3085c6366256f37b3e5a034b70fcc3cd7a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758977"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000618"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Visual Studio SDK 可協助您擴充 Visual Studio 功能或整合到 Visual Stu
   
 - 加入自訂的專案類型  
   
-- 接觸上百萬名開發人員透過 Visual Studio 組件庫  
+- 接觸上百萬名開發人員從 Visual Studio marketplace  
   
   如果您從未撰寫過 Visual Studio 擴充功能之前，您應該會發現這些功能以及在詳細資訊[開始開發 Visual Studio 擴充功能](../extensibility/starting-to-develop-visual-studio-extensions.md)。  
   
@@ -61,7 +56,7 @@ Visual Studio SDK 可協助您擴充 Visual Studio 功能或整合到 Visual Stu
  善用[映像服務與資料庫目錄](../extensibility/image-service-and-catalog.md)絕佳的映像管理和支援高 DPI 和佈景主題。  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>尋找和安裝現有的 Visual Studio 擴充功能  
- 您可以找到 Visual Studio 擴充功能**擴充功能和更新** 對話方塊上的**工具**功能表。 如需詳細資訊，請參閱[尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)。 您也可以找到擴充功能中的[Visual Studio 組件庫](https://visualstudiogallery.msdn.microsoft.com/)  
+ 您可以找到 Visual Studio 擴充功能**擴充功能和更新** 對話方塊上的**工具**功能表。 如需詳細資訊，請參閱[尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)。 您也可以找到擴充功能中的[Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
   
 ## <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 參考  
  您可以尋找在 Visual Studio SDK API 參考[Visual Studio SDK 參考](../extensibility/visual-studio-sdk-reference.md)。  
@@ -82,8 +77,8 @@ Visual Studio SDK 可協助您擴充 Visual Studio 功能或整合到 Visual Stu
   
 ## <a name="see-also"></a>另請參閱  
  [Creating an Extension with 功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)   
- [如何： 將擴充性專案移轉至 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
- [常見問題集： 將增益集轉換成 VSPackage 擴充功能](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [如何：將擴充性專案移轉至 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
+ [常見問題集：將增益集轉換成 VSPackage 擴充功能](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [管理多個執行緒以 Managed 程式碼](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)   
  [將命令加入至工具列](../extensibility/adding-commands-to-toolbars.md)   
@@ -103,4 +98,3 @@ Visual Studio SDK 可協助您擴充 Visual Studio 功能或整合到 Visual Stu
  [Visual Studio SDK 支援](../extensibility/support-for-the-visual-studio-sdk.md)   
  [封存](../extensibility/archive.md)   
  [Visual Studio SDK 參考](../extensibility/visual-studio-sdk-reference.md)
-

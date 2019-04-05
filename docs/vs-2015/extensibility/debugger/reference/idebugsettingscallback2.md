@@ -1,26 +1,21 @@
 ---
-title: IDebugSettingsCallback2 |Microsoft Docs
-ms.custom: ''
+title: IDebugSettingsCallback2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2 interface
 ms.assetid: 7e525d0b-7d7a-4d1c-8b78-e1398fa922f2
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 40198e146cc4a1a48c30375d568594dcac424070
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c3e962c00d6c9230cab765ed56e7607cbfd91765
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722064"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944096"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,11 +47,11 @@ IDebugSettingsCallback2D : IUnknown
 |[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|擷取值字串，指定其名稱的度量。|  
   
 ## <a name="requirements"></a>需求  
- 標頭： Msdbg.h  
+ 標頭：Msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>範例  
  下列範例示範使用的函式**IDebugSettingsCallback2**物件做為參數。  
@@ -79,4 +74,3 @@ HRESULT GetDebugSettingsCallback (IDebugSettingsCallback2 **ppCallback)
     return ( hRes );  
 }  
 ```
-
