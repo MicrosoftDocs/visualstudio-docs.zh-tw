@@ -1,27 +1,22 @@
 ---
 title: 自訂色彩的項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 272d16b9f5f8fb33b68c911c5e7bd27923f4c2db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: e210d8c03d3e99cf1e37608f5b65d5a4ab0656f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796944"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941412"
 ---
 # <a name="custom-colorable-items"></a>自訂可設定色彩的項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "51796944"
 > [!CAUTION]
 >  您應該避免與現有的色彩項目的名稱發生衝突的色彩項目的名稱包含語言名稱。 如果您變更其中一個您可設定色彩的項目名稱，在開發期間，您必須重設快取建立第一次存取您可設定色彩的項目。 您可以重設使用 CreateExpInstance 工具，它會隨 Visual Studio SDK，通常在目錄中的實驗性快取  
 >   
->  **C:\Program 檔案 (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+>  **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
 >  若要重設快取，請呼叫`CreateExpInstance /Reset`。 如需 CreateExpInstance 的詳細資訊，請參閱[CreateExpInstance Utility](../../extensibility/internals/createexpinstance-utility.md)。  
   
@@ -76,5 +71,4 @@ ms.locfileid: "51796944"
  [自訂編輯器中的語法著色](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [舊版語言服務中的語法著色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [實作語法著色](../../extensibility/internals/implementing-syntax-coloring.md)   
- [如何︰使用內建可設定色彩的項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
-
+ [如何：使用內建可設定色彩的項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

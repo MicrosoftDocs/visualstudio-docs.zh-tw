@@ -1,14 +1,9 @@
 ---
-title: IDebugBreakpointResolution2::GetBreakpointType |Microsoft Docs
-ms.custom: ''
+title: IDebugBreakpointResolution2::GetBreakpointType | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugBreakpointResolution2::GetBreakpointType
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 2b707fb9-f703-4c78-91bf-7434f57790a0
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c29438c95a0b207fbde223b91b6ec108c359fc12
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b08e031b2a1e3fb5f7f024d43e36cad85eaa0cfa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751463"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929943"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -93,4 +88,3 @@ HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
  [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)   
  [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)   
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
-

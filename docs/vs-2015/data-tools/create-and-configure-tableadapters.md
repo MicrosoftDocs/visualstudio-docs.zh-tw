@@ -1,12 +1,9 @@
 ---
 title: 建立和設定 Tableadapter |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +19,13 @@ ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03cb6c67b4887762885a0cb920eb928359b4708b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 24f53af16bcab0e3ff631a7c264f139f94d92232
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917644"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930581"
 ---
 # <a name="create-and-configure-tableadapters"></a>建立和設定 TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +52,7 @@ Tableadapter 會提供您的應用程式與資料庫之間的通訊。 它們連
   
  如果您從 [工具箱] 拖曳新的 TableAdapter 時**Dataset 設計工具**焦點，精靈提示您指定 TableAdapter 應該連接哪一個資料來源，以及什麼種類的命令應該用來與通訊資料庫、 SQL 陳述式或預存程序。 如果您要設定與資料來源相關聯的 TableAdapter，就不會看到這。  
   
--   使用**建立將更新傳送至資料庫的直接方法**選項相當於設定`GenerateDBDirectMethods`屬性設為 true。 原始的 SQL 陳述式不會提供足夠的資訊或查詢不是可更新的查詢時，此選項為無法使用。 發生這種情況可以例如，在**聯結**查詢及傳回單一 （純量） 值的查詢。  
+-   使用**建立將更新傳送至資料庫的直接方法**選項相當於設定`GenerateDBDirectMethods`屬性設為 true。 當原始 SQL 陳述式未提供足夠的資訊，或查詢不是可更新的查詢時，就無法使用此選項。 發生這種情況可以例如，在**聯結**查詢及傳回單一 （純量） 值的查詢。  
   
 -   您可以選擇在基礎資料庫中建立新的預存程序，如果您有正確的權限的資料庫。 如果您沒有這些權限，這不是一個選項。  
   
@@ -79,7 +76,7 @@ Tableadapter 會提供您的應用程式與資料庫之間的通訊。 它們連
   
 #### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>若要開始使用新的查詢的 TableAdapter 查詢組態精靈  
   
-1.  開啟您的資料集，在**Dataset 設計工具**。  
+1.  在 **DataSet 設計工具**中開啟資料集。  
   
 2.  如果您要建立新的查詢，拖曳**查詢**物件**資料集**索引標籤**工具箱**拖曳至<xref:System.Data.DataTable>，或選取**加入查詢**TableAdapter 的快顯功能表中。 您也可以拖曳**查詢**物件上的空白區域**Dataset 設計工具**，這會建立有關聯的 TableAdapter <xref:System.Data.DataTable>。 這些查詢只能傳回單一 （純量） 值或執行的更新、 插入或刪除對資料庫的命令。  
   
@@ -116,4 +113,3 @@ Tableadapter 會提供您的應用程式與資料庫之間的通訊。 它們連
   
 ## <a name="see-also"></a>另請參閱  
  [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)
-

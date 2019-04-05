@@ -1,26 +1,21 @@
 ---
 title: 撰寫。Vsct 檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 50dc50aee377a4685527e57dc2af5d9946639946
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bf3d9acd493cd10a8d014b4479684a0107cb8740
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772166"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "59000516"
 ---
 # <a name="authoring-vsct-files"></a>撰寫。Vsct 檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,14 +25,14 @@ ms.locfileid: "51772166"
  對於新專案，我們建議您使用 Visual Studio Package 範本，因為它會產生.vsct 檔，根據您的選擇，已經有必要的項目，功能表命令、 工具視窗，或自訂編輯器。 您可以修改此.vsct 檔案，以符合需求的 VSPackage。 如需如何修改.vsct 檔的詳細資訊，請參閱中的範例[擴充的功能表和命令](../../extensibility/extending-menus-and-commands.md)。  
   
 ## <a name="authoring-the-file"></a>撰寫檔案  
- 撰寫.vsct 檔以下列階段： 建立檔案和資源的結構、 宣告的 UI 項目，將 UI 項目放在 IDE 中，並加入任何特殊的行為。  
+ 這些階段中撰寫.vsct 檔案：建立檔案和資源的結構、 宣告的 UI 項目，將 UI 項目放在 IDE 中，並加入任何特殊的行為。  
   
 ### <a name="file-structure"></a>檔案結構  
  在.vsct 檔的基本結構[CommandTable](../../extensibility/commandtable-element.md)根項目，其中包含[命令](../../extensibility/commands-element.md)項目和[符號](../../extensibility/symbols-element.md)項目。  
   
 ##### <a name="to-create-the-file-structure"></a>若要建立的檔案結構  
   
-1.  .vsct 將檔案新增至您的專案中的步驟[How to： 建立。Vsct 檔案](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。  
+1.  .vsct 將檔案新增至您的專案中的步驟[How to:建立。Vsct 檔案](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。  
   
 2.  新增必要的命名空間，以`CommandTable`項目，如下列範例所示。  
   
@@ -194,7 +189,7 @@ ms.locfileid: "51772166"
   
    - TextMenuUseButton  
   
-   - 文字變更  
+   - TextChanges  
   
    - TextOnly  
   
@@ -208,7 +203,7 @@ ms.locfileid: "51772166"
   
    - CommandWellOnly  
   
-   - 篩選鍵  
+   - FilterKeys  
   
    - NoAutoComplete  
   
@@ -244,4 +239,3 @@ ms.locfileid: "51772166"
  [擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)   
  [Visual Studio 命令資料表 (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)
-

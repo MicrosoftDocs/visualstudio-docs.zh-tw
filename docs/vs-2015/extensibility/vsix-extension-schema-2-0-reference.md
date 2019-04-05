@@ -1,27 +1,22 @@
 ---
 title: VSIX 延伸結構描述 2.0 參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0121f2d9d4a29942449b180c63c450d4a49b31f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9cb9672696e0e1294fdd396b59fadd1c50fd697f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785927"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930186"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 延伸模組結構描述 2.0 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,11 +47,11 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
   
 -   `<Identity>` -這會定義此套件的識別資訊，並包含下列屬性：  
   
-    -   `Id` – 此屬性必須是其作者所選封裝的唯一識別碼。 名稱必須符合規定的 CLR 型別是命名空間的相同方式： Company.Product.Feature.Name。 `Id`屬性會限制為 100 個字元。  
+    -   `Id` – 此屬性必須是其作者所選封裝的唯一識別碼。 CLR 型別是命名空間的相同方式，應該限定名稱：Company.Product.Feature.Name. `Id`屬性會限制為 100 個字元。  
   
-    -   `Version` – 這會定義此套件和其內容的版本。 這個屬性會遵循 CLR 組件版本控制格式： Major.Minor.Build.Revision (1.2.40308.00)。 具有較高的版本號碼的套件會被視為更新套件，並可以透過現有的安裝版本安裝。  
+    -   `Version` – 這會定義此套件和其內容的版本。 這個屬性會遵循 CLR 組件版本控制格式：Major.Minor.Build.Revision (1.2.40308.00)。 具有較高的版本號碼的套件會被視為更新套件，並可以透過現有的安裝版本安裝。  
   
-    -   `Language` – 此屬性為預設的語言套件，並對應到此資訊清單中的文字資料。 這個屬性會遵循 CLR 的地區設定的程式碼慣例資源組件，例如： en-us-我們、 en、 fr-fr。 您可以指定`neutral`宣告會在任何版本的 Visual Studio 執行的非語言相關延伸模組。 預設值是 `neutral`。  
+    -   `Language` – 此屬性為預設的語言套件，並對應到此資訊清單中的文字資料。 這個屬性會遵循 CLR 的地區設定的程式碼慣例資源組件，例如： en-us-我們、 en、 fr-fr。 您可以指定`neutral`宣告會在任何版本的 Visual Studio 執行的非語言相關延伸模組。 預設值為 `neutral`。  
   
     -   `Publisher` – 此屬性會識別此套件的公司 」 或 「 個別名稱的 「 發行者 」。 `Publisher`屬性會限制為 100 個字元。  
   
@@ -101,7 +96,7 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
   
 -   `<InstallationTarget>` – 這個項目會控制 VSIX 安裝程式會安裝套件的位置。 如果值`Scope`屬性是 「 ProductExtension"封裝必須為目標 SKU，已安裝的資訊清單檔做為它的內容公告其可用性，可延伸模組的一部分。 `<InstallationTarget>`項目具有下列屬性`Scope`屬性已明確或預設值"ProductExtension 」:  
   
-    -   `Id` – 此屬性會識別封裝。  屬性會遵循的命名空間慣例： Company.Product.Feature.Name。 `Id`屬性只能包含英數字元，且上限為 100 個字元。 預期的值：  
+    -   `Id` – 此屬性會識別封裝。  屬性會遵循命名空間慣例：Company.Product.Feature.Name. `Id`屬性只能包含英數字元，且上限為 100 個字元。 預期的值：  
   
         -   Microsoft.VisualStudio.IntegratedShell  
   
@@ -143,7 +138,7 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
   
 -   `<Dependency>` 項目 – 這個子項目具有下列屬性：  
   
-    -   `Id` – 此屬性必須是相依的套件的唯一識別碼。 此身分識別值必須符合`<Metadata><Identity>Id`封裝這個封裝所相依的屬性。 `Id`屬性遵循的命名空間慣例： Company.Product.Feature.Name。 屬性只能包含英數字元，而且限制為 100 個字元。  
+    -   `Id` – 此屬性必須是相依的套件的唯一識別碼。 此身分識別值必須符合`<Metadata><Identity>Id`封裝這個封裝所相依的屬性。 `Id`屬性遵循的命名空間慣例：Company.Product.Feature.Name. 屬性只能包含英數字元，而且限制為 100 個字元。  
   
     -   `Version` – 此屬性會指定與此 SKU 的最小和最大支援版本的版本範圍。 封裝中可詳述支援的 Sku 的版本。 版本範圍標記法是 [12.0，13.0]，其中：  
   
@@ -222,4 +217,3 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
   
 ## <a name="see-also"></a>另請參閱  
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)
-

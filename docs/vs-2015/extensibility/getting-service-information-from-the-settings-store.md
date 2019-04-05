@@ -1,24 +1,19 @@
 ---
 title: 從設定存放區取得服務資訊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4fee0918c0506fe433377a3063c30be1d8b03f89
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f180642cf40c28bafcaf16eb68c36fc157914f11
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789352"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941319"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>從設定存放區取得服務資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,4 +83,3 @@ ms.locfileid: "51789352"
 3.  在實驗執行個體，在**工具**功能表上，按一下**叫用 FindServicesCommand**。  
   
      您應該會看到含有文字的訊息**協助服務使用：** 後面 **，則為 True**或**False**。 若要確認這項設定，您可以使用登錄編輯程式，在先前步驟中所示。
-

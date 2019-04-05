@@ -1,25 +1,22 @@
 ---
-title: 如何： 加入拖放處理常式 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：新增拖放處理常式 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 39ee88a0-85c3-485e-8c0a-d9644c6b25d9
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f89ea35c9113ddff67a9d1322b1c83c41e05709a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 47a5cab022da3d6cfc048191de116af3165401cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848973"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942075"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>如何：加入拖放處理常式
+# <a name="how-to-add-a-drag-and-drop-handler"></a>HOW TO：新增拖放處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以將拖放事件的處理常式加入至您的 DSL，以便使用者可以從其他圖表或 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的其他部分，拖曳項目到您的圖表上。 您也可以加入按兩下等事件的處理常式。 拖放和按兩下處理常式稱為共同*軌跡處理常式*。  
@@ -38,7 +35,7 @@ ms.locfileid: "49848973"
   
 -   [如何取得原始拖曳項目](#getOriginal)。 如果拖曳的項目是 DSL 項目，您可以開啟來源模型並存取此項目。  
   
--   [使用滑鼠動作： 拖曳區間項目](#mouseActions)。 這個範例示範可攔截圖形欄位上之滑鼠動作的低階處理常式。 這個範例讓使用者使用滑鼠拖曳，來重新排序區間中的項目。  
+-   [使用滑鼠動作：拖曳區間項目](#mouseActions)。 這個範例示範可攔截圖形欄位上之滑鼠動作的低階處理常式。 這個範例讓使用者使用滑鼠拖曳，來重新排序區間中的項目。  
   
 ##  <a name="overrideShapeElement"></a> 藉由覆寫 ShapeElement 方法來定義軌跡處理常式  
  將新的程式碼檔案加入至您的 DSL 專案。 在軌跡處理常式中，您通常必須至少有下列 `using` 陳述式：  
@@ -87,7 +84,7 @@ using System.Linq;
   
 - <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> - 當使用者按兩下圖形或圖表時，會呼叫這個方法。  
   
-   如需詳細資訊，請參閱 <<c0> [ 如何： 攔截圖案或 Decorator 上](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。  
+   如需詳細資訊，請參閱[如何：攔截圖案或 Decorator 上](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。  
   
   定義 `IsAcceptableDropItem(e)` 以決定是否可接受拖曳的項目，並定義 ProcessDragDropItem(e) 以在放置項目時更新模型。 這些方法必須先從事件引數擷取項目。 如需如何執行該動作的資訊，請參閱[如何取得拖曳項目的參考](#extracting)。  
   
@@ -339,7 +336,7 @@ using System.Linq;
   
     ```  
   
-##  <a name="mouseActions"></a> 使用滑鼠動作： 拖曳區間項目  
+##  <a name="mouseActions"></a> 使用滑鼠動作：拖曳區間項目  
  您可以撰寫處理常式，來攔截圖形欄位上的滑鼠動作。 下列範例讓使用者使用滑鼠拖曳，來重新排序區間中的項目。  
   
  若要建置此範例中，使用建立方案**類別圖表**解決方案範本。 加入程式碼檔案並加入下列程式碼。 將命名空間調整成與您自己的程式碼相同的命名空間。  
@@ -593,6 +590,3 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>另請參閱  
  [自訂複製行為](../modeling/customizing-copy-behavior.md)   
  [部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)
-
-
-
