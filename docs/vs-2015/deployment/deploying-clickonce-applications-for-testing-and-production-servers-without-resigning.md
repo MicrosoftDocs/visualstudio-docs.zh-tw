@@ -1,14 +1,9 @@
 ---
 title: 部署 ClickOnce 應用程式進行測試和實際執行伺服器，但不重新簽署 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +19,13 @@ ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2b2a26e847a23e8a4037958532889626a931341c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2354f65e1b042682a0e58a0dbb4bc12712bb47e3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840034"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939593"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>針對測試和實際執行伺服器部署 ClickOnce 應用程式但不重新簽章
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +62,8 @@ ms.locfileid: "49840034"
   在第二個範例中，您可以發行 ClickOnce 應用程式，指定`deploymentProvider`，但後來將它移除。 一次新的版本不含`deploymentProvider`已下載至用戶端，您將無法用於更新，直到您發行的版本，具有應用程式的路徑重新導向`deploymentProvider`還原。 如同第一個範例中，`deploymentProvider`一開始必須指向目前的更新位置，不是您新的位置。 在此情況下，如果您嘗試插入`deploymentProvider`，這是指 http://subdomain.adatum.com/MyApplication/，則下一次的更新會失敗。  
   
 ## <a name="creating-a-deployment"></a>建立部署  
- 如需建立可以從不同的網路位置進行部署的部署的逐步指引，請參閱[逐步解說： 手動部署 ClickOnce 應用程式，並不需要重新簽署和該會保留商標資訊](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ 如需建立可以從不同的網路位置進行部署的部署的逐步指引，請參閱[逐步解說：手動部署 ClickOnce 應用程式不需要重新簽署而且會保留商標資訊](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)。  
   
 ## <a name="see-also"></a>另請參閱  
  [Mage.exe (資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [MageUI.exe (資訊清單產生和編輯工具、圖形用戶端)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)
-
-
-

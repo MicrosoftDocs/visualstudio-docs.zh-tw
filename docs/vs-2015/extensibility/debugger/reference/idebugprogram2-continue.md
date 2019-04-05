@@ -1,14 +1,9 @@
 ---
-title: IDebugProgram2::Continue |Microsoft Docs
-ms.custom: ''
+title: IDebugProgram2::Continue | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::Continue
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b90f9bd5fef44ab05cf835f41e274b4ec7695cab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c8e40b21f84aa5c244b7904331373b3120e0b4df
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744313"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940156"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51744313"
 會繼續執行此程式從已停止的狀態。 會保留任何先前的執行狀態 （例如在步驟），並在程式啟動重新執行。  
   
 > [!NOTE]
->  這個方法已被取代。 使用[繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)方法改為。  
+>  這個方法已淘汰。 使用[繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)方法改為。  
   
 ## <a name="syntax"></a>語法  
   
@@ -62,4 +57,3 @@ int Continue( 
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
-

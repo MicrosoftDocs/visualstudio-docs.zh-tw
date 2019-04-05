@@ -1,14 +1,9 @@
 ---
-title: IDebugObject |Microsoft Docs
-ms.custom: ''
+title: IDebugObject | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugObject
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 05cd8bf4-c9ee-4b49-b782-2263c33067d6
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 67db4808b8f20ea759ad5847508307e9efff5620
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 157e4ef5a6f8875a85de1108f94028ef25d25075
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785675"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940718"
 ---
 # <a name="idebugobject"></a>IDebugObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -66,12 +61,11 @@ IDebugObject : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： ee.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)   
  [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)
-

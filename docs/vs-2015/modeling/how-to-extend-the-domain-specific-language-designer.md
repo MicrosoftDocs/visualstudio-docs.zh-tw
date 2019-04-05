@@ -1,25 +1,22 @@
 ---
-title: 如何： 擴充特定領域語言設計工具 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：擴充特定領域語言設計工具 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa807f1b-2780-491e-925b-abbfd31b2bfa
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 645346098b954fb57f5bb09f5ee97cfa48302150
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878553"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940541"
 ---
-# <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：擴充網域指定的語言設計工具
+# <a name="how-to-extend-the-domain-specific-language-designer"></a>HOW TO：擴充特定領域語言設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以對您用來編輯在 DSL 定義設計工具的延伸模組。 類型的擴充功能，可讓您加入功能表命令加入處理常式，如拖曳，然後按兩下筆勢和特定類型的值或關聯性變更時觸發的規則。 延伸模組可以封裝成 Visual Studio 整合擴充功能 (VSIX)，並散發給其他使用者。  
@@ -317,4 +314,3 @@ namespace Fabrikam.SimpleDslDesignerExtension
     }  
 }  
 ```
-

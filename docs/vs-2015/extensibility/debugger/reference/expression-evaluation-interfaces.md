@@ -1,26 +1,21 @@
 ---
 title: 運算式評估介面 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - expression evaluation, interfaces
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1c7365e17749d69d0dc36e06c3d11d053a44e94d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9988e28482f1ed1174658cc9e016fa0eb2f153b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774831"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939712"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -70,4 +65,3 @@ ms.locfileid: "51774831"
  [API 參考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [撰寫 CLR 運算式評估工具](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [類型視覺化檢視和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
-

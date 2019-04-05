@@ -1,14 +1,9 @@
 ---
-title: ： 只有 FlagsAttribute 列舉應該 ca1717 複數名稱 |Microsoft Docs
-ms.custom: ''
+title: CA1717:只有 FlagsAttribute 列舉應該使用複數名稱 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1717
 - OnlyFlagsEnumsShouldHavePluralNames
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fd02409bd3805544effd1d53f5be2318b03fea90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cc585c348451e0189caeabaf6269606e6b73b219
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833443"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940720"
 ---
-# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717：只有 FlagsAttribute 列舉應該使用複數名稱
+# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717:只有 FlagsAttribute 列舉應該使用複數名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -54,14 +49,11 @@ ms.locfileid: "49833443"
  它可安全地隱藏規則的警告，如果名稱結尾的單數的單字。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1714：旗標列舉應該使用複數名稱](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
+ [CA1714:旗標列舉應該使用複數名稱](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
 
- [CA1027：必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027:以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217:不以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.FlagsAttribute?displayProperty=fullName> [列舉設計](http://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)
-
-
-

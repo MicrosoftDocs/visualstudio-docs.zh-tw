@@ -1,28 +1,23 @@
 ---
-title: 如何： 引發事件當編輯器失去焦點時 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：引發事件當編輯器失去焦點時 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - fire events on losing focus
 ms.assetid: 64d40695-6917-468a-8037-a253453ac159
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2875ff13302b1f54d87f1f69a68757b10fb98dca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c6bcd77d16f3c765a522f178604842714db84e24
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749228"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940182"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>如何： 引發事件當編輯器失去焦點時
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>HOW TO：引發事件當編輯器失去焦點時
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 有時候就必須知道當編輯器失去焦點，視窗框架上。 比方說，您可能需要擷取從程式碼視窗的程式碼之後，編輯器不再將焦點放在其上。 下列程序會提供要接收通知的編輯器失去焦點遵循的步驟。  
@@ -40,4 +35,3 @@ ms.locfileid: "51749228"
     1.  您所需的視窗框架。  
   
     2.  在您的程式遺失選取範圍至該視窗框架的點。
-

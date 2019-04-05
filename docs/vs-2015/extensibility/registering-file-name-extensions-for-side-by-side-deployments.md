@@ -1,26 +1,21 @@
 ---
 title: 註冊副檔名，並排顯示部署 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, registering for side-by-side
 ms.assetid: 9ab046a2-147d-4167-aa14-7d661b1eaaa5
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d0312bbc7bd6c73cf0141157cde13f0a381f5e41
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 354b91dd1282df9726c1ee9c47f610b0dfdd9c1a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805667"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940545"
 ---
 # <a name="registering-file-name-extensions-for-side-by-side-deployments"></a>註冊副檔名以進行並存部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,4 +38,3 @@ ms.locfileid: "51805667"
 ## <a name="related-sections"></a>相關章節  
  [支援多個 Visual Studio 版本](../extensibility/supporting-multiple-versions-of-visual-studio.md)  
  說明在開發和部署給使用者期間的多個 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 VSPackage 版本的相關問題。
-

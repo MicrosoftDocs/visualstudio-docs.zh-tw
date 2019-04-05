@@ -1,14 +1,9 @@
 ---
-title: IDebugAddress2 |Microsoft Docs
-ms.custom: ''
+title: IDebugAddress2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugAddress2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b150e0ed-4ac0-4f8c-9732-4b3e54b9d243
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e2709d616045067d0b80fc2c1708fa963fadaeb5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 23fb27643a209e870165e521d63079a3b6c650eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741792"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940445"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -51,11 +46,10 @@ IDebugAddress2 : IDebugAddress
 ## <a name="requirements"></a>需求  
  標頭： sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
-

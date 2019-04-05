@@ -1,14 +1,9 @@
 ---
 title: CRT 偵錯程式庫使用 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.debug.runtime
 dev_langs:
@@ -34,13 +29,13 @@ ms.assetid: 464de16b-4215-4787-9bfa-921aaff9d9f4
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c6bba5b9c1b9d65c867176ac72c0641fac4cd286
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 51534d226f3ae0f8726bb818423bf0a9b788fd8c
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817642"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58939891"
 ---
 # <a name="crt-debug-library-use"></a>CRT 偵錯程式庫操作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,15 +45,12 @@ C 執行階段程式庫提供更多的偵錯支援。 若要使用其中一種 C
 ## <a name="remarks"></a>備註  
  可以在 CRTDBG.h 標頭檔裡找到 CRT 偵錯的主要定義和巨集。  
   
- CRT 偵錯程式庫中的函式會編譯以偵錯資訊 ([/z7，/Zd，/Zi，/ZI （偵錯資訊格式）](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)) 而最佳化。 有些函式包含可驗證傳入它們的參數之判斷提示，而且提供原始程式碼。 有了這個原始程式碼，您可以逐步執行 CRT 函式來確認函式是否如您希望的方式來執行，並檢查錯誤參數或記憶體狀態 (有些 CRT 技術是專屬的，且沒有提供例外狀況處理、浮點和其他一些常式的原始程式碼)。  
+ CRT 偵錯程式庫裡的函式會在沒有最佳化情況下以偵錯資訊 ([/Z7、/Zd、/Zi、/ZI (偵錯資訊格式)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)) 進行編譯。 有些函式包含可驗證傳入它們的參數之判斷提示，而且提供原始程式碼。 有了這個原始程式碼，您可以逐步執行 CRT 函式來確認函式是否如您希望的方式來執行，並檢查錯誤參數或記憶體狀態 (有些 CRT 技術是專屬的，且沒有提供例外狀況處理、浮點和其他一些常式的原始程式碼)。  
   
  安裝 Visual C++ 時，您可以選擇在硬碟安裝 C 執行階段程式庫原始程式碼的選項。 如果您沒有安裝原始程式碼，您會需要 CD-ROM 來逐步執行 CRT 函式。  
   
- 如需有關您可以使用的各種執行階段程式庫的詳細資訊，請參閱 < [C 執行階段程式庫](http://msdn.microsoft.com/library/a889fd39-807d-48f2-807f-81492612463f)。  
+ 如需各種可以使用的執行階段程式庫之詳細資訊，請參閱 [C Run-Time Libraries](http://msdn.microsoft.com/library/a889fd39-807d-48f2-807f-81492612463f) (C 執行階段程式庫)。  
   
 ## <a name="see-also"></a>另請參閱  
  [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)   
  [/MD、/MT、/LD (使用執行階段程式庫)](http://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: IEnumDebugProcesses2::Next |Microsoft Docs
-ms.custom: ''
+title: IEnumDebugProcesses2::Next | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugProcesses2::Next
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: abef89eb-198b-49cd-a4c9-17bce6cac0e1
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 06dee45c81502e924ff0936b273d057ce288eb19
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 37bf16b49a45b03eee6a1b0abb8af5b719dacff7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761696"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939557"
 ---
 # <a name="ienumdebugprocesses2next"></a>IEnumDebugProcesses2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -58,9 +53,8 @@ int Next(
  [out]傳回的項目數中實際傳回`rgelt`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`更少的項目要求的數目可能會傳回; 否則會傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`更少的項目要求的數目可能會傳回; 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
-

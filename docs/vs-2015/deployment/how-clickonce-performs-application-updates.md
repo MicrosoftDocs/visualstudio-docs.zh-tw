@@ -1,14 +1,9 @@
 ---
 title: ClickOnce 執行應用程式更新的方式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: d54313c2-cf0c-420d-b151-99953a95f0bb
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 5c2e135a2b872ecd389149626ac09caf02734f40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d2e8a3c1054219bb7d5b0f9a9ef5e710786344e4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298021"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940684"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>ClickOnce 執行應用程式更新的方式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ ClickOnce 會使用應用程式的部署資訊清單中指定的檔案版本資�
 ## <a name="see-also"></a>另請參閱  
  [選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)
-
-
-

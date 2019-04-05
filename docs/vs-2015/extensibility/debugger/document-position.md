@@ -1,26 +1,21 @@
 ---
 title: 文件位置 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 309599afcfbeae1c7bdebcfe6b2453292e666a12
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ec5124144e93d37c0f288450b00865461091253f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725437"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940702"
 ---
 # <a name="document-position"></a>文件位置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,4 +34,3 @@ ms.locfileid: "51725437"
  [符號提供者](../../extensibility/debugger/symbol-provider.md)   
  [符號提供者介面](../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)
-

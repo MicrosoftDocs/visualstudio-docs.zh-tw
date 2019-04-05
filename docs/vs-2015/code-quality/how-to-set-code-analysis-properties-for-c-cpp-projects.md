@@ -1,14 +1,9 @@
 ---
-title: 如何： 為 C-C + + 專案設定程式碼分析屬性 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：為 C + + 專案設定程式碼分析屬性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native
 - VC.Project.VCCLCompilerTool.EnablePrefast
@@ -23,15 +18,15 @@ ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
 caps.latest.revision: 19
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 447bb9dfedc93594c6af014b830bfabc1b7ecf39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4ebed266924861dac4bfc9e316a56907dbd11534
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752652"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940486"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>如何：為 C/C++ 專案設定程式碼分析屬性
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>HOW TO：為 C/C++ 專案設定程式碼分析屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以設定程式碼分析工具用來分析專案的每個組態中的程式碼的規則。 此外，您可以將程式碼分析，以隱藏來自產生並由第三方工具加入至專案的程式碼的警告。  
@@ -60,6 +55,3 @@ ms.locfileid: "51752652"
 ## <a name="see-also"></a>另請參閱  
  [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
  [C/C++ 程式碼分析警告](../code-quality/code-analysis-for-c-cpp-warnings.md)
-
-
-

@@ -1,28 +1,23 @@
 ---
-title: 如何： 針對服務進行疑難排解 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：針對服務進行疑難排解 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: troubleshooting
 helpviewer_keywords:
 - services, troubleshooting
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8df01dcc2c8e15144f6049148286012bda6ac3f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 47dad5f6b508356bde7570996127007b25b287b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798205"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940574"
 ---
-# <a name="how-to-troubleshoot-services"></a>如何： 針對服務進行疑難排解
+# <a name="how-to-troubleshoot-services"></a>HOW TO：針對服務進行疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 有數個常見的問題，當您嘗試取得服務時，可能會發生：  
@@ -77,4 +72,3 @@ if (log == null) return;
  [可用服務清單](../extensibility/internals/list-of-available-services.md)   
  [使用和提供服務](../extensibility/using-and-providing-services.md)   
  [服務的基本資訊](../extensibility/internals/service-essentials.md)
-
