@@ -1,14 +1,9 @@
 ---
 title: 使用程式碼度量資料 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codemetrics.output
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 988193ec-b4a3-4e11-b5a1-7334979807d5
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ca9d384b8c7b6d49e44826c65a156d715baa0786
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fd746ca463808ddc3ab70d795af88f6dff53f860
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775884"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930118"
 ---
 # <a name="working-with-code-metrics-data"></a>使用程式碼度量資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,7 +124,7 @@ ms.locfileid: "51775884"
 ##  <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a> 建立工作項目，根據程式碼度量結果  
  您可以建立[!INCLUDE[esprfound](../includes/esprfound-md.md)]為基礎的工作項目會導致**程式碼度量結果**視窗。 建立工作項目時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會自動輸入其中一個職銜**Title**下的欄位和程式碼度量資料**歷程記錄** 索引標籤。  
   
- 如需如何建立工作項目相關的詳細資訊，請參閱[建立工作項目&#91;重新導向&#93;](http://msdn.microsoft.com/en-us/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b)。  
+ 如需如何建立工作項目相關的詳細資訊，請參閱[建立工作項目&#91;重新導向&#93;](http://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b)。  
   
 #### <a name="to-create-a-work-item-based-on-a-result"></a>若要建立根據結果的工作項目  
   
@@ -154,6 +149,3 @@ ms.locfileid: "51775884"
 ## <a name="see-also"></a>另請參閱  
  [測量的複雜度與可維護性 Managed 程式碼](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)   
  [如何：產生程式碼度量資料](../code-quality/how-to-generate-code-metrics-data.md)
-
-
-

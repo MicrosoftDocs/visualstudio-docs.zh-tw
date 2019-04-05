@@ -1,14 +1,9 @@
 ---
 title: 方案使用者選項 (。Suo) 檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .suo files, VSPackages
 - suo files, VSPackages
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f101f4efe0afe2132477b83731871872fdfc90c9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a9825fabe08940e8950cf88a1dbf2bc149af0b2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799843"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000775"
 ---
 # <a name="solution-user-options-suo-file"></a>方案使用者選項檔 (.Suo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,5 +40,4 @@ ms.locfileid: "51799843"
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>   
- [方案](../../extensibility/internals/solutions.md)
-
+ [方案](../../extensibility/internals/solutions-overview.md)

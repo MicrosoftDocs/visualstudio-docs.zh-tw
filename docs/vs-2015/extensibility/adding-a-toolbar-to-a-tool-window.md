@@ -1,27 +1,22 @@
 ---
 title: 新增工具列加入工具視窗 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, adding toolbars
 - toolbars [Visual Studio], adding to tool windows
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
 caps.latest.revision: 49
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2dfb26dd77a3117f40f82fdb80669a2e849e6c94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fe1aa2d105756ac6f727a54e431b8324176f7516
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755163"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945053"
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>將工具列新增至工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,4 +117,3 @@ ms.locfileid: "51755163"
   
 ## <a name="see-also"></a>另請參閱  
  [加入工具列](../extensibility/adding-a-toolbar.md)
-

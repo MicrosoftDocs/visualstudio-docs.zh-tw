@@ -1,23 +1,20 @@
 ---
-title: 如何： 建立工作流程主控台應用程式 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立工作流程主控台應用程式 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 51a2eea7-921c-49f1-b358-68afc27f1ee9
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: ad509e0e57f2c8996c13ffbe1d8f8890d2954dec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 285c19e7814c369866fe70fa6f13e48efb6da359
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251663"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941717"
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>HOW TO：建立工作流程主控台應用程式
 [!INCLUDE[wf](../includes/wf-md.md)] 可讓您建立執行系統或人工處理序的工作流程。 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 會提供建立這些工作流程的設計介面。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 可用來從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 建立工作流程，或者可以整合到重新裝載設計工具的其他應用程式中。  

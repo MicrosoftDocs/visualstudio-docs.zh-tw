@@ -1,14 +1,9 @@
 ---
-title: IDebugBinder::Bind |Microsoft Docs
-ms.custom: ''
+title: IDebugBinder::Bind | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugBinder::Bind
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 15a11ad7-0fcc-4e80-ae34-8a7dd7bae3c3
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: abdc0185289421fd3a4324fb1f6891b231e5a5d4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 547f94cb4534bcb281cce0fdc2ff7db5fefe3593
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780879"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944597"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -64,4 +59,3 @@ int Bind(
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
-

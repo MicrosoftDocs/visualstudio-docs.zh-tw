@@ -1,14 +1,9 @@
 ---
-title: IDebugThread2::GetLogicalThread |Microsoft Docs
-ms.custom: ''
+title: IDebugThread2::GetLogicalThread | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugThread2::GetLogicalThread
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bce6230e-41d4-49b7-a050-2dde5efb6805
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e157ab220972579aa1a8a78e8094b5589de8ff28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f430ea7ba69ca55bc76543d853396e22b193cf02
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810193"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930029"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -57,4 +52,3 @@ int GetLogicalThread( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-

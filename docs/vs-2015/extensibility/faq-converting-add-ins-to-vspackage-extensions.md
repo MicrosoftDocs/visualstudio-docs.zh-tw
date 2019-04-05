@@ -1,24 +1,19 @@
 ---
-title: 常見問題集： 將增益集轉換成 VSPackage 擴充功能 |Microsoft Docs
-ms.custom: ''
+title: 常見問題集：將增益集轉換成 VSPackage 擴充功能 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2318ff719f51660b4cec0eec6b7a051ea54aa67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 7cbb66d47eb261c0b25f382370bb6590af351edd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817343"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945027"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常見問題集：將增益集轉換成 VSPackage 擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ ms.locfileid: "51817343"
   
      Visual Studio 的第二個執行個體隨即出現。 第二個執行個體稱為實驗執行個體，其設定可能與您正用來撰寫程式碼的 Visual Studio 執行個體的設定不同。 第一次執行實驗執行個體時，系統會要求您登入 VS Online 並指定佈景主題和設定檔。  
   
-     在 **工具**功能表上 （在實驗執行個體中） 您應該會看到名為按鈕**我的命令名稱**。 當您選擇此按鈕時，應該會出現一則訊息：**在 testvspackagepackage.menuitemcallback （） 之中**。  
+     在 **工具**功能表上 （在實驗執行個體中） 您應該會看到名為按鈕**我的命令名稱**。 當您選擇此按鈕時，應該會出現一則訊息：**Inside TestVSPackagePackage.MenuItemCallback()**.  
   
 ##  <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中執行我的增益集程式碼？  
  增益集程式碼通常以兩種方式之一執行：  
@@ -272,4 +267,3 @@ public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)
     string s = "[Event] Renamed " + oldName + " to " + Path.GetFileName(projItem.get_FileNames(1) + " in project " + projItem.ContainingProject.Name;   
 }  
 ```
-

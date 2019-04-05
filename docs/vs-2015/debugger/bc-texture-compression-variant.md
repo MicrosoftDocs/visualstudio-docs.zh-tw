@@ -1,25 +1,20 @@
 ---
 title: BC 紋理壓縮變異 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 818998511a4ef8b7f10b8225e71b414edafd9769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2b164933b3d695e1a680e26629b093b59009b502
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736566"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942444"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 紋理壓縮變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,6 +65,3 @@ ms.locfileid: "51736566"
   
 ## <a name="see-also"></a>另請參閱  
  [二分之一/四分之一紋理維度變化](../debugger/half-quarter-texture-dimensions-variant.md)
-
-
-

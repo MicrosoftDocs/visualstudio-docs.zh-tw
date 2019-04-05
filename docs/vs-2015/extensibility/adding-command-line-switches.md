@@ -1,14 +1,9 @@
 ---
 title: 加入命令列參數 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line switches, adding
 - command-line switches, retrieving
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5034e6bcb5aa878c16dbf9dadf478d68276c4fac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e28a3f303849458a407b212d3aad1a8c198f6d25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748277"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942784"
 ---
 # <a name="adding-command-line-switches"></a>新增命令列參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,4 +82,3 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
  [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)   
  [CreatePkgDef 公用程式](../extensibility/internals/createpkgdef-utility.md)   
  [.Pkgdef 檔案](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
-

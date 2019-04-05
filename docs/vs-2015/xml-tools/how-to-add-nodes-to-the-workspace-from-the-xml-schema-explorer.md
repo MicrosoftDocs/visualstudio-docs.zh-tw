@@ -1,38 +1,33 @@
 ---
-title: 如何： 將節點從 XML 結構描述總管加入至工作區 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將節點從 XML 結構描述總管加入至工作區 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a6ef4e4e019406d9c317ccd90eabcb89e25a6f36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 84a99426cf32477e0661872c09f41ec50aeb2842
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220099"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930001"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>HOW TO：將節點從 XML 結構描述總管加入至工作空間
+# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>HOW TO：將節點從 XML 結構描述總管新增至工作區
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-本主題說明如何將節點加入到[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)從 XML 結構描述總管。 只要將 XML 結構描述總管中的節點拖曳到 XSD 設計工具檢視上，或者使用 XML 結構描述總管的操作功能表，即可達到此目的。 您也可以加入以 XML 結構描述總管執行搜尋後反白顯示為結果的節點。 如需詳細資訊，請參閱 <<c0> [ 如何： 新增結構描述設定搜尋結果節點加入工作空間](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)。  
+本主題說明如何將節點加入到[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)從 XML 結構描述總管。 只要將 XML 結構描述總管中的節點拖曳到 XSD 設計工具檢視上，或者使用 XML 結構描述總管的操作功能表，即可達到此目的。 您也可以加入以 XML 結構描述總管執行搜尋後反白顯示為結果的節點。 如需詳細資訊，請參閱[如何：將結構描述集合搜尋節點加入工作空間](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)。  
   
 > [!NOTE]
 >  只有全域節點可以加入至[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)。  
   
 ### <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>透過 XML 總管操作功能表加入節點  
   
-1.  請依照下列中的步驟[如何： 建立和編輯 XSD 結構描述檔案](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。  
+1.  請依照下列中的步驟[How to:建立和編輯 XSD 結構描述檔案](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。  
   
 2.  以滑鼠右鍵按一下 XSD 總管中的 `PurchaseOrderType` 節點。 選取 **在圖形檢視中顯示**。  
   
@@ -68,6 +63,3 @@ ms.locfileid: "49220099"
   
 ## <a name="see-also"></a>另請參閱  
  [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
-title: IDebugComPlusSymbolProvider |Microsoft Docs
-ms.custom: ''
+title: IDebugComPlusSymbolProvider | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider interface
 ms.assetid: 5b98e908-fd15-49a6-9010-933c9b948085
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 036d545b6bc8f2b59b76fdbc777680d0307f6972
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b70701aa9c4b339749554601e2a565c17697c6a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721990"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942790"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 ```  
   
 ## <a name="notes-for-implementers"></a>實作者的附註  
- 雖然沒有適合的運算式評估工具 (EE) 的介面以及要用於偵錯引擎 (DE) 之間沒有區隔，下列方法可能會感興趣 DE 開發人員只： AreSymbolsLoaded，GetAddressesInModuleFromPosition、 GetEntryPoint、 GetFunctionLineOffset、 GetLocalVariableLayout、 IsFunctionStale、 LoadSymbols、 LoadSymbolsFromStream、 ReplaceSymbols、 UnloadSymbols 和 UpdateSymbols。  
+ 雖然很有用處的運算式評估工具 (EE) 的介面以及要用於偵錯引擎 (DE) 之間沒有區隔，下列方法可能會只 DE 開發人員感興趣：AreSymbolsLoaded、 GetAddressesInModuleFromPosition、 GetEntryPoint、 GetFunctionLineOffset、 GetLocalVariableLayout、 IsFunctionStale、 LoadSymbols、 LoadSymbolsFromStream、 ReplaceSymbols、 UnloadSymbols 和 UpdateSymbols。  
   
 ## <a name="methods"></a>方法  
  上的方法除了[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)介面，這個介面會實作下列方法：  
@@ -65,9 +60,8 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 |[UpdateSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-updatesymbols.md)|更新記憶體中的偵錯符號與指定的資料流。|  
   
 ## <a name="requirements"></a>需求  
- 標頭： Sh.h  
+ 標頭：Sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
-
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll

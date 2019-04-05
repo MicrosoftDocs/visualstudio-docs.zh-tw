@@ -1,14 +1,9 @@
 ---
 title: 實作自訂程式碼分析簽入原則，針對 Managed 程式碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
 - vs.code.analysis.browsefortfsruleset
@@ -18,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20bfe541204d302699c37129f95476fb43541797
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268966"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930031"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>為 Managed 程式碼實作自訂程式碼分析簽入原則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49268966"
  若要建立自訂規則集為 team 專案，您先建立簽入原則中的規則集的特殊資料夾**原始檔控制總管**。 然後您會建立規則集檔案，並將檔案加入至版本控制。 最後，您會指定設定為程式碼分析簽入原則針對 team 專案的規則。  
   
 > [!NOTE]
->  若要建立 team 專案的資料夾，您先必須對應 team 專案的根目錄到本機電腦上的位置。 如需詳細資訊，請參閱 <<c0> [ 建立和使用工作區 （舊）](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2)。  
+>  若要建立 team 專案的資料夾，您先必須對應 team 專案的根目錄到本機電腦上的位置。 如需詳細資訊，請參閱 <<c0> [ 建立和使用工作區 （舊）](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2)。  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>若要建立簽入原則規則集的版本控制資料夾  
   
@@ -124,6 +119,3 @@ ms.locfileid: "49268966"
 7.  在 [**執行此規則集**清單中，按一下**\<瀏覽] >**。  
   
 8.  指定簽入原則的規則集檔案的本機版本。
-
-
-

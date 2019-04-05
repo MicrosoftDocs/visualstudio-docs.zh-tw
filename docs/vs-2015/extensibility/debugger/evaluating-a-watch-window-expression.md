@@ -1,14 +1,9 @@
 ---
 title: 評估監看式視窗運算式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Watch window expressions
 - Watch window, expressions
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4dc9a56927ebe1e7b962ab815eb34028ba75350c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fb60ec9d471c99b24e07eef11014ce82a18d50b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801458"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943220"
 ---
 # <a name="evaluating-a-watch-window-expression"></a>評估監看式視窗的運算式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "51801458"
 7.  Visual Studio 呼叫[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)取得運算式，即會顯示在 監看清單的值。  
   
 ## <a name="parse-then-evaluate"></a>剖析，則評估  
- 因為剖析複雜的運算式可能遠超過它評估，評估運算式的程序會分成兩個步驟： 1） 剖析運算式，以及 2） 評估剖析的運算式。 如此一來，評估可能會發生許多次，但必須一次進行剖析的運算式。 中繼剖析的運算式會傳回從中 EE [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)物件，接著封裝並傳回做為 DE [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)物件。 `IDebugExpression`物件會延後所有評估`IDebugParsedExpression`物件。  
+ 因為剖析複雜的運算式可能遠超過它評估，評估運算式的程序會分成兩個步驟：1) 剖析的運算式和 2） 評估剖析的運算式。 如此一來，評估可能會發生許多次，但必須一次進行剖析的運算式。 中繼剖析的運算式會傳回從中 EE [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)物件，接著封裝並傳回做為 DE [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)物件。 `IDebugExpression`物件會延後所有評估`IDebugParsedExpression`物件。  
   
 > [!NOTE]
 >  您不需要遵循此兩步驟程序，即使 Visual Studio 就會認為這方面 EEEE 可以剖析和評估相同的步驟時[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)呼叫 （這是 MyCEE 範例運作方式，例如）。 如果您的語言可以構成複雜的運算式，您可能想要剖析步驟分開評估步驟。 許多監看運算式時，這可以增加效能，在 Visual Studio 偵錯工具會顯示。  
@@ -67,4 +62,3 @@ ms.locfileid: "51801458"
   
 ## <a name="see-also"></a>另請參閱  
  [撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

@@ -1,14 +1,9 @@
 ---
-title: IDebugThread2::Suspend |Microsoft Docs
-ms.custom: ''
+title: IDebugThread2::Suspend | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugThread2::Suspend
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 1e20be85-aa12-48de-bb83-0bf0976e99ae
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 164d3b79c7c76ad2075fbae04e198a381c808bd8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c334a660b9c85345c636c7cc4b9aaea1a9b12076
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802768"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930421"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -58,4 +53,3 @@ HRESULT Suspend ( 
 ## <a name="see-also"></a>另請參閱  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
-

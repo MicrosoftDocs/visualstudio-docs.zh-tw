@@ -1,14 +1,9 @@
 ---
-title: 'Idiasymbol:: Get_virtual |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_virtual | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 97e3ad51-8ef3-4446-ab33-3cb34a21b7a0
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aa9c83788518ff91a1d40d547a29969fa911120b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d7e08a7d53666fd9f4d8d383020d9db4c2a4db50
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786754"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930311"
 ---
 # <a name="idiasymbolgetvirtual"></a>IDiaSymbol::get_virtual
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,6 +45,3 @@ HRESULT get_virtual ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

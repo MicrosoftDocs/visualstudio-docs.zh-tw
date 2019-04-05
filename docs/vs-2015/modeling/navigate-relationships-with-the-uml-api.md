@@ -1,25 +1,22 @@
 ---
 title: 使用 UML API 巡覽關聯性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: a4d11d45-b8c0-40f9-a597-363f07659610
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0f8d1392bebf4d2591bbd7e4dc7bd8755c09f2c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb2a02ba27f06ef027001c2de07308c153b21c2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740544"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942754"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>使用 UML API 巡覽關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -155,9 +152,9 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```  
   
 ## <a name="enumerating-relationships"></a>列舉關聯性  
- 所有會傳回多個值的 UML 模型屬性，均符合 IEnumerable<> 介面。 這表示您可以使用[Linq 查詢運算式](http://go.microsoft.com/fwlink/?LinkId=168834)中所定義的擴充方法和**System.Linq**命名空間。  
+ UML 模型的所有傳回多個值的屬性符合 Ienumerable<> 介面。 這表示您可以使用[Linq 查詢運算式](http://go.microsoft.com/fwlink/?LinkId=168834)中所定義的擴充方法和**System.Linq**命名空間。  
   
- 例如:   
+ 例如：  
   
 ```  
 from shape in     Context.CurrentDiagram.GetSelectedShapes<IClassifier>()  
@@ -169,6 +166,3 @@ select shape.Element
 ## <a name="see-also"></a>另請參閱  
  [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)   
  [巡覽 UML 模型](../modeling/navigate-the-uml-model.md)
-
-
-

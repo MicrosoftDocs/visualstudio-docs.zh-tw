@@ -1,23 +1,20 @@
 ---
-title: 如何： 使用 [搜尋]，請在工作流程設計工具 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用 [搜尋]，請在工作流程設計工具 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
 caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6ff90f9e7916b598a1bf921f6de1e752afdb8b4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 427e854c19e65463abcd8780cfe95d38f3ea66f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272531"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943949"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>HOW TO：使用工作流程設計工具中的搜尋
 為了方便建立更大型且更為複雜的工作流程，可以在工作流程設計工具中使用「搜尋」，依關鍵字來尋找項目。 請注意，設計工具不支援「取代」。 「搜尋」可在設計工具中尋找下列項目：  

@@ -1,21 +1,17 @@
 ---
 title: 程式碼資訊清單 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e07700b73c4f419e5dd0fa31c5e2aad9f3d6693d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758216"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943880"
 ---
 # <a name="manifest-to-code"></a>資訊清單至程式碼
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,22 +29,22 @@ ms.locfileid: "51758216"
 |-|-|-|  
 |**交換器名稱**|**備註**|**必要或選用**|  
 |/manifest|若要建立或更新的程式碼包裝函式使用映像資訊清單的路徑。|必要|  
-|/language|要在其中產生的程式碼包裝函式語言。<br /><br /> 有效值： CPP、 c + +、 CS、 CSharp、 C#、 VB 或 VSCT 值不區分大小寫。<br /><br /> VSCT 語言則會忽略選項、 /monikerClass、 /classAccess 和 /namespace 選項。|必要|  
-|/imageIdClass|ImageIdClass 和相關聯的工具所建立的檔案名稱。 C + + 語言選項時，會產生只有.h 檔案。<br /><br /> 預設值：\<資訊清單路徑 > \MyImageIds。\<L a n g e >|Optional|  
-|/monikerClass|MonikerClass 和相關聯的工具所建立的檔案名稱。 C + + 語言選項時，會產生只有.h 檔案。 這會忽略 VSCT 語言。<br /><br /> 預設值：\<資訊清單路徑 > \MyMonikers。\<L a n g e >|Optional|  
-|/classAccess|ImageIdClass 和 monikerClass 存取修飾詞。 請確定所指定語言的存取修飾詞無效。 這會忽略 VSCT 語言選項。<br /><br /> 預設： 公用|Optional|  
-|/namespace|在程式碼包裝函式中定義的命名空間。 這會忽略 VSCT 語言選項。 可能是 '。 ' 或 ':: ' 是有效的命名空間的分隔符號，不論所選擇的語言選項。<br /><br /> 預設： Images|Optional|  
+|/language|要在其中產生的程式碼包裝函式語言。<br /><br /> 有效值：CPP、 c + +、 CS、 CSharp、 C#，VB 或 VSCT 值不區分大小寫。<br /><br /> VSCT 語言則會忽略選項、 /monikerClass、 /classAccess 和 /namespace 選項。|必要|  
+|/imageIdClass|ImageIdClass 和相關聯的工具所建立的檔案名稱。 C + + 語言選項時，會產生只有.h 檔案。<br /><br /> 預設：\<資訊清單路徑 > \MyImageIds。\<l a n g e >|Optional|  
+|/monikerClass|MonikerClass 和相關聯的工具所建立的檔案名稱。 C + + 語言選項時，會產生只有.h 檔案。 這會忽略 VSCT 語言。<br /><br /> 預設：\<資訊清單路徑 > \MyMonikers。\<l a n g e >|Optional|  
+|/classAccess|ImageIdClass 和 monikerClass 存取修飾詞。 請確定所指定語言的存取修飾詞無效。 這會忽略 VSCT 語言選項。<br /><br /> 預設：Public|Optional|  
+|/namespace|在程式碼包裝函式中定義的命名空間。 這會忽略 VSCT 語言選項。 可能是 '。 ' 或 ':: ' 是有效的命名空間的分隔符號，不論所選擇的語言選項。<br /><br /> 預設：MyImages|Optional|  
 |/noLogo|設定這個旗標，就會停止列印的產品和著作權資訊。|Optional|  
 |/?|列印出說明資訊。|Optional|  
 |/help|列印出說明資訊。|Optional|  
   
  **範例**  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language: csharp  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
 -   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace： 我:: 命名空間 /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>注意  
   
@@ -236,4 +232,3 @@ End Namespace
   </Symbols>  
 </CommandTable>  
 ```
-

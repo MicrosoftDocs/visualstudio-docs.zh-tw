@@ -1,14 +1,9 @@
 ---
-title: ： 執行 ca1800 不必要的 |Microsoft Docs
-ms.custom: ''
+title: CA1800:執行不必要的轉型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1800
 - DoNotCastUnnecessarily
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ed2769bae5cf99fdaf8545e8ad0ac2a60a58b038
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d31cc102aae54ef60b8c16742ffe7e4381df5325
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854892"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930299"
 ---
-# <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800：請勿執行不必要的轉型
+# <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800:不要執行不必要的轉換
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -63,7 +58,4 @@ ms.locfileid: "49854892"
  [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCasts/vb/FxCop.Performance.UnnecessaryCasts.vb#1)]
 
 ## <a name="see-also"></a>另請參閱
- [作為](http://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e)[是](http://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)
-
-
-
+ [as](http://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e) [is](http://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)

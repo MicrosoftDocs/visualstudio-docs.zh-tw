@@ -1,14 +1,9 @@
 ---
-title: 如何： 存取的內建的字型和色彩配置 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：存取的內建的字型和色彩配置 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
 - font and color control [Visual Studio SDK], categories
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b96cb16182447ca636ee363a2cf62a33dcd6823
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a8f4ce6ab886fea3364526b53a32f72ad3f1408e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752931"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930224"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>如何： 存取的內建的字型和色彩配置
+# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>HOW TO：存取的內建的字型和色彩配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的字型和色彩配置。 您可以透過此配置<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>介面。  
@@ -65,7 +60,7 @@ Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的�
     |名稱|類型|資料|描述|  
     |----------|----------|----------|-----------------|  
     |分類|REG_SZ|GUID|任意的 GUID，識別包含內建的字型和色彩配置的分類。|  
-    |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> 所有使用預設字型和色彩組態的 Vspackage 會使用此 GUID。|  
+    |套件|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> 所有使用預設字型和色彩組態的 Vspackage 會使用此 GUID。|  
     |NameID|REG_DWORD|識別碼|在 VSPackage 中可當地語系化的類別目錄名稱的資源識別碼。|  
     |ToolWindowPackage|REG_SZ|GUID|VSPackage 實作的 GUID<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>介面。|  
   
@@ -107,4 +102,3 @@ if (spPropCatContainer != NULL){
  [取得字型和色彩資訊文字的顏色標示](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [存取預存的字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)   
  [字型和色彩概觀](../extensibility/font-and-color-overview.md)
-

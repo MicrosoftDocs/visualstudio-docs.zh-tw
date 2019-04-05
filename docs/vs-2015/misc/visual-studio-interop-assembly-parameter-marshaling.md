@@ -1,27 +1,22 @@
 ---
 title: Visual Studio Interop 組件參數封送處理 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting Visual Studio SDK interop assemblies
 - interop assemblies, parameter marshaling
 - interop assemblies, troubleshooting
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
-manager: douge
-ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195010"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930605"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio Interop 組件參數封送處理
 Vspackage 以 managed 程式碼撰寫，可能必須呼叫或 unmanaged 的 COM 程式碼所呼叫。 一般而言，方法引數轉換，或由封送處理，會自動 interop 封送處理器。 不過，有時候引數無法轉換以直接的方式。 在這些情況下，interop 組件方法的原型參數來儘可能密集地符合 COM 函式參數。 如需詳細資訊，請參閱 < [Interop 封送處理](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)。  
@@ -128,7 +123,7 @@ else
  呼叫此類型的介面的 managed 的方法應該提取從 [out] 陣列的第一個項目。 這個項目可以視為，就好像`retval`自對應的 COM 介面傳回的值。  
   
 ## <a name="see-also"></a>另請參閱  
- [Interop 封送處理](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Interop 封送處理](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
  [Interop 封送處理](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
  [互通性的疑難排解](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [Managed VSPackages](../misc/managed-vspackages.md)

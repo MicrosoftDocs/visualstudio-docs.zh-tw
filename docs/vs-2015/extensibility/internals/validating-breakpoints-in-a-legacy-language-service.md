@@ -1,27 +1,22 @@
 ---
 title: 舊版語言服務中驗證中斷點 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0868e516720fd32a445f60f05f345936d24d6d7a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 075644dc36a25c723f51e7c518cbaf6de8a8bc1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734974"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944747"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>在舊版語言服務中驗證中斷點
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -107,4 +102,3 @@ namespace TestLanguagePackage
   
 ## <a name="see-also"></a>另請參閱  
  [舊版語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)
-

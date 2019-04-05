@@ -1,14 +1,9 @@
 ---
 title: 在本機電腦上的執行 Windows 市集應用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: e42a21a8-6423-4caf-b4dc-72b263e76019
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 40fafcbdacac8a63a4aba70526a473d091b35de8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 021cad5a1da76dec7f1bbe169a7b3677170798f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766834"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930241"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>在本機電腦上執行 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,6 +58,3 @@ ms.locfileid: "51766834"
  **若要從執行個體的 Windows 市集應用程式切換至 Visual Studio**  
   
  如果您在本機電腦上執行 Windows 市集應用程式，而且只使用單一監視器，則可能會想要切換回 Visual Studio，同時讓應用程式繼續執行。 例如，應用程式可能處於中斷點無法到達的狀態 (例如，等待某個事件，或陷入冗長或無止盡的迴圈中)。 若要返回 Visual Studio，請按 ALT + TAB。
-
-
-

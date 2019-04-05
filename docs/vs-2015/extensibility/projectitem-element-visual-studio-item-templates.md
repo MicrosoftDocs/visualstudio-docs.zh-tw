@@ -1,14 +1,9 @@
 ---
 title: ProjectItem 項目 （Visual Studio 項目範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 44fe6613288cac93034dd32a3203f1bb73004f83
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29b65f5cff9e2ffbed3c66c29c61f0a7e9e50f20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747945"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945347"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 項目 (Visual Studio 項目範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +28,9 @@ ms.locfileid: "51747945"
 > [!NOTE]
 >  `ProjectItem`元素接受不同的屬性，根據該範本是否為專案或項目。 本主題說明`ProjectItem`項目的項目。 如需說明`ProjectItem`項目專案範本，請參閱[ProjectItem 項目 （Visual Studio 專案範本）](../extensibility/projectitem-element-visual-studio-project-templates.md)。  
   
- \<VSTemplate >  
- \<TemplateContent >  
- \<專案項目 >  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>語法  
   
@@ -86,7 +81,7 @@ ms.locfileid: "51747945"
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- 檔案名稱從這個範本建立項目時，會根據使用者輸入的名稱**加入新項目** 對話方塊。 建立多檔案項目範本時，這非常有用。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)並[範本參數](../ide/template-parameters.md)。  
+ 檔案名稱從這個範本建立項目時，會根據使用者輸入的名稱**加入新項目** 對話方塊。 建立多檔案項目範本時，這非常有用。 如需詳細資訊，請參閱[如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)並[範本參數](../ide/template-parameters.md)。  
   
 ## <a name="example"></a>範例  
  下列範例說明的標準項目範本的中繼資料[!INCLUDE[csprcs](../includes/csprcs-md.md)]類別。  
@@ -112,4 +107,3 @@ ms.locfileid: "51747945"
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)   
  [範本參數](../ide/template-parameters.md)
-

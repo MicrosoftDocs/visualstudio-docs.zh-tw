@@ -1,14 +1,9 @@
 ---
-title: IDebugProperty2::GetParent |Microsoft Docs
-ms.custom: ''
+title: IDebugProperty2::GetParent | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProperty2::GetParent
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 58780469-fe25-4d84-9187-67940ca0767f
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cb1412ea595080b64a4161f6c1e0477947b3277f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 85c8ac00550c4a8e63cd06bdabf9e794f636129d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732863"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930276"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,4 +47,3 @@ int GetParent ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
-

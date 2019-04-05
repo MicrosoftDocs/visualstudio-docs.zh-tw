@@ -1,44 +1,41 @@
 ---
-title: 逐步解說： 偵錯文字範本存取模型 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：偵錯文字範本存取模型 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: af46a7fe-6b98-4d3d-b816-0bbf8e81e220
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4d6b759f62c4faa7e2f75f53f85cb04ba4484a7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924885"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944475"
 ---
-# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>逐步解說：偵錯存取模型的文字範本
+# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>逐步解說：偵錯文字範本存取模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 當您修改或新增特定領域語言方案中的文字範本時，您可能會發生錯誤時，引擎會將轉換原始程式碼或編譯產生的程式碼時的範本。 下列逐步解說會示範一些您可以進行偵錯文字範本的操作。  
   
 > [!NOTE]
->  如需文字範本在一般情況下，請參閱[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。 如需有關偵錯文字範本的詳細資訊，請參閱 <<c0> [ 逐步解說： 偵錯文字範本](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)。  
+>  如需文字範本在一般情況下，請參閱[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。 如需有關偵錯文字範本的詳細資訊，請參閱[逐步解說：偵錯文字範本](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)。  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>建立特定領域語言方案  
  在此程序中，您可以建立具有下列特性的特定領域語言解決方案：  
   
-- 名稱： DebuggingTestLanguage  
+- 名稱：DebuggingTestLanguage  
   
-- 解決方案範本： 最小語言  
+- 解決方案範本：最小語言  
   
 - 副檔名：.ddd  
   
-- 公司名稱： Fabrikam  
+- 公司名稱：Fabrikam  
   
-  如需建立特定領域語言解決方案的詳細資訊，請參閱[如何： 建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
+  如需建立特定領域語言解決方案的詳細資訊，請參閱[How to:建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
   
 ## <a name="creating-a-text-template"></a>建立文字範本  
  將文字範本加入至您的方案。  
@@ -164,11 +161,11 @@ ms.locfileid: "49924885"
   
      (C#)  
   
-     **正在編譯轉換： Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation' 未包含 'ExampleModel' 的定義**  
+     **正在編譯轉換：Microsoft.VisualStudio.TextTemplating\<GUID>.GeneratedTextTransformation' 未包含 'ExampleModel' 的定義**  
   
      (Visual Basic)  
   
-     **正在編譯轉換: 'ExampleModel' 不是成員的 ' Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation'。**  
+     **正在編譯轉換：'ExampleModel' 不是成員的 ' Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation'。**  
   
      在此情況下，文字範本程式碼包含不正確的屬性名稱。 您已指定`ExampleModel`做為屬性名稱，但正確的屬性名稱是`LibraryModel`。 您可以找到正確的屬性名稱中提供參數，如下列程式碼所示：  
   
@@ -180,7 +177,7 @@ ms.locfileid: "49924885"
   
 4.  若要修正程式碼，將屬性名稱變更為`LibraryModel`文字範本程式碼中。  
   
-     所做的變更已醒目提示。  
+     所做的變更已醒目標示。  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
@@ -216,6 +213,3 @@ ms.locfileid: "49924885"
 5.  在 **方案總管**DebugTest.tt，以滑鼠右鍵按一下，然後按一下 **執行自訂工具**。  
   
      現在系統轉換文字範本，並產生對應的輸出檔案。 您不會看到任何錯誤**錯誤清單**視窗。
-
-
-

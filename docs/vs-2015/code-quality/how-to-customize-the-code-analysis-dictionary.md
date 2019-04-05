@@ -1,14 +1,9 @@
 ---
-title: 如何： 自訂程式碼分析字典 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：自訂程式碼分析字典 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis dictionary
 - custom dictionary, code analysis
@@ -18,14 +13,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8dcc182664832775f2aa3878fb3320e01d3901dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e90b92418d9416139e814bd16dc0d655977c0b27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840099"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943423"
 ---
-# <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自訂程式碼分析字典
+# <a name="how-to-customize-the-code-analysis-dictionary"></a>HOW TO：自訂程式碼分析字典
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要檢查拼字、 文法的情況下，與其他命名慣例中的錯誤程式碼中的識別項程式碼分析會使用的內建字典[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]指導方針。 您可以建立自訂字典的 Xml 檔案，來新增、 移除或修改詞彙、 縮寫，以及內建的字典的縮略字。  
@@ -47,10 +42,10 @@ ms.locfileid: "49840099"
             <Word></Word>  
          </Recognized>  
          <Deprecated>  
-            <Term PreferredAlternate=""></Term>  
+            <Term PreferredAlternate=""></Term>  
          </Deprecated>  
          <Compound>  
-            <Term CompoundAlternate=""></Term>  
+            <Term CompoundAlternate=""></Term>  
          </Compound>  
          <DiscreteExceptions>  
             <Term></Term>  
@@ -71,13 +66,13 @@ ms.locfileid: "49840099"
   
 - [字典/文字/無法辨識的/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
   
-- [字典/文字/取代/詞彙 [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
+- [Dictionary/Words/Deprecated/Term[@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
   
-- [字典/文字/複合/詞彙 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
+- [Dictionary/Words/Compound/Term[@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
   
-- [字典/文字/DiscreteExceptions/詞彙](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
+- [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
   
-- [字典/首字母縮略字/CasingExceptions/縮寫](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
+- [Dictionary/Acronyms/CasingExceptions/Acronym](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
 ###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> 字典/文字/辨識/Word  
  若要併入的程式碼分析識別正確拼寫的詞彙之清單中的詞彙，請新增一詞做為字典/文字/Recognized/文字項目的內部文字。 字典/文字/Recognized/文字項目中的詞彙不區分大小寫。  
@@ -100,19 +95,19 @@ ms.locfileid: "49840099"
   
  Recognized/字典/文字節點中的條款適用於下列的程式碼分析規則：  
   
--   [CA1701：資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701:資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702：複合字應該使用正確的大小寫](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702:複合字應該使用正確的大小寫](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
--   [CA1703：資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
+-   [CA1703:資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
--   [CA1704：識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
+-   [CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
--   [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+-   [CA1709:識別項應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
--   [CA1726：建議使用慣用詞彙](../code-quality/ca1726-use-preferred-terms.md)  
+-   [CA1726： 建議使用慣用的詞彙](../code-quality/ca1726-use-preferred-terms.md)  
   
--   [CA2204：常值必須使用正確的拼字](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
+-   [CA2204:常值應該使用正確的拼字](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
 ###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> 字典/文字/無法辨識的/Word  
  若要排除的程式碼分析識別正確拼寫的詞彙之清單中的詞彙，新增要做為字典/文字/無法識別/文字項目的內部文字中排除的字詞。 字典/文字/無法識別/文字項目中的詞彙不區分大小寫。  
@@ -135,21 +130,21 @@ ms.locfileid: "49840099"
   
  無法識別字典/文字節點中的條款適用於下列的程式碼分析規則：  
   
--   [CA1701：資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701:資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702：複合字應該使用正確的大小寫](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702:複合字應該使用正確的大小寫](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
--   [CA1703：資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
+-   [CA1703:資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
--   [CA1704：識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
+-   [CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
--   [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+-   [CA1709:識別項應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
--   [CA1726：建議使用慣用詞彙](../code-quality/ca1726-use-preferred-terms.md)  
+-   [CA1726： 建議使用慣用的詞彙](../code-quality/ca1726-use-preferred-terms.md)  
   
--   [CA2204：常值必須使用正確的拼字](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
+-   [CA2204:常值應該使用正確的拼字](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> 字典/文字/取代/詞彙 [@PreferredAlternate]  
+###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Dictionary/Words/Deprecated/Term[@PreferredAlternate]  
  若要併入的程式碼分析會識別為已被取代的詞彙之清單中的詞彙，請新增一詞做為字典/文字/已過時/詞彙項目的內部文字。 已被取代的詞彙是一個字的拼字正確，但不應使用。  
   
  若要包含建議的替代詞彙警告中，替代 PreferredAlternate 在屬性中指定的詞彙項目。 如果您不想建議替代，您可以將屬性值保留空白。  
@@ -176,17 +171,17 @@ ms.locfileid: "49840099"
   
  已取代字典/文字節點中的條款適用於下列的程式碼分析規則：  
   
--   [CA1701：資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701:資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702：複合字應該使用正確的大小寫](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702:複合字應該使用正確的大小寫](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
--   [CA1703：資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
+-   [CA1703:資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
--   [CA1704：識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
+-   [CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
--   [CA1726：建議使用慣用詞彙](../code-quality/ca1726-use-preferred-terms.md)  
+-   [CA1726： 建議使用慣用的詞彙](../code-quality/ca1726-use-preferred-terms.md)  
   
-###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> 字典/文字/複合/詞彙 [@CompoundAlternate]  
+###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Dictionary/Words/Compound/Term[@CompoundAlternate]  
  內建的字典中識別為單一、 離散的詞彙，而不是複合詞彙的一些術語。 若要納入的複合字識別的程式碼分析的詞彙之清單中的詞彙，並指定正確的大小寫的詞彙，加入詞彙做為字典/文字/複合/詞彙項目的內部文字。 中的詞彙項目 CompoundAlternate 屬性，指定單字的大寫單字 （依照 pascal 命名法大小寫） 的第一個字母組成的複合詞彙。 請注意，內部文字中指定的詞彙會自動新增至字典/文字/DiscreteExceptions 清單。  
   
 - 已被取代的詞彙中的字典/字/已過時/詞彙項目不區分大小寫。  
@@ -211,13 +206,13 @@ ms.locfileid: "49840099"
   
  字典/文字/化合物節點中的條款適用於下列的程式碼分析規則：  
   
--   [CA1701：資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701:資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702：複合字應該使用正確的大小寫](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702:複合字應該使用正確的大小寫](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
--   [CA1703：資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
+-   [CA1703:資源字串應該使用正確的拼字](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
--   [CA1704：識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
+-   [CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
 ###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> 字典/文字/DiscreteExceptions/詞彙  
  若要排除的程式碼分析會識別為單一的詞彙之清單中的詞彙，離散 word 一詞是若有選取時的大小寫規則的複合字，會加入詞彙做為字典/文字/DiscreteExceptions/詞彙項目的內部文字。 字典/文字/DiscreteExceptions/詞彙項目中的詞彙不區分大小寫。  
@@ -240,11 +235,11 @@ ms.locfileid: "49840099"
   
  DiscreteExceptions/字典/文字節點中的條款適用於下列的程式碼分析規則：  
   
--   [CA1701：資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701:資源字串複合字應該使用正確的大小寫](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702：複合字應該使用正確的大小寫](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702:複合字應該使用正確的大小寫](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
-###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> 字典/首字母縮略字/CasingExceptions/縮寫  
+###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Dictionary/Acronyms/CasingExceptions/Acronym  
  包含的程式碼分析會識別為拼寫正確的詞彙清單中的縮寫，以及指出如何縮寫一詞是若有選取時的大小寫規則的複合字，則將詞彙新增為字典/首字母縮略字/CasingExceptions 的內部文字 /縮寫的項目。 字典/首字母縮略字/CasingExceptions/縮寫的項目中的縮寫是區分大小寫。  
   
  **範例**  
@@ -253,7 +248,7 @@ ms.locfileid: "49840099"
 <Dictionary>  
       <Acronyms>  
          <CasingExceptions>  
-            <Acronym>NESW</Acronym>   <!-- North East South West -->  
+            <Acronym>NESW</Acronym>   <!-- North East South West -->  
             ...  
          </CasingExceptions>  
          ...  
@@ -265,7 +260,7 @@ ms.locfileid: "49840099"
   
  字典/首字母縮略字/CasingExceptions 節點中的條款適用於下列的程式碼分析規則：  
   
--   [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+-   [CA1709:識別項應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
 ##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a> 若要套用至專案的自訂字典  
   
@@ -280,6 +275,3 @@ ms.locfileid: "49840099"
 5.  從**建置動作**清單中，選取**CodeAnalysisDictionary**。  
   
 6.  從**複製到輸出目錄**清單中，選取**不會複製**。
-
-
-
