@@ -1,27 +1,22 @@
 ---
 title: 針對 Vspackage 進行疑難排解 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: troubleshooting
 helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c9a7b57a8b15683cb202b71e33e908a1bfd1b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 16988915c9e8353cfc26f32e7d83c556c7f4957d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764000"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000606"
 ---
 # <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ ms.locfileid: "51764000"
   
 3.  請檢查您的 VSPackage 登錄項目。  
   
-     如需詳細資訊，請參閱 <<c0> [ 註冊 Vspackage](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)並[管理 Vspackage](../extensibility/managing-vspackages.md)。  
+     如需詳細資訊，請參閱 <<c0> [ 註冊 Vspackage](internals/registering-vspackages.md)並[管理 Vspackage](../extensibility/managing-vspackages.md)。  
   
 4.  開啟**輸出**視窗中的執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，無法載入 VSPackage。 若要載入 VSPackage 的失敗原因的相關資訊可能會顯示該視窗中。  
   
@@ -57,7 +52,7 @@ ms.locfileid: "51764000"
   
 5.  檢查活動記錄檔。  
   
-     如需詳細資訊，請參閱 <<c0> [ 如何： 使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
+     如需詳細資訊，請參閱[如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
   
 6.  如需有關由 IDE 所擲回的例外狀況的詳細資訊，請按一下**例外狀況**上**偵錯**功能表以讓例外狀況。 在 [**例外狀況**] 對話方塊中選取您想通知的詳細資訊的例外狀況的類型。  
   
@@ -73,7 +68,7 @@ ms.locfileid: "51764000"
   
     1.  VSPackage 的 CLSID 的區段中找到封裝的登錄：  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<版本 >* \Packages  
+         HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages  
   
     2.  確認 SatelliteDll 子機碼所指定的路徑正確無誤。  
   
@@ -96,7 +91,7 @@ ms.locfileid: "51764000"
   
 2.  使用活動記錄檔。  
   
-     藉由將資訊寫入活動記錄檔的關鍵點追蹤 VSPackage 的行為。 當您在零售環境中執行 VSPackage 時，這項技術會特別有用。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
+     藉由將資訊寫入活動記錄檔的關鍵點追蹤 VSPackage 的行為。 當您在零售環境中執行 VSPackage 時，這項技術會特別有用。 如需詳細資訊，請參閱[如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
   
 3.  使用公用符號。  
   
@@ -126,10 +121,9 @@ ms.locfileid: "51764000"
   
 2. 對於 unmanaged 程式碼，以找出在 VSPackage 的 CLSID [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID 登錄節點：  
   
-    HKLM\Software\Microsoft\Visual Studio\\*\<版本 >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID  
   
    請確定 [InprocServer32] 項目具有 VSPackage dll 的正確路徑。  
   
 ## <a name="see-also"></a>另請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)
-
