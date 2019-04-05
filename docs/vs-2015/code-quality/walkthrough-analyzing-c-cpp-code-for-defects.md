@@ -1,14 +1,9 @@
 ---
-title: 逐步解說： 分析 C-C + + 程式碼的缺失 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：分析 C / c + + 程式碼的缺失 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
 - code analysis, walkthroughs
@@ -18,13 +13,13 @@ ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
 caps.latest.revision: 37
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 6a5e98ee673d232065dd522b0b81a21760306979
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e82444513c4e8e766cb7c3201f54089aee3c817
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930550"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>逐步解說：分析 C/C++ 程式碼的缺失
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ ms.locfileid: "51782306"
   
      示範解決方案現在會填入**方案總管 中**。  
   
-2.  在 **建置**功能表上，按一下**重建方案**。  
+2.  在 [建置] 功能表上，按一下 [重建方案]。  
   
      沒有任何錯誤或警告，建置方案。  
   
@@ -83,7 +78,7 @@ ms.locfileid: "51782306"
   
 2.  在 **錯誤清單**，連按兩下 下列警告：  
   
-     警告 C6230： 語意不相同的類型之間發生不當隱含轉換： 在布林內容中使用 HRESULT。  
+     警告 C6230:語意不相同的類型之間發生不當隱含轉換： 在布林內容中使用 HRESULT。  
   
      程式碼編輯器中顯示的函式中造成警告的行`bool``ProcessDomain()`。 這則警告表示 HRESULT 正在使用 'if' 陳述式中所預期布林結果的位置。  
   
@@ -95,7 +90,7 @@ ms.locfileid: "51782306"
   
 4.  在 **錯誤清單**，連按兩下 下列警告：  
   
-     警告 C6282： 不正確的運算子： 測試內容中的指派常數。 是 = = 預期？  
+     警告 C6282:不正確的運算子： 測試內容中的指派常數。 是 = = 預期？  
   
 5.  測試相等，以更正這個警告。 您的程式碼看起來應該類似下列的程式碼：  
   
@@ -137,7 +132,7 @@ ms.locfileid: "51782306"
   
 6.  在 **錯誤清單**，連按兩下 下列警告：  
   
-     警告 C6011： 取值 NULL 指標 'newNode'。  
+     警告 C6011:正在取值 NULL 指標 'newNode'。  
   
      這則警告表示由呼叫端無法檢查傳回的值。 在此情況下，呼叫**AllocateNode**可能會傳回 NULL 值 （請參閱 AllocateNode 的函式宣告的 annotations.h 標頭檔）。  
   
@@ -179,7 +174,7 @@ ms.locfileid: "51782306"
   
 3.  在 **錯誤清單**，連按兩下 下列警告：  
   
-     警告 C6011： 取值 NULL 指標 'node'。  
+     警告 C6011:正在取值 NULL 指標 'node'。  
   
      這則警告指出傳遞至函式的節點可能為 null，並指出發生警告的行號。  
   
@@ -200,7 +195,4 @@ ms.locfileid: "51782306"
      專案組建，而不出現任何警告或錯誤。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說：分析 Managed 程式碼中的程式碼缺失](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-
-
-
+ [逐步解說：分析受控碼的程式碼缺失](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

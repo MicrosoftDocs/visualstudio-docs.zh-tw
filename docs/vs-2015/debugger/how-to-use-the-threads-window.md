@@ -1,14 +1,9 @@
 ---
-title: 如何： 使用執行緒視窗 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用執行緒視窗 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
 dev_langs:
@@ -28,22 +23,22 @@ ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
 caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 925e5ec609c07fa1ca6d703943cf3437f0f9bf84
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cc137465e89dd283cb4536965faf54aee44b2e00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791692"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939070"
 ---
-# <a name="how-to-use-the-threads-window"></a>如何：使用執行緒視窗
+# <a name="how-to-use-the-threads-window"></a>HOW TO：使用執行緒視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 [**執行緒**] 視窗中，您可以檢查及使用您正在偵錯的應用程式中的執行緒。  
   
  **執行緒**視窗包含的資料表，其中每個資料列會代表您的應用程式中的執行緒。 這份表格預設會列出應用程式中的所有執行緒，但是您可以篩選清單，只顯示您感興趣的執行緒。 每個資料行都會包含不同類型的資訊。 您也可以隱藏部分資料行。 如果您顯示所有資料行，則會從左到右顯示下列資訊：  
   
--   旗標資料行，您可以在其中標示想要特別注意的執行緒。 如需如何在執行緒的旗標的資訊，請參閱[如何： 旗標和取消旗標的執行緒](../debugger/how-to-flag-and-unflag-threads.md)。  
+-   旗標資料行，您可以在其中標示想要特別注意的執行緒。 如需如何在執行緒的旗標的資訊，請參閱[How to:旗標，並將執行緒取消標幟](../debugger/how-to-flag-and-unflag-threads.md)。  
   
 -   使用中執行緒資料行，其中黃色箭號表示使用中執行緒。 箭號的外框表示執行進入偵錯工具的執行緒。  
   
@@ -119,7 +114,7 @@ ms.locfileid: "51791692"
   
 #### <a name="to-search-for-specific-threads"></a>若要搜尋特定執行緒  
   
--   在頂端的工具列**執行緒**視窗中，移至**搜尋**方塊，並：  
+-   在 [執行緒] 視窗頂端的工具列中，移至 [搜尋] 方塊，並：  
   
     -   輸入搜尋字串，然後按 ENTER 鍵。  
   
@@ -127,7 +122,7 @@ ms.locfileid: "51791692"
   
     -   按一下下拉式清單旁**搜尋**方塊，然後選取從先前的搜尋的搜尋字串。  
   
--   （選擇性）若要完整的呼叫堆疊併入搜尋中，選取**搜尋呼叫堆疊**。  
+-   (選擇性) 若要將整個呼叫堆疊併入搜尋中，請選取 [搜尋呼叫堆疊]。  
   
 ## <a name="freezing-and-thawing-threads"></a>凍結和解除凍結執行緒  
  當您凍結執行緒時，即使有可用的資源，系統還是不會開始執行執行緒。  
@@ -143,17 +138,17 @@ ms.locfileid: "51791692"
   
 -   在頂端工具列中**執行緒** 視窗中，按一下**凍結執行緒**或是**解除凍結執行緒**。  
   
-     此動作會影響在選取的執行緒**執行緒**視窗。  
+     這個動作只會影響 [執行緒] 視窗中所選取的執行緒。  
   
 ## <a name="displaying-flagged-threads"></a>顯示已標幟的執行緒  
- 您可以加上旗標的執行緒，您想要特別注意的標記中的圖示**執行緒**視窗。 如需詳細資訊，請參閱 <<c0> [ 如何： 旗標和取消旗標的執行緒](../debugger/how-to-flag-and-unflag-threads.md)。 在 [執行緒] 視窗中，您可以選擇顯示所有執行緒或僅顯示加上旗標的執行緒。  
+ 您可以在 [執行緒] 視窗中以圖示來標記您想要特別注意的執行緒。 如需詳細資訊，請參閱[如何：旗標，並將執行緒取消標幟](../debugger/how-to-flag-and-unflag-threads.md)。 在 [執行緒] 視窗中，您可以選擇顯示所有執行緒或僅顯示加上旗標的執行緒。  
   
 #### <a name="to-display-only-flagged-threads"></a>若只要顯示加上旗標的執行緒  
   
 -   在左上角選擇旗標按鈕**執行緒**視窗。  
   
 ## <a name="displaying-thread-call-stacks-and-switching-between-frames"></a>顯示執行緒呼叫堆疊以及切換框架  
- 在多執行緒程式中，每個執行緒都會有它自己的呼叫堆疊。 **執行緒**視窗提供便利的方式，來檢視這些堆疊。  
+ 在多執行緒程式中，每個執行緒都會有它自己的呼叫堆疊。 [執行緒] 視窗則提供便利的方式來檢視這些堆疊。  
   
 #### <a name="to-view-the-call-stack-of-a-thread"></a>若要檢視執行緒的呼叫堆疊  
   
@@ -166,8 +161,5 @@ ms.locfileid: "51791692"
 -   在頂端的工具列**執行緒** 視窗中，按一下**展開呼叫堆疊**或是**摺疊呼叫堆疊**。  
   
 ## <a name="see-also"></a>另請參閱  
- [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [逐步解說：偵錯多執行緒應用程式](../debugger/walkthrough-debugging-a-multithreaded-application.md)
-
-
-
+ [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [逐步解說：針對多執行緒應用程式進行偵錯](../debugger/walkthrough-debugging-a-multithreaded-application.md)

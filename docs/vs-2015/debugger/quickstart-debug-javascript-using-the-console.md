@@ -1,14 +1,9 @@
 ---
-title: 快速入門： 使用偵錯 JavaScript 主控台 |Microsoft Docs
-ms.custom: ''
+title: 快速入門：使用主控台偵錯 JavaScript |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
 dev_langs:
@@ -24,15 +19,15 @@ ms.assetid: ea7adb71-52b6-4a5a-9346-98ca94b06bd7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 61f36594b4158c95621ec240fd7a883accd259a8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bce2eae7c9df527c9b40e8d7f68bda68033449f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802591"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945366"
 ---
-# <a name="quickstart-debug-javascript-using-the-console"></a>快速入門：使用主控台偵錯 JavaScript
+# <a name="quickstart-debug-javascript-using-the-console"></a>快速入門：使用主控台對 JavaScript 進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 適用於 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
@@ -66,7 +61,7 @@ ms.locfileid: "51802591"
 > [!TIP]
 >  如果 [JavaScript 主控台] 視窗已關閉，請選擇 [偵錯] > >  以重新開啟。 只有在指令碼偵錯工作階段期間，才會出現此視窗。  
   
- 使用 [JavaScript 主控台] 視窗，您可以與 App 互動，而不需要停止和重新啟動偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 如需其他 JavaScript 偵錯功能，例如使用 [DOM 總管] 中，以及設定中斷點，詳細資訊，請參閱[快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)並[偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
+ 使用 [JavaScript 主控台] 視窗，您可以與 App 互動，而不需要停止和重新啟動偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 如需其他 JavaScript 偵錯功能，例如使用 [DOM 總管] 中，以及設定中斷點，詳細資訊，請參閱[快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)並[偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
   
 ##  <a name="InteractiveConsole"></a> 使用 JavaScript 主控台視窗進行偵錯  
  下列步驟會建立 `FlipView` App，並顯示如何以互動方式為 JavaScript 程式碼錯誤偵錯。  
@@ -166,7 +161,7 @@ ms.locfileid: "51802591"
   
      App 便會執行，但影像會遺失。 [JavaScript 主控台] 視窗中的 APPHOST 錯誤指出影像遺失。  
   
-9. 使用在模擬器或 Phone 模擬器中執行的 `FlipView` App 時，在主控台視窗輸入提示下 (">>" 符號旁邊) 輸入 `Data.items`，然後按下 Enter。  
+9. 與`FlipView`應用程式在模擬器或 Phone 模擬器中，型別執行`Data.items`於主控台視窗輸入提示 (旁">>"符號) 然後按 Enter。  
   
      `items` 物件的視覺化檢視便會出現在主控台視窗中。 這表示 `items` 物件已具現化，且可在目前的指令碼內容中使用。 在主控台視窗中，您可以按一下物件的每個節點以檢視屬性值 (或使用方向鍵)。 這表示 `items._data` 物件已具現化，且可在目前的指令碼內容中使用。 預設影像 (logo.png) 仍存在於物件中，但遺失影像與預期影像顛倒。  
   
@@ -212,7 +207,7 @@ ms.locfileid: "51802591"
   
 18. 依序選擇 [偵錯]  > **Stop ging** 或按 Shift+F5 停止偵錯，接著修正原始程式碼。  
   
-     完整 default.html 頁面包含更正的範例程式碼，請參閱[偵錯 HTML、 CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)。  
+     如需包含已更正範例程式碼的完整 default.html 頁面，請參閱[對 HTML、CSS 和 JavaScript 範例程式碼進行偵錯](../debugger/debug-html-css-and-javascript-sample-code.md)。  
   
 ##  <a name="InteractiveDebuggingBreakMode"></a> 互動式偵錯和中斷模式  
  您可以在使用 JavaScript 偵錯工具 (如 [JavaScript 主控台] 視窗) 的同時，使用中斷點並逐步執行程式碼。 在偵錯工具中執行的程式遇到中斷點時，偵錯工具會暫時停止執行程式。 當執行暫停時，您的程式會從執行模式切換到中斷模式。 您可以隨時繼續執行。  
@@ -274,9 +269,9 @@ ms.locfileid: "51802591"
 ##  <a name="BrowserSupport"></a> 瀏覽器和平台支援  
  下列平台支援 [JavaScript 主控台] 視窗：  
   
--   使用 JavaScript 和 HTML 的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 和 Windows Phone 市集 App  
+-   使用 JavaScript 和 HTML 的[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 和 Windows Phone 市集 App  
   
--   在 [!INCLUDE[win81](../includes/win81-md.md)] 上執行的 Internet Explorer 11  
+-   在 [!INCLUDE[win81](../includes/win81-md.md)]上執行的 Internet Explorer 11  
   
 -   在 [!INCLUDE[win8](../includes/win8-md.md)]上執行的 Internet Explorer 10  
   
@@ -285,10 +280,7 @@ ms.locfileid: "51802591"
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [偵錯 HTML、 CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
- [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)   
+ [對 HTML、CSS 和 JavaScript 範例程式碼進行偵錯](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md)   
+ [對 WebView 控制項進行偵錯](../debugger/debug-a-webview-control.md)   
  [產品支援和協助工具](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-

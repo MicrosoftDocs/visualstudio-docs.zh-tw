@@ -1,12 +1,9 @@
 ---
 title: 屬性的作業，在 UML 類別圖 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.operation.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 4128f3e2-3a51-4edf-b3e4-b7f170a32f6b
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7a5a2e18c41f99462231da2a11dc80a0ae01e99e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d53c44a70818739e02c34071fd81b8bdfdec87f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804459"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944216"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>UML 類別圖上作業的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ ms.locfileid: "51804459"
 ## <a name="signature-of-an-operation"></a>作業的簽章  
  作業的簽章是文字行，可在 UML 類別圖的類別或介面中代表它。 其形式如下：  
 
- \+ OperationName (parameter1: Type1 [*]，...): ReturnType [\*]  
+ \+ OperationName (parameter1:Type1 [*]...):ReturnType [\*]  
 
  \+ 表示公用可視性。 其他允許的值是 - (private)、# (protected)、~ (package)。  
 
@@ -43,7 +40,7 @@ ms.locfileid: "51804459"
 
  如果未定義傳回類型，則會省略 `: ReturnType`。  
 
- `[*]` 表示參數或傳回類型的多重性。 如果多重性是 1，則會予以省略。  
+ `[*]` 表示參數或傳回類型的多重性。 如果多重性為 1，則會予以省略。  
 
  如需這些屬性的完整描述，請參閱下一節。  
 
@@ -62,7 +59,7 @@ ms.locfileid: "51804459"
 |  **前置條件**  |    (無)    |                                                                                                                            選擇性條件，指定作業開始執行前之系統狀態的假設。                                                                                                                            |
 | **主體條件** |    (無)    |                                                                                                                                                       作業所傳回值的選擇性條件約束。                                                                                                                                                       |
 |   **可見度**    |    Public    |                  允許值以及簽章中出現的字元如下：<br /><br /> **+ Public** - 全域可見<br /><br /> **- Private** - 在擁有類型外部看不到<br /><br /> **# Protected** - 衍生自擁有者的類型可以看到<br /><br /> **~ Package** - 相同套件內的其他類型可以看到。                   |
-|    **簽章**    |  +*名稱*（)   |                                                                                      彙總這個作業的可視性、名稱、參數和傳回類型。 編輯圖表上的簽章，或者編輯個別屬性，即可變更這些屬性。                                                                                      |
+|    **簽章**    |  +*Name*()   |                                                                                      彙總這個作業的可視性、名稱、參數和傳回類型。 編輯圖表上的簽章，或者編輯個別屬性，即可變更這些屬性。                                                                                      |
 |   **工作項目**    | 0 associated |                                                                                                  相關聯工作項目計數。 唯讀。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。                                                                                                  |
 |   **並行**   |  循序  | **循序**-作業或會設計成沒有並行控制。 同時呼叫這項作業可能會導致失敗。<br /><br /> **受防護**-它的其他執行個體完成之前，將會自動封鎖作業。<br /><br /> **並行**-作業設計成可同時執行多個呼叫。 |
 |    **為靜態**    |    False     |                                                                                                  若為 true，則會在這類型的所有執行個體之間共用這項作業。<br /><br /> 若為 true，則作業名稱出現在圖表上時會加上底線。                                                                                                   |
@@ -74,11 +71,8 @@ ms.locfileid: "51804459"
 |    **是唯一的**    |    False     |                                                                                                                                         如果為 true，則集合中沒有重複值。 針對**多重性**1 個以上。                                                                                                                                         |
 
 ## <a name="see-also"></a>另請參閱  
- [UML 類別圖： 參考](../modeling/uml-class-diagrams-reference.md)   
+ [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)   
  [UML 類別圖上的類型屬性](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [在 UML 類別圖上的屬性的屬性](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [在 UML 類別圖上的關聯性的屬性](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
  [UML 類別圖表：方針](../modeling/uml-class-diagrams-guidelines.md)
-
-
-

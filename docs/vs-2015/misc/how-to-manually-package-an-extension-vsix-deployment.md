@@ -1,25 +1,20 @@
 ---
-title: 如何： 手動封裝擴充功能 （VSIX 部署） |Microsoft Docs
-ms.custom: ''
+title: HOW TO：手動封裝擴充功能 （VSIX 部署） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
-manager: douge
-ms.openlocfilehash: 0d10d0e49389b43a288826adf2043c603aeff36a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3537879481430490d32ab30f8f6a2f9f7353659b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925834"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941679"
 ---
-# <a name="how-to-manually-package-an-extension-vsix-deployment"></a>如何：手動封裝擴充功能 (VSIX 部署)
+# <a name="how-to-manually-package-an-extension-vsix-deployment"></a>HOW TO：手動封裝擴充功能 （VSIX 部署）
 您可以建立 VSIX 封裝，來包裝進行部署的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能。 建立封裝的方法有三種：  
   
 - 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK 隨附的其中一個擴充性範本，來建立 VSIX 封裝專案。 這對大多數的情況下是最簡單的選項。  
@@ -31,7 +26,7 @@ ms.locfileid: "49925834"
   本文件描述第三個選項。  
   
 ## <a name="creating-a-vsix-package"></a>建立 VSIX 封裝  
- 若要手動封裝擴充功能，請將 extension.manifest 檔案和 [Content_Types].xml 檔案加入擴充功能專案中，並將它們與組建輸出一起放在壓縮檔中，並重新命名壓縮檔，使其具有 .vsix 副檔名。 要封裝的擴充功能必須是 [VSIX 結構描述](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)所支援的類型。  
+ 若要手動封裝擴充功能，請將 extension.manifest 檔案和 [Content_Types].xml 檔案加入擴充功能專案中，並將它們與組建輸出一起放在壓縮檔中，並重新命名壓縮檔，使其具有 .vsix 副檔名。 要封裝的擴充功能必須是 [VSIX 結構描述](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)所支援的類型。  
   
 > [!NOTE]
 >  VSIX 封裝中的檔案名稱不得包含空格，也不下定義的保留在統一資源識別元 (URI)，做為字元[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)。  
@@ -42,7 +37,7 @@ ms.locfileid: "49925834"
   
 2.  建立 XML 檔案，並將它命名為 `extension.vsixmanifest`。  
   
-3.  根據 VSIX 結構描述，來填寫 extension.vsixmanifest 檔案。 如需範例資訊清單，請參閱 [PackageManifest 項目 (根項目、VSX 結構描述)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187)。  
+3.  根據 VSIX 結構描述，來填寫 extension.vsixmanifest 檔案。 如需範例資訊清單，請參閱 [PackageManifest 項目 (根項目、VSX 結構描述)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)。  
   
 4.  建立第二個 XML 檔案，並將它命名為 `[Content_Types].xml`。  
   
@@ -61,4 +56,4 @@ ms.locfileid: "49925834"
 ## <a name="see-also"></a>另請參閱  
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)   
  [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)   
- [PackageManifest 項目 （根項目、 VSX 結構描述）](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [PackageManifest 項目 （根項目、 VSX 結構描述）](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

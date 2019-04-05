@@ -1,25 +1,20 @@
 ---
 title: 設定 Windows 防火牆進行遠端偵錯 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 39854b47bd31660fdc523bfd122363d5958df8e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a4f123c6dfbe7d3f194c3f07c5ed685cf5cc862c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930114"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆進行遠端偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,16 +80,16 @@ ms.locfileid: "51734589"
 |-|-|-|-|  
 |**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|  
 |3702|傳出|UDP|遠端偵錯工具探索的必要項。|  
-|4020||TCP|針對 VS 2015。 針對每個 Visual Studio 版本，連接埠號碼會遞增 2。 如需詳細資訊，請參閱＜Visual Studio 遠端偵錯工具連接埠指派＞。|  
-|4021||TCP|針對 VS 2015。 針對每個 Visual Studio 版本，連接埠號碼會遞增 2。 如需詳細資訊，請參閱＜Visual Studio 遠端偵錯工具連接埠指派＞。|  
+|4020||TCP|針對 VS 2015。 針對每個 Visual Studio 版本，通訊埠編號會遞增 2。 如需詳細資訊，請參閱＜Visual Studio 遠端偵錯工具連接埠指派＞。|  
+|4021||TCP|針對 VS 2015。 針對每個 Visual Studio 版本，通訊埠編號會遞增 2。 如需詳細資訊，請參閱＜Visual Studio 遠端偵錯工具連接埠指派＞。|  
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging-with-managed-or-native-compatibility-mode"></a>在遠端電腦上以 Managed 或原生相容性模式啟用遠端偵錯的連接埠  
   
 |||||  
 |-|-|-|-|  
 |**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|  
-|135、139、445|傳出|TCP|必要。|  
-|137、138|傳出|UDP|必要。|  
+|135、139、445|傳出|TCP|必要項。|  
+|137、138|傳出|UDP|必要項。|  
 |500、4500|傳出|UDP|如果您的網域原則需要透過 IPSec 進行網路通訊時，則為必要項。|  
 |80|傳出|TCP|網頁伺服器偵錯的必要項。|  
   
@@ -118,6 +113,3 @@ ms.locfileid: "51734589"
   
 ## <a name="see-also"></a>另請參閱  
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

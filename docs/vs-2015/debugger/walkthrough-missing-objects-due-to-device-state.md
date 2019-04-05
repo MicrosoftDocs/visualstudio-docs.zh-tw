@@ -1,25 +1,20 @@
 ---
-title: 逐步解說： 遺漏的物件因裝置狀態而 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：遺漏的物件因裝置狀態而 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5c0ad6017dd6ff660dfbd47977e1a53346cf6c55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 51fb019d428ed7196818c96e759c0abc8f8e68c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773726"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945004"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>逐步解說：因裝置狀態而遺漏的物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +99,7 @@ ms.locfileid: "51773726"
   
 2. 在 [圖形物件表]  中找出 [D3D10 裝置] 物件，然後開啟 [D3D10 裝置]  物件。 新的 [d3d10 裝置]  索引標籤隨即在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中開啟。 若要讓這項工作更容易進行，您可以依 [類型]  排序 [圖形物件表] ：  
   
-    ![圖形物件表] 和 [相關的裝置狀態](../debugger/media/vsg-walkthru1-objtable.png "vsg_walkthru1_objtable")  
+    ![圖形物件表 和 相關的裝置狀態](../debugger/media/vsg-walkthru1-objtable.png "vsg_walkthru1_objtable")  
   
 3. 檢查 [d3d10 裝置]  索引標籤中顯示的裝置狀態，找出潛在的問題。 由於幾何沒有出現的原因是其基本圖形未通過深度測試，因此您可以專注於影響深度測試的裝置狀態，例如深度樣板。 在此情節中，[深度樣板描述]  (在 [輸出合併狀態] 下) 包含 **深度函式** 成員 `D3D10_COMPARISON_GREATER`不常見的值：  
   
@@ -113,6 +108,3 @@ ms.locfileid: "51773726"
    在您判斷轉譯問題的原因可能是深度函式設定不正確之後，您可以使用這項資訊以及您對程式碼的了解，找出深度函式設定不正確的位置，然後再修正問題。 如果您不熟悉程式碼，您可以使用偵錯時收集到的線索來搜尋這個問題；例如，您可以根據此情節中的 [深度樣板描述]  ，在程式碼中搜尋如 "depth" 或 "GREATER" 的文字。 修正程式碼之後，請加以重新建置並再次執行應用程式，以確認轉譯問題已解決：  
   
    ![應用程式修正問題之後](../debugger/media/vsg-walkthru1-finalview.png "vsg_walkthru1_finalview")
-
-
-

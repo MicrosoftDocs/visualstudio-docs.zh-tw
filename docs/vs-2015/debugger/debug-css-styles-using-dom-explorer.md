@@ -1,14 +1,9 @@
 ---
 title: 偵錯 CSS 樣式使用 DOM 總管 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 2dfef7c6-7db2-4550-b694-783b0e535cea
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f5a2c8ef6792403628430cb9881b24e6e279f02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2467bce94a9f9de3df87ab1c05fd4b84a7e68ee4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750141"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942704"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>使用 DOM 總管偵錯 CSS 樣式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +95,7 @@ ms.locfileid: "51750141"
   
 5.  請按 F5 以偵錯模式執行應用程式。  
   
-     當應用程式完成載入時，查看清單項目的標題，例如 [ **群組標題: 1**]。 色彩並未變更，因此嘗試將橙色套用至標題無效。 我們將使用 DOM 總管中的 CSS 索引標籤找出哪裡出錯並且修正。  
+     當應用程式完成載入時，查看項目的標題清單，例如**群組標題：1**. 色彩並未變更，因此嘗試將橙色套用至標題無效。 我們將使用 DOM 總管中的 CSS 索引標籤找出哪裡出錯並且修正。  
   
     > [!TIP]
     >  應用程式出現在模擬器中之後，將模擬器放置在 Visual Studio 視窗旁邊，如此就能立即看見進行選取和變更 CSS 樣式的結果。  
@@ -108,9 +103,9 @@ ms.locfileid: "51750141"
 6.  切換至 Visual Studio，然後按一下 [DOM 總管] 中的 [ **選取項目** ] (或按 Ctrl+B)。 這樣會變更選取模式，讓您按一下就能選取項目，並且將應用程式放置到前景。 按一下，這個模式就會還原。 這是 [ **選取項目** ] 按鈕。 ![在 [DOM 總管] 中選取項目按鈕](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
-    >  您也可以直接在 DOM 總管中選取 HTML 項目。 如需選取項目的詳細資訊，請參閱 <<c0> [ 快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。  
+    >  您也可以直接在 DOM 總管中選取 HTML 項目。 如需選取項目的詳細資訊，請參閱[快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。  
   
-7.  在模擬器首頁的左面板中，將滑鼠游標暫留在清單中第一個項目的標題 ([ **群組標題：1**]) 上。 標題會醒目提示，如下所示：  
+7.  在模擬器中，將滑鼠停駐在清單中，第一個項目的標題**群組標題：1**，在 [首頁] 的左面板中。 標題會醒目提示，如下所示：  
   
      ![使用 [選取項目] 按鈕](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
@@ -162,10 +157,7 @@ ms.locfileid: "51750141"
 16. 若要變更來源 CSS 檔，請按一下 [ **樣式** ] 索引標籤上的 [ **items.css** ] 連結。這樣會開啟 items.css，您可以在其中變更應用程式程式碼中 `color` 樣式的值。 若要重新整理應用程式，而不需要停止再重新開始偵錯工具，請按一下![重新整理 Windows 應用程式 按鈕](../debugger/media/js-refresh.png "JS_Refresh") (**重新整理 Windows 應用程式**) 按鈕**偵錯**工具列。  
   
 ## <a name="see-also"></a>另請參閱  
- [快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md)   
  [使用 DOM 總管偵錯配置](../debugger/debug-layout-using-dom-explorer.md)   
  [檢視 DOM 事件接聽程式](../debugger/view-dom-event-listeners.md)   
  [產品支援和協助工具](http://go.microsoft.com/fwlink/?LinkId=253502)
-
-
-

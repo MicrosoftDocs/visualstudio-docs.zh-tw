@@ -1,24 +1,19 @@
 ---
-title: 逐步解說： 建立使用 JavaScript SDK |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：使用 JavaScript 建立 SDK |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7d82e40de93a8b3323dbd03d9b76e935a1d303b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 39092d309f8924e68016d5eedeb4f78766cfe29c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781045"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930026"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>逐步解說：使用 JavaScript 建立 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -322,4 +317,3 @@ ms.locfileid: "51781045"
   
 ## <a name="see-also"></a>另請參閱  
  [建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)
-

@@ -1,14 +1,9 @@
 ---
 title: 記憶體 Windows |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
 dev_langs:
@@ -31,13 +26,13 @@ ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 704c0ff20dbd11b4640b2d81670a4cdeaf3f1ea0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5a9c68709c1a06a84fe624bee726da5a12920dbd
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724253"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58945283"
 ---
 # <a name="memory-windows"></a>記憶體視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +76,7 @@ ms.locfileid: "51724253"
 2.  輸入或貼上您想要查看，然後按下的位址**ENTER**。  
   
 ## <a name="changing-the-way-the-memory-window-displays-information"></a>變更記憶體視窗顯示資訊的方式  
- 您可以自訂的方式**記憶體**視窗會顯示記憶體內容。 根據預設，記憶體內容會在十六進位格式中以一位元組整數資料型別出現，而且欄位數會自動依據目前視窗寬度來決定。  
+ 您可以自訂 [記憶體] 視窗顯示記憶體內容的方式。 根據預設，記憶體內容會在十六進位格式中以一位元組整數資料型別出現，而且欄位數會自動依據目前視窗寬度來決定。  
   
 #### <a name="to-change-the-format-of-the-memory-contents"></a>若要變更記憶體內容格式  
   
@@ -105,7 +100,7 @@ ms.locfileid: "51724253"
   
     如果開啟實況評估，則會選取這個選項，您只要再按一下該選項即可關閉實況評估。 如果關閉實況評估，則不會選取這個選項，您只要再按一下該選項即可開啟實況評估。  
   
-   您可以隱藏或顯示在頂端的工具列**記憶體**視窗。 隱藏工具列時，您無法存取 [位址] 方塊或其他工具。  
+   您可以在 [記憶體] 視窗的頂端隱藏或顯示工具列。 隱藏工具列時，您無法存取 [位址] 方塊或其他工具。  
   
 #### <a name="to-toggle-the-toolbar"></a>若要切換工具列  
   
@@ -128,8 +123,3 @@ ms.locfileid: "51724253"
   
 ## <a name="see-also"></a>另請參閱  
  [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)
-
-
-
-
-

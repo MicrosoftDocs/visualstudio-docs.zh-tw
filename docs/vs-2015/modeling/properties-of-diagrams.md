@@ -1,12 +1,9 @@
 ---
 title: 圖表的屬性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.dsltools.dsldesigner.dsldiagram
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 00bba4b8-6aa6-4027-96cb-4f4c41a77d3c
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9db932bb5e19cdc10dde3cd8330c4a57208a0c2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 287e9362162c00a5292815ebacfb8047b2a0bb7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280900"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945584"
 ---
 # <a name="properties-of-diagrams"></a>圖表的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,23 +34,20 @@ ms.locfileid: "49280900"
 |填滿色彩|圖表的填滿色彩。|白皮書|  
 |文字色彩|在圖表顯示的文字色彩。|黑色|  
 |存取修飾詞|類別 （公用或內部） 的存取修飾詞。|Public|  
-|自訂屬性|用來將屬性加入至產生的程式碼類別。|\<無 >|  
+|自訂屬性|用來將屬性加入至產生的程式碼類別。|\<無>|  
 |產生雙衍生|如果`True`，將產生的基底類別和部分類別 （以支援透過覆寫自訂）。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|False|  
 |具有自訂建構函式|如果`True`，以原始碼提供自訂建構函式。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
-|繼承修飾詞|描述的繼承來源的程式碼類別，產生自圖表的類型 (`none`，`abstract`或`sealed`)。|無|  
+|繼承修飾詞|描述的繼承來源的程式碼類別，產生自圖表的類型 (`none`，`abstract`或`sealed`)。|None|  
 |基底的圖表|此圖表的基底類別。|(無)|  
 |名稱|此圖表的名稱。|目前的名稱|  
 |命名空間|此圖表附屬於命名空間。|目前的命名空間|  
 |表示類別|這個圖代表根網域類別。|如果適用於目前的根類別|  
-|注意|這個項目相關聯的非正式附註。|\<無 >|  
+|注意|這個項目相關聯的非正式附註。|\<無>|  
 |會公開為屬性填滿色彩|如果`True`，使用者可以設定產生的設計工具圖表的填滿色彩。 若要將此設定，請在以滑鼠右鍵按一下圖表圖形，然後按一下**新增 Explosed**。|False|  
 |公開為屬性的文字色彩|如果`True`，使用者可以設定圖表的文字色彩在產生的設計工具中。 若要將此設定，請在以滑鼠右鍵按一下圖表圖形，然後按一下**新增 Explosed**。|False|  
-|描述|描述用來產生的設計工具的文件。|\<無 >|  
-|顯示名稱|將會顯示在此圖中產生的設計工具的名稱。|\<無 >|  
-|說明關鍵字|用來編製索引的這個圖表 F1 說明關鍵字。|\<無 >|  
+|描述|描述用來產生的設計工具的文件。|\<無>|  
+|顯示名稱|將會顯示在此圖中產生的設計工具的名稱。|\<無>|  
+|說明關鍵字|用來編製索引的這個圖表 F1 說明關鍵字。|\<無>|  
   
 ## <a name="see-also"></a>另請參閱  
- [特定領域語言工具字彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

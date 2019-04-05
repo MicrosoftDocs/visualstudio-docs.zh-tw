@@ -1,14 +1,9 @@
 ---
 title: 支援程式碼變更 (C#) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1d028c35ea5d0f00dd8206fbfe0b086c9dbed067
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5c464c63f7e5059e98cb12e4dfed06c60330160b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724657"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945324"
 ---
 # <a name="supported-code-changes-c"></a>支援的程式碼變更 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "51724657"
   
      使用中陳述式包含了在呼叫堆疊的函式中，為了取得目前陳述式而呼叫的任何陳述式。  
   
-     目前的陳述式在來源視窗中會以黃色背景標示。 其他使用中陳述式會以灰色背景標示，而且是唯讀的。 在中，可以變更這些預設色彩**選項** 對話方塊。  
+     目前的陳述式在來源視窗中會以黃色背景標示。 其他使用中陳述式會以灰色背景標示，而且是唯讀的。 這些預設色彩可以在 [選項] 對話方塊中進行變更。  
   
 -   變更類型的簽章。  
   
@@ -52,7 +47,7 @@ ms.locfileid: "51724657"
 -   在使用中陳述式前後加入 `foreach`、`using` 或 `lock`。  
   
 ## <a name="unsafe-code"></a>Unsafe 程式碼  
- 變更 Unsafe 程式碼的限制與變更 Safe 程式碼的限制相同，但前者多了下列這一項額外限制：[編輯後繼續] 不支援對包含 `stackalloc` 運算子之方法內的 Unsafe 程式碼進行變更。  
+ 變更 Unsafe 程式碼的限制與變更 Safe 程式碼的限制相同，但前者多了下列這一項額外限制：編輯後繼續不支援包含的方法內的 unsafe 程式碼變更`stackalloc`運算子。  
   
 ## <a name="exceptions"></a>例外狀況  
  [編輯後繼續] 支援 `catch` 和 `finally` 區塊的變更，不同之處在於不允許將 `catch` 或 `finally` 區塊加入使用中陳述式前後。  
@@ -64,7 +59,7 @@ ms.locfileid: "51724657"
   
     -   擷取之前尚未擷取的變數。  
   
-    -   變更查詢運算式的類型 (例如，select a => select new { A = a };)  
+    -   變更查詢運算式的型別 (例如，選取 a = > 選取 新增 {A =};)  
   
     -   移除包含使用中陳述式的 `where`。  
   
@@ -93,6 +88,3 @@ ms.locfileid: "51724657"
 ## <a name="see-also"></a>另請參閱  
  [編輯後繼續 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
  [如何：使用編輯後繼續 (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
-
-
-
