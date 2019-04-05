@@ -1,28 +1,23 @@
 ---
-title: 如何： 取得服務 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：取得服務 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ea5f3be4f5792213c5625e4c287195161eb1dd62
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4310dadc1e4e1d601b5e1e7401749d44b132174e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785062"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942630"
 ---
-# <a name="how-to-get-a-service"></a>如何： 取得服務
+# <a name="how-to-get-a-service"></a>HOW TO：取得服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您通常需要取得 Visual Studio 服務，以存取不同的功能。 一般情況下，Visual Studio 服務提供您可以使用的一或多個介面。 您可以從 VSPackage 取得大部分的服務。  
@@ -46,7 +41,7 @@ ms.locfileid: "51785062"
   
     ```  
   
-     此程式碼取得 SVsActivityLog 服務，並將它轉換成<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>介面，可用來寫入活動記錄檔。 如需範例，請參閱[如何： 使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
+     此程式碼取得 SVsActivityLog 服務，並將它轉換成<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>介面，可用來寫入活動記錄檔。 如需範例，請參閱[如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
   
 4.  建置此專案並開始偵錯。 實驗執行個體隨即出現。  
   
@@ -57,7 +52,7 @@ ms.locfileid: "51785062"
   
  靜態<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法會初始化任何 VSPackage 衍生自第一次的快取的服務提供者需仰賴<xref:Microsoft.VisualStudio.Shell.Package>設置。  
   
- 之前設置 VSPackage 呼叫 VSPackage 建構函式，因為全域服務都無法從 VSPackage 的建構函式通常使用。 請參閱[如何： 疑難排解服務](../extensibility/how-to-troubleshoot-services.md)的因應措施。  
+ 之前設置 VSPackage 呼叫 VSPackage 建構函式，因為全域服務都無法從 VSPackage 的建構函式通常使用。 請參閱[如何：疑難排解服務](../extensibility/how-to-troubleshoot-services.md)的因應措施。  
   
  以下是最好的工具視窗或其他非 VSPackage 項目中取得服務的範例。  
   
@@ -90,7 +85,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 提供的服務](../extensibility/how-to-provide-a-service.md)   
+ [如何：提供服務](../extensibility/how-to-provide-a-service.md)   
  [使用和提供服務](../extensibility/using-and-providing-services.md)   
  [服務的基本資訊](../extensibility/internals/service-essentials.md)
-

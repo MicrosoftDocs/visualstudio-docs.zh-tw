@@ -1,14 +1,9 @@
 ---
 title: '&lt;InstallChecks&gt;項目 （啟動載入器） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 03f489c22c8912e332f7d01e6ec4ac48aacda30b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d6156b729835d16d2e83cc76507ad096528994d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891065"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942139"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;項目 （啟動載入器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,10 +77,10 @@ ms.locfileid: "49891065"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
-|`Name`|必要。 若要檢查組件的完整的名稱。|  
-|`PublicKeyToken`|必要。 與此強式名稱組件相關聯的公開金鑰的縮寫的格式。 儲存在 GAC 中的所有組件必須具有名稱、 版本和公開金鑰。|  
-|`Version`|必要。 組件的版本。<br /><br /> 版本號碼的格式\<*主要版本*>。\<*次要版本*>。\<*建置版本*>。\<*修訂版本*>。|  
+|`Property`|必要項。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
+|`Name`|必要項。 若要檢查組件的完整的名稱。|  
+|`PublicKeyToken`|必要項。 與此強式名稱組件相關聯的公開金鑰的縮寫的格式。 儲存在 GAC 中的所有組件必須具有名稱、 版本和公開金鑰。|  
+|`Version`|必要項。 組件的版本。<br /><br /> 版本號碼的格式\<*主要版本*>。\<*次要版本*>。\<*建置版本*>。\<*修訂版本*>。|  
 |`Language`|選擇性。 當地語系化的組件的語言。 預設為 `neutral`。|  
 |`ProcessorArchitecture`|選擇性。 這個安裝的目標電腦處理器。 預設為 `msil`。|  
   
@@ -96,8 +91,8 @@ ms.locfileid: "49891065"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
-|`PackageFile`|必要。 要執行的外部程式。 程式必須安裝散發套件的一部分。|  
+|`Property`|必要項。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
+|`PackageFile`|必要項。 要執行的外部程式。 程式必須安裝散發套件的一部分。|  
 |`Arguments`|選擇性。 提供命令列引數所命名的可執行檔`PackageFile`。|  
   
 ## <a name="filecheck"></a>FileCheck  
@@ -107,9 +102,9 @@ ms.locfileid: "49891065"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
-|`FileName`|必要。 要尋找之檔案的名稱。|  
-|`SearchPath`|必要。 磁碟或在其中尋找檔案的資料夾中。 這必須是相對路徑，如果`SpecialFolder`指派; 否則它必須是絕對路徑。|  
+|`Property`|必要項。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
+|`FileName`|必要項。 要尋找之檔案的名稱。|  
+|`SearchPath`|必要項。 磁碟或在其中尋找檔案的資料夾中。 這必須是相對路徑，如果`SpecialFolder`指派; 否則它必須是絕對路徑。|  
 |`SpecialFolder`|選擇性。 具有特殊意義，以 Windows 或為資料夾[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]。 預設值是將解譯`SearchPath`為絕對路徑。 有效值包括以下的值：<br /><br /> `AppDataFolder`. 此應用程式資料資料夾[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]的應用程式; 目前的使用者專屬。<br /><br /> `CommonAppDataFolder`. 所有使用者所使用的應用程式資料資料夾。<br /><br /> `CommonFilesFolder`. 目前使用者的 Common Files 資料夾中。<br /><br /> `LocalDataAppFolder`. 非漫遊應用程式資料的資料夾。<br /><br /> `ProgramFilesFolder`. 標準的 Program Files 資料夾的 32 位元應用程式。<br /><br /> `StartUpFolder`. 包含在系統啟動時啟動的所有應用程式的資料夾。<br /><br /> `SystemFolder`. 32 位元系統 Dll 所在的資料夾。<br /><br /> `WindowsFolder`. Windows 系統安裝所在的資料夾。<br /><br /> `WindowsVolume`. 磁碟機或磁碟分割包含 Windows 系統安裝中。|  
 |`SearchDepth`|選擇性。 用來表示指定的檔案的子資料夾中搜尋深度。 深度優先搜尋。 預設值為 0，這會將搜尋限制到所指定的最上層資料夾`SpecialFolder`並**SearchPath**。|  
   
@@ -120,8 +115,8 @@ ms.locfileid: "49891065"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
-|`Product`|必要。 已安裝的產品 GUID。|  
+|`Property`|必要項。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
+|`Product`|必要項。 已安裝的產品 GUID。|  
 |`Feature`|選擇性。 適用於特定的功能，安裝的應用程式的 GUID。|  
   
 ## <a name="registrycheck"></a>RegistryCheck  
@@ -131,8 +126,8 @@ ms.locfileid: "49891065"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
-|`Key`|必要。 登錄機碼的名稱。|  
+|`Property`|必要項。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
+|`Key`|必要項。 登錄機碼的名稱。|  
 |`Value`|選擇性。 若要擷取之登錄值的名稱。 預設值是傳回的預設值的文字。 `Value` 必須是字串或 DWORD。|  
   
 ## <a name="registryfilecheck"></a>RegistryFileCheck  
@@ -142,8 +137,8 @@ ms.locfileid: "49891065"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Property`|必要。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
-|`Key`|必要。 登錄機碼的名稱。 其值會解譯為檔案的路徑上，除非`File`屬性設定。 如果此索引鍵不存在，`Property`未設定。|  
+|`Property`|必要項。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
+|`Key`|必要項。 登錄機碼的名稱。 其值會解譯為檔案的路徑上，除非`File`屬性設定。 如果此索引鍵不存在，`Property`未設定。|  
 |`Value`|選擇性。 若要擷取之登錄值的名稱。 預設值是傳回的預設值的文字。 `Value` 必須是字串。|  
 |`FileName`|選擇性。 檔案名稱。 如果指定，取得從登錄機碼的值會假設是一個目錄路徑，而此名稱會附加到其。 如果未指定，從登錄所傳回的值會假設檔案的完整路徑。|  
 |`SearchDepth`|選擇性。 用來表示指定的檔案的子資料夾中搜尋深度。 深度優先搜尋。 預設值為 0，這會將搜尋限制的登錄機碼值所指定的最上層資料夾。|  
@@ -190,6 +185,3 @@ ms.locfileid: "49891065"
 ## <a name="see-also"></a>另請參閱  
  [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)   
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)
-
-
-

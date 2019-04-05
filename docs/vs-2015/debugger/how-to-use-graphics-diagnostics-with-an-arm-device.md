@@ -1,27 +1,22 @@
 ---
-title: 如何： 搭配 ARM 裝置使用圖形診斷 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：搭配 ARM 裝置使用圖形診斷 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 346fd3c0-9e92-4ab8-bb3b-1aa9000a2483
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4c5122cb009b3624388ff8825b34cae8ca44a546
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f2a606d6b22dabc8bab0477a240499021a4312c3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728684"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000550"
 ---
-# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>如何：搭配 ARM 裝置使用圖形診斷
+# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>HOW TO：搭配 ARM 裝置使用圖形診斷
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 圖形診斷支援遠端偵錯 ARM 裝置上的 Direct3D 應用程式，且 ARM 裝置執行 Windows RT 8.1 或 Windows Phone 8.1。 您可以從在裝置上執行的 Direct3D 應用程式擷取圖形資訊，或使用裝置做為先前擷取之圖形資訊的播放電腦。  
@@ -35,7 +30,7 @@ ms.locfileid: "51728684"
   
 1.  安裝[ARM 套件原則](http://msdn.microsoft.com/windows/desktop/dn469188)ARM 型裝置上。  
   
-2.  安裝[遠端偵錯工具](http://go.microsoft.com/fwlink/?LinkId=393086)ARM 型裝置上。  
+2.  安裝[遠端偵錯工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)ARM 型裝置上。  
   
 > [!IMPORTANT]
 >  您可能需要針對 Windows Phone 8.1 裝置，註冊您的電話以進行開發。 若要這麼做，您必須是註冊的開發人員。 如需詳細資訊，請參閱 <<c0> [ 如何部署和執行應用程式，適用於 Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)。  
@@ -53,6 +48,3 @@ ms.locfileid: "51728684"
 ## <a name="see-also"></a>另請參閱  
  [在遠端電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)   
  [如何：變更圖形診斷播放電腦](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)
-
-
-

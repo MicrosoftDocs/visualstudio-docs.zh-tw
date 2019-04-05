@@ -1,12 +1,9 @@
 ---
-title: 如何： 設定項目上的 CLR 屬性 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：項目上設定 CLR 屬性 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.EditAttributesDialog
 helpviewer_keywords:
@@ -15,15 +12,15 @@ ms.assetid: b3db3c74-920c-4701-9544-6f75cbe8b7c9
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b77e0f1f31c0f617e80a27de4e1d0ab1d0b3d2eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 576b9a6890a6a6de398e917c1c152dcdb2f3ef16
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263994"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945917"
 ---
-# <a name="how-to-set-clr-attributes-on-an-element"></a>如何：在項目上設定 CLR 屬性
+# <a name="how-to-set-clr-attributes-on-an-element"></a>HOW TO：在項目上設定 CLR 屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 自訂屬性是可以加入至定義域項目、 圖形、 連接器和圖表的特殊屬性。 您可以新增任何屬性繼承自`System.Attribute`類別。  
@@ -46,10 +43,7 @@ ms.locfileid: "49263994"
   
      **自訂屬性**屬性現在顯示的屬性，以下列格式：  
   
-     `[` *AttributeName* `(` *ParameterName* `=` *類型* `)]`  
+     `[` *AttributeName* `(` *ParameterName* `=` *Type* `)]`  
   
 ## <a name="see-also"></a>另請參閱  
- [特定領域語言工具字彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

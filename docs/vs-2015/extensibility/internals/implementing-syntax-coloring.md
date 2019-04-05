@@ -1,14 +1,9 @@
 ---
 title: 實作語法著色 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30a53b1fc04bd08835ccf0ff0b0edb2e5d117fcb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f068b0b442f6f358d71948ecc2a4d0d21870a6a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775026"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940343"
 ---
 # <a name="implementing-syntax-coloring"></a>實作語法著色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51775026"
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 未指定剖析器介面，和剖析器實作是完全由您決定。 不過，Visual Studio 語言套件專案提供預設的剖析器實作。 Managed 程式碼，managed 的封裝架構 (MPF) 提供了完整支援以色彩標示文字。  
   
- 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作語法著色的新方式，請參閱[逐步解說︰ 反白顯示的文字](../../extensibility/walkthrough-highlighting-text.md)。  
+ 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作語法著色的新方式，請參閱[逐步解說：反白顯示文字](../../extensibility/walkthrough-highlighting-text.md)。  
   
 > [!NOTE]
 >  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
@@ -70,8 +65,7 @@ ms.locfileid: "51775026"
  Managed 的 package framework (MPF) 提供實作的色彩標示器所需的所有類別。 您的語言服務類別應該繼承<xref:Microsoft.VisualStudio.Package.LanguageService>類別並實作所需的方法。 您必須提供掃描器和剖析器藉由實作<xref:Microsoft.VisualStudio.Package.IScanner>介面，並傳回該介面的執行個體<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>方法 (其中一個方法必須實作在<xref:Microsoft.VisualStudio.Package.LanguageService>類別)。 如需詳細資訊，請參閱 <<c0> [ 舊版語言服務中的語法上色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 使用內建可設定色彩的項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
+ [如何：使用內建可設定色彩的項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
  [自訂色彩的項目](../../extensibility/internals/custom-colorable-items.md)   
  [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [舊版語言服務中的語法上色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)
-

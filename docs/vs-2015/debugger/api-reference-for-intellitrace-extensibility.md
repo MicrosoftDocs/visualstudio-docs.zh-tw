@@ -1,27 +1,22 @@
 ---
 title: IntelliTrace 擴充性的 API 參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTrace, API reference
 ms.assetid: 46e6c648-293b-45c2-a29e-cca9c36cd865
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b7194dfa00ba48cc24989f9b9eefdfca30856739
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fd1387e02b96c9a5a4781e014641a49bbb5280ba
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760278"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000546"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 擴充性的 API 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,10 +32,5 @@ ms.locfileid: "51760278"
  [IntelliTrace](../debugger/intellitrace.md)  
  提供如何使用 IntelliTrace 進行偵錯的詳細資訊。  
   
- [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkId=166091)  
+ [MSDN Code Gallery](https://code.msdn.microsoft.com/)  
  管理顯示如何使用 IntelliTrace 擴充性的範例應用程式。
-
-
-
-
-

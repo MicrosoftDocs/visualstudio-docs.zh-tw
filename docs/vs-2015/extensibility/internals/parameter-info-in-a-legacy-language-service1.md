@@ -1,14 +1,9 @@
 ---
 title: 舊版語言服務 1 中的參數資訊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, method tips
 - method tips
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 462702fb73cd48f324c02344da5c5ed7c3957f23
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8250709a6bc9477bb0fc154b8652e2b3e17aef01
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727943"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940473"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>舊版語言服務中的參數資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -85,4 +80,3 @@ IntelliSense 的 參數資訊工具提示提供使用者有關他們在語言建
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>  
   
      您會收到呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>方法，當您關閉方法提示視窗。
-

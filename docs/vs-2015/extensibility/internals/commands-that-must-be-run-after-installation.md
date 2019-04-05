@@ -1,26 +1,21 @@
 ---
 title: 必須在安裝後執行的命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90ce272270ffd511ee3b0efe8a711730ccdb92b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8448b00085ab7e7a151c935eee4d8a8b1423bd1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724190"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944840"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必須在安裝後執行的命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ ms.locfileid: "51724190"
   
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>若要執行 devenv.exe CustomAction 資料表的資料列  
   
-|動作|類型|原始程式檔|目標|  
+|動作|類型|原始程式檔|Target|  
 |------------|----------|------------|------------|  
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|  
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|  
@@ -89,4 +84,3 @@ ms.locfileid: "51724190"
   
 ## <a name="see-also"></a>另請參閱  
  [使用 Windows Installer 安裝 VSPackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

@@ -1,25 +1,20 @@
 ---
-title: EndCapture |Microsoft Docs
-ms.custom: ''
+title: EndCapture | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 06084c3b-e065-49b6-968e-d578762fb871
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3547de40190a7a591b3781d982f34378c3354044
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2a451746cae978f141b30fb7295a82310e04367c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817551"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939587"
 ---
 # <a name="endcapture"></a>EndCapture
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,6 +35,3 @@ void EndCapture();
 ## <a name="see-also"></a>另請參閱  
  [BeginCapture](../debugger/begincapture.md)   
  [CaptureCurrentFrame](../debugger/capturecurrentframe.md)
-
-
-

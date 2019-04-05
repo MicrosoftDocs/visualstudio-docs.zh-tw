@@ -1,11 +1,8 @@
 ---
 title: System.Activities 索引標籤上，選擇工具箱項目對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES_COMPONENTS
@@ -14,13 +11,13 @@ ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: bed2df94edefdd074fab12244b93c032670f8cec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ddeffb8d6421044db0f1e7bb6db63c3fa7e2119e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292041"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943380"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>系統活動索引標籤，選擇工具箱項目對話方塊
 此索引標籤**選擇工具箱項目** 對話方塊會顯示一份[!INCLUDE[wf](../includes/wf-md.md)]活動、 範本和項目可供您。 若要顯示這份清單，請選取**選擇工具箱項目**從**工具**功能表或以滑鼠右鍵按一下**工具箱**，然後選取**選擇的項目**以顯示**選擇工具箱項目**對話方塊中，然後選取其**System.Activities**  索引標籤。根據預設，此清單包含 System.Activities、 System.ServiceModel.Activities 及 System.Activities.Core.Presentation 組件; 的工作流程活動不過，只有系統提供顯示的活動和活動，顯示在其他組件透過新增**工具箱**依預設會核取。 最近新增的活動，會自動選取，並會出現在**工具箱**當您按下**確定**在對話方塊中。 此外，這些項目會出現在**工具箱**下新的類別對應到活動/項目/範本所在的命名空間。  

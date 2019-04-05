@@ -1,12 +1,9 @@
 ---
-title: UML 類別圖： 參考 |Microsoft Docs
-ms.custom: ''
+title: UML 類別圖：參考 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.generalization.properties
 - vs.teamarch.logicalclassdiagram.toolbox
@@ -26,15 +23,15 @@ ms.assetid: b7c88be0-0d86-4d65-af74-f37e8812d20f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4f3a4fe9949236045238688a9edcd5eef911efb8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 07930dc31651d11aedccc6c597070bbba62ff0b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741067"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945100"
 ---
-# <a name="uml-class-diagrams-reference"></a>UML 類別圖表：參考
+# <a name="uml-class-diagrams-reference"></a>UML 類別圖：參考資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UML 類別圖描述您的應用程式在內部以及與使用者溝通所使用的物件和資訊結構。 它所描述的資訊不會參考任何特殊實作。 其類別和關聯性可利用許多方式實作，例如資料庫資料表、XML 節點或軟體物件的組合。  
@@ -42,7 +39,7 @@ UML 類別圖描述您的應用程式在內部以及與使用者溝通所使用�
 > [!NOTE]
 >  本主題說明 UML 類別圖。 還有另一種類別圖，也就是 .NET 類別圖，可用來將程式碼視覺化。 如需詳細資訊，請參閱 <<c0> [ 設計和檢視類別與類型](http://go.microsoft.com/fwlink/?LinkId=142231)。  
   
- 若要建立 UML 類別圖中，在**架構**功能表上，選擇**新增 UML 或分層圖**。 如需如何繪製 UML 類別圖的詳細資訊，請參閱[UML 類別圖： 方針](../modeling/uml-class-diagrams-guidelines.md)。 如需如何建立和繪製模型圖表的詳細資訊，請參閱[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
+ 若要建立 UML 類別圖中，在**架構**功能表上，選擇**新增 UML 或分層圖**。 如需如何繪製 UML 類別圖的詳細資訊，請參閱[UML 類別圖：指導方針](../modeling/uml-class-diagrams-guidelines.md)。 如需如何建立和繪製模型圖表的詳細資訊，請參閱[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -59,13 +56,13 @@ UML 類別圖描述您的應用程式在內部以及與使用者溝通所使用�
   
   ![三個類別，顯示關聯性和屬性](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
   
-| **圖形** |       **目**        |                                                                                                                                                             **描述**                                                                                                                                                              |
+| **Shape** |       **目**        |                                                                                                                                                             **描述**                                                                                                                                                              |
 |-----------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |     1     |        **類別**         |                                                           共用指定結構和行為特性之物件的定義。 如需詳細資訊，請參閱 < [uml 類型之屬性的類別圖表](../modeling/properties-of-types-on-uml-class-diagrams.md)。                                                            |
 |     1     |        分類器        |                                                                                                             類別、介面或列舉的一般名稱。 元件、使用案例和行動也屬於分類器。                                                                                                             |
 |     2     | 摺疊/展開控制項 |                                                                                         如果您看不見分類器的詳細資料，請按一下分類器左上角的展開器。 您可能還需要按一下每一個區段的 [+]。                                                                                         |
 |     3     |      **屬性**       |   附加至每一個分類器執行個體之類型的值。<br /><br /> 若要新增的屬性，按一下**屬性**區段，然後按**ENTER**。 輸入此屬性的簽章。 如需詳細資訊，請參閱 <<c0> [ 屬性的屬性，在 UML 類別圖](../modeling/properties-of-attributes-on-uml-class-diagrams.md)。   |
-|     4     |      **作業**       | 分類器的執行個體可執行的方法或函式。 若要新增作業，請按一下**Operations**區段，然後按**ENTER**。 輸入此作業的簽章。 如需詳細資訊，請參閱 <<c0> [ 屬性的作業，在 UML 類別圖](../modeling/properties-of-operations-on-uml-class-diagrams.md)。 |
+|     4     |      **Operation**       | 分類器的執行個體可執行的方法或函式。 若要新增作業，請按一下**Operations**區段，然後按**ENTER**。 輸入此作業的簽章。 如需詳細資訊，請參閱 <<c0> [ 屬性的作業，在 UML 類別圖](../modeling/properties-of-operations-on-uml-class-diagrams.md)。 |
 |     5     |     **關聯**      |                                                                  兩個分類器成員之間的關聯性。 如需詳細資訊，請參閱 <<c0> [ 屬性的關聯性，在 UML 類別圖](../modeling/properties-of-associations-on-uml-class-diagrams.md)。                                                                   |
 |    5a     |     **彙總**      |                                                                                                    代表共用擁有權關聯性的關聯。 **彙總**擁有者角色的屬性設定為**共用**。                                                                                                     |
 |    5b     |     **組合**      |                                                                                                      代表整體與組成部分之間關聯性的關聯。 **彙總**擁有者角色的屬性設定為**複合**。                                                                                                      |
@@ -93,11 +90,8 @@ UML 類別圖描述您的應用程式在內部以及與使用者溝通所使用�
   
 ## <a name="see-also"></a>另請參閱  
  [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)   
- [UML 類別圖： 方針](../modeling/uml-class-diagrams-guidelines.md)   
+ [UML 類別圖表：指導方針](../modeling/uml-class-diagrams-guidelines.md)   
  [UML 類別圖上的類型屬性](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [在 UML 類別圖上的屬性的屬性](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [UML 類別圖上作業的屬性](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [UML 類別圖表上的關聯屬性](../modeling/properties-of-associations-on-uml-class-diagrams.md)
-
-
-

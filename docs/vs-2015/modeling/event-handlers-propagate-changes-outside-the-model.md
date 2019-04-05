@@ -1,12 +1,9 @@
 ---
 title: 事件處理常式傳播模型外的變更 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
@@ -14,13 +11,13 @@ ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7bfddc0903c520469833a0f160444202edf07c32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c723e0a2cc76b6432fc6f209a7edf4a988a0b3fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823693"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945087"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件處理常式傳播模型外的變更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -194,7 +191,4 @@ private static void AlbumTitleAdjuster(object sender,
   
 ## <a name="see-also"></a>另請參閱  
  [回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)   
- [程式碼範例： 電路圖表](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-
+ [範例程式碼：電路圖表](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

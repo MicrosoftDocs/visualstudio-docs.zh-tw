@@ -1,14 +1,9 @@
 ---
-title: 如何： 為 Managed 程式碼缺失建立工作項目 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：為 Managed 程式碼缺失建立工作項目 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - managed code, creating work items for code defects
 - code analysis, creating work items
@@ -17,14 +12,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d0ed4ad9693ffbca44154f328a74b45810705457
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26dbe873d1552136c36748e638085bf39e5e530c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235078"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943421"
 ---
-# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>如何：為 Managed 程式碼的缺失建立工作項目
+# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>HOW TO：為受控碼的缺失建立工作項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用工作項目追蹤功能來記錄工作項目從[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]。 若要使用這項功能，您的專案必須在 Team 專案的一部分[!INCLUDE[esprfound](../includes/esprfound-md.md)]。  
@@ -44,6 +39,3 @@ ms.locfileid: "49235078"
 2.  指向**建立工作項目**，按一下 建立工作項目類型。  
   
      單一工作項目會為所有選取的警告，讓您指定錯誤的資訊建立。
-
-
-

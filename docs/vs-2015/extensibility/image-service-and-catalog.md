@@ -1,21 +1,17 @@
 ---
 title: 影像服務 」 和 「 類別目錄 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0e01d60bd7fab0b435f1b10ae744c3454aa0e44
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 95d3de67dce269696bdd3fbea7ec562511bd0347
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774363"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59000505"
 ---
 # <a name="image-service-and-catalog"></a>影像服務與資料庫目錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +46,11 @@ ms.locfileid: "51774363"
 ## <a name="how-it-works"></a>它的運作方式  
  映像服務可以提供點陣圖影像適用於任何支援的 UI 架構：  
 
-- WPF: BitmapSource  
+- WPF:BitmapSource  
 
-- WinForms: System.Drawing.Bitmap  
+- WinForms:System.Drawing.Bitmap  
 
-- Win32: HBITMAP  
+- Win32:HBITMAP  
 
   影像服務流程圖  
 
@@ -170,7 +166,7 @@ ms.locfileid: "51774363"
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **屬性** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **定義**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |      URI      |                                                                                                                                                                                                                                                                                                               [必要]定義從何處可以載入映像的 URI。 它可以是下列其中一項：<br /><br /> -A [Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)使用應用程式: / / 授權單位<br />-絕對元件資源參考<br />-包含原生資源的檔案路徑                                                                                                                                                                                                                                                                                                               |
-|  背景   | [選用]指出哪些類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> *Light:* 淺色背景上可用的來源。<br /><br /> <em>暗色調：</em>來源可以使用深色背景上。<br /><br /> *高對比：* 來源可以使用高對比模式中的任何背景上。<br /><br /> *HighContrastLight:* 來源可以使用高對比模式中是淺色背景。<br /><br /> *HighContrastDark:* 來源可用在高對比模式中使用深色背景上。<br /><br /> 如果省略背景屬性，則來源可用的任何背景。<br /><br /> 如果背景*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉來源的色彩。 如果省略或設為背景*高對比*，反轉的來源的色彩由映像的控制**AllowColorInversion**屬性。 |
+|  背景   | [選用]指出哪些類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> *Light:* 淺色背景上可用的來源。<br /><br /> <em>暗色調：</em>來源可以使用深色背景上。<br /><br /> *HighContrast:* 高對比模式中的任何背景上可用的來源。<br /><br /> *HighContrastLight:* 高對比模式中的淺色背景上可用的來源。<br /><br /> *HighContrastDark:* 在高對比模式中使用深色背景上可用的來源。<br /><br /> 如果省略背景屬性，則來源可用的任何背景。<br /><br /> 如果背景*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉來源的色彩。 如果省略或設為背景*高對比*，反轉的來源的色彩由映像的控制**AllowColorInversion**屬性。 |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  A\<來源 > 項目可以有一個下列的選擇性子項目：  
@@ -178,10 +174,10 @@ ms.locfileid: "51774363"
 ||||  
 |-|-|-|  
 |**目**|**屬性 （全部所需）**|**定義**|  
-|\<大小 >|值|來源會使用指定的大小 （以裝置為單位） 的映像。 映像會正方形。|  
-|\<SizeRange >|MinSize、 MaxSize|來源將使用的映像從 MinSize 至大小上限 （以裝置為單位） （含）。 映像會正方形。|  
+|\<Size>|值|來源會使用指定的大小 （以裝置為單位） 的映像。 映像會正方形。|  
+|\<SizeRange>|MinSize, MaxSize|來源將使用的映像從 MinSize 至大小上限 （以裝置為單位） （含）。 映像會正方形。|  
 |\<維度 >|寬度高度|來源將使用指定的寬度和高度 （以裝置為單位） 的映像。|  
-|\<DimensionRange >|MinWidth 或 MinHeight<br /><br /> MaxWidth MaxHeight|來源將用於從最小寬度/高度的映像，以最大寬度/高度 （以裝置為單位） （含）。|  
+|\<DimensionRange>|MinWidth 或 MinHeight<br /><br /> MaxWidth MaxHeight|來源將用於從最小寬度/高度的映像，以最大寬度/高度 （以裝置為單位） （含）。|  
 
  A\<來源 > 項目也可以選擇性\<NativeResource > 子元素，定義\<來源 > 從原生組件，而不是 managed 組件載入的。  
 
@@ -244,7 +240,7 @@ ms.locfileid: "51774363"
 
     -   如果您使用所需**BrushToColorConverter**如 ImageThemingUtilities。**ImageBackgroundColor**在 WPF UI  
 
--   **Microsoft.VisualStudio.Shell。\<VSVersion >.0**  
+-   **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
 
     -   如果您使用所需**IVsUIObject**類型  
 
@@ -655,7 +651,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  更新您的程式碼，使用映像服務要求透過更新對應的 moniker。 (這可能表示更新至**CrispImages**的 managed 程式碼，或從映像服務要求 HBITMAPs 或 HICONs 和將它們傳遞原生程式碼。)  
 
 ## <a name="testing-your-images"></a>測試您的映像  
- 您可以使用影像庫檢視器工具來測試您的映像資訊清單，請確定已正確撰寫的所有項目。 您可以找到中的工具[Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx)。 您可以找到這項工具和其他文件[此處](http://aka.ms/VSImageThemeTools)。  
+ 您可以使用影像庫檢視器工具來測試您的映像資訊清單，請確定已正確撰寫的所有項目。 您可以找到中的工具[Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx)。 您可以找到這項工具和其他文件[此處](https://aka.ms/VSImageThemeTools)。  
 
 ## <a name="additional-resources"></a>其他資源  
 
@@ -972,11 +968,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphJSharpProject||DocumentCollection|  
         |GlyphJSharpDocument||文件|  
         |GlyphForwardType||GoToNext|  
-        |GlyphCallersGraph||下列|  
+        |GlyphCallersGraph||CallTo|  
         |GlyphCallGraph||CallFrom|  
         |GlyphWarning||StatusWarning|  
         |GlyphMaybeReference||QuestionMark|  
-        |GlyphMaybeCaller||下列|  
+        |GlyphMaybeCaller||CallTo|  
         |GlyphMaybeCall||CallFrom|  
         |GlyphExtensionMethod||ExtensionMethod|  
         |GlyphExtensionMethodInternal||ExtensionMethod|  
@@ -995,4 +991,3 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphXmlDescendantQuestion||XmlDescendantLowConfidence|  
         |GlyphXmlDescendantCheck||XmlDescendantHighConfidence|  
         |GlyphCompletionWarning||IntellisenseWarning|
-

@@ -7,7 +7,13 @@ author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
 ms.workload:
-  - data-storage
+- data-storage
+ms.openlocfilehash: a31d151b22e65449c15537b0f9a29c268b5e9787
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323236"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>使用 Visual Studio 中的資料工具來開發資料解決方案
 

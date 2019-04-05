@@ -1,25 +1,22 @@
 ---
 title: 巡覽 UML 模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f77e72c55c0984f66a6884b0582716e5529abd0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727765"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941873"
 ---
 # <a name="navigate-the-uml-model"></a>巡覽 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ ms.locfileid: "51727765"
   
  如果您從模型中刪除項目，則會自動刪除它參與的任何關聯性，並更新另一端的屬性。  
   
- 如果「UML 規格」將多重性 0..1 指派給屬性，則值可能是 `null`。 多重性的最大值大於 1，表示.NET 屬性類型： `IEnumerable<`*型別*`>`。  
+ 如果「UML 規格」將多重性 0..1 指派給屬性，則值可能是 `null`。 多重性的最大值大於 1，表示.NET 屬性類型：`IEnumerable<`*型別*`>`。  
   
  如需有關如何周遊關聯性的詳細資訊，請參閱 <<c0> [ 使用 UML API 巡覽關聯性](../modeling/navigate-relationships-with-the-uml-api.md)。  
   
@@ -61,7 +58,7 @@ ms.locfileid: "51727765"
   
  每個模型項目都會建立具有一個 Owner。 如需詳細資訊，請參閱 < [UML 模型中建立項目和關聯性](../modeling/create-elements-and-relationships-in-uml-models.md)。  
   
- ![類別圖表： 模型、 圖表、 圖形與項目](../modeling/media/uml-mm1.png "UML_MM1")  
+ ![類別圖表：模型、 圖表、 圖形與項目](../modeling/media/uml-mm1.png "UML_MM1")  
   
 ## <a name="shapes-and-diagrams"></a>圖案和圖表  
  UML 模型中的項目可以顯示在圖表上。 不同類型的圖表可以顯示不同的 IElement 子類型。  
@@ -134,6 +131,3 @@ foreach (IShape<IInterface> in
 ## <a name="see-also"></a>另請參閱  
  [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)   
  [使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)
-
-
-

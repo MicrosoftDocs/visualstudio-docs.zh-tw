@@ -1,25 +1,22 @@
 ---
 title: 網域屬性值變更處理常式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
 ms.assetid: 96d8f392-045e-4bc5-b165-fbaa470a3e16
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7b79220a82ce2afc3cbafebedfbfea0c9caa649f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ad8cc11947bdaa99fa7d3ee1d48576896859e598
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232722"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59000443"
 ---
 # <a name="domain-property-value-change-handlers"></a>網域屬性值變更處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +94,7 @@ if (newValue > 10)
   
 ```  
   
-### <a name="alternative-technique-calculated-properties"></a>替代方法：計算屬性  
+### <a name="alternative-technique-calculated-properties"></a>替代方法：導出的屬性  
  先前的範例示範如何使用 OnValueChanged() 將某個網域屬性的值傳播至另一個網域屬性。 每個屬性都有自己的儲存值。  
   
  相反地，您可以考慮將衍生屬性定義為計算屬性。 在此情況下，屬性不會有自己的儲存值，因此每當需要屬性值時，都會評估定義的函式。 如需詳細資訊，請參閱 <<c0> [ 計算和儲存體的自訂屬性](../modeling/calculated-and-custom-storage-properties.md)。  
@@ -106,7 +103,7 @@ if (newValue > 10)
   
  不過，計算屬性的潛在缺點是每次使用值都會評估運算式，因此可能呈現效能問題。 此外，計算屬性沒有 OnValueChanging() 和 OnValueChanged()。  
   
-### <a name="alternative-technique-change-rules"></a>替代方法：ChangeRule  
+### <a name="alternative-technique-change-rules"></a>替代方法：變更規則  
  如果您定義了 ChangeRule，則會在屬性值變更的異動結束時執行此規則。  如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。  
   
  如果在一個異動中進行數項變更，ChangeRule 會在所有變更完成時執行。 相較之下，則會執行 OnValue...方法執行時的一些變更尚未執行。 視您要達成的目標而定，ChangeRule 可能更適用。  
@@ -177,6 +174,3 @@ namespace msft.FieldChangeSample
   }  
 }  
 ```  
-  
-
-

@@ -1,14 +1,9 @@
 ---
 title: 將 VSIX 封裝當地語系化 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - localize package
 - localize extension
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2f6bc666e244fed2bc2922ce4878434730a643e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2392f77ef3b78176dd33defd012b828d7a918b5b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750591"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939503"
 ---
 # <a name="localizing-vsix-packages"></a>將 VSIX 套件當地語系化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51750591"
   
  MyExtension.dll  
   
- extension.vsixmanifest  
+ Extension.vsixmanifest  
   
  [Content_Types].xml  
   
@@ -52,7 +47,7 @@ ms.locfileid: "51750591"
 >  中的 VSIX 支援的專案範本[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]產生 VSIX 資訊清單並將它命名為 source.extension.vsixmanifest。 當 Visual Studio 會建置專案時，它會複製該檔案的內容到 Extension.VsixManifest VSIX 封裝中。  
   
 ## <a name="the-extensionvsixlangpack-file"></a>Extension.vsixlangpack 檔案  
- Extension.vsixlangpack 檔案會遵循[VSIX 語言套件結構描述](../extensibility/vsx-language-pack-schema-reference.md)。 此結構描述[VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)根元素，而且這些包含四個子項目： [LocalizedName](../extensibility/localizedname-element-vsix-language-pack-schema.md)， [LocalizedDescription](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)， [MoreInfoURL](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)，並[授權](../extensibility/license-element-vsix-language-pack-schema.md)。 這些子元素會對應至`Name`， `Description`， `MoreInfoURL`，以及`License`子項目的`Identifier`Extension.vsixmanifest 檔案項目。  
+ Extension.vsixlangpack 檔案會遵循[VSIX 語言套件結構描述](../extensibility/vsx-language-pack-schema-reference.md)。 此結構描述[VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)根元素，而且這些包含四個子項目：[LocalizedName](../extensibility/localizedname-element-vsix-language-pack-schema.md)， [LocalizedDescription](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)， [MoreInfoURL](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)，和[授權](../extensibility/license-element-vsix-language-pack-schema.md)。 這些子元素會對應至`Name`， `Description`， `MoreInfoURL`，以及`License`子項目的`Identifier`Extension.vsixmanifest 檔案項目。  
   
  當您建立 vsixlangpack 檔案時，您必須設定`Include in Vsix`屬性設`true`。 否則，會忽略的當地語系化的安裝文字。  
   
@@ -101,4 +96,3 @@ ms.locfileid: "51750591"
  [VSIX LanguagePack 元素](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)   
  [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)   
  [VSIX 專案範本](../extensibility/vsix-project-template.md)
-
