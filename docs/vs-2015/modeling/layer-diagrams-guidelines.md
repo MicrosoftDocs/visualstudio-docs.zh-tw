@@ -1,12 +1,9 @@
 ---
-title: 圖層圖表： 指導方針 |Microsoft Docs
-ms.custom: ''
+title: 分層圖：指導方針 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, layer diagrams
 - layer diagrams
@@ -16,23 +13,23 @@ ms.assetid: 2903bec7-a93b-46a6-aac6-994ac4f3f1a7
 caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fa7483a000b5abd59b846edceead3af93f41dbc4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ad85ccb9e58b45b1e6354c7abf0cb5651aa6d92e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734460"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945872"
 ---
-# <a name="layer-diagrams-guidelines"></a>圖層圖表：方針
+# <a name="layer-diagrams-guidelines"></a>分層圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-藉由建立描述您的應用程式架構的高階*分層圖*Visual Studio 中。 使用分層圖驗證程式碼，以確定程式碼與設計保持一致。 您也可以在建置流程中包含圖層驗證。 請參閱[Channel 9 影片： 設計和驗證架構使用圖層圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。  
+藉由建立描述您的應用程式架構的高階*分層圖*Visual Studio 中。 使用分層圖驗證程式碼，以確定程式碼與設計保持一致。 您也可以在建置流程中包含圖層驗證。 請參閱[Channel 9 影片：設計和驗證架構使用圖層圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。  
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ## <a name="what-is-a-layer-diagram"></a>圖層圖表是什麼?  
- 圖層圖表就像傳統架構圖表一樣會識別主要元件或功能性的設計單位及其相依性。 在圖表中，每個節點稱為*層*，表示命名空間、 專案或其他成品的邏輯群組。 您可以繪製應該存在於您設計中的相依性。 與傳統架構圖表不同的是，您可以在原始程式碼中驗證實際的相依性是否符合所指定的預期相依性。 在 [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] 上製作正常組建的驗證部分，就可以確保程式碼即使日後變更仍然會繼續依照系統架構。 請參閱[分層圖： 參考](../modeling/layer-diagrams-reference.md)。  
+ 圖層圖表就像傳統架構圖表一樣會識別主要元件或功能性的設計單位及其相依性。 在圖表中，每個節點稱為*層*，表示命名空間、 專案或其他成品的邏輯群組。 您可以繪製應該存在於您設計中的相依性。 與傳統架構圖表不同的是，您可以在原始程式碼中驗證實際的相依性是否符合所指定的預期相依性。 在 [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] 上製作正常組建的驗證部分，就可以確保程式碼即使日後變更仍然會繼續依照系統架構。 請參閱[分層圖：參考資料](../modeling/layer-diagrams-reference.md)。  
   
 ##  <a name="Update"></a> 如何設計或更新您的應用程式使用圖層圖表  
  下列步驟概述了如何在開發程序內使用圖層圖表。 本主題稍後的章節會描述每個步驟的更多相關詳細資料。 如果您正在開發新的設計，請略過參考現有程式碼的步驟。  
@@ -118,7 +115,7 @@ ms.locfileid: "51734460"
 ##  <a name="NewAreas"></a> 設計您的應用程式的新區域  
  當您著手開發新專案或新專案的新區域時，可以繪製圖層與相依性，以便有助您先識別主要元件，再著手開發程式碼。  
   
--   **顯示可識別的架構模式**在圖層圖表，如果可能的話。 例如，描述桌面應用程式的圖層圖表可能包括簡報、網域邏輯和資料儲存區等圖層。 涵蓋應用程式內單一功能的圖層圖表可能具有例如模型、檢視和控制器等的圖層。 如需有關這種模式的詳細資訊，請參閱[典範與實例： 應用程式架構](http://go.microsoft.com/fwlink/?LinkId=145794)。  
+-   **顯示可識別的架構模式**在圖層圖表，如果可能的話。 例如，描述桌面應用程式的圖層圖表可能包括簡報、網域邏輯和資料儲存區等圖層。 涵蓋應用程式內單一功能的圖層圖表可能具有例如模型、檢視和控制器等的圖層。 如需有關這種模式的詳細資訊，請參閱[典範與實例：應用程式架構](http://go.microsoft.com/fwlink/?LinkId=145794)。  
   
      如果您經常建立類似的模式，請建立自訂工具。 請參閱[定義自訂模型工具箱項目](../modeling/define-a-custom-modeling-toolbox-item.md)。  
   
@@ -166,8 +163,5 @@ ms.locfileid: "51734460"
  若要確保程式碼的日後變更符合圖層圖表，請在您的方案標準建置流程中包含圖層驗證。 不論其他小組成員何時建置方案，只要程式碼與圖表圖層中的相依性之間有任何差異，將會報告為建置錯誤。 如需有關如何在建置程序中包含圖層驗證的詳細資訊，請參閱 <<c0> [ 使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [分層圖： 參考](../modeling/layer-diagrams-reference.md)   
+ [圖層圖表：參考](../modeling/layer-diagrams-reference.md)   
  [從程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 使用 DOM 總管偵錯配置 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: ded6566d-fc29-49a7-8029-dee8e50fe733
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787742"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940077"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>使用 DOM 總管偵錯配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "51787742"
 > [!TIP]
 >  您在 [配置]  索引標籤中所做的變更並非永久變更。 您可以對原始程式碼進行永久變更，然後使用 [偵錯] 工具列上的 [重新整理 Windows App]  按鈕 (僅限 Windows 市集和 Windows Phone 市集 App) 重新整理 App。 如此一來，就不必重新啟動偵錯工具。  
   
- 若要使用 DOM 總管 中修改的配置不會顯示在方塊模型的部分，請參閱[快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)並[使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)。  
+ 若要使用 DOM 總管 中修改的配置不會顯示在方塊模型的部分，請參閱[快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)並[使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)。  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>配置問題修正範例  
  此範例顯示如何選取中樞/樞紐分析範本中的清單項目，並解譯在 [配置]  索引標籤上的方塊模型值，然後變更其中一個屬性值來修正配置問題。  
@@ -88,7 +83,7 @@ ms.locfileid: "51787742"
 8.  切換至 Visual Studio，並選擇 [DOM 總管] 中的 [選取項目]  (或按 Ctrl+B)。 這樣會變更選取模式，讓您按一下就能選取項目，並且將 App 放置到前景。 按一下，這個模式就會還原。  
   
     > [!TIP]
-    >  您也可以使用方向鍵或其他方法，直接在 [DOM 總管] 中選取 HTML 項目。 如需選取項目的詳細資訊，請參閱 <<c0> [ 快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。  
+    >  您也可以使用方向鍵或其他方法，直接在 [DOM 總管] 中選取 HTML 項目。 如需選取項目的詳細資訊，請參閱[快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。  
   
 9. 在 Phone 模擬器中，選取被剪掉一半的其中一個影像的灰色右半部。 反白顯示選取的項目 (在 Windows Phone 模擬器中，如下所示)：  
   
@@ -119,7 +114,7 @@ ms.locfileid: "51787742"
 11. 若要得知如何套用 margin-left 規則，請選擇 [計算]  索引標籤，然後查看 margin-left 規則底下的內容。 您可以看到此規則已設定 5em 值，但是計算值為 66.66px 或 146.66px (視您的目標裝置而定)。  
   
     > [!TIP]
-    >  **計算**索引標籤會顯示 margin-left 規則設定`..hubpage .hub. section4 .sub-image-row img`CSS 選取器中 hub.css。 在本示範 App 中，這就是您需要修正的位置。  
+    >  **計算**索引標籤會顯示 margin-left 規則設定`..hubpage .hub. section4 .sub-image-row img`CSS 選取器中 hub.css。 在本示範應用程式中，這就是您需要修正的位置。  
   
      您也可以使用 [配置]  索引標籤來測試修改配置值的結果。  
   
@@ -132,9 +127,6 @@ ms.locfileid: "51787742"
 15. 切換至 Phone 模擬器 (Emulator) 或模擬器 (Simulator)。 更新過的 margin-left 值已套用至區段 4 影像。 margin-left 規則下 [計算]  索引標籤的這些值也會一併更新。  
   
 ## <a name="see-also"></a>另請參閱  
- [快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md)   
  [偵錯使用 DOM 總管 中的 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)   
  [檢視 DOM 事件接聽程式](../debugger/view-dom-event-listeners.md)
-
-
-

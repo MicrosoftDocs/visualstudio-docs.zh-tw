@@ -1,14 +1,9 @@
 ---
 title: Name 元素 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Name
 helpviewer_keywords:
@@ -16,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 62964708e4211e0d845808de13c5f907c4dbd4f2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a3da08450df7edf9046aaa926d89c182c91d03a7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725834"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944404"
 ---
 # <a name="name-element-visual-studio-templates"></a>名稱項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定範本的名稱，因為它會出現在**新的專案**或是**加入新項目** 對話方塊。  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<名稱 >  
   
 ## <a name="syntax"></a>語法  
@@ -100,4 +95,3 @@ ms.locfileid: "51725834"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
-

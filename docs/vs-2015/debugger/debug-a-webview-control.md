@@ -1,14 +1,9 @@
 ---
 title: 偵錯 WebView 控制項 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 7d105907-8b39-4d07-8762-5c5ed74c7f21
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f8a4dcc64903b97e3b469fb962777e3b90f84ba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 69c7aa5e83da4ec829b439940d4affcd536bc128
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729073"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939521"
 ---
 # <a name="debug-a-webview-control"></a>偵錯 WebView 控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +28,17 @@ ms.locfileid: "51729073"
   
  若要在 Windows 執行階段應用程式中檢查及偵錯 `WebView` 控制項，您可以設定 Visual Studio 在您啟動應用程式時附加指令碼偵錯工具。 從 Visual Studio 2013 Update 2 開始，您有兩種方法可以使用偵錯工具與 `WebView` 控制項互動：  
   
--   開啟[DOM 總管](../debugger/quickstart-debug-html-and-css.md)如`WebView`執行個體，並且檢查 DOM 項目、 調查 CSS 樣式問題，並測試動態呈現的樣式變更。  
+-   開啟 `WebView` 執行個體的 [DOM 總管](../debugger/quickstart-debug-html-and-css.md)，然後檢查 DOM 元素、調查 CSS 樣式問題，並測試動態呈現的樣式變更。  
   
--   選取網頁或`iFrame`中顯示`WebView`中的目標執行個體[JavaScript 主控台](../debugger/javascript-console-commands.md) 視窗中，然後互動使用主控台命令的網頁。 主控台提供對於目前指令碼執行內容的存取。  
+-   選取 `WebView` 執行個體中顯示的網頁或 `iFrame`，作為 [JavaScript Console](../debugger/javascript-console-commands.md) 視窗中的目標，然後使用主控台命令與網頁互動。 主控台提供對於目前指令碼執行內容的存取。  
   
 ### <a name="attach-the-debugger-c-visual-basic-c"></a>附加偵錯工具 (C#、Visual Basic、C++)  
   
 1.  在 Visual Studio 中，將 `WebView` 控項項加入 Windows 執行階段元件。  
   
-2.  在 [方案總管] 中，開啟專案屬性中的選擇**屬性**從專案的捷徑功能表。  
+2.  在 [方案總管] 中，從專案的捷徑功能表選擇 [屬性]，即可開啟專案的屬性。  
   
-3.  選擇**偵錯**。 在 **應用程式處理序**清單中，選擇**指令碼**。  
+3.  選擇 [偵錯]。 在 [應用程式程序] 清單中，選擇 [指令碼]。  
   
      ![附加 script 偵錯工具](../debugger/media/js-dom-webview-script-debugger.png "JS_DOM_WebView_Script_Debugger")  
   
@@ -52,11 +47,11 @@ ms.locfileid: "51729073"
     > [!NOTE]
     >  藉由停用 JIT 偵錯，您可以隱藏在部分網頁上發生之未處理例外的對話方塊。 在 Visual Studio Express 中，一律停用 JIT 偵錯。  
   
-5.  按 F5 鍵啟動偵錯作業。  
+5.  按 F5 開始偵錯作業。  
   
 ### <a name="use-the-dom-explorer-to-inspect-and-debug-a-webview-control"></a>使用 [DOM 總管] 檢查及偵錯 WebView 控制項  
   
-1.  (C#、Visual Basic、C++) 將指令碼偵錯工具附加到應用程式。 請參閱第一節裡的指示。  
+1.  (C#、Visual Basic、C++)  將指令碼偵錯工具附加到應用程式。 請參閱第一節裡的指示。  
   
 2.  如果您尚未這麼做，請將 `WebView` 控制項加入到應用程式，然後按 F5 開始偵錯。  
   
@@ -72,7 +67,7 @@ ms.locfileid: "51729073"
   
 ### <a name="use-the-javascript-console-window-to-inspect-and-debug-a-webview-control"></a>使用 [JavaScript 主控台] 視窗檢查及偵錯 WebView 控制項  
   
-1.  (C#、Visual Basic、C++) 將指令碼偵錯工具附加到應用程式。 請參閱第一節裡的指示。  
+1.  (C#、Visual Basic、C++)  將指令碼偵錯工具附加到應用程式。 請參閱第一節裡的指示。  
   
 2.  如果您尚未這麼做，請將 `WebView` 控制項加入到應用程式，然後按 F5 開始偵錯。  
   
@@ -89,10 +84,7 @@ ms.locfileid: "51729073"
     > [!NOTE]
     >  使用主控台，您可以一次與單一 `WebView`、`iFrame`、共用連絡人或 Web 背景工作互動。 每個項目需要個別的 Web 平台主機 (WWAHost.exe) 執行個體。 您一次可以與一個主機互動。  
   
-6.  檢視及修改您的應用程式中的變數或使用主控台命令中所述[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)並[JavaScript Console commands](../debugger/javascript-console-commands.md)。  
+6.  檢視及修改您的應用程式中的變數或使用主控台命令中所述[快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)並[JavaScript Console commands](../debugger/javascript-console-commands.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-
+ [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md)

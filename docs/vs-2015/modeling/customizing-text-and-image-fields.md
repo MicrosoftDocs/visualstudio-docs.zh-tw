@@ -1,23 +1,20 @@
 ---
 title: 自訂文字和影像欄位 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: a7259fc0-5afa-4356-b27e-5641e01628a9
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c73f14e2b581ea5a9c0bd22f50c11ed205c0f804
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c3201d1c22ac718497b2e355ccf02047ee82a7aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271124"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945918"
 ---
 # <a name="customizing-text-and-image-fields"></a>自訂文字和影像欄位
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -277,6 +274,3 @@ partial class ExampleShape
  [設定圖表上的背景影像](../modeling/setting-a-background-image-on-a-diagram.md)   
  [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

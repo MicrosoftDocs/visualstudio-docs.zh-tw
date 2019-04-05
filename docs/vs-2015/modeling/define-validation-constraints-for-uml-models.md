@@ -1,25 +1,22 @@
 ---
 title: 定義 UML 模型的驗證條件約束 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, validation constraints
 ms.assetid: 87b3b0da-122d-4121-9318-200c38ff49d0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6647d37636ed0e79d817113e388ae5df23a88a29
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942749"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>定義 UML 模型的驗證條件約束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -190,9 +187,9 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。  
   
-     **疑難排解**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未啟動：  
+     **疑難排解**:如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]未啟動：  
   
-    -   您如有多個專案，請確定已將 VSIX 專案設定為解決方案的啟始專案。  
+    -   如果您有多個專案，請確定 VSIX 專案已設定為方案的啟始專案。  
   
     -   在方案總管的啟始專案或唯一專案的捷徑功能表上，選擇 [屬性] 。 在專案屬性編輯器中，選取 [偵錯]  索引標籤。請確定 [啟動外部程式] ** 欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：  
   
@@ -212,7 +209,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 6.  按兩下錯誤報告。 如果報告中提到的項目顯示在畫面上，會以反白顯示。  
   
-     **疑難排解**：如果 [驗證]  命令未出現在功能表上，請確定：  
+     **疑難排解**:如果**驗證**命令不會出現在功能表上，請確定：  
   
     -   驗證專案在 VSIX 專案 **source.extensions.manifest** 的 [資產]  索引標籤中列為 MEF 元件。  
   
@@ -262,13 +259,13 @@ public void ValidateSomething
 |||  
 |-|-|  
 |`[Export(typeof(System.Action <ValidationContext, object>))]`|使用 Managed Extensibility Framework (MEF) 將方法定義為驗證條件約束。|  
-|`[ValidationMethod (ValidationCategories.Menu)]`|指定驗證的執行時機。 使用位元 OR (&#124;) 如果您想要結合多個選項。<br /><br /> `Menu` = 由 [驗證] 功能表叫用。<br /><br /> `Save`＝儲存模型時叫用。<br /><br /> `Open`＝開啟模型時叫用。 `Load`＝儲存模型時叫用，但如有違反，將會警告使用者，其無法重新開啟此模型。 這也會在剖析模型前的載入時呼叫。|  
+|`[ValidationMethod (ValidationCategories.Menu)]`|指定驗證的執行時機。 使用位元 OR (&#124;) 如果您想要結合多個選項。<br /><br /> `Menu` = 由 [驗證] 功能表叫用。<br /><br /> `Save` = 儲存模型時叫用。<br /><br /> `Open` = 開啟模型時叫用。 `Load` = 儲存模型時叫用，但如有違反，將會警告使用者，其無法重新開啟此模型。 這也會在剖析模型前的載入時呼叫。|  
 |`public void ValidateSomething`<br /><br /> `(ValidationContext context,`<br /><br /> `IElement element)`|以條件約束所要套用的目標項目類型取代第二個參數 `IElement` 。 指定類型的所有項目將會叫用此條件約束方法。<br /><br /> 方法的名稱並不重要。|  
   
  您可以在第二個參數中，以各種不同類型定義所需數量的驗證方法。 叫用驗證時，會對所有符合參數類型的模型項目，呼叫每個驗證方法。  
   
 ### <a name="reporting-validation-errors"></a>報告驗證錯誤  
- 如果要建立錯誤報告，請使用 `ValidationContext` 所提供的方法：  
+ 如果要建立錯誤報告，請使用 `ValidationContext`所提供的方法：  
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
@@ -278,7 +275,7 @@ public void ValidateSomething
   
 - `elementsWithError` 可指出模型中的項目。 當使用者按兩下錯誤報告時，會選取代表該項目的圖形。  
   
-  `LogError(),` `LogWarning()` 和 `LogMessage()` 將訊息放在錯誤清單的不同區段。  
+  `LogError(),` `LogWarning()` 和`LogMessage()`將訊息放在錯誤清單的不同區段。  
   
 ## <a name="how-validation-methods-are-applied"></a>如何套用驗證方法  
  驗證會套用到模型中的每個項目，包括關聯性和較大項目的組件，例如類別的屬性及作業的參數。  
@@ -397,7 +394,7 @@ context.LogError(... , usecase);
   
    在很少見的情況下，故障的擴充功能無法載入並且會在錯誤視窗中建立報告，但不會顯示在擴充管理員中。 在此情況下，您可以移除延伸模組，從下列位置刪除檔案所在 *%localappdata%* 通常*DriveName*: \Users\\*的使用者名稱*\AppData\Local:  
   
-   *%Localappdata%* **\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ##  <a name="Example"></a> 範例  
  這個範例會在項目之間的相依性關聯性中尋找迴圈。  
@@ -479,6 +476,3 @@ private bool NoDependencyLoops(ValidationContext context,
 ## <a name="see-also"></a>另請參閱  
  [定義與安裝模型擴充功能](../modeling/define-and-install-a-modeling-extension.md)   
  [使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)
-
-
-

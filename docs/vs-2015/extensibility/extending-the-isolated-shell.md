@@ -1,26 +1,21 @@
 ---
 title: 擴充 Isolated 的 Shell |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dc700e0a1b8753a26067eff90df9ff58765de8d1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af64fa948754350eb1beb0f70dbac33981b595f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792017"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944265"
 ---
 # <a name="extending-the-isolated-shell"></a>擴充 Isolated 的 Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51792017"
 您可以擴充 Visual Studio 隔離 shell 藉由將 VSPackage、 Managed Extensibility Framework (MEF) 元件的組件或泛型的 VSIX 專案新增至您的獨立的 shell 應用程式。  
   
 > [!NOTE]
->  下列步驟 presuppose 已使用 Visual Studio Shell 獨立模式的專案範本，來建立基本的 isolated 的 shell 應用程式。 如需有關這個專案範本的詳細資訊，請參閱 <<c0> [ 逐步解說： 建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
+>  下列步驟 presuppose 已使用 Visual Studio Shell 獨立模式的專案範本，來建立基本的 isolated 的 shell 應用程式。 如需有關這個專案範本的詳細資訊，請參閱[逐步解說：建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio Package 專案範本位置  
  Visual Studio Package 專案範本位在 [新增專案]  對話方塊的三個不同位置：  
@@ -126,5 +121,4 @@ ms.locfileid: "51792017"
 8.  建置並執行方案。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說︰建立基本的 Isolated Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
-
+ [逐步解說：建立基本的 Isolated 的 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

@@ -1,12 +1,9 @@
 ---
 title: 讀取 XML 資料至資料集 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +22,13 @@ ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219727"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930570"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>將 XML 資料讀入資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +49,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 5.  加入程式碼來顯示 XML 結構描述中的 XML 檔案中根據<xref:System.Windows.Forms.TextBox>控制項  
   
 > [!NOTE]
->  對話方塊和功能表命令，您會看到 [說明] 中所述，根據您目前使用的設定或版本可能會有所不同，您正在使用。 若要變更您的設定，在**工具**功能表上，選取**匯入和匯出設定**。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  對話方塊和功能表命令，您會看到 [說明] 中所述，根據您目前使用的設定或版本可能會有所不同，您正在使用。 若要變更您的設定，在**工具**功能表上，選取**匯入和匯出設定**。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="create-a-new-project"></a>建立新專案  
  在此步驟中，您可以建立 Visual Basic 或 Visual C# 的專案包含本逐步解說。  
@@ -172,7 +169,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
     |控制項|屬性|設定|  
     |-------------|--------------|-------------|  
     |`TextBox1`|**多行**|`true`|  
-    ||**捲軸**|**垂直**|  
+    ||[ScrollBars]|**垂直**|  
     |`Button1`|**名稱**|`ReadXmlButton`|  
     ||**Text**|`Read XML`|  
     |`Button2`|**名稱**|`ShowSchemaButton`|  
@@ -228,9 +225,8 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
      [!code-vb[VbRaddataFillingAndExecuting#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb#3)]  
   
 ## <a name="test-the-form"></a>測試表單  
- 您現在可以測試表單，以確定它如預期般運作。  
-  
-#### <a name="to-test-the-form"></a>若要測試表單  
+
+您現在可以測試表單，以確定它如預期般運作。
   
 1.  選取  **F5**執行應用程式。  
   
@@ -243,15 +239,15 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
      文字方塊會顯示 XML 檔案的 XML 結構描述。  
   
 ## <a name="next-steps"></a>後續步驟  
- 本逐步解說會說明 XML 檔案讀入資料集，以及建立結構描述的 XML 檔案的內容為基礎的基本概念。 以下是接下來，您可能會執行一些工作：  
+
+本逐步解說會說明 XML 檔案讀入資料集，以及建立結構描述的 XML 檔案的內容為基礎的基本概念。 以下是接下來，您可能會執行一些工作：  
   
 -   編輯資料集並將它寫回為 XML 中的資料。 如需詳細資訊，請參閱<xref:System.Data.DataSet.WriteXml%2A>。  
   
--   編輯資料集中的資料，並寫出至資料庫。 如需詳細資訊，請參閱 <<c0> [ 儲存資料](../data-tools/saving-data.md)。  
+-   編輯資料集中的資料，並寫出至資料庫。
   
 ## <a name="see-also"></a>另請參閱  
- [資料逐步解說](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [資料逐步解說](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)  \(機器翻譯\)  
  [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)   
- [準備您的應用程式接收資料](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [準備您的應用程式以接收資料](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)  \(機器翻譯\)  
  [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)
-

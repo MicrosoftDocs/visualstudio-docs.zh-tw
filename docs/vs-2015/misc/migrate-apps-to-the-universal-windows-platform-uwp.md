@@ -1,25 +1,20 @@
 ---
 title: 應用程式移轉至通用 Windows 平台 (UWP) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b093a8474d9dd7971b6a5f311deea9a522730c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791744"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940561"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>將應用程式移轉至通用 Windows 平台 (UWP)
 視需要手動變更現有使用 Visual Studio 2015 RC 為 Windows 市集 8.1 應用程式、Windows Phone 8.1 應用程式或通用 Windows 應用程式所建立的專案檔案，使其能夠用於 Visual Studio 2015 RTM。 (如果您的 Windows 8.1 通用應用程式同時具有 Windows 應用程式專案和 Windows Phone 專案，則需要遵循移轉每個專案的步驟)。  
@@ -93,11 +88,11 @@ ms.locfileid: "51791744"
   
     1.  設定的值\<平台 > 項目： **x86**。  
   
-    2.  新增\<TargetPlatformIdentifier > 項目並將其值設定為： **UAP**。  
+    2.  新增\<TargetPlatformIdentifier > 項目並將其值設定為：**UAP**。  
   
     3.  現有的值變更\<TargetPlatformVersion > 是您所安裝的通用 Windows 平台版本值的項目。 也將新增\<TargetPlatformMinVersion > 項目並為它提供相同的值。  
   
-    4.  值變更\<MinimumVisualStudioVersion > 項目： **14**。  
+    4.  值變更\<MinimumVisualStudioVersion > 項目：**14**.  
   
     5.  取代\<ProjectTypeGuids > 項目，如下所示：  
   
@@ -273,7 +268,7 @@ ms.locfileid: "51791744"
   
     2.  將 ApplicationTypeRevision 項目的值從 8.1 更新為 10.0。  
   
-    3.  值變更\<MinimumVisualStudioVersion > 項目： 14。  
+    3.  值變更\<MinimumVisualStudioVersion > 項目：14.  
   
     4.  新增\<e > 項目並將其值設定為： true。  
   
@@ -297,7 +292,7 @@ ms.locfileid: "51791744"
         </PropertyGroup>  
         ```  
   
-4.  所有執行個體都變更\<PlatformToolset > 具有值 [v140] 的項目。 例如:   
+4.  所有執行個體都變更\<PlatformToolset > 具有值 [v140] 的項目。 例如：  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">  
@@ -337,7 +332,7 @@ ms.locfileid: "51791744"
   
 2. 您需要更新\<封裝 > 新的結構描述具有項目會根據您現有的專案類型。 先根據是否有 Windows 市集或 Windows Phone 專案，移除下面的結構描述。  
   
-    **舊的 Windows 市集專案：** 您\<封裝 > 項目看起來類似如下。  
+    **針對 Windows 市集專案的舊版：** 您\<封裝 > 項目看起來類似如下。  
   
    ```xml  
    <Package  
@@ -346,7 +341,7 @@ ms.locfileid: "51791744"
   
    ```  
   
-    **舊的 Windows Phone 專案：** 您\<封裝 > 項目看起來類似如下。  
+    **針對 Windows Phone 專案的舊版：** 您\<封裝 > 項目看起來類似如下。  
   
    ```xml  
    <Package  
@@ -356,7 +351,7 @@ ms.locfileid: "51791744"
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
    ```  
   
-    **通用 Windows 平台的新功能：** 加入如下的結構描述，以您\<封裝 > 項目。 從剛剛移除之結構描述的項目中，移除任何相關聯的命名空間識別碼前置詞。 將 IgnorableNamespaces 屬性更新為：uap mp。 您的新\<封裝 > 項目看起來應該類似如下。  
+    **新的通用 Windows 平台：** 新增下列結構描述，以您\<封裝 > 項目。 從剛剛移除之結構描述的項目中，移除任何相關聯的命名空間識別碼前置詞。 將 IgnorableNamespaces 屬性更新為：uap mp。 您的新\<封裝 > 項目看起來應該類似如下。  
   
    ```xml  
    <Package  
@@ -367,7 +362,7 @@ ms.locfileid: "51791744"
   
    ```  
   
-3. 新增\<相依性 > 子項目\<封裝 > 項目。 然後新增\<TargetDeviceFamily > 子項目，這個\<相依性 > 具有 Name、 MinVersion 和 MaxVersionTested 屬性項目。 將下列值提供給名稱屬性：Windows.Universal。 將您已安裝的通用 Windows 平台版本值提供給 MinVersion 和 MaxVersionTested。 這個項目應該與下列項目類似：  
+3. 新增\<相依性 > 子項目\<封裝 > 項目。 然後新增\<TargetDeviceFamily > 子項目，這個\<相依性 > 具有 Name、 MinVersion 和 MaxVersionTested 屬性項目。 提供的名稱屬性的值：Windows.Universal。 將您已安裝的通用 Windows 平台版本值提供給 MinVersion 和 MaxVersionTested。 這個項目應該與下列項目類似：  
   
    ```xml  
    <Dependencies>  
@@ -375,7 +370,7 @@ ms.locfileid: "51791744"
    </Dependencies>  
    ```  
   
-4. **只有 Windows 市集：** 您需要新增\<phoneidentity> > 子項目\<封裝 > 項目。 加入 PhoneProductId 屬性和 PhonePublisherId 屬性。 將具有相同的值中的 Name 屬性 PhoneProductId 設定\<身分識別 > 項目。 將 PhonePublishedId 值設定為：00000000-0000-0000-0000-000000000000。 與下列類似：  
+4. **只有 Windows 市集：** 您需要新增\<phoneidentity> > 子項目\<封裝 > 項目。 加入 PhoneProductId 屬性和 PhonePublisherId 屬性。 將具有相同的值中的 Name 屬性 PhoneProductId 設定\<身分識別 > 項目。 若要設定 PhonePublishedId 值：00000000-0000-0000-0000-000000000000. 與下列類似：  
   
    ```xml  
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
@@ -384,7 +379,7 @@ ms.locfileid: "51791744"
   
 5. 尋找\<必要條件 > 項目，並刪除這個項目和其任何子項目。  
   
-6. 新增**uap**命名空間下的\<資源 > 項目： Scale、 DXFeatureLevel。 例如:   
+6. 新增**uap**命名空間下的\<資源 > 項目：小數位數、 DXFeatureLevel。 例如：  
   
    ```xml  
    <Resources>  
@@ -395,7 +390,7 @@ ms.locfileid: "51791744"
   
    ```  
   
-7. 新增**uap**命名空間下的\<功能 > 項目： documentsLibrary、 picturesLibrary、 videosLibrary、 musicLibrary、 enterpriseAuthentication、 sharedUserCertificates、 removableStorage、約會及連絡人。 例如:   
+7. 新增**uap**命名空間下的\<功能 > 項目： documentsLibrary、 picturesLibrary、 videosLibrary、 musicLibrary、 enterpriseAuthentication、 sharedUserCertificates、 removableStorage、約會及連絡人。 例如：  
   
    ```xml  
    <Capabilities>  
@@ -405,7 +400,7 @@ ms.locfileid: "51791744"
   
    ```  
   
-8. 新增**uap**命名空間\<VisualElements > 項目和任何其子項目。 例如:   
+8. 新增**uap**命名空間\<VisualElements > 項目和任何其子項目。 例如：  
   
    ```xml  
    <uap:VisualElements  
@@ -459,7 +454,7 @@ ms.locfileid: "51791744"
   
     ```  
   
-10. 新增**uap**命名空間下的\<擴充功能 > 項目和所有其子項目： windows.accountPictureProvide、 windows.alarm、 windows.appointmentsProvider windows.autoPlayContent windows.autoPlayDevice、 windows.cachedFileUpdate、 windows.cameraSettings、 windows.fileOpenPicker、 windows.fileTypeAssociation、 windows.fileSavePicke、 windows.lockScreenCall、 windows.printTaskSettings、 windows.protocol、 windows.search，windows.shareTarget。 例如:   
+10. 新增**uap**命名空間下的\<擴充功能 > 項目和所有其子項目： windows.accountPictureProvide、 windows.alarm、 windows.appointmentsProvider windows.autoPlayContent windows.autoPlayDevice、 windows.cachedFileUpdate、 windows.cameraSettings、 windows.fileOpenPicker、 windows.fileTypeAssociation、 windows.fileSavePicke、 windows.lockScreenCall、 windows.printTaskSettings、 windows.protocol、 windows.search，windows.shareTarget。 例如：  
   
     ```xml  
     <Extensions>  
@@ -474,7 +469,7 @@ ms.locfileid: "51791744"
   
     ```  
   
-11. 將 **uap** 命名空間加入 chatMessageNotification 類型的背景工作。 例如:   
+11. 將 **uap** 命名空間加入 chatMessageNotification 類型的背景工作。 例如：  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -487,7 +482,7 @@ ms.locfileid: "51791744"
   
 12. 變更架構相依性。 將發行者名稱新增至所有\<PackageDependency > 項目，並指定 MinVersion，如果尚未指定。  
   
-     **舊：** \<PackageDependency > 項目  
+     **舊：**\<PackageDependency > 項目  
   
     ```xml  
     <Dependencies>  
@@ -496,7 +491,7 @@ ms.locfileid: "51791744"
   
     ```  
   
-     **新增：** \<PackageDependency > 項目  
+     **新增：**\<PackageDependency > 項目  
   
     ```xml  
     <Dependencies>  
@@ -510,7 +505,7 @@ ms.locfileid: "51791744"
   
      使用所使用實際架構的適當 Publisher 和 MinVersion 值。 請注意，在 Windows 10 中，這些名稱可能會變更。  
   
-13. 將 gattCharacteristicNotification 和 rfcommConnection 背景類型工作取代為 Bluetooth 類型工作。 例如:   
+13. 將 gattCharacteristicNotification 和 rfcommConnection 背景類型工作取代為 Bluetooth 類型工作。 例如：  
   
      **舊：**  
   
@@ -523,7 +518,7 @@ ms.locfileid: "51791744"
     </Extension>  
     ```  
   
-     **新：** 使用 Bluetooth 類型工作。  
+     **新增：** 使用 Bluetooth 類型工作。  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -533,7 +528,7 @@ ms.locfileid: "51791744"
     </Extension>  
     ```  
   
-14. 將 Bluetooth 裝置功能 bluetooth.rfcomm 和 bluetooth.genericAttributeProfile 取代為一般 Bluetooth 功能。 例如:   
+14. 將 Bluetooth 裝置功能 bluetooth.rfcomm 和 bluetooth.genericAttributeProfile 取代為一般 Bluetooth 功能。 例如：  
   
      **舊：**  
   
@@ -552,7 +547,7 @@ ms.locfileid: "51791744"
     </Capabilities>  
     ```  
   
-     **新：** 取代為一般 Bluetooth 功能。  
+     **新增：** 取代為一般 Bluetooth 功能。  
   
     ```xml  
     <Capabilities>  
@@ -565,7 +560,7 @@ ms.locfileid: "51791744"
   
     1. 這些屬性\<VisualElements > 已被取代，應移除：  
   
-       - \<VisualElements > 屬性： ForegroundText、 ToastCapable  
+       - \<VisualElements > 屬性：ForegroundText、 ToastCapable  
   
        - \<d > 屬性 DefaultSize  
   
@@ -676,7 +671,7 @@ ms.locfileid: "51791744"
   
    ```  
   
-6. 尋找\<目標 > 名稱屬性值，其值的元素： EnsureNuGetPackageBuildImports。 刪除此項目及其所有子系。  
+6. 尋找\<目標 > 名稱屬性值，其值的元素：EnsureNuGetPackageBuildImports. 刪除此項目及其所有子系。  
   
    ```xml  
    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  
@@ -826,7 +821,7 @@ ms.locfileid: "51791744"
   
 ###  <a name="UnitTestRCUpdate10CSharp"></a> 更新您的 C# /VB 單元測試專案  
   
-1. 使用 Visual Studio 開啟包含 C#/VB 單元測試專案的方案。 值變更\<OuttputType > 項目： AppContainerExe。  
+1. 使用 Visual Studio 開啟包含 C#/VB 單元測試專案的方案。 值變更\<OuttputType > 項目：AppContainerExe.  
   
    ```xml  
   

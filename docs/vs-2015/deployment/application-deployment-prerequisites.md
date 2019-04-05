@@ -1,14 +1,9 @@
 ---
 title: 應用程式部署必要條件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,22 +19,22 @@ ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e382c5d312a2de69281bdeda92e9c275e2877932
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0c76ed1b24350a10891df69687080988603553fa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890987"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942124"
 ---
 # <a name="application-deployment-prerequisites"></a>應用程式部署必要條件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 為了確保應用程式順利安裝及執行，您必須先確認目標電腦上已安裝與應用程式相依的所有元件。 例如，使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 建立的大多數應用程式都與 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 具相依性；在安裝應用程式之前，目的地電腦上必須存在正確的 Common Language Runtime 版本。  
   
- 您可以選取這些先決條件**Prerequisites Dialog Box**和安裝.NET Framework，以及其他可轉散發套件安裝的一部分。 這種做法就所謂*啟動程序*。 下一步[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會產生 Windows 可執行程式，也就是名為 Setup.exe*啟動載入器*。 啟動載入器負責在應用程式執行前安裝這些必要條件。 如需有關如何選取這些必要條件的詳細資訊，請參閱 < [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md)。  
+ 您可以選取這些先決條件**Prerequisites Dialog Box**和安裝.NET Framework，以及其他可轉散發套件安裝的一部分。 這個做法稱為啟動載入。 下一步[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會產生 Windows 可執行程式，也就是名為 Setup.exe*啟動載入器*。 啟動載入器負責在應用程式執行前安裝這些必要條件。 如需有關如何選取這些必要條件的詳細資訊，請參閱 < [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md)。  
   
- 每個必要條件都是啟動載入器套件。 啟動載入器套件是一組目錄和檔案，內含描述必要條件安裝方式的資訊清單檔案。 如果在未列出您的應用程式的必要條件**必要條件對話方塊**，您可以建立自訂啟動載入器套件，並將它們新增至 Visual Studio。 接著，您可以選取中的必要條件**Prerequisites Dialog Box**。 如需詳細資訊，請參閱 <<c0> [ 建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)。  
+ 每個必要條件都是啟動載入器套件。 啟動載入器套件是一組目錄和檔案，內含描述必要條件安裝方式的資訊清單檔案。 如果 [必要條件] 對話方塊中未列出您應用程式的必要條件，您可以建立自訂啟動載入器套件並將必要條件新增至 Visual Studio。 然後即可在 [必要條件] 對話方塊中選取必要條件。 如需詳細資訊，請參閱 <<c0> [ 建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)。  
   
  ClickOnce 部署預設會啟用啟動載入。 針對 ClickOnce 部署產生的啟動載入器會經過簽署。 您可以停用元件的啟動載入，不過只有在您確定所有目標電腦上都已安裝正確版本的元件時，才應該這樣做。  
   
@@ -52,12 +47,12 @@ ms.locfileid: "49890987"
   
 - 您必須在全域組件快取 (GAC) 中預先安裝所有組件的最小版本，如組件資訊清單中的組件相依性宣告所指定。  
   
-  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 可以偵測遺漏的必要條件，然後您可以使用啟動載入器，以便安裝必要條件。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 ClickOnce 應用程式的安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
+  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 可以偵測遺漏的必要條件，然後您可以使用啟動載入器，以便安裝必要條件。 如需詳細資訊，請參閱[如何：使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
   
 > [!NOTE]
->  若要變更 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 MageUI.exe 等工具所產生之資訊清單中的值，您需要在文字編輯器中編輯應用程式資訊清單，然後重新簽署應用程式資訊清單和部署資訊清單。 如需詳細資訊，請參閱 [如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+>  若要變更 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 MageUI.exe 等工具所產生之資訊清單中的值，您需要在文字編輯器中編輯應用程式資訊清單，然後重新簽署應用程式資訊清單和部署資訊清單。 如需詳細資訊，請參閱[如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
   
- 如果您使用 Visual Studio 和 ClickOnce 部署應用程式，預設會根據方案中的 .NET Framework 版本來選取啟動載入器套件。 不過，如果您變更目標.NET Framework 版本，您必須更新中的選項**Prerequisites Dialog Box**以手動方式。  
+ 如果您使用 Visual Studio 和 ClickOnce 部署應用程式，預設會根據方案中的 .NET Framework 版本來選取啟動載入器套件。 但是，如果您變更目標 .NET Framework 版本，則必須手動更新 [必要條件] 對話方塊中的選項。  
   
 |目標 .NET Framework|選取的啟動載入器套件|  
 |---------------------------|------------------------------------|  
@@ -80,11 +75,11 @@ ms.locfileid: "49890987"
   
 |命令列引數|描述|  
 |---------------------------|-----------------|  
-|**-？，-h、-說明**|顯示 [說明] 對話方塊。|  
-|**--componentsurl 的 url**|顯示此安裝程式的儲存 URL 和元件 URL。|  
-|**-url =** `location`|設定 Setup.exe 將在其中尋找 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的 URL。|  
-|**-componentsurl =** `location`|設定 Setup.exe 將在其中尋找相依性 (例如 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]) 的 URL。|  
-|**-homesite =** `true`**&#124;** `false`|當`true`，從廠商網站上的偏好位置下載的相依性。 這會覆寫 **-componentsurl**設定。 當`false`，從所指定的 URL 下載的相依性 **-componentsurl**。|  
+|**-?, -h, -help**|顯示 [說明] 對話方塊。|  
+|**-url, -componentsurl**|顯示此安裝程式的儲存 URL 和元件 URL。|  
+|**-url=** `location`|設定 Setup.exe 將在其中尋找 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的 URL。|  
+|**-componentsurl=** `location`|設定 Setup.exe 將在其中尋找相依性 (例如 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]) 的 URL。|  
+|**-homesite=** `true` **&#124;** `false`|當`true`，從廠商網站上的偏好位置下載的相依性。 這會覆寫 **-componentsurl**設定。 當`false`，從所指定的 URL 下載的相依性 **-componentsurl**。|  
   
 ## <a name="operating-system-support"></a>作業系統支援  
  Windows Server 2008 Server Core 或 Windows Server 2008 R2 Server Core 提供具有有限功能的低維護伺服器環境，因此不支援 Visual Studio 啟動載入器。 例如，Server Core 安裝選項只支援 .NET Framework 3.5 Server Core 設定檔，因此無法執行與完整 .NET Framework 相依的 Visual Studio 功能。  
@@ -92,6 +87,3 @@ ms.locfileid: "49890987"
 ## <a name="see-also"></a>另請參閱  
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
-
-
-

@@ -1,25 +1,22 @@
 ---
 title: 在模型圖上定義功能表命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, menu commands
 ms.assetid: 79c277de-5871-4fc7-9701-55eec5c3cd46
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c211c37817ba996105d7496dc49e91db9fa9298e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809099"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930176"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>在模型圖上定義功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +71,7 @@ ms.locfileid: "51809099"
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         使用 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)定義元件。                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        讀取和變更模型項目的屬性。                                                                                         |
    |                                                                             Microsoft.VisualStudio.ArchitectureTools.Extensibility                                                                              |                                                                                      建立模型項目、修改圖表上的圖形。                                                                                       |
-   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[version]                                                                                  | 定義模型事件處理常式。<br /><br /> 將一系列的變更封裝至您的模型。 如需詳細資訊，請參閱 <<c0> [ 藉由使用異動連結 UML 模型更新](../modeling/link-uml-model-updates-by-using-transactions.md)。 |
+   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[版本]                                                                                  | 定義模型事件處理常式。<br /><br /> 將一系列的變更封裝至您的模型。 如需詳細資訊，請參閱 <<c0> [ 藉由使用異動連結 UML 模型更新](../modeling/link-uml-model-updates-by-using-transactions.md)。 |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[版本]<br /><br /> (不一定是必要項目)                                                             |                                                                                   存取軌跡處理常式的其他圖表項目。                                                                                   |
    | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> 只有分層圖上的命令才為必要項目。 如需詳細資訊，請參閱 <<c0> [ 擴充圖層圖表](../modeling/extend-layer-diagrams.md)。 |                                                                                             在分層圖上定義命令。                                                                                              |
 
@@ -223,9 +220,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。  
 
-     **疑難排解**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未啟動：  
+     **疑難排解**:如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]未啟動：  
 
-    -   您如有多個專案，請確定已將 VSIX 專案設定為解決方案的啟始專案。  
+    -   如果您有多個專案，請確定 VSIX 專案已設定為方案的啟始專案。  
 
     -   在方案總管的啟始專案或唯一專案的捷徑功能表上，選擇 [屬性] 。 在專案屬性編輯器中，選取 [偵錯]  索引標籤。請確定 [啟動外部程式] ** 欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：  
 
@@ -235,7 +232,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 3.  開啟圖表上任何位置的捷徑功能表。 您的命令應該會出現在功能表中。  
 
-     **疑難排解**：如果命令未出現在功能表上，請確定：  
+     **疑難排解**:如果命令未出現在功能表上，請確定：  
 
     -   在 VSIX 專案之 **source.extensions.manifest** 的 [資產]  索引標籤中，功能表命令專案會列為 MEF 元件。  
 
@@ -276,7 +273,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    在很少見的情況下，故障的擴充功能無法載入並且會在錯誤視窗中建立報告，但不會顯示在擴充管理員中。 在此情況下，您可以藉由從下列位置刪除檔案來移除擴充功能：  
 
-   *%Localappdata%* **\Local\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
 
 ##  <a name="MenuExample"></a> 範例  
  下列範例顯示功能表命令的程式碼，以在類別圖表上交換兩個項目的名稱。 這段程式碼必須在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能專案中進行建置和安裝 (如先前章節所述)。  
@@ -375,7 +372,4 @@ namespace SwapClassNames
  [定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)   
  [使用 UML API 編輯 UML 順序圖表](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)   
  [使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)   
- [範例： UML 圖表上對齊圖形的命令](http://go.microsoft.com/fwlink/?LinkID=213809)
-
-
-
+ [範例：UML 圖表上對齊圖形的命令](http://go.microsoft.com/fwlink/?LinkID=213809)

@@ -1,14 +1,9 @@
 ---
-title: IDebugExpression2::Abort |Microsoft Docs
-ms.custom: ''
+title: IDebugExpression2::Abort | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugExpression2::Abort
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4fcb712e-1bdb-4b75-a440-35cc79ee147e
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fb0fccd72b787a3f7376c8f8a1257d314c2d905a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8019d811f07373ba86059236013da645ff82c42a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748243"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930810"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -51,4 +46,3 @@ int Abort();
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   
  [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)   
  [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)
-

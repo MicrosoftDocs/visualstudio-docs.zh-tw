@@ -1,26 +1,21 @@
 ---
 title: 更新屬性值，在 [屬性] 視窗 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, updating property values
 - property values, updating in Properties window
 ms.assetid: 9358e8c3-b9d2-4fd4-aaab-cf48d1526db4
 caps.latest.revision: 9
-manager: douge
-ms.openlocfilehash: 8db48e1f746afa8f8f219935555815587ce5823c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2dd12247c7f2af6a7db297defe835e352848b378
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290481"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939506"
 ---
 # <a name="updating-property-values-in-the-properties-window"></a>更新屬性視窗中的屬性值
 有兩種方法可以讓 [屬性]  視窗與屬性值變更同步。 第一種方法是呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 介面，此介面可存取基本視窗化功能 (包括存取和建立環境所提供的工具和文件視窗)。 下列步驟說明這項同步處理程序。  

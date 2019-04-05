@@ -1,14 +1,9 @@
 ---
-title: 錯誤： 安全性檢查失敗，因為 IIS Admin Service 未回應 |Microsoft Docs
-ms.custom: ''
+title: 錯誤：安全性檢查失敗，因為 IIS Admin Service 未回應 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.iis_not_responding
 dev_langs:
@@ -22,22 +17,22 @@ ms.assetid: 6060e94e-71dc-49f2-bb59-2584216eadbf
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b6215648cba97e17ab143538afb4936a480adae4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9434ad3d67b8cf724323bdb9614d3bfdbd569882
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769026"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939787"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>錯誤：安全性檢查失敗，因為 IIS 管理服務沒有回應
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當 IIS 管理服務沒有回應時，就會發生這個錯誤。 這通常表示 IIS 安裝有問題。 首先，請確認服務正在執行使用**Services**工具**系統管理工具**。  
+當 IIS 管理服務沒有回應時，就會發生這個錯誤。 這通常表示 IIS 安裝有問題。 首先，確認使用 [系統管理工具] 的 [服務] 工具驗證服務是否在執行。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   重新安裝 IIS，使用**新增或移除程式**控制台。  
+-   使用 [新增或移除程式] 控制台來重新安裝 IIS。  
   
 -   -或-  
   
@@ -57,6 +52,3 @@ ms.locfileid: "51769026"
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-
-
-

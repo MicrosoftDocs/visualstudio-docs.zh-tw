@@ -1,11 +1,8 @@
 ---
 title: 對應方案之間的相依性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -31,13 +28,13 @@ ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
 caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c9ff6901db602a812c06c6d8cc08ce55ef6d1d7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740042"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944493"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>對應方案之間的相依性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +54,9 @@ ms.locfileid: "51740042"
 ##  <a name="GetStarted"></a> 開始使用 Code Map  
  **若要使用 Code Map，您將需要**：  
   
--   Visual Studio Enterprise：從程式碼編輯器、方案總管、類別檢視或物件瀏覽器建立 Code Map。  
+-   Visual Studio Enterprise:從程式碼編輯器中，方案總管]、 [類別檢視] 或 [物件瀏覽器建立 code map。  
   
--   Visual Studio Professional：開啟 Code Map、進行有限的編輯，以及巡覽程式碼。  
+-   Visual Studio Professional:開啟 code map、 進行有限的編輯，以及巡覽程式碼。  
   
 > [!WARNING]
 >  在您與使用 Visual Studio Professional 的其他人共用在 Visual Studio Enterprise 中建立的對應時，請確定對應中的所有項目都已成為可見的，例如隱藏項目、展開的群組和跨群組連結。  
@@ -72,7 +69,7 @@ ms.locfileid: "51740042"
   
 - 由 .NET 模組製作的 Microsoft Dynamics AX X++ 專案和組件  
   
-  **附註：** 針對 C# 或 Visual Basic.NET 以外的專案，啟動 Code Map 或是將項目加入現有的 Code Map 之選項較少。 例如，您無法以滑鼠右鍵按一下 C++ 專案中 [文字編輯器] 的物件並將它加入 Code Map。 不過，您可以從方案總管、類別檢視和物件瀏覽器拖放個別程式碼項目或檔案。  
+  **注意：** 以外的專案C#或 Visual Basic.NET 中，有較少的選項，啟動 code map 或是將項目新增至現有的 code map。 例如，您無法以滑鼠右鍵按一下 C++ 專案中 [文字編輯器] 的物件並將它加入 Code Map。 不過，您可以從方案總管、類別檢視和物件瀏覽器拖放個別程式碼項目或檔案。  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>查看方案之間的整體相依性  
   
@@ -235,7 +232,7 @@ ms.locfileid: "51740042"
   
      若要查看成員程式碼中，但不會出現在地圖上，按一下**重新擷取子系**圖示![重新擷取子系圖示](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon")右上群組的左上的角。  
   
-6.  若要查看與對應上之項目相關的其他項目，請選取一個，在 Code Map 工具列上選擇 [顯示相關]  ，然後選取要加入對應的相關項目類型。 或者，選取一或多個項目，開啟捷徑功能表，然後針對要加入對應的相關項目類型選擇 [顯示]  選項。 例如:   
+6.  若要查看與對應上之項目相關的其他項目，請選取一個，在 Code Map 工具列上選擇 [顯示相關]  ，然後選取要加入對應的相關項目類型。 或者，選取一或多個項目，開啟捷徑功能表，然後針對要加入對應的相關項目類型選擇 [顯示]  選項。 例如：  
   
      對於 **組件**，選擇：  
   
@@ -289,7 +286,7 @@ ms.locfileid: "51740042"
 ##  <a name="SeeSourceHeader"></a> 查看 C 與 C++ 原始程式檔與標頭檔之間的相依性  
  如果要為 C++ 專案建立更完整的對應，請在這些專案上設定瀏覽資訊編譯器選項 (**/FR**)。 請參閱 [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)。 否則會出現訊息並提示您設定此選項。 如果選取 [確定] ，則只會為目前的對應設定這個選項。 您可以選擇隱藏所有之後對應的訊息。 如果隱藏這個訊息，之後可以讓它再次出現。 請將下列登錄機碼設定為 `0` ，或刪除該機碼：  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider:AutoEnableSbr**  
   
  當您開啟包含 Visual C++ 專案的方案時，更新 IntelliSense 資料庫可能需要一些時間。 此時，您可能無法建立標頭 (.h 或 `#include`) 檔案的 Code Map，直到 IntelliSense 資料庫完成更新。 您可以在 Visual Studio 狀態列中監視更新進度。 若要解決因為某些 IntelliSense 設定停用而發生的問題或訊息，請參閱 [C 和 C++ 程式碼對應疑難排解](#Troubleshooting)。  
   
@@ -389,6 +386,3 @@ ms.locfileid: "51740042"
 -   [瀏覽和重新排列 Code Map](../modeling/browse-and-rearrange-code-maps.md)  
   
 -   [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
-
-
-

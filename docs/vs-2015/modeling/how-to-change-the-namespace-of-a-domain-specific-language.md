@@ -1,27 +1,24 @@
 ---
-title: 如何： 變更特定領域語言命名空間 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：變更定義域專屬語言命名空間 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, namespace
 ms.assetid: f20c47e5-230d-4f0e-812f-5c6edb86866c
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 19b756fb6957a22959614f63b93123f5cde817b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2a48c0692dcdcc93d58b5909b03b151ed7e1aae2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209023"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939563"
 ---
-# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>如何：變更網域指定的語言命名空間
+# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>HOW TO：變更特定領域語言的命名空間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以變更特定領域語言的命名空間。 您必須進行的變更**DSL explorer**、 Dsl 封裝專案屬性，以及組件資訊。  
@@ -59,7 +56,4 @@ ms.locfileid: "49209023"
 11. 在 **建置**功能表上，選擇**重建方案**。  
   
 ## <a name="see-also"></a>另請參閱  
- [特定領域語言工具字彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

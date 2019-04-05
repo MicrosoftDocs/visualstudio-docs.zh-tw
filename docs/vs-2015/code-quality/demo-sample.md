@@ -1,14 +1,9 @@
 ---
 title: 示範範例 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - demo sample [Visual Studio ALM]
 - code analysis, samples
@@ -16,60 +11,60 @@ ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 caps.latest.revision: 23
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 2ca480078bf269e8af662d94910a5d337c13bcd8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4b00e20f262596354a02c5c54978e4f663fa185a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722370"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930159"
 ---
 # <a name="demo-sample"></a>示範範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-以下程序會示範如何建立的範例[逐步解說： 分析 C/c + + 程式碼的缺失](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)。 建立程序：  
+下列程序會示範如何建立[逐步解說：分析 C/c + + 程式碼的缺失](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)。 這些程序會建立：  
   
 - A[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]命名 CppDemo 解決方案。  
   
-- 靜態程式庫專案命名為 CodeDefects。  
+- 名為 CodeDefects 的靜態程式庫專案。  
   
-- 靜態程式庫專案命名為註解。  
+- 名為 Annotations 的靜態程式庫專案。  
   
   程序也會提供靜態程式庫標頭和.cpp 檔的程式碼。  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>建立 CppDemo 解決方案和 CodeDefects 專案  
   
-1.  按一下 **檔案**功能表上，指向**新增**，然後按一下**新專案**。  
+1.  按一下 [檔案] 功能表，指向 [新增]，然後按一下 [新增專案]。  
   
-2.  在 **專案類型**樹狀目錄清單中，如果 Visual c + + 不是您的預設語言，在 VS 中展開**其他語言**。  
+2.  在 [專案類型] 樹狀清單中，如果 Visual C++ 不是您的預設語言，請在 VS 中展開 [其他語言]。  
   
-3.  依序展開**Visual c + +**，然後按一下**一般**。  
+3.  展開 [Visual C++]，然後按一下 [一般]。  
   
-4.  在 **範本**，按一下**空白專案**。  
+4.  在 [範本] 中，按一下 [空白專案]。  
   
-5.  在 **名稱**文字方塊中，輸入**CodeDefects**。  
+5.  在 [名稱] 文字方塊中，鍵入 **CodeDefects**。  
   
-6.  選取 **為方案建立目錄**核取方塊。  
+6.  選取 [為解決方案建立目錄] 核取方塊。  
   
-7.  在 **方案名稱**文字方塊中，輸入**CppDemo**。  
+7.  在 [解決方案名稱] 文字方塊中，鍵入 **CppDemo**。  
   
 ### <a name="configure-the-codedefects-project-as-a-static-library"></a>將 CodeDefects 專案設定為靜態程式庫  
   
-1.  在 [方案總管] 中，以滑鼠右鍵按一下**CodeDefects** ，然後按一下**屬性**。  
+1.  在 [方案總管] 中，以滑鼠右鍵按一下 [CodeDefects]，然後按一下 [屬性]。  
   
-2.  依序展開**組態屬性**，然後按一下**一般**。  
+2.  展開 [組態屬性]，然後按一下 [一般]。  
   
-3.  在 **一般**清單中，選取的文字資料行中，旁邊**目標副檔名**，然後輸入 **.lib**。  
+3.  在 [一般] 清單中，選取 [目標副檔名] 旁邊資料行中的文字，然後鍵入 **.lib**。  
   
-4.  在**專案預設值**，按一下資料行旁邊**組態類型**，然後按一下**靜態程式庫 (.lib)**。  
+4.  在 [專案預設] 中，按一下 [組態類型] 旁邊的資料行，然後按一下 [靜態程式庫 (.lib)]。  
   
-### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>加入 CodeDefects 專案中的標頭和來源檔案  
+### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>將標頭和來源檔案新增至 CodeDefects 專案  
   
-1.  在 方案總管 中，展開**CodeDefects**，以滑鼠右鍵按一下**標頭檔**，按一下 **新增**，然後按一下**新項目**。  
+1.  在 [方案總管] 中，展開 [CodeDefects]，以滑鼠右鍵按一下 [標頭檔]，按一下 [新增]，然後按一下 [新增項目]。  
   
-2.  在 [**加入新項目**] 對話方塊中，按一下**程式碼**，然後按一下**標頭檔 (.h)**。  
+2.  在 [新增項目] 對話方塊中，按一下 [程式碼]，然後按一下 [標頭檔 (.h)]。  
   
-3.  在 **名稱**方塊中，輸入**Bug.cpp** ，然後按一下 **新增**。  
+3.  在 [名稱] 方塊中，鍵入 **Bug.cpp**，然後按一下 [新增]。  
   
 4.  複製下列程式碼，並將它貼至**Bug.cpp**檔案中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]編輯器。  
   
@@ -93,11 +88,11 @@ ms.locfileid: "51722370"
     const int ACCOUNT_DOMAIN_LEN = 128;  
     ```  
   
-5.  在 [方案總管] 中，以滑鼠右鍵按一下**原始程式檔**，指向**新增**，然後按一下**新項目**。  
+5.  在 [方案總管] 中，以滑鼠右鍵按一下 [來源檔案]，指向 [新增]，然後按一下 [新增項目]。  
   
-6.  在 **加入新項目** 對話方塊中，按一下  **c + + 檔 (.cpp)**  
+6.  在 [新增項目] 對話方塊中，按一下 [C++ 檔案 (.cpp)]  
   
-7.  在 **名稱**方塊中，輸入**Bug.cpp** ，然後按一下 **新增**。  
+7.  在 [名稱] 方塊中，鍵入 **Bug.cpp**，然後按一下 [新增]。  
   
 8.  下列程式碼複製並貼到 Bug.h 檔案[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]編輯器。  
   
@@ -159,31 +154,31 @@ ms.locfileid: "51722370"
     }  
     ```  
   
-9. 按一下 **檔案**功能表，然後再按一下**全部儲存**。  
+9. 按一下 [檔案] 功能表，然後按一下 [全部儲存]。  
   
-### <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>新增註解的專案，並將它設定為靜態程式庫  
+### <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>新增 Annotations 專案並將其設定為靜態程式庫  
   
-1.  在 [方案總管] 中，按一下**CppDemo**，指向**新增**，然後按一下**新專案**。  
+1.  在 [方案總管] 中，按一下 [CppDemo]，指向 [新增]，然後按一下 [新增專案]。  
   
-2.  在**加入新的專案**對話方塊方塊中，展開 Visual c + + 中，按一下**一般**，然後按一下**空專案**。  
+2.  在 [新增專案] 對話方塊中，展開 Visual C++，按一下 [一般]，然後按一下 [空白專案]。  
   
-3.  在 **名稱**文字方塊中，輸入**註釋**，然後按一下**新增**。  
+3.  在 [名稱] 文字方塊中，鍵入 **Annotations**，然後按一下 [新增]。  
   
-4.  在 [方案總管] 中，以滑鼠右鍵按一下**註釋**，然後按一下**屬性**。  
+4.  在 [方案總管] 中，以滑鼠右鍵按一下 [Annotations]，然後按一下 [屬性]。  
   
-5.  依序展開**組態屬性**，然後按一下**一般**。  
+5.  展開 [組態屬性]，然後按一下 [一般]。  
   
-6.  在 **一般**清單中，選取的文字資料行中，旁邊**目標副檔名**，然後輸入 **.lib**。  
+6.  在 [一般] 清單中，選取 [目標副檔名] 旁邊資料行中的文字，然後鍵入 **.lib**。  
   
-7.  在**專案預設值**，按一下資料行旁邊**組態類型**，然後按一下**靜態程式庫 (.lib)**。  
+7.  在 [專案預設] 中，按一下 [組態類型] 旁邊的資料行，然後按一下 [靜態程式庫 (.lib)]。  
   
-### <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>加入註解專案中的標頭檔和原始程式檔  
+### <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>將標頭檔和來源檔案新增至 Annotations 專案  
   
-1.  在 [方案總管] 中，展開**註釋**，以滑鼠右鍵按一下**標頭檔**，按一下**新增**，然後按一下**新項目**。  
+1.  在 [方案總管] 中，展開 [Annotations]，以滑鼠右鍵按一下 [標頭檔]，按一下 [新增]，然後按一下 [新增項目]。  
   
-2.  在 [**加入新項目**] 對話方塊中，按一下**標頭檔 (.h)**。  
+2.  在 [新增項目] 對話方塊中，按一下 [標頭檔 (.h)]。  
   
-3.  在 **名稱**方塊中，輸入**annotations.h** ，然後按一下 **新增**。  
+3.  在 [名稱] 方塊中，鍵入 **annotations.h**，然後按一下 [新增]。  
   
 4.  複製下列程式碼，並將它貼至**annotations.h**檔案中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]編輯器。  
   
@@ -202,11 +197,11 @@ ms.locfileid: "51722370"
   
     ```  
   
-5.  在 [方案總管] 中，以滑鼠右鍵按一下**原始程式檔**，指向**新增**，然後按一下**新項目**。  
+5.  在 [方案總管] 中，以滑鼠右鍵按一下 [來源檔案]，指向 [新增]，然後按一下 [新增項目]。  
   
-6.  在 **加入新項目** 對話方塊中，按一下**程式碼**，然後按一下  **c + + 檔 (.cpp)**  
+6.  在 [新增項目] 對話方塊中，按一下 [程式碼]，然後按一下 [C++ 檔案 (.cpp)]  
   
-7.  在 **名稱**方塊中，輸入**annotations.cpp** ，然後按一下 **新增**。  
+7.  在 [名稱] 方塊中，鍵入 **annotations.cpp**，然後按一下 [新增]。  
   
 8.  複製下列程式碼，並將它貼至**annotations.cpp**檔案中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]編輯器。  
   
@@ -237,7 +232,4 @@ ms.locfileid: "51722370"
   
     ```  
   
-9. 按一下 **檔案**功能表，然後再按一下**全部儲存**。
-
-
-
+9. 按一下 [檔案] 功能表，然後按一下 [全部儲存]。

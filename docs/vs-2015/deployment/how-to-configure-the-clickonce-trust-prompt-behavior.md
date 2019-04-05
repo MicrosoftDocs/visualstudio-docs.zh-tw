@@ -1,14 +1,9 @@
 ---
-title: 如何： 設定 ClickOnce 信任提示行為 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：設定 ClickOnce 信任提示行為 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,15 +18,15 @@ ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f8fdb17bc724cc9cbf7385451a773a68ecf3df4e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f5a1174f96e34773aac524562d6f62514e92ba5e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235660"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "59000481"
 ---
-# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>如何：設定 ClickOnce 信任提示行為
+# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>HOW TO：設定 ClickOnce 信任提示行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以設定 ClickOnce 信任提示，來控制，是否可以選擇安裝 ClickOnce 應用程式，例如 Windows Forms 應用程式、 Windows Presentation Foundation 應用程式、 主控台應用程式、 WPF 瀏覽器的使用者。應用程式和 Office 方案。 您可以設定每位使用者的電腦上的登錄機碼設定信任提示。  
@@ -63,13 +58,13 @@ ms.locfileid: "49235660"
   
 1.  開啟登錄編輯程式：  
   
-    1.  按一下 **開始**，然後按一下**執行**。  
+    1.  按一下 [開始]，然後按一下 [執行]。  
   
-    2.  在 **開放**方塊中，輸入`regedit32`，然後按一下**確定**。  
+    2.  在 **開啟**方塊中，輸入`regedit`(或`regedit32`32 位元 Windows 上)，然後按一下**確定**。  
   
 2.  尋找下列登錄機碼：  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      如果索引鍵不存在，請加以建立。  
   
@@ -122,13 +117,13 @@ ms.locfileid: "49235660"
   
 1.  開啟登錄編輯程式：  
   
-    1.  按一下 **開始**，然後按一下**執行**。  
+    1.  按一下 [開始]，然後按一下 [執行]。  
   
-    2.  在 **開放**方塊中，輸入`regedit`，然後按一下**確定**。  
+    2.  在 **開啟**方塊中，輸入`regedit`(或`regedit32`32 位元 Windows 上)，然後按一下**確定**。  
   
 2.  尋找下列登錄機碼：  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      如果索引鍵不存在，請加以建立。  
   
@@ -179,13 +174,13 @@ ms.locfileid: "49235660"
   
 1.  開啟登錄編輯程式：  
   
-    1.  按一下 **開始**，然後按一下**執行**。  
+    1.  按一下 [開始]，然後按一下 [執行]。  
   
-    2.  在 **開放**方塊中，輸入`regedit`，然後按一下**確定**。  
+    2.  在 **開啟**方塊中，輸入`regedit`(或`regedit32`32 位元 Windows 上)，然後按一下**確定**。  
   
 2.  尋找下列登錄機碼：  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      如果索引鍵不存在，請加以建立。  
   
@@ -236,11 +231,8 @@ ms.locfileid: "49235660"
  [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)   
  [受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)   
  [如何：啟用 ClickOnce 安全性設定](../deployment/how-to-enable-clickonce-security-settings.md)   
- [如何：設定 ClickOnce 應用程式的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [如何：設定 ClickOnce 應用程式的自訂使用權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [如何：以限制權限偵錯 ClickOnce 應用程式](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [如何：新增信任發行者至 ClickOnce 應用程式的用戶端電腦](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [如何：ClickOnce 應用程式設定的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [如何：設定 ClickOnce 應用程式的自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [如何：偵錯 ClickOnce 應用程式，以限制權限](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [如何：加入用戶端電腦中的受信任的發行者，ClickOnce 應用程式](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
-
-
-

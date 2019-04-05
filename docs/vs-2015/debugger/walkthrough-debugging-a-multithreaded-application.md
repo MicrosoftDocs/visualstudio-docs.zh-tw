@@ -1,14 +1,9 @@
 ---
-title: 逐步解說： 偵錯多執行緒應用程式 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：偵錯多執行緒應用程式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
 caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d5dd742411710698cb2dd626e211cb0e73b8379e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8fead0386d1ba820be21e65009c78791c7368bcd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798624"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945694"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>逐步解說：偵錯多執行緒應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51798624"
   
      [ **新增專案** ] 對話方塊隨即出現。  
   
-2.  在 **專案類型**s 方塊中，按一下您所選擇的語言： **Visual Basic**， **Visual C#**，或**Visual c + +**。  
+2.  在 **專案類型**s 方塊中，按一下您所選擇的語言：**Visual Basic**，**視覺化C#** ，或**Visual c + +**。  
   
 3.  在 **範本**方塊中，選擇**主控台應用程式**或是**CLR 主控台應用程式**。  
   
@@ -54,7 +49,7 @@ ms.locfileid: "51798624"
   
 6.  刪除出現在原始程式檔中的程式碼，並取代範例程式碼，會出現在 「 建立執行緒 > 主題的章節[建立的執行緒和開始時間傳遞資料](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d)。  
   
-7.  按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。  
+7.  在 [檔案] 功能表上按一下 [全部儲存]。  
   
 #### <a name="to-begin-the-walkthrough"></a>若要開始逐步解說  
   
@@ -129,7 +124,7 @@ Thread::Sleep(3000);
 2.  移至**偵錯位置**工具列，並按一下**執行緒**清單。  
   
     > [!NOTE]
-    >  您可以透過三個明顯的清單辨認出這個工具列：**程序**，**執行緒**，並**堆疊框架**。  
+    >  您可以透過三個明顯的清單辨認出這個工具列：**處理程序**，**執行緒**，以及**堆疊框架**。  
   
 3.  注意清單中出現的執行緒數。  
   
@@ -151,7 +146,7 @@ Thread::Sleep(3000);
   
 10. 按一下可切換回到 [旗標] 按鈕**僅顯示已標幟的執行緒**。  
   
-11. 在 **偵錯**功能表上，指向**Windows** ，然後按一下 **執行緒**。  
+11. 在 [偵錯] 功能表上，指向 [視窗]，然後按一下 [執行緒]。  
   
      **執行緒** 視窗隨即出現。 每個執行緒都附有一個明顯的旗標圖示。  
   
@@ -245,7 +240,7 @@ Thread::Sleep(3000);
   
      您現在有三種變更使用中執行緒的方式： 使用**執行緒** 視窗中，**執行緒**方塊中**偵錯位置**工具列和中的執行緒指示器來源 視窗中。  
   
-     使用執行緒指示器時，您只能切換到停止在特定位置的執行緒。 藉由使用**執行緒**視窗和**偵錯位置**工具列中，您可以切換至任何執行緒。  
+     使用執行緒指示器時，您只能切換到停止在特定位置的執行緒。 使用 [執行緒] 視窗和 [偵錯位置] 工具列時，您可以切換至任何執行緒。  
   
 ## <a name="freezing-and-thawing-thread-execution"></a>凍結和解除凍結執行緒的執行  
   
@@ -262,8 +257,5 @@ Thread::Sleep(3000);
      使用中執行緒欄位和**暫止**資料行變更。  
   
 ## <a name="see-also"></a>另請參閱  
- [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：在偵錯時切換到另一個執行緒](../debugger/how-to-switch-to-another-thread-while-debugging.md)
-
-
-

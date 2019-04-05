@@ -1,33 +1,28 @@
 ---
 title: 使用舊版 API 提供的語言服務內容 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 322dc704524a5b0172797c9351e7beb60d778ab4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4471b71b612008ba7d0733c92286415cd3c3f6b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945765"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>使用舊版 API 提供的語言服務內容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 有兩個選項，以提供使用者內容中使用的語言服務[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心編輯器： 提供文字標記的內容，或提供所有的使用者內容。 此處所述的每個之間的差異。  
   
- 如需有關如何提供連接到您自己的編輯器語言服務內容的詳細資訊，請參閱[如何： 將內容提供編輯器](../extensibility/how-to-provide-context-for-editors.md)。  
+ 如需有關如何提供連接到您自己的編輯器語言服務內容的詳細資訊，請參閱[How to:編輯器提供內容](../extensibility/how-to-provide-context-for-editors.md)。  
   
 ## <a name="provide-text-marker-context-to-the-editor"></a>編輯器提供文字標記的內容  
  若要提供的內容中的文字標記所指定的編譯器錯誤[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心編輯器，請實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>介面。 在此案例中，語言服務會提供內容，僅當游標位於文字標記。 這可讓編輯器提供至游標處關鍵字**動態說明**不含任何屬性 視窗。  
@@ -56,4 +51,3 @@ ms.locfileid: "51781929"
   
 ## <a name="context-guidelines-for-editors-and-designers"></a>內容的指導方針編輯器和設計工具  
  設計工具和編輯器，必須提供的編輯器或設計工具視窗的一般關鍵字。 這麼做是為了讓使用者按下 F1 時，將會顯示的設計工具或編輯器的泛型，但需要的說明主題。 編輯器必須，此外，提供在資料指標目前的關鍵字或提供關鍵詞彙，根據目前的選取項目。 這是為了確保指向或當使用者按下 F1 鍵時，請選取顯示的文字或 UI 項目 [說明] 主題。 設計工具提供在設計工具，例如在表單上按鈕的選取項目內容。 編輯器和設計工具也必須連接到語言服務中所述[舊版語言服務的基本資訊](../extensibility/internals/legacy-language-service-essentials.md)。
-

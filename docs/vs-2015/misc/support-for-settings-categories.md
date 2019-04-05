@@ -1,29 +1,24 @@
 ---
 title: 設定類別的支援 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - settings, supporting with Visual Studio SDK
 - Visual Studio SDK, supporting settings
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
-manager: douge
-ms.openlocfilehash: 53abd3c9f35f16c2f2ae62e2c4f339a86477a8b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b37fe476c7654cc21a3b81f4a68aa4abc0348bb1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940550"
 ---
 # <a name="support-for-settings-categories"></a>設定類別的支援
-設定類別包含自訂整合式開發環境 (IDE) 的選項群組。 例如，設定可以控制 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗的配置和功能表的內容。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+設定類別包含自訂整合式開發環境 (IDE) 的選項群組。 例如，設定可以控制 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗的配置和功能表的內容。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  在 [工具]  功能表上，按一下 [匯入和匯出設定]  啟動 [匯入和匯出設定精靈] 。 此精靈提供三個選項︰匯出、匯入或重設您的設定。 選取 [匯出]，例如開啟精靈的 [選擇要匯出的設定]  頁面。  
   
@@ -69,4 +64,4 @@ ms.locfileid: "49244929"
  [建立選項頁](../extensibility/creating-an-options-page.md)   
  [VSSDK 範例](../misc/vssdk-samples.md)   
  [VSPackage 狀態](../misc/vspackage-state.md)   
- [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
