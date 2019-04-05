@@ -1,27 +1,22 @@
 ---
 title: 開始使用原始檔控制外掛程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, getting started
 - getting started, source control plug-ins
 ms.assetid: 46ac1f9f-4ecc-4a72-88d3-4c7e1647e1cb
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e521c239f474d803da5b615de8dcf1cf56d37df3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 85aa5727f252ad75c45064d7b885e3d282da36a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755250"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942980"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>原始檔控制外掛程式的使用者入門
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,4 +41,3 @@ ms.locfileid: "51755250"
   
  [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)  
  定義原始檔控制外掛程式 SDK，並說明內含的資源。
-

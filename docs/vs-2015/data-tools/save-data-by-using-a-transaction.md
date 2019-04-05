@@ -1,12 +1,9 @@
 ---
 title: 使用異動儲存資料 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4c73dd654a2d48be963e592d94685c74d3a16057
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 243170acd838b96efac6521a548596a021893e41
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219571"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943974"
 ---
 # <a name="save-data-by-using-a-transaction"></a>使用異動儲存資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,4 +62,3 @@ ms.locfileid: "50219571"
   
 ## <a name="see-also"></a>另請參閱  
  [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)
-

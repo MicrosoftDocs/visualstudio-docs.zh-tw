@@ -1,14 +1,9 @@
 ---
 title: 判斷提示失敗對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.assertions
 dev_langs:
@@ -25,13 +20,13 @@ ms.assetid: 64af5bed-e38b-420f-b9ce-d64f35100aae
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 14a5179a88587f85784a2e16425c246a9cbfe497
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d665f51f2ec5d825dbac1533c82e3d15bf419ff2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770479"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944398"
 ---
 # <a name="assertion-failed-dialog-box"></a>判斷提示已失敗對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ ms.locfileid: "51770479"
   
 ## <a name="see-also"></a>另請參閱  
  [C/C++ 判斷提示](../debugger/c-cpp-assertions.md)
-
-
-

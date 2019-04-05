@@ -1,23 +1,20 @@
 ---
 title: Runtime 活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: be18aa36-7909-4dd6-a786-b46959675a58
 caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 4385a692167fcfa0c39cb5c5f2bc18c7695733e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 72b5c30750486d8078fc44b7d49716eb5e8488e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306861"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944935"
 ---
 # <a name="runtime-activity-designers"></a>Runtime 活動設計工具
 執行階段活動設計工具會用來保存及結束工作流程活動。 本節包含的主題會提供如何使用 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 活動設計工具的指引。  
