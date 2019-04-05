@@ -1,34 +1,29 @@
 ---
 title: Windows Installer 基本概念 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b3756f8e9c8b22b9e6a7da52e076364024fe49d1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e0d80320b47f0d5968b4aa0e795743e394db2c19
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747654"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000594"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本概念
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Windows 安裝程式安裝和解除安裝應用程式或使用者的電腦上的軟體產品執行這些工作單位，稱為 Windows 安裝程式元件 （有時稱為 WICs 或只是元件）。 GUID 會識別每個 WIC，也就是安裝和參考計數來設定使用 Windows 安裝程式的基本單位。  
   
- Windows 安裝程式的完整文件，請參閱 Platform SDK 主題[Windows Installer](http://msdn.microsoft.com/library/aa372866.aspx)。  
+ Windows 安裝程式的完整文件，請參閱 Platform SDK 主題[Windows Installer](/previous-versions/2kt85ked(v=vs.120))。  
   
 ## <a name="authoring-a-vspackage"></a>撰寫 VSPackage  
  Windows 安裝程式會使用安裝封裝，其中包含 Windows 安裝程式必須安裝、 解除安裝或修復產品，並執行安裝程式使用者介面 (UI) 的資訊。 每個安裝套件包含.msi 檔案，其中包含安裝資料庫、 摘要資訊資料流，以及安裝的各個部分的資料流。 若要使用安裝程式，您必須編寫安裝。 因為安裝程式會安裝元件的概念為中心的組織，並將安裝的相關資訊儲存在關聯式資料庫，廣泛地撰寫安裝套件的程序需要下列步驟：  
@@ -80,4 +75,3 @@ Windows 安裝程式安裝和解除安裝應用程式或使用者的電腦上的
   
 ## <a name="see-also"></a>另請參閱  
  [元件規則已中斷，會發生什麼事？](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
-

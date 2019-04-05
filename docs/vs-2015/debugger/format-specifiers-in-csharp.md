@@ -1,14 +1,9 @@
 ---
 title: Format Specifiers in C# |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -31,13 +26,13 @@ ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 330a32b20eeab172ebf36e49f16e79aa936a1bdc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3521f39227b5abcb51a4db6b61e6bf0d853e5afe
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754159"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "59000512"
 ---
 # <a name="format-specifiers-in-c"></a>C# 中的格式規範 #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,9 +46,9 @@ ms.locfileid: "51754159"
   
 ```  
 {  
-        int my_var1 = 0x0065;  
-        int my_var2 = 0x0066;  
-        int my_var3 = 0x0067;  
+    int my_var1 = 0x0065;  
+    int my_var2 = 0x0066;  
+    int my_var3 = 0x0067;  
 }  
 ```  
   
@@ -66,7 +61,7 @@ ms.locfileid: "51754159"
   
 |指定名稱|格式|原始的監看值|顯示|  
 |---------------|------------|--------------------------|--------------|  
-|ac|強制評估運算式。 在隱含評估屬性和隱含函式呼叫關閉時，這就會很有用。 請參閱 [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)。|訊息「使用者已關閉隱含函式評估」|\<value>|  
+|ac|強制評估運算式。 在隱含評估屬性和隱含函式呼叫關閉時，這就會很有用。 請參閱 [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)。|訊息「使用者已關閉隱含函式評估」|\<值>|  
 |d|十進位整數|0x0065|101|  
 |動態|使用動態檢視顯示指定的物件|顯示物件所有成員，包括動態檢視|只顯示動態檢視|  
 |h|十六進位整數|61541|0x0000F065|  
@@ -76,10 +71,5 @@ ms.locfileid: "51754159"
 |結果|搭配實作 IEnumerable 或 IEnumerable 型別的變數\<T >，通常是查詢運算式的結果。 只顯示包含查詢結果的成員。|顯示所有成員。|顯示符合查詢條件的成員。|  
   
 ## <a name="see-also"></a>另請參閱  
- [監看式及快速監看式 Windows](../debugger/watch-and-quickwatch-windows.md)   
- [變數的 Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
-
-
-
-
-
+ [監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   
+ [變數視窗](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

@@ -1,14 +1,9 @@
 ---
-title: 快速入門： C-c + + 程式碼分析 |Microsoft Docs
-ms.custom: ''
+title: 快速入門：C-c + + 程式碼分析 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
@@ -16,18 +11,18 @@ ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
 caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 56f14abab372a6a6e533675b070d420a4dfc7a5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 83b793f694c1965f5ded6b0fd136d672280d59cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758200"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944165"
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>快速入門：C/C++ 程式碼分析
+# <a name="quick-start-code-analysis-for-cc"></a>快速入門：C/C++ 的程式碼分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以在 C 或 C++ 程式碼上定期執行程式碼分析，以改善您的應用程式品質。 這可協助您尋找常見的問題、良好的程式設計作法違規狀況，或偵測難以透過測試發現的缺失。 程式碼分析警告不同於編譯器錯誤和警告，因為程式碼分析會搜尋有效、但仍可能為您或使用您程式碼的其他人產生問題的特定程式碼模式。  
+您可以在 C 或 C++ 程式碼上定期執行程式碼分析，以改善您的應用程式品質。 這可協助您尋找常見的問題、良好的程式設計作法違規狀況，或偵測難以透過測試發現的缺失。 程式碼分析警告與編譯器錯誤和警告不同，因為程式碼分析會搜尋有效的特定程式碼模式，但仍然可以為您或使用您程式碼的其他人建立問題。  
   
 ## <a name="in-this-topic"></a>本主題內容  
   
@@ -96,7 +91,7 @@ ms.locfileid: "51758200"
   
  展開警告時，造成警告的程式碼行會在 Visual Studio 程式碼編輯器中反白顯示。  
   
- 瞭解問題之後，您可以在程式碼中解決它。 然後重新執行程式碼分析來確定 [程式碼分析] 視窗中不會再次出現警告，且您的修正尚未引發新的警告。  
+ 在您了解問題之後，就可以在程式碼中解決問題。 然後重新執行程式碼分析來確定 [程式碼分析] 視窗中不會再次出現警告，且您的修正尚未引發新的警告。  
   
 > [!TIP]
 >  您可以從 [程式碼分析] 視窗重新執行程式碼分析。 選擇**分析**按鈕，然後選擇要分析的範圍。 您可以在整個方案或選取的專案上重新執行分析。  
@@ -104,7 +99,7 @@ ms.locfileid: "51758200"
 ##  <a name="BKMK_Suppress"></a> 隱藏程式碼分析警告  
  有時候您可能決定不修正程式碼分析警告。 您可能會判斷解決這項警告需要太多重新編碼，而在任何實際實作程式碼時會有問題發生的可能性。 或是，您可能會認為警告中使用的分析對於特定內容是不適當的。 您可以隱藏個別的警告，使之不再出現於 [程式碼分析] 視窗中。  
   
- 若要隱藏警告：  
+ 隱藏警告：  
   
 1. 如果未顯示詳細資訊，請選擇警告標題以展開它。  
   
@@ -130,11 +125,8 @@ ms.locfileid: "51758200"
 ##  <a name="BKMK_Search"></a> 搜尋和篩選程式碼分析結果  
  您可以在多專案方案中搜尋警告訊息的詳細清單，以及篩選警告。  
   
-1.  **若要依標題或警告識別碼篩選警告**： 輸入中的關鍵字**篩選**文字方塊。  
+1.  **若要依標題或警告識別碼篩選警告**:輸入中的關鍵字**篩選**文字方塊。  
   
-2.  **若要依專案篩選警告**： 在多專案方案中，選擇 在頂端的清單中的一個或多個專案的程式碼分析視窗。 選擇要顯示所有警告的方案名稱。  
+2.  **若要依專案篩選警告**:在多專案方案中，選擇 在頂端的清單中的一個或多個專案的程式碼分析視窗。 選擇要顯示所有警告的方案名稱。  
   
-3.  **若要依嚴重性篩選警告**： 根據預設，指派給程式碼分析訊息的嚴重性**警告**。 您可以指派一或多個訊息的嚴重性**錯誤**在自訂規則集。 選擇 **警告**或是**錯誤**顯示只會指派個別嚴重性的訊息。 選擇**所有**顯示所有的訊息。
-
-
-
+3.  **若要依嚴重性篩選警告**:根據預設，指派給程式碼分析訊息的嚴重性**警告**。 您可以指派一或多個訊息的嚴重性**錯誤**在自訂規則集。 選擇 **警告**或是**錯誤**顯示只會指派個別嚴重性的訊息。 選擇**所有**顯示所有的訊息。

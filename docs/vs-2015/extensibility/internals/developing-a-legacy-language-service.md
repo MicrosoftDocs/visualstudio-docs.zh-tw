@@ -1,14 +1,9 @@
 ---
 title: 開發舊版語言服務 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - vs.vsip.LangServWiz.langtoks
 - vs.vsip.LangServWiz.welcome
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 801a349b588a1dd7612b573fcc97b4b344a69452
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a4477249dfad57bb75a83b40d6c3b1a4343a23f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746789"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945391"
 ---
 # <a name="developing-a-legacy-language-service"></a>開發舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ ms.locfileid: "51746789"
  [語言服務支援偵錯](../../extensibility/internals/language-service-support-for-debugging.md)  
  描述如何語言服務可以提供功能，可支援偵錯工具。  
   
- [檢查清單︰建立舊版語言服務](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
+ [檢查清單：建立舊版語言服務](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
  提供逐步指示來建立及整合核心編輯器 」 的語言服務。  
   
 ## <a name="related-sections"></a>相關章節  
@@ -67,9 +62,8 @@ ms.locfileid: "51746789"
  [舊版語言服務中的參數資訊](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  描述如何為多載函式和方法提供方法提示。  
   
- [如何︰在舊版語言服務中提供隱藏文字的支援](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [如何：隱藏的文字中提供支援舊版語言服務](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  說明隱藏的文字區域的目的，並提供有關如何實作在隱藏的文字區域的指示。  
   
- [如何︰在舊版語言服務中提供展開大綱的支援](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [如何：提供展開大綱的支援，在舊版語言服務](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  說明擴充大綱的支援，您只能支援的語言的兩個選項*摺疊至定義*命令。
-

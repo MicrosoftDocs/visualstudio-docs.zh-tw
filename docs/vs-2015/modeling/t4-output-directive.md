@@ -1,23 +1,20 @@
 ---
 title: T4 輸出指示詞 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 03a14993-47ad-4f2e-8032-57db28d5842a
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2e2d30c5d1dee578da14608a4e272fea09184a76
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9262ec994ec847c38ec8d5c1ad95010a929cc4ba
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198519"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58945292"
 ---
 # <a name="t4-output-directive"></a>T4 輸出指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +55,7 @@ ms.locfileid: "49198519"
  任何有效的副檔名。  
   
 ## <a name="encoding-attribute"></a>編碼方式屬性  
- 指定要在產生輸出檔案時使用的編碼。 例如：  
+ 指定要在產生輸出檔案時使用的編碼。 例如:   
   
  `<#@ output encoding="utf-8"#>`  
   
@@ -80,6 +77,3 @@ ms.locfileid: "49198519"
  `0` (系統預設值)  
   
  一般而言，您可以使用 <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName> 所傳回之任何編碼的 WebName 字串或 CodePage 號碼。
-
-
-

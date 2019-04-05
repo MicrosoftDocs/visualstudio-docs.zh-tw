@@ -1,14 +1,9 @@
 ---
-title: 如何： 設定 ClickOnce 部署錯誤的自訂記錄檔位置 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：設定 ClickOnce 部署錯誤的自訂記錄檔位置 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: 77424414-7f0e-4b99-94bb-ea130de92d09
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e4108287e120eabb4c8fc38d1dc29f2a81ea3d47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a38e453d9bfff3b2633eb98cc5d6127fa126335f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207697"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945280"
 ---
-# <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>如何：設定 ClickOnce 部署錯誤的自訂記錄檔位置
+# <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>HOW TO：設定 ClickOnce 部署錯誤的自訂記錄檔位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 會維護所有部署的啟動記錄檔。 這些記錄檔記錄有關安裝和初始化任何錯誤[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署。 根據預設，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]建立每個部署啟動的一個記錄檔。 它會這些記錄檔儲存在 Temporary Internet Files 資料夾中。 部署記錄檔顯示給使用者時啟用失敗，且使用者按下**詳細資料**在產生的 [錯誤] 對話方塊。  
@@ -56,8 +51,3 @@ ms.locfileid: "49207697"
   
 ## <a name="see-also"></a>另請參閱  
  [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)
-
-
-
-
-

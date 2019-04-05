@@ -1,27 +1,22 @@
 ---
 title: Task 類別-內部成員 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, Task class [.NET Framework]
 - Task class [.NET Framework debug engines]
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 92ddc4b00f9d8eb37893e1db7ae44802e04e9c46
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 200b35e60d3d468a934565959629298e6c6f04bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764822"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945964"
 ---
 # <a name="task-class---internal-members"></a>工作類別 - 內部成員
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ ms.locfileid: "51764822"
   
 |名稱|描述|  
 |----------|-----------------|  
-|[m_action 的呼叫](../../extensibility/debugger/m-action-field.md)|委派，表示程式碼中執行<xref:System.Threading.Tasks.Task>物件。|  
+|[m_action](../../extensibility/debugger/m-action-field.md)|委派，表示程式碼中執行<xref:System.Threading.Tasks.Task>物件。|  
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|儲存的其他屬性<xref:System.Threading.Tasks.Task>物件。|  
 |[m_parent](../../extensibility/debugger/m-parent-field.md)|支援欄位<xref:System.Threading.Tasks.Task?displayProperty=fullName>父屬性。|  
 |[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|儲存的目前狀態的相關資訊<xref:System.Threading.Tasks.Task>物件。|  
@@ -89,4 +84,3 @@ ms.locfileid: "51764822"
 ## <a name="see-also"></a>另請參閱  
  <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
  [.NET Framework 適用的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
-

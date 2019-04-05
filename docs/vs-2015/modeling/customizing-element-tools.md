@@ -1,23 +1,20 @@
 ---
 title: 自訂項目工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6dac48b6-db68-4bcd-8aa2-422c2ad5d28b
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: cf2d48ee0ec4c8f2f9986f4655eb98b44583beef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 72457070c63cdf6c76207bd92521ab7944d4318a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220502"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945915"
 ---
 # <a name="customizing-element-tools"></a>自訂項目工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,6 +64,3 @@ public partial class CircuitDiagramToolboxHelper
   
 ## <a name="see-also"></a>另請參閱  
  [自訂項目的建立和移動](../modeling/customizing-element-creation-and-movement.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 適用於 VSPackage 開發的 Devenv 命令列參數 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - /setup command line switch
 - /resetskippkgs command line switch
@@ -21,13 +16,13 @@ helpviewer_keywords:
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 97900d5d23fae8f097ce5f2951f9fb13866f2a1e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8a32606b97e2831c2074c1feeaa71e74c116fdc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749128"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944361"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>適用於 VSPackage 開發的 Devenv 命令列參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,4 +50,3 @@ ms.locfileid: "51749128"
 ## <a name="see-also"></a>另請參閱  
  [加入命令列參數](../extensibility/adding-command-line-switches.md)   
  [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)
-
