@@ -1,25 +1,22 @@
 ---
 title: 使用 WPF 和 Entity Framework 6 中建立簡單資料應用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922194"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000647"
 ---
-# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 中建立簡單資料應用程式
+# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 建立簡單的資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -30,9 +27,9 @@ ms.locfileid: "49922194"
 ## <a name="install-and-connect-to-northwind"></a>安裝並連接到 Northwind  
  此範例會使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。 它應該使用其他的 SQL 資料庫產品一樣如果該產品的 ADO.NET 資料提供者支援 Entity Framework。  
   
-1.  如果您還沒有這麼做，請安裝 SQL Server 2014 LocalDB Express 32 位元從[SQL Server 版本的下載頁面](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)。  
+1.  如果您還沒有這麼做，請安裝 SQL Server 2014 LocalDB Express 32 位元從[SQL Server 版本的下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)。  
   
-2.  依照此處的指示來安裝 Northwind 範例資料庫：[安裝 SQL Server 範例資料庫](../data-tools/install-sql-server-sample-databases.md)。  
+2.  依照此處的指示安裝 Northwind 範例資料庫：[安裝 SQL Server 範例資料庫](../data-tools/install-sql-server-sample-databases.md)。  
   
 3.  [加入新連接](../data-tools/add-new-connections.md)northwind。  
   
@@ -393,7 +390,7 @@ ms.locfileid: "49922194"
 ## <a name="add-buttons-to-navigate-add-update-and-delete"></a>加入按鈕，瀏覽、 新增、 更新和刪除  
  在 Windows Forms 應用程式，您取得 BindingNavigator 物件具有按鈕瀏覽資料庫中的資料列，並執行基本 CRUD 作業。 WPF 不會提供 BindingNavigator，但它們是容易進行。 我們要的按鈕水平頁面方格中的底端列 StackPanel 內，我們將命令繫結至程式碼後置中的方法與相關聯的按鈕。  
   
- 有個四部分的命令邏輯: （1） 命令、 （2） 的繫結、 （3） 按鈕，以及 （4） 命令中的處理常式程式碼後置。  
+ 有個四部分的命令邏輯：（1） 命令、 （2） 的繫結、 （3） 按鈕，以及 （4） 命令中的處理常式程式碼後置。  
   
 #### <a name="add-commands-bindings-and-buttons-in-xaml"></a>在 XAML 中新增命令、 繫結和按鈕  
   
@@ -709,4 +706,3 @@ ms.locfileid: "49922194"
   
 ## <a name="see-also"></a>另請參閱  
  [適用於.NET 的 visual Studio 資料工具](../data-tools/visual-studio-data-tools-for-dotnet.md) [Entity Framework 文件](https://msdn.microsoft.com/data/ee712907.aspx)
-
