@@ -1,27 +1,22 @@
 ---
 title: VisibilityItem 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VisibilityItem element (VSCT XML schema)
 - VSCT XML schema elements, VisibilityItem
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ab4d1fef60ce8b11a23a9d3afd30bcf6b89715d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6f71e145282d1d6e340060b9798ca54c9af9f4e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779251"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940049"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,13 +45,13 @@ ms.locfileid: "51779251"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|guid|必要。 GUID/識別碼命令識別碼的 GUID。|  
-|id|必要。 GUID/識別碼的命令識別項的識別碼。|  
-|內容|必要。 此命令會顯示 UI 內容。|  
+|guid|必要項。 GUID/識別碼命令識別碼的 GUID。|  
+|id|必要項。 GUID/識別碼的命令識別項的識別碼。|  
+|內容|必要項。 此命令會顯示 UI 內容。|  
 |條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
- 無  
+ None  
   
 ### <a name="parent-elements"></a>父項目  
   
@@ -84,4 +79,3 @@ ms.locfileid: "51779251"
  <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>   
  [VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)   
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

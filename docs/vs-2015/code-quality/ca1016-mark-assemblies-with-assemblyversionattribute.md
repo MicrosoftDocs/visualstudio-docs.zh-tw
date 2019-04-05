@@ -1,14 +1,9 @@
 ---
-title: CA1016： 以 AssemblyVersionAttribute 的組件必須標記 |Microsoft Docs
-ms.custom: ''
+title: CA1016:組件必須標記 assemblyversionattribute |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkAssembliesWithAssemblyVersion
 - CA1016
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cb3cb13484d427bb5389a0ec89573231376efdf8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fbe2ef81dbb1dd5be15b6a0ac4b8cc1df96206a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811137"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939937"
 ---
-# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016：以 AssemblyVersionAttribute 標記組件
+# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016:組件必須標記 AssemblyVersionAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -67,7 +62,4 @@ ms.locfileid: "49811137"
  [!code-vb[FxCop.Design.AssembliesVersion#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/vb/FxCop.Design.AssembliesVersion.vb#1)]
 
 ## <a name="see-also"></a>另請參閱
- [組件版本控制](http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903) [How to： 建立發行者原則](http://msdn.microsoft.com/library/8046bc5d-2fa9-4277-8a5e-6dcc96c281d9)
-
-
-
+ [組件版本控制](http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903) [How to:建立發行者原則](http://msdn.microsoft.com/library/8046bc5d-2fa9-4277-8a5e-6dcc96c281d9)

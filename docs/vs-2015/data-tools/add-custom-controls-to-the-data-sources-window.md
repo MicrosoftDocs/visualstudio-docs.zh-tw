@@ -1,12 +1,9 @@
 ---
 title: 將自訂控制項加入至資料來源視窗 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 dev_langs:
@@ -25,13 +22,13 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e84224d4ebd066891d4fdf90b4ad488a79cc0b1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a7dbfb1b0636418971b2dffb6ff67ca2de5e211d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183634"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940494"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>將自訂控制項加入 [資料來源] 視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +39,7 @@ ms.locfileid: "49183634"
  如需有關選取的項目中建立的資料繫結控制項**資料來源** 視窗中，請參閱[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
 > [!NOTE]
->  根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更您的設定，在**工具**功能表上，選取**匯入和匯出設定**。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更您的設定，在**工具**功能表上，選取**匯入和匯出設定**。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ##  <a name="customizinglist"></a> 自訂資料類型的可繫結控制項的清單  
  若要新增或移除的項目中的可用控制項清單中的控制項**Zdroje dat**有特定的資料類型，執行下列步驟的視窗。  
@@ -102,4 +99,3 @@ ms.locfileid: "49183634"
   
 ## <a name="see-also"></a>另請參閱  
  [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)
-

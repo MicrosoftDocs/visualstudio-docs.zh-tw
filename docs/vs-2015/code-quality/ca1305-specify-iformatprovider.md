@@ -1,14 +1,9 @@
 ---
-title: CA1305： 指定 IFormatProvider |Microsoft Docs
-ms.custom: ''
+title: CA1305:指定 IFormatProvider |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SpecifyIFormatProvider
 - CA1305
@@ -20,14 +15,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 084fd28106a3ac5af9a40d46cf687d4982f53690
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a31dfbae3ca07f913a5ddad3cf0a788cd9c62b73
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834294"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939932"
 ---
-# <a name="ca1305-specify-iformatprovider"></a>CA1305：指定 IFormatProvider
+# <a name="ca1305-specify-iformatprovider"></a>CA1305:必須指定 IFormatProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -80,10 +75,7 @@ ms.locfileid: "49834294"
  **1900 年 6 月 4 日下午 12:15:12**
 **1900 年 06 月 04 日 12:15:12**
 ## <a name="related-rules"></a>相關的規則
- [CA1304：必須指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
+ [CA1304:指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>另請參閱
- [NIB： 使用 CultureInfo 類別](http://msdn.microsoft.com/en-us/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
-
-
-
+ [NIB：使用 CultureInfo 類別](http://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

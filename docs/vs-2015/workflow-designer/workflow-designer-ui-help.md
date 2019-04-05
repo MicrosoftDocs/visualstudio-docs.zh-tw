@@ -1,11 +1,8 @@
 ---
 title: 工作流程設計工具 UI 說明 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio 2010 Workflow Designer [WFD], user interface help
@@ -14,13 +11,13 @@ ms.assetid: f7afc443-7c7f-4b0f-9517-c58070a640de
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 1eee870558ee62e43a55e98fc539308f4ae52dd6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b19a301f7c170ee28d774ea0d96397dc2cfef312
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306822"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939774"
 ---
 # <a name="workflow-designer-ui-help"></a>Workflow 設計工具 UI 說明
 本節包含 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 的即時線上說明主題。 在中工作時[!INCLUDE[vs2010](../includes/vs2010-md.md)]，您可以從使用者介面存取這些主題，藉由按下**F1**當[!INCLUDE[wfd2](../includes/wfd2-md.md)]對話方塊為開啟。  

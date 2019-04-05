@@ -1,14 +1,9 @@
 ---
-title: OPTNAMECHANGEPFN |Microsoft Docs
-ms.custom: ''
+title: OPTNAMECHANGEPFN | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - OPTNAMECHANGEPFN
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dc56a4dc198ec789123f771c146b27480f691452
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4969dff811b6517c0274a35884703a9dc0c693cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792173"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940041"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ typedef void (*OPTNAMECHANGEPFN)(
 ## <a name="see-also"></a>另請參閱  
  [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)
-

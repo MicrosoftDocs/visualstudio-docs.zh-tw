@@ -1,14 +1,9 @@
 ---
 title: VisibilityConstraints 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - VisibilityConstraints
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1781355e6dedf4d614b4e461021accf017f3f214
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 06f6a74fabfc1bd86f54656c6b30b55690940a0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759827"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939946"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,4 +68,3 @@ VisibilityConstraints 元素會決定靜態群組的命令和工具列可見。 
 ## <a name="see-also"></a>另請參閱  
  [VisibilityItem 元素](../extensibility/visibilityitem-element.md)   
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

@@ -1,14 +1,9 @@
 ---
 title: 在遠端電腦上的執行 Windows 市集應用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a3be715f58d3ed80122dfdd3aaf879c7db8aebd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 262391145b5cfc3889b2eea32df4e0955ed71b1a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784542"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938962"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>在遠端電腦上執行 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -173,11 +168,8 @@ ms.locfileid: "51784542"
 ##  <a name="BKMK_RunRemoteDebug"></a> 執行遠端偵錯工作階段  
  您啟動、停止及巡覽遠端偵錯工作階段的方式與您進行本機工作階段的方式相同。 在您開始偵錯之前，請確定遠端裝置上正在執行遠端偵錯監視。  
   
- 然後在 [ **偵錯** ] 功能表上選擇 [ **開始偵錯** ] (鍵盤：F5)。 專案會重新編譯，然後部署到遠端裝置並且啟動。 偵錯工具會在中斷點暫停執行，而您可以逐步執行、跳過和跳離您的程式碼。 選擇 [ **停止偵錯** ] 即可結束偵錯工作階段，並關閉遠端應用程式。 如需詳細資訊，請參閱 <<c0> [ 偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
+ 然後選擇**開始偵錯**上**偵錯**功能表 (鍵盤：F5)。 專案會重新編譯，然後部署到遠端裝置並且啟動。 偵錯工具會在中斷點暫停執行，而您可以逐步執行、跳過和跳離您的程式碼。 選擇 [ **停止偵錯** ] 即可結束偵錯工作階段，並關閉遠端應用程式。 如需詳細資訊，請參閱 <<c0> [ 偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 Visual Studio 測試市集應用程式](../test/testing-store-apps-with-visual-studio.md)   
  [在 Visual Studio 中偵錯應用程式](../debugger/debug-store-apps-in-visual-studio.md)
-
-
-
