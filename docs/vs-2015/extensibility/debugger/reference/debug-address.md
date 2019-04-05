@@ -1,14 +1,9 @@
 ---
-title: DEBUG_ADDRESS |Microsoft Docs
-ms.custom: ''
+title: DEBUG_ADDRESS | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - DEBUG_ADDRESS
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ed1b182a1f04cd9399db00a5a0c03a765c9e0a27
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f9057b8c19c1e1763b29fe40fc77bfc0be064159
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774961"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943960"
 ---
 # <a name="debugaddress"></a>DEBUG_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ public struct DEBUG_ADDRESS {
 > [!NOTE]
 >  這個值是特定符號提供者也因此而不做為類別類型的識別項的一般意義。  
   
- Addr  
+ addr  
  A [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構，其中包含可描述個別地址類型結構的聯集。 值`addr`。`dwKind` 來自[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別，其中說明如何解譯聯集。  
   
 ## <a name="remarks"></a>備註  
@@ -82,13 +77,12 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal !=
 ## <a name="requirements"></a>需求  
  標頭： sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
-

@@ -1,14 +1,9 @@
 ---
-title: CA1053： 靜態預留位置類型不應該包含建構函式 |Microsoft Docs
-ms.custom: ''
+title: CA1053:靜態預留位置類型不應該有建構函式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldNotHaveConstructors
 - CA1053
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 94cbf1b8ff26bbc7d85929da2d1a8bbf62cb8530
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea9f91635e7d618fb439ec8212d3e987a6d1a451
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832923"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941153"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053：靜態預留位置類型不應包含建構函式
+# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053:靜態預留位置類型不應該包含建構函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -56,6 +51,3 @@ ms.locfileid: "49832923"
  下列範例顯示違反此規則的型別。 請注意，沒有預設建構函式的原始程式碼中。 當此程式碼編譯成組件時，C# 編譯器會插入預設建構函式，將會違反此規則。 若要修正此問題，宣告私用建構函式。
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.StaticTypes/cs/FxCop.Design.StaticTypes.cs#1)]
-
-
-

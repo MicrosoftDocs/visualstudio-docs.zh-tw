@@ -1,27 +1,22 @@
 ---
 title: 一般索引標籤、 視窗屬性對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box, General Tab
 ms.assetid: 19142c60-9b32-46ba-a556-b62fd77568c1
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 41b2c0410944e9a28a4ff13f51e99592dff4f756
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3b8733ef63a60baa1b268c42c8780cdf80f2674b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751073"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945268"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、一般索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,16 +27,13 @@ ms.locfileid: "51751073"
   
 |進入|描述|  
 |-----------|-----------------|  
-|**視窗標題**|文字在視窗的標題或包含在一個視窗中，如果它是控制項的文字。|  
-|**視窗控制代碼**|此視窗的唯一識別碼。 視窗控制代碼數字會重複使用;它們可以識別視窗只會針對該視窗的存留期。|  
-|**視窗程序**|此視窗的視窗程序函式的虛擬位址。 這個欄位也會指出這個視窗是否為 Unicode 的視窗，以及它是否子類別。|  
-|**矩形**|視窗的周框。 此外，也會顯示矩形的大小。 單位為像素的螢幕座標。|  
-|**還原的方框**|還原視窗的周框。 此外，也會顯示矩形的大小。 還原的方框不同矩形的視窗最大化或最小化時，才。 單位為像素的螢幕座標。|  
-|**用戶端方框**|視窗工作區指定的週框。 此外，也會顯示矩形的大小。 單位為像素為單位相對於左上角的視窗工作區。|  
-|**執行個體控制代碼**|應用程式的執行個體控制代碼。 執行個體控制代碼不是唯一的。|  
+|[視窗標題]|文字在視窗的標題或包含在一個視窗中，如果它是控制項的文字。|  
+|[視窗控制代碼]|此視窗的唯一識別碼。 視窗控制代碼數字會重複使用;它們可以識別視窗只會針對該視窗的存留期。|  
+|[視窗程序]|此視窗的視窗程序函式的虛擬位址。 這個欄位也會指出這個視窗是否為 Unicode 的視窗，以及它是否子類別。|  
+|[矩形]|視窗的周框。 此外，也會顯示矩形的大小。 單位為像素的螢幕座標。|  
+|[還原方框]|還原視窗的周框。 此外，也會顯示矩形的大小。 還原的方框不同矩形的視窗最大化或最小化時，才。 單位為像素的螢幕座標。|  
+|[用戶端方框]|視窗工作區指定的週框。 此外，也會顯示矩形的大小。 單位為像素為單位相對於左上角的視窗工作區。|  
+|[執行個體控制代碼]|應用程式的執行個體控制代碼。 執行個體控制代碼不是唯一的。|  
 |**控制項 ID 或功能表的控制代碼**|如果為子視窗所顯示的視窗，控制項 ID 會顯示標籤。 控制項 ID 是一個整數，識別這個子視窗的控制項 id。 如果顯示的視窗不是子視窗，則會顯示功能表控制代碼的標籤。 功能表控制代碼是功能表的一個整數，識別與這個視窗相關聯的控制代碼。|  
-|**使用者資料**|附加至這個視窗結構的應用程式專屬資料。|  
-|**視窗位元組**|此視窗相關聯的額外位元組數目。 這些位元組的意義取決於應用程式。 展開以查看 DWORD 格式的位元組值的清單方塊。|
-
-
-
+|[使用者資料]|附加至這個視窗結構的應用程式專屬資料。|  
+|[視窗位元組]|此視窗相關聯的額外位元組數目。 這些位元組的意義取決於應用程式。 展開以查看 DWORD 格式的位元組值的清單方塊。|

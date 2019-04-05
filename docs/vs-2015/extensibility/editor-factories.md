@@ -1,26 +1,21 @@
 ---
 title: 編輯器 Factory |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - editor factories
 ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 74ea8d296db643e74654f9016c1f5bff4f34c6d8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fbf30d1fdb4fcce1e28a3c10c9949f1a11eae529
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809450"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58941533"
 ---
 # <a name="editor-factories"></a>編輯器 Factory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,4 +56,3 @@ ms.locfileid: "51809450"
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   
  [執行中的文件資料表](../extensibility/internals/running-document-table.md)
-

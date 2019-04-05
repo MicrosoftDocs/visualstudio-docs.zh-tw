@@ -1,27 +1,22 @@
 ---
 title: 範例實作的區域變數 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], local variables
 - expression evaluation, local variables
 ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2ca64ed08060df3a03dbb178fc636ca243e1e48d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af718d5fe5038a2baa62093078aaed9a3cccb14b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756819"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942493"
 ---
 # <a name="sample-implementation-of-locals"></a>區域變數的範例實作
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -71,9 +66,8 @@ ms.locfileid: "51756819"
  [評估內容](../../extensibility/debugger/evaluation-context.md)  
  提供當 DE 呼叫運算式評估工具 (EE) 時所傳遞的引數。  
   
- [MyCEE 範例](http://msdn.microsoft.com/en-us/624a018b-9179-402f-9d48-3aec87b48f4f)  
+ [MyCEE 範例](http://msdn.microsoft.com/624a018b-9179-402f-9d48-3aec87b48f4f)  
  示範建立 MyC 語言的運算式評估工具的其中一個實作方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [顯示區域變數](../../extensibility/debugger/displaying-locals.md)
-

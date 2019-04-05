@@ -1,12 +1,9 @@
 ---
 title: Windows Forms 控制項繫結至資料 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: 0163a34a-38cb-40b9-8f38-3058a90caf21
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1d8710ef98339c0cf4b44ddd3fa41cca8676570
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9b81d3d9f7425874c8a3501d8e1d49eb813b97d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943127"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>將 Windows Forms 控制項繫結至資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +37,7 @@ ms.locfileid: "49237467"
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="bind-to--data-in-a-datagridview-control"></a>繫結至 DataGridView 控制項中的資料  
- DataGridView 中，整份資料表是繫結至該單一控制項。 當您將 DataGridView 拖曳至表單時，工具帶狀巡覽記錄 (<xref:System.Windows.Forms.BindingNavigator>) 也會出現。 A[資料集](../data-tools/dataset-tools-in-visual-studio.md)， [TableAdapter](../data-tools/tableadapter-overview.md)， <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>會出現在元件匣。 在下圖中，因為 「 客戶 」 資料表具有與 [Orders] 資料表的關聯性，也會加入 TableAdapterManager。 這些變數是所有宣告中的自動產生的程式碼為表單類別中的私用成員。 自動產生的程式碼，以便填滿 DataGridView 位於 form_load 事件處理常式。 儲存的資料，以更新資料庫的程式碼位於 BindingNavigator 儲存事件處理常式。 您可以移動，或視需要修改此程式碼。  
+ DataGridView 中，整份資料表是繫結至該單一控制項。 當您將 DataGridView 拖曳至表單時，工具帶狀巡覽記錄 (<xref:System.Windows.Forms.BindingNavigator>) 也會出現。 A[資料集](../data-tools/dataset-tools-in-visual-studio.md)，TableAdapter，並<xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>會出現在元件匣。 在下圖中，因為 「 客戶 」 資料表具有與 [Orders] 資料表的關聯性，也會加入 TableAdapterManager。 這些變數是所有宣告中的自動產生的程式碼為表單類別中的私用成員。 自動產生的程式碼，以便填滿 DataGridView 位於 form_load 事件處理常式。 儲存的資料，以更新資料庫的程式碼位於 BindingNavigator 儲存事件處理常式。 您可以移動，或視需要修改此程式碼。  
   
  ![使用 BindingNavigator 的 GridView](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata 使用 BindingNavigator 的 GridView")  
   
@@ -68,4 +65,3 @@ ms.locfileid: "49237467"
   
 ## <a name="see-also"></a>另請參閱  
  [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

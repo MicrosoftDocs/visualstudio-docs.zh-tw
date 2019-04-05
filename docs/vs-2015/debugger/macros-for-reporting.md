@@ -1,14 +1,9 @@
 ---
 title: 報告巨集 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.macros
 dev_langs:
@@ -28,13 +23,13 @@ ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc2a5226b3d6f512d2c2f89d9fef2a80eef34340
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e4aee33d571f95e24a359fa2bc7e12ae8d64eae0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758449"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943931"
 ---
 # <a name="macros-for-reporting"></a>報告巨集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,8 +38,8 @@ ms.locfileid: "51758449"
   
 |巨集|描述|  
 |-----------|-----------------|  
-|**_RPT0**， **_RPT1**， **_RPT2**， **_RPT3**， **_RPT4**|輸出訊息字串和零至四個引數。 從 _rpt1 到 **_RPT4**，訊息字串做為引數的 printf 樣式格式字串。|  
-|**_RPTF0**， **_RPTF1**， **，_RPTF2**， **_RPTF4**|與相同 **_RPTn** ，但是這些巨集也會輸出巨集所在位置的檔案名稱和行號。|  
+|**_RPT0**、**_RPT1**、**_RPT2**、**_RPT3**、**_RPT4**|輸出訊息字串和零至四個引數。 從 _RPT1 到 **_RPT4**，訊息字串作為引數的 printf 樣式格式字串。|  
+|**_RPTF0**, **_RPTF1**, **,_RPTF2**, **_RPTF4**|與相同 **_RPTn** ，但是這些巨集也會輸出巨集所在位置的檔案名稱和行號。|  
   
  參考下列範例：  
   
@@ -57,13 +52,13 @@ ms.locfileid: "51758449"
 #endif  
 ```  
   
- 此程式碼輸出的值`someVar`並`otherVar`要**stdout**。 您可以使用下列的 `_RPTF2` 呼叫來報告這些相同的值，此外，還有檔名和行號：  
+ 這段程式碼會將 `someVar` 和 `otherVar` 的值輸出至 **stdout**。 您可以使用下列的 `_RPTF2` 呼叫來報告這些相同的值，此外，還有檔名和行號：  
   
 ```  
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );  
 ```  
   
- 如果您發現特定應用程式需要的偵錯報告是 C 執行階段程式庫提供的巨集所沒有的，您可以撰寫特別設計的巨集來符合您自己的需要。 在其中一個標頭檔，例如，您可以包含像是下列內容以定義巨集呼叫的程式碼**ALERT_IF2**:  
+ 如果您發現特定應用程式需要的偵錯報告是 C 執行階段程式庫提供的巨集所沒有的，您可以撰寫特別設計的巨集來符合您自己的需要。 例如，您可以在其中一個標頭檔案中，包含如下的程式碼，來定義名為 **ALERT_IF2** 的巨集：  
   
 ```  
 #ifndef _DEBUG                  /* For RELEASE builds */  
@@ -90,6 +85,3 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
   
 ## <a name="see-also"></a>另請參閱  
  [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)
-
-
-

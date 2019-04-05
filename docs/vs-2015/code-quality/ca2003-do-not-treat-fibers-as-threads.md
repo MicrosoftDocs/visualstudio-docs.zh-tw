@@ -1,14 +1,9 @@
 ---
-title: CA2003： 不要將 fiber 視為執行緒 |Microsoft Docs
-ms.custom: ''
+title: CA2003:不要將 fiber 視為執行緒 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2003
 - DoNotTreatFibersAsThreads
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f3d72e052decc5a26dd134aafcaac8aba6af699f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a1683c8cb9b9c6dc856f40ddbc7864d773f2101
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49810914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943496"
 ---
-# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003：不要將 Fiber 視為執行緒
+# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003:不要將 Fiber 視為執行緒
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -48,6 +43,3 @@ ms.locfileid: "49810914"
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  您不應該隱藏此規則。
-
-
-

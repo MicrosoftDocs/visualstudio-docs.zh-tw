@@ -1,26 +1,21 @@
 ---
 title: 核心編輯器內 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aca4bb8ad55dbd4cac0a6f899731711ccb6db8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 61484c9d01022b9f3b860f0c7b78dd3aedc045f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798543"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944832"
 ---
 # <a name="inside-the-core-editor"></a>在核心編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51798543"
  [舊版 API 中的文字緩衝區事件](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  提供一份用於文字緩衝區事件通知的介面。  
   
- [如何：使用舊版 API 註冊文字緩衝區事件](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [如何：註冊使用舊版 API 的文字緩衝區事件](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  描述如何通知文字緩衝區的事件。  
   
  [使用文字管理員監視全域設定](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -84,4 +79,3 @@ ms.locfileid: "51798543"
   
  [如何：建立自訂文字標記](../extensibility/how-to-create-custom-text-markers.md)  
  提供有關如何建立自訂文字標記，以及如何提供標記類型做為服務的逐步指示。
-

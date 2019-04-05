@@ -1,12 +1,9 @@
 ---
 title: 在資料集中的關聯性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vbData.Microsoft.VSDesigner.DataSource.DesignRelation
 - vbdata.Microsoft.VSDesigner.DataSource.DesignRelation
@@ -23,13 +20,13 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e78b4efa9c56a46ea182d3ff3b77a7452d0c547f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935402"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930646"
 ---
 # <a name="relationships-in-datasets"></a>在資料集中的關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +67,7 @@ ms.locfileid: "49935402"
 |外部索引鍵條件約束規則|動作|  
 |----------------------------------|------------|  
 |<xref:System.Data.Rule>|父記錄所做的變更 （更新或刪除） 也會在子資料表中的相關記錄。|  
-|<xref:System.Data.Rule>|不會刪除子記錄，但是子記錄的外部索引鍵設定為<xref:System.DBNull>。 使用此設定，子記錄可保持為 「 孤立 」 — 也就是它們有沒有父資料錄的關聯性。 **注意：** 使用這項規則時，可能導致子資料表中有無效的資料。|  
+|<xref:System.Data.Rule>|不會刪除子記錄，但是子記錄的外部索引鍵設定為<xref:System.DBNull>。 使用此設定，子記錄可保持為 「 孤立 」 — 也就是它們有沒有父資料錄的關聯性。 **注意：** 使用這項規則，可能會導致子資料表中有無效的資料。|  
 |<xref:System.Data.Rule>|相關的子記錄的外部索引鍵設為其預設值 (由資料行建立<xref:System.Data.DataColumn.DefaultValue%2A>屬性)。|  
 |<xref:System.Data.Rule>|不會變更相關的子記錄。 使用此設定，子記錄可包含無效的父記錄的參考。|  
   
@@ -88,7 +85,7 @@ ms.locfileid: "49935402"
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>若要建立兩個資料表之間的關聯性  
   
-1.  開啟您的資料集，在**Dataset 設計工具**。 如需詳細資訊，請參閱 <<c0> [ 如何： 以 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1.  在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
 2.  拖曳**關聯**物件**DataSet**工具箱拖曳到關聯性中的子資料表。  
   
@@ -112,7 +109,6 @@ ms.locfileid: "49935402"
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>若要在 Dataset 設計工具中顯示關聯性名稱  
   
-1.  開啟您的資料集，在**Dataset 設計工具**。 如需詳細資訊，請參閱 <<c0> [ 如何： 以 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1.  在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
 2.  從**資料**功能表上，選取**顯示關聯性標籤**命令，以顯示關聯性名稱。 清除該命令可以隱藏的關聯性名稱。
-
