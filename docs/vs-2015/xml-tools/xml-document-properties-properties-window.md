@@ -1,25 +1,20 @@
 ---
 title: XML 文件屬性，屬性視窗 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c93defe6f5c56966195f1514b5aa76464f6f3013
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 957abb04b6da602b711bef55b8ff8e62edaecaac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236557"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945713"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML 文件屬性 (屬性視窗)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ ms.locfileid: "49236557"
   
  亦可輸入結構描述的路徑。 如果指定多個結構描述，則每個結構描述路徑都必須包含在雙引號中。  
   
- **樣式表**  
+ **Stylesheet**  
  用來轉換文件的 XSLT 檔案時**顯示 XSLT 輸出**命令可用。 如果此欄位為空白時**顯示 XSLT 輸出**命令時，編輯器使用中提供的值`xml-stylesheet`處理指示的文件，它會提示您輸入檔案名稱。  
   
  編輯 XSLT 檔案時，此屬性可用來指定不同的樣式表應使用的時機**顯示 XSLT 輸出**或**偵錯 XSLT**選取命令時。 例如，當編輯包含在父樣式表中的樣式表時，您可能想要這樣做。  
@@ -56,6 +51,3 @@ ms.locfileid: "49236557"
 ## <a name="see-also"></a>另請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)   
  [XML 編輯器元件](../xml-tools/xml-editor-components.md)
-
-
-

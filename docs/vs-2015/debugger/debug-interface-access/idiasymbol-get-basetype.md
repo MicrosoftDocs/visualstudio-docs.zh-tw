@@ -1,14 +1,9 @@
 ---
-title: 'Idiasymbol:: Get_basetype |Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_baseType | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 5c69a241-a8d3-48ed-8b36-27463a196572
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 08af047b1c4134c6da0aa5250bd9d5ded20d4a60
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d090df12a8b19d81717a71496f47c753c4acee7c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789183"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943131"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,8 +70,5 @@ if (pType->get_type( &pBaseType ) == S_OK)
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [BasicType 列舉](../../debugger/debug-interface-access/basictype.md)   
+ [BasicType Enumeration](../../debugger/debug-interface-access/basictype.md)   
  [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: InstallShield 限量版 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: 151e46e5-86da-4336-b6d0-42b5326c4884
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 482b06a079346e91a91708d32733754a3f98a3db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ac447d3511365cf8e7f48344231d0ddb8d2a4374
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189659"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945152"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield 限量版
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,6 +33,3 @@ ms.locfileid: "49189659"
 3.  在範本清單中，選擇 [啟用 InstallShield Limited Edition] ，然後選擇 [確定]  按鈕。  
   
 4.  閱讀開啟之瀏覽器視窗中的指示，然後選擇 [進入下載網站]  連結。
-
-
-

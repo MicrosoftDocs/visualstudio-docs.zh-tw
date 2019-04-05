@@ -1,14 +1,9 @@
 ---
 title: Friend （偵錯介面存取 SDK） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 5147a170-41ce-4727-8ace-c318e8d11647
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f1e3262757df304bfdacc7ec7000dfd9ecdf2e92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ab8892bdf0caaa61a4b60fab10a5fecfb115e7f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782319"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944668"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>friend (偵錯介面存取 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ Friend 類別和 friend 函式會由`SymTagFriend`符號。 他們是父系的�
   
 ## <a name="see-also"></a>另請參閱  
  [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
-
-
-

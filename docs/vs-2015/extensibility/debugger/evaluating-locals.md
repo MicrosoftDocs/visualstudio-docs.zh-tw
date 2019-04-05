@@ -1,27 +1,22 @@
 ---
 title: 評估區域變數 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], evaluating locals
 - expression evaluation, evaluating locals
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 88b9fdd5ac8451056454b80ad0262b8aa9bf951b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fcbf6c3908460ce9d0f34b31c9a815c652de8031
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759016"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945210"
 ---
 # <a name="evaluating-locals"></a>評估區域變數
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -200,4 +195,3 @@ HRESULT FieldGetPrimitiveValue(
  [區域變數的範例實作](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [取得區域變數值](../../extensibility/debugger/getting-local-values.md)   
  [評估內容](../../extensibility/debugger/evaluation-context.md)
-
