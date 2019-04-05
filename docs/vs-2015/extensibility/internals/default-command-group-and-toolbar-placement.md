@@ -1,14 +1,9 @@
 ---
 title: 預設命令、 群組及工具列位置 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands [Visual Studio], default groups
 - toolbars [Visual Studio], default
@@ -19,23 +14,23 @@ helpviewer_keywords:
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e91d535697d0e5b9402a7b7eb3bbd4559821c68a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a7fc877332f7db7b27c4a30c23f1ac395a4fc22e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773635"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943377"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>預設的命令、群組及工具列放置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 如需產品的一致性和穩定性，UI 預設會顯示特定命令群組，和[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]提供命令和命令群組的定義。 Vspackage 也可以使用標準命令和命令群組。  
   
- 預設命令群組分成三個類別： IDE 命令、 產品命令和編輯器命令。  
+ 預設命令群組分成三個類別：IDE 命令、 產品命令和編輯器命令。  
   
 ## <a name="default-ide-commands"></a>預設 IDE 命令  
- 預設 IDE 工具列中包含共用的所有產品中包含的命令[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 其中包括與相關的命令一般專案作業，例如**儲存**命令並**加入項目**命令。 Vspackage 不應該加入或減去此工具列，但有一個例外： 如果 VSPackage 的產品加入新的工具視窗中，則視窗應該新增至可用的工具視窗的清單上**檢視**功能表。 新的產品或 Vspackage 可以新增自己的工具列。  
+ 預設 IDE 工具列中包含共用的所有產品中包含的命令[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 其中包括與相關的命令一般專案作業，例如**儲存**命令並**加入項目**命令。 Vspackage 不應該加入或減去此工具列，有一個例外狀況：如果 VSPackage 的產品加入新的工具視窗中，則視窗應該新增至可用的工具視窗的清單上**檢視**功能表。 新的產品或 Vspackage 可以新增自己的工具列。  
   
 ## <a name="default-product-commands"></a>預設產品命令  
  每項產品可以提供自己預設工具列包含重要且常用命令的 IDE。 它是最佳方法，不過，若要使用現有的功能表和工具列，可能的話，並補充它們與其他工作特定的工具列，視。  
@@ -50,4 +45,3 @@ ms.locfileid: "51773635"
 ## <a name="see-also"></a>另請參閱  
  [IDE 定義的命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)   
  [VSPackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

@@ -1,12 +1,9 @@
 ---
 title: 建立 UML 模型專案和圖表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.addnewdiagramdialog
 - vs.teamarch.createnewmodelingprojectdialog
@@ -27,13 +24,13 @@ ms.assetid: c178b04b-4fd2-4bed-97e3-d793dae8649c
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5d841c9fde677eb4a8fb17e952a817364dab277e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9b36c038194f20cecf1be59775c2261497a0fda8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738401"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940272"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>建立 UML 模型專案和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -155,12 +152,9 @@ UML 模型可協助您了解、討論及設計軟體系統。 Visual Studio 提�
   
 |**問題**|**原因**|**解決方法**|  
 |---------------|----------------|--------------------|  
-|無法開啟或載入至方案的模型專案。<br /><br /> 畫面顯示下列訊息：<br /><br /> 「方案中的一個或多個專案未正確載入。 如需詳細資訊，請參閱 [輸出] 視窗。」<br /><br /> [輸出] 視窗會顯示下列訊息：<br /><br /> 「*ModelingProjectFilenameAndPath*.modelproj： 錯誤： 無法辨認的 Guid 格式。 」|模型專案具有相同名稱且位於相同方案中專案的參考。<br /><br /> 例如，圖層會連結至具有相同名稱且位於相同方案中的專案。|使用文字編輯器來開啟模型專案檔案，接著移除參考，然後再次嘗試開啟模型專案。<br /><br /> 若要避免這個問題，請勿加入具有相同名稱的專案參考。 確定專案具有唯一名稱。|  
+|無法開啟或載入至方案的模型專案。<br /><br /> 畫面顯示下列訊息：<br /><br /> 「方案中的一個或多個專案未正確載入。 如需詳細資訊，請參閱 [輸出] 視窗。」<br /><br /> [輸出] 視窗會顯示下列訊息：<br /><br /> 「*ModelingProjectFilenameAndPath*.modelproj： 錯誤：無法辨認的 Guid 格式。 」|模型專案具有相同名稱且位於相同方案中專案的參考。<br /><br /> 例如，圖層會連結至具有相同名稱且位於相同方案中的專案。|使用文字編輯器來開啟模型專案檔案，接著移除參考，然後再次嘗試開啟模型專案。<br /><br /> 若要避免這個問題，請勿加入具有相同名稱的專案參考。 確定專案具有唯一名稱。|  
 |已加入、複製或拖曳至其他模型專案或方案中其他位置的圖表，其中項目已遺失。<br /><br /> -或-<br /><br /> 在嘗試開啟圖表時，會顯示下列訊息：<br /><br /> -「 某些圖形或圖表上的連接器之所以遺失是因為其定義不存在於此專案。 可能是在關閉圖表時從模型中刪除了定義，或是已將圖表複製到另一個不包含這些定義的專案。<br /><br /> -或-<br /><br /> -「 這份文件由另一個專案開啟 」。|圖表檔案已從模型專案加入、拖曳，或複製至其他模型專案或方案中其他位置。|若要複製圖表檔案，請建立新的圖表，然後將來源圖表中的項目複製到新的圖表。|  
   
 ## <a name="see-also"></a>另請參閱  
  [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)   
  [建構模型方案](../modeling/structure-your-modeling-solution.md)
-
-
-

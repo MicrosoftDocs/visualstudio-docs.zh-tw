@@ -1,27 +1,22 @@
 ---
 title: 將 Visual Studio 命令加入至起始頁 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - start page commands
 - vs:VSCommands
 ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6a5a0e205d04fb219d000dd87e97735cdfd26162
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 34336b93e8739bcba807aca72b26a47b581b7413
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748752"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941918"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>將 Visual Studio 命令新增至起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,8 +107,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 </ListBox  
 ```  
   
- 如需範例，請參閱[逐步解說： 在 [開始] 頁面上儲存使用者設定](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)。  
+ 如需範例，請參閱[逐步解說：將使用者設定儲存到起始頁](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [將使用者控制項加入至起始頁](../extensibility/adding-user-control-to-the-start-page.md)
-

@@ -1,8 +1,8 @@
 ---
-title: 為 Azure 雲端服務和虛擬機器設定診斷 |Microsoft Docs
-description: 了解如何設定偵錯 Azure 雲端服務和虛擬機器 (Vm) 在 Visual Studio 中的診斷。
+title: 為 Azure 雲端服務和虛擬機器設定診斷 | Microsoft Docs
+description: 了解如何在 Visual Studio 中為 Azure 雲端服務和虛擬機器 (VM) 設定診斷。
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
@@ -10,145 +10,145 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 4448825c5d443887833a405aab14d2243a0e5216
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 049d8500f9f3f2a8695d686484ea48f84f2e034b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51002087"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942345"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>針對 Azure 雲端服務與虛擬機器設定診斷
-當您需要疑難排解 Azure 雲端服務或虛擬機器時，您可以使用 Visual Studio 更輕鬆地設定 Azure 診斷。 診斷會擷取系統資料和記錄資料的虛擬機器和執行雲端服務的虛擬機器執行個體上。 診斷資料傳送到您選擇的儲存體帳戶。 如需診斷的詳細資訊記錄在 Azure 中，請參閱[針對 Azure App Service 中的 Web 應用程式啟用診斷記錄](/azure/app-service/web-sites-enable-diagnostic-log)。
+需要針對 Azure 雲端服務或 Azure 虛擬機器進行疑難排解時，您可以使用 Visual Studio 更輕鬆地設定 Azure 診斷。 診斷會在執行雲端服務的虛擬機器和虛擬機器執行個體上擷取系統資料和記錄資料。 診斷資料會傳輸到您選擇的儲存體帳戶。 如需 Azure 中診斷記錄的詳細資訊，請參閱[在 Azure App Service 中針對 Web 應用程式啟用診斷記錄](/azure/app-service/web-sites-enable-diagnostic-log)。
 
-在本文中，我們示範您如何使用 Visual Studio 來開啟和設定 Azure 診斷，在部署前後。 了解如何設定 Azure 虛擬機器上的診斷、 如何選取要收集的診斷資訊類型及如何收集之後檢視資訊。
+在本文中，我們示範如何在部署前後使用 Visual Studio 來開啟並設定 Azure 診斷。 了解如何在 Azure 虛擬機器上設定診斷、如何選取要收集的診斷資訊類型，以及如何在收集之後檢視資訊。
 
-您可以使用下列選項之一來設定 Azure 診斷：
+您可以使用下列其中一個選項來設定 Azure 診斷：
 
-* 變更診斷設定**診斷組態**Visual Studio 中的對話方塊。 這些設定會儲存在稱為 diagnostics.wadcfgx （在 Azure SDK 2.4 和更早版本，檔案稱為 diagnostics.wadcfg） 的檔案。 您也可以直接修改組態檔。 如果您手動更新檔案，這個組態變更生效下次部署雲端服務至 Azure，或在模擬器中執行服務。
-* 使用雲端總管] 或 [伺服器總管 」 Visual Studio 中，若要變更雲端服務或執行的虛擬機器的診斷設定。
+* 在 Visual Studio 的 [診斷設定]  對話方塊中變更診斷設定。 這些設定會儲存在稱為 diagnostics.wadcfgx 的檔案 (在 Azure SDK 2.4 或更早版本中，檔案稱為 diagnostics.wadcfg)。 您也可以直接修改設定檔。 如果您手動更新檔案，設定變更會在您下一次將雲端服務部署至 Azure 或在模擬器中執行服務時生效。
+* 使用 Visual Studio 中的 [雲端總管] 或 [伺服器總管]，為執行中的雲端服務或虛擬機器變更診斷設定。
 
 ## <a name="azure-sdk-26-diagnostics-changes"></a>Azure SDK 2.6 診斷變更
-Azure SDK 2.6 和更新版本的專案，Visual Studio 中適用於下列變更：
+下列變更適用於 Visual Studio 中的 Azure SDK 2.6 和更新版本專案：
 
-* 本機模擬器現在支援診斷。 這表示您可以用來收集診斷資料，並確保您的應用程式在開發及測試 Visual Studio 中時，會建立正確的追蹤。 連接字串`UseDevelopmentStorage=true`開啟診斷資料集合，當您執行您的雲端服務專案在 Visual Studio 中使用 Azure 儲存體模擬器。 開發儲存體儲存體帳戶中，會收集所有的診斷資料。
-* 診斷儲存體帳戶連接字串`Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString`會儲存在服務組態 (.cscfg) 檔。 在 Azure SDK 2.5，diagnostics.wadcfgx 檔案中指定診斷儲存體帳戶。
+* 本機模擬器現在支援診斷。 這表示您可以收集診斷資料，並確保您在 Visual Studio 中進行開發及測試時，您的應用程式會建立正確的追蹤。 當您在 Visual Studio 中使用 Azure 儲存體模擬器來執行您的雲端服務專案時，連接字串 `UseDevelopmentStorage=true` 會開啟診斷資料收集。 所有的診斷資料都會收集到「開發儲存體」儲存體帳戶中。
+* 診斷儲存體帳戶連接字串 `Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString` 會儲存在服務設定 (.cscfg) 檔案中。 在 Azure SDK 2.5 中，診斷儲存體帳戶會在 diagnostics.wadcfgx 檔案中指定。
 
-連接字串的運作方式不同以一些主要的方式在 Azure SDK 2.6 和更新版本與 Azure SDK 2.4 及更早版本：
+在 Azure SDK 2.6 和更新版本與 Azure SDK 2.4 及更舊版本中，連接字串的運作方式不同於其中某些索引鍵的運作方式：
 
-* 在 Azure SDK 2.4 和更早版本，連接字串來與執行階段診斷外掛程式取得用於傳輸診斷記錄的儲存體帳戶資訊。
-* 在 Azure SDK 2.6 和更新版本，Visual Studio 會使用診斷連接字串，若要設定 Azure 診斷擴充功能，在發佈期間的適當的儲存體帳戶資訊。 您可以使用的連接字串來定義不同的儲存體帳戶的 Visual Studio 在發佈期間使用的不同服務組態。 不過，因為 Azure SDK 2.5 之後無法使用診斷外掛程式，.cscfg 檔案本身無法設定診斷延伸模組。 您必須設定延伸模組分開使用 Visual Studio 或 PowerShell 等工具。
-* 為了簡化使用 PowerShell 設定診斷延伸模組的程序，從 Visual Studio 的封裝輸出會包含每個角色的診斷擴充功能公用組態 XML。 Visual Studio 會使用診斷連接字串，填入公用設定中的儲存體帳戶資訊。 公用設定檔會建立擴充功能資料夾中。 公用設定檔使用的命名模式 PaaSDiagnostics。&lt;角色名稱\>.Pubconfig.xml。 任何以 PowerShell 為基礎的部署可以使用此模式，來將每個組態對應至角色。
-* [Azure 入口網站](http://go.microsoft.com/fwlink/p/?LinkID=525040).cscfg 檔案中使用的連接字串，來存取診斷資料。 資料會出現在**監視** 索引標籤。連接字串，才能設定服務以在入口網站中顯示詳細監視資料。
+* 在 Azure SDK 2.4 及更舊版本中，階段診斷外掛程式使用連接字串會作為執行階段，以取得用於傳輸診斷記錄的儲存體帳戶資訊。
+* 在 Azure SDK 2.6 及更新版本中，Visual studio 會使用診斷連接字串，在發佈期間設定內含適當儲存體帳戶資訊的 Azure 診斷延伸模組。 您可以使用連接字串，為 Visual Studio 在發佈期間使用的不同服務設定，定義不同的儲存體帳戶。 不過，因為診斷外掛程式在 Azure SDK 2.5 之後無法使用，所以 .cscfg 檔案本身無法設定診斷延伸模組。 您必須使用 Visual Studio 或 PowerShell 等工具，個別設定延伸模組。
+* 為了使用 PowerShell 簡化診斷延伸模組的設定程序，從 Visual Studio 的封裝輸出包含每個角色之診斷延伸模組的公用設定 XML。 Visual Studio 使用診斷連接字串，填入公用設定中的儲存體帳戶資訊。 公用設定檔是在 Extensions 資料夾中建立的。 公用設定檔會使用命名模式 PaaSDiagnostics.&lt;role name\>.PubConfig.xml。 任何以 PowerShell 為基礎的部署都可以使用此模式，將每個設定對應至角色。
+* [Azure 入口網站](http://go.microsoft.com/fwlink/p/?LinkID=525040)會使用 .cscfg 檔案中的連接字串來存取診斷資料。 資料會出現在 [監視] 索引標籤上。需有連接字串，才能設定服務以在入口網站中顯示詳細監視資料。
 
-## <a name="migrate-projects-to-azure-sdk-26-and-later"></a>移轉至 Azure SDK 2.6 及更新版本的專案
-當您移轉從 Azure SDK 2.5 Azure SDK 2.6 或更新版本，如果您有.wadcfgx 檔案中指定診斷儲存體帳戶時，儲存體帳戶會保持在該檔案中。 若要利用不同的儲存體組態使用不同的儲存體帳戶的彈性，手動將連接字串加入您的專案。 如果您要移轉的專案，從 Azure SDK 2.4 或先前以 Azure SDK 2.6，則會保留診斷連接字串。 不過請注意在上一節中所述的 Azure SDK 2.6 中連接字串的處理方式的變更。
+## <a name="migrate-projects-to-azure-sdk-26-and-later"></a>將專案移轉至 Azure SDK 2.6 及更新版本
+從 Azure SDK 2.5 移轉至 Azure SDK 2.6 或更新版本時，如果您已在 .wadcfgx 檔案中指定診斷儲存體帳戶，儲存體帳戶就會留在該檔案中。 若要針對不同儲存體組態充分利用不同儲存體帳戶的靈活性，請手動將連接字串加入專案。 如果您將專案從 Azure SDK 2.4 或更舊版本移轉至 Azure SDK 2.6，系統會保留診斷連接字串。 不過，請注意 Azure SDK 2.6 中連接字串處理方式的變更，如上一節所述。
 
 ### <a name="how-visual-studio-determines-the-diagnostics-storage-account"></a>Visual Studio 如何決定診斷儲存體帳戶
-* 如果在.cscfg 檔案中指定診斷連接字串，則 Visual Studio 會使用它來設定診斷延伸模組，在發行期間，以及在封裝期間產生公用組態 XML 檔案時。
-* 如果未在.cscfg 檔案中指定診斷連接字串，Visual Studio 退而使用在.wadcfgx 檔案來設定診斷延伸模組進行發佈，以及產生公用組態 XML 中指定的儲存體帳戶在封裝期間的檔案。
-* .Cscfg 檔案中的診斷連接字串的優先順序高於.wadcfgx 檔案中的儲存體帳戶。 如果診斷連接字串是在.cscfg 檔案中，指定 Visual Studio 會使用該連接字串並忽略.wadcfgx 中的儲存體帳戶。
+* 如果在 .cscfg 檔案中指定診斷連接字串，Visual Studio 會在發佈期間，以及在封裝期間產生公用設定 XML 檔案時，使用它來設定診斷延伸模組。
+* 如果未在 .cscfg 檔案中指定診斷連接字串，Visual Studio 會回復到使用 .wadcfgx 檔案中指定的儲存體帳戶來設定診斷延伸模組，以進行發佈以及在封裝期間產生公用設定 XML 檔案。
+* 在 .cscfg 檔案中的診斷連接字串的優先順序高於 .wadcfgx 檔案中的儲存體帳戶。 如果在 .cscfg 檔案中指定診斷連接字串，Visual Studio 會使用該連接字串，並忽略 .wadcfgx 中的儲存體帳戶。
 
-### <a name="what-does-the-update-development-storage-connection-strings-check-box-do"></a>「 更新開發儲存體連接字串...」 核取方塊的作用為何？
-**更新開發儲存體連接字串以供診斷和快取，使用 Microsoft Azure 儲存體帳戶認證時發佈至 Microsoft Azure**核取方塊是便利的方式來更新任何開發儲存體帳戶連接字串與您在發佈期間指定的 Azure 儲存體帳戶。
+### <a name="what-does-the-update-development-storage-connection-strings-check-box-do"></a>「更新開發儲存體連接字串...」核取方塊的功用？
+[在發佈至 Microsoft Azure 時使用 Microsoft Azure 儲存體帳戶認證更新診斷和快取的開發儲存體連接字串]  核取方塊是一種便利方式，可使用發佈期間指定的 Azure 儲存體帳戶更新任何開發儲存體帳戶連接字串。
 
-例如，如果您選取此核取方塊和診斷連接字串指定`UseDevelopmentStorage=true`，當您發行專案至 Azure，Visual Studio 會自動更新診斷連接字串中指定的儲存體帳戶[發行精靈]。 不過，如果實際的儲存體帳戶指定為診斷連接字串，該帳戶是改為使用。
+例如，如果您選取此核取方塊，而且診斷連接字串指定 `UseDevelopmentStorage=true`，則在您將專案發佈至 Azure 時，Visual Studio 會使用您在發佈精靈中指定的儲存體帳戶，自動更新診斷連接字串。 不過，如果將實際的儲存體帳戶指定為診斷連接字串，則會改用該帳戶。
 
-## <a name="diagnostics-functionality-differences-in-azure-sdk-24-and-earlier-vs-azure-sdk-25-and-later"></a>在 Azure SDK 2.4 及更舊版本中的診斷功能差異。Azure SDK 2.5 及更新版本
-如果您要升級您的專案，從 Azure SDK 2.4 和稍早為 Azure SDK 2.5 或更新版本，請記住下列診斷功能差異：
+## <a name="diagnostics-functionality-differences-in-azure-sdk-24-and-earlier-vs-azure-sdk-25-and-later"></a>Azure SDK 2.4 及更舊版本與 Azure SDK 2.5 及更新版本之間的診斷功能差異
+如果您要將專案從 Azure SDK 2.4 及更舊版本更新為 Azure SDK 2.5 或更新版本，請謹記下列診斷功能差異：
 
-* **組態 Api 已淘汰**。 適用於 Azure SDK 2.4 和更早版本，以程式設計方式設定診斷，但在 Azure SDK 2.5 及更新版本已被取代。 如果您的診斷組態目前定義程式碼中，您必須重新設定診斷的移轉專案中從頭繼續使用這些設定。 Azure SDK 2.4 的診斷組態檔是 diagnostics.wadcfg。 Azure SDK 2.5 及更新版本時，診斷組態檔是 diagnostics.wadcfgx。
-* **雲端服務應用程式的診斷可設定只能在角色層級**。 在 Azure SDK 2.5 和更新版本，無法在執行個體層級設定雲端服務應用程式的診斷。
-* **每次您部署您的應用程式時，都會更新診斷組態**。 如果您從 Visual Studio 伺服器總管 變更診斷組態，然後重新部署您的應用程式，這會導致同位問題。
-* **在 Azure SDK 2.5 和更新版本，在 診斷組態檔，而不是在程式碼設定損毀傾印**。 如果您有程式碼中設定的損毀傾印，您必須手動將組態從程式碼組態檔。 損毀傾印不是在移轉期間移轉至 Azure SDK 2.6。
+* **設定 API 已被取代**。 診斷的程式設計設定可在 Azure SDK 2.4 或更舊版本中使用，但在 Azure SDK 2.5 及更新版本中已被取代。 如果診斷設定目前以程式碼定義，您必須在移轉專案中從頭開始進行這些設定才能讓診斷保持運作。 Azure SDK 2.4 的診斷設定檔是 diagnostics.wadcfg。 Azure SDK 2.5 及更新版本的診斷設定檔是 diagnostics.wadcfgx。
+* **雲端服務應用程式的診斷只能在角色層級設定**。 在 Azure SDK 2.5 及更新版本中，您無法在執行個體層級設定雲端服務應用程式的診斷。
+* **每次部署您的應用程式時，都會更新診斷設定**。 如果您從 Visual Studio [伺服器總管] 變更診斷設定，然後重新部署您的應用程式，則會導致同位檢查的問題。
+* **在 Azure SDK 2.5 及更新版本中，損毀傾印是在診斷設定檔中設定，而不是在程式碼中設定**。 如果已在程式碼中設定損毀傾印，您必須手動將程式碼中的設定傳輸至設定檔。 在移轉至 Azure SDK 2.6 期間不會傳輸損毀傾印。
 
-## <a name="turn-on-diagnostics-in-cloud-service-projects-before-you-deploy-them"></a>在部署之前開啟雲端服務專案中的診斷
-在 Visual Studio 中，您可以收集診斷資料，當您在部署之前模擬器中執行服務時，在 Azure 中執行的角色。 Visual Studio 中對診斷設定的所有變更都會都儲存在 diagnostics.wadcfgx 組態檔中。 這些設定會指定當您部署您的雲端服務時，其中儲存診斷資料的儲存體帳戶。
+## <a name="turn-on-diagnostics-in-cloud-service-projects-before-you-deploy-them"></a>部署雲端服務專案中的診斷之前先將其開啟
+在 Visual Studio 中，當您在部署之前執行模擬器中的服務時，就可以收集在 Azure 中執行之角色的診斷資料。 在 Visual Studio 中對診斷設定進行的所有變更都會儲存在 diagnostics.wadcfgx 組態檔中。 這些設定會在您部署雲端服務時指定儲存診斷資料的儲存體帳戶。
 
 [!INCLUDE [cloud-services-wad-warning](./includes/cloud-services-wad-warning.md)]
 
-### <a name="to-turn-on-diagnostics-in-visual-studio-before-deployment"></a>若要開啟 Visual Studio 中部署之前的診斷
+### <a name="to-turn-on-diagnostics-in-visual-studio-before-deployment"></a>在部署之前開啟 Visual Studio 中的診斷
 
-1. 在角色的捷徑功能表，選取**屬性**。 在角色的**屬性**對話方塊中，選取**組態** 索引標籤。
-2. 在 **診斷**區段中，請確定**啟用診斷**選取核取方塊。
-   
+1. 在角色的捷徑功能表上，選取 [屬性]。 在角色的 [屬性] 對話方塊中，選取 [設定] 索引標籤。
+2. 在 [診斷] 區段中，確定已選取 [啟用診斷] 核取方塊。
+
     ![存取啟用診斷選項](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796660.png)
-3. 若要指定診斷資料的儲存體帳戶，請選取省略符號 （...） 按鈕。
-   
+3. 若要指定診斷資料的儲存體帳戶，請選擇省略符號 (...) 按鈕。
+
     ![指定要使用的儲存體帳戶](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796661.png)
-4. 在 **建立儲存體連接字串**對話方塊方塊中，指定您想要使用 Azure 儲存體模擬器，Azure 訂用帳戶中，連接或手動輸入的認證。
-   
+4. 在 [建立儲存體連接字串]  對話方塊中，指定要使用 Azure 儲存體模擬器、Azure 訂用帳戶或手動輸入的認證來連接。
+
     ![儲存體帳戶對話方塊](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796662.png)
-   
-   * 如果您選取**Microsoft Azure 儲存體模擬器**，連接字串設定為`UseDevelopmentStorage=true`。
-   * 如果您選取**訂用帳戶**，您可以選取您要使用的 Azure 訂用帳戶，並輸入帳戶名稱。 若要管理您的 Azure 訂用帳戶，請選取**Manage Accounts**。
-   * 如果您選取**手動輸入的認證**，輸入名稱和您想要使用的 Azure 帳戶金鑰。
-5. 若要檢視**診斷組態**對話方塊中，選取**設定**。 除了**一般**並**記錄檔目錄**，每個索引標籤各代表您可以收集的診斷資料來源。 預設值**一般**索引標籤提供下列診斷資料收集選項：**僅限錯誤**，**所有資訊**，和**自訂計劃**. 預設值**僅限錯誤**選項會使用最少的儲存體，因為它不會傳輸警告或追蹤訊息。 **的所有資訊**選項會傳輸大部分的資訊、 使用最多的儲存體，以及因此，是最昂貴的選項。
+
+   * 如果您選取**Microsoft Azure 儲存體模擬器**，則連接字串會設定為 `UseDevelopmentStorage=true`。
+   * 如果選取 [您的訂用帳戶]，您可以選取要使用的 Azure 訂用帳戶，並輸入帳戶名稱。 若要管理您的 Azure 訂用帳戶，請選取 [管理帳戶]。
+   * 如果您選取 [手動輸入的認證]，請輸入您想要使用之 Azure 帳戶的名稱和金鑰。
+5. 若要檢視 [診斷設定] 對話方塊，請選取 [設定] 對話方塊。 除了 [一般] 和 [記錄目錄] 之外，每個索引標籤都代表您可以收集的診斷資料來源。 預設 [一般] 索引標籤提供下列診斷資料收集選項：[僅錯誤]、[所有資訊] 和 [自訂方案]。 預設 [只記錄錯誤] 選項會佔用最少的儲存體，因為它不會傳輸警告或追蹤訊息。 [所有資訊]  選項會傳輸大部分的資訊、使用最多的儲存體，因此它是最昂貴的選項。
 
    > [!NOTE]
-   > 針對 「 磁碟配額中 MB 」 支援的大小下限為 4 GB。 不過，如果您要收集記憶體傾印，增加這個較高的值，例如 10 GB。
+   > 針對「磁碟配額 (以 MB 為單位)」支援的大小下限為 4GB。 不過，如果您有收集記憶體傾印，請將這個值增加為較高的值，例如 10GB。
    >
-  
+
     ![啟用 Azure 診斷和組態](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
-6. 此範例中，選取**自訂計劃**選項，因此您可以自訂收集的資料。
-7. 在 [ **mb 的磁碟配額**] 方塊中，您可以設定要在診斷資料的儲存體帳戶中配置多少空間。 您可以變更或接受預設值。
-8. 在您想要收集的診斷資料的每個索引標籤上，選取**啟用傳輸\<記錄檔類型\>** 核取方塊。 例如，如果您想要收集的應用程式記錄檔中，**應用程式記錄檔**索引標籤上，選取**啟用傳輸應用程式記錄檔**核取方塊。 此外，指定所需的每個診斷資料類型的其他資訊。 每個索引標籤的設定資訊，請參閱節**設定診斷資料來源**本文稍後。 
-9. 您已啟用您想要的所有診斷資料收集之後，請選取**確定**。
-10. 像往常一樣在 Visual Studio 中執行您的 Azure 雲端服務專案。 當您使用您的應用程式時，您已啟用的記錄資訊會儲存到您指定的 Azure 儲存體帳戶。
+6. 在此範例中，請選取 [自訂計劃]  選項，您就可以自訂收集的資料。
+7. 在 [以 MB 為單位的磁碟配額]  方塊中，您可以設定要在儲存體帳戶中配置診斷資料的空間大小。 您可以變更或接受預設值。
+8. 在您想要收集之診斷資料的每個索引標籤上，選取 [啟用 \<log type\> 的傳輸] 核取方塊。 例如，如果您想要收集應用程式記錄檔，請在 [應用程式記錄檔] 索引標籤上選取 [啟用應用程式記錄檔的傳輸] 核取方塊。 此外，請指定每個診斷資料類型所需的其他資訊。 如需每個索引標籤的設定資訊，請參閱本文稍後的 **設定診斷資料來源**一節。
+9. 啟用所有您想要的診斷資料收集之後，請選取 [確定]。
+10. 如往常一般在 Visual Studio 中建立 Azure 雲端服務專案。 當您使用您的應用程式，您已啟用的記錄檔資訊會儲存到您指定的 Azure 儲存體帳戶。
 
 ## <a name="turn-on-diagnostics-on-azure-virtual-machines"></a>開啟 Azure 虛擬機器上的診斷
 在 Visual Studio 中，您可以收集 Azure 虛擬機器的診斷資料。
 
-### <a name="to-turn-on-diagnostics-on-azure-virtual-machines"></a>若要開啟 Azure 虛擬機器上的診斷
+### <a name="to-turn-on-diagnostics-on-azure-virtual-machines"></a>開啟 Azure 虛擬機器上的診斷
 
-1. 在伺服器總管 中，選取 Azure 節點，然後連接至您 Azure 訂用帳戶中，如果您尚未連接。
-2. 依序展開**虛擬機器**節點。 您可以建立新的虛擬機器，或選取現有的節點。
-3. 在您想要的虛擬機器的捷徑功能表，選取**設定**。 虛擬機器的 [設定] 對話方塊隨即出現。
-   
+1. 在 [伺服器總管] 中，選取 Azure 節點，然後連線至您的 Azure 訂用帳戶 (如果您尚未連線)。
+2. 展開 **虛擬機器** 節點。 您可以建立新的虛擬機器，或選取現有的節點。
+3. 在您所需之虛擬機器的捷徑功能表上，選取 [設定]。 [虛擬機器設定] 對話方塊隨即出現。
+
     ![設定 Azure 虛擬機器](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796663.png)
-4. 如果尚未安裝，請新增 Microsoft Monitoring Agent 診斷延伸模組。 與此延伸模組，您可以收集 Azure 虛擬機器的診斷資料。 底下**已安裝擴充功能**，請在**選取 可用的擴充功能**下拉式清單方塊中，選取**Microsoft Monitoring Agent 診斷**。
-   
-    ![安裝 Azure 虛擬機器擴充功能](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
-   
+4. 如果尚未安裝，請新增 Microsoft Monitoring Agent 診斷延伸模組。 您可以使用此延伸模組，收集 Azure 虛擬機器的診斷資料。 在 [已安裝的延伸模組] 下，於 [選取可用的延伸模組] 下拉式功能表中，選取 [Microsoft Monitoring Agent 診斷]。
+
+    ![安裝 Azure 虛擬機器延伸模組](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
+
     > [!NOTE]
-   > 其他診斷延伸模組可供您的虛擬機器。 如需詳細資訊，請參閱 <<c0> [ 虛擬機器擴充功能和 Windows 的功能](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features)。
-   > 
-   > 
-5. 若要新增延伸模組及檢視其**診斷組態**對話方塊中，選取**新增**。
-6. 若要指定儲存體帳戶，請選取**設定**，然後選取**確定**。
-   
-    每個索引標籤 (除了**一般**並**記錄檔目錄**) 代表您可以收集的診斷資料來源。
-   
+   > 其他可供您的虛擬機器使用的診斷延伸模組。 如需詳細資訊，請參閱[適用於 Windows 的虛擬機器擴充功能和功能](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features)。
+   >
+   >
+5. 若要新增延伸模組及檢視其 [診斷設定] 對話方塊，請選取 [新增]。
+6. 若要指定儲存體帳戶，請選取 [設定]，然後選取 [確定]。
+
+    每個索引標籤 (除了 [一般] 和 [記錄目錄] 之外) 都代表您可以收集的診斷資料來源。
+
     ![啟用 Azure 診斷和組態](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
-   
-    [預設] 索引標籤中，**一般**，提供您下列的診斷資料收集選項：**僅限錯誤**，**所有資訊**，和**自訂計劃**. [預設] 選項中，**僅限錯誤**，佔用最少的儲存體，因為它不會傳輸警告或追蹤訊息。 **的所有資訊**選項會傳輸大部分的資訊和，因此它是對儲存體而言最昂貴的選項。
-7. 此範例中，選取**自訂計劃**選項，使您可以自訂資料收集。
-8. **Mb 的磁碟配額** 方塊中指定您要配置儲存體帳戶中的診斷資料的空間。 如果您想要您可以變更預設值。
-9. 在您想要收集的診斷資料的每個索引標籤上，選取其**啟用傳輸\<記錄檔類型\>** 核取方塊。
-   
-    例如，如果您想要收集應用程式記錄檔，選取**啟用 přenos protokolů Aplikace**  核取方塊**應用程式記錄檔** 索引標籤。此外，指定所需的每個診斷資料類型的其他資訊。 每個索引標籤的設定資訊，請參閱節**設定診斷資料來源**本文稍後。
-10. 您已啟用所有您想要的診斷資料收集之後，請選取**確定**。
+
+    預設索引標籤 [一般] 提供下列診斷資料收集選項：[僅錯誤]、[所有資訊] 和 [自訂方案]。 預設選項 [只記錄錯誤] 會佔用最少的儲存體，因為它不會傳輸警告或追蹤訊息。 [所有資訊]  選項會傳輸大部分的資訊，因此它是對儲存體而言最昂貴的選項。
+7. 在此範例中，請選取 [自訂計劃]  選項，您就可以自訂收集的資料。
+8. [以 MB 為單位的磁碟配額]  方塊可指定您想要在儲存體帳戶中配置診斷資料的空間大小。 您可以任意變更預設值。
+9. 在您想要收集之診斷資料的每個索引標籤上，選取其 [啟用 \<log type\> 的傳輸] 核取方塊。
+
+    例如，如果您想要收集應用程式記錄檔，請選取 [應用程式記錄檔] 索引標籤上的 [啟用應用程式記錄檔的傳輸] 核取方塊。此外，請指定每個診斷資料類型所需的其他資訊。 如需每個索引標籤的設定資訊，請參閱本文稍後的 **設定診斷資料來源**一節。
+10. 啟用所有您想要的診斷資料收集之後，請選取 [確定]。
 11. 儲存更新的專案。
-    
-    中的訊息**Microsoft Azure 活動記錄**視窗表示已更新虛擬機器。
+
+    [Microsoft Azure 活動記錄]  視窗中的訊息指出虛擬機器已更新。
 
 ## <a name="set-up-diagnostics-data-sources"></a>設定診斷資料來源
-啟用診斷資料收集之後，您可以選擇您想要收集，完全是何種資料來源和所收集的資訊。 下節說明中的索引標籤**診斷組態** 對話方塊中，以及每個組態選項的意義。
+啟用診斷資料收集之後，您可以準確選擇您要收集的資料來源和所收集的資訊。 以下幾節描述 [診斷設定]  對話方塊中的索引標籤，以及每個設定選項的意義。
 
 ### <a name="application-logs"></a>應用程式記錄檔
-應用程式記錄具有 web 應用程式所產生的診斷資訊。 如果您想要擷取應用程式記錄檔，請選取**啟用傳輸應用程式記錄檔**核取方塊。 若要增加或減少應用程式將記錄傳輸至儲存體帳戶之間的間隔，變更**傳輸期間 （分鐘）** 值。 您也可以變更藉由設定記錄中擷取的資訊量**記錄層級**值。 例如，選取**Verbose**以取得詳細資訊，或選取**重大**只擷取嚴重錯誤。 如果您有特定的診斷提供者發出應用程式記錄檔，您可以藉由新增提供者的 GUID，在擷取記錄檔**提供者 GUID**  方塊中。
+應用程式記錄具有 Web 應用程式所產生的診斷資訊。 如果您想要擷取應用程式記錄檔，請選取 [啟用應用程式記錄檔傳輸] 核取方塊。 若要增加或減少將應用程式記錄傳輸至儲存體帳戶的間隔，請變更 [傳輸期間 (分鐘)] 值。 您也可以藉由設定**記錄層級**值變更記錄檔中擷取的資訊量。 例如，選取 [Verbose] 以取得詳細資訊，或選取 [嚴重] 只擷取嚴重的錯誤。 如果您有特定的診斷提供者會發出應用程式記錄，您可以藉由將提供者的 GUID 新增至 [提供者 GUID] 方塊來擷取記錄。
 
   ![應用程式記錄檔](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758145.png)
 
-如需有關應用程式記錄檔的詳細資訊，請參閱[針對 Azure App Service 中的 Web 應用程式啟用診斷記錄](/azure/app-service/web-sites-enable-diagnostic-log)。
+如需應用程式記錄的詳細資訊，請參閱[在 Azure App Service 中針對 Web 應用程式啟用診斷記錄](/azure/app-service/web-sites-enable-diagnostic-log)。
 
 ### <a name="windows-event-logs"></a>Windows 事件記錄檔
-若要擷取 Windows 事件記錄檔，請選取**啟用傳輸 Windows 事件記錄檔**核取方塊。 若要增加或減少的事件記錄檔傳輸至儲存體帳戶之間的間隔，變更**傳輸期間 （分鐘）** 值。 選取您想要追蹤的事件類型的核取方塊。
+若要擷取 Windows 事件記錄，請選取 [啟用 Windows 事件記錄傳輸] 核取方塊。 若要增加或減少將事件記錄傳輸至儲存體帳戶的間隔，請變更 [傳輸期間 (分鐘)] 值。 選取您想要追蹤之事件類型的核取方塊。
 
 ![事件記錄檔](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796664.png)
 
-如果您使用 Azure SDK 2.6 或更新版本，而且您想要指定自訂資料來源，請輸入它**\<資料來源名稱\>** 文字方塊中，然後選取**新增**。 資料來源會新增至 diagnostics.cfcfg 檔案。
+如果您正在使用 Azure SDK 2.6 或更新版本，並想要指定自訂資料來源，請在 [\<資料來源名稱\>] 文字方塊中將其輸入，然後選取 [新增]。 資料來源會新增至 diagnostics.cfcfg 檔案。
 
-如果您正在使用 Azure SDK 2.5 且想要指定自訂資料來源時，您可以將它加入`WindowsEventLog`區段在 diagnostics.wadcfgx 檔案，例如在下列範例中：
+如果您正在使用 Azure SDK 2.5 且想要指定自訂資料來源，您可以將它新增至 diagnostics.wadcfgx 檔案的 `WindowsEventLog` 區段，如下列範例所示：
 
 ```
 <WindowsEventLog scheduledTransferPeriod="PT1M">
@@ -157,138 +157,138 @@ Azure SDK 2.6 和更新版本的專案，Visual Studio 中適用於下列變更�
 </WindowsEventLog>
 ```
 ### <a name="performance-counters"></a>效能計數器
-效能計數器資訊可協助您找出系統瓶頸並微調系統和應用程式的效能。 如需詳細資訊，請參閱 <<c0> [ 在 Azure 應用程式中的建立及使用效能計數器](https://msdn.microsoft.com/library/azure/hh411542.aspx)。 若要擷取效能計數器，請選取**啟用效能計數器的傳輸**核取方塊。 若要增加或減少的事件記錄檔傳輸至儲存體帳戶之間的間隔，變更**傳輸期間 （分鐘）** 值。 選取您想要追蹤的效能計數器的核取方塊。
+效能計數器資訊可協助您找出系統瓶頸並微調系統和應用程式效能。 如需詳細資訊，請參閱[在 Azure 應用程式中建立及使用效能計數器](https://msdn.microsoft.com/library/azure/hh411542.aspx)。 若要擷取效能計數器，請選取 [啟用效能計數器的傳輸] 核取方塊。 若要增加或減少將事件記錄傳輸至儲存體帳戶的間隔，請變更 [傳輸期間 (分鐘)] 值。 選取您想要追蹤之效能計數器的核取方塊。
 
 ![效能計數器](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
-若要追蹤未列出的效能計數器，請使用建議的語法輸入效能計數器。 然後選取**新增**。 虛擬機器上的作業系統會決定您可以追蹤的效能計數器。如需有關語法的詳細資訊，請參閱 <<c0> [ 指定計數器路徑](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx)。
+若要追蹤未列出的效能計數器，請使用建議的語法輸入效能計數器。 然後，選取 [新增]。 虛擬機器上的作業系統會決定您可以追蹤的效能計數器。如需語法的詳細資訊，請參閱[指定計數器路徑](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx)。
 
 ### <a name="infrastructure-logs"></a>基礎結構記錄檔
-基礎結構記錄具有 Azure 診斷基礎結構、 RemoteAccess 模組和 RemoteForwarder 模組的相關資訊。 若要收集基礎結構記錄檔的相關資訊，請選取**啟用傳輸基礎結構記錄檔**核取方塊。 若要增加或減少的間隔的基礎結構記錄檔傳輸至儲存體帳戶，請變更**傳輸期間 （分鐘）** 值。
+基礎結構記錄具有 Azure 診斷基礎結構、RemoteAccess 模組和 RemoteForwarder 模組的相關資訊。 若要收集基礎結構記錄的相關資訊，請選取 [啟用基礎結構記錄的傳輸] 核取方塊。 若要增加或減少將基礎結構記錄傳輸至儲存體帳戶的間隔，請變更 [傳輸期間 (分鐘)] 值。
 
 ![診斷基礎結構記錄檔](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
-如需詳細資訊，請參閱 <<c0> [ 藉由使用 Azure 診斷收集記錄資料](https://msdn.microsoft.com/library/azure/gg433048.aspx)。
+如需詳細資訊，請參閱 [使用 Azure 診斷收集記錄資料](https://msdn.microsoft.com/library/azure/gg433048.aspx)。
 
 ### <a name="log-directories"></a>記錄檔目錄
-記錄檔目錄具有從 Internet Information Services (IIS) 要求、 失敗的要求，或您選擇之資料夾的記錄檔目錄中收集的資料。 若要擷取記錄檔目錄，請選取**啟用的記錄檔目錄的傳輸**核取方塊。 若要增加或減少將記錄傳輸至儲存體帳戶之間的間隔，變更**傳輸期間 （分鐘）** 值。
+記錄目錄具有從 Internet Information Services (IIS) 要求、失敗要求，或您選擇之資料夾的記錄目錄中收集的資料。 若要擷取記錄目錄，請選取 [啟用記錄目錄的傳輸] 核取方塊。 若要增加或減少將記錄傳輸至儲存體帳戶的間隔，請變更 [傳輸期間 (分鐘)] 值。
 
-選取您想要收集，例如記錄檔的核取方塊**IIS 記錄檔**並**失敗要求**記錄檔。 提供預設儲存體容器名稱，但您可以變更名稱。
+選取您想要收集之記錄的核取方塊，例如 [IIS 記錄] 和 [失敗要求] 記錄。 提供預設儲存體容器名稱，但您可以變更名稱。
 
-您可以擷取任何資料夾中的記錄檔。 指定路徑**絕對目錄中的記錄檔**區段，然後再選取**新增目錄**。 記錄會擷取在指定的容器。
+您可以從任何資料夾擷取記錄。 在 [絕對目錄中的記錄] 區段中指定路徑，然後選取 [新增目錄]。 記錄會擷取至指定的容器。
 
 ![記錄檔目錄](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796665.png)
 
 ### <a name="etw-logs"></a>ETW 記錄檔
-如果您使用[的 Windows 事件追蹤](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx)(ETW)，而且想要擷取 ETW 記錄檔中，選取**啟用傳輸 ETW 記錄檔**核取方塊。 若要增加或減少將記錄傳輸至儲存體帳戶之間的間隔，變更**傳輸期間 （分鐘）** 值。
+如果您使用 [Windows 事件追蹤](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) (ETW) 而且想要擷取 ETW 記錄檔，請選取 [啟用 ETW 記錄檔的傳輸] 核取方塊。 若要增加或減少將記錄傳輸至儲存體帳戶的間隔，請變更 [傳輸期間 (分鐘)] 值。
 
-從事件來源和您指定的事件資訊清單擷取事件。 若要指定事件來源，在**事件來源**區段中，輸入名稱，然後選取**新增事件來源**。 同樣地，您可以在其中指定中的事件資訊清單**事件資訊清單**區段，然後再選取**新增事件資訊清單**。
+從事件來源和您指定的事件資訊清單擷取事件。 若要指定事件來源，請在 [事件來源] 區段中輸入名稱，然後選取 [新增事件來源]。 同樣地，您可以指定 [事件資訊清單] 區段中的事件資訊清單，然後選取 [新增事件資訊清單]。
 
 ![ETW 記錄檔](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766025.png)
 
-ETW 架構支援在 ASP.NET 中的類別透過[System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110))命名空間。 Microsoft.WindowsAzure.Diagnostics 命名空間，會繼承並擴充標準[System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110))類別，可讓您使用[System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110))作為記錄在 Azure 環境中的架構。 如需詳細資訊，請參閱 <<c0> [ 參加 Microsoft Azure 中控制記錄和追蹤](https://msdn.microsoft.com/magazine/ff714589.aspx)並[在 Azure 雲端服務和虛擬機器中啟用診斷](/azure/cloud-services/cloud-services-dotnet-diagnostics)。
+透過 [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) 命名空間中的類別，支援 ASP.NET 中的 ETW 架構。 Microsoft.WindowsAzure.Diagnostics 命名空間 (繼承自並擴充標準 [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) 類別) 可讓您使用 [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) 作為 Azure 環境中的記錄架構。 如需詳細資訊，請參閱[在 Microsoft Azure 中控制記錄和追蹤](https://msdn.microsoft.com/magazine/ff714589.aspx)和[在 Azure 雲端服務和虛擬機器中啟用診斷](/azure/cloud-services/cloud-services-dotnet-diagnostics)。
 
 ### <a name="crash-dumps"></a>損毀傾印
-若要擷取角色執行個體的當機的相關資訊，請選取**啟用傳輸損毀傾印**核取方塊。 （由於 ASP.NET 處理大多數例外狀況，這是通常只對背景工作角色有用）。若要增加或減少專用於損毀傾印的儲存空間的百分比，變更**目錄配額 （%）** 值。 您可以變更損毀傾印會儲存位置，而選取您想要擷取的儲存體容器**完整**或是**迷你**傾印。
+若要擷取角色執行個體何時損毀的相關資訊，請選取 [啟用損毀傾印的傳輸] 核取方塊。 (由於 ASP.NET 處理大多數例外狀況，這通常只對背景工作角色才有用。)若要增加或減少專用於損毀傾印的儲存空間百分比，您可以變更**目錄配額 (%)** 值。 您可以變更儲存損毀傾印的儲存體容器，也可以選取您想要擷取**完整**或**最小**傾印。
 
-目前正在追蹤的處理程序會列在下一步 的螢幕擷取畫面。 選取您想要擷取的處理程序的核取方塊。 若要新增另一個處理序清單，請輸入處理序名稱，然後按**新增處理序**。
+下一個螢幕擷取畫面列出目前正在追蹤的處理序。 選取您想要擷取之處理序的核取方塊。 若要將另一個處理序新增至清單，請輸入處理序名稱，然後選擇 [新增處理序]。
 
 ![損毀傾印](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-如需詳細資訊，請參閱 <<c0> [ 參加 Microsoft Azure 中控制記錄和追蹤](https://msdn.microsoft.com/magazine/ff714589.aspx)並[Microsoft Azure 診斷第 4 部分： 自訂記錄元件和 Azure 診斷 1.3 變更](http://justazure.com/microsoft-azure-diagnostics-part-4-custom-logging-components-azure-diagnostics-1-3-changes/)。
+如需詳細資訊，請參閱[在 Microsoft Azure 中控制記錄和追蹤](https://msdn.microsoft.com/magazine/ff714589.aspx)和 [Microsoft Azure Diagnostics Part 4:Custom logging components and Azure Diagnostics 1.3 changes](http://justazure.com/microsoft-azure-diagnostics-part-4-custom-logging-components-azure-diagnostics-1-3-changes/) (Microsoft Azure 診斷第 4 部分：自訂記錄元件和 Azure 診斷 1.3 變更)。
 
 ## <a name="view-the-diagnostics-data"></a>檢視診斷資料
-收集的雲端服務或虛擬機器的診斷資料之後，您可以檢視它。
+收集到雲端服務或虛擬機器的診斷資料之後，您可以檢視它。
 
-### <a name="to-view-cloud-service-diagnostics-data"></a>若要檢視雲端服務診斷資料
-1. 如往常般，將雲端服務部署，然後執行它。
-2. 您可以在您的儲存體帳戶中之報表中的 Visual Studio 會產生，或在資料表中檢視診斷資料。 若要檢視的資料在報表中，開啟 [雲端總管] 或 [伺服器總管] 中，開啟您想要，然後選取之角色節點的捷徑功能表**檢視診斷資料**。
-   
+### <a name="to-view-cloud-service-diagnostics-data"></a>檢視雲端服務診斷資料
+1. 如往常般部署雲端服務並加以執行。
+2. 您可以在 Visual Studio 產生的報告或儲存體帳戶的資料表中檢視診斷資料。 若要在報告中檢視資料，請開啟 [雲端總管] 或 [伺服器總管]，開啟您所需之角色節點的捷徑功能表，然後選取 [檢視診斷資料]。
+
     ![檢視診斷資料](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC748912.png)
-   
-    報告，以顯示可用的資料會出現。
-   
+
+    顯示可用資料的報告隨即出現。
+
     ![Visual Studio 中的 Microsoft Azure 診斷報告](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796666.png)
-   
+
     如果未顯示最新的資料，您可能必須等到傳輸週期過後。
-   
-    若要立即更新資料，請選取**重新整理**連結。 若要自動更新資料，請選取 在間隔**自動重新整理**下拉式清單方塊。 若要匯出錯誤資料，請選取**匯出至 CSV**按鈕，以建立您可以在 Excel 工作表中開啟的逗號分隔值檔案。
-   
-    在 Cloud Explorer 或伺服器總管 中，開啟與部署相關聯的儲存體帳戶。
-3. 在 資料表檢視器中開啟診斷資料表，然後檢閱您所收集的資料。 如需 IIS 記錄檔和自訂記錄檔，您可以開啟 blob 容器。 下表列出的資料表或 blob 容器包含不同的記錄檔資料。 除了該記錄檔資料，包含資料表項目**EventTickCount**， **DeploymentId**，**角色**，以及**RoleInstance**可協助您識別哪些虛擬機器與角色產生了資料和時間。 
-   
-   | 診斷資料 | 描述 | 位置 |
+
+    若要立即更新資料，請選取 [重新整理] 連結。 若要自動更新資料，請在 [自動重新整理] 下拉式清單中選取一個間隔。 若要匯出錯誤資料，請選取 [匯出至 CSV]  按鈕，以建立您可以在 Excel 工作表中開啟的逗號分隔值檔案。
+
+    在 [雲端總管] 或 [伺服器總管] 中，開啟與部署相關聯的儲存體帳戶。
+3. 在資料表檢視器中開啟診斷資料表，然後檢閱您所收集的資料。 在 IIS 記錄檔和自訂記錄檔中，您可以開啟 blob 容器。 下表列出資料表或 blob 容器，其中包含不同記錄檔的資料。 除了該記錄檔的資料之外，資料表項目包含 **EventTickCount**、**DeploymentId**、**Role** 和 **RoleInstance**，以協助您識別哪些虛擬機器與角色產生了資料及其時機。
+
+   | 診斷資料 | 說明 | 位置 |
    | --- | --- | --- |
-   | 應用程式記錄檔 |您的程式碼會藉由呼叫的方法產生的記錄檔**System.Diagnostics.Trace**類別。 |WADLogsTable |
-   | 事件記錄檔 |從 Windows 事件記錄檔，在虛擬機器上的資料。 Windows 會將資訊儲存在這些記錄檔，但應用程式和服務也會使用記錄來報告錯誤或記錄資訊。 |WADWindowsEventLogsTable |
-   | 效能計數器 |您可以使用虛擬機器的任何效能計數器上收集資料。 作業系統會提供效能計數器，其包括記憶體使用狀況和處理器時間等多種統計資料。 |WADPerformanceCountersTable |
-   | 基礎結構記錄檔 |從診斷基礎結構本身產生的記錄檔。 |WADDiagnosticInfrastructureLogsTable |
-   | IIS 記錄檔 |記錄 web 要求的記錄檔。 如果您的雲端服務取得大量的流量，這些記錄可能冗長。 它是個不錯的主意，來收集並儲存這項資料，只有當您在需要時。 |您可以找到失敗要求記錄下 wad-iis-failedreqlogs，該部署、 角色和執行個體的路徑下的 blob 容器中。 您可以找到下 wad-iis 記錄檔的完整記錄檔。 建立於 WADDirectories 資料表中做為每個檔案的項目。 |
-   | 損毀傾印 |提供您的雲端服務處理程序 （通常是背景工作角色） 的二進位映像。 |wad 殲擊-傾印的 blob 容器 |
-   | 自訂記錄檔 |您預先定義的資料的記錄檔。 |您可以指定在程式碼中的自訂記錄檔的位置在儲存體帳戶。 例如，您可以指定自訂 blob 容器。 |
-4. 如果任何類型的資料遭到截斷，您可以嘗試增加該資料緩衝區型別，或縮短傳輸的資料從虛擬機器至儲存體帳戶之間的間隔。
-5. （選擇性）清除資料，從儲存體帳戶，有時候以減少整體儲存成本。
-6. 當您進行完整部署時，在 Azure 中，更新 diagnostics.cscfg 檔案 (Azure SDK 2.5.wadcfgx)，而且您的雲端服務挑選診斷組態所做的任何變更。 如果您改為更新現有的部署，.cscfg 檔案不會在 Azure 中更新。 您仍然可以依照下一節的步驟，變更診斷設定。 如需有關執行完整部署，並更新現有部署的詳細資訊，請參閱 <<c0> [ 發佈 Azure 應用程式精靈](vs-azure-tools-publish-azure-application-wizard.md)。
+   | 應用程式記錄檔 |您的程式碼藉由呼叫 **System.Diagnostics.Trace** 類別之方法所產生的記錄。 |WADLogsTable |
+   | 事件記錄檔 |資料來自虛擬機器上的 Windows 事件記錄。 Windows 會將資訊儲存在這些記錄中，但應用程式和服務也會使用記錄來報告錯誤或記錄資訊。 |WADWindowsEventLogsTable |
+   | 效能計數器 |您可以在可供虛擬機器使用的任何效能計數器上收集資料。 作業系統會提供效能計數器，其包括記憶體使用狀況和處理器時間等多種統計資料。 |WADPerformanceCountersTable |
+   | 基礎結構記錄檔 |從診斷基礎結構本身產生的記錄。 |WADDiagnosticInfrastructureLogsTable |
+   | IIS 記錄檔 |記錄 Web 要求的記錄。 如果您的雲端服務取得大量的流量，這些記錄可能冗長。 最好只在需要時才收集和儲存此資料。 |您可以在部署、角色及執行個體之路徑下的 wad-iis-failedreqlogs 下的 blob 容器中找到失敗要求記錄。 您可以在 wad-iis-logfiles 下找到完整的記錄檔。 每個檔案的項目都建立於 WADDirectories 資料表中。 |
+   | 損毀傾印 |提供雲端服務處理序的二進位映像 (通常是背景工作角色)。 |wad-crush-dumps blob 容器 |
+   | 自訂記錄檔 |您預先定義的資料記錄檔。 |您可以在儲存體帳戶中以程式碼指定自訂記錄檔的位置。 例如，您可以指定自訂 blob 容器。 |
+4. 如果任何類型的資料遭到截斷，您可以嘗試增加該資料類型的緩衝區，或是縮短資料從虛擬機器傳輸至儲存體帳戶之間的間隔。
+5. (選用) 偶爾會從儲存體帳戶清除資料以降低整體儲存成本。
+6. 當您執行完整部署時，Azure 中可支援 diagnostics.cscfg 檔案 (在 Azure SDK 2.5 中支援 .wadcfgx)，且您的雲端服務會取得對診斷組態進行的任何變更。 如果您改為更新現有的部署，.cscfg 檔案就不會在 Azure 中更新。 您仍然可以遵循下一節中的步驟變更診斷設定。 如需有關執行完整部署和更新現有部署的詳細資訊，請參閱 [發佈 Azure 應用程式精靈](vs-azure-tools-publish-azure-application-wizard.md)。
 
-### <a name="to-view-virtual-machine-diagnostics-data"></a>若要檢視虛擬機器診斷資料
-1. 在 虛擬機器的捷徑功能表，選取 **檢視診斷資料**。
-   
+### <a name="to-view-virtual-machine-diagnostics-data"></a>檢視虛擬機器診斷資料
+1. 在虛擬機器的捷徑功能表上，選取 [檢視診斷資料] 。
+
     ![在 Azure 虛擬機器中檢視診斷資料](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766027.png)
-   
-    **診斷摘要** 對話方塊隨即出現。
-   
-    ![Azure 虛擬機器診斷摘要](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796667.png)  
-   
+
+    [診斷摘要] 對話方塊隨即出現。
+
+    ![Azure 虛擬機器診斷摘要](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796667.png)
+
     如果未顯示最新的資料，您可能必須等到傳輸週期過後。
-   
-    若要立即更新資料，請選取**重新整理**連結。 若要自動更新資料，請選取 在間隔**自動重新整理**下拉式清單方塊。 若要匯出錯誤資料，請選取**匯出至 CSV**按鈕，以建立您可以在 Excel 工作表中開啟的逗號分隔值檔案。
 
-## <a name="set-up-cloud-service-diagnostics-after-deployment"></a>在部署後設定雲端服務診斷
-如果您要調查的問題與已在執行中的雲端服務，您可能想要收集資料，您未指定您原本在部署角色之前。 在此情況下，您可以開始收集這類資料變更 [伺服器總管] 中的設定。 您可以將單一執行個體，或是在角色中，根據您是開啟的所有執行個體的診斷設定**診斷組態**對話方塊中，從執行個體或角色的捷徑功能表。 如果您設定角色節點，任何您所做的變更會套用至所有執行個體。 如果您設定執行個體節點，所做的任何變更會套用至該執行個體只。
+    若要立即更新資料，請選取 [重新整理] 連結。 若要自動更新資料，請在 [自動重新整理] 下拉式清單中選取一個間隔。 若要匯出錯誤資料，請選取 [匯出至 CSV]  按鈕，以建立您可以在 Excel 工作表中開啟的逗號分隔值檔案。
 
-### <a name="to-set-up-diagnostics-for-a-running-cloud-service"></a>若要執行的雲端服務的診斷設定
-1. 在 伺服器總管 中，展開**雲端服務** 節點，然後展開節點以找出角色或執行個體 （或兩者） 的清單，您想要調查。
-   
+## <a name="set-up-cloud-service-diagnostics-after-deployment"></a>在部署之後設定雲端服務診斷
+如果您要調查已執行之雲端服務的相關問題，您可能會想要收集您原本在部署角色之前並未指定的資料。 在此情況下，您可以變更 [伺服器總管] 中的設定，開始收集這類資料。 您可以在角色中設定單一執行個體或所有執行個體的診斷，取決於您是否從執行個體或角色的捷徑功能表開啟 [診斷設定] 對話方塊。 如果您設定角色節點，任何您所做的變更都將套用至所有執行個體。 如果您設定執行個體節點，任何您所做的變更只會套用至該執行個體。
+
+### <a name="to-set-up-diagnostics-for-a-running-cloud-service"></a>設定執行中雲端服務的診斷
+1. 在 [伺服器總管] 中，展開 **雲端服務** 節點，然後展開節點清單，以找出您想要調查的角色或執行個體 (或兩者)。
+
     ![設定診斷](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC748913.png)
-2. 在執行個體節點或角色節點的捷徑功能表，選取**更新診斷設定**，然後選取您想要收集的診斷設定。
-   
-    組態設定的相關資訊，請參閱節**設定診斷資料來源**這篇文章中。 如需有關如何檢視診斷資料的資訊，請參閱下節**檢視診斷資料**這篇文章中。
-   
-    如果您變更在伺服器總管 中的資料收集時，所做的變更都有效，除非您完全重新部署您的雲端服務。 如果您使用預設發佈設定，所做的變更不會覆寫。 預設發佈設定是可更新現有的部署，而不執行完整部署。 若要確保在部署時會清除設定，請前往**進階設定**索引標籤的 發行精靈，然後清除**部署更新**核取方塊。 當您重新部署清除該核取方塊時，設定將還原為.wadcfgx （或.wadcfg） 檔案中為透過**屬性**角色的編輯器。 如果您更新您的部署，Azure 會保留先前的設定。
+2. 在執行個體節點或角色節點的捷徑功能表上，選取 [更新診斷設定] ，然後選取您想要收集的診斷設定。
 
-## <a name="troubleshoot-azure-cloud-service-issues"></a>針對 Azure 雲端服務問題進行疑難排解
-如果您遇到雲端服務專案的相關問題，例如陷入 「 忙碌 」 狀態中，角色重複回收，或擲回內部伺服器錯誤，有工具和技術，可用來診斷並修正問題。 如需特定範例的常見問題和解決方案，以及概念和工具，您可以用來診斷和修正這些錯誤的概觀，請參閱[Azure PaaS 計算診斷資料](http://blogs.msdn.com/b/kwill/archive/2013/08/09/windows-azure-paas-compute-diagnostics-data.aspx)。
+    如需設定的相關資訊，請參閱本文中的**設定診斷資料來源**一節。 如需如何檢視診斷資料的相關資訊，請參閱本文中的**檢視診斷資料**一節。
+
+    如果您變更 [伺服器總管]中的資料收集，這些變更會持續生效，直到您完全重新部署您的雲端服務為止。 如果使用預設發佈設定，不會覆寫變更。 預設發佈設定是更新現有的部署，而不是執行完整部署。 若要在部署階段確定清除設定，請移至 [發佈] 精靈中的 [進階設定] 索引標籤，然後清除 [部署更新] 核取方塊。 當您在清除該核取方塊時重新部署，設定將還原為.wadcfgx (或.wadcfg) 檔案中透過角色的**屬性**編輯器進行的設定。 如果您更新您的部署，Azure 會保留先前的設定。
+
+## <a name="troubleshoot-azure-cloud-service-issues"></a>疑難排解 Azure 雲端服務問題
+如果您遇到雲端服務專案的相關問題，例如陷入「忙碌」狀態的角色、重複回收，或擲回內部伺服器錯誤，您都可以使用工具和技術診斷和修正問題。 如需常見問題和解決方案的特定範例，以及您可以用來診斷和修正這些錯誤的概念和工具概觀，請參閱 [Azure PaaS 運算診斷資料](http://blogs.msdn.com/b/kwill/archive/2013/08/09/windows-azure-paas-compute-diagnostics-data.aspx)。
 
 ## <a name="q--a"></a>問與答
-**何謂緩衝區大小，而且大小應該它嗎？**
+**何謂緩衝區大小和適當大小？**
 
-在每個虛擬機器執行個體中，配額會限制多少診斷資料可以儲存在本機檔案系統。 此外，您可以指定每種類型的診斷資料所提供的緩衝區大小。 這個緩衝區大小就像是該資料類型的個別配額。 若要判斷整體配額和剩餘的記憶體數量，請參閱對話方塊底部的診斷資料類型。 如果您指定較大的緩衝區或更多類型的資料，您會愈趨近整體配額。 您可以藉由修改 diagnostics.wadcfg 或.wadcfgx 組態檔變更整體配額。 診斷資料會儲存在相同的檔案系統，為您的應用程式資料。 如果您的應用程式使用大量磁碟空間，您不應該增加整體診斷配額。
+在每個虛擬機器執行個體上，配額會限制可以儲存在本機檔案系統上的診斷資料數量。 此外，您可以為每種診斷資料類型指定可用的緩衝區大小。 這個緩衝區大小就像是該資料類型的個別配額。 若要判斷整體配額和剩餘的記憶體數量，請查看對話方塊底部，以取得診斷資料類型。 如果您指定較大的緩衝區或更多類型的資料，您會愈趨近整體配額。 您可以藉由修改 diagnostics.wadcfg 或 .wadcfgx 設定檔變更整體配額。 診斷資料會與您的應用程式資料儲存在同一個檔案系統中。 如果您的應用程式使用大量磁碟空間，您不應該增加整體診斷配額。
 
-**何謂傳輸週期和多久？**
+**何謂傳輸週期和適當時間長度？**
 
-傳輸週期是時間的資料擷取之間經過量。 每個傳輸週期之後，資料會從本機檔案系統上移的虛擬機器儲存體帳戶中的資料表。 如果收集的資料量在傳輸週期結束前超過配額，則會捨棄較舊的資料。 如果您會遺失資料，因為資料超過緩衝區大小或整體配額，您可能想要縮短傳輸週期。
+傳輸週期是資料擷取之間經過的時間量。 每個傳輸週期之後，資料會從虛擬機器上的本機檔案系統上移至儲存體帳戶中的資料表。 如果收集的資料量在傳輸週期結束前超過配額，則會捨棄較舊的資料。 如果您因為資料超過緩衝區大小或整體配額而遺失資料，您可能會想要縮短傳輸週期。
 
-**哪個時區時間戳記是指在？**
+**時間戳記位於哪個時區？**
 
-時間戳記位於裝載雲端服務的資料中心的當地時區。 會使用下列三個時間戳記資料行中的記錄資料表：
+時間戳記位於裝載雲端服務之資料中心的當地時區。 使用下列記錄資料表中的三個時間戳記資料行：
 
-* **PreciseTimeStamp**： 事件的 ETW 時間戳記。 也就是從用戶端記錄事件的時間。
-* **時間戳記**： 的值**PreciseTimeStamp**無條件捨去到上傳頻率界限。 例如，如果您上傳頻率為 5 分鐘，而事件時間為 00:17:12，時間戳記是 00:15:00。
-* **時間戳記**： 在 Azure 資料表中建立實體的時間戳記。
+* **PreciseTimeStamp**：事件的 ETW 時間戳記。 也就是從用戶端記錄事件的時間。
+* **TIMESTAMP**：**PreciseTimeStamp** 無條件捨去到上傳頻率界限的值。 例如，如果您的上傳頻率為 5 分鐘，而事件時間為 00:17:12，則 TIMESTAMP 是 00:15:00。
+* **時間戳記**：Azure 資料表中建立實體的時間戳記。
 
 **收集診斷資訊時如何管理成本？**
 
-預設設定 (**記錄層級**設為**錯誤**，和**傳輸週期**設定為**1 分鐘**) 設計用來將成本降至最低。 當您收集更多診斷資料，或縮短傳輸週期，就會增加運算成本。 請勿收集超過，也別忘了當您不再需要時停用資料收集的資料。 您可以一律它再次啟用，即使在執行階段，如本文稍早所述。
+預設設定 (將 [記錄層級] 設為 [錯誤] 並將 [傳輸週期] 設為 [1 分鐘]) 的設計目的是將成本降至最低。 當收集更多診斷資料時，或如果縮短傳輸週期，會增加運算成本。 請勿收集超過需求量的資料，也別忘了在您不需要時停用資料收集。 您可以一律重新啟用它，即使在執行階段也一樣，如本文稍早所述。
 
 **如何從 IIS 收集失敗要求記錄檔？**
 
-根據預設，IIS 不會收集失敗要求記錄檔。 您可以將 IIS 設定，以藉由編輯您的 web 角色的 web.config 檔案收集失敗要求記錄檔。
+根據預設，IIS 不會收集失敗要求記錄檔。 您可以編輯 Web 角色的 web.config 檔案，設定 IIS 來收集失敗要求記錄。
 
 **我無法從 OnStart 之類的 RoleEntryPoint 方法取得追蹤資訊。有什麼問題？**
 
-方法**RoleEntryPoint** WAIISHost.exe，未在 IIS 中的內容中呼叫。 啟用追蹤通常並不適用的 web.config 中設定資訊。 若要解決此問題，請將.config 檔案新增至您的 web 角色專案，並將檔案命名以符合輸出組件，其中包含**RoleEntryPoint**程式碼。 在預設 web 角色專案中，.config 檔案的名稱應該是 WAIISHost.exe.config。將下列幾行新增至此檔案：
+**RoleEntryPoint** 的方法是在 WAIISHost.exe 的內容中呼叫，而不在 IIS 中。 在通常會啟用追蹤的 web.config 中，設定資訊並不適用。 若要解決這個問題，請將.config 檔案新增至 web 角色專案，並將檔案命名以符合包含 **RoleEntryPoint** 程式碼的輸出組件。 在預設 web 角色專案中，.config 檔案的名稱應該是 WAIISHost.exe.config。將下列幾行新增至此檔案：
 
-```
+```xml
 <system.diagnostics>
   <trace>
       <listeners>
@@ -300,8 +300,7 @@ ETW 架構支援在 ASP.NET 中的類別透過[System.Diagnostics.aspx](https://
 </system.diagnostics>
 ```
 
-在 **屬性**視窗中，將**複製到輸出目錄**屬性設**永遠複製**。
+在 [屬性] 視窗中，將 [複製到輸出目錄] 屬性設為 [永遠複製]。
 
 ## <a name="next-steps"></a>後續步驟
-若要深入了解 Azure 中診斷記錄，請參閱[在 Azure 雲端服務和虛擬機器中啟用診斷](/azure/cloud-services/cloud-services-dotnet-diagnostics.md)並[針對 Azure App Service 中的 Web 應用程式啟用診斷記錄](/azure/app-service/web-sites-enable-diagnostic-log)。
-
+若要深入了解 Azure 中的診斷記錄，請參閱[在 Azure 雲端服務](/azure/cloud-services/cloud-services-dotnet-diagnostics)和[虛擬機器中啟用診斷和在 Azure App Service 中啟用 Web 應用程式的診斷記錄](/azure/app-service/web-sites-enable-diagnostic-log)。

@@ -1,34 +1,29 @@
 ---
 title: 私用組件庫 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSIX galleries, private
 - private galleries, VSIX
 ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 910764df2f6a6e3069136bce64b77f267e473b9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 677047dbe66577548b10fc2b5c6a7eaeedbfaa67
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749950"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940002"
 ---
 # <a name="private-galleries"></a>Private Galleries
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以共用控制項、 範本和工具，您藉由公佈到開發*私用組件庫*內部為您的組織，如下所示：  
   
--   建立 Atom (RSS) 摘要您的內部網路上的適當設定中央位置 （儲存機制）。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立私用組件庫的 Atom 摘要](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)。  
+-   建立 Atom (RSS) 摘要您的內部網路上的適當設定中央位置 （儲存機制）。 如需詳細資訊，請參閱[如何：建立的 Atom 摘要私用組件庫](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)。  
   
 -   散發.pkgdef 檔案，其中描述私用組件庫。 我們建議此組態的系統管理員想要連線到多部電腦的私用組件庫，在相同的時間。  
   
@@ -68,7 +63,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 管理私用組件庫所使用登錄設定](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md)。  
+ 如需詳細資訊，請參閱[如何：使用登錄設定管理私人組件庫](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md)。  
   
 ## <a name="installing-extensions-from-a-private-gallery"></a>從私用組件庫中安裝擴充功能  
  您可以搜尋並安裝 Visual Studio 擴充功能私用資源庫中從**擴充功能和更新**。 下列步驟會使用名為私用組件庫`My Gallery`。  
@@ -99,4 +94,3 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 ## <a name="see-also"></a>另請參閱  
  [尋找及使用 Visual Studio 擴充功能](../ide/finding-and-using-visual-studio-extensions.md)   
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)
-

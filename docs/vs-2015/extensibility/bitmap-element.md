@@ -1,27 +1,22 @@
 ---
 title: Bitmap 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
 ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cbeb175c8e4f9902fafbfdb8df4f5d83387980a4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fc1fb57c7ec43421b211b29cfd6ab97b24a1864c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789937"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941808"
 ---
 # <a name="bitmap-element"></a>Bitmap 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "51789937"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|guid|必要。 GUID/識別碼命令識別碼的 GUID。<br /><br /> 無法與任何 VSPackage 或其他命令群組相關聯的點陣圖的 guid 屬性。  它應該是唯一之點陣圖定義，且不應用於其他用途。|  
+|guid|必要項。 GUID/識別碼命令識別碼的 GUID。<br /><br /> 無法與任何 VSPackage 或其他命令群組相關聯的點陣圖的 guid 屬性。  它應該是唯一之點陣圖定義，且不應用於其他用途。|  
 |resID|GUID/識別碼的命令識別項的識別碼。 需要 resID 或 href 屬性。<br /><br /> ResID 屬性會決定要載入命令資料表合併期間點陣圖區整數資源識別碼。  載入命令資料表時，會從相同模組的資源載入的資源識別碼所指定的點陣圖。|  
 |usedList|需要 resID 屬性是否存在。 選取可用的映像中的點陣圖區。|  
 |href|點陣圖的路徑。 需要 resID 或 href 屬性。<br /><br /> 指定的映像檔，內嵌在產生的二進位檔中搜尋 include 路徑。  在命令資料表合併期間複製映像，並不需要任何額外的資源查閱或負載。  UsedList 屬性不存在，在區域中的所有映像可用。 **注意：** 映像可能會提供數種格式，包括.bmp、.png 和.gif 之一。  舊版編譯器不支援部分的透明度的 alpha 資訊的 32 位元點陣圖影像。 這些版本的因應措施是使用.png 格式。|  
@@ -66,4 +61,3 @@ ms.locfileid: "51789937"
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

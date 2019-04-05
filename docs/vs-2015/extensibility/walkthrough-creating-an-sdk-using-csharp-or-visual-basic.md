@@ -1,26 +1,21 @@
 ---
-title: 逐步解說： 建立使用 C# 或 Visual Basic SDK |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：使用 SDK 建立C#或 Visual Basic |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0bc88c8581b29f43e7efc55ee86019e1f1c3fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5989e0d72aaa7dda8e3daae16a6f384f8815357f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736763"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000787"
 ---
-# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>逐步解說︰使用 C# 或 Visual Basic 建立 SDK
+# <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>逐步解說：使用 C# 或 Visual Basic 建立 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在本逐步解說中，您將了解如何使用 Visual C# 來建立簡單的數學程式庫 SDK，然後再封裝 SDK 作為 Visual Studio 擴充功能 (VSIX)。 您會完成下列程序：  
@@ -120,7 +115,7 @@ ms.locfileid: "51736763"
   
 22. 在 **方案總管**，選擇**SimpleMath.winmd**。  
   
-23. 在功能表列上選擇 **檢視**，**屬性**(鍵盤： 選擇 F4 鍵)。  
+23. 在功能表列上選擇 **檢視**，**屬性**(鍵盤：選擇 F4 鍵）。  
   
 24. 在**屬性**視窗中，變更**建置動作**屬性設**內容**，然後變更**Include in VSIX** 屬性**True**。  
   
@@ -179,7 +174,6 @@ ms.locfileid: "51736763"
     您已成功建立和使用擴充功能 SDK。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說： 建立使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [逐步解說： 建立使用 JavaScript SDK](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [逐步解說：使用 c + + 建立 SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [逐步解說：使用 JavaScript 建立 SDK](walkthrough-creating-an-sdk-using-javascript.md)   
  [建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)
-

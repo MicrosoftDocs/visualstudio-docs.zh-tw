@@ -1,26 +1,21 @@
 ---
 title: 管理復原和取消復原使用舊版 API |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
 ms.assetid: 838c0ddf-fdf3-4df1-8d21-79610b8ba0b1
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ab655c4822f7f5186cbcd18d451cfa3bb0aa656e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7c2133c75b32e56c1a054740bd829bd04cac97cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764181"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945148"
 ---
 # <a name="managing-undo-and-redo-by-using-the-legacy-api"></a>管理的復原和重複使用舊版 API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +37,3 @@ ms.locfileid: "51764181"
  提供支援多個檢視的編輯器復原管理。  
   
 ## <a name="related-sections"></a>相關章節
-

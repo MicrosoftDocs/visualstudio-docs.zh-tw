@@ -1,12 +1,9 @@
 ---
 title: 將資料儲存至資料庫物件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,19 +17,19 @@ ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: acbbf9f309573f110da3b7dd0a53ede36150a319
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4ddb6ad55a8d90a3e9d4f5b2568885cbe49fb66c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207450"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940213"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>從物件中將資料儲存至資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-您也可以將值從您的物件傳遞至 TableAdapter 的 DBDirect 方法的其中一個資料庫物件中儲存資料 (例如`TableAdapter.Insert`)。 如需詳細資訊，請參閱 [TableAdapter Overview](../data-tools/tableadapter-overview.md)。  
+您也可以將值從您的物件傳遞至 TableAdapter 的 DBDirect 方法的其中一個資料庫物件中儲存資料 (例如`TableAdapter.Insert`)。
   
  若要用於儲存的資料物件的集合，物件 （例如，針對下一步迴圈） 的集合執行迴圈，並使用其中一種 TableAdapter 的 DBDirect 方法傳送至資料庫的每個物件的值。  
   
@@ -85,4 +82,3 @@ ms.locfileid: "49207450"
   
 ## <a name="see-also"></a>另請參閱  
  [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)
-

@@ -1,12 +1,9 @@
 ---
-title: UML 使用案例圖： 方針 |Microsoft Docs
-ms.custom: ''
+title: UML 使用案例圖：指導方針 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - diagrams - modeling, use case
 - UML, use case diagrams
@@ -17,15 +14,15 @@ ms.assetid: b1ae8ed0-d00b-4f9b-8e23-733e09e81e9b
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b4a4bc02202f8ec1f41052dcdea63d97bbcb9671
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b69a06f0dff7347e5f24899552f25721e71ee818
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793083"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942750"
 ---
-# <a name="uml-use-case-diagrams-guidelines"></a>UML 使用案例圖表：方針
+# <a name="uml-use-case-diagrams-guidelines"></a>UML 使用案例圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual Studio 中，您可以繪製*使用案例圖*以摘述哪些人使用您的應用程式或系統，以及他們可以使用它做什麼。 若要建立 UML 使用案例圖表，在**架構**功能表上，按一下**新增 UML 或分層圖**。  
@@ -44,7 +41,7 @@ ms.locfileid: "51793083"
   
   使用案例圖不會顯示使用案例的詳細資料：這只會摘要說明使用案例、執行者和系統之間的某些關聯性。 具體而言，該圖表不會顯示為了達成每一個使用案例目標所執行步驟的順序。 您可以在連結到每一個使用案例的其他圖表或文件中描述這些詳細資料。 如需詳細資訊，請參閱 <<c0> [ 詳細描述使用案例](#Details)本主題中。  
   
-  您針對使用案例提供的描述將用到許多與系統執行所在領域相關的詞彙，例如「銷售」、「菜單」、「顧客」等。 請務必清楚定義這些詞彙及其關聯性，您可以透過「UML 類別圖」來協助這方面的工作。 如需詳細資訊，請參閱 < [UML 類別圖： 方針](../modeling/uml-class-diagrams-guidelines.md)。  
+  您針對使用案例提供的描述將用到許多與系統執行所在領域相關的詞彙，例如「銷售」、「菜單」、「顧客」等。 請務必清楚定義這些詞彙及其關聯性，您可以透過「UML 類別圖」來協助這方面的工作。 如需詳細資訊，請參閱 [UML 類別圖表：指導方針](../modeling/uml-class-diagrams-guidelines.md)。  
   
   使用案例只會應對系統的功能需求。 其他需求 (例如商務規則、服務需求品質和實作條件約束) 則必須另外表示。 架構和內部詳細資料也必須另行描述。 如需如何定義使用者需求的詳細資訊，請參閱[模型使用者需求](../modeling/model-user-requirements.md)。  
   
@@ -97,7 +94,7 @@ ms.locfileid: "51793083"
   
     -   使用案例代表執行者藉助您的系統所執行的活動。  
   
-    -   使用這些執行者本身能夠了解的標題重新命名該使用案例。 請不要使用與程式碼相關的標題。 例如：**訂購餐點、 付款、 餐點**。  
+    -   使用這些執行者本身能夠了解的標題重新命名該使用案例。 請不要使用與程式碼相關的標題。 例如：**訂購餐點、 餐點需要支付、 傳遞餐點**。  
   
     -   主要交易開頭的這類**訂購餐點**，直到較小型的互動，例如離開**選取功能表項目**。  
   
@@ -145,7 +142,7 @@ ms.locfileid: "51793083"
   
 1.  以滑鼠右鍵按一下 動作項目，然後按一下**屬性**。  
   
-     **屬性** 視窗隨即出現。  
+     [屬性]  視窗隨即出現。  
   
 2.  設定**映像路徑**屬性至影像檔的位置。  
   
@@ -169,7 +166,7 @@ ms.locfileid: "51793083"
   
  您可以變更這些多重性。  
   
- 例如:   
+ 例如：  
   
  ![使用案例顯示多對多多重性](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
@@ -233,9 +230,9 @@ ms.locfileid: "51793083"
   
 - 將此使用案例連結至該專案中的其他圖表。  
   
-  -   活動圖可幫助您說明更複雜的流程，其中包含迴圈、分支和平行執行緒。 此外還可顯示部分程序之間的資料流程。 如需詳細資訊，請參閱 < [UML 活動圖表： 指導方針](../modeling/uml-activity-diagrams-guidelines.md)。  
+  -   活動圖可幫助您說明更複雜的流程，其中包含迴圈、分支和平行執行緒。 此外還可顯示部分程序之間的資料流程。 如需詳細資訊，請參閱[UML 活動圖表：指導方針](../modeling/uml-activity-diagrams-guidelines.md)。  
   
-  -   循序圖可幫助您說明不同執行者之間一系列複雜的互動。 您還可以用它來顯示此系統內部對每一個使用案例的回應。 如需詳細資訊，請參閱 < [UML 循序圖： 方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
+  -   循序圖可幫助您說明不同執行者之間一系列複雜的互動。 您還可以用它來顯示此系統內部對每一個使用案例的回應。 如需詳細資訊，請參閱[UML 循序圖：指導方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
 - 將此使用案例連結至可對其詳細描述的 OneNote 頁面、區段或段落。  
   
@@ -251,11 +248,11 @@ ms.locfileid: "51793083"
   
 4.  從此成品連線至使用案例 using**相依性**。  
   
-#### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>連結至方案檔 (例如 Word 文件或 PowerPoint 簡報)。  
+#### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>連結至方案檔 (例如 Word 文件或 PowerPoint 簡報)  
   
 1.  撰寫文件，在其中使用文字、螢幕擷取畫面等，藉此描述此使用案例的情節。  
   
-2.  將文件加入此方案。  
+2.  將文件加入方案。  
   
     1.  將 Word 文件移至與此方案相同的 Windows 資料夾。  
   
@@ -337,7 +334,7 @@ ms.locfileid: "51793083"
   
 - 活動圖中動作的名稱與被包含使用案例的名稱相同。  
   
-  如需詳細資訊，請參閱 < [UML 活動圖表： 指導方針](../modeling/uml-activity-diagrams-guidelines.md)。  
+  如需詳細資訊，請參閱[UML 活動圖表：指導方針](../modeling/uml-activity-diagrams-guidelines.md)。  
   
   ![使用案例連結的活動圖所示的步驟](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
   
@@ -445,13 +442,10 @@ ms.locfileid: "51793083"
   
 ## <a name="see-also"></a>另請參閱  
  [模型使用者需求](../modeling/model-user-requirements.md)   
- [UML 循序圖： 方針](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [UML 順序圖表：指導方針](../modeling/uml-sequence-diagrams-guidelines.md)   
  [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)   
- [UML 使用案例圖： 參考](../modeling/uml-use-case-diagrams-reference.md)   
- [UML 類別圖： 參考](../modeling/uml-class-diagrams-reference.md)   
- [UML 元件圖： 參考](../modeling/uml-component-diagrams-reference.md)   
- [UML 活動圖表： 指導方針](../modeling/uml-activity-diagrams-guidelines.md)   
- [影片： 將功能組織成使用案例](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)
-
-
-
+ [UML 使用案例圖表：參考](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)   
+ [UML 元件圖表：參考](../modeling/uml-component-diagrams-reference.md)   
+ [UML 活動圖表：指導方針](../modeling/uml-activity-diagrams-guidelines.md)   
+ [影片：將功能組織成使用案例](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)

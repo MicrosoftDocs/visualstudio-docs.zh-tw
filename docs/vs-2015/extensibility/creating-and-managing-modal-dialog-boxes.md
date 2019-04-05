@@ -1,31 +1,26 @@
 ---
 title: 建立和管理強制回應對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4ef32fa43a1242ce8220f9e6454dbac03f0f5ad7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 20710f60a06c02391d467981b01627085c04a336
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736630"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941922"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>建立和管理強制回應對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當您建立強制回應對話方塊，在 Visual Studio 內時，您必須確定當對話方塊出現時，停用 [] 對話方塊中的父視窗，然後在關閉對話方塊之後，重新啟用父視窗。 如果不這麼做，您可能會收到錯誤:"Microsoft Visual Studio 由於無法關閉強制回應對話方塊正在使用中。 關閉使用中的對話方塊，然後再試一次。 」  
+當您建立強制回應對話方塊，在 Visual Studio 內時，您必須確定當對話方塊出現時，停用 [] 對話方塊中的父視窗，然後在關閉對話方塊之後，重新啟用父視窗。 如果不這麼做，您可能會收到錯誤：「 Microsoft Visual Studio 由於無法關閉強制回應對話方塊正在使用中。 關閉使用中的對話方塊，然後再試一次。 」  
   
  有兩種執行此動作。 建議的方式，如果您有 [WPF] 對話方塊中，是從它衍生出來<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>，然後呼叫<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A>顯示對話方塊。 如果您這麼做，您不需要管理父視窗的強制回應狀態。  
   
@@ -133,4 +128,3 @@ ms.locfileid: "51736630"
     ```  
   
 7.  建置並執行應用程式。 在 [**工具**] 功能表您應該會看到名為的命令**叫用 OpenDialog**。 當您按一下此命令時，您應該會看到 [對話方塊] 視窗。
-

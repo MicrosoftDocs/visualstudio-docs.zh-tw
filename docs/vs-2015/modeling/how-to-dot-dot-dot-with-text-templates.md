@@ -1,23 +1,20 @@
 ---
 title: 如何...使用文字範本 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: d1ac2509-0479-47eb-809c-1f171245d0b6
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 8e6a580a906ea228f04f8ec81b15eee6c143c6a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bca95fff67a585aadc981e2dba10146ccf2f893c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903812"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945901"
 ---
 # <a name="how-to--with-text-templates"></a>如何 ... 使用文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +87,7 @@ ms.locfileid: "49903812"
      如需詳細資訊，請參閱 <<c0> [ 建立應用程式模型](../modeling/create-models-for-your-app.md)並[從 UML 模型產生檔案](../modeling/generate-files-from-a-uml-model.md)。  
   
 ### <a name="get-data-from-includevsprvsincludesvsprvs-mdmd"></a>要從取得資料 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
- 若要使用服務中提供[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，由組`hostSpecific`屬性，並載入`EnvDTE`組件。 例如:   
+ 若要使用服務中提供[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，由組`hostSpecific`屬性，並載入`EnvDTE`組件。 例如：  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  
@@ -137,6 +134,3 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ### <a name="what-is-t4"></a>什麼是 「 T4 」？  
   
 -   另一個名稱[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]此處所述的文字範本功能。 舊的版本中，未發行，是 「 文字範本轉換 」 的縮寫。
-
-
-

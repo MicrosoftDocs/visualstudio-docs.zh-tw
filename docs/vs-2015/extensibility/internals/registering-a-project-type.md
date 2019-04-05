@@ -1,14 +1,9 @@
 ---
 title: 註冊專案類型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 38848e54f95cc3d78cf3bae2f32bd9827e98c5ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785322"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941825"
 ---
 # <a name="registering-a-project-type"></a>註冊專案類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -200,7 +195,7 @@ ms.locfileid: "51785322"
   
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|無|預設值，指出下列項目會針對其他檔案專案項目。|  
+|`@`|REG_SZ|None|預設值，指出下列項目會針對其他檔案專案項目。|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|加入新項目範本檔案的資源 ID 值。|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|預設路徑，將會顯示在項目的**加入新項目** 對話方塊。|  
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|建立的樹狀節點顯示的排序次序**加入新項目** 對話方塊。|  
@@ -229,7 +224,7 @@ ms.locfileid: "51785322"
   
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  
-|%Clsid_package%|REG_SZ|`,1000,1`|要擷取的功能表資訊的資源。|  
+|%CLSID_Package%|REG_SZ|`,1000,1`|要擷取的功能表資訊的資源。|  
   
  下列所有範例都位於 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates] 機碼下登錄。  
   
@@ -272,7 +267,6 @@ ms.locfileid: "51785322"
  這表示如果您包含 PROJECT_TYPE = EF 在.vsz 檔案中，您的.vsz 檔案先前指定的 ProductDir 目錄中環境找到的項目。  
   
 ## <a name="see-also"></a>另請參閱  
- [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [專案模型的項目](../../extensibility/internals/elements-of-a-project-model.md)   
  [使用 Project Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-

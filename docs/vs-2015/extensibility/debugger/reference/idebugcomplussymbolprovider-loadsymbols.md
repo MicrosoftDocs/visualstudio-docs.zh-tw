@@ -1,27 +1,22 @@
 ---
-title: IDebugComPlusSymbolProvider::LoadSymbols |Microsoft Docs
-ms.custom: ''
+title: IDebugComPlusSymbolProvider::LoadSymbols | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - LoadSymbols
 - IDebugComPlusSymbolProvider::LoadSymbols
 ms.assetid: 3499680d-0b9a-4f20-8432-c89a41b29b87
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c21cd9012f90d15ede5e4a7217b6913766f474d5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b581be2e1aa64372e98fca0799be25d9000e17e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781721"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940781"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -92,4 +87,3 @@ HRESULT CDebugSymbolProvider::LoadSymbols(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
-

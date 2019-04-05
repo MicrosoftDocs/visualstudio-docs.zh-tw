@@ -1,28 +1,23 @@
 ---
-title: 逐步解說： 建立自訂編輯器 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立自訂編輯器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - create
 ms.assetid: d090abb6-d99f-4083-a3db-cd16bf81ce7d
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0b7c8bd8643b6c670e614f4745650f42ccca35f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3967947e0a016b9f53c074a7907f4bb7d6f7ca96
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809736"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58941471"
 ---
-# <a name="walkthrough-creating-a-custom-editor"></a>逐步解說︰建立自訂編輯器
+# <a name="walkthrough-creating-a-custom-editor"></a>逐步解說：建立自訂佈景主題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 VSPackage 專案範本可以在 c + + 建立簡單的自訂編輯器。  VSPackage 專案範本不再支援 C# 或 Visual Basic 專案。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
@@ -55,4 +50,3 @@ VSPackage 專案範本可以在 c + + 建立簡單的自訂編輯器。  VSPacka
   
 ## <a name="see-also"></a>另請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)
-

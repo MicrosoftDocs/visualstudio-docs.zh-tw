@@ -1,25 +1,22 @@
 ---
 title: 定義工作項目連結處理常式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7ce74627d1d2d48ab02e0b124fbc38949f1f76f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc151e69206e37f88eac04ac8bbb2f4d9dbf1ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733060"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940826"
 ---
 # <a name="define-a-work-item-link-handler"></a>定義工作項目連結處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,7 +160,7 @@ namespace WorkItems
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。  
   
-     **疑難排解**： 如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]不會啟動，請確定 VSIX 專案已設定為啟始專案的方案。  
+     **疑難排解**:如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]不會啟動，請確定 VSIX 專案已設定為啟始專案的方案。  
   
 2.  在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，開啟或建立模型專案，並開啟或建立模型圖表。  
   
@@ -183,7 +180,7 @@ namespace WorkItems
   
 7.  請確認工作項目現在是以紅色顯示。 這示範了範例程式碼的 `OnWorkItemLinked()`。  
   
-     **疑難排解**： 如果尚未執行的處理常式方法，請確認：  
+     **疑難排解**:如果尚未執行的處理常式方法，確認：  
   
     -   類別庫專案會列為 MEF 元件**內容**列入**source.extensions.manifest**在 VSIX 專案。  
   
@@ -304,6 +301,3 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
  [將參考字串附加至 UML 模型項目](../modeling/attach-reference-strings-to-uml-model-elements.md)   
  [定義與安裝模型擴充功能](../modeling/define-and-install-a-modeling-extension.md)   
  [使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)
-
-
-

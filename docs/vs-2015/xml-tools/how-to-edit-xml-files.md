@@ -1,25 +1,20 @@
 ---
-title: 如何： 編輯 XML 檔案 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：編輯 XML 檔案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3864b3d3a3074f9b6be2529e8f674df90532c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c836b9b8b33ce39b4e5de72d8f62659c6f607074
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245293"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942598"
 ---
 # <a name="how-to-edit-xml-files"></a>HOW TO：編輯 XML 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
   
 2.  選取  **XML 檔案**來建立新的 XML 檔案; 或者，選取**XSLT 檔**來建立新的 XSLT 樣式表。  
   
-3.  按一下 **開啟**。  
+3.  按一下 [開啟]。  
   
 ### <a name="to-create-a-project-for-xml-files"></a>建立 XML 檔案的專案  
   
@@ -78,6 +73,3 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
  [XML 編輯器](../xml-tools/xml-editor.md)   
  [屬性視窗、 XML 文件屬性](../xml-tools/xml-document-properties-properties-window.md)   
  [如何：從 XML 文件建立 XML 結構描述](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
-
-
-

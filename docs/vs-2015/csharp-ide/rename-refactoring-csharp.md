@@ -1,14 +1,9 @@
 ---
 title: 重新命名重構 (C#) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 268942fc-b142-4dfa-8d90-bedd548c2e4f
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: d88cf6d88f23a3a079d5f9a556c316a204c9ef27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274959"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943077"
 ---
 # <a name="rename-refactoring-c"></a>重新命名重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49274959"
 |類別檢視|當您在 類別檢視選取的識別項時，重新命名重構是可以從捷徑功能表並**重構**功能表。|  
 |物件瀏覽器|當您在物件瀏覽器中選取一個識別項時，重新命名重整，但只能透過**重構**功能表。|  
 |屬性方格的 Windows Form 設計工具|在 **屬性方格**的 Windows Form 設計工具中，在變更控制項的名稱將會起始重新命名作業，該控制項。 **重新命名**對話方塊不會出現。|  
-|底下提供說明，包括方案總管|在**方案總管 中**，則**重新命名**命令是可用的捷徑功能表上。 如果選取的來源檔案包含的類別名稱為檔案名稱相同的類別，您可以使用此命令，以同時重新命名原始程式檔，並執行重新命名重構。<br /><br /> 比方說，如果您建立的預設 Windows 架構應用程式，然後將 Form1.cs 重新命名為 TestForm.cs Form1.cs 會變更為 TestForm.cs 和 Form1 類別原始程式檔名稱和所有參考類別，將重新命名為 TestForm。 **注意︰** **復原**命令 (CTRL + Z) 只會在復原重新命名重構程式碼中，並會的變更回原始名稱的檔案名稱。 <br /><br /> 如果選取的來源檔案不包含其名稱為檔案名稱，相同的類別**重新命名**命令**方案總管 中**只會重新命名原始程式檔，而不會執行重新命名重構。|  
+|底下提供說明，包括方案總管|在**方案總管 中**，則**重新命名**命令是可用的捷徑功能表上。 如果選取的來源檔案包含的類別名稱為檔案名稱相同的類別，您可以使用此命令，以同時重新命名原始程式檔，並執行重新命名重構。<br /><br /> 比方說，如果您建立的預設 Windows 架構應用程式，然後將 Form1.cs 重新命名為 TestForm.cs Form1.cs 會變更為 TestForm.cs 和 Form1 類別原始程式檔名稱和所有參考類別，將重新命名為 TestForm。 **注意：** **復原**命令 (CTRL + Z) 只會在復原重新命名重構程式碼中，並會的變更回原始名稱的檔案名稱。 <br /><br /> 如果選取的來源檔案不包含其名稱為檔案名稱，相同的類別**重新命名**命令**方案總管 中**只會重新命名原始程式檔，而不會執行重新命名重構。|  
   
 ## <a name="rename-operations"></a>重新命名作業  
  當您執行**重新命名**，重構引擎會執行重新命名作業的每個程式碼的符號下, 表中所述。  
@@ -53,8 +48,8 @@ ms.locfileid: "49274959"
 |-----------------|----------------------|  
 |欄位|變更欄位的使用方式與宣告新的名稱。|  
 |本機變數|變更為新名稱的宣告和使用方式的變數。|  
-|方法|變更方法的名稱和該方法的所有參考新的名稱。 **注意：** 當您重新命名的擴充方法時，重新命名作業會傳播至所有執行個體的方法在範圍內，不論是否使用擴充方法作為靜態方法或執行個體方法。 如需詳細資訊，請參閱[擴充方法](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51)。|  
-|命名空間|命名空間的名稱變更為新的名稱，在宣告中，所有`using`陳述式，以及完整限定的名稱。 **注意︰** 重新命名的命名空間時[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]也會更新**預設命名空間**屬性**應用程式**頁面**專案設計工具**. 這個屬性不能重設，方法是選取**恢復**從**編輯**功能表。 若要重設**預設命名空間**屬性值，您必須修改中的屬性**專案設計工具**。 如需詳細資訊，請參閱 <<c0> [ 應用程式頁面](../ide/reference/application-page-project-designer-csharp.md)。|  
+|方法|變更方法的名稱和該方法的所有參考新的名稱。 **注意：** 當您重新命名的擴充方法時，重新命名作業會傳播至所有執行個體的方法在範圍內，不論是否使用擴充方法作為靜態方法或執行個體方法中。 如需詳細資訊，請參閱[擴充方法](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51)。|  
+|命名空間|命名空間的名稱變更為新的名稱，在宣告中，所有`using`陳述式，以及完整限定的名稱。 **注意：** 重新命名的命名空間時[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]也會更新**預設命名空間**上的屬性**應用程式**頁面**專案設計工具**。 這個屬性不能重設，方法是選取**恢復**從**編輯**功能表。 若要重設**預設命名空間**屬性值，您必須修改中的屬性**專案設計工具**。 如需詳細資訊，請參閱 <<c0> [ 應用程式頁面](../ide/reference/application-page-project-designer-csharp.md)。|  
 |屬性|變更為新名稱的宣告和使用方式的屬性。|  
 |類型|變更為新的名稱，包括建構函式和解構函式的所有宣告和類型的所有使用方式。 針對部分類型，重新命名作業會傳播到所有的組件。|  
   

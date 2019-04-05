@@ -1,12 +1,9 @@
 ---
-title: UML 類別圖： 方針 |Microsoft Docs
-ms.custom: ''
+title: UML 類別圖：指導方針 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.overrideoperationsdialog
 helpviewer_keywords:
@@ -19,15 +16,15 @@ ms.assetid: 94dbfd55-b300-4b49-9049-0831ed849486
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bfd0b13942f5faee82e284c435b7f937d3ae5094
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 608b5c37975c49e4e90cdf9edd923121350735e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726513"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941635"
 ---
-# <a name="uml-class-diagrams-guidelines"></a>UML 類別圖表：方針
+# <a name="uml-class-diagrams-guidelines"></a>UML 類別圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual Studio 中，您可以使用*UML 類別圖*來描述資料型別和實作的個別關係。 該圖表可用來重點描述類別的邏輯方面，而非實作。  
@@ -59,7 +56,7 @@ ms.locfileid: "51726513"
   
  輸入與輸出連接和活動參數節點的類型。  
   
- 請參閱[UML 活動圖表： 指導方針](../modeling/uml-activity-diagrams-guidelines.md)。  
+ 請參閱[UML 活動圖表：指導方針](../modeling/uml-activity-diagrams-guidelines.md)。  
   
  順序圖表  
   
@@ -67,22 +64,22 @@ ms.locfileid: "51726513"
   
  生命線的類型。 生命線的類別應包括可能收到之所有訊息的作業。  
   
- 請參閱[UML 循序圖： 方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
+ 請參閱[UML 循序圖：指導方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
  元件圖  
   
  元件介面，列出其作業。  
   
- 請參閱[UML 元件圖： 方針](../modeling/uml-component-diagrams-guidelines.md)。  
+ 請參閱[UML 元件圖：指導方針](../modeling/uml-component-diagrams-guidelines.md)。  
   
  使用案例圖  
   
  目標的說明和使用案例步驟中提及的類型。  
   
- 請參閱[UML 使用案例圖： 方針](../modeling/uml-use-case-diagrams-guidelines.md)。  
+ 請參閱[UML 使用案例圖：指導方針](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
 ##  <a name="BasicSteps"></a> 繪製類別圖的基本步驟  
- 如需 UML 類別圖 參考之元素的相關資訊，請參閱[UML 類別圖： 參考](../modeling/uml-class-diagrams-reference.md)。  
+ 如需 UML 類別圖 參考之元素的相關資訊，請參閱[UML 類別圖：參考資料](../modeling/uml-class-diagrams-reference.md)。  
   
 > [!NOTE]
 >  建立任何模型圖的詳細的步驟所述[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
@@ -113,7 +110,7 @@ ms.locfileid: "51726513"
   
 4.  若要繪製類型之間的關聯、繼承或相依性連結，請按一下適當的工具，然後按一下來源類型和目標類型。  
   
-5.  若要建立封裝中的類型，建立封裝，使用**封裝**工具，並接著建立新的類型和封裝內的套件。 您也可以使用複製命令來複製類型，並在套件中貼上它們。  
+5.  若要建立封裝中的類型，建立封裝，使用**封裝**工具，並接著建立新的類型和封裝內的套件。 您也可以使用複製命令來複製類型，並在封裝中貼上它們。  
   
 6.  每個圖表都是相同專案中其他圖表之間共用之模型的檢視。 若要查看完整模型的樹狀檢視，請選擇**檢視**，**其他 Windows**， **UML 模型總管**。  
   
@@ -149,13 +146,13 @@ ms.locfileid: "51726513"
   
  如果您已定義介面的元件在元件圖中，您可以拖曳的介面**UML 模型總管**拖曳至類別圖表。 在類別圖中，您可以定義介面中所包含的方法。  
   
- 請參閱[UML 元件圖： 方針](../modeling/uml-component-diagrams-guidelines.md)。  
+ 請參閱[UML 元件圖：指導方針](../modeling/uml-component-diagrams-guidelines.md)。  
   
  UML 循序圖表  
   
  您可以從在循序圖中的生命線建立類別和介面，並再拖曳 [從類別**UML 模型總管]** 至 UML 類別圖。 順序圖表中的每個生命線都表示物件、元件或行動的執行個體。  
   
- 若要從生命線建立類別，開啟生命線，捷徑功能表，然後選擇**建立類別**或是**建立介面**。 請參閱[UML 循序圖： 方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
+ 若要從生命線建立類別，開啟生命線，捷徑功能表，然後選擇**建立類別**或是**建立介面**。 請參閱[UML 循序圖：指導方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
 ##  <a name="AttributesAndOperations"></a> 屬性和作業  
  屬性 (4) 是類型的每個執行個體可以具有的已命名的值。 存取屬性不會變更執行個體的狀態。  
@@ -179,7 +176,7 @@ ms.locfileid: "51726513"
   
 - **（無）** -您可以保留類型，不會指定簽章中省略前面的冒號 (`:`)。  
   
-- 其中一個標準基本類型：**布林**，**整數**，**字串**。  
+- 其中一個標準的基本類型：**布林值**，**整數**，**字串**。  
   
 - 在模型中定義的類型。  
   
@@ -265,7 +262,7 @@ visibility attribute-name : Type
 visibility operation-name (parameter1 : Type1, ...) : Type  
 ```  
   
- 例如:   
+ 例如：  
   
 ```  
 + AddItem (item : MenuItem, quantity : Integer) : Boolean  
@@ -292,7 +289,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  不過，您只能設定**Is Static**並**Is Abstract**中的屬性**屬性**視窗。  
   
 #### <a name="full-signature"></a>完整簽章  
- 編輯屬性 (Attribute) 或作業的簽章時，部分其他屬性 (Property) 可能出現在行的結尾、每個參數之後。 它們在大括號 {…} 之中顯示。 您可以編輯或加入這些屬性。 例如：  
+ 編輯屬性 (Attribute) 或作業的簽章時，部分其他屬性 (Property) 可能出現在行的結尾、每個參數之後。 它們在大括號 {…} 之中顯示。 您可以編輯或加入這些屬性。 例如:   
   
 ```  
 + AddItems (items: MenuItem [1..*] {unique, ordered})  
@@ -325,7 +322,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  屬性是從其他屬性或關聯的值計算得出的。  
   
- "/" 出現在屬性的名稱之前。 例如：  
+ "/" 出現在屬性的名稱之前。 例如:   
   
 ```  
 /TotalPrice: Integer  
@@ -341,7 +338,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  整體而言，關聯的屬性除了每個*角色*，亦即，關聯的兩端都有自己的一些屬性。 若要檢視它們，請展開**第一個角色**並**第二個角色**屬性。  
   
- 每個角色的部分屬性都會直接顯示在圖表中。 這些屬性如下：  
+ 每個角色的部分屬性都會直接顯示在圖表中。 分別為：  
   
 - 角色名稱。 這會顯示在圖表上關聯的適當一端。 您可以將它設定在圖表上或在**屬性**視窗。  
   
@@ -462,7 +459,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 5.  將每個參數設定為適當的值。 例如，將 `Key` 參數設定為稱為 `Name` 的類別。  
   
 ##  <a name="Packages"></a> 封裝  
- 在 UML 類別圖中可以檢視封裝。 套件是其他模型項目的容器。 您可以在套件內建立任何項目。 在圖表上，如果移動套件，該套件內的項目也會隨之移動。  
+ 在 UML 類別圖中可以檢視封裝。 封裝是其他模型項目的容器。 您可以在封裝內建立任何項目。 在圖表上，如果移動封裝，該封裝內的項目也會隨之移動。  
   
  您可以使用摺疊/展開控制項來隱藏或顯示套件的內容。  
   
@@ -477,12 +474,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 ## <a name="see-also"></a>另請參閱  
  [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)   
- [UML 類別圖： 參考](../modeling/uml-class-diagrams-reference.md)   
+ [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)   
  [模型使用者需求](../modeling/model-user-requirements.md)   
- [UML 元件圖： 參考](../modeling/uml-component-diagrams-reference.md)   
- [UML 循序圖： 參考](../modeling/uml-sequence-diagrams-reference.md)   
- [UML 使用案例圖： 參考](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML 元件圖表：參考](../modeling/uml-component-diagrams-reference.md)   
+ [UML 順序圖表：參考](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML 使用案例圖表：參考](../modeling/uml-use-case-diagrams-reference.md)   
  [UML 元件圖表：參考](../modeling/uml-component-diagrams-reference.md)
-
-
-

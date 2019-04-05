@@ -1,14 +1,9 @@
 ---
 title: 註釋鎖定行為 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Releases_nonreentrant_lock_
 - _Lock_kind_mutex_
@@ -37,13 +32,13 @@ ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: f09b38ceb4a6824ec38f0d9206cf37e0f056ce28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8d855fb41624e357a62d9eb773cc5e42606572f7
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790756"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58946103"
 ---
 # <a name="annotating-locking-behavior"></a>註釋鎖定行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,23 +69,23 @@ ms.locfileid: "51790756"
   
 |註釋|描述|  
 |----------------|-----------------|  
-|`_Acquires_exclusive_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的獨佔鎖定計數遞增 1。|  
+|`_Acquires_exclusive_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的獨佔鎖定計數遞增 1。|  
 |`_Acquires_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的鎖定計數遞增 1。|  
 |`_Acquires_nonreentrant_lock_(expr)`|取得由 `expr` 命名的鎖定。  如果鎖定已保留，則會報告錯誤。|  
-|`_Acquires_shared_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的共用鎖定計數遞增 1。|  
+|`_Acquires_shared_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的共用鎖定計數遞增 1。|  
 |`_Create_lock_level_(name)`|將符號 `name` 宣告為鎖定層級的陳述式，如此該符號就可以在註釋 `_Has_Lock_level_` 和 `_Lock_level_order_` 中使用。|  
 |`_Has_lock_kind_(kind)`|附註來精簡的資源物件的型別資訊的任何物件。 有時候一般型別用於不同種類的資源及多載的型別不是足以區別各種資源之間的語意需求。 以下是預先定義的 `kind` 參數清單：<br /><br /> `_Lock_kind_mutex_`<br /> 鎖定 mutex 類型的識別碼。<br /><br /> `_Lock_kind_event_`<br /> 鎖定事件的種類的識別碼。<br /><br /> `_Lock_kind_semaphore_`<br /> 號誌鎖定類型識別碼。<br /><br /> `_Lock_kind_spin_lock_`<br /> 微調鎖定的鎖定類型識別碼。<br /><br /> `_Lock_kind_critical_section_`<br /> 鎖定重要區段的類型識別碼。|  
 |`_Has_lock_level_(name)`|標註鎖定物件，並為其指定 `name` 的鎖定層級。|  
 |`_Lock_level_order_(name1, name2)`|陳述式提供鎖定之間的順序`name1`和`name2`。|  
-|`_Post_same_lock_(expr1, expr2)`|標註函式，並指出並後製狀態下，`expr1` 和 `expr2` 這兩個鎖定會視為是相同的鎖定物件。|  
+|`_Post_same_lock_(expr1, expr2)`|為函式加上附註，並指出並後製狀態下，`expr1` 和 `expr2` 這兩個鎖定會視為是相同的鎖定物件。|  
 |`_Releases_exclusive_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的獨佔鎖定計數遞減 1。|  
-|`_Releases_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的鎖定計數遞減 1。|  
+|`_Releases_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的鎖定計數遞減 1。|  
 |`_Releases_nonreentrant_lock_(expr)`|會釋放由 `expr` 命名的鎖定。 如果目前沒有保留鎖定，則會報告錯誤。|  
-|`_Releases_shared_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的共用鎖定計數遞減 1。|  
-|`_Requires_lock_held_(expr)`|標註函式，並指出在前置狀態下，由 `expr` 命名之物件的鎖定計數至少為一。|  
+|`_Releases_shared_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的共用鎖定計數遞減 1。|  
+|`_Requires_lock_held_(expr)`|為函式加上附註，並指出在前置狀態下，由 `expr` 命名之物件的鎖定計數至少為一。|  
 |`_Requires_lock_not_held_(expr)`|標註函式標註，並指出在前置狀態下，由 `expr` 命名之物件的鎖定計數為零。|  
-|`_Requires_no_locks_held_`|標註函式，並指出檢查程式已知之所有鎖定的鎖定計數為零。|  
-|`_Requires_shared_lock_held_(expr)`|標註函式，並指出在前置狀態下，由 `expr` 命名之物件的共用鎖定計數至少為一。|  
+|`_Requires_no_locks_held_`|為函式加上附註，並指出檢查程式已知之所有鎖定的鎖定計數為零。|  
+|`_Requires_shared_lock_held_(expr)`|為函式加上附註，並指出在前置狀態下，由 `expr` 命名之物件的共用鎖定計數至少為一。|  
 |`_Requires_exclusive_lock_held_(expr)`|標註函式，並指出在前置狀態下，由 `expr` 命名之物件的獨佔鎖定計數至少為一。|  
   
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>未公開之鎖定物件的 SAL 內在變數  
@@ -111,7 +106,7 @@ ms.locfileid: "51790756"
 |`_Guarded_by_(expr)`|標註變數，並指出只要存取變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|  
 |`_Interlocked_`|標註變數，相當於`_Guarded_by_(_Global_interlock_)`。|  
 |`_Interlocked_operand_`|標註函式參數是一個不同的 Interlocked 函式的目標運算元。  這些運算元必須有特定的其他屬性。|  
-|`_Write_guarded_by_(expr)`|標註變數，並指出只要修改變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|  
+|`_Write_guarded_by_(expr)`|為變數加上附註，並指出只要修改變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 SAL 註釋減少 C/c + + 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
@@ -123,6 +118,3 @@ ms.locfileid: "51790756"
  [內建函式](../code-quality/intrinsic-functions.md)   
  [最佳作法和範例](../code-quality/best-practices-and-examples-sal.md)   
  [程式碼分析小組部落格](http://go.microsoft.com/fwlink/p/?LinkId=251197)
-
-
-

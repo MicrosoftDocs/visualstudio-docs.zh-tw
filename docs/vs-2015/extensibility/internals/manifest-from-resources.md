@@ -1,21 +1,17 @@
 ---
 title: 從 資源資訊清單 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d442686ab588932cac077a0b5fdc09a1a746c3d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67b80feb38e6f1c00c6cf4d1fc1d7915a33dbd9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771857"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945338"
 ---
 # <a name="manifest-from-resources"></a>來自資源的資訊清單
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,18 +21,18 @@ ms.locfileid: "51771857"
 ## <a name="how-to-use-the-tool"></a>如何使用工具  
  **語法**  
   
- ManifestFromResources /resources:\<Dir1 >;\<Img1 > /assembly:\<組件名稱 >\<選擇性引數 >  
+ ManifestFromResources /resources:\<Dir1>;\<Img1> /assembly:\<AssemblyName> \<Optional Args>  
   
  **引數**  
   
 ||||  
 |-|-|-|  
 |**交換器名稱**|**備註**|**必要或選用**|  
-|/resources|以分號分隔的映像 」 或 「 目錄清單。 這份清單一律應包含會在資訊清單中的映像的完整清單。 如果只指定的部分清單，不包含的項目將會遺失。<br /><br /> 如果指定的資源檔的影像區域，工具會分割成個別的映像加入資訊清單中的每個 subimage 之前。<br /><br /> 如果影像是.png 檔案，我們建議您格式化像這樣的名稱，使工具可以填滿影像適當的屬性：\<名稱 >。\<寬度 >。\<高度 >.png。|必要|  
+|/resources|以分號分隔的映像 」 或 「 目錄清單。 這份清單一律應包含會在資訊清單中的映像的完整清單。 如果只指定的部分清單，不包含的項目將會遺失。<br /><br /> 如果指定的資源檔的影像區域，工具會分割成個別的映像加入資訊清單中的每個 subimage 之前。<br /><br /> 如果影像是.png 檔案，我們建議您格式化這類名稱，使工具可以填入適當的屬性，映像：\<名稱 >。\<寬度 >。\<高度 >.png。|必要|  
 |/assembly|Managed 組件 （不包括副檔名） 或執行階段原生組件的路徑裝載 （相對於資訊清單的執行階段位置） 資源的名稱。|必要|  
-|/manifest|要提供給產生的.imagemanifest 檔案的名稱。 這也可以包含在不同的位置中建立檔案的絕對或相對路徑。 預設名稱比對組件名稱。<br /><br /> 預設值：\<目前的目錄 >\\< 組件\>.imagemanifest|Optional|  
-|/guidName|要提供給所有產生的資訊清單中的映像的 GUID 符號的名稱。<br /><br /> 預設： AssetsGuid|Optional|  
-|/rootPath|要去除之前建立受管理的資源 Uri 根路徑。 （這個旗標是協助工具，取得相對 URI 的路徑錯誤，導致無法載入資源的情況下）。<br /><br /> 預設值：\<目前的目錄 >|Optional|  
+|/manifest|要提供給產生的.imagemanifest 檔案的名稱。 這也可以包含在不同的位置中建立檔案的絕對或相對路徑。 預設名稱比對組件名稱。<br /><br /> 預設：\<目前的目錄 >\\< 組件\>.imagemanifest|Optional|  
+|/guidName|要提供給所有產生的資訊清單中的映像的 GUID 符號的名稱。<br /><br /> 預設：AssetsGuid|Optional|  
+|/rootPath|要去除之前建立受管理的資源 Uri 根路徑。 （這個旗標是協助工具，取得相對 URI 的路徑錯誤，導致無法載入資源的情況下）。<br /><br /> 預設：\<目前的目錄 >|Optional|  
 |/recursive|設定這個旗標會告訴工具以遞迴方式搜尋 /resources 引數中的任何目錄。 省略此旗標將會在頂層-層次專用搜尋的目錄中。|Optional|  
 |/isNative|當組件引數為原生組件的路徑，請設定此旗標。 當組件引數是 managed 組件的名稱，請省略這個旗標。 （請參閱附註 區段，如需有關此旗標的詳細資訊）。|Optional|  
 |/newGuids|設定這個旗標會告訴工具建立的映像的 GUID 符號，而不是合併現有的資訊清單中的一個新的值。|Optional|  
@@ -47,9 +43,9 @@ ms.locfileid: "51771857"
   
  **範例**  
   
--   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
+-   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
+-   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
 -   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
@@ -163,4 +159,3 @@ ms.locfileid: "51771857"
   <ImageLists />  
 </ImageManifest>  
 ```
-

@@ -1,14 +1,9 @@
 ---
-title: 如何： 同步處理程式碼專案規則集，與 Team 專案簽入原則 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：同步處理程式碼專案規則集，與 Team 專案簽入原則 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
@@ -16,14 +11,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f79b8baf3740fdbd57828552a192746e839578c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263116"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941414"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>如何：同步處理具有 Team 專案簽入原則的程式碼專案規則集
+# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>HOW TO：將程式碼專案規則集與 Team 專案簽入原則進行同步處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以同步至 team 專案簽入原則的程式碼專案的程式碼分析設定藉由指定規則集，其中包含最少的規則集簽入原則中指定的規則。 您的名稱和位置的規則集簽入原則，就會通知您的開發人員潛在客戶。 您可以使用下列選項之一，確保專案的程式碼分析會使用一組正確的規則：  
@@ -60,7 +55,7 @@ ms.locfileid: "49263116"
   
 1.  請遵循下列其中一個稍早在本主題，以選取專案的 [設定] 對話方塊的 [程式碼分析] 頁面上的 team 專案簽入原則中的程序。  
   
-2.  按一下 **開啟**。  
+2.  按一下 [開啟]。  
   
 3.  新增或移除規則使用 規則集編輯器。  
   
@@ -73,6 +68,3 @@ ms.locfileid: "49263116"
 6.  在 [**執行此規則集**清單中，按一下**\<瀏覽] >**。  
   
 7.  在 **開啟**對話方塊方塊中，指定的規則集檔案。
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 無法連接到 Microsoft Visual Studio 遠端偵錯監視 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.remote_debug
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: a1d959fc-3817-491c-831b-e6b768a3877a
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 139c650ac61b9312b069cc2e19fa66d3673ca30f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e5e011ccd047551e7ea6cf1426b4118c3ad879f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733008"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942200"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ ms.locfileid: "51733008"
   
 -   您可以停止遠端偵錯工具，再以使用的本機電腦帳戶重新啟動它。  
   
--   您可以從命令列來啟動遠端偵錯工具 **/allow\<使用者名稱 >** 參數： `msvsmon /allow <username@computer>`  
+-   您可以從命令列使用 **/allow \<使用者名稱>** 參數：`msvsmon /allow <username@computer>` 啟動遠端偵錯工具  
   
 -   您可以將使用者加入遠端偵錯工具的權限 (在遠端偵錯工具視窗：[工具] / [權限] )。  
   
@@ -90,6 +85,3 @@ ms.locfileid: "51733008"
   
 ## <a name="see-also"></a>另請參閱  
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

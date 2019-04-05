@@ -1,26 +1,21 @@
 ---
-title: IDebugProgram3::ExecuteOnThread |Microsoft Docs
-ms.custom: ''
+title: IDebugProgram3::ExecuteOnThread | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4e183d9d55c8527cdead0d7108c12ac3fd527e94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cfc64f8ae928b4bb0057a16b8a74c6ddbff588c0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788624"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942226"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,15 +45,14 @@ int ExecuteOnThread(
 ## <a name="remarks"></a>備註  
  有三種不同的方式偵錯工具可以繼續執行停止後的執行：  
   
-- 執行： 取消任何先前的步驟，並一直執行，直到下一個中斷點，依此類推。  
+- 執行：取消任何先前的步驟，並一直執行，直到下一個中斷點，依此類推。  
   
-- 步驟： 取消任何舊的步驟，並執行，直到新的步驟會完成。  
+- 步驟：取消任何舊的步驟，並執行，直到新的步驟會完成。  
   
-- 繼續： 再次執行，並讓任何舊的步驟保持在作用中。  
+- 繼續：再次執行，並讓任何舊的步驟保持在作用中。  
   
   執行緒傳遞給`ExecuteOnThread`決定哪個步驟來取消時很有用。 如果您不知道執行的執行緒，執行會取消所有步驟。 了解的執行緒，您只需要取消作用中執行緒上的步驟。  
   
 ## <a name="see-also"></a>另請參閱  
  [執行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)   
  [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)
-

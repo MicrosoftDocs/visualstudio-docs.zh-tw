@@ -1,27 +1,22 @@
 ---
-title: 如何： 變更圖形診斷播放電腦 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：變更圖形診斷播放電腦 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a2d5d56d37bbed4180d1231cac54da6beff3418d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1f5f25bf9b0dc03afc7cb2ba334d85bd697b7dc5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737599"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941094"
 ---
-# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>如何：變更圖形診斷播放電腦
+# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>HOW TO：變更圖形診斷播放電腦
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以播放圖形資訊使用本機電腦，或使用遠端電腦或裝置。  
@@ -37,7 +32,7 @@ ms.locfileid: "51737599"
   
 3.  設定**驗證模式**屬性設**無**。  
   
-4.  選擇**選取** 按鈕。  
+4.  選擇 [選取] 按鈕。  
   
 #### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>若要使用遠端電腦播放圖形資訊  
   
@@ -51,13 +46,10 @@ ms.locfileid: "51737599"
   
     -   不使用任何驗證，設定**驗證模式**屬性設**無**。  
   
-4.  選擇**選取** 按鈕。  
+4.  選擇 [選取] 按鈕。  
   
 > [!NOTE]
 >  **遠端偵錯工具連接**對話方塊可能也會顯示直接連線到您的開發電腦或相同的子網路上的遠端偵錯目標。 您可以為圖形診斷播放電腦使用其中一個遠端偵錯目標而不必以手動方式加以設定。 在 [**遠端偵錯工具連接**對話方塊方塊中，選取您想要的目標然後選擇**選取**] 按鈕。  
   
 ## <a name="see-also"></a>另請參閱  
  [圖形記錄文件](../debugger/graphics-log-document.md)
-
-
-

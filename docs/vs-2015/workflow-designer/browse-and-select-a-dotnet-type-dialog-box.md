@@ -1,11 +1,8 @@
 ---
 title: 瀏覽並選取.NET 類型對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - TypeBrowser.UI
@@ -14,16 +11,16 @@ ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 1bff5fccfbd4998e477043188c955e3446a45d69
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 490a28e4f3fcd0b2bc2657a83a706090eafb16a8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192527"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945112"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>瀏覽並選取 .NET 類型對話方塊
-在 [**屬性**] 視窗、 對話方塊，或是如變數設計工具，當您選取的設計工具**Vyhledat Typy...** 從清單中的資料型別，是**瀏覽並選取.NET 型別**對話方塊 （簡稱為 「 型別瀏覽器 」）。 在這個對話方塊中，您可以從組件與專案的樹狀檢閱中選擇型別。  
+在 [**屬性**] 視窗、 對話方塊，或是如變數設計工具，當您選取的設計工具**Vyhledat Typy...** 從清單中的資料型別，是**瀏覽並選取.NET 型別**對話方塊 （簡稱為 「 型別瀏覽器 」）。 在這個對話方塊中，您可以從組件與專案的樹狀檢視中選擇型別。  
   
  有幾個使用者案例會採用這個對話方塊，包括下列：  
   
@@ -64,7 +61,7 @@ ms.locfileid: "49192527"
 ## <a name="filtering-search-results-in-the-type-browser"></a>篩選型別瀏覽器中的搜尋結果  
  中的類型清單**型別名稱**方塊會縮短您輸入更多字元尋找相符項目。 在已篩選清單中，只會顯示其完整限定名稱開頭是您輸入字串的型別，或是其簡短名稱開頭是您輸入字串的型別。  
   
- 例如:   
+ 例如：  
   
 1.  鍵入**作業**比對<xref:System.OperationCanceledException>而非<xref:System.InvalidOperationException>。 若要符合 <xref:System.InvalidOperationException>，一開始請輸入 System.I 或 Invalid。  
   

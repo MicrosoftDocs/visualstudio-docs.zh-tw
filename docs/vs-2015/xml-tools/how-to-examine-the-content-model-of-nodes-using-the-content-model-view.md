@@ -1,25 +1,20 @@
 ---
-title: 如何： 檢查使用內容模型檢視節點的內容模型 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：檢查使用內容模型檢視節點的內容模型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ca6c86772cc3ad27b537052961afea50fad7b876
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 283378be55db059983d92f3581f6186f59102cb1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245943"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945589"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>HOW TO：使用內容模型檢視檢查節點的內容模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "49245943"
   
 2.  按一下 **使用 XML 編輯器檢視與編輯基礎 XML 結構描述檔案**開始檢視上。  
   
-3.  XML 結構描述範例程式碼複製[範例 XML 結構描述： 採購單結構描述](../xml-tools/sample-xsd-file-purchase-order-schema.md)並貼上取代預設新增至新 XSD 檔案的程式碼。  
+3.  XML 結構描述範例程式碼複製[範例 XML 結構描述：採購單結構描述](../xml-tools/sample-xsd-file-purchase-order-schema.md)並貼上取代預設新增至新 XSD 檔案的程式碼。  
   
 4.  選取 `purchaseOrder`項目在結構描述總管 中，以滑鼠右鍵按一下`purchaseOrder`項目在 XML 編輯器 中，然後選取**在 XML 總管中顯示**。  
   
@@ -50,6 +45,3 @@ ms.locfileid: "49245943"
 8.  按一下 **顯示的文件**XSD 工具列切換文件中的按鈕。 您也可以以滑鼠右鍵按一下設計介面來切換文件。  
   
 9. 滑鼠右鍵按一下`purchaseOrder`節點，然後選取**產生範例 XML**查看 XML 執行個體文件。
-
-
-

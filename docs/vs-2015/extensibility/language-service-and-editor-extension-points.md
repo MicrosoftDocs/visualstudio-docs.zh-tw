@@ -1,26 +1,21 @@
 ---
 title: 語言服務及編輯器擴充點 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0bcbef5094bd12392b7ea79865e1d28e2934a11e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 80aed463b2d8ef9d083940a8966574e778623ddd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942768"
 ---
 # <a name="language-service-and-editor-extension-points"></a>語言服務及編輯器擴充點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +93,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
   
 - ENC  
   
-- 裡  
+- FindResults  
   
 - F#  
   
@@ -183,7 +178,7 @@ internal static ClassificationTypeDefinition CSharpTestDefinition;
   
 - 「 其他錯誤 」  
   
-- 「 警告 」  
+- "warning"  
   
   若要探索可用的分類類型的清單，匯入<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>，可維護之編輯器的分類類型集合。 下列程式碼中，會匯入這項服務做為屬性。  
   
@@ -283,7 +278,7 @@ internal class TestTaggerProvider : ITaggerProvider
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>： 與透過裝飾相關聯。  
   
   > [!NOTE]
-  >  如需範例<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，請參閱 HighlightWordTag 定義[逐步解說： 反白顯示的文字](../extensibility/walkthrough-highlighting-text.md)。  
+  >  如需<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，請參閱 HighlightWordTag 定義[逐步解說：反白顯示文字](../extensibility/walkthrough-highlighting-text.md)。  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>： 可以展開或摺疊大綱區域相關聯。  
   
@@ -329,7 +324,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  若要將此格式定義套用至標記中，參考您設定的名稱屬性中的類別 （而不是顯示名稱） 的名稱。  
   
 > [!NOTE]
->  如需<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>，請參閱中的 HighlightWordFormatDefinition 類別[逐步解說： 反白顯示的文字](../extensibility/walkthrough-highlighting-text.md)。  
+>  如需<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>，請參閱中的 HighlightWordFormatDefinition 類別[逐步解說：反白顯示文字](../extensibility/walkthrough-highlighting-text.md)。  
   
 ## <a name="extending-adornments"></a>擴充裝飾  
  裝飾定義視覺效果，可以新增在文字檢視中顯示的文字或文字檢視本身。 您可以為任何類型的定義您自己的裝飾<xref:System.Windows.UIElement>。  
@@ -338,7 +333,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 裝飾的名稱。  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 相對於其他 adornment 層級裝飾的順序。 此類別<xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers>定義四個預設層級： 選取範圍、 大綱、 插入號和文字。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 相對於其他 adornment 層級裝飾的順序。 此類別<xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers>定義四個預設層級：選取、 大綱、 插入號及文字。  
   
   下列範例會顯示匯出屬性裝飾層定義。  
   
@@ -556,9 +551,9 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  如需有關如何實作 IntelliSense 的來源的詳細資訊，請參閱下列逐步解說：  
   
- [逐步解說︰顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [逐步解說：顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [逐步解說︰顯示簽章說明](../extensibility/walkthrough-displaying-signature-help.md)  
+ [逐步解說：顯示簽章說明](../extensibility/walkthrough-displaying-signature-help.md)  
   
  [逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)  
   
@@ -583,5 +578,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  如需使用 IntelliSense 控制器的詳細資訊，請參閱下列逐步解說：  
   
- [逐步解說︰顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
-
+ [逐步解說：顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

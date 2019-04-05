@@ -1,14 +1,9 @@
 ---
 title: 沒有可用來源 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.nosource
 dev_langs:
@@ -22,18 +17,18 @@ ms.assetid: ed0732bc-4b8c-490f-adb1-af06869a2a6b
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cc8331c710141a2cc2837d97101e9dff2b49785b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9652073b6e5ea58b8206b195f3a99769a1b63a91
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798374"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941374"
 ---
 # <a name="no-source-available"></a>沒有可用來源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您的專案未包含您嘗試檢視之程式碼的原始程式碼。 常見的原因您所按兩下沒有原始程式碼的模組**呼叫堆疊視窗**或是**執行緒視窗**。 您可以繼續偵錯，但無法使用來源視窗設定中斷點，或是在此位置執行其他動作。 如果您需要設定中斷點，請使用**反組譯碼視窗**改。  
+您的專案未包含您嘗試檢視之程式碼的原始程式碼。 常見的原因為在 [呼叫堆疊] 視窗或 [執行緒] 視窗中，按兩下沒有原始程式碼的模組。 您可以繼續偵錯，但無法使用來源視窗設定中斷點，或是在此位置執行其他動作。 如果您必須設定中斷點，請改用 [反組譯碼] 視窗。  
   
  在 [方案屬性頁] 中，您可以變更偵錯工具搜尋原始程式檔的目錄，並告知偵錯工具忽略選取的原始程式檔。 請參閱[偵錯來源檔案、 通用屬性、 方案屬性頁對話方塊](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)。  
   
@@ -41,15 +36,12 @@ ms.locfileid: "51798374"
  按一下這個連結開啟對話方塊，您可以在其中瀏覽以尋找原始程式碼。  
   
  **顯示反組譯碼**  
- 會啟動**反組譯碼視窗**。  
+ 啟動 [反組譯碼] 視窗。  
   
- **永遠顯示反組譯碼有遺漏的原始程式檔**  
- 選取此選項可顯示**反組譯碼視窗**自動沒有原始程式碼時可用。 這項設定也可以在變更**選項** 對話方塊中，**偵錯**類別**一般**頁面上，選取或清除**顯示反組譯碼如果來源無法使用時**。  
+ **永遠顯示遺漏來源檔案的反組譯碼**  
+ 選取這個選項以在沒有原始程式碼可用時，自動顯示 [反組譯碼] 視窗。 這項設定也可以在 [選項] 對話方塊、[偵錯] 分類、[一般] 頁面中，透過選取或清除 [找不到可用的原始碼時顯示反組譯碼] 的方式變更。  
   
 ## <a name="see-also"></a>另請參閱  
- [偵錯來源檔案、 通用屬性、 方案屬性頁對話方塊](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)   
- [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [偵錯來源檔案、通用屬性、方案屬性頁對話方塊](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)   
+ [指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [SOS.dll (SOS 偵錯延伸模組)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)
-
-
-

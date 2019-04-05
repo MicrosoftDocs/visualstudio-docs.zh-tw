@@ -1,13 +1,8 @@
 ---
 title: Format Specifiers in c + + |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -32,13 +27,13 @@ ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6634124e7dc0b50236a9fd6ff9c5c5388c3063bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e7547f4c675bc7c68c61e86ef61a6285bfb65fb2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810516"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941020"
 ---
 # <a name="format-specifiers-in-c"></a>C++ 中的格式規範
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,13 +83,13 @@ int main() {
 |**s32**|UTF-32 字串|\<位置 > U"hello world"|U”hello world”|  
 |**s32b**|Utf-32 字串 (沒有引號)|\<位置 > U"hello world"|hello world|  
 |**en**|enum|Saturday(6)|星期六|  
-|**hv**|指標類型：指出檢查中的指標值是陣列堆積配置的結果，例如 `new int[3]`。|\<位置 > {\<第一個成員 >}|\<位置 > {\<第一個成員 >，\<第二個成員 >，...}|  
+|**hv**|指標類型：指出檢查中的指標值是陣列堆積配置的結果，例如 `new int[3]`。|\<位置>{\<第一個成員>}|\<位置 > {\<第一個成員 >，\<第二個成員 >，...}|  
 |**na**|隱藏物件指標的記憶體位址。|\<位置 >，{成員 = 值...}|{成員=值...}|  
 |**nd**|只顯示基底類別資訊，忽略衍生類別|`(Shape*) square` 包含基底類別和衍生類別資訊|只顯示基底類別資訊|  
 |hr|HRESULT 或 Win32 錯誤碼。 (偵錯工具現在可自動將 HRESULT 解碼，因此這個規範並不需要用於這些狀況中)。|S_OK|S_OK|  
 |wc|Window 類別旗標|0x0010|WC_DEFAULTCHAR|  
 |wm|Windows 訊息編號|16|WM_CLOSE|  
-|!|未經處理格式，忽略任何資料類型檢視自訂|\<自訂的表示 >|4|  
+|!|未經處理格式，忽略任何資料類型檢視自訂|\<自訂的表示>|4|  
   
 > [!NOTE]
 >  當 **hv** 格式規範出現時，偵錯工具會嘗試判斷緩衝區的長度並顯示適當的項目數目。 因為偵錯工具不一定能一直找到陣列確切的緩衝區大小，所以您應該盡可能使用大小規範 `(pBuffer,[bufferSize])` 。 **hv** 格式規範是針對緩衝區大小非隨時可用的案例。  
@@ -121,15 +116,15 @@ int main() {
 |**f**|帶正負號的浮點數|(3./2.), f|1.500000|  
 |**e**|帶正負號的科學記號表示法|(3.0/2.0)|1.500000e+000|  
 |**g**|帶正負號的浮點數或帶正負號的科學記號表示法 (兩者中較短者)|(3.0/2.0)|1.5|  
-|c|單一字元|\<location>|101 'e'|  
-|秒|const char*|\<location>|"hello world"|  
-|su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hello world"|  
-|sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|hello world|  
-|s8|const char*|\<location>|"hello world"|  
+|c|單一字元|\<位置>|101 'e'|  
+|秒|const char*|\<位置>|"hello world"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<位置>|L"hello world"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<位置>|hello world|  
+|s8|const char*|\<位置>|"hello world"|  
 |hr|HRESULT 或 Win32 錯誤碼。 (偵錯工具現在可自動將 HRESULT 解碼，因此這個規範並不需要用於這些狀況中)。|S_OK|S_OK|  
 |wc|Window 類別旗標。|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Windows 訊息編號|0x0010|WM_CLOSE|  
-|!|未經處理格式，忽略任何資料類型檢視自訂|\<自訂的表示 >|4|  
+|!|未經處理格式，忽略任何資料類型檢視自訂|\<自訂的表示>|4|  
   
 ###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 使用 C++/CLI 的 Interop 偵錯中記憶體位置的格式規範  
  下表包含了用於記憶體位置的格式化符號。 您可將記憶體位置規範用於評估結果為位置的任何數值或運算式。  
@@ -150,8 +145,3 @@ int main() {
 |指定名稱|格式|運算式|顯示的值|  
 |---------------|------------|----------------|---------------------|  
 |n|十進位整數|pBuffer[32]|顯示 `pBuffer` 為 32 個項目的陣列。|
-
-
-
-
-

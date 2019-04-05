@@ -1,14 +1,9 @@
 ---
-title: 逐步解說： 建立自訂啟動載入器以顯示隱私權提示 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立自訂啟動載入器以顯示隱私權提示 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c71a23fc79b0d80c55418a9c7d78a48ebc76000e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893386"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942782"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>逐步解說：建立自訂啟動載入器以顯示隱私權提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -154,7 +149,7 @@ ms.locfileid: "49893386"
   
 -   軟體授權條款的文件中。  
   
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>步驟 1： 建立啟動載入器目錄  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>步驟 1：若要建立啟動載入器目錄  
   
 1.  建立名為**UpdateConsentDialog** %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages 中。  
   
@@ -166,7 +161,7 @@ ms.locfileid: "49893386"
     > [!NOTE]
     >  建立新的目錄，每個地區設定。 比方說，您可以新增 fr-fr，以 de 地區設定中的子目錄。 如有必要，這些目錄會包含法文與德文字串和語言套件。  
   
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>步驟 2： 建立 product.xml 資訊清單檔案  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>步驟 2：若要建立 product.xml 資訊清單檔  
   
 1.  建立文字檔案，稱為`product.xml`。  
   
@@ -198,7 +193,7 @@ ms.locfileid: "49893386"
   
 3.  將檔案儲存到 UpdateConsentDialog 啟動載入器目錄。  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>步驟 3： 建立 package.xml 資訊清單檔案和軟體授權條款  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>步驟 3：若要建立 package.xml 資訊清單檔案和軟體授權條款  
   
 1.  建立文字檔案，稱為`package.xml`。  
   
@@ -242,7 +237,7 @@ ms.locfileid: "49893386"
   
 1.  在 [**方案總管] 中**，按一下您想要部署的應用程式的名稱。  
   
-2.  在 **專案**功能表上，按一下*ProjectName* **屬性**。  
+2.  在 [專案] 功能表上，按一下 [ProjectName 屬性]。  
   
 3.  按一下 **發佈**頁面，然後再按一下**必要條件**。  
   
@@ -260,7 +255,7 @@ ms.locfileid: "49893386"
   
 1.  在 [**方案總管] 中**，按一下您想要部署的應用程式的名稱。  
   
-2.  在 **專案**功能表上，按一下*ProjectName* **屬性**。  
+2.  在 [專案] 功能表上，按一下 [ProjectName 屬性]。  
   
 3.  按一下 **發佈**頁面，然後再按一下**立即發佈**。  
   
@@ -272,13 +267,13 @@ ms.locfileid: "49893386"
   
 6.  閱讀軟體授權合約，然後按一下**接受**。  
   
-     同意對話方塊中更新應用程式隨即出現並顯示下列文字： 您即將安裝應用程式會檢查在網站上最新的更新。 藉由按一下我同意，您會授權應用程式會自動在網際網路上的更新檢查。  
+     同意對話方塊中更新應用程式隨即出現，並顯示下列文字：您即將安裝的應用程式會檢查在網站上最新的更新。 藉由按一下我同意，您會授權應用程式會自動在網際網路上的更新檢查。  
   
 7.  關閉應用程式，或按一下 [取消]。  
   
-     應用程式會顯示錯誤： 安裝的系統元件時發生錯誤*ApplicationName*。 安裝程式無法繼續，直到成功安裝所有系統元件。  
+     應用程式會顯示錯誤：安裝的系統元件時發生錯誤*ApplicationName*。 安裝程式無法繼續，直到成功安裝所有系統元件。  
   
-8.  按一下 詳細資料，以顯示下列錯誤訊息： 元件更新的同意對話方塊無法安裝並出現下列錯誤訊息: 「 自動更新協議不接受 」。 無法安裝下列元件:-更新同意對話方塊  
+8.  按一下 詳細資料，以顯示下列錯誤訊息：元件更新同意對話方塊無法安裝並出現下列錯誤訊息：「 自動更新協議不是接受 」。 無法安裝下列元件:-更新同意對話方塊  
   
 9. 按一下 [ **關閉**]。  
   
@@ -286,7 +281,7 @@ ms.locfileid: "49893386"
   
 1.  在 [**方案總管] 中**，按一下您想要部署的應用程式的名稱。  
   
-2.  在 **專案**功能表上，按一下*ProjectName* **屬性**。  
+2.  在 [專案] 功能表上，按一下 [ProjectName 屬性]。  
   
 3.  按一下 **發佈**頁面，然後再按一下**立即發佈**。  
   
@@ -298,7 +293,7 @@ ms.locfileid: "49893386"
   
 6.  閱讀軟體授權合約，然後按一下**接受**。  
   
-     同意對話方塊中更新應用程式隨即出現並顯示下列文字： 您即將安裝應用程式會檢查在網站上最新的更新。 藉由按一下我同意，您會授權應用程式會自動在網際網路上的更新檢查。  
+     同意對話方塊中更新應用程式隨即出現，並顯示下列文字：您即將安裝的應用程式會檢查在網站上最新的更新。 藉由按一下我同意，您會授權應用程式會自動在網際網路上的更新檢查。  
   
 7.  按一下 **我同意**，然後按一下**繼續**。  
   
@@ -309,9 +304,6 @@ ms.locfileid: "49893386"
 ## <a name="see-also"></a>另請參閱  
  [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)   
  [建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)   
- [如何： 建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)   
- [如何： 建立套件資訊清單](../deployment/how-to-create-a-package-manifest.md)   
+ [如何：建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)   
+ [如何：建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)   
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)
-
-
-

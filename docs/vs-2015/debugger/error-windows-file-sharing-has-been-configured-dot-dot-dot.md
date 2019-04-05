@@ -1,14 +1,9 @@
 ---
-title: 錯誤： Windows 檔案共用已設定...|Microsoft Docs
-ms.custom: ''
+title: 錯誤：Windows 檔案共用已設定...|Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.remote_credentials_prohibited
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: c45a1b74-61ec-4c64-9e2c-13051a4f50a5
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30a2fd01828d92fadeb901305f56ad8c65b863d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7664c94f626b639f4d0330b938777d545128847d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803912"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945593"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>錯誤：Windows 檔案共用已設定...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,13 +42,10 @@ ms.locfileid: "51803912"
   
      。 中斷與遠端電腦的連線，然後將檔案共用重新設定成使用您的帳戶名稱連接至另一台電腦：  
   
-    1.  在上**開始**功能表上，指向**附屬應用程式**，然後按一下**命令提示字元**。  
+    1.  在 [開始] 功能表中，指向 [附屬應用程式]，然後按一下 [命令提示字元]。  
   
     2.  在 Windows 命令提示字元中輸入：  
   
          `net use /delete computer_name`  
   
     3.  使用 Windows 說明中記載的任何方法，變更您的檔案共用設定。
-
-
-

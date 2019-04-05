@@ -1,14 +1,9 @@
 ---
-title: 如何： 指定哪些檔案由 ClickOnce 發行 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：指定哪些檔案由 ClickOnce 發行 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
 dev_langs:
@@ -22,15 +17,15 @@ ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f80dc31d2b572d54d0973d98f85f8538b1a805ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268316"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942133"
 ---
-# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>如何：指定哪些檔案是由 ClickOnce 發行
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>HOW TO：指定哪些檔案是由 ClickOnce 發行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 發佈時[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]隨應用程式會部署專案中的應用程式中，所有非程式碼檔案。 在某些情況下，您可能不想要或需要發行特定檔案，或您可能想要安裝特定條件為基礎的檔案。 Visual Studio 提供的功能來排除檔案、 將檔案標示為資料檔案或必要條件，以及建立的條件式安裝的檔案群組。  
@@ -45,7 +40,7 @@ ms.locfileid: "49268316"
   
 -   資料檔案，例如 SQL 資料庫 （.mdf 和.mdb） 檔案和 XML 檔案會依預設標示為資料檔案。  
   
--   當您新增參考，如下所示指定組件 （.dll 檔案） 的參考： 如果**複製到本機**是**False**，它標示為必要的組件的預設 (**必要條件 (自動）**)，必須先存在於 GAC 中安裝應用程式。 如果**複製到本機**是 **，則為 True**，預設為應用程式組件會標記組件 (**Include (Auto)**)，將會複製到安裝的應用程式資料夾。 COM 參考會出現在**應用程式檔案**對話方塊方塊中的 （為.ocx 檔案） 只有當其**隔離**屬性設定為**True**。 根據預設，它將會包含項目。  
+-   當您加入參考時，都會，如下所示指定組件 （.dll 檔案） 的參考：如果**複製到本機**是**False**，它標示為必要的組件的預設 (**必要條件 （自動）**)，必須先存在於 GAC 中安裝應用程式。 如果**複製到本機**是 **，則為 True**，預設為應用程式組件會標記組件 (**Include (Auto)**)，將會複製到安裝的應用程式資料夾。 COM 參考會出現在**應用程式檔案**對話方塊方塊中的 （為.ocx 檔案） 只有當其**隔離**屬性設定為**True**。 根據預設，它將會包含項目。  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>若要將檔案新增至應用程式的 [檔案] 對話方塊  
   
@@ -57,7 +52,7 @@ ms.locfileid: "49268316"
   
 1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [**發佈**] 索引標籤。  
+2.  按一下 [發佈] 索引標籤。  
   
 3.  按一下 **應用程式檔案** 按鈕以開啟**應用程式檔案** 對話方塊。  
   
@@ -69,7 +64,7 @@ ms.locfileid: "49268316"
   
 1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [**發佈**] 索引標籤。  
+2.  按一下 [發佈] 索引標籤。  
   
 3.  按一下 **應用程式檔案** 按鈕以開啟**應用程式檔案** 對話方塊。  
   
@@ -81,7 +76,7 @@ ms.locfileid: "49268316"
   
 1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [**發佈**] 索引標籤。  
+2.  按一下 [發佈] 索引標籤。  
   
 3.  按一下 **應用程式檔案** 按鈕以開啟**應用程式檔案** 對話方塊。  
   
@@ -93,7 +88,7 @@ ms.locfileid: "49268316"
   
 1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [**發佈**] 索引標籤。  
+2.  按一下 [發佈] 索引標籤。  
   
 3.  按一下 **應用程式檔案** 按鈕以開啟**應用程式檔案** 對話方塊。  
   
@@ -110,7 +105,7 @@ ms.locfileid: "49268316"
   
 1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [**發佈**] 索引標籤。  
+2.  按一下 [發佈] 索引標籤。  
   
 3.  按一下 **應用程式檔案** 按鈕以開啟**應用程式檔案** 對話方塊。  
   
@@ -123,7 +118,4 @@ ms.locfileid: "49268316"
   
 ## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
- [如何：使用發行精靈發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-
+ [如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -1,13 +1,8 @@
 ---
 title: 開始使用偵錯工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -18,13 +13,13 @@ ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 755c4a0b66c91aa37f96d3d6f06972878ee856b8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d30c45c0601b6e291604275fdc9cfc4f3b5def6d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771614"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940085"
 ---
 # <a name="getting-started-with-the-debugger"></a>開始使用偵錯工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51771614"
 Visual Studio 偵錯工具在任何語言都中都很容易使用。 在此我們會示範一個簡單的 C# 程式偵錯，但您可以將相同的步驟套用到 C++ 及 JavaScript 等其他語言的程式碼。  
   
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a> 基本的 C# 專案進行偵錯  
- 讓我們開始的簡單 C# 主控台應用程式 (**檔案 / 新增 / 專案**，然後選取**Visual C#** ，然後選取**主控台應用程式**)。 如果您從未使用過之前的 Visual studio，請參閱[逐步解說： 建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)。 **Main**方法只是將 1 加到整數變數 10 次，並會列印到主控台的結果：  
+ 讓我們開始的簡單 C# 主控台應用程式 (**檔案 / 新增 / 專案**，然後選取**Visual C#** ，然後選取**主控台應用程式**)。 如果您從未使用過之前的 Visual studio，請參閱[逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)。 **Main**方法只是將 1 加到整數變數 10 次，並會列印到主控台的結果：  
   
 ```csharp  
 static void Main(string[] args)  
@@ -98,8 +93,3 @@ private static void Method1()
  停止偵錯和重新啟動，並在中斷點中斷執行，當按一下**偵錯] / [逐步移轉**(或**不進入函式**的工具列上，或**F10**)。 於 `Console.WriteLine("end");` 再次中斷執行。  
   
  如果您想要深入了解偵錯工具巡覽程式碼，請參閱 <<c0> [ 使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。
-
-
-
-
-
