@@ -1,26 +1,21 @@
 ---
 title: 分析.NET Framework 記憶體問題 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnostics.managedmemoryanalysis
 ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: 5b5b79e351f828f443e133f40c322ffba3f1a8b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6f2a0680c117aa5982fb0e44144e74c5fef76faa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810477"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940960"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>分析 .NET Framework 記憶體問題
 使用 Visual Studio Managed 記憶體分析器，找出 .NET Framework 程式碼中記憶體流失和記憶體使用沒有效率的問題。 目標程式碼的最小 .NET Framework 版本是 .NET Framework 4.5。  
@@ -140,7 +135,7 @@ ms.locfileid: "51810477"
   
   根據預設，類型和執行個體依排序**內含大小 （位元組）**。 選擇清單中的資料行標頭可變更排序次序。  
   
-#### <a name="paths-to-root"></a>根的路徑  
+#### <a name="paths-to-root"></a>根目錄路徑  
   
 -   從選取的類型**物件型別**資料表**根的路徑**表顯示唯一的型別階層架構的根物件的類型，以及參考數目的所有物件，指向在階層中超出的型別。  
   
@@ -189,6 +184,6 @@ ms.locfileid: "51810477"
    ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
 ## <a name="see-also"></a>另請參閱  
- [VS ALM TFS 部落格： 使用 Visual Studio 2013 診斷.NET 記憶體問題，在生產環境中](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   
+ [VS ALM TFS 部落格：使用 Visual Studio 2013 診斷生產環境中的.NET 記憶體問題](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   
  [Channel 9 &#124; Visual Studio TV &#124; Managed 記憶體分析](http://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Managed-Memory-Analysis)   
  [Channel 9 &#124; Visual Studio [工具箱]&#124;管理 Visual Studio 2013 中的記憶體分析](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Managed-Memory-Analysis-in-Visual-Studio-2013)

@@ -1,11 +1,8 @@
 ---
 title: CancellationScope 活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.CancellationScope.UI
@@ -13,13 +10,13 @@ ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 125e9fd934ce40d2a6633daa62b817628306daa3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6207d1fcd2e920de979a13624e5cf1b442c2703c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229888"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940754"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope 活動設計工具
 **CancellationScope**活動設計工具會用來建立及設定<xref:System.Activities.Statements.CancellationScope>活動。  
@@ -35,7 +32,7 @@ ms.locfileid: "49229888"
 ### <a name="the-cancellationscope-properties"></a>CancellationScope 屬性  
  下表顯示 <xref:System.Activities.Statements.CancellationScope> 屬性，並且描述屬性在設計工具中的使用方式。 <xref:System.Activities.Activity.DisplayName%2A> 屬性可以在屬性方格中編輯，但其他屬性必須在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 介面上編輯。  
   
-|屬性名稱|必要項|使用方式|  
+|屬性名稱|必要|使用量|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CancellationScope> 活動可選用的易記名稱。 預設為 CancellationScope。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|  
 |<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|指定提供取消邏輯的活動。 若要新增<xref:System.Activities.Statements.CancellationScope.Body%2A>活動，從下拉式**工具箱**到**主體**方塊**CancellationScope**活動設計工具提示文字 「 卸除與活動 」。|  
@@ -45,5 +42,5 @@ ms.locfileid: "49229888"
  [交易](../workflow-designer/transaction-activity-designers.md)   
  [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)   
  [補償](../workflow-designer/compensate-activity-designer.md)   
- [確認](../workflow-designer/confirm-activity-designer.md)   
+ [Confirm](../workflow-designer/confirm-activity-designer.md)   
  [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

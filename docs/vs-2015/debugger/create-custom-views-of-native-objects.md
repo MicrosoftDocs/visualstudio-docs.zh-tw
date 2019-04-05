@@ -1,14 +1,9 @@
 ---
 title: 建立原生物件的自訂檢視 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ff03e5e07c07b4516009c7606f8a8ea183c57298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6a863c0b393da0934c0f3ceb3b36084b953a81f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732488"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938846"
 ---
 # <a name="create-custom-views-of-native-objects"></a>建立原生物件的自訂檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -353,7 +348,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 在偵錯工具變數�
 -   如果指定下方沒有子節點的 `Expand` 節點，則類型在偵錯工具視窗中不是可展開的。  
 
 ####  <a name="BKMK_Item_expansion"></a> Item 展開  
- `Item` 項目是用於 `Expand` 節點的最基本和最常用的項目。 `Item` 定義單一子項目。 例如，假設您有 `CRect` 類別，其包含做為其欄位的 `top`、`left`、`right` 和 `bottom`，以及下列視覺化項目：  
+ `Item` 項目是用於 `Expand` 節點的最基本和最常用的項目。 `Item` 定義單一子項目。 例如，假設您有 `CRect` 類別，其包含做為其欄位的 `top`、 `left`、 `right`和 `bottom` ，以及下列視覺化項目：  
 
 ```xml  
 <Type Name="CRect">  
@@ -473,7 +468,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 在偵錯工具變數�
 
  `Size` 項目參考清單的長度。 `HeadPointer` 指向第一個項目， `NextPointer` 參考下一個項目，而 `ValueNode` 參考項目的值。  
 
--   `NextPointer` 和 `ValueNode` 運算式是在連結清單節點項目的內容中，而不是在父清單類型中評估。 在上述範例中，`CAtlList` 具有代表連結清單節點的 `CNode` 類別 (位於 `atlcoll.h` 中)。 `m_pNext` 和 `m_element` 是該 `CNode` 類別 (而不是 `CAtlList` 類別) 的欄位。  
+-   `NextPointer` 和 `ValueNode` 運算式是在連結清單節點項目的內容中，而不是在父清單類型中評估。 在上述範例中， `CAtlList` 具有代表連結清單節點的 `CNode` 類別 (位於 `atlcoll.h`中)。 `m_pNext` 和 `m_element` 是該 `CNode` 類別 (而不是 `CAtlList` 類別) 的欄位。  
 
 -   `ValueNode` 可以保留空白，或使用 `this` 來參考連結清單節點本身。  
 
@@ -632,12 +627,9 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 在偵錯工具變數�
 </Type>  
 ```  
 
- 您可以在用來檢視記憶體內部點陣圖影像的 Image Watch 擴充功能中看到 UIVisualizer 的範例： [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
+ 您可以看到用來檢視記憶體中點陣圖的 Image Watch 擴充功能中的 UIVisualizer 的範例：[ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
 
 ### <a name="customvisualizer-element"></a>CustomVisualizer 項目  
  `CustomVisualizer` 是指定 VSIX 擴充功能的擴充點，您可以撰寫此擴充來控制在 Visual Studio 中執行之程式碼的視覺化。 如需撰寫 VSIX 擴充功能的詳細資訊，請參閱 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。 撰寫自訂視覺化檢視會比撰寫 XML natvis 定義花更多心力，但您不必因 natvis 支援或不支援某些功能而綁手綁腳。 自訂視覺化檢視可以存取完整的偵錯工具擴充性 API 集，這可用於查詢和修改偵錯項目處理序或與 Visual Studio 的其他組件通訊。  
 
  您可以在 CustomVisualizer 項目上使用 `Condition`、 `IncludeView`和 `ExcludeView` 屬性。
-
-
-

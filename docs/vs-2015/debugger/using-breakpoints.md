@@ -1,13 +1,8 @@
 ---
 title: 使用中斷點 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
@@ -45,13 +40,13 @@ ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d980fd2367545eb5c824bacc507d9ced9aa2d723
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ff5858482f64e8e73844c433febe8033b7ab1d70
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765950"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58939818"
 ---
 # <a name="using-breakpoints"></a>使用中斷點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ ms.locfileid: "51765950"
   
  此時 `testInt` 的值仍然是 1。  
   
- 您可以查看此應用程式的目前狀態，包括變數值和此呼叫堆疊。 如需呼叫堆疊的詳細資訊，請參閱 [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md)。  
+ 您可以查看此應用程式的目前狀態，包括變數值和此呼叫堆疊。 如需有關呼叫堆疊的詳細資訊，請參閱[How to:使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)。  
   
  您可以在任何可執行程式碼行上設定中斷點。 例如，在上面的 C# 程式碼中，您可以在變數宣告、 `for` 迴圈或在 `for` 迴圈內部的任何程式碼設定中斷點，但是您無法在命名空間或類別宣告或方法簽章上設定中斷點。  
   
@@ -76,7 +71,7 @@ ms.locfileid: "51765950"
  您也可以在呼叫堆疊中、在 [反組譯碼] 視窗中，以及在原生 C++ 程式碼中，以資料條件或記憶體位址設定中斷點。  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> 在 [呼叫堆疊] 視窗中設定中斷點  
- 您可以藉由在 [呼叫堆疊]  視窗中設定中斷點，在進行呼叫的函式返回的指令或程式行位置中斷執行。 如需呼叫堆疊的詳細資訊，請參閱 [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md)。 此偵錯工具必須已停止執行。  
+ 您可以藉由在 [呼叫堆疊]  視窗中設定中斷點，在進行呼叫的函式返回的指令或程式行位置中斷執行。 如需有關呼叫堆疊的詳細資訊，請參閱[How to:使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)。 此偵錯工具必須已停止執行。  
   
 1. 開始偵錯此應用程式，並等候執行停止 (例如，在中斷點處)。 開啟 [呼叫堆疊]  視窗 ([偵錯] / [Windows] / [呼叫堆疊]，或 **CTRL + ALT + C**)。  
   
@@ -155,7 +150,7 @@ ms.locfileid: "51765950"
   
    當您核取 [條件]  方塊後，此視窗隨即展開以顯示不同種類的條件。  
   
-   **條件運算式** ：當您選取 [條件運算式] 後，您就可以選擇兩個條件：[為 True]  和 [變更時] 。 如果想要在滿足運算式時中斷，請選擇 [為 true]  ，如果想要在運算式的值變更時中斷，請選擇 [變更時]  。  
+   **條件運算式：** 當您選取 條件運算式時，您就可以選擇兩個條件：**成立**並**時變更**。 如果想要在滿足運算式時中斷，請選擇 [為 true]  ，如果想要在運算式的值變更時中斷，請選擇 [變更時]  。  
   
    在下列範例中，我們設定此中斷點僅當 `testInt` 的值為 **4**的時候才叫用：  
   
@@ -259,6 +254,3 @@ ms.locfileid: "51765950"
   
 ## <a name="see-also"></a>另請參閱  
  [使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)
-
-
-

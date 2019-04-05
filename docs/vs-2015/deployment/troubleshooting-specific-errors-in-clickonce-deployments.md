@@ -1,14 +1,9 @@
 ---
 title: 疑難排解 ClickOnce 部署中的特定錯誤 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: troubleshooting
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.NoInstallUrl
@@ -24,13 +19,13 @@ ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d0b7e53eba21372641bad683c442e796648a4765
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213638"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941117"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>疑難排解 ClickOnce 部署的特定錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,9 +59,9 @@ ms.locfileid: "49213638"
   
  您也必須設定內容類型 （也稱為 MIME 類型） 適當.application、.manifest，和.deploy 檔案。 如需詳細資訊，請參閱您的 Web 伺服器文件。  
   
- 如需詳細資訊，請參閱 「 Windows Server 2003:: 之一內容類型 」 中[伺服器和 ClickOnce 部署中的用戶端組態問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)。  
+ 如需詳細資訊，請參閱 「 Windows Server 2003:鎖定的內容類型 」[伺服器和 ClickOnce 部署中的用戶端組態問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)。  
   
-#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>錯誤訊息: 「 應用程式格式不正確。 」記錄檔包含 「 XML 簽章無效 」  
+#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>錯誤訊息：「 應用程式格式不正確。 」記錄檔包含 「 XML 簽章無效 」  
  請確定您已更新資訊清單檔案，並重新簽署它。 重新發佈應用程式使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]或使用 Mage 簽署應用程式一次。  
   
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>您已更新您的應用程式的伺服器上，但用戶端不會下載更新  
@@ -78,13 +73,13 @@ ms.locfileid: "49213638"
   
 -   請嘗試再次啟動應用程式，在 [開始] 功能表上。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 可能已在背景中，偵測更新，但會提示您安裝位元上的下一步 啟動。  
   
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>在更新期間，您收到錯誤，有下列記錄項目: 「 在部署中的參考不符合應用程式清單中所定義的身分識別 」  
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>在更新期間，您會收到錯誤，有下列記錄項目：「 在部署中的參考不符合應用程式清單中所定義的身分識別 」  
  因為您已經手動編輯部署和應用程式資訊清單中，而導致的組件的識別描述其變得與其他同步處理的一個資訊清單中，可能會發生此錯誤。 組件的識別是由其名稱、 版本、 文化特性和公開金鑰 token 所組成。 檢查您的資訊清單中的識別描述，並更正任何差異。  
   
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>第一次從本機磁碟或光碟片啟動成功，但後續從 [開始] 功能表啟動不成功  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 您可以使用部署提供者 URL，接收應用程式的更新。 請確認 URL 所指向的位置正確無誤。  
   
-#### <a name="error-cannot-start-the-application"></a>錯誤: 「 無法啟動應用程式 」  
+#### <a name="error-cannot-start-the-application"></a>錯誤：[無法啟動應用程式]  
  此錯誤訊息通常表示沒有安裝此應用程式時遇到問題[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]儲存。 應用程式有錯誤或存放區已損毀。 記錄檔可能會告訴您哪裡發生錯誤。  
   
  您應該執行下列作業：  
@@ -109,11 +104,11 @@ ms.locfileid: "49213638"
   
  如果您要發行的 url，請確定目的地電腦已啟用 FrontPage Server Extensions。  
   
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>錯誤訊息： 無法建立網站 '\<網站 >'。 使用 FrontPage Server Extensions 通訊的元件不會安裝。  
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>錯誤訊息：無法建立網站 '\<網站 >'。 使用 FrontPage Server Extensions 通訊的元件不會安裝。  
  請確定您有 Microsoft Visual Studio 撰寫安裝 Web 元件，您從發行的機器上。 Express 使用者，預設不會安裝此元件。 如需詳細資訊，請參閱 [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310)。  
   
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>錯誤訊息： 找不到檔案 ' Microsoft.Windows.Common-控制項，版本 = 6.0.0.0，文化特性 = *，PublicKeyToken = 6595b64144ccf1df，ProcessorArchitecture =\*，類型 = win32'  
- 當您嘗試發行已啟用視覺化樣式的 WPF 應用程式時，就會出現此錯誤訊息。 若要解決此問題，請參閱[如何： 發行啟用視覺化樣式的 WPF 應用程式](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)。  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>錯誤訊息：Could not find file 'Microsoft.Windows.Common-Controls, Version=6.0.0.0, Culture=*, PublicKeyToken=6595b64144ccf1df, ProcessorArchitecture=\*, Type=win32'  
+ 當您嘗試發行已啟用視覺化樣式的 WPF 應用程式時，就會出現此錯誤訊息。 若要解決此問題，請參閱[How to:發行啟用視覺化樣式的 WPF 應用程式](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)。  
   
 ## <a name="using-mage"></a>使用影像  
   
@@ -147,6 +142,3 @@ ms.locfileid: "49213638"
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)
-
-
-

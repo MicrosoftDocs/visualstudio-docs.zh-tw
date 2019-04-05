@@ -1,23 +1,20 @@
 ---
 title: T4 範本指示詞 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcd11416bc067acaab8855b51969c7e1068e2c97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 608ba29c9f2068ce053fd6b92ba053eb45869ddd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248218"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942325"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +81,7 @@ hostspecific="true"
   
  由於這個屬性的類型依主應用程式的類型而定，因此只有在撰寫僅限搭配特定主應用程式使用的文字範本時才有用處。 它會適用於[設計階段範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，而非[執行階段範本](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
- 當 `hostspecific` 為 `true` 且您正在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 時，可以將 `this.Host` 的類型轉換為 IServiceProvider 來存取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如:   
+ 當 `hostspecific` 為 `true` 且您正在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 時，可以將 `this.Host` 的類型轉換為 IServiceProvider 來存取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如：  
   
 ```csharp  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
@@ -113,7 +110,7 @@ Content of myFile is:
  `language="VB"`  
   
  有效值：  
- `C#` (預設值)  
+ `C#` (預設)  
   
  `VB`  
   
@@ -223,7 +220,7 @@ This is the common footer.
  `linePragmas="false"`  
   
  有效值：  
- `true` (預設值)  
+ `true` (預設)  
   
  `false`  
   
@@ -236,11 +233,8 @@ This is the common footer.
  `visibility="internal"`  
   
  有效值：  
- `public` (預設值)  
+ `public` (預設)  
   
  `internal`  
   
  在執行階段文字範本中，這個屬性會設定所產生之類別的可視性屬性。 根據預設，類別是您的程式碼公開 API 的一部分，不過，您可以藉由設定 `visibility="internal"` 來確認只有您的程式碼可以使用文字產生的類別。
-
-
-

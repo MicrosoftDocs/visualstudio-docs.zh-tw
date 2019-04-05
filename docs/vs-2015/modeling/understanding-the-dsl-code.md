@@ -1,32 +1,29 @@
 ---
 title: 了解 DSL 程式碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
 ms.assetid: 8e5c10e4-6323-433e-b88a-5d3d92639030
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: afe6a273716ab5e531781634be959c80d30a9e26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2fc0db508fc06cc5b80db589ba7ebd88bc3221be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834015"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942331"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 網域指定的語言 (DSL) 方案會產生可用來讀取及更新 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中之 DSL 執行個體的應用程式開發介面。 這個應用程式開發介面是以從 DSL 定義產生的程式碼來定義。 本主題說明產生的應用程式開發介面。  
   
-## <a name="the-example-solution-component-diagrams"></a>範例方案：元件圖表  
+## <a name="the-example-solution-component-diagrams"></a>此範例解決方案：元件圖表  
  若要建立方案，其為大部分的範例，本主題中的來源，建立從 DSL**元件模型**解決方案範本。 這是您建立新的 DSL 方案時所顯示的其中一個標準範本。  
   
 > [!NOTE]
@@ -65,17 +62,17 @@ ms.locfileid: "49834015"
   
  *YourDsl* `Schema.xsd`  
   
- 包含您的 DSL 執行個體的檔案結構描述。 這個檔案複製到編譯 (**bin**) 目錄。 當您安裝 DSL 時，您可以複製這個檔案來**\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas**以驗證模型檔案。 如需詳細資訊，請參閱 <<c0> [ 部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
+ 包含您的 DSL 執行個體的檔案結構描述。 這個檔案複製到編譯 (**bin**) 目錄。 當您安裝 DSL 時，您可以複製這個檔案來**\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas**以驗證模型檔案。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
  如果透過設定 [DSL 總管] 中的選項來自訂序列化，此結構描述會據以變更。 但是，如果您撰寫自己的序列化程式碼，這個檔案可能不再表示實際的結構描述。 如需詳細資訊，請參閱 <<c0> [ 自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。  
   
  `ConnectionBuilders.cs`  
   
- 連接產生器是建立關聯性的類別。 它是連接工具的後置程式碼。 這個檔案針對每個連接工具各包含一組類別。 其名稱衍生自網域關聯性和連接工具的名稱：*關聯性*產生器中，並*連接工具*ConnectAction。  
+ 連接產生器是建立關聯性的類別。 它是連接工具的後置程式碼。 這個檔案針對每個連接工具各包含一組類別。 其名稱被衍生自網域關聯性和連接工具的名稱：*關聯性*產生器中，並*連接工具*ConnectAction。  
   
  (在元件方案範例中，其中一個連接產生器稱為 ConnectionBuilder，這是巧合，因為網域關聯性的名稱剛好是 Connection。)  
   
- 在 建立關聯性*關聯性*`Builder.Connect()`方法。 預設版本驗證來源和目標模型項目是可接受的，然後再具現化關聯性。 例如:   
+ 在 建立關聯性*關聯性*`Builder.Connect()`方法。 預設版本驗證來源和目標模型項目是可接受的，然後再具現化關聯性。 例如：  
   
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`  
   
@@ -138,13 +135,13 @@ ms.locfileid: "49834015"
 > [!NOTE]
 >  此類別與模型的根類別不同。  
   
- Copy Closure 和 Delete Closure 定義複製或刪除某個項目時，應包含的其他項目。 您可以設定來控制此行為**Propagates Copy**並**傳播刪除**每一個關聯性兩端角色的屬性。 如果您要動態決定這些值，您可以撰寫程式碼，覆寫 Closure 類別的方法。 如需詳細資訊，請參閱[如何： 程式複製和貼上行為-重新導向](../misc/how-to-program-copy-and-paste-behavior-redirect.md)。  
+ Copy Closure 和 Delete Closure 定義複製或刪除某個項目時，應包含的其他項目。 您可以設定來控制此行為**Propagates Copy**並**傳播刪除**每一個關聯性兩端角色的屬性。 如果您要動態決定這些值，您可以撰寫程式碼，覆寫 Closure 類別的方法。 如需詳細資訊，請參閱[如何：程式設計複製和貼上行為-重新導向](../misc/how-to-program-copy-and-paste-behavior-redirect.md)。  
   
  `DomainModelResx.resx`  
   
  這個檔案包含網域類別和屬性的描述、屬性名稱、工具箱標籤、標準錯誤訊息等字串，以及可能向使用者顯示的其他字串； 也包含工具圖示和影像圖形的影像。  
   
- 這個檔案會繫結至建置的組件中，並提供這些資源的預設值。 您可以建立包含當地語系化版本之資源的附屬組件，將您的 DSL 當地語系化。 在符合當地語系化資源的文化特性中安裝 DSL 時，會使用該版本。 如需詳細資訊，請參閱 <<c0> [ 部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
+ 這個檔案會繫結至建置的組件中，並提供這些資源的預設值。 您可以建立包含當地語系化版本之資源的附屬組件，將您的 DSL 當地語系化。 在符合當地語系化資源的文化特性中安裝 DSL 時，會使用該版本。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
  `DomainRelationships.cs`  
   
@@ -349,13 +346,10 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 > [!WARNING]
 >  如果您編輯 .tt 檔以納入圖示或影像等資源，請確定 VSIX 組建中包含此資源。 在 [方案總管] 中，選取的檔案，並確定**Include in VSIX**屬性是`True`。  
   
- 這個檔案控制如何將 DSL 封裝成 Visual Studio 整合擴充功能 (VSIX)。 如需詳細資訊，請參閱 <<c0> [ 部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
+ 這個檔案控制如何將 DSL 封裝成 Visual Studio 整合擴充功能 (VSIX)。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   
  [了解模型、 類別和關聯性](../modeling/understanding-models-classes-and-relationships.md)   
  [自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)   
  [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

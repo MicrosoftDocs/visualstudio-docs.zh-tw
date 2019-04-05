@@ -1,14 +1,9 @@
 ---
-title: 如何： 使用視覺化檢視 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用視覺化檢視 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
 - vs.debug.stringviewer
@@ -27,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: f50dba2f236127bd2e155ea13cb8646f18de0e92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7ec7527e51175b82d06a35ad7a6bc26856acf5dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721916"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941692"
 ---
-# <a name="how-to-use-a-visualizer"></a>如何：使用視覺化檢視
+# <a name="how-to-use-a-visualizer"></a>HOW TO：使用視覺化檢視
 您可以使用視覺化檢視，以對資料類型有意義的方式，顯示變數或物件的內容。 您可以使用從視覺化檢視**DataTips**，則**監看式** 視窗中，**自動變數** 視窗中，或**區域變數**視窗。  
   
  Compact Framework 上不支援視覺化檢視。  
@@ -65,6 +60,6 @@ ms.locfileid: "51721916"
   
 ## <a name="see-also"></a>另請參閱  
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
- [如何： 安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)   
- [如何： 撰寫視覺化檢視](../debugger/how-to-write-a-visualizer.md)   
+ [如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)   
+ [如何：撰寫視覺化檢視](../debugger/how-to-write-a-visualizer.md)   
  [在資料提示中檢視資料值](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

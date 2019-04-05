@@ -1,14 +1,9 @@
 ---
 title: 在 程式碼分析規則集編輯器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
@@ -16,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cd107f2ac0c377765fda2f62f175d7285eb01bb6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dd83a2b2d613d6d9ef73097bca4d2f9f1c6cd39
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269642"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930825"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>在程式碼分析規則集編輯器中工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "49269642"
   
 |工具列控制項|描述|  
 |---------------------|-----------------|  
-|**全部展開**|在 所有群組顯示的規則。|  
+|[全部展開]|在 所有群組顯示的規則。|  
 |**全部摺疊**|隱藏所有群組中的規則。|  
 |**Group By**|指定規則會分組的欄位。 按一下  **\<無 >** 顯示沒有群組規則。|  
 |**資料行選項**|指定要顯示規則的欄位。|  
@@ -81,6 +76,3 @@ ms.locfileid: "49269642"
 -   若要排序的規則集清單，請按一下資料行標頭，您想要排序的欄位。 如果規則集在一起，就是個別排序每個群組。  
   
 -   若要篩選的欄位值的規則集，請按一下資料行標頭，您想要篩選的欄位上的 [篩選] 按鈕。 選取您想要顯示的值的核取方塊，清除核取方塊，您想要隱藏的值。
-
-
-

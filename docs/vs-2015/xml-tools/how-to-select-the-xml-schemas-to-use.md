@@ -1,25 +1,20 @@
 ---
-title: 如何： 選取要使用的 XML 結構描述 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：選取要使用的 XML 結構描述 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93f573412524619292b1966e87abeda11cc0813a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 385eee679c3a65db360d9ec6c0ab7735ff40128a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863720"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941217"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>HOW TO：選取要使用的 XML 結構描述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ XML 編輯器提供位於 %InstallDir%\Xml\Schemas 目錄的結構描述快取�
   
 3.  瀏覽並選取要加入到結構描述快取中的結構描述。  
   
-4.  按一下 **開啟**。  
+4.  按一下 [開啟]。  
   
      結構描述會加入至結構描述快取，而且**使用**資料行值設定為**使用這個結構描述**。  
   
@@ -83,6 +78,3 @@ XML 編輯器提供位於 %InstallDir%\Xml\Schemas 目錄的結構描述快取�
  [結構描述快取](../xml-tools/schema-cache.md)   
  [XML 結構描述 對話方塊](../xml-tools/xml-schemas-dialog-box.md)   
  [XML 編輯器](../xml-tools/xml-editor.md)
-
-
-

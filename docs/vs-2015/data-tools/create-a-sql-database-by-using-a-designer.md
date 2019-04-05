@@ -1,12 +1,9 @@
 ---
 title: 使用設計工具建立 SQL database |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,14 +23,14 @@ ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 caps.latest.revision: 54
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860322"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940419"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>使用設計工具建立 SQL database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +86,7 @@ ms.locfileid: "49860322"
   
 2.  開啟捷徑功能表**資料表**，然後選取**加入新的資料表**。  
   
-     **資料表設計工具**隨即開啟並顯示具有一個預設資料列，代表您要建立的資料表中的單一資料行的方格。 藉由在格線中加入資料列，您就是在資料表中加入資料行。  
+     [資料表設計工具] 隨即開啟並顯示含有一個預設列的格線，這表示您要建立的資料表中的單一資料行。 藉由在格線中加入資料列，您就是在資料表中加入資料行。  
   
 3.  在格線中，為下列每一個項目加入一個資料列：  
   
@@ -195,4 +192,3 @@ ms.locfileid: "49860322"
   
 ## <a name="next-steps"></a>後續步驟  
  有一些範例資料的本機資料庫檔案之後，您可以完成任何示範資料庫工作的逐步解說。
-

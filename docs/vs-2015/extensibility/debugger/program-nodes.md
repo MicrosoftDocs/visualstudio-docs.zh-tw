@@ -1,14 +1,9 @@
 ---
 title: 程式節點 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - program nodes, debugging context
 - debugging [Debugging SDK], program nodes
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3fa7e0969c9d45ae07280a8648036bd07c000974
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3a06be4ef0a69ec173f171ba202f1f479448b1ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941925"
 ---
 # <a name="program-nodes"></a>程式節點
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,4 +42,3 @@ ms.locfileid: "51774480"
  [偵錯工具概念](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)
-

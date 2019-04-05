@@ -1,14 +1,9 @@
 ---
-title: Ca2107： 必須檢視 deny，和 permit only 的使用方式 |Microsoft Docs
-ms.custom: ''
+title: CA2107:檢視 deny 和 permit only 的使用方式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2107
 - ReviewDenyAndPermitOnlyUsage
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f7a82e6b1acdb8eee1d97dcf6f264ebf66343b58
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 425a7363e03dcc8a967853bbe574f29678df11a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851101"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941530"
 ---
-# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107：必須檢視 Deny 和 Permit Only 的使用方式
+# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107:必須檢閱 Deny 和 Permit Only 的使用方式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -41,7 +36,7 @@ ms.locfileid: "49851101"
  方法包含指定的 PermitOnly 或 Deny 安全性動作的安全性檢查。
 
 ## <a name="rule-description"></a>規則描述
- [使用 PermitOnly 方法](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)並<xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>安全性動作應只由具備進階的知識的人的[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]安全性。 而使用這些安全性動作的程式碼應該接受安全性檢閱。
+ [使用 PermitOnly 方法](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)並<xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>安全性動作應只由具備進階的知識的人的[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]安全性。 而使用這些安全性動作的程式碼應該接受安全性檢閱。
 
  拒絕會改變以回應安全性需求，就會發生堆疊查核行程的預設行為。 它可讓您指定必須不被拒絕的方法，不論實際的權限，呼叫堆疊中的呼叫端的持續期間授與的權限。 如果堆疊查核行程偵測到的方法，受到拒絕，而且如果要求的權限包含在拒絕的權限時，堆疊查核行程失敗。 PermitOnly 也會改變堆疊查核行程的預設行為。 它可讓程式碼，以指定可以授與，不論呼叫端的權限的權限。 如果堆疊查核行程偵測受到 PermitOnly 方法和要求的權限不會納入 PermitOnly 所指定的權限，就會失敗的堆疊查核行程。
 
@@ -77,15 +72,12 @@ ms.locfileid: "49851101"
 
  此範例會產生下列輸出。
 
- **隨選： 呼叫端的拒絕無效 on Demand 與判斷提示的權限。** 
- **LinkDemand： 拒絕呼叫端的無關 LinkDemand 的比較與判斷提示的權限。**
- **LinkDemand： 拒絕呼叫者的影響不使用 LinkDemand 保護的程式碼。**
- **LinkDemand： 此拒絕影響不使用 LinkDemand 保護的程式碼。**
+ **需求：呼叫端的拒絕具有不使用判斷提示的權限需求會影響。** 
+ **LinkDemand 的比較：拒絕呼叫端的無關 LinkDemand 的比較與判斷提示的權限。** 
+ **LinkDemand 的比較：拒絕呼叫者的影響不使用 LinkDemand 保護的程式碼。** 
+ **LinkDemand 的比較：此拒絕影響不使用 LinkDemand 保護的程式碼。**
 ## <a name="see-also"></a>另請參閱
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>
- [安全程式碼撰寫指導方針](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[覆寫安全性檢查](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)[使用 PermitOnly 方法](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
-
-
-
+ [安全程式碼撰寫指導方針](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[覆寫安全性檢查](http://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28)[使用 PermitOnly 方法](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)

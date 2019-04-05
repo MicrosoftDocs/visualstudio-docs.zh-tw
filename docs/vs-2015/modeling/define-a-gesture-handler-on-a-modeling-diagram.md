@@ -1,12 +1,9 @@
 ---
 title: 在模型圖上定義軌跡處理常式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, double-click
 - UML - extending, drag and drop
@@ -14,13 +11,13 @@ ms.assetid: e5e1d70a-3539-4321-a3b1-89e86e4d6430
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3e448b14a2a24994b9f03a569b0bb568d538bc69
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ecd6f6210fdc219f7d1ca493f15beed74e9b5e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722183"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942554"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>在模型圖表上定義軌跡處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +239,7 @@ ms.locfileid: "51722183"
   
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。  
   
-    **疑難排解**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未啟動：  
+    **疑難排解**:如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]未啟動：  
   
    -   如果您有多個專案，請確定 VSIX 專案已設定為方案的啟始專案。  
   
@@ -256,7 +253,7 @@ ms.locfileid: "51722183"
   
 4. 將項目從 UML 總管拖曳至圖表。 應該會呼叫您的拖曳處理常式。  
   
-   **疑難排解**：如果軌跡處理常式無法運作，請確定：  
+   **疑難排解**:如果軌跡處理常式無法運作，請確定：  
   
 -   軌跡處理常式專案在 VSIX 專案 **source.extensions.manifest** 的 [資產]  索引標籤中列為 MEF 元件。  
   
@@ -320,7 +317,7 @@ ms.locfileid: "51722183"
     System.Windows.Forms.IDataObject data = eventArgs.Data;    
     ```  
   
-     您可以將許多不同類型的項目拖曳到圖表中 - 從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的不同部分，或是從 Windows 桌面。 不同類型的項目在 `IDataObject`中會以不同方式編碼。 若要從其中擷取項目，請參閱適當物件類型的文件。  
+     您可以將許多不同類型的項目拖曳到圖表中 - 從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的不同部分，或是從 Windows 桌面。 不同類型的項目在 `IDataObject`中會以不同方式編碼。 若要從其中擷取項目，請參閱適當物件類型的文件。  
   
      如果您的來源物件是從 UML 模型總管 或從另一個 UML 圖表拖曳的 UML 項目，請參閱[從 IDataObject 取得 UML 模型項目](../modeling/get-uml-model-elements-from-idataobject.md)。  
   
@@ -382,7 +379,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
    在很少見的情況下，故障的擴充功能無法載入並且會在錯誤視窗中建立報告，但不會顯示在擴充管理員中。 在此情況下，您可以藉由從下列位置刪除檔案來移除擴充功能：  
   
-   *%Localappdata%* **\Local\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ##  <a name="DragExample"></a> 範例  
  下列範例示範如何根據從元件圖表拖曳之元件的組件和連接埠，在循序圖中建立生命線。  
@@ -528,6 +525,3 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
  [在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)   
  [使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)
-
-
-

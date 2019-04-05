@@ -1,14 +1,9 @@
 ---
-title: CA1062： 驗證公用方法的引數 |Microsoft Docs
-ms.custom: ''
+title: CA1062:驗證公用方法的引數 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1062
 - ValidateArgumentsOfPublicMethods
@@ -21,14 +16,14 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7d5b5039c08e27dd97c0119948c87d7295756d7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13ea687ea9ca68693af7e2aa5c22881a36207d2e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811973"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941158"
 ---
-# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062：驗證公用方法的引數
+# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062:必須驗證公用方法的引數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -124,6 +119,3 @@ public class Person
     }
 }
 ```
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 偵錯 LINQ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,18 +19,18 @@ ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 081c97bffc062bf2bbc9d24feed13e5e512b8c74
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d15d56edec544ac68f21026758ced6292ee7de8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755602"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941003"
 ---
 # <a name="debugging-linq"></a>偵錯 LINQ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 支援 Language-Integrated Query (LINQ) 程式碼偵錯，但有一些限制。 大部分偵錯功能都可以與 LINQ 陳述式一起運作，包括逐步執行、設定中斷點，以及在偵錯工具視窗中檢視結果。 本主題描述 LINQ 偵錯的主要限制。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會支援對 Language-Integrated Query (LINQ) 程式碼進行偵錯，但有一些限制。 大部分偵錯功能都可以與 LINQ 陳述式一起運作，包括逐步執行、設定中斷點，以及在偵錯工具視窗中檢視結果。 本主題將描述 LINQ 偵錯的主要限制。  
   
 ##  <a name="BKMK_ViewingLINQResults"></a> 檢視 LINQ 結果  
  藉由使用資料提示方塊、[監看式] 視窗和 [快速監看式] 對話方塊，您可以檢視 LINQ 陳述式的結果。 使用來源視窗時，您可以將指標暫停在來源視窗中的查詢上，則資料提示方塊會隨即出現。 您可以複製 LINQ 變數並張貼到 [監看式] 視窗或 [快速監看式] 對話方塊。  
@@ -112,7 +107,7 @@ End Function
   
  修訂的查詢每回會透過 `IsEven` 呼叫函式 `items`。 您可以使用偵錯工具視窗查看每個項目是否符合指定狀況，而且可以逐步執行 `IsEven` 中的程式碼。 這個範例中的述詞相當簡單。 但是，當您必須偵錯更為複雜的述詞時，這個技巧就很好用。  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> 不支援 LINQ 的編輯後繼續  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> LINQ 不支援編輯後繼續  
  [編輯後繼續] 並不支援 LINQ 查詢的變更。 如果在偵錯工作階段期間加入、移除或變更 LINQ 陳述式，會出現對話方塊告訴您 [編輯後繼續] 並不支援該變更。 此時，您可以復原變更，或者是停止偵錯工作階段並使用編輯過的程式碼重新啟動新的工作階段。  
   
  除此之外，[編輯後繼續] 也不支援 LINQ 陳述式中所使用變數型別或值的變更。 同樣地，您可以復原變更，或者是停止並重新啟動偵錯工作階段。  
@@ -122,11 +117,8 @@ End Function
  在 Visual Basic 中，您可以對非 LINQ 程式碼使用 [編輯後繼續]，即使程式碼是在包含 LINQ 查詢的方法中。 您可以在 LINQ 陳述式前加入或移除程式碼，即使這些變更會影響到 LINQ 查詢的行號。 對非 LINQ 程式碼的 Visual Basic 偵錯體驗，與沒有採用 LINQ 前是相同的。 您無法變更、加入或移除 LINQ 查詢，除非您打算停止偵錯以套用變更。  
   
 ## <a name="see-also"></a>另請參閱  
- [偵錯 SQL](http://msdn.microsoft.com/en-us/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
+ [偵錯 SQL](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
  [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
  [使用偵錯工具管理例外狀況](../debugger/managing-exceptions-with-the-debugger.md)   
  [LINQ 查詢簡介 (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
  [Visual Basic 中的 LINQ 簡介](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)
-
-
-

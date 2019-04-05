@@ -1,14 +1,9 @@
 ---
 title: 視覺化檢視 API 參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: b9ff4ed0-9e80-49df-9016-a81189319afd
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f55e347b08f3813c21b651a1733c6c6a32597e9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: da10493b62be0fc5ef9094780680c2523567af34
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799102"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941663"
 ---
 # <a name="visualizer-api-reference"></a>視覺化檢視 API 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,9 +43,6 @@ ms.locfileid: "51799102"
 -   <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說： 在 C# 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [如何： 撰寫視覺化檢視](../debugger/how-to-write-a-visualizer.md)   
+ [逐步解說：使用 C# 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [如何：撰寫視覺化檢視](../debugger/how-to-write-a-visualizer.md)   
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)
-
-
-

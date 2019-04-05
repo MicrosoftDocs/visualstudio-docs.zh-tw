@@ -1,12 +1,9 @@
 ---
 title: 使用 ADO.NET 建立簡單資料應用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +13,15 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824278"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58941521"
 ---
-# <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單資料應用程式
+# <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單的資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -71,7 +68,7 @@ ms.locfileid: "49824278"
   
     Visual Studio 會建立專案和數個檔案，包括名為 Form1 的空白 Windows Form。  
   
-2. 將兩個 Windows form 加入專案，使其具有三種形式，並再提供下列名稱：  
+2. 將兩個 Windows 表單新增至專案，使其具有三種形式，然後提供下列名稱：  
   
    -   巡覽  
   
@@ -84,7 +81,7 @@ ms.locfileid: "49824278"
    > [!NOTE]
    >  加入群組方塊和標籤控制項會更清楚，但是不在程式碼中使用。  
   
-   **瀏覽表單**  
+   **巡覽表單**  
   
    ![瀏覽對話方塊](../data-tools/media/simpleappnav.png "SimpleAppNav")  
   
@@ -227,7 +224,7 @@ ms.locfileid: "49824278"
  本章節包含每個表單的工作，而且會顯示建立表單之程式碼的簡短概觀。 編號的註解會識別程式碼區段。  
   
 ### <a name="navigation-form"></a>導覽表單  
- 當您執行應用程式時，瀏覽表單隨即開啟。 **新增帳戶**按鈕會開啟 NewCustomer 表單。 **填寫或取消訂單**按鈕會開啟 FillOrCancel 表單。 **結束** 按鈕會關閉應用程式。  
+ 當您執行應用程式時，瀏覽表單隨即開啟。 [新增帳戶] 按鈕會開啟 NewCustomer 表單。 [填寫或取消訂單] 按鈕會開啟 FillOrCancel 表單。 [結束] 按鈕會關閉應用程式。  
   
 #### <a name="make-the-navigation-form-the-startup-form"></a>讓瀏覽表單成為啟動表單  
  如果您使用 C# 中，在**方案總管**，開啟 Program.cs，並接著變更`Application.Run`這一行： `Application.Run(new Navigation());`  
@@ -734,7 +731,7 @@ End Namespace
 |NC-16|定義方法以驗證客戶名稱會顯示出來。<br /><br /> -如果文字方塊是空的顯示一則訊息，並傳回`false`，因為若要建立的帳戶必須有名稱。<br />-如果文字方塊不是空的則傳回`true`。|  
 |NC-17|為 `btnPlaceOrder` 按鈕將程式碼加入至 Click 事件處理常式。|  
 |NC-18|將呼叫包裝至 `btnPlaceOrder_Click` 事件程式碼周圍的 `isPlaceOrderReady`，讓 `uspPlaceNewOrder` 在必要的輸入未顯示時不執行。|  
-|NC-19 到 NC-25|這些程式碼區段類似於您為 `btnCreateAccount_Click` 事件處理常式加入的程式碼。<br /><br /> -NC-19。 建立 `SqlCommand` 物件 `cmdNewOrder`，並且指定 `Sales.uspPlaceOrder` 為預存程序。<br />-Nc-20 到 nc-23 是預存程序的輸入的參數。<br />-NC 24。 `@RC` 將包含傳回值，這是從資料庫產生的順序 ID。 此參數的說明指定為 `ReturnValue`。<br />NC-25。 在您於 NC-2 宣告的 `orderID` 變數中儲存順序 ID 值，並且在訊息方塊中顯示值。|  
+|NC-19 到 NC-25|這些程式碼區段類似於您為 `btnCreateAccount_Click` 事件處理常式加入的程式碼。<br /><br /> -   NC-19. 建立 `SqlCommand` 物件 `cmdNewOrder`，並且指定 `Sales.uspPlaceOrder` 為預存程序。<br />-Nc-20 到 nc-23 是預存程序的輸入的參數。<br />-   NC-24. `@RC` 將包含傳回值，這是從資料庫產生的順序 ID。 此參數的說明指定為 `ReturnValue`。<br />-   NC-25. 在您於 NC-2 宣告的 `orderID` 變數中儲存順序 ID 值，並且在訊息方塊中顯示值。|  
 |NC-26|定義方法以驗證客戶 ID 存在，而且已在 `numOrderAmount` 中指定數量。|  
 |NC-27|在 `btnAddAnotherAccount` Click 事件處理常式中呼叫 `ClearForm` 方法。|  
 |NC-28|建立 `ClearForm` 方法，當您要加入其他客戶時，清除表單中的值。|  
@@ -1145,4 +1142,3 @@ End Namespace
   
 ##  <a name="BKMK_testyourapplication"></a> 測試您的應用程式  
  選擇 F5 鍵以建置和測試您的應用程式之後您程式碼的每個 Click 事件處理常式，, 然後之後完成撰寫程式碼。
-

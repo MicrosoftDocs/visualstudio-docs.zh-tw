@@ -1,12 +1,9 @@
 ---
 title: 自訂項目建立和移動 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: cbd28f15-dfd7-46bd-ab79-5430e3ed83c8
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 470ff89dfd864443206c1d9131fb126d58280859
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a62aacf8ad702aca19531876c57aaf45b10ce639
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853827"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940841"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自訂項目的建立和移動
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +76,7 @@ ms.locfileid: "49853827"
 >   
 >  如果您想要確定新的項目或新的關聯性一律處理您的自訂程式碼，請考慮定義`AddRule`上的內嵌關聯性和`DeleteRule`項目的網域類別上。 如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。  
   
-## <a name="example-defining-an-emd-without-custom-code"></a>範例： 定義 EMD 不需要自訂程式碼  
+## <a name="example-defining-an-emd-without-custom-code"></a>範例：定義 EMD 不需要自訂程式碼  
  下列範例可讓使用者在同一時間建立項目和連接器，從工具箱拖曳至 「 現有 」 圖形拖曳。 此範例會將 EMD 加入至 DSL 定義中。 之前這項修改，使用者可以將工具拖曳至圖表，但不是到現有的圖形。  
   
  使用者也可以貼到其他項目上的項目。  
@@ -148,7 +145,7 @@ ms.locfileid: "49853827"
   
      如果您撰寫自訂程式碼，會建立新的項目時，您可以明確地使用叫用 EMD`ElementOperations.Merge`方法。 這可確保，您的程式碼連結新項目到模型中的其他作業相同的方式。 如需詳細資訊，請參閱 <<c0> [ 自訂複製行為](../modeling/customizing-copy-behavior.md)。  
   
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>範例： 將自訂接受的程式碼加入至 EMD  
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>範例：自訂接受的程式碼加入至 EMD  
  EMD 中加入自訂程式碼，您可以定義更複雜的合併行為。 這個簡單的範例可防止使用者將在超過固定數目的項目加入至圖表。 下列範例會修改預設 EMD 隨附一個內嵌關聯性。  
   
 #### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>撰寫自訂接受以限制使用者可以新增的程式碼  
@@ -163,7 +160,7 @@ ms.locfileid: "49853827"
   
 4.  重建方案。 這會使比平時更長，因為產生的程式碼將會從模型中更新。  
   
-     建置錯誤會報告，類似於: 「 Company.ElementMergeSample.ExampleElement 不會包含定義的 CanMergeExampleElement...」  
+     建置錯誤會報告，類似於：「 Company.ElementMergeSample.ExampleElement 不會包含定義的 CanMergeExampleElement...」  
   
      您必須實作方法`CanMergeExampleElement`。  
   
@@ -211,7 +208,7 @@ ms.locfileid: "49853827"
   
     3.  請確認您無法使用任何一種方式，將四個以上的項目新增至模型。 這是因為它們都使用項目合併指示詞。  
   
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>範例： 將自訂合併程式碼加入至 EMD  
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>範例：合併自訂的程式碼加入至 EMD  
  在自訂的合併程式碼，您可以定義在使用者拖曳的工具，或貼上到項目時，會發生什麼事。 有兩種方式可定義自訂的合併：  
   
 1. 設定**會使用自訂合併**並提供必要的程式碼。 您的程式碼取代產生的合併程式碼。 如果您想要完全重新定義合併的用途，請使用此選項。  
@@ -234,7 +231,7 @@ ms.locfileid: "49853827"
   
 5.  檢查的內容**Dsl\Generated Files\DomainClasses.cs**。 搜尋方法，名為`MergeRelate`並檢查其內容。 這將協助您撰寫您自己的版本。  
   
-6.  在新的程式碼檔案中，請撰寫部分類別，為接收的類別並覆寫`MergeRelate`方法。 請務必呼叫基底方法。 例如:   
+6.  在新的程式碼檔案中，請撰寫部分類別，為接收的類別並覆寫`MergeRelate`方法。 請務必呼叫基底方法。 例如：  
   
     ```csharp  
     partial class ExampleModel  
@@ -324,6 +321,3 @@ ms.locfileid: "49853827"
  [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [自訂工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)   
  [電路圖表範例 DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

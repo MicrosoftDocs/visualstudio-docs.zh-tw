@@ -1,12 +1,9 @@
 ---
 title: 自訂檔案儲存體和 XML 序列化 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 76c53ef1-e3b9-45da-b425-1bddb3c01395
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7aae4ee1006a7a329bc8ad5ca9f93b756e309458
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867440"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939590"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +102,7 @@ ms.locfileid: "49867440"
 ## <a name="understanding-monikers"></a>了解 Moniker  
  Moniker 用來代表的模型和圖表檔案的不同部分之間的交互參考。 它們也可以用在`.diagram`檔案來參考的模型檔案中的節點。 有兩種形式的 moniker:  
   
-- *識別碼 moniker*加上引號的目標項目的 GUID。 例如:   
+- *識別碼 moniker*加上引號的目標項目的 GUID。 例如：  
   
   ```  
   <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
@@ -277,10 +274,10 @@ ms.locfileid: "49867440"
 |屬性|描述|  
 |具有自訂項目結構描述|如果為 True，表示網域類別具有自訂項目結構描述|  
 |為 Custom|將此設為 **，則為 True**如果您想要撰寫自己的這個網域類別的序列化和還原序列化程式碼。<br /><br /> 建置方案，並調查的錯誤，若要探索的詳細的指示。|  
-|網域類別|此類別的資料節點所套用的網域類別。 唯讀。|  
+|領域類別|此類別的資料節點所套用的網域類別。 唯讀。|  
 |元素名稱|此類別的元素的 Xml 節點名稱。 預設值是網域類別名稱的小寫版本。|  
 |Moniker 屬性名稱|Moniker 元素中用來包含參考之屬性的名稱。 如果空白，則會使用的索引鍵屬性的識別碼名稱。<br /><br /> 在此範例中，它可以是"name":  `<personMoniker name="/Mike Nash"/>`|  
-|Moniker 元素名稱|用於參考項目，這個類別的 moniker 之 xml 項目的名稱。<br /><br /> 預設值是類別名稱加上"Moniker"的小寫版本。 例如，`personMoniker`。|  
+|Moniker 元素名稱|用於參考項目，這個類別的 moniker 之 xml 項目的名稱。<br /><br /> 預設值是類別名稱加上"Moniker"的小寫版本。 例如， `personMoniker` 。|  
 |Moniker 的型別名稱|產生的項目，這個類別的 moniker 的 xsd 型別名稱。 XSD 處於**Dsl\Generated 程式碼\\\*Schema.xsd**|  
 |序列化識別碼|如果為 True，在檔案中包含的項目 GUID。 這必須是 true，如果沒有任何屬性來標示**是 Moniker 索引鍵**和 DSL 定義參考關聯性，這個類別。|  
 |類型名稱|在 指定的領域類別從 xsd 產生的 xml 型別的名稱。|  
@@ -305,7 +302,7 @@ ms.locfileid: "49867440"
 |屬性|描述|  
 |--------------|-----------------|  
 |有自訂 Moniker|設定為 true，如果您想要提供自己的程式碼產生及解決周遊此關聯性的 moniker。<br /><br /> 如需詳細指示，請建置方案，，，然後按兩下 錯誤訊息。|  
-|網域關聯性|指定要套用這些選項的關係。 唯讀。|  
+|領域關聯|指定要套用這些選項的關係。 唯讀。|  
 |省略項目|如果為 true，XML 節點對應至來源角色會省略結構描述。<br /><br /> 如果來源和目標類別之間有一個以上的關聯性，此角色的節點會區分屬於兩個關聯性的連結。 因此，建議您不要設定此選項在此情況下。|  
 |角色項目名稱|指定 XML 項目衍生自來源角色名稱。 預設值是角色屬性名稱。|  
 |使用完整的表單|如果為 true，每個目標項目或 moniker 住代表關聯性的 XML 節點。 這應該設定為 true 的關聯性具有自己的網域屬性。|  
@@ -313,6 +310,3 @@ ms.locfileid: "49867440"
 ## <a name="see-also"></a>另請參閱  
  [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-
