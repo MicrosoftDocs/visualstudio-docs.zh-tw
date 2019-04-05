@@ -1,14 +1,9 @@
 ---
 title: 使用字型和色彩 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, controlling in IDE
 - IDE, controlling text color and fonts
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b49c5172a75e0abec8084892346a2fb0da877b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729605"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939915"
 ---
 # <a name="using-fonts-and-colors"></a>使用字型和色彩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "51729605"
   
  此方法需要實作 VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>介面和相關的介面。  
   
- [如何：存取內建字型和色彩配置](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ [如何：存取的內建的字型和色彩配置](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  討論如何定義並使用內建的字型和色彩，來註冊類別並起始使用系統提供的字型和色彩。  
   
 ## <a name="reference"></a>參考資料  
@@ -80,4 +75,3 @@ ms.locfileid: "51729605"
   
  [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)  
  說明如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 服務建立 UI 項目，比對其餘的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。
-

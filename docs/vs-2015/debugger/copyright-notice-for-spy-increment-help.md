@@ -1,27 +1,22 @@
 ---
 title: Spy + + 說明的著作權注意事項 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
-- coyright, Spy++
+- copyright, Spy++
 ms.assetid: 84efcb95-5e57-4e1b-9670-13c9163f6fc6
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f4ea801acf4c0156d928d89fd0fca0b1c8e4b2a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e561f0f0b6c07a6032a07bb50a1a860c7f1b96b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772088"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939245"
 ---
 # <a name="copyright-notice-for-spy-help"></a>Spy++ 說明的著作權注意事項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,6 +26,3 @@ ms.locfileid: "51772088"
  © 1993-2010 Microsoft Corporation. 著作權所有，並保留一切權利。  
   
  Microsoft 是註冊商標，Windows 和 Windows NT 是 Microsoft Corporation 的商標。
-
-
-

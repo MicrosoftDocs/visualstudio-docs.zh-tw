@@ -1,24 +1,19 @@
 ---
 title: Creating an Extension with VSPackage |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 945ae5b3cf6cd8769795c31a10a4f51e1f7eccb6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0077c891a300d81f05aec32930cb1ffda82c8d5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941812"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>使用 VSPackage 建立延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ ms.locfileid: "51773297"
     public sealed class FirstPackage : Package  
     ```  
   
-2.  讓我們加入訊息，讓我們知道已載入 VSPackage。 我們使用 VSPackage 的 initialize （） 方法若要這樣做，因為已設置 VSPackage 時，才，您可以取得 Visual Studio 服務。 (如需有關如何取得服務的詳細資訊，請參閱 <<c0> [ 如何： 取得服務](../extensibility/how-to-get-a-service.md)。)取得的程式碼中取代 FirstPackage initialize （） 方法<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>服務，取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>介面，並呼叫其<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A>方法。  
+2.  讓我們加入訊息，讓我們知道已載入 VSPackage。 我們使用 VSPackage 的 initialize （） 方法若要這樣做，因為已設置 VSPackage 時，才，您可以取得 Visual Studio 服務。 (如需有關如何取得服務的詳細資訊，請參閱[How to:取得服務](../extensibility/how-to-get-a-service.md)。)取得的程式碼中取代 FirstPackage initialize （） 方法<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>服務，取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>介面，並呼叫其<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A>方法。  
   
     ```csharp  
     protected override void Initialize()  
@@ -81,4 +76,3 @@ ms.locfileid: "51773297"
 3.  建置此專案並開始偵錯。 實驗執行個體隨即出現。  
   
 4.  在實驗執行個體中開啟方案。 您應該會看到出現訊息方塊，指出**第一個套件內 initialize （)**。
-

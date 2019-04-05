@@ -1,25 +1,20 @@
 ---
-title: 逐步解說： XSLT Profiler |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：XSLT Profiler |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f401d253c81385dc197e912a7f9cc7d6156e393
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229446"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939058"
 ---
 # <a name="walkthrough-xslt-profiler"></a>逐步解說：XSLT 分析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,11 +77,11 @@ XSLT 分析工具可建立詳細的 XSLT 效能報告，協助您測量、評估
   
 2.  **呼叫端/被呼叫端**檢視有下列三個不同的部分：  
   
-    -   **函式呼叫**： 呼叫特定函式的所有函式會列在檢視的上半部。  
+    -   **函式呼叫**:呼叫特定函式的所有函式會列在檢視的上半部。  
   
-    -   **目前的函式**： 呼叫特定函式會列在檢視的中間部分。  
+    -   **目前的函式**:呼叫特定函式會列在檢視的中間部分。  
   
-    -   **所呼叫的函式**： 特定函式所呼叫的所有函式會列在檢視的下半部。  
+    -   **所呼叫的函式**:所有的特定函式所呼叫的函式會列在檢視的下半部。  
   
 3.  如果名為 `SyncToNavigator` 的函式出現在檢視的中間部分，則所有呼叫 `SyncToNavigator` 函式的函式都會出現在檢視的上半部，而所有被 `SyncToNavigator` 呼叫的函式會出現在檢視的下半部。  
   
@@ -116,6 +111,3 @@ XSLT 分析工具可建立詳細的 XSLT 效能報告，協助您測量、評估
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說：使用 XSLT 階層](../xml-tools/walkthrough-using-xslt-hierarchy.md)
-
-
-

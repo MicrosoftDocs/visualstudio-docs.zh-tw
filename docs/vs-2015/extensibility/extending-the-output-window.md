@@ -1,31 +1,26 @@
 ---
 title: 擴充輸出視窗 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e4afd91c42eeb60d005b1eb186c30d3896e3101f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0e4fe3b07a2a076218fd004328ad87e4d5e3bab7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731390"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941736"
 ---
 # <a name="extending-the-output-window"></a>延伸輸出視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**輸出**視窗是一組讀取/寫入文字窗格。 Visual Studio 有這些內建的窗格：**建置**，哪一個專案中進行通訊的組建中，相關訊息並**一般**，在其中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會傳達有關 IDE 的訊息。 專案取得參照**建置**窗格自動透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>介面方法和 Visual Studio 提供直接存取**一般**窗格中的透過<xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane>服務。 除了內建的窗格中，您可以建立和管理您自己自訂的窗格。  
+**輸出**視窗是一組讀取/寫入文字窗格。 Visual Studio 有這些內建的窗格：**建置**，在哪些專案通訊相關的組建中，訊息和**一般**，在其中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會傳達有關 IDE 的訊息。 專案取得參照**建置**窗格自動透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>介面方法和 Visual Studio 提供直接存取**一般**窗格中的透過<xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane>服務。 除了內建的窗格中，您可以建立和管理您自己自訂的窗格。  
   
  您可以控制**輸出**視窗中直接透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>介面。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>介面，提供<xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow>服務，請定義用來建立、 擷取和終結方法**輸出**視窗窗格。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>介面會定義用於顯示窗格、 隱藏窗格，以及管理其文字的方法。 控制另一種**輸出** 視窗是透過<xref:EnvDTE.OutputWindow>和<xref:EnvDTE.OutputWindowPane>Visual Studio Automation 物件模型中的物件。 這些物件會封裝幾乎所有的功能<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>介面。 颾魤 ㄛ<xref:EnvDTE.OutputWindow>並<xref:EnvDTE.OutputWindowPane>物件加入一些較高層級的功能，讓您更輕鬆地列舉**輸出**視窗窗格以及從窗格擷取文字。  
   
@@ -102,7 +97,7 @@ void CreatePane(Guid paneGuid, string title,
 }  
 ```  
   
- 如果您將下列方法新增至指定上一節中，當您按一下 延伸模組**叫用 TestOutput**命令您應該會看到**輸出**視窗中顯示的標頭**顯示輸出從： CreatedPane**和文字**這是 建立 窗格**本身的窗格中。  
+ 如果您將下列方法新增至指定上一節中，當您按一下 延伸模組**叫用 TestOutput**命令您應該會看到**輸出**視窗中顯示的標頭**顯示輸出從：CreatedPane**和文字**這是 建立 窗格**本身的窗格中。  
   
 ## <a name="creating-an-output-window-with-outputwindow"></a>使用 OutputWindow 建立輸出視窗  
  此範例示範如何建立**輸出**視窗窗格使用<xref:EnvDTE.OutputWindow>物件。  
@@ -129,7 +124,7 @@ void CreatePane(string title)
   
  雖然<xref:EnvDTE.OutputWindowPanes>集合，可讓您擷取**輸出**視窗窗格中的依其標題，窗格標題不保證是唯一的。 當您不能確定標題的唯一性時，使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow.GetPane%2A>方法來擷取 [正確] 窗格中的由其 GUID。  
   
- 如果您將下列方法新增至指定上一節中，當您按一下 延伸模組**叫用 TestOutput**命令，您應該會看到 輸出 視窗，以標頭，指出**顯示輸出來源： DTEPane**和單字**加入 DTE 窗格**本身的窗格中。  
+ 如果您將下列方法新增至指定上一節中，當您按一下 延伸模組**叫用 TestOutput**命令，您應該會看到 輸出 視窗，以標頭指出**顯示輸出來源：DTEPane**和文字**加入 DTE 窗格**本身的窗格中。  
   
 ## <a name="deleting-an-output-window"></a>刪除輸出視窗  
  此範例示範如何刪除**輸出**視窗窗格。  
@@ -154,7 +149,7 @@ void DeletePane(Guid paneGuid)
 }  
 ```  
   
- 如果您將下列方法新增至指定上一節中，當您按一下 延伸模組**叫用 TestOutput**命令，您應該會看到 輸出 視窗，以標頭，指出**顯示輸出來源： 新窗格**和單字**加入建立窗格**本身的窗格中。 如果您按一下**叫用 TestOutput**同樣地，命令窗格中會被刪除。  
+ 如果您將下列方法新增至指定上一節中，當您按一下 延伸模組**叫用 TestOutput**命令，您應該會看到 輸出 視窗，以標頭指出**顯示輸出來源：新窗格**和文字**新增建立窗格**本身的窗格中。 如果您按一下**叫用 TestOutput**同樣地，命令窗格中會被刪除。  
   
 ## <a name="getting-the-general-pane-of-the-output-window"></a>取得的 [輸出] 視窗的 [一般] 窗格  
  此範例示範如何取得內建**一般**窗格**輸出**視窗。  
@@ -190,4 +185,3 @@ void OutputTaskItemStringExExample(string buildMessage)
         }  
 }  
 ```
-

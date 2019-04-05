@@ -1,14 +1,9 @@
 ---
 title: 擴充功能表和命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus, common tasks
 - VSPackages, menu tasks
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7b2be4b9-e3fe-4412-874f-ae72ebc84c4b
 caps.latest.revision: 50
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 36dcc3742b745f8933f340b8df966b1f621d6998
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 83d9dc45863f1ed1b5e11c17b9e922b62b0186dc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793148"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945853"
 ---
 # <a name="extending-menus-and-commands"></a>延伸功能表和命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,4 +62,3 @@ ms.locfileid: "51793148"
  說明如何將功能表命令當地語系化。  
   
 ## <a name="related-sections"></a>相關章節
-

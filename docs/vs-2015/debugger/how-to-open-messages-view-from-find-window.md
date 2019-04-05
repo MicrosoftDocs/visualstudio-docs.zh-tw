@@ -1,14 +1,9 @@
 ---
-title: 如何： 從尋找視窗開啟訊息檢視 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：從尋找視窗開啟訊息檢視 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Messages View in Spy++, opening
 - opening Messages View in Spy++
@@ -16,15 +11,15 @@ ms.assetid: 601a193e-432a-417b-9406-6fec9e401264
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 64d32064ef20b1f7e188624a5a91ffd231b82b66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 53ee0dce825609c13622911d5836f16954fa7a06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801247"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940974"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>如何：從尋找視窗開啟訊息檢視
+# <a name="how-to-open-messages-view-from-find-window"></a>HOW TO：從尋找視窗開啟訊息檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可能會發現它使用方便**尋找視窗**對話方塊來選取目標視窗中，，然後開啟該視窗的 [訊息] 檢視。  
@@ -45,7 +40,7 @@ ms.locfileid: "51801247"
   
 4.  底下**顯示**，選取**訊息**。  
   
-5.  按下**確定**。  
+5.  按 [確定]。  
   
      空白[訊息檢視](../debugger/messages-view.md)視窗隨即開啟，並有**訊息**功能表會加入至 Spy + + 工具列。  
   
@@ -60,6 +55,3 @@ ms.locfileid: "51801247"
      視選取的選項而定，訊息就會開始串流處理至作用中的 [訊息] 檢視視窗。  
   
 9. 當您有足夠的訊息時，選擇**停止記錄**從**訊息**功能表。
-
-
-

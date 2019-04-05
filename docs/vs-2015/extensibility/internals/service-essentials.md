@@ -1,33 +1,28 @@
 ---
 title: 服務 Essentials |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90cec13c403194c70b9d44cff349b53495a0e160
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 90b16c9d7e7a762b6c1dac322ae9467b835476fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776456"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940109"
 ---
 # <a name="service-essentials"></a>服務的基本資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 服務是兩個的 Vspackage 之間的合約。 一個 VSPackage 提供一組特定的介面使用的另一個 VSPackage。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 本身是提供服務給其他 Vspackage 的 Vspackage 集合。  
   
- 例如，您可以使用 SVsActivityLog 服務取得 IVsActivityLog 介面，可用來寫入活動記錄檔。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用活動記錄](../../extensibility/how-to-use-the-activity-log.md)。  
+ 例如，您可以使用 SVsActivityLog 服務取得 IVsActivityLog 介面，可用來寫入活動記錄檔。 如需詳細資訊，請參閱[如何：使用活動記錄](../../extensibility/how-to-use-the-activity-log.md)。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 也提供一些內建的服務未註冊的。 Vspackage 可以藉由提供服務的覆寫來取代內建或其他服務。 只有一個服務覆寫所允許的任何服務。  
   
@@ -62,11 +57,10 @@ ms.locfileid: "51776456"
   
 -   Vspackage 可以是服務提供者所建立的物件。 例如，表單可能會傳送色彩服務的要求至其的框架，可能會傳遞要求[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
--   受管理的物件深度巢狀，或未設置，可能會呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>全域服務的直接存取。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 GetGlobalService](../../misc/how-to-use-getglobalservice.md)。  
+-   受管理的物件深度巢狀，或未設置，可能會呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>全域服務的直接存取。 如需詳細資訊，請參閱[如何：使用 GetGlobalService](../../misc/how-to-use-getglobalservice.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [可用服務清單](../../extensibility/internals/list-of-available-services.md)   
  [使用和提供服務](../../extensibility/using-and-providing-services.md)   
  [轉型和類型轉換](http://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
  [轉型](http://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)
-

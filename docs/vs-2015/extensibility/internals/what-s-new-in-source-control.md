@@ -1,29 +1,25 @@
 ---
-title: 什麼&#39;原始檔控制的新功能 |Microsoft Docs
-ms.custom: ''
+title: 原始檔控制的新功能
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9a108acb2ae32b64292cd819c75de4726f067a00
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27623c22664e9d3c6b651615465e6abe812ea408
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752459"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000602"
 ---
-# <a name="what39s-new-in-source-control"></a>什麼&#39;原始檔控制的新功能
+# <a name="what39s-new-in-source-control-in-visual-studio-2015"></a>什麼&#39;Visual Studio 2015 中的原始檔控制的新功能
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]您可以藉由實作原始檔控制 VSPackage 提供深入的整合式原始檔控制解決方案。 本節說明的原始檔控制 Vspackage 功能，並提供實作步驟的概觀。  
@@ -56,4 +52,3 @@ ms.locfileid: "51752459"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
  [概觀](../../extensibility/internals/source-control-integration-overview.md)   
  [建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
-

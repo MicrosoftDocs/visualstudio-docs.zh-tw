@@ -1,14 +1,9 @@
 ---
 title: Managed 程式碼中的判斷提示 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -30,13 +25,13 @@ ms.assetid: 70ab2522-6486-4076-a1a9-e0f11cd0f3a1
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c47b2b05ab358826d594d0c6ef29c1b50e0a529f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ae0842109abd1813a47bb7963111d2765cb399a5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806538"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941025"
 ---
 # <a name="assertions-in-managed-code"></a>Managed 程式碼中的判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ ms.locfileid: "51806538"
 ##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> System.Diagnostics 命名空間中的判斷提示  
  在 Visual Basic 和 Visual C# 中，您可以從位於 `Assert` 命名空間中的 <xref:System.Diagnostics.Debug> 或 <xref:System.Diagnostics.Trace> 使用 <xref:System.Diagnostics> 方法。 <xref:System.Diagnostics.Debug> 類別方法未包含在程式的發行版本中，因此不會增加發行程式碼的大小或減緩其速度。  
   
- C++ 不支援 <xref:System.Diagnostics.Debug> 類別方法。 您可以使用來達到相同的效果<xref:System.Diagnostics.Trace>類別搭配條件式編譯，例如`#ifdef DEBUG`...`#endif`.  
+ C++ 不支援 <xref:System.Diagnostics.Debug> 類別方法。 您可以使用 <xref:System.Diagnostics.Trace> 類別搭配條件式編譯得到相同的效果，例如 `#ifdef DEBUG`... `#endif`。  
   
  [本主題內容](#BKMK_In_this_topic)  
   
@@ -155,20 +150,20 @@ Debug.Assert ( temp != 0 );
   
 - `#Const TRACE = True` (在 Visual Basic 中)  
   
-- `#define TRACE` (在 Visual C# 和 C++ 中)  
+- Visual C# 及 C++ 中的 `#define TRACE`  
   
   或者，您的程式必須是使用 TRACE 選項所建置：  
   
 - `/d:TRACE=True` (在 Visual Basic 中)  
   
-- `/d:TRACE` (在 Visual C# 和 C++ 中)  
+- Visual C# 及 C++ 中的 `/d:TRACE`  
   
   如果您需要在 C# 或 Visual Basic 的發行組建中使用 Debug 方法，則必須在發行組態中定義 DEBUG 符號。  
   
-  C++ 不支援 <xref:System.Diagnostics.Debug> 類別方法。 您可以使用來達到相同的效果<xref:System.Diagnostics.Trace>類別搭配條件式編譯，例如`#ifdef DEBUG`...`#endif`. 您可以定義中的這些符號**\<專案 > 屬性頁** 對話方塊。 如需詳細資訊，請參閱 <<c0> [ 變更 Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)或是[變更 C 或 c + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
+  C++ 不支援 <xref:System.Diagnostics.Debug> 類別方法。 您可以使用 <xref:System.Diagnostics.Trace> 類別搭配條件式編譯得到相同的效果，例如 `#ifdef DEBUG`... `#endif`。 您可以在 [\<專案> 屬性頁] 對話方塊中定義這些符號。 如需詳細資訊，請參閱[變更 Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)或[變更 C 或 C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
   
 ##  <a name="BKMK_Assert_arguments"></a> Assert 引數  
- <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 最多可接受三個引數。 第一個引數是強制性的，代表您要檢查的條件。 如果您呼叫<xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName>或<xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>只有一個引數，與`Assert`方法會檢查條件，和如果結果為 false，則會輸出的呼叫堆疊，內容**輸出**視窗。 下列範例將示範 <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>：  
+ <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 最多可接受三個引數。 第一個引數是強制性的，代表您要檢查的條件。 如果您只使用一個引數呼叫 <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> 或 <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>，`Assert` 方法將會檢查該條件，而如果結果為 false，則會將呼叫堆疊的內容輸出至 [輸出] 視窗。 下列範例將示範 <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>：  
   
 ```vb  
 Debug.Assert(stacksize > 0)  
@@ -208,15 +203,15 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  [本主題內容](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Customizing_Assert_behavior"></a> 自訂 Assert 的行為  
- 如果您在使用者介面模式中，執行您的應用程式`Assert`方法會顯示**判斷提示失敗**對話方塊時的條件失敗。 判斷提示失敗時，發生的動作就會受<xref:System.Diagnostics.Debug.Listeners%2A>或<xref:System.Diagnostics.Trace.Listeners%2A>屬性。  
+ 如果您以使用者介面模式執行應用程式，`Assert` 方法將在條件失敗時顯示 [判斷提示失敗] 對話方塊。 判斷提示失敗時發生的動作是由 <xref:System.Diagnostics.Debug.Listeners%2A> 或 <xref:System.Diagnostics.Trace.Listeners%2A> 屬性所控制。  
   
  自訂輸出行為的方法包括將 <xref:System.Diagnostics.TraceListener> 物件加入至 `Listeners` 集合內、從 <xref:System.Diagnostics.TraceListener> 集合內移除 `Listeners`，或覆寫現有 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 的 `TraceListener` 方法，讓它擁有不同的行為。  
   
- 例如，您可以覆寫<xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName>方法來寫入事件記錄檔，而不是顯示**判斷提示失敗** 對話方塊。  
+ 例如，您可以覆寫 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 方法以寫入事件記錄檔，而非顯示 [判斷提示失敗] 對話方塊。  
   
  若要以這種方式自訂輸出，您的程式必須包含接聽程式，而且必須繼承自 <xref:System.Diagnostics.TraceListener>，並覆寫其 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 方法。  
   
- 如需詳細資訊，請參閱 <<c0> [ 追蹤接聽項](http://msdn.microsoft.com/library/444b0d33-67ea-4c36-9e94-79c50f839025)。  
+ 如需詳細資訊，請參閱[追蹤接聽項](http://msdn.microsoft.com/library/444b0d33-67ea-4c36-9e94-79c50f839025)。  
   
  [本主題內容](#BKMK_In_this_topic)  
   
@@ -231,6 +226,3 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  [如何：使用追蹤和偵錯進行條件式編譯](http://msdn.microsoft.com/library/56d051c3-012c-42c1-9a58-7270edc624aa)   
  [C#、F# 和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)
-
-
-

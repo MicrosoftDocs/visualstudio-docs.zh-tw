@@ -1,14 +1,9 @@
 ---
 title: 編輯後繼續 （Visual c + +） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6e1dc97af70f575632629a13ea67e905f2ad0815
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b1f82c9e79957b12dba36eaa70a94cb6fff84ff7
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748356"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58939812"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +34,9 @@ ms.locfileid: "51748356"
   
  其他 Update 1 改進功能包括新的可取消等待對話方塊，以及當檔案不支援 [編輯後繼續] 時的通知。 如需有關 Update 1 改進功能的詳細資訊，請參閱[c + + 編輯後繼續在 Visual Studio 2015 Update 1 改進](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx)。  
   
- [/Zo （增強最佳化偵錯）](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) Visual Studio 2013 Update 3 中導入的編譯器選項將額外資訊加入.pdb （符號） 檔案，而不需要編譯的二進位檔[/Od （停用 （偵錯））](http://msdn.microsoft.com/library/aafb762y.aspx)選項。  
+ 在 Visual Studio 2013 Update 3 中推出的 [/Zo (增強最佳化偵錯)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) 編譯器選項會將額外資訊新增至不使用 [/Od (停用 (偵錯))](http://msdn.microsoft.com/library/aafb762y.aspx) 選項編譯之二進位碼檔案的 .pdb (符號) 檔案。  
   
- **/Zo**會停用編輯後繼續。 請參閱[如何： 偵錯最佳化程式碼](../debugger/how-to-debug-optimized-code.md)。  
+ **/Zo**會停用編輯後繼續。 請參閱[如何：對最佳化程式碼進行偵錯](../debugger/how-to-debug-optimized-code.md)。  
   
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> 啟用或停用編輯後繼續  
  如果您不希望在目前的偵錯工作階段中套用正在編輯的程式碼內容，您可能需要停用 [編輯後繼續] 的自動引動過程。 您也可以重新啟用自動的 [編輯後繼續]。  
@@ -84,6 +79,3 @@ ms.locfileid: "51748356"
   
 ## <a name="see-also"></a>另請參閱  
  [支援的程式碼變更 (C++)](../debugger/supported-code-changes-cpp.md)
-
-
-

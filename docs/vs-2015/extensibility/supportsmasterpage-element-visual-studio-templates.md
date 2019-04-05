@@ -1,14 +1,9 @@
 ---
 title: SupportsMasterPage 項目 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsMasterPage
 helpviewer_keywords:
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 042b08485095472aba0e15bb18498b75d3198329
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 051bde61132d286c3941a12c2e970aa2019fc0b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756325"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941574"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定是否**選取主版頁面**上已啟用 核取方塊**加入新項目** 對話方塊。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<SupportsMasterPage >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<SupportsMasterPage>  
   
 ## <a name="syntax"></a>語法  
   
@@ -61,7 +56,7 @@ ms.locfileid: "51756325"
  文字必須是`true`或是`false`，這表示，zda bude**選取主版頁面**上已啟用 核取方塊**加入新項目**對話方塊。  
   
 ## <a name="remarks"></a>備註  
- `SupportsMasterPage` 是選擇性項目。 預設值是 `false`。  
+ `SupportsMasterPage` 是選擇性項目。 預設值為 `false`。  
   
  `SupportsMasterPage`項目僅適用於 Web 項目範本。  
   
@@ -93,4 +88,3 @@ ms.locfileid: "51756325"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 如何： 在 Managed 程式碼中設定執行緒名稱 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：在 Managed 程式碼中設定執行緒名稱 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,18 +18,18 @@ ms.assetid: c0c4d74a-0314-4b71-81c9-b0b019347ab8
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 585c372a5ffcb71fcc8a2f7e56bb95380b3c41ca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b800fbd2f39d75f110a059c70b87a203eb72e7d6
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729519"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58939813"
 ---
-# <a name="how-to-set-a-thread-name-in-managed-code"></a>如何：在 Managed 程式碼中設定執行緒名稱
+# <a name="how-to-set-a-thread-name-in-managed-code"></a>HOW TO：在受控碼中設定執行緒名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在所有 Visual Studio 版本中，都可以將執行緒命名。 執行緒命名可用於追蹤的執行緒**執行緒**視窗。 因為**執行緒**視窗無法使用 Visual Studio Express 版本中，執行緒命名在 Express 版中有不太有用。  
+在所有 Visual Studio 版本中，都可以將執行緒命名。 將執行緒命名後，在 [執行緒] 視窗中追蹤執行緒會很方便。 因為**執行緒**視窗無法使用 Visual Studio Express 版本中，執行緒命名在 Express 版中有不太有用。  
   
  若要在 Managed 程式碼內設定執行緒名稱，請使用 <xref:System.Threading.Thread.Name%2A> 屬性。  
   
@@ -61,8 +56,5 @@ End Sub
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：在機器碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-native-code.md)
-
-
-

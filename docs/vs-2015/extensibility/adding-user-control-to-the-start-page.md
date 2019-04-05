@@ -1,14 +1,9 @@
 ---
 title: 將使用者控制項加入至起始頁 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - start page dll
 - custom start page
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 01510eabcb4d2d3605f38b8bb574ed3e21efebac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4ccef9678cbdec3ea048c556434d80ef9b0196e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736714"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939606"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>將使用者控制項新增至起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -192,6 +187,5 @@ ms.locfileid: "51736714"
      應該會顯示您的自訂起始頁。 如果您想要變更任何檔案，您必須關閉實驗執行個體、 進行變更、 複製並貼變更的檔案，然後再重新開啟實驗的執行個體，以檢視所做的變更。  
   
 ## <a name="see-also"></a>另請參閱  
- [WPF 控制項](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)   
- [逐步解說︰將自訂的 XAML 加入至起始頁](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
-
+ [WPF 控制項](http://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
+ [逐步解說：將自訂的 XAML 加入至 [開始] 頁面](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

@@ -1,26 +1,21 @@
 ---
 title: 提供自訂屬性視窗 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - property browsers, providing
 - Properties window, providing your own
 ms.assetid: 408dcdef-8ef9-4644-97d2-f311cd35824f
 caps.latest.revision: 12
-manager: douge
-ms.openlocfilehash: 8b3aeae11e087b6a6bd662ed32564d93062426df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 31c33bfafeba1210e6cd70db48643a6329c21a45
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186273"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940870"
 ---
 # <a name="providing-a-custom-properties-window"></a>提供自訂屬性視窗
 可提供您自己**屬性**視窗中指定的專案系統，而不是擴充**屬性**所提供的視窗[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]整合式的開發環境 (IDE)。 最常遇到的案例是當您自行實作設置在視窗框架的物件。  

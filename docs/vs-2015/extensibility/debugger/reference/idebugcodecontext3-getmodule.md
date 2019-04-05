@@ -1,26 +1,21 @@
 ---
-title: IDebugCodeContext3::GetModule |Microsoft Docs
-ms.custom: ''
+title: IDebugCodeContext3::GetModule | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugCodeContext3::GetModule
 ms.assetid: 8e4317b8-8255-486c-a896-a68ed94f8aa1
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9b2d6820695999899eae7db7a9f901f096dd9298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 328916a6e1ceb8979c1c10c7d94dca9725689125
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725418"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940776"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -71,4 +66,3 @@ Error:
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)
-

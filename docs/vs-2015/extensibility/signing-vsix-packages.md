@@ -1,14 +1,9 @@
 ---
 title: 簽署 VSIX 封裝 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - signature
 - signing
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 56ddcae38593d35bc8a31628bf3087dc79ca25c4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c27b000748fdac99b78f0e7d0ff737356956a78d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732552"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942236"
 ---
 # <a name="signing-vsix-packages"></a>簽署 VSIX 套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,8 +46,7 @@ ms.locfileid: "51732552"
   
    例如若要使用密碼保護的憑證檔簽署的資訊：  
   
-   VSIXSignTool.exe 登 /f \<certfile >/p\<密碼 > \<VSIXfile >  
+   VSIXSignTool.exe sign /f \<certfile> /p \<password> \<VSIXfile>  
   
 ## <a name="see-also"></a>另請參閱  
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)
-

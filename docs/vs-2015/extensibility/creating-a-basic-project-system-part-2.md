@@ -1,14 +1,9 @@
 ---
 title: 建立基本的專案系統，第 2 部分 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98cdcf426f2aeeb794e9e33754108c792f9725e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753970"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930669"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>建立基本的專案系統，第 2 部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -191,9 +186,9 @@ ZipProjects:
   
 1. 重設 Visual Studio SDK experimental 執行個體。  
   
-    在  [!INCLUDE[win7](../includes/win7-md.md)]： 在 [開始] 功能表中，找到**Microsoft Visual Studio/Microsoft Visual Studio SDK/工具**資料夾，然後再選取**重設 Microsoft Visual Studio 實驗執行個體**。  
+    在 [!INCLUDE[win7](../includes/win7-md.md)]:在 [開始] 功能表中，尋找**Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools**資料夾，然後再選取**重設 Microsoft Visual Studio 實驗執行個體**。  
   
-    Windows 的更新版本上： 在 [開始] 畫面中，輸入**重設 Microsoft Visual Studio\<版本 > 實驗性執行個體**。  
+    在較新版 Windows 的詳細資訊：在 [開始] 畫面上輸入**重設 Microsoft Visual Studio\<版本 > 實驗性執行個體**。  
   
 2. 命令提示字元 視窗隨即出現。 您會看到字樣`Press any key to continue`，按 enter 鍵。 在視窗關閉後，開啟 Visual Studio。  
   
@@ -286,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$ 是中的使用者所提供的名稱**新的專案**對話方塊中，修改以移除所有 unsafe 字元和空格。  
   
-  如需完整的範本參數清單，請參閱[範本參數](../ide/template-parameters.md)。  如果您想要建立您自己的自訂範本參數，請參閱[NIB： 如何： 將傳遞至範本的自訂參數](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)。  
+  如需完整的範本參數清單，請參閱[範本參數](../ide/template-parameters.md)。  如果您想要建立您自己的自訂範本參數，請參閱[NIB:HOW TO：將自訂參數傳遞至範本](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)。  
   
 #### <a name="to-substitute-project-template-parameters"></a>若要替代專案範本的參數  
   
@@ -500,4 +495,3 @@ ZipProjects:
 8. 關閉 Visual Studio 的實驗執行個體。  
   
    ![](../extensibility/media/simpproj2-proppage2.png "SimpProj2_PropPage2")
-

@@ -1,23 +1,20 @@
 ---
 title: 控制圖示或 Decorator 的可視性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2697fd5d-b936-4b6b-b87b-be64825dc7a4
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4befc49fab1d1b53d70f1b79ee1a2bbe96be11f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: cbfffc3983c8270058591edcca6d6188c9791102
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913406"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940555"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或 Decorator 的可見度
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +68,7 @@ A*裝飾項目*是圖示或特定領域語言 (DSL) 中的圖形上顯示的文�
   
      **名稱**例如**DecoratorControl**  
   
-     **型別** = `Boolean`  
+     **Type** = `Boolean`  
   
      如需詳細資訊，請參閱 <<c0> [ 計算和儲存體的自訂屬性](../modeling/calculated-and-custom-storage-properties.md)。  
   
@@ -89,13 +86,13 @@ A*裝飾項目*是圖示或特定領域語言 (DSL) 中的圖形上顯示的文�
   
 4.  按一下 **建置方案**上**建置**功能表。  
   
-5.  按兩下錯誤報告，顯示: 「*YourClass*未包含定義 GetDecoratorControlValue...」。  
+5.  按兩下出現的錯誤報表：「*YourClass*未包含定義 GetDecoratorControlValue...」。  
   
      文字編輯器會開啟 Dsl\GeneratedCode\DomainClasses.cs。 上述反白顯示的錯誤會要求您將方法加入的註解。  
   
 6.  請注意所缺少的命名空間、 類別和方法。  比方說，Company.FamilyTree.Person.GetDecoratorControlValue()。  
   
-7.  在不同的程式碼檔案中，撰寫部分類別定義，其中包含遺漏的方法。 例如:   
+7.  在不同的程式碼檔案中，撰寫部分類別定義，其中包含遺漏的方法。 例如：  
   
     ```  
     namespace Company.FamilyTree  
@@ -115,6 +112,3 @@ A*裝飾項目*是圖示或特定領域語言 (DSL) 中的圖形上顯示的文�
  [設定圖表上的背景影像](../modeling/setting-a-background-image-on-a-diagram.md)   
  [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

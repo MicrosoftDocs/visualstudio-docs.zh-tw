@@ -1,14 +1,9 @@
 ---
 title: 重新整理應用程式 (JavaScript) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: fd99ee60-fa94-46df-8b17-369f60bfd908
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1905d48e79567684da6215b419c348b32721e0e3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5d85db8ff2b9b93d99ad44377a1935552c951e32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722892"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941667"
 ---
 # <a name="refresh-an-app-javascript"></a>重新整理應用程式 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,12 +78,9 @@ ms.locfileid: "51722892"
     Hello!  
     ```  
   
-7.  按一下 **重新整理 Windows 應用程式**按鈕，如下：![重新整理 Windows 應用程式按鈕](../debugger/media/js-refresh.png "JS_Refresh")。 (或按 F4)。  
+7.  按一下 [**重新整理 Windows 應用程式**按鈕時，哪一個看起來像這樣：![重新整理 Windows 應用程式] 按鈕](../debugger/media/js-refresh.png "JS_Refresh")。 (或按 F4)。  
   
 8.  切換至應用程式。 應用程式隨即重新載入而不重新啟動偵錯工具，且會顯示新的頁面標題。  
   
 ## <a name="see-also"></a>另請參閱  
- [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-
+ [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md)

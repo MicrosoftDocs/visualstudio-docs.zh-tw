@@ -1,12 +1,9 @@
 ---
 title: 用於疑難排解資料的其他資源存取的錯誤 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
 - vbdata.ParameterizeFormDialog_NoDataSource
@@ -232,14 +229,14 @@ ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 415d403bc5282e2759805558ea6a91a1c2cf9bdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a71d18beaf1c77c16479c914a43cdf45793b685
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263014"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941964"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>如需疑難排解資料存取錯誤的其他資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -253,7 +250,7 @@ ms.locfileid: "49263014"
  [ADO.NET 資料集論壇](http://go.microsoft.com/fwlink/?LinkId=160180)  
  提供問題的資料集的相關和一般討論的論壇。  
   
- [ADO.NET Entity Framework 與 LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520)  
+ [ADO.NET Entity Framework and LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520) (ADO.NET Entity Framework 與 LINQ to Entities)  
  提供有關問題和 Entity Framework 應用程式和 LINQ to Entities 語言的一般討論的論壇。  
   
  [WCF Data Services 論壇](http://go.microsoft.com/fwlink/?LinkId=160181)  
@@ -272,4 +269,3 @@ ms.locfileid: "49263014"
   
 ## <a name="see-also"></a>另請參閱  
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

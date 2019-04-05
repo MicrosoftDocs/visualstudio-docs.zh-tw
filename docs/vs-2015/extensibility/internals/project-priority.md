@@ -1,26 +1,21 @@
 ---
 title: 專案優先順序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1d052658cc6f61027def4fdae89c2981581b7e27
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 55dc8d911f458ef2eae801117c02058d41698611
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742328"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944735"
 ---
 # <a name="project-priority"></a>專案優先順序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,6 +36,5 @@ ms.locfileid: "51742328"
   
 ## <a name="see-also"></a>另請參閱  
  [其他檔案專案](../../extensibility/internals/miscellaneous-files-project.md)   
- [如何： 開啟編輯器開啟的文件](../../extensibility/how-to-open-editors-for-open-documents.md)   
+ [如何：開啟編輯器開啟的文件](../../extensibility/how-to-open-editors-for-open-documents.md)   
  [新增專案與專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)
-

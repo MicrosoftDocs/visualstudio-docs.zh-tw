@@ -1,14 +1,9 @@
 ---
 title: 程式碼編輯器中檢視資料提示中的資料值 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37fc58a68f8cf482ac6a2bbab3ecb47c28d60904
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: bb42950acf958dbb71877671da57f5ea6fcd6898
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799440"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930245"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>在程式碼編輯器的資料提示中檢視資料值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -147,10 +142,7 @@ ms.locfileid: "51799440"
 2.  使用對話方塊來尋找您想要開啟，然後按一下 XML 檔案**確定**。  
   
 ## <a name="see-also"></a>另請參閱  
- [在 偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
- [如何： 使用 快速監看式對話方塊](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
+ [如何：使用 快速監看式對話方塊](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
- [如何： 變更偵錯工具 Windows 的數字格式](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
-
-
-
+ [如何：變更 Windows 偵錯工具的數字格式](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

@@ -1,12 +1,9 @@
 ---
 title: 編輯 UML 模型和圖表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.modelingproject
 - vs.teamarch.UMLModelExplorer
@@ -23,13 +20,13 @@ ms.assetid: 87affd40-8127-4ee9-9d3a-ad977abe2ed6
 caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92d2be3abfb849b0b5cf5c1c820040b658e2240c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3cc16133911cf4b49af983aabb4b7b60405c956c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803431"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942328"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>編輯 UML 模型和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -193,7 +190,7 @@ ms.locfileid: "51803431"
   
  **每個模型專案具有單一變更堆疊。** 所有您對模型和圖表所做的變更都會保留在此堆疊上。 此堆疊也包括從某個圖表到另一個圖表的焦點變更。 [復原] 命令會反轉此堆疊的變更。  
   
- 例如，假設您執行這些作業：變更圖表 1；將焦點變更為圖表 2；變更圖表 2。 復原變更時，第一個復原會反轉最後一個變更、下一個復原會將焦點移回圖表 1，而第三個復原會反轉對圖表 1 的變更。  
+ 例如，假設您執行這些作業：變更 Diagram1;將焦點變更至圖表 2;變更圖表 2。 復原變更時，第一個復原會反轉最後一個變更、下一個復原會將焦點移回圖表 1，而第三個復原會反轉對圖表 1 的變更。  
   
  **關閉圖表會截斷變更堆疊。** 如果您關閉圖表，則無法復原您已在該圖表中執行的變更，而且無法復原對模型或其任何圖表所做的較早變更。  
   
@@ -219,7 +216,7 @@ ms.locfileid: "51803431"
      即會出現提供模型項目檢視的圖形，也可能會有其他圖表或相同圖表上的檢視。  
   
     > [!NOTE]
-    >  將類別或元件拖曳至循序圖時，效果會不同。 在該情況下，會建立其類型是該類別或元件的新生命線。 如需詳細資訊，請參閱 < [UML 循序圖： 方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
+    >  將類別或元件拖曳至循序圖時，效果會不同。 在該情況下，會建立其類型是該類別或元件的新生命線。 如需詳細資訊，請參閱[UML 循序圖：指導方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>使用貼上參考加入模型項目的新檢視  
   
@@ -323,7 +320,7 @@ ms.locfileid: "51803431"
   
 -   若要將附註和說明加入模型項目，您可以建立註解，然後將它們連結至項目。  
   
--   若要整齊地對齊圖表上的資料行或資料列圖形，您可以安裝 [對齊圖形] 命令。 這可做為範例 UML 擴充功能： [UML： 要對齊圖形的命令](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
+-   若要整齊地對齊圖表上的資料行或資料列圖形，您可以安裝 [對齊圖形] 命令。 這可做為範例 UML 擴充功能：[UML:若要對齊圖形的命令](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
   
 ### <a name="to-export-a-diagram-as-an-image"></a>將圖表匯出為影像  
  如需詳細資訊，請參閱 <<c0> [ 將圖表匯出為影像](../modeling/export-diagrams-as-images.md)。  
@@ -345,6 +342,3 @@ ms.locfileid: "51803431"
  [建立 UML 模型專案和圖表](../modeling/create-uml-modeling-projects-and-diagrams.md)   
  [分析並製作架構模型](../modeling/analyze-and-model-your-architecture.md)   
  [建立應用程式模型](../modeling/create-models-for-your-app.md)
-
-
-

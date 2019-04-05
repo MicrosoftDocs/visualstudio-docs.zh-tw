@@ -1,14 +1,9 @@
 ---
-title: 如何： Page Up 或在記憶體中的向下 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：Page Up 或在記憶體中的向下 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,18 +22,18 @@ ms.assetid: 50b30a68-66f6-43f8-a48b-59ce12c95471
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d20c22e366736711f16fc17f56b2e81eea558948
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8859bac6f2cfe992c3c0d8005830985598934b88
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769151"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929982"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>如何：在記憶體中向上或向下翻頁
+# <a name="how-to-page-up-or-down-in-memory"></a>HOW TO：在記憶體中向上或向下翻頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-當您檢視中的記憶體內容**記憶體** 視窗或**反組譯碼** 視窗中，您可以使用垂直捲軸上移或下移的記憶體空間中。  
+當您在 [記憶體] 視窗或 [反組譯碼] 視窗中檢視記憶體內容時，可以使用垂直捲軸在記憶體空間中上下移動。  
   
 ### <a name="to-page-up-or-down-in-memory"></a>若要在記憶體中向上或向下翻頁  
   
@@ -57,11 +52,6 @@ ms.locfileid: "51769151"
 -   請按一下垂直捲軸頂端或底端的箭頭。  
   
 ## <a name="see-also"></a>另請參閱  
- [記憶體 Windows](../debugger/memory-windows.md)   
- [如何： 使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)   
+ [記憶體視窗](../debugger/memory-windows.md)   
+ [如何：使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)   
  [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)
-
-
-
-
-

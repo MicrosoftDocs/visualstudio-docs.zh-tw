@@ -1,14 +1,9 @@
 ---
-title: 如何： 指定 ClickOnce 應用程式的開始功能表名稱 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：指定 ClickOnce 應用程式的開始功能表名稱 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: 4b5183b2-2fd4-4433-9310-4a73bb12c4e3
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 98554ef2dc9b1f5bdd3ef1879f32b2c2319a7a1b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 38ea7865d625e2d5a04591848ecc7c3375d654f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943214"
 ---
-# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>如何：指定 ClickOnce 應用程式的開始功能表名稱
+# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>HOW TO：指定 ClickOnce 應用程式的開始功能表名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 當[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式已安裝的線上和離線使用，一個項目加入至**開始**功能表和**新增或移除程式**清單。 根據預設，顯示名稱是應用程式組件的名稱相同，但您可以設定來變更顯示名稱**產品名稱**中**發行選項** 對話方塊。  
@@ -44,7 +39,7 @@ ms.locfileid: "49277770"
   
 1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [**發佈**] 索引標籤。  
+2.  按一下 [發佈] 索引標籤。  
   
 3.  按一下 **選項** 按鈕以開啟**發行選項** 對話方塊。  
   
@@ -56,7 +51,4 @@ ms.locfileid: "49277770"
   
 ## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
- [如何：使用發行精靈發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-
+ [如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

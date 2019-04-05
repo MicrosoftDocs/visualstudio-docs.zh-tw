@@ -1,23 +1,20 @@
 ---
-title: 如何： 實作 Windows Communication Foundation 合約作業 （舊版） |Microsoft Docs
-ms.custom: ''
+title: HOW TO：實作 Windows Communication Foundation 合約作業 （舊版） |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: d6aeb20e-fac8-4a9d-bd26-ae78bef96b41
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a3c3d76257f27023beca6cd480137114b0161b12
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 56866e084eac7dc3a3ac2a0b80baaa2533ccd285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813540"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943850"
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>HOW TO：實作 Windows Communication Foundation 合約作業 (舊版)
 本主題描述當使用以 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 或 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 為目標的舊版 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 時，如何實作 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 合約作業。  
@@ -54,5 +51,5 @@ ms.locfileid: "49813540"
   
 ## <a name="see-also"></a>另請參閱  
  [選擇作業對話方塊 （舊版）](../workflow-designer/choose-operation-dialog-box-legacy.md)   
- [如何： 叫用 WCF 合約作業 （舊版）](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
+ [如何：叫用 WCF 合約作業 （舊版）](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
  [舊版工作流程活動](../workflow-designer/legacy-workflow-activities.md)

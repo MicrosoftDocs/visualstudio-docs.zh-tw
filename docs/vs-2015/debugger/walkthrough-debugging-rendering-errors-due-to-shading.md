@@ -1,27 +1,22 @@
 ---
-title: 逐步解說： 偵錯因著色而產生的錯誤 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：偵錯因著色而產生的錯誤 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5d65c3d2525533e5881b4626941e43fb302ce2aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42627b336bb83d915b2af96f0ee569a305212f6d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733201"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941988"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>逐步解說：偵錯因著色而產生的顯示錯誤
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>逐步解說：對因著色而產生的顯示錯誤進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本逐步解說示範如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 圖形診斷來調查因為著色器錯誤而著色不正確的物件。  
@@ -90,7 +85,7 @@ ms.locfileid: "51733201"
   
 2. 找出端點著色器的輸出結構，這是像素著色器的輸入。 在此情節中，此結構的名稱是 `output`。 檢查端點著色器程式碼並發現 `color` 結構的 `output` 成員已明確設定為完全不透明的黑色，這可能是因為某人的偵錯工作所造成。  
   
-3. 確認絕不會從輸入結構複製 color 成員。 由於在傳回 `output.color` 結構之前， `output` 的值已設定為完全不透明的黑色，因此建議您確定 `output` 的值在上一行未正確初始化。 查看 `output.color` 的值時，逐步執行端點著色器程式碼，直到您到達將 `output.color` 設定為黑色的程式碼行。 請注意， `output.color` 的值在設定為黑色之前尚未初始化。 這會確認應修改將 `output.color` 設定為黑色的程式碼行，而不是予以刪除。  
+3. 確認絕不會從輸入結構複製 color 成員。 由於在傳回 `output.color` 結構之前， `output` 的值已設定為完全不透明的黑色，因此建議您確定 `output` 的值在上一行未正確初始化。 查看 `output.color` 的值時，逐步執行端點著色器程式碼，直到您到達將 `output.color`設定為黑色的程式碼行。 請注意， `output.color` 的值在設定為黑色之前尚未初始化。 這會確認應修改將 `output.color` 設定為黑色的程式碼行，而不是予以刪除。  
   
     !["Output.color"的值為黑色。](../debugger/media/gfx-diag-demo-render-error-shader-step-7.png "gfx_diag_demo_render_error_shader_step_7")  
   
@@ -113,6 +108,3 @@ output.color = input.color;
  修正程式碼之後，請重新建置並再次執行應用程式，以確認轉譯問題已解決。  
   
  ![此物件是以正確的色彩呈現。](../debugger/media/gfx-diag-demo-render-error-shader-resolution.png "gfx_diag_demo_render_error_shader_resolution")
-
-
-

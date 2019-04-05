@@ -1,14 +1,9 @@
 ---
 title: CreateInPlace （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace
 helpviewer_keywords:
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9bc14bd5cae376c23ece97cdb7a780a1ae7354e6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d722aebef0cbcf589185c36cb481a676280d59ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751299"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941022"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定是否要建立專案和執行參數取代在指定的位置，或執行參數取代的暫存位置中，然後將專案儲存至指定的位置。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<CreateInPlace >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<CreateInPlace>  
   
 ## <a name="syntax"></a>語法  
   
@@ -61,7 +56,7 @@ ms.locfileid: "51751299"
  此文字必須是 `true` 或 `false`。 如果`true`，專案會建立，而且在指定的位置上執行參數取代**新的專案** 對話方塊。 如果`false`執行參數取代的暫存位置中，專案再複製到指定的位置。  
   
 ## <a name="remarks"></a>備註  
- `CreateInPlace` 是選擇性項目。 預設值是 `true`。  
+ `CreateInPlace` 是選擇性項目。 預設值為 `true`。  
   
 ## <a name="example"></a>範例  
  下列範例說明 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 範本的中繼資料。  
@@ -94,4 +89,3 @@ ms.locfileid: "51751299"
 ## <a name="see-also"></a>另請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
-

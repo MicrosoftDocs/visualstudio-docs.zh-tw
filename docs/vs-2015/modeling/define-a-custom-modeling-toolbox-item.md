@@ -1,25 +1,22 @@
 ---
 title: 定義自訂模型工具箱項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, customizing the toolbox
 ms.assetid: a2463606-1100-40ac-97f3-5ba22ca47b7c
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcb562eb76e13b5dcb16532ed808b2447de0d6c8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778406"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941202"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>定義自訂模型工具箱項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +161,7 @@ ms.locfileid: "51778406"
   
 4.  將您的工具箱定義加入此專案。 包含 **.tbxinfo**檔案，該圖表檔、 點陣圖檔案，以及任何資源檔案，並確定它們包含在 VSIX 中。  
   
-    -   在 [方案總管] 中，在 VSIX 專案的捷徑功能表上選擇**新增**，**現有項目**。 在對話方塊中，將**類型的物件： 所有檔案**。 找出檔案，它們全部選取，然後選擇**新增**。  
+    -   在 [方案總管] 中，在 VSIX 專案的捷徑功能表上選擇**新增**，**現有項目**。 在對話方塊中，設定**類型的物件：所有檔案**。 找出檔案，它們全部選取，然後選擇**新增**。  
   
         > [!NOTE]
         >  在此專案中，您無法在此模型編輯器開啟該圖表檔。  
@@ -188,7 +185,7 @@ ms.locfileid: "51778406"
     -   類型 = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
-        >  這不是此下拉式清單的其中一個選項。 您必須使用鍵盤將其輸入。  
+        >  這不是下拉式清單的其中一個選項。 您必須使用鍵盤將其輸入。  
   
     -   **來源** = **檔案系統上的**。  
   
@@ -200,7 +197,7 @@ ms.locfileid: "51778406"
   
      在此實驗執行個體中，建立或開啟該相關類型的 UML 圖表。 請確認您的新工具會出現在此工具箱中，並確認它已正確建立項目。  
   
-10. **若要取得部署的 VSIX 檔案：** 在 Windows 檔案總管中，開啟資料夾 **.\bin\Debug**或是 **.\bin\Release**尋找 **.vsix**檔案。 這是 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充檔。 可以將該檔案安裝在您的電腦上，也可以傳送給其他 Visual Studio 使用者。  
+10. **若要取得部署的 VSIX 檔案：** 在 Windows 檔案總管中，開啟資料夾 **.\bin\Debug**或是 **.\bin\Release**若要尋找 **.vsix**檔案。 這是 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充檔。 可以將該檔案安裝在您的電腦上，也可以傳送給其他 Visual Studio 使用者。  
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>從 Visual Studio 擴充功能安裝自訂工具  
   
@@ -241,6 +238,3 @@ ms.locfileid: "51778406"
  [定義要擴充 UML 的設定檔](../modeling/define-a-profile-to-extend-uml.md)   
  [在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)
-
-
-

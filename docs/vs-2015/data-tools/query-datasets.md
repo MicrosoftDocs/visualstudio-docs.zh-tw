@@ -1,22 +1,20 @@
 ---
 title: 查詢資料集 |Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2a5fd14f4cbc07fbd1ebac0eeefaa039dece188d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890565"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941351"
 ---
 # <a name="query-datasets"></a>查詢資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +61,7 @@ ms.locfileid: "49890565"
      [!code-csharp[VbRaddataEditing#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#20)]
      [!code-vb[VbRaddataEditing#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#20)]  
   
-## <a name="accessrelated-records"></a>Accessrelated 記錄  
+## <a name="access-related-records"></a>存取相關的記錄  
  當資料集內的資料表彼此相關時，<xref:System.Data.DataRelation>物件可以提供相關的記錄另一個資料表中。 例如，一個資料集，其中包含`Customers`和`Orders`資料表可以成為可用。  
   
  您可以使用<xref:System.Data.DataRelation>物件，以找出相關的記錄，藉由呼叫<xref:System.Data.DataRow.GetChildRows%2A>方法<xref:System.Data.DataRow>父資料表中。這個方法會傳回相關的子記錄的陣列。 您也可以呼叫<xref:System.Data.DataRow.GetParentRow%2A>方法的<xref:System.Data.DataRow>子資料表中。這個方法會傳回單一<xref:System.Data.DataRow>父資料表中。  
@@ -71,7 +69,7 @@ ms.locfileid: "49890565"
  此頁面提供使用具類型資料集的範例。 瀏覽關聯性中不具類型資料集的相關資訊，請參閱[巡覽 Datarelation](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e)。  
   
 > [!NOTE]
->  如果您是在 Windows Forms 應用程式中，而且顯示的資料使用的資料繫結功能，設計工具所產生的表單可能會提供足夠的功能，您的應用程式。 如需詳細資訊，請參閱 <<c0> [ 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。 具體來說，請參閱 <<c0> [ 如何： 顯示 Windows Forms 應用程式中的相關資料](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md)並[逐步解說： 顯示 Windows Form 上的相關資料](../data-tools/walkthrough-displaying-related-data-on-a-windows-form.md)。  
+> 如果您是在 Windows Forms 應用程式中，而且顯示的資料使用的資料繫結功能，設計工具所產生的表單可能會提供足夠的功能，您的應用程式。 如需詳細資訊，請參閱 <<c0> [ 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。  
   
  下列程式碼範例示範如何瀏覽向上和向下中具類型資料集的關聯性。 程式碼範例使用具類型<xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) 並已產生`FindBy` *PrimaryKey* (`FindByCustomerID`) 方法，以找出所需的資料列，並傳回相關的記錄。 範例正確編譯和執行只有當您擁有：  
   
@@ -81,7 +79,7 @@ ms.locfileid: "49890565"
   
 - 名為的關聯性`FK_Orders_Customers`與可用的兩個資料表相關的程式碼範圍  
   
-  此外，這兩個資料表需要填滿要傳回的任何記錄的資料。  
+此外，這兩個資料表需要填滿要傳回的任何記錄的資料。  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>傳回子系的已選取的父記錄的記錄  
   
@@ -96,4 +94,3 @@ ms.locfileid: "49890565"
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]
-

@@ -1,14 +1,9 @@
 ---
 title: 將屬性公開至 [屬性] 視窗 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - properties [Visual Studio SDK], exposing in Property Browser
 - properties [Visual Studio SDK]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 026e7de7d56cb907682be52db2dbd32782822d9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4194ed3bac4d027b2bbf3cadd574f67343c0ae80
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756902"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944031"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>將屬性公開至屬性視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -275,4 +270,3 @@ ms.locfileid: "51756902"
   
 ## <a name="see-also"></a>另請參閱  
  [擴充屬性和屬性視窗](../extensibility/extending-properties-and-the-property-window.md)
-

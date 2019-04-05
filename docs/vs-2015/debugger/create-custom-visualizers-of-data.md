@@ -1,14 +1,9 @@
 ---
 title: 建立資料的自訂視覺化檢視 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d8433af07b5f1315e73e6916e58123fcd14bddf0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f890277190b9b4d28873e1fe394abdcd95b8a3a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792850"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939526"
 ---
 # <a name="create-custom-visualizers-of-data"></a>建立資料的自訂視覺化檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,16 +50,13 @@ ms.locfileid: "51792850"
 ## <a name="in-this-section"></a>本節內容  
  [如何：撰寫視覺化檢視](../debugger/how-to-write-a-visualizer.md)  
   
- [逐步解說：在 C# 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [逐步解說：使用 C# 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
   
  [如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)  
   
- [如何：測試和偵錯視覺化檢視](../debugger/how-to-test-and-debug-a-visualizer.md)  
+ [如何：對視覺化檢視進行測試和偵錯](../debugger/how-to-test-and-debug-a-visualizer.md)  
   
  [視覺化檢視 API 參考](../debugger/visualizer-api-reference.md)  
   
 ## <a name="related-sections"></a>相關章節  
  [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)
-
-
-

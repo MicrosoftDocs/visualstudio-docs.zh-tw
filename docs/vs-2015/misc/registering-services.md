@@ -1,30 +1,25 @@
 ---
 title: 註冊服務 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
-manager: douge
-ms.openlocfilehash: e5d8aa9e6652aa41e59d160c5cf25aacd3390572
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 64f2afa6e853978e919e466f91475bed1e8d698c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219683"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942012"
 ---
 # <a name="registering-services"></a>註冊服務
-若要支援依需求載入，服務提供者必須向 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 註冊其全域服務。  
+若要支援依需求載入，服務提供者必須向 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]註冊其全域服務。  
   
- 在開發期間，將屬性加入封裝的原始程式碼，然後在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中建置封裝，受管理服務提供者即會註冊服務和服務覆寫。 這會在產生的組件上執行 RegPkg.exe 公用程式，並註冊封裝，然後準備進行部署。 如需詳細資訊，請參閱 <<c0> [ 如何： 註冊服務](../misc/how-to-register-a-service.md)。  
+ 在開發期間，將屬性加入封裝的原始程式碼，然後在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中建置封裝，受管理服務提供者即會註冊服務和服務覆寫。 這會在產生的組件上執行 RegPkg.exe 公用程式，並註冊封裝，然後準備進行部署。 如需詳細資訊，請參閱[如何：註冊服務](../misc/how-to-register-a-service.md)。  
   
  未受管理的服務提供者必須在系統登錄的 [services] 區段或 [service overrides] 區段中，向 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 註冊它們所提供的服務。 下列 .reg 檔案片段顯示可能會如何登錄 SVsTextManager 服務：  
   

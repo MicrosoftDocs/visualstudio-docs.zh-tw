@@ -1,29 +1,24 @@
 ---
-title: 如何： 使用搜尋工具 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用搜尋工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5fe233182115c8e10e78f59870d92eed69b8c492
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 780cbcf5c6e03c5534b7f2125662696344e9cec4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747086"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941369"
 ---
-# <a name="how-to-use-the-finder-tool"></a>如何：使用搜尋工具
+# <a name="how-to-use-the-finder-tool"></a>HOW TO：使用搜尋工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用搜尋工具，在**尋找視窗**對話方塊，即可顯示視窗屬性或訊息。 搜尋工具也可以找出已停用的子視窗，並分辨哪一個視窗，反白顯示，如果停用子視窗重疊。  
@@ -54,14 +49,11 @@ ms.locfileid: "51747086"
   
 4.  底下**顯示**，選取**屬性**或是**訊息**。  
   
-5.  按下**確定**。  
+5.  按 [確定]。  
   
      如果您選取**屬性**，則[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)隨即開啟。 如果您選取**訊息**，則[訊息檢視](../debugger/messages-view.md)視窗隨即開啟。  
   
 ## <a name="see-also"></a>另請參閱  
- [Spy + + 檢視](../debugger/spy-increment-views.md)   
- [使用 Spy + +](../debugger/using-spy-increment.md)   
+ [Spy++ 檢視](../debugger/spy-increment-views.md)   
+ [使用 Spy++](../debugger/using-spy-increment.md)   
  [Spy++ 參考](../debugger/spy-increment-reference.md)
-
-
-

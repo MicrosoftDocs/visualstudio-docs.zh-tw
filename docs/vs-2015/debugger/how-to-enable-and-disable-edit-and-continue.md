@@ -1,14 +1,9 @@
 ---
-title: 如何： 啟用和停用編輯後繼續 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：啟用和停用編輯後繼續 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -29,15 +24,15 @@ ms.assetid: fd961a1c-76fa-420d-ad8f-c1a6c003b0db
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5709b4bdae55c0ade6ca4559dcbaad8d66c0bbac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0fe1af00bde865b98fb165efe109fe1bb5cabd49
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781253"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59000454"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue"></a>如何：啟用和停用編輯後繼續
+# <a name="how-to-enable-and-disable-edit-and-continue"></a>HOW TO：啟用和停用編輯後繼續
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以停用或啟用編輯後繼續中的**選項**在設計階段的對話方塊。 但是在進行偵錯時，無法變更這項設定。  
@@ -55,7 +50,7 @@ ms.locfileid: "51781253"
 3. 若要啟用，請選取**啟用編輯後繼續**核取方塊。 若要停用，請清除該核取方塊。  
   
    > [!NOTE]
-   >  如果已啟用 IntelliTrace，而且您同時收集 IntelliTrace 事件和呼叫資訊，則會停用 [編輯後繼續]。 如需詳細資訊，請參閱 <<c0> [ 設定 IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
+   >  如果已啟用 IntelliTrace，而且您同時收集 IntelliTrace 事件和呼叫資訊，則會停用 [編輯後繼續]。 如需詳細資訊，請參閱 <<c0> [ 設定 IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   
 4. 按一下 [確定 **Deploying Office Solutions**]。  
   
@@ -63,6 +58,3 @@ ms.locfileid: "51781253"
   
 ## <a name="see-also"></a>另請參閱  
  [編輯後繼續](../debugger/edit-and-continue.md)
-
-
-

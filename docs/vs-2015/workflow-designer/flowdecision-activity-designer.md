@@ -1,11 +1,8 @@
 ---
 title: FlowDecision 活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
@@ -13,13 +10,13 @@ ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7109b779cf33d226f44853e3f67c8609bd42fc1b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 46ff7dc7ae79ae8bf269a7a3d3cad780ad7654bb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212884"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939577"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision 活動設計工具
 <xref:System.Activities.Statements.FlowDecision> 節點是條件式節點，會根據是否滿足指定條件來提供控制流程的二選一分支。 如果流程要求兩個以上的分支，請改用 <xref:System.Activities.Statements.FlowSwitch%601>。  
@@ -39,7 +36,7 @@ ms.locfileid: "49212884"
 ### <a name="the-flowdecision-properties"></a>FlowDecision 屬性  
  下表顯示 <xref:System.Activities.Statements.FlowDecision> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中或在設計工具介面上編輯。  
   
-|屬性名稱|必要項|使用方式|  
+|屬性名稱|必要|使用量|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|判斷流程控制要採取的條件限制。|  
 |<xref:System.Activities.Statements.FlowDecision.True%2A>|False|如果滿足 <xref:System.Activities.Statements.FlowDecision.Condition%2A> 的條件，則由流程控制採取的路徑。|  
@@ -48,4 +45,4 @@ ms.locfileid: "49212884"
 ## <a name="see-also"></a>另請參閱  
  [流程圖](../workflow-designer/flowchart-activity-designers.md)   
  [流程圖](../workflow-designer/flowchart-activity-designer.md)   
- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)
+ [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)

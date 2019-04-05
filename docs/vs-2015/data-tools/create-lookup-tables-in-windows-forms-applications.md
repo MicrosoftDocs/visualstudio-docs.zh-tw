@@ -1,12 +1,9 @@
 ---
 title: 在 Windows Forms 應用程式中建立查閱資料表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +16,13 @@ ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 334acba1e70545f1f8be758e34c8fc4843878406
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7f0abb70297436e75bbe4d9b6b24b4aeb3a7a341
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223884"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941767"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows Forms 應用程式中建立查閱資料表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,10 +36,10 @@ ms.locfileid: "49223884"
   
 ## <a name="to-databind-a-lookup-control"></a>資料繫結的查閱控制項  
   
-1.  開啟**Zdroje dat**視窗。  
+1.  開啟 [資料來源] 視窗。  
   
     > [!NOTE]
-    >  查閱資料表需要兩個相關的資料表或物件會提供**Zdroje dat**視窗。 如需詳細資訊，請參閱[如何：在 Windows Forms 應用程式中顯示相關的資料](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md)。  
+    > 查閱資料表需要兩個相關的資料表或物件會提供**Zdroje dat**視窗。
   
 2.  展開中的節點**Zdroje dat**視窗內，直到您可以看到父資料表和所有其資料行和關聯的子資料表和其所有資料行。  
   
@@ -55,7 +52,7 @@ ms.locfileid: "49223884"
   
 5.  從主要子資料表節點拖曳**Zdroje dat**視窗拖曳至表單。  
   
-     資料繫結控制項 （具有描述性的標籤） 和工具帶狀 (<xref:System.Windows.Forms.BindingNavigator>) 在表單上顯示。 A[資料集](../data-tools/dataset-tools-in-visual-studio.md)， [TableAdapter](../data-tools/tableadapter-overview.md)， <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>會出現在元件匣。  
+     資料繫結控制項 （具有描述性的標籤） 和工具帶狀 (<xref:System.Windows.Forms.BindingNavigator>) 在表單上顯示。 A[資料集](../data-tools/dataset-tools-in-visual-studio.md)，TableAdapter，並<xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>會出現在元件匣。  
   
 6.  現在將從主要的父資料表節點拖曳**資料來源**視窗直接拖曳查閱控制項 ( <xref:System.Windows.Forms.ComboBox>)。  
   
@@ -70,4 +67,3 @@ ms.locfileid: "49223884"
   
 ## <a name="see-also"></a>另請參閱  
  [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

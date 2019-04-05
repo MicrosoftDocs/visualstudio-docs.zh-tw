@@ -1,14 +1,9 @@
 ---
 title: 將功能表命令當地語系化 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - localize
 - localization
@@ -19,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b16771e4d47416f09774ce2f4765de9d6023e94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27be664fb035af2c97f0536026b590c468b68b9e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753886"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941291"
 ---
 # <a name="localizing-menu-commands"></a>將功能表命令當地語系化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ ms.locfileid: "51753886"
   
       下列範例會顯示英文和西班牙文按鈕文字，以開啟家譜 Explorer 工具視窗命令。  
   
-      [FamilyTree.en US.vsct]  
+      [FamilyTree.en-US.vsct]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -66,7 +61,7 @@ ms.locfileid: "51753886"
    </Button>  
    ```  
   
-    [FamilyTree.es ES.vsct]  
+    [FamilyTree.es-ES.vsct]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -97,7 +92,7 @@ ms.locfileid: "51753886"
   
 5.  開啟每個.resx 檔案，以修改適用於特定的語言和文化特性的字串值。 下列範例會顯示工具視窗的標題列的當地語系化的資源定義。  
   
-     [Resources.en-us.resx]  
+     [Resources.en-US.resx]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -164,4 +159,3 @@ ms.locfileid: "51753886"
  [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)   
  [MenuCommand 對比OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)   
  [全球化和當地語系化](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02)
-

@@ -1,14 +1,9 @@
 ---
 title: 建立 ClickOnce 應用程式供其他人部署 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -29,13 +24,13 @@ ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 049d557959a53c00be461a2b0e44338216c7e3a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862082"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942329"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>建立 ClickOnce 應用程式供其他人部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ ms.locfileid: "49862082"
   
  使用自我簽署的憑證的部署資訊清單有幾個優點。 取得或建立自己的 Authenticode 憑證，客戶無須`<useManifestForTrust>`可簡化部署的客戶，同時讓開發人員維護自己的應用程式的商標身分識別。 結果是一組的帶正負號的部署更安全且具有唯一的應用程式身分識別。 這樣就不可能從同一個應用程式部署至多個客戶可能會發生的衝突。  
   
- 如需如何建立與 ClickOnce 部署的逐步資訊`<useManifestForTrust>`啟用，請參閱[逐步解說： 手動部署 ClickOnce 應用程式，並不需要重新簽署和該會保留商標資訊](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ 如需如何建立與 ClickOnce 部署的逐步資訊`<useManifestForTrust>`啟用，請參閱[逐步解說：手動部署 ClickOnce 應用程式不需要重新簽署而且會保留商標資訊](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)。  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>信任適用於在執行階段如何應用程式資訊清單  
  若要進一步了解使用信任的應用程式資訊清單的運作方式在執行階段，請考慮下列的範例。 .NET Framework 3.5 為目標的 ClickOnce 應用程式是由 Microsoft 建立的。 應用程式資訊清單使用`<useManifestForTrust>`項目和經過 Microsoft 簽署。 Adventure Works 使用自我簽署的憑證簽署部署資訊清單。 Adventure Works 用戶端會設定為信任由 Microsoft 所簽署的任何應用程式。  
@@ -108,7 +103,4 @@ ms.locfileid: "49862082"
 ## <a name="see-also"></a>另請參閱  
  [部署 ClickOnce 應用程式進行測試和實際執行伺服器，但不重新簽署](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
  [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [逐步解說：手動部署不需要重新簽署而且會保留商標資訊的 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
-
-
-
+ [逐步解說：手動部署不需要重新簽署而且會保留商標資訊的 ClickOnce 應用程式](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)

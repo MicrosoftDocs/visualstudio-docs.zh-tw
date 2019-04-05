@@ -1,34 +1,29 @@
 ---
 title: 使用 Windows Installer 安裝 Vspackage |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], with Windows Installer
 - VSPackages, deploying
 ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5a43f48c337751c989af37c49a361ae011aa4e16
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8d5b22479996bca6ee69c1334d79f012024b865d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942966"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>使用 Windows Installer 安裝 VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 整合到 VSPackage[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]需要不只將檔案複製到使用者的電腦。 VSPackage 的安裝程式必須安裝 VSPackage 和其相依的檔案，並註冊及整合到[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 VSPackage 可以利用整合功能，例如上顯示圖示[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]啟動顯示畫面和 [關於] 對話方塊。  
   
- Microsoft Windows Installer 檔案的建議方式是將您的 Vspackage。 方便使用 Windows Installer 封裝可以在 支援的任何 Windows 作業系統上執行[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 < [Windows Installer](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)。  
+ Microsoft Windows Installer 檔案的建議方式是將您的 Vspackage。 方便使用 Windows Installer 封裝可以在 支援的任何 Windows 作業系統上執行[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 < [Windows Installer](http://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)。  
   
 ## <a name="in-this-section"></a>本節內容  
  [Windows Installer 基本概念](../../extensibility/internals/windows-installer-basics.md)  
@@ -55,7 +50,7 @@ ms.locfileid: "51733914"
  [部署專案類型](../../extensibility/internals/deploying-project-types.md)  
  討論如何使用新的專案類型彙總工具適用於 managed 程式碼專案類型。  
   
- [如何︰產生安裝程式的登錄資訊](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
+ [如何：產生安裝程式的登錄資訊](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
  說明如何使用 RegPkg.exe 產生 managed VSPackage 註冊資訊清單。  
   
  [必須在安裝後執行的命令](../../extensibility/internals/commands-that-must-be-run-after-installation.md)  
@@ -67,4 +62,3 @@ ms.locfileid: "51733914"
 ## <a name="related-sections"></a>相關章節  
  [安裝 VSPackage](../../misc/installing-vspackages.md)  
  討論如何建置和安裝 Vspackage 以及如何支援使用者執行多個版本的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]在相同的時間。
-

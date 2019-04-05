@@ -1,26 +1,21 @@
 ---
 title: 使用舊版 API 中的文字標記 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 600e9635fb0ee5ea78226277860ac41e183f47b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af08f5c2b487505b1c0800db852760c2f139dae0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745913"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939775"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>使用舊版 API 中的文字標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,14 +29,14 @@ ms.locfileid: "51745913"
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|描述|  
+|標題|說明|  
 |-----------|-----------------|  
 |[如何：新增標準文字標記](../extensibility/how-to-add-standard-text-markers.md)|描述如何將所提供的標準文字標記類型[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心編輯器文字檢視。|  
 |[如何：實作錯誤標記](../extensibility/how-to-implement-error-markers.md)|描述如何實作的執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]用以使用紅色波浪底線指出錯誤的標記。|  
 |[如何：建立自訂文字標記](../extensibility/how-to-create-custom-text-markers.md)|描述如何建立並加入文字檢視中的自訂文字標記類型。|  
 |[如何：使用文字標記](../extensibility/how-to-use-text-markers.md)|說明如何新增文字標記。|  
 |[深入探索核心編輯器](../extensibility/inside-the-core-editor.md)|描述核心編輯器的功能，並提供有關如何自訂核心編輯器的詳細資料。|  
-|[編輯器功能](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|描述可用的功能[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心編輯器。|  
+|[編輯器功能](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|描述可用的功能[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心編輯器。|  
   
 ## <a name="reference"></a>參考資料  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
@@ -76,4 +71,3 @@ ms.locfileid: "51745913"
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
  提供存取權，並使用一維座標調整文字緩衝區中的文字標記的位置。 如果可能，請勿使用此介面。
-

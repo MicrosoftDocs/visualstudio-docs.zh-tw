@@ -1,26 +1,21 @@
 ---
 title: 管理方案中的專案載入 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, managing project loading
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 041c5ab52a7a0e8be89ef1abe6db4d1aed51ecfc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0ce2f80aa50c3222797d925a888e5c004b21512d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781760"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941230"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>管理方案中的專案載入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,17 +80,17 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 ## <a name="handling-solution-load-events"></a>事件處理解決方案載入  
  若要訂閱的方案載入事件，請呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A>當您啟用您的方案負載管理員。 如果您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>，您可以回應不同的專案載入優先順序與相關的事件。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>： 開啟方案之前，會引發這項目。 您可以使用它來變更專案載入方案中專案的優先順序。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>：開啟方案之前，會引發這項目。 您可以使用它來變更專案載入方案中專案的優先順序。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>： 這會引發之後，方案已完全載入，但在背景之前載入的專案重新開始。 例如，使用者可能已存取負載優先順序是 LoadIfNeeded，專案或方案負載管理員可能已變更的專案載入優先順序為 BackgroundLoad，則會開始該專案的背景載入。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>：解決方法是完全載入，但是背景之前載入的專案重新開始之後，就會引發這項目。 例如，使用者可能已存取負載優先順序是 LoadIfNeeded，專案或方案負載管理員可能已變更的專案載入優先順序為 BackgroundLoad，則會開始該專案的背景載入。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>： 這之後就會引發一開始會完全載入方案時，有解決方案負載管理員。 它也會引發之後背景負載或隨選載入解決方案會變得完全載入時。 在此同時，<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid>就會重新啟動。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>：這之後就會引發一開始會完全載入方案時，有解決方案負載管理員。 它也會引發之後背景負載或隨選載入解決方案會變得完全載入時。 在此同時，<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid>就會重新啟動。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>： 這會引發之前載入的專案 （或專案）。 若要確保載入專案之前，完成其他背景處理程序，將`pfShouldDelayLoadToNextIdle`要 **，則為 true**。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>：這會引發之前載入的專案 （或專案）。 若要確保載入專案之前，完成其他背景處理程序，將`pfShouldDelayLoadToNextIdle`要 **，則為 true**。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>： 這會在即將載入專案的批次時引發。 如果`fIsBackgroundIdleBatch`為 true，如果專案是在背景; 載入`fIsBackgroundIdleBatch`為 false，是要載入以同步方式要求的結果使用者，例如使用者如果展開方案總管 中的擱置專案的專案。 您也可以將此選項以執行耗費資源的工作，否則會需要在實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>：這會在即將載入專案的批次時引發。 如果`fIsBackgroundIdleBatch`為 true，如果專案是在背景; 載入`fIsBackgroundIdleBatch`為 false，是要載入以同步方式要求的結果使用者，例如使用者如果展開方案總管 中的擱置專案的專案。 您也可以將此選項以執行耗費資源的工作，否則會需要在實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>： 已載入專案的批次之後，就會引發這項目。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>：已載入專案的批次之後，就會引發這項目。  
   
 ## <a name="detecting-and-managing-solution-and-project-loading"></a>偵測及管理方案和專案載入  
  若要偵測的專案和方案載入狀態，請呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A>具有下列值：  
@@ -120,4 +115,3 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
   
 > [!NOTE]
 >  。 根據預設只需要在專案載入，並會載入背景負載優先順序，但如果<xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS>旗標會傳遞至方法中，將會載入所有專案，但標示要明確載入的項目除外。
-

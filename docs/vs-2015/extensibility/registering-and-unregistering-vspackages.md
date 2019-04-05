@@ -1,27 +1,22 @@
 ---
 title: 註冊及取消註冊 Vspackage |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: e25e7a46-6a55-4726-8def-ca316f553d6b
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e14422b7430dc0429954bf11c77b30619fb7f7da
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1f6bc85fb00c15831dcf1a9f64e4b886272df218
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943889"
 ---
 # <a name="registering-and-unregistering-vspackages"></a>註冊和取消註冊 VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,4 +52,3 @@ public sealed class BasicPackage : Package
   
 ## <a name="see-also"></a>另請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)
-

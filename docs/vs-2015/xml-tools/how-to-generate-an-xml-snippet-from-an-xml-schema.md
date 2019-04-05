@@ -1,25 +1,20 @@
 ---
-title: 如何： 從 XML 結構描述產生的 XML 程式碼片段 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：產生 XML 片段的 XML 結構描述 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6eb03fba400e20227155a2528b8aaf0b28f7761a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ec2d14a03649b63a068d2e0a95877ccd03ddf97a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951466"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930236"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>HOW TO：從 XML 結構描述產生 XML 片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,7 +140,7 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
 </xs:schema>  
 ```  
   
-### <a name="output"></a>輸出  
+### <a name="output"></a>Output  
  下列是根據與 `Contact` 項目相關聯的結構描述資訊產生的 XML 資料。 項目會標示為`bold`指定 XML 片段中可編輯的欄位。  
   
 ```  
@@ -161,7 +156,4 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
   
 ## <a name="see-also"></a>另請參閱  
  [XML 程式碼片段](../xml-tools/xml-snippets.md)   
- [如何：使用 XML 片段](../xml-tools/how-to-use-xml-snippets.md)
-
-
-
+ [如何：使用 XML 程式碼片段](../xml-tools/how-to-use-xml-snippets.md)

@@ -1,25 +1,22 @@
 ---
 title: DSL 定義的屬性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: 38debcfe-e1a6-4a3f-9d69-3ab07520f2b6
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50b4325d2329bbaf402dcf2f059c51b5a796bdcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 804236cadf97dda0b21cf145a4cd4c932e08b097
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197362"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945097"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定義的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,24 +30,21 @@ DslDefinition 屬性會定義*定義域專屬語言*定義屬性，例如版本�
 |屬性|描述|預設|  
 |--------------|-----------------|-------------|  
 |存取修飾詞|判斷領域類別的存取修飾詞為公用或內部。|public|  
-|自訂屬性|自訂定義網域類別的屬性。<br /><br /> **請注意**使用瀏覽按鈕以新增屬性。|\<無 >|  
+|自訂屬性|自訂定義網域類別的屬性。<br /><br /> **請注意**使用瀏覽按鈕以新增屬性。|\<無>|  
 |公司名稱|目前的公司名稱，在系統登錄的名稱。|目前的公司名稱|  
 |名稱|這個領域類別的名稱。|目前的名稱|  
 |命名空間|與此領域類別相關的命名空間。|目前的命名空間|  
-|套件 Guid|Guid[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]此 DSL 產生的封裝。|\<無 >|  
-|封裝命名空間|命名空間[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]此 DSL 產生的封裝。|\<無 >|  
-|產品名稱|要註冊的產品名稱[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]此 DSL 產生的封裝。|\<無 >|  
-|注意|與此領域類別相關聯的資訊。|\<無 >|  
-|描述|此網域類別的描述。|\<無 >|  
-|顯示名稱|將會顯示在這個網域類別產生的設計工具的名稱。|\<無 >|  
-|說明關鍵字|與此領域類別相關聯的 help 關鍵字。|\<無 >|  
+|套件 Guid|Guid[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]此 DSL 產生的封裝。|\<無>|  
+|封裝命名空間|命名空間[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]此 DSL 產生的封裝。|\<無>|  
+|產品名稱|要註冊的產品名稱[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]此 DSL 產生的封裝。|\<無>|  
+|注意|與此領域類別相關聯的資訊。|\<無>|  
+|描述|此網域類別的描述。|\<無>|  
+|顯示名稱|將會顯示在這個網域類別產生的設計工具的名稱。|\<無>|  
+|說明關鍵字|與此領域類別相關聯的 help 關鍵字。|\<無>|  
 |組建|如需此特定領域語言定義累加的組建編號。|0|  
 |主要版本|此特定領域語言定義增量的主要組建編號。|1|  
 |次要版本|如需此特定領域語言定義增量的次要組建數目。|0|  
 |修訂|累加修訂建置這個特定領域語言定義的數字。|0|  
   
 ## <a name="see-also"></a>另請參閱  
- [特定領域語言工具字彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

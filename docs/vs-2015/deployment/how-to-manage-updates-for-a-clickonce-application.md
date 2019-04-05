@@ -1,14 +1,9 @@
 ---
-title: 如何： 管理 ClickOnce 應用程式的更新 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：管理 ClickOnce 應用程式的更新 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
 dev_langs:
@@ -24,15 +19,15 @@ ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: adf0a6df54c3e6bd758896ac8a836b6174e767b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9781745af5d65d497652002c9afcd8132058ffb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272463"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944245"
 ---
-# <a name="how-to-manage-updates-for-a-clickonce-application"></a>如何：管理 ClickOnce 應用程式中的更新
+# <a name="how-to-manage-updates-for-a-clickonce-application"></a>HOW TO：管理 ClickOnce 應用程式的更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式可以自動或以程式設計方式檢查更新。 身為開發人員，您會有更多的彈性，指定何時和如何執行更新檢查、 更新是否為必要項目，以及應用程式應該檢查更新。  
@@ -43,7 +38,7 @@ ms.locfileid: "49272463"
   
  您也可以部署您的應用程式，從一個位置，然後從另一個更新。 請參閱 「 若要指定不同的更新位置。 」 的程序  
   
- 如需詳細資訊，請參閱 <<c0> [ 選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
+ 如需詳細資訊，請參閱[選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
   
  在中管理更新行為**應用程式更新** 對話方塊中，可從**發佈**頁面**專案設計工具。**  
   
@@ -51,7 +46,7 @@ ms.locfileid: "49272463"
   
 1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [**發佈**] 索引標籤。  
+2.  按一下 [發佈] 索引標籤。  
   
 3.  按一下 **更新** 按鈕以開啟**應用程式更新** 對話方塊。  
   
@@ -59,11 +54,11 @@ ms.locfileid: "49272463"
   
 5.  在 **選擇此應用程式應該檢查更新**區段中，選取**應用程式啟動之前**。 這可確保一律連線到網路的使用者執行應用程式，使用最新的更新。  
   
-### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>應用程式啟動後，檢查有在背景中的更新  
+### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>在應用程式啟動之後，於背景檢查更新  
   
 1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [**發佈**] 索引標籤。  
+2.  按一下 [發佈] 索引標籤。  
   
 3.  按一下 **更新** 按鈕以開啟**應用程式更新** 對話方塊。  
   
@@ -77,7 +72,7 @@ ms.locfileid: "49272463"
   
 1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [**發佈**] 索引標籤。  
+2.  按一下 [發佈] 索引標籤。  
   
 3.  按一下 **更新** 按鈕以開啟**應用程式更新** 對話方塊。  
   
@@ -89,7 +84,7 @@ ms.locfileid: "49272463"
   
 1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [**發佈**] 索引標籤。  
+2.  按一下 [發佈] 索引標籤。  
   
 3.  按一下 **更新** 按鈕以開啟**應用程式更新** 對話方塊。  
   
@@ -101,7 +96,7 @@ ms.locfileid: "49272463"
   
 1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [**發佈**] 索引標籤。  
+2.  按一下 [發佈] 索引標籤。  
   
 3.  按一下 **更新** 按鈕以開啟**應用程式更新** 對話方塊。  
   
@@ -109,17 +104,14 @@ ms.locfileid: "49272463"
   
 5.  在 **更新位置**欄位中，輸入完整的 URL，並使用格式的更新位置 http://Hostname/ApplicationName，或 UNC 路徑，使用格式\\\Server\ApplicationName 或按一下 **瀏覽**按鈕來瀏覽的更新位置。 更新位置就是應用程式將在其中尋找本身的更新版本。  
   
-6.  使用者會選取檢查更新的 Windows Form 上建立按鈕、 功能表項目或其他使用者介面項目。 從該項目的事件處理常式，呼叫方法來檢查並安裝更新。 您可以找到這種方法在 Visual Basic 和 Visual C# 程式碼範例[如何： 檢查是否有應用程式更新以程式設計方式使用 ClickOnce 部署 API](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)。  
+6.  使用者會選取檢查更新的 Windows Form 上建立按鈕、 功能表項目或其他使用者介面項目。 從該項目的事件處理常式，呼叫方法來檢查並安裝更新。 您可以找到範例的 Visual Basic 和 VisualC#中的這類方法的程式碼[如何：檢查以程式設計方式使用 ClickOnce 部署 API 的應用程式更新](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)。  
   
 7.  建置您的應用程式。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.Deployment.Application.ApplicationDeployment>   
- [應用程式 [更新] 對話方塊](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
+ [應用程式 [更新] 對話方塊](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
  [選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
- [如何：使用發行精靈發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [如何：使用 ClickOnce 部署 API 以程式設計方式檢查應用程式更新](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
-
-
-
+ [如何：發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [如何：使用 ClickOnce 部署 API 以程式檢查應用程式更新](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

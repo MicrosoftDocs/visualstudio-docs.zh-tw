@@ -1,25 +1,22 @@
 ---
-title: 如何： 開啟複數表示開啟和關閉 （O-R 設計工具） |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將複數表示開啟和關閉 （O-R 設計工具） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f4491f25a861b8556ae5018e526349d6a17187a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ff3f206f57a544053498def16318e0ed65b64ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279106"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938749"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>如何： 開啟和關閉 （O/R 設計工具） 的複數表示
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>HOW TO：開啟和關閉複數表示 (O/R 設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -34,12 +31,12 @@ ms.locfileid: "49279106"
   
 1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。  
   
-2.  在 **選項**對話方塊方塊中，展開**Database**。  
+2.  展開 [選項] 對話方塊中的 [資料庫工具]。  
   
 > [!NOTE]
->  選取 **顯示所有設定**如果**Database**看不到節點。  
+>  如果看不到 [資料庫工具] 節點，請選取 [顯示所有設定]。  
   
-1.  按一下  **O/R Designer**。  
+1.  按一下 [O/R 設計工具]。  
   
 2.  設定**名稱的複數表示**要**已啟用** = **False**設[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，讓它不會變更類別名稱。  
   
@@ -49,4 +46,3 @@ ms.locfileid: "49279106"
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)
-

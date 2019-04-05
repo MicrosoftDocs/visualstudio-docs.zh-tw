@@ -1,29 +1,24 @@
 ---
-title: 產生新專案︰ 深入來看，第一部 |Microsoft Docs
-ms.custom: ''
+title: 新專案產生：在幕後，第一部 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f1181cb3f84471727b181bb1ff91b69e8613b8a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942358"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>產生新專案︰深入探討，第一部分
+# <a name="new-project-generation-under-the-hood-part-one"></a>新專案產生：一探究竟，第一部份
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 有人想到要如何建立您自己的專案類型嗎？ 不知道實際發生什麼事時建立新的專案？ 讓我們來看一下在幕後，並請參閱什麼實際狀況。  
@@ -83,7 +78,7 @@ devenv /installvstemplates
   
  如果您查詢中的鄰近的套件金鑰的 GUID，並檢查 SatelliteDll 子機碼，您可以找到包含字串資源的組件的路徑：  
   
- \<Visual Studio 安裝路徑 > \VC#\VCSPackages\1033\csprojui.dll  
+ \<Visual Studio installation path>\VC#\VCSPackages\1033\csprojui.dll  
   
  若要確認，請開啟 [檔案總管] csprojui.dll 拖到 Visual Studio 目錄... 字串資料表顯示資源 # 2345年標題**Visual C#**。  
   
@@ -97,7 +92,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  如果這個子機碼存在時，根節點的位置會受到開發人員設定 對話方塊。 例如，套用至物件的  
   
- DeveloperActivity REG_SZ VC #  
+ DeveloperActivity REG_SZ VC#  
   
  表示 Visual C# 將根節點如果 Visual Studio 設定[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]開發。 否則，它是子節點**其他語言**。  
   
@@ -128,7 +123,7 @@ devenv /installvstemplates
 -   可以變更排序次序。  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>尋找專案類型的根節點  
- 當 Visual Studio 會周遊 ProjectTemplates 資料夾時，它會開啟所有的.zip 檔案，並擷取任何.vstemplate 檔案。 .Vstemplate 檔案使用 XML 來描述應用程式範本。 如需詳細資訊，請參閱 <<c0> [ 產生新專案： Under the Hood、 第二段](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
+ 當 Visual Studio 會周遊 ProjectTemplates 資料夾時，它會開啟所有的.zip 檔案，並擷取任何.vstemplate 檔案。 .Vstemplate 檔案使用 XML 來描述應用程式範本。 如需詳細資訊，請參閱[產生新專案：在幕後，第二部](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
   
  \<ProjectType > 標記決定應用程式的專案類型。 比方說，\CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip 檔案包含具有此標記的 EmptyProject.vstemplate 檔案：  
   
@@ -220,5 +215,4 @@ devenv /installvstemplates
     **MyProjectNode**做為子節點的 Visual C# 中的 [Windows] 節點下，只會出現。  
   
 ## <a name="see-also"></a>另請參閱  
- [產生新專案︰深入探討，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
-
+ [新的專案產生：在幕後，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

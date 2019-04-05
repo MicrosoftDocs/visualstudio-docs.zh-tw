@@ -1,14 +1,9 @@
 ---
 title: 準備偵錯 ASP.NET |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: d65d7299-51dd-4337-b334-aa1cbb37b77e
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 70cf3eacea28a0612ac4b97acfd84758163ea88f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0e5eb3173a90478266e1a5a5b7c9eb19243278d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793502"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942395"
 ---
 # <a name="preparing-to-debug-aspnet"></a>準備偵錯 ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,10 +41,10 @@ ms.locfileid: "51793502"
  [Web 應用程式遠端偵錯的必要條件](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
  列出在遠端伺服器偵錯 Web 應用程式的先決條件。  
   
- [如何： 在 Windows Server 2003 上設定 IIS](http://msdn.microsoft.com/en-us/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
+ [如何：Windows Server 2003 上設定 IIS](http://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
  討論在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 中偵錯 [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] 之偵錯系統需求所需的特殊組態步驟。  
   
- [如何：偵錯自我裝載的 WCF 服務](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
+ [如何：針對自我裝載的 WCF 服務進行偵錯](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
  說明未裝載於 IIS 或 ASP.NET 程式開發伺服器上之 WCF 服務的偵錯步驟。  
   
 ## <a name="related-sections"></a>相關章節  
@@ -62,6 +57,3 @@ ms.locfileid: "51793502"
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)   
  [ASP.NET 和 IIS 組態](http://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)
-
-
-

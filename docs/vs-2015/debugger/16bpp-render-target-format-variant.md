@@ -1,25 +1,20 @@
 ---
 title: 16bpp 呈現目標格式變異 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bf00bf536e5f1ee140a818ee59c66703906860f0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ee5112f27498bfa14d742469478cc4961f3cc7b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727645"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942651"
 ---
 # <a name="16bpp-render-target-format-variant"></a>16bpp 呈現目標格式變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,6 +56,3 @@ target_description.BindFlags = D3D11_BIND_RENDER_TARGET;
 target_description.Format = DXGI_FORMAT_B5G6R5_UNORM;  
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);  
 ```
-
-
-

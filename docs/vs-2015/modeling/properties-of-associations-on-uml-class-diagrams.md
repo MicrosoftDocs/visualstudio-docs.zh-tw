@@ -1,12 +1,9 @@
 ---
 title: 類別圖表中的 uml 的關聯性屬性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.association.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: f82bcd34-7903-4c00-8da1-613efa07d223
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b132ee2aa0f67662fcfcad92b8ae945c2d66c680
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4a322ea68053012a2e8f53993f06768b966cb61d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810277"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941869"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>UML 類別圖上的關聯性屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ ms.locfileid: "51810277"
 |**名稱 (1)**|識別關聯。 這也會顯示在圖表上，接近關聯的中間點位置。|  
 |**限定的名稱**|唯一地識別關聯。 前置字元為包含關聯第一個角色之套件的限定名稱。|  
 |**工作項目**|連結到此關聯的工作項目數目。 若要連結工作項目，請參閱[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。|  
-|**色彩**|連接器的色彩。 不同於其他屬性，這是此關聯檢視的屬性，而不是模型中基礎關聯性的屬性。|  
+|**Color**|連接器的色彩。 不同於其他屬性，這是此關聯檢視的屬性，而不是模型中基礎關聯性的屬性。|  
 |**第一個角色**<br /><br /> **第二個角色**|關聯的每一端稱為角色。 每個角色描述關聯相反端之類別上之對等屬性的屬性。<br /><br /> 在範例圖表中，Menu 和 Menu Item 之間的關聯具有稱為 Menu 和 Contents 的角色。<br /><br /> Contents 是 Menu 類別上的屬性名稱。|  
 
 ### <a name="properties-of-each-role"></a>每個角色的屬性  
@@ -58,7 +55,7 @@ ms.locfileid: "51810277"
 |     **Property**     |          **Default**          |                                                                                                                                                                                                                                                                                                                                        描述                                                                                                                                                                                                                                                                                                                                         |
 |----------------------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  **角色名稱 (2)**   | 在這個角色的類型名稱 |                                                                                                                                                                                                                                                                                                       角色的名稱。 顯示在圖表上接近關聯一端的位置。                                                                                                                                                                                                                                                                                                        |
-|   **彙總**    |             無              |                                                                        **無**(4)-代表類別的執行個體之間的一般關聯性。<br /><br /> **複合**(5) 位在這個角色包含位於相反角色的物件。 您可以使用**複合**工具來建立與複合彙總的關聯。<br /><br /> **共用**(6)-在這個角色包含在另一個角色物件的參考。 您可以使用**彙總**工具來建立與共用彙總的關聯。<br /><br /> 確切的解譯方式由本機慣例決定。                                                                         |
+|   **彙總**    |             None              |                                                                        **無**(4)-代表類別的執行個體之間的一般關聯性。<br /><br /> **複合**(5) 位在這個角色包含位於相反角色的物件。 您可以使用**複合**工具來建立與複合彙總的關聯。<br /><br /> **共用**(6)-在這個角色包含在另一個角色物件的參考。 您可以使用**彙總**工具來建立與共用彙總的關聯。<br /><br /> 確切的解譯方式由本機慣例決定。                                                                         |
 |    **衍生**    |             False             |                                                                                                                                                                                                                          如果為 true，在連結這一端的物件會從其他屬性和關聯計算。 例如，從 MyEmployer.WorkPlace 計算 MyWorkPlace。 詳細資料應該輸入到描述或附加的註解中。                                                                                                                                                                                                                           |
 | **是衍生等位** |             False             |                                                                                                                                                                                                                                                                                                             如果為 true，則角色是衍生類型之一組角色的聯集。                                                                                                                                                                                                                                                                                                             |
 |   **是可瀏覽**   |             True              |                                                 可以從此方向閱讀關聯。 假設是相反角色的執行個體，您正在描述的軟體可以有效率地判斷此角色的關聯執行個體。<br /><br /> 如果一個角色是 Navigable，另一個不是，則會在巡覽方向的關聯上出現箭頭 (7)。<br /><br /> 根據預設，關聯工具會建立可以從一個方向巡覽的關聯。 若要將它轉換成雙向關聯，您可以選取的關聯，按一下 [動作] 標籤，會出現，然後按一下**成為雙向**。                                                 |
@@ -69,11 +66,8 @@ ms.locfileid: "51810277"
 |    **可見度**    |            Public             |                                                                                                                                                                                                                                 Public - 全域可見<br /><br /> Private - 在擁有類型外部看不到<br /><br /> Protected - 衍生自擁有者的類型可以看到<br /><br /> Package - 相同套件內的其他類型可以看到。                                                                                                                                                                                                                                  |
 
 ## <a name="see-also"></a>另請參閱  
- [UML 類別圖： 參考](../modeling/uml-class-diagrams-reference.md)   
+ [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)   
  [UML 類別圖上的類型屬性](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [在 UML 類別圖上的屬性的屬性](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [UML 類別圖上作業的屬性](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [UML 類別圖表：方針](../modeling/uml-class-diagrams-guidelines.md)
-
-
-

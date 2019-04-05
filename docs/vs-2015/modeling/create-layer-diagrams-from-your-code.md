@@ -1,12 +1,9 @@
 ---
 title: 從您的程式碼建立分層圖 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, layer diagrams
 - layer diagrams
@@ -16,13 +13,13 @@ ms.assetid: 58c3ea71-2dbc-4963-bf82-40f1924cf973
 caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0a1c5af9394f36f7f89a20b711657a3ca76e8d1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1597d71ac0eef5d044e0378cc71a9f109b2fc99e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727290"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939927"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>從程式碼建立分層圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,9 +66,9 @@ ms.locfileid: "51727290"
   
 |**若要**|**請遵循下列步驟**|  
 |------------|----------------------------|  
-|建立單一成品的圖層|<ol><li>將項目從下列來源拖曳至分層圖：<br /><br /> <ul><li>**方案總管**<br /><br />         例如，您可以拖曳檔案或專案。</li><li>Code Map<br /><br />         請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)並[使用 code map 偵錯應用程式](../modeling/use-code-maps-to-debug-your-applications.md)。</li><li>**類別檢視**或**物件瀏覽器**</li></ul><br />     圖層會出現在圖表上，並且連結到成品。</li><li>重新命名圖層以反映相關程式碼或成品的責任。</li></ol> **重要事項：** 將二進位檔案拖曳至分層圖不會自動加入至模型專案其參考。 您必須手動加入您要驗證模型專案的二進位檔案。 **若要將二進位檔案加入至模型專案** <ol><li>在 **方案總管**，開啟模型專案的捷徑功能表，然後選擇**加入現有項目**。</li><li>在 [**加入現有項目**] 對話方塊中，瀏覽至二進位檔案並加以選取，然後選擇**確定**。     二進位檔案會出現在模型專案中。</li><li>在**方案總管] 中**，選擇 [二進位檔案，您加入，然後按**F4**以開啟**屬性**視窗。</li><li>在每一個二進位檔案，設定**建置動作**屬性設**Validate**。</li></ol>|  
+|建立單一成品的圖層|<ol><li>將項目從下列來源拖曳至分層圖：<br /><br /> <ul><li>**方案總管**<br /><br />         例如，您可以拖曳檔案或專案。</li><li>Code Map<br /><br />         請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)並[使用 code map 偵錯應用程式](../modeling/use-code-maps-to-debug-your-applications.md)。</li><li>**類別檢視**或**物件瀏覽器**</li></ul><br />     圖層會出現在圖表上，並且連結到成品。</li><li>重新命名圖層以反映相關程式碼或成品的責任。</li></ol> **重要：** 將二進位檔案拖曳至分層圖並不會自動將它們的參考加入物件模型專案。 您必須手動加入您要驗證模型專案的二進位檔案。 **若要將二進位檔案加入至模型專案** <ol><li>在 **方案總管**，開啟模型專案的捷徑功能表，然後選擇**加入現有項目**。</li><li>在 [**加入現有項目**] 對話方塊中，瀏覽至二進位檔案並加以選取，然後選擇**確定**。     二進位檔案會出現在模型專案中。</li><li>在**方案總管] 中**，選擇 [二進位檔案，您加入，然後按**F4**以開啟**屬性**視窗。</li><li>在每一個二進位檔案，設定**建置動作**屬性設**Validate**。</li></ol>|  
 |為所有選取的成品建立單一圖層|同時將所有成品拖曳至分層圖。<br /><br /> 圖層隨即出現在圖表上，並且連結到所有成品。|  
-|為每個選取的成品建立圖層|按住不放**SHIFT**鍵不放同時拖曳的所有成品至分層圖在相同的時間。 **注意︰** 如果您使用**SHIFT**鍵以選取的項目範圍、 在選取成品之後放開該鍵。 將成品至拖曳圖表時，再次按住該鍵不放。 <br /><br /> 每個成品的圖層隨即出現在圖表上，並且連結到個別成品。|  
+|為每個選取的成品建立圖層|按住不放**SHIFT**鍵不放同時拖曳的所有成品至分層圖在相同的時間。 **注意：** 如果您使用**SHIFT**鍵以選取的項目範圍、 在選取成品之後放開該鍵。 將成品至拖曳圖表時，再次按住該鍵不放。 <br /><br /> 每個成品的圖層隨即出現在圖表上，並且連結到個別成品。|  
 |將成品加入至圖層|將成品拖曳至圖層。|  
 |建立新的未連結圖層|在 **工具箱**，展開**分層圖**區段，然後再拖曳**層**到分層圖。<br /><br /> 若要加入多個圖層，請按兩下 [圖層] 工具。 當您完成時，選擇**指標**工具或按**ESC**索引鍵。<br /><br /> -或-<br /><br /> 開啟圖層圖表的捷徑功能表，選擇 **新增**，然後選擇**層**。|  
 |建立巢狀圖層|將現有的圖層拖曳至另一個圖層上。<br /><br /> -或-<br /><br /> 開啟圖層的捷徑功能表，選擇 **新增**，然後選擇**層**。|  
@@ -139,8 +136,8 @@ ms.locfileid: "51727290"
 -   [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
 ## <a name="see-also"></a>另請參閱  
- [Channel 9 影片： 設計和驗證架構使用圖層圖表](http://go.microsoft.com/fwlink/?LinkID=252073)   
- [分層圖： 參考](../modeling/layer-diagrams-reference.md)   
- [分層圖： 方針](../modeling/layer-diagrams-guidelines.md)   
+ [Channel 9 影片：設計和驗證架構使用圖層圖表](http://go.microsoft.com/fwlink/?LinkID=252073)   
+ [圖層圖表：參考](../modeling/layer-diagrams-reference.md)   
+ [圖層圖表：指導方針](../modeling/layer-diagrams-guidelines.md)   
  [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)   
  [視覺化程式碼](../modeling/visualize-code.md)

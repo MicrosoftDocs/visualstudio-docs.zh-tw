@@ -1,23 +1,20 @@
 ---
 title: 使用 MEF 擴充您的 DSL |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 3e7be79a-53ab-4d79-863a-bef8d27839bd
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd5e4727c4352ca27d905bad608c4a1c17284f9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 87b48a1cd5dc791609a2a15d1fcb657b41e9dcc8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930633"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939277"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 擴充您的 DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -250,7 +247,7 @@ namespace MyMefExtension
 ### <a name="gesture-handlers"></a>軌跡處理常式  
  軌跡處理常式可以處理物件的內部或外部，拖曳到圖表上從任何地方， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 下列範例可讓使用者從 Windows 檔案總管將檔案拖曳到圖表上。 它會建立包含檔案名稱的項目。  
   
- 您可以撰寫處理常式來處理來自其他 DSL 模型和 UML 模型拖曳的。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。  
+ 您可以撰寫處理常式來處理來自其他 DSL 模型和 UML 模型拖曳的。 如需詳細資訊，請參閱[如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。  
   
 ```  
   
@@ -380,8 +377,5 @@ namespace MefExtension
 ## <a name="see-also"></a>另請參閱  
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)   
  [Managed 的 Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
- [如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [特定領域語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 符號類型的語彙階層架構 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 912da653-ddfe-45a4-84aa-64281283739a
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0f9fa295a7faa85a0b7a7b3268702c4199869754
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dac4ae8357d62813abb3f4735ec6e1f8b552d324
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783255"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945175"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>符號類型的語彙階層架構
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,9 +50,6 @@ ms.locfileid: "51783255"
   
 ## <a name="see-also"></a>另請參閱  
  [符號類型的類別階層](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
- [Idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
+ [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
  [符號和符號標記](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)
-
-
-

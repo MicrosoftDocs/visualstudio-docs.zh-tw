@@ -1,14 +1,9 @@
 ---
-title: 如何： 尋找 ASP.NET 處理序的名稱 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：尋找 ASP.NET 處理序的名稱 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 931a7597-b0f0-4a28-931d-46e63344435f
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2ad3bea47bcde0da87bd185fac132c95f26ce4b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c403cefee3aa7d45c11cd80cf5fc2dd53a06c1fc
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793239"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58939842"
 ---
-# <a name="how-to-find-the-name-of-the-aspnet-process"></a>如何：尋找 ASP.NET 處理序的名稱
+# <a name="how-to-find-the-name-of-the-aspnet-process"></a>HOW TO：尋找 ASP.NET 處理序的名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要附加至執行中的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式，您必須知道 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序的名稱：  
@@ -43,7 +38,7 @@ ms.locfileid: "51793239"
   舊版 ASP 應用程式會在它們以同處理序 (In-Process) 方式執行時，於 IIS 處理序 inetinfo.exe 中執行。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ### <a name="to-determine-whether-project-code-resides-on-the-file-system-or-iis"></a>若要判斷專案程式碼是位於檔案系統或 IIS 上  
   
@@ -72,6 +67,3 @@ ms.locfileid: "51793239"
  [系統需求](../debugger/aspnet-debugging-system-requirements.md)   
  [準備偵錯 ASP.NET](../debugger/preparing-to-debug-aspnet.md)   
  [偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)
-
-
-

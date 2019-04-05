@@ -1,14 +1,9 @@
 ---
 title: 偵錯工具設定和準備 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0d670470158c86fa62c860571779ec701f65a11f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766284"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940584"
 ---
 # <a name="debugger-settings-and-preparation"></a>偵錯設定及準備
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51766284"
  [ASP.NET Web 應用程式](../debugger/debugging-preparation-aspnet-web-applications.md)  
  提供如何設定 ASP.NET Web 應用程式的指示。  
   
- [如何：偵錯不屬於 Visual Studio 方案的可執行檔](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [如何：對不屬於 Visual Studio 方案的可執行檔進行偵錯](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  說明如何對不是建立為 Visual Studio 專案一部分的可執行檔進行偵錯。  
   
  [如何：以 Code Center Premium 來源進行偵錯](../debugger/how-to-debug-with-code-center-premium-source.md)  
@@ -69,6 +64,3 @@ ms.locfileid: "51766284"
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)
-
-
-

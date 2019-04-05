@@ -1,14 +1,9 @@
 ---
 title: 在模擬器中的執行 Windows 市集應用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 504a63d0f99a1a96d1192a1666d45dafde037253
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9ceda4b04d5a029066d5594cac7e0a0701b1b4ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775104"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940571"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>在模擬器中執行 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +112,7 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
      ![螢幕擷取畫面設定操作功能表](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> 模擬網路連接屬性  
- 您可以藉由維護網路連接成本或數據傳輸方案狀態變更的感知，並讓您的應用程式使用此資訊來避免因為漫遊或超出指定的資料傳輸限制而產生額外費用，協助應用程式使用者管理計量付費網路連接的費用。 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API 可讓您回應簽署的 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 和 [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) 事件。 請參閱 [快速入門：管理計量付費網路費用限制](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
+ 您可以藉由維護網路連接成本或數據傳輸方案狀態變更的感知，並讓您的應用程式使用此資訊來避免因為漫遊或超出指定的資料傳輸限制而產生額外費用，協助應用程式使用者管理計量付費網路連接的費用。 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API 可讓您回應簽署的 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 和 [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) 事件。 請參閱[快速入門：管理計量付費的網路費用限制](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
   
  若要偵錯或測試您的網路成本感知程式碼，模擬器可以模擬透過 [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 傳回的 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)物件所公開之網路屬性。  
   
@@ -141,7 +136,7 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
   
    **管理網路連接的詳細資訊**  
   
-   [快速入門：管理計量付費網路費用限制](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [快速入門：管理計量付費的網路費用限制](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
    [網路資訊範例](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
@@ -149,7 +144,7 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
   
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
-   [如何使用背景工作回應系統事件](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [如何使用背景工作回應系統事件](http://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
    [如何在 Windows 市集應用程式中觸發暫停、繼續和背景事件](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
@@ -160,6 +155,3 @@ Windows 市集應用程式適用的 Visual Studio 模擬器則是桌面應用程
   
 ## <a name="see-also"></a>另請參閱  
  [從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)
-
-
-

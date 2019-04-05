@@ -1,14 +1,9 @@
 ---
-title: 如何： 使用 __analysis_assume 指定其他程式碼資訊 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用 __analysis_assume 指定其他程式碼資訊 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - __analysis_assume
 helpviewer_keywords:
@@ -17,15 +12,15 @@ ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
 caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: de4d70dc615c14e9f9355608fa6b352b799c2c1a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 96f4d628d32aec9a0f7eb2d091a017edfba3d8ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776898"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941618"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>如何：使用 __analysis_assume 指定其他程式碼資訊
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>HOW TO：使用 _analysis_assume 來指定其他程式碼資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以提供程式碼分析工具的提示會協助分析程序，並減少警告的 C/c + + 程式碼。 若要提供其他資訊，請使用下列函式：  
@@ -65,6 +60,3 @@ void test( )
   
 ## <a name="see-also"></a>另請參閱  
  [__assume](http://msdn.microsoft.com/library/d8565123-b132-44b1-8235-5a8c8bff85a7)
-
-
-

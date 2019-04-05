@@ -1,12 +1,9 @@
 ---
 title: 升級的.mdf 檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,14 +20,14 @@ ms.assetid: 14ca6f76-f80e-4926-8020-3fee2d802b75
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d71b38fe0d4aef412860a9dc65002c9b8d98c79c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc67a44586d221830825b94dd1c0eb160e307d21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812630"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940196"
 ---
 # <a name="upgrade-mdf-files"></a>升級 .mdf 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,17 +71,17 @@ ms.locfileid: "49812630"
   
 2. 在 **加入連接**對話方塊方塊中，指定下列資訊：  
   
-   -   **資料來源**: `Microsoft SQL Server (SqlClient)`  
+   -   **資料來源**：`Microsoft SQL Server (SqlClient)`  
   
-   -   **伺服器名稱**:  
+   -   **伺服器名稱**：  
   
        -   若要使用的預設版本： `(localdb)\MSSQLLocalDB`。  這會指定 ProjectV12 或 ProjectV13，取決於已安裝的 Visual Studio 版本，並建立第一個的 LocalDB 執行個體時。 **MSSQLLocalDB**中的節點**SQL Server 物件總管**哪一個版本指向所示。  
   
        -   若要使用特定版本：`(localdb)\ProjectsV12`或`(localdb)\ProjectsV13`，其中 V12 是 LocalDB 2014 而 V13 是 LocalDB 2016。  
   
-   -   **附加資料庫檔案**： 於主要.mdf 檔案的實體路徑。  
+   -   **附加資料庫檔案**:主要.mdf 檔案的實體路徑。  
   
-   -   **邏輯名稱**： 您想要使用與檔案的名稱。  
+   -   **邏輯名稱**:您想要使用的檔案名稱。  
   
 3. 選取 [確定] 按鈕。  
   
@@ -123,8 +120,3 @@ ms.locfileid: "49812630"
 4. 選取 [確定] 按鈕。  
   
    SQL Server Express，將會是您的應用程式的預設資料庫引擎。  
-  
-## <a name="see-also"></a>另請參閱  
- [本機資料概觀](../data-tools/local-data-overview.md)   
- [逐步解說：連接至本機資料庫檔案中的資料 (Windows Forms)](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)
-
