@@ -1,12 +1,9 @@
 ---
 title: 在 WPF 應用程式中顯示相關的資料 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,15 +21,15 @@ ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f6c939ee1a64834bd305d0ae744d9ac02e3b4410
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e1b80fe54fa17c0d7109f6a4ddb4ac5ada98ae2a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174137"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939904"
 ---
-# <a name="display-related-data-in-wpf-applications"></a>WPF 應用程式中顯示相關的資料
+# <a name="display-related-data-in-wpf-applications"></a>在 WPF 應用程式中顯示相關資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -42,9 +39,9 @@ ms.locfileid: "49174137"
   
 ## <a name="to-create-controls-that-display-related-records"></a>若要建立顯示相關的記錄控制項  
   
-1.  上**資料**功能表上，按一下**顯示資料來源**以開啟**Zdroje dat**視窗。  
+1.  按一下 [資料] 功能表上的 [顯示資料來源]，以開啟 [資料來源] 視窗。  
   
-2.  按一下 **加入新的資料來源**，並完成**資料來源組態**精靈。  
+2.  按一下 [新增資料來源]，並完成 [資料來源組態精靈]。  
   
 3.  開啟 WPF 設計工具中，並確定設計工具會包含有效的置放目標中的項目容器**Zdroje dat**視窗。  
   
@@ -70,5 +67,4 @@ ms.locfileid: "49174137"
  [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [在 WPF 應用程式中建立查閱資料表](../data-tools/create-lookup-tables-in-wpf-applications.md)   
- [逐步解說：顯示 WPF 應用程式中的相關資料](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [逐步解說：在 WPF 應用程式中顯示相關的資料](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

@@ -1,14 +1,9 @@
 ---
-title: CA2123： 覆寫連結要求應該與基底相同 |Microsoft Docs
-ms.custom: ''
+title: CA2123:覆寫連結要求應該與基底相同 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2123
 - OverrideLinkDemandsShouldBeIdenticalToBase
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 48f5e15eef93596bff30961e1d15c982417557fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6be4dbc8ebb8e0cd401716e9ecf913045e0996f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853359"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942054"
 ---
-# <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123：覆寫連結要求應該與基底相同
+# <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123:覆寫連結要求應該與基底相同
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -58,6 +53,3 @@ ms.locfileid: "49853359"
 
 ## <a name="see-also"></a>另請參閱
  [安全程式碼撰寫指導方針](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[連結要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
-
-
-

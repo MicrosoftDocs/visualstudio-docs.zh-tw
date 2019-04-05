@@ -1,35 +1,30 @@
 ---
-title: 如何： 偵錯自訂的偵錯引擎 |Microsoft Docs
-ms.custom: ''
+title: 如何：偵錯自訂的偵錯引擎 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d293011a3865b4fb9c31349240c520e56f5a9e39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5292d2cde8a75a239f7a905d8cf5d80b09a8f61e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756767"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930265"
 ---
-# <a name="how-to-debug-a-custom-debug-engine"></a>如何：對自訂的偵錯引擎進行偵錯
+# <a name="how-to-debug-a-custom-debug-engine"></a>如何：偵錯自訂的偵錯引擎
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 從專案類型會啟動的偵錯引擎 (DE)<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>方法。 這表示控制下的執行個體啟動時 DE[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]控制的專案類型。 不過，該執行個體[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]無法偵錯 DE。 下面是可讓您偵錯您的自訂裝置的步驟。  
   
 > [!NOTE]
->  ： 在 「 偵錯自訂偵錯引擎 」 程序中，您必須等到開始之前，您可以附加至這個 DE。 如果您即將開始您 DE DE 啟動時出現的訊息方塊，您可以附加在該點，然後清除 訊息方塊，以繼續。 如此一來，您可以攔截所有 DE 事件。  
+>  :   在 「 偵錯自訂偵錯引擎 」 程序中，您必須等待開始之前，您可以附加至這個 DE。 如果您即將開始您 DE DE 啟動時出現的訊息方塊，您可以附加在該點，然後清除 訊息方塊，以繼續。 如此一來，您可以攔截所有 DE 事件。  
   
 > [!WARNING]
 >  您必須擁有遠端偵錯安裝才能嘗試進行下列程序。 請參閱[遠端偵錯](../../debugger/remote-debugging.md)如需詳細資訊。  
@@ -82,4 +77,3 @@ ms.locfileid: "51756767"
   
 ## <a name="see-also"></a>另請參閱  
  [建立自訂的偵錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)
-

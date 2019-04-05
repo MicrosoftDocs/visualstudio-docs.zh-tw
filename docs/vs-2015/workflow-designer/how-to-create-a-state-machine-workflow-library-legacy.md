@@ -1,11 +1,8 @@
 ---
-title: 如何： 建立狀態機器工作流程程式庫 （舊版） |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立狀態機器工作流程程式庫 （舊版） |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - projects, state machine workflow library
@@ -15,13 +12,13 @@ ms.assetid: 5bd68c6e-6a98-47d9-826d-9bb7a4fd72f8
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 9f813df11fdc787455c1c435a53cff2e074612a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f1f972903cadf6a918b34b1d0fbed560bd26606f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189932"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941619"
 ---
 # <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>HOW TO：建立狀態機器工作流程程式庫 (舊版)
 依照下列步驟使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 提供的舊版 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 來建立狀態機器工作流程程式庫專案。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  

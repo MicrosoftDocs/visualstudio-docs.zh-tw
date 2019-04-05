@@ -1,27 +1,22 @@
 ---
 title: 安裝 Isolated 的 Shell 應用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], deploying shell-based applications
 - Visual Studio shell, deploying shell-based applications
 ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ecec7963b66c20ef08d1e5f3f0917a66f885aa0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796299"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942158"
 ---
 # <a name="installing-an-isolated-shell-application"></a>安裝 Isolated 的 Shell 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +159,7 @@ ms.locfileid: "51796299"
         ```  
   
     > [!NOTE]
-    >  必要 Shell （獨立模式） 應用程式相依性： DebuggerProxy，MasterPkgDef，資源 （尤其是.winprf 檔案），應用程式和 PkgDefs。  
+    >  Shell （獨立模式） 應用程式的必要的相依性：DebuggerProxy，MasterPkgDef，資源 （尤其是.winprf 檔案），應用程式和 PkgDefs。  
   
 ### <a name="registry-entries"></a>登錄項目  
  Shell （獨立模式） 專案範本會包含*ProjectName*合併安裝上的登錄機碼的.reg 檔案。 這些登錄項目必須是安裝和清除用途的 MSI 的一部分。 您也必須在 ApplicationRegistry.wxs 建立相符的登錄區塊。  
@@ -183,8 +178,8 @@ ms.locfileid: "51796299"
   
     |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @= 「 PhotoStudio DTE 物件 」|\<登錄機碼識別碼 = 'DteClsidRegKey' Root = 'HKCR' 機碼 =' $（var。DteClsidRegKey)' 動作 = 'createAndRemoveOnUninstall' ><br /><br /> \<RegistryValue 類型 = 'string' 名稱 =' @' 值 =' $（var。ShortProductName) DTE 物件 ' / ><br /><br /> \</ 登錄機碼 >|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe 」|\<登錄機碼識別碼 = 'DteLocSrv32RegKey' Root = 'HKCR' 機碼 =' $（var。DteClsidRegKey) \LocalServer32' 動作 = 'createAndRemoveOnUninstall' ><br /><br /> \<RegistryValue 類型 = 'string' 名稱 =' @' 值 ='[INSTALLDIR] $（var。ShortProductName).exe ' / ><br /><br /> \</ 登錄機碼 >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @="PhotoStudio DTE Object"|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='$(var.ShortProductName) DTE Object' /><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
   
      在此範例中，Var.DteClsidRegKey 會解析為頂端列中的登錄機碼。 Var.ShortProductName 會解析成`PhotoStudio`。  
   
@@ -374,5 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說︰建立基本的 Isolated Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
-
+ [逐步解說：建立基本的 Isolated 的 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

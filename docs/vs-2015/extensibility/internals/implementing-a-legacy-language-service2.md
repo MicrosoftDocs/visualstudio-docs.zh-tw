@@ -1,26 +1,21 @@
 ---
 title: 實作舊版語言服務 2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], implementing
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b6c84a848d75302f5744e812e43a1bd7979472e7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a5f419b3b4c55538e8aa46d5aefb3f7e21369be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753913"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930705"
 ---
 # <a name="implementing-a-legacy-language-service"></a>實作舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -370,4 +365,3 @@ public enum IconImageIndex
  [舊版語言服務概觀](../../extensibility/internals/legacy-language-service-overview.md)   
  [註冊舊版語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [舊版語言服務的剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
-

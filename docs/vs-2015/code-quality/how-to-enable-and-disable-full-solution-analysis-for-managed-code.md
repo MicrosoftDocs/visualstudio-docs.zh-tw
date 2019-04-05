@@ -1,12 +1,9 @@
 ---
-title: 如何： 啟用和停用 Managed 程式碼的完整解決方案分析 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：啟用和停用 Managed 程式碼的完整解決方案分析 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 ms.assetid: 04315147-5792-47f0-8b5f-9ac8413c6a57
@@ -14,17 +11,17 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af0aae4020182f6414d44a2004f98a6fc0df23ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221867"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930813"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>如何： 啟用和停用 Managed 程式碼的完整解決方案分析
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>HOW TO：啟用和停用 Managed 程式碼的完整解決方案分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-附註]
+注意]
 >  本主題只適用於 Visual Studio 2015 Update 3 RC 和更新版本。  
   
  *完整解決方案分析*是一種 Visual Studio 功能，可讓您選擇您是否看到只在開啟 Visual C# 或 Visual Basic 檔案在您的方案，或開啟和關閉 Visual C# 或 Visual Basic 檔案中您方案中的程式碼分析問題。  
@@ -59,6 +56,3 @@ ms.locfileid: "49221867"
  根據預設，是針對 Visual Basic 啟用完整解決方案分析，並將其停用 Visual C# 中。  
   
  Visual Studio Update 3 RC 包含增強的程式碼分析師診斷 v2 引擎，大幅降低記憶體使用量，並減少 CPU 時間閒置，即使已啟用完整解決方案分析。
-
-
-

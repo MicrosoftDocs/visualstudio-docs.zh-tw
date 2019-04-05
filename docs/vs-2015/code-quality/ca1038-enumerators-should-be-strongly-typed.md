@@ -1,14 +1,9 @@
 ---
-title: CA1038： 列舉程式應該強型別 |Microsoft Docs
-ms.custom: ''
+title: CA1038:列舉值應該強型別 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - EnumeratorsShouldBeStronglyTyped
 - CA1038
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aafd89a068a57ef1eb89584441195e1ece8b8f52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: be143ecb57a952c45e518eef0d83d52274075614
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899067"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930489"
 ---
-# <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038：列舉程式應該是強類型
+# <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038:列舉程式應該是強類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -61,14 +56,11 @@ ms.locfileid: "49899067"
  [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IEnumeratorStrongTypes/cs/FxCop.Design.IEnumeratorStrongTypes.cs#1)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1035：ICollection 實作包含強類型成員](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+ [CA1035:實作包含強類型成員](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1039：清單為強類型](../code-quality/ca1039-lists-are-strongly-typed.md)
+ [CA1039:清單為強類型](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.Collections.IEnumerator?displayProperty=fullName> <xref:System.Collections.CollectionBase?displayProperty=fullName>
  <xref:System.Collections.DictionaryBase?displayProperty=fullName>
  <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
-
-
-

@@ -1,13 +1,8 @@
 ---
 title: 使用偵錯工具巡覽程式碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -25,13 +20,13 @@ ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43155bbd4236ea34d67058443e8814f7ccf00b1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a38d078356acf4e78aeeb97687126616d027351f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750583"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941312"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>使用偵錯工具巡覽程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +106,7 @@ ms.locfileid: "51750583"
   
 -   **手動中斷程式碼**  
   
-     若要中斷執行中應用程式的下一行程式碼，請選擇 [ **偵錯**]、[ **全部中斷** ] (鍵盤： **Ctrl+Alt+Break**)。  
+     若要中斷程式執行的應用程式中的程式碼的下一行，請選擇**偵錯**，**全部中斷**(鍵盤：**Ctrl + Alt + Break**)。  
   
      如果您在執行沒有對應原始程式檔或符號檔 (.pdb) 的程式碼時中斷，偵錯工具會顯示 [找不到原始程式檔]  或 [找不到符號]  頁面，協助您找出適當的檔案。 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。 如果您無法存取支援檔案，您仍然可以在 [反組譯碼] 視窗中偵錯組譯碼指令。  
   
@@ -181,7 +176,7 @@ ms.locfileid: "51750583"
   
  若要在偵錯時載入特定系統元件的符號：  
   
-1.  開啟 [模組] 視窗 (鍵盤： **Ctrl+Alt+U**)。  
+1.  開啟 [模組] 視窗 (鍵盤：**Ctrl + Alt + U**)。  
   
 2.  選取您要載入其符號的模組。  
   
@@ -191,8 +186,3 @@ ms.locfileid: "51750583"
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> 逐步執行 Managed 程式碼中的屬性及運算子  
  偵錯工具預設為不進入 Managed 程式碼中的屬性及運算子。 在大部分情況下，這會產生比較令人滿意的偵錯經驗。 若要啟用逐步執行屬性或運算子，請選擇**偵錯** / **選項**。 在 [ **偵錯** / **一般** ] 頁面上，清除 [ **不進入屬性和運算子 (僅限 Managed)** ] 核取方塊。
-
-
-
-
-

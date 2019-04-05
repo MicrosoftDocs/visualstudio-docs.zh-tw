@@ -1,32 +1,27 @@
 ---
-title: 如何： 使用中斷點與 XSLT |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用中斷點與 XSLT |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: bf7bbc2c-71dc-4cac-a6fc-add6b27d92ed
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b01553075115ce953b499f722a254b5a2b9f20ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5590d9f33d2c34b7d3d86aaf00307419685ca8da
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233450"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941629"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>HOW TO：搭配使用中斷點與 XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可在 XSLT 樣式表或 XML 來源文件中設定中斷點。 如果您在標記上設定了中斷點，則在開始執行時，中斷點會移至下一個具有原始程式行資訊的陳述式 (Statement)。  
   
- 如需詳細資訊，請參閱 <<c0> [ 偵錯基本概念： 中斷點](http://msdn.microsoft.com/en-us/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e)。  
+ 如需詳細資訊，請參閱[偵錯基本概念：中斷點](http://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e)。  
   
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>在樣式表中設定中斷點  
  中斷點可在 XSLT 樣式表的開始標記、結束標記及文字節點上設定。 中斷點也可以在指令碼區塊的程式碼上設定。  
@@ -63,5 +58,4 @@ ms.locfileid: "49233450"
 5.  按一下 **偵錯 XSL** XML 編輯器工具列上的按鈕。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說：偵錯 XSLT 樣式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-
+ [逐步解說：對 XSLT 樣式表偵錯](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
