@@ -1,14 +1,9 @@
 ---
-title: Ca2242： 必須正確測試 NaN |Microsoft Docs
-ms.custom: ''
+title: CA2242:正確測試 NaN |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - TestForNaNCorrectly
 - CA2242
@@ -19,14 +14,14 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d7cd2d6d823dfb13c86ad3f2cc4ef001e854955c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 17a98ce3d213c5d9ae85bb5132a0a44e50112037
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842478"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930533"
 ---
-# <a name="ca2242-test-for-nan-correctly"></a>CA2242：必須正確測試 NaN
+# <a name="ca2242-test-for-nan-correctly"></a>CA2242:必須正確測試 NaN
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -53,6 +48,3 @@ ms.locfileid: "49842478"
 
  [!code-csharp[FxCop.Usage.TestForNaN#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.TestForNaN/cs/FxCop.Usage.TestForNaN.cs#1)]
  [!code-vb[FxCop.Usage.TestForNaN#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.TestForNaN/vb/FxCop.Usage.TestForNaN.vb#1)]
-
-
-

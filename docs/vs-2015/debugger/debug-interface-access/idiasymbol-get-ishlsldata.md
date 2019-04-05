@@ -1,27 +1,22 @@
 ---
-title: IDiaSymbol::get_isHLSLData |Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_isHLSLData | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 4662058b-c505-4ccf-ae03-739a62c814ca
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c3e052f193e4d0555b0a84d4d6ced888d8def55b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fd67253ffeb266ba1d700b7271e95e9e40c736ce
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800963"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940351"
 ---
 # <a name="idiasymbolgetishlsldata"></a>IDiaSymbol::get_isHLSLData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,6 +39,3 @@ HRESULT get_isHLSLData(
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

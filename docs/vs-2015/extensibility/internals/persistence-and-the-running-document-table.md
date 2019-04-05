@@ -1,14 +1,9 @@
 ---
 title: 持續性和執行記錄資料表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - persistence, managing
 - IVsPersistHierarchyItem interface, implementing
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 27117eae-6c58-4189-a61a-1397a43b5ecf
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b734d21950fd3765a7c331bbcdc47177f48e2b0a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2c422ad1735312c82c8dc027c4adf73c1b033685
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726090"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940464"
 ---
 # <a name="persistence-and-the-running-document-table"></a>持續性與執行中的文件資料表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,4 +33,3 @@ ms.locfileid: "51726090"
 ## <a name="see-also"></a>另請參閱  
  [執行文件資料表](../../extensibility/internals/running-document-table.md)   
  [IDE 中的選取項目和貨幣](../../extensibility/internals/selection-and-currency-in-the-ide.md)
-

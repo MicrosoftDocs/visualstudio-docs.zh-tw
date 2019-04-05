@@ -1,14 +1,9 @@
 ---
-title: ： Ca1027 以 flagsattribute 標記列舉 |Microsoft Docs
-ms.custom: ''
+title: CA1027:以 FlagsAttribute 標記列舉 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkEnumsWithFlags
 - CA1027
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b8cebc05fa58c589f07beed70ab222d31bc8553a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6603e0869a9eb7947735c52a4c438b39d64b9140
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879216"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940120"
 ---
-# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027：必須以 FlagsAttribute 標記列舉
+# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027:必須以 FlagsAttribute 標記列舉
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -52,15 +47,12 @@ ms.locfileid: "49879216"
  如果您不想要組合的列舉值，則隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 在下列範例中，`DaysEnumNeedsFlags`是一種列舉符合使用需求<xref:System.FlagsAttribute>，但不要讓它。 `ColorEnumShouldNotHaveFlag`列舉型別沒有值的乘冪數，但未正確指定<xref:System.FlagsAttribute>。 這樣會違反規則[CA2217： 不要不以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)。
+ 在下列範例中，`DaysEnumNeedsFlags`是一種列舉符合使用需求<xref:System.FlagsAttribute>，但不要讓它。 `ColorEnumShouldNotHaveFlag`列舉型別沒有值的乘冪數，但未正確指定<xref:System.FlagsAttribute>。 這樣會違反規則[CA2217:執行不以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)。
 
  [!code-csharp[FxCop.Design.EnumFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EnumFlags/cs/FxCop.Design.EnumFlags.cs#1)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217:不以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.FlagsAttribute?displayProperty=fullName>
-
-
-
