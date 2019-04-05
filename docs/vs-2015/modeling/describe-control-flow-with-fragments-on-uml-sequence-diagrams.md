@@ -1,12 +1,9 @@
 ---
 title: 以 UML 順序圖表說明具有片段的控制流程 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.sequencediagram.combinedfragment.interactionoperand
 - vs.teamarch.sequencediagram.combinedfragment
@@ -19,13 +16,13 @@ ms.assetid: efcc0949-be7e-4cf4-99ef-47c36b3803ae
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4ab4c65e554e9eef75a1761719ce19f3312e07ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727654"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942954"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>以 UML 循序圖說明具有片段的控制流程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ ms.locfileid: "51727654"
  合併片段包含一或多個 *「互動運算元」*(interaction operand)，而這每一個都含括一或多個訊息、互動使用或合併片段。  
   
 > [!NOTE]
->  本主題是有關在循序圖中的片段。 如需如何閱讀 UML 循序圖的詳細資訊，請參閱[UML 循序圖： 參考](../modeling/uml-sequence-diagrams-reference.md)。 如需如何繪製 UML 循序圖的詳細資訊，請參閱 [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)。  
+>  本主題是有關在循序圖中的片段。 如需如何閱讀 UML 循序圖的詳細資訊，請參閱[UML 循序圖：參考資料](../modeling/uml-sequence-diagrams-reference.md)。 如需如何繪製 UML 循序圖的詳細資訊，請參閱[UML 循序圖：指導方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
  ![合併片段有兩個互動運算元](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -112,13 +109,13 @@ ms.locfileid: "51727654"
   
 |片段類型|描述|  
 |-------------------|-----------------|  
-|**選擇加入**|選擇性。 圍繞不一定會發生的序列。 您可以在成立條件中指定發生的條件。|  
+|**Opt**|選擇性。 圍繞不一定會發生的序列。 您可以在成立條件中指定發生的條件。|  
 |**Alt**|包含一份包含替代之訊息序列的片段清單。 在任何情況下只會有一個序列發生。<br /><br /> 您可以在每個片段放入成立條件，表示在哪些條件下可以執行。 **else** 的成立條件表示在沒有其他成立條件為 true 時，應該執行的片段。 如果所有成立條件都為 false，而且沒有任何 **else**，則片段都不會執行。|  
 |**Loop**|片段會重複一些次數。 您可以在成立條件中表示它應該重複的條件。<br /><br /> Loop 合併片段有屬性 [Min]  和 [Max] ，它們表示可以重複片段的最小和最大次數。 預設為無限制。|  
 |**Break**|如果執行此片段，則會放棄序列的其餘部分。 您可以使用成立條件來表示將發生中斷的條件。|  
 |**Par**|Parallel 片段中的事件可以交錯。|  
-|**重要**|在 Par 或 Seq 片段內使用。 表示在此片段中的訊息不得與其他訊息交錯。|  
-|**seq**|有兩個或多個運算元片段。 牽涉到相同生命線的訊息必須按照片段順序發生。 不牽涉到相同的生命線時，可能會以平行方式交錯來自不同片段的訊息。|  
+|**Critical**|在 Par 或 Seq 片段內使用。 表示在此片段中的訊息不得與其他訊息交錯。|  
+|**Seq**|有兩個或多個運算元片段。 牽涉到相同生命線的訊息必須按照片段順序發生。 不牽涉到相同的生命線時，可能會以平行方式交錯來自不同片段的訊息。|  
 |**Strict**|有兩個或多個運算元片段。 片段必須按照指定的順序發生。|  
   
 ### <a name="fragments-about-how-to-interpret-the-sequence"></a>有關如何解譯序列的片段  
@@ -129,14 +126,11 @@ ms.locfileid: "51727654"
 |片段類型|描述|  
 |-------------------|-----------------|  
 |**請考慮**|指定此片段描述的訊息清單。 其他訊息可能會發生在執行中的系統，但對於這項描述的目的而言不重要。<br /><br /> 在 [訊息]  屬性中輸入清單。|  
-|**略過**|此片段未描述的訊息清單。 它們可能會發生在執行中的系統，但對於這項描述的目的而言不重要。<br /><br /> 在 [訊息]  屬性中輸入清單。|  
+|[略過]|此片段未描述的訊息清單。 它們可能會發生在執行中的系統，但對於這項描述的目的而言不重要。<br /><br /> 在 [訊息]  屬性中輸入清單。|  
 |**Assert**|運算元片段只指定有效的序列。 通常在 Consider 或 Ignore 片段中使用。|  
 |**neg**|此片段中所顯示的序列不得發生。 通常在 Consider 或 Ignore 片段中使用。|  
   
 ## <a name="see-also"></a>另請參閱  
- [UML 循序圖： 方針](../modeling/uml-sequence-diagrams-guidelines.md)   
- [UML 循序圖： 參考](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML 順序圖表：指導方針](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [UML 順序圖表：參考](../modeling/uml-sequence-diagrams-reference.md)   
  [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: 針對程式碼分析問題進行疑難排解 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: troubleshooting
 ms.assetid: 61c7e44d-2780-4df5-9bcb-49e40c1152fc
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a044b0682b5ac70fc38df3080ef435c5ab6aad3b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 54e478fe9b932b2b50271e52f0bcaab78ca02eab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768219"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944382"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>程式碼分析問題疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ ms.locfileid: "51768219"
  [分析應用程式品質](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   
  [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
  [使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: 當中斷點繫結或變成未繫結 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint unbound events
 - breakpoint bound events
 ms.assetid: 61bf00b2-8293-49d3-b919-1efb0dec9151
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5c1f52a209ec6bc399e1cf3f294501c0a8aeda2d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2f5c14ba620cee34d83e4be09b23a7e9fb28a0a5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777132"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942907"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>當中斷點繫結或變成未繫結時
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,4 +38,3 @@ ms.locfileid: "51777132"
   
 ## <a name="see-also"></a>另請參閱  
  [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)
-

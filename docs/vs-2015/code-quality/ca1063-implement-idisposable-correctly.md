@@ -1,14 +1,9 @@
 ---
-title: Ca1063： 必須實作 IDisposable 正確 |Microsoft Docs
-ms.custom: ''
+title: CA1063:必須正確實作 IDisposable |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
 - CA1063
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52e77762900a321cf547709d98d9856088580789
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877292"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943513"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063：必須正確實作 IDisposable
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063:必須正確實作 IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -129,6 +124,3 @@ public class Resource : IDisposable
     }
 }
 ```
-
-
-

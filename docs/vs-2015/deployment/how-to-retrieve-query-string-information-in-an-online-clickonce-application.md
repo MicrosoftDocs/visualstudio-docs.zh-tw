@@ -1,14 +1,9 @@
 ---
-title: 如何： 擷取在線上 ClickOnce 應用程式中的查詢字串資訊 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：擷取在線上 ClickOnce 應用程式中的查詢字串資訊 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 48ce098a-a075-481b-a5f5-c8ba11f63120
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 78b4edd85d47087033cc20189f2c9edc4d7fcd34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278924"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945343"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何：在線上 ClickOnce 應用程式中擷取查詢字串資訊
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>HOW TO：在線上 ClickOnce 應用程式中擷取查詢字串資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 *「查詢字串」* (query string) 是開頭為句號 (?) 之 URL 的部分，內含 *name=value*格式的任意資訊。 假設您有裝載於 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 且名為 `WindowsApp1` 的 `servername`應用程式，而且想要在啟動應用程式時傳入變數 `username` 的值。 URL 可能如下所示：  
@@ -47,7 +42,7 @@ ms.locfileid: "49278924"
 > [!NOTE]
 >  當您決定啟用這項功能之前，請參閱本主題後面的＜安全性＞一節。  
   
- 如需有關如何建立資訊[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署使用 Mage.exe 或 MageUI.exe 中，請參閱[逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+ 如需有關如何建立資訊[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署使用 Mage.exe 或 MageUI.exe 中，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
 > [!NOTE]
 >  從 .NET Framework 3.5 SP1 開始，可以將命令列引數傳遞至離線 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。 如果您要提供應用程式的引數，則可以將參數傳入副檔名為 .APPREF-MS 的捷徑檔案。  
@@ -88,6 +83,3 @@ ms.locfileid: "49278924"
   
 ## <a name="see-also"></a>另請參閱  
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)
-
-
-

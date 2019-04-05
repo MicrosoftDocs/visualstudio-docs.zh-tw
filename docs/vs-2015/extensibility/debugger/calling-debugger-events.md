@@ -1,26 +1,21 @@
 ---
 title: 呼叫偵錯工具事件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: b3440ac3-80af-40c6-bef4-cbf00fa67885
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9682e16c059483d44953ffbe11d8e10e6d46a435
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6c6a5e75ab97f44efd52ef648791658ded34d085
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767501"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943450"
 ---
 # <a name="calling-debugger-events"></a>呼叫偵錯工具事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,4 +51,3 @@ ms.locfileid: "51767501"
   
 ## <a name="see-also"></a>另請參閱  
  [建立自訂的偵錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)
-

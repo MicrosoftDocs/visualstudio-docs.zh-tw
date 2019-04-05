@@ -1,27 +1,22 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback |Microsoft Docs
-ms.custom: ''
+title: IDebugExpressionEvaluator2::SetCallback | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetCallback
 - SetCallback
 ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3eb1f835f299bc2824b603f21a7297a6e4340d22
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8d6f715bb33afe051cdccffbf3219e062b606f57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759568"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945023"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -82,4 +77,3 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
-

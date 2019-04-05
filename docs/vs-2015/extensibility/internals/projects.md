@@ -1,14 +1,9 @@
 ---
 title: 專案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
 - custom tools [Visual Studio SDK]
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
 caps.latest.revision: 44
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c3d31f1ce7d063969aad113b95a6684272a28fe9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a251af12ccf4be5f0f48f789ac59fedaed3299b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761230"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942982"
 ---
 # <a name="projects"></a>專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "51761230"
  [Web 專案](../../extensibility/internals/web-projects.md)  
  說明 Web 專案，進而建立 Web 應用程式。  
   
- [產生新專案︰ 深入來看，第一部](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)和[產生新專案： 在幕後，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
+ [新的專案產生：在幕後，第一部](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)和[產生新專案：在幕後，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
  說明實際發生的狀況時建立新的專案。  
   
  [VSSDK 範例](../../misc/vssdk-samples.md)  
@@ -50,4 +45,3 @@ ms.locfileid: "51761230"
 ## <a name="related-sections"></a>相關章節  
  [深入探索 Visual Studio SDK](../../extensibility/internals/inside-the-visual-studio-sdk.md)  
  說明 Visual Studio 擴充性的不同層面。
-

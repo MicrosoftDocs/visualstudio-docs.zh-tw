@@ -1,14 +1,9 @@
 ---
 title: CRT 偵錯技術 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.runtime.debugging
 dev_langs:
@@ -25,13 +20,13 @@ ms.assetid: 9be561f6-14a8-44ff-925d-d911d5b8e6ff
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6745a31dcb7c37d12551248473b072d440116501
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a69defe75b80ef1f395931017dfc942398ca2710
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801026"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943477"
 ---
 # <a name="crt-debugging-techniques"></a>CRT 偵錯技術
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "51801026"
  描述由 C 執行階段程式庫提供的偵錯支援，並提供存取這些工具的指示。  
   
  [報告巨集](../debugger/macros-for-reporting.md)  
- 提供下列相關資訊 **_RPTn**並 **_RPTFn**巨集 （定義於 CRTDBG。H)，取代使用`printf`陳述式中的偵錯。  
+ 提供 **_RPTn** 和 **_RPTFn** 巨集 (定義於 CRTDBG.H) 的相關資訊，這些巨集取代偵錯時使用的 `printf` 陳述式。  
   
  [堆積配置函式的偵錯版本](../debugger/debug-versions-of-heap-allocation-functions.md)  
  討論堆積配置函式的特殊偵錯版本，包括：CRT 對應呼叫的方式、明確呼叫他們的優點、如何避免轉換、追蹤用戶端區塊中不同的配置類型，以及未定義 _DEBUG 的結果。  
@@ -63,6 +58,3 @@ ms.locfileid: "51801026"
   
  [偵錯工具安全性](../debugger/debugger-security.md)  
  提供更安全偵錯的建議事項。
-
-
-

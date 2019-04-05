@@ -1,14 +1,9 @@
 ---
 title: 例外狀況之後繼續執行 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -33,13 +28,13 @@ ms.assetid: 6fe97aac-2131-4615-bd92-d3afee741558
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 947a17993fe0e8366149d1cef79c26c68b11d22a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 37a285a48ec58ddeaeae55601565c155d0455402
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730037"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942443"
 ---
 # <a name="continuing-execution-after-an-exception"></a>例外狀況之後繼續執行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,8 +58,3 @@ ms.locfileid: "51730037"
   
 ## <a name="see-also"></a>另請參閱  
  [使用偵錯工具管理例外狀況](../debugger/managing-exceptions-with-the-debugger.md)
-
-
-
-
-

@@ -1,12 +1,9 @@
 ---
-title: 逐步解說： 建立自訂指示詞處理器 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立自訂指示詞處理器 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
@@ -14,13 +11,13 @@ ms.assetid: b8f35a36-14e1-4467-8f5f-e01402af14d5
 caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 321dd514e0690997cd0aab4ba2b05a7fe0898b6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e10c489ee8bd14599220429c9d74821986f8b915
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833417"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945443"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>逐步解說：建立自訂指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -611,7 +608,7 @@ End Property
 
 4.  針對[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]，開啟**專案**功能表，然後按一下**CustomDP 屬性**。 在 **應用程式**索引標籤中，於**根命名空間**，刪除預設值， `CustomDP`。  
 
-5.  按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。  
+5.  在 [檔案] 功能表上按一下 [全部儲存]。  
 
 6.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
 
@@ -838,7 +835,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     >  在這個範本中，`Processor` 參數的值為 `CustomDirectiveProcessor`。 `Processor` 參數的值必須與處理器之登錄機碼的名稱相符。  
 
-5.  按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。  
+5.  在 [檔案] 功能表上按一下 [全部儲存]。  
 
 #### <a name="to-test-the-directive-processor"></a>若要測試指示詞處理器  
 
@@ -975,6 +972,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3.  若要檢視在瀏覽器中，輸出中**方案總管**，以滑鼠右鍵按一下 TestDP.htm，然後按一下**瀏覽器中檢視**。  
 
      您的輸出除了已套用 HTML 格式之外，應該與原本的文字相同。 每個項目名稱應該顯示為粗體。
-
-
-

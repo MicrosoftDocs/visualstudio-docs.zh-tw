@@ -1,14 +1,9 @@
 ---
-title: 偵錯準備： ASP.NET Web 應用程式 |Microsoft Docs
-ms.custom: ''
+title: 偵錯準備：ASP.NET Web 應用程式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: bcfb1080-98d1-42f9-96af-186fb14f232a
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 59f4f3e1db92c5f7b46a9bb9e1e164fc25b01010
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: baa5e454eec00c2530190834974cd946838a0947
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730681"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942773"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>偵錯準備：ASP.NET Web 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,11 +43,11 @@ ms.locfileid: "51730681"
   
 1.  在函式和事件處理常式中設定一個或多個中斷點。  
   
-     如需詳細資訊，請參閱 [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。  
+     如需詳細資訊，請參閱 [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。  
   
 2.  遇到中斷點時，逐步執行函式內的程式碼。 請觀察程式碼的執行，直到您找出問題癥結。  
   
-     如需詳細資訊，請參閱 <<c0> [ 逐步執行程式碼](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)並[偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)。  
+     如需詳細資訊，請參閱 <<c0> [ 逐步執行程式碼](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)並[偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)。  
   
 ## <a name="changing-default-configurations"></a>變更預設的組態  
  如果想要變更 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 建立的預設偵錯和發行組態，您可以自行變更。 如需詳細資訊，請參閱[如何：設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。  
@@ -74,6 +69,3 @@ ms.locfileid: "51730681"
  [偵錯工具基礎](../debugger/debugger-basics.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)
-
-
-

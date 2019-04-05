@@ -1,26 +1,21 @@
 ---
 title: 屬性視窗的按鈕 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, buttons
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bb6a3802e135c02b4ccc7b27aca69b2afd2a9f70
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a18d82ecc0d5bbffa8fb0eb4799910f32a10784a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789846"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943222"
 ---
 # <a name="properties-window-buttons"></a>屬性視窗的按鈕
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,4 +40,3 @@ ms.locfileid: "51789846"
   
 ## <a name="see-also"></a>另請參閱  
  [擴充屬性](../../extensibility/internals/extending-properties.md)
-

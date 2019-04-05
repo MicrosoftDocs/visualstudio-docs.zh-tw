@@ -1,25 +1,22 @@
 ---
 title: 整合 UML 模型與其他模型和工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, references to models
 ms.assetid: 9e75e7d1-93cf-4196-baa3-bd10b9af16d3
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1cc5a26a9c2febb0dd1dff3c0d14ba3786dde9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a8b67e5c784e24b1af71089d33e7db60cb1f92c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764131"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944928"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>整合 UML 模型與其他模型及工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +40,7 @@ UML 模型可以與其他模型及網域指定的語言整合。
   
    如需詳細資訊，請參閱 <<c0> [ 定義要擴充 UML 的設定檔](../modeling/define-a-profile-to-extend-uml.md)。  
   
-   如需範例專案，在其中一個設定檔部署以及功能表命令和軌跡處理常式，請參閱[範例： UML 設定檔](http://go.microsoft.com/fwlink/?LinkID=213811)。  
+   如需範例專案，在其中一個設定檔部署以及功能表命令和軌跡處理常式，請參閱[範例：UML 設定檔](http://go.microsoft.com/fwlink/?LinkID=213811)。  
   
 - **參考。** 您可以將一組字串附加至任何 UML 項目。 您可以撰寫儲存資訊 (例如檔案名稱或其他項目之 GUID) 的程式碼。 不需提供其他定義便可以完成。 使用者無法直接查看參考。  
   
@@ -68,12 +65,12 @@ UML 模型可以與其他模型及網域指定的語言整合。
   
 2. **VMSDK 事件**可用傳播模型外的變更，例如，若要變更連結的文件中，檔案名稱或變更另一個模型中的項目。  
   
-   如需這兩種機制的資訊，請參閱[如何： 回應 UML 模型中的變更](../misc/how-to-respond-to-changes-in-a-uml-model.md)。  
+   如需這兩種機制的資訊，請參閱[How to:回應 UML 模型中的變更](../misc/how-to-respond-to-changes-in-a-uml-model.md)。  
   
    拖曳項目，以將其從一個模型複製到另一個模型  
    您可將項目拖曳到 UML 圖表上，讓使用者建立項目。 建立的項目可以不是原始項目的副本。 例如，您可讓使用者將活動圖表從方案總管拖曳至另一個活動圖表上，以建立新的動作。  
   
-   如需詳細資訊，請參閱[在模型圖上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)並[如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。  
+   如需詳細資訊，請參閱[在模型圖上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)和[How to:新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。  
   
 ## <a name="samples"></a>範例  
  程式碼範例，請參閱[UML 項目連結至圖表或其他檔案](http://go.microsoft.com/fwlink/?LinkId=213813)。 此範例讓使用者將檔案拖曳到任何 UML 項目，並稍後按兩下檔案項目以開啟檔案。 例如，您可以將活動圖表連結至使用案例項目。 圖示會顯示哪些項目具有連結。  
@@ -98,15 +95,12 @@ UML 模型可以與其他模型及網域指定的語言整合。
   
    此範例將示範如何處理拖曳自 Windows 檔案總管 (或檔案總管)、方案總管及其他 UML 項目的項目。  
   
-  針對由 DSL 讀取 UML 模型的範例，請參閱[如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。  
+  針對由 DSL 讀取 UML 模型的範例，請參閱[How to:新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [在模型圖上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)   
- [如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [如何： 回應 UML 模型中的變更](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
- [範例： UML 設定檔](http://go.microsoft.com/fwlink/?LinkID=213811)   
+ [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [如何：回應 UML 模型中的變更](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
+ [範例：UML 設定檔](http://go.microsoft.com/fwlink/?LinkID=213811)   
  [UML 項目連結至圖表或其他檔案](http://go.microsoft.com/fwlink/?LinkId=213813)
-
-
-

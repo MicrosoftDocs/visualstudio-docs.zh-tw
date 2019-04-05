@@ -1,25 +1,20 @@
 ---
 title: 0 的 x-2 x-4 的 msaa 變異 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8e661823a07945c22679832dc716ad2f25f4f6aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b298beadf6ffd3a59e5cdd44981a63bed1746cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793772"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943887"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51793772"
   
 - 裝置針對要求的呈現目標格式 (D3D11_TEXTURE2D_DESC::Format 成員)，支援要求的樣本計數 (0、2 或 4) 和樣本品質 (0) (由 `ID3D11Device::CheckMultisampleQualityLevels` 決定)。  
   
-  如果 D3D11_TEXTURE2D_DESC::BindFlags 成員已設定 D3D_BIND_SHADER_RESOUCE 或 D3D11_BIND_UNORDERED_ACCESS 旗標，則會建立兩個版本的紋理；第一個版本已清除這些用做呈現目標的旗標，而另一個版本是非 MSAA 紋理，其完整保留這些旗標做為第一個版本的解析緩衝區。 這是必要的，因為使用 MSAA 紋理做為著色器資源，或進行未排序存取都不可能會有效；例如，處理它的著色器會產生不正確的結果，原因是它需要非 MSAA 紋理。 如果變數已建立次要非 MSAA 紋理，則只要從裝置內容取消設定 MSAA 呈現目標，就會將其內容解析為非 MSAA 紋理。 同樣地，只要 MSAA 呈現目標應該繫結為著色器資源，或用於未排序存取檢視時，就會改為繫結解析的非 MSAA 紋理。  
+  如果 D3D11_TEXTURE2D_DESC::BindFlags 成員已設定 D3D_BIND_SHADER_RESOURCE 或 D3D11_BIND_UNORDERED_ACCESS 旗標，則會建立兩個版本的紋理；第一個版本已清除這些用做轉譯目標的旗標，而另一個版本是非 MSAA 紋理，它完整保留這些旗標作為第一個版本的解析緩衝區。 這是必要的，因為使用 MSAA 紋理做為著色器資源，或進行未排序存取都不可能會有效；例如，處理它的著色器會產生不正確的結果，原因是它需要非 MSAA 紋理。 如果變數已建立次要非 MSAA 紋理，則只要從裝置內容取消設定 MSAA 呈現目標，就會將其內容解析為非 MSAA 紋理。 同樣地，只要 MSAA 呈現目標應該繫結為著色器資源，或用於未排序存取檢視時，就會改為繫結解析的非 MSAA 紋理。  
   
   這些變異也會覆寫使用 `IDXGIFactory::CreateSwapChain`、`IDXGIFactory2::CreateSwapChainForHwnd`、`IDXGIFactory2::CreateSwapChainForCoreWindow`、`IDXGIFactory2::CreateSwapChainForComposition` 和 `ID3D11CreateDeviceAndSwapChain` 所建立的所有交換鏈結上的 MSAA 設定。  
   
@@ -83,6 +78,3 @@ chain_description.SampleDesc.Quality = 0;
   
 // Call IDXGISwapChain::CreateSwapChain or D3D11CreateDeviceAndSwapChain, etc.  
 ```
-
-
-
