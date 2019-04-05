@@ -1,12 +1,9 @@
 ---
 title: 規則傳播模型內的變更 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
@@ -14,13 +11,13 @@ ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 265d04306b4747a4e5bc04b879b9635e81ed8102
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e7c7d3eec918895632d07be8c4a015e228743945
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831194"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945630"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則傳播模型內的變更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -221,6 +218,3 @@ namespace Company.TaskRuleExample
 ## <a name="see-also"></a>另請參閱  
  [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
  [BoundsRules 限制圖案位置和大小](../modeling/boundsrules-constrain-shape-location-and-size.md)
-
-
-

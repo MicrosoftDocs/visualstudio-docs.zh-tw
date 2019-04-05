@@ -1,12 +1,9 @@
 ---
-title: 逐步解說： 將主機連接至產生的指示詞處理器 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：將主機連接至產生的指示詞處理器 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
@@ -14,23 +11,23 @@ ms.assetid: 254540d9-90d6-42de-8c1c-068affd56e83
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 00baf3697347f208c5bd6cd2aa1abfe02b6fa2cb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817869"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58946100"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連接至產生的指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以撰寫自己的主機處理文字範本。 基本的自訂主應用程式所示[逐步解說： 建立自訂的文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 您可以擴充該主應用程式加入功能，例如產生多個輸出檔案。  
+您可以撰寫自己的主機處理文字範本。 基本的自訂主應用程式所示[逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 您可以擴充該主應用程式加入功能，例如產生多個輸出檔案。  
   
  在本逐步解說中，您會擴充自訂主機，以支援呼叫指示詞處理器的文字範本。 當您定義特定領域語言時，它會產生*指示詞處理器*的領域模型。 指示詞處理器，可讓使用者更輕鬆地撰寫存取模型，並減少撰寫組件並匯入的範本中的指示詞的範本。  
   
 > [!WARNING]
->  本逐步解說是根據[逐步解說： 建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 第一次執行該逐步解說。  
+>  本逐步解說是根據[逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 第一次執行該逐步解說。  
   
  本逐步解說包含下列工作：  
   
@@ -49,7 +46,7 @@ ms.locfileid: "49817869"
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|  
   
- 此外，您必須擁有在中建立自訂文字範本轉換[逐步解說： 建立自訂的文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。  
+ 此外，您必須擁有在中建立自訂文字範本轉換[逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。  
   
 ## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>使用特定領域語言工具來產生指示詞處理器  
  本逐步解說中，您可以使用特定領域語言設計工具精靈來建立特定領域語言解決方案 DSLMinimalTest。  
@@ -58,15 +55,15 @@ ms.locfileid: "49817869"
   
 1. 建立特定領域語言解決方案，具有下列特性：  
   
-   - 名稱： DSLMinimalTest  
+   - 名稱：DSLMinimalTest  
   
-   - 解決方案範本： 最小語言  
+   - 解決方案範本：最小語言  
   
    - 副檔名： 最小值  
   
-   - 公司名稱： Fabrikam  
+   - 公司名稱：Fabrikam  
   
-     如需建立特定領域語言解決方案的詳細資訊，請參閱[如何： 建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
+     如需建立特定領域語言解決方案的詳細資訊，請參閱[How to:建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
   
 2. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
@@ -86,7 +83,7 @@ ms.locfileid: "49817869"
 6. 儲存方案，然後再關閉 特定領域語言設計工具。  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>將自訂文字範本主機連接至指示詞處理器  
- 產生指示詞處理器之後，連線指示詞處理器和您在建立自訂文字範本主機[逐步解說： 建立自訂的文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。  
+ 產生指示詞處理器之後，連線指示詞處理器和您在建立自訂文字範本主機[逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。  
   
 #### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>若要連接至產生的指示詞處理器的自訂文字範本主機  
   
@@ -230,7 +227,7 @@ ms.locfileid: "49817869"
             }  
     ```  
   
-7.  按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。  
+7.  在 [檔案] 功能表上按一下 [全部儲存]。  
   
 8.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
@@ -362,7 +359,4 @@ ms.locfileid: "49817869"
     ```  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)
-
-
-
+ [逐步解說：建立自訂文字範本主應用程式](../modeling/walkthrough-creating-a-custom-text-template-host.md)

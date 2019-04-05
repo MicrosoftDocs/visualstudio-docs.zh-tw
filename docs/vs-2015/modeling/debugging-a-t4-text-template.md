@@ -1,12 +1,9 @@
 ---
 title: 偵錯 T4 文字範本 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
@@ -14,13 +11,13 @@ ms.assetid: 0877fdf2-20bf-42da-b3cc-4c5856b80821
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 08e74dbb5fefcdaa0959690c7eb1633bca2a8bc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298905"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941197"
 ---
 # <a name="debugging-a-t4-text-template"></a>偵錯 T4 文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,6 +81,3 @@ ms.locfileid: "49298905"
 |處理指示詞時擲回的例外狀況 '{0}'。|指示詞處理器在處理指示詞時，會擲回例外狀況時發生。|請務必指示詞處理器的參數正確無誤。|  
 |主應用程式擲回例外狀況，正在嘗試解析組件參考 '{0}'。|發生於主應用程式在嘗試解析組件參考時，會擲回例外狀況。 此訊息會提供組件參考的字串。|組件參考來自\<@# assembly #> 指示詞和指示詞處理器。 請務必在組件參數中提供的 'name' 參數正確無誤。|  
 |嘗試將指定不支援{1}的值 '{0}' 指示詞 {2}|發生 RequiresProvidesDirectiveProcessor （全部從它衍生我們產生的指示詞處理器），當您提供不支援要求和提供引數。|請務必，name = 中的名稱 'value' 組中提供要求，並提供參數是否正確。|
-
-
-

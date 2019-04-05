@@ -1,27 +1,22 @@
 ---
 title: 偵測系統需求 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ba755fc43fa3db634209b5c3e405dc6794c26ded
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: cdc69441de852e16adc047465aeec30003fe5170
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763413"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945419"
 ---
 # <a name="detecting-system-requirements"></a>偵測系統需求
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,8 +45,7 @@ VSPackage 才能運作，除非已安裝 Visual Studio。 當您使用 Microsoft
 |Visual Studio 2015 Shell （整合和獨立模式）|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
   
 ## <a name="detecting-when-visual-studio-is-running"></a>Visual Studio 執行時偵測  
- 如果安裝 VSPackage 時，Visual Studio 正在執行，無法正確地註冊 VSPackage。 安裝程式必須偵測 Visual Studio 執行時，並拒絕安裝程式。 Windows 安裝程式不會讓您使用資料表項目，若要啟用這類的偵測。 相反地，您必須建立自訂的動作，如下所示： 使用`EnumProcesses`函式來偵測的 devenv.exe 處理序，並接著設定中的啟動條件或有條件地使用安裝程式屬性會顯示一個對話方塊，提示使用者關閉Visual Studio。  
+ 如果安裝 VSPackage 時，Visual Studio 正在執行，無法正確地註冊 VSPackage。 安裝程式必須偵測 Visual Studio 執行時，並拒絕安裝程式。 Windows 安裝程式不會讓您使用資料表項目，若要啟用這類的偵測。 相反地，您必須建立自訂動作，如下：使用`EnumProcesses`函式來偵測的 devenv.exe 處理序，並接著設定中的啟動條件或有條件地使用安裝程式屬性會顯示一個對話方塊，提示使用者在關閉 Visual Studio。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 Windows Installer 安裝 VSPackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

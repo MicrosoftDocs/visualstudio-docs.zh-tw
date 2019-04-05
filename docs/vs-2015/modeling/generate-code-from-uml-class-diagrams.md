@@ -1,12 +1,9 @@
 ---
 title: 從 UML 類別圖產生程式碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates.TextTransformationDataCollectionEditor
@@ -18,13 +15,13 @@ ms.assetid: 2790e64d-7728-4c2e-a4dd-4131e795f730
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a8108a552f21504714fea84bcb29194db4d947cf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764779"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945772"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>從 UML 類別圖產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +91,7 @@ ms.locfileid: "51764779"
 |類別|類別|\<沒有任何 > 或<br /><br /> C# 類別|  
 |介面|介面|\<沒有任何 > 或<br /><br /> C# 介面|  
 |列舉|列舉|\<沒有任何 > 或<br /><br /> C# 列舉|  
-|委派|類別|C# 委派|  
+|Delegate - 委派|類別|C# 委派|  
 |結構|類別|C# 結構|  
 
 #### <a name="to-set-a-stereotype-on-a-type-or-other-element"></a>若要在類型或其他項目上設定造型  
@@ -136,7 +133,7 @@ ms.locfileid: "51764779"
 
  當您第一次執行**產生的程式碼**命令特定的模型中，它會將一組預設的範本繫結附加至模型的根目錄。 這些繫結會套用至模型內的所有項目。  
 
- 但是，您可以覆寫及加入至這些預設繫結，方法是將您自己的繫結附加至封裝、類別或其他項目。 繫結會套用至附加它的項目內所包含的所有項目。 例如，如果您希望特定封裝內的所有類型都由一組不同的範本來轉換或者輸出到不同的資料夾，您可以將範本繫結附加至此封裝。  
+ 但是，您可以覆寫及加入至這些預設繫結程序，方法是將您自己的繫結程序附加至封裝、類別或其他項目。 繫結會套用至附加它的項目內所包含的所有項目。 例如，如果您希望特定封裝內的所有類型都由一組不同的範本來轉換或者輸出到不同的資料夾，您可以將範本繫結程序附加至此封裝。  
 
  若要檢查附加至模型項目範本繫結，選擇省略符號 **[...]** 中**文字範本繫結**屬性 視窗中的屬性。  
 
@@ -163,7 +160,7 @@ ms.locfileid: "51764779"
 
     選取現有的繫結加以編輯。  
 
-    每一個範本繫結都會定義應該如何將指定的範本套用到您所選取的模型項目，以及它所包含的其他模型項目。  
+    每一個範本繫結程序都會定義應該如何將指定的範本套用到您所選取的模型項目，以及它所包含的其他模型項目。  
 
 4. 在此對話方塊中，設定文字範本繫結的屬性。  
 
@@ -174,7 +171,7 @@ ms.locfileid: "51764779"
    |     覆寫      |                                                                                                                                                                                                                                                                                                      若為 true，則會覆寫任何現有的程式碼。                                                                                                                                                                                                                                                                                                       |
    |    目標名稱     | 產生的檔案名稱。<br /><br /> 您可以將運算式插入這個字串這類`{Name}`或`{Owner.Name}`。 例如，您可以撰寫： `{Owner.Name}_{Name}`。 在模型項目上評估此運算式。 它可以使用項目的屬性，但不能使用方法。 若要尋找可以使用哪些屬性，看看中的型別屬性 **Microsoft.VisualStudio.Uml。\\***.\*\*重要事項︰* \* `{Name}`或是`{Owner.Name}`可以只在用**目標名稱**屬性。 若要變更產生之類別的名稱，您必須修改此範本。 如需詳細資訊，請參閱 <<c0> [ 撰寫文字範本](#writing)。 |
    |    專案路徑    |                                                                      指定將包含轉換輸出檔案的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案路徑。 使用具類型的值來建立新的專案。 選擇省略符號按鈕 (**[...]**) 來選取現有的專案。<br /><br /> 將會建立新的專案 (如果不存在)。 這會是 C# 類別庫專案。<br /><br /> 若要這麼做，您必須直接輸入專案。 您可以包含環境變數巨集，例如 %ProgramFiles% or %LocalAppData%。                                                                       |
-   |  目標目錄  |                                                                                          產生目標檔案的資料夾。 此路徑相對於專案資料夾。<br /><br /> 您可以使用 `{PackageStructure}` 運算式插入路徑，此路徑會對應到包含的封裝名稱。 預設值是 `\GeneratedCode\{PackageStructure}`。 您也可以包含環境變數，例如 %TEMP% 或 %HomePath%。 **重要事項︰** `{PackageStructure}`只在**目標目錄**屬性。                                                                                          |
+   |  目標目錄  |                                                                                          產生目標檔案的資料夾。 此路徑相對於專案資料夾。<br /><br /> 您可以使用 `{PackageStructure}` 運算式插入路徑，此路徑會對應到包含的封裝名稱。 預設值為 `\GeneratedCode\{PackageStructure}`。 您也可以包含環境變數，例如 %TEMP% 或 %HomePath%。 **重要事項︰** `{PackageStructure}`只在**目標目錄**屬性。                                                                                          |
    | 範本檔路徑。 |                                                                                                                                                           將要執行轉換的範本。<br /><br /> 您可以使用提供的範本，或建立自己的範本。 您可以在下列位置找到提供的範本：<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
 
 
@@ -193,7 +190,7 @@ ms.locfileid: "51764779"
 
 - 若要巡覽程式碼中的 UML 模型，您必須使用 UML API。 如需詳細資訊，請參閱 <<c0> [ 巡覽 UML 模型](../modeling/navigate-the-uml-model.md)並[UML 模型擴充性的 API 參考](../modeling/api-reference-for-uml-modeling-extensibility.md)。  
 
-  若要使用的範本**產生的程式碼**命令時，您必須包含 Modeling 指示詞。 例如:   
+  若要使用的範本**產生的程式碼**命令時，您必須包含 Modeling 指示詞。 例如：  
 
   `<#@ Modeling ElementType="Microsoft.VisualStudio.Uml.Classes.IClass" Processor="ModelingProcessor" #>`  
 
@@ -240,9 +237,6 @@ ms.locfileid: "51764779"
 - `<#= Expressions #>` 會評估及轉換為字串。  
 
 ## <a name="see-also"></a>另請參閱  
- [UML 類別圖： 參考](../modeling/uml-class-diagrams-reference.md)   
- [UML 類別圖： 方針](../modeling/uml-class-diagrams-guidelines.md)   
+ [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)   
+ [UML 類別圖表：指導方針](../modeling/uml-class-diagrams-guidelines.md)   
  [透過 UML 模型產生檔案](../modeling/generate-files-from-a-uml-model.md)
-
-
-

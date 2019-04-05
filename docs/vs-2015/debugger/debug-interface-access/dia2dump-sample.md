@@ -1,14 +1,9 @@
 ---
 title: Dia2dump 範例 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 727d7a4a97bc0aa55d370a45549941ab286930f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bd52c635d5ade1bef73176601d6957ba5859723b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805394"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944381"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 範例
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Dia2dump 範例隨附於 Visual Studio，並包含 Dia2dump.cpp 原始程式檔�
   
 2.  在 [專案屬性頁中**C/c + +** &#124; **一般** &#124; **其他 Include 目錄**] 屬性，指定`..\DIA SDK\include`目錄。 這可確保編譯器可以找到 dia2.h 檔案。  
   
-3.  在 **建置**功能表上，按一下**重建方案**。  
+3.  在 [建置] 功能表上，按一下 [重建方案]。  
   
 4.  關閉 Visual Studio。  
   
@@ -58,6 +53,3 @@ Dia2dump 範例隨附於 Visual Studio，並包含 Dia2dump.cpp 原始程式檔�
 ## <a name="see-also"></a>另請參閱  
  [Dia2dump.cpp 原始程式檔](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
  [如何：不成功的 Visual Studio 專案升級疑難排解](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)
-
-
-

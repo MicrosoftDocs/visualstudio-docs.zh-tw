@@ -1,14 +1,9 @@
 ---
 title: 使用傾印檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crashdump
 dev_langs:
@@ -29,13 +24,13 @@ ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0c117e0aa7922c70f919a7b16fa6d40a447f2ce2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761139"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000579"
 ---
 # <a name="using-dump-files"></a>使用傾印檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,9 +78,9 @@ ms.locfileid: "51761139"
   
 - 若要偵錯[核心模式](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx)傾印檔案，在 Visual Studio 2013，請下載[Windows 8.1 版的偵錯工具針對 Windows](http://msdn.microsoft.com/windows/hardware/gg463009)。 請參閱[在 Visual Studio 中的核心偵錯](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx)。  
   
-- Visual Studio 無法偵錯傾印檔案儲存在較舊的傾印格式，稱為[完整使用者模式傾印](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx)。 請注意，完整使用者模式傾印與含有堆積的傾印並不相同。  
+- Visual Studio 無法偵錯傾印檔案儲存在較舊的傾印格式，稱為[完整使用者模式傾印](/windows-hardware/drivers/debugger/user-mode-dump-files#full)。 請注意，完整使用者模式傾印與含有堆積的傾印並不相同。  
   
-- 若要使用偵錯[SOS.dll （SOS 偵錯的擴充功能）](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)在 Visual Studio 中，您必須安裝偵錯工具針對 Windows，屬於 Windows Driver Kit (WDK)。 請參閱[Windows 8.1 Preview： 下載套件、 位元，以及工具](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx)。  
+- 若要使用偵錯[SOS.dll （SOS 偵錯的擴充功能）](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)在 Visual Studio 中，您必須安裝偵錯工具針對 Windows，屬於 Windows Driver Kit (WDK)。 請參閱[Windows 8.1 Preview:下載套件、 位元，以及工具](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx)。  
   
   ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
@@ -104,7 +99,7 @@ ms.locfileid: "51761139"
   
 1.  在 Visual Studio 中，選擇**檔案**，**開放**，**檔案**。  
   
-2.  在 **開啟檔案**對話方塊方塊中，找出並選取傾印檔案。 這類檔案的副檔名通常是 .dmp。 然後選擇**確定**。  
+2.  在 [開啟檔案] 對話方塊中，找出並選取傾印檔案。 這類檔案的副檔名通常是 .dmp。 然後選擇**確定**。  
   
 3.  **傾印檔案摘要** 視窗隨即出現。 在這個視窗中，您可以檢視傾印檔案的偵錯摘要資訊、設定符號路徑、開始偵錯，以及將摘要資訊複製至剪貼簿。  
   
@@ -145,6 +140,5 @@ ms.locfileid: "51761139"
   
 ## <a name="see-also"></a>另請參閱  
  [在 Just-in-time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [IntelliTrace](../debugger/intellitrace.md)
-

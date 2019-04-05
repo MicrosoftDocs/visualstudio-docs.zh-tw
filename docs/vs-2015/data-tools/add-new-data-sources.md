@@ -1,12 +1,9 @@
 ---
 title: 加入新的資料來源 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
 dev_langs:
@@ -21,15 +18,15 @@ ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 50a18de0fa3006e1cf95e48d50f24411347fd135
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279145"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939868"
 ---
-# <a name="add-new-data-sources"></a>加入新的資料來源
+# <a name="add-new-data-sources"></a>新增新資料來源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -88,7 +85,7 @@ ms.locfileid: "49279145"
 -   Web 服務。  
   
     > [!NOTE]
-    >  在出現的項目**Zdroje dat**視窗均依存於服務所傳回的資料。 某些服務可能並未提供足夠的資訊，如**資料來源組態精靈**來建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，沒有任何項目會出現在**Zdroje dat**視窗中，當您完成精靈。 這是因為不具類型資料集不提供結構描述，因此精靈沒有足夠的資訊來建立資料來源。  
+    >  在出現的項目**Zdroje dat**視窗均依存於服務所傳回的資料。 部分服務所提供的資訊可能不足，無法供 [資料來源組態精靈] 建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，沒有任何項目會出現在**Zdroje dat**視窗中，當您完成精靈。 這是因為不具類型資料集不提供結構描述，因此精靈沒有足夠的資訊來建立資料來源。  
   
 ## <a name="data-source-for-an-object"></a>物件的資料來源  
  您可以從任何公開 （expose） 執行的一或多個公用屬性的物件建立資料來源**資料來源組態精靈**，然後選取**物件**資料來源類型。 物件的所有公用屬性會顯示在**Zdroje dat**視窗。   如果您使用 Entity Framework，並產生一個模型，這是您可以在此找到的實體類別，將會為您的應用程式的資料來源。  
@@ -108,4 +105,3 @@ ms.locfileid: "49279145"
   
 ## <a name="see-also"></a>另請參閱  
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

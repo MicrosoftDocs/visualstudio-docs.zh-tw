@@ -1,11 +1,8 @@
 ---
 title: Flowchart 活動設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Flowchart.UI
@@ -15,13 +12,13 @@ ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 67bebeec9c2d88ba1912bc50b27e38f8278e7e3f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3e89caded1b7388b79ea3232dc0a2809dc7b8222
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226235"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943337"
 ---
 # <a name="flowchart-activity-designer"></a>Flowchart 活動設計工具
 <xref:System.Activities.Statements.Flowchart> 活動會用來建立工作流程，這些工作流程可定義及管理複雜的流程控制。 <xref:System.Activities.Statements.Flowchart> 可以利用程式碼或使用 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 製作。 這個主題提供 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 體驗的說明文件。 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 工作流程活動設計工具可供開發人員以自然的方式製作工作流程。  
@@ -39,7 +36,7 @@ ms.locfileid: "49226235"
 ### <a name="flowchart-activity-properties"></a>Flowchart 活動屬性  
  下表顯示 <xref:System.Activities.Statements.Flowchart> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中或在設計工具介面上編輯。  
   
-|屬性名稱|必要項|使用方式|  
+|屬性名稱|必要|使用量|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定活動設計工具在標頭中的顯示名稱。 預設值為 Flowchart。 值可以在中編輯**屬性**視窗或直接在活動設計工具標頭。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|  
 |<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|設定至這個 <xref:System.Activities.Statements.Flowchart> 的範圍內，使其子活動都有共同狀態之變數的集合。|  
@@ -49,4 +46,4 @@ ms.locfileid: "49226235"
 ## <a name="see-also"></a>另請參閱  
  [流程圖](../workflow-designer/flowchart-activity-designers.md)   
  [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)   
- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)
+ [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)
