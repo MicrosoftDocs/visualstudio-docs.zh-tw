@@ -1,23 +1,20 @@
 ---
 title: 自訂複製行為 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 87fff01c-60ba-440a-b8a0-185edcef83ac
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c2478925ecf481aaf49dbfbe5818d8839b9ad54f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: dfbaf72f39bd4a61458abc1e2f75572e210c6cfe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844079"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943535"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +91,7 @@ partial class MyDslClipboardCommandSet
  覆寫*MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` DslPackage 專案中。  
   
  **保留配置透過複製並貼上。**  
- 當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 在此範例示範這項技術是[VMSDK： 電路圖表範例](http://go.microsoft.com/fwlink/?LinkId=213879)。  
+ 當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 在此範例示範這項技術是[VMSDK:電路圖表範例](http://go.microsoft.com/fwlink/?LinkId=213879)。  
   
  若要達成這個效果，請將圖形和連接線加入至複製的 ElementGroupPrototype。 最方便的覆寫方法是 ElementOperations.CreateElementGroupPrototype()。 若要執行這項操作，請將下列程式碼加入至 DSL 專案：  
   
@@ -151,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```  
   
  **貼上圖形，在選擇的位置，例如目前的游標位置。**  
- 當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 在此範例示範這項技術是[VMSDK： 電路圖表範例](http://go.microsoft.com/fwlink/?LinkId=213879)。  
+ 當使用者複製多個圖形時，您可以在貼上時保留圖形的相對位置。 在此範例示範這項技術是[VMSDK:電路圖表範例](http://go.microsoft.com/fwlink/?LinkId=213879)。  
   
  若要達成這個效果，請覆寫 `ClipboardCommandSet.ProcessOnMenuPasteCommand()` 以使用特定位置版本的 `ElementOperations.Merge()`。 若要執行這項操作，請在 DslPackage 專案中加入下列程式碼：  
   
@@ -218,7 +215,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```  
   
  **可讓使用者拖放項目。**  
- 請參閱[如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。  
+ 請參閱[如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。  
   
 ##  <a name="customizeLinks"></a> 自訂連結複製行為  
  當使用者複製項目時，標準行為是所有內嵌項目也會一併複製。 您可以修改標準複製行為。 在 DSL 定義中，選取 關聯性，並在 屬性 視窗設定的一方的角色**Propagates Copy**值。  
@@ -290,7 +287,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```  
   
 ## <a name="receiving-items-dragged-from-other-models"></a>接受從其他模型拖曳的項目  
- ElementOperations 也可用於定義複製、移動、刪除和拖放行為。 此處提供的範例定義自訂拖放行為，示範如何使用 ElementOperations。 不過，針對該目的您可能會考慮替代方法中所述[如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)，這是更具擴充性。  
+ ElementOperations 也可用於定義複製、移動、刪除和拖放行為。 此處提供的範例定義自訂拖放行為，示範如何使用 ElementOperations。 不過，針對該目的您可能會考慮替代方法中所述[How to:新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)，這是更具擴充性。  
   
  在您的 ElementOperations 類別中定義兩個方法：  
   
@@ -378,7 +375,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>標準複製行為  
  本節的程式碼顯示您可以覆寫以變更複製行為的方法。 為了協助您了解如何達成您自己的自訂，本節顯示的程式碼會覆寫與複製相關的方法，但不會變更標準行為。  
   
- 當使用者按下 CTRL+C 或使用 [複製] 功能表命令時，會呼叫 <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> 方法。 如何設定，您可以看到**DslPackage\Generated Code\CommandSet.cs**。 如需有關如何命令所設定的詳細資訊，請參閱[如何： 將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
+ 當使用者按下 CTRL+C 或使用 [複製] 功能表命令時，會呼叫 <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> 方法。 如何設定，您可以看到**DslPackage\Generated Code\CommandSet.cs**。 如需有關如何命令所設定的詳細資訊，請參閱[How to:將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
   
  您可以藉由加入部分類別定義的覆寫 ProcessOnMenuCopyCommand *MyDsl* `ClipboardCommandSet` DslPackage 專案中。  
   
@@ -568,9 +565,6 @@ namespace Company.MyDsl
   
 ## <a name="see-also"></a>另請參閱  
  [自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)   
- [如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [自訂刪除行為](../modeling/customizing-deletion-behavior.md)   
- [範例： VMSDK 電路圖表範例](http://go.microsoft.com/fwlink/?LinkId=213879)
-
-
-
+ [範例：VMSDK 電路圖表範例](http://go.microsoft.com/fwlink/?LinkId=213879)

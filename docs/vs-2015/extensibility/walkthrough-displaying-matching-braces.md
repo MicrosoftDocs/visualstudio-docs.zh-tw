@@ -1,28 +1,23 @@
 ---
-title: 逐步解說： 顯示成對大括弧 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：顯示成對大括弧 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9795cd3c40eeff714d55f4bb95f78cf1f7f8aea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b1d6833a3dca2ce8b076574ecb4b9856a6e9d79
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745878"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944936"
 ---
-# <a name="walkthrough-displaying-matching-braces"></a>逐步解說︰顯示成對括弧
+# <a name="walkthrough-displaying-matching-braces"></a>逐步解說：顯示成對大括弧
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以實作語言為基礎的功能，例如由定義要比對，在大括的號和時插入號是其中一個大括號，然後將文字標記標記新增至對稱的括號比對的大括號。 您可以定義大括號內容中的一種語言，或您可以定義您自己的檔案名稱擴充功能和內容類型，並將標籤套用到只是該類型，或您可以將標記套用至現有的內容類型 （例如 「 文字 」）。 下列逐步解說示範如何套用至"text"的內容類型的標籤進行比對的大括號。  
@@ -130,5 +125,4 @@ ms.locfileid: "51745878"
 4.  當您插入號左大括號之前時，該括號和關閉對稱的大括號應該會反白顯示。 當您將游標右大括號之後時，該括號和相符的左大括號應該會反白顯示。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說︰將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -1,24 +1,19 @@
 ---
 title: MoreInfoURL 元素 （VSIX 語言套件結構描述） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 ms.assetid: 3f07b67b-95c5-4ae8-8b7e-d643cbbb0348
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0f92a64e3cc4c701b30b313bab984dc18d7de3e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 04168f2e69cb613a00313a45a38b2db2882d6d1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724538"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944949"
 ---
 # <a name="moreinfourl-element-vsix-language-pack-schema"></a>MoreInfoURL 元素 （VSIX 語言套件結構描述）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +33,19 @@ ms.locfileid: "51724538"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|無||  
+|None||  
   
 ### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
-|無||  
+|None||  
   
 ### <a name="parent-elements"></a>父項目  
   
 |項目|描述|  
 |-------------|-----------------|  
-|[VSIX LanguagePack 元素](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|必要。 VSIX 語言套件中提供的根項目。|  
+|[VSIX LanguagePack 元素](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|必要項。 VSIX 語言套件中提供的根項目。|  
   
 ## <a name="text-value"></a>文字值  
  選擇性。 對網站的連結。 連結是文字字串。  
@@ -67,5 +62,4 @@ ms.locfileid: "51724538"
 ## <a name="see-also"></a>另請參閱  
  [VSX 語言套件結構描述參考](../extensibility/vsx-language-pack-schema-reference.md)   
  [將 VSIX 封裝當地語系化](../extensibility/localizing-vsix-packages.md)   
- [VSIX 延伸結構描述 1.0 參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-
+ [VSIX 延伸結構描述 1.0 參考](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)

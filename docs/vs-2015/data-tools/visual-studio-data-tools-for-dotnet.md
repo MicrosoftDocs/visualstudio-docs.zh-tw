@@ -1,29 +1,27 @@
 ---
 title: 適用於.NET 的 visual Studio 資料工具 |Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 841311af90ddf4bedfb9d055e5764068cdc71632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: da5578321e9c637b12ffbb253a9c0d4c4f87dfe9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859703"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000658"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>適用於 .NET 的 Visual Studio Data Tools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 和.NET Framework 一起提供廣泛的 API 和工具連線到資料庫、 模型化資料在記憶體中，以及在使用者介面中顯示資料的支援。  .NET Framework 類別提供資料存取功能，稱為[ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx)。 ADO.NET，以及工具在 Visual Studio 中的資料是原本被設計為支援關聯式資料庫和 XML。 如今，許多 NoSQL 資料庫廠商或第三方，會提供 ADO.NET 提供者。  
   
- Visual Studio 2015 Update 2 包含的最新的更新[SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx)，可支援在 Azure 中的最新功能[SQL Database](https://azure.microsoft.com/en-us/services/sql-database/)和[SQL Server 2016](https://www.microsoft.com/en-us/server-cloud/products/sql-server-2016/). [.NET core](https://www.dotnetfoundation.org/netcore)支援 ADO.NET 資料集和相關的類型除外。 如果您以.NET Core 為目標，而且需要的物件關聯式對應 (ORM) 層級，使用[Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx)。  
+ Visual Studio 2015 Update 2 包含的最新的更新[SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx)，可支援在 Azure 中的最新功能[SQL Database](https://azure.microsoft.com/services/sql-database/)和[SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). [.NET core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project)支援 ADO.NET 資料集和相關的類型除外。 如果您以.NET Core 為目標，而且需要的物件關聯式對應 (ORM) 層級，使用[Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx)。  
   
  下圖顯示簡單的檢視的基本架構：  
   
@@ -41,7 +39,7 @@ Visual Studio 和.NET Framework 一起提供廣泛的 API 和工具連線到資�
   
 5. 新增項目，例如商務規則、 搜尋、 資料驗證，或利用基礎資料庫公開 （expose） 的自訂功能的自訂程式碼。  
   
-   您可以略過步驟 3 和程式的.NET 應用程式，以發出命令，直接與資料庫，而不是使用模型。 在此情況下，您會發現相關文件： [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx)。 請注意，您仍然可以使用的資料來源組態精靈和設計工具來產生資料繫結程式碼，當您填入自己的記憶體，然後將 UI 控制項資料繫結至這些物件的物件。  
+   您可以略過步驟 3 和程式的.NET 應用程式，以發出命令，直接與資料庫，而不是使用模型。 在此情況下，您會找到相關的文件：[ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx)。 請注意，您仍然可以使用的資料來源組態精靈和設計工具來產生資料繫結程式碼，當您填入自己的記憶體，然後將 UI 控制項資料繫結至這些物件的物件。  
   
 ## <a name="in-this-section"></a>本節內容  
   
@@ -69,10 +67,3 @@ Visual Studio 和.NET Framework 一起提供廣泛的 API 和工具連線到資�
   
 ## <a name="see-also"></a>另請參閱  
  [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)
-
-
-
-
-
-
-

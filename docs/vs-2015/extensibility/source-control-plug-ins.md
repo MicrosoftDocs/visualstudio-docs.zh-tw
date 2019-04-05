@@ -1,26 +1,21 @@
 ---
 title: 原始檔控制外掛程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e7c51efc30251a177e07b7acf3e4c62821cb9488
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ff124246c3dc80074432e40eebf6e00e8b90b3f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745461"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942733"
 ---
 # <a name="source-control-plug-ins"></a>原始檔控制外掛程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,11 +56,11 @@ ms.locfileid: "51745461"
  [字彙](../extensibility/source-control-plug-in-glossary.md)  
  提供很有幫助的詞彙和定義其讀取的原始檔控制外掛程式 SDK 文件。  
   
- [如何︰關閉原始檔控制外掛程式的相容性警告](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [如何：關閉原始檔控制外掛程式的相容性警告](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  描述如何停用警告。  
   
 ## <a name="related-sections"></a>相關章節  
- [原始檔控制外掛程式範例](http://msdn.microsoft.com/en-us/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
+ [原始檔控制外掛程式範例](http://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
  提供的原始檔控制外掛程式功能的範例。  
   
  [原始檔控制外掛程式測試指南](../extensibility/internals/test-guide-for-source-control-plug-ins.md)  
@@ -76,4 +71,3 @@ ms.locfileid: "51745461"
   
  [Visual Studio SDK 參考](../extensibility/visual-studio-sdk-reference.md)  
  顯示參考主題的清單。
-

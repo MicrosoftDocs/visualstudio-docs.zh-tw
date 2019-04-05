@@ -1,14 +1,9 @@
 ---
-title: CA1709： 識別項應該使用的大小寫正確 |Microsoft Docs
-ms.custom: ''
+title: CA1709:識別項應該使用正確的大小寫 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
 - CA1709
@@ -20,17 +15,17 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 795bf9c307862195cd9ec70bb2de1f89ca4d1e17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4f2fff418e8d791898a4e5db00fe639b5d524d95
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199546"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59000842"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709：識別項名稱應該使用正確的大小寫
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709:識別項名稱應該使用正確的大小寫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 的最新文件，請參閱 < [CA1709： 識別項應該使用正確的大小寫](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly)docs.microsoft.com 上。  
+如需 Visual Studio 的最新文件，請參閱[CA1709:識別項應該使用正確的大小寫](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly)docs.microsoft.com 上。  
   
 |||  
 |-|-|  
@@ -57,7 +52,7 @@ ms.locfileid: "49199546"
   
  此規則會分割成依大小寫的字組的名稱，並檢查任何兩個字母的單字針對常見的兩個字母字詞，例如"In"或"My"的清單。 如果找不到相符項目，word 會假設為縮略字。 此外，這項規則假設名稱包含一個資料列中的四個大寫字母或在名稱結尾處的資料列中的三個大寫字母時找到的縮寫。  
   
- 依照慣例，兩個字母縮寫全部使用大寫字母，和縮略字的三個或多個字元使用 pascal 命名法大小寫。 下列範例會使用此命名慣例: 'DB'、 'C'、 'Cpa、' 和 'Ecma'。 下列範例會違反慣例: 'Io'、 'XML' 和 'DoD'、 以及 nonparameter 名稱、 'xp' 和 'cpl'。  
+ 依照慣例，兩個字母縮寫全部使用大寫字母，和縮略字的三個或多個字元使用 pascal 命名法大小寫。 下列範例會使用此命名慣例：'DB'、 'C'、 'Cpa、' 和 'Ecma'。 下列範例會違反慣例：'Io'、 'XML' 和 'DoD'、 以及 nonparameter 名稱、 'xp' 和 'cpl'。  
   
  'ID' 是特殊案例，讓這項規則的違規情形。 'Id' 不是縮略字，而是 'identification' 的縮寫。  
   
@@ -67,8 +62,7 @@ ms.locfileid: "49199546"
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  它會安全地隱藏這個警告，如果您有自己的命名慣例，或如果識別項表示適當的名稱，例如公司或技術的名稱。  
   
- 您也可以新增特定詞彙、 縮寫及縮略字，加入程式碼分析自訂字典。 指定自訂的字典中的詞彙不會造成違反此規則。 如需詳細資訊，請參閱[How to： 自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
+ 您也可以新增特定詞彙、 縮寫及縮略字，加入程式碼分析自訂字典。 指定自訂的字典中的詞彙不會造成違反此規則。 如需詳細資訊，請參閱[如何：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
   
 ## <a name="related-rules"></a>相關的規則  
- [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-
+ [CA1708:識別項應該不僅為大小寫不同](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

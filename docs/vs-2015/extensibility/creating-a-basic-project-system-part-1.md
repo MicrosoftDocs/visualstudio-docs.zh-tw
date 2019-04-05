@@ -1,14 +1,9 @@
 ---
 title: 建立基本的專案系統，第 1 部分 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9bc0be22f0a5f975f616bfcce942d59399a36ad6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ed2f8975f24404c00f81d86d0d1d6a6933b3d8ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944364"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>建立基本的專案系統，第 1 部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +70,7 @@ ms.locfileid: "51792550"
   
 #### <a name="to-create-a-basic-project-template"></a>若要建立基本專案範本  
   
-1. 將三個資料夾新增至專案，其中一個 [其他]: **Templates\Projects\SimpleProject**。 (在**方案總管**，以滑鼠右鍵按一下**SimpleProject**專案節點，指向**新增**，然後按一下 **新資料夾**。 將資料夾命名為 `Templates`註冊免費試用帳戶。 在 **範本**資料夾中，新增名為資料夾`Projects`。 在**專案**資料夾中，新增名為資料夾`SimpleProject`。)  
+1. 加入專案，其中一個 [其他] 中的三個資料夾：**Templates\Projects\SimpleProject**. (在**方案總管**，以滑鼠右鍵按一下**SimpleProject**專案節點，指向**新增**，然後按一下 **新資料夾**。 將資料夾命名為 `Templates`註冊免費試用帳戶。 在 **範本**資料夾中，新增名為資料夾`Projects`。 在**專案**資料夾中，新增名為資料夾`SimpleProject`。)  
   
 2. 在  **Projects\SimpleProject**資料夾新增名為的圖示檔案`SimpleProject.ico`。 當您按一下 **新增**，圖示編輯器隨即開啟。  
   
@@ -462,7 +457,7 @@ ms.locfileid: "51792550"
   
 #### <a name="to-test-the-project-node-class"></a>若要測試的專案節點類別  
   
-1.  按 F5 鍵啟動偵錯作業。 在實驗執行個體中，建立新的 SimpleProject。  
+1.  按 F5 開始偵錯作業。 在實驗執行個體中，建立新的 SimpleProject。  
   
 2.  Visual Studio 應該呼叫您專案的處理站建立的專案。  
   
@@ -477,7 +472,7 @@ ms.locfileid: "51792550"
   
 2. 在 **屬性**windows，減少為 16 x 16 像素的點陣圖。 請獨特的點陣圖。  
   
-    ![簡單專案 Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+    ![Simple Project Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
 3. 在 **屬性**視窗中，變更**建置動作**點陣圖來**內嵌資源**。  
   
@@ -577,7 +572,7 @@ ms.locfileid: "51792550"
      請注意，範本參數 $nameSpace$ 和 $ $className$ 不需要新的值。 您將學習如何實作在下一節中的範本參數替代。  
   
 ## <a name="substituting-template-parameters"></a>取代範本參數  
- 在先前章節中，您的專案範本使用 Visual Studio 註冊使用`ProvideProjectFactory`屬性。 註冊範本資料夾的路徑，以這種方式可讓您覆寫，並展開，以啟用基本的範本參數替代`ProjectNode.AddFileFromTemplate`類別。 如需詳細資訊，請參閱 <<c0> [ 產生新專案： Under the Hood、 第二段](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
+ 在先前章節中，您的專案範本使用 Visual Studio 註冊使用`ProvideProjectFactory`屬性。 註冊範本資料夾的路徑，以這種方式可讓您覆寫，並展開，以啟用基本的範本參數替代`ProjectNode.AddFileFromTemplate`類別。 如需詳細資訊，請參閱[產生新專案：在幕後，第二部](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
   
  現在將 取代程式碼加入`AddFileFromTemplate`類別。  
   
@@ -658,4 +653,3 @@ ms.locfileid: "51792550"
     ![簡單專案命令](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
    恭喜您！ 您已實作的基本受管理的專案系統。
-

@@ -1,14 +1,9 @@
 ---
 title: SccDiff 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccDiff
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ed4ca5cefa45f041e4285b00d7a2d9682e6565a0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c17064d2d14fe072a4f5215ac06c9f7e38fa8e51
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795748"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943379"
 ---
 # <a name="sccdiff-function"></a>SccDiff 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ SCCRTN SccDiff(
  lpFileName  
  [in]差異要求的檔案名稱。  
   
- Stored  
+ fOptions  
  [in]命令的旗標。 如需詳細資訊，請參閱 < 備註 >。  
   
  pvOptions  
@@ -91,4 +86,3 @@ SCCRTN SccDiff(
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
-

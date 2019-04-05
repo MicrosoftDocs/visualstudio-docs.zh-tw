@@ -1,11 +1,8 @@
 ---
-title: InvokeDelegate |Microsoft Docs
-ms.custom: ''
+title: InvokeDelegate | Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - InvokeDelegate Designer
@@ -14,13 +11,13 @@ ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
 caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3b47a975c12cfcfd02b01925685b47cba47cc1fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 30281d8cd5d5ed94ed89a980006f9618292a778d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228848"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945450"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -40,7 +37,7 @@ ms.locfileid: "49228848"
 
 下表顯示 <xref:System.Activities.Statements.InvokeDelegate> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中進行編輯，其中有一些可以在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 設計工具介面上編輯。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeDelegate> 活動的易記名稱。 預設值為 InvokeDelegate。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|活動執行時要呼叫之 <xref:System.Activities.ActivityDelegate> 的名稱。 此屬性也可以在設計工具介面上編輯。 這是必要的屬性。|
@@ -48,4 +45,4 @@ ms.locfileid: "49228848"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：定義並取用工作流程設計工具中的活動委派](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)
+- [如何：在工作流程設計工具中定義及取用活動委派](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

@@ -1,26 +1,21 @@
 ---
 title: 在編輯器中的舊版介面 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy
 ms.assetid: 741d45f5-0ea3-4614-972a-8728fe054e07
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 45c3de943a1716877fcf33af4d16fd163721d04b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8483068ae03c9a57fc67b528393e5d6830c3ec33
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737510"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941524"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>在編輯器中的舊版介面
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +31,9 @@ ms.locfileid: "51737510"
 |[深入探索核心編輯器](../extensibility/inside-the-core-editor.md)|描述舊版編輯器的不同元件。|  
 |[使用舊版 API 將核心編輯器具現化](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)|說明如何使用舊版的 API 來具現化核心編輯器。|  
 |[編輯器處理站](../extensibility/editor-factories.md)|說明如何在舊版的 API 中使用編輯器 factory。|  
-|[如何：註冊編輯器檔案類型](../extensibility/how-to-register-editor-file-types.md)|說明如何將檔案的副檔名連結到您的編輯器。|  
+|[如何：登錄編輯程式檔案類型](../extensibility/how-to-register-editor-file-types.md)|說明如何將檔案的副檔名連結到您的編輯器。|  
 |[逐步解說：建立核心編輯器和註冊編輯器檔案類型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|說明如何建立核心編輯器，並連結至該檔案的副檔名。|  
-|[如何：為編輯器提供內容](../extensibility/how-to-provide-context-for-editors.md)|說明如何針對您的編輯器提供的內容。|  
+|[如何：編輯器提供的內容](../extensibility/how-to-provide-context-for-editors.md)|說明如何針對您的編輯器提供的內容。|  
 |[語言服務及核心編輯器](../extensibility/language-services-and-the-core-editor.md)|說明語言服務及編輯器之間的互動。|  
 |[使用舊版 API 存取文字緩衝區](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)|說明如何使用舊版 API 存取的文字緩衝。|  
 |[使用舊版 API 存取文字檢視](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)|說明如何使用舊版的 API 來存取 [文字] 檢視。|  
@@ -47,9 +42,8 @@ ms.locfileid: "51737510"
 |[以舊版 API 使用文字標記](../extensibility/using-text-markers-with-the-legacy-api.md)|說明如何使用舊版 API 中新增文字標記。|  
 |[使用舊版 API 自訂編輯器控制項及功能表](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)|說明如何使用舊版 API 來自訂編輯器控制項。|  
 |[使用舊版 API 管理復原和重做](../extensibility/managing-undo-and-redo-by-using-the-legacy-api.md)|說明如何管理復原和取消復原使用舊版 API。|  
-|[如何：實作尋找和取代機制](../extensibility/how-to-implement-the-find-and-replace-mechanism.md)|說明如何管理 尋找和取代使用舊版 API。|  
+|[如何：實作 尋找和取代機制](../extensibility/how-to-implement-the-find-and-replace-mechanism.md)|說明如何管理 尋找和取代使用舊版 API。|  
 |[如何：隱藏檔案變更通知](../extensibility/how-to-suppress-file-change-notifications.md)|說明如何使用舊版 API 隱藏檔案變更通知。|  
 |[建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md)|說明如何建立自訂編輯器和設計工具。|  
 |[開發舊版語言服務](../extensibility/internals/developing-a-legacy-language-service.md)|提供功能，以提供自訂功能的相關文件的連結[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]藉由新增語言服務支援的核心編輯器。|  
 |[使用字型和色彩](../extensibility/using-fonts-and-colors.md)|說明如何使用舊版的介面中的字型和色彩。|
-

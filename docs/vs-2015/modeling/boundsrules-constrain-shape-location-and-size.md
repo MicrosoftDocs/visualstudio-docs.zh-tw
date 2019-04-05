@@ -1,25 +1,22 @@
 ---
 title: BoundsRules 限制圖案位置和大小 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, events
 ms.assetid: 4d08e541-fc67-4e68-bf31-30d346aa2aa0
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: cb9d9c35f5600ee98d53863780d9f54c3eed53f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d09be82be084767bfb2d300a1877e95456a957b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253717"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942557"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules 限制圖案位置和大小
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,6 +70,3 @@ public class BarBoundsRule: BoundsRules
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>   
  [回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)
-
-
-
