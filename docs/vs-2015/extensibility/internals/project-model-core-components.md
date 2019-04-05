@@ -1,27 +1,22 @@
 ---
 title: 專案模型的核心元件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 70cb00e6d2ecae8ba5fb8abefb76f7061406f0fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 30ec67e1e58e0c546c70ecb87841293161463b1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741323"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940462"
 ---
 # <a name="project-model-core-components"></a>專案模型的核心元件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -108,8 +103,7 @@ ms.locfileid: "51741323"
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [不在組建中： 使用 HierUtil7 專案類別來實作專案類型 （c + +）](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [不在組建中：使用 HierUtil7 專案類別來實作專案類型 （c + +）](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [專案模型的元素](../../extensibility/internals/elements-of-a-project-model.md)
-

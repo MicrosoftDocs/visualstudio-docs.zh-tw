@@ -1,14 +1,9 @@
 ---
 title: 使用者入門 （偵錯介面存取 SDK） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: cb3d040a-2846-40d7-bdbc-8a5beb5dd2f6
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4b5b04868bac6e27e5badd690d84cdc21722c723
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 54f83f00ed2e99d1541e15092cb3ee0ce9e08952
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753095"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939377"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>使用者入門 (偵錯介面存取 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,9 +40,9 @@ ms.locfileid: "51753095"
   
   程式庫： lib\diaguids.lib  
   
-  DLL: bin\msdia80.dll  
+  DLL：bin\msdia80.dll  
   
-  IDL: idl\dia2.idl  
+  IDL：idl\dia2.idl  
   
 ## <a name="in-this-section"></a>本節內容  
  [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
@@ -58,6 +53,3 @@ ms.locfileid: "51753095"
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯介面存取 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
-
-
-

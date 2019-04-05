@@ -1,25 +1,22 @@
 ---
 title: 覆寫及擴充產生的類別 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 ms.assetid: 30baa60d-a8ea-4611-96c1-8fcc3317cf21
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 34e40863883643955c4517337de5410f0745703d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939923"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>覆寫及擴充產生的類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +88,6 @@ ms.locfileid: "49933426"
 ### <a name="net-events"></a>.NET 事件  
  您可以在圖形上的某些事件訂閱。 例如，您可以接聽的圖形上的滑鼠點選。 您不必撰寫程式碼，每個物件的事件訂閱。 此程式碼可以寫入 InitializeInstanceResources() 覆寫中。  
   
- 某些事件會產生 ShapeFields，用來繪製圖形上的裝飾項目。 如需範例，請參閱[如何： 攔截圖案或 Decorator 上](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。  
+ 某些事件會產生 ShapeFields，用來繪製圖形上的裝飾項目。 如需範例，請參閱[如何：攔截圖案或 Decorator 上](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。  
   
  通常，這些事件不會發生於在交易內。 如果您想要在存放區中進行變更，您應該建立交易。
-
-
-

@@ -1,25 +1,20 @@
 ---
-title: 如何： 從圖表檢視和內容模型檢視列印圖表 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：從 [圖形] 檢視和內容模型檢視列印圖表 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 53774a410a05244f4b005fac1b14fe5776794a68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 50b38a5ca5c37fe2b372f863f695a968055895ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305463"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930003"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>HOW TO：從圖表檢視和內容模型檢視列印圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ ms.locfileid: "49305463"
  [圖表檢視](../xml-tools/graph-view.md)   
  [內容模型檢視](../xml-tools/content-model-view.md)   
  [XML 結構描述設計工具工作區](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

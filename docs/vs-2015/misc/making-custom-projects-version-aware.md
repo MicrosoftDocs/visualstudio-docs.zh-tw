@@ -1,23 +1,18 @@
 ---
 title: 讓自訂專案成為版本感知 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833001"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940831"
 ---
 # <a name="making-custom-projects-version-aware"></a>讓自訂專案成為版本感知
 在自訂專案系統中，您可以允許在多個版本的 Visual Studio 中載入該類型的專案。 您也可以防止舊版本的 Visual Studio 中載入該類型的專案。 您也可以讓該專案能夠向較新版本識別自己，以防專案需要修復、轉換或取代。  
@@ -27,19 +22,19 @@ ms.locfileid: "49833001"
   
  在載入專案之前，Visual Studio 會呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly%2A> 方法，以判斷是否可以升級專案。 如果可以升級專案，`UpgradeProject_CheckOnly` 方法會設定旗標，導致稍後呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> 方法來升級專案。 無法升級不相容的專案，因此 `UpgradeProject_CheckOnly` 必須先檢查專案相容性，如前一節中所述。  
   
- 您身為專案系統的作者，實作 `UpgradeProject_CheckOnly` (從 `IVsProjectUpgradeViaFactory4` 介面) 為專案系統的使用者提供升級檢查。 當使用者開啟專案時，會呼叫這個方法來判斷專案是否必須在載入之前修復。 可能需要升級的情況列舉在 `VSPUVF_REPAIRFLAGS` 中，其中包括下列可能性：  
+ 您身為專案系統的作者，實作 `UpgradeProject_CheckOnly` (從 `IVsProjectUpgradeViaFactory4` 介面) 為專案系統的使用者提供升級檢查。 當使用者開啟專案時，會呼叫這個方法來判斷專案是否必須在載入之前修復。 可能需要升級的情況列舉在 `VSPUVF_REPAIRFLAGS`中，其中包括下列可能性：  
   
-1.  `SPUVF_PROJECT_NOREPAIR`: 不需要修復。  
+1.  `SPUVF_PROJECT_NOREPAIR`：不需要修復。  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`: 使專案與舊版相容，而沒有您可能在舊版產品中遇到的問題。  
+2.  `VSPUVF_PROJECT_SAFEREPAIR`：沒有您可能會遇到問題與產品舊版本，使專案與舊版相容。  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: 使專案與舊版相容，但會有一些風險，可能會遇到您曾在舊版產品中遇到的問題。 例如，專案如果相依於不同的 SDK 版本，它將不相容。  
+3.  `VSPUVF_PROJECT_UNSAFEREPAIR`：使專案，與舊版相容，但有一些風險可能遭遇的問題與舊版產品。 例如，專案如果相依於不同的 SDK 版本，它將不相容。  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE` 使專案與較舊版本不相容。  
+4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`：使專案與較早的版本不相容。  
   
-5.  `VSPUVF_PROJECT_INCOMPATIBLE`: 表示目前的版本不支援此專案。  
+5.  `VSPUVF_PROJECT_INCOMPATIBLE`：表示目前的版本不支援此專案。  
   
-6.  `VSPUVF_PROJECT_DEPRECATED`: 表示已不再支援此專案。  
+6.  `VSPUVF_PROJECT_DEPRECATED`：表示已不再支援此專案。  
   
 > [!NOTE]
 >  為了避免混淆，在設定升級旗標時請不要合併它們。 例如，不要建立模稜兩可的升級狀態，例如 `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`。  

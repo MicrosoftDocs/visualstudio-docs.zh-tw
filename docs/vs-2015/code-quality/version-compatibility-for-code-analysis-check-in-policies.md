@@ -1,14 +1,9 @@
 ---
 title: 程式碼分析簽入原則的版本相容性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - version compatibility, code analysis check-in policy
 - check-in policies, version compatibility for code analysis
@@ -17,12 +12,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 840a12e7f4c0e3853e885a803dea5a92e05a5a27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1cd449446c66b2f37df9993786477734a78e10a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261478"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938701"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>程式碼分析簽入原則的版本相容性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,6 +43,3 @@ ms.locfileid: "49261478"
 -   若要建立程式碼分析簽入原則規則的設定，適用於兩者[!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)]並[!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]，您必須建立在原則[!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)]、 進行需要的所有變更並儲存原則。 如果規則的變更僅存在於[!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]，您修改並儲存在原則[!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]。  
   
      儲存中的原則之後[!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]，您無法再變更中存在的規則設定[!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)]只。
-
-
-
