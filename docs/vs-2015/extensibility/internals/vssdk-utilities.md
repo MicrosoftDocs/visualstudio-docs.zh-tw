@@ -1,26 +1,21 @@
 ---
 title: VSSDK 公用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Architecture, Visual Studio Integration
 ms.assetid: a469208a-cb70-4d87-a79b-d2086fc4fae4
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3b720a97ee06f7cf32ce7c764ff3a4770432c45d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 115f3e99fa09617fbcb7b278e1e7eae76a80e4fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755175"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943640"
 ---
 # <a name="vssdk-utilities"></a>VSSDK 公用程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,4 +30,3 @@ ms.locfileid: "51755175"
   [影像服務工具](../../extensibility/internals/image-service-tools.md)  
   
 ## <a name="related-sections"></a>相關章節
-
