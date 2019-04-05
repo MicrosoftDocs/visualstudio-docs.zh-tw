@@ -1,12 +1,9 @@
 ---
 title: UML 模型擴充性 API 參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - UML - extending
 - UML API
@@ -15,13 +12,13 @@ ms.assetid: 2b2ffe93-c358-4d28-a5e5-3d0474629b58
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dff485db59f418fe05cd586335b6f9ceae153428
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 12eadb9844df5da78b11367708fed715f1c13672
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785036"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942559"
 ---
 # <a name="api-reference-for-uml-modeling-extensibility"></a>UML 模型擴充性的 API 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +27,7 @@ ms.locfileid: "51785036"
   
 ## <a name="assemblies"></a>組件  
   
-|組件|這可讓您執行|  
+|Assembly|這可讓您執行|  
 |--------------|--------------------------------|  
 |Microsoft.VisualStudio.Uml.Interfaces.dll|-讀取和變更模型項目，例如 IUseCase、 IAssociation 等等。<br />瀏覽項目之間的關聯性。<br /><br /> 與 UML 規格所定義者相對應的命名空間和類型。|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll|-建立新的執行個體的模型項目<br />-存取和修改圖形和圖表。|  
@@ -38,6 +35,3 @@ ms.locfileid: "51785036"
 ## <a name="see-also"></a>另請參閱  
  [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)   
  [Modeling SDK for Visual Studio 的 API 參考](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
-
-
-

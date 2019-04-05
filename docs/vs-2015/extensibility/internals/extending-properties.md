@@ -1,33 +1,28 @@
 ---
 title: 擴充屬性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, providing support
 ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 919b5a08f003d6e6c320edef4c1321af35f17388
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 59afc6a95e327460602ece8db58f075b483d0e09
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777873"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942164"
 ---
 # <a name="extending-properties"></a>擴充屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **屬性** 視窗是 COM 和 COM + 元件的通用屬性瀏覽器，並支援所有[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]產品。 **屬性** 視窗的運作方式與`ITypeInfo`類型資訊和 COM + 來列出目前選取的物件，在整合式的開發環境 (IDE) 中的任何其他視窗的設計階段屬性的中繼資料。  
   
- **屬性**視窗中，在鍵盤上按 F4 或選取可開啟**屬性視窗**上**檢視**功能表，用來檢視和編輯設定通用的設計階段屬性和所選物件的事件。 方案和專案，與相關聯的組態相關屬性會顯示在[屬性頁](../../extensibility/internals/property-pages.md)。 如需詳細資訊，請參閱 < [NIB： 專案屬性](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50)，[管理設定選項](../../extensibility/internals/managing-configuration-options.md)，並[專案中的項目 NIB： 管理](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)。  
+ **屬性**視窗中，在鍵盤上按 F4 或選取可開啟**屬性視窗**上**檢視**功能表，用來檢視和編輯設定通用的設計階段屬性和所選物件的事件。 方案和專案，與相關聯的組態相關屬性會顯示在[屬性頁](../../extensibility/internals/property-pages.md)。 如需詳細資訊，請參閱 < [NIB： 專案屬性](http://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)，[管理設定選項](../../extensibility/internals/managing-configuration-options.md)，並[專案中的項目 NIB： 管理](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)。  
   
  ![屬性視窗概觀](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 屬性視窗  
@@ -78,16 +73,16 @@ ms.locfileid: "51777873"
  [屬性視窗、 HTML 文件屬性](http://msdn.microsoft.com/library/46e3d164-a1a7-42f9-87b0-344e10a37b62)  
  提供編輯 HTML 文件直接從 [屬性] 視窗的指示，並提供詳細說明在 [屬性] 視窗中的 HTML 文件中的欄位。  
   
- [IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)  
+ [IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)  
  描述`IDispatch`介面，首先應支援 automation、 提供晚期繫結機制，來存取並擷取資訊的方法和屬性的物件。  
   
- [NIB： 簡介動態屬性 (Visual Studio)](http://msdn.microsoft.com/en-us/f5102027-1431-4195-ae40-9b991de46d3a)  
+ [NIB：動態屬性 (Visual Studio) 的簡介](http://msdn.microsoft.com/f5102027-1431-4195-ae40-9b991de46d3a)  
  提供可讓您設定您的應用程式，使屬性值會儲存在外部組態檔而不是應用程式的已編譯的程式碼的動態屬性的概觀。  
   
- [NIB： 專案做為容器](http://msdn.microsoft.com/en-us/87d40f63-f487-4767-8963-64beec27ba1b)  
+ [NIB： 專案做為容器](http://msdn.microsoft.com/87d40f63-f487-4767-8963-64beec27ba1b)  
  說明的專案做為容器解決方案以邏輯方式管理、 建置和偵錯您的應用程式所組成的項目中的角色。  
   
- [NIB： 專案屬性](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
+ [NIB： 專案屬性](http://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
  描述如何專案管理設定，可讓您套用至整個專案的控制項屬性，也僅限於特定建置組態的專案的屬性。  
   
  [專案和方案](../../ide/solutions-and-projects-in-visual-studio.md)  
@@ -95,4 +90,3 @@ ms.locfileid: "51777873"
   
  [擴充 Visual Studio 的其他部分](../../extensibility/extending-other-parts-of-visual-studio.md)  
  說明如何使用 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 服務建立 UI 項目，比對其餘的 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。
-

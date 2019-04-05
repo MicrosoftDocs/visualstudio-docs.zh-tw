@@ -1,26 +1,21 @@
 ---
 title: 指定檔案名稱副檔名的檔案處理常式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d0a4f0547da10a4d519d315000a0f35a19a56287
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dd999fe10da48f91482976ade56681ee53346802
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726231"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941878"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定適用於副檔名的檔案處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +65,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)  
 ```  
   
- 指定為副檔名的預設值是預設的檔案處理常式的 ProgID。 如果您修改檔案延伸模組隨附於舊版的 ProgID[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]或，可以接手其他應用程式，則您必須註冊`OpenWithProgids`鍵檔案副檔名，並在清單中，連同指定的新 ProgID您支援舊的 Progid。 例如:   
+ 指定為副檔名的預設值是預設的檔案處理常式的 ProgID。 如果您修改檔案延伸模組隨附於舊版的 ProgID[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]或，可以接手其他應用程式，則您必須註冊`OpenWithProgids`鍵檔案副檔名，並在清單中，連同指定的新 ProgID您支援舊的 Progid。 例如：  
   
 ```  
 HKEY_CLASSES_ROOT\  
@@ -87,4 +82,3 @@ HKEY_CLASSES_ROOT\
 ## <a name="see-also"></a>另請參閱  
  [關於副檔名](../extensibility/about-file-name-extensions.md)   
  [註冊適用於副檔名的動詞命令](../extensibility/registering-verbs-for-file-name-extensions.md)
-
