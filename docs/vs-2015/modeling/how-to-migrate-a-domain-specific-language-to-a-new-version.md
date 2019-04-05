@@ -1,25 +1,22 @@
 ---
-title: 如何： 將定義域專屬語言移轉至新的版本 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將特定領域語言移轉至新的版本 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6a1ae073-443e-45ca-8bc9-9b944362b449
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 52d8cb794b205631e7cc455241f48bcc78b879b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 22addb1c98f72f265665ca5737180c24744b0f32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943305"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：將網域指定的語言移轉至新的版本
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>HOW TO：將特定領域語言移轉至新的版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以移轉專案定義及使用特定領域語言[!INCLUDE[vs2010](../includes/vs2010-md.md)]版本中的[!INCLUDE[dsl](../includes/dsl-md.md)]所散發之[!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)]。  
@@ -81,7 +78,7 @@ ms.locfileid: "49844467"
    2.  按一下 [**轉換所有範本**方案總管] 中的標頭中的按鈕。  
   
        > [!NOTE]
-       >  您可以進行此步驟中不必要的。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
+       >  您可以進行此步驟中不必要的。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
   
 6. 更新已轉換的專案中自訂程式碼。  
   
@@ -91,6 +88,3 @@ ms.locfileid: "49844467"
   
 ## <a name="see-also"></a>另請參閱  
  [Visualization and Modeling SDK 的新功能](../misc/what-s-new-in-visualization-and-modeling-sdk.md)
-
-
-

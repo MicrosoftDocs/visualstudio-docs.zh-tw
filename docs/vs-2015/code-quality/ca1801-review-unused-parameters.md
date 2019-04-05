@@ -1,14 +1,9 @@
 ---
-title: Ca1801： 必須檢閱未使用的參數 |Microsoft Docs
-ms.custom: ''
+title: CA1801:檢閱未使用的參數 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidUnusedParameters
 - CA1801
@@ -21,17 +16,17 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b0946e315aef0c333207d49eb14820d287a9b361
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269681"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59000834"
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801：必須檢閱未使用的參數
+# <a name="ca1801-review-unused-parameters"></a>CA1801:必須檢閱未使用的參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 的最新文件，請參閱 < [ca1801 必須： 檢閱未使用的參數](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)docs.microsoft.com 上。  
+如需 Visual Studio 的最新文件，請參閱[ca1801 必須：檢閱未使用的參數](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)docs.microsoft.com 上。  
   
 |||  
 |-|-|  
@@ -72,9 +67,8 @@ ms.locfileid: "49269681"
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ReviewUnusedParameters/cs/FxCop.Usage.ReviewUnusedPerameters.cs#1)]  
   
 ## <a name="related-rules"></a>相關的規則  
- [CA1811：避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)  
+ [CA1811:避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
- [CA1812：避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
+ [CA1812:避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
- [CA1804：必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)
-
+ [CA1804： 必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)

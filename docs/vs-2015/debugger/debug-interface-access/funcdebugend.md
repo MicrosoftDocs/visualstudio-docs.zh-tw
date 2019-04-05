@@ -1,14 +1,9 @@
 ---
 title: FuncDebugEnd |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 68f84fff-7cd3-4636-b929-7063a45009f8
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 52f3d5ce1e083a67c2a72907095f8ebf52ee4578
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e9e2a15d1c94664fe951d64d48a9d7ead300f099
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808280"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945960"
 ---
 # <a name="funcdebugend"></a>FuncDebugEnd
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,9 +51,6 @@ ms.locfileid: "51808280"
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|此函式，可執行檔映像中的位置。|  
   
 ## <a name="see-also"></a>另請參閱  
- [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
+ [符號類型的語彙階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)   
  [符號位置](../../debugger/debug-interface-access/symbol-locations.md)
-
-
-

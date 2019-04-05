@@ -1,14 +1,9 @@
 ---
 title: 取得區域變數的屬性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, getting local properties
 - debugging [Debugging SDK], local properties
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a96b9abfd215dc297a5b245e0ac670b4822d70c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 40f5a659617d8ca83ffd6f69282349f520ea92f2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799115"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943449"
 ---
 # <a name="getting-local-properties"></a>取得區域變數的屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -166,4 +161,3 @@ STDMETHODIMP CEnumPropertyInfo::Next(
 ## <a name="see-also"></a>另請參閱  
  [區域變數的範例實作](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [列舉區域變數](../../extensibility/debugger/enumerating-locals.md)
-

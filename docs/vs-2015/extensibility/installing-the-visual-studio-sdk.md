@@ -1,24 +1,19 @@
 ---
 title: 安裝 Visual Studio SDK |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- visual-studio-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: visual-studio-sdk
+ms.topic: conceptual
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 caps.latest.revision: 4
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9e5546b07ef9917590daa573efd99377339412c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 796d5f3f233310157b0784e213b81237e767055b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793551"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943590"
 ---
 # <a name="installing-the-visual-studio-sdk"></a>安裝 Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,10 +62,3 @@ vs_community.exe /s /installSelectableItems VS_SDK_GROUPV1
 ```  
   
  請注意，您必須使用符合您已安裝 Visual Studio 版本的 Visual Studio 安裝程式。 例如，如果您有在電腦上安裝的 Visual Studio Enterprise，您必須執行 Visual Studio Enterprise 安裝程式 (vs_enterprise.exe)。
-
-
-
-
-
-
-

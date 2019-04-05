@@ -1,27 +1,22 @@
 ---
 title: 索引鍵運算式評估工具介面 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, interfaces
 ms.assetid: 1cac9aa3-0867-4e12-a16e-1e90abbc0fb6
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 616b86ed8a4976ef55437dbe21c044df32b4767a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39dc13c1cc1960b0b5cad6c88b2617ea326e7875
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739924"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942786"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>主要的運算式評估工具介面
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,4 +60,3 @@ ms.locfileid: "51739924"
   
 ## <a name="see-also"></a>另請參閱  
  [評估內容](../../extensibility/debugger/evaluation-context.md)
-

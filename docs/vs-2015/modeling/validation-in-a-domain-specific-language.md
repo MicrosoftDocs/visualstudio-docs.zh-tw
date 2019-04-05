@@ -1,12 +1,9 @@
 ---
 title: 特定領域語言中的驗證 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
@@ -14,13 +11,13 @@ ms.assetid: 65b93df8-af3c-462b-904c-60292f8ed381
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a29c9b8921d72f717aea21ed202766f0874389
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3057d333cfc3b08298a5329a34ef52a51556e4ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950784"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945633"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>網域指定的語言中的驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -185,7 +182,7 @@ public partial class Person
   
  其缺點在於合併的方法比較難管理，並且條件約束必須具有相同的 `ValidationCategories`。 因此，建議您盡可能以不同的方法來保留每個條件約束。  
   
- **您可以將值傳入內容快取。** 內容參數具有的字典，您可以在其中放置任意值。 在執行驗證期間都可以使用此字典。 例如，某個驗證方法可能會將錯誤計數保留在內容中，然後使用該內容以避免錯誤視窗中出現太多重複的訊息。 例如：  
+ **您可以將值傳入內容快取。** 內容參數具有的字典，您可以在其中放置任意值。 在執行驗證期間都可以使用此字典。 例如，某個驗證方法可能會將錯誤計數保留在內容中，然後使用該內容以避免錯誤視窗中出現太多重複的訊息。 例如:   
   
 ```csharp  
 List<ParentsHaveChildren> erroneousLinks;  
@@ -221,9 +218,9 @@ partial class MyLanguageCommandSet
   
 ```  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
+ 如需詳細資訊，請參閱[如何：將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
   
- 您也可以建立獨立的驗證控制器，自行管理錯誤。 例如：  
+ 您也可以建立獨立的驗證控制器，自行管理錯誤。 例如:   
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -350,6 +347,3 @@ validationController.ValidateCustom
 ## <a name="see-also"></a>另請參閱  
  [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)
-
-
-

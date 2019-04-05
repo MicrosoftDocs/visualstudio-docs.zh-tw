@@ -1,12 +1,9 @@
 ---
-title: 逐步解說： 建立自訂文字範本主應用程式 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立自訂文字範本主機 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
@@ -14,15 +11,15 @@ ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee1a6ebfdcad2f9ec50c5a76d5c14cd44028eeb7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3120cee504de8565f5caf80034678e9788da70ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817271"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943109"
 ---
-# <a name="walkthrough-creating-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主機
+# <a name="walkthrough-creating-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*執行。 這個主應用程式負責管理引擎與檔案系統之間的互動。 引擎或*指示詞處理器*，需要檔案或組件可以從主應用程式要求資源。 主機便會搜尋目錄和全域組件快取來找出要求的資源。 如需詳細資訊，請參閱 <<c0> [ 文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。  
@@ -719,7 +716,7 @@ A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*
   
 4.  針對[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]，開啟**專案**功能表，然後按一下**CustomHost 屬性**。 在 **啟始物件**清單中，按一下**CustomHost.Program**。  
   
-5.  按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。  
+5.  在 [檔案] 功能表上按一下 [全部儲存]。  
   
 6.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
@@ -820,10 +817,7 @@ A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*
     ```  
   
 ## <a name="next-steps"></a>後續步驟  
- 在本逐步解說中，您已經建立支援基本轉換功能的文字範本轉換主應用程式。 您可以擴充這個主應用程式，支援呼叫自訂或產生之指示詞處理器的文字範本。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 將主機連接至產生的指示詞處理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。  
+ 在本逐步解說中，您已經建立支援基本轉換功能的文字範本轉換主應用程式。 您可以擴充這個主應用程式，支援呼叫自訂或產生之指示詞處理器的文字範本。 如需詳細資訊，請參閱[逐步解說：將主機連接至產生的指示詞處理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: 了解 SAL |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 712d99f3839982632e54b622b3512eb611f2bf95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792811"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945953"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ void * memcpy(
  您可以判斷此函式的功能嗎？ 當實作或呼叫函式時，必須維護特定屬性，以確保程式正確性。 只要查看宣告，例如範例中，您不知道是什麼。 不含 SAL 註釋，您必須依賴文件或程式碼註解。 以下是哪些 MSDN 文件`memcpy`說：  
   
 > 「 複本計數的 src 到目的地的位元組。 如果來源和目的地重疊，memcpy 的行為是未定義的。 您可以使用 memmove 處理重疊的區域。   
-> **安全性注意事項：** 確定目的緩衝區是相同大小，或大於來源緩衝區。 如需詳細資訊，請參閱 「 避免緩衝區滿溢 」。  
+> **安全性注意事項：** 確定目的地緩衝區與來源緩衝區是相同大小，或大於來源緩衝區。 如需詳細資訊，請參閱 「 避免緩衝區滿溢 」。  
   
  文件包含幾個建議，您的程式碼必須維護特定的屬性，以確保程式正確性資訊位元：  
   
@@ -164,7 +159,7 @@ void BadInCaller()
   
  如果您使用 Visual Studio 程式碼分析，在此範例中，它會驗證呼叫端傳遞非 Null 指標，來初始化緩衝區`pInt`。 在此情況下，`pInt`指標不能是 NULL。  
   
-### <a name="example-the-inopt-annotation"></a>範例： \_In_opt\_註釋  
+### <a name="example-the-inopt-annotation"></a>範例：\_In_opt\_註釋  
  `_In_opt_` 等同於`_In_`，差異在於允許的輸入的參數是 NULL，因此，此函式應該檢查這個。  
   
 ```cpp  
@@ -219,7 +214,7 @@ void OutCaller()
   
  Visual Studio 程式碼分析工具會驗證呼叫端傳遞非 NULL 指標，如緩衝區`pInt`，它會傳回之前將緩衝區初始化函式。  
   
-### <a name="example-the-outopt-annotation"></a>範例： \_Out_opt\_註釋  
+### <a name="example-the-outopt-annotation"></a>範例：\_Out_opt\_註釋  
  `_Out_opt_` 等同於`_Out_`，差異在於參數可為 NULL，因此，此函式應該檢查這個。  
   
 ```cpp  
@@ -247,7 +242,7 @@ void OutOptCaller()
   
  Visual Studio 程式碼分析會驗證這個函數會檢查 null 之前`pInt`已取值，而且如果`pInt`不是 NULL，它會傳回之前，由函式來初始化緩衝區。  
   
-### <a name="example-the-inout-annotation"></a>範例： \_Inout\_註釋  
+### <a name="example-the-inout-annotation"></a>範例：\_Inout\_註釋  
  `_Inout_` 用來加上註解可能會變更函式的指標參數。 滑鼠指標必須指向有效的初始化資料呼叫前，，即使它會變更，它必須在傳回時，仍有有效的值。 註解會指定函式可以自由的讀取和寫入至其中一個元素的緩衝區。 呼叫端必須提供緩衝區，並將它初始化。  
   
 > [!NOTE]
@@ -279,7 +274,7 @@ void BadInOutCaller()
   
  Visual Studio 程式碼分析可讓您驗證呼叫端傳遞非 NULL 指標，來初始化緩衝區`pInt`，而且，在傳回時之前,`pInt`仍然是非 null 並將緩衝區初始化。  
   
-### <a name="example-the-inoutopt-annotation"></a>範例： \_Inout_opt\_註釋  
+### <a name="example-the-inoutopt-annotation"></a>範例：\_Inout_opt\_註釋  
  `_Inout_opt_` 等同於`_Inout_`，差異在於允許的輸入的參數是 NULL，因此，此函式應該檢查這個。  
   
 ```cpp  
@@ -309,7 +304,7 @@ void InOutOptCaller()
   
  Visual Studio 程式碼分析會驗證它所存取之緩衝區之前，而且如果此函式將會檢查 null`pInt`不是 NULL，它會傳回之前，由函式來初始化緩衝區。  
   
-### <a name="example-the-outptr-annotation"></a>範例： \_Outptr\_註釋  
+### <a name="example-the-outptr-annotation"></a>範例：\_Outptr\_註釋  
  `_Outptr_` 用來標註的參數，目的是要傳回的指標。  參數本身不能為 NULL，並呼叫的函式中傳回非 NULL 指標，該指標指向已初始化的資料。  
   
 ```cpp  
@@ -340,7 +335,7 @@ void OutPtrCaller()
   
  Visual Studio 程式碼分析可讓您驗證呼叫端傳遞非 NULL 指標， `*pInt`，而且它會傳回之前將緩衝區初始化函式。  
   
-### <a name="example-the-outptropt-annotation"></a>範例： \_Outptr_opt\_註釋  
+### <a name="example-the-outptropt-annotation"></a>範例：\_Outptr_opt\_註釋  
  `_Outptr_opt_` 等同於`_Outptr_`，只不過是選擇性參數，呼叫端可以為參數傳遞 NULL 指標。  
   
 ```cpp  
@@ -424,6 +419,3 @@ bool GetValue(_Out_ int *pInt, bool flag)
  [註釋鎖定行為](../code-quality/annotating-locking-behavior.md)   
  [指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [最佳做法和範例](../code-quality/best-practices-and-examples-sal.md)
-
-
-

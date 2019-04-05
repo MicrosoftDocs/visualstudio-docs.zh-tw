@@ -1,14 +1,9 @@
 ---
-title: 'Idiaenumdebugstreams:: Reset |Microsoft Docs'
-ms.custom: ''
+title: IDiaEnumDebugStreams::Reset | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: ee40989b-f754-4c10-80d3-7faa16f52ce3
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 13e0296a23a175bbf99a1097af8b1d3d6f51ab03
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f1e81c0426e1c7aeeb0510d08831dfcac8cfeeda
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809814"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944378"
 ---
 # <a name="idiaenumdebugstreamsreset"></a>IDiaEnumDebugStreams::Reset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,6 +36,3 @@ HRESULT Reset ();
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
-
-
-

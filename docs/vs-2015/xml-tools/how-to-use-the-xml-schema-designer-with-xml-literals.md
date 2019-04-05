@@ -1,25 +1,20 @@
 ---
-title: 如何： 使用 XML 常值中的 XML 結構描述設計工具 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用 XML 常值中的 XML 結構描述設計工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 592886a1cfe9d0ffc9c7165729cede3340bc65c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 630505b317d5d8671a8214701cd2af13bfa40482
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218363"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944805"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>HOW TO：搭配使用 XML 結構描述設計工具和 XML 常值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,6 +74,3 @@ ms.locfileid: "49218363"
 2.  以滑鼠右鍵按一下 XML 常值或 XML 命名空間匯入中的任何 XML 節點，然後選取**在結構描述總管中顯示**。  
   
      XML 結構描述總管會與一個 Visual Basic 檔案並排顯示，此檔案具有與 XML 結構描述集相關的 XML 常值。
-
-
-

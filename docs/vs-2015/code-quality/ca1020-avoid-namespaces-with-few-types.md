@@ -1,14 +1,9 @@
 ---
-title: CA1020： 避免在命名空間包含少數型別的 |Microsoft Docs
-ms.custom: ''
+title: CA1020:避免一些類型，在命名空間 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1020
 - AvoidNamespacesWithFewTypes
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6663660319791f1e81d0ed89f171c929c3e50725
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 338bc8ff9d7bc273898e57650971607f944b4feb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906178"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943759"
 ---
-# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020：避免在命名空間中包含過少的類型
+# <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020:避免在命名空間中包含過少的類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -51,6 +46,3 @@ ms.locfileid: "49906178"
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  它可安全地隱藏此規則的警告，命名空間不包含其他的命名空間中的型別搭配使用的類型時。
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: IDebugIDECallback::DisplayMessage |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugIDECallback::DisplayMessage
 ms.assetid: c19b48ee-b370-4fce-91fe-f82bf1e63179
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a27e0cdc9ca3a169bb11fb11befa64a121797278
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 23124c148d59c1a390f40e630d927e43d0d264cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754596"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942818"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,4 +45,3 @@ int DisplayMessage (
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)
-

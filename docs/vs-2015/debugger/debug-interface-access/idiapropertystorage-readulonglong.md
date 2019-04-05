@@ -1,14 +1,9 @@
 ---
 title: IDiaPropertyStorage::ReadULONGLONG |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: f80a2e24-5744-4fec-bab0-3ed51aef6e58
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2e1621cb14816dbbf59d3eeb635d91bad05022fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6da509e226a612e80a10ca0759b5e264f31a1e13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763441"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943708"
 ---
 # <a name="idiapropertystoragereadulonglong"></a>IDiaPropertyStorage::ReadULONGLONG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,6 +49,3 @@ HRESULT ReadULONGLONG ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
-
-
-

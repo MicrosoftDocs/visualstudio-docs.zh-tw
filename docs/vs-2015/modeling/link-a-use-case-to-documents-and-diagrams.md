@@ -1,12 +1,9 @@
 ---
 title: 將使用案例連結到文件與圖表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.usecasediagram.artifact.properties.artifactlink
 - vs.teamarch.usecasediagram.artifact
@@ -16,13 +13,13 @@ ms.assetid: 4c9ed205-9197-4ed5-b39d-ddfa24a0a421
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a5b4ef580825115a1d44c3abb39404332a4277ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7e6e6bc1cd9794534f13915ffb41956e423e94c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787909"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944921"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>將使用案例連結到文件與圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ ms.locfileid: "51787909"
   
 4.  從此成品連線至使用案例 using**相依性**。  
   
-### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>連結至方案檔 (例如 Word 文件或 PowerPoint 簡報)。  
+### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>連結至方案檔 (例如 Word 文件或 PowerPoint 簡報)  
   
 1.  將文件加入方案。  
   
@@ -87,10 +84,7 @@ ms.locfileid: "51787909"
     >  如果您想要提供檔案路徑，最好選擇其中一個常見的工作區中的檔案 (開頭為 '\\\\')，或您的 Visual Studio 方案中的檔案。 這確保檔案路徑在另一個小組成員的電腦上或移動方案時也仍然有效。 若要加入您的解決方案的文件，例如 Word 文件，以滑鼠右鍵按一下方案總管 中的方案，指向**新增**，然後按一下**現有項目**。  
   
 ## <a name="see-also"></a>另請參閱  
- [UML 使用案例圖： 參考](../modeling/uml-use-case-diagrams-reference.md)   
- [UML 使用案例圖： 方針](../modeling/uml-use-case-diagrams-guidelines.md)   
+ [UML 使用案例圖表：參考](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML 使用案例圖表：指導方針](../modeling/uml-use-case-diagrams-guidelines.md)   
  [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)   
  [建立應用程式模型](../modeling/create-models-for-your-app.md)
-
-
-

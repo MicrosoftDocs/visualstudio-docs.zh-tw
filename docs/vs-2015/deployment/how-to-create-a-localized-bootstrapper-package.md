@@ -1,14 +1,9 @@
 ---
-title: 如何： 建立當地語系化啟動載入器套件 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立當地語系化啟動載入器套件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
 - dependencies, creating localized bootstrapper packages
@@ -17,15 +12,15 @@ ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1408189539cf5d2be9cc9c0eb0f758a211efcfca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b47b1b1a776d27c2a75c9303c34255aff8622eb7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304755"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944345"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：建立當地語系化啟動載入器套件
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>HOW TO：建立當地語系化啟動載入器套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 建立啟動載入器套件之後，您可以為每一個地區設定建立另外兩個檔案，藉此建立當地語系化版本的啟動載入器套件：軟體授權合約檔案 (例如 eula.rtf) 和套件資訊清單 (package.xml)。  
@@ -39,7 +34,7 @@ ms.locfileid: "49304755"
 3.  建立名為 package.xml 的套件資訊清單，更新字串和文化特性，然後將檔案放入新資料夾中。 如果您已建立目標語言的 Visual Studio 啟動載入器，可以複製 Visual Studio package.xml 檔，並且在這個步驟中進行修改。  
   
 > [!NOTE]
->  如果您使用安裝專案部署的應用程式，您可以將您的應用程式當地語系化變更**當地語系化**屬性。  
+>  如果您使用安裝專案部署應用程式，可以藉由變更 **Localization** 屬性將應用程式當地語系化。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -56,7 +51,7 @@ ms.locfileid: "49304755"
     |地區設定|資料夾名稱|  
     |------------|-----------------|  
     |中文 (簡體)|zh-Hans|  
-    |中文 (繁體)|zh-Hant|  
+    |和 SharePoint 2010 顯示的|zh-Hant|  
     |捷克文|cs|  
     |德文|de|  
     |英文|en|  
@@ -72,7 +67,7 @@ ms.locfileid: "49304755"
   
 2.  建立包含啟動載入器套件之軟體授權合約的檔案，然後放入新資料夾中。  
   
-3.  建立名為 package.xml 的套件資訊清單，然後放入新資料夾中。 如需詳細資訊，請參閱 < [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md)。  
+3.  建立名為 package.xml 的套件資訊清單，然後放入新資料夾中。 如需詳細資訊，請參閱[如何：建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)。  
   
 4.  更新套件資訊清單的 `<Strings>` 區段，讓字串能夠以正確的地區設定語言顯示。  
   
@@ -101,7 +96,4 @@ ms.locfileid: "49304755"
 ## <a name="see-also"></a>另請參閱  
  [建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)   
  [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)   
- [如何：建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)
-
-
-
+ [如何：建立套件資訊清單](../deployment/how-to-create-a-package-manifest.md)

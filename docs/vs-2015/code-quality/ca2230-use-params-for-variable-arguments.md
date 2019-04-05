@@ -1,14 +1,9 @@
 ---
-title: Ca2230： 必須使用 params 做為變數引數 |Microsoft Docs
-ms.custom: ''
+title: CA2230:使用 params 做為變數引數 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseParamsForVariableArguments
 - CA2230
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ad0f43ac18c39d1dfdf6464e5cd260b669e1a0da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e2ab764b9a9f30c9e8143267cbdf14ecbb9456e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892723"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943417"
 ---
-# <a name="ca2230-use-params-for-variable-arguments"></a>CA2230：必須使用 params 做為變數引數
+# <a name="ca2230-use-params-for-variable-arguments"></a>CA2230:必須使用 params 作為變數引數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -58,6 +53,3 @@ ms.locfileid: "49892723"
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.Reflection.CallingConventions?displayProperty=fullName> [語言獨立性以及與語言無關的元件](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
-
-
-

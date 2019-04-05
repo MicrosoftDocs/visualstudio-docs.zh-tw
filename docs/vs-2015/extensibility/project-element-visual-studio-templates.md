@@ -1,14 +1,9 @@
 ---
 title: 專案項目 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Project
 helpviewer_keywords:
@@ -17,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 07700501ae2a76337fed499aeb0a66b8b19dbeba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a5c9708bb8c35e66199aaf3665883307e48a63c4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741133"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945312"
 ---
 # <a name="project-element-visual-studio-templates"></a>專案項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定要加入至專案目錄的檔案。  
   
- \<VSTemplate >  
- \<TemplateContent >  
+ \<VSTemplate>  
+ \<TemplateContent>  
  \<Project>  
   
 ## <a name="syntax"></a>語法  
@@ -63,7 +58,7 @@ ms.locfileid: "51741133"
 |項目|描述|  
 |-------------|-----------------|  
 |[資料夾](../extensibility/folder-element-visual-studio-project-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案的資料夾。|  
-|[專案項目](../extensibility/projectitem-element-visual-studio-project-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案的檔案。|  
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案的檔案。|  
   
 ### <a name="parent-elements"></a>父項目  
   
@@ -112,4 +107,3 @@ ms.locfileid: "51741133"
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [ProjectItem 項目 （Visual Studio 專案範本）](../extensibility/projectitem-element-visual-studio-project-templates.md)   
  [Folder 元素 (Visual Studio 專案範本)](../extensibility/folder-element-visual-studio-project-templates.md)
-

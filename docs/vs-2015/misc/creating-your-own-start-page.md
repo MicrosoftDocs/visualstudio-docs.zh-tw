@@ -1,27 +1,22 @@
 ---
 title: 建立您自己的起始頁 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Create start page
 - custom start page
 - customize start page
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
-manager: douge
-ms.openlocfilehash: 005f9597abd1ce688724af9fcb167a626e4cd885
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 001af82f976728b55d2f3b2c3f47d3f39a9e2e73
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815035"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000615"
 ---
 # <a name="creating-your-own-start-page"></a>建立您自己的起始頁
 您可以使用起始頁專案範本或建立空白起始頁，來建立自訂起始頁。  
@@ -36,7 +31,7 @@ ms.locfileid: "49815035"
 1.  從 Visual Studio 組件庫，下載並安裝 [起始頁專案範本](http://go.microsoft.com/fwlink/?LinkId=186204) 。  
   
     > [!WARNING]
-    >  目前，尚未升級 Visual Studio 2010 起始頁專案範本。 如需如何升級此範本的資訊，請參閱[如何： 升級 Visual Studio 自訂起始頁](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)。  
+    >  目前，尚未升級 Visual Studio 2010 起始頁專案範本。 如需如何升級此範本的資訊，請參閱[How to:升級 Visual Studio 自訂起始頁](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)。  
   
 2.  安裝範本之後，請使用它來建立新的起始頁專案。  
   
@@ -102,8 +97,8 @@ ms.locfileid: "49815035"
   
     運作中起始頁隨即顯示。 您必須關閉實驗執行個體，並重新複製任何變更的檔案，然後重新開啟實驗執行個體以查看新的變更。  
   
-   將 .vsix 檔案從 bin\debug 目錄上傳至 [Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847) 網站，或上傳至另一個網站或內部網路共用，即可共用自訂起始頁。 如需詳細資訊，請參閱 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。  
+   您可以藉由上傳.vsix 檔案從 bin\debug 目錄來共用自訂起始頁[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站，或以另一個網站或內部網路共用。 如需詳細資訊，請參閱 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)   
- [逐步解說︰將自訂的 XAML 加入至起始頁](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [逐步解說：將自訂的 XAML 加入至 [開始] 頁面](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

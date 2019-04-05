@@ -1,14 +1,9 @@
 ---
-title: IDebugErrorBreakpoint2 |Microsoft Docs
-ms.custom: ''
+title: IDebugErrorBreakpoint2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugErrorBreakpoint2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 1f2a4b94-3713-46e9-8272-3917187792bd
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fd6cee157b72e88fd90b64d26f4ec0eaf29bbc8d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9895caedebfba637eb47198c408e973e6609fcc2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809112"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943969"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,9 +47,9 @@ IDebugErrorBreakpoint2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)   
@@ -63,4 +58,3 @@ IDebugErrorBreakpoint2 : IUnknown
  [下一步](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
-

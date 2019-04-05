@@ -1,12 +1,9 @@
 ---
 title: 使用自訂主機處理文字範本 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, in application or VS extension
 - text templates, custom directive hosts
@@ -14,13 +11,13 @@ ms.assetid: affa3296-854d-47d6-9685-285f6d9ba5dc
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5fa54f6b7ea57b6374e8fef291c64f0e5369ffea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f2f10b239b4307b94c1f3b62b8e0a29767b22aaf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303455"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945099"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>使用自訂主機處理文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +53,7 @@ string output = engine.ProcessTemplate(templateString, host);
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 定義於**Microsoft.VisualStudio.TextTemplating。\*。0.log dll**，並<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>中定義**Microsoft.VisualStudio.TextTemplating.Interfaces。\*。0.log dll**。  
   
 ## <a name="in-this-section"></a>本節內容  
- [逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
+ [逐步解說：建立自訂文字範本主應用程式](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
  示範如何建立自訂文字範本主應用程式，讓 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的文字範本功能也可供外部使用。  
   
 ## <a name="reference"></a>參考資料  
@@ -68,6 +65,3 @@ string output = engine.ProcessTemplate(templateString, host);
   
  [建立自訂 T4 文字範本指示詞處理器](../modeling/creating-custom-t4-text-template-directive-processors.md)  
  提供文字範本指示詞處理器的概觀。
-
-
-

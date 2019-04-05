@@ -1,14 +1,9 @@
 ---
 title: 程式碼分析規則集參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets
 ms.assetid: 5874e854-e298-4d2e-bbe4-95e899d22587
@@ -16,12 +11,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 928b838a4172537ec12937b02c3deab2cf666ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a1f91b352da5a41ec2ef81fb6067976073c787ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279158"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943698"
 ---
 # <a name="code-analysis-rule-set-reference"></a>程式碼分析規則集參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ ms.locfileid: "49279158"
 |[原生最小規則規則集](../code-quality/native-minimum-rules-rule-set.md)|這些規則的重點在於您的原生程式碼，包括潛在的安全性漏洞和應用程式損毀最關鍵的問題。 您應該在為原生專案建立的任何自訂規則集中，包含此規則集。|  
 |[原生建議規則規則集](../code-quality/native-recommended-rules-rule-set.md)|這些規則的重點在於最關鍵且常見的問題，您的原生程式碼，包括潛在的安全性漏洞和應用程式損毀。  您應該在為原生專案建立的任何自訂規則集中，包含此規則集。  此規則可配合使用 Visual Studio Professional edition 和更新版本。|  
 |[適用於 Managed 程式碼的安全性規則規則集](../code-quality/security-rules-rule-set-for-managed-code.md)|這個規則集包含所有的 Microsoft 安全性規則。 包含這個規則集以最大化所報告的潛在安全性問題數目。|
-
-
-

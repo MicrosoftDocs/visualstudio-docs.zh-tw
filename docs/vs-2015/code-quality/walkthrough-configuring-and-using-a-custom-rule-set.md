@@ -1,14 +1,9 @@
 ---
-title: 逐步解說： 設定及使用自訂規則集 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：設定和使用自訂規則集 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
@@ -17,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5976ee0c0fbfc4befe97f2ab25c46744a8267134
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906041"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942731"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>逐步解說：設定和使用自訂規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +72,7 @@ ms.locfileid: "49906041"
    > [!TIP]
    >  在真實世界的情況下，最好使用排列優先順序的問題，您想要使用程式碼分析的目標是開始**最小建議規則**規則集和更正所需的問題，然後以累加方式新增更多的規則設定為找出並解決其他問題。  
   
-   接下來，您會加入一些程式碼，到將用來示範違規 CA1704 的類別庫 」 的識別項應該使用正確的拼字"程式碼分析規則。 如需詳細資訊，請參閱 < [CA1704： 識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。  
+   接下來，您會加入一些程式碼，到將用來示範違規 CA1704 的類別庫 」 的識別項應該使用正確的拼字"程式碼分析規則。 如需詳細資訊，請參閱[CA1704:識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。  
   
 #### <a name="add-your-own-code"></a>新增您自己的程式碼  
   
@@ -115,7 +110,7 @@ ms.locfileid: "49906041"
   
 2. 在 [錯誤清單] 視窗中，按一下**警告**，然後按一下**描述**欄標題來排序警告文數字順序。  
   
-    在真實世界應用程式中，您會修正值得到目前為止，修正任何規則違規或選擇性地關閉或隱藏的規則，如果您決定不值得修正。 如需詳細資訊，請參閱 <<c0> [ 使用 SuppressMessage 屬性所隱藏的警告](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)。  
+    在真實世界應用程式中，您會修正值得到目前為止，修正任何規則違規或選擇性地關閉或隱藏的規則，如果您決定不值得修正。 如需詳細資訊，請參閱[使用 SuppressMessage 屬性隱藏警告](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)。  
   
 3. 請注意 CA1704 警告。 這些在這項規則的違規會指出，您應該 「 考慮提供更有意義的名稱，參數。 」 您可以在程式碼中修正此問題，或在下一個程序中所述，您可以停用規則。  
   
@@ -158,8 +153,5 @@ ms.locfileid: "49906041"
 2.  在 [錯誤清單] 視窗中，請注意，當您按一下**警告**，您不會再看見 CA1704 警告違規 」 的識別項應該使用正確的拼字"規則。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [如何：設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [程式碼分析規則集參考](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

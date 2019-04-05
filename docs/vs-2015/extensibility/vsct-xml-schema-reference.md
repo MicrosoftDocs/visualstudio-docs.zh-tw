@@ -1,27 +1,22 @@
 ---
 title: VSCT XML 結構描述參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio command table configuration files (VSCT), XML schema
 - VSCT XML schema elements
 ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bff3fb766c11987b84ba88b5c86ab3c8d24dbc94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d95275f5b4ffd91f993fc3e5a650d3d160fa2a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755869"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945143"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 結構描述參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51755869"
 >  VSCT 編譯器可以執行前置處理器在.vsct 檔。 因為這通常是 c + + 前置處理器，您可以定義包含，且包含相同的語法是 c + + 檔案中使用巨集。 .vsct 提供這個範例檔案**新的專案**VSPackage 專案建立精靈。  
   
 ## <a name="optional-elements"></a>選擇性的項目  
- 某些 VSCT 項目是選擇性的。 如果`Parent`未指定引數，會隱含 Group_Undefined:0。 如果`Icon`未指定引數，會隱含 guidOfficeIcon:msotcidNoIcon。 攠摝坫定義時，模擬，也就是通常未使用，是選擇性的。  
+ 某些 VSCT 項目是選擇性的。 如果`Parent`未指定引數，Group_Undefined:0將隱含。 如果`Icon`未指定引數，會隱含 guidOfficeIcon:msotcidNoIcon。 攠摝坫定義時，模擬，也就是通常未使用，是選擇性的。  
   
  可能在編譯時期內嵌點陣圖項目，藉由指定的位置中的點陣圖區`href`引數。 點陣圖區是在合併過程中複製而不是擷取自 DLL 的資源。 當`href`提供引數，則`usedList`引數會變成選用項目，並使用視為點陣圖區中的所有位置。  
   
@@ -82,4 +77,3 @@ ms.locfileid: "51755869"
 ## <a name="see-also"></a>另請參閱  
  [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [在 VSPackage 中路由傳送命令](../extensibility/internals/command-routing-in-vspackages.md)
-

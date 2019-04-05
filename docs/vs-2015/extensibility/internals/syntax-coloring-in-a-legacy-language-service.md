@@ -1,27 +1,22 @@
 ---
 title: 舊版語言服務中的語法著色 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring
 - language services, syntax coloring
 ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 99082388534e39d02731e065bf586d6d221c67aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b80659e1a61cca27adcc92b4b47c7ff0b4e02e0a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784061"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944481"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>舊版語言服務中的語法著色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,7 +68,7 @@ ms.locfileid: "51784061"
  [實作語法著色](../../extensibility/internals/implementing-syntax-coloring.md)  
  討論如何編輯器存取語言服務的語法著色和語言服務必須實作以支援的語法著色。  
   
- [如何︰使用內建可設定色彩的項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
+ [如何：使用內建可設定色彩的項目](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
  示範如何使用內建可設定色彩的項目從語言服務。  
   
  [自訂可設定色彩的項目](../../extensibility/internals/custom-colorable-items.md)  
@@ -81,4 +76,3 @@ ms.locfileid: "51784061"
   
 ## <a name="see-also"></a>另請參閱  
  [使用字型和色彩](../../extensibility/using-fonts-and-colors.md)
-

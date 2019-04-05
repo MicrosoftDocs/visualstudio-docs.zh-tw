@@ -1,14 +1,9 @@
 ---
-title: CONSTRUCTOR_ENUM |Microsoft Docs
-ms.custom: ''
+title: CONSTRUCTOR_ENUM | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - CONSTRUCTOR_ENUM
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6d335b2c-66bc-460c-a4a6-4f3f1b697c2c
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 18f007450fb68ad0afbfac5738c97891f05742c4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b435507c84d697ef27a2b37d6153a53dbe13cb3c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809177"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943561"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -63,11 +58,10 @@ public enum ConstructorMatchOptions { 
 ## <a name="requirements"></a>需求  
  標頭： sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
-

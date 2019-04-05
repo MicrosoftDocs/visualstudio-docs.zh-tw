@@ -1,12 +1,9 @@
 ---
 title: 服務參考的疑難排解 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: reference
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -19,13 +16,13 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8af0f56d75d231cdde2dc156519e08d580ad4f5f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223954"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945949"
 ---
 # <a name="troubleshooting-service-references"></a>服務參考的疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ ms.locfileid: "49223954"
 -   在 **方案總管**，以滑鼠右鍵按一下 WCF 服務程式庫專案，然後按一下**建置**。
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>透過遠端桌面存取的服務時發生錯誤
- 當使用者存取 Web 裝載的 WCF 服務，透過遠端桌面連線和使用者沒有系統管理權限，會使用 NTLM 驗證。 如果使用者沒有系統管理權限，使用者可能會收到下列錯誤訊息: 「 HTTP 要求是未經授權的用戶端驗證配置 'Anonymous'。 從伺服器收到的驗證標頭是 'NTLM'。 」
+ 當使用者存取 Web 裝載的 WCF 服務，透過遠端桌面連線和使用者沒有系統管理權限，會使用 NTLM 驗證。 如果使用者沒有系統管理權限，使用者可能會收到下列錯誤訊息：「 HTTP 要求是未經授權的用戶端驗證配置 'Anonymous'。 從伺服器收到的驗證標頭是 'NTLM'。 」
 
  修正這個錯誤：
 
@@ -79,7 +76,7 @@ ms.locfileid: "49223954"
 
 3.  請確定**顯示進階組建組態** 核取方塊已選取，然後再按一下**確定**。
 
-4.  載入 WCF 服務專案。 如需詳細資訊，請參閱 < [NIB 如何： 建立多專案方案](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)。
+4.  載入 WCF 服務專案。 如需詳細資訊，請參閱[NIB 如何：建立多專案解決方案](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)。
 
 5.  在 [ **Configuration Manager** ] 對話方塊中，將**現用方案組態**來**偵錯**。 如需詳細資訊，請參閱[如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)。
 
@@ -92,13 +89,13 @@ ms.locfileid: "49223954"
 
  若要修正這個錯誤，請停用 RSS 摘要：
 
-1.  在 Internet Explorer 上**工具**功能表上，按一下**網際網路選項**。
+1.  在 Internet Explorer 的 [工具] 功能表中，按一下 [網際網路選項]。
 
 2.  在 **內容**索引標籤中，於**摘要**區段中，按一下**設定**。
 
 3.  在 **摘要的設定**對話方塊中，清除**開啟摘要讀取檢視**核取方塊，然後按一下**確定**。
 
-4.  按一下 [ **[確定]** 以關閉**網際網路選項**] 對話方塊。
+4.  按一下 [確定] 以關閉 [網際網路選項] 對話方塊。
 
 ## <a name="see-also"></a>另請參閱
 

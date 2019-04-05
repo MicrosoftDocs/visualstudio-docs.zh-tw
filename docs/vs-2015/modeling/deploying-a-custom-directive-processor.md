@@ -1,25 +1,22 @@
 ---
 title: 部署自訂指示詞處理器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 93165a1534ed01dca057fc13059858c4c3e7a81c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836394"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944924"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自訂指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ ms.locfileid: "49836394"
   
  可供選擇的方法為：  
   
-- [Visual Studio 擴充功能 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。 此方法提供在自己的電腦以及其他電腦上安裝和解除安裝指示詞處理器的方式。 您通常可以在相同的 VSIX 中封裝其他功能。  
+- [Visual Studio 擴充功能 (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832)。 此方法提供在自己的電腦以及其他電腦上安裝和解除安裝指示詞處理器的方式。 您通常可以在相同的 VSIX 中封裝其他功能。  
   
 - [VSPackage](../extensibility/internals/vspackages.md)。 如果您要定義除了指示詞處理器之外還包含其他功能的 VSPackage，有個便利的方法可以註冊指示詞處理器。  
   
@@ -37,7 +34,7 @@ ms.locfileid: "49836394"
   只有當您想要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 或 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中轉換文字範本時，才需要使用上述其中一個方法。 如果您在自己的應用程式 (Application) 中使用自訂主應用程式 (Custom Host)，那麼自訂主應用程式就要負責為每個指示詞尋找指示詞處理器。  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>在 VSIX 中部署指示詞處理器  
- 您可以新增自訂指示詞處理器[Visual Studio 擴充功能 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。  
+ 您可以新增自訂指示詞處理器[Visual Studio 擴充功能 (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832)。  
   
  您必須確認 .vsix 檔是否包含下列兩個項目：  
   
@@ -163,7 +160,7 @@ ms.locfileid: "49836394"
  除非不得已，否則不建議使用這個方法來安裝自訂指示詞處理器。 它無法提供啟用和停用指示詞處理器的便利方式，也無法提供散發指示詞處理器給其他使用者的方法。  
   
 > [!CAUTION]
->  不當編輯登錄可能會造成系統嚴重受損。 變更登錄之前，務必先備份電腦上任何重要的資料。  
+>  不當編輯登錄可能會對系統造成嚴重損害。 變更登錄之前，務必先備份電腦上任何重要的資料。  
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>若要設定登錄機碼來註冊指示詞處理器  
   
@@ -205,6 +202,3 @@ ms.locfileid: "49836394"
   
 ## <a name="see-also"></a>另請參閱  
  [建立自訂 T4 文字範本指示詞處理器](../modeling/creating-custom-t4-text-template-directive-processors.md)
-
-
-

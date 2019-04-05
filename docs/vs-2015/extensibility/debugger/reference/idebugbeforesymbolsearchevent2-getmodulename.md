@@ -1,27 +1,22 @@
 ---
-title: IDebugBeforeSymbolSearchEvent2::GetModuleName |Microsoft Docs
-ms.custom: ''
+title: IDebugBeforeSymbolSearchEvent2::GetModuleName | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - GetModuleName
 - IDebugBeforeSymbolSearchEvent2::GetModuleName
 ms.assetid: 0b4abeac-2eaf-4b2e-a2d5-c9ec303bc869
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 251f3e89dba4ad4385db59d70b9f473d7ad4fb5f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: caff2f20e722e8e4870bce1c5bc7d10d70033026
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754096"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942566"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -74,4 +69,3 @@ STDMETHODIMP CDebugBeforeSymbolSearchEventBase::GetModuleName(BSTR *pbstrModuleN
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)
-

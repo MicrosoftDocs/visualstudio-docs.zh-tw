@@ -1,25 +1,22 @@
 ---
 title: 從文字範本存取模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
 ms.assetid: cf65395a-0ca3-4826-89c7-b1869562685c
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919854"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945115"
 ---
 # <a name="accessing-models-from-text-templates"></a>從文字範本存取模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +147,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
  若要載入檔案，最有效的方法是使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ModelBus。 在典型的案例中，文字範本會以一般方式載入的第一個模型使用 DSL 特定指示詞。 該模型會包含對另一個模型的 ModelBus 參考。 您可以使用 ModelBus 開啟參考的模型，並存取特定的項目。 如需詳細資訊，請參閱 <<c0> [ 文字範本中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。  
   
- 在較不一般的案例中，您可能想要開啟模型檔就只是檔名，這可能不會在目前和[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案。 在此情況下，您可以使用開啟檔案中所述的技巧[如何： 從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。  
+ 在較不一般的案例中，您可能想要開啟模型檔就只是檔名，這可能不會在目前和[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案。 在此情況下，您可以使用開啟檔案中所述的技巧[How to:從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。  
   
 ## <a name="generating-multiple-files-from-a-template"></a>從範本產生多個檔案  
  如果您想要產生的數個檔案 – 比方說，若要產生個別的檔案，每個項目在模型中，有數種可行方法。 根據預設，只有一個檔案會產生從每個範本檔案。  
@@ -222,6 +219,3 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>  
   
 ```
-
-
-

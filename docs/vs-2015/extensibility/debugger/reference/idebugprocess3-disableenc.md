@@ -1,14 +1,9 @@
 ---
-title: IDebugProcess3::DisableENC |Microsoft Docs
-ms.custom: ''
+title: IDebugProcess3::DisableENC | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProcess3::DisableENC
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0d518ce42642e683fa5f38f67ce9f8458f9a0979
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4dcbcd49ea834dcc432382efad4cc31d842bb61a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807110"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945562"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -58,4 +53,3 @@ HRESULT DisableENC(
 ## <a name="see-also"></a>另請參閱  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)
-

@@ -1,26 +1,21 @@
 ---
 title: 支援的網站範本 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eebacb3006826a90320cbc61edf7d56467e688ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fce793b077460f2c141de0a75d612bb9254f7b3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760225"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945757"
 ---
 # <a name="web-site-support-templates"></a>網站支援範本
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -87,7 +82,7 @@ ms.locfileid: "51760225"
   
      HTML 網頁進行新的 Web 服務。 Language 屬性會指定程式碼後置的語言和程式碼後置屬性指定包含此服務相關聯的程式碼後置程式碼的相依檔案。  
   
--   服務。 *延伸模組*  
+-   服務。 *extension*  
   
      實作服務類別的相依檔案。 程式碼後置語言會決定*延伸模組*此檔案。  
   
@@ -120,7 +115,7 @@ ms.locfileid: "51760225"
 ### <a name="new-class"></a>新的類別  
  此範本會建立新的原始程式檔定義空的類別，以回應**加入新類別**命令。  
   
--   類別。 *延伸模組*  
+-   類別。 *extension*  
   
      實作空的類別原始程式檔。 程式碼後置語言會決定*延伸模組*此檔案。  
   
@@ -154,7 +149,7 @@ ms.locfileid: "51760225"
   
      起始網頁的內容。 這個 Web 網頁有相關聯的程式碼後置相依檔案。  
   
--   程式碼後置。 *延伸模組*  
+-   程式碼後置。 *extension*  
   
      實作 webform 類別的相依檔案。 程式碼後置語言會決定*延伸模組*此檔案。  
   
@@ -193,4 +188,3 @@ ms.locfileid: "51760225"
   
 ## <a name="see-also"></a>另請參閱  
  [網站支援](../../extensibility/internals/web-site-support.md)
-

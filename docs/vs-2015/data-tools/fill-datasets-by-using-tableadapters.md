@@ -1,12 +1,9 @@
 ---
 title: 使用 Tableadapter 填入資料集 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,15 +21,15 @@ ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 118b8165b4c5ad972aacf9a3d91cff78c1b776e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 242596220b12756b6b5243b008b52db207c22cb0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251845"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944198"
 ---
-# <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填入資料集
+# <a name="fill-datasets-by-using-tableadapters"></a>使用 TableAdapter 填入資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -57,13 +54,13 @@ TableAdapter 元件會填入資料庫，並根據一或多個查詢或您指定�
   
  ![用戶端應用程式中的資料流程](../data-tools/media/clientdatadiagram.gif "ClientDataDiagram")  
   
- 雖然 TableAdapters 的設計是以**Dataset 設計工具**，做為巢狀類別的不會產生的 TableAdapter 類別<xref:System.Data.DataSet>。 它們位於不同的命名空間專屬於每個資料集。 比方說，如果您擁有名為資料集`NorthwindDataSet`，相關聯的 TableAdapters<xref:System.Data.DataTable>中的 s`NorthwindDataSet`會在`NorthwindDataSetTableAdapters`命名空間。 若要以程式設計方式存取特定的 TableAdapter，您必須宣告 TableAdapter 的新執行個體。 例如:   
+ 雖然 TableAdapters 的設計是以**Dataset 設計工具**，做為巢狀類別的不會產生的 TableAdapter 類別<xref:System.Data.DataSet>。 它們位於不同的命名空間專屬於每個資料集。 比方說，如果您擁有名為資料集`NorthwindDataSet`，相關聯的 TableAdapters<xref:System.Data.DataTable>中的 s`NorthwindDataSet`會在`NorthwindDataSetTableAdapters`命名空間。 若要以程式設計方式存取特定的 TableAdapter，您必須宣告 TableAdapter 的新執行個體。 例如：  
   
  [!code-csharp[VbRaddataTableAdapters#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Class1.cs#7)]
  [!code-vb[VbRaddataTableAdapters#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb#7)]  
   
 ## <a name="associated-datatable-schema"></a>相關聯的 DataTable 結構描述  
- 當您建立的 TableAdapter，您使用初始的查詢或預存程序來定義 TableAdapter 的結構描述的相關聯<xref:System.Data.DataTable>。 您執行此初始查詢，或藉由呼叫 TableAdapter 的預存程序`Fill`方法 (這會填滿 TableAdapter 的相關聯<xref:System.Data.DataTable>)。 TableAdapter 的主要查詢所做的任何變更都會反映在相關聯的資料表的結構描述中。 例如，從主查詢移除資料行也會移除資料行相關聯的資料表。 如果在 TableAdapter 上任何額外的查詢會使用傳回不在主要的查詢中的資料行的 SQL 陳述式，設計工具會嘗試同步處理主要查詢和其他查詢之間的資料行變更。 如需詳細資訊，請參閱 <<c0> [ 如何： 編輯 Tableadapter](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855)。  
+ 當您建立的 TableAdapter，您使用初始的查詢或預存程序來定義 TableAdapter 的結構描述的相關聯<xref:System.Data.DataTable>。 您執行此初始查詢，或藉由呼叫 TableAdapter 的預存程序`Fill`方法 (這會填滿 TableAdapter 的相關聯<xref:System.Data.DataTable>)。 TableAdapter 的主要查詢所做的任何變更都會反映在相關聯的資料表的結構描述中。 例如，從主查詢移除資料行也會移除資料行相關聯的資料表。 如果在 TableAdapter 上任何額外的查詢會使用傳回不在主要的查詢中的資料行的 SQL 陳述式，設計工具會嘗試同步處理主要查詢和其他查詢之間的資料行變更。 如需詳細資訊，請參閱[如何：編輯 TableAdapters](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855)。  
   
 ## <a name="tableadapter-update-commands"></a>TableAdapter 更新命令  
  TableAdapter 的更新功能會相依於在主要查詢的 TableAdapter 精靈 中有多少資訊。 比方說，設定為從多個資料表 （聯結） 的值、 純量值、 檢視或彙總函式的結果所擷取的 TableAdapters 不一開始建立能夠將更新送回基礎資料庫。 不過，您可以在其中設定 INSERT、 UPDATE 和 DELETE 命令中手動**屬性**視窗。  
@@ -113,8 +110,7 @@ TableAdapter 元件會填入資料庫，並根據一或多個查詢或您指定�
  Tableadapter 支援可為 null 的型別`Nullable(Of T)`和`T?`。 如需 Visual Basic 可為 Null 型別的詳細資訊，請參閱[可為 Null 的實值類型](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)。 如需 C# 中的可為 null 類型的詳細資訊，請參閱[使用可為 Null 的型別](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)。  
   
 ## <a name="security"></a>安全性  
- 當您使用資料命令`CommandType`屬性設定為<xref:System.Data.CommandType>，仔細檢查，然後將它傳遞到您的資料庫用戶端傳來的資訊。 惡意使用者可能會嘗試傳送 （插入） 修改過或其他的 SQL 陳述式，以取得未經授權的存取，或資料庫損毀。 傳送至資料庫的使用者輸入之前，請務必確認資訊有效。 最佳做法是一律使用參數化的查詢或預存程序，可能的話。  
+ 當您使用資料命令`CommandType`屬性設定為<xref:System.Data.CommandType>，仔細檢查，然後將它傳遞到您的資料庫用戶端傳來的資訊。 惡意使用者可能會嘗試傳送 (插入) 修改過或額外的 SQL 陳述式，以獲得未授權的存取或破壞資料庫。 傳送至資料庫的使用者輸入之前，請務必確認資訊有效。 最佳做法是一律使用參數化的查詢或預存程序，可能的話。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)
-

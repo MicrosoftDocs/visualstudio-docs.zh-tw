@@ -1,14 +1,9 @@
 ---
-title: CA1009： 正確宣告事件處理常式 |Microsoft Docs
-ms.custom: ''
+title: CA1009:必須正確宣告事件處理常式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1009
 - DeclareEventHandlersCorrectly
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7a405ebbf4cd11a695c6e93231d260d8ceae2483
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9f3764e7e7965fb9efe46a8404273de9adde4a34
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918502"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943472"
 ---
-# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009：正確宣告事件處理常式
+# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009:事件處理常式必須正確宣告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -59,11 +54,8 @@ ms.locfileid: "49918502"
  [!code-vb[FxCop.Design.EventsTwoParams#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/vb/FxCop.Design.EventsTwoParams.vb#1)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA2109：必須檢閱可見的事件處理常式](../code-quality/ca2109-review-visible-event-handlers.md)
+ [CA2109:檢閱顯示的事件處理常式](../code-quality/ca2109-review-visible-event-handlers.md)
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.EventArgs?displayProperty=fullName> <xref:System.Object?displayProperty=fullName>
- [NIB： 事件與委派](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)
-
-
-
+ [NIB：事件與委派](http://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

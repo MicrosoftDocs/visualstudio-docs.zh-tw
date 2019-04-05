@@ -1,25 +1,22 @@
 ---
 title: 了解模型、 類別和關聯性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
 ms.assetid: 2ecd569c-b369-41ea-b78e-a61b62e2e4e9
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271787"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946044"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +28,13 @@ ms.locfileid: "49271787"
 ## <a name="the-dsl-definition"></a>DSL 定義  
  當您開啟`Dsl\DslDefinition.dsl`、 您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]視窗類似以下圖片。  
   
- ![dsl 設計工具](../modeling/media/dsl-designer.png "dsl_designer")  
+ ![DSL 設計工具](../modeling/media/dsl-designer.png "dsl_designer")  
   
  在 DSL 定義中最重要的資訊會顯示在 DSL 定義圖。 其他資訊，也是 DslDefinition.dsl 的一部分，會顯示在 [DSL 總管] 中，它通常會顯示在圖表的側邊。 您工作的最常見的工作，該圖表和 DSL 總管 中的更進階的自訂項目。  
   
  DSL 定義圖會顯示定義模型項目，以及定義模型項目之間的連結關聯性的網域類別。 此外，它也會顯示的圖形和連接器，用來向使用者顯示的模型項目。  
   
- ![具有泳道的 dsl 設計工具](../modeling/media/dsl-desinger.png "dsl_desinger")  
+ ![具有區隔線的 DSL 設計工具](../modeling/media/dsl-desinger.png "dsl_desinger")  
   
  當您在 DSL 定義中，在圖表上或在 [DSL 總管] 中，選取項目相關的資訊會顯示在 [屬性] 視窗中。 在 DSL 詳細資料視窗中，可能會顯示其他資訊。  
   
@@ -59,9 +56,9 @@ ms.locfileid: "49271787"
   
  ![內嵌和參考關聯性](../modeling/media/music-classes.png "Music_Classes")  
   
- 下圖顯示四個網域類別： 音樂、 專輯、 演出者與歌曲。 網域類別定義網域屬性，例如名稱、 標題和等等。 在執行個體模型中，其中部分屬性的值會顯示在圖表上。  
+ 下圖顯示四個網域類別：音樂、 專輯、 演出者與歌曲。 網域類別定義網域屬性，例如名稱、 標題和等等。 在執行個體模型中，其中部分屬性的值會顯示在圖表上。  
   
- 類別之間是網域關聯性： MusicHasAlbums、 MusicHasArtists、 AlbumbHasSongs 和 ArtistAppearedOnAlbums。 關聯性具有多重性，例如 1..1，0..*。 例如，必須與相關 AlbumHasSongs 關聯性透過一個專輯的所有歌曲。 每個專輯可以有任意數目的歌曲。  
+ 類別之間是網域關聯性：MusicHasAlbums、 MusicHasArtists、 AlbumbHasSongs 和 ArtistAppearedOnAlbums。 關聯性具有多重性，例如 1..1，0..*。 例如，必須與相關 AlbumHasSongs 關聯性透過一個專輯的所有歌曲。 每個專輯可以有任意數目的歌曲。  
   
 ### <a name="rearranging-the-dsl-definition-diagram"></a>重新排列 DSL 定義圖表  
  請注意網域類別可以在 DSL 定義圖表中，會出現許多次專輯未在此圖中。 總是有一個主要檢視，而且不可以有一些*參考*檢視。  
@@ -157,7 +154,4 @@ ms.locfileid: "49271787"
   
 ## <a name="see-also"></a>另請參閱  
  [產生的 API 中的網域關聯性](../misc/domain-relationships-in-the-generated-api.md)   
- [特定領域語言工具字彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

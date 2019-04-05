@@ -1,27 +1,22 @@
 ---
 title: 圖形事件呼叫堆疊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.callstack
 ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7c6ac7860fe846c86d846fd668c4647cd4145756
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762844"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943438"
 ---
 # <a name="graphics-event-call-stack"></a>圖形事件呼叫堆疊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +35,14 @@ Visual Studio 圖形分析器中的圖形事件呼叫堆疊可協助您對應有
 ### <a name="graphics-event-call-stack-information"></a>圖形事件呼叫堆疊資訊  
  事件呼叫堆疊不支援畫面格前事件或使用者定義事件。 圖形事件呼叫堆疊會以資料表格式顯示。  
   
-|Column|描述|  
+|資料行|描述|  
 |------------|-----------------|  
 |**名稱**|特別用來識別含有呼叫位置之函式的符號。 當函式的偵錯符號可用時即會顯示；否則會顯示函式位移。|  
 |**檔案**|含有呼叫位置之原始程式檔或程式庫檔案的檔案名稱。|  
 |**位置**|呼叫位置的行號。|  
   
 ### <a name="links-to-graphics-objects"></a>圖形物件連結  
- 若要了解所選取的圖形事件，您可能需要與其相關聯之 Direct3D 物件的相關資訊。 **圖形事件呼叫堆疊**視窗提供此資訊的連結。  
+ 若要了解所選取的圖形事件，您可能需要與其相關聯之 Direct3D 物件的相關資訊。 [圖形事件呼叫堆疊] 視窗會提供這項資訊的連結。  
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說：因端點著色而遺漏的物件](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 舊版語言服務 2 中的參數資訊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Parameter Info tool tip
 - language services [managed package framework], IntelliSense Parameter Info
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a540a2e5b282e1242109edd67a5dfbc95067e183
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cd89520cb976cb6deaca957d97f952e4baa71def
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781318"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944267"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>舊版語言服務中的參數資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -125,4 +120,3 @@ testfunc("a string",3);
 3.  剖析器呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>。  
   
 4.  剖析器呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>。
-

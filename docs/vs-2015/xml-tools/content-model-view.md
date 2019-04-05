@@ -1,25 +1,20 @@
 ---
 title: 內容模型檢視 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a535a97835491f4a109ed0893d20a4330b218801
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860301"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944228"
 ---
 # <a name="content-model-view"></a>內容模型檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,15 +34,15 @@ ms.locfileid: "49860301"
 ## <a name="design-surface"></a>設計介面  
  在 [工作空間] 面板中選取節點時，該節點會加入內容模型檢視設計介面，您可在此檢視節點的詳細資料。  
   
- 節點的內容模型以可展開的圖形樹狀結構表示，項目和屬性則以樹狀目錄節點的形式出現。 依預設，只有一個層級會展開。 合成器、型別名稱、群組和其他容器等其他資訊會置於垂直列中 (展開時)，並加上括號之內的項目和屬性。 當您按兩下垂直列時，垂直列會變成水平，樹狀結構會摺疊。 當您按兩下水平列時，水平列會變成垂直，樹狀結構會展開。 選取垂直列將選取容器內的所有節點。 如果項目可以展開或摺疊，展開器會出現在節點的右方。  
+ 節點的內容模型以可展開的圖形樹狀結構表示，項目和屬性則以樹狀目錄節點的形式出現。 依預設，只有一個層級會展開。 合成器、型別名稱、群組和其他容器等其他資訊會置於垂直列中 (展開時)，並加上括號之內的項目和屬性。 當您按兩下垂直列時，垂直列會變成水平，樹狀結構會摺疊。 當您按兩下水平列時，水平列會變成垂直，樹狀會展開。 選取垂直列將選取容器內的所有節點。 如果項目可以展開或摺疊，展開器會出現在節點的右方。  
   
- 如果設計介面空白，則會顯示 XML 編輯器、XML 結構描述總管和浮水印。 *浮水印*是所有 XSD 設計工具檢視連結的清單。 如果結構描述集發生錯誤，清單結尾會顯示以下文字：「使用錯誤清單檢視與修正結構描述集中的錯誤」。  
+ 如果設計介面空白，則會顯示 XML 編輯器、XML 結構描述總管和浮水印。 *浮水印*是所有 XSD 設計工具檢視連結的清單。 如果結構描述集發生錯誤，將下列文字會顯示在清單結尾處：「 檢視與修正的錯誤集合中使用 錯誤清單 」。  
   
 ## <a name="breadcrumb-bar"></a>階層連結列  
  內容模型檢視底部的階層連結列會顯示所選節點在結構描述集的位置。  
   
-## <a name="context-menus"></a>內容功能表  
- 當您以滑鼠右鍵按一下設計介面或 [工作空間] 面板中的項目時，內容功能表隨即出現。 下表描述內容模型檢視設計介面的可用選項。  
+## <a name="context-menus"></a>操作功能表  
+ 當您以滑鼠右鍵按一下設計介面或 [工作空間] 面板中的項目時，操作功能表隨即出現。 下表描述內容模型檢視設計介面的可用選項。  
   
 |選項|描述|  
 |------------|-----------------|  
@@ -83,9 +78,9 @@ ms.locfileid: "49860301"
   
 |選項|描述|  
 |------------|-----------------|  
-|**顯示開始檢視**|若要切換[啟動檢視](../xml-tools/start-view.md)。 這個檢視可以使用鍵盤快速鍵存取： **CTRL + 1**。|  
-|**顯示內容模型檢視**|若要切換[內容模型檢視](../xml-tools/content-model-view.md)。 這個檢視可以使用鍵盤快速鍵存取： **CTRL + 2**。|  
-|**顯示圖表檢視**|若要切換[圖形檢視](../xml-tools/graph-view.md)。 這個檢視可以使用鍵盤快速鍵存取： **CTRL + 3**。|  
+|**顯示開始檢視**|若要切換[啟動檢視](../xml-tools/start-view.md)。 這個檢視可以使用鍵盤快速鍵存取：**CTRL + 1**。|  
+|**顯示內容模型檢視**|若要切換[內容模型檢視](../xml-tools/content-model-view.md)。 這個檢視可以使用鍵盤快速鍵存取：**CTRL + 2**。|  
+|**顯示圖表檢視**|若要切換[圖形檢視](../xml-tools/graph-view.md)。 這個檢視可以使用鍵盤快速鍵存取：**CTRL + 3**。|  
 |**清除工作區**|清除工作空間和設計介面。|  
 |**移除工作區**|從工作空間和設計介面移除選取的節點。|  
 |**全部移除，但從工作區的選取範圍**|從工作空間和設計介面移除未選取的節點。|  
@@ -117,12 +112,9 @@ ms.locfileid: "49860301"
   當您選取縮放滑桿、將滑鼠停留於滑桿上方、或使用 CTRL 搭配滑鼠滾輪進行縮放時，滑桿會呈不透明狀，其他所有時間則呈透明狀。  
   
 ## <a name="xml-editor-integration"></a>XML 編輯器整合  
- 您可以使用內容功能表，在 XSD 設計工具和 XML 編輯器之間來回切換。  
+ 您可以使用操作功能表，在 XSD 設計工具和 XML 編輯器之間來回切換。  
   
  如果您在 XML 編輯器中變更結構描述集，內容模型檢閱也會同步進行變更。 如需詳細資訊，請參閱 <<c0> [ 使用 XML 編輯器整合](../xml-tools/integration-with-xml-editor.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [XML 結構描述設計工具工作區](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

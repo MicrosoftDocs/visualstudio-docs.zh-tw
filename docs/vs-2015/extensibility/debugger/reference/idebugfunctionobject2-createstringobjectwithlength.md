@@ -1,27 +1,22 @@
 ---
 title: IDebugFunctionObject2::CreateStringObjectWithLength |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - CreateStringObjectWithLength
 - IDebugFunctionObject2::CreateStringObjectWithLength
 ms.assetid: 1f43ec66-1615-4a4c-8b9d-e933f549f96d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7bd1d55f55cba99832ae97e4a81bf70b683d9bac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d915cd4a447e0a6eee51d8fa31ec994c68759e52
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754380"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942819"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -61,4 +56,3 @@ int CreateStringObjectWithLength (
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)
-

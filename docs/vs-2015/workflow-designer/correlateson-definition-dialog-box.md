@@ -1,11 +1,8 @@
 ---
 title: CorrelatesOn 定義對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - CorrelatesOnDefinition.UI
@@ -13,13 +10,13 @@ ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 3171efb985eec54d0e935d2e8499c69631c6dfc8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fd03e1a8615e75d3f00f79eb10b7a7ff97f0eb33
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285814"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000699"
 ---
 # <a name="correlateson-definition-dialog-box"></a>CorrelatesOn 定義對話方塊
 **CorrelatesOn**  對話方塊會在[!INCLUDE[wfd1](../includes/wfd1-md.md)]編輯<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>屬性<xref:System.ServiceModel.Activities.Receive>活動。 [!INCLUDE[crdefault](../includes/crdefault-md.md)] [接收](../workflow-designer/receive-activity-designer.md)主題。  
@@ -39,5 +36,4 @@ ms.locfileid: "49285814"
 ## <a name="see-also"></a>另請參閱  
  <xref:System.ServiceModel.Activities.Receive>   
  [[新增 CorrelationInitializers] 對話方塊](../workflow-designer/add-correlationinitializers-dialog-box.md)   
- [加入相互關聯對話方塊](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)   
  [初始化相互關聯對話方塊](../workflow-designer/initialize-correlation-dialog-box.md)

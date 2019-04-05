@@ -1,27 +1,22 @@
 ---
 title: 實作 GetMethodProperty |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - GetMethodProperty method
 - IDebugExpressionEvaluator2 property
 ms.assetid: 6305874f-a2c4-4432-834c-07530ea84bff
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dbc302523aeb48453be53aa1fea05f2759c9db20
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3199b5c1a812052735f62c48a882fcd409d93c7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730712"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945380"
 ---
 # <a name="implementing-getmethodproperty"></a>實作 GetMethodProperty
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -133,4 +128,3 @@ STDMETHODIMP CExpressionEvaluator::GetMethodProperty(
   
 ## <a name="see-also"></a>另請參閱  
  [區域變數的範例實作](../../extensibility/debugger/sample-implementation-of-locals.md)
-

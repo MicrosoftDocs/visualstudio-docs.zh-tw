@@ -1,26 +1,21 @@
 ---
 title: 自訂 Isolated 的 Shell |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: e0b7c3ae-210f-4f48-ac49-6a59e6034f5f
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 097186ba43202c537bf8acbe0b47893151055c19
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733778"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943715"
 ---
 # <a name="customizing-the-isolated-shell"></a>自訂 Isolated 的 Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +26,15 @@ ms.locfileid: "51733778"
  獨立模式的 shell 範本方案包括*SolutionName*。Application.pkgdef 檔案，可讓您修改下列功能：  
   
 ##### <a name="the-application-title"></a>應用程式標題  
- 您可以自訂應用程式標題，即會顯示在應用程式的標題列，藉由變更:"AppName"中資料列的值的名稱*SolutionName*。Application.pkgdef 檔案。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
+ 您可以自訂應用程式標題，即會顯示在應用程式的標題列，藉由變更:"AppName"中資料列的值的名稱*SolutionName*。Application.pkgdef 檔案。 如需詳細資訊，請參閱[逐步解說：建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
   
  如果您不想要顯示目前已載入專案的應用程式標題，變更"ShowHierarchyRootInTitle 」 資料列中的值*SolutionName*。Application.pkgdef 檔從 dword: 00000001 dword:00000000。  
   
 ##### <a name="the-application-icon"></a>應用程式圖示  
- 您可以自訂應用程式圖示，它是由應用程式名稱的應用程式標題列中顯示的圖示。 將不同的圖示複製到圖示目錄中。 在 [**方案總管] 中**，將圖示新增至資源檔的資料夾。 然後開啟 VSShellStub.rc 檔案，並使用 [新增] 圖示的名稱取代 IDI_STUBPROGRAM 值。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
+ 您可以自訂應用程式圖示，它是由應用程式名稱的應用程式標題列中顯示的圖示。 將不同的圖示複製到圖示目錄中。 在 [**方案總管] 中**，將圖示新增至資源檔的資料夾。 然後開啟 VSShellStub.rc 檔案，並使用 [新增] 圖示的名稱取代 IDI_STUBPROGRAM 值。 如需詳細資訊，請參閱[逐步解說：建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
   
 ##### <a name="the-command-line-logo"></a>命令列的標誌  
- 您可以自訂的命令列的標誌，也就是從命令列中，啟動應用程式中的"CommandLineLogo 」 資料列的值變更時，會出現的文字*SolutionName*。Application.pkgdef 檔案。 如需詳細資訊，請參閱[逐步解說： 建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ 您可以自訂的命令列的標誌，也就是從命令列中，啟動應用程式中的"CommandLineLogo 」 資料列的值變更時，會出現的文字*SolutionName*。Application.pkgdef 檔案。 如需詳細資訊，請參閱[逐步解說：建立基本的 Isolated 的 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="the-name-of-the-user-files-subfolder"></a>使用者名稱的檔案子資料夾  
  您可以變更您的應用程式會維護使用者檔案中的"UserFilesSubFolderName 」 資料列的值變更的資料夾名稱*SolutionName*。Application.pkgdef 檔案。  
@@ -63,7 +58,7 @@ ms.locfileid: "51733778"
  您可以自訂網頁瀏覽器上，也就是開啟網頁瀏覽器視窗時，「 DefaultSearchPage 」 資料列中的值變更時，會顯示的頁面*SolutionName*。Application.pkgdef 檔案。  
   
 ##### <a name="the-default-home-page"></a>預設的首頁  
- 您可以自訂 [首頁] 頁面中的"DefaultHomePage 」 資料列的值變更*SolutionName*。Application.pkgdef 檔案。 如需詳細資訊，請參閱[逐步解說： 建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ 您可以自訂 [首頁] 頁面中的"DefaultHomePage 」 資料列的值變更*SolutionName*。Application.pkgdef 檔案。 如需詳細資訊，請參閱[逐步解說：建立基本的 Isolated 的 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="whether-or-not-to-hide-the-solution-concept"></a>指出是否要隱藏解決方案概念  
  您可以指定是否要隱藏您的應用程式中的方案中的"HideSolutionConcept 」 資料列的值變更*SolutionName*。Application.pkgdef 檔案。 若要隱藏解決方案，將值設定`dword:00000001`，並顯示方案，請將值設定`dword:00000000`。  
@@ -123,14 +118,13 @@ DisableStartPage=dword:00000000
 [$RootKey$\Projects\{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}\AddItemTemplates\TemplateDirs\{39c9c826-8ef8-4079-8c95-428f5b1c323f}]  
 ```  
   
- 從集合中顯示的專案範本中移除其他檔案專案**新的專案**對話方塊。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
+ 從集合中顯示的專案範本中移除其他檔案專案**新的專案**對話方塊。 如需詳細資訊，請參閱[逐步解說：建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
   
 ##### <a name="enabledisable-menu-commands"></a>啟用/停用功能表命令  
- *SolutionName*UI.vsct 檔案包含所有的功能表命令的獨立模式 shell 可標記為註解清單。 若要停用指定的命令，請取消註解對應的資料列。 例如，若要停用分割視窗/註解，請取消註解`<Define name="No_SplitCommand"/>`資料列。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
+ *SolutionName*UI.vsct 檔案包含所有的功能表命令的獨立模式 shell 可標記為註解清單。 若要停用指定的命令，請取消註解對應的資料列。 例如，若要停用分割視窗/註解，請取消註解`<Define name="No_SplitCommand"/>`資料列。 如需詳細資訊，請參閱[逐步解說：建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
   
 ##### <a name="the-bitmap-used-on-the-splash-screen"></a>使用在啟動顯示畫面的點陣圖  
- 您可以自訂在啟動顯示畫面上，也就是啟動應用程式時，「 SplashScreenBitmap 」 資料列中的值變更時，會顯示視窗用點陣圖*SolutionName*。Application.pkgdef 檔案。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
+ 您可以自訂在啟動顯示畫面上，也就是啟動應用程式時，「 SplashScreenBitmap 」 資料列中的值變更時，會顯示視窗用點陣圖*SolutionName*。Application.pkgdef 檔案。 如需詳細資訊，請參閱[逐步解說：建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
   
 ##### <a name="the-helpabout-window"></a>「 說明/關於 視窗  
- 在獨立模式的 shell 範本中沒有個別的專案，您可以使用自訂 [說明] / [關於] 對話方塊，您的應用程式。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。
-
+ 在獨立模式的 shell 範本中沒有個別的專案，您可以使用自訂 [說明] / [關於] 對話方塊，您的應用程式。 如需詳細資訊，請參閱[逐步解說：建立基本獨立 Shell 應用程式](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。

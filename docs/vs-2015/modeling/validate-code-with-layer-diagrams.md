@@ -1,12 +1,9 @@
 ---
 title: 使用分層圖驗證程式碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, validating
 - validation, layer diagrams
@@ -23,13 +20,13 @@ ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4d010345c551572bb6458110d2de9ca33fc73155
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 74c61beeae78fbf76ffee76ff930171ddbe8089a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792160"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944581"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>使用分層圖驗證程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +53,7 @@ ms.locfileid: "51792160"
   
   若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
-  您可以在 Visual Studio 中的開放分層圖或從命令提示字元手動驗證程式碼。 您也可以在執行本機組建或 Team Foundation Build 時自動驗證程式碼。 請參閱[Channel 9 影片： 設計和驗證架構使用圖層圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。  
+  您可以在 Visual Studio 中的開放分層圖或從命令提示字元手動驗證程式碼。 您也可以在執行本機組建或 Team Foundation Build 時自動驗證程式碼。 請參閱[Channel 9 影片：設計和驗證架構使用圖層圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。  
   
 > [!IMPORTANT]
 >  如果您要以 Team Foundation Build 執行圖層驗證，您也必須在您的組建伺服器上安裝相同版本的 Visual Studio。  
@@ -237,17 +234,14 @@ ms.locfileid: "51792160"
   
 |**錯誤語法**|**錯誤描述**|  
 |----------------------|---------------------------|  
-|AV0001： 無效的相依性： *Artifact1*(*ArtifactType1*)--> *Artifact2*(*ArtifactType2*)<br /><br /> 圖層： *LayerName1*， *LayerName2* &#124;的相依性： *DependencyType*|*Artifact1*中*LayerName1*上不應該有相依性*Artifact2*中*LayerName2*因為*LayerName1*沒有直接相依*LayerName2*。|  
-|AV1001： 無效的命名空間：*成品*<br /><br /> 圖層： *LayerName* &#124;必要的命名空間： *NamespaceName1* &#124;目前的命名空間： *NamespaceName2*|*LayerName*要求其相關的成品必須屬於*NamespaceName1*。 *成品*處於*NamespaceName2*，而非*NamespaceName1*。|  
-|AV1002： 依存於禁止的命名空間： *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> 圖層： *LayerName* &#124;禁止的命名空間： *NamespaceName* &#124;的相依性： *DependencyType*|*LayerName*要求其相關的成品必須相依於*NamespaceName*。 *Artifact1*不能依賴*Artifact2*因為*Artifact2*處於*NamespaceName*。|  
-|AV1003： 在禁止的命名空間：*成品*(*ArtifactType*)<br /><br /> 圖層： *LayerName* &#124;禁止的命名空間：*命名空間名稱*|*LayerName*要求其相關的成品不能屬於*NamespaceName*。 *成品*所屬*NamespaceName*。|  
-|AV3001： 遺漏連結： 圖層 '*LayerName*'連結到'*成品*' 找不到其中。 您是否遺漏了組件參考?|*LayerName*連結至找不到的成品。 例如，類別的連結可能因為模型專案遺漏包含該類別之組件的參考而遺失。|  
-|AV9001: 架構分析發現內部錯誤。 結果可能不完整。 如需詳細資訊，請參閱詳細建置事件記錄檔或輸出視窗。|如需詳細資訊，請參閱建置事件記錄檔或輸出視窗。|  
+|AV0001:無效的相依性：*Artifact1*(*ArtifactType1*) --> *Artifact2*(*ArtifactType2*)<br /><br /> 圖層：*LayerName1*， *LayerName2* &#124;相依性：*DependencyType*|*Artifact1*中*LayerName1*上不應該有相依性*Artifact2*中*LayerName2*因為*LayerName1*沒有直接相依*LayerName2*。|  
+|AV1001:無效的命名空間：*成品*<br /><br /> 圖層：*LayerName* &#124;必要的命名空間：*NamespaceName1* &#124;目前的命名空間：*NamespaceName2*|*LayerName*要求其相關的成品必須屬於*NamespaceName1*。 *成品*處於*NamespaceName2*，而非*NamespaceName1*。|  
+|AV1002:依存於禁止的命名空間：*Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> 圖層：*LayerName* &#124;禁止的命名空間：*NamespaceName* &#124;相依性：*DependencyType*|*LayerName*要求其相關的成品必須相依於*NamespaceName*。 *Artifact1*不能依賴*Artifact2*因為*Artifact2*處於*NamespaceName*。|  
+|AV1003:在禁止的命名空間：*Artifact*(*ArtifactType*)<br /><br /> 圖層：*LayerName* &#124;禁止的命名空間：*NamespaceName*|*LayerName*要求其相關的成品不能屬於*NamespaceName*。 *成品*所屬*NamespaceName*。|  
+|AV3001:遺漏連結：圖層 '*LayerName*'連結到'*成品*' 找不到其中。 您是否遺漏了組件參考?|*LayerName*連結至找不到的成品。 例如，類別的連結可能因為模型專案遺漏包含該類別之組件的參考而遺失。|  
+|AV9001:架構分析發現內部錯誤。 結果可能不完整。 如需詳細資訊，請參閱詳細建置事件記錄檔或輸出視窗。|如需詳細資訊，請參閱建置事件記錄檔或輸出視窗。|  
   
 ## <a name="security"></a>安全性  
   
 ## <a name="see-also"></a>另請參閱  
  [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)
-
-
-

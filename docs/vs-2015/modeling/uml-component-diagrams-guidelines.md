@@ -1,12 +1,9 @@
 ---
-title: UML 元件圖： 方針 |Microsoft Docs
-ms.custom: ''
+title: UML 元件圖：指導方針 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, component
 - diagrams - modeling, component
@@ -17,15 +14,15 @@ ms.assetid: 6c1bdd60-369e-477e-83ed-7f6fe75c9f0b
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7400bac1fa6dcbf086718e54d18288b8ab80f1b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13dc2eda358e86cd324bc154b856028b3db8979b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801459"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943815"
 ---
-# <a name="uml-component-diagrams-guidelines"></a>UML 元件圖表：方針
+# <a name="uml-component-diagrams-guidelines"></a>UML 元件圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual Studio 中，您可以繪製*元件圖*來顯示軟體系統的結構。 如需影片示範，請參閱 <<c0> [ 使用元件圖設計實體架構](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)。  
@@ -49,13 +46,13 @@ ms.locfileid: "51801459"
   
 |其他圖表|協助您討論和溝通設計的以下方面|  
 |-------------------|--------------------------------------------------------------------|  
-|UML 循序圖表|-系統的元件之間的互動<br />-互動元件內組件之間。<br /><br /> 如需詳細資訊，請參閱 < [UML 循序圖： 方針](../modeling/uml-sequence-diagrams-guidelines.md)。|  
-|UML 類別圖表|-介面的元件。 類別圖可讓您將詳細說明介面的方法。<br />-傳送資料參數中跨元件的介面。<br /><br /> 如需詳細資訊，請參閱 < [UML 類別圖： 方針](../modeling/uml-class-diagrams-guidelines.md)。|  
-|活動圖|-內部處理執行以回應傳入訊息的元件。<br /><br /> 如需詳細資訊，請參閱 < [UML 活動圖表： 指導方針](../modeling/uml-activity-diagrams-guidelines.md)。|  
-|圖層圖表|您的元件的邏輯架構層。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 分層圖： 參考](../modeling/layer-diagrams-reference.md)。|  
+|UML 循序圖表|-系統的元件之間的互動<br />-互動元件內組件之間。<br /><br /> 如需詳細資訊，請參閱[UML 循序圖：指導方針](../modeling/uml-sequence-diagrams-guidelines.md)。|  
+|UML 類別圖表|-介面的元件。 類別圖可讓您將詳細說明介面的方法。<br />-傳送資料參數中跨元件的介面。<br /><br /> 如需詳細資訊，請參閱 [UML 類別圖表：指導方針](../modeling/uml-class-diagrams-guidelines.md)。|  
+|活動圖|-內部處理執行以回應傳入訊息的元件。<br /><br /> 如需詳細資訊，請參閱[UML 活動圖表：指導方針](../modeling/uml-activity-diagrams-guidelines.md)。|  
+|圖層圖表|您的元件的邏輯架構層。<br /><br /> 如需詳細資訊，請參閱[分層圖：參考資料](../modeling/layer-diagrams-reference.md)。|  
   
 ##  <a name="Basics"></a> 繪製元件圖的基本步驟  
- 如需元件圖 參考之元素的相關資訊，請參閱[UML 元件圖： 參考](../modeling/uml-component-diagrams-reference.md)。  
+ 如需元件圖 參考之元素的相關資訊，請參閱[UML 元件圖：參考資料](../modeling/uml-component-diagrams-reference.md)。  
   
  如需如何使用在設計流程中的元件圖的詳細資訊，請參閱[您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)。  
   
@@ -279,7 +276,7 @@ ms.locfileid: "51801459"
   
 1.  建立新的順序圖表。  
   
-     如需詳細資訊，請參閱 < [UML 循序圖： 方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
+     如需詳細資訊，請參閱[UML 循序圖：指導方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
 2.  建立將訊息傳送至這個元件的外部元件、使用者、裝置或其他行動 (1) 的生命線。  
   
@@ -301,7 +298,7 @@ ms.locfileid: "51801459"
  您可以先將此模型中指出，藉由設定**Is Indirectly Instantiated**元件的屬性。 在此情況下，所有元件的介面都應在連接埠上，並委派至內部組件。  
   
 ### <a name="describing-the-process-inside-each-part"></a>說明每個組件內的程序  
- 您可以使用活動圖來顯示元件如何處理每則流入訊息。 如需詳細資訊，請參閱 < [UML 活動圖表： 指導方針](../modeling/uml-activity-diagrams-guidelines.md)。  
+ 您可以使用活動圖來顯示元件如何處理每則流入訊息。 如需詳細資訊，請參閱[UML 活動圖表：指導方針](../modeling/uml-activity-diagrams-guidelines.md)。  
   
  ![活動圖表，連同資料緩衝區一起](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")  
   
@@ -337,12 +334,9 @@ ms.locfileid: "51801459"
   
 ## <a name="see-also"></a>另請參閱  
  [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)   
- [UML 元件圖： 參考](../modeling/uml-component-diagrams-reference.md)   
- [UML 循序圖： 參考](../modeling/uml-sequence-diagrams-reference.md)   
- [UML 使用案例圖： 參考](../modeling/uml-use-case-diagrams-reference.md)   
- [UML 類別圖： 參考](../modeling/uml-class-diagrams-reference.md)   
- [UML 元件圖： 參考](../modeling/uml-component-diagrams-reference.md)   
- [影片： 使用元件圖設計實體架構](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
-
-
-
+ [UML 元件圖表：參考](../modeling/uml-component-diagrams-reference.md)   
+ [UML 順序圖表：參考](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML 使用案例圖表：參考](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)   
+ [UML 元件圖表：參考](../modeling/uml-component-diagrams-reference.md)   
+ [影片：使用元件圖設計實體架構](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)

@@ -1,12 +1,9 @@
 ---
 title: 特定領域語言定義中加入 追蹤屬性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tracking properties [Domain-Specific Language Tools], walkthrough
 - Domain-Specific Language Tools, walkthroughs
@@ -15,13 +12,13 @@ ms.assetid: 4aa47777-de75-4897-a423-a3c4426b4125
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 164586555c9027481b157f1232ce3d41e0fe40b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894374"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944591"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>在網域指定的語言定義中加入追蹤屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ ms.locfileid: "49894374"
   
  比方說，在特定領域語言工具 （DSL 工具） 中，網域類別的屬性具有預設值的計算方式是使用網域類別，而是使用者的名稱，這個值的顯示名稱可以在設計階段變更值，或重設為導出值。  
   
- 在本逐步解說中，您可以建立特定領域語言 (DSL) 具有追蹤模型的預設命名空間屬性為基礎的預設值的屬性命名空間。 如需有關追蹤屬性的詳細資訊，請參閱[定義的追蹤屬性](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be)。  
+ 在本逐步解說中，您可以建立特定領域語言 (DSL) 具有追蹤模型的預設命名空間屬性為基礎的預設值的屬性命名空間。 如需有關追蹤屬性的詳細資訊，請參閱[定義的追蹤屬性](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)。  
   
 - 追蹤屬性描述元的 DSL 工具支援。 不過，DSL 設計工具無法用來將追蹤屬性新增至語言中。 因此，您必須新增自訂程式碼來定義和實作的追蹤屬性。  
   
@@ -725,7 +722,7 @@ ms.locfileid: "49894374"
   
 #### <a name="to-exercise-the-language"></a>若要執行的語言  
   
-1.  在 **建置**功能表上，按一下**重建方案**。  
+1.  在 [建置] 功能表上，按一下 [重建方案]。  
   
 2.  按一下 [偵錯] 功能表上的 [開始偵錯]。  
   
@@ -766,8 +763,5 @@ ms.locfileid: "49894374"
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>   
  <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)   
- [如何： 建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)   
+ [如何：建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)   
  [逐步解說：自訂特定領域語言定義](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)
-
-
-

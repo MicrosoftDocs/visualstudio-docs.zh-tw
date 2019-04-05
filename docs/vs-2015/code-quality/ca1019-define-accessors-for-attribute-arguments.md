@@ -1,14 +1,9 @@
 ---
-title: Ca1019： 必須定義存取子屬性引數 |Microsoft Docs
-ms.custom: ''
+title: CA1019:定義存取子屬性引數 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1019
 - DefineAccessorsForAttributeArguments
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ff0329c5c9d565685d4e5c0ff950b31dea3299f6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c21a3e4daeea64dd36c42bd986fcda75ad0bcaa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854880"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944390"
 ---
-# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019：必須定義屬性引數的存取子
+# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019:定義屬性引數的存取子
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -79,10 +74,7 @@ ms.locfileid: "49854880"
  [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeAccessorsNamedApplied/cs/FxCop.Design.AttributeAccessorsNamedApplied.cs#1)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1813：避免使用非密封屬性](../code-quality/ca1813-avoid-unsealed-attributes.md)
+ [CA1813:避免使用非密封的屬性](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>另請參閱
  [屬性](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)
-
-
-

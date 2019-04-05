@@ -1,14 +1,9 @@
 ---
-title: Ca1060： 必須將 P-invokes 移到 NativeMethods 類別 |Microsoft Docs
-ms.custom: ''
+title: CA1060:將 P-invokes 移到 NativeMethods 類別 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MovePInvokesToNativeMethodsClass
 - CA1060
@@ -20,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f47fa4326da9914171e5014decbd6d6923c2f02e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913861"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943508"
 ---
-# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060：將 P/Invokes 移到 NativeMethods 類別
+# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060:必須將 P/Invokes 移到 NativeMethods 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -94,7 +89,7 @@ ms.locfileid: "49913861"
 ## <a name="unsafenativemethods-example"></a>UnsafeNativeMethods 範例
 
 ### <a name="description"></a>描述
- 無法安全地呼叫和，可能會造成副作用的 P/Invoke 方法都應該放在名為類別**UnsafeNativeMethods**。 這些方法應該嚴格檢查以確定它們都不會公開該使用者不小心。 此規則[CA2118： 檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)可以解決這個。 或者，方法應該有其他的權限，而不是要求**UnmanagedCode**時使用它們。
+ 無法安全地呼叫和，可能會造成副作用的 P/Invoke 方法都應該放在名為類別**UnsafeNativeMethods**。 這些方法應該嚴格檢查以確定它們都不會公開該使用者不小心。 此規則[CA2118:檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)可以解決這個。 或者，方法應該有其他的權限，而不是要求**UnmanagedCode**時使用它們。
 
  下列範例所示**Cursor.Hide**包裝的方法**ShowCursor**函式從 user32.dll。
 
@@ -104,6 +99,3 @@ ms.locfileid: "49913861"
 
 ## <a name="see-also"></a>另請參閱
  [設計警告](../code-quality/design-warnings.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: 支援的事件類型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dd6f8f5b7c2782bb908538426cb531db216b72fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d82bce8546d4c63a82f4850097ca92c804399a66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781461"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945482"
 ---
 # <a name="supported-event-types"></a>支援的事件類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,4 +89,3 @@ Visual Studio 偵錯目前支援下列事件類型：
   
 ## <a name="see-also"></a>另請參閱  
  [傳送事件](../../extensibility/debugger/sending-events.md)
-

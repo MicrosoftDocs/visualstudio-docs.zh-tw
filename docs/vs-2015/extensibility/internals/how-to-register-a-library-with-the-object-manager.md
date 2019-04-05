@@ -1,14 +1,9 @@
 ---
-title: 如何： 使用物件管理員註冊程式庫 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用物件管理員註冊程式庫 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - libraries, registering with object manager
 - IVsLibrary2 interface, registering library with object manager
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ed547d82ccacec44383fed29a0c04bb363b10084
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6be7c1fc8f615ccbf29b8c085fecf6f4d6689404
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732954"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944460"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>如何： 使用物件管理員註冊程式庫
+# <a name="how-to-register-a-library-with-the-object-manager"></a>HOW TO：使用物件管理員註冊程式庫
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 符號瀏覽工具，例如**類別檢視**，**物件瀏覽器**，**呼叫瀏覽器**並**尋找符號結果**，讓您檢視在您的專案或外部元件的符號。 這些符號包括命名空間、 類別、 介面、 方法和其他語言項目。 程式庫追蹤這些符號，並公開 （expose） 才能[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]物件管理員，以填入資料的工具。  
@@ -174,5 +169,4 @@ ms.locfileid: "51732954"
 ## <a name="see-also"></a>另請參閱  
  [舊版語言服務擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [如何︰將程式庫提供的符號清單公開至物件管理員](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
-
+ [如何：公開 （expose) 程式庫提供對物件管理員中的符號的清單](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

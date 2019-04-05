@@ -1,12 +1,9 @@
 ---
 title: 使用存放區檢視進行偵錯 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, store viewer
 - Domain-Specific Language, store
@@ -14,13 +11,13 @@ ms.assetid: 0178db2e-ae99-4ed3-9b87-8620fa9fa8e4
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 78a7cad2db2efa8057f2b95d117f93c59cc328cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 62425e6144e11f32d6933f134291fab01a15e6c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189070"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942748"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>使用存放區檢視進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,6 +54,3 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
   
 ## <a name="see-also"></a>另請參閱  
  [巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
-title: 如何： 將命令加入至捷徑功能表 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將命令加入至捷徑功能表 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
@@ -14,15 +11,15 @@ ms.assetid: cd550399-05fc-4dbf-be4c-f5094bb752ce
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7d15c1991ee70a0b1a163c8968e42fe450b7919
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c88c0e30ebe1953dcf5f6c9311edd2b3186f53ed
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833514"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58945300"
 ---
-# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：在捷徑功能表中加入命令
+# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>HOW TO：在捷徑功能表中新增命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以將功能表命令加入網域指定的語言 (DSL)，以便您的使用者可以執行專屬 DSL 的工作。 當使用者以滑鼠右鍵按一下圖表時，命令會出現在內容 (捷徑) 功能表上。 您可以定義命令，使它只在特定的情況下出現在功能表中。 例如，您可以使命令只在使用者按一下特定類型的項目或處於特定狀態的項目時才可見。  
@@ -38,7 +35,7 @@ ms.locfileid: "49833514"
    如需範例，請參閱[Visualization and Modeling SDK 網站](http://go.microsoft.com/fwlink/?LinkID=185579)。  
   
 > [!NOTE]
->  您也可以覆寫 CommandSet.cs 中的方法，即可修改部分現有命令 (例如剪下、貼上、全選和列印) 的行為。 如需詳細資訊，請參閱 <<c0> [ 如何： 修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
+>  您也可以覆寫 CommandSet.cs 中的方法，即可修改部分現有命令 (例如剪下、貼上、全選和列印) 的行為。 如需詳細資訊，請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
   
 ## <a name="defining-a-command-using-mef"></a>使用 MEF 定義命令  
  Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命令的替代方法。 它的主要用途是讓您或其他方可以擴充 DSL。 使用者可以選擇僅安裝 DSL，也可以安裝 DSL 和擴充功能。 然而，在 DSL 上啟用 MEF 的初始工作之後，MEF 也會減少定義捷徑功能表命令的工作。  
@@ -245,7 +242,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 ### <a name="define-what-the-command-does"></a>定義命令執行的動作  
  對每一個命令定義 `OnMenu...` 方法，執行使用者按一下功能表命令時的必要動作。  
   
- 如果您變更模型項目，您必須在異動內進行。 如需詳細資訊，請參閱 <<c0> [ 如何： 修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
+ 如果您變更模型項目，您必須在異動內進行。 如需詳細資訊，請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
   
  在本範例中，`ClassShape`、`ModelClass` 和 `Comment` 是在 DSL (衍生自「類別圖 DSL」範本) 中所定義的類型。  
   
@@ -286,7 +283,7 @@ private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
 }  
 ```  
   
- 如需有關如何在模型中，巡覽物件物件，以及有關如何建立物件和連結的詳細資訊，請參閱[如何： 修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
+ 如需有關如何在模型中，巡覽物件物件，以及有關如何建立物件和連結的詳細資訊，請參閱[How to:修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
   
 ### <a name="register-the-command"></a>註冊命令  
  在 C# 中重複執行您在 CommandSet.vsct 的 Symbols 區段中所做的 GUID 和 ID 值宣告：  
@@ -338,7 +335,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="troubleshooting"></a>疑難排解  
  **命令未出現在功能表中：**  
   
-- 命令只會出現在 Visual Studio 的偵錯執行個體中，直到安裝 DSL 套件為止。 如需詳細資訊，請參閱 <<c0> [ 部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
+- 命令只會出現在 Visual Studio 的偵錯執行個體中，直到安裝 DSL 套件為止。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
 - 請確定實驗範例具有此 DSL 的正確副檔名。 若要檢查副檔名，請在 Visual Studio 的主要執行個體中開啟 DslDefinition.dsl。 然後在 DSL Explorer 中，以滑鼠右鍵按一下 [編輯器] 節點，然後按一下 [屬性]。 在 [屬性] 視窗中，檢查 FileExtension 屬性。  
   
@@ -364,9 +361,6 @@ protected override IList<MenuCommand> GetMenuCommands()
   
 ## <a name="see-also"></a>另請參閱  
  [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [如何： 修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)   
+ [如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)   
  [部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)   
- [程式碼範例： 電路圖表](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-
+ [範例程式碼：電路圖表](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

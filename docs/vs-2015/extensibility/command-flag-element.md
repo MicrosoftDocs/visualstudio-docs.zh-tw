@@ -1,27 +1,22 @@
 ---
 title: 命令旗標項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - CommandFlag element (VSCT XML schema)
 - VSCT XML schema elements, CommandFlag
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98140c90288d8a65d22996940300a82b5e070308
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39b2377dd1599d58eac4ca967ca540d8ce0e6847
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809918"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945049"
 ---
 # <a name="command-flag-element"></a>Command Flag 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ ms.locfileid: "51809918"
 |DontCache|在開發環境並不會快取`QueryStatus`方法的結果，此命令。<br /><br /> 為功能表中，這會告訴功能表控制器不是用來快取其功能表項目的文字。 當功能表包含動態項目或動態文字的項目時，請使用這個旗標。<br /><br /> 適用於： `Button`， `Menu`|  
 |DynamicItemStart|表示動態清單的開頭。 這可讓環境，以建立清單，藉由後續呼叫`QueryStatus`直到傳回 OLECMDERR_E_UNSUPPORTED 旗標的清單項目上的方法。 這適用於項目，例如最近使用的 (MRU) 清單及視窗清單。<br /><br /> 適用於： `Button`|  
 |DynamicVisibility|此命令的可見性可以透過變更`QueryStatus`方法或透過在內容中包含的 GUID`VisibilityConstraints`一節。<br /><br /> 適用於顯示功能表和工具視窗工具列中，而不是會出現在主視窗的最上層工具列上的命令。 最上層工具列項目可以停用，但並未隱藏，請從傳回 OLECMDF_INVISIBLE 旗標時`QueryStatus`方法。 出現在工作視窗工具列的工具列命令可以隱藏。<br /><br /> 在功能表上，這個旗標也會指出，它應該會自動隱藏其所有成員都隱藏時。 這個旗標通常會指派給子功能表，因為已經有最上層功能表的這個行為。<br /><br /> 這個旗標應該要結合`DefaultInvisible`旗標。<br /><br /> 適用於： `Button`， `Combo`， `Menu`|  
-|篩選鍵|請參閱底下的篩選索引鍵主題[Combo 元素](../extensibility/combo-element.md)。<br /><br /> 適用於： `Combo`|  
+|FilterKeys|請參閱底下的篩選索引鍵主題[Combo 元素](../extensibility/combo-element.md)。<br /><br /> 適用於： `Combo`|  
 |FixMenuController|如果此命令位於功能表控制器，此命令永遠是預設值;亦即，每當在選取功能表控制器按鈕本身，是所選取的命令。 功能表控制器是否`TextIsAnchorCommand`加上旗標集，則功能表控制器也會在它的文字的命令，從`FixMenuController`旗標。<br /><br /> 只有一個命令，功能表控制器上的應該有`FixMenuController`旗標。 如果如此標示一個以上的命令，在功能表中的最後一個命令會變成預設命令。<br /><br /> 適用於： `Button`|  
 |IconAndText|在功能表和工具列上顯示的圖示和文字。<br /><br /> 適用於： `Button`， `Combo`， `Menu`|  
 |NoAutoComplete|已停用自動完成功能。<br /><br /> 適用於： `Combo`|  
@@ -68,7 +63,7 @@ ms.locfileid: "51809918"
 |RouteToDocs|此命令會路由至使用中文件。<br /><br /> 適用於： `Button`|  
 |StretchHorizontally|當設定這個旗標時，寬度會變成下拉式方塊的最小寬度，如果沒有在工具列上的空間，下拉式方塊會自動縮放以填滿可用空間。 會發生這種情況是只有水平停駐工具列，而且在工具列上的一個下拉式方塊可以使用旗標 （在第一個下拉式方塊以外的所有項，則會忽略此旗標）。<br /><br /> 適用於： `Combo`|  
 |TextMenuUseButton|使用`ButtonText`功能表的欄位。 預設欄位是`MenuText`如果有指定。<br /><br /> 適用於： `Button`|  
-|文字變更|命令或功能表變更的文字可以在執行階段，通常透過`QueryStatus`方法。<br /><br /> 適用於： `Button`， `Menu`|  
+|TextChanges|命令或功能表變更的文字可以在執行階段，通常透過`QueryStatus`方法。<br /><br /> 適用於： `Button`， `Menu`|  
 |TextChangesButton|適用於： `Button`|  
 |TextIsAnchorCommand|功能表控制站的功能表文字是來自預設 （錨點） 命令。 錨定命令是選取或閂鎖的最後一個命令。 如果未設定此旗標，功能表控制器會使用它自己`MenuText`欄位。 不過，按一下功能表控制器仍會啟用選取的最後一個命令，從該控制站。<br /><br /> 我們建議您將結合使用這個旗標`TextChanges`旗標。<br /><br /> 這個旗標僅適用於類型的功能表 MenuController 或 MenuControllerLatched。<br /><br /> 適用於： `Menu`|  
 |TextMenuCtrlUseMenu|使用`MenuText`功能表控制站上的欄位。 預設欄位是`ButtonText`。<br /><br /> 適用於： `Button`|  
@@ -84,4 +79,3 @@ ms.locfileid: "51809918"
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

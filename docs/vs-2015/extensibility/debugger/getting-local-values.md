@@ -1,14 +1,9 @@
 ---
 title: 取得區域變數值 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, local values
 - debugging [Debugging SDK], local values
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 471a01ff1e3e7519f25e77cedca12700b0a6222b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 10e5b03f2a9c275de3ac3d8259582aee771a20f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785818"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943447"
 ---
 # <a name="getting-local-values"></a>取得區域變數值
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -449,4 +444,3 @@ HRESULT FieldGetValue( in IDebugField* pfield, out VARIANT* pvarValue )
  [區域變數的範例實作](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [取得區域變數的屬性](../../extensibility/debugger/getting-local-properties.md)   
  [評估內容](../../extensibility/debugger/evaluation-context.md)
-

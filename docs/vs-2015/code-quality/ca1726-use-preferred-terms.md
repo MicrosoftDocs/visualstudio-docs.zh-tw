@@ -1,14 +1,9 @@
 ---
-title: Ca1726： 建議使用慣用的詞彙 |Microsoft Docs
-ms.custom: ''
+title: CA1726:使用慣用的詞彙 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -19,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c17514d00be7b0a3303b1c5bf703702fe564e0d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e31c459d2d5ce8dc114605716c09f8360eca23d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220515"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59000838"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726：建議使用慣用詞彙
+# <a name="ca1726-use-preferred-terms"></a>CA1726:建議使用慣用詞彙
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 的最新文件，請參閱 < [ca1726 建議： 使用慣用的詞彙](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms)docs.microsoft.com 上。  
+如需 Visual Studio 的最新文件，請參閱[ca1726 建議：使用慣用的詞彙](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms)docs.microsoft.com 上。  
   
 |||  
 |-|-|  
@@ -46,28 +41,28 @@ ms.locfileid: "49220515"
   
 |過時的詞彙|慣用的詞彙|  
 |-------------------|--------------------|  
-|不是|後面|  
+|不是|AreNot|  
 |已取消|已取消|  
 |無法|無法|  
 |ComPlus|EnterpriseServices|  
 |無法|CouldNot|  
 |Didnt|DidNot|  
-|Doesnt|不|  
-|不要|不要|  
+|Doesnt|DoesNot|  
+|不要|DoNot|  
 |旗標或旗標|沒有任何取代詞彙。 請勿使用。|  
 |還沒|HadNot|  
 |尚未|HasNot|  
 |您尚未|HaveNot|  
-|索引|Indexes|  
+|索引|索引|  
 |不是|IsNot|  
-|登入|登入|  
-|登出|登出|  
+|LogIn|LogOn|  
+|LogOut|LogOff|  
 |Shouldnt|ShouldNot|  
-|登入|登入|  
-|登出|登出|  
+|SignOn|SignIn|  
+|SignOff|SignOut|  
 |Wasnt|WasNot|  
 |未|WereNot|  
-|端可|出口|  
+|端可|WillNot|  
 |Wouldnt|WouldNot|  
 |可寫入|可寫入|  
   
@@ -79,4 +74,3 @@ ms.locfileid: "49220515"
   
 ## <a name="related-rules"></a>相關的規則  
  [命名警告](../code-quality/naming-warnings.md)
-

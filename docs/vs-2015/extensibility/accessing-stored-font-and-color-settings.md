@@ -1,14 +1,9 @@
 ---
 title: 存取預存的字型和色彩設定 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing stored settings
 - font and color control [Visual Studio SDK], persistence
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ee5ed57639127bd6c30d2e7e1373a56848eca504
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 88562da16a0c9803441b859b6498782e6e316fb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772816"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944625"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>存取預存的字型和色彩設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,4 +82,3 @@ ms.locfileid: "51772816"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>   
  [實作自訂類別和顯示項目](../extensibility/implementing-custom-categories-and-display-items.md)
-

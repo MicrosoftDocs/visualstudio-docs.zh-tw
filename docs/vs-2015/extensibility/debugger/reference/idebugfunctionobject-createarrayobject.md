@@ -1,14 +1,9 @@
 ---
-title: IDebugFunctionObject::CreateArrayObject |Microsoft Docs
-ms.custom: ''
+title: IDebugFunctionObject::CreateArrayObject | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugFunctionObject::CreateArrayObject
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a380e53c-15f1-401f-927f-f366eea789e6
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8330fa51b4ab0adcb11fdc5c20729a6f2b41ca52
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 53c1961eb1ed72580fc314d7a1542ddc926780f9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752978"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943171"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -80,4 +75,3 @@ int CreateArrayObject(
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
-

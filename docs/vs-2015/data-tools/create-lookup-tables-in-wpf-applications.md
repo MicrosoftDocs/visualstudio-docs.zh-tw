@@ -1,12 +1,9 @@
 ---
 title: 在 WPF 應用程式中建立查閱資料表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +21,13 @@ ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dbeaf44d767779281a3af4fe41f97a827a38c097
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303338"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58945275"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 應用程式中建立查閱資料表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +41,11 @@ ms.locfileid: "49303338"
   
 1.  將下列一種類型的相關資料的資料來源新增至您的專案：  
   
-    -   資料集或實體資料模型。 如需詳細資訊，請參閱 [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md)。  
+    -   資料集或實體資料模型。
+
+    -   WCF 資料服務，WCF 服務或 Web 服務。 如需詳細資訊，請參閱[如何：連線至服務中的資料](../data-tools/how-to-connect-to-data-in-a-service.md)。  
   
-    -   WCF 資料服務，WCF 服務或 Web 服務。 如需詳細資訊，請參閱 <<c0> [ 如何： 連接到服務中的資料](../data-tools/how-to-connect-to-data-in-a-service.md)。  
-  
-    -   物件。 如需詳細資訊，請參閱 <<c0> [ 如何： 連接到資料物件中](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)。  
+    -   物件。 如需詳細資訊，請參閱[如何：連接到資料物件中](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)。  
   
     > [!NOTE]
     >  您可以建立查閱資料表之前，必須存在兩個相關的資料表或物件當做專案資料來源。  
@@ -57,7 +54,7 @@ ms.locfileid: "49303338"
   
      如需有關有效置放目標的詳細資訊，請參閱 <<c0> [ 繫結 WPF 控制項新增至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
   
-3.  上**資料**功能表上，按一下**顯示資料來源**以開啟**Zdroje dat**視窗。  
+3.  按一下 [資料] 功能表上的 [顯示資料來源]，以開啟 [資料來源] 視窗。  
   
 4.  展開中的節點**Zdroje dat**  視窗中，直到您可以看到父資料表或物件和關聯的子資料表或物件。  
   
@@ -103,5 +100,4 @@ ms.locfileid: "49303338"
  [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [WPF 應用程式中顯示相關的資料](../data-tools/display-related-data-in-wpf-applications.md)   
- [逐步解說：顯示 WPF 應用程式中的相關資料](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [逐步解說：在 WPF 應用程式中顯示相關的資料](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

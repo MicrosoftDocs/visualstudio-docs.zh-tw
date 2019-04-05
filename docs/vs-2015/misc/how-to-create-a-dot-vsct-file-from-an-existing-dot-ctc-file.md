@@ -1,27 +1,22 @@
 ---
-title: 如何： 建立。從現有的 Vsct 檔案。Ctc 檔案 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立。從現有的 Vsct 檔案。Ctc 檔案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating based on a .ctc file
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
-manager: douge
-ms.openlocfilehash: e159fea34dc395ce2d7bded813f2d8feaa453006
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fd041724eaf13395ad2e85427de35faa86374abd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303481"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945132"
 ---
-# <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>如何：從現有的 .ctc 檔建立 .vsct 檔
+# <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>HOW TO：建立。從現有的 Vsct 檔案。Ctc 檔案
 您可以從現有命令資料表 .ctc 原始程式檔建立 XML .vsct 檔。 這樣做，您可以充分利用新的 XML [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令資料表 (VSCT) 編譯器格式。  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>從 .ctc 檔建立 .vsct 檔  
@@ -50,5 +45,5 @@ ms.locfileid: "49303481"
     >  您可以重新格式化 XML 註解來改善 .vsct 檔的可讀性。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 建立。Vsct 檔案](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
+ [如何：建立。Vsct 檔案](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
  [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

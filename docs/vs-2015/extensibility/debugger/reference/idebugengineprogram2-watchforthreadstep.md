@@ -1,14 +1,9 @@
 ---
 title: IDebugEngineProgram2::WatchForThreadStep |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEngineProgram2::WatchForThreadStep
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6532d3ab56e6f91528bd367c7ff492660409c6ca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 59489af368c2e95a2d3cc93edbd6f7ab02a1c156
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799518"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944081"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -73,4 +68,3 @@ int WatchForThreadStep( 
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
-

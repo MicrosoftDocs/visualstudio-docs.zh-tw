@@ -1,26 +1,21 @@
 ---
 title: Getting Started with 語言服務及編輯器擴充功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f09056d184256e2d62387af08c61186c6ff57c02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e247192b19e8ae2e2037281f4f89631d2ea78605
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735217"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944979"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>開始使用語言服務及編輯器延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ ms.locfileid: "51735217"
 ## <a name="running-extensions-in-the-experimental-instance"></a>執行實驗的執行個體中的擴充功能  
  藉由部署 （在 Windows Vista 和 Windows 7） 的下列實驗性資料夾中儲存的遊戲開發擴充功能時，您可以隔離您的 Visual Studio 版本：  
   
- *%LOCALAPPDATA%* \VisualStudio\10.0Exp\Extensions\\*公司*\\*ExtensionID*  
+ *%LOCALAPPDATA%* \VisualStudio\10.0Exp\Extensions\\*Company*\\*ExtensionID*  
   
  其中 *%LOCALAPPDATA%* 的身分登入的使用者名稱*公司*是公司擁有的延伸模組的名稱並*ExtensionID*是擴充功能的識別碼。  
   
@@ -89,10 +84,9 @@ ms.locfileid: "51735217"
   
  您也可以建立編輯器的 MEF 元件從 Visual Studio 封裝擴充功能。 下列逐步解說，如需詳細資訊，請參閱：  
   
--   [逐步解說︰搭配編輯器擴充功能使用 Shell 命令](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+-   [逐步解說：搭配編輯器擴充功能使用 Shell 命令](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
--   [逐步解說︰搭配編輯器擴充功能使用快速鍵](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+-   [逐步解說：編輯器擴充功能搭配使用攠摝坫](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>另請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)
-

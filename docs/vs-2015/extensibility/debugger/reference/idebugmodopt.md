@@ -1,26 +1,21 @@
 ---
-title: IDebugModOpt |Microsoft Docs
-ms.custom: ''
+title: IDebugModOpt | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugModOpt interface
 ms.assetid: ebd525e3-d140-4071-9d8c-41871de4125e
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2d5c1287e57d9bbc3b8b31fc1428a6544a867bea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66f499225d2b319f3678c88894a1217d90b10135
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735402"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944237"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,9 +39,8 @@ IDebugModOpt : IUnknown
 |[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|擷取一份選擇性修飾詞。|  
   
 ## <a name="requirements"></a>需求  
- 標頭： Sh.h  
+ 標頭：Sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間：Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
-
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll
