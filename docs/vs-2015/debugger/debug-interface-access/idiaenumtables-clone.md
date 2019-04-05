@@ -1,14 +1,9 @@
 ---
-title: 'Idiaenumtables:: Clone |Microsoft Docs'
-ms.custom: ''
+title: IDiaEnumTables::Clone | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: beb21109-b12c-44d8-8c1f-a332216b3713
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e6091a5bc501f8cfffb9d2a546c9421f9a223445
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: feb4fdbdfe734263fee97fd0e71dfe0c132f26d6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720949"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58938801"
 ---
 # <a name="idiaenumtablesclone"></a>IDiaEnumTables::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ HRESULT Clone ( 
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
-
-
-

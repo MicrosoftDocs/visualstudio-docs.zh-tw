@@ -1,25 +1,20 @@
 ---
 title: 其他、 XML、 文字編輯器、 選項對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a58ef682ec269ebf83cb72bfbd7801da1fc17c64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0181609f083aada564edb585f64ccdaaf104ed15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194495"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939050"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>其他、XML、文字編輯器、選項對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "49194495"
   
 ## <a name="auto-insert"></a>自動插入  
  **結尾標記**  
- 如果核取自動完成設定，當您鍵入右角括弧 (>) 以關閉開始標記時，如果標記尚未關閉，編輯器會自動加入結束標記。 這是預設行為。  
+ 如果已核取 自動完成設定，編輯器在您鍵入右角括弧 (>)，以關閉開始標記時，如果標記尚未關閉時自動加入結束標記。 這是預設行為。  
   
  空白項目的完成不會依賴自動完成設定。 您可以隨時輸入反斜線 (/) 以自動完成空白項目。  
   
@@ -46,13 +41,13 @@ ms.locfileid: "49194495"
   
  預設會選取。  
   
- **其他標記 （註解、 CDATA）**  
+ **其他標記 (註解、CDATA)**  
  會自動完成註解、CDATA、DOCTYPE、處理指示及其他標記。  
   
  預設會選取。  
   
 ## <a name="network"></a>網路  
- **自動下載 Dtd 和結構描述**  
+ **自動下載 DTD 及結構描述**  
  自動從 HTTP 位置下載結構描述及文件類型定義 (DTD)。 此功能會使用已啟用自動 Proxy 伺服器偵測的 System.Net。  
   
  預設會選取。  
@@ -70,6 +65,3 @@ ms.locfileid: "49194495"
 ## <a name="see-also"></a>另請參閱  
  [屬性視窗、 XML 文件屬性](../xml-tools/xml-document-properties-properties-window.md)   
  [XML 編輯器元件](../xml-tools/xml-editor-components.md)
-
-
-

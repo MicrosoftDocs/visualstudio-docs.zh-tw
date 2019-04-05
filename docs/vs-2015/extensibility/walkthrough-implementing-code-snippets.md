@@ -1,26 +1,21 @@
 ---
-title: 逐步解說： 實作程式碼片段 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：實作程式碼片段 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fe91fd4e80c14e9b4cf59136fa6d3e0e003f554
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 84ac1787e4905859eb3539c04dee3125a14e0617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752055"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939975"
 ---
-# <a name="walkthrough-implementing-code-snippets"></a>逐步解說︰實作程式碼片段
+# <a name="walkthrough-implementing-code-snippets"></a>逐步解說：實作程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以建立程式碼片段，並將它們包含在編輯器擴充功能，以便延伸模組的使用者可以將它們加入自己的程式碼。  
@@ -37,7 +32,7 @@ ms.locfileid: "51752055"
   
 3. 實作程式碼片段展開。  
   
-   本逐步解說根據[逐步解說： 顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
+   本逐步解說根據[逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
  從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
@@ -116,7 +111,7 @@ ms.locfileid: "51752055"
   
 #### <a name="to-register-code-snippets-for-a-specific-guid"></a>若要針對特定的 GUID 註冊程式碼片段  
   
-1.  開啟**CompletionTest**專案。 如需有關如何建立此專案的資訊，請參閱 <<c0> [ 逐步解說： 顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
+1.  開啟**CompletionTest**專案。 如需有關如何建立此專案的資訊，請參閱[逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
   
 2.  在專案中，新增下列組件的參考：  
   
@@ -254,4 +249,3 @@ ms.locfileid: "51752055"
 7.  在文字的不同部分，輸入 「 測試 」，然後按 TAB 鍵。 由於 「 測試 」 程式碼片段捷徑，應該再次插入程式碼片段。  
   
 ## <a name="next-steps"></a>後續步驟
-

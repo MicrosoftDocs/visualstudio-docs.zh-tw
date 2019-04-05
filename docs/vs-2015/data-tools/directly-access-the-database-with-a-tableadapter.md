@@ -1,12 +1,9 @@
 ---
 title: 直接存取資料庫以 tableadapter |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +25,13 @@ ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a592a185ad3dd01f881526e0b9471e3f5e969a94
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 372985c0878abbcfd42eab795cf8e2372bf65dd7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178447"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940510"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>以 TableAdapter 直接存取資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,4 +76,3 @@ ms.locfileid: "49178447"
   
 ## <a name="see-also"></a>另請參閱  
  [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)
-

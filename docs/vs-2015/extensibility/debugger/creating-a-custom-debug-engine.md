@@ -1,14 +1,9 @@
 ---
 title: 建立自訂偵錯引擎 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementing
 - debug engines, custom
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 516fda63a1a36e407a71cd6711ecdfabdc1e5e58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a0617d23b49af182504406417023b0d907cadf27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784687"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939429"
 ---
 # <a name="creating-a-custom-debug-engine"></a>建立自訂的偵錯引擎
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,9 +60,8 @@ ms.locfileid: "51784687"
  [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)  
  文件的偵錯工作階段中發生的事件呼叫的順序。  
   
- [如何：偵錯自訂的偵錯引擎](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ [如何：對自訂的偵錯引擎進行偵錯](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
  說明如何偵錯自訂的規定。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯工具的擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

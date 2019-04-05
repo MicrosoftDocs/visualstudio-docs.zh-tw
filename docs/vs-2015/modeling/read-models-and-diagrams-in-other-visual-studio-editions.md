@@ -1,25 +1,22 @@
 ---
 title: 讀取模型和其他 Visual Studio 版本中的圖表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
 ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6d104d8d92345ba56d390fdd7ad9b856432b4c92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757361"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940542"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中讀取模型和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,19 +55,16 @@ ms.locfileid: "51757361"
   
   您可以儲存這些變更。 如果您想要讓您變更其他使用者看到，您必須至少傳送更新過 **.layout**檔案。  
   
-##  <a name="RelatedTopics"></a> 相關的主題  
+##  <a name="RelatedTopics"></a> 相關主題  
   
 |標題|描述|  
 |-----------|-----------------|  
-|[分層圖：參考](../modeling/layer-diagrams-reference.md)|分層圖會顯示現有或提議之架構的結構。 撰寫程式碼時，可以針對分層圖自動進行驗證。|  
+|[圖層圖表：參考](../modeling/layer-diagrams-reference.md)|分層圖會顯示現有或提議之架構的結構。 撰寫程式碼時，可以針對分層圖自動進行驗證。|  
 |[UML 活動圖表：參考](../modeling/uml-activity-diagrams-reference.md)|活動圖顯示商務流程或軟體中的工作流程。|  
 |[UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)|類別圖顯示許多內容中所使用的類型和關聯性，例如程式碼、資料庫結構描述、通訊協定，或用來描述商務網域的詞彙。|  
 |[UML 元件圖表：參考](../modeling/uml-component-diagrams-reference.md)|元件圖顯示軟體設計中的不同部分和其介面。|  
 |[UML 順序圖表：參考](../modeling/uml-sequence-diagrams-reference.md)|循序圖顯示軟體設計中項目之間的互動。|  
-|[UML 使用案例圖：參考](../modeling/uml-use-case-diagrams-reference.md)|使用案例圖顯示系統使用者，以及他們可執行以達成特定目標的活動。|  
+|[UML 使用案例圖表：參考](../modeling/uml-use-case-diagrams-reference.md)|使用案例圖顯示系統使用者，以及他們可執行以達成特定目標的活動。|  
   
 ## <a name="see-also"></a>另請參閱  
  [建立應用程式模型](../modeling/create-models-for-your-app.md)
-
-
-

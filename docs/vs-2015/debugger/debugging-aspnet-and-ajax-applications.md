@@ -1,14 +1,9 @@
 ---
 title: 偵錯 ASP.NET 和 AJAX 應用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: 9d531913-541b-47b8-864d-138021fca0c6
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d3a600059f29d7e0034e4e64239798c32d721a1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d1322300992359f386a43c7feef41053611bb866
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785920"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940301"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>偵錯 ASP.NET 和 AJAX 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,13 +50,10 @@ ms.locfileid: "51785920"
  討論一些可幫助您進行 AJAX 程式碼偵錯的技術和工具。  
   
  [IntelliTrace](../debugger/intellitrace.md)  
- 使用 IntelliTrace 記錄和檢閱您的應用程式狀態記錄，可讓您更快速地進行程式碼偵錯，而不需要經常重新啟動應用程式。 您可以查看應用程式執行期間發生的事件和呼叫相關資訊，並且從這些時間點開始進行偵錯。 需要 Visual Studio Ultimate。  
+ 使用 IntelliTrace 記錄和檢視您的應用程式狀態記錄，可讓您更快速地進行程式碼偵錯，而不需要經常重新啟動應用程式。 您可以查看應用程式執行期間發生的事件和呼叫相關資訊，並且從這些時間點開始進行偵錯。 需要 Visual Studio Ultimate。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)   
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)
-
-
-

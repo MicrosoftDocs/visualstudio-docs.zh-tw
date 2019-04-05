@@ -1,14 +1,9 @@
 ---
-title: 如何： 使用功能表項目隱藏警告 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用功能表項目隱藏警告 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - warnings, suppressing
 - code analysis, suppressing warnings
@@ -17,17 +12,17 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1c756a5ab6516d78f5370622555898c98658e8b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 83fd93d2e1e2e5d99f7ea8eca9f5de4ce1b4c7f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211780"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939356"
 ---
-# <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>如何：使用功能表項目隱藏警告
+# <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>HOW TO：使用功能表項目隱藏警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-附註]
+注意]
 >  在來源中隱藏項目不支援適用於網站專案。  
   
  若要隱藏程式碼分析警告，您可以使用 [程式碼分析] 視窗。 隱藏警告不同時停用它。 當您隱藏警告時，它只適用於特定的執行個體的違規。 在 [錯誤清單] 視窗中仍會報告相同的警告的其他違規。  
@@ -48,6 +43,3 @@ ms.locfileid: "49211780"
   
 > [!NOTE]
 >  沒有為目標的隱藏項目會出現在全域隱藏項目檔案。
-
-
-

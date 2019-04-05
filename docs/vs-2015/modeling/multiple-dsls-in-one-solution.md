@@ -1,36 +1,33 @@
 ---
 title: 一個方案中的多個 Dsl |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 7e668620-6217-4e87-aea7-e9036776c8e4
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 8bf5e3d69b67cf51c1e70ec8ffe9e91d87a1dcbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 76f34194381df92097e8dc2c42f1bf57a83f484b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820170"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939575"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>一個方案中有多個 DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以將數個 DSL 封裝成單一方案的一部分，以便能夠一起安裝。  
   
- 用來整合多個 DSL 的方法有幾種。 如需詳細資訊，請參閱[使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)並[如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)並[自訂複製行為](../modeling/customizing-copy-behavior.md)。  
+ 用來整合多個 DSL 的方法有幾種。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)和[How to:新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)並[自訂複製行為](../modeling/customizing-copy-behavior.md)。  
   
 ### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>在同一個方案中建置多個 DSL  
   
 1. 建立兩個或多個 DSL 方案和一個 VSIX 專案，然後將所有專案加入至一個方案。  
   
-   -   若要建立新的 VSIX 專案： 在**新的專案**對話方塊中，選取**Visual C#**，**擴充性**， **VSIX 專案**。  
+   -   若要建立新的 VSIX 專案：在 **新的專案**對話方塊中，選取**視覺化C#** ，**擴充性**， **VSIX 專案**。  
   
    -   在 VSIX 方案目錄中建立兩個或多個 DSL 方案。  
   
@@ -66,8 +63,5 @@ ms.locfileid: "49820170"
   
 ## <a name="see-also"></a>另請參閱  
  [使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
- [如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [自訂複製行為](../modeling/customizing-copy-behavior.md)
-
-
-

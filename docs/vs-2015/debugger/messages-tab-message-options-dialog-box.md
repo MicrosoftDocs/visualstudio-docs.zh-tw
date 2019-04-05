@@ -1,27 +1,22 @@
 ---
 title: 訊息索引標籤中，訊息選項對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - message options, Messages
 ms.assetid: fb9fa211-e82c-40a5-9e4b-ba8de07313c0
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b44a5932d178fe8432273038d677f5831d568146
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a9eb1c88d935fa307e8b86a9a75da423bc08111c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793941"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939703"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>訊息選項對話方塊、訊息索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51793941"
   
  下列設定位於**訊息** 索引標籤：  
   
- **若要檢視的訊息**  
+ **要檢視的訊息**  
  選取檢視特定的訊息。 當您建立新的 [訊息] 視窗時，它可以顯示所有訊息。 當您篩選來自**訊息**索引標籤上，該篩選條件只適用於新的訊息，而不顯示在 [Windows] 檢視中的訊息。  
   
  **訊息群組**  
@@ -48,8 +43,5 @@ ms.locfileid: "51793941"
   
   灰色的核取方塊內**訊息群組**指出**訊息，以檢視**清單方塊是否變更過的該群組中的訊息; 不是所有的訊息類型，該群組中選取。  
   
-  **將設定儲存為預設值**  
+  **將設定另存成預設**  
   儲存目前的設定，以供稍後使用，做為訊息搜尋選項。 結束 Spy + + 時，也會儲存這些設定。
-
-
-

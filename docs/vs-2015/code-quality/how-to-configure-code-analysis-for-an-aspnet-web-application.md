@@ -1,14 +1,9 @@
 ---
-title: 如何： 設定 ASP.NET Web 應用程式的程式碼分析 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：設定 ASP.NET Web 應用程式的程式碼分析 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.asp
 ms.assetid: b3000b31-fd9d-489e-81a2-a4bee49453ba
@@ -16,14 +11,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bf7450341dd166977d67639f4f3762fae6ef89c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67cfc63c74755b10d7b3d274c0925d83b9a2d24c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283903"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940127"
 ---
-# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>如何：設定 ASP.NET Web 應用程式的程式碼分析
+# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>HOW TO：設定 ASP.NET Web 應用程式的程式碼分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]及[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]您可以從程式碼分析的清單中選取*規則集*要套用至[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Web 應用程式。 預設規則設為 Microsoft Mininimum 建議規則。 您可以選取要套用至網站所設定的另一個規則。  
@@ -51,6 +46,3 @@ ms.locfileid: "49283903"
     -   選取  **\<瀏覽 >** ，指定現有的自訂規則集不在清單中。  
   
     -   定義自訂規則集。 如需詳細資訊，請參閱 <<c0> [ 建立自訂規則集](../code-quality/creating-custom-code-analysis-rule-sets.md)。
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 使用 MSBuild |Microsoft Docs
-ms.custom: ''
+title: 使用 MSBuild | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, compiling with MSBuild
 - MSBuild, extensibility
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dba9feb50ddab868d81eb61565c34a8c694c2a69
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a4338649885c75a81fdd08d5d4dd0ca4d00158ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768177"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940483"
 ---
 # <a name="using-msbuild"></a>使用 MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,6 +59,5 @@ MSBuild 會提供定義完善且可延伸的 XML 格式，來建立專案檔案�
   
 ## <a name="see-also"></a>另請參閱  
  [MSBuild 參考](../../msbuild/msbuild-reference.md)   
- [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)   
+ [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)   
  [自訂工具](../../extensibility/internals/custom-tools.md)
-

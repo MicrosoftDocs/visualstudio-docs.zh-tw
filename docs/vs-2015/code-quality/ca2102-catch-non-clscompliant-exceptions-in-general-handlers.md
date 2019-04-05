@@ -1,14 +1,9 @@
 ---
-title: Ca2102： 必須使用一般處理常式攔截非 CLSCompliant 例外狀況 |Microsoft Docs
-ms.custom: ''
+title: CA2102:一般處理常式攔截非 CLSCompliant 例外狀況 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2102
 - CatchNonClsCompliantExceptionsInGeneralHandlers
@@ -19,14 +14,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5c2797b32bbcabd1c63fbfd510aec05c8bf54d21
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd018c927981c4a067e4dd0d52ef699490caa3fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877412"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58940681"
 ---
-# <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102：在一般處理常式中攔截非 CLSCompliant 的例外狀況
+# <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102:必須使用一般處理常式攔截非 CLSCompliant 例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -84,10 +79,7 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 ```
 
 ## <a name="related-rules"></a>相關的規則
- [CA1031：不要攔截一般例外狀況類型](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+ [CA1031:不要攔截一般例外狀況類型](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
 ## <a name="see-also"></a>另請參閱
- [例外狀況和例外狀況處理](http://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe （IL 組譯工具）](http://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [覆寫安全性檢查](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)[語言獨立性以及與語言無關的元件](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
-
-
-
+ [例外狀況和例外狀況處理](http://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe （IL 組譯工具）](http://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [覆寫安全性檢查](http://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28)[語言獨立性以及與語言無關的元件](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
