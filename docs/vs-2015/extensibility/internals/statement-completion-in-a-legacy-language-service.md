@@ -1,34 +1,29 @@
 ---
 title: 舊版語言服務中的陳述式完成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - statement completion
 - language services, statement completion
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d88ebe84ec3ec5efb1d7c4ac04ebaee50ac65b97
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66ca9a6176fc17784e79e5c4f3ad633a8c685854
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796489"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942791"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>舊版語言服務中的陳述式完成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 完成陳述式是由其語言服務可協助使用者完成語言關鍵字或其已開始在核心編輯器中輸入的項目程序。 本主題討論陳述式完成的運作方式，以及如何在您的語言服務中實作。  
   
- 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作陳述式完成的新方式，請參閱[逐步解說： 顯示陳述式完成](../../extensibility/walkthrough-displaying-statement-completion.md)。  
+ 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作陳述式完成的新方式，請參閱[逐步解說：顯示陳述式完成](../../extensibility/walkthrough-displaying-statement-completion.md)。  
   
 > [!NOTE]
 >  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  
@@ -45,4 +40,3 @@ ms.locfileid: "51796489"
   
 ## <a name="see-also"></a>另請參閱  
  [攔截舊版語言服務命令](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
-

@@ -1,25 +1,22 @@
 ---
-title: 如何： 指派預存程序來執行更新、 插入和刪除 （O-R 設計工具） |Microsoft Docs
-ms.custom: ''
+title: HOW TO：指定預存程序，以執行更新、 插入和刪除 （O-R 設計工具） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f65af06a275dc50afafc70fd95c9b93d9bba458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 957c1fe49d222a691160eadc4b2cf08f8a20a65a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232709"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942928"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何： 指派預存程序來執行更新、 插入和刪除 （O/R 設計工具）
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>HOW TO：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -38,7 +35,7 @@ ms.locfileid: "49232709"
   
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>若要指派預存程序以覆寫實體類別的預設行為  
   
-1.  開啟**LINQ to SQL**設計工具中的檔案。 (按兩下中的.dbml 檔案**方案總管 中**。)  
+1.  在設計工具中開啟 **LINQ to SQL** 檔案。 (按兩下中的.dbml 檔案**方案總管 中**。)  
   
 2.  在 **伺服器總管**/**資料庫總管**，依序展開**預存程序**並找出您想要用於 Insert、 Update、 預存程序和/或刪除的實體類別的命令。  
   
@@ -48,31 +45,29 @@ ms.locfileid: "49232709"
   
 4.  選取想要使用預存程序執行更新的實體類別。  
   
-5.  在 [**屬性**] 視窗中，選取要覆寫的命令 (**插入**， **Update**，或**刪除**)。  
+5.  在 [屬性] 視窗中，選取要覆寫的命令 (**Insert**、**Update** 或 **Delete**)。  
   
-6.  按一下省略符號 （...） 文字旁邊**使用執行階段**來開啟**設定行為** 對話方塊。  
+6.  按一下 [使用執行階段] 字組旁邊的省略符號 (...)，以開啟 [設定行為] 對話方塊。  
   
-7.  選取 **來自訂**。  
+7.  選取 [自訂]。  
   
-8.  選取所需的預存程序中**自訂**清單。  
+8.  在 [自訂] 清單中，選取所需的預存程序。  
   
-9. 檢查清單**方法引數**並**類別內容**確認**方法引數**對應至適當**類別內容**. 對應的原始方法引數 (Original_*ArgumentName*) 至原始屬性 (*PropertyName* (Original)) 的 Update 和 Delete 命令。  
+9. 檢查 [方法引數] 和 [類別屬性] 清單，以確認 [方法引數] 對應至適當的 [類別屬性]。 對應的原始方法引數 (Original_*ArgumentName*) 至原始屬性 (*PropertyName* (Original)) 的 Update 和 Delete 命令。  
   
     > [!NOTE]
     >  根據預設，方法引數會對應至同名的類別屬性。 如果屬性名稱變更，使得資料表與實體類別之間不再對應，則您可能需要選取當 O/R 設計工具無法判斷正確的對應時，所要對應的對等類別屬性。  
   
-10. 按一下  **確定**或是**套用**。  
+10. 按一下 [確定] 或 [套用]。  
   
     > [!NOTE]
-    >  您可以繼續設定每個類別/行為組合的行為，只要您按**套用**每一項變更之後。 如果您變更了類別或行為再按一下 **套用**、 提供讓您套用任何變更將會出現警告對話方塊。  
+    >  完成每一項變更後按一下 [套用]，即可繼續設定每個類別/行為組合的行為。 如果您變更了類別或行為再按一下 **套用**、 提供讓您套用任何變更將會出現警告對話方塊。  
   
      若要還原為使用預設執行階段邏輯進行更新，請按一下 Insert、 Update、 旁邊的省略符號或 Delete 命令中的**屬性** 視窗，然後選取**使用執行階段**在**設定行為** 對話方塊。  
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)   
- [逐步解說： 建立 LINQ to SQL 類別 （O-R 設計工具）](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [逐步解說： 建立更新 Northwind Customers 資料表的項目預存程序](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md)   
+ [逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [插入、更新和刪除作業](http://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)
-

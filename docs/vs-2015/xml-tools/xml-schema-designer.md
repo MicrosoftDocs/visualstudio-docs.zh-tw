@@ -1,25 +1,20 @@
 ---
 title: XML 結構描述設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ffdf63ee-faa6-45b7-bbf9-a5644dc8aca2
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 13f35c5bdadd74935f8b29d4b59031337f880ae3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fe81190bca91aba4655e551026458c9047739d66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236830"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944806"
 ---
 # <a name="xml-schema-designer"></a>XML 結構描述設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ XML 結構描述設計工具 (XSD 設計工具) 是一種圖形化工具，可�
   
  [XML 結構描述設計工具工作](../xml-tools/xml-schema-designer-tasks.md)  
  說明如何使用 XML 結構描述設計工具完成一般工作。
-
-
-

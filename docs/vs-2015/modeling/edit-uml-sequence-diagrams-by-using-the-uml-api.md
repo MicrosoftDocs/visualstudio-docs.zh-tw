@@ -1,25 +1,22 @@
 ---
 title: 使用 UML API 編輯 UML 循序圖 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML activity diagrams, programming
 ms.assetid: 8cdd0203-85ef-4c62-9abc-da4cb26fa504
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f68cf87a7f45b906c6de43e0a837d49132b7a3e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725565"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945113"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>使用 UML API 編輯 UML 循序圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +55,7 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
  如需詳細資訊，請參閱 <<c0> [ 在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
   
 ### <a name="getting-the-context"></a>正在取得內容  
- 如果您正在於循序圖中將互動編輯為命令或軌跡處理常式的一部分，您可以取得內容的參考。 例如：  
+ 如果您正在於循序圖中將互動編輯為命令或軌跡處理常式的一部分，您可以取得內容的參考。 例如:   
   
 ```  
 [SequenceDesignerExtension]  
@@ -127,7 +124,7 @@ public void Execute (IMenuCommand command)
   
   當您插入新項目或移動現有項目時，這一點格位重要。 必須在您執行其中一項作業之後，這些項目才會出現在圖表的正確位置上。 您只需要在完成一連串變更時，呼叫一次其中一項作業。  
   
-  若要避免讓在您命令之後執行復原的使用者困惑，請使用 `ILinkedUndoTransaction` 括住您的變更和最終 `Layout()` 或 `UpdateShapePositions()` 作業。 例如：  
+  若要避免讓在您命令之後執行復原的使用者困惑，請使用 `ILinkedUndoTransaction` 括住您的變更和最終 `Layout()` 或 `UpdateShapePositions()` 作業。 例如:   
   
 ```  
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  
@@ -187,7 +184,7 @@ System.Diagnostics.Debug.Assert(
 ```  
   
 ### <a name="to-create-messages"></a>建立訊息  
- 若要建立訊息，您必須識別來源和目標生命線上的插入點。 例如：  
+ 若要建立訊息，您必須識別來源和目標生命線上的插入點。 例如:   
   
 ```  
 interaction.CreateMessage( sourceInsertionPoint,   
@@ -256,6 +253,3 @@ cf.CreateInteractionOperand(cf.Operands.Last(), true);
  [定義自訂模型工具箱項目](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)   
  [使用 UML API 進行程式設計](../modeling/programming-with-the-uml-api.md)
-
-
-

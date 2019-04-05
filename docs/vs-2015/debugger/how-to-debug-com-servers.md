@@ -1,14 +1,9 @@
 ---
-title: 如何： 偵錯 COM 伺服器 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：偵錯 COM 伺服器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -27,15 +22,15 @@ ms.assetid: 9f013c2b-0306-4b34-ba7f-d4445a874da1
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 527356ba788e7e69ba3e1542e3b98ead8efbf331
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a7548b100e5bbcccd75a3cd5e7d94d6e7f72ed48
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727189"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943554"
 ---
-# <a name="how-to-debug-com-servers"></a>如何：偵錯 COM 伺服器
+# <a name="how-to-debug-com-servers"></a>HOW TO：針對 COM 伺服器進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 偵錯 COM 伺服器應用程式會有一組特有難以解決的問題。  
@@ -51,10 +46,7 @@ ms.locfileid: "51727189"
 3.  啟動容器應用程式 (Container Application)。  
   
 ## <a name="see-also"></a>另請參閱  
- [COM 和 ActiveX 進行偵錯](../debugger/com-and-activex-debugging.md)   
- [如何： 使用 RPC 偵錯對 COM 用戶端和伺服器](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+ [對 COM 和 ActiveX 進行偵錯](../debugger/com-and-activex-debugging.md)   
+ [如何：使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [COM 伺服器和容器偵錯](../debugger/com-server-and-container-debugging.md)   
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)
-
-
-

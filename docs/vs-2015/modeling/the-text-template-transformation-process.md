@@ -1,25 +1,22 @@
 ---
 title: 文字範本轉換流程 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
 ms.assetid: 80b3f0e0-49e7-4865-a1ac-dba068abe96b
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cf7f84d8900443d6fec9b84995c569ef21ed0e86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203771"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945125"
 ---
 # <a name="the-text-template-transformation-process"></a>文字範本轉換流程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +38,7 @@ ms.locfileid: "49203771"
 ## <a name="the-engine"></a>引擎  
  引擎會收到範本做為字串，從主應用程式，用來處理轉換程序中使用的所有檔案。 然後，引擎會要求主應用程式找出任何自訂指示詞處理器和環境的其他方面。 然後，引擎會編譯，並執行產生的轉換類別。 引擎會傳回產生的文字至主機，通常會將文字儲存至檔案。  
   
-## <a name="the-host"></a>主應用程式  
+## <a name="the-host"></a>主機  
  主應用程式會負責任何與轉換處理序，包括下列外部環境相關的項目：  
   
 -   尋找文字和二進位檔案要求的引擎或指示詞處理器。 主應用程式可以搜尋目錄和全域組件快取，以找出組件。 主應用程式可以找到自訂指示詞處理器的程式碼引擎。 主機也可以找出並讀取文字檔案然後傳回其內容為字串。  
@@ -68,6 +65,3 @@ ms.locfileid: "49203771"
  `<#@ import namespace="System.Text" #>`  
   
  標準的指示詞處理器會將轉換為`using`產生的轉換類別中的陳述式。 然後您可以使用`StringBuilder`類別的未限定為您的範本程式碼其餘部分`System.Text.StringBuilder`。
-
-
-

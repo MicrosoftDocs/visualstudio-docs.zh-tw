@@ -1,11 +1,8 @@
 ---
-title: 如何： 在工作流程 （舊版） 中設定中斷點 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：在工作流程 （舊版） 中設定中斷點 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - breakpoints, setting in workflows
@@ -16,20 +13,20 @@ ms.assetid: 78e0be39-3e99-487c-bfef-19db0daf6f42
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 158592ccef331c541bf27494856cfa1314b21f88
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1e3f7e4ffefcd6dc8509cf4c787af67c9a03305f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252547"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945871"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>HOW TO：在工作流程中設定中斷點 (舊版)
 本主題描述如何在使用舊版 [!INCLUDE[wf](../includes/wf-md.md)] 建置的 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 應用程式中設定中斷點。 當您的 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 應用程式需要以 [!INCLUDE[wf2](../includes/wf2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
   
  當您在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中使用舊版 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 來建置 [!INCLUDE[wf2](../includes/wf2-md.md)] 應用程式時，您可以在 C# 和 Visual Basic 程式碼中設定中斷點，就像在 Visual Studio 中一樣。 如預期般，工作流程執行會在您設定的每個中斷點上停止。  
   
- 中斷點有三種狀態：*暫止*，*繫結*，並*錯誤*。 設定中斷點時，狀態為「擱置」，由空心的紅色圖示表示。 執行階段已載入工作流程類型時，中斷點會變成「繫結」狀態，由實心的紅色圖示表示。 如果您指定錯誤的中斷點格式，且活動名稱無效，則會顯示錯誤視窗。 中斷點仍會新增至中斷點視窗，但以小的 "x" 記號標示。  
+ 中斷點有三種狀態：*暫止*，*繫結*，以及*錯誤*。 設定中斷點時，狀態為「擱置」，由空心的紅色圖示表示。 執行階段已載入工作流程類型時，中斷點會變成「繫結」狀態，由實心的紅色圖示表示。 如果您指定錯誤的中斷點格式，且活動名稱無效，則會顯示錯誤視窗。 中斷點仍會新增至中斷點視窗，但以小的 "x" 記號標示。  
   
  在工作流程設計介面中，您可以使用以下方式在活動中設定中斷點：  
   

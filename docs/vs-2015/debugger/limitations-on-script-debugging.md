@@ -1,14 +1,9 @@
 ---
 title: 指令碼偵錯的限制 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,18 +17,18 @@ ms.assetid: 280eead5-693c-47af-967f-dfe9d23f84db
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 767322cd60ce1d1e455903b357a062cc1f31927d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c51bb5edf5a139d2d19350c6a7a83c0ad3277ce4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753458"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945279"
 ---
 # <a name="limitations-on-script-debugging"></a>指令碼偵錯的限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 支援用戶端指令碼偵錯，但受限於本主題所述的限制。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 支援對用戶端指令碼進行偵錯，但受本主題所述的限制。  
   
 ## <a name="limitations-on-breakpoint-mapping-with-client-side-script"></a>用戶端指令碼的中斷點對應限制  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可讓您在執行階段轉換為用戶端的伺服器端 ASPX 或 HTML 檔中設定中斷點。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會將伺服器端檔案的中斷點對應到用戶端檔案中對應的中斷點，但會有下列限制：  
@@ -56,6 +51,3 @@ i++ ;
 i ++; // I added a comment, so this line is now unique  
 i ++;  
 ```
-
-
-

@@ -1,11 +1,8 @@
 ---
 title: 工作流程設計工具殼層功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDShellFeatures.UI
@@ -13,16 +10,16 @@ ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0f75d545055a4657ed4cefdbafe211ea2f34680f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6b432dd6dd0a19f6509ad1ff133424fcbc387fb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944224"
 ---
 # <a name="workflow-designer-shell-features"></a>工作流程設計工具殼層功能
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] 是由三個主要 UI 區域構成：設計工具介面、上方的階層連結列和下方的殼層。 位於畫面上方的階層連結列，會用於顯示目前根活動的祖系清單。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][如何： 使用軌跡瀏覽](../workflow-designer/how-to-use-breadcrumb-navigation.md)。 位於畫面中央的設計介面，會用於撰寫工作流程。 位於畫面下方的殼層，會包含許多管理目前檢視的按鈕。  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] 是由三個主要 UI 區域構成：設計工具介面、上方的階層連結列和下方的殼層。 位於畫面上方的階層連結列，會用於顯示目前根活動的祖系清單。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][如何：使用階層連結巡覽](../workflow-designer/how-to-use-breadcrumb-navigation.md)。 位於畫面中央的設計介面，會用於撰寫工作流程。 位於畫面下方的殼層，會包含許多管理目前檢視的按鈕。  
   
 ## <a name="shell-features"></a>殼層功能  
  殼層列的右側具有按鈕，可用來縮放工作流程，將工作流程的內容調整為符合畫面的大小，以及顯示或隱藏概觀圖。 您也可使用鍵盤快速鍵 CTRL++ 和 CTRL+- 來縮放工作流程。  
