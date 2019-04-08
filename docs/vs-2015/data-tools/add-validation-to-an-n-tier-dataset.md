@@ -128,7 +128,7 @@ End Sub
   
 3.  加入部分類別宣告內的使用者程式碼。  
   
-4.  下列程式碼示範如何加入使用者程式碼，以驗證期間<xref:System.Data.DataTable.RowChanging>Visual basic 中的事件：  
+4.  下列程式碼示範如何加入使用者程式碼，以驗證期間<xref:System.Data.DataTable.RowChanging>Visual Basic 中的事件：  
   
     ```vb  
     Partial Class OrdersDataTable  
