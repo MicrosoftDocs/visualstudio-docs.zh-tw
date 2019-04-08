@@ -1,27 +1,22 @@
 ---
 title: MenuCommand 對比OleMenuCommands |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, creating in VSPackages
 - command buttons, creating and placing
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
-manager: douge
-ms.openlocfilehash: 3b548a43cabcb097250411c3475f47774c840511
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2681b407bd7fd742e4085bb71b22025f533e2210
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911904"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58944590"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand 對比OleMenuCommand
 您可以藉由衍生自 <xref:System.ComponentModel.Design.MenuCommand> 或 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，然後實作適當的事件處理常式來建立功能表命令。 在大多數情況下，您可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就如同 VSPackage 專案範本一樣，但有時候您可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
@@ -149,7 +144,7 @@ ms.locfileid: "49911904"
   
      <xref:System.ComponentModel.Design.MenuCommand> 適用於靜態命令。 動態功能表項目顯示需要 QueryStatus 事件處理常式。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 會加入 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件，此事件會在命令的主功能表開啟時發生，另外也會加入一些其他屬性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。  
   
-     封裝範本所建立的命令，依預設會在封裝類別的 `Initialize()` 方法中，傳遞到 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件。  
+     封裝範本所建立的命令，依預設會在封裝類別的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 方法中，傳遞到 `Initialize()` 物件。  
   
 4.  <xref:System.ComponentModel.Design.MenuCommand> 適用於靜態命令。 動態功能表項目顯示需要 QueryStatus 事件處理常式。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 會加入 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件，此事件會在命令的主功能表開啟時發生，另外也會加入一些其他屬性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。  
   
@@ -184,7 +179,7 @@ ms.locfileid: "49911904"
   
     `EventHandler` 物件會得到在查詢功能表命令的狀態時所呼叫之方法的名稱。  
   
-2. 實作命令的查詢狀態處理常式方法。 `object` `sender` 參數可以轉換成 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，用來設定功能表命令的各種屬性，包括文字。 下表顯示 <xref:System.ComponentModel.Design.MenuCommand> 類別上的屬性 (MPF 類別 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 衍生自此類別)，這些屬性對應至 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 旗標。  
+2. 實作命令的查詢狀態處理常式方法。  `object` `sender` 參數可以轉換成 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，用來設定功能表命令的各種屬性，包括文字。 下表顯示 <xref:System.ComponentModel.Design.MenuCommand> 類別上的屬性 (MPF 類別 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 衍生自此類別)，這些屬性對應至 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 旗標。  
   
    |MenuCommand 屬性|OLECMDF 旗標|  
    |--------------------------|------------------|  
@@ -210,7 +205,7 @@ ms.locfileid: "49911904"
   
 1. 針對有效的命令傳回 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 。  
   
-2. 設定 `prgCmds` 參數的 `cmdf` 項目。  
+2. 設定 `cmdf` 參數的 `prgCmds` 項目。  
   
     `cmdf` 項目的值是來自 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 列舉值的邏輯聯集，藉由使用邏輯 OR (`|`) 運算子合併。  
   
@@ -238,7 +233,7 @@ ms.locfileid: "49911904"
   
       `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
   
-   - 如果命令使用 `TEXTCHANGES` 旗標，請將 `pCmdText` 參數的 `rgwz` 項目設為命令的新文字，並將 `pCmdText` 參數的 `cwActual` 項目設為命令字串的大小。  
+   - 如果命令使用 `TEXTCHANGES` 旗標，請將 `rgwz` 參數的 `pCmdText` 項目設為命令的新文字，並將 `cwActual` 參數的 `pCmdText` 項目設為命令字串的大小。  
   
      對於錯誤狀況， <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法必須處理下列錯誤情況：  
   

@@ -33,7 +33,7 @@ ms.locfileid: "58944561"
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因
- 公用類型是`sealed`(`NotInheritable` Visual basic 中)，並宣告受保護的成員或受保護的巢狀型別。 此規則不會報告的違規<xref:System.Object.Finalize%2A>必須遵循這個模式的方法。
+ 公用類型是`sealed`(`NotInheritable` Visual Basic 中)，並宣告受保護的成員或受保護的巢狀型別。 此規則不會報告的違規<xref:System.Object.Finalize%2A>必須遵循這個模式的方法。
 
 ## <a name="rule-description"></a>規則描述
  類型會宣告 protected 成員，如此繼承的類型即可存取或覆寫成員。 根據定義，您無法繼承自密封型別，也就是說，受保護的方法，密封類型上的無法呼叫。

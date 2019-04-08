@@ -18,7 +18,7 @@ ms.locfileid: "55930996"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>HOW TO：啟用和停用 managed 程式碼的完整解決方案分析
 
-*完整解決方案分析*是一種 Visual Studio 功能，可讓您查看程式碼分析問題，只在開啟的視覺效果C#或 Visual Basic 檔案中您的方案，或已關閉的程式碼檔案中。 根據預設，會完整解決方案分析*啟用*Visual basic 中，並*停用*視覺效果C#。
+*完整解決方案分析*是一種 Visual Studio 功能，可讓您查看程式碼分析問題，只在開啟的視覺效果C#或 Visual Basic 檔案中您的方案，或已關閉的程式碼檔案中。 根據預設，會完整解決方案分析*啟用*Visual Basic 中，並*停用*視覺效果C#。
 
 它可用來查看所有的檔案中的所有問題，但它也是令人分心。 向下中，如果您的解決方案非常大或有許多檔案，它會減緩 Visual Studio。 若要限制顯示的問題數目，並改善 Visual Studio 效能，您可以停用完整解決方案分析。 必要時您可以輕鬆地重新啟用這項功能。
 
