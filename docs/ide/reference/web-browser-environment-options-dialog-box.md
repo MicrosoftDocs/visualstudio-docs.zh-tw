@@ -21,14 +21,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9166cc6ae8695cc4e00688e4add998d61b394701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700000"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647280"
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>選項對話方塊、環境、Web 瀏覽器
+# <a name="options-dialog-box-environment--web-browser"></a>選項對話方塊：環境 \> 網頁瀏覽器
 
 設定內部網頁瀏覽器和 Internet Explorer 的選項。 若要存取這個對話方塊，請按一下 [工具] 功能表中的 [選項]，展開 [環境] 資料夾，然後選取 [網頁瀏覽器]。
 
@@ -50,11 +50,11 @@ ms.locfileid: "56700000"
 
 設定當您在網頁上從內部網頁瀏覽器選擇 [檢視原始檔] 時，用來開啟網頁的編輯器。
 
--   **原始檔編輯器**：選取即可在[編輯器](../../ide/writing-code-in-the-code-and-text-editor.md)中檢視原始檔。
+- **原始檔編輯器**：選取即可在[編輯器](../../ide/writing-code-in-the-code-and-text-editor.md)中檢視原始檔。
 
--   **HTML 編輯器**：選取即可在 [HTML 設計工具](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)中檢視原始檔。 使用此選項可在下列兩種檢視之一編輯網頁：設計檢視或標準文字原始檔檢視。
+- **HTML 編輯器**：選取即可在 [HTML 設計工具](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)中檢視原始檔。 使用此選項可在下列兩種檢視之一編輯網頁：設計檢視或標準文字原始檔檢視。
 
--   **外部編輯器**：選取即可在其他編輯器中檢視原始檔。 請指定您選擇的任何編輯器路徑，例如 Notepad.exe。
+- **外部編輯器**：選取即可在其他編輯器中檢視原始檔。 請指定您選擇的任何編輯器路徑，例如 Notepad.exe。
 
 ## <a name="internet-explorer-options"></a>Internet Explorer 選項
 

@@ -1,14 +1,9 @@
 ---
 title: 使用儲存的 IntelliTrace 資料 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.norepro
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
 caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f10878e9717ca90725455d5c66f6f9a015040dc1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: eef8a11f21464ea58aec8b6fb239df3ff28a40b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723613"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58942343"
 ---
 # <a name="using-saved-intellitrace-data"></a>使用儲存的 IntelliTrace 資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "51723613"
     |----------------|-------------|  
     |在 Visual Studio Enterprise (但不是 Professional 或 Community 版本) 中的 IntelliTrace 工作階段|[IntelliTrace 功能](../debugger/intellitrace-features.md)|  
     |Microsoft Test Manager 中的測試工作階段。 這會將 .iTrace 檔案附加至 Team Foundation Server 工作項目。|[在手動測試中收集更多診斷資料](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
-    |如果是在部署中執行的 ASP.NET Web App 和 SharePoint 應用程式，則來源為 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 R2 Operations Manager 運作)|-   [在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新功能](http://technet.microsoft.com/library/dn249700.aspx)|  
+    |如果是在部署中執行的 ASP.NET Web App 和 SharePoint 應用程式，則來源為 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 R2 Operations Manager 運作)|-   [於部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新功能](http://technet.microsoft.com/library/dn249700.aspx)|  
   
 ##  <a name="GetStarted"></a> 請您指定選項。  
   
@@ -115,7 +110,7 @@ ms.locfileid: "51723613"
   
 3.  展開該呼叫，以檢閱該時間點所記錄的所有巢狀呼叫和參數值。  
   
-     (鍵盤：若要顯示或隱藏巢狀呼叫，請分別按下 **向右鍵** 或 **向左鍵** 。 若要顯示和隱藏巢狀呼叫的參數值，請按 **空格鍵** )  
+     (鍵盤：若要顯示或隱藏巢狀的呼叫，請按**向右箭號**或是**向左鍵**分別。 若要顯示和隱藏巢狀呼叫的參數值，請按 **空格鍵** )  
   
      從該呼叫開始偵錯。  
   
@@ -166,7 +161,7 @@ ms.locfileid: "51723613"
   
 1. 從來源複製 SharePoint 相互關聯識別碼。  
   
-    例如:   
+    例如：  
   
     ![IntelliTrace &#45; SharePoint 錯誤&#45;相互關聯識別碼](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
@@ -212,7 +207,7 @@ ms.locfileid: "51723613"
   
     ![IntelliTrace 記錄檔&#45;SharePoint 未處理例外狀況](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   如需逐步解說，請參閱 <<c0> [ 逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)。 代理程式記錄，請參閱資料種類[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
+   如需逐步解說，請參閱[逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)。 代理程式記錄，請參閱資料種類[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
 ###  <a name="ThreadsList"></a> 執行緒清單  
  檢查在目標處理序中執行的已記錄執行緒。 您可以從所選取之執行緒中的第一個有效 IntelliTrace 事件開始進行偵錯。  
@@ -230,7 +225,7 @@ ms.locfileid: "51723613"
 |**資料行**|**顯示的內容**|  
 |----------------|-------------------|  
 |**ID**|執行緒 ID 編號|  
-|**名稱**|執行緒名稱。 未命名的執行緒會顯示為 「\<沒有名稱 >"。|  
+|**名稱**|執行緒名稱。 未命名的執行緒會顯示為「\<沒有名稱>」。|  
 |**開始時間**|執行緒的建立時間|  
 |**結束時間**|執行緒的完成時間|  
   
@@ -263,7 +258,7 @@ ms.locfileid: "51723613"
 |----------------|-------------------|  
 |**模組名稱**|模組檔案名稱|  
 |**模組路徑**|載入模組的磁碟位置|  
-|**模組 ID**|版本特定且提供給相符符號 (PDB) 檔案之模組的唯一識別項。 請參閱 [Finding symbol (.pdb) files and source files](http://msdn.microsoft.com/en-us/05384c85-d264-4e18-abaa-aa482ab25470)。|  
+|**模組 ID**|版本特定且提供給相符符號 (PDB) 檔案之模組的唯一識別項。 請參閱 [Finding symbol (.pdb) files and source files](http://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470)。|  
   
 ### <a name="where-can-i-get-more-information"></a>哪裡可以取得詳細資訊？  
  [使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)  
@@ -278,11 +273,4 @@ ms.locfileid: "51723613"
  [Visual Studio 偵錯工具](http://go.microsoft.com/fwlink/?LinkId=262263)  
   
 #### <a name="guidance"></a>指引  
- [使用 Visual Studio 2012 測試持續傳遞 – 第 6 章：測試工具箱](http://go.microsoft.com/fwlink/?LinkID=255203)
-
-
-
-
-
-
-
+ [測試 for Continuous Delivery with Visual Studio 2012 – Chapter 6:測試工具箱](http://go.microsoft.com/fwlink/?LinkID=255203)

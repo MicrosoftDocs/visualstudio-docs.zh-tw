@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: d130208d022db07fe21b0c9879aa0964dffce3f2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223607"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790520"
 ---
 # <a name="make-code-work-in-visual-studio"></a>讓程式碼在 Visual Studio 中運作
 
@@ -44,7 +44,7 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
 ![Visual Studio 輸出和錯誤清單](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-在 [錯誤清單] 視窗中按一下錯誤行，跳至發生錯誤的行。 (或者，按一下右上方的 [快速啟動] 列，並鍵入「行號」，然後按 **Enter** 鍵，來開啟行號。 這是到達 [選項] 對話方塊的最快速方式，您可以在其中開啟行號。 了解如何使用 [快速啟動] 列，並且替您省下很多的 UI 點選！)
+在 [錯誤清單] 視窗中按一下錯誤行，跳至發生錯誤的行。 (或，按 **Ctrl**+**Q**，輸入**行號**，然後從結果中選擇 [開啟或關閉行號]。 這是到達 [選項] 對話方塊的最快速方式，您可以在其中開啟行號。)
 
 ![使用行號的 Visual Studio 編輯器](../ide/media/vs_ide_gs_debug_line_numbers.png)
 
@@ -74,7 +74,7 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
 ### <a name="c-and-visual-basic-code-analysis"></a>C# 和 Visual Basic 程式碼分析
 
-Visual Studio 包含一組內建的 [.NET Compiler Platform 分析器](../code-quality/roslyn-analyzers-overview.md)，其會檢查您鍵入的 C# 和 Visual Basic 程式碼。 您可以將其他分析器安裝為 Visual Studio 延伸模組或 NuGet 套件。 如果發現違反規則，則會在程式碼編輯器中將違反的程式碼加上波浪底線，並在 [錯誤清單] 中回報這些違規。
+Visual Studio 包含一組內建的 [.NET Compiler Platform 分析器](../code-quality/roslyn-analyzers-overview.md)，其會檢查您輸入的 C# 和 Visual Basic 程式碼。 您可以將其他分析器安裝為 Visual Studio 延伸模組或 NuGet 套件。 如果發現違反規則，則會在程式碼編輯器中將違反的程式碼加上波浪底線，並在 [錯誤清單] 中回報這些違規。
 
 ### <a name="c-code-analysis"></a>C++ 程式碼分析
 

@@ -1,31 +1,32 @@
 ---
-title: Dotfuscator Community Edition (CE)
-ms.date: 10/10/2017
+title: Dotfuscator Community
+ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
-keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保護, Community Edition, 混淆, .NET, 免費, Visual Studio 2017
+keywords: Dotfuscator, Dotfuscator CE, Dotfuscator Community, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保護, community edition, obfuscation, .NET, 免費, Visual Studio 2019, Visual Studio 2017, Visual Studio
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
 - Dotfuscator CE
+- Dotfuscator Community
 - Dotfuscator
 - obfuscation
 - protection
-description: 了解如何使用 Visual Studio 2017 中免費的 Dotfuscator Community Edition 保護您的 .NET 應用程式。
+description: 了解如何使用 Visual Studio 中免費的 Dotfuscator Community 保護您的 .NET 應用程式。
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85f4a28e7f0fd3e7d723aa918dce3761b90d3869
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bf77f2796a224d6fad81c4a1485ba82f8822cfcc
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937510"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866701"
 ---
-# <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
+# <a name="dotfuscator-community"></a>Dotfuscator Community
 
-*PreEmptive Protection - Dotfuscator* 可為 .NET 應用程式提供全方位的保護，而且很容易就能夠整合到您的軟體開發生命週期中。
+***PreEmptive Protection - Dotfuscator*** 可為 .NET 應用程式提供全方位的保護，而且很容易就能夠整合到您的軟體開發生命週期中。
 使用它來強化、保護及清理傳統型、行動裝置、伺服器和嵌入式應用程式，以協助保護商業機密和其他智慧財產 (IP)、減少盜版和仿冒，並防止竄改及未經授權的偵錯。
 Dotfuscator 不需要其他程式設計作業，甚至不需要存取原始程式碼，就可以在編譯的組件上執行。
 
@@ -45,13 +46,13 @@ Dotfuscator 可以在您的應用程式中插入[偵測及回應未經授權之�
 
 如需 Dotfuscator 如何整合到安全軟體開發週期的詳細資訊，請參閱 PreEmptive Solutions 的 [SDL 應用程式保護頁面][sdl-protection]。
 
-## <a name="about-dotfuscator-ce"></a>關於 Dotfuscator CE
+## <a name="about-dotfuscator-community"></a>關於 Dotfuscator Community
 
-您的 Microsoft Visual Studio 2017 包含一份 **_PreEmptive Protection - Dotfuscator_ Community Edition**，又稱為 Dotfuscator CE，可免費供個人使用。
-如需安裝隨附於 Visual Studio 2017 的 Dotfuscator CE 版本的詳細資訊，請參閱[安裝頁面][install]。
+您的 Microsoft Visual Studio 包含一份 ***PreEmptive Protection - Dotfuscator Community***，可免費供個人使用。
+(這個免費版本先前稱為 Dotfuscator Community Edition 或 Dotfuscator CE。)如需安裝隨附於 Visual Studio 的 Dotfuscator Community 版本的詳細資訊，請參閱[安裝頁面][install]。
 
-Dotfuscator CE 針對開發人員、架構設計人員和測試人員提供多種[軟體保護及強化][software-protection]服務。
-Dotfuscator CE 中包含的 [.NET Obfuscation][obfuscation] 及其他[應用程式保護][app-protection]功能的範例為：
+Dotfuscator Community 針對開發人員、架構設計人員和測試人員提供多種[軟體保護及強化][software-protection]服務。
+Dotfuscator Community 中包含的 [.NET Obfuscation][obfuscation] 及其他[應用程式保護][app-protection]功能的範例為：
 
 * *[重新命名][renaming]* 識別項，使對編譯過的組件進行還原工程更困難。
 * *[反竄改][tamper]* 會偵測遭竄改應用程式的執行，以及終止或回應遭竄改的工作階段。
@@ -61,26 +62,39 @@ Dotfuscator CE 中包含的 [.NET Obfuscation][obfuscation] 及其他[應用程�
 
 如需這些功能的詳細資料，包括如何將它們整合到您的應用程式保護策略，請參閱[功能頁面][capabilities]。
 
-Dotfuscator CE 提供現成的基本保護。
-註冊的 Dotfuscator CE 的使用者，以及 *PreEmptive Protection - Dotfuscator* Professional Edition (全球最先進的 [.NET Obfuscator][net-obfuscator]) 使用者，將能取得更多保護方法。
+Dotfuscator Community 提供現成的基本保護。
+註冊的 Dotfuscator Community 的使用者，以及 ***PreEmptive Protection - Dotfuscator*** Professional (全球最先進的 [.NET Obfuscator][net-obfuscator]) 使用者，將能取得更多保護方法。
 如需增強 Dotfuscator 的相關資訊，請參閱[升級頁面][upgrades]。
 
 ## <a name="getting-started"></a>使用者入門
 
-若要開始從 Visual Studio 使用 Dotfuscator CE，請在 [快速啟動]\(Ctrl+Q) 搜尋列中輸入 `dotfuscator`。
+::: moniker range="vs-2019"
 
-* 如果已經安裝 Dotfuscator CE，**快速啟動**將會顯示啟動 Dotfuscator CE 使用者介面的 [功能表] 選項。 如需詳細資料，請參閱[完整 Dotfuscator CE 使用者指南的入門頁面][get-started]。
-* 如果您尚未安裝 Dotfuscator CE，**快速啟動**將會顯示相關的 [安裝] 選項。 如需詳細資訊，請參閱[安裝頁面][install]。
+若要開始從 Visual Studio 使用 Dotfuscator Community，請在 [搜尋方塊] \(Ctrl+Q) 中輸入 `dotfuscator`。
 
-您也可以從 [preemptive.com 上的 Dotfuscator 下載頁面][download]取得最新版本的 Dotfuscator CE。
+* 如果您已安裝 Dotfuscator Community，[搜尋方塊]會在 [功能表] 標題下，顯示啟動 Dotfuscator Community 的選項。 如需詳細資訊，請參閱[完整 Dotfuscator Community 使用者指南的使用者入門頁面][get-started]。
+* 如果尚未安裝 Dotfuscator Community，[搜尋方塊] 會改為在 [個別元件] 標題下顯示 [安裝 PreEmptive Protection - Dotfuscator]。 如需詳細資訊，請參閱[安裝頁面][install]。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+若要開始從 Visual Studio 使用 Dotfuscator Community，請在 [快速啟動] \(Ctrl+Q) 搜尋列中輸入 `dotfuscator`。
+
+* 如果已經安裝 Dotfuscator Community，[快速啟動] 將會顯示啟動 Dotfuscator Community 使用者介面的 [功能表] 選項。 如需詳細資訊，請參閱[完整 Dotfuscator Community 使用者指南的使用者入門頁面][get-started]。
+* 如果您尚未安裝 Dotfuscator Community，[快速啟動] 將會顯示相關的 [安裝] 選項。 如需詳細資訊，請參閱[安裝頁面][install]。
+
+::: moniker-end
+
+您也可以從 [preemptive.com 上的 Dotfuscator 下載頁面][download]取得**最新版本**的 Dotfuscator Community。
 
 ## <a name="full-documentation"></a>完整文件
 
-本頁面及其子頁面提供 Dotfuscator CE 功能的高階概觀，以及[安裝該工具的指示][install]。
+本頁面及其子頁面提供 Dotfuscator Community 功能的高階概觀，以及[安裝該工具的指示][install]。
 
-如需詳細的使用指示，請參閱 [preemptive.com 上的完整 Dotfuscator CE 使用者指南][full]，其中包含[如何開始使用 Dotfuscator CE 使用者介面][get-started]。
+如需詳細的使用指示，請參閱 [preemptive.com 上的完整 Dotfuscator Community 使用者指南][full]，其中包含[如何開始使用 Dotfuscator Community 使用者介面][get-started]。
 
-<!-- Copyright © 2017 PreEmptive Solutions, LLC -->
+<!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 
 [assemblies]:  https://docs.microsoft.com/dotnet/standard/assembly-format
 [software-protection]:  https://www.preemptive.com/software-protection

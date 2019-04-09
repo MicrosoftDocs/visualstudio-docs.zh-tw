@@ -9,16 +9,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3517f697425b40e1d9c26b2a16e3d50ed9b8b251
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e0185e8879718e068cd624559087db9369d7e190
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323866"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789922"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>作法：檢視、儲存及設定組建記錄檔
 
-在 Visual Studio IDE 中建置專案之後，您可以在 [輸出] 視窗中檢視該組建的資訊。 例如，使用這項資訊，您可以針對建置失敗進行疑難排解。 對於 C++ 專案，您也可以在自動建立和儲存的 *.txt* 檔案中，檢視相同的資訊。 對於受控碼專案，您可以將 [輸出] 視窗的資訊複製並貼至 *.txt* 檔案，然後自行儲存它。 您也可以使用 IDE 來指定您想要檢視每個組建的資訊種類。
+在 Visual Studio IDE 中建置專案之後，您可以在 [輸出] 視窗中檢視該組建的資訊。 例如，使用這項資訊，您可以針對建置失敗進行疑難排解。 
+
+  - 對於 C++ 專案，您也可以在自動建立和儲存的 *.txt* 檔案中，檢視相同的資訊。 
+
+  - 對於受控程式碼專案，您可以按一下建置輸出視窗，然後按 **Ctrl**+**S**。 Visual Studio 會提示您輸入位置，以將 [輸出] 視窗中的資訊儲存至 *.txt* 檔案。 
+  
+您也可以使用 IDE 來指定您想要檢視每個組建的資訊種類。
 
 如果您使用 MSBuild 建置任何種類的專案，您可以建立 *.txt* 檔案以儲存組建資訊。 如需詳細資訊，請參閱[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)。
 
@@ -30,9 +36,11 @@ ms.locfileid: "58323866"
 
 1.  在功能表列上選擇 [建置] > [建置解決方案]。
 
-2.  在 [輸出] 視窗中，反白顯示來自組建的資訊，然後將它複製到剪貼簿。
+2.  在 [輸出] 視窗中，按一下文字中的某處。
 
-3.  開啟文字編輯器，例如 [記事本]，將資訊貼到檔案中，然後儲存它。
+3.  按 **Ctrl**+**S**。
+
+   Visual Studio 會提示您輸入要儲存建置輸出的位置。
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>變更組建記錄檔中包含的資訊量
 

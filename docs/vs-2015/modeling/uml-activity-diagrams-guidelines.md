@@ -1,12 +1,9 @@
 ---
-title: UML 活動圖表： 指導方針 |Microsoft Docs
-ms.custom: ''
+title: UML 活動圖表：指導方針 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, activity
 - diagrams - modeling, activity
@@ -17,13 +14,13 @@ ms.assetid: fe5dbe96-79ab-483a-b9bc-44d0d1d3efc2
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a13db375305e96c4657e007f9cd8bfffbf34f990
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66ca625d0c9c6f2442576e997928b7b42760936a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722692"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58943313"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML 活動圖表：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +35,13 @@ ms.locfileid: "51722692"
   
 - 描述商務程序或使用者與系統之間的工作流程。 如需詳細資訊，請參閱 <<c0> [ 模型使用者需求](../modeling/model-user-requirements.md)。  
   
-- 描述使用案例的執行步驟。 如需詳細資訊，請參閱 < [UML 使用案例圖： 方針](../modeling/uml-use-case-diagrams-guidelines.md)。  
+- 描述使用案例的執行步驟。 如需詳細資訊，請參閱[UML 使用案例圖：指導方針](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
 - 描述在軟體中的方法、函式或作業。 如需詳細資訊，請參閱 <<c0> [ 您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)。  
   
   繪製活動圖表可協助您改善程序。 如果現有程序的圖表會很複雜，您可以考慮如何簡化程序。  
   
-  活動圖表上 參考之元素的相關資訊，請參閱[UML 活動圖表： 參考](../modeling/uml-activity-diagrams-reference.md)。  
+  活動圖表上 參考之元素的相關資訊，請參閱[UML 活動圖表：參考資料](../modeling/uml-activity-diagrams-reference.md)。  
   
 ##  <a name="Relationships"></a> 與其他圖表的關聯性  
  如果您繪製活動圖表來描述商務程序，或使用者使用您系統的方式，則可以繪製使用案例圖，以顯示相同資訊的不同檢視。 在使用案例圖中，您將動作繪製成為使用案例。 提供使用案例與對應動作相同的名稱。 使用案例檢視的優點是您可以：  
@@ -57,7 +54,7 @@ ms.locfileid: "51722692"
   
   您也可以繪製活動圖表來描述軟體作業的詳細設計。  
   
-  在活動圖表中，您可以顯示動作之間傳遞的資料流。 請參閱 〈[描述資料流程](#DataFlows)。 但是活動圖表不會描述資料的結構。 針對該目的，您可以繪製 UML 類別圖表。 如需資訊[UML 類別圖： 方針](../modeling/uml-class-diagrams-guidelines.md)。  
+  在活動圖表中，您可以顯示動作之間傳遞的資料流。 請參閱 〈[描述資料流程](#DataFlows)。 但是活動圖表不會描述資料的結構。 針對該目的，您可以繪製 UML 類別圖表。 如需資訊[UML 類別圖：指導方針](../modeling/uml-class-diagrams-guidelines.md)。  
   
 ##  <a name="BasicSteps"></a> 繪製活動圖表的基本步驟  
  建立任何模型圖的詳細的步驟所述[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
@@ -185,7 +182,7 @@ ms.locfileid: "51722692"
 -   使用**輸出釘選**並**輸入 pin 碼**。 這個方法可讓您分別描述一個動作的輸出和另一個動作的輸入。 連接就像是程式中的參數。 連接代表連接埠，物件可以在這裡進入及離開動作。  
   
     > [!NOTE]
-    >  如需這一節所使用之元素的概觀，請參閱 < 資料流程 > 一節的主題看到[UML 活動圖表： 參考](../modeling/uml-activity-diagrams-reference.md)。  
+    >  如需這一節所使用之元素的概觀，請參閱 < 資料流程 > 一節的主題看到[UML 活動圖表：參考資料](../modeling/uml-activity-diagrams-reference.md)。  
   
 ### <a name="describing-data-flow-with-object-nodes"></a>使用物件節點描述資料流程  
  大部分的控制流程都含有資料。 比方說，從「客戶提供詳細資料」動作的輸出流程便帶有送貨地址的參考。  
@@ -198,7 +195,7 @@ ms.locfileid: "51722692"
   
  提供物件節點可反映節點角色的名稱，做為在動作之間流動的物件管道或緩衝區。  
   
- 您可以設定**型別**的 [屬性] 視窗中的 [物件] 節點。 類型可以是基本類型，例如整數，或您在類別圖表中定義的類別、介面或列舉。 比方說，您可以建立類別 Shipment Address，並具有屬性 Street Address、City 等等，以及與另一個名為 Customer 之類別的關聯。 如需詳細資訊，請參閱 < [UML 類別圖： 方針](../modeling/uml-class-diagrams-guidelines.md)。  
+ 您可以設定**型別**的 [屬性] 視窗中的 [物件] 節點。 類型可以是基本類型，例如整數，或您在類別圖表中定義的類別、介面或列舉。 比方說，您可以建立類別 Shipment Address，並具有屬性 Street Address、City 等等，以及與另一個名為 Customer 之類別的關聯。 如需詳細資訊，請參閱 [UML 類別圖表：指導方針](../modeling/uml-class-diagrams-guidelines.md)。  
   
 > [!NOTE]
 >  如果您輸入尚未定義的型別名稱時，會加入項目之下**未指定的型別**UML 模型總管 中。 如果接下來您在類別圖表中定義該名稱的類型，則應該重設物件節點的類型，使其參考新的類型。  
@@ -363,7 +360,7 @@ ms.locfileid: "51722692"
   
  ![平行物件流程](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")  
   
- 當 "Customer Provides Details" 動作完成時，它會產生兩個物件："Shipment Address" 和 "Credit Card Details"。 兩個物件會繼續由不同的動作處理。  
+ "Customer provides details"動作完成時，它會產生兩個物件："Shipment address"和"Credit card details"。 兩個物件會繼續由不同的動作處理。  
   
  由於動作需要所有輸入都可用才能開始，因此最後一個動作會等到通往它的所有動作都完成之後才開始。  
   
@@ -431,12 +428,9 @@ ms.locfileid: "51722692"
   
 ## <a name="see-also"></a>另請參閱  
  [編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)   
- [UML 循序圖： 參考](../modeling/uml-sequence-diagrams-reference.md)   
- [UML 元件圖： 參考](../modeling/uml-component-diagrams-reference.md)   
- [UML 使用案例圖： 參考](../modeling/uml-use-case-diagrams-reference.md)   
- [UML 類別圖： 參考](../modeling/uml-class-diagrams-reference.md)   
- [UML 元件圖： 參考](../modeling/uml-component-diagrams-reference.md)   
- [影片： 使用活動圖表擷取商業工作流程](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)
-
-
-
+ [UML 順序圖表：參考](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML 元件圖表：參考](../modeling/uml-component-diagrams-reference.md)   
+ [UML 使用案例圖表：參考](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)   
+ [UML 元件圖表：參考](../modeling/uml-component-diagrams-reference.md)   
+ [影片：使用活動圖表擷取商業工作流程](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)

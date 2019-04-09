@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94f8b26536a657698dfcb0c0fa3de3876e1452b1
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325210"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789987"
 ---
 # <a name="options-text-editor-cc-experimental"></a>選項、文字編輯器、C/C++、實驗
 
@@ -28,7 +28,7 @@ ms.locfileid: "58325210"
 
 ::: moniker-end
 
-若要存取本屬性頁面，請按 **Control** + **Q** 啟動 `Quick Launch`，然後鍵入 "experimental"。 鍵入前幾個字母之後，快速啟動就會找到頁面。 您也可以選擇 [工具] > [選項]，並依序展開 [文字編輯器] 和 [C/C++]，然後選擇 [實驗性]，即可到達頁面。
+若要存取本屬性頁面，請按 **Control**+**Q** 以啟動搜尋方塊，然後鍵入 **experimental**。 鍵入前幾個字母之後，搜尋就會找到頁面。 您也可以選擇 [工具] > [選項]，並依序展開 [文字編輯器] 和 [C/C++]，然後選擇 [實驗性]，即可到達頁面。
 
 這些功能可在 Visual Studio 安裝中使用。
 

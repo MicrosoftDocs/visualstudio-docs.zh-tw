@@ -128,7 +128,7 @@ int main()
   
 -   不支援`Sizeof` 運算子。  
   
-## <a name="c---unsupported-expressions"></a>c# - 不支援的運算式  
+## <a name="c---unsupported-expressions"></a>C# - 不支援的運算式  
   
 ### <a name="dynamic-objects"></a>動態物件  
  您可以在偵錯工具運算式中使用靜態設定類型為動態的變數。 在 [監看式] 視窗中評估實作 <xref:System.Dynamic.IDynamicMetaObjectProvider> 的物件時，會加入 [動態檢視] 節點。 [動態檢視] 節點會顯示物件成員，但不允許編輯成員的值。  

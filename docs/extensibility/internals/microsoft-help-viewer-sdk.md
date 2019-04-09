@@ -63,7 +63,7 @@ Visual Studio 品牌封裝支援的控制項：
 
 -   javascript
 
--   csharp 或 c#
+-   csharp 或 C#
 
 -   cplusplus 或 visual c + + 或 c + +
 

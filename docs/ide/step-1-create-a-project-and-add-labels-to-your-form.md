@@ -2,18 +2,20 @@
 title: 步驟 1：建立專案並將標籤新增至表單
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1878d8a57ce8eddc599e14b5961179c7cdc48e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d077cd549b5bef703229b2c43f4ce36d9735d512
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917749"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647397"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>步驟 1：建立專案並將標籤新增至表單
 
@@ -24,23 +26,39 @@ ms.locfileid: "55917749"
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>建立專案和設定表單的屬性
 
+::: moniker range="vs-2017"
+
 1.  在功能表列上，選擇 [檔案] > [新增] > [專案]。
 
-2.  在 [安裝的範本] 清單中，選擇 [C#] 或 [Visual Basic]。
+1.  在 [安裝的範本] 清單中，選擇 [C#] 或 [Visual Basic]。
 
-3.  在範本清單中，選擇 [Windows Forms 應用程式] 範本，並將它命名為「數學測驗」，然後選擇 [確定] 按鈕。
+1.  在範本清單中，選擇 [Windows Forms 應用程式] 範本，並將它命名為 **MathQuiz** (數學測驗)，然後選擇 [確定] 按鈕。
 
      依據您選擇的程式語言而定，名為 *Form1.cs* 或 *Form1.vb* 的表單隨即出現。
 
-4.  選擇表單，然後將其 [Text] 屬性變更為 [數學測驗]。
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 在開始視窗中，選擇 [建立新專案]。
+
+1. 在搜尋方塊中，鍵入 "WPF"，選擇 [WPF App (.NET Framework)]，然後選擇 [下一步]。
+
+   (如果您未看到 [WPF 應用程式 (.NET Framework)] 範本，請使用 Visual Studio 安裝程式來安裝 [.NET 桌面開發] 工作負載。)
+
+1. 提供專案名稱 (**MathQuiz**)，然後選擇 [建立]
+
+::: moniker-end
+
+1.  選擇表單，然後將其 [Text] 屬性變更為 [數學測驗]。
 
      [屬性] 視窗包含表單的屬性。
 
-5.  將表單的大小變更為寬度 500 像素乘以高度 400 像素。
+1.  將表單的大小變更為寬度 500 像素乘以高度 400 像素。
 
      您可以藉由拖曳邊緣來調整表單大小，直到正確的大小出現在整合式開發環境 (Integrated Development Environment，IDE) 的左下角。 或者，您可以變更 [Size] 屬性的值。
 
-6.  將 [FormBorderStyle] 屬性的值變更為 [Fixed3D]，並將 [MaximizeBox] 屬性設定為 [False]。
+1.  將 [FormBorderStyle] 屬性的值變更為 [Fixed3D]，並將 [MaximizeBox] 屬性設定為 [False]。
 
      這些值可防止受測者調整表單的大小。
 
