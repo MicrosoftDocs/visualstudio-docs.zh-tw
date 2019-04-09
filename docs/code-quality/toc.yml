@@ -582,6 +582,30 @@ items:
         href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
       - name: CA2153:避免處理損毀狀態例外狀況
         href: ca2153-avoid-handling-corrupted-state-exceptions.md
+      - name: CA3001：檢閱程式碼是否有 SQL 插入式攻擊弱點
+        href: ca3001-review-code-for-sql-injection-vulnerabilities.md
+      - name: CA3002：檢閱程式碼是否有 XSS 弱點
+        href: ca3002-review-code-for-xss-vulnerabilities.md
+      - name: CA3003：檢閱程式碼是否有檔案路徑插入式攻擊弱點
+        href: ca3003-review-code-for-file-path-injection-vulnerabilities.md
+      - name: CA3004：檢閱程式碼是否有資訊洩漏弱點
+        href: ca3004-review-code-for-information-disclosure-vulnerabilities.md
+      - name: CA3005：檢閱程式碼是否有 LDAP 插入式攻擊弱點
+        href: ca3005-review-code-for-ldap-injection-vulnerabilities.md
+      - name: CA3006：檢閱程式碼是否有處理序命令插入式攻擊弱點
+        href: ca3006-review-code-for-process-command-injection-vulnerabilities.md
+      - name: CA3007：檢閱程式碼是否有開放式重新導向弱點
+        href: ca3007-review-code-for-open-redirect-vulnerabilities.md
+      - name: CA3008：檢閱程式碼是否有 XPath 插入式攻擊弱點
+        href: ca3008-review-code-for-xpath-injection-vulnerabilities.md
+      - name: CA3009：檢閱程式碼是否有 XML 插入式攻擊弱點
+        href: ca3009-review-code-for-xml-injection-vulnerabilities.md
+      - name: CA3010：檢閱程式碼是否有 XAML 插入式攻擊弱點
+        href: ca3010-review-code-for-xaml-injection-vulnerabilities.md
+      - name: CA3011：檢閱程式碼是否有 DLL 插入式攻擊弱點
+        href: ca3011-review-code-for-dll-injection-vulnerabilities.md
+      - name: CA3012：檢閱程式碼是否有 regex 插入式攻擊弱點
+        href: ca3012-review-code-for-regex-injection-vulnerabilities.md
       - name: CA3075:不安全的 DTD 處理
         href: ca3075-insecure-dtd-processing.md
       - name: CA3076:不安全的 XSLT 指令碼執行
@@ -1478,9 +1502,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd 錯誤
       href: fxcopcmd-errors.md
-ms.openlocfilehash: daaf61f508d3e14c26044b181c478e5701afe6ed
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 88bdee94ec0f5bc9fd8a1792dc6bd907093e8394
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868114"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018268"
