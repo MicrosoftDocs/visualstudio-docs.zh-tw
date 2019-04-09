@@ -1,6 +1,6 @@
 ---
 title: 告訴我們
-ms.date: 10/09/2018
+ms.date: 03/30/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
@@ -11,12 +11,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 038b094949a66fef0bb07fc605e069a441913ff5
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953515"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857134"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio 產品意見反應
 
@@ -24,11 +26,11 @@ ms.locfileid: "56953515"
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>我想要回報 Visual Studio 的問題
 
-如果您使用 Visual Studio 時遇到問題&mdash;如當機、效能緩慢或非預期行為&mdash;請使用 [回報問題] 工具讓我們知道。 在 Visual Studio 中，選擇 [快速啟動] 旁的意見反應圖示，或從功能表列選擇 [說明] > [傳送意見反應] > [回報問題]。 接下來，Visual Studio 會在瀏覽器中開啟[開發人員社群](https://developercommunity.visualstudio.com) \(英文\) 頁面，您可以登入以回報問題。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio.md)。
+如果您使用 Visual Studio 時遇到問題&mdash;如當機、效能緩慢或非預期行為&mdash;請使用 [回報問題] 工具讓我們知道。 在 Visual Studio 中，選擇搜尋方塊旁的意見反應圖示，或從功能表列選擇 [說明] > [傳送意見反應] > [回報問題]。 接下來，Visual Studio 會在瀏覽器中開啟[開發人員社群](https://developercommunity.visualstudio.com) \(英文\) 頁面，您可以登入以回報問題。 如需詳細資訊，請參閱[如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio.md)。
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>我想要提供有關 Visual Studio 功能的建議
 
-如果有任何我們可以改進的地方，請告訴我們！ 在 Visual Studio 中，從功能表列選擇 [說明] > [傳送意見反應] > [提供建議]。 接下來，Visual Studio 會在瀏覽器中開啟 [開發人員社群](https://developercommunity.visualstudio.com) \(英文\) 頁面，您可以登入以分享您的想法。 如需詳細資訊，請參閱[提出 Visual Studio 2017 功能建議](suggest-a-feature.md)。
+如果有任何我們可以改進的地方，請告訴我們！ 在 Visual Studio 中，從功能表列選擇 [說明] > [傳送意見反應] > [提供建議]。 接下來，Visual Studio 會在瀏覽器中開啟 [開發人員社群](https://developercommunity.visualstudio.com) \(英文\) 頁面，您可以登入以分享您的想法。 如需詳細資訊，請參閱[提出 Visual Studio 功能建議](suggest-a-feature.md)。
 
 ### <a name="rate-this-product"></a>為此產品評分
 
@@ -36,7 +38,7 @@ Visual studio 發行前版本有 [為此產品評分] 功能表項目，產品�
 
 ## <a name="i-want-to-contact-microsoft-support"></a>我想要連絡 Microsoft 支援
 
-如需 Visual Studio 的支援資訊，請參閱[支援生命週期和服務](/visualstudio/productinfo/vs-servicing-vs)頁面。
+如需 Visual Studio 的支援資訊，請參閱[產品生命週期和服務](/visualstudio/productinfo/vs-servicing-vs)頁面。
 
 如需其他 Microsoft 產品和服務，請參閱 [Microsoft 支援](https://go.microsoft.com/fwlink/?LinkID=99019)以取得線上說明。
 
@@ -55,10 +57,10 @@ Microsoft 支援服務可能因當時的價格、條款和條件而有所變更�
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>我想要協助改善 Visual Studio 文件
 
-請使用頁面底部的 [本頁是否能提供幫助？] 意見反應按鈕。 您可以在所有文件頁面上找到這個按鈕。 或者，您可以使用同樣位於頁面底部的 [登入以提供文件意見反應] 按鈕，對 [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) 上的任何 Visual Studio 頁面新增意見反應。
+請使用頁面底部的 [本頁是否能提供幫助？] 意見反應按鈕。 您可以在所有文件頁面上找到這個按鈕。 或者，您可以使用 GitHub 帳戶對 [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) 上的任何 Visual Studio 頁面新增意見反應；請選擇同樣位於頁面底部的 [登入以提供文件意見反應] 按鈕。
 
 ## <a name="see-also"></a>另請參閱
 
 * [如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio.md)
-* [Developer Community](https://developercommunity.visualstudio.com)
-* [Developer Community 資料隱私權](developer-community-privacy.md)
+* [開發人員社群](https://developercommunity.visualstudio.com)
+* [開發人員社群資料隱私權](developer-community-privacy.md)

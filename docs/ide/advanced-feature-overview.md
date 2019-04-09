@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d3630dd316ec137b63ec11fc8a87634d0f24bf7
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268607"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790533"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
@@ -118,7 +118,7 @@ Azure DevOps Services 是雲端式服務，可規劃、裝載，自動化和部�
 
 Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理中樞。 其可讓所有人使用單一方案參與開發流程。 TFS 也適合用來管理異質小組和專案
 
-如果您在網路上有 Azure DevOps 組織或 Team Foundation Server，便可以透過 Visual Studio 中的 [Team Explorer] 視窗與其連線。 在這個視窗中，您可以在原始檔控制簽入或簽出程式碼、管理工作項目、啟動建置和存取小組聊天室及工作區。 您可以從 [快速啟動] 方塊開啟 [Team Explorer]，也可以從主功能表的 [檢視] > [Team Explorer] 或從 [小組] > [管理連線] 來開啟它。
+如果您在網路上有 Azure DevOps 組織或 Team Foundation Server，便可以透過 Visual Studio 中的 [Team Explorer] 視窗與其連線。 在這個視窗中，您可以在原始檔控制簽入或簽出程式碼、管理工作項目、啟動建置和存取小組聊天室及工作區。 您可以從搜尋方塊開啟 [Team Explorer]，也可以從主功能表的 [檢視] > [Team Explorer] 或從 [小組] > [管理連線] 來開啟它。
 
 下圖顯示裝載於 Azure DevOps Services 中解決方案的 [Team Explorer] 視窗。
 

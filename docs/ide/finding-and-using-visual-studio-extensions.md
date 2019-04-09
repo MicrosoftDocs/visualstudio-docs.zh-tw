@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 3e282cdfda27579fd83871153a19897652d55865
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268550"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790754"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>尋找和使用 Visual Studio 延伸模組
 
@@ -33,7 +33,7 @@ Visual Studio 擴充功能是在 Visual Studio 內執行的程式碼封裝，並
 
 ::: moniker range=">=vs-2019"
 
-使用 [管理擴充功能] 對話方塊來安裝和管理 Visual Studio 擴充功能。 若要開啟 [管理擴充功能] 對話方塊，請選擇 [擴充功能] > [管理擴充功能]。 或者，在 [快速啟動] 搜尋方塊中輸入**擴充功能**，然後選擇 [管理擴充功能]。
+使用 [管理擴充功能] 對話方塊來安裝和管理 Visual Studio 擴充功能。 若要開啟 [管理擴充功能] 對話方塊，請選擇 [擴充功能] > [管理擴充功能]。 或者，在搜尋方塊中輸入**延伸模組**，然後選擇 [管理延伸模組]。
 
 ::: moniker-end
 

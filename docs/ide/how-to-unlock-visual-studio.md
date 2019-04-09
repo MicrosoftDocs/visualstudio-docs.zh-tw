@@ -1,6 +1,7 @@
 ---
-title: HOW TO：解除鎖定 Visual Studio
-ms.date: 07/20/2017
+title: 作法：解除鎖定 Visual Studio
+titleSuffix: ''
+ms.date: 03/30/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -8,14 +9,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f40ee1e5eb2fe40261c15b17ce12b7471a2c0c11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943138"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856816"
 ---
-# <a name="how-to-unlock-visual-studio"></a>HOW TO：解除鎖定 Visual Studio
+# <a name="how-to-unlock-visual-studio"></a>作法：解除鎖定 Visual Studio
 
 您最多可以免費評估 Visual Studio 30 天。 登入整合式開發環境 (IDE) 可將試用期延展為 90 天。 若要繼續使用 Visual Studio，請透過下列方式之一解除鎖定 IDE：
 
@@ -27,7 +30,7 @@ ms.locfileid: "55943138"
 
 使用與 Microsoft 帳戶、公司或學校帳戶建立關聯的 Visual Studio 訂用帳戶或 Azure DevOps 組織來解除鎖定 Visual Studio：
 
-1. 按一下 IDE 右上角的 [登入] 按鈕 (或移至 [檔案] > [帳戶設定] 開啟 [帳戶設定] 對話方塊，然後按一下 [登入] 按鈕)。
+1. 選擇 IDE 右上角的 [登入] 按鈕 (或移至 [檔案] > [帳戶設定] 開啟 [帳戶設定] 對話方塊，然後選擇 [登入] 按鈕)。
 
 1. 輸入 Microsoft 帳戶或工作/學校帳戶的認證。 Visual Studio 會尋找與您帳戶建立關聯的 Visual Studio 訂用帳戶或 Azure DevOps 組織。
 
@@ -36,9 +39,9 @@ ms.locfileid: "55943138"
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>使用產品金鑰解除鎖定 Visual Studio
 
-1. 選取 [檔案] > [帳戶設定] 開啟 [帳戶設定] 對話方塊，然後按一下 [使用產品金鑰授權] 連結。
+1. 選取 [檔案] > [帳戶設定] 開啟 [帳戶設定] 對話方塊，然後選擇 [使用產品金鑰授權] 連結。
 
-在提供的空格中輸入產品金鑰。
+1. 在提供的空格中輸入產品金鑰。
 
 > [!TIP]
 > Visual Studio 發行前版本沒有產品金鑰。 您必須登入 IDE 才能使用發行前版本。
@@ -47,7 +50,7 @@ ms.locfileid: "55943138"
 
 ### <a name="update-stale-licenses"></a>更新過時的授權
 
- 您可能看到「您的授權已過時，必須更新。」的訊息，代表您的授權在 Visual Studio 中已過時。
+ 您可能會看到下列訊息，指出您的 Visual Studio 授權即將過時。 該訊息為「您的授權已過時，必須更新。」
 
  ![Visual Studio 授權過時訊息](../ide/media/vs2017_stale-license.png)
 
@@ -58,7 +61,7 @@ ms.locfileid: "55943138"
 
 在授權權杖過期之前，Visual Studio 會先顯示一個警告訊息，要求您重新輸入認證。
 
-如果您未重新輸入認證，權杖將會過時，且 [帳戶設定] 對話方塊會顯示權杖完全過期之前的天數。 權杖過期之後，您必須使用上述另一個方法重新輸入這個帳戶或授權的認證，才能繼續使用 Visual Studio。
+如果您未重新輸入認證，權杖將會過時，且 [帳戶設定] 對話方塊會顯示權杖完全過期之前的天數。 權杖過期之後，您必須重新輸入帳戶的認證後，才能繼續使用 Visual Studio。
 
 > [!Important]
 > 如果您在限制存取或無法存取網際網路的環境中使用 Visual Studio 很長一段時間，則應使用產品金鑰來解除鎖定 Visual Studio，以避免中斷。

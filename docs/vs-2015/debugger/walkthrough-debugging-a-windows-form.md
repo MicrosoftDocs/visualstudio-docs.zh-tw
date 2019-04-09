@@ -1,14 +1,9 @@
 ---
-title: 逐步解說： 偵錯 Windows Form |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：偵錯 Windows Form |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -30,13 +25,13 @@ ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8f43835374ac74d50e1e81623ecf268fbfbfe8ca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ddec41c95e5bb2a3703cf2502cbf592c0794eba2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726596"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58941924"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>逐步解說：偵錯 Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +65,7 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
   
 5.  按一下 [確定 **Deploying Office Solutions**]。  
   
-     Visual Studio 會建立新的專案，並在 Windows Form 設計工具中顯示新的表單。 如需詳細資訊，請參閱 < [Windows Form 設計工具](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15)。  
+     Visual Studio 會建立新的專案，並在 Windows Form 設計工具中顯示新的表單。 如需詳細資訊，請參閱 < [Windows Form 設計工具](http://msdn.microsoft.com/3c3d61f8-f36c-4d41-b9c3-398376fabb15)。  
   
 6.  在 **檢視**功能表上，選取**工具箱**。  
   
@@ -84,7 +79,7 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
   
      這會帶您前往字碼頁。 資料指標應該在`button1_Click`。  
   
-10. 函式中`button1_Click`。，新增下列程式碼：  
+10. 在 `button1_Click` 函式中，新增下列程式碼：  
   
     ```  
     ' Visual Basic  
@@ -99,7 +94,7 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
   
 11. 在 [建置] 功能表上，選取 [建置方案]。  
   
-     未出現任何錯誤，應該可以建置專案。  
+     專案應該會建置而無錯誤。  
   
 ## <a name="debug-your-form"></a>偵錯您的表單  
  現在，您已準備好開始偵錯。  
@@ -119,12 +114,12 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
     textBox1->Text = "Button was clicked!";  
     ```  
   
-     會出現一個紅點，並且該行上的文字會以紅色反白顯示。 紅點表示中斷點。 如需詳細資訊，請參閱 <<c0> [ 中斷點](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。 當您在偵錯工具下執行應用程式時，偵錯工具會在遇到程式碼的位置中斷執行。 接著您就可以檢視應用程式的狀態並對它進行偵錯。  
+     會出現一個紅點，並且該行上的文字會以紅色反白顯示。 紅點表示中斷點。 如需詳細資訊，請參閱[中斷點](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。 當您在偵錯工具下執行應用程式時，偵錯工具會在遇到程式碼的位置中斷執行。 接著您就可以檢視應用程式的狀態並對它進行偵錯。  
   
     > [!NOTE]
     >  您也可以以滑鼠右鍵按一下任何一行程式碼，指向**中斷點**，然後按一下**插入中斷點**這一行加入中斷點。  
   
-2.  ON**偵錯**功能表上，選擇**開始**。  
+2.  在 [偵錯] 功能表上選擇 [啟動]。  
   
      Windows Form 會開始執行。  
   
@@ -142,7 +137,7 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
     ""  
     ```  
   
-6.  在 **偵錯**功能表上，選擇**逐步執行**。  
+6.  在 [偵錯] 功能表上，選擇 [逐步執行]。  
   
      TextBox1.Text 變更的值**監看式 1**視窗：  
   
@@ -160,7 +155,7 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
   
      這會從您的程式碼移除中斷點。  
   
-10. 在 **偵錯**功能表上，選擇**停止偵錯**。  
+10. 在 [偵錯] 功能表中，選擇 [停止偵錯]。  
   
 ## <a name="attach-to-your-windows-form-application-for-debugging"></a>附加至您的 Windows Form 應用程式進行偵錯  
  在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 中，您可以將偵錯工具附加至執行中的處理序。 如果您使用的 Express 版本，不支援這項功能。  
@@ -199,6 +194,3 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)
-
-
-

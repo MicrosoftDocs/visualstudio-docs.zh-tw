@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb32a3b71a6868e763b9ad77c49f5cb06a4039fc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9279257f238adf92ad560d2f2e1aa7f769905305
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928032"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789701"
 ---
 # <a name="manage-project-and-solution-properties"></a>管理專案和解決方案屬性
 
-專案具有控管編譯、偵錯、測試和部署各個層面的屬性。 有些屬性是所有專案類型通用的，有些則是特定語言或平台特有的。 在 [方案總管] 的專案節點上按一下滑鼠右鍵並選擇 [屬性]，或在功能表列 [快速啟動] 的搜尋方塊中鍵入「屬性」，即可存取專案屬性。
+專案具有控管編譯、偵錯、測試和部署各個層面的屬性。 有些屬性是所有專案類型通用的，有些則是特定語言或平台特有的。 以滑鼠右鍵按一下 [方案總管] 的專案節點，然後選擇 [屬性]，或在功能表列的搜尋方塊中鍵入**屬性**，然後從結果中選擇 [屬性視窗]。
 
 ![[專案] 內容功能表](../ide/media/vs2015_proj_prop_menu.gif)
 

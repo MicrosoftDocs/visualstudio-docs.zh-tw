@@ -21,7 +21,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 1134ac538487487834b754407a3cc1a90175c56b
 ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/06/2019
 ms.locfileid: "57526021"
@@ -118,7 +118,7 @@ int main()
 
 - 不支援`Sizeof` 運算子。
 
-## <a name="c---unsupported-expressions"></a>c# - 不支援的運算式
+## <a name="c---unsupported-expressions"></a>C# - 不支援的運算式
 
 ### <a name="dynamic-objects"></a>動態物件
 您可以在偵錯工具運算式中使用靜態設定類型為動態的變數。 當物件實作<xref:System.Dynamic.IDynamicMetaObjectProvider>評估監看式視窗中，節點會加入 動態檢視。 [動態檢視] 節點會顯示物件成員，但不允許編輯成員的值。

@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5622741a394f11444bcdc432cc5a0a25fddb92
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: a90324d1d9321be3f3105d5830e0c08927c4f535
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416289"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856576"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>快速入門：使用 Visual Studio 建立您的第一個 C# 主控台應用程式
 
@@ -34,7 +34,7 @@ ms.locfileid: "58416289"
 
 ::: moniker range="vs-2019"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
 
 ::: moniker-end
 
@@ -85,7 +85,7 @@ ms.locfileid: "58416289"
    >
    > ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](./media/dot-net-core-xplat-dev-workload.png)
    >
-   > 接下來，選擇 Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作；如果出現的話，就請您這麼做。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
+   > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
 1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *HelloWorld*。 接著，選擇 [建立]。
 
@@ -156,4 +156,4 @@ Visual Studio 在您的專案中包含預設 "Hello World" 程式碼。
 恭喜您完成此快速入門！ 希望您已經更了解 C# 和 Visual Studio IDE。 若要深入了解，請繼續進行下列教學課程。
 
 > [!div class="nextstepaction"]
-> [開始在 Visual Studio 中使用 C# 主控台應用程式](../get-started/csharp/tutorial-console.md)
+> [Visual Studio 中的 C# 主控台應用程式入門](../get-started/csharp/tutorial-console.md)

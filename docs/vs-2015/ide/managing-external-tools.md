@@ -1,5 +1,5 @@
 ---
-title: 管理外部工具 |Microsoft Docs
+title: 管理外部工具 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763319"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866755"
 ---
 # <a name="managing-external-tools"></a>管理外部工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,11 +78,11 @@ ms.locfileid: "54763319"
   
 3.  ATL/MFC 追蹤工具：顯示 ATL 與 MFC 來源中的偵錯追蹤訊息。  
   
-4.  PreEmptive Dotfuscator and Analytics:保護.NET 程式免於反向工程。  
+4.  PreEmptive Protection - Dotfuscator：保護 .NET 程式免於反向工程。  
   
-5.  SPY++以圖形方式顯示處理程序、 執行緒、 windows 及視窗訊息。  
+5.  SPY++：以圖形化方式顯示處理序、執行緒、視窗及視窗訊息。  
   
-6.  WCF 服務組態編輯器(&W)可讓您建立和修改 WCF 服務的組態設定。  
+6.  WCF 服務組態編輯器：可用以建立及修改 WCF 服務的組態設定。  
   
 > [!WARNING]
 >  視您安裝的 Visual Studio 版本及套用的設定檔之不同，您看到的外部工具清單或許有些不同。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
@@ -102,7 +102,7 @@ ms.locfileid: "54763319"
 > [!NOTE]
 >  IDE 狀態列會顯示目前這一行和目前資料行的變數，以指出插入點在作用中程式碼編輯器的位置。 目前的文字變數則會傳回在該位置選取的文字或程式碼。  
   
-|名稱|引數|描述|  
+|名稱|引數|說明|  
 |----------|--------------|-----------------|  
 |項目路徑|$(ItemPath)|目前檔案的完整檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|  
 |項目目錄|$(ItemDir)|目前檔案的目錄 (磁碟機 + 路徑)。|  
