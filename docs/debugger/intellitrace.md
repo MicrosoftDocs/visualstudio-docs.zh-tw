@@ -20,20 +20,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e68e6c7258cb906ac81cb97f7d82bd5c5d9b467a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873119"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232693"
 ---
-# <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio enterprise 的 IntelliTrace (C#，Visual Basic、 c + +)
+# <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio enterprise 的 IntelliTrace (C#，Visual Basic 中， C++)
 
 當您使用 IntelliTrace 記錄和追蹤程式碼的執行歷程時，可以縮短對應用程式進行偵錯的時間。 您可以輕鬆地找到錯誤，因為 IntelliTrace 可讓您：
 
 - 記錄特定事件
 
-   請檢查相關的程式碼、發生偵錯工具事件時出現在 [區域變數] 視窗中的資料，以及函式呼叫資訊
+- 請檢查相關的程式碼、發生偵錯工具事件時出現在 [區域變數] 視窗中的資料，以及函式呼叫資訊
 
 - 偵錯難以重現或在部署中所發生的錯誤
 
@@ -52,9 +52,9 @@ ms.locfileid: "57873119"
 
 | | |
 |---------------------| - |
-| **完整的支援** | - 使用 .NET Framework 2.0 或更高版本的 Visual Basic 和 Visual C# 應用程式。<br/>您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br/>若要偵錯 SharePoint 應用程式，使用 IntelliTrace，請參閱[逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要使用 IntelliTrace 的 Microsoft Azure 應用程式進行偵錯，請參閱[偵錯已發佈的雲端服務使用 IntelliTrace 和 Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)。 |
-| **有限支援** | C-c 目標 Windows 支援檢視快照集使用 IntelliTrace 倒退 + + 應用程式。 支援只偵錯工具和例外狀況的事件。<br />-.NET core 和 ASP.NET Core 應用程式特定事件只 MVC 控制器、 ADO.NET 以及 HTTPClient 」 中支援本機偵錯。 獨立收集器不支援.NET Core 或 ASP.NET Core 應用程式。<br />- 實驗基礎的 F# 應用程式<br />支援僅適用於事件的 UWP 應用程式 |
-| **不支援** | -其他語言和指令碼<br />- Windows 服務、Silverlight、Xbox 或 [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] 應用程式 |
+| **完整的支援** | - 使用 .NET Framework 2.0 或更高版本的 Visual Basic 和 Visual C# 應用程式。<br/>您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br/>若要偵錯 SharePoint 應用程式，使用 IntelliTrace，請參閱[逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要使用 IntelliTrace 的 Microsoft Azure 應用程式進行偵錯，請參閱[偵錯已發佈的雲端服務使用 IntelliTrace 和 Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)。 |
+| **有限支援** | -C++以 Windows 為目標的應用程式支援使用 IntelliTrace 倒退檢視快照集。 支援只偵錯工具和例外狀況的事件。<br />-.NET core 和 ASP.NET Core 應用程式特定事件只 MVC 控制器、 ADO.NET 以及 HTTPClient 」 中支援本機偵錯。 獨立收集器不支援.NET Core 或 ASP.NET Core 應用程式。<br />- 實驗基礎的 F# 應用程式<br />支援僅適用於事件的 UWP 應用程式 |
+| **不支援** | -其他語言和指令碼<br />-Windows 服務、 Silverlight、 Xbox 或 Windows 行動裝置應用程式 |
 
 > [!NOTE]
 > 如果您想要偵錯已執行的處理序，您可以只收集 IntelliTrace 事件 （沒有呼叫資訊）。 您可以附加至只在本機電腦上的 32 位元或 64 位元處理序。 不會收集您附加至處理序之前發生的事件。
@@ -75,7 +75,7 @@ IntelliTrace 也可協助您偵錯難以重現或在部署中發生的錯誤。 
 
 - 如果是使用 Microsoft Monitoring Agent (獨立執行或搭配 System Center 2012 運作)，則為裝載於 IIS 上的 ASP.NET Web 應用程式或是在部署中執行的 SharePoint 2010 和 SharePoint 2013 應用程式。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)並[監視使用 Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx)。
 
-  下面是一些 IntelliTrace 如何協助您偵錯的範例：
+下面是一些 IntelliTrace 如何協助您偵錯的範例：
 
 - 您的應用程式含有損毀的資料檔，但您不知道此事件在何處發生。
 
@@ -127,7 +127,7 @@ IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例�
 
 - **.NET Framework 事件**
 
-   根據預設，IntelliTrace 會記錄最常見的 .NET Framework 事件。 比方說，ror 選取核取方塊事件，IntelliTrace 會收集核取方塊狀態和文字。
+   根據預設，IntelliTrace 會記錄最常見的 .NET Framework 事件。 例如，對於<xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType>事件，IntelliTrace 會收集核取方塊狀態和文字。
 
 - **SharePoint 2010 和 SharePoint 2013 應用程式事件**
 
@@ -175,14 +175,6 @@ IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例�
 根據預設，IntelliTrace 只會針對選取的 IntelliTrace 事件收集資料。 根據程式碼的結構和組織，這不一定會讓您的應用程式變慢。 例如，如果 IntelliTrace 時常記錄某個事件，這可能會讓應用程式變慢。 它也可能會讓您考慮重構應用程式。
 
 收集呼叫資訊可能會使應用程式明顯變慢， 也可能會增加要儲存至磁碟之任何 IntelliTrace 記錄檔 (.iTrace 檔案) 的大小。 若要將這些影響降至最低，請只針對您關注的那些模組收集呼叫資訊。  若要變更 .iTrace 檔案的大小上限，請移至 [工具]、[選項]、[IntelliTrace]、[進階]。
-
-## <a name="in-this-section"></a>本節內容
-
-[IntelliTrace 功能](../debugger/intellitrace-features.md)
-
-[於部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)
-
-[使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)
 
 ### <a name="blogs"></a>部落格
 

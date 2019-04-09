@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aa10945e87022546240d05304f59478b33bb5596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916761"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232312"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502:避免造成過度複雜的方法
 
@@ -44,11 +44,11 @@ ms.locfileid: "55916761"
 
 循環複雜度 = 邊緣-的節點數目 + 1 的數目
 
-其中一個節點代表一個邏輯分支點和邊緣，表示節點之間的線條。
+A*節點*代表邏輯分支點並*edge*表示節點之間的線。
 
 循環複雜度超過 25 項時，此規則會報告違規情形。
 
-您可以深入了解在程式碼度量[測量的複雜性和可維護性的 Managed 程式碼](../code-quality/code-metrics-values.md)，
+您可以深入了解在程式碼度量[測量 managed 程式碼的複雜度](../code-quality/code-metrics-values.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -102,7 +102,7 @@ ms.locfileid: "55916761"
 
 ## <a name="related-rules"></a>相關的規則
 
-[CA1501:避免過度繼承](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501:避免在物件間過度繼承](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>另請參閱
 
