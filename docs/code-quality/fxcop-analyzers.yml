@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 3ded7e5593f40f469ad93dd64e27c24be37b3ed4
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868962"
 documentType: LandingData
 title: FxCop 程式碼分析從移轉至.NET 編譯器平台分析器
 metadata:
@@ -24,80 +18,80 @@ abstract:
       alt: 常見的管理工作標誌
       height: 133
       width: 48
-      src: https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg
-    title: 
+      src: 'https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg'
+    title: null
 sections:
-- title: 常見問題集
-  items:
-  - html: 取得一些解答<a href="fxcop-analyzers-faq.md">常見問題集</a>FxCop 和分析器之間差異的詳細資訊。
-- title: 如果您還不熟悉程式碼分析...
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+  - title: 常見問題集
     items:
-    - href: roslyn-analyzers-overview.md
-      html: <p>了解分析器是什麼。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_learn-about.svg
-      title: 分析器概觀
-    - href: install-roslyn-analyzers.md
-      html: <p>了解如何安裝為 NuGet 套件或 Visual Studio 擴充功能的分析器。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: 安裝分析器
-    - href: use-roslyn-analyzers.md
-      html: <p>了解如何使用分析器和隱藏的違規C#或 Visual Basic 程式碼。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_config-tools.svg
-      title: 設定規則的嚴重性，並隱藏錯誤
-    - href: use-roslyn-analyzers.md#command-line-usage
-      html: <p>了解如何使用從命令列分析器。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_cligeneric.svg
-      title: 命令列使用方式
-- title: 如果您是 FxCop 使用者...
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+      - html: 取得一些解答<a href="fxcop-analyzers-faq.md">常見問題集</a>FxCop 和分析器之間差異的詳細資訊。
+  - title: 如果您還不熟悉程式碼分析...
     items:
-    - href: roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis
-      html: <p>了解靜態 (FxCop) 和分析器套件程式碼分析之間的差異。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_learn-about.svg
-      title: 有何不同？
-    - href: install-fxcop-analyzers.md
-      html: <p>了解如何安裝 FxCop 分析器套件。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: 安裝 FxCop 分析器
-    - href: use-roslyn-analyzers.md#command-line-usage
-      html: <p>如果您通常會從命令列執行程式碼分析，了解如何使用從命令列分析器。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_cligeneric.svg
-      title: 命令列使用方式
-    - href: analyzer-rule-sets.md
-      html: <p>深入了解分析器套件規則集。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-samples.svg
-      title: 規則集
-- title: 相關文章
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: roslyn-analyzers-overview.md
+            html: <p>了解分析器是什麼。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
+            title: 分析器概觀
+          - href: install-roslyn-analyzers.md
+            html: <p>了解如何安裝為 NuGet 套件或 Visual Studio 擴充功能的分析器。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: 安裝分析器
+          - href: use-roslyn-analyzers.md
+            html: '<p>了解如何使用分析器和隱藏的違規C#或 Visual Basic 程式碼。</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
+            title: 設定規則的嚴重性，並隱藏錯誤
+          - href: 'use-roslyn-analyzers.md#command-line-usage'
+            html: <p>了解如何使用從命令列分析器。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
+            title: 命令列使用方式
+  - title: 如果您是 FxCop 使用者...
     items:
-    - href: code-analysis-for-c-cpp-overview.md
-      html: <p>了解如何執行程式碼分析原生 c + + 程式碼。 Managed c + + 程式碼分析已被取代。</p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
-      title: C++ 程式碼分析
-    - href: code-metrics-values.md
-      html: <p>了解如何取得程式碼度量資訊。 程式碼度量資訊的使用者體驗會維持不變。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_data-collection.svg
-      title: 程式碼度量
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
+            html: <p>了解靜態 (FxCop) 和分析器套件程式碼分析之間的差異。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
+            title: 有何不同？
+          - href: install-fxcop-analyzers.md
+            html: <p>了解如何安裝 FxCop 分析器套件。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: 安裝 FxCop 分析器
+          - href: 'use-roslyn-analyzers.md#command-line-usage'
+            html: <p>如果您通常會從命令列執行程式碼分析，了解如何使用從命令列分析器。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
+            title: 命令列使用方式
+          - href: analyzer-rule-sets.md
+            html: <p>深入了解分析器套件規則集。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
+            title: 規則集
+  - title: 相關文章
+    items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: code-analysis-for-c-cpp-overview.md
+            html: <p>了解如何執行程式碼分析原生C++程式碼。 分析 managedC++程式碼已被取代。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Cplusplus.svg'
+            title: C++ 程式碼分析
+          - href: code-metrics-values.md
+            html: <p>了解如何取得程式碼度量資訊。 程式碼度量資訊的使用者體驗會維持不變。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_data-collection.svg'
+            title: 程式碼度量
