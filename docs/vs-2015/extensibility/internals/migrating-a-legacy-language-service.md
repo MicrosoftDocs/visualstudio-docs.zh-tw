@@ -1,26 +1,21 @@
 ---
 title: 移轉舊版語言服務 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, migrating
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 826a27fd3e3041e99f34acce0474a8e71837c69d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4739565408a16ecaeee668264595ec48620ec847
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807604"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939643"
 ---
 # <a name="migrating-a-legacy-language-service"></a>移轉舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -100,11 +95,11 @@ ms.locfileid: "51807604"
   
     -   變更下列欄位：  
   
-    -   **識別碼**: RegExLangServ  
+    -   **識別碼**:RegExLangServ  
   
-    -   **產品名稱**: RegExLangServ  
+    -   **產品名稱**:RegExLangServ  
   
-    -   **描述**： 規則運算式語言服務。  
+    -   **說明**：規則運算式語言服務。  
   
     -   底下**資產**，按一下**新增**，選取**型別**至**Microsoft.VisualStudio.VsPackage**，將**來源**要**目前的方案中的專案**，然後將**專案**來**RegExLangServ**。  
   
@@ -116,4 +111,3 @@ ms.locfileid: "51807604"
   
 ## <a name="see-also"></a>另請參閱  
  [舊版語言服務的擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)
-
