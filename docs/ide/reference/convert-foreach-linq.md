@@ -41,7 +41,7 @@ ms.locfileid: "58160270"
 
    ![轉換為 LINQ 功能表](media/convert-foreach-to-LINQ-codefix.png)
 
-3. 選取 [轉換成 LINQ] 或 [轉換成 Linq (呼叫表單)]
+3. 選取 [轉換成 LINQ] 或 [轉換成 LINQ (呼叫表單)]
 
    ![LINQ 查詢結果](media/convert-foreach-to-LINQ-result.png)
    
