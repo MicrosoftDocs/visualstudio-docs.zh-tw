@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41acd93dc89d84fa3fa96bc1228c57271f1fc21d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957464"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866688"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
 
@@ -31,7 +31,7 @@ ms.locfileid: "55957464"
 如需在 Visual C++ 專案中簽署組件的資訊，請參閱[強式名稱組件 (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)。
 
 > [!NOTE]
-> 強式名稱簽章無法保護組件免受反向工程的威脅。 若要防止反向工程，請參閱 [Dotfuscator Community Edition (CE)](dotfuscator/index.md)。
+> 強式名稱簽章無法保護組件免受反向工程的威脅。 若要防止反向工程，請參閱 [Dotfuscator Community](dotfuscator/index.md)。
 
 ## <a name="asset-types-and-signing"></a>資產類型和簽署
 
@@ -57,7 +57,7 @@ ms.locfileid: "55957464"
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>如何簽署 Visual Studio 中的組件
 
-使用 [專案屬性] 視窗的 [簽署] 索引標籤來簽署應用程式或元件 (以滑鼠右鍵按一下 [方案總管] 中的專案節點，然後選取 [屬性]，或在 [快速啟動] 視窗中鍵入**專案屬性**，或在 [方案總管] 中按 **Alt**+**Enter**)。 選取 [簽署] 索引標籤，然後選取 [簽署組件] 核取方塊。
+使用 [專案屬性] 視窗的 [簽署] 索引標籤來簽署應用程式或元件 (以滑鼠右鍵按一下 [方案總管] 中的專案節點，然後選取 [屬性])。 選取 [簽署] 索引標籤，然後選取 [簽署組件] 核取方塊。
 
 指定金鑰檔。 如果您選擇建立新的金鑰檔，新的金鑰檔一律會使用 *.pfx* 格式建立。 您需要新檔案的名稱和密碼。
 
@@ -72,5 +72,5 @@ ms.locfileid: "55957464"
 
 ## <a name="see-also"></a>另請參閱
 
-- [強式名稱的組件](/dotnet/framework/app-domains/strong-named-assemblies)
+- [強式名稱組件](/dotnet/framework/app-domains/strong-named-assemblies)
 - [強式名稱組件 (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

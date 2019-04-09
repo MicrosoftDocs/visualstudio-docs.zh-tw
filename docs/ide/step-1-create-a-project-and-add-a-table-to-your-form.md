@@ -2,18 +2,20 @@
 title: 步驟 1：建立專案並將資料表新增至表單
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c5178323c2ee5e92164ca1fd71c5fe88d51d6f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940655"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647488"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步驟 1：建立專案並將資料表新增至表單
 
@@ -21,7 +23,23 @@ ms.locfileid: "55940655"
 
 ## <a name="to-create-a-project-and-add-a-table-to-your-form"></a>若要建立專案並將資料表加入至表單
 
+::: moniker range="vs-2017"
+
 1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 在開始視窗中，選擇 [建立新專案]。
+
+1. 在搜尋方塊中，輸入 "WPF"，選擇 [WPF App (.NET Framework)]，然後選擇 [下一步]。
+
+   (如果您未看到 [WPF 應用程式 (.NET Framework)] 範本，請使用 Visual Studio 安裝程式來安裝 [.NET 桌面開發] 工作負載。)
+
+1. 提供專案名稱 (**MatchingGame**)，然後選擇 [建立]
+
+::: moniker-end
 
 2. 如果您不是使用 Visual Studio Express，則必須先選取程式設計語言。 從 [安裝的範本] 清單中選擇 [Visual C#] 或 [Visual Basic]。
 
