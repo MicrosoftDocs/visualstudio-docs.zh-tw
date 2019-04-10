@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c43e1edc2e2aae13fef6df4b4fe414b933067798
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018385"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366038"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的安全性規則規則集
 您應該包含 Microsoft 安全性規則規則集以最大化所報告的潛在安全性問題數目。
@@ -63,15 +63,18 @@ ms.locfileid: "59018385"
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|CA2147：透明方法不可以使用安全性判斷提示|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|透明方法不可以呼叫機器碼|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|組件應該具備有效的強式名稱|
-|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|檢閱 SQL 資料隱碼弱點的程式碼|
-|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|XSS 弱點檢閱程式碼|
-|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|檢閱程式碼的檔案路徑資料隱碼攻擊弱點|
-|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|檢閱資訊洩漏弱點的程式碼|
-|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|檢閱 LDAP 插入式攻擊弱點的程式碼|
-|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|檢閱程序命令插入式攻擊弱點的程式碼|
-|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|檢閱開啟重新導向弱點的程式碼|
-|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|檢閱 XPath 資料隱碼弱點的程式碼|
-|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|檢閱程式碼的 XML 資料隱碼攻擊弱點|
-|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|檢閱 XAML 資料隱碼弱點的程式碼|
-|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|檢閱 DLL 資料隱碼弱點的程式碼|
-|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|檢閱 regex 資料隱碼弱點的程式碼|
+|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|請勿使用不安全還原 BinaryFormatter 序列化程式|
+|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|如果沒有第一個設定 BinaryFormatter.Binder 不呼叫 BinaryFormatter.Deserialize|
+|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|請確定呼叫 BinaryFormatter.Deserialize 之前設定 BinaryFormatter.Binder|
+|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|檢閱程式碼是否有 SQL 插入式攻擊弱點|
+|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|檢閱程式碼是否有 XSS 弱點|
+|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|檢閱程式碼是否有檔案路徑插入式攻擊弱點|
+|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|檢閱程式碼是否有資訊洩漏弱點|
+|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|檢閱程式碼是否有 LDAP 插入式攻擊弱點|
+|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|檢閱程式碼是否有處理序命令插入式攻擊弱點|
+|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|檢閱程式碼是否有開放式重新導向弱點|
+|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|檢閱程式碼是否有 XPath 插入式攻擊弱點|
+|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|檢閱程式碼是否有 XML 插入式攻擊弱點|
+|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|檢閱程式碼是否有 XAML 插入式攻擊弱點|
+|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|檢閱程式碼是否有 DLL 插入式攻擊弱點|
+|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|檢閱程式碼是否有 regex 插入式攻擊弱點|

@@ -1,5 +1,5 @@
 ---
-title: 遠端偵錯 IIS 和 Azure 上的 ASP.NET Core |Microsoft Docs
+title: 遠端偵錯 IIS 與 Azure 上的 ASP.NET Core |Microsoft 文件
 ms.custom: remotedebugging
 ms.date: 05/21/2018
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 694a9f7ba6bd5870a54b6b10e028c463d47ababf
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355798"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365910"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>在 Visual Studio 中的 Azure 中的 IIS 上的遠端偵錯 ASP.NET Core
 
@@ -24,8 +24,8 @@ ms.locfileid: "58355798"
 
 在 Azure 上的遠端偵錯的建議的方式取決於您的案例：
 
-* 若要偵錯 Azure App Service 上的 ASP.NET Core，請參閱[使用快照集偵錯工具的偵錯 Azure 應用程式](../debugger/debug-live-azure-applications.md)。 這是建議的方法。
-* 若要使用更傳統的偵錯功能的 Azure App Service 上的 ASP.NET Core 進行偵錯，請遵循本主題中的步驟 (請參見[遠端偵錯 Azure App Service 上](#remote_debug_azure_app_service))。
+* 若要偵錯 ASP.NET Core Azure App Service 上，請參閱[使用快照集偵錯工具的偵錯 Azure 應用程式](../debugger/debug-live-azure-applications.md)。 這是建議的方法。
+* 若要偵錯 ASP.NET Core 上使用較傳統的偵錯功能的 Azure 應用程式服務，請遵循本主題中的步驟 (請參閱節[遠端偵錯 Azure App Service 上](#remote_debug_azure_app_service))。
 
     在此案例中，您必須部署至 Azure 應用程式從 Visual Studio，但您不需要手動安裝或設定 IIS 或遠端偵錯工具 （這些元件會以虛線表示），如下圖所示。
 
@@ -37,7 +37,7 @@ ms.locfileid: "58355798"
 
     ![遠端偵錯工具元件](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
 
-* 若要偵錯 Azure Service Fabric 上的 ASP.NET Core，請參閱[偵錯遠端 Service Fabric 應用程式](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)。
+* 若要偵錯在 Azure Service Fabric ASP.NET Core 時，請參閱[遠端 Service Fabric 應用程式進行偵錯](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)。
 
 > [!WARNING]
 > 請務必刪除您已完成的步驟，在本教學課程時所建立的 Azure 資源。 這樣一來，您可以避免產生不必要的費用。
@@ -70,7 +70,7 @@ Visual Studio 2017，才能遵循本文中所示的步驟。
 
 ## <a name="remote_debug_azure_app_service"></a> Azure App Service 上的遠端偵錯 ASP.NET Core
 
-從 Visual Studio 中，您可以快速發行及偵錯您的應用程式至 IIS 的完整佈建執行個體。 不過，在預設的 IIS 設定，而且您無法自訂它。 如需詳細指示，請參閱 <<c0> [ 將 ASP.NET Core web 應用程式部署至 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果您需要自訂 IIS 功能，請嘗試偵錯[Azure VM](#remote_debug_azure_vm)。)
+從 Visual Studio 中，您可以快速發行及偵錯您的應用程式至 IIS 的完整佈建執行個體。 不過，在預設的 IIS 設定，而且您無法自訂它。 如需詳細指示，請參閱[ASP.NET Core web 應用程式部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果您需要自訂 IIS 功能，請嘗試偵錯[Azure VM](#remote_debug_azure_vm)。)
 
 #### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>若要部署應用程式，並使用伺服器總管 中的遠端偵錯
 
@@ -80,7 +80,7 @@ Visual Studio 2017，才能遵循本文中所示的步驟。
 
 1. 選擇**Azure App Service**從**發佈**對話方塊中，選取**新建**，並遵循提示來發行。
 
-    如需詳細指示，請參閱[使用 Visual Studio 將 ASP.NET Core Web 應用程式部署至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
+    如需詳細指示，請參閱[ASP.NET Core web 應用程式部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
 
     ![發佈至 Azure App Service](../debugger/media/remotedbg_azure_app_service_profile.png)
 
@@ -92,7 +92,7 @@ Visual Studio 2017，才能遵循本文中所示的步驟。
 
     就這麼容易！ 本主題中步驟的其餘部分，適用於 Azure VM 上的遠端偵錯。
 
-## <a name="remote_debug_azure_vm"></a> 在 Azure VM 上的遠端偵錯 ASP.NET Core
+## <a name="remote_debug_azure_vm"></a> Azure VM 上的遠端偵錯 ASP.NET Core
 
 您可以建立 Windows Server Azure VM，然後安裝並設定 IIS 和其他必要的軟體元件。 這花費的時間超出部署至 Azure App Service，而且需要您在本教學課程中遵循的其餘步驟。
 
@@ -123,9 +123,9 @@ Visual Studio 2017，才能遵循本文中所示的步驟。
 
 當您下載軟體時，您可能會收到負載各種 web 站台指令碼和資源的權限授與的要求。 其中一些資源並不需要，但若要簡化程序中，按一下**新增**出現提示時。
 
-### <a name="install-aspnet-core-on-windows-server"></a>在 Windows Server 上安裝 ASP.NET Core
+### <a name="install-aspnet-core-on-windows-server"></a>Windows 伺服器上安裝 ASP.NET Core
 
-1. 在主控系統上安裝 [.NET Core Windows Server 裝載套件組合](https://aka.ms/dotnetcore-2-windowshosting)。 套件組合會安裝 .NET Core 執行階段、.NET Core 程式庫和 ASP.NET Core 模組。 如需詳細的深入指示，請參閱[Publishing to IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
+1. 在主控系統上安裝 [.NET Core Windows Server 裝載套件組合](https://aka.ms/dotnetcore-2-windowshosting)。 組合將會安裝.NET Core 執行階段、.NET Core 程式庫和 ASP.NET Core 模組。 如需詳細的深入指示，請參閱[Publishing to IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 
     > [!NOTE]
     > 如果系統沒有網際網路連線，請先取得並安裝 [Microsoft Visual C++ 2015 可轉散發套件](https://www.microsoft.com/download/details.aspx?id=53840)，再安裝 .NET Core Windows Server 裝載套件組合。
@@ -159,7 +159,7 @@ Visual Studio 2017，才能遵循本文中所示的步驟。
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-應用程式部署成功之後，它應該會自動啟動。 如果應用程式從 Visual Studio 不會啟動，請在 IIS 中啟動應用程式。 針對 ASP.NET Core，您必須先確定**DefaultAppPool** 的 [應用程式集區] 欄位設定為 [沒有受控程式碼]。
+應用程式部署成功之後，它應該會自動啟動。 如果應用程式從 Visual Studio 不會啟動，請在 IIS 中啟動應用程式。 您需要確定應用程式集區欄位的 ASP.NET Core **DefaultAppPool**設**沒有 Managed 程式碼**。
 
 1. 在**設定**對話方塊中，按一下 偵錯的啟用**下一步**，選擇**偵錯**組態，然後選擇 **移除其他檔案目的地**底下**檔案發行**選項。
 
@@ -211,16 +211,19 @@ Visual Studio 2017，才能遵循本文中所示的步驟。
 2. 在 Visual Studio 中，按一下**偵錯 > připojit k procesu** （Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 和更新版本中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...** Shift+Alt+P
+    > 在 Visual Studio 2017 和更新版本中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...**(Shift + Alt + P)。
 
-3. [限定詞] 欄位設定為**\<遠端電腦名稱 >： 連接埠**。
+3. [限定詞] 欄位設定為**\<遠端電腦名稱 >** 按下**Enter**。
+
+    確認，Visual Studio 會將所需的連接埠新增至 電腦名稱，就會出現在格式： **\<遠端電腦名稱 >： 連接埠**
 
     ::: moniker range=">=vs-2019"
-    **\<遠端電腦名稱 >: 4024**於 Visual Studio 2019
+    在 Visual Studio 2019，您應該會看到**\<遠端電腦名稱 >: 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **\<遠端電腦名稱 >: 4022**上 Visual Studio 2017
+    在 Visual Studio 2017，您應該會看到**\<遠端電腦名稱 >: 4022**
     ::: moniker-end
+    需要連接埠。 如果您沒有看到連接埠號碼，請手動新增。
 
 4. 按一下 [重新整理]。
     您應該會看到有些處理程序會出現在 [可使用的處理序]  視窗。
@@ -231,11 +234,20 @@ Visual Studio 2017，才能遵循本文中所示的步驟。
 
 5. 核取 [顯示所有使用者的處理序]  。
 
-6. 輸入以快速找出處理序名稱的第一個字母*dotnet.exe* （適用於 ASP.NET Core)。
+6. 輸入您的處理程序名稱，以快速找出您的應用程式的第一個字母。
 
-   ASP.NET Core 應用程式，先前的程序名稱已*dnx.exe*。
+    * 選取  **dotnet.exe** （適用於.NET Core)
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
+      如果您有多個處理序顯示**dotnet.exe**，檢查**使用者名**資料行。 在某些情況下，**使用者名**資料行中顯示您應用程式集區的名稱，例如**IIS APPPOOL\DefaultAppPool**。 如果您會看到應用程式集區，輕鬆地找出正確的處理序是建立新應用程式集區命名為應用程式執行個體，您要偵錯，然後您可以找到它輕鬆地在**使用者名**資料行。
+
+    * 在某些 IIS 案例中，您可能會發現您的應用程式名稱在程序清單中，這類**MyASPApp.exe**。 您可以改為附加至此處理序。
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. 按一下 [附加] 。
 
@@ -246,7 +258,7 @@ Visual Studio 2017，才能遵循本文中所示的步驟。
 
     應該在 Visual Studio 中叫用中斷點。
 
-### <a name="bkmk_openports"></a> 疑難排解在 Windows Server 上開啟必要的連接埠
+### <a name="bkmk_openports"></a> 疑難排解：在 Windows Server 上開啟必要的連接埠
 
 在大部分的配置，所需的連接埠已開啟 ASP.NET 和遠端偵錯工具的安裝。 不過，如果您正在疑難排解部署問題的應用程式裝載在防火牆後方，您可能需要確認正確的連接埠已開啟。
 

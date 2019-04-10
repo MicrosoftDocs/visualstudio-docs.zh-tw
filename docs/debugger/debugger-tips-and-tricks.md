@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe676731170b0e643e00b1ab5e10aa768f256434
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526356"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366298"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 中偵錯工具的產能的秘訣和訣竅
 
@@ -31,7 +31,7 @@ ms.locfileid: "57526356"
 
 ![固定資料提示](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>編輯您的程式碼，並繼續偵錯 (C#、 VB、 c + +)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>編輯您的程式碼，並繼續偵錯 (C#，VB， C++)
 
 在大部分的語言支援的 Visual Studio 中，您可以編輯您的程式碼在偵錯工作階段中央，並繼續偵錯。 若要使用這項功能，可按一下以進入您的程式碼，將游標暫停偵錯工具，請編輯，然後按下時使用**F5**， **F10**，或**F11**繼續偵錯。
 
@@ -64,7 +64,7 @@ ms.locfileid: "57526356"
 > [!WARNING]
 > 您通常需要謹慎使用這項功能，您會在工具提示中看到一則警告。 也可能會看到其他警告。 將指標移無法還原成先前的應用程式狀態的應用程式。
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>追蹤的範圍外的物件 (C#，Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>追蹤範圍外的物件 （C#、 Visual Basic）
 
 就可以輕鬆地檢視變數使用偵錯工具視窗，例如**監看式**視窗。 不過，當變數超出範圍內**監看式** 視窗中，您可能會注意到，它會呈現灰色。在某些應用程式案例中，即使變數超出範圍，以及要密切，可能會變更變數的值 （例如，變數可能會收到回收）。 您可以在建立物件識別碼來追蹤變數**監看式**視窗。
 
@@ -106,7 +106,7 @@ ms.locfileid: "57526356"
 
 ![JSON 字串視覺化檢視](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-例如偵錯工具視窗中顯示的 WPF 物件其他一些類型，您也可以開啟視覺化檢視。
+例如會出現在偵錯工具視窗的 DataSet 和 DataTable 物件其他一些類型，您也可以開啟內建的視覺化檢視。
 
 ## <a name="break-into-code-on-handled-exceptions"></a>中斷程式碼上處理的例外狀況
 
@@ -144,11 +144,11 @@ ms.locfileid: "57526356"
 
 如需詳細資訊，請參閱[網路使用量](../profiling/network-usage.md)。
 
-## <a name="modules_window"></a> 更熟悉的偵錯工具會將附加至您的應用程式 (C#，c + +、 Visual Basic 中， F#)
+## <a name="modules_window"></a> 更熟悉的偵錯工具會將附加至您的應用程式 (C#， C++，Visual Basic 中， F#)
 
 若要附加至您執行的應用程式，偵錯工具會載入針對您嘗試偵錯的應用程式的完全相同的組建產生的符號 (.pdb) 檔。 在某些情況下，符號檔的一些知識可以很有幫助。 您可以檢查 Visual Studio 會使用的符號檔的載入**模組**視窗。
 
-開啟**模組**視窗中的選取偵錯時**偵錯 > Windows > 模組**。 **模組**] 視窗可以告訴您哪些模組偵錯工具會視為使用者程式碼，或[ *My Code*](../debugger/just-my-code.md)，和符號載入模組的狀態。 在大部分情況下，偵錯工具會自動尋找符號檔的使用者程式碼，但如果您想要逐步執行 （或偵錯）.NET framework 程式碼、 系統程式碼或協力廠商程式庫程式碼，需要額外的步驟，以取得正確的符號檔。
+開啟**模組**視窗中的選取偵錯時**偵錯 > Windows > 模組**。 **模組**視窗可以告訴您哪些模組偵錯工具會視為使用者程式碼，或[ *My Code*](../debugger/just-my-code.md)，和符號載入模組的狀態。 在大部分情況下，偵錯工具會自動尋找符號檔的使用者程式碼，但如果您想要逐步執行 （或偵錯）.NET framework 程式碼、 系統程式碼或協力廠商程式庫程式碼，需要額外的步驟，以取得正確的符號檔。
 
 ![在 [模組] 視窗中檢視符號資訊](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 
@@ -165,5 +165,5 @@ ms.locfileid: "57526356"
 - [在 Visual Studio 中偵錯的較小者已知的駭客 7](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [在 Visual Studio 中隱藏的寶藏 7](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [鍵盤快速鍵](../ide/tips-and-tricks-for-visual-studio.md)

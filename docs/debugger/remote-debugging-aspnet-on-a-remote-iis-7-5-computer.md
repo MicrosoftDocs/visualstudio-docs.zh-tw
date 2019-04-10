@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 5ebc7c3c172502198f56a8e35107f37d51ef2509
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: ba255d1d1e906e8fe7bacd05d1f4afd4b7bf413b
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355720"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366467"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>在執行 IIS 的遠端電腦上對 ASP.NET 進行遠端偵錯
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝並部署您的應用程式的所在的電腦上執行遠端工具，然後連結至您執行的應用程式從 Visual Studio。
@@ -200,25 +200,37 @@ Visual Studio 2017，才能遵循本文中所示的步驟。
 2. 在 Visual Studio 中，按一下**偵錯 > připojit k procesu** （Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 和更新版本中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...** Shift+Alt+P
+    > 在 Visual Studio 2017 和更新版本中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...**(Shift + Alt + P)。
 
-3. [限定詞] 欄位設定為**\<遠端電腦名稱 >： 連接埠**。
+3. [限定詞] 欄位設定為**\<遠端電腦名稱 >** 按下**Enter**。
+
+    確認，Visual Studio 會將所需的連接埠新增至 電腦名稱，就會出現在格式： **\<遠端電腦名稱 >： 連接埠**
 
     ::: moniker range=">=vs-2019"
-    **\<遠端電腦名稱 >: 4024**於 Visual Studio 2019
+    在 Visual Studio 2019，您應該會看到**\<遠端電腦名稱 >: 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **\<遠端電腦名稱 >: 4022**上 Visual Studio 2017
+    在 Visual Studio 2017，您應該會看到**\<遠端電腦名稱 >: 4022**
     ::: moniker-end
+    需要連接埠。 如果您沒有看到連接埠號碼，請手動新增。
+
 4. 按一下 [重新整理]。
     您應該會看到有些處理程序會出現在 [可使用的處理序]  視窗。
 
     如果您沒有看到任何處理程序，請嘗試使用的 IP 位址，而不 （連接埠是必要的） 遠端電腦名稱。 您可以使用`ipconfig`取得 IPv4 位址的命令列。
 
 5. 核取 [顯示所有使用者的處理序]  。
+
 6. 輸入以快速找出處理序名稱的第一個字母**w3wp.exe**針對 ASP.NET 4.5。
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess.png "RemoteDBG_AttachToProcess")
+    如果您有多個處理序顯示**w3wp.exe**，檢查**使用者名**資料行。 在某些情況下，**使用者名**資料行中顯示您應用程式集區的名稱，例如**IIS APPPOOL\DefaultAppPool**。 如果您會看到應用程式集區，輕鬆地找出正確的處理序是建立新應用程式集區命名為應用程式執行個體，您要偵錯，然後您可以找到它輕鬆地在**使用者名**資料行。
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. 按一下 [附加]
 
@@ -229,7 +241,7 @@ Visual Studio 2017，才能遵循本文中所示的步驟。
 
     應該在 Visual Studio 中叫用中斷點。
 
-## <a name="bkmk_openports"></a> 疑難排解在 Windows Server 上開啟必要的連接埠
+## <a name="bkmk_openports"></a> 疑難排解：在 Windows Server 上開啟必要的連接埠
 
 在大部分的配置，所需的連接埠已開啟 ASP.NET 和遠端偵錯工具的安裝。 不過，您可能需要確認已開啟連接埠。
 

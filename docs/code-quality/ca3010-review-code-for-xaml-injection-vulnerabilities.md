@@ -1,5 +1,5 @@
 ---
-title: CA3010:檢閱 XAML 資料隱碼弱點的程式碼
+title: CA3010：檢閱程式碼是否有 XAML 插入式攻擊弱點
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d8a94dbda7cbf61ac918025aee176cb95781b2
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: ea53f5e0cddf1dc6c6caf4c7fcfb79af52ce354e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018565"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365012"
 ---
-# <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010:檢閱 XAML 資料隱碼弱點的程式碼
+# <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010：檢閱程式碼是否有 XAML 插入式攻擊弱點
 
 |||
 |-|-|
@@ -28,7 +28,7 @@ ms.locfileid: "59018565"
 
 ## <a name="cause"></a>原因
 
-可能不受信任的 HTTP 要求輸入達到<xref:System.Windows.Markup.XamlReader?displayProperty=fullName>負載方法。
+可能不受信任的 HTTP 要求輸入達到<xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType>負載方法。
 
 ## <a name="rule-description"></a>規則描述
 

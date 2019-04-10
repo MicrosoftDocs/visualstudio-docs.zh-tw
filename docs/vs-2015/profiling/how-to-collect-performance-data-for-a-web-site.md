@@ -1,5 +1,5 @@
 ---
-title: 如何：收集網站的效能資料 | Microsoft Docs
+title: HOW TO：收集網站的效能資料 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,17 +19,17 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766148"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366727"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：使用效能精靈對網站或 Web 應用程式進行程式碼剖析
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>HOW TO：為網站收集效能資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用 [效能精靈] 收集 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式的效能資料。 您可以對 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟之 Web 應用程式進行程式碼剖析，也可以對位於本機電腦上但在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中未開啟之 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 網站進行程式碼剖析。  
+您可以使用 [效能精靈]  收集 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式的效能資料。 您可以對 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟之 Web 應用程式進行程式碼剖析，也可以對位於本機電腦上但在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中未開啟之 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 網站進行程式碼剖析。  
   
 > [!NOTE]
 >  [效能精靈]  可讓您將階層互動 (TIP) 資料及/或 JScript 效能資料新增至收集的程式碼剖析資料。 TIP 選項會從伺服器端處理序收集資料。 JScript 程式碼剖析會從本機或遠端網站上執行的指令碼收集資料。 在大部分情況下，您應該只選擇其中一個選項。  
@@ -84,7 +84,7 @@ ms.locfileid: "54766148"
   
    - 針對檔案架構的網站，請輸入如檔案///**c:\WebSites\MySite\default.aspx**之類的路徑。 這會對位於 c:\webSites\MySite 的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式進行分析，然後 Internet Explorer 會啟動 http://localhost:nnnn/MySite/default.aspx 頁面以開始工作階段。  
   
-   - 針對您想要收集 JavaScript 資料的外部網站，請鍵入如 http://www.contoso.com 之類的 URL。  
+   - 外部網站，針對您想要收集 JavaScript 資料上，輸入 URL，例如 http:\//www.contoso.com。  
   
      如需詳細資訊，請檢視 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 目標二進位檔的屬性頁。  
   
@@ -102,8 +102,8 @@ ms.locfileid: "54766148"
   
      分析工具隨即產生資料檔案，並在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 主視窗中顯示資料的 [摘要] 檢視。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
- [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)   
- [了解取樣資料值](../profiling/understanding-sampling-data-values.md)
+ [認識檢測資料值](../profiling/understanding-instrumentation-data-values.md)   
+ [認識取樣資料值](../profiling/understanding-sampling-data-values.md)

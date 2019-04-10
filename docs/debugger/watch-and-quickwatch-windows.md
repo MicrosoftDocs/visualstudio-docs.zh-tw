@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8045b5f52dc57838731c24d41534c05b7cd1094
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723249"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366805"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>監看式變數使用監看式視窗和快速監看式
 
@@ -73,8 +73,8 @@ int main()
 1. 繼續選取偵錯**偵錯** > **逐步**或按下**F11**視前進。 變數值會在**監看式** 視窗變更為您逐一查看`for`迴圈。
 
 >[!NOTE]
->僅限 c + +
->- 您可能需要限定變數名稱或使用變數名稱的運算式的內容。 內容是函式、 原始程式檔或變數所在的模組。 如果您限定內容，請使用[內容運算子 （c + +）](../debugger/context-operator-cpp.md)中的語法**名稱**中**監看式**視窗。
+>針對C++，
+>- 您可能需要限定變數名稱或使用變數名稱的運算式的內容。 內容是函式、 原始程式檔或變數所在的模組。 如果您限定內容，請使用[內容運算子 (C++)](../debugger/context-operator-cpp.md)中的語法**名稱**中**監看式**視窗。
 >
 >- 您可以將暫存器名稱和使用的變數名稱 **$\<註冊&nbsp;名稱 >** 或是 **@\<註冊&nbsp;名稱 >** 要**名稱**中**監看式**視窗。 如需詳細資訊，請參閱 [Pseudovariables](../debugger/pseudovariables.md)。
 
@@ -91,6 +91,19 @@ int main()
 ![監看運算式錯誤](../debugger/media/watchexpressionerror.png "監看運算式錯誤")
 
 中會有兩條波浪線圖示的圓形**監看式**視窗。 這個圖示表示偵錯工具不會評估運算式，因為潛在的跨執行緒相依性。 評估程式碼需要暫時執行應用程式中的其他執行緒，但通常是因為您處於中斷模式時，會停止您的應用程式中的所有執行緒。 允許暫時執行其他執行緒可以有未預期的影響，在您的應用程式與偵錯工具的狀態可能會忽略事件，例如中斷點和在這些執行緒的例外狀況。
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-watch-window"></a>在 [監看式] 視窗中搜尋
+
+您可以搜尋的名稱、 值和型別資料行中的關鍵字**監看式**使用每個視窗上方的 [搜尋] 列的視窗。 按下 enter 鍵，或選取其中一個箭號，以執行搜尋。 若要取消進行中的搜尋，請在搜尋列中選取"x"圖示。
+
+使用左邊和右邊的箭號 (Shift + F3 和 F3，分別) 之間瀏覽找到相符項目。
+
+![在 監看式視窗中的搜尋](../debugger/media/ee-search-watch.png "監看式視窗中的搜尋")
+
+若要您的搜尋更多或更少徹底，利用**搜尋更深入**頂端的下拉式清單**監看式**視窗，即可選取您想要搜尋到多少層級深度巢狀物件。 
+
+::: moniker-end
 
 ### <a name="bkmk_refreshWatch"></a> 重新整理監看值
 
@@ -218,8 +231,8 @@ public class Program
 
 若只要顯示**動態檢視**物件，請新增**動態**格式規範中的動態物件名稱之後**監看式**視窗：
 
-- 若為 C#：`ObjectName, dynamic`
-- 若為 Visual basic：`$dynamic, ObjectName`
+- 若為 C#： `ObjectName, dynamic`
+- 若為 Visual Basic： `$dynamic, ObjectName`
 
 >[!NOTE]
 >- C#偵錯工具不會自動重新評估中的值**動態檢視**當您逐步執行至下一行程式碼。
@@ -274,7 +287,7 @@ static void Main(string[] args)
 
 1. 若要加入的變數或運算式，從**快速監看式**要**監看式**視窗中，選取**加入監看式**。
 
-1. 選取 **關閉** 以關閉**快速監看式**視窗。 (**快速監看式**是強制回應對話方塊中，因此您無法繼續偵錯，只要已開啟。)
+1. 選取 **關閉 **以關閉**快速監看式**視窗。 (**快速監看式**是強制回應對話方塊中，因此您無法繼續偵錯，只要已開啟。)
 
 1. 繼續偵錯。 您可以觀察在變數**監看式**視窗。
 
