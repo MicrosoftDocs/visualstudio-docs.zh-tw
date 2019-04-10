@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62efe11b7c640e228a3b4120259facec3b6f9d4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794237"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366610"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>在程式碼和文字編輯器中撰寫程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,7 +122,7 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
 
  ![[向前巡覽] 及 [向後巡覽] 按鈕](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- 您也可以使用程式碼視窗中的進階捲軸，以取得程式碼的鳥瞰檢視。 在地圖模式中，您可以向上移動游標時，並向下捲軸，如需詳細資訊，請參閱預覽程式碼，請參閱[How to:透過自訂捲軸的方式追蹤程式碼](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+ 您也可以使用程式碼視窗中的進階捲軸，以取得程式碼的鳥瞰檢視。 在地圖模式中，您可以向上移動游標時，並向下捲軸，如需詳細資訊，請參閱預覽程式碼，請參閱[How to:自訂捲軸以追蹤程式碼](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)。  
 
  下列命令是程式碼專屬的巡覽方法：  
 
@@ -130,9 +130,9 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
 |-|-|  
 |移至 \<行號>|(**編輯/前往**或 CTRL + G):移至使用中文件的特定行號。|  
 |巡覽至|(**編輯/瀏覽至**或 CTRL +，):在使用中的方案中尋找符號或檔案。 其可協助您從查詢中挑選一組適當的相符結果。 您可以使用駝峰式命名法來搜尋包含在符號中的關鍵字，並將字元加底線以將符號分割為關鍵字。|  
-|尋找所有參考|(操作功能表)：在方案中尋找選取項目的所有參考。|  
+|尋找所有參考|（操作功能表）：在解決方案中尋找選取項目的所有參考。|  
 |移至定義|（操作功能表或 F12）：尋找選取項目的定義。|  
-|查看定義|（操作功能表或 Alt + F12）：尋找選取項目的定義，並顯示在快顯視窗。 如需詳細資訊，請參閱[如何：使用查看定義檢視和編輯程式碼 (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。|  
+|查看定義|（操作功能表或 Alt + F12）：尋找選取項目的定義，並顯示在快顯視窗。 如需詳細資訊，請參閱[如何：檢視和編輯程式碼使用查看定義 (alt+f12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。|  
 |下一個方法，上一個方法|在 Visual Basic 程式碼檔案中，請使用這些命令 ([編輯]/[下一個方法]、[上一個方法]) 以將插入點移動至不同的方法。|  
 |反白顯示參考|當您按一下原始程式碼中的符號時，該符號在文件的所有出現處，都將反白顯示。 反白顯示的符號可能包含宣告和參考，以及許多其他 [尋找所有參考]  會傳回的符號。 其中包括類別、物件、變數、方法和屬性的名稱。 在 Visual Basic 程式碼中，許多控制項結構的關鍵字也會反白顯示。 若要移到下一個或上一個反白顯示的符號，請按 CTRL+SHIFT+向下鍵或 CTRL+SHIFT+向上鍵。 您可以在 [工具]/[選項]/[環境]/[字型和色彩]/[反白顯示的參考] |  
 |尋找與程式碼相關的資訊|當您在程式碼編輯器中使用 CodeLens 時，可以尋找特定程式碼的相關資訊，例如變更及進行這些變更的人員、參考、Bug、工作項目、程式碼檢閱和單元測試狀態。 當您使用 Visual Studio Enterprise 與 Team Foundation Server 時，CodeLens 將以類似抬頭顯示方式執行。 請參閱[尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)。|  
@@ -174,7 +174,7 @@ Visual Studio 的 [巡覽至] 命令會對程式碼執行焦點式搜尋，協�
 
 ### <a name="filter-your-search"></a>篩選您的搜尋
 
-若要將搜尋範圍限制為僅限程式碼符號，請在 [巡覽至] 查詢的前面加上 "@" 字元。 例如，如果您搜尋 `@application`，則 [巡覽至] 只會顯示包含 "application" 這個字的類別。
+若要限制搜尋範圍，以僅限程式碼符號前, 加上以巡覽至 查詢 「\@"字元。 例如，如果您搜尋 `@application`，則 [巡覽至] 只會顯示包含 "application" 這個字的類別。
 
 如果您在程式碼中使用駝峰式命名法，則只要輸入程式碼項目名稱的大寫字母，就可以更快速地找到程式碼項目。 例如，如果您的程式碼有一個稱為 `ViewSwitcher` 的元件，則只要在 [巡覽至] 視窗中輸入名稱的大寫字母 (`"VS"`) 就可以找到它。
 
@@ -183,7 +183,7 @@ Visual Studio 的 [巡覽至] 命令會對程式碼執行焦點式搜尋，協�
 如果您的程式碼名稱很長，這個功能就特別有用。
 
 ## <a name="customize-the-editor"></a>自訂編輯器  
- **匯入和匯出設定**：您可以與另一個開發人員共用設定、使設定符合標準，或使用 [工具]  功能表上的 [匯入和匯出設定精靈]  ，將其回復為 Visual Studio 預設設定。 您可以變更一般設定或語言以及專案專屬的設定。  
+ **匯入和匯出設定**:您可以與另一個開發人員共用設定、 使設定符合標準，或返回 Visual Studio 預設設定，使用**匯入和匯出設定精靈**上**工具**功能表。 您可以變更一般設定或語言以及專案專屬的設定。  
 
  **鍵盤對應**:您可以定義新的熱鍵或重新定義現有的工具/選項/環境/鍵盤設定。 如需快速鍵的詳細資訊，請參閱[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。  
 
@@ -191,13 +191,13 @@ Visual Studio 的 [巡覽至] 命令會對程式碼執行焦點式搜尋，協�
 
 -   [Visual Basic 設定](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [使用 C# 的 Visual Studio 開發環境](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+-   [使用 Visual Studio 開發環境適用於 C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
 -   [格式、JavaScript、文字編輯器、選項](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>本節內容  
 
--   [尋找和取代文字](../ide/finding-and-replacing-text.md)  
+-   [Finding and Replacing Text](../ide/finding-and-replacing-text.md)  
 
 -   [編碼與分行符號](../ide/encodings-and-line-breaks.md)  
 
@@ -205,15 +205,15 @@ Visual Studio 的 [巡覽至] 命令會對程式碼執行焦點式搜尋，協�
 
 -   [重構](../ide/refactoring-in-visual-studio.md)  
 
--   [產能的秘訣](../ide/productivity-tips-for-visual-studio.md)  
+-   [提高產能的秘訣](../ide/productivity-tips-for-visual-studio.md)  
 
--   [使用 IntelliSense](../ide/using-intellisense.md)  
+-   [Using IntelliSense](../ide/using-intellisense.md)  
 
 -   [自訂編輯器](../ide/customizing-the-editor.md)  
 
--   [如何：自訂捲軸以追蹤程式碼](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+-   [HOW TO：自訂捲軸以追蹤程式碼](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [如何：使用查看定義檢視和編輯程式碼 (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [HOW TO：檢視和編輯程式碼使用查看定義 (alt+f12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
 -   [執行燈泡提示的快速動作](../ide/perform-quick-actions-with-light-bulbs.md)  
 
@@ -229,5 +229,5 @@ Visual Studio 的 [巡覽至] 命令會對程式碼執行焦點式搜尋，協�
 
 -   [尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

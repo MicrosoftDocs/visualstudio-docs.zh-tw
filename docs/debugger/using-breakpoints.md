@@ -34,22 +34,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea096ce0880ff3126e7aff98e037c75dc457997
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6edffaa0b45cc045428161dc04bf52d1c607c51c
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719596"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366687"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的中斷點
 中斷點是在您的開發人員工具箱中最重要的偵錯技術之一。 每當您要暫停偵錯工具執行，您可以設定中斷點。 例如，您可能要查看程式碼變數的狀態，或查看呼叫堆疊，在特定中斷點。 如果這是您第一次嘗試偵錯程式碼，您可能需要先閱讀[適用於徹底初學者偵錯](../debugger/debugging-absolute-beginners.md)，再瀏覽本文。
 
 ##  <a name="BKMK_Overview"></a> 在原始程式碼中設定中斷點
- 您可以在任何可執行程式碼行上設定中斷點。 例如，在下列C#程式碼中，您無法在變數宣告中，設定中斷點`for`迴圈或任何程式碼內`for`迴圈。 您無法在命名空間或類別宣告或方法簽章上設定中斷點。
+ 您可以在任何可執行程式碼行上設定中斷點。 比方說，在下列 C# 程式碼，您可以設定中斷點在變數宣告中，`for`迴圈或任何程式碼內`for`迴圈。 您無法在命名空間或類別宣告或方法簽章上設定中斷點。
 
  若要在原始程式碼中設定中斷點，按一下 程式碼行旁邊的最左邊界。 您也可以選取一行，然後按**F9**，選取**偵錯** > **切換中斷點**，或以滑鼠右鍵按一下並選取**中斷點** > **插入中斷點**。 中斷點會顯示為一個紅點的左邊界。
 
-在C#程式碼、 中斷點和目前執行線條會自動反白顯示。 針對 c + + 程式碼，您可以開啟反白顯示中斷點和目前行的方法是選取**工具**(或**偵錯**) >**選項** >  **偵錯** >  **反白顯示中斷點和目前的陳述式 （僅 c + +） 的整個原始程式行**。
+在C#程式碼、 中斷點和目前執行線條會自動反白顯示。 針對C++程式碼中，您可以開啟反白顯示中斷點和目前的行選取**工具**(或**偵錯**) >**選項** >  **偵錯** >  **反白顯示中斷點和目前的陳述式的整個原始程式行 (C++僅)**。
 
  ![設定中斷點](../debugger/media/basicbreakpoint.png "基本的中斷點")
 
@@ -59,7 +59,7 @@ ms.locfileid: "56719596"
 
  ![中斷點執行已停止](../debugger/media/breakpointexecution.png "中斷點執行")
 
- 當偵錯工具停止於中斷點時，您可以查看應用程式，包括變數值和呼叫堆疊的目前狀態。 如需此呼叫堆疊的詳細資訊，請參閱[如何：使用呼叫堆疊視窗](../debugger/how-to-use-the-call-stack-window.md)。
+ 當偵錯工具停止於中斷點時，您可以查看應用程式，包括變數值和呼叫堆疊的目前狀態。 如需有關呼叫堆疊的詳細資訊，請參閱[How to:使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)。
 
 - 中斷點是切換。 您可以按一下它，請按**F9**，或使用**偵錯** > **切換中斷點**刪除，或將它重新插入。
 
@@ -87,7 +87,7 @@ ms.locfileid: "56719596"
 
 偵錯工具會在指令處中斷。
 
-如需此呼叫堆疊的詳細資訊，請參閱[如何：使用呼叫堆疊視窗](../debugger/how-to-use-the-call-stack-window.md)。
+如需有關呼叫堆疊的詳細資訊，請參閱[How to:使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)。
 
 若要在程式碼執行期間的可用空間以視覺化方式追蹤中斷點，請參閱[偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。
 
@@ -113,27 +113,27 @@ ms.locfileid: "56719596"
 
    - 使用完整函式名稱。
 
-     範例：`Namespace1.ClassX.MethodA()`
+     範例：  `Namespace1.ClassX.MethodA()`
 
    - 新增多載的函式的參數類型。
 
-     範例：`MethodA(int, string)`
+     範例：  `MethodA(int, string)`
 
    - 使用 '！' 指定模組的符號。
 
-     範例：`App1.dll!MethodA`
+     範例： `App1.dll!MethodA`
 
-   - 原生 c + + 中使用內容運算子。
+   - 使用內容運算子以原生C++。
 
      `{function, , [module]} [+<line offset from start of method>]`
 
-     範例：`{MethodA, , App1.dll}+2`
+     範例： `{MethodA, , App1.dll}+2`
 
 1. 在 **語言**下拉式清單中，選擇 函式的語言。
 
 1. 選取 [確定]。
 
-### <a name="set-a-function-breakpoint-using-a-memory-address-native-c-only"></a>設定使用的記憶體位址 （原生 c + + 只） 的函式中斷點
+### <a name="set-a-function-breakpoint-using-a-memory-address-native-c-only"></a>設定使用的記憶體位址的函式中斷點 (原生C++只)
  您可以使用物件的位址來設定類別的特定執行個體所呼叫的方法上的函式中斷點。  例如，假設定址的物件型別的`my_class`，您可以設定函式中斷點上`my_method`執行個體呼叫的方法。
 
 1.  類別的執行個體具現化之後，某處設定中斷點。
@@ -142,19 +142,19 @@ ms.locfileid: "56719596"
 
 3.  選取 **偵錯** > **新中斷點** > **函式中斷點**，或按**Alt** +**F9** > **Ctrl**+**B**。
 
-4.  將下列內容加入**函式名稱**方塊，然後選取**c + +** 語言。
+4.  將下列內容加入**函式名稱**方塊，然後選取**C++** 語言。
 
     ```C++
     ((my_class *) 0xcccccccc)->my_method
     ```
 
-## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>設定資料中斷點 （原生 c + + 只）
+## <a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>設定資料中斷點 (原生C++只)
 
  資料中斷點會中斷執行時儲存在指定的記憶體位址會變更的值。 如果值已讀取但未變更，則不會中斷執行。
 
 **若要設定資料中斷點：**
 
-1.  在 c + + 專案中，啟動偵錯，並等待直到達到中斷點為止。 在 **偵錯**功能表上，選擇**新中斷點** > **資料中斷點**
+1.  在C++專案、 開始偵錯，然後等候，直到到達中斷點。 在 **偵錯**功能表上，選擇**新中斷點** > **資料中斷點**
 
     您也可以選取**的新** > **資料中斷點**中**中斷點**視窗。
 
@@ -211,14 +211,14 @@ ms.locfileid: "56719596"
 
 2. 在下拉式清單中，選取**條件運算式**，**叫用次數**，或**篩選**，並據此設定的值。
 
-3. 選取 **關閉** 或按**Ctrl**+**Enter**以關閉 **中斷點設定**視窗。 或從**中斷點**視窗中，選取**確定**以關閉對話方塊。
+3. 選取 **關閉 **或按**Ctrl**+**Enter**以關閉 **中斷點設定**視窗。 或從**中斷點**視窗中，選取**確定**以關閉對話方塊。
 
 顯示具有條件設定中斷點**+** 原始程式碼中的符號和**中斷點**windows。
 
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>條件運算式
 
-當您選取**條件運算式**，您可以選擇兩個條件：**成立**或是**變更時**。 選擇**成立**滿足運算式時中斷或**變更時**以運算式的值變更時中斷。
+當您選取**條件運算式**，您可以選擇兩個條件：**成立**或是**時變更**。 選擇**成立**滿足運算式時中斷或**變更時**以運算式的值變更時中斷。
 
  在下列範例中，叫用中斷點時，才的值`testInt`已**4**:
 
@@ -286,7 +286,7 @@ ms.locfileid: "56719596"
 
 1. 以滑鼠右鍵按一下中斷點，然後選取**動作**。 或者，在**中斷點設定** 視窗中，將滑鼠停在中斷點上，選取**設定**圖示，然後再選取**動作**。
 
-1. 輸入中的訊息**將訊息記錄到輸出視窗**欄位。 訊息可以包含一般文字字串、 變數或運算式括在大括號和格式規範的值 ([ C# ](../debugger/format-specifiers-in-csharp.md)並[c + +](../debugger/format-specifiers-in-cpp.md)) 的值。
+1. 輸入中的訊息**將訊息記錄到輸出視窗**欄位。 訊息可以包含一般文字字串、 變數或運算式括在大括號和格式規範的值 ([ C# ](../debugger/format-specifiers-in-csharp.md)並[ C++ ](../debugger/format-specifiers-in-cpp.md)) 的值。
 
    您也可以在訊息中使用下列特殊關鍵字：
 

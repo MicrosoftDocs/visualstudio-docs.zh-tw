@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b7c94cfc989564a150825b653cdd32d8b85f97
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: ebe87ef6c391f0beae7183c7baa396f5bd95cf02
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697958"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366007"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>如何發覺我的指標是否損毀記憶體位址？
 ## <a name="problem-description"></a>問題說明
@@ -40,10 +40,10 @@ ms.locfileid: "56697958"
 
 #### <a name="to-find-where-the-memory-address-is-modified"></a>若要找出記憶體位址遭修改的位置
 
-1.  在 0x00408000 設定資料中斷點。 請參閱[設定資料變更中斷點 (僅限原生 C++)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only)。
+1.  在 0x00408000 設定資料中斷點。 請參閱[設定資料變更中斷點 (僅限原生 C++)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)。
 
 2.  當您遇到中斷點時，使用 [記憶體] 視窗來檢視從 0x00408000 開始的記憶體內容。 如需詳細資訊，請參閱 <<c0> [ 記憶體 Windows](../debugger/memory-windows.md)。
 
-## <a name="see-also"></a>請參閱
-- [偵錯機器碼常見問題集](../debugger/debugging-native-code-faqs.md)
+## <a name="see-also"></a>另請參閱
+- [機器碼偵錯 FAQ](../debugger/debugging-native-code-faqs.md)
 - [偵錯機器碼](../debugger/debugging-native-code.md)

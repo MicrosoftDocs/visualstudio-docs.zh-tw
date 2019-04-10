@@ -1,12 +1,9 @@
 ---
 title: 處理並行例外狀況 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +20,13 @@ ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ba0695656ce2377456f4150be0fe4f5231f7cb76
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220413"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58939250"
 ---
 # <a name="handle-a-concurrency-exception"></a>處理並行例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +44,7 @@ ms.locfileid: "50220413"
   
 4.  中的資料填入資料集`Customers`Northwind 資料庫中的資料表。  
   
-5.  使用[Visual Database Tools](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1)在 Visual Studio 中直接存取`Customers`資料資料表和變更記錄。  
+5.  使用[Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1)在 Visual Studio 中直接存取`Customers`資料資料表和變更記錄。  
   
 6.  變更同一筆記錄到不同的值，更新資料集，並嘗試將變更寫入資料庫中，會導致引發並行處理錯誤。  
   
@@ -56,10 +53,10 @@ ms.locfileid: "50220413"
 ## <a name="prerequisites"></a>必要條件  
  若要完成這個逐步解說，您需要：  
   
--   Northwind 範例資料庫，以執行更新的權限的存取。 如需詳細資訊，請參閱 <<c0> [ 如何： 安裝範例資料庫](../data-tools/how-to-install-sample-databases.md)。  
+-   Northwind 範例資料庫，以執行更新的權限的存取。
   
 > [!NOTE]
->  對話方塊和功能表命令，您會看到，可能會有所不同說明中所述取決於您使用的設定或您使用的版本不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  對話方塊和功能表命令，您會看到，可能會有所不同說明中所述取決於您使用的設定或您使用的版本不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="create-a-new-project"></a>建立新專案  
  您可以建立新的 Windows 應用程式，以開始您逐步解說。  
@@ -83,7 +80,7 @@ ms.locfileid: "50220413"
   
 1.  在 **資料**功能表上，選擇**加入新的資料來源**。  
   
-     [資料來源組態精靈](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)隨即開啟。  
+     [資料來源組態精靈][](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) 隨即開啟。  
   
 2.  在 **選擇資料來源類型**畫面上，選取**資料庫**。  
   
@@ -211,7 +208,7 @@ ms.locfileid: "50220413"
   
 8.  在表單上的第一筆記錄 (`ALFKI`)，變更`ContactName`至`Maria Anders1`。  
   
-9. 選取 [**儲存**] 按鈕。  
+9. 選取 [儲存] 按鈕。  
   
      引發了並行錯誤，並出現訊息方塊。  
   
