@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Visual Studio 專案內容中 Flask 基本概念的逐步解說，包括先決條件、Git 和虛擬環境。
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 137ffe6cc89c439de2fded337349310da865e3be
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d0ad3ac3c4efa6be136fa85ee0c8abbe3632e53f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355694"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366636"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Flask Web 架構
 
