@@ -1,14 +1,9 @@
 ---
 title: 使用 ClickOnce 部署 COM 元件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8f4412c067ffd43a14a62cc722cf60ca1a883d9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820287"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000678"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 元件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49820287"
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 提供簡單而安全的機制，可部署您的.NET 應用程式。 不過，如果您的應用程式會使用傳統的 COM 元件，您必須採取額外的步驟，才能將其部署。 本主題描述如何部署隔離的 COM 元件，並參考原生元件 （例如，從 Visual Basic 6.0 或 Visual c + +）。  
   
- 如需有關如何部署隔離的 COM 元件的詳細資訊，請參閱 「 使用簡化應用程式部署[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]和免註冊的 COM 」 在[ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)。  
+ 如需有關如何部署隔離的 COM 元件的詳細資訊，請參閱 「 使用簡化應用程式部署[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]和免註冊的 COM 」 在[ https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx ](https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx)。  
   
 ## <a name="registration-free-com"></a>免註冊 COM  
  免註冊 COM 是一種新的技術來部署和啟動獨立的 COM 元件。 其運作方式是將所有元件的型別程式庫和註冊資訊通常安裝在系統登錄中的資訊清單的 XML 檔案放在與應用程式相同的資料夾中儲存。  
@@ -145,7 +140,7 @@ ms.locfileid: "49820287"
   
 2. 在 [發行精靈] 中，請在本機電腦的磁碟，您可以在此存取，並檢查已發行的檔案中指定的位置。  
   
-3. 按一下 **完成**發行應用程式。  
+3. 按一下 [完成] 發佈應用程式。  
   
    如果您檢查已發行的檔案時，您會發現 sysmon.ocx 檔案包含。 控制項是控制項的完全隔離，此應用程式，這表示，如果終端使用者的電腦上有另一個應用程式使用不同版本，它不會干擾此應用程式。  
   
@@ -171,7 +166,7 @@ ms.locfileid: "49820287"
   
 - 元件會管理系統，例如，列印多工緩衝處理器的裝置驅動程式的實體或虛擬裝置。  
   
-- 元件為資料存取可轉散發套件。 資料應用程式通常需要不同資料存取的可轉散發套件才能執行安裝。 您不應該嘗試隔離元件，例如 Microsoft ADO 資料控制項、 Microsoft OLE DB 或 Microsoft Data Access Components (MDAC)。 相反地，如果您的應用程式使用 MDAC 或 SQL Server Express，您應該將它們設為必要條件。請參閱[如何： 使用 ClickOnce 應用程式的安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
+- 元件為資料存取可轉散發套件。 資料應用程式通常需要不同資料存取的可轉散發套件才能執行安裝。 您不應該嘗試隔離元件，例如 Microsoft ADO 資料控制項、 Microsoft OLE DB 或 Microsoft Data Access Components (MDAC)。 相反地，如果您的應用程式使用 MDAC 或 SQL Server Express，您應該將它們設為必要條件。請參閱[How to:使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
   
   在某些情況下，它可能會重新設計免註冊 COM 元件的開發人員 如果這不可行，但您仍會建置，並發佈應用程式，透過使用啟動載入器的標準註冊配置相依於這些。 如需詳細資訊，請參閱 <<c0> [ 建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)。  
   
@@ -181,6 +176,3 @@ ms.locfileid: "49820287"
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
-
-
-

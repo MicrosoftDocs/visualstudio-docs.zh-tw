@@ -12,17 +12,18 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 22276c844da259600770862327bc316243c9c239
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: fea8aeac90a974fc6b1cb89d9419c0652c184796
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476068"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857810"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
@@ -267,7 +268,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 **15.5 的新功能**：Visual Studio 2017 15.5 版提供 Windows 10 Fall Creators Update SDK (10.0.16299.0) 的最佳支援。 Windows 10 Fall Creators Update 也提供 UWP 開發人員許多增強功能。 以下是其中一些最重大的變更： 
 
-* **.NET Standard 2.0 的支援**<br/>除了簡化應用程式部署之外，Windows 10 Fall Creators Update 也是第一個提供 .NET Standard 2.0 支援的版本。 實際上，[.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) 是任何 .NET 平台都能實作之基底類別庫的參考實作。 .NET Standard 的目標是讓 .NET 開發人員在其選擇工作的任何 .NET 平台之間，盡可能輕鬆地共用程式碼。
+* **針對 .NET Standard 2.0 的支援**<br/>除了簡化應用程式部署之外，Windows 10 Fall Creators Update 也是第一個提供 .NET Standard 2.0 支援的版本。 實際上，[.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) 是任何 .NET 平台都能實作之基底類別庫的參考實作。 .NET Standard 的目標是讓 .NET 開發人員在其選擇工作的任何 .NET 平台之間，盡可能輕鬆地共用程式碼。
 * **UWP 和 Win32 的最佳選擇**<br/>我們改進了 Windows 10 平台，提供[傳統型橋接器](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root)讓 Windows 10 更適用於所有 .NET 開發人員，不論其目前焦點是在 UWP、WPF、Windows Form 或 Xamarin。 透過 Visual Studio 2017 15.5 版中新增的應用程式套件專案類型，您可以像是針對 UWP 專案一樣，針對 WPF 或 Windows Forms 專案建立 Windows 應用程式套件。 封裝應用程式之後，您將享有所有 Windows 10 應用程式部署優點，並可選擇透過 Microsoft Store (適用於消費者應用程式) 或商務用 Microsoft Store 和教育用 Microsoft Store 進行散發。 由於已封裝應用程式可以存取桌面上的完整 UWP API 介面和 Win32 API，因此您現在可以使用 UWP API 和 Windows 10 功能逐漸將 WPF 和 Windows Forms 應用程式現代化。 此外，您可以將 Win32 元件加入 UWP 應用程式，在桌面上顯示所有 Win32 功能。
 
 如需 UWP 的詳細資訊，請參閱[開發適用於通用 Windows 平台 (UWP) 的應用程式](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)頁面。

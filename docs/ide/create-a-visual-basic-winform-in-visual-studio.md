@@ -1,8 +1,10 @@
 ---
 title: 使用 Visual Basic 建立 Windows Forms 應用程式
 description: 了解如何使用 Visual Basic 在 Visual Studio 中逐步建立 Windows Forms 應用程式。
-ms.date: 12/04/2017
-ms.topic: conceptual
+ms.date: 03/23/2019
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
@@ -11,22 +13,37 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 113493489e62a991e56f626e613c4ef0d76c0250
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 511305bd335bfb982590db2c52c35fabbfc7b841
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923769"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856483"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>使用 Visual Basic 在 Visual Studio 中建立 Windows Forms 應用程式
 
 在這個針對 Visual Studio 整合式開發環境 (IDE) 的簡短簡介中，您將建立具有 Windows 型使用者介面 (UI) 的簡單 Visual Basic 應用程式。
 
+::: moniker range="vs-2017"
+
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+
+> [!NOTE]
+> 本教學課程中的某些螢幕擷取畫面使用深色佈景主題。 如果您未使用深色佈景主題，但想要使用，請參閱[將 Visual Studio IDE 和編輯器個人化](../ide/quickstart-personalize-the-ide.md)頁面以了解做法。
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>建立專案
 
 首先，您將建立 Visual Basic 應用程式專案。 在您新增任何項目之前，專案類型會隨附您需要的所有範本檔案。
+
+::: moniker range="vs-2017"
 
 1. 開啟 Visual Studio 2017。
 
@@ -38,6 +55,41 @@ ms.locfileid: "55923769"
 
      ![Visual Studio 安裝程式中的 .NET Core 工作負載](../ide/media/install-dot-net-desktop-env.png)
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 開啟 Visual Studio 2019。
+
+1. 在開始視窗中，選擇 [建立新專案]。
+
+   ![檢視 [建立新專案] 視窗](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. 在 [建立新專案] 視窗中，在搜尋方塊內輸入或鍵入 *Windows Forms*。 接下來，從語言清單中選擇 **Visual Basic**，然後從平台清單中選擇 **Windows**。 
+
+   在您套用語言和平台的篩選條件之後，請選擇 [Windows Forms 應用程式 (.NET Framework)] 範本，然後選擇 [下一步]。
+
+   ![選擇 Windows Forms 應用程式 (.NET Framework) 的 Visual Basic 專案範本](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+
+   > [!NOTE]
+   > 如果您未看到 [Windows Forms 應用程式 (.NET Framework)] 範本，您可以從 [建立新專案] 視窗中安裝。 在 [找不到你要尋找的項目嗎?] 訊息中，選擇 [安裝更多工具和功能] 連結。
+   >
+   > ![[建立新專案] 視窗中「找不到您要尋找的項目嗎?」訊息的 [安裝更多工具和功能] 連結](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > 接下來，在 Visual Studio 安裝程式中選擇 **.NET 桌面開發**工作負載。
+   > 
+   > ![Visual Studio 安裝程式中的 .NET Core 工作負載](../ide/media/install-dot-net-desktop-env.png)
+   >
+   > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
+
+1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *HelloWorld*。 接著，選擇 [建立]。
+
+   ![在 [設定您的新專案] 視窗中，以 'HelloWorld' 命名您的專案](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
+
+   Visual Studio 會隨即開啟您的新專案。
+
+::: moniker-end
+
 ## <a name="create-the-application"></a>建立應用程式
 
 在您選取 Visual Basic 專案範本並命名檔案之後，Visual Studio 會為您開啟表單。 表單是 Windows 使用者介面。 我們將控制項新增至表單來建立 "Hello World" 應用程式，然後執行應用程式。
@@ -48,16 +100,17 @@ ms.locfileid: "55923769"
 
      ![按一下 [工具箱] 開啟 [工具箱] 視窗](../ide/media/vb-toolbox-toolwindow.png)
 
-     (如果未顯示 [工具箱] 快顯選項，您可以從功能表列開啟。 若要這樣做，請按一下 [檢視] > [工具箱]。 或按 **Ctrl**+**Alt**+**X**)。
+     (如果未顯示 [工具箱] 飛出選項，您可以按 **Ctrl**+**Alt**+**X** 來開啟。)
 
 2. 按一下**釘選**圖示，以固定 [工具箱] 視窗。
 
      ![按一下固定圖示，以將 [工具箱] 視窗固定到 IDE](../ide/media/vb-pin-the-toolbox-window.png)
+
 3. 按一下 [按鈕] 控制項，然後將它拖曳至表單。
 
      ![將按鈕新增至表單](../ide/media/vb-add-a-button-to-form1.png)
 
-4. 在 [屬性] 視窗的 [外觀] 區段中，鍵入 `Click this`，然後按 **Enter** 鍵。
+4. 在 [屬性] 視窗的 [外觀] 區段 (或 [字型] 區段) 中，鍵入 `Click this`，然後按 **Enter** 鍵。
 
      ![新增表單上按鈕的文字](../ide/media/vb-button-control-text.png)
 
@@ -81,7 +134,7 @@ ms.locfileid: "55923769"
 
       (或者，您可以在 [方案總管] 中展開 **Form1.vb**，然後按一下 **Form1**)。
 
-2. 在 **Form1.vb** 視窗中，於 **Private Sub** 行與 **End Sub** 行之間鍵入或貼上 `lblHelloWorld.Text = "Hello World!"`。
+2. 在 [Form1.vb] 視窗中，於 **Private Sub** 行與 **End Sub** 行 (或 **Public Class Form1** 行與 **End Class** 行) 之間，鍵入下列程式碼。
 
      ![將程式碼新增至表單](../ide/media/vb-add-code-to-the-form.png)
 

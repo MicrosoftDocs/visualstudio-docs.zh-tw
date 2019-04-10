@@ -3,19 +3,19 @@ title: 格式化 Python 程式碼
 description: Visual Studio 可以自動重新設定 Python 程式碼格式，包括間距、陳述式、換行和註解。
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4049576d18befb71cc71fdb85a19bcc3b0234401
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160663"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365468"
 ---
 # <a name="format-python-code"></a>格式化 Python 程式碼
 
@@ -52,7 +52,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 | 函式定義選項 | 已核取 | 已清除 |
 | --- | --- | --- |
-| **在函式宣告的名稱與參數清單之間插入空格** | `def X (): pass` | `def X(): pass` |
+| **在函式宣告的名稱和參數清單之間插入空格** | `def X (): pass` | `def X(): pass` |
 | **在參數清單括號內插入空格** | `def X( a, b ): pass` | `def X(a, b): pass` |
 | **在空白的參數清單括號內插入空格** | `def X( ): pass` | `def X(): pass` |
 | **在預設參數值的 '=' 前後插入空格** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
@@ -69,16 +69,16 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 | 運算式間距選項 | 已核取 | 已清除 |
 | --- | --- | --- |
-| **在函式呼叫的名稱與引數清單之間插入空格** | `X ()` | `X()` |
-| **在空白引數清單括號內插入空格** | `X( )` | `X()` |
+| **在函式呼叫的名稱和引數清單之間插入空格** | `X ()` | `X()` |
+| **在空的引數清單括號內插入空格** | `X( )` | `X()` |
 | **在引數清單括號內插入空格** | `X( a, b )` | `X(a, b)` |
 | **在運算式的括號內插入空格** | `( a )` | `(a)` |
 | **在空白元組括號內插入空格** | `( )` | `()` |
 | **在元組括號內插入空格** | `( a, b )` | `(a, b)` |
-| **在空白方括號中插入空格** | `[ ]` | `[]` |
+| **在空的方括號中插入空格** | `[ ]` | `[]` |
 | **在清單的方括號內插入空格** | `[ a, b ]` | `[a, b]` |
-| **在左方括號前插入空格** | `x [i]` | `x[i]` |
-| **在方括號內插入空格** | `x[ i ]` | `x[i]` |
+| **在左方括號前面插入空格** | `x [i]` | `x[i]` |
+| **在方括號中插入空格** | `x[ i ]` | `x[i]` |
 
 <br/>
 
@@ -88,9 +88,9 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 | 選項 | 格式之前 | 格式之後 |
 | --- | --- | --- |
-| **將匯入的模組置於新行** | `import sys, pickle` | `import sys`<br/>`import pickle` |
+| **將匯入的模組放在新行** | `import sys, pickle` | `import sys`<br/>`import pickle` |
 | **移除不必要的分號** | `x = 42;` | `x = 42` |
-| **將多個陳述式置於新行** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
+| **將多個陳述式放在新行** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
 
 ## <a name="wrapping"></a>換行
 

@@ -3,19 +3,19 @@ title: 單元測試 Python 程式碼
 description: 在 Visual Studio 中設定 Python 程式碼的單元測試，以充分利用 [測試總管] 的功能來探索、執行和偵錯測試。
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d4cab82a8fc7d3aec512ead169ff2be4b528eda6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e16612287d1efa76b206de50c6af9f18edab7c8a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983802"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366129"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>設定 Python 程式碼的單元測試
 
@@ -23,7 +23,7 @@ ms.locfileid: "57983802"
 
 在設計程式時，Python 會廣泛地使用單元測試來驗證案例。 Visual Studio 中的 Python 支援包含在開發程序的內容內針對單元測試進行探索、執行及偵錯，而且不需要個別執行測試。
 
-此文章提供搭配 Python 的 Visual Studio 中的單元測試功能簡介。 如需單元測試的整體詳細資訊，請參閱[對程式碼進行單元測試](../test/unit-test-your-code.md)。
+本文章提供搭配 Python 的 Visual Studio 中的單元測試功能簡介。 如需單元測試的整體詳細資訊，請參閱[對程式碼進行單元測試](../test/unit-test-your-code.md)。
 
 ## <a name="discover-and-view-tests"></a>探索及檢視測試
 

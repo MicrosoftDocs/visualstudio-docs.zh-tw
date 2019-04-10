@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: d10b3064b423d414b6aa4dff9dd737be29d42241
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525215"
 documentType: LandingData
 title: Visual Studio 中的容器工具
 metadata:
@@ -18,113 +12,113 @@ metadata:
   ms.date: 02/15/2019
   ms.author: ghogen
 sections:
-- title: ''
-  items:
-  - type: paragraph
-    text: 探索 Docker 和 Kubernetes 工具，以及用於管理以容器為基礎之開發專案的 Azure 服務。
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+  - title: ''
     items:
-    - href: docker-tools.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      title: 快速入門：Visual Studio 中的 Docker
-    - href: docker-tools.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      title: 具有 Docker Compose 的多容器應用程式
-    - href: /visualstudio/install/build-tools-container
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_build.svg
-      title: 在容器中執行建置工具
-    - href: tutorial-kubernetes-tools.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_kubernetes.svg
-      title: 適用於 Kubernetes 的 Visual Studio Tools
-- title: .NET Core
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: paragraph
+        text: 探索 Docker 和 Kubernetes 工具，以及用於管理以容器為基礎之開發專案的 Azure 服務。
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: docker-tools.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
+            title: 快速入門：Visual Studio 中的 Docker
+          - href: tutorial-multicontainer.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
+            title: 具有 Docker Compose 的多容器應用程式
+          - href: /visualstudio/install/build-tools-container
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: 在容器中執行建置工具
+          - href: tutorial-kubernetes-tools.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_kubernetes.svg'
+            title: 適用於 Kubernetes 的 Visual Studio Tools
+  - title: .NET Core
     items:
-    - href: /dotnet/core/docker/intro-net-docker
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
-      title: .NET 和 Docker 簡介
-    - href: /dotnet/core/docker/docker-basics-dotnet-core
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      title: 了解 Docker 基本知識
-    - href: /dotnet/core/docker/building-net-docker-images
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_build.svg
-      title: 建置 Docker 映像
-    - href: /aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_web.svg
-      title: ASP.NET Docker 工具
-    - href: https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_azure.svg
-      title: 部署到 Azure Container Registry
-    - href: /dotnet/standard/containerized-lifecycle-architecture/
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_architecture.svg
-      title: 微服務架構指南
-- title: Azure
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: /dotnet/core/docker/intro-net-docker
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_NETcore.svg'
+            title: .NET 和 Docker 簡介
+          - href: /dotnet/core/docker/docker-basics-dotnet-core
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
+            title: 了解 Docker 基本知識
+          - href: /dotnet/core/docker/building-net-docker-images
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: 建置 Docker 映像
+          - href: /aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_web.svg'
+            title: ASP.NET Docker 工具
+          - href: 'https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker'
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_azure.svg'
+            title: 部署到 Azure Container Registry
+          - href: /dotnet/standard/containerized-lifecycle-architecture/
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
+            title: 微服務架構指南
+  - title: Azure
     items:
-    - href: /azure/aks
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/ContainerService.svg
-      title: Azure Kubernetes Service (AKS)
-    - href: /azure/dev-spaces
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/AzureDevSpaceController_50x.svg
-      title: Azure Dev Spaces
-    - href: /azure/container-instances/container-instances-tutorial-prepare-app
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/ContainerInstances.svg
-      title: Azure 容器執行個體
-    - href: /azure/container-registry/
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/container-registry.svg
-      title: Azure Container Registry
-    - href: /azure/docker
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      title: Azure 上的 Docker
-- title: 視訊
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: /azure/aks
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/azure/media/index/ContainerService.svg'
+            title: Azure Kubernetes Service (AKS)
+          - href: /azure/dev-spaces
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/azure/media/index/AzureDevSpaceController_50x.svg'
+            title: Azure Dev Spaces
+          - href: /azure/container-instances/container-instances-tutorial-prepare-app
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/azure/media/index/ContainerInstances.svg'
+            title: Azure 容器執行個體
+          - href: /azure/container-registry/
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/azure/media/index/container-registry.svg'
+            title: Azure Container Registry
+          - href: /azure/docker
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
+            title: Azure 上的 Docker
+  - title: 視訊
     items:
-    - href: https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_video.svg
-      title: Channel 9：Docker 開發
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: 'https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111'
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_video.svg'
+            title: Channel 9：Docker 開發
