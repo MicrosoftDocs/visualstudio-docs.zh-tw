@@ -1,25 +1,20 @@
 ---
 title: 從 [屬性] 視窗中取得欄位描述 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, field descriptions
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
-manager: douge
-ms.openlocfilehash: fc5d2c8553ccdb6c554f9a8364e9fd21eaa324d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0fa07029ee1b96f3b8f1328d654b4d5d83953142
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814788"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58945136"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>從 [屬性] 視窗中取得欄位描述
 在 [屬性]  視窗底部的描述區域會顯示選取的屬性欄位相關資訊。 這項功能預設為開啟。 如果想要隱藏描述欄位，請以滑鼠右鍵按一下 [屬性]  視窗，然後按一下 [描述] 。 這樣也會移除功能表視窗之 [描述]  標題旁的核取記號。 只要依照相同的步驟切換 [描述]  ，就可以再次顯示欄位。  
@@ -52,7 +47,7 @@ STDAPI DLLGetDocumentation
 );  
 ```  
   
- `DLLGetDocumentation` 函式必須是 .def 檔案中為 DLL 定義的匯出。  
+  `DLLGetDocumentation` 函式必須是 .def 檔案中為 DLL 定義的匯出。  
   
  對內建立的 .olb 檔案，其實是個 DLL。 這個 DLL 包含一項資源、類型程式庫 (.tlb) 檔案，以及匯出的函式 `DLLGetDocumentation`。  
   
@@ -60,7 +55,7 @@ STDAPI DLLGetDocumentation
   
  若要取得在 [描述]  窗格中顯示的字串，您至少要在類型程式庫中指定 `helpstring` 屬性。 如果希望當地語系化這些字串，您必須指定 `helpstringdll` (選擇性) 屬性和 `helpstringcontext` (必要) 屬性並實作 `DLLGetDocumentation`。  
   
- 透過 idl 的 `helpstringcontext` 屬性和 `DLLGetDocumentation` 取得當地語系化資訊時，不必實作其他介面。  
+ 透過 idl 的 `helpstringcontext` 屬性和 `DLLGetDocumentation`取得當地語系化資訊時，不必實作其他介面。  
   
  取得屬性的當地語系化名稱和說明的另一個方式，是實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>。 如需實作這個方法的詳細資訊，請參閱 [Properties Window Fields and Interfaces](../extensibility/internals/properties-window-fields-and-interfaces.md)。  
   
