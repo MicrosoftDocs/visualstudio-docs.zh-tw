@@ -582,6 +582,12 @@ items:
         href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
       - name: CA2153:避免處理損毀狀態例外狀況
         href: ca2153-avoid-handling-corrupted-state-exceptions.md
+      - name: CA2300：請勿使用不安全的還原序列化程式 BinaryFormatter
+        href: ca2300-do-not-use-insecure-deserializer-binaryformatter.md
+      - name: CA2301：未先設定 BinaryFormatter.Binder 之前，請勿呼叫 BinaryFormatter.Deserialize
+        href: ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md
+      - name: CA2302：呼叫 BinaryFormatter.Deserialize 之前，請務必先設定 BinaryFormatter.Binder
+        href: ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md
       - name: CA3001：檢閱程式碼是否有 SQL 插入式攻擊弱點
         href: ca3001-review-code-for-sql-injection-vulnerabilities.md
       - name: CA3002：檢閱程式碼是否有 XSS 弱點
@@ -1502,9 +1508,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd 錯誤
       href: fxcopcmd-errors.md
-ms.openlocfilehash: 88bdee94ec0f5bc9fd8a1792dc6bd907093e8394
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: a8ba1b0bb4bf97bf082a2aee2d28df2ea3ccc339
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018268"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366857"
