@@ -66,7 +66,7 @@ items:
     - name: 檢視資料提示方塊中的資料值
       href: view-data-values-in-data-tips-in-the-code-editor.md
     - name: 在視覺化檢視中檢視字串值
-      href: string-visualizer-dialog-box.md
+      href: view-strings-visualizer.md
     - name: 檢視反組譯程式碼
       href: how-to-use-the-disassembly-window.md
       items:
@@ -636,6 +636,8 @@ items:
       href: select-code-type-dialog-box.md
     - name: 停止進行中的偵錯對話方塊
       href: stop-debugging-in-progress-dialog-box.md
+    - name: '[字串視覺化檢視] 對話方塊'
+      href: string-visualizer-dialog-box.md
     - name: 符號載入資訊對話方塊
       href: symbol-load-information-dialog-box.md
     - name: '[叫用中斷點時] 對話方塊'
@@ -842,9 +844,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 9d5ba973ffafe79b4c9b1f4f23ee08792d24bb7b
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 6e0d832e0adace66495a1edfd19fd7b5a9f9c866
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790741"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366065"
