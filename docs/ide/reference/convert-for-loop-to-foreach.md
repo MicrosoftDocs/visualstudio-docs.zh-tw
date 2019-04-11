@@ -63,9 +63,9 @@ ms.locfileid: "55921300"
 
 將 [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) 陳述式轉換為 [for](/dotnet/csharp/language-reference/keywords/for) 迴圈的理由包括：
 
-- 除了存取項目之外，您想要在迴圈內使用本機迴圈變數來進行其他工作。
+- 除了存取項目之外，您想要在迴圈內使用區域迴圈變數來進行其他工作。
 
-- 您[透過多維度陣列反覆運算](/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays)，並想要陣列元素的更多控制權。
+- 您[透過多維度陣列反覆運算](/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays)，並想要對陣列元素有更多控制權。
 
 ### <a name="how-to-use-it"></a>如何使用
 
