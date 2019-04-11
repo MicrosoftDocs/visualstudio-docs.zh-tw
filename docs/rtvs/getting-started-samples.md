@@ -81,7 +81,7 @@ ms.locfileid: "56840879"
 
 ![比較 MLS 和使用 MKL 的 MRO，以及 R 和沒有 MKL 的 MRO](media/samples-speed-comparison.png)
 
-如需 R 與 MRO 和 MLS 的技術比較，請參閱 [Lixun Zhang 關於這主題的詳細討論](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html)。
+如需 R 與 MRO 和 MLS 的技術比較，請參閱 [Lixun Zhang 關於這主題的詳細討論](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html)。
 
 然後，下圖比較建立使用羅吉斯迴歸模型來預測航班延遲超過 15 分鐘時，耗用的時間 (以秒為單位)。  當增加少量的資料列時，CRAN R 中使用的已耗用時間會大幅增加，而 MLS 則只增加大約兩倍。 如需此基準測試的詳細資料，請參閱 *Benchmarks/rxGlm_benchmark.R* 範例。
 
