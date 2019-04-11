@@ -35,7 +35,7 @@ ms.locfileid: "55921300"
 
 將 [for](/dotnet/csharp/language-reference/keywords/for) 迴圈轉換為 [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) 陳述式的理由包括：
 
-- 除了當作用來存取項目的索引之外，您不會在迴圈內使用本機迴圈變數。
+- 除了當作用來存取項目的索引之外，您不會在迴圈內使用區域迴圈變數。
 
 - 您想要簡化程式碼，以及降低初始設定式、條件及迭代器區段中發生邏輯錯誤的可能性。
 
