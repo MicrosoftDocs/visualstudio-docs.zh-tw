@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f2272323d13121865ace371b2dc1a921106e34e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869014"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504103"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>取得已啟動 （中的 SharePoint 開發 Visual Studio）
   本節可協助您開始使用利用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 的 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]開發 SharePoint 解決方案。
@@ -39,10 +39,11 @@ ms.locfileid: "57869014"
 |主題|描述|
 |-----------|-----------------|
 |[開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)|在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中說明 SharePoint 開發。|
+|[設定 SharePoint 的一般開發環境](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|描述用於建立 SharePoint 方案所需的安裝|
 |[建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|說明如何使用適用於開發 SharePoint 的 Visual Studio 工具，建立 SharePoint 的自訂網站資料行、內容類型和清單。|
 |[建立 SharePoint 工作流程方案](../sharepoint/creating-sharepoint-workflow-solutions.md)|描述工作流程設計與開發。|
 |[將商務資料整合到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|描述如何連接到整合商務資料的商務資料連線 (BDC) 模型。|
-|[適用於 SharePoint 的 Creatie web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)|描述 [Web 組件] 和 [網頁組件頁面] (SharePoint 網站上頁面的建置組塊)。|
+|[建立 SharePoint web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)|描述 [Web 組件] 和 [網頁組件頁面] (SharePoint 網站上頁面的建置組塊)。|
 |[建立 SharePoint 相關應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)|描述如何使用設計工具設計應用程式頁面。|
 |[建立可重複使用的控制項，為 web 組件或應用程式頁面](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|描述如何在 SharePoint 中建立應用程式頁面和 Web 組件的自訂、可重複使用控制項。|
 |[瀏覽 SharePoint 連線，使用 伺服器總管](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|描述如何在 Visual Studio 工具視窗中瀏覽 SharePoint 網站的元件。|

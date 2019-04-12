@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6edffaa0b45cc045428161dc04bf52d1c607c51c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366687"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504324"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的中斷點
 中斷點是在您的開發人員工具箱中最重要的偵錯技術之一。 每當您要暫停偵錯工具執行，您可以設定中斷點。 例如，您可能要查看程式碼變數的狀態，或查看呼叫堆疊，在特定中斷點。 如果這是您第一次嘗試偵錯程式碼，您可能需要先閱讀[適用於徹底初學者偵錯](../debugger/debugging-absolute-beginners.md)，再瀏覽本文。
@@ -147,6 +147,28 @@ ms.locfileid: "59366687"
     ```C++
     ((my_class *) 0xcccccccc)->my_method
     ```
+::: moniker range=">= vs-2019"
+
+## <a name="BKMK_set_a_data_breakpoint_managed"></a>設定資料中斷點 (.NET Core 3.0 或更新版本)
+
+當特定物件的屬性變更時，資料中斷點會中斷執行。
+
+**若要設定資料中斷點**
+
+1. 在.NET Core 專案中，啟動偵錯，並等待直到達到中斷點為止。
+
+2. 在  **自動變數**，**監看式**，或**區域變數**視窗中，以滑鼠右鍵按一下屬性，然後選取**值變更時中斷**操作功能表中。
+
+    ![管理資料中斷點](../debugger/media/managed-data-breakpoint.png "管理資料中斷點")
+
+.NET Core 中的資料中斷點並不適用於：
+
+- 屬性不是可擴充的工具提示中，[區域變數]、 [自動變數] 或監看式視窗
+- 靜態變數
+- 使用 DebuggerTypeProxy 屬性類別
+- 在結構內的欄位 
+
+::: moniker-end
 
 ## <a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>設定資料中斷點 (原生C++只)
 
@@ -156,7 +178,7 @@ ms.locfileid: "59366687"
 
 1.  在C++專案、 開始偵錯，然後等候，直到到達中斷點。 在 **偵錯**功能表上，選擇**新中斷點** > **資料中斷點**
 
-    您也可以選取**的新** > **資料中斷點**中**中斷點**視窗。
+    您也可以選取**的新** > **資料中斷點**中**中斷點**視窗或以滑鼠右鍵按一下中的項目**自動變數**，**監看式**，或**區域變數**視窗，然後選取**值變更時中斷**操作功能表中。
 
 2.  在 [位址] 方塊中，鍵入記憶體位址或評估為記憶體位址的運算式。 例如，輸入當變數 `&avar` 的內容變更時要中斷的 `avar` 。
 
