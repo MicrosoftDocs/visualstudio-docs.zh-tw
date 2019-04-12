@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 244841b5b9416709eda0913d53535d29c83df647
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dee5d1ec207f2b7bec030076797720fe9e8216ed
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870395"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504259"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>逐步解說：建立 SharePoint 網站資料行、 內容類型和清單
   下列程序示範如何建立自訂的 SharePoint 網站資料行，或*欄位*— 以及使用的網站資料行的內容類型。 它也會示範如何建立會使用新的內容類型的清單。
@@ -46,14 +46,14 @@ ms.locfileid: "57870395"
 
 -   支援的 Windows 和 SharePoint 版本。
 
--   Visual Studio。
+-   [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
 ## <a name="create-custom-site-columns"></a>建立自訂網站欄
  這個範例會建立管理病患在醫院中的清單。 首先，您必須建立 SharePoint 專案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和網站資料行加入它，如下所示。
 
 #### <a name="to-create-the-project"></a>若要建立專案
 
-1.  在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**檔案**功能表上，選擇**新增** > **專案**。
+1.  在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **檔案**功能表上，選擇**新增** > **專案**。
 
 2.  中**新的專案**對話方塊中，在**Visual C#** 或**Visual Basic**，展開**SharePoint** ] 節點，然後選擇 [ **2010年**。
 
@@ -67,7 +67,7 @@ ms.locfileid: "57870395"
 
      如需有關沙箱和伺服器陣列方案，請參閱[沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)。
 
-6.  選擇**完成** 按鈕。 專案現在應該會列在**方案總管 中**。
+6.  選擇**完成** 按鈕。 專案現在會列在**方案總管 中**。
 
 #### <a name="to-add-site-columns"></a>若要加入站台的資料行
 
@@ -222,6 +222,6 @@ ms.locfileid: "57870395"
 ## <a name="see-also"></a>另請參閱
 - [建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)
-- [如何：建立自訂欄位類型](http://go.microsoft.com/fwlink/?LinkId=192079)
+- [HOW TO：建立自訂欄位類型](http://go.microsoft.com/fwlink/?LinkId=192079)
 - [內容類型](http://go.microsoft.com/fwlink/?LinkId=192080)
 - [資料行](http://go.microsoft.com/fwlink/?LinkId=192081)

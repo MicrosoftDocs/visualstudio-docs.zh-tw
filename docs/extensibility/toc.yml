@@ -420,10 +420,12 @@ items:
     href: ux-guidelines/layout-for-visual-studio.md
   - name: 通知與進度
     href: ux-guidelines/notifications-and-progress-for-visual-studio.md
-  - name: Animations
+  - name: 動畫
     href: ux-guidelines/animations-for-visual-studio.md
   - name: 評估工具
     href: ux-guidelines/evaluation-tools-for-visual-studio.md
+  - name: Per-monitor-awareness 支援
+    href: ux-guidelines/per-monitor-awareness-extenders.md
 - name: 處理 DPI 問題
   href: addressing-dpi-issues2.md
 - name: 影像服務與資料庫目錄
@@ -786,9 +788,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Roslyn 套件版本參考
     href: roslyn-version-support.md
-ms.openlocfilehash: 5b59d25db51cf7c159d54a821aaa6afa048e2228
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: b9d3039ea1d7d56081f1d1a6680124d4c7ed3d16
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841814"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477615"

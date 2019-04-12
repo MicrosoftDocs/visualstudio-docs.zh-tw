@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 10e10b512dc8deb63db7ade2075347d9e6405b6b
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 4bf9306ea1604d032ce9f4436759b11c4d17c343
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428709"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504337"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>偵錯在 Visual Studio 中的已安裝的 UWP 應用程式套件
 
@@ -97,7 +97,7 @@ Visual Studio 可以偵錯已安裝的 Windows 10 電腦和 Xbox、 HoloLens、 
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 偵錯](../debugger/index.md)
-- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+- [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [遠端偵錯](../debugger/remote-debugging.md)
 - [設定 Windows 防火牆以進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)
