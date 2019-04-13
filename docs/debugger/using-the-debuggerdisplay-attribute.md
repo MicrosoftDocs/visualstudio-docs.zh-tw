@@ -1,5 +1,5 @@
 ---
-title: 使用 DebuggerDisplay 屬性 |Microsoft Docs
+title: 顯示自訂資訊使用 DebuggerDisplay |Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680180"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537633"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 屬性 (C#，Visual Basic 中， F#、 C + + /cli CLI)
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>告知偵錯工具来示範如何使用 DebuggerDisplay 屬性的項目 (C#，Visual Basic 中， F#， C++/CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> 控制物件、屬性或欄位在偵錯工具變數視窗中顯示的方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。
 
 `DebuggerDisplay` 屬性有單一引數，這是要在類型執行個體的 [值] 一欄中顯示的字串。 這個字串可以包含括號 (`{` 和 `}`)。 一對括號內的文字會評估為欄位、屬性或方法。
@@ -32,7 +32,7 @@ ms.locfileid: "56680180"
 > 如果已核取 [工具/選項 / 偵錯]  對話方塊中的 [在變數視窗中顯示物件的原始結構]  核取方塊，即忽略 `DebuggerDisplay` 屬性。
 
 > [!NOTE]
-> 原生程式碼，這個屬性只支援 C + + /cli 程式碼。
+> 原生程式碼，支援這個屬性只能在C++/CLI 程式碼。
 
 下表說明 `DebuggerDisplay` 屬性的一些可能用法和範例輸出。
 
@@ -177,7 +177,7 @@ class MyHashtable
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)
 - [建立 Managed 物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)
