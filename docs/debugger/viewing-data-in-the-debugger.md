@@ -19,20 +19,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e7d64cc1ae937ee7e68d04c95b56cc02c7612d8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 32b3fddd13bd16ac2c846f02f54596ec846374b9
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710483"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537487"
 ---
-# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>在 Visual Studio 偵錯工具中建立自訂檢視的資料 (C#，Visual Basic、 c + +)
+# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>在 Visual Studio 偵錯工具中建立自訂檢視的資料 (C#，Visual Basic 中， C++)
 
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]偵錯工具會提供許多工具，可檢查及修改程式狀態。 這些工具大多數只能在中斷模式下運作。
 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>在變數視窗和 DataTips 中建立資料的自訂檢視
 
- 許多[偵錯工具視窗](../debugger/debugger-windows.md)，例如**自動變數**並**監看式**windows 中，可讓您檢查變數。 您可以自訂原生類型，受管理的物件，和您自己的類型會顯示在偵錯工具變數視窗中，以及在[DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)。 如需詳細資訊，請參閱 <<c0> [ 建立原生物件的自訂檢視](../debugger/create-custom-views-of-native-objects.md)並[建立物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)。
+ 許多[偵錯工具視窗](../debugger/debugger-windows.md)，例如**自動變數**並**監看式**windows 中，可讓您檢查變數。 您可以自訂如何C++型別、 受管理的物件和您自己的類型會顯示在偵錯工具變數視窗中，以及在[DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)。 如需詳細資訊，請參閱 <<c0> [ 建立的自訂檢視C++物件](../debugger/create-custom-views-of-native-objects.md)並[建立物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)。</c0>
 
 ## <a name="create-custom-visualizers"></a>建立自訂視覺化檢視
 

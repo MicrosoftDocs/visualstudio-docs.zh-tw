@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366298"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537555"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 中偵錯工具的產能的秘訣和訣竅
 
@@ -52,6 +52,10 @@ ms.locfileid: "59366298"
     ![條件式中斷點](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
 3. 如果您有興趣在另一種條件，請選取**篩選條件**而不是**條件運算式**中**中斷點設定**對話方塊，然後再依照篩選器的秘訣。
+
+## <a name="configure-the-data-to-show-in-the-debugger"></a>設定要在偵錯工具中顯示的資料
+
+針對C#，Visual Basic 和C++(C++僅限 /CLI 程式碼)，您可以告知偵錯工具来示範如何使用資訊[DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)屬性。 針對C++程式碼中，您可以執行相同的 using [Natvis 視覺化](create-custom-views-of-native-objects.md)。
 
 ## <a name="change-the-execution-flow"></a>變更執行流程
 

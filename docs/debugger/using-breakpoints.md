@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 9cfb3e68f1f967c3c74c93107b622c618a8af728
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504324"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537594"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的中斷點
 中斷點是在您的開發人員工具箱中最重要的偵錯技術之一。 每當您要暫停偵錯工具執行，您可以設定中斷點。 例如，您可能要查看程式碼變數的狀態，或查看呼叫堆疊，在特定中斷點。 如果這是您第一次嘗試偵錯程式碼，您可能需要先閱讀[適用於徹底初學者偵錯](../debugger/debugging-absolute-beginners.md)，再瀏覽本文。
@@ -113,21 +113,21 @@ ms.locfileid: "59504324"
 
    - 使用完整函式名稱。
 
-     範例：  `Namespace1.ClassX.MethodA()`
+     範例：`Namespace1.ClassX.MethodA()`
 
    - 新增多載的函式的參數類型。
 
-     範例：  `MethodA(int, string)`
+     範例：`MethodA(int, string)`
 
    - 使用 '！' 指定模組的符號。
 
-     範例： `App1.dll!MethodA`
+     範例：`App1.dll!MethodA`
 
    - 使用內容運算子以原生C++。
 
      `{function, , [module]} [+<line offset from start of method>]`
 
-     範例： `{MethodA, , App1.dll}+2`
+     範例：`{MethodA, , App1.dll}+2`
 
 1. 在 **語言**下拉式清單中，選擇 函式的語言。
 
@@ -176,13 +176,13 @@ ms.locfileid: "59504324"
 
 **若要設定資料中斷點：**
 
-1.  在C++專案、 開始偵錯，然後等候，直到到達中斷點。 在 **偵錯**功能表上，選擇**新中斷點** > **資料中斷點**
+1. 在C++專案、 開始偵錯，然後等候，直到到達中斷點。 在 **偵錯**功能表上，選擇**新中斷點** > **資料中斷點**
 
     您也可以選取**的新** > **資料中斷點**中**中斷點**視窗或以滑鼠右鍵按一下中的項目**自動變數**，**監看式**，或**區域變數**視窗，然後選取**值變更時中斷**操作功能表中。
 
-2.  在 [位址] 方塊中，鍵入記憶體位址或評估為記憶體位址的運算式。 例如，輸入當變數 `&avar` 的內容變更時要中斷的 `avar` 。
+2. 在 [位址] 方塊中，鍵入記憶體位址或評估為記憶體位址的運算式。 例如，輸入當變數 `&avar` 的內容變更時要中斷的 `avar` 。
 
-3.  在 [位元組計數]  下拉式清單中，選取想要偵錯工具監看的位元組數量。 例如，如果選取 **4**，則偵錯工具將從 `&avar` 開始監看四個位元組，並且在任何這些位元組的值變更時中斷。
+3. 在 [位元組計數]  下拉式清單中，選取想要偵錯工具監看的位元組數量。 例如，如果選取 **4**，則偵錯工具將從 `&avar` 開始監看四個位元組，並且在任何這些位元組的值變更時中斷。
 
 在下列情況下，不適用資料中斷點：
 -   未進行偵錯的處理序會寫入記憶體位置。
