@@ -16,7 +16,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 02/08/2019
 ms.locfileid: "55921300"
 ---
-# <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>重構 for 迴圈與 foreach 陳述式之間的轉換
+# <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>重構以在 for 迴圈與 foreach 陳述式之間轉換
 
 本文說明在兩個迴圈結構之間進行轉換的快速動作重構。 其中包括您可能會想要在程式碼中於 [for](/dotnet/csharp/language-reference/keywords/for) 迴圈與 [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) 陳述式之間切換的原因。
 
@@ -35,7 +35,7 @@ ms.locfileid: "55921300"
 
 將 [for](/dotnet/csharp/language-reference/keywords/for) 迴圈轉換為 [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) 陳述式的理由包括：
 
-- 除了用來存取項目的索引之外，您不會在迴圈內使用區域迴圈變數。
+- 除了當作用來存取項目的索引之外，您不會在迴圈內使用區域迴圈變數。
 
 - 您想要簡化程式碼，以及降低初始設定式、條件及迭代器區段中發生邏輯錯誤的可能性。
 
