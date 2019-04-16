@@ -3,25 +3,35 @@ items:
   href: index.yml
   items:
   - name: 總覽
-    href: visual-studio-tools-for-docker.md
-  - name: 快速入門：Visual Studio 中的 Docker
-    href: docker-tools.md
-  - name: 教學課程：具有 Docker Compose 的多容器應用程式
-    href: tutorial-multicontainer.md
-  - name: 教學課程：Visual Studio 中的 Kubernetes
-    href: tutorial-kubernetes-tools.md
-  - name: 對本機 Docker 容器中的應用程式偵錯
-    href: vs-azure-tools-docker-edit-and-refresh.md
-  - name: 部署到容器登錄
-    href: vs-azure-tools-docker-hosting-web-apps-in-docker.md
-  - name: 部署到 Azure App Service
-    href: docker-deploy-app-service.md
-  - name: 對使用 Docker 進行的 Visual Studio 開發進行疑難排解
-    href: vs-azure-tools-docker-troubleshooting-docker-errors.md
+    href: overview.md
+  - name: 快速入門
+    items:
+    - name: Visual Studio 中的容器工具
+      href: container-tools.md
+    expanded: true
+  - name: 教學課程
+    items:
+    - name: 教學課程 - 使用 Docker Compose 的多容器應用程式
+      href: tutorial-multicontainer.md
+    - name: 教學課程 - Visual Studio 中的 Kubernetes
+      href: tutorial-kubernetes-tools.md
+    expanded: true
+  - name: 如何
+    items:
+    - name: 對本機 Docker 容器中的應用程式偵錯
+      href: edit-and-refresh.md
+    - name: 部署到容器登錄
+      href: hosting-web-apps-in-docker.md
+    - name: 部署到 Azure App Service
+      href: deploy-app-service.md
+    - name: 設定容器工具
+      href: container-tools-configure.md
+  - name: 疑難排解
+    href: troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: 75905587ed44c64495610bd76c8dab63664c2bb2
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e667c577f9cf618139246145ff08edc9233903f3
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354813"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537685"
