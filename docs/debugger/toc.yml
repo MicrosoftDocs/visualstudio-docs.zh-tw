@@ -202,7 +202,7 @@ items:
     - name: 建立資料的自訂檢視
       href: viewing-data-in-the-debugger.md
       items:
-      - name: 建立原生物件的自訂檢視
+      - name: 建立 C++ 物件的自訂檢視
         href: create-custom-views-of-native-objects.md
         items:
         - name: Visual C++ 自訂視覺化檢視相容性
@@ -210,10 +210,10 @@ items:
       - name: 建立受控物件的自訂檢視
         href: create-custom-views-of-dot-managed-objects.md
         items:
-        - name: 使用 DebuggerTypeProxy 屬性
-          href: using-debuggertypeproxy-attribute.md
-        - name: 使用 DebuggerDisplay 屬性
+        - name: 告訴偵錯工具要顯示的項目
           href: using-the-debuggerdisplay-attribute.md
+        - name: 告訴偵錯工具要顯示的類型
+          href: using-debuggertypeproxy-attribute.md
       - name: 建立資料的自訂視覺化檢視
         href: create-custom-visualizers-of-data.md
         items:
@@ -844,9 +844,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 6e0d832e0adace66495a1edfd19fd7b5a9f9c866
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: ae2dc7baa536b03c6507cb4f7064e74126d1d93e
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366065"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537711"

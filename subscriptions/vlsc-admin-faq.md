@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: 大量授權服務中心系統管理移轉常見問題集
 searchscope: VS Subscription
-ms.openlocfilehash: d9f066fdb17af7e876a1fc7af611fa5cb48edba9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145261"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897656"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio 訂閱系統管理移轉
 
@@ -36,7 +36,7 @@ ms.locfileid: "58145261"
 組織不需要註冊 Azure AD，但您可以隨時註冊。 如果您選擇在 Azure AD 上線，就可以使用 Azure AD 的免費層，無須支付任何費用，即可達到此目的。 搭配 Azure Active Directory 時，您將可提升組織的安全性、控制及長期可靠性，來為組織提供安全防護。 不過，如果您尚未做好使用 Azure AD 的準備，則將能夠像目前一樣繼續使用「Microsoft 帳戶」(MSA)。
 
 ### <a name="how-do-i-know-when-my-organization-will-be-migrated"></a>如何知道何時會移轉我的組織？
-我們將會寄送電子郵件給「主要/通知連絡人」，邀請他們在組織移轉的一週前完成上線程序。 「訂閱管理員」也會收到電子郵件，告知他們我們已連絡「主要/通知連絡人」，並已提供有關如何協助確保上線成功的詳細資料。 了解如何[尋找組織的主要/通知連絡人](#how-do-i-find-out-who-my-primary-or-notices-contact-is?)。
+我們將會寄送電子郵件給「主要/通知連絡人」，邀請他們在組織移轉的一週前完成上線程序。 「訂閱管理員」也會收到電子郵件，告知他們我們已連絡「主要/通知連絡人」，並已提供有關如何協助確保上線成功的詳細資料。 了解如何[尋找組織的主要/通知連絡人](#how-do-i-find-out-who-my-primary-or-notices-contact-is)。
 
 ### <a name="is-onboarding-different-from-migration"></a>上線與移轉是否不同？
 可以。  此程序包含兩個階段。 在移轉前將組織設定好 (或上線) 可確保您的系統管理員工作不會受到干擾。 在我們移轉組織的資訊之後，您就能夠在新版入口網站中管理 Visual Studio 訂閱。 如果「主要/通知連絡人」未在移轉前執行上線程序，「訂閱管理員」將會被系統封鎖而無法管理訂閱，直到您完成上線程序為止。
