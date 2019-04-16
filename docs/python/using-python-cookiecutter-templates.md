@@ -3,19 +3,19 @@ title: 搭配 Python 使用 CookieCutter 範本
 description: Visual Studio 支援圖形 Cookiecutter 延伸模組來探索適用於 Python 程式碼的範本，並從這些範本建立專案。
 ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a5b090c1e833a791593e5332b632d64b832b5cb1
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354736"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366311"
 ---
 # <a name="use-the-cookiecutter-extension"></a>使用 Cookiecutter 延伸模組
 
@@ -100,7 +100,7 @@ Cookiecutter 選項可透過 [工具] > [選項] > [Cookiecutter] 存取：
 | ThisAddIn | 指定變數的編輯器上方顯示的內容，取代變數的名稱。 |
 | 說明 | 指定編輯控制項上顯示的工具提示，取代該變數的預設值。 |
 | URL | 將標籤變更成超連結，並含有一個顯示 URL 的工具提示。 按一下超連結，會以使用者的預設瀏覽器開啟該 URL。 |
-| 選取器 | 可自訂變數的編輯器。 目前支援下列選取器︰<ul><li>`string`：標準文字方塊，字串的預設。</li><li>`list`：標準下拉式方塊，清單的預設。</li><li>`yesno`：可在 `y` 和 `n` 之間選擇的下拉式方塊，適用於字串。</li><li>`odbcConnection`：包含 [...] 按鈕的文字方塊，會顯示資料庫連接對話方塊。</li></ul> |
+| 選取器 | 可自訂變數的編輯器。 目前支援下列選取器︰<ul><li>`string`:標準文字方塊，字串的預設。</li><li>`list`:標準下拉式方塊，清單的預設。</li><li>`yesno`:可在 `y` 和 `n` 之間選擇的下拉式方塊，適用於字串。</li><li>`odbcConnection`:包含 [...] 按鈕的文字方塊，會顯示資料庫連接對話方塊。</li></ul> |
 
 範例：
 

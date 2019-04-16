@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Visual Studio 中 Python 功能的摘要，這些功能使它成為 Windows 上最佳的 Python IDE (也稱為「適用於 Visual Studio 的 Python 工具」(PTVS))。
 ms.date: 03/12/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 411b2e918658fa786885ccebf3f6c5703ddd9eb0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2c6e17b0556b324e0dde6fe188b9d21efb542778
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195004"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366870"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 的 Visual Studio 中使用 Python
 
@@ -29,7 +29,7 @@ Python 目前在 Visual Studio for Mac 中不予支援，但可透過 Visual Stu
 若要開始使用：
 
 - 依照[安裝指示](installing-python-support-in-visual-studio.md)設定 Python 工作負載。
-- 透過此文章中的各節熟悉 Visual Studio 的 Python 功能。
+- 透過本文中的各節熟悉 Visual Studio 的 Python 功能。
 ::: moniker range="vs-2017"
 - 完整瀏覽一或多份快速入門，以建立專案。 如果您不確定從何處著手，請從[使用 Flask 來建立 Web 應用程式](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)開始著手。
 ::: moniker-end
@@ -89,7 +89,7 @@ Visual Studio 也支援 REPL 中 IPython/Jupyter，包括內嵌繪圖、.NET 與
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio 2019 支援開啟包含 Python 程式碼的資料夾，並執行該程式碼，不需要建立 Visual Studio 專案和方案檔案。 如需詳細資訊，請參閱[快速入門：在資料夾 ](quickstart-05-python-visual-studio-open-folder.md) 中開啟及執行 Python 程式碼。 但是使用專案檔有一些優點，如本節所述。
+> Visual Studio 2019 支援開啟包含 Python 程式碼的資料夾，並執行該程式碼，不需要建立 Visual Studio 專案和方案檔案。 如需詳細資訊，請參閱[快速入門：在資料夾中開啟及執行 Python 程式碼](quickstart-05-python-visual-studio-open-folder.md)。 但是使用專案檔有一些優點，如本節所述。
 ::: moniker-end
 
 Visual Studio 可協助您管理專案隨時間發展衍生出的複雜性。 *Visual Studio 專案*遠比資料夾結構複雜：它包括了解不同檔案的使用方式，以及它們之間的關聯性。 Visual Studio 可協助您區別應用程式程式碼、測試程式碼、網頁、JavaScript、建置指令碼等，這些會接著啟用檔案適當的功能。 此外，Visual Studio 方案還可協助您管理多個相關的專案，例如 Python 專案和 C++ 延伸模組專案。
@@ -98,7 +98,7 @@ Visual Studio 可協助您管理專案隨時間發展衍生出的複雜性。 *V
 
 專案和項目範本可將設定不同類型專案和檔案的流程自動化，不僅可節省您寶貴的時間，還能讓您不必再管理錯綜複雜又容易出錯的細節。 Visual Studio 提供適用於 Web、Azure、資料科學、主控台及其他類型專案的範本，還提供適用於檔案的範本，例如 Python 類別、單元測試、Azure Web 設定、HTML 及甚至是 Django 應用程式。
 
-[![Visual Studio 中的 Python 專案和項目範本](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
+[![PVisual Studio 中的 Python 專案和項目範本](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 如需詳細資訊：
 
@@ -130,7 +130,7 @@ Visual Studio 的其中一個優點是功能強大的偵錯工具。 特別是�
 
 分析功能會探索您應用程式中的時間使用情況。 Visual Studio 支援使用 CPython 型解譯器來進行分析，並且包含了可比較不同分析執行回合之間效能的功能。
 
-[![Python 專案的 Visual Studio 分析工具結果](media/profiling-results.png)](media/profiling-results.png#lightbox)
+[![VPython 專案的 Visual Studio 分析工具結果](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 如需詳細資訊：
 
@@ -156,15 +156,15 @@ Python 工作負載包含「適用於 Python 的 Azure SDK」，此 SDK 可簡�
 
 ## <a name="questions-and-answers"></a>問與答
 
-**問：Visual Studio for Mac 提供 Python 支援嗎？**
+**問： Visual Studio for Mac 提供 Python 支援嗎？**
 
 答： 目前沒有提供，但您可以在 [Developer Community](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html) (開發人員社群) 上對該要求投贊成票。 [Visual Studio for Mac](/visualstudio/mac/) 文件可識別它確實支援的目前開發類型。 同時，Windows、Mac 和 Linux 上的 Visual Studio Code [透過可用的延伸模組與 Python 搭配運作良好](https://code.visualstudio.com/docs/languages/python)。
 
-**問：建置 UI 時，我可以使用什麼功能來搭配 Python？**
+**問： 建置 UI 時，我可以使用什麼功能來搭配 Python？**
 
 答： 這方面的主要供應項目是 [Qt 專案](https://www.qt.io/qt-for-application-development/) 及 Python 的繫結，其稱為 [PySide (正式繫結)](https://wiki.qt.io/PySide) (另請參閱 [PySide downloads](https://download.qt.io/official_releases/pyside/.)) (PySide 下載) 和 [PyQt](https://wiki.python.org/moin/PyQt)。 目前，Visual Studio 中的 Python 支援不包含任何特定的 UI 開發工具。
 
-**問：Python 專案是否能產生獨立的可執行檔？**
+**問： Python 專案是否能產生獨立的可執行檔？**
 
 答： 一般來說，Python 是解譯的語言，並包含可在適當 Python 支援環境 (例如 Visual Studio 和網頁伺服器) 中視需要執行的程式碼。 目前，Visual Studio 本身不提供用來建立獨立可執行檔的工具，因為獨立可執行檔基本上表示內嵌 Python 解譯器的程式。 不過，Python 社群提供不同方式來建立可執行檔，如 [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 中所述。 CPython 也支援在原生的應用程式中內嵌，如[使用 CPython 的可內嵌 Zip 檔案](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)部落格文章中所述。
 

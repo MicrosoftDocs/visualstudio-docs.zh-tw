@@ -7,12 +7,12 @@ ms.date: 07/31/2018
 ms.topic: conceptual
 description: Visual Studio 訂用帳戶中包含的專業開發權益
 searchscope: VS Subscription
-ms.openlocfilehash: 7b2dd9eaafa7b68f12a8ee72b7ffb4108c516292
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: d63fd098c003f606a1d88aec55157e554620b20b
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842412"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018359"
 ---
 # <a name="professional-development-benefits-available-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中包含的專業開發權益
 
@@ -26,3 +26,4 @@ ms.locfileid: "56842412"
 - [Opsgility](vs-opsgility.md)
 - [Pluralsight](vs-pluralsight.md)
 - [MSDN Magazine](vs-msdn.md)
+- [LinkedIn Learning](vs-linkedin-learning.md)

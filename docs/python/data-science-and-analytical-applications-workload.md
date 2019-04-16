@@ -3,18 +3,18 @@ title: 資料科學與分析應用程式工作負載
 description: 此 Visual Studio 工作負載結合 Python、F# 及其對應的執行階段發行版本，包括 Anaconda。 (R 僅包含在 Visual Studio 2017 中。)
 ms.date: 02/28/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 44dfa13059e16338111bbeb2eb2f0bc6d6b44408
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324923"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366324"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>在 Visual Studio 中安裝資料科學支援
 
@@ -98,9 +98,9 @@ SQL Server 支援使用 Python，以直接在 SQL Server 內執行進階分析�
 
 ::: moniker range="vs-2017"
 - [使用 SQL Server 和 R](../rtvs/integrating-sql-server-with-r.md)
-- [SQL Server 2016 中使用 R 的資料庫中進階分析 (部落格)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/) \(英文\)
+- [SQL Server 2016 中使用 R 的資料庫中進階分析 (部落格)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
 ::: moniker-end
-- [SQL Server 2017 中的 Python：增強式資料庫中機器學習 (部落格)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/) \(英文\)
+- [SQL Server 2017 中的 Python：增強式資料庫中機器學習 (部落格)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)
 
 ## <a name="additional-services-and-sdks"></a>其他服務和 SDK
 

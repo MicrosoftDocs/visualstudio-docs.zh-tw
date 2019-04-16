@@ -1,20 +1,20 @@
 ---
 title: Visual Studio 訂用帳戶的 Visual Studio IDE 權益 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 04/03/2019
 ms.topic: conceptual
 description: 了解如何下載和安裝 Visual Studio 訂用帳戶中所含的 Visual Studio IDE。
 searchscope: VS Subscription
-ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789883"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018138"
 ---
-# <a name="using-the-visual-studio-2017-benefit"></a>使用 Visual Studio 2017 權益
+# <a name="using-the-visual-studio-2019-benefit"></a>使用 Visual Studio 2019 權益
 
 身為 Visual Studio 訂閱者，您可以存取 Visual Studio IDE。  特定版本將取決於您的訂用帳戶層級。  權益會以磚形式顯示在訂閱者入口網站之[權益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)頁面的 [工具] 分類中 
 
@@ -29,7 +29,7 @@ ms.locfileid: "58789883"
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise 磚](_img/vs-ide-experience/vs-ide-tile.png)
 
-3. 按一下，會將您重新導向至 Visual Studio Enterprise 的 [下載結果] 頁面，而您有機會在其中下載 IDE，並取得產品金鑰進行啟用。 您也可以按一下藍色的 [取得金鑰] 連結來索取產品金鑰，或稍後在[產品金鑰](https://my.visualstudio.com/productkeys)頁面上索取金鑰。
+3. 會將您重新導向至 Visual Studio 的 [下載結果] 頁面，而您有機會在其中下載 IDE，並取得產品金鑰進行啟用。 您也可以按一下藍色的 [取得金鑰] 連結來索取產品金鑰，或稍後在[產品金鑰](https://my.visualstudio.com/productkeys)頁面上索取金鑰。
 4. 在 [下載結果] 頁面的 [詳細資料] 索引標籤上：
    - 選取您想要的架構 (x86、x64)
    - 選取您的語言參考。

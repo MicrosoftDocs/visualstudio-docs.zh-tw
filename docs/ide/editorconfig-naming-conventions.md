@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983270"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232589"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
 
@@ -76,8 +76,21 @@ ms.locfileid: "57983270"
 - private\_protected
 - 本機
 
-> [!NOTE]
-> 如果存取範圍不適用於您設定為目標的符號，則請勿將存取層級指定為命名慣例的一部分。 例如，參數沒有存取層級。 如果您為參數命名慣例指定存取層級，命名規則將不會正確運作。
+   `local` 存取層級適用於在方法內定義的符號。 當符號的存取性無法在程式碼中定義時，這非常有用。 例如，如果您在常數的命名慣例 (`required_modifiers = const`) 上指定 `applicable_accessibilities = local`，則該規則只套用至在方法內定義的常數，而不套用至在型別中定義的。
+
+   ```csharp
+   class TypeName
+   {
+     // Constant defined in a type.
+     const int X = 3;
+
+     void Method()
+     {
+       // Constant defined in a method with "local" accessibility.
+       const int Y = 4;
+     }
+   }
+   ```
 
 ### <a name="symbol-modifiers-optional"></a>符號修飾詞 (選擇性)
 
@@ -157,7 +170,7 @@ ms.locfileid: "57983270"
 無或無訊息 | 未遵循此樣式時，不要向使用者顯示任何內容；但自動產生的程式碼會遵循此樣式。
 建議 | 當未遵循此樣式時，向使用者顯示為建議 (在前兩個字元下方以點狀方式呈現)。 它在編譯時期沒有任何作用。
 warning | 當未遵循此樣式時，在 [錯誤清單] 中顯示編譯器警告。
-個錯誤 | 當未遵循此樣式時，在 [錯誤清單] 中顯示編譯器錯誤。
+error | 當未遵循此樣式時，在 [錯誤清單] 中顯示編譯器錯誤。
 
 > [!NOTE]
 > 您不需要建置您的專案，也能看到違反命名規則的項目。 它們會在 [錯誤清單] 中 (或作為建議)，以編輯過後的程式碼方式呈現。
@@ -196,6 +209,6 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 
 ## <a name="see-also"></a>另請參閱
 
-- [.NET 語言與格式設定慣例](../ide/editorconfig-code-style-settings-reference.md)
+- [.NET 語言及格式設定慣例](../ide/editorconfig-code-style-settings-reference.md)
 - [建立可攜式自訂編輯器選項](../ide/create-portable-custom-editor-options.md)
 - [.NET 編譯器平台的 .editorconfig 檔案](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

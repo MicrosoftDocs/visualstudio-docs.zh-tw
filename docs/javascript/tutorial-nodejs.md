@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 154ae0a55b3d85136209131e644cda9f696ef59a
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ebc255e41e8e73739f83e69ab120f397cc46f49c
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355561"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897708"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 Express 應用程式
 
@@ -78,7 +78,7 @@ Visual Studio 可在「專案」中管理單一應用程式的檔案。 專案�
 1. 建立新的專案。
 
     ::: moniker range=">=vs-2019"
-    鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，鍵入 **Node.js**，然後選擇 [Create a new Basic Azure Node.js Express 4 application] \(建立新的基礎 Azure Node.js Express 4 應用程式\) (JavaScript)。 在出現的對話方塊中，選擇 [建立]。
+    按 **Esc** 來關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，鍵入 **Node.js**，然後選擇 [Create a new Basic Azure Node.js Express 4 application] \(建立新的基礎 Azure Node.js Express 4 應用程式\) (JavaScript)。 在出現的對話方塊中，選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **JavaScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [基本的 Azure Node.js Express 4 應用程式]，然後選擇 [確定]。
@@ -186,7 +186,7 @@ IntelliSense 是一種 Visual Studio 工具，可協助您撰寫程式碼。
 
 1. 在 `"data"` 前面新增逗號 (`,`)，以修正程式碼。
 
-    更正後，程式碼行應該如下所示：`res.render('index', { title: 'Express', "data": getData() });`
+    更正後，程式碼行應該如下所示： `res.render('index', { title: 'Express', "data": getData() });`
 
 ## <a name="set-a-breakpoint"></a>設定中斷點
 
@@ -204,7 +204,12 @@ IntelliSense 是一種 Visual Studio 工具，可協助您撰寫程式碼。
 
 1. 在 [偵錯] 工具列中選取偵錯目標，例如 Microsoft Edge 或 Chrome。
 
+    ::: moniker range=">=vs-2019"
+    ![選取偵錯目標](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![選取偵錯目標](../javascript/media/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
 
     如果您的電腦中有 Chrome 可供使用，但未顯示為選項，請從偵錯目標下拉式清單中選擇 [瀏覽方式]，並選取 Chrome 作為預設瀏覽器目標 (選擇 [設為預設值])。
 

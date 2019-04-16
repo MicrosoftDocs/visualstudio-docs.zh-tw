@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027285"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897695"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑難排解和已知問題 (Visual Studio Tools for Unity)
 
@@ -62,7 +62,7 @@ ms.locfileid: "53027285"
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>額外重新載入，或 Visual Studio 遺失所有開啟的視窗
 
-請務必不要再直接從資產處理器或任何其他工具處理專案檔。 如果您真的需要操作專案檔，我們會公開它的 API。 請參閱[組件參考問題](#Assembly-reference-issues)一節。
+請務必不要再直接從資產處理器或任何其他工具處理專案檔。 如果您真的需要操作專案檔，我們會公開它的 API。 請參閱[組件參考問題](#assembly-reference-issues)一節。
 
 如果您發生額外重新載入，或如果 Visual Studio 在重新載入中遺失所有開啟的視窗，請確定您安裝了正確的 .NET 目標套件。 如需架構的詳細資訊，請參閱下節。
 
@@ -124,7 +124,7 @@ USB 偵錯的速度超快，而且 Visual Studio Tools for Unity 現已可偵測
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>回報使用 Visual Studio Tools for Unity 進行偵錯時 Visual Studio 凍結的情形
 
-*在 Windows 上*：
+*在 Windows 上：*
 
 1. 開啟新的 Visual Studio 執行個體。
 
@@ -142,7 +142,7 @@ USB 偵錯的速度超快，而且 Visual Studio Tools for Unity 現已可偵測
 
     您可能需要先顯示 [命令]  視窗。 在 Visual Studio 主功能表上，選擇 [檢視] 、[其他視窗] 、[命令視窗] 。
 
-*在 Mac 上*：
+*在 Mac 上：*
 
 1. 開啟終端機，並取得 Visual Studio for Mac 的 PID：
 

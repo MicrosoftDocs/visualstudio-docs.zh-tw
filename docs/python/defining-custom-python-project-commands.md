@@ -3,19 +3,19 @@ title: 定義 Python 專案的自訂功能表命令
 description: 您可以藉由編輯專案和目標檔案，將自訂命令新增至 Visual Studio 中的 Python 專案操作功能表，以叫用可執行程式、指令碼、模組、內嵌程式碼片段，以及 pip。
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d183041732b5170da4a7e8832346a93dec32451
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943086"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366714"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>定義 Python 專案的自訂命令
 
@@ -131,7 +131,7 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 
 ### <a name="target-attributes"></a>目標屬性
 
-| 屬性 | 必要 | 描述 |
+| 屬性 | 必要 | 說明 |
 | --- | --- | --- |
 | 名稱 | 是 | Visual Studio 專案中的命令識別項。 您必須將此名稱新增至 `<PythonCommands>` 屬性群組，命令才會顯示在 [Python] 子功能表上。 |
 | 標籤 | 是 | [Python] 子功能表上顯示的 UI 顯示名稱。 |
@@ -141,10 +141,10 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 
 所有屬性值均區分大小寫。
 
-| 屬性 | 必要 | 描述 |
+| 屬性 | 必要 | 說明 |
 | --- | --- | --- |
 | TargetType | 是 | 指定目標屬性的內容，以及其搭配 Arguments 屬性使用的方式：<ul><li>**executable**：執行在 Target 中命名的可執行檔，並附加 Arguments 中的值，如同直接在命令列上輸入一樣。 此值只能包含程式名稱，而不能包含引數。</li><li>**script**：以 Target 中的檔案名稱執行 *python.exe*，後面接著 Arguments 中的值。</li><li>**module**：執行 `python -m`，後面依序接著 Target 中模組名稱及 Arguments 中的值。</li><li>**code**：執行 Target 中包含的內嵌程式碼。 這會忽略 Arguments 值。</li><li>**pip**：以 Target 中的命令執行 `pip`，後面接著 Arguments；ExecuteIn 設定為 "output"，但 PIP 會使用 `install` 命令並將 Target 用作套件名稱。</li></ul> |
-| 目標 | 是 | 要使用的檔案名稱、模組名稱、程式碼或 PIP 命令，端視 TargetType 而定。 |
+| Target | 是 | 要使用的檔案名稱、模組名稱、程式碼或 PIP 命令，端視 TargetType 而定。 |
 | 引數 | Optional | 指定要指派至目標的引數字串 (如果有的話)。 請注意，當 TargetType 為 `script` 時，引數會指派至 Python 程序，而非 *python.exe*。 若為 `code` TargetType 請予以略過。 |
 | ExecuteIn | 是 | 指定要在其中執行命令的環境：<ul><li>**console**：(預設) 執行 Target 與 Arguments，如同直接在命令列上輸入一樣。 命令視窗會在 Target 執行時顯示，然後自動關閉。</li><li>**consolepause**：與 console 相同，但會在關閉視窗前等待按鍵動作。</li><li>**output**：執行 Target，並在 Visual Studio 的 [輸出] 視窗中顯示其結果。 若 TargetType 為 "pip"，Visual Studio 會將 Target 用作套件名稱並在後面加上 Arguments。</li><li>**repl**：在 [Python 互動式](python-interactive-repl-in-visual-studio.md)視窗中執行 Target；選擇性顯示名稱會用於視窗標題。</li><li>**none**：行為與 console 相同。</li></ul>|
 | WorkingDirectory | Optional | 要在其中執行命令的資料夾。 |
@@ -156,11 +156,11 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 
 剖析命令輸出的錯誤與警示時，Visual Studio 要求 `ErrorRegex` 與 `WarningRegex` 值中的規則運算式使用以下具名群組：
 
-- `(?<message>...)`：錯誤的文字
-- `(?<code>...)`：錯誤碼
-- `(?<filename>...)`：回報錯誤的檔案名稱
-- `(?<line>...)`：檔案中回報錯誤的位置行號。
-- `(?<column>...)`：檔案中回報錯誤的位置資料行編號。
+- `(?<message>...)`:錯誤的文字
+- `(?<code>...)`:錯誤碼
+- `(?<filename>...)`:回報錯誤的檔案名稱
+- `(?<line>...)`:檔案中回報錯誤的位置行號。
+- `(?<column>...)`:檔案中回報錯誤的位置資料行編號。
 
 例如，PyLint 會產生下列形式的警告：
 
@@ -379,7 +379,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
 - 要求的 `Target` 屬性為空白。
 - 要求的 `TargetType` 屬性為空白或包含無法辨識的值。
 - 要求的 `ExecuteIn` 屬性為空白或包含無法辨識的值。
-- 已指定 `ErrorRegex` 或 `WarningRegex`，但未設定 `ExecuteIn="output"`。
+- `ErrorRegex` 或 `WarningRegex` 已指定，而未設定 `ExecuteIn="output"`。
 - 元素中包含無法辨識的屬性。 例如，您可能使用了 `Argumnets` (拼字有誤) 而非 `Arguments`。
 
 若您參考未定義的屬性，則屬性值可能為空白。 例如，若您使用語彙基元 `$(StartupFile)`，但專案中並未定義任何啟動檔案，則語彙基元會解析至空白的字串。 在此情況下，建議您定義預設值。 例如，若您未另外在專案屬性中指定伺服器啟動檔案，則在 Bottle、Flask 及 Django 專案範本中定義的 [執行伺服器] 與 [執行偵錯伺服器] 命令將預設為 *manage.py*。

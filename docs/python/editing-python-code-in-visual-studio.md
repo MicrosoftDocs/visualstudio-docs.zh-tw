@@ -3,19 +3,19 @@ title: 編輯 Python 程式碼
 description: 對於 Python，Visual Studio 可提供豐富的 IntelliSense、程式碼片段及導覽功能，還有格式設定、Linting 和重構。
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355548"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366272"
 ---
 # <a name="edit-python-code"></a>編輯 Python 程式碼
 
@@ -227,6 +227,6 @@ Visual Studio 中的 Python 支援提供幾種快速巡覽程式碼 (以及有�
 
 ## <a name="see-also"></a>另請參閱
 
-- [格式設定](formatting-python-code.md)
+- [格式化](formatting-python-code.md)
 - [重構](refactoring-python-code.md)
 - [使用 Linter](linting-python-code.md)

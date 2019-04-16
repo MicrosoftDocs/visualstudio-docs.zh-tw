@@ -4,18 +4,18 @@ description: 在此快速入門中，您將使用 Visual Studio 和 Flask 架構
 ms.date: 03/07/2019
 ms.technology: vs-python
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8c8be894bf80749260f44cf36255d78f3899bf35
-ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
+ms.openlocfilehash: 05551799a0f97178c5a52d7468f6c6abb505e4c3
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57683381"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366680"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 
@@ -184,7 +184,7 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 6. 關閉命令視窗以停止應用程式，然後關閉瀏覽器視窗。
 
-**問題：啟動但不偵錯命令和開始偵錯之間有何差異？**
+**問題：[啟動但不偵錯] 命令和 [開始偵錯] 之間有何差異？**
 
 **答**：您可以使用 [開始偵錯] 在 [Visual Studio 偵錯工具](../python/debugging-python-in-visual-studio.md)的內容中執行應用程式，讓您設定中斷點、檢查變數，以及逐行執行程式碼。 在偵錯工具中，應用程式可能會執行得較慢，原因是有各種不同的攔截程序在進行偵錯。 相反地，[開始偵錯] 會直接執行應用程式，就像是您從命令列執行它一樣，沒有任何偵錯內容，而且也會自動啟動瀏覽器並瀏覽到專案屬性的 [偵錯] 索引標籤中指定的 URL。
 

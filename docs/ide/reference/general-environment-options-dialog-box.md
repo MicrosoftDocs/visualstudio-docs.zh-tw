@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fdbd8c64514854aa77c358145badbf6583996f1
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647267"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018190"
 ---
 # <a name="options-dialog-box-environment--general"></a>選項對話方塊：環境 \> 一般
 
@@ -49,9 +49,13 @@ ms.locfileid: "58647267"
 
 ::: moniker range=">=vs-2019"
 
-**為不同像素密度的螢幕最佳化呈現方式 (需要重新啟動)**
+**為不同像素密度的螢幕最佳化呈現方式 (需要重新開機)**
 
 此選項可啟用或停用個別監視器 DPI (每英吋的點數) 感知 (或 *PMA*)。 當 PMA 啟用時，使用任何監視器顯示比例與 DPI 設定都能清晰顯示 Visual Studio 使用者介面，包括跨多個監視器顯示時。 若要啟用 PMA，您需要 Windows 10 2018 4 月更新或更新版本和 .NET Framework 4.8 或更新版本。 (如果不符合這兩個必要條件，這個選項會呈現灰色。)
+
+> [!TIP]
+> - Windows 10 有設定顯示為 [讓 Windows 嘗試修正應用程式，讓他們不會模糊不清]。 如果您選取 [為不同像素密度的螢幕將呈現方式最佳化] 選項，則**開啟**該 Windows 設定會有顯著效果。
+> - Windows 10 也包含 [程式相容性疑難排解員]。 我們不建議您嘗試使用該疑難排解工具來修正 Visual Studio 的外觀。
 
 ::: moniker-end
 
@@ -59,7 +63,14 @@ ms.locfileid: "58647267"
 
 指定 Visual Studio 自動將調整設定為視覺效果還是明確地設定調整。 這項調整可能會將色彩顯示從漸層變更為單色，也可能會限制在功能表或快顯視窗中使用動畫。
 
-**啟用豐富的用戶端效果**
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Windows 10 有設定顯示為 [讓 Windows 嘗試修正應用程式，讓他們不會模糊不清]。 如果 Visual Studio 在您的監視器上顯示模糊，建議您**開啟**該設定。 請考慮升級至 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)，因為它是感知個別監視器 DPI 的應用程式，能大幅改善顯示清晰度。
+
+::: moniker-end
+
+**啟用豐富的用戶端體驗**
 
 啟用 Visual Studio 的完整視覺效果 (包括漸層和動畫)。 使用遠端桌面連線或較舊的圖形介面卡時，請清除這個選項，因為這些功能在這些情況下的效能可能不佳。 只有在您清除 [自動根據用戶端效能調整視覺效果] 選項時，才能使用這個選項。
 
@@ -85,7 +96,7 @@ ms.locfileid: "58647267"
 
 指定按一下 [關閉] 按鈕時，只會關閉具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項是選取的。
 
-**自動隱藏 按鈕只影響作用中的工具視窗**
+**[自動隱藏] 按鈕只影響作用中的工具視窗**
 
 指定按一下 [自動隱藏] 按鈕時，只會自動隱藏具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項並未選取。
 

@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: f245a97d7cf03542b02598811e4e7fa33c3c68e8
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 42554a9479168f2afc7a30a122fccc383b3dc745
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415787"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366678"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio 的專案移轉與升級參考 
 
@@ -64,8 +64,8 @@ ms.locfileid: "58415787"
 | SharePoint 2010 | 當使用 Visual Studio 2017 開啟 SharePoint 方案專案時，便會將該專案升級至 SharePoint 2013 或 SharePoint 2016。 必須在 Visual Studio 2017 中安裝「.NET 桌面開發」工作負載以進行升級。<br/><br/>如需如何升級 SharePoint 專案的詳細資訊，請參閱[升級到 SharePoint 2013](https://technet.microsoft.com/library/cc303420.aspx)、[在 SharePoint Server 2013 中更新工作流程 (英文)](https://technet.microsoft.com/library/dn133867.aspx)，以及[針對資料庫附加升級建立 SharePoint Server 2016 伺服器陣列 (英文)](https://technet.microsoft.com/library/cc263026(v=office.16).aspx)。 |
 | SharePoint 2016 | 在 Office Developer Tools Preview 2 中建立的 SharePoint 增益集專案，無法在 Visual Studio 2017 中開啟。 若要規避此限制，請將 csproj vbproj 檔案中的 `MinimumVisualStudioVersion` 更新為 12.0，並將 `MinimumOfficeToolsVersion` 更新為 12.2。 |
 | Silverlight | Visual Studio 2017 不支援 Silverlight 專案。 若要維護 Silverlight 應用程式，請繼續使用 Visual Studio 2015。 |
-| SQL Server Reporting Services 和 SQL Server Analysis Services (SSRS、SSDT、SSAS、MSAS) | 這些專案類型的支援會透過 Visual Studio 資源庫中的兩個延伸模組提供：[Microsoft Analysis Services Modeling Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) (Microsoft Analysis Services Modeling 專案) 與 [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) (Microsoft Reporting Services 專案)。 SSDT 支援也隨附於 Visual Studio 2017 中的資料儲存和處理工作負載。 |
-| SQL Server Integration Services (SSIS) | 透過 SQL Server Data Tools (SSDT) 可取得 Visual Studio 2017 的支援。 如需詳細資訊，請參閱 [SQL Server Data Tools 小組部落格](https://devblogs.microsoft.com/ssdt/)。 |
+| SQL Server Reporting Services 和 SQL Server Analysis Services (SSRS、SSDT、SSAS、MSAS) | 這些專案類型的支援會透過 Visual Studio 資源庫中的兩個延伸模組提供：[Microsoft Analysis Services Modeling Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) (Microsoft Analysis Services Modeling 專案) 與 [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) (Microsoft Reporting Services 專案)。 SSDT 支援也隨附於 Visual Studio 2017 中的資料儲存和處理工作負載。 如需詳細資訊，請參閱[下載並安裝 SQL Server Data Tools (SSDT) for Visual Studio](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 頁面。|
+| SQL Server Integration Services (SSIS) | 透過 SQL Server Data Tools (SSDT) 可取得 Visual Studio 2017 的支援。 如需詳細資訊，請參閱[下載並安裝 SQL Server Data Tools (SSDT) for Visual Studio](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 頁面，以及 [SQL Server Data Tools 小組部落格](https://devblogs.microsoft.com/ssdt/) \(英文\)。 |
 | Visual C++ | 您可以使用 Visual Studio 2017 來處理在較早之前 Visual Studio 版本 (自 Visual Studio 2010 起) 中建立的專案。 當您第一次開啟專案時，可以選擇要升級到最新的編譯器和工具組，或是繼續使用原本的編譯器和工具組。 如果您選擇繼續使用原本的編譯器和工具組，Visual Studio 2017 不會修改專案檔，並且會使用較早 Visual Studio 安裝的工具組來建置您的專案。 保留原本的選項表示您仍然可以視需要在原始的 Visual Studio 版本中開啟該專案。 如需詳細資訊，請參閱[在 Visual Studio 中使用原生多目標來建置舊專案](/cpp/porting/use-native-multi-targeting)。 |
 | Visual Studio 擴充性/VSIX | 系統會更新含 MinimumVersion 14.0 或以下版本的專案，以宣告 MinimumVersion 15.0；如此一來，即無法在舊版的 Visual Studio 中開啟專案。 若要允許在舊版本中開啟專案，請將 MinimumVersion 設定為 `$(VisualStudioVersion)`。 另請參閱[如何：將擴充性專案移轉至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。 |
 | Visual Studio Lab Management | 您可以使用 Microsoft Test Manager 或 Visual Studio 2010 SP1 和更新版本，開啟在這些版本中建立的環境。 不過，若是 Visual Studio 2010 SP1，Microsoft Test Manager 的版本必須符合 Team Foundation Server 的版本才能建立環境。 |
@@ -101,12 +101,12 @@ Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，
 
 請參閱下列文章以了解進一步的討論內容：
 
-- [ToolsVersion 指引](../msbuild/msbuild-toolset-toolsversion.md)
-- [Framework 目標指引](../ide/visual-studio-multi-targeting-overview.md)
+- [ToolsVersion 指導方針](../msbuild/msbuild-toolset-toolsversion.md)
+- [Framework 目標指導方針](../ide/visual-studio-multi-targeting-overview.md)
 
 ## <a name="see-also"></a>另請參閱
 
-[Visual Studio 2019 的專案移轉與升級參考](port-migrate-upgrade-visual-studio-projects-2019.md)
+[Visual Studio 2019 的專案移轉與升級參考](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
 
 ::: moniker-end
 
@@ -153,8 +153,8 @@ Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，
 | SharePoint 2016 | 在 Office Developer Tools Preview 2 中建立的 SharePoint 增益集專案無法在 Visual Studio 2019 中開啟。 若要規避此限制，請將 csproj vbproj 檔案中的 `MinimumVisualStudioVersion` 更新為 12.0，並將 `MinimumOfficeToolsVersion` 更新為 12.2。 |
 | Silverlight | Visual Studio 2019 不支援 Silverlight 專案。 若要維護 Silverlight 應用程式，請繼續使用 Visual Studio 2015。 |
 | SQL - Redgate | Visual Studio 安裝程式不再隨附 Redgate 的 SQL Change Automation Core (之前稱為 ReadyRoll Core)、SQL Prompt Core 和 SQL Search。<br/><br/>您可以繼續使用 Visual Studio 2017 來取得這些功能。 在 Visual Studio 2019 中，您可以升級為 Redgate SQL Toolbelt 中所提供的付費 SQL Change Automation 和 SQL Prompt 產品。|
-| SQL Server Reporting Services 和 SQL Server Analysis Services (SSRS、SSDT、SSAS、MSAS) | 這些專案類型的支援會透過 Visual Studio 資源庫中的兩個延伸模組提供：[Microsoft Analysis Services Modeling Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) (Microsoft Analysis Services Modeling 專案) 與 [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) (Microsoft Reporting Services 專案)。 SSDT 支援也隨附於 Visual Studio 2019 中的資料儲存和處理工作負載。 |
-| SQL Server Integration Services (SSIS) | Visual Studio 2019 的支援即將推出。 從 [SQL Server Data Tools 小組部落格](https://devblogs.microsoft.com/ssdt/)取得最新消息。 |
+| SQL Server Reporting Services 和 SQL Server Analysis Services (SSRS、SSDT、SSAS、MSAS) | 這些專案類型的支援會透過 Visual Studio 資源庫中的兩個延伸模組提供：[Microsoft Analysis Services Modeling Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) (Microsoft Analysis Services Modeling 專案) 與 [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) (Microsoft Reporting Services 專案)。 SSDT 支援也隨附於 Visual Studio 2019 中的資料儲存和處理工作負載。 如需詳細資訊，請參閱[下載並安裝 SQL Server Data Tools (SSDT) for Visual Studio](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 頁面。 |
+| SQL Server Integration Services (SSIS) | Visual Studio 2019 的支援即將推出。 如需詳細資訊，請參閱[下載並安裝 SQL Server Data Tools (SSDT) for Visual Studio](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 頁面，以及 [SQL Server Data Tools 小組部落格](https://devblogs.microsoft.com/ssdt/) \(英文\)。 |
 | 測試視窗延伸模組 | 在 Visual Studio 2019 中，會移除一些先前標記為公用，但從未正式記載的測試視窗 API。 許多 API 已在 Visual Studio 2017 中標示為已淘汰，可為延伸模組維護人員提供初期警告。 據我們所知，很少有延伸模組相依於這些 API。 如需詳細資訊和更新，請檢視[已淘汰之測試相關 API 的完整清單](https://github.com/Microsoft/vstest/issues/1830)。 如果這會影響您的案例，請在[開發人員社群](https://developercommunity.visualstudio.com)中讓我們知道。 |
 | Visual C++ | 您可以使用 Visual Studio 2019 來處理在 Visual Studio 更早版本 (自 Visual Studio 2010 起) 中建立的專案。 當您第一次開啟專案時，可以選擇要升級到最新的編譯器和工具組，或是繼續使用原本的編譯器和工具組。 如果您選擇繼續使用原本的編譯器和工具組，Visual Studio 2019 不會修改專案檔，且會使用 Visual Studio 更早所安裝工具組來建置您的專案。 保留原本的選項表示您仍然可以視需要在原始的 Visual Studio 版本中開啟該專案。 如需詳細資訊，請參閱[在 Visual Studio 中使用原生多目標來建置舊專案](/cpp/porting/use-native-multi-targeting)。 |
 | Visual Studio 擴充性/VSIX | 系統會更新含 MinimumVersion 14.0 或以下版本的專案，以宣告 MinimumVersion 15.0；如此一來，即無法在舊版的 Visual Studio 中開啟專案。 若要允許在舊版本中開啟專案，請將 MinimumVersion 設定為 `$(VisualStudioVersion)`。 另請參閱[如何：將擴充性專案移轉至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。 |
@@ -193,8 +193,8 @@ Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，
 
 請參閱下列文章以了解進一步的討論內容：
 
-- [ToolsVersion 指引](../msbuild/msbuild-toolset-toolsversion.md)
-- [Framework 目標指引](../ide/visual-studio-multi-targeting-overview.md)
+- [ToolsVersion 指導方針](../msbuild/msbuild-toolset-toolsversion.md)
+- [Framework 目標指導方針](../ide/visual-studio-multi-targeting-overview.md)
 
 ## <a name="see-also"></a>另請參閱
 

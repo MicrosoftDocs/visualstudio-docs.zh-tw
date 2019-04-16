@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 54c93a07d7ac3754c5c57d2029fff9991221ae65
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 990f14d76eabbf1b7ef252234a8625c66ffcdcba
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070639"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897578"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>安裝和設定工具以使用 iOS 進行建置
 
@@ -70,7 +70,7 @@ ms.locfileid: "55070639"
 
 當您安裝 Visual C++ for Cross-Platform Mobile Development 時，Visual Studio 可與在 Mac 上遠端執行的代理程式 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)通訊，以用來傳輸檔案、建置及執行您的 iOS 應用程式和傳送偵錯命令。
 
-安裝遠端代理程式之前，請確定您已符合[必要條件](#Prerequisites)，並且已安裝[適用於跨平台行動裝置應用程式開發的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)。
+安裝遠端代理程式之前，請確定您已符合[必要條件](#prerequisites)，並且已安裝[適用於跨平台行動裝置應用程式開發的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)。
 
 ###  <a name="DownloadInstall"></a> 若要下載及安裝遠端代理程式
 
@@ -236,4 +236,4 @@ ms.locfileid: "55070639"
 
 ## <a name="see-also"></a>另請參閱
 
-- [安裝適用於跨平台行動裝置應用程式開發的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [安裝適用於跨平台行動裝置開發的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
