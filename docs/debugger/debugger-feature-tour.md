@@ -1,8 +1,8 @@
 ---
-title: 使用 Visual Studio 偵錯應用程式
+title: 偵錯工具簡介
 description: 使用 Visual Studio 偵錯工具開始偵錯應用程式
-ms.custom: mvc
-ms.date: 01/09/2019
+ms.custom: seoapril2019
+ms.date: 04/08/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428683"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366766"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio 偵錯工具初探
 
@@ -188,7 +188,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 例外狀況協助程式是可協助您偵錯錯誤的絶佳功能。 您也可以執行檢視錯誤詳細資料，以及從例外狀況協助程式新增監看式等作業。 或者；如有必要，您可以變更擲回特定例外狀況的條件。 如需如何在程式碼中處理例外狀況的詳細資訊，請參閱[偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)。
 
 > [!NOTE]
-> 例外狀況協助程式會取代 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中的例外狀況助理。
+> 例外狀況協助程式會取代 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中開始的例外狀況助理。
 
 請展開 [例外狀況設定] 節點以查看如何處理此例外狀況類型的更多選項，但是您不需要變更此導覽的任何項目！
 

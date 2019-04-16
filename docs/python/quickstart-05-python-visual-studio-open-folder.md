@@ -3,20 +3,20 @@ title: 快速入門 - 開啟 Python 程式碼資料夾
 description: 您可以在此快速入門中，從資料夾開啟並執行 Python 程式碼，不需使用 Visual Studio 專案 (僅限 Visual Studio 2019)。
 ms.date: 03/12/2019
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354904"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366116"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>快速入門：在資料夾中開啟及執行 Python 程式碼
 
@@ -112,5 +112,5 @@ ms.locfileid: "58354904"
 ## <a name="see-also"></a>另請參閱
 
 - [快速入門：從現有程式碼建立 Python 專案](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
-- [快速入門：從存放庫 ](quickstart-03-python-in-visual-studio-project-from-repository.md) 建立 Python 專案
+- [快速入門：從存放庫建立 Python 專案](quickstart-03-python-in-visual-studio-project-from-repository.md)
 - [手動識別現有的 Python 解譯器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

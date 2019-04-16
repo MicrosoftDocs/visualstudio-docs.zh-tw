@@ -3,19 +3,19 @@ title: Python 環境視窗參考
 description: 有關 Visual Studio [Python 環境] 視窗中所出現每個索引標籤的詳細資料。
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355772"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366519"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python 環境視窗索引標籤參考
 
@@ -47,7 +47,7 @@ ms.locfileid: "58355772"
 | 命令 | 說明 |
 | --- | --- |
 | **將此環境設為新專案的預設值** | 設定使用中環境，可能會導致在載入 IntelliSense 資料庫時，Visual Studio (2017 15.5 版及更早版本) 短暫沒有反應。 環境如果含有許多套件，則無反應的時間可能會更長。 |
-| **瀏覽散發者的網站** | 將瀏覽器開啟至 Python 發行所提供的 URL。 例如，Python 3.x 會移至 python.org。 |
+| **前往散發者的網站** | 將瀏覽器開啟至 Python 發行所提供的 URL。 例如，Python 3.x 會移至 python.org。 |
 | **開啟互動式視窗** | 在 Visual Studio 內開啟此環境的[互動式 (REPL) 視窗](python-interactive-repl-in-visual-studio.md)，並套用任何[啟動指令碼 (請參閱下面)](#startup-scripts)。 |
 | **探索互動式指令碼** | 請參閱[啟動指令碼](#startup-scripts)。 |
 | **使用 IPython 互動模式** | 設定時，預設會開啟 IPython 的**互動式**視窗。 這會啟用內嵌繪圖和延伸的 IPython 語法，例如 `name?` 可檢視說明，而 `!command` 適用於殼層命令。 使用需要額外套件的 Anaconda 發佈時，建議使用此選項。 如需詳細資訊，請參閱[在互動式視窗中使用 IPython](interactive-repl-ipython.md)。 |
@@ -60,7 +60,7 @@ ms.locfileid: "58355772"
 
 啟動指令碼包含**互動式**視窗所載入並自動執行的程式碼，包括匯入、函式定義，以及文字形式的任何其他項目。 這類指令碼是使用兩種方式進行參考：
 
-1. 當您安裝環境時，Visual Studio 會建立資料夾 *Documents\Visual Studio <version>\Python Scripts\\\<environment>*，其中 &lt;version&gt; 是 Visual Studio 版本 (例如 2017 或 2019)，而 &lt;environment&gt; 會符合環境的名稱。 您可以使用 [探索互動式指令碼] 命令，輕鬆地巡覽至環境特定資料夾。 當您啟動該環境的**互動式**視窗時，只要依字母順序在這裡找到 *.py* 檔案，就會載入並執行互動式視窗。
+1. 當您安裝環境時，Visual Studio 會建立資料夾 *Documents\Visual Studio \<version>\Python Scripts\\\<environment>*，其中 &lt;version&gt; 是 Visual Studio 版本 (例如 2017 或 2019)，而 &lt;environment&gt; 會符合環境的名稱。 您可以使用 [探索互動式指令碼] 命令，輕鬆地巡覽至環境特定資料夾。 當您啟動該環境的**互動式**視窗時，只要依字母順序在這裡找到 *.py* 檔案，就會載入並執行互動式視窗。
 
 1. [工具] > [選項] > **[Python]** > **[互動式視窗]** 索引標籤中的 [指令碼] 控制項 (請參閱[互動式視窗選項](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) 是用來指定在所有環境中載入和執行之啟動指令碼的其他資料夾。 不過，此功能目前無法使用。
 
@@ -77,18 +77,18 @@ ms.locfileid: "58355772"
 
 | 欄位 | 說明 |
 | --- | --- |
-| **描述** | 要賦予環境的名稱。 |
-| **Prefix path (前置路徑)** | 解譯器的基底資料夾位置。 填入此值並按一下 [自動偵測] 之後，Visual Studio 就會嘗試為您填入其他欄位。 |
-| **Interpreter path (解譯器路徑)** | 解譯器可執行檔的路徑，通常是前置路徑後面再接著 **python.exe** |
-| **Windowed interpreter (Windows 解譯器)** | 非主控台可執行檔的路徑，通常是前置路徑後面再接著 **pythonw.exe**。 |
-| **Library path (程式庫路徑)**<br/>(如果有的話) | 指定標準程式庫的根目錄，但如果 Visual Studio 能夠從解譯器要求更精確的路徑，則可以忽略這個值。 |
-| **Language version (語言版本)** | 從下拉式功能表中選取。 |
+| **說明** | 要賦予環境的名稱。 |
+| **前置路徑** | 解譯器的基底資料夾位置。 填入此值並按一下 [自動偵測] 之後，Visual Studio 就會嘗試為您填入其他欄位。 |
+| **解譯器路徑** | 解譯器可執行檔的路徑，通常是前置路徑後面再接著 **python.exe** |
+| **Windows 解譯器** | 非主控台可執行檔的路徑，通常是前置路徑後面再接著 **pythonw.exe**。 |
+| **程式庫路徑**<br/>(如果有的話) | 指定標準程式庫的根目錄，但如果 Visual Studio 能夠從解譯器要求更精確的路徑，則可以忽略這個值。 |
+| **語言版本** | 從下拉式功能表中選取。 |
 | **架構** | 通常會自動偵測並填入，否則會指定 [32 位元] 或 [64 位元]。 |
-| **Path environment variable (路徑環境變數)** | 解譯器用來尋找搜尋路徑的環境變數。 Visual Studio 會在啟動 Python 時變更變數的值，使其包含專案的搜尋路徑。 通常這個屬性應該設定為 **PYTHONPATH**，但有些解譯器會使用不同的值。 |
+| **路徑環境變數** | 解譯器用來尋找搜尋路徑的環境變數。 Visual Studio 會在啟動 Python 時變更變數的值，使其包含專案的搜尋路徑。 通常這個屬性應該設定為 **PYTHONPATH**，但有些解譯器會使用不同的值。 |
 
 ## <a name="packages-tab"></a>套件索引標籤
 
-在舊版中，也標示為 "pip"。
+*在舊版中，也標示為 "pip"。*
 
 使用 pip ([套件 (PyPI)] 索引標籤) 或 conda ([套件 (Conda)] 索引標籤，適用於 Visual Studio 2017 15.7 版及更新版本的 Conda 環境) 來管理環境中所安裝的套件。 在此索引標籤中，您也可以搜尋並安裝新的套件，包括其相依性。
 

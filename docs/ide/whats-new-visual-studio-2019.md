@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 04/03/2019
+ms.date: 04/04/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f75f1172e96e3dc2576a199949fdbb0c32f68
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 25a7f5f0e53518e9beb4b509ab27ae4de0f28fa7
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866740"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018151"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -47,7 +47,7 @@ ms.locfileid: "58866740"
 
 ### <a name="improved-search"></a>增強搜尋功能
 
-先前稱為「快速啟動」，新的搜尋體驗將更快速且更有效。 現在，搜尋結果會隨著您的輸入以動態方式顯示。 此外，搜尋結果通常會包含命令的鍵盤快速鍵，讓您輕鬆記憶，以便日後使用。
+先前稱為「快速啟動」，新的搜尋體驗將更快速且更有效。 現在，搜尋結果會隨著您的鍵入以動態方式顯示。 此外，搜尋結果通常會包含命令的鍵盤快速鍵，讓您輕鬆記憶，以便日後使用。
 
    ![Visual Studio 2019 中的新搜尋體驗動畫](media/vs-2019/new-search-feature.gif)
 
@@ -114,7 +114,7 @@ ms.locfileid: "58866740"
 
 ### <a name="live-share"></a>Live Share
 
-[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 這個開發人員服務可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當自然且安全。
+[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 這項開發人員服務可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當自然且安全。
 
 Visual Studio 2019 預設會安裝這項服務。
 
@@ -166,7 +166,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 我們也新增對 Azure VM 上執行的目標 ASP.NET (Core 與傳統型) 應用程式的支援。 此外，我們新增對Azure Kubernetes Service 中所執行應用程式的支援。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
 
-如需詳細資訊，請參閱[使用快照偵錯工具偵錯即時 ASP.NET Azure 應用程式](../debugger/debug-live-azure-applications.md)頁面。
+如需詳細資訊請參閱[使用快照偵錯工具針對即時 ASP.NET Azure 應用程式進行偵錯](../debugger/debug-live-azure-applications.md)頁面，以及[介紹 Visual Studio Enterprise 2019 的時間移動偵錯](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) \(英文\) 部落格文章。
 
 ## <a name="give-us-feedback"></a>提供意見反應
 

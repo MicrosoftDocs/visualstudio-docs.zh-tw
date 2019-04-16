@@ -3,26 +3,26 @@ title: 適用於 Python 開發人員的 Visual Studio 概觀
 titleSuffix: ''
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354737"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365726"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>歡迎使用 Visual Studio IDE | Python
 
 Visual Studio 整合式開發環境是支援 Python (和其他語言) 且創作功能豐富的啟動控制板，可供您編輯、偵錯及測試程式碼，然後發行應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有程式碼完成工具、互動式 REPL 環境及其他功能，讓軟體開發程序變得更為容易。
 
-[![Visual Studio 與 Python 專案](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![VVisual Studio 與 Python 專案](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 此圖顯示 Visual Studio 有一個開啟的 Python 專案，以及數個您可能會用到的重要工具視窗：
 
@@ -62,17 +62,17 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![在 Visual Studio 中重構](media/tour-ide-refactor-extract-method.png)
 
-- [正在 Lint](refactoring-python-code.md)
+- [進行 Lint 檢查](refactoring-python-code.md)
 
    Linting 會檢查 Python 程式碼中的錯誤與常見問題，藉由良好的 Python 編碼模式讓您信心大增。
 
    ![操作功能表上 Python 專案的 PyLint 命令](media/code-pylint-command.png)
 
-- [快速啟動](../ide/reference/quick-launch-environment-options-dialog-box.md)
+- 搜尋方塊
 
-   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 **快速啟動**搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，[快速啟動] 提供的結果可開啟 Visual Studio 安裝程式，安裝工作負載或個別元件。
+   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，搜尋方塊提供的結果可開啟 Visual Studio 安裝程式，安裝工作負載或個別元件。
 
-   ![Visual Studio 的 [快速啟動] 搜尋方塊](media/tour-ide-quick-launch.png)
+   ![Visual Studio 中的搜尋方塊](media/tour-ide-quick-launch.png)
 
 - 波浪線和[快速動作](../ide/quick-actions.md)
 
@@ -129,7 +129,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 透過遵循以下其中一個快速入門或教學課程，在 Visual Studio 中進一步探索 Python：
 
 > [!div class="nextstepaction"]
-> [快速入門：使用 Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) 建立 Web 應用程式
+> [快速入門：使用 Flask 建立 Web 應用程式](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
 > [在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0a5344c2c816224151b6498bb5512bd0fec35356
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 6a72f78e89af41509711c94a00c8ab11b11fc549
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415210"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018216"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>用於偵測及管理 Visual Studio 執行個體的工具
 
@@ -31,7 +31,7 @@ ms.locfileid: "58415210"
 
 我們提供數種工具來協助您偵測及管理用戶端電腦上已安裝的 Visual Studio 執行個體︰
 
-* [VSWhere](https://github.com/microsoft/vswhere) \(英文\)：這個內建於 Visual Studio 中，也可供個別發佈的可執行檔，可以協助您在特定電腦上找到所有 Visual Studio 執行個體的位置。
+* [vswhere](https://github.com/microsoft/vswhere) \(英文\)：這個內建於 Visual Studio 中，也能以個別發佈方式取得的可執行檔，可協助您在特定機器上找到所有 Visual Studio 執行個體的位置。
 * [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell)：PowerShell 指令碼，使用安裝程式組態 API 來識別已安裝的 Visual Studio 執行個體。
 * [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples)：C# 和 C++ 範例，示範如何使用安裝程式組態 API 來查詢現有安裝。
 
@@ -39,7 +39,7 @@ ms.locfileid: "58415210"
 
 ## <a name="using-vswhereexe"></a>使用 vswhere.exe
 
-`vswhere.exe` 會自動包含在 Visual Studio (Visual Studio 2017 15.2 版及更新版本) 中，或您也可以從 [VSWhere 發行頁面](https://github.com/Microsoft/vswhere/releases)下載。 使用 `vswhere -?` 來取得該工具的說明資訊。 作為範例，此命令會顯示 Visual Studio 的所有版本 (包括產品的較舊版本及發行前版本)，並以 JSON 格式輸出結果：
+`vswhere.exe` 自動包含在 Visual Studio (Visual Studio 2017 15.2 版及更新版本) 中，或您也可以從 [vswhere 發行頁面](https://github.com/Microsoft/vswhere/releases) \(英文\) 下載。 使用 `vswhere -?` 來取得該工具的說明資訊。 作為範例，此命令會顯示 Visual Studio 的所有版本 (包括產品的較舊版本及發行前版本)，並以 JSON 格式輸出結果：
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json

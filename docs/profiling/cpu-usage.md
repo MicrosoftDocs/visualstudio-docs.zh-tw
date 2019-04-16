@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbad30fca5dd3ffbaa09c270f6a0b0400d9ea22
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640788"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366753"
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 使用量
 
@@ -56,13 +56,17 @@ ms.locfileid: "56640788"
 
 診斷報表的排序是依據 [CPU 總計]，從最高到最低。 選取資料行標頭，即可變更排序順序或排序資料行。 使用 [篩選條件] 下拉式清單來選取或取消選取要顯示的執行緒，並使用 [搜尋] 方塊來搜尋特定執行緒或節點。
 
+::: moniker range=">=vs-2019"
+從 Visual Studio 2019 開始，您可以按一下 [展開最忙碌路徑] 和 [顯示最忙碌路徑] 按鈕，以查看在呼叫樹狀檢視中使用最高 CPU 百分比的函式呼叫。
+::: moniker-end
+
 ###  <a name="BKMK_Call_tree_data_columns"></a> [CPU 使用量] 資料行
 
 |||
 |-|-|
 |**CPU 總計 [單位, %]**|![總計 % 資料方程式](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 在選取的時間範圍內，呼叫函式和該函式所呼叫函式使用的毫秒數及 CPU 百分比。 這與 [CPU 使用率]  時間軸圖表不同，其會將時間範圍內的 CPU 活動總計與可用的 CPU 總計進行比較。|
 |**自我 CPU [單位, %]**|![自我 % 方程式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 在選取的時間範圍內，呼叫函式使用的毫秒數及 CPU 百分比，不包含函式所呼叫的函式。|
-|**模組**|包含函式的模組名稱。
+|**Module**|包含函式的模組名稱。
 
 ###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用量呼叫樹狀圖
 
@@ -70,7 +74,12 @@ ms.locfileid: "56640788"
 
 ####  <a name="BKMK_Call_tree_structure"></a> 呼叫樹狀圖結構
 
- ![呼叫樹狀結構](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "呼叫樹狀結構")
+::: moniker range=">=vs-2019"
+![呼叫樹狀結構](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "呼叫樹狀結構")
+::: moniker-end
+::: moniker range="vs-2017"
+![呼叫樹狀結構](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "呼叫樹狀結構")
+::: moniker-end
 
 |||
 |-|-|
@@ -81,19 +90,24 @@ ms.locfileid: "56640788"
 
 ####  <a name="BKMK_External_Code"></a> 外部程式碼
 
- 您程式碼所執行的系統和架構函式稱為「外部程式碼」。 外部程式碼函式會啟動和停止應用程式、繪製 UI、控制執行緒，以及將其他低階服務提供給應用程式。 在大多數情況下，您對外部程式碼並不感興趣，因此 [CPU 使用量] 呼叫樹狀結構會將使用者方法的外部函式，收集成一個 [外部程式碼] 節點。
+您程式碼所執行的系統和架構函式稱為「外部程式碼」。 外部程式碼函式會啟動和停止應用程式、繪製 UI、控制執行緒，以及將其他低階服務提供給應用程式。 在大多數情況下，您對外部程式碼並不感興趣，因此 [CPU 使用量] 呼叫樹狀結構會將使用者方法的外部函式，收集成一個 [外部程式碼] 節點。
 
- 若要檢視外部程式碼的呼叫路徑，在主要診斷報表頁面上 (右窗格)，從 [篩選條件] 下拉式清單中選取 [顯示外部程式碼]，然後選取 [套用]。 [CPU 使用量] 頁面的 [呼叫樹狀結構] 檢視會展開外部程式碼呼叫。 ([篩選條件] 下拉式清單提供於主要診斷頁面而非詳細檢視上。)
+若要檢視外部程式碼的呼叫路徑，在主要診斷報表頁面上 (右窗格)，從 [篩選條件] 下拉式清單中選取 [顯示外部程式碼]，然後選取 [套用]。 [CPU 使用量] 頁面的 [呼叫樹狀結構] 檢視會展開外部程式碼呼叫。 ([篩選條件] 下拉式清單提供於主要診斷頁面而非詳細檢視上。)
 
- ![顯示外部程式碼](../profiling/media/cpu_use_wt_filterview.png "顯示外部程式碼")
+![顯示外部程式碼](../profiling/media/cpu_use_wt_filterview.png "顯示外部程式碼")
 
- 許多外部程式碼呼叫鏈結為深度巢狀，因此鏈結的寬度可能會超出 [函式名稱] 資料行的顯示寬度。 函式名稱則會顯示為 **...**。
+許多外部程式碼呼叫鏈結為深度巢狀，因此鏈結的寬度可能會超出 [函式名稱] 資料行的顯示寬度。 函式名稱則會顯示為 **...**。
 
- ![呼叫樹狀結構中的巢狀外部程式碼](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "呼叫樹狀結構中的巢狀外部程式碼")
+![呼叫樹狀結構中的巢狀外部程式碼](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "呼叫樹狀結構中的巢狀外部程式碼")
 
- 若要找到您正在尋找的函式名稱，請使用搜尋方塊。 暫留在選取的行，或使用水平捲軸來檢視資料。
+若要找到您正在尋找的函式名稱，請使用搜尋方塊。 暫留在選取的行，或使用水平捲軸來檢視資料。
 
- ![搜尋巢狀外部程式碼](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "搜尋巢狀外部程式碼")
+::: moniker range=">=vs-2019"
+![搜尋巢狀外部程式碼](../profiling/media/vs-2019/cpu-use-wt-showexternalcodetoowide-found.png "搜尋巢狀外部程式碼")
+::: moniker-end
+::: moniker range="vs-2017"
+![搜尋巢狀外部程式碼](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "搜尋巢狀外部程式碼")
+::: moniker-end
 
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用量呼叫樹狀圖中的非同步函式
 
@@ -111,4 +125,4 @@ ms.locfileid: "56640788"
 
 - `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` 會顯示排程和啟動將呼叫包裝至 `GetNumberAsync`之 48 項工作所需的活動。
 
-- `MainPage::<GetNumberAsync>b__b` 會顯示呼叫 `GetNumber`之工作的活動。
+- `MainPage::<GetNumberAsync>b__b` 會顯示呼叫 `GetNumber` 之工作的活動。

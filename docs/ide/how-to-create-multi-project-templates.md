@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ef0dc772422322d8cfa2f8c7ca88a7cf30eab31
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 01bd8101aa1e62e65c83d4da40af4eb624338a89
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416245"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232619"
 ---
 # <a name="how-to-create-multi-project-templates"></a>作法：建立多重專案範本
 
@@ -75,7 +75,11 @@ ms.locfileid: "58416245"
 2. 自訂專案，直到它們可以匯出成範本為止。
 
    > [!TIP]
-   > 如果您使用[範本參數](template-parameters.md)且您想要從父代範本參考變數，請在參數名稱加上前置詞 `ext_`。 例如，`$ext_safeprojectname$`。
+   > 如果您使用[範本參數](template-parameters.md)且您想要從父代範本參考變數，請在參數名稱加上前置詞 `ext_`。 例如，`$ext_safeprojectname$`。 此外，請將 **ProjectTemplateLink** 元素的 **CopyParameters** 屬性設定為 **true**。
+   >
+   > ```xml
+   > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
+   > ```
 
 3. 選擇 [專案] 功能表上的 [匯出範本]。
 
@@ -172,7 +176,7 @@ ms.locfileid: "58416245"
 ## <a name="see-also"></a>另請參閱
 
 - [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
-- [如何：建立專案範本](../ide/how-to-create-project-templates.md)
+- [作法：建立專案範本](../ide/how-to-create-project-templates.md)
 - [Visual Studio 範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md)
-- [SolutionFolder 項目 (Visual Studio 範本)](../extensibility/solutionfolder-element-visual-studio-templates.md)
-- [ProjectTemplateLink 項目 (Visual Studio 範本)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+- [SolutionFolder 元素 (Visual Studio 範本)](../extensibility/solutionfolder-element-visual-studio-templates.md)
+- [ProjectTemplateLink 元素 (Visual Studio 範本)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

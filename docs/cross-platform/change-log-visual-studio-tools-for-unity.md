@@ -1,7 +1,7 @@
 ---
 title: 變更記錄檔 (Visual Studio Tools for Unity，Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/28/2018
+ms.date: 04/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,139 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a7cd8da81fef0d3b4af8e61be979c8bea904072f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8a8fd54b15381298542f710cbffa81cd9e0295fe
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803736"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232758"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>變更記錄檔 (Visual Studio Tools for Unity，Windows)
 Visual Studio Tools for Unity 變更記錄。
+
+## <a name="4005"></a>4.0.0.5
+ 發行於 2019 年 2 月 27 日
+
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **整合：**
+
+    -   已修正使用安裝程式套件偵測 Visual Studio 版本的問題。
+
+    -   從安裝程式套件中移除未使用的組件。
+
+## <a name="4004"></a>4.0.0.4
+ 發行於 2019 年 2 月 13 日
+
+### <a name="new-features"></a>新功能
+
+-   **整合：**
+
+    -   已新增在安裝期間正確偵測 Unity 處理序的支援，並允許安裝程式引擎更妥善地處理檔案鎖定。
+    
+    -   已更新 ScriptableObject API。
+
+## <a name="4003"></a>4.0.0.3
+ 發行於 2019 年 1 月 31 日
+
+### <a name="new-features"></a>新功能
+
+-   **專案產生：**
+
+    -   公用和序列化欄位將不會再造成警告。 我們已自動隱藏 Unity 專案中建立這些訊息的 CS0649 和 IDE0051 編譯器警告。
+
+-   **整合：**
+
+    -   已改善顯示 Unity 編輯器和播放程式執行個體的使用者體驗 (視窗現在可以調整大小，使用統一邊界並顯示可調整大小的底框)。 已針對 Unity 編輯器新增了 Process-Id 資訊。
+    
+    -   已更新 MonoBehaviour API。
+    
+-   **評估：**
+
+    -   已新增對區域函式的支援。
+    
+    -   已新增對虛擬變數 (例外狀況和物件識別碼) 的支援。
+
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **整合：**
+
+    -   已修正 Moniker 映像和佈景主題的問題。
+
+    -   在自動重新整理資產資料庫時，僅在偵錯時寫入至輸出視窗。
+
+    -   已修正 MonoBehaviour 精靈篩選條件的 UI 延遲問題。
+    
+-   **偵錯工具：**
+
+    -   已修正使用舊版通訊協定版本時讀取具名引數上自訂屬性的問題。
+
+## <a name="4002"></a>4.0.0.2
+ 發行於 2019 年 1 月 23 日
+
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **整合：**
+
+    -   已修正實驗組建產生的問題。
+
+    -   已修正專案檔案事件處理以減少 UI 執行緒壓力的問題。
+
+    -   已修正批次文字變更的完成提供者的問題。
+    
+-   **偵錯工具：**
+
+    -   已修正向附加偵錯工具顯示使用者偵錯訊息的問題。
+
+## <a name="4001"></a>4.0.0.1
+ 發行於 2018 年 12 月 10 日
+
+### <a name="new-features"></a>新功能
+
+-   **評估：**
+
+    -   已取代 NRefactory 以利將 Roslyn 用於運算式評估。
+
+    -   已新增指標的支援：取值、轉換和指標計算 (此功能需要 Unity 2018.2+ 和新執行階段)。
+
+    -   已新增陣列指標檢視 (如 C++ 中的) 的支援。 接受指標運算式然後附加逗號和您要查看之數目的元素。
+
+    -   已新增非同步建構的支援。
+
+-   **整合：**
+    
+    -   已新增在儲存時自動重新整理 Unity 資產資料庫的支援。 這預設會啟用，且在 Visual Studio 中儲存指令碼時，會觸發在 Unity 端的重新編譯。 您可以在 [工具]\[選項]\[Tools for Unity]\[儲存時重新整理 Unity 的 AssetDatabase] 中停用此功能。
+
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **整合：**
+
+    -   已修正未選取 Visual Studio 作為慣用之外部編輯器時的橋接器啟用的問題。
+
+    -   已修正對格式不正確或不受支援之運算式的運算式評估的問題。
+
+## <a name="4000"></a>4.0.0.0
+ 發行於 2018 年 12 月 4 日
+
+### <a name="new-features"></a>新功能
+
+-   **整合：**
+
+    -   已新增 Visual Studio 2019 的支援。
+
+    -   已採用 Visual Studio 映像服務與類別目錄，完整支援 HDPI 調整大小、像素完美影像和主題。
+
+### <a name="deprecated-features"></a>已淘汰的功能
+
+-   **整合：**
+
+    -   從現在開始，Visual Studio Tools for Unity 僅支援 Unity 5.2 + (使用 Unity 的內建 Visual Studio 整合)。
+
+    -   從現在開始，Visual Studio Tools for Unity 僅支援 Visual Studio 2015+。
+
+    -   已移除舊版語言服務、錯誤清單和狀態列。
+    
+    -   已移除 Quick Monobehaviour Wizard (以利專用的 intellisense 支援)。
 
 ## <a name="3903"></a>3.9.0.3
  發行時間：2018 年 11 月 28 日
@@ -52,7 +176,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   針對 Unity 已修正的 Unity 效能 Bug 復原因應措施。
 
@@ -105,7 +229,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   (從 3.9.0.0 反向移植) 針對已由 Unity 修正的 Unity 效能 Bug 來復原因應措施。
 
@@ -114,7 +238,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   Unity 效能 Bug 的暫時性因應措施：在產生專案時，會快取 MonoIslands。
 
@@ -152,7 +276,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   在使用新 Unity 執行階段時，不會再將可攜式 pdb 轉換成 mdb。
 
@@ -190,7 +314,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   修正例外狀況設定的使用方式。
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   產生時排除套件管理員編譯單位。
 
@@ -199,7 +323,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   已新增 Unity 2018.1 中新專案產生器的支援。
 
@@ -218,7 +342,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   已修正 Mono 版本偵測。
 
@@ -231,13 +355,13 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   已新增 .NET Standard 的支援。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   已修正 Unity 目標架構偵測。
 
@@ -276,7 +400,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   新增對 2018.1 MonoIsland 參考模型的支援。
 
@@ -294,7 +418,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   已修正播放程式專案的專案指引計算。
 
@@ -338,7 +462,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   已修正 Unity API 說明功能表未顯示。
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   已修正使用 IL2CPP/.NET 4.6 後端處理 UWP 遊戲時產生播放程式專案的問題。
 
@@ -353,7 +477,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="new-features"></a>新功能
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   已新增 assembly.json 編譯單位的支援。
 
@@ -375,7 +499,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   修正具有區域變數的編譯器所產生項目。
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   修正 4.6 API 層級的 Microsoft.CSharp 參考。
 
@@ -384,7 +508,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   已修正 Unity 5.5 和舊版本上 Visual Studio 解決方案的產生。
 
@@ -411,7 +535,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   修正將項目新增至 Visual Studio Watch 時的問題。
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   使用 mcs.rsp 檔案修正組件名稱參考。
 
@@ -443,7 +567,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   已新增對全新 Unity 執行階段的支援 (以及 .NET 4.6 / C# 6 相容性)。
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   已新增對 .NET 4.6 設定檔的支援。
 
@@ -459,7 +583,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   使用自動完成來插入方法之後的固定插入號位置。
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   已移除組件版本的後續處理步驟。
 
@@ -492,7 +616,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   已新增 (在找不到對應的來源位置時) 發生無法繫結之中斷點的警告。
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   已修正使用特殊/當地語系化的字元產生 csproj。
 
@@ -537,7 +661,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   已新增可在預期或找不到某個類型時提供的更好錯誤訊息。
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   已從專案名稱中移除 CSharp 尾碼。
 
@@ -565,7 +689,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   已修正使用新的 C# 編譯器偵錯迭代器框架的支援。
 
--   **Project Generation:**
+-   **專案產生：**
 
     -   已修正在以 Unity Web Player 為目標時無法編譯的 Bug。
 

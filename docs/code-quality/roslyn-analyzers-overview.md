@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36985ab7a0ee94cb735b1954a9e5ea9c2e0d2bbf
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869092"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232563"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET Compiler Platform 分析器概觀
 
@@ -38,17 +38,27 @@ ms.locfileid: "57869092"
 
 Roslyn 分析器會在建置期間分析程式碼，如同靜態程式碼分析 (如已啟用)，但也會在您輸入時即時分析。 如果您啟用[完整解決方案分析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis)，Roslyn 分析器也會針對編輯器中未開啟的程式碼檔案提供設計階段分析。
 
-> [!NOTE]
+> [!TIP]
 > 只有在 Roslyn 分析器安裝為 NuGet 套件時，才會顯示分析器的建置期間錯誤和警告。
 
 Roslyn 分析器不只會回報靜態程式碼分析所回報的相同問題類型，還可讓您輕鬆地修正檔案或專案中違規或所有出現的違規。 這些動作稱為「程式碼修正」。 程式碼修正為 IDE 特定；在 Visual Studio 中，會實作為[快速動作](../ide/quick-actions.md)。 並非所有分析器診斷都有相關聯的程式碼修正。
 
 > [!NOTE]
-> 功能表選項 [分析] > [執行程式碼分析] 僅適用於靜態程式碼分析。 此外，在專案的 [程式碼分析] 屬性頁上，[建置時啟用程式碼分析] 和 [隱藏所產生程式碼的結果] 核取方塊僅適用於靜態程式碼分析。 它們不會影響 Roslyn 分析器。
+> 下列 UI 選項僅適用於靜態程式碼分析：
+>
+> - [分析] > [執行程式碼分析] 功能表選項。
+> - 專案屬性頁的 [程式碼分析] 索引標籤上的[建置時啟用程式碼分析] 和 [隱藏所產生程式碼的結果] 核取方塊 (這些選項對 Roslyn 分析器沒有影響)。
 
 若要區分 [錯誤清單] 中的違規是來自 Roslyn 分析器或靜態程式碼分析，請參閱 [工具] 欄。 如果 [工具] 值符合 [方案總管] 中的其中一個分析器組件 (例如 **Microsoft.CodeQuality.Analyzers**)，則違規來自 Roslyn 分析器。 否則，違規來自靜態程式碼分析。
 
 ![[錯誤清單] 中的 [工具] 欄](media/code-analysis-tool-in-error-list.png)
+
+> [!TIP]
+> 專案檔中的 **RunCodeAnalysis** msbuild 屬性僅套用於靜態程式碼分析。 如果安裝了分析器，請在專案檔中將 **RunCodeAnalysis** 設定為 **false**，以防止靜態程式碼分析在建置之後執行。
+>
+> ```xml
+> <RunCodeAnalysis>false</RunCodeAnalysis>
+> ```
 
 ## <a name="nuget-package-versus-vsix-extension"></a>NuGet 套件與 VSIX 延伸模組
 

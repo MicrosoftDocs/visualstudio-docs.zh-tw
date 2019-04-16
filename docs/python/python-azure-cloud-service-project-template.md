@@ -3,20 +3,20 @@ title: 適用於 Python 的 Azure 雲端服務專案範本
 description: Visual Studio 提供以 Python 所撰寫適用於 Azure 雲端服務的範本，其中包括角色部署、相依性和疑難排解。
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 77da3ee8af0b14171e8cc525c2e6d95c6a38a205
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: a47ef2bc1b75985639d0c5eb43bba516ff9b8088
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355707"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366532"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>適用於 Python 的 Azure 雲端服務專案
 
