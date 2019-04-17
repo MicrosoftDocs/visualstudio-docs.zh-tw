@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Basic 中撰寫視覺化檢視 |Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2016
+ms.date: 04/12/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24138337ab5adbbcabb9b0ab03cc411392565622
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: d30e789d0ae3fa3e717be9739b94439a7d6a31a2
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988359"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584541"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>逐步解說：在 Visual Basic 中撰寫視覺化檢視
 本逐步解說顯示如何使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 撰寫簡易的視覺化檢視。 您在本逐步解說中建立的視覺化檢視會使用 Windows Form 訊息方塊顯示字串的內容。 這個簡易字串視覺化檢視是一個基本範例，示範如何建立更適用專案之其他資料型別的視覺化檢視。
@@ -36,15 +36,16 @@ ms.locfileid: "54988359"
 
 ### <a name="to-create-a-class-library-project"></a>若要建立類別庫專案
 
-1. 在 [檔案] 功能表上，選擇 [新增]，然後按一下 [新增專案]。
+1. 建立新的類別庫專案。
 
-2. 在 **新的專案**對話方塊中，選取**Visual Basic**。
+    ::: moniker range=">=vs-2019"
+    按 **Esc** 來關閉開始視窗。 型別**Ctrl + Q**來開啟 搜尋 方塊中，輸入**visual basic**，選擇 **範本**，然後選擇 **建立新的類別庫 (.NET Standard)**. 在出現的對話方塊中選擇 [建立]。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在左窗格中**新的專案**對話方塊的  **Visual Basic**，選擇  **.NET Standard**，然後在中間窗格選擇**類別程式庫 (.NET標準）**。
+    ::: moniker-end
 
-3. 底下 **.NET Standard**，按一下**類別庫**。
-
-4. 在 [名稱] 方塊中，為該類別庫鍵入適當的名稱，例如 **MyFirstVisualizer**。
-
-5. 按一下 [確定 **Deploying Office Solutions**]。
+2. 輸入適當的名稱，為類別庫，例如`MyFirstVisualizer`，然後按一下**建立**或是**確定**。
 
    建立類別庫之後，必須加入 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的參考，如此您才能使用這個位置中定義的類別。 但請先為專案提供一個有意義的名稱。
 
@@ -59,9 +60,11 @@ ms.locfileid: "54988359"
 
 3. 在 [方案總管] 中，以滑鼠右鍵按一下 [My First Visualizer]，然後在捷徑功能表上按一下 [新增參考]。
 
-4. 在 [新增參考] 對話方塊的 [.NET] 索引標籤上，按一下 [Microsoft.VisualStudio.DebuggerVisualizers.DLL]。
+4. 在 **加入參考**對話方塊的 **瀏覽**索引標籤上，選取**瀏覽**並尋找 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
 
-5. 按一下 [確定 **Deploying Office Solutions**]。
+    您可以找到在 DLL  *\<Visual Studio 安裝目錄 > \Common7\IDE\PublicAssemblies* Visual Studio 的安裝目錄的子目錄。
+
+5. 按一下 [確定] 。
 
 6. 在 DebuggerSide.vb 中，將下列陳述式加入至 `Imports` 陳述式：
 
@@ -105,9 +108,11 @@ ms.locfileid: "54988359"
 
 1.  在 [方案總管]中，以滑鼠右鍵按一下 [參考]，並從捷徑功能表中按一下 [新增參考]。
 
-2.  在 [新增參考] 對話方塊的 [.NET] 索引標籤中，按一下 [System.Windows.Forms]。
+2. 在 **加入參考**對話方塊的 **瀏覽**索引標籤上，選取**瀏覽**，並尋找 System.Windows.Forms.DLL。
 
-3.  按一下 [確定 **Deploying Office Solutions**]。
+    您可以找到在 DLL *C:\Windows\Microsoft.NET\Framework\v4.0.30319*。
+
+3.  按一下 [確定] 。
 
 4.  在 DebuggerSide.cs 中，將下列陳述式加入至 `Imports` 陳述式：
 
@@ -163,13 +168,16 @@ ms.locfileid: "54988359"
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>若要將主控台應用程式專案加入至方案
 
-1. 在 [檔案] 功能表上，依序按一下 [新增] 和 [新增專案]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇**新增**，然後按一下**新的專案**。
 
-2. 在 **加入新的專案**對話方塊中，選取**Visual Basic**，然後按一下**主控台應用程式**。
+    ::: moniker range=">=vs-2019"
+    在 [搜尋] 方塊中，輸入**visual basic**，選擇**範本**，然後選擇**建立新的主控台應用程式 (.NET Framework)**。 在出現的對話方塊中選擇 [建立]。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊左窗格的 [Visual Basic] 下，選擇 [Windows Desktop]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。
+    ::: moniker-end
 
-3. 在 [名稱] 方塊中，為主控台應用程式鍵入有意義的名稱，例如 **MyTestConsole**。
-
-4. 按一下 [確定 **Deploying Office Solutions**]。
+2. 輸入適當的名稱，為類別庫，例如`MyTestConsole`，然後按一下**建立**或是**確定**。
 
    此時，你必須加入必要的參考，如此 MyTestConsole 才能呼叫 MyFirstVisualizer。
 
@@ -177,18 +185,18 @@ ms.locfileid: "54988359"
 
 1.  在 [方案總管] 中以滑鼠右鍵按一下 [MyTestConsole]，然後在捷徑功能表中按一下 [新增參考]。
 
-2.  在 [新增參考] 對話方塊的 [.NET] 索引標籤上，按一下 [Microsoft.VisualStudio.DebuggerVisualizers]。
+2.  在 **加入參考**對話方塊的 **瀏覽**索引標籤上，按一下 microsoft.visualstudio.debuggervisualizers。
 
-3.  按一下 [確定 **Deploying Office Solutions**]。
+3.  按一下 [確定] 。
 
 4.  以滑鼠右鍵按一下 [MyTestConsole]，然後再次按一下 [新增參考]。
 
 5.  在 [新增參考] 對話方塊中，按一下 [專案] 索引標籤，然後選取 [MyFirstVisualizer]。
 
-6.  按一下 [確定 **Deploying Office Solutions**]。
+6.  按一下 [確定] 。
 
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>完成 Test Harness 並測試視覺化檢閱
- 現在，您就可以加入程式碼來完成 Test Harness。
+ 現在，您就可以加入程式碼來完成測試載入器。
 
 ### <a name="to-add-code-to-mytestconsole"></a>若要將程式碼加入至 MyTestConsole
 
@@ -223,7 +231,7 @@ ms.locfileid: "54988359"
 
    恭喜您！ 您已完成建置和測試第一個視覺化檢視。
 
-   如果您想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用視覺化檢閱，而不只是從測試控管中進行呼叫，就必須安裝該視覺化檢閱。 如需詳細資訊，請參閱[＜How to：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)。
+   如果您想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用視覺化檢閱，而不只是從測試控管中進行呼叫，就必須安裝該視覺化檢閱。 如需詳細資訊，請參閱[如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee57fe4d2df3a9d1fa9f4f8a624e7b63caa1f7fd
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: ac95fc54b410700f3ce28f3ace6192787400d64b
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475951"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504207"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 C++ 進行偵錯
 
@@ -28,7 +28,7 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 1. 開啟 Visual Studio 並建立專案。
 
     ::: moniker range=">=vs-2019"
-    鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **c++**，選擇 [範本]，然後選擇 [建立新的主控台應用程式專案]。 在出現的對話方塊中選擇 [建立]。
+    按 **Esc** 來關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **c++**，選擇 [範本]，然後選擇 [建立新的主控台應用程式專案]。 在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新專案] 對話方塊的左窗格中，於 [Visual C++] 下選擇 [Windows Desktop]，然後在中間的窗格中選擇 [Windows 主控台應用程式]。 接著，輸入 **MyDbgApp** 之類的名稱，然後按一下 [確定]。
@@ -138,4 +138,4 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 在本教學課程中，您已了解如何啟動偵錯工具、逐步執行程式碼，以及檢查變數。 建議您進一步查看偵錯工具功能，以及詳細資訊的連結。
 
 > [!div class="nextstepaction"]
-> [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+> [偵錯工具簡介](../debugger/debugger-feature-tour.md)
