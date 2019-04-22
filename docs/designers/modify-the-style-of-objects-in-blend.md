@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9cd7e785b1c4ffa8613b6f5440a33b99dd2de6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955306"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647449"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>在 Blend 中修改物件的樣式
 
@@ -78,13 +78,13 @@ ms.locfileid: "55955306"
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>將樣式或範本套用至控制項
 
-在[物件與時間軸](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-objects-and-timeline-panel)面板中以滑鼠右鍵按一下物件，並選擇 [編輯範本]，然後選擇 [套用資源]。
+在 [[物件與時間軸]](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window) 視窗中以滑鼠右鍵按一下物件，選擇 [編輯範本]，然後選擇 [套用資源]。
 
 ![[套用資源] 功能表](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>還原控制項的預設樣式或範本
 
-選取控制項，然後在[屬性](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel)面板中，找出 [樣式] 或 [範本] 屬性。 選擇 [進階選項]，然後按一下捷徑功能表上的 [重設]。
+選取控制項，然後在 [[屬性]](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window) 視窗中找出**樣式**或**範本**屬性。 選擇 [進階選項]，然後按一下捷徑功能表上的 [重設]。
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>視覺狀態：依控制項的狀態變更其外觀
 

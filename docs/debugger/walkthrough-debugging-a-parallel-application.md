@@ -23,13 +23,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9a214234d2382fe9cb950ed294bf8aa807b69da
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790702"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>逐步解說： 偵錯在 Visual Studio 中的平行應用程式 (C#，Visual Basic、 c + +)
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>逐步解說：偵錯在 Visual Studio 中的平行應用程式 (C#，Visual Basic 中， C++)
 
 本逐步解說顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來偵錯平行應用程式。 這些視窗可協助您了解，並確認使用的程式碼的執行階段行為[Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[並行執行階段](/cpp/parallel/concrt/concurrency-runtime)。 本逐步解說提供具有內建中斷點的範例程式碼。 在程式碼中斷之後，本逐步解說會顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來檢查程式碼。
 
@@ -65,10 +65,10 @@ ms.locfileid: "58790702"
 1. 開啟 Visual Studio 並建立新專案。
 
     ::: moniker range=">=vs-2019"
-    按下**Esc**以關閉開始時間範圍。 型別**Ctrl + Q**來開啟 [搜尋] 方塊中，輸入**主控台**(或**c + +**)，選擇**範本**，然後：
+    按 **Esc** 來關閉開始視窗。 型別**Ctrl + Q**來開啟 [搜尋] 方塊中，輸入**主控台**(或**c + +**)，選擇**範本**，然後：
 
     - 針對C#或 Visual Basic 中，選擇**建立新的主控台應用程式 (.NET Framework) 專案**或C#或 Visual Basic。 在出現的對話方塊中選擇 [建立]。
-    - C + +，請選擇**建立新的主控台應用程式專案**c + +。 在出現的對話方塊中選擇 [建立]。
+    - 針對C++，選擇**建立新的主控台應用程式專案**的C++。 在出現的對話方塊中選擇 [建立]。
 
     然後，輸入名稱或使用預設名稱，然後按一下**建立**。
     ::: moniker-end
@@ -77,7 +77,7 @@ ms.locfileid: "58790702"
 
     - 針對C#應用程式底下**視覺化C#** ，選擇**Windows 桌面**，然後在中間窗格選擇 **主控台應用程式 (.NET Framework)**。
     - Visual Basic 應用程式中，在**Visual Basic**，選擇**Windows 桌面**，然後在中間窗格選擇 **主控台應用程式 (.NET Framework)**。
-    - C + + 應用程式中下, **Visual c + +**，選擇**Windows 桌面**，然後選擇  **Windows 主控台應用程式**。
+    - 針對C++應用程式底下**視覺化C++** ，選擇**Windows Desktop**、，然後選擇  **Windows 主控台應用程式**。
 
     然後，輸入名稱或使用預設名稱，然後按一下**確定**。
     ::: moniker-end
@@ -171,7 +171,7 @@ ms.locfileid: "58790702"
 
      請注意，S.L 在其他兩個方塊中是粗體，所以您可以看到它出現在其他地方。 如果您要查看有哪些框架呼叫 S.L 和它呼叫哪些框架，請按一下工具列的 [切換方法檢視] 按鈕。 下圖顯示的方法檢視**平行堆疊**視窗。
 
-     ![[平行堆疊] 視窗中的 [方法檢視]](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")
+     ![[平行堆疊] 視窗中的 方法檢視](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")
 
      請注意圖表如何隨選取的方法而轉移，以及它在檢視中間如何放在自己的方塊中。 被呼叫端和呼叫端出現在上方和下方。 再按一次 [切換方法檢視] 按鈕以結束這個模式。
 
@@ -311,7 +311,7 @@ ms.locfileid: "58790702"
 ## <a name="summary"></a>總結
  本逐步解說示範 [平行工作] 和 [平行堆疊] 偵錯工具視窗。 請在使用多執行緒程式碼的實際專案上使用這些視窗。 您可以檢查以 C++、C# 或 Visual Basic 撰寫的平行程式碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯多執行緒應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

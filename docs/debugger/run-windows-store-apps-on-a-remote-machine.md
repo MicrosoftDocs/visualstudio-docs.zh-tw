@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 1d0ff9d8f3113b1df1e10891a3bd2197dd92482d
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58789896"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>從 Visual Studio 的遠端電腦上的 UWP 應用程式進行偵錯
@@ -55,9 +55,9 @@ ms.locfileid: "58789896"
 
     ![受管理的遠端偵錯專案屬性](../debugger/media/vsrun_managed_projprop_remote.png "Managed 偵錯專案屬性")
 
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> 設定遠端偵錯 c + + 專案
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> 設定C++專案進行遠端偵錯
 
-1.  選取 Visual Studio 中的 c + + 專案**方案總管**，然後選取**屬性**圖示，並按下**Alt**+**Enter**，或以滑鼠右鍵按一下並選擇 **屬性**。
+1.  選取C++Visual Studio 專案中的**方案總管]** ，然後選取**屬性**圖示，並按下**Alt**+**Enter**，或以滑鼠右鍵按一下並選擇 [**屬性**。
 
 1.  選取 [**偵錯**] 索引標籤。
 
@@ -65,7 +65,7 @@ ms.locfileid: "58789896"
 
 1.  遠端電腦中，輸入或選取的網路名稱或 IP 位址**電腦名稱** 欄位中或卸除並選取**尋找**搜尋中的裝置[遠端連線 對話方塊](#remote-connections).
 
-    ![遠端偵錯 c + + 專案屬性](../debugger/media/vsrun_cpp_projprop_remote.png "偵錯 c + + 專案屬性")
+    ![C++專案進行遠端偵錯的屬性](../debugger/media/vsrun_cpp_projprop_remote.png " C++偵錯專案屬性")
 
 ### <a name="remote-connections"></a> 使用 [遠端連線] 對話方塊
 

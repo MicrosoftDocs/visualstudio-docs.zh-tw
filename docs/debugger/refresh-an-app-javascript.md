@@ -20,10 +20,10 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: 751deec205eabb8bc6e4a492c7242095b2d67475
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790286"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>重新整理 Visual Studio 中的 UWP 應用程式
@@ -57,9 +57,9 @@ ms.locfileid: "58790286"
 
 5.  在 UWP 應用程式的首頁上，編輯部分的 html。
 
-7.  按一下 **重新整理 Windows 應用程式**按鈕，如下：![重新整理 Windows 應用程式按鈕](../debugger/media/js_refresh.png "JS_Refresh")。 (或按 F4)。
+7.  按一下 [**重新整理 Windows 應用程式**按鈕時，哪一個看起來像這樣：![重新整理 Windows 應用程式] 按鈕](../debugger/media/js_refresh.png "JS_Refresh")。 (或按 F4)。
 
 8.  切換至應用程式。 應用程式會重新載入，並用來呈現應用程式更新的 HTML。
 
-## <a name="see-also"></a>請參閱
-- [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)
+## <a name="see-also"></a>另請參閱
+- [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md)

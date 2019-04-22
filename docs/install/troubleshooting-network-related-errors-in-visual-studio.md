@@ -1,7 +1,7 @@
 ---
 title: 針對網路或 Proxy 錯誤進行疑難排解
 description: 針對您在使用防火牆或 Proxy 伺服器的情況下安裝或使用 Visual Studio 時可能會遇到的網路或 Proxy 相關錯誤，尋找解決方案。
-ms.date: 02/23/2018
+ms.date: 03/30/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4cd62e73d3a10eded5d74eaffc5486e237ca02ca
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324957"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790494"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>對安裝或使用 Visual Studio 時所發生的網路相關錯誤進行疑難排解
 
@@ -54,6 +54,8 @@ ms.locfileid: "58324957"
 
 - 如果您想要將您的預設認證用於 Proxy，您可以執行下列動作：
 
+::: moniker range="vs-2017"
+
   1. 在 **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 或 **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 中尋找 **devenv.exe.config** (devenv.exe 設定檔)。
 
   2. 在設定檔中，找出 `<system.net>` 區塊，並加入下列程式碼：
@@ -67,11 +69,28 @@ ms.locfileid: "58324957"
       您必須在 `proxyaddress="<http://<yourproxy:port#>` 中插入您的網路的正確 Proxy 位址。
 
      > [!NOTE]
-     > 如需詳細資訊，請參閱 [&lt;defaultProxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings) 和 [&lt;proxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) 頁面。
+     > 如需詳細資訊，請參閱 [&lt;defaultProxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) 和 [&lt;proxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) 頁面。
 
-  -或-
+::: moniker-end
 
-- 您也可以遵循[如何透過驗證的 Web Proxy 進行連線](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) \(英文\) 部落格文章中的指示，該文章能示範如何新增可讓您使用 Proxy 的程式碼。
+::: moniker range="vs-2019"
+
+  1. 在下列位置尋找 **devenv.exe.config** (devenv.exe configuration 檔案)：**%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** 或 **%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE**。
+
+  2. 在設定檔中，找出 `<system.net>` 區塊，並加入下列程式碼：
+
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
+
+      您必須在 `proxyaddress="<http://<yourproxy:port#>` 中插入您的網路的正確 Proxy 位址。
+
+     > [!NOTE]
+     > 如需詳細資訊，請參閱 [&lt;defaultProxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) 和 [&lt;proxy&gt; 項目 (網路設定)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) 頁面。
+
+::: moniker-end
 
 ## <a name="error-the-underlying-connection-was-closed"></a>錯誤：「基礎連線已關閉」
 

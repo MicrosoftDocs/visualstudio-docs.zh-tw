@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: f5ef78f64ecea712083a25ab999f1554672d3381
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790351"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何觸發暫止、 繼續及背景事件偵錯在 Visual Studio 中的 UWP 應用程式時
@@ -72,7 +72,7 @@ ms.locfileid: "58790351"
 
 2.  開啟啟始專案的偵錯屬性頁。 在 [方案總管] 中選取專案。 在 [ **偵錯** ] 功能表上，選擇 [ **屬性**]。
 
-     若是 c + + 專案中，依序展開**組態屬性**，然後選擇**偵錯**。
+     針對C++專案中，展開**組態屬性**，然後選擇 **偵錯**。
 
 3.  執行下列任一步驟：
 
@@ -80,7 +80,7 @@ ms.locfileid: "58790351"
 
          ![C&#35;&#47;VB 偵錯啟動應用程式屬性](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    -   若是 Visual c + + 專案，選擇  **No**從**啟動應用程式**清單。
+    -   視覺效果C++專案中，選擇**No**從**啟動應用程式**清單。
 
          ![C&#43;&#43;&#47;VB 啟動應用程式偵錯屬性](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 
@@ -108,7 +108,7 @@ ms.locfileid: "58790351"
 
 4.  選擇 [ **診斷** ] 記錄檔。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [使用 Visual Studio 測試 UWP App](../test/testing-store-apps-with-visual-studio.md)
 - [在 Visual Studio 中偵錯應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [應用程式生命週期](/windows/uwp/launch-resume/app-lifecycle)
