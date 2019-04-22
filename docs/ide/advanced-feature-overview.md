@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: f7a9fdb7d6f17df009920e1677c615cb41df7f6c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790533"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504298"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
@@ -100,7 +100,7 @@ Visual Studio 中的 [SQL Server 物件總管] 提供與 SQL Server Management S
 
 ## <a name="debug-test-and-improve-your-code"></a>偵錯、測試及改善您的程式碼
 
-當您撰寫程式碼時，必須執行它並測試它，以找出錯誤 (bug) 及改善效能。 Visual Studio 的先進偵錯系統可讓您針對在本機專案、遠端裝置或[裝置模擬器](../cross-platform/visual-studio-emulator-for-android.md)上執行的程式碼進行偵錯。 您可以以一次一個陳述式的方式逐步偵錯程式碼，並一邊檢查變數。 您可以將中斷點設定成只在指定的條件為 true 時才叫用。 偵錯選項可以在程式碼編輯器本身中管理，如此您就不需要離開您的程式碼。 如需有關 Visual Studio 中之 偵錯的更多詳細資料，請參閱[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)。
+當您撰寫程式碼時，必須執行它並測試它，以找出錯誤 (bug) 及改善效能。 Visual Studio 的先進偵錯系統可讓您針對在本機專案、遠端裝置或[裝置模擬器](../cross-platform/visual-studio-emulator-for-android.md)上執行的程式碼進行偵錯。 您可以以一次一個陳述式的方式逐步偵錯程式碼，並一邊檢查變數。 您可以將中斷點設定成只在指定的條件為 true 時才叫用。 偵錯選項可以在程式碼編輯器本身中管理，如此您就不需要離開您的程式碼。 如需在 Visual Studio 中偵錯的更多詳細資料，請參閱[偵錯工具簡介](../debugger/debugger-feature-tour.md)。
 
 若要深入了解如何改善您應用程式的效能，請查看 Visual Studio 的[分析](../profiling/profiling-feature-tour.md)功能。
 

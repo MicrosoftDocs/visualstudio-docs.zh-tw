@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5c7f2a98b56765efdb8a12cd9cf479bcd3a08402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857849"
 ---
 # <a name="image-service-and-catalog"></a>映像服務和目錄
@@ -131,7 +131,7 @@ ms.locfileid: "58857849"
 |系統|*Windows\System32*資料夾|
 |WinDir|%Windir%環境變數的值|
 
- **Image**
+ **影像**
 
  \<映像 > 項目定義的映像，您可以參考 moniker。 GUID 和 ID 結合在一起形成影像 moniker。 跨整個映像庫，影像 moniker 必須是唯一的。 如果多個映像具有指定的 moniker，在建置程式庫時所遇到的第一個是會保留。
 
@@ -151,7 +151,7 @@ ms.locfileid: "58857849"
 |識別碼|[必要]影像 moniker 識別碼部分|
 |AllowColorInversion|[選擇性的預設為 true]指出影像是否可以使用深色背景時以程式設計的方式已反轉其色彩。|
 
- **原始程式檔**
+ **來源**
 
  \<來源 > 項目會定義單一映像來源資產 （XAML 和 PNG）。
 
@@ -173,7 +173,7 @@ ms.locfileid: "58857849"
 
 ||||
 |-|-|-|
-|**項目**|**屬性 （全部所需）**|**定義**|
+|**目**|**屬性 （全部所需）**|**定義**|
 |\<Size>|值|來源會使用指定的大小 （以裝置為單位） 的映像。 映像會正方形。|
 |\<SizeRange>|MinSize, MaxSize|來源將使用的映像從 MinSize 至大小上限 （以裝置為單位） （含）。 映像會正方形。|
 |\<維度 >|寬度高度|來源將使用指定的寬度和高度 （以裝置為單位） 的映像。|
@@ -732,7 +732,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **ManifestToCode**
 
- 資訊清單以程式碼工具會使用映像資訊清單檔案，並產生包裝函式檔案的參考資訊清單的值，在程式碼 （c + +、 C# 或 VB） 或 *.vsct*檔案。
+ 資訊清單以程式碼工具會使用映像資訊清單檔案，並產生包裝函式檔案來參考程式碼中的資訊清單的值 (C++， C#，或 VB) 或 *.vsct*檔案。
 
  **ImageLibraryViewer**
 

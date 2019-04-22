@@ -1,5 +1,5 @@
 ---
-title: 建立自訂檢視的C++物件
+title: 建立 C++ 物件的自訂檢視
 description: 自訂 Visual Studio 偵錯工具顯示原生類型的方式使用 Natvis 架構
 ms.date: 10/31/2018
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f56dda1f64a0bd50a6bb81b981ad4add7d9c095
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 2dba61d53bdb0007eb2a4f0acff734613e320ab9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537573"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649637"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger"></a>建立自訂檢視的C++偵錯工具中的物件
 
@@ -153,7 +153,6 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
     </Expand>
 </Type>
 ```
-
 
 在 **監看式**視窗中，使用 **，檢視**格式規範來指定替代的檢視。 簡單的檢視會顯示為**vec,view(simple)**:
 
@@ -664,7 +663,7 @@ Natvis 視覺化使用 C++ 運算式來指定要顯示的資料項目。 除了�
 
 - A `ServiceId`  -  `Id`屬性組會識別`UIVisualizer`。 `ServiceId`封裝會公開為服務的視覺化檢視的 GUID。 `Id` 在服務提供一個以上時，是區分視覺化檢視的唯一識別碼。 在上述範例中，相同的視覺化檢視服務提供兩個視覺化檢視。
 
-- `MenuName`屬性定義要在偵錯工具的放大鏡圖示旁邊下拉式清單中顯示的視覺化檢視名稱。 例如: 
+- `MenuName`屬性定義要在偵錯工具的放大鏡圖示旁邊下拉式清單中顯示的視覺化檢視名稱。 例如：
 
   ![UIVisualizer 功能表捷徑功能表](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer 功能表捷徑功能表")
 

@@ -3,103 +3,105 @@ title: 開始使用 ASP.NET Core
 description: 本文說明如何在 Visual Studio for Mac 中開始使用 ASP.NET，包括安裝及建立新的專案。
 author: conceptdev
 ms.author: crdun
-ms.date: 07/13/2017
+ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 7544d3aa72bb981a35b3c7fc63db3f397f8f26dd
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 183431a160245fd8fc0ec2193c00c32659230459
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953754"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856790"
 ---
 # <a name="getting-started-with-aspnet-core"></a>開始使用 ASP.NET Core
 
- Visual Studio for Mac 可藉由支援最新的 ASP.NET Core Web 程式開發平台，讓您輕鬆地開發應用程式的服務。 ASP.NET Core 在 .NET Core 上執行，而 .NET Core 是 .NET Framework 和執行階段的最新演進。 它已針對快速效能進行調整、分解成小型安裝大小，並重新設想為在 Linux 與 macOS 及 Windows 上執行。
+ Visual Studio for Mac 可藉由支援最新的 ASP.NET Core Web 程式開發平台，讓您輕鬆地開發應用程式的服務。 ASP.NET Core 在 .NET Core 上執行，而 .NET Core 是 .NET Framework 和執行階段的最新演進。 它已針對快速效能調整、分解成小型安裝大小，並重新設想為在 Linux 與 macOS 及 Windows 上執行。
 
 ## <a name="installing-net-core"></a>安裝 .NET Core
 
-當您安裝 Visual Studio for Mac 時，即會自動安裝 .NET Core 1.1。
+當您安裝 Visual Studio for Mac 時，即會自動安裝 .NET Core 2.1。
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中建立 ASP.NET Core 應用程式
 
-開啟 Visual Studio for Mac。 在歡迎頁面上選取 [新增專案...]
+開啟 Visual Studio for Mac。 在開始畫面選取 [新增專案]
 
-![[新增專案] 對話方塊](media/asp-net-core-image1.png)
+![[新增專案] 對話方塊](media/asp-net-core-2019-new-asp-core.png)
 
 這會顯示 [新增專案] 對話方塊，可讓您選取範本來建立應用程式。
 
 有許多專案可為您提供預先建立的範本，以開始建置 ASP.NET Core 應用程式。 這些是：
 
-- **.NET Core > ASP.NET Core 空白 Web 應用程式**
-- **.NET Core > ASP.NET Core Web 應用程式**
-- **.NET Core > ASP.NET Core Web API**
-- **多平台 > 應用程式 > 連線的應用程式**
+- **.NET Core > 空白**
+- **.NET Core > API**
+- **.NET Core > Web 應用程式**
+- **.NET Core > Web 應用程式 (模型-檢視-控制器)**
 
-![ASP.NET 專案選項](media/asp-net-core-image11.png)
+![ASP.NET 專案選項](media/asp-net-core-2019-new-asp-core.png)
 
 選取 [ASP.NET Core 空白 Web 應用程式]，然後按 [下一步]。 提供專案名稱，然後按 [建立]。 這會建立新的 ASP.NET Core 應用程式，看起來應該類似下面的影像：
 
-![新的 ASP.NET Core 空白專案檢視](media/asp-net-core-image4.png)
+![新的 ASP.NET Core 空白專案檢視](media/asp-net-core-2019-empty-project.png)
 
-「ASP.NET Core 空白 Web 應用程式」建立的 Web 應用程式含有兩個預設檔案：**Program.cs** 和 **Startup.cs**，其說明如下。 它也會建立相依性資料夾，其中包含專案的 NuGet 套件相依性，例如 ASP.NET Core、.NET Core 架構和用來建置專案的 MSBuild 目標：
+ASP.NET Core 空白範本會建立有兩個預設檔案的 Web 應用程式：**Program.cs** 和 **Startup.cs**，其說明如下。 它也會建立相依性資料夾，其中包含專案的 NuGet 套件相依性，例如 ASP.NET Core、.NET Core 架構和用來建置專案的 MSBuild 目標：
 
-![顯示相依性的 Solution Pad](media/asp-net-core-image12.png)
+![顯示相依性的 Solution Pad](media/asp-net-core-2019-solution-dependencies.png)
 
 ### <a name="programcs"></a>Program.cs
 
-在專案中開啟並檢查 **Program.cs** 檔案。 請注意 `Main` 方法中發生兩件事 - 對應用程式的輸入：
+在專案中開啟並檢查 **Program.cs** 檔案。 請注意，`Main` 方法中會發生幾件事 - 對應用程式的輸入：
 
 ```csharp
-public static void Main(string[] args)
-{
-    var host = new WebHostBuilder()
-        .UseKestrel()
-        .UseContentRoot(Directory.GetCurrentDirectory())
-        .UseIISIntegration()
-        .UseStartup<Startup>()
-        .Build();
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateWebHostBuilder(args).Build().Run();
+        }
 
-    host.Run();
-}
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>();
+    }
 ```
 ASP.NET Core 應用程式會透過 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 的執行個體設定和啟動主機，在其 Main 方法中建立 Web 伺服器。 這個建立器提供了一些方法來允許設定主機。 在範本應用程式中會使用下列組態：
 
-* `UseKestrel`：指定應用程式將使用 Kestrel 伺服器
-* `UseContentRoot(Directory.GetCurrentDirectory())`：當應用程式從 Web 專案的根資料夾啟動時，使用這個資料夾作為應用程式的內容根目錄
-* `.UseIISIntegration()`：指定應用程式應該與 IIS 搭配運作。 若要搭配使用 IIS 與 ASP.NET Core，必須同時指定 `UseKestrel` 和 `UseIISIntegration`。
-* `.UseStartup<Startup>()`：指定啟動類別。
+* `.UseStartup<Startup>()`:指定啟動類別。
 
-  Build 和 Run 方法會建置裝載應用程式的 IWebHost，並使其開始接聽傳入的 HTTP 要求。
+不過，您也可以新增其他組態，例如：
+
+* `UseKestrel`:指定應用程式將使用 Kestrel 伺服器
+* `UseContentRoot(Directory.GetCurrentDirectory())`:當應用程式從 Web 專案的根資料夾啟動時，使用這個資料夾作為應用程式的內容根目錄
+* `.UseIISIntegration()`:指定應用程式應該與 IIS 搭配運作。 若要搭配使用 IIS 與 ASP.NET Core，必須同時指定 `UseKestrel` 和 `UseIISIntegration`。
 
 ### <a name="startupcs"></a>Startup.cs
 
-應用程式的啟動類別是在 `WebHostBuilder` 的 `UseStartup()` 方法中指定。 在這個類別中，您將指定要求處理管線，並在其中設定任何服務。
+應用程式的啟動類別是在 `CreateWebHostBuilder` 的 `UseStartup()` 方法中指定。 在這個類別中，您將指定要求處理管線，並在其中設定任何服務。
 
 在專案中開啟並檢查 **Startup.cs** 檔案：
 
 ```csharp
-public class Startup
-{
-    public void ConfigureServices(IServiceCollection services)
+    public class Startup
     {
-    }
-
-    public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
-    {
-        loggerFactory.AddConsole();
-
-        if (env.IsDevelopment())
+        // This method gets called by the runtime. Use this method to add services to the container.
+        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public void ConfigureServices(IServiceCollection services)
         {
-            app.UseDeveloperExceptionPage();
         }
 
-        app.Run(async (context) =>
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            await context.Response.WriteAsync("Hello World!");
-        });
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Hello World!");
+            });
+        }
     }
-}
 ```
 
 這個啟動類別必須一律遵守下列規則：
@@ -117,13 +119,13 @@ public class Startup
 
 現在，無需新增任何其他程式碼，即可執行這個簡單的 Hello, World 專案。 若要執行應用程式，並在瀏覽器中檢視它，請按工具列中的 [播放] (三角形) 按鈕：
 
-![執行應用程式](media/asp-net-core-image5.png)
+![執行應用程式](media/asp-net-core-2019-run-debug.png)
 
 Visual Studio for Mac 會使用隨機的連接埠來啟動您的 Web 專案。 若要找出這個連接埠，請開啟應用程式輸出，其列在 [檢視] > [板] 底下。 您應該尋找的輸出類似如下：
 
 ![顯示接聽連接埠的應用程式輸出](media/asp-net-core-image6.png)
 
-開啟您選擇的瀏覽器，然後輸入 `http://localhost:5000/`，並將 `5000` 取代為 Visual Studio 在應用程式輸出中輸出的連接埠。 您應該會看到文字 `Hello World!`：
+專案一經執行，您的預設網頁瀏覽器就應該啟動，並連線到應用程式輸出列出的 URL。 或者，您可以開啟選擇的任何瀏覽器，輸入 `http://localhost:5000/`，將 `5000` 取代為應用程式輸出中的 Visual Studio 輸出連接埠。 您應該會看到文字 `Hello World!`：
 
 ![顯示文字的瀏覽器](media/asp-net-core-image7.png)
 
@@ -222,13 +224,13 @@ ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式�
 
 ## <a name="troubleshooting"></a>疑難排解
 
-如果您需要在 Mac OS 10.11 (El Capitan) 和更高版本上手動安裝 .NET Core ，請執行下列作業：
+如果您需要在 Mac OS 10.12 (Sierra) 和更新版本上手動安裝 .NET Core ，請執行下列作業：
 
 1. 在開始安裝 .NET Core 之前，請確定所有作業系統更新已更新為最新穩定版本。 若要檢查此項，請移至應用程式市集應用程式，然後選取 [更新] 索引標籤。
 
 2. 遵循 [.NET Core 網站](https://www.microsoft.com/net/core#macos)上所列出的步驟。
 
-請務必先順利完成所有四個步驟，以確保已順利安裝 .NET Core。
+請務必順利完成所有步驟，以確保成功安裝 .NET Core。
 
 ## <a name="summary"></a>總結
 

@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7661de324e2d2872491988c7b0fa637d0c318545
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920570"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653004"
 ---
 # <a name="annotating-locking-behavior"></a>註釋鎖定行為
 為了避免多執行緒程式中發生並行 Bug，請務必遵循適當的鎖定規範並使用 SAL 註釋。
@@ -66,23 +66,23 @@ ms.locfileid: "55920570"
 
 |註釋|描述|
 |----------------|-----------------|
-|`_Acquires_exclusive_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的獨佔鎖定計數遞增 1。|
+|`_Acquires_exclusive_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的獨佔鎖定計數遞增 1。|
 |`_Acquires_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的鎖定計數遞增 1。|
 |`_Acquires_nonreentrant_lock_(expr)`|取得由 `expr` 命名的鎖定。  如果鎖定已保留，則會報告錯誤。|
-|`_Acquires_shared_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的共用鎖定計數遞增 1。|
+|`_Acquires_shared_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的共用鎖定計數遞增 1。|
 |`_Create_lock_level_(name)`|將符號 `name` 宣告為鎖定層級的陳述式，如此該符號就可以在註釋 `_Has_Lock_level_` 和 `_Lock_level_order_` 中使用。|
 |`_Has_lock_kind_(kind)`|附註來精簡的資源物件的型別資訊的任何物件。 有時候一般型別用於不同種類的資源及多載的型別不是足以區別各種資源之間的語意需求。 以下是預先定義的 `kind` 參數清單：<br /><br /> `_Lock_kind_mutex_`<br /> 鎖定 mutex 類型的識別碼。<br /><br /> `_Lock_kind_event_`<br /> 鎖定事件的種類的識別碼。<br /><br /> `_Lock_kind_semaphore_`<br /> 號誌鎖定類型識別碼。<br /><br /> `_Lock_kind_spin_lock_`<br /> 微調鎖定的鎖定類型識別碼。<br /><br /> `_Lock_kind_critical_section_`<br /> 鎖定重要區段的類型識別碼。|
 |`_Has_lock_level_(name)`|標註鎖定物件，並為其指定 `name` 的鎖定層級。|
 |`_Lock_level_order_(name1, name2)`|陳述式提供鎖定之間的順序`name1`和`name2`。|
-|`_Post_same_lock_(expr1, expr2)`|標註函式，並指出並後製狀態下，`expr1` 和 `expr2` 這兩個鎖定會視為是相同的鎖定物件。|
+|`_Post_same_lock_(expr1, expr2)`|為函式加上附註，並指出並後製狀態下，`expr1` 和 `expr2` 這兩個鎖定會視為是相同的鎖定物件。|
 |`_Releases_exclusive_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的獨佔鎖定計數遞減 1。|
-|`_Releases_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的鎖定計數遞減 1。|
+|`_Releases_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的鎖定計數遞減 1。|
 |`_Releases_nonreentrant_lock_(expr)`|會釋放由 `expr` 命名的鎖定。 如果目前沒有保留鎖定，則會報告錯誤。|
-|`_Releases_shared_lock_(expr)`|標註函式，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的共用鎖定計數遞減 1。|
-|`_Requires_lock_held_(expr)`|標註函式，並指出在前置狀態下，由 `expr` 命名之物件的鎖定計數至少為一。|
+|`_Releases_shared_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的共用鎖定計數遞減 1。|
+|`_Requires_lock_held_(expr)`|為函式加上附註，並指出在前置狀態下，由 `expr` 命名之物件的鎖定計數至少為一。|
 |`_Requires_lock_not_held_(expr)`|標註函式標註，並指出在前置狀態下，由 `expr` 命名之物件的鎖定計數為零。|
-|`_Requires_no_locks_held_`|標註函式，並指出檢查程式已知之所有鎖定的鎖定計數為零。|
-|`_Requires_shared_lock_held_(expr)`|標註函式，並指出在前置狀態下，由 `expr` 命名之物件的共用鎖定計數至少為一。|
+|`_Requires_no_locks_held_`|為函式加上附註，並指出檢查程式已知之所有鎖定的鎖定計數為零。|
+|`_Requires_shared_lock_held_(expr)`|為函式加上附註，並指出在前置狀態下，由 `expr` 命名之物件的共用鎖定計數至少為一。|
 |`_Requires_exclusive_lock_held_(expr)`|標註函式，並指出在前置狀態下，由 `expr` 命名之物件的獨佔鎖定計數至少為一。|
 
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>未公開之鎖定物件的 SAL 內在變數
@@ -103,8 +103,7 @@ ms.locfileid: "55920570"
 |`_Guarded_by_(expr)`|標註變數，並指出只要存取變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|
 |`_Interlocked_`|標註變數，相當於`_Guarded_by_(_Global_interlock_)`。|
 |`_Interlocked_operand_`|標註函式參數是一個不同的 Interlocked 函式的目標運算元。  這些運算元必須有特定的其他屬性。|
-|`_Write_guarded_by_(expr)`|標註變數，並指出只要修改變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|
-
+|`_Write_guarded_by_(expr)`|為變數加上附註，並指出只要修改變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|
 
 ## <a name="smart-lock-and-raii-annotations"></a>Smart Lock 和 RAII 註解
  智慧鎖定通常會包裝原生鎖定，並管理其存留期。 下表列出可以搭配智慧鎖定和 RAII 模式支援撰寫程式碼的註解`move`語意。

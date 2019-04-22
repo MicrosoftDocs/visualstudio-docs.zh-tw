@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: eadad8fdbec990607450b374a32758547194f734
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 18c5b01aed925bf458e1c8779a2f41ea1a2d98a4
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160270"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504064"
 ---
 # <a name="convert-foreach-loop-to-linq"></a>將 Foreach 迴圈轉換為 LINQ
 
@@ -41,14 +41,42 @@ ms.locfileid: "58160270"
 
    ![轉換為 LINQ 功能表](media/convert-foreach-to-LINQ-codefix.png)
 
-3. 選取 [轉換成 LINQ] 或 [轉換成 Linq (呼叫表單)]
+3. 選取 [轉換成 LINQ] 或 [轉換成 LINQ (呼叫表單)]
 
    ![LINQ 查詢結果](media/convert-foreach-to-LINQ-result.png)
    
    ![LINQ 呼叫表單結果](media/convert-foreach-to-LINQ-callform-result.png)
+   
+### <a name="sample-code"></a>程式碼範例
+
+```csharp
+using System.Collections.Generic;
+
+public class Class1
+{
+    public void MyMethod()
+    {
+        var greetings = new List<string>()
+            { "hi", "yo", "hello", "howdy" };
+
+        IEnumerable<string> enumerable()
+        {
+            foreach (var greet in greetings)
+            {
+                if (greet.Length < 3)
+                {
+                    yield return greet;
+                }
+            }
+
+            yield break;
+        }
+    }
+}
+```
 
 ## <a name="see-also"></a>另請參閱
 
 - [重構](../refactoring-in-visual-studio.md)
 - [預覽變更](../../ide/preview-changes.md)
-- [.NET 開發人員的秘訣](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [.NET 開發人員的祕訣](../../ide/visual-studio-2017-for-dotnet-developers.md)

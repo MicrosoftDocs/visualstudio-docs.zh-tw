@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 600f44cccd57635cc789e2265fe5451e5674d737
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5cb08c00679e3052ef0e0715ca58dd010a52e61b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930366"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649689"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>在 Visual Studio 中，為市集應用程式啟動偵錯工作階段 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58930366"
  本主題說明如何對於以 JavaScript 和 HTML5 撰寫的 Windows 市集應用程式，開始偵錯工作階段。 您可以使用單一按鍵開始偵錯，也可以設定特定案例的偵錯工作階段，然後選擇啟動應用程式的方式。
 
 > [!NOTE]
->  針對以 XAML 和 Visual C#、 Visual c + + 或 Visual Basic 撰寫的應用程式，請參閱[啟動偵錯工作階段 (VB、 C#、 c + + 和 XAML）](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+>  撰寫 XAML 和視覺效果中的應用程式C#、 Visual C++，或 Visual Basic，請參閱 <<c2> [ 啟動偵錯工作階段 (VB、 C#，C++和 XAML)</c2>](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ##  <a name="BKMK_In_this_topic"></a>本主題內容
  [本主題內容](#BKMK_In_this_topic)
@@ -81,7 +81,7 @@ ms.locfileid: "58930366"
    Visual Studio 會建置附加了偵錯工具的應用程式，並加以啟動。 執行會持續到中斷點為止，若以手動方式暫停執行，就會發生未處理的例外狀況，或結束應用程式。 如需詳細資訊，請參閱[快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。
 
 ##  <a name="BKMK_Configure_the_debugging_session"></a> 設定偵錯工作階段
- 因為未編譯指令碼，所以組建組態和平台設定不適用。 如果您正在偵錯 c + + 或 managed 的元件，將**組態**要**偵錯**，然後選擇您的目標平台，從**Configuration**對話方塊。
+ 因為未編譯指令碼，所以組建組態和平台設定不適用。 如果您正在偵錯C++或 managed 的元件，設定**組態**來**偵錯**，然後選擇您的目標平台，從**Configuration**對話方塊。
 
 ###  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> 開啟專案的偵錯屬性頁
 
@@ -184,13 +184,11 @@ ms.locfileid: "58930366"
 
 2. 從清單中選擇下列其中一個選項：
 
-
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **本機電腦**  |                                                                                                                在本機電腦上對目前工作階段中的應用程式進行偵錯。 請參閱[本機電腦上的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-the-local-machine.md)。                                                                                                                 |
    |   **模擬器**    | 在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的 Visual Studio 模擬器中進行應用程式偵錯。 模擬器是可讓您對本機電腦上無法使用的裝置功能 (例如觸控筆勢與裝置旋轉) 進行偵錯的桌面視窗。 請參閱[在模擬器中的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。 |
    | **遠端電腦** |                          在透過內部網路連接到本機電腦的裝置上，或使用乙太網路纜線直接連接的裝置上，對應用程式進行偵錯。 若要遠端偵錯，必須在遠端裝置上安裝並執行 Visual Studio 遠端工具。 請參閱[在遠端電腦上的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。                           |
-
 
 3. 從 [ **已安裝的應用程式套件** ] 清單中選擇應用程式。
 

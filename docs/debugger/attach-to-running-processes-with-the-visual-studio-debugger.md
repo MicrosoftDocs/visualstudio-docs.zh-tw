@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366402"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具附加至執行中處理序
@@ -171,7 +171,7 @@ ms.locfileid: "59366402"
 |遠端偵錯 ASP.NET 4 或 4.5 上 IIS 伺服器|使用遠端工具和**附加至處理序**|*w3wp.exe*|請參閱[遠端偵錯 IIS 的遠端電腦上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |在 IIS 伺服器上遠端偵錯 ASP.NET Core|使用遠端工具和**附加至處理序**|*dotnet.exe*|應用程式部署，請參閱[發行至 IIS](https://docs.asp.net/en/latest/publishing/iis.html)。 進行偵錯，請參閱[IIS 的遠端電腦上的遠端偵錯 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |在本機 IIS 伺服器上，支援的應用程式類型的用戶端指令碼偵錯 |使用**附加至處理序**|*chrome.exe*， *MicrosoftEdgeCP.exe*，或*iexplore.exe*|必須啟用指令碼偵錯。 Chrome 中，您也必須針對執行 Chrome 偵錯模式，然後選取**Webkit 程式碼**中**附加至**欄位。|
-|偵錯C#，Visual Basic 或C++在本機電腦上的應用程式|使用其中一個標準的偵錯 (**F5**) 或**附加至處理序**|*\<appname>.exe*|在大部分情況下，會使用標準偵錯而非**附加至處理序**。|
+|偵錯C#，Visual Basic 或C++在本機電腦上的應用程式|使用其中一個標準的偵錯 (**F5**) 或**附加至處理序**|\<應用程式名稱>*.exe*|在大部分情況下，會使用標準偵錯而非**附加至處理序**。|
 |遠端偵錯 Windows 傳統型應用程式|遠端工具|N/A| 請參閱[遠端偵錯C#或 Visual Basic 應用程式](../debugger/remote-debugging-csharp.md)或是[遠端偵錯C++應用程式](../debugger/remote-debugging-cpp.md)|
 |啟動但不偵錯工具的應用程式之後，偵錯在本機電腦上的 ASP.NET 應用程式|使用**附加至處理序**|*iiexpress.exe*|這可能是很有幫助您載入的應用程式更快，這類 （例如） 程式碼剖析時。 |
 |在 伺服器處理序上其他支援的應用程式類型進行偵錯|如果遠端伺服器，使用 遠端工具，和**附加至處理序**|*chrome.exe*， *iexplore.exe*，或其他處理程序|如有必要，使用資源監視器來識別處理程序。 請參閱[遠端偵錯](../debugger/remote-debugging.md)。|
@@ -197,7 +197,7 @@ ms.locfileid: "59366402"
 
  如果您想要偵錯工具附加至程式碼類型失敗的原因的更具體資訊，請嘗試重新附加至該程式碼。
 
- **若要取得特定資訊的程式碼類型附加失敗的原因：**
+ **取得程式碼類型為何無法附加的相關資訊：**
 
 1.  與處理序中斷連結。 在 **偵錯**功能表上，選取**中斷所有連結**。
 

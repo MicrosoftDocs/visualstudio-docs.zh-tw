@@ -19,23 +19,22 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2440d6af45f08a3b53cf531a357cc807d4b22fc7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ea16950e47760e89204503413fd98811e781d059
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804449"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649754"
 ---
 # <a name="createproperty-task"></a>CreateProperty 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 將傳入的值填入屬性中。 這允許將值從某個屬性或字串複製至另一個屬性或字串。  
   
 ## <a name="attributes"></a>屬性  
  下表說明 `CreateProperty` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`Value`|選擇性的 `String` 輸出參數。<br /><br /> 指定要複製至新屬性的值。|  
 |`ValueSetByTask`|選擇性的 `String` 輸出參數。<br /><br /> 包含與 `Value` 參數相同的值。 因輸出具有最新資訊而略過封入目標時，只有在您想要避免具有 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 所設定的輸出屬性時，才使用此參數。|  

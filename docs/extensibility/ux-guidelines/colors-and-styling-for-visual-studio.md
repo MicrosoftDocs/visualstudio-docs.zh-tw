@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027707"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650625"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>色彩和樣式設定適用於 Visual Studio
 
@@ -112,7 +112,6 @@ IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 在檔案 VSShell80.idl，列舉`__VSSYSCOLOREX`具有 shell 色彩常數。 若要使用它，傳入的索引值為下列其中一種將值從`enum __VSSYSCOLOREX`中所記錄的 MSDN 或一般的索引編號，Windows 系統 API， `GetSysColor`，接受。 如此一來取得回應該在第二個參數中使用的色彩的 RGB 值。
 
 如果儲存的畫筆或筆刷，新的色彩，您必須`AdviseBroadcastMessages`（從 Visual Studio shell)，並接聽`WM_SYSCOLORCHANGE`和`WM_THEMECHANGED`訊息。
-
 
 若要存取原生程式碼色彩服務，您將進行看起來像這樣的呼叫：
 
@@ -362,7 +361,7 @@ VSPackage 可以控制的字型和色彩，透過自訂分類，和 [字型和�
 | 名稱 | 類型 | 資料 | 描述 |
 | --- | --- | --- | --- |
 | 分類 | REG_SZ | GUID | 若要識別類別目錄建立 GUID |
-| 封裝 | REG_SZ | GUID | 服務的 GUID VSPackage 支援類別 |
+| 套件 | REG_SZ | GUID | 服務的 GUID VSPackage 支援類別 |
 
  在登錄中指定的服務必須提供實作[IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)對應分類。
 
@@ -375,7 +374,7 @@ VSPackage 可以控制的字型和色彩，透過自訂分類，和 [字型和�
 | 名稱 | 類型 | 資料 | 描述 |
 |--- | --- | --- | --- |
 | 分類 | REG_SZ | GUID | 若要識別類別目錄建立 GUID |
-| 封裝 | REG_SZ | GUID | 服務的 GUID VSPackage 支援類別 |
+| 套件 | REG_SZ | GUID | 服務的 GUID VSPackage 支援類別 |
 
 在登錄中指定的服務必須提供實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>對應的群組。
 

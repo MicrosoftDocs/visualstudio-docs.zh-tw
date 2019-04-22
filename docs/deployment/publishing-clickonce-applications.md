@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b46b1b5fa7952fbd1a14dc9eca7f67c493ea2807
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504352"
 ---
 # <a name="publish-clickonce-applications"></a>發佈 ClickOnce 應用程式
@@ -48,13 +48,13 @@ ms.locfileid: "59504352"
 ## <a name="publish-page"></a>發行頁面
  [專案設計工具]  的 [發行]  頁面，可用以設定 ClickOnce 部署的屬性。 下表列出相關主題。
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
-|[HOW TO：指定 Visual Studio 複製檔案的位置](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|描述如何設定 Visual Studio 放置應用程式檔案和資訊清單的位置。|
-|[HOW TO：指定位置讓終端使用者從此處執行安裝作業](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|描述如何設定使用者下載及安裝應用程式的位置。|
-|[HOW TO：指定 ClickOnce 離線或線上安裝模式](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|描述如何設定是否可離線或在線上使用應用程式。|
-|[HOW TO：設定 ClickOnce 發佈版本](../deployment/how-to-set-the-clickonce-publish-version.md)|描述如何設定 ClickOnce **發佈版本**屬性，其會決定是否將您發佈的應用程式視為更新。|
-|[HOW TO：自動累加 ClickOnce 的發佈版本](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|描述如何在每次發佈應用程式時，自動遞增 **PublishVersion** 的修訂編號。|
+|[如何：指定 Visual Studio 複製檔案的位置](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|描述如何設定 Visual Studio 放置應用程式檔案和資訊清單的位置。|
+|[如何：指定位置讓終端使用者從此處執行安裝作業](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|描述如何設定使用者下載及安裝應用程式的位置。|
+|[如何：指定 ClickOnce 離線或線上安裝模式](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|描述如何設定是否可離線或在線上使用應用程式。|
+|[如何：設定 ClickOnce 發佈版本](../deployment/how-to-set-the-clickonce-publish-version.md)|描述如何設定 ClickOnce **發佈版本**屬性，其會決定是否將您發佈的應用程式視為更新。|
+|[如何：自動累加 ClickOnce 的發佈版本](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|描述如何在每次發佈應用程式時，自動遞增 **PublishVersion** 的修訂編號。|
 
  如需詳細資訊，請參閱[專案設計工具、 發行頁](../ide/reference/publish-page-project-designer.md)
 
@@ -74,31 +74,31 @@ ms.locfileid: "59504352"
 
 |||
 |-|-|
-|[HOW TO：變更 ClickOnce 應用程式的發佈語言](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|描述如何指定語言和文化特性，以符合當地語系化的版本。|
-|[HOW TO：指定 ClickOnce 應用程式的開始功能表名稱](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|描述如何變更 ClickOnce 應用程式的顯示名稱。|
-|[HOW TO：指定技術支援的連結](../deployment/how-to-specify-a-link-for-technical-support.md)|描述如何設定**支援 URL** 屬性，其可識別使用者可以前往以取得應用程式相關資訊之網頁或檔案共用。|
-|[HOW TO：ClickOnce 部署中指定個別必要條件的支援 URL](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|示範如何手動變更應用程式資訊清單，以包含每個必備項目的個別支援 URL。|
-|[HOW TO：指定 ClickOnce 應用程式的發佈頁面](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|描述如何產生及發行預設網頁 (publish.htm) 以及應用程式|
-|[HOW TO：自訂 ClickOnce 預設 Web 網頁](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|描述如何自訂自動產生及發行的網頁以及應用程式。|
-|[HOW TO：啟用 CD 安裝的 AutoStart](../deployment/how-to-enable-autostart-for-cd-installations.md)|描述如何啟用 AutoStart，以便在插入媒體時，自動啟動 ClickOnce 應用程式。|
+|[如何：變更 ClickOnce 應用程式的發佈語言](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|描述如何指定語言和文化特性，以符合當地語系化的版本。|
+|[如何：指定 ClickOnce 應用程式的開始功能表名稱](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|描述如何變更 ClickOnce 應用程式的顯示名稱。|
+|[如何：指定技術支援的連結](../deployment/how-to-specify-a-link-for-technical-support.md)|描述如何設定**支援 URL** 屬性，其可識別使用者可以前往以取得應用程式相關資訊之網頁或檔案共用。|
+|[如何：在 ClickOnce 部署中指定個別必要條件的支援 URL](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|示範如何手動變更應用程式資訊清單，以包含每個必備項目的個別支援 URL。|
+|[如何：指定 ClickOnce 應用程式的發佈頁面](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|描述如何產生及發行預設網頁 (publish.htm) 以及應用程式|
+|[如何：自訂 ClickOnce 預設網頁](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|描述如何自訂自動產生及發行的網頁以及應用程式。|
+|[如何：啟用 CD 安裝的 AutoStart](../deployment/how-to-enable-autostart-for-cd-installations.md)|描述如何啟用 AutoStart，以便在插入媒體時，自動啟動 ClickOnce 應用程式。|
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
-|[HOW TO：建立檔案關聯的 ClickOnce 應用程式](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|描述如何將副檔名支援加入 ClickOnce 應用程式。|
-|[HOW TO：在線上 ClickOnce 應用程式中擷取查詢字串資訊](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|示範如何擷取在 URL 中傳遞以執行 ClickOnce 應用程式的參數。|
-|[HOW TO：使用設計工具停用 ClickOnce 應用程式的 URL 啟動](../deployment/how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md)|描述如何強制使用者使用設計工具，從 [開始] 功能表啟動應用程式。|
-|[HOW TO：停用 ClickOnce 應用程式的 URL 啟動](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)|描述如何強制使用者從 [開始] 功能表啟動應用程式。|
+|[如何：建立 ClickOnce 應用程式的檔案關聯](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|描述如何將副檔名支援加入 ClickOnce 應用程式。|
+|[如何：在線上 ClickOnce 應用程式中擷取查詢字串資訊](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|示範如何擷取在 URL 中傳遞以執行 ClickOnce 應用程式的參數。|
+|[如何：使用設計工具停用 ClickOnce 應用程式的 URL 啟動](../deployment/how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md)|描述如何強制使用者使用設計工具，從 [開始] 功能表啟動應用程式。|
+|[如何：停用 ClickOnce 應用程式的 URL 啟動](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)|描述如何強制使用者從 [開始] 功能表啟動應用程式。|
 |[逐步解說：依需求使用設計工具以 ClickOnce 部署 API 下載組件](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|描述如何只有在使用設計工具的應用程式第一次使用應用程式組件時，才下載這些組件。|
 |[逐步解說：下載依需求以 ClickOnce 部署 API 的組件](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|說明如何只有在應用程式第一次使用應用程式組件時，才下載這些組件。|
 |[逐步解說：下載依需求以 ClickOnce 部署 API 的附屬組件](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|描述如何將您的附屬組件標記為選用項目，並僅下載用戶端電腦因其目前文化特性設定而需要的組件。|
 |[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|說明如何使用.NET Framework 公用程式，部署 ClickOnce 應用程式。|
 |[逐步解說：手動部署 ClickOnce 應用程式，而無須重新簽署而且會保留商標資訊](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)|說明如何使用 .NET Framework 公用程式，部署 ClickOnce 應用程式，但不重新簽署資訊清單。|
-|[HOW TO：將專案設定成以各種平台為目標](../ide/how-to-configure-projects-to-target-platforms.md)|說明如何透過變更專案中的 [目標 CPU] 或 [平台目標] 屬性，針對 64 位元處理器發佈。|
+|[如何：將專案設定成以各種平台為目標](../ide/how-to-configure-projects-to-target-platforms.md)|說明如何透過變更專案中的 [目標 CPU] 或 [平台目標] 屬性，針對 64 位元處理器發佈。|
 |[逐步解說：啟用多個.NET Framework 版本上執行 ClickOnce 應用程式](https://msdn.microsoft.com/library/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|說明如何啟用 ClickOnce 應用程式，在 NET Framework 的多個版本上安裝及執行。|
 |[逐步解說：建立自訂安裝程式的 ClickOnce 應用程式](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|說明如何建立自訂安裝程式，來安裝 ClickOnce 應用程式。|
-|[HOW TO：發佈已啟用視覺樣式的 WPF 應用程式](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|提供逐步指示，解決在您嘗試發行啟用視覺化樣式的 WPF 應用程式時出現的錯誤。|
+|[如何：發佈已啟用視覺樣式的 WPF 應用程式](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|提供逐步指示，解決在您嘗試發行啟用視覺化樣式的 WPF 應用程式時出現的錯誤。|
 
 ## <a name="see-also"></a>另請參閱
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)

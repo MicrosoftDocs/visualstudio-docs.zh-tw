@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 791908c4e5c85a9d1b5210eb950394273bda184c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c65e064452d307727e1c19578f7a660451f49c70
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602061"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651886"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>逐步解說：使用選項按鈕更新工作表中的圖表
   本逐步解說會示範使用 Microsoft Office Excel 工作表上的選項按鈕，以讓使用者快速切換選項之間的基本概念。 在此情況下，選項會變更圖表的樣式。
@@ -132,30 +132,24 @@ ms.locfileid: "56602061"
 
 2. 從**通用控制項**索引標籤**工具箱**，拖曳**圓鈕**控制項至使用者控制項，並變更下列屬性。
 
-
    | 屬性 | 值 |
    |----------|------------------|
    | **名稱** | **columnChart** |
    | **Text** | **直條圖** |
 
-
 3. 將第二個按鈕加入至使用者控制項，並變更下列屬性。
-
 
    | 屬性 | 值 |
    |----------|---------------|
    | **名稱** | **barChart** |
    | **Text** | **橫條圖** |
 
-
 4. 將第三個選項按鈕加入至使用者控制項，並變更下列屬性。
-
 
    | 屬性 | 值 |
    |----------|----------------|
    | **名稱** | **lineChart** |
    | **Text** | **折線圖** |
-
 
 5. 第四個按鈕加入使用者控制項，並變更下列屬性。
 

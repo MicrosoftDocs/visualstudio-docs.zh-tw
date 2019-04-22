@@ -13,17 +13,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4846d00172c3d71be1f8a8dbdf68cf4e7fd1f065
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 751b894e46fa6c76f866ddd3209d25c169ff6660
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774770"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649403"
 ---
 # <a name="call-hierarchy"></a>呼叫階層
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 呼叫階層可藉由顯示與選取的方法、屬性或建構函式的所有呼叫，讓您巡覽您的程式碼。 這可讓您深入了解程式碼的流程，並評估程式碼變更的影響。 您可以檢查數個程式碼階層，以檢視複雜的方法呼叫鏈結及程式碼的其他進入點，讓您探索所有可能的執行路徑。  
   
  與呼叫堆疊 (由偵錯工具顯示) 不同，呼叫階層可以在設計階段使用。  
@@ -61,7 +60,7 @@ ms.locfileid: "54774770"
 ## <a name="shortcut-menu-items"></a>捷徑功能表項目  
  下表描述幾個當您以滑鼠右鍵按一下樹狀檢視窗格中的節點時，可以使用的捷徑功能表選項。  
   
-|操作功能表項目|說明|  
+|操作功能表項目|描述|  
 |-----------------------|-----------------|  
 |**增為新根目錄**|將選取的節點新增至樹狀檢視窗格作為新的根節點。 這可讓您將注意力放在特定樹狀子目錄。|  
 |**移除根目錄**|從樹狀檢閱窗格移除所選根節點。 這個選項只能從根節點使用。<br /><br /> 您也可以使用 [移除根目錄] 工具列按鈕來移除選取的根節點。|  

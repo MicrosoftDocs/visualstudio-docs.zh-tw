@@ -17,17 +17,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 423975825e74b7dab29f19697e1e17fb00430f9c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed2a999fc3480bda8aa534d3dd32a00f5ff5c039
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940412"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651915"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您可以擴充的功能`TableAdapter`所建立的部分類別檔案`TableAdapter`，然後將加入的程式碼 (而不是將程式碼加入*DatasetName*。DataSet.Designer 檔案）。 部分類別可讓多個實體檔案分割為特定類別的程式碼。 如需詳細資訊，請參閱 <<c0> [ 部分](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)或是[partial （類型）](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)。  
   
  定義的程式碼`TableAdapter`每次變更都會產生`TableAdapter`。 此程式碼也會產生任何修改的組態的精靈執行期間進行變更時`TableAdapter`。 若要防止您的程式碼重新產生期間刪除`TableAdapter`，將程式碼的部分類別檔案加入`TableAdapter`。  

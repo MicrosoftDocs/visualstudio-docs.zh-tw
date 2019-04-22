@@ -8,16 +8,15 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 5500af58ab93b41cc73b48f5ebe2d63ed16ca495
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7462f99bc06ea84ebbeaf675c8f3882cef527ce5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754931"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649676"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 本主題所包含的資訊，可協助您解決使用 Visual Studio Emulator for Android 時可能遇到的問題。
 
@@ -174,7 +173,7 @@ ms.locfileid: "54754931"
 
      - 停用 Trusted Execution
 
-       如需詳細資訊，請參閱這篇文章：TechNetHyper-V如何修正啟用 HYPER-V 的 BIOS 錯誤
+       如需詳細資訊，請參閱本文：Technet：Hyper-V：如何修正啟用 HYPER-V 的 BIOS 錯誤
 
   5. 確定您至少有 4 GB 的系統記憶體，而且沒有其他資源密集的程式和處理序正在使用這些記憶體。
 
@@ -192,7 +191,7 @@ ms.locfileid: "54754931"
 
    一般而言，這些產品的開發人員必須將其軟體更新為與 Windows 8 和 Hyper-V 相容。
 
-   下列的產品可能需要升級的 Windows 8 相容性：VirtualBox、 Virtual PC 7、 VMWare、 某些 VPN 用戶端、 軟體防火牆、 某些 Cisco VPN 用戶端，以及其他虛擬化系統的版本。 請與有問題之虛擬化軟體的開發人員合作，並建議他們升級軟體，以與 Windows 8 和 Hyper-V 相容。
+   下列產品可能需要升級，才能與 Windows 8 相容：VirtualBox、Virtual PC 7、VMWare、某些 VPN 用戶端、軟體防火牆、某些 Cisco VPN 用戶端版本，以及其他虛擬化系統。 請與有問題之虛擬化軟體的開發人員合作，並建議他們升級軟體，以與 Windows 8 和 Hyper-V 相容。
 
    其中一個 **因應措施**，是停用可能會干擾模擬器用來與 Visual Studio 通訊之虛擬網路的所有協力廠商驅動程式和應用程式。 這些應用程式可能包括：
 
@@ -255,7 +254,7 @@ ms.locfileid: "54754931"
 
   若要解決這個問題，請停用主機板之 BIOS 設定中的 USB3 並重新啟動電腦。 然後檢查是否已針對主機板的 BIOS 發行 GB 更新。
 
-  如需詳細資訊，請參閱下列知識庫文件：[安裝在 Gb 系統上的 HYPER-V 角色後開機失敗](https://support.microsoft.com/kb/2693144)。
+  如需詳細資訊，請參閱下列知識庫文章：[Boot failure after installation of Hyper-V role on Gigabyte systems](https://support.microsoft.com/kb/2693144) (在 GB 系統上安裝 Hyper-V 角色後開機失敗)。
 
 ##  <a name="ADB"></a> Visual Studio 在嘗試將應用程式部署至模擬器時遇遭困難，或模擬器未作為偵錯目標出現在其他 IDE 中
  若模擬器正在執行，但似乎未連接到 ADB (Android Debug Bridge) 或未顯示在使用 ADB (例如 Android Studio 或 Eclipse) 的 Android 工具 中，則您可能需要調整模擬器尋找 ADB 的位置。 模擬器使用登錄機碼來識別您的 Android SDK 的基礎位置，並尋找該目錄下的 \platform-tools\adb.exe 檔案。 若要修改模擬器所使用的 Android SDK 路徑：
@@ -269,7 +268,7 @@ ms.locfileid: "54754931"
   重新啟動模擬器，您現在應該可以看到模擬器連接到 ADB 和關聯的 Android 工具。
 
 ##  <a name="XamarinPlayer"></a> 模擬器因為無法設定 UDP 連接埠而停止回應
- 您可能會因為與 Xamarin Player 不相容而遇到此問題。 若模擬器似乎停止回應，或如果您看到此錯誤訊息 「 模擬器是無法連線到裝置的作業系統：無法設定 UDP 連接埠。  可能停用部分功能」，即表示您遇到此問題。 請採取下列步驟。
+ 您可能會因為與 Xamarin Player 不相容而遇到此問題。 若模擬器似乎停止回應，或您看到此錯誤訊息「模擬器無法連線到裝置作業系統：無法設定 UDP 連接埠。  可能停用部分功能」，即表示您遇到此問題。 請採取下列步驟。
 
 1.  將 Xamarin Player 解除安裝。
 

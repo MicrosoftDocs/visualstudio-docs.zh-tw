@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 327b9ca623c6d7f949c0d516798865de48fd94be
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 37acd4a347fbf8a3d6b91798fe606252fd28772d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840321"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650807"
 ---
 # <a name="handle-specialized-deployment"></a>處理特製化的部署
 部署是專案的選擇性作業。 Web 專案，例如，支援，讓更新的 Web 伺服器專案的部署。 同樣地，**智慧型裝置**專案支援複製到目標裝置的內建應用程式的部署。 專案子類型可以藉由實作提供特製化的部署行為<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>介面。 這個介面會定義一組完整的部署作業：
@@ -40,7 +40,6 @@ ms.locfileid: "56840321"
   應該進行個別的執行緒執行實際的部署作業[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]甚至更快速地回應使用者互動。 所提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>會以非同步的方式呼叫[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]並在背景中，如有必要，可讓查詢在任何時間的部署作業的狀態，或是停止作業，在環境中運作。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>使用者選取 [部署] 命令時，將會呼叫由環境的介面部署作業。
 
   若要通知之環境的部署作業已開始或結束，專案子類型需要呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A>而<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A>方法。
-
 
 ## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>要處理的子類型專案的特製化的部署
 

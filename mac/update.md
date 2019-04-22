@@ -3,24 +3,24 @@ title: 更新 Visual Studio for Mac
 description: 更新 Visual Studio for Mac 以及存取預覽版本的指示。
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 6f60b32b66dc2c33a0ecbcd71f80fd613d273b64
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 8c2c6fa6f947f43ed03fd1ec474c9ecb8b84a9fa
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294399"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584463"
 ---
 # <a name="update-visual-studio-for-mac"></a>更新 Visual Studio for Mac
 
 Visual Studio for Mac 會定期散發 IDE 和已支援架構的更新。 這些更新可能為新功能、改善和 Bug 修正的形式。
 
-Visual Studio for Mac 提供三個通道來取得這些最新版本：
+Visual Studio for Mac 提供兩個通道來取得這些最新版本：
 
 * **穩定** - 提供完整測試過的更新。 建議使用此通道，獲得最佳開發體驗。
-* **搶鮮版 (Beta)** / **Alpha** - 早期存取本身為穩定通道中發行候選的更新。 這些版本可能不適合日常使用。
+* **預覽版** - 優先存取更新，也就是有機會在穩定通道中發行的候選更新。 這些版本可能不適合日常使用。
 
 ## <a name="checking-for-updates"></a>檢查更新
 
@@ -51,6 +51,10 @@ Visual Studio for Mac 提供三個通道來取得這些最新版本：
 ![開始安裝更新的按鈕](media/update-image4.png)
 
 根據需要安裝的元件，您可能需要接受額外的授權或輸入您電腦的系統管理員使用者名稱和密碼。
+
+## <a name="troubleshooting"></a>疑難排解
+
+如果您遇到更新程式的問題，請嘗試遵循[更新程式疑難排解](updater-troubleshooting.md)中的指南。
 
 ## <a name="see-also"></a>另請參閱
 

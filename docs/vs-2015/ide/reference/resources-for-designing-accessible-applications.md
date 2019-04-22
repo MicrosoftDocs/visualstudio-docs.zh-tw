@@ -14,17 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ed7f7106b22cabc2e30c4f979aacda1823ea7d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761668"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651928"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>設計可及性應用程式的資源
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 您可以使用下列連結來尋找支援協助工具設計的技術，以及用來開發可存取的 Windows 應用程式和網站的秘訣和範例等相關資訊。 您可以在下列網站線上找到協助工具的一般資訊，網址為：[http://www.microsoft.com/enable/](http://www.microsoft.com/enable/)。  
   
 ## <a name="technologies"></a>技術  
@@ -45,7 +44,7 @@ ms.locfileid: "54761668"
   
 ## <a name="web-sites"></a>網站  
   
--   [Walkthrough: Accessibility Guidelines for Using Image Controls, Menu Controls, and AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) (逐步解說︰使用圖像控制項、功能表控制項和 AutoPostBack 的協助工具指導方針)：本主題提供逐步指示，在網頁範例中包含可存取的控制項，以及 Web 的一些協助工具設計祕訣。  
+-   [逐步解說：使用圖像控制項、 功能表控制項和 AutoPostBack 的協助工具方針](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202)本主題提供逐步指示，包括 Web 網頁範例，以及一些協助工具設計祕訣可存取的控制項。  
   
 -   **Making Web Pages More Accessible** (讓網頁更容易存取)：此技術文章列出可存取的 HTML 3.2 項目，以及可在網站開發中存取使用的項目。 如需詳細資訊，請參閱 [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx)。  
   
@@ -57,5 +56,5 @@ ms.locfileid: "54761668"
   
 -   **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** (全球資訊網協會 (W3C) 的 Web 協助工具計劃)：本網站提供可存取之網站開發的指導方針和技術。 如需詳細資訊，請參閱 [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)

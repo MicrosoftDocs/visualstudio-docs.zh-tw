@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4a0ef367be3fd2bbe79472a04437230c0b51180
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5846fe9db2d7ea02259f949697f5cb164d1c081
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942241"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651747"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告。 尚未套用的設定行為對話方塊已經變更了
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 警告。 尚未套用的設定行為對話方塊已經變更了。 是否要套用您的變更?  
   
  **設定行為**對話方塊可讓您設定的所有可用的類別的插入、 更新和刪除行為。 當選取新的 [類別] 和 [行為] 組合，並且尚未套用先前的變更時，就會出現這則訊息。  

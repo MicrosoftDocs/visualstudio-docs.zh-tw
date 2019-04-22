@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fa0c6e6e968f05ed8e2612e330d251ee7251206
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4847c8b6abf44e1ac68de1f1b9c8cbb0ca0aac7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942728"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652461"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>無法擷取資料庫物件的結構描述資訊&lt;物件名稱&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 中的物件時，通常會出現此訊息**伺服器總管/資料庫總管**是複製到剪貼簿 從資料庫刪除，再貼上至設計工具。 因為資料庫物件不再存在，所以會出現這則訊息。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  

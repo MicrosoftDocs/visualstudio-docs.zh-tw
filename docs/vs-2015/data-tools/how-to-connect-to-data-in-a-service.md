@@ -22,17 +22,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 741200100e705777520ea585ce02439a3a3c26c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a13d0c8ff1383e27f9401f6549c422a8fef96e99
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943816"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650040"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>HOW TO：連線至服務中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 連接您的應用程式，執行從服務傳回的資料[資料來源組態精靈](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)，然後選取**服務**上**選擇資料來源類型**頁面。  
   
  完成精靈的詳細資訊，服務參考加入至專案並立即提供[資料來源視窗](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。  

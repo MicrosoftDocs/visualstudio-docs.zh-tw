@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857758"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中快照集偵錯的疑難排解和已知問題
 
 如果這篇文章中所述的步驟無法解決您的問題，請連絡snaphelp@microsoft.com。
 
-## <a name="issue-snappoint-does-not-turn-on"></a>問題：快照點沒有開啟
+## <a name="issue-snappoint-does-not-turn-on"></a>問題：貼齊點不會開啟
 
 如果看到快照點出現警告圖示![快照點警告圖示](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "快照點警告圖示")，而不是一般的快照點圖示，表示快照點未開啟。
 
@@ -32,7 +32,7 @@ ms.locfileid: "58857758"
 
 1. 請確定您有用來建置及部署 app.isua1 的相同版本原始程式碼。 請確定您正在載入適用於部署的正確符號。 若要這樣做，請在進行快照集偵錯時檢視 [模組] 視窗，並確認 [符號檔案] 資料行顯示針對正在偵錯的組載入的 .pdb 檔案。 快照偵錯工具將嘗試自動為部署下載及使用符號。
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>問題：開啟快照集時沒有載入符號
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>問題：開啟 快照集時，未載入符號
 
 如果您看到下列視窗中，表示未載入符號。
 
@@ -48,7 +48,7 @@ ms.locfileid: "58857758"
 
 - 或者，如果您的組織使用符號伺服器，或是卸除另一個路徑中的符號，請使用符號設定為部署載入正確的符號。
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>問題：我在 [Cloud Explorer] 中看不到 [附加快照偵錯工具] 選項
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>問題：我看不到 [雲端總管] 中的 「 附加快照偵錯工具 」 選項
 
 請執行下列步驟：
 
@@ -67,7 +67,7 @@ ms.locfileid: "58857758"
   - Azure Kubernetes Service - 在 Ubuntu 18.04 上的 .NET Core 2.2 或更新版本中執行的 ASP.NET Core 應用程式。
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>問題：我在診斷工具中只看到節流快照集
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>問題：我只會看到節流診斷工具中的快照集
 
 ![節流快照點](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "節流快照點")
 
@@ -75,7 +75,7 @@ ms.locfileid: "58857758"
 
 - 快照集僅佔用少量記憶體，但需要付費。 如果快照偵錯工具偵測到您的伺服器處於大量記憶體負載狀態，將不會建立快照集。 您可以停止快照偵錯工具工作階段，以刪除已經擷取的快照集，然後再試一次。
 
-## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>問題：針對多個版本的 Visual Studio 進行快照集偵錯時顯示錯誤
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>問題：快照集偵錯多個版本的 Visual Studio 會顯示錯誤
 
 VS 2019 需要在 Azure App Service 中安裝較新版本的快照偵錯工具網站延伸模組。  此版本與 VS 2017 所使用的較舊版快照偵錯工具網站延伸模組不相容。  如果嘗試將 VS 2019 中的快照偵錯工具，附加至先前以 VS 2017 中的快照偵錯工具偵錯過的 Azure App Service，就會發生以下錯誤：
 
@@ -90,7 +90,7 @@ VS 2019 需要在 Azure App Service 中安裝較新版本的快照偵錯工具�
 - INSTRUMENTATIONENGINE_EXTENSION_VERSION
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
-## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>問題：我在進行快照集偵錯時發生問題，而且需要啟用更多記錄功能
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>問題：我有快照集偵錯的問題，而且我需要啟用更多的記錄
 
 ### <a name="enable-agent-logs"></a>啟用代理程式記錄
 
@@ -100,9 +100,9 @@ VS 2019 需要在 Azure App Service 中安裝較新版本的快照偵錯工具�
 
 - App Service：
   - 瀏覽至您 App Service 的 Kudu 網站 (也就是 yourappservice.**scm**.azurewebsites.net)，並瀏覽至 [偵錯主控台]。
-  - 代理程式記錄儲存在以下目錄：D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+  - 代理程式記錄檔會儲存在下列目錄：D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - VM/VMSS：
-  - 登入您的 VM，代理程式記錄儲存在以下目錄：C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
+  - 登入您的 VM 代理程式記錄檔會儲存，如下所示：C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
 - AKS
   - 瀏覽至以下目錄：/tmp/diag/AgentLogs/*
 
@@ -114,7 +114,7 @@ VS 2019 需要在 Azure App Service 中安裝較新版本的快照偵錯工具�
   - 錯誤記錄檔會自動傳送至 D:\Home\LogFiles\eventlog.xml，事件會標記 <<Provider Name="Instrumentation Engine" //>> 或 "Production Breakpoints"
 - VM/VMSS：
   - 登入您的 VM 並開啟事件檢視器。
-  - 開啟下列檢視：[Windows 記錄] > [應用程式]。
+  - 開啟下列檢視：*Windows 記錄檔 > 應用程式*。
   - 使用*生產中斷點*或*檢測引擎*，依據*事件來源**篩選目前的記錄*。
 - AKS
   - 檢測引擎記錄位於 /tmp/diag/log.txt (在DockerFile 中設定 MicrosoftInstrumentationEngine_FileLogPath)
@@ -142,7 +142,7 @@ VS 2019 需要在 Azure App Service 中安裝較新版本的快照偵錯工具�
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 偵錯](../debugger/index.md)
-- [使用快照偵錯工具針對即時 ASP.NET 應用程式進行偵錯](../debugger/debug-live-azure-applications.md)
-- [使用快照偵錯工具針對即時 ASP.NET Azure 虛擬機器\虛擬機器擴展集進行偵錯](../debugger/debug-live-azure-virtual-machines.md)
-- [使用快照偵錯工具針對即時 ASP.NET Azure Kubernetes 進行偵錯](../debugger/debug-live-azure-kubernetes.md)
+- [使用快照集偵錯工具的即時 ASP.NET 應用程式進行偵錯](../debugger/debug-live-azure-applications.md)
+- [偵錯即時 ASP.NET Azure 虛擬 Machines\Virtual 機器擴展集使用快照集偵錯工具](../debugger/debug-live-azure-virtual-machines.md)
+- [偵錯即時 ASP.NET Azure Kubernetes 中使用快照集偵錯工具](../debugger/debug-live-azure-kubernetes.md)
 - [快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)

@@ -1,70 +1,36 @@
 ---
 title: 安裝協力廠商單元測試架構
-ms.date: 06/07/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 9f61b52f72474a8ecd8fac4c30265dcd7cf36a5e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982918"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857694"
 ---
 # <a name="install-unit-test-frameworks"></a>安裝單元測試架構
 
-Visual Studio 測試總管可以執行任何已針對總管開發配接器介面的單元測試架構。 架構的安裝程式會安裝二進位檔，並加入支援語言版本的 Visual Studio 專案範本。 當您使用範本來建立專案時，系統會向測試總管註冊架構。 Visual Studio 方案可包含多個單元測試專案，這些專案使用不同的架構並提供不同的語言版本。 [測試總管] 會全部一起執行。
+Visual Studio 測試總管可以從任何已針對其開發配接器介面的單元測試架構中執行測試。 安裝架構會複製二進位檔，並新增支援語言版本的 Visual Studio 專案範本。 當您使用範本來建立專案時，系統會向測試總管註冊架構。
 
-[MSTest](getting-started-with-unit-testing.md) 是由 Visual Studio 提供的測試架構，預設會與 Visual Studio 一起安裝。
+Visual Studio 方案可包含多個單元測試專案，這些專案使用不同的架構並提供不同的語言版本。
+
+[MSTest](getting-started-with-unit-testing.md) 是 Visual Studio 提供的預設安裝測試架構。
 
 ## <a name="acquire-frameworks"></a>取得架構
 
-您可以使用 Visual Studio 延伸模組管理員或從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)，下載並安裝協力廠商單元測試架構。 您也可以從其他網站 (例如架構的網站) 下載架構。
+使用 **NuGet 套件管理員**安裝協力廠商單元測試架構。
 
-### <a name="install-from-visual-studio"></a>從 Visual Studio 安裝
+1. 以滑鼠右鍵按一下會包含您測試程式碼的專案，然後選取 [管理 NuGet 套件]。
 
-::: moniker range="vs-2017"
+2. 在 **NuGet 套件管理員**中，搜尋您想要安裝的測試架構，然後按一下 [安裝]。
 
-1. 選擇 [工具] > [擴充功能和更新]。
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-1. 選擇 [擴充功能] > [管理擴充功能]。
-
-::: moniker-end
-
-2. 依序展開 [線上] > [Visual Studio Marketplace] > [工具]，然後選擇 [測試]。
-
-3. 瀏覽清單以尋找架構。
-
-4. 選取架構並選擇 [下載]。
-
-如需詳細資訊，請參閱[尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)。
-
-### <a name="install-from-the-web"></a>從 Web 安裝
-
-如果您知道對哪個架構感興趣：
-
-1. 開啟 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。
-
-2. 在 [尋找] 方塊中鍵入架構的名稱。
-
-3. 在結果清單中選擇架構，以巡覽至工具的 [Visual Studio Marketplace] 頁面。
-
-若要瀏覽架構和其他測試工具的清單：
-
-1. 開啟 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。
-
-2. 在 [依分類/集合篩選] 中，選擇 [See all] (全部查看)。
-
-3. 在 [分類] 清單 (標示為 [正在顯示]) 中，展開 [工具] 節點，然後選擇 [測試]。
-
-4. 在結果清單中選擇架構，以巡覽至工具的 [Visual Studio Marketplace] 頁面。
+   ![Visual Studio 中的 NuGet 套件管理員](media/vs-2019/nuget-package-manager.png)
 
 ## <a name="update-to-the-latest-test-adapters"></a>更新至最新的測試配接器
 

@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b55dba438280fc4579fe15bd2a423d323c38abf6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b0c197a15962d12e101e0d3ab164d706375620d9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767274"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648243"
 ---
 # <a name="proxy-authorization-required"></a>所需的 Proxy 授權
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 通常當使用者透過 Proxy 伺服器連接到 Visual Studio Online，而 Proxy 伺服器封鎖呼叫時，就會發生這個錯誤。 Visual Studio Online 可用來讓使用者保持登入至 IDE。  
   
 ## <a name="to-correct-this-error"></a>更正這個錯誤  
@@ -38,7 +37,7 @@ ms.locfileid: "54767274"
   
     -   *.live.com  
   
--   否則您可以移除 http://go.microsoft.com位址從白名單，以便 proxy 驗證對話方塊會顯示兩個 http://go.microsoft.com位址及伺服器端點時重新啟動 Visual Studio。  
+-   否則您可以移除 http://go.microsoft.com位址從允許清單，以便 proxy 驗證對話方塊會顯示兩個 http://go.microsoft.com位址及伺服器端點時重新啟動 Visual Studio。  
   
 -   OR  
   

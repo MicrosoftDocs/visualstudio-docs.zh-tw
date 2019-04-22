@@ -11,17 +11,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc12ba16a52546b26a7941734caa8c6fca8419b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f5d619a18fa38c09b25f2d8367f3f767ac5bdc11
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764857"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651078"
 ---
 # <a name="target-build-order"></a>目標建置順序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 您可以使用這些屬性來指定執行目標的順序：  
   
 - `InitialTargets`. 這個 `Project` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。  
@@ -47,7 +46,7 @@ ms.locfileid: "54764857"
   
  匯入的專案可能會有自己的 `InitialTargets` 屬性。 所有的初始目標都會彙總在一起，並依序執行。  
   
- 如需詳細資訊，請參閱[如何：指定要優先建置的目標](../msbuild/how-to-specify-which-target-to-build-first.md)。  
+ 如需詳細資訊，請參閱[如何：指定要建置的目標先](../msbuild/how-to-specify-which-target-to-build-first.md)。  
   
 ## <a name="default-targets"></a>預設目標  
  如果未在命令列上明確指定目標，則 [Project](../msbuild/project-element-msbuild.md) 項目的 `DefaultTargets` 屬性會指定要建置哪些目標。  
@@ -66,7 +65,7 @@ ms.locfileid: "54764857"
   
  匯入的專案可能會有自己的 `DefaultTargets` 屬性。 第一個遇到的 `DefaultTargets` 屬性會判斷將執行哪些預設目標。  
   
- 如需詳細資訊，請參閱[如何：指定要優先建置的目標](../msbuild/how-to-specify-which-target-to-build-first.md)。  
+ 如需詳細資訊，請參閱[如何：指定要建置的目標先](../msbuild/how-to-specify-which-target-to-build-first.md)。  
   
 ## <a name="first-target"></a>第一個目標  
  如果沒有初始目標、預設目標或命令列目標，則 MSBuild 會執行它在專案檔或任何匯入的專案檔中遇到的第一個目標。  
@@ -122,5 +121,5 @@ ms.locfileid: "54764857"
   
 7.  執行或略過目標之後，就會執行在 `AfterTargets` 屬性中列出它的任何目標。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [目標](../msbuild/msbuild-targets.md)

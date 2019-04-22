@@ -1,5 +1,5 @@
 ---
-title: 如何：使用分析工具命令列以檢測原生服務並收集詳細計時資料 | Microsoft Docs
+title: HOW TO：使用分析工具命令列以檢測原生服務並收集詳細計時資料 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0e1007ce9119d12282b4ee7f6b85f22257af659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2663049a818782e8af11f9c85454152e5e5d83db
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781399"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649000"
 ---
-# <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：使用程式碼剖析工具命令列以檢測原生服務並收集詳細計時資料
+# <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>HOW TO：使用 Profiler 命令列以檢測原生服務並收集詳細的計時資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令列工具來檢測原生 (C/C++) 服務，並收集詳細的計時資料。  
@@ -66,7 +66,6 @@ ms.locfileid: "54781399"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。                                                                                   |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。                                                                                     |
 
-
 5. 從服務控制管理員啟動服務。  
 
 ## <a name="controlling-data-collection"></a>控制資料收集  
@@ -95,6 +94,6 @@ ms.locfileid: "54781399"
 
 3.  以原始模組取代檢測過的模組。 如有必要，請重新設定服務的啟動類型。  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [分析服務](../profiling/command-line-profiling-of-services.md)   
  [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)

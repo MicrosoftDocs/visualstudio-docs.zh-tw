@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d38657e1885ed84d5bd5e0e574968ae2009c19d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bdfd80818e88af8e2907c982e75628627bcac5e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645871"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648546"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>逐步解說：將控制項加入文件在執行階段中的 VSTO 增益集
   您可以使用 VSTO 增益集，將控制項加入任何開啟的 Microsoft Office Word 文件中。 本逐步解說示範如何使用功能區，讓使用者可以加入<xref:Microsoft.Office.Tools.Word.Controls.Button>或<xref:Microsoft.Office.Tools.Word.RichTextContentControl>文件。
@@ -78,21 +78,17 @@ ms.locfileid: "56645871"
 
 8. 在 [屬性]  視窗中變更下列屬性。
 
-
    | 屬性 | 值 |
    |-----------|-----------------------|
    | **名稱** | **addButtonCheckBox** |
    | **標籤** | **加入按鈕** |
 
-
 9. 將第二個核取方塊加入 [group1] ，然後變更下列屬性。
-
 
    | 屬性 | 值 |
    |-----------|---------------------------|
    | **名稱** | **addRichTextCheckBox** |
    | **Label** | **加入 RTF 控制項** |
-
 
 10. 在功能區設計工具中，按兩下 [加入按鈕] 。
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 183a0774bf507fcf8bdf9abeea688bb1ea75b1bd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b74eaab3edb205b5218cad5a61556f4803614d94
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628711"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651957"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>HOW TO：識別文件庫中的符號
 符號瀏覽工具顯示符號的階層式的檢視。 符號代表命名空間、 物件、 類別、 類別成員和其他語言項目。
@@ -49,7 +49,6 @@ N1
  C2 類別，在此範例中，正式路徑為 N1 + C2。 C2 的展示檔路徑包含 C1 和 「 基底和介面 「 節點：N1 + C1 + 「 基底和介面 」 + C2。
 
  若要取得呈現表單資訊物件管理員呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>方法。
-
 
 ## <a name="to-obtain-canonical-and-presentation-forms-information"></a>若要取得標準，並展示形成的資訊
 

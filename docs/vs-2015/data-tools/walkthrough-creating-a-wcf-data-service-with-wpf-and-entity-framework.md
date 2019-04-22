@@ -14,17 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2be6c030cf8602f053472971a98508043b253e43
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67b3034ee1d651289c167b894b0417d11b5995e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942448"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653082"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>逐步解說：使用 WPF 和 Entity Framework 建立 WCF 資料服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本逐步解說示範如何建立簡單[!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]裝載在[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Web 應用程式，然後將它存取 Windows Form 應用程式。  
   
  在這份逐步解說中，您將能夠：  

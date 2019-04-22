@@ -1,5 +1,5 @@
 ---
-title: C + + 判斷提示 |Microsoft Docs
+title: C-C++判斷提示 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -29,19 +29,19 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e130bac0a20d2f1e4421b6c8bd34ac2b211c55f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c5aa51fdf7d0c2537de3c301efa7efb7fe6ce96f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942870"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650105"
 ---
 # <a name="cc-assertions"></a>C/C++ 判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 判斷提示陳述式會指定您預期要在程式中的某一點，則為 true 的條件。 如果該條件不成立，判斷提示失敗，將會中斷程式執行，而[判斷提示失敗對話方塊](../debugger/assertion-failed-dialog-box.md)隨即出現。  
 
- Visual c + + 支援下列建構為基礎的判斷提示陳述式：  
+ 視覺化C++支援下列建構為基礎的判斷提示陳述式：  
 
 - MFC 程式的 MFC 判斷提示。  
 
@@ -49,7 +49,7 @@ ms.locfileid: "58942870"
 
 - 使用 C 執行階段程式庫的程式的 CRT 判斷提示。  
 
-- ANSI [assert 函式](http://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40)其他 C/c + + 程式。  
+- ANSI [assert 函式](http://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40)適用於其他 C /C++程式。  
 
   若要攔截邏輯錯誤，檢查作業的結果及測試應該已處理的錯誤狀況，您可以使用判斷提示。  
 
@@ -109,7 +109,6 @@ VERIFY ( myFnctn(0)==1 ) // safe
 
 ##  <a name="BKMK_CRT_assertions"></a> CRT 的判斷提示  
  CRTDBG。H 標頭檔會定義[_ASSERT 和 _ASSERTE 巨集](http://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36)判斷提示檢查。  
-
 
 |   巨集    |                                             結果                                              |
 |------------|-------------------------------------------------------------------------------------------------|

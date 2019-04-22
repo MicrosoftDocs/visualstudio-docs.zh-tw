@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: dee5d1ec207f2b7bec030076797720fe9e8216ed
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504259"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>逐步解說：建立 SharePoint 網站資料行、 內容類型和清單
@@ -222,6 +222,6 @@ ms.locfileid: "59504259"
 ## <a name="see-also"></a>另請參閱
 - [建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)
-- [HOW TO：建立自訂欄位類型](http://go.microsoft.com/fwlink/?LinkId=192079)
+- [如何：建立自訂欄位類型](http://go.microsoft.com/fwlink/?LinkId=192079)
 - [內容類型](http://go.microsoft.com/fwlink/?LinkId=192080)
 - [資料行](http://go.microsoft.com/fwlink/?LinkId=192081)

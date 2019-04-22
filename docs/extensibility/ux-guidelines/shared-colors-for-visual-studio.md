@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ddfd81c68ed2ef675052d1fbba524f0a03cfc2
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 89c4a4a25c2dfdeb33bfadcf8416a0cbc4726658
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232810"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649950"
 ---
 # <a name="shared-colors-for-visual-studio"></a>適用於 Visual Studio 的共用的色彩
 當您在設計 UI 使用通用的 Visual Studio shell 項目，或您想要介面項目保持一致與類似的功能時，使用套件定義檔案中現有的語彙基元名稱，以選擇並指派色彩。 這可確保您的 UI 與整體 Visual Studio 環境保持一致，而且會在加入或更新佈景主題時自動更新。
@@ -22,7 +22,7 @@ ms.locfileid: "59232810"
 
 請務必正確地使用語彙基元名稱：
 
--   **根據函式來使用語彙基元名稱，而不是色彩本身。** 常見共用色彩是與特定介面項目相關聯，並且僅適用於相同或類似的功能。 例如，請不要只因為您喜歡微調進度動畫之已按下下拉式方塊的色彩，就重複使用該色彩。 下拉式方塊和動畫的函式不同，而且如果與下拉式方塊變更相關聯的色彩，可能不再是動畫項目的適當色彩。 一致地使用色彩可協助引導您的使用者並避免混淆。
+-   **使用根據函式，不是色彩本身的語彙基元名稱。** 常見共用色彩是與特定介面項目相關聯，並且僅適用於相同或類似的功能。 例如，請不要只因為您喜歡微調進度動畫之已按下下拉式方塊的色彩，就重複使用該色彩。 下拉式方塊和動畫的函式不同，而且如果與下拉式方塊變更相關聯的色彩，可能不再是動畫項目的適當色彩。 一致地使用色彩可協助引導您的使用者並避免混淆。
 
 -   **以正確的組合來使用背景和文字色彩。** 要與文字搭配使用的背景色彩將有相關聯的文字色彩。 務必使用背景所指定的文字色彩。 如果沒有相關聯的文字色彩，請勿使用該背景色彩，您希望顯示文字的任何介面。 其他的文字和背景色彩組合可能會導致介面無法讀取。
 
@@ -1949,7 +1949,6 @@ Visual Studio 支援標記，可讓使用者宣告可搜尋關鍵字，以進行
 
 ![選取以關閉標記 (&times;) 暫留時的字符](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303年 185_TagSelectedHover")<br />選取以關閉標記 (&times;) 暫留時顯示的圖像 （glyph)
 
-
 | 項目 | 權杖名稱：Category.color |
 | --- | --- |
 | 背景 | `Tag.TagSelectedGlyphHoverBackground` |
@@ -2079,7 +2078,7 @@ Visual Studio 中的工具視窗用於許多不同的工作，而且可以存在
 | --- | --- |
 | ...您要建立 UI，您要尋找工具視窗的任何位置。 | ...您不想要時自動變更任何 ui 在 shell 具有佈景主題更新。 |
 
-**已取得焦點的標題列**
+**具有焦點的標題列**
 
 ![具有焦點的標題列](../../extensibility/ux-guidelines/media/0303-093_titlebarfocused.png "0303年 093_TitleBarFocused")<br />已取得焦點的標題列
 

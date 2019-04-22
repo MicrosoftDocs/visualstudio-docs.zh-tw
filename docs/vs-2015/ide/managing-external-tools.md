@@ -58,10 +58,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58866755"
 ---
 # <a name="managing-external-tools"></a>管理外部工具
@@ -78,11 +78,11 @@ ms.locfileid: "58866755"
   
 3.  ATL/MFC 追蹤工具：顯示 ATL 與 MFC 來源中的偵錯追蹤訊息。  
   
-4.  PreEmptive Protection - Dotfuscator：保護 .NET 程式免於反向工程。  
+4.  PreEmptive Protection - Dotfuscator:保護.NET 程式免於反向工程。  
   
-5.  SPY++：以圖形化方式顯示處理序、執行緒、視窗及視窗訊息。  
+5.  SPY + +:以圖形方式顯示處理程序、 執行緒、 windows 及視窗訊息。  
   
-6.  WCF 服務組態編輯器：可用以建立及修改 WCF 服務的組態設定。  
+6.  WCF 服務組態編輯器：可讓您建立和修改 WCF 服務的組態設定。  
   
 > [!WARNING]
 >  視您安裝的 Visual Studio 版本及套用的設定檔之不同，您看到的外部工具清單或許有些不同。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
@@ -90,7 +90,7 @@ ms.locfileid: "58866755"
 ## <a name="adding-new-tools"></a>加入新工具  
  您可將外部工具加入 [工具] 功能表。 開啟 [外部工具] 對話方塊，按一下 [加入]，然後填入資訊。 例如，下列輸入內容會讓 Windows 檔案總管的開啟位置，會是於 Visual Studio 中目前所開啟之檔案所在的目錄：  
   
-1.  Title: Open File Location  
+1.  標題:開啟檔案位置  
   
 2.  Command: explorer.exe  
   
@@ -102,7 +102,7 @@ ms.locfileid: "58866755"
 > [!NOTE]
 >  IDE 狀態列會顯示目前這一行和目前資料行的變數，以指出插入點在作用中程式碼編輯器的位置。 目前的文字變數則會傳回在該位置選取的文字或程式碼。  
   
-|名稱|引數|說明|  
+|名稱|引數|描述|  
 |----------|--------------|-----------------|  
 |項目路徑|$(ItemPath)|目前檔案的完整檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|  
 |項目目錄|$(ItemDir)|目前檔案的目錄 (磁碟機 + 路徑)。|  
@@ -121,5 +121,5 @@ ms.locfileid: "58866755"
 |方案目錄|$(SolutionDir)|目前方案的目錄 (磁碟機 + 路徑)。|  
 |方案檔名|$(SolutionFileName)|目前方案的檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [C/C++ 建置工具](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

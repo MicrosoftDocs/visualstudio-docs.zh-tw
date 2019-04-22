@@ -22,17 +22,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5592a488788c61af7ad6875de239fca62746857c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b20120ae4fc5de23c4457002b57ca186e8fe400
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930574"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651184"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>在 Windows Forms 應用程式中篩選和排序資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 設定篩選資料<xref:System.Windows.Forms.BindingSource.Filter%2A>屬性來傳回所要的記錄的字串運算式。  
   
  您藉由設定排序的資料<xref:System.Windows.Forms.BindingSource.Sort%2A>屬性的資料行名稱為您要用來排序，; 附加`DESC`依遞減順序排序，或是附加`ASC`若要以遞增順序排序。  

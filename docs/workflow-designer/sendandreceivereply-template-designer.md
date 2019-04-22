@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6731f91544235c3011e458aea7c4c5b90f89908
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e71615e90a23ad8ca6de6e01495de1ea8538a644
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907551"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650443"
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply 樣本設計工具
 
@@ -42,8 +42,7 @@ ms.locfileid: "55907551"
 
 下表顯示<xref:System.ServiceModel.Activities.ReceiveReply>屬性，並說明它們在設計工具的使用方式。 這些屬性可以在 [屬性] 方格中編輯，有些可以在工作流程設計工具介面上編輯。
 
-
-| 屬性名稱 | 必要項 | 使用方式 |
+| 屬性名稱 | 必要 | 使用量 |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | False | <xref:System.ServiceModel.Activities.ReceiveReply> 活動可選用的易記名稱。 預設為 ReceiveReplyForSend。<br /><br /> 雖然使用非預設值，做為易記<xref:System.Activities.Activity.DisplayName%2A>不是絕對必要，建議您最好使用這類的值。 |
 | <xref:System.ServiceModel.Activities.ReceiveReply.Request%2A> | True | 參考到與這個 <xref:System.ServiceModel.Activities.Send> 活動成對的 <xref:System.ServiceModel.Activities.ReceiveReply> 活動。 這個屬性不能**null**。 用戶端會同時使用 <xref:System.ServiceModel.Activities.Send> 和 <xref:System.ServiceModel.Activities.ReceiveReply> 活動，以製作要求/回應傳訊模式的模型。 這個屬性會指定哪個 <xref:System.ServiceModel.Activities.Send> 活動為成對的活動。 在設計師中，您無法編輯屬性，因為自動繫結至<xref:System.ServiceModel.Activities.Send>活動在您建立的<xref:System.ServiceModel.Activities.ReceiveReply>活動。 |

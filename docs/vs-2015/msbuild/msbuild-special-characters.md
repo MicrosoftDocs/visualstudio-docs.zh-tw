@@ -13,20 +13,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a96831650e09b1018c6cffc8149a9a0020edc90b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a54f446cb82b3181ee057d4887b37940868a5920
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793096"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650794"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild 特殊字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 保留一些針對特定內容中特殊用法的字元。 如果您想要在保留這些字元的內容中按字面使用這些字元，只需要將其逸出即可。 比方說，星號僅在項目定義的 `Include` 和 `Exclude` 屬性，以及 `CreateItem` 呼叫中具有特殊意義。 如果您想要將這些內容之一的星號顯示為星號，則必須將其逸出。 而在其他內容中，您只要在想要顯示的位置鍵入星號即可。  
   
- 若要逸出特殊字元，請使用 %*xx* 語法，其中 *xx* 代表字元的 ASCII 十六進位值。 如需詳細資訊，請參閱[如何：在 MSBuild 中逸出特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)。  
+ 若要逸出特殊字元，請使用 %*xx* 語法，其中 *xx* 代表字元的 ASCII 十六進位值。 如需詳細資訊，請參閱[如何：逸出特殊字元在 MSBuild 中的](../msbuild/how-to-escape-special-characters-in-msbuild.md)。  
   
 ## <a name="special-characters"></a>特殊字元  
  下表列出 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 特殊字元：  
@@ -41,6 +40,6 @@ ms.locfileid: "54793096"
 |?|%3F|`Include` 和 `Exclude` 屬性中的檔案名稱萬用字元|  
 |*|%2A|用於 `Include` 和 `Exclude` 屬性中的檔案名稱萬用字元|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [進階概念](../msbuild/msbuild-advanced-concepts.md)   
  [項目](../msbuild/msbuild-items.md)

@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366727"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>HOW TO：為網站收集效能資料
@@ -105,5 +105,5 @@ ms.locfileid: "59366727"
 ## <a name="see-also"></a>另請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
- [認識檢測資料值](../profiling/understanding-instrumentation-data-values.md)   
- [認識取樣資料值](../profiling/understanding-sampling-data-values.md)
+ [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)   
+ [了解取樣資料值](../profiling/understanding-sampling-data-values.md)

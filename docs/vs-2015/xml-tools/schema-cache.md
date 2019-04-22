@@ -9,23 +9,21 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944940"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648961"
 ---
 # <a name="schema-cache"></a>結構描述快取
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 XML 編輯器提供位於 %InstallRoot%\Xml\Schemas 目錄中的結構描述快取。 結構描述快取對於您電腦上的所有使用者都是通用的，它包括用於 IntelliSense 及 XML 文件驗證的標準 XML 結構描述。  
 
  在 XML 編輯器也可以尋找位於解決方案的結構描述，指定結構描述**結構描述**欄位的文件**屬性**視窗中，與所識別的結構描述`xsi:schemaLocation`並`xsi:noNamespaceSchemaLocation`屬性。  
 
  下表說明隨 XML 編輯器安裝的結構描述。  
-
 
 |     Filename      |                                                      描述                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|

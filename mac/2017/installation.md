@@ -7,14 +7,17 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 2dca1fdeace3a69fee231c1c31d3db75587e8294
-ms.sourcegitcommit: a260df15214b3198a28ca4e312263942cf6f4ce7
+ms.openlocfilehash: 1a3d95176af41bbf7803144995888b12abeeea3a
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2019
-ms.locfileid: "54443789"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856673"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>安裝 Visual Studio 2017 for Mac
+
+> [!NOTE]
+> Visual Studio 2019 for Mac [現已推出](installation.md?view=vsmac-2019)。
 
 ## <a name="requirements"></a>需求
 
@@ -23,11 +26,8 @@ ms.locfileid: "54443789"
 若要在 Visual Studio 中使用 iOS，您需要下列各項：
 
 - 具有 macOS Sierra 10.12 或以上版本的 Mac
-- Xcode 8.3 或以上版本。 通常建議使用最新穩定版本。
+- Xcode 9.3 或更新版本。 通常建議使用最新穩定版本。
 - Apple ID。 如果您還沒有 Apple 識別碼，可以在 https://appleid.apple.com 建立一個新識別碼。 安裝及登入 Xcode 時需要有 Apple 識別碼。
-
-> [!NOTE]
-> Visual Studio 2019 for Mac 預覽版[現已開放安裝](installation.md?view=vsmac-2019)和測試。
 
 ## <a name="install"></a>安裝
 
@@ -109,9 +109,9 @@ ms.locfileid: "54443789"
 
 ### <a name="android"></a>Android
 
-1. [使用 Xamarin Android SDK 管理員](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs) \(英文\)
-2. [Android SDK 模擬器](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/) \(英文\)
-4. [設定您的裝置以進行開發](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/) \(英文\)
+1. [使用 Xamarin Android SDK 管理員](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
+2. [Android SDK Emulator](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
+4. [設定裝置以進行開發](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 應用程式、ASP.NET Core Web 應用程式、Unity 遊戲開發
 
@@ -123,4 +123,4 @@ ms.locfileid: "54443789"
 
 ## <a name="see-also"></a>另請參閱
 
-- [安裝 Visual Studio 2017 (Windows 上)](/visualstudio/install/install-visual-studio)
+- [安裝 Visual Studio 2017 (在 Windows 上)](/visualstudio/install/install-visual-studio)

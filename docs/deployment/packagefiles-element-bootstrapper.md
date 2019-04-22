@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da625db79e8738bad2a5e73ceee5d8b0adb6603d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605142"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651834"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;請為 PackageFiles&gt;項目 （啟動載入器）
 `PackageFiles`項目包含`PackageFile`項目，定義執行的安裝套件`Command`項目。
@@ -44,7 +44,7 @@ ms.locfileid: "56605142"
 ## <a name="elements-and-attributes"></a>元素和屬性
  `PackageFiles` 項目具有下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`CopyAllPackageFiles`|選擇性。 如果設定為`false`，安裝程式只會下載檔案從參考`Command`項目。 如果設定為`true`，將會下載所有檔案。<br /><br /> 如果設定為`IfNotHomesite`，安裝程式將有相同的行為如同`False`如果`ComponentsLocation`設為`HomeSite`，否則會運作相同如同`True`。 此設定可用來讓本身的封裝來執行他們自己的行為在 HomeSite 案例的啟動載入器。<br /><br /> 預設為 `true`。|
 
@@ -53,8 +53,7 @@ ms.locfileid: "56605142"
 
  `PackageFile` 具有下列屬性。
 
-
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |---------------| - |
 | `Name` | 必要項。 封裝檔案的名稱。 這是名稱，`Command`它定義所在的套件會安裝的條件時，會參考項目。 此值也會用到索引鍵`Strings`資料表，以擷取這類工具的當地語系化的名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用來描述套件。 |
 | `HomeSite` | 選擇性。 在遠端伺服器上，如果它不會包含安裝程式封裝的位置。 |

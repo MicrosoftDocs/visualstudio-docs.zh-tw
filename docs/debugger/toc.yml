@@ -372,6 +372,8 @@ items:
       href: debug-live-azure-apps-faq.md
     - name: 針對快照集偵錯進行疑難排解
       href: debug-live-azure-apps-troubleshooting.md
+    - name: 時間移動偵錯即時 Azure 虛擬機器應用程式
+      href: debug-live-azure-virtual-machines-time-travel-debugging.md
   - name: 對特定應用程式類型進行偵錯
     href: debugging-applications.md
     items:
@@ -844,9 +846,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: ae2dc7baa536b03c6507cb4f7064e74126d1d93e
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: a6693cbf3b2334e1fd7770a948a156c9e2cd3908
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537711"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651821"

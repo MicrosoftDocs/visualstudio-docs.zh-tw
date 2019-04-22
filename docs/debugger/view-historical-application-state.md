@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf319dd00048a4abf6cc4e3806845200c9eefc64
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 78b755991bd90684c08c7126cb17fd169db7e57c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703574"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504353"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>使用 Visual Studio 中的 IntelliTrace 回溯，檢查先前的應用程式狀態 (Visual Studio Enterprise)
 
@@ -87,7 +87,7 @@ IntelliTrace 回溯可用於 Visual Studio Enterprise 2017 15.5 版和更新版�
 
     ![IntelliTrace 回溯概觀](../debugger/media/intellitrace-step-back-overview.png "IntelliTrace 回溯概觀")
 
-    若要深入了解如何檢查 Visual Studio 中的變數，請參閱[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+    若要深入了解如何檢查 Visual Studio 中的變數，請參閱[偵錯工具簡介](../debugger/debugger-feature-tour.md)
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 

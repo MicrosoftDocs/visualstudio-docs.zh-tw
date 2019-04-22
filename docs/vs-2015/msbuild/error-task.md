@@ -19,23 +19,22 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 71c257dae17f6846e3e6a4490178b49f28c6dad3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b220d12b872a81cba5f46bd14fdebafaa58cf4a1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767471"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652874"
 ---
 # <a name="error-task"></a>Error 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 停止組建，並根據評估的條件陳述式來記錄錯誤。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `Error` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`Code`|選擇性的 `String` 參數。<br /><br /> 與錯誤相關聯的錯誤碼。|  
 |`File`|選擇性的 `String` 參數。<br /><br /> 包含錯誤的檔案名稱。 如果沒有提供檔案名稱，將會使用包含 Error 工作的檔案。|  

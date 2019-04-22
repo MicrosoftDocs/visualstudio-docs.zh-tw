@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/03/2019
+ms.date: 04/11/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3b1be29663bacee5719749746f6275aba4381f99
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 6246291a00a86a3cde0e3a9cf134724d9dc470ed
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018242"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537646"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -193,6 +193,9 @@ ms.locfileid: "59018242"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.0 | Preview 1 | 2019 年 4 月 10 日 | 16.1.28809.33 |
+| 16.0.1 | 版本 | 2019 年 4 月 9日 | 16.0.28803.156 |
+| 16.0.1 | Preview 1 | 2019 年 4 月 9日 | 16.0.28803.156 |
 | 16.0.0 | 版本 | 2019 年 4 月 2 日 | 16.0.28729.10 |
 | 16.0.0 | Preview 5 | 2019 年 4 月 2 日 | 16.0.28729.10 |
 | 16.0.0 | 候選版 4 (RC.4) | 2019 年 3 月 26 日 | 16.0.28721.148 |
@@ -225,5 +228,5 @@ ms.locfileid: "59018242"
 
 * [Visual Studio 發行節奏](/visualstudio/productinfo/release-rhythm/)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
-* [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [用於偵測及管理 Visual Studio 執行個體的工具](tools-for-managing-visual-studio-instances.md)

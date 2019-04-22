@@ -15,17 +15,17 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b1c80f1e6c7c11e61fcdd651ac924d8243298e82
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 8dc15c95398ed45954c3830d1c558a6653a4346f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59000830"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649963"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500:變數名稱不應該與欄位名稱相符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新文件，請參閱[CA1500:變數名稱不應該與欄位名稱相符](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names)docs.microsoft.com 上。  
+如需 Visual Studio 的最新文件，請參閱[CA1500:變數名稱不應該與欄位名稱相符](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names)。  
   
 |||  
 |-|-|  

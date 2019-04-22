@@ -23,17 +23,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dbfb1b0636418971b2dffb6ff67ca2de5e211d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdec180c8e38216a230813e1ffdf7ca98281c14
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940494"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651121"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>將自訂控制項加入 [資料來源] 視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 當您拖曳的項目**Zdroje dat**至設計介面，以建立資料繫結控制項的視窗，您可以選取您所建立的控制項型別。 在視窗中的每個項目具有會顯示您可以選擇從控制項下拉式清單。 一組控制項與每個項目相關聯取決於項目的資料型別。 如果您想要建立的控制項不會出現在清單中，您可以遵循本主題中的指示，將控制項加入至清單。  
   
  如需有關選取的項目中建立的資料繫結控制項**資料來源** 視窗中，請參閱[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
@@ -69,7 +68,7 @@ ms.locfileid: "58940494"
     > [!NOTE]
     >  如果您想要選取的控制項不會不出現在**關聯的控制項** 方塊中，您必須將控制項新增至清單。 如需詳細資訊，請參閱 < [Adding Controls to 清單相關聯控制項的資料型別的](#addingcontrols)。  
   
-6.  按一下 [確定 **Deploying Office Solutions**]。  
+6.  按一下 [確定] 。  
   
 7.  在  **Zdroje dat**視窗中，按一下資料的項目類型只是關聯一或多個控制項，然後按一下 下拉式選單，項目。  
   

@@ -11,17 +11,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6ed61d1b65d03053859b5463b574432e0396449a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8bcb8aadc2fb2a2f836fccde56e283b38cbc213d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758357"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649234"
 ---
 # <a name="property-functions"></a>屬性函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在 .NET Framework 第 4 和 4.5 版中，屬性函式可用於評估 MSBuild 指令碼。 屬性函式可用於屬性出現的任何位置。 與工作不同，屬性函式可用於目標外部，並在執行任何目標之前，先進行評估。  
   
  在不使用 MSBuild 工作的情況下，您可以讀取系統時間、比較字串、比對規則運算式，以及執行組建指令碼中的其他動作。 MSBuild 會嘗試將字串轉換為數字或將數字轉換為字串，並視需要進行其他轉換。  
@@ -189,7 +188,7 @@ ms.locfileid: "54758357"
   
  以下是 MSBuild 屬性函式的清單：  
   
-|函式簽章|描述|  
+|函式簽章|說明|  
 |------------------------|-----------------|  
 |double Add(double a, double b)|將兩個雙精度浮點數相加。|  
 |long Add(long a, long b)|將兩個長整數相加。|  

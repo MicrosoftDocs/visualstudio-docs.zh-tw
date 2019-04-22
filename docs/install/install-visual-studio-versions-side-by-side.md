@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1f2969fe93ab2623b1f8406f6eaa0ce35c454202
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 123f01b2e4545545a380f5a37adcdaf883bc9e91
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160533"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856926"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>並存安裝 Visual Studio 版本
 
@@ -38,7 +38,7 @@ ms.locfileid: "58160533"
 
 * 如果您使用 Visual Studio 2019 開啟於 Visual Studio 2017 所建立的解決方案，只要未實作 Visual Studio 2019 特定的任何功能，稍後就可以在舊版中開啟和修改該方案。
 
-* 如果您嘗試使用 Visual Studio 2019 開啟使用 Visual Studio 2017 或以前版本所建立的方案，可能需要修改專案和檔案，才能與 Visual Studio 2019 相容。 如需詳細資訊，請參閱[移植、移轉和升級 Visual Studio 專案](../porting/port-migrate-upgrade-visual-studio-projects-2019.md)頁面。
+* 如果您嘗試使用 Visual Studio 2019 開啟使用 Visual Studio 2017 或以前版本所建立的方案，可能需要修改專案和檔案，才能與 Visual Studio 2019 相容。 如需詳細資訊，請參閱[移植、移轉和升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md)頁面。
 
 ::: moniker-end
 
@@ -58,17 +58,17 @@ Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具]  使用 [�
 
 | 語言 | 主題 |
 |--------------|-----------|
-| Visual Basic | [專案設計工具、應用程式頁面 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
-| Visual C# | [專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
+| Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
+| Visual C# | [專案設計工具，應用程式頁 (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [在 Visual Studio 中使用 Visual F# 進行開發](../ide/fsharp-visual-studio.md?view=vs-2017) |
-|C++ | [如何：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+|C++ | [作法：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>另請參閱
 
 * [安裝 Visual Studio](install-visual-studio.md?view=vs-2017)
-* [移植、移轉及升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
+* [移植、遷移及升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
 * [建置 C/C++ 隔離應用程式和並存組件](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end
@@ -77,17 +77,17 @@ Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具]  使用 [�
 
 | 語言 | 主題 |
 |--------------|-----------|
-| Visual Basic | [專案設計工具、應用程式頁面 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2019) |
-| Visual C# | [專案設計工具，應用程式頁面 (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2019) |
-| Visual F# | [在 Visual Studio 中使用 Visual F# 進行開發](../ide/fsharp-visual-studio.md?view=vs-2019) |
-| C++ | [如何：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+| Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
+| Visual C# | [專案設計工具，應用程式頁 (C#)](../ide/reference/application-page-project-designer-csharp.md) |
+| Visual F# | [在 Visual Studio 中使用 Visual F# 進行開發](../ide/fsharp-visual-studio.md) |
+| C++ | [作法：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>另請參閱
 
-* [安裝 Visual Studio](install-visual-studio.md?view=vs-2019)
-* [移植、移轉及升級 Visual Studio 專案](../porting/port-migrate-upgrade-visual-studio-projects-2019.md)
+* [安裝 Visual Studio](install-visual-studio.md)
+* [移植、遷移及升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 * [建置 C/C++ 隔離應用程式和並存組件](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end

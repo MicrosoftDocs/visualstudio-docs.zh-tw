@@ -19,17 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194505"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649260"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio 會裝載 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，用於載入及建置 Managed 專案。 由於 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 是負責處理專案，因此幾乎任何 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 格式的專案都可以成功地用在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，即使專案是用不同的工具撰寫，而且含有自訂的建置處理序，也不會有問題。  
   
  本主題將針對 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 裝載部分，說明在自訂您想要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中載入和建置的專案與 .targets 檔時所應考慮的幾個特定層面。 這些內容將可幫助您確定像是 IntelliSense 和偵錯等 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 功能在自訂專案中能夠正常運作。  
@@ -182,8 +181,8 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
  快速更新檢查並不適用 Visual Studio 中的定期組建，而且專案的建置方式就如同您在命令提示字元中叫用組建一般。  
   
-## <a name="see-also"></a>請參閱  
- [如何：擴充 Visual Studio 建置流程](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
+## <a name="see-also"></a>另請參閱  
+ [如何：擴充 Visual Studio 建置處理序](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [從 IDE 中啟動組建](../msbuild/starting-a-build-from-within-the-ide.md)   
  [登錄 .NET Framework 的延伸模組](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   

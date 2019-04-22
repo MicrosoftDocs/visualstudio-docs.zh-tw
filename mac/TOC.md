@@ -14,7 +14,6 @@
 # [自訂 IDE](customizing-the-ide.md)
 ## [擴充 Visual Studio for Mac](extending-visual-studio-mac.md)
 
-
 # [專案和方案](projects-and-solutions.md)
 ## [建立新專案](create-new-projects.md)
 ## [新增和移除專案項目](add-and-remove-project-items.md)

@@ -12,17 +12,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0fbdfb1af767bfc49d373fedd81598e29ef6918
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804623"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648217"
 ---
 # <a name="creating-forwarding-loggers"></a>建立轉送記錄器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 轉送記錄器可讓您選擇在多處理器系統上建置專案時想要監視的事件，以提高記錄的效率。 啟用轉送記錄器時，您可以防止不必要的事件塞滿中央記錄器，而導致建置時間變慢、記錄空間暴增等問題。  
   
  若要建立轉送記錄器，您可以實作 <xref:Microsoft.Build.Framework.IForwardingLogger> 介面，然後以手動方式實作它的方法，或使用 <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 類別和其預先設定的方法。 對大部分的應用程式來說，採用後者就足夠了。  
