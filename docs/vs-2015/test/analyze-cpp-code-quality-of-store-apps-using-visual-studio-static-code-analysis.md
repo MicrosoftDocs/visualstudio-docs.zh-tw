@@ -1,5 +1,5 @@
 ---
-title: C + + 靜態程式碼分析市集應用程式
+title: C++靜態程式碼分析市集應用程式
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9194da6803f04f3bf4cc56696d01a68a3e27d67d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 867c42d4afb35abcc1e37c86f85a01a7dd3fdf24
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873239"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659818"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 靜態程式碼分析，分析市集應用程式的 C++ 程式碼品質
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,8 +78,7 @@ ms.locfileid: "57873239"
 ##  <a name="Warnings"></a> C++ 程式碼分析警告
  程式碼分析引發下列 C++ 程式碼警告：
 
-
-|                                      規則                                      |                                                  說明                                                  |
+|                                      規則                                      |                                                  描述                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 |                       [C6001](../code-quality/c6001.md)                        |                                          使用尚未初始化的記憶體                                           |
 |                       [C6011](../code-quality/c6011.md)                        |                                          取值的指標為 NULL                                           |
@@ -133,7 +132,7 @@ ms.locfileid: "57873239"
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         無效的大小字串參數                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   無效的大小字串不可能執行到的位置                                    |
 | [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        無效的大小字串緩衝區類型                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              無效的註釋：'NeedsRelease' 屬性不能用於 void 類型的值               |
+|                       [C6527](../code-quality/c6527.md)                        |              無效的附註：'NeedsRelease' 屬性不能用於 void 類型的值               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       無法辨認的格式字串樣式                                        |
 |                       [C6540](../code-quality/c6540.md)                        | 在這個函式上使用屬性註釋會使其所有現有的 __declspec 註釋無效。  |
 |                       [C6551](../code-quality/c6551.md)                        |                              無效的大小規格: 無法剖析運算式                              |
@@ -204,7 +203,7 @@ ms.locfileid: "57873239"
 |                      [C28286](../code-quality/c28286.md)                       |                                    對於函式，結尾附近發生語法錯誤                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                函式的 \_At\_() 註釋中有語法錯誤 (無法辨認的參數名稱)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  函式的 \_At\_() 註釋中有語法錯誤 (無效的參數名稱)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                對於函式：ReadableTo 或 WritableTo 沒有有限的規格做為參數                |
+|                      [C28289](../code-quality/c28289.md)                       |                函式：ReadableTo 或 WritableTo 沒有規格做為參數                |
 |                      [C28290](../code-quality/c28290.md)                       |           函式的註釋包含比實際參數數目還多的外部            |
 |                      [C28291](../code-quality/c28291.md)                       |                        位於 deref 層級 0 的 post null/notnull 對函式是無意義的。                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            運算子的運算式運算元類型不相容                             |

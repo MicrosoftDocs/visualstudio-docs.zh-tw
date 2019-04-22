@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f2d4fda2fe7981863d65b17fc6dba53355dbeb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 30f51715cd26c9d61e355115db6f4ca4b9831ef0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702274"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660784"
 ---
 # <a name="core-interfaces"></a>核心介面
 下列介面會擴充偵錯工具所使用的核心介面[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]。
@@ -138,7 +138,6 @@ ms.locfileid: "56702274"
 ##  <a name="Events"></a> 事件
  這些介面代表 DE 與工作階段的偵錯管理員 (SDM) 之間傳送的所有事件。
 
-
 | 介面 | 藉由將 | 描述 |
 | - |----------------| - |
 | [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) | DE | DE 傳送以要求開啟的文件。 |
@@ -211,7 +210,6 @@ ms.locfileid: "56702274"
 
 ##  <a name="Ports"></a> 連接埠
  這些介面代表連接埠和連接埠提供者。
-
 
 | 介面 | 藉由將 | 描述 |
 | - |----------------| - |

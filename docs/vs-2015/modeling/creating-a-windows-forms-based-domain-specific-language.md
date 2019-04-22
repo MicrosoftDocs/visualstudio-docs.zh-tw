@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1faa3b8a7b57ddae646b55a8a17226894a5ed5d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2caee9a39df18bfed0dc48a9c0266721500ddeca
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942562"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654937"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>建立 Windows Form 架構之網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,12 +33,10 @@ DSL 執行個體，顯示 Windows Form 使用者介面和 [模型總管] 中。
 
     在本逐步解說中，會假設下列名稱：  
 
-
    |                       |                 |
    |-----------------------|-----------------|
    | 方案和 DSL 的名稱 |     FarmApp     |
    |       命名空間       | Company.FarmApp |
-
 
 2. 第一個範本提供的範例實驗：  
 

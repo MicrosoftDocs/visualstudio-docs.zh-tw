@@ -19,23 +19,22 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 16a522044188db854b89f87ccba0ef3393ab70fc
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e6d527b00e8cbfe6a6f4ad5d112a23e46d4edb8e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803932"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656956"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 擷取 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] 的路徑。  
   
 ## <a name="task-parameters"></a>工作參數  
  下表說明 `GetFrameworkSdkPath` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`FrameworkSdkVersion20Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 2.0 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|  
 |`FrameworkSdkVersion35Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 3.5 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|  

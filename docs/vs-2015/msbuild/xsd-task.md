@@ -21,17 +21,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2c8e38959e9835ee26f283c59128749239178307
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3608b5d99e8566701f6090e37b659b7a7c8df86e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778720"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655331"
 ---
 # <a name="xsd-task"></a>XSD 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包裝 XML 結構描述定義工具 (xsd.exe)，其會從來源產生結構描述或類別檔案。  
   
 ## <a name="parameters"></a>參數  

@@ -23,16 +23,15 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00435dab8c8f5e6379979a4eb1ada36033dc01e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 866b2b824735ed96615880350343d17adfeecefc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943764"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653992"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>將 Windows Forms 控制項繫結至 Visual Studio 中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 您可以藉由將資料繫結至 Windows Forms 應用程式的使用者顯示資料。 若要建立這些資料繫結控制項，您可以將項目從**Zdroje dat**視窗拖曳至 Visual Studio 中的 Windows Form 設計工具。 本主題說明一些最常見的工作、 工具和建立資料繫結 Windows Forms 應用程式所需的類別。
 

@@ -13,17 +13,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5842f0f931eecd822dcaeba5eb6b3e33bd826c9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ae57c63b9ec97d72d7da7b7ed7de54028c3e32e3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758837"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658826"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>如何：以連結方式顯示編輯器中的 URL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 您可以選擇用程式碼編輯器，將您的程式碼中的統一資源定位器 (URL) 視為使用中的連結。 當您使用這項功能時，URL：  
   
 -   加底線顯示。  

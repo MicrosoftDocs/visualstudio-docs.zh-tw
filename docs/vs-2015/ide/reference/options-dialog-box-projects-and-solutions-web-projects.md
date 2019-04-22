@@ -11,17 +11,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91e2992a5c1a79f838e035b5993bf21dbfeca1bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f59a6007ca272c2bd0df0278605ff5d01807ce91
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797104"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660135"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>選項對話方塊、專案和方案、Web 專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 設定 Web 專案將用來在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 內進行開發的 Web 伺服器。 若要存取此對話方塊，請按一下 [工具選項]。 展開 [專案和方案]，然後按一下 [Web 專案]。  
   
  根據預設，當您在 Visual Studio 中執行 Web 專案時 (例如，使用 F5 或 Ctrl+F5)，Visual Studio 會使用 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [Visual Studio 中 ASP.NET Web 專案的 Web 伺服器](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328)。  

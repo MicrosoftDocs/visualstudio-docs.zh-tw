@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 630505b317d5d8671a8214701cd2af13bfa40482
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7855a5dc8c6524dd28a730a81df1c291e04ec466
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944805"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653602"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>HOW TO：搭配使用 XML 結構描述設計工具和 XML 常值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本主題描述如何在 Visual Basic 專案中檢視與 XML 常值相關的結構描述。  
   
 ### <a name="to-create-a-new-visual-basic-console-application-project"></a>建立新的 Visual Basic 主控台應用程式專案  

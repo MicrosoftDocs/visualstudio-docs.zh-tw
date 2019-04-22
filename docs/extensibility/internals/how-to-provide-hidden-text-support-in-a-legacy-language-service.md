@@ -12,16 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df34e65eda5dd871dc62132059dce0ac75e4030f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: b7dc3d84ab543c7e3fc49060d20a33738bf5a8db
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612425"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661460"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>HOW TO：可在舊版語言服務中的隱藏的文字
 您可以建立大綱區域除了隱藏的文字區域。 用戶端控制或編輯器控制，可以是隱藏的文字區域，並用來完全隱藏的文字區域。 編輯器會顯示為水平線的隱藏的區域。 舉例來說，這**僅限指令碼**HTML 編輯器中的檢視。
-
 
 ## <a name="to-implement-a-hidden-text-region"></a>若要實作的隱藏的文字區域
 

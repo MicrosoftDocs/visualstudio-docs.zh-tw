@@ -19,17 +19,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 243170acd838b96efac6521a548596a021893e41
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ba83cf7db6415eefcb989f678bc4149d495016e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943974"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658340"
 ---
 # <a name="save-data-by-using-a-transaction"></a>使用異動儲存資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 將資料儲存在交易中的使用<xref:System.Transactions>命名空間。 使用<xref:System.Transactions.TransactionScope>參與的交易，會自動為您管理的物件。  
   
  因此您必須以手動方式將參考加入專案，使用交易，則專案不會建立使用 System.Transactions 組件的參考。  

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 8187fbfce9492623df5d998acd0bb4279b7ce0d2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415692"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657463"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 設計階段 T4 文字範本可讓您在 Visual Studio 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓他們變更其根據從資料產生的程式碼*模型*。 模型是檔案或資料庫，其中包含您的應用程式需求的重要資訊。
@@ -61,7 +61,7 @@ ms.locfileid: "58415692"
 
 5. 儲存檔案。
 
-    您可能會看到**安全性警告**會要求您確認您想要執行範本的訊息方塊。 按一下 [確定 **Deploying Office Solutions**]。
+    您可能會看到**安全性警告**會要求您確認您想要執行範本的訊息方塊。 按一下 [確定] 。
 
 6. 在 **方案總管**，展開範本檔節點，然後您會發現副檔名的檔案 **.txt**。 此檔案包含從範本產生的文字。
 
@@ -341,12 +341,10 @@ Warning("A warning message");
 
 4. 請確認下列屬性的 **.tt**檔案：
 
-
    | | |
    |-|-|
    | **自訂工具 =** | **TextTemplatingFileGenerator** |
    | **建置動作 =** | **無** |
-
 
 5. 在檔案開頭，插入下列各行：
 

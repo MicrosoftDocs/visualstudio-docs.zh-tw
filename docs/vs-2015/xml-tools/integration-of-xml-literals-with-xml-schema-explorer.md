@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 52d0fe19390703f3c5262de1dbcc9a52ff108fe7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b81351deb31ffa9c66838ba39eebd6d2a138003e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943333"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654421"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>整合 XML 常值與 XML 結構描述總管
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Basic 支援 XML 常值，這表示您可以直接在 Visual Basic 程式碼將 XML 片段。 如需詳細資訊，請參閱 < [XML 常值概觀](http://go.microsoft.com/fwlink/?LinkId=140325)。  
   
  如果 Visual Basic 專案中的 XSD 檔包含 XML 常值，您就可以在 XML 結構描述總管中檢視 XML 結構描述集。 若要檢視與 XML 常值相關聯的結構描述集，以滑鼠右鍵按一下 XML 常值或 XML 命名空間匯入中的 XML 節點，然後選取**在結構描述總管中顯示**。  

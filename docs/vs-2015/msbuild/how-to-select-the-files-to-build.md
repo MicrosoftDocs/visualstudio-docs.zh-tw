@@ -1,5 +1,5 @@
 ---
-title: 如何：選取要建置的檔案 | Microsoft Docs
+title: HOW TO：選取要建置的檔案 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dad0c732a8f342e5c584202f810e1f53defb61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798900"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659809"
 ---
-# <a name="how-to-select-the-files-to-build"></a>如何：選取要建置的檔案
+# <a name="how-to-select-the-files-to-build"></a>HOW TO：選取要建置的檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 建置包含數個檔案的專案時，您可以在專案檔中分別列出每個檔案，或是您可以使用萬用字元來包含一個目錄或巢狀目錄集合中的所有檔案。  
   
 ## <a name="specifying-inputs"></a>指定輸入  
@@ -173,6 +172,6 @@ ms.locfileid: "54798900"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)   
  [項目](../msbuild/msbuild-items.md)

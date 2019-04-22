@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a84b24dff387e0a93058c07e9f6d7b6cfe503d49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: b255f521d45d1e827a3bfb9bc9bc5129f090bcaa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935585"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655708"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連線至產生的指示詞處理器
 
@@ -40,7 +40,6 @@ ms.locfileid: "55935585"
 ## <a name="prerequisites"></a>必要條件
 
 若要定義 DSL，您必須已安裝下列元件：
-
 
 | | |
 |-|-|
@@ -66,7 +65,7 @@ ms.locfileid: "55935585"
 
    -   公司名稱：Fabrikam
 
-   如需建立特定領域語言解決方案的詳細資訊，請參閱[How to:建立特定領域語言解決方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+   如需建立特定領域語言解決方案的詳細資訊，請參閱[How to:建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
 2. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 
@@ -363,4 +362,4 @@ ms.locfileid: "55935585"
 
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+- [逐步解說：建立自訂文字範本主應用程式](../modeling/walkthrough-creating-a-custom-text-template-host.md)

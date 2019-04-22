@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b834ce2b76d9c73fc5247da3402003b766dd9d87
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 85c3e70fd1d88bfa82d1aa55fe27505414986415
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597793"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654083"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 如果您在 Windows Server 上使用 Internet Information Services (IIS)，而且您的部署包含 Windows 無法辨識的檔案類型，例如 Microsoft Word 檔案，IIS 將會拒絕傳送該檔案中，與您的部署將不會成功。
@@ -94,23 +94,22 @@ ms.locfileid: "56597793"
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>不支援如安裝應用程式的 FTP 通訊協定
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從任何 HTTP 1.1 Web 伺服器或檔案伺服器安裝應用程式的支援。 FTP 檔案傳輸通訊協定不支援如安裝應用程式。 您可以使用 FTP 發行應用程式。 下表摘要說明這些差異：
 
-
-| URL 類型 | 說明 |
+| URL 類型 | 描述 |
 |----------| - |
 | ftp:// | 您可以發佈[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式使用此通訊協定。 |
 | http:// | 您可以安裝[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式使用此通訊協定。 |
 | https:// | 您可以安裝[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式使用此通訊協定。 |
 | file:// | 您可以安裝[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式使用此通訊協定。 |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Windows 防火牆
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2：Windows 防火牆
  根據預設，Windows XP SP2 會啟用 Windows 防火牆。 如果您正在開發您的應用程式已安裝的 Windows XP 的電腦上，您就仍然能夠發行和執行[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]從本機伺服器執行 IIS 的應用程式。 不過，您無法存取該伺服器是從另一部電腦執行 IIS，除非您開啟 Windows 防火牆。 如需管理 Windows 防火牆的指示，請參閱 Windows 說明。
 
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server： 啟用 FrontPage server extensions
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server：啟用 FrontPage server extensions
  應用程式發佈到使用 HTTP 的 Windows Web 伺服器需要 Microsoft 的 FrontPage Server Extensions。
 
  根據預設，Windows Server 並沒有安裝的 FrontPage Server Extensions。 如果您想要使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]来發行至 Windows Server 網頁伺服器會使用 FrontPage Server Extensions 中的 HTTP，您必須先安裝 FrontPage Server Extensions。 您可以使用 Windows Server 中的 管理您的伺服器管理工具來執行安裝。
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server： 鎖定的內容類型
+## <a name="windows-server-locked-down-content-types"></a>Windows Server：鎖定的內容類型
  上的 IIS[!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)]鎖定特定已知的內容類型以外的所有檔案類型 (例如 *.htm*， *.html*， *.txt*等等)。 若要啟用的部署[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用此伺服器應用程式，您需要變更 IIS 設定，以允許下載類型的檔案 *.application*， *.manifest*，以及任何其他自訂的檔案類型使用您的應用程式。
 
  如果您使用 IIS 伺服器部署，執行*inetmgr.exe*並加入新的檔案類型，預設 Web 網頁：

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e119a632210a8677f50a6c0d0bd2306b7c810f08
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 5bee805581f23e4654a8fce318a39b4ff3da4184
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868297"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660706"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -63,7 +63,7 @@ Visual Studio 品牌封裝支援的控制項：
 
 -   javascript
 
--   csharp 或 C#
+-   csharp 或 c#
 
 -   cplusplus 或 visual c + + 或 c + +
 
@@ -352,14 +352,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 
 ::: moniker-end
 
-值:在零售資料的顯示偵錯輸出：[是]
+值:在零售資料的顯示偵錯輸出：是
 
 在 IDE 中，[說明] 功能表項目之下，選取**偵錯協助內容**。
 
 **內容的中繼資料**
 
 在下表中，括號之間出現的任何字串會是一個預留位置，必須可辨識的值來取代。 例如，在\<中繼 name="Microsoft.Help.Locale"內容 ="在 [語言]"/ >，"[語言程式碼]"必須取代的值，例如 「 en-us-我們"。
-
 
 | 屬性 （HTML 表示） | 描述 |
 | - | - |

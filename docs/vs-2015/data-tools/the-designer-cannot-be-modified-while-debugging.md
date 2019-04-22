@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09df214f5537ac81c7fb9802a34b48ee01ceb75b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: eb021b5222c0c89d15ca9be9c9c155152118df5f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944664"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658769"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>偵錯期間無法修改設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 如果應用程式是以偵錯模式執行，則嘗試修改 O/R Designer 上的項目時，就會出現這則訊息。 如果應用程式是以偵錯模式執行，則 O/R Designer 會是唯讀的。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  

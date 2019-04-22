@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9696d41b228cedb301239ebcd59cb68bc7e437f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: df23a6e2a4288c6370a339d37d151283fe3afa8f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939237"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655552"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>一個或多個選取的資料庫物件傳回與目標類別之結構描述不符的結構描述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 一個或多個選取的資料庫物件傳回的結構描述與目標資料類別的結構描述不相符。 未加入任何項目到此設計工具。  
   
  將資料庫物件拖曳至現有實體類別 (Class) 時，資料庫物件傳回的資料必須符合目標實體類別的結構描述。 請確認選取的是正確的資料庫物件，而且設定的目標是正確的實體類別。  

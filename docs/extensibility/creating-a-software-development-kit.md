@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MT
+ms.openlocfilehash: ddc6849aa5c0dec07fc7dbdd08a950809624015d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324064"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661216"
 ---
 # <a name="create-a-software-development-kit"></a>建立軟體開發套件
 軟體開發套件 (SDK) 是一系列 Api，您可以參考 Visual Studio 中的單一項目。 **參考管理員**對話方塊會列出所有與專案相關的 Sdk。 當您將 SDK 加入專案時，就有一個 Api 可在 Visual Studio 中。
@@ -49,7 +49,6 @@ ms.locfileid: "58324064"
                   \[config]
                         \[arch]
 ```
-
 
 | 節點 | 描述 |
 |------------------------| - |
@@ -168,7 +167,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 5. MinVSVersion:最小的 Visual Studio 版本。
 
-6. MaxPlatformVerson:最大的目標平台版本應該用於指定擴充功能 SDK 將無法運作所在的平台版本。 比方說，Microsoft Visual c + + Runtime Package v11.0 應只由 Windows 8 專案參考。 因此，Windows 8 專案的 MaxPlatformVersion 為 8.0。 也就是說，針對 Windows 8.1 專案，參考管理員會篩選掉 Microsoft Visual c + + Runtime Package，MSBuild 就會擲回錯誤時[!INCLUDE[win81](../debugger/includes/win81_md.md)]專案會參考它。 注意： 這個項目從開始支援[!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]。
+6. MaxPlatformVerson:最大的目標平台版本應該用於指定擴充功能 SDK 將無法運作所在的平台版本。 例如，Microsoft 視覺效果C++執行階段套件 v11.0 應只由 Windows 8 專案參考。 因此，Windows 8 專案的 MaxPlatformVersion 為 8.0。 這表示參考管理員篩選出 Microsoft VisualC++執行階段套件，針對 Windows 8.1 專案，因此 MSBuild 會擲回錯誤時[!INCLUDE[win81](../debugger/includes/win81_md.md)]專案會參考它。 注意： 這個項目從開始支援[!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]。
 
 7. AppliesTo:指定藉由指定適用的 Visual Studio 專案類型會在參考管理員 中可用的 Sdk。 辨識九個值：WindowsAppContainer、 VisualC、 VB、 CSharp、 WindowsXAML、 管理、 JavaScript 和原生。 SDK 撰寫者可以使用和 ("+')，或 (「&#124;")，而非 ("！")若要指定完全適用於 SDK 的專案類型的範圍運算子。
 
@@ -264,6 +263,6 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     ```
 
 ## <a name="see-also"></a>另請參閱
-- [逐步解說：建立使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
+- [逐步解說：使用 SDK 建立C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [逐步解說：使用 SDK 建立C#或 Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)
 - [管理專案中的參考](../ide/managing-references-in-a-project.md)

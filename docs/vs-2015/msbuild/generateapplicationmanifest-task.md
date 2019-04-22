@@ -20,17 +20,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 570f4d7ec459a961f2608557ce692029128ce4b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: cf3c68d7f70822bbe7b085b92e64bda0b9437dfc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756580"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660979"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 產生 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式資訊清單或原生資訊清單。 原生資訊清單在描述元件時，會定義元件的唯一身分識別，並識別組成元件的所有組件和檔案。 透過指出應用程式的進入點並指定應用程式的安全性層級之後，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式資訊清單就可以擴充原生資訊清單。  
   
 ## <a name="parameters"></a>參數  
@@ -45,10 +44,10 @@ ms.locfileid: "54756580"
 |`Dependencies`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定項目清單，這份清單會為所產生的資訊清單定義一組相依組件。 每個項目都可以利用項目中繼資料進一步描述，以指出其他部署狀態和相依性的類型。 如需詳細資訊，請參閱以下的＜項目中繼資料＞一節。|  
 |`Description`|選擇性的 `String` 參數。<br /><br /> 指定應用程式或元件的描述。|  
 |`EntryPoint`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定單一項目，以指出所產生資訊清單組件的進入點。<br /><br /> 對於 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式資訊清單，這個參數會指定應用程式執行時啟動的組件。|  
-|`ErrorReportUrl`|選擇性的 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 參數。<br /><br /> 指定在 ClickOnce 安裝錯誤報告期間顯示在對話方塊中的網頁 URL。|  
+|`ErrorReportUrl`|選擇性 [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 參數。<br /><br /> 指定在 ClickOnce 安裝錯誤報告期間顯示在對話方塊中的網頁 URL。|  
 |`FileAssociations`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定與 ClickOnce 部署資訊清單建立關聯之一或多個檔案類型的清單。<br /><br /> 檔案關聯只有在 .NET Framework 3.5 或更新版本設為目標時才有效。|  
 |`Files`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要包含在資訊清單中的檔案。 指定每個檔案的完整路徑。|  
-|`HostInBrowser`|選擇性 [布林值](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 參數。<br /><br /> 如果為 `true`，表示應用程式是裝載於瀏覽器中 (與 WPF 網頁瀏覽器應用程式相同)。|  
+|`HostInBrowser`|選擇性的 [布林] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 參數。<br /><br /> 如果為 `true`，表示應用程式是裝載於瀏覽器中 (與 WPF 網頁瀏覽器應用程式相同)。|  
 |`IconFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 表示應用程式圖示檔。 應用程式圖示會在產生的應用程式資訊清單中顯示，並在 [開始] 功能表和 [新增/移除程式] 對話方塊中使用。 如果未指定這項輸入，便會使用預設圖示。 如果工作要產生原生資訊清單，則會忽略此參數。|  
 |`InputManifest`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指出要作為資訊清單產生器基底的輸入 XML 文件。 這可讓結構化資料 (例如應用程式安全性或自訂資訊清單定義) 能夠反映在輸出資訊清單中。 XML 文件中的根元素必須是 asmv1 命名空間中的組件節點。|  
 |`IsolatedComReferences`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要在所產生資訊清單中隔離的 COM 元件。 這個參數支援可在「免註冊的 COM」部署中隔離 COM 元件的功能。 其運作方式是利用標準的 COM 註冊定義來自動產生資訊清單。 不過，必須在建置電腦上註冊 COM 元件，才能讓這項功能正常運作。|  
@@ -61,12 +60,12 @@ ms.locfileid: "54756580"
 |`Publisher`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的發行者。 如果未指定此參數，會從已註冊使用者或產生的資訊清單識別來推斷名稱。 此名稱可用來做為 [開始] 功能表上的資料夾名稱，而且是出現在 [新增或移除程式] 對話方塊中名稱的一部分。|  
 |`RequiresMinimumFramework35SP1`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 true，則應用程式需要 .NET Framework 3.5 SP1 或更新版本。|  
 |`TargetCulture`|選擇性的 `String` 參數。<br /><br /> 識別應用程式的文化特性，並為產生的資訊清單指定組件身分識別的 `Language` 欄位。 如果未指定此參數，則會假設應用程式不因文化特性而異。|  
-|`TargetFrameworkMoniker`|選擇性的 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定目標 Framework Moniker。|  
-|`TargetFrameworkProfile`|選擇性的 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定目標 Framework 設定檔。|  
-|`TargetFrameworkSubset`|選擇性的 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定要設為目標之 .NET Framework 子集的名稱。|  
-|`TargetFrameworkVersion`|選擇性的 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定專案的目標 .NET Framework。|  
+|`TargetFrameworkMoniker`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定目標 Framework Moniker。|  
+|`TargetFrameworkProfile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定目標 Framework 設定檔。|  
+|`TargetFrameworkSubset`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定要設為目標之 .NET Framework 子集的名稱。|  
+|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定專案的目標 .NET Framework。|  
 |`TrustInfoFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 表示指定應用程式安全性的 XML 文件。 XML 文件中的根項目必須是 asmv2 命名空間中的 trustInfo 節點。 如果工作要產生原生資訊清單，則會忽略此參數。|  
-|`UseApplicationTrust`|選擇性的 <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 如果為 true，則 `Product`、`Publisher` 和 `SupportUrl` 屬性都會寫入應用程式資訊清單。|  
+|`UseApplicationTrust`|Optional <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 如果為 true，則 `Product`、`Publisher` 和 `SupportUrl` 屬性都會寫入應用程式資訊清單。|  
   
 ## <a name="remarks"></a>備註  
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.GenerateManifestBase> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需工作類別的參數清單，請參閱[工作基底類別](../msbuild/task-base-class.md)。  
@@ -353,7 +352,7 @@ ms.locfileid: "54756580"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)   
  [SignFile 工作](../msbuild/signfile-task.md)   

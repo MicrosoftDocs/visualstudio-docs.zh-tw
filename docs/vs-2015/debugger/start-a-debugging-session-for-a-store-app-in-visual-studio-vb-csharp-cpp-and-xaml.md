@@ -1,5 +1,5 @@
 ---
-title: 啟動的市集應用程式的偵錯工作階段 (VB、 C#，c + + 和 XAML) |Microsoft Docs
+title: 啟動的市集應用程式的偵錯工作階段 (VB、 C#，C++和 XAML) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 129b94087b19ebed9f95ec29dd093f3c18e42e87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1f5dced1acba79b0559db49f079e04f605263e0f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939816"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653472"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>在 Visual Studio 中，為市集應用程式啟動偵錯工作階段 (VB、C#、C++ 和 XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -147,7 +147,7 @@ ms.locfileid: "58939816"
 
   - 針對 C# 與 Visual Basic 應用程式，請選擇 [ **尋找**]。
 
-  - 針對 c + + 應用程式中，選擇中的向下箭號**電腦名稱**方塊，然後選擇**\<尋找...>**。
+  - 針對C++應用程式，選擇中的向下箭號**電腦名稱**方塊，然後選擇  **\<尋找...>**。
 
     ![選取遠端偵錯工具連接 對話方塊](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
@@ -256,13 +256,11 @@ ms.locfileid: "58939816"
 
 2. 從清單中選擇下列其中一個選項：
 
-
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **本機電腦**  |                                                                                                                在本機電腦上對目前工作階段中的應用程式進行偵錯。 請參閱[本機電腦上的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-the-local-machine.md)。                                                                                                                 |
    |   **模擬器**    | 在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式的 Visual Studio 模擬器中進行應用程式偵錯。 模擬器是可讓您對本機電腦上無法使用的裝置功能 (例如觸控筆勢與裝置旋轉) 進行偵錯的桌面視窗。 請參閱[在模擬器中的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。 |
    | **遠端電腦** |                          在透過內部網路連接到本機電腦的裝置上，或使用乙太網路纜線直接連接的裝置上，對應用程式進行偵錯。 若要遠端偵錯，必須在遠端裝置上安裝並執行 Visual Studio 遠端工具。 請參閱[在遠端電腦上的執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。                           |
-
 
 3. 從 [ **已安裝的應用程式套件** ] 清單中選擇應用程式。
 

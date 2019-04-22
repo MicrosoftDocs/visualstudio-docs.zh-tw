@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e3c4aabd973a755f2289abfa809df556680070
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: cd4bf8b1b6f43e8ed12b133a621e21157fb87118
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944529"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657385"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>在特定領域語言定義中新增追蹤屬性
 
@@ -45,7 +45,6 @@ A*追蹤網域*屬性是的屬性，使用者就可以進行更新，但具有�
 ## <a name="prerequisites"></a>必要條件
 
 您可以開始本逐步解說之前，您必須先安裝這些元件：
-
 
 | | |
 |-|-|
@@ -760,4 +759,4 @@ HelperClasses.cs 檔案中，新增`TrackingHelper`和`CriticalException`類別�
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
 - [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)
-- [如何：建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)
+- [如何：建立特定領域語言解決方案](../modeling/how-to-create-a-domain-specific-language-solution.md)

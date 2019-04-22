@@ -9,17 +9,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc172e9ed91a354918fd536060f97fcbb259a94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: afc99ba7d5b7a6b5cf9fc0e610160213dec5d2e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940431"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654499"
 ---
 # <a name="install-sql-server-sample-databases"></a>安裝 SQL Server 範例資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 範例資料庫適合用來試驗 SQL 和 LINQ 查詢、 資料繫結、 Entity Framework 模型等等。  每個資料庫產品都有它自己的範例資料庫。 Northwind 和 AdventureWorks 是兩個熱門的 SQL Server 範例資料庫。  
   
  **AdventureWorks**是目前的 SQL Server 產品而提供的範例資料庫。 您可以將它下載為.mdf 檔案從[Codeplex 上的 AdventureWorks 頁面](http://msftdbprodsamples.codeplex.com/)。 有可用的資料庫的一般和輕量級 (LT) 版本這裡。 大部分的情況下，建議 l 版本，因為它是較不複雜。  

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada8a5b08d1a5ca7caed142c1bba9de103a3f954
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 9e952cda19664a9d73ebe6b77daba3ecfd78777c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951510"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658705"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>建立 Windows Form 架構之網域指定的語言
 您可以使用 Windows Form 顯示定義域專屬語言 (DSL) 模型，而不是使用 DSL 圖表的狀態。 本主題會引導您完成繫結至 DSL 中，使用 Visual Studio Visualization and Modeling SDK 的 Windows Form。
@@ -28,12 +28,10 @@ ms.locfileid: "55951510"
 
     在本逐步解說中，會假設下列名稱：
 
-
    | | |
    |-|-|
    | 方案和 DSL 的名稱 | FarmApp |
    | 命名空間 | Company.FarmApp |
-
 
 2. 第一個範本提供的範例實驗：
 

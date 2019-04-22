@@ -14,17 +14,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a87c88aba4b0a622dd66440fca33ab99fd028d51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c2c5fba8914ba3b5404412c0cbc55af36fe15c21
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942055"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661034"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>逐步解說：在 Windows Forms 中建立簡單的 WCF 服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本逐步解說示範如何建立簡單的 [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 服務、予以測試，然後從 Windows Forms 應用程式加以存取。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  

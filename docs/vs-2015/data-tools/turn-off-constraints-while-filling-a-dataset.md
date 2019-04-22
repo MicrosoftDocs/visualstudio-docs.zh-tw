@@ -23,17 +23,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f39d506585398a766ba8b74bb974ec6fef7ca3a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 315e97b83e2b221258bfacebf0e6bc5f3ef92919
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940211"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659640"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>填入資料集時關閉條件約束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 如果資料集包含條件約束 （例如外部索引鍵條件約束），theycan 就會引發對資料集執行的作業順序與相關的錯誤。 比方說，載入之前 loadingrelated 父資料錄的子記錄可以違反條件約束和導致錯誤。 當您載入子記錄時，條件約束檢查有相關的父記錄，因而引發錯誤。  
   
  如果沒有任何機制來允許暫時性條件約束的暫止，每次您嘗試載入的子資料表中的記錄，就會引發錯誤。 若要暫停資料集內的所有條件約束的另一個方法是使用<xref:System.Data.DataRow.BeginEdit%2A>，和<xref:System.Data.DataRow.EndEdit%2A>屬性。  

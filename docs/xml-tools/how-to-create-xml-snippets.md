@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd29a8d31d425529db377c812611f1efddc60f11
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 43305d7b9353bd34e98a3dcfd31205cb9159a2f3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526616"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659913"
 ---
-# <a name="how-to-create-xml-snippets"></a>HOW TO：建立 XML 片段
+# <a name="how-to-create-xml-snippets"></a>HOW TO：建立 XML 程式碼片段
 
 XML 編輯器可用來建立新的 XML 片段。 該編輯器包括名為 Snippet 的 XML 片段，其為建立新 XML 片段的重複使用片段。
 
@@ -64,7 +64,6 @@ XML 編輯器可用來建立新的 XML 片段。 該編輯器包括名為 Snippe
 
 > [!NOTE]
 > XML 片段文字必須包含在 `<![CDATA[...]]>` 區段中。
-
 
  以下是重複使用片段建立的 `Code` 項目。
 

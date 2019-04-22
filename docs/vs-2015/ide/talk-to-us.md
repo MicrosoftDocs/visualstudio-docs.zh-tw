@@ -11,19 +11,17 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02320e4e47f98212d49d81e302510bce4573e685
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: b91eeff74df839836a380db3d2005c7823494581
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354852"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657601"
 ---
 # <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新文件，請參閱 <<c0> [ 告訴我們](https://docs.microsoft.com/visualstudio/ide/talk-to-us)docs.microsoft.com 上。  
-
-  
+如需 Visual Studio 的最新文件，請參閱 <<c0> [ 告訴我們](https://docs.microsoft.com/visualstudio/ide/talk-to-us)。  
 
 我們想要知道您對於我們改善說明文件的看法。 我們無法一一回應，但我們會確保您的意見傳達至適當的人員。  
   
@@ -55,5 +53,5 @@ ms.locfileid: "58354852"
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>我想要參與開發人員社群  
  如果您想要與其他開發人員分享您的問題和解答，可以使用 [MSDN 論壇](http://social.msdn.microsoft.com/Forums/home) 網站或 [StackOverflow](http://stackoverflow.com/)。 您可以在 [開發人員程式碼範例](http://code.msdn.microsoft.com/) 和 [CodePlex](http://www.codeplex.com/) 網站上檢視其他開發人員的程式碼和共用您的範例。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何回報 Visual Studio 2015 的問題](../ide/how-to-report-a-problem-with-visual-studio-2015.md)

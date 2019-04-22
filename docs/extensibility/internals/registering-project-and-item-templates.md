@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec6f2a8b25438d7909f47087b8f6a80e595e7cba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd61d4bf97ce25d291268856a3e85729c98c1312
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630518"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658393"
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
 專案類型都必須註冊其專案和專案項目範本的所在位置的目錄。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用您的專案類型相關聯的註冊資訊來判斷要顯示在**加入新的專案**並**加入新項目**對話方塊。
@@ -41,7 +41,7 @@ ms.locfileid: "56630518"
 |----------|----------|-----------------|
 |@|REG_SZ|這種專案的預設名稱。|
 |DisplayName|REG_SZ|要從附屬 DLL 擷取的資源識別碼名稱的註冊套件。|
-|封裝|REG_SZ|註冊套件的套件的類別識別碼。|
+|套件|REG_SZ|註冊套件的套件的類別識別碼。|
 |ProjectTemplatesDir|REG_SZ|預設的專案範本檔案的路徑。 專案範本檔案會顯示**新的專案**範本。|
 
 ### <a name="registering-item-templates"></a>註冊項目範本
@@ -54,7 +54,6 @@ ms.locfileid: "56630518"
 "TemplatesLocalizedSubDir"="#10"
 "SortPriority"=dword:00000064
 ```
-
 
 | 名稱 | 類型 | 描述 |
 |--------------------------|-----------| - |

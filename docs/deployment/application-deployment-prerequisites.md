@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dfc0bccd0b5b8ae55f5e4df6aec1a85254e2220
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 12a46c424e8b2c44e0622edf4b4a615273580814
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600484"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657588"
 ---
 # <a name="application-deployment-prerequisites"></a>應用程式部署必要條件
 
@@ -45,7 +45,7 @@ ms.locfileid: "56600484"
 
 - 必須預先安裝在全域組件快取 (GAC) 中，組件資訊清單中的組件相依性宣告所指定的所有組件的最小版本。
 
-  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以偵測遺漏的必要條件，然後您可以使用啟動載入器，以便安裝必要條件。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。
+  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以偵測遺漏的必要條件，然後您可以使用啟動載入器，以便安裝必要條件。 如需詳細資訊，請參閱[如何：隨著 ClickOnce 應用程式安裝必要軟體](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。
 
 > [!NOTE]
 >  若要變更 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 *MageUI.exe* 等工具所產生資訊清單中的值，您必須在文字編輯器中編輯應用程式資訊清單，然後重新簽署應用程式資訊清單和部署資訊清單。 如需詳細資訊，請參閱[如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
@@ -71,8 +71,7 @@ ms.locfileid: "56600484"
 
  如果您變更任何啟動載入器的選項，您就必須變更不帶正負號的啟動載入器，然後稍後再簽署啟動載入器檔案。
 
-
-| 命令列引數 | 說明 |
+| 命令列引數 | 描述 |
 | - | - |
 | **-?, -h, -help** | 顯示 [說明] 對話方塊。 |
 | **-url, -componentsurl** | 顯示此安裝程式的儲存 URL 和元件 URL。 |

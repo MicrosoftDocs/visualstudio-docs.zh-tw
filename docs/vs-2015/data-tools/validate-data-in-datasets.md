@@ -24,17 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1740e9d7668101911862c91457a2c81c48f7b72d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 73eb1162411800a951566c9eb14928875966cfb7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944312"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661317"
 ---
 # <a name="validate-data-in-datasets"></a>驗證資料集中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 驗證資料是資料物件中所輸入的值符合的條件約束的資料集結構描述中的確認程序。 驗證程序也會確認這些值會遵循您的應用程式所建立的規則。 它是個不錯的做法，驗證資料，再將更新傳送至基礎資料庫。 這會減少錯誤，以及可能的應用程式與資料庫之間的往返次數。  
   
  您可以確認正在寫入至資料集的資料有效，藉由建置至本身的資料集的驗證檢查。 資料集可以檢查資料，不論如何執行更新時，直接由控制項在表單中，在一個元件，或以其他方式。 資料集是您的應用程式 （不同於後端資料庫） 的一部分，因為它是建置應用程式特定驗證的合理位置。  

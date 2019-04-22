@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc35def483b80610b9480dfd57320712d75fe0eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b78e70ae790a39cb761eca34dcdc2b9b32b5bbfd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941778"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653628"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>使用指令碼中建立 SQL database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在本逐步解說中，您可以使用 Visual Studio 建立一個小型資料庫，其中包含的範例程式碼[使用 ADO.NET 建立簡單資料應用程式](../data-tools/create-a-simple-data-application-by-using-adonet.md)。  
   
  **本主題內容**  

@@ -17,23 +17,22 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5011d1b9e83b379be8eb4b23ec6a7aac649ef9a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d1fdbc29cfe2fb7d387c6f261953930d2f528150
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774552"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654564"
 ---
 # <a name="findinlist-task"></a>FindInList 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在指定的清單中，尋找擁有相符 itemspec 的項目。  
   
 ## <a name="parameters"></a>參數  
  下表說明 [FindInList 工作](../msbuild/findinlist-task.md) 的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`CaseSensitive`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，搜尋會區分大小寫；否則不區分大小寫。 預設值為 `true`。|  
 |`FindLastMatch`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，則傳回最後一個相符項目；否則傳回第一個相符項目。 預設值為 `false`。|  

@@ -17,17 +17,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2701c698d795f1af1f888e677362bb2cf248111
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: beeed84db240ecf57ca18dd9aef08622f14b06fc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782458"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659669"
 ---
 # <a name="special-characters-to-escape"></a>要逸出的特殊字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 只有正在使用特殊字元的內容中，特殊字元具有特殊意義時，才必須逸出。 例如，星號 (*) 只有在項目定義的 "Include" 和 "Exclude" 屬性中，或是呼叫  <xref:Microsoft.Build.Tasks.CreateItem> 時，才是特殊字元。 在其他情況下，星號會視為星號常值。 雖然您不需要逸出專案檔中的所有星號，但要這麼做也無妨。  
   
  請使用標記 %*xx* 取代特殊字元，其中 *xx* 代表 ASCII 字元的十六進位值。 例如，若要使用星號 (*) 做為常值字元，請使用值 `%2A`。  
@@ -46,6 +45,6 @@ ms.locfileid: "54782458"
 |?|問號，在項目的 Include/Exclude 區段中描述檔案規格時為萬用字元。|  
 |*|星號，在項目的 Include/Exclude 區段中描述檔案規格時為萬用字元。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：在 MSBuild 中逸出特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)

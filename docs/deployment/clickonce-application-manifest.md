@@ -15,28 +15,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2da8014d35cd37fddf1a78c494b973ea206affc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: be9bfe19b92740d6be6c91802d193bf2fc401847
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609471"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653655"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce 應用程式資訊清單
 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單是 XML 檔案，描述應用程式部署使用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。
 
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單有下列項目和屬性。
 
-
-| 元素 | 說明 | 屬性 |
+| 項目 | 描述 | 屬性 |
 | - | - | - |
-| [\<組件 > 項目](../deployment/assembly-element-clickonce-application.md) | 必要項。 最上層項目。 | `manifestVersion` |
-| [\<組件識別 > 項目](../deployment/assemblyidentity-element-clickonce-application.md) | 必要項。 識別主要組件的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
-| [\<trustInfo > 項目](../deployment/trustinfo-element-clickonce-application.md) | 識別應用程式安全性需求。 | 無 |
-| [\<進入點 > 項目](../deployment/entrypoint-element-clickonce-application.md) | 必要項。 識別應用程式程式碼進入點。 | `name` |
-| [\<相依性 > 項目](../deployment/dependency-element-clickonce-application.md) | 必要項。 識別執行應用程式所需的每個相依性。 選擇性地識別需要預先安裝的組件。 | 無 |
+| [\<assembly> 元素](../deployment/assembly-element-clickonce-application.md) | 必要項。 最上層項目。 | `manifestVersion` |
+| [\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-application.md) | 必要項。 識別主要組件的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
+| [\<trustInfo> 元素](../deployment/trustinfo-element-clickonce-application.md) | 識別應用程式安全性需求。 | None |
+| [\<entryPoint> 元素](../deployment/entrypoint-element-clickonce-application.md) | 必要項。 識別應用程式程式碼進入點。 | `name` |
+| [\<dependency> 元素](../deployment/dependency-element-clickonce-application.md) | 必要項。 識別執行應用程式所需的每個相依性。 選擇性地識別需要預先安裝的組件。 | None |
 | [\<file> 元素](../deployment/file-element-clickonce-application.md) | 選擇性。 識別應用程式所使用的每個非組件檔案。 可以包含與檔案相關聯的元件物件模型 (COM) 隔離資料。 | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
-| [\<fileAssociation > 項目](../deployment/fileassociation-element-clickonce-application.md) | 選擇性。 識別要與應用程式相關聯的副檔名。 | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
+| [\<fileAssociation> 元素](../deployment/fileassociation-element-clickonce-application.md) | 選擇性。 識別要與應用程式相關聯的副檔名。 | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
 ## <a name="remarks"></a>備註
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單檔來識別應用程式部署使用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 如需 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 的詳細資訊，請參閱 [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)。
@@ -44,7 +43,7 @@ A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式�
 ## <a name="file-location"></a>檔案位置
  A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單是特定部署的單一版本。 基於這個理由，它們應該分開儲存部署資訊清單。 常見的慣例是將它們放在相關聯版本命名的子目錄。
 
- 應用程式資訊清單一律必須經過簽署在部署之前。 如果您以手動方式變更應用程式資訊清單，您必須使用*mage.exe*重新簽署應用程式資訊清單，更新部署資訊清單，並重新簽署部署資訊清單。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+ 應用程式資訊清單一律必須經過簽署在部署之前。 如果您以手動方式變更應用程式資訊清單，您必須使用*mage.exe*重新簽署應用程式資訊清單，更新部署資訊清單，並重新簽署部署資訊清單。 如需詳細資訊，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
 ## <a name="file-name-syntax"></a>檔案名稱語法
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單檔案的名稱應該是 `assemblyIdentity` 項目中識別的應用程式完整名稱和副檔名，後面接著副檔名 *.manifest*。 比方說，是指應用程式資訊清單*Example.exe*應用程式會使用下列的檔案名稱語法。

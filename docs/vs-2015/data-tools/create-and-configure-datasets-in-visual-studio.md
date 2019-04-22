@@ -17,16 +17,15 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4679063634af102c71635f2d84b7c3e44cd33085
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0a2930acee9e187f14b87e28190a88195b0bea7a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939380"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656242"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>在 Visual Studio 中建立和設定資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 A*資料集*是一組儲存在記憶體中的資料庫中的資料，並且支援變更追蹤啟用之物件的建立、 讀取、 更新和刪除 (CRUD) 作業，而不需要永遠連接到資料庫的資料。 資料集所設計的簡單*資料表單*商務應用程式。 對於新的應用程式，請考慮使用 Entity Framework 來儲存和模型化記憶體中的資料。 若要使用的資料集，您應該使用資料庫概念的基本知識。
 

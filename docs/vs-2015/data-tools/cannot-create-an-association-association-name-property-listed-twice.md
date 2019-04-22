@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3ebfcd9ad335cf95894aa916412da1a91cf008
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b9592605a25c76b4ea17b6efe91363d59585f56e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941835"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660966"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>無法建立關聯&lt;關聯名稱&gt;：屬性已列出兩次
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 無法建立關聯 \<關聯名稱>。 相同的屬性已列出超過一次：\<屬性名稱>。  
   
  關聯由 [關聯編輯器] 對話方塊中選取的 [關聯屬性] 所定義。 一次只能列出關聯中之一個類別 (Class) 的屬性。  
@@ -34,7 +33,7 @@ ms.locfileid: "58941835"
   
 -   檢查 [關聯屬性]，並移除重複項目。  
   
--   按一下 [確定 **Deploying Office Solutions**]。  
+-   按一下 [確定] 。  
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](http://msdn.microsoft.com/library/a57e82d5-f7e4-4894-8add-3d9ba4fce186)   

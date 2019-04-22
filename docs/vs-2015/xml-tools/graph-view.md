@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf9f92e56d9405a5945fe160860175d575e57cc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 74ae0319bcf9c155bce693f9cf0924c8be449043
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940279"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658600"
 ---
 # <a name="graph-view"></a>圖形檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 圖表檢視會以圖形表示全域結構描述節點以及節點之間的關聯性。 請注意，圖表檢視無法讓您在設計介面上改變結構描述集的配置。 圖表檢視還包含 XML 結構描述設計工具工具列和階層連結列。  
   
  下圖顯示的設計介面中包含六個全域節點的圖表檢視。  
