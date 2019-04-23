@@ -1,4 +1,4 @@
----
+﻿---
 title: 將匿名型別轉換為類別
 ms.date: 02/13/2019
 ms.topic: reference

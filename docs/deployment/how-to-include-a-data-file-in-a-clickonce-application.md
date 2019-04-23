@@ -1,5 +1,5 @@
 ---
-title: 'How to: Include a Data File in a ClickOnce Application |Microsoft Docs'
+title: HOW TO：Include a Data File in a ClickOnce Application |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 470ee530a61ecba5c1acd40be88c469fee6d4f5e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: fd2db09937ad76c0ea4c990fcdba5c34a0f8f66c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093874"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>如何：在 ClickOnce 應用程式中包含資料檔案
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>HOW TO：在 ClickOnce 應用程式中納入資料檔案
 每個[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]您安裝的應用程式已指派應用程式可在其中管理它自己的資料的目的地電腦的本機磁碟上的資料目錄。 資料檔案可以包含任何類型的檔案： 文字檔、 XML 檔案或甚至是 Microsoft Access 資料庫 (*.mdb*) 檔案。 下列程序會示範如何新增到任何類型的資料檔案您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>若要使用 Mage.exe 納入資料檔案
@@ -60,25 +60,25 @@ ms.locfileid: "56596265"
 
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>若要使用 MageUI.exe 中納入資料檔案
 
-1.  將資料檔案新增至您的應用程式目錄，與您的應用程式檔案的其餘部分。
+1. 將資料檔案新增至您的應用程式目錄，與您的應用程式檔案的其餘部分。
 
-2.  一般而言，您的應用程式的目錄會加上部署的目前版本的目錄，例如 v1.0.0.0。
+2. 一般而言，您的應用程式的目錄會加上部署的目前版本的目錄，例如 v1.0.0.0。
 
-3.  在 [**檔案**] 功能表中，按一下**開啟**開啟您的應用程式資訊清單。
+3. 在 [**檔案**] 功能表中，按一下**開啟**開啟您的應用程式資訊清單。
 
-4.  選取 [**檔案**] 索引標籤。
+4. 選取 [**檔案**] 索引標籤。
 
-5.  在頂端的 [] 索引標籤的 [文字] 方塊中，輸入包含您的應用程式檔案的目錄，然後按一下**填入**。
+5. 在頂端的 [] 索引標籤的 [文字] 方塊中，輸入包含您的應用程式檔案的目錄，然後按一下**填入**。
 
      您的資料檔案會出現在方格中。
 
-6.  設定**檔案類型**值的資料檔**資料**。
+6. 設定**檔案類型**值的資料檔**資料**。
 
-7.  儲存應用程式資訊清單，並重新簽署檔案。
+7. 儲存應用程式資訊清單，並重新簽署檔案。
 
      *MageUI.exe*會提示您重新登入的檔案。
 
-8.  重新簽署部署資訊清單
+8. 重新簽署部署資訊清單
 
      您必須重新簽署部署資訊清單，因為它的應用程式資訊清單的雜湊已變更。
 

@@ -9,17 +9,16 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 949cbbc7146fc744f549201a98f61d82a80185e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787014"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666763"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 透過通用 Windows 平台和單一 Windows 核心，您可以在從手機到桌上型電腦的任何 Windows 10 裝置上執行相同的應用程式。 您可以使用 Visual Studio 2015 和通用 Windows 應用程式開發工具，來建立這些通用 Windows 應用程式。  
   
  ![通用 Windows 平台](../cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")  
@@ -49,7 +48,7 @@ ms.locfileid: "54787014"
   
   如果您選擇在非 Windows 10 平台上，使用 Visual Studio 2015 開發通用 Windows 應用程式，其限制如下：  
   
-- Windows 8.1您無法執行應用程式在本機 （僅限在遠端 Windows 10 裝置上）。 您可以使用 Visual Studio 中的模擬器 (Emulator)，但無法使用模擬器 (Simulator)。  
+- Windows 8.1：您無法執行應用程式在本機 （僅限在遠端 Windows 10 裝置上）。 您可以使用 Visual Studio 中的模擬器 (Emulator)，但無法使用模擬器 (Simulator)。  
   
 - Windows 7：您無法執行應用程式在本機 （僅限在遠端 Windows 10 裝置上）。 您無法使用 Visual Studio 中的模擬器 (Emulator 或 Simulator)。  
   

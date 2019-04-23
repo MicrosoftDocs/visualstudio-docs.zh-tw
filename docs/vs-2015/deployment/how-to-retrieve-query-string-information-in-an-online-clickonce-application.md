@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945343"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069532"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>HOW TO：在線上 ClickOnce 應用程式中擷取查詢字串資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,26 +49,26 @@ ms.locfileid: "58945343"
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>從 ClickOnce 應用程式取得查詢字串資訊  
   
-1.  請在專案中放入下列程式碼。 為了讓這個程式碼運作，您必須參考 System.Web，並為 System.Web、System.Collections.Specialized 和 System.Deployment.Application 新增 `using` 或 `Imports` 陳述式。  
+1. 請在專案中放入下列程式碼。 為了讓這個程式碼運作，您必須參考 System.Web，並為 System.Web、System.Collections.Specialized 和 System.Deployment.Application 新增 `using` 或 `Imports` 陳述式。  
   
      [!code-csharp[ClickOnceQueryString#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs#1)]
      [!code-vb[ClickOnceQueryString#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb#1)]  
   
-2.  呼叫先前定義的函式，以擷取依名稱編製索引之查詢字串參數的 <xref:System.Collections.DictionaryBase.Dictionary%2A> 。  
+2. 呼叫先前定義的函式，以擷取依名稱編製索引之查詢字串參數的 <xref:System.Collections.DictionaryBase.Dictionary%2A> 。  
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>使用 MageUI.exe 將查詢字串傳入 ClickOnce 應用程式  
   
-1.  開啟 .NET 命令提示字元，並輸入：  
+1. 開啟 .NET 命令提示字元，並輸入：  
   
     ```  
     MageUI  
     ```  
   
-2.  從 [檔案]  功能表中，選取 [開啟] ，然後開啟您 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的部署資訊清單，這是 `.application` 擴充功能中的檔案結尾。  
+2. 從 [檔案]  功能表中，選取 [開啟] ，然後開啟您 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的部署資訊清單，這是 `.application` 擴充功能中的檔案結尾。  
   
-3.  選取左導覽視窗中的 [部署選項]  面板，然後選取 [允許傳遞 URL 參數至應用程式]  核取方塊。  
+3. 選取左導覽視窗中的 [部署選項]  面板，然後選取 [允許傳遞 URL 參數至應用程式]  核取方塊。  
   
-4.  從 [檔案]  功能表中，選取 [儲存] 。  
+4. 從 [檔案]  功能表中，選取 [儲存] 。  
   
 > [!NOTE]
 >  或者，您可以在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]中啟用查詢字串傳遞。 選取 [允許傳遞 URL 參數至應用程式]  核取方塊，藉由開啟 [專案屬性] 、選取 [發行]  索引標籤、按一下 [選項]  按鈕，然後選取 [資訊清單] 即可找到此核取方塊。  

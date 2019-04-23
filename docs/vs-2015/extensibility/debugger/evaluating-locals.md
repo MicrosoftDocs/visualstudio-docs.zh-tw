@@ -11,12 +11,12 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fcbf6c3908460ce9d0f34b31c9a815c652de8031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117677"
 ---
 # <a name="evaluating-locals"></a>評估區域變數
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "58945210"
   
  這項功能的擷取區域變數的值會封裝在 helper 函式會執行下列工作：  
   
-1.  繫結`IDebugField`若要取得的記憶體物件`IDebugObject`物件。  
+1. 繫結`IDebugField`若要取得的記憶體物件`IDebugObject`物件。  
   
-2.  從記憶體中取得的值。 這個值會表示為一系列的位元組。  
+2. 從記憶體中取得的值。 這個值會表示為一系列的位元組。  
   
-3.  格式化值取決於本機的類型。  
+3. 格式化值取決於本機的類型。  
   
-4.  傳回泛型的物件，包含區域的值。 在 C# 中，這是`object`，並在 c + +，這是`VARIANT`。  
+4. 傳回泛型的物件，包含區域的值。 在C#，這是`object`，然後在C++，這是`VARIANT`。  
   
 ## <a name="managed-code"></a>Managed 程式碼  
  這是函的擷取 managed 程式碼中區域變數的值式的實作。  

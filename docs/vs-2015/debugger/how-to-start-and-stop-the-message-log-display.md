@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc3619136b103230efae183b49d4c7d3ba00880d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2e31fc094b777b328347bdcd783b69f1539f246
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940812"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102194"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>HOW TO：啟動與停止訊息記錄顯示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,8 +27,8 @@ ms.locfileid: "58940812"
   
 ### <a name="to-start-the-message-log-display"></a>若要啟動訊息記錄顯示  
   
-1.  從**訊息**功能表上，選擇**開始記錄**。  
+1. 從**訊息**功能表上，選擇**開始記錄**。  
   
 ### <a name="to-stop-the-message-log-display"></a>若要停止訊息記錄顯示  
   
-1.  從**訊息**功能表上，選擇**停止記錄**。
+1. 從**訊息**功能表上，選擇**停止記錄**。

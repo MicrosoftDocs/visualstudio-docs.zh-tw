@@ -16,17 +16,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 080bc6b8efe5407a372ef2e22c53d04fa977e057
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9dc94abdfb35bc4537f0ba80f96f393157263e63
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785767"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658145"
 ---
 # <a name="error-list-window"></a>錯誤清單視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 注意]
 >  錯誤清單會顯示特定錯誤訊息的相關資訊。 您可以從 [輸出] 視窗複製錯誤碼或錯誤字串文字。 若要顯示 [輸出] 視窗，請按下 Ctrl+Alt+O。 請參閱[輸出視窗](../../ide/reference/output-window.md)。  
   
@@ -60,12 +59,12 @@ ms.locfileid: "54785767"
   
 1. **開啟的文件**：顯示開啟文件的錯誤、警告和訊息。  
   
-2. **目前專案**：顯示**編輯器**中目前選取之文件的專案，或方案總管中選取之專案的錯誤、警告和訊息。  
+2. **目前專案**：顯示 [編輯器] 中目前所選文件專案，或 [方案總管] 中所選專案的錯誤、警告和訊息。  
   
    > [!NOTE]
    >  如果目前選取的文件專案不同於方案總管中選取的專案，則會變更錯誤、警告和訊息的篩選清單。  
   
-3. **目前文件**：顯示**編輯器**或方案總管中目前選取之文件的錯誤、警告和訊息。  
+3. **目前文件**：顯示 [編輯器] 或 [方案總管] 中目前所選文件的錯誤、警告和訊息。  
   
    如果搜尋結果目前有套用篩選條件，篩選條件名稱會顯示在 [錯誤清單] 標題列中。 [錯誤]、[警告] 和 [訊息] 按鈕即會顯示目前出現的已篩選項目數和項目總數；例如，按鈕會顯示「x，共 Y 項錯誤」。 如果未套用任何篩選條件，標題列只顯示「錯誤清單」。  
   

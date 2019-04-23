@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 3537879481430490d32ab30f8f6a2f9f7353659b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 81bf6c5ef975d7ce154c1d8bb987e962dfdf4ec2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040737"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>HOW TO：手動封裝擴充功能 （VSIX 部署）
 您可以建立 VSIX 封裝，來包裝進行部署的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 擴充功能。 建立封裝的方法有三種：  
@@ -33,25 +33,25 @@ ms.locfileid: "58941679"
   
 #### <a name="to-manually-create-a-vsix-package"></a>手動建立 VSIX 封裝  
   
-1.  建立 VSIX 結構描述所支援類型的 Visual Studio 擴充功能。  
+1. 建立 VSIX 結構描述所支援類型的 Visual Studio 擴充功能。  
   
-2.  建立 XML 檔案，並將它命名為 `extension.vsixmanifest`。  
+2. 建立 XML 檔案，並將它命名為 `extension.vsixmanifest`。  
   
-3.  根據 VSIX 結構描述，來填寫 extension.vsixmanifest 檔案。 如需範例資訊清單，請參閱 [PackageManifest 項目 (根項目、VSX 結構描述)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)。  
+3. 根據 VSIX 結構描述，來填寫 extension.vsixmanifest 檔案。 如需範例資訊清單，請參閱 [PackageManifest 項目 (根項目、VSX 結構描述)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)。  
   
-4.  建立第二個 XML 檔案，並將它命名為 `[Content_Types].xml`。  
+4. 建立第二個 XML 檔案，並將它命名為 `[Content_Types].xml`。  
   
-5.  填寫 [Content_Types].xml 檔案中所指定[結構 Content_types\].xml 檔案](../extensibility/the-structure-of-the-content-types-dot-xml-file.md)。  
+5. 填寫 [Content_Types].xml 檔案中所指定[結構 Content_types\].xml 檔案](../extensibility/the-structure-of-the-content-types-dot-xml-file.md)。  
   
-6.  將這兩個 XML 檔案與要部署的擴充功能一起放在目錄中。  
+6. 將這兩個 XML 檔案與要部署的擴充功能一起放在目錄中。  
   
      如果是專案範本或項目範本，請將包含範本的 .zip 檔案放在與 XML 檔案相同的資料夾中。 請不要將 XML 檔案放在 .zip 檔案中。  
   
      在所有其他情況下，將 XML 檔案放在與組建輸出相同的目錄中。  
   
-7.  在 Windows 檔案總管中，以滑鼠右鍵按一下包含擴充功能內容的資料夾和兩個 XML 檔案，並按一下 [傳送到] ，然後按一下 [壓縮的 (zipped) 資料夾] 。  
+7. 在 Windows 檔案總管中，以滑鼠右鍵按一下包含擴充功能內容的資料夾和兩個 XML 檔案，並按一下 [傳送到] ，然後按一下 [壓縮的 (zipped) 資料夾] 。  
   
-8.  將產生的 .zip 檔案重新命名為 *檔案名稱*.vsix，其中 *檔案名稱* 是安裝封裝的可轉散發檔案名稱。  
+8. 將產生的 .zip 檔案重新命名為 *檔案名稱*.vsix，其中 *檔案名稱* 是安裝封裝的可轉散發檔案名稱。  
   
 ## <a name="see-also"></a>另請參閱  
  [推出 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)   

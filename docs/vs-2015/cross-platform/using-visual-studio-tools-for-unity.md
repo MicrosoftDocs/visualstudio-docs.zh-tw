@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 90926994f6cf67e36260dc85e29accaa88e519ca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777377"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073423"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在本節中，您將了解如何使用 Visual Studio Tools for Unity 的整合和產能功能，以及如何針對 Unity 開發使用 Visual Studio 偵錯工具。  
   
 ## <a name="unity-integration-and-productivity"></a>Unity 整合和產能  
@@ -30,7 +29,7 @@ ms.locfileid: "54777377"
   
 ##### <a name="to-access-unity-documentation"></a>存取 Unity 文件  
   
--   在 Visual Studio 中，反白顯示您要了解的 Unity API 或將游標置於其上，然後按 **Ctrl+Alt+M、Ctrl+H**  
+- 在 Visual Studio 中，反白顯示您要了解的 Unity API 或將游標置於其上，然後按 **Ctrl+Alt+M、Ctrl+H**  
   
 ### <a name="unity-monobehavior-scripting-wizard"></a>Unity MonoBehavior 指令碼精靈  
  在 Unity 中，大部分指令碼的實作方式，不是透過衍生自 MonoBehavior 類別，就是透過覆寫其中一些方法。 您可以使用 MonoBehavior 精靈，為要多載的 MonoBehavior 方法快速建立空白定義。 透過這個精靈，您可以從可用方法清單中指定一個或多個要多載的方法、選擇要在程式碼中插入這些方法的位置，以及決定是否要包含這些方法的使用方式註解。  
@@ -60,13 +59,13 @@ ms.locfileid: "54777377"
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>使用 Quick MonoBehavior 精靈建立空白 MonoBehavior 方法定義  
   
-1.  在 Visual Studio 中，將游標置於您要插入方法的位置，然後按 **Ctrl+Shift+Q** 啟動 Quick MonoBehavior 精靈。 不同於另一個 MonoBehavior 精靈，由於新方法一律已插入該位置，因此您必須在使用這個精靈時，刻意置放游標。  
+1. 在 Visual Studio 中，將游標置於您要插入方法的位置，然後按 **Ctrl+Shift+Q** 啟動 Quick MonoBehavior 精靈。 不同於另一個 MonoBehavior 精靈，由於新方法一律已插入該位置，因此您必須在使用這個精靈時，刻意置放游標。  
   
-2.  確定顯示在 [建立指令碼方法] 視窗右上角的 Framework 版本符合您所使用的版本。 如果不符，請將下拉式清單中的值變更為您要使用的版本。  
+2. 確定顯示在 [建立指令碼方法] 視窗右上角的 Framework 版本符合您所使用的版本。 如果不符，請將下拉式清單中的值變更為您要使用的版本。  
   
-3.  尋找您要多載的方法。 在 [Create script method] 視窗的文字方塊中，開始輸入方法的名稱。 其名稱符合您輸入內容的方法清單會隨即出現。  
+3. 尋找您要多載的方法。 在 [Create script method] 視窗的文字方塊中，開始輸入方法的名稱。 其名稱符合您輸入內容的方法清單會隨即出現。  
   
-4.  選擇您要多載的方法。 如果您要的方法顯示在清單中，請以滑鼠或方向鍵選取它，然後按 **Enter**。 如果該方法是清單中的唯一方法，您可以直接按 **Enter**。 該方法會隨即插入您的程式碼。  
+4. 選擇您要多載的方法。 如果您要的方法顯示在清單中，請以滑鼠或方向鍵選取它，然後按 **Enter**。 如果該方法是清單中的唯一方法，您可以直接按 **Enter**。 該方法會隨即插入您的程式碼。  
   
 ### <a name="unity-project-explorer"></a>Unity Project Explorer  
  您可以在 Visual Studio 中，使用 Unity Project Explorer 來巡覽 Unity 專案。  
@@ -104,16 +103,16 @@ ms.locfileid: "54777377"
 ## <a name="unity-debugging"></a>Unity 偵錯  
  Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工具，同時對 Unity 專案的編輯器和遊戲指令碼進行偵錯。  
   
-###  <a name="connecting-visual-studio-to-unity"></a> 將 Visual Studio 連接到 Unity  
+### <a name="connecting-visual-studio-to-unity"></a> 將 Visual Studio 連接到 Unity  
  Visual Studio Tools for Unity 透過 UDP 連接與 Unity 通訊。 這表示連接到在本機或網路上任何位置執行的 Unity 執行個體的方式完全相同。 您可以使用 [選取 Unity 執行個體] 對話方塊，連接到網路上可見的任何 Unity 執行個體。  
   
 ##### <a name="to-open-the-select-unity-instance-dialog"></a>開啟 [Select Unity Instance] 對話方塊  
   
--   在 Visual Studio 主功能表上，選擇 [偵錯]、[附加 Unity 偵錯工具]。  
+- 在 Visual Studio 主功能表上，選擇 [偵錯]、[附加 Unity 偵錯工具]。  
   
      ![附加 Unity 的偵錯工具。](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
   
--   或者，在 Visual Studio 中，選擇 Visual Studio 右下角狀態列上的插頭圖示。  
+- 或者，在 Visual Studio 中，選擇 Visual Studio 右下角狀態列上的插頭圖示。  
   
      ![這個圖示顯示 VSTU 已連接到 Unity。](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
@@ -139,7 +138,7 @@ ms.locfileid: "54777377"
 > [!IMPORTANT]
 >  由於 Visual Studio Tools for Unity 是透過 UDP 網路通訊端與 Unity 執行個體通訊，因此您的防火牆可能會要求這項資訊。 如果發生這種情況，您必須授權連接，VSTU 和 Unity 才能通訊。  
   
-###  <a name="debugging-your-project-in-a-unity-player"></a> 在 Unity 播放器中為專案偵錯  
+### <a name="debugging-your-project-in-a-unity-player"></a> 在 Unity 播放器中為專案偵錯  
  如果沒有執行 Unity Editor，您可以將 Visual Studio Tools for Unity 直接連接到在獨立播放器中執行的 Unity 應用程式，您也可以透過這個方式來偵錯平台特定的問題。  
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>在 Unity 播放器中啟用指令碼偵錯  

@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e934d071a8b26db29f2b9450939fc895efa1e5d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 673b6bda444fd097b2ce4f4eee87c9f558e64c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940552"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069610"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算及自訂的儲存區屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,30 +37,30 @@ ms.locfileid: "58940552"
   
 #### <a name="to-define-a-calculated-or-custom-storage-property"></a>若要定義導出或自訂儲存區屬性  
   
-1.  在 DslDefinition.dsl 中，選取 [在圖表或在網域屬性**DSL explorer]**。  
+1. 在 DslDefinition.dsl 中，選取 [在圖表或在網域屬性**DSL explorer]**。  
   
-2.  在 **屬性**視窗中，將**種類**欄位**導出**或**自訂儲存體**。  
+2. 在 **屬性**視窗中，將**種類**欄位**導出**或**自訂儲存體**。  
   
      請確定您已將其**型別**符合您的需求。  
   
-3.  按一下 [**轉換所有範本**中的工具列**方案總管] 中**。  
+3. 按一下 [**轉換所有範本**中的工具列**方案總管] 中**。  
   
-4.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
+4. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
      您會收到下列錯誤訊息：「*YourClass*不包含定義 get*YourProperty*。 」  
   
-5.  按兩下錯誤訊息。  
+5. 按兩下錯誤訊息。  
   
      Dsl\GeneratedCode\DomainClasses.cs 或 DomainRelationships.cs 隨即開啟。 上述反白顯示的方法呼叫中，註解會提示您提供實作 get*YourProperty*（)。  
   
     > [!NOTE]
     >  這個檔案會產生從 DslDefinition.dsl。 如果您編輯此檔案時，您的變更將會遺失您按一下 下一次**轉換所有範本**。 相反地，在個別檔案中新增所需的方法。  
   
-6.  建立或開啟類別檔案，在個別的資料夾，例如 CustomCode\\*YourDomainClass*。 cs。  
+6. 建立或開啟類別檔案，在個別的資料夾，例如 CustomCode\\*YourDomainClass*。 cs。  
   
      請確定命名空間是產生的程式碼相同。  
   
-7.  在類別檔案中，寫入的網域類別的部分實作。 在類別中，撰寫的定義遺漏`Get`類似下列範例的方法：  
+7. 在類別檔案中，寫入的網域類別的部分實作。 在類別中，撰寫的定義遺漏`Get`類似下列範例的方法：  
   
     ```  
     namespace Company.FamilyTree  
@@ -70,7 +70,7 @@ ms.locfileid: "58940552"
     }  }  
     ```  
   
-8.  如果您設定**種類**要**自訂儲存體**，您也必須提供`Set`方法。 例如:   
+8. 如果您設定**種類**要**自訂儲存體**，您也必須提供`Set`方法。 例如：  
   
     ```  
     void SetAgeValue(int value)  
@@ -85,7 +85,7 @@ ms.locfileid: "58940552"
   
 10. 測試屬性。 請確定您嘗試**恢復**並**重做**。  
   
-##  <a name="setters"></a> 交易和自訂的 Setter  
+## <a name="setters"></a> 交易和自訂的 Setter  
  在 自訂儲存區屬性的 Set 方法，您不必開啟交易，因為作用中的交易內通常呼叫方法。  
   
  不過，如果使用者叫用復原或取消復原，或正在復原交易，可能也呼叫 Set 方法。 當<xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A>為 true，Set 方法的行為，如下所示：  
@@ -94,7 +94,7 @@ ms.locfileid: "58940552"
   
 - 不過，它應該更新任何外部的資源，例如資料庫或檔案內容或市集外的物件。 如此可確保它們會保留在 synchronism 存放區中的值。  
   
-  例如：  
+  例如:   
   
 ```  
 void SetAgeValue(int value)  

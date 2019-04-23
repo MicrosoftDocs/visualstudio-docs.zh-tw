@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f272f1b7a8fc970ab616ba1c02e815cbb6ecb568
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941556"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059132"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>HOW TO：指定在 ClickOnce 部署中的個別必要條件的支援 URL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署可以測試數目�
   
 ### <a name="specifying-a-support-url-for-an-individual-prerequisite"></a>指定個別必要條件的支援 URL  
   
-1.  開啟應用程式資訊清單 （.manifest 檔案） 您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]在文字編輯器應用程式。  
+1. 開啟應用程式資訊清單 （.manifest 檔案） 您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]在文字編輯器應用程式。  
   
-2.  針對作業系統的必要條件，新增`supportUrl`屬性設定為`dependentOS`項目：  
+2. 針對作業系統的必要條件，新增`supportUrl`屬性設定為`dependentOS`項目：  
   
     ```  
      <dependency>  
@@ -48,7 +48,7 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署可以測試數目�
       </dependency>  
     ```  
   
-3.  針對特定版本的通用語言執行平台的必要條件，新增`supportUrl`屬性設定為`dependentAssembly`指定通用語言執行階段相依性的項目：  
+3. 針對特定版本的通用語言執行平台的必要條件，新增`supportUrl`屬性設定為`dependentAssembly`指定通用語言執行階段相依性的項目：  
   
     ```  
       <dependency>  
@@ -58,7 +58,7 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署可以測試數目�
       </dependency>  
     ```  
   
-4.  對於必須預先安裝在全域組件快取中的組件的必要條件、 設定`supportUrl`針對`dependentAssembly`指定必要的組件的項目：  
+4. 對於必須預先安裝在全域組件快取中的組件的必要條件、 設定`supportUrl`針對`dependentAssembly`指定必要的組件的項目：  
   
     ```  
       <dependency>  
@@ -68,9 +68,9 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署可以測試數目�
       </dependency>  
     ```  
   
-5.  選擇性。 針對以.NET Framework 4 為目標的應用程式開啟部署資訊清單 （.application 檔案） 您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]在文字編輯器應用程式。  
+5. 選擇性。 針對以.NET Framework 4 為目標的應用程式開啟部署資訊清單 （.application 檔案） 您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]在文字編輯器應用程式。  
   
-6.  針對.NET Framework 4 先決條件是，新增`supportUrl`屬性設定為`compatibleFrameworks`項目：  
+6. 針對.NET Framework 4 先決條件是，新增`supportUrl`屬性設定為`compatibleFrameworks`項目：  
   
     ```  
     <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
@@ -79,7 +79,7 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署可以測試數目�
     </compatibleFrameworks>  
     ```  
   
-7.  一旦您以手動方式已改變應用程式資訊清單，您必須重新簽署應用程式資訊清單中使用您的數位憑證，然後更新並重新簽署部署資訊清單。 您必須使用 Mage.exe 或 MageUI.exe SDK 工具來完成這項工作，以重新產生這些檔案使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會清除您手動變更。 如需有關如何使用 Mage.exe 來重新簽署資訊清單的詳細資訊，請參閱[How to:重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+7. 一旦您以手動方式已改變應用程式資訊清單，您必須重新簽署應用程式資訊清單中使用您的數位憑證，然後更新並重新簽署部署資訊清單。 您必須使用 Mage.exe 或 MageUI.exe SDK 工具來完成這項工作，以重新產生這些檔案使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會清除您手動變更。 如需有關如何使用 Mage.exe 來重新簽署資訊清單的詳細資訊，請參閱[How to:重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  支援 URL 不會顯示在對話方塊中，如果應用程式標記為在部分信任中執行。  

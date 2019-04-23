@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3a4e4f67ef8a7cc1e13e513d2f03db5f755363
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000802"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110475"
 ---
 # <a name="view-dom-event-listeners"></a>檢視 DOM 事件接聽程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,23 +41,23 @@ ms.locfileid: "59000802"
 
 #### <a name="to-view-event-listeners"></a>檢視事件接聽程式
 
-1.  在 Visual Studio 中，建立使用 Windows Phone 樞紐分析應用程式專案範本的 JavaScript 應用程式。
+1. 在 Visual Studio 中，建立使用 Windows Phone 樞紐分析應用程式專案範本的 JavaScript 應用程式。
 
-2.  在 Visual Studio 中開啟範本中，選取**Emulator 8.1 WVGA 4 英吋 512MB**偵錯工具中的 [偵錯] 工具列的下拉式清單中：
+2. 在 Visual Studio 中開啟範本中，選取**Emulator 8.1 WVGA 4 英吋 512MB**偵錯工具中的 [偵錯] 工具列的下拉式清單中：
 
      ![選取偵錯目標](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")
 
-3.  請按 F5 以偵錯模式執行應用程式。
+3. 請按 F5 以偵錯模式執行應用程式。
 
-4.  在執行中應用程式，移至**第 3 節**樞紐分析項目。
+4. 在執行中應用程式，移至**第 3 節**樞紐分析項目。
 
-5.  切換至 Visual Studio (Alt+Tab 或 F12)。
+5. 切換至 Visual Studio (Alt+Tab 或 F12)。
 
-6.  在 [DOM 總管] 中，選擇右上角的 `Find`。
+6. 在 [DOM 總管] 中，選擇右上角的 `Find`。
 
-7.  輸入 `ListView`，然後按 Enter。
+7. 輸入 `ListView`，然後按 Enter。
 
-8.  如果有必要，請選擇**下一步**按鈕來尋找`DIV`項目，表示`ListView`控制項 (這個項目具有`data-win-control`的值`WinJS.UI.ListView`)。
+8. 如果有必要，請選擇**下一步**按鈕來尋找`DIV`項目，表示`ListView`控制項 (這個項目具有`data-win-control`的值`WinJS.UI.ListView`)。
 
      現在 [DOM 總管] 中的 `DIV` 項目應處於已選取的狀態。
 
@@ -75,16 +75,16 @@ ms.locfileid: "59000802"
 
      **事件**索引標籤會顯示您的階層清單中選擇任何項目的事件接聽程式。
 
-###  <a name="Tips"></a> 解決問題的事件接聽程式的秘訣
+### <a name="Tips"></a> 解決問題的事件接聽程式的秘訣
  在某些應用程式案例中，事件接聽程式必須明確地移除使用[removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx)。 使用**事件**在 DOM 總管 中，若要測試是否事件接聽程式已從 DOM 項目中執行程式碼時的索引標籤。 以下是一些協助解決這些類型之問題的秘訣：
 
--   使用單頁瀏覽模型的應用程式，顯示在 Visual Studio 中實作。[專案範本](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx)，不是通常需要移除註冊的 DOM 項目，屬於頁面等物件的事件接聽程式。 在此情況下，DOM 項目和其相關聯的事件接聽程式會有相同的存留期，而且可以對其進行記憶體回收。
+- 使用單頁瀏覽模型的應用程式，顯示在 Visual Studio 中實作。[專案範本](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx)，不是通常需要移除註冊的 DOM 項目，屬於頁面等物件的事件接聽程式。 在此情況下，DOM 項目和其相關聯的事件接聽程式會有相同的存留期，而且可以對其進行記憶體回收。
 
--   如果 DOM 項目或物件的存留期與相關聯的事件接聽程式不同，則可能需要呼叫 `removeEventListener` 方法。 例如，如果您使用 `window.onresize` 事件，則在離開您已處理該事件的頁面時，可能需要移除事件接聽程式。
+- 如果 DOM 項目或物件的存留期與相關聯的事件接聽程式不同，則可能需要呼叫 `removeEventListener` 方法。 例如，如果您使用 `window.onresize` 事件，則在離開您已處理該事件的頁面時，可能需要移除事件接聽程式。
 
--   如果 `removeEventListener` 無法移除指定的接聽程式，可能是在物件的不同執行個體上進行呼叫。 您可以使用[bind 方法 （函式）](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)方法來解決此問題，當您將新增接聽程式。
+- 如果 `removeEventListener` 無法移除指定的接聽程式，可能是在物件的不同執行個體上進行呼叫。 您可以使用[bind 方法 （函式）](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)方法來解決此問題，當您將新增接聽程式。
 
--   若要移除事件接聽程式已加入使用其中一種[bind 方法 （函式）](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)或藉由使用匿名函式，儲存加入接聽程式時的函式的執行個體。 以下是安全使用此模式的一種方式：
+- 若要移除事件接聽程式已加入使用其中一種[bind 方法 （函式）](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)或藉由使用匿名函式，儲存加入接聽程式時的函式的執行個體。 以下是安全使用此模式的一種方式：
 
     ```javascript
     // You could use the following code within the constructor function of an object, or
@@ -104,9 +104,9 @@ ms.locfileid: "59000802"
     elem.addEventListener('mouseup', this._handlerFunc.bind(this));
     ```
 
--   如果使用 `removeEventListener` 屬性 (例如 `obj.on<eventname>`) 加入事件接聽程式，則無法使用 `window.onresize = handlerFunc` 移除事件接聽程式。
+- 如果使用 `removeEventListener` 屬性 (例如 `obj.on<eventname>`) 加入事件接聽程式，則無法使用 `window.onresize = handlerFunc` 移除事件接聽程式。
 
--   使用 JavaScript 記憶體分析器[JavaScript 記憶體](../profiling/javascript-memory.md)應用程式中。 必須明確移除的事件接聽程式可能會顯示為記憶體流失。
+- 使用 JavaScript 記憶體分析器[JavaScript 記憶體](../profiling/javascript-memory.md)應用程式中。 必須明確移除的事件接聽程式可能會顯示為記憶體流失。
 
 ## <a name="see-also"></a>另請參閱
 

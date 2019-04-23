@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97d8883ef22fc91b708726fddca60cf757e3d9a8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 139cdb0314783c76352cc499256fb89610354843
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610615"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083942"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>HOW TO：將表單區域加入 Outlook 增益集專案
   使用 [新的 Outlook 表單區域精靈]  建立表單區域，以擴充標準或自訂的 Microsoft Office Outlook 表單。 您可以建立新的表單區域並且在 Visual Studio 中設計使用者介面，或者匯入在 Outlook 中設計的表單區域並加入 Visual Basic 或 C# 程式碼。
@@ -33,26 +33,26 @@ ms.locfileid: "56610615"
 
 ### <a name="to-add-a-new-form-region-to-an-outlook-project"></a>將新的表單區域加入 Outlook 專案
 
-1.  在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中開啟或建立 Outlook VSTO 增益集專案。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中開啟或建立 Outlook VSTO 增益集專案。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-2.  在方案總管 中，選取 Outlook VSTO 增益集專案節點。
+2. 在方案總管 中，選取 Outlook VSTO 增益集專案節點。
 
-3.  在 [專案]  功能表中，按一下 [加入新項目] 。
+3. 在 [專案]  功能表中，按一下 [加入新項目] 。
 
-4.  選取 [加入新項目]  對話方塊中的 [Outlook 表單區域] 。
+4. 選取 [加入新項目]  對話方塊中的 [Outlook 表單區域] 。
 
-5.  在 [名稱]  方塊中輸入表單區域的名稱，然後按一下 [加入] 。
+5. 在 [名稱]  方塊中輸入表單區域的名稱，然後按一下 [加入] 。
 
      **NewOutlook 表單區域**精靈 隨即啟動。
 
-6.  在 [選取您希望如何建立此表單區域]  頁面中，選取要藉由拖曳 Managed 控制項至視覺化設計工具來設計表單區域，或匯入之前在 Outlook 中設計的表單區域。
+6. 在 [選取您希望如何建立此表單區域]  頁面中，選取要藉由拖曳 Managed 控制項至視覺化設計工具來設計表單區域，或匯入之前在 Outlook 中設計的表單區域。
 
     > [!NOTE]
     >  如果您選擇要匯入在 Outlook 中設計表單區域，則您必須指定 Outlook 表單儲存區的位置 (*.ofs*) 檔案。 您無法將 Managed 控制項加入在 Outlook 中設計的表單區域；只能在現有 UI 後面加入程式碼。 如需詳細資訊，請參閱 <<c0> [ 建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
 
-7.  在 [選取要建立的表單區域類型]  頁面上，檢視表單區域類型並選取其中一個，然後按 [下一步] 。 如需表單區域類型的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
+7. 在 [選取要建立的表單區域類型]  頁面上，檢視表單區域類型並選取其中一個，然後按 [下一步] 。 如需表單區域類型的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
 
-8.  在 [提供描述文字和選取顯示設定]  頁面的 [名稱]  方塊中，輸入表單區域的名稱。 針對取代型和全部取代型表單區域類型，另外還提供 [標題]  和 [描述]  方塊。
+8. 在 [提供描述文字和選取顯示設定]  頁面的 [名稱]  方塊中，輸入表單區域的名稱。 針對取代型和全部取代型表單區域類型，另外還提供 [標題]  和 [描述]  方塊。
 
      如需名稱、 標題和描述時出現的位置在 Outlook 中部署表單區域資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
 

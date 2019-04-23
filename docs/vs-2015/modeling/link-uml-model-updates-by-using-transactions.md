@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 640217b9ee9a8cb51ed11931d0d66b2c98e0a165
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945863"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064826"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>使用異動連結 UML 模型更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ ms.locfileid: "58945863"
   
  請注意以下各點：  
   
--   您必須一律將 `Commit()` 包含於此異動的結尾。 如果在沒有得到認可的情況下處置異動，則會復原該異動。 也就是說，該模型會還原至此異動開始時的狀態。  
+- 您必須一律將 `Commit()` 包含於此異動的結尾。 如果在沒有得到認可的情況下處置異動，則會復原該異動。 也就是說，該模型會還原至此異動開始時的狀態。  
   
--   如果異動內沒有攔截到的例外狀況發生，則會復原該異動。 常見的模式是將異動的 `using` 區塊置於 `try…catch` 區塊內。  
+- 如果異動內沒有攔截到的例外狀況發生，則會復原該異動。 常見的模式是將異動的 `using` 區塊置於 `try…catch` 區塊內。  
   
--   您可以進行巢狀異動。  
+- 您可以進行巢狀異動。  
   
--   您可以為 `BeginTransaction()` 提供任何非空白名稱。  
+- 您可以為 `BeginTransaction()` 提供任何非空白名稱。  
   
--   只有該「UML 模型存放區」會受這些異動影響。 模型異動並不會影響變數、外部存放區 (例如檔案和資料庫)、分層圖和程式碼模型。  
+- 只有該「UML 模型存放區」會受這些異動影響。 模型異動並不會影響變數、外部存放區 (例如檔案和資料庫)、分層圖和程式碼模型。  
   
 ## <a name="example"></a>範例  
   

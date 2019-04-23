@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 15e65b85490c2cc65a6f965a37bd28b9a241b428
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940588"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048758"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在網頁伺服器上開始偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "58940588"
   
 在許多情況下，因為 IIS 未正確設定，就會發生此錯誤。
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> 檢查您的 IIS 設定
+## <a name="vxtbshttpservererrorsthingstocheck"></a> 檢查您的 IIS 設定
 
 之後採取來解決問題，並再重新嘗試偵錯的詳細步驟，您可能也需要重設 IIS。 可以這麼做，開啟系統管理員命令提示字元並輸入`iisreset`，或您可以在 [IIS 管理員] 中。 
 
@@ -88,7 +88,6 @@ ms.locfileid: "58940588"
     （稍後修正） 的較舊版本中的 bug 需要提高的權限中有些 ASP.NET 偵錯案例。
     
 - 如果執行的 Visual Studio 的多個執行個體，重新開啟您的專案中的 Visual Studio 中，一個執行個體，並再試一次。
-   
-  
+
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

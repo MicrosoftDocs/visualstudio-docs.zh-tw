@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e739edf3d32b011f915ca0aad69e5148104afc05
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 63356c6eb423ddead54290cc11c865a5102f55f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943616"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098463"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>HOW TO：指定 ClickOnce 應用程式的發行頁面
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,29 @@ ms.locfileid: "58943616"
   
 ### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>若要指定自訂的網頁，ClickOnce 應用程式  
   
-1.  選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
+1. 選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
   
-2.  選取 **發佈**窗格。  
+2. 選取 **發佈**窗格。  
   
-3.  按一下 **選項** 按鈕以開啟**發行選項** 對話方塊。  
+3. 按一下 **選項** 按鈕以開啟**發行選項** 對話方塊。  
   
-4.  按一下 **部署**。  
+4. 按一下 **部署**。  
   
-5.  在 **發行選項**對話方塊方塊中，請確定**發行之後開啟部署網頁**核取方塊已選取 （它應該預設會選取）。  
+5. 在 **發行選項**對話方塊方塊中，請確定**發行之後開啟部署網頁**核取方塊已選取 （它應該預設會選取）。  
   
-6.  在 **部署網頁：** 方塊，可為您網頁中，輸入名稱，然後按一下**確定**。  
+6. 在 **部署網頁：** 方塊，可為您網頁中，輸入名稱，然後按一下**確定**。  
   
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>若要啟動每次您發行時，防止 [發行] 頁面  
   
-1.  選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
+1. 選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
   
-2.  選取 **發佈**窗格。  
+2. 選取 **發佈**窗格。  
   
-3.  按一下 **選項** 按鈕以開啟**發行選項** 對話方塊。  
+3. 按一下 **選項** 按鈕以開啟**發行選項** 對話方塊。  
   
-4.  按一下 **部署**。  
+4. 按一下 **部署**。  
   
-5.  在 **發行選項**對話方塊中，清除**發行之後開啟部署網頁**核取方塊。  
+5. 在 **發行選項**對話方塊中，清除**發行之後開啟部署網頁**核取方塊。  
   
 ## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   

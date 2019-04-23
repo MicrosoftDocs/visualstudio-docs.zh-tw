@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b67f3def0eadc35f67d590b282001cac1c526ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6b475b8e5c2138c909133aee0440f0dcaea99e13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057697"
 ---
 # <a name="t4-include-directive"></a>T4 包含指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58945831"
   
    這些額外的 Include 資料夾可能相依於納入的檔案其副檔名。 例如，只有當納入的檔案其副檔名為 `.tt` 時才能使用 DSL 工具的 Include 資料夾  
   
-- `filePath` 可以包含以 "%" 分隔的環境變數。 例如：  
+- `filePath` 可以包含以 "%" 分隔的環境變數。 例如:   
   
   ```  
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
@@ -112,7 +112,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a> 使用 MSBuild 和 Visual Studio 中的專案屬性  
+## <a name="msbuild"></a> 使用 MSBuild 和 Visual Studio 中的專案屬性  
  雖然您可以在 include 指示詞中使用如 $(SolutionDir) 的 Visual Studio 巨集，它們在 MSBuild 中並無法運作。 如果想要轉換組建電腦中的範本，您必須改用專案屬性。  
   
  編輯您的 .csproj 或 .vbproj 檔案以定義專案屬性。 這個範例會定義名為 `myIncludeFolder` 的屬性：  

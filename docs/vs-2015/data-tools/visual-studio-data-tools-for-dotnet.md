@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: da5578321e9c637b12ffbb253a9c0d4c4f87dfe9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b42617892e377dcf750e9f5cafc914759b7d0c13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000658"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110918"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>適用於 .NET 的 Visual Studio Data Tools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,27 +43,27 @@ Visual Studio 和.NET Framework 一起提供廣泛的 API 和工具連線到資�
   
 ## <a name="in-this-section"></a>本節內容  
   
--   [使用 ADO.NET 建立簡單的資料應用程式](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
+- [使用 ADO.NET 建立簡單的資料應用程式](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
   
--   [新增連線](../data-tools/add-new-connections.md)  
+- [新增連線](../data-tools/add-new-connections.md)  
   
--   [新增資料來源](../data-tools/add-new-data-sources.md)  
+- [新增資料來源](../data-tools/add-new-data-sources.md)  
   
--   [Visual Studio 中的 Entity Data Model 工具](../data-tools/entity-data-model-tools-in-visual-studio.md)  
+- [Visual Studio 中的 Entity Data Model 工具](../data-tools/entity-data-model-tools-in-visual-studio.md)  
   
--   [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)  
+- [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)  
   
--   [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Visual Studio 中的 LINQ to SQL 工具)  
+- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Visual Studio 中的 LINQ to SQL 工具)  
   
--   [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+- [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)  
   
--   [用於疑難排解資料存取錯誤的其他資源](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+- [用於疑難排解資料存取錯誤的其他資源](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
--   [Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
+- [Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
   
--   [在 Visual Studio 中建立和管理資料庫與資料層應用程式](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
+- [在 Visual Studio 中建立和管理資料庫與資料層應用程式](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
   
--   [用於疑難排解資料存取錯誤的其他資源](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+- [用於疑難排解資料存取錯誤的其他資源](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
 ## <a name="see-also"></a>另請參閱  
  [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)

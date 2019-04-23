@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68ad2e66a4cecff01005f49aa6304a515a010170
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e6ad8a11e736595912b1b6c8757bd75dca1e53e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355574"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097423"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>逐步解說：設計 Outlook 表單區域
   自訂的表單區域會擴充標準或自訂的 Microsoft Office Outlook 表單。 在此逐步解說中，您要設計自訂的表單區域，它在連絡人項目的 [偵測器] 視窗中會顯示為新頁面。 這個表單區域會將地址資訊傳送至 Windows Live 當地搜尋網站，顯示連絡人清單中每個地址的對應。 如需表單區域的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
@@ -26,15 +26,15 @@ ms.locfileid: "58355574"
 
  這個逐步解說將說明下列工作：
 
--   建立新的 Outlook VSTO 增益集專案。
+- 建立新的 Outlook VSTO 增益集專案。
 
--   在 VSTO 增益集專案中加入表單區域。
+- 在 VSTO 增益集專案中加入表單區域。
 
--   設計表單區域的版面配置。
+- 設計表單區域的版面配置。
 
--   自訂表單區域的行為。
+- 自訂表單區域的行為。
 
--   測試 Outlook 表單區域。
+- 測試 Outlook 表單區域。
 
 > [!NOTE]
 >  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
@@ -53,11 +53,11 @@ ms.locfileid: "58355574"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>建立新的 Outlook VSTO 增益集專案
 
-1.  在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，建立 Outlook VSTO 增益集專案名稱**MapItAddIn**。
+1. 在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，建立 Outlook VSTO 增益集專案名稱**MapItAddIn**。
 
-2.  在 [新增專案]  對話方塊中，選取 [為方案建立目錄] 。
+2. 在 [新增專案]  對話方塊中，選取 [為方案建立目錄] 。
 
-3.  將專案儲存至任一目錄。
+3. 將專案儲存至任一目錄。
 
      如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
@@ -66,27 +66,27 @@ ms.locfileid: "58355574"
 
 ### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>在 Outlook VSTO 增益集專案中加入表單區域
 
-1.  在 **方案總管**，選取**MapItAddIn**專案。
+1. 在 **方案總管**，選取**MapItAddIn**專案。
 
-2.  在 [專案]  功能表中，按一下 [加入新項目] 。
+2. 在 [專案]  功能表中，按一下 [加入新項目] 。
 
-3.  在**加入新項目**對話方塊中，選取**Outlook 表單區域**，將檔案命名為**命名為 MapIt**，然後按一下**新增**。
+3. 在**加入新項目**對話方塊中，選取**Outlook 表單區域**，將檔案命名為**命名為 MapIt**，然後按一下**新增**。
 
      **NewOutlook 表單區域**精靈 隨即啟動。
 
-4.  在 [**選取您要建立此表單區域的方式**頁面上，按一下**設計新的表單區域**，然後按一下**下一步]**。
+4. 在 [**選取您要建立此表單區域的方式**頁面上，按一下**設計新的表單區域**，然後按一下**下一步]**。
 
-5.  在上**選取您想要建立的表單區域類型**頁面上，按一下**個別**，然後按一下**下一步**。
+5. 在上**選取您想要建立的表單區域類型**頁面上，按一下**個別**，然後按一下**下一步**。
 
      A*個別*表單區域在 Outlook 表單中加入的新頁面。 如需表單區域類型的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
 
-6.  在 [**提供描述文字和選取顯示設定**頁面上，輸入**Map It**中**名稱**] 方塊中。
+6. 在 [**提供描述文字和選取顯示設定**頁面上，輸入**Map It**中**名稱**] 方塊中。
 
      開啟連絡人項目時，這個名稱會出現在 [偵測器] 視窗的功能區上。
 
-7.  選取 [**偵測器處於撰寫模式**並**處於讀取模式的偵測器**，然後按一下**下一步]**。
+7. 選取 [**偵測器處於撰寫模式**並**處於讀取模式的偵測器**，然後按一下**下一步]**。
 
-8.  上**識別將顯示此表單區域的訊息類別**頁面上，清除**郵件**，選取**連絡**，然後按一下 **完成**.
+8. 上**識別將顯示此表單區域的訊息類別**頁面上，清除**郵件**，選取**連絡**，然後按一下 **完成**.
 
      A *MapIt.cs*或是*MapIt.vb*檔案新增至您的專案。
 
@@ -95,17 +95,17 @@ ms.locfileid: "58355574"
 
 ### <a name="to-design-the-layout-of-the-form-region"></a>設計表單區域的版面配置
 
-1.  在 [**方案總管] 中**，展開**MapItAddIn**專案，然後再連按兩下*MapIt.cs*或*MapIt.vb*開啟表單區域設計工具。
+1. 在 [**方案總管] 中**，展開**MapItAddIn**專案，然後再連按兩下*MapIt.cs*或*MapIt.vb*開啟表單區域設計工具。
 
-2.  設計工具中，以滑鼠右鍵按一下，然後按一下**屬性**。
+2. 設計工具中，以滑鼠右鍵按一下，然後按一下**屬性**。
 
-3.  在 **屬性**視窗中，將**大小**來**664、 469**。
+3. 在 **屬性**視窗中，將**大小**來**664、 469**。
 
      這可確保表單區域大到足以顯示地圖。
 
-4.  在 [ **檢視** ] 功能表上，按一下 [ **工具箱**]。
+4. 在 [ **檢視** ] 功能表上，按一下 [ **工具箱**]。
 
-5.  從**通用控制項**索引標籤**工具箱**，加入**WebBrowser**表單區域。
+5. 從**通用控制項**索引標籤**工具箱**，加入**WebBrowser**表單區域。
 
      **WebBrowser**會顯示每個列出連絡人的地址的對應。
 
@@ -143,13 +143,13 @@ ms.locfileid: "58355574"
 
 ### <a name="to-test-the-map-it-form-region"></a>測試 Map It 表單區域
 
-1.  按 **F5** 執行專案。
+1. 按 **F5** 執行專案。
 
      Outlook 即開啟。
 
-2.  在 Outlook 中，在**首頁**索引標籤上，按一下**新的項目**，然後按一下 **連絡人**。
+2. 在 Outlook 中，在**首頁**索引標籤上，按一下**新的項目**，然後按一下 **連絡人**。
 
-3.  在連絡人表單中，輸入**王美美**為連絡人的人員名稱，然後再指定下列三個位址。
+3. 在連絡人表單中，輸入**王美美**為連絡人的人員名稱，然後再指定下列三個位址。
 
     |地址類型|地址|
     |------------------|-------------|
@@ -157,20 +157,20 @@ ms.locfileid: "58355574"
     |**Home**|**1234 北部 St.北市**|
     |**其他**|**3456 Main St. Seattle, WA**|
 
-4.  儲存並關閉連絡人項目。
+4. 儲存並關閉連絡人項目。
 
-5.  重新開啟**王美美**連絡人項目。
+5. 重新開啟**王美美**連絡人項目。
 
     在 Outlook 中，這還**尋找**分組開啟通訊錄的連絡人，或輸入到王美美**搜尋人員**。
 
-6.  在 **顯示**群組的項目功能區中，按一下**Map It**開啟 Map It 表單區域。
+6. 在 **顯示**群組的項目功能區中，按一下**Map It**開啟 Map It 表單區域。
 
      Map It 表單區域即出現並顯示當地搜尋網站。 **商務**， **Home**，並**其他**都出現在便條簿中。 在便條簿中選取想要對應的地址。
 
 ## <a name="next-steps"></a>後續步驟
  從這些主題，您可以進一步了解如何自訂 Outlook 應用程式的 UI：
 
--   若要深入了解如何自訂 Outlook 項目的功能區，請參閱[outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)。
+- 若要深入了解如何自訂 Outlook 項目的功能區，請參閱[outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [存取表單區域在執行階段](../vsto/accessing-a-form-region-at-run-time.md)

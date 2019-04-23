@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7864728237e1fc84958d3edea6806508f1339902
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939695"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106861"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>HOW TO：偵錯部分信任應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,41 +45,41 @@ ms.locfileid: "58939695"
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>若要選擇部分信任應用程式的區域  
   
-1.  從**專案**功能表上，選擇_Projectname_**屬性**。  
+1. 從**專案**功能表上，選擇_Projectname_**屬性**。  
   
-2.  在  *Projectname*  屬性頁面上，按一下 **安全性**頁面。  
+2. 在  *Projectname*  屬性頁面上，按一下 **安全性**頁面。  
   
-3.  選取 **啟用 ClickOnce 安全性設定**。  
+3. 選取 **啟用 ClickOnce 安全性設定**。  
   
-4.  底下**從安裝應用程式的區域**、 按一下下拉式清單方塊，然後選擇您想要模擬安裝應用程式的區域。  
+4. 底下**從安裝應用程式的區域**、 按一下下拉式清單方塊，然後選擇您想要模擬安裝應用程式的區域。  
   
      **應用程式所需的權限**方格會顯示所有可用的權限。 核取記號會指出已授與應用程式的使用權限。  
   
-5.  如果您選擇的區域 **（自訂）**，選取正確的自訂設定，在**設定**資料行**權限**方格。  
+5. 如果您選擇的區域 **（自訂）**，選取正確的自訂設定，在**設定**資料行**權限**方格。  
   
-6.  按一下 [確定] 關閉屬性頁。  
+6. 按一下 [確定] 關閉屬性頁。  
   
 ### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>若要在發生安全性例外狀況時加入額外使用權限  
   
-1.  **例外狀況助理** 對話方塊隨即出現並顯示訊息：**SecurityException 未處理的。**  
+1. **例外狀況助理** 對話方塊隨即出現並顯示訊息：**SecurityException 未處理的。**  
   
-2.  在 **例外狀況助理**對話方塊的 **動作**，按一下 **新增至專案的權限**。  
+2. 在 **例外狀況助理**對話方塊的 **動作**，按一下 **新增至專案的權限**。  
   
-3.  **重新啟動偵錯** 對話方塊隨即出現。  
+3. **重新啟動偵錯** 對話方塊隨即出現。  
   
-    -   如果您想要重新啟動新的權限的偵錯工作階段，請按一下**是**。  
+    - 如果您想要重新啟動新的權限的偵錯工作階段，請按一下**是**。  
   
-    -   如果您不想要重新啟動，請按一下**No**。  
+    - 如果您不想要重新啟動，請按一下**No**。  
   
 ### <a name="to-view-extra-permissions-added-while-debugging"></a>若要在偵錯期間檢視已加入的額外使用權限  
   
-1.  從**專案**功能表上，選擇_Projectname_**屬性**。  
+1. 從**專案**功能表上，選擇_Projectname_**屬性**。  
   
-2.  在  *Projectname*  屬性頁面上，按一下 **安全性**頁面。  
+2. 在  *Projectname*  屬性頁面上，按一下 **安全性**頁面。  
   
-3.  看看**應用程式所需的權限**方格。 您新增任何額外使用權限中有兩個圖示**包含**資料行： 的正常核取記號，所有已納入的擁有權限，這與其他圖示，如下所示包含字母"i"的汽球。  
+3. 看看**應用程式所需的權限**方格。 您新增任何額外使用權限中有兩個圖示**包含**資料行： 的正常核取記號，所有已納入的擁有權限，這與其他圖示，如下所示包含字母"i"的汽球。  
   
-4.  用於垂直捲軸檢視整個**應用程式所需的權限**方格。  
+4. 用於垂直捲軸檢視整個**應用程式所需的權限**方格。  
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   

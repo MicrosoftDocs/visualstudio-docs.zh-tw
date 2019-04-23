@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba192d5ec897a1914ef0ba70188930c8c4ae7ecc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 0eb6cf6f460ca0cf164f6acb78b1309d2222ea39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679511"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089129"
 ---
 # <a name="graphics-pipeline-stages"></a>圖形管線階段
 [圖形管線階段] 視窗可協助您了解如何透過 Direct3D 圖形管線各階段轉換個別繪製呼叫。
@@ -43,14 +43,14 @@ ms.locfileid: "56679511"
 
 #### <a name="to-view-a-shaders-source-code"></a>檢視著色器的原始程式碼
 
--   在 [圖形管線階段] 視窗中，找出與您要檢查之著色器對應的著色器階段。 然後，遵循預覽影像下方的著色器階段標題連結；例如，遵循**頂點著色器 obj:30** 連結檢視頂點著色器原始程式碼。
+- 在 [圖形管線階段] 視窗中，找出與您要檢查之著色器對應的著色器階段。 然後，遵循預覽影像下方的著色器階段標題連結；例如，遵循**頂點著色器 obj:30** 連結檢視頂點著色器原始程式碼。
 
     > [!TIP]
     >  物件編號 **obj:30** 可在整個圖形分析器介面中識別此著色器 (例如在物件資料表和像素歷程記錄視窗中)。
 
 #### <a name="to-debug-a-shader"></a>偵錯著色器
 
--   在 [圖形管線階段] 視窗中，找出與您要偵錯之著色器對應的著色器階段。 然後，選擇預覽影像下方的 [開始偵錯]。 這個 HLSL 偵錯工具進入點預設為對應階段的第一個著色器引動過程，也就是著色器在這個繪製呼叫期間所處理的第一個像素、頂點或基本項目。 特定像素或頂點的這個著色器引動過程可以透過 [圖形像素歷程記錄] 進行存取。
+- 在 [圖形管線階段] 視窗中，找出與您要偵錯之著色器對應的著色器階段。 然後，選擇預覽影像下方的 [開始偵錯]。 這個 HLSL 偵錯工具進入點預設為對應階段的第一個著色器引動過程，也就是著色器在這個繪製呼叫期間所處理的第一個像素、頂點或基本項目。 特定像素或頂點的這個著色器引動過程可以透過 [圖形像素歷程記錄] 進行存取。
 
 ### <a name="the-pipeline-stages"></a>管線階段
  [管線階段] 視窗只會視覺化在繪製呼叫期間作用的管線階段。 圖形管線的每個階段都會轉換上一個階段的輸入，並將結果傳遞給下一個階段。 第一個階段 (輸入組合語言) 採用您應用程式的索引和頂點資料做為輸入；最後一個階段 (輸出合併) 會合併新轉譯的像素與畫面格緩衝區或轉譯目標的目前內容做為輸出，以產生最後在螢幕上看到的影像。
@@ -113,6 +113,6 @@ ms.locfileid: "56679511"
 
  ![頂點著色器階段結果預覽](media/gfx_diag_vertex_shader_preview.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [逐步解說：因端點著色而遺漏的物件](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [逐步解說：偵錯因著色而產生的顯示錯誤](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [逐步解說：針對因著色而產生的顯示錯誤進行偵錯](walkthrough-debugging-rendering-errors-due-to-shading.md)

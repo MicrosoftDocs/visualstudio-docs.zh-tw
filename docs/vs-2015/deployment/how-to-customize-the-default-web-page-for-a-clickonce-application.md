@@ -18,12 +18,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a8fc28666a7b0c1d44ad36fabffa19974fea5956
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 275d3d0547d83e794801c45a7554d58e181d64e7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941236"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107056"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>HOW TO：自訂 ClickOnce 應用程式的預設網頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ ms.locfileid: "58941236"
   
 ### <a name="to-customize-the-publish-web-page"></a>若要自訂 [發行 Web] 頁面  
   
-1.  發行 ClickOnce 應用程式到 Web 的位置。 如需詳細資訊，請參閱[如何：使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
+1. 發行 ClickOnce 應用程式到 Web 的位置。 如需詳細資訊，請參閱[如何：使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
   
-2.  在 Web 伺服器上，請在 Visual Web 設計工具或另一個 HTML 編輯器中開啟 Publish.htm 檔案。  
+2. 在 Web 伺服器上，請在 Visual Web 設計工具或另一個 HTML 編輯器中開啟 Publish.htm 檔案。  
   
-3.  自訂所需的頁面，並將它儲存。  
+3. 自訂所需的頁面，並將它儲存。  
   
-4.  選擇性。 若要防止 Visual Studio 覆寫您自訂的發行的網頁，請取消選取**自動產生部署網頁之後, 每個發行**發行選項 對話方塊中。  
+4. 選擇性。 若要防止 Visual Studio 覆寫您自訂的發行的網頁，請取消選取**自動產生部署網頁之後, 每個發行**發行選項 對話方塊中。  
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   

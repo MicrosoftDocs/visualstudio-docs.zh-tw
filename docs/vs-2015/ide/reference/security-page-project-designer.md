@@ -19,17 +19,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 79900957453464ea5f5dcf338f447dbe01399d11
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: cc6c7af3732f2f96ad53651b146898b655b68fdd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760092"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647921"
 ---
 # <a name="security-page-project-designer"></a>專案設計工具、安全性頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [專案設計工具] 的 [安全性] 頁面是用於設定使用 [!INCLUDE[ndptecclick](../../includes/ndptecclick-md.md)] 部署所部署之應用程式的程式碼存取安全性設定。 如需詳細資訊，請參閱 [ClickOnce 應用程式的程式碼存取安全性](../../deployment/code-access-security-for-clickonce-applications.md)。  
   
  若要存取 [安全性] 頁面，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 [專案設計工具] 出現時，請按一下 [安全性] 索引標籤。  
@@ -41,7 +40,7 @@ ms.locfileid: "54760092"
 > [!NOTE]
 >  當您使用 [發行精靈] 發佈應用程式時，會自動啟用此選項。  
   
- 選取此選項後，就可以選取兩個選項按鈕的其中之一：[這是完全信任的應用程式] 或 [這是部分信任的應用程式]。  
+ 當選取此選項時，可以選擇從兩個選項按鈕中選取其中一個：[這是完全信任的應用程式] 或 [這是部分信任的應用程式]。  
   
  WPF 網頁瀏覽器應用程式專案預設選取此選項。  
   
@@ -71,14 +70,14 @@ ms.locfileid: "54760092"
  **進階**  
  開啟 [[進階安全性設定] 對話方塊](../../ide/reference/advanced-security-settings-dialog-box.md)，這是用來設定以限制權限偵錯應用程式的設定。 偵錯期間會檢查這些設定，權限例外狀況會指出應用程式可能需要比在區域中定義更高的權限。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Security.Permissions.WebBrowserPermission>   
  <xref:System.Security.Permissions.MediaPermission>   
  [ClickOnce 應用程式的程式碼存取安全性](../../deployment/code-access-security-for-clickonce-applications.md)   
  [如何：啟用 ClickOnce 安全性設定](../../deployment/how-to-enable-clickonce-security-settings.md)   
- [如何：設定 ClickOnce 應用程式的安全性區域](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [如何：設定 ClickOnce 應用程式的自訂使用權限](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [如何：以限制權限偵錯 ClickOnce 應用程式](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [如何：ClickOnce 應用程式設定的安全性區域](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [如何：設定 ClickOnce 應用程式的自訂權限](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [如何：偵錯 ClickOnce 應用程式，以限制權限](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [ClickOnce 安全性和部署](../../deployment/clickonce-security-and-deployment.md)   
  [專案屬性參考](../../ide/reference/project-properties-reference.md)   
  [進階安全性設定對話方塊](../../ide/reference/advanced-security-settings-dialog-box.md)

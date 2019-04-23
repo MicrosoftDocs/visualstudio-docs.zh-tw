@@ -14,17 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59dbf1a866ce28351a2d6ec597972f70c6cc4917
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bb86a15e73ac2410ad763acd3b361e4a82bc44f1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54761607"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662422"
 ---
 # <a name="new-file-command"></a>新增檔案命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 建立新的檔案並開啟它。 檔案會顯示其他檔案資料夾之下。  
   
 ## <a name="syntax"></a>語法  

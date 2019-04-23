@@ -17,22 +17,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.openlocfilehash: f07791a02c5e84722e8193f21b7ed2fe37bdd7f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790247"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064280"
 ---
-# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>開始偵錯多執行緒應用程式 (C#，Visual Basic、 c + +)
+# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>開始偵錯多執行緒應用程式 (C#，Visual Basic 中， C++)
 
 Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的使用者介面項目。 本教學課程示範如何使用執行緒標記**平行堆疊** 視窗中，**平行監看式**視窗、 條件式中斷點和篩選中斷點。 完成本教學課程將讓您熟悉 Visual Studio 進行偵錯多執行緒應用程式的功能。
 
 下列兩個主題提供有關使用其他的多執行緒偵錯工具的其他資訊：
 
-- 若要使用**偵錯位置**工具列並**執行緒**視窗中，請參閱[逐步解說： 偵錯多執行緒應用程式](../debugger/how-to-use-the-threads-window.md)。
+- 若要使用**偵錯位置**工具列並**執行緒**視窗中，請參閱[逐步解說：偵錯多執行緒應用程式](../debugger/how-to-use-the-threads-window.md)。
 
-- 如需範例，會使用<xref:System.Threading.Tasks.Task>(managed 程式碼) 和並行執行階段 （c + +），請參閱[逐步解說： 偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)。 如需適用於最多執行緒應用程式類型的一般偵錯秘訣，閱讀該主題，並如下。
+- 如需範例，會使用<xref:System.Threading.Tasks.Task>(managed 程式碼) 和並行執行階段 (C++)，請參閱[逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)。 如需適用於最多執行緒應用程式類型的一般偵錯秘訣，閱讀該主題，並如下。
 
 您必須先在多執行緒應用程式專案。 範例如下。
 
@@ -41,10 +41,10 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
 1. 開啟 Visual Studio 並建立新專案。
 
     ::: moniker range=">=vs-2019"
-    按下**Esc**以關閉開始時間範圍。 型別**Ctrl + Q**來開啟 [搜尋] 方塊中，輸入**主控台**(或**c + +**)，選擇**範本**，然後：
+    按 **Esc** 關閉開始視窗。 型別**Ctrl + Q**來開啟 [搜尋] 方塊中，輸入**主控台**(或**c + +**)，選擇**範本**，然後：
 
     - 針對C#或 Visual Basic 中，選擇**建立新的主控台應用程式 (.NET Framework) 專案**或C#或 Visual Basic。 在出現的對話方塊中選擇 [建立]。
-    - C + +，請選擇**建立新的主控台應用程式專案**c + +。 在出現的對話方塊中選擇 [建立]。
+    - 針對C++，選擇**建立新的主控台應用程式專案**的C++。 在出現的對話方塊中選擇 [建立]。
 
     然後，輸入名稱，例如**MyThreadWalkthroughApp**然後按一下**建立**。
     ::: moniker-end
@@ -53,7 +53,7 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
 
     - 針對C#應用程式底下**視覺化C#** ，選擇**Windows 桌面**，然後在中間窗格選擇 **主控台應用程式 (.NET Framework)**。
     - Visual Basic 應用程式中，在**Visual Basic**，選擇**Windows 桌面**，然後在中間窗格選擇 **主控台應用程式 (.NET Framework)**。
-    - C + + 應用程式中下, **Visual c + +**，選擇**Windows 桌面**，然後選擇  **Windows 主控台應用程式**。
+    - 針對C++應用程式底下**視覺化C++** ，選擇**Windows Desktop**、，然後選擇  **Windows 主控台應用程式**。
 
     然後，輸入名稱，例如**MyThreadWalkthroughApp**然後按一下**確定**。
     ::: moniker-end
@@ -234,17 +234,17 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
 
 ### <a name="ShowThreadsInSource"></a>尋找執行緒標記  
 
-1.  在 [偵錯] 工具列中，選取**在來源中顯示執行緒** 按鈕![在來源中顯示執行緒](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")。
+1. 在 [偵錯] 工具列中，選取**在來源中顯示執行緒** 按鈕![在來源中顯示執行緒](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")。
 
 2. 按下**F11**前進一行程式碼偵錯工具一次。
 
-3.  查看來源視窗左邊的裝訂邊。 在這一行，您會看到*執行緒標記*圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，類似於扭曲的兩個執行緒。 執行緒標記表示執行緒會停在這個位置上。
+3. 查看來源視窗左邊的裝訂邊。 在這一行，您會看到*執行緒標記*圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，類似於扭曲的兩個執行緒。 執行緒標記表示執行緒會停在這個位置上。
 
     執行緒標記可能會部分隱藏在中斷點。
 
-4.  將指標移到執行緒標記上。 資料提示方塊會出現告訴您每個已停止的執行緒的名稱和執行緒 ID 編號。 名稱在此情況下，可能是`<noname>`。
+4. 將指標移到執行緒標記上。 資料提示方塊會出現告訴您每個已停止的執行緒的名稱和執行緒 ID 編號。 名稱在此情況下，可能是`<noname>`。
 
-5.  選取的執行緒標記，以查看可用的捷徑功能表上的選項。
+5. 選取的執行緒標記，以查看可用的捷徑功能表上的選項。
 
 ### <a name="ParallelStacks"></a>檢視執行緒位置
 
@@ -260,12 +260,12 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
     - 兩個執行緒已進入`ServerClass.InstanceMethod`，其中之一就是目前的執行緒 （黃色箭號），而另一個執行緒已停止在`Thread.Sleep`。
     - 新的執行緒 （右側） 同時啟動，但已停止在`ThreadHelper.ThreadStart`。
 
-2.  中的項目上按一下滑鼠右鍵**平行堆疊**視窗來查看可用的捷徑功能表上的選項。
+2. 中的項目上按一下滑鼠右鍵**平行堆疊**視窗來查看可用的捷徑功能表上的選項。
 
     您可以採取各種動作，從這些以滑鼠右鍵按一下功能表中，但本教學課程中我們將會顯示更多中的這些詳細資料**平行監看式**視窗 （下一節）。
 
     > [!NOTE]
-    > 若要查看清單檢視，每個執行緒的相關資訊，請使用**執行緒**視窗改。 請參閱[逐步解說： 偵錯多執行緒應用程式](../debugger/how-to-use-the-threads-window.md)。
+    > 若要查看清單檢視，每個執行緒的相關資訊，請使用**執行緒**視窗改。 請參閱[逐步解說：偵錯多執行緒應用程式](../debugger/how-to-use-the-threads-window.md)。
 
 ### <a name="set-a-watch-on-a-variable"></a>設定變數的監看式
 
@@ -292,14 +292,14 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
 
     標示所有選取的執行緒。 現在，您可以篩選以顯示已標幟的執行緒。
 
-3.  在 [**平行監看式**視窗中，選取**僅顯示已標幟的執行緒**] 按鈕![顯示已標幟的執行緒](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker")。
+3. 在 [**平行監看式**視窗中，選取**僅顯示已標幟的執行緒**] 按鈕![顯示已標幟的執行緒](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker")。
 
     只有已標幟的執行緒會出現在清單中。
 
     > [!TIP]
     > 您有已標幟的一些執行緒後，您可以以滑鼠右鍵按一下程式碼編輯器中的程式碼行，並選擇**執行至游標處加上旗標的執行緒**。 請務必選擇 所有已標幟的執行緒的程式碼會到達。 Visual Studio 將會暫停執行緒上所選取一行程式碼，讓您更輕鬆地控制所執行的順序[凍結和解除凍結執行緒](#bkmk_freeze)。
 
-4.  選取 [**僅顯示已標幟的執行緒**] 按鈕來切換回到**顯示所有執行緒**模式。
+4. 選取 [**僅顯示已標幟的執行緒**] 按鈕來切換回到**顯示所有執行緒**模式。
 
 5. 將執行緒取消標幟，請以滑鼠右鍵按一下一或多個已標幟的執行緒，在**平行監看式**視窗，然後選取**取消旗標**。
 
@@ -308,17 +308,17 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
 > [!TIP]
 > 您可以凍結和解除凍結 （暫止和繼續） 來控制執行緒執行工作順序的執行緒。 這可協助您解決並行存取問題，例如死結和競爭情形。
 
-1.  在 [**平行監看式**] 視窗，其中所有選取的資料列，以滑鼠右鍵按一下，然後選取**凍結**。
+1. 在 [**平行監看式**] 視窗，其中所有選取的資料列，以滑鼠右鍵按一下，然後選取**凍結**。
 
     在第二個資料行中，暫停圖示會顯示每個資料列。 暫停圖示表示已凍結執行緒。
 
-2.  取消選取所有其他資料列，選取一個資料列。
+2. 取消選取所有其他資料列，選取一個資料列。
 
-3.  以滑鼠右鍵按一下資料列，然後選取**解除凍結**。
+3. 以滑鼠右鍵按一下資料列，然後選取**解除凍結**。
 
     暫停圖示消失在此資料列，指出已不再凍結執行緒。
 
-4.  切換至程式碼編輯器，然後按**F11**。 只有在未凍結的執行緒執行。
+4. 切換至程式碼編輯器，然後按**F11**。 只有在未凍結的執行緒執行。
 
     應用程式可能也會產生一些新的執行緒。 未標幟及未凍結任何新的執行緒。
 
@@ -354,5 +354,5 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
 
 - [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [如何：在偵錯時切換到另一個執行緒](../debugger/how-to-switch-to-another-thread-while-debugging.md)
-- [如何： 使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)
+- [如何：使用 [平行堆疊] 視窗](../debugger/using-the-parallel-stacks-window.md)
 - [如何：使用平行監看式視窗](../debugger/how-to-use-the-parallel-watch-window.md)

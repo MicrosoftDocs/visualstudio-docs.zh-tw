@@ -23,23 +23,22 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 075b3d9201cc17537d62bbe467cc8fa6d3558c35
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9bc8b770e654442f14e693fda35d7cf6f5edbd12
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54773097"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654825"
 ---
 # <a name="rc-task"></a>RC 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包裝 Microsoft Windows 資源編譯器工具 (rc.exe)。 **RC** 工作會將資料指標、圖示、點陣圖、對話方塊和字型這類資源編譯為資源 (.res) 檔案。 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜資源編譯器＞。  
   
 ## <a name="parameters"></a>參數  
  下表描述 RCtask 的參數。 大部分的工作參數以及數組參數會對應到命令列選項。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|選擇性的 **String[]** 參數。<br /><br /> 將目錄加入至要搜尋 include 檔案的目錄清單。<br /><br /> 如需詳細資訊，請參閱 MSDN 網站上[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) 中的 **/I** 選項。|  
 |**AdditionalOptions**|選擇性的 **String** 參數。<br /><br /> 命令列 optionsor 範例清單：**"**_/option1 /option2 /option#_"。 使用此參數，來指定任何其他 **RC** 工作參數未表示的命令列選項。<br /><br /> 如需詳細資訊，請參閱 MSDN 網站上[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) 中的選項。|  

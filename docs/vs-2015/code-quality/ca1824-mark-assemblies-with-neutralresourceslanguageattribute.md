@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8690a1f05f54fbac9427f4a03412e0a8054c51d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052164"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824:組件必須標記 NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58942683"
 
 #### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>若要指定不因文化特性中性資源語言
 
-1.  在 **方案總管**，以滑鼠右鍵按一下您的專案，然後按一下**屬性**。
+1. 在 **方案總管**，以滑鼠右鍵按一下您的專案，然後按一下**屬性**。
 
-2.  從左側的導覽列中選取**應用程式**，然後按一下**組件資訊**。
+2. 從左側的導覽列中選取**應用程式**，然後按一下**組件資訊**。
 
-3.  在 **組件資訊**對話方塊方塊中，選取語言，從**中性語言**下拉式清單。
+3. 在 **組件資訊**對話方塊方塊中，選取語言，從**中性語言**下拉式清單。
 
-4.  按一下 [確定 **Deploying Office Solutions**]。
+4. 按一下 [確定] 。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  就可以隱藏此規則的警告。 不過，可能會降低啟動效能。

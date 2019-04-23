@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a145907ad76016802e0547fc251b929b913253d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb835c883050064d96c32c80de75d58299892f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945673"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040686"
 ---
 # <a name="accessing-models-from-text-templates"></a>從文字範本存取模型
 使用文字範本，您可以建立報表檔案、 原始程式碼檔案和其他以特定領域語言模型為基礎的文字檔。 如需文字範本的基本資訊，請參閱[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。 文字範本進行偵錯時您的 DSL 中，以實驗模式運作，並已部署的 DSL 所在的電腦上也能運作。
@@ -75,9 +75,9 @@ Here is a list of elements in the model:
 
  DSL 的指示詞處理器會執行兩項主要工作：
 
--   它有效地插入範本以參考您的 DSL 組件和匯入指示詞。 這可讓您在範本程式碼中使用您的網域類別。
+- 它有效地插入範本以參考您的 DSL 組件和匯入指示詞。 這可讓您在範本程式碼中使用您的網域類別。
 
--   它會載入您在中指定的檔案`requires`參數，並設定中的屬性`this`載入模型的根項目參考。
+- 它會載入您在中指定的檔案`requires`參數，並設定中的屬性`this`載入模型的根項目參考。
 
 ## <a name="validating-the-model-before-running-the-template"></a>執行範本之前先驗證模型
  您可能會導致要通過驗證，才能在執行範本的模型。

@@ -23,17 +23,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb1bdb99db405962f487bc9ec13de961f352ec48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a01220c1c8dc21bc770c509aacfe345fd3107ae5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941770"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105561"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>從資料庫將控制項繫結至圖片
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您可以使用**Zdroje dat**視窗，以在資料庫中的影像繫結至您的應用程式中的控制項。 比方說，您可以繫結至映像<xref:System.Windows.Controls.Image>控制 WPF 應用程式中，或為<xref:System.Windows.Forms.PictureBox>Windows Forms 應用程式中的控制項。  
   
  在資料庫中的圖片，通常會儲存為位元組陣列。 中的項目**資料來源**會儲存為位元組陣列有輸入其控制項的視窗設**無**預設情況下，因為位元組陣列可以包含簡單的可執行檔的位元組陣列中的任何項目大型的應用程式。 若要建立資料繫結控制項中的位元組陣列項目的**Zdroje dat**代表影像的視窗中，您必須選取要建立的控制項。  
@@ -42,17 +41,17 @@ ms.locfileid: "58941770"
   
 ## <a name="bind-a-picture-in-a-database-to-a-control"></a>將資料庫中的圖片繫結至控制項  
   
-1.  請確定您想要將控制項加入設計介面是在 WPF 設計工具或 Windows Form 設計工具中開啟。  
+1. 請確定您想要將控制項加入設計介面是在 WPF 設計工具或 Windows Form 設計工具中開啟。  
   
-2.  在 [ **Zdroje dat** ] 視窗中，展開所需的資料表，或要顯示其資料行或屬性的物件。  
+2. 在 [ **Zdroje dat** ] 視窗中，展開所需的資料表，或要顯示其資料行或屬性的物件。  
   
-3.  選取的資料行或屬性，其中包含影像資料，並從下拉式清單控制項清單中選取其中一個下列控制項：  
+3. 選取的資料行或屬性，其中包含影像資料，並從下拉式清單控制項清單中選取其中一個下列控制項：  
   
-    -   如果 WPF 設計工具開啟，請選取**映像**。  
+    - 如果 WPF 設計工具開啟，請選取**映像**。  
   
-    -   如果開啟 Windows Form 設計工具，請選取**PictureBox**。  
+    - 如果開啟 Windows Form 設計工具，請選取**PictureBox**。  
   
-    -   或者，您可以選取不同的控制項可支援資料繫結，並且可以顯示映像。 如果您想要使用的控制項不在可用的控制項清單中，您可以將它新增至清單，，然後選取它。 如需詳細資訊，請參閱 <<c0> [ 將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
+    - 或者，您可以選取不同的控制項可支援資料繫結，並且可以顯示映像。 如果您想要使用的控制項不在可用的控制項清單中，您可以將它新增至清單，，然後選取它。 如需詳細資訊，請參閱 <<c0> [ 將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)

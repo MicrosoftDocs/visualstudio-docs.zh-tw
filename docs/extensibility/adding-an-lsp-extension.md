@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7590350fdcfb74f90cd4441e97503a60b298c66
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 44b8e31fea497bff928ce19e5cb165c7809883cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104560"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>新增語言伺服器通訊協定延伸模組
 
@@ -259,7 +259,6 @@ namespace MockLanguageExtension
         [BaseDefinition(CodeRemoteContentDefinition.CodeRemoteContentTypeName)]
         internal static ContentTypeDefinition BarContentTypeDefinition;
 
-
         [Export]
         [FileExtension(".bar")]
         [ContentType("bar")]
@@ -290,13 +289,14 @@ namespace MockLanguageExtension
 
 請遵循下列步驟來設定的支援新增至您的 LSP 語言服務延伸模組：
 
-1. 將 JSON 檔案 (例如*MockLanguageExtensionSettings.json*) 在您的專案，其中包含設定和其預設值。 例如: 
+1. 將 JSON 檔案 (例如*MockLanguageExtensionSettings.json*) 在您的專案，其中包含設定和其預設值。 例如：
 
     ```json
     {
         "foo.maxNumberOfProblems": -1
     }
     ```
+
 2. JSON 檔案上按一下滑鼠右鍵，然後選取**屬性**。 變更**建置**動作 「 內容 」 和 「 Include in VSIX' 屬性設為 true。
 
 3. 實作 ConfigurationSections 並傳回 JSON 檔案中定義的設定的前置詞清單 （在 Visual Studio Code 中，這會對應至 package.json 中的組態區段名稱）：
@@ -319,6 +319,7 @@ namespace MockLanguageExtension
     ```
 
     範例：
+
     ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
     @="$PackageFolder$\MockLanguageExtensionSettings.json"
@@ -338,7 +339,7 @@ namespace MockLanguageExtension
 
 1. 使用者開啟含有您的伺服器擁有的檔案的工作區。
 2. 使用者新增的檔案 *.vs*稱為資料夾*VSWorkspaceSettings.json*。
-3. 使用者新增至一行*VSWorkspaceSettings.json*檔案伺服器提供的設定。 例如: 
+3. 使用者新增至一行*VSWorkspaceSettings.json*檔案伺服器提供的設定。 例如：
 
     ```json
     {

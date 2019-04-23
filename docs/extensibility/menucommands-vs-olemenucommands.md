@@ -8,12 +8,12 @@ helpviewer_keywords:
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: jillfra
-ms.openlocfilehash: 52ca70a0a3c4e129063c5d861fd4692dcd85cc9c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83d528efd499615c92db163aed4d0b8881e75fdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335492"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086009"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand 對比OleMenuCommand
 您可以藉由衍生自建立功能表命令<xref:System.ComponentModel.Design.MenuCommand>或從<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>物件，並實作適當的事件處理常式。 在大多數情況下，您可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就如同 VSPackage 專案範本一樣，但有時候您可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。
@@ -63,9 +63,9 @@ ms.locfileid: "56335492"
    </Button>
    ```
 
-   1.  設定 `guid` 和 `id` 欄位，以符合新命令的 GUID:ID。
+   1. 設定 `guid` 和 `id` 欄位，以符合新命令的 GUID:ID。
 
-   2.  設定 `priority` 屬性。
+   2. 設定 `priority` 屬性。
 
         .vsct 使用 `priority` 屬性來決定按鈕與父群組中其他物件的相對位置。
 
@@ -73,7 +73,7 @@ ms.locfileid: "56335492"
 
         省略 `priority` 屬性會將其值設定為 0。
 
-   3.  設定 `type` 屬性。 在大部分情況下，其值為 `"Button"`。 如需其他有效按鈕類型的描述，請參閱 < [Button 元素](../extensibility/button-element.md)。
+   3. 設定 `type` 屬性。 在大部分情況下，其值為 `"Button"`。 如需其他有效按鈕類型的描述，請參閱 < [Button 元素](../extensibility/button-element.md)。
 
 5. 在按鈕定義中，建立包含 [ButtonText](../extensibility/strings-element.md) 項目的 [字串](../extensibility/buttontext-element.md) 項目，以包含顯示在 IDE 中的功能表名稱，並建立 [CommandName](../extensibility/commandname-element.md) 項目，以包含用於存取 [ **命令** ] 視窗之功能表的命令名稱。
 
@@ -127,11 +127,11 @@ ms.locfileid: "56335492"
 
  對於直接使用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面處理命令的程式碼，您必須實作 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面和其方法。 兩個最重要的方法是 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>。
 
-1.  取得 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> 執行個體，如下列範例所示。
+1. 取得 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> 執行個體，如下列範例所示。
 
      [!code-csharp[ButtonGroup#21](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_5.cs)]
 
-2.  建立 <xref:System.ComponentModel.Design.CommandID> 物件，其以要處理之命令的 GUID 和 ID 作為參數，如下列範例所示。
+2. 建立 <xref:System.ComponentModel.Design.CommandID> 物件，其以要處理之命令的 GUID 和 ID 作為參數，如下列範例所示。
 
      [!code-csharp[ButtonGroup#22](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_6.cs)]
 
@@ -139,7 +139,7 @@ ms.locfileid: "56335492"
 
      或者，您可以使用 GUID 的原始字串值和 ID 的整數值，填入 <xref:System.ComponentModel.Design.CommandID> 物件。
 
-3.  具現化 <xref:System.ComponentModel.Design.MenuCommand> 或 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，指定處理命令的方法以及 <xref:System.ComponentModel.Design.CommandID>，如下列範例所示。
+3. 具現化 <xref:System.ComponentModel.Design.MenuCommand> 或 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，指定處理命令的方法以及 <xref:System.ComponentModel.Design.CommandID>，如下列範例所示。
 
      [!code-csharp[ButtonGroup#23](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_7.cs)]
 
@@ -147,7 +147,7 @@ ms.locfileid: "56335492"
 
      封裝範本所建立的命令，依預設會在封裝類別的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 方法中，傳遞到 `Initialize()` 物件。
 
-4.  <xref:System.ComponentModel.Design.MenuCommand> 適用於靜態命令。 動態功能表項目顯示需要 QueryStatus 事件處理常式。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 會加入 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件，此事件會在命令的主功能表開啟時發生，另外也會加入一些其他屬性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。
+4. <xref:System.ComponentModel.Design.MenuCommand> 適用於靜態命令。 動態功能表項目顯示需要 QueryStatus 事件處理常式。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 會加入 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件，此事件會在命令的主功能表開啟時發生，另外也會加入一些其他屬性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。
 
      封裝範本所建立的命令，依預設會在封裝類別的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 方法中，傳遞到 `Initialize()` 物件。 Visual Studio 精靈使用 `Initialize` 來實作 `MenuCommand`方法。 針對動態功能表項目顯示，您必須將這變更為 `OleMenuCommand`，如下一個步驟所示。 此外，若要變更功能表項目文字，您必須將 TextChanges 命令旗標加入 .vsct 檔案中的功能表命令按鈕，如下列範例所示
 
@@ -164,11 +164,11 @@ ms.locfileid: "56335492"
     </Button>
     ```
 
-5.  將新的功能表命令傳遞給 <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> 介面的 <xref:System.ComponentModel.Design.IMenuCommandService> 方法。 依預設，會針對封裝範本所建立的命令而完成，如下列範例所示
+5. 將新的功能表命令傳遞給 <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> 介面的 <xref:System.ComponentModel.Design.IMenuCommandService> 方法。 依預設，會針對封裝範本所建立的命令而完成，如下列範例所示
 
      [!code-csharp[ButtonGroup#24](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_9.cs)]
 
-6.  實作處理命令的方法。
+6. 實作處理命令的方法。
 
 ### <a name="to-implement-querystatus"></a>實作 QueryStatus
 
@@ -181,7 +181,7 @@ ms.locfileid: "56335492"
 
     `EventHandler` 物件會得到在查詢功能表命令的狀態時所呼叫之方法的名稱。
 
-2. 實作命令的查詢狀態處理常式方法。 `object` `sender` 參數可以轉換成 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，用來設定功能表命令的各種屬性，包括文字。 下表顯示 <xref:System.ComponentModel.Design.MenuCommand> 類別上的屬性 (MPF 類別 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 衍生自此類別)，這些屬性對應至 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 旗標。
+2. 實作命令的查詢狀態處理常式方法。  `object` `sender` 參數可以轉換成 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，用來設定功能表命令的各種屬性，包括文字。 下表顯示 <xref:System.ComponentModel.Design.MenuCommand> 類別上的屬性 (MPF 類別 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 衍生自此類別)，這些屬性對應至 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 旗標。
 
    |MenuCommand 屬性|OLECMDF 旗標|
    |--------------------------|------------------|
@@ -247,11 +247,11 @@ ms.locfileid: "56335492"
 
 #### <a name="to-implement-the-exec-method"></a>實作 Exec 方法
 
--   如果命令 `GUID` 不明，會傳回 `OLECMDERR_E_UNKNOWNGROUP`。
+- 如果命令 `GUID` 不明，會傳回 `OLECMDERR_E_UNKNOWNGROUP`。
 
--   如果 `GUID` 已知但命令 ID 不明時，會傳回 `OLECMDERR_E_NOTSUPPORTED`。
+- 如果 `GUID` 已知但命令 ID 不明時，會傳回 `OLECMDERR_E_NOTSUPPORTED`。
 
--   如果`GUID`和命令 ID 符合使用中的命令 guid: id 配對 *.vsct*檔案中，執行命令，並傳回相關聯的程式碼<xref:Microsoft.VisualStudio.VSConstants.S_OK>。
+- 如果`GUID`和命令 ID 符合使用中的命令 guid: id 配對 *.vsct*檔案中，執行命令，並傳回相關聯的程式碼<xref:Microsoft.VisualStudio.VSConstants.S_OK>。
 
 ## <a name="see-also"></a>另請參閱
 

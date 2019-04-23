@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d53c44a70818739e02c34071fd81b8bdfdec87f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f98a3211bebf832009b84fac0fc1305a4162c610
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944216"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668440"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>UML 類別圖上作業的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,6 @@ ms.locfileid: "58944216"
  這些是 UML 類別圖上類別或介面中作業的屬性。  
 
  若要查看作業的屬性，以滑鼠右鍵按一下類別或介面中的作業，即可在圖表中，然後**屬性**。 屬性會出現在**屬性**視窗。  
-
 
 |      屬性       |   預設值    |                                                                                                                                                                                 描述                                                                                                                                                                                 |
 |---------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

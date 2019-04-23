@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97b6b7a798483000916ee8c99a8000fd45b9cc00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 787785909cd980176fd9220f58198ae6cc272ea8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945594"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080237"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>錯誤：網站背景工作處理序已被 IIS 終止
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "58945594"
   
 1. 開啟 [系統管理工具] 視窗。  
   
-   1.  按一下 [開始]，然後選擇 [控制台]。  
+   1. 按一下 [開始]，然後選擇 [控制台]。  
   
-   2.  在 [控制台] 中依需要選擇 [切換到傳統檢視]，然後按兩下 [系統管理工具]。  
+   2. 在 [控制台] 中依需要選擇 [切換到傳統檢視]，然後按兩下 [系統管理工具]。  
   
 2. 在 [系統管理工具] 視窗中，按兩下 [Internet Information Services (IIS) 管理員]。  
   

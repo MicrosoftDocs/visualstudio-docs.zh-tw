@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76f34194381df92097e8dc2c42f1bf57a83f484b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d70794dddc02605c76c1af330a49af4be917c0e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939575"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050136"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>一個方案中有多個 DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ ms.locfileid: "58939575"
   
 1. 建立兩個或多個 DSL 方案和一個 VSIX 專案，然後將所有專案加入至一個方案。  
   
-   -   若要建立新的 VSIX 專案：在 **新的專案**對話方塊中，選取**視覺化C#** ，**擴充性**， **VSIX 專案**。  
+   - 若要建立新的 VSIX 專案：在 **新的專案**對話方塊中，選取**視覺化C#** ，**擴充性**， **VSIX 專案**。  
   
-   -   在 VSIX 方案目錄中建立兩個或多個 DSL 方案。  
+   - 在 VSIX 方案目錄中建立兩個或多個 DSL 方案。  
   
         針對每個 DSL，開啟 Visual Studio 的新執行個體。 建立新的 DSL，然後指定與 VSIX 方案相同的方案資料夾。  
   
         確定使用不同的副檔名建立各個 DSL。  
   
-   -   變更的名稱**Dsl**並**DslPackage**專案，使其完全不同。 例如：`Dsl1`、`DslPackage1`、`Dsl2`、`DslPackage2`。  
+   - 變更的名稱**Dsl**並**DslPackage**專案，使其完全不同。 例如：`Dsl1`、`DslPackage1`、`Dsl2`、`DslPackage2`。  
   
-   -   在每個**DslPackage\*\source.extension.tt**，這行更新為正確的 Dsl 專案名稱：  
+   - 在每個**DslPackage\*\source.extension.tt**，這行更新為正確的 Dsl 專案名稱：  
   
         `string dslProjectName = "Dsl2";`  
   
-   -   在 VSIX 方案中，加入 Dsl * 和 DslPackage\*專案。  
+   - 在 VSIX 方案中，加入 Dsl * 和 DslPackage\*專案。  
   
         您可能想將每組專案置於各自的方案資料夾中。  
   
 2. 合併 DSL 的 VSIX 資訊清單：  
   
-   1.  開啟_您的 vsix 專案_**\source.extension.manifest**。  
+   1. 開啟_您的 vsix 專案_**\source.extension.manifest**。  
   
-   2.  針對每個 DSL 中，選擇**加入內容**並新增：  
+   2. 針對每個 DSL 中，選擇**加入內容**並新增：  
   
-       -   `Dsl*` 專案做為**MEF 元件**  
+       - `Dsl*` 專案做為**MEF 元件**  
   
-       -   `DslPackage*` 專案做為**MEF 元件**  
+       - `DslPackage*` 專案做為**MEF 元件**  
   
-       -   `DslPackage*` 專案做為**VS 套件**  
+       - `DslPackage*` 專案做為**VS 套件**  
   
 3. 建置方案。  
   

@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476003"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856498"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教學課程：在同一個偵錯工作階段中進行 C# 和 C++ 偵錯
 
@@ -44,18 +44,18 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 - **使用 C++ 的桌面開發**
 - **.NET 桌面開發**或 **.NET Core 跨平台開發**，視您要建立的應用程式類型而定。
 
-如果您沒有 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 頁面免費進行安裝。
+如果您沒有 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/) 頁面免費進行安裝。
 
 如果您已安裝 Visual Studio，但沒有所需的工作負載，請在 Visual Studio [新增專案] 對話方塊的左窗格中，選取 [開啟 Visual Studio 安裝程式]。 在 Visual Studio 安裝程式中，選取您所需的工作負載，然後選取 [修改]。
 
 ## <a name="create-a-simple-native-dll"></a>建立簡單的原生 DLL
 
-**若要建立 DLL 專案檔：**
+**建立 DLL 專案的檔案：**
 
 1. 開啟 Visual Studio 並建立專案。
 
     ::: moniker range=">=vs-2019"
-    鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **空白專案**，選擇 [範本]，然後為 C++ 選擇 [建立新的空白專案專案]。 在出現的對話方塊中選擇 [建立]。 然後，鍵入像 **Mixed_Mode_Debugging** 的名稱，並按一下 [建立]。
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **空白專案**，選擇 [範本]，然後為 C++ 選擇 [建立新的空白專案專案]。 在出現的對話方塊中選擇 [建立]。 然後，鍵入像 **Mixed_Mode_Debugging** 的名稱，並按一下 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新專案] 對話方塊的左窗格中，於 [Visual C++] 下，選擇 [其他]，然後在中間的窗格中選擇 [空白專案]。 然後，鍵入像 **Mixed_Mode_Debugging** 的名稱，並按一下 [確定]。
@@ -106,7 +106,7 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 
 1. 選取 [檔案] > [全部儲存]，或按 **Ctrl**+**Shift**+**S** 以儲存檔案。
 
-**若要設定並建置 DLL 專案：**
+**設定並建置 DLL 專案：**
 
 1. 在 Visual Studio 工具列中，選取 [偵錯] 組態，然後選取 [x86] 或 [x64] 平台。 如果您的呼叫應用程式將會是一律是在 64 位元模式執行的 .NET Core，請選取 [x64] 作為平台。
 
@@ -132,7 +132,7 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 1. 開啟 Visual Studio 並建立新專案。
 
     ::: moniker range=">=vs-2019"
-    鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入**主控台**，選擇 [範本]，然後為 C# 選擇 [建立新的主控台應用程式 (.NET Framework) 專案]。 在出現的對話方塊中選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入**主控台**，選擇 [範本]，然後為 C# 選擇 [建立新的主控台應用程式 (.NET Framework) 專案]。 在出現的對話方塊中選擇 [建立]。
 
     然後，鍵入像 **Mixed_Mode_Calling_App** 的名稱，並按一下 [建立]。
     ::: moniker-end
@@ -193,7 +193,7 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 
 ### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>設定 .NET Core 應用程式的混合模式偵錯
 
-在 Visual Studio 2017 的大多數版本中，您必須使用 *launchSettings.json* 檔案 (而不是專案屬性) 為 .NET Core 應用程式中的機器碼啟用混合模式偵錯。 若要追蹤這項功能的 UI 更新，請參閱此 [GitHub 問題](https://github.com/dotnet/project-system/issues/1125)。
+自 Visual Studio 2017 開始，在多數的 Visual Studio 版本中，您必須使用 *launchSettings.json* 檔案而非使用專案屬性，來針對 .NET Core 應用程式中的機器碼啟用混合模式偵錯。 若要追蹤這項功能的 UI 更新，請參閱此 [GitHub 問題](https://github.com/dotnet/project-system/issues/1125)。
 
 1. 在 [方案總管] 中，展開 [屬性]，然後開啟 *launchSettings.json* 檔案。
 

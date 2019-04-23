@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066704"
 ---
 # <a name="gpu-usage"></a>GPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,11 +117,11 @@ ms.locfileid: "58941371"
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>從啟動應用程式延後程式碼剖析：  
   
-1.  在主功能表中，依序選擇 [偵錯] 和 [效能及診斷] (鍵盤：按 Alt+F2)。  
+1. 在主功能表中，依序選擇 [偵錯] 和 [效能及診斷] (鍵盤：按 Alt+F2)。  
   
-2.  在 [效能及診斷] 中樞，遵循 [GPU 使用量] 旁的 [設定] 連結。  
+2. 在 [效能及診斷] 中樞，遵循 [GPU 使用量] 旁的 [設定] 連結。  
   
-3.  在 [GPU 分析組態] 的 [一般] 屬性頁，清除 [在應用程式啟動時開始分析] 核取方塊以延遲分析。  
+3. 在 [GPU 分析組態] 的 [一般] 屬性頁，清除 [在應用程式啟動時開始分析] 核取方塊以延遲分析。  
   
      ![設定 GPU 使用量收集的開始時間](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
@@ -130,7 +130,7 @@ ms.locfileid: "58941371"
   
  如果使用這項設定延後收集程式碼剖析資訊，則使用 GPU 使用量工具執行您的應用程式時，[GPU 使用量工具] 視窗下半部中的額外連結會變成可用。 若要開始收集程式碼剖析資訊，請選擇 [開始收集其他詳細 GPU 使用量資料] 訊息中的 [開始] 連結。  
   
-##  <a name="hwsupport"></a> 硬體和驅動程式支援  
+## <a name="hwsupport"></a> 硬體和驅動程式支援  
  下列是支援的 GPU 硬體和驅動程式：  
   
 |Vendor|GPU 描述|需要驅動程式版本|  
@@ -143,10 +143,10 @@ ms.locfileid: "58941371"
   
 ## <a name="see-also"></a>另請參閱  
   
--   [Solve the Tough Graphics Problems with your Game Using DirectX Tools (video)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools) (使用 DirectX 工具解決遊戲的艱難圖形問題 (影片))  
+- [Solve the Tough Graphics Problems with your Game Using DirectX Tools (video)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools) (使用 DirectX 工具解決遊戲的艱難圖形問題 (影片))  
   
--   [GPU Usage Tool in Visual Studio (video)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715) (Visual Studio 中的 GPU 使用量工具 (影片))  
+- [GPU Usage Tool in Visual Studio (video)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715) (Visual Studio 中的 GPU 使用量工具 (影片))  
   
--   [GPU Usage tool in Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx) (Visual Studio 2013 Update 4 CTP1 中的 GPU 使用量工具 (部落格))  
+- [GPU Usage tool in Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx) (Visual Studio 2013 Update 4 CTP1 中的 GPU 使用量工具 (部落格))  
   
--   [GPU Usage for DirectX in Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx) (Visual Studio 中的 DirectX GPU 使用量 (部落格))
+- [GPU Usage for DirectX in Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx) (Visual Studio 中的 DirectX GPU 使用量 (部落格))

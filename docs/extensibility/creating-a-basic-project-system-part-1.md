@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fd695c5a33ea8ea7bb9895d34995abd37db7019
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: cb6793855fc4df4080a7f94799cfe2372308a5a0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060302"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>建立基本專案系統，第 1 部分
 在 Visual Studio 中，專案會是開發人員用來組織原始程式碼檔和其他資產的容器。 專案會顯示為子系中的解決方案**方案總管 中**。 專案可讓您組織、 建置、 偵錯和部署來源的程式碼及建立 Web 服務、 資料庫和其他資源的參考。
@@ -39,21 +39,21 @@ ms.locfileid: "56843957"
 
  本逐步解說將說明如何完成這些工作：
 
--   建立基本專案類型。
+- 建立基本專案類型。
 
--   建立基本專案範本。
+- 建立基本專案範本。
 
--   向 Visual Studio 專案範本。
+- 向 Visual Studio 專案範本。
 
--   建立專案執行個體 %installationdirectory**新的專案**] 對話方塊中，然後使用 [您的範本。
+- 建立專案執行個體 %installationdirectory**新的專案**] 對話方塊中，然後使用 [您的範本。
 
--   建立您的專案系統的專案處理站。
+- 建立您的專案系統的專案處理站。
 
--   建立您的專案系統的專案節點。
+- 建立您的專案系統的專案節點。
 
--   加入專案系統的自訂圖示。
+- 加入專案系統的自訂圖示。
 
--   實作基本的範本參數替代。
+- 實作基本的範本參數替代。
 
 ## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
@@ -240,11 +240,11 @@ Templates
 ## <a name="add-the-managed-package-framework-code"></a>加入 Managed Package Framework 中的程式碼
  實作專案套件與 project factory 之間的連線。
 
--   Managed Package Framework 中，匯入的原始程式碼檔案。
+- Managed Package Framework 中，匯入的原始程式碼檔案。
 
-    1.  卸載 SimpleProject 專案 (在**方案總管**，選取專案節點，然後在操作功能表上按一下 **卸載專案**。) 和 XML 編輯器中開啟專案檔案。
+    1. 卸載 SimpleProject 專案 (在**方案總管**，選取專案節點，然後在操作功能表上按一下 **卸載專案**。) 和 XML 編輯器中開啟專案檔案。
 
-    2.  將下列區塊新增至專案檔 (正上方\<匯入 > 區塊)。 設定`ProjectBasePath`的位置*ProjectBase.files*在 Managed Package Framework 程式碼中您剛才下載的檔案。 您可能必須新增反斜線的路徑名稱。 如果您不這樣做，專案可能無法找到的 Managed 封裝架構原始程式碼。
+    2. 將下列區塊新增至專案檔 (正上方\<匯入 > 區塊)。 設定`ProjectBasePath`的位置*ProjectBase.files*在 Managed Package Framework 程式碼中您剛才下載的檔案。 您可能必須新增反斜線的路徑名稱。 如果您不這樣做，專案可能無法找到的 Managed 封裝架構原始程式碼。
 
         ```
         <PropertyGroup>
@@ -257,38 +257,38 @@ Templates
         > [!IMPORTANT]
         >  別忘了在路徑結尾的反斜線。
 
-    3.  重新載入專案。
+    3. 重新載入專案。
 
-    4.  加入下列組件的參考：
+    4. 加入下列組件的參考：
 
-        -   `Microsoft.VisualStudio.Designer.Interfaces` (in *\<VSSDK install>\VisualStudioIntegration\Common\Assemblies\v2.0*)
+        - `Microsoft.VisualStudio.Designer.Interfaces` (in *\<VSSDK install>\VisualStudioIntegration\Common\Assemblies\v2.0*)
 
-        -   `WindowsBase`
+        - `WindowsBase`
 
-        -   `Microsoft.Build.Tasks.v4.0`
+        - `Microsoft.Build.Tasks.v4.0`
 
 ### <a name="to-initialize-the-project-factory"></a>若要初始化 project factory
 
-1.  在  *SimpleProjectPackage.cs*檔案中，新增下列`using`陳述式。
+1. 在  *SimpleProjectPackage.cs*檔案中，新增下列`using`陳述式。
 
     ```csharp
     using Microsoft.VisualStudio.Project;
     ```
 
-2.  衍生`SimpleProjectPackage`類別從`Microsoft.VisualStudio.Package.ProjectPackage`。
+2. 衍生`SimpleProjectPackage`類別從`Microsoft.VisualStudio.Package.ProjectPackage`。
 
     ```csharp
     public sealed class SimpleProjectPackage : ProjectPackage
     ```
 
-3.  註冊專案 factory。 加入下列這一行加入`SimpleProjectPackage.Initialize`方法，正後方`base.Initialize`。
+3. 註冊專案 factory。 加入下列這一行加入`SimpleProjectPackage.Initialize`方法，正後方`base.Initialize`。
 
     ```csharp
     base.Initialize();
     this.RegisterProjectFactory(new SimpleProjectFactory(this));
     ```
 
-4.  實作抽象屬性`ProductUserContext`:
+4. 實作抽象屬性`ProductUserContext`:
 
     ```csharp
     public override string ProductUserContext
@@ -297,19 +297,19 @@ Templates
     }
     ```
 
-5.  在  *SimpleProjectFactory.cs*，新增下列`using`陳述式的現有`using`陳述式。
+5. 在  *SimpleProjectFactory.cs*，新增下列`using`陳述式的現有`using`陳述式。
 
     ```csharp
     using Microsoft.VisualStudio.Project;
     ```
 
-6.  衍生`SimpleProjectFactory`類別從`ProjectFactory`。
+6. 衍生`SimpleProjectFactory`類別從`ProjectFactory`。
 
     ```csharp
     class SimpleProjectFactory : ProjectFactory
     ```
 
-7.  新增下列虛擬方法，以`SimpleProjectFactory`類別。 您會實作這個方法，在稍後的章節。
+7. 新增下列虛擬方法，以`SimpleProjectFactory`類別。 您會實作這個方法，在稍後的章節。
 
     ```csharp
     protected override ProjectNode CreateProject()
@@ -318,7 +318,7 @@ Templates
     }
     ```
 
-8.  加入下列欄位和建構函式以`SimpleProjectFactory`類別。 這`SimpleProjectPackage`參考快取中的私用欄位，讓它可以用於設定服務提供者站台。
+8. 加入下列欄位和建構函式以`SimpleProjectFactory`類別。 這`SimpleProjectPackage`參考快取中的私用欄位，讓它可以用於設定服務提供者站台。
 
     ```csharp
     private SimpleProjectPackage package;
@@ -337,17 +337,17 @@ Templates
 
 ### <a name="to-test-the-project-factory-implementation"></a>若要測試的 project factory 實作
 
-1.  在  *SimpleProjectFactory.cs*檔案中，在下一行中設定中斷點`SimpleProjectFactory`建構函式。
+1. 在  *SimpleProjectFactory.cs*檔案中，在下一行中設定中斷點`SimpleProjectFactory`建構函式。
 
     ```csharp
     this.package = package;
     ```
 
-2.  按下**F5**啟動 Visual Studio 的實驗執行個體。
+2. 按下**F5**啟動 Visual Studio 的實驗執行個體。
 
-3.  在實驗執行個體中，開始建立新的專案。 在 **新的專案**對話方塊中，選取**SimpleProject**專案類型，然後按一下**確定**。 執行會在中斷點停止。
+3. 在實驗執行個體中，開始建立新的專案。 在 **新的專案**對話方塊中，選取**SimpleProject**專案類型，然後按一下**確定**。 執行會在中斷點停止。
 
-4.  清除中斷點，然後停止偵錯。 因為我們有尚未建立的專案節點，則專案建立程式碼還是擲回例外狀況。
+4. 清除中斷點，然後停止偵錯。 因為我們有尚未建立的專案節點，則專案建立程式碼還是擲回例外狀況。
 
 ## <a name="extend-the-projectnode-class"></a>擴充 ProjectNode 類別
  現在您可以實作`SimpleProjectNode`類別，衍生自`ProjectNode`類別。 `ProjectNode`基底類別處理的專案建立下列工作：
@@ -416,13 +416,13 @@ Templates
 
 ### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>若要連接的 project factory 類別與節點類別
 
-1.  在  *SimpleProjectFactory.cs*檔案中，新增下列`using`陳述式：
+1. 在  *SimpleProjectFactory.cs*檔案中，新增下列`using`陳述式：
 
     ```csharp
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;
     ```
 
-2.  取代`SimpleProjectFactory.CreateProject`方法藉由使用下列程式碼。
+2. 取代`SimpleProjectFactory.CreateProject`方法藉由使用下列程式碼。
 
     ```csharp
     protected override ProjectNode CreateProject()
@@ -434,18 +434,18 @@ Templates
     }
     ```
 
-3.  重建方案，並確認它建置無誤。
+3. 重建方案，並確認它建置無誤。
 
 ## <a name="test-the-projectnode-class"></a>測試 ProjectNode 類別
  測試您的專案處理站，以查看它是否會建立專案階層架構。
 
 ### <a name="to-test-the-projectnode-class"></a>若要測試 ProjectNode 類別
 
-1.  按 **F5** 開始偵錯作業。 在實驗執行個體中，建立新的 SimpleProject。
+1. 按 **F5** 開始偵錯作業。 在實驗執行個體中，建立新的 SimpleProject。
 
-2.  Visual Studio 應該呼叫您專案的處理站建立的專案。
+2. Visual Studio 應該呼叫您專案的處理站建立的專案。
 
-3.  關閉 Visual Studio 的實驗執行個體。
+3. 關閉 Visual Studio 的實驗執行個體。
 
 ## <a name="add-a-custom-project-node-icon"></a>加入自訂的專案節點圖示
  在前一節中的 [專案] 節點圖示是預設的圖示。 您可以將它變更自訂圖示。
@@ -527,13 +527,13 @@ Templates
 
 ### <a name="to-test-the-custom-project-node-icon"></a>若要測試自訂專案節點圖示
 
-1.  開始偵錯，並在實驗執行個體中建立新的 SimpleProject。
+1. 開始偵錯，並在實驗執行個體中建立新的 SimpleProject。
 
-2.  在新建的專案中，注意*SimpleProjectNode.bmp*做為專案節點圖示。
+2. 在新建的專案中，注意*SimpleProjectNode.bmp*做為專案節點圖示。
 
      ![簡單專案新增專案 節點](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")
 
-3.  開啟*Program.cs*程式碼編輯器中。 您應該會看到類似下列的程式碼的原始程式碼。
+3. 開啟*Program.cs*程式碼編輯器中。 您應該會看到類似下列的程式碼的原始程式碼。
 
     ```csharp
     using System;
@@ -601,9 +601,9 @@ Templates
 
 3. 檢查的值`nameSpace`和`className`參數。
 
-   -   `nameSpace` 指定的值\<RootNamespace > 中的項目*\Templates\Projects\SimpleProject\SimpleProject.myproj*專案範本檔案。 此處的值為 `MyRootNamespace`。
+   - `nameSpace` 指定的值\<RootNamespace > 中的項目*\Templates\Projects\SimpleProject\SimpleProject.myproj*專案範本檔案。 此處的值為 `MyRootNamespace`。
 
-   -   `className` 值會指定類別的來源檔案名稱，但不包括檔案名稱副檔名。 在此案例中，第一個檔案複製到目的資料夾是*AssemblyInfo.cs*; 因此，類別名稱的值是`AssemblyInfo`。
+   - `className` 值會指定類別的來源檔案名稱，但不包括檔案名稱副檔名。 在此案例中，第一個檔案複製到目的資料夾是*AssemblyInfo.cs*; 因此，類別名稱的值是`AssemblyInfo`。
 
 4. 移除中斷點，然後按**F5**繼續執行。
 

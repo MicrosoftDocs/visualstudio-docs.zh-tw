@@ -10,86 +10,86 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85561ff823362941b09b52189c0187dc65997e23
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 085e5ae408155227c1d60e312b7e9623be2e3897
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064449"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>逐步解說：將功能加入至自訂編輯器
 建立自訂編輯器之後，您可以加入更多的功能。
 
 ## <a name="to-create-an-editor-for-a-vspackage"></a>若要建立 VSPackage 的編輯器
 
-1.  使用 Visual Studio Package 專案範本，以建立自訂編輯器。
+1. 使用 Visual Studio Package 專案範本，以建立自訂編輯器。
 
      如需詳細資訊，請參閱[逐步解說：建立自訂編輯器](../extensibility/walkthrough-creating-a-custom-editor.md)。
 
-2.  決定是否要讓您支援單一檢視或多個檢視的編輯器。
+2. 決定是否要讓您支援單一檢視或多個檢視的編輯器。
 
      支援的編輯器**開新視窗**命令，或有表單檢視] 和 [程式碼檢視中，需要個別的文件資料物件和文件檢視物件。 在支援單一檢視編輯器中，文件資料物件，以及文件檢視物件上實作相同的物件。
 
      如需多個檢視的範例，請參閱 <<c0> [ 支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)。
 
-3.  藉由設定實作編輯器 factory<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>介面。
+3. 藉由設定實作編輯器 factory<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>介面。
 
      如需詳細資訊，請參閱 <<c0> [ 編輯器 factory](../extensibility/editor-factories.md)。
 
-4.  決定您是否想要使用就地啟用編輯器，或簡化嵌入管理文件檢視物件的視窗。
+4. 決定您是否想要使用就地啟用編輯器，或簡化嵌入管理文件檢視物件的視窗。
 
      簡化的內嵌編輯器視窗中將裝載標準文件檢視中時就地啟用編輯器視窗裝載 ActiveX 控制項或其他作用中的物件，為其文件檢視。 如需詳細資訊，請參閱 <<c0> [ 簡化內嵌](../extensibility/simplified-embedding.md)並[就地啟用](../extensibility/in-place-activation.md)。
 
-5.  實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面，以處理命令。
+5. 實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面，以處理命令。
 
-6.  提供文件持續性和回應外部檔案變更：
+6. 提供文件持續性和回應外部檔案變更：
 
-    1.  若要保留檔案，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>和<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>編輯器的文件資料物件。
+    1. 若要保留檔案，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>和<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>編輯器的文件資料物件。
 
-    2.  若要回應外部檔案變更，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>編輯器的文件資料物件。
+    2. 若要回應外部檔案變更，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>編輯器的文件資料物件。
 
         > [!NOTE]
         >  呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>若要取得的指標`IVsFileChangeEx`。
 
-7.  協調與原始程式碼控制的文件編輯事件。 請依照下列步驟：
+7. 協調與原始程式碼控制的文件編輯事件。 請依照下列步驟：
 
-    1.  取得指標`IVsQueryEditQuerySave2`藉由呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>。
+    1. 取得指標`IVsQueryEditQuerySave2`藉由呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>。
 
-    2.  第一次編輯事件發生時，呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>方法。
+    2. 第一次編輯事件發生時，呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>方法。
 
          這個方法會提示使用者簽出檔案，如果尚未簽出。請務必處理 avert 錯誤的 「 檔案尚未簽出 」 條件。
 
-    3.  同樣地，再儲存檔案，呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>方法。
+    3. 同樣地，再儲存檔案，呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>方法。
 
          這個方法會提示使用者儲存檔案，如果它尚未儲存，或如果自上次儲存變更。
 
-8.  啟用**屬性**視窗可以顯示的文字編輯器 中選取的屬性。 請依照下列步驟：
+8. 啟用**屬性**視窗可以顯示的文字編輯器 中選取的屬性。 請依照下列步驟：
 
-    1.  呼叫<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>每個時間文字選取範圍變更，並傳遞的實作中<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>。
+    1. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>每個時間文字選取範圍變更，並傳遞的實作中<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>。
 
-    2.  呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>服務來取得變數的指標， <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>。
+    2. 呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>服務來取得變數的指標， <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>。
 
 9. 讓使用者拖放項目之間的編輯器與**工具箱**，或外部編輯器 （例如 Microsoft Word) 之間，**工具箱**。 請依照下列步驟：
 
-    1.  實作`IDropTarget`在您的編輯器將提醒 IDE 編輯器是置放目標上。
+    1. 實作`IDropTarget`在您的編輯器將提醒 IDE 編輯器是置放目標上。
 
-    2.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>讓您的編輯器可以啟用和停用中的項目在檢視上的介面**工具箱**。
+    2. 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>讓您的編輯器可以啟用和停用中的項目在檢視上的介面**工具箱**。
 
-    3.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A>並呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox>服務，以取得的指標<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>介面。
+    3. 實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A>並呼叫`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox>服務，以取得的指標<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>介面。
 
          這些步驟可讓您將新的項目加入 VSPackage**工具箱**。
 
 10. 決定是否要任何選用的功能讓您的編輯器。
 
-    -   如果您想要您的編輯器支援尋找和取代命令，實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>。
+    - 如果您想要您的編輯器支援尋找和取代命令，實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>。
 
-    -   如果您想要使用您的編輯器中的文件大綱工具視窗中，實作`IVsDocOutlineProvider`。
+    - 如果您想要使用您的編輯器中的文件大綱工具視窗中，實作`IVsDocOutlineProvider`。
 
-    -   如果您想要使用您的編輯器中的狀態列，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>並呼叫`QueryService`for<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>若要取得的指標`IVsStatusBar`。
+    - 如果您想要使用您的編輯器中的狀態列，實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>並呼叫`QueryService`for<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>若要取得的指標`IVsStatusBar`。
 
          比方說，編輯器可以顯示行 / 資料行資訊、 選取模式 （串流 / 方塊），並插入模式 （插入 / overstrike）。
 
-    -   如果您想要您的編輯器支援`Undo`命令時，建議的方法是使用 OLE 的復原管理員模型。 或者，您可以讓編輯器控制代碼`Undo`直接命令。
+    - 如果您想要您的編輯器支援`Undo`命令時，建議的方法是使用 OLE 的復原管理員模型。 或者，您可以讓編輯器控制代碼`Undo`直接命令。
 
 11. 建立登錄資訊，包括 Guid VSPackage、 功能表、 編輯器和其他功能。
 
@@ -148,9 +148,9 @@ ms.locfileid: "56716411"
 
 - 有兩個地方的自訂編輯器可以公開 automation 物件：
 
-  -   `Document.Object`
+  - `Document.Object`
 
-  -   `Window.Object`
+  - `Window.Object`
 
 ## <a name="see-also"></a>另請參閱
 - [參與 automation 模型](../extensibility/internals/contributing-to-the-automation-model.md)

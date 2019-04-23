@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3beeb41d89f96cea8ab0f7f97bada815101f7e2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526642"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079704"
 ---
 # <a name="graph-view"></a>圖形檢視
 
@@ -120,11 +120,11 @@ ms.locfileid: "57526642"
 
  在圖表檢視中啟用的復原/取消復原功能可執行下列動作：
 
--   透過拖放方式加入單一節點。
+- 透過拖放方式加入單一節點。
 
--   從結構描述總管或開始檢視查詢中的搜尋結果加入多個節點。
+- 從結構描述總管或開始檢視查詢中的搜尋結果加入多個節點。
 
--   刪除單一或多個節點。
+- 刪除單一或多個節點。
 
 ## <a name="zoom"></a>縮放
 
@@ -132,9 +132,9 @@ ms.locfileid: "57526642"
 
  您可以使用下列方式控制縮放：
 
--   按住**Ctrl**索引鍵，同時轉動滑鼠滾輪的滑鼠停留在圖表檢視介面時。
+- 按住**Ctrl**索引鍵，同時轉動滑鼠滾輪的滑鼠停留在圖表檢視介面時。
 
--   使用滑桿控制項。 滑桿會顯示目前的縮放層級。
+- 使用滑桿控制項。 滑桿會顯示目前的縮放層級。
 
 當您選取它、 將滑鼠停留，或使用縮放滑桿是不透明**Ctrl**滑鼠滾輪來放大; 所有其他時候，它是透明。
 

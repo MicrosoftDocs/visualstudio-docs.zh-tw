@@ -15,17 +15,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e856a4fcdc2fbe9174c91910f6676be9e03fafb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7a39b6f84185c78ccea11e09e628050a6bf4f601
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802670"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053391"
 ---
 # <a name="immediate-window"></a>即時運算視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [即時運算] 視窗用來偵錯和評估運算式、執行陳述式、列印變數值等等。 它可讓您在偵錯期間，輸入開發語言要評估或執行的運算式。 若要顯示 [即時運算] 視中，請開啟專案以進行編輯，然後從 [偵錯] 功能表中選擇 [視窗]，並選取 [即時運算]，或按 CTRL+ALT+I。  
   
  您可以使用此視窗來發出個別的 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 命令。 可用的命令包括 `EvaluateStatement`，它可用來指派值給變數。 [即時運算] 視窗也支援 IntelliSense。  
@@ -119,15 +118,15 @@ ms.locfileid: "54802670"
   
 #### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>切換 [即時運算] 視窗中發生第一個例外狀況的通知  
   
-1.  在 [檢視] 功能表上，按一下 [其他視窗]，然後按一下 [輸出]。  
+1. 在 [檢視] 功能表上，按一下 [其他視窗]，然後按一下 [輸出]。  
   
-2.  以滑鼠右鍵按一下 [輸出] 視窗的文字區域，然後選取或取消選取 [例外狀況訊息]。  
+2. 以滑鼠右鍵按一下 [輸出] 視窗的文字區域，然後選取或取消選取 [例外狀況訊息]。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用偵錯工具巡覽程式碼](../../debugger/navigating-through-code-with-the-debugger.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [Visual Studio 偵錯](../../debugger/debugging-in-visual-studio.md)   
  [偵錯工具基礎](../../debugger/debugger-basics.md)   
- [逐步解說：在設計階段進行偵錯](../../debugger/walkthrough-debugging-at-design-time.md)   
+ [逐步解說：在設計階段偵錯](../../debugger/walkthrough-debugging-at-design-time.md)   
  [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)   
  [在 Visual Studio 中使用規則運算式](../../ide/using-regular-expressions-in-visual-studio.md)

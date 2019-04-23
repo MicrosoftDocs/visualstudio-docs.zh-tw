@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25542f9179917c5675eb56753f79db895f5d2ddf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b395b396ab182ca03be35cddc8d237506b43e39c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940062"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066607"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>HOW TO：建立對應至預存程序和函式的 DataContext 方法 (O/R 設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 預存程序和函式可以加入至[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]做為<xref:System.Data.Linq.DataContext>方法。 只要呼叫這個方法並傳入必要參數，就會在資料庫上執行預存程序或函式，並以 <xref:System.Data.Linq.DataContext> 方法的傳回型別傳回資料。 如需詳細資訊<xref:System.Data.Linq.DataContext>方法，請參閱[DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)。  
   
 > [!NOTE]
@@ -35,17 +34,17 @@ ms.locfileid: "58940062"
   
 #### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>若要建立可傳回自動產生型別的 DataContext 方法  
   
-1.  在**伺服器總管**/**資料庫總管**，依序展開**預存程序**您正在使用資料庫的節點。  
+1. 在**伺服器總管**/**資料庫總管**，依序展開**預存程序**您正在使用資料庫的節點。  
   
-2.  尋找所要的預存程序，並將它拖曳至 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]的空白區域。  
+2. 尋找所要的預存程序，並將它拖曳至 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]的空白區域。  
   
      <xref:System.Data.Linq.DataContext> 方法會以自動產生的傳回型別建立，並出現在 [方法] 窗格中。  
   
 #### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>若要建立具有實體類別之傳回型別的 DataContext 方法  
   
-1.  在**伺服器總管**/**資料庫總管**，依序展開**預存程序**您正在使用資料庫的節點。  
+1. 在**伺服器總管**/**資料庫總管**，依序展開**預存程序**您正在使用資料庫的節點。  
   
-2.  尋找所要的預存程序，並將它拖曳至 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]的現有實體類別。  
+2. 尋找所要的預存程序，並將它拖曳至 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]的現有實體類別。  
   
      <xref:System.Data.Linq.DataContext> 方法會以所選取實體類別的傳回型別建立，並出現在 [方法] 窗格中。  
   

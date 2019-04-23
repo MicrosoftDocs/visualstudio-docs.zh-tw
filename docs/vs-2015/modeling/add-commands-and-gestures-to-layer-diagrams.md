@@ -12,12 +12,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0be2860408634d78b8d25403de99e7fcb410422c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 449e273659df1e3b6846ff8e7e3d8d6943ba69f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945111"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079820"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>將命令和軌跡加入分層圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,30 +62,30 @@ ms.locfileid: "58945111"
   
 #### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>將圖層擴充功能加入個別 VSIX  
   
-1.  在新的或現有的 Visual Studio 方案中建立類別庫專案。 在 [新增專案]  對話方塊中，按一下 [Visual C#]  ，然後按一下 [類別庫] 。 這個專案將會包含命令或軌跡處理常式類別。  
+1. 在新的或現有的 Visual Studio 方案中建立類別庫專案。 在 [新增專案]  對話方塊中，按一下 [Visual C#]  ，然後按一下 [類別庫] 。 這個專案將會包含命令或軌跡處理常式類別。  
   
     > [!NOTE]
     >  雖然您可以在單一類別庫中定義多個命令或軌跡處理常式類別，不過您應該在個別的類別庫中定義圖層驗證類別。  
   
-2.  在您的方案中識別或建立 VSIX 專案。 VSIX 專案會包含名為 **source.extension.vsixmanifest**的檔案。 若要加入 VSIX 專案：  
+2. 在您的方案中識別或建立 VSIX 專案。 VSIX 專案會包含名為 **source.extension.vsixmanifest**的檔案。 若要加入 VSIX 專案：  
   
-    1.  在 [新增專案]  對話方塊中，展開 [Visual C#] 、按一下 [擴充性] ，然後按一下 [VSIX 專案] 。  
+    1. 在 [新增專案]  對話方塊中，展開 [Visual C#] 、按一下 [擴充性] ，然後按一下 [VSIX 專案] 。  
   
-    2.  在 [方案總管] 中，以滑鼠右鍵按一下此 VSIX 專案，然後按一下 [設定為啟始專案] 。  
+    2. 在 [方案總管] 中，以滑鼠右鍵按一下此 VSIX 專案，然後按一下 [設定為啟始專案] 。  
   
-    3.  按一下 [選取版本]  並確定已核取 [Visual Studio]  。  
+    3. 按一下 [選取版本]  並確定已核取 [Visual Studio]  。  
   
-3.  在 **source.extension.vsixmanifest**的 [資產] 底下，加入命令或軌跡處理常式專案做為 MEF 元件。  
+3. 在 **source.extension.vsixmanifest**的 [資產] 底下，加入命令或軌跡處理常式專案做為 MEF 元件。  
   
-    1.  在 [資產] 索引標籤中，選擇 [新增] 。  
+    1. 在 [資產] 索引標籤中，選擇 [新增] 。  
   
-    2.  在 [類型] 選取 [Microsoft.VisualStudio.MefComponent] 。  
+    2. 在 [類型] 選取 [Microsoft.VisualStudio.MefComponent] 。  
   
-    3.  在 [來源] 選取 [目前方案中的專案]  ，然後選取命令或軌跡處理常式專案的名稱。  
+    3. 在 [來源] 選取 [目前方案中的專案]  ，然後選取命令或軌跡處理常式專案的名稱。  
   
-    4.  儲存檔案。  
+    4. 儲存檔案。  
   
-4.  返回此命令或軌跡處理常式專案，然後加入下列專案參考。  
+4. 返回此命令或軌跡處理常式專案，然後加入下列專案參考。  
   
 |**參考資料**|**這可讓您執行**|  
 |-------------------|------------------------------------|  
@@ -96,7 +96,7 @@ ms.locfileid: "58945111"
 |Microsoft.VisualStudio.Modeling.Sdk.[版本]|定義模型擴充功能|  
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[版本]|更新圖形和圖表|  
   
-1.  編輯 C# 類別庫專案中的類別檔案，以便包含擴充功能的程式碼。 如需詳細資訊，請參閱下列其中一節：  
+1. 編輯 C# 類別庫專案中的類別檔案，以便包含擴充功能的程式碼。 如需詳細資訊，請參閱下列其中一節：  
   
      [定義功能表命令](#command)  
   
@@ -104,13 +104,13 @@ ms.locfileid: "58945111"
   
      另請參閱[瀏覽和更新圖層的程式碼中的模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
   
-2.  若要測試此功能，請按下 CTRL+F5 或 F5。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即開啟。 在此執行個體中，建立或開啟分層圖。  
+2. 若要測試此功能，請按下 CTRL+F5 或 F5。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即開啟。 在此執行個體中，建立或開啟分層圖。  
   
-3.  若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **.vsix\*** 目錄中尋找 **.vsix** 檔案。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下此 VSIX 檔案 (在 Windows 8 中為檔案總管)。  
+3. 若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **.vsix\*** 目錄中尋找 **.vsix** 檔案。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下此 VSIX 檔案 (在 Windows 8 中為檔案總管)。  
   
      若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
   
-##  <a name="command"></a> 定義功能表命令  
+## <a name="command"></a> 定義功能表命令  
  您可以將其他功能表命令定義加入現有的軌跡或命令專案。 每個命令都由具有下列特性的類別加以定義：  
   
 - 此類別的宣告方式如下：  
@@ -125,11 +125,11 @@ ms.locfileid: "58945111"
   
 - 實作 `ICommandExtension` 的方法如下：  
   
-  -   `string Text {get;}` - 出現在此功能表中的標籤。  
+  - `string Text {get;}` - 出現在此功能表中的標籤。  
   
-  -   `void QueryStatus(IMenuCommand command)` - 當使用者以滑鼠右鍵按一下此圖表時會被呼叫，並且判斷是否應該針對使用者的目前選取範圍顯示並啟用此命令。  
+  - `void QueryStatus(IMenuCommand command)` - 當使用者以滑鼠右鍵按一下此圖表時會被呼叫，並且判斷是否應該針對使用者的目前選取範圍顯示並啟用此命令。  
   
-  -   `void Execute(IMenuCommand command)` - 當使用者選取此命令時會被呼叫。  
+  - `void Execute(IMenuCommand command)` - 當使用者選取此命令時會被呼叫。  
   
 - 若要判斷目前選取範圍，您可以匯入 `IDiagramContext`：  
   
@@ -215,7 +215,7 @@ namespace MyLayerExtension // Change to your preference.
 }  
 ```  
   
-##  <a name="gesture"></a> 定義軌跡處理常式  
+## <a name="gesture"></a> 定義軌跡處理常式  
  當使用者將項目拖曳到分層圖上，以及當使用者在圖表任意處按兩下時，軌跡處理常式就會回應。  
   
  對於現有的命令或軌跡處理常式 VSIX 專案，您可以加入定義軌跡處理常式的程式碼檔案：  
@@ -247,7 +247,7 @@ namespace MyLayerExtensions // change to your preference
   
    **OnDragDrop** - 當使用者將項目置放到此圖表上時受呼叫。  
   
-- 每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如：  
+- 每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如:   
   
   ```  
   public void OnDragDrop(IShape target, IDataObject data)  

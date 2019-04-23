@@ -16,14 +16,14 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778522"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091235"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：尋找並組織專案範本和項目範本
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>HOW TO：尋找並組織專案與項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 範本檔案必須放在 Visual Studio 可以辨識的位置，以便範本將出現在 [新增專案] 和 [新增項目] 對話方塊中。 您可以建立範本的自訂子類別，因此子類別也會出現在使用者介面中。  
@@ -90,23 +90,23 @@ ms.locfileid: "54778522"
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>建立新的已安裝項目範本類別  
   
-1.  在已安裝的範本目錄的語言資料夾中建立資料夾。 例如，若要為 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 項目範本建立 Web 類別，您將建立下列目錄：  
+1. 在已安裝的範本目錄的語言資料夾中建立資料夾。 例如，若要為 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 項目範本建立 Web 類別，您將建立下列目錄：  
   
      \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\CSharp\1033\Web\  
   
-2.  將此類別的所有範本放在新資料夾中。  
+2. 將此類別的所有範本放在新資料夾中。  
   
-3.  關閉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的所有執行個體。  
+3. 關閉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的所有執行個體。  
   
-4.  在 [開始] 功能表上，按一下 [執行]、鍵入 **cmd**，然後按一下 [確定]。  
+4. 在 [開始] 功能表上，按一下 [執行]、鍵入 **cmd**，然後按一下 [確定]。  
   
-5.  在命令提示字元中，找出包含 devenv.exe 的目錄，然後鍵入 **devenv /setup**。  
+5. 在命令提示字元中，找出包含 devenv.exe 的目錄，然後鍵入 **devenv /setup**。  
   
-6.  執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+6. 執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-7.  建立專案或開啟現有專案。  
+7. 建立專案或開啟現有專案。  
   
-8.  在 [專案]  功能表中，按一下 [加入新項目] 。  
+8. 在 [專案]  功能表中，按一下 [加入新項目] 。  
   
 9. 確認 Web 類別出現在 [新增項目] 對話方塊的 [專案類型] 窗格中。  
   
@@ -129,30 +129,30 @@ ms.locfileid: "54778522"
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>建立新的自訂項目範本類別  
   
-1.  在自訂項目範本目錄的語言資料夾中建立資料夾。 例如，若要為 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 範本建立 HelloWorld 類別，您將建立下列目錄：  
+1. 在自訂項目範本目錄的語言資料夾中建立資料夾。 例如，若要為 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 範本建立 HelloWorld 類別，您將建立下列目錄：  
   
      \My Documents\\<Visual Studio 版本\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
-2.  將此類別的所有範本都放在新資料夾中。  
+2. 將此類別的所有範本都放在新資料夾中。  
   
-3.  建立專案或開啟現有專案。  
+3. 建立專案或開啟現有專案。  
   
-4.  在 [專案]  功能表中，按一下 [加入新項目] 。  
+4. 在 [專案]  功能表中，按一下 [加入新項目] 。  
   
-5.  確認 HelloWorld 類別出現在 [新增項目] 對話方塊的 [專案類型] 窗格中。  
+5. 確認 HelloWorld 類別出現在 [新增項目] 對話方塊的 [專案類型] 窗格中。  
   
 ### <a name="displaying-templates-in-parent-categories"></a>在父類別中顯示範本  
  您可以使用 .vstemplate 檔案中的 `NumberOfParentCategoriesToRollUp` 項目，讓子類別中的範本可以顯示在其父類別中。 對於專案範本和項目範本而言，這些步驟都相同。  
   
 ##### <a name="to-display-templates-in-parent-categories"></a>在父類別中顯示範本  
   
-1.  找出包含樣板的.zip 檔。  
+1. 找出包含樣板的.zip 檔。  
   
-2.  將 zip 檔解壓縮。  
+2. 將 zip 檔解壓縮。  
   
-3.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟 .vstemplate 檔案。  
+3. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟 .vstemplate 檔案。  
   
-4.  在 `TemplateData` 項目中，加入 `NumberOfParentCategoriesToRollUp` 項目。 例如，下列程式碼可讓您在父類別中看到範本，但不得高於此類別。  
+4. 在 `TemplateData` 項目中，加入 `NumberOfParentCategoriesToRollUp` 項目。 例如，下列程式碼可讓您在父類別中看到範本，但不得高於此類別。  
   
     ```  
     <TemplateData>  
@@ -164,15 +164,15 @@ ms.locfileid: "54778522"
     </TemplateData>  
     ```  
   
-5.  儲存並關閉.vstemplate 檔案。  
+5. 儲存並關閉.vstemplate 檔案。  
   
-6.  在範本中選取檔案，在選取項目上按一下滑鼠右鍵，按一下 [傳送到]，然後按一下 [壓縮的 (zipped) 資料夾]。 檔案即會壓縮成 .zip 檔案。  
+6. 在範本中選取檔案，在選取項目上按一下滑鼠右鍵，按一下 [傳送到]，然後按一下 [壓縮的 (zipped) 資料夾]。 檔案即會壓縮成 .zip 檔案。  
   
-7.  刪除已解壓縮的樣板檔案和舊樣板 .zip 檔案。  
+7. 刪除已解壓縮的樣板檔案和舊樣板 .zip 檔案。  
   
-8.  將新的.zip 檔案放在有已刪除 .zip 檔案的目錄。  
+8. 將新的.zip 檔案放在有已刪除 .zip 檔案的目錄。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂範本](../ide/customizing-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [NumberOfParentCategoriesToRollUp (Visual Studio 範本)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   

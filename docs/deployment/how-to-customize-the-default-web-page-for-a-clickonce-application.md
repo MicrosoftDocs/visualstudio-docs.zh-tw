@@ -1,5 +1,5 @@
 ---
-title: 如何： 自訂 ClickOnce 應用程式的預設網頁 |Microsoft Docs
+title: HOW TO：自訂 ClickOnce 應用程式的預設網頁 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,20 +17,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9831c1176b5e71650742226e77bfca58dfa35a01
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 4a4fc4d69e8bf0a3ef13a8a06e652c8be217a1c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608439"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106323"
 ---
-# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>如何：自訂 ClickOnce 應用程式的預設 Web 頁面
+# <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>HOW TO：自訂 ClickOnce 應用程式的預設網頁
 發行 ClickOnce 應用程式到 Web，當網頁自動產生及發行以及應用程式。 預設的網頁包含應用程式和安裝應用程式、 安裝必要元件，或存取 MSDN 上的說明連結的名稱。
 
 > [!NOTE]
 >  您在頁面看到的實際連結相依於檢視頁面所在的電腦，以及您要納入的必要條件。
 
- 網頁的預設名稱是*Publish.htm*; 您可以變更中的名稱**專案設計工具**。 如需詳細資訊，請參閱 <<c0> [ 如何： 指定 ClickOnce 應用程式的發行頁面](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)。
+ 網頁的預設名稱是*Publish.htm*; 您可以變更中的名稱**專案設計工具**。 如需詳細資訊，請參閱[如何：指定 ClickOnce 應用程式的發佈頁面](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)。
 
  *Publish.htm*偵測到較新版本時，才發佈網頁。
 
@@ -39,16 +39,16 @@ ms.locfileid: "56608439"
 
 ### <a name="to-customize-the-publish-web-page"></a>若要自訂 [發行 Web] 頁面
 
-1.  發行 ClickOnce 應用程式到 Web 的位置。 如需詳細資訊，請參閱 <<c0> [ 如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+1. 發行 ClickOnce 應用程式到 Web 的位置。 如需詳細資訊，請參閱[如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
 
-2.  在 Web 伺服器上，開啟*Publish.htm* Visual Web 設計工具或另一個 HTML 編輯器中的檔案。
+2. 在 Web 伺服器上，開啟*Publish.htm* Visual Web 設計工具或另一個 HTML 編輯器中的檔案。
 
-3.  自訂所需的頁面，並將它儲存。
+3. 自訂所需的頁面，並將它儲存。
 
-4.  選擇性。 若要防止 Visual Studio 覆寫您自訂的發行的網頁，請取消選取**自動產生部署網頁之後, 每個發行**中**發行選項** 對話方塊。
+4. 選擇性。 若要防止 Visual Studio 覆寫您自訂的發行的網頁，請取消選取**自動產生部署網頁之後, 每個發行**中**發行選項** 對話方塊。
 
 ## <a name="see-also"></a>另請參閱
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)
-- [如何：使用 ClickOnce 應用程式安裝必要元件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
-- [如何：指定 ClickOnce 應用程式的發行頁面](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+- [如何：使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [如何：指定 ClickOnce 應用程式的發佈頁面](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)

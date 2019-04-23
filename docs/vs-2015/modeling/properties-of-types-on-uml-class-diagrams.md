@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 520843ee596e67de5d4e804e90302f931a1d3b57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17d18a485e57b896aaf3f40b0cfdab63e10dce2c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945864"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062226"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>UML 類別圖上的類型屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "58945864"
 > [!NOTE]
 >  本主題是有關 UML 類別圖中類型的屬性。 如需詳細資訊，請參閱下列主題：  
   
--   [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)  
+- [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML 類別圖表：方針](../modeling/uml-class-diagrams-guidelines.md)  
+- [UML 類別圖表：方針](../modeling/uml-class-diagrams-guidelines.md)  
   
--   [UML 類別圖表中屬性 (Attribute) 的屬性 (Property)](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [UML 類別圖表中屬性 (Attribute) 的屬性 (Property)](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [UML 類別圖表上作業的屬性](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [UML 類別圖表上作業的屬性](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [UML 類別圖表上的關聯屬性](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [UML 類別圖表上的關聯屬性](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
 ## <a name="properties"></a>屬性  
  這些是類別、介面或列舉的屬性。  

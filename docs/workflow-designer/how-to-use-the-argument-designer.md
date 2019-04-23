@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb4cbcb6b1310e6552dfd757a4b6347212f99cfc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2f32228de6486c7e2093175bcd57d698a881ab7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941175"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115805"
 ---
 # <a name="how-to-use-the-argument-designer"></a>HOW TO：使用引數設計工具
 
@@ -24,11 +24,11 @@ ms.locfileid: "55941175"
 
 ## <a name="to-create-a-new-argument"></a>若要建立新引數
 
-1.  Visual Studio 中開啟工作流程或活動的解決方案。
+1. Visual Studio 中開啟工作流程或活動的解決方案。
 
-2.  開啟 [引數設計工具]，請依序按一下**引數**設計畫布左下角的按鈕。 引數設計工具隨即出現。
+2. 開啟 [引數設計工具]，請依序按一下**引數**設計畫布左下角的按鈕。 引數設計工具隨即出現。
 
-3.  按一下標示為空白資料列**建立引數**。 這會將新的資料列新增使用新的引數，使用下列的預設值： 針對 argumentx**名稱**其中 x 是整數，其初始值為 1，會自動遞增以建立唯一的引數名稱**中** for**方向**，和**字串**如**引數型別**。 不加入任何值**預設值**。 在工作流程設計過程中，您隨時可以變更這些值。
+3. 按一下標示為空白資料列**建立引數**。 這會將新的資料列新增使用新的引數，使用下列的預設值： 針對 argumentx**名稱**其中 x 是整數，其初始值為 1，會自動遞增以建立唯一的引數名稱**中** for**方向**，和**字串**如**引數型別**。 不加入任何值**預設值**。 在工作流程設計過程中，您隨時可以變更這些值。
 
     > [!NOTE]
     > 若要刪除引數，選取引數依序按一下它，然後按**刪除**索引鍵。

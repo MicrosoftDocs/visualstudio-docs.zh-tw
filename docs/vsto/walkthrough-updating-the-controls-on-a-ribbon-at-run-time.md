@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bad52a02cb87f611293283deb3743c6e148e688
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e293a0136e6ae2d8b6a6747201e484fdea43f91e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875910"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067231"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>逐步解說：更新在執行階段的功能區上的控制項
 
@@ -34,13 +34,13 @@ ms.locfileid: "54875910"
 
 這個逐步解說將說明下列工作：
 
--   建立新的 Outlook VSTO 增益集專案。
+- 建立新的 Outlook VSTO 增益集專案。
 
--   設計自訂的功能區群組。
+- 設計自訂的功能區群組。
 
--   自訂群組加入內建索引標籤。
+- 自訂群組加入內建索引標籤。
 
--   更新在執行階段功能區上的控制項。
+- 更新在執行階段功能區上的控制項。
 
 > [!NOTE]
 > 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
@@ -49,9 +49,9 @@ ms.locfileid: "54875910"
 
 您需要下列元件才能完成此逐步解說：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Outlook
+- Microsoft Outlook
 
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>建立新的 Outlook VSTO 增益集專案
 
@@ -59,13 +59,13 @@ ms.locfileid: "54875910"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>建立新的 Outlook VSTO 增益集專案
 
-1.  在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，建立 Outlook VSTO 增益集專案名稱**為 Ribbon_Update_At_Runtime**。
+1. 在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，建立 Outlook VSTO 增益集專案名稱**為 Ribbon_Update_At_Runtime**。
 
-2.  在 [新增專案]  對話方塊中，選取 [為方案建立目錄] 。
+2. 在 [新增專案]  對話方塊中，選取 [為方案建立目錄] 。
 
-3.  將專案儲存至預設的專案目錄。
+3. 將專案儲存至預設的專案目錄。
 
-     如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+     如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
 ## <a name="design-a-custom-ribbon-group"></a>設計自訂的功能區群組
 
@@ -73,25 +73,25 @@ ms.locfileid: "54875910"
 
 ### <a name="to-design-a-custom-group"></a>設計自訂群組
 
-1.  在 [專案]  功能表中，按一下 [加入新項目] 。
+1. 在 [專案]  功能表中，按一下 [加入新項目] 。
 
-2.  選取 [ **加入新項目** ] 對話方塊中的 [ **功能區 (視覺化設計工具)**]。
+2. 選取 [ **加入新項目** ] 對話方塊中的 [ **功能區 (視覺化設計工具)**]。
 
-3.  將新的功能區的名稱變更**CustomerRibbon**，然後按一下**新增**。
+3. 將新的功能區的名稱變更**CustomerRibbon**，然後按一下**新增**。
 
      *CustomerRibbon.cs*或是*CustomerRibbon.vb*檔案會在功能區設計工具中開啟，並顯示預設索引標籤和群組。
 
-4.  按一下選取功能區設計工具。
+4. 按一下選取功能區設計工具。
 
-5.  在**屬性** 視窗中，按一下下拉箭號旁**RibbonType**屬性，，然後按一下**Microsoft.Outlook.Mail.Compose**。
+5. 在**屬性** 視窗中，按一下下拉箭號旁**RibbonType**屬性，，然後按一下**Microsoft.Outlook.Mail.Compose**。
 
      這可讓功能區使用者撰寫新郵件在 Outlook 中的時出現。
 
-6.  在 功能區設計工具中，按一下**Group1**來選取它。
+6. 在 功能區設計工具中，按一下**Group1**來選取它。
 
-7.  在 **屬性**視窗中，將**標籤**來**客戶購買**。
+7. 在 **屬性**視窗中，將**標籤**來**客戶購買**。
 
-8.  從**Office 功能區控制項**索引標籤**工具箱**，拖曳**ComboBox**拖曳至**Customer Purchases**群組。
+8. 從**Office 功能區控制項**索引標籤**工具箱**，拖曳**ComboBox**拖曳至**Customer Purchases**群組。
 
 9. 按一下  **Checkbox1**來選取它。
 
@@ -111,17 +111,17 @@ ms.locfileid: "54875910"
 
 ### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>將自訂群組加入內建索引標籤
 
-1.  按一下 [ **TabAddins （內建）** ] 索引標籤，來選取它。
+1. 按一下 [ **TabAddins （內建）** ] 索引標籤，來選取它。
 
-2.  在 [**屬性**] 視窗中，展開**ControlId**屬性，然後再將設定**OfficeId**至**為 [tabnewmailmessage]**。
+2. 在 [**屬性**] 視窗中，展開**ControlId**屬性，然後再將設定**OfficeId**至**為 [tabnewmailmessage]**。
 
      這會新增**Customer Purchases**群組**訊息**會出現在新郵件的功能區 索引標籤。
 
-3.  按一下  **Customer Purchases**群組，加以選取。
+3. 按一下  **Customer Purchases**群組，加以選取。
 
-4.  在 [**屬性**] 視窗中，展開**位置**屬性旁, 按一下下拉式箭號**PositionType**屬性，，然後按一下**BeforeOfficeId**。
+4. 在 [**屬性**] 視窗中，展開**位置**屬性旁, 按一下下拉式箭號**PositionType**屬性，，然後按一下**BeforeOfficeId**。
 
-5.  設定**OfficeId**屬性設**為 GroupClipboard**。
+5. 設定**OfficeId**屬性設**為 GroupClipboard**。
 
      這將置於**Customer Purchases**群組之前**剪貼簿**群組**訊息** 索引標籤。
 
@@ -131,31 +131,31 @@ ms.locfileid: "54875910"
 
 ### <a name="to-create-the-data-source"></a>若要建立資料來源
 
-1.  在 [ **資料** ] 功能表上，請按一下 [ **加入新資料來源**]。
+1. 在 [ **資料** ] 功能表上，請按一下 [ **加入新資料來源**]。
 
      這會啟動**資料來源組態精靈**。
 
-2.  選取 [**資料庫**，然後按一下**下一步]**。
+2. 選取 [**資料庫**，然後按一下**下一步]**。
 
-3.  選取 [**資料集**，然後按一下**下一步]**。
+3. 選取 [**資料集**，然後按一下**下一步]**。
 
-4.  選取資料連接至 Northwind 範例 Microsoft SQL Server Compact 4.0 資料庫，或使用 [新增連線**新的連接**] 按鈕。
+4. 選取資料連接至 Northwind 範例 Microsoft SQL Server Compact 4.0 資料庫，或使用 [新增連線**新的連接**] 按鈕。
 
-5.  已選取或建立連接之後，請按一下**下一步**。
+5. 已選取或建立連接之後，請按一下**下一步**。
 
-6.  按一下 [**下一步]** 儲存連接字串。
+6. 按一下 [**下一步]** 儲存連接字串。
 
-7.  在 **選擇您的資料庫物件**頁面上，展開**資料表**。
+7. 在 **選擇您的資料庫物件**頁面上，展開**資料表**。
 
-8.  選取下列每個資料表旁的核取方塊：
+8. 選取下列每個資料表旁的核取方塊：
 
-    1.  **客戶**
+    1. **客戶**
 
-    2.  **訂單詳細資料**
+    2. **訂單詳細資料**
 
-    3.  **訂單**
+    3. **訂單**
 
-    4.  **產品**
+    4. **產品**
 
 9. 按一下 [ **完成**]。
 
@@ -163,11 +163,11 @@ ms.locfileid: "54875910"
 
 使用功能區物件模型執行下列工作：
 
--   將客戶名稱加入**客戶**下拉式方塊。
+- 將客戶名稱加入**客戶**下拉式方塊。
 
--   將功能表和按鈕控制項加入**購買的產品**銷售代表銷售訂單和產品的功能表。
+- 將功能表和按鈕控制項加入**購買的產品**銷售代表銷售訂單和產品的功能表。
 
--   填入 [收件者]、 主旨和內文的新郵件的使用中的資料欄位**客戶**下拉式方塊並**購買的產品**功能表。
+- 填入 [收件者]、 主旨和內文的新郵件的使用中的資料欄位**客戶**下拉式方塊並**購買的產品**功能表。
 
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>使用功能區物件模型更新自訂群組中的控制項
 
@@ -257,31 +257,31 @@ ms.locfileid: "54875910"
 
 ### <a name="to-test-the-controls-in-the-custom-group"></a>測試自訂群組中的控制項
 
-1.  按下**F5**執行您的專案。
+1. 按下**F5**執行您的專案。
 
      Outlook 啟動。
 
-2.  在 Outlook 中，在**檔案**功能表上，指向**新增**，然後按一下**郵件**。
+2. 在 Outlook 中，在**檔案**功能表上，指向**新增**，然後按一下**郵件**。
 
      這時會執行下列動作：
 
-    -   新的郵件偵測器視窗出現。
+    - 新的郵件偵測器視窗出現。
 
-    -   在上**訊息**功能區 索引標籤**Customer Purchases**群組出現之前**剪貼簿**群組。
+    - 在上**訊息**功能區 索引標籤**Customer Purchases**群組出現之前**剪貼簿**群組。
 
-    -   **客戶**群組中的下拉式方塊會更新 Northwind 資料庫中的客戶的名稱。
+    - **客戶**群組中的下拉式方塊會更新 Northwind 資料庫中的客戶的名稱。
 
-3.  在上**訊息**功能區] 索引標籤，請在**客戶購買**群組中，選取 [從客戶**客戶**下拉式方塊。
+3. 在上**訊息**功能區] 索引標籤，請在**客戶購買**群組中，選取 [從客戶**客戶**下拉式方塊。
 
      這時會執行下列動作：
 
-    -   **購買的產品**功能表會更新以顯示所選客戶的每個銷售訂單。
+    - **購買的產品**功能表會更新以顯示所選客戶的每個銷售訂單。
 
-    -   每個銷售訂單的子功能表都會更新以顯示該訂單中購買的產品。
+    - 每個銷售訂單的子功能表都會更新以顯示該訂單中購買的產品。
 
-    -   將選取的客戶電子郵件地址新增至**至**一行，郵件訊息的主旨和郵件訊息的本文中填入文字。
+    - 將選取的客戶電子郵件地址新增至**至**一行，郵件訊息的主旨和郵件訊息的本文中填入文字。
 
-4.  按一下 **購買的產品**功能表，指向任一銷售訂單，然後再按一下 銷售訂單中的產品。
+4. 按一下 **購買的產品**功能表，指向任一銷售訂單，然後再按一下 銷售訂單中的產品。
 
      產品名稱會加入郵件的本文。
 
@@ -289,11 +289,11 @@ ms.locfileid: "54875910"
 
 您可以透過下列主題，進一步了解自訂 Office UI 的方式：
 
--   將內容為主的 UI 加入至任何文件層級的自訂。 如需詳細資訊，請參閱 <<c0> [ 執行窗格概觀](../vsto/actions-pane-overview.md)。
+- 將內容為主的 UI 加入至任何文件層級的自訂。 如需詳細資訊，請參閱 <<c0> [ 執行窗格概觀](../vsto/actions-pane-overview.md)。
 
--   展開標準或自訂的 Microsoft Office Outlook 表單。 如需詳細資訊，請參閱[逐步解說：設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)。
+- 展開標準或自訂的 Microsoft Office Outlook 表單。 如需詳細資訊，請參閱[逐步解說：設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)。
 
--   將自訂工作窗格加入 Outlook。 如需詳細資訊，請參閱 <<c0> [ 自訂工作窗格](../vsto/custom-task-panes.md)。
+- 將自訂工作窗格加入 Outlook。 如需詳細資訊，請參閱 <<c0> [ 自訂工作窗格](../vsto/custom-task-panes.md)。
 
 ## <a name="see-also"></a>另請參閱
 

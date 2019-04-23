@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c59d6ba8b6e807b4380a3f7abad3869e5108448
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052879"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>逐步解說：使用文字範本產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,9 +86,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>若要建立專案  
   
-1.  在 [檔案]  功能表上，依序按一下 [新增]  和 [專案] 。  
+1. 在 [檔案]  功能表上，依序按一下 [新增]  和 [專案] 。  
   
-2.  按一下 []  節點，然後按一下 [範本]  窗格中的 [主控台應用程式]   
+2. 按一下 []  節點，然後按一下 [範本]  窗格中的 [主控台應用程式]   
   
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>將原型 XML 檔案新增至專案  
  此檔案的目的是要提供您想要應用程式可讀取之 XML 節點類型的範例。 它可以是將用於測試應用程式的檔案。 範本會為此檔案中的每個節點類型產生 C# 類別。  
@@ -108,7 +108,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
    .  
   
 ### <a name="add-a-test-code-file"></a>新增測試程式碼檔案  
- 將 C# 檔案新增至您的專案，並在其中撰寫您可撰寫的程式碼範例。 例如：  
+ 將 C# 檔案新增至您的專案，並在其中撰寫您可撰寫的程式碼範例。 例如:   
   
 ```  
 using System;  

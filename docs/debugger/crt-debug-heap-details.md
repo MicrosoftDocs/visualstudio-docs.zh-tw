@@ -73,12 +73,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45562119158faad0d596b74faecd786668abf8dd
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.openlocfilehash: f55bd71b2174a03fb44b4512f04997e48d636d12
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227744"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103273"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 偵錯堆積詳細資料
 本主題提供 CRT 偵錯堆積的詳細檢視。
@@ -147,7 +147,7 @@ typedef struct _CrtMemBlockHeader
 
 `_CRT_BLOCK`由許多執行階段程式庫函式內部所配置的記憶體區塊標記為 CRT 區塊，以便分別處理。 因此，流失偵測和其他操作不會受到影響。 配置必須從未配置、重新配置或釋放任何 CRT 類型的區塊。
 
-`_CLIENT_BLOCK`應用程式可以使用這種記憶體區塊類型配置、使用偵錯堆積函式的明確呼叫，繼續追蹤指定的配置群組，以達到偵錯的目的。 例如，MFC 將所有 **CObjects** 配置為用戶端區塊；其他應用程式可能會將不同的記憶體物件保持在用戶端區塊中。 也可以為達更細微的追蹤而設定用戶端區塊的子類型。 若要指定用戶端區塊的子類型，將數字向左移位 (Left Shift) 16 個位元並且以 `OR` 將之 `_CLIENT_BLOCK` 起來。 例如：
+`_CLIENT_BLOCK`應用程式可以使用這種記憶體區塊類型配置、使用偵錯堆積函式的明確呼叫，繼續追蹤指定的配置群組，以達到偵錯的目的。 例如，MFC 將所有 **CObjects** 配置為用戶端區塊；其他應用程式可能會將不同的記憶體物件保持在用戶端區塊中。 也可以為達更細微的追蹤而設定用戶端區塊的子類型。 若要指定用戶端區塊的子類型，將數字向左移位 (Left Shift) 16 個位元並且以 `OR` 將之 `_CLIENT_BLOCK` 起來。 例如: 
 
 ```cpp
 #define MYSUBTYPE 4
@@ -201,7 +201,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
 
 2. 開啟任何位元`OR`-ing (位元&#124;符號) 暫存變數和對應的位元遮罩 （由應用程式程式碼中的資訊清單常數）。
 
-3. 使用 `AND` (位元 & 符號) 變數和適當位元遮罩的 `NOT` (位元 ~ 符號) 來關閉其他位元。
+3. 關閉其他位元`AND`-ing (位元 & 符號) 變數`NOT`(位元 ~ 符號) 的適當位元遮罩。
 
 4. 使用設成儲存於暫存變數值的 `_CrtSetDbgFlag` 參數呼叫 `newFlag`，以便建立 `_crtDbgFlag` 的新狀態。
 
@@ -261,7 +261,7 @@ int main( )   {
 
 ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)
 
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a>堆積狀態報告函式
+## <a name="BKMK_Heap_State_Reporting_Functions"></a>堆積狀態報告函式
  **_CrtMemState**
 
  若要捕捉指定時間的堆積狀態之摘要快照，請使用定義在 CRTDBG.H 裡的 _CrtMemState 結構：
@@ -353,5 +353,5 @@ int addNewRecord(struct RecStruct *prevRecord,
 
 ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [偵錯機器碼](../debugger/debugging-native-code.md)

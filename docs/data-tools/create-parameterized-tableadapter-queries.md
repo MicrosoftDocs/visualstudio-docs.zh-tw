@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d521e621436d02329b21e37a2ebfc47eef65f0b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 94712279b09a4def616ed264483b894c673bafc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931022"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062083"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>建立參數型 TableAdapter 查詢
 
@@ -38,40 +38,40 @@ ms.locfileid: "55931022"
 
 ### <a name="to-create-a-parameterized-query-in-the-dataset-designer"></a>在 DataSet 設計工具中建立參數型查詢
 
--   建立新的 TableAdapter，並將具有所需參數的 WHERE 子句加入至 SQL 陳述式。 如需詳細資訊，請參閱 <<c0> [ 建立和設定 Tableadapter](../data-tools/create-and-configure-tableadapters.md)。
+- 建立新的 TableAdapter，並將具有所需參數的 WHERE 子句加入至 SQL 陳述式。 如需詳細資訊，請參閱 <<c0> [ 建立和設定 Tableadapter](../data-tools/create-and-configure-tableadapters.md)。
 
      -或-
 
--   將查詢加入至現有 TableAdapter，並將具有所需參數的 WHERE 子句加入至 SQL 陳述式。
+- 將查詢加入至現有 TableAdapter，並將具有所需參數的 WHERE 子句加入至 SQL 陳述式。
 
 ### <a name="to-create-a-parameterized-query-while-designing-a-data-bound-form"></a>在設計資料繫結表單時建立參數型查詢
 
-1.  在表單上選取已繫結至資料集的控制項。 如需詳細資訊，請參閱 <<c0> [ 繫結 Windows Form 控制項加入 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)。
+1. 在表單上選取已繫結至資料集的控制項。 如需詳細資訊，請參閱 <<c0> [ 繫結 Windows Form 控制項加入 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)。
 
-2.  在 **資料**功能表上，選取**加入查詢**。
+2. 在 **資料**功能表上，選取**加入查詢**。
 
-3.  完成 [搜尋準則產生器] 對話方塊，並將具有所需參數的 WHERE 子句新增至 SQL 陳述式。
+3. 完成 [搜尋準則產生器] 對話方塊，並將具有所需參數的 WHERE 子句新增至 SQL 陳述式。
 
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>將查詢加入至現有的資料繫結表單
 
-1.  在 **Windows Forms 設計工具**中開啟表單。
+1. 在 **Windows Forms 設計工具**中開啟表單。
 
-2.  在上**資料**功能表上，選取**加入查詢**或是**資料智慧標籤**。
+2. 在上**資料**功能表上，選取**加入查詢**或是**資料智慧標籤**。
 
     > [!NOTE]
     > 若 [資料] 功能表中的 [新增查詢] 無法使用，請選取表單上顯示您想要新增參數化之資料來源的控制項。 例如，若表單以 <xref:System.Windows.Forms.DataGridView> 控制項顯示資料，請選取此控制項。 若表單以個別控制項顯示資料，請選取任何資料繫結控制項。
 
-3.  在 **選取資料來源資料表**區域中，選取您要加入參數化的資料表。
+3. 在 **選取資料來源資料表**區域中，選取您要加入參數化的資料表。
 
-4.  如果您要建立新查詢，請在 [新的查詢名稱] 方塊中鍵入名稱。
+4. 如果您要建立新查詢，請在 [新的查詢名稱] 方塊中鍵入名稱。
 
      -或-
 
      選取 [現有的查詢名稱] 方塊中的查詢。
 
-5.  在 **查詢文字**方塊中，輸入採用參數的查詢。
+5. 在 **查詢文字**方塊中，輸入採用參數的查詢。
 
-6.  選取 [確定]。
+6. 選取 [確定]。
 
      輸入參數的控制項及 [載入] 按鈕會新增至 <xref:System.Windows.Forms.ToolStrip> 控制項中的表單。
 
@@ -92,11 +92,11 @@ WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
 
 若要啟用查詢，以接受 null 值：
 
-1.  在  **Dataset 設計工具**，選取 TableAdapter 查詢需要接受 null 的參數值。
+1. 在  **Dataset 設計工具**，選取 TableAdapter 查詢需要接受 null 的參數值。
 
-2.  在 **屬性**視窗中，選取**參數**，然後按一下省略符號 (**...**) 按鈕，即可開啟**參數集合編輯器**。
+2. 在 **屬性**視窗中，選取**參數**，然後按一下省略符號 (**...**) 按鈕，即可開啟**參數集合編輯器**。
 
-3.  選取 允許 null 值的參數，並設定**AllowDbNull**屬性設`true`。
+3. 選取 允許 null 值的參數，並設定**AllowDbNull**屬性設`true`。
 
 ## <a name="see-also"></a>另請參閱
 

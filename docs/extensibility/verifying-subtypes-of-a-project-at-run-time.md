@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78814ae3b5b25a2e5bc85f55217d6b695f634a84
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6ec71ce9be704566640a90c9187abe77f5cc3fe3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680239"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101596"
 ---
 # <a name="verify-subtypes-of-a-project-at-run-time"></a>在執行階段驗證專案的子類型
 自訂專案子類型而定的 VSPackage 應包含邏輯，以尋找子類型，讓它可以執行正常失敗的子類型是否不存在。 下列程序示範如何確認指定的子類型存在。
 
 ### <a name="to-verify-the-presence-of-a-subtype"></a>若要確認子型別存在
 
-1.  從專案和方案物件，做為取得專案階層架構<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>藉由將下列程式碼新增至 VSPackage 的物件。
+1. 從專案和方案物件，做為取得專案階層架構<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>藉由將下列程式碼新增至 VSPackage 的物件。
 
     ```csharp
     EnvDTE.DTE dte;
@@ -40,7 +40,7 @@ ms.locfileid: "56680239"
 
     ```
 
-2.  轉換階層<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected>介面。
+2. 轉換階層<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected>介面。
 
     ```csharp
     IVsAggregatableProjectCorrected AP;
@@ -48,14 +48,14 @@ ms.locfileid: "56680239"
 
     ```
 
-3.  取得專案類型 Guid 的清單，藉由叫用<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>。
+3. 取得專案類型 Guid 的清單，藉由叫用<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>。
 
     ```csharp
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();
 
     ```
 
-4.  檢查指定的子類型的 GUID 清單。
+4. 檢查指定的子類型的 GUID 清單。
 
     ```csharp
     // Replace the string "MyGUID" with the GUID of the subtype.

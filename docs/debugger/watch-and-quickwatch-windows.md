@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366805"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>監看式變數使用監看式視窗和快速監看式
@@ -231,8 +231,8 @@ public class Program
 
 若只要顯示**動態檢視**物件，請新增**動態**格式規範中的動態物件名稱之後**監看式**視窗：
 
-- 若為 C#： `ObjectName, dynamic`
-- 若為 Visual Basic： `$dynamic, ObjectName`
+- 若為 C#：`ObjectName, dynamic`
+- 若為 Visual basic：`$dynamic, ObjectName`
 
 >[!NOTE]
 >- C#偵錯工具不會自動重新評估中的值**動態檢視**當您逐步執行至下一行程式碼。

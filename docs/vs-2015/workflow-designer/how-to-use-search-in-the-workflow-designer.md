@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 427e854c19e65463abcd8780cfe95d38f3ea66f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1d62f1936e4cf424bde526301210e61f38e5b767
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038801"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>HOW TO：使用工作流程設計工具中的搜尋
 為了方便建立更大型且更為複雜的工作流程，可以在工作流程設計工具中使用「搜尋」，依關鍵字來尋找項目。 請注意，設計工具不支援「取代」。 「搜尋」可在設計工具中尋找下列項目：  
@@ -22,21 +22,21 @@ ms.locfileid: "58943949"
 ## <a name="quick-find"></a>快速尋找  
  「快速尋找」可在設計工具中尋找下列項目：  
   
--   <xref:System.Activities.Activity> 物件、<xref:System.Activities.Statements.FlowNode> 物件、<xref:System.Activities.Statements.State> 物件、轉換及其他自訂流程控制項目的屬性。  
+- <xref:System.Activities.Activity> 物件、<xref:System.Activities.Statements.FlowNode> 物件、<xref:System.Activities.Statements.State> 物件、轉換及其他自訂流程控制項目的屬性。  
   
--   變數  
+- 變數  
   
--   引數  
+- 引數  
   
--   運算式  
+- 運算式  
   
 #### <a name="using-quick-find"></a>使用快速尋找  
   
-1.  工作流程設計工具中開啟，然後按**Ctrl + F**，或選取**編輯**，**尋找及取代**，**快速尋找**。  
+1. 工作流程設計工具中開啟，然後按**Ctrl + F**，或選取**編輯**，**尋找及取代**，**快速尋找**。  
   
-2.  輸入搜尋詞彙**Find what**文字方塊中，按一下 **尋找下一個**。  
+2. 輸入搜尋詞彙**Find what**文字方塊中，按一下 **尋找下一個**。  
   
-3.  系統會在目前工作流程中尋找搜尋字詞。 下列螢幕擷取畫面顯示目前在設計工具中找到的活動顯示名稱。  
+3. 系統會在目前工作流程中尋找搜尋字詞。 下列螢幕擷取畫面顯示目前在設計工具中找到的活動顯示名稱。  
   
      ![在工作流程設計工具中搜尋結果](../workflow-designer/media/designersearch.png "DesignerSearch")  
   
@@ -45,8 +45,8 @@ ms.locfileid: "58943949"
   
 #### <a name="using-find-in-files"></a>使用檔案中尋找  
   
-1.  在 Visual Studio 中按**Ctrl + Shift + F**，或選取**編輯**，**尋找及取代**，**檔案中尋找**  
+1. 在 Visual Studio 中按**Ctrl + Shift + F**，或選取**編輯**，**尋找及取代**，**檔案中尋找**  
   
-2.  輸入搜尋項目插入**Find what**文字方塊中，按一下 **全部尋找**  
+2. 輸入搜尋項目插入**Find what**文字方塊中，按一下 **全部尋找**  
   
-3.  尋找結果將會顯示在[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]**尋找結果**檢視。 按兩下結果項目會巡覽至工作流程設計工具中包含相符項目的活動。
+3. 尋找結果將會顯示在[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]**尋找結果**檢視。 按兩下結果項目會巡覽至工作流程設計工具中包含相符項目的活動。

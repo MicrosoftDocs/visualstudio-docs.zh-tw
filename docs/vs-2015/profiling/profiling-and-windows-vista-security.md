@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b5e82777b0d2f6134f99cabf42030943d4ea9a8a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fb95164642595195dc62166aec5c81f39abd33e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104055"
 ---
 # <a name="profiling-and-windows-vista-security"></a>分析和 Windows Vista 安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "54772917"
   
  您透過設定跨處理序進行程式碼剖析可見性選項，就可以看到處理序清單。 當您按一下 [附加至處理序] 後，隨即顯示的 [附加至處理序] 視窗中，會提供這些選項：  
   
--   **顯示所有使用者的處理序**  
+- **顯示所有使用者的處理序**  
   
      未選取此選項時，清單只會顯示目前使用者所擁有的處理序。 選取 [顯示所有使用者的處理序] 時，清單才會顯示所有使用者的處理序。  
   
--   **顯示所有工作階段中的處理序**  
+- **顯示所有工作階段中的處理序**  
   
      未選取此選項時，清單會顯示目前工作階段中的處理序。 選取此選項時，清單才會顯示所有工作階段中的處理序。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [ 如何：附加至執行中處理序](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)
+ [如何：附加至執行中處理序](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

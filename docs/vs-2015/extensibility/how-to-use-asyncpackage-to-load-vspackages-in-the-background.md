@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
-ms.openlocfilehash: 7de79fbbd5221a75bec1e168c22e687ddc9c7ffa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091664"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>HOW TO：在背景中使用 AsyncPackage 載入 VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "58941419"
   
 4. 如果您有要執行的非同步初始化工作，您應該覆寫<xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>。 移除**initialize （)** VSIX 範本所提供的方法。 ( **Initialize （)** 方法中的**AsyncPackage**密封格式)。 您可以使用任一<xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A>方法，以非同步的服務加入您的套件。  
   
-    附註：若要呼叫**基底。InitializeAsync()**，您可以變更您的程式碼，以：  
+    注意：若要呼叫**基底。InitializeAsync()**，您可以變更您的程式碼，以：  
   
    ```csharp  
    await base.InitializeAsync(cancellationToken, progress);  
@@ -55,7 +55,7 @@ ms.locfileid: "58941419"
   
 5. 您必須小心進行 Rpc （移除程序呼叫） 從您的非同步初始化程式碼 (在**InitializeAsync**)。 這些可能是當您呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>直接或間接。  需要同步處理的負載時，UI 執行緒將會封鎖使用<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>。 預設封鎖模式中，會停用 Rpc。 這表示，如果您嘗試使用 RPC 從非同步工作時，您會鎖死 UI 執行緒是否正在等候您要載入的封裝本身。 一般的替代做法是您在 UI 執行緒的程式碼封送處理，如有需要使用類似**可聯結工作 Factory**的<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>或一些其他不會使用 RPC 的機制。  請勿使用**ThreadHelper.Generic.Invoke**或通常會封鎖呼叫執行緒等候取得至 UI 執行緒。  
   
-    附註：您應該避免使用**GetService**或是**QueryService**中您**InitializeAsync**方法。 如果您有使用這些，您必須先切換至 UI 執行緒。 替代方法是使用<xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A>從您**AsyncPackage** (藉由將它轉型<xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>。)  
+    注意：您應該避免使用**GetService**或是**QueryService**中您**InitializeAsync**方法。 如果您有使用這些，您必須先切換至 UI 執行緒。 替代方法是使用<xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A>從您**AsyncPackage** (藉由將它轉型<xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>。)  
   
    C#: 建立 AsyncPackage:  
   
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>將現有的 VSPackage 轉換成 AsyncPackage  
  大部分的工作是建立新的相同**AsyncPackage**。 您必須遵循步驟 1 至 5 上述。 您還需要採取額外注意下列：  
   
-1.  請記得去除**初始化**覆寫，您必須在您的套件。  
+1. 請記得去除**初始化**覆寫，您必須在您的套件。  
   
-2.  避免死結 （deadlock）：可能會隱藏在程式碼現在會發生在背景執行緒的 Rpc。 您必須確保，如果您正在使用 RPC (例如**GetService**)，您必須 (1) 切換至主執行緒，或 （2） 使用非同步版本的 API，如果有一個存在 (例如**GetServiceAsync**)。  
+2. 避免死結 （deadlock）：可能會隱藏在程式碼現在會發生在背景執行緒的 Rpc。 您必須確保，如果您正在使用 RPC (例如**GetService**)，您必須 (1) 切換至主執行緒，或 （2） 使用非同步版本的 API，如果有一個存在 (例如**GetServiceAsync**)。  
   
-3.  請勿過於頻繁執行緒之間進行切換。 嘗試將當地語系化可能發生在背景執行緒中的工作。 這可減少載入時間。  
+3. 請勿過於頻繁執行緒之間進行切換。 嘗試將當地語系化可能發生在背景執行緒中的工作。 這可減少載入時間。  
   
 ## <a name="querying-services-from-asyncpackage"></a>從 AsyncPackage 查詢服務  
  **AsyncPackage**可能會或可能不取決於呼叫端會以非同步方式載入。 比方說，  

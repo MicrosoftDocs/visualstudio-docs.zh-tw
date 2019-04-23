@@ -12,12 +12,12 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a7650fc8a2ba297ccd3bc2a87be72a3f70062a18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b54c6ba8f3daefa53f00478c1d7e4573311cfb6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942967"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061342"
 ---
 # <a name="project-property-user-interface"></a>專案屬性使用者介面
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ ms.locfileid: "58942967"
   
 - 專案子類型可以決定適當的 Catid 不同的可擴充物件的基底的專案，在執行階段擷取下列<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>值：  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
   若要判斷專案範圍的 Catid，專案子類型擷取的上述屬性<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>從`VSITEMID``typedef`。 專案子類型也可以控制哪些**屬性頁**對話方塊頁面會顯示專案的組態相依和獨立的設定。 某些專案子類型可能需要移除內建的頁面，並加入專案子類型的特定頁面。 若要啟用此功能，受管理的用戶端專案呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>方法的下列屬性：  
   

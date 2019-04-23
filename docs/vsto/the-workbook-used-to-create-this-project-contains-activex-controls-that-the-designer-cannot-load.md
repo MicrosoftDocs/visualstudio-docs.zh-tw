@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8c6c51e464a3c4c49d4c70e4012df47906244804
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0087841e7f37d49da40817e1487b8529af1f87df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638188"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089350"
 ---
 # <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>用來建立此專案的活頁簿包含設計工具無法載入的 ActiveX 控制項
   當您以程式設計的方式將控制項加入至 Word 文件或 Excel 工作表、儲存文件或活頁簿，然後根據文件或活頁簿建立新的文件層級方案，則會出現這個錯誤。
@@ -26,11 +26,11 @@ ms.locfileid: "56638188"
 
 ## <a name="to-correct-this-error"></a>更正這個錯誤
 
-1.  開啟文件或活頁簿。
+1. 開啟文件或活頁簿。
 
-2.  移除在執行階段所加入的控制項。 您可以執行這項操作，請選取圖形中的文件或活頁簿和按下**刪除**索引鍵。
+2. 移除在執行階段所加入的控制項。 您可以執行這項操作，請選取圖形中的文件或活頁簿和按下**刪除**索引鍵。
 
-3.  根據文件或活頁簿建立文件層級的方案。
+3. 根據文件或活頁簿建立文件層級的方案。
 
 ## <a name="see-also"></a>另請參閱
 - [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)

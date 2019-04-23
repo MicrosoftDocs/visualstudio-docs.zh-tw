@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4275e92b21289c5cf1e3243b2bc782a9e0821fde
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232745"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>HOW TO：產生程式碼度量資料
@@ -111,7 +111,7 @@ ms.locfileid: "59232745"
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Microsoft.CodeAnalysis.Metrics NuGet 套件
 
-若要從命令列產生程式碼度量資料的最簡單方式是安裝[Microsoft.CodeAnalysis.Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 套件。 您已安裝封裝之後，執行`msbuild /t:Metrics`從包含您的專案檔的目錄。 例如: 
+若要從命令列產生程式碼度量資料的最簡單方式是安裝[Microsoft.CodeAnalysis.Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 套件。 您已安裝封裝之後，執行`msbuild /t:Metrics`從包含您的專案檔的目錄。 例如：
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -231,7 +231,7 @@ Build succeeded.
 
 #### <a name="metricsexe-usage"></a>Metrics.exe 使用量
 
-若要執行*Metrics.exe*、 提供專案或方案，輸出 XML 檔案做為引數。 例如: 
+若要執行*Metrics.exe*、 提供專案或方案，輸出 XML 檔案做為引數。 例如：
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml

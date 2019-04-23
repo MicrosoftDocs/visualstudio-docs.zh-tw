@@ -1,5 +1,5 @@
 ---
-title: 如何：選取要建置的檔案 | Microsoft Docs
+title: HOW TO：選取要建置的檔案 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dad0c732a8f342e5c584202f810e1f53defb61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798900"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064839"
 ---
-# <a name="how-to-select-the-files-to-build"></a>如何：選取要建置的檔案
+# <a name="how-to-select-the-files-to-build"></a>HOW TO：選取要建置的檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 建置包含數個檔案的專案時，您可以在專案檔中分別列出每個檔案，或是您可以使用萬用字元來包含一個目錄或巢狀目錄集合中的所有檔案。  
   
 ## <a name="specifying-inputs"></a>指定輸入  
@@ -33,7 +32,7 @@ ms.locfileid: "54798900"
   
 #### <a name="to-declare-items-individually"></a>個別宣告項目  
   
--   使用 `Include` 屬性，類似如下︰  
+- 使用 `Include` 屬性，類似如下︰  
   
      `<CSFile Include="form1.cs"/>`  
   
@@ -46,7 +45,7 @@ ms.locfileid: "54798900"
   
 #### <a name="to-declare-multiple-items"></a>宣告多個項目  
   
--   使用 `Include` 屬性，類似如下︰  
+- 使用 `Include` 屬性，類似如下︰  
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
@@ -67,19 +66,19 @@ ms.locfileid: "54798900"
   
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>包含 Images 目錄和子目錄中的所有 .jpg 檔案  
   
--   使用下列 `Include` 屬性：  
+- 使用下列 `Include` 屬性：  
   
      `Include="Images\**\*.jpg"`  
   
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>包含所有開頭為 "img" 的 .jpg 檔案  
   
--   使用下列 `Include` 屬性：  
+- 使用下列 `Include` 屬性：  
   
      `Include="Images\**\img*.jpg"`  
   
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>包含目錄中所有名稱結尾為 "jpgs" 的檔案  
   
--   使用下列其中一個 `Include` 屬性：  
+- 使用下列其中一個 `Include` 屬性：  
   
      `Include="Images\**\*jpgs\*.*"`  
   
@@ -92,7 +91,7 @@ ms.locfileid: "54798900"
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>使用所有 Visual C# 或 Visual Basic 檔案作為輸入  
   
--   使用 `Include` 屬性，類似如下︰  
+- 使用 `Include` 屬性，類似如下︰  
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   
@@ -173,6 +172,6 @@ ms.locfileid: "54798900"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)   
  [項目](../msbuild/msbuild-items.md)

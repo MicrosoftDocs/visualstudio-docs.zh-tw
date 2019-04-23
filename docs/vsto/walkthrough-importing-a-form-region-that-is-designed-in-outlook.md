@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 646fa57ac351fab9b2527c3527ce1864c42519ce
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a994db84762a18b4bf5201b5e1253d25d7a701b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631558"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101076"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>逐步解說：匯入在 Outlook 中設計的表單區域
   本逐步解說示範如何在 Microsoft Office Outlook 中設計表單區域，然後使用 [新增表單區域精靈]  將表單區域匯入至 Outlook VSTO 增益集專案。 在 Outlook 中設計表單區域可讓您將原生 Outlook 控制項加入繫結至 Outlook 資料的表單區域。 匯入表單區域之後，即可處理每個控制項的事件。
@@ -38,9 +38,9 @@ ms.locfileid: "56631558"
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 或 [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]。
+- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 或 [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]。
 
 > [!NOTE]
 >  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
@@ -53,23 +53,23 @@ ms.locfileid: "56631558"
 
 ### <a name="to-design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>使用 Outlook 中的表單區域設計工具設計表單區域
 
-1.  啟動 Microsoft Office Outlook。
+1. 啟動 Microsoft Office Outlook。
 
-2.  在 Outlook 的 [開發人員]  索引標籤上，按一下 [設計表單] 。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+2. 在 Outlook 的 [開發人員]  索引標籤上，按一下 [設計表單] 。 如需詳細資訊，請參閱[如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
-3.  在 [設計表單]  方塊中，按一下 [工作] ，然後按一下 [開啟] 。
+3. 在 [設計表單]  方塊中，按一下 [工作] ，然後按一下 [開啟] 。
 
-4.  在 Outlook 的 [開發人員]  索引標籤上，按一下 [設計]  群組中的 [新增表單區域] 。
+4. 在 Outlook 的 [開發人員]  索引標籤上，按一下 [設計]  群組中的 [新增表單區域] 。
 
      新的表單區域隨即開啟。 如果 [欄位選擇]  未出現，請按一下 [工具]  群組中的 [欄位選擇]  。
 
-5.  將 [主旨]  欄位和 [完成率]  欄位從 [欄位選擇]  拖曳至表單區域。
+5. 將 [主旨]  欄位和 [完成率]  欄位從 [欄位選擇]  拖曳至表單區域。
 
-6.  在 [工具]  群組中，按一下 [控制工具箱]  開啟 [工具箱] 。
+6. 在 [工具]  群組中，按一下 [控制工具箱]  開啟 [工具箱] 。
 
-7.  將標籤從 [工具箱]  拖曳至表單區域。 將標籤置於 [主旨]  和 [完成率]  欄位下方。
+7. 將標籤從 [工具箱]  拖曳至表單區域。 將標籤置於 [主旨]  和 [完成率]  欄位下方。
 
-8.  以滑鼠右鍵按一下標籤，然後按一下 [進階屬性] 。
+8. 以滑鼠右鍵按一下標籤，然後按一下 [進階屬性] 。
 
 9. 在 [屬性]  視窗中，將 [標題]  屬性設定為「這項工作相依於下列工作」 ，將 [寬度]  屬性設定為 **200**，然後按一下 [套用] 。
 
@@ -118,11 +118,11 @@ ms.locfileid: "56631558"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>建立新的 Outlook VSTO 增益集專案
 
-1.  在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中，建立名為 **TaskAddIn**的 Outlook VSTO 增益集專案。
+1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中，建立名為 **TaskAddIn**的 Outlook VSTO 增益集專案。
 
-2.  在 [新增專案]  對話方塊中，選取 [為方案建立目錄] 。
+2. 在 [新增專案]  對話方塊中，選取 [為方案建立目錄] 。
 
-3.  將專案儲存至預設的專案目錄。
+3. 將專案儲存至預設的專案目錄。
 
      如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
@@ -131,23 +131,23 @@ ms.locfileid: "56631558"
 
 ### <a name="to-import-the-form-region-into-the-outlook-vsto-add-in-project"></a>將表單區域匯入至 Outlook VSTO 增益集專案
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下 **TaskAddIn** 專案，指向 [加入] ，然後按一下 [新增項目] 。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下 **TaskAddIn** 專案，指向 [加入] ，然後按一下 [新增項目] 。
 
-2.  在 [範本]  窗格中，選取 [Outlook 表單區域] ，將檔案命名為 **TaskFormRegion**，然後按一下 [加入] 。
+2. 在 [範本]  窗格中，選取 [Outlook 表單區域] ，將檔案命名為 **TaskFormRegion**，然後按一下 [加入] 。
 
      **NewOutlook 表單區域**精靈 隨即啟動。
 
-3.  在 [選取您希望如何建立此表單區域]  頁面上，按一下 [匯入 Outlook 表單儲存區 (.ofs) 檔案] ，然後按一下 [瀏覽] 。
+3. 在 [選取您希望如何建立此表單區域]  頁面上，按一下 [匯入 Outlook 表單儲存區 (.ofs) 檔案] ，然後按一下 [瀏覽] 。
 
-4.  在 [現有 Outlook 表單區域檔案位置]  對話方塊中，瀏覽至 *TaskFormRegion.ofs*的位置並選取 **TaskFormRegion.ofs**，然後依序按一下 [開啟] 和 [下一步] 。
+4. 在 [現有 Outlook 表單區域檔案位置]  對話方塊中，瀏覽至 *TaskFormRegion.ofs*的位置並選取 **TaskFormRegion.ofs**，然後依序按一下 [開啟] 和 [下一步] 。
 
-5.  在 [選取要建立的表單區域類型]  頁面上，按一下 [全部取代] ，然後按 [下一步] 。
+5. 在 [選取要建立的表單區域類型]  頁面上，按一下 [全部取代] ，然後按 [下一步] 。
 
      「全部取代」  (Replace-All) 表單區域會取代整個 Outlook 表單。 如需表單區域類型的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
 
-6.  在 [提供描述文字和選取顯示設定]  頁面上，按 [下一步] 。
+6. 在 [提供描述文字和選取顯示設定]  頁面上，按 [下一步] 。
 
-7.  在 [識別將顯示此表單區域的訊息類別]  頁面的 [將顯示此表單區域的自訂訊息類別為何]  欄位中，輸入 **IPM.Task.TaskFormRegion**，然後按一下 [完成] 。
+7. 在 [識別將顯示此表單區域的訊息類別]  頁面的 [將顯示此表單區域的自訂訊息類別為何]  欄位中，輸入 **IPM.Task.TaskFormRegion**，然後按一下 [完成] 。
 
      A *TaskFormRegion.cs*或是*TaskFormRegion.vb*檔案新增至您的專案。
 
@@ -208,25 +208,25 @@ ms.locfileid: "56631558"
 
 ### <a name="to-test-the-form-region"></a>測試表單區域
 
-1.  按 **F5** 執行專案。
+1. 按 **F5** 執行專案。
 
      Outlook 啟動。
 
-2.  在 Outlook 的 [常用]  索引標籤上，按一下 [新項目] ，然後按一下 [工作] 。
+2. 在 Outlook 的 [常用]  索引標籤上，按一下 [新項目] ，然後按一下 [工作] 。
 
-3.  在工作表單的 [主旨]  欄位中，輸入「相依工作」  。
+3. 在工作表單的 [主旨]  欄位中，輸入「相依工作」  。
 
-4.  上**任務**功能區 索引標籤中**動作**群組中，按一下**儲存並關閉**。
+4. 上**任務**功能區 索引標籤中**動作**群組中，按一下**儲存並關閉**。
 
-5.  在 Outlook 的 [常用]  索引標籤上，依序按一下 [新項目] 、[其他項目] 和 [選擇表單] 。
+5. 在 Outlook 的 [常用]  索引標籤上，依序按一下 [新項目] 、[其他項目] 和 [選擇表單] 。
 
-6.  在 [選擇表單]  對話方塊中，按一下 **TaskFormRegion**，然後按一下 [開啟] 。
+6. 在 [選擇表單]  對話方塊中，按一下 **TaskFormRegion**，然後按一下 [開啟] 。
 
      **TaskFormRegion** 表單區域隨即出現。 這個表單會取代整個工作表單。 以 [工作] 資料夾中的其他工作，填入 [選取要加入相依工作清單的工作]  下拉式方塊。
 
-7.  在工作表單的 [主旨]  欄位中，輸入「主要工作」 。
+7. 在工作表單的 [主旨]  欄位中，輸入「主要工作」 。
 
-8.  在 [選取要加入相依工作清單的工作]  下拉式方塊中，選取 [相依工作] ，然後按一下 [加入相依工作] 。
+8. 在 [選取要加入相依工作清單的工作]  下拉式方塊中，選取 [相依工作] ，然後按一下 [加入相依工作] 。
 
      [完成率 - 相依工作] 隨即出現在 [這項工作相依於下列工作]  清單方塊中。 如此即示範您已成功處理按鈕的 `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` 事件。
 
@@ -245,11 +245,11 @@ ms.locfileid: "56631558"
 ## <a name="next-steps"></a>後續步驟
  從這些主題，您可以進一步了解如何自訂 Outlook 應用程式的 UI：
 
--   若要深入了解如何藉由拖曳 managed 控制項至視覺化設計工具設計表單區域的外觀，請參閱[逐步解說：設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)。
+- 若要深入了解如何藉由拖曳 managed 控制項至視覺化設計工具設計表單區域的外觀，請參閱[逐步解說：設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)。
 
--   若要深入了解如何自訂 Outlook 項目的功能區，請參閱[outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)。
+- 若要深入了解如何自訂 Outlook 項目的功能區，請參閱[outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)。
 
--   若要深入了解如何將自訂工作窗格加入 Outlook，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。
+- 若要深入了解如何將自訂工作窗格加入 Outlook，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [存取表單區域在執行階段](../vsto/accessing-a-form-region-at-run-time.md)

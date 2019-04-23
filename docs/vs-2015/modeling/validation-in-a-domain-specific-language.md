@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3057d333cfc3b08298a5329a34ef52a51556e4ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc3890ee8392088592aef16dcc120637da74e285
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945633"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113452"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>網域指定的語言中的驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ ms.locfileid: "58945633"
   
 1. 啟用中的驗證**於**節點：  
   
-   1.  開啟**Dsl\DslDefinition.dsl**。  
+   1. 開啟**Dsl\DslDefinition.dsl**。  
   
-   2.  在 [DSL 總管] 中，展開**編輯器**節點，然後選取**驗證**。  
+   2. 在 [DSL 總管] 中，展開**編輯器**節點，然後選取**驗證**。  
   
-   3.  在 [屬性] 視窗中，設定**會使用**屬性，以`true`。 最方便的做法是設定所有屬性。  
+   3. 在 [屬性] 視窗中，設定**會使用**屬性，以`true`。 最方便的做法是設定所有屬性。  
   
-   4.  按一下 **轉換所有範本**在 方案總管 工具列中。  
+   4. 按一下 **轉換所有範本**在 方案總管 工具列中。  
   
 2. 撰寫一個或多個網域類別或網域關聯性的部分類別定義。 新的程式碼檔案中撰寫這些定義**Dsl**專案。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "58945633"
    [ValidationState(ValidationState.Enabled)]  
    ```  
   
-   -   根據預設，這個屬性也會啟用衍生類別的驗證。 如果您要停用特定衍生類別的驗證，您可以使用 `ValidationState.Disabled`。  
+   - 根據預設，這個屬性也會啟用衍生類別的驗證。 如果您要停用特定衍生類別的驗證，您可以使用 `ValidationState.Disabled`。  
   
 4. 將驗證方法加入至類別。 每個驗證方法可以命名為任何名稱，但只能有一個 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext> 類型的參數。  
   
@@ -220,7 +220,7 @@ partial class MyLanguageCommandSet
   
  如需詳細資訊，請參閱[如何：將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
   
- 您也可以建立獨立的驗證控制器，自行管理錯誤。 例如:   
+ 您也可以建立獨立的驗證控制器，自行管理錯誤。 例如：  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -304,7 +304,7 @@ namespace Company.FamilyTree
   
  在影響連結或項目的復原或取消復原作業之後，也會呼叫處理常式。  
   
-##  <a name="custom"></a> 自訂驗證分類  
+## <a name="custom"></a> 自訂驗證分類  
  除了標準驗證分類 (例如功能表和開啟) 之外，您還可以定義自己的分類。 您可以從程式碼叫用這些分類。 使用者無法直接叫用這些分類。  
   
  自訂分類的一般用法是，定義一個分類以測試模型是否滿足特定工具的前置條件。  
@@ -332,7 +332,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a> 驗證的替代方法  
+## <a name="alternatives"></a> 驗證的替代方法  
  驗證條件約束會報告錯誤，但不會變更模型。 如果您想避免模型無效，可以使用其他方法。  
   
  但是，不建議使用這些方法。 通常比較好的做法是，讓使用者決定如何修正無效的模型。  

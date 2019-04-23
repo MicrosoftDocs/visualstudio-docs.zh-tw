@@ -14,19 +14,19 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d30c45c0601b6e291604275fdc9cfc4f3b5def6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940085"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109515"
 ---
 # <a name="getting-started-with-the-debugger"></a>開始使用偵錯工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 偵錯工具在任何語言都中都很容易使用。 在此我們會示範一個簡單的 C# 程式偵錯，但您可以將相同的步驟套用到 C++ 及 JavaScript 等其他語言的程式碼。  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> 基本的 C# 專案進行偵錯  
+## <a name="BKMK_Start_debugging_a_VS_project"></a> 基本的 C# 專案進行偵錯  
  讓我們開始的簡單 C# 主控台應用程式 (**檔案 / 新增 / 專案**，然後選取**Visual C#** ，然後選取**主控台應用程式**)。 如果您從未使用過之前的 Visual studio，請參閱[逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)。 **Main**方法只是將 1 加到整數變數 10 次，並會列印到主控台的結果：  
   
 ```csharp  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  如需有關中斷點的詳細資訊，請參閱 < [Using Breakpoints](../debugger/using-breakpoints.md)。  
   
-##  <a name="BKMK_Inspect_Variables"></a> 檢查變數  
+## <a name="BKMK_Inspect_Variables"></a> 檢查變數  
  偵錯通常涉及尋找不包含在特定時間點的預期的值的變數。 我們將說明一些您可以檢查變數的方式。  
   
  開始再次偵錯。 在 `Console.WriteLine` 程式碼執行之前停止執行。 您可能會導致它繼續逐步執行 (按一下**偵錯] / [逐步移轉**或是**F10**)。 在此情況下您可能已選擇**逐步**(**F11**) 並取得相同的結果，我們將在稍後說明的差異。 方法中最後一個大括號所括起的行，應該會轉為黃色。 檢視主控台視窗 您應該會看到**10**。  

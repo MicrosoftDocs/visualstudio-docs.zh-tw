@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a23cca7e0ae333b50c06e5e4b40e0a51d626f9b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c693b85eb7441749300181da8108dae353e91ad1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089365"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>升級和移轉 Office 方案
   如果您有使用舊版 Visual Studio 建立的 Microsoft Office 專案，則必須升級專案以便在目前的 Visual Studio 版本中使用。 若要升級 Microsoft Office 專案，請在包含 Microsoft Office 開發人員工具的 Visual Studio 版本中開啟。 如需包括 Microsoft Office developer tools 的 Visual Studio 版本的詳細資訊，請參閱[設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。
@@ -35,22 +35,22 @@ ms.locfileid: "56635705"
 ## <a name="changes-to-upgraded-projects"></a>升級專案的變更
  當您升級 Microsoft Office 專案時，Visual Studio 會修改專案以將目標設為下列項目：
 
--   Visual Studio 2010 Tools for Office runtime。 如需詳細資訊，請參閱 < [Visual Studio Tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
+- Visual Studio 2010 Tools for Office runtime。 如需詳細資訊，請參閱 < [Visual Studio Tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
--   目前組件的參考。
+- 目前組件的參考。
 
--   該專案類型支援的 .NET Framework 版本 (唯有升級至 Visual Studio 2013 時)。
+- 該專案類型支援的 .NET Framework 版本 (唯有升級至 Visual Studio 2013 時)。
 
--   該專案類型支援的 Microsoft Office 版本 (唯有升級至 Visual Studio 2013 時)。
+- 該專案類型支援的 Microsoft Office 版本 (唯有升級至 Visual Studio 2013 時)。
 
 ## <a name="assembly-references"></a>組件參考
  Visual Studio 會升級專案中的下列組件參考：
 
--   Microsoft Office 主要 Interop 組件 (PIA)。
+- Microsoft Office 主要 Interop 組件 (PIA)。
 
--   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中的組件。 如需有關這些組件的詳細資訊，請參閱 < [Visual Studio Tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
+- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中的組件。 如需有關這些組件的詳細資訊，請參閱 < [Visual Studio Tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
--   全新或更新版本的相依組件。
+- 全新或更新版本的相依組件。
 
 ## <a name="targeted-net-framework"></a>目標 .NET Framework
  當專案升級至 Visual Studio 2013 時，Visual Studio 會將專案修改為以 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 或 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]為目標。 該專案所設定的目標 .NET framework 版本，取決於您電腦上安裝的 Office 版本。 如果已安裝 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ，Visual Studio 會將專案修改成以 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]為目標。 否則，Visual Studio 修改專案成以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]為目標。

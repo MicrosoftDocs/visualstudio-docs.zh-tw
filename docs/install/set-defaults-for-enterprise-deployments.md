@@ -1,7 +1,7 @@
 ---
 title: 設定企業部署的預設
 description: 深入了解 Visual Studio 企業部署的網域原則和其他組態作業。
-ms.date: 05/05/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a81e9c1e007ab1d344227e75a1839e81c1c0542f
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: be29a8eff4e36df04721e8f946b9b2b0ebae3145
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325142"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857576"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>設定 Visual Studio 企業部署的預設值
 
@@ -50,15 +50,15 @@ ms.locfileid: "58325142"
 
 您可以設定下列登錄值：
 
-| **名稱** | **類型** | **預設值** | **描述** |
+| **名稱** | **類型** | **預設** | **說明** |
 | -------- | -------- | ----------- | --------------- |
-| `CachePath` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | 儲存套件資訊清單和套件承載 (後者為選擇性) 的目錄。 如需詳細資訊，請參閱如何[停用或移動套件快取](disable-or-move-the-package-cache.md)。 |
-| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | 保留套件承載，即使已安裝它們。 您可以隨時變更該值。 停用原則將移除您所修復或修改之執行個體的任何已快取套件承載。 如需詳細資訊，請參閱如何[停用或移動套件快取](disable-or-move-the-package-cache.md)。 |
+| `CachePath` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | 儲存套件資訊清單和套件承載 (後者為選擇性) 的目錄。 如需詳細資訊，請參閱[停用或移動套件快取](disable-or-move-the-package-cache.md)頁面。 |
+| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | 保留套件承載，即使已安裝它們。 您可以隨時變更該值。 停用原則將移除您所修復或修改之執行個體的任何已快取套件承載。 如需詳細資訊，請參閱[停用或移動套件快取](disable-or-move-the-package-cache.md)頁面。 |
 | `SharedInstallationPath` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | 在各個 Visual Studio 執行個體版本上共用之某些套件的安裝目錄。 您可以隨時變更該值，但這只會影響未來的安裝。 任何已安裝在舊位置的產品都不得移動，否則可能無法正常運作。 |
 
 > [!IMPORTANT]
-> 如果您在任何安裝之後變更 `CachePath` 登錄原則，則必須將現有的套件快取移動至新的位置並確定它受到保護，讓 `SYSTEM` 和 `Administrators` 兩者具有完全控制權限，而 `Everyone` 具有讀取權限。
-> 移動現有快取或提供其保護失敗，可能會造成日後的安裝問題。
+> 如果在任何安裝之後變更 `CachePath` 登錄原則，則必須將現有的套件快取移至新位置，並確定它受到保護，讓 `SYSTEM` 和 `Administrators` 都具有完全控制權限，而 `Everyone` 具有讀取權限。
+> 無法移動或保護現有的快取，日後安裝可能會發生問題。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -66,4 +66,4 @@ ms.locfileid: "58325142"
 
 - [安裝 Visual Studio](install-visual-studio.md)
 - [停用或移動套件快取](disable-or-move-the-package-cache.md)
-- [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

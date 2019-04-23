@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d305fdfa74ff680a9d5ef0b12b1a84be10958204
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92f2dc0f425c86b7304ccde5778f8479678bc41f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945907"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037878"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>使用網域指定的語言總管
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,25 +25,25 @@ ms.locfileid: "58945907"
   
  它具有下列節點：  
   
--   **連接產生器**。 模型中的連接產生器清單。 如需有關連接產生器的詳細資訊，請參閱[自訂連結建立-重新導向](../misc/customizing-link-creation-redirection.md)。  
+- **連接產生器**。 模型中的連接產生器清單。 如需有關連接產生器的詳細資訊，請參閱[自訂連結建立-重新導向](../misc/customizing-link-creation-redirection.md)。  
   
--   **連接器**。 模型中的連接器圖表項目清單。 如需連接器的詳細資訊，請參閱[類型的圖案和接點-重新導向](../misc/types-of-shapes-and-connectors-redirect.md)。  
+- **連接器**。 模型中的連接器圖表項目清單。 如需連接器的詳細資訊，請參閱[類型的圖案和接點-重新導向](../misc/types-of-shapes-and-connectors-redirect.md)。  
   
--   **圖表**。 定義圖表的一組屬性，以及連接器對應和圖形對應清單。  
+- **圖表**。 定義圖表的一組屬性，以及連接器對應和圖形對應清單。  
   
--   **網域類別**。 模型中的網域類別清單。  
+- **網域類別**。 模型中的網域類別清單。  
   
--   **網域關聯性**。 模型中的網域關聯性清單。  
+- **網域關聯性**。 模型中的網域關聯性清單。  
   
--   **網域類型**。 模型中所用的內建和外部類型清單。  
+- **網域類型**。 模型中所用的內建和外部類型清單。  
   
--   **編輯器**。 一份**工具箱**索引標籤和及其包含的項目和模型的驗證設定。 如需有關驗證的詳細資訊，請參閱 <<c0> [ 定義域專屬語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)。  
+- **編輯器**。 一份**工具箱**索引標籤和及其包含的項目和模型的驗證設定。 如需有關驗證的詳細資訊，請參閱 <<c0> [ 定義域專屬語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)。  
   
--   **總管行為**。 這些設定會指定產生之設計工具中的總管行為。 如需如何自訂總管的詳細資訊，請參閱[自訂模型總管](../modeling/customizing-the-model-explorer.md)。  
+- **總管行為**。 這些設定會指定產生之設計工具中的總管行為。 如需如何自訂總管的詳細資訊，請參閱[自訂模型總管](../modeling/customizing-the-model-explorer.md)。  
   
--   **圖形**。 模型中的圖形圖表項目清單。  
+- **圖形**。 模型中的圖形圖表項目清單。  
   
--   **Xml 序列化行為**。 模型的序列化設定。 如需序列化的詳細資訊，請參閱[自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。  
+- **Xml 序列化行為**。 模型的序列化設定。 如需序列化的詳細資訊，請參閱[自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [Domain-Specific Language Tools Glossary](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) (特定領域語言工具字彙表)

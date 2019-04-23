@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8ed8e7366b438d152abbd6faef91e3f3a0707a61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8d20b8938f4d841bb42299b7aa9abaf633f72e7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756005"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074605"
 ---
 # <a name="introduction-to-wpf"></a>WPF 簡介
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,12 +27,12 @@ Windows Presentation Foundation (WPF) 可讓您建立具有豐富視覺效果之
   
  本概觀適用於初學者，內容涵蓋 WPF 的主要功能和概念。  
   
-##  <a name="Programming_with_WPF"></a> 使用 WPF 進行程式設計  
+## <a name="Programming_with_WPF"></a> 使用 WPF 進行程式設計  
  WPF 是以 .NET Framework 類型的子集來表示，大部分位於 <xref:System.Windows> 命名空間中。 如果您之前使用過 ASP.NET 和 Windows Form 等 Managed 技術建置 .NET Framework 應用程式，應該很熟悉基本 WPF 程式設計功能：您可以具現化類別、設定屬性、呼叫方法及處理事件，全部透過您最愛的 .NET 程式設計語言來完成，例如 C# 或 Visual Basic。  
   
  WPF 包含可增強屬性和事件的額外程式設計建構： [相依性屬性](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx) 和 [路由事件](https://msdn.microsoft.com/library/ms742806\(v=vs.100\).aspx)。  
   
-##  <a name="Markup_And_Codebehind"></a> 標記和程式碼後置  
+## <a name="Markup_And_Codebehind"></a> 標記和程式碼後置  
  WPF 可讓您使用 *標記* 和 *程式碼後置*來開發應用程式，這是 ASP.NET 開發人員應該很熟悉的功能。 您通常會使用 XAML 標記來實作應用程式的外觀，同時使用 Managed 程式設計語言 (程式碼後置) 來實作其行為。 將外觀與行為區隔開來的優點如下：  
   
 - 由於外觀特定標記未與行為特定程式碼緊密結合，因此可降低開發和維護成本。  
@@ -143,7 +143,7 @@ End Namespace
   
  ![訊息方塊](../designers/media/wpfintrofigure25.png "WPFIntroFigure25")  
   
-##  <a name="Controls"></a> 控制項  
+## <a name="Controls"></a> 控制項  
  應用程式模型所傳遞的使用者體驗是已建構的控制項。 在 WPF 中，「控制項」是一個籠統的名詞，泛指裝載於視窗或頁面上之具有使用者介面並實作一些行為的某種 WPF 類別。  
   
  如需詳細資訊，請參閱 [控制項](http://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599)。  
@@ -151,38 +151,38 @@ End Namespace
 ### <a name="wpf-controls-by-function"></a>依功能列出 WPF 控制項  
  以下列出內建 WPF 控制項。  
   
--   **按鈕**： <xref:System.Windows.Controls.Button> 和 <xref:System.Windows.Controls.Primitives.RepeatButton>。  
+- **按鈕**： <xref:System.Windows.Controls.Button> 和 <xref:System.Windows.Controls.Primitives.RepeatButton>。  
   
--   **資料顯示**： <xref:System.Windows.Controls.DataGrid>、 <xref:System.Windows.Controls.ListView>和 <xref:System.Windows.Controls.TreeView>。  
+- **資料顯示**： <xref:System.Windows.Controls.DataGrid>、 <xref:System.Windows.Controls.ListView>和 <xref:System.Windows.Controls.TreeView>。  
   
--   **日期顯示和選取**： <xref:System.Windows.Controls.Calendar> 和 <xref:System.Windows.Controls.DatePicker>。  
+- **日期顯示和選取**： <xref:System.Windows.Controls.Calendar> 和 <xref:System.Windows.Controls.DatePicker>。  
   
--   **對話方塊**： <xref:Microsoft.Win32.OpenFileDialog>、 <xref:System.Windows.Controls.PrintDialog>和 <xref:Microsoft.Win32.SaveFileDialog>。  
+- **對話方塊**： <xref:Microsoft.Win32.OpenFileDialog>、 <xref:System.Windows.Controls.PrintDialog>和 <xref:Microsoft.Win32.SaveFileDialog>。  
   
--   **數位筆跡**： <xref:System.Windows.Controls.InkCanvas> 和 <xref:System.Windows.Controls.InkPresenter>。  
+- **數位筆跡**： <xref:System.Windows.Controls.InkCanvas> 和 <xref:System.Windows.Controls.InkPresenter>。  
   
--   **文件**： <xref:System.Windows.Controls.DocumentViewer>、 <xref:System.Windows.Controls.FlowDocumentPageViewer>、 <xref:System.Windows.Controls.FlowDocumentReader>、 <xref:System.Windows.Controls.FlowDocumentScrollViewer>和 <xref:System.Windows.Controls.StickyNoteControl>。  
+- **文件**： <xref:System.Windows.Controls.DocumentViewer>、 <xref:System.Windows.Controls.FlowDocumentPageViewer>、 <xref:System.Windows.Controls.FlowDocumentReader>、 <xref:System.Windows.Controls.FlowDocumentScrollViewer>和 <xref:System.Windows.Controls.StickyNoteControl>。  
   
--   **輸入**： <xref:System.Windows.Controls.TextBox>、 <xref:System.Windows.Controls.RichTextBox>和 <xref:System.Windows.Controls.PasswordBox>。  
+- **輸入**： <xref:System.Windows.Controls.TextBox>、 <xref:System.Windows.Controls.RichTextBox>和 <xref:System.Windows.Controls.PasswordBox>。  
   
--   **版面配置**： <xref:System.Windows.Controls.Border>、 <xref:System.Windows.Controls.Primitives.BulletDecorator>、 <xref:System.Windows.Controls.Canvas>、 <xref:System.Windows.Controls.DockPanel>、 <xref:System.Windows.Controls.Expander>、 <xref:System.Windows.Controls.Grid>、 <xref:System.Windows.Controls.GridView>、 <xref:System.Windows.Controls.GridSplitter>、 <xref:System.Windows.Controls.GroupBox>、 <xref:System.Windows.Controls.Panel>、 <xref:System.Windows.Controls.Primitives.ResizeGrip>、 <xref:System.Windows.Controls.Separator>、 <xref:System.Windows.Controls.Primitives.ScrollBar>、 <xref:System.Windows.Controls.ScrollViewer>、 <xref:System.Windows.Controls.StackPanel>、 <xref:System.Windows.Controls.Primitives.Thumb>、 <xref:System.Windows.Controls.Viewbox>、 <xref:System.Windows.Controls.VirtualizingStackPanel>、 <xref:System.Windows.Window>和 <xref:System.Windows.Controls.WrapPanel>。  
+- **版面配置**： <xref:System.Windows.Controls.Border>、 <xref:System.Windows.Controls.Primitives.BulletDecorator>、 <xref:System.Windows.Controls.Canvas>、 <xref:System.Windows.Controls.DockPanel>、 <xref:System.Windows.Controls.Expander>、 <xref:System.Windows.Controls.Grid>、 <xref:System.Windows.Controls.GridView>、 <xref:System.Windows.Controls.GridSplitter>、 <xref:System.Windows.Controls.GroupBox>、 <xref:System.Windows.Controls.Panel>、 <xref:System.Windows.Controls.Primitives.ResizeGrip>、 <xref:System.Windows.Controls.Separator>、 <xref:System.Windows.Controls.Primitives.ScrollBar>、 <xref:System.Windows.Controls.ScrollViewer>、 <xref:System.Windows.Controls.StackPanel>、 <xref:System.Windows.Controls.Primitives.Thumb>、 <xref:System.Windows.Controls.Viewbox>、 <xref:System.Windows.Controls.VirtualizingStackPanel>、 <xref:System.Windows.Window>和 <xref:System.Windows.Controls.WrapPanel>。  
   
--   **媒體**： <xref:System.Windows.Controls.Image>、 <xref:System.Windows.Controls.MediaElement>和 <xref:System.Windows.Controls.SoundPlayerAction>。  
+- **媒體**： <xref:System.Windows.Controls.Image>、 <xref:System.Windows.Controls.MediaElement>和 <xref:System.Windows.Controls.SoundPlayerAction>。  
   
--   **功能表**： <xref:System.Windows.Controls.ContextMenu>、 <xref:System.Windows.Controls.Menu>和 <xref:System.Windows.Controls.ToolBar>。  
+- **功能表**： <xref:System.Windows.Controls.ContextMenu>、 <xref:System.Windows.Controls.Menu>和 <xref:System.Windows.Controls.ToolBar>。  
   
--   **巡覽**： <xref:System.Windows.Controls.Frame>、 <xref:System.Windows.Documents.Hyperlink>、 <xref:System.Windows.Controls.Page>、 <xref:System.Windows.Navigation.NavigationWindow>和 <xref:System.Windows.Controls.TabControl>。  
+- **巡覽**： <xref:System.Windows.Controls.Frame>、 <xref:System.Windows.Documents.Hyperlink>、 <xref:System.Windows.Controls.Page>、 <xref:System.Windows.Navigation.NavigationWindow>和 <xref:System.Windows.Controls.TabControl>。  
   
--   **選取**： <xref:System.Windows.Controls.CheckBox>、 <xref:System.Windows.Controls.ComboBox>、 <xref:System.Windows.Controls.ListBox>、 <xref:System.Windows.Controls.RadioButton>和 <xref:System.Windows.Controls.Slider>。  
+- **選取**： <xref:System.Windows.Controls.CheckBox>、 <xref:System.Windows.Controls.ComboBox>、 <xref:System.Windows.Controls.ListBox>、 <xref:System.Windows.Controls.RadioButton>和 <xref:System.Windows.Controls.Slider>。  
   
--   **使用者資訊**： <xref:System.Windows.Controls.AccessText>、 <xref:System.Windows.Controls.Label>、 <xref:System.Windows.Controls.Primitives.Popup>、 <xref:System.Windows.Controls.ProgressBar>、 <xref:System.Windows.Controls.Primitives.StatusBar>、 <xref:System.Windows.Controls.TextBlock>和 <xref:System.Windows.Controls.ToolTip>。  
+- **使用者資訊**： <xref:System.Windows.Controls.AccessText>、 <xref:System.Windows.Controls.Label>、 <xref:System.Windows.Controls.Primitives.Popup>、 <xref:System.Windows.Controls.ProgressBar>、 <xref:System.Windows.Controls.Primitives.StatusBar>、 <xref:System.Windows.Controls.TextBlock>和 <xref:System.Windows.Controls.ToolTip>。  
   
-##  <a name="Input_And_Commanding"></a> 輸入和命令  
+## <a name="Input_And_Commanding"></a> 輸入和命令  
  控制項最常用來偵測及回應使用者輸入。 [WPF 輸入系統](https://msdn.microsoft.com/library/ms754010\(v=vs.100\).aspx) 使用直接和路由事件來支援文字輸入、焦點管理和滑鼠定位。  
   
  應用程式通常具有複雜的輸入需求。 WPF 提供一個 [命令系統](https://msdn.microsoft.com/library/ms752308\(v=vs.100\).aspx) ，將使用者輸入動作與回應這些動作的程式碼區隔開來。  
   
-##  <a name="Layout"></a> 版面配置  
+## <a name="Layout"></a> 版面配置  
  當您建立使用者介面時，您可依位置和大小排列控制項，以形成一個版面配置。 所有版面配置的一個關鍵需求是隨視窗大小和顯示設定的變更進行調整。 WPF 為您提供一流且可擴充的版面配置系統，而不是強迫您在這些情況下撰寫程式碼來調整版面配置。  
   
  這個版面配置系統是以相對定位為基礎，藉此提升依視窗和顯示狀況變更來做調整的能力。 此外，這個版面配置系統可管理控制項之間的交涉，以決定版面配置。 此交涉是兩個步驟的程序：控制項會先指示其父代所需的位置和大小，然後再由父代指示控制項其可擁有的空間。  
@@ -214,7 +214,7 @@ End Namespace
   
  ![DockPanel 頁面](../designers/media/wpfintrofigure11.png "WPFIntroFigure11")  
   
-##  <a name="Data_Binding"></a> 資料繫結  
+## <a name="Data_Binding"></a> 資料繫結  
  大多數已建立的應用程式會為使用者提供檢視及編輯資料的方法。 至於 WPF 應用程式，儲存和存取資料的工作已由 SQL Server 和 ADO.NET 等技術提供。 存取資料並將資料載入應用程式的 Managed 物件之後，才會開始 WPF 應用程式的困難工作。 基本上，這涉及兩個動作：  
   
 1. 將資料從 Managed 物件複製到控制項，以在其中顯示及編輯資料。  
@@ -245,16 +245,16 @@ End Namespace
   
    如需詳細資訊，請參閱 [資料繫結概觀](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)。  
   
-##  <a name="Graphics"></a> 圖形  
+## <a name="Graphics"></a> 圖形  
  WPF 引進了一組詳盡、可擴充且彈性的圖形功能，其優點如下：  
   
--   **解析度獨立與裝置獨立圖形**。 WPF 圖形系統的基本測量單位是裝置獨立畫素，不論實際螢幕解析度為何，都是 1 英吋的 1/96，並會為解析度獨立與裝置獨立轉譯提供基礎。 每個裝置獨立畫素會依轉譯所在系統的 DPI (每英吋的點數) 設定來自動調整。  
+- **解析度獨立與裝置獨立圖形**。 WPF 圖形系統的基本測量單位是裝置獨立畫素，不論實際螢幕解析度為何，都是 1 英吋的 1/96，並會為解析度獨立與裝置獨立轉譯提供基礎。 每個裝置獨立畫素會依轉譯所在系統的 DPI (每英吋的點數) 設定來自動調整。  
   
--   **改進精確度**。 WPF 座標系統是使用雙精確度浮點數進行測量，而不是單精確度。 轉換和透明度值也會以雙精確度來表示。 WPF 也支援廣色域 (scRGB)，並提供整合式支援，以管理來自不同色彩空間的輸入。  
+- **改進精確度**。 WPF 座標系統是使用雙精確度浮點數進行測量，而不是單精確度。 轉換和透明度值也會以雙精確度來表示。 WPF 也支援廣色域 (scRGB)，並提供整合式支援，以管理來自不同色彩空間的輸入。  
   
--   **進階圖形和動畫支援**： WPF 藉由為您管理動畫場景來簡化圖形程式設計；您不需要擔心場景處理、轉譯迴圈和雙線性插補。 此外，WPF 還提供叫用測試支援和完整的 alpha 複合支援。  
+- **進階圖形和動畫支援**： WPF 藉由為您管理動畫場景來簡化圖形程式設計；您不需要擔心場景處理、轉譯迴圈和雙線性插補。 此外，WPF 還提供叫用測試支援和完整的 alpha 複合支援。  
   
--   **硬體加速**： WPF 圖形系統利用圖形硬體將 CPU 使用量降到最低。  
+- **硬體加速**： WPF 圖形系統利用圖形硬體將 CPU 使用量降到最低。  
   
 ### <a name="2-d-shapes"></a>2D 圖案  
  WPF 提供以通用向量繪製之 2D 圖案的圖庫，例如下圖所示的矩形和橢圓形。  
@@ -299,14 +299,14 @@ End Namespace
   
  如需詳細資訊，請參閱 [3D 圖形診斷](https://msdn.microsoft.com/library/ms747437\(v=vs.100\).aspx)。  
   
-##  <a name="Animation"></a> 動畫  
+## <a name="Animation"></a> 動畫  
  WPF 動畫支援可讓您將控制項設為放大、搖晃、旋轉和淡出，以建立有趣的網頁切換及執行其他工作。 您可以建立大多數 WPF 類別的動畫，甚至是自訂類別。 下圖顯示執行中的簡單動畫。  
   
  ![動畫效果立方體的影像](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
   
  如需詳細資訊，請參閱 [動畫概觀](https://msdn.microsoft.com/library/ms752312\(v=vs.100\).aspx)。  
   
-##  <a name="Media"></a> 媒體  
+## <a name="Media"></a> 媒體  
  傳達豐富內容的一個方式是透過視聽媒體。 WPF 提供對影像、視訊和音訊的特殊支援。  
   
 ### <a name="images"></a>影像  
@@ -327,7 +327,7 @@ End Namespace
   
  如需詳細資訊，請參閱 [WPF 圖形、動畫和媒體概觀](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)。  
   
-##  <a name="Text_and_Typography"></a> 文字和印刷樣式  
+## <a name="Text_and_Typography"></a> 文字和印刷樣式  
  為了達成高品質文字轉譯，WPF 提供下列功能：  
   
 - OpenType 字型支援。  
@@ -346,7 +346,7 @@ End Namespace
   
   如需詳細資訊，請參閱 [Windows Presentation Foundation 中的印刷樣式](https://msdn.microsoft.com/library/ms742190\(v=vs.100\).aspx)。  
   
-##  <a name="WPF_Customization"></a> 自訂 WPF 應用程式  
+## <a name="WPF_Customization"></a> 自訂 WPF 應用程式  
  到目前為止，您已經認識用於開發應用程式的核心 WPF 建置組塊。 您可以使用應用程式模型，來裝載及傳遞主要由控制項所組成的應用程式內容。 為了簡化使用者介面中的控制項排列方式，並確保不論視窗大小和顯示設定如何變更，都能維持此排列方式，您可以使用 WPF 版面配置系統。 由於大多數應用程式可讓使用者與資料互動，因此您可以使用資料繫結來減少使用者介面與資料整合的工作。 若要改進應用程式的視覺外觀，您可以使用的 WPF 所提供的各種圖形、動畫和媒體支援。  
   
  不過，這些基本功能通常並不足以建立及管理與眾不同且具有豐富視覺效果的使用者介面。 標準 WPF 控制項可能未與應用程式所需的外觀進行整合。 資料可能不會以最有效的方式來顯示。 Windows 佈景主題的預設外觀和風格可能不適合您應用程式的整體使用者介面。 在許多方面，呈現技術除了擴充其他任何類型的功能之外，也需要擴充視覺化功能。  
@@ -485,8 +485,7 @@ End Namespace
   [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind1)]  
   [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind2)]
   [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind2)]  
-  
-  
+
  下一個範例說明將使用者控制項併入 <xref:System.Windows.Window>所需的 XAML。  
   
  [!code-xml[IntroToWPFSnippets#UserControlWindowMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/UserControlWindow.xaml#usercontrolwindowmarkup1)]  
@@ -499,25 +498,25 @@ End Namespace
   
  如需自訂控制項的詳細資訊，請參閱 [控制項撰寫概觀](https://msdn.microsoft.com/library/ms745025\(v=vs.100\).aspx)。  
   
-##  <a name="WPF_Best_Practices"></a> WPF 最佳作法  
+## <a name="WPF_Best_Practices"></a> WPF 最佳作法  
  如同任何開發平台，您可以透過各種方式來使用 WPF，以取得想要的結果。 為了確保您的 WPF 應用程式提供所需的使用者體驗，並符合一般大眾的需求，已針對協助工具、全球化和當地語系化，以及效能提供了建議的最佳作法。 如需詳細資訊，請參閱下列主題：  
   
--   [協助工具最佳作法](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)協助工具最佳作法  
+- [協助工具最佳作法](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)協助工具最佳作法  
   
--   [WPF 全球化和當地語系化概觀](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx)  
+- [WPF 全球化和當地語系化概觀](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx)  
   
--   [最佳化 WPF 應用程式效能](https://msdn.microsoft.com/library/aa970683\(v=vs.100\).aspx)  
+- [最佳化 WPF 應用程式效能](https://msdn.microsoft.com/library/aa970683\(v=vs.100\).aspx)  
   
--   [Windows Presentation Foundation 安全性](https://msdn.microsoft.com/library/aa970906\(v=vs.100\).aspx)  
+- [Windows Presentation Foundation 安全性](https://msdn.microsoft.com/library/aa970906\(v=vs.100\).aspx)  
   
-##  <a name="Summary"></a> 總結  
+## <a name="Summary"></a> 總結  
  WPF 是功能齊全的呈現技術，可建置具有豐富視覺效果的各種用戶端應用程式。 本簡介提供 WPF 的主要功能一覽。  
   
  下一個步驟是建置 WPF 應用程式！  
   
  當您建置應用程式時，您可以回顧本簡介，以複習主要功能，並找到針對本簡介所涵蓋之功能更詳細解說的資源。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [WPF 使用者入門](../designers/getting-started-with-wpf.md)   
  [使用 Windows Presentation Foundation 建立新式桌面應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)   
  [Windows Presentation Foundation](https://msdn.microsoft.com/library/ms754130\(v=vs.100\).aspx)

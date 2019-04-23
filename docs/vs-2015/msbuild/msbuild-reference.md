@@ -16,17 +16,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f1bded7e322387363bddb6b3aa2e6d7913d2da8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b80e0e7daed1c426ea30c3da9a4e2324d33f48bb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773169"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650296"
 ---
 # <a name="msbuild-reference"></a>MSBuild 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 是適用於 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的建置系統。 下列連結會引導至包含 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 參考資訊的主題。  
   
 ## <a name="in-this-section"></a>本節內容  

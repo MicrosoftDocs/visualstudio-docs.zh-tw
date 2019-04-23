@@ -16,17 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f296cda3fb7b57ed323dd8b1a6bbff949b9a6d1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 98670f99779804cec87bc4afc03ab7d126024378
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799794"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105613"
 ---
 # <a name="toolbox"></a>工具箱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [工具箱] 會顯示您可以新增至 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 專案的控制項和其他項目的圖示。 若要開啟 [工具箱]，請按一下 [檢視] 功能表上的 [工具箱]。 您可以停駐 [工具箱]，而且您可以將它釘選成開啟狀態，或將它設定為 [自動隱藏]。  
   
  **工具箱**圖示可以被拖曳至設計檢視，或在程式碼編輯器中貼上。 任一項動作都會新增基本程式碼，以在使用中專案檔中建立 [工具箱] 項目的執行個體。  
@@ -39,17 +38,17 @@ ms.locfileid: "54799794"
 ## <a name="help-on-toolbox-tabs"></a>工具箱索引標籤上的說明  
  下列文件提供特定 [工具箱] 索引標籤的詳細資訊。  
   
--   [資料索引標籤、工具箱](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
+- [資料索引標籤、工具箱](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
   
--   [元件索引標籤、工具箱](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
+- [元件索引標籤、工具箱](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
   
--   [HTML 索引標籤、工具箱](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
+- [HTML 索引標籤、工具箱](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
   
--   [資料索引標籤、工具箱](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
+- [資料索引標籤、工具箱](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
   
--   [元件索引標籤、工具箱](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
+- [元件索引標籤、工具箱](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
   
--   [HTML 索引標籤、工具箱](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
+- [HTML 索引標籤、工具箱](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
 ## <a name="see-also"></a>請參閱  
  [使用工具箱](../../ide/using-the-toolbox.md)

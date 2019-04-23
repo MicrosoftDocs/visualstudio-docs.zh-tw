@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940079"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065385"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>逐步解說：在 WPF 應用程式中顯示相關的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,19 +61,19 @@ ms.locfileid: "58940079"
   
 #### <a name="to-create-a-new-wpf-project"></a>若要建立新的 WPF 專案  
   
-1.  啟動 Visual Studio。  
+1. 啟動 Visual Studio。  
   
-2.  在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
+2. 在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
   
-3.  依序展開**Visual C#** 或是**Visual Basic**，然後選取**Windows**。  
+3. 依序展開**Visual C#** 或是**Visual Basic**，然後選取**Windows**。  
   
-4.  請確定 **.NET Framework 4**選取對話方塊頂端的下拉式方塊中。 <xref:System.Windows.Controls.DataGrid>您在本逐步解說中使用的控制項是僅適用於.NET Framework 4。  
+4. 請確定 **.NET Framework 4**選取對話方塊頂端的下拉式方塊中。 <xref:System.Windows.Controls.DataGrid>您在本逐步解說中使用的控制項是僅適用於.NET Framework 4。  
   
-5.  選取 [WPF 應用程式] 專案範本。  
+5. 選取 [WPF 應用程式] 專案範本。  
   
-6.  在 [名稱]  方塊中，輸入 `AdventureWorksOrdersViewer`。  
+6. 在 [名稱] 方塊中，輸入 `AdventureWorksOrdersViewer`。  
   
-7.  按一下 [確定 **Deploying Office Solutions**]。  
+7. 按一下 [確定] 。  
   
      Visual Studio 會建立`AdventureWorksOrdersViewer`專案。  
   
@@ -102,9 +102,9 @@ ms.locfileid: "58940079"
   
 6. 在 **選擇您的資料庫物件**頁面上，展開**資料表**，，然後選取下列資料表：  
   
-   -   **SalesOrderDetail**  
+   - **SalesOrderDetail**  
   
-   -   **SalesOrderHeader**  
+   - **SalesOrderHeader**  
   
 7. 按一下 [ **完成**]。  
   
@@ -192,15 +192,15 @@ ms.locfileid: "58940079"
   
 #### <a name="to-test-the-application"></a>若要測試應用程式  
   
-1.  請按 **F5**。  
+1. 請按 **F5**。  
   
      隨即建置應用程式並執行。 驗證下列各項：  
   
-    -   **銷售單識別碼**下拉式方塊會顯示**71774**。 這是在實體中的第一個訂單識別碼。  
+    - **銷售單識別碼**下拉式方塊會顯示**71774**。 這是在實體中的第一個訂單識別碼。  
   
-    -   您選取在每個訂單**銷售單識別碼**下拉式方塊中，會顯示詳細的訂單資訊<xref:System.Windows.Controls.DataGrid>。  
+    - 您選取在每個訂單**銷售單識別碼**下拉式方塊中，會顯示詳細的訂單資訊<xref:System.Windows.Controls.DataGrid>。  
   
-2.  關閉應用程式。  
+2. 關閉應用程式。  
   
 ## <a name="next-steps"></a>後續步驟  
  之後完成此逐步解說，了解如何使用**Zdroje dat**視窗在 Visual Studio 中要繫結 WPF 控制項新增至其他類型的資料來源。 如需詳細資訊，請參閱 <<c0> [ 繫結 WPF 控制項新增至 WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)並[繫結 WPF 控制項新增至資料集](../data-tools/bind-wpf-controls-to-a-dataset.md)。  

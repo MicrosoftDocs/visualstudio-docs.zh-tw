@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ea593ad5f88ba29f6b1c0d7c64a129b8f71c7f5
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857070"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中快照集偵錯的常見問題集
@@ -60,7 +60,7 @@ ms.locfileid: "58857070"
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 偵錯](../debugger/index.md)
-- [使用快照偵錯工具針對即時 ASP.NET 應用程式進行偵錯](../debugger/debug-live-azure-applications.md)
-- [使用快照偵錯工具針對即時 ASP.NET Azure 虛擬機器\虛擬機器擴展集進行偵錯](../debugger/debug-live-azure-virtual-machines.md)
-- [使用快照偵錯工具針對即時 ASP.NET Azure Kubernetes 進行偵錯](../debugger/debug-live-azure-kubernetes.md)
-- [快照偵錯的疑難排解和已知問題](../debugger/debug-live-azure-apps-troubleshooting.md)
+- [使用快照集偵錯工具的即時 ASP.NET 應用程式進行偵錯](../debugger/debug-live-azure-applications.md)
+- [偵錯即時 ASP.NET Azure 虛擬 Machines\Virtual 機器擴展集使用快照集偵錯工具](../debugger/debug-live-azure-virtual-machines.md)
+- [偵錯即時 ASP.NET Azure Kubernetes 中使用快照集偵錯工具](../debugger/debug-live-azure-kubernetes.md)
+- [疑難排解和已知問題的快照集偵錯](../debugger/debug-live-azure-apps-troubleshooting.md)

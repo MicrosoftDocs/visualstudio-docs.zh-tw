@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 89ef2aabd03316f34280e75dc30da2189629b2f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fa3f96cd6ee5ff3c4f78a3e9a9bc89b2037066fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053828"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>如何發現誰傳錯參數值？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ ms.locfileid: "58944771"
   
 #### <a name="to-resolve-this-problem"></a>若要解決這個問題  
   
-1.  在函式的開頭設定位置中斷點。  
+1. 在函式的開頭設定位置中斷點。  
   
-2.  以滑鼠右鍵按一下中斷點並選取 [條件]。  
+2. 以滑鼠右鍵按一下中斷點並選取 [條件]。  
   
-3.  在 [中斷點條件] 對話方塊中，按一下 [條件] 核取方塊。 請參閱[進階中斷點](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)。  
+3. 在 [中斷點條件] 對話方塊中，按一下 [條件] 核取方塊。 請參閱[進階中斷點](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)。  
   
-4.  在文字方塊中輸入運算式，例如 `Var==3`；其中 `Var` 是含有錯誤值的參數名稱，而 `3` 則是傳入的錯誤值。  
+4. 在文字方塊中輸入運算式，例如 `Var==3`；其中 `Var` 是含有錯誤值的參數名稱，而 `3` 則是傳入的錯誤值。  
   
-5.  選取 [為 True] 選項按鈕，然後按一下 [確定] 按鈕。  
+5. 選取 [為 True] 選項按鈕，然後按一下 [確定] 按鈕。  
   
-6.  現在再次執行程式。 當 `Var` 參數的值是 `3` 時，中斷點會造成程式暫止在函式的開頭。  
+6. 現在再次執行程式。 當 `Var` 參數的值是 `3` 時，中斷點會造成程式暫止在函式的開頭。  
   
-7.  然後您可以使用 [呼叫堆疊] 視窗來找出呼叫函式並且巡覽原始程式碼。 如需詳細資訊，請參閱[如何：使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)。  
+7. 然後您可以使用 [呼叫堆疊] 視窗來找出呼叫函式並且巡覽原始程式碼。 如需詳細資訊，請參閱[如何：使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [對機器碼進行偵錯的常見問題集](../debugger/debugging-native-code-faqs.md)   

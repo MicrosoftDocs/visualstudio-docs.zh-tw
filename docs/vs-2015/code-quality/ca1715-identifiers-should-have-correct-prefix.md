@@ -15,17 +15,17 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cece70c942b62390e0ba3e96c57c1c46c4dd46fa
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 37c8193a166849f1361a66c640b1a414d3900fca
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59000831"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667322"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715:識別項名稱應該使用正確的前置字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新文件，請參閱[CA1715:識別項應該使用正確的前置詞](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix)docs.microsoft.com 上。  
+如需 Visual Studio 的最新文件，請參閱[CA1715:識別項應該使用正確的前置詞](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix)。  
   
 |||  
 |-|-|  

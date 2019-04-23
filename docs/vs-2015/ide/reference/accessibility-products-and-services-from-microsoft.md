@@ -19,31 +19,30 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c780213083068d64a62791fdd858f692533bf40
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ae91a057dc983044caa9544030571a8be34deef7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867933"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048071"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 提供的協助工具產品和服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下列主題提供讓行動不便人士更容易存取 Microsoft Windows 之功能、產品和服務的相關資訊：  
   
--   [Windows 協助工具功能](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)  
+- [Windows 協助工具功能](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)  
   
--   [替代格式的文件](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)  
+- [替代格式的文件](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)  
   
--   [聽障人士客戶服務](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)  
+- [聽障人士客戶服務](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)  
   
--   [詳細資訊](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)  
+- [詳細資訊](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)  
   
 > [!NOTE]
 >  本節中的資訊僅適用於美國地區的 Microsoft 產品授權使用者。 如果您在美國以外取得本產品，可以使用軟體封裝隨附的子公司資訊卡，或者造訪 [Microsoft 協助工具網站](http://go.microsoft.com/fwlink/?LinkId=8431) ，取得一份 Microsoft 支援服務電話號碼及地址。 您可以連絡當地分公司，以了解當地是否有提供本節所描述的產品和服務類型。 協助工具資訊也有提供其他語言，包括日文及法文。  
   
-##  <a name="windows"></a> Windows 協助工具功能  
+## <a name="windows"></a> Windows 協助工具功能  
  Windows 作業系統具備許多內建的協助工具功能，方便無法打字或無法使用滑鼠、視障或弱視、失聰或聽障等人士使用。 這些功能會在安裝期間安裝。 如需這些功能的詳細資訊，請參閱 Windows 說明和 [Microsoft 協助工具網站](http://go.microsoft.com/fwlink/?LinkId=8431)。  
   
 ### <a name="free-step-by-step-tutorials"></a>免費逐步教學課程  
@@ -56,7 +55,7 @@ Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下
   
  如果您使用輔助技術，請務必連絡輔助技術廠商，然後再升級軟體或硬體，以檢查是否有可能的相容性問題。  
   
-##  <a name="altfortmats"></a> 替代格式的文件  
+## <a name="altfortmats"></a> 替代格式的文件  
  如果您閱讀或處理印刷資料時有困難，可以取得許多以更方便之格式提供的 Microsoft 產品文件。 您可以在 [Microsoft 協助工具網站](http://go.microsoft.com/fwlink/?LinkId=8431)上，檢視具有協助功能之產品文件的索引。  
   
  此外，您可以從 Recording for the Blind & Dyslexic, Inc (RFB&D) 取得其他 Microsoft 出版品。 RFB&D 會將這些文件發佈給其發佈服務的已註冊合格成員。 如需 Microsoft 產品文件和 Microsoft Press 書籍可用性的相關資訊，請連絡：  
@@ -67,7 +66,7 @@ Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下
   
  網址可能有所變更，因此您可能會無法連線至這裡所提到的網站。  
   
-##  <a name="hearing"></a> 聽障人士客戶服務  
+## <a name="hearing"></a> 聽障人士客戶服務  
  如果您失聰或有聽覺障礙，可以透過文字電話 (TTY/TDD) 服務完整使用 Microsoft 產品及客戶服務：  
   
 - 如需客戶服務，請連絡 Microsoft 銷售資訊中心，電話：(800) 892-5234，服務時間為太平洋時間星期一至星期五上午 6:30 到下午 5:30 (假日除外)。  
@@ -76,7 +75,7 @@ Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下
   
   Microsoft 支援服務依據使用服務時有效的價格、條款和條件。  
   
-##  <a name="moreinfo"></a> 詳細資訊  
+## <a name="moreinfo"></a> 詳細資訊  
  如需電腦協助工具技術如何改善身障人士生活的詳細資訊，請參閱 [Microsoft 協助工具網站](http://go.microsoft.com/fwlink/?LinkId=8431)。  
   
 ## <a name="see-also"></a>請參閱  

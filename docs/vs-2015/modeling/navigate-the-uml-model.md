@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941873"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116663"
 ---
 # <a name="navigate-the-uml-model"></a>巡覽 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ ms.locfileid: "58941873"
   
  IElement 以外的所有類型都繼承一或多個超級類型的屬性。  
   
--   如需模型類型的摘要，請參閱 < [UML 模型項目類型](../modeling/uml-model-element-types.md)。  
+- 如需模型類型的摘要，請參閱 < [UML 模型項目類型](../modeling/uml-model-element-types.md)。  
   
--   完整的 api 的詳細資訊，請參閱 < [UML 模型擴充性的 API 參考](../modeling/api-reference-for-uml-modeling-extensibility.md)。  
+- 完整的 api 的詳細資訊，請參閱 < [UML 模型擴充性的 API 參考](../modeling/api-reference-for-uml-modeling-extensibility.md)。  
   
 ### <a name="relationships"></a>關聯性  
  「UML 規格」中所定義的屬性和關聯性會實作為 .NET 屬性。  
@@ -122,11 +122,11 @@ foreach (IShape<IInterface> in
 ## <a name="accessing-another-model-or-diagrams"></a>存取另一個模型或圖表  
  您可以：  
   
--   使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型匯流排，來建立不同模型中項目之間的連結。 如需詳細資訊，請參閱 <<c0> [ 整合 UML 模型與其他模型及工具](../modeling/integrate-uml-models-with-other-models-and-tools.md)。  
+- 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型匯流排，來建立不同模型中項目之間的連結。 如需詳細資訊，請參閱 <<c0> [ 整合 UML 模型與其他模型及工具](../modeling/integrate-uml-models-with-other-models-and-tools.md)。  
   
--   以唯讀模式載入模型專案和圖表，而不讓它顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用者介面中。 如需詳細資訊，請參閱 <<c0> [ 讀取程式碼中的 UML 模型](../modeling/read-a-uml-model-in-program-code.md)。  
+- 以唯讀模式載入模型專案和圖表，而不讓它顯示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用者介面中。 如需詳細資訊，請參閱 <<c0> [ 讀取程式碼中的 UML 模型](../modeling/read-a-uml-model-in-program-code.md)。  
   
--   在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟模型專案和其圖表，然後存取內容。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio API 開啟 UML 模型](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)。  
+- 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟模型專案和其圖表，然後存取內容。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio API 開啟 UML 模型](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)   

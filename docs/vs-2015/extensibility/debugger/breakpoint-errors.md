@@ -12,12 +12,12 @@ ms.assetid: 79221c6b-a924-4c8e-a778-e312e4e0c0c8
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c9400e28e54476b027e6d57e97d7d0178511a10a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e98dc5e4645ac67ecdf5ebb06ecf0f31510202e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930661"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114692"
 ---
 # <a name="breakpoint-errors"></a>中斷點錯誤
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ ms.locfileid: "58930661"
   
 ## <a name="troubleshooting-a-breakpoint-error"></a>中斷點錯誤疑難排解  
   
-1.  偵錯引擎 (DE) 會傳送[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)工作階段的偵錯管理員 (SDM)。  
+1. 偵錯引擎 (DE) 會傳送[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)工作階段的偵錯管理員 (SDM)。  
   
-2.  SDM 呼叫[IDebugBreakpointErrorEvent2::GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) (IDebugErrorBreakpoint2 * * `ppErrorBP`) 以取得錯誤的中斷點。  
+2. SDM 呼叫[IDebugBreakpointErrorEvent2::GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) (IDebugErrorBreakpoint2 * * `ppErrorBP`) 以取得錯誤的中斷點。  
   
-3.  SDM 呼叫[IDebugErrorBreakpoint2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)取得從中產生錯誤的中斷點暫止中斷點。  
+3. SDM 呼叫[IDebugErrorBreakpoint2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)取得從中產生錯誤的中斷點暫止中斷點。  
   
-4.  SDM 呼叫[IDebugErrorBreakpoint2::GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)以取得錯誤中斷點繫結失敗的原因。  
+4. SDM 呼叫[IDebugErrorBreakpoint2::GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)以取得錯誤中斷點繫結失敗的原因。  
   
 ## <a name="see-also"></a>另請參閱  
  [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)

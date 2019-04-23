@@ -11,12 +11,12 @@ ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 98b1f0f97aa33c56df7a512389daf1801157e693
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6e232a6f7fcb8813670ca6d949fdb6b3287bb79c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939797"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061784"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>附加至程式及中斷連結程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "58939797"
   
     如果`S_OK`傳回，預設會在 SDM 相同的程序中載入。 在 SDM 會執行下列工作：  
   
-   1.  呼叫[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)取得 DE 的引擎資訊。  
+   1. 呼叫[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)取得 DE 的引擎資訊。  
   
-   2.  共同建立 DE。  
+   2. 共同建立 DE。  
   
-   3.  呼叫[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)。  
+   3. 呼叫[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)。  
   
 2. DE 傳送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)來使用 SDM`EVENT_SYNC`屬性。  
   

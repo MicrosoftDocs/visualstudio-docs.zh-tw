@@ -1,5 +1,5 @@
 ---
-title: CA3005:檢閱 LDAP 插入式攻擊弱點的程式碼
+title: CA3005：檢閱程式碼是否有 LDAP 插入式攻擊弱點
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 38c28153fa513c4f4db5b3a7833d279674f66734
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018488"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110371"
 ---
-# <a name="ca3005-review-code-for-ldap-injection-vulnerabilities"></a>CA3005:檢閱 LDAP 插入式攻擊弱點的程式碼
+# <a name="ca3005-review-code-for-ldap-injection-vulnerabilities"></a>CA3005：檢閱程式碼是否有 LDAP 插入式攻擊弱點
 
 |||
 |-|-|

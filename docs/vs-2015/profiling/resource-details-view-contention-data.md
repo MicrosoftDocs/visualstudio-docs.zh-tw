@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 27aed07b7e4212502a819ce024b0ce46680df6bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: aac43a88a62182a33ea3b340c5520e921d681cd7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089571"
 ---
 # <a name="resource-details-view---contention-data"></a>資源詳細資料檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ ms.locfileid: "54759957"
   
 #### <a name="to-magnify-a-timeline-segment"></a>放大時間軸區段  
   
--   將滑鼠指標拖曳時間軸的某一區域上方。  
+- 將滑鼠指標拖曳時間軸的某一區域上方。  
   
      放開滑鼠按鈕之後，檢視就會縮放為選取的時間區段。 您可以重複此流程，以進一步放大該區段。 時間捲軸的捲動方塊代表出現在檢視中的時間區段相對大小。  
   
 #### <a name="to-zoom-out-on-a-timeline"></a>在時間軸上縮小  
   
--   請執行下列其中一個步驟：  
+- 請執行下列其中一個步驟：  
   
-    -   按一下 [縮小] 以返回上一個縮放層級。  
+    - 按一下 [縮小] 以返回上一個縮放層級。  
   
-    -   按一下 [顯示比例重設]，在檢視中顯示所有的時間軸。  
+    - 按一下 [顯示比例重設]，在檢視中顯示所有的時間軸。  
   
 #### <a name="to-view-the-call-stack-of-an-event"></a>檢視事件的呼叫堆疊  
   
--   在時間軸圖形中，按一下事件列。  
+- 在時間軸圖形中，按一下事件列。  
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>檢視或編輯呼叫堆疊中函式的原始程式碼  
   
@@ -55,12 +55,12 @@ ms.locfileid: "54759957"
   
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>檢視資源的爭用事件呼叫樹狀圖  
   
--   在時間軸圖形中，按一下 [總計]。  
+- 在時間軸圖形中，按一下 [總計]。  
   
      資源的爭用檢視隨即顯示。 如需詳細資訊，請參閱[資源爭用檢視](../profiling/resource-contentions-view-contention-data.md)  
   
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>檢視執行緒的所有爭用事件  
   
--   在時間軸圖形中，按一下該執行緒的名稱或 ID。  
+- 在時間軸圖形中，按一下該執行緒的名稱或 ID。  
   
      所選取執行緒的執行緒詳細資料檢視隨即顯示。 如需詳細資訊，請參閱[執行緒詳細資料檢視](../profiling/thread-details-view-contention-data.md)。

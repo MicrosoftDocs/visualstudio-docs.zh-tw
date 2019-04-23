@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 手動部署 ClickOnce 應用程式不需要重新簽署而且會保留商標資訊 |Microsoft Docs
+title: 逐步解說：手動部署 ClickOnce 應用程式不需要重新簽署而且會保留商標資訊 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,27 +22,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9d8ef7f5df692f2f13c9eb3a5a99aa155d38137
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 773a9f5a990b3432484c1ff13012b173c9fac1cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076220"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>逐步解說： 手動部署 ClickOnce 應用程式，而無須重新簽署而且會保留商標資訊
+# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>逐步解說：手動部署 ClickOnce 應用程式，而無須重新簽署而且會保留商標資訊
 當您建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式並再將它提供給客戶發行並部署，客戶有以往都會需要更新部署資訊清單，並重新簽署資訊清單。 同時，仍然是慣用的方法，在大部分情況下，.NET Framework 3.5 可讓您建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]客戶可以部署而不需要重新產生新的部署資訊清單的部署。 如需詳細資訊，請參閱 <<c0> [ 部署 ClickOnce 應用程式，但不重新簽署的測試和生產環境伺服器](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)。
 
  當您建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，然後將它交給客戶來發佈和部署，應用程式可以使用客戶的商標或保留您的品牌。 比方說，如果應用程式是單一的專屬應用程式，您可能想要保留您的品牌。 如果應用程式高度自訂的每個客戶中，您可能想要使用客戶的商標。 .NET Framework 3.5 可讓您保留您的品牌、 發行者資訊和安全性簽章，當您為組織部署的應用程式。 如需詳細資訊，請參閱 <<c0> [ 建立 ClickOnce 應用程式供其他人部署](../deployment/creating-clickonce-applications-for-others-to-deploy.md)。
 
 > [!NOTE]
->  在此逐步解說中您建立部署以手動方式使用其中一種命令列工具*Mage.exe*或圖形化工具*MageUI.exe*。 如需有關手動部署的詳細資訊，請參閱 <<c0> [ 逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+>  在此逐步解說中您建立部署以手動方式使用其中一種命令列工具*Mage.exe*或圖形化工具*MageUI.exe*。 如需有關手動部署的詳細資訊，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
 ## <a name="prerequisites"></a>必要條件
  若要執行本逐步解說中的步驟您需要下列項目：
 
--   您準備好要部署在 Windows Forms 應用程式。 此應用程式會稱為*WindowsFormsApp1*。
+- 您準備好要部署在 Windows Forms 應用程式。 此應用程式會稱為*WindowsFormsApp1*。
 
--   Visual Studio 或 Windows SDK。
+- Visual Studio 或 Windows SDK。
 
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>若要部署 ClickOnce 應用程式與多個部署使用 Mage.exe 的品牌支援
 
@@ -115,7 +115,7 @@ ms.locfileid: "56614671"
 
 7. 預設值**名稱**索引標籤上，輸入此部署的名稱和版本號碼。 此外，提供一個值**發行者**，用來作為資料夾名稱，在 [開始] 功能表中的應用程式的快顯連結部署時。
 
-8. 選取 **應用程式選項**索引標籤，然後按一下**使用應用程式資訊清單信任資訊**。 這可讓協力廠商品牌的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。
+8. 選取 **應用程式選項**索引標籤，然後按一下**使用應用程式資訊清單信任資訊**。 這會讓 淛鵸葺爦這個[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。
 
 9. 選取 **檔案**索引標籤，然後按一下**瀏覽**旁**應用程式目錄**文字方塊。
 

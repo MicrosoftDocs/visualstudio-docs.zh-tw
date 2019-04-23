@@ -19,23 +19,22 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b8d70651d319f174f2ed7c1ee81021d89201bbcf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6113bbcb271aa7774bca538858b02edb9f5e3583
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758638"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662227"
 ---
 # <a name="al-assembly-linker-task"></a>AL (組件連結器) 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 AL 工作會包裝 AL.exe，這個工具會隨 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] 而散發。 這個組件連結器工具可用來從一或多個屬於模組或資源檔的檔案中，建立包含資訊清單的組件。 編譯器和開發環境可能已經提供這些功能，因此通常不需直接使用此工作。 如果開發人員需要從多個元件檔案建立單一組件 (例如，可能是從混合式語言開發中產生的那些)，則組件連結器就非常實用。 此工作不能將多個模組合併成單一組件檔案；您仍需依序散發和提供個別的模組，才能讓產生的組件正確載入。 如需 AL.exe 的詳細資訊，請參閱 [Al.exe (組件連結器)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01)。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `AL` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`AlgorithmID`|選擇性的 `String` 參數。<br /><br /> 指定雜湊多檔案組件中所有檔案的演算法，但包含組件資訊清單的檔案除外。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01) 中 `/algid` 選項的說明文件。|  
 |`BaseAddress`|選擇性的 `String` 參數。<br /><br /> 指定在執行階段，於使用者電腦上載入 DLL 的位址。 如果您指定 DLL 的基底位址，而不是讓作業系統重新找出處理序空間中的 DLL，應用程式載入的速度會更快。 此參數對應到 [Al.exe (組件連結器)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01) 中的 /base[address] 選項。|  

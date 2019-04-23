@@ -11,12 +11,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41f89449ab412a53d779bfc3fb4cf9ac52ded239
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa8ec46036bbb9a133f2036f1c54cad87d064618
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945628"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105483"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Visual Studio 版本支援的視覺效果&amp;Modeling SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "58945628"
 ## <a name="deployment-editions"></a>部署版本
  [!INCLUDE[dsl](../includes/dsl-md.md)] 支援用於部署您建置之網域指定的語言的下列組態：
 
--   Visual Studio 企業版
+- Visual Studio 企業版
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Visual Studio Shell （整合模式） 可轉散發套件可轉散發套件
+- Visual Studio Shell （整合模式） 可轉散發套件可轉散發套件
 
--   Visual Studio Shell (隔離模式) 可轉散發套件
+- Visual Studio Shell (隔離模式) 可轉散發套件
 
 > [!NOTE]
 >  若要讓 DSL 能夠在 Shell 產品上執行，您必須設定**支援的 VS 版本**延伸模組資訊清單中的欄位。 如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。

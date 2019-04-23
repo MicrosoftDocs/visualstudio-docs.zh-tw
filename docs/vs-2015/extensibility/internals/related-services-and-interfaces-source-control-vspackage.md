@@ -11,12 +11,12 @@ ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5497c74c75c9c5a97672152ab521e1ccf141b540
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0c5b040a8c5d0cbe2daff07f279cfd6a78cbd2b7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940829"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118106"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>相關的服務和介面 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "58940829"
   
  介面包括：  
   
--   必要屬性：適當的實體 （原始檔控制 VSPackage，原始檔控制虛設常式，專案） 必須實作介面。  
+- 必要屬性：適當的實體 （原始檔控制 VSPackage，原始檔控制虛設常式，專案） 必須實作介面。  
   
--   建議使用：實體應該實作這個介面中;否則，原始檔控制功能可能有限。  
+- 建議使用：實體應該實作這個介面中;否則，原始檔控制功能可能有限。  
   
--   選擇性： 實體可以實作這個介面，以提供更豐富的功能集。  
+- 選擇性： 實體可以實作這個介面，以提供更豐富的功能集。  
   
 |介面|用途|藉由將|實作？|  
 |---------------|-------------|--------------------|----------------|  

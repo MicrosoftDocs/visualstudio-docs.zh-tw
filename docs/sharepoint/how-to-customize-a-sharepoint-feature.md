@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ddf2d14d8241f35ac0d83cb0a7f4dab0dd3f6f32
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e54d2dc388ca308e037fb8ff918f521ee16e9092
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618181"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067257"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>HOW TO：自訂 SharePoint 功能
   您可以建立及使用 Visual Studio 中的功能設計工具自訂 SharePoint 功能。 比方說，您可以設定功能範圍，以及新增為相依性的其他功能。 根據預設，當您在方案總管 或 SharePoint 封裝總管 中新增的新功能時，會開啟功能設計工具。
@@ -31,22 +31,22 @@ ms.locfileid: "56618181"
 
 #### <a name="to-open-the-feature-designer"></a>若要開啟功能設計工具
 
-1.  在 **方案總管**，展開**功能**。
+1. 在 **方案總管**，展開**功能**。
 
-2.  按兩下*Feature1*項目，或開啟捷徑功能表*Feature1*項目，然後選擇**檢視表設計工具**。
+2. 按兩下*Feature1*項目，或開啟捷徑功能表*Feature1*項目，然後選擇**檢視表設計工具**。
 
 ## <a name="view-the-packaged-manifest-file"></a>檢視封裝的資訊清單檔案
  您可以使用功能設計工具修改和產生功能的封裝資訊清單檔案 (*feature.xml*)。 然後，您也可以在 Visual Studio 中檢視此檔案的 XML 程式碼。
 
 #### <a name="to-view-the-packaged-manifest-file"></a>若要檢視封裝的資訊清單檔案
 
-1.  在 [**功能設計工具**，選擇**資訊清單**] 索引標籤。
+1. 在 [**功能設計工具**，選擇**資訊清單**] 索引標籤。
 
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>若要使用方案總管 中檢視封裝的資訊清單檔案
 
-1.  在 **方案總管**，選擇**顯示所有檔案**圖示。
+1. 在 **方案總管**，選擇**顯示所有檔案**圖示。
 
-2.  展開 [功能]、 展開 FeatureName、 展開 FeatureName.feature，然後再開啟 *\<FeatureName >。Template.xml*檔案。
+2. 展開 [功能]、 展開 FeatureName、 展開 FeatureName.feature，然後再開啟 *\<FeatureName >。Template.xml*檔案。
 
     > [!NOTE]
     >  當您開啟了功能範本資訊清單的 XML 檔案時，檔案會自動進行驗證，並出現在 [錯誤清單] 視窗中出現的警告可以忽略。
@@ -56,13 +56,13 @@ ms.locfileid: "56618181"
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>若要使用 XML 編輯器中變更資訊清單範本
 
-1.  中**功能設計工具**，選擇**資訊清單**索引標籤上，展開**編輯選項** 節點，然後選擇**XML 編輯器中開啟**連結。
+1. 中**功能設計工具**，選擇**資訊清單**索引標籤上，展開**編輯選項** 節點，然後選擇**XML 編輯器中開啟**連結。
 
      Xml 的變更合併至封裝的資訊清單檔案。
 
 #### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>若要變更資訊清單範本資訊清單的範本 窗格
 
-1.  在 **功能設計工具**，選擇**資訊清單**索引標籤上，展開**編輯選項**節點，然後再變更出現在 資訊清單的範本 窗格中的 XML。
+1. 在 **功能設計工具**，選擇**資訊清單**索引標籤上，展開**編輯選項**節點，然後再變更出現在 資訊清單的範本 窗格中的 XML。
 
      Xml 的變更會出現在**預覽的封裝資訊清單**窗格。
 
@@ -74,9 +74,9 @@ ms.locfileid: "56618181"
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>若要覆寫封裝資訊清單的檔案，藉由停用設計工具
 
-1.  在 [**功能設計工具**，選擇**資訊清單**] 索引標籤。
+1. 在 [**功能設計工具**，選擇**資訊清單**] 索引標籤。
 
-2.  依序展開**編輯選項**節點，選擇**覆寫產生 XML 和編輯資訊清單 XML 編輯器中的**連結，然後選擇**是** 按鈕。
+2. 依序展開**編輯選項**節點，選擇**覆寫產生 XML 和編輯資訊清單 XML 編輯器中的**連結，然後選擇**是** 按鈕。
 
      此範本會更新目前的封裝資訊清單檔案。
 
@@ -85,9 +85,9 @@ ms.locfileid: "56618181"
 
 #### <a name="to-re-enable-the-designer"></a>若要重新啟用設計工具
 
-1.  在 [**功能設計工具**，選擇**捨棄資訊清單編輯和重新啟用設計工具**連結，然後選擇**是**] 按鈕。
+1. 在 [**功能設計工具**，選擇**捨棄資訊清單編輯和重新啟用設計工具**連結，然後選擇**是**] 按鈕。
 
-2.  範本會使用原始的文字、 重新整理，而且 XML 的任何變更都會遺失。
+2. 範本會使用原始的文字、 重新整理，而且 XML 的任何變更都會遺失。
 
 ## <a name="see-also"></a>另請參閱
 - [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

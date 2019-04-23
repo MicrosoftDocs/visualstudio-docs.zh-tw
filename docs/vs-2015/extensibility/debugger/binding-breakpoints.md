@@ -10,12 +10,12 @@ ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b94960130ef0b384a7e3a946dcbd2a4e4794252f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fc7f68093432c96d496921ea593b6e936bad8302
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945006"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039698"
 ---
 # <a name="binding-breakpoints"></a>繫結中斷點
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ ms.locfileid: "58945006"
 ## <a name="setting-a-breakpoint"></a>設定中斷點  
  設定中斷點是兩步驟程序，因為程式碼或中斷點受影響的資料可能尚無法使用。 首先，必須描述中斷點，並接著，當程式碼或資料可供使用，它必須繫結至該程式碼或資料，如下所示：  
   
-1.  中斷點會從相關的偵錯引擎 (DEs)、 要求，然後中斷點繫結至程式碼或資料可供使用。  
+1. 中斷點會從相關的偵錯引擎 (DEs)、 要求，然後中斷點繫結至程式碼或資料可供使用。  
   
-2.  中斷點要求會傳送至偵錯工作階段，將它傳送至所有相關的 DEs。 選擇處理中斷點任何 DE 會建立對應的暫止的中斷點。  
+2. 中斷點要求會傳送至偵錯工作階段，將它傳送至所有相關的 DEs。 選擇處理中斷點任何 DE 會建立對應的暫止的中斷點。  
   
-3.  偵錯工作階段會收集 暫止中斷點，並將其傳送回偵錯套件 （Visual Studio 的偵錯元件）。  
+3. 偵錯工作階段會收集 暫止中斷點，並將其傳送回偵錯套件 （Visual Studio 的偵錯元件）。  
   
-4.  偵錯封裝會提示要繫結至程式碼或資料的暫止中斷點的偵錯工作階段。 偵錯工作階段會將此要求傳送至所有相關的 DEs。  
+4. 偵錯封裝會提示要繫結至程式碼或資料的暫止中斷點的偵錯工作階段。 偵錯工作階段會將此要求傳送至所有相關的 DEs。  
   
-5.  如果 DE 就能將中斷點繫結，它會傳送回到偵錯工作階段中斷點繫結的事件。 如果沒有，它會改為傳送中斷點錯誤事件。  
+5. 如果 DE 就能將中斷點繫結，它會傳送回到偵錯工作階段中斷點繫結的事件。 如果沒有，它會改為傳送中斷點錯誤事件。  
   
 ## <a name="pending-breakpoints"></a>暫止中斷點  
- 暫止中斷點可以繫結到多個程式碼位置。 例如，c + + 範本的原始程式碼行可以繫結至從範本產生每個程式碼序列。 偵錯工作階段可以使用中斷點繫結的事件，來列舉在傳送事件的時間繫結至中斷點的程式碼內容。 更新版本中，可以繫結更多的程式碼內容，因此 DE 可能會傳送多個中斷點繫結的每個繫結要求的事件。 不過，DE 應該傳送每個繫結要求的只有一個中斷點錯誤事件。  
+ 暫止中斷點可以繫結到多個程式碼位置。 例如，原始程式碼行C++範本可以繫結至從範本產生每個程式碼序列。 偵錯工作階段可以使用中斷點繫結的事件，來列舉在傳送事件的時間繫結至中斷點的程式碼內容。 更新版本中，可以繫結更多的程式碼內容，因此 DE 可能會傳送多個中斷點繫結的每個繫結要求的事件。 不過，DE 應該傳送每個繫結要求的只有一個中斷點錯誤事件。  
   
 ## <a name="implementation"></a>實作  
  以程式設計的方式，會呼叫偵錯工作階段管理員 (SDM) 偵錯封裝，並為其提供[IDebugBreakpointRequest2](../../extensibility/debugger/reference/idebugbreakpointrequest2.md)包裝的介面[BP_REQUEST_INFO](../../extensibility/debugger/reference/bp-request-info.md)結構描述若要設定的中斷點。 中斷點可以是許多形式，雖然它們最終會解析成的程式碼或資料內容。  

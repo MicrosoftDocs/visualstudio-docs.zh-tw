@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a3b1491f8a7978fa7f2ab12afa46c5e50fbf80c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: abbc39bece090db962b35c61cb7e77fabaea6be9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603023"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091494"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>逐步解說：建立使用快取的資料集的主版詳細資料關聯性
   本逐步解說會示範在工作表，來建立主從式關聯和快取資料，以便可以離線使用方案。
@@ -27,13 +27,13 @@ ms.locfileid: "56603023"
 
  在這個逐步解說期間，您將了解如何：
 
--   將控制項加入工作表。
+- 將控制項加入工作表。
 
--   設定快取的工作表中的資料集。
+- 設定快取的工作表中的資料集。
 
--   加入程式碼，以啟用捲動記錄。
+- 加入程式碼，以啟用捲動記錄。
 
--   測試您的專案。
+- 測試您的專案。
 
 > [!NOTE]
 >  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
@@ -41,13 +41,13 @@ ms.locfileid: "56603023"
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
--   Northwind SQL Server 範例資料庫的存取。 資料庫可以是您的開發電腦或伺服器上。
+- Northwind SQL Server 範例資料庫的存取。 資料庫可以是您的開發電腦或伺服器上。
 
--   讀取和寫入至 SQL Server 資料庫的權限。
+- 讀取和寫入至 SQL Server 資料庫的權限。
 
 ## <a name="create-a-new-project"></a>建立新專案
  在此步驟中，您將建立的 Excel 活頁簿專案。
@@ -88,21 +88,21 @@ ms.locfileid: "56603023"
 
 ### <a name="to-add-a-named-range-and-a-list-object"></a>將已命名的範圍和清單物件
 
-1.  確認**我的主要 Detail.xlsx**活頁簿是在 Visual Studio 設計工具中開啟具有**Sheet1**顯示。
+1. 確認**我的主要 Detail.xlsx**活頁簿是在 Visual Studio 設計工具中開啟具有**Sheet1**顯示。
 
-2.  開啟**資料來源**視窗中，展開**訂單**節點。
+2. 開啟**資料來源**視窗中，展開**訂單**節點。
 
-3.  選取  **OrderID**資料行，然後按一下出現的下拉式箭號。
+3. 選取  **OrderID**資料行，然後按一下出現的下拉式箭號。
 
-4.  按一下  **NamedRange**在下拉式清單，然後拖曳**OrderID**加入儲存格的資料行**A2**。
+4. 按一下  **NamedRange**在下拉式清單，然後拖曳**OrderID**加入儲存格的資料行**A2**。
 
      A<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項，名為`OrderIDNamedRange`會建立在資料格中**A2**。 在此同時<xref:System.Windows.Forms.BindingSource>名為`OrdersBindingSource`，資料表配接器和<xref:System.Data.DataSet>執行個體加入至專案。 控制項所繫結<xref:System.Windows.Forms.BindingSource>，它接著會繫結至<xref:System.Data.DataSet>執行個體。
 
-5.  向下捲動過去的資料行底下**訂單**資料表。 清單底部**訂單明細**資料表; 這裡是因為它的子系**訂單**資料表。 選取此選項**訂單明細**資料表，不是位於相同的層級**訂單**資料表，然後按一下出現的下拉式箭號。
+5. 向下捲動過去的資料行底下**訂單**資料表。 清單底部**訂單明細**資料表; 這裡是因為它的子系**訂單**資料表。 選取此選項**訂單明細**資料表，不是位於相同的層級**訂單**資料表，然後按一下出現的下拉式箭號。
 
-6.  按一下  **ListObject**在下拉式清單，然後拖曳**OrderDetails**資料表以儲存格**A6**。
+6. 按一下  **ListObject**在下拉式清單，然後拖曳**OrderDetails**資料表以儲存格**A6**。
 
-7.  A<xref:Microsoft.Office.Tools.Excel.ListObject>控制項，名為**Order_DetailsListObject**建立在資料格中**A6**，並繫結至<xref:System.Windows.Forms.BindingSource>。
+7. A<xref:Microsoft.Office.Tools.Excel.ListObject>控制項，名為**Order_DetailsListObject**建立在資料格中**A6**，並繫結至<xref:System.Windows.Forms.BindingSource>。
 
 ### <a name="to-add-two-buttons"></a>若要新增兩個按鈕
 
@@ -136,14 +136,14 @@ ms.locfileid: "56603023"
 
 ### <a name="to-initialize-the-data-and-the-controls"></a>若要初始化的資料和控制項
 
-1.  在**方案總管 中**，以滑鼠右鍵按一下**Sheet1.vb**或**Sheet1.cs**，然後按一下**檢視程式碼**快顯功能表。
+1. 在**方案總管 中**，以滑鼠右鍵按一下**Sheet1.vb**或**Sheet1.cs**，然後按一下**檢視程式碼**快顯功能表。
 
-2.  將下列程式碼加入`Sheet1_Startup`方法來設定按鈕的文字。
+2. 將下列程式碼加入`Sheet1_Startup`方法來設定按鈕的文字。
 
      [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]
      [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]
 
-3.  僅適用 C#，加入事件處理常式按鈕按一下事件`Sheet1_Startup`方法。
+3. 僅適用 C#，加入事件處理常式按鈕按一下事件`Sheet1_Startup`方法。
 
      [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]
 
@@ -152,12 +152,12 @@ ms.locfileid: "56603023"
 
 ### <a name="to-scroll-through-the-records"></a>捲動資料列
 
-1.  新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button1`，並新增下列程式碼，向後移動記錄：
+1. 新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button1`，並新增下列程式碼，向後移動記錄：
 
      [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]
      [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]
 
-2.  新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button2`，並新增下列程式碼，記錄中向前推進：
+2. 新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button2`，並新增下列程式碼，記錄中向前推進：
 
      [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
      [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]
@@ -167,26 +167,26 @@ ms.locfileid: "56603023"
 
 ### <a name="to-test-the-data-caching"></a>若要測試資料的快取
 
-1.  請按 **F5**。
+1. 請按 **F5**。
 
-2.  請確認已命名的範圍和清單物件會填入來自資料來源的資料。
+2. 請確認已命名的範圍和清單物件會填入來自資料來源的資料。
 
-3.  按一下按鈕，捲動瀏覽某些記錄。
+3. 按一下按鈕，捲動瀏覽某些記錄。
 
-4.  儲存活頁簿，然後關閉活頁簿和 Visual Studio。
+4. 儲存活頁簿，然後關閉活頁簿和 Visual Studio。
 
-5.  停用資料庫的連接。 拔除網路纜線從您的電腦，如果資料庫位於伺服器上，或如果資料庫是在您的開發電腦上停止 SQL Server 服務。
+5. 停用資料庫的連接。 拔除網路纜線從您的電腦，如果資料庫位於伺服器上，或如果資料庫是在您的開發電腦上停止 SQL Server 服務。
 
-6.  開啟 Excel，然後再開啟**我的主要 Detail.xlsx**從*\bin*目錄 (*\My Master-Detail\bin*在 Visual Basic 或*\My Master-Detail\bin\偵錯*C# 中)。
+6. 開啟 Excel，然後再開啟**我的主要 Detail.xlsx**從*\bin*目錄 (*\My Master-Detail\bin*在 Visual Basic 或*\My Master-Detail\bin\偵錯*C# 中)。
 
-7.  捲動以查看工作表運作正常中斷連線時記錄的一些問題。
+7. 捲動以查看工作表運作正常中斷連線時記錄的一些問題。
 
-8.  重新連接到資料庫。 將電腦連線到網路再如果資料庫位於伺服器上，或如果資料庫是在您的開發電腦上啟動 SQL Server 服務。
+8. 重新連接到資料庫。 將電腦連線到網路再如果資料庫位於伺服器上，或如果資料庫是在您的開發電腦上啟動 SQL Server 服務。
 
 ## <a name="next-steps"></a>後續步驟
  本逐步解說會示範在工作表上建立主版/詳細資料關聯性和快取資料集的基本概念。 接著可以執行下列一些工作：
 
--   部署方案。 如需詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)
+- 部署方案。 如需詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)
 
 ## <a name="see-also"></a>另請參閱
 - [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)

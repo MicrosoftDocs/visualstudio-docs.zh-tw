@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3467b33a7dd152de439d7859c89b5b3707fea7ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092171"
 ---
 # <a name="working-with-xml-data"></a>使用 XML 資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 對於在 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio 中處理資料的方式，XML 及其相關技術扮演很重要的角色。 Visual Studio 包括一些工具及功能，讓使用 XML、XSLT 及 XML 結構描述更為容易。  
   
 ## <a name="xml-editor"></a>XML 編輯器  
@@ -27,17 +26,17 @@ ms.locfileid: "58943843"
   
  其他功能包括：  
   
--   XML 片段支援，包括結構描述產生的片段。  
+- XML 片段支援，包括結構描述產生的片段。  
   
--   文件大綱，以便展開及摺疊項目。  
+- 文件大綱，以便展開及摺疊項目。  
   
--   執行 XSL 轉換及以文字、XML 或 HTML 檢閱結果的功能。  
+- 執行 XSL 轉換及以文字、XML 或 HTML 檢閱結果的功能。  
   
--   從 XML 執行個體文件產生 XML 結構定義語言 (XSD) 結構描述的功能。  
+- 從 XML 執行個體文件產生 XML 結構定義語言 (XSD) 結構描述的功能。  
   
--   支援編輯 XSLT 樣式表，包括 IntelliSense 支援。  
+- 支援編輯 XSLT 樣式表，包括 IntelliSense 支援。  
   
--   XML 結構描述總管  
+- XML 結構描述總管  
   
 ## <a name="xml-schema-designer"></a>XML 結構描述設計工具  
  XML 結構描述設計工具整合於 Microsoft Visual Studio 2010 和 XML 編輯器，可讓您使用 XML 結構定義語言 (XSD) 結構描述。  

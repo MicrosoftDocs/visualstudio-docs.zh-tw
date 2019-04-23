@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 255b49d3bf07a5a91896d2aff87001f1c68f3afe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789526"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077416"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常見問題集：將增益集轉換成 VSPackage 擴充功能
 增益集目前已被取代。 若要讓新的 Visual Studio 擴充功能，您需要建立 VSIX 擴充功能。 以下是一些有關如何將轉換的 Visual Studio 增益集，為 VSIX 擴充功能的常見問題集問題的答案。
@@ -37,7 +37,7 @@ ms.locfileid: "58789526"
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>我是否可以將我的增益集專案轉換加入 VSIX 專案？
  增益集專案無法轉換直接加入 VSIX 專案，因為在 VSIX 專案中使用的機制與增益集專案中的項目相同。 VSIX 專案範本，再加上正確的專案項目範本有許多可讓相當容易快速啟動且做為 VSIX 擴充功能執行的程式碼。
 
-##  <a name="BKMK_StartDeveloping"></a> 如何開始開發 VSIX 擴充功能？
+## <a name="BKMK_StartDeveloping"></a> 如何開始開發 VSIX 擴充功能？
  以下是讓具有功能表命令的 VSIX 的方式：
 
 ### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>若要建立具有功能表命令的 VSIX 擴充功能
@@ -52,7 +52,7 @@ ms.locfileid: "58789526"
 
    在 **工具**功能表上 （在實驗執行個體中） 您應該會看到名為按鈕**我的命令名稱**。 當您選擇此按鈕時，應該會出現一則訊息：**Inside TestVSPackagePackage.MenuItemCallback()**.
 
-##  <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中執行我的增益集程式碼？
+## <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中執行我的增益集程式碼？
 
 增益集程式碼通常以兩種方式之一執行：
 
@@ -158,24 +158,24 @@ ms.locfileid: "58789526"
 
 #### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>將視窗管理程式碼從增益集插入 VSPackage
 
-1.  建立具有功能表命令，為 VSPackage[如何開始開發的 VSIX 擴充功能？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)一節。
+1. 建立具有功能表命令，為 VSPackage[如何開始開發的 VSIX 擴充功能？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)一節。
 
-2.  開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 > Package.cs*。)
+2. 開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 > Package.cs*。)
 
-3.  加入以下 `using` 陳述式：
+3. 加入以下 `using` 陳述式：
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  尋找 `MenuItemCallback` 方法。 加入 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的呼叫以取得 <xref:EnvDTE80.DTE2> 物件：
+4. 尋找 `MenuItemCallback` 方法。 加入 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的呼叫以取得 <xref:EnvDTE80.DTE2> 物件：
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  從增益集加入程式碼。 例如，以下是將新工作加入一些程式碼**工作清單**，會列出許多工作，並再刪除一項工作。
+5. 從增益集加入程式碼。 例如，以下是將新工作加入一些程式碼**工作清單**，會列出許多工作，並再刪除一項工作。
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -206,24 +206,24 @@ ms.locfileid: "58789526"
 ## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>如何在 VSPackage 中管理專案和方案？
  如果您的增益集管理專案和方案，增益集程式碼應該能夠在 VSPackage 中運作。 例如，這項程序示範如何加入可取得啟動專案的程式碼。
 
-1.  建立具有功能表命令，為 VSPackage[如何開始開發的 VSIX 擴充功能？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)一節。
+1. 建立具有功能表命令，為 VSPackage[如何開始開發的 VSIX 擴充功能？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)一節。
 
-2.  開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 > Package.cs*。)
+2. 開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 > Package.cs*。)
 
-3.  加入以下 `using` 陳述式：
+3. 加入以下 `using` 陳述式：
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  尋找 `MenuItemCallback` 方法。 加入 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的呼叫以取得 <xref:EnvDTE80.DTE2> 物件：
+4. 尋找 `MenuItemCallback` 方法。 加入 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的呼叫以取得 <xref:EnvDTE80.DTE2> 物件：
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  從增益集加入程式碼。 例如，以下程式碼會取得方案中啟動專案的名稱。 (此套件執行時，多專案方案必須已開啟。)
+5. 從增益集加入程式碼。 例如，以下程式碼會取得方案中啟動專案的名稱。 (此套件執行時，多專案方案必須已開啟。)
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)

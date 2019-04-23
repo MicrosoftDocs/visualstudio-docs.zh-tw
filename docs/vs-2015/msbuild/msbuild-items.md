@@ -11,54 +11,53 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 24756553f4b1f5eb1a0ce811842c2843debd71aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 76f66d11a824a756b262460ebd4e7af78e88f766
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770846"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038169"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會依據它們的項目 (Element) 名稱分組為項目 (Item) 類型。 項目類型是具名的項目清單，可用來做為工作的參數。 工作會使用項目值來執行建置程序的步驟。  
   
  由於項目是根據其所屬的項目類型來命名，因此可交換使用「項目」和「項目值」等詞彙。  
   
  **本主題內容**  
   
--   [在專案檔中建立項目](#BKMK_Creating1)  
+- [在專案檔中建立項目](#BKMK_Creating1)  
   
--   [在執行期間建立項目](#BKMK_Creating2)  
+- [在執行期間建立項目](#BKMK_Creating2)  
   
--   [在專案檔中參考項目](#BKMK_ReferencingItems)  
+- [在專案檔中參考項目](#BKMK_ReferencingItems)  
   
--   [使用萬用字元指定項目](#BKMK_Wildcards)  
+- [使用萬用字元指定項目](#BKMK_Wildcards)  
   
--   [使用 Exclude 屬性](#BKMK_ExcludeAttribute)  
+- [使用 Exclude 屬性](#BKMK_ExcludeAttribute)  
   
--   [項目中繼資料](#BKMK_ItemMetadata)  
+- [項目中繼資料](#BKMK_ItemMetadata)  
   
-    -   [在專案檔中參考項目中繼資料](#BKMK_ReferencingItemMetadata)  
+    - [在專案檔中參考項目中繼資料](#BKMK_ReferencingItemMetadata)  
   
-    -   [已知的項目中繼資料](#BKMK_WellKnownItemMetadata)  
+    - [已知的項目中繼資料](#BKMK_WellKnownItemMetadata)  
   
-    -   [使用中繼資料轉換項目類型](#BKMK_Transforming)  
+    - [使用中繼資料轉換項目類型](#BKMK_Transforming)  
   
--   [項目定義](#BKMK_ItemDefinitions)  
+- [項目定義](#BKMK_ItemDefinitions)  
   
--   [目標 ItemGroup 中的項目屬性](#BKMK_AttributesWithinTargets)  
+- [目標 ItemGroup 中的項目屬性](#BKMK_AttributesWithinTargets)  
   
-    -   [Remove 屬性](#BKMK_RemoveAttribute)  
+    - [Remove 屬性](#BKMK_RemoveAttribute)  
   
-    -   [KeepMetadata 屬性](#BKMK_KeepMetadata)  
+    - [KeepMetadata 屬性](#BKMK_KeepMetadata)  
   
-    -   [RemoveMetadata 屬性](#BKMK_RemoveMetadata)  
+    - [RemoveMetadata 屬性](#BKMK_RemoveMetadata)  
   
-    -   [KeepDuplicates 屬性](#BKMK_KeepDuplicates)  
+    - [KeepDuplicates 屬性](#BKMK_KeepDuplicates)  
   
-##  <a name="BKMK_Creating1"></a> 在專案檔中建立項目  
+## <a name="BKMK_Creating1"></a> 在專案檔中建立項目  
  您會將專案檔中的項目 (Item) 宣告為 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 項目 (Element) 的子項目 (Element)。 子項目 (Element) 的名稱是項目 (Item) 的類型。 項目 (Element) 的 `Include` 屬性會指定要包含於該項目 (Item) 類型的項目 (Item) (檔案)。 例如，下列 XML 會建立名為 `Compile` 的項目類型，其中包含兩個檔案。  
   
 ```  
@@ -78,21 +77,21 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
 </ItemGroup>  
 ```  
   
-##  <a name="BKMK_Creating2"></a> 在執行期間建立項目  
+## <a name="BKMK_Creating2"></a> 在執行期間建立項目  
  [Target](../msbuild/target-element-msbuild.md) 項目 (Element) 以外的項目 (Item) 值是在組建的評估階段所指派。 在後續的執行階段，可以使用下列方式來建立或修改項目：  
   
--   任何工作均可發出項目。 若要發出項目 (Item)，[Task](../msbuild/task-element-msbuild.md) 項目 (Element) 必須含有具 `ItemName` 屬性的子系 [Output](../msbuild/output-element-msbuild.md) 項目 (Element)。  
+- 任何工作均可發出項目。 若要發出項目 (Item)，[Task](../msbuild/task-element-msbuild.md) 項目 (Element) 必須含有具 `ItemName` 屬性的子系 [Output](../msbuild/output-element-msbuild.md) 項目 (Element)。  
   
--   [CreateItem](../msbuild/createitem-task.md) 工作可以發出項目。 這種使用方式已過時。  
+- [CreateItem](../msbuild/createitem-task.md) 工作可以發出項目。 這種使用方式已過時。  
   
--   從 .NET Framework 3.5 開始，`Target` 項目可能會包含 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 項目，其中可能包含 Item 項目。  
+- 從 .NET Framework 3.5 開始，`Target` 項目可能會包含 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 項目，其中可能包含 Item 項目。  
   
-##  <a name="BKMK_ReferencingItems"></a> 在專案檔中參考項目  
+## <a name="BKMK_ReferencingItems"></a> 在專案檔中參考項目  
  若要在整個專案檔中參考項目類型，您可以使用語法 @(`ItemType`)。 例如，您應該使用 `@(Compile)`，來參考前一個範例中的項目類型。 使用下列語法，您可以藉由指定項目類型做為工作的參數，來將項目傳遞給該工作。 如需詳細資訊，請參閱[如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)。  
   
  根據預設，項目類型的項目在展開時會以分號 (;) 分隔。 您可以使用語法 @(*ItemType*, '*separator*') 來指定非預設的分隔符號。 如需詳細資訊，請參閱[如何：顯示以逗號分隔的項目清單](../msbuild/how-to-display-an-item-list-separated-with-commas.md)。  
   
-##  <a name="BKMK_Wildcards"></a> 使用萬用字元指定項目  
+## <a name="BKMK_Wildcards"></a> 使用萬用字元指定項目  
  您可以改用 **、\* 及 ? 萬用字元來指定一組檔案做為組建的輸入，而不是個別列出每個檔案。  
   
 - ? 萬用字元會比對單一字元。  
@@ -115,7 +114,7 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
   
  如需萬用字元的詳細資訊，請參閱[如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)。  
   
-##  <a name="BKMK_ExcludeAttribute"></a> 使用 Exclude 屬性  
+## <a name="BKMK_ExcludeAttribute"></a> 使用 Exclude 屬性  
  Item 項目 (Element) 可以包含 `Exclude` 屬性，以從項目 (Item) 類型中排除特定的項目 (Item) (檔案)。 `Exclude` 屬性通常會與萬用字元搭配使用。 例如，下列 XML 會將目錄中的每個 .cs 檔案加入至 CSFile 項目類型，但 `DoNotBuild.cs` 檔案除外。  
   
 ```  
@@ -131,9 +130,9 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- 如需詳細資訊，請參閱[如何︰從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。  
+ 如需詳細資訊，請參閱[如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。  
   
-##  <a name="BKMK_ItemMetadata"></a> 項目中繼資料  
+## <a name="BKMK_ItemMetadata"></a> 項目中繼資料  
  在 `Include` 和 `Exclude` 屬性中，除了資訊，項目可能還會包含中繼資料。 若工作需要更多關於項目的資訊，就會使用此中繼資料，或使用此中繼資料來批次處理工作和目標。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。  
   
  中繼資料是一個索引鍵值組的集合，可在專案檔中宣告為 Item 項目的子項目。 子項目的名稱是中繼資料的名稱，而子項目的值是中繼資料的值。  
@@ -150,7 +149,7 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
   
  項目可以有零或多個中繼資料值。 您可以隨時變更中繼資料值。 如果您將中繼資料設為空值，就能有效地從組建中移除它。  
   
-###  <a name="BKMK_ReferencingItemMetadata"></a> 在專案檔中參考項目中繼資料  
+### <a name="BKMK_ReferencingItemMetadata"></a> 在專案檔中參考項目中繼資料  
  您可以使用語法 %(`ItemMetadataName`)，在整個專案檔中參考項目中繼資料。 如果發生模稜兩可的情況，您可以使用項目類型的名稱來限定參考。 例如，您可以指定 %(*ItemType.ItemMetaDataName*)。下列範例會使用 Display 中繼資料來批次處理 Message 工作。 如需如何使用項目中繼資料進行批次處理的詳細資訊，請參閱[工作批次處理中的項目中繼資料](../msbuild/item-metadata-in-task-batching.md)。  
   
 ```  
@@ -169,10 +168,10 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
 </Project>  
 ```  
   
-###  <a name="BKMK_WellKnownItemMetadata"></a> 已知的項目中繼資料  
+### <a name="BKMK_WellKnownItemMetadata"></a> 已知的項目中繼資料  
  將項目加入至項目類型時，即會為該項目指派一些已知的中繼資料。 例如，所有項目都具有已知的中繼資料 `%(Filename)`，其值為項目的檔案名稱。 如需詳細資訊，請參閱[已知的項目中繼資料](../msbuild/msbuild-well-known-item-metadata.md)。  
   
-###  <a name="BKMK_Transforming"></a> 使用中繼資料轉換項目類型  
+### <a name="BKMK_Transforming"></a> 使用中繼資料轉換項目類型  
  您可以使用中繼資料，來將項目清單轉換為新的項目清單。 例如，您可以使用運算式 `@(CppFiles -> '%(Filename).obj')`，將含有代表 .cpp 檔案之項目的項目類型 `CppFiles` 轉換為 .obj 檔的對應清單。  
   
  下列程式碼會建立 `CultureResource` 項目類型，其中包含所有具 `Culture` 中繼資料之 `EmbeddedResource` 項目的複本。 `Culture` 中繼資料值會成為新中繼資料 `CultureResource.TargetDirectory` 的值。  
@@ -190,7 +189,7 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
   
  如需詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。  
   
-##  <a name="BKMK_ItemDefinitions"></a> 項目定義  
+## <a name="BKMK_ItemDefinitions"></a> 項目定義  
  從 .NET Framework 3.5 開始，您可以使用 [ItemDefinitionGroup 項目](../msbuild/itemdefinitiongroup-element-msbuild.md) (Element)，來將預設的中繼資料加入至任何項目類型。 如同已知的中繼資料，預設的中繼資料會與您指定之項目類型的所有項目相關聯。 您可以在項目定義中明確覆寫預設的中繼資料。 例如，下列 XML 會為 `Compile` 項目 "one.cs" 和 "three.cs"，提供值為 "Monday" 的中繼資料`BuildDay`。 此程式碼會為項目 "two.cs" 提供值為 "Tuesday" 的中繼資料 `BuildDay`。  
   
 ```  
@@ -209,10 +208,10 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
   
  如需詳細資訊，請參閱[項目定義](../msbuild/item-definitions.md)。  
   
-##  <a name="BKMK_AttributesWithinTargets"></a> 目標 ItemGroup 中的項目屬性  
+## <a name="BKMK_AttributesWithinTargets"></a> 目標 ItemGroup 中的項目屬性  
  從 .NET Framework 3.5 開始，`Target` 項目可能會包含 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 項目，其中可能包含 Item 項目。 如果已針對 `ItemGroup` (位於 `Target`) 中的項目指定本節中的屬性，則它們是有效的。  
   
-###  <a name="BKMK_RemoveAttribute"></a> Remove 屬性  
+### <a name="BKMK_RemoveAttribute"></a> Remove 屬性  
  目標之 `ItemGroup` 屬性中的項目可能會包含 `Remove` 屬性，其會從項目類型中移除特定的項目 (檔案)。 此屬性是在 .NET Framework 3.5 中引入的。  
   
  下列範例會從 Compile 項目類型移除每個 .config 檔案。  
@@ -225,7 +224,7 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
 </Target>  
 ```  
   
-###  <a name="BKMK_KeepMetadata"></a> KeepMetadata 屬性  
+### <a name="BKMK_KeepMetadata"></a> KeepMetadata 屬性  
  如果在目標內產生項目 (Item)，則 Item 項目 (Element) 可以包含 `KeepMetadata` 屬性。 如果指定了這個屬性，只會將以分號分隔之名稱清單中指定的中繼資料從來源項目傳輸到目標項目。 若此屬性的值為空值，就相當於未指定它。 `KeepMetadata` 屬性是在 .NET Framework 4.5 中引入的。  
   
  下列範例示範如何使用 `KeepMetadata` 屬性。  
@@ -267,7 +266,7 @@ Output:
 -->  
 ```  
   
-###  <a name="BKMK_RemoveMetadata"></a> RemoveMetadata 屬性  
+### <a name="BKMK_RemoveMetadata"></a> RemoveMetadata 屬性  
  如果在目標內產生項目 (Item)，則 Item 項目 (Element) 可以包含 `RemoveMetadata` 屬性。 如果指定了此屬性，則會將所有中繼資料從來源項目傳輸到目標項目，但名稱位於以分號分隔之名稱清單內的中繼資料除外。 若此屬性的值為空值，就相當於未指定它。 `RemoveMetadata` 屬性是在 .NET Framework 4.5 中引入的。  
   
  下列範例示範如何使用 `RemoveMetadata` 屬性。  
@@ -316,7 +315,7 @@ Output:
 -->  
 ```  
   
-###  <a name="BKMK_KeepDuplicates"></a> KeepDuplicates 屬性  
+### <a name="BKMK_KeepDuplicates"></a> KeepDuplicates 屬性  
  如果在目標內產生項目 (Item)，則 Item 項目 (Element) 可以包含 `KeepDuplicates` 屬性。 `KeepDuplicates` 為 `Boolean` 屬性，會指定項目如果與現有項目完全重複，是否應加入目標群組。  
   
  如果來源和目標項目具有相同的 Include 值，但中繼資料不同，則即使已將 `KeepDuplicates` 設定為 `false`，也會加入該項目。 若此屬性的值為空值，就相當於未指定它。 `KeepDuplicates` 屬性是在 .NET Framework 4.5 中引入的。  
@@ -355,7 +354,7 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)  
  [MSBuild](msbuild.md)   
  [如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)   

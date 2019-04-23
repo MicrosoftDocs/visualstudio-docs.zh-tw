@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04d67f90006d4e11b2cbe16f6dacd3ba02cde7a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7694f0f725af8a20ff3a5a01753b0669c0fd5d9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779445"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067348"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>在 Visual Studio 中編譯與建置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "54779445"
 
  您可以從 IDE 中執行下列其他工作︰
 
--   [變更組建輸出目錄](../ide/how-to-change-the-build-output-directory.md)。
+- [變更組建輸出目錄](../ide/how-to-change-the-build-output-directory.md)。
 
--   [識別出相依於另一個專案的輸出，才能正確建置的專案](../ide/how-to-create-and-remove-project-dependencies.md)。
+- [識別出相依於另一個專案的輸出，才能正確建置的專案](../ide/how-to-create-and-remove-project-dependencies.md)。
 
--   [變更組建記錄檔或組建輸出視窗中包含的資訊量](../ide/how-to-view-save-and-configure-build-log-files.md)。
+- [變更組建記錄檔或組建輸出視窗中包含的資訊量](../ide/how-to-view-save-and-configure-build-log-files.md)。
 
--   [隱藏 Visual C#、Visual C++ 或 Visual Basic 的特定編譯器警告](../ide/how-to-suppress-compiler-warnings.md)。
+- [隱藏 Visual C#、Visual C++ 或 Visual Basic 的特定編譯器警告](../ide/how-to-suppress-compiler-warnings.md)。
 
--   [指定組建的自訂預先編譯和編譯後動作](../ide/specifying-custom-build-events-in-visual-studio.md)。
+- [指定組建的自訂預先編譯和編譯後動作](../ide/specifying-custom-build-events-in-visual-studio.md)。
 
--   使用平行組建，以改善建置效能。 如需詳細資訊，請參閱[同時建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)或部落格文章 [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (調整 C++ 組建平行處理原則)。
+- 使用平行組建，以改善建置效能。 如需詳細資訊，請參閱[同時建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)或部落格文章 [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (調整 C++ 組建平行處理原則)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)[了解組建組態](../ide/understanding-build-configurations.md)[了解組建平台](../ide/understanding-build-platforms.md)[建置 （編譯） 網站專案](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [操作說明：建立及移除專案相依性](../ide/how-to-create-and-remove-project-dependencies.md)

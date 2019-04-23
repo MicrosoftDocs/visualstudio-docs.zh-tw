@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a540648977c76c354ab21a75b79305c0310a4e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7b16691a3837bcdeee87b40b36b5b669d671b938
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800436"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046240"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 計數器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio 分析工具可讓您收集由作業系統 (Windows 計數器) 所
   
  **需求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
@@ -104,13 +104,13 @@ Visual Studio 分析工具可讓您收集由作業系統 (Windows 計數器) 所
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>檢視目前平台支援的 Windows 計數器清單  
   
-1.  在 [效能總管] 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。  
+1. 在 [效能總管] 中，以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。  
   
-2.  按一下 [Windows 計數器]。  
+2. 按一下 [Windows 計數器]。  
   
-3.  選取 [收集 Windows 計數器]。  
+3. 選取 [收集 Windows 計數器]。  
   
-4.  從 [計數器分類] 清單中，選取計數器群組。 群組的 Windows 計數器會顯示在清單方塊中。  
+4. 從 [計數器分類] 清單中，選取計數器群組。 群組的 Windows 計數器會顯示在清單方塊中。  
   
      **注意：** 按一下 [取消] 可回到前一個計數器收集組態。  
   
@@ -119,9 +119,9 @@ Visual Studio 分析工具可讓您收集由作業系統 (Windows 計數器) 所
   
 ##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>檢視目前平台支援的 CPU 計數器清單  
   
-1.  開啟 [命令提示字元] 視窗。  
+1. 開啟 [命令提示字元] 視窗。  
   
-2.  類型  
+2. 類型  
   
      **\<Visual Studio 效能工具目錄>\VSPerfCmd /querycounters**  
   
@@ -129,7 +129,7 @@ Visual Studio 分析工具可讓您收集由作業系統 (Windows 計數器) 所
   
      C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   
  [如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)   
  [如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)   

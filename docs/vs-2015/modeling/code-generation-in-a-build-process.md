@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f2146c8a15292ddc9233c8e10b8f58f5212df0c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000549"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077598"
 ---
 # <a name="code-generation-in-a-build-process"></a>建置流程中的程式碼產生
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ ms.locfileid: "59000549"
 
 這表示在 MSBuild 中建置文字範本時，您無法以相同方式來存取如專案檔名之類的項目。 不過，您可以[傳遞環境資訊至文字範本和指示詞處理器，使用組建參數](#parameters)。
 
-##  <a name="buildserver"></a> 設定您的電腦
+## <a name="buildserver"></a> 設定您的電腦
 
 若要啟用建置工作，在您的開發電腦上，安裝[Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)。
 
 如果[您的組建伺服器](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9)未安裝 Visual Studio，在電腦上的執行從開發電腦將下列檔案複製到組建電腦。 將 '*' 替代為最新版本號碼。
 
--   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    -   Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    -   Microsoft.TextTemplating.Build.Tasks.dll
+    - Microsoft.TextTemplating.Build.Tasks.dll
 
-    -   Microsoft.TextTemplating.targets
+    - Microsoft.TextTemplating.targets
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    -   Microsoft.VisualStudio.TextTemplating.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (數個檔案)
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (數個檔案)
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>若要編輯專案檔
 
@@ -90,7 +90,7 @@ ms.locfileid: "59000549"
 
 其中具有可輸入至專案檔以控制轉換工作的一些屬性：
 
--   在每個組建的開始處執行轉換工作：
+- 在每個組建的開始處執行轉換工作：
 
     ```xml
     <PropertyGroup>
@@ -98,7 +98,7 @@ ms.locfileid: "59000549"
     </PropertyGroup>
     ```
 
--   覆寫唯讀的檔案，因為它們未被簽出：
+- 覆寫唯讀的檔案，因為它們未被簽出：
 
     ```xml
     <PropertyGroup>
@@ -106,7 +106,7 @@ ms.locfileid: "59000549"
     </PropertyGroup>
     ```
 
--   每次轉換每一個範本：
+- 每次轉換每一個範本：
 
     ```xml
     <PropertyGroup>
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> 將建置內容資料傳遞至範本
+## <a name="parameters"></a> 將建置內容資料傳遞至範本
 
 您可以在專案檔中設定參數值。 例如，您可以傳遞組建屬性和[環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -234,7 +234,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 The project folder is: <#= ProjectFolder #>
 ```
 
-##  <a name="msbuild"></a> 使用專案屬性中的組件和 include 指示詞
+## <a name="msbuild"></a> 使用專案屬性中的組件和 include 指示詞
 
 Visual Studio 巨集 (如 $(SolutionDir)) 在 MSBuild 中無法運作。 您可以改用專案屬性。
 
@@ -271,13 +271,13 @@ Visual Studio 巨集 (如 $(SolutionDir)) 在 MSBuild 中無法運作。 您可�
 
 **其他選項為何有轉換文字範本嗎？**
 
--   [TextTransform 公用程式](../modeling/generating-files-with-the-texttransform-utility.md)可以用於命令指令碼。 大部分情況下，使用 MSBuild 較為容易。
+- [TextTransform 公用程式](../modeling/generating-files-with-the-texttransform-utility.md)可以用於命令指令碼。 大部分情況下，使用 MSBuild 較為容易。
 
--   [叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
--   [設計階段文字範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)由 Visual Studio 轉換。
+- [設計階段文字範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)由 Visual Studio 轉換。
 
--   [執行階段文字範本](../modeling/run-time-text-generation-with-t4-text-templates.md)轉換您的應用程式在執行階段。
+- [執行階段文字範本](../modeling/run-time-text-generation-with-t4-text-templates.md)轉換您的應用程式在執行階段。
 
 ## <a name="read-more"></a>進一步了解
 

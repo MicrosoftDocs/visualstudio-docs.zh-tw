@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e8a4e1c44928663d0d055d84899c60b968f90a0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 965f8d9661d30d23365fe324f7102e15fafec77c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636459"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056272"
 ---
 # <a name="how-to-programmatically-save-documents"></a>HOW TO：以程式設計方式儲存文件
   有幾種方式來儲存 Microsoft Office Word 文件。 您可以儲存文件，而不需要變更的文件的名稱，或您可以使用新名稱儲存文件。
@@ -29,7 +29,7 @@ ms.locfileid: "56636459"
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization"></a>若要儲存的文件層級自訂相關聯的文件
 
-1.  請呼叫 <xref:Microsoft.Office.Tools.Word.Document.Save%2A> 類別的 <xref:Microsoft.Office.Tools.Word.Document> 方法。 若要使用此程式碼範例，請從專案的 `ThisDocument` 類別中執行它。
+1. 請呼叫 <xref:Microsoft.Office.Tools.Word.Document.Save%2A> 類別的 <xref:Microsoft.Office.Tools.Word.Document> 方法。 若要使用此程式碼範例，請從專案的 `ThisDocument` 類別中執行它。
 
      [!code-vb[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#7)]
@@ -45,7 +45,7 @@ ms.locfileid: "56636459"
 
 ### <a name="to-save-a-document-specified-by-name"></a>若要儲存依名稱指定的文件
 
-1.  使用文件名稱做為引數<xref:Microsoft.Office.Interop.Word.Documents>集合。 若要使用這個程式碼範例，請從專案的 `ThisDocument` 或 `ThisAddIn` 類別中執行它。
+1. 使用文件名稱做為引數<xref:Microsoft.Office.Interop.Word.Documents>集合。 若要使用這個程式碼範例，請從專案的 `ThisDocument` 或 `ThisAddIn` 類別中執行它。
 
      [!code-vb[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#9)]
      [!code-csharp[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#9)]
@@ -58,7 +58,7 @@ ms.locfileid: "56636459"
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>若要儲存的文件層級自訂，以新名稱相關聯的文件
 
-1.  呼叫<xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A>方法的`ThisDocument`在專案中，使用完整的路徑和檔案名稱的類別。 如果該資料夾中已有同名的檔案，即會以無訊息方式覆寫。 若要使用這個程式碼範例，請從 `ThisDocument` 類別執行程式碼。
+1. 呼叫<xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A>方法的`ThisDocument`在專案中，使用完整的路徑和檔案名稱的類別。 如果該資料夾中已有同名的檔案，即會以無訊息方式覆寫。 若要使用這個程式碼範例，請從 `ThisDocument` 類別執行程式碼。
 
     > [!NOTE]
     >  <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A>方法擲回例外狀況，如果目標目錄不存在，或有其他問題，將檔案儲存。 它是很好的做法是使用**try...catch** block 周圍<xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A>方法或在內部呼叫的方法。
@@ -68,7 +68,7 @@ ms.locfileid: "56636459"
 
 ### <a name="to-save-a-native-document-with-a-new-name"></a>若要使用新名稱儲存原生文件
 
-1.  呼叫<xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A>方法的<xref:Microsoft.Office.Interop.Word.Document>您想要儲存，請使用完整的路徑和檔案名稱。 如果該資料夾中已有同名的檔案，即會以無訊息方式覆寫。
+1. 呼叫<xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A>方法的<xref:Microsoft.Office.Interop.Word.Document>您想要儲存，請使用完整的路徑和檔案名稱。 如果該資料夾中已有同名的檔案，即會以無訊息方式覆寫。
 
      下列程式碼範例將使用新名稱儲存使用中文件。 若要使用這個程式碼範例，請從專案的 `ThisDocument` 或 `ThisAddIn` 類別中執行它。
 
@@ -81,9 +81,9 @@ ms.locfileid: "56636459"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個程式碼範例需要下列項目：
 
--   若要依名稱儲存文件，文件名為*NewDocument.doc*必須存在於一個名為目錄*測試*上磁碟機 c。
+- 若要依名稱儲存文件，文件名為*NewDocument.doc*必須存在於一個名為目錄*測試*上磁碟機 c。
 
--   若要使用新名稱儲存文件，目錄名為*測試*必須存在於 c 磁碟機。
+- 若要使用新名稱儲存文件，目錄名為*測試*必須存在於 c 磁碟機。
 
 ## <a name="see-also"></a>另請參閱
 - [如何：以程式設計方式關閉文件](../vsto/how-to-programmatically-close-documents.md)

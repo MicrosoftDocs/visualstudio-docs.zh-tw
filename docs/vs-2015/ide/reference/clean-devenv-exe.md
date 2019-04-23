@@ -14,17 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6aed7fd5ac6282d66d44ae04c4a989b72a7c37b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e1c32e062cf2a5406f235133fb646a16d21707cb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834451"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59646785"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 清除所有中繼檔案和輸出目錄。  
   
 ## <a name="syntax"></a>語法  

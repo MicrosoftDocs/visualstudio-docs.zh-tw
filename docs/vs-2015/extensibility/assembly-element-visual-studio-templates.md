@@ -13,12 +13,12 @@ ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1e3dfc502157b2d0016f1a0fd9a12dc3905f623c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 10c894f3507ae760624b6ae18f785aae6016cd5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945040"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112353"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "58945040"
   
  此文字會指定要加入至專案，項目樣板具現化時的組件。 這個組件名稱必須指定其中一種以下列方式：  
   
--   為完整的組件名稱。 例如：  
+- 為完整的組件名稱。 例如:   
   
     ```  
     <Assembly>  
@@ -65,7 +65,7 @@ ms.locfileid: "58945040"
     </Assembly>  
     ```  
   
--   以簡單文字的參考。 例如:   
+- 以簡單文字的參考。 例如:   
   
     ```  
     <Assembly> System </Assembly>  

@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 949f17b97a670ceb279333dbd3a00fe5e4cb715e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856686"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654707"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>使用快照偵錯工具針對即時 ASP.NET Azure Kubernetes 服務進行偵錯
 
@@ -26,18 +26,18 @@ ms.locfileid: "58856686"
 
 快照點和記錄點與中斷點很相似，但和中斷點不的是，快照點不會在叫用時停止應用程式。 一般而言，在快照點擷取快照集時需要 10 到 20 毫秒。
 
-在此教學課程中，您將進行下列作業：
+在本教學課程中，您將進行下列作業：
 
 > [!div class="checklist"]
 > * 啟動快照偵錯工具
 > * 設定快照點及檢視快照
 > * 設定記錄點
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
-* Azure Kubernetes Services 適用的快照偵錯工具僅適用於具備 **Azure 開發工作負載**的 Visual Studio 2019 Enterprise 預覽或更新版本。 (您可以在 [個別元件] 索引標籤下的 [偵錯和測試] > [快照偵錯工具] 底下找到它。)
+* Azure Kubernetes 服務只是適用於 Visual Studio 2019 企業版或更高版本的快照集偵錯工具**Azure 開發工作負載**。 (您可以在 [個別元件] 索引標籤下的 [偵錯和測試] > [快照偵錯工具]底下找到它。)
 
-    如果尚未安裝，請安裝 [Visual Studio 2019 Enterprise 預覽](https://visualstudio.microsoft.com/vs/preview/)。
+    如果尚未安裝，安裝[Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)。
 
 * 快照集合適用於下列 Azure Kubernetes Services Web 應用程式：
   * 在 Debian 9 上的 .NET Core 2.2 或更新版本中執行的 ASP.NET Core 應用程式。

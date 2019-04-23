@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dabed6cb449d51564dafbcddb3a17ccea1cda374
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e111b0d04b8e703a694917985a0559c05584e25b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065502"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>不重新簽署部署 ClickOnce 應用程式測試和生產環境的伺服器
 本文說明.NET Framework 3.5 版可讓部署 ClickOnce 應用程式，從多個網路位置，而不重新簽署，或變更 ClickOnce 資訊清單中所引入的 ClickOnce 的功能。
@@ -34,9 +34,9 @@ ms.locfileid: "56638162"
 
  第三方開發人員和 Isv 可以參加這項功能，讓他們的客戶更新其應用程式更容易。 這項功能可以用於下列情況：
 
--   當正在更新應用程式，不適用於應用程式第一次安裝。
+- 當正在更新應用程式，不適用於應用程式第一次安裝。
 
--   只能在一個設定的電腦上的應用程式時。 例如，如果應用程式設定為指向兩個不同的資料庫，您無法使用這項功能。
+- 只能在一個設定的電腦上的應用程式時。 例如，如果應用程式設定為指向兩個不同的資料庫，您無法使用這項功能。
 
 ## <a name="exclude-deploymentprovider-from-deployment-manifests"></a>DeploymentProvider 排除部署資訊清單
  在.NET Framework 2.0 和.NET Framework 3.0 中，會在離線可用性的系統安裝任何 ClickOnce 應用程式都必須列出`deploymentProvider`部署資訊清單中。 `deploymentProvider`通常稱為更新位置; 它是 ClickOnce 應用程式更新的檢查其中的位置。 這項需求，另外還需要讓應用程式發行者登入他們的部署，並不容易更新 ClickOnce 應用程式從廠商或其他第三方公司。 它也使它更難以部署相同的應用程式，從相同網路上的多個位置。
@@ -50,16 +50,16 @@ ms.locfileid: "56638162"
 
  此時要記住的重點在於排除的應用程式`deploymentProvider`無法在更新期間變更其安裝位置，直到它們寄送包含的更新`deploymentProvider`標記一次。
 
- 以下是兩個範例說明此點。 在第一個範例中，您可以發行 ClickOnce 應用程式沒有任何`deploymentProvider`標記，而且您要求使用者安裝從 http://www.adatum.com/MyApplication/。 如果您決定您想要將應用程式的下一個更新發行 http://subdomain.adatum.com/MyApplication/，沒有其他方法的這表示部署資訊清單位於 http://www.adatum.com/MyApplication/。 您可以執行下列其中一種：
+ 以下是兩個範例說明此點。 在第一個範例中，您可以發行 ClickOnce 應用程式沒有任何`deploymentProvider`標記，而且您要求使用者安裝從 http://www.adatum.com/MyApplication/ 。 如果您決定您想要將應用程式的下一個更新發行 http://subdomain.adatum.com/MyApplication/ ，沒有其他方法的這表示部署資訊清單位於 http://www.adatum.com/MyApplication/。 您可以執行下列其中一種：
 
 - 告知使用者解除安裝舊的版本，並從新位置中安裝新的版本。
 
-- 在 包含更新 http://www.adatum.com/MyApplication/，其中包含`deploymentProvider`指向 http://www.adatum.com/MyApplication/。 然後，發行與更新版本的另一個更新`deploymentProvider`指向 http://subdomain.adatum.com/MyApplication/。
+- 在 包含更新 http://www.adatum.com/MyApplication/ ，其中包含`deploymentProvider`指向 http://www.adatum.com/MyApplication/。 然後，發行與更新版本的另一個更新`deploymentProvider`指向 http://subdomain.adatum.com/MyApplication/ 。
 
-  在第二個範例中，您可以發行 ClickOnce 應用程式，指定`deploymentProvider`，但後來將它移除。 一次新的版本不含`deploymentProvider`下載用戶端，您無法將重新導向到用於更新，直到您發行的版本，具有應用程式的路徑`deploymentProvider`還原。 如同第一個範例中，`deploymentProvider`一開始必須指向目前的更新位置，不是您新的位置。 在此情況下，如果您嘗試插入`deploymentProvider`，這是指 http://subdomain.adatum.com/MyApplication/，則下一次的更新會失敗。
+  在第二個範例中，您可以發行 ClickOnce 應用程式，指定`deploymentProvider`，但後來將它移除。 一次新的版本不含`deploymentProvider`下載用戶端，您無法將重新導向到用於更新，直到您發行的版本，具有應用程式的路徑`deploymentProvider`還原。 如同第一個範例中，`deploymentProvider`一開始必須指向目前的更新位置，不是您新的位置。 在此情況下，如果您嘗試插入`deploymentProvider`，這是指 http://subdomain.adatum.com/MyApplication/ ，則下一次的更新會失敗。
 
 ## <a name="create-a-deployment"></a>建立部署
- 如需建立可以從不同的網路位置進行部署的部署的逐步指引，請參閱[逐步解說： 手動部署 ClickOnce 應用程式不需要重新簽署而且會保留商標資訊](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).
+ 如需建立可以從不同的網路位置進行部署的部署的逐步指引，請參閱[逐步解說：手動部署 ClickOnce 應用程式不需要重新簽署而且會保留商標資訊](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [*Mage.exe* (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

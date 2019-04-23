@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 800fa29682460991ca28a0dacb6d5b5a4a9838d4
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 01366bfd0f32f9cbf731613339f2c592873e2623
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58939817"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114102"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>逐步解說：因管線設定錯誤而遺漏的物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "58939817"
   
  本逐步解說將說明下列工作：  
   
--   使用 [圖形事件清單]  找出潛在的問題來源。  
+- 使用 [圖形事件清單]  找出潛在的問題來源。  
   
--   使用 [圖形管線階段]  視窗來檢查 `DrawIndexed` Direct3D API 呼叫的效果。  
+- 使用 [圖形管線階段]  視窗來檢查 `DrawIndexed` Direct3D API 呼叫的效果。  
   
--   檢查裝置內容，以確認未設定著色器階段。  
+- 檢查裝置內容，以確認未設定著色器階段。  
   
--   使用 [圖形管線階段]  視窗搭配 [圖形事件呼叫堆疊]  ，以協助找出未設定像素著色器的來源。  
+- 使用 [圖形管線階段]  視窗搭配 [圖形事件呼叫堆疊]  ，以協助找出未設定像素著色器的來源。  
   
 ## <a name="scenario"></a>情節  
  有時是因為在轉譯物件前未設定其中一個著色器階段，而造成 3D 應用程式遺漏物件。 在具有簡單轉譯需求的應用程式中，此錯誤來源通常位於物件繪製呼叫的呼叫堆疊中某處。 但為了達到最佳化，某些應用程式會將具有相同著色器程式、材質或其他資料的物件批次處理，以將狀態變更的額外負荷最小化。 在這些應用程式中，錯誤的來源可能埋沒在批次處理系統中，而非位於呼叫堆疊的繪製呼叫中。 此逐步解說中的情節示範具有簡單轉譯需求的應用程式，因此可在呼叫堆疊中找到錯誤的來源。  

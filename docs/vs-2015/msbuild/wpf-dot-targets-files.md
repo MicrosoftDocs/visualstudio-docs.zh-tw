@@ -18,17 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b4d3c47c5165ecf979146c928b97b5ff4f65e966
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 760df73b35f45b983740f6dda5e6fe58dc2493ae
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54833702"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658432"
 ---
 # <a name="wpf-targets-files"></a>WPF .Targets 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)] 會透過新增一組 [!INCLUDE[TLA2#tla_wpf](../includes/tla2sharptla-wpf-md.md)] 特定的工作來延伸 [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)]，這些工作會合併到特殊的 .targets 檔案 **Microsoft.WinFX.targets** 中。 此檔案會合併一組在 [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)] 中建置 [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] 專案所需的 [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] 工作。  
   
 ## <a name="see-also"></a>請參閱  

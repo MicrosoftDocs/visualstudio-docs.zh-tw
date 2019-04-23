@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 576b9a6890a6a6de398e917c1c152dcdb2f3ef16
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54c3bd854f824818d9656a33ccf30391f750a491
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080718"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>HOW TO：在項目上設定 CLR 屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ ms.locfileid: "58945917"
   
 ### <a name="to-add-a-custom-attribute"></a>若要新增自訂屬性  
   
-1.  在 [ **DSL explorer]**，選取您要新增自訂屬性的項目。  
+1. 在 [ **DSL explorer]**，選取您要新增自訂屬性的項目。  
   
-2.  在 [**屬性**視窗中下, 一步]**自訂屬性**屬性，按一下瀏覽 (**...**) 圖示。  
+2. 在 [**屬性**視窗中下, 一步]**自訂屬性**屬性，按一下瀏覽 (**...**) 圖示。  
   
      **編輯屬性**對話方塊隨即開啟。  
   
-3.  在**名稱**資料行中，按一下**\<加入屬性 >** 輸入屬性的名稱。 請按 ENTER 鍵。  
+3. 在**名稱**資料行中，按一下**\<加入屬性 >** 輸入屬性的名稱。 請按 ENTER 鍵。  
   
-4.  屬性名稱下的那一行顯示括號。 這一行上鍵入屬性的參數類型 (例如`string`)，然後按 ENTER 鍵。  
+4. 屬性名稱下的那一行顯示括號。 這一行上鍵入屬性的參數類型 (例如`string`)，然後按 ENTER 鍵。  
   
-5.  在 **名稱屬性**資料行中，輸入適當的名稱，例如`MyString`。  
+5. 在 **名稱屬性**資料行中，輸入適當的名稱，例如`MyString`。  
   
-6.  按一下 [確定 **Deploying Office Solutions**]。  
+6. 按一下 [確定] 。  
   
      **自訂屬性**屬性現在顯示的屬性，以下列格式：  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114726"
 ---
 # <a name="rename-refactoring-c"></a>重新命名重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "58943077"
   
 #### <a name="to-rename-an-identifier"></a>若要重新命名識別項  
   
-1.  建立名為 `RenameIdentifier` 的主控台應用程式，再以下列程式碼取代 `Program`。  
+1. 建立名為 `RenameIdentifier` 的主控台應用程式，再以下列程式碼取代 `Program`。  
   
     ```csharp  
     class ProtoClassA  
@@ -76,23 +76,23 @@ ms.locfileid: "58943077"
     }  
     ```  
   
-2.  將游標置於`MethodB`，方法宣告或方法呼叫。  
+2. 將游標置於`MethodB`，方法宣告或方法呼叫。  
   
-3.  從**重構**功能表上，選取**重新命名**。 **重新命名** 對話方塊隨即出現。  
+3. 從**重構**功能表上，選取**重新命名**。 **重新命名** 對話方塊隨即出現。  
   
      您也可以以滑鼠右鍵按一下資料指標，指向**重構**操作功能表，然後按一下**重新命名**以顯示**重新命名** 對話方塊。  
   
-4.  在 **新的名稱**欄位中，輸入`MethodC`。  
+4. 在 **新的名稱**欄位中，輸入`MethodC`。  
   
-5.  選取 **註解中的搜尋**核取方塊。  
+5. 選取 **註解中的搜尋**核取方塊。  
   
-6.  按一下 [確定 **Deploying Office Solutions**]。  
+6. 按一下 [確定] 。  
   
-7.  在 [**預覽變更**] 對話方塊中，按一下**套用**。  
+7. 在 [**預覽變更**] 對話方塊中，按一下**套用**。  
   
 #### <a name="to-rename-an-identifier-using-smart-tags"></a>若要重新命名識別項使用智慧標籤  
   
-1.  建立名為 `RenameIdentifier` 的主控台應用程式，再以下列程式碼取代 `Program`。  
+1. 建立名為 `RenameIdentifier` 的主控台應用程式，再以下列程式碼取代 `Program`。  
   
     ```csharp  
     class ProtoClassA  
@@ -113,18 +113,18 @@ ms.locfileid: "58943077"
     }  
     ```  
   
-2.  宣告中`MethodB`中，輸入或 backspace 鍵方法識別項。 這個識別項下方會出現智慧標籤提示。  
+2. 宣告中`MethodB`中，輸入或 backspace 鍵方法識別項。 這個識別項下方會出現智慧標籤提示。  
   
     > [!NOTE]
     >  此外，您只可以叫用重新命名重整智慧標籤使用的識別項宣告。  
   
-3.  輸入鍵盤快速鍵 SHIFT + ALT + F10，然後按 向下箭號顯示智慧標籤功能表。  
+3. 輸入鍵盤快速鍵 SHIFT + ALT + F10，然後按 向下箭號顯示智慧標籤功能表。  
   
      -或-  
   
      滑鼠指標移顯示智慧標籤的智慧標籤提示。 然後將滑鼠指標移的智慧標籤，然後按一下向下箭號顯示智慧標籤功能表。  
   
-4.  選取 **重新命名 '\<identifer1 >' 到'\<identifier2 >'** 叫用重新命名重整，而不變更程式碼預覽的功能表項目。 所有參考 **\<identifer1 >** 將自動更新為 **\<identifier2 >**。  
+4. 選取 **重新命名 '\<identifer1 >' 到'\<identifier2 >'** 叫用重新命名重整，而不變更程式碼預覽的功能表項目。 所有參考 **\<identifer1 >** 將自動更新為 **\<identifier2 >**。  
   
      -或-  
   

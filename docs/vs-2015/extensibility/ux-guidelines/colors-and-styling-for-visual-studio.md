@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3b32779fe2d852e21eacf888e7b2326830fa9829
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940368"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095811"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>色彩和樣式設定適用於 Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,6 @@ ms.locfileid: "58940368"
 |您有個別的功能的群組，並針對類似的項目沒有共用的色彩。|**自訂色彩**|特定的區域並不是用來與其他 UI 共用的色彩語彙基元名稱|
 |您想要允許使用者在自訂 UI 或內容 （例如，針對在文字編輯器或特製化的設計工具視窗）。|**使用者自訂**<br /><br /> **(工具 > [選項] 對話方塊)**|「 字型和色彩 」 頁面中定義的設定**工具 > 選項**對話方塊或特製化的一個 UI 功能的特定頁面。|
 
-
 ### <a name="visual-studio-themes"></a>Visual Studio 佈景主題
  Visual Studio 功能的三個不同的色彩佈景主題： 亮色、 暗色，及藍色。 它也會偵測高對比模式中，也就是針對協助工具設計全系統色彩佈景主題。
 
@@ -80,8 +79,7 @@ ms.locfileid: "58940368"
 
  **工具 > [選項] 對話方塊**
 
-
-##  <a name="BKMK_TheVSColorService"></a> VSColor Service
+## <a name="BKMK_TheVSColorService"></a> VSColor Service
  Visual Studio 提供的環境色彩服務，也稱為 VSColor service 或殼層色彩服務。 這項服務可讓您將 UI 元素的色彩值繫結為集，其中包含每個佈景主題色彩的名稱 / 值色彩。 VSColor service 必須用於所有的 UI 項目，以便色彩會自動變更以反映目前的使用者選取主題，並使 UI 繫結至環境色彩服務將與整合新的佈景主題在未來版本的 Visual Studio。
 
 ### <a name="how-the-service-works"></a>服務的運作方式
@@ -258,18 +256,18 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> 選擇高對比色彩
+## <a name="BKMK_ChoosingHighContrastColors"></a> 選擇高對比色彩
 
 ### <a name="overview"></a>總覽
  Windows 會使用數個高對比系統層級佈景主題，增加文字、 背景和影像的色彩對比，讓出現在螢幕上多不同的項目。 基於協助工具，請務必 Visual Studio 介面項目正確回應時使用者切換至 高對比佈景主題。
 
  只有少數幾種系統色彩可以用於高對比佈景主題。 選擇您的系統色彩的名稱，請記住下列秘訣：
 
-1.  **選擇具有相同的語意意義的系統色彩**著色的項目。 比方說，如果您選擇高對比的色彩 視窗中的文字，便需要使用 WindowText 和不 ControlText。
+1. **選擇具有相同的語意意義的系統色彩**著色的項目。 比方說，如果您選擇高對比的色彩 視窗中的文字，便需要使用 WindowText 和不 ControlText。
 
-2.  **選擇 前景/背景配對**一起或您將不會確定您的色彩選擇可在所有的高對比佈景主題。
+2. **選擇 前景/背景配對**一起或您將不會確定您的色彩選擇可在所有的高對比佈景主題。
 
-3.  **判斷您的 UI 中哪些部分最重要的並確定 [內容] 區域會突顯出來。** 因為沒有任何不同的內容區域的色彩變化，因此使用強式的框線色彩來定義內容區域，常見，就會遺失許多通常會區分色彩色調的細微差異的詳細資料。
+3. **判斷您的 UI 中哪些部分最重要的並確定 [內容] 區域會突顯出來。** 因為沒有任何不同的內容區域的色彩變化，因此使用強式的框線色彩來定義內容區域，常見，就會遺失許多通常會區分色彩色調的細微差異的詳細資料。
 
 ### <a name="system-color-set"></a>系統色彩設定
  在資料表[WPF 團隊部落格：SystemColors 參考](http://blogs.msdn.com/b/wpf/archive/2010/11/30/systemcolors-reference.aspx)表示一組完整的系統色彩的名稱，以及對應的色調顯示在每個佈景主題。
@@ -325,7 +323,7 @@ protected override void Dispose(bool disposing)
 |WindowFrame|-IDE 框線|
 |WindowText|-自動隱藏 索引標籤前景<br />-選取的工具視窗索引標籤前景<br />-未取得焦點的文件視窗索引標籤和未取得焦點或未選取佈建 索引標籤前景<br />-樹狀檢視的預設前景和暫留時透過未選取圖像 （glyph）<br />-選取索引標籤的框線工具視窗。<br />-捲軸捲動方塊的背景、 框線及圖像 （glyph）|
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> 公開使用者的色彩
+## <a name="BKMK_ExposingColorsForEndUsers"></a> 公開使用者的色彩
 
 ### <a name="overview"></a>總覽
  有時候，您要允許使用者在自訂 UI，例如建立程式碼編輯器或設計介面。 若要這樣做的最常見方式是使用**工具 > 選項**對話方塊。 除非您具備高度特殊需要特殊的控制項的 UI，來呈現自訂最簡單的方式是透過**字型和色彩**頁面內**環境**對話方塊區段。 對於您公開自訂每個項目，使用者可以選擇變更的前景色彩、 背景色彩，或兩者。
@@ -337,13 +335,13 @@ protected override void Dispose(bool disposing)
 
  若要實作自訂類別，或顯示的項目，VSPackage 必須：
 
--   **建立或識別登錄中的類別。** IDE 的實作**字型和色彩**屬性頁會使用此資訊正確查詢服務，支援指定的類別。
+- **建立或識別登錄中的類別。** IDE 的實作**字型和色彩**屬性頁會使用此資訊正確查詢服務，支援指定的類別。
 
--   **建立或識別登錄 （選擇性） 中的群組。** 它可能是適合用來定義群組，這代表兩個或多個類別的聯集。 如果定義群組，則 IDE 會自動合併子類別，並且會顯示群組內的項目。
+- **建立或識別登錄 （選擇性） 中的群組。** 它可能是適合用來定義群組，這代表兩個或多個類別的聯集。 如果定義群組，則 IDE 會自動合併子類別，並且會顯示群組內的項目。
 
--   **實作 IDE 支援。**
+- **實作 IDE 支援。**
 
--   **處理字型和色彩的變更。**
+- **處理字型和色彩的變更。**
 
 #### <a name="to-create-or-identify-categories"></a>若要建立或識別分類
  建構一種特殊的類別目錄下的登錄項目 [HKLM\SOFTWARE\Microsoft \Visual Studio\\< 的 Visual Studio 版本\>\FontAndColors\\< 分類\>]。 \<類別目錄 > 類別目錄的非當地語系化名稱。
@@ -428,11 +426,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
 
  **注意：**
 
--   「 NameID 」 = 在套件中的當地語系化類別目錄名稱的資源識別碼
+- 「 NameID 」 = 在套件中的當地語系化類別目錄名稱的資源識別碼
 
--   「 ToolWindowPackage"= 封裝 GUID
+- 「 ToolWindowPackage"= 封裝 GUID
 
--   [類別] ="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}"是只是範例，實際的值可以是實作者所提供的新 GUID。
+- [類別] ="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}"是只是範例，實際的值可以是實作者所提供的新 GUID。
 
 ### <a name="set-the-font-and-color-property-category-guid"></a>設定字型和色彩屬性類別 GUID
  下列程式碼範例將示範如何設定分類的 Guid。

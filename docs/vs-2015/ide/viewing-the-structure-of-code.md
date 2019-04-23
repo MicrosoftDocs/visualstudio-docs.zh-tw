@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801208"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115064"
 ---
 # <a name="viewing-the-structure-of-code"></a>檢視程式碼的結構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "54801208"
 > [!NOTE]
 >  Visual Studio 的版本及您正在使用的設定，可能會影響 IDE 中的功能。 其可能會與本主題中所述內容有所不同。  
   
-##  <a name="BKMK_ClassView"></a> 類別檢視 (Visual Basic、C#、C++)  
+## <a name="BKMK_ClassView"></a> 類別檢視 (Visual Basic、C#、C++)  
  [類別檢視] 可以顯示為方案總管的一部分，同時也可顯示在另一個視窗中。 [類別檢視] 視窗會顯示應用程式的項目。 上窗格會顯示命名空間、類型、介面、列舉及類別，而下窗格則會顯示屬於上窗格中所選類型的成員。 您使用此視窗可移至原始程式碼中的成員定義 (如果定義在您的方案之外，則會在 [物件瀏覽器] 中)。  
   
  您不需要編譯專案，即可在 [類別檢視] 中檢視其項目。 當您修改專案中的程式碼時，視窗會重新整理。  
@@ -110,7 +110,7 @@ ms.locfileid: "54801208"
 |**移至參考**|在原始程式碼中顯示類型或成員的參考 (如果有)。|  
 |**檢視呼叫階層**|在 [呼叫階層] 視窗中顯示所選方法。|  
   
-##  <a name="BKMK_CallHierarchy"></a> 呼叫階層 (Visual Basic、C#、C++)  
+## <a name="BKMK_CallHierarchy"></a> 呼叫階層 (Visual Basic、C#、C++)  
  [呼叫階層] 視窗會顯示從何處呼叫指定的方法 (或是屬性或建構函式)，並列出來自該方法所呼叫的方法。 您可以檢視多個層級的呼叫歷程圖，其可顯示指定範圍中方法之間呼叫端/被呼叫端的關聯性。  
   
  您可以顯示 [呼叫階層] 視窗，方法是選取方法 (或是屬性或建構函式)，然後選擇捷徑功能表上的 [檢視類別階層]。 顯示畫面應與下方圖片類似。  
@@ -135,7 +135,7 @@ ms.locfileid: "54801208"
 |**複製**|複製所選節點 (但不複製其子節點)。|  
 |**重新整理**|重新整理資訊。|  
   
-##  <a name="BKMK_ObjectBrowser"></a> 物件瀏覽器  
+## <a name="BKMK_ObjectBrowser"></a> 物件瀏覽器  
  [物件瀏覽器] 會顯示專案中程式碼的描述。  
   
  您可以篩選要在 [物件瀏覽器] 中檢視的項目。 使用視窗頂端的下拉式清單，可以選擇下列選項：  
@@ -194,7 +194,7 @@ ms.locfileid: "54801208"
 |**移至參考**|在原始程式碼中顯示類型或成員的參考 (如果有)。|  
 |**檢視呼叫階層**|在 [呼叫階層] 視窗中顯示所選方法。|  
   
-##  <a name="BKMK_CodeDefinition"></a> 程式碼定義視窗 (C#、C++)  
+## <a name="BKMK_CodeDefinition"></a> 程式碼定義視窗 (C#、C++)  
  [程式碼定義] 視窗會在使用中專案內顯示所選類型或成員的定義。 類型或成員可以在程式碼編輯器或程式碼檢視視窗中加以選取。  
   
  雖然此視窗為唯獨視窗，但您仍可以在其中設定中斷點或書籤。 若要修改顯示的定義，請選擇捷徑功能表上的 [編輯定義]。 這會在程式碼編輯器中開啟原始程式檔，並將插入點移至定義的開始處。  
@@ -222,5 +222,5 @@ ms.locfileid: "54801208"
 ### <a name="document-outline-window"></a>文件大綱視窗  
  您可以搭配使用 [文件大綱] 視窗與設計工具檢視，例如 XAML 頁面的設計工具或 Windows Forms 設計工具，或搭配 HTML 頁面。 此視窗會以樹狀檢閱來顯示項目，使您能夠檢閱表單或頁面的邏輯結構，以及尋找深度內嵌或隱藏的控制項。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [類別檢視和物件瀏覽器圖示](../ide/class-view-and-object-browser-icons.md)

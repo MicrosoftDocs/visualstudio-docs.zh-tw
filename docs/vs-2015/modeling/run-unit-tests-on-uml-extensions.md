@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 493193e24fcee2b3f3290546abc656faee7d88a7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e37f6d7891e561beecdf0f9146d647822940571b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944201"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079846"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>在 UML 擴充功能上執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,20 +50,20 @@ ms.locfileid: "58944201"
   
  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
-##  <a name="Host"></a> 設定 VSIX 擴充功能的單元測試  
+## <a name="Host"></a> 設定 VSIX 擴充功能的單元測試  
  模型擴充功能中的方法通常會使用已開啟的圖表。 這些方法使用 MEF 匯入，例如 **IDiagramContext** 和 **ILinkedUndoContext**。 執行測試之前，您的測試環境必須先設定這個內容。  
   
 #### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>設定在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中執行的單元測試  
   
-1.  建立 UML 擴充功能專案和單元測試專案。  
+1. 建立 UML 擴充功能專案和單元測試專案。  
   
-    1.  **UML 擴充功能專案。** 您通常會使用命令、手勢或驗證專案範本，來建立這個專案。 例如，請參閱[在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
+    1. **UML 擴充功能專案。** 您通常會使用命令、手勢或驗證專案範本，來建立這個專案。 例如，請參閱[在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
   
-    2.  **單元測試專案。** 如需詳細資訊，請參閱[對程式碼進行單元測試](../test/unit-test-your-code.md)。  
+    2. **單元測試專案。** 如需詳細資訊，請參閱[對程式碼進行單元測試](../test/unit-test-your-code.md)。  
   
-2.  建立含有 UML 模型專案的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案。 您將會使用這個方案做為測試的初始狀態。 它應該與您在其中撰寫 UML 擴充功能和其單元測試的方案區隔開來。 如需詳細資訊，請參閱 <<c0> [ 建立 UML 模型專案和圖表](../modeling/create-uml-modeling-projects-and-diagrams.md)。  
+2. 建立含有 UML 模型專案的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案。 您將會使用這個方案做為測試的初始狀態。 它應該與您在其中撰寫 UML 擴充功能和其單元測試的方案區隔開來。 如需詳細資訊，請參閱 <<c0> [ 建立 UML 模型專案和圖表](../modeling/create-uml-modeling-projects-and-diagrams.md)。  
   
-3.  **在 UML 擴充功能專案中**，編輯 .csproj 檔案做為文字，並確定下列各行顯示 `true`：  
+3. **在 UML 擴充功能專案中**，編輯 .csproj 檔案做為文字，並確定下列各行顯示 `true`：  
   
     ```  
     <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>  
@@ -72,34 +72,34 @@ ms.locfileid: "58944201"
   
      若要編輯 .csproj 檔案做為文字，請在方案總管的專案捷徑功能表上選擇 [卸載專案]  。 然後選擇 [編輯 ….csproj] 。 在您編輯過文字之後，請選擇 [重新載入專案] 。  
   
-4.  在 UML 擴充功能專案中，於 **Properties\AssemblyInfo.cs**中加入下行。 這樣可讓單元測試存取您想要測試的方法：  
+4. 在 UML 擴充功能專案中，於 **Properties\AssemblyInfo.cs**中加入下行。 這樣可讓單元測試存取您想要測試的方法：  
   
     ```csharp  
     [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.  
     ```  
   
-5.  **在單元測試專案中**，加入下列組件 References：  
+5. **在單元測試專案中**，加入下列組件 References：  
   
-    -   *您的 UML 擴充功能專案*  
+    - *您的 UML 擴充功能專案*  
   
-    -   **EnvDTE.dll**  
+    - **EnvDTE.dll**  
   
-    -   **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
+    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
   
-    -   **Microsoft.VisualStudio.ComponentModelHost.dll**  
+    - **Microsoft.VisualStudio.ComponentModelHost.dll**  
   
-    -   **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
+    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
   
-    -   **Microsoft.VisualStudio.Uml.Interfaces.dll**  
+    - **Microsoft.VisualStudio.Uml.Interfaces.dll**  
   
-    -   **Microsoft.VSSDK.TestHostFramework.dll**  
+    - **Microsoft.VSSDK.TestHostFramework.dll**  
   
-6.  在每種測試方法 (包括初始化方法) 的前面加上 `[HostType("VS IDE")]` 屬性。  
+6. 在每種測試方法 (包括初始化方法) 的前面加上 `[HostType("VS IDE")]` 屬性。  
   
      這樣可確定測試將在 Visual Studio 的試驗執行個體中執行。  
   
-##  <a name="DTE"></a> 存取 DTE 和 ModelStore  
- 撰寫方法，以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中開啟模型專案。 在每個測試回合中，您通常只會想要開啟方案一次。 若只要執行此方法一次，請在此方法的前面加上 `[AssemblyInitialize]` 屬性。 請不要忘記，每種測試方法上也需要 [HostType("VS IDE")] 屬性。  例如:   
+## <a name="DTE"></a> 存取 DTE 和 ModelStore  
+ 撰寫方法，以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中開啟模型專案。 在每個測試回合中，您通常只會想要開啟方案一次。 若只要執行此方法一次，請在此方法的前面加上 `[AssemblyInitialize]` 屬性。 請不要忘記，每種測試方法上也需要 [HostType("VS IDE")] 屬性。  例如：  
   
 ```csharp  
 using EnvDTE;  
@@ -166,7 +166,7 @@ namespace UnitTests
   
  如果 <xref:EnvDTE.Project?displayProperty=fullName> 執行個體代表模型專案，則可以將它轉換為 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.IModelingProject>，反之亦然。  
   
-##  <a name="Opening"></a> 開啟模型圖  
+## <a name="Opening"></a> 開啟模型圖  
  針對每個測試或測試類別，您通常會想要使用已開啟的圖表。 下列範例使用 `[ClassInitialize]` 屬性，而該屬性會在這個測試類別中的其他方法之前執行這種方法。 再次提醒，請不要忘記，每種測試方法上也需要 [HostType("VS IDE")] 屬性：  
   
 ```csharp  
@@ -211,7 +211,7 @@ public class MyTestClass
   
 ```  
   
-##  <a name="UiThread"></a> 在 UI 執行緒中執行模型變更  
+## <a name="UiThread"></a> 在 UI 執行緒中執行模型變更  
  如果您的測試或正在測試的方法變更模型存放區，則必須在使用者介面執行緒中執行它們。 如果您沒有這麼做，則可能會看到 `AccessViolationException`。 使用 Invoke 的呼叫，括住測試方法的程式碼：  
   
 ```  
@@ -231,7 +231,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
     }  
 ```  
   
-##  <a name="MEF"></a> 測試命令、 手勢和其他 MEF 元件  
+## <a name="MEF"></a> 測試命令、 手勢和其他 MEF 元件  
  MEF 元件使用具有 `[Import]` 屬性且由其主機設定其值的屬性宣告。 這類屬性通常會包括 IDiagramContext、SVsServiceProvider 和 ILinkedUndoContext。 當您測試使用上述任何屬性的方法時，需要先設定其值，再執行測試中方法。 例如，如果您已撰寫與下列程式碼類似的命令擴充功能：  
   
 ```  
@@ -287,7 +287,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
 ...}  
 ```  
   
- 如果您想要測試的方法採用匯入的屬性做為參數，則可以將屬性匯入至測試類別，並將 `SatisfyImportsOnce` 套用至測試執行個體。 例如：  
+ 如果您想要測試的方法採用匯入的屬性做為參數，則可以將屬性匯入至測試類別，並將 `SatisfyImportsOnce` 套用至測試執行個體。 例如:   
   
 ```  
   
@@ -340,7 +340,7 @@ using System.ComponentModel.Composition;
 ```  
   
  定義測試介面  
- 定義介面，而此介面包括要測試之類別的公用成員，以及您想要測試能夠使用之私用成員的其他屬性和方法。 將這個介面加入要測試的專案。 例如：  
+ 定義介面，而此介面包括要測試之類別的公用成員，以及您想要測試能夠使用之私用成員的其他屬性和方法。 將這個介面加入要測試的專案。 例如:   
   
 ```csharp  
 internal interface MyClassTestInterface {  
@@ -370,7 +370,7 @@ partial public class MyClass
 [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.  
 ```  
   
- 在單元測試方法中，使用測試介面。 例如：  
+ 在單元測試方法中，使用測試介面。 例如:   
   
 ```csharp  
 MyClassTestInterface testInstance = new MyClass();  

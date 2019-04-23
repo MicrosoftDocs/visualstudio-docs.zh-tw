@@ -13,17 +13,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a84f0a037df92ff31ce66eb6692367ef1d209f6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868878"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649364"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 最新文件，請參閱 < [Visual Studio 2017 系統管理員指南](/visualstudio/install/visual-studio-administrator-guide)。
+如需 Visual Studio 的最新文件，請參閱 < [Visual Studio 系統管理員指南](/visualstudio/install/visual-studio-administrator-guide)。
 
 只要每部目標電腦符合，您可以在網路上部署 Visual Studio 2015[最小安裝需求](https://visualstudio.microsoft.com/vs/older-downloads/)。 您可使用 /layout 參數執行安裝檔案 (如[建立 Visual Studio 的離線安裝](../install/create-an-offline-installation-of-visual-studio.md)頁面中所述) 來建立網路共用，然後從本機電腦將它複製到網路共用。 如果您使用 ISO，您就可以掛接 ISO 並共用它或將 ISO 複製到網路共用。  
   
@@ -40,7 +40,7 @@ ms.locfileid: "57868878"
 ## <a name="error-return-codes"></a>錯誤傳回碼  
  下表列出重要的錯誤碼。 您可以在自動化中使用這些錯誤碼，判斷是否需要重新開機，以及安裝是否成功。 如果您收到錯誤代碼，考量的疑難排解步驟[安裝 Visual Studio](../install/install-visual-studio-2015.md)頁面。  
   
-|設定狀態|不需要重新啟動|必須重新啟動|說明|  
+|設定狀態|不需要重新啟動|必須重新啟動|描述|  
 |------------------|--------------------------|----------------------|-----------------|  
 |成功|0x00000000 [0]|0x00000bc2 [3010]|安裝成功。|  
 |區塊|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|如果要報告的唯一區塊是「重新開機暫止」，則傳回值為「未完成 - 需要重新開機」值 (0x80048bc7)。|  
@@ -54,22 +54,23 @@ ms.locfileid: "57868878"
 ## <a name="controlling-what-is-installed"></a>控制安裝哪些元件  
  如果您想要控制您的使用者可以安裝的元件，有兩個選項：系統管理員檔案安裝和命令列選項。 如果您的目標是限制使用者可以從 Visual Studio 安裝程式經驗選擇的內容，請選取系統管理員檔案安裝。 如果您想要建立初始設定，但允許使用者選擇他們自己的 Visual Studio 安裝程式經驗，請選取命令列參數。  
   
- 如需系統管理員檔案經驗的詳細資訊，請參閱 [How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) 和 [How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)。  如需有關命令列控制項的詳細資訊，請參閱 <<c0> [ 使用命令列參數安裝 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md)頁面。  
+ 如需有關系統管理員檔案經驗的詳細資訊，請參閱[How to:建立和執行自動的安裝的 Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)和[How to:部署 Visual Studio 時會自動套用產品金鑰](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)。  如需有關命令列控制項的詳細資訊，請參閱 <<c0> [ 使用命令列參數安裝 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md)頁面。  
   
 ## <a name="specifying-customer-feedback-settings"></a>指定客戶回函設定  
- 根據預設，Visual Studio 的安裝已啟用客戶回函。 您可以設定 Visual Studio 來將下列登錄機碼的值變更為字串 "0"，在個別電腦上停用客戶回函。  
+
+根據預設，Visual Studio 的安裝已啟用客戶回函。 您可以設定 Visual Studio 來將下列登錄機碼的值變更為字串 "0"，在個別電腦上停用客戶回函。  
   
- **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
 **OptIn**  
   
- (例如，將其變更為 HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn="0")  
+(例如，將其變更為 HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn="0")  
   
 ## <a name="related-topics"></a>相關主題  
   
-|主題|說明|  
+|主題|描述|  
 |-----------|-----------------|  
 |[如何：安裝特定版本的 Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|描述如何安裝最新版的特定組態[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|  
-|[如何：建立和執行 Visual Studio 的自動安裝](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|描述如何安裝[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以自動模式。|  
+|[如何：建立和執行自動的安裝的 Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|描述如何安裝[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以自動模式。|  
 |[如何：部署 Visual Studio 時會自動套用產品金鑰](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|描述如何部署到多部電腦時套用產品金鑰。|  
 |[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)|提供有關如何管理本機說明安裝有或沒有網際網路存取的網路環境的資訊。|  
 |[安裝 Visual Studio](../install/install-visual-studio-2015.md)|提供指示與連結主題會說明如何安裝[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|

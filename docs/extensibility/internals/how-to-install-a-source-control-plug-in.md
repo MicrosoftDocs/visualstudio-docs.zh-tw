@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46e93b07ddf65d50ebf92f04eda14e93fbfeba74
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 9e368a318b2f6c552ce815c839e73f0a18ea5c9b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323382"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648793"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>HOW TO：安裝原始檔控制外掛程式
 建立原始檔控制外掛程式包含三個步驟：
@@ -61,7 +61,6 @@ ms.locfileid: "58323382"
    | - |--------------|
    | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio | 1 |
    | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager | 1 |
-
 
 3. 新增子機碼中， **SourceCodeControlProvider**下方**HKEY_LOCAL_MACHINE**中的索引鍵**軟體**子機碼。
 

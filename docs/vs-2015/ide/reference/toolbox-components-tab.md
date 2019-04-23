@@ -11,17 +11,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 121474dcc7abcfb01ff992558f3ce0a245444e9f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0ebbf8a0492537ee40062fb17bb338d46c228a9a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775884"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652861"
 ---
 # <a name="toolbox-components-tab"></a>元件索引標籤、工具箱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 顯示您可以新增至 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 和 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 設計工具的元件。 除了 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 隨附的 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 元件之外 (例如 <xref:System.Messaging.MessageQueue> 和 <xref:System.Diagnostics.EventLog> 元件)，您還可以將您自己的元件或協力廠商元件新增至這個索引標籤。如需詳細資訊，請參閱[如何：操作工具箱索引標籤](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
   
  若要顯示這個索引標籤，請從 [檢視] 功能表中選取 [工具箱]。 在 [工具箱] 中，選取 [元件] 索引標籤。  

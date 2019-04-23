@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 571c010aa8b9cda1002a152ed2d528e22b1aa57e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7cb221715ef1c2a50bc60e1725db3b1d8721f165
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865784"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083020"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>HOW TO：物件的資料填入文件
 
@@ -28,11 +28,11 @@ ms.locfileid: "54865784"
 
 您必須先完成三個基本步驟，才能將物件的資料填入文件：
 
--   將控制項加入可繫結到資料的文件。
+- 將控制項加入可繫結到資料的文件。
 
--   將資料物件加入文件。
+- 將資料物件加入文件。
 
--   將資料物件連接至 BindingSource。
+- 將資料物件連接至 BindingSource。
 
 ## <a name="to-add-a-data-object"></a>若要加入資料物件
 
@@ -48,23 +48,23 @@ ms.locfileid: "54865784"
 
 若要連接至 BindingSource 的資料物件：
 
-1.  將想要的資料欄位從 [資料來源]  視窗拖曳至您的文件。 這樣會自動建立控制項。
+1. 將想要的資料欄位從 [資料來源]  視窗拖曳至您的文件。 這樣會自動建立控制項。
 
-2.  在程式碼中，針對您為資料來源所選取的物件類型，建立執行個體。
+2. 在程式碼中，針對您為資料來源所選取的物件類型，建立執行個體。
 
-3.  將該執行個體指派給 <xref:System.Windows.Forms.BindingSource.DataSource%2A> 的 <xref:System.Windows.Forms.BindingSource>屬性。
+3. 將該執行個體指派給 <xref:System.Windows.Forms.BindingSource.DataSource%2A> 的 <xref:System.Windows.Forms.BindingSource>屬性。
 
 ### <a name="application-level-projects"></a>應用程式層級專案
 
 若要連接至 BindingSource 的資料物件：
 
-1.  在程式碼中，針對與資料來源相關聯的物件類型，建立執行個體。
+1. 在程式碼中，針對與資料來源相關聯的物件類型，建立執行個體。
 
-2.  建立 <xref:System.Windows.Forms.BindingSource>的執行個體。
+2. 建立 <xref:System.Windows.Forms.BindingSource>的執行個體。
 
-3.  將該資料來源執行個體指派給 <xref:System.Windows.Forms.BindingSource.DataSource%2A> 的 <xref:System.Windows.Forms.BindingSource>屬性。
+3. 將該資料來源執行個體指派給 <xref:System.Windows.Forms.BindingSource.DataSource%2A> 的 <xref:System.Windows.Forms.BindingSource>屬性。
 
-4.  將資料來源做為資料繫結加入控制項中。
+4. 將資料來源做為資料繫結加入控制項中。
 
 ## <a name="see-also"></a>另請參閱
 

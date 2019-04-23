@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a3619e911ffcf730012ee26d26783b6a7596704
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 04f6c78f3733bbc8aab3aec5811f1eb643ecca4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943352"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056610"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>HOW TO：與 ClickOnce 應用程式一起安裝必要軟體
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,31 +41,31 @@ ms.locfileid: "58943352"
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>若要指定要使用 ClickOnce 應用程式安裝的必要條件  
   
-1.  選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
+1. 選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
   
-2.  選取 **發佈**窗格。  
+2. 選取 **發佈**窗格。  
   
-3.  按一下 **必要條件** 按鈕以開啟**必要條件** 對話方塊。  
+3. 按一下 **必要條件** 按鈕以開啟**必要條件** 對話方塊。  
   
-4.  在 [ **必要條件** ] 對話方塊中，確定已選取 [ **建立安裝程式以安裝必要條件元件** ] 核取方塊。  
+4. 在 [ **必要條件** ] 對話方塊中，確定已選取 [ **建立安裝程式以安裝必要條件元件** ] 核取方塊。  
   
-5.  在 **必要條件**清單中，檢查您想要安裝，然後按一下 元件**確定**。  
+5. 在 **必要條件**清單中，檢查您想要安裝，然後按一下 元件**確定**。  
   
      將封裝和發行您的應用程式以及選取的元件。  
   
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>若要指定不同的下載位置的必要條件  
   
-1.  選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
+1. 選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
   
-2.  選取 **發佈**窗格。  
+2. 選取 **發佈**窗格。  
   
-3.  按一下 **必要條件** 按鈕以開啟**必要條件** 對話方塊。  
+3. 按一下 **必要條件** 按鈕以開啟**必要條件** 對話方塊。  
   
-4.  在 [ **必要條件** ] 對話方塊中，確定已選取 [ **建立安裝程式以安裝必要條件元件** ] 核取方塊。  
+4. 在 [ **必要條件** ] 對話方塊中，確定已選取 [ **建立安裝程式以安裝必要條件元件** ] 核取方塊。  
   
-5.  在 **指定必要條件的安裝位置**區段中，選取**從下列位置下載必要條件**。  
+5. 在 **指定必要條件的安裝位置**區段中，選取**從下列位置下載必要條件**。  
   
-6.  從下拉式清單中，選取位置或輸入 URL、 檔案路徑或 FTP 位置，然後按一下 **[確定]。**  
+6. 從下拉式清單中，選取位置或輸入 URL、 檔案路徑或 FTP 位置，然後按一下 **[確定]。**  
   
     > [!NOTE]
     >  您必須確定在安裝程式指定的元件存在於指定的位置。  

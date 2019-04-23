@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 11febf99dc411d50ee94e003515bfa6581591b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678861"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648443"
 ---
 # <a name="getting-started-with-python"></a>開始使用 Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,7 @@ Python 是受歡迎的程式設計語言，可由許多大學、 科學家、 �
 若要深入了解語言，著手[適用於初學者的 Python](https://www.python.org/about/gettingstarted/) python.org 上。
 
 若要安裝 Python，請瀏覽[ https://www.python.org/download/ ](https://www.python.org/download/)。
- 
-  
+
 ## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
   
 Python Tools for Visual Studio 中，您可以從安裝[visualstudio.com](https://www.visualstudio.com/explore/python-vs)，提供下列功能：  
@@ -63,7 +62,6 @@ Python Tools for Visual Studio 中，您可以從安裝[visualstudio.com](https:
 - [快速入門及深度剖析影片 (英文)](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
 - 安裝和功能示範 （27 分鐘）] (https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [文件](https://github.com/Microsoft/PTVS/wiki)  
-
 
 請注意，Visual Studio 不在目前提供方法來建立獨立的可執行檔使用 Python，這基本上表示內嵌的 Python 解譯器的程式。 不過，若要這樣做，Python 社群中提供多種方式，如 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 中所述。 CPython 也支援在原生的應用程式中內嵌，如[使用 CPython 可內嵌的 Zip 檔案](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)部落格文章中所述。
   
@@ -91,11 +89,11 @@ Azure SDK for Python 支援 Windows、Mac 和 Linux，可讓您更容易使用�
 
 建議您從[加州大學爾灣分校 (英文)](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack) 取得 IPython 和科學運算程式庫 (Matplotlib、Scipy、Numpy 等等)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 
-[PTVS 快速入門：設定 Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[PTVS 快速入門：開始撰寫程式碼 (專案)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[PTVS 快速入門：編輯程式碼](../python/getting-started-with-ptvs-editing-code.md)
-[Getting Started with PTVS: Debugging](../python/getting-started-with-ptvs-debugging.md)
-[PTVS 快速入門：互動式 Python](../python/getting-started-with-ptvs-interactive-python.md)
-[開始使用 PTVS：在 Azure 建置網站](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[Ptvs 快速入門：設定 Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[ptvs 快速入門：開始撰寫程式碼 （專案）](../python/getting-started-with-ptvs-start-coding-projects.md)
+[ptvs 快速入門：編輯程式碼](../python/getting-started-with-ptvs-editing-code.md)
+[ptvs 快速入門：偵錯](../python/getting-started-with-ptvs-debugging.md)
+[ptvs 快速入門：互動式 Python](../python/getting-started-with-ptvs-interactive-python.md)
+[ptvs 快速入門：在 Azure 建置網站](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

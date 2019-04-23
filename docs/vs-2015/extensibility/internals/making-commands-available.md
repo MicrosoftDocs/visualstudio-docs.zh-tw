@@ -13,21 +13,21 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f709786d908d5bfe4ef4db04916801a5cd6a7366
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071222"
 ---
 # <a name="making-commands-available"></a>提供可用的命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 當多個 Vspackage 加入至 Visual Studio 時，使用者介面 (UI) 可能會變得過擁擠，使用命令。 您可以設計您的套件，以協助減少此問題，如下：  
   
--   程式封裝，讓它在使用者時才會載入需要它。  
+- 程式封裝，讓它在使用者時才會載入需要它。  
   
--   程式封裝，使其命令才會顯示它們可能需要整合式的開發環境 (IDE) 的目前狀態的內容中。  
+- 程式封裝，使其命令才會顯示它們可能需要整合式的開發環境 (IDE) 的目前狀態的內容中。  
   
 ## <a name="delayed-loading"></a>延遲載入  
  若要啟用的一般方式延遲載入是設計的 VSPackage，讓其命令會顯示在 UI 中，但直到使用者按一下其中一個命令，將不載入封裝本身。 若要這麼做，在.vsct 檔案中，建立不有任何命令旗標的命令。  
@@ -94,11 +94,11 @@ ms.locfileid: "58944843"
 ### <a name="custom-context-guids"></a>自訂內容的 Guid  
  如果未定義的 GUID 不適當的命令內容中，您可以定義在 VSPackage 中，並再進行程式設計，讓它成為作用中或非使用中，視需要控制命令的可見性。 使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服務：  
   
--   註冊內容的 Guid (藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>方法)。  
+- 註冊內容的 Guid (藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>方法)。  
   
--   取得內容的狀態`GUID`(藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法)。  
+- 取得內容的狀態`GUID`(藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法)。  
   
--   開啟內容`GUID`s 開啟和關閉 (藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法)。  
+- 開啟內容`GUID`s 開啟和關閉 (藉由呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法)。  
   
     > [!CAUTION]
     >  請確定，VSPackage 不會影響任何現有內容 GUID 的狀態因為其他 Vspackage 可能取決於它們。  

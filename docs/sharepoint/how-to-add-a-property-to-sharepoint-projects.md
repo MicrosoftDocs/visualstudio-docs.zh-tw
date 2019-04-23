@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51f4aeef55d20a728567b50e67c2232a0a77b1e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a6f1ecd427b1c715649bc2118be5ab384a74c585
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084306"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>HOW TO：將屬性加入至 SharePoint 專案
   若要將屬性加入至任何 SharePoint 專案，您可以使用專案擴充功能。 屬性會出現在**屬性**視窗中選取專案時**方案總管 中**。
@@ -28,11 +28,11 @@ ms.locfileid: "56646053"
 
 ### <a name="to-add-a-property-to-a-sharepoint-project"></a>若要將屬性加入至 SharePoint 專案
 
-1.  定義具有公用的屬性，表示您要新增至 SharePoint 專案的屬性的類別。 如果您想要新增多個屬性，您可以在相同類別中，或在不同的類別中定義的所有屬性。
+1. 定義具有公用的屬性，表示您要新增至 SharePoint 專案的屬性的類別。 如果您想要新增多個屬性，您可以在相同類別中，或在不同的類別中定義的所有屬性。
 
-2.  在 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法您<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>實作、 控制代碼<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件*projectService*參數。
+2. 在 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法您<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>實作、 控制代碼<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件*projectService*參數。
 
-3.  中的事件處理常式<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件，將您的內容類別的執行個體<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A>事件引數參數的集合。
+3. 中的事件處理常式<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件，將您的內容類別的執行個體<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A>事件引數參數的集合。
 
 ## <a name="example"></a>範例
  下列程式碼範例示範如何將兩個屬性新增至 SharePoint 專案。 一個屬性其資料保存在專案使用者選項檔 ( *.csproj.user*檔案或 *.vbproj.user*檔案)。 另一個屬性其資料保存在專案檔 (*.csproj*檔案或 *.vbproj*檔案)。
@@ -54,28 +54,28 @@ ms.locfileid: "56646053"
 ### <a name="specify-the-behavior-of-custom-properties"></a>指定自訂屬性的行為
  您可以定義自訂屬性如何顯示和行為**屬性**藉由套用屬性 視窗<xref:System.ComponentModel>屬性定義的命名空間。 下列屬性可用於許多案例：
 
--   <xref:System.ComponentModel.DisplayNameAttribute>：指定出現在屬性名稱**屬性**視窗。
+- <xref:System.ComponentModel.DisplayNameAttribute>：指定出現在屬性名稱**屬性**視窗。
 
--   <xref:System.ComponentModel.DescriptionAttribute>：指定描述字串出現在底部**屬性**時選取屬性 視窗。
+- <xref:System.ComponentModel.DescriptionAttribute>：指定描述字串出現在底部**屬性**時選取屬性 視窗。
 
--   <xref:System.ComponentModel.DefaultValueAttribute>：指定屬性的預設值。
+- <xref:System.ComponentModel.DefaultValueAttribute>：指定屬性的預設值。
 
--   <xref:System.ComponentModel.TypeConverterAttribute>：指定會顯示在字串之間的自訂轉換**屬性**視窗而非字串屬性值。
+- <xref:System.ComponentModel.TypeConverterAttribute>：指定會顯示在字串之間的自訂轉換**屬性**視窗而非字串屬性值。
 
--   <xref:System.ComponentModel.EditorAttribute>：指定自訂編輯器，以便用來修改屬性。
+- <xref:System.ComponentModel.EditorAttribute>：指定自訂編輯器，以便用來修改屬性。
 
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要參考下列組件：
 
--   Microsoft.VisualStudio.SharePoint
--
--   Microsoft.VisualStudio.Shell
--
--   Microsoft.VisualStudio.Shell.Interop
--
--   Microsoft.VisualStudio.Shell.Interop.8.0
--
--   System.ComponentModel.Composition
+- Microsoft.VisualStudio.SharePoint
+
+- Microsoft.VisualStudio.Shell
+
+- Microsoft.VisualStudio.Shell.Interop
+
+- Microsoft.VisualStudio.Shell.Interop.8.0
+
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>部署擴充功能
  若要部署的延伸模組，建立[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件和任何其他您想要將副檔名的檔案。 如需詳細資訊，請參閱 <<c0> [ 部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。

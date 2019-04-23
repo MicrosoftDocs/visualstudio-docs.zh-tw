@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7817454cc2c5789975e064dec7a58d8e857a145
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fafeeb386e1dd40067620d529cb25023d3f0f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939592"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087933"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>HOW TO：指定部署更新的替代位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ ms.locfileid: "58939592"
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>使用 MageUI.exe （Windows Form 為基礎的公用程式） 來指定更新的替代位置  
   
-1.  開啟.NET Framework 命令提示字元並輸入：  
+1. 開啟.NET Framework 命令提示字元並輸入：  
   
      **mageui.exe**  
   
-2.  在 **檔案**功能表上，選擇**開啟**開啟您的應用程式部署資訊清單。  
+2. 在 **檔案**功能表上，選擇**開啟**開啟您的應用程式部署資訊清單。  
   
-3.  選取 [部署選項] 索引標籤。  
+3. 選取 [部署選項] 索引標籤。  
   
-4.  在文字方塊中名為**啟動位置**，將會包含應用程式更新的部署資訊清單的目錄中輸入的 URL。  
+4. 在文字方塊中名為**啟動位置**，將會包含應用程式更新的部署資訊清單的目錄中輸入的 URL。  
   
-5.  儲存部署資訊清單。  
+5. 儲存部署資訊清單。  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>使用 Mage.exe 來指定更新的替代位置  
   
-1.  開啟 [.NET Framework 命令提示字元]。  
+1. 開啟 [.NET Framework 命令提示字元]。  
   
-2.  設定使用下列命令更新的位置。 在此範例中， **HelloWorld.exe.application**是通往您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式資訊清單，其一律.application 副檔名，和**http://adatum.com/Update/Path**是 URL 該[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]會檢查應用程式更新。  
+2. 設定使用下列命令更新的位置。 在此範例中， **HelloWorld.exe.application**是通往您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式資訊清單，其一律.application 副檔名，和**http://adatum.com/Update/Path**是 URL 該[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]會檢查應用程式更新。  
   
      **Mage -Update HelloWorld.exe.application -ProviderUrl http://adatum.com/Update/Path**  
   
-3.  儲存檔案。  
+3. 儲存檔案。  
   
     > [!NOTE]
     >  您現在需要重新簽署 Mage.exe 副檔名。 如需詳細資訊，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  

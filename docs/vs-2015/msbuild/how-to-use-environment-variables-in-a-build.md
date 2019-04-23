@@ -1,5 +1,5 @@
 ---
-title: 如何：在組建中使用環境變數 | Microsoft Docs
+title: HOW TO：在組建中使用環境變數 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf043fbaac2e718b108920a61026378545fa5a95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 40b296e33d00e6abf6730c7ec29a1fe9ed8e039b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780969"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067985"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>如何：在組建中使用環境變數
+# <a name="how-to-use-environment-variables-in-a-build"></a>HOW TO：在組建中使用環境變數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 當您建置專案時，通常需要使用專案檔或構成專案之檔案中沒有的資源來設定組建選項。 此資訊通常會儲存於環境變數中。  
   
 ## <a name="referencing-environment-variables"></a>參考環境變數  
@@ -42,7 +41,7 @@ ms.locfileid: "54780969"
   
 #### <a name="to-provide-a-default-value-for-a-property"></a>提供屬性的預設值  
   
--   只有當屬性 (Property) 沒有任何值，才能在屬性 (Property) 上使用 `Condition` 屬性 (Attribute) 來設定值。 例如，下列程式碼只有在未設定 `ToolsPath` 環境變數時，才會將 `ToolsPath` 屬性設為 c:\tools：  
+- 只有當屬性 (Property) 沒有任何值，才能在屬性 (Property) 上使用 `Condition` 屬性 (Attribute) 來設定值。 例如，下列程式碼只有在未設定 `ToolsPath` 環境變數時，才會將 `ToolsPath` 屬性設為 c:\tools：  
   
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`  
   
@@ -66,10 +65,10 @@ ms.locfileid: "54780969"
 </Project>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 
 [MSBuild](msbuild.md)
 
 [MSBuild 屬性](../msbuild/msbuild-properties1.md)
 
-[如何：使用不同選項來建置相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[如何：建置使用不同的選項相同的原始程式檔](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

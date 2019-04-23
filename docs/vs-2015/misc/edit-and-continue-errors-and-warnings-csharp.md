@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 36d2665eef36e0e233cf02d241f550f3e701800f
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58941465"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085081"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>編輯後繼續的錯誤和警告 (C#)
 您對程式碼中某個區段進行的編輯，是 Visual C# [編輯後繼續] 不允許的編輯動作。  
@@ -79,11 +79,11 @@ ms.locfileid: "58941465"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-1.  從 [ **偵錯** ] 功能表上選擇 [ **復原** ]，復原變更。  
+1. 從 [ **偵錯** ] 功能表上選擇 [ **復原** ]，復原變更。  
   
      -或-  
   
-2.  停止偵錯工作階段，進行編輯，然後開始新的偵錯工作階段。  
+2. 停止偵錯工作階段，進行編輯，然後開始新的偵錯工作階段。  
   
 ## <a name="see-also"></a>另請參閱  
  [編輯後繼續 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

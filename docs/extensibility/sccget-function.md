@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e74de898bb9e7810729a0895834f7cdfe5ee5984
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691302"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044489"
 ---
 # <a name="sccget-function"></a>SccGet 函式
 此函式會擷取一或多個檔案，來檢視和編譯，但不是用於編輯的複本。 在大部分的系統中，檔案會標記為唯讀。
@@ -90,21 +90,21 @@ SCCRTN SccGet(
 
  有兩種方式可解決本機快取的原始檔控制版本會與原始檔控制資料庫不同步變成這種情況：
 
-1.  不允許重新命名目前已簽出原始檔控制資料庫中的檔案。
+1. 不允許重新命名目前已簽出原始檔控制資料庫中的檔案。
 
-2.  執行 「 刪除舊 」 後面接著 「 新增 」 的對等項目。 下列演算法是一種方式完成這項作業。
+2. 執行 「 刪除舊 」 後面接著 「 新增 」 的對等項目。 下列演算法是一種方式完成這項作業。
 
-    1.  呼叫[SccQueryChanges](../extensibility/sccquerychanges-function.md)函式，以了解重新命名*a.txt*來*b.txt*原始檔控制資料庫中。
+    1. 呼叫[SccQueryChanges](../extensibility/sccquerychanges-function.md)函式，以了解重新命名*a.txt*來*b.txt*原始檔控制資料庫中。
 
-    2.  重新命名本機*a.txt*要*b.txt*。
+    2. 重新命名本機*a.txt*要*b.txt*。
 
-    3.  呼叫`SccGet`函式兩者*a.txt*並*b.txt*。
+    3. 呼叫`SccGet`函式兩者*a.txt*並*b.txt*。
 
-    4.  因為*a.txt*不存在的本機版本快取清除遺漏的原始檔控制資料庫中，在*a.txt*版本資訊。
+    4. 因為*a.txt*不存在的本機版本快取清除遺漏的原始檔控制資料庫中，在*a.txt*版本資訊。
 
-    5.  *B.txt*簽出的檔案會本機內容與合併*b.txt*檔案。
+    5. *B.txt*簽出的檔案會本機內容與合併*b.txt*檔案。
 
-    6.  已更新*b.txt*檔案現在簽入。
+    6. 已更新*b.txt*檔案現在簽入。
 
 ## <a name="see-also"></a>另請參閱
 - [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

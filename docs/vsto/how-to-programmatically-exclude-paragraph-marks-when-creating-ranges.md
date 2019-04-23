@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be8f9e7715fd06f4f5da17d951dd0c4f4ee58f01
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3362404fab0777202407aa47fea7e3d8c3044b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603764"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056220"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>HOW TO：以程式設計方式排除段落標記建立範圍時
   每當您根據段落建立 <xref:Microsoft.Office.Interop.Word.Range> 物件時，所有的非列印字元 (如段落標記) 都會包含在範圍中。 您可以將文字從來源段落插入目的段落。 如果您不想將目的段落分割成個別段落，則必須先移除來源段落的段落標記。 此外，因為段落格式化資訊儲存在段落標記內，所以在將範圍插入現有段落時，您可能不想包含該資訊。
@@ -31,7 +31,7 @@ ms.locfileid: "56603764"
 
 ## <a name="to-control-paragraph-structure-when-inserting-text"></a>若要在插入文字時控制段落結構
 
-1.  針對第一和第二個段落建立兩個範圍變數，然後使用 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> 屬性擷取其內容。
+1. 針對第一和第二個段落建立兩個範圍變數，然後使用 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> 屬性擷取其內容。
 
      下列程式碼範例可用於文件層級自訂。
 
@@ -43,32 +43,32 @@ ms.locfileid: "56603764"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#27)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#27](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#27)]
 
-2.  指派 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> 屬性，並將這兩個段落的文字互換。
+2. 指派 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> 屬性，並將這兩個段落的文字互換。
 
      [!code-vb[Trin_VstcoreWordAutomation#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#28)]
      [!code-csharp[Trin_VstcoreWordAutomation#28](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#28)]
 
-3.  依次選取每個範圍並暫停，以在訊息方塊中顯示結果。
+3. 依次選取每個範圍並暫停，以在訊息方塊中顯示結果。
 
      [!code-vb[Trin_VstcoreWordAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#29)]
      [!code-csharp[Trin_VstcoreWordAutomation#29](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#29)]
 
-4.  使用 `firstRange` 方法調整 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> ，讓段落標記不再是 `firstRange`的一部分。
+4. 使用 `firstRange` 方法調整 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> ，讓段落標記不再是 `firstRange`的一部分。
 
      [!code-vb[Trin_VstcoreWordAutomation#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#30)]
      [!code-csharp[Trin_VstcoreWordAutomation#30](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#30)]
 
-5.  取代第一段中的其餘文字，指派新字串給該範圍的 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> 屬性。
+5. 取代第一段中的其餘文字，指派新字串給該範圍的 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> 屬性。
 
      [!code-vb[Trin_VstcoreWordAutomation#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#31)]
      [!code-csharp[Trin_VstcoreWordAutomation#31](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#31)]
 
-6.  取代 `secondRange`中的文字，包括段落標記。
+6. 取代 `secondRange`中的文字，包括段落標記。
 
      [!code-vb[Trin_VstcoreWordAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#32)]
      [!code-csharp[Trin_VstcoreWordAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#32)]
 
-7.  選取 `firstRange` 並暫停，以在訊息方塊中顯示結果，然後對 `secondRange`執行同樣的動作。
+7. 選取 `firstRange` 並暫停，以在訊息方塊中顯示結果，然後對 `secondRange`執行同樣的動作。
 
      因為已重新定義 `firstRange` 來排除段落標記，所以會保留段落的原始格式。 不過， `secondRange`中的段落標記上插入了句子，所以移除了個別段落。
 
@@ -77,7 +77,7 @@ ms.locfileid: "56603764"
 
      這兩個範圍的原始內容都儲存為字串，所以您可以將文件還原成原始狀態。
 
-8.  重新調整`firstRange`若要使用包含段落標記<xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A>一個字元位置的方法。
+8. 重新調整`firstRange`若要使用包含段落標記<xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A>一個字元位置的方法。
 
      [!code-vb[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#34)]
      [!code-csharp[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#34)]
@@ -101,7 +101,7 @@ ms.locfileid: "56603764"
 
 ### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>若要在文件層級自訂中插入文字時控制段落結構
 
-1.  下列範例顯示文件層級自訂的完整方法。 若要使用此程式碼，請從專案的 `ThisDocument` 類別中執行它。
+1. 下列範例顯示文件層級自訂的完整方法。 若要使用此程式碼，請從專案的 `ThisDocument` 類別中執行它。
 
      [!code-vb[Trin_VstcoreWordAutomation#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#26)]
      [!code-csharp[Trin_VstcoreWordAutomation#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#26)]
@@ -110,7 +110,7 @@ ms.locfileid: "56603764"
 
 ### <a name="to-control-paragraph-structure-when-inserting-text-in-a-vsto-add-in"></a>若要在 VSTO 增益集中插入文字時控制段落結構
 
-1.  下列範例顯示 VSTO 增益集的完整方法。 若要使用此程式碼，請從專案的 `ThisAddIn` 類別中執行它。
+1. 下列範例顯示 VSTO 增益集的完整方法。 若要使用此程式碼，請從專案的 `ThisAddIn` 類別中執行它。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#26)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]

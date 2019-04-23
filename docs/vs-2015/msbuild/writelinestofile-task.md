@@ -19,23 +19,22 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b25318a9b453ee9f9b05b22e7130555b5a14d556
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f530648c7dd772fb60148f4d755d4a4ffb420cbb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760137"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655132"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 將所指定項目的路徑寫入至指定的文字檔。  
   
 ## <a name="task-parameters"></a>工作參數  
  下表說明 `WriteLinestoFile` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`File`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要寫入項目的檔案。|  
 |`Lines`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要寫入至檔案的項目。|  

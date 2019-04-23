@@ -12,50 +12,50 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6adfc19d16e13449dd673ca7722781f16b4b6cb
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 600cae730cacad4f54433b8179b97eb131a64fab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076103"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 這個逐步解說會示範如何使用 app.config 檔案中所定義的資料來源來進行單元測試。 您會學到如何建立 app.config 檔案，它會定義 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別可以使用的資料來源。 本逐步解說將說明的工作包括下列項目：  
   
--   建立 app.config 檔案。  
+- 建立 app.config 檔案。  
   
--   定義自訂組態區段。  
+- 定義自訂組態區段。  
   
--   定義連接字串。  
+- 定義連接字串。  
   
--   定義資料來源。  
+- 定義資料來源。  
   
--   使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別存取資料來源。  
+- 使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別存取資料來源。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要完成這個逐步解說，您將需要：  
   
--   Visual Studio 企業版  
+- Visual Studio 企業版  
   
--   Microsoft Access 或 Microsoft Excel，以便提供至少其中一種測試方法的資料。  
+- Microsoft Access 或 Microsoft Excel，以便提供至少其中一種測試方法的資料。  
   
--   包含測試專案的 Microsoft Visual Studio 2010 方案。  
+- 包含測試專案的 Microsoft Visual Studio 2010 方案。  
   
 ## <a name="create-the-appconfig-file"></a>建立 App.config 檔案  
   
 #### <a name="to-add-an-appconfig-file-to-the-project"></a>若要在專案中加入 app.config 檔案  
   
-1.  如果您的測試專案中已經有 app.config 檔案，請移至[定義自訂組態區段](#DefineCustomConfigurationSection)。  
+1. 如果您的測試專案中已經有 app.config 檔案，請移至[定義自訂組態區段](#DefineCustomConfigurationSection)。  
   
-2.  在方案總管中，以滑鼠右鍵按一下您的測試專案，並指向 [新增]，然後按一下 [新增項目]。  
+2. 在方案總管中，以滑鼠右鍵按一下您的測試專案，並指向 [新增]，然後按一下 [新增項目]。  
   
      [新增項目] 視窗隨即開啟。  
   
-3.  選取 [應用程式組態檔] 範本，然後按一下 [新增]。  
+3. 選取 [應用程式組態檔] 範本，然後按一下 [新增]。  
   
-##  <a name="DefineCustomConfigurationSection"></a> 定義自訂組態區段  
+## <a name="DefineCustomConfigurationSection"></a> 定義自訂組態區段  
  檢查 app.config 檔。 這個檔案至少會包含 XML 宣告和一個根項目。  
   
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>若要將自訂組態區段加入 app.config 檔案  
@@ -80,11 +80,11 @@ ms.locfileid: "54835117"
   
 #### <a name="to-define-connection-strings"></a>若要定義連接字串  
   
-1.  在 `configSections` 項目之後，建立 `connectionStrings` 項目。  
+1. 在 `configSections` 項目之後，建立 `connectionStrings` 項目。  
   
-2.  在 `connectionStrings` 項目內，建立兩個 `add` 項目。  
+2. 在 `connectionStrings` 項目內，建立兩個 `add` 項目。  
   
-3.  在第一個 `add` 項目中建立下列屬性和值，以連接至 Microsoft Access 資料庫：  
+3. 在第一個 `add` 項目中建立下列屬性和值，以連接至 Microsoft Access 資料庫：  
   
 |屬性|值|  
 |---------------|------------|  
@@ -124,13 +124,13 @@ ms.locfileid: "54835117"
   
 #### <a name="to-define-data-sources"></a>若要定義資料來源  
   
-1.  在 `connectionStrings` 項目之後，建立 `microsoft.visualstudio.testtools` 項目。 這個區段會建立在「定義自訂組態區段」中。  
+1. 在 `connectionStrings` 項目之後，建立 `microsoft.visualstudio.testtools` 項目。 這個區段會建立在「定義自訂組態區段」中。  
   
-2.  在 `microsoft.visualstudio.testtools` 項目中建立 `dataSources` 項目。  
+2. 在 `microsoft.visualstudio.testtools` 項目中建立 `dataSources` 項目。  
   
-3.  在 `dataSources` 項目內，建立兩個 `add` 項目。  
+3. 在 `dataSources` 項目內，建立兩個 `add` 項目。  
   
-4.  在第一個 `add` 項目中建立下列屬性和值，以供 Microsoft Access 資料來源使用：  
+4. 在第一個 `add` 項目中建立下列屬性和值，以供 Microsoft Access 資料來源使用：  
   
 |屬性|值|  
 |---------------|------------|  
@@ -183,45 +183,45 @@ ms.locfileid: "54835117"
 ## <a name="create-a-unit-test-using-data-sources-defined-in-appconfig"></a>使用 app.config 中所定義的資料來源建立單元測試  
  現在 app.config 檔案已經定義完成，您將建立單元測試，此單位測試會使用 app.config 檔案中所定義之資料來源中的資料。 在這個章節中，您將執行下列項目：  
   
--   建立在 app.config 檔案中找到的資料來源。  
+- 建立在 app.config 檔案中找到的資料來源。  
   
--   使用兩個測試方法中的資料來源，它們會比較每個資料來源中的值。  
+- 使用兩個測試方法中的資料來源，它們會比較每個資料來源中的值。  
   
 #### <a name="to-create-a-microsoft-access-data-source"></a>若要建立 Microsoft Access 資料來源  
   
-1.  建立名為 `testdatasource.accdb` 的 Microsoft Access 資料庫。  
+1. 建立名為 `testdatasource.accdb` 的 Microsoft Access 資料庫。  
   
-2.  在 `testdatasource.accdb` 中建立資料表，並將它命名為 `MyDataTable`。  
+2. 在 `testdatasource.accdb` 中建立資料表，並將它命名為 `MyDataTable`。  
   
-3.  使用 `Number` 資料型別，在 `MyDataTable` 中建立兩個名為 `Arg1` 和 `Arg2` 的欄位。  
+3. 使用 `Number` 資料型別，在 `MyDataTable` 中建立兩個名為 `Arg1` 和 `Arg2` 的欄位。  
   
-4.  在 `MyDataTable` 中加入五個實體，分別使用下列的值做為 `Arg1` 和 `Arg2` 的值：(10,50)、(3,2)、(6,0)、(0,8) 和 (12312,1000)。  
+4. 在 `MyDataTable` 中新增五個實體，分別使用下列值作為 `Arg1` 和 `Arg2` 的值：(10,50)、(3,2)、(6,0)、(0,8) 和 (12312,1000)。  
   
-5.  儲存並關閉資料庫。  
+5. 儲存並關閉資料庫。  
   
-6.  變更連接字串以指向此資料庫的位置。 變更 `Data Source` 的值，使其反映資料庫的位置。  
+6. 變更連接字串以指向此資料庫的位置。 變更 `Data Source` 的值，使其反映資料庫的位置。  
   
 #### <a name="to-create-a-microsoft-excel-data-source"></a>若要建立 Microsoft Excel 資料來源  
   
-1.  建立名為 `data.xlsx` 的 Microsoft Excel 試算表。  
+1. 建立名為 `data.xlsx` 的 Microsoft Excel 試算表。  
   
-2.  建立名為 `Sheet1` 的工作表 (如果 `data.xlsx` 中尚無這個工作表)。  
+2. 建立名為 `Sheet1` 的工作表 (如果 `data.xlsx` 中尚無這個工作表)。  
   
-3.  在 `Sheet1` 中建立兩個資料行標頭，分別命名為 `Val1` 和 `Val2`。  
+3. 在 `Sheet1` 中建立兩個資料行標頭，分別命名為 `Val1` 和 `Val2`。  
   
-4.  在 `Sheet1` 中加入五個實體，分別使用下列的值做為 `Val1` 和 `Val2` 的值：(1,1)、(2,2)、(3,3)、(4,4) 和 (5,0)。  
+4. 在 `Sheet1` 中新增五個實體，分別使用下列的值作為 `Val1` 和 `Val2` 的值：(1,1)、(2,2)、(3,3)、(4,4) 和 (5,0)。  
   
-5.  儲存並關閉試算表。  
+5. 儲存並關閉試算表。  
   
-6.  變更連接字串以指向此試算表的位置。 變更 `dbq` 的值，使其反映試算表的位置。  
+6. 變更連接字串以指向此試算表的位置。 變更 `dbq` 的值，使其反映試算表的位置。  
   
 #### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>若要使用 app.config 中所定義的資料來源建立單元測試  
   
-1.  在測試專案中加入單元測試。  
+1. 在測試專案中加入單元測試。  
   
      如需詳細資訊，請參閱[針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)。  
   
-2.  以下列程式碼取代自動產生的單元測試內容：  
+2. 以下列程式碼取代自動產生的單元測試內容：  
   
     ```  
     using System;  
@@ -261,14 +261,14 @@ ms.locfileid: "54835117"
     }  
     ```  
   
-3.  檢查 DataSource 屬性。 請注意 app.config 檔案的設定名稱。  
+3. 檢查 DataSource 屬性。 請注意 app.config 檔案的設定名稱。  
   
-4.  建置您的方案，然後執行 MyTestMethod 和 MyTestMethod2 測試。  
+4. 建置您的方案，然後執行 MyTestMethod 和 MyTestMethod2 測試。  
   
 > [!IMPORTANT]
 >  部署項目 (例如資料來源)，使其能供部署目錄中的測試存取。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [對程式碼進行單元測試](../test/unit-test-your-code.md)   
  [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [測試應用程式](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   

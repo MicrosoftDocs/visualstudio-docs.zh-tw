@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e392947f86a1adab92289934632dd393f4ff24ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620989"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651282"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>將項目新增至 [加入新項目] 對話方塊
 加入項目至的程序**加入新項目**對話方塊開頭的登錄機碼。 下列登錄項目中所示**AddItemTemplates**一節包含可在哪一個項目中的目錄名稱與路徑**加入新項目**放 對話方塊。
@@ -34,7 +34,6 @@ ms.locfileid: "56620989"
  **TemplatesDir** = \\&lt;Visual Studio SDK 安裝路徑&gt;\\VSIntegration\\&lt;SomeFolder&gt; \\&lt;SomePackage&gt;\\&lt;SomeProject&gt;\\&lt;SomeProjectItems&gt;
 
  **SortPriority** = dword:00000064
-
 
 | 名稱 | 類型 | 資料 (從 *.rgs*檔案) | 描述 |
 |------------------|-----------| - | - |

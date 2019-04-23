@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 29d4ee5455a05bfac98debc2f6ebdbb06b813f31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059847"
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
   
  請注意，大部分的圖表類型都可以用於其他用途。 如需圖表類型的概觀，請參閱 <<c0> [ 建立應用程式模型](../modeling/create-models-for-your-app.md)。 如需繪製圖表的基本資訊，請參閱[編輯 UML 模型和圖表](../modeling/edit-uml-models-and-diagrams.md)。  
   
-##  <a name="UseCases"></a> 描述如何使用您的系統  
+## <a name="UseCases"></a> 描述如何使用您的系統  
  建立使用案例圖，以描述系統使用者和其系統用途。 使用案例代表系統使用者的目標，以及他們執行以達到目標的程序。  
   
  例如，線上餐點銷售系統必須允許客人從菜單選擇品項，而且必須允許供應餐廳更新菜單。 您可以在使用案例圖中彙整這項資訊：  
@@ -93,7 +93,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 |使用案例圖上的項目|[UML 使用案例圖表：參考](../modeling/uml-use-case-diagrams-reference.md)|  
 |如何透過使用案例開發程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="RequirementsClasses"></a> 定義用來描述需求的詞彙  
+## <a name="RequirementsClasses"></a> 定義用來描述需求的詞彙  
  您可以使用 UML 類別圖，協助您開發用於下列用途之商務概念的一致詞彙：  
   
 - 由使用者自行討論系統運作的商務。  
@@ -140,10 +140,10 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
   
  在概念性類別圖中，通常不適合將箭號放在關聯上來代表巡覽性。 原因是圖表不代表實作。 關聯代表真實世界物件之間的關聯性。 下列[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]延伸模組會將非方向性箭號的預設值：[範例：UML 網域模型功能](http://go.microsoft.com/fwlink/?LinkId=213849)。  
   
-##  <a name="BusinessRules"></a> Showing Business Rules  
+## <a name="BusinessRules"></a> Showing Business Rules  
  商務規則是未與特定使用案例相關聯的需求，而且應該會在系統中觀察到。  
   
- 許多商務規則是概念性類別間之關聯性的條件約束。 您可以撰寫這些*靜態商務規則*做為概念性類別圖上的相關類別相關聯的註解。 例如：  
+ 許多商務規則是概念性類別間之關聯性的條件約束。 您可以撰寫這些*靜態商務規則*做為概念性類別圖上的相關類別相關聯的註解。 例如:   
   
  ![附加至 Order 類別的註解的規則。](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")  
   
@@ -161,7 +161,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 |概念性類別圖上的項目|[UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)|  
 |如何開發遵守商務規則的程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
  有數種類別的服務需求品質。 包括下列各項：  
   
 - 效能  
@@ -185,14 +185,14 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 |將其他文件附加至使用案例|[將使用案例連結到文件與圖表](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |如何開發遵守服務需求品質的程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Workflow"></a> 顯示使用者與系統之間的工作流程  
+## <a name="Workflow"></a> 顯示使用者與系統之間的工作流程  
  您可以使用活動圖示範不同使用案例之間的工作流程。 繪製示範使用者在系統內外部所執行之主要工作的活動圖，這十分適用於開始需求模型。  
   
- 例如：  
+ 例如:   
   
  ![三個動作和一個迴圈的活動。](../modeling/media/uc-reqmwfact.png "UC_ReqmWFAct")  
   
- 您可以繪製使用案例圖和活動圖來顯示相同資訊的不同檢視。  使用案例圖可以更有效地顯示較大活動中較小動作的巢狀結構，但不會顯示工作流程。 例如：  
+ 您可以繪製使用案例圖和活動圖來顯示相同資訊的不同檢視。  使用案例圖可以更有效地顯示較大活動中較小動作的巢狀結構，但不會顯示工作流程。 例如:   
   
  ![前述動作的使用案例](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")  
   
@@ -206,7 +206,7 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 |活動圖上的項目|[UML 活動圖表：參考](../modeling/uml-activity-diagrams-reference.md)|  
 |如何透過活動圖開發程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Sequences"></a> 顯示使用者與系統之間的互動  
+## <a name="Sequences"></a> 顯示使用者與系統之間的互動  
  您可以使用循序圖來示範系統與外部行動之間或系統不同組件之間的訊息交換。 這提供極清楚顯示互動序列的使用案例中步驟的檢視。 在使用案例中有數個互動方以及系統具有 API 的情況下，循序圖特別有用。  
   
  例如：  

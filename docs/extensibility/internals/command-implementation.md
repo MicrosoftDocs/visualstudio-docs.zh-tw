@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6b9776f94c802502bc393f2b8c262408d443e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f35521271df7d3f34e5f10ebf40d502c0f8596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089749"
 ---
 # <a name="command-implementation"></a>命令實作
 若要在 VSPackage 中實作的命令，您必須執行下列工作：
 
-1.  在  *.vsct*檔案、 設定命令群組，然後新增命令給它。 如需詳細資訊，請參閱 < [Visual Studio 命令表檔案 (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+1. 在  *.vsct*檔案、 設定命令群組，然後新增命令給它。 如需詳細資訊，請參閱 < [Visual Studio 命令表檔案 (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
-2.  向 Visual Studio 中的命令。
+2. 向 Visual Studio 中的命令。
 
-3.  實作命令。
+3. 實作命令。
 
 下列各節說明如何註冊及實作命令。
 
@@ -61,29 +61,29 @@ if ( null != mcs )
 ## <a name="querystatus-methods"></a>QueryStatus 方法
  如果您要實作其中一個<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>方法中，檢查的命令集命令所屬的 GUID 和命令的識別碼。 請遵循這些方針：
 
--   如果無法辨識的 GUID，這兩種方法的實作必須傳回<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>。
+- 如果無法辨識的 GUID，這兩種方法的實作必須傳回<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>。
 
--   如果您的任一種方法的實作可辨識的 GUID，但尚未實作命令，則這個方法應傳回<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>。
+- 如果您的任一種方法的實作可辨識的 GUID，但尚未實作命令，則這個方法應傳回<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>。
 
--   如果這兩種方法的實作會辨識 GUID 和命令，則方法應該設定的每個命令的命令旗標 欄位 (在`prgCmds`參數) 使用下列<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>旗標：
+- 如果這兩種方法的實作會辨識 GUID 和命令，則方法應該設定的每個命令的命令旗標 欄位 (在`prgCmds`參數) 使用下列<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>旗標：
 
-    -   `OLECMDF_SUPPORTED`：支援的命令。
+    - `OLECMDF_SUPPORTED`：支援的命令。
 
-    -   `OLECMDF_INVISIBLE`：此命令不應該為可見的。
+    - `OLECMDF_INVISIBLE`：此命令不應該為可見的。
 
-    -   `OLECMDF_LATCHED`：此命令為開並似乎已檢查。
+    - `OLECMDF_LATCHED`：此命令為開並似乎已檢查。
 
-    -   `OLECMDF_ENABLED`：此命令會啟用。
+    - `OLECMDF_ENABLED`：此命令會啟用。
 
-    -   `OLECMDF_DEFHIDEONCTXTMENU`：如果它出現在捷徑功能表上，則應隱藏命令。
+    - `OLECMDF_DEFHIDEONCTXTMENU`：如果它出現在捷徑功能表上，則應隱藏命令。
 
-    -   `OLECMDF_NINCHED`：命令是功能表控制站，而且不會啟用，但它的下拉式選單清單不是空的以及仍然可用。 （這個旗標是很少使用）。
+    - `OLECMDF_NINCHED`：命令是功能表控制站，而且不會啟用，但它的下拉式選單清單不是空的以及仍然可用。 （這個旗標是很少使用）。
 
--   如果命令已定義於 *.vsct*檔案中使用`TextChanges`旗標，請設定下列參數：
+- 如果命令已定義於 *.vsct*檔案中使用`TextChanges`旗標，請設定下列參數：
 
-    -   設定`rgwz`項目`pCmdText`新命令文字的參數。
+    - 設定`rgwz`項目`pCmdText`新命令文字的參數。
 
-    -   設定`cwActual`項目`pCmdText`命令字串的大小參數。
+    - 設定`cwActual`項目`pCmdText`命令字串的大小參數。
 
 此外，請確定目前的內容不是自動化函式中，除非處理自動化函式，而且特別適合您的命令。
 

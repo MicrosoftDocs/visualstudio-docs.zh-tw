@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dcd465ebef68a6627935b00438f6c218938eb3de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ec9dcc6f5458e33e5ea215d65aacd48c622f111
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629465"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051996"
 ---
 # <a name="architecture-of-document-level-customizations"></a>文件層級自訂的架構
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 包含的專案可以建立 Microsoft Office Word 和 Microsoft Office Excel 的文件層級自訂。 本主題描述文件層級自訂的下列各方面：
@@ -39,7 +39,7 @@ ms.locfileid: "56629465"
 
   如需建立文件層級自訂的一般資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)，[開始word的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-word.md)，並[開始使用適用於 Excel 的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-excel.md)。
 
-##  <a name="UnderstandingCustomizations"></a> 了解自訂
+## <a name="UnderstandingCustomizations"></a> 了解自訂
  當您使用 Visual Studio 中的 Office Developer Tools 建置文件層級自訂時，會建立與特定文件相關聯的 Managed 程式碼組件。 文件或活頁簿中若是有連結的組件就稱為具有 Managed 程式碼擴充。 如需詳細資訊，請參閱 <<c0> [ 設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)。
 
  當使用者開啟文件時，Microsoft Office 應用程式會載入組件。 載入組件之後，自訂就能回應開啟文件時的事件。 自訂還可以呼叫物件模型，以在開啟文件時自動化及擴充應用程式，而且它可以使用 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]中的任何類別。
@@ -57,18 +57,18 @@ ms.locfileid: "56629465"
 #### <a name="design-time"></a>設計階段
  設計階段體驗包含下列步驟：
 
-1.  開發人員在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中建立文件層級專案。 該專案會包含文件，以及在文件背後執行的組件。 文件可能已經存在 （由設計工具建立），或可以建立新的文件，以及專案。
+1. 開發人員在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中建立文件層級專案。 該專案會包含文件，以及在文件背後執行的組件。 文件可能已經存在 （由設計工具建立），或可以建立新的文件，以及專案。
 
-2.  設計人員 (建立專案的開發人員或其他人) 建立呈現給使用者的文件最終外觀與風格。
+2. 設計人員 (建立專案的開發人員或其他人) 建立呈現給使用者的文件最終外觀與風格。
 
 #### <a name="runtime"></a>執行階段
  執行階段體驗包含下列步驟：
 
-1.  使用者開啟具有 Managed 程式碼擴充的文件或活頁簿。
+1. 使用者開啟具有 Managed 程式碼擴充的文件或活頁簿。
 
-2.  文件或活頁簿載入已編譯的組件。
+2. 文件或活頁簿載入已編譯的組件。
 
-3.  組件回應使用者處理文件或活頁簿時的事件。
+3. 組件回應使用者處理文件或活頁簿時的事件。
 
 #### <a name="developer-and-end-user-perspective-compared"></a>開發人員和使用者觀點的比較
  由於開發人員主要是在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中工作，而使用者是在 Word 或 Excel 中工作，因此可分為兩方面來了解文件層級自訂。
@@ -97,7 +97,7 @@ ms.locfileid: "56629465"
 
   如果您希望使用者使用這些檔案格式的自訂，請將自訂建置和部署為使用上表指定的其中一個支援的檔案格式。 安裝自訂之後, 使用者可以在 Word XML 文件中儲存文件 (*\*xml*) 格式或 Word 2003 XML 文件 (*\*xml*) 格式，而自訂將會繼續如預期般運作。
 
-##  <a name="Components"></a> 自訂的元件
+## <a name="Components"></a> 自訂的元件
  自訂的主要元件是文件和組件。 除了這些元件之外，還有其他數個組件在 Microsoft Office 應用程式探索和載入自訂的方式中扮演重要角色。
 
 ### <a name="deployment-manifest-and-application-manifest"></a>部署資訊清單和應用程式資訊清單
@@ -108,7 +108,7 @@ ms.locfileid: "56629465"
 
  如需詳細資訊，請參閱 < [Visual Studio tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
-##  <a name="HowCustomizationsWork"></a> 自訂 Microsoft Office 應用程式的運作方式
+## <a name="HowCustomizationsWork"></a> 自訂 Microsoft Office 應用程式的運作方式
  當使用者開啟屬於 Microsoft Office 自訂一部分的文件時，應用程式會使用連結至該文件的部署資訊清單，來尋找及載入最新版的自訂組件。 部署資訊清單的位置儲存在名為自訂文件屬性**組件位置**。 建置方案時，識別這個位置的字串會插入至這個屬性。
 
  部署資訊清單會指向應用程式資訊清單，而應用程式資訊清單則會指向最新的組件。 如需詳細資訊，請參閱 <<c0> [ 應用程式和部署資訊清單在 Office 方案中](../vsto/application-and-deployment-manifests-in-office-solutions.md)。
@@ -123,21 +123,21 @@ ms.locfileid: "56629465"
 ### <a name="loading-process"></a>載入程序
  當使用者開啟屬於 Microsoft Office 方案一部分的文件時，會執行下列步驟。
 
-1.  Microsoft Office 應用程式會檢查自訂文件屬性，以查看文件是否有相關聯的 Managed 程式碼擴充。 如需詳細資訊，請參閱 <<c0> [ 自訂文件屬性概觀](../vsto/custom-document-properties-overview.md)。
+1. Microsoft Office 應用程式會檢查自訂文件屬性，以查看文件是否有相關聯的 Managed 程式碼擴充。 如需詳細資訊，請參閱 <<c0> [ 自訂文件屬性概觀](../vsto/custom-document-properties-overview.md)。
 
-2.  如果有 managed 程式碼擴充功能，應用程式載入*VSTOEE.dll*，哪個負載*VSTOLoader.dll*。 這些未受管理的是 Visual Studio 2010 Tools for Office runtime 的載入器元件 Dll。 如需詳細資訊，請參閱 < [Visual Studio Tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
+2. 如果有 managed 程式碼擴充功能，應用程式載入*VSTOEE.dll*，哪個負載*VSTOLoader.dll*。 這些未受管理的是 Visual Studio 2010 Tools for Office runtime 的載入器元件 Dll。 如需詳細資訊，請參閱 < [Visual Studio Tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
-3.  *VSTOLoader.dll*載入[!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]並啟動的 managed 的部分[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。
+3. *VSTOLoader.dll*載入[!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]並啟動的 managed 的部分[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。
 
-4.  如果從本機電腦以外的位置開啟文件， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會確認文件的位置是否在該特定 Office 應用程式之 [信任中心設定]  的 [信任位置]  清單中。 如果文件位置不是在信任的位置中，則不會信任自訂，且載入程序會在這裡停止。
+4. 如果從本機電腦以外的位置開啟文件， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會確認文件的位置是否在該特定 Office 應用程式之 [信任中心設定]  的 [信任位置]  清單中。 如果文件位置不是在信任的位置中，則不會信任自訂，且載入程序會在這裡停止。
 
-5.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會安裝尚未安裝的方案、下載最新的應用程式和部署資訊清單，並執行一系列的安全性檢查。 如需詳細資訊，請參閱 <<c0> [ 保護的 Office 方案](../vsto/securing-office-solutions.md)。
+5. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會安裝尚未安裝的方案、下載最新的應用程式和部署資訊清單，並執行一系列的安全性檢查。 如需詳細資訊，請參閱 <<c0> [ 保護的 Office 方案](../vsto/securing-office-solutions.md)。
 
-6.  如果自訂受信任而得以執行，則 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會使用部署資訊清單和應用程式資訊清單來檢查組件更新。 如果有新版的組件可用，執行階段就會將新版的組件下載至用戶端電腦上的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 快取。 如需詳細資訊，請參閱 <<c0> [ 部署 Office 方案](../vsto/deploying-an-office-solution.md)。
+6. 如果自訂受信任而得以執行，則 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會使用部署資訊清單和應用程式資訊清單來檢查組件更新。 如果有新版的組件可用，執行階段就會將新版的組件下載至用戶端電腦上的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 快取。 如需詳細資訊，請參閱 <<c0> [ 部署 Office 方案](../vsto/deploying-an-office-solution.md)。
 
-7.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會建立新的應用程式定義域，以便載入自訂組件。
+7. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會建立新的應用程式定義域，以便載入自訂組件。
 
-8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會將自訂組件載入至此應用程式定義域中。
+8. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會將自訂組件載入至此應用程式定義域中。
 
 9.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 呼叫自訂組件中的 **Startup** 事件處理常式。 如需詳細資訊，請參閱[Office 專案中的事件](../vsto/events-in-office-projects.md)
 

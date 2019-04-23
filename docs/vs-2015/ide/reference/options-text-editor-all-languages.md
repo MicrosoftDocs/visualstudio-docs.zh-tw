@@ -20,17 +20,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0abb0a38e63231dfddea391b3a63a73ae982bd24
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e7271b9cb45e2a8bf53e5f5aedc10eefc05830e3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802554"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661447"
 ---
 # <a name="options-text-editor-all-languages"></a>選項，文字編輯器，所有語言
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 編輯樣式表時，這個對話方塊可讓您變更程式碼編輯器的預設行為。 這些設定也適用於以程式碼編輯器為基礎的其他編輯器，例如 HTML 設計工具的來源檢視。 若要開啟此對話方塊，請從 [工具] 功能表選取 [選項]。 在 [文字編輯器] 資料夾內，展開 [所有語言] 子資料夾，然後選擇 [一般]。  
   
 > [!CAUTION]

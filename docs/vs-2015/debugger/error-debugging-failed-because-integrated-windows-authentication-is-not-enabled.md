@@ -19,12 +19,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11b4834cfe6c87f3d6093a38c7a97fe0da67aab4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73fcc686b242109a65fce6befbbca5e2a357a25e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945181"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049317"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>錯誤：偵錯失敗，原因是未啟用整合式 Windows 驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ ms.locfileid: "58945181"
   
 ### <a name="to-enable-integrated-windows-authentication"></a>若要啟用整合式 Windows 驗證  
   
-1.  使用系統管理員帳戶登入 Web 伺服器。  
+1. 使用系統管理員帳戶登入 Web 伺服器。  
   
-2.  按一下 [開始]，然後按一下 [控制台]。  
+2. 按一下 [開始]，然後按一下 [控制台]。  
   
-3.  在 [控制台] 中按兩下 [系統管理工具]。  
+3. 在 [控制台] 中按兩下 [系統管理工具]。  
   
-4.  按兩下 [Internet Information Services]。  
+4. 按兩下 [Internet Information Services]。  
   
-5.  按一下 [Web 伺服器] 節點。  
+5. 按一下 [Web 伺服器] 節點。  
   
      此時伺服器名稱下方會開啟 [網站] 資料夾。  
   
-6.  您可以為所有網站或個別網站設定驗證。 若要為所有網站設定驗證，請以滑鼠右鍵按一下 [網站] 資料夾，然後按一下 [內容]。 若要為個別網站設定驗證，請開啟 [網站] 資料夾，以滑鼠右鍵按一下個別網站，然後按一下 [內容]。  
+6. 您可以為所有網站或個別網站設定驗證。 若要為所有網站設定驗證，請以滑鼠右鍵按一下 [網站] 資料夾，然後按一下 [內容]。 若要為個別網站設定驗證，請開啟 [網站] 資料夾，以滑鼠右鍵按一下個別網站，然後按一下 [內容]。  
   
      [內容] 對話方塊隨即出現。  
   
-7.  按一下 [目錄安全性] 索引標籤。  
+7. 按一下 [目錄安全性] 索引標籤。  
   
-8.  在 [匿名存取及驗證控制] 區段中，按一下 [編輯]。  
+8. 在 [匿名存取及驗證控制] 區段中，按一下 [編輯]。  
   
      [驗證方法] 對話方塊隨即出現。  
   
@@ -67,29 +67,29 @@ ms.locfileid: "58945181"
   
 ### <a name="to-enable-integrated-windows-authentication-in-windows-vistaiis-7"></a>若要在 Windows Vista/IIS 7 內啟用整合式 Windows 驗證  
   
-1.  使用系統管理員帳戶登入 Web 伺服器。  
+1. 使用系統管理員帳戶登入 Web 伺服器。  
   
-2.  如果您先前未開啟 [Windows 驗證] 和 [II6 管理相容性]，請遵循下列步驟來執行此動作：  
+2. 如果您先前未開啟 [Windows 驗證] 和 [II6 管理相容性]，請遵循下列步驟來執行此動作：  
   
-    1.  按一下 **開始**，按一下**控制台**，然後按一下 **程式**。  
+    1. 按一下 **開始**，按一下**控制台**，然後按一下 **程式**。  
   
-    2.  按一下 [程式和功能] 下的 [開啟或關閉 Windows 功能]。  
+    2. 按一下 [程式和功能] 下的 [開啟或關閉 Windows 功能]。  
   
          [使用者帳戶控制] 對話方塊隨即出現，並詢問您是否同意繼續進行。  
   
-    3.  按一下 [ **繼續**]。  
+    3. 按一下 [ **繼續**]。  
   
          [Windows 功能] 對話方塊隨即出現。  
   
-    4.  在功能清單中，展開 [Internet Information Services] 節點。  
+    4. 在功能清單中，展開 [Internet Information Services] 節點。  
   
-    5.  在 [Internet Information Services] 下，展開 [全球資訊網服務] 節點。  
+    5. 在 [Internet Information Services] 下，展開 [全球資訊網服務] 節點。  
   
-    6.  在 [全球資訊網服務] 下，按一下 [安全性]。  
+    6. 在 [全球資訊網服務] 下，按一下 [安全性]。  
   
-    7.  按一下 [Windows 驗證]。  
+    7. 按一下 [Windows 驗證]。  
   
-    8.  在 [Internet Information Services] 下，展開 [Web 管理工具] 節點。  
+    8. 在 [Internet Information Services] 下，展開 [Web 管理工具] 節點。  
   
     9. 在 [Web 管理工具] 下，展開 [IIS 6 管理相容性] 節點，並選取 [IIS 6 Metabase 及 IIS 6 設定相容性] 核取方塊。  
   
@@ -97,19 +97,19 @@ ms.locfileid: "58945181"
   
     11. 重新啟動電腦，這些變更就會生效。  
   
-3.  按一下 [開始]，然後按一下 [控制台]。  
+3. 按一下 [開始]，然後按一下 [控制台]。  
   
-4.  按一下 [傳統檢視]，然後按兩下 [系統管理工具]。  
+4. 按一下 [傳統檢視]，然後按兩下 [系統管理工具]。  
   
-5.  在 [名稱] 一欄中，按兩下 [Internet Information Services (IIS) 管理員]。  
+5. 在 [名稱] 一欄中，按兩下 [Internet Information Services (IIS) 管理員]。  
   
-6.  在 [連線] 一欄中，展開伺服器的節點。  
+6. 在 [連線] 一欄中，展開伺服器的節點。  
   
      此時伺服器名稱下方會開啟 [網站] 資料夾。  
   
-7.  展開 [網站] 節點，然後按一下您想要啟用整合式 Windows 驗證的網站。  
+7. 展開 [網站] 節點，然後按一下您想要啟用整合式 Windows 驗證的網站。  
   
-8.  中央窗格的標題會變更為您所選取的網站名稱。 在這個窗格中，按兩下 [IIS] 標題下的 [驗證]。  
+8. 中央窗格的標題會變更為您所選取的網站名稱。 在這個窗格中，按兩下 [IIS] 標題下的 [驗證]。  
   
      窗格的標題會變更為 [驗證]。  
   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5373e292192294b5dd27eff87c9f9f2b2f97820a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7a129e0a66399da1efe9bff4d7aef1a94602fa79
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602789"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664462"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>註冊 Interop 組件命令處理常式
 VSPackage 必須向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]以便整合式的開發環境 (IDE) 正確地路由傳送它的命令。
@@ -50,8 +50,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
 
  下表描述的欄位\<*資源資訊*>。
 
-
-| 元素 | 描述 |
+| 項目 | 描述 |
 |---------------------------| - |
 | \<*資源 DLL 路徑*> | 這是資源包含的功能表資源 DLL 的完整路徑，或保留為空白，表示 VSPackage 的資源 DLL 使用 （如同在其中自行註冊 VSPackage 的封裝子機碼中指定）。<br /><br /> 它是自訂此欄位空白。 |
 | \<*功能表資源識別碼*> | 這是資源識別碼`CTMENU`資源，其中包含所有 UI 項目的 VSPackage 從編譯[.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔案。 |

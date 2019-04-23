@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c805c842832ac99c527ea382169775d8b6b2529
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942958"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113309"
 ---
 # <a name="validate-your-uml-model"></a>驗證 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ ms.locfileid: "58942958"
   
 #### <a name="to-install-a-visual-studio-extension"></a>安裝 Visual Studio 擴充功能  
   
-1.  按兩下 **.vsix** Windows 檔案總管 （或檔案總管） 中的檔案。  
+1. 按兩下 **.vsix** Windows 檔案總管 （或檔案總管） 中的檔案。  
   
-2.  重新啟動已在執行的任何 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 執行個體。  
+2. 重新啟動已在執行的任何 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 執行個體。  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>停用並解除安裝驗證條件約束  
  當您想要使用條件約束並不適用的模型時，可以暫時停用包含它們的擴充功能。 如此一來，您可以藉由啟用和停用不同的擴充功能，在不同的時間使用不同種類的模型。  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>停用或解除安裝 Visual Studio 擴充功能  
   
-1.  在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具**功能表上，按一下 **擴充功能和更新**。  
+1. 在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具**功能表上，按一下 **擴充功能和更新**。  
   
-2.  連同延伸模組中，按一下**停用**暫時停用擴充功能。 您可以稍後重新啟用它回到**擴充功能和更新**視窗。  
+2. 連同延伸模組中，按一下**停用**暫時停用擴充功能。 您可以稍後重新啟用它回到**擴充功能和更新**視窗。  
   
      \-或-  
   
      按一下 **解除安裝**移除擴充功能。  
   
-3.  重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+3. 重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
 ## <a name="see-also"></a>另請參閱  
  [定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da46fc4309be1575ffde3d42f8b2c984986ce15b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1a2dab234f56b9d6ab1368ac87f4da9c5fae4125
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113127"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 > [!IMPORTANT]
@@ -28,11 +28,11 @@ ms.locfileid: "56720051"
 
  在資料表中的每個介面會顯示可以實作下列清單中的元件：
 
--   偵錯引擎 (DE)
+- 偵錯引擎 (DE)
 
--   運算式評估工具 (EE)
+- 運算式評估工具 (EE)
 
--   Visual Studio (VS)
+- Visual Studio (VS)
 
 |介面|藉由將|描述|
 |---------------|--------------------|-----------------|

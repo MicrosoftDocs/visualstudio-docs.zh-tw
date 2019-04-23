@@ -15,17 +15,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d1a3d363f51861af5914ee0172c5c9a3511b2485
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e870b15355da86b8654511cab932f792323446b9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767346"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669088"
 ---
 # <a name="open-file-command"></a>開啟檔案命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 開啟現有的檔案，並可讓您指定編輯器。  
   
 ## <a name="syntax"></a>語法  

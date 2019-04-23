@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060796"
 ---
 # <a name="debug-sharepoint-solutions"></a>偵錯 SharePoint 方案
   您可以使用偵錯 SharePoint 方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 當您啟動偵錯，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]專案會將檔案部署到 SharePoint 伺服器，然後開啟 網頁瀏覽器中的 SharePoint 網站的執行個體。 下列各節將說明如何偵錯 SharePoint 應用程式[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
--   [啟用偵錯](#enable-debugging)
+- [啟用偵錯](#enable-debugging)
 
--   [F5 偵錯和部署程序](#f5-debug-and-deployment-process)
+- [F5 偵錯和部署程序](#f5-debug-and-deployment-process)
 
--   [SharePoint 專案功能](#sharepoint-project-features)
+- [SharePoint 專案功能](#sharepoint-project-features)
 
--   [偵錯工作流程](#debug-workflows)
+- [偵錯工作流程](#debug-workflows)
 
--   [偵錯功能事件接收器](#debug-feature-event-receivers)
+- [偵錯功能事件接收器](#debug-feature-event-receivers)
 
--   [啟用 ehanced 偵錯資訊](#enable-enhanced-debugging-information)
+- [啟用 ehanced 偵錯資訊](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>啟用偵錯
  當您第一次偵錯 SharePoint 方案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，對話方塊中，系統會通知您，web.config 檔案未設定為啟用偵錯。 （當您安裝 SharePoint server 時，會建立 web.config 檔案。 如需詳細資訊，請參閱 <<c0> [ 處理 Web.config 檔案](http://go.microsoft.com/fwlink/?LinkID=149266)。)對話方塊可讓您選擇執行專案但不偵錯，或修改的 web.config 檔案，以啟用偵錯。 如果您選擇第一個選項，專案將會正常執行。 如果您選擇第二個選項，則 web.config 檔案會設定為：
@@ -77,11 +77,11 @@ ms.locfileid: "57873106"
 
  若要反向變更，並停用偵錯，變更下列[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]web.config 檔案中：
 
--   關閉 呼叫堆疊 (`CallStack="false"`)
+- 關閉 呼叫堆疊 (`CallStack="false"`)
 
--   啟用自訂錯誤[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](`<customErrors mode="On" />`)
+- 啟用自訂錯誤[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](`<customErrors mode="On" />`)
 
--   停用編譯偵錯 (`<compilation debug="false">`)
+- 停用編譯偵錯 (`<compilation debug="false">`)
 
 ## <a name="f5-debug-and-deployment-process"></a>F5 偵錯和部署程序
  當您在偵錯模式中執行您的 SharePoint 專案時，在 SharePoint 部署程序會執行下列工作：

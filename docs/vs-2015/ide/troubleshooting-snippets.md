@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fe80ad6c3983b35f97071093428bf7f356292b0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f1a623d5ee5edee376819ad6c385aead5003f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803758"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117950"
 ---
 # <a name="troubleshooting-snippets"></a>疑難排解程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,15 +29,15 @@ IntelliSense 程式碼片段的問題通常是由兩個問題所造成：損毀�
   
 ### <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>程式碼片段無法從檔案總管拖曳至 Visual Studio 的原始程式檔  
   
--   程式碼片段檔案中的 XML 可能已損毀。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的 **XML 編輯器**可以找出 XML 結構中的問題。  
+- 程式碼片段檔案中的 XML 可能已損毀。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的 **XML 編輯器**可以找出 XML 結構中的問題。  
   
--   程式碼片段檔案可能不符合程式碼片段結構描述。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的 **XML 編輯器**可以找出 XML 結構中的問題。  
+- 程式碼片段檔案可能不符合程式碼片段結構描述。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的 **XML 編輯器**可以找出 XML 結構中的問題。  
   
 ### <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>程式碼有未反白顯示的編譯器錯誤  
   
--   您可能遺漏了專案參考。 檢查有關程式碼片段的文件。 如果電腦上找不到參考，您需要安裝它。 插入程式碼片段應該會在專案中新增所有需要的參考。 如果程式碼片段遺漏了參考資訊，可向程式碼片段建立者報告為錯誤。  
+- 您可能遺漏了專案參考。 檢查有關程式碼片段的文件。 如果電腦上找不到參考，您需要安裝它。 插入程式碼片段應該會在專案中新增所有需要的參考。 如果程式碼片段遺漏了參考資訊，可向程式碼片段建立者報告為錯誤。  
   
--   可能未定義變數。 程式碼片段中未定義的變數應予反白顯示。 否則，會向程式碼片段建立者報告為錯誤。  
+- 可能未定義變數。 程式碼片段中未定義的變數應予反白顯示。 否則，會向程式碼片段建立者報告為錯誤。  
   
 ## <a name="see-also"></a>請參閱  
  [程式碼片段](../ide/code-snippets.md)

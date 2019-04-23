@@ -125,12 +125,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 14ea474200875b5667962895deadd6479b44c391
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bda668e457cd144d868680f2dc009580c34ea81b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923926"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109860"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>註釋函式參數和傳回值
 這篇文章說明簡單的函式參數的註解的一般用法： 純量和結構和類別的指標，及各種緩衝區。  這篇文章也會顯示註釋的常見使用模式。 與功能相關的其他註解，請參閱[標註函式行為](../code-quality/annotating-function-behavior.md)
@@ -140,27 +140,27 @@ ms.locfileid: "55923926"
 
  **註解和描述**
 
--   `_In_`
+- `_In_`
 
      標註為純量、 結構、 結構的指標和類似的輸入的參數。  明確可根據簡單的純量。  參數會在前的狀態必須有效，而且將不會修改。
 
--   `_Out_`
+- `_Out_`
 
      標註為純量、 結構、 結構的指標和類似的輸出參數。  不會套用這到無法傳回值的物件 — 例如，純量的傳值方式傳遞。  參數沒有有效處於前的狀態，但必須是有效後的狀態。
 
--   `_Inout_`
+- `_Inout_`
 
      標註的參數，將會變更函式。  它必須是在前的狀態和後置狀態下，有效，但會假設為具有不同的值之前和之後呼叫。 必須套用至可修改的值。
 
--   `_In_z_`
+- `_In_z_`
 
      以 null 終止的字串，可做為輸入的指標。  在前的狀態，字串必須是有效的。  變體`PSTR`，其中已經具有正確的註解、 會偏好使用。
 
--   `_Inout_z_`
+- `_Inout_z_`
 
      將修改 null 結束的字元陣列的指標。  它必須是有效之前和之後呼叫，但假設的值為已變更。  以 null 終止可能已經移動，但可能存取到原始的 null 結束字元的元素。
 
--   `_In_reads_(s)`
+- `_In_reads_(s)`
 
      `_In_reads_bytes_(s)`
 
@@ -168,15 +168,15 @@ ms.locfileid: "55923926"
 
      `_bytes_` Variant 提供大小，以位元組為單位，而不是項目。 只有在大小不能表示為項目時，請使用此選項。  例如，`char`字串會使用`_bytes_`變體類似函式時，才會使用`wchar_t`會。
 
--   `_In_reads_z_(s)`
+- `_In_reads_z_(s)`
 
      陣列是以 null 終止，且具有已知的大小的指標。 項目，直到 null 結束字元 — 或`s`如果沒有 null 結束字元，在前的狀態必須有效。  如果會知道大小，以位元組為單位，調整`s`項目大小。
 
--   `_In_reads_or_z_(s)`
+- `_In_reads_or_z_(s)`
 
      是以 null 終止，或有已知的大小，或兩者的陣列指標。 項目，直到 null 結束字元 — 或`s`如果沒有 null 結束字元，在前的狀態必須有效。  如果會知道大小，以位元組為單位，調整`s`項目大小。  (用於`strn`系列。)
 
--   `_Out_writes_(s)`
+- `_Out_writes_(s)`
 
      `_Out_writes_bytes_(s)`
 
@@ -188,11 +188,11 @@ ms.locfileid: "55923926"
 
      `_bytes_` Variant 提供大小，以位元組為單位，而不是項目。 只有在大小不能表示為項目時，請使用此選項。  例如，`char`字串會使用`_bytes_`變體類似函式時，才會使用`wchar_t`會。
 
--   `_Out_writes_z_(s)`
+- `_Out_writes_z_(s)`
 
      陣列的指標`s`項目。  項目不必是有效的在前的狀態。  在後置狀態下，設定項目，透過 null 結束字元，它必須存 — 必須是有效的。  如果會知道大小，以位元組為單位，調整`s`項目大小。
 
--   `_Inout_updates_(s)`
+- `_Inout_updates_(s)`
 
      `_Inout_updates_bytes_(s)`
 
@@ -200,11 +200,39 @@ ms.locfileid: "55923926"
 
      `_bytes_` Variant 提供大小，以位元組為單位，而不是項目。 只有在大小不能表示為項目時，請使用此選項。  例如，`char`字串會使用`_bytes_`變體類似函式時，才會使用`wchar_t`會。
 
--   `_Inout_updates_z_(s)`
+- `_Inout_updates_z_(s)`
 
      陣列是以 null 終止，且具有已知的大小的指標。 設定項目，透過 null 結束字元，它必須存 — 在前的狀態和後置的狀態必須有效。  後的狀態中的值會假設不同於前的狀態; 中的值這包括 null 結束字元的位置。 如果會知道大小，以位元組為單位，調整`s`項目大小。
 
--   `_Out_writes_to_(s,c)`
+- `_Out_writes_to_(s,c)`
+
+     `_Out_writes_bytes_to_(s,c)`
+
+     `_Out_writes_all_(s)`
+
+     `_Out_writes_bytes_all_(s)`
+
+     陣列的指標`s`項目。  項目不必是有效的在前的狀態。  在後的狀態，最多的項目`c`-個項目必須是有效。  如果會知道大小，以位元組為單位，相應`s`並`c`項目大小或使用`_bytes_`變體，其定義如下：
+
+     `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
+
+     換句話說，每個項目存在於緩衝區中最多`s`前的狀態處於有效後的狀態。  例如：
+
+     `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
+
+- `_Inout_updates_to_(s,c)`
+
+     `_Inout_updates_bytes_to_(s,c)`
+
+     陣列，其中是讀取 / 寫入函式指標。  它是大小`s`項目，全部都必須是有效前狀態，和`c`項目後的狀態必須是有效。
+
+     `_bytes_` Variant 提供大小，以位元組為單位，而不是項目。 只有在大小不能表示為項目時，請使用此選項。  例如，`char`字串會使用`_bytes_`變體類似函式時，才會使用`wchar_t`會。
+
+- `_Inout_updates_z_(s)`
+
+     陣列是以 null 終止，且具有已知的大小的指標。 設定項目，透過 null 結束字元，它必須存 — 在前的狀態和後置的狀態必須有效。  後的狀態中的值會假設不同於前的狀態; 中的值這包括 null 結束字元的位置。 如果會知道大小，以位元組為單位，調整`s`項目大小。
+
+- `_Out_writes_to_(s,c)`
 
      `_Out_writes_bytes_to_(s,c)`
 
@@ -220,7 +248,7 @@ ms.locfileid: "55923926"
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
--   `_Inout_updates_to_(s,c)`
+- `_Inout_updates_to_(s,c)`
 
      `_Inout_updates_bytes_to_(s,c)`
 
@@ -228,35 +256,7 @@ ms.locfileid: "55923926"
 
      `_bytes_` Variant 提供大小，以位元組為單位，而不是項目。 只有在大小不能表示為項目時，請使用此選項。  例如，`char`字串會使用`_bytes_`變體類似函式時，才會使用`wchar_t`會。
 
--   `_Inout_updates_z_(s)`
-
-     陣列是以 null 終止，且具有已知的大小的指標。 設定項目，透過 null 結束字元，它必須存 — 在前的狀態和後置的狀態必須有效。  後的狀態中的值會假設不同於前的狀態; 中的值這包括 null 結束字元的位置。 如果會知道大小，以位元組為單位，調整`s`項目大小。
-
--   `_Out_writes_to_(s,c)`
-
-     `_Out_writes_bytes_to_(s,c)`
-
-     `_Out_writes_all_(s)`
-
-     `_Out_writes_bytes_all_(s)`
-
-     陣列的指標`s`項目。  項目不必是有效的在前的狀態。  在後的狀態，最多的項目`c`-個項目必須是有效。  如果會知道大小，以位元組為單位，相應`s`並`c`項目大小或使用`_bytes_`變體，其定義如下：
-
-     `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
-
-     換句話說，每個項目存在於緩衝區中最多`s`前的狀態處於有效後的狀態。  例如: 
-
-     `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
-
--   `_Inout_updates_to_(s,c)`
-
-     `_Inout_updates_bytes_to_(s,c)`
-
-     陣列，其中是讀取 / 寫入函式指標。  它是大小`s`項目，全部都必須是有效前狀態，和`c`項目後的狀態必須是有效。
-
-     `_bytes_` Variant 提供大小，以位元組為單位，而不是項目。 只有在大小不能表示為項目時，請使用此選項。  例如，`char`字串會使用`_bytes_`變體類似函式時，才會使用`wchar_t`會。
-
--   `_Inout_updates_all_(s)`
+- `_Inout_updates_all_(s)`
 
      `_Inout_updates_bytes_all_(s)`
 
@@ -268,19 +268,19 @@ ms.locfileid: "55923926"
 
      `_bytes_` Variant 提供大小，以位元組為單位，而不是項目。 只有在大小不能表示為項目時，請使用此選項。  例如，`char`字串會使用`_bytes_`變體類似函式時，才會使用`wchar_t`會。
 
--   `_In_reads_to_ptr_(p)`
+- `_In_reads_to_ptr_(p)`
 
      陣列的指標運算式`p`  -  `_Curr_` (亦即`p`減去`_Curr_`) 由適當的語言標準所定義。  之前的項目`p`前的狀態必須有效。
 
--   `_In_reads_to_ptr_z_(p)`
+- `_In_reads_to_ptr_z_(p)`
 
      以 null 結束陣列的指標運算式`p`  -  `_Curr_` (亦即`p`減去`_Curr_`) 由適當的語言標準所定義。  之前的項目`p`前的狀態必須有效。
 
--   `_Out_writes_to_ptr_(p)`
+- `_Out_writes_to_ptr_(p)`
 
      陣列的指標運算式`p`  -  `_Curr_` (亦即`p`減去`_Curr_`) 由適當的語言標準所定義。  之前的項目`p`就不必在前的狀態是 有效，而且必須是有效後的狀態。
 
--   `_Out_writes_to_ptr_z_(p)`
+- `_Out_writes_to_ptr_z_(p)`
 
      以 null 結束陣列的指標運算式`p`  -  `_Curr_` (亦即`p`減去`_Curr_`) 由適當的語言標準所定義。  之前的項目`p`就不必在前的狀態是 有效，而且必須是有效後的狀態。
 
@@ -388,59 +388,59 @@ ms.locfileid: "55923926"
 
  **註解和描述**
 
--   `_Outref_`
+- `_Outref_`
 
      結果會在後的狀態必須有效，而且不能是 null。
 
--   `_Outref_result_maybenull_`
+- `_Outref_result_maybenull_`
 
      結果必須是在後置狀態下，有效，但在後的狀態可能為 null。
 
--   `_Outref_result_buffer_(s)`
+- `_Outref_result_buffer_(s)`
 
      結果會在後的狀態必須有效，而且不能是 null。 指向有效的緩衝區大小的`s`項目。
 
--   `_Outref_result_bytebuffer_(s)`
+- `_Outref_result_bytebuffer_(s)`
 
      結果會在後的狀態必須有效，而且不能是 null。 指向有效的緩衝區大小的`s`位元組。
 
--   `_Outref_result_buffer_to_(s, c)`
+- `_Outref_result_buffer_to_(s, c)`
 
      結果會在後的狀態必須有效，而且不能是 null。 指向的緩衝區`s`項目，其中第一個`c`有效。
 
--   `_Outref_result_bytebuffer_to_(s, c)`
+- `_Outref_result_bytebuffer_to_(s, c)`
 
      結果會在後的狀態必須有效，而且不能是 null。 指向的緩衝區`s`個位元組，其中第一個`c`有效。
 
--   `_Outref_result_buffer_all_(s)`
+- `_Outref_result_buffer_all_(s)`
 
      結果會在後的狀態必須有效，而且不能是 null。 指向有效的緩衝區大小的`s`有效的項目。
 
--   `_Outref_result_bytebuffer_all_(s)`
+- `_Outref_result_bytebuffer_all_(s)`
 
      結果會在後的狀態必須有效，而且不能是 null。 指向有效的緩衝區的`s`位元組為單位的有效項目。
 
--   `_Outref_result_buffer_maybenull_(s)`
+- `_Outref_result_buffer_maybenull_(s)`
 
      結果必須是在後置狀態下，有效，但在後的狀態可能為 null。 指向有效的緩衝區大小的`s`項目。
 
--   `_Outref_result_bytebuffer_maybenull_(s)`
+- `_Outref_result_bytebuffer_maybenull_(s)`
 
      結果必須是在後置狀態下，有效，但在後的狀態可能為 null。 指向有效的緩衝區大小的`s`位元組。
 
--   `_Outref_result_buffer_to_maybenull_(s, c)`
+- `_Outref_result_buffer_to_maybenull_(s, c)`
 
      結果必須是在後置狀態下，有效，但在後的狀態可能為 null。 指向的緩衝區`s`項目，其中第一個`c`有效。
 
--   `_Outref_result_bytebuffer_to_maybenull_(s,c)`
+- `_Outref_result_bytebuffer_to_maybenull_(s,c)`
 
      結果必須在後置狀態下，有效，但在後置狀態可能為 null。 指向的緩衝區`s`個位元組，其中第一個`c`有效。
 
--   `_Outref_result_buffer_all_maybenull_(s)`
+- `_Outref_result_buffer_all_maybenull_(s)`
 
      結果必須在後置狀態下，有效，但在後置狀態可能為 null。 指向有效的緩衝區大小的`s`有效的項目。
 
--   `_Outref_result_bytebuffer_all_maybenull_(s)`
+- `_Outref_result_bytebuffer_all_maybenull_(s)`
 
      結果必須在後置狀態下，有效，但在後置狀態可能為 null。 指向有效的緩衝區的`s`位元組為單位的有效項目。
 
@@ -454,7 +454,7 @@ ms.locfileid: "55923926"
 ## <a name="other-common-annotations"></a>其他常見的註解
  **註解和描述**
 
--   `_In_range_(low, hi)`
+- `_In_range_(low, hi)`
 
      `_Out_range_(low, hi)`
 
@@ -473,13 +473,13 @@ ms.locfileid: "55923926"
     > [!IMPORTANT]
     >  雖然名稱包含 「 中 」 及 「 發送 」 的語意`_In_`並`_Out_`請勿**不**套用到這些註解。
 
--   `_Pre_equal_to_(expr)`
+- `_Pre_equal_to_(expr)`
 
      `_Post_equal_to_(expr)`
 
      註解的值正是`expr`。  相當於`_Satisfies_(_Curr_ == expr)`套用至適當的預先狀態或狀態後置條件以及標註的物件。
 
--   `_Struct_size_bytes_(size)`
+- `_Struct_size_bytes_(size)`
 
      適用於結構或類別的宣告。  表示具有所指定的位元組數目可能會大於宣告的型別，該類型的有效物件`size`。  例如: 
 

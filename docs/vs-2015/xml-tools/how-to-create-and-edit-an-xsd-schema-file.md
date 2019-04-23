@@ -9,34 +9,33 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5654b994eb8b6a2e8409688e30155952b6eeb59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 847d8e02f1d8cb6b1273ed4206d25207de59e3e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943802"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056584"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>HOW TO：建立和編輯 XSD 結構描述檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本主題描述如何建立新 XML 結構描述 (XSD) 檔案，然後將內容加入至 XSD 檔案。  
   
 ### <a name="to-create-a-new-xml-schema-file"></a>建立新的 XML 結構描述檔  
   
-1.  在 Visual Studio 中開啟**檔案**功能表，然後選取**新增**，然後**檔案**。 或者使用 CTRL+N 鍵盤快速鍵。  
+1. 在 Visual Studio 中開啟**檔案**功能表，然後選取**新增**，然後**檔案**。 或者使用 CTRL+N 鍵盤快速鍵。  
   
-2.  在 **新的檔案**對話方塊中，選取**XML 結構描述**，按一下 **開啟**。  
+2. 在 **新的檔案**對話方塊中，選取**XML 結構描述**，按一下 **開啟**。  
   
      新檔案隨即建立。 開始檢視和一個空的 XML 結構描述總管視窗會出現在 Visual Studio 中。  
   
 ### <a name="to-edit-a-file"></a>編輯檔案  
   
-1.  按一下 **使用 XML 編輯器檢視與編輯基礎 XML 結構描述檔案**開始檢視上的連結。  
+1. 按一下 **使用 XML 編輯器檢視與編輯基礎 XML 結構描述檔案**開始檢視上的連結。  
   
      XML 編輯器隨即出現，並且開啟新的檔案。  
   
-2.  XML 結構描述範例程式碼複製[採購單結構描述](../xml-tools/sample-xsd-file-simple-schema.md)並貼上取代預設新增至新 XSD 檔案的程式碼。  
+2. XML 結構描述範例程式碼複製[採購單結構描述](../xml-tools/sample-xsd-file-simple-schema.md)並貼上取代預設新增至新 XSD 檔案的程式碼。  
   
      XML 結構描述總管將以新的結構描述集進行更新。  
   

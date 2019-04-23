@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 071a18af0532a55946087f7c47535405d0d3b40e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28e2358b92080bd56cfda9d395f87e5c188da221
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940961"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062915"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>設定圖表上的背景影像
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,21 +25,21 @@ ms.locfileid: "58940961"
   
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>為產生的設計工具設定背景影像  
   
-1.  將您要用來做為圖表背景的影像檔複製到目前專案的 Dsl\Resources 目錄中。  
+1. 將您要用來做為圖表背景的影像檔複製到目前專案的 Dsl\Resources 目錄中。  
   
-2.  在 **方案總管 中**，以滑鼠右鍵按一下 Dsl\Resources 資料夾，指向**新增**，然後按一下 **現有項目**。  
+2. 在 **方案總管 中**，以滑鼠右鍵按一下 Dsl\Resources 資料夾，指向**新增**，然後按一下 **現有項目**。  
   
-3.  在 [**加入現有項目**] 對話方塊中，瀏覽至 Dsl\Resources 資料夾。  
+3. 在 [**加入現有項目**] 對話方塊中，瀏覽至 Dsl\Resources 資料夾。  
   
-4.  在 **類型的檔案**清單中，按一下**影像檔**。  
+4. 在 **類型的檔案**清單中，按一下**影像檔**。  
   
-5.  按一下您複製到目錄中，映像檔，然後按一下**新增**。  
+5. 按一下您複製到目錄中，映像檔，然後按一下**新增**。  
   
-6.  以滑鼠右鍵按一下 Dsl，然後按一下 **屬性**開啟 Dsl 專案的屬性。  
+6. 以滑鼠右鍵按一下 Dsl，然後按一下 **屬性**開啟 Dsl 專案的屬性。  
   
-7.  在**資源**索引標籤上，按一下 **這個專案未包含預設的資源檔若要建立一個，請按一下這裡。**  
+7. 在**資源**索引標籤上，按一下 **這個專案未包含預設的資源檔若要建立一個，請按一下這裡。**  
   
-8.  加入資源檔中的映像檔，藉由拖曳從圖片**方案總管 中**到資源視窗。  
+8. 加入資源檔中的映像檔，藉由拖曳從圖片**方案總管 中**到資源視窗。  
   
 9. 開啟 [檔案] 功能表，然後按一下選項以儲存專案屬性。  
   

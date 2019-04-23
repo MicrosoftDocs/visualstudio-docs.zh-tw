@@ -17,25 +17,25 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6f50584c5e01b97eb00a0e7f62998670d033553
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 523764ae5cd787fd4b52650e894eb086ae4adb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939331"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097124"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET 偵錯：系統需求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 偵錯情節的軟體和安全性需求：  
   
--   本機偵錯： [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 Web 應用程式會在同一部電腦上執行。 這個情節有兩種版本：  
+- 本機偵錯： [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 Web 應用程式會在同一部電腦上執行。 這個情節有兩種版本：  
   
-    -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程序碼位於檔案系統上。  
+    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程序碼位於檔案系統上。  
   
-    -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程序碼位於 IIS 網站中。  
+    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程序碼位於 IIS 網站中。  
   
--   遠端偵錯： [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 在用戶端電腦上執行，並對遠端伺服器電腦上執行的 Web 應用程式進行偵錯。  
+- 遠端偵錯： [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 在用戶端電腦上執行，並對遠端伺服器電腦上執行的 Web 應用程式進行偵錯。  
   
 ## <a name="security-requirements"></a>安全性需求  
  若要進行遠端偵錯，本機和遠端電腦都必須在網域設定或工作群組設定中。  

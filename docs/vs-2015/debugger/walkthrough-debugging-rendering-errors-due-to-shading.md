@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 42627b336bb83d915b2af96f0ee569a305212f6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b4c158c4ce6762b69f73a55915cc459f84cd7fff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941988"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067153"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>逐步解說：對因著色而產生的顯示錯誤進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ ms.locfileid: "58941988"
   
  本逐步解說示範如何：  
   
--   檢查圖形記錄文件來識別顯示問題的像素。  
+- 檢查圖形記錄文件來識別顯示問題的像素。  
   
--   使用 [圖形像素歷史記錄]  視窗更仔細地檢查像素狀態。  
+- 使用 [圖形像素歷史記錄]  視窗更仔細地檢查像素狀態。  
   
--   使用 [HLSL 偵錯工具]  來檢查像素和端點著色器。  
+- 使用 [HLSL 偵錯工具]  來檢查像素和端點著色器。  
   
 ## <a name="scenario"></a>情節  
  物件著色不正確通常是因為端點著色器將不正確或不完整的資訊傳遞給像素著色器。  

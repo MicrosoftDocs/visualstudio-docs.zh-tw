@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b72213ab2c7dd9fa15fb639b6ef2212f56aa141f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed644c1dda4ac3674ef60d0027c37532fc6d0f92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075620"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>逐步解說：使用 XSLT 階層
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 `includes` 和 `imports` 指示。 編譯會從主樣式表開始，但當您看見編譯 XSLT 樣式表所產生的錯誤時，該錯誤的來源可能並非主要樣式表。 修復錯誤或編輯樣式表可能需要存取包含或匯入的樣式表。 在偵錯工具中逐步執行樣式表會開啟包含及匯入的樣式表，您可以在一個或多個包含的樣式表中加入一些中斷點。  
   
  另一個可利用 XSLT 階層工具的案例，是在內建的範本規則中放置中斷點。 範本規則是針對樣式表的每種模式所產生的特殊範本，若沒有其他範本與節點相符，`xsl:apply-templates` 就會呼叫範本規則。 為了在內建範本規則中實作偵錯，XSLT 偵錯工具會在暫存資料夾中產生含有規則的檔案，然後將檔案與主樣式表一起編譯。 若未從某個 `xsl:apply-template` 逐步執行程式碼，可能不容易找到已包含在主樣式表中的樣式表，也不容易找到並開啟含有內建範本規則的樣式表。  
@@ -28,7 +27,7 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
   
 ### <a name="procedure-title"></a>程序標題  
   
-1.  在 Visual Studio 中開啟 XML 文件。 本範例使用下列 `collection.xml` 文件。  
+1. 在 Visual Studio 中開啟 XML 文件。 本範例使用下列 `collection.xml` 文件。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -52,7 +51,7 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
     </COLLECTION>  
     ```  
   
-2.  加入下列 `xslincludefile.xsl`：  
+2. 加入下列 `xslincludefile.xsl`：  
   
     ```  
     <?xml version='1.0'?>  
@@ -75,7 +74,7 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
     </xsl:stylesheet>  
     ```  
   
-3.  加入下列 `xslinclude.xsl` 檔案：  
+3. 加入下列 `xslinclude.xsl` 檔案：  
   
     ```  
     <?xml version='1.0'?>  
@@ -109,11 +108,11 @@ XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 
     </xsl:stylesheet>  
     ```  
   
-4.  在指示處加入中斷點：`<xsl:include href="xslincludefile.xsl" />`  
+4. 在指示處加入中斷點：`<xsl:include href="xslincludefile.xsl" />`  
   
-5.  開始偵錯。  
+5. 開始偵錯。  
   
-6.  當偵錯工具停在指示 `<xsl:include href="xslincludefile.xsl" />` 時，按下逐步執行按鈕。 請注意，參考的樣式表中的偵錯可以繼續進行。 您會看見階層，同時設計工具會顯示正確的路徑。  
+6. 當偵錯工具停在指示 `<xsl:include href="xslincludefile.xsl" />` 時，按下逐步執行按鈕。 請注意，參考的樣式表中的偵錯可以繼續進行。 您會看見階層，同時設計工具會顯示正確的路徑。  
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說：XSLT 分析工具](../xml-tools/walkthrough-xslt-profiler.md)

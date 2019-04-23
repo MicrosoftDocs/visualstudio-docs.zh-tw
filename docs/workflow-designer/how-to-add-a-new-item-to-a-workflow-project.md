@@ -8,19 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44d68b83f9364885ea33af2184f2a911bf916325
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6f0fb6c013e3df041e750344c09fb19f8c43b254
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222330"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649585"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>HOW TO：將新的項目新增至工作流程專案
 
 您已建立工作流程專案後，您可以將工作流程活動、 設計師和其他熟悉的 Visual Studio 項目新增至您的專案。
 
 下表列出您可以新增至工作流程專案的 Windows Workflow Foundation (WF) 項目：
-
 
 | 名稱 | 描述 |
 |-| - |

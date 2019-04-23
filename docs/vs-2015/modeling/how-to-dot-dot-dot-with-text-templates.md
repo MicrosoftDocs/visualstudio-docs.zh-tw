@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bca95fff67a585aadc981e2dba10146ccf2f893c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9c31e1d17137fd0e801bb506c280a83285c311b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945901"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093016"
 ---
 # <a name="how-to--with-text-templates"></a>如何 ... 使用文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ ms.locfileid: "58945901"
 ### <a name="generate-part-of-my-application-code"></a>產生程式碼的組的件  
  我有一個組態或*模型*檔案或資料庫中。 我的程式碼的一或多個組件相依於該模型。  
   
--   從文字範本會產生一些程式碼檔案。 如需詳細資訊，請參閱 <<c0> [ 使用 T4 文字範本在設計階段的程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)並[開始撰寫範本的最佳方式為何？](#starting)。  
+- 從文字範本會產生一些程式碼檔案。 如需詳細資訊，請參閱 <<c0> [ 使用 T4 文字範本在設計階段的程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)並[開始撰寫範本的最佳方式為何？](#starting)。  
   
 ### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>在執行階段，將資料傳遞至範本產生檔案  
  在執行階段，我的應用程式會產生文字檔案，例如包含混合的標準文字和資料的報表。 我想要避免撰寫數百個`write`陳述式。  
   
--   您可以將執行階段文字範本加入專案。 此範本會建立一個類別，在您程式碼中，您可以具現化，並使用產生的文字。 您可以傳遞給它的資料，在建構函式參數。 如需詳細資訊，請參閱 <<c0> [ 執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
+- 您可以將執行階段文字範本加入專案。 此範本會建立一個類別，在您程式碼中，您可以具現化，並使用產生的文字。 您可以傳遞給它的資料，在建構函式參數。 如需詳細資訊，請參閱 <<c0> [ 執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
--   如果您想要從只能在執行階段可用的範本產生，您可以使用標準文字範本。 如果您正在撰寫[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]延伸模組，您可以叫用文字範本化服務。 如需詳細資訊，請參閱 <<c0> [ 叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他內容中，您可以使用文字範本化引擎。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。  
+- 如果您想要從只能在執行階段可用的範本產生，您可以使用標準文字範本。 如果您正在撰寫[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]延伸模組，您可以叫用文字範本化服務。 如需詳細資訊，請參閱 <<c0> [ 叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他內容中，您可以使用文字範本化引擎。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。  
   
      使用\<#@parameter#> 指示詞，以將參數傳遞至這些範本。 如需詳細資訊，請參閱 < [T4 參數指示詞](../modeling/t4-parameter-directive.md)。  
   
 ### <a name="read-another-project-file-from-a-template"></a>從範本讀取另一個專案檔  
  若要從相同讀取檔案[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]做為範本的專案：  
   
--   將 `hostSpecific="true"` 插入至 `<#@template#>` 指示詞。  
+- 將 `hostSpecific="true"` 插入至 `<#@template#>` 指示詞。  
   
      在您的程式碼中，使用`this.Host.ResolvePath(filename)`來取得檔案的完整路徑。  
   
@@ -70,17 +70,17 @@ ms.locfileid: "58945901"
 ### <a name="generate-many-files-from-one-model-schema"></a>從另一個模型結構描述產生許多檔案  
  如果您通常會從具有相同的資料庫或 XML 結構描述的模型產生檔案：  
   
--   請考慮撰寫指示詞處理器。 這可讓您將多個組件陳述式和匯入每個使用單一自訂指示詞的範本中的陳述式。 指示詞處理器也可以載入並剖析的模型檔案。 如需詳細資訊，請參閱 <<c0> [ 建立自訂 T4 文字範本指示詞處理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。  
+- 請考慮撰寫指示詞處理器。 這可讓您將多個組件陳述式和匯入每個使用單一自訂指示詞的範本中的陳述式。 指示詞處理器也可以載入並剖析的模型檔案。 如需詳細資訊，請參閱 <<c0> [ 建立自訂 T4 文字範本指示詞處理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。  
   
 ### <a name="generate-files-from-a-complex-model"></a>透過複雜的模型產生檔案  
   
--   請考慮建立特定領域語言 (DSL) 來代表此模型。 這讓您更輕鬆地撰寫範本，因為您是使用型別和屬性會反映在模型中項目的名稱。 您沒有要剖析的檔案，或瀏覽 XML 節點。 例如:   
+- 請考慮建立特定領域語言 (DSL) 來代表此模型。 這讓您更輕鬆地撰寫範本，因為您是使用型別和屬性會反映在模型中項目的名稱。 您沒有要剖析的檔案，或瀏覽 XML 節點。 例如:   
   
      `foreach (Book book in this.Library) { ... }`  
   
      如需詳細資訊，請參閱 < [Getting Started with 定義域專屬語言](../modeling/getting-started-with-domain-specific-languages.md)並[特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。  
   
--   請考慮從 UML 模型產生程式碼。 若要直接反映 UML 沒有程式碼。 例如，您不必在 UML 模型產生每個類別的類別。 相反地，您可以使用 UML 類別圖來代表某個網站，並從每個 UML 類別產生的網頁。 選擇圖表類型最接近您的需求。 例如，選擇 活動圖表來代表任何類型的工作流程。 您可以定義造型加入適合您的應用程式，每個項目類型的資訊。  
+- 請考慮從 UML 模型產生程式碼。 若要直接反映 UML 沒有程式碼。 例如，您不必在 UML 模型產生每個類別的類別。 相反地，您可以使用 UML 類別圖來代表某個網站，並從每個 UML 類別產生的網頁。 選擇圖表類型最接近您的需求。 例如，選擇 活動圖表來代表任何類型的工作流程。 您可以定義造型加入適合您的應用程式，每個項目類型的資訊。  
   
      從 UML 模型產生，可讓您繪製及編輯圖表的形式，但不需要設計您自己的圖表類型，如同使用 DSL 的模型。  
   
@@ -104,21 +104,21 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ### <a name="execute-text-templates-in-the-build-process"></a>在建置程序中執行文字範本  
   
--   如需詳細資訊，請參閱 <<c0> [ 建置流程中的程式碼產生](../modeling/code-generation-in-a-build-process.md)。  
+- 如需詳細資訊，請參閱 <<c0> [ 建置流程中的程式碼產生](../modeling/code-generation-in-a-build-process.md)。  
   
 ## <a name="more-general-questions"></a>更多一般問題  
   
-###  <a name="starting"></a> 若要開始撰寫文字範本的最佳方式為何？  
+### <a name="starting"></a> 若要開始撰寫文字範本的最佳方式為何？  
   
-1.  寫入產生的檔案的特定範例。  
+1. 寫入產生的檔案的特定範例。  
   
-2.  將它轉換成文字範本中，插入`<#@template #>`指示詞，指示詞和程式碼所需載入模型的輸入的檔案。  
+2. 將它轉換成文字範本中，插入`<#@template #>`指示詞，指示詞和程式碼所需載入模型的輸入的檔案。  
   
-3.  以漸進方式取代檔案的部分運算式和程式碼區塊。  
+3. 以漸進方式取代檔案的部分運算式和程式碼區塊。  
   
 ### <a name="what-is-a-model"></a>什麼是 「 模型 」？  
   
--   您的範本所讀取的輸入。 可能是在檔案或資料庫中。 這可能是 XML，或 Visio 繪圖，或特定領域語言 (DSL) 或 UML 模型中，或可能是純文字。 它可以分散到數個檔案。 通常是多個範本讀取一個模型。  
+- 您的範本所讀取的輸入。 可能是在檔案或資料庫中。 這可能是 XML，或 Visio 繪圖，或特定領域語言 (DSL) 或 UML 模型中，或可能是純文字。 它可以分散到數個檔案。 通常是多個範本讀取一個模型。  
   
      「 模型 」 一詞的含意是業務的，它代表某方面更直接比產生的程式碼或其他檔案。 比方說，它可能會代表您產生的軟體會負責通訊網路的計劃。  
   
@@ -129,8 +129,8 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ### <a name="what-best-practices-are-there-for-text-templates"></a>哪些 「 最佳作法 」 有文字範本？  
   
--   如需詳細資訊，請參閱 <<c0> [ 撰寫 T4 文字範本的指導方針](../modeling/guidelines-for-writing-t4-text-templates.md)。  
+- 如需詳細資訊，請參閱 <<c0> [ 撰寫 T4 文字範本的指導方針](../modeling/guidelines-for-writing-t4-text-templates.md)。  
   
 ### <a name="what-is-t4"></a>什麼是 「 T4 」？  
   
--   另一個名稱[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]此處所述的文字範本功能。 舊的版本中，未發行，是 「 文字範本轉換 」 的縮寫。
+- 另一個名稱[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]此處所述的文字範本功能。 舊的版本中，未發行，是 「 文字範本轉換 」 的縮寫。

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc9ba407e91ddc8125d2836c8e2bb4329d5ad91f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2f4de1b8202f95a76dd6688a8dcfcc786a435aed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945323"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059068"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>HOW TO：與 ClickOnce 應用程式一起納入必要軟體
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,17 +24,17 @@ ms.locfileid: "58945323"
 > [!NOTE]
 >  若要加入.NET Framework 的安裝程式套件，請參閱[適用於開發人員的.NET Framework 部署指南](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx)。  
   
-##  <a name="Package"></a> 若要使用 Package.xml 新增安裝程式套件  
+## <a name="Package"></a> 若要使用 Package.xml 新增安裝程式套件  
   
-1.  在 [檔案總管] 中，開啟 [套件] 資料夾。  
+1. 在 [檔案總管] 中，開啟 [套件] 資料夾。  
   
      根據預設，在 32 位元系統上路徑為 C:\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages，在 64 位元系統上路徑為 C:\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages。  
   
-2.  開啟您要新增的必要條件資料夾，然後開啟安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 版本的語言資料夾 (例如，**en** 代表英文)。  
+2. 開啟您要新增的必要條件資料夾，然後開啟安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 版本的語言資料夾 (例如，**en** 代表英文)。  
   
-3.  在 [記事本] 中，開啟 **Package.xml** 檔案。  
+3. 在 [記事本] 中，開啟 **Package.xml** 檔案。  
   
-4.  找出**名稱**包含的項目**http://go.microsoft.com/fwlink**，並複製 URL。 包括 **LinkID** 部分。  
+4. 找出**名稱**包含的項目**http://go.microsoft.com/fwlink**，並複製 URL。 包括 **LinkID** 部分。  
   
     > [!NOTE]
     >  如果沒有**名稱**項目包含**http://go.microsoft.com/fwlink**，開啟**Product.xml**必要條件的根資料夾中的檔案，並找出**fwlink**字串。  
@@ -42,11 +42,11 @@ ms.locfileid: "58945323"
     > [!IMPORTANT]
     >  有些必要條件包含多個安裝程式套件 (例如，用於 32 位元或 64 位元系統)。 如果有多個 [Name] 元素包含 **fwlink**，則必須針對每一個元素重覆其餘步驟。  
   
-5.  將 URL 貼上瀏覽器的網址列，然後在系統提示您執行或儲存時，選擇 [儲存]。  
+5. 將 URL 貼上瀏覽器的網址列，然後在系統提示您執行或儲存時，選擇 [儲存]。  
   
      這個步驟會將安裝程式檔下載至您的電腦。  
   
-6.  將檔案複製到必要條件的根資料夾。  
+6. 將檔案複製到必要條件的根資料夾。  
   
      例如，若是 Windows Installer 4.5 必要條件，則將檔案複製到 \Packages\WindowsInstaller4_5 資料夾。  
   

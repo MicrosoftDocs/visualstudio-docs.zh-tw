@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: da0c73655c5c08da993fdf72bffdfeca0eb4b304
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82247c2510d64f712cc4b703154ea16a4bb7e7e1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940992"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647442"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML 結構描述對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 **XML 結構描述**對話方塊用來選取哪一個 XML 結構描述定義語言 (XSD) 結構描述與 XML 文件產生關聯。 您可以從結構描述快取中選取結構描述，或指定快取中沒有的結構描述。 選取的結構描述會被視為結構描述集的一部分。 結構描述集用於 IntelliSense 以及 XML 文件驗證。  
   
  您可以存取**XML 結構描述**對話方塊中，按一下**結構描述**按鈕，在 [文件屬性] 視窗中，或選取**結構描述**從**XML**功能表。  

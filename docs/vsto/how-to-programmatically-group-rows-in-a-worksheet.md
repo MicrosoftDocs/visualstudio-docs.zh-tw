@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2ff75594cd3c1eb560f9cded5dad2a764198fb5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2498029b5570a1576f62bcf042a7b87f856f3de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598221"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076650"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>HOW TO：以程式設計方式在工作表中的群組資料列
   您可以群組一個或多個完整的資料列。 若要建立群組時的工作表中，使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。
@@ -37,7 +37,7 @@ ms.locfileid: "56598221"
 
 ### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>若要建立的工作表上的 NamedRange 控制項群組
 
-1.  藉由呼叫群組三個具名的範圍<xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A>的每個範圍的方法。 這個程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。
+1. 藉由呼叫群組三個具名的範圍<xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A>的每個範圍的方法。 這個程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
@@ -50,7 +50,7 @@ ms.locfileid: "56598221"
 
 ### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>若要在工作表中建立的 Excel 範圍群組
 
-1.  藉由呼叫群組三個具名的範圍<xref:Microsoft.Office.Interop.Excel.Range.Group%2A>的每個範圍的方法。 下列範例假設有三個<xref:Microsoft.Office.Interop.Excel.Range>控制項命名為`data2001`， `data2002`，和`dataAll`相同的工作表上。 每個具名的範圍指的是工作表中的整個資料列。
+1. 藉由呼叫群組三個具名的範圍<xref:Microsoft.Office.Interop.Excel.Range.Group%2A>的每個範圍的方法。 下列範例假設有三個<xref:Microsoft.Office.Interop.Excel.Range>控制項命名為`data2001`， `data2002`，和`dataAll`相同的工作表上。 每個具名的範圍指的是工作表中的整個資料列。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]

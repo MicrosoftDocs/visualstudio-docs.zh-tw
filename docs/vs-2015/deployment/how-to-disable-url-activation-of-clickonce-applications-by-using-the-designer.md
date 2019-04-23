@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d797b0881ef06d8934df52473ae8178e520f96f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 27690ab275d0c7ef2a090fa8ef2e42887ae9daeb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930244"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043845"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>HOW TO：使用設計工具停用 ClickOnce 應用程式的 URL 啟動
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ ms.locfileid: "58930244"
   
 #### <a name="to-disable-url-activation-for-your-application"></a>若要停用應用程式的 URL 啟用  
   
-1.  以滑鼠右鍵按一下您的專案名稱，在**方案總管**，然後按一下**屬性**。  
+1. 以滑鼠右鍵按一下您的專案名稱，在**方案總管**，然後按一下**屬性**。  
   
-2.  在 [**屬性**頁面上，按一下**發佈**] 索引標籤。  
+2. 在 [**屬性**頁面上，按一下**發佈**] 索引標籤。  
   
-3.  按一下 [選項] 。  
+3. 按一下 [選項] 。  
   
-4.  按一下 **資訊清單**。  
+4. 按一下 **資訊清單**。  
   
-5.  選取核取方塊**封鎖應用程式，使其無法透過 URL 啟動**。  
+5. 選取核取方塊**封鎖應用程式，使其無法透過 URL 啟動**。  
   
-6.  部署您的應用程式。  
+6. 部署您的應用程式。  
   
 ## <a name="see-also"></a>另請參閱  
  [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)

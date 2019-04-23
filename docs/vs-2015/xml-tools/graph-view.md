@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf9f92e56d9405a5945fe160860175d575e57cc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940279"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110540"
 ---
 # <a name="graph-view"></a>圖形檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 圖表檢視會以圖形表示全域結構描述節點以及節點之間的關聯性。 請注意，圖表檢視無法讓您在設計介面上改變結構描述集的配置。 圖表檢視還包含 XML 結構描述設計工具工具列和階層連結列。  
   
  下圖顯示的設計介面中包含六個全域節點的圖表檢視。  
@@ -116,11 +115,11 @@ ms.locfileid: "58940279"
 ## <a name="undoredo"></a>復原/取消復原  
  在圖表檢視中啟用的復原/取消復原功能可執行下列動作：  
   
--   透過拖放方式加入單一節點。  
+- 透過拖放方式加入單一節點。  
   
--   從結構描述總管或開始檢視查詢中的搜尋結果加入多個節點。  
+- 從結構描述總管或開始檢視查詢中的搜尋結果加入多個節點。  
   
--   刪除單一或多個節點。  
+- 刪除單一或多個節點。  
   
 ## <a name="zoom"></a>縮放  
  縮放位於圖表模型檢視的右下角。  

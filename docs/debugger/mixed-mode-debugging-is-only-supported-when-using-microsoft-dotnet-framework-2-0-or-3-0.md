@@ -15,43 +15,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9edda3762d17dcdf7ec23505646e4b166b0ea91a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 827d3c5fcc625601019d6cbf61cdbf7c771b63b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710964"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111957"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>只有使用 Microsoft .NET Framework 2.0 或 3.0 版本時才支援混合模式偵錯
 在 2.0 版之前的 Microsoft .NET Framework 沒有提供 64 位元處理序的混合模式偵錯支援。 這表示在偵錯時，您無法從 Managed 程式碼逐步執行到機器碼，或從機器碼逐步執行到 Managed 程式碼。
 
  若要解決這個問題，您可以：
 
--   更新專案，以使用 Microsoft .NET Framework 2.0 或 3.0。
+- 更新專案，以使用 Microsoft .NET Framework 2.0 或 3.0。
 
--   在不同的偵錯工作階段中分別偵錯 Managed 程式碼和機器碼。
+- 在不同的偵錯工作階段中分別偵錯 Managed 程式碼和機器碼。
 
--   將混合程式碼當做 32 位元處理序來偵錯，如下列程序所述。
+- 將混合程式碼當做 32 位元處理序來偵錯，如下列程序所述。
 
 ### <a name="to-change-the-operating-system-to-32-bit-visual-basic-or-c"></a>若要將作業系統變更為 32 位元 (Visual Basic 或 C#)
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下捷徑功能表中的 [屬性]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下捷徑功能表中的 [屬性]。
 
-2.  在屬性頁中，按一下 [編譯] 或 [偵錯] 索引標籤。
+2. 在屬性頁中，按一下 [編譯] 或 [偵錯] 索引標籤。
 
-3.  按一下 [平台]，然後從平台清單選取 [x86]。
+3. 按一下 [平台]，然後從平台清單選取 [x86]。
 
      根據預設，Visual Basic 和 C# 編譯器會產生可針對任何 CPU 執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理序上執行，您必須選擇 [Win32]，而非 [AnyCPU]。
 
 ### <a name="to-change-the-operating-system-to-32-bit-cc"></a>若要將作業系統變更為 32 位元 (C/C++)
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下捷徑功能表中的 [屬性]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下捷徑功能表中的 [屬性]。
 
      在屬性頁中，按一下 [平台]，然後從平台清單選取 [Win32]。
 
 ### <a name="to-correct-this-error"></a>更正這個錯誤
 
--   請參閱[設定 SQL 偵錯](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))。
+- 請參閱[設定 SQL 偵錯](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)

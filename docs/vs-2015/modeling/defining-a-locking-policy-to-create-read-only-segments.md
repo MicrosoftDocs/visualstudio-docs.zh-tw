@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e882818471014df66ef160521a6e9111a47a27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941610"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062239"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定義鎖定原則來建立唯讀區段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ partition.SetLocks(Locks.Delete);
 ### <a name="using-locks"></a>使用鎖定  
  您可以使用鎖定來實作配置，如下所示：  
   
--   不允許所有的項目和關聯性以外，表示註解的變更。 這可讓使用者加上註解不需要變更它的模型。  
+- 不允許所有的項目和關聯性以外，表示註解的變更。 這可讓使用者加上註解不需要變更它的模型。  
   
--   不允許預設分割區中的變更，但允許在圖表的資料分割的變更。 使用者可以重新排列圖表中，但不能改變基礎的模型。  
+- 不允許預設分割區中的變更，但允許在圖表的資料分割的變更。 使用者可以重新排列圖表中，但不能改變基礎的模型。  
   
--   禁止變更除了在個別的資料庫中註冊的使用者群組的存放區。 其他使用者時，圖表和模型是唯讀。  
+- 禁止變更除了在個別的資料庫中註冊的使用者群組的存放區。 其他使用者時，圖表和模型是唯讀。  
   
--   不允許為模型的變更，如果圖表的布林值屬性設定為 true。 提供功能表命令，以變更該屬性。 這有助於確保它們不會進行的使用者不小心變更。  
+- 不允許為模型的變更，如果圖表的布林值屬性設定為 true。 提供功能表命令，以變更該屬性。 這有助於確保它們不會進行的使用者不小心變更。  
   
--   不允許新增和刪除的項目和關聯性的特定類別，但允許變更屬性。 這會將使用者提供固定的表單開發人員可以在其中填入屬性。  
+- 不允許新增和刪除的項目和關聯性的特定類別，但允許變更屬性。 這會將使用者提供固定的表單開發人員可以在其中填入屬性。  
   
 ## <a name="lock-values"></a>鎖定值  
  鎖定可以設定存放區、 磁碟分割，或個別的 ModelElement。 鎖定是`Flags`列舉型別： 您可以結合使用其值 '&#124;'。  
@@ -97,9 +97,9 @@ partition.SetLocks(Locks.Delete);
   
  若要定義鎖定原則，您必須：  
   
--   建立會實作 <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> 的類別。  
+- 建立會實作 <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> 的類別。  
   
--   加入這個類別都是透過您的 DSL 的 DocData 的服務。  
+- 加入這個類別都是透過您的 DSL 的 DocData 的服務。  
   
 ### <a name="to-define-a-locking-policy"></a>若要定義鎖定原則  
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> 具有下列定義：  

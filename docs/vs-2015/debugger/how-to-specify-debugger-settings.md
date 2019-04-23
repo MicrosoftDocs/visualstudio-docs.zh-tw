@@ -23,12 +23,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ad4e95f9032c3182da3fe59cee16e4ccc3066c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54cb1f67aa1738126fd78e2406c076a4fefa8823
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051452"
 ---
 # <a name="how-to-specify-debugger-settings"></a>HOW TO：指定偵錯工具設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "58945455"
   
 ### <a name="to-set-debugger-options"></a>若要設定偵錯工具選項  
   
-1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。  
+1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。  
   
-2.  在 [選項] 對話方塊中開啟 [偵錯] 資料夾。  
+2. 在 [選項] 對話方塊中開啟 [偵錯] 資料夾。  
   
-3.  在 [偵錯] 資料夾中選擇您要的選項分類。  
+3. 在 [偵錯] 資料夾中選擇您要的選項分類。  
   
      最常見的選項位於 [一般] 分類。 如需詳細資訊，請參閱 [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)。  
   
-4.  選取或清除所需選項或選項。 請按 F1 取得這些選項的相關說明。  
+4. 選取或清除所需選項或選項。 請按 F1 取得這些選項的相關說明。  
   
 ## <a name="see-also"></a>另請參閱  
  [選項對話方塊、偵錯、一般](../debugger/general-debugging-options-dialog-box.md)   

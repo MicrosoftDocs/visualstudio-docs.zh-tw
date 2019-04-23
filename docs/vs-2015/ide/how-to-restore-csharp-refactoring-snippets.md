@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9ebd6b96a24b10601257d5eefc58014ef7058c9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9f81514db881ad26a5fa827b0bde11df2467f23d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782592"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050808"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>如何：還原 C# 重構程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ C# 重構作業需仰賴在下列目錄中找到的程式碼片段：
   
 ### <a name="to-verify-c-refactoring-snippets-are-available-through-the-code-snippet-manager"></a>若要透過程式碼片段管理員，驗證 C# 重構程式碼片段是否可用  
   
-1.  在 [工具] 功能表上，選取 [程式碼片段管理員]。  
+1. 在 [工具] 功能表上，選取 [程式碼片段管理員]。  
   
-2.  在 [程式碼片段管理員] 對話方塊中，選取 [語言] 下拉式清單中的 [Visual C#]。  
+2. 在 [程式碼片段管理員] 對話方塊中，選取 [語言] 下拉式清單中的 [Visual C#]。  
   
      樹狀檢視資料夾清單應會顯示 [重構] 資料夾。  
   
 ### <a name="to-restore-refactoring-see-comment-in-code-snippet-manager"></a>若要還原重構，請參閱程式碼片段管理員中的註解。  
   
-1.  如果程式碼片段管理員中的樹狀檢視資料夾清單未顯示 [重構] 資料夾，請使用此程序，將重構程式碼片段加回程式碼片段管理員。  
+1. 如果程式碼片段管理員中的樹狀檢視資料夾清單未顯示 [重構] 資料夾，請使用此程序，將重構程式碼片段加回程式碼片段管理員。  
   
-2.  在 [工具] 功能表上，選取 [程式碼片段管理員]。  
+2. 在 [工具] 功能表上，選取 [程式碼片段管理員]。  
   
-3.  在 [程式碼片段管理員] 對話方塊中，選取 [語言] 下拉式清單中的 [Visual C#]。  
+3. 在 [程式碼片段管理員] 對話方塊中，選取 [語言] 下拉式清單中的 [Visual C#]。  
   
-4.  按一下 [加入] 。 [程式碼片段目錄] 對話方塊隨即出現，其有助您尋找並指定要加回程式碼片段管理員的目錄。  
+4. 按一下 [加入] 。 [程式碼片段目錄] 對話方塊隨即出現，其有助您尋找並指定要加回程式碼片段管理員的目錄。  
   
-5.  找出目錄路徑如下的 [重構] 資料夾：  
+5. 找出目錄路徑如下的 [重構] 資料夾：  
   
      <安裝目錄>\Microsoft Visual Studio 14.0\VC#\Snippets\\<語言識別碼>\Refactoring  
   
@@ -54,7 +54,7 @@ C# 重構作業需仰賴在下列目錄中找到的程式碼片段：
   
      C:\Program Files\Microsoft Visual Studio 14.0\VC#\Snippets\1033\Refactoring。  
   
-6.  按一下 [程式碼片段目錄] 對話方塊中的 [開啟]，然後按一下程式碼片段管理員中的 [確定]。  
+6. 按一下 [程式碼片段目錄] 對話方塊中的 [開啟]，然後按一下程式碼片段管理員中的 [確定]。  
   
 ## <a name="see-also"></a>請參閱  
  [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)   

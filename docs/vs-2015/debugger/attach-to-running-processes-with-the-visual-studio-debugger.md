@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3fca78c684ac30ca09aedf3c1b9547103608a4f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0ebd89937eedfc2851c3b57998ef2628f9e8904
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943804"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053295"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio Debugger 附加至執行中處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,12 +46,12 @@ ms.locfileid: "58943804"
 > [!TIP]
 > 不確定是否要使用**附加至處理序**偵錯案例嗎？ 請參閱[常見偵錯案例](#BKMK_Scenarios)。 如果您想要偵錯 ASP.NET 應用程式已部署至 IIS，請參閱[在執行 IIS 的遠端電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> 附加至本機電腦上執行的處理序
+## <a name="BKMK_Attach_to_a_running_process"></a> 附加至本機電腦上執行的處理序
  若要附加至處理序，您必須知道處理序名稱 (請參閱[常見偵錯案例](#BKMK_Scenarios)的幾個常見的程序名稱)。
 
-1.  在 Visual Studio 中，選取**偵錯] / [附加至處理序**(或按**CTRL + ALT + P**)。
+1. 在 Visual Studio 中，選取**偵錯] / [附加至處理序**(或按**CTRL + ALT + P**)。
 
-2.  請在 [附加至處理序]  對話方塊的 [可使用的處理序]  清單中，尋找您要附加的程式。
+2. 請在 [附加至處理序]  對話方塊的 [可使用的處理序]  清單中，尋找您要附加的程式。
 
      若要快速地選取您想要的程序，請輸入處理序名稱的第一個字母。 如果您不知道處理程序名稱，請參閱[常見偵錯案例](#BKMK_Scenarios)。
 
@@ -59,17 +59,17 @@ ms.locfileid: "58943804"
 
      如果該處理序正在不同的使用者帳戶下執行，請選取 [顯示所有使用者的處理序]  核取方塊。
 
-3.  在 [附加至]  方塊中，確定其中已列出您要偵錯的程式碼類型。 預設的 [自動]  設定會自動判斷您要偵錯的程式碼類型。 若要手動設定程式碼類型，請執行下列程序
+3. 在 [附加至]  方塊中，確定其中已列出您要偵錯的程式碼類型。 預設的 [自動]  設定會自動判斷您要偵錯的程式碼類型。 若要手動設定程式碼類型，請執行下列程序
 
-    1.  按一下 [附加至]  方塊中的 [選取] 。
+    1. 按一下 [附加至]  方塊中的 [選取] 。
 
-    2.  在 [選取程式碼類型]  對話方塊中，按一下 [偵錯這些程式碼類型]  ，然後選取要偵錯的類型。
+    2. 在 [選取程式碼類型]  對話方塊中，按一下 [偵錯這些程式碼類型]  ，然後選取要偵錯的類型。
 
-    3.  按一下 [確定 **Deploying Office Solutions**]。
+    3. 按一下 [確定] 。
 
-4.  按一下 [附加] 。
+4. 按一下 [附加] 。
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> 附加至遠端電腦上的處理序
+## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> 附加至遠端電腦上的處理序
  若要附加至處理序，您必須知道處理序名稱 (請參閱[常見偵錯案例](#BKMK_Scenarios)的幾個常見的程序名稱)。 如需更完整的已部署至 IIS 的 ASP.NET 應用程式的詳細指引，請參閱[在執行 IIS 的遠端電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。 若為其他應用程式，您或許可在 [工作管理員] 中找到處理序名稱。
 
  使用 [附加至處理序]  對話方塊時，您可以選取已針對遠端偵錯設定的其他電腦。 如需詳細資訊，請參閱 <<c0> [ 遠端偵錯](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)。 當您選取了遠端電腦時，您可以檢視該電腦上正在執行的可使用處理序清單，並附加至其中一個或多個處理序進行偵錯。
@@ -146,7 +146,7 @@ ms.locfileid: "58943804"
 
 在本機偵錯案例，您可以偵錯在 Visual Studio 中而無法存取來源如果應用程式有正確的符號檔 （根據預設，這需要偵錯組建）。 如需詳細資訊，請參閱 <<c0> [ 指定的符號和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> 針對附加錯誤進行疑難排解
+## <a name="BKMK_Troubleshoot_attach_errors"></a> 針對附加錯誤進行疑難排解
  當偵錯工具附加至執行中的處理序時，該處理序可以包含一種或多種程式碼類型。 偵錯工具可附加的程式碼類型會在 [選取程式碼類型]  對話方塊中顯示並供您選取。
 
  有時候，偵錯工具可以成功附加至一種程式碼類型，而無法附加至另一種程式碼類型。 如果您嘗試附加至遠端電腦上正在執行的處理序，可能會發生這種狀況。 遠端電腦可能為某些程式碼類型安裝了遠端偵錯元件，但沒有安裝其他程式碼類型的遠端偵錯元件。 如果您嘗試附加至兩個或多個處理序以進行直接的資料庫偵錯，也可能會發生這種狀況。 (SQL 偵錯僅支援附加至單一處理序)。

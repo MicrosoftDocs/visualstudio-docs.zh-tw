@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2aaf61ada4167f29f1c6d4754ced7c9757054a88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945834"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089974"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>HOW TO：在工作流程中設定中斷點
 使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 時，您可以在圖形化工作流程上設定中斷點，就像利用 Visual Basic 或 C# 程式碼設定一樣。 如預期般，工作流程執行會在您設定的每個中斷點上停止。  
@@ -32,9 +32,9 @@ ms.locfileid: "58945834"
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>若要在設計檢視中的活動上設定中斷點  
   
-1.  選取您要偵錯工具中斷在哪一個活動上。  
+1. 選取您要偵錯工具中斷在哪一個活動上。  
   
-2.  在 **偵錯**功能表上，選取**切換中斷點**。 活動左邊的最上方會出現紅色圖示。  
+2. 在 **偵錯**功能表上，選取**切換中斷點**。 活動左邊的最上方會出現紅色圖示。  
   
      或者，您也可以按快速鍵**F9**金鑰後選取的活動，或您可以以滑鼠右鍵按一下活動，並選取**中斷點**然後**插入中斷點**從內容功能表。  
   

@@ -1,5 +1,5 @@
 ---
-title: 新的專案產生：在幕後，第一部 |Microsoft Docs
+title: 新專案產生：在幕後，第一部 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,27 +11,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd31b87f6a82ae11a21d2f7373f98ede01e1fdea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605675"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091937"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>新的專案產生：在幕後，第一部
+# <a name="new-project-generation-under-the-hood-part-one"></a>新專案產生：一探究竟，第一部份
 有人想到要如何建立您自己的專案類型嗎？ 不知道實際發生什麼事時建立新的專案？ 讓我們來看一下在幕後，並請參閱什麼實際狀況。
 
  有數個 Visual Studio 協調您的工作：
 
--   它會顯示所有可用的專案類型的樹狀結構。
+- 它會顯示所有可用的專案類型的樹狀結構。
 
--   它會顯示每個專案類型的應用程式範本的清單，並可讓您挑選其中一個。
+- 它會顯示每個專案類型的應用程式範本的清單，並可讓您挑選其中一個。
 
--   它會收集應用程式，例如專案名稱和路徑的專案資訊。
+- 它會收集應用程式，例如專案名稱和路徑的專案資訊。
 
--   它會將這項資訊傳遞 project factory。
+- 它會將這項資訊傳遞 project factory。
 
--   它會在目前的方案中產生專案項目和資料夾。
+- 它會在目前的方案中產生專案項目和資料夾。
 
 ## <a name="the-new-project-dialog-box"></a>新的 [專案] 對話方塊
  選取新的專案的專案類型時，即開始這一切。 首先讓我們依序按一下**新的專案**上**檔案**功能表。 **新的專案** 對話方塊隨即出現，尋找如下所示：
@@ -114,11 +114,11 @@ devenv /installvstemplates
 
  當**新的專案**對話方塊隨即開啟，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]周遊 ProjectTemplates 資料夾，並重新建立其結構**專案類型**樹狀目錄中的有一些變更：
 
--   中的根節點**專案類型**樹狀結構由應用程式範本。
+- 中的根節點**專案類型**樹狀結構由應用程式範本。
 
--   節點名稱可以當地語系化，而且可以包含特殊字元。
+- 節點名稱可以當地語系化，而且可以包含特殊字元。
 
--   可以變更排序次序。
+- 可以變更排序次序。
 
 ##### <a name="finding-the-root-node-for-a-project-type"></a>尋找專案類型的根節點
  當 Visual Studio 會周遊 ProjectTemplates 資料夾時，它會開啟所有的.zip 檔案，並擷取任何.vstemplate 檔案。 .Vstemplate 檔案使用 XML 來描述應用程式範本。 如需詳細資訊，請參閱[產生新專案：在幕後，第二部](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5542e1ddde595bd22b34d339fd422e003a0ef0e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 08303b672fe45db4b6ccfcb5a64be5115e660186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618597"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069430"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>HOW TO：以程式設計方式儲存 Visio 文件
   儲存 Microsoft Office Visio 文件的方式有很多種：
@@ -35,7 +35,7 @@ ms.locfileid: "56618597"
 
 ### <a name="to-save-a-document"></a>儲存文件
 
--   呼叫已儲存過文件之 `Microsoft.Office.Tools.Visio.Document` 類別的 `Microsoft.Office.Interop.Visio.Document.Save` 方法。
+- 呼叫已儲存過文件之 `Microsoft.Office.Tools.Visio.Document` 類別的 `Microsoft.Office.Interop.Visio.Document.Save` 方法。
 
      若要使用此程式碼範例，請從專案的 `ThisAddIn` 類別中執行它。
 
@@ -50,7 +50,7 @@ ms.locfileid: "56618597"
 
 ### <a name="to-save-the-active-visio-document-with-a-new-name"></a>以新名稱儲存使用中的 Visio 文件
 
--   使用包括檔案名稱的完整路徑呼叫您要儲存之 `Microsoft.Office.Tools.Visio.Document` 的 `Microsoft.Office.Interop.Visio.Document.SaveAs` 方法。 如果該資料夾中已有同名的檔案，即會以無訊息方式覆寫。
+- 使用包括檔案名稱的完整路徑呼叫您要儲存之 `Microsoft.Office.Tools.Visio.Document` 的 `Microsoft.Office.Interop.Visio.Document.SaveAs` 方法。 如果該資料夾中已有同名的檔案，即會以無訊息方式覆寫。
 
      若要使用此程式碼範例，請從專案的 `ThisAddIn` 類別中執行它。
 
@@ -62,7 +62,7 @@ ms.locfileid: "56618597"
 
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>以新名稱和指定的引數儲存文件
 
--   使用包括檔案名稱的完整路徑呼叫您要儲存之 `Microsoft.Office.Tools.Visio.Document` 的 `Microsoft.Office.Interop.Visio.Document.SaveAsEx` 方法。 如果該資料夾中已有同名的檔案，即擲回例外狀況。
+- 使用包括檔案名稱的完整路徑呼叫您要儲存之 `Microsoft.Office.Tools.Visio.Document` 的 `Microsoft.Office.Interop.Visio.Document.SaveAsEx` 方法。 如果該資料夾中已有同名的檔案，即擲回例外狀況。
 
      下列程式碼範例會以新名稱儲存使用中的文件、將文件標示為唯讀，以及在 [最近使用的清單] 中顯示文件。 若要使用此程式碼範例，請從專案的 `ThisAddIn` 類別中執行它。
 
@@ -72,7 +72,7 @@ ms.locfileid: "56618597"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個程式碼範例需要下列項目：
 
--   若要儲存具有新名稱的文件，目錄名稱為`Test`必須位於*我的文件*資料夾 （適用於 Windows XP 及更早版本） 或*文件*（適用於 Windows Vista) 的資料夾。
+- 若要儲存具有新名稱的文件，目錄名稱為`Test`必須位於*我的文件*資料夾 （適用於 Windows XP 及更早版本） 或*文件*（適用於 Windows Vista) 的資料夾。
 
 ## <a name="see-also"></a>另請參閱
 - [Visio 方案](../vsto/visio-solutions.md)

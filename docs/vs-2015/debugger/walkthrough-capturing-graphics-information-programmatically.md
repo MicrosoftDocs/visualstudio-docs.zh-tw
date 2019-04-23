@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bb12e0691d4e867a73b9c8999d0ad57cebd7ec44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c1a5e5d8d33fed3c4e6348bcf2598f7093de5c98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093098"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>逐步解說：以程式設計方式擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,22 +23,22 @@ ms.locfileid: "58942667"
   
  在下列這類情況下，程式設計擷取十分有用：  
   
--   圖形應用程式未使用現有的 Swapchain 時 (例如呈現為材質時)，會以程式設計方式開始擷取。  
+- 圖形應用程式未使用現有的 Swapchain 時 (例如呈現為材質時)，會以程式設計方式開始擷取。  
   
--   應用程式未呈現時 (例如使用 DirectCompute 執行計算時)，會以程式設計方式開始擷取。  
+- 應用程式未呈現時 (例如使用 DirectCompute 執行計算時)，會以程式設計方式開始擷取。  
   
--   如果呈現問題很難預期以及在手動測試中擷取，但是可以在執行階段使用應用程式狀態資訊，透過程式設計方式進行預測，請呼叫 `CaptureCurrentFrame`。  
+- 如果呈現問題很難預期以及在手動測試中擷取，但是可以在執行階段使用應用程式狀態資訊，透過程式設計方式進行預測，請呼叫 `CaptureCurrentFrame`。  
   
-##  <a name="CaptureDX11_2"></a> Windows 8.1 中的程式設計擷取  
+## <a name="CaptureDX11_2"></a> Windows 8.1 中的程式設計擷取  
  這部分的逐步解說示範如何在 Windows 8.1 上使用 DirectX 11.2 API 的應用程式中進行程式設計擷取 (使用穩固擷取方法)。 如需如何在於 Windows 8.0 上使用舊版 DirectX 的應用程式中，使用程式設計擷取的資訊，請參閱本逐步解說稍後的 [Programmatic capture in Windows 8.0 and earlier](#CaptureDX11_1) 。  
   
  本節顯示如何執行這些工作：  
   
--   準備應用程式以使用程式設計擷取  
+- 準備應用程式以使用程式設計擷取  
   
--   取得 IDXGraphicsAnalysis 介面  
+- 取得 IDXGraphicsAnalysis 介面  
   
--   擷取圖形資訊  
+- 擷取圖形資訊  
   
 > [!NOTE]
 >  先前的程式設計擷取實作依賴 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 遠端工具來提供擷取功能，但是 Windows 8.1 透過 DirectX 11.2 支援直接擷取。 因此，在 Windows 8.1 上進行程式設計擷取，已經不再需要安裝遠端工具。  
@@ -48,7 +48,7 @@ ms.locfileid: "58942667"
   
 ##### <a name="to-include-programmatic-capture-headers"></a>包括程式設計擷取標頭  
   
--   將這些標頭併入您將定義 IDXGraphicsAnalysis 介面的原始程式檔中：  
+- 將這些標頭併入您將定義 IDXGraphicsAnalysis 介面的原始程式檔中：  
   
     ```  
     #include <DXGItype.h>  
@@ -89,7 +89,7 @@ ms.locfileid: "58942667"
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>取得 IDXGraphicsAnalysis 介面  
   
--   請使用下列程式碼將 IDXGraphicsAnalysis 介面連結到 DXGI 偵錯介面。  
+- 請使用下列程式碼將 IDXGraphicsAnalysis 介面連結到 DXGI 偵錯介面。  
   
     ```  
     IDXGraphicsAnalysis* pGraphicsAnalysis;  
@@ -113,7 +113,7 @@ ms.locfileid: "58942667"
   
 ##### <a name="to-capture-graphics-information"></a>擷取圖形資訊  
   
--   若要開始擷取圖形資訊，請使用 `BeginCapture`：  
+- 若要開始擷取圖形資訊，請使用 `BeginCapture`：  
   
     ```  
     ...  
@@ -129,18 +129,18 @@ ms.locfileid: "58942667"
     ...  
     ```  
   
-##  <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
+## <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
  這部分的逐步解說示範如何在使用 DirectX 11.1 API 之 Windows 8.0 (含) 以前版本的應用程式中進行程式設計擷取 (使用舊版擷取方法)。 如需如何在於 Windows 8.1 上使用 DirectX 11.2 的應用程式中，使用程式設計擷取的資訊，請參閱本逐步解說稍後的 [Windows 8.1 中的程式設計擷取](#CaptureDX11_2) 。  
   
  此部分顯示下列工作：  
   
--   準備電腦以使用程式設計擷取  
+- 準備電腦以使用程式設計擷取  
   
--   準備應用程式以使用程式設計擷取  
+- 準備應用程式以使用程式設計擷取  
   
--   設定圖形記錄檔的名稱和位置  
+- 設定圖形記錄檔的名稱和位置  
   
--   使用 `CaptureCurrentFrame` API  
+- 使用 `CaptureCurrentFrame` API  
   
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>準備電腦以使用程式設計擷取  
  程式設計擷取 API 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的遠端工具來提供擷取功能。 要執行應用程式的電腦必須已安裝遠端工具，即使在本機電腦上使用程式設計擷取也是一樣。 當您在本機電腦上執行程式設計擷取時，不需要執行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
@@ -157,9 +157,9 @@ ms.locfileid: "58942667"
   
 ##### <a name="to-prepare-your-app-to-capture-graphics-information-programmatically"></a>準備應用程式以透過程式設計方式擷取圖形資訊  
   
-1.  請確定應用程式的原始程式碼中包括 `vsgcapture.h` 標頭。 它可能只會被包括在一個位置 (例如，要呼叫程式設計擷取 API 的原始程式碼檔案中)，或在從多個原始程式碼檔案呼叫 API 的預先編譯的標頭檔中。  
+1. 請確定應用程式的原始程式碼中包括 `vsgcapture.h` 標頭。 它可能只會被包括在一個位置 (例如，要呼叫程式設計擷取 API 的原始程式碼檔案中)，或在從多個原始程式碼檔案呼叫 API 的預先編譯的標頭檔中。  
   
-2.  在應用程式的原始程式碼中，若要擷取目前畫面格的其餘部分，請呼叫 `g_pVsgDbg->CaptureCurrentFrame()`。 此方法不會採用任何參數，也不會傳回值。  
+2. 在應用程式的原始程式碼中，若要擷取目前畫面格的其餘部分，請呼叫 `g_pVsgDbg->CaptureCurrentFrame()`。 此方法不會採用任何參數，也不會傳回值。  
   
 ### <a name="configuring-the-name-and-location-of-the-graphics-log-file"></a>設定圖形記錄檔的名稱和位置  
  圖形記錄會建立於 `DONT_SAVE_VSGLOG_TO_TEMP` 和 `VSG_DEFAULT_RUN_FILENAME` 巨集所定義的位置中。  
@@ -196,7 +196,7 @@ ms.locfileid: "58942667"
 ## <a name="next-steps"></a>後續步驟  
  此逐步解說示範如何透過程式設計方式擷取圖形資訊。 下一步是考慮此選項：  
   
--   了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[概觀](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
+- 了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[概觀](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說：擷取圖形資訊](../debugger/walkthrough-capturing-graphics-information.md)   

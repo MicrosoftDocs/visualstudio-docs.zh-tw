@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.openlocfilehash: 9e4a30c3aa85969a4cbf712f2f4018c24169ff6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051410"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>將資料儲存至資料庫 (多個資料表)
 
@@ -31,15 +31,15 @@ ms.locfileid: "58268553"
 
 這個逐步解說中所述的工作包括：
 
--  建立及設定您的應用程式中的資料來源[資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)。
+- 建立及設定您的應用程式中的資料來源[資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)。
 
--  設定控制項中項目的[資料來源 視窗](add-new-data-sources.md#data-sources-window)。 如需詳細資訊，請參閱 <<c0> [ 設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
+- 設定控制項中項目的[資料來源 視窗](add-new-data-sources.md#data-sources-window)。 如需詳細資訊，請參閱 <<c0> [ 設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
--  從 [資料來源] 視窗將項目拖曳至表單，以建立資料繫結控制項。
+- 從 [資料來源] 視窗將項目拖曳至表單，以建立資料繫結控制項。
 
--  修改資料集中的每個資料表中的一些記錄。
+- 修改資料集中的每個資料表中的一些記錄。
 
--  修改程式碼，以將資料集中更新的資料傳送回資料庫。
+- 修改程式碼，以將資料集中更新的資料傳送回資料庫。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -65,7 +65,7 @@ ms.locfileid: "58268553"
 
 ## <a name="create-the-data-source"></a>建立資料來源
 
-此步驟會使用 [資料來源組態精靈] 從 Northwind 資料庫建立資料來源。 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需設定 Northwind 範例資料庫的詳細資訊，請參閱[如何： 安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。
+此步驟會使用 [資料來源組態精靈] 從 Northwind 資料庫建立資料來源。 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需設定 Northwind 範例資料庫的詳細資訊，請參閱[How to:安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 1. 在 **資料**功能表上，選取**顯示資料來源**。
 

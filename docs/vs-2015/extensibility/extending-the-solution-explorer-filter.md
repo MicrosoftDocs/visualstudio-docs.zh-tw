@@ -11,12 +11,12 @@ ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27812d10c720d0507309513bd908498d9abcf92a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 687663a79ea5dca75da68013519f4652fa71460c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944642"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110566"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>延伸方案總管篩選
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "58944642"
   
 ### <a name="create-a-visual-studio-package-project"></a>建立 Visual Studio Package 專案  
   
-1.  建立 VSIX 專案，名為`FileFilter`。 新增名為的自訂命令項目範本**FileFilter**。 如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的擴充](../extensibility/creating-an-extension-with-a-menu-command.md)。  
+1. 建立 VSIX 專案，名為`FileFilter`。 新增名為的自訂命令項目範本**FileFilter**。 如需詳細資訊，請參閱 <<c0> [ 建立具有功能表命令的擴充](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   
-2.  將參考加入`System.ComponentModel.Composition`和`Microsoft.VisualStudio.Utilities`。  
+2. 將參考加入`System.ComponentModel.Composition`和`Microsoft.VisualStudio.Utilities`。  
   
-3.  請在出現的功能表命令**方案總管 中**工具列。 開啟 FileFilterPackage.vsct 檔案。  
+3. 請在出現的功能表命令**方案總管 中**工具列。 開啟 FileFilterPackage.vsct 檔案。  
   
-4.  變更`<Button>`區塊所示：  
+4. 變更`<Button>`區塊所示：  
   
     ```xml  
     <Button guid="guidFileFilterPackageCmdSet" id="FileFilterId" priority="0x0400" type="Button">  
@@ -48,28 +48,28 @@ ms.locfileid: "58944642"
   
 ### <a name="update-the-manifest-file"></a>更新資訊清單檔案  
   
-1.  在 source.extension.vsixmanifest 檔案中，新增為 MEF 元件的資產。  
+1. 在 source.extension.vsixmanifest 檔案中，新增為 MEF 元件的資產。  
   
-2.  在 [**資產**索引標籤上，選擇**新增**] 按鈕。  
+2. 在 [**資產**索引標籤上，選擇**新增**] 按鈕。  
   
-3.  在 **型別**欄位中，選擇**Microsoft.VisualStudio.MefComponent**。  
+3. 在 **型別**欄位中，選擇**Microsoft.VisualStudio.MefComponent**。  
   
-4.  在 **來源**欄位中，選擇**目前方案中的專案**。  
+4. 在 **來源**欄位中，選擇**目前方案中的專案**。  
   
-5.  在 **專案**欄位中，選擇**FileFilter**，然後選擇**確定**按鈕。  
+5. 在 **專案**欄位中，選擇**FileFilter**，然後選擇**確定**按鈕。  
   
 ### <a name="add-the-filter-code"></a>新增篩選條件程式碼  
   
-1.  FileFilterPackageGuids.cs 檔案中加入一些 Guid:  
+1. FileFilterPackageGuids.cs 檔案中加入一些 Guid:  
   
     ```csharp  
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file  
     public const int FileFilterId = 0x100;  
     ```  
   
-2.  將類別檔案新增至名為 FileNameFilter.cs FileFilter 專案中。  
+2. 將類別檔案新增至名為 FileNameFilter.cs FileFilter 專案中。  
   
-3.  下列程式碼取代空的命名空間和空的類別。  
+3. 下列程式碼取代空的命名空間和空的類別。  
   
      `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)`方法會採用包含在方案根目錄的集合 (`rootItems`)，並傳回包含在篩選條件的項目集合。  
   
@@ -160,7 +160,7 @@ ms.locfileid: "58944642"
   
     ```  
   
-4.  在 FileFilter.cs，移除 FileFilter 建構函式中的命令位置和處理程式碼。 結果應該如下所示：  
+4. 在 FileFilter.cs，移除 FileFilter 建構函式中的命令位置和處理程式碼。 結果應該如下所示：  
   
     ```csharp  
     private FileFilter(Package package)  
@@ -176,7 +176,7 @@ ms.locfileid: "58944642"
   
      移除的 ShowMessageBox() 方法。  
   
-5.  在 FileFilterPackage、 cs、 將 initialize （） 方法中的程式碼取代為下列：  
+5. 在 FileFilterPackage、 cs、 將 initialize （） 方法中的程式碼取代為下列：  
   
     ```csharp  
     protected override void Initialize()  
@@ -188,10 +188,10 @@ ms.locfileid: "58944642"
   
 ### <a name="test-your-code"></a>測試您的程式碼  
   
-1.  建置並執行專案。 Visual Studio 的第二個執行個體隨即出現。 這稱為實驗執行個體。  
+1. 建置並執行專案。 Visual Studio 的第二個執行個體隨即出現。 這稱為實驗執行個體。  
   
-2.  在 Visual Studio 的實驗性執行個體，開啟 C# 專案。  
+2. 在 Visual Studio 的實驗性執行個體，開啟 C# 專案。  
   
-3.  尋找您加入 [方案總管] 工具列的按鈕。 它應該是從左邊的第四個按鈕。  
+3. 尋找您加入 [方案總管] 工具列的按鈕。 它應該是從左邊的第四個按鈕。  
   
-4.  當您按一下按鈕時，所有檔案應該都篩選掉，以及您應該會看到 「 所有項目已都篩選檢視中。 」 在 [方案總管] 中。
+4. 當您按一下按鈕時，所有檔案應該都篩選掉，以及您應該會看到 「 所有項目已都篩選檢視中。 」 在 [方案總管] 中。

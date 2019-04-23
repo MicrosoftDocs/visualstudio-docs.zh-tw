@@ -17,14 +17,15 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bffc4c5740ad006ca851f56cd2db8fcfdfc21294
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 485f4810f748af707cebba5c50c34144f78371ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102940"
 ---
-# <a name="using-the-visual-studio-development-environment-for-c"></a>使用 Visual Studio 開發環境適用於 C# #
+# <a name="using-the-visual-studio-development-environment-for-c"></a>使用 Visual Studio 開發環境適用於 C\#
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 整合式的開發環境 (IDE) 是透過一般的使用者介面所公開的開發工具的集合。 某些工具會與其他的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 語言共用，而某些工具 (例如 C# 編譯器) 則是 Visual C# 特有的。 本主題提供最重要 Visual C# 工具的連結。
@@ -49,4 +50,7 @@ Visual Studio 整合式的開發環境 (IDE) 是透過一般的使用者介面�
 |[管理應用程式資源 (.NET)](../ide/managing-application-resources-dotnet.md)|顯示如何加入或編輯專案的資源，例如字串、影像、圖示、音效和檔案。|
 
 ## <a name="see-also"></a>另請參閱
- [C#](http://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)[Getting Started with C# ](http://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f) [ C#參考](http://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)
+
+- [C#](http://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)
+- [C++ 使用者入門](http://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f)
+- [C# 參考](http://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)

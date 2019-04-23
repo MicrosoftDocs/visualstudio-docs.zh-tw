@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a63234a820c4f3cffae65342bad0b7fd439edfff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ba6262ef3174428dc14c5f747c4346b5f04e35ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077624"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs 原始程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,9 +24,9 @@ ms.locfileid: "54769949"
 ## <a name="data-members"></a>資料成員  
  系統會使用兩個私有資料成員，將此類別與 L2DBForm.xaml 中所使用的視窗資源產生關聯。  
   
--   系統會將命名空間變數 `myBooks` 初始化為 `"http://www.mybooks.com"`。  
+- 系統會將命名空間變數 `myBooks` 初始化為 `"http://www.mybooks.com"`。  
   
--   利用下行，建構函式中的成員 `bookList` 會被初始化為 L2DBForm.xaml 中的 CDATA 字串：  
+- 利用下行，建構函式中的成員 `bookList` 會被初始化為 L2DBForm.xaml 中的 CDATA 字串：  
   
     ```  
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;  
@@ -35,11 +35,11 @@ ms.locfileid: "54769949"
 ## <a name="onaddbook-event-handler"></a>OnAddBook 事件處理常式  
  這個方法包含下列三個陳述式：  
   
--   第一個條件陳述式用於輸入驗證。  
+- 第一個條件陳述式用於輸入驗證。  
   
--   第二個陳述式會從使用者在 [加入新的書籍] 使用者介面 (UI) 區段中輸入的字串值，建立新的 <xref:System.Xml.Linq.XElement>。  
+- 第二個陳述式會從使用者在 [加入新的書籍] 使用者介面 (UI) 區段中輸入的字串值，建立新的 <xref:System.Xml.Linq.XElement>。  
   
--   最後一個陳述式會將這個新書籍項目加入到 L2DBForm.xaml 的資料提供者中。 因此，動態資料繫結將會使用這個新項目，自動更新 UI；不需要使用者提供的任何額外程式碼。  
+- 最後一個陳述式會將這個新書籍項目加入到 L2DBForm.xaml 的資料提供者中。 因此，動態資料繫結將會使用這個新項目，自動更新 UI；不需要使用者提供的任何額外程式碼。  
   
 ## <a name="onremove-event-handler"></a>OnRemove 事件處理常式  
  `OnRemove` 處理常式比 `OnAddBook` 處理常式複雜的原因有兩個。 第一，原始 XML 包含保留的空白字元，因此，相符的新行 (Newline) 也必須利用書籍項目移除。 第二，為了方便起見，在已刪除項目上的選項會重新設定為清單中的前一個選項。  
@@ -137,6 +137,6 @@ namespace LinqToXmlDataBinding {
 ### <a name="comments"></a>註解  
  如需這些處理常式的相關 XAML 來源，請參閱 [L2DBForm.xaml 原始程式碼](../designers/l2dbform-xaml-source-code.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說：LinqToXmlDataBinding 範例](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [L2DBForm.xaml 原始程式碼](../designers/l2dbform-xaml-source-code.md)

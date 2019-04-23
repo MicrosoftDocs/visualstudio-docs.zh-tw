@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3518f691109348cfbb75404e94dde66dccd04efc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000631"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068154"
 ---
 # <a name="quickstart-debug-html-and-css"></a>快速入門：偵錯 HTML 和 CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "59000631"
   
   如需其他 JavaScript 偵錯功能，例如使用 [JavaScript 主控台] 視窗，並設定中斷點，詳細資訊，請參閱[快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)並[偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
   
-##  <a name="InspectingDOM"></a> 檢查 Llive DOM  
+## <a name="InspectingDOM"></a> 檢查 Llive DOM  
  DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更值並立即查看結果。 這讓您能測試變更，而不需要停止並重新開始偵錯工具。 當您以此方法與頁面互動時，專案中的原始程式碼並不會變更，因此當您找到所需的程式碼修正時，您可以對原始程式碼進行變更。  
   
 > [!TIP]
@@ -249,17 +249,17 @@ ms.locfileid: "59000631"
   
 #### <a name="to-refresh-your-app-while-debugging"></a>在偵錯時重新整理您的應用程式  
   
-1.  當應用程式仍在執行時，切換至 Visual Studio。  
+1. 當應用程式仍在執行時，切換至 Visual Studio。  
   
-2.  開啟 default.html，將 `"fView"` DIV 元素的高度和寬度變更為 100%，修改您的原始程式碼。  
+2. 開啟 default.html，將 `"fView"` DIV 元素的高度和寬度變更為 100%，修改您的原始程式碼。  
   
-3.  選擇 [偵錯] 工具列上的 [ **重新整理 Windows 應用程式** ] 按鈕 (或按 F4)。 按鈕看起來像這樣：![重新整理 Windows 應用程式 按鈕](../debugger/media/js-refresh.png "JS_Refresh")。  
+3. 選擇 [偵錯] 工具列上的 [ **重新整理 Windows 應用程式** ] 按鈕 (或按 F4)。 按鈕看起來像這樣：![重新整理 Windows 應用程式 按鈕](../debugger/media/js-refresh.png "JS_Refresh")。  
   
      應用程式頁面會重新載入，模擬器或 Phone 模擬器會回到前景。  
   
      如需重新整理功能的詳細資訊，請參閱[重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。  
   
-##  <a name="SelectingElements"></a> Selecting elements  
+## <a name="SelectingElements"></a> Selecting elements  
  偵錯應用程式時，您可以使用三種方式選取 DOM 項目：  
   
 - 直接在 [DOM 總管] 視窗中按一下項目 (或使用方向鍵)。  
@@ -285,7 +285,7 @@ ms.locfileid: "59000631"
   
  如需範例，示範如何使用選取項目**選取項目**按鈕，請參閱[使用 DOM 總管偵錯 CSS 樣式](../debugger/debug-css-styles-using-dom-explorer.md)。  
   
-##  <a name="BrowserSupport"></a> 瀏覽器和平台支援  
+## <a name="BrowserSupport"></a> 瀏覽器和平台支援  
  下列平台都支援 Visual Studio Tools for JavaScript、DOM 總管和 [JavaScript 主控台] 視窗：  
   
 - 使用 JavaScript 和 HTML 的[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 和 Windows Phone 市集應用程式  

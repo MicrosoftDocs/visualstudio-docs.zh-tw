@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27affdb42f6f5ad1dd4c880b87e3cbf737d52921
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24575f125c07a016bef4742e010cbdd51f6c75e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939968"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647923"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>UML 類別圖表中屬性 (Attribute) 的屬性 (Property)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,6 @@ ms.locfileid: "58939968"
  若要查看屬性 (Attribute) 的屬性 (Property)，請以滑鼠右鍵按一下圖表上類別或介面中的屬性 (Attribute)，然後按一下 [屬性] (Property)。 屬性隨即出現於 [屬性] 視窗中。  
 
  若要檢視屬性 (Attribute) 的屬性 (Property)，請以滑鼠右鍵按一下它，然後按一下 [屬性] (Property)。  
-
 
 |   **Property**    | **Default**  |                                                                                                                                                                                                         描述                                                                                                                                                                                                          |
 |-------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

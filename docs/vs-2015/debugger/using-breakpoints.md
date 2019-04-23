@@ -41,18 +41,18 @@ caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ff5858482f64e8e73844c433febe8033b7ab1d70
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: fa7f571a797df6ecd7a2967ba1cefa3d99a0463b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58939818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064566"
 ---
 # <a name="using-breakpoints"></a>使用中斷點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 當您想要停止偵錯工具執行時，或許是為了要查看程式碼變數的狀態，或查看呼叫堆疊，此時您可以設定中斷點。 它們是開發人員工具箱中最重要的偵錯技術之一。
   
-##  <a name="BKMK_Overview"></a> 在原始程式碼中設定函式中斷點  
+## <a name="BKMK_Overview"></a> 在原始程式碼中設定函式中斷點  
  您可以在原始程式碼檔案左邊界按一下，或將游標放在程式碼行，再按 F9，設定在原始程式碼中的函式中斷點。 中斷點會在左邊界中顯示為一個紅點，且該行程式碼也會標上色彩：  
   
  ![設定中斷點](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
@@ -67,7 +67,7 @@ ms.locfileid: "58939818"
   
  您可以在任何可執行程式碼行上設定中斷點。 例如，在上面的 C# 程式碼中，您可以在變數宣告、 `for` 迴圈或在 `for` 迴圈內部的任何程式碼設定中斷點，但是您無法在命名空間或類別宣告或方法簽章上設定中斷點。  
   
-##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> 設定其他種類的中斷點  
+## <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> 設定其他種類的中斷點  
  您也可以在呼叫堆疊中、在 [反組譯碼] 視窗中，以及在原生 C++ 程式碼中，以資料條件或記憶體位址設定中斷點。  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> 在 [呼叫堆疊] 視窗中設定中斷點  
@@ -86,11 +86,11 @@ ms.locfileid: "58939818"
 ## <a name="setting-a-breakpoint-in-the-disassembly-window"></a>在 [反組譯碼] 視窗中設定中斷點  
  若要在組譯碼指令處設定中斷點，偵錯工具必須處於中斷模式。  
   
-1.  開始偵錯此應用程式，並等候執行停止 (例如，在中斷點處)。 開啟 [反組譯碼]  視窗 ([偵錯] / [Windows] / [反組譯碼]，或 **Ctrl + Alt + D**)。  
+1. 開始偵錯此應用程式，並等候執行停止 (例如，在中斷點處)。 開啟 [反組譯碼]  視窗 ([偵錯] / [Windows] / [反組譯碼]，或 **Ctrl + Alt + D**)。  
   
-2.  在想要中斷的指令之左邊界按一下，或將游標移至此指令，然後按下 **F9**。  
+2. 在想要中斷的指令之左邊界按一下，或將游標移至此指令，然後按下 **F9**。  
   
-## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a> 設定資料中斷點 （原生 c + + 只）  
+## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a> 設定資料中斷點 (原生C++只)  
  當儲存在特定記憶體位址的值變更時，資料中斷點會中斷執行。 如果值已讀取但未變更，則不會中斷執行。 若要設定資料中斷點，偵錯工具必須處於中斷模式。  
   
 1. 開始偵錯應用程式，並等候直到已到達中斷點為止。 在 [偵錯]  功能表上，選擇 [新增中斷點] / [資料中斷點]  (或開啟 [中斷點]  視窗，然後選擇 [新增] / [資料中斷點] 。  
@@ -118,26 +118,26 @@ ms.locfileid: "58939818"
   
  例如，指定具有位址的類型 `my_class` 物件位址，您可以在從該執行個體呼叫的名為 `my_method` 的方法上設定函式中斷點。  
   
-1.  在已具現化類別的執行個體後的某處設定中斷點。  
+1. 在已具現化類別的執行個體後的某處設定中斷點。  
   
-2.  尋找執行個體的位址 (我們稱它為 `0xcccccccc`)。  
+2. 尋找執行個體的位址 (我們稱它為 `0xcccccccc`)。  
   
-3.  按一下　[偵錯] / [新增中斷點] / [函式中斷點]  (或 **ALT + F9 和 ALT + B**)。  
+3. 按一下　[偵錯] / [新增中斷點] / [函式中斷點]  (或 **ALT + F9 和 ALT + B**)。  
   
-4.  在 [函式名稱]  方塊中加入下列文字：  
+4. 在 [函式名稱]  方塊中加入下列文字：  
   
     ```cpp  
     ((my_class *) 0xcccccccc)->my_method  
     ```  
   
-##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> 管理中斷點  
+## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> 管理中斷點  
  您可以使用 [中斷點]  視窗 ([偵錯] / [Windows] / [中斷點]，或 **CTRL + ALT + B**) 查看已在方案中設定的所有中斷點：  
   
  ![中斷點視窗](../debugger/media/breakpointswindow.png "BreakpointsWindow")  
   
  [中斷點]  視窗可讓您集中管理所有中斷點，這點在非常重視中斷點的大型方案或複雜的偵錯情節中非常有用。 如果您需要儲存或共用一組中斷點的狀態和位置，只能從 [中斷點]  視窗儲存和匯入中斷點。  
   
-##  <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a> 進階中斷點  
+## <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a> 進階中斷點  
   
 ## <a name="breakpoint-conditions"></a>中斷點條件  
  您可以設定條件來控制中斷點執行的時機和位置。  
@@ -209,7 +209,7 @@ ms.locfileid: "58939818"
   
   將字串值置於雙引號中。 您可以使用這些來結合子句： `&` (AND)、 `||` (OR)、 `!` (NOT) 和括號。  
   
-##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> 中斷點動作和追蹤點  
+## <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> 中斷點動作和追蹤點  
  追蹤點是將訊息列印至 [輸出] 視窗的中斷點。 追蹤點在程式語言中的行為可以像是暫存追蹤陳述式。  
   
  在 [中斷點設定]  視窗中，核取 [動作]  方塊。 選擇 [動作]  群組中的 [將訊息記錄到輸出視窗]  。 您可以列印泛型字串，例如「這是測試」 。 若要包含變數或運算式的值，請將它置於大括號中。  
@@ -231,7 +231,7 @@ ms.locfileid: "58939818"
 |**$TICK**||  
 |**$TNAME**||  
   
-##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> 中斷點標籤  
+## <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> 中斷點標籤  
  中斷點標籤僅在 [中斷點]  視窗中用來排序和篩選中斷點清單。 若要將標籤加入至中斷點，請選擇中斷點列，然後選擇內容功能表上的 [標籤]  。  
   
 ## <a name="export-and-import-breakpoints"></a>匯出和匯入中斷點  
@@ -245,9 +245,9 @@ ms.locfileid: "58939818"
 ### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>偵錯工具找不到中斷點原始程式檔的正確版本  
  如果原始程式檔已變更，且來源不再符合您要偵錯的程式碼，則即使原始程式檔存在，偵錯工具可能仍會尋找對應中斷點的原始程式檔。  
   
-1.  如果您要 Visual Studio 顯示不符合您要偵錯之版本的原始程式碼，請選擇 [偵錯] / [選項和設定] 。 在 [偵錯] / [一般]  頁面上，清除 [原始程式檔必須完全符合原始版本]  選項。  
+1. 如果您要 Visual Studio 顯示不符合您要偵錯之版本的原始程式碼，請選擇 [偵錯] / [選項和設定] 。 在 [偵錯] / [一般]  頁面上，清除 [原始程式檔必須完全符合原始版本]  選項。  
   
-2.  您也可以將中斷點繫結至原始程式檔。 選取中斷點，並選擇內容功能表上的 [條件]  。 在 [中斷點設定]  視窗中核取 [允許原始程式碼與原始版本不同]  。  
+2. 您也可以將中斷點繫結至原始程式檔。 選取中斷點，並選擇內容功能表上的 [條件]  。 在 [中斷點設定]  視窗中核取 [允許原始程式碼與原始版本不同]  。  
   
 ### <a name="breakpoints-dont-work-in-a-dll"></a>中斷點在 DLL 中無法運作  
  在偵錯工具尚未載入有關程式碼所在模組的偵錯資訊之前，您無法在原始程式檔中設定中斷點。 問題徵兆可能包含 [無法設定中斷點] 這類訊息。 警告中斷點圖像 (Glyph) 會出現在中斷點的位置。 不過，這些警告中斷點在程式碼載入時會成為實際的中斷點。 如需載入符號的詳細資訊，請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  

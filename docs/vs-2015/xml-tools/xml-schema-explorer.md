@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59f2c4ba05b0e802f1daa303db0646a94f36fd31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 550c43532db89132ec4e1b123005ad02ef547414
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104909"
 ---
 # <a name="xml-schema-explorer"></a>XML 結構描述總管
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 結構描述總管整合於 Microsoft Visual Studio 和 XML 編輯器，可讓您使用 XML 結構定義語言 (XSD) 結構描述。 當您開啟 XML 結構描述檔案，**結構描述集**節點會出現在 XML 結構描述總管。 所有包含的、匯入的或重新定義的目標檔結構描述，以及透過 `include` 或 `import` 陳述式參考的所有檔案，也會出現在 XML 結構描述總管中。  
   
  XML 結構描述總管可讓您進行下列作業：  
@@ -68,11 +67,11 @@ XML 結構描述總管整合於 Microsoft Visual Studio 和 XML 編輯器，可�
   
  若要啟動節點，按兩下或按**Enter**選取節點時。  
   
--   啟動節點會開啟定義該節點的檔案 (如果該檔案尚未開啟)，並且在該檔案中選取此節點。  
+- 啟動節點會開啟定義該節點的檔案 (如果該檔案尚未開啟)，並且在該檔案中選取此節點。  
   
--   啟動檔案節點會開啟所選的檔案 (若該檔案尚未開啟)，並且反白顯示 `<schema>` 節點。  
+- 啟動檔案節點會開啟所選的檔案 (若該檔案尚未開啟)，並且反白顯示 `<schema>` 節點。  
   
--   啟動 SchemaSet 或命名空間節點不會有任何反應。  
+- 啟動 SchemaSet 或命名空間節點不會有任何反應。  
   
 ## <a name="draging-and-dropping-nodes"></a>拖放節點  
  您可以將全域節點、檔案節點以及命名空間節點拖放至 XSD 設計工具檢視中。 如果目前的檢視[開始檢視](../xml-tools/start-view.md)，拖曳到檢視的節點會開啟[圖表檢視](../xml-tools/graph-view.md)。 如果目前的檢視[內容模型檢視](../xml-tools/content-model-view.md)或圖表檢視，檢視不會變更當您卸除將節點拖曳到它。  
@@ -83,13 +82,13 @@ XML 結構描述總管整合於 Microsoft Visual Studio 和 XML 編輯器，可�
   
 ## <a name="in-this-section"></a>本節內容  
   
--   [搜尋結構描述集合](../xml-tools/searching-the-schema-set.md)  
+- [搜尋結構描述集合](../xml-tools/searching-the-schema-set.md)  
   
--   [排序、篩檢與分組](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
+- [排序、篩檢與分組](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
--   [操作功能表](../xml-tools/context-menus-xml-schema-explorer.md)  
+- [操作功能表](../xml-tools/context-menus-xml-schema-explorer.md)  
   
--   [整合 XML 常值與 XML 結構描述總管](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
+- [整合 XML 常值與 XML 結構描述總管](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：將節點從 XML 結構描述總管新增至工作區](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

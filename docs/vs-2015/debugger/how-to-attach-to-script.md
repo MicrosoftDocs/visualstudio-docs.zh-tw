@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76418913aa725a7858f292d625cb7584b62694e5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ab9388697b4f33b0c523a6239bda911e3ba47a52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118249"
 ---
 # <a name="how-to-attach-to-script"></a>HOW TO：附加至指令碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,21 +37,21 @@ ms.locfileid: "59000619"
   
 2. 請在 [附加至處理序] 對話方塊中查看 [可使用的處理序] 清單，並且尋找您要附加的指令碼處理序。 您可經由查看 [類型] 資料行識別指令碼處理序。  
   
-   1.  如果您要偵錯的處理序正執行於另一台電腦上，您必須先選取該遠端電腦。 如需詳細資訊，請參閱[如何：選取遠端電腦](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)。  
+   1. 如果您要偵錯的處理序正執行於另一台電腦上，您必須先選取該遠端電腦。 如需詳細資訊，請參閱[如何：選取遠端電腦](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)。  
   
-   2.  如果該處理序正在不同的使用者帳戶下執行，請選取 [顯示所有使用者的處理序]  核取方塊。  
+   2. 如果該處理序正在不同的使用者帳戶下執行，請選取 [顯示所有使用者的處理序]  核取方塊。  
   
-   3.  如果您透過 [遠端桌面連線] 進行連線，請選取 [顯示所有工作階段中的處理序] 核取方塊。  
+   3. 如果您透過 [遠端桌面連線] 進行連線，請選取 [顯示所有工作階段中的處理序] 核取方塊。  
   
 3. 按一下您要附加的處理序。  
   
 4. 在 **附加至**方塊中，您應該會看到**指令碼**或**自動：指令碼**。 如果看到其他項目，請遵照以下步驟：  
   
-   1.  按一下 [選取] 。  
+   1. 按一下 [選取] 。  
   
-   2.  在 [選取程式碼類型] 對話方塊中按一下 [偵錯這些程式碼類型]，然後選取 [指令碼]。  
+   2. 在 [選取程式碼類型] 對話方塊中按一下 [偵錯這些程式碼類型]，然後選取 [指令碼]。  
   
-   3.  按一下 [確定 **Deploying Office Solutions**]。  
+   3. 按一下 [確定] 。  
   
 5. 按一下 [附加] 。  
   

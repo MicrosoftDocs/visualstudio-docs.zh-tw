@@ -10,12 +10,12 @@ ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3a5d54bdd3d2b7fad348df195560ad5b3cc461f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7c1dd3d28b9978b52c95b5ff905d57720ed10f5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945354"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054700"
 ---
 # <a name="walkthrough-outlining"></a>逐步解說：大綱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "58945354"
   
 #### <a name="to-create-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立 VSIX 專案。 將方案命名為 `OutlineRegionTest`。  
+1. 建立 VSIX 專案。 將方案命名為 `OutlineRegionTest`。  
   
-2.  將編輯器分類器項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
+2. 將編輯器分類器項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
-3.  刪除現有類別檔案。  
+3. 刪除現有類別檔案。  
   
 ## <a name="implementing-an-outlining-tagger"></a>實作大綱的標記者  
  一種標記標示大綱區域 (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>)。 此標記會提供標準大綱行為。 可以展開或摺疊的外框的區域。 如果已展開，並展開的區域由一條垂直線 demarcated 如果已摺疊的加號或減號標示外框的區域。  
@@ -42,39 +42,39 @@ ms.locfileid: "58945354"
   
 #### <a name="to-implement-an-outlining-tagger"></a>若要實作大綱的標記者  
   
-1.  加入類別檔案，並將它命名為 `OutliningTagger`。  
+1. 加入類別檔案，並將它命名為 `OutliningTagger`。  
   
-2.  匯入下列命名空間。  
+2. 匯入下列命名空間。  
   
      [!code-csharp[VSSDKOutlineRegionTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#1)]
      [!code-vb[VSSDKOutlineRegionTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#1)]  
   
-3.  建立一個名為`OutliningTagger`，並讓它實作<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:  
+3. 建立一個名為`OutliningTagger`，並讓它實作<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:  
   
      [!code-csharp[VSSDKOutlineRegionTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#2)]
      [!code-vb[VSSDKOutlineRegionTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#2)]  
   
-4.  新增一些欄位來追蹤文字緩衝區和快照集，並累積應該標記為大綱區域的線路組。 此程式碼包含一份代表大綱區域的區域物件 （若要稍後定義）。  
+4. 新增一些欄位來追蹤文字緩衝區和快照集，並累積應該標記為大綱區域的線路組。 此程式碼包含一份代表大綱區域的區域物件 （若要稍後定義）。  
   
      [!code-csharp[VSSDKOutlineRegionTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#3)]
      [!code-vb[VSSDKOutlineRegionTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#3)]  
   
-5.  新增標記者建構函式初始化欄位，剖析緩衝區，並新增事件處理常式，以<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>事件。  
+5. 新增標記者建構函式初始化欄位，剖析緩衝區，並新增事件處理常式，以<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>事件。  
   
      [!code-csharp[VSSDKOutlineRegionTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#4)]
      [!code-vb[VSSDKOutlineRegionTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#4)]  
   
-6.  實作<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>方法，它會具現化標記延伸。 這個範例假設在跨<xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection>中傳遞至方法是連續的雖然這不一定如此。 這個方法中，具現化新的標記範圍的每個大綱區域。  
+6. 實作<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>方法，它會具現化標記延伸。 這個範例假設在跨<xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection>中傳遞至方法是連續的雖然這不一定如此。 這個方法中，具現化新的標記範圍的每個大綱區域。  
   
      [!code-csharp[VSSDKOutlineRegionTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#5)]
      [!code-vb[VSSDKOutlineRegionTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#5)]  
   
-7.  宣告`TagsChanged`事件處理常式。  
+7. 宣告`TagsChanged`事件處理常式。  
   
      [!code-csharp[VSSDKOutlineRegionTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#6)]
      [!code-vb[VSSDKOutlineRegionTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#6)]  
   
-8.  新增`BufferChanged`回應的事件處理常式<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>藉由剖析文字緩衝的事件。  
+8. 新增`BufferChanged`回應的事件處理常式<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>藉由剖析文字緩衝的事件。  
   
      [!code-csharp[VSSDKOutlineRegionTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#7)]
      [!code-vb[VSSDKOutlineRegionTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#7)]  
@@ -104,12 +104,12 @@ ms.locfileid: "58945354"
   
 #### <a name="to-implement-a-tagger-provider"></a>若要實作的標記者提供者  
   
-1.  建立一個名為`OutliningTaggerProvider`實作<xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>，並將它匯出的 ContentType 和 TagType 屬性使用。  
+1. 建立一個名為`OutliningTaggerProvider`實作<xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>，並將它匯出的 ContentType 和 TagType 屬性使用。  
   
      [!code-csharp[VSSDKOutlineRegionTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#12)]
      [!code-vb[VSSDKOutlineRegionTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#12)]  
   
-2.  實作<xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A>方法，藉由新增`OutliningTagger`緩衝區的屬性。  
+2. 實作<xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A>方法，藉由新增`OutliningTagger`緩衝區的屬性。  
   
      [!code-csharp[VSSDKOutlineRegionTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#13)]
      [!code-vb[VSSDKOutlineRegionTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#13)]  
@@ -119,11 +119,11 @@ ms.locfileid: "58945354"
   
 #### <a name="to-build-and-test-the-outlineregiontest-solution"></a>若要建置和測試 OutlineRegionTest 方案  
   
-1.  建置方案。  
+1. 建置方案。  
   
-2.  當您在偵錯工具中執行這個專案時，會具現化第二個 Visual Studio 執行個體。  
+2. 當您在偵錯工具中執行這個專案時，會具現化第二個 Visual Studio 執行個體。  
   
-3.  建立文字檔 輸入一些文字，其中包含左括號和右大括號。  
+3. 建立文字檔 輸入一些文字，其中包含左括號和右大括號。  
   
     ```  
     [  
@@ -131,7 +131,7 @@ ms.locfileid: "58945354"
     ]  
     ```  
   
-4.  應該包含這兩個大括號的大綱區域。 您應該能夠按一下減號左邊的左大括號來摺疊大綱區域。 當區域已摺疊，省略符號 （...） 應該已摺疊的區域，並包含文字的快顯視窗的左邊會出現**暫留文字**當您移動滑鼠指標的省略符號時，應該會出現。  
+4. 應該包含這兩個大括號的大綱區域。 您應該能夠按一下減號左邊的左大括號來摺疊大綱區域。 當區域已摺疊，省略符號 （...） 應該已摺疊的區域，並包含文字的快顯視窗的左邊會出現**暫留文字**當您移動滑鼠指標的省略符號時，應該會出現。  
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

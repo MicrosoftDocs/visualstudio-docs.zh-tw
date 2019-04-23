@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8f71557dc7939e9b96c3d6cd3f2382ada69b493
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 77529ad9957694b1ea1853b3e8b1b1cc29c45e2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774597"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067036"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>說明檢視器疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "54774597"
   
 #### <a name="to-activate-windows-search-service"></a>啟動 Windows Search 服務  
   
-1.  啟動伺服器管理員。  
+1. 啟動伺服器管理員。  
   
-2.  在左瀏覽窗格中，選擇 [角色]。  
+2. 在左瀏覽窗格中，選擇 [角色]。  
   
-3.  在 [角色摘要] 窗格中，選擇 [新增角色]。  
+3. 在 [角色摘要] 窗格中，選擇 [新增角色]。  
   
-4.  選擇「檔案服務」角色，然後選擇 [下一步] 按鈕。  
+4. 選擇「檔案服務」角色，然後選擇 [下一步] 按鈕。  
   
-5.  選擇「Windows Search」角色服務。  
+5. 選擇「Windows Search」角色服務。  
   
 ## <a name="additional-resources"></a>其他資源  
  您可以利用下列資源來取得詳細資訊，並提供 Help Viewer 的相關意見反應：  
@@ -49,5 +49,5 @@ ms.locfileid: "54774597"
   
 - 如需詳細資訊，請參閱 <<c0> [ 開發人員文件和說明系統](http://go.microsoft.com/fwlink/?LinkId=232741)論壇並[The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743)部落格。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Help Viewer 2.1 Administrator Guide](http://go.microsoft.com/fwlink/?LinkId=243985) (說明檢視器 2.1 系統管理員指南)

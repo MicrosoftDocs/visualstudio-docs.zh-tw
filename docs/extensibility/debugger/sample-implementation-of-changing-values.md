@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f90ae35a002517c34af39cb53deec05a458f716
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e229bd791118b23e0b8c04a8a5384a4bbc3342c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680525"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085529"
 ---
 # <a name="sample-implementation-of-changing-values"></a>變更值的範例實作
 > [!IMPORTANT]
@@ -29,13 +29,13 @@ ms.locfileid: "56680525"
 
  實作`IDebugProperty2::SetValueAsString`會執行下列工作：
 
-1.  計算用來產生值的運算式。
+1. 計算用來產生值的運算式。
 
-2.  繫結相關聯[IDebugField](../../extensibility/debugger/reference/idebugfield.md)其記憶體位置和產生的物件[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件。
+2. 繫結相關聯[IDebugField](../../extensibility/debugger/reference/idebugfield.md)其記憶體位置和產生的物件[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件。
 
-3.  將值轉換成一系列的位元組。
+3. 將值轉換成一系列的位元組。
 
-4.  呼叫[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)在記憶體中儲存的位元組。
+4. 呼叫[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)在記憶體中儲存的位元組。
 
 ## <a name="managed-code"></a>Managed 程式碼
  下列程式碼是實作`IDebugProperty2::SetValueAsString`managed 程式碼中。

@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c723e0a2cc76b6432fc6f209a7edf4a988a0b3fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24ef57b545360cccbf75039b5f64a0f53e636dd8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059899"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件處理常式傳播模型外的變更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Visualization and Modeling SDK，在中，您可以定義存放區的事件處�
   
 1. 選擇您想要監視的事件類型。 如需完整清單，查看 屬性<xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>。 每個屬性會對應至類型的事件。 最常使用的事件類型包括：  
   
-   -   `ElementAdded` – 當模型項目時，就會觸發，關聯性連結、 圖形或連接器建立。  
+   - `ElementAdded` – 當模型項目時，就會觸發，關聯性連結、 圖形或連接器建立。  
   
-   -   ElementPropertyChanged – 觸發時的值`Normal`網域屬性會變更。 只有當新的和舊的值不相等，則會觸發事件。 事件不能用於計算及自訂的儲存體屬性。  
+   - ElementPropertyChanged – 觸發時的值`Normal`網域屬性會變更。 只有當新的和舊的值不相等，則會觸發事件。 事件不能用於計算及自訂的儲存體屬性。  
   
         它無法套用至角色內容對應至關聯性連結。 請改用`ElementAdded`来監視的網域關聯性。  
   
-   -   `ElementDeleted` -觸發模型項目之後，關聯性、 圖形或連接器已刪除。 您仍然可以存取屬性值的項目，但會有其他項目沒有關聯性。  
+   - `ElementDeleted` -觸發模型項目之後，關聯性、 圖形或連接器已刪除。 您仍然可以存取屬性值的項目，但會有其他項目沒有關聯性。  
   
 2. 加入的部分類別定義_您的 Dsl_**DocData**不同的程式碼檔案裡**DslPackage**專案。  
   
@@ -166,11 +166,11 @@ private static void AlbumTitleAdjuster(object sender,
   
  如果您寫入更新存放區的事件：  
   
--   使用`store.InUndoRedoOrRollback`若要避免變更模型中復原的項目。 交易管理員會設定所有項目回到其原始狀態存放區中。  
+- 使用`store.InUndoRedoOrRollback`若要避免變更模型中復原的項目。 交易管理員會設定所有項目回到其原始狀態存放區中。  
   
--   使用`store.InSerializationTransaction`若要避免從檔案載入模型時變更。  
+- 使用`store.InSerializationTransaction`若要避免從檔案載入模型時變更。  
   
--   您的變更會導致進一步觸發的事件。 請確定您避免無限迴圈。  
+- 您的變更會導致進一步觸發的事件。 請確定您避免無限迴圈。  
   
 ## <a name="store-event-types"></a>儲存事件類型  
  每個事件類型會對應至 Store.EventManagerDirectory 中的集合。 您可以新增或移除事件處理常式在任何時間，但通常會將它們加入文件載入時。  

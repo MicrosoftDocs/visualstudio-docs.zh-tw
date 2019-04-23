@@ -14,17 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4b38f39fbb7b1f72622be58ee049554cb04f02f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7873d54ecdf3ce96ab64d94e9b1864c7ef2904b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800739"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088258"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>如何：顯示編輯器中的行號
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 您可以在程式碼中顯示或隱藏行號。  
   
 > [!NOTE]
@@ -35,9 +34,9 @@ ms.locfileid: "54800739"
   
 #### <a name="to-display-line-numbers-in-code"></a>若要顯示程式碼行號  
   
-1.  在功能表列上選擇 [工具] 、[選項] 。 展開 [文字編輯器] 節點，然後選取所使用語言的節點，或選取 [所有語言] 開啟所有語言的行號。 也可以在 [快速啟動] 方塊中輸入**行號**。  
+1. 在功能表列上選擇 [工具] 、[選項] 。 展開 [文字編輯器] 節點，然後選取所使用語言的節點，或選取 [所有語言] 開啟所有語言的行號。 也可以在 [快速啟動] 方塊中輸入**行號**。  
   
-2.  ![在編輯器中顯示行號的選項](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
+2. ![在編輯器中顯示行號的選項](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
   
 > [!NOTE]
 >  根據您的語言或設定，您可能需要選取 [選項] 對話方塊中的 [顯示所有設定] 核取方塊，才能顯示 [所有語言] 子節點。  

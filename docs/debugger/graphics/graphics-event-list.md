@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbffb56d437eebffcaa59a146ede2a8b5f94273
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6af97740302d5e7053323b54ef11cbf1a279dd94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683673"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066776"
 ---
 # <a name="graphics-event-list"></a>圖形事件清單
 使用 Visual Studio 圖形分析器中的 [圖形事件清單]，來探索在轉譯遊戲或應用程式的畫面格時所記錄的 Direct3D 事件。
@@ -49,7 +49,7 @@ ms.locfileid: "56683673"
 
 ##### <a name="to-change-the-event-list-view-mode"></a>變更事件清單檢視模式
 
--   在**圖形事件清單**視窗中，清單上方的事件，找出**檢視**下拉式清單並選擇**時間表**檢視或**GPU 工作**檢視。
+- 在**圖形事件清單**視窗中，清單上方的事件，找出**檢視**下拉式清單並選擇**時間表**檢視或**GPU 工作**檢視。
 
 ### <a name="filtering-events"></a>篩選事件
  您可以使用 [搜尋] 方塊 (位在 [圖形事件清單]  視窗右上角) 篩選事件清單，使清單只包括名稱包含特定關鍵字的事件。 如上圖所示，您可以指定單一關鍵字 (如 `Vertex`)，或使用以分號分隔清單指定多個關鍵字，例如 `Draw;Primitive`，其符合名稱中有 `Draw` 或 `Primitive` 的事件。 搜尋會受到空格影響；例如， `VSSet` 和 `VS Set` 是不同的搜尋，因此，請務必小心地建立搜尋。
@@ -105,8 +105,7 @@ Visual Studio 2017 和更新版本包含**資源歷程記錄**視窗。  選取 
 
 此視窗可讓您檢視事件清單中的選取項目的歷程記錄。  在頂端的下拉式清單可用來選取要檢視的歷程記錄的其他項目。  包含視窗的上半**框架設定事件**。  這些是屬於事件*建立*類型類別目錄和通常初始化，並建立資源的呼叫。  視窗的下半部所包含的底部**框架事件**一節。  這些是一般的讀取和寫入資源的使用量期間發生的事件。
 
-
-| 資料行 | 說明 |
+| 資料行 | 描述 |
 |-----------| - |
 | **Type** | 通常顯示的項目的型別*Create*，*讀取*並*撰寫*。 |
 | **檢視** | 在該時間點會顯示資源的縮圖。  按兩下以開啟資源的詳細資料檢視在該時間縮圖。 |
@@ -114,5 +113,5 @@ Visual Studio 2017 和更新版本包含**資源歷程記錄**視窗。  選取 
 
 <!-- /VERSIONLESS -->
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [逐步解說：因裝置狀態而遺漏的物件](walkthrough-missing-objects-due-to-device-state.md)

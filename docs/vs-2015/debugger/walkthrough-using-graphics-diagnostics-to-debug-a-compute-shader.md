@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a57a77e401564b3bd32897a9b32d9773d959a17
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: db33a55c5ced7c1bbbf4b238185beac43ac290f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59000466"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080342"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>逐步解說：使用圖形診斷對計算著色器進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ ms.locfileid: "59000466"
   
  本逐步解說將說明下列工作：  
   
--   使用 [圖形事件清單]  找出潛在的問題來源。  
+- 使用 [圖形事件清單]  找出潛在的問題來源。  
   
--   使用 [圖形事件呼叫堆疊]，判斷 DirectCompute `Dispatch` 事件執行哪個計算著色器。  
+- 使用 [圖形事件呼叫堆疊]，判斷 DirectCompute `Dispatch` 事件執行哪個計算著色器。  
   
--   使用 [圖形管線階段] 視窗和 HLSL 偵錯工具，檢查其為問題來源的計算著色器。  
+- 使用 [圖形管線階段] 視窗和 HLSL 偵錯工具，檢查其為問題來源的計算著色器。  
   
 ## <a name="scenario"></a>情節  
  在此情況下，您已撰寫流暢動態模擬來使用 DirectCompute 執行模擬更新最需要大量計算的部分。 執行應用程式時，資料集和 UI 的轉譯正確，但模擬未如預期運作。 使用圖形診斷，即可擷取圖形記錄問題，以偵錯應用程式。 在應用程式中，問題看起來如下：  

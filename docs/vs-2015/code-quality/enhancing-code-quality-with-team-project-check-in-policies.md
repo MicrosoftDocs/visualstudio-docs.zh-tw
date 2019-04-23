@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 02c6b2912d828f566236aa8f24868ae9314d743e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c7b95155db18e9aa879b11cadf21b33cb0189ff9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930156"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103364"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>使用 Team 專案簽入原則強化程式碼品質
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ ms.locfileid: "58930156"
   
  您可以指定這些 Team 專案簽入原則：  
   
--   **建置**:需要，必須新簽入之前修復在建置期間所建立的建置中斷。  
+- **建置**:需要，必須新簽入之前修復在建置期間所建立的建置中斷。  
   
--   **變更集註解**:需要使用者在簽入變更時，會提供註解。  
+- **變更集註解**:需要使用者在簽入變更時，會提供註解。  
   
--   **程式碼分析**:需要簽入之前執行程式碼分析。  
+- **程式碼分析**:需要簽入之前執行程式碼分析。  
   
--   **工作項目**:需要一或多個工作項目要與此簽入相關聯。  
+- **工作項目**:需要一或多個工作項目要與此簽入相關聯。  
   
 > [!IMPORTANT]
 >  若要使用簽入原則，您必須連接到 [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)]。  
@@ -50,7 +50,7 @@ ms.locfileid: "58930156"
 |----------|------------------------|  
 |**設定您的開發環境：** 您可以建立或修改程式碼之前，您必須設定您的開發和測試環境使用適當的原始程式碼。 如果使用資料庫，也必須有其離線表示的存取權限。|[設定開發環境](http://msdn.microsoft.com/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
 |**在開發過程中使用程式碼分析：** 小組成員在其開發電腦上執行程式碼分析。 在 Visual Studio 中，開發人員會針對個別程式碼專案設定並執行程式碼分析回合、檢視及分析回合中找到的問題，以及建立警告的工作項目。|[分析應用程式品質](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|  
-|**建立及執行單元測試：** 單元測試提供開發人員和測試人員快速的方法，以查看方法的類別中的邏輯錯誤C#，Visual Basic.NET 和 c + + 專案。 您只要建立一次單元測試，就可以在每次原始程式碼變更時執行，以確定沒有導入任何錯誤。|[對程式碼進行單元測試](../test/unit-test-your-code.md)|  
+|**建立及執行單元測試：** 單元測試提供開發人員和測試人員快速的方法，以查看方法的類別中的邏輯錯誤C#，Visual Basic.NET 和C++專案。 您只要建立一次單元測試，就可以在每次原始程式碼變更時執行，以確定沒有導入任何錯誤。|[對程式碼進行單元測試](../test/unit-test-your-code.md)|  
 |**追蹤工作項目和缺失：** 您可以使用工作項目來追蹤和管理您的工作和資訊，關於您的 team 專案。 工作項目是資料庫記錄， [!INCLUDE[esprfound](../includes/esprfound-md.md)] 用來追蹤指派和工作進度。 您可以使用不同類型的工作項目來追蹤不同類型的工作，例如客戶需求、產品錯誤及開發工作。|[追蹤工作和管理工作流程&#91;重新導向&#93;](http://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
   
 ## <a name="external-resources"></a>外部資源  

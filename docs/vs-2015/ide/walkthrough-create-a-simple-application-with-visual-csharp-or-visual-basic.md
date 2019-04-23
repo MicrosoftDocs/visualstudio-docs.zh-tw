@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802612"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040555"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>逐步解說：使用 Visual C# 或 Visual Basic 建立簡單的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54802612"
 > [!NOTE]
 >  這個逐步解說是以 Visual Studio Professional 為基礎，提供您在建立這個逐步解說的專案時使用的 WPF 應用程式範本。 Visual Studio Express for Windows Desktop 也有提供該範本，不過，Visual Studio Express for Windows 和 Visual Studio Express for Web 則未提供。 如需如何使用 Visual Studio Express for Windows 的入門資訊，請參閱 [Windows 市集應用程式的開發人員中心](http://msdn.microsoft.com/windows/apps/br229519)。 如需如何使用 Visual Studio Express for Web 的入門資訊，請參閱 [Get Started with ASP.NET](http://www.asp.net/get-started)(開始使用 ASP.NET)。 此外，您的 Visual Studio 版本和使用的設定會決定某些使用者介面之項目的名稱和位置。 請參閱 [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
-##  <a name="BKMK_ConfigureIDE"></a> 設定 IDE  
+## <a name="BKMK_ConfigureIDE"></a> 設定 IDE  
  當您第一次啟動 Visual Studio 時，Visual Studio 會提示您使用 Microsoft 服務帳戶 (MSA) 登入，請 [登入 Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx)。 您不一定要登入，可以稍後再進行。  
   
  在 Visual Studio 上市之後，您接下來就必須選擇一組可將預先定義的自訂套用到 IDE 的設定組合。 每個設定組合都是為了讓您更輕鬆地開發應用程式而精心設計的。  
@@ -69,7 +69,7 @@ ms.locfileid: "54802612"
   
    這個逐步解說的其餘部分使用的圖片色彩佈景主題是淺色佈景主題。 如需自訂 IDE 的詳細資訊，請參閱[在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
-##  <a name="BKMK_CreateApp"></a> 建立簡單的應用程式  
+## <a name="BKMK_CreateApp"></a> 建立簡單的應用程式  
   
 ### <a name="create-the-project"></a>建立專案  
  當您在 Visual Studio 中建立應用程式時，您需要先建立一個專案和一個方案。 在這個範例中，您將建立 Windows Presentation Foundation (WPF) 專案。  
@@ -199,7 +199,7 @@ ms.locfileid: "54802612"
   
 ##### <a name="add-code-to-display-message-boxes"></a>加入程式碼以顯示訊息方塊  
   
-1.  在設計介面上，按兩下 [ **顯示** ] 按鈕。  
+1. 在設計介面上，按兩下 [ **顯示** ] 按鈕。  
   
      Greetings.xaml.vb 或 Greetings.xaml.cs 隨即開啟，並將游標置於 Button_Click 事件中。 您也可以加入 click 事件處理常式，如下所示 (如果貼上的程式碼的任一名稱下有紅色曲線，表示您可能沒有在設計介面上選取 RadioButton 控制項並加以重新命名)：  
   
@@ -220,7 +220,7 @@ ms.locfileid: "54802612"
     }  
     ```  
   
-2.  對於 Visual Basic，請輸入下列程式碼：  
+2. 對於 Visual Basic，請輸入下列程式碼：  
   
     ```vb  
     If RadioButton1.IsChecked = True Then  
@@ -245,9 +245,9 @@ ms.locfileid: "54802612"
     }  
     ```  
   
-3.  儲存應用程式。  
+3. 儲存應用程式。  
   
-##  <a name="BKMK_DebugTest"></a> 偵錯和測試應用程式  
+## <a name="BKMK_DebugTest"></a> 偵錯和測試應用程式  
  接下來，您會偵錯應用程式以尋找錯誤，並測試兩個訊息方塊是否都正確出現。 下列指示會告訴您如何建置和啟動偵錯工具，不過您稍後也可閱讀[建置 WPF 應用程式 (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) 和[偵錯 WPF](../debugger/debugging-wpf.md) 以取得詳細資訊。  
   
 ### <a name="find-and-fix-errors"></a>尋找和修正錯誤  
@@ -280,29 +280,29 @@ ms.locfileid: "54802612"
   
 ##### <a name="to-add-breakpoints"></a>加入中斷點  
   
-1.  開啟 Greetings.xaml.vb 或 Greetings.xaml.cs，然後選取下列程式碼行：`MessageBox.Show("Hello.")`  
+1. 開啟 Greetings.xaml.vb 或 Greetings.xaml.cs，然後選取下列程式碼行：`MessageBox.Show("Hello.")`  
   
-2.  依序選取 [ **偵錯**] 和 [ **切換中斷點**]，以新增中斷點。  
+2. 依序選取 [ **偵錯**] 和 [ **切換中斷點**]，以新增中斷點。  
   
      ![[偵錯] 功能表上的 [切換中斷點] 命令](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
   
      在編輯器視窗最左緣、程式碼行的旁邊會出現一個紅色圓圈。  
   
-3.  請選取下列程式碼行： `MessageBox.Show("Goodbye.")`。  
+3. 請選取下列程式碼行： `MessageBox.Show("Goodbye.")`。  
   
-4.  按 F9 鍵加入中斷點，然後按 F5 鍵開始偵錯。  
+4. 按 F9 鍵加入中斷點，然後按 F5 鍵開始偵錯。  
   
-5.  在 [ **Greetings** ] 視窗中，選擇 [ **Hello** ] 選項按鈕，然後選擇 [ **顯示** ] 按鈕。  
+5. 在 [ **Greetings** ] 視窗中，選擇 [ **Hello** ] 選項按鈕，然後選擇 [ **顯示** ] 按鈕。  
   
      程式碼行 `MessageBox.Show("Hello.")` 會以黃色反白顯示。 在 IDE 下方，[自動變數]、[區域變數] 和 [監看式] 視窗會一起停駐在左邊，而 [呼叫堆疊]、[中斷點]、[命令]、[即時運算] 和 [輸出] 視窗會一起停駐在右邊。  
   
-6.  在功能表列上，選擇 [ **偵錯**]、[ **跳離函式**]。  
+6. 在功能表列上，選擇 [ **偵錯**]、[ **跳離函式**]。  
   
      應用程式會繼續執行，而且會顯示含有文字 "Hello" 的訊息方塊。  
   
-7.  選擇訊息方塊上的 [ **確定** ] 按鈕將它關閉。  
+7. 選擇訊息方塊上的 [ **確定** ] 按鈕將它關閉。  
   
-8.  在 [ **Greetings** ] 視窗中，選擇 [ **Goodbye** ] 選項按鈕，然後選擇 [ **顯示** ] 按鈕。  
+8. 在 [ **Greetings** ] 視窗中，選擇 [ **Goodbye** ] 選項按鈕，然後選擇 [ **顯示** ] 按鈕。  
   
      程式碼行 `MessageBox.Show("Goodbye.")` 會以黃色反白顯示。  
   

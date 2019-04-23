@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f9a170cec2d41a779ecdecc1f2be408d485b3a63
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857472"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656436"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>使用快照偵錯工具針對即時 ASP.NET Azure 應用程式進行偵錯
 
@@ -25,18 +25,23 @@ ms.locfileid: "58857472"
 
 快照點和記錄點與中斷點很相似，但和中斷點不的是，快照點不會在叫用時停止應用程式。 一般而言，在快照點擷取快照集時需要 10 到 20 毫秒。
 
-在此教學課程中，您將進行下列作業：
+在本教學課程中，您將進行下列作業：
 
 > [!div class="checklist"]
 > * 啟動快照偵錯工具
-> * 設定快照點並檢視快照
+> * 設定快照點及檢視快照
 > * 設定記錄點
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
-* 快照偵錯工具僅適用於具備 **Azure 開發工作負載**的 Visual Studio 2017 Enterprise 15.5 版本或更高版本。 (您可以在 [個別元件] 索引標籤下的 [偵錯和測試] > [快照偵錯工具]底下找到它。)
+* 快照偵錯工具，才可以使用 Visual Studio 2017 Enterprise 15.5 版或更高版本中啟動**Azure 開發工作負載**。 (您可以在 [個別元件] 索引標籤下的 [偵錯和測試] > [快照偵錯工具]底下找到它。)
 
-    如果尚未安裝，請安裝 [Visual Studio 2017 Enterprise 15.5 版](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)或更新版本。 如果是從舊版的 Visual Studio 2017 安裝更新，請執行 Visual Studio 安裝程式，並勾選 [ASP.NET 和 Web 開發工作負載] 中的快照偵錯工具元件。
+    ::: moniker range=">=vs-2019"
+    如果尚未安裝，安裝[Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。 如果您要從舊版的 Visual Studio 安裝更新，執行 Visual Studio 安裝程式，並簽入的快照集偵錯工具元件**ASP.NET 和 web 開發工作負載**。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    如果尚未安裝，請安裝 [Visual Studio 2017 Enterprise 15.5 版](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)或更新版本。 如果是從舊版的 Visual Studio 2017 安裝更新，請執行 Visual Studio 安裝程式，並勾選 [ASP.NET 和 Web 開發工作負載] 中的快照偵錯工具元件。
+    ::: moniker-end
 
 * 基本或更高級的 Azure App Service 方案。
 
@@ -81,7 +86,7 @@ ms.locfileid: "58857472"
 
 ## <a name="set-a-snappoint"></a>設定快照點
 
-1. 在程式碼編輯器中，按一下所需程式碼行旁邊的左側裝訂邊以設定快照點。 確定這是您將執行的程式碼。
+1. 在程式碼編輯器中，按一下所需程式碼行左側的裝訂邊以設定快照點。 確定這是您將執行的程式碼。
 
    ![設定快照點](../debugger/media/snapshot-set-snappoint.png)
 
@@ -94,7 +99,7 @@ ms.locfileid: "58857472"
 
 ## <a name="take-a-snapshot"></a>建立快照集
 
-開啟快照點時，只要執行到包含快照點的程式碼行時，就會擷取快照點。 這可透過伺服器上的實際要求來執行。 若要強制叫用快照點，請移至網站的瀏覽器檢視，並採取可導致系統叫用快照點的任何必要動作。
+開啟快照點時，只要執行到包含快照點的程式碼行時，就會擷取快照點。 這可透過伺服器上的實際要求來執行。 若要強制叫用快照點，請移至網站的瀏覽器檢視，並採取可使得系統叫用快照點的任何必要動作。
 
 ## <a name="inspect-snapshot-data"></a>檢查快照集資料
 
@@ -142,13 +147,13 @@ ms.locfileid: "58857472"
 
     ![建立記錄點](../debugger/media/snapshot-logpoint.png)
 
-1. 您可以在 [訊息] 欄位中輸入想要記錄的新記錄訊息。 也可以在記錄訊息中變數的前後加上大刮號，以評估它們。
+1. 您可以在 [訊息] 欄位中輸入想要記錄的新記錄訊息。 也可以在記錄訊息中變數的前後加上大括號，以評估它們。
 
     如果您選擇 [傳送到輸出視窗]，當叫用記錄點時，訊息會出現在 [診斷工具] 視窗中。
 
     ![[診斷工具] 視窗中的記錄點資料](../debugger/media/snapshot-logpoint-output.png)
 
-    如果您選擇 [傳送到應用程式記錄檔]，當叫用記錄點時，只要可以看到來自 `System.Diagnostics.Trace` (或在 .NET Core 中為 `ILogger`) (例如[應用程式深入解析](/azure/application-insights/app-insights-asp-net-trace-logs)) 的位置，就會顯示訊息。
+    如果您選擇 [傳送到應用程式記錄檔]，當叫用記錄點時，只要可以看到來自 `System.Diagnostics.Trace` (或在 .NET Core 中為 `ILogger`) (例如[應用程式深入解析](/azure/application-insights/app-insights-asp-net-trace-logs)) 之訊息的位置，就會顯示訊息。
 
 ## <a name="next-steps"></a>後續步驟
 

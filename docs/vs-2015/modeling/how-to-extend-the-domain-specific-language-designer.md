@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 645346098b954fb57f5bb09f5ee97cfa48302150
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c02dbf550ca1621a17d2b674a522e1e4f4bcc1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038902"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>HOW TO：擴充特定領域語言設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,25 +28,25 @@ ms.locfileid: "58940541"
   
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>若要建立的 DSL 設計工具擴充功能方案  
   
-1.  建立新的專案使用類別庫專案範本。 在 **新的專案** 對話方塊中，按一下**Visual C#** ，然後在中間視窗中的，按一下 **類別庫**。  
+1. 建立新的專案使用類別庫專案範本。 在 **新的專案** 對話方塊中，按一下**Visual C#** ，然後在中間視窗中的，按一下 **類別庫**。  
   
      這個專案會包含您的擴充功能的程式碼。  
   
-2.  建立新的專案使用 VSIX 專案範本。 在 **新的專案**對話方塊方塊中，展開**Visual C#**，按一下**擴充性**，，然後在中間視窗中選取**VSIX 專案**。  
+2. 建立新的專案使用 VSIX 專案範本。 在 **新的專案**對話方塊方塊中，展開**Visual C#**，按一下**擴充性**，，然後在中間視窗中選取**VSIX 專案**。  
   
      選取 **加入至方案**。  
   
      在 VSIX 資訊清單編輯器中，開啟 Source.extension.vsixmanifest。  
   
-3.  上方的 [內容] 欄位中，按一下**加入內容**。  
+3. 上方的 [內容] 欄位中，按一下**加入內容**。  
   
-4.  中**加入內容** 對話方塊中，將**內容類型選取**來**MEF 元件**，並將**專案**您類別庫專案。  
+4. 中**加入內容** 對話方塊中，將**內容類型選取**來**MEF 元件**，並將**專案**您類別庫專案。  
   
-5.  按一下 **選取版本**並確定**Visual Studio Enterprise**已核取。  
+5. 按一下 **選取版本**並確定**Visual Studio Enterprise**已核取。  
   
-6.  請確定 VSIX 專案方案的啟始專案。  
+6. 請確定 VSIX 專案方案的啟始專案。  
   
-7.  在類別庫專案中，加入下列組件的參考：  
+7. 在類別庫專案中，加入下列組件的參考：  
   
      Microsoft.VisualStudio.CoreUtility  
   

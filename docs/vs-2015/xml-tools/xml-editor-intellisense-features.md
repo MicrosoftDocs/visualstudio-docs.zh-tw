@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8299e96f6ec074ce82dcd1fd872e56886c2d19b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945837"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094656"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 編輯器 IntelliSense 功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio 中提供的其他語言編輯器。 本節說明如何使用 IntelliSense (XSLT) 搭配 XML 結構定義語言 (XSD) 與 XSLT 文件。  
   
 ## <a name="intellisense-in-an-xsd-document"></a>XSD 文件中的 IntelliSense  
@@ -86,19 +85,19 @@ XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio �
   
  XML 編輯器會針對下列項目執行此操作：  
   
--   對稱的開始與結束標記。  
+- 對稱的開始與結束標記。  
   
--   任何一對 「\<"或">"角括號。  
+- 任何一對 「\<"或">"角括號。  
   
--   註解的開始與結束。  
+- 註解的開始與結束。  
   
--   處理指示的開始與結束。  
+- 處理指示的開始與結束。  
   
--   CDATA 區塊的開始與結束。  
+- CDATA 區塊的開始與結束。  
   
--   DTD 宣告的開始與結束。  
+- DTD 宣告的開始與結束。  
   
--   屬性上的開頭及結束引號。  
+- 屬性上的開頭及結束引號。  
   
 ## <a name="modifying-the-intellisense-options"></a>修改 IntelliSense 選項  
  依預設會啟用 IntelliSense 及自動完成功能。 但是，您可藉由修改 [工具] - [選項] 設定來對其進行變更。  
@@ -113,11 +112,11 @@ XML 編輯器提供完整的 IntelliSense 功能，其相當於 Visual Studio �
   
 #### <a name="to-change-the-auto-completion-behavior"></a>變更自動完成行為  
   
-1.  選取 [工具] 功能表上的 [選項]。  
+1. 選取 [工具] 功能表上的 [選項]。  
   
-2.  依序展開**文字編輯器**，展開**XML**，然後選取**其他**。  
+2. 依序展開**文字編輯器**，展開**XML**，然後選取**其他**。  
   
-3.  若要變更任何**自動插入**區段，然後按一下**確定**。  
+3. 若要變更任何**自動插入**區段，然後按一下**確定**。  
   
 ## <a name="see-also"></a>另請參閱  
  [XML 編輯器](../xml-tools/xml-editor.md)   

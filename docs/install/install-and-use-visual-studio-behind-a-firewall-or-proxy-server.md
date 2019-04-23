@@ -1,7 +1,7 @@
 ---
 title: 在防火牆或 Proxy 伺服器後方安裝及使用
 description: 如果您的組織使用防火牆或 Proxy 伺服器，請檢閱您可能想要列入允許清單或開啟的網域 URL、連接埠及通訊協定
-ms.date: 07/10/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b483115daf15d7bf44c188e76993e5ffaedab699
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323840"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857524"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
@@ -102,7 +102,7 @@ ms.locfileid: "58323840"
 | GitHub 存放庫資訊 | api.github.com | https | 443 | 取得 Bower 套件其他相關資訊的必要項目 |
 | Web Linter | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Cookiecutter<br>總管範本<br>探索 <br><br>Cookiecutter <br>總管專案<br> 建立 | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | 用來從我們建議的摘要和 GitHub 存放庫探索線上範本 <br><br>用來從需要單次隨選安裝來自 Python 套件索引 (PyPI) 之 Cookiecutter Python 套件的 Cookiecutter 範本建立專案 |
-| Python 套件 <br>探索<br><br>Python 套件 <br>管理<br><br>Python <br>新增專案 <br>範本 | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | 提供搜尋 pip 套件的能力<br><br>用來在遺失 pip 的情況下自動安裝它 <br><br> 用來建立 <br><br>用來針對 Cookiecutter 範本 URL 解析 [新增專案] 對話方塊中的 Python 專案範本：<br> - 分類器專案<br>- 叢集專案 <br> - 迴歸專案 <br> - 使用 PyKinect 的 PyGame <br> - Pyvot 專案 |
+| Python 套件 <br>探索<br><br>Python 套件 <br>管理<br><br>新增 <br>Python <br> 專案 <br>範本 | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | 提供搜尋 pip 套件的能力<br><br>用來在遺失 pip 的情況下自動安裝它 <br><br>用來將下列新的 Python 專案範本解析成 Cookiecutter 範本 URL：<br> - 分類器專案<br>- 叢集專案 <br> - 迴歸專案 <br> - 使用 PyKinect 的 PyGame <br> - Pyvot 專案 |
 | Office Web <br>Add-In - 增益集 <br> file:/// <br>驗證 <br>服務 | verificationservice.osi.office.net | https | 443 | 用來驗證針對 Office Web 增益集的資訊清單 |
 | SharePoint 和 <br>Office 增益集 | sharepoint.com | https | 443 | 用來針對 SharePoint Online 發行及測試 SharePoint 和 Office 增益集 |
 | 工作流程管理員 <br>測試服務<br> 主機 | | http | 12292 | 自動針對搭配工作流程測試 SharePoint 增益集所建立的防火牆規則 |
@@ -141,6 +141,7 @@ ms.locfileid: "58323840"
 
 ## <a name="see-also"></a>另請參閱
 
+* [Live Share 的連線需求](/visualstudio/liveshare/reference/connectivity/)
 * [建立 Visual Studio 的網路安裝](create-a-network-installation-of-visual-studio.md)
 * [針對 Visual Studio 中的網路相關錯誤進行疑難排解](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffee39765d28306509ebe3a2ba30e8fabb79cf80
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08db2532cd5524dad5762bc244137ebb87939860
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042773"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107153"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>開始開發 Visual Studio 擴充功能
 
@@ -47,40 +47,40 @@ ms.locfileid: "55042773"
 
 在實務上，我們發現大多數人想要擴充的功能是命令、 功能表和工具列、 windows、 IntelliSense 和專案。 以下是相關章節的連結：
 
--   [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)： 將您自己的項目新增至 Visual Studio 功能表和工具列。 您可以使用它們來啟動 Visual Studio 的新功能或您自己的外部協助應用程式。 您也可以提供自訂快速鍵的功能表項目。
+- [擴充功能表和命令](../extensibility/extending-menus-and-commands.md)： 將您自己的項目新增至 Visual Studio 功能表和工具列。 您可以使用它們來啟動 Visual Studio 的新功能或您自己的外部協助應用程式。 您也可以提供自訂快速鍵的功能表項目。
 
--   [延伸和自訂工具 Windows](../extensibility/extending-and-customizing-tool-windows.md)： 擴充現有的工具視窗，或建立您自己的工具視窗。 比方說，您可以在其中新增新的屬性以**屬性**，也可以建立新的工具視窗，以加入其他功能。
+- [延伸和自訂工具 Windows](../extensibility/extending-and-customizing-tool-windows.md)： 擴充現有的工具視窗，或建立您自己的工具視窗。 比方說，您可以在其中新增新的屬性以**屬性**，也可以建立新的工具視窗，以加入其他功能。
 
--   [編輯器和語言服務延伸模組](../extensibility/editor-and-language-service-extensions.md)： 新增您自己的自訂 Visual Studio 語言提供的 IntelliSense，或建立新的程式設計語言的支援。 您可以建立新的陳述式完成、 建議和新 QuickInfo 工具提示。 燈泡，您可以新增重構的建議和程式碼修正來支援新的程式設計語言。
+- [編輯器和語言服務延伸模組](../extensibility/editor-and-language-service-extensions.md)： 新增您自己的自訂 Visual Studio 語言提供的 IntelliSense，或建立新的程式設計語言的支援。 您可以建立新的陳述式完成、 建議和新 QuickInfo 工具提示。 燈泡，您可以新增重構的建議和程式碼修正來支援新的程式設計語言。
 
--   [擴充專案](../extensibility/extending-projects.md)
+- [擴充專案](../extensibility/extending-projects.md)
 
--   [擴充使用者設定和選項](../extensibility/extending-user-settings-and-options.md)
+- [擴充使用者設定和選項](../extensibility/extending-user-settings-and-options.md)
 
--   [擴充屬性和屬性視窗](../extensibility/extending-properties-and-the-property-window.md)
+- [擴充屬性和屬性視窗](../extensibility/extending-properties-and-the-property-window.md)
 
--   [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
+- [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Visual Studio Isolated Shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
+- [Visual Studio Isolated Shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
 
-##  <a name="BKMK_ProjectTemplate"></a> 哪些專案範本所提供的 VSSDK？
+## <a name="BKMK_ProjectTemplate"></a> 哪些專案範本所提供的 VSSDK？
  延伸模組的兩個主要類型都是 Vspackage 和 MEF 擴充功能。 一般情況下，VSPackage 擴充功能可使用或擴充命令、 工具視窗和專案的延伸模組。 MEF 擴充功能用來擴充或自訂 Visual Studio 編輯器中。
 
  Visual C# 和 Visual Basic 擴充功能，VSSDK 提供空白的 VSIX 專案範本，您可以使用與建立功能表命令、 工具視窗和編輯器延伸模組的新項目範本。 您也可以使用此範本以封裝專案範本、 程式碼片段和其他成品以散發給其他使用者。
 
- C + +，VSPackage 精靈會提供要加入功能表命令、 工具視窗和自訂編輯器的程式碼。
+ 針對C++，VSPackage 精靈提供的程式碼，以加入功能表命令、 工具視窗和自訂編輯器。
 
  Isolated Shell 範本用來封裝的版本，您可以加上商標及散發為您自己的 Visual Studio shell 擴充功能。 下列主題會示範如何開始使用每種類型的延伸模組：
 
--   功能表命令：[建立具有功能表命令的擴充功能](../extensibility/creating-an-extension-with-a-menu-command.md)
+- 功能表命令：[建立具有功能表命令的擴充功能](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   工具視窗：[使用工具視窗建立擴充功能](../extensibility/creating-an-extension-with-a-tool-window.md)
+- 工具視窗：[使用工具視窗建立擴充功能](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   編輯器擴充功能：[使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- 編輯器擴充功能：[使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   基本的 Vspackage 中：[使用 VSPackage 建立擴充功能](../extensibility/creating-an-extension-with-a-vspackage.md)
+- 基本的 Vspackage 中：[使用 VSPackage 建立擴充功能](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   VSIX 專案範本：[開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)
+- VSIX 專案範本：[開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>如何取得我看起來像是 Visual Studio 的擴充功能？
  設計您的延伸模組的使用者介面時，取得絕佳的祕訣[Visual Studio 使用者經驗指導方針](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。

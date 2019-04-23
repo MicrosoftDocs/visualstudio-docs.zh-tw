@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 608b5c37975c49e4e90cdf9edd923121350735e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7a57e7e42e1cfc2690732881e6702315d1b0f4d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088882"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML 類別圖：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,14 +36,14 @@ ms.locfileid: "58941635"
 > [!NOTE]
 >  本主題說明 UML 類別圖。 另外有一種類別圖，您可建立並用來視覺化程式碼。 請參閱[設計和檢視類別與類型](http://go.microsoft.com/fwlink/?LinkId=142231)。  
   
-##  <a name="Using"></a> 使用 UML 類別圖  
+## <a name="Using"></a> 使用 UML 類別圖  
  您可以將 UML 類別圖用於各種目的：  
   
--   提供與實作無關的類型說明，這些類型可在系統中使用，並在元件之間傳遞。  
+- 提供與實作無關的類型說明，這些類型可在系統中使用，並在元件之間傳遞。  
   
      例如，類型「餐點訂購」可能的實作位置為：商務圖層的 .NET 程式碼中、元件之間介面上的 XML 中、資料庫的 SQL 中和使用者介面的 HTML 中。 儘管這些實作的細節不同，但「餐點訂購」與諸如「菜單」和「付款」等其他類型之間的關聯性卻始終是相同的。 UML 類別圖讓您可以分別討論這些關聯性與實作。  
   
--   釐清應用程式與使用者之間通訊所使用的字彙，以及使用者需求說明中的字彙。 請參閱[模型使用者需求](../modeling/model-user-requirements.md)。  
+- 釐清應用程式與使用者之間通訊所使用的字彙，以及使用者需求說明中的字彙。 請參閱[模型使用者需求](../modeling/model-user-requirements.md)。  
   
      例如，考慮餐廳應用程式的使用者劇本、使用案例和其他要求說明。 在此類說明中，可找到諸如「菜單」、「訂購」、「餐點」、「價格」、「付款」等詞彙。 您可以繪製 UML 類別圖，定義這些詞彙之間的關聯性。 這樣可降低要求說明中、使用者介面中和說明文件中出現詞彙不一致的風險。  
   
@@ -78,7 +78,7 @@ ms.locfileid: "58941635"
   
  請參閱[UML 使用案例圖：指導方針](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
-##  <a name="BasicSteps"></a> 繪製類別圖的基本步驟  
+## <a name="BasicSteps"></a> 繪製類別圖的基本步驟  
  如需 UML 類別圖 參考之元素的相關資訊，請參閱[UML 類別圖：參考資料](../modeling/uml-class-diagrams-reference.md)。  
   
 > [!NOTE]
@@ -86,35 +86,35 @@ ms.locfileid: "58941635"
   
 #### <a name="to-create-a-uml-class-diagram"></a>若要建立 UML 類別圖  
   
-1.  在 **架構**功能表上，選擇**新增 UML 或分層圖**。  
+1. 在 **架構**功能表上，選擇**新增 UML 或分層圖**。  
   
-2.  底下**範本**，選擇**UML 類別圖**。  
+2. 底下**範本**，選擇**UML 類別圖**。  
   
-3.  命名圖表。  
+3. 命名圖表。  
   
-4.  中**加入至模型專案**，在您方案中，選取現有的模型專案或**建立新的模型專案**，然後選擇 **確定**。  
+4. 中**加入至模型專案**，在您方案中，選取現有的模型專案或**建立新的模型專案**，然後選擇 **確定**。  
   
      新的類別圖會顯示**UMLClass 圖表**工具箱。 工具箱包含需要的項目和關聯。  
   
 #### <a name="to-draw-a-uml-class-diagram"></a>若要繪製 UML 類別圖  
   
-1.  若要建立的類型，選擇**類別**，**介面**或是**列舉型別**工具在 [工具箱]，然後按一下圖表的空白部分。 (如果看不到工具箱，請按 CTRL+ALT+X)。  
+1. 若要建立的類型，選擇**類別**，**介面**或是**列舉型別**工具在 [工具箱]，然後按一下圖表的空白部分。 (如果看不到工具箱，請按 CTRL+ALT+X)。  
   
-2.  若要將屬性或作業新增至類型或列舉的常值中，選擇**屬性**， **Operations**或是**常值**標題在 [類型]，然後按 ENTER 鍵。  
+2. 若要將屬性或作業新增至類型或列舉的常值中，選擇**屬性**， **Operations**或是**常值**標題在 [類型]，然後按 ENTER 鍵。  
   
      您可以撰寫簽章，例如 `f(x:Boolean):Integer`。 請參閱[屬性和作業](#AttributesAndOperations)。  
   
      若要快速加入數個項目，請在加入每個項目後按兩次 ENTER 鍵。 您可以使用方向鍵在清單中上下移動。  
   
-3.  若要展開或摺疊類型，請選擇左上角的＞形箭號圖示。 您也可以展開和摺疊**屬性**並**Operations**類別或介面的一節。  
+3. 若要展開或摺疊類型，請選擇左上角的＞形箭號圖示。 您也可以展開和摺疊**屬性**並**Operations**類別或介面的一節。  
   
-4.  若要繪製類型之間的關聯、繼承或相依性連結，請按一下適當的工具，然後按一下來源類型和目標類型。  
+4. 若要繪製類型之間的關聯、繼承或相依性連結，請按一下適當的工具，然後按一下來源類型和目標類型。  
   
-5.  若要建立封裝中的類型，建立封裝，使用**封裝**工具，並接著建立新的類型和封裝內的套件。 您也可以使用複製命令來複製類型，並在封裝中貼上它們。  
+5. 若要建立封裝中的類型，建立封裝，使用**封裝**工具，並接著建立新的類型和封裝內的套件。 您也可以使用複製命令來複製類型，並在封裝中貼上它們。  
   
-6.  每個圖表都是相同專案中其他圖表之間共用之模型的檢視。 若要查看完整模型的樹狀檢視，請選擇**檢視**，**其他 Windows**， **UML 模型總管**。  
+6. 每個圖表都是相同專案中其他圖表之間共用之模型的檢視。 若要查看完整模型的樹狀檢視，請選擇**檢視**，**其他 Windows**， **UML 模型總管**。  
   
-##  <a name="UsingTypes"></a> 使用類別、 介面和列舉型別  
+## <a name="UsingTypes"></a> 使用類別、 介面和列舉型別  
  工具箱中可以使用三種標準類型的 Classifier。 這些指*型別*整份文件。  
   
  ![類別、 列舉和介面](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")  
@@ -125,9 +125,9 @@ ms.locfileid: "58941635"
   
 - 使用**列舉型別**(3) 來表示，例如具有有限的數目的常值之型別的`Stop`和`Go`。  
   
-  -   將常值加入至列舉。 為每個項目提供不同的名稱。  
+  - 將常值加入至列舉。 為每個項目提供不同的名稱。  
   
-  -   需要的話，也可以針對每個常值提供數值。 開啟中列舉的常值的捷徑功能表選擇 **屬性**，然後輸入中的數字**值**欄位中**屬性**視窗。  
+  - 需要的話，也可以針對每個常值提供數值。 開啟中列舉的常值的捷徑功能表選擇 **屬性**，然後輸入中的數字**值**欄位中**屬性**視窗。  
   
   為每個類型提供唯一的名稱。  
   
@@ -154,7 +154,7 @@ ms.locfileid: "58941635"
   
  若要從生命線建立類別，開啟生命線，捷徑功能表，然後選擇**建立類別**或是**建立介面**。 請參閱[UML 循序圖：指導方針](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
-##  <a name="AttributesAndOperations"></a> 屬性和作業  
+## <a name="AttributesAndOperations"></a> 屬性和作業  
  屬性 (4) 是類型的每個執行個體可以具有的已命名的值。 存取屬性不會變更執行個體的狀態。  
   
  作業 (5) 是類型的執行個體可以執行的方法或函式。 它會傳回值。 如果其**isQuery**屬性為 true 時，無法變更執行個體的狀態。  
@@ -167,9 +167,9 @@ ms.locfileid: "58941635"
   
  如需所有可設定屬性的詳細資訊，請參閱：  
   
--   [UML 類別圖表中屬性 (Attribute) 的屬性 (Property)](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [UML 類別圖表中屬性 (Attribute) 的屬性 (Property)](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [UML 類別圖表上作業的屬性](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [UML 類別圖表上作業的屬性](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
 ### <a name="types-of-attributes-and-operations"></a>屬性和作業的類型  
  每個*型別*屬性或作業，以及每個參數類型，可以是下列其中之一：  
@@ -214,9 +214,9 @@ ms.locfileid: "58941635"
   
  如果多重性大於 1，也可以設定以下屬性：  
   
--   **IsOrdered** -如果為 true，集合已定義的順序。  
+- **IsOrdered** -如果為 true，集合已定義的順序。  
   
--   **IsUnique** -如果為 true，沒有任何重複值的集合中。  
+- **IsUnique** -如果為 true，沒有任何重複值的集合中。  
   
 ### <a name="visibility"></a>可視性  
  *可見性*指出屬性或作業是否可以在類別定義之外存取。 允許的值如下：  
@@ -262,7 +262,7 @@ visibility attribute-name : Type
 visibility operation-name (parameter1 : Type1, ...) : Type  
 ```  
   
- 例如：  
+ 例如:   
   
 ```  
 + AddItem (item : MenuItem, quantity : Integer) : Boolean  
@@ -330,7 +330,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  通常僅在編輯簽章時，圖表上才會顯示完整簽章。 完成編輯時，會隱藏其他屬性。 如果您想要一直看到完整簽章，開啟類型 的捷徑功能表，然後選擇**顯示完整簽章**。  
   
-##  <a name="Associations"></a> 繪圖和使用關聯  
+## <a name="Associations"></a> 繪圖和使用關聯  
  使用關聯來表示兩個項目之間的任何連結類型，無論軟體中如何實作該連結。 例如，您可以使用關聯來表示 C# 中的指標、資料庫中的關聯，或從 XML 檔案的一部分到另一部分的交互參考。 它可以表示現實世界中物件之間的關聯，例如地球與太陽。 關聯不會說明連結的表示方式，只會說明有該資訊存在。  
   
 ### <a name="properties-of-an-association"></a>關聯的屬性  
@@ -362,7 +362,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  ![對等的關聯和屬性](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")  
   
-##  <a name="Inheritance"></a> 繼承  
+## <a name="Inheritance"></a> 繼承  
  使用**繼承**工具來建立下列關聯性：  
   
 - A*一般化*特製化的型別和一般型別之間的關聯性  
@@ -405,7 +405,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  ![使用連接器和棒棒糖符號顯示的實現](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")  
   
-##  <a name="Templates"></a> 範本類型  
+## <a name="Templates"></a> 範本類型  
  您可以定義可由其他類型或值進行參數化的泛型類型或範本類型。  
   
  例如，您可以建立由索引鍵和實值類型參數化的泛型「字典」：  
@@ -446,29 +446,29 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 #### <a name="to-use-a-template-type"></a>若要使用範本類型  
   
-1.  建立新類型，例如 `AddressTable`。  
+1. 建立新類型，例如 `AddressTable`。  
   
-2.  開啟新的類型的捷徑功能表，然後選擇**屬性**。  
+2. 開啟新的類型的捷徑功能表，然後選擇**屬性**。  
   
-3.  在 **範本繫結**屬性中，選取範本類型，例如`Dictionary`，從下拉式清單。  
+3. 在 **範本繫結**屬性中，選取範本類型，例如`Dictionary`，從下拉式清單。  
   
-4.  依序展開**範本繫結**屬性。  
+4. 依序展開**範本繫結**屬性。  
   
      系統會為範本類型的每個參數顯示一個資料列。  
   
-5.  將每個參數設定為適當的值。 例如，將 `Key` 參數設定為稱為 `Name` 的類別。  
+5. 將每個參數設定為適當的值。 例如，將 `Key` 參數設定為稱為 `Name` 的類別。  
   
-##  <a name="Packages"></a> 封裝  
+## <a name="Packages"></a> 封裝  
  在 UML 類別圖中可以檢視封裝。 封裝是其他模型項目的容器。 您可以在封裝內建立任何項目。 在圖表上，如果移動封裝，該封裝內的項目也會隨之移動。  
   
  您可以使用摺疊/展開控制項來隱藏或顯示套件的內容。  
   
  請參閱[定義套件和命名空間](../modeling/define-packages-and-namespaces.md)。  
   
-##  <a name="generating"></a> 從 UML 類別圖產生程式碼  
+## <a name="generating"></a> 從 UML 類別圖產生程式碼  
  若要開始實作 UML 類別圖上的類別，您可以產生 C# 程式碼或自訂程式碼產生的範本。 使用提供的 C# 範本來產生程式碼：  
   
--   開啟圖表或項目，快顯功能表選擇 **產生的程式碼**，然後設定必要的屬性。  
+- 開啟圖表或項目，快顯功能表選擇 **產生的程式碼**，然後設定必要的屬性。  
   
      如需如何設定這些屬性和自訂所提供的範本的詳細資訊，請參閱[從 UML 類別圖產生程式碼](../modeling/generate-code-from-uml-class-diagrams.md)。  
   

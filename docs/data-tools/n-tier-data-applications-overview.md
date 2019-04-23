@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00bd9dff41e6c57fc6969f4198f96d0e209e2a77
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943684"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109929"
 ---
 # <a name="n-tier-data-applications-overview"></a>多層式架構 (N-Tier) 資料應用程式概觀
 *多層式架構*資料應用程式是指分隔成多個資料應用程式*層*。 也稱為 「 分散式應用程式 」 和 「 多層式應用程式，多層式架構應用程式在個別分成離散層級的用戶端與伺服器之間分散處理。 當您開發應用程式以存取資料時，您應該有清楚的區隔，組成應用程式各層之間。
@@ -27,33 +27,33 @@ ms.locfileid: "55943684"
 
 Visual Studio 包含數個功能，可協助開發人員建立多層式架構應用程式：
 
--   資料集提供**資料集 Project**屬性，可讓您區隔資料集 （資料實體層） 和 Tableadapter （資料存取層） 分成離散專案。
+- 資料集提供**資料集 Project**屬性，可讓您區隔資料集 （資料實體層） 和 Tableadapter （資料存取層） 分成離散專案。
 
--   [在 Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供用來產生不同的命名空間的 DataContext 和資料類別設定。 這可讓資料存取與資料實體層的邏輯分隔。
+- [在 Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供用來產生不同的命名空間的 DataContext 和資料類別設定。 這可讓資料存取與資料實體層的邏輯分隔。
 
--   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)提供<xref:System.Data.Linq.Table%601.Attach%2A>方法可讓您將應用程式中的不同層級的結合在一起的 DataContext。 如需詳細資訊，請參閱 <<c0> [ 多層式架構和遠端的應用程式使用 LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)。
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)提供<xref:System.Data.Linq.Table%601.Attach%2A>方法可讓您將應用程式中的不同層級的結合在一起的 DataContext。 如需詳細資訊，請參閱 <<c0> [ 多層式架構和遠端的應用程式使用 LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)。
 
 ## <a name="presentation-tier"></a>展示層
 *展示層*是使用者與應用程式的互動的層。 它通常會包含其他的應用程式邏輯也。 典型的展示層元件包括下列各項：
 
--   資料繫結的元件，例如<xref:System.Windows.Forms.BindingSource>和<xref:System.Windows.Forms.BindingNavigator>。
+- 資料繫結的元件，例如<xref:System.Windows.Forms.BindingSource>和<xref:System.Windows.Forms.BindingNavigator>。
 
--   物件表示的資料，例如[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)展示層中使用的實體類別。
+- 物件表示的資料，例如[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)展示層中使用的實體類別。
 
 展示層通常存取中介層使用的服務參考 (例如[Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)應用程式)。 展示層不會直接存取資料層。 展示層會與資料層透過中介層的資料存取元件通訊。
 
 ## <a name="middle-tier"></a>中介層
 *中介層*用來彼此通訊的展示層和資料層的層。 典型的中介層元件包括下列各項：
 
--   商務邏輯，例如商務規則和資料驗證。
+- 商務邏輯，例如商務規則和資料驗證。
 
--   資料存取元件和邏輯，如下所示：
+- 資料存取元件和邏輯，如下所示：
 
-    -   [TableAdapters](create-and-configure-tableadapters.md)並[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
+    - [TableAdapters](create-and-configure-tableadapters.md)並[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
 
-    -   物件表示的資料，例如[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)實體類別。
+    - 物件表示的資料，例如[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)實體類別。
 
-    -   一般應用程式服務，例如驗證、 授權和個人化。
+    - 一般應用程式服務，例如驗證、 授權和個人化。
 
 下圖顯示功能和技術，可在 Visual Studio 中，和他們可能適用於什麼情況的多層式架構應用程式的中介層。
 

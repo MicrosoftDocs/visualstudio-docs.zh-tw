@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3df17c9b52a7660da20cb036ad4aad702e86d931
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 06505798dcff86507cfc52c4209bf038776f7fac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690717"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100465"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
@@ -35,11 +35,11 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="notes-for-callers"></a>呼叫端資訊
  這個介面的方法，延後的**IDebugFunctionObject**如下：
 
--   **IDebugEvaluate**方法會採用旗標。
+- **IDebugEvaluate**方法會採用旗標。
 
--   **CreateObject**方法會採用旗標和逾時。
+- **CreateObject**方法會採用旗標和逾時。
 
--   **CreateStringObjectWithLength**方法會採用的長度。
+- **CreateStringObjectWithLength**方法會採用的長度。
 
 ## <a name="methods"></a>方法
  這個介面會實作下列方法：

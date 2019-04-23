@@ -13,17 +13,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1edbcddd27f2c3637e0e56dd9b4841e17ace16af
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ac542ded884e922028c6cbc16447fb2a3241613b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767559"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663280"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 開啟要偵錯的指定可執行檔。  
   
 ## <a name="syntax"></a>語法  

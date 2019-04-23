@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f85eee14ef026787c9b929a64e14b462397338d
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.openlocfilehash: 4af3ddb3d04b3a864a26149f88fa15960d2c2b2d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789804"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659667"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>鍵盤快速鍵 (HTML 和 JavaScript)
 
@@ -28,7 +28,6 @@ ms.locfileid: "58789804"
 ::: moniker range="vs-2017"
  鍵盤快速鍵在 Visual Studio 中偵錯使用 HTML 和 JavaScript 的 UWP 應用程式。
 ::: moniker-end
-
 
 ## <a name="general-shortcuts"></a>一般快速鍵
 
@@ -64,7 +63,7 @@ ms.locfileid: "58789804"
 |將選取的 CSS 值加 1|向上鍵|
 |將選取的 CSS 值減 1|向下鍵|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [JavaScript 主控台命令](../debugger/javascript-console-commands.md)
-- [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
-- [快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [快速入門：針對 JavaScript 進行偵錯](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

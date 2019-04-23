@@ -8,20 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb8e66292a1cdb393401d180bd8b9f8691dc8f0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 406eb2872a2be7127aaf2d37ee654cfe2f58ac3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913924"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654486"
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>HOW TO：結構描述集合搜尋結果節點新增至工作區
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>HOW TO：將結構描述集合搜尋結果節點新增至工作區
 
 本主題說明如何將會以反白顯示的節點加入**XML 結構描述總管**做為工作區中的關鍵字搜尋的結果。
 
 > [!NOTE]
 > 只有全域節點可以加入至[工作區](../xml-tools/xml-schema-designer-workspace.md)。
-
 
  此範例使用範例[採購單結構描述](../xml-tools/sample-xsd-file-purchase-order-schema.md)。
 

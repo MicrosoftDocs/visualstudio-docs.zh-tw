@@ -19,23 +19,22 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 254602005966a9d9f95ff6b76f8ad42360e4a57d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48e867cd0993106247f7105c1102f4e1407a4fed
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770785"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662734"
 ---
 # <a name="message-task"></a>訊息工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在建置期間記錄訊息。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `Message` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`Importance`|選擇性的 `String` 參數。<br /><br /> 指定訊息的重要性。 此參數的值可以是 `high`、`normal` 或 `low`。 預設值為 `normal`。|  
 |`Text`|選擇性的 `String` 參數。<br /><br /> 要記錄的錯誤文字。|  

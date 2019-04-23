@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942954"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107082"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>以 UML 循序圖說明具有片段的控制流程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +38,16 @@ ms.locfileid: "58942954"
   
  圖中顯示的項目如下所示。  
   
-1.  合併片段。 有不同類型的合併片段。 這個範例是 Alt 合併片段，您可以用來顯示訊息可能發生的替代順序。  
+1. 合併片段。 有不同類型的合併片段。 這個範例是 Alt 合併片段，您可以用來顯示訊息可能發生的替代順序。  
   
-2.  互動運算元。 每個合併片段包含至少一個互動運算元，它可以包含訊息、互動使用和較小的合併片段。 在此範例中，Alt 合併片段有兩個互動作業，顯示兩個替代的訊息順序。  
+2. 互動運算元。 每個合併片段包含至少一個互動運算元，它可以包含訊息、互動使用和較小的合併片段。 在此範例中，Alt 合併片段有兩個互動作業，顯示兩個替代的訊息順序。  
   
-3.  您可以在每個互動運算元裡面按一下，個別選取它們。 在此範例中，會選取最上層的互動運算元，讓您可以看到它的界限。 一般而言，只會看見互動運算元之間的分隔線。  
+3. 您可以在每個互動運算元裡面按一下，個別選取它們。 在此範例中，會選取最上層的互動運算元，讓您可以看到它的界限。 一般而言，只會看見互動運算元之間的分隔線。  
   
     > [!NOTE]
     >  若要選取最上層的互動運算元，您不能按太靠近合併片段頂端之處。  
   
-4.  成立條件。 您可以賦予每個互動運算元一個成立條件。 這說明執行互動運算元內訊息的條件。  
+4. 成立條件。 您可以賦予每個互動運算元一個成立條件。 這說明執行互動運算元內訊息的條件。  
   
 ## <a name="creating-combined-fragments"></a>建立合併片段  
  如需您可以建立的片段類型清單，請參閱 [合併片段的類型](#KindsOfFragment)。  
@@ -97,12 +97,12 @@ ms.locfileid: "58942954"
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>設定或檢視合併片段的屬性  
   
--   以滑鼠右鍵按一下合併片段的標題，然後按一下 [屬性] 。  
+- 以滑鼠右鍵按一下合併片段的標題，然後按一下 [屬性] 。  
   
     > [!NOTE]
     >  不同類型的合併片段有不同的屬性。  
   
-##  <a name="KindsOfFragment"></a> 類型的合併片段  
+## <a name="KindsOfFragment"></a> 類型的合併片段  
   
 ### <a name="fragments-describing-control-flow"></a>描述控制流程的片段  
  簡單的循序圖只會顯示一個典型的序列。 您可以使用下列類型的合併片段來描述在不同的情況下，可能會發生的變化。  

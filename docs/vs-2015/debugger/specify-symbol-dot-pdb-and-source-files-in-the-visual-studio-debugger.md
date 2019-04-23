@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f5dc8d361386417fe52706fbfc2049d5a420d4c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6be45876174afa00a58ea9948661f051f8df1ddc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944149"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045703"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio Debugger 中指定符號 (.pdb) 和原始程式檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,22 +43,22 @@ ms.locfileid: "58944149"
 
  在 Visual Studio 2012 之前，當您對遠端裝置上的 managed 程式碼進行偵錯時，您需要將符號檔案放在遠端電腦上。 然而現在的情況已經有所改變。 所有符號檔必須位於本機電腦上，或位於 [工具] / [選項] / [偵錯] / [符號]  頁面上指定的位置。
 
-##  <a name="BKMK_Find_symbol___pdb__files"></a> 偵錯工具在哪裡搜尋.pdb 檔案
+## <a name="BKMK_Find_symbol___pdb__files"></a> 偵錯工具在哪裡搜尋.pdb 檔案
 
-1.  DLL 或可執行檔內部指定的位置
+1. DLL 或可執行檔內部指定的位置
 
      (根據預設，如果您在電腦上建立了 DLL 或可執行檔，連結器就會將相關聯之 .pdb 檔案的完整路徑和檔案名稱放置在該 DLL 或可執行檔內。 偵錯工具會先查看符號檔是否在 DLL 或可執行檔內部指定的位置。 這種方式很有用，讓您始終有符號可供電腦上編譯的程式碼使用)。
 
-2.  可能和 DLL 或可執行檔存在相同資料夾中的 .pdb 檔案。
+2. 可能和 DLL 或可執行檔存在相同資料夾中的 .pdb 檔案。
 
-3.  任何本機符號快取資料夾。
+3. 任何本機符號快取資料夾。
 
-4.  任何在像是 Microsoft 符號伺服器 (如果啟用) 等位置指定的網路、網際網路或本機符號伺服器和位置。
+4. 任何在像是 Microsoft 符號伺服器 (如果啟用) 等位置指定的網路、網際網路或本機符號伺服器和位置。
 
-###  <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> 符號檔為何需要與可執行檔完全相符？
+### <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> 符號檔為何需要與可執行檔完全相符？
  偵錯工具只會載入與可執行檔建置時所建立的 .pdb 檔案完全相同之可執行檔的 .pdb 檔案 (也就是說，.pdb 必須是原始 .pdb 檔案或該檔案的複本)。 由於編譯器除了會針對建立正確且有效率的程式碼這項主要工作最佳化之外，還會針對加快編譯速度最佳化，因此即使程式碼本身不變，可執行檔的實際配置也可能變更。 如需詳細資訊，請參閱 [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)(Visual Studio 為何要求偵錯工具的符號檔必須完全符合當初建置這些符號檔時所使用的二進位檔？)。
 
-###  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> 指定符號位置和載入行為
+### <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> 指定符號位置和載入行為
  當您在 VS IDE 中對專案進行偵錯時，偵錯工具會自動載入位於專案目錄中的符號檔。 您可以在 [工具] / [選項] / [偵錯] / [符號] 中，為 Microsoft、Windows 或協力廠商元件指定替代的搜尋路徑和符號伺服器。您也可以指定您想要偵錯工具自動載入符號的特定模組。 然後您就可以在主動進行偵錯時，手動變更這些設定。
 
 1. 在 Visual Studio 中開啟 [工具] / [選項] / [偵錯] / [符號]  頁面。
@@ -96,7 +96,7 @@ ms.locfileid: "58944149"
 
    若您想知道 DLL 匯出表中可使用的符號，請使用 `dumpbin /exports`。 這些符號適用於任何 32 位元系統 DLL。 讀取 `dumpbin /exports` 輸出時，您可以看到確實的函式名稱，包含非英數字元。 這對設定函式的中斷點來說很有幫助。 DLL 匯出表中的函式名稱在偵錯工具中的其他位置可能會顯示為已被截斷。 這些呼叫都按呼叫順序列出，目前的函式 (巢狀最深處) 列在頂端。 如需詳細資訊，請參閱 [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf)。
 
-###  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> 使用符號伺服器尋找不在本機電腦上的符號檔
+### <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> 使用符號伺服器尋找不在本機電腦上的符號檔
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可以從實作 symsrv 通訊協定的符號伺服器下載偵錯符號檔。 [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) 和 [Debugging Tools for Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) 是可以實作符號伺服器的兩項工具。 在 VS [ **選項** ] 對話方塊中指定要使用的符號伺服器。
 
  您可以使用的符號伺服器包括：
@@ -118,7 +118,7 @@ ms.locfileid: "58944149"
 > [!NOTE]
 >  如果您使用 Microsoft 公用符號伺服器以外的其他符號伺服器，請確定該符號伺服器和其路徑值得信任。 由於符號檔可能包含任意可執行程式碼，因此可能會讓您面臨安全性威脅。
 
-###  <a name="BKMK_Find_and_load_symbols_while_debugging"></a> 在偵錯時尋找並載入符號
+### <a name="BKMK_Find_and_load_symbols_while_debugging"></a> 在偵錯時尋找並載入符號
  只要偵錯工具處於中斷模式，您就可以載入偵錯工具選項先前所排除或編譯器找不到之模組的符號。 您可以從 [呼叫堆疊]、[模組]、[區域變數]、[自動變數] 和所有 [監看式] 視窗的捷徑功能表中載入符號。 如果偵錯工具在未提供符號或原始程式檔的程式碼中發生中斷，則會出現文件視窗。 您可以在這裡找到有關遺漏檔案的資訊，並採取動作找出和載入這些檔案。
 
  **透過 [未載入符號] 文件頁面尋找符號**
@@ -160,7 +160,7 @@ ms.locfileid: "58944149"
 |**符號設定...**|開啟 VS [ **選項對話方塊** / **符號** ] / [ **選項** ] 對話方塊中指定要使用的符號伺服器。|
 |**永遠自動載入**|將符號檔加入至偵錯工具自動載入的檔案清單。|
 
-###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> 設定符號檔的編譯器選項
+### <a name="BKMK_Set_compiler_options_for_symbol_files"></a> 設定符號檔的編譯器選項
  當您從 VS IDE 建置專案並使用標準 [ **偵錯** ] 組建組態時，C++ 和 Managed 編譯器會為您的程式碼建立適當的符號檔。 您也可以在命令列上設定編譯器選項，以便建立符號檔。
 
  **C++ 選項**
@@ -191,23 +191,23 @@ ms.locfileid: "58944149"
 
   應用程式的組態檔 (Web.config) 必須設為偵錯模式。 偵錯模式會導致 ASP.NET 產生動態產生之檔案的符號，並使偵錯工具附加到 ASP.NET 應用程式。 如果您已從 Web 專案範本建立專案，則 VS 會在開始偵錯時自動設定這個項目。
 
-##  <a name="BKMK_Find_source_files"></a> 尋找原始程式檔
+## <a name="BKMK_Find_source_files"></a> 尋找原始程式檔
 
-###  <a name="BKMK_Where_the_debugger_searches_for_source_files"></a> 偵錯工具在哪裡搜尋原始程式檔
+### <a name="BKMK_Where_the_debugger_searches_for_source_files"></a> 偵錯工具在哪裡搜尋原始程式檔
  偵錯工具會在下列位置尋找原始程式檔：
 
-1.  啟動偵錯工具的 Visual Studio 執行個體 IDE 中開啟的檔案。
+1. 啟動偵錯工具的 Visual Studio 執行個體 IDE 中開啟的檔案。
 
-2.  已在 Visual Studio 執行個體中開啟之方案裡的檔案。
+2. 已在 Visual Studio 執行個體中開啟之方案裡的檔案。
 
-3.  方案屬性的 [ **通用屬性** / **偵錯原始程式檔** ] 頁面中指定的目錄。 (在方案總管中 選取方案節點、按一下滑鼠右鍵，然後選取 [屬性] 。 )
+3. 方案屬性的 [ **通用屬性** / **偵錯原始程式檔** ] 頁面中指定的目錄。 (在方案總管中 選取方案節點、按一下滑鼠右鍵，然後選取 [屬性] 。 )
 
-4.  模組之 .pdb 的來源資訊。 這可以是模組建置時原始程式檔的位置，也可以是呼叫來源伺服器的命令。
+4. 模組之 .pdb 的來源資訊。 這可以是模組建置時原始程式檔的位置，也可以是呼叫來源伺服器的命令。
 
-###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> 使用未載入來源/未載入符號頁面尋找並載入原始程式檔
+### <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> 使用未載入來源/未載入符號頁面尋找並載入原始程式檔
  當偵錯工具在未提供原始程式檔的位置中斷執行時，它就會顯示 [ **未載入來源** ] 或 [ **未載入符號** ] 頁面，幫助您尋找原始程式檔。 當偵錯工具找不到可執行檔的符號檔 (.pdb) 以完成搜尋時，[ **未載入符號** ] 就會出現。 [未載入符號] 頁面會提供搜尋檔案的選項。 如果在您執行其中一個選項後找到 .pdb，而且偵錯工具能夠使用符號檔中的資訊擷取原始程式檔，則會顯示來源。 否則會出現描述問題的 [ **未載入來源** ] 頁面。 這個頁面會顯示選項連結，讓您能夠執行可能解決問題的動作。
 
-###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> 將原始程式檔搜尋路徑加入至方案
+### <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> 將原始程式檔搜尋路徑加入至方案
  您可以指定要搜尋原始程式檔的網路或本機目錄。
 
 1. 在 [方案總管] 中選取方案，然後從捷徑功能表選擇 [ **屬性** ]。
@@ -220,7 +220,7 @@ ms.locfileid: "58944149"
 
    請注意，只會搜尋指定的目錄。 您必須自行加入要搜尋的所有子目錄項目。
 
-###  <a name="BKMK_Use_source_servers"></a> 使用來源伺服器
+### <a name="BKMK_Use_source_servers"></a> 使用來源伺服器
  當本機電腦上沒有原始程式碼，或者 .pdb 檔不符合原始程式碼時，您都可以使用來源伺服器協助偵錯應用程式。 來源伺服器會接受對檔案的要求，並傳回實際的檔案。 來源伺服器藉由名為 srcsrv.dll 的 DLL 檔案執行。 來源伺服器會讀取應用程式的 .pdb 檔，該檔含有原始程式碼儲存機制的指標，以及用來從儲存機制擷取原始程式碼的命令。 只要在名為 srcsrv.ini 的檔案中列出允許的命令，並將該檔置於與 srcsrv.dll 和 devenv.exe 相同的目錄中，就能限制可以從應用程式的 .pdb 檔執行何種命令。
 
 > [!IMPORTANT]
@@ -228,19 +228,19 @@ ms.locfileid: "58944149"
 
  **若要啟用來源伺服器**
 
-1.  確定您使用上一節所描述的安全性措施來進行編譯。
+1. 確定您使用上一節所描述的安全性措施來進行編譯。
 
-2.  在 [ **工具** ] 功能表上選擇 [ **選項**]。
+2. 在 [ **工具** ] 功能表上選擇 [ **選項**]。
 
      [ **選項** ] 對話方塊隨即出現。
 
-3.  在 [ **偵錯** ] 節點中選擇 [ **一般**]。
+3. 在 [ **偵錯** ] 節點中選擇 [ **一般**]。
 
-4.  選取 [ **啟用來源伺服器支援** ] 核取方塊。
+4. 選取 [ **啟用來源伺服器支援** ] 核取方塊。
 
      ![啟用來源伺服器選項](../debugger/media/dbg-options-general-enablesrcsrvr-checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")
 
-5.  (選擇性) 選擇您想要的子選項。
+5. (選擇性) 選擇您想要的子選項。
 
      請注意，[ **允許部分信任組件的來源伺服器 (僅限 Managed)** ] 和 [ **永遠執行未受信任的來源伺服器命令而不須提示** ] 都可能提高上面所討論的安全性風險。
 

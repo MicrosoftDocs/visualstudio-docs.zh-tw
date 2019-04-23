@@ -18,51 +18,51 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5e859e999d7aec8a58464f145ed7c3e9afbc788
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a20a9ecf08c82589fd915fdd4bd60c6144e9d1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772150"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100413"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>如何：使用類別設計工具建立類型
+# <a name="how-to-create-types-by-using-class-designer"></a>HOW TO：使用 [類別設計工具] 建立類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-若要為 Visual C# .NET 和 Visual Basic .NET 專案設計新的類型，請在類別圖上建立這些類型。 若要查看現有的類型，請參閱[如何：檢視現有類型 (類別設計工具)](../ide/how-to-view-existing-types-class-designer.md)。  
+若要為 Visual C# .NET 和 Visual Basic .NET 專案設計新的類型，請在類別圖上建立這些類型。 若要查看現有的類型，請參閱[如何：檢視現有類型 （類別設計工具）](../ide/how-to-view-existing-types-class-designer.md)。  
   
--   [建立新的類型](#CreateType)  
+- [建立新的類型](#CreateType)  
   
--   [將自訂屬性套用至類型](#CustAttributeType)  
+- [將自訂屬性套用至類型](#CustAttributeType)  
   
--   [將自訂屬性套用至類型成員](#CustAttributeMember)  
+- [將自訂屬性套用至類型成員](#CustAttributeMember)  
   
-##  <a name="CreateType"></a>建立新的類型  
+## <a name="CreateType"></a>建立新的類型  
   
-1.  在 [工具箱] 的 [類別設計工具] 下方，拖曳其中一個項目至類別圖上：  
+1. 在 [工具箱] 的 [類別設計工具] 下方，拖曳其中一個項目至類別圖上：  
   
-    -   [類別] 或 [抽象類別]  
+    - [類別] 或 [抽象類別]  
   
-    -   **Enum**  
+    - **Enum**  
   
-    -   **Interface**  
+    - **Interface**  
   
-    -   [結構] (VB) 或 [結構] (C#)  
+    - [結構] (VB) 或 [結構] (C#)  
   
-    -   **Delegate**  
+    - **Delegate**  
   
-    -   [模組] (僅限 VB)  
+    - [模組] (僅限 VB)  
   
-2.  為類型命名。 然後選取其存取層級。  
+2. 為類型命名。 然後選取其存取層級。  
   
-3.  選取您要為類型加入之初始程式碼的檔案：  
+3. 選取您要為類型加入之初始程式碼的檔案：  
   
-    -   若要建立新的檔案並將它新增至目前專案，請選取 [建立新檔案] 並為檔案命名。  
+    - 若要建立新的檔案並將它新增至目前專案，請選取 [建立新檔案] 並為檔案命名。  
   
-    -   若要將程式碼新增至現有檔案，請選取 [新增至現有檔案]。  
+    - 若要將程式碼新增至現有檔案，請選取 [新增至現有檔案]。  
   
          如果方案中有跨多個應用程式共用程式碼的專案，您可以將新的類型加入至應用程式專案中的類別圖，但是，只有相同應用程式專案或共用專案中有對應的類別檔案時才能這樣做。  
   
-4.  現在請加入其他項目以定義類型：  
+4. 現在請加入其他項目以定義類型：  
   
     |||  
     |-|-|  
@@ -75,29 +75,29 @@ ms.locfileid: "54772150"
   
      請參閱[建立成員](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)。  
   
-##  <a name="CustAttributeType"></a> 將自訂屬性套用類型  
+## <a name="CustAttributeType"></a> 將自訂屬性套用類型  
   
-1.  在類別圖上按一下類型的圖案。  
+1. 在類別圖上按一下類型的圖案。  
   
-2.  在 [屬性] 視窗中，按一下類型 [自訂屬性] 旁邊的省略符號 (…) 按鈕。  
+2. 在 [屬性] 視窗中，按一下類型 [自訂屬性] 旁邊的省略符號 (…) 按鈕。  
   
-3.  每一行加入一個或多個自訂屬性。 不要使用括號將屬性括起來。  
-  
-     當您完成時，所輸入的自訂屬性就會套用至類型。  
-  
-##  <a name="CustAttributeMember"></a> 將自訂屬性套用至類型成員  
-  
-1.  在類別圖上的成員類型圖案中按一下成員名稱，或是在 [類別細節] 視窗的成員列上按一下成員名稱。  
-  
-2.  在 [屬性] 視窗中，尋找成員的 [自訂屬性] 屬性。  
-  
-3.  每一行加入一個或多個自訂屬性。 不要使用括號將屬性括起來。  
+3. 每一行加入一個或多個自訂屬性。 不要使用括號將屬性括起來。  
   
      當您完成時，所輸入的自訂屬性就會套用至類型。  
   
-## <a name="see-also"></a>請參閱  
- [如何：建立類型之間的繼承 (類別設計工具)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
- [如何：建立類型之間的關聯 (類別設計工具)](../ide/how-to-create-associations-between-types-class-designer.md)   
+## <a name="CustAttributeMember"></a> 將自訂屬性套用至類型成員  
+  
+1. 在類別圖上的成員類型圖案中按一下成員名稱，或是在 [類別細節] 視窗的成員列上按一下成員名稱。  
+  
+2. 在 [屬性] 視窗中，尋找成員的 [自訂屬性] 屬性。  
+  
+3. 每一行加入一個或多個自訂屬性。 不要使用括號將屬性括起來。  
+  
+     當您完成時，所輸入的自訂屬性就會套用至類型。  
+  
+## <a name="see-also"></a>另請參閱  
+ [如何：建立型別 （類別設計工具） 之間的繼承](../ide/how-to-create-inheritance-between-types-class-designer.md)   
+ [如何：建立類型 （類別設計工具） 之間的關聯](../ide/how-to-create-associations-between-types-class-designer.md)   
  [建立和設定類型成員 (類別設計工具)](../ide/creating-and-configuring-type-members-class-designer.md)   
  [使用類別圖表 (類別設計工具)](../ide/working-with-class-diagrams-class-designer.md)   
  [設計類別和類型 (類別設計工具)](../ide/designing-classes-and-types-class-designer.md)

@@ -18,12 +18,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e9292464ee117cf79a249c1c1a0636edb931c1d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063228"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>使用 DOM 總管偵錯配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "58940077"
   
 #### <a name="to-fix-the-layout-issue"></a>修正配置問題  
   
-1.  在 Visual Studio 中，建立使用中樞/樞紐分析專案範本的新市集 App。  
+1. 在 Visual Studio 中，建立使用中樞/樞紐分析專案範本的新市集 App。  
   
-2.  在 shared pages\hub 資料夾中，開啟 hub.css。  
+2. 在 shared pages\hub 資料夾中，開啟 hub.css。  
   
-3.  將下列 CSS 程式碼：  
+3. 將下列 CSS 程式碼：  
   
     ```css  
     .hubpage .hub .section4 .sub-image-row img {  
@@ -65,22 +65,22 @@ ms.locfileid: "58940077"
     }  
     ```  
   
-4.  在 [方案總管] 中選取 appName.WindowsPhone 專案或 appName.Windows 專案，然後從專案的捷徑功能表中選擇 [設定為啟始專案]  。  
+4. 在 [方案總管] 中選取 appName.WindowsPhone 專案或 appName.Windows 專案，然後從專案的捷徑功能表中選擇 [設定為啟始專案]  。  
   
-5.  根據您的啟始專案，在 [偵錯] 工具列的下拉式清單中選擇 [Emulator 8.1 WVGA 4 英吋 512MB]  或 [模擬器]  ([本機電腦] 是預設值)。  
+5. 根據您的啟始專案，在 [偵錯] 工具列的下拉式清單中選擇 [Emulator 8.1 WVGA 4 英吋 512MB]  或 [模擬器]  ([本機電腦] 是預設值)。  
   
      ![選取偵錯目標](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
-6.  請按 F5 以偵錯模式執行應用程式。  
+6. 請按 F5 以偵錯模式執行應用程式。  
   
-7.  透過捲動或撥動開啟區段 4。  
+7. 透過捲動或撥動開啟區段 4。  
   
     > [!TIP]
     >  將 Phone 模擬器放在 Visual Studio 視窗旁邊，以便立即查看您選取的結果，以及對 CSS 樣式所做的變更。  
   
      載入區段 4 時，您可以看到較低的影像看起來不太對。 每個項目影像像是切成兩個半 (而且左半邊不見了)。  
   
-8.  切換至 Visual Studio，並選擇 [DOM 總管] 中的 [選取項目]  (或按 Ctrl+B)。 這樣會變更選取模式，讓您按一下就能選取項目，並且將 App 放置到前景。 按一下，這個模式就會還原。  
+8. 切換至 Visual Studio，並選擇 [DOM 總管] 中的 [選取項目]  (或按 Ctrl+B)。 這樣會變更選取模式，讓您按一下就能選取項目，並且將 App 放置到前景。 按一下，這個模式就會還原。  
   
     > [!TIP]
     >  您也可以使用方向鍵或其他方法，直接在 [DOM 總管] 中選取 HTML 項目。 如需選取項目的詳細資訊，請參閱[快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。  
@@ -105,11 +105,11 @@ ms.locfileid: "58940077"
   
      此檢視提供關於項目的一些有用資訊：  
   
-    -   色彩會對應至滑鼠游標停留在模擬器中項目上方時出現的反白顯示外框。 藍色表示\<i m g > 項目維度。 黃褐色表示邊界值。  
+    - 色彩會對應至滑鼠游標停留在模擬器中項目上方時出現的反白顯示外框。 藍色表示\<i m g > 項目維度。 黃褐色表示邊界值。  
   
-    -   左邊界 (margin-left) 已設定，這提示了問題的原因，因為這個情況符合徵兆 (影像左側呈現黑色)。  
+    - 左邊界 (margin-left) 已設定，這提示了問題的原因，因為這個情況符合徵兆 (影像左側呈現黑色)。  
   
-    -   顯示 0 像素值的方塊 (例如 [框線] 和 [與邊框距離])，表示可能未正確設定對應的 CSS 屬性。  
+    - 顯示 0 像素值的方塊 (例如 [框線] 和 [與邊框距離])，表示可能未正確設定對應的 CSS 屬性。  
   
 11. 若要得知如何套用 margin-left 規則，請選擇 [計算]  索引標籤，然後查看 margin-left 規則底下的內容。 您可以看到此規則已設定 5em 值，但是計算值為 66.66px 或 146.66px (視您的目標裝置而定)。  
   

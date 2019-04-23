@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f82714ad03fc84f7112657aeafdbd257f426fc82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50375390b3a09ec18fcccd45e4eaee7e9fe102e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944863"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094784"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816:正確呼叫 GC.SuppressFinalize
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ ms.locfileid: "58944863"
 
 ## <a name="cause"></a>原因
 
--   是的實作方法<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>不會呼叫<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>。
+- 是的實作方法<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>不會呼叫<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>。
 
--   不是實作的方法<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>呼叫<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>。
+- 不是實作的方法<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>呼叫<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>。
 
--   方法會呼叫<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>並傳遞非 this (Me Visual Basic 中)。
+- 方法會呼叫<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>並傳遞非 this (Me Visual Basic 中)。
 
 ## <a name="rule-description"></a>規則描述
  <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法可讓使用者在任何階段變成可供記憶體回收的物件之前釋出資源。 如果<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>呼叫方法，它會釋出資源的物件。 這可讓完成項不必要。 <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> 應該呼叫<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>讓記憶體回收行程不會呼叫物件的完成項。
 
- 若要避免使用完成項的衍生型別不必重新實作 [System.IDisposable] (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->)，若要呼叫它，而不需要完成項的非密封的類型仍應該呼叫<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>。
+ 若要避免衍生類型具有完成項不需要重新實作 [System.IDisposable] （<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) 並呼叫它，而不需要完成項的非密封的類型仍應該呼叫<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形：

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12391f16e2797941cf83177aa1c83ed0dd2c0045
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ad45097146a7566f2d043fba5e14265c05dc4d7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644597"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053414"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>HOW TO：以程式設計方式保護活頁簿
   您可以保護 Microsoft Office Excel 活頁簿，以便讓使用者無法加入或刪除工作表，並也以程式設計方式取消保護活頁簿。 或者，您可以指定密碼，指出您是否要保護 （讓使用者無法移動工作表），這個結構，以及表示是否要讓受保護的活頁簿的視窗。
@@ -37,14 +37,14 @@ ms.locfileid: "56644597"
 
 ### <a name="to-protect-a-workbook"></a>若要保護的活頁簿
 
-1.  呼叫<xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A>活頁簿的方法，並包含密碼。 若要使用下列程式碼範例，在中執行`ThisWorkbook`類別，不會在工作表類別。
+1. 呼叫<xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A>活頁簿的方法，並包含密碼。 若要使用下列程式碼範例，在中執行`ThisWorkbook`類別，不會在工作表類別。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#10)]
      [!code-vb[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#10)]
 
 ### <a name="to-unprotect-a-workbook"></a>若要取消保護活頁簿
 
-1.  呼叫<xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A>方法，傳遞所需的密碼。 若要使用下列程式碼範例，在中執行`ThisWorkbook`類別，不會在工作表類別。
+1. 呼叫<xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A>方法，傳遞所需的密碼。 若要使用下列程式碼範例，在中執行`ThisWorkbook`類別，不會在工作表類別。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#11)]
@@ -53,14 +53,14 @@ ms.locfileid: "56644597"
 
 ### <a name="to-protect-a-workbook"></a>若要保護的活頁簿
 
-1.  呼叫<xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A>活頁簿的方法，並包含密碼。 此程式碼範例會使用目前的活頁簿。 若要使用這個範例，請從專案中的 `ThisAddIn` 類別執行程式碼。
+1. 呼叫<xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A>活頁簿的方法，並包含密碼。 此程式碼範例會使用目前的活頁簿。 若要使用這個範例，請從專案中的 `ThisAddIn` 類別執行程式碼。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#6)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#6)]
 
 ### <a name="to-unprotect-a-workbook"></a>若要取消保護活頁簿
 
-1.  呼叫<xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A>通過的密碼，如有必要，然後將活頁簿的方法。 若要使用這個範例，請從專案中的 `ThisAddIn` 類別執行程式碼。
+1. 呼叫<xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A>通過的密碼，如有必要，然後將活頁簿的方法。 若要使用這個範例，請從專案中的 `ThisAddIn` 類別執行程式碼。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]

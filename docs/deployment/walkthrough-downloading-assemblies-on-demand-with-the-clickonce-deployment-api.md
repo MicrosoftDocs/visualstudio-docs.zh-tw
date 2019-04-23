@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 下載組件隨選與 ClickOnce 部署 API |Microsoft Docs
+title: 逐步解說：依需求以 ClickOnce 部署 API 下載組件 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cadba0d6afd35303fd44eb0442bb8f4eb9aa8440
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e363989094f4d4859f272423792aa32152c6de57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063877"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說： 下載組件隨選與 ClickOnce 部署 API
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：下載依需求以 ClickOnce 部署 API 的組件
 根據預設，所有組件包含在[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]第一次執行應用程式時，會下載應用程式。 不過，您可能有應用程式的較少的使用者所使用的部分。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將應用程式中的特定組件標示為「選擇性」，以及在 Common Language Runtime 需要時，使用 <xref:System.Deployment.Application> 命名空間中的類別來下載它們。
 
 > [!NOTE]
@@ -32,9 +32,9 @@ ms.locfileid: "56603895"
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件，才能完成此逐步解說的其中一個：
 
--   Windows SDK 中。 可以從 Microsoft 下載中心下載 Windows SDK。
+- Windows SDK 中。 可以從 Microsoft 下載中心下載 Windows SDK。
 
--   Visual Studio。
+- Visual Studio。
 
 ## <a name="create-the-projects"></a>建立專案
 
@@ -100,17 +100,17 @@ ms.locfileid: "56603895"
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>使用 MageUI.exe 中標示為 ClickOnce 應用程式中的選用組件
 
-1.  使用*MageUI.exe*，建立應用程式資訊清單中所述[逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 應用程式資訊清單，請使用下列設定：
+1. 使用*MageUI.exe*，建立應用程式資訊清單中所述[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 應用程式資訊清單，請使用下列設定：
 
-    -   命名應用程式資訊清單`ClickOnceOnDemand`。
+    - 命名應用程式資訊清單`ClickOnceOnDemand`。
 
-    -   在 **檔案**頁面上，於*ClickOnceLibrary.dll*資料列中，設定**檔案類型**資料行**無**。
+    - 在 **檔案**頁面上，於*ClickOnceLibrary.dll*資料列中，設定**檔案類型**資料行**無**。
 
-    -   在 **檔案**頁面上，於*ClickOnceLibrary.dll*資料列中，輸入`ClickOnceLibrary.dll`中**群組**資料行。
+    - 在 **檔案**頁面上，於*ClickOnceLibrary.dll*資料列中，輸入`ClickOnceLibrary.dll`中**群組**資料行。
 
-2.  使用*MageUI.exe*，建立部署資訊清單中所述[逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 部署資訊清單，請使用下列設定：
+2. 使用*MageUI.exe*，建立部署資訊清單中所述[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 部署資訊清單，請使用下列設定：
 
-    -   命名的部署資訊清單`ClickOnceOnDemand`。
+    - 命名的部署資訊清單`ClickOnceOnDemand`。
 
 ## <a name="testing-the-new-assembly"></a>測試新的組件
 

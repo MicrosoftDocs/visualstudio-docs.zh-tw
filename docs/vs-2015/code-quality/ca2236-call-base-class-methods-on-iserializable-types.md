@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e7447e45108d8755195ad3c7484d55415c520846
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4ec8c14da5c691f6f9740c6df86cb38aeb9fac5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057637"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236:必須呼叫 ISerializable 類型上的基底類別方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "58930541"
 ## <a name="cause"></a>原因
  型別衍生自型別可實作<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面，以及其中一個下列條件成立：
 
--   型別會實作序列化建構函式，也就是具有建構函式<xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>，<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>參數簽章，但不會呼叫基底類型的序列化建構函式。
+- 型別會實作序列化建構函式，也就是具有建構函式<xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>，<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>參數簽章，但不會呼叫基底類型的序列化建構函式。
 
--   型別會實作<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>方法，但不會呼叫<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>基底類型的方法。
+- 型別會實作<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>方法，但不會呼叫<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>基底類型的方法。
 
 ## <a name="rule-description"></a>規則描述
  自訂序列化程序中的型別會實作<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>方法，將序列化其欄位和還原序列化欄位的序列化建構函式。 如果類型是衍生自型別可實作<xref:System.Runtime.Serialization.ISerializable>介面，基底型別<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>方法和序列化建構函式應該呼叫來序列化/還原序列化的基底類型的欄位。 否則，型別不會是序列化和還原序列化正確。 請注意，是否衍生的型別未新增任何新的欄位，類型不需要實作<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>方法或序列化建構函式或呼叫基底型別對等項目。

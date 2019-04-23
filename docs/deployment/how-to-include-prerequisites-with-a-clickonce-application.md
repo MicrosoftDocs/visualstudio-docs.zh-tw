@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcef749068dfb1f13e5b08160a70dda168b771ee
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 57d89fec51cf73d310e3ad2e18b3d4270bd8ff74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232849"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041977"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>HOW TO：隨著 ClickOnce 應用程式納入必要條件
 在您隨 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式散發必要條件軟體之前，必須先將這些必要條件的安裝程式套件下載到您的開發電腦。 當您發行應用程式並選擇 [從應用程式的相同位置下載必要條件] 時，如果安裝程式套件不在 [套件] 資料夾中，就會發生錯誤。
@@ -21,7 +21,7 @@ ms.locfileid: "59232849"
 > [!NOTE]
 >  若要加入.NET Framework 的安裝程式套件，請參閱[適用於開發人員的.NET Framework 部署指南](/dotnet/framework/deployment/deployment-guide-for-developers)。
 
-##  <a name="Package"></a> 若要使用 Package.xml 新增安裝程式套件
+## <a name="Package"></a> 若要使用 Package.xml 新增安裝程式套件
 
 1. 在 [檔案總管] 中，開啟 [套件] 資料夾。
 
@@ -50,4 +50,4 @@ ms.locfileid: "59232849"
     現在您可以隨應用程式散發安裝程式套件。
 
 ## <a name="see-also"></a>另請參閱
-- [HOW TO：使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [如何：使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

@@ -9,34 +9,34 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3858d10d685e104617a6de7b5c11c87cfee1872d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 74b3fa73c3a67c721b9311a964e26fa9ab48c16e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098958"
 ---
-# <a name="how-to-export-a-shader"></a>如何：匯出著色器
+# <a name="how-to-export-a-shader"></a>HOW TO：匯出著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本文件將示範如何使用著色器設計工具匯出有向圖著色器語言 (DGSL) 著色器，以便您在應用程式中使用。  
   
  本文件示範下列活動︰  
   
--   匯出著色器  
+- 匯出著色器  
   
 ## <a name="exporting-a-shader"></a>匯出著色器  
  當您使用著色器設計工具建立著色器之後，在您用於應用程式之前，必須以圖形 API 了解的格式將其匯出。 您可以根據不同的需求以不同的方式匯出著色器。  
   
 #### <a name="to-export-a-shader"></a>匯出著色器  
   
-1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，開啟 [視覺著色器圖形 (.dgsl)] 檔案。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，開啟 [視覺著色器圖形 (.dgsl)] 檔案。  
   
-     如果您沒有可開啟的 [視覺著色器圖形 (.dgsl)] 檔案，請依照[如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)所述，建立一個檔案。  
+     如果您沒有可開啟的**視覺著色器圖形 (.dgsl)** 檔案，請依照[如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)。  
   
-2.  在 [著色器設計工具] 工具列上，選擇 [進階]、[匯出]、[匯出成]。 [匯出著色器] 對話方塊隨即顯示。  
+2. 在 [著色器設計工具] 工具列上，選擇 [進階]、[匯出]、[匯出成]。 [匯出著色器] 對話方塊隨即顯示。  
   
-3.  在 [存檔類型] 下拉式清單中，選擇您想要匯出的格式。  
+3. 在 [存檔類型] 下拉式清單中，選擇您想要匯出的格式。  
   
      以下是您可以選擇的格式︰  
   
@@ -49,8 +49,8 @@ ms.locfileid: "54802789"
      **C++ 標頭 (\*.h)**  
      將著色器匯出為 C-Style 標頭，其定義包含 HLSL 位元組程式碼的位元組陣列。 此選項會讓您在根據使用者問題來偵錯和修補程式時更加費時，因為必須重新編譯應用程式，才能測試修正。 不過，這個選項可讓著色器在應用程式部署之後就難以 (但無法杜絕) 修改，對想以不必要的方式修改著色器的使用者而言難度最高。  
   
-4.  在 [檔案名稱] 下拉式方塊中，為匯出的著色器指定名稱，然後選擇 [儲存] 按鈕。  
+4. 在 [檔案名稱] 下拉式方塊中，為匯出的著色器指定名稱，然後選擇 [儲存] 按鈕。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)   
  [著色器設計工具](../designers/shader-designer.md)

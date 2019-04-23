@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fddc41d264f30f6de5a2f69b098865cf3d997147
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930813"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044820"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>HOW TO：啟用和停用 Managed 程式碼的完整解決方案分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "58930813"
   
 #### <a name="to-toggle-full-solution-analysis"></a>若要切換完整解決方案分析  
   
-1.  在 在 Visual Studio 主功能表中，選擇**工具** &#124; **選項**檢視**選項**對話方塊。  
+1. 在 在 Visual Studio 主功能表中，選擇**工具** &#124; **選項**檢視**選項**對話方塊。  
   
-2.  在 **選項**對話方塊方塊中，選擇**文字編輯器** &#124; **C#** 或**基本** &#124; **進階**.  
+2. 在 **選項**對話方塊方塊中，選擇**文字編輯器** &#124; **C#** 或**基本** &#124; **進階**.  
   
-3.  選取 **啟用完整解決方案分析**核取方塊以啟用完整解決方案分析，或清除此方塊可停用它。 選擇**確定**按鈕，當您完成時。  
+3. 選取 **啟用完整解決方案分析**核取方塊以啟用完整解決方案分析，或清除此方塊可停用它。 選擇**確定**按鈕，當您完成時。  
   
      ![啟用完整解決方案分析 核取方塊。](../code-quality/media/fsa-toolsoptions.png "FSA_ToolsOptions")  
   

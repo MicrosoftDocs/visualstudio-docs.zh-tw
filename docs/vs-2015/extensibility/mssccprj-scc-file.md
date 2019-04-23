@@ -11,12 +11,12 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bff060ed373c4158afe8848ac248e8d28da38b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942680"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117716"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ ms.locfileid: "58942680"
   
  原始檔控制外掛程式支援 MSSCCPRJ。SCC 檔案必須遵守下列指導方針：  
   
--   只能有一個 MSSCCPRJ。SCC 檔案，每個目錄。  
+- 只能有一個 MSSCCPRJ。SCC 檔案，每個目錄。  
   
--   MSSCCPRJ。SCC 檔案可以包含"AuxPath 」 和 「 專案名稱 」，在指定的目錄中的原始檔控制的多個檔案。  
+- MSSCCPRJ。SCC 檔案可以包含"AuxPath 」 和 「 專案名稱 」，在指定的目錄中的原始檔控制的多個檔案。  
   
--   "AuxPath"字串不能在其中的引號。 它允許有用引號括住它做為分隔符號 （例如雙引號括住一組可用來表示空字串）。 讀取從 MSSCCPRJ 時，IDE 將帶狀所有從 「 AuxPath"字串的引號。SCC 檔案。  
+- "AuxPath"字串不能在其中的引號。 它允許有用引號括住它做為分隔符號 （例如雙引號括住一組可用來表示空字串）。 讀取從 MSSCCPRJ 時，IDE 將帶狀所有從 「 AuxPath"字串的引號。SCC 檔案。  
   
--   MSSCCPRJ"專案名稱 」 字串。SCC 檔案必須從傳回的字串完全相符`SccGetProjPath`函式。 如果函式所傳回的字串必須用引號括住它 MSSCCPRJ 中的字串。SCC 檔案必須具有引號括住，反之亦然。  
+- MSSCCPRJ"專案名稱 」 字串。SCC 檔案必須從傳回的字串完全相符`SccGetProjPath`函式。 如果函式所傳回的字串必須用引號括住它 MSSCCPRJ 中的字串。SCC 檔案必須具有引號括住，反之亦然。  
   
--   MSSCCPRJ。SCC 檔案建立或更新時的檔案會放在原始檔控制。  
+- MSSCCPRJ。SCC 檔案建立或更新時的檔案會放在原始檔控制。  
   
--   如果 MSSCCPRJ。SCC 檔案遭到刪除，提供者應該重新執行有關該目錄的原始檔控制作業的下一次產生它。  
+- 如果 MSSCCPRJ。SCC 檔案遭到刪除，提供者應該重新執行有關該目錄的原始檔控制作業的下一次產生它。  
   
--   MSSCCPRJ。SCC 檔案必須嚴格遵循定義的格式。  
+- MSSCCPRJ。SCC 檔案必須嚴格遵循定義的格式。  
   
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ 圖例。SCC 檔案格式  
  以下是 MSSCCPRJ 的範例。SCC 檔案格式 （行號，才會提供做為指南，和不應包含在檔案內文）：  

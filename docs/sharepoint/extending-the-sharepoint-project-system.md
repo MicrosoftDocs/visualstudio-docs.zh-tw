@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b02d831093173b28cfd6c004e16c4514977a044
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617401"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061602"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>擴充 SharePoint 專案系統
   您可以使用 Visual Studio 中的一組專案範本和項目範本來建立 SharePoint 方案。 這些範本符合許多的開發案例的需求，但您可能會發現某些情況下，它們不在此提供您所需要的功能。 在這些情況下，您可以擴充 SharePoint 專案系統。
@@ -33,20 +33,20 @@ ms.locfileid: "56617401"
 ## <a name="how-to-extend-the-sharepoint-project-system"></a>如何擴充 SharePoint 專案系統
  您可以透過下列方式來擴充 SharePoint 專案系統：
 
--   定義您自己的 SharePoint 專案項目類型，並將其與新的項目範本或 Visual Studio 中的專案範本關聯。 例如，您可以定義 SharePoint 專案項目類型來建立自訂動作或欄位。 如需詳細資訊，請參閱 <<c0> [ 定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)。
+- 定義您自己的 SharePoint 專案項目類型，並將其與新的項目範本或 Visual Studio 中的專案範本關聯。 例如，您可以定義 SharePoint 專案項目類型來建立自訂動作或欄位。 如需詳細資訊，請參閱 <<c0> [ 定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)。
 
--   擴充已安裝 Visual Studio 中的 SharePoint 專案項目類型。 例如，您可以讓快顯功能表項目加入專案項目中**方案總管 中**和自訂專案項目，當開發人員選擇功能表項目。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)。
+- 擴充已安裝 Visual Studio 中的 SharePoint 專案項目類型。 例如，您可以讓快顯功能表項目加入專案項目中**方案總管 中**和自訂專案項目，當開發人員選擇功能表項目。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)。
 
--   擴充 SharePoint 專案。 例如，您可以新增事件處理常式，加入或移除 SharePoint 專案項目時，執行特定工作。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 專案](../sharepoint/extending-sharepoint-projects.md)。
+- 擴充 SharePoint 專案。 例如，您可以新增事件處理常式，加入或移除 SharePoint 專案項目時，執行特定工作。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 專案](../sharepoint/extending-sharepoint-projects.md)。
 
--   擴充 SharePoint 專案項目與 SharePoint 專案的封裝和部署行為。 例如，您可以建立自己的部署步驟，或在您部署或撤銷的專案，Visual Studio 執行特定的部署步驟時，您可以執行額外的自訂工作時執行。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。
+- 擴充 SharePoint 專案項目與 SharePoint 專案的封裝和部署行為。 例如，您可以建立自己的部署步驟，或在您部署或撤銷的專案，Visual Studio 執行特定的部署步驟時，您可以執行額外的自訂工作時執行。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。
 
 ## <a name="common-development-tasks"></a>一般開發工作
  擴充功能的 SharePoint 專案系統中，您可以執行下列常見工作：
 
--   專案項目與許多不同類型的專案檔中，將儲存自訂的字串資料。 如需詳細資訊，請參閱 <<c0> [ 將資料儲存於 SharePoint 專案系統擴充](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
+- 專案項目與許多不同類型的專案檔中，將儲存自訂的字串資料。 如需詳細資訊，請參閱 <<c0> [ 將資料儲存於 SharePoint 專案系統擴充](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
 
--   SharePoint 專案系統中的 Visual Studio 自動化物件模型或整合物件模型中，對應的物件中轉換物件，反之亦然。 如需詳細資訊，請參閱 <<c0> [ 將 SharePoint 專案系統類型與其他 Visual Studio 專案類型之間](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)。
+- SharePoint 專案系統中的 Visual Studio 自動化物件模型或整合物件模型中，對應的物件中轉換物件，反之亦然。 如需詳細資訊，請參閱 <<c0> [ 將 SharePoint 專案系統類型與其他 Visual Studio 專案類型之間](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)

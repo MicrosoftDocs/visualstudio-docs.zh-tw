@@ -12,15 +12,16 @@ caps.latest.revision: 16
 author: BillWagner
 ms.author: wiwagn
 manager: jillfra
-ms.openlocfilehash: d7b0e85646edcc76b445622b97fedb4a1e05428e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9806a5f092ab4924533f67c22d0adf78b99fb8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945134"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050721"
 ---
-# <a name="completion-lists-in-c"></a>C# 中的完成清單 #
-本內容已移至[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)  
-  
-## <a name="see-also"></a>另請參閱  
- [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)
+# <a name="completion-lists-in-c"></a>在 C 中的完成清單\#
+
+本內容已移至[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)
+
+## <a name="see-also"></a>另請參閱
+- [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)

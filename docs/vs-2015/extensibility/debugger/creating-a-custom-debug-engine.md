@@ -12,12 +12,12 @@ ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a0617d23b49af182504406417023b0d907cadf27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829e484ffe4968cdb89ff04e4e7f145decd07c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939429"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111515"
 ---
 # <a name="creating-a-custom-debug-engine"></a>建立自訂的偵錯引擎
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "58939429"
   
  建立 DE 包含下列步驟：  
   
-1.  使用 Visual Studio 註冊 DE  
+1. 使用 Visual Studio 註冊 DE  
   
-2.  啟用要偵錯程式  
+2. 啟用要偵錯程式  
   
-3.  執行控制和狀態評估  
+3. 執行控制和狀態評估  
   
-4.  傳送事件  
+4. 傳送事件  
   
-5.  終止並中斷連結  
+5. 終止並中斷連結  
   
 ## <a name="in-this-section"></a>本節內容  
  [註冊自訂的偵錯引擎](../../extensibility/debugger/registering-a-custom-debug-engine.md)  

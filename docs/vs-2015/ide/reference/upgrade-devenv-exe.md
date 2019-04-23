@@ -13,17 +13,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 465c90736f5470f48d47336bc916ca3cb2c09b6a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b2ba3caf7931449e2c1657270838a45505fd5d92
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54779342"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657281"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 將方案檔和其所有專案檔或指定的專案檔更新成這些檔案的目前 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 格式。  
   
 ## <a name="syntax"></a>語法  
@@ -44,7 +43,7 @@ devenv SolutionFile | ProjectFile /upgrade
   
  必須先簽出原始檔控制的方案或專案，才能進行升級。  
   
- 使用 `/upgrade` 切換參數時，不會啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 在方案或專案之開發語言的升級報表中可以看到升級結果。 不會傳回任何錯誤或使用方式資訊。 如需有關升級專案中的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，請參閱 <<c2> [ 如何： 疑難排解失敗 Visual Studio 專案升級](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)。  
+ 使用 `/upgrade` 切換參數時，不會啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 在方案或專案之開發語言的升級報表中可以看到升級結果。 不會傳回任何錯誤或使用方式資訊。 如需在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 中升級專案的詳細資訊，請參閱[如何：對不成功的 Visual Studio 專案升級進行疑難排解](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)。  
   
 ## <a name="example"></a>範例  
  這個範例會在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 方案的預設資料夾中升級名為 "MyProject.sln" 的方案檔。  
@@ -53,6 +52,6 @@ devenv SolutionFile | ProjectFile /upgrade
 devenv "MyProject.sln" /upgrade  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：對不成功的 Visual Studio 專案升級進行疑難排解](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)   
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

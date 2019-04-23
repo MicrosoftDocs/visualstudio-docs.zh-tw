@@ -1,5 +1,5 @@
 ---
-title: 如何： 擴充建置程序 |Microsoft Docs
+title: 如何：延伸建置流程 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,16 +14,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 43b95fd47c2d5b859478814dd330c175e82bac89
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1f86605f3e76dc17fd8e404eb0d189f51ff2dc69
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758661"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652159"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>如何：擴充 Visual Studio 建置處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 建置處理序是由匯入至您專案檔的一系列 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .targets 檔案所定義。 可以擴充其中一個已匯入的檔案 (Microsoft.Common.targets)，以讓您在建置處理序的數個點執行自訂工作。 本主題說明您可以使用兩種方法來擴充 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 建置處理序：
 
@@ -56,7 +55,7 @@ ms.locfileid: "54758661"
 
    下表顯示 Microsoft.Common.targets 中您可安全覆寫的所有目標。
 
-|目標名稱|描述|
+|目標名稱|說明|
 |-----------------|-----------------|
 |`BeforeCompile`、 `AfterCompile`|在核心編譯完成之前或之後，會執行插入至其中一個目標的工作。 大部分的自訂是在這兩個目標的其中一個中完成。|
 |`BeforeBuild`、 `AfterBuild`|在組建的任何其他項目之前或之後，將會執行其中一個目標中插入的工作。 **注意：** 在大部分專案檔結尾的註解中，已定義 `BeforeBuild` 和 `AfterBuild` 目標。 這可讓您輕鬆地將建置前和建置後事件新增至專案檔。|
@@ -120,11 +119,11 @@ ms.locfileid: "54758661"
 
 ### <a name="commonly-overridden-dependson-properties"></a>經常覆寫的 "DependsOn" 屬性
 
-|屬性名稱|描述|
+|屬性名稱|說明|
 |-------------------|-----------------|
 |`BuildDependsOn`|如果您想要在整個建置處理序之前或之後插入自訂目標，這是要覆寫的屬性。|
 |`CleanDependsOn`|如果您想要清除自訂建置處理序的輸出，這是要覆寫的屬性。|
 |`CompileDependsOn`|如果您想要在編譯步驟之前或之後插入自訂處理序，這是要覆寫的屬性。|
 
-## <a name="see-also"></a>請參閱
- [Visual Studio 整合](../msbuild/visual-studio-integration-msbuild.md) [MSBuild 概念](../msbuild/msbuild-concepts.md) [。目標檔案](../msbuild/msbuild-dot-targets-files.md)
+## <a name="see-also"></a>另請參閱
+ [Visual Studio 整合](../msbuild/visual-studio-integration-msbuild.md) [MSBuild 概念](../msbuild/msbuild-concepts.md) [.Targets 檔案](../msbuild/msbuild-dot-targets-files.md)

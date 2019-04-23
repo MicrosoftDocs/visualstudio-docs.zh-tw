@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cde839deb71358936410c4e4ca4269d3ce2ee88f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793461"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094773"
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>HOW TO：將著色器套用至 3d 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54793461"
   
  本文件示範下列活動︰  
   
--   將著色器套用至 3D 模型  
+- 將著色器套用至 3D 模型  
   
 ## <a name="applying-a-shader-to-a-3-d-model"></a>將著色器套用至 3D 模型  
  您可以將著色器效果套用至 3D 模型，賦予其有趣的外觀。  
@@ -42,7 +42,7 @@ ms.locfileid: "54793461"
   
    在將著色器套用至模型之後，您可以選取該模型，然後在 [屬性] 視窗中，於 [效果] 屬性群組的 [(進階)] 屬性中，選擇省略符號(**...**) 按鈕。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：建立基本 3d 模型](../designers/how-to-create-a-basic-3-d-model.md)   
  [如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)   
  [模型編輯器](../designers/model-editor.md)   

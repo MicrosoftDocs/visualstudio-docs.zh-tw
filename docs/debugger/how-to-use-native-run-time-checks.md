@@ -1,5 +1,5 @@
 ---
-title: 如何： 使用原生執行階段檢查 |Microsoft Docs
+title: HOW TO：使用原生執行階段檢查 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -37,14 +37,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1979757aa249569ddf5ce2f83f2e457e5066cee0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ccf0fea80ddfcc7db0921512391f5063a8f2dad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712498"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100205"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>如何：使用原生執行階段檢查
+# <a name="how-to-use-native-run-time-checks"></a>HOW TO：使用原生執行階段檢查
 您可以在 Visual C++ 中使用原生 [runtime_checks](/cpp/preprocessor/runtime-checks) 來攔截最常見的執行階段錯誤，例如：
 
 - 堆疊指標損壞
@@ -71,13 +71,13 @@ ms.locfileid: "56712498"
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>在偵錯組建中啟用原生的執行階段檢查
 
--   使用 **/RTC** 選項，並與 C 語言執行階段程式庫的偵錯版本建立連結 (例如 /MDd)。
+- 使用 **/RTC** 選項，並與 C 語言執行階段程式庫的偵錯版本建立連結 (例如 /MDd)。
 
 ### <a name="to-modify-native-run-time-check-behavior"></a>修改原生的執行階段檢查行為
 
--   使用 `runtime_checks` Pragma。
+- 使用 `runtime_checks` Pragma。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Visual Studio 偵錯](../debugger/index.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)

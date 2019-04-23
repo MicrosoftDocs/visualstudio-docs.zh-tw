@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7245af090cfdaa8e4282677c8b5a052d63b63e2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54805530"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100400"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>使用不同的 Web 瀏覽器搭配自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ ms.locfileid: "54805530"
   
 - 作業系統：  
   
-  -   Microsoft Windows 7  
+  - Microsoft Windows 7  
   
-  -   Microsoft Windows 8  
+  - Microsoft Windows 8  
   
-  -   Microsoft Windows Server 2008 R2 SP1  
+  - Microsoft Windows Server 2008 R2 SP1  
   
 - Web 瀏覽器版本：  
   
-  -   Windows Internet Explorer 9  
+  - Windows Internet Explorer 9  
   
-  -   Windows Internet Explorer 10  
+  - Windows Internet Explorer 10  
   
-  -   如需了解 Mozilla Firefox 及 Google Chrome 支援的版本，請參閱[這裡](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)。  
+  - 如需了解 Mozilla Firefox 及 Google Chrome 支援的版本，請參閱[這裡](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)。  
   
 - 安裝 [Selenium components for Coded UI Cross Browser Testing](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/) (自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件)。  
   
@@ -83,19 +83,19 @@ ms.locfileid: "54805530"
 ### <a name="enable-debugging"></a>啟用偵錯  
  若要啟用偵錯 Web 應用程式的功能，您必須完成下列組態選項：  
   
-1.  啟用 Just My Code：  
+1. 啟用 Just My Code：  
   
-    1.  在 [工具] 功能表中選擇 [選項]，然後選擇 [偵錯]。  
+    1. 在 [工具] 功能表中選擇 [選項]，然後選擇 [偵錯]。  
   
-    2.  選取 [啟用 Just My Code]。  
+    2. 選取 [啟用 Just My Code]。  
   
-2.  停用 CLR 例外狀況：  
+2. 停用 CLR 例外狀況：  
   
-    1.  在 [偵錯] 功能表中選擇 [例外狀況]。  
+    1. 在 [偵錯] 功能表中選擇 [例外狀況]。  
   
-    2.  取消核取 [通用語言執行平台例外狀況] 的 [使用者未處理]。  
+    2. 取消核取 [通用語言執行平台例外狀況] 的 [使用者未處理]。  
   
-##  <a name="generate"></a> *我在自動程式碼 UI 測試中看不到變更 BrowserWindow.CurrentBrowser 的選項。*  
+## <a name="generate"></a> *我在自動程式碼 UI 測試中看不到變更 BrowserWindow.CurrentBrowser 的選項。*  
  您使用的 [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] 版本可能不支援使用多種 Web 瀏覽器進行自動程式碼 UI 測試。 若要使用自動程式化 UI 測試，您必須使用 Visual Studio 企業版。  
   
  *我還應該知道什麼？*  
@@ -139,7 +139,7 @@ ms.locfileid: "54805530"
  [針對跨瀏覽器測試失敗問題進行疑難排解](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)  
   
 ### <a name="guidance"></a>指引  
- [測試 for Continuous Delivery with Visual Studio 2012 – 第 2 章：單元測試測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [測試 for Continuous Delivery with Visual Studio 2012 – 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
  [測試 for Continuous Delivery with Visual Studio 2012 – Chapter 5:自動化系統測試](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
@@ -151,7 +151,7 @@ ms.locfileid: "54805530"
 ### <a name="forum"></a>論壇  
  [Visual Studio 使用者介面自動化測試 (包括自動程式碼 UI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [使用自動程式化 UI 測試記錄分析自動程式化 UI 測試](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

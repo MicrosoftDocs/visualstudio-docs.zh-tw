@@ -12,36 +12,36 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d7ac06c15fb3b6e4370a3e785abe2ac94483a34
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f48dd69cf58a6ca3fbe292c5ed39aa3da51c4188
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111138"
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>如何：將類別圖表項目複製到 Microsoft Office 文件 (類別設計工具)
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>HOW TO：將類別圖表項目複製到 Microsoft Office 文件 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以將圖形從 .NET 類別圖 (.cd 檔案) 複製到其他文件。 視您貼上的目標文件種類而定，您將可取得圖形複本或其基礎程式碼。 若要從模組化專案中的 UML 類別圖表複製圖形，請參閱[將圖表匯出為影像](../modeling/export-diagrams-as-images.md)。  
   
 ### <a name="to-copy-a-single-element"></a>複製單一項目  
   
--   以滑鼠右鍵按一下圖形，然後選擇 [複製影像]。  
+- 以滑鼠右鍵按一下圖形，然後選擇 [複製影像]。  
   
 ### <a name="to-copy-several-elements"></a>複製數個項目  
   
-1.  選取您要複製的圖表上的圖形。  
+1. 選取您要複製的圖表上的圖形。  
   
-2.  以滑鼠右鍵按一下選取項目，然後選擇 [複製影像]。  
+2. 以滑鼠右鍵按一下選取項目，然後選擇 [複製影像]。  
   
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>複製類別圖中的所有項目  
   
-1. 以滑鼠右鍵按一下圖表介面，然後選擇 [全選]  (鍵盤：**Ctrl + A**)  
+1. 以滑鼠右鍵按一下圖表介面，然後選擇 [全選]. (鍵盤：**Ctrl + A**)  
   
 2. 在 [編輯] 功能表上，選取 [複製影像]。  
   
    您也可以不選 [複製影像] 而選擇 [複製]。 [複製] 會將影像複製為一般點陣圖。 [複製影像] 會將影像複製為向量影像，更適用於大多數的 Office 應用程式。  
   
-## <a name="see-also"></a>請參閱  
- [如何：列印類別圖表 (類別設計工具)](../ide/how-to-print-class-diagrams-class-designer.md)   
+## <a name="see-also"></a>另請參閱  
+ [如何：列印類別圖表 （類別設計工具）](../ide/how-to-print-class-diagrams-class-designer.md)   
  [如何：將類別圖表匯出為影像 (類別設計工具)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046376"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>逐步解說：因頂點著色而遺漏的物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "58944911"
   
  本逐步解說將說明下列工作：  
   
--   使用 [圖形事件清單]  找出潛在的問題來源。  
+- 使用 [圖形事件清單]  找出潛在的問題來源。  
   
--   使用 [圖形管線階段]  視窗來檢查 `DrawIndexed` Direct3D API 呼叫的效果。  
+- 使用 [圖形管線階段]  視窗來檢查 `DrawIndexed` Direct3D API 呼叫的效果。  
   
--   使用 [HLSL 偵錯工具]  來檢查端點著色器。  
+- 使用 [HLSL 偵錯工具]  來檢查端點著色器。  
   
--   使用 [圖形事件呼叫堆疊]  協助找出無效 HLSL 常數的來源。  
+- 使用 [圖形事件呼叫堆疊]  協助找出無效 HLSL 常數的來源。  
   
 ## <a name="scenario"></a>情節  
  3D 應用程式遺漏物件最常見的其中一個原因，發生於端點著色器以不正確或非預期方式轉換物件的頂點時；例如，物件可能縮到非常小，或是經轉換後出現在觀景窗後面而非前面。  

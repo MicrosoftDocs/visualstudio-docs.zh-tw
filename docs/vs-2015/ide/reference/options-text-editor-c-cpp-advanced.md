@@ -15,17 +15,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c734e6bd41e91ba208a13e36c06f04111cac5ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790093"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072632"
 ---
 # <a name="options-text-editor-cc-advanced"></a>進階、C/C++、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 藉由變更這些選項，您可以變更進行 C 或 C++ 程式設計時之 IntelliSense 和瀏覽資料庫的相關行為。  
   
  若要存取這個頁面，請在 [選項] 對話方塊的左窗格中依序展開 [文字編輯器] 和 [C/C++]，然後選擇 [進階]。  
@@ -74,19 +73,19 @@ ms.locfileid: "54790093"
   
  使用下列任何選項的總和來設定︰  
   
--   0 - 無  
+- 0 - 無  
   
--   1 - 一般  
+- 1 - 一般  
   
--   2 - 閒置  
+- 2 - 閒置  
   
--   4 - WorkItem  
+- 4 - WorkItem  
   
--   8 - IntelliSense  
+- 8 - IntelliSense  
   
--   16 - ACPerf  
+- 16 - ACPerf  
   
--   32 - ClassView  
+- 32 - ClassView  
   
 ## <a name="fallback-location"></a>後援位置  
  未使用主要位置 (與方案相同的目錄) 時，後援位置是放置 SDF 和 IntelliSense 支援檔案 (例如，iPCH) 的位置。 如果使用者沒有寫入方案目錄的權限，或方案目錄位於慢速裝置，則會發生此方案。 預設後援位置是在使用者的 temp 目錄中。  
@@ -157,5 +156,5 @@ ms.locfileid: "54790093"
   
  **停用反白顯示參考**  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設定語言特定編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)

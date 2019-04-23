@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9b1799ac2e7124f79d10dcc8860a994e2f182ea7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416184"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051345"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>HOW TO：建立特定領域語言方案
 特定領域語言 (DSL) 會建立使用特製化的 Visual Studio 方案。
@@ -54,9 +54,9 @@ ms.locfileid: "58416184"
 
 3. 輸入檔案的副檔名**副檔名**頁面。 它應該是唯一的電腦，並在其上的任何電腦在您想要安裝 DSL。 您應該會看到訊息**沒有應用程式或 Visual Studio 編輯器會使用此延伸模組**。
 
-   -   如果您已使用的副檔名，未完整安裝的上一個實驗 Dsl 中，您可以清除它們出利用**重設實驗執行個體**工具，可以在 Visual Studio SDK 功能表中找到。
+   - 如果您已使用的副檔名，未完整安裝的上一個實驗 Dsl 中，您可以清除它們出利用**重設實驗執行個體**工具，可以在 Visual Studio SDK 功能表中找到。
 
-   -   如果另一個 Visual Studio 延伸模組，會使用此副檔名已完全安裝在電腦上，請考慮將它解除安裝。 在 **工具**功能表上，按一下**延伸模組管理員**。
+   - 如果另一個 Visual Studio 延伸模組，會使用此副檔名已完全安裝在電腦上，請考慮將它解除安裝。 在 **工具**功能表上，按一下**延伸模組管理員**。
 
 4. 檢查，以及必要時調整，請在精靈的其餘頁面中的欄位。 當您滿意設定時，請按一下**完成**。 如需有關設定的詳細資訊，請參閱[DSL 設計工具的精靈頁面](#settings)。
 
@@ -85,15 +85,15 @@ ms.locfileid: "58416184"
 
  如果您看到一份工具或封裝，您應該執行下列其中一項：
 
--   輸入不同的檔案副檔名。
+- 輸入不同的檔案副檔名。
 
      \-或-
 
--   重設 Visual Studio 的實驗執行個體。 這將會取消註冊所有您先前建立的 Dsl。 在上**開始**功能表上，按一下**所有程式**， **Microsoft Visual Studio 2010 SDK**，**工具**，然後**重設Microsoft Visual Studio 2010 Experimental 執行個體**。 您可以重建任何其他您想要再次使用的 Dsl。
+- 重設 Visual Studio 的實驗執行個體。 這將會取消註冊所有您先前建立的 Dsl。 在上**開始**功能表上，按一下**所有程式**， **Microsoft Visual Studio 2010 SDK**，**工具**，然後**重設Microsoft Visual Studio 2010 Experimental 執行個體**。 您可以重建任何其他您想要再次使用的 Dsl。
 
      \-或-
 
--   如果使用此副檔名的 Visual Studio 延伸模組已完全安裝在電腦上，請將它解除安裝。 在 **工具**功能表上，按一下**延伸模組管理員**。
+- 如果使用此副檔名的 Visual Studio 延伸模組已完全安裝在電腦上，請將它解除安裝。 在 **工具**功能表上，按一下**延伸模組管理員**。
 
 ### <a name="product-settings-page"></a>產品 [設定] 頁面
  **新特定領域語言所屬產品的名稱為何？**

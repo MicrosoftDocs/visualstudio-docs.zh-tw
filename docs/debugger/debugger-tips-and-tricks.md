@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097319"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 中偵錯工具的產能的秘訣和訣竅
 
@@ -74,17 +74,17 @@ ms.locfileid: "59537555"
 
 #### <a name="to-create-an-object-id"></a>若要建立的物件識別碼
 
-1.  設定中斷點，靠近您想要追蹤的變數。
+1. 設定中斷點，靠近您想要追蹤的變數。
 
-2.  開始偵錯工具 (**F5**)，並在中斷點停止。
+2. 開始偵錯工具 (**F5**)，並在中斷點停止。
 
 3. 尋找在變數**區域變數** 視窗 (**偵錯 > Windows > 區域變數**)，以滑鼠右鍵按一下變數，然後選取**設定物件 ID**。
 
     ![建立物件 ID](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
-4.  您應該會看到 [區域變數] **$** 視窗中顯示 **$** 視窗中設定中斷點，在進行呼叫的函式返回的指令或程式行位置中斷執行。 此變數是物件識別碼。
+4. 您應該會看到 [區域變數] **$** 視窗中顯示 **$** 視窗中設定中斷點，在進行呼叫的函式返回的指令或程式行位置中斷執行。 此變數是物件識別碼。
 
-5.  以滑鼠右鍵按一下 物件識別碼變數，然後選擇 **新增監看式**。
+5. 以滑鼠右鍵按一下 物件識別碼變數，然後選擇 **新增監看式**。
 
 如需詳細資訊，請參閱 <<c0> [ 建立物件 ID](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds)。
 
@@ -126,13 +126,13 @@ ms.locfileid: "59537555"
 
 #### <a name="to-show-threads-in-your-source-code"></a>若要在您的原始程式碼中顯示執行緒
 
-1.  偵錯時，按一下**在來源中顯示執行緒** 按鈕![在來源中顯示執行緒](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")中**偵錯**工具列。
+1. 偵錯時，按一下**在來源中顯示執行緒** 按鈕![在來源中顯示執行緒](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")中**偵錯**工具列。
 
-2.  查看來源視窗左邊的裝訂邊。 在這一行，您會看到*執行緒標記*圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，類似於兩條布條。 執行緒標記表示執行緒會停在這個位置上。
+2. 查看來源視窗左邊的裝訂邊。 在這一行，您會看到*執行緒標記*圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，類似於兩條布條。 執行緒標記表示執行緒會停在這個位置上。
 
     請注意，可能會在中斷點部分隱藏執行緒標記。
 
-3.  將指標移到執行緒標記上。 資料提示方塊就會出現。 資料提示方塊會指出每個已停止的執行緒的名稱和執行緒 ID 編號。
+3. 將指標移到執行緒標記上。 資料提示方塊就會出現。 資料提示方塊會指出每個已停止的執行緒的名稱和執行緒 ID 編號。
 
     您也可以檢視的位置中的執行緒[平行堆疊 視窗](../debugger/get-started-debugging-multithreaded-apps.md)。
 

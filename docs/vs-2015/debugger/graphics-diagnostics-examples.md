@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 52c1c2cc7304828e9ace7e9b5072d262a5395a1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 14b4ac689109e29baa4ee06c668b208d0d5227b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072769"
 ---
 # <a name="graphics-diagnostics-examples"></a>圖形診斷範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,9 +24,9 @@ ms.locfileid: "58941896"
 ## <a name="capturing-graphics-information"></a>擷取圖形資訊  
  您需要先從執行中的應用程式擷取圖形資訊，才能使用圖形診斷，診斷應用程式中的呈現問題。 您可以從在本機執行的應用程式，或是從在遠端電腦或其他裝置上執行的應用程式，擷取圖形資訊。 這些逐步解說示範如何手動或透過程式設計方式，從應用程式擷取圖形資訊：  
   
--   [逐步解說：擷取圖形資訊](../debugger/walkthrough-capturing-graphics-information.md)  
+- [逐步解說：擷取圖形資訊](../debugger/walkthrough-capturing-graphics-information.md)  
   
--   [逐步解說：以程式設計方式擷取圖形資訊](../debugger/walkthrough-capturing-graphics-information-programmatically.md)  
+- [逐步解說：以程式設計方式擷取圖形資訊](../debugger/walkthrough-capturing-graphics-information-programmatically.md)  
   
 ## <a name="use-graphics-diagnostics-with-an-arm-based-device"></a>搭配 ARM 裝置使用圖形診斷  
  您可以使用圖形診斷，透過遠端偵錯來偵錯 ARM 裝置上的 Direct3D 應用程式。 如需詳細資訊，請參閱[如何：搭配 ARM 裝置使用圖形診斷](../debugger/how-to-use-graphics-diagnostics-with-an-arm-device.md)。  
@@ -39,18 +39,18 @@ ms.locfileid: "58941896"
   
  這些情節示範如何使用圖形診斷，判斷物件遺漏原因，以及找出須對此負責的程式碼。  
   
--   [逐步解說：因裝置狀態而遺漏的物件](../debugger/walkthrough-missing-objects-due-to-device-state.md)  
+- [逐步解說：因裝置狀態而遺漏的物件](../debugger/walkthrough-missing-objects-due-to-device-state.md)  
   
--   [逐步解說：因端點著色而遺漏的物件](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)  
+- [逐步解說：因端點著色而遺漏的物件](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)  
   
--   [逐步解說：因管線設定錯誤而遺漏的物件](../debugger/walkthrough-missing-objects-due-to-misconfigured-pipeline.md)  
+- [逐步解說：因管線設定錯誤而遺漏的物件](../debugger/walkthrough-missing-objects-due-to-misconfigured-pipeline.md)  
   
 ## <a name="debugging-rendering-errors"></a>偵錯呈現錯誤  
  圖形開發人員遇到的另一個常見問題是物件沒有正確外觀。 這類型的問題很難進行診斷，因為不正確外觀和造成此問題的原因的範圍很大，從十分明顯 (繫結錯誤的紋理) 到十分難以察覺 (著色器程式碼中的 Bug，或著色器之間的非預期互動)。 部分問題的原因可能是多個錯誤的合併。  
   
  以下情節示範如何使用圖形診斷，追蹤由次要的著色器 Bug 造成的較容易察覺的呈現問題：  
   
--   [逐步解說：針對因著色而產生的顯示錯誤進行偵錯](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)  
+- [逐步解說：針對因著色而產生的顯示錯誤進行偵錯](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)  
   
 ## <a name="debugging-compute-shaders"></a>偵錯計算著色器  
  您可以使用圖形診斷，偵錯產生錯誤結果的 DirectCompute 計算著色器核心。 您可以透過 DirectCompute，使用 GPU 的計算能力來平行執行大量資料項目的計算。 針對特定類型的問題，利用 GPU 的執行速度甚至可能比最佳化的 CPU 程式碼還要快數倍。 不過，傳統偵錯工具偵測不到在 GPU 上執行的程式碼。 偵錯這類程式碼需要特定的工具，而這些特定工具通常是廠商特有的，而且可能未與 Visual Studio 有良好的整合。 為了讓計算著色器在某個 GPU 範圍之間進行更一致的偵錯，圖形診斷會擷取 DirectCompute 分派事件 (除了 Direct3D 呈現事件之外)，讓您可以使用熟悉的工具來偵錯計算著色器程式碼中的問題。  

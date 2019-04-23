@@ -11,30 +11,30 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfa174ca228adcd404edb3e91733731f975ed732
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1dc596909862c2ebb490fa478e1f5f71f88dd7ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940827"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106640"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自訂及擴充網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 模型和視覺效果 SDK (VMSDK) 提供在中，您可以定義模型化工具的數個層級：  
   
-1.  定義特定領域語言 (DSL) 使用 DSL 定義圖。 您可以使用圖表標記法、 可讀取的 XML 格式和產生程式碼和其他成品所需的基本工具，快速建立 DSL。  
+1. 定義特定領域語言 (DSL) 使用 DSL 定義圖。 您可以使用圖表標記法、 可讀取的 XML 格式和產生程式碼和其他成品所需的基本工具，快速建立 DSL。  
   
      如需詳細資訊，請參閱 <<c0> [ 如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。  
   
-2.  使用 DSL 定義的更進階的功能來微調 DSL。 比方說，您可以建立其他連結，使用者建立的項目時，會出現。 這些技巧大部分裡 DSL 定義中，而某些需要幾行程式碼。  
+2. 使用 DSL 定義的更進階的功能來微調 DSL。 比方說，您可以建立其他連結，使用者建立的項目時，會出現。 這些技巧大部分裡 DSL 定義中，而某些需要幾行程式碼。  
   
-3.  使用程式碼，以擴充您的模型化工具。 VMSDK 是為了能讓您輕鬆整合擴充功能與從 DSL 定義產生的程式碼而專門設計的。  如需詳細資訊，請參閱 <<c0> [ 來自訂特定領域語言撰寫的程式碼](../modeling/writing-code-to-customise-a-domain-specific-language.md)。  
+3. 使用程式碼，以擴充您的模型化工具。 VMSDK 是為了能讓您輕鬆整合擴充功能與從 DSL 定義產生的程式碼而專門設計的。  如需詳細資訊，請參閱 <<c0> [ 來自訂特定領域語言撰寫的程式碼](../modeling/writing-code-to-customise-a-domain-specific-language.md)。  
   
 > [!NOTE]
 >  當您已更新在 DSL 定義檔案時，請務必按一下 [**轉換所有範本**後再重建您的方案的方案總管] 工具列中。  
   
-##  <a name="customShapes"></a> 這一節  
+## <a name="customShapes"></a> 這一節  
   
 |若要達成此效果|請參閱本主題|  
 |----------------------------|-------------------------|  

@@ -9,23 +9,22 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31eff8876dd6ae1a83f74d419853846bf461e275
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a9ebedd1a764098d8e4a4866a9645d10aa999062
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782193"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670182"
 ---
 # <a name="options-page-debugging-node-properties"></a>偵錯節點屬性、選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 下表描述與 [選項] 對話方塊的 [偵錯] 分類 `DTE.Properties("Debugging", <Property Page>)` 相關聯的頁面 (或屬性集合)。  
   
 ## <a name="general"></a>一般  
  `DTE.Properties("Debugging", "General")`  
   
-|屬性項目名稱|值|描述|  
+|屬性項目名稱|值|說明|  
 |------------------------|-----------|-----------------|  
 |PromptOnBreakpointDelete|Get/Set (布林值)|判斷偵錯工具是否先提示權限，再刪除專案中的所有中斷點。|  
 |BreakAllProcesses|Get/Set (布林值)|決定是否只要單一處理序中斷，偵錯工具即中斷所有處理序。|  
@@ -55,7 +54,7 @@ ms.locfileid: "54782193"
 ## <a name="edit-and-continue"></a>編輯後繼續  
  `DTE.Properties("Debugging", "EditAndContinue")`  
   
-|屬性項目名稱|值|描述|  
+|屬性項目名稱|值|說明|  
 |------------------------|-----------|-----------------|  
 |EnableEditAndContinue|Get/Set (布林值)|決定是否啟用 [編輯後繼續]。 此選項適用於所有支援 [編輯後繼續] 的語言。|  
 |InvokedByCommands|Get/Set (布林值)|當使用者選取 [步驟] 或 [繼續] 等偵錯命令時，決定 [編輯後繼續] 是否自動套用程式碼變更。 此選項僅適用於原生程式碼。|  
@@ -67,7 +66,7 @@ ms.locfileid: "54782193"
 ## <a name="just-in-time"></a>Just-In-Time  
  `DTE.Properties("Debugging", "JustInTime")`  
   
-|屬性項目名稱|值|描述|  
+|屬性項目名稱|值|說明|  
 |------------------------|-----------|-----------------|  
 |JitManaged|Get/Set (布林值)|決定 Managed 程式碼是否啟用 Just-In-Time 偵錯。|  
 |JitNative|Get/Set (布林值)|決定原生程式碼是否啟用 Just-In-Time 偵錯。|  
@@ -76,7 +75,7 @@ ms.locfileid: "54782193"
 ## <a name="native"></a>原生  
  `DTE.Properties("Debugging", "Native")`  
   
-|屬性項目名稱|值|描述|  
+|屬性項目名稱|值|說明|  
 |------------------------|-----------|-----------------|  
 |LoadDllExports|Get/Set (布林值)|決定偵錯工具是否載入 DLL 匯出表。|  
 |EnableRPC|Get/Set (布林值)|決定偵錯工具是否可以逐步執行至 COM 遠端程序呼叫。|  

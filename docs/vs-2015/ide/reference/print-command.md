@@ -15,17 +15,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c72f6668e6babab6bd62cfb0e9a6ca8632df2a84
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 65d78387c6d60d0b432db9aab175fbfe8dc2869b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763566"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666542"
 ---
 # <a name="print-command"></a>列印命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 評估運算式，或顯示指定的文字。  
   
 ## <a name="syntax"></a>語法  

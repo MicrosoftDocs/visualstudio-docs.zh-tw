@@ -11,17 +11,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792216"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082798"
 ---
 # <a name="walkthrough-using-msbuild"></a>逐步解說：使用 MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介紹 MSBuild 的建置區塊，以及示範如何撰寫和管理 MSBuild 專案及進行偵錯。 學習內容：  
   
 - 建立和管理專案檔。  
@@ -37,11 +36,11 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
   
 #### <a name="to-create-a-project-file"></a>建立專案檔  
   
-1.  開啟 Visual Studio。  
+1. 開啟 Visual Studio。  
   
-2.  在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
+2. 在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
   
-3.  在 [新增專案] 對話方塊中，選取 Visual C# 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱]  方塊中，輸入 `BuildApp`。 輸入方案的**位置**，例如 `D:\`。 接受 [為方案建立目錄]\(已選取)、[加入至原始檔控制]\(未選取) 及 [方案名稱] \(`BuildApp`) 的預設值。  
+3. 在 [新增專案] 對話方塊中，選取 Visual C# 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱] 方塊中，輸入 `BuildApp`。 輸入方案的**位置**，例如 `D:\`。 接受 [為方案建立目錄]\(已選取)、[加入至原始檔控制]\(未選取) 及 [方案名稱] \(`BuildApp`) 的預設值。  
   
      按一下 [確定] 以建立專案檔。  
   
@@ -50,13 +49,13 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
   
 #### <a name="to-examine-the-project-file"></a>檢查專案檔  
   
-1.  在 [方案總管] 中，按一下專案節點 BuildApp。  
+1. 在 [方案總管] 中，按一下專案節點 BuildApp。  
   
-2.  在 [屬性] 瀏覽器中，請注意 [專案檔] 屬性為 BuildApp.csproj。 所有專案檔都會以 "proj" 的後置詞來命名。 如果您已建立 Visual Basic 專案，則專案檔名稱會是 BuildApp.vbproj。  
+2. 在 [屬性] 瀏覽器中，請注意 [專案檔] 屬性為 BuildApp.csproj。 所有專案檔都會以 "proj" 的後置詞來命名。 如果您已建立 Visual Basic 專案，則專案檔名稱會是 BuildApp.vbproj。  
   
-3.  以滑鼠右鍵按一下專案節點，然後按一下 [卸載專案]。  
+3. 以滑鼠右鍵按一下專案節點，然後按一下 [卸載專案]。  
   
-4.  再次以滑鼠右鍵按一下專案節點，然後按一下 [編輯 BuildApp.csproj]。  
+4. 再次以滑鼠右鍵按一下專案節點，然後按一下 [編輯 BuildApp.csproj]。  
   
      該專案檔隨即出現在程式碼編輯器中。  
   
@@ -137,17 +136,17 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
   
 #### <a name="to-build-the-target"></a>建置目標  
   
-1.  按一下 [開始]，然後按一下 [所有程式]。 在 [Visual Studio Tools] 資料夾中，找出並按一下 [Visual Studio 命令提示字元]。  
+1. 按一下 [開始]，然後按一下 [所有程式]。 在 [Visual Studio Tools] 資料夾中，找出並按一下 [Visual Studio 命令提示字元]。  
   
-2.  從命令視窗，瀏覽至包含專案檔的資料夾，在此案例中為 D:\BuildApp\BuildApp。  
+2. 從命令視窗，瀏覽至包含專案檔的資料夾，在此案例中為 D:\BuildApp\BuildApp。  
   
-3.  使用命令參數 /t:HelloWorld 來執行 msbuild。 這會選取並建置 HelloWorld 目標：  
+3. 使用命令參數 /t:HelloWorld 來執行 msbuild。 這會選取並建置 HelloWorld 目標：  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  檢查 [命令視窗] 中的輸出。 您應該會看到 "Hello" 和 "World" 這兩行：  
+4. 檢查 [命令視窗] 中的輸出。 您應該會看到 "Hello" 和 "World" 這兩行：  
   
     ```  
     Hello  
@@ -203,7 +202,7 @@ $(PropertyName)
   
 #### <a name="to-examine-a-property-value"></a>檢查屬性值  
   
-1.  從程式碼編輯器，使用此程式碼來取代 HelloWorld 目標：  
+1. 從程式碼編輯器，使用此程式碼來取代 HelloWorld 目標：  
   
     ```  
     <Target Name="HelloWorld">  
@@ -212,15 +211,15 @@ $(PropertyName)
     </Target>  
     ```  
   
-2.  儲存專案檔。  
+2. 儲存專案檔。  
   
-3.  從 [命令視窗]，輸入並執行這一行：  
+3. 從 [命令視窗]，輸入並執行這一行：  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  檢查輸出結果， 您應該會看到這兩行 (您的 .NET Framework 版本可能不一樣)：  
+4. 檢查輸出結果， 您應該會看到這兩行 (您的 .NET Framework 版本可能不一樣)：  
   
     ```  
     Configuration is Debug  
@@ -242,7 +241,7 @@ $(PropertyName)
  幾乎所有的 MSBuild 項目都會有一個 Condition 屬性。 如需使用 Condition 屬性的詳細討論，請參閱[條件](../msbuild/msbuild-conditions.md)。  
   
 ### <a name="reserved-properties"></a>保留的屬性  
- MSBuild 保留一些屬性名稱來儲存專案檔和 MSBuild 二進位檔案的相關資訊。 MSBuildToolsPath 是保留的屬性範例。 保留的屬性是使用 $ 標記法來參考，如同任何其他屬性。 如需詳細資訊，請參閱[如何：參考專案檔的名稱或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
+ MSBuild 保留一些屬性名稱來儲存專案檔和 MSBuild 二進位檔案的相關資訊。 MSBuildToolsPath 是保留的屬性範例。 保留的屬性是使用 $ 標記法來參考，如同任何其他屬性。 如需詳細資訊，請參閱[如何：參考的名稱或專案檔的位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)並[MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
   
 ### <a name="environment-variables"></a>環境變數  
  您可以使用和組建屬性一樣的方式，來參考專案檔中的環境變數。 例如，若要在專案檔中使用 PATH 環境變數，請使用 $(Path)。 如果專案包含與環境變數相同名稱的專案定義，則專案中的屬性會覆寫環境變數的值。 如需詳細資訊，請參閱[如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
@@ -307,7 +306,7 @@ $(PropertyName)
 </ItemGroup>  
 ```  
   
- 定義一個包含兩個項目的項目群組。 Compile 項目類型具有兩個值："Program.cs" 和 "Properties\AssemblyInfo.cs"。  
+ 定義一個包含兩個項目的項目群組。 Compile 項目類型有兩個值："Program.cs"和"Properties\AssemblyInfo.cs"。  
   
  下列程式碼會在一個 Include 屬性中宣告這兩個檔案 (以分號分隔)，藉以建立相同的項目類型。  
   
@@ -367,19 +366,19 @@ $(PropertyName)
   
 #### <a name="to-display-item-type-values-one-per-line"></a>每行顯示一個項目類型值  
   
-1.  從程式碼編輯器，使用下列這一行來取代 Message 工作：  
+1. 從程式碼編輯器，使用下列這一行來取代 Message 工作：  
   
     ```  
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />  
     ```  
   
-2.  儲存專案檔。  
+2. 儲存專案檔。  
   
-3.  從 [命令視窗]，輸入並執行這一行：  
+3. 從 [命令視窗]，輸入並執行這一行：  
   
      `msbuild buildapp.csproj /t:HelloWorld`  
   
-4.  檢查輸出結果， 您應該會看到下列這幾行：  
+4. 檢查輸出結果， 您應該會看到下列這幾行：  
   
     ```  
     Compile item type contains Form1.cs  
@@ -424,7 +423,7 @@ $(PropertyName)
 <Compile Include="*.cs" Exclude="*Designer*">  
 ```  
   
- 將副檔名為 ".cs" 的所有檔案加入至 Compile 項目類型，但名稱包含 "Designer" 字串的檔案除外。 如需更多範例，請參閱[如何︰從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。  
+ 將副檔名為 ".cs" 的所有檔案加入至 Compile 項目類型，但名稱包含 "Designer" 字串的檔案除外。 如需更多範例，請參閱[如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。  
   
  Exclude 屬性只會影響包含這兩者之 Item 項目 (Element) 中由 Include 屬性所加入的項目 (Item)。 例如，套用至物件的  
   
@@ -437,13 +436,13 @@ $(PropertyName)
   
 ##### <a name="to-include-and-exclude-items"></a>包含與排除項目  
   
-1.  從程式碼編輯器，使用下列這一行來取代 Message 工作：  
+1. 從程式碼編輯器，使用下列這一行來取代 Message 工作：  
   
     ```  
     <Message Text="Compile item type contains @(XFiles)" />  
     ```  
   
-2.  加入這個項目 (Item) 群組，緊接在 Import 項目 (Element) 之後：  
+2. 加入這個項目 (Item) 群組，緊接在 Import 項目 (Element) 之後：  
   
     ```  
     <ItemGroup>  
@@ -451,15 +450,15 @@ $(PropertyName)
     </ItemGroup>  
     ```  
   
-3.  儲存專案檔。  
+3. 儲存專案檔。  
   
-4.  從 [命令視窗]，輸入並執行這一行：  
+4. 從 [命令視窗]，輸入並執行這一行：  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-5.  檢查輸出結果， 您應該會看到下列這一行：  
+5. 檢查輸出結果， 您應該會看到下列這一行：  
   
     ```  
     Compile item type contains Form1.cs;Program.cs;Properties/Resources.resx  
@@ -577,8 +576,8 @@ $(PropertyName)
    請注意，此語法中所表示的中繼資料不會導致批次處理。  
   
 ## <a name="whats-next"></a>後續步驟？  
- 若要了解如何逐步建立簡單的專案檔，請嘗試[逐步解說︰從頭開始建立 MSBuild 專案檔](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。  
+ 若要了解如何逐步建立簡單的專案檔，請嘗試[逐步解說︰從頭開始建立 MSBuild 專案檔案](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [MSBuild 概觀](msbuild.md)  
  [MSBuild 參考](../msbuild/msbuild-reference.md)

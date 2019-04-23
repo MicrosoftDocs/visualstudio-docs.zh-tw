@@ -1,5 +1,5 @@
 ---
-title: 測試區域 4:簽入 |Microsoft Docs
+title: 測試區域 4：簽入 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2529b22d7039101f83952b3390221af5b78922b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 34d988f88787efc2f40b663ef2f22e6273055533
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038708"
 ---
-# <a name="test-area-4-check-in"></a>測試區域 4:簽入
+# <a name="test-area-4-check-in"></a>測試區域 4：簽入
 此原始檔控制外掛程式的測試區域涵蓋版本存放區，以透過傳送更新的項目**簽入**命令。
 
 ## <a name="command-menu-access"></a>命令功能表存取
@@ -33,11 +33,11 @@ ms.locfileid: "56605103"
 
 ## <a name="common-expected-behavior"></a>常見的預期的行為
 
--   專案和加入至方案或專案原始檔控制下的檔案會出現在**簽入** 對話方塊中，**暫止簽入**視窗。
+- 專案和加入至方案或專案原始檔控制下的檔案會出現在**簽入** 對話方塊中，**暫止簽入**視窗。
 
--   簽入之後, 加入的項目會出現在原始檔控制。
+- 簽入之後, 加入的項目會出現在原始檔控制。
 
--   在檢查之後, 已更新的項目是正確版本存放區中。
+- 在檢查之後, 已更新的項目是正確版本存放區中。
 
 ## <a name="test-cases"></a>測試案例
  以下是簽入測試區域的特定測試案例。

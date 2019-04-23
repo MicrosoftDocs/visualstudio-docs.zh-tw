@@ -27,17 +27,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 691500690470f66bced8fdec5ff885a2d1f0d73b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a1a66ae20065546d5a42b990d0ba0009d0657ed0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761623"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656020"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>選項對話方塊、環境、字型和色彩
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [選項] 對話方塊的 [字型和色彩] 頁面可讓您為整合式開發環境 (IDE) 中的各種使用者介面項目建立自訂的字型和色彩配置。 按一下 [工具]/[選項]，然後選取 [環境]/[字型和色彩]，即可存取此對話方塊。 如果此頁面未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定]。  
   
 > [!NOTE]
@@ -233,7 +232,7 @@ ms.locfileid: "54761623"
  **範例**  
  顯示所選取 [顯示設定] 和 [顯示項目] 的字型樣式、大小和色彩配置範例。 您可以使用此方塊來預覽結果，嘗試使用不同的格式選項。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)   
  [選項對話方塊](../../ide/reference/options-dialog-box-visual-studio.md)   
- [如何：變更字型和色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [如何：變更字型與色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

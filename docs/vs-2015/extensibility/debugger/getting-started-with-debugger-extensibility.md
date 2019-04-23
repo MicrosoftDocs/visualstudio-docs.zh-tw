@@ -12,12 +12,12 @@ ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 12701abf66d49a3b462502700b3b57933369b6e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1c616c7cf8ed90ec3d76046892167b9b742a1b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939622"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085671"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>偵錯工具擴充性的使用者入門
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "58939622"
   
  充分運用[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]，您應該先熟悉下列：  
   
--   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式的開發環境 (IDE)  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式的開發環境 (IDE)  
   
--   C + + 程式設計語言  
+- C++程式設計語言  
   
--   ATL COM  
+- ATL COM  
   
 ## <a name="in-this-section"></a>本節內容  
  [擴充偵錯工具的藍圖](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  

@@ -14,16 +14,15 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c3a8a1f4b0c6e242e3999d870fdfcdc764d8336
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6b6ee9413a2394d0477cd1c7b1a0caf83dd6ad6d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940675"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651379"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>建立和管理資料庫和 Visual Studio 中的資料層應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 重要事項]
 >  資料庫專案所包含的舊版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]現已提供在[!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)]工具。 如需詳細資訊，請參閱 < [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126)。

@@ -10,16 +10,16 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: e7b451cf18a461f94e1d8682652e16dac9ee8ab2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 07584f9e04be805ed699676c678b2147ec3679ff
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790455"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537620"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>適用於 C# 開發人員的 Visual Studio 生產力指南
 
-了解 Visual Studio 如何讓開發人員比以往更具生產力。 運用我們的效能與生產力改進，像是導覽到反向組譯的組件、輸入時的變數名稱建議、**測試總管**中的階層架構檢視、[移至全部] (**Ctrl**+**T**) 以導覽至檔案/類型/成員/符號宣告、智慧型**例外狀況協助程式**、程式碼樣式組態和強制執行，以及許多重構和程式碼修正。
+了解 Visual Studio 如何讓開發人員比以往更具生產力。 運用我們的效能與生產力改進，像是導覽到反向組譯的組件、鍵入時的變數名稱建議、**測試總管**中的階層架構檢視、[移至全部] (**Ctrl**+**T**) 以導覽至檔案/類型/成員/符號宣告、智慧型**例外狀況協助程式**、程式碼樣式組態和強制執行，以及許多重構和程式碼修正。
 
 ## <a name="im-used-to-keyboard-shortcuts-from-a-different-editor"></a>我習慣從不同編輯器中使用鍵盤快速鍵
 
@@ -126,6 +126,7 @@ Visual Studio 提供許多重構、程式碼產生動作，以及程式碼修正
 - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
 - [ Visual Studio 的 SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
 - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
+- [CodeCracker](https://www.nuget.org/packages/codecracker.CSharp/) \(英文\)
 
 ![Visual Studio 中的重構](../ide/media/VSGuide_CodeAnalysis.png)
 
@@ -211,4 +212,4 @@ Visual Studio 有許多功能，可協助您搜尋和[巡覽程式碼](../ide/na
 | 啟用巡覽至反向編譯的原始碼 | 允許從外部來源對類型/成員啟用 [移至定義]，並使用 ILSpy 解編程式來顯示方法主體 | [工具] > [選項] > [文字編輯器] > [C#] > [進階] > [啟用巡覽至反向編譯的原始碼] |
 | 完成/建議模式 | 變更 IntelliSense 中的完成行為。 具有 IntelliJ 背景的開發人員傾向於使用這裡的非預設設定。 | [功能表] > [編輯] > [IntelliSense] > [切換完成模式] |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | 在編輯器中顯示程式碼參考資訊與變更歷程記錄 | [工具] > [選項] > [文字編輯器] > [所有語言] > [CodeLens] |
-| [程式碼片段](../ide/visual-csharp-code-snippets.md) | 協助插入常用樣板程式碼作為虛設常式 | 輸入程式碼片段名稱並按兩次 **Tab** 鍵。 |
+| [程式碼片段](../ide/visual-csharp-code-snippets.md) | 協助插入常用樣板程式碼作為虛設常式 | 鍵入程式碼片段名稱並按兩次 **Tab** 鍵。 |

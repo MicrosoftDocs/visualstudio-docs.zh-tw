@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f4add2a01a9fd26fe5479bbf6ba54f25e8b2e14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f24b86f51d658ea2f228f1e72d18394fcba4b47b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625695"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072815"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>必要的變更，執行您移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案
   如果 Office 專案的目標 framework 變更為[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本從.NET Framework 較早版本，您必須執行下列工作，以確保解決方案可以在開發電腦和終端使用者電腦上執行：
@@ -28,7 +28,7 @@ ms.locfileid: "56625695"
 
 - 更新專案的 .NET Framework 必要條件。
 
-- 如果在變更目標 Framework 之前已使用 ClickOnce 部署了解決方案，使用者也必須重新安裝解決方案。
+- 如果在變更目標 Framework 之前已使用 ClickOnce 部署了解決方案，終端使用者也必須重新安裝解決方案。
 
   如需這些工作每一項的詳細資訊，請參閱下列對應的章節。
 
@@ -39,14 +39,14 @@ ms.locfileid: "56625695"
 
 #### <a name="to-remove-the-securitytransparentattribute"></a>移除 SecurityTransparentAttribute
 
-1.  請使用在 Visual Studio 中開啟的專案，開啟 [方案總管] 。
+1. 請使用在 Visual Studio 中開啟的專案，開啟 [方案總管] 。
 
-2.  在 [屬性]  節點 (C#) 或 [我的專案]  節點 (Visual Basic) 下，按兩下 AssemblyInfo 程式碼檔，以在程式碼編輯器中加以開啟。
+2. 在 [屬性]  節點 (C#) 或 [我的專案]  節點 (Visual Basic) 下，按兩下 AssemblyInfo 程式碼檔，以在程式碼編輯器中加以開啟。
 
     > [!NOTE]
     >  在 Visual Basic 專案中，您必須按一下 [方案總管]  中的 [顯示所有檔案]  按鈕，才能查看 AssemblyInfo 程式碼檔。
 
-3.  找出 <xref:System.Security.SecurityTransparentAttribute>，並將它從檔案移除或加以註解化。
+3. 找出 <xref:System.Security.SecurityTransparentAttribute>，並將它從檔案移除或加上註解。
 
     ```vb
     <Assembly: SecurityTransparent()>
@@ -67,7 +67,7 @@ ms.locfileid: "56625695"
  如需有關如何更新使用者電腦的部署必要條件的詳細資訊，請參閱[How to:安裝必要條件來執行 Office 方案的終端使用者電腦上](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。
 
 ## <a name="reinstall-solutions-on-end-user-computers"></a>在使用者電腦上重新安裝解決方案
- 如果您使用 ClickOnce 部署以 .NET Framework 3.5 為目標的 Office 解決方案，然後又將專案目標重定為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，則終端使用者必須解除安裝解決方案，並在您重新發行後再重新安裝解決方案。 如果您重新發行重定目標的方案，方案會更新使用者電腦上，使用者會收到<xref:System.Runtime.InteropServices.COMException>當他們執行更新的方案。
+ 如果您使用 ClickOnce 部署以 .NET Framework 3.5 為目標的 Office 解決方案，然後又將專案目標重定為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，則使用者必須解除安裝解決方案，並在您重新發行後再重新安裝解決方案。 如果您重新發行重定目標的方案，方案會更新使用者電腦上，使用者會收到<xref:System.Runtime.InteropServices.COMException>當他們執行更新的方案。
 
 ## <a name="see-also"></a>另請參閱
 - [移轉至.NET Framework 4 或更新版本的 Office 方案](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)

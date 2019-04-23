@@ -14,12 +14,12 @@ ms.assetid: 67a86df7-49f9-43cb-99c6-99b1a427827a
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5cf7d77853cb200afe568656e1055459acad7d1
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2c2507acd42336511dadc3dedd2eba15fe0d5b76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842282"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050071"
 ---
 # <a name="expected-hexadecimal-digit"></a>必須是十六進位數
 您建立不正確的 Unicode 逸出序列。 Unicode 逸出序列的開頭 \u，後面接著四個十六進位數字 （不多也不少）。 可以包含 Unicode 十六進位數字，只是數字 0-9、 大寫的字母 A-F 和小寫字母 a-f。 下列範例會示範正確的 Unicode 逸出序列。  
@@ -30,7 +30,7 @@ z = "\u1A5F";
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   確定您 Unicode 的十六進位數字開頭 \u、 只包含數字 0-9、 大寫的字母 A-F、 小寫字母 a-f;和分為四個數字。  
+- 確定您 Unicode 的十六進位數字開頭 \u、 只包含數字 0-9、 大寫的字母 A-F、 小寫字母 a-f;和分為四個數字。  
   
     > [!NOTE]
     >  如果您想要在字串中，使用常值文字 \u，然後使用兩個反斜線 (\\\u)-一個用來逸出第一個反斜線。  

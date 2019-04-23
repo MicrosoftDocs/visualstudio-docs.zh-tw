@@ -9,14 +9,14 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d824a567f5819125837dde401107a050561d08a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 863e60592fe82c468f48912c4e36182b1bb1a36b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104144"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至 ASP.NET Web 應用程式以收集記憶體資料
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>HOW TO：附加至 ASP.NET Web 應用程式以收集記憶體資料使用命令列的 Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令列工具將分析工具附加至 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式，並收集 .NET Framework 記憶體配置數量和大小的相關資料。 您也可以收集 .NET Framework 記憶體物件存留期的相關資料。  
@@ -40,7 +40,7 @@ ms.locfileid: "54783468"
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]  
 
-   -   選項 **/globalsamplegc** 和 **/globalsamplegclife** 會指定要收集之記憶體資料的類型。  
+   - 選項 **/globalsamplegc** 和 **/globalsamplegclife** 會指定要收集之記憶體資料的類型。  
 
         只指定下列其中一個選項。  
 
@@ -49,7 +49,7 @@ ms.locfileid: "54783468"
        |**/globalsamplegc**|啟用記憶體配置資料的收集功能。|  
        |**/globalsamplegclife**|啟用記憶體配置資料和物件存留期資料的收集功能。|  
 
-   -   **/samplelineoff** 選項會停止將收集的資料指派給特定的原始程式碼。 如果指定此選項，則在函式層級指派資料。  
+   - **/samplelineoff** 選項會停止將收集的資料指派給特定的原始程式碼。 如果指定此選項，則在函式層級指派資料。  
 
 3. 重新啟動電腦，以設定進行新的環境組態。  
 
@@ -77,23 +77,22 @@ ms.locfileid: "54783468"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。                                                                                          |
 
-
 6. 以一般方式啟動 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式。  
 
 7. 將分析工具附加至 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序。 類型：  
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   處理序識別碼 `(PID)` 會指定 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序的處理序識別碼或處理序名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序 ID。  
+   - 處理序識別碼 `(PID)` 會指定 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序的處理序識別碼或處理序名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序 ID。  
 
-   -   **/targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。  
+   - **/targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。  
 
 ## <a name="controlling-data-collection"></a>控制資料收集  
  當應用程式在執行時，您可以使用 **VSPerfCmd.exe** 選項，藉由開始和停止將資料寫入至分析工具資料檔中的方式，控制資料收集。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
 
--   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
+- 下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
 
     |選項|描述|  
     |------------|-----------------|  
@@ -128,6 +127,6 @@ ms.locfileid: "54783468"
 
     **IISReset /start**  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

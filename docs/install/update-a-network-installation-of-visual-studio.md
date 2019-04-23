@@ -1,7 +1,7 @@
 ---
 title: 更新網路型安裝
 description: 了解如何使用 --layout 命令來更新網路型 Visual Studio 安裝
-ms.date: 2/22/2019
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: a92a20db8b24b83975ad5c25738fbc3af776a031
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475977"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790403"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新 Visual Studio 的網路型安裝
 
@@ -30,44 +30,55 @@ ms.locfileid: "58475977"
 
 若要重新整理您的網路安裝共用，以便其包含最新的更新，請執行 `--layout` 命令，以累加方式下載更新的套件。
 
-**15.3 中的新功能**：如果您在最初建立網路配置時已選取部分配置，則會儲存這些設定。  任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項 但是如果您要使用舊版本的配置，則應該使用您最初建立網路安裝配置時所使用的相同命令列參數 (亦即，相同的工作負載和語言) 來更新其內容。
+::: moniker range="vs-2017"
 
-如果您在檔案共用上裝載配置，則應該更新該配置的私用複本 (例如 c:\vs2017offline))，然後在下載所有已更新的內容之後，將該複本複製到檔案共用 (例如 \\server\products\VS2017)。 如果不這麼做，則在您更新配置時執行安裝程式的任何使用者，都很有可能無法取得配置的所有內容，因為配置尚未完全更新。
+**15.3 中的新功能**：如果您在最初建立網路配置時已選取部分配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項 但是如果您要使用舊版本的配置，則應該使用您最初建立網路安裝配置時所使用的相同命令列參數 (亦即，相同的工作負載和語言) 來更新其內容。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+如果您在最初建立網路配置時已選取部分配置，則會儲存這些設定。 任何未來的配置命令都會使用先前的選項，以及您指定的任何新選項
+
+::: moniker-end
+
+如果您在檔案共用上裝載配置，則應該更新該配置的私人複本 (例如 c:\vsoffline)，然後在下載所有已更新的內容之後，將該複本複製到檔案共用 (例如 \\server\products\VS)。 如果不這麼做，則在您更新配置時執行安裝程式的任何使用者，都很有可能無法取得配置的所有內容，因為配置尚未完全更新。
 
 讓我們以一些範例來逐步解說如何在建立後更新配置：
 
 * 首先，以下是如何建立只包含一份英文工作負載的配置範例：
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
+  vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
 * 以下是如何該相同的配置更新為較新版本。 您不需要指定任何其他命令列參數。 已儲存先前的設定，並且將供這個配置資料夾中的任何後續配置命令使用。
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout
+  vs_enterprise.exe --layout c:\VSLayout
   ```
 
 * 以下是如何以自動方式將配置更新為較新版本。 配置作業會在新的主控台視窗中執行安裝程序。 此視窗會保持開啟，好讓使用者可以看到最後的結果及可能發生之任何錯誤的摘要。 如果您正以自動方式執行配置作業 (例如讓指令碼定期執行以將配置更新為最新版本)，則使用 `--passive` 參數和處理序將會自動關閉視窗。
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --passive
+  vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
-* 以下是如何新增額外的工作負載和當地語系化語言  (這個命令會新增 Azure 工作負載)。現在，Managed 桌面和 Azure 都會包含在此配置中。  所有這些工作負載也會包含英文和德文的語言資源。  而且，配置會更新為最新的可用版本。
+* 以下是如何新增額外的工作負載和當地語系化語言  (這個命令會新增「Azure 開發」工作負載)。現在，Managed 桌面和 Azure 都會包含在此配置中。  所有這些工作負載也會包含英文和德文的語言資源。  而且，配置會更新為最新的可用版本。
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
+  vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
     > [!IMPORTANT]
-    > 即使您將所新增選擇性元件包含在[回應檔案](automated-installation-with-response-file.md)的「新增」區段中，更新作業也不會安裝這些元件。 這是因為新增作業不會在更新期間使用。<br>
+    > 即使您將所新增選擇性元件包含在[回應檔案](automated-installation-with-response-file.md)的「新增」區段中，更新作業也不會安裝這些元件。 這是因為新增作業不會在更新期間使用。
+    >
     > **因應措施**：在升級後執行個別修改作業，以安裝遺漏的元件。
 
-* 最後，以下是如何新增額外的工作負載和當地語系化語言，而不需要更新版本。 (這個命令會新增 ASP.NET 和 Web 工作負載)。現在，Managed 桌面、Azure 以及 ASP.NET 和 Web 工作負載都會包含在此配置中。 所有這些工作負載也會包含英文、德文和法文的語言資源。  不過，執行此命令時，不會將配置更新為最新可用版本。 它會保持現有的版本。
+* 最後，以下是如何新增額外的工作負載和當地語系化語言，而不需要更新版本。 (這個命令會新增「ASP.NET 與網頁程式開發」工作負載)。現在，受控桌面、Azure 以及 ASP.NET 與網頁程式開發工作負載都會包含在此配置中。 所有這些工作負載也會包含英文、德文和法文的語言資源。  不過，執行此命令時，不會將配置更新為最新可用版本。 它會保持現有的版本。
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
+  vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
 ## <a name="how-to-deploy-an-update-to-client-machines"></a>如何將更新部署至用戶端電腦
@@ -78,9 +89,22 @@ ms.locfileid: "58475977"
   * 執行 Visual Studio 安裝程式。
   * 接著，按一下 [更新]。
 
+::: moniker range="vs-2017"
+
 * 利用兩個不同的命令，系統管理員可以更新 Visual Studio 的用戶端部署，而不需要任何使用者互動：
   * 首先，更新 Visual Studio 安裝程式： <br>```vs_enterprise.exe --quiet --update```
   * 接著，更新 Visual Studio 應用程式本身： <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" --quiet --wait --norestart```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+* 利用兩個不同的命令，系統管理員可以更新 Visual Studio 的用戶端部署，而不需要任何使用者互動：
+  * 首先，更新 Visual Studio 安裝程式： <br>```vs_enterprise.exe --quiet --update```
+  * 接著，更新 Visual Studio 應用程式本身： <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" --quiet --wait --norestart```
+
+::: moniker-end
+
 
 > [!NOTE]
 > 使用 [vswhere.exe 命令](tools-for-managing-visual-studio-instances.md)來識別用戶端電腦上 Visual Studio 現有執行個體的安裝路徑。
@@ -99,7 +123,7 @@ vs_enterprise.exe --layout <layoutDir> --verify
 vs_enterprise.exe 可以在 layoutDir 內進行叫用。
 
 > [!NOTE]
-> `--verify` 選項所需的一些重要中繼資料檔案必須在配置離線快取中。 如果遺失這些中繼資料檔案，則無法執行 "--verify"，而且安裝程式會產生錯誤。 如果您遇到此錯誤，請將新的離線配置重新建立到不同的資料夾 (或相同的離線快取資料夾)。 若要這麼做，請執行您用來建立初始離線配置的相同配置命令。 例如，`Vs_enterprise.exe --layout <layoutDir>`。
+> `--verify` 選項所需的一些重要中繼資料檔案必須在配置離線快取中。 如果遺失這些中繼資料檔案，則無法執行 "--verify"，而且安裝程式會產生錯誤。 如果您遇到此錯誤，請將新的離線配置重新建立到不同的資料夾 (或相同的離線快取資料夾)。 若要這麼做，請執行您用來建立初始離線配置的相同配置命令。 例如，`vs_enterprise.exe --layout <layoutDir>`。
 
 Microsoft 會定期提供 Visual Studio 更新，因此，您建立的新配置可能不是與初始配置相同的版本。
 
@@ -137,7 +161,7 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <
 您也可以叫用 &lt;layoutDir&gt; 內的 vs_enterprise.exe。 以下為範例：
 
 ```cmd
-c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
+c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
 當您執行此命令時，安裝程式會分析您的離線快取資料夾，以尋找將移除的檔案清單。 您接著可能會檢閱要刪除的檔案，並確認刪除。

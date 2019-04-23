@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5380c73b8286d492cb29f60acce3294aaac25d1f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 505f876b9c7943c8b039b74459552b77ce539477
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944436"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101115"
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>HOW TO：變更偵錯逐步執行選項 (舊版)
 本主題描述如何在具有並行動作的舊版 [!INCLUDE[wf](../includes/wf-md.md)] 中變更 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 應用程式的偵錯逐步執行選項。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -33,13 +33,13 @@ ms.locfileid: "58944436"
   
 #### <a name="to-change-the-debug-stepping-option"></a>若要變更偵錯逐步執行選項  
   
-1.  啟動 Visual Studio。  
+1. 啟動 Visual Studio。  
   
-2.  開啟現有的舊版工作流程專案或建立新的專案，使其利用並行活動並以 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 為目標。  
+2. 開啟現有的舊版工作流程專案或建立新的專案，使其利用並行活動並以 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 為目標。  
   
-3.  在上**工作流程**在舊版的功能表[!INCLUDE[wfd2](../includes/wfd2-md.md)]，指向**偵錯**，然後指向**逐步執行選項**。  
+3. 在上**工作流程**在舊版的功能表[!INCLUDE[wfd2](../includes/wfd2-md.md)]，指向**偵錯**，然後指向**逐步執行選項**。  
   
-4.  選取 **執行個體**或是**分支**。  
+4. 選取 **執行個體**或是**分支**。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯舊版工作流程](../workflow-designer/debugging-legacy-workflows.md)   

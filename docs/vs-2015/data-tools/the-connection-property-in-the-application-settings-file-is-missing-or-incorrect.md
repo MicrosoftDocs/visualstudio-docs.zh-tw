@@ -9,24 +9,23 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 671b0acfd0f2ec81e349bd6a69db0fb64bff94d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 043db1aca02a82abe08786466f4b47213d09540d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930102"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086022"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>應用程式設定檔中的連接屬性遺漏或不正確
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 應用程式設定檔案中的連接屬性遺漏或不正確。 改用來自 .dbml 檔案的連接字串代替。  
   
  .dbml 檔案參考了應用程式設定檔案中所沒有的連接字串。 這是告知性訊息，當您按一下 [確定] 時就會建立連接字串設定。  
   
 ### <a name="to-respond-to-this-message"></a>若要回應這個訊息  
   
--   按一下 [確定 **Deploying Office Solutions**]。 .dbml 檔案中所含的連接資訊會加入至應用程式設定。  
+- 按一下 [確定] 。 .dbml 檔案中所含的連接資訊會加入至應用程式設定。  
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

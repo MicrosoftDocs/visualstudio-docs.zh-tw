@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 610ba4b805f2e8737f7b142e02158b80f51c529d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 92a0b432e75cb8df6318be0961cc587257869b27
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635965"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041942"
 ---
 # <a name="word-object-model-overview"></a>Word 物件模型概觀
   當您在 Visual Studio 中開發 Word 解決方案時，會與 Word 物件模型互動。 組成這個物件模型的類別和介面，是由 Word 的主要 Interop 組件所提供，並在 <xref:Microsoft.Office.Interop.Word> 命名空間中定義。
@@ -33,13 +33,13 @@ ms.locfileid: "56635965"
 
  如需使用 Word 物件模型執行特定工作的詳細資訊，請參閱下列主題：
 
--   [使用文件](../vsto/working-with-documents.md)
+- [使用文件](../vsto/working-with-documents.md)
 
--   [使用文件中的文字](../vsto/working-with-text-in-documents.md)
+- [使用文件中的文字](../vsto/working-with-text-in-documents.md)
 
--   [使用資料表](../vsto/working-with-tables.md)
+- [使用資料表](../vsto/working-with-tables.md)
 
-##  <a name="understanding"></a> 了解 Word 物件模型
+## <a name="understanding"></a> 了解 Word 物件模型
  Word 提供數百個您可與之互動的物件。 這些物件是在密切遵循使用者介面的階層內組合管理。 階層的頂端是 <xref:Microsoft.Office.Interop.Word.Application> 物件。 這個物件代表 Word 目前的執行個體。 <xref:Microsoft.Office.Interop.Word.Application> 物件包含 <xref:Microsoft.Office.Interop.Word.Document>、 <xref:Microsoft.Office.Interop.Word.Selection>、 <xref:Microsoft.Office.Interop.Word.Bookmark>和 <xref:Microsoft.Office.Interop.Word.Range> 物件。 這些物件每個都有許多方法和屬性，您可存取它們以操作物件並與之互動。
 
  下圖中的檢視顯示這些物件在 Word 物件模型中的階層。
@@ -115,7 +115,7 @@ ms.locfileid: "56635965"
 
   Visual Studio 會提供 <xref:Microsoft.Office.Interop.Word.Bookmark> 主控制項，藉以擴充 <xref:Microsoft.Office.Tools.Word.Bookmark> 物件。 <xref:Microsoft.Office.Tools.Word.Bookmark> 主控制項行如原生 <xref:Microsoft.Office.Interop.Word.Bookmark>，卻又具有事件和資料繫結功能。 您可以用將資料繫結至 Windows 表單文字方塊控制項的方式，將資料繫結至文件的書籤控制項。 如需詳細資訊，請參閱 <<c0> [ 書籤控制項](../vsto/bookmark-control.md)。
 
-##  <a name="WordOMDocumentation"></a> 使用 Word 物件模型文件
+## <a name="WordOMDocumentation"></a> 使用 Word 物件模型文件
  如需 Word 物件模型的完整資訊，您可以參閱 Word 主要 Interop 組件 (PIA) 參考和 Visual Basic for Applications (VBA) 物件模型參考。
 
 ### <a name="primary-interop-assembly-reference"></a>主要 interop 組件參考

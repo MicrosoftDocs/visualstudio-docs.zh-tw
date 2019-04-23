@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7c904e74793710dedc96d4a769d4f6c61a15e69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 834651f525ccb292f82d5cf0ab5a7068a1cf7f20
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760767"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108304"
 ---
 # <a name="how-to-create-a-basic-3-d-model"></a>HOW TO：建立基本 3d 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ ms.locfileid: "54760767"
   
  本文件示範下列活動︰  
   
--   將物件加入場景  
+- 將物件加入場景  
   
--   選取表面和邊緣  
+- 選取表面和邊緣  
   
--   轉譯選取項目  
+- 轉譯選取項目  
   
--   使用 [細分表面] 和 [使表面立體化] 工具  
+- 使用 [細分表面] 和 [使表面立體化] 工具  
   
--   使用 [分成三角形] 命令  
+- 使用 [分成三角形] 命令  
   
 ## <a name="creating-a-basic-3-d-model"></a>建立基本 3D 模型  
  您可以使用模型編輯器來建立和修改遊戲或應用程式的 3D 模型和場景。 下列步驟示範如何使用模型編輯器來建立房屋的簡化 3D 模型。 簡化模型可當做仍在建立的最終藝術資產替身、當做網格用於衝突偵測，或當做低解析度模型，在所代表物件還不能受益於更高解析度的轉譯時使用。  
@@ -76,7 +76,7 @@ ms.locfileid: "54760767"
   
    下一步可以將著色器套用至這個 3D 模型。 如需相關資訊，請參閱[如何：將著色器套用至 3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：模型的 3d 地形模型](../designers/how-to-model-3-d-terrain.md)   
  [模型編輯器](../designers/model-editor.md)   
  [著色器設計工具](../designers/shader-designer.md)

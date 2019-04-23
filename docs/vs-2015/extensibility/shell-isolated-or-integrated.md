@@ -14,12 +14,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d8b08dfe812245a21160fa2f16b4c94728785ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17da1ff036227b50e507fd564618c4f53cf430c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944525"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116377"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell （獨立模式或整合）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "58944525"
 >  如果您透過您的應用程式，從您的客戶收集不同的使用方式資料，您必須提供適當的通知給您的收集您應用程式的使用者。  當您將獨立或整合式 shell 軟體發佈為應用程式的一部分，根據 Visual Studio 軟體開發套件的授權，您必須包含下列其中一項：  
 > 
 > - 使用者授權合約，為您的應用程式授權的一部分  
->   -   需要您的客戶同意保護 Visual Studio 的條款自己使用者授權合約或整合獨立模式 shell 的程度，為 Microsoft 使用者授權條款，shell 軟體  
+>   - 需要您的客戶同意保護 Visual Studio 的條款自己使用者授權合約或整合獨立模式 shell 的程度，為 Microsoft 使用者授權條款，shell 軟體  
   
 ## <a name="additional-resources"></a>其他資源  
  如需有關可轉散發套件的詳細資訊，請參閱[Visual Studio 擴充性下載](http://go.microsoft.com/fwlink/?LinkID=119298)網站。  

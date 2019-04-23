@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7553bb07e90e690d6409a2ad22636ddc8b627c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 186ca5857d949c7a7a8c90e3e5ec8770705e19cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941216"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104092"
 ---
 # <a name="how-to-start-debugging-xslt"></a>HOW TO：開始偵錯 XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ XSLT 偵錯工具可用於偵錯 XSLT 樣式表或 XSLT 應用程式。 偵錯�
   
 #### <a name="to-start-debugging-from-a-style-sheet"></a>若要從樣式表開始偵錯  
   
-1.  在 [XML 編輯器] 中開啟樣式表。  
+1. 在 [XML 編輯器] 中開啟樣式表。  
   
-2.  選取 **偵錯 XSL**從**XML**功能表。  
+2. 選取 **偵錯 XSL**從**XML**功能表。  
   
 #### <a name="to-start-debugging-from-an-xml-input-document"></a>若要從 XML 輸入文件開始偵錯  
   
-1.  在 XML 編輯器中開啟 XML 文件。  
+1. 在 XML 編輯器中開啟 XML 文件。  
   
-2.  選取 **偵錯 XSL**從**XML**功能表。  
+2. 選取 **偵錯 XSL**從**XML**功能表。  
   
 ## <a name="xslt-from-other-languages"></a>其他語言的 XSLT  
  您還可在偵錯應用程式時逐步執行 XSLT。 當您在 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> 呼叫上按 F11 時，偵錯工具可逐步執行 XSLT 程式碼。  
@@ -44,11 +44,11 @@ XSLT 偵錯工具可用於偵錯 XSLT 樣式表或 XSLT 應用程式。 偵錯�
   
 #### <a name="to-start-debugging-an-xslt-application"></a>開始偵錯 XSLT 應用程式  
   
-1.  當具現化 <xref:System.Xml.Xsl.XslCompiledTransform> 物件時，請在程式碼中將 `enableDebug` 參數設為 `true`。  
+1. 當具現化 <xref:System.Xml.Xsl.XslCompiledTransform> 物件時，請在程式碼中將 `enableDebug` 參數設為 `true`。  
   
      這可在編譯程式碼時，告訴 XSLT 處理器建立偵錯資訊。  
   
-2.  按 F11，以逐步執行 XSLT 程式碼。  
+2. 按 F11，以逐步執行 XSLT 程式碼。  
   
      新文件視窗中會載入 XSLT 樣式表，並啟動 XSLT 偵錯工具。  
   

@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ad3dddec84ac8afc00681171bf59d13205229ca7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 533ad333923edf2e3f55ed5c4e85b42f422a573a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930341"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072366"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>HOW TO：指定技術支援的連結
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "58930341"
   
 ### <a name="to-specify-a-support-url"></a>若要指定的支援 URL  
   
-1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [發佈] 索引標籤。  
+2. 按一下 [發佈] 索引標籤。  
   
-3.  按一下 **選項** 按鈕以開啟**發行選項** 對話方塊。  
+3. 按一下 **選項** 按鈕以開啟**發行選項** 對話方塊。  
   
-4.  按一下 **描述**。  
+4. 按一下 **描述**。  
   
-5.  在 **支援 URL**欄位中，輸入完整的路徑到網站、 網頁或 UNC 共用。  
+5. 在 **支援 URL**欄位中，輸入完整的路徑到網站、 網頁或 UNC 共用。  
   
 ## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   

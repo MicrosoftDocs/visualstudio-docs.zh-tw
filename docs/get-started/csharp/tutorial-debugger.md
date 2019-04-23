@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ba9ff86db64c59d8be581dc778db5ffa6d56f4a
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: cdd82bffcbdbbf4ee176c7ffd643cd920d1c5268
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355655"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790143"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 C# 程式碼進行偵錯
 
@@ -58,7 +58,7 @@ ms.locfileid: "58355655"
 1. 開啟 Visual Studio。
 
     ::: moniker range=">=vs-2019"
-    鍵入 **Ctrl + Q** 來開啟 [搜尋] 方塊，鍵入**主控台**，選擇 [範本]，然後選擇 [建立新的主控台應用程式 (.NET Framework) 專案]。 在出現的對話方塊中鍵入名稱，例如 **get-started-debugging**，然後選擇 [建立]。
+    按 **Esc** 來關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟 [搜尋] 方塊，鍵入**主控台**，選擇 [範本]，然後選擇 [建立新的主控台應用程式 (.NET Framework) 專案]。 在出現的對話方塊中鍵入名稱，例如 **get-started-debugging**，然後選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊左窗格的 [Visual C#] 下，選擇 [Windows Desktop]，然後在中間窗格中選擇 [主控台應用程式 (.NET Framework)]。 然後，鍵入 **get-started-debugging** 之類的名稱，並按一下 [確定]。

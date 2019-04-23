@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f85169ebb6460ac42031aec7c75ff2e29154a9ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944228"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109117"
 ---
 # <a name="content-model-view"></a>內容模型檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 內容模型檢視提供區域和全域結構描述節點及其元件的圖形表示，包括簡單和複雜類型、項目、模型群組、屬性和屬性群組。 XML 註解和處理指示無法在內容模型檢視中檢視。 內容模型檢視包含兩個面板：**工作區**包含中的節點清單的面板[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)，和設計介面，您可以在這裡看到的內容模型的結構描述在 選取的節點**工作區**面板。 內容模型檢視也包含 XML 結構描述設計工具工具列和階層連結列。  
   
  在下列影像中，[工作空間] 面板包含六個結構描述節點。 在 [工作空間] 面板中選取的 `purchaseOrder` 節點會顯示在設計介面中。  
@@ -92,13 +91,13 @@ ms.locfileid: "58944228"
 ## <a name="undoredo"></a>復原/取消復原  
  在內容模型檢視中啟用的復原/取消復原功能可用於下列動作：  
   
--   透過拖放方式加入單一節點。  
+- 透過拖放方式加入單一節點。  
   
--   從結構描述總管的搜尋結果加入多個節點。  
+- 從結構描述總管的搜尋結果加入多個節點。  
   
--   從開始檢視加入節點。  
+- 從開始檢視加入節點。  
   
--   刪除單一或多個節點。  
+- 刪除單一或多個節點。  
   
 ## <a name="zoom"></a>縮放  
  縮放位於內容模型檢視的右下角。  

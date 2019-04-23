@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f6b7796ff4bd8f2b37e50e53d58de66f823ef8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9c82669ac6d4f32f1525b7e14427ed620a51cfc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639657"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102701"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>舊版語言服務中的註解程式碼
 程式設計語言通常能用來標註或註解的程式碼。 註解是一段文字，提供程式碼的其他資訊，但會忽略期間編譯或解譯。
@@ -26,10 +26,9 @@ ms.locfileid: "56639657"
 ## <a name="comment-styles"></a>註解樣式
 有兩種一般的樣式的註解：
 
-1.  行註解，以單行註解的所在。
+1. 行註解，以單行註解的所在。
 
-2.  區塊註解，其中註解可能包含多行。
-
+2. 區塊註解，其中註解可能包含多行。
 
 行註解通常會有起始字元 （或字元），在區塊註解時有開頭和結尾字元。 例如，在 C# 中，行註解的開頭`//`，以及區塊註解的開頭`/*`，並結束`*/`。
 

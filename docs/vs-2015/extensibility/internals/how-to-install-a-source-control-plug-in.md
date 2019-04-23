@@ -11,23 +11,23 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c9c93c83a6385ad45b3f402867b7f7e734447f98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fe03499200d3528a1aed286550191fd9dfcc1451
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039838"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>HOW TO：安裝原始檔控制外掛程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 建立原始檔控制外掛程式包含三個步驟：  
   
-1.  使用這份文件原始檔控制外掛程式 API 參考 > 一節中所定義的函式中建立 DLL。  
+1. 使用這份文件原始檔控制外掛程式 API 參考 > 一節中所定義的函式中建立 DLL。  
   
-2.  實作原始檔控制外掛程式 API 定義的函式。 當[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]呼叫，讓介面和對話方塊可從外掛程式。  
+2. 實作原始檔控制外掛程式 API 定義的函式。 當[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]呼叫，讓介面和對話方塊可從外掛程式。  
   
-3.  藉由適當的登錄項目註冊 DLL。  
+3. 藉由適當的登錄項目註冊 DLL。  
   
 ## <a name="integration-with-visual-studio"></a>與 Visual Studio 整合  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 支援原始檔控制外掛程式符合原始檔控制外掛程式 API。  
@@ -37,7 +37,7 @@ ms.locfileid: "58942321"
   
 ##### <a name="to-register-the-source-control-plug-in-dll"></a>若要註冊的原始檔控制外掛程式的 DLL  
   
-1.  新增在 HKEY_LOCAL_MACHINE 機碼下的兩個項目中指定您的公司名稱的子機碼後面接著您的產品名稱子機碼的軟體子機碼。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\\ *[公司名稱]*\\ *[產品名稱]*\\ *[entry]* = value。 SCCServerName 和 SCCServerPath，一律會呼叫兩個項目。 每一個都是一般的字串。  
+1. 新增在 HKEY_LOCAL_MACHINE 機碼下的兩個項目中指定您的公司名稱的子機碼後面接著您的產品名稱子機碼的軟體子機碼。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\\ *[公司名稱]*\\ *[產品名稱]*\\ *[entry]* = value。 SCCServerName 和 SCCServerPath，一律會呼叫兩個項目。 每一個都是一般的字串。  
   
      例如，如果您的公司名稱是 Microsoft 也是您的原始檔控制產品稱為 SourceSafe，則此登錄路徑會是 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe。 在這個子機碼，第一個項目，SCCServerName，會是使用者可讀的字串命名您的產品。 第二個項目，SCCServerPath，是來源的完整路徑控制 IDE 應該連接至的外掛程式 DLL。 以下提供範例登錄項目：  
   
@@ -49,13 +49,13 @@ ms.locfileid: "58942321"
     > [!NOTE]
     >  SCCServerPath 是 SourceSafe 外掛程式的完整路徑。 您的原始檔控制外掛程式會使用不同的公司和產品名稱，但相同的登錄項目路徑。  
   
-2.  下列選擇性的登錄項目可用來修改您的原始檔控制外掛程式的行為。 這些項目放在相同的子機碼為 SccServerName 和 SccServerPath。  
+2. 下列選擇性的登錄項目可用來修改您的原始檔控制外掛程式的行為。 這些項目放在相同的子機碼為 SccServerName 和 SccServerPath。  
   
-    -   如果您不想您的來源控制隨插即用-單元才會出現在 外掛程式選取範圍清單，就可以使用 HideInVisualStudioregistry 項目[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 此項目也會影響自動切換到原始檔控制外掛程式。 此項目的的可能用法之一是如果您提供的原始碼控制套件，以取代您的原始檔控制外掛程式，但您想要讓使用者從使用原始檔控制外掛程式，以便在原始檔控制套件移轉更容易。 安裝原始檔控制套件時，它會設定此登錄項目，會隱藏外掛程式。  
+    - 如果您不想您的來源控制隨插即用-單元才會出現在 外掛程式選取範圍清單，就可以使用 HideInVisualStudioregistry 項目[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 此項目也會影響自動切換到原始檔控制外掛程式。 此項目的的可能用法之一是如果您提供的原始碼控制套件，以取代您的原始檔控制外掛程式，但您想要讓使用者從使用原始檔控制外掛程式，以便在原始檔控制套件移轉更容易。 安裝原始檔控制套件時，它會設定此登錄項目，會隱藏外掛程式。  
   
          HideInVisualStudio 是 DWORD 值，並設定為 1 來隱藏 外掛程式 或 0，以顯示外掛程式。 如果未出現的登錄項目，預設行為是顯示外掛程式。  
   
-    -   DisableSccManager 登錄項目可以用來停用或隱藏**啟動\<原始檔控制伺服器 >** 通常會出現的功能表選項**檔案** ->  **原始檔控制**子功能表。 選取此功能表選項呼叫[SccRunScc](../../extensibility/sccrunscc-function.md)函式。 您的原始檔控制外掛程式可能不支援外部程式，因此您可能想要停用，或甚至隱藏**啟動**功能表選項。  
+    - DisableSccManager 登錄項目可以用來停用或隱藏**啟動\<原始檔控制伺服器 >** 通常會出現的功能表選項**檔案** ->  **原始檔控制**子功能表。 選取此功能表選項呼叫[SccRunScc](../../extensibility/sccrunscc-function.md)函式。 您的原始檔控制外掛程式可能不支援外部程式，因此您可能想要停用，或甚至隱藏**啟動**功能表選項。  
   
          DisableSccManager 是 DWORD 值設為 0 為啟用**啟動\<原始檔控制伺服器 >** 功能表選項設為 1 可停用功能表選項，並設定為 2，以隱藏功能表選項。 如果未出現此登錄項目，預設行為是顯示的功能表選項。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "58942321"
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio|1|  
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager|1|  
   
-3.  新增子機碼，SourceCodeControlProvider，在軟體子機碼 HKEY_LOCAL_MACHINE 機碼下方。  
+3. 新增子機碼，SourceCodeControlProvider，在軟體子機碼 HKEY_LOCAL_MACHINE 機碼下方。  
   
      在這個子機碼下的登錄項目 ProviderRegKey 設為字串，表示您放置在步驟 1 中的登錄子機碼。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = SOFTWARE\\ *[公司名稱]*\\ *[產品名稱]*。  
   
@@ -77,11 +77,11 @@ ms.locfileid: "58942321"
     > [!NOTE]
     >  您的原始檔控制外掛程式會使用相同的子機碼和項目名稱，但此值將會不同。  
   
-4.  建立子機碼下的 SourceCodeControlProvider 子機碼中，名為 InstalledSCCProviders，並將放置該子機碼下的一個項目。  
+4. 建立子機碼下的 SourceCodeControlProvider 子機碼中，名為 InstalledSCCProviders，並將放置該子機碼下的一個項目。  
   
      此項目的名稱 （如同 SCCServerName 項目指定的值），提供者的使用者可讀名稱且值為，同樣地，在步驟 1 中建立的子機碼。 模式是 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[顯示名稱]* = SOFTWARE\\ *[公司名稱]* \\ *[產品名稱]*。  
   
-     例如：  
+     例如:   
   
     |範例登錄項目|範例值|  
     |---------------------------|------------------|  

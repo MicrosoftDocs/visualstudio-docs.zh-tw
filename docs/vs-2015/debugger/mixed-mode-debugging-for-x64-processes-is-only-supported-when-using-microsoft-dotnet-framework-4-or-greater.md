@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 80a0c6d24bb1954a9d405c2f318dbb44642d1996
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 189e5c622d19ce3e122e01bfbe4b886bd2a830b7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930319"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063383"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>只有使用 Microsoft.NET Framework 4 或更新版本時才支援 x64 處理序的混合模式偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ NET Framework 版本早於 4 不提供支援混合模式偵錯 x64 的處理。 
   
 ### <a name="workarounds"></a>替代解決辦法  
   
--   更新專案，以使用 Microsoft .NET Framework 4 (含) 以後版本。  
+- 更新專案，以使用 Microsoft .NET Framework 4 (含) 以後版本。  
   
      -或-  
   
@@ -42,23 +42,23 @@ NET Framework 版本早於 4 不提供支援混合模式偵錯 x64 的處理。 
   
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>若要將平台變更為 32 位元 (Visual Basic 或 C#)  
   
-1.  在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下 [屬性]。  
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下 [屬性]。  
   
-2.  在屬性頁中，按一下 [編譯] 或 [偵錯] 索引標籤。  
+2. 在屬性頁中，按一下 [編譯] 或 [偵錯] 索引標籤。  
   
-3.  按一下 [平台]，然後從平台清單中選取 [x86]。  
+3. 按一下 [平台]，然後從平台清單中選取 [x86]。  
   
      根據預設，Visual Basic 和 C# 編譯器會產生可在任何 CPU 上執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理序上執行，您必須選擇 [Win32]，而非 [AnyCPU]。  
   
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>若要將平台變更為 32 位元 (C/C++)  
   
-1.  在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下 [屬性]。  
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下 [屬性]。  
   
-2.  在屬性頁中，按一下 [平台]，然後從平台清單中選取 [Win32]。  
+2. 在屬性頁中，按一下 [平台]，然後從平台清單中選取 [Win32]。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   請參閱[設定 SQL 偵錯](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)。  
+- 請參閱[設定 SQL 偵錯](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)

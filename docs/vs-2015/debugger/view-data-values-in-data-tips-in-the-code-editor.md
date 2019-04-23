@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bb42950acf958dbb71877671da57f5ea6fcd6898
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6c6407c038c7d6847db073c1f00c103d9483e78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039111"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>在程式碼編輯器的資料提示中檢視資料值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,34 +52,34 @@ ms.locfileid: "58930245"
   
 ### <a name="to-unpin-a-datatip-and-make-it-float"></a>若要取消固定資料提示方塊並讓它浮動  
   
--   在固定資料提示方塊中，按一下**從來源取消固定**圖示。  
+- 在固定資料提示方塊中，按一下**從來源取消固定**圖示。  
   
      固定圖示會變更為已取消固定的位置。 資料提示方塊現在會浮動在任何開啟視窗的上方。 當偵錯工作階段結束時，浮動的資料提示方塊就會關閉。  
   
 ### <a name="to-repin-a-floating-datatip"></a>若要重新固定浮動的資料提示方塊  
   
--   按一下資料提示方塊中的固定圖示。  
+- 按一下資料提示方塊中的固定圖示。  
   
      固定圖示會變更為已固定的位置。 如果資料提示方塊位在來源視窗外部，則會停用固定圖示，而且無法固定資料提示方塊。  
   
 ### <a name="to-close-a-datatip"></a>若要關閉資料提示方塊  
   
--   將滑鼠指標放在資料提示方塊，然後按一下**關閉**圖示。  
+- 將滑鼠指標放在資料提示方塊，然後按一下**關閉**圖示。  
   
 ### <a name="to-close-all-datatips"></a>若要關閉所有資料提示方塊  
   
--   在 **偵錯**功能表上，按一下**清除所有 DataTips**。  
+- 在 **偵錯**功能表上，按一下**清除所有 DataTips**。  
   
 ### <a name="to-close-all-datatips-for-a-specific-file"></a>若要關閉特定檔案的所有資料提示方塊  
   
--   在 **偵錯**功能表上，按一下**清除所有 DataTips 釘選到***檔案*。  
+- 在 **偵錯**功能表上，按一下**清除所有 DataTips 釘選到***檔案*。  
   
 ## <a name="expanding-and-editing-information"></a>展開和編輯資訊  
  您可以使用資料提示方塊展開陣列、結構或物件，以便檢視其成員。 也可以從資料提示方塊編輯變數值。  
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>若要展開變數以檢視項目  
   
--   在資料提示方塊中，將滑鼠指標放**+** 前面的變數名稱的符號。  
+- 在資料提示方塊中，將滑鼠指標放**+** 前面的變數名稱的符號。  
   
      變數就會展開並以樹狀目錄格式來顯示項目。  
   
@@ -87,16 +87,16 @@ ms.locfileid: "58930245"
   
 #### <a name="to-edit-the-value-of-a-variable-using-a-datatip"></a>若要使用資料提示方塊編輯變數的值  
   
-1.  按一下資料提示方塊中的值。 唯讀值會停用這項功能。  
+1. 按一下資料提示方塊中的值。 唯讀值會停用這項功能。  
   
-2.  輸入新的值，然後按 ENTER 鍵。  
+2. 輸入新的值，然後按 ENTER 鍵。  
   
 ## <a name="making-a-datatip-transparent"></a>讓資料提示方塊變成透明  
  如果您想要看到資料提示方塊後方的程式碼，則可以暫時讓資料提示方塊變成透明。 此選項不適用於固定或浮動的 DataTips。  
   
 #### <a name="to-make-a-datatip-transparent"></a>若要讓資料提示方塊變成透明  
   
--   在資料提示方塊中，按 CTRL 鍵。  
+- 在資料提示方塊中，按 CTRL 鍵。  
   
      只要您按住 CTRL 鍵，資料提示方塊就會維持透明。  
   
@@ -105,7 +105,7 @@ ms.locfileid: "58930245"
   
 #### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>若要使用視覺化檢視來檢視變數的內容  
   
--   按一下放大鏡圖示，以選取資料型別的預設視覺化檢視。  
+- 按一下放大鏡圖示，以選取資料型別的預設視覺化檢視。  
   
      -或-  
   
@@ -118,7 +118,7 @@ ms.locfileid: "58930245"
   
 #### <a name="to-add-a-variable-to-the-watch-window"></a>若要將變數加入至監看式視窗  
   
--   以滑鼠右鍵按一下資料提示方塊，然後按一下**新增監看式**。  
+- 以滑鼠右鍵按一下資料提示方塊，然後按一下**新增監看式**。  
   
      變數會加入至**監看式**視窗。 如果您使用的版本支援多個**監看式**windows 中，變數會加入至**監看式 1。**  
   
@@ -127,19 +127,19 @@ ms.locfileid: "58930245"
   
 #### <a name="to-export-datatips"></a>若要匯出資料提示方塊  
   
-1.  在偵錯 功能表中，按一下**匯出 DataTips**。  
+1. 在偵錯 功能表中，按一下**匯出 DataTips**。  
   
      **匯出 DataTips**  對話方塊隨即出現。  
   
-2.  使用標準檔案技術來瀏覽至您要儲存 XML 檔案中，輸入檔案名稱的位置**檔名**方塊，然後再按一下**確定**。  
+2. 使用標準檔案技術來瀏覽至您要儲存 XML 檔案中，輸入檔案名稱的位置**檔名**方塊，然後再按一下**確定**。  
   
 #### <a name="to-import-datatips"></a>若要匯入資料提示方塊  
   
-1.  在偵錯 功能表中，按一下**匯入 DataTips**。  
+1. 在偵錯 功能表中，按一下**匯入 DataTips**。  
   
      **匯入 DataTips**  對話方塊隨即出現。  
   
-2.  使用對話方塊來尋找您想要開啟，然後按一下 XML 檔案**確定**。  
+2. 使用對話方塊來尋找您想要開啟，然後按一下 XML 檔案**確定**。  
   
 ## <a name="see-also"></a>另請參閱  
  [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   

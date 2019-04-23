@@ -2,7 +2,7 @@
 title: 在 Azure 虛擬機器上使用 Visual Studio
 titleSuffix: ''
 description: 了解如何在 Azure 虛擬機器上使用 Visual Studio
-ms.date: 03/25/2019
+ms.date: 04/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3853d91d6bd473499f47ad47c9d72e708420a1f3
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 669d239aa7c26a99774ce12cdd3e1b43c5d7ccb7
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476016"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866714"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -32,12 +32,12 @@ ms.locfileid: "58476016"
 
 ## <a name="what-configurations-and-versions-are-available"></a>哪些設定和版本可供使用？
 
-您可以在 Azure Marketplace 中找到最新主要版本 (Visual Studio 2017 和 Visual Studio 2015) 的映像。  我們最近新增了即將推出的主要版本：Visual Studio 2019 預覽版支援。  針對每個已發行的主要版本，您都會看見原始發行 (RTW) 版本及最新更新的版本。  這些版本每個都會提供 Visual Studio Enterprise 和 Visual Studio Community 版本。  這些映像每個月至少都會更新一次，以包含最新的 Visual Studio 和 Windows 更新。  雖然映像名稱保持相同，但每個映像的描述都包含安裝的產品版本和映像的「起自」日期。
+您可以在 Azure Marketplace 中找到最新的主要版本映像：Visual Studio 2019、Visual Studio 2017 和 Visual Studio 2015。  針對每個已發行的主要版本，您都會看見原始「發行至網站」(RTW) 的版本及最新更新版本。  這些版本每個都會提供 Visual Studio Enterprise 和 Visual Studio Community 版本。  這些映像每個月至少都會更新一次，以包含最新的 Visual Studio 和 Windows 更新。  雖然映像名稱保持相同，但每個映像的描述都包含安裝的產品版本和映像的「起自」日期。
 
 | 發行版本                                              | 版本                     |     產品版本      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|       Visual Studio 2019：預覽 (RC3)                      |           企業         |    16.0.0 RC3 版    |
-| Visual Studio 2017：最新版本 (版本 15.9)                    |    Enterprise、Community     |      15.9.9 版      |
+|       Visual Studio 2019：RTW                                |    Enterprise、Community     |      16.0.0 版      |
+| Visual Studio 2017：最新版本 (版本 15.9)                    |    Enterprise、Community     |      15.9.10 版     |
 |         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.22 版     |
 |   Visual Studio 2015：最新版本 (Update 3)                      |    Enterprise、Community     |  14.0.25431.01 版   |
 |         Visual Studio 2015：RTW                              |             無             | (維護已過期)  |
@@ -105,7 +105,7 @@ Visual Studio 遵循 Azure 中的「自備授權」模型。 與在專用硬體�
 
 ![透過 Azure 入口網站的 UI 擷取映像](media/capture-vm.png)
 
-(圖 1) 透過 Azure 入口網站的 UI 擷取映像。
+*(圖 1) 透過 Azure 入口網站的 UI 擷取映像。*
 
 如需詳細資訊，請參閱[在 Azure 中建立一般化 VM 的受控映像](/azure/virtual-machines/windows/capture-image-resource)。
 
@@ -121,5 +121,5 @@ Visual Studio 遵循 Azure 中的「自備授權」模型。 與在專用硬體�
 
 您已經了解預先設定的 Visual Studio 映像，下一步是建立新的 VM：
 
-* [使用 Azure 入口網站建立 Windows 虛擬機器](/azure/virtual-machines/windows/quick-create-portal)
+* [透過 Azure 入口網站建立 VM](/azure/virtual-machines/windows/quick-create-portal)
 * [Windows 虛擬機器概觀](/azure/virtual-machines/windows/overview)

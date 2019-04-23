@@ -1,5 +1,5 @@
 ---
-title: Format Specifiers in c + + |Microsoft Docs
+title: Format Specifiers in C++ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,12 +28,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7547f4c675bc7c68c61e86ef61a6285bfb65fb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba950d55dcb4a4a0e1a06b40b1ed00ee3f58e54e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116208"
 ---
 # <a name="format-specifiers-in-c"></a>C++ 中的格式規範
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "58941020"
 >  Visual Studio 原生偵錯工具變更成新的偵錯引擎。 這項變更包括加入一些新的格式規範，以及移除一些舊的格式規範。 當您使用 C++/CLI 執行 Interop (混合原生和 Managed) 偵錯時仍會使用較舊的偵錯工具。 本主題的下列章節說明每個偵錯引擎的格式規範。  
 > 
 > - [格式規範](#BKMK_Visual_Studio_2012_format_specifiers) 描述新偵錯引擎中的格式規範。  
->   -   [使用 C++/CLI 的 Interop 偵錯格式規範](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 描述舊偵錯引擎中的格式規範。  
+>   - [使用 C++/CLI 的 Interop 偵錯格式規範](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 描述舊偵錯引擎中的格式規範。  
   
 ## <a name="using-format-specifiers"></a>使用格式規範  
  如果您有下列程式碼：  
@@ -63,7 +63,7 @@ int main() {
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
-##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 格式規範  
+## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 格式規範  
  下表顯示可在 Visual Studio 中使用的格式規範。 使用 C++/CLI 的 Interop 偵錯不支援粗體的規範。  
   
 |指定名稱|格式|原始的監看值|顯示的值|  
@@ -94,7 +94,7 @@ int main() {
 > [!NOTE]
 >  當 **hv** 格式規範出現時，偵錯工具會嘗試判斷緩衝區的長度並顯示適當的項目數目。 因為偵錯工具不一定能一直找到陣列確切的緩衝區大小，所以您應該盡可能使用大小規範 `(pBuffer,[bufferSize])` 。 **hv** 格式規範是針對緩衝區大小非隨時可用的案例。  
   
-###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> 做為陣列的指標大小規範  
+### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> 做為陣列的指標大小規範  
  如果想要將檢視的物件指標做為陣列，可以使用整數或運算式來指定陣列項目的數量：  
   
 |規範|格式|原始的監看值|顯示的值|  
@@ -103,7 +103,7 @@ int main() {
 |**[exp]**|判斷值為整數的有效 C++ 運算式。|pBuffer,[bufferSize]|PBuffer 顯示為 `bufferSize` 項目的陣列。|  
 |**expand(n)**|判斷值為整數的有效 C++ 運算式|pBuffer，expand(2)|顯示  `pBuffer`的第三個項目|  
   
-##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> 使用 C++/CLI 的 Interop 偵錯格式規範  
+## <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> 使用 C++/CLI 的 Interop 偵錯格式規範  
  偵錯原生和 C++/CLI 程式碼僅支援 **粗體** 的規範。  
   
 |指定名稱|格式|原始的監看值|顯示的值|  
@@ -126,7 +126,7 @@ int main() {
 |wm|Windows 訊息編號|0x0010|WM_CLOSE|  
 |!|未經處理格式，忽略任何資料類型檢視自訂|\<自訂的表示>|4|  
   
-###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 使用 C++/CLI 的 Interop 偵錯中記憶體位置的格式規範  
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 使用 C++/CLI 的 Interop 偵錯中記憶體位置的格式規範  
  下表包含了用於記憶體位置的格式化符號。 您可將記憶體位置規範用於評估結果為位置的任何數值或運算式。  
   
 |符號|格式|原始的監看值|顯示的值|  
@@ -139,7 +139,7 @@ int main() {
 |**mq**|2 個 Quadword|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|2 個位元組的字元 (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> 在使用 C++/CLI 的 Interop 偵錯中做為陣列之指標的大小規範  
+### <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> 在使用 C++/CLI 的 Interop 偵錯中做為陣列之指標的大小規範  
  如果想要將檢視的物件指標做為陣列，可以使用整數來指定陣列項目的數量：  
   
 |指定名稱|格式|運算式|顯示的值|  

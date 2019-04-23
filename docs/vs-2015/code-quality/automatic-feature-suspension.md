@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ab9b6e0ee62bc2506022a853a04871902fa04aad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944161"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045978"
 ---
 # <a name="automatic-feature-suspension"></a>自動功能暫停
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "58944161"
 
  在記憶體不足情況下，會發生下列情況：
 
--   針對 Visual C# 和 Visual Basic 的完整解決方案分析已停用。
+- 針對 Visual C# 和 Visual Basic 的完整解決方案分析已停用。
 
--   [記憶體回收](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9)(GC) Visual C# 和 Visual Basic 的低延遲模式已停用。
+- [記憶體回收](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9)(GC) Visual C# 和 Visual Basic 的低延遲模式已停用。
 
--   Visual Studio 將快取清除。
+- Visual Studio 將快取清除。
 
 ## <a name="improve-visual-studio-performance"></a>改善 Visual Studio 效能
  祕訣和訣竅，如何處理大型解決方案或低記憶體情況時，改善 Visual Studio 效能，請參閱[大型解決方案的效能考量](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)。
@@ -48,11 +48,11 @@ ms.locfileid: "58944161"
 
 Visual Studio 的所有快取會立即清空，但重新擴展，如果您繼續您目前的開發工作階段，或重新啟動 Visual Studio 就會開始。 排清的快取包含下列功能的快取。
 
--   尋找所有參考
+- 尋找所有參考
 
--   巡覽至
+- 巡覽至
 
--   加入 Using
+- 加入 Using
 
 此外，也會清除快取用於 Visual Studio 的內部作業。
 

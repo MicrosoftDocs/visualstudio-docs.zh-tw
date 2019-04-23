@@ -1,5 +1,5 @@
 ---
-title: C + + Core Guidelines 的警告
+title: C++核心的指導方針警告
 ms.date: 08/10/2017
 ms.topic: conceptual
 ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
@@ -8,36 +8,36 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 002a82143ca30e87a8e83f3e7e4b7217ab677f11
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087920"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ Core Guidelines 檢查工具
 
-C + + Core Guidelines 是可攜性的集合的指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。 Visual Studio 目前支援 c + + 做為其程式碼分析工具的一部分，這些規則的子集。 核心指南檢查工具會安裝預設會在 Visual Studio 2017 和 Visual Studio 2019，而且[以 Visual Studio 2015 的 NuGet 套件形式提供](#vs2015_corecheck)。
+C++ Core Guidelines 是可攜性的集合的指導方針、 規則和相關程式碼的最佳做法C++建立C++專家和設計工具。 Visual Studio 目前支援這些規則的子集，適用於其程式碼分析工具的一部分C++。 核心指南檢查工具會安裝預設會在 Visual Studio 2017 和 Visual Studio 2019，而且[以 Visual Studio 2015 的 NuGet 套件形式提供](#vs2015_corecheck)。
 
-## <a name="the-c-core-guidelines-project"></a>C + + Core Guidelines 的專案
+## <a name="the-c-core-guidelines-project"></a>C++核心的專案指導方針
 
-C + + Core Guidelines Bjarne Stroustrup 和其他人所建立，是安全且有效地使用新式 c + + 的指南。 指導方針強調靜態型別安全和資源的安全。 它們會找出方法來消除或是減少最容易出錯的組件的語言，並建議如何簡化您的程式碼，以及更好的效能，可靠的方式。 這些指導方針是由標準 c + + Foundation 維護。 若要進一步了解，請參閱文件中， [c + + Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)，並存取 c + + Core Guidelines 的文件的專案檔上[GitHub](https://github.com/isocpp/CppCoreGuidelines)。
+Bjarne Stroustrup 和其他人所建立的C++Core Guidelines 會使用現代的指南C++安全且有效地。 指導方針強調靜態型別安全和資源的安全。 它們會找出方法來消除或是減少最容易出錯的組件的語言，並建議如何簡化您的程式碼，以及更好的效能，可靠的方式。 這些指導方針會維護由標準C++Foundation。 若要進一步了解，請參閱文件中， [ C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)，並存取C++核心指導方針文件專案檔案[GitHub](https://github.com/isocpp/CppCoreGuidelines)。
 
-## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>啟用程式碼分析的 c + + Core Check 指導方針
+## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>啟用C++Core 檢查程式碼分析中的指導方針
 
 您也可以選取您的專案上啟用程式碼分析**建置時啟用程式碼分析**核取方塊**程式碼分析**一節**屬性頁**對話方塊您的專案。
 
 ![程式碼分析的一般設定 屬性頁](../code-quality/media/cppcorecheck_codeanalysis_general.png)
 
-C + + Core Check 規則是預設的規則集執行時啟用程式碼分析延伸模組。 由於 c + + Core Check 規則在開發期間，某些規則堅實的建立，而某些可能不是可供使用的所有程式碼，但可能仍有幫助。 規則分為兩個群組： 發行和實驗性。 您可以選擇是否要為您的專案屬性中執行的已釋出或實驗性的規則。
+C++ Core 可讓您檢查規則是否為預設值的延伸模組規則集時執行程式碼分析已啟用。 因為C++Core Check 規則正在開發，有些規則全都堅實的建立，和一些可能不是可供使用的所有程式碼，但仍有幫助。 規則分為兩個群組： 發行和實驗性。 您可以選擇是否要為您的專案屬性中執行的已釋出或實驗性的規則。
 
 ![程式碼分析延伸模組設定的屬性頁](../code-quality/media/cppcorecheck_codeanalysis_extensions.png)
 
-若要啟用或停用 c + + Core Check 規則集，請開啟**屬性頁**為您的專案 對話方塊。 底下**組態屬性**，展開**程式碼分析**，**延伸**。 下拉式清單中控制項旁**啟用 c + + Core Check （發行）** 或**啟用 c + + Core Check （實驗性）**，選擇**是**或是**否**。 選擇 **[確定]** 或是**套用**以儲存變更。
+若要啟用或停用C++Core Check 規則集，開啟**屬性頁**對話方塊，為您的專案。 底下**組態屬性**，展開**程式碼分析**，**延伸**。 在下拉式清單中控制項旁**啟用C++Core Check （發行）** 或**啟用C++Core Check （實驗性）**，選擇**是**或**否**. 選擇 **[確定]** 或是**套用**以儲存變更。
 
 ## <a name="examples"></a>範例
 
-以下是一些的 c + + Core Check 規則可以找到問題的範例：
+以下是範例的一些問題，C++可以找到 Core Check 規則：
 
 ```cpp
 // CoreCheckExample.cpp
@@ -58,7 +58,7 @@ int main()
 }
 ```
 
-此範例會示範幾個可以找到的 c + + Core Check 規則的警告：
+這個範例會示範幾個警告，C++可以找到 Core Check 規則：
 
 - C26494 是規則 Type.5:一律初始化物件。
 
@@ -66,7 +66,7 @@ int main()
 
 - C26481 是規則 Bounds.1:請勿使用指標算術。 請改用 `span`。
 
-如果安裝和啟用，當您編譯此程式碼時前, 兩個警告皆為輸出，但會隱藏第三個 c + + Core Check 的程式碼分析規則集。 以下是範例程式碼的組建輸出：
+如果C++安裝及啟用，當您編譯此程式碼時前, 兩個警告皆為輸出，但會隱藏第三個核心檢查的程式碼分析規則集。 以下是範例程式碼的組建輸出：
 
 ```Output
 1>------ Build started: Project: CoreCheckExample, Configuration: Debug Win32 ------
@@ -78,30 +78,29 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-C + + Core Guidelines 是為了幫助您撰寫更好且更安全的程式碼。 不過，如果您有一個規則或設定檔不應該套用的位置執行個體，很容易就能直接在程式碼中隱藏它。 您可以使用`gsl::suppress`讓 c + + Core Check 偵測和報告任何違反規則，以下列程式碼區塊中的屬性。 您可以將標記個別的陳述式，以隱藏特定的規則。 您甚至可以隱藏整個 「 範圍 」 設定檔，藉由撰寫`[[gsl::suppress(bounds)]]`且不包含特定的規則數目。
+C++ Core Guidelines 是否有可協助您撰寫更好且更安全的程式碼。 不過，如果您有一個規則或設定檔不應該套用的位置執行個體，很容易就能直接在程式碼中隱藏它。 您可以使用`gsl::suppress`保留的屬性C++Core Check 偵測與報告任何違反規則，以下列程式碼區塊中。 您可以將標記個別的陳述式，以隱藏特定的規則。 您甚至可以隱藏整個 「 範圍 」 設定檔，藉由撰寫`[[gsl::suppress(bounds)]]`且不包含特定的規則數目。
 
 ## <a name="supported-rule-sets"></a>支援的規則集
 
-當新規則加入至 c + + 核心指南檢查工具時，可能會增加預先存在的程式碼所產生的警告數目。 若要篩選哪些類型的規則，來啟用，您可以使用預先定義的規則集。 截至 Visual Studio 2017 15.3 版，是支援的規則集：
+當新的規則新增至C++核心指導方針檢查程式，針對預先存在的程式碼可能會增加所產生的警告數目。 若要篩選哪些類型的規則，來啟用，您可以使用預先定義的規則集。 截至 Visual Studio 2017 15.3 版，是支援的規則集：
 
-  - **擁有者指標規則**強制[擁有者相關的資源管理檢查\<T > c + + Core guidelines 的](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
+- **擁有者指標規則**強制[擁有者相關的資源管理檢查\<T > 從C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
-  - **常數規則**強制[c + + Core guidelines 的常數相關檢查](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)。
+- **常數規則**強制[常數相關檢查C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)。
 
-  - **原始指標規則**強制[資源管理檢查 c + + Core guidelines 的相關原始指標](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
+- **原始指標規則**強制[資源管理檢查相關原始指標，從C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
-  - **唯一指標規則**強制[資源管理檢查與 c + + Core guidelines 的類型具有唯一指標語意](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
+- **唯一指標規則**強制[資源管理檢查相關型別具有唯一指標語意，從C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
-  - **界限規則**強制[界限的 c + + Core Guidelines 的設定檔](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)。
+- **界限規則**強制[界限的設定檔C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)。
 
-  - **輸入規則**強制[輸入設定檔的 c + + Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)。
+- **輸入規則**強制[輸入設定檔的C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)。
 
-
-您可以選擇限制只有一個或幾個群組的警告。 **原生最小**並**原生建議**規則集包括 c + + Core Check 規則，除了其他 PREfast 的檢查。 若要查看可用規則集，請開啟 [專案屬性] 對話方塊中，選取**程式碼 Analysis\General**，開啟下拉式清單中的**規則集**下拉式方塊中，並挑選**選擇多個規則集**. 如需使用 Visual Studio 中的規則集的詳細資訊，請參閱[使用規則集分組程式碼分析規則](using-rule-sets-to-group-code-analysis-rules.md)。
+您可以選擇限制只有一個或幾個群組的警告。 **原生最小**並**原生建議**規則集包含C++Core Check 規則，除了其他 PREfast 的檢查。 若要查看可用規則集，請開啟 [專案屬性] 對話方塊中，選取**程式碼 Analysis\General**，開啟下拉式清單中的**規則集**下拉式方塊中，並挑選**選擇多個規則集**. 如需使用 Visual Studio 中的規則集的詳細資訊，請參閱[使用規則集分組程式碼分析規則](using-rule-sets-to-group-code-analysis-rules.md)。
 
 ## <a name="macros"></a>巨集
 
-C + + 核心指南檢查工具隨附的標頭檔會定義巨集可讓您更輕鬆地隱藏整個類別的程式碼中的警告：
+C++核心指南檢查工具隨附的標頭檔會定義巨集可讓您更輕鬆地隱藏整個類別的程式碼中的警告：
 
 ```cpp
 ALL_CPPCORECHECK_WARNINGS
@@ -123,7 +122,7 @@ CPPCORECHECK_BOUNDS_WARNINGS
 
 ## <a name="attributes"></a>屬性
 
-Microsoft Visual c + + 編譯器會有有限的支援 GSL 隱藏屬性。 它可用來隱藏在運算式和函式內的區塊陳述式的警告。
+Microsoft VisualC++對 GSL 隱藏屬性，編譯器會有有限的支援。 它可用來隱藏在運算式和函式內的區塊陳述式的警告。
 
 ```cpp
 // Suppress only warnings from the 'r.11' rule in expression.
@@ -151,13 +150,13 @@ Microsoft Visual c + + 編譯器會有有限的支援 GSL 隱藏屬性。 它可
 
 1. 以滑鼠右鍵按一下 [檔案中的**方案總管]**
 
-2. 選擇**屬性 |C / C + + |命令列**
+2. 選擇**屬性 |C /C++|命令列**
 
 3. 在 [**其他選項**] 視窗中，新增`/wd26400`。
 
 您可以使用命令列選項，暫時停用檔案的所有程式碼分析，藉由指定`/analyze-`。 這會產生警告*D9025 覆寫 '/analyze' 與 ' /analyze-'*，這會提醒您，稍後重新啟用程式碼分析。
 
-## <a name="corecheck_per_file"></a> 啟用特定專案檔中，c + + Core 指導方針檢查工具
+## <a name="corecheck_per_file"></a> 啟用C++核心指導方針檢查特定的專案檔
 
 有時候可能蠻有用已取得焦點的執行程式碼分析，仍然繼續利用 Visual Studio IDE。 以下是範例案例可針對大型專案以儲存建置階段，並讓它更容易篩選結果。
 
@@ -165,17 +164,17 @@ Microsoft Visual c + + 編譯器會有有限的支援 GSL 隱藏屬性。 它可
 2. 開啟 Visual Studio，從命令殼層繼承這些變數。
 3. 載入您的專案，並開啟其內容。
 4. 啟用程式碼分析，挑選適當的規則集，但不是啟用程式碼分析延伸模組。
-5. 請移至您想要分析使用 c + + 核心指南檢查工具並開啟其內容的檔案。
-6. 選擇**C / C + + \Command 列選項**並新增 `/analyze:plugin EspXEngine.dll`
-7. 停用的先行編譯標頭 (**C / C + + 標頭 \Precompiled**)。 這是必要的因為延伸模組引擎可能會嘗試從先行編譯標頭讀取其內部的資訊，而且後者以編譯專案的預設選項，如果它不會相容。
-8. 重建專案。 常見的 PREFast 檢查應該執行的所有檔案。 因為預設不啟用 c + + 核心指南檢查工具，它應該只執行上已設定為使用它的檔案。
+5. 移至您想要使用分析的檔案C++核心指南檢查工具並開啟其內容。
+6. 選擇**C /C++\Command 列選項**，並新增 `/analyze:plugin EspXEngine.dll`
+7. 停用的先行編譯標頭 (**C /C++\Precompiled 標頭**)。 這是必要的因為延伸模組引擎可能會嘗試從先行編譯標頭讀取其內部的資訊，而且後者以編譯專案的預設選項，如果它不會相容。
+8. 重建專案。 常見的 PREFast 檢查應該執行的所有檔案。 因為C++預設不啟用核心指南檢查工具，它只應該在設定為使用它的檔案上執行。
 
-## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>如何使用 c + + 核心指南檢查功能，Visual Studio 外部
-您可以使用 c + + Core Guidelines 檢查自動化組建中。
+## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>如何使用C++核心 Visual Studio 外部的指導方針檢查程式
+您可以使用C++Core Guidelines 檢查自動化組建中。
 
 ### <a name="msbuild"></a>MSBuild
 
-原生程式碼分析檢查程式 (PREfast) 已整合到 MSBuild 環境所自訂的目標檔案。 您可以使用專案屬性來啟用它，並新增 c + + 核心指南檢查工具 （此作業取決於 PREfast）：
+原生程式碼分析檢查程式 (PREfast) 已整合到 MSBuild 環境所自訂的目標檔案。 您可以使用專案屬性來啟用它，以及加入C++核心指南檢查工具 （此作業取決於 PREfast）：
 
 ```xml
 <PropertyGroup>
@@ -187,7 +186,7 @@ Microsoft Visual c + + 編譯器會有有限的支援 GSL 隱藏屬性。 它可
 
 請確定您新增這些屬性，才能匯入 Microsoft.Cpp.targets 檔案。 您可以挑選特定的規則集或建立自訂規則集，或使用預設規則集包含其他 PREfast 的檢查。
 
-您也可以使用相同的方法為只在指定的檔案上執行 c + + Core Checker[稍早所述](#corecheck_per_file)，但是使用 MSBuild 檔案。 可以透過設定環境變數`BuildMacro`項目：
+您可以執行C++只有在指定的檔案，使用相同的方法為 Core Checker[稍早所述](#corecheck_per_file)，但是使用 MSBuild 檔案。 可以透過設定環境變數`BuildMacro`項目：
 
 ```xml
 <ItemGroup>
@@ -214,24 +213,24 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 您必須設定一些環境變數，並使用適當的命令列選項，編譯器。 最好是能夠 「 Native Tools 命令提示字元 」 環境下，讓您不需要搜尋特定編譯器的路徑，包括目錄等等。
 
 1. **環境變數**
-   - `set esp.extensions=cppcorecheck.dll` 這會告訴引擎載入的 c + + Core Guidelines 的模組。
-   - `set esp.annotationbuildlevel=ignore` 這會停用邏輯會處理 SAL 註釋。 註解不會影響程式碼分析，在 c + + 核心指南檢查工具，但其處理的時間 （有時很多時間）。 此設定是選擇性的但強烈建議。
+   - `set esp.extensions=cppcorecheck.dll` 這會告訴引擎載入C++Core Guidelines 的模組。
+   - `set esp.annotationbuildlevel=ignore` 這會停用邏輯會處理 SAL 註釋。 註解不會影響程式碼分析，在C++核心指南檢查工具，但其處理接受的時間 （有時很多時間）。 此設定是選擇性的但強烈建議。
    - `set caexcludepath=%include%` 我們強烈建議您停用在標準標頭會引發警告。 您可以新增更多的路徑，例如常見的標頭，在您的專案中的路徑。
 2. **命令列選項**
    - `/analyze`  啟用程式碼分析 (考慮也使用 / 分析： 只和 /analyze: quiet)。
-   - `/analyze:plugin EspXEngine.dll` 此選項會將程式碼分析延伸模組引擎載入 PREfast。 接著，這個引擎會載入 c + + 核心指南檢查工具。
+   - `/analyze:plugin EspXEngine.dll` 此選項會將程式碼分析延伸模組引擎載入 PREfast。 這個引擎會載入C++核心指南檢查工具。
 
 ## <a name="use-the-guideline-support-library"></a>使用指導方針的支援程式庫
 
 指導方針的支援程式庫可協助您遵循核心指導方針。 GSL 包含可讓您以更安全的替代項目取代出錯建構的定義。 例如，您可以取代`T*, length`的參數組`span<T>`型別。 將會位於 GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl)。 程式庫是開放原始碼，因此您可以檢視的來源、 註解，或提供。 專案，請參閱[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。
 
-## <a name="vs2015_corecheck"></a> 在 Visual Studio 2015 專案中使用的 c + + Core Check 指導方針
+## <a name="vs2015_corecheck"></a> 使用C++Core Check Visual Studio 2015 專案中的指導方針
 
-如果您使用 Visual Studio 2015，預設不會安裝 c + + Core Check 的程式碼分析規則集。 您可以啟用 Visual Studio 2015 中的 c + + Core Check 程式碼分析工具之前，您必須執行一些額外的步驟。 Microsoft Visual Studio 2015 專案提供支援，藉由使用 Nuget 套件。 封裝名為 Microsoft.CppCoreCheck，且可在[ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck)。 此封裝需要有至少安裝 Visual Studio 2015 Update 1。
+如果您使用 Visual Studio 2015 中，C++預設不會安裝核心檢查程式碼分析規則集。 您必須執行一些額外的步驟，才能啟用C++Visual Studio 2015 中的核心檢查程式碼分析工具。 Microsoft Visual Studio 2015 專案提供支援，藉由使用 Nuget 套件。 封裝名為 Microsoft.CppCoreCheck，且可在[ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck)。 此封裝需要有至少安裝 Visual Studio 2015 Update 1。
 
 封裝也會安裝為相依性，僅限標頭的指導方針的支援程式庫 (GSL) 另一個套件。 GSL 也是在 GitHub 上的可用[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。
 
-由於程式碼分析規則已載入的方式，您必須安裝到每個您想要檢查 Visual Studio 2015 中的 c + + 專案的 Microsoft.CppCoreCheck NuGet 套件。
+由於程式碼分析規則已載入的方式，您必須安裝 Microsoft.CppCoreCheck NuGet 封裝到每個C++您想要檢查 Visual Studio 2015 中的專案。
 
 ### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>若要將 Microsoft.CppCoreCheck 套件新增至您的專案在 Visual Studio 2015
 
@@ -243,4 +242,4 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 
 3. 選取 Microsoft.CppCoreCheck 封裝，然後選擇**安裝** 按鈕，將規則新增至您的專案。
 
-   NuGet 套件會將您的專案上啟用程式碼分析時，會叫用您專案中的其他的 MSBuild.targets 檔案。 這個.targets 檔案會將 c + + Core Check 規則做為額外的延伸模組加入至 Visual Studio 程式碼分析工具。 安裝套件時，您可以使用 [屬性頁] 對話方塊，啟用或停用發行和實驗性的規則。
+   NuGet 套件會將您的專案上啟用程式碼分析時，會叫用您專案中的其他的 MSBuild.targets 檔案。 此.targets 檔都會將C++Visual Studio 程式碼分析工具的其他延伸模組的 Core Check 規則。 安裝套件時，您可以使用 [屬性頁] 對話方塊，啟用或停用發行和實驗性的規則。

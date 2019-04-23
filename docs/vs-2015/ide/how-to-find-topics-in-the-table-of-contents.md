@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd53eef6cb5dc7b7144375f5d0f6b47e11913ed3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e439521d9a81bc418eb403bb87ee9576605b8e66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778338"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055494"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>HOW TO：在目錄中尋找主題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ ms.locfileid: "54778338"
   
 #### <a name="to-filter-the-toc"></a>篩選目錄  
   
-1.  請選擇 [內容] 索引標籤。  
+1. 請選擇 [內容] 索引標籤。  
   
-2.  在 [篩選內容] 文字方塊中輸入詞彙。  
+2. 在 [篩選內容] 文字方塊中輸入詞彙。  
   
 > [!NOTE]
 >  如果執行篩選條件要花很長的時間，則您可使用 `title:` 進階搜尋運算子來快速顯示結果。  
@@ -48,12 +48,12 @@ ms.locfileid: "54778338"
   
 #### <a name="to-synchronize-the-toc-with-the-topic-window"></a>與主題視窗同步處理目錄  
   
-1.  檢視主題。  
+1. 檢視主題。  
   
-2.  按一下工具列上的 [顯示內容中的主題] 按鈕，或按 Ctrl+S。  
+2. 按一下工具列上的 [顯示內容中的主題] 按鈕，或按 Ctrl+S。  
   
      [內容] 索引標籤隨即開啟，並在目錄中顯示主題的位置。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [尋找資訊](../ide/locate-information.md)   
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

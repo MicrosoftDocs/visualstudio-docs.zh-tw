@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b44c260e00ae5ef8b0d23e7aede139563ff22d98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 36065120dc636f0004f0e00d8b17a0059a680723
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942658"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105587"
 ---
 # <a name="warning-script-debugging-disabled"></a>警告：已停用指令碼偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ ms.locfileid: "58942658"
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>若要在 Internet Explorer 中啟用指令碼偵錯  
   
-1.  在 Internet Explorer 中，從 [工具] 功能表選擇 [網際網路選項]。  
+1. 在 Internet Explorer 中，從 [工具] 功能表選擇 [網際網路選項]。  
   
-2.  在 [網際網路選項] 對話方塊中，按一下 [進階] 索引標籤。  
+2. 在 [網際網路選項] 對話方塊中，按一下 [進階] 索引標籤。  
   
-3.  在 [進階] 索引標籤中，查看 [設定] 方塊下的 [瀏覽] 分類。  
+3. 在 [進階] 索引標籤中，查看 [設定] 方塊下的 [瀏覽] 分類。  
   
-4.  清除 [停用指令碼偵錯 (Internet Explorer)]。  
+4. 清除 [停用指令碼偵錯 (Internet Explorer)]。  
   
-5.  按一下 [確定 **Deploying Office Solutions**]。  
+5. 按一下 [確定] 。  
   
-6.  結束並且重新啟動 Internet Explorer。  
+6. 結束並且重新啟動 Internet Explorer。  
   
      新的設定目前已經生效。  
   

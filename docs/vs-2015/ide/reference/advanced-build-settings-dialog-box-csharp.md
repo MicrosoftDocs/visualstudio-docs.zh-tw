@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4336ef93eded7ed1d56a8ee34fff0189813da17
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bbdbee2043066716cca2646847c42d0878bab385
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763344"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670195"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>進階建置設定對話方塊 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 您可以使用 [專案設計工具] 的 [進階建置設定] 對話方塊，來指定專案的進階組建組態屬性。 此對話方塊只適用於 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 專案。  
   
 ## <a name="general"></a>一般  
@@ -51,7 +50,7 @@ ms.locfileid: "54763344"
   **不要參考 mscorlib.dll**  
   指定是否要將 mscorlib.dll 匯入您的程式，並定義整個 <xref:System> 命名空間。 如果您想要定義或建立自己的 <xref:System> 命名空間和物件，請核取此方塊。 如需詳細資訊，請參閱 [/nostdlib (C# 編譯器選項)](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f)。  
   
-## <a name="output"></a>輸出  
+## <a name="output"></a>Output  
  下列選項可讓您指定進階輸出選項。  
   
  **偵錯資訊**  

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa788fafd7b07f1224bb4abf6bfe527109b3bc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a6ad2051212a943cea805579f0f1ab083af60602
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692646"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057247"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 元素 （Visual Studio 專案範本）
 指定將會加入至專案的資料夾。
@@ -62,7 +62,7 @@ ms.locfileid: "56692646"
 
  您可以使用下列方法之一，將專案項目組織成在範本中的資料夾：
 
--   在範本中包含的資料夾 *.zip*檔案，並將它們新增至專案中 *.vstemplate*藉由指定的路徑中檔案的檔案`ProjectItem`項目，含`Folder`項目。 這是建議的方法。 例如: 
+- 在範本中包含的資料夾 *.zip*檔案，並將它們新增至專案中 *.vstemplate*藉由指定的路徑中檔案的檔案`ProjectItem`項目，含`Folder`項目。 這是建議的方法。 例如：
 
      `...`
 
@@ -72,7 +72,7 @@ ms.locfileid: "56692646"
 
      `...`
 
--   在範本中包含的資料夾 *.zip*檔案，並將它們新增至專案中 *.vstemplate*檔案`Folder`項目。 例如: 
+- 在範本中包含的資料夾 *.zip*檔案，並將它們新增至專案中 *.vstemplate*檔案`Folder`項目。 例如: 
 
      `...`
 
@@ -86,7 +86,7 @@ ms.locfileid: "56692646"
 
      `...`
 
--   在範本中不包含資料夾 *.zip*檔案，但將使用的資料夾新增`TargetFileName`屬性`ProjectItem`項目。 例如: 
+- 在範本中不包含資料夾 *.zip*檔案，但將使用的資料夾新增`TargetFileName`屬性`ProjectItem`項目。 例如: 
 
      `...`
 

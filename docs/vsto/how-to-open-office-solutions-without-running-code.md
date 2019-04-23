@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3074e019a0b18880cd2188868ef86b7ed2b1fb76
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616127"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117196"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>HOW TO：不執行程式碼開啟 Office 方案
   即使使用者的 Office 應用程式中的安全性設定設為 「 高 」，就會執行使用 managed 程式碼擴充功能所建立的 Microsoft Office 方案。 這是因為.NET 組件程式碼安全性由 Microsoft.NET Framework 中，不是由 Microsoft Office。
@@ -36,7 +36,7 @@ ms.locfileid: "56616127"
 
 ## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>若要使用 Shift 鍵，以略過組件
 
--   開啟文件和活頁簿**檔案**按住功能表**Shift**防止 Word 和 Excel 文件開啟時，引發初始化事件的索引鍵。
+- 開啟文件和活頁簿**檔案**按住功能表**Shift**防止 Word 和 Excel 文件開啟時，引發初始化事件的索引鍵。
 
     > [!NOTE]
     >  如果您開啟的文件或活頁簿**快速入門**工作窗格中，按住**Shift**不略過程式碼。 此外，按住 shift 鍵無法防止事件引發之後已開啟的文件。
@@ -45,7 +45,7 @@ ms.locfileid: "56616127"
 
 ## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>略過組件，重新命名或移除方法
 
--   如果您有必要的權限的組件所在的電腦上時，您可以重新命名或移除組件，文件或活頁簿無法找到它。 這會導致每次開啟 Office 文件時引發錯誤。
+- 如果您有必要的權限的組件所在的電腦上時，您可以重新命名或移除組件，文件或活頁簿無法找到它。 這會導致每次開啟 Office 文件時引發錯誤。
 
      如果方案由多人，這個方法會防止對其執行方案。 如果問題位於程式碼或參考的伺服器，而且您想要停止執行中的所有使用者，這可以是很有用。
 

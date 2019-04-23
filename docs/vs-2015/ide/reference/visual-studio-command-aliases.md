@@ -17,16 +17,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0f277ca35552da9deb476d56c15a7b2434463e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763383"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654369"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 別名提供一種在 [尋找/命令] 方塊或 [命令] 視窗中輸入命令的方式，該方式縮短了執行命令所需的文字。 例如，您可以使用預先定義的別名 `>of` (而不是輸入 `>File.OpenFile`)，來顯示 [開啟檔案] 對話方塊。
 
@@ -72,7 +71,7 @@ ms.locfileid: "54763383"
 |[啟動命令](../../ide/reference/start-command.md)|G|Debug.Start|
 |[移至命令](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |移至大括號|GotoBrace|Edit.GotoBrace|
-|F1Help|說明|Help.F1Help|
+|F1Help|Help|Help.F1Help|
 |即時模式|immed|Tools.ImmediateMode|
 |以文字形式插入檔案|InsertFile|Edit.InsertFileAsText|
 |[列出呼叫堆疊命令](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -128,5 +127,5 @@ ms.locfileid: "54763383"
 |列出處理序|&#124;|Debug.ListProcesses|
 |[列出執行緒命令](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)[命令視窗](../../ide/reference/command-window.md)[尋找/命令方塊](../../ide/find-command-box.md)

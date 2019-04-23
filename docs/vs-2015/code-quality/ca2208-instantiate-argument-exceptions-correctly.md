@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ae3bb98e91904debfd3c238e70ce0ff0127e82b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6d7020563d7bcbc794a0d2980a8dcc77c0d98d0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109973"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208:必須正確執行個體化引數例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "58944662"
 ## <a name="cause"></a>原因
  可能的原因包括下列情況：
 
--   例外狀況類型，或衍生自 [System.ArgumentException] 預設 （無參數） 建構函式進行呼叫 (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException?qualifyHint=True&amp;autoUpgrade=True>  -->)。
+- 呼叫例外狀況類型，或衍生自 [System.ArgumentException] （預設 （無參數） 建構函式<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException?qualifyHint=True&amp;autoUpgrade=True>  -->) 來存取它所儲存的值。
 
--   不正確的字串引數傳遞至參數化建構函式的例外狀況型別，或衍生自 [System.ArgumentException。](<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException.?qualifyHint=True&amp;autoUpgrade=True>  -->)
+- 不正確的字串引數傳遞至參數化建構函式的例外狀況型別，或衍生自 [System.ArgumentException。](<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException.?qualifyHint=True&amp;autoUpgrade=True>  -->)
 
 ## <a name="rule-description"></a>規則描述
  而不是呼叫預設建構函式，呼叫其中一個建構函式多載，可讓提供更有意義的例外狀況訊息。 例外狀況訊息應該為目標的開發人員，並清楚地說明錯誤狀況，以及如何修正或避免此例外狀況。

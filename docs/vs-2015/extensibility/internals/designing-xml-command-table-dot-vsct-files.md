@@ -10,12 +10,12 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f83b5e85d02e4427e433a517bbac84dcccaab243
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940111"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085899"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>設計 XML 命令資料表 (。Vsct) 檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -100,19 +100,19 @@ XML 命令表 (.vsct) 檔案描述的版面配置和外觀 VSPackage 的命令�
 ## <a name="vsct-file-design-guidelines"></a>.Vsct 檔的設計指導方針  
  若要成功設計.vsct 檔，請遵循這些指導方針。  
   
--   命令可以放置群組中僅限、 群組只能置於功能表和功能表可以放置只在群組中。 只有功能表會實際顯示在 IDE 中，群組和命令不是。  
+- 命令可以放置群組中僅限、 群組只能置於功能表和功能表可以放置只在群組中。 只有功能表會實際顯示在 IDE 中，群組和命令不是。  
   
--   子功能表不能直接指派至 功能表中，但必須指派給群組，依序指派給一個功能表。  
+- 子功能表不能直接指派至 功能表中，但必須指派給群組，依序指派給一個功能表。  
   
--   命令、 子功能表和群組，都可以指派給一個父群組或使用其定義的指示詞的父欄位的功能表。  
+- 命令、 子功能表和群組，都可以指派給一個父群組或使用其定義的指示詞的父欄位的功能表。  
   
--   組織只會透過指示詞中的父欄位的命令資料表有相當大的限制。 定義物件的指示詞可以採用只有一個父引數。  
+- 組織只會透過指示詞中的父欄位的命令資料表有相當大的限制。 定義物件的指示詞可以採用只有一個父引數。  
   
--   重複使用的命令、 群組或子功能表需要使用新的指示詞，以建立物件的新執行個體有其專屬`GUID:ID`組。  
+- 重複使用的命令、 群組或子功能表需要使用新的指示詞，以建立物件的新執行個體有其專屬`GUID:ID`組。  
   
--   每個`GUID:ID`組必須是唯一的。 重複使用的命令，例如放在功能表上，工具列，或在內容功能表上，由<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。  
+- 每個`GUID:ID`組必須是唯一的。 重複使用的命令，例如放在功能表上，工具列，或在內容功能表上，由<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。  
   
--   命令和子功能表也可以指派多個群組，並使用多個功能表指派給群組[Commands 元素](../../extensibility/commands-element.md)。  
+- 命令和子功能表也可以指派多個群組，並使用多個功能表指派給群組[Commands 元素](../../extensibility/commands-element.md)。  
   
 ## <a name="vsct-file-notes"></a>.Vsct 檔案資訊  
  如果同時進行編譯並將它放在原生的附屬 DLL 之後，您可以進行.vsct 檔的任何變更，您應該執行**devenv.exe /setup /nosetupvstemplates**。 執行此動作會強制在實驗性的登錄，以可重新讀取及描述的內部資料庫中指定的 VSPackage 資源[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]重建。  

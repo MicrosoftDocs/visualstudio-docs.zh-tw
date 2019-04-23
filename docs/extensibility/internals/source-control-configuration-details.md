@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c01c71673640814006fe6771aa841852c247fd54
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: db9a8abb2b1013a7d11a4013d602e33592beff70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965311"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070091"
 ---
 # <a name="source-control-configuration-details"></a>原始檔控制組態的詳細資料
 若要實作原始檔控制，您需要適當地設定您的專案系統或編輯器來執行下列作業：
 
--   要求轉換至已變更狀態的權限
+- 要求轉換至已變更狀態的權限
 
--   權限，才能儲存檔案
+- 權限，才能儲存檔案
 
--   要求權限來新增、 移除或重新命名專案中的檔案
+- 要求權限來新增、 移除或重新命名專案中的檔案
 
 ## <a name="request-permission-to-transition-to-changed-state"></a>要求轉換至已變更狀態的權限
  專案或編輯器必須藉由呼叫要求轉換至已變更 (dirty) 狀態的權限<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>。 實作每個編輯器<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>必須呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>收發核准才可從環境中變更文件，再傳回`True`如<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>。 此專案是本質上的專案檔中，編輯器，並如此一來，已實作之專案檔的狀態變更追蹤，其檔案的文字編輯器一樣的相同責任。 環境會處理已變更的狀態的解決方案，但您必須處理的任何物件參考解決方案，但不會儲存，例如專案檔或其項目已變更的狀態。 一般情況下，如果您的專案或編輯器是負責管理持續性的項目，然後它會負責實作已變更狀態的追蹤。

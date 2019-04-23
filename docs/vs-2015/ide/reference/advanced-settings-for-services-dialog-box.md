@@ -13,17 +13,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a7affd12dceeb8802740b7d0cd502ede051f5ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2565b3b8fd84714693661fcf0cf04961a70d10f9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779132"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652939"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>服務對話方塊的進階設定
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 用戶端應用程式服務簡化了從 Windows Forms 和 Windows Presentation Foundation (WPF) 應用程式對 [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] 登入、角色和設定檔服務的存取。 您可以使用 [專案設計工具] 的 [服務] 頁面來設定用戶端應用程式服務。 如需 [服務] 頁面的詳細資訊，請參閱[專案設計工具、服務頁](../../ide/reference/services-page-project-designer.md)。  
   
  在 [專案設計工具] 中，使用 [服務] 頁面的 [服務的進階設定] 對話方塊，即可設定用戶端應用程式服務的進階設定。 藉由使用這些設定，您可以覆寫一些預設應用程式服務行為，以啟用較少見的案例。 如需詳細資訊，請參閱[用戶端應用程式服務](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)。  
@@ -37,7 +36,7 @@ ms.locfileid: "54779132"
   
 ## <a name="uielement-list"></a>UIElement 清單  
  **在本機儲存密碼雜湊以啟用離線登入**  
- 指定是否將在本機快取加密格式的使用者密碼，以便使用者能在應用程式處於離線模式時登入。 如需詳細資訊，請參閱[＜How to：使用用戶端應用程式服務離線工作](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)。 預設會選取這個選項。  
+ 指定是否將在本機快取加密格式的使用者密碼，以便使用者能在應用程式處於離線模式時登入。 如需詳細資訊，請參閱[如何：使用用戶端應用程式服務離線工作](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)。 預設會選取這個選項。  
   
  **要求使用者在伺服器 Cookie 過期時必須再次登入**  
  指定當應用程式存取角色或設定檔服務時，若伺服器驗證 Cookie 已過期，是否會自動重新驗證先前已驗證過的使用者。 選取此選項可拒絕存取應用程式服務，並要求在 Cookie 過期後進行明確重新驗證。 您可以針對部署在公用位置的應用程式，使用這個選項來確保使用應用程式後讓應用程式繼續執行的使用者，不會無限期地保持已驗證的狀態。 預設會清除這個選項。  
@@ -50,7 +49,7 @@ ms.locfileid: "54779132"
  **使用自訂連接字串**  
  指定用戶端服務提供者是否將使用自訂資料存放區來進行本機快取。 根據預設，服務提供者將使用本機檔案系統來進行快取。 選取此選項將自動以預設連接字串填入文字方塊。 您可以讓預設連接字串繼續自動產生及使用 SQL Server Compact Edition 資料庫，也可以指定現有 SQL Server 資料庫的連接字串。 如需詳細資訊，請參閱[如何：設定用戶端應用程式服務](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)。 預設會清除這個選項。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [用戶端應用程式服務](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)   
  [專案設計工具、服務頁](../../ide/reference/services-page-project-designer.md)   
  [如何：設定用戶端應用程式服務](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   

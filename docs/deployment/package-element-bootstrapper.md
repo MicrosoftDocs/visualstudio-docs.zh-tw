@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da71825596117bed4f5cd9042255a8fa83a0c64
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f20e706dcc94e823446ea0e185881f034fcd7dd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631857"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654577"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;封裝&gt;項目 （啟動載入器）
 `Package`項目是最上層 XML 元素內的封裝檔案。
@@ -143,8 +143,7 @@ ms.locfileid: "56631857"
 ## <a name="elements-and-attributes"></a>元素和屬性
  `Package`是必要元素。 它具有下列屬性。
 
-
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |--------------------| - |
 | `Culture` | 必要項。 定義此套件，用來決定要使用之語言的文化特性。 這個屬性是索引鍵到`Strings`項目，它會列出在安裝期間的產品名稱和錯誤訊息的特定文化特性的字串。 |
 | `Name` | 必要項。 這類顯示開發人員工具內的套件名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這個屬性是索引鍵中的`Strings`項目，其中應包含`String`具有項目`Name`並`Culture`屬性設定為符合`Name`並`Culture`屬性`Package`。 |

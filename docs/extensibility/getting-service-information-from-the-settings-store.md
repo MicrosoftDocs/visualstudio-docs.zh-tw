@@ -8,21 +8,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ed137354ee43b923c5d1508a8c2d5ebe4f754f4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe38bf84510ea247c737477e421db8dbb15f63c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699414"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042637"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>從設定存放區取得服務資訊
 若要尋找所有可用的服務，或判斷是否已安裝特定的服務，您可以使用設定存放區。 您必須知道服務類別的型別。
 
 ## <a name="to-list-the-available-services"></a>若要列出可用的服務
 
-1.  建立 VSIX 專案，名為`FindServicesExtension`，然後新增名為的自訂命令`FindServicesCommand`。 如需如何建立自訂命令的詳細資訊，請參閱[建立具有功能表命令的擴充功能](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. 建立 VSIX 專案，名為`FindServicesExtension`，然後新增名為的自訂命令`FindServicesCommand`。 如需如何建立自訂命令的詳細資訊，請參閱[建立具有功能表命令的擴充功能](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2.  在  *FindServicesCommand.cs*，新增下列 using 陳述式：
+2. 在  *FindServicesCommand.cs*，新增下列 using 陳述式：
 
     ```vb
     using System.Collections.Generic;
@@ -31,7 +31,7 @@ ms.locfileid: "56699414"
     using System.Windows.Forms;
     ```
 
-3.  取得組態設定存放區，然後尋找名為服務的子集合。 這個集合包含所有可用的服務。 在 `MenuItemCommand`方法，移除現有的程式碼，並將它取代為下列：
+3. 取得組態設定存放區，然後尋找名為服務的子集合。 這個集合包含所有可用的服務。 在 `MenuItemCommand`方法，移除現有的程式碼，並將它取代為下列：
 
     ```
     private void MenuItemCallback(object sender, EventArgs e)
@@ -50,9 +50,9 @@ ms.locfileid: "56699414"
     }
     ```
 
-4.  建置此專案並開始偵錯。 實驗執行個體隨即出現。
+4. 建置此專案並開始偵錯。 實驗執行個體隨即出現。
 
-5.  在實驗執行個體，在**工具**功能表上，按一下**叫用 FindServicesCommand**。
+5. 在實驗執行個體，在**工具**功能表上，按一下**叫用 FindServicesCommand**。
 
      您應該會看到列出的所有服務的訊息方塊。
 
@@ -61,7 +61,7 @@ ms.locfileid: "56699414"
 ## <a name="find-a-specific-service"></a>尋找特定的服務
  您也可以使用<xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A>方法，以判斷是否已安裝特定的服務。 您必須知道服務類別的型別。
 
-1.  在您在上一個程序中建立的專案 MenuItemCallback，搜尋 的組態設定存放區`Services`有由服務的 GUID 命名的子集合的集合。 在此情況下我們會說明服務。
+1. 在您在上一個程序中建立的專案 MenuItemCallback，搜尋 的組態設定存放區`Services`有由服務的 GUID 命名的子集合的集合。 在此情況下我們會說明服務。
 
     ```
     private void MenuItemCallback(object sender, EventArgs e)
@@ -76,8 +76,8 @@ ms.locfileid: "56699414"
     }
     ```
 
-2.  建置此專案並開始偵錯。
+2. 建置此專案並開始偵錯。
 
-3.  在實驗執行個體，在**工具**功能表上，按一下**叫用 FindServicesCommand**。
+3. 在實驗執行個體，在**工具**功能表上，按一下**叫用 FindServicesCommand**。
 
      您應該會看到含有文字的訊息**協助服務使用：** 後面 **，則為 True**或**False**。 若要確認這項設定，您可以使用登錄編輯程式，在先前步驟中所示。

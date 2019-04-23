@@ -15,17 +15,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cc4ae6704f59f33de091fe528c7e05898361115
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 18ea294c204f1512aaa3eeae904eed52edf8e9f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941651"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114141"
 ---
 # <a name="configure-service-reference-dialog-box"></a>設定服務參考對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 **設定服務參考** 對話方塊可讓您設定的行為[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]服務。  
   
 > [!NOTE]
@@ -35,17 +34,17 @@ ms.locfileid: "58941651"
   
 ## <a name="task-list"></a>工作清單  
   
--   若要變更裝載 WCF 服務的位址，請在 [位址] 欄位中輸入新位址。  
+- 若要變更裝載 WCF 服務的位址，請在 [位址] 欄位中輸入新位址。  
   
--   若要變更 WCF 用戶端中的類別存取層級，請在 [產生的類別存取層級] 清單中選取存取層級關鍵字。  
+- 若要變更 WCF 用戶端中的類別存取層級，請在 [產生的類別存取層級] 清單中選取存取層級關鍵字。  
   
--   若要以非同步方式呼叫 WCF 服務的方法，請選取 [產生非同步作業] 核取方塊。  
+- 若要以非同步方式呼叫 WCF 服務的方法，請選取 [產生非同步作業] 核取方塊。  
   
--   若要產生 WCF 用戶端的訊息合約類型，請選取 [總是產生訊息合約] 核取方塊。  
+- 若要產生 WCF 用戶端的訊息合約類型，請選取 [總是產生訊息合約] 核取方塊。  
   
--   若要指定 WCF 用戶端的清單或字典集合類型，請從 [集合類型] 和 [字典集合類型] 清單中選取類型。  
+- 若要指定 WCF 用戶端的清單或字典集合類型，請從 [集合類型] 和 [字典集合類型] 清單中選取類型。  
   
--   若要停用類型共用，請清除 [重複使用參考組件中的類型] 核取方塊。 若要針對參考組件的子集啟用類型共用，請選取 [重複使用參考組件中的類型] 核取方塊，然後選取 [重複使用指定的參考組件中的類型]，再從 [參考組件清單] 中選取所需的參考。  
+- 若要停用類型共用，請清除 [重複使用參考組件中的類型] 核取方塊。 若要針對參考組件的子集啟用類型共用，請選取 [重複使用參考組件中的類型] 核取方塊，然後選取 [重複使用指定的參考組件中的類型]，再從 [參考組件清單] 中選取所需的參考。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
  **位址**  

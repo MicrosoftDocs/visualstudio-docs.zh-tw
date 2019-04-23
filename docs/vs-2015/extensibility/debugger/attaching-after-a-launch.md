@@ -10,12 +10,12 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b1f39297c4e87b7d4801b786ca2132acaf366fd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71b26fc2d26e180af25919dde5d3c4ee1bc1f891
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113114"
 ---
 # <a name="attaching-after-a-launch"></a>在啟動後附加
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ ms.locfileid: "58945531"
 ## <a name="design-decisions"></a>設計決策  
  因為通訊是更容易在共用的位址空間內，您必須決定是否較為合理以便或之間偵錯工作階段和德國，DE 與程式之間的通訊。 選擇下列兩者之一：  
   
--   如果較為合理以便偵錯工作階段和裝置之間的通訊，偵錯工作階段就會同時建立 DE 檔案，並要求附加至程式 DE 中。 這可讓偵錯工作階段，以 DE 一起在一個位址空間的執行階段環境與程式一起放在另一個。  
+- 如果較為合理以便偵錯工作階段和裝置之間的通訊，偵錯工作階段就會同時建立 DE 檔案，並要求附加至程式 DE 中。 這可讓偵錯工作階段，以 DE 一起在一個位址空間的執行階段環境與程式一起放在另一個。  
   
--   如果較為合理促進 DE 與程式之間的通訊，然後執行階段環境共同建立 DE。 這會保留在一個位址空間中，SDM DE、 執行階段環境和程式一起放在另一個。 這是典型的規定與解譯器，以執行指令碼的語言實作。  
+- 如果較為合理促進 DE 與程式之間的通訊，然後執行階段環境共同建立 DE。 這會保留在一個位址空間中，SDM DE、 執行階段環境和程式一起放在另一個。 這是典型的規定與解譯器，以執行指令碼的語言實作。  
   
     > [!NOTE]
     >  DE 將附加至程式的方式會視實作而定。 DE 與程式之間的通訊也會視實作而定。  

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa5d123048b819c2b0b92951582bd9348cbdbab6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b447225580505959697e14f0c85855452906aa18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713161"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108850"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 範本資訊清單結構描述參考
 此結構描述會描述 Visual Studio 範本資訊清單的格式 (*.vstman*) Visual Studio 專案或項目範本所產生的檔案。 結構描述也會說明的位置和範本的其他相關資訊。
@@ -28,15 +28,15 @@ ms.locfileid: "56713161"
 
 ### <a name="attributes"></a>屬性
 
--   **版本**:字串，表示範本資訊清單版本。 必要項。
+- **版本**:字串，表示範本資訊清單版本。 必要項。
 
--   **地區設定**:字串，表示範本資訊清單的地區設定的地區設定。 地區設定值套用至所有範本。 您必須使用不同的資訊清單，每個地區設定。 選擇性。
+- **地區設定**:字串，表示範本資訊清單的地區設定的地區設定。 地區設定值套用至所有範本。 您必須使用不同的資訊清單，每個地區設定。 選擇性。
 
 ### <a name="child-elements"></a>子元素
 
--   **VSTemplateContainer**選擇性。
+- **VSTemplateContainer**選擇性。
 
--   **VSTemplateDir**選擇性。
+- **VSTemplateDir**選擇性。
 
 ### <a name="parent-element"></a>父項目
  無。
@@ -49,9 +49,9 @@ ms.locfileid: "56713161"
 
 ### <a name="child-elements"></a>子元素
 
--   **RelativePathOnDisk**:在磁碟上的範本檔案的相對路徑。 此位置也會定義範本的位置在範本樹狀目錄中所示**新的專案**或是**新項目**對話方塊。 如需部署為目錄和個別檔案的範本，此路徑會參考包含範本檔案的目錄。 針對做為部署範本 *.zip*檔案，這個路徑應該是路徑 *.zip*檔案。
+- **RelativePathOnDisk**:在磁碟上的範本檔案的相對路徑。 此位置也會定義範本的位置在範本樹狀目錄中所示**新的專案**或是**新項目**對話方塊。 如需部署為目錄和個別檔案的範本，此路徑會參考包含範本檔案的目錄。 針對做為部署範本 *.zip*檔案，這個路徑應該是路徑 *.zip*檔案。
 
--   **VSTemplateHeader:A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)描述標頭的項目。
+- **VSTemplateHeader:A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)描述標頭的項目。
 
 ### <a name="parent-element"></a>父項目
  **VSTemplateManifest**
@@ -66,13 +66,13 @@ ms.locfileid: "56713161"
 
 ### <a name="child-elements"></a>子元素
 
--   **RelativePath**:範本的路徑。 因此第一個會贏得的所有資訊清單時，則可以是每個路徑，只有一個項目。
+- **RelativePath**:範本的路徑。 因此第一個會贏得的所有資訊清單時，則可以是每個路徑，只有一個項目。
 
--   **LocalizedName**:A **NameDescriptionIcon**項目，指定當地語系化的名稱。 選擇性。
+- **LocalizedName**:A **NameDescriptionIcon**項目，指定當地語系化的名稱。 選擇性。
 
--   **SortOrder**:字串，指定排序次序。 選擇性。
+- **SortOrder**:字串，指定排序次序。 選擇性。
 
--   **ParentFolderOverrideName**:覆寫的父資料夾的名稱。 選擇性。 這個項目具有**名稱**屬性，也就是指定名稱的字串值。
+- **ParentFolderOverrideName**:覆寫的父資料夾的名稱。 選擇性。 這個項目具有**名稱**屬性，也就是指定名稱的字串值。
 
 ### <a name="parent-element"></a>父項目
  **VSTemplateManifest**
@@ -82,9 +82,9 @@ ms.locfileid: "56713161"
 
 ### <a name="attributes"></a>屬性
 
--   **封裝**:字串值，指定套件。 選擇性。
+- **封裝**:字串值，指定套件。 選擇性。
 
--   **識別碼**:字串值，指定識別碼。 選擇性。
+- **識別碼**:字串值，指定識別碼。 選擇性。
 
 ### <a name="child-elements"></a>子元素
  無。

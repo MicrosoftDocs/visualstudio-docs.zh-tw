@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d846385349ad0dbcfe60bdf9b1fd7f1b5db507f
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 505678b52253d1efb21b06a2fb39d5250311167c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476042"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789389"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>完全初學者如何偵錯
 
@@ -85,13 +85,13 @@ ms.locfileid: "58476042"
 1. 開啟 Visual Studio。
 
     ::: moniker range=">=vs-2019"
-    鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入**主控台**，選擇 [範本]，然後選擇 [建立新的主控台應用程式 (.NET Framework)] 或 [建立新的主控台應用程式 (.NET Core)]。 在出現的對話方塊中選擇 [建立]。 鍵入像 **ConsoleApp-FirstApp** 的名稱，並按一下 [建立]。
+    在開始視窗中，選擇 [建立新專案]。 在搜尋方塊中鍵入**主控台**，然後選擇 [主控台應用程式 (.NET Framework)] 或 [主控台應用程式 (.NET Core)]。 選擇 [下一步]。 鍵入例如 **ConsoleApp-FirstApp** 的專案名稱，然後按一下 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新專案] 對話方塊的左窗格中，於 [Visual C#] 下選擇 [主控台應用程式]，然後在中間的窗格中選擇 [主控台應用程式 (.NET Framework)] 或 [主控台應用程式 (.NET Core)]。 鍵入像 **ConsoleApp-FirstApp** 的名稱，並按一下 [確定]。
     ::: moniker-end
 
-    如果您未看到 [主控台應用程式 (.NET Framework)] 或 [主控台應用程式 (.NET Core)] 專案範本，請前往 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 [.NET 桌面開發] 工作負載或 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
+    如未看到**主控台應用程式 (.NET Framework)** 或**主控台應用程式 (.NET Core)** 專案範本，請前往 [工具] > [取得工具與功能] 來開啟 Visual Studio 安裝程式。 選擇 [.NET 桌面開發] 工作負載或 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
     Visual Studio 隨即建立主控台專案，並出現在右窗格的 [方案總管] 中。
 

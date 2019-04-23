@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49636dc4a43d56afe6d9307fc7ec2ddd44a6c37f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2db4cf8a678b6c20693dcc9c1e730d83f0d5ca7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690197"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051332"
 ---
-# <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>偵錯不屬於 Visual Studio 方案的應用程式 (c + +， C#，Visual Basic 中， F#)
+# <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>偵錯不屬於 Visual Studio 方案的應用程式 (C++， C#，Visual Basic 中， F#)
 
 您可能想要偵錯應用程式 (*.exe*檔案)，不是 Visual Studio 方案的一部分。 您或其他人可能已建立 Visual Studio 中，外部應用程式，或您有來自其他地方的應用程式。
 
@@ -35,7 +35,7 @@ ms.locfileid: "56690197"
 
 附加至應用程式需要花費幾秒鐘的手動步驟。 由於此延遲，附加，將不會協助偵錯的啟動問題，或應用程式，不等候使用者輸入時，會很快就結束。
 
-在這些情況下，您就可以建立應用程式，Visual Studio 的 EXE 專案或將它匯入到現有的C#，Visual Basic 或 c + + 方案。 並非所有的程式語言都支援 EXE 專案。
+在這些情況下，您就可以建立應用程式，Visual Studio 的 EXE 專案或將它匯入到現有的C#，Visual Basic 或C++方案。 並非所有的程式語言都支援 EXE 專案。
 
 >[!IMPORTANT]
 >不在 Visual Studio 中建置的應用程式的偵錯功能，都會受到限制是否附加至應用程式，或將它新增至 Visual Studio 方案。
@@ -58,7 +58,7 @@ ms.locfileid: "56690197"
 
 ### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>若要將應用程式匯入現有的 Visual Studio 方案
 
-1.  使用 c + + 中， C#，或選取 Visual Basic 方案在 Visual Studio 中，開啟**檔案** > **新增** > **現有專案**。
+1. 使用C++， C#，或選取 Visual Basic 方案在 Visual Studio 中，開啟**檔案** > **新增** > **現有專案**。
 
 1. 在 **開啟專案**對話方塊中，選取**所有專案檔**，如果尚未選取，請在下拉式清單旁**檔案名稱**。
 

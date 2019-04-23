@@ -27,19 +27,19 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ed7d3a9db7a6bc486ad70236d9e39834c851dd2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 92718187fd8c83eb20ce8b39d323d60434f5f48f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065749"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 偵錯技術
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果您正在偵錯 MFC 程式，這些偵錯技術可能很有幫助。  
   
-##  <a name="BKMK_In_this_topic"></a>本主題內容  
+## <a name="BKMK_In_this_topic"></a>本主題內容  
  [AfxDebugBreak](#BKMK_AfxDebugBreak)  
   
  [TRACE 巨集](#BKMK_The_TRACE_macro)  
@@ -64,7 +64,7 @@ ms.locfileid: "59000771"
   
   - [以選取的模組之偵錯資訊來建置 MFC 應用程式](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
-##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
+## <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
  MFC 提供了一個特殊的 [AfxDebugBreak](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) 函式，可在原始程式碼中直接撰寫 (硬式編碼) 中斷點：  
   
 ```  
@@ -84,7 +84,7 @@ _asm int 3
   
  [本主題內容](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_The_TRACE_macro"></a> TRACE 巨集  
+## <a name="BKMK_The_TRACE_macro"></a> TRACE 巨集  
  若要在偵錯工具 [輸出視窗](../ide/reference/output-window.md)裡顯示程式的訊息，您可以使用 [ATLTRACE](http://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e) 巨集或 MFC [TRACE](http://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) 巨集。 像 [判斷提示](../debugger/c-cpp-assertions.md)一樣，追蹤巨集只有在程式的偵錯版本才會啟動而且在發行版本編譯時會消失。  
   
  下列範例顯示一些您可以使用 **TRACE** 巨集的方式。 就像 `printf`一樣， **TRACE** 巨集可以處理許多引數。  
@@ -117,10 +117,10 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  [本主題內容](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Memory_leak_detection_in_MFC"></a> 在 MFC 偵測記憶體流失  
+## <a name="BKMK_Memory_leak_detection_in_MFC"></a> 在 MFC 偵測記憶體流失  
  MFC 提供類別和函式來偵測已配置但從未解除配置的記憶體。  
   
-###  <a name="BKMK_Tracking_memory_allocations"></a> 追蹤記憶體配置  
+### <a name="BKMK_Tracking_memory_allocations"></a> 追蹤記憶體配置  
  在 MFC 裡，您可以使用 [DEBUG_NEW](http://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) 巨集取代 **new** 運算子來幫助尋找記憶體流失。 在程式的偵錯版本裡， `DEBUG_NEW` 追蹤每個物件所配置的檔案名稱和行號。 當您編譯程式的發行版本時， `DEBUG_NEW` 解析成簡單而不具檔名和行號資訊的 **new** 操作。 因此，在程式的發行版本中不會有速度負擔。  
   
  如果您不要以 `DEBUG_NEW` 取代 **new**來重新編寫整個程式，您可以在原始程式檔裡定義這個巨集：  
@@ -135,7 +135,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  [本主題內容](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Enabling_memory_diagnostics"></a> 啟用記憶體診斷  
+### <a name="BKMK_Enabling_memory_diagnostics"></a> 啟用記憶體診斷  
  您必須在使用記憶體診斷設施之前啟用診斷追蹤。  
   
  **若要啟用或停用記憶體診斷**  
@@ -160,7 +160,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
   [本主題內容](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Taking_memory_snapshots"></a> 擷取記憶體快照  
+### <a name="BKMK_Taking_memory_snapshots"></a> 擷取記憶體快照  
   
 1. 建立 [CMemoryState](http://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 物件並呼叫 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) 成員函式。 這會建立第一個記憶體快照。  
   
@@ -197,7 +197,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
    [本主題內容](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Viewing_memory_statistics"></a> 檢視記憶體統計資料  
+### <a name="BKMK_Viewing_memory_statistics"></a> 檢視記憶體統計資料  
  [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 函式會查看兩個記憶體狀態物件，並偵測開頭和結尾狀態之間任何沒有從堆積解除配置的物件。 在您已擷取記憶體快照並使用 `CMemoryState::Difference`比較這些快照之後，您可以呼叫 [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) 取得沒有解除配置之物件的詳細資訊。  
   
  參考下列範例：  
@@ -232,7 +232,7 @@ Total allocations: 67 bytes
   
  [本主題內容](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Taking_object_dumps"></a> 取得物件傾印  
+### <a name="BKMK_Taking_object_dumps"></a> 取得物件傾印  
  在 MFC 程式中，您可以使用[cmemorystate:: Dumpallobjectssince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)傾印堆積上尚未解除配置的所有物件的描述。 `DumpAllObjectsSince` 會傾印從上一個 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)。 如果沒有發生 `Checkpoint` 呼叫， `DumpAllObjectsSince` 會傾印目前在記憶體的所有物件和非物件。  
   
 > [!NOTE]
@@ -278,7 +278,7 @@ Phone #: 581-0215
   
  [本主題內容](#BKMK_In_this_topic)  
   
-####  <a name="BKMK_Interpreting_memory_dumps"></a> 解譯記憶體傾印  
+#### <a name="BKMK_Interpreting_memory_dumps"></a> 解譯記憶體傾印  
  請看此物件傾印的詳細內容：  
   
 ```  
@@ -361,7 +361,7 @@ Phone #: 581-0215
   
  [本主題內容](#BKMK_In_this_topic)  
   
-####  <a name="BKMK_Customizing_object_dumps"></a> 自訂物件傾印  
+#### <a name="BKMK_Customizing_object_dumps"></a> 自訂物件傾印  
  當您從 [CObject](http://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a)衍生類別時，您可在使用 `Dump` DumpAllObjectsSince [來傾印物件至](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) 輸出視窗 [時，覆寫](../ide/reference/output-window.md)成員函式以提供額外的資訊。  
   
  `Dump` 函式將物件的成員變數的文字表示寫入傾印內容 ([CDumpContext](http://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa))。 傾印內容類似 I/O 資料流。 您可以使用附加運算子 (**<<**) 將資料傳送至 `CDumpContext`。  
@@ -416,7 +416,7 @@ pMyPerson->Dump( afxDump );
   
  [本主題內容](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> 減少 MFC 偵錯組建的大小  
+## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> 減少 MFC 偵錯組建的大小  
  大型 MFC 應用程式的偵錯資訊可能需要大量的磁碟空間。 您可以使用下列其中一項程序縮減大小：  
   
 1. 重建使用 MFC 程式庫[/z7，/Zi，/ZI （偵錯資訊格式）](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)選項，而不是 **/z7**。 這些選項會建置包含整個程式庫的偵錯資訊，以降低重複性並且節省空間的單一程式資料庫 (PDB) 檔。  
@@ -427,7 +427,7 @@ pMyPerson->Dump( afxDump );
   
    [本主題內容](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> 以選取的模組之偵錯資訊來建置 MFC 應用程式  
+### <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> 以選取的模組之偵錯資訊來建置 MFC 應用程式  
  以 MFC 偵錯程式庫建置選取模組，可以讓您在這些模組裡使用逐步執行的方法和其他偵錯設施。 這個程序利用 Visual C++ Makefile 的偵錯和發行模式，因此必要的變更說明如下列步驟 (此外在需要完整發行組建時，「全部重建」是必須的)：  
   
 1. 在 [方案總管] 中選取專案。  
@@ -436,49 +436,49 @@ pMyPerson->Dump( afxDump );
   
 3. 首先，您要建立新專案組態。  
   
-   1.  在 [\<專案> 屬性頁] 對話方塊中，按一下 [組態管理員] 按鈕。  
+   1. 在 [\<專案> 屬性頁] 對話方塊中，按一下 [組態管理員] 按鈕。  
   
-   2.  在 [組態管理員對話方塊](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)裡，在方格中尋找專案。 在 [組態] 一欄中，選取 [\<新增...>]。  
+   2. 在 [組態管理員對話方塊](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)裡，在方格中尋找專案。 在 [組態] 一欄中，選取 [\<新增...>]。  
   
-   3.  在 [新增專案組態對話方塊](http://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)裡，於 [ **專案組態名稱** ] 方塊內輸入新組態的名稱，例如「部分偵錯」。  
+   3. 在 [新增專案組態對話方塊](http://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)裡，於 [ **專案組態名稱** ] 方塊內輸入新組態的名稱，例如「部分偵錯」。  
   
-   4.  在 [ **複製設定值** ] 清單裡，選擇 [ **發行**]。  
+   4. 在 [ **複製設定值** ] 清單裡，選擇 [ **發行**]。  
   
-   5.  按一下 [ **[確定]** 以關閉**新的專案組態**] 對話方塊。  
+   5. 按一下 [ **[確定]** 以關閉**新的專案組態**] 對話方塊。  
   
-   6.  關閉 [ **組態管理員** ] 對話方塊。  
+   6. 關閉 [ **組態管理員** ] 對話方塊。  
   
 4. 現在，您要為整個專案設定選項。  
   
-   1.  在 [ **屬性頁** ] 對話方塊裡，[ **組態屬性** ] 資料夾底下，選取 [ **一般** ] 分類。  
+   1. 在 [ **屬性頁** ] 對話方塊裡，[ **組態屬性** ] 資料夾底下，選取 [ **一般** ] 分類。  
   
-   2.  在專案設計方格裡，展開 [ **專案預設值** ] (如果有需要)。  
+   2. 在專案設計方格裡，展開 [ **專案預設值** ] (如果有需要)。  
   
-   3.  在 [ **專案預設值**] 底下，尋找 [ **MFC 用法**]。 目前的設定會出現在方格的右欄。 按一下目前設定並且將它變更為 [ **使用 MFC 的靜態程式庫**]。  
+   3. 在 [ **專案預設值**] 底下，尋找 [ **MFC 用法**]。 目前的設定會出現在方格的右欄。 按一下目前設定並且將它變更為 [ **使用 MFC 的靜態程式庫**]。  
   
-   4.  在 [ **屬性頁** ] 對話方塊的左窗格裡，開啟 [ **C/C++** ] 資料夾並且選取 [ **前置處理器**]。 在屬性方格裡，尋找 [ **前置處理器定義** ]，並以 "_DEBUG" 取代 "NDEBUG"。  
+   4. 在 [ **屬性頁** ] 對話方塊的左窗格裡，開啟 [ **C/C++** ] 資料夾並且選取 [ **前置處理器**]。 在屬性方格裡，尋找 [ **前置處理器定義** ]，並以 "_DEBUG" 取代 "NDEBUG"。  
   
-   5.  在 [ **屬性頁** ] 對話方塊的左窗格裡，開啟 [ **連結器** ] 資料夾並且選取 [ **輸入** ] 分類。 在屬性方格裡，尋找 [ **其他相依性**]。 在 [ **其他相依性** ] 設定裡，輸入「NAFXCWD.LIB」和「LIBCMT」。  
+   5. 在 [ **屬性頁** ] 對話方塊的左窗格裡，開啟 [ **連結器** ] 資料夾並且選取 [ **輸入** ] 分類。 在屬性方格裡，尋找 [ **其他相依性**]。 在 [ **其他相依性** ] 設定裡，輸入「NAFXCWD.LIB」和「LIBCMT」。  
   
-   6.  按一下 [ **確定** ] 以儲存新組建選項，並且關閉 [ **屬性頁** ] 對話方塊。  
+   6. 按一下 [ **確定** ] 以儲存新組建選項，並且關閉 [ **屬性頁** ] 對話方塊。  
   
 5. 從 [ **建置** ] 功能表選取 [ **重建**]。 這會從模組移除所有的偵錯資訊，但是不會影響 MFC 程式庫。  
   
 6. 現在您必須將偵錯資訊加回至應用程式裡的選取模組。 記住您只能在以偵錯資訊編譯的模組裡設定中斷點並且執行其他偵錯工具功能。 對於您要包含偵錯資訊的每個專案檔，執行下列步驟：  
   
-   1.  在 [方案總管] 裡，開啟位於專案下的 [ **原始程式檔** ] 資料夾。  
+   1. 在 [方案總管] 裡，開啟位於專案下的 [ **原始程式檔** ] 資料夾。  
   
-   2.  選取您要設定偵錯資訊的檔案。  
+   2. 選取您要設定偵錯資訊的檔案。  
   
-   3.  從 [ **檢視** ] 功能表中，選取 [ **屬性頁**]。  
+   3. 從 [ **檢視** ] 功能表中，選取 [ **屬性頁**]。  
   
-   4.  在 [ **屬性頁** ] 對話方塊的 [ **組態設定** ] 資料夾底下，開啟 [ **C/C++** ] 資料夾，然後選取 [ **一般** ] 分類。  
+   4. 在 [ **屬性頁** ] 對話方塊的 [ **組態設定** ] 資料夾底下，開啟 [ **C/C++** ] 資料夾，然後選取 [ **一般** ] 分類。  
   
-   5.  在屬性方格中，尋找 [偵錯資訊格式]。  
+   5. 在屬性方格中，尋找 [偵錯資訊格式]。  
   
-   6.  按一下 [ **偵錯資訊格式** ] 設定並且選取偵錯資訊需要的選項 (通常是 [ **/ZI**])。  
+   6. 按一下 [ **偵錯資訊格式** ] 設定並且選取偵錯資訊需要的選項 (通常是 [ **/ZI**])。  
   
-   7.  如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 若要關閉先行編譯標頭檔，可以變更 [\<專案> 屬性] 對話方塊中的 [建立/使用先行編譯標頭檔] 設定 (依序選取 [組態屬性] 資料夾、[C/C++] 子資料夾、[先行編譯標頭檔] 分類)。  
+   7. 如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 若要關閉先行編譯標頭檔，可以變更 [\<專案> 屬性] 對話方塊中的 [建立/使用先行編譯標頭檔] 設定 (依序選取 [組態屬性] 資料夾、[C/C++] 子資料夾、[先行編譯標頭檔] 分類)。  
   
 7. 從 [ **建置** ] 功能表，選取 [ **建置** ] 來重建過期的專案檔案。  
   

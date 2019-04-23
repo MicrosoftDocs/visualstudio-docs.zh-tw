@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 19191d8812d198b6a72ec8b6bdc8e75ef9d8f4ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941761"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097104"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039:清單為強類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ ms.locfileid: "58941761"
 ## <a name="cause"></a>原因
  公用或受保護的型別會實作<xref:System.Collections.IList?displayProperty=fullName>，但不提供強型別的方法的一個或多個項目：
 
--   IList.Item
+- IList.Item
 
--   IList.Add
+- IList.Add
 
--   IList.Contains
+- IList.Contains
 
--   IList.IndexOf
+- IList.IndexOf
 
--   IList.Insert
+- IList.Insert
 
--   IList.Remove
+- IList.Remove
 
 ## <a name="rule-description"></a>規則描述
  此規則需要<xref:System.Collections.IList>實作提供強類型成員，以便使用者不需要引數轉換<xref:System.Object?displayProperty=fullName>輸入使用時，就提供的功能介面。 <xref:System.Collections.IList>可依索引存取的物件的集合會實作介面。 這項規則假設，實作型別<xref:System.Collections.IList>這麼做以管理比更強型別的執行個體的集合<xref:System.Object>。

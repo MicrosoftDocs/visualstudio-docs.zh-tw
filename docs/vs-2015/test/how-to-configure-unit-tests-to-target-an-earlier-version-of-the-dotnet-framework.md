@@ -8,12 +8,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 68a0c1b707011026d4fe58d86fc187b0152dae3e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e31f0170d10e3b8088ec9860a6bb9a3ad5306b0f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795856"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042650"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>HOW TO：設定以舊版 .NET Framework 為目標的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,64 +50,64 @@ ms.locfileid: "54795856"
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>將 Visual Basic 單元測試專案的目標重定為特定版本的 .NET Framework  
   
-1.  建立新的 Visual Basic 單元測試專案。 在 [檔案] 功能表上，選擇 [新增] 然後選擇 [專案]。  
+1. 建立新的 Visual Basic 單元測試專案。 在 [檔案] 功能表上，選擇 [新增] 然後選擇 [專案]。  
   
      [新增專案] 對話方塊隨即出現。  
   
-2.  在 [已安裝範本] 底下，展開 [Visual Basic]。 選取 [測試]，然後選取 [測試專案] 範本。  
+2. 在 [已安裝範本] 底下，展開 [Visual Basic]。 選取 [測試]，然後選取 [測試專案] 範本。  
   
-3.  在 [名稱] 文字方塊中，輸入 Visual Basic 測試專案的名稱，然後選擇 [確定]。  
+3. 在 [名稱] 文字方塊中，輸入 Visual Basic 測試專案的名稱，然後選擇 [確定]。  
   
-4.  在 [方案總管] 中，從新的 Visual Basic 測試專案的捷徑功能表選擇 [屬性]。  
+4. 在 [方案總管] 中，從新的 Visual Basic 測試專案的捷徑功能表選擇 [屬性]。  
   
      隨即會顯示您的 Visual Basic 測試專案屬性。  
   
-5.  在 [編譯] 索引標籤上選擇 [進階編譯選項]，如下圖所示。  
+5. 在 [編譯] 索引標籤上選擇 [進階編譯選項]，如下圖所示。  
   
      ![進階編譯選項](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
   
-6.  使用 [目標 Framework (所有組態)] 下拉式清單將目標架構變更為 [.NET Framework 3.5] 或是更新版本，如下圖的圖說文字 B 所示。 您不應指定用戶端版本。  
+6. 使用 [目標 Framework (所有組態)] 下拉式清單將目標架構變更為 [.NET Framework 3.5] 或是更新版本，如下圖的圖說文字 B 所示。 您不應指定用戶端版本。  
   
      ![[目標 Framework] 下拉式清單](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>將 Visual C# 單元測試專案的目標重定為特定版本的 .NET Framework  
   
-1.  建立新的 Visual C# 單元測試專案。 在 [檔案] 功能表上，選擇 [新增] 然後選擇 [專案]。  
+1. 建立新的 Visual C# 單元測試專案。 在 [檔案] 功能表上，選擇 [新增] 然後選擇 [專案]。  
   
      [新增專案] 對話方塊隨即出現。  
   
-2.  在 [已安裝範本] 底下，展開 [Visual C#]。 選取 [測試]，然後選取 [測試專案] 範本。  
+2. 在 [已安裝範本] 底下，展開 [Visual C#]。 選取 [測試]，然後選取 [測試專案] 範本。  
   
-3.  在 [名稱] 文字方塊中，輸入 Visual C# 測試專案的名稱，然後選擇 [確定]。  
+3. 在 [名稱] 文字方塊中，輸入 Visual C# 測試專案的名稱，然後選擇 [確定]。  
   
-4.  在 [方案總管] 中，從新的 Visual C# 測試專案的捷徑功能表選擇 [屬性]。  
+4. 在 [方案總管] 中，從新的 Visual C# 測試專案的捷徑功能表選擇 [屬性]。  
   
      隨即會顯示您的 Visual C# 測試專案屬性。  
   
-5.  在 [應用程式] 索引標籤上，選擇 [目標 Framework]，然後從下拉式清單選擇 [.NET Framework 3.5] 或是更新版本來變更目標 Framework，如下圖所示。 您不應指定用戶端版本。  
+5. 在 [應用程式] 索引標籤上，選擇 [目標 Framework]，然後從下拉式清單選擇 [.NET Framework 3.5] 或是更新版本來變更目標 Framework，如下圖所示。 您不應指定用戶端版本。  
   
      ![[目標 Framework] 下拉式清單](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>將 C++/CLI 單元測試專案的目標重定為特定版本的 .NET Framework  
   
-1.  建立新的 C++ 單元測試專案。 在 [檔案] 功能表上，依序按一下 [新增] 和 [專案]。  
+1. 建立新的 C++ 單元測試專案。 在 [檔案] 功能表上，依序按一下 [新增] 和 [專案]。  
   
      [新增專案] 對話方塊隨即出現。  
   
     > [!WARNING]
     >  若要針對 Visual C++ 建置舊版 .NET Framework 的 C++/CLI 單元測試，您必須使用對應版本的 Visual Studio。 例如，若要以 .NET Framework 3.5 為目標，您必須安裝 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] 和 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Service Pack 1。  
   
-2.  在 [已安裝範本] 底下，展開 [Visual C++]。 選取 [測試]，然後選取 [測試專案] 範本。  
+2. 在 [已安裝範本] 底下，展開 [Visual C++]。 選取 [測試]，然後選取 [測試專案] 範本。  
   
-3.  在 [名稱] 文字方塊中，輸入 Visual C++ 測試專案的名稱，然後按一下 [確定]。  
+3. 在 [名稱] 文字方塊中，輸入 Visual C++ 測試專案的名稱，然後按一下 [確定]。  
   
-4.  在 [方案總管] 中，從新的 Visual C++ 測試專案選擇 [卸載專案]。  
+4. 在 [方案總管] 中，從新的 Visual C++ 測試專案選擇 [卸載專案]。  
   
-5.  在 [方案總管] 中，選擇卸載的 Visual C++ 測試專案，然後選擇 [編輯] \< 專案名稱 > [.vcxproj]。  
+5. 在 [方案總管] 中，選擇卸載的 Visual C++ 測試專案，然後選擇 [編輯] \< 專案名稱 > [.vcxproj]。  
   
      .vcxproj 檔案會在編輯器中開啟。  
   
-6.  將標籤為 `"Globals"` 的 `PropertyGroup` 中的 `TargetFrameworkVersion` 設定為版本 3.5 或更新版本。 您不應指定用戶端版本：  
+6. 將標籤為 `"Globals"` 的 `PropertyGroup` 中的 `TargetFrameworkVersion` 設定為版本 3.5 或更新版本。 您不應指定用戶端版本：  
   
     ```  
     <PropertyGroup Label="Globals">  
@@ -121,11 +121,11 @@ ms.locfileid: "54795856"
   
     ```  
   
-7.  儲存並關閉 .vcxproj 檔案。  
+7. 儲存並關閉 .vcxproj 檔案。  
   
-8.  在 [方案總管] 中，從新的 Visual C++ 測試專案的捷徑功能表選取 [重新載入專案]。  
+8. 在 [方案總管] 中，從新的 Visual C++ 測試專案的捷徑功能表選取 [重新載入專案]。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [建立 SharePoint 方案](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
  [建置和偵錯 SharePoint 方案](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   

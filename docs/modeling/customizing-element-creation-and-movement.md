@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b4b2f57485a942877861400aec9ec7d0f13f977
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00026cd53a67a216e126bcc5de92a136a6359331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957607"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043520"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自訂項目的建立和移動
 
@@ -87,9 +87,9 @@ EMD 的責任是決定如何在模型中的特定位置合併物件群組。 特
 
 2. 若要讓使用者合併項目`ExampleElement`圖形，建立新的 EMD 中`ExampleElement`網域類別：
 
-   1.  在  **DSL Explorer**，展開**網域類別**。 以滑鼠右鍵按一下`ExampleElement`，然後按一下 **加入新項目合併指示詞**。
+   1. 在  **DSL Explorer**，展開**網域類別**。 以滑鼠右鍵按一下`ExampleElement`，然後按一下 **加入新項目合併指示詞**。
 
-   2.  請確定**DSL 詳細資料**視窗已開啟，以便您可以看到新的 EMD 的詳細資料。 (功能表：**檢視**，**其他 Windows**， **DSL 詳細資料**。)
+   2. 請確定**DSL 詳細資料**視窗已開啟，以便您可以看到新的 EMD 的詳細資料。 (功能表：**檢視**，**其他 Windows**， **DSL 詳細資料**。)
 
 3. 設定**編製索引類別**在 DSL 詳細資料視窗中，若要定義的項目 」 可合併`ExampleElement`物件。
 
@@ -117,29 +117,29 @@ EMD 的責任是決定如何在模型中的特定位置合併物件群組。 特
 
 5. 測試 DSL:
 
-   1.  按下**F5**重新建置並執行方案。
+   1. 按下**F5**重新建置並執行方案。
 
         重建將需要比平時更長，因為產生的程式碼將會從文字範本，以符合新的 DSL 定義中更新。
 
-   2.  啟動 Visual Studio 的實驗執行個體之後，開啟您的 DSL 的模型檔案。 建立一些範例項目。
+   2. 啟動 Visual Studio 的實驗執行個體之後，開啟您的 DSL 的模型檔案。 建立一些範例項目。
 
-   3.  從拖曳**範例項目**拖曳到現有的圖形工具。
+   3. 從拖曳**範例項目**拖曳到現有的圖形工具。
 
         新圖形隨即出現，並連結至現有的圖形與連接器。
 
-   4.  複製現有的圖形。 選取另一個圖形，並貼上。
+   4. 複製現有的圖形。 選取另一個圖形，並貼上。
 
         會建立一份的第一個圖形。  它具有新名稱，它會連結至第二個的圖形與連接器。
 
 請注意下列幾點，從這個程序：
 
--   藉由建立項目合併指示詞，您可以允許任何要接受任何其他項目的類別。 EMD 建立在接收的網域類別中，而且公認的網域類別是在**編製索引類別**欄位。
+- 藉由建立項目合併指示詞，您可以允許任何要接受任何其他項目的類別。 EMD 建立在接收的網域類別中，而且公認的網域類別是在**編製索引類別**欄位。
 
--   藉由定義路徑，您可以指定哪些連結應該用來將新的項目連接到現有的模型。
+- 藉由定義路徑，您可以指定哪些連結應該用來將新的項目連接到現有的模型。
 
      您指定的連結應包含一個內嵌關聯性。
 
--   EMD 會影響用於建立從 [工具箱] 以及貼上作業。
+- EMD 會影響用於建立從 [工具箱] 以及貼上作業。
 
      如果您撰寫自訂程式碼，會建立新的項目時，您可以明確地使用叫用 EMD`ElementOperations.Merge`方法。 這可確保，您的程式碼連結新項目到模型中的其他作業相同的方式。 如需詳細資訊，請參閱 <<c0> [ 自訂複製行為](../modeling/customizing-copy-behavior.md)。
 
@@ -149,21 +149,21 @@ EMD 中加入自訂程式碼，您可以定義更複雜的合併行為。 這個
 
 ### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>撰寫自訂接受以限制使用者可以新增的程式碼
 
-1.  使用建立的 DSL**最小語言**解決方案範本。 開啟 DSL 定義圖。
+1. 使用建立的 DSL**最小語言**解決方案範本。 開啟 DSL 定義圖。
 
-2.  在 [DSL 總管] 中，展開**網域類別**， `ExampleModel`，**項目合併指示詞**。 選取名為項目合併指示詞`ExampleElement`。
+2. 在 [DSL 總管] 中，展開**網域類別**， `ExampleModel`，**項目合併指示詞**。 選取名為項目合併指示詞`ExampleElement`。
 
      此 EMD 可讓您控制使用者如何建立新`ExampleElement`在模型中，例如藉由從 [工具箱] 拖曳的物件。
 
-3.  在  **DSL 詳細資料**視窗中，選取**使用自訂接受**。
+3. 在  **DSL 詳細資料**視窗中，選取**使用自訂接受**。
 
-4.  重建方案。 這會使比平時更長，因為產生的程式碼將會從模型中更新。
+4. 重建方案。 這會使比平時更長，因為產生的程式碼將會從模型中更新。
 
      建置錯誤會報告，類似於：「 Company.ElementMergeSample.ExampleElement 不會包含定義的 CanMergeExampleElement...」
 
      您必須實作方法`CanMergeExampleElement`。
 
-5.  建立新的程式碼檔案中**Dsl**專案。 其內容取代為下列程式碼，並將您專案的命名空間中的命名空間。
+5. 建立新的程式碼檔案中**Dsl**專案。 其內容取代為下列程式碼，並將您專案的命名空間中的命名空間。
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -192,11 +192,11 @@ EMD 中加入自訂程式碼，您可以定義更複雜的合併行為。 這個
 
     這個簡單的範例中，會限制可以合併至父模型的項目數。 更有趣的情況，此方法可以檢查任何屬性，以及接收物件的連結。 它也可以檢查的屬性合併的項目，位於<xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>。 如需詳細資訊`ElementGroupPrototypes`，請參閱 <<c2> [ 自訂複製行為](../modeling/customizing-copy-behavior.md)。 如需如何撰寫程式碼，讀取模型的詳細資訊，請參閱[巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
-6.  測試 DSL:
+6. 測試 DSL:
 
-    1.  按下**F5**重建解決方案。 開啟 Visual Studio 的實驗執行個體時，請開啟您的 DSL 執行個體。
+    1. 按下**F5**重建解決方案。 開啟 Visual Studio 的實驗執行個體時，請開啟您的 DSL 執行個體。
 
-    2.  以數種方式建立新的項目：
+    2. 以數種方式建立新的項目：
 
         - 從拖曳**範例項目**工具拖曳至圖表。
 
@@ -204,7 +204,7 @@ EMD 中加入自訂程式碼，您可以定義更複雜的合併行為。 這個
 
         - 複製並貼在圖表上的項目。
 
-    3.  請確認您無法使用任何一種方式，將四個以上的項目新增至模型。 這是因為它們都使用項目合併指示詞。
+    3. 請確認您無法使用任何一種方式，將四個以上的項目新增至模型。 這是因為它們都使用項目合併指示詞。
 
 ## <a name="example-adding-custom-merge-code-to-an-emd"></a>範例：合併自訂的程式碼加入至 EMD
 
@@ -218,19 +218,19 @@ EMD 中加入自訂程式碼，您可以定義更複雜的合併行為。 這個
 
 ### <a name="to-override-mergerelate"></a>若要覆寫 MergeRelate
 
-1.  在 DSL 定義中，請確定您已定義您要加入的程式碼的 EMD。 如果您想，您可以新增路徑，並定義自訂接受程式碼，如先前各節中所述。
+1. 在 DSL 定義中，請確定您已定義您要加入的程式碼的 EMD。 如果您想，您可以新增路徑，並定義自訂接受程式碼，如先前各節中所述。
 
-2.  在 DslDefinition 圖表中，選取合併的接收的類別。 通常，它會是一個內嵌關聯性來源端的類別。
+2. 在 DslDefinition 圖表中，選取合併的接收的類別。 通常，它會是一個內嵌關聯性來源端的類別。
 
      例如，在 DSL 產生之最小語言解決方案中，選取`ExampleModel`。
 
-3.  在 **屬性**視窗中，將**產生雙衍生**來**true**。
+3. 在 **屬性**視窗中，將**產生雙衍生**來**true**。
 
-4.  重建方案。
+4. 重建方案。
 
-5.  檢查的內容**Dsl\Generated Files\DomainClasses.cs**。 搜尋方法，名為`MergeRelate`並檢查其內容。 這將協助您撰寫您自己的版本。
+5. 檢查的內容**Dsl\Generated Files\DomainClasses.cs**。 搜尋方法，名為`MergeRelate`並檢查其內容。 這將協助您撰寫您自己的版本。
 
-6.  在新的程式碼檔案中，請撰寫部分類別，為接收的類別並覆寫`MergeRelate`方法。 請務必呼叫基底方法。 例如: 
+6. 在新的程式碼檔案中，請撰寫部分類別，為接收的類別並覆寫`MergeRelate`方法。 請務必呼叫基底方法。 例如：
 
     ```csharp
     partial class ExampleModel

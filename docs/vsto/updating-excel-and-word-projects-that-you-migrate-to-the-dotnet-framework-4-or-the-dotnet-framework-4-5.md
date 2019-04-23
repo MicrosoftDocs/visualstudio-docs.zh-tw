@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6e696211cd5a0260d16c3034307a8d3fce50abd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c1a814e71563f8b31c54fb9caaeb062a505c186e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087246"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 專案
   如果您有使用下列任何功能的 Excel 或 Word 專案，當目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本時，即必須修改程式碼：
@@ -43,14 +43,14 @@ ms.locfileid: "56646105"
 
 ### <a name="to-remove-the-excellocale1033attribute"></a>移除 ExcelLocale1033Attribute
 
-1.  請使用在 Visual Studio 中開啟的專案，開啟 [方案總管] 。
+1. 請使用在 Visual Studio 中開啟的專案，開啟 [方案總管] 。
 
-2.  在 [屬性]  節點 (C#) 或 [我的專案]  節點 (Visual Basic) 下，按兩下 AssemblyInfo 程式碼檔，以在程式碼編輯器中加以開啟。
+2. 在 [屬性]  節點 (C#) 或 [我的專案]  節點 (Visual Basic) 下，按兩下 AssemblyInfo 程式碼檔，以在程式碼編輯器中加以開啟。
 
     > [!NOTE]
     >  在 Visual Basic 專案中，您必須按一下 [方案總管]  中的 [顯示所有檔案]  按鈕，才能查看 AssemblyInfo 程式碼檔。
 
-3.  找出 `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute`，並將它從檔案移除或加以註解化。
+3. 找出 `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute`，並將它從檔案移除或加上註解。
 
     ```vb
     <Assembly: ExcelLocale1033Proxy(True)>
@@ -65,11 +65,11 @@ ms.locfileid: "56646105"
 
 ### <a name="to-remove-the-reference-to-the-excellocal1033proxy-class"></a>移除 ExcelLocal1033Proxy 類別的參考
 
-1.  請在 Visual Studio 中開啟專案，再開啟 [方案總管] 。
+1. 請在 Visual Studio 中開啟專案，再開啟 [方案總管] 。
 
-2.  中**方案總管] 中**，開啟捷徑功能表*ThisAddin.cs* (如C#) 或*ThisAddin.vb* （適用於 Visual Basic 中)，然後選擇 [**檢視程式碼**.
+2. 中**方案總管] 中**，開啟捷徑功能表*ThisAddin.cs* (如C#) 或*ThisAddin.vb* （適用於 Visual Basic 中)，然後選擇 [**檢視程式碼**.
 
-3.  在程式碼編輯器的 `VSTO generated code` 區域中，移除或註解化下列程式碼行。
+3. 在程式碼編輯器的 `VSTO generated code` 區域中，移除或註解化下列程式碼行。
 
     ```vb
     Me.Application = CType(Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy.Wrap(GetType(Excel.Application), Me.Application), Excel.Application)
@@ -81,7 +81,7 @@ ms.locfileid: "56646105"
 
     ```
 
-##  <a name="GetVstoObject"></a> 更新使用 GetVstoObject 和 HasVstoObject 方法的程式碼
+## <a name="GetVstoObject"></a> 更新使用 GetVstoObject 和 HasVstoObject 方法的程式碼
  在以 .NET Framework 3.5 為目標的專案中，`GetVstoObject` 或 `HasVstoObject` 方法在專案下列其中一個原生物件上可用為擴充方法：<xref:Microsoft.Office.Interop.Word.Document>、<xref:Microsoft.Office.Interop.Excel.Workbook>、<xref:Microsoft.Office.Interop.Excel.Worksheet> 或 <xref:Microsoft.Office.Interop.Excel.ListObject>。 當您呼叫這些方法時，不需要傳遞參數。 下列程式碼範例示範如何使用 GetVstoObject 方法中的 Word VSTO 增益集以.NET Framework 3.5 為目標。
 
 ```vb
@@ -122,7 +122,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
 
   如需詳細資訊，請參閱 <<c0> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
-##  <a name="generatedclasses"></a> 更新使用產生的類別的執行個體文件層級專案中的程式碼
+## <a name="generatedclasses"></a> 更新使用產生的類別的執行個體文件層級專案中的程式碼
  在以 .NET Framework 3.5 為目標的文件層級專案中，專案中的產生的類別衍生自 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]的下列類別：
 
 - `ThisDocument`: <xref:Microsoft.Office.Tools.Word.Document>
@@ -162,7 +162,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 
  如果專案重定目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，您必須對程式碼進行下列一種變更：
 
--   修改專案中呼叫 `DoSomethingToSheet` 方法以傳遞 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Base%2A> 物件之 <xref:Microsoft.Office.Tools.Excel.WorksheetBase> 屬性的所有程式碼。 這個屬性會傳回 <xref:Microsoft.Office.Tools.Excel.Worksheet> 物件。
+- 修改專案中呼叫 `DoSomethingToSheet` 方法以傳遞 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Base%2A> 物件之 <xref:Microsoft.Office.Tools.Excel.WorksheetBase> 屬性的所有程式碼。 這個屬性會傳回 <xref:Microsoft.Office.Tools.Excel.Worksheet> 物件。
 
     ```vb
     DoSomethingToSheet(Globals.Sheet1.Base)
@@ -172,7 +172,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
     DoSomethingToSheet(Globals.Sheet1.Base);
     ```
 
--   修改 `DoSomethingToSheet` 方法參數，預期會改為 <xref:Microsoft.Office.Tools.Excel.WorksheetBase> 物件。
+- 修改 `DoSomethingToSheet` 方法參數，預期會改為 <xref:Microsoft.Office.Tools.Excel.WorksheetBase> 物件。
 
     ```vb
     Private Sub DoSomethingToSheet(ByVal worksheet As Microsoft.Office.Tools.Excel.WorksheetBase)
@@ -187,7 +187,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
     }
     ```
 
-##  <a name="winforms"></a> 使用文件上的 Windows Form 控制項的更新程式碼
+## <a name="winforms"></a> 使用文件上的 Windows Form 控制項的更新程式碼
  您必須新增**使用**(C#) 或**匯入**(Visual Basic) 陳述式<xref:Microsoft.Office.Tools.Excel>或是<xref:Microsoft.Office.Tools.Word>加入 Windows 中使用控制項屬性的任何程式碼檔案頂端的命名空間以程式設計方式 form 控制項加入文件或工作表。
 
  在以 .NET Framework 3.5 為目標的專案中，加入 Windows Form 控制項的方法(例如 `AddButton` 方法)，都是在 <xref:Microsoft.Office.Tools.Excel.ControlCollection> 和 <xref:Microsoft.Office.Tools.Word.ControlCollection> 類別中所定義。
@@ -196,7 +196,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 
  如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
-##  <a name="ccevents"></a> 更新處理 Word 內容控制項事件的程式碼
+## <a name="ccevents"></a> 更新處理 Word 內容控制項事件的程式碼
  在以 .NET Framework 3.5 為目標的專案中，Word 內容控制項的事件是由泛型 <xref:System.EventHandler%601> 委派所處理。 在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中，這些事件是由其他委派處理。
 
  下表列出在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中，與它們相關聯的 Word 內容控制項事件和委派。
@@ -210,21 +210,21 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.Exiting>|<xref:Microsoft.Office.Tools.Word.ContentControlExitingEventHandler>|
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|<xref:Microsoft.Office.Tools.Word.ContentControlStoreUpdatingEventHandler>|
 
-##  <a name="ole"></a> 更新使用 OLEObject 和 OLEControl 類別的程式碼
+## <a name="ole"></a> 更新使用 OLEObject 和 OLEControl 類別的程式碼
  在以 .NET Framework 3.5 為目標的專案中，您可以使用 `Microsoft.Office.Tools.Excel.OLEObject` 和 `Microsoft.Office.Tools.Word.OLEControl` 類別，將自訂控制項 (例如 Windows Form 使用者控制項) 加入文件或工作表。
 
  在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中， <xref:Microsoft.Office.Tools.Excel.ControlSite> 和 <xref:Microsoft.Office.Tools.Word.ControlSite> 介面已取代這些類別。 您必須修改原參考 `Microsoft.Office.Tools.Excel.OLEObject` 和 `Microsoft.Office.Tools.Word.OLEControl` 的程式碼，改為參考 <xref:Microsoft.Office.Tools.Excel.ControlSite> 和 <xref:Microsoft.Office.Tools.Word.ControlSite>。 除了新名稱以外，這些控制項的行為方式和它們在以 .NET Framework 3.5 為目標的專案中一樣。
 
  如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
-##  <a name="itemproperty"></a> 更新使用 controls.item （object） 屬性的程式碼
+## <a name="itemproperty"></a> 更新使用 controls.item （object） 屬性的程式碼
  在.NET Framework 3.5 為目標的專案中，您可以使用 Microsoft.Office.Tools.Word.Document.Controls Item(Object) 屬性或`Microsoft.Office.Tools.Excel.Worksheet.Controls`集合來判斷文件或工作表是否有指定的控制項。
 
  專案中的 目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本中，已移除 Item(Object) 屬性從這些集合。 若要判斷文件或工作表是否包含指定的控制項，請使用 Contains(System.Object) 方法<xref:Microsoft.Office.Tools.Word.Document.Controls%2A>或<xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A>集合改為。
 
  如需詳細文件和工作表的控制項集合的相關資訊，請參閱[將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
-##  <a name="collections"></a> 更新使用衍生自 CollectionBase 的集合的程式碼
+## <a name="collections"></a> 更新使用衍生自 CollectionBase 的集合的程式碼
  在.NET Framework 3.5 為目標的專案中，有數個集合中的型別[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]衍生自<xref:System.Collections.CollectionBase>類別，例如`Microsoft.Office.Tools.SmartTagCollection`， `Microsoft.Office.Tools.Excel.ControlCollection`，和`Microsoft.Office.Tools.Word.ControlCollection`。
 
  在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中，這些集合類型現在是非衍生自 <xref:System.Collections.CollectionBase>的介面。 這些集合類型也不再提供某些成員，例如 <xref:System.Collections.CollectionBase.Capacity%2A>、 <xref:System.Collections.CollectionBase.List%2A>和 <xref:System.Collections.CollectionBase.InnerList%2A>。

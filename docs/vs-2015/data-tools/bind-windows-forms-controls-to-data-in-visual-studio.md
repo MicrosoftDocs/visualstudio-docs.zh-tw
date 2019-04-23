@@ -23,16 +23,15 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00435dab8c8f5e6379979a4eb1ada36033dc01e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f2bd51570c8ad1976b6fc9eb5674177f9342833
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943764"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069454"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>將 Windows Forms 控制項繫結至 Visual Studio 中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 您可以藉由將資料繫結至 Windows Forms 應用程式的使用者顯示資料。 若要建立這些資料繫結控制項，您可以將項目從**Zdroje dat**視窗拖曳至 Visual Studio 中的 Windows Form 設計工具。 本主題說明一些最常見的工作、 工具和建立資料繫結 Windows Forms 應用程式所需的類別。
 
@@ -42,21 +41,21 @@ ms.locfileid: "58943764"
 
 ## <a name="in-this-section"></a>本節內容
 
--   [將 Windows Forms 控制項繫結至資料](../data-tools/bind-windows-forms-controls-to-data.md)
+- [將 Windows Forms 控制項繫結至資料](../data-tools/bind-windows-forms-controls-to-data.md)
 
--   [儲存資料前先認可資料繫結控制項上的同處理序編輯](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
+- [儲存資料前先認可資料繫結控制項上的同處理序編輯](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
 
--   [在 Windows Forms 應用程式中建立查閱資料表](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
+- [在 Windows Forms 應用程式中建立查閱資料表](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
 
--   [建立 Windows Form 以搜尋資料](../data-tools/create-a-windows-form-to-search-data.md)
+- [建立 Windows Form 以搜尋資料](../data-tools/create-a-windows-form-to-search-data.md)
 
--   [建立支援簡單資料繫結的 Windows Forms 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
+- [建立支援簡單資料繫結的 Windows Forms 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
 
--   [建立支援複雜資料繫結的 Windows Forms 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
+- [建立支援複雜資料繫結的 Windows Forms 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
 
--   [建立支援查閱資料繫結的 Windows Forms 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
+- [建立支援查閱資料繫結的 Windows Forms 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
 
--   [在表單之間傳遞資料](../data-tools/pass-data-between-forms.md)
+- [在表單之間傳遞資料](../data-tools/pass-data-between-forms.md)
 
 ## <a name="bindingsource-component"></a>BindingSource 元件
  <xref:System.Windows.Forms.BindingSource> 元件有兩種用途。 第一，它提供一個抽象層，當您在表單上的控制項繫結至資料。 在表單上的控制項繫結至<xref:System.Windows.Forms.BindingSource>元件 （而不是正在直接繫結至資料來源）。
@@ -65,11 +64,11 @@ ms.locfileid: "58943764"
 
  如需詳細資訊<xref:System.Windows.Forms.BindingSource>元件，請參閱：
 
--   [BindingSource 元件](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
+- [BindingSource 元件](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
--   [BindingSource 元件概觀](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
+- [BindingSource 元件概觀](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
 
--   [BindingSource 元件架構](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
+- [BindingSource 元件架構](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
 
 ## <a name="bindingnavigator-control"></a>BindingNavigator 控制項
  此元件提供使用者介面瀏覽 Windows 應用程式顯示的資料。 如需詳細資訊，請參閱 [BindingNavigator 控制項](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e)。

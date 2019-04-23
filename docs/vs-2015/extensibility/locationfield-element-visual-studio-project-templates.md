@@ -12,12 +12,12 @@ ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 68e2408c1e6a8fe74c28769a8d4380d4254c6dfe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b28fe0e696b23724758bd877b6031287290f879e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941298"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068778"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 項目 (Visual Studio 專案範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ ms.locfileid: "58941298"
   
  有效的文字值如下：  
   
--   `Enabled`其中指定**位置**的方塊**新的專案** 對話方塊中已啟用。  
+- `Enabled`其中指定**位置**的方塊**新的專案** 對話方塊中已啟用。  
   
--   `Disabled`其中指定**位置**的方塊**新的專案** 對話方塊中已停用。  
+- `Disabled`其中指定**位置**的方塊**新的專案** 對話方塊中已停用。  
   
--   `Hidden`其中指定**位置**的方塊**新的專案**隱藏的對話方塊。  
+- `Hidden`其中指定**位置**的方塊**新的專案**隱藏的對話方塊。  
   
 ## <a name="remarks"></a>備註  
  預設值為 `Enabled`。  

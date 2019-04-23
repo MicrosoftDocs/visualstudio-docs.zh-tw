@@ -20,17 +20,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 13f87f5ffaa255fc2c1c0f53b527ecbbceb8e8ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 001f3a3c74f792fbe3028b6915cb350d359221a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043132"
 ---
 # <a name="insert-new-records-into-a-database"></a>在資料庫中插入新的記錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 若要將新記錄插入資料庫，您可以使用`TableAdapter.Update`方法，或其中一個 TableAdapter 的 DBDirect 方法 (特別是`TableAdapter.Insert`方法)。
   
  如果您的應用程式未使用 TableAdapters，您可以使用命令物件 (例如<xref:System.Data.SqlClient.SqlCommand>) 資料庫中插入新記錄。  
@@ -63,7 +62,7 @@ ms.locfileid: "58943095"
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>將新記錄插入資料庫，使用 TableAdapter.Insert 方法  
   
--   呼叫 TableAdapter 的`Insert`方法，傳遞每個資料行做為參數的值。  
+- 呼叫 TableAdapter 的`Insert`方法，傳遞每個資料行做為參數的值。  
   
     > [!NOTE]
     >  如果您沒有可用的執行個體，具現化您想要使用的 TableAdapter。  
@@ -78,7 +77,7 @@ ms.locfileid: "58943095"
   
 #### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>將新記錄插入資料庫，使用命令物件  
   
--   建立新的命令物件，並將其`Connection`， `CommandType`，和`CommandText`屬性。  
+- 建立新的命令物件，並將其`Connection`， `CommandType`，和`CommandText`屬性。  
   
      [!code-csharp[VbRaddataSaving#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#16)]
      [!code-vb[VbRaddataSaving#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#16)]  

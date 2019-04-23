@@ -15,17 +15,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae2ed3e8a9c07d59f5b1c2fe2350956a54dfaa66
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e0a4a8482dc1c2c66a45902f2f3382b179b46b13
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54761503"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662838"
 ---
 # <a name="list-source-command"></a>列出原始碼命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 顯示指定的原始程式碼程式行。  
   
 ## <a name="syntax"></a>語法  

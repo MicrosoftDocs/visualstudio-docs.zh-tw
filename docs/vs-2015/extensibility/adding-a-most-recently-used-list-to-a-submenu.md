@@ -12,12 +12,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6cf4f94d7459344353261b15552a51d9bb0f09e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3aa3058c20fe0d5697b56adb72769f5f6962da1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086282"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>將最近使用的清單新增至子功能表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,16 +43,16 @@ ms.locfileid: "58941109"
   
 ## <a name="creating-a-dynamic-item-list-command"></a>建立動態項目清單命令  
   
-1.  開啟 TestCommandPackage.vsct。  
+1. 開啟 TestCommandPackage.vsct。  
   
-2.  在`Symbols`區段中`GuidSymbol`節點中名為 guidTestCommandPackageCmdSet，新增的符號`MRUListGroup`群組和`cmdidMRUList`命令，如下所示。  
+2. 在`Symbols`區段中`GuidSymbol`節點中名為 guidTestCommandPackageCmdSet，新增的符號`MRUListGroup`群組和`cmdidMRUList`命令，如下所示。  
   
     ```csharp  
     <IDSymbol name="MRUListGroup" value="0x1200"/>  
     <IDSymbol name="cmdidMRUList" value="0x0200"/>  
     ```  
   
-3.  在 `Groups`區段中，現有的群組項目之後加入宣告的群組。  
+3. 在 `Groups`區段中，現有的群組項目之後加入宣告的群組。  
   
     ```cpp  
     <Group guid="guidTestCommandPackageCmdSet" id="MRUListGroup"   
@@ -62,7 +62,7 @@ ms.locfileid: "58941109"
   
     ```  
   
-4.  在 `Buttons`區段中，新增一個節點，代表新宣告的命令，在現有的按鈕項目之後。  
+4. 在 `Buttons`區段中，新增一個節點，代表新宣告的命令，在現有的按鈕項目之後。  
   
     ```csharp  
     <Button guid="guidTestCommandPackageCmdSet" id="cmdidMRUList"  
@@ -78,32 +78,32 @@ ms.locfileid: "58941109"
   
      `DynamicItemStart`旗標可啟用動態產生的命令。  
   
-5.  建置專案，並開始偵錯來測試新的命令的顯示。  
+5. 建置專案，並開始偵錯來測試新的命令的顯示。  
   
      上**TestMenu**功能表上，按一下 新的子功能表中，**子功能表**，以顯示新的命令**MRU 預留位置**。 在下一個程序中實作命令的動態 MRU 清單之後，此命令標籤將被取代該清單的每次開啟子功能表。  
   
 ## <a name="filling-the-mru-list"></a>填滿 MRU 清單  
   
-1.  在 TestCommandPackageGuids.cs，新增下列行中的現有命令識別碼之後`TestCommandPackageGuids`類別定義。  
+1. 在 TestCommandPackageGuids.cs，新增下列行中的現有命令識別碼之後`TestCommandPackageGuids`類別定義。  
   
     ```csharp  
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file  
     public const uint cmdidMRUList = 0x200;  
     ```  
   
-2.  在 TestCommand.cs 新增下列 using 陳述式。  
+2. 在 TestCommand.cs 新增下列 using 陳述式。  
   
     ```csharp  
     using System.Collections;  
     ```  
   
-3.  最後一個 AddCommand 呼叫之後，TestCommand 建構函式中加入下列程式碼。 `InitMRUMenu`稍後定義  
+3. 最後一個 AddCommand 呼叫之後，TestCommand 建構函式中加入下列程式碼。 `InitMRUMenu`稍後定義  
   
     ```csharp  
     this.InitMRUMenu(commandService);  
     ```  
   
-4.  TestCommand 類別中新增下列程式碼。 此程式碼會初始化字串表示，MRU 清單上顯示的項目的清單。  
+4. TestCommand 類別中新增下列程式碼。 此程式碼會初始化字串表示，MRU 清單上顯示的項目的清單。  
   
     ```csharp  
     private int numMRUItems = 4;  
@@ -127,7 +127,7 @@ ms.locfileid: "58941109"
     }  
     ```  
   
-5.  在後`InitializeMRUList`方法中，新增`InitMRUMenu`方法。 這會初始化 MRU 清單功能表命令。  
+5. 在後`InitializeMRUList`方法中，新增`InitMRUMenu`方法。 這會初始化 MRU 清單功能表命令。  
   
     ```csharp  
     private void InitMRUMenu(OleMenuCommandService mcs)  
@@ -147,7 +147,7 @@ ms.locfileid: "58941109"
   
      MRU 清單中，您必須建立功能表命令物件的每個可能的項目。 IDE 呼叫`OnMRUQueryStatus`MRU 清單，直到沒有更多的項目中的每個項目的方法。 在 managed 程式碼，知道有沒有更多的項目 ide 的唯一方式是先建立所有可能的項目。 如果您想，您可以將標記為不顯示在其他項目第一次使用`mc.Visible = false;`建立功能表命令之後。 這些項目便可看到稍後透過`mc.Visible = true;`在`OnMRUQueryStatus`方法。  
   
-6.  在後`InitMRUMenu`方法中，新增下列`OnMRUQueryStatus`方法。 這是設定每個 MRU 項目文字的處理常式。  
+6. 在後`InitMRUMenu`方法中，新增下列`OnMRUQueryStatus`方法。 這是設定每個 MRU 項目文字的處理常式。  
   
     ```csharp  
     private void OnMRUQueryStatus(object sender, EventArgs e)  
@@ -164,7 +164,7 @@ ms.locfileid: "58941109"
     }  
     ```  
   
-7.  在後`OnMRUQueryStatus`方法中，新增下列`OnMRUExec`方法。 這是選取最近使用項目處理常式。 這個方法會將選取的項目移至清單頂端，然後顯示訊息方塊中的 選取的項目。  
+7. 在後`OnMRUQueryStatus`方法中，新增下列`OnMRUExec`方法。 這是選取最近使用項目處理常式。 這個方法會將選取的項目移至清單頂端，然後顯示訊息方塊中的 選取的項目。  
   
     ```csharp  
     private void OnMRUExec(object sender, EventArgs e)  
@@ -194,16 +194,16 @@ ms.locfileid: "58941109"
   
 #### <a name="to-test-the-mru-menu-list"></a>若要測試 MRU 功能表清單  
   
-1.  建置專案，並開始偵錯  
+1. 建置專案，並開始偵錯  
   
-2.  在  **TestMenu**功能表上，按一下**叫用 TestCommand**。 如此一來，就會顯示訊息方塊，指出命令已選取。  
+2. 在  **TestMenu**功能表上，按一下**叫用 TestCommand**。 如此一來，就會顯示訊息方塊，指出命令已選取。  
   
     > [!NOTE]
     >  此步驟，才能強制載入，並正確地顯示 MRU 清單 VSPackage。 如果您略過此步驟中，MRU 清單將不會顯示。  
   
-3.  在上 **[測試] 功能表**功能表上，按一下**子功能表**。 四個項目清單會顯示子功能表中，以下為分隔符號的結尾。 當您按一下 **項目 3**，應該會出現訊息方塊，並將其顯示文字，也就是 已選取項目 3。 （如果未顯示四個項目清單，請確定您已遵循先前步驟中的指示。）  
+3. 在上 **[測試] 功能表**功能表上，按一下**子功能表**。 四個項目清單會顯示子功能表中，以下為分隔符號的結尾。 當您按一下 **項目 3**，應該會出現訊息方塊，並將其顯示文字，也就是 已選取項目 3。 （如果未顯示四個項目清單，請確定您已遵循先前步驟中的指示。）  
   
-4.  再次開啟子功能表。 請注意，**項目 3**現在位於清單頂端和其他項目已推送向下移動一個位置。 按一下 **項目 3**一次，並注意，訊息方塊仍然會顯示 「 選取項目 3 」，表示文字都已正確地移到新位置，以及命令的標籤。  
+4. 再次開啟子功能表。 請注意，**項目 3**現在位於清單頂端和其他項目已推送向下移動一個位置。 按一下 **項目 3**一次，並注意，訊息方塊仍然會顯示 「 選取項目 3 」，表示文字都已正確地移到新位置，以及命令的標籤。  
   
 ## <a name="see-also"></a>另請參閱  
  [以動態方式加入功能表項目](../extensibility/dynamically-adding-menu-items.md)

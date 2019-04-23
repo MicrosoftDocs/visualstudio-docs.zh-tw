@@ -10,12 +10,12 @@ ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fce793b077460f2c141de0a75d612bb9254f7b3b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dca7768f31219328648d457d188086e0185e2ffc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044368"
 ---
 # <a name="web-site-support-templates"></a>網站支援範本
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,66 +35,66 @@ ms.locfileid: "58945757"
 ## <a name="project-templates"></a>專案範本  
  網站專案範本用來建立新的網站以回應**New Web Site**命令**檔案**功能表。 目前支援三個網站專案類型：  
   
--   空白網站專案  
+- 空白網站專案  
   
--   網站專案  
+- 網站專案  
   
--   Web 服務專案  
+- Web 服務專案  
   
 ### <a name="empty-web-site-projects"></a>空白網站專案  
  這些檔案建立新的空網站，以回應**空網站**命令，之後可供使用指向**新的網站**上**檔案**功能表：  
   
--   EmptyWeb.vstemplate  
+- EmptyWeb.vstemplate  
   
      引導建立新的空白網站範本檔案。  
   
--   EmptyWeb.webproj  
+- EmptyWeb.webproj  
   
      這個檔案是專案範本系統的成品。 它可滿足 EmptyWeb.vstemplate 檔案中的專案檔案參考。  
   
 ### <a name="web-site-projects"></a>網站專案  
  這些檔案建立新的網站，以回應**ASP.NET Web Site**命令，之後可供使用指向**新的網站**上**檔案**功能表：  
   
--   Default.aspx  
+- Default.aspx  
   
      新的網站預設首頁。 Language 屬性會指定程式碼後置的語言和 CodeFile 屬性指定包含此頁面相關聯的程式碼後置程式碼的相依檔案。  
   
--   Default.aspx。*延伸模組*  
+- Default.aspx。*延伸模組*  
   
      包含預設的首頁的程式碼後置程式碼的相依檔案。 程式碼後置語言會決定*延伸模組*此檔案。  
   
--   web.config  
+- web.config  
   
      根 web.site 組態檔中。  
   
--   WebApplication.vstemplate  
+- WebApplication.vstemplate  
   
      範本檔案，會決定內容的網站解決方案，並強制建立的 [App_Data] 資料夾。  
   
--   WebApplication.webproj  
+- WebApplication.webproj  
   
      這個檔案是專案範本系統的成品。 它可滿足 WebApplication.vstemplate 檔案中的專案檔案參考。  
   
 ### <a name="web-service-projects"></a>Web 服務專案  
  這些檔案建立新的網站，以回應**ASP.NET Web 服務**命令，這是在之後，指向**新的網站**上**檔案**功能表：  
   
--   Service.asmx  
+- Service.asmx  
   
      HTML 網頁進行新的 Web 服務。 Language 屬性會指定程式碼後置的語言和程式碼後置屬性指定包含此服務相關聯的程式碼後置程式碼的相依檔案。  
   
--   服務。 *extension*  
+- 服務。 *extension*  
   
      實作服務類別的相依檔案。 程式碼後置語言會決定*延伸模組*此檔案。  
   
--   web.config  
+- web.config  
   
--   根 web.site 組態檔中。  
+- 根 web.site 組態檔中。  
   
--   WebService.vstemplate  
+- WebService.vstemplate  
   
      範本檔案，會決定內容的網站解決方案，並強制 App_Data 和 App_Code 資料夾的建立。 此服務。*延伸模組*檔案複製到 App_Code 資料夾。  
   
--   WebService.webproj  
+- WebService.webproj  
   
      這個檔案是專案範本系統的成品。 它可滿足 WebService.vstemplate 檔案中的專案檔案參考。  
   
@@ -104,33 +104,33 @@ ms.locfileid: "58945757"
 ## <a name="project-item-templates"></a>專案項目範本  
  網站專案項目範本用來將新的網頁新增至網站，以回應**加入現有項目**命令。 目前支援這種網頁：  
   
--   新的類別  
+- 新的類別  
   
--   新的 HTML 網頁  
+- 新的 HTML 網頁  
   
--   新的 Web Form  
+- 新的 Web Form  
   
--   新的主版頁面  
+- 新的主版頁面  
   
 ### <a name="new-class"></a>新的類別  
  此範本會建立新的原始程式檔定義空的類別，以回應**加入新類別**命令。  
   
--   類別。 *extension*  
+- 類別。 *extension*  
   
      實作空的類別原始程式檔。 程式碼後置語言會決定*延伸模組*此檔案。  
   
--   Class.vstemplate  
+- Class.vstemplate  
   
      範本檔案，會建立原始程式檔，並判斷其內容。  
   
 ### <a name="new-html-page"></a>新的 HTML 網頁  
  此範本會建立新的 Web 網頁以回應**加入新的 HTML 網頁**命令。  
   
--   HTMLPage.htm  
+- HTMLPage.htm  
   
      起始網頁的內容。 這個 Web 網頁通常會有任何相關聯的程式碼後置相依檔案。 若要建立智慧型的頁面與相關聯的程式碼後置檔案，請改為使用 Web 表單範本。  
   
--   HTMLPage.vstemplate  
+- HTMLPage.vstemplate  
   
      範本檔案，建立網頁，並判斷其內容。  
   
@@ -141,27 +141,27 @@ ms.locfileid: "58945757"
   
  若要建立所選取的主版頁面的內容頁面，選取**選取的主版頁面**。  
   
--   WebForm.aspx  
+- WebForm.aspx  
   
      起始網頁的內容。 這個 Web 網頁有沒有相關聯的程式碼後置相依檔案。  
   
--   WebForm_cb.aspx  
+- WebForm_cb.aspx  
   
      起始網頁的內容。 這個 Web 網頁有相關聯的程式碼後置相依檔案。  
   
--   程式碼後置。 *extension*  
+- 程式碼後置。 *extension*  
   
      實作 webform 類別的相依檔案。 程式碼後置語言會決定*延伸模組*此檔案。  
   
--   ContentPage.aspx  
+- ContentPage.aspx  
   
      起始網頁做為內容頁面的內容。 這個 Web 網頁有沒有相關聯的程式碼後置相依檔案。  
   
--   ContentPage_cb.aspx  
+- ContentPage_cb.aspx  
   
      起始網頁做為內容頁面的內容。 這個 Web 網頁有相關聯的程式碼後置相依檔案。  
   
--   WebForm.vstemplate  
+- WebForm.vstemplate  
   
      範本檔案會決定新的 web 網頁和其相依的檔案的內容，如果有的話。  
   
@@ -170,19 +170,19 @@ ms.locfileid: "58945757"
   
  若要建立相依的程式碼後置原始程式檔，請選取**程式碼置於個別檔案**。 否則，會建立具有空的指令碼區塊，但沒有單一的 Web 網頁\<%page%> 指示詞來連結相依檔案。  
   
--   MasterPage.master  
+- MasterPage.master  
   
      主版頁面的起始內容。 此主版頁面都有沒有相關聯的程式碼後置的相依檔案。  
   
--   MasterPage_cb.master  
+- MasterPage_cb.master  
   
      主版頁面的起始內容。 此主版頁面都有一個相關聯的程式碼後置的相依檔案。  
   
--   程式碼後置。*延伸模組*  
+- 程式碼後置。*延伸模組*  
   
      實作的主版頁面類別的相依檔案。 程式碼後置語言會決定*延伸模組*此檔案。  
   
--   MasterPage.vstemplate  
+- MasterPage.vstemplate  
   
      範本檔案會決定新的主版頁面和其相依的檔案的內容，如果有的話。  
   

@@ -14,17 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f230a2270274f85fd799f86caa278bb98cb5fd46
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4ef58a39f1ff96a3c72cbb5a48940e378997cbca
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54772231"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664478"
 ---
 # <a name="replace-command"></a>取代命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用在 [尋找和取代] 視窗 [檔案中取代] 索引標籤提供的選項子集，取代檔案中的文字。  
   
 ## <a name="syntax"></a>語法  

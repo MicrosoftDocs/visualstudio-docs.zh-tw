@@ -1,5 +1,5 @@
 ---
-title: C/c + + 判斷提示 |Microsoft Docs
+title: C /C++判斷提示 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,17 +28,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 8e2d416bd932f1334468bfb3d43e050b3e71d2ec
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628321"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653719"
 ---
 # <a name="cc-assertions"></a>C/C++ 判斷提示
 判斷提示陳述式會指定您預期要在程式中的某一點，則為 true 的條件。 如果該條件不成立，判斷提示失敗，將會中斷程式執行，而[判斷提示失敗對話方塊](../debugger/assertion-failed-dialog-box.md)隨即出現。
 
-Visual c + + 支援下列建構為基礎的判斷提示陳述式：
+視覺化C++支援下列建構為基礎的判斷提示陳述式：
 
 - MFC 程式的 MFC 判斷提示。
 
@@ -46,7 +46,7 @@ Visual c + + 支援下列建構為基礎的判斷提示陳述式：
 
 - 使用 C 執行階段程式庫的程式的 CRT 判斷提示。
 
-- ANSI [assert 函式](/cpp/c-runtime-library/reference/assert-macro-assert-wassert)其他 C/c + + 程式。
+- ANSI [assert 函式](/cpp/c-runtime-library/reference/assert-macro-assert-wassert)適用於其他 C /C++程式。
 
   若要攔截邏輯錯誤，檢查作業的結果及測試應該已處理的錯誤狀況，您可以使用判斷提示。
 
@@ -105,7 +105,6 @@ VERIFY ( myFnctn(0)==1 ) // safe
 
 ## <a name="BKMK_CRT_assertions"></a> CRT 的判斷提示
 CRTDBG。H 標頭檔會定義[_ASSERT 和 _ASSERTE 巨集](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros)判斷提示檢查。
-
 
 | 巨集 | 結果 |
 |------------| - |
@@ -338,7 +337,7 @@ _ASSERT(!myErr); // Don't do this, either!
 
 [本主題內容](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯機器碼](../debugger/debugging-native-code.md)

@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c87f44dd12724c694fc27bae985f5f7fb617e45c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a50b298dfafe093e404c6575b16a074d106522ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940646"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103429"
 ---
 # <a name="exposing-types-to-visual-designers"></a>將類型公開至視覺化設計工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ ms.locfileid: "58940646"
   
  利用暫時的 PE 支援的自訂工具必須遵循下列規則：  
   
--   `GeneratesDesignTimeSource` 必須設定為 1 的登錄中。  
+- `GeneratesDesignTimeSource` 必須設定為 1 的登錄中。  
   
      不程式可執行檔會進行編譯而不需要這項設定。  
   
--   產生的程式碼必須位於相同的通用專案設定的語言。  
+- 產生的程式碼必須位於相同的通用專案設定的語言。  
   
      不論什麼自訂工具會回報為要求的擴充功能，在編譯 temporary PE<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>前提`GeneratesDesignTimeSource`在登錄中設定為 1。 擴充功能不需要是.vb、.cs 或.jsl;它可以是任何擴充功能。  
   
--   自訂工具產生的程式碼必須有效，且它必須編譯時間在它自己使用只存在於專案中參考的組<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>完成執行。  
+- 自訂工具產生的程式碼必須有效，且它必須編譯時間在它自己使用只存在於專案中參考的組<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>完成執行。  
   
      Temporary PE 編譯時，只提供給編譯器的原始程式檔就會是自訂工具輸出。 因此，使用暫存的 PE 的自訂工具必須產生可以獨立於其他檔案專案中編譯的輸出檔。  
   

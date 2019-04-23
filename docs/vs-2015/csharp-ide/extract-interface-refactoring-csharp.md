@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e59864cabf638f4525165ed4f31c42fff748bf26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941765"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116741"
 ---
 # <a name="extract-interface-refactoring-c"></a>擷取介面重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58941765"
   
 ### <a name="to-use-extract-interface"></a>若要使用 擷取介面  
   
-1.  建立名為主控台應用程式`ExtractInterface`，然後取代`Program`為下列程式碼  
+1. 建立名為主控台應用程式`ExtractInterface`，然後取代`Program`為下列程式碼  
   
     ```csharp  
     // Invoke Extract Interface on ProtoA.  
@@ -45,7 +45,7 @@ ms.locfileid: "58941765"
     }  
     ```  
   
-2.  游標會放置在`MethodB`，然後按一下**擷取介面**上**重構**功能表。  
+2. 游標會放置在`MethodB`，然後按一下**擷取介面**上**重構**功能表。  
   
      **擷取介面** 對話方塊隨即出現。  
   
@@ -53,9 +53,9 @@ ms.locfileid: "58941765"
   
      您也可以以滑鼠右鍵按一下滑鼠，指向**重構**，然後按一下**擷取介面**以顯示**擷取介面** 對話方塊。  
   
-3.  按一下 **選取所有**。  
+3. 按一下 **選取所有**。  
   
-4.  按一下 [確定 **Deploying Office Solutions**]。  
+4. 按一下 [確定] 。  
   
      您會看到新的檔案、 IProtoA.cs 和下列程式碼：  
   

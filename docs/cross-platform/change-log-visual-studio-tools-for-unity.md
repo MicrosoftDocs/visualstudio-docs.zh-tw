@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 8a8fd54b15381298542f710cbffa81cd9e0295fe
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: a635ca7369470788f0813f6e246767b64f6af445
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232758"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477661"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>變更記錄檔 (Visual Studio Tools for Unity，Windows)
 Visual Studio Tools for Unity 變更記錄。
@@ -105,7 +105,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   已新增指標的支援：取值、轉換和指標計算 (此功能需要 Unity 2018.2+ 和新執行階段)。
 
-    -   已新增陣列指標檢視 (如 C++ 中的) 的支援。 接受指標運算式然後附加逗號和您要查看之數目的元素。
+    -   新增陣列指標檢視 (如在 C++ 中) 的支援。 接受指標運算式然後附加逗號和您要查看之數目的元素。
 
     -   已新增非同步建構的支援。
 
@@ -128,7 +128,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   **整合：**
 
-    -   已新增 Visual Studio 2019 的支援。
+    -   已新增 Visual Studio 2019 的支援 (必須至少是 Unity 2018.3 才能使用 Visual Studio 2019 作為外部指令碼編輯器)。
 
     -   已採用 Visual Studio 映像服務與類別目錄，完整支援 HDPI 調整大小、像素完美影像和主題。
 

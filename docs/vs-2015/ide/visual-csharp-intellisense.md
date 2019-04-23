@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0d67cc907155f3f5c6bc4b0f132f9045f7d698a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800871"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075755"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "54800871"
   
   C# 中的完成清單也十分聰明，可以篩選掉不相關的語彙基元，並根據內容預先選取語彙基元。 如需詳細資訊，請參閱 [C# 中已篩選的完成清單](../misc/filtered-completion-lists-in-csharp.md)和 [C# 中預先選取的完成清單項目](../misc/pre-selected-completion-list-items-in-csharp.md)。  
   
-###  <a name="CodeSnippets"></a> 完成清單中的程式碼片段  
+### <a name="CodeSnippets"></a> 完成清單中的程式碼片段  
  Visual C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 在完成清單中，程式碼片段會顯示為片段的 [Shortcut 項目 (IntelliSense 程式碼片段)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa)。  如需 Visual C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)。  
   
-###  <a name="Keywords"></a> 完成清單中的語言關鍵字  
+### <a name="Keywords"></a> 完成清單中的語言關鍵字  
  Visual C# 的完成清單也包含語言關鍵字。 如需 C# 語言關鍵字的詳細資訊，請參閱 [C# 關鍵字](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad)。  
   
-###  <a name="ExtensionMethods"></a> 完成清單中的擴充方法  
+### <a name="ExtensionMethods"></a> 完成清單中的擴充方法  
  Visual C# 的完成清單包含範圍內的擴充方法。  
   
 > [!NOTE]
@@ -59,23 +59,23 @@ ms.locfileid: "54800871"
   
  Visual C# 會篩選針對下列項目所顯示的完成清單：  
   
--   **介面與基底類別。** 在類別宣告基底和介面清單與條件約束清單中，IntelliSense 都會自動從介面和基底類別的完成清單移除項目。 例如，列舉不會出現在基底類別的完成清單中，因為列舉不能使用於基底類別。 基底類別的完成清單只包含介面和命名空間。 如果您在清單中選取一個項目，然後輸入一個逗號，IntelliSense 會將基底類別從清單中移除，因為 Visual C# 不支援多重繼承。 相同的行為也會發生在條件約束子句。  
+- **介面與基底類別。** 在類別宣告基底和介面清單與條件約束清單中，IntelliSense 都會自動從介面和基底類別的完成清單移除項目。 例如，列舉不會出現在基底類別的完成清單中，因為列舉不能使用於基底類別。 基底類別的完成清單只包含介面和命名空間。 如果您在清單中選取一個項目，然後輸入一個逗號，IntelliSense 會將基底類別從清單中移除，因為 Visual C# 不支援多重繼承。 相同的行為也會發生在條件約束子句。  
   
--   **屬性**：當您將屬性套用至類型時，完成清單會經過篩選，讓清單只包括從含有這些類型的命名空間繼承而來之類型，例如 <xref:System.Attribute>。  
+- **屬性**：當您將屬性套用至類型，完成清單會經過篩選，讓清單只包括從含有這些類型的命名空間繼承而來之類型，例如 <xref:System.Attribute>。  
   
--   `as` 及 `is` 運算子。  
+- `as` 及 `is` 運算子。  
   
--   **Catch 子句。**  
+- **Catch 子句。**  
   
--   **物件初始設定式**：只有能夠初始化的成員會出現在完成清單中。  
+- **物件初始設定式：** 只有能夠初始化的成員會出現在完成清單中。  
   
--   **new 關鍵字**：當您鍵入 `new` 然後按下空格鍵，完成清單隨即出現。 清單會根據您的程式碼內容，自動選取一個項目。 例如，完成清單中的項目會針對宣告及方法中的 return 陳述式自動選取項目。  
+- **新關鍵字**：當您輸入 `new` 後按空格鍵，完成清單會隨即出現。 清單會根據您的程式碼內容，自動選取一個項目。 例如，完成清單中的項目會針對宣告及方法中的 return 陳述式自動選取項目。  
   
--   **as 及 is 運算子**：當您鍵入 `as` 或 `is` 關鍵字後按空格鍵，即會自動顯示篩選後的完成清單。  
+- **為和 is 運算子：** 當您輸入 `as` 或 `is` 關鍵字後按空格鍵，會顯示篩選後的完成清單。  
   
--   Event：當您輸入關鍵字 `event`，完成清單僅包含委派類型。  
+- 事件：當您鍵入 `event` 關鍵字時，完成清單僅會包含委派類型。  
   
--   參數會自動排序到符合您所輸入之參數的第一個方法多載。 如有多個方法多載，您可以使用向上鍵與向下鍵巡覽至清單中下一個可能的多載。  
+- 參數會自動排序到符合您所輸入之參數的第一個方法多載。 如有多個方法多載，您可以使用向上鍵與向下鍵巡覽至清單中下一個可能的多載。  
   
 ## <a name="most-recently-used-members"></a>最近使用的成員  
  IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md) 快顯方塊中選取的成員，自動完成物件名稱。 下次使用 [成員] 清單時，最近使用過的成員就會顯示在頂端。 IDE 會在每個工作階段之間，清除最近使用過的成員記錄。  
@@ -157,5 +157,5 @@ ms.locfileid: "54800871"
   
  下列工作示範 IntelliSense 如何自動連結名為 `button1_Click` 的事件處理常式和名為 `button1.Click` 的事件欄位。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05acf62d30a1ac272003c0883b4a8c927e13e659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 97a36c38eb0c4a96cb7182300c2f9aca6da68e8a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944191"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042743"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext 方法 (O/R 設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & c e autoUpgrade = True) 方法 (中的內容[LINQ to SQL 工具，在 Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) 方法的<xref:System.Data.Linq.DataContext>執行預存的類別程序和函式在資料庫中。  
   
  <xref:System.Data.Linq.DataContext> 類別是一個 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 類別，可以做為 SQL Server 資料庫與該資料庫對應之 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 實體類別之間的管道。 <xref:System.Data.Linq.DataContext>類別包含連接字串資訊和連線到資料庫及操作資料庫中的資料的方法。 根據預設，<xref:System.Data.Linq.DataContext>類別包含數種方法，您可以呼叫，例如<xref:System.Data.Linq.DataContext.SubmitChanges%2A>方法，會傳送更新的資料從[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]類別至資料庫。 您也可以建立其他對應至預存程序和函式的 <xref:System.Data.Linq.DataContext> 方法。 換句話說，呼叫這些自訂方法會執行 <xref:System.Data.Linq.DataContext> 方法在資料庫中對應的預存程序或函式。 您可以將新的方法加入至 <xref:System.Data.Linq.DataContext> 類別，方式就和加入方法以擴充任何類別一樣。 不過，在討論<xref:System.Data.Linq.DataContext>的內容中的方法[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，它是<xref:System.Data.Linq.DataContext>對應至預存程序和函式是在討論的方法。  
@@ -33,11 +32,11 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & c e 
 ## <a name="two-types-of-datacontext-methods"></a>兩種 DataContext 方法  
  DataContext 方法是指在資料庫中對應至預存程序和函式的方法。 您可以在 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]的方法窗格上，建立和加入 DataContext 方法。 <xref:System.Data.Linq.DataContext> 方法有兩種不同的類型：傳回一個或多個結果集的方法，以及不會傳回結果集的方法：  
   
--   傳回一個或多個結果集的 <xref:System.Data.Linq.DataContext> 方法：  
+- 傳回一個或多個結果集的 <xref:System.Data.Linq.DataContext> 方法：  
   
      如果您的應用程式只需要執行資料庫中的預存程序和函式並傳回結果，請建立這種 <xref:System.Data.Linq.DataContext> 方法。 如需詳細資訊，請參閱[如何：建立對應至預存程序和函式 （O/R 設計工具） 的 DataContext 方法](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)，System.Data.Linq.ISingleResult\<T >，並<xref:System.Data.Linq.IMultipleResults>。  
   
--   不會傳回結果集的 <xref:System.Data.Linq.DataContext> 方法：例如特定實體類別的插入、更新和刪除作業。  
+- 不會傳回結果集的 <xref:System.Data.Linq.DataContext> 方法：例如特定實體類別的插入、更新和刪除作業。  
   
      如果您的應用程式必須執行預存程序 (而不是使用預設 <xref:System.Data.Linq.DataContext> 行為) 在實體類別與資料庫之間儲存修改過的資料，請建立這種 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 方法。 如需詳細資訊，請參閱[如何：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。  
   

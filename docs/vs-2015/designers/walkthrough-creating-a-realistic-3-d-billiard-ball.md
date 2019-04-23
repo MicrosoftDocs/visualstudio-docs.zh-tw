@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 26dc068ca15de93cc2b0a3ac68b83d1d351bcad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793301"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110592"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>逐步解說：建立逼真的 3d 撞球
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,22 +23,22 @@ ms.locfileid: "54793301"
   
  本文件示範下列活動︰  
   
--   使用圖形和紋理建立撞球的基本外觀。  
+- 使用圖形和紋理建立撞球的基本外觀。  
   
--   透過 Lambert 光源模型增加深度。  
+- 透過 Lambert 光源模型增加深度。  
   
--   使用高光強化基本的外觀。  
+- 使用高光強化基本的外觀。  
   
--   透過反映環境建立空間感。  
+- 透過反映環境建立空間感。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件和技能才能完成此逐步解說：  
   
--   將紋理組合至立方體貼圖的工具，例如隨附於 DirectX SDK 2010 年 6 月版的 DirectX 紋理工具。  
+- 將紋理組合至立方體貼圖的工具，例如隨附於 DirectX SDK 2010 年 6 月版的 DirectX 紋理工具。  
   
--   熟悉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的影像編輯器。  
+- 熟悉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的影像編輯器。  
   
--   熟悉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的著色器設計工具。  
+- 熟悉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的著色器設計工具。  
   
 ## <a name="creating-the-basic-appearance-with-shape-and-texture"></a>使用圖形和紋理建立基本的外觀  
  在電腦圖形中，最基本的外觀項目是形狀和色彩。 電腦模擬常使用 3D 模型來表現實際物件的形狀。 然後使用材質貼圖，在模型表面套用色彩細節。  
@@ -87,7 +87,7 @@ ms.locfileid: "54793301"
   
 3. 設定紋理屬性，套用您在之前程序中建立的紋理。 將 [材質範例] 節點的 **Texture** 屬性值設定為 [Texture1]，然後使用相同 [屬性] 視窗中的 **Texture1** 屬性群組的 **Filename** 屬性指定紋理檔案。  
   
-   如需如何套用您著色器中紋理的詳細資訊，請參閱[如何：建立基本紋理著色器](../designers/how-to-create-a-basic-texture-shader.md)。  
+   如需如何套用您著色器中紋理的詳細資訊，請參閱[如何：建立基本材質著色器](../designers/how-to-create-a-basic-texture-shader.md)。  
   
    您的撞球現在看起來應該像這樣︰  
   
@@ -214,7 +214,7 @@ ms.locfileid: "54793301"
   
    在完稿影像中，請注意您新增的效果如何結合在一起，建立非常逼真的撞球。 形狀、紋理和光源建構了基本的 3D 物件外觀，而高光和反射則讓撞球更有趣且融入環境。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：匯出著色器](../designers/how-to-export-a-shader.md)   
  [如何：將著色器套用至 3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [著色器設計工具](../designers/shader-designer.md)   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9d5f137fdce3a50f95b3dfa641bd684d5aab060
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8a2e6bf4ffd22c6f4e3c63315a1c4a221f621c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952693"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063032"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>HOW TO：使用特定領域語言修改標準功能表命令
 
@@ -28,15 +28,15 @@ ms.locfileid: "55952693"
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>找出您可以修改的命令
 
-1.  在 `DslPackage`專案中，開啟`GeneratedCode\CommandSet.cs`。 可以在 [方案總管] 中找到這個 C# 檔案，做為`CommandSet.tt`。
+1. 在 `DslPackage`專案中，開啟`GeneratedCode\CommandSet.cs`。 可以在 [方案總管] 中找到這個 C# 檔案，做為`CommandSet.tt`。
 
-2.  尋找類別，此檔案中名稱結尾為"`CommandSet`"，例如`Language1CommandSet`和`Language1ClipboardCommandSet`。
+2. 尋找類別，此檔案中名稱結尾為"`CommandSet`"，例如`Language1CommandSet`和`Language1ClipboardCommandSet`。
 
-3.  在每個命令集類別中，輸入 "`override`"，後面接著一個空格。 IntelliSense 會顯示您可以覆寫的方法清單。 每個命令都有名稱開頭為 "`ProcessOnStatus`" 和 "`ProcessOnMenu`" 的一組方法。
+3. 在每個命令集類別中，輸入 "`override`"，後面接著一個空格。 IntelliSense 會顯示您可以覆寫的方法清單。 每個命令都有名稱開頭為 "`ProcessOnStatus`" 和 "`ProcessOnMenu`" 的一組方法。
 
-4.  記下包含所要修改之命令的命令集類別。
+4. 記下包含所要修改之命令的命令集類別。
 
-5.  關閉檔案而不儲存您的編輯。
+5. 關閉檔案而不儲存您的編輯。
 
     > [!NOTE]
     > 您通常不應該編輯產生的檔案。 任何編輯在下次產生檔案時都會遺失。
@@ -47,15 +47,15 @@ ms.locfileid: "55952693"
 
 ### <a name="to-extend-the-command-set-class"></a>擴充命令集類別
 
-1.  在 [方案總管] 中，開啟 DslPackage 專案中的 GeneratedCode 資料夾，然後在 CommandSet.tt 下尋找並開啟它的產生檔案 CommandSet.cs。 記下檔案中定義的命名空間和第一個類別的名稱。 例如，您可能會看到：
+1. 在 [方案總管] 的 DslPackage 專案中，開啟 [GeneratedCode] 資料夾，然後查看 CommandSet.tt 下方並開啟其產生的檔案 CommandSet.cs。 記下檔案中定義的命名空間和第一個類別的名稱。 例如，您可能會看到：
 
      `namespace Company.Language1`
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2.  在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，名為`CommandSet.cs`。
+2. 在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，名為`CommandSet.cs`。
 
-3.  在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如: 
+3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如：
 
     ```csharp
     using System;
@@ -128,17 +128,17 @@ protected override void ProcessOnMenuDeleteCommand()
 
 下列程式碼片段在這些方法中通常很有用：
 
--   `this.CurrentSelection`. 使用者以滑鼠右鍵按一下的圖形，一律會包含在此圖形和連接線清單中。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。
+- `this.CurrentSelection`. 使用者以滑鼠右鍵按一下的圖形，一律會包含在此圖形和連接線清單中。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。
 
--   `this.IsDiagramSelected()` - `true` 如果使用者按一下圖表的空白部分。
+- `this.IsDiagramSelected()` - `true` 如果使用者按一下圖表的空白部分。
 
--   `this.IsCurrentDiagramEmpty()`
+- `this.IsCurrentDiagramEmpty()`
 
--   `this.IsSingleSelection()` - 使用者未選取多個圖形
+- `this.IsSingleSelection()` - 使用者未選取多個圖形
 
--   `this.SingleSelection` - 使用者以滑鼠右鍵按一下的圖形或圖表
+- `this.SingleSelection` - 使用者以滑鼠右鍵按一下的圖形或圖表
 
--   `shape.ModelElement as MyLanguageElement` - 以圖形表示的模型項目。
+- `shape.ModelElement as MyLanguageElement` - 以圖形表示的模型項目。
 
 如需有關如何瀏覽項目，以及有關如何建立物件和連結的詳細資訊，請參閱[巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
@@ -146,7 +146,7 @@ protected override void ProcessOnMenuDeleteCommand()
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [如何：將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
+- [如何：在捷徑功能表中新增命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
 - [VSPackage 如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 結構描述參考](../extensibility/vsct-xml-schema-reference.md)

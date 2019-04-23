@@ -8,12 +8,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 02abe8858f928e5f3fb036b212e0a1ca777259a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939289"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096526"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>適用於 Visual Studio 的 UX 基本
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -22,35 +22,35 @@ ms.locfileid: "58939289"
 
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1.是 Visual Studio 環境內保持一致。
 
--   請遵循在殼層中的現有互動模式。
+- 請遵循在殼層中的現有互動模式。
 
--   設計與命令介面的視覺化語言和技術需求一致的功能。
+- 設計與命令介面的視覺化語言和技術需求一致的功能。
 
--   當其存在時，請使用共用的命令和控制項。
+- 當其存在時，請使用共用的命令和控制項。
 
--   了解 Visual Studio 階層架構，以及如何建立內容及磁碟機 UI。
+- 了解 Visual Studio 階層架構，以及如何建立內容及磁碟機 UI。
 
 ### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2.使用環境服務的字型和色彩。
 
--   UI 應該採用目前的環境字型設定，除非它公開在 [選項] 對話方塊中的 [字型和色彩] 頁面的自訂。
+- UI 應該採用目前的環境字型設定，除非它公開在 [選項] 對話方塊中的 [字型和色彩] 頁面的自訂。
 
--   UI 項目必須使用 VSColor Service，使用共用的環境權杖或功能的特定權杖。
+- UI 項目必須使用 VSColor Service，使用共用的環境權杖或功能的特定權杖。
 
 ### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3.使所有圖像和新的 VS 樣式一致。
 
--   請遵循 Visual Studio 圖示、 圖像 （glyph） 和其他圖形的設計原則。
+- 請遵循 Visual Studio 圖示、 圖像 （glyph） 和其他圖形的設計原則。
 
--   圖形元素括住文字。
+- 圖形元素括住文字。
 
 ### <a name="4-design-from-a-user-centric-perspective"></a>4.以使用者為中心的觀點來設計。
 
--   建立工作流程之前在其中的個別功能。
+- 建立工作流程之前在其中的個別功能。
 
--   熟悉您的使用者，並將該知識明確在您的規格中。
+- 熟悉您的使用者，並將該知識明確在您的規格中。
 
--   檢閱 UI 時, 評估完整的體驗，以及詳細資料。
+- 檢閱 UI 時, 評估完整的體驗，以及詳細資料。
 
--   設計您的 UI，讓它會維持運作且吸引人，不論地區設定或語言。
+- 設計您的 UI，讓它會維持運作且吸引人，不論地區設定或語言。
 
 ## <a name="screen-resolution"></a>螢幕解析度
 
@@ -69,9 +69,9 @@ ms.locfileid: "58939289"
 
 #### <a name="feature-team-goals"></a>功能小組目標
 
--   警告使用者他們已必須設定的項目。
+- 警告使用者他們已必須設定的項目。
 
--   繪製區域需要輸入使用者的注意力。
+- 繪製區域需要輸入使用者的注意力。
 
 #### <a name="anti-pattern-solution"></a>反向模式解決方案
  只要使用者已起始動作，並已完成工作之前，立即將放在重大中斷圖示旁邊需要設定的領域。
@@ -88,11 +88,11 @@ ms.locfileid: "58939289"
 #### <a name="alternatives"></a>替代項目
  此問題較理想的方案，是將：
 
--   允許使用者新增的宣告，而不發出警告，然後再移至項目上設定屬性的 立即。
+- 允許使用者新增的宣告，而不發出警告，然後再移至項目上設定屬性的 立即。
 
--   新增警告圖示 （金級三角形） 時焦點從移動項目，例如將另一個宣告新增至清單，或嘗試變更索引標籤的設計工具內。
+- 新增警告圖示 （金級三角形） 時焦點從移動項目，例如將另一個宣告新增至清單，或嘗試變更索引標籤的設計工具內。
 
--   如果使用者嘗試變更索引標籤設定屬性的任何宣告之前，快顯對話方塊，說明不會建置應用程式 （或任何影響） 的警告，在解決之前。 如果使用者關閉對話方塊，並將索引標籤變更仍然後圖示 （重要或警告，視需要） 會新增至宣告 索引標籤。
+- 如果使用者嘗試變更索引標籤設定屬性的任何宣告之前，快顯對話方塊，說明不會建置應用程式 （或任何影響） 的警告，在解決之前。 如果使用者關閉對話方塊，並將索引標籤變更仍然後圖示 （重要或警告，視需要） 會新增至宣告 索引標籤。
 
 ### <a name="forcing-the-user-to-read-text-before-dismissing-ui"></a>強制使用者先關閉 UI 讀取文字
 
@@ -173,9 +173,9 @@ ms.locfileid: "58939289"
 
    **更好的解決方案：** 會造成按的連結，會詢問使用者問題。
 
--   Windows Azure 服務如何運作？
+- Windows Azure 服務如何運作？
 
--   何時需要 Windows Azure 行動服務專案？
+- 何時需要 Windows Azure 行動服務專案？
 
 #### <a name="using-click-here-for-links"></a>使用 「 按一下這裡 」 的連結
  超連結應該自述性。 它會使用反模式，可使用 「 按一下這裡 」 或任何類似的變體。

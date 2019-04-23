@@ -10,12 +10,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a9d0836d9633b070a9f48a6bd2b80d1f012f52cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 00a2f5e4e405ff2cba7275cd4c1310db850632b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942625"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118028"
 ---
 # <a name="how-to-implement-error-markers"></a>HOW TO：實作錯誤標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,16 +44,16 @@ ms.locfileid: "58942625"
   
   剖析器、 工作提供者，以及篩選器提供，讓錯誤標記必要的基礎結構。 下列步驟提供此程序顯示錯誤標記。  
   
-1.  在正在進行篩選檢視中，篩選會取得與該檢視的資料相關聯的工作提供者的指標。  
+1. 在正在進行篩選檢視中，篩選會取得與該檢視的資料相關聯的工作提供者的指標。  
   
     > [!NOTE]
     >  您可以使用相同的命令篩選方法秘訣、 陳述式完成、 錯誤標記和等等。  
   
-2.  當篩選條件收到的事件可表示您已經移動到另一行時，工作會檢查有錯誤。  
+2. 當篩選條件收到的事件可表示您已經移動到另一行時，工作會檢查有錯誤。  
   
-3.  工作處理常式會檢查是否已變更的行。 如果是的話，它會剖析錯誤的行。  
+3. 工作處理常式會檢查是否已變更的行。 如果是的話，它會剖析錯誤的行。  
   
-4.  如果發現錯誤，工作提供者會建立工作項目執行個體。 這個執行個體建立環境做為錯誤標記文字檢視中的文字標記。  
+4. 如果發現錯誤，工作提供者會建立工作項目執行個體。 這個執行個體建立環境做為錯誤標記文字檢視中的文字標記。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用舊版 API 中的文字標記](../extensibility/using-text-markers-with-the-legacy-api.md)   

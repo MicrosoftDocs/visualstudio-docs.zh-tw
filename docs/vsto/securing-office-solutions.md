@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e2f164135ab6b7f187b2b5967eca4faf747f37e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871178"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107615"
 ---
 # <a name="secure-office-solutions"></a>保護 Office 方案
   Office 方案的安全性模型牽涉到數個技術： [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]， [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]，Microsoft Office 和 Internet Explorer 受限制的網站區域中的 信任中心。 下列各節說明不同安全性功能的運作方式：
@@ -38,7 +38,7 @@ ms.locfileid: "54871178"
 
   [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-##  <a name="GrantingTrustToSolutions"></a> 授與信任給 Office 方案
+## <a name="GrantingTrustToSolutions"></a> 授與信任給 Office 方案
  授與信任給 Office 方案表示修改每位終端使用者的安全性原則，以根據下列的辨識項信任 Office 方案：
 
 - 用來簽署部署資訊清單的憑證。
@@ -47,16 +47,16 @@ ms.locfileid: "54871178"
 
   如需詳細資訊，請參閱 <<c0> [ 授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)。
 
-##  <a name="GrantingTrustToDocuments"></a> 將信任授與文件
+## <a name="GrantingTrustToDocuments"></a> 將信任授與文件
  文件層級自訂要求文件必須在指定為信任位置的目錄中。 如需詳細資訊，請參閱 <<c0> [ 授與信任給文件](../vsto/granting-trust-to-documents.md)。
 
-##  <a name="GrantingTrustWindowsInstaller"></a> 使用 Windows 安裝程式時，將信任授與
+## <a name="GrantingTrustWindowsInstaller"></a> 使用 Windows 安裝程式時，將信任授與
  您可以使用 Windows 安裝程式建立 MSI 檔案，將 Office 方案安裝到 Program Files 目錄中，這需要系統管理權限。 對於在 Program Files 目錄中的 Office 方案，Visual Studio 2010 Tools for Office 執行階段會考慮要信任這些 Office 方案，並不會顯示 ClickOnce 信任提示。
 
-##  <a name="Security"></a> 指定 Office 方案的安全性考量
+## <a name="Security"></a> 指定 Office 方案的安全性考量
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]、[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 和 Microsoft Office 所提供的安全性功能，有助於在 Office 方案中防範各種可能的安全性威脅。 如需詳細資訊，請參閱 < [Office 方案的特定安全性考量](../vsto/specific-security-considerations-for-office-solutions.md)。
 
-##  <a name="SecurityDuringDeployment"></a> 在開發期間的安全性
+## <a name="SecurityDuringDeployment"></a> 在開發期間的安全性
  為了簡化您的開發程序，Visual Studio 每次建置專案時都會在您的電腦上設定執行和偵錯方案所需的安全性原則。 在某些情況下，您可能需要採取額外的安全性步驟來開發專案。
 
 ### <a name="document-level-solutions"></a>文件層級方案
@@ -75,7 +75,7 @@ ms.locfileid: "54871178"
 
  一段時間之後可能有許多的暫時憑證，因此您應該偶爾清除暫時憑證。
 
-##  <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools for Office 執行階段
+## <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools for Office 執行階段
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]已驗證的 「 發行者 」 和自訂授與的權限的身分識別的功能。 它會透過一系列的安全性驗證這些權限。
 
 ### <a name="security-during-customization-loading"></a>在自訂載入期間的安全性

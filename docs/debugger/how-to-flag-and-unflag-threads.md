@@ -1,5 +1,5 @@
 ---
-title: 如何： 將執行緒加上旗標和取消 |Microsoft Docs
+title: HOW TO：旗標，並將執行緒取消標幟 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d106260aab40707aeb04f37df05a9d1ffb26a1b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.openlocfilehash: e63f081ff54a18bb4b5ca5c1cbdf947670f10a7e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324412"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069636"
 ---
-# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>如何： 將執行緒加上旗標和取消 (C#，Visual Basic、 c + +)
+# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>HOW TO：旗標，並將執行緒取消標幟 (C#，Visual Basic 中， C++)
 
 您可以加上旗標的執行緒，您想要特別注意的標記中的圖示**執行緒**，**平行堆疊**（執行緒檢視），**平行監看式**，和**GPU 執行緒**windows。 這個圖示可以協助您和其他人區分已加上旗標的執行緒和其他執行緒。
 
@@ -35,32 +35,32 @@ ms.locfileid: "58324412"
 
 ### <a name="to-unflag-all-threads"></a>若要取消所有執行緒的旗標
 
--   在 [執行緒] 視窗中，以滑鼠右鍵按一下任一執行緒，然後按一下 [將所有執行緒取消旗標]。
--   在 **平行監看式**所有已標幟的執行緒視窗中，選取，然後以滑鼠右鍵按一下並選取**取消旗標**。
+- 在 [執行緒] 視窗中，以滑鼠右鍵按一下任一執行緒，然後按一下 [將所有執行緒取消旗標]。
+- 在 **平行監看式**所有已標幟的執行緒視窗中，選取，然後以滑鼠右鍵按一下並選取**取消旗標**。
 
 ### <a name="to-display-only-flagged-threads"></a>若只要顯示加上旗標的執行緒
 
--   選擇**僅顯示已標幟執行緒**其中一個多執行緒偵錯視窗中的按鈕。
+- 選擇**僅顯示已標幟執行緒**其中一個多執行緒偵錯視窗中的按鈕。
 
 ### <a name="to-flag-just-my-code"></a>將 Just My Code 加上旗標
 
-1.  在 [執行緒] 視窗頂端的工具列上，按一下旗標圖示。
+1. 在 [執行緒] 視窗頂端的工具列上，按一下旗標圖示。
 
-2.  在下拉式清單中，按一下 [將 Just My Code 加上旗標]。
+2. 在下拉式清單中，按一下 [將 Just My Code 加上旗標]。
 
 ### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>將與選取的模組關聯的執行緒加上旗標
 
-1.  在 [執行緒] 視窗的工具列上，按一下旗標圖示。
+1. 在 [執行緒] 視窗的工具列上，按一下旗標圖示。
 
-2.  在下拉式清單中，按一下 [將自訂模組選取範圍加上旗標]。
+2. 在下拉式清單中，按一下 [將自訂模組選取範圍加上旗標]。
 
-3.  在 [選取模組] 對話方塊中，選取您要的模組。
+3. 在 [選取模組] 對話方塊中，選取您要的模組。
 
-4.  (選擇性) 在 [搜尋] 方塊中，鍵入用於搜尋特定模組的字串。
+4. (選擇性) 在 [搜尋] 方塊中，鍵入用於搜尋特定模組的字串。
 
-5.  按一下 [確定]。
+5. 按一下 [確定] 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [開始對多執行緒應用程式進行偵錯](../debugger/get-started-debugging-multithreaded-apps.md)
-- [逐步解說： 偵錯多執行緒應用程式，使用 [執行緒] 視窗](../debugger/how-to-use-the-threads-window.md)
+- [逐步解說：偵錯多執行緒應用程式，使用 [執行緒] 視窗](../debugger/how-to-use-the-threads-window.md)

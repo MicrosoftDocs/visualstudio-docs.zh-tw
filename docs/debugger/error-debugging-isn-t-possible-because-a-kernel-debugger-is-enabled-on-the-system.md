@@ -1,5 +1,5 @@
 ---
-title: 錯誤： 偵錯不&#39;t，可能因為在系統上啟用核心偵錯 |Microsoft Docs
+title: 錯誤：偵錯不&#39;t，可能因為在系統上啟用核心偵錯 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d876298fd202b96fc6519e5056ca7dd297e386ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 63666302bcbf9f8f44c6121b583f0cf7b259f3ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709664"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096968"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤： 偵錯不&#39;t，可能因為在系統上啟用核心偵錯
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤：偵錯不&#39;t，可能因為在系統上啟用核心偵錯
 當您對 Managed 程式碼進行偵錯時，可能會收到下列錯誤訊息：
 
 ```cmd
@@ -56,7 +56,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>若要在目前工作階段中停用核心偵錯
 
--   在命令提示中，輸入：
+- 在命令提示中，輸入：
 
     ```cmd
     Kdbgctrl.exe -d
@@ -64,23 +64,23 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>若要停用所有工作階段的核心偵錯 (Windows Vista 和 Windows 7)
 
-1.  在命令提示中，輸入：
+1. 在命令提示中，輸入：
 
     ```cmd
     bcdedit /debug off
     ```
 
-2.  重新啟動電腦。
+2. 重新啟動電腦。
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>若要停用所有工作階段的核心偵錯 (其他 Windows 作業系統)
 
-1.  在您的系統磁碟機 (通常是 C:\\) 上尋找 boot.ini。 boot.ini 檔案可能為隱藏或唯讀狀態。 因此，您必須使用下列命令才能看見該檔案：
+1. 在您的系統磁碟機 (通常是 C:\\) 上尋找 boot.ini。 boot.ini 檔案可能為隱藏或唯讀狀態。 因此，您必須使用下列命令才能看見該檔案：
 
     ```cmd
     dir /ASH
     ```
 
-2.  使用 [記事本] 開啟 boot.ini 並移除下列選項：
+2. 使用 [記事本] 開啟 boot.ini 並移除下列選項：
 
     ```cmd
     /debug
@@ -88,16 +88,16 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     /baudrate
     ```
 
-3.  重新啟動電腦。
+3. 重新啟動電腦。
 
 #### <a name="to-debug-with-the-kernel-debugger"></a>若要使用核心偵錯工具進行偵錯
 
-1.  如果已經連結核心偵錯工具，您將看到一則訊息，詢問您是否要繼續進行偵錯。 按一下這個按鈕繼續進行。
+1. 如果已經連結核心偵錯工具，您將看到一則訊息，詢問您是否要繼續進行偵錯。 按一下這個按鈕繼續進行。
 
-2.  您也可能會收到 `User break exception(Int 3).`。如果發生這種情況，請輸入下列核心偵錯工具命令繼續進行偵錯：
+2. 您也可能會收到 `User break exception(Int 3).`。如果發生這種情況，請輸入下列核心偵錯工具命令繼續進行偵錯：
 
      `gn`
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

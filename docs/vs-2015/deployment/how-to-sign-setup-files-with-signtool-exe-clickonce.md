@@ -19,12 +19,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbbc745ae2d0a20ab14b3960e34182d7f4ed1865
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053204"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>HOW TO：使用 SignTool.exe 簽署安裝程式檔案 (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,23 +37,23 @@ ms.locfileid: "58941545"
   
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>產生未簽署的安裝程式並在稍後簽署  
   
-1.  在開發電腦上，安裝您要用來簽署資訊清單的憑證。  
+1. 在開發電腦上，安裝您要用來簽署資訊清單的憑證。  
   
-2.  在 [方案總管] 中選取專案。  
+2. 在 [方案總管] 中選取專案。  
   
-3.  在 [專案] 功能表上，按一下[*ProjectName* 屬性]。  
+3. 在 [專案] 功能表上，按一下[*ProjectName* 屬性]。  
   
-4.  在 [簽署] 頁面上，清除的 [簽署 ClickOnce 資訊清單]。  
+4. 在 [簽署] 頁面上，清除的 [簽署 ClickOnce 資訊清單]。  
   
-5.  在 [發佈] 頁面上，按一下 [必要條件]。  
+5. 在 [發佈] 頁面上，按一下 [必要條件]。  
   
-6.  確定已選取所有必要條件，然後按一下 [確定]。  
+6. 確定已選取所有必要條件，然後按一下 [確定]。  
   
-7.  在 [發佈] 頁面上，確認發佈設定，然後按一下 [立即發佈]。  
+7. 在 [發佈] 頁面上，確認發佈設定，然後按一下 [立即發佈]。  
   
      方案隨即將未簽署的應用程式資訊清單、未簽署的部署資訊清單、版本特定檔案，以及未簽署的安裝程式發行至發行資料夾位置。  
   
-8.  在 [發佈] 頁面上，按一下 [必要條件]。  
+8. 在 [發佈] 頁面上，按一下 [必要條件]。  
   
 9. 在 [必要條件] 對話方塊中，清除 [建立安裝程式以安裝必要條件元件]。  
   

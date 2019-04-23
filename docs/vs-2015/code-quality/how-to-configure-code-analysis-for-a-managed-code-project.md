@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7814bd356dfa50c121fc73c1b88c1ae12dfa3df4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a326be363295ed1033d0e91e1675e326a51c9adf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104313"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>HOW TO：設定受控碼專案的程式碼分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ ms.locfileid: "58944308"
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>若要設定的規則集的.NET Framework 專案  
   
-1.  在 [**方案總管] 中**，按一下 [專案]。  
+1. 在 [**方案總管] 中**，按一下 [專案]。  
   
-2.  在上**分析**功能表上，按一下**設定的程式碼分析** *ProjectName*。  
+2. 在上**分析**功能表上，按一下**設定的程式碼分析** *ProjectName*。  
   
-3.  在 **組態**並**平台**清單中，按一下 組建組態和目標平台。  
+3. 在 **組態**並**平台**清單中，按一下 組建組態和目標平台。  
   
-4.  若要執行程式碼分析，每次使用選取的組態建置專案時，請選取**啟用建置程式碼分析 （定義 CODE_ANALYSIS 常數）** 核取方塊。 您也可以執行程式碼分析手動開啟**分析**功能表，然後按一下**上執行程式碼分析** *ProjectName*。  
+4. 若要執行程式碼分析，每次使用選取的組態建置專案時，請選取**啟用建置程式碼分析 （定義 CODE_ANALYSIS 常數）** 核取方塊。 您也可以執行程式碼分析手動開啟**分析**功能表，然後按一下**上執行程式碼分析** *ProjectName*。  
   
-5.  根據預設，程式碼分析不會報告從外部工具自動產生的程式碼警告。 若要檢視產生程式碼的警告，請清除**隱藏所產生的程式碼的結果** 核取方塊。  
+5. 根據預設，程式碼分析不會報告從外部工具自動產生的程式碼警告。 若要檢視產生程式碼的警告，請清除**隱藏所產生的程式碼的結果** 核取方塊。  
   
     > [!NOTE]
     >  這個選項不會在表單和範本中出現錯誤和警告時，抑制來自產生的程式碼的程式碼分析錯誤和警告。 您可以同時檢視及維護表單或範本的原始程式碼。  
   
-6.  在 **執行此規則集**清單中，執行下列其中之一：  
+6. 在 **執行此規則集**清單中，執行下列其中之一：  
   
-    -   按一下您想要使用的規則集。  
+    - 按一下您想要使用的規則集。  
   
-    -   按一下 [ **\<瀏覽] >** ，指定現有的自訂規則集不在清單中。  
+    - 按一下 [ **\<瀏覽] >** ，指定現有的自訂規則集不在清單中。  
   
-    -   定義自訂規則集。  
+    - 定義自訂規則集。  
   
          如需詳細資訊，請參閱 <<c0> [ 建立自訂規則集](../code-quality/creating-custom-code-analysis-rule-sets.md)。  
   

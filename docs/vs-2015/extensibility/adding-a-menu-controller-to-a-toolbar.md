@@ -12,12 +12,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 28588f04119eea31dfb0f32beb3b78376aa1b6b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942779"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107797"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>將功能表控制器新增至工具列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ ms.locfileid: "58942779"
   
 ## <a name="implementing-the-menu-controller-commands"></a>實作功能表控制器命令  
   
-1.  在 TWTestCommandPackageGuids.cs，加入命令 Id 為這三個功能表項目之後的現有命令識別碼。  
+1. 在 TWTestCommandPackageGuids.cs，加入命令 Id 為這三個功能表項目之後的現有命令識別碼。  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -122,13 +122,13 @@ ms.locfileid: "58942779"
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  在 TWTestCommand.cs，加入下列程式碼頂端的 TWTestCommand 類別。  
+2. 在 TWTestCommand.cs，加入下列程式碼頂端的 TWTestCommand 類別。  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  在 TWTestCommand 建構函式的最後一個呼叫之後`AddCommand`方法，加入程式碼以將每個命令，透過相同的處理常式的事件路由。  
+3. 在 TWTestCommand 建構函式的最後一個呼叫之後`AddCommand`方法，加入程式碼以將每個命令，透過相同的處理常式的事件路由。  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -149,7 +149,7 @@ ms.locfileid: "58942779"
     }  
     ```  
   
-4.  將事件處理常式加入 TWTestCommand 類別標示為已檢查選取的命令。  
+4. 將事件處理常式加入 TWTestCommand 類別標示為已檢查選取的命令。  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -162,7 +162,7 @@ ms.locfileid: "58942779"
     }  
     ```  
   
-5.  加入事件處理常式，會顯示 MessageBox，當使用者選取功能表控制站上的命令：  
+5. 加入事件處理常式，會顯示 MessageBox，當使用者選取功能表控制站上的命令：  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -214,13 +214,13 @@ ms.locfileid: "58942779"
   
 ## <a name="testing-the-menu-controller"></a>測試功能表控制器  
   
-1.  建置此專案並開始偵錯。 您應該會看到的實驗執行個體。  
+1. 建置此專案並開始偵錯。 您應該會看到的實驗執行個體。  
   
-2.  開啟**測試 ToolWindow**上**檢視 / 其他 Windows**功能表。  
+2. 開啟**測試 ToolWindow**上**檢視 / 其他 Windows**功能表。  
   
      功能表控制器顯示工具視窗的工具列中，並顯示**MC 項目 1**。  
   
-3.  按一下功能表控制器按鈕左邊的箭號。  
+3. 按一下功能表控制器按鈕左邊的箭號。  
   
      您應該會看到三個項目，其中第一個已選取，且具有反白顯示方塊周圍的圖示。 按一下  **MC 項目 3**。  
   

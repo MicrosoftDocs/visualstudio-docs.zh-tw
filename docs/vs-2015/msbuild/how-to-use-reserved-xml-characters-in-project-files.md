@@ -12,17 +12,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9943378043c7ddd5787d32b331334555b27cd947
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: aba17e94486ca04e12055c7bf9959f927440c53d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780636"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089369"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>如何：在專案檔中使用保留的 XML 字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 當您撰寫專案檔時，您可能需要使用保留的 XML 字元，例如，在屬性值或工作參數值中。 不過，您必須使用具名實體來取代某些保留字元，如此才能剖析專案檔。  
   
 ## <a name="using-reserved-characters"></a>使用保留字元  
@@ -38,7 +37,7 @@ ms.locfileid: "54780636"
   
 #### <a name="to-use-double-quotes-in-a-project-file"></a>在專案檔中使用雙引號  
   
--   使用對應的具名實體 &quot; 來取代雙引號。 例如，若要以雙引號括住 `EXEFile` 項目清單，請輸入：  
+- 使用對應的具名實體 &quot; 來取代雙引號。 例如，若要以雙引號括住 `EXEFile` 項目清單，請輸入：  
   
     ```  
     <Message Text="The output file is "@(EXEFile)"."/>  

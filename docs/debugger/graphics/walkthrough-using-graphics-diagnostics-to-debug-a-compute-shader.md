@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 使用圖形診斷來偵錯計算著色器 |Microsoft Docs
+title: 逐步解說：使用圖形診斷來偵錯計算著色器 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 448f9f95da763a17bf7bb54fb222da031403b38a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2ffdbee23ff363f7c0f1e843c30f09551f38ab3b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713785"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105366"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>逐步解說：使用圖形診斷來偵錯計算著色器
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>逐步解說：使用圖形診斷對計算著色器進行偵錯
 本逐步解說示範如何使用 Visual Studio 圖形診斷工具來調查產生不正確結果的計算著色器。
 
  本逐步解說將說明下列工作：
 
--   使用 [圖形事件清單]  找出潛在的問題來源。
+- 使用 [圖形事件清單]  找出潛在的問題來源。
 
--   使用 [圖形事件呼叫堆疊]，判斷 DirectCompute `Dispatch` 事件執行哪個計算著色器。
+- 使用 [圖形事件呼叫堆疊]，判斷 DirectCompute `Dispatch` 事件執行哪個計算著色器。
 
--   使用 [圖形管線階段] 視窗和 HLSL 偵錯工具，檢查其為問題來源的計算著色器。
+- 使用 [圖形管線階段] 視窗和 HLSL 偵錯工具，檢查其為問題來源的計算著色器。
 
 ## <a name="scenario"></a>情節
  在此情況下，您已撰寫流暢動態模擬來使用 DirectCompute 執行模擬更新最需要大量計算的部分。 執行應用程式時，資料集和 UI 的轉譯正確，但模擬未如預期運作。 使用圖形診斷，即可擷取圖形記錄問題，以偵錯應用程式。 在應用程式中，問題看起來如下：
@@ -88,7 +88,7 @@ ms.locfileid: "56713785"
 
     ![偵錯 IntegrateCS 計算著色器。](media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")
 
-4. 若要停止對計算著色器進行偵錯，請選擇 [偵錯] 工具列上的 [停止偵錯] (鍵盤：Shift+F5)。
+4. 若要停止偵錯計算著色器**偵錯**工具列上，選擇**停止偵錯**(鍵盤：Shift + F5)。
 
 5. 接下來，選取第二個 `Dispatch` 事件，並開始偵錯計算著色器，就像先前的步驟一樣。
 

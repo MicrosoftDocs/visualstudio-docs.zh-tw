@@ -19,24 +19,23 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7d5c716d702716ffb0083279523668eab3e01685
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758461"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650231"
 ---
 # <a name="common-msbuild-project-properties"></a>一般 MSBuild 專案屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 下表列出 Visual Studio 專案檔中所定義或 MSBuild 提供的 .targets 檔案中所包含的最常用屬性。  
   
  Visual Studio 中的專案檔 (.csproj、.vbproj、vcxproj 及其他) 包含 MSBuild XML 程式碼，該程式碼會在您使用 IDE 建置專案時執行。 專案通常會匯入一個或多個 .targets 檔案，用於定義其建置流程。 如需詳細資訊，請參閱 [.Targets 檔案](../msbuild/msbuild-dot-targets-files.md)。  
   
 ## <a name="list-of-common-properties-and-parameters"></a>通用屬性和參數的清單  
   
-|屬性或參數名稱|描述|  
+|屬性或參數名稱|說明|  
 |--------------------------------|-----------------|  
 |AdditionalLibPaths|指定其他資料夾，編譯器會在這些資料夾中尋找參考組件。|  
 |AddModules|讓編譯器將所指定檔案的類型資訊全部提供給您正在編譯的專案。 這個屬性相當於 `/addModules` 編譯器參數。|  

@@ -17,20 +17,19 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 593db9fe2f460229cfdd4c241124ef8270448094
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 50562b74a948365e91a7f36def634030a25aeac9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194654"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657961"
 ---
 # <a name="prerequisites-dialog-box"></a>必要條件對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 這個對話方塊可指定已安裝的必要條件元件、安裝方式，以及套件的安裝順序。  
   
- 若要存取這個對話方塊，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 當 [專案設計工具] 出現時，請按一下 [發行] 索引標籤。在 [發行] 頁面上，按一下 [必要條件]。 針對安裝專案，按一下 [專案] 功能表上的 [屬性]。 出現 [屬性頁] 對話方塊時，按一下 [必要條件]。  
+ 若要存取這個對話方塊，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 當 [ **專案設計工具** ] 出現時，請按一下 [ **發行** ] 索引標籤。在 [發行] 頁面上，按一下 [必要條件]。 針對安裝專案，按一下 [專案] 功能表上的 [屬性]。 出現 [屬性頁] 對話方塊時，按一下 [必要條件]。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
   
@@ -59,14 +58,14 @@ ms.locfileid: "58194654"
 |**Microsoft Visual Studio 2010 Report Viewer**|本套件會安裝報表檢視器控制項，可以將大量的資料報表加入至 Windows Form 和 ASP.NET 應用程式。|  
 |**Microsoft Visual Studio 2010 for Office Runtime (x86 和 x64)**|Visual Studio 中的 Office Developer Tools 提供便於使用的整合式工具，可搭配 Microsoft Office 建立自訂商務方案。 您可以建立使用 Office 應用程式做為使用者介面的 Managed 智慧型用戶端解決方案。 這些工具讓開發人員能夠建立易於部署與維護的安全方案。<br /><br /> 如需詳細資訊，請參閱[如何：使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。|  
 |**SQL Server 2005 Express Edition SP2 (x86)**|這個套件會安裝 Microsoft SQL Server 2005 Express Edition SP2，這是以 [!INCLUDE[sqprsqext](../../includes/sqprsqext-md.md)] 為基礎的資料庫應用程式。 SQL Server Express 是 Microsoft SQL Server Desktop Engine (MSDE) 的取代項目。 SQL Server Express 是免費的而且可轉散發 (依合約規定)，可以當做用戶端資料庫以及基本伺服器資料庫。 與 SQL Server 2005 相同，除了以下幾個不同處：<br /><br /> -   不支援企業功能。<br />-   只限於一個 CPU。<br />-   緩衝區集區的記憶體限制為 1 GB。<br />-   資料庫大小上限為 4 GB。|  
-|**SQL Server 2008 Express**|此套件會安裝 Microsoft SQL Server 2008 Express (Microsoft SQL Server 2008 的免費版本)，這是小型網路、伺服器或桌面應用程式的理想資料庫。 它可以免費用於開發和生產環境。 隨同應用程式散發 SQL Server 2008 Express 時，必須有免費的註冊。<br /><br /> 啟動載入器的行為如下：<br /><br /> -   如果電腦已有 SQL Server 2008 Express (含) 以後版本，則電腦會保持在 SQL Server 2008 Express (含) 以後版本。<br />-   如果電腦沒有任何 SQL Server 2008 Express (含) 以後版本，則套件會安裝最新版的 SQL Server 2008 Express SP1。<br /><br /> 若要深入了解 SQL Server 2008 Express，請造訪[ http://go.microsoft.com/fwlink/?LinkId=183586 ](http://go.microsoft.com/fwlink/?LinkId=183586)。|  
+|**SQL Server 2008 Express**|此套件會安裝 Microsoft SQL Server 2008 Express (Microsoft SQL Server 2008 的免費版本)，這是小型網路、伺服器或桌面應用程式的理想資料庫。 它可以免費用於開發和生產環境。 隨同應用程式散發 SQL Server 2008 Express 時，必須有免費的註冊。<br /><br /> 啟動載入器的行為如下：<br /><br /> -   如果電腦已有 SQL Server 2008 Express (含) 以後版本，則電腦會保持在 SQL Server 2008 Express (含) 以後版本。<br />-   如果電腦沒有任何 SQL Server 2008 Express (含) 以後版本，則套件會安裝最新版的 SQL Server 2008 Express SP1。<br /><br /> 若要深入了解 SQL Server 2008 Express，請瀏覽 [http://go.microsoft.com/fwlink/?LinkId=183586](http://go.microsoft.com/fwlink/?LinkId=183586)。|  
 |**Visual C++ 2010 執行階段程式庫 (IA64)**|這個套件會安裝適用於 Itanium 架構的 Visual C++ 執行階段程式庫，以提供 Microsoft Windows 作業系統程式設計所需的常式。 這些常式會自動執行 C 和 C++ 語言所未提供的許多常見的程式設計工作。<br /><br /> 如需詳細資訊，請參閱 [C 執行階段程式庫參考](http://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8)。|  
 |**Visual C++ 2010 執行階段程式庫 (x64)**|這個套件會安裝適用於 x64 作業系統的 Visual C++ 執行階段程式庫，以提供 Microsoft Windows 作業系統程式設計所需的常式。 這些常式會自動執行 C 和 C++ 語言所未提供的許多常見的程式設計工作。<br /><br /> 如需詳細資訊，請參閱 [C 執行階段程式庫參考](http://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8)。|  
 |**Visual C++ 2010 執行階段程式庫 (x86)**|這個套件會安裝適用於 x86 作業系統的 Visual C++ 執行階段程式庫，以提供 Microsoft Windows 作業系統程式設計所需的常式。 這些常式會自動執行 C 和 C++ 語言所未提供的許多常見的程式設計工作。<br /><br /> 如需詳細資訊，請參閱 [C 執行階段程式庫參考](http://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8)。|  
 |**Windows Installer 3.1**|這個套件會安裝 Microsoft Windows Installer 可轉散發套件 3.1 版，以允許安裝 Windows Installer 安裝專案。 Windows Server 2003 SP1 (含) 以後版本都會預先安裝這個套件。<br /><br /> 這個項目預設為選取。|  
 |**Windows Installer 4.5**|這個套件會安裝 Microsoft Windows Installer 可轉散發套件 4.5 版，以允許安裝 Windows Installer 安裝專案。|  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [專案設計工具、發行頁面](../../ide/reference/publish-page-project-designer.md)   
  [應用程式部署必要條件](../../deployment/application-deployment-prerequisites.md)   
  [轉散發 .NET Framework](http://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287)   

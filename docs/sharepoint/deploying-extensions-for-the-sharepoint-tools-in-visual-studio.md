@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2dd787168d906ce90a50562e5147b45308c54ff5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 53e36d993e72da759c87e7d2d2f908818b3d9024
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068544"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>部署適用於 Visual Studio 中 SharePoint 工具擴充功能
 
@@ -33,9 +33,9 @@ ms.locfileid: "57868055"
 
 您可以使用**VSIX 專案**Visual Studio SDK 來建立 VSIX 封裝 SharePoint 工具擴充功能所提供的範本。 使用 VSIX 專案透過手動建立 VSIX 封裝提供數個優點：
 
--   當您建置專案時，visual Studio 會自動產生 VSIX 封裝。 為您完成工作，例如將部署檔案新增至套件，以及建立封裝的 [Content_Types].xml 檔案。
+- 當您建置專案時，visual Studio 會自動產生 VSIX 封裝。 為您完成工作，例如將部署檔案新增至套件，以及建立封裝的 [Content_Types].xml 檔案。
 
--   您可以設定 VSIX 套件中包含擴充功能專案和其他檔案，例如專案範本和項目範本的建置輸出的 VSIX 專案。
+- 您可以設定 VSIX 套件中包含擴充功能專案和其他檔案，例如專案範本和項目範本的建置輸出的 VSIX 專案。
 
 如需使用 VSIX 專案的詳細資訊，請參閱 < [VSIX 專案範本](../extensibility/vsix-project-template.md)。
 
@@ -43,17 +43,17 @@ ms.locfileid: "57868055"
 
 根據預設，VSIX 專案只會產生 VSIX 封裝，而不是組件。 因此，您通常不會實作 SharePoint 工具擴充功能的 VSIX 專案中。 您通常會使用至少兩個專案：
 
--   VSIX 專案。
+- VSIX 專案。
 
--   實作您的擴充功能的類別庫專案。
+- 實作您的擴充功能的類別庫專案。
 
 您可能也使用其他專案針對特定類型的延伸模組：
 
--   實作您的延伸模組所使用的任何 SharePoint 命令的類別庫專案。 如需示範此案例的逐步解說，請參閱[逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
+- 實作您的延伸模組所使用的任何 SharePoint 命令的類別庫專案。 如需示範此案例的逐步解說，請參閱[逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
 
--   如果您的延伸模組會定義新類型的 SharePoint 專案項目建立項目範本或專案範本的項目範本或專案範本專案。 如需示範此案例的逐步解說，請參閱[逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。
+- 如果您的延伸模組會定義新類型的 SharePoint 專案項目建立項目範本或專案範本的項目範本或專案範本專案。 如需示範此案例的逐步解說，請參閱[逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。
 
--   如果您的延伸模組包含的範本實作的項目範本或專案範本的自訂精靈類別庫專案。 如需示範此案例的逐步解說，請參閱[逐步解說：建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。
+- 如果您的延伸模組包含的範本實作的項目範本或專案範本的自訂精靈類別庫專案。 如需示範此案例的逐步解說，請參閱[逐步解說：建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。
 
 如果您在相同的 Visual Studio 方案中包含的所有專案，您可以修改 source.extension.vsixmanifest 檔案中，在 VSIX 專案，以包含的類別庫專案的組建輸出。
 
@@ -63,77 +63,77 @@ ms.locfileid: "57868055"
 
 您必須在 source.extension.vsixmanifest 檔案中的下列項目中新增項目：
 
--   延伸模組組件中。
+- 延伸模組組件中。
 
--   實作您的延伸模組所使用的任何 SharePoint 命令的組件。
+- 實作您的延伸模組所使用的任何 SharePoint 命令的組件。
 
--   任何專案範本或與您的延伸模組相關聯的項目範本。
+- 任何專案範本或與您的延伸模組相關聯的項目範本。
 
--   範本與您的延伸模組相關聯的自訂精靈。
+- 範本與您的延伸模組相關聯的自訂精靈。
 
 下列程序描述如何將項目新增至的.vsixmanifest 檔案中，針對每個這些項目。
 
 #### <a name="to-include-the-extension-assembly"></a>包含延伸模組組件
 
-1.  在 VSIX 專案中，開啟 source.extension.vsixmanifest 檔案中，捷徑功能表，然後再選擇**開啟**。
+1. 在 VSIX 專案中，開啟 source.extension.vsixmanifest 檔案中，捷徑功能表，然後再選擇**開啟**。
 
      設計工具中開啟檔案
 
-2.  上**資產**索引標籤的 編輯器 中，選擇**新增** 按鈕。
+2. 上**資產**索引標籤的 編輯器 中，選擇**新增** 按鈕。
 
      **加入新資產**對話方塊隨即開啟。
 
-3.  在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。
+3. 在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。
 
-4.  在 **來源**清單中，執行下列步驟：
+4. 在 **來源**清單中，執行下列步驟：
 
-    -   如果延伸模組組件是從專案和 VSIX 專案相同的方案中，選擇**目前的方案中的專案**。 在 **專案**清單中，選擇專案的名稱。
+    - 如果延伸模組組件是從專案和 VSIX 專案相同的方案中，選擇**目前的方案中的專案**。 在 **專案**清單中，選擇專案的名稱。
 
-    -   如果延伸模組組件包含為您的專案中的檔案，請選擇**檔案系統上的**。 在 **路徑**清單中，延伸模組組件檔案中，輸入完整路徑或使用**瀏覽**按鈕，以找出並選擇 組件檔案。
+    - 如果延伸模組組件包含為您的專案中的檔案，請選擇**檔案系統上的**。 在 **路徑**清單中，延伸模組組件檔案中，輸入完整路徑或使用**瀏覽**按鈕，以找出並選擇 組件檔案。
 
-5.  選擇 [確定]  按鈕。
+5. 選擇 [確定]  按鈕。
 
 #### <a name="to-include-a-sharepoint-command-assembly"></a>要包含的 SharePoint 命令的組件
 
-1.  在 VSIX 專案中，開啟 source.extension.vsixmanifest 檔案中，捷徑功能表，然後再選擇**開啟** 按鈕。
+1. 在 VSIX 專案中，開啟 source.extension.vsixmanifest 檔案中，捷徑功能表，然後再選擇**開啟** 按鈕。
 
      在設計工具中，開啟檔案。
 
-2.  在 **資產**區段的編輯器中，選擇**新增**按鈕。
+2. 在 **資產**區段的編輯器中，選擇**新增**按鈕。
 
      **加入新資產**對話方塊隨即開啟。
 
-3.  在 **型別**方塊中，輸入**SharePoint.Commands.v4**。
+3. 在 **型別**方塊中，輸入**SharePoint.Commands.v4**。
 
-4.  在 **來源**清單中，執行下列步驟：
+4. 在 **來源**清單中，執行下列步驟：
 
-    -   如果從同一個 VSIX 專案與方案中的專案在建置命令組件，請選擇**目前的方案中的專案**。 在 **專案**清單中，選擇專案的名稱。
+    - 如果從同一個 VSIX 專案與方案中的專案在建置命令組件，請選擇**目前的方案中的專案**。 在 **專案**清單中，選擇專案的名稱。
 
-    -   如果命令組件包含為您的專案中的檔案，請選擇**檔案系統上的**。 在 **路徑**清單中，延伸模組組件檔案中，輸入完整路徑或使用**瀏覽**按鈕，以找出並選擇 組件檔案。
+    - 如果命令組件包含為您的專案中的檔案，請選擇**檔案系統上的**。 在 **路徑**清單中，延伸模組組件檔案中，輸入完整路徑或使用**瀏覽**按鈕，以找出並選擇 組件檔案。
 
-5.  選擇 [確定]  按鈕。
+5. 選擇 [確定]  按鈕。
 
 #### <a name="to-include-a-template-that-you-create"></a>若要包含您所建立的範本
 
-1.  在 VSIX 專案中，開啟 source.extension.vsixmanifest 檔案中，捷徑功能表，然後再選擇**開啟** 按鈕。
+1. 在 VSIX 專案中，開啟 source.extension.vsixmanifest 檔案中，捷徑功能表，然後再選擇**開啟** 按鈕。
 
      在設計工具中，開啟檔案。
 
-2.  在 **資產**區段的編輯器中，選擇**新增**按鈕。
+2. 在 **資產**區段的編輯器中，選擇**新增**按鈕。
 
      **加入新資產**對話方塊隨即開啟。
 
-3.  在 **型別**清單中，選擇**Microsoft.VisualStudio.ProjectTemplate**或是**Microsoft.VisualStudio.ItemTemplate**。
+3. 在 **型別**清單中，選擇**Microsoft.VisualStudio.ProjectTemplate**或是**Microsoft.VisualStudio.ItemTemplate**。
 
-4.  在 **來源**清單中，選擇**目前方案中的專案**。
+4. 在 **來源**清單中，選擇**目前方案中的專案**。
 
-5.  在 [**專案**清單中，選擇專案的名稱，然後選擇**確定**] 按鈕。
+5. 在 [**專案**清單中，選擇專案的名稱，然後選擇**確定**] 按鈕。
 
-6.  在 **方案總管**，開啟專案範本或項目範本專案的捷徑功能表，然後選擇**卸載專案**。
+6. 在 **方案總管**，開啟專案範本或項目範本專案的捷徑功能表，然後選擇**卸載專案**。
 
-7.  同樣地，開啟專案節點的捷徑功能表，然後選擇**編輯**_YourTemplateProjectName_**.csproj**或是**編輯**_YourTemplateProjectName_**.vbproj**。
+7. 同樣地，開啟專案節點的捷徑功能表，然後選擇**編輯**_YourTemplateProjectName_**.csproj**或是**編輯**_YourTemplateProjectName_**.vbproj**。
 
-8.  找出下列`VSTemplate`專案檔中的項目。
+8. 找出下列`VSTemplate`專案檔中的項目。
 
     ```xml
     <VSTemplate Include="YourTemplateName.vstemplate">
@@ -155,9 +155,9 @@ ms.locfileid: "57868055"
 
 #### <a name="to-include-a-template-that-you-create-manually"></a>若要包含您以手動方式建立的範本
 
-1.  在 VSIX 專案中，新增至專案，以包含範本的資料夾。
+1. 在 VSIX 專案中，新增至專案，以包含範本的資料夾。
 
-2.  在這個新的資料夾中，建立下列子資料夾中，，然後將範本 (.zip) 檔案來*地區設定識別碼*資料夾。
+2. 在這個新的資料夾中，建立下列子資料夾中，，然後將範本 (.zip) 檔案來*地區設定識別碼*資料夾。
 
      *YourTemplateFolder*
 
@@ -171,43 +171,43 @@ ms.locfileid: "57868055"
 
      例如，如果您擁有名為 ContosoCustomAction.zip 支援英文 （美國） 地區設定的項目範本，可能是完整的路徑*ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*。
 
-3.  在 **方案總管**，選擇的範本檔案 (*YourTemplateName*.zip)。
+3. 在 **方案總管**，選擇的範本檔案 (*YourTemplateName*.zip)。
 
-4.  在 **屬性**視窗中，將**建置動作**屬性設**內容**。
+4. 在 **屬性**視窗中，將**建置動作**屬性設**內容**。
 
-5.  開啟 source.extension.vsixmanifest 檔案中，捷徑功能表，然後選擇**開啟**。
+5. 開啟 source.extension.vsixmanifest 檔案中，捷徑功能表，然後選擇**開啟**。
 
      在設計工具中，開啟檔案。
 
-6.  在 **資產**區段的編輯器中，選擇**新增**按鈕。
+6. 在 **資產**區段的編輯器中，選擇**新增**按鈕。
 
      **加入新資產**對話方塊隨即開啟。
 
-7.  在 **型別**清單中，選擇**Microsoft.VisualStudio.ItemTemplate**或是**Microsoft.VisualStudio.ProjectTemplate**。
+7. 在 **型別**清單中，選擇**Microsoft.VisualStudio.ItemTemplate**或是**Microsoft.VisualStudio.ProjectTemplate**。
 
-8.  在 **來源**清單中，選擇**檔案系統上的**。
+8. 在 **來源**清單中，選擇**檔案系統上的**。
 
 9. 在**路徑**欄位中，輸入組件的完整路徑 (例如*ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*，或使用**瀏覽**按鈕來尋找和選擇組件，然後選擇**確定**  按鈕。
 
 #### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>包含專案範本或項目範本的精靈
 
-1.  在 VSIX 專案中，開啟 source.extension.vsixmanifest 檔案中，捷徑功能表，然後再選擇**開啟**。
+1. 在 VSIX 專案中，開啟 source.extension.vsixmanifest 檔案中，捷徑功能表，然後再選擇**開啟**。
 
      在設計工具中，開啟檔案。
 
-2.  在 **資產**區段的編輯器中，選擇**新增**按鈕。
+2. 在 **資產**區段的編輯器中，選擇**新增**按鈕。
 
      **加入新資產**對話方塊隨即開啟。
 
-3.  在 **型別**清單中，選擇**Microsoft.VisualStudio.Assembly**。
+3. 在 **型別**清單中，選擇**Microsoft.VisualStudio.Assembly**。
 
-4.  在 **來源**清單中，執行下列步驟：
+4. 在 **來源**清單中，執行下列步驟：
 
-    -   如果精靈組件是從專案和 VSIX 專案相同的方案中，選擇**目前的方案中的專案**。 在 **專案**清單中，選擇專案的名稱。
+    - 如果精靈組件是從專案和 VSIX 專案相同的方案中，選擇**目前的方案中的專案**。 在 **專案**清單中，選擇專案的名稱。
 
-    -   如果精靈組件包含為您的專案中的檔案，請選擇**檔案系統上的**。 在 **路徑**欄位，輸入完整路徑到組件檔案，或使用**瀏覽**按鈕，以找出並選擇 組件。
+    - 如果精靈組件包含為您的專案中的檔案，請選擇**檔案系統上的**。 在 **路徑**欄位，輸入完整路徑到組件檔案，或使用**瀏覽**按鈕，以找出並選擇 組件。
 
-5.  選擇 [確定]  按鈕。
+5. 選擇 [確定]  按鈕。
 
 ### <a name="related-walkthroughs"></a>相關的逐步解說
 
@@ -224,21 +224,21 @@ ms.locfileid: "57868055"
 
 如果您想要手動建立 VSIX 封裝，您的 SharePoint 工具擴充功能，請執行下列步驟：
 
-1.  新的資料夾中建立 extension.vsixmanifest 檔案和 [Content_Types].xml 檔案。 如需詳細資訊，請參閱 < [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)。
+1. 新的資料夾中建立 extension.vsixmanifest 檔案和 [Content_Types].xml 檔案。 如需詳細資訊，請參閱 < [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)。
 
-2.  在 Windows 檔案總管中，包含兩個 XML 檔案的資料夾上按一下滑鼠右鍵、 按一下 [傳送到]，然後按一下壓縮的 (zipped) 資料夾。 將產生的.zip 檔案的重新命名為 Filename.vsix，其中 Filename 是可轉散發檔案安裝封裝的名稱。
+2. 在 Windows 檔案總管中，包含兩個 XML 檔案的資料夾上按一下滑鼠右鍵、 按一下 [傳送到]，然後按一下壓縮的 (zipped) 資料夾。 將產生的.zip 檔案的重新命名為 Filename.vsix，其中 Filename 是可轉散發檔案安裝封裝的名稱。
 
-3.  將您的延伸模組組件新增至 VSIX 封裝中。 如果您的延伸模組包含 SharePoint 命令，也會新增實作 SharePoint 命令加入 VSIX 封裝的組件。
+3. 將您的延伸模組組件新增至 VSIX 封裝中。 如果您的延伸模組包含 SharePoint 命令，也會新增實作 SharePoint 命令加入 VSIX 封裝的組件。
 
-4.  修改 extension.vsixmanifest 檔案：
+4. 修改 extension.vsixmanifest 檔案：
 
-    -   新增`Microsoft.VisualStudio.MefComponent`項目底下`Assets`項目，然後再將設定要在 VSIX 封裝中實作您的延伸模組的組件的相對路徑的新項目值。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    - 新增`Microsoft.VisualStudio.MefComponent`項目底下`Assets`項目，然後再將設定要在 VSIX 封裝中實作您的延伸模組的組件的相對路徑的新項目值。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
-    -   如果您的延伸模組包含可呼叫伺服器物件模型，適用於 SharePoint 的 SharePoint 命令，新增`Microsoft.VisualStudio.Assembly`項目底下`Assets`項目。 新項目的值設成 VSIX 封裝中實作之 SharePoint 命令的組件的相對路徑。 如需詳細資訊，請參閱 <<c0> [ 資產項目 （VSX 結構描述）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。
+    - 如果您的延伸模組包含可呼叫伺服器物件模型，適用於 SharePoint 的 SharePoint 命令，新增`Microsoft.VisualStudio.Assembly`項目底下`Assets`項目。 新項目的值設成 VSIX 封裝中實作之 SharePoint 命令的組件的相對路徑。 如需詳細資訊，請參閱 <<c0> [ 資產項目 （VSX 結構描述）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。
 
-    -   如果您的延伸模組包含專案範本或項目範本，將`ProjectTemplate`或是`ItemTemplate`下方的項目`Assets`項目。 新項目的值設為包含在 VSIX 套件中的範本的資料夾的相對路徑。 如需詳細資訊，請參閱 < [ProjectTemplate 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))並[ItemTemplate 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))。
+    - 如果您的延伸模組包含專案範本或項目範本，將`ProjectTemplate`或是`ItemTemplate`下方的項目`Assets`項目。 新項目的值設為包含在 VSIX 套件中的範本的資料夾的相對路徑。 如需詳細資訊，請參閱 < [ProjectTemplate 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))並[ItemTemplate 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))。
 
-    -   如果您的延伸模組包含專案範本或項目範本的自訂精靈，加入`Assembly`項目底下`Assets`項目。 將新項目的值設定為在 VSIX 封裝中，組件的相對路徑，然後設定`AssemblyName`屬性 （包括版本、 文化特性和公開金鑰語彙基元） 的完整組件名稱。 如需詳細資訊，請參閱 <<c0> [ 相依性項目 （VSX 結構描述）](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37)。
+    - 如果您的延伸模組包含專案範本或項目範本的自訂精靈，加入`Assembly`項目底下`Assets`項目。 將新項目的值設定為在 VSIX 封裝中，組件的相對路徑，然後設定`AssemblyName`屬性 （包括版本、 文化特性和公開金鑰語彙基元） 的完整組件名稱。 如需詳細資訊，請參閱 <<c0> [ 相依性項目 （VSX 結構描述）](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37)。
 
 ### <a name="example"></a>範例
 

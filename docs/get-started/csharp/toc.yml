@@ -1,60 +1,53 @@
-items:
-- name: C# 教學課程
+- name: 'C# 教學課程'
   href: index.yml
   items:
-  - name: 總覽
-    items:
-    - name: Visual Studio 概觀
-      href: visual-studio-ide.md
-    - name: 程式碼編輯器概觀
-      href: tutorial-editor.md
-    - name: 專案與解決方案概觀
-      href: tutorial-projects-solutions.md
-    - name: 更多 Visual Studio 功能
-      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-  - name: 建立應用程式
-    items:
-    - name: 建立您的第一個 C# 應用程式
-      href: tutorial-console.md
-    - name: 建立 Web 應用程式
-      href: tutorial-aspnet-core.md
-    - name: 建立 UWP 應用程式
-      href: tutorial-uwp.md
-    - name: 建立 WPF 應用程式
-      href: tutorial-wpf.md
-    - name: 影片教學課程 - 建立 ASP.NET Core Web 應用程式
+    - name: 總覽
       items:
-      - name: 1 - 安裝 Visual Studio
-        href: tutorial-aspnet-core-ef-step-01.md
-      - name: 2 - 建立第一個 ASP.NET Core Web 應用程式
-        href: tutorial-aspnet-core-ef-step-02.md
-      - name: 3 - 使用資料
-        href: tutorial-aspnet-core-ef-step-03.md
-      - name: 4 - 公開 Web API
-        href: tutorial-aspnet-core-ef-step-04.md
-      - name: 5 - 將 ASP.NET Core 應用程式部署至 Azure
-        href: tutorial-aspnet-core-ef-step-05.md
-    expanded: true
-  - name: 了解 Visual Studio
-    items:
-    - name: 從存放庫開啟專案
-      href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-    - name: 撰寫和編輯程式碼
-      href: tutorial-editor.md
-    - name: 編譯和建置
-      href: ../../ide/compiling-and-building-in-visual-studio.md
-    - name: 偵錯程式碼
-      href: ../csharp/tutorial-debugger.md
-    - name: 單元測試
-      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-    - name: 部署您的專案
-      href: ../../deployment/index.md
-    - name: 存取資料
-      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-    expanded: true
-ms.openlocfilehash: cb9f6575183977a63224f7333c95fef18a0fd779
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018125"
+        - name: Visual Studio 概觀
+          href: visual-studio-ide.md
+        - name: 程式碼編輯器概觀
+          href: tutorial-editor.md
+        - name: 專案與解決方案概觀
+          href: tutorial-projects-solutions.md
+        - name: 更多 Visual Studio 功能
+          href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
+    - name: 建立應用程式
+      expanded: true
+      items:
+        - name: '建立您的第一個 C# 應用程式'
+          href: tutorial-console.md
+        - name: 建立 Web 應用程式
+          href: tutorial-aspnet-core.md
+        - name: 建立 UWP 應用程式
+          href: tutorial-uwp.md
+        - name: 建立 WPF 應用程式
+          href: tutorial-wpf.md
+        - name: 影片教學課程 - 建立 ASP.NET Core Web 應用程式
+          items:
+            - name: 1 - 安裝 Visual Studio
+              href: tutorial-aspnet-core-ef-step-01.md
+            - name: 2 - 建立第一個 ASP.NET Core Web 應用程式
+              href: tutorial-aspnet-core-ef-step-02.md
+            - name: 3 - 使用資料
+              href: tutorial-aspnet-core-ef-step-03.md
+            - name: 4 - 公開 Web API
+              href: tutorial-aspnet-core-ef-step-04.md
+            - name: 5 - 將 ASP.NET Core 應用程式部署至 Azure
+              href: tutorial-aspnet-core-ef-step-05.md
+    - name: 了解 Visual Studio
+      expanded: true
+      items:
+        - name: 從存放庫開啟專案
+          href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
+        - name: 撰寫和編輯程式碼
+          href: tutorial-editor.md
+        - name: 編譯和建置
+          href: ../../ide/compiling-and-building-in-visual-studio.md
+        - name: 偵錯程式碼
+          href: ../csharp/tutorial-debugger.md
+        - name: 單元測試
+          href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
+        - name: 部署您的專案
+          href: ../../deployment/index.md
+        - name: 存取資料
+          href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json

@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4d9636a29485430be92ab622ae8ce56712f22aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c41dc9df835cc3799a35620730927b338224ea14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756855"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045040"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>設計和檢視類別與類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "54756855"
   
  以下是您可以使用類別圖表來執行之工作的相關資訊：  
   
--   **設計**：藉由編輯類別圖表來編輯您的專案程式碼。 加入新元素，並刪除不需要的元素。 您的變更會反映在程式碼中。  
+- **設計**：藉由編輯類別圖表來編輯您的專案程式碼。 加入新元素，並刪除不需要的元素。 您的變更會反映在程式碼中。  
   
--   **視覺化**：在圖表上檢視專案中的類別，以了解專案的結構。 自訂您的圖表，讓您可以專注在您最關心的專案詳細資料。 儲存您的圖表，以供日後用於示範或說明文件。  
+- **視覺化**：在圖表上檢視專案中的類別，以了解專案的結構。 自訂您的圖表，讓您可以專注在您最關心的專案詳細資料。 儲存您的圖表，以供日後用於示範或說明文件。  
   
--   **重構**：覆寫方法、重新命名識別碼、重構參數，以及實作介面和抽象類別。  
+- **重構**：覆寫方法、重新命名識別碼、重構參數，以及實作介面和抽象類別。  
   
 ## <a name="in-this-section"></a>本節內容  
  [使用類別和其他類型 (類別設計工具)](../ide/working-with-classes-and-other-types-class-designer.md)  

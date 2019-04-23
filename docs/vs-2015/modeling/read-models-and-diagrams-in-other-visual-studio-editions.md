@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073523"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中讀取模型和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,16 +35,16 @@ ms.locfileid: "58940542"
   
  若要讀取 UML 圖表或分層圖，您需要的最小檔案集如下：  
   
--   兩個圖表檔，例如，想要讀取之圖表**MyDiagram.classdiagram 和 MyDiagram.classdiagram.layout**。  
+- 兩個圖表檔，例如，想要讀取之圖表**MyDiagram.classdiagram 和 MyDiagram.classdiagram.layout**。  
   
     > [!NOTE]
     >  對於分層圖，您應該也有檔案，稱為_MyDiagram_**。 layerdiagram.suppressions**。  
   
--   模型專案檔 (**MyModel.modelproj**)  
+- 模型專案檔 (**MyModel.modelproj**)  
   
--   根模型檔 (**ModelDefinition\MyModel.uml**)  
+- 根模型檔 (**ModelDefinition\MyModel.uml**)  
   
--   在圖表中所參考之任何套件的套件檔案 (**ModelDefinition\MyPackage.uml**)  
+- 在圖表中所參考之任何套件的套件檔案 (**ModelDefinition\MyPackage.uml**)  
   
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>您可以在唯讀模式中進行的變更  
  如果您在不支援模型建立的 Visual Studio 版本中開啟模型和其圖表，則無法變更模型。 也就是說，您無法變更圖表或模型總管中所顯示的項目和關聯性。 不過，您可以對圖表的版面配置進行一些變更：  
@@ -55,7 +55,7 @@ ms.locfileid: "58940542"
   
   您可以儲存這些變更。 如果您想要讓您變更其他使用者看到，您必須至少傳送更新過 **.layout**檔案。  
   
-##  <a name="RelatedTopics"></a> 相關主題  
+## <a name="RelatedTopics"></a> 相關主題  
   
 |標題|描述|  
 |-----------|-----------------|  

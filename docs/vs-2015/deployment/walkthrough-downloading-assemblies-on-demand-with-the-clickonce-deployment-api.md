@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 767c1b93972a5e8fc78b7de46a69d8f464fe85cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55dfa9a360d33a73b6298f186d12810f8510b1fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945048"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063552"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：依需求以 ClickOnce 部署 API 下載組件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,34 +35,34 @@ ms.locfileid: "58945048"
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件，才能完成此逐步解說的其中一個：  
   
--   Windows SDK 中。 可以從 Microsoft 下載中心下載 Windows SDK。  
+- Windows SDK 中。 可以從 Microsoft 下載中心下載 Windows SDK。  
   
--   Visual Studio。  
+- Visual Studio。  
   
 ## <a name="creating-the-projects"></a>建立專案  
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly"></a>若要建立使用隨組件的專案  
   
-1.  建立名為 ClickOnceOnDemand 的目錄。  
+1. 建立名為 ClickOnceOnDemand 的目錄。  
   
-2.  開啟 Windows SDK 命令提示字元或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]命令提示字元。  
+2. 開啟 Windows SDK 命令提示字元或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]命令提示字元。  
   
-3.  切換至 ClickOnceOnDemand 目錄。  
+3. 切換至 ClickOnceOnDemand 目錄。  
   
-4.  產生公開/私密金鑰的金鑰組，使用下列命令：  
+4. 產生公開/私密金鑰的金鑰組，使用下列命令：  
   
     ```  
     sn -k TestKey.snk  
     ```  
   
-5.  使用 [記事本] 或其他文字編輯器，定義名為類別`DynamicClass`具有單一屬性，名為`Message`。  
+5. 使用 [記事本] 或其他文字編輯器，定義名為類別`DynamicClass`具有單一屬性，名為`Message`。  
   
      [!code-csharp[ClickOnceLibrary#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs#1)]
      [!code-vb[ClickOnceLibrary#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb#1)]  
   
-6.  將文字儲存的檔案名稱`ClickOnceLibrary.cs`或`ClickOnceLibrary.vb`，取決於您所使用之語言，ClickOnceOnDemand 目錄。  
+6. 將文字儲存的檔案名稱`ClickOnceLibrary.cs`或`ClickOnceLibrary.vb`，取決於您所使用之語言，ClickOnceOnDemand 目錄。  
   
-7.  將檔案編譯成組件。  
+7. 將檔案編譯成組件。  
   
     ```csharp  
     csc /target:library /keyfile:TestKey.snk ClickOnceLibrary.cs  
@@ -72,7 +72,7 @@ ms.locfileid: "58945048"
     vbc /target:library /keyfile:TestKey.snk ClickOnceLibrary.vb  
     ```  
   
-8.  若要取得組件的公開金鑰語彙基元，請使用下列命令：  
+8. 若要取得組件的公開金鑰語彙基元，請使用下列命令：  
   
     ```  
     sn -T ClickOnceLibrary.dll  
@@ -103,31 +103,31 @@ ms.locfileid: "58945048"
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>使用 MageUI.exe 中標示為 ClickOnce 應用程式中的選用組件  
   
-1.  使用 MageUI.exe 建立應用程式資訊清單中所述[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 應用程式資訊清單，請使用下列設定：  
+1. 使用 MageUI.exe 建立應用程式資訊清單中所述[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 應用程式資訊清單，請使用下列設定：  
   
-    -   命名應用程式資訊清單`ClickOnceOnDemand`。  
+    - 命名應用程式資訊清單`ClickOnceOnDemand`。  
   
-    -   上**檔案**頁面上，ClickOnceLibrary.dll 資料列集中**檔案類型**資料行**None**。  
+    - 上**檔案**頁面上，ClickOnceLibrary.dll 資料列集中**檔案類型**資料行**None**。  
   
-    -   在上**檔案**頁面上，在 ClickOnceLibrary.dll 列中，型別`ClickOnceLibrary.dll`中**群組**資料行。  
+    - 在上**檔案**頁面上，在 ClickOnceLibrary.dll 列中，型別`ClickOnceLibrary.dll`中**群組**資料行。  
   
-2.  使用 MageUI.exe 建立部署資訊清單中所述[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 部署資訊清單，請使用下列設定：  
+2. 使用 MageUI.exe 建立部署資訊清單中所述[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 部署資訊清單，請使用下列設定：  
   
-    -   命名的部署資訊清單`ClickOnceOnDemand`。  
+    - 命名的部署資訊清單`ClickOnceOnDemand`。  
   
 ## <a name="testing-the-new-assembly"></a>測試新的組件  
   
 #### <a name="to-test-your-on-demand-assembly"></a>測試隨選組件  
   
-1.  上傳您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署至 Web 伺服器。  
+1. 上傳您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署至 Web 伺服器。  
   
-2.  啟動您的應用程式與部署[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]從網頁瀏覽器輸入 URL 的部署資訊清單。 如果您呼叫您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式`ClickOnceOnDemand`，而且您將它上傳至 adatum.com 的根目錄，您的 URL 看起來像這樣：  
+2. 啟動您的應用程式與部署[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]從網頁瀏覽器輸入 URL 的部署資訊清單。 如果您呼叫您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]應用程式`ClickOnceOnDemand`，而且您將它上傳至 adatum.com 的根目錄，您的 URL 看起來像這樣：  
   
     ```  
     http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
     ```  
   
-3.  您的主要表單出現時，請按 <xref:System.Windows.Forms.Button>。 您應該會在訊息方塊視窗中看見內容為 "Hello, World!" 的字串。  
+3. 您的主要表單出現時，請按 <xref:System.Windows.Forms.Button>。 您應該會在訊息方塊視窗中看見內容為 "Hello, World!" 的字串。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.Deployment.Application.ApplicationDeployment>

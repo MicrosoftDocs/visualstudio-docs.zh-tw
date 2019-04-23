@@ -17,23 +17,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e635c7b57bc8653184e5a929c2a87f228056fb82
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1ba57c1578bd69d71ed0abdac45907d937b89ecb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782560"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668182"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 將 XPath 查詢所指定的值設定至 XML 檔案。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `XmlPoke` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`Namespaces`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢前置詞的命名空間。|  
 |`Query`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢。|  

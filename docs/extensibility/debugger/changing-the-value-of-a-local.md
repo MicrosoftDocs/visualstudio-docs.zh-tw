@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9abd8a08fc8e9dfbf23ad96e1087d4a8d5105ce9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf90a2c03112cb2d3a935a9721f455ec976803c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041739"
 ---
 # <a name="change-the-value-of-a-local"></a>變更區域變數的值
 > [!IMPORTANT]
@@ -30,13 +30,13 @@ ms.locfileid: "56702690"
 
 2. `IDebugProperty2::SetValueAsString` 會執行下列工作：
 
-   1.  會評估要產生值的字串。
+   1. 會評估要產生值的字串。
 
-   2.  繫結相關聯[IDebugField](../../extensibility/debugger/reference/idebugfield.md)物件取得[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件。
+   2. 繫結相關聯[IDebugField](../../extensibility/debugger/reference/idebugfield.md)物件取得[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件。
 
-   3.  將值轉換成一系列的位元組。
+   3. 將值轉換成一系列的位元組。
 
-   4.  呼叫[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)將放入記憶體的值的位元組，因此正在偵錯程式可以存取它們。
+   4. 呼叫[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)將放入記憶體的值的位元組，因此正在偵錯程式可以存取它們。
 
 3. Visual Studio 會重新整理**區域變數**顯示 (請參閱[顯示區域變數](../../extensibility/debugger/displaying-locals.md)如需詳細資訊)。
 

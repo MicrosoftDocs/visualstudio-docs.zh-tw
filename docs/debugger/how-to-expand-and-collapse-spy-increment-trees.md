@@ -1,5 +1,5 @@
 ---
-title: 如何： 展開和摺疊 Spy + + 樹狀結構 |Microsoft Docs
+title: HOW TO：展開和摺疊 Spy + + 樹狀結構 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a99a221199d2e02b66fd717cdd722091bd724eea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 786c71f568bc44eeecdd44dfd91462ad00dda445
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687597"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071183"
 ---
-# <a name="how-to-expand-and-collapse-spy-trees"></a>如何：展開和摺疊 Spy++ 樹狀結構
-您可以展開和摺疊方法有兩種 Windows、 處理序和執行緒檢視： 藉由在視窗中，或使用的圖示上按一下**樹狀結構**功能表。 + 和-您也可以在樹狀目錄中的圖示做為 Visual c + + 的 [專案] 視窗中。
+# <a name="how-to-expand-and-collapse-spy-trees"></a>HOW TO：展開和摺疊 Spy++ 樹狀結構
+您可以展開和摺疊方法有兩種 Windows、 處理序和執行緒檢視： 藉由在視窗中，或使用的圖示上按一下**樹狀結構**功能表。 + 和-視覺效果中所顯示的一樣，採取行動在樹狀目錄中的圖示C++[專案] 視窗。
 
  **樹狀結構**功能表包含四個命令：
 
-|功能表命令|說明|
+|功能表命令|描述|
 |------------------|-----------------|
 |[展開一層]|展開目前選取的項目上一層樓。|
 |**展開分支**|完全展開目前選取的項目。|
@@ -34,11 +34,11 @@ ms.locfileid: "56687597"
 
 ### <a name="to-expand-or-collapse-spy-trees"></a>若要展開或摺疊 Spy + + 樹狀結構
 
-1.  反白顯示在 Windows、 處理序或執行緒 檢視中的項目。
+1. 反白顯示在 Windows、 處理序或執行緒 檢視中的項目。
 
-2.  從**樹狀結構** 功能表中，選擇其中一個展開或摺疊命令。
+2. 從**樹狀結構** 功能表中，選擇其中一個展開或摺疊命令。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [使用 Spy++](../debugger/using-spy-increment.md)
 - [Spy++ 檢視](../debugger/spy-increment-views.md)
 - [Spy++ 參考](../debugger/spy-increment-reference.md)

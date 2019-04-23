@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2ef9eaa8e0921d8ff463478a42eca688d4b952b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85aadaca762983b193e42ec2469f88a429a4e532
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111736"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303:不要將常值當作已當地語系化的參數傳遞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58943499"
 
  字串常值當做值傳遞至參數或屬性，且在一或多個下列情況下，則為 true 時，會引發此警告：
 
--   <xref:System.ComponentModel.LocalizableAttribute>參數或屬性的屬性設定為 true。
+- <xref:System.ComponentModel.LocalizableAttribute>參數或屬性的屬性設定為 true。
 
--   參數或屬性名稱中包含 「 文字 」、 「 訊息 」，或 「 標題 」。
+- 參數或屬性名稱中包含 「 文字 」、 「 訊息 」，或 「 標題 」。
 
--   「 值 」 或"format"字串參數傳遞至 Console.Write 或 Console.WriteLine 方法的名稱。
+- 「 值 」 或"format"字串參數傳遞至 Console.Write 或 Console.WriteLine 方法的名稱。
 
 ## <a name="rule-description"></a>規則描述
  內嵌在原始程式碼中的字串常值很難進行當地語系化。

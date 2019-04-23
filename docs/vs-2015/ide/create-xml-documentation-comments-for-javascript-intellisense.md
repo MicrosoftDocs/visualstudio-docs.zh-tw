@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 613a1ac89242daeee9b6647f63946eae23c9af1e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7b13931746cc9668ea18ead71babd5140e971818
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802054"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079275"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>建立 JavaScript IntelliSense 的 XML 文件註解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54802054"
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>若要建立 XML 文件註解，JavaScript 函式  
   
--   在函數中，新增[\<摘要 >](../ide/summary-javascript.md)， [ \<param >](../ide/param-javascript.md)，並[\<傳回 >](../ide/returns-javascript.md)項目，並在與每個項目之前三個斜線 （/ /）。  
+- 在函數中，新增[\<摘要 >](../ide/summary-javascript.md)， [ \<param >](../ide/param-javascript.md)，並[\<傳回 >](../ide/returns-javascript.md)項目，並在與每個項目之前三個斜線 （/ /）。  
   
     > [!NOTE]
     >  每個項目必須是單一行。  
@@ -52,7 +52,7 @@ ms.locfileid: "54802054"
     }  
     ```  
   
--   若要檢視 XML 文件註解，請輸入名稱和標記使用 XML 文件註解，如下列範例所示的函式的左括號：  
+- 若要檢視 XML 文件註解，請輸入名稱和標記使用 XML 文件註解，如下列範例所示的函式的左括號：  
   
     ```javascript  
     var areaVal = getArea(  
@@ -62,7 +62,7 @@ ms.locfileid: "54802054"
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-field"></a>若要建立 JavaScript 欄位的 XML 文件註解  
   
--   在建構函式函式或物件定義中，新增[\<欄位 >](../ide/field-javascript.md)項目加上三個斜線 （/ /）。  
+- 在建構函式函式或物件定義中，新增[\<欄位 >](../ide/field-javascript.md)項目加上三個斜線 （/ /）。  
   
      下列範例示範使用`<field>`建構函式中的項目。 如需其他範例，請參閱 < [\<欄位 >](../ide/field-javascript.md)。  
   
@@ -73,13 +73,13 @@ ms.locfileid: "54802054"
     }  
     ```  
   
--   若要檢視 XML 文件註解，請使用 XML 文件註解，如下列範例所示使用標示的函式建構函式建立物件。  
+- 若要檢視 XML 文件註解，請使用 XML 文件註解，如下列範例所示使用標示的函式建構函式建立物件。  
   
     ```javascript  
     var eng = new Engine();  
     ```  
   
--   在下一行中，輸入名稱的物件和句點，以顯示欄位的 IntelliSense 資訊。  
+- 在下一行中，輸入名稱的物件和句點，以顯示欄位的 IntelliSense 資訊。  
   
     ```javascript  
     eng.  
@@ -87,7 +87,7 @@ ms.locfileid: "54802054"
   
 ### <a name="to-create-xml-documentation-comments-for-an-overloaded-function"></a>若要建立的多載的函式的 XML 文件註解  
   
-1.  在函數中，新增[\<簽章 >](../ide/signature-javascript.md)每個多載的項目。 在這些項目中，加入其他項目，例如`<summary>`， `<param>`，和`<returns>`，上述每個項目使用三個斜線 （/ /）。  
+1. 在函數中，新增[\<簽章 >](../ide/signature-javascript.md)每個多載的項目。 在這些項目中，加入其他項目，例如`<summary>`， `<param>`，和`<returns>`，上述每個項目使用三個斜線 （/ /）。  
   
      下列範例會示範多載的 JavaScript 函式。 在此範例中，多載參數類型不同。  
   
@@ -107,7 +107,7 @@ ms.locfileid: "54802054"
     }  
     ```  
   
-2.  若要檢視 XML 文件註解，請輸入名稱和標記使用 XML 文件註解，如下列範例所示的函式的左括號：  
+2. 若要檢視 XML 文件註解，請輸入名稱和標記使用 XML 文件註解，如下列範例所示的函式的左括號：  
   
     ```javascript  
     calc(  
@@ -115,7 +115,7 @@ ms.locfileid: "54802054"
   
 ### <a name="to-create-localized-intellisense"></a>若要建立當地語系化的 IntelliSense  
   
-1.  建立具有 OpenAjax MessageBundle 格式文件註解的 XML 檔案。  
+1. 建立具有 OpenAjax MessageBundle 格式文件註解的 XML 檔案。  
   
     > [!IMPORTANT]
     >  MessageBundle 是建議的格式。 在 Microsoft Ajax 或.winmd 檔案中不支援這種格式。 如需使用替代方法`VSDoc`格式，請參閱 < [ \<loc >](../ide/loc-javascript.md)。  
@@ -131,14 +131,14 @@ ms.locfileid: "54802054"
   
     ```  
   
-2.  在.js 檔案中，新增下列程式碼。 `<loc>`項目之前的任何指令碼，必須先宣告，並遵循相同的使用方式規則`<reference>`項目。 如需詳細資訊，請參閱 < [JavaScript IntelliSense](../ide/javascript-intellisense.md)並[ \<loc >](../ide/loc-javascript.md)。  
+2. 在.js 檔案中，新增下列程式碼。 `<loc>`項目之前的任何指令碼，必須先宣告，並遵循相同的使用方式規則`<reference>`項目。 如需詳細資訊，請參閱 < [JavaScript IntelliSense](../ide/javascript-intellisense.md)並[ \<loc >](../ide/loc-javascript.md)。  
   
     ```javascript  
     /// <loc filename="messageFilename.xml" format="messagebundle"/>  
   
     ```  
   
-3.  在.js 檔案中，新增的 XML 文件項目及預設描述。 設定`locid`屬性值，以符合對應`name`側車檔案中的屬性值。 當地語系化的 IntelliSense 資訊，請將取代預設的描述，如果有的話。  
+3. 在.js 檔案中，新增的 XML 文件項目及預設描述。 設定`locid`屬性值，以符合對應`name`側車檔案中的屬性值。 當地語系化的 IntelliSense 資訊，請將取代預設的描述，如果有的話。  
   
     ```javascript  
     function add(a,b)   
@@ -150,13 +150,13 @@ ms.locfileid: "54802054"
   
     ```  
   
-4.  若要檢視 XML 文件註解，請輸入名稱和左括號的函式，如下列範例所示：  
+4. 若要檢視 XML 文件註解，請輸入名稱和左括號的函式，如下列範例所示：  
   
     ```javascript  
     add(  
     ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [XML 文件註解](../ide/xml-documentation-comments-javascript.md)   
  [NIB：逐步解說：在 ASP.NET 中的 JavaScript IntelliSense](http://msdn.microsoft.com/4f6e0cc2-7f48-4dbf-abb0-7fb743a2d05b)

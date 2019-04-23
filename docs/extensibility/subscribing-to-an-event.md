@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2d6f5259b44421d0a88fbfadae5930592e589c8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 70b0be3caca70e7a0dbf6f113cb5658169011d7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105099"
 ---
 # <a name="subscribing-to-an-event"></a>訂閱事件
 本逐步解說說明如何建立回應事件而執行的文件資料表 (RDT) 中的工具視窗。 工具視窗裝載使用者控制項，可實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>方法會將介面連接到事件。
@@ -28,13 +28,13 @@ ms.locfileid: "56697035"
 
 #### <a name="to-create-an-extension-with-a-tool-window"></a>若要建立擴充功能與工具視窗
 
-1.  建立專案，名為**RDTExplorer**使用 [VSIX] 範本，然後新增名為的自訂工具視窗項目範本**RDTExplorerWindow**。
+1. 建立專案，名為**RDTExplorer**使用 [VSIX] 範本，然後新增名為的自訂工具視窗項目範本**RDTExplorerWindow**。
 
      如需使用工具視窗建立擴充功能的詳細資訊，請參閱[工具視窗建立擴充](../extensibility/creating-an-extension-with-a-tool-window.md)。
 
 #### <a name="to-subscribe-to-rdt-events"></a>訂閱 RDT 事件
 
-1.  開啟 RDTExplorerWindowControl.xaml 檔案，並刪除名為按鈕`button1`。 新增<xref:System.Windows.Forms.ListBox>控制項，並接受預設名稱。 方格項目看起來應該像這樣：
+1. 開啟 RDTExplorerWindowControl.xaml 檔案，並刪除名為按鈕`button1`。 新增<xref:System.Windows.Forms.ListBox>控制項，並接受預設名稱。 方格項目看起來應該像這樣：
 
     ```xml
     <Grid>
@@ -45,7 +45,7 @@ ms.locfileid: "56697035"
     </Grid>
     ```
 
-2.  程式碼檢視中開啟 RDTExplorerWindow.cs 檔案。 新增下列 using 陳述式開頭的檔案。
+2. 程式碼檢視中開啟 RDTExplorerWindow.cs 檔案。 新增下列 using 陳述式開頭的檔案。
 
     ```csharp
     using Microsoft.VisualStudio;
@@ -53,24 +53,24 @@ ms.locfileid: "56697035"
     using Microsoft.VisualStudio.Shell.Interop;
     ```
 
-3.  修改`RDTExplorerWindow`類別，因此，除了衍生自<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>類別，它會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>介面。
+3. 修改`RDTExplorerWindow`類別，因此，除了衍生自<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>類別，它會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>介面。
 
     ```csharp
     public class RDTExplorerWindow : ToolWindowPane, IVsRunningDocTableEvents
     {. . .}
     ```
 
-4.  實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>。
+4. 實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>。
 
-    -   實作介面。 您可以將游標置於 IVsRunningDocTableEvents 名稱。 您應該會看到燈泡左邊界中。 按一下燈泡右邊的向下箭號，然後選取**實作介面**。
+    - 實作介面。 您可以將游標置於 IVsRunningDocTableEvents 名稱。 您應該會看到燈泡左邊界中。 按一下燈泡右邊的向下箭號，然後選取**實作介面**。
 
-5.  在介面中每個方法中，取代行`throw new NotImplementedException();`以此方式：
+5. 在介面中每個方法中，取代行`throw new NotImplementedException();`以此方式：
 
     ```csharp
     return VSConstants.S_OK;
     ```
 
-6.  Cookie 將欄位加入 RDTExplorerWindow 類別。
+6. Cookie 將欄位加入 RDTExplorerWindow 類別。
 
     ```csharp
     private uint rdtCookie;
@@ -78,7 +78,7 @@ ms.locfileid: "56697035"
 
      這個屬性所傳回的 cookie 會存放<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>方法。
 
-7.  覆寫 RDTExplorerWindow initialize （） 方法，以註冊 RDT 事件。 您一律應在 ToolWindowPane 的 initialize （） 方法中，不是在建構函式取得服務。
+7. 覆寫 RDTExplorerWindow initialize （） 方法，以註冊 RDT 事件。 您一律應在 ToolWindowPane 的 initialize （） 方法中，不是在建構函式取得服務。
 
     ```csharp
     protected override void Initialize()
@@ -91,7 +91,7 @@ ms.locfileid: "56697035"
 
      <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>服務呼叫以取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable>介面。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>方法將 RDT 事件連接至該物件會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>，在此案例中，RDTExplorer 物件。
 
-8.  更新 RDTExplorerWindow 的 dispose （） 方法。
+8. 更新 RDTExplorerWindow 的 dispose （） 方法。
 
     ```csharp
     protected override void Dispose(bool disposing)

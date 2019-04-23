@@ -10,12 +10,12 @@ ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cbce5c13c51747a08b3832440ef91ace3d6a89c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0bb90723a72c10dbf6cfda5edd4aa68f71f1c6b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930250"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098126"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>調整至編輯器的舊版程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +75,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-create-an-adapter-for-ivstextview"></a>若要建立用於 IVsTextView 配接器  
   
-1.  加入 Microsoft.VisualStudio.Editor.dll 的參考。 請確定`CopyLocal`設為`false`。  
+1. 加入 Microsoft.VisualStudio.Editor.dll 的參考。 請確定`CopyLocal`設為`false`。  
   
-2.  具現化<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>、，如下所示。  
+2. 具現化<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>、，如下所示。  
   
     ```  
     using Microsoft.VisualStudio.Editor;  
@@ -85,7 +85,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     IVsEditorAdaptersFactoryService adapterFactoryService = ComponentModel.GetService<IVsEditorAdaptersFactoryService>();  
     ```  
   
-3.  呼叫 `CreateX()` 方法。  
+3. 呼叫 `CreateX()` 方法。  
   
     ```  
     adapterFactoryService.CreateTextViewAdapter(textView);  
@@ -96,9 +96,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-get-an-ivxtextbuffer"></a>若要取得 IVxTextBuffer  
   
-1.  IVx * 介面的定義位於 VSEditor.h 檔案...Visual Studio SDK 安裝 \VisualStudioIntegration\Common\Inc\ 資料夾。  
+1. IVx * 介面的定義位於 VSEditor.h 檔案...Visual Studio SDK 安裝 \VisualStudioIntegration\Common\Inc\ 資料夾。  
   
-2.  下列程式碼會具現化的文字緩衝區使用`IVsUserData->GetData()`方法。 下列程式碼中，`pData`是一個指向`IVsUserData`物件。  
+2. 下列程式碼會具現化的文字緩衝區使用`IVsUserData->GetData()`方法。 下列程式碼中，`pData`是一個指向`IVsUserData`物件。  
   
     ```  
     #include <textmgr.h>  
@@ -125,9 +125,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>若要使用 Visual Studio 編輯器元件，從非 MEF 元件  
   
-1.  加入 Microsoft.VisualStudio.ComponentModelHost.dll 組件中的參考...Visual Studio 安裝 \Common7\IDE\ 資料夾。 請確定`CopyLocal`設為`false`。  
+1. 加入 Microsoft.VisualStudio.ComponentModelHost.dll 組件中的參考...Visual Studio 安裝 \Common7\IDE\ 資料夾。 請確定`CopyLocal`設為`false`。  
   
-2.  新增私用`IComponentModel`您要使用 Visual Studio 編輯器服務，如下所示的類別的成員。  
+2. 新增私用`IComponentModel`您要使用 Visual Studio 編輯器服務，如下所示的類別的成員。  
   
     ```  
     using Microsoft.VisualStudio.ComponentModelHost;  
@@ -135,14 +135,14 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     private IComponentModel componentModel;  
     ```  
   
-3.  具現化元件模型，您的元件的初始化方法中。  
+3. 具現化元件模型，您的元件的初始化方法中。  
   
     ```  
     componentModel =  
      (IComponentModel)Package.GetGlobalService(typeof(SComponentModel));  
     ```  
   
-4.  在此之後，您可以取得任何其中一個 Visual Studio 編輯器服務藉由呼叫`IComponentModel.GetService<T>()`您想要服務的方法。  
+4. 在此之後，您可以取得任何其中一個 Visual Studio 編輯器服務藉由呼叫`IComponentModel.GetService<T>()`您想要服務的方法。  
   
     ```  
     textBufferFactoryService =  

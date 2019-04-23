@@ -34,17 +34,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cfb3e68f1f967c3c74c93107b622c618a8af728
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 3f9150a815f424c0b4a7bfe5f2e92ea7cd424ddb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537594"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085255"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的中斷點
 中斷點是在您的開發人員工具箱中最重要的偵錯技術之一。 每當您要暫停偵錯工具執行，您可以設定中斷點。 例如，您可能要查看程式碼變數的狀態，或查看呼叫堆疊，在特定中斷點。 如果這是您第一次嘗試偵錯程式碼，您可能需要先閱讀[適用於徹底初學者偵錯](../debugger/debugging-absolute-beginners.md)，再瀏覽本文。
 
-##  <a name="BKMK_Overview"></a> 在原始程式碼中設定中斷點
+## <a name="BKMK_Overview"></a> 在原始程式碼中設定中斷點
  您可以在任何可執行程式碼行上設定中斷點。 比方說，在下列 C# 程式碼，您可以設定中斷點在變數宣告中，`for`迴圈或任何程式碼內`for`迴圈。 您無法在命名空間或類別宣告或方法簽章上設定中斷點。
 
  若要在原始程式碼中設定中斷點，按一下 程式碼行旁邊的最左邊界。 您也可以選取一行，然後按**F9**，選取**偵錯** > **切換中斷點**，或以滑鼠右鍵按一下並選取**中斷點** > **插入中斷點**。 中斷點會顯示為一個紅點的左邊界。
@@ -67,7 +67,7 @@ ms.locfileid: "59537594"
 
 - 設定條件和動作、 新增和編輯標籤，或以滑鼠右鍵按一下它，然後選取適當的命令，或它暫留並選取匯出中斷點**設定**圖示。
 
-##  <a name="BKMK_Set_a_breakpoint_in_a_function"></a> Windows 偵錯工具中設定中斷點
+## <a name="BKMK_Set_a_breakpoint_in_a_function"></a> Windows 偵錯工具中設定中斷點
 
 您也可以設定從中斷點**呼叫堆疊**並**反組譯碼**偵錯工具視窗。
 
@@ -97,7 +97,7 @@ ms.locfileid: "59537594"
 
 2. 在 **反組譯碼**視窗中，按一下您想要在中斷的指令的左邊界中。 您也可以選取它，並按下**F9**，或以滑鼠右鍵按一下並選取**中斷點** > **插入中斷點**。
 
-##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> 設定函式中斷點
+## <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> 設定函式中斷點
 
   呼叫函式時，您可以中斷執行。
 
@@ -136,17 +136,18 @@ ms.locfileid: "59537594"
 ### <a name="set-a-function-breakpoint-using-a-memory-address-native-c-only"></a>設定使用的記憶體位址的函式中斷點 (原生C++只)
  您可以使用物件的位址來設定類別的特定執行個體所呼叫的方法上的函式中斷點。  例如，假設定址的物件型別的`my_class`，您可以設定函式中斷點上`my_method`執行個體呼叫的方法。
 
-1.  類別的執行個體具現化之後，某處設定中斷點。
+1. 類別的執行個體具現化之後，某處設定中斷點。
 
-2.  尋找執行個體的位址 (例如`0xcccccccc`)。
+2. 尋找執行個體的位址 (例如`0xcccccccc`)。
 
-3.  選取 **偵錯** > **新中斷點** > **函式中斷點**，或按**Alt** +**F9** > **Ctrl**+**B**。
+3. 選取 **偵錯** > **新中斷點** > **函式中斷點**，或按**Alt** +**F9** > **Ctrl**+**B**。
 
-4.  將下列內容加入**函式名稱**方塊，然後選取**C++** 語言。
+4. 將下列內容加入**函式名稱**方塊，然後選取**C++** 語言。
 
     ```C++
     ((my_class *) 0xcccccccc)->my_method
     ```
+
 ::: moniker range=">= vs-2019"
 
 ## <a name="BKMK_set_a_data_breakpoint_managed"></a>設定資料中斷點 (.NET Core 3.0 或更新版本)
@@ -185,16 +186,16 @@ ms.locfileid: "59537594"
 3. 在 [位元組計數]  下拉式清單中，選取想要偵錯工具監看的位元組數量。 例如，如果選取 **4**，則偵錯工具將從 `&avar` 開始監看四個位元組，並且在任何這些位元組的值變更時中斷。
 
 在下列情況下，不適用資料中斷點：
--   未進行偵錯的處理序會寫入記憶體位置。
--   記憶體位置會在兩個或多個處理序之間共用。
--   記憶體位置已在核心內更新。 例如，如果記憶體已傳遞至 32 位元 Windows`ReadFile`函式，記憶體將更新從核心模式，因此偵錯工具不會在更新時中斷。
+- 未進行偵錯的處理序會寫入記憶體位置。
+- 記憶體位置會在兩個或多個處理序之間共用。
+- 記憶體位置已在核心內更新。 例如，如果記憶體已傳遞至 32 位元 Windows`ReadFile`函式，記憶體將更新從核心模式，因此偵錯工具不會在更新時中斷。
 
 >[!NOTE]
 >- 資料中斷點會相依於特定記憶體位址。 變數的位址變成一個偵錯工作階段的下一步，以便在每個偵錯工作階段結束時自動停用資料中斷點。
 >
 >- 如果您對區域變數設定資料中斷點，則此中斷點在函式結束時會保持啟用狀態，但是此記憶體位址不再適用，因此該中斷點的行為無法預期。 如果您對區域變數設定資料中斷點，您應該刪除或停用函式結束前的中斷點。
 
-##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> 在中斷點視窗中管理中斷點
+## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> 在中斷點視窗中管理中斷點
 
  您可以使用**中斷點**地查看和管理您的方案中的所有中斷點 視窗。 這個集中式的位置是在大型解決方案中，或針對複雜非常重視中斷點的偵錯案例特別有用。
 
@@ -206,7 +207,7 @@ ms.locfileid: "59537594"
 
 若要選取要顯示在資料行**中斷點**視窗中，選取**顯示行**。 選取資料行標頭以便排序依據該資料行的中斷點清單。
 
-###  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> 中斷點標籤
+### <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> 中斷點標籤
 您可以使用標籤來排序和篩選清單中的中斷點**中斷點**視窗。
 
 1. 若要新增標籤至中斷點，請以滑鼠右鍵按一下中斷點的原始程式碼中或**中斷點** 視窗中，，然後選取**編輯標籤**。 新增新的標籤或選擇現有的帳戶，然後按**確定**。
@@ -220,7 +221,7 @@ ms.locfileid: "59537594"
 - 要匯出的所有中斷點，請取消選取所有的方塊，並將**搜尋**欄位保留空白。 選取 **匯出符合目前搜尋條件的所有中斷點**圖示，然後儲存檔案。
 - 要匯入中斷點**中斷點**視窗中，選取**從檔案匯入中斷點**圖示，瀏覽至 XML 檔案位置，然後選取**開啟**。
 
-##  <a name="breakpoint-conditions"></a>中斷點條件
+## <a name="breakpoint-conditions"></a>中斷點條件
  您可以設定條件來控制中斷點執行的時機和位置。 條件可以是偵錯工具會辨識的任何有效運算式。 如需有效運算式的詳細資訊，請參閱[偵錯工具中的運算式](../debugger/expressions-in-the-debugger.md)。
 
 **若要設定中斷點條件：**
@@ -293,15 +294,15 @@ ms.locfileid: "59537594"
 
 底下**條件**中**中斷點設定**視窗中，選取**篩選**，然後輸入一或多個下列運算式：
 
--   MachineName = "名稱"
--   ProcessId = 值
--   ProcessName ="名稱"
--   ThreadId = 值
--   ThreadName = "名稱"
+- MachineName = "名稱"
+- ProcessId = 值
+- ProcessName ="名稱"
+- ThreadId = 值
+- ThreadName = "名稱"
 
 將字串值置於雙引號中。 您可以使用這些來結合子句： `&` (AND)、 `||` (OR)、 `!` (NOT) 和括號。
 
-##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> 中斷點動作和追蹤點
+## <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> 中斷點動作和追蹤點
  「追蹤點」是將訊息列印至 [輸出] 視窗的中斷點。 追蹤點在程式語言中的行為可以像是暫存追蹤陳述式。
 
 **若要設定追蹤點：**

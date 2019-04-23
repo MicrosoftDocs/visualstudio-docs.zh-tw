@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5e011ccd047551e7ea6cf1426b4118c3ad879f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f03936b9404339e3ad46e30ef92286da360323bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942200"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085762"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58942200"
   
 ## <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   請確定已安裝 Visual Studio 遠端偵錯監視，並且正在遠端電腦上執行。 如需遠端偵錯工具和安裝方式的資訊，請參閱[遠端偵錯](../debugger/remote-debugging.md)。  
+- 請確定已安裝 Visual Studio 遠端偵錯監視，並且正在遠端電腦上執行。 如需遠端偵錯工具和安裝方式的資訊，請參閱[遠端偵錯](../debugger/remote-debugging.md)。  
   
--   在 Visual Studio 中，查看專案屬性 ([專案/屬性/偵錯])。 請確定 [遠端伺服器名稱]  正確。  
+- 在 Visual Studio 中，查看專案屬性 ([專案/屬性/偵錯])。 請確定 [遠端伺服器名稱]  正確。  
   
--   請確認能夠在網路上存取遠端電腦。  
+- 請確認能夠在網路上存取遠端電腦。  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>找不到遠端電腦  
  請嘗試 [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) 遠端電腦。 如果它不回覆 ping，遠端工具將無法連線。 請嘗試重新啟動遠端電腦，另確定它的網路設定正確。  
@@ -58,13 +58,13 @@ ms.locfileid: "58942200"
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>遠端偵錯工具在不同的使用者帳戶下執行  
  您可以使用下列方式的其中之一解決這個問題：  
   
--   您可以停止遠端偵錯工具，再以使用的本機電腦帳戶重新啟動它。  
+- 您可以停止遠端偵錯工具，再以使用的本機電腦帳戶重新啟動它。  
   
--   您可以從命令列使用 **/allow \<使用者名稱>** 參數：`msvsmon /allow <username@computer>` 啟動遠端偵錯工具  
+- 您可以從命令列使用 **/allow \<使用者名稱>** 參數：`msvsmon /allow <username@computer>` 啟動遠端偵錯工具  
   
--   您可以將使用者加入遠端偵錯工具的權限 (在遠端偵錯工具視窗：[工具] / [權限] )。  
+- 您可以將使用者加入遠端偵錯工具的權限 (在遠端偵錯工具視窗：[工具] / [權限] )。  
   
--   如果無法使用前述步驟中的方法，您可以允許任何使用者執行遠端偵錯。 在遠端偵錯工具視窗中，移至 [工具] / [選項]  對話方塊。 當您選取 [無驗證]   時，可以接著選取 [允許任何使用者執行偵錯] 。 不過，您應該只有在沒有任何選擇或在私人網路上，才使用這個選項。  
+- 如果無法使用前述步驟中的方法，您可以允許任何使用者執行遠端偵錯。 在遠端偵錯工具視窗中，移至 [工具] / [選項]  對話方塊。 當您選取 [無驗證]   時，可以接著選取 [允許任何使用者執行偵錯] 。 不過，您應該只有在沒有任何選擇或在私人網路上，才使用這個選項。  
   
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>遠端電腦上的防火牆不允許連入連線至遠端偵錯工具  
  Visual Studio 電腦上的防火牆和遠端電腦上的防火牆必須設定為允許 Visual Studio 和遠端偵錯工具之間的通訊。 如需遠端偵錯工具所用連接埠的相關資訊，請參閱 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。 如需設定 Windows 防火牆的相關資訊，請參閱 [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md)。  

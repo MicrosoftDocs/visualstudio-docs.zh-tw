@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c79a8a0558594e8981959750ebd348b6f9f4d60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6503efd0fa606042089e26b4cac23adcabdcb6e7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941658"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041012"
 ---
 # <a name="vs-shell-deployment"></a>VS Shell 部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ ms.locfileid: "58941658"
   
 ### <a name="to-set-a-visual-studio-shell-as-the-deployment-target"></a>若要設定做為部署目標的 Visual Studio Shell  
   
-1.  在  **DslPackage**專案中，開啟**source.extension.tt**。  
+1. 在  **DslPackage**專案中，開啟**source.extension.tt**。  
   
-2.  在下`<SupportedProducts>`插入：  
+2. 在下`<SupportedProducts>`插入：  
   
     ```  
     <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>  

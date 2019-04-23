@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f847fa2ba58c8d3278a4ecec1c7d7ddc204f27e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7575368a39aa7b6306336883327e2f7b9cafa8a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707493"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109708"
 ---
 # <a name="how-to-use-text-markers"></a>HOW TO：使用文字標記
 文字標記可以套用至編輯<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>物件。
@@ -24,17 +24,17 @@ ms.locfileid: "56707493"
 
 ### <a name="to-apply-text-markers"></a>若要套用文字標記
 
-1.  取得的執行個體<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>類別。
+1. 取得的執行個體<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>類別。
 
     > [!NOTE]
     >  核心編輯器會自動將標準文字標記套用至任何已編輯的文件，它應該不需要明確地套用標準文字標記。
 
-2.  取得您想要藉由呼叫的標記的標記類型識別碼<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>方法使用`GUID`您想要使用的文字標記。
+2. 取得您想要藉由呼叫的標記的標記類型識別碼<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>方法使用`GUID`您想要使用的文字標記。
 
     > [!NOTE]
     >  請勿使用`GUID`VSPackage 或提供文字標記的服務。
 
-3.  使用標記類型識別碼取得藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>方法做為參數來呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>来套用到指定的文字區域的文字標記的方法。
+3. 使用標記類型識別碼取得藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>方法做為參數來呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>来套用到指定的文字區域的文字標記的方法。
 
 ### <a name="to-add-features-to-text-markers"></a>若要將功能加入至文字標記
 

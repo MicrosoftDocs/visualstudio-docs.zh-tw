@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945908"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061982"
 ---
 # <a name="layer-diagrams-reference"></a>分層圖：參考資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "58945908"
 |4|**註解**|用來將一般附註加入圖表或圖表上的項目。|  
 |5|**註解連結**|用來將註解連結到圖表上的項目。|  
   
-##  <a name="Explorer"></a> 圖層總管  
+## <a name="Explorer"></a> 圖層總管  
  您可以將每個圖層連結到方案中的成品，例如專案、類別、命名空間、專案檔和您軟體的其他部分。 圖層上的數字會顯示圖層連結的成品數目。 不過，當閱讀圖層上的成品數時，請記住下列：  
   
 - 如果圖層連結的成品有包含其他成品，但圖層未直接連結這些其他成品，則數字將只包含連結的成品。 然而，在圖層驗證期間會加入其他成品以進行分析。  
@@ -80,7 +80,7 @@ ms.locfileid: "58945908"
   
 #### <a name="to-examine-the-linked-artifacts"></a>檢查連結的成品  
   
--   在上圖層圖表中，開啟一或多個圖層的捷徑功能表，然後選擇**檢視連結**。  
+- 在上圖層圖表中，開啟一或多個圖層的捷徑功能表，然後選擇**檢視連結**。  
   
      **圖層總管**隨即開啟並顯示連結至所選的圖層的成品。 **圖層總管**有一個資料行顯示每個成品連結的屬性。  
   

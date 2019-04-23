@@ -11,12 +11,12 @@ ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8064ffec4b98c1a05d8236b11bec226a08f20321
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 90650b8b3c3432fce05b03a25033977e68f60fca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112945"
 ---
 # <a name="test-area-8-plug-in-switching"></a>測試區域 8：外掛程式切換
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "58939996"
 ## <a name="command-menu-access"></a>命令功能表存取  
  下列[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]與測試案例中使用整合式的開發環境功能表路徑。  
   
--   目前的原始檔控制外掛程式：**工具** -> **選項** -> **原始檔控制** -> **外掛程式選擇**。  
+- 目前的原始檔控制外掛程式：**工具** -> **選項** -> **原始檔控制** -> **外掛程式選擇**。  
   
--   變更原始檔控制繫結：**檔案** -> **原始檔控制** -> **變更原始檔控制**...  
+- 變更原始檔控制繫結：**檔案** -> **原始檔控制** -> **變更原始檔控制**...  
   
 ## <a name="common-expected-behavior"></a>常見的預期的行為  
  變更原始檔控制外掛程式的解決方案是可能不需要結束 Visual Studio，或重新載入方案。 此外，目前的原始檔控制外掛程式會自動變更為該方案載入時，解決方案所用的一個。  

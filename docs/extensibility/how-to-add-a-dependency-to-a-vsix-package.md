@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 225f2bba47aea209e406abe4555b508a2ee93ade
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1aabb7feaa565f5118904bba3850b153a20445b9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708572"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650235"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>HOW TO：將相依性加入至 VSIX 封裝
 
@@ -45,7 +45,6 @@ ms.locfileid: "56708572"
 ```
 
 VSIXInstaller 會偵測舊版的 Visual Studio，並通知使用者，都需要更新版的更新。
-
 
 ## <a name="see-also"></a>另請參閱
 

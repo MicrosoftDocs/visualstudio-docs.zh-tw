@@ -14,17 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e5ae21fcbe215a7abaec247201f2af44caa740f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fa2aa4b3055ff49f59da329ea828e0dbcfc8ec05
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54764822"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651626"
 ---
 # <a name="code-analysis-project-designer"></a>專案設計工具、程式碼分析
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 包含您可以選擇在您的程式碼上執行的程式碼分析工具。 此工具會報告您組件的相關資訊，例如違反 Microsoft .NET Framework 設計方針所制定的程式設計和設計規則。  
   
 ## <a name="uielement-list"></a>UIElement 清單  

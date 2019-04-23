@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41774d09b72430aafc50794cd3d356baa4b565ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117300"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流程設計中的鍵盤快速鍵
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 的所有核心功能都可以利用鍵盤存取。  
@@ -54,13 +54,13 @@ ms.locfileid: "58945881"
   
 - 若要連接活動：  
   
-  1.  使用 Tab 鍵選取來源活動。  
+  1. 使用 Tab 鍵選取來源活動。  
   
-  2.  視需要按幾次 CTRL+E、M，將鍵盤焦點移至目的地活動。  
+  2. 視需要按幾次 CTRL+E、M，將鍵盤焦點移至目的地活動。  
   
-  3.  按 CTRL+E、S 將目的地活動加入至選取範圍。  
+  3. 按 CTRL+E、S 將目的地活動加入至選取範圍。  
   
-  4.  按 CTRL+E、F 加入從來源到目的地的連接線。  
+  4. 按 CTRL+E、F 加入從來源到目的地的連接線。  
   
   有關使用鍵盤連接活動的附註：  
   
@@ -73,18 +73,18 @@ ms.locfileid: "58945881"
 ### <a name="expression-editing"></a>運算式編輯  
  根據預設，[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 文字編輯的預設快速鍵適用於 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中的運算式編輯器內部，並有下列限制：  
   
--   下列命令的快速鍵重新對應將不會有任何作用。 編輯運算式時，您只能使用預設的快速鍵存取這些命令。  
+- 下列命令的快速鍵重新對應將不會有任何作用。 編輯運算式時，您只能使用預設的快速鍵存取這些命令。  
   
-    1.  剪下  
+    1. 剪下  
   
-    2.  複製  
+    2. 複製  
   
-    3.  貼上  
+    3. 貼上  
   
-    4.  全選  
+    4. 全選  
   
-    5.  復原  
+    5. 復原  
   
-    6.  取消復原  
+    6. 取消復原  
   
--   若要重新對應 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 內部的運算式編輯命令快速鍵，請在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 範圍內編輯快速鍵。 在 [文字編輯器] 範圍內所做的變更，不會自動套用到 [!INCLUDE[wfd2](../includes/wfd2-md.md)]。 如果兩個地方的快速鍵都要重新對應，您必須套用這些變更兩次 (兩個範圍各一次)。
+- 若要重新對應 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 內部的運算式編輯命令快速鍵，請在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 範圍內編輯快速鍵。 在 [文字編輯器] 範圍內所做的變更，不會自動套用到 [!INCLUDE[wfd2](../includes/wfd2-md.md)]。 如果兩個地方的快速鍵都要重新對應，您必須套用這些變更兩次 (兩個範圍各一次)。

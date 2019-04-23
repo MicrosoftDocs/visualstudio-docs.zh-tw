@@ -8,74 +8,74 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5989e0d72aaa7dda8e3daae16a6f384f8815357f
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2a6d3b302825ca8ba33c9d0c44dbe18929c20ce2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000787"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081456"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>逐步解說：使用 C# 或 Visual Basic 建立 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在本逐步解說中，您將了解如何使用 Visual C# 來建立簡單的數學程式庫 SDK，然後再封裝 SDK 作為 Visual Studio 擴充功能 (VSIX)。 您會完成下列程序：  
   
--   [若要建立 SimpleMath Windows 執行階段元件](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
+- [若要建立 SimpleMath Windows 執行階段元件](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
   
--   [若要建立 SimpleMathVSIX 擴充功能專案](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)  
+- [若要建立 SimpleMathVSIX 擴充功能專案](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)  
   
--   [若要建立範例應用程式使用的類別庫](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)  
+- [若要建立範例應用程式使用的類別庫](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)  
   
 ## <a name="prerequisites"></a>必要條件  
  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
-##  <a name="createClassLibrary"></a> 若要建立 SimpleMath Windows 執行階段元件  
+## <a name="createClassLibrary"></a> 若要建立 SimpleMath Windows 執行階段元件  
   
-1.  在功能表列上選擇 **檔案**，**新增**，**新專案**。  
+1. 在功能表列上選擇 **檔案**，**新增**，**新專案**。  
   
-2.  在範本清單中，依序展開**Visual C#** 或**Visual Basic**，選擇  **Windows 市集** 節點，然後選擇  **Windows 執行階段元件**範本。  
+2. 在範本清單中，依序展開**Visual C#** 或**Visual Basic**，選擇  **Windows 市集** 節點，然後選擇  **Windows 執行階段元件**範本。  
   
-3.  在 [**名稱**方塊中，指定**SimpleMath**，然後選擇 **[確定]** ] 按鈕。  
+3. 在 [**名稱**方塊中，指定**SimpleMath**，然後選擇 **[確定]** ] 按鈕。  
   
-4.  在 **方案總管**，開啟捷徑功能表**SimpleMath**專案節點，然後選擇**屬性**。  
+4. 在 **方案總管**，開啟捷徑功能表**SimpleMath**專案節點，然後選擇**屬性**。  
   
-5.  重新命名**Class1.cs**要**Arithmetic.cs**並更新它以符合下列程式碼：  
+5. 重新命名**Class1.cs**要**Arithmetic.cs**並更新它以符合下列程式碼：  
   
      [!code-csharp[CreatingAnSDKUsingWinRT#3](../snippets/csharp/VS_Snippets_VSSDK/creatingansdkusingwinrt/cs/winrtmath/arithmetic.cs#3)]
      [!code-vb[CreatingAnSDKUsingWinRT#3](../snippets/visualbasic/VS_Snippets_VSSDK/creatingansdkusingwinrt/vb/winrtmath/arithmetic.vb#3)]  
   
-6.  在**方案總管 中**，開啟捷徑功能表**解決方案 'SimpleMath'** 節點，然後選擇**Configuration Manager**。  
+6. 在**方案總管 中**，開啟捷徑功能表**解決方案 'SimpleMath'** 節點，然後選擇**Configuration Manager**。  
   
      **Configuration Manager**對話方塊隨即開啟。  
   
-7.  在 **現用方案組態**清單中，選擇**發行**。  
+7. 在 **現用方案組態**清單中，選擇**發行**。  
   
-8.  中**組態** 欄中，確認**SimpleMath**資料列設定為**版本**，然後選擇**關閉**按鈕以接受變更。  
+8. 中**組態** 欄中，確認**SimpleMath**資料列設定為**版本**，然後選擇**關閉**按鈕以接受變更。  
   
     > [!IMPORTANT]
     >  SimpleMath 元件 SDK 包含只有一個組態。 此設定必須是發行組建，或使用元件的應用程式，將不會傳遞認證[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]。  
   
 9. 在 **方案總管**，開啟捷徑功能表**SimpleMath**專案節點，然後選擇**建置**。  
   
-##  <a name="createVSIX"></a> 若要建立 SimpleMathVSIX 擴充功能專案  
+## <a name="createVSIX"></a> 若要建立 SimpleMathVSIX 擴充功能專案  
   
-1.  上的捷徑功能表**解決方案 'SimpleMath'** 節點，選擇**新增**，**新專案**。  
+1. 上的捷徑功能表**解決方案 'SimpleMath'** 節點，選擇**新增**，**新專案**。  
   
-2.  在範本清單中，依序展開**Visual C#** 或**Visual Basic**，選擇 [**擴充性**] 節點，然後選擇**VSIX 專案**範本。  
+2. 在範本清單中，依序展開**Visual C#** 或**Visual Basic**，選擇 [**擴充性**] 節點，然後選擇**VSIX 專案**範本。  
   
-3.  在 [**名稱**方塊中，指定**SimpleMathVSIX**，然後選擇 **[確定]** ] 按鈕。  
+3. 在 [**名稱**方塊中，指定**SimpleMathVSIX**，然後選擇 **[確定]** ] 按鈕。  
   
-4.  在 **方案總管**，選擇**source.extension.vsixmanifest**項目。  
+4. 在 **方案總管**，選擇**source.extension.vsixmanifest**項目。  
   
-5.  在功能表列上選擇 [檢視] 、[程式碼] 。  
+5. 在功能表列上選擇 [檢視] 、[程式碼] 。  
   
-6.  以下列 XML 取代現有的 XML:  
+6. 以下列 XML 取代現有的 XML:  
   
      [!code-xml[CreatingAnSDKUsingWinRT#1](../../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
   
-7.  在 **方案總管**，選擇**SimpleMathVSIX**專案。  
+7. 在 **方案總管**，選擇**SimpleMathVSIX**專案。  
   
-8.  在功能表列上選擇 **專案**，**加入新項目**。  
+8. 在功能表列上選擇 **專案**，**加入新項目**。  
   
 9. 在這份**常見的項目**，展開**資料**，，然後選擇  **XML 檔案**。  
   
@@ -131,7 +131,7 @@ ms.locfileid: "59000787"
   
 30. 選擇**安裝**按鈕，等候安裝完成，然後再重新啟動 Visual Studio。  
   
-##  <a name="createSample"></a> 若要建立範例應用程式使用的類別庫  
+## <a name="createSample"></a> 若要建立範例應用程式使用的類別庫  
   
 1. 在功能表列上選擇 **檔案**，**新增**，**新專案**。  
   
@@ -174,6 +174,6 @@ ms.locfileid: "59000787"
     您已成功建立和使用擴充功能 SDK。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說：使用 c + + 建立 SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [逐步解說：使用 SDK 建立C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
  [逐步解說：使用 JavaScript 建立 SDK](walkthrough-creating-an-sdk-using-javascript.md)   
  [建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)

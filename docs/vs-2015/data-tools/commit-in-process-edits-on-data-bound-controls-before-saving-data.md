@@ -21,17 +21,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d703ef271dfec09b277db2c2702679b8087b4b88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ae5d345da49ee33841a50622f3d1c59e2309890c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941954"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106289"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>儲存資料前先認可資料繫結控制項上的同處理序編輯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 當您編輯資料繫結控制項中的值，使用者必須瀏覽已更新的值認可到基礎資料來源控制項繫結至目前的資料錄。 當您拖曳項目從[資料來源 視窗](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)拖曳至表單，您卸除第一個項目會產生程式碼插入**儲存**按鈕的 click 事件的<xref:System.Windows.Forms.BindingNavigator>。 此程式碼會呼叫<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法的<xref:System.Windows.Forms.BindingSource>。 因此，呼叫<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法會產生只會針對第一個<xref:System.Windows.Forms.BindingSource>加入至表單。  
   
  <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼叫會認可目前所編輯的任何資料繫結控制項中，所有正在進行的變更。 因此，當資料繫結控制項還有焦點時，您可以按一下 [儲存] 按鈕，就會在實際儲存 (`TableAdapterManager.UpdateAll` 方法) 之前，先認可該控制項中所有暫止的編輯項目。  
@@ -45,12 +44,12 @@ ms.locfileid: "58941954"
   
 ## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>若要在表單上的所有 BindingSource 元件都呼叫 EndEdit  
   
-1.  將下列程式碼新增至表單，其中包含<xref:System.Windows.Forms.BindingSource>元件。  
+1. 將下列程式碼新增至表單，其中包含<xref:System.Windows.Forms.BindingSource>元件。  
   
      [!code-csharp[VSProDataOrcasEndEditOnAll#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasEndEditOnAll/CS/Form1.cs#1)]
      [!code-vb[VSProDataOrcasEndEditOnAll#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasEndEditOnAll/VB/Form1.vb#1)]  
   
-2.  新增下列程式碼，將表單的資料儲存的任何呼叫之前，立即 (`TableAdapterManager.UpdateAll()`方法):  
+2. 新增下列程式碼，將表單的資料儲存的任何呼叫之前，立即 (`TableAdapterManager.UpdateAll()`方法):  
   
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasEndEditOnAll/CS/Form1.cs#2)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasEndEditOnAll/VB/Form1.vb#2)]  

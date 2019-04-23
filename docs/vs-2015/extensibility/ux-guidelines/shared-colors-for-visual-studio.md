@@ -8,56 +8,59 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c8d0dfb8a7758d0619557f6c54056cd88ec68771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942687"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086425"
 ---
 # <a name="shared-colors-for-visual-studio"></a>適用於 Visual Studio 的共用的色彩
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 如果您設計的 UI 使用通用 Visual Studio Shell 項目，或您想要介面項目與類似的功能一致，請在封裝定義檔中使用現有的語彙基元名稱，以選擇並指派色彩。 這可確保您的 UI 與整體 Visual Studio 環境保持一致，而且會在加入或更新佈景主題時自動更新。
 
- 本文說明常見 UI 項目以及它們使用的語彙基元名稱，以在建置類似的 UI 時進行參考。 如需如何存取這些色彩語彙基元的特定資訊，請參閱 [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)。
+本文說明常見 UI 項目以及它們使用的語彙基元名稱，以在建置類似的 UI 時進行參考。 如需如何存取這些色彩語彙基元的特定資訊，請參閱 [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)。
 
- 請務必正確地使用語彙基元名稱：
+請務必正確地使用語彙基元名稱：
 
--   **使用根據函式，不是色彩本身的語彙基元名稱。** 常見共用色彩是與特定介面項目相關聯，並且僅適用於相同或類似的功能。 例如，請不要只因為您喜歡微調進度動畫之已按下下拉式方塊的色彩，就重複使用該色彩。 下拉式方塊和動畫的功能不同，而且，如果與下拉式方塊相關聯的色彩變更，則可能不再是動畫項目的適當色彩。 一致地使用色彩可協助引導您的使用者並避免混淆。
+- **使用根據函式，不是色彩本身的語彙基元名稱。** 常見共用色彩是與特定介面項目相關聯，並且僅適用於相同或類似的功能。 例如，請不要只因為您喜歡微調進度動畫之已按下下拉式方塊的色彩，就重複使用該色彩。 下拉式方塊和動畫的功能不同，而且，如果與下拉式方塊相關聯的色彩變更，則可能不再是動畫項目的適當色彩。 一致地使用色彩可協助引導您的使用者並避免混淆。
 
--   **以正確的組合來使用背景和文字色彩。** 要與文字搭配使用的背景色彩將有相關聯的文字色彩。 務必使用背景所指定的文字色彩。 如果沒有相關聯的文字色彩，請不要將該背景色彩用於您希望顯示文字的任何介面。 用其他方式組合文字和背景色彩可能會導致介面無法讀取。
+- **以正確的組合來使用背景和文字色彩。** 要與文字搭配使用的背景色彩將有相關聯的文字色彩。 務必使用背景所指定的文字色彩。 如果沒有相關聯的文字色彩，請不要將該背景色彩用於您希望顯示文字的任何介面。 用其他方式組合文字和背景色彩可能會導致介面無法讀取。
 
--   **使用其位置適用的控制項色彩。** 在特定狀態中，部分 Visual Studio 控制項沒有個別框線和背景色彩。 而是會選取其後介面的色彩。 務必根據控制項所放置的位置，而為其使用適合的語彙基元名稱。
+- **使用其位置適用的控制項色彩。** 在特定狀態中，部分 Visual Studio 控制項沒有個別框線和背景色彩。 而是會選取其後介面的色彩。 務必根據控制項所放置的位置，而為其使用適合的語彙基元名稱。
 
 > [!IMPORTANT]
->  請勿使用 「 起始頁 」 或"Cider"。 類別目錄中的權杖
+> 請勿使用 「 起始頁 」 或"Cider"。 類別目錄中的權杖
 
 ## <a name="command-structures"></a>命令結構
 
-###  <a name="BKMK_CommandMenus"></a> 功能表
- 功能表可能會發生在 Visual Studio 的數個位置： 主要功能表列、 內嵌在文件或工具視窗中，或以滑鼠右鍵按一下 IDE 各位置上。 針對個別項目的一節中會討論與其他 UI 項目相關聯之功能表的實作。 您應該一律使用 Visual Studio 環境所提供的標準功能表實作。 不過，在一些罕見情況下，您可能無法存取標準 Visual Studio 功能表。 在這些情況下，請使用下列語彙基元名稱，確保您的 UI 與 Visual Studio 中的其他功能表一致。
+### <a name="BKMK_CommandMenus"></a> 功能表
 
- ![功能表紅線](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303年 000_MenuRedline")
+功能表可能會發生在 Visual Studio 的數個位置： 主要功能表列、 內嵌在文件或工具視窗中，或以滑鼠右鍵按一下 IDE 各位置上。 針對個別項目的一節中會討論與其他 UI 項目相關聯之功能表的實作。 您應該一律使用 Visual Studio 環境所提供的標準功能表實作。 不過，在一些罕見情況下，您可能無法存取標準 Visual Studio 功能表。 在這些情況下，請使用下列語彙基元名稱，確保您的 UI 與 Visual Studio 中的其他功能表一致。
 
- 請使用於…
- -   任何需要建立自訂功能表的時機。
+![功能表紅線](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303年 000_MenuRedline")
+
+請使用於…
+- 任何需要建立自訂功能表的時機。
 
 - 當您有想要與 Visual Studio 功能表相符的新 UI 元件時。
 
-  請勿使用於…
-  單一背景色彩。 一律使用指定的背景/前景組合。
+請勿使用於…
+單一背景色彩。 一律使用指定的背景/前景組合。
 
 #### <a name="menu-title"></a>功能表標題
- 功能表標題包含背景、框線和標題文字，以及選用字符 (通常是在命令列中找到功能表時)。
 
- ![功能表標題紅線](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303年 001_MenuTitleRedline")
+功能表標題包含背景、框線和標題文字，以及選用字符 (通常是在命令列中找到功能表時)。
 
- 請使用於…
+![功能表標題紅線](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303年 001_MenuTitleRedline")
+
+請使用於…
 任何需要建立自訂功能表標題的時機。
 
- 請勿使用於…
- -   任何不想要其一律與功能表標題相符的項目。
+請勿使用於…
+- 任何不想要其一律與功能表標題相符的項目。
 
 - 任何非指定的背景/前景組合。
 
@@ -192,15 +195,16 @@ ms.locfileid: "58942687"
   None
 
 #### <a name="menu"></a>功能表
- 個別功能表項目包含功能表文字和選用圖示、核取方塊或子功能表字符。 其背景和文字色彩會在滑鼠游標暫留時變更。 這個色彩語彙基元是背景/前景配對。
 
- ![功能表項目紅線](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303年 009_MenuItemRedline")
+個別功能表項目包含功能表文字和選用圖示、核取方塊或子功能表字符。 其背景和文字色彩會在滑鼠游標暫留時變更。 這個色彩語彙基元是背景/前景配對。
 
- 請使用於…
+![功能表項目紅線](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303年 009_MenuItemRedline")
+
+請使用於…
 任何從功能表列或命令列啟動的下拉式清單。
 
- 請勿使用於…
- -   任何其他內容中發生的下拉式清單。
+請勿使用於…
+- 任何其他內容中發生的下拉式清單。
 
 - 任何非指定的背景/前景組合。
 
@@ -351,32 +355,34 @@ ms.locfileid: "58942687"
   `Environment.CommandBarSelectedIconDisabled`
 
 ### <a name="command-bar"></a>命令列
- 命令列可以出現在 Visual Studio IDE 的多個位置中，最值得注意的是命令櫃並內嵌在工具或文件視窗中。
 
- 一般情況下，請一律使用 Visual Studio 環境所提供的標準命令列實作。 使用標準機制可確保正確地顯示所有視覺化詳細資料，而且互動式項目的行為會與其他 Visual Studio 命令列控制項一致。 不過，如果您需要建置專屬的命令列，請確定您使用下列語彙基元名稱正確地設定樣式。
+命令列可以出現在 Visual Studio IDE 的多個位置中，最值得注意的是命令櫃並內嵌在工具或文件視窗中。
 
- ![命令列紅線](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303年 018_CommandBarRedline")
+一般情況下，請一律使用 Visual Studio 環境所提供的標準命令列實作。 使用標準機制可確保正確地顯示所有視覺化詳細資料，而且互動式項目的行為會與其他 Visual Studio 命令列控制項一致。 不過，如果您需要建置專屬的命令列，請確定您使用下列語彙基元名稱正確地設定樣式。
 
- ![溢位按鈕紅線](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303年 019_OverflowButtonRedline")
+![命令列紅線](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303年 018_CommandBarRedline")
 
- 請使用於…
+![溢位按鈕紅線](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303年 019_OverflowButtonRedline")
+
+請使用於…
 任何需要內嵌命令列，但無法使用標準 Visual Studio 命令列實作的位置。
 
- 請勿使用於…
- -   任何未與命令列類似的 UI 項目。
+請勿使用於…
+- 任何未與命令列類似的 UI 項目。
 
--   不屬於語彙基元名稱所指定的命令列元件。
+- 不屬於語彙基元名稱所指定的命令列元件。
 
 #### <a name="command-bar-group"></a>命令列群組
- 命令列群組包含一組相關的命令列控制項，而且可能包含任意數目的按鈕，分割按鈕、下拉式功能表、下拉式方塊或功能表。 這些控制項的色彩受到個別的語彙基元名稱所規範，並且會在本指南的其他位置個別討論。 分隔線用來將命令列群組分成相關的子群組。
 
- ![命令列群組紅線](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303年 020_CommandBarGroupRedline")
+命令列群組包含一組相關的命令列控制項，而且可能包含任意數目的按鈕，分割按鈕、下拉式功能表、下拉式方塊或功能表。 這些控制項的色彩受到個別的語彙基元名稱所規範，並且會在本指南的其他位置個別討論。 分隔線用來將命令列群組分成相關的子群組。
 
- 請使用於…
+![命令列群組紅線](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303年 020_CommandBarGroupRedline")
+
+請使用於…
 任何需要內嵌命令列，但無法使用標準 Visual Studio 命令列實作的位置。
 
- 請勿使用於…
- -   任何未與命令列類似的 UI 項目。
+請勿使用於…
+- 任何未與命令列類似的 UI 項目。
 
 - 不屬於語彙基元名稱所指定的命令列元件。
 
@@ -407,15 +413,16 @@ ms.locfileid: "58942687"
   `Environment.CommandBarToolBarSeparatorHighlight`
 
 #### <a name="command-icons"></a>命令圖示
- ![命令圖示紅線](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303年 021_CommandIconRedline1")
 
- ![命令圖示紅線](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303年 022_CommandIconRedline2")
+![命令圖示紅線](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303年 021_CommandIconRedline1")
 
- 請使用於…
+![命令圖示紅線](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303年 022_CommandIconRedline2")
+
+請使用於…
 任何將放在命令列上的按鈕。
 
- 請勿使用於…
- -   已具有專屬語彙基元名稱的控制項。
+請勿使用於…
+- 已具有專屬語彙基元名稱的控制項。
 
 - 任何非指定的背景/前景組合。
 
@@ -551,20 +558,20 @@ ms.locfileid: "58942687"
 
   N/A
 
-####  <a name="BKMK_CommandComboBox"></a> 下拉式方塊
+#### <a name="BKMK_CommandComboBox"></a> 下拉式方塊
 
 > [!IMPORTANT]
->  下拉式方塊與下拉式清單類似，但包括可編輯的文字區域。 如果下拉式清單未包括可編輯的文字區域，請使用 [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)下找到的色彩語彙基元。
+> 下拉式方塊與下拉式清單類似，但包括可編輯的文字區域。 如果下拉式清單未包括可編輯的文字區域，請使用 [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)下找到的色彩語彙基元。
 
- ![Combo box redline](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
+![Combo box redline](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
 
- 請使用於…
- -   建置自訂下拉式方塊時。
+請使用於…
+- 建置自訂下拉式方塊時。
 
 - 建立與下拉式方塊類似的命令列控制項時。
 
   請勿使用於…
-  -   任何不想要其一律與符合命令列 UI 相符的項目。
+  - 任何不想要其一律與符合命令列 UI 相符的項目。
 
 - 您能存取已設定樣式的下拉式方塊時。
 
@@ -798,18 +805,18 @@ ms.locfileid: "58942687"
 
   `Environment.ComboBoxDisabledGlyph`
 
-####  <a name="BKMK_CommandDropDown"></a> 下拉式清單
+#### <a name="BKMK_CommandDropDown"></a> 下拉式清單
 
 > [!IMPORTANT]
->  下拉式清單與下拉式方塊類似，但沒有可編輯的文字區域。 如果下拉式清單包括可編輯的文字區域，請使用 [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)下找到的色彩語彙基元。
+> 下拉式清單與下拉式方塊類似，但沒有可編輯的文字區域。 如果下拉式清單包括可編輯的文字區域，請使用 [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)下找到的色彩語彙基元。
 
- ![卸除&#45;向下紅線](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303年 042_DropdownRedline")
+![卸除&#45;向下紅線](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303年 042_DropdownRedline")
 
- 請使用於…
+請使用於…
 建立自訂下拉式清單控制項時。
 
- 請勿使用於…
- -   任何未與下拉式清單類似的項目。
+請勿使用於…
+- 任何未與下拉式清單類似的項目。
 
 - 下拉式方塊或分割按鈕。
 
@@ -1010,15 +1017,16 @@ ms.locfileid: "58942687"
   `Environment.DropDownDisabledGlyph`
 
 #### <a name="split-button"></a>Split 按鈕
- 分割按鈕會與其他命令列控制項 (例如按鈕、 功能表和命令列文字) 共用許多語彙基元名稱。 基於使用方便，會在這裡重複所有必要的動作和下拉式按鈕語彙基元名稱。 分割按鈕下拉式清單是命令列 [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)的實作。
 
- ![分割按鈕紅線](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303年 053_SplitButtonRedline")
+分割按鈕會與其他命令列控制項 (例如按鈕、 功能表和命令列文字) 共用許多語彙基元名稱。 基於使用方便，會在這裡重複所有必要的動作和下拉式按鈕語彙基元名稱。 分割按鈕下拉式清單是命令列 [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)的實作。
 
- 請使用於…
+![分割按鈕紅線](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303年 053_SplitButtonRedline")
+
+請使用於…
 建置自訂分割按鈕時。
 
- 請勿使用於…
- -   其他種類的按鈕。
+請勿使用於…
+- 其他種類的按鈕。
 
 - 任何非指定的背景/前景組合。
 
@@ -1425,7 +1433,7 @@ ms.locfileid: "58942687"
   建立自訂文件索引標籤時。
 
   請勿使用於…
-  -   暫時 (預覽) 索引標籤。
+  - 暫時 (預覽) 索引標籤。
 
 - 任何您不想在 Shell 具有佈景主題更新時自動變更的 UI。
 
@@ -1538,15 +1546,16 @@ ms.locfileid: "58942687"
  設定為與背景相同的色彩。
 
 #### <a name="preview-tab"></a>預覽索引標籤
- 使用者按一下方案總管工具視窗中的項目時，預覽索引標籤會出現在文件索引標籤通道右側。 它可作為文件的預覽，也可讓使用者選擇持續在文件索引標籤通道左側開啟文件。 一次只能開啟一個預覽索引標籤。 預覽索引標籤同時具有背景和選取的狀態 (例如開啟的索引標籤)，而且可以在其作用中狀態取得焦點或未取得焦點。
 
- ![預覽索引標籤紅線](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303年 078_PreviewTabRedline")
+使用者按一下方案總管工具視窗中的項目時，預覽索引標籤會出現在文件索引標籤通道右側。 它可作為文件的預覽，也可讓使用者選擇持續在文件索引標籤通道左側開啟文件。 一次只能開啟一個預覽索引標籤。 預覽索引標籤同時具有背景和選取的狀態 (例如開啟的索引標籤)，而且可以在其作用中狀態取得焦點或未取得焦點。
 
- 請使用於…
+![預覽索引標籤紅線](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303年 078_PreviewTabRedline")
+
+請使用於…
 任何要建立暫時預覽且想要某個項目符合目前預覽索引標籤色彩的位置。
 
- 請勿使用於…
- -   於任何非暫時 (非預覽) 的文件種類或索引標籤種類。
+請勿使用於…
+- 於任何非暫時 (非預覽) 的文件種類或索引標籤種類。
 
 - 任何您不想在 Shell 具有佈景主題更新時自動變更的 UI。
 
@@ -1661,15 +1670,16 @@ ms.locfileid: "58942687"
   設定為與背景相同的色彩。
 
 #### <a name="document-overflow-button"></a>文件溢位按鈕
- 如果開啟一個或多個文件 (不論目前組態中是否有垂直空間可放入所有文件索引標籤)，則會有文件溢位按鈕。 透過 **CommandBarMenu** 色彩控制的文件溢位下拉式功能表 (請參閱 [Menus](../../misc/shared-colors.md#BKMK_CommandMenus))，會顯示一份所有開啟的文件 (顯示和隱藏)，並根據是否在索引標籤通道中顯示所有開啟的文件來變更溢位字符。
 
- ![溢位紅線](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303年 083_OverflowRedline")
+如果開啟一個或多個文件 (不論目前組態中是否有垂直空間可放入所有文件索引標籤)，則會有文件溢位按鈕。 透過 **CommandBarMenu** 色彩控制的文件溢位下拉式功能表 (請參閱 [Menus](../../misc/shared-colors.md#BKMK_CommandMenus))，會顯示一份所有開啟的文件 (顯示和隱藏)，並根據是否在索引標籤通道中顯示所有開啟的文件來變更溢位字符。
 
- 請使用於…
+![溢位紅線](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303年 083_OverflowRedline")
+
+請使用於…
 建立自訂文件溢位按鈕時。
 
- 請勿使用於…
- -   針對未與溢位按鈕類似的 UI。
+請勿使用於…
+- 針對未與溢位按鈕類似的 UI。
 
 - 命令列溢位按鈕。
 
@@ -1895,13 +1905,14 @@ ms.locfileid: "58942687"
  `Environment.TitleBarDragHandle`
 
 #### <a name="title-bar-buttons"></a>標題列按鈕
- ![標題列按鈕紅線](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303年 095_TitleBarButtonRedline")
 
- 請使用於…
+![標題列按鈕紅線](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303年 095_TitleBarButtonRedline")
+
+請使用於…
 UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩語彙基元時)。
 
- 請勿使用於…
- -   出現在其他位置的按鈕。
+請勿使用於…
+- 出現在其他位置的按鈕。
 
 - 任何非指定的背景/前景組合。
 
@@ -2227,7 +2238,7 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
   設計自訂搜尋方塊時。
 
   請勿使用於…
-  -   針對不是搜尋方塊的任何項目。
+  - 針對不是搜尋方塊的任何項目。
 
 - 任何不想要其一律與搜尋方塊 UI 相符的項目。
 
@@ -2516,17 +2527,18 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
   None
 
 #### <a name="search-drop-down-lists"></a>搜尋下拉式清單
- 搜尋方塊下拉式功能表可能會比 Visual Studio 中的其他下拉式功能表稍微更為複雜。 [建議的搜尋] 和 [搜尋選項] 區段可以單獨或一起出現在功能表上，而且各區段會個別著色。 這兩個區段同時出現時，也會有一條線來區隔它們，而且會有框線括住整個下拉式功能表。
 
- ![搜尋下拉式&#45;向下紅線](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303年 124_SearchDropdownRedline")
+搜尋方塊下拉式功能表可能會比 Visual Studio 中的其他下拉式功能表稍微更為複雜。 [建議的搜尋] 和 [搜尋選項] 區段可以單獨或一起出現在功能表上，而且各區段會個別著色。 這兩個區段同時出現時，也會有一條線來區隔它們，而且會有框線括住整個下拉式功能表。
 
- 請使用於…
- -   建立自訂搜尋下拉式清單時。
+![搜尋下拉式&#45;向下紅線](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303年 124_SearchDropdownRedline")
+
+請使用於…
+- 建立自訂搜尋下拉式清單時。
 
 - 正確清單元件的正確語彙基元名稱。
 
   請勿使用於…
-  -   針對出現在其他內容中的下拉式清單。
+  - 針對出現在其他內容中的下拉式清單。
 
 - 任何非指定的背景/前景組合。
 
@@ -2906,16 +2918,17 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 
  `Environment.ScrollBarArrowGlyphPressed`
 
-###  <a name="BKMK_TreeView"></a> 樹狀檢視
- 數個工具視窗 (包括方案總管、伺服器總管和類別檢視) 會實作階層式組織配置，其色彩受到 TreeView 類別中的色彩名稱所控制。 樹狀檢視中的所有項目都會有背景和文字色彩。 具有巢狀子項目的項目也具有字符可指出展開還是摺疊項目。
+### <a name="BKMK_TreeView"></a> 樹狀檢視
 
- ![樹狀檢閱紅線](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303年 147_TreeViewRedline")
+數個工具視窗 (包括方案總管、伺服器總管和類別檢視) 會實作階層式組織配置，其色彩受到 TreeView 類別中的色彩名稱所控制。 樹狀檢視中的所有項目都會有背景和文字色彩。 具有巢狀子項目的項目也具有字符可指出展開還是摺疊項目。
 
- 請使用於…
+![樹狀檢閱紅線](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303年 147_TreeViewRedline")
+
+請使用於…
 任何您需要實作階層式組織檢視的位置。
 
- 請勿使用於…
- -   任何未與樹狀檢視類似的項目。
+請勿使用於…
+- 任何未與樹狀檢視類似的項目。
 
 - 任何非指定的背景/前景組合。
 
@@ -3332,13 +3345,14 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
  `CommonControls.CheckBoxGlyphFocused`
 
 ### <a name="drop-boxcombo-box-controls"></a>下拉式方塊控制項
- ![卸除&#45;關閉&#47;下拉式方塊紅線](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303年 167_DropDownComboBoxRedline")
 
- 請使用於…
+![卸除&#45;關閉&#47;下拉式方塊紅線](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303年 167_DropDownComboBoxRedline")
+
+請使用於…
 針對屬於文件區域一部分的下拉式清單和下拉式方塊。
 
- 請勿使用於…
- -   任何不是下拉式清單或下拉式方塊的 UI。
+請勿使用於…
+- 任何不是下拉式清單或下拉式方塊的 UI。
 
 - 針對命令列中的 [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) 或 [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) 。
 
@@ -3690,17 +3704,18 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
  None
 
 ## <a name="manifest-designer"></a>資訊清單設計工具
- 資訊清單設計工具的設計是用來輕鬆地編輯 Windows 8 和 Windows Phone 8 專案中的資訊清單檔。 雖然沒有任何共用架構可供取用，但是可能適合您比對方向/瀏覽索引標籤和整體結構的設計版面配置和色彩。 如需版面配置詳細資料的詳細資訊，請參閱 [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)。
 
- ![資訊清單設計工具紅線](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303年 175_ManifestDesignerRedline")
+資訊清單設計工具的設計是用來輕鬆地編輯 Windows 8 和 Windows Phone 8 專案中的資訊清單檔。 雖然沒有任何共用架構可供取用，但是可能適合您比對方向/瀏覽索引標籤和整體結構的設計版面配置和色彩。 如需版面配置詳細資料的詳細資訊，請參閱 [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)。
 
- 請使用於…
- -   針對與資訊清單設計工具類似的設計工具。
+![資訊清單設計工具紅線](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303年 175_ManifestDesignerRedline")
+
+請使用於…
+- 針對與資訊清單設計工具類似的設計工具。
 
 - 改為使用文件區域內的編輯器頂端的通用索引標籤控制項。
 
-  請勿使用於…
-  -   如果您有六個以上的索引標籤。
+請勿使用於…
+- 如果您有六個以上的索引標籤。
 
 - 任何未結構化的 UI (例如資訊清單設計工具)。
 
@@ -3964,15 +3979,16 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
 ## <a name="shell"></a>Shell
 
 ### <a name="background"></a>背景
- 環境背景包含兩個層級。 下層是涵蓋整個 IDE 的單色。 上層可放入命令櫃下方以及 IDE 左右兩側邊緣的工具視窗自動隱藏通道之間。 從 Visual Studio 2013 開始，在淺色調和暗色調佈景主題中，背景上層和下層會設定為相同的色彩。
 
- ![殼層背景紅線](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303年 187_ShellBackgroundRedline")
+環境背景包含兩個層級。 下層是涵蓋整個 IDE 的單色。 上層可放入命令櫃下方以及 IDE 左右兩側邊緣的工具視窗自動隱藏通道之間。 從 Visual Studio 2013 開始，在淺色調和暗色調佈景主題中，背景上層和下層會設定為相同的色彩。
 
- 請使用於…
+![殼層背景紅線](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303年 187_ShellBackgroundRedline")
+
+請使用於…
 針對您想要符合 Visual Studio 環境背景的位置。
 
- 請勿使用於…
- -   作為非背景表面之位置的填色。
+請勿使用於…
+- 作為非背景表面之位置的填色。
 
 - 作為您要放置前景項目的背景。
 
@@ -4009,17 +4025,18 @@ UI 中所顯示的按鈕 (當 UI 使用了來自工具視窗標題列的色彩�
   `Environment.EnvironmentBackgroundGradientMiddle2`
 
 ### <a name="command-shelf"></a>命令櫃
- 兩組語彙基元名稱用於命令櫃背景：一組用於功能表列所在的位置，一組用於命令列所在的位置。 個別命令列群組有其專屬背景色彩值 (會在＜命令列＞一節中詳細討論)。 功能表列和命令列文字分別會在功能表和命令列一節中進行討論。
 
- ![命令櫃紅線](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303年 188_CommandShelfRedline")
+兩組語彙基元名稱用於命令櫃背景：一組用於功能表列所在的位置，一組用於命令列所在的位置。 個別命令列群組有其專屬背景色彩值 (會在＜命令列＞一節中詳細討論)。 功能表列和命令列文字分別會在功能表和命令列一節中進行討論。
 
- 請使用於…
- -   針對您放置功能表或工具列的區域。
+![命令櫃紅線](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303年 188_CommandShelfRedline")
+
+請使用於…
+- 針對您放置功能表或工具列的區域。
 
 - 具有正確的背景 /？ 前景語彙基元名稱組合。
 
-  請勿使用於…
-  針對未與命令櫃類似的區域。
+請勿使用於…
+針對未與命令櫃類似的區域。
 
   元件
 
