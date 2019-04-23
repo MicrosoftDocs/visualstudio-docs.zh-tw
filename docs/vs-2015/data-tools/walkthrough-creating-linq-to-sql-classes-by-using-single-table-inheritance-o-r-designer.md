@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61509b7427a9c1a95fe15bba93d231f0dc37d136
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111970"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>逐步解說：使用單一資料表繼承 （O/R 設計工具） 中建立 LINQ to SQL 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,31 +23,31 @@ ms.locfileid: "59664985"
   
  在這個逐步解說中，您將執行下列工作：  
   
--   建立資料庫資料表，並在其中加入資料。  
+- 建立資料庫資料表，並在其中加入資料。  
   
--   建立 Windows Forms 應用程式。  
+- 建立 Windows Forms 應用程式。  
   
--   將 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 檔案加入至專案。  
+- 將 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 檔案加入至專案。  
   
--   建立新的實體類別。  
+- 建立新的實體類別。  
   
--   設定實體類別以使用繼承。  
+- 設定實體類別以使用繼承。  
   
--   查詢繼承的類別。  
+- 查詢繼承的類別。  
   
--   將資料顯示在 Windows Form 上。  
+- 將資料顯示在 Windows Form 上。  
   
 ## <a name="create-a-table-to-inherit-from"></a>建立要繼承的來源資料表  
  若要查看繼承的運作方式，請建立小型 Person 資料表、將它當成基底類別 (Base Class)，然後建立繼承自它的 Employee 物件。  
   
 #### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>若要建立用來示範繼承的基底資料表  
   
-1.  在 **伺服器總管**/**資料庫總管**，以滑鼠右鍵按一下**資料表**節點，然後按一下**加入新的資料表**。  
+1. 在 **伺服器總管**/**資料庫總管**，以滑鼠右鍵按一下**資料表**節點，然後按一下**加入新的資料表**。  
   
     > [!NOTE]
     >  您可以使用 Northwind 資料庫，或其他可以在其中加入資料表的任何資料庫。  
   
-2.  在 [資料表設計工具] 中，將下列資料行加入至資料表：  
+2. 在 [資料表設計工具] 中，將下列資料行加入至資料表：  
   
     |資料行名稱|資料類型|允許 Null|  
     |-----------------|---------------|-----------------|  
@@ -57,18 +57,18 @@ ms.locfileid: "59664985"
     |**LastName**|**nvarchar(200)**|**False**|  
     |**Manager**|**int**|**True**|  
   
-3.  將 ID 資料行設定為主索引鍵。  
+3. 將 ID 資料行設定為主索引鍵。  
   
-4.  儲存資料表，並將它命名為 **Person**。  
+4. 儲存資料表，並將它命名為 **Person**。  
   
 ## <a name="add-data-to-the-table"></a>將資料加入至資料表  
  為了能夠確認繼承的設定是否正確，單一資料表繼承中的每個類別都需要在資料表中有一些資料。  
   
 #### <a name="to-add-data-to-the-table"></a>若要加入資料至資料表  
   
-1.  在資料檢視中開啟資料表  (以滑鼠右鍵按一下**Person**資料表中**伺服器總管**/**資料庫總管**然後按一下**顯示資料表資料**。)  
+1. 在資料檢視中開啟資料表  (以滑鼠右鍵按一下**Person**資料表中**伺服器總管**/**資料庫總管**然後按一下**顯示資料表資料**。)  
   
-2.  將下列資料複製至資料表  （您可以將它複製並貼到資料表選取整個資料列在 [結果] 窗格中。）  
+2. 將下列資料複製至資料表  （您可以將它複製並貼到資料表選取整個資料列在 [結果] 窗格中。）  
   
     ||||||  
     |-|-|-|-|-|  
@@ -91,24 +91,24 @@ ms.locfileid: "59664985"
   
 #### <a name="to-create-the-new-windows-application"></a>若要建立新的 Windows 應用程式  
   
-1.  從**檔案** 功能表中，建立新的專案。  
+1. 從**檔案** 功能表中，建立新的專案。  
   
-2.  將專案命名為**InheritanceWalkthrough**。  
+2. 將專案命名為**InheritanceWalkthrough**。  
   
     > [!NOTE]
     >  Visual Basic 和 C# 專案都支援 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 請使用下列其中一種語言，來建立新的專案。  
   
-3.  按一下  **Windows Forms 應用程式**範本，然後按一下 **確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 按一下  **Windows Forms 應用程式**範本，然後按一下 **確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
-4.  InheritanceWalkthrough 專案已建立並加入**方案總管 中**。  
+4. InheritanceWalkthrough 專案已建立並加入**方案總管 中**。  
   
 ## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>將 LINQ to SQL 類別檔案加入至專案  
   
 #### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>若要將 LINQ to SQL 檔案加入至專案  
   
-1.  在 [專案]  功能表中，按一下 [加入新項目] 。  
+1. 在 [專案]  功能表中，按一下 [加入新項目] 。  
   
-2.  按一下 [LINQ to SQL 類別] 範本，然後按一下 [新增]。  
+2. 按一下 [LINQ to SQL 類別] 範本，然後按一下 [新增]。  
   
      .dbml 檔案隨即加入至專案，並開啟 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
   
@@ -117,21 +117,21 @@ ms.locfileid: "59664985"
   
 #### <a name="to-create-the-inheritance"></a>若要建立繼承  
   
-1.  在 **伺服器總管**/**資料庫總管**，瀏覽至**人員**您稍早建立的資料表。  
+1. 在 **伺服器總管**/**資料庫總管**，瀏覽至**人員**您稍早建立的資料表。  
   
-2.  拖曳**Person**資料表拖曳至[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]設計介面。  
+2. 拖曳**Person**資料表拖曳至[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]設計介面。  
   
-3.  拖曳第二個**Person**資料表拖曳至[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]其名稱變更為**員工**。  
+3. 拖曳第二個**Person**資料表拖曳至[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]其名稱變更為**員工**。  
   
-4.  從 **Person** 物件中刪除 **Manager** 屬性。  
+4. 從 **Person** 物件中刪除 **Manager** 屬性。  
   
-5.  從 **Employee** 物件中刪除 **Type**、**ID**、**FirstName** 和 **LastName** 屬性。 (亦即刪除 **Manager** 以外的所有屬性。)  
+5. 從 **Employee** 物件中刪除 **Type**、**ID**、**FirstName** 和 **LastName** 屬性。 (亦即刪除 **Manager** 以外的所有屬性。)  
   
-6.  從**工具箱**的 [物件關連式設計工具] 索引標籤中，在 **Person** 與 **Employee** 物件之間建立**繼承**。 若要這麼做，請按一下 [工具箱] 中的 [繼承] 項目，然後放開滑鼠按鍵。 接下來，按一下**員工**物件，然後**人員**物件[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 繼承線的箭號會指向**人員**物件。  
+6. 從**工具箱**的 [物件關連式設計工具] 索引標籤中，在 **Person** 與 **Employee** 物件之間建立**繼承**。 若要這麼做，請按一下 [工具箱] 中的 [繼承] 項目，然後放開滑鼠按鍵。 接下來，按一下**員工**物件，然後**人員**物件[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 繼承線的箭號會指向**人員**物件。  
   
-7.  按一下設計介面上的 [繼承] 線。  
+7. 按一下設計介面上的 [繼承] 線。  
   
-8.  將 [鑑別子屬性] 屬性設定為 **Type**。  
+8. 將 [鑑別子屬性] 屬性設定為 **Type**。  
   
 9. 將 [衍生類別鑑別子值] 屬性設定為 **2**。  
   
@@ -146,11 +146,11 @@ ms.locfileid: "59664985"
   
 #### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>若要建立 LINQ 查詢並將結果顯示在表單上  
   
-1.  拖曳**ListBox**拖曳至 Form1。  
+1. 拖曳**ListBox**拖曳至 Form1。  
   
-2.  按兩下表單，以建立 `Form1_Load` 事件處理常式。  
+2. 按兩下表單，以建立 `Form1_Load` 事件處理常式。  
   
-3.  將下列程式碼加入至 `Form1_Load` 事件處理常式：  
+3. 將下列程式碼加入至 `Form1_Load` 事件處理常式：  
   
     ```vb  
     Dim dc As New DataClasses1DataContext  
@@ -180,11 +180,11 @@ ms.locfileid: "59664985"
   
 #### <a name="to-test-the-application"></a>若要測試應用程式  
   
-1.  按 F5。  
+1. 按 F5。  
   
-2.  確認只顯示 Type 資料行值為 2 的記錄。  
+2. 確認只顯示 Type 資料行值為 2 的記錄。  
   
-3.  關閉表單  (按一下 [偵錯] 功能表上的 [停止偵錯]。)  
+3. 關閉表單  (按一下 [偵錯] 功能表上的 [停止偵錯]。)  
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

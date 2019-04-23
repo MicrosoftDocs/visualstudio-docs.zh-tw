@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21043571f60c13ed7be38f0af8f4208fc54b75a0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 9d7bf1be05ebabcaac319cce591cf82cd2ab5f5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907785"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112282"
 ---
-# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>如何： 建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯
+# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>HOW TO：建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 中實體類別 (Class) 之間的關聯，與資料庫中資料表之間的關聯性 (Relationship) 類似。 您可以使用 [關聯編輯器] 對話方塊建立實體類別之間的關聯。
 
 使用 [關聯編輯器] 對話方塊建立關聯時，必須選取父類別和子類別。 父類別是包含主索引鍵的實體類別，而子類別是包含外部索引鍵的實體類別。 比方說，如果已建立實體類別對應至`Northwind Customers`並`Orders`資料表`Customer`類別會是父類別和`Order`類別會是子類別。
@@ -36,20 +36,20 @@ ms.locfileid: "55907785"
 
 ## <a name="to-create-an-association-between-entity-classes"></a>若要在實體類別之間建立關聯
 
-1.  以滑鼠右鍵按一下代表關聯中父類別的實體類別，指向 [新增]，然後按一下 [關聯]。
+1. 以滑鼠右鍵按一下代表關聯中父類別的實體類別，指向 [新增]，然後按一下 [關聯]。
 
-2.  確認 [關聯編輯器] 對話方塊中選取的是正確的 [父類別]。
+2. 確認 [關聯編輯器] 對話方塊中選取的是正確的 [父類別]。
 
-3.  選取下拉式方塊中的 [子類別]。
+3. 選取下拉式方塊中的 [子類別]。
 
-4.  選取使類別互相關聯的 [關聯屬性]。 通常，這會對應至資料庫中定義的外部索引鍵關聯性。 例如，在`Customers`和`Orders`關聯**關聯屬性**是`CustomerID`針對每個類別。
+4. 選取使類別互相關聯的 [關聯屬性]。 通常，這會對應至資料庫中定義的外部索引鍵關聯性。 例如，在`Customers`和`Orders`關聯**關聯屬性**是`CustomerID`針對每個類別。
 
-5.  按一下 [確定] 建立關聯。
+5. 按一下 [確定] 建立關聯。
 
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [逐步解說： 建立 LINQ to SQL 類別](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [逐步解說：建立 LINQ to SQL 類別](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [DataContext 方法 (O/R 設計工具)](../data-tools/datacontext-methods-o-r-designer.md)
 - [如何：表示主索引鍵](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)

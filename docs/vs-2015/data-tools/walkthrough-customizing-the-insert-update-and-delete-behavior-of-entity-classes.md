@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 95afdec845b4b7788274ee0bc03bd5f26e862388
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: df77c65d116bf0e44b700d15d0b810e9adf04c78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651561"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112113"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>逐步解說：自訂實體類別的插入、更新和刪除行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,26 +30,26 @@ ms.locfileid: "59651561"
   
  在此逐步解說中，您會學到如何執行下列工作：  
   
--   建立新的 Windows Form 應用程式，並在其中加入 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 檔案。  
+- 建立新的 Windows Form 應用程式，並在其中加入 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 檔案。  
   
--   建立對應至 Northwind Customers 資料表的實體類別。  
+- 建立對應至 Northwind Customers 資料表的實體類別。  
   
--   建立參考 LINQ to SQL Customer 類別的物件資料來源。  
+- 建立參考 LINQ to SQL Customer 類別的物件資料來源。  
   
--   建立 Windows Form，這個 Windows Form 包含繫結至 Customer 類別的 <xref:System.Windows.Forms.DataGridView>。  
+- 建立 Windows Form，這個 Windows Form 包含繫結至 Customer 類別的 <xref:System.Windows.Forms.DataGridView>。  
   
--   實作表單的儲存功能。  
+- 實作表單的儲存功能。  
   
--   將預存程序加入至 <xref:System.Data.Linq.DataContext>以建立 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 方法。  
+- 將預存程序加入至 <xref:System.Data.Linq.DataContext>以建立 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 方法。  
   
--   設定 Customer 類別，以使用預存程序來執行插入、更新和刪除作業。  
+- 設定 Customer 類別，以使用預存程序來執行插入、更新和刪除作業。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要完成這個逐步解說，您需要下列項目：  
   
--   SQL Server 版本的 Northwind 範例資料庫的存取權。
+- SQL Server 版本的 Northwind 範例資料庫的存取權。
   
--   **InsertCustomer**， **UpdateCustomer**，並**DeleteCustomer**預存程序，Northwind 資料庫。
+- **InsertCustomer**， **UpdateCustomer**，並**DeleteCustomer**預存程序，Northwind 資料庫。
   
 ## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>建立應用程式和加入 LINQ to SQL 類別  
  因為您會使用 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 類別並將資料顯示在 Windows Form 上，所以請建立新的 Windows Form 應用程式並加入 LINQ to SQL 類別檔案。  
@@ -58,22 +58,22 @@ ms.locfileid: "59651561"
   
 #### <a name="to-create-a-new-windows-application-project-that-contains-linq-to-sql-classes"></a>若要建立內含 LINQ to SQL 類別的新 Windows 應用程式專案  
   
-1.  從**檔案** 功能表中，建立新的專案。  
+1. 從**檔案** 功能表中，建立新的專案。  
   
-2.  將專案命名為**UpdatingwithSProcsWalkthrough**。  
+2. 將專案命名為**UpdatingwithSProcsWalkthrough**。  
   
     > [!NOTE]
     >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 和 C# 專案都支援 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]。 因此請以其中一種語言建立新專案。  
   
-3.  按一下  **Windows Forms 應用程式**範本，然後按一下**確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 按一下  **Windows Forms 應用程式**範本，然後按一下**確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
      UpdatingwithSProcsWalkthrough 專案已建立並加入**方案總管 中**。  
   
-4.  在 [專案]  功能表中，按一下 [加入新項目] 。  
+4. 在 [專案]  功能表中，按一下 [加入新項目] 。  
   
-5.  按一下 [LINQ to SQL 類別] 範本，並在 [名稱] 方塊中鍵入 **Northwind.dbml**。  
+5. 按一下 [LINQ to SQL 類別] 範本，並在 [名稱] 方塊中鍵入 **Northwind.dbml**。  
   
-6.  按一下 [加入] 。  
+6. 按一下 [加入] 。  
   
      專案中隨即加入空的 LINQ to SQL 類別檔案 (Northwind.dbml)，並開啟 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
   
@@ -82,45 +82,45 @@ ms.locfileid: "59651561"
   
 #### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>若要建立 Customer 實體類別和將它設為資料來源  
   
-1.  在 **伺服器總管**/**資料庫總管**，Customer 資料表位於 Northwind 範例資料庫的 SQL Server 版本。
+1. 在 **伺服器總管**/**資料庫總管**，Customer 資料表位於 Northwind 範例資料庫的 SQL Server 版本。
   
-2.  拖曳**客戶**從節點**伺服器總管**/**資料庫總管**到[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]介面。  
+2. 拖曳**客戶**從節點**伺服器總管**/**資料庫總管**到[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]介面。  
   
      會建立名為 **Customer** 的實體類別。 它的屬性會對應至 Customers 資料表中的各資料行。 因為這個實體類別代表 Customers 資料表中的單一客戶，所以其名稱為 **Customer** (而非 **Customers**)。  
   
     > [!NOTE]
     >  此重新命名的行為稱為「複數表示」。 它可以開啟或關閉在中開啟[Options Dialog Box](../ide/reference/options-dialog-box-visual-studio.md)。 如需詳細資訊，請參閱[如何：開啟和關閉複數表示 (O/R 設計工具)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。  
   
-3.  按一下 [建置] 功能表上的 [建置 UpdatingwithSProcsWalkthrough] 以建置專案。  
+3. 按一下 [建置] 功能表上的 [建置 UpdatingwithSProcsWalkthrough] 以建置專案。  
   
-4.  按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。  
+4. 按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。  
   
-5.  在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。  
+5. 在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。  
   
-6.  按一下 [選擇資料來源類型] 頁面上的 [物件]，然後按一下 [下一步]。  
+6. 按一下 [選擇資料來源類型] 頁面上的 [物件]，然後按一下 [下一步]。  
   
-7.  展開 [UpdatingwithSProcsWalkthrough] 節點，然後尋找並選取 [Customer] 類別。  
+7. 展開 [UpdatingwithSProcsWalkthrough] 節點，然後尋找並選取 [Customer] 類別。  
   
     > [!NOTE]
     >  如果**客戶**類別無法使用，請取消精靈、建置專案，然後再次執行精靈。  
   
-8.  按一下 [完成] 以建立資料來源，然後將 [客戶] 實體類別新增至 [資料來源] 視窗。  
+8. 按一下 [完成] 以建立資料來源，然後將 [客戶] 實體類別新增至 [資料來源] 視窗。  
   
 ## <a name="creating-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>建立 DataGridView 以便在 Windows Form 上顯示 Customer 資料  
  建立藉由拖曳繫結至實體類別的控制項[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]資料來源中的項目**Zdroje dat**視窗拖曳至 Windows Form。  
   
 #### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>若要加入繫結至實體類別的控制項  
   
-1.  在 [設計] 檢視表中開啟 [Form1]。  
+1. 在 [設計] 檢視表中開啟 [Form1]。  
   
-2.  從**資料來源** 視窗中，拖曳**客戶**節點拖曳至 Form1。  
+2. 從**資料來源** 視窗中，拖曳**客戶**節點拖曳至 Form1。  
   
     > [!NOTE]
     >  若要顯示 [資料來源] 視窗，請按一下 [資料] 功能表上的 [顯示資料來源]。  
   
-3.  在 [程式碼編輯器] 中開啟 Form1。  
+3. 在 [程式碼編輯器] 中開啟 Form1。  
   
-4.  將下列程式碼加入至表單的全域範圍中，意即不要指定特定的方法，但要屬於 Form1 類別的一部分：  
+4. 將下列程式碼加入至表單的全域範圍中，意即不要指定特定的方法，但要屬於 Form1 類別的一部分：  
   
     ```vb  
     Private NorthwindDataContext1 As New NorthwindDataContext  
@@ -132,7 +132,7 @@ ms.locfileid: "59651561"
   
     ```  
   
-5.  建立 `Form_Load` 事件的事件處理常式，並將下列程式碼加入至處理常式中：  
+5. 建立 `Form_Load` 事件的事件處理常式，並將下列程式碼加入至處理常式中：  
   
     ```vb  
     CustomerBindingSource.DataSource = NorthwindDataContext1.Customers  
@@ -149,15 +149,15 @@ ms.locfileid: "59651561"
   
 #### <a name="to-implement-save-functionality"></a>若要實作儲存功能  
   
-1.  在 [設計] 檢視表中開啟 [Form1]。  
+1. 在 [設計] 檢視表中開啟 [Form1]。  
   
-2.  選取 **CustomerBindingNavigator** 上的儲存按鈕 (具有磁碟片圖示的按鈕)。  
+2. 選取 **CustomerBindingNavigator** 上的儲存按鈕 (具有磁碟片圖示的按鈕)。  
   
-3.  在 [屬性] 視窗中，將 [Enabled] 屬性設定為 [True]。  
+3. 在 [屬性] 視窗中，將 [Enabled] 屬性設定為 [True]。  
   
-4.  按兩下儲存按鈕以建立事件處理常式，並切換至 [色彩編輯器]。  
+4. 按兩下儲存按鈕以建立事件處理常式，並切換至 [色彩編輯器]。  
   
-5.  將下列程式碼加入至儲存按鈕事件處理常式：  
+5. 將下列程式碼加入至儲存按鈕事件處理常式：  
   
     ```vb  
     NorthwindDataContext1.SubmitChanges()  
@@ -171,23 +171,23 @@ ms.locfileid: "59651561"
   
 #### <a name="to-override-the-default-update-behavior"></a>若要覆寫預設更新行為  
   
-1.  在 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中開啟 LINQ to SQL 檔案  (按兩下 [方案總管] 中的 **Northwind.dbml** 檔案。)  
+1. 在 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中開啟 LINQ to SQL 檔案  (按兩下 [方案總管] 中的 **Northwind.dbml** 檔案。)  
   
-2.  在 **伺服器總管**/**資料庫總管**，展開 Northwind 資料庫**預存程序**節點並找出**InsertCustomers**， **UpdateCustomers**，以及**DeleteCustomers**預存程序。  
+2. 在 **伺服器總管**/**資料庫總管**，展開 Northwind 資料庫**預存程序**節點並找出**InsertCustomers**， **UpdateCustomers**，以及**DeleteCustomers**預存程序。  
   
-3.  將這三個預存程序都拖曳至 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
+3. 將這三個預存程序都拖曳至 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
   
      預存程序會加入至方法窗格中做為 <xref:System.Data.Linq.DataContext> 方法。 如需詳細資訊，請參閱 < [DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)。  
   
-4.  選取 **客戶**中的實體類別[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
+4. 選取 **客戶**中的實體類別[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
   
-5.  選取 [屬性] 視窗中的 [Insert] 屬性。  
+5. 選取 [屬性] 視窗中的 [Insert] 屬性。  
   
-6.  按一下旁邊的省略符號 （...）**使用執行階段**來開啟**設定行為** 對話方塊。  
+6. 按一下旁邊的省略符號 （...）**使用執行階段**來開啟**設定行為** 對話方塊。  
   
-7.  選取 [自訂]。  
+7. 選取 [自訂]。  
   
-8.  選取 [自訂] 清單中的 [InsertCustomers] 方法。  
+8. 選取 [自訂] 清單中的 [InsertCustomers] 方法。  
   
 9. 按一下 [套用] 儲存所選取類別和行為的設定。  
   
@@ -227,21 +227,21 @@ ms.locfileid: "59651561"
   
 #### <a name="to-test-the-application"></a>若要測試應用程式  
   
-1.  按 F5。  
+1. 按 F5。  
   
-2.  修改方格內的記錄，以測試「更新」行為。  
+2. 修改方格內的記錄，以測試「更新」行為。  
   
-3.  加入新的記錄，以測試「插入」行為。  
+3. 加入新的記錄，以測試「插入」行為。  
   
-4.  按一下儲存按鈕，將變更儲存回資料庫。  
+4. 按一下儲存按鈕，將變更儲存回資料庫。  
   
-5.  關閉表單   
+5. 關閉表單   
   
-6.  按 F5，確認更新的記錄和剛插入的記錄確實存在。  
+6. 按 F5，確認更新的記錄和剛插入的記錄確實存在。  
   
-7.  刪除您在步驟 3 建立的新記錄，以測試「刪除」行為。  
+7. 刪除您在步驟 3 建立的新記錄，以測試「刪除」行為。  
   
-8.  按一下儲存按鈕送出變更並從資料庫中移除刪除的記錄  
+8. 按一下儲存按鈕送出變更並從資料庫中移除刪除的記錄  
   
 9. 關閉表單   
   
@@ -253,9 +253,9 @@ ms.locfileid: "59651561"
 ## <a name="next-steps"></a>後續步驟  
  根據應用程式需求的不同，在建立 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 實體類別之後，您可能會想執行幾個步驟。 您可以進行下列作業讓此應用程式發揮更強的功能：  
   
--   在更新期間實作並行檢查。 如需資訊，請參閱[開放式並行存取：概觀](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694)。  
+- 在更新期間實作並行檢查。 如需資訊，請參閱[開放式並行存取：概觀](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694)。  
   
--   加入 LINQ 查詢，以篩選資料。 如需資訊，請參閱[LINQ 查詢 (C#) 簡介](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)。  
+- 加入 LINQ 查詢，以篩選資料。 如需資訊，請參閱[LINQ 查詢 (C#) 簡介](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)。  
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

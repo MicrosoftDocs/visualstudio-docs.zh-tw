@@ -10,12 +10,12 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ded54760efe611b337c736e0474042b70ff8bf2e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 30ba0d48676438f19581e93a3af3c900569f5d5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791938"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112218"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>自動程式化 UI 測試的範例 Excel 增益集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "54791938"
   
  此增益集的重要部分：  
   
--   `ThisAddIn` 類別 - 管理 `ExcelUICommunicator` 和 [Excel 的範例自動程式化 UI 測試延伸模組](../test/sample-coded-ui-test-extension-for-excel.md)之間的 .NET 遠端通道。  
+- `ThisAddIn` 類別 - 管理 `ExcelUICommunicator` 和 [Excel 的範例自動程式化 UI 測試延伸模組](../test/sample-coded-ui-test-extension-for-excel.md)之間的 .NET 遠端通道。  
   
--   `ExcelCodedUIAddinHelper_TemporaryKey.pfx` - 用以測試增益集的安全性憑證。  
+- `ExcelCodedUIAddinHelper_TemporaryKey.pfx` - 用以測試增益集的安全性憑證。  
   
--   `ExcelUICommunicator` 類別 - 這個類別會實作 `IExcelUICommunication` 介面。  
+- `ExcelUICommunicator` 類別 - 這個類別會實作 `IExcelUICommunication` 介面。  
   
 ## <a name="thisaddin-class"></a>ThisAddIn 類別  
  此類別大部分實際上是由 Visual Studio Tools for Office 在您建立您的 Excel 增益集專案時，在 `ThisAddIn.Designer.cs` 檔案中產生。  
@@ -45,7 +45,7 @@ ms.locfileid: "54791938"
 ## <a name="exceluicommunicator-class"></a>ExcelUICommunicator 類別  
  這個類別會實作 `IExcelUITestCommunication` 介面，並且從 Excel 物件模型取得要求 UI 資訊。 如需詳細資訊，請參閱[範例 Excel Communicator 介面](../test/sample-excel-communicator-interface.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
  [逐步解說：建立 Excel 的第一個 VSTO 增益集](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
  [Office 和 SharePoint 開發](http://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)

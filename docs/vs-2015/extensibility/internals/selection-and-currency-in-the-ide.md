@@ -13,21 +13,21 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ca6993d8d8d56f1ea2ccf8b4b6c41909606e8755
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d0a0b999a1a6e6ed2364060031f68378e7222ec0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940466"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112477"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE 中的選取項目和貨幣
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]整合式的開發環境 (IDE) 會維護使用選取之使用者的相關資訊目前選取的物件*內容*。 使用選取項目內容中，Vspackage 可以參與貨幣追蹤有兩種：  
   
--   傳播 ide Vspackage 的貨幣資訊。  
+- 傳播 ide Vspackage 的貨幣資訊。  
   
--   藉由監視使用者在 IDE 中的目前作用中選取項目。  
+- 藉由監視使用者在 IDE 中的目前作用中選取項目。  
   
 ## <a name="selection-context"></a>選取項目內容  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 全域追蹤的 IDE 貨幣，在它自己的全域選擇內容物件。 下表顯示的項目組成的選取項目內容。  
@@ -40,9 +40,9 @@ ms.locfileid: "58940466"
   
  此外，環境會維護兩個全域清單：  
   
--   使用 UI 命令識別碼的清單  
+- 使用 UI 命令識別碼的清單  
   
--   目前使用中的項目型別的清單。  
+- 目前使用中的項目型別的清單。  
   
 ### <a name="window-types-and-selection"></a>視窗類型和選取範圍  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 會將 windows 組織成兩種一般類型：  
@@ -60,9 +60,9 @@ ms.locfileid: "58940466"
 ### <a name="events-and-currency"></a>事件和貨幣  
  兩種類型的事件可能會發生影響環境的概念的貨幣：  
   
--   會傳播到全域層級，而變更視窗框架的選取項目內容的事件。 這類事件的範例包括開啟，全域工具視窗開啟或開啟一個專案類型的工具視窗的 MDI 子視窗。  
+- 會傳播到全域層級，而變更視窗框架的選取項目內容的事件。 這類事件的範例包括開啟，全域工具視窗開啟或開啟一個專案類型的工具視窗的 MDI 子視窗。  
   
--   追蹤視窗框架的選取項目內容中的項目進行變更的事件。 範例包括變更選取項目內 DocObject 或變更專案類型 視窗中的選取項目。  
+- 追蹤視窗框架的選取項目內容中的項目進行變更的事件。 範例包括變更選取項目內 DocObject 或變更專案類型 視窗中的選取項目。  
   
 ## <a name="see-also"></a>另請參閱  
  [選取內容物件](../../extensibility/internals/selection-context-objects.md)   

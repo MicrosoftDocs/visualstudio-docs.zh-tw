@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a2c1b3ff112052abd44463fdce3a5b36197a71
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a1a113dc3b4a4b3a8a4482dd092878851d740c6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721338"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112199"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>HOW TO：關閉原始檔控制外掛程式的相容性警告
 使用者可能會採用原始檔控制中的看到數個相容性警告[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 顯示警告取決於原始檔控制外掛程式的功能，並且可以停用，如此處所示詳細。
@@ -31,7 +31,7 @@ ms.locfileid: "56721338"
 
 ### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>若要停用警告：「 已安裝的原始檔控制提供者不支援所有功能 」
 
--   設定下列兩個登錄值 （如有必要，請加入的值）：
+- 設定下列兩個登錄值 （如有必要，請加入的值）：
 
      **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword:00000000**
 

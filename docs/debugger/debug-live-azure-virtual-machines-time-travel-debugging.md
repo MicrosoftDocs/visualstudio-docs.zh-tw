@@ -13,18 +13,18 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: d392e19bb51cd981cc833535556eb083e8e5ba07
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59672486"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112348"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>記錄並重新執行快照集偵錯工具使用的 Azure 虛擬機器上的即時 ASP.NET 應用程式
 
-時間移動偵錯 (TTD) 預覽 Visual Studio Enterprise 中的提供記錄執行在 Azure 虛擬機器 (VM) 上的 Web 應用程式，準確地重新建構然後重新執行的執行路徑。 TTD 整合了我們的快照集偵錯工具供應項目，並可讓您以倒轉和重新執行每一行程式碼，但是您想，協助您隔離並識別可能只會出現在生產環境的問題。
+時間移動偵錯 (TTD) 預覽 Visual Studio Enterprise 中的提供記錄執行在 Azure 虛擬機器 (VM) 的 Web 應用程式，準確地重新建構然後重新執行的執行路徑。 TTD 與快照集偵錯工具整合，並允許您倒轉並重新執行每一行程式碼次數想，協助您找出並識別可能只會出現在生產環境的問題。
 
-擷取 TTD 記錄將不會停止應用程式，不過，記錄時，會執行程序，讓它變慢根據這些因素包括的大小和作用中的執行緒數目增加重大額外負荷。
+擷取 TTD 記錄將不會停止應用程式。 不過，TDD 錄製您執行的程序，讓它變慢根據這些因素包括的大小和作用中的執行緒數目會增加相當大的負擔。
 
 這項功能處於預覽版本的 Visual Studio 2019 移的即時授權。
 
@@ -32,8 +32,8 @@ ms.locfileid: "59672486"
 
 > [!div class="checklist"]
 > * 開始時間的移動啟用偵錯的快照集偵錯工具
-> * 設定貼齊點，並收集時間移動記錄
-> * 開始偵錯的時間移動錄製
+> * 設定貼齊點和一次傳送記錄的收集
+> * 開始偵錯一次移動記錄
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -46,7 +46,7 @@ ms.locfileid: "59672486"
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>開啟您的專案，並開始時間的移動啟用偵錯的快照集偵錯工具
 
-1. 開啟您想要收集的時間移動錄製的專案。
+1. 開啟專案針對您要收集時間的移動記錄。
 
     > [!IMPORTANT]
     > 若要啟動 TTD，您必須開啟*相同版本的原始程式碼*發行您的 Azure VM 服務。
@@ -58,24 +58,24 @@ ms.locfileid: "59672486"
     > [!IMPORTANT]
     > 第一次為 VM 選取 [附加快照偵錯工具] 時，IIS 會自動重新啟動。
 
-    **模組**的中繼資料將不會一開始就啟動，請瀏覽至 Web 應用程式，[開始收集] 按鈕會變成作用中。 Visual Studio 現在已經處於快照集偵錯模式。
+    中繼資料**模組**一開始未啟動。 瀏覽至 web 應用程式和**開始收集**按鈕就會變成作用中。 Visual Studio 現在已經處於快照集偵錯模式。
 
    ![快照集偵錯模式](../debugger/media/snapshot-message.png)
 
     > [!NOTE]
     > Application Insights 網站延伸模組也支援快照集偵錯。 如果遇到「網站延伸模組過期」錯誤訊息，請參閱[快照集偵錯的疑難排解祕訣與已知問題](../debugger/debug-live-azure-apps-troubleshooting.md)了解升級詳細資料。
 
-   **模組**視窗會顯示您的 Azure vm 的所有模組已都載入時 (選擇**偵錯 > Windows > 模組**若要開啟此視窗)。
+   **模組**視窗會顯示您的 Azure vm 時載入所有模組 (選擇**偵錯 > Windows > 模組**若要開啟此視窗)。
 
    ![檢查 [模組] 視窗](../debugger/media/snapshot-modules.png)
 
-## <a name="set-a-snappoint-and-collect-a-time-travel-recording"></a>設定貼齊點，並收集時間移動記錄
+## <a name="set-a-snappoint-and-collect-a-time-travel-recording"></a>設定貼齊點和一次傳送記錄的收集
 
 1. 在程式碼編輯器中，按一下您感興趣設定貼齊點的方法中的左裝訂邊。 確定這是您將執行的程式碼。
 
    ![設定快照點](../debugger/media/time-travel-debugging-set-snappoint-settings.png)
 
-1. 以滑鼠右鍵按一下 貼齊點圖示 （空心的球），然後選擇 **動作**。 在 [快照集設定] 視窗中按一下**動作**核取方塊。 然後按一下**這個方法的結尾收集時間的移動追蹤**核取方塊。
+1. 以滑鼠右鍵按一下 貼齊點圖示 （空心的球），然後選擇 **動作**。 在 [**快照集設定**] 視窗中，按一下**動作**核取方塊。 然後按一下**這個方法的結尾收集時間的移動追蹤**核取方塊。
 
    ![收集時間的移動追蹤之方法的結尾](../debugger/media/time-travel-debugging-set-snappoint-action.png)
 
@@ -85,9 +85,9 @@ ms.locfileid: "59672486"
 
 ## <a name="take-a-snapshot"></a>建立快照集
 
-開啟快照點時，只要執行到包含快照點的程式碼行時，就會擷取快照點。 這可透過伺服器上的實際要求來執行。 若要強制叫用快照點，請移至網站的瀏覽器檢視，並採取可使得系統叫用快照點的任何必要動作。
+當開啟貼齊點時，它會擷取快照集時貼齊點所在的程式碼行執行。 這項執行可能因您的伺服器上的實際要求。 若要強制叫用快照點，請移至網站的瀏覽器檢視，並採取可使得系統叫用快照點的任何必要動作。
 
-## <a name="start-debugging-a-time-travel-recording"></a>開始偵錯的時間移動錄製
+## <a name="start-debugging-a-time-travel-recording"></a>開始偵錯一次移動記錄
 
 1. 叫用快照點時，[診斷工具] 視窗中會顯示快照點。 若要開啟此視窗，請選擇 [偵錯] > [Windows] > [顯示診斷工具]。
 
@@ -95,7 +95,7 @@ ms.locfileid: "59672486"
 
 1. 按一下 檢視快照集連結以開啟程式碼編輯器中所記錄的時間移動。
   
-   您可以執行每一行程式碼使用記錄 TTD**繼續**並**反向繼續**按鈕。 此外可以用來偵錯工具列**顯示下一個陳述式**，**逐步**，**不進入函式**，**跳離函式**， **重新進入**，**回進入**，**步驟回**。
+   您可以執行每一行程式碼使用記錄 TTD**繼續**並**反向繼續**按鈕。 此外，**偵錯**工具列可以用來**顯示下一個陳述式**，**逐步執行**，**不進入函式**，**跳離函式**，**步驟回到**，**回進入**，**步驟回**。
 
    ![開始偵錯](../debugger/media/time-travel-debugging-step-commands.png)
 
@@ -109,11 +109,11 @@ ms.locfileid: "59672486"
 
 ## <a name="set-a-conditional-snappoint"></a>設定條件式快照點
 
-如果很難在應用程式中重新建立特定狀態，請考量使用條件式快照點是否能有所幫助。 條件式貼齊點可協助您避免收集時間移動記錄，直到應用程式進入所需的狀態，例如當變數只有您想要檢查的特定值。 [您可以設定使用運算式，篩選條件或叫用次數](../debugger/debug-live-azure-apps-troubleshooting.md)。
+如果很難在應用程式中重新建立特定狀態，請考量使用條件式快照點是否能有所幫助。 條件式貼齊點幫助您避免收集一次移動記錄直到應用程式進入所需的狀態，例如當變數只有您想要檢查的特定值。 [您可以設定使用運算式，篩選條件或叫用次數](../debugger/debug-live-azure-apps-troubleshooting.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
-在本教學課程中，您已了解如何收集時間移動記錄適用於 Azure 虛擬機器。 若要閱讀更多詳細資料，關於快照集偵錯工具。
+在本教學課程中，您已了解如何收集記錄適用於 Azure 虛擬機器時間移動。 若要閱讀更多詳細資料，關於快照集偵錯工具。
 
 > [!div class="nextstepaction"]
 > [快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)
