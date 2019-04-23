@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3608b5d99e8566701f6090e37b659b7a7c8df86e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 44f25085edcc8b492946d54c7853f8ec32deb0c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655331"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114960"
 ---
 # <a name="xsd-task"></a>XSD 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ ms.locfileid: "59655331"
 ## <a name="parameters"></a>參數  
  下表說明 **XSD** 工作的參數。  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      選擇性的 **String** 參數。  
   
      選項的清單，如命令列上所指定。 例如 "*/option1 /option2 /option#*"。 使用這個參數來指定任何其他 **XSD** 工作參數未表示的選項。  
   
--   **GenerateFromSchema**  
+- **GenerateFromSchema**  
   
      選擇性的 **String** 參數。  
   
@@ -50,11 +50,11 @@ ms.locfileid: "59655331"
   
      指定下列其中一個值，每個值會分別對應至一個 XSD 選項。  
   
-    -   **classes** - **/classes**  
+    - **classes** - **/classes**  
   
-    -   **dataset** - **/dataset**  
+    - **dataset** - **/dataset**  
   
--   **Language**  
+- **Language**  
   
      選擇性的 **String** 參數。  
   
@@ -62,25 +62,25 @@ ms.locfileid: "59655331"
   
      可以選擇 **CS** (C#，此為預設值)、**VB** (Visual Basic) 或 **JS** (JScript)。 您可以對實作 `System.CodeDom.Compiler.CodeDomProvider Class` 的類別指定完整名稱。  
   
--   **Namespace**  
+- **Namespace**  
   
      選擇性的 **String** 參數。  
   
      指定產生的型別的執行階段命名空間。  
   
--   **Sources**  
+- **Sources**  
   
      必要的 `ITaskItem[]` 參數。  
   
      定義工作可以耗用和發出的 MSBuild 來源檔案項目的陣列。  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      選擇性的 **Boolean** 參數。  
   
      如果是 `true`，當工作開始時，會防止顯示著作權和版本號碼訊息。  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      選擇性的 **String** 參數。  
   

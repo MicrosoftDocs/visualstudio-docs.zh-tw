@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 585dfa357082fbb46794ab5f6dcc7b0e141fc9b7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 56b01eb64d38563178d6af947174d0c4d2720bea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653745"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113807"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>使用 TableAdapter 更新資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ ms.locfileid: "59653745"
   
  更新資料來源的確切程序會根據商務需求而有所不同，但包含下列步驟：  
   
-1.  呼叫的介面卡`Update`方法中的`try` / `catch`區塊。  
+1. 呼叫的介面卡`Update`方法中的`try` / `catch`區塊。  
   
-2.  如果攔截到例外狀況時，找出造成錯誤的資料列。 如需詳細資訊，請參閱[如何：找出有錯誤的資料列](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c)。  
+2. 如果攔截到例外狀況時，找出造成錯誤的資料列。 如需詳細資訊，請參閱[如何：找出有錯誤的資料列](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c)。  
   
-3.  調解這個問題，資料中的資料列 （如果可以，以程式設計方式或出示無效的資料列已修改的使用者），並再試一次更新 (<xref:System.Data.DataRow.HasErrors%2A>， <xref:System.Data.DataTable.GetErrors%2A>)。  
+3. 調解這個問題，資料中的資料列 （如果可以，以程式設計方式或出示無效的資料列已修改的使用者），並再試一次更新 (<xref:System.Data.DataRow.HasErrors%2A>， <xref:System.Data.DataTable.GetErrors%2A>)。  
   
 ## <a name="savedata-to-a-database"></a>Savedata 至資料庫  
  呼叫`Update`TableAdapter 的方法。 傳遞包含要寫入至資料庫值的資料表的名稱。  
   
 #### <a name="to-update-a-database-by-using-a-tableadapter"></a>使用 TableAdapter 更新資料庫  
   
--   括住的 TableAdapter`Update`方法中的`try` / `catch`區塊。 下列範例示範如何更新的內容`Customers`資料表中`NorthwindDataSet`內在`try` / `catch`區塊。  
+- 括住的 TableAdapter`Update`方法中的`try` / `catch`區塊。 下列範例示範如何更新的內容`Customers`資料表中`NorthwindDataSet`內在`try` / `catch`區塊。  
   
      [!code-csharp[VbRaddataSaving#9](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs#9)]
      [!code-vb[VbRaddataSaving#9](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#9)]  

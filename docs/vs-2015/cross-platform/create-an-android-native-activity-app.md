@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 01989e9e9d6b186e520f48d45202687d690410fc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661486"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115636"
 ---
 # <a name="create-an-android-native-activity-app"></a>建立 Android Native Activity 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ ms.locfileid: "59661486"
  [建立新的 Native Activity 專案](#Create)   
  [建置並執行預設 Android Native Activity 應用程式](#BuildHello)  
   
-##  <a name="req"></a> 需求  
+## <a name="req"></a> 需求  
  請先確認您已符合所有系統需求，並已在 Visual Studio 2015 中安裝適用於跨平台行動裝置開發的 Visual C++，才能建立新的專案。 如需詳細資訊，請參閱 [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)。 請確認安裝包含所需之協力廠商工具和 SDK，並已安裝 Visual Studio Emulator for Android。  
   
-##  <a name="Create"></a> 建立新的 Native Activity 專案  
+## <a name="Create"></a> 建立新的 Native Activity 專案  
  在本教學課程中，您會建立新的 Android Native Activity 專案，然後在 Visual Studio Emulator for Android 中建置並執行預設的應用程式。  
   
 #### <a name="to-create-a-new-project"></a>建立新的專案  
@@ -49,30 +49,30 @@ ms.locfileid: "59661486"
   
    新的 Android Native Activity 應用程式方案包含兩個專案：  
   
--   **MyAndroidApp.NativeActivity** 包含參考和黏附程式碼 (glue code)，可讓您的應用程式當做 Native Activity 在 Android 上執行。 黏合程式碼 (glue code) 的進入點實作位於 main.cpp 中。 先行編譯標頭檔位於 pch.h 中。 這個 Native Activity 應用程式專案會編譯至封裝專案所挑選的共用程式庫 .so 檔案中。  
+- **MyAndroidApp.NativeActivity** 包含參考和黏附程式碼 (glue code)，可讓您的應用程式當做 Native Activity 在 Android 上執行。 黏合程式碼 (glue code) 的進入點實作位於 main.cpp 中。 先行編譯標頭檔位於 pch.h 中。 這個 Native Activity 應用程式專案會編譯至封裝專案所挑選的共用程式庫 .so 檔案中。  
   
--   **MyAndroidApp.Packaging** 會建立部署在 Android 裝置或模擬器上時所使用的 .apk 檔案。 其中包含資源以及您設有資訊清單屬性的 AndroidManifest.xml 檔案。 其中也包含用來控制建置流程的 build.xml 檔案。 依預設，它會設成啟始專案，以便直接從 Visual Studio 部署及執行。  
+- **MyAndroidApp.Packaging** 會建立部署在 Android 裝置或模擬器上時所使用的 .apk 檔案。 其中包含資源以及您設有資訊清單屬性的 AndroidManifest.xml 檔案。 其中也包含用來控制建置流程的 build.xml 檔案。 依預設，它會設成啟始專案，以便直接從 Visual Studio 部署及執行。  
   
-##  <a name="BuildHello"></a> 建置並執行預設 Android Native Activity 應用程式  
+## <a name="BuildHello"></a> 建置並執行預設 Android Native Activity 應用程式  
  建置並執行範本所產生的應用程式，以驗證您的安裝和設定。 針對這個初始測試，在 Visual Studio Emulator for Android 安裝的其中一個裝置設定檔上執行應用程式。 如果您想要在其他目標上測試您的應用程式，您可以載入目標模擬器，或將裝置連接至您的電腦。  
   
 #### <a name="to-build-and-run-the-default-native-activity-app"></a>建置並執行預設 Native Activity 應用程式  
   
-1.  若尚未選取，請從 [方案平台]  下拉式清單中選擇 [x86]  。  
+1. 若尚未選取，請從 [方案平台]  下拉式清單中選擇 [x86]  。  
   
      ![[方案平台] 下拉式清單中的 x86 選項](../cross-platform/media/cppmdd-rc-na-solution-x86.png "CPPMDD_RC_NA_Solution_x86")  
   
      如果未顯示 [方案平台]  清單，請從 [新增或移除按鈕]  下拉式清單中選擇 [x86]  ，然後選擇您的平台。  
   
-2.  在功能表列上，選擇 [建置] 、[建置方案] 。  
+2. 在功能表列上，選擇 [建置] 、[建置方案] 。  
   
      [輸出] 視窗會顯示方案中這兩個專案的建置流程輸出。  
   
-3.  選擇其中一個 VS Emulator Android Phone (x86) 做為部署目標。  
+3. 選擇其中一個 VS Emulator Android Phone (x86) 做為部署目標。  
   
      如果您已經安裝其他模擬器或連接 Android 裝置，就可以在部署目標下拉式清單中加以選擇。  
   
-4.  按 F5 啟動偵錯，或按 Shift+F5 啟動但不偵錯。  
+4. 按 F5 啟動偵錯，或按 Shift+F5 啟動但不偵錯。  
   
      以下是預設應用程式在 Visual Studio Emulator for Android 中的外觀。  
   
@@ -80,6 +80,6 @@ ms.locfileid: "59661486"
   
      Visual Studio 啟動模擬器，這需要幾秒的時間來載入及部署您的程式碼。 在您的應用程式啟動之後，您可以設定中斷點，並使用偵錯工具，以逐步執行程式碼、檢查本機及監看值。  
   
-5.  按 Shift + F5 停止偵錯。  
+5. 按 Shift + F5 停止偵錯。  
   
      模擬器是分開的程序，會繼續執行。 您可以將程式碼多次編輯、編譯及部署至相同的模擬器。

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff50d721b55c4035b636f40d6ccb55cbbd6d79b6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9c4c8cea0b29994bb880dd0d93832da0e875cc56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115597"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>HOW TO：使用 O/R 設計工具設定繼承
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "59662266"
   
 ### <a name="to-create-inherited-data-classes"></a>若要建立繼承的資料類別  
   
-1.  開啟[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]加上**LINQ to SQL 類別**至現有的 Visual Basic 或 C# 專案的項目。  
+1. 開啟[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]加上**LINQ to SQL 類別**至現有的 Visual Basic 或 C# 專案的項目。  
   
-2.  將想要當成基底類別 (Base Class) 的資料表拖曳至 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
+2. 將想要當成基底類別 (Base Class) 的資料表拖曳至 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
   
-3.  拖曳資料表拖曳至第二份[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]並將它重新命名。 這就是衍生類別 (Derived Class) 或子類別。  
+3. 拖曳資料表拖曳至第二份[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]並將它重新命名。 這就是衍生類別 (Derived Class) 或子類別。  
   
-4.  在 [工具箱] 的 [物件關聯式設計工具] 索引標籤中按一下 [繼承]，然後按一下子類別 (重新命名的資料表)，將其連線至基底類別。  
+4. 在 [工具箱] 的 [物件關聯式設計工具] 索引標籤中按一下 [繼承]，然後按一下子類別 (重新命名的資料表)，將其連線至基底類別。  
   
     > [!NOTE]
     >  按一下 [工具箱] 中的 [繼承] 項目，然後放開滑鼠按鍵，按一下在步驟 3 中建立的第二個類別複本，再按一下在步驟 2 中建立的第一個類別。 繼承線的箭號會指向第一個類別。  
   
-5.  在每個類別中，刪除任何不想要顯示而且沒有用於關聯的物件屬性。 如果您嘗試刪除用於關聯的物件屬性，您會收到錯誤：[屬性\<屬性名稱 > 不能刪除，因為它正參與關聯\<關聯名稱 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)。  
+5. 在每個類別中，刪除任何不想要顯示而且沒有用於關聯的物件屬性。 如果您嘗試刪除用於關聯的物件屬性，您會收到錯誤：[屬性\<屬性名稱 > 不能刪除，因為它正參與關聯\<關聯名稱 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)。  
   
     > [!NOTE]
     >  因為衍生類別會繼承其基底類別中定義的屬性，所以這兩個類別中不可以定義相同的資料行  (資料行是以屬性形式實作)。在基底類別的屬性上設定 [繼承修飾詞]，就可以啟用衍生類別中的資料行建立作業。 如需詳細資訊，請參閱[不在組建中：覆寫屬性和方法](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213)。  
   
-6.  選取 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中的繼承線。  
+6. 選取 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中的繼承線。  
   
-7.  在 **屬性**視窗中，將**鑑別子屬性**用來區分您的類別中的資料錄的資料行名稱。  
+7. 在 **屬性**視窗中，將**鑑別子屬性**用來區分您的類別中的資料錄的資料行名稱。  
   
-8.  將 [衍生類別鑑別子值] 屬性設定為資料庫中將記錄指定為繼承類型的值。 (這是儲存在鑑別子資料行中，用於指定繼承類別的值)。  
+8. 將 [衍生類別鑑別子值] 屬性設定為資料庫中將記錄指定為繼承類型的值。 (這是儲存在鑑別子資料行中，用於指定繼承類別的值)。  
   
 9. 將 [基底類別鑑別子值] 屬性設定為將記錄指定為基底類型的值。 (這是儲存在鑑別子資料行中，用於指定基底類別的值)。  
   

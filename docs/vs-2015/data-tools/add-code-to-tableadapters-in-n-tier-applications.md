@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed2a999fc3480bda8aa534d3dd32a00f5ff5c039
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3c3ddcb99163fe3548f020094647566c1779f5d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651915"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115363"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ ms.locfileid: "59651915"
   
 ### <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>若要將使用者程式碼新增至多層式架構應用程式中的 TableAdapter  
   
-1.  找出包含.xsd 檔案 （資料集） 的專案。  
+1. 找出包含.xsd 檔案 （資料集） 的專案。  
   
-2.  按兩下 **.xsd**開啟資料集的檔案。  
+2. 按兩下 **.xsd**開啟資料集的檔案。  
   
-3.  以滑鼠右鍵按一下`TableAdapter`想要加入程式碼，然後按**檢視程式碼**。  
+3. 以滑鼠右鍵按一下`TableAdapter`想要加入程式碼，然後按**檢視程式碼**。  
   
      部分類別會建立，並會在程式碼編輯器中開啟。  
   
-4.  加入部分類別宣告內的程式碼。  
+4. 加入部分類別宣告內的程式碼。  
   
-5.  下列範例示範如何將程式碼加入`CustomersTableAdapter`在`NorthwindDataSet`:  
+5. 下列範例示範如何將程式碼加入`CustomersTableAdapter`在`NorthwindDataSet`:  
   
     ```vb  
     Partial Public Class CustomersTableAdapter  

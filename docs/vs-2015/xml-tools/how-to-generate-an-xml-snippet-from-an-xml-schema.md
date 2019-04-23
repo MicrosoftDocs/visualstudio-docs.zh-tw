@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5350c4cad7acf936d90698a99299757e13a7de3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658821"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115571"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>HOW TO：從 XML 結構描述產生 XML 片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
   
 - 編輯器中目前的項目必須是空的，沒有屬性。 例如，下列內容全部有效  
   
-  -   `<Account`  
+  - `<Account`  
   
-  -   `<Account>`  
+  - `<Account>`  
   
-  -   `<Account></Account>`  
+  - `<Account></Account>`  
   
 - 游標必須緊接在項目名稱的右邊。  
   
@@ -51,31 +51,31 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>建立新的 XML 檔案，並將其與 XML 結構描述相關聯  
   
-1.  在上**檔案**功能表上，指向**新增**，然後按一下**檔案**。  
+1. 在上**檔案**功能表上，指向**新增**，然後按一下**檔案**。  
   
-2.  選取  **XML 檔案**中**範本**窗格，然後按一下 **開啟**。  
+2. 選取  **XML 檔案**中**範本**窗格，然後按一下 **開啟**。  
   
      編輯器中會開啟新的檔案。 檔案包含預設的 XML 宣告，`<?xml version="1.0" encoding="utf-8">`。  
   
-3.  在 文件屬性 視窗中，按一下 瀏覽按鈕 (**...**) 上**結構描述**欄位。  
+3. 在 文件屬性 視窗中，按一下 瀏覽按鈕 (**...**) 上**結構描述**欄位。  
   
      **XSD 結構描述**對話方塊隨即出現。  
   
-4.  按一下 [加入] 。  
+4. 按一下 [加入] 。  
   
      **開啟 XSD 結構描述**對話方塊隨即出現。  
   
-5.  選取的結構描述檔案，然後按一下**開啟**。  
+5. 選取的結構描述檔案，然後按一下**開啟**。  
   
-6.  按一下 [確定] 。  
+6. 按一下 [確定] 。  
   
      XML 結構描述現在已與 XML 文件相關聯。  
   
 #### <a name="to-generate-an-xml-snippet"></a>產生 XML 片段  
   
-1.  在編輯器窗格中鍵入 `<`。  
+1. 在編輯器窗格中鍵入 `<`。  
   
-2.  成員清單會顯示可能的項目：  
+2. 成員清單會顯示可能的項目：  
   
      **！-** 將註解。  
   
@@ -85,11 +85,11 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
   
      **請連絡**加入根項目。  
   
-3.  選取 **連絡人**從 成員 清單中，按下 ENTER。  
+3. 選取 **連絡人**從 成員 清單中，按下 ENTER。  
   
      編輯器會加入開始標記 `<Contact`，並將游標置於項目名稱之後。  
   
-4.  按 TAB 鍵，會根據 `Contact` 項目的結構描述資訊產生它的 XML 資料。  
+4. 按 TAB 鍵，會根據 `Contact` 項目的結構描述資訊產生它的 XML 資料。  
   
 ### <a name="input"></a>輸入  
  下列結構描述檔案由逐步教學使用。  

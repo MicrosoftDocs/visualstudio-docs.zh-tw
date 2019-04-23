@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b64be59e1a962eb23ef12ba49e8b4fa73bd7a44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940247"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114221"
 ---
 # <a name="capturing-graphics-information"></a>擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,9 +60,9 @@ ms.locfileid: "58940247"
   
 ##### <a name="to-configure-graphics-diagnostics-capture-options"></a>設定圖形診斷擷取選項  
   
-1.  在功能表列上選擇 [工具]、[選項]。 [選項] 對話方塊隨即出現。  
+1. 在功能表列上選擇 [工具]、[選項]。 [選項] 對話方塊隨即出現。  
   
-2.  在左邊的選項分類清單中，選擇 [圖形診斷]，然後設定您想要的 [圖形診斷] 選項。  
+2. 在左邊的選項分類清單中，選擇 [圖形診斷]，然後設定您想要的 [圖形診斷] 選項。  
   
      **收集擷取期間的呼叫堆疊 (會使擷取速度變慢)**  
      核取此方塊可收集呼叫堆疊。 根據預設，不會收集呼叫堆疊。 若要擷取呼叫堆疊，請確定 [收集擷取期間的呼叫堆疊 (會使擷取速度變慢)] 核取方塊設定為啟用收集，然後設定 [針對繪製、分派、簡報及效能標記] 選項 (預設) 只收集最重要的呼叫堆疊，或 [針對所有項目] 選項收集所有呼叫堆疊。 若稍後要停止收集呼叫堆疊，請清除 [收集擷取期間的呼叫堆疊 (會使擷取速度變慢)] 核取方塊。  

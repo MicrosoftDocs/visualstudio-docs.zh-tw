@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2e04ca6afaa8e5a290e6c2a3419bb4fa28fd46e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6875e13baa83d349020f50a3fe448a87ec5fd30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943964"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114817"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>建立自訂專案和項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,55 +29,55 @@ Visual Studio SDK 包含專案範本，可建立自訂專案範本和自訂項�
 
 ## <a name="create-a-project-template"></a>建立專案範本
 
-1.  建立專案範本專案。 您可以找到中的專案範本**新的專案**對話方塊中的，在 Visual Basic 或 Visual C#**擴充性**資料夾。
+1. 建立專案範本專案。 您可以找到中的專案範本**新的專案**對話方塊中的，在 Visual Basic 或 Visual C#**擴充性**資料夾。
 
      範本會產生類別檔案、 圖示、.vstemplate 檔案，名為 ProjectTemplate.vbproj 或 ProjectTemplate.csproj，可以讓您編輯專案檔和一些通常由其他專案類型，這類 resources.resx 檔案中，AssemblyInfo 所產生的檔案檔案和.settings 檔案。 每個程式碼檔案包含通用的參數替代項目，在適當的地方。
 
-2.  新增和移除專案中視需要為您的專案中的項目。 請勿移除可編輯專案檔、 AssemblyInfo 檔案或.vstemplate 檔案。
+2. 新增和移除專案中視需要為您的專案中的項目。 請勿移除可編輯專案檔、 AssemblyInfo 檔案或.vstemplate 檔案。
 
-3.  更新以反映任何新增及刪除.vstemplate 檔案。 [專案](../extensibility/project-element-visual-studio-templates.md)項目必須包含[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)每個檔案要包含在範本中的項目。
+3. 更新以反映任何新增及刪除.vstemplate 檔案。 [專案](../extensibility/project-element-visual-studio-templates.md)項目必須包含[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)每個檔案要包含在範本中的項目。
 
-4.  修改您的程式碼檔案和其他使用者端的內容，並加入適當的參數替代項目。
+4. 修改您的程式碼檔案和其他使用者端的內容，並加入適當的參數替代項目。
 
-5.  修改視需要產生的內容。
+5. 修改視需要產生的內容。
 
-6.  建置專案。
+6. 建置專案。
 
      Visual Studio 會建立包含您的範本.zip 檔案。 中未部署，但它不適用於實驗的執行個體。
 
 ## <a name="create-an-item-template"></a>建立項目範本
 
-1.  建立項目範本專案。
+1. 建立項目範本專案。
 
      範本會產生類別檔案、 圖示、.vstemplate 檔案和 AssemblyInfo 檔案。 類別檔案包含一些常見的參數替代項目。
 
-2.  新增和移除專案中視需要為您的專案中的項目。
+2. 新增和移除專案中視需要為您的專案中的項目。
 
-3.  更新以反映任何新增及刪除.vstemplate 檔案。 [專案](../extensibility/project-element-visual-studio-templates.md)項目必須包含[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)每個檔案要包含在範本中的項目。
+3. 更新以反映任何新增及刪除.vstemplate 檔案。 [專案](../extensibility/project-element-visual-studio-templates.md)項目必須包含[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)每個檔案要包含在範本中的項目。
 
-4.  修改您的程式碼檔案和其他使用者端的內容，並加入適當的參數替代項目。
+4. 修改您的程式碼檔案和其他使用者端的內容，並加入適當的參數替代項目。
 
-5.  修改產生所需的內容。
+5. 修改產生所需的內容。
 
-6.  建置專案。
+6. 建置專案。
 
      Visual Studio 會建立壓縮的檔案，其中包含您的範本。 中未部署，但它不適用於實驗的執行個體。
 
 ## <a name="deploy-the-project-or-item-template"></a>部署專案或項目範本
 
-1.  建立 VSIX 專案。 如需詳細資訊，請參閱 < [VSIX 專案範本](../extensibility/vsix-project-template.md)。
+1. 建立 VSIX 專案。 如需詳細資訊，請參閱 < [VSIX 專案範本](../extensibility/vsix-project-template.md)。
 
-2.  將 VSIX 專案設定為啟始專案。 在 **方案總管**，選取 VSIX 專案節點、 按一下滑鼠右鍵，然後選取**設定為啟始專案**。
+2. 將 VSIX 專案設定為啟始專案。 在 **方案總管**，選取 VSIX 專案節點、 按一下滑鼠右鍵，然後選取**設定為啟始專案**。
 
-3.  設定專案範本為 VSIX 專案的資產。 開啟的.vsixmanifest 檔案。 移至**資產**索引標籤，然後按一下**新增**。
+3. 設定專案範本為 VSIX 專案的資產。 開啟的.vsixmanifest 檔案。 移至**資產**索引標籤，然後按一下**新增**。
 
-    1.  設定**型別**欄位設為**Microsoft.VisualStudio.ProjectTemplate**或是**Microsoft.VisualStudio.ItemTemplate**。
+    1. 設定**型別**欄位設為**Microsoft.VisualStudio.ProjectTemplate**或是**Microsoft.VisualStudio.ItemTemplate**。
 
-    2.  針對來源，選取**目前的方案中的專案**選項，然後再選取包含您範本的專案。
+    2. 針對來源，選取**目前的方案中的專案**選項，然後再選取包含您範本的專案。
 
-4.  建置方案，然後按 F5。 實驗執行個體隨即出現。
+4. 建置方案，然後按 F5。 實驗執行個體隨即出現。
 
-5.  專案範本專案中，您應該會看到您的專案範本中所列**新的專案** 對話方塊 (**檔案 / 新增 / 專案**) 中的 Visual C# 或 Visual Basic 節點。 項目範本專案，您應該會看到您加入新項目 對話方塊中所列的項目範本 (在**方案總管**，選取專案節點，然後按一下**新增 / 新項目**)。
+5. 專案範本專案中，您應該會看到您的專案範本中所列**新的專案** 對話方塊 (**檔案 / 新增 / 專案**) 中的 Visual C# 或 Visual Basic 節點。 項目範本專案，您應該會看到您加入新項目 對話方塊中所列的項目範本 (在**方案總管**，選取專案節點，然後按一下**新增 / 新項目**)。
 
 ## <a name="see-also"></a>另請參閱
 
