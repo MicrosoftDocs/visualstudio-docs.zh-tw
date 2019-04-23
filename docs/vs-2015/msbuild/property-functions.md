@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8bcb8aadc2fb2a2f836fccde56e283b38cbc213d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 85fb100e09dd61e836404ecf98f8f7292ff2ee86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649234"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065177"
 ---
 # <a name="property-functions"></a>屬性函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,45 +27,45 @@ ms.locfileid: "59649234"
   
  **本主題內容：**  
   
--   [屬性函式語法](#BKMK_Syntax)  
+- [屬性函式語法](#BKMK_Syntax)  
   
-    -   [字串屬性函式](#BKMK_String)  
+    - [字串屬性函式](#BKMK_String)  
   
-    -   [靜態屬性函式](#BKMK_Static)  
+    - [靜態屬性函式](#BKMK_Static)  
   
-    -   [在靜態屬性上呼叫執行個體方法](#BKMK_InstanceMethods)  
+    - [在靜態屬性上呼叫執行個體方法](#BKMK_InstanceMethods)  
   
-    -   [MSBuild 屬性函式](#BKMK_PropertyFunctions)  
+    - [MSBuild 屬性函式](#BKMK_PropertyFunctions)  
   
--   [巢狀屬性函式](#BKMK_Nested)  
+- [巢狀屬性函式](#BKMK_Nested)  
   
--   [MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
+- [MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
   
--   [MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
+- [MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
   
--   [MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
+- [MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
   
--   [MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
+- [MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
   
--   [MSBuild MakeRelative](#BKMK_MakeRelative)  
+- [MSBuild MakeRelative](#BKMK_MakeRelative)  
   
--   [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
+- [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
   
-##  <a name="BKMK_Syntax"></a> 屬性函式語法  
+## <a name="BKMK_Syntax"></a> 屬性函式語法  
  以下是三種類型的屬性函式；每一種函式都具有不同的語法：  
   
--   字串 (執行個體) 屬性函式  
+- 字串 (執行個體) 屬性函式  
   
--   靜態屬性函式  
+- 靜態屬性函式  
   
--   MSBuild 屬性函式  
+- MSBuild 屬性函式  
   
-###  <a name="BKMK_String"></a> 字串屬性函式  
+### <a name="BKMK_String"></a> 字串屬性函式  
  所有建置屬性值都是字串值。 您可以使用字串 (執行個體) 方法操作任何屬性值。 例如，您可以使用下列程式碼，從代表完整路徑的建置屬性，擷取磁碟機名稱 (前三個字元)：  
   
  `$(ProjectOutputFolder.Substring(0,3))`  
   
-###  <a name="BKMK_Static"></a> 靜態屬性函式  
+### <a name="BKMK_Static"></a> 靜態屬性函式  
  在您的組建指令碼中，您可以存取許多系統類別的靜態屬性和方法。 若要取得靜態屬性的值，請使用下列語法，其中 *Class* 是系統類別的名稱，而 *Property* 是屬性的名稱。  
   
  `$([Class]::Property)`  
@@ -166,7 +166,7 @@ ms.locfileid: "59649234"
   
 - System.IO.File::ReadAllText  
   
-###  <a name="BKMK_InstanceMethods"></a> 在靜態屬性上呼叫執行個體方法  
+### <a name="BKMK_InstanceMethods"></a> 在靜態屬性上呼叫執行個體方法  
  如果您存取的靜態屬性傳回物件執行個體，您就可以叫用該物件的執行個體方法。 若要叫用執行個體方法，請使用下列語法，其中 *Class* 是系統類別的名稱、*Property* 是屬性的名稱、*Method* 是方法的名稱，而 *(Parameters)* 是方法的參數清單：  
   
  `$([Class]::Property.Method(Parameters))`  
@@ -177,7 +177,7 @@ ms.locfileid: "59649234"
   
  `<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>`  
   
-###  <a name="BKMK_PropertyFunctions"></a> MSBuild 屬性函式  
+### <a name="BKMK_PropertyFunctions"></a> MSBuild 屬性函式  
  您組建中的數個靜態方法可以存取來提供算術、位元邏輯和逸出字元支援。 您可以使用下列語法存取這些方法，其中 *Method* 是方法的名稱，而 *Parameters* 是方法的參數清單。  
   
  `$([MSBuild]::Method(Parameters))`  
@@ -207,7 +207,7 @@ ms.locfileid: "59649234"
 |int BitwiseXor(int first, int second)|對第一和第二個整數 (第一 ^ 第二) 執行位元 `XOR`。|  
 |int BitwiseNot(int first)|執行位元 `NOT` (~第一)。|  
   
-##  <a name="BKMK_Nested"></a> 巢狀屬性函式  
+## <a name="BKMK_Nested"></a> 巢狀屬性函式  
  您可以組合屬性函式，以構成較複雜的函式，如下列範例所示。  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
@@ -216,7 +216,7 @@ ms.locfileid: "59649234"
   
  中繼資料也可能會出現在巢狀屬性函式中。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。  
   
-##  <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
+## <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
  MSBuild 中的 `DoesTaskHostExist` 屬性函式會傳回目前是否已為指定執行階段和架構值安裝工作主機。  
   
  此屬性函式具有下列語法：  
@@ -225,7 +225,7 @@ ms.locfileid: "59649234"
 $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
 ```  
   
-##  <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
+## <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
  MSBuild `GetDirectoryNameOfFileAbove` 屬性函式會在路徑中的目前目錄上方，尋找目錄中的檔案。  
   
  此屬性函式具有下列語法：  
@@ -240,7 +240,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
   
-##  <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
+## <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
  MSBuild `GetRegistryValue` 屬性函式會傳回登錄機碼的值。 此函式採用兩個引數 (機碼名稱和值名稱)，並傳回登錄的值。 如果您未指定值名稱，則會傳回預設值。  
   
  下列範例顯示如何使用此函式：  
@@ -252,7 +252,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
 ```  
   
-##  <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
+## <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
  如果提供登錄機碼、值和一或多個已排序登錄檢視，MSBuild `GetRegistryValueFromView` 屬性函式會取得系統登錄資料。 在每一個登錄檢視中會按順序搜尋機碼和值，直到找到它們。  
   
  此屬性函式的語法為：  
@@ -277,7 +277,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
  會取得 ReferenceAssemblies 機碼的 SLRuntimeInstallPath 資料，首先在 64 位元登錄檢視中尋找，然後在 32 位元登錄檢視中尋找。  
   
-##  <a name="BKMK_MakeRelative"></a> MSBuild MakeRelative  
+## <a name="BKMK_MakeRelative"></a> MSBuild MakeRelative  
  MSBuild `MakeRelative` 屬性函式會傳回與第一個路徑相對之第二個路徑的相對路徑。 每一個路徑都可以是檔案或資料夾。  
   
  此屬性函式具有下列語法：  
@@ -306,7 +306,7 @@ Output:
 -->  
 ```  
   
-##  <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
+## <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
  MSBuild `ValueOrDefault` 屬性函式會傳回第一個引數，除非它是 null 或空白。 如果第一個引數是 null 或空白，函式會傳回第二個引數。  
   
  下列範例顯示如何使用此函式。  

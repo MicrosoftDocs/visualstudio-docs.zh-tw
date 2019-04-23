@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 247e1720a21c88f15a766fb948156e93ec55e308
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 84aa3400eb6b64e8904d95e0fce7b43ae9351ad8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656319"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060861"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>HOW TO：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,23 +34,23 @@ ms.locfileid: "59656319"
   
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>若要指派預存程序以覆寫實體類別的預設行為  
   
-1.  在設計工具中開啟 **LINQ to SQL** 檔案。 (按兩下中的.dbml 檔案**方案總管 中**。)  
+1. 在設計工具中開啟 **LINQ to SQL** 檔案。 (按兩下中的.dbml 檔案**方案總管 中**。)  
   
-2.  在 **伺服器總管**/**資料庫總管**，依序展開**預存程序**並找出您想要用於 Insert、 Update、 預存程序和/或刪除的實體類別的命令。  
+2. 在 **伺服器總管**/**資料庫總管**，依序展開**預存程序**並找出您想要用於 Insert、 Update、 預存程序和/或刪除的實體類別的命令。  
   
-3.  將預存程序拖曳至 O/R 設計工具。  
+3. 將預存程序拖曳至 O/R 設計工具。  
   
      預存程序會加入至方法窗格做為 <xref:System.Data.Linq.DataContext> 方法。 如需詳細資訊，請參閱 < [DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)。  
   
-4.  選取想要使用預存程序執行更新的實體類別。  
+4. 選取想要使用預存程序執行更新的實體類別。  
   
-5.  在 [屬性] 視窗中，選取要覆寫的命令 (**Insert**、**Update** 或 **Delete**)。  
+5. 在 [屬性] 視窗中，選取要覆寫的命令 (**Insert**、**Update** 或 **Delete**)。  
   
-6.  按一下 [使用執行階段] 字組旁邊的省略符號 (...)，以開啟 [設定行為] 對話方塊。  
+6. 按一下 [使用執行階段] 字組旁邊的省略符號 (...)，以開啟 [設定行為] 對話方塊。  
   
-7.  選取 [自訂]。  
+7. 選取 [自訂]。  
   
-8.  在 [自訂] 清單中，選取所需的預存程序。  
+8. 在 [自訂] 清單中，選取所需的預存程序。  
   
 9. 檢查 [方法引數] 和 [類別屬性] 清單，以確認 [方法引數] 對應至適當的 [類別屬性]。 對應的原始方法引數 (Original_*ArgumentName*) 至原始屬性 (*PropertyName* (Original)) 的 Update 和 Delete 命令。  
   

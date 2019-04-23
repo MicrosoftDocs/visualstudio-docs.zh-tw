@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 473afbdbbeb510434d45bf28dc02a3ff636d2b9c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1e8f3e5b87879d34ab61f0b50e5e4b91e84933b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943866"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063084"
 ---
 # <a name="unable-to-attach-to-the-process"></a>無法附加到處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,26 +42,26 @@ ms.locfileid: "58943866"
   
 ### <a name="to-solve-scenario-1"></a>解決案例 1  
   
--   以相同使用者帳戶名稱和密碼，執行偵錯工具和 Managed 應用程式。  
+- 以相同使用者帳戶名稱和密碼，執行偵錯工具和 Managed 應用程式。  
   
 ### <a name="to-solve-scenario-2"></a>解決案例 2  
   
-1.  在 [開始] 功能表內選擇 [控制台]。  
+1. 在 [開始] 功能表內選擇 [控制台]。  
   
-2.  在 [控制台] 中按兩下 [系統管理工具]。  
+2. 在 [控制台] 中按兩下 [系統管理工具]。  
   
-3.  在 [系統管理工具] 視窗中按兩下 [本機安全性原則]。  
+3. 在 [系統管理工具] 視窗中按兩下 [本機安全性原則]。  
   
-4.  在 [本機安全性原則] 視窗中選取 [本機原則]。  
+4. 在 [本機安全性原則] 視窗中選取 [本機原則]。  
   
-5.  在 **原則**資料行中，按兩下**網路存取：共用和安全性模式用於本機帳戶**。  
+5. 在 **原則**資料行中，按兩下**網路存取：共用和安全性模式用於本機帳戶**。  
   
-6.  在 **網路存取：共用和安全性模式用於本機帳戶**對話方塊方塊中，將本機安全性設定變更為**傳統**，然後按一下**確定**。  
+6. 在 **網路存取：共用和安全性模式用於本機帳戶**對話方塊方塊中，將本機安全性設定變更為**傳統**，然後按一下**確定**。  
   
     > [!CAUTION]
     >  將安全性模式變更為 [一般]，會導致未預期存取共用檔案和 DCOM 元件。 如果您做了此變更，遠端使用者可以使用您的本機使用者帳戶驗證，而非使用來賓帳戶。 如果遠端使用者符合您的使用者名稱和密碼，該使用者將可以存取您已共用的任何資料夾或 DCOM 物件。如果使用這個資訊安全模型，請確定電腦上的所有使用者帳戶皆有增強式密碼，或對偵錯中和已偵錯的電腦設定隔離的網路區段，以防止未經授權的存取。  
   
-7.  關閉所有視窗。  
+7. 關閉所有視窗。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)

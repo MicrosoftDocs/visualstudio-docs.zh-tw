@@ -26,12 +26,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1235abfc6e8a2c384b02fd1d48a859063c058d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b40e7814fb809298c71d0078e644c12bd5a9a9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064956"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>HOW TO：使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "58940591"
   
 ### <a name="to-enable-rpc-debugging"></a>若要啟用 RPC 偵錯  
   
-1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。  
+1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。  
   
-2.  在 [選項] 對話方塊中按一下 [偵錯] 資料夾。  
+2. 在 [選項] 對話方塊中按一下 [偵錯] 資料夾。  
   
-3.  按一下 [原生] 頁面。  
+3. 按一下 [原生] 頁面。  
   
-4.  選取 [RPC 偵錯] 核取方塊。  
+4. 選取 [RPC 偵錯] 核取方塊。  
   
     > [!NOTE]
     >  若要偵錯 RPC 呼叫，您必須擁有系統管理員 (Administrator) 或進階使用者 (Power User) 權限。  

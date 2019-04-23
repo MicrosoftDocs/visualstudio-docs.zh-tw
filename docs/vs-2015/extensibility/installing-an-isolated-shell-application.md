@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942158"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062824"
 ---
 # <a name="installing-an-isolated-shell-application"></a>安裝 Isolated 的 Shell 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58942158"
   
 #### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>若要準備 MSI 部署的殼層應用程式  
   
-1.  編輯您的方案中每個的.vsixmanifest 檔案。  
+1. 編輯您的方案中每個的.vsixmanifest 檔案。  
   
      在 `Identifier`項目，新增`InstalledByMSI`項目和`SystemComponent`項目，然後將其值設定為`true`。  
   
      這些項目可避免 VSIX 安裝程式嘗試從它們使用 [解除安裝安裝程式元件和使用者**擴充功能和更新**] 對話方塊。  
   
-2.  VSIX 資訊清單包含每個專案，編輯建置工作輸出的內容位置的安裝程式 MSI 檔案。 在組建輸出中，包含在 VSIX 資訊清單，但不建置.vsix 檔案。  
+2. VSIX 資訊清單包含每個專案，編輯建置工作輸出的內容位置的安裝程式 MSI 檔案。 在組建輸出中，包含在 VSIX 資訊清單，但不建置.vsix 檔案。  
   
 ## <a name="creating-an-msi-for-your-shell"></a>建立您的殼層中的 MSI  
  若要建置您的 MSI 套件，我們建議您使用[Windows Installer XML 工具組](http://go.microsoft.com/fwlink/?LinkId=82720)因為它提供更大的彈性比標準的安裝專案。  
@@ -85,7 +85,7 @@ ms.locfileid: "58942158"
   
 ##### <a name="to-set-the-layout-of-shell-components"></a>若要設定的殼層元件版面配置  
   
-1.  建立的階層`Directory`來代表所有在目標電腦上的檔案系統上建立，如下列範例所示的目錄項目。  
+1. 建立的階層`Directory`來代表所有在目標電腦上的檔案系統上建立，如下列範例所示的目錄項目。  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -105,7 +105,7 @@ ms.locfileid: "58942158"
   
      這些目錄由參考`Id`時指定的檔案，必須先安裝。  
   
-2.  識別命令介面與殼層應用程式需要，如下列範例所示的元件。  
+2. 識別命令介面與殼層應用程式需要，如下列範例所示的元件。  
   
     > [!NOTE]
     >  某些項目可以參考其他.wxs 檔案中定義。  
@@ -123,7 +123,7 @@ ms.locfileid: "58942158"
     </Feature>  
     ```  
   
-    1.  `ComponentRef`項目是指識別目前的元件所需之檔案的另一個.wxs 檔案。 比方說，GeneralProfile 具有下列定義 HelpAbout.wxs 中。  
+    1. `ComponentRef`項目是指識別目前的元件所需之檔案的另一個.wxs 檔案。 比方說，GeneralProfile 具有下列定義 HelpAbout.wxs 中。  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -139,7 +139,7 @@ ms.locfileid: "58942158"
   
          `DirectoryRef`項目會指定使用者的電腦上這些檔案在哪裡。 `Directory`項目會指定，將會安裝到子目錄，而每個`File`項目代表所建置，或是，解決方案的一部分，並識別該檔案可以找到建立 MSI 檔案時的檔案。  
   
-    2.  `ComponentGroupRef`項目參考的其他元件 （或元件與元件群組） 的一組。 比方說，`ComponentGroupRef`在 ApplicationGroup 中所定義，如下所示 Application.wxs。  
+    2. `ComponentGroupRef`項目參考的其他元件 （或元件與元件群組） 的一組。 比方說，`ComponentGroupRef`在 ApplicationGroup 中所定義，如下所示 Application.wxs。  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -166,15 +166,15 @@ ms.locfileid: "58942158"
   
 ##### <a name="to-integrate-registry-entries-into-the-msi"></a>若要整合到 MSI 的登錄項目  
   
-1.  在  **Shell 自訂**資料夾中，開啟*ProjectName*.reg  
+1. 在  **Shell 自訂**資料夾中，開啟*ProjectName*.reg  
   
-2.  目標安裝目錄的路徑取代 $RootFolder$ 語彙基元的所有執行個體。  
+2. 目標安裝目錄的路徑取代 $RootFolder$ 語彙基元的所有執行個體。  
   
-3.  新增應用程式所需的任何其他登錄項目。  
+3. 新增應用程式所需的任何其他登錄項目。  
   
-4.  開啟 ApplicationRegistry.wxs。  
+4. 開啟 ApplicationRegistry.wxs。  
   
-5.  中的每個登錄項目*ProjectName*.reg，新增相對應的登錄區塊，如下列範例所示。  
+5. 中的每個登錄項目*ProjectName*.reg，新增相對應的登錄區塊，如下列範例所示。  
   
     |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
@@ -186,24 +186,24 @@ ms.locfileid: "58942158"
 ## <a name="creating-a-setup-bootstrapper"></a>建立安裝程式啟動載入器  
  只有當第一次安裝所有先決條件，就會安裝您已完成的 MSI。 若要簡化使用者體驗，建立安裝程式會收集並安裝您的應用程式之前先安裝所有必要條件。 若要確保安裝成功，請執行下列動作：  
   
--   強制執行由系統管理員的安裝。  
+- 強制執行由系統管理員的安裝。  
   
--   偵測是否已安裝 Visual Studio Shell （獨立模式）。  
+- 偵測是否已安裝 Visual Studio Shell （獨立模式）。  
   
--   執行一或兩個殼層安裝程式。  
+- 執行一或兩個殼層安裝程式。  
   
--   處理重新啟動要求。  
+- 處理重新啟動要求。  
   
--   執行您的 MSI。  
+- 執行您的 MSI。  
   
 ### <a name="enforcing-installation-by-administrator"></a>強制執行由系統管理員的安裝  
  此程序，才能讓安裝程式，以存取所需的目錄，例如 \Program Files\\。  
   
 ##### <a name="to-enforce-installation-by-administrator"></a>若要強制執行由系統管理員的安裝  
   
-1.  開啟安裝專案的捷徑功能表，然後選擇**屬性**。  
+1. 開啟安裝專案的捷徑功能表，然後選擇**屬性**。  
   
-2.  底下**組態屬性/連結器/資訊清單檔**，將**UAC 執行層級**來**requireAdministrator**。  
+2. 底下**組態屬性/連結器/資訊清單檔**，將**UAC 執行層級**來**requireAdministrator**。  
   
      這個屬性會將要求到內嵌的資訊清單檔案，以系統管理員身分執行程式的屬性。  
   
@@ -252,15 +252,15 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
   
  若要處理重新啟動時，執行下列動作：  
   
--   設定登錄以繼續安裝，當 Windows 啟動時。  
+- 設定登錄以繼續安裝，當 Windows 啟動時。  
   
--   執行啟動載入器 double 重新啟動。  
+- 執行啟動載入器 double 重新啟動。  
   
--   刪除 Shell installer ResumeData 機碼。  
+- 刪除 Shell installer ResumeData 機碼。  
   
--   重新啟動 Windows。  
+- 重新啟動 Windows。  
   
--   重設啟動路徑的 msi。  
+- 重設啟動路徑的 msi。  
   
 ### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>設定登錄，以繼續設定，當 Windows 啟動時  
  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\ 登錄機碼在系統啟動時，以系統管理權限執行，並接著會清除。 HKEY_CURRENT_USER 包含類似索引鍵，但一般使用者的身分執行，並不適合安裝。 您可以將字串值放在您的安裝程式會呼叫 runonce 機碼，以繼續安裝。 不過，我們建議您藉由呼叫安裝程式 **/重新啟動**或類似的參數，以通知它正在繼續而不啟動應用程式。 您也可以包含參數，指出在安裝過程中，可能需要多次重新啟動的安裝中特別有用。  

@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6768bb0100b3bb0052898efc6a57017fca3702b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a120bb5eaab49e2652715c2583f898949b506a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930509"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061498"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119:密封方法以滿足私用介面的要求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "58930509"
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，防止方法遭到覆寫外部組件使用下列其中一項：
 
--   請宣告的型別`sealed`(`NotInheritable` Visual Basic 中)。
+- 請宣告的型別`sealed`(`NotInheritable` Visual Basic 中)。
 
--   變更要宣告型別的存取範圍`internal`(`Friend` Visual Basic 中)。
+- 變更要宣告型別的存取範圍`internal`(`Friend` Visual Basic 中)。
 
--   移除的宣告型別中的所有公用建構函式。
+- 移除的宣告型別中的所有公用建構函式。
 
--   實作方法，而不需使用`virtual`修飾詞。
+- 實作方法，而不需使用`virtual`修飾詞。
 
--   明確實作的方法。
+- 明確實作的方法。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  它可安全地隱藏這個警告規則在仔細檢閱之後, 沒有安全性問題存在，可能是如果在組件外覆寫此方法可利用來攻擊。

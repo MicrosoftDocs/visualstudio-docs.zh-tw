@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d99b76e1ca9c67c0cd29bd435759b529d97b348
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063175"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>逐步解說：匯入自訂主版頁面和網站頁面的映像
   本逐步解說示範如何匯入 SharePoint 自訂主版頁面及擁有影像的網站頁面[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。
@@ -36,26 +36,26 @@ ms.locfileid: "59665990"
 ## <a name="prerequisites"></a>必要條件
  您必須擁有下列元件，才能完成此逐步解說：
 
--   支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。
+- 支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。
 
--   Visual Studio。
+- Visual Studio。
 
--   SharePoint Designer 2010。
+- SharePoint Designer 2010。
 
 ## <a name="create-items-in-sharepoint-designer"></a>在 SharePoint Designer 中建立項目
  此範例示範如何在 SharePoint Designer 中建立三個項目，匯出： 自訂主版頁面，參考自訂主版頁面中和要出現在 [網站] 頁面上的影像檔的網站頁面。 影像會新增至 SharePoint 的 /images/ 資料夾中。
 
 #### <a name="to-create-a-custom-master-page-in-sharepoint-designer"></a>若要在 SharePoint Designer 建立自訂主版頁面
 
-1.  在 SharePoint Designer 中瀏覽窗格中，選擇**主版頁面**站台物件。
+1. 在 SharePoint Designer 中瀏覽窗格中，選擇**主版頁面**站台物件。
 
-2.  在 **主版頁面**功能區中，選擇**空白的主版頁面**。
+2. 在 **主版頁面**功能區中，選擇**空白的主版頁面**。
 
-3.  選擇新的主版頁面，然後在**主版頁面**功能區中，選擇**編輯檔案**。
+3. 選擇新的主版頁面，然後在**主版頁面**功能區中，選擇**編輯檔案**。
 
-4.  在 SharePoint Designer 的底部，選擇**程式碼** 索引標籤。
+4. 在 SharePoint Designer 的底部，選擇**程式碼** 索引標籤。
 
-5.  以下列標記取代現有的標記。
+5. 以下列標記取代現有的標記。
 
     ```aspx-csharp
     <%@ Master Language="C#" %>
@@ -76,39 +76,39 @@ ms.locfileid: "59665990"
     </html>
     ```
 
-6.  儲存頁面中，選擇**主版頁面**索引標籤，然後重新命名為主版頁面**mybasic1.master**。
+6. 儲存頁面中，選擇**主版頁面**索引標籤，然後重新命名為主版頁面**mybasic1.master**。
 
 ## <a name="add-an-image-to-the-content-database-in-sharepoint-designer"></a>將影像加入 SharePoint Designer 中的內容資料庫
  現在您可以新增要在站台 頁面上顯示的影像。 映像部署到 SharePoint 內容資料庫。
 
 #### <a name="to-add-an-image-to-the-content-database-in-sharepoint-designer"></a>若要將影像加入 SharePoint Designer 中的內容資料庫
 
-1.  在 [導覽] 窗格中，選擇**所有的檔案**站台物件，然後在樹狀結構檢視中，選擇**映像**資料夾。
+1. 在 [導覽] 窗格中，選擇**所有的檔案**站台物件，然後在樹狀結構檢視中，選擇**映像**資料夾。
 
-2.  在上**的所有檔案**功能區中，選擇**匯入檔案**，選擇您選擇的檔案，然後選擇**確定** 按鈕。 在此範例中，檔案名稱為**myimg1.png**。
+2. 在上**的所有檔案**功能區中，選擇**匯入檔案**，選擇您選擇的檔案，然後選擇**確定** 按鈕。 在此範例中，檔案名稱為**myimg1.png**。
 
      （選擇性） 您可以建立子資料夾，以幫助您組織的映像。
 
-3.  關閉**匯入** 對話方塊。
+3. 關閉**匯入** 對話方塊。
 
 ## <a name="create-a-site-page"></a>建立站台 頁面
  此基本網站頁面使用自訂主版頁面，並顯示您在上一個步驟中加入的映像。
 
 #### <a name="to-create-a-site-page"></a>若要建立的網站頁面
 
-1.  在 [導覽] 窗格中，選擇**網頁**物件。
+1. 在 [導覽] 窗格中，選擇**網頁**物件。
 
-2.  上**頁**功能區中，選擇**頁面**按鈕，並選擇**ASPX**  頁面中輸入，並接著新的檔案**mycontentpage1.aspx**。
+2. 上**頁**功能區中，選擇**頁面**按鈕，並選擇**ASPX**  頁面中輸入，並接著新的檔案**mycontentpage1.aspx**。
 
      （選擇性） 您可以建立子資料夾，以幫助您組織的網站頁面。
 
-3.  在 [站台頁] 清單中，選擇**MyContentPage1.aspx**以開啟其屬性頁面，然後在頁面底部，選擇**編輯檔案**連結。
+3. 在 [站台頁] 清單中，選擇**MyContentPage1.aspx**以開啟其屬性頁面，然後在頁面底部，選擇**編輯檔案**連結。
 
      如果出現訊息並顯示此頁面不包含任何區域。 在安全模式中編輯並詢問您是否想要在進階模式中開啟此頁面，請選擇**是** 按鈕。
 
-4.  在頁面底部，選擇**程式碼** 按鈕。
+4. 在頁面底部，選擇**程式碼** 按鈕。
 
-5.  以下列標記取代現有的標記。
+5. 以下列標記取代現有的標記。
 
     ```aspx-csharp
     <%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
@@ -124,22 +124,22 @@ ms.locfileid: "59665990"
     </asp:Content>
     ```
 
-6.  儲存更新的網站頁面。
+6. 儲存更新的網站頁面。
 
 ## <a name="export-the-items-from-sharepoint"></a>從 SharePoint 匯出的項目
  從 SharePoint 將項目匯出至 SharePoint 方案 (*.wsp*) 檔案。
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>若要從 SharePoint Designer 匯出項目
 
-1.  在 SharePoint Designer 中瀏覽窗格中，選擇**小組網站**物件，然後在**站台**功能區中，選擇 **儲存成範本**。
+1. 在 SharePoint Designer 中瀏覽窗格中，選擇**小組網站**物件，然後在**站台**功能區中，選擇 **儲存成範本**。
 
-2.  在 **另存為範本**對話方塊方塊中，輸入檔案名稱和範本名稱，然後選取**內容包含**核取方塊，，然後選擇  **確定**  按鈕。
+2. 在 **另存為範本**對話方塊方塊中，輸入檔案名稱和範本名稱，然後選取**內容包含**核取方塊，，然後選擇  **確定**  按鈕。
 
      這會將儲存的內容中的站台 *.wsp*檔案。
 
-3.  解決方案會將匯出之後，請選擇**解決方案資源庫**連結可顯示可用的方案檔的清單。
+3. 解決方案會將匯出之後，請選擇**解決方案資源庫**連結可顯示可用的方案檔的清單。
 
-4.  開啟新的快顯功能表 *.wsp*檔案，然後再選擇**另存目標**將它儲存至系統。
+4. 開啟新的快顯功能表 *.wsp*檔案，然後再選擇**另存目標**將它儲存至系統。
 
 ## <a name="import-the-items-into-visual-studio"></a>匯入到 Visual Studio 中的項目
  匯入 *.wsp*檔案載入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 在匯入內容之後，您可以進行自訂、 新增更多的項目，然後將它部署。
@@ -166,9 +166,9 @@ ms.locfileid: "59665990"
 
     如果現有的主版頁面會標示為預設主版頁面或自訂主版頁面中，您會部署錯誤，指出無法刪除的主版頁面。 若要避免這個問題，這樣做：
 
-   -   如果現有的主版頁面設定為預設主版頁面，暫時設定另一個主版頁面，為預設主版頁面。 您將檔案部署到 SharePoint 之後，請為預設主版頁面中設定新的主版頁面。
+   - 如果現有的主版頁面設定為預設主版頁面，暫時設定另一個主版頁面，為預設主版頁面。 您將檔案部署到 SharePoint 之後，請為預設主版頁面中設定新的主版頁面。
 
-   -   如果現有的主版頁面設定為自訂主版頁面，暫時設定另一個主版頁面，為自訂主版頁面。 您將檔案部署至 SharePoint 之後，請為自訂主版頁面中設定新的主版頁面。
+   - 如果現有的主版頁面設定為自訂主版頁面，暫時設定另一個主版頁面，為自訂主版頁面。 您將檔案部署至 SharePoint 之後，請為自訂主版頁面中設定新的主版頁面。
 
 6. 在功能表列上選擇 **建置** > **部署方案**。
 

@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e905ca4a34399c1ec590d5ff16441bd5afe9ce23
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941235"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063682"
 ---
 # <a name="managing-universal-windows-projects"></a>管理通用 Windows 專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ ms.locfileid: "58941235"
   
 ### <a name="navigate-the-shared-project"></a>瀏覽共用的專案  
   
-1.  建立名為 C# VSIX 專案**TestUniversalProject**。 (**檔案]、 [新增]、 [專案**，然後**C# 擴充性，Visual Studio 套件**)。 新增**自訂命令**專案項目範本 (在 [方案總管] 中，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新的項目**，然後移至**擴充性**)。 將檔案命名**TestUniversalProject**。  
+1. 建立名為 C# VSIX 專案**TestUniversalProject**。 (**檔案]、 [新增]、 [專案**，然後**C# 擴充性，Visual Studio 套件**)。 新增**自訂命令**專案項目範本 (在 [方案總管] 中，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新的項目**，然後移至**擴充性**)。 將檔案命名**TestUniversalProject**。  
   
-2.  將參考加入 Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll 和 Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (在**延伸模組**區段)。  
+2. 將參考加入 Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll 和 Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (在**延伸模組**區段)。  
   
-3.  開啟 TestUniversalProject.cs 並新增下列`using`陳述式：  
+3. 開啟 TestUniversalProject.cs 並新增下列`using`陳述式：  
   
     ```csharp  
     using EnvDTE;  
@@ -42,7 +42,7 @@ ms.locfileid: "58941235"
     using System.Windows.Forms;  
     ```  
   
-4.  TestUniversalProject 類別中新增私用欄位，指向**輸出**視窗。  
+4. TestUniversalProject 類別中新增私用欄位，指向**輸出**視窗。  
   
     ```csharp  
     public sealed class TestUniversalProject   
@@ -52,7 +52,7 @@ ms.locfileid: "58941235"
     }  
     ```  
   
-5.  設定 TestUniversalProject 建構函式內的 [輸出] 窗格的參考：  
+5. 設定 TestUniversalProject 建構函式內的 [輸出] 窗格的參考：  
   
     ```csharp  
     private TestUniversalProject(Package package)  
@@ -77,7 +77,7 @@ ms.locfileid: "58941235"
     }  
     ```  
   
-6.  移除現有的程式碼，從`ShowMessageBox`方法：  
+6. 移除現有的程式碼，從`ShowMessageBox`方法：  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)   
@@ -85,7 +85,7 @@ ms.locfileid: "58941235"
     }  
     ```  
   
-7.  取得 DTE 物件，我們會用來在這個逐步解說幾個不同的用途。 此外，請確定載入方案時按下功能表按鈕時。  
+7. 取得 DTE 物件，我們會用來在這個逐步解說幾個不同的用途。 此外，請確定載入方案時按下功能表按鈕時。  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -103,7 +103,7 @@ ms.locfileid: "58941235"
     }  
     ```  
   
-8.  尋找共用的專案。 共用的專案是純粹的容器;它不會建置或產生的輸出。 下列方法在方案內尋找第一個共用的專案，藉由尋找<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>共用的專案匯入功能的物件。  
+8. 尋找共用的專案。 共用的專案是純粹的容器;它不會建置或產生的輸出。 下列方法在方案內尋找第一個共用的專案，藉由尋找<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>共用的專案匯入功能的物件。  
   
     ```csharp  
     private IVsHierarchy FindSharedProject()  
@@ -235,7 +235,7 @@ ms.locfileid: "58941235"
     ```  
   
     > [!IMPORTANT]
-    >  如果使用者已開啟的 c + + 通用 Windows 應用程式專案中的實驗執行個體，上述程式碼會擲回例外狀況。 這是已知的問題。 若要避免此例外狀況，取代`foreach`含有下列區塊上方：  
+    >  如果使用者已開啟C++實驗執行個體中的通用 Windows 應用程式專案，上述程式碼會擲回例外狀況。 這是已知的問題。 若要避免此例外狀況，取代`foreach`含有下列區塊上方：  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -306,7 +306,7 @@ ms.locfileid: "58941235"
   
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>管理平台專案中的共用項目  
   
-1.  平台專案中找到共用的項目。 共用專案中的項目會出現，平台專案中做為共用的項目。 看不到它們**方案總管 中**，但您可以逐步專案階層架構，以找出它們。 下列方法會引導階層，並且收集所有共用的項目。 （選擇性），它會輸出每個項目的標題。 共用的項目由新的屬性識別<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>。  
+1. 平台專案中找到共用的項目。 共用專案中的項目會出現，平台專案中做為共用的項目。 看不到它們**方案總管 中**，但您可以逐步專案階層架構，以找出它們。 下列方法會引導階層，並且收集所有共用的項目。 （選擇性），它會輸出每個項目的標題。 共用的項目由新的屬性識別<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>。  
   
     ```csharp  
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)  
@@ -338,7 +338,7 @@ ms.locfileid: "58941235"
     }  
     ```  
   
-2.  在 `ShowMessageBox`方法，加入下列程式碼，逐步引導的平台專案階層項目。 將其內部插入`foreach`區塊。  
+2. 在 `ShowMessageBox`方法，加入下列程式碼，逐步引導的平台專案階層項目。 將其內部插入`foreach`區塊。  
   
     ```csharp  
     output.OutputStringThreadSafe("Walk the active platform project:\n");  
@@ -346,7 +346,7 @@ ms.locfileid: "58941235"
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);  
     ```  
   
-3.  讀取共用的項目。 為隱藏的連結檔案，共用的項目會出現，平台專案中，您可以閱讀為一般連結的檔案的所有屬性。 下列程式碼會讀取第一個共用的項目完整路徑。  
+3. 讀取共用的項目。 為隱藏的連結檔案，共用的項目會出現，平台專案中，您可以閱讀為一般連結的檔案的所有屬性。 下列程式碼會讀取第一個共用的項目完整路徑。  
   
     ```csharp  
     var sharedItemId = sharedItemIds[0];  
@@ -355,7 +355,7 @@ ms.locfileid: "58941235"
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));  
     ```  
   
-4.  現在試試看。按下 F5 來啟動實驗執行個體。 在實驗執行個體中建立 C# 通用中樞應用程式專案 (在**新的專案**] 對話方塊中， **Visual C# / Windows / Windows 8 / 通用 / 中樞應用程式**) 移至**工具**功能表，然後按一下**叫用 TestUniversalProject**，然後簽入的 [文字**輸出**窗格。 您應該會看到類似下列的畫面：  
+4. 現在試試看。按下 F5 來啟動實驗執行個體。 在實驗執行個體中建立 C# 通用中樞應用程式專案 (在**新的專案**] 對話方塊中， **Visual C# / Windows / Windows 8 / 通用 / 中樞應用程式**) 移至**工具**功能表，然後按一下**叫用 TestUniversalProject**，然後簽入的 [文字**輸出**窗格。 您應該會看到類似下列的畫面：  
   
     ```  
     Found shared project: HubApp.Shared  

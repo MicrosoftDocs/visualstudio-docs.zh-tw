@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942330"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065139"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ ms.locfileid: "58942330"
   
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>在 Visual Studio 中建立設計階段 T4 範本  
   
-1.  建立[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案，或開啟現有的帳戶。  
+1. 建立[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案，或開啟現有的帳戶。  
   
      例如，在**檔案**功能表上，選擇**新增**，**專案**。  
   
-2.  將文字範本檔案新增至您的專案，並為它命名副檔名 **.tt**。  
+2. 將文字範本檔案新增至您的專案，並為它命名副檔名 **.tt**。  
   
      若要這樣做，請在**方案總管**，在您的專案的捷徑功能表，選擇**新增**，**新項目**。 在 [**加入新項目**] 對話方塊中選取**文字範本**從中間的窗格。  
   
      請注意，**自訂工具**檔案的屬性是**TextTemplatingFileGenerator**。  
   
-3.  開啟檔案。 它已包含下列指示詞：  
+3. 開啟檔案。 它已包含下列指示詞：  
   
     ```  
     <#@ template hostspecific="false" language="C#" #>  
@@ -61,17 +61,17 @@ ms.locfileid: "58942330"
   
      如果您已將該範本加入至 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案，則語言屬性會是 "`VB`"。  
   
-4.  在檔案結尾加入一些文字。 例如:   
+4. 在檔案結尾加入一些文字。 例如:   
   
     ```  
     Hello, world!  
     ```  
   
-5.  儲存檔案。  
+5. 儲存檔案。  
   
-     您可能會看到**安全性警告**會要求您確認您想要執行範本的訊息方塊。 按一下 [確定 **Deploying Office Solutions**]。  
+     您可能會看到**安全性警告**會要求您確認您想要執行範本的訊息方塊。 按一下 [確定] 。  
   
-6.  在 **方案總管**，展開範本檔節點，然後您會發現副檔名的檔案 **.txt**。 此檔案包含從範本產生的文字。  
+6. 在 **方案總管**，展開範本檔節點，然後您會發現副檔名的檔案 **.txt**。 此檔案包含從範本產生的文字。  
   
     > [!NOTE]
     >  如果您的專案是 Visual Basic 專案，您必須按一下**顯示所有檔案**才能看到輸出檔案。  
@@ -130,7 +130,7 @@ ms.locfileid: "58942330"
 ## <a name="debugging-a-design-time-t4-text-template"></a>偵錯設計階段 T4 文字範本  
  偵錯文字範本：  
   
-- 將 `debug="true"` 插入至 `template` 指示詞。 例如：  
+- 將 `debug="true"` 插入至 `template` 指示詞。 例如:   
   
    `<#@ template debug="true" hostspecific="false" language="C#" #>`  
   
@@ -150,9 +150,9 @@ ms.locfileid: "58942330"
   
 #### <a name="to-generate-program-code-or-resources"></a>產生程式碼或資源  
   
-1.  變更輸出指示詞，以產生適當類型的檔案 (如 .cs、.vb、.resx 或 .xml)。  
+1. 變更輸出指示詞，以產生適當類型的檔案 (如 .cs、.vb、.resx 或 .xml)。  
   
-2.  插入將產生您所需方案程式碼的程式碼。 例如，如果您想要在類別中產生三個整數欄位宣：  
+2. 插入將產生您所需方案程式碼的程式碼。 例如，如果您想要在類別中產生三個整數欄位宣：  
   
     ```csharp  
   
@@ -185,7 +185,7 @@ ms.locfileid: "58942330"
   
     ```  
   
-3.  儲存檔案，並檢查產生的檔案，該檔案現在會包含下列程式碼：  
+3. 儲存檔案，並檢查產生的檔案，該檔案現在會包含下列程式碼：  
   
     ```  
     class MyGeneratedClass {  
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  文字範本是在其專屬應用程式網域中執行，而服務是透過封送處理進行存取。 在此情況下，GetCOMService() 比 GetService() 還要可靠。  
   
-##  <a name="Regenerating"></a> 自動重新產生程式碼  
+## <a name="Regenerating"></a> 自動重新產生程式碼  
  通常，會使用一個輸入模型來產生 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中的數個檔案。 每個檔案都是透過其專屬範本所產生，但是範本都參考相同的模型。  
   
  如果來源模型變更，則您應該重新執行方案中的所有範本。 若要這樣做以手動方式，請選擇**轉換所有範本**上**建置**功能表。  
@@ -320,25 +320,25 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a> 將現有的檔案轉換成範本  
+## <a name="Converting"></a> 將現有的檔案轉換成範本  
  範本的有用功能是它們看起來很像它們所產生的檔案和一些插入的程式碼。 這會建議建立範本的有用方法。 第一次建立一般檔案為原型，例如[!INCLUDE[csprcs](../includes/csprcs-md.md)]檔案，然後逐漸引進不同所產生的檔案產生程式碼。  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>將現有檔案轉換為設計階段範本  
   
-1.  針對 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案，加入您要產生之類型的檔案 (如 `.cs`、`.vb` 或 `.resx` 檔案)。  
+1. 針對 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案，加入您要產生之類型的檔案 (如 `.cs`、`.vb` 或 `.resx` 檔案)。  
   
-2.  測試新的檔案，確定其運作。  
+2. 測試新的檔案，確定其運作。  
   
-3.  在 [方案總管] 中，變更的檔案名稱副檔名 **.tt**。  
+3. 在 [方案總管] 中，變更的檔案名稱副檔名 **.tt**。  
   
-4.  請確認下列屬性的 **.tt**檔案：  
+4. 請確認下列屬性的 **.tt**檔案：  
   
     |||  
     |-|-|  
     |**自訂工具 =**|**TextTemplatingFileGenerator**|  
     |**建置動作 =**|**無**|  
   
-5.  在檔案開頭，插入下列各行：  
+5. 在檔案開頭，插入下列各行：  
   
     ```  
     <#@ template debug="false" hostspecific="false" language="C#" #>  
@@ -349,13 +349,13 @@ Warning("A warning message");
   
      將 `extension` 屬性設定為您要產生之檔案類型的副檔名 (例如 `.cs`、`.resx` 或 `.xml`)。  
   
-6.  儲存檔案。  
+6. 儲存檔案。  
   
      即會建立具有所指定副檔名的附帶檔案。 其屬性對檔案類型而言正確。 例如，**建置動作**.cs 檔案的屬性會是**編譯**。  
   
      請確認產生的檔案包含與原始檔案相同的內容。  
   
-7.  識別您要使其不同的檔案部分。 例如，只在特定狀況下出現的部分、重複的部分，或特定值不同的部分。 插入產生程式碼。 儲存檔案，並確認已正確地產生附帶檔案。 重複此步驟。  
+7. 識別您要使其不同的檔案部分。 例如，只在特定狀況下出現的部分、重複的部分，或特定值不同的部分。 插入產生程式碼。 儲存檔案，並確認已正確地產生附帶檔案。 重複此步驟。  
   
 ## <a name="guidelines-for-code-generation"></a>產生程式碼的指導方針  
  請參閱[撰寫 T4 文字範本的指導方針](../modeling/guidelines-for-writing-t4-text-templates.md)。  

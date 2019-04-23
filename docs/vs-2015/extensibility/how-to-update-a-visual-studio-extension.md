@@ -12,12 +12,12 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 321dca309476ecba80c0293f100ed64e7bb1cc4e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 87bfa86585d384c7940d5a5bcf31d07579bc75a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064676"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>HOW TO：更新 Visual Studio 延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,30 +30,30 @@ ms.locfileid: "59000599"
 
 ### <a name="to-update-an-extension-on-your-system"></a>若要更新您的系統上的擴充功能
 
-1.  在 [工具]  功能表上，按一下 [擴充功能和更新] 。
+1. 在 [工具]  功能表上，按一下 [擴充功能和更新] 。
 
-2.  在左窗格中，按一下**更新**。
+2. 在左窗格中，按一下**更新**。
 
-3.  在中間窗格中，按一下您想要安裝的更新。
+3. 在中間窗格中，按一下您想要安裝的更新。
 
      更新延伸模組的版本號碼會顯示在右窗格中，以及其他資訊。
 
-4.  在右窗格的底部，按一下**更新**。
+4. 在右窗格的底部，按一下**更新**。
 
 ### <a name="to-publish-an-update-of-an-extension"></a>若要發行的擴充功能更新
 
-1.  在 Visual Studio 中，開啟您想要更新的擴充功能的解決方案。 進行變更。
+1. 在 Visual Studio 中，開啟您想要更新的擴充功能的解決方案。 進行變更。
 
     > [!IMPORTANT]
     >  不帶正負號不會自動更新所有使用者延伸模組。 您應一律登入您的擴充功能。
 
-2.  在 [**方案總管] 中**，開啟 source.extension.manifest。
+2. 在 [**方案總管] 中**，開啟 source.extension.manifest。
 
-3.  在 資訊清單設計工具中，數字值增加**版本**欄位。
+3. 在 資訊清單設計工具中，數字值增加**版本**欄位。
 
-4.  將方案儲存並建置專案。
+4. 將方案儲存並建置專案。
 
-5.  （在專案的 \bin\Debug\ 資料夾中） 將新.vsix 檔案上傳[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站。
+5. （在專案的 \bin\Debug\ 資料夾中） 將新.vsix 檔案上傳[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站。
 
      當具有較早版本的延伸模組的使用者身分開啟**擴充功能和更新**，新的版本會出現在**更新**清單中，前提是此工具設定為自動尋找更新。
 

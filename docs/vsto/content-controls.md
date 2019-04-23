@@ -38,12 +38,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69ad44cefad48199efdb70bd88c1ed3b117d48ad
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cca58ec0c9f493cd418cbb5aabca7a8d2c1939b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630856"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062174"
 ---
 # <a name="content-controls"></a>內容控制項
   內容控制項提供一種設計文件和範本的方式，能讓它們具有下列功能：
@@ -116,8 +116,8 @@ ms.locfileid: "56630856"
 
 |這項工作：|請執行：|
 |--------------------|--------------|
-|取得或設定控制項中要顯示的文字。|使用**文字**屬性。 **注意：**<xref:Microsoft.Office.Tools.Word.PictureContentControl> 和 <xref:Microsoft.Office.Tools.Word.ContentControl> 型別沒有這個屬性。|
-|取得或設定控制項顯示的暫存文字，直到使用者編輯控制項為止，以資料來源的資料填入控制項，不然控制項的內容會被刪除。|使用**PlaceholderText**屬性。 **注意：**<xref:Microsoft.Office.Tools.Word.PictureContentControl> 型別沒有這個屬性。|
+|取得或設定控制項中要顯示的文字。|使用**文字**屬性。 **注意：** <xref:Microsoft.Office.Tools.Word.PictureContentControl> 和 <xref:Microsoft.Office.Tools.Word.ContentControl> 型別沒有這個屬性。|
+|取得或設定控制項顯示的暫存文字，直到使用者編輯控制項為止，以資料來源的資料填入控制項，不然控制項的內容會被刪除。|使用**PlaceholderText**屬性。 **注意：** <xref:Microsoft.Office.Tools.Word.PictureContentControl> 型別沒有這個屬性。|
 |當使用者按一下它時，取得或設定內容控制項框線中顯示的標題。|使用**Title**屬性。|
 |在使用者編輯控制項之後，自動移除文件的控制項。 (控制項中的文字保留在文件中。)|使用**暫存**屬性。|
 |當使用者在控制項中按一下，或以程式設計方式將游標移至內容控制項時，執行程式碼。|處理控制項的 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> 事件。|
@@ -125,7 +125,7 @@ ms.locfileid: "56630856"
 |因為取消復原或復原作業而文件中加入內容控制項之後，執行程式碼。|處理控制項的 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> 事件。|
 |就在刪除文件中的內容控制項之前，執行程式碼。|處理控制項的 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting> 事件。|
 
-##  <a name="Protection"></a> 使用內容控制項保護文件的組件
+## <a name="Protection"></a> 使用內容控制項保護文件的組件
  當您保護文件的某個部分時，使用者即無法變更或刪除該部分文件的內容。 使用內容控制項有多種方法可以保護文件的組件。
 
  如果要保護的區域在內容控制項內，您可以使用內容控制項的屬性，防止使用者編輯或刪除控制項：
@@ -141,7 +141,7 @@ ms.locfileid: "56630856"
 
  如需如何使用內容控制項保護文件的組件的詳細資訊，請參閱[How to:使用內容控制項保護文件的部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。
 
-##  <a name="DataBinding"></a> 將資料繫結至內容控制項
+## <a name="DataBinding"></a> 將資料繫結至內容控制項
  將內容控制項繫結至資料來源，即可在文件中顯示資料。 當資料來源更新時，內容控制項就會反映變更。 您也可以將變更儲存回資料來源。
 
  內容控制項提供下列資料繫結選項：
@@ -159,13 +159,13 @@ ms.locfileid: "56630856"
 
  下表列出您可以繫結至每個資料類型的內容控制項**Zdroje dat**視窗。
 
-|資料類型|預設內容控制項|可以繫結程序到這個資料類型的其他內容控制項|
+|資料類型|預設內容控制項|可以繫結到這個資料類型的其他內容控制項|
 |---------------|-----------------------------|----------------------------------------------------------------|
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
-|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> 陣列|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|無|
+|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> 陣列|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|None|
 
- 在文件層級和 VSTO 增益集專案中，您可以使用控制項的 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 屬性的 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 方法，以程式設計方式將內容控制項繫結程序至資料來源。 如果您這麼做，請傳遞字串**文字**要*propertyName*參數<xref:System.Windows.Forms.ControlBindingsCollection.Add%2A>方法。 **文字**屬性是內容控制項的預設資料繫結屬性。
+ 在文件層級和 VSTO 增益集專案中，您可以使用控制項的 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 屬性的 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 方法，以程式設計方式將內容控制項繫結至資料來源。 如果您這麼做，請傳遞字串**文字**要*propertyName*參數<xref:System.Windows.Forms.ControlBindingsCollection.Add%2A>方法。 **文字**屬性是內容控制項的預設資料繫結屬性。
 
  內容控制項也支援雙向的資料繫結，讓控制項中的變更更新回資料來源。 如需詳細資訊，請參閱[如何：從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。
 
@@ -191,15 +191,15 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 
  您可以將下列型別的內容控制項繫結至自訂 XML 組件：
 
--   <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>
+- <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>
+- <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>
+- <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.PictureContentControl>
+- <xref:Microsoft.Office.Tools.Word.PictureContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>
+- <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>
 
 ### <a name="data-bind-events-for-content-controls"></a>資料繫結內容控制項事件
  所有的內容控制項都會提供一組事件，您可以控制它們來執行與資料相關的工作，例如先驗證控制項中的文字是否符合特定準則，再更新資料來源。 下表列出與資料繫結相關的內容控制項事件。
@@ -228,7 +228,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 
  若要判斷使用者何時編輯內容控制項的內容，您可以將控制項繫結至自訂 XML 組件，接著處理 <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> 事件。 在使用者變更繫結至自訂 XML 組件控制項的內容時，會引發這個事件。 如需示範如何將內容控制項繫結至自訂 XML 組件的逐步解說，請參閱[逐步解說：內容控制項繫結至自訂 XML 組件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)。
 
-###  <a name="checkbox"></a> Word 專案中的核取方塊內容控制項
+### <a name="checkbox"></a> Word 專案中的核取方塊內容控制項
  Word 2010 導入了表示核取方塊的新型別內容控制項。 不過，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]不會提供您在 Office 專案中使用的對應 CheckBoxContentControl 類型。 若要在 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 Word 2010 專案中建立核取方塊內容控制項，請使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> 方法建立 <xref:Microsoft.Office.Tools.Word.ContentControl> 物件，並將 <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> 值傳遞給方法，以指定核取方塊內容控制項。 下列程式碼範例會示範如何執行這項操作。
 
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]

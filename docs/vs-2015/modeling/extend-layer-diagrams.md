@@ -12,12 +12,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219f850ed73104357766ffc4333da55647fb9d40
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: af191c929b88f1bda76896061359b7315517beb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59000499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066074"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ ms.locfileid: "59000499"
   
  如需分層圖的詳細資訊，請參閱：  
   
--   [圖層圖表：參考](../modeling/layer-diagrams-reference.md)  
+- [圖層圖表：參考](../modeling/layer-diagrams-reference.md)  
   
--   [圖層圖表：方針](../modeling/layer-diagrams-guidelines.md)  
+- [圖層圖表：方針](../modeling/layer-diagrams-guidelines.md)  
   
--   [從程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)  
+- [從程式碼建立分層圖](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)  
+- [使用分層圖驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)  
   
-##  <a name="prereqs"></a> 需求  
+## <a name="prereqs"></a> 需求  
  您必須在想要開發圖層擴充功能的電腦上安裝下列項目：  
   
 - Visual Studio  

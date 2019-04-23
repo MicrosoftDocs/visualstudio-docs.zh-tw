@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d97150a03e0862085f1eed512c538d4c86a6a59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 794b9605664315e47e7ae2a778c76652c420a7f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066386"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL 著色器偵錯工具
 Visual Studio 圖形分析器中的 HLSL 偵錯工具可協助您了解 HLSL 著色器程式碼在應用程式的真實狀況下的運作方式。
@@ -50,9 +50,9 @@ Visual Studio 圖形分析器中的 HLSL 偵錯工具可協助您了解 HLSL 著
 
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pipeline-stages-window"></a>從圖形管線階段視窗啟動 HLSL 偵錯工具
 
-1.  在 [圖形管線階段]，找出與偵錯目標著色器相關聯的管線階段。
+1. 在 [圖形管線階段]，找出與偵錯目標著色器相關聯的管線階段。
 
-2.  在管線階段的標題下方選擇 [開始偵錯]，此時會顯示為一個小綠色箭號。
+2. 在管線階段的標題下方選擇 [開始偵錯]，此時會顯示為一個小綠色箭號。
 
     > [!NOTE]
     >  這個 HLSL 偵錯工具進入點只能偵錯對應階段的第一個著色器執行緒，也就是第一個端點或是第一個處理的像素。 您可以使用 [像素歷史記錄] 來存取這些著色器階段的其他執行緒。
@@ -72,7 +72,7 @@ Visual Studio 圖形分析器中的 HLSL 偵錯工具可協助您了解 HLSL 著
 
    如需有關如何使用 HLSL 偵錯工具來偵錯著色器錯誤的範例，請參閱[範例](graphics-diagnostics-examples.md)或另請參閱 > 一節中連結的逐步解說。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [逐步解說：因端點著色而遺漏的物件](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [逐步解說：偵錯因著色而產生的顯示錯誤](walkthrough-debugging-rendering-errors-due-to-shading.md)
-- [逐步解說：使用圖形診斷來偵錯計算著色器](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
+- [逐步解說：針對因著色而產生的顯示錯誤進行偵錯](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [逐步解說：使用圖形診斷來針對計算著色器進行偵錯](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 49908ba5110cf59d0aa4fff6f91bf356ec72c3c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065281"
 ---
 # <a name="localizing-vsix-packages"></a>將 VSIX 套件當地語系化
 
@@ -53,7 +53,7 @@ ms.locfileid: "56687077"
 
 1. 在 **方案總管**Extension.vsixlangpack 檔案中，按一下滑鼠右鍵，然後按一下 **屬性**。
 
-2.  在 **屬性方格**，按一下**Include in Vsix**，並將其值設定為`true`。
+2. 在 **屬性方格**，按一下**Include in Vsix**，並將其值設定為`true`。
 
 ## <a name="example"></a>範例
 

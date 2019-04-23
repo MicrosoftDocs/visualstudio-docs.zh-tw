@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659809"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064839"
 ---
 # <a name="how-to-select-the-files-to-build"></a>HOW TO：選取要建置的檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "59659809"
   
 #### <a name="to-declare-items-individually"></a>個別宣告項目  
   
--   使用 `Include` 屬性，類似如下︰  
+- 使用 `Include` 屬性，類似如下︰  
   
      `<CSFile Include="form1.cs"/>`  
   
@@ -45,7 +45,7 @@ ms.locfileid: "59659809"
   
 #### <a name="to-declare-multiple-items"></a>宣告多個項目  
   
--   使用 `Include` 屬性，類似如下︰  
+- 使用 `Include` 屬性，類似如下︰  
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
@@ -66,19 +66,19 @@ ms.locfileid: "59659809"
   
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>包含 Images 目錄和子目錄中的所有 .jpg 檔案  
   
--   使用下列 `Include` 屬性：  
+- 使用下列 `Include` 屬性：  
   
      `Include="Images\**\*.jpg"`  
   
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>包含所有開頭為 "img" 的 .jpg 檔案  
   
--   使用下列 `Include` 屬性：  
+- 使用下列 `Include` 屬性：  
   
      `Include="Images\**\img*.jpg"`  
   
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>包含目錄中所有名稱結尾為 "jpgs" 的檔案  
   
--   使用下列其中一個 `Include` 屬性：  
+- 使用下列其中一個 `Include` 屬性：  
   
      `Include="Images\**\*jpgs\*.*"`  
   
@@ -91,7 +91,7 @@ ms.locfileid: "59659809"
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>使用所有 Visual C# 或 Visual Basic 檔案作為輸入  
   
--   使用 `Include` 屬性，類似如下︰  
+- 使用 `Include` 屬性，類似如下︰  
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   

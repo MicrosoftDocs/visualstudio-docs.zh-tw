@@ -12,12 +12,12 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5f6b8ef087d3e9d43aaf740a99983cf0f5c8d1b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: cd224f84dd1d0be8167ee55fa7b40264d742c4f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063766"
 ---
 # <a name="template-directory-description-vsdir-files"></a>範本目錄描述檔 (.Vsdir)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,17 +52,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  當您建立精靈檔案時，您也應該考慮下列問題。  
 
--   任何有意義的資料是任何非必要的欄位應包含 0 （零），做為預留位置。  
+- 任何有意義的資料是任何非必要的欄位應包含 0 （零），做為預留位置。  
 
--   如果不提供任何當地語系化的名稱，則相對路徑名稱會使用精靈檔案中。  
+- 如果不提供任何當地語系化的名稱，則相對路徑名稱會使用精靈檔案中。  
 
--   DLLPath 會覆寫 clsidPackage 圖示位置。  
+- DLLPath 會覆寫 clsidPackage 圖示位置。  
 
--   如果沒有定義圖示，IDE 會取代該擴充功能的檔案的預設圖示。  
+- 如果沒有定義圖示，IDE 會取代該擴充功能的檔案的預設圖示。  
 
--   如果不提供任何建議的基底名稱，則會使用 'Project'。  
+- 如果不提供任何建議的基底名稱，則會使用 'Project'。  
 
--   如果您刪除.vsz 檔案、 資料夾或範本檔案，您也必須從.vsdir 檔案來移除其相關聯的記錄。  
+- 如果您刪除.vsz 檔案、 資料夾或範本檔案，您也必須從.vsdir 檔案來移除其相關聯的記錄。  
 
 ## <a name="see-also"></a>另請參閱  
  [精靈](../../extensibility/internals/wizards.md)   

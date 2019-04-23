@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790377"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065736"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>從 Visual Studio 部署 UWP 應用程式
 
@@ -36,18 +36,18 @@ Visual Studio 部署功能建置，並註冊的目標裝置使用 Visual Studio 
 
 - 部署應用程式，以另一個應用程式或另一種方法啟動該應用程式時，對其進行偵錯。
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> 如何將 UWP 應用程式部署
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> 如何將 UWP 應用程式部署
  手動部署應用程式是一個簡單的流程：
 
-1.  如果您部署至遠端裝置，請在應用程式啟始專案的屬性專案頁面中指定裝置的名稱或 IP 位址。 (本主題會進一步列出這項作業的步驟)。
+1. 如果您部署至遠端裝置，請在應用程式啟始專案的屬性專案頁面中指定裝置的名稱或 IP 位址。 (本主題會進一步列出這項作業的步驟)。
 
-2.  在偵錯工具 Visual Studio 工具列上，從 [開始偵錯]  按鈕旁邊的下拉式清單中選擇部署目標。
+2. 在偵錯工具 Visual Studio 工具列上，從 [開始偵錯]  按鈕旁邊的下拉式清單中選擇部署目標。
 
      ![在本機電腦上執行](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3.  在 [建置]  功能表上，選擇 [部署] 
+3. 在 [建置]  功能表上，選擇 [部署] 
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> 如何指定遠端裝置
+## <a name="BKMK_How_to_specify_a_remote_device"></a> 如何指定遠端裝置
 
 **必要條件**
 
@@ -92,7 +92,7 @@ Visual Studio 部署功能建置，並註冊的目標裝置使用 Visual Studio 
 
 10. 在 [ **遠端電腦** ] 方塊中輸入遠端裝置的網路名稱，或按一下 [ **尋找** ]，從 [ **選取遠端偵錯工具連接** ] 對話方塊選擇裝置。
 
-##  <a name="BKMK_Deployment_options"></a> 部署選項
+## <a name="BKMK_Deployment_options"></a> 部署選項
 
 您可以在啟始專案的 [偵錯] 屬性頁上設定下列部署選項。
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75f7dd3149785520023657bb86ec8172dc379ab6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 6454eb53bf6d171e469a4cf2758e0e10a76eab6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066113"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter
 您可以透過建立 TableAdapter 部分類別檔案，並加入程式碼擴充 TableAdapter 的功能 (而不是將程式碼加入*DatasetName.DataSet.Designer*檔案)。 部分類別可讓多個實體檔案分割為特定類別的程式碼。 如需詳細資訊，請參閱 <<c0> [ 部分](/dotnet/visual-basic/language-reference/modifiers/partial)或是[partial （類型）](/dotnet/csharp/language-reference/keywords/partial-type)。
@@ -38,17 +38,17 @@ ms.locfileid: "55926992"
 
 ## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>若要將使用者程式碼新增至多層式架構應用程式中的 TableAdapter
 
-1.  找出包含專案 *.xsd*檔案。
+1. 找出包含專案 *.xsd*檔案。
 
-2.  按兩下 *.xsd*若要開啟的檔案**Dataset 設計工具**。
+2. 按兩下 *.xsd*若要開啟的檔案**Dataset 設計工具**。
 
-3.  以滑鼠右鍵按一下您想要加入程式碼，然後選取 TableAdapter**檢視程式碼**。
+3. 以滑鼠右鍵按一下您想要加入程式碼，然後選取 TableAdapter**檢視程式碼**。
 
      部分類別會建立，並會在程式碼編輯器中開啟。
 
-4.  加入部分類別宣告內的程式碼。
+4. 加入部分類別宣告內的程式碼。
 
-5.  下列範例示範如何將程式碼加入`CustomersTableAdapter`在`NorthwindDataSet`:
+5. 下列範例示範如何將程式碼加入`CustomersTableAdapter`在`NorthwindDataSet`:
 
     ```vb
     Partial Public Class CustomersTableAdapter

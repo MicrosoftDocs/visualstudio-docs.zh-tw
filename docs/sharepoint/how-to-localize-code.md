@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14eaa83f63a4f1c7f91bd2a0da3ad8d285f19113
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fbcf07b462e280f522741b8329d34c2907f5b454
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639809"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066282"
 ---
 # <a name="how-to-localize-code"></a>HOW TO：當地語系化程式碼
   未當地語系化的程式碼使用硬式編碼的字串值。 若要當地語系化字串，取代呼叫<xref:System.Web.HttpContext.GetGlobalResourceObject%2A>，這是參考當地語系化的資源的方法。
@@ -27,30 +27,30 @@ ms.locfileid: "56639809"
 
 #### <a name="to-localize-code"></a>若要當地語系化程式碼
 
-1.  在 **方案總管**，開啟專案項目的捷徑功能表，然後選擇**新增** > **模組**。
+1. 在 **方案總管**，開啟專案項目的捷徑功能表，然後選擇**新增** > **模組**。
 
      選擇**資源檔**範本。
 
     > [!NOTE]
     >  請務必將資源檔新增至 SharePoint 專案項目，以便提供的部署類型屬性。 在此程序稍後需要此屬性。
 
-2.  提供的預設語言資源檔案加上您所選擇的名稱 *.resx*擴充功能，例如*MyAppResources.resx*。
+2. 提供的預設語言資源檔案加上您所選擇的名稱 *.resx*擴充功能，例如*MyAppResources.resx*。
 
-3.  重複步驟 1 和 2，將個別資源檔加入至 SharePoint 專案項目：每個當地語系化語言擁有一個資源檔。
+3. 重複步驟 1 和 2，將個別資源檔加入至 SharePoint 專案項目：每個當地語系化語言擁有一個資源檔。
 
      使用相同的基底名稱，每個當地語系化的資源檔案，但新增文化特性 id。 例如，名稱在德文當地語系化資源*為 MyAppResources.de-DE.resx*。
 
-4.  開啟每個資源檔並加入當地語系化的字串。 在每個檔案中使用相同的字串 ID。
+4. 開啟每個資源檔並加入當地語系化的字串。 在每個檔案中使用相同的字串 ID。
 
-5.  值變更**部署類型**屬性的每個資源檔**AppGlobalResource** ，讓每個檔案部署至伺服器的 App_GlobalResources 資料夾。
+5. 值變更**部署類型**屬性的每個資源檔**AppGlobalResource** ，讓每個檔案部署至伺服器的 App_GlobalResources 資料夾。
 
-6.  保留值**建置動作**屬性為每個檔案**內嵌資源**。
+6. 保留值**建置動作**屬性為每個檔案**內嵌資源**。
 
      將內嵌資源編譯為專案的 DLL。
 
-7.  建置專案，以建立資源附屬 Dll。
+7. 建置專案，以建立資源附屬 Dll。
 
-8.  在  **Package Designer**，選擇**進階**索引標籤，然後再加入附屬組件。
+8. 在  **Package Designer**，選擇**進階**索引標籤，然後再加入附屬組件。
 
 9. 在 **位置**方塊中，前面加上文化特性 ID 資料夾位置路徑，例如*DE-DE\\\<專案項目名稱 >.resources.dll*。
 

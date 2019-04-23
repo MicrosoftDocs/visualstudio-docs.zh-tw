@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba83cf7db6415eefcb989f678bc4149d495016e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c133bb3f8ef56378c20b985aa118e48e71109cea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658340"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065255"
 ---
 # <a name="save-data-by-using-a-transaction"></a>使用異動儲存資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,15 +46,15 @@ ms.locfileid: "59658340"
   
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll"></a>若要加入 System.Transactions dll 的參考  
   
-1.  在 **專案**功能表上，選取**加入參考**。  
+1. 在 **專案**功能表上，選取**加入參考**。  
   
-2.  上 **.NET**  索引標籤 (**SQL Server** SQL Server 專案 索引標籤)，選取**System.Transactions**，然後選取**確定**。  
+2. 上 **.NET**  索引標籤 (**SQL Server** SQL Server 專案 索引標籤)，選取**System.Transactions**，然後選取**確定**。  
   
      參考 system.transactions.dll，才能為加入至專案。  
   
 ### <a name="to-save-data-in-a-transaction"></a>若要將資料儲存在交易中  
   
--   加入程式碼來儲存內使用的資料包含交易的陳述式。 下列程式碼示範如何建立和具現化<xref:System.Transactions.TransactionScope>物件中的 using 陳述式：  
+- 加入程式碼來儲存內使用的資料包含交易的陳述式。 下列程式碼示範如何建立和具現化<xref:System.Transactions.TransactionScope>物件中的 using 陳述式：  
   
      [!code-csharp[VbRaddataSaving#11](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#11)]
      [!code-vb[VbRaddataSaving#11](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#11)]  

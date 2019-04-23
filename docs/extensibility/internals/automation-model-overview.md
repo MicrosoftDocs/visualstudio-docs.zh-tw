@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21761ece78967c7c644deecf947c8aac0027d0c7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4f13ffca7dc39be65f8a36a9b242bf7f0f82dc4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648572"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061524"
 ---
 # <a name="automation-model-overview"></a>Automation 模型概觀
 Automation 模型包含一組您可以對其撰寫的 Visual Studio 增益集或延伸的物件。 增益集是應用程式可以在 Visual Studio 環境的操作和自動化一般工作。 Visual Studio 擴充功能可以建立自訂的 Visual Studio 元件，或新增功能的標準元件，例如文字編輯器。
@@ -32,13 +32,13 @@ Automation 模型包含一組您可以對其撰寫的 Visual Studio 增益集或
 
  其中您可以考慮擴充 automation 模型之環境的位置：
 
--   專案
+- 專案
 
--   文件
+- 文件
 
--   程式碼
+- 程式碼
 
--   組建
+- 組建
 
 如需有關自動化的詳細資訊，請參閱[Automation 和擴充性 Visual Studio](../extensibility-in-visual-studio.md)。 這份文件和文件它會提供連結，幫助您做出有關您應該提供 vspackage 的自動化的方式。
 

@@ -26,12 +26,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fcb5126d5281a62c9af55ba9e4283df4e1c3819c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da5ba504c22f78ebd3c0705bd5ee903fb4a2997
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060562"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>HOW TO：尋找程式損毀的所在的 DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ ms.locfileid: "58941095"
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>若要使用模組視窗來尋找毀損之處  
   
-1.  記下發生毀損的位址。  
+1. 記下發生毀損的位址。  
   
-2.  在 [偵錯] 功能表上選擇 [Windows]，然後按一下 [模組]。  
+2. 在 [偵錯] 功能表上選擇 [Windows]，然後按一下 [模組]。  
   
-3.  在 [模組] 視窗中尋找出 [位址] 欄位。 您可能需要使用捲軸才能看到它。  
+3. 在 [模組] 視窗中尋找出 [位址] 欄位。 您可能需要使用捲軸才能看到它。  
   
-4.  按一下 [位址] 按鈕 (在該欄位的最上方) 以便依位址排序 DLL。  
+4. 按一下 [位址] 按鈕 (在該欄位的最上方) 以便依位址排序 DLL。  
   
-5.  瀏覽此排序清單，找出位址範圍包含毀損位置的 DLL。  
+5. 瀏覽此排序清單，找出位址範圍包含毀損位置的 DLL。  
   
-6.  檢視 [名稱] 和 [路徑] 欄位以查看此 DLL 名稱和路徑。  
+6. 檢視 [名稱] 和 [路徑] 欄位以查看此 DLL 名稱和路徑。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：偵錯原生 Dll](../debugger/how-to-debug-native-dlls.md)   

@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6e6c44895a022521899bdd0383ee71257b83fe3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ac5507722a62942dbca67518c2f6689bf29aacfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668817"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065704"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>一個或多個選取的項目包含設計工具不支援的資料類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ ms.locfileid: "59668817"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-1.  建立檢視，這個檢視會依據所需的資料表，而且其中只包含受支援的資料型別。  
+1. 建立檢視，這個檢視會依據所需的資料表，而且其中只包含受支援的資料型別。  
   
-2.  將檢視從**伺服器總管**/**資料庫總管**拖曳至設計工具。  
+2. 將檢視從**伺服器總管**/**資料庫總管**拖曳至設計工具。  
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

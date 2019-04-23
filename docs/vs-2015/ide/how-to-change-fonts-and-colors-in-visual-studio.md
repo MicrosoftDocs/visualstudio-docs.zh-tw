@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 017494f4241c74f2c319f918433f1072b7097a9e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 247780815af4357fb8a529946e901b41c5d4a83c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760343"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060607"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>HOW TO：變更 Visual Studio 中的字型和色彩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "54760343"
 
 ### <a name="change-the-color-theme-of-the-ide"></a>變更 IDE 的色彩佈景主題
 
-1.  在功能表列上選擇 [工具] 、[選項] 。
+1. 在功能表列上選擇 [工具] 、[選項] 。
 
-2.  在選項清單中，依序選擇 [環境] 和 [一般]。
+2. 在選項清單中，依序選擇 [環境] 和 [一般]。
 
-3.  在 [色彩佈景主題] 清單中，選擇預設 [藍色] 佈景主題的 [深] 或 [淺]。
+3. 在 [色彩佈景主題] 清單中，選擇預設 [藍色] 佈景主題的 [深] 或 [淺]。
 
     > [!IMPORTANT]
     >  當您變更色彩佈景主題時，IDE 中的文字會還原成預設或先前自訂的字型和大小。
@@ -42,7 +42,7 @@ ms.locfileid: "54760343"
 
 ### <a name="use-windows-high-contrast-colors"></a>使用 Windows 高對比色彩
 
--   選取 Left Alt + Left Shift + Print Screen 按鍵。
+- 選取 Left Alt + Left Shift + Print Screen 按鍵。
 
     > [!WARNING]
     >  這個選項會針對目前電腦上的所有應用程式和 UI 來設定高對比。
@@ -52,18 +52,18 @@ ms.locfileid: "54760343"
 
 #### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>若要變更 IDE 中所有文字的字型和大小
 
-1.  在功能表列上選擇 [工具] 、[選項] 。
+1. 在功能表列上選擇 [工具] 、[選項] 。
 
-2.  在選項清單中，依序選擇 [環境] 和 [字型和色彩]。
+2. 在選項清單中，依序選擇 [環境] 和 [字型和色彩]。
 
-3.  在 [顯示設定] 清單中，選擇 [環境字型]。
+3. 在 [顯示設定] 清單中，選擇 [環境字型]。
 
     > [!TIP]
     >  如果您想要只變更工具視窗的字型，請在 [顯示設定] 清單中選擇 [所有文字工具視窗]。
 
-4.  在 [字型] 清單中，選擇字型。
+4. 在 [字型] 清單中，選擇字型。
 
-5.  在 [大小] 清單中，選擇文字大小，然後選擇 [確定] 按鈕。
+5. 在 [大小] 清單中，選擇文字大小，然後選擇 [確定] 按鈕。
 
-## <a name="see-also"></a>請參閱
- [Visual Studio 的協助工具功能](../ide/reference/accessibility-features-of-visual-studio.md) [How to:在編輯器中變更字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+## <a name="see-also"></a>另請參閱
+ [Visual Studio 的協助工具功能](../ide/reference/accessibility-features-of-visual-studio.md) [How to:變更編輯器中的字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
