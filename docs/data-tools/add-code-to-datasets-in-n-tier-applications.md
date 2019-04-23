@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 869075875f5de56cc7454c58f7dbb5dfda7a9f76
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: dbd65c5247a82f2a58a57e50402ecde5d330cc9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928773"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111684"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集
 您可以藉由建立資料集的部分類別檔案，並新增程式碼來擴充資料集的功能 (而不是將程式碼加入*DatasetName*。Dataset.Designer 檔案）。 部分類別可讓多個實體檔案分割為特定類別的程式碼。 如需詳細資訊，請參閱 <<c0> [ 部分](/dotnet/visual-basic/language-reference/modifiers/partial)或是[部分類別和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
@@ -35,15 +35,15 @@ ms.locfileid: "55928773"
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>若要將程式碼加入 n-tier 應用程式中的資料集
 
-1.  找出包含專案 *.xsd*檔案。
+1. 找出包含專案 *.xsd*檔案。
 
-2.  選取  **.xsd**開啟資料集的檔案。
+2. 選取  **.xsd**開啟資料集的檔案。
 
-3.  以滑鼠右鍵按一下您想以加入程式碼 （標題列中的資料表名稱），然後選取的資料表**檢視程式碼**。
+3. 以滑鼠右鍵按一下您想以加入程式碼 （標題列中的資料表名稱），然後選取的資料表**檢視程式碼**。
 
      部分類別會建立，並會在程式碼編輯器中開啟。
 
-4.  加入部分類別宣告內的程式碼。
+4. 加入部分類別宣告內的程式碼。
 
      下列範例示範如何將程式碼新增至 NorthwindDataSet 中 CustomersDataTable:
 
@@ -53,6 +53,7 @@ ms.locfileid: "55928773"
         ' to the CustomersDataTable.
     End Class
     ```
+
     ```csharp
     partial class CustomersDataTable
     {

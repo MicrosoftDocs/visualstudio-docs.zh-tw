@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109805"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "54763110"
 ## <a name="adding-single-files-at-the-solution-level"></a>在方案層級新增單一檔案  
  有時候您的檔案可能會有多個專案參考它，或是包含邏輯上屬於方案層級的文字或其他資料，而不是在特定專案下。  將單一項目新增至方案︰  
   
-1.  在方案總管中以滑鼠右鍵按一下方案節點，然後選擇 [新增] &#124; [新增項目] 或 [新增] &#124; [現有項目]。  
+1. 在方案總管中以滑鼠右鍵按一下方案節點，然後選擇 [新增] &#124; [新增項目] 或 [新增] &#124; [現有項目]。  
   
 ## <a name="creating-empty-solutions"></a>建立空的方案  
  雖然專案必須位於方案中，但是您可以建立沒有專案的方案。  
@@ -87,11 +87,11 @@ ms.locfileid: "54763110"
   
 ##### <a name="to-delete-a-solution"></a>刪除方案  
   
-1.  在 [方案總管] 中，以滑鼠右鍵按一下要刪除的方案，然後選取 [在檔案總管中開啟資料夾] 。  
+1. 在 [方案總管] 中，以滑鼠右鍵按一下要刪除的方案，然後選取 [在檔案總管中開啟資料夾] 。  
   
-2.  在 [檔案總管] 中，瀏覽上一層。  
+2. 在 [檔案總管] 中，瀏覽上一層。  
   
-3.  選取包含方案的目錄，然後按 Delete 鍵。  
+3. 選取包含方案的目錄，然後按 Delete 鍵。  
   
 ## <a name="see-also"></a>請參閱  
  [專案和方案](../ide/solutions-and-projects-in-visual-studio.md)   

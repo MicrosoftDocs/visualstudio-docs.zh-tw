@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：使用 c + + 建立 SDK |Microsoft Docs
+title: 逐步解說：使用 SDK 建立C++|Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,74 +8,74 @@ ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 85af1b15fe6f2b87fbe1f7668fd1610c8595b90c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1312d61b2d287a5dd8cb757b73e818a9e9cb2241
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944728"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110033"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>逐步解說：使用 C++ 建立 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本逐步解說示範如何建立原生 c + + 數學程式庫 SDK，封裝 SDK 作為 Visual Studio 擴充功能 (VSIX)，並接著使用它來建立應用程式。 本逐步解說分為下列步驟：  
+本逐步解說示範如何建立原生C++數學程式庫 SDK，封裝 SDK 作為 Visual Studio 擴充功能 (VSIX)，並接著使用它來建立應用程式。 本逐步解說分為下列步驟：  
   
--   [若要建立原生和 Windows 執行階段程式庫](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)  
+- [若要建立原生和 Windows 執行階段程式庫](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)  
   
--   [若要建立 NativeMathVSIX 擴充功能專案](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)  
+- [若要建立 NativeMathVSIX 擴充功能專案](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)  
   
--   [若要建立範例應用程式使用的類別庫](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)  
+- [若要建立範例應用程式使用的類別庫](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)  
   
 ## <a name="prerequisites"></a>必要條件  
  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
-##  <a name="createClassLibrary"></a> 若要建立原生和 Windows 執行階段程式庫  
+## <a name="createClassLibrary"></a> 若要建立原生和 Windows 執行階段程式庫  
   
-1.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
+1. 在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-2.  在範本清單中，依序展開**Visual c + +**， **Windows 市集**，然後選取**DLL （Windows 市集應用程式）** 範本。 在 [**名稱**方塊中，指定`NativeMath`，然後選擇 **[確定]** ] 按鈕。  
+2. 在範本清單中，依序展開**Visual C++** ， **Windows Store**，然後選取**DLL （Windows 市集應用程式）** 範本。 在 [**名稱**方塊中，指定`NativeMath`，然後選擇 **[確定]** ] 按鈕。  
   
-3.  更新 NativeMath.h 以符合下列程式碼。  
+3. 更新 NativeMath.h 以符合下列程式碼。  
   
      [!code-cpp[CreatingAnSDKUsingCpp#1](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.h#1)]  
   
-4.  更新 NativeMath.cpp 以符合此程式碼：  
+4. 更新 NativeMath.cpp 以符合此程式碼：  
   
      [!code-cpp[CreatingAnSDKUsingCpp#2](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.cpp#2)]  
   
-5.  在**方案總管 中**，開啟捷徑功能表**解決方案 'NativeMath'**，然後選擇**新增**，**新專案**。  
+5. 在**方案總管 中**，開啟捷徑功能表**解決方案 'NativeMath'**，然後選擇**新增**，**新專案**。  
   
-6.  在範本清單中，依序展開**Visual c + +**，然後選取**Windows 執行階段元件**範本。 在 [**名稱**方塊中，指定`NativeMathWRT`，然後選擇 **[確定]** ] 按鈕。  
+6. 在範本清單中，依序展開**Visual C++** ，然後選取**Windows 執行階段元件**範本。 在 [**名稱**方塊中，指定`NativeMathWRT`，然後選擇 **[確定]** ] 按鈕。  
   
-7.  更新以符合此程式碼的 Class1.h:  
+7. 更新以符合此程式碼的 Class1.h:  
   
      [!code-cpp[CreatingAnSDKUsingCpp#3](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathwrt/class1.h#3)]  
   
-8.  更新 Class1.cpp 以符合此程式碼：  
+8. 更新 Class1.cpp 以符合此程式碼：  
   
      [!code-cpp[CreatingAnSDKUsingCpp#4](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathwrt/class1.cpp#4)]  
   
 9. 在功能表列上，選擇 [建置] 、[建置方案] 。  
   
-##  <a name="createVSIX"></a> 若要建立 NativeMathVSIX 擴充功能專案  
+## <a name="createVSIX"></a> 若要建立 NativeMathVSIX 擴充功能專案  
   
-1.  在**方案總管 中**，開啟捷徑功能表**解決方案 'NativeMath'**，然後選擇**新增**，**新專案**。  
+1. 在**方案總管 中**，開啟捷徑功能表**解決方案 'NativeMath'**，然後選擇**新增**，**新專案**。  
   
-2.  在範本清單中，依序展開**Visual C#**，**擴充性**，然後選取**VSIX 封裝**。 在 [**名稱**方塊中，指定**NativeMathVSIX**，然後選擇 **[確定]** ] 按鈕。  
+2. 在範本清單中，依序展開**Visual C#**，**擴充性**，然後選取**VSIX 封裝**。 在 [**名稱**方塊中，指定**NativeMathVSIX**，然後選擇 **[確定]** ] 按鈕。  
   
-3.  VSIX 資訊清單設計工具出現時，請將它關閉。  
+3. VSIX 資訊清單設計工具出現時，請將它關閉。  
   
-4.  在 **方案總管 中**，開啟捷徑功能表**source.extension.vsixmanifest**，然後選擇 **檢視程式碼**。  
+4. 在 **方案總管 中**，開啟捷徑功能表**source.extension.vsixmanifest**，然後選擇 **檢視程式碼**。  
   
-5.  使用下列 XML 取代現有的 XML。  
+5. 使用下列 XML 取代現有的 XML。  
   
     [!code-xml[CreatingAnSDKUsingCpp#6](../../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_6.xml)]
   
-6.  在 [**方案總管] 中**，開啟捷徑功能表**NativeMathVSIX**專案，，然後選擇**新增**，**新項目**。  
+6. 在 [**方案總管] 中**，開啟捷徑功能表**NativeMathVSIX**專案，，然後選擇**新增**，**新項目**。  
   
-7.  在這份**Visual C# 項目**，展開**資料**，然後選取**XML 檔案**。 在 [**名稱**方塊中，指定`SDKManifest.xml`，然後選擇 **[確定]** ] 按鈕。  
+7. 在這份**Visual C# 項目**，展開**資料**，然後選取**XML 檔案**。 在 [**名稱**方塊中，指定`SDKManifest.xml`，然後選擇 **[確定]** ] 按鈕。  
   
-8.  使用這個 XML 取代檔案的內容：  
+8. 使用這個 XML 取代檔案的內容：  
   
      [!code-xml[CreatingAnSDKUsingCpp#5](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/sdkmanifest.xml#5)]  
   
@@ -141,11 +141,11 @@ ms.locfileid: "58944728"
   
 19. 選擇**安裝**按鈕，等候安裝完成，然後再重新啟動 Visual Studio。  
   
-##  <a name="createSample"></a> 若要建立範例應用程式使用的類別庫  
+## <a name="createSample"></a> 若要建立範例應用程式使用的類別庫  
   
 1. 在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-2. 在範本清單中，依序展開**Visual c + +**， **Windows 市集**，然後選取**空白應用程式**。 在 [**名稱**方塊中，指定**NativeMathSDKSample**，然後選擇 **[確定]** ] 按鈕。  
+2. 在範本清單中，依序展開**Visual C++** ， **Windows Store**，然後選取**空白應用程式**。 在 [**名稱**方塊中，指定**NativeMathSDKSample**，然後選擇 **[確定]** ] 按鈕。  
   
 3. 在 [**方案總管] 中**，開啟捷徑功能表**NativeMathSDKSample**專案，，然後選擇**新增**，**參考**。  
   

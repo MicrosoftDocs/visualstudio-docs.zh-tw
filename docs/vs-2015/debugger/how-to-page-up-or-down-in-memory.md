@@ -23,12 +23,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8859bac6f2cfe992c3c0d8005830985598934b88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109591"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>HOW TO：在記憶體中向上或向下翻頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "58929982"
   
 #### <a name="to-move-up-or-down-one-instruction"></a>若要向上或向下移動一個指令  
   
--   請按一下垂直捲軸頂端或底端的箭頭。  
+- 請按一下垂直捲軸頂端或底端的箭頭。  
   
 ## <a name="see-also"></a>另請參閱  
  [記憶體視窗](../debugger/memory-windows.md)   

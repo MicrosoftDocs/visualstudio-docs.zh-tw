@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a710554d46df8238f33aa90b647def337b57a9a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4a3ddd7896732c5b87c5b6bd2032c27fffd96a41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109734"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>HOW TO：使用逸出序列從範本產生範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58930601"
   
 ### <a name="to-generate-a-text-template-from-within-a-text-template"></a>若要產生的文字範本內從文字範本  
   
--   使用反斜線 (\\) 當做逸出字元，產生的文字範本指示詞、 陳述式、 運算式、 內所需的標記和類別不同的文字範本檔案中的功能。  
+- 使用反斜線 (\\) 當做逸出字元，產生的文字範本指示詞、 陳述式、 運算式、 內所需的標記和類別不同的文字範本檔案中的功能。  
   
     ```  
     \<#@ directive \#>  

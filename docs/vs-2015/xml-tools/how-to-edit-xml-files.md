@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92f233a036c3c0b40cbd53a298154919861b58b8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: dca65a4ec1fecd885c97ce80d9827fe78c5ce9b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663657"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110501"
 ---
 # <a name="how-to-edit-xml-files"></a>HOW TO：編輯 XML 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,45 +26,45 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
   
 ### <a name="to-edit-an-xml-file"></a>編輯 XML 檔案  
   
-1.  按兩下要編輯的檔案。  
+1. 按兩下要編輯的檔案。  
   
 ### <a name="to-add-a-new-xml-file-to-a-project"></a>將新的 XML 檔案加入至專案  
   
-1.  從**專案**功能表上，選取**加入新項目**。  
+1. 從**專案**功能表上，選取**加入新項目**。  
   
-2.  選取  **XML 檔案**從**範本**窗格。  
+2. 選取  **XML 檔案**從**範本**窗格。  
   
-3.  輸入中的檔案名稱**名稱**欄位，然後按**新增**。  
+3. 輸入中的檔案名稱**名稱**欄位，然後按**新增**。  
   
      將 XML 檔案加入至專案，並在 XML 編輯器中開啟它。 檔案包含預設的 XML 宣告，`<?xml version="1.0" encoding="utf-8" ?>`。  
   
 ### <a name="to-add-an-existing-xml-file-to-a-project"></a>將現有 XML 檔案加入至專案  
   
-1.  從**專案**功能表上，選取**加入現有項目**。  
+1. 從**專案**功能表上，選取**加入現有項目**。  
   
      **加入現有項目** 對話方塊隨即出現。  
   
-2.  選取 XML 檔案並按**新增**。  
+2. 選取 XML 檔案並按**新增**。  
   
 ### <a name="to-create-a-new-xml-or-xslt-file"></a>建立新的 XML 或 XSLT 檔  
   
-1.  從**檔案**功能表上，選取**新增**。  
+1. 從**檔案**功能表上，選取**新增**。  
   
      **新的檔案** 對話方塊隨即出現。  
   
-2.  選取  **XML 檔案**來建立新的 XML 檔案; 或者，選取**XSLT 檔**來建立新的 XSLT 樣式表。  
+2. 選取  **XML 檔案**來建立新的 XML 檔案; 或者，選取**XSLT 檔**來建立新的 XSLT 樣式表。  
   
-3.  按一下 [開啟]。  
+3. 按一下 [開啟]。  
   
 ### <a name="to-create-a-project-for-xml-files"></a>建立 XML 檔案的專案  
   
-1.  從**檔案**功能表上，選取**新增**，然後選取**專案**。  
+1. 從**檔案**功能表上，選取**新增**，然後選取**專案**。  
   
      [ **新增專案** ] 對話方塊隨即出現。  
   
-2.  選取您的選擇，選取的程式碼語言**空專案**，然後按一下**確定**。  
+2. 選取您的選擇，選取的程式碼語言**空專案**，然後按一下**確定**。  
   
-3.  將 XML 檔案加入至專案。  
+3. 將 XML 檔案加入至專案。  
   
      XML 編輯器會找到加入至此專案的結構描述，並在此專案開啟時編輯的任何 XML、結構描述或 XSLT 檔案中使用它們進行驗證及 IntelliSense。  
   
