@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e6ea971705b164a27fc7f65c3ac2d681b1569177
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758795"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108999"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Visual Studio 中的同步處理設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,27 +26,27 @@ ms.locfileid: "54758795"
 ## <a name="synchronized-settings"></a>同步設定
  預設會同步處理下列設定。
 
--   開發設定 (您必須在第一次執行 Visual Studio 時選取一組設定，但是可以隨時變更選取範圍。 如需詳細資訊，請參閱 [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3))。
+- 開發設定 (您必須在第一次執行 Visual Studio 時選取一組設定，但是可以隨時變更選取範圍。 如需詳細資訊，請參閱 [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3))。
 
--   [工具] &#124; [選項] 頁面中的下列選項：
+- [工具] &#124; [選項] 頁面中的下列選項：
 
-    -   [環境]、[一般] 選項頁面上的 [主題] 和功能表列大小寫設定
+    - [環境]、[一般] 選項頁面上的 [主題] 和功能表列大小寫設定
 
-    -   [環境]、[字型和色彩] 選項頁面上的所有設定
+    - [環境]、[字型和色彩] 選項頁面上的所有設定
 
-    -   [環境]、[鍵盤] 選項頁面上的所有鍵盤快速鍵
+    - [環境]、[鍵盤] 選項頁面上的所有鍵盤快速鍵
 
-    -   [環境]、[索引標籤和視窗] 選項頁面上的所有設定
+    - [環境]、[索引標籤和視窗] 選項頁面上的所有設定
 
-    -   [環境]、[啟動] 選項頁面上的所有設定
+    - [環境]、[啟動] 選項頁面上的所有設定
 
-    -   [文字編輯器] 選項頁面上的所有設定
+    - [文字編輯器] 選項頁面上的所有設定
 
--   [XAML 設計工具] 選項頁上的所有設定
+- [XAML 設計工具] 選項頁上的所有設定
 
--   使用者定義的命令別名。 如需如何定義命令別名的詳細資訊，請參閱 [Visual Studio 命令別名](../ide/reference/visual-studio-command-aliases.md)。
+- 使用者定義的命令別名。 如需如何定義命令別名的詳細資訊，請參閱 [Visual Studio 命令別名](../ide/reference/visual-studio-command-aliases.md)。
 
--   [視窗] &#124; [管理視窗配置] 頁面中的使用者定義視窗配置
+- [視窗] &#124; [管理視窗配置] 頁面中的使用者定義視窗配置
 
 ## <a name="turning-synchronized-settings-off-for-a-particular-computer"></a>關閉特定電腦的同步設定
  Visual Studio 的同步設定預設為開啟。 您可以關閉電腦的同步設定，方法是移至 [工具] &#124; [選項] &#124; [環境] &#124; [同步設定] 頁面，並且取消核取核取方塊。  例如，如果您決定不要同步處理電腦 A 上 Visual Studio 的設定，則任何在電腦 A 上的設定變更都不會出現在電腦 B 或電腦 C 上。電腦 B 和 C 會繼續互相同步處理，但不會和電腦 A 同步。

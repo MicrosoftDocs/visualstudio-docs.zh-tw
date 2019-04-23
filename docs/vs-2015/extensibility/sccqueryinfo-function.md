@@ -12,12 +12,12 @@ ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 23b0d9d77eae2052f2b9da3c236e231cc17a7e65
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f951e7ef29fbba7225997276b31bd9f32731efc8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940296"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108434"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ SCCRTN SccQueryInfo(
   
  當使用此函式簽出檔案，請注意下列`MSSCCI`狀態需求：  
   
--   `SCC_STATUS_OUTBYUSER` 目前的使用者已簽出檔案時設定。  
+- `SCC_STATUS_OUTBYUSER` 目前的使用者已簽出檔案時設定。  
   
--   `SCC_STATUS_CHECKEDOUT` 無法設定，除非`SCC_STATUS_OUTBYUSER`設定。  
+- `SCC_STATUS_CHECKEDOUT` 無法設定，除非`SCC_STATUS_OUTBYUSER`設定。  
   
--   `SCC_STATUS_CHECKEDOUT` 時才會設定檔案已簽出到指定的工作目錄。  
+- `SCC_STATUS_CHECKEDOUT` 時才會設定檔案已簽出到指定的工作目錄。  
   
--   如果檔案已簽出目前的使用者以外的工作目錄的目錄`SCC_STATUS_OUTBYUSER`設定，但`SCC_STATUS_CHECKEDOUT`不是。  
+- 如果檔案已簽出目前的使用者以外的工作目錄的目錄`SCC_STATUS_OUTBYUSER`設定，但`SCC_STATUS_CHECKEDOUT`不是。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   

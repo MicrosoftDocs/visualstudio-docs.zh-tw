@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946044"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108691"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ ms.locfileid: "58946044"
   
  若要重新排列 DSL 定義圖，您可以：  
   
--   交換主要與參考檢視使用**此處將樹狀結構**並**分割樹狀結構**命令。 以滑鼠右鍵按一下單一網域類別，以查看這些命令。  
+- 交換主要與參考檢視使用**此處將樹狀結構**並**分割樹狀結構**命令。 以滑鼠右鍵按一下單一網域類別，以查看這些命令。  
   
--   按下 Ctrl + Up 和 Ctrl + 向下鍵，來重新排序的網域類別和圖形類別。  
+- 按下 Ctrl + Up 和 Ctrl + 向下鍵，來重新排序的網域類別和圖形類別。  
   
--   摺疊或展開類別使用每個圖形右上角的圖示。  
+- 摺疊或展開類別使用每個圖形右上角的圖示。  
   
--   按一下底部的 網域類別減號 （-） 摺疊樹狀結構組件。  
+- 按一下底部的 網域類別減號 （-） 摺疊樹狀結構組件。  
   
 ## <a name="inheritance"></a>繼承  
  可以使用繼承來定義網域類別。 若要建立繼承衍生，按一下 [繼承] 工具，按一下衍生的類別中，然後按一下基底類別。 模型項目有它自己的網域類別，以及繼承自基底類別的所有屬性所定義的所有屬性。 它也會繼承其關聯性中的角色。  

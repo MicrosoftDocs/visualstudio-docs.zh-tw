@@ -9,25 +9,25 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f25af22d97b1a564f97120e462cee8ca3fee37e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 72d5defa8a9cef04a4564d8974859de024c97dea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108690"
 ---
 # <a name="xml-schema-designer"></a>XML 結構描述設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XML 結構描述設計工具 (XSD 設計工具) 是一種圖形化工具，可讓您視覺化不同抽象概念層級的結構描述集合。 下列是 XSD 設計工具的主要元件：    
   
--   [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)可讓您瀏覽和巡覽 XML 結構描述樹狀目錄並執行搜尋。  
+- [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)可讓您瀏覽和巡覽 XML 結構描述樹狀目錄並執行搜尋。  
   
--   [開始檢視](../xml-tools/start-view.md)是啟動點 XSD 設計工具，從開始檢視中，您可以巡覽至 XSD 設計工具的其他檢視，並查看結構描述集的詳細資料。  
+- [開始檢視](../xml-tools/start-view.md)是啟動點 XSD 設計工具，從開始檢視中，您可以巡覽至 XSD 設計工具的其他檢視，並查看結構描述集的詳細資料。  
   
--   [圖表檢視](../xml-tools/graph-view.md)可讓您查看結構描述設定和結構描述節點之間的關聯性的概觀。  
+- [圖表檢視](../xml-tools/graph-view.md)可讓您查看結構描述設定和結構描述節點之間的關聯性的概觀。  
   
--   [內容模型檢視](../xml-tools/content-model-view.md)提供本機和全域結構描述節點，包括簡單和複雜型別、 項目、 群組、 屬性和屬性群組的詳細資料的圖形化表示法。  
+- [內容模型檢視](../xml-tools/content-model-view.md)提供本機和全域結構描述節點，包括簡單和複雜型別、 項目、 群組、 屬性和屬性群組的詳細資料的圖形化表示法。  
   
 ## <a name="in-this-section"></a>本節內容  
  [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)  

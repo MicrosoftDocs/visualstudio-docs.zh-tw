@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d2fc99235c9001cd465236c82588e33a842c168
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02f7c89db63fbd2276dd6e59a619a62e4b485870
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944808"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108176"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>HOW TO：使用 WPF 樹狀架構視覺化檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,35 +33,35 @@ ms.locfileid: "58944808"
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>若要開啟 WPF 樹狀架構視覺化檢閱  
   
-1.  在 DataTip [監看式] 視窗、[自動變數] 視窗或 [區域變數] 視窗中，在 WPF 物件名稱旁，按一下放大鏡圖示旁邊的箭號。  
+1. 在 DataTip [監看式] 視窗、[自動變數] 視窗或 [區域變數] 視窗中，在 WPF 物件名稱旁，按一下放大鏡圖示旁邊的箭號。  
   
      視覺化檢視的清單隨即顯示。  
   
-2.  按一下 [WPF 樹狀架構視覺化檢閱]。  
+2. 按一下 [WPF 樹狀架構視覺化檢閱]。  
   
 ### <a name="to-search-the-visual-tree"></a>若要搜尋視覺化樹狀結構  
   
--   在 [視覺化樹狀] 窗格的 [搜尋] 方塊中，鍵入要搜尋的字串。  
+- 在 [視覺化樹狀] 窗格的 [搜尋] 方塊中，鍵入要搜尋的字串。  
   
      [WPF 樹狀架構視覺化檢視] 會立即在視覺化樹狀結構中，尋找第一個符合您輸入之字串的物件。 輸入越多字元，尋找的相符項目越精確。  
   
-    -   若要移至視覺化樹狀中的下一個相符項目，請按 [下一個]。  
+    - 若要移至視覺化樹狀中的下一個相符項目，請按 [下一個]。  
   
-    -   若要移至上一個符合項目，則按一下 [上一個]。  
+    - 若要移至上一個符合項目，則按一下 [上一個]。  
   
-    -   若要清除搜尋準則，請按一下 [清除]。  
+    - 若要清除搜尋準則，請按一下 [清除]。  
   
 ### <a name="to-search-the-properties-list"></a>若要搜尋屬性清單  
   
--   在 **的屬性**_名稱_**:**_類型_窗格中，輸入字串中搜尋您想要**篩選**方塊。  
+- 在 **的屬性**_名稱_**:**_類型_窗格中，輸入字串中搜尋您想要**篩選**方塊。  
   
      [WPF 樹狀架構視覺化檢視] 會立即尋找符合您輸入之字串的屬性；現在，清單只會顯示符合您所輸入字串的屬性。 輸入越多字元，尋找的相符項目越精確。  
   
-    -   若要清除搜尋準則，請按一下 [清除]。  
+    - 若要清除搜尋準則，請按一下 [清除]。  
   
 ### <a name="to-close-the-visualizer"></a>若要關閉視覺化檢視  
   
--   按一下對話方塊右上角中的 [關閉] 圖示。  
+- 按一下對話方塊右上角中的 [關閉] 圖示。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：使用視覺化檢視](../misc/how-to-use-a-visualizer.md)   
