@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219d70f1a722a19017399ab851aa2e69c44d2b28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e36b7cef0c24367292f7f9e60b86eb9138b12a64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663358"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082941"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>在 XAML 設計工具中插入控制項並修改其行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ ms.locfileid: "59663358"
   
  **本主題內容：**  
   
--   [將控制項加入至畫板](#Insert)  
+- [將控制項加入至畫板](#Insert)  
   
--   [讓控制項執行動作](#Modify)  
+- [讓控制項執行動作](#Modify)  
   
-##  <a name="Insert"></a> 將控制項加入至畫板  
+## <a name="Insert"></a> 將控制項加入至畫板  
  您可以從 [資產]  面板中將控制項拖曳至 [畫板] 上，然後在 [屬性]  視窗中加以修改。  
   
  ![Blend &#45; 資產 &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")  
@@ -53,7 +53,7 @@ ms.locfileid: "59663358"
   
  若要製作控制項，請選取某個物件。 然後在 [工具]  功能表上按一下 [製作控制項] 。  
   
-##  <a name="Modify"></a> 讓控制項執行動作  
+## <a name="Modify"></a> 讓控制項執行動作  
  當使用者與控制項互動時，控制項可以執行動作。 例如，他們可以啟動動畫、更新資料來源或播放視訊。  
   
  使用 *「觸發程序」*(trigger)、 *「行為」*(behavior) 及 *「事件」* (event)，讓控制項執行動作。  

@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 83fd93d2e1e2e5d99f7ea8eca9f5de4ce1b4c7f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a8fbc314580b106f5e1e8dae5a0a78d043d3940b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939356"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080900"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>HOW TO：使用功能表項目隱藏警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "58939356"
   
 ### <a name="to-suppress-a-warning-by-using-menu-item"></a>使用功能表項目隱藏警告  
   
-1.  在 **分析**功能表上，選擇**Windows** ，然後選擇 **程式碼分析**。  
+1. 在 **分析**功能表上，選擇**Windows** ，然後選擇 **程式碼分析**。  
   
-2.  在 [**程式碼分析**] 視窗中，選取警告隱藏。  
+2. 在 [**程式碼分析**] 視窗中，選取警告隱藏。  
   
-3.  選擇 動作，然後選擇**隱藏訊息**，然後選擇 **在原始程式檔**或是**專案隱藏項目檔中的流程範本**。  
+3. 選擇 動作，然後選擇**隱藏訊息**，然後選擇 **在原始程式檔**或是**專案隱藏項目檔中的流程範本**。  
   
      隱藏特定警告，並加上刪除線的 [程式碼分析] 視窗中出現的警告。  
   

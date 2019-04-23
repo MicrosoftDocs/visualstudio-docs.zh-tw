@@ -10,38 +10,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e831136014a47052d8d16b5127765cafbf13b785
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fc0214ed8327354dc3662f039d33d032148f9437
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083734"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>逐步解說：自訂文字檢視
 您可以自訂文字檢視，方法是修改任何它的編輯器格式對應中的下列屬性：
 
--   指示區邊界
+- 指示區邊界
 
--   插入號
+- 插入號
 
--   覆寫插入號
+- 覆寫插入號
 
--   選取的文字
+- 選取的文字
 
--   非現用選取的文字 （也就是選取的文字已遺失焦點）
+- 非現用選取的文字 （也就是選取的文字已遺失焦點）
 
--   可見的空白字元
+- 可見的空白字元
 
 ## <a name="prerequisites"></a>必要條件
  從 Visual Studio 2015 中，從下載中心取得未安裝 Visual Studio SDK。 它包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-mef-project"></a>建立 MEF 專案
 
-1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `ViewPropertyTest`。
+1. 建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `ViewPropertyTest`。
 
-2.  將編輯器分類器項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
+2. 將編輯器分類器項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
 
-3.  刪除現有類別檔案。
+3. 刪除現有類別檔案。
 
 ## <a name="define-the-content-type"></a>內容類型定義
 
@@ -68,28 +68,28 @@ ms.locfileid: "56697464"
 
 ## <a name="change-the-view-properties"></a>變更檢視的屬性
 
-1.  設定<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>方法以便開啟檢視時，會變更檢視的屬性。 若要進行變更，請先找到<xref:System.Windows.ResourceDictionary>，其對應於您想要尋找的檢視的外觀。 然後，變更資源字典中適當的屬性，並設定屬性。 若要呼叫的批次<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A>藉由呼叫的方法<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A>方法之前設定的屬性，然後<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A>設定屬性之後。
+1. 設定<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>方法以便開啟檢視時，會變更檢視的屬性。 若要進行變更，請先找到<xref:System.Windows.ResourceDictionary>，其對應於您想要尋找的檢視的外觀。 然後，變更資源字典中適當的屬性，並設定屬性。 若要呼叫的批次<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A>藉由呼叫的方法<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A>方法之前設定的屬性，然後<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A>設定屬性之後。
 
      [!code-csharp[VSSDKViewPropertyTest#4](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_4.cs)]
      [!code-vb[VSSDKViewPropertyTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_4.vb)]
 
 ## <a name="build-and-test-the-code"></a>建置和測試程式碼
 
-1.  建置方案。
+1. 建置方案。
 
      當您執行此專案的偵錯工具時，會啟動 Visual Studio 的第二個執行個體。
 
-2.  建立文字檔，並輸入一些文字。
+2. 建立文字檔，並輸入一些文字。
 
-    -   插入號應該是洋紅，覆寫插入號應該是淺粉藍
+    - 插入號應該是洋紅，覆寫插入號應該是淺粉藍
 
-    -   指示區邊界 （以 [文字] 檢視的左邊） 應指示燈綠色。
+    - 指示區邊界 （以 [文字] 檢視的左邊） 應指示燈綠色。
 
-3.  選取您所輸入的文字。 選取的文字的色彩應指示燈粉紅色。
+3. 選取您所輸入的文字。 選取的文字的色彩應指示燈粉紅色。
 
-4.  選取文字時，請按一下 [文字] 視窗外的任何位置。 選取的文字的色彩應該深粉紅。
+4. 選取文字時，請按一下 [文字] 視窗外的任何位置。 選取的文字的色彩應該深粉紅。
 
-5.  開啟可見的空白字元。 (在**編輯**功能表上，指向**進階**，然後按一下 **檢視空白區**)。 輸入文字中的某些索引標籤。 應該會顯示紅色的箭頭，表示索引標籤。
+5. 開啟可見的空白字元。 (在**編輯**功能表上，指向**進階**，然後按一下 **檢視空白區**)。 輸入文字中的某些索引標籤。 應該會顯示紅色的箭頭，表示索引標籤。
 
 ## <a name="see-also"></a>另請參閱
 - [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

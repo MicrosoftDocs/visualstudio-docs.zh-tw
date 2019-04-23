@@ -10,12 +10,12 @@ ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 192d97d8d2096b37d2dd52d2ed942ccb595456d0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 37e0ae51589d85ac52ec962fb3cb193fc37a7ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795788"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081251"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>自動程式化 UI 測試的最佳作法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54795788"
   
  **需求**  
   
--   Visual Studio 企業版  
+- Visual Studio 企業版  
   
 ## <a name="best-practices"></a>最佳作法  
  使用下列指導方針，建立彈性的自動程式化 UI 測試。  
@@ -64,11 +64,11 @@ ms.locfileid: "54795788"
   
 - 如果控制項有不再有效的判斷提示：  
   
-  -   刪除包含該判斷提示的方法。  
+  - 刪除包含該判斷提示的方法。  
   
-  -   從測試方法移除對此方法的呼叫。  
+  - 從測試方法移除對此方法的呼叫。  
   
-  -   加入新的判斷提示，方法是將交叉線按鈕拖曳至 UI 控制項上，開啟 UI 對應，然後加入新的判斷提示。  
+  - 加入新的判斷提示，方法是將交叉線按鈕拖曳至 UI 控制項上，開啟 UI 對應，然後加入新的判斷提示。  
   
   如需如何錄製自動程式碼 UI 測試的詳細資訊，請參閱[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)。  
   

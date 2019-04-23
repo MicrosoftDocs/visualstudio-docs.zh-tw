@@ -9,21 +9,21 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98ed22a9a6e570c5e47c6b51ddf4486334205a0f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 1d388db50ae935ef85b720177bd31c832a353d31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080555"
 ---
 # <a name="searching-the-schema-set"></a>搜尋結構描述集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XML 結構描述總管可讓您以下列方式搜尋結構描述集：  
   
--   關鍵字搜尋。  
+- 關鍵字搜尋。  
   
--   結構描述特有的搜尋。  
+- 結構描述特有的搜尋。  
   
 ## <a name="keyword-search"></a>關鍵字搜尋  
  輸入中的子字串執行關鍵字搜尋**搜尋 SchemaSet** XML 結構描述總管工具列的 [文字] 方塊。  
@@ -32,11 +32,11 @@ XML 結構描述總管可讓您以下列方式搜尋結構描述集：
   
  XML 結構描述總管會搜尋下列結構描述集：  
   
--   符合指定之關鍵字的任何 `name` 或 `ref` 屬性。 這項功能可讓您依名稱尋找項目、屬性和型別等。  
+- 符合指定之關鍵字的任何 `name` 或 `ref` 屬性。 這項功能可讓您依名稱尋找項目、屬性和型別等。  
   
--   include 陳述式的 `schemaLocation` 屬性。  
+- include 陳述式的 `schemaLocation` 屬性。  
   
--   import 陳述式的 `namespace` 屬性。  
+- import 陳述式的 `namespace` 屬性。  
   
 ## <a name="schema-specific-search"></a>結構描述的特定搜尋  
  XML 結構描述總管也包含一些內建的搜尋，可讓您使用 XML 結構描述總管的操作功能表進行存取。 如需可用的內容功能表的詳細資訊，請參閱[快顯功能表](../xml-tools/context-menus-xml-schema-explorer.md)。 您也可以從 [啟動] 檢視中，執行結構描述特有的搜尋如需詳細資訊，請參閱中的 < 結構描述設定的詳細資料 > 一節[開始檢視](../xml-tools/start-view.md)主題。  

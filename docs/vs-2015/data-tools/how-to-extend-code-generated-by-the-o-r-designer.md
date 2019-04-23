@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a5fc9bb7b6e2d6813c4c571633ef46d4b9e1f48
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8aa3ecd29180e01a7d6f254303d42ac328aceaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651730"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085216"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>HOW TO：擴充 O/R 設計工具產生的程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ ms.locfileid: "59651730"
   
 #### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>若要建立部分類別並將程式碼加入至實體類別  
   
-1.  開啟或建立新的 LINQ to SQL 類別檔案 (**.dbml**檔案) 中[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 (按兩下 **.dbml**中的檔案**方案總管**/**資料庫總管**。)  
+1. 開啟或建立新的 LINQ to SQL 類別檔案 (**.dbml**檔案) 中[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 (按兩下 **.dbml**中的檔案**方案總管**/**資料庫總管**。)  
   
-2.  在  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，以滑鼠右鍵按一下您要新增驗證，然後按一下的類別**檢視程式碼**。  
+2. 在  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，以滑鼠右鍵按一下您要新增驗證，然後按一下的類別**檢視程式碼**。  
   
      [程式碼編輯器] 會以所選取實體類別的部分類別開啟。  
   
-3.  在實體類別的部分類別宣告中，加入程式碼。  
+3. 在實體類別的部分類別宣告中，加入程式碼。  
   
 ## <a name="adding-code-to-a-datacontext"></a>將程式碼加入至 DataContext  
   
 #### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>若要建立部分類別並將程式碼加入至 DataContext  
   
-1.  開啟或建立新的 LINQ to SQL 類別檔案 (**.dbml**檔案) 中[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 (按兩下 **.dbml**中的檔案**方案總管**/**資料庫總管**。)  
+1. 開啟或建立新的 LINQ to SQL 類別檔案 (**.dbml**檔案) 中[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 (按兩下 **.dbml**中的檔案**方案總管**/**資料庫總管**。)  
   
-2.  在  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，以滑鼠右鍵按一下設計工具上的空白區域，然後按一下**檢視程式碼**。  
+2. 在  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，以滑鼠右鍵按一下設計工具上的空白區域，然後按一下**檢視程式碼**。  
   
      [程式碼編輯器] 會以 DataContext 的部分類別開啟。  
   
-3.  在 DataContext 的部分類別宣告中，加入程式碼。  
+3. 在 DataContext 的部分類別宣告中，加入程式碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

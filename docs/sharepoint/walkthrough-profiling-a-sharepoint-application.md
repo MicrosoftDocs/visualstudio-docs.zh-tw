@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f22630a823e592e0cdc2128dfb3ab38e1b177d72
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 3e10c76d40efefe28decd9efd554e928ffea20c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083415"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>逐步解說：分析 SharePoint 應用程式
   本逐步解說將示範如何使用 Visual Studio 中的程式碼剖析工具最佳化 SharePoint 應用程式的效能。 範例應用程式是 SharePoint 功能事件接收器，內含的閒置迴圈會降低功能事件接收器的效能。 Visual Studio 分析工具可讓您尋找並消除成本最高 （最慢執行） 專案的一部分，也稱為*最忙碌路徑*。
@@ -40,9 +40,9 @@ ms.locfileid: "57867702"
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
 
--   支援的 Microsoft Windows 和 SharePoint 版本。
+- 支援的 Microsoft Windows 和 SharePoint 版本。
 
--   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-sharepoint-project"></a>建立 SharePoint 專案
  首先，建立 SharePoint 專案。
@@ -72,13 +72,13 @@ ms.locfileid: "57867702"
 
 ### <a name="to-add-a-feature-and-feature-event-receiver"></a>若要加入功能和功能事件接收器
 
-1.  在**方案總管 中**，開啟捷徑功能表**功能**節點，選擇**新增功能**，並將名稱保留預設值， **Feature1**.
+1. 在**方案總管 中**，開啟捷徑功能表**功能**節點，選擇**新增功能**，並將名稱保留預設值， **Feature1**.
 
-2.  在 **方案總管 中**，開啟捷徑功能表**Feature1**，然後選擇 **加入事件接收器**。
+2. 在 **方案總管 中**，開啟捷徑功能表**Feature1**，然後選擇 **加入事件接收器**。
 
      這樣會將程式碼檔案加入至具有多個標記為註解之事件處理常式的功能，並開啟檔案進行編輯。
 
-3.  在事件接收器類別中，加入下列變數宣告。
+3. 在事件接收器類別中，加入下列變數宣告。
 
     ```vb
     ' SharePoint site/subsite.
@@ -92,7 +92,7 @@ ms.locfileid: "57867702"
     private string webUrl = "/";
     ```
 
-4.  使用下列程式碼取代 `FeatureActivated` 程序。
+4. 使用下列程式碼取代 `FeatureActivated` 程序。
 
     ```vb
     Public Overrides Sub FeatureActivated(properties As SPFeatureReceiverProperties)
@@ -151,7 +151,7 @@ ms.locfileid: "57867702"
     }
     ```
 
-5.  加入下列程序下方`FeatureActivated`程序。
+5. 加入下列程序下方`FeatureActivated`程序。
 
     ```vb
 
@@ -178,11 +178,11 @@ ms.locfileid: "57867702"
     }
     ```
 
-6.  在 [**方案總管] 中**，開啟專案的捷徑功能表 (**ProfileTest**)，然後選擇**屬性**。
+6. 在 [**方案總管] 中**，開啟專案的捷徑功能表 (**ProfileTest**)，然後選擇**屬性**。
 
-7.  在 [**屬性**對話方塊方塊中，選擇**SharePoint** ] 索引標籤。
+7. 在 [**屬性**對話方塊方塊中，選擇**SharePoint** ] 索引標籤。
 
-8.  在 **現用部署組態**清單中，選擇**無啟用**。
+8. 在 **現用部署組態**清單中，選擇**無啟用**。
 
      選取這個部署組態可讓您之後在 SharePoint 中手動啟用這個功能。
 
@@ -193,21 +193,21 @@ ms.locfileid: "57867702"
 
 ### <a name="to-configure-and-deploy-the-sharepoint-application"></a>若要設定和部署 SharePoint 應用程式
 
-1.  在 **分析**功能表上，選擇**啟動效能精靈**。
+1. 在 **分析**功能表上，選擇**啟動效能精靈**。
 
-2.  第一頁上**效能精靈**，將保留做為程式碼剖析方法**CPU 取樣**，然後選擇 **下一步**  按鈕。
+2. 第一頁上**效能精靈**，將保留做為程式碼剖析方法**CPU 取樣**，然後選擇 **下一步**  按鈕。
 
      其他程式碼剖析方法可在進階的程式碼剖析情況下使用。 如需詳細資訊，請參閱[了解效能收集方法](/visualstudio/profiling/understanding-performance-collection-methods)。
 
-3.  在頁面上的兩個**效能精靈**，保留其設定檔目標**ProfileTest** ，然後選擇 **下一步**  按鈕。
+3. 在頁面上的兩個**效能精靈**，保留其設定檔目標**ProfileTest** ，然後選擇 **下一步**  按鈕。
 
      如果方案中有多個專案，這些專案都會出現在這個清單中。
 
-4.  在頁面上的三種**效能精靈**，清除**啟用階層互動分析**核取方塊，，然後選擇**下一步**  按鈕。
+4. 在頁面上的三種**效能精靈**，清除**啟用階層互動分析**核取方塊，，然後選擇**下一步**  按鈕。
 
      [階層互動分析] (TIP) 功能對於測量查詢資料庫之應用程式的效能，以及顯示網頁的要求次數來說很有用。 不過，這個範例中不需要這項資料，因此我們將不會啟用這個功能。
 
-5.  在頁面上的四個**效能精靈**，保留**完成精靈後啟動分析**核取方塊選取，然後選擇 [**完成**] 按鈕。
+5. 在頁面上的四個**效能精靈**，保留**完成精靈後啟動分析**核取方塊選取，然後選擇 [**完成**] 按鈕。
 
      此精靈可讓您在伺服器上的應用程式程式碼剖析，會顯示**效能總管**  視窗中，然後建置、 部署和執行 SharePoint 應用程式。
 
@@ -216,19 +216,19 @@ ms.locfileid: "57867702"
 
 ### <a name="to-run-the-sharepoint-application"></a>若要執行 SharePoint 應用程式
 
-1.  在 SharePoint 中，開啟**網站動作**功能表，然後選擇**站台設定**。
+1. 在 SharePoint 中，開啟**網站動作**功能表，然後選擇**站台設定**。
 
-2.  在 **站台動作**清單中，選擇**管理網站功能**連結。
+2. 在 **站台動作**清單中，選擇**管理網站功能**連結。
 
-3.  在 **功能**清單中，選擇**Activate**旁**ProfileTest Feature1**。
+3. 在 **功能**清單中，選擇**Activate**旁**ProfileTest Feature1**。
 
      由於會在 `FeatureActivated` 函式中呼叫閒置迴圈，因此當您執行這項操作時會暫停。
 
-4.  在 **快速啟動**列上，選擇**列出**，然後在**列出**清單中，選擇**公告**。
+4. 在 **快速啟動**列上，選擇**列出**，然後在**列出**清單中，選擇**公告**。
 
      您會發現清單中已加入一項新公告，說明功能已啟動。
 
-5.  關閉 SharePoint 網站。
+5. 關閉 SharePoint 網站。
 
      關閉 SharePoint 之後，分析工具會建立和顯示樣本分析報告並將它儲存在以.vsp 檔形式**ProfileTest**專案的資料夾。
 
@@ -237,19 +237,19 @@ ms.locfileid: "57867702"
 
 ### <a name="to-view-and-interpret-the-profile-results"></a>若要檢視和解譯的設定檔結果
 
-1.  在 **執行最多個別工作的函式**一節的範例程式碼剖析報表，請注意，`TimeCounter`會靠近清單的頂端。
+1. 在 **執行最多個別工作的函式**一節的範例程式碼剖析報表，請注意，`TimeCounter`會靠近清單的頂端。
 
      這個位置指出 `TimeCounter` 是其中一個擁有最多樣本數目的函式，表示它是應用程式中最大的效能瓶頸之一。 不過，這種情形並不意外，因為它是為了方便示範而刻意設計成這樣。
 
-2.  在 **執行最多個別工作的函式**區段中，選擇`ProcessRequest`連結可顯示的成本分配`ProcessRequest`函式。
+2. 在 **執行最多個別工作的函式**區段中，選擇`ProcessRequest`連結可顯示的成本分配`ProcessRequest`函式。
 
      在 **呼叫的函式**一節`ProcessRequest`，請注意， **FeatureActiviated**函式會列出最耗費資源呼叫的函式。
 
-3.  在 [**呼叫的函式**區段中，選擇**FeatureActivated** ] 按鈕。
+3. 在 [**呼叫的函式**區段中，選擇**FeatureActivated** ] 按鈕。
 
      在 **呼叫的函式**一節**FeatureActivated**，`TimeCounter`函式會列出最耗費資源呼叫的函式。 在 **函式程式碼檢視**窗格中，反白顯示的程式碼 (`TimeCounter`) 是作用點，並指出需要更正的位置。
 
-4.  關閉樣本分析報告。
+4. 關閉樣本分析報告。
 
      若要隨時再次檢視報表，請開啟 [.vsp 檔案中的**效能總管]** 視窗。
 
@@ -258,17 +258,17 @@ ms.locfileid: "57867702"
 
 ### <a name="to-fix-the-code-and-reprofile-the-application"></a>若要修正程式碼並重新分析應用程式
 
-1.  在功能事件接收器程式碼中，將 `TimeCounter` 中的 `FeatureActivated` 方法呼叫標記為註解，以防止呼叫它。
+1. 在功能事件接收器程式碼中，將 `TimeCounter` 中的 `FeatureActivated` 方法呼叫標記為註解，以防止呼叫它。
 
-2.  儲存專案。
+2. 儲存專案。
 
-3.  在 **效能總管**，開啟 目標 資料夾，然後選擇**ProfileTest**節點。
+3. 在 **效能總管**，開啟 目標 資料夾，然後選擇**ProfileTest**節點。
 
-4.  在上**效能總管**工具列，請在**動作**索引標籤上，選擇 **啟動程式碼剖析** 按鈕。
+4. 在上**效能總管**工具列，請在**動作**索引標籤上，選擇 **啟動程式碼剖析** 按鈕。
 
      如果您想要變更任何程式碼剖析的屬性之前重新分析應用程式，請選擇**啟動效能精靈**按鈕。
 
-5.  請依照下列中的指示**執行 SharePoint 應用程式**區段中的，先前在本主題中。
+5. 請依照下列中的指示**執行 SharePoint 應用程式**區段中的，先前在本主題中。
 
      現在功能啟動的速度應該加快許多，因為已消除呼叫閒置迴圈。 樣本分析報告應該會反映這種情況。
 

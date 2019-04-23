@@ -16,12 +16,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87a9d344b6cad7d27979e73c73caf0dbf97f521d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6d4199b0f1daad60ea7fdcdf6405ae232a70d5b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779238"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082590"
 ---
 # <a name="replace-in-files"></a>檔案中取代
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "54779238"
   
 ### <a name="to-display-replace-in-files"></a>若要顯示檔案中取代  
   
-1.  在 [編輯] 功能表上，展開 [尋找和取代]。  
+1. 在 [編輯] 功能表上，展開 [尋找和取代]。  
   
-2.  選擇 [檔案中取代]。  
+2. 選擇 [檔案中取代]。  
   
      — 或 —  
   
@@ -90,7 +90,7 @@ ms.locfileid: "54779238"
 > [!CAUTION]
 >  只有在保持開啟可供編輯的檔案中，才可以使用 [復原]。 如果未選取這個選項，則未開啟以供編輯的檔案將會保持關閉狀態，其中也不會出現 [復原] 選項。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [尋找和取代文字](../ide/finding-and-replacing-text.md)   
  [檔案中尋找](../ide/find-in-files.md)   
  [Visual Studio 命令](../ide/reference/visual-studio-commands.md)

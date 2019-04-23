@@ -1,5 +1,5 @@
 ---
-title: 如何：使用交易儲存資料
+title: HOW TO：使用異動儲存資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d5d47cfc21b0aebef884fade422600be2beeb58
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: bf5864d25e78b6050da5c13097503b2998dda44a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924366"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080991"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>如何：使用交易儲存資料
+# <a name="how-to-save-data-by-using-a-transaction"></a>HOW TO：使用異動儲存資料
 
 將資料儲存在交易中的使用<xref:System.Transactions>命名空間。 使用<xref:System.Transactions.TransactionScope>參與的交易，會自動為您管理的物件。
 
@@ -37,15 +37,15 @@ ms.locfileid: "55924366"
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>若要新增參考 system.transactions.dll，才能
 
-1.  在 **專案**功能表上，選取**加入參考**。
+1. 在 **專案**功能表上，選取**加入參考**。
 
-2.  上 **.NET**  索引標籤 (**SQL Server** SQL Server 專案 索引標籤)，選取**System.Transactions**，然後選取**確定**。
+2. 上 **.NET**  索引標籤 (**SQL Server** SQL Server 專案 索引標籤)，選取**System.Transactions**，然後選取**確定**。
 
      參考*System.Transactions.dll*加入至專案。
 
 ## <a name="to-save-data-in-a-transaction"></a>若要將資料儲存在交易中
 
--   加入程式碼來儲存內使用的資料包含交易的陳述式。 下列程式碼示範如何建立和具現化<xref:System.Transactions.TransactionScope>物件中的 using 陳述式：
+- 加入程式碼來儲存內使用的資料包含交易的陳述式。 下列程式碼示範如何建立和具現化<xref:System.Transactions.TransactionScope>物件中的 using 陳述式：
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]

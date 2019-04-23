@@ -27,12 +27,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a284fc35a5a792171e5102518bcfa553337dd15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939693"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080733"
 ---
 # <a name="expressions-in-the-debugger"></a>偵錯工具中的運算式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> 使用偵錯工具內建函式維持狀態  
+### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> 使用偵錯工具內建函式維持狀態  
  偵錯工具內建函式可讓您呼叫運算式中的某些 C/C++ 函式，而不需要變更應用程式的狀態。  
   
  偵錯工具內建函式：  
@@ -118,15 +118,15 @@ int main()
   
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - 不支援的運算式  
   
--   不支援包含指標的轉換 (cast)，或使用者定義的轉換。  
+- 不支援包含指標的轉換 (cast)，或使用者定義的轉換。  
   
--   不支援物件比較和指派。  
+- 不支援物件比較和指派。  
   
--   不支援多載的運算子和多載函式。  
+- 不支援多載的運算子和多載函式。  
   
--   不支援 Boxing 和 unboxing。  
+- 不支援 Boxing 和 unboxing。  
   
--   不支援`Sizeof` 運算子。  
+- 不支援`Sizeof` 運算子。  
   
 ## <a name="c---unsupported-expressions"></a>C# - 不支援的運算式  
   
@@ -135,19 +135,19 @@ int main()
   
  以下是不支援的動態物件功能：  
   
--   複合運算子 `+=`、 `-=`、 `%=`、 `/=`和 `*=`  
+- 複合運算子 `+=`、 `-=`、 `%=`、 `/=`和 `*=`  
   
--   多種轉型，包括數值轉型和類型引數轉型  
+- 多種轉型，包括數值轉型和類型引數轉型  
   
--   具兩個以上引數的方法呼叫  
+- 具兩個以上引數的方法呼叫  
   
--   具有兩個以上引數的 getter 屬性  
+- 具有兩個以上引數的 getter 屬性  
   
--   具有引數的 setter 屬性  
+- 具有引數的 setter 屬性  
   
--   指派給索引子  
+- 指派給索引子  
   
--   布林運算子 `&&` 和 `||`  
+- 布林運算子 `&&` 和 `||`  
   
 ### <a name="anonymous-methods"></a>匿名方法  
  不支援建立新的匿名方法。  
@@ -159,19 +159,19 @@ int main()
   
  以下是不支援的動態物件功能：  
   
--   複合運算子 `+=`、 `-=`、 `%=`、 `/=`和 `*=`  
+- 複合運算子 `+=`、 `-=`、 `%=`、 `/=`和 `*=`  
   
--   多種轉型，包括數值轉型和類型引數轉型  
+- 多種轉型，包括數值轉型和類型引數轉型  
   
--   具兩個以上引數的方法呼叫  
+- 具兩個以上引數的方法呼叫  
   
--   具有兩個以上引數的 getter 屬性  
+- 具有兩個以上引數的 getter 屬性  
   
--   具有引數的 setter 屬性  
+- 具有引數的 setter 屬性  
   
--   指派給索引子  
+- 指派給索引子  
   
--   布林運算子 `&&` 和 `||`  
+- 布林運算子 `&&` 和 `||`  
   
 ### <a name="local-constants"></a>區域常數  
  不支援區域常數。  
@@ -184,35 +184,35 @@ int main()
   
 ### <a name="unsupported-keywords"></a>不支援的關鍵字  
   
--   `AddressOf`  
+- `AddressOf`  
   
--   `End`  
+- `End`  
   
--   `Error`  
+- `Error`  
   
--   `Exit`  
+- `Exit`  
   
--   `Goto`  
+- `Goto`  
   
--   `On Error`  
+- `On Error`  
   
--   `Resume`  
+- `Resume`  
   
--   `Return`  
+- `Return`  
   
--   `Select/Case`  
+- `Select/Case`  
   
--   `Stop`  
+- `Stop`  
   
--   `SyncLock`  
+- `SyncLock`  
   
--   `Throw`  
+- `Throw`  
   
--   `Try/Catch/Finally`  
+- `Try/Catch/Finally`  
   
--   `With`  
+- `With`  
   
--   命名空間或模組層級關鍵字，例如 `End Sub` 或 `Module`。  
+- 命名空間或模組層級關鍵字，例如 `End Sub` 或 `Module`。  
   
 ## <a name="see-also"></a>另請參閱  
  [C++ 中的格式規範](../debugger/format-specifiers-in-cpp.md)   

@@ -10,33 +10,33 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c80ee3cebe003eff7248626f0d8e27b3c179453
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 9ec010680a490d538b1cdbe6d3994f075adaf193
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323801"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083773"
 ---
 # <a name="language-service-and-editor-extension-points"></a>語言服務及編輯器擴充點
 編輯器會提供您可以擴充為 Managed Extensibility Framework (MEF) 元件組件，其中包括大部分的語言服務功能的擴充點。 這些是主要擴充點類別：
 
--   內容類型
+- 內容類型
 
--   分類類型及分類格式
+- 分類類型及分類格式
 
--   邊界和捲軸
+- 邊界和捲軸
 
--   Tags
+- Tags
 
--   裝飾
+- 裝飾
 
--   滑鼠處理器
+- 滑鼠處理器
 
--   拖放處理常式
+- 拖放處理常式
 
--   選項
+- 選項
 
--   IntelliSense
+- IntelliSense
 
 ## <a name="extend-content-types"></a>擴充內容的型別
  內容類型是一種文字編輯器，例如處理、 「 文字 」、 「 程式碼 」 或"CSharp"的定義。 您可以定義新的內容類型所宣告之型別的變數<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>並提供新的內容類型的唯一名稱。 若要註冊的內容類型的編輯器，請將它匯出以及下列屬性：
@@ -400,21 +400,21 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
 - <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>： 這個拖放處理常式是有效的文字格式。 依優先順序從最高到最低，會處理下列格式：
 
-  1.  任何自訂的格式
+  1. 任何自訂的格式
 
-  2.  FileDrop
+  2. FileDrop
 
-  3.  EnhancedMetafile
+  3. EnhancedMetafile
 
-  4.  WaveAudio
+  4. WaveAudio
 
-  5.  Riff
+  5. Riff
 
-  6.  差異
+  6. 差異
 
-  7.  地區設定
+  7. 地區設定
 
-  8.  調色盤
+  8. 調色盤
 
   9. PenData
 
@@ -498,39 +498,39 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 ### <a name="implement-an-intellisense-source"></a>實作 IntelliSense 的來源
  若要自訂來源，您必須實作其中一個 （或以上） 的下列來源介面：
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
 
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 已被取代的益處<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>。
 
  此外，您必須實作相同類型的提供者：
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
 
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 已被取代的益處<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>。
 
  您必須將匯出的提供者，以及下列屬性：
 
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 來源的名稱。
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 來源的名稱。
 
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 要套用的來源內容 （例如，"text"或"code"） 的類型。
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 要套用的來源內容 （例如，"text"或"code"） 的類型。
 
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 來源 （相對於其他來源） 應該出現的順序。
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 來源 （相對於其他來源） 應該出現的順序。
 
--   下列範例會顯示匯出屬性，完成來源提供者。
+- 下列範例會顯示匯出屬性，完成來源提供者。
 
 ```
 Export(typeof(ICompletionSourceProvider))]

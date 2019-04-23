@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 6cdbb5d092f431f628e76c7ab629d5ed70429cee
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 395e2a6233c1b6187d9089459cb8f267c4c3c904
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079904"
 ---
 # <a name="upgrade-mdf-files"></a>升級 .mdf 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,15 +54,15 @@ ms.locfileid: "59661499"
   
  您將資料庫升級之前，請考慮下列準則：  
   
--   如果您想要使用舊版和新版的 Visual Studio 中的專案，請不要升級。  
+- 如果您想要使用舊版和新版的 Visual Studio 中的專案，請不要升級。  
   
--   如果您的應用程式將用於在環境中使用 SQL Server Express 而非 LocalDB，請不要升級。  
+- 如果您的應用程式將用於在環境中使用 SQL Server Express 而非 LocalDB，請不要升級。  
   
--   請不要升級應用程式所使用的遠端連線，如果因為 LocalDB 不接受這些條款。  
+- 請不要升級應用程式所使用的遠端連線，如果因為 LocalDB 不接受這些條款。  
   
--   如果您的應用程式都需要網際網路資訊服務 (IIS) 上，不要升級。  
+- 如果您的應用程式都需要網際網路資訊服務 (IIS) 上，不要升級。  
   
--   如果您想要在沙箱環境中測試資料庫應用程式，但不想要管理資料庫，請考慮升級。  
+- 如果您想要在沙箱環境中測試資料庫應用程式，但不想要管理資料庫，請考慮升級。  
   
 ### <a name="to-upgrade-a-database-file"></a>若要升級的資料庫檔案  
   
@@ -70,17 +70,17 @@ ms.locfileid: "59661499"
   
 2. 在 **加入連接**對話方塊方塊中，指定下列資訊：  
   
-   -   **資料來源**：`Microsoft SQL Server (SqlClient)`  
+   - **資料來源**：`Microsoft SQL Server (SqlClient)`  
   
-   -   **伺服器名稱**：  
+   - **伺服器名稱**：  
   
-       -   若要使用的預設版本： `(localdb)\MSSQLLocalDB`。  這會指定 ProjectV12 或 ProjectV13，取決於已安裝的 Visual Studio 版本，並建立第一個的 LocalDB 執行個體時。 **MSSQLLocalDB**中的節點**SQL Server 物件總管**哪一個版本指向所示。  
+       - 若要使用的預設版本： `(localdb)\MSSQLLocalDB`。  這會指定 ProjectV12 或 ProjectV13，取決於已安裝的 Visual Studio 版本，並建立第一個的 LocalDB 執行個體時。 **MSSQLLocalDB**中的節點**SQL Server 物件總管**哪一個版本指向所示。  
   
-       -   若要使用特定版本：`(localdb)\ProjectsV12`或`(localdb)\ProjectsV13`，其中 V12 是 LocalDB 2014 而 V13 是 LocalDB 2016。  
+       - 若要使用特定版本：`(localdb)\ProjectsV12`或`(localdb)\ProjectsV13`，其中 V12 是 LocalDB 2014 而 V13 是 LocalDB 2016。  
   
-   -   **附加資料庫檔案**:主要.mdf 檔案的實體路徑。  
+   - **附加資料庫檔案**:主要.mdf 檔案的實體路徑。  
   
-   -   **邏輯名稱**:您想要使用的檔案名稱。  
+   - **邏輯名稱**:您想要使用的檔案名稱。  
   
 3. 選取 [確定] 按鈕。  
   
@@ -102,11 +102,11 @@ ms.locfileid: "59661499"
   
 ### <a name="to-work-with-the-database-in-visual-studio-but-retain-compatibility-with-sql-server-express"></a>若要使用 Visual Studio 中的資料庫，但保留與 SQL Server Express 的相容性  
   
--   在 Visual Studio 中，開啟專案，而不將它升級。  
+- 在 Visual Studio 中，開啟專案，而不將它升級。  
   
-    -   若要執行專案時，選取 F5 鍵。  
+    - 若要執行專案時，選取 F5 鍵。  
   
-    -   若要編輯資料庫，開啟 .mdf 檔案的**方案總管 中**，並展開中的節點**伺服器總管**才能使用您的資料庫。  
+    - 若要編輯資料庫，開啟 .mdf 檔案的**方案總管 中**，並展開中的節點**伺服器總管**才能使用您的資料庫。  
   
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>若要讓 SQL Server Express 的預設資料庫引擎  
   

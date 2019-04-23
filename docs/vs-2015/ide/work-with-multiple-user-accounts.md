@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d269cdb4fe84820174ded9c477fc3c9f917b0b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d4f53d723ca9249386027264038df6c5895b7d03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802638"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081225"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54802638"
   
 #### <a name="sign-in-to-visual-studio"></a>登入 Visual Studio  
   
-1.  以 Microsoft 帳戶或組織帳戶登入 Visual Studio 2015。 您應該會看到您的使用者名稱反映在視窗右上角，如下所示：  
+1. 以 Microsoft 帳戶或組織帳戶登入 Visual Studio 2015。 您應該會看到您的使用者名稱反映在視窗右上角，如下所示：  
   
      ![目前登入的使用者](../ide/media/vs2015-username.png "VS2015_UserName")  
   
@@ -44,14 +44,14 @@ ms.locfileid: "54802638"
   
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>透過加入已連接服務對話方塊存取您的 Azure 帳戶  
   
-1.  以 C# 建立通用應用程式專案。  
+1. 以 C# 建立通用應用程式專案。  
   
-2.  在[方案總管] 中，用滑鼠右鍵按一下專案節點，並選擇 [新增] > [連線服務]。 [加入已連接服務精靈] 隨即出現，並顯示與 Visual Studio 登入識別碼相關聯之 Azure 帳戶中的服務清單。 請注意，您不需要分別登入 Azure。 但當您在指定的電腦上第一次嘗試存取其他帳戶的資源時，就必須登入這些帳戶。  
+2. 在[方案總管] 中，用滑鼠右鍵按一下專案節點，並選擇 [新增] > [連線服務]。 [加入已連接服務精靈] 隨即出現，並顯示與 Visual Studio 登入識別碼相關聯之 Azure 帳戶中的服務清單。 請注意，您不需要分別登入 Azure。 但當您在指定的電腦上第一次嘗試存取其他帳戶的資源時，就必須登入這些帳戶。  
   
     > [!WARNING]
-    >  如果這是您第一次在特定電腦上於 Visual Studio 2015 中建立市集應用程式，系統會提示您前往電腦上的 [設定] **|更新與安全性&#124;適用於開發人員**在您的電腦上。 如需詳細資訊，請參閱[啟用您的裝置以用於開發](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx)。  
+    >  如果這是您第一次您要 Visual Studio 2015 中建立市集應用程式特定的電腦上，您將會提示您啟用裝置的開發模式移至**設定&#124;。更新與安全性&#124;適用於開發人員**在您的電腦上。 如需詳細資訊，請參閱[啟用您的裝置以用於開發](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx)。  
   
-###  <a name="access_azure"></a> 在 Web 專案中存取 Azure Active Directory  
+### <a name="access_azure"></a> 在 Web 專案中存取 Azure Active Directory  
  Azure AD 可支援在 ASP.NET MVC Web 應用程式中進行使用者單一登入，或是在 Web API 服務中進行 AD 驗證。 網域驗證與個別使用者帳戶驗證不同；擁有您 Active Directory 網域存取權的使用者，可以使用其現有的 Azure AD 帳戶，連接到您的 Web 應用程式。 Office 365 應用程式也可以使用網域驗證。 若要查看此作業如何進行，請建立 Web 應用程式 ([檔案] > [新增專案] > [C#] > [雲端] > [ASP.NET Web 應用程式])。 然後在 [ASP.NET 新專案] 對話方塊中，選擇 [變更驗證] 。 隨即會出現驗證精靈，供您選擇要在應用程式中使用何種驗證。  
   
  ![ASP.NET 的 [變更驗證] 對話方塊](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")  

@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7aade658b3fbc70c244e99a6537746bdd4f3c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b8c2bc30814af9cdc6181d08b313df20146f855e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943612"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080945"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>HOW TO：加入用戶端電腦中的受信任的發行者，ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,21 +39,21 @@ ms.locfileid: "58943612"
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-the-trusted-root"></a>將憑證新增至受信任根下的受信任發行者存放區  
   
-1.  從 CA 取得數位憑證。  
+1. 從 CA 取得數位憑證。  
   
-2.  將憑證匯出成 Base64 X.509 (.cer) 格式。 如需憑證格式的詳細資訊，請參閱 [匯出憑證](http://go.microsoft.com/fwlink/?LinkId=164793)。  
+2. 將憑證匯出成 Base64 X.509 (.cer) 格式。 如需憑證格式的詳細資訊，請參閱 [匯出憑證](http://go.microsoft.com/fwlink/?LinkId=164793)。  
   
-3.  從用戶端電腦的命令提示字元中，執行下列命令：  
+3. 從用戶端電腦的命令提示字元中，執行下列命令：  
   
      **certmgr.exe -add certificate.cer -c -s -r localMachine TrustedPublisher**  
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-a-different-root"></a>將憑證新增至不同根下的受信任發行者存放區  
   
-1.  從 CA 取得數位憑證。  
+1. 從 CA 取得數位憑證。  
   
-2.  將憑證匯出成 Base64 X.509 (.cer) 格式。 如需憑證格式的詳細資訊，請參閱 [匯出憑證](http://go.microsoft.com/fwlink/?LinkId=164793)。  
+2. 將憑證匯出成 Base64 X.509 (.cer) 格式。 如需憑證格式的詳細資訊，請參閱 [匯出憑證](http://go.microsoft.com/fwlink/?LinkId=164793)。  
   
-3.  從用戶端電腦的命令提示字元中，執行下列命令：  
+3. 從用戶端電腦的命令提示字元中，執行下列命令：  
   
      **certmgr.exe -add good.cer -c -s -r localMachine Root**  
   

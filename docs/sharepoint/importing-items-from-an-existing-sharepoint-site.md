@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a3fa4013a5fa9b3fb6ec17ee07277f5e4b7d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645143"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082577"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>從現有的 SharePoint 網站匯入項目
   匯入 SharePoint 方案套件專案範本可讓您在新的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 方案中，重複使用來自現有 SharePoint 網站的項目，例如內容類型和欄位。 雖然您可以執行大部分匯入的方案而不需修改，仍有特定限制和問題需要考量，特別是您在匯入後修改任何項目的話。
@@ -119,9 +119,9 @@ ms.locfileid: "56645143"
 
  當您收到這個錯誤時，不會建立項目。 匯入的模組最常發生此問題。 若要避免這個問題，請執行下列作業：
 
--   當您在 **[加入新的專案]** 對話方塊輸入時，請使用專案的簡短名稱。
+- 當您在 **[加入新的專案]** 對話方塊輸入時，請使用專案的簡短名稱。
 
--   建立專案時，位置盡可能接近根資料夾，以縮短路徑。
+- 建立專案時，位置盡可能接近根資料夾，以縮短路徑。
 
 ## <a name="the-sharepointproductversion-attribute"></a>SharePointProductVersion 屬性
  如果您匯入在舊版 SharePoint 例如 [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] 或 [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]中建立的方案，請將封裝資訊清單中的 SharePointProductVersion 屬性值變更為 12.0，或是將指令碼管理員控制項插入所有匯入的網頁中，並保留 SharePointProductVersion 設為 14.0。 否則，匯入的 Web 表單不會顯示在 SharePoint 中。

@@ -1,5 +1,5 @@
 ---
-title: 逐步解說︰使用 WPF 和 Entity Framework 建立 WCF 資料服務
+title: 逐步解說：使用 WPF 和 Entity Framework 建立 WCF 資料服務
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d9e41de9fc395b673f38fa1f7b343594bf905a8d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MTE95
+ms.openlocfilehash: 726d0f7e4254f4d9d4210d4b64627cd97c98a430
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223165"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081381"
 ---
-# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>逐步解說︰使用 WPF 和 Entity Framework 建立 WCF 資料服務
+# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>逐步解說：使用 WPF 和 Entity Framework 建立 WCF 資料服務
 在本逐步解說中，會示範如何建立裝載於 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的簡單 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，並從 Windows Forms 應用程式存取此服務。
 
 在本逐步解說您：
@@ -90,11 +90,11 @@ ms.locfileid: "57223165"
 
 5. 在 [ **選擇資料連接** ] 頁面上，執行下列其中一個步驟：
 
-    -   如果下拉式清單中有提供 Northwind 範例資料庫的資料連接，請選擇這個資料連接。
+    - 如果下拉式清單中有提供 Northwind 範例資料庫的資料連接，請選擇這個資料連接。
 
          -或-
 
-    -   選擇 [新增連線] 按鈕，設定新的資料連線。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
+    - 選擇 [新增連線] 按鈕，設定新的資料連線。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
 
 6. 如果資料庫需要密碼，請選擇 [是，在連接字串中包含敏感性資料] 選項按鈕，然後選擇 [下一步] 按鈕。
 
@@ -154,7 +154,7 @@ ms.locfileid: "57223165"
 
 1. 在功能表列上選擇 [檔案]**新增** > **新專案**。
 
-2. 中**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#**  ] 節點，選擇**Windows**節點，然後選擇 [**Windows Forms 應用程式**。
+2. 中**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#**  節點，選擇**Windows**  節點，然後選擇  **Windows Forms 應用程式**。
 
 3. 在 [名稱] 文字方塊中，輸入 `NorthwindClient`，然後選擇 [確定] 按鈕。
 

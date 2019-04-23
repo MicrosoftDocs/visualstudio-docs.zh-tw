@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 850670e9d7994b754839c4fb0b1a8ccd07be5b24
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646417"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082031"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>HOW TO：將控制項標記為安全控制項
   為了安全性，SharePoint 會區別指令碼資料隱碼攻擊時受到保護的 Web 控制項和 Web 控制項不是。 受保護的控制項，或是*安全控制項*，可以由不受信任的使用者存取。 您可以將標記為安全的 SharePoint 專案項目，或在 安全控制項項目屬性中的控制項**封裝設計工具**將組件加入封裝。 如需詳細資訊，請參閱
@@ -33,47 +33,47 @@ ms.locfileid: "56646417"
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>若要將控制項標示為 safe 或 unsafe 安全控制項項目屬性
 
-1.  建立 SharePoint 解決方案與視覺 Web 組件專案。
+1. 建立 SharePoint 解決方案與視覺 Web 組件專案。
 
-2.  將兩個控制項新增至網頁組件： 文字方塊和按鈕。 分別在其預設值，TextBox1 與 Button1，保留這些名稱。
+2. 將兩個控制項新增至網頁組件： 文字方塊和按鈕。 分別在其預設值，TextBox1 與 Button1，保留這些名稱。
 
-3.  將兩個項目新增至 Web 組件的**安全控制項項目**屬性。 若要這樣做，請選擇省略符號 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")) 按鈕旁**安全控制項項目**中的屬性**屬性**視窗。
+3. 將兩個項目新增至 Web 組件的**安全控制項項目**屬性。 若要這樣做，請選擇省略符號 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")) 按鈕旁**安全控制項項目**中的屬性**屬性**視窗。
 
      **安全控制項項目** 對話方塊隨即出現。
 
-4.  在**安全控制項項目**對話方塊方塊中，選擇**新增**按鈕兩次，兩個安全控制項項目新增至**成員**窗格： 其中一個按鈕和一個文字方塊。
+4. 在**安全控制項項目**對話方塊方塊中，選擇**新增**按鈕兩次，兩個安全控制項項目新增至**成員**窗格： 其中一個按鈕和一個文字方塊。
 
-5.  選擇第一個安全控制項項目，然後變更 值及其**安全**屬性設**False**、 其**型別名稱**屬性設**Button1**，並將其**防止指令碼**屬性設**False**。
+5. 選擇第一個安全控制項項目，然後變更 值及其**安全**屬性設**False**、 其**型別名稱**屬性設**Button1**，並將其**防止指令碼**屬性設**False**。
 
      此步驟中識別為不安全的控制項的按鈕控制項。
 
-6.  選擇清單中的第二個安全控制項項目。 保留值其**安全**屬性設為 **，則為 True**並設定其**型別名稱**屬性設**TextBox1**及其**安全針對指令碼**屬性，以 **，則為 True**。
+6. 選擇清單中的第二個安全控制項項目。 保留值其**安全**屬性設為 **，則為 True**並設定其**型別名稱**屬性設**TextBox1**及其**安全針對指令碼**屬性，以 **，則為 True**。
 
      文字方塊控制項現在會標示為安全對指令碼資料隱碼攻擊的控制項。
 
-7.  選擇 [確定] 按鈕以關閉對話方塊。
+7. 選擇 [確定] 按鈕以關閉對話方塊。
 
 ## <a name="marking-safe-controls-in-the-package-designer"></a>將標記在封裝設計工具中的安全控制項
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>若要將標記控制為 safe 或 unsafe 在封裝設計工具
 
-1.  建立 SharePoint 解決方案與視覺 Web 組件專案。
+1. 建立 SharePoint 解決方案與視覺 Web 組件專案。
 
-2.  將兩個控制項新增至網頁組件： 文字方塊和按鈕。 分別在其預設值，TextBox1 與 Button1，保留這些名稱。
+2. 將兩個控制項新增至網頁組件： 文字方塊和按鈕。 分別在其預設值，TextBox1 與 Button1，保留這些名稱。
 
      記下此控制項的命名空間以便稍後使用。
 
-3.  在功能表列上選擇 **建置** > **建置方案**來建置專案。
+3. 在功能表列上選擇 **建置** > **建置方案**來建置專案。
 
-4.  建立另一個 SharePoint 方案。
+4. 建立另一個 SharePoint 方案。
 
-5.  在 **方案總管 中**，開啟捷徑功能表*封裝*檔案，然後再選擇 **開啟**以開啟**封裝設計工具**.
+5. 在 **方案總管 中**，開啟捷徑功能表*封裝*檔案，然後再選擇 **開啟**以開啟**封裝設計工具**.
 
-6.  在 [ **Package Designer**，選擇**進階**] 索引標籤。
+6. 在 [ **Package Designer**，選擇**進階**] 索引標籤。
 
-7.  底下**其他組件**，選擇**新增**按鈕，然後再選擇**加入現有組件**從清單中。
+7. 底下**其他組件**，選擇**新增**按鈕，然後再選擇**加入現有組件**從清單中。
 
-8.  在 **加入現有組件**對話方塊方塊中，選擇省略符號 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")) 按鈕旁**來源路徑**。
+8. 在 **加入現有組件**對話方塊方塊中，選擇省略符號 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile 設計工具橢圓形")) 按鈕旁**來源路徑**。
 
 9. 選擇從您在步驟 1 中建立 SharePoint 方案的組件，然後選擇**開啟** 按鈕。
 

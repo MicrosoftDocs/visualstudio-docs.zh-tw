@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a256a13d1840d2bf5f26635c5e572dce30434ae
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655006"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082798"
 ---
 # <a name="walkthrough-using-msbuild"></a>逐步解說：使用 MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
   
 #### <a name="to-create-a-project-file"></a>建立專案檔  
   
-1.  開啟 Visual Studio。  
+1. 開啟 Visual Studio。  
   
-2.  在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
+2. 在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
   
-3.  在 [新增專案] 對話方塊中，選取 Visual C# 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱] 方塊中，輸入 `BuildApp`。 輸入方案的**位置**，例如 `D:\`。 接受 [為方案建立目錄]\(已選取)、[加入至原始檔控制]\(未選取) 及 [方案名稱] \(`BuildApp`) 的預設值。  
+3. 在 [新增專案] 對話方塊中，選取 Visual C# 專案類型，然後選取 [Windows Forms 應用程式] 範本。 在 [名稱] 方塊中，輸入 `BuildApp`。 輸入方案的**位置**，例如 `D:\`。 接受 [為方案建立目錄]\(已選取)、[加入至原始檔控制]\(未選取) 及 [方案名稱] \(`BuildApp`) 的預設值。  
   
      按一下 [確定] 以建立專案檔。  
   
@@ -49,13 +49,13 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
   
 #### <a name="to-examine-the-project-file"></a>檢查專案檔  
   
-1.  在 [方案總管] 中，按一下專案節點 BuildApp。  
+1. 在 [方案總管] 中，按一下專案節點 BuildApp。  
   
-2.  在 [屬性] 瀏覽器中，請注意 [專案檔] 屬性為 BuildApp.csproj。 所有專案檔都會以 "proj" 的後置詞來命名。 如果您已建立 Visual Basic 專案，則專案檔名稱會是 BuildApp.vbproj。  
+2. 在 [屬性] 瀏覽器中，請注意 [專案檔] 屬性為 BuildApp.csproj。 所有專案檔都會以 "proj" 的後置詞來命名。 如果您已建立 Visual Basic 專案，則專案檔名稱會是 BuildApp.vbproj。  
   
-3.  以滑鼠右鍵按一下專案節點，然後按一下 [卸載專案]。  
+3. 以滑鼠右鍵按一下專案節點，然後按一下 [卸載專案]。  
   
-4.  再次以滑鼠右鍵按一下專案節點，然後按一下 [編輯 BuildApp.csproj]。  
+4. 再次以滑鼠右鍵按一下專案節點，然後按一下 [編輯 BuildApp.csproj]。  
   
      該專案檔隨即出現在程式碼編輯器中。  
   
@@ -136,17 +136,17 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
   
 #### <a name="to-build-the-target"></a>建置目標  
   
-1.  按一下 [開始]，然後按一下 [所有程式]。 在 [Visual Studio Tools] 資料夾中，找出並按一下 [Visual Studio 命令提示字元]。  
+1. 按一下 [開始]，然後按一下 [所有程式]。 在 [Visual Studio Tools] 資料夾中，找出並按一下 [Visual Studio 命令提示字元]。  
   
-2.  從命令視窗，瀏覽至包含專案檔的資料夾，在此案例中為 D:\BuildApp\BuildApp。  
+2. 從命令視窗，瀏覽至包含專案檔的資料夾，在此案例中為 D:\BuildApp\BuildApp。  
   
-3.  使用命令參數 /t:HelloWorld 來執行 msbuild。 這會選取並建置 HelloWorld 目標：  
+3. 使用命令參數 /t:HelloWorld 來執行 msbuild。 這會選取並建置 HelloWorld 目標：  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  檢查 [命令視窗] 中的輸出。 您應該會看到 "Hello" 和 "World" 這兩行：  
+4. 檢查 [命令視窗] 中的輸出。 您應該會看到 "Hello" 和 "World" 這兩行：  
   
     ```  
     Hello  
@@ -202,7 +202,7 @@ $(PropertyName)
   
 #### <a name="to-examine-a-property-value"></a>檢查屬性值  
   
-1.  從程式碼編輯器，使用此程式碼來取代 HelloWorld 目標：  
+1. 從程式碼編輯器，使用此程式碼來取代 HelloWorld 目標：  
   
     ```  
     <Target Name="HelloWorld">  
@@ -211,15 +211,15 @@ $(PropertyName)
     </Target>  
     ```  
   
-2.  儲存專案檔。  
+2. 儲存專案檔。  
   
-3.  從 [命令視窗]，輸入並執行這一行：  
+3. 從 [命令視窗]，輸入並執行這一行：  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  檢查輸出結果， 您應該會看到這兩行 (您的 .NET Framework 版本可能不一樣)：  
+4. 檢查輸出結果， 您應該會看到這兩行 (您的 .NET Framework 版本可能不一樣)：  
   
     ```  
     Configuration is Debug  
@@ -366,19 +366,19 @@ $(PropertyName)
   
 #### <a name="to-display-item-type-values-one-per-line"></a>每行顯示一個項目類型值  
   
-1.  從程式碼編輯器，使用下列這一行來取代 Message 工作：  
+1. 從程式碼編輯器，使用下列這一行來取代 Message 工作：  
   
     ```  
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />  
     ```  
   
-2.  儲存專案檔。  
+2. 儲存專案檔。  
   
-3.  從 [命令視窗]，輸入並執行這一行：  
+3. 從 [命令視窗]，輸入並執行這一行：  
   
      `msbuild buildapp.csproj /t:HelloWorld`  
   
-4.  檢查輸出結果， 您應該會看到下列這幾行：  
+4. 檢查輸出結果， 您應該會看到下列這幾行：  
   
     ```  
     Compile item type contains Form1.cs  
@@ -436,13 +436,13 @@ $(PropertyName)
   
 ##### <a name="to-include-and-exclude-items"></a>包含與排除項目  
   
-1.  從程式碼編輯器，使用下列這一行來取代 Message 工作：  
+1. 從程式碼編輯器，使用下列這一行來取代 Message 工作：  
   
     ```  
     <Message Text="Compile item type contains @(XFiles)" />  
     ```  
   
-2.  加入這個項目 (Item) 群組，緊接在 Import 項目 (Element) 之後：  
+2. 加入這個項目 (Item) 群組，緊接在 Import 項目 (Element) 之後：  
   
     ```  
     <ItemGroup>  
@@ -450,15 +450,15 @@ $(PropertyName)
     </ItemGroup>  
     ```  
   
-3.  儲存專案檔。  
+3. 儲存專案檔。  
   
-4.  從 [命令視窗]，輸入並執行這一行：  
+4. 從 [命令視窗]，輸入並執行這一行：  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-5.  檢查輸出結果， 您應該會看到下列這一行：  
+5. 檢查輸出結果， 您應該會看到下列這一行：  
   
     ```  
     Compile item type contains Form1.cs;Program.cs;Properties/Resources.resx  

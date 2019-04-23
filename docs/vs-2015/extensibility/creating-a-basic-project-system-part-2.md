@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930669"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079600"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>建立基本的專案系統，第 2 部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "58930669"
   
  本逐步解說將說明如何完成這些工作：  
   
--   建立 Visual Studio 範本。  
+- 建立 Visual Studio 範本。  
   
--   部署 Visual Studio 範本。  
+- 部署 Visual Studio 範本。  
   
--   建立中的專案類型子節點**新的專案** 對話方塊。  
+- 建立中的專案類型子節點**新的專案** 對話方塊。  
   
--   啟用 Visual Studio 範本中的參數替代。  
+- 啟用 Visual Studio 範本中的參數替代。  
   
--   建立在專案屬性頁。  
+- 建立在專案屬性頁。  
   
 > [!NOTE]
 >  在本逐步解說的步驟是以 C# 專案為基礎。 不過，除了例如副檔名的檔案和程式碼的詳細資訊，您可以使用相同的步驟針對 Visual Basic 專案。  
@@ -120,9 +120,9 @@ ms.locfileid: "58930669"
 ## <a name="adding-a-minimal-vsct-file"></a>將最小.vsct 檔案  
  Visual Studio 必須以辨識新的或修改 Visual Studio 範本的安裝模式執行。 安裝模式需要.vsct 檔必須存在。 因此，您必須將最小.vsct 檔加入專案。  
   
-1.  加入名為 SimpleProject.vsct SimpleProject 專案的 XML 檔。  
+1. 加入名為 SimpleProject.vsct SimpleProject 專案的 XML 檔。  
   
-2.  SimpleProject.vsct 檔案的內容取代為下列程式碼。  
+2. SimpleProject.vsct 檔案的內容取代為下列程式碼。  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -131,25 +131,25 @@ ms.locfileid: "58930669"
     </CommandTable>  
     ```  
   
-3.  設定**建置動作**的這個檔案來**VSCTCompile**。 您可以只在.csproj 檔案中，無法顯示於**屬性**視窗。 請確定**建置動作**這個檔案設定為**無**此時。  
+3. 設定**建置動作**的這個檔案來**VSCTCompile**。 您可以只在.csproj 檔案中，無法顯示於**屬性**視窗。 請確定**建置動作**這個檔案設定為**無**此時。  
   
-    1.  以滑鼠右鍵按一下 [SimpleProject] 節點，然後按一下**編輯 SimpleProject.csproj**。  
+    1. 以滑鼠右鍵按一下 [SimpleProject] 節點，然後按一下**編輯 SimpleProject.csproj**。  
   
-    2.  在.csproj 檔案中，找出 SimpleProject.vsct 項目。  
+    2. 在.csproj 檔案中，找出 SimpleProject.vsct 項目。  
   
         ```  
         <None Include="SimpleProject.vsct" />  
         ```  
   
-    3.  變更 建置動作設為**VSCTCompile**。  
+    3. 變更 建置動作設為**VSCTCompile**。  
   
         ```  
         <VSCTCompile Include="SimpleProject.vsct" />  
         ```  
   
-    4.  專案檔案並關閉編輯器。  
+    4. 專案檔案並關閉編輯器。  
   
-    5.  儲存 SimpleProject] 節點，然後在**方案總管**按一下 [**重新載入專案**。  
+    5. 儲存 SimpleProject] 節點，然後在**方案總管**按一下 [**重新載入專案**。  
   
 ## <a name="examining-the-visual-studio-template-build-steps"></a>檢查 Visual Studio 範本建置步驟  
  .Vstemplate 檔案已變更，或重建包含.vstemplate 檔案的專案時，VSPackage 專案建置系統會將 Visual Studio 通常執行安裝模式。 您可以照著藉由設定 MSBuild 的詳細資訊層級設為 Normal 或更高版本。  
@@ -158,7 +158,7 @@ ms.locfileid: "58930669"
   
 2. 依序展開**專案和方案**節點，，然後選取**建置並執行**。  
   
-3. 設定**MSBuild 專案建置輸出詳細等級**要**Normal**。 按一下 [確定 **Deploying Office Solutions**]。  
+3. 設定**MSBuild 專案建置輸出詳細等級**要**Normal**。 按一下 [確定] 。  
   
 4. 重建 SimpleProject 專案。  
   
@@ -209,11 +209,11 @@ ZipProjects:
   
  本節說明如何建立主控台 SimpleProject 專案類型的子節點。  
   
-1.  將 \Templates\Projects\SimpleProject\ 資料夾重新命名 \Templates\Projects\ConsoleApp\\。  
+1. 將 \Templates\Projects\SimpleProject\ 資料夾重新命名 \Templates\Projects\ConsoleApp\\。  
   
-2.  在 [**屬性**] 視窗中，選取 \Templates\Projects\ConsoleApp\ 資料夾中的所有五個檔案，並確定**建置動作**設定為**ZipProject**。  
+2. 在 [**屬性**] 視窗中，選取 \Templates\Projects\ConsoleApp\ 資料夾中的所有五個檔案，並確定**建置動作**設定為**ZipProject**。  
   
-3.  在 SimpleProject.vstemplate 檔案中加入下面這一行的結尾\<TemplateData > 區段中的，將結尾標記之前。  
+3. 在 SimpleProject.vstemplate 檔案中加入下面這一行的結尾\<TemplateData > 區段中的，將結尾標記之前。  
   
     ```  
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
@@ -221,11 +221,11 @@ ZipProjects:
   
      這會導致出現在 [主控台] 子節點和 SimpleProject 父節點，也就是子節點上的一層中的主控台應用程式範本。  
   
-4.  儲存 SimpleProject.vstemplate 檔案。  
+4. 儲存 SimpleProject.vstemplate 檔案。  
   
-5.  在.csproj 檔案中，新增\<OutputSubPath > 每個 ZipProject 項目。 卸載專案，與之前，並編輯專案檔。  
+5. 在.csproj 檔案中，新增\<OutputSubPath > 每個 ZipProject 項目。 卸載專案，與之前，並編輯專案檔。  
   
-6.  找出\<ZipProject > 項目。 每個\<ZipProject > 項目，新增\<OutputSubPath > 項目並為它提供主控台的值。 ZipProject  
+6. 找出\<ZipProject > 項目。 每個\<ZipProject > 項目，新增\<OutputSubPath > 項目並為它提供主控台的值。 ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -245,7 +245,7 @@ ZipProjects:
         </ZipProject>  
     ```  
   
-7.  將此新增\<PropertyGroup > 專案檔：  
+7. 將此新增\<PropertyGroup > 專案檔：  
   
     ```  
     <PropertyGroup>  
@@ -253,7 +253,7 @@ ZipProjects:
     </PropertyGroup>  
     ```  
   
-8.  儲存專案檔，並重新載入專案。  
+8. 儲存專案檔，並重新載入專案。  
   
 ## <a name="testing-the-project-type-child-node"></a>測試專案類型的子節點  
  測試修改過的專案檔案，以查看是否**主控台**子節點會出現在**新的專案** 對話方塊。  
@@ -285,15 +285,15 @@ ZipProjects:
   
 #### <a name="to-substitute-project-template-parameters"></a>若要替代專案範本的參數  
   
-1.  在 SimpleProjectNode.cs 檔案中，移除`AddFileFromTemplate`方法。  
+1. 在 SimpleProjectNode.cs 檔案中，移除`AddFileFromTemplate`方法。  
   
-2.  在 \Templates\Projects\ConsoleApp\SimpleProject.myproj 檔案中，找出\<RootNamespace > 屬性並將其值變更為 $safeprojectname$。  
+2. 在 \Templates\Projects\ConsoleApp\SimpleProject.myproj 檔案中，找出\<RootNamespace > 屬性並將其值變更為 $safeprojectname$。  
   
     ```  
     <RootNamespace>$safeprojectname$</RootNamespace>  
     ```  
   
-3.  在 \Templates\Projects\SimpleProject\Program.cs 檔案中，取代下列程式碼檔案的內容：  
+3. 在 \Templates\Projects\SimpleProject\Program.cs 檔案中，取代下列程式碼檔案的內容：  
   
     ```  
     using System;  
@@ -315,11 +315,11 @@ ZipProjects:
     }  
     ```  
   
-4.  重建 SimpleProject 專案並開始偵錯。 實驗執行個體應該會出現。  
+4. 重建 SimpleProject 專案並開始偵錯。 實驗執行個體應該會出現。  
   
-5.  建立新的 SimpleProject 主控台應用程式。 (在**專案類型**窗格中，選取**SimpleProject**。 底下**Visual Studio 安裝的範本**，選取**主控台應用程式**。)  
+5. 建立新的 SimpleProject 主控台應用程式。 (在**專案類型**窗格中，選取**SimpleProject**。 底下**Visual Studio 安裝的範本**，選取**主控台應用程式**。)  
   
-6.  在新建的專案中，開啟 Program.cs。 看起來應該如下所示 （在檔案中的 GUID 值會不同）。:  
+6. 在新建的專案中，開啟 Program.cs。 看起來應該如下所示 （在檔案中的 GUID 值會不同）。:  
   
     ```  
     using System;  
@@ -348,11 +348,11 @@ ZipProjects:
   
  您在這一節中建立屬性頁可讓您變更並儲存這些專案屬性：  
   
--   AssemblyName  
+- AssemblyName  
   
--   OutputType  
+- OutputType  
   
--   RootNamespace。  
+- RootNamespace。  
   
 1. 在 SimpleProjectPackage.cs 檔案中，新增這`ProvideObject`屬性設定為`SimpleProjectPackage`類別：  
   

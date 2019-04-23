@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 253f86f83805d11d7a1a6475fcbaf4eb76bfbc50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873664"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081238"
 ---
 # <a name="analyze-and-model-your-architecture"></a>分析架構並製作架構模型
 
@@ -69,39 +69,39 @@ Code Map 可協助您查看程式碼中的組織和關聯性。
 
 **一般用法：**
 
--   檢查程式碼，以便進一步了解其結構和其相依性，了解如何更新，並評估提議的變更之成本。
+- 檢查程式碼，以便進一步了解其結構和其相依性，了解如何更新，並評估提議的變更之成本。
 
 **請參閱：**
 
--   [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)
--   [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)
--   [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)
+- [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)
+- [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ### <a name="dependency-diagram"></a>相依性圖表
 相依性圖表可讓您定義為一組圖層或區塊有明確的相依性的應用程式的結構。 您可以執行驗證，以探索程式碼中的相依性和相依性圖表上所述的相依性之間的衝突。
 
 **一般用法：**
 
--   在應用程式存留期間，透過多次變更來穩固其結構。
--   在簽入變更到程式碼之前，探索意外的相依性衝突。
+- 在應用程式存留期間，透過多次變更來穩固其結構。
+- 在簽入變更到程式碼之前，探索意外的相依性衝突。
 
 **請參閱：**
 
--   [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)
--   [相依性圖表中：參考](../modeling/layer-diagrams-reference.md)
--   [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)
+- [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)
+- [相依性圖表中：參考](../modeling/layer-diagrams-reference.md)
+- [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>特定領域語言 (DSL)
 DSL 是您為特定目的所設計的標記法。 在 Visual Studio 中，通常會以圖形表示。
 
 **一般用法：**
 
--   產生或設定應用程式的組件。 開發標記法和工具必須進行一些工作。 此結果會比自訂 UML 更適用您的定義域。
--   用於大型專案或產品線，其中在開發 DSL 及其工具方面的投資，可因這個模型用於多個專案而回收。
+- 產生或設定應用程式的組件。 開發標記法和工具必須進行一些工作。 此結果會比自訂 UML 更適用您的定義域。
+- 用於大型專案或產品線，其中在開發 DSL 及其工具方面的投資，可因這個模型用於多個專案而回收。
 
 **請參閱：**
 
--   [Modeling SDK for Visual Studio - 特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
+- [Modeling SDK for Visual Studio - 特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
 ## <a name="where-can-i-get-more-information"></a>哪裡可以取得詳細資訊？
 

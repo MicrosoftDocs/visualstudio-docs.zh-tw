@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee35a42ea28295869fe05bf6cd1d2c49f12cc39b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 660f1fd1d67490bde327533f9d030c7deba9f819
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791406"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084917"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：將專案設定成以平台為目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,16 +39,16 @@ ms.locfileid: "54791406"
   
 2. 在 [使用中的方案平台] 清單中，選擇 64 位元平台作為方案的目標，然後選擇 [關閉] 按鈕。  
   
-   1.  如果您想要的平台未出現在 [使用中的方案平台] 清單中，請選擇 [新增]。  
+   1. 如果您想要的平台未出現在 [使用中的方案平台] 清單中，請選擇 [新增]。  
   
         [新增方案平台] 對話方塊隨即出現。  
   
-   2.  在 [輸入或選取新平台] 清單中選擇 [x64]。  
+   2. 在 [輸入或選取新平台] 清單中選擇 [x64]。  
   
        > [!NOTE]
        >  如果您將組態改為新的名稱，則必須在 [專案設計工具] 中修改設定，才能以正確的平台為目標。  
   
-   3.  如果您想要從目前的平台組態複製設定，請選擇所需項目，然後選擇 [確定] 按鈕。  
+   3. 如果您想要從目前的平台組態複製設定，請選擇所需項目，然後選擇 [確定] 按鈕。  
   
    以 64 位元平台為目標的所有專案的屬性會進行更新，而專案的下一個組建會針對 64 位元平台進行最佳化。  
   
@@ -57,11 +57,11 @@ ms.locfileid: "54791406"
   
  根據您所使用的程式設計語言而定，此工作的執行會有所不同。 請參閱下列連結以取得詳細資訊：  
   
--   若是 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案，請參閱 [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1)。  
+- 若是 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案，請參閱 [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1)。  
   
--   若是 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 專案，請參閱[專案設計工具、建置頁 (C#)](../ide/reference/build-page-project-designer-csharp.md)。  
+- 若是 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 專案，請參閱[專案設計工具、建置頁 (C#)](../ide/reference/build-page-project-designer-csharp.md)。  
   
--   若是 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 專案，請參閱 [/clr (Common Language Runtime 編譯)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)。  
+- 若是 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 專案，請參閱 [/clr (Common Language Runtime 編譯)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)。  
   
 ## <a name="see-also"></a>請參閱  
  [了解組建平台](../ide/understanding-build-platforms.md)   

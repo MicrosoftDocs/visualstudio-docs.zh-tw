@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67a35b8987cc9f4f06cc93df2462a4dee326d7e7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 66110f6544bc19476bb4ecdfd6929fb4e26f0b52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664014"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082430"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>選項對話方塊、專案和方案、VC++ 專案設定
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ ms.locfileid: "59664014"
   
 ### <a name="to-access-this-dialog-box"></a>若要存取此對話方塊  
   
-1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。  
+1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。  
   
-2.  選取 [專案和方案]，然後選取 [VC++ 專案設定]。  
+2. 選取 [專案和方案]，然後選取 [VC++ 專案設定]。  
   
 ## <a name="build-customization-search-path"></a>建置自訂搜尋路徑  
  指定包含 .rules 檔案的目錄清單，以協助您定義專案的建置規則。  

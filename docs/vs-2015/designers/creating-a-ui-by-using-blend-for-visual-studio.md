@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80c8d385e0c78461df5b7938d356ec43a481e46e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 8fe6377de1be51ac0fc48904687b60ed8bbc95b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670416"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082954"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>使用 Blend for Visual Studio 建立 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ Blend for Visual Studio 可協助您設計 XAML 型的 Windows 桌面、Web、[W
 
  **本主題內容**：
 
--   [[工具] 面板導覽](#Tools)
+- [[工具] 面板導覽](#Tools)
 
--   [[資產] 面板導覽](#Assets)
+- [[資產] 面板導覽](#Assets)
 
--   [[物件與時間軸] 面板導覽](#Objects)
+- [[物件與時間軸] 面板導覽](#Objects)
 
--   [[屬性] 面板導覽](#Properties)
+- [[屬性] 面板導覽](#Properties)
 
-##  <a name="Tools"></a>[工具] 面板導覽
+## <a name="Tools"></a>[工具] 面板導覽
  您可以使用 Blend for Visual Studio 中的 [工具] 面板來建立及修改應用程式中的物件。 您可以選取工具，然後使用滑鼠在畫板上繪製以建立物件。
 
  ![[工具] 面板](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
@@ -56,7 +56,7 @@ Blend for Visual Studio 可協助您設計 XAML 型的 Windows 桌面、Web、[W
 
  **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [工具列](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)。
 
-##  <a name="Assets"></a>[資產] 面板導覽
+## <a name="Assets"></a>[資產] 面板導覽
  您可以在 [資產] 面板中找到所有控制項，這個面板類似 Visual Studio 中的 [工具箱]。 除了控制項之外，您還會在 [資產] 面板中找到可加入畫板的所有項目，包括樣式、媒體、行為和效果。
 
  ![[資產] 面板](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
@@ -69,7 +69,7 @@ Blend for Visual Studio 可協助您設計 XAML 型的 Windows 桌面、Web、[W
 |![](../designers/media/b1-4.png "B1_4")|**樣式**：顯示資源字典中所包含的所有樣式。|
 |![](../designers/media/b1-5.png "B1_5")|**描述**：檢視所選的資產分類或子分類的描述。|
 
-##  <a name="Objects"></a>[物件與時間軸] 面板導覽
+## <a name="Objects"></a>[物件與時間軸] 面板導覽
  使用這個面板可依所需在畫板上組織物件以製作動畫。
 
  ![動畫模式中的 [物件與時間軸] 面板](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
@@ -93,7 +93,7 @@ Blend for Visual Studio 可協助您設計 XAML 型的 Windows 桌面、Web、[W
 |![](../designers/media/b1-15.png "B1_15")|**時間軸縮放**：設定時間軸的縮放解析度。 放大可讓您更詳細地編輯動畫，而縮小則可顯示更長時間內所發生的概況詳情。 如果放大後無法在所要的時間點上設定主要畫面格，請驗證貼齊解析度是否設定得夠高。|
 |![圖說文字 16](../designers/media/b5-label-16.png "b5_label_16")|**時間軸組合區域**：檢視時間軸，並拖曳主要畫面格或使用其捷徑功能表以使其來回移動。|
 
-##  <a name="Properties"></a>[屬性] 面板導覽
+## <a name="Properties"></a>[屬性] 面板導覽
  使用此面板可檢視和修改物件的屬性。 您也可以直接在畫板上設定屬性。 如果這麼做，屬性變更將反映在 [屬性] 面板中。
 
  ![[屬性] 面板](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")

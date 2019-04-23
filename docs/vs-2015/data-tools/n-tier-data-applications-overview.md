@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 532781a2e816120dabfe2bec61059955cd0c82a6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082174"
 ---
 # <a name="n-tier-data-applications-overview"></a>多層式架構資料應用程式概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ N-層 * 資料應用程式是指分隔成多個資料應用程式*層*。 也稱
   
  Visual Studio 包含數個功能，可協助開發人員建立多層式架構應用程式：  
   
--   DataSet 設計工具提供**資料集 Project**屬性，可讓您區隔資料集 （資料實體層） 和`TableAdapter`s （資料存取層） 分成離散專案。  
+- DataSet 設計工具提供**資料集 Project**屬性，可讓您區隔資料集 （資料實體層） 和`TableAdapter`s （資料存取層） 分成離散專案。  
   
--   [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供用來產生不同的命名空間的 DataContext 和資料類別設定。 這可讓資料存取與資料實體層的邏輯分隔。  
+- [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供用來產生不同的命名空間的 DataContext 和資料類別設定。 這可讓資料存取與資料實體層的邏輯分隔。  
   
--   [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供<xref:System.Data.Linq.Table%601.Attach%2A>方法可讓您將應用程式中的不同層級的結合在一起的 DataContext。 如需詳細資訊，請參閱 <<c0> [ 多層式架構和遠端的應用程式使用 LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)。  
+- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供<xref:System.Data.Linq.Table%601.Attach%2A>方法可讓您將應用程式中的不同層級的結合在一起的 DataContext。 如需詳細資訊，請參閱 <<c0> [ 多層式架構和遠端的應用程式使用 LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)。  
   
 ## <a name="presentation-tier"></a>展示層  
  *展示層*是使用者與應用程式的互動的層。 它通常會包含其他的應用程式邏輯也。 典型的展示層元件包括下列各項：  
@@ -57,11 +57,11 @@ N-層 * 資料應用程式是指分隔成多個資料應用程式*層*。 也稱
   
 - 資料存取元件和邏輯，如下所示：  
   
-  -   [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)並[Dataadapter 和 Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。  
+  - [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)並[Dataadapter 和 Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。  
   
-  -   物件表示的資料，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)實體類別。  
+  - 物件表示的資料，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)實體類別。  
   
-  -   一般應用程式服務，例如驗證、 授權和個人化。  
+  - 一般應用程式服務，例如驗證、 授權和個人化。  
   
   下圖顯示功能和技術，可在 Visual Studio 中，和他們可能適用於什麼情況的多層式架構應用程式的中介層。  
   

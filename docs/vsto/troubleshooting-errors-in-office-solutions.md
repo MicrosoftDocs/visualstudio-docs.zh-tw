@@ -20,27 +20,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d805333bd8a2cce43340e61573b082dfdff7db0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cdfa5724b25a551a65318fea3ebcaf52d7f397ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084568"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>針對 Office 方案中的錯誤進行疑難排解
   當您使用 Visual Studio 開發 Office 方案時，如果於過程中執行下列工作，則可能會遇到一些問題：
 
--   [建立、 升級和開啟專案](#creating)
+- [建立、 升級和開啟專案](#creating)
 
--   [使用設計工具](#designers)
+- [使用設計工具](#designers)
 
--   [撰寫程式碼](#code)
+- [撰寫程式碼](#code)
 
--   [建置專案](#building)
+- [建置專案](#building)
 
--   [偵錯專案](#debugging)
+- [偵錯專案](#debugging)
 
-##  <a name="creating"></a> 建立、 升級和開啟專案
+## <a name="creating"></a> 建立、 升級和開啟專案
  當您建立或開啟 Office 專案時，可能會遇到下列錯誤。
 
 ### <a name="the-project-cannot-be-created"></a>無法建立專案
@@ -60,13 +60,13 @@ ms.locfileid: "56610903"
 
  當您嘗試建立的專案是以已使用 [文件檢查] 移除其個人資訊的活頁簿為基礎時，可能會發生這些錯誤。 若要避免這個錯誤，請在建立專案前先執行下列步驟。
 
-1.  在 Excel 中開啟該活頁簿。
+1. 在 Excel 中開啟該活頁簿。
 
-2.  在 Excel 中開啟 [信任中心]。
+2. 在 Excel 中開啟 [信任中心]。
 
-3.  在上**隱私權選項**索引標籤上清除**存檔從檔案屬性中的移除個人資訊**核取方塊。
+3. 在上**隱私權選項**索引標籤上清除**存檔從檔案屬性中的移除個人資訊**核取方塊。
 
-4.  儲存活頁簿並關閉 Excel。
+4. 儲存活頁簿並關閉 Excel。
 
 ### <a name="cannot-open-a-project-after-migration"></a>無法開啟專案，在移轉之後
  Office 方案移轉至 Microsoft Office 2010 之後，無法在只安裝 2007 Microsoft Office system 的開發電腦上開啟專案。 您可能會看到下列錯誤。
@@ -84,17 +84,17 @@ ms.locfileid: "56610903"
 
  完成專案升級後，可以解除安裝開發電腦中的 Visual Studio 2005 Tools for Office Second Edition Runtime (如果沒有其他 Office 方案正在使用它)。
 
-##  <a name="designers"></a> 使用設計工具
+## <a name="designers"></a> 使用設計工具
  當您在文件層級專案中使用文件、活頁簿或工作表設計工具時，可能會遇到下列錯誤。
 
 ### <a name="designer-failed-to-load-correctly"></a>無法正確載入設計工具
  在下列情況下，Visual Studio 無法開啟設計工具：
 
--   Excel 或 Word 已開啟並且正在顯示強制回應對話方塊。 若要開啟設計工具，請查看 Excel 或 Word 是否開啟強制回應對話方塊，並且關閉任何開啟的強制回應對話方塊。 如果沒有開啟任何強制回應對話方塊，則可能需要執行其他動作，Excel 或 Word 才會回應。
+- Excel 或 Word 已開啟並且正在顯示強制回應對話方塊。 若要開啟設計工具，請查看 Excel 或 Word 是否開啟強制回應對話方塊，並且關閉任何開啟的強制回應對話方塊。 如果沒有開啟任何強制回應對話方塊，則可能需要執行其他動作，Excel 或 Word 才會回應。
 
--   專案目前正在偵錯。 若要開啟設計工具，請停止或完成偵錯。
+- 專案目前正在偵錯。 若要開啟設計工具，請停止或完成偵錯。
 
--   Excel 啟動時，開發電腦上安裝的 Excel VSTO 增益集正在顯示對話方塊。 若要建立 Excel 文件層級專案，您必須先停用 VSTO 增益集。
+- Excel 啟動時，開發電腦上安裝的 Excel VSTO 增益集正在顯示對話方塊。 若要建立 Excel 文件層級專案，您必須先停用 VSTO 增益集。
 
 ### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>控制項顯示為文件或工作表上的黑色矩形
  如果您將文件或工作表上的控制項設為群組，Visual Studio 就不再能夠辨認此控制項。 無法在存取群組的控制項**屬性**視窗，而它們會顯示為黑色矩形文件或工作表上。 您必須將這些控制項取消群組才能還原其功能。
@@ -105,10 +105,10 @@ ms.locfileid: "56610903"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>插入美工圖案命令沒有任何作用中 Visual Studio 設計工具
  在 Visual Studio 設計工具中開啟 Excel 或 Word 時，按一下**美工圖案**按鈕**圖例**功能區中的索引標籤不會開啟**美工圖案**工作窗格。 若要加入美工圖案，您必須開啟活頁簿或文件中的主要專案資料夾的複本 (不是在複本*\bin*資料夾) 以外 Visual Studio 中，加入美工圖案，，然後將儲存的活頁簿或文件。
 
-##  <a name="code"></a> 撰寫程式碼
+## <a name="code"></a> 撰寫程式碼
  當您在 Office 專案中撰寫程式碼時，可能會遇到下列錯誤。
 
-### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>使用 C# 時，不能存取 Office 物件的某些事件
+### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>使用 C 時，不能存取 Office 物件的某些事件\#
  在某些情況下，當您嘗試在 Visual C# 專案中存取某個 Office 主要 Interop 組件 (PIA) 類型執行個體的特定事件時，可能會看到編譯器錯誤。
 
  "Ambiguity between 'Microsoft.Office.Interop.Excel._Application.NewWorkbook' 和 'Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook'"
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  即使您已匯入 Word 或 Excel 命名空間，而且有其內的所有類別的存取權，您必須完整限定使用 Word 或 Excel，以移除命名空間模稜兩可的所有型別。
 
-##  <a name="building"></a> 建置專案
+## <a name="building"></a> 建置專案
  當您建置 Office 專案時，可能會遇到下列錯誤。
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>無法建立含有受限制的權限的文件為基礎的文件層級專案
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>在刪除 NamedRange 控制項之後，就會發生編譯器錯誤
  如果您從工作表刪除 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項，而該工作表並非設計工具的現用工作表，則自動產生的程式碼可能不會從專案中移除，而且可能會發生編譯器錯誤。 為了確定將移式碼移除，請務必選取包含 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項的工作表，在刪除控制項之前讓它成為現用工作表。 如果刪除控制項時沒有刪除自動產生的程式碼，您可以啟動工作表並進行變更，讓系統將該工作表標示為已修改，從而讓設計工具刪除該程式碼。 當您重建此專案時，便會移除程式碼。
 
-##  <a name="debugging"></a> 偵錯專案
+## <a name="debugging"></a> 偵錯專案
  當您偵錯 Office 專案時，可能會遇到下列錯誤。
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>當您發行，並在開發電腦上安裝解決方案時，會出現提示，若要解除安裝
