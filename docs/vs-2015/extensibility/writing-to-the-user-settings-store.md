@@ -8,12 +8,12 @@ ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 14438e23e73e6c69ecfe94ee7ada379b0d2fad15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5d48535bf8e2eb0c5204be0b06701b54cc6e365b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943122"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058170"
 ---
 # <a name="writing-to-the-user-settings-store"></a>寫入使用者設定存放區
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,30 +22,30 @@ ms.locfileid: "58943122"
   
 ### <a name="backing-up-your-user-settings"></a>備份您的使用者設定  
   
-1.  您必須能夠重設的外部工具設定，以便您可以偵錯，並重複此程序。 若要這樣做，您必須儲存原始設定，以便您可以視需要進行還原。  
+1. 您必須能夠重設的外部工具設定，以便您可以偵錯，並重複此程序。 若要這樣做，您必須儲存原始設定，以便您可以視需要進行還原。  
   
-2.  開啟 Regedit.exe。  
+2. 開啟 Regedit.exe。  
   
-3.  瀏覽至 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External 工具\\。  
+3. 瀏覽至 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External 工具\\。  
   
     > [!NOTE]
     >  請確定您正在查看該索引鍵包含 \14.0Exp\ 和不 \14.0\\。 當您執行 Visual Studio 的實驗執行個體時，您的使用者設定是在登錄區 「 14.0Exp"。  
   
-4.  \External Tools\ 子機碼，以滑鼠右鍵按一下，然後按一下**匯出**。 請確定**選取分支**已選取。  
+4. \External Tools\ 子機碼，以滑鼠右鍵按一下，然後按一下**匯出**。 請確定**選取分支**已選取。  
   
-5.  儲存產生的外部 Tools.reg 檔案。  
+5. 儲存產生的外部 Tools.reg 檔案。  
   
-6.  稍後，當您想要重設外部工具設定，選取 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ 登錄機碼，然後按一下**刪除**的操作功能表上。  
+6. 稍後，當您想要重設外部工具設定，選取 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ 登錄機碼，然後按一下**刪除**的操作功能表上。  
   
-7.  當**確認機碼刪除** 對話方塊出現時，按一下**是**。  
+7. 當**確認機碼刪除** 對話方塊出現時，按一下**是**。  
   
-8.  以滑鼠右鍵按一下您稍早儲存的外部 Tools.reg 檔案中，按一下**以開啟**，然後按一下**登錄編輯程式**。  
+8. 以滑鼠右鍵按一下您稍早儲存的外部 Tools.reg 檔案中，按一下**以開啟**，然後按一下**登錄編輯程式**。  
   
 ## <a name="writing-to-the-user-settings-store"></a>寫入使用者設定存放區  
   
-1.  建立名為 UserSettingsStoreExtension VSIX 專案，然後新增名為 UserSettingsStoreCommand 的自訂命令。 如需如何建立自訂命令的詳細資訊，請參閱[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1. 建立名為 UserSettingsStoreExtension VSIX 專案，然後新增名為 UserSettingsStoreCommand 的自訂命令。 如需如何建立自訂命令的詳細資訊，請參閱[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-2.  在 UserSettingsStoreCommand.cs，新增下列 using 陳述式：  
+2. 在 UserSettingsStoreCommand.cs，新增下列 using 陳述式：  
   
     ```csharp  
     using System.Collections.Generic;  
@@ -53,7 +53,7 @@ ms.locfileid: "58943122"
     using Microsoft.VisualStudio.Shell.Settings;  
     ```  
   
-3.  在 MenuItemCallback，刪除方法的主體和取得的使用者設定儲存，，如下所示：  
+3. 在 MenuItemCallback，刪除方法的主體和取得的使用者設定儲存，，如下所示：  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -63,7 +63,7 @@ ms.locfileid: "58943122"
     }  
     ```  
   
-4.  現在找出 「 記事本 」 是否已設為 外部工具。 您必須逐一查看所有外部的工具，來判斷是否 ToolCmd 設定"Notepad"，如下所示：  
+4. 現在找出 「 記事本 」 是否已設為 外部工具。 您必須逐一查看所有外部的工具，來判斷是否 ToolCmd 設定"Notepad"，如下所示：  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -87,7 +87,7 @@ ms.locfileid: "58943122"
   
     ```  
   
-5.  如果尚未設定為 外部工具 記事本，請依下列方式設定：  
+5. 如果尚未設定為 外部工具 記事本，請依下列方式設定：  
   
     ```vb  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -123,10 +123,10 @@ ms.locfileid: "58943122"
     }  
     ```  
   
-6.  測試程式碼。 請記住它做為外部工具，將 [記事本]，所以您必須回復登錄第二次執行之前。  
+6. 測試程式碼。 請記住它做為外部工具，將 [記事本]，所以您必須回復登錄第二次執行之前。  
   
-7.  建置程式碼，並開始偵錯。  
+7. 建置程式碼，並開始偵錯。  
   
-8.  在 **工具**功能表上，按一下**叫用 UserSettingsStoreCommand**。 這會新增 [記事本] 來**工具**功能表。  
+8. 在 **工具**功能表上，按一下**叫用 UserSettingsStoreCommand**。 這會新增 [記事本] 來**工具**功能表。  
   
 9. 現在您應該會看到 [記事本] 在 [工具] / [選項] 功能表，然後按一下**記事本**應該會顯示在 [記事本] 的執行個體。

@@ -21,12 +21,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 55ccb6ffd319f725fade42a6e8490f0b0dc22b0f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ece89b3e05e775b5aea50be3643653b258667935
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055102"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>HOW TO：對內嵌組譯碼進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ ms.locfileid: "58940599"
   
 #### <a name="to-debug-inline-assembly-code"></a>若要偵錯內嵌組譯程式碼  
   
-1.  使用 [反組譯碼] 視窗檢視組譯碼指令。  
+1. 使用 [反組譯碼] 視窗檢視組譯碼指令。  
   
-2.  使用 [暫存器] 視窗檢視暫存器內容。  
+2. 使用 [暫存器] 視窗檢視暫存器內容。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   

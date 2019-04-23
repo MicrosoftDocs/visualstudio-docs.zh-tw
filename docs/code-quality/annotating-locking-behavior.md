@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6590a07ec7fc67bef5f1b1cfd96e80105fa325ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653004"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053725"
 ---
 # <a name="annotating-locking-behavior"></a>註釋鎖定行為
 為了避免多執行緒程式中發生並行 Bug，請務必遵循適當的鎖定規範並使用 SAL 註釋。
@@ -55,11 +55,11 @@ ms.locfileid: "59653004"
 
  請記住一些執行緒擁有權規則：
 
--   微調鎖定是擁有清楚執行緒擁有權的不可計數鎖定。
+- 微調鎖定是擁有清楚執行緒擁有權的不可計數鎖定。
 
--   Mutex 和關鍵區段是擁有清楚執行緒擁有權的計數鎖定。
+- Mutex 和關鍵區段是擁有清楚執行緒擁有權的計數鎖定。
 
--   信號和事件是未擁有清楚執行緒擁有權的計數鎖定。
+- 信號和事件是未擁有清楚執行緒擁有權的計數鎖定。
 
 ## <a name="locking-annotations"></a>鎖定的註解
  下表列出的鎖定的註解。

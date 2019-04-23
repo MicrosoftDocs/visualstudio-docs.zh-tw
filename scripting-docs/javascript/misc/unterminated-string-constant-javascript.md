@@ -14,12 +14,12 @@ ms.assetid: 5083809e-9828-4aea-b9b0-80f46d6f3812
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8706ef277822db68fc069db32c7779545f5e261d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 23d8f922d169cf9f52b46ac052edd6bef863a65b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057351"
 ---
 # <a name="unterminated-string-constant-javascript"></a>未結束的字串常數 (JavaScript)
 您並未結束字串常數，與為右雙引號。 字串常數必須使用一組括住。  
@@ -29,7 +29,7 @@ ms.locfileid: "56840996"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   加入字串結尾的右引號。  
+- 加入字串結尾的右引號。  
   
 ## <a name="see-also"></a>另請參閱  
  [字串物件](../../javascript/reference/string-object-javascript.md)   

@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f65760d8203ad01e9bab7987435691a8d5acf4b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab88824055b890fcc65424d692dd12500d021712
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945146"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056478"
 ---
 # <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>錯誤： 相依性&#39;檔案&#39;專案中&#39;專案&#39;無法複製至執行目錄中，因為它會和相依性衝突&#39;檔案&#39;
 參考之間發生衝突；正在將多個同名的相異相依性複製到 bin 目錄，以執行應用程式。 由於沒有相依性是主要參考，因此執行目錄無法解決衝突。  
@@ -27,11 +27,11 @@ ms.locfileid: "58945146"
   
  **若要更正這個錯誤**  
   
--   將其中一個組件設為專案的直接參考。 這個方法的可能缺點是，不保證您選擇的組件可以搭配需要其他版本參考組件的組件使用。  
+- 將其中一個組件設為專案的直接參考。 這個方法的可能缺點是，不保證您選擇的組件可以搭配需要其他版本參考組件的組件使用。  
   
      \-或-  
   
--   確定組件的兩個複本都是以強式名稱的方式命名，並且位於全域組件快取中。 如此一來便不需要將組件複製到 bin 目錄。  
+- 確定組件的兩個複本都是以強式名稱的方式命名，並且位於全域組件快取中。 如此一來便不需要將組件複製到 bin 目錄。  
   
 ## <a name="see-also"></a>另請參閱  
  [管理專案中的參考](../ide/managing-references-in-a-project.md)   

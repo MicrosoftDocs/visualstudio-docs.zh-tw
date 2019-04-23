@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057156"
 ---
 # <a name="in-source-suppression-overview"></a>原始檔中隱藏項目概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58944666"
  您不應該使用在原始程式檔的隱藏項目上的發行組建，以避免不小心傳送來源在隱藏項目中繼資料。 在原始程式檔隱藏項目處理成本，因為您的應用程式的效能也會降低包含在原始程式檔隱藏項目中繼資料。  
   
 > [!NOTE]
->  您沒有交給程式碼這些屬性自行。 如需詳細資訊，請參閱[如何：使用功能表項目隱藏警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。 找不到適用於 c + + 程式碼的功能表項目。  
+>  您沒有交給程式碼這些屬性自行。 如需詳細資訊，請參閱[如何：使用功能表項目隱藏警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。 功能表項目不是適用於C++程式碼。  
   
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 屬性  
  當您以滑鼠右鍵按一下中的程式碼分析警告**錯誤清單**，然後按一下 **隱藏訊息**，則**SuppressMessage**屬性會加入您的程式碼或為專案的全域隱藏項目檔案。  
@@ -54,27 +54,27 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
  其中：  
   
--   **規則類別**-規則定義所在的類別。 如需程式碼分析規則類別的詳細資訊，請參閱[程式碼分析 Managed 程式碼警告](../code-quality/code-analysis-for-managed-code-warnings.md)。  
+- **規則類別**-規則定義所在的類別。 如需程式碼分析規則類別的詳細資訊，請參閱[程式碼分析 Managed 程式碼警告](../code-quality/code-analysis-for-managed-code-warnings.md)。  
   
--   **規則 Id** -規則的識別碼。 支援包括同時短期和長期的規則識別項的名稱。 簡短名稱是 CAXXXX;CAXXXX:FriendlyTypeName 長的名稱。  
+- **規則 Id** -規則的識別碼。 支援包括同時短期和長期的規則識別項的名稱。 簡短名稱是 CAXXXX;CAXXXX:FriendlyTypeName 長的名稱。  
   
--   **理由**-用來記錄原因隱藏訊息的文字。  
+- **理由**-用來記錄原因隱藏訊息的文字。  
   
--   **訊息識別碼**-每個訊息發生問題的唯一識別碼。  
+- **訊息識別碼**-每個訊息發生問題的唯一識別碼。  
   
--   **範圍**-在其要隱藏警告的目標。 如果未指定目標，則會將它設定為屬性的目標。 支援的範圍包括下列各項：  
+- **範圍**-在其要隱藏警告的目標。 如果未指定目標，則會將它設定為屬性的目標。 支援的範圍包括下列各項：  
   
-    -   Module  
+    - Module  
   
-    -   命名空間  
+    - 命名空間  
   
-    -   資源  
+    - 資源  
   
-    -   類型  
+    - 類型  
   
-    -   成員  
+    - 成員  
   
--   **目標**-識別項，用來指定在其要隱藏警告的目標。 它必須包含完整項目名稱。  
+- **目標**-識別項，用來指定在其要隱藏警告的目標。 它必須包含完整項目名稱。  
   
 ## <a name="suppressmessage-usage"></a>SuppressMessage 使用量  
  程式碼分析警告會隱藏的層級的執行個體**SuppressMessage**屬性會套用。 的目的是緊密結合的程式碼的隱藏項目資訊發生違規的位置。  

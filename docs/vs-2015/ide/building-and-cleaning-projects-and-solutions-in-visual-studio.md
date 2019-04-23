@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba3a7c26f56b923b9286a5e2f290502f2765e2b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0183e17da3eacad4fbcb3eed256396ab68249099
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753189"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054543"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中建置和清除專案與方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,28 +40,28 @@ ms.locfileid: "54753189"
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>建置、重建或清除整個方案
 
-1.  在方案總管中，選擇或開啟方案。
+1. 在方案總管中，選擇或開啟方案。
 
-2.  在功能表列上選擇 [建置]，然後選擇下列其中一個命令︰
+2. 在功能表列上選擇 [建置]，然後選擇下列其中一個命令︰
 
-    -   選擇 [建置] 或 [建置方案]，只編譯自從最近建置後已變更的那些專案檔案和元件。
+    - 選擇 [建置] 或 [建置方案]，只編譯自從最近建置後已變更的那些專案檔案和元件。
 
         > [!NOTE]
         >  當方案包含多個專案時，[建置] 命令會變成 [建置方案]。
 
-    -   選擇 [重建方案] 以「清除」方案，然後建置所有專案檔和元件。
+    - 選擇 [重建方案] 以「清除」方案，然後建置所有專案檔和元件。
 
-    -   選擇 [清除方案] 以刪除任何中繼和輸出檔。 只留下專案和元件檔案，即可建立新的中繼檔和輸出檔執行個體。
+    - 選擇 [清除方案] 以刪除任何中繼和輸出檔。 只留下專案和元件檔案，即可建立新的中繼檔和輸出檔執行個體。
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>建立或重建單一專案
 
-1.  在方案總管中，選擇或開啟專案。
+1. 在方案總管中，選擇或開啟專案。
 
-2.  在功能表列上選擇 [建置]，然後選擇 [建置 _ProjectName_] 或 [重建 _ProjectName_]。
+2. 在功能表列上選擇 [建置]，然後選擇 [建置 _ProjectName_] 或 [重建 _ProjectName_]。
 
-    -   選擇 [建置 _ProjectName_ ]，只編譯自從最近建置後已變更的那些專案元件。
+    - 選擇 [建置 _ProjectName_ ]，只編譯自從最近建置後已變更的那些專案元件。
 
-    -   選擇 [重建 _ProjectName_] 以「清除」專案，然後建置專案檔和所有專案元件。
+    - 選擇 [重建 _ProjectName_] 以「清除」專案，然後建置專案檔和所有專案元件。
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>僅建置啟始專案和其相依性
 
@@ -97,17 +97,17 @@ ms.locfileid: "54753189"
 
 ## <a name="to-compile-multiple-c-project-items"></a>編譯多個 C++ 專案項目
 
-1.  在方案總管中，選擇具有可編譯動作的多個檔案、開啟這些檔案之一的捷徑功能表，然後選擇 [編譯]。
+1. 在方案總管中，選擇具有可編譯動作的多個檔案、開啟這些檔案之一的捷徑功能表，然後選擇 [編譯]。
 
      如果檔案具有相依性，就會將檔案依照相依性順序編譯。 如果檔案需要先行編譯標頭檔，但在您進行編譯時無法使用，則編譯作業會失敗。 編譯作業會使用目前的作用中方案組態。
 
 ## <a name="to-stop-a-build"></a>停止建置
 
-1.  執行下列任一步驟：
+1. 執行下列任一步驟：
 
-    -   在功能表列上，選擇 [建置]、[取消]。
+    - 在功能表列上，選擇 [建置]、[取消]。
 
-    -   選擇 Ctrl + Break 鍵。
+    - 選擇 Ctrl + Break 鍵。
 
 ## <a name="see-also"></a>另請參閱
- [如何：檢視、 儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)[編譯和建置](../ide/compiling-and-building-in-visual-studio.md)[了解組建組態](../ide/understanding-build-configurations.md) [偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/c + + 建置參考](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)[方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
+ [如何：檢視、 儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)[編譯和建置](../ide/compiling-and-building-in-visual-studio.md)[了解組建組態](../ide/understanding-build-configurations.md) [偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++建置參考](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)[方案和專案](../ide/solutions-and-projects-in-visual-studio.md)

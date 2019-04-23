@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ad2f63bdbbad7d4427454e69806b06937b259b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941913"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053880"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>逐步解說：擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,18 +23,18 @@ ms.locfileid: "58941913"
   
  本逐步解說將說明下列工作：  
   
--   將圖形診斷連結至您的應用程式  
+- 將圖形診斷連結至您的應用程式  
   
--   擷取圖形資訊  
+- 擷取圖形資訊  
   
 ## <a name="capturing-graphics-information"></a>擷取圖形資訊  
  若要使用圖形診斷工具，您需要先擷取它所依賴的圖形資訊。 若要啟用擷取，請在應用程式啟動時，使用 [開始診斷]  命令將圖形診斷連結至您的應用程式。  
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>允許在載入專案或方案後擷取圖形資訊  
   
-1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，載入您要從中擷取圖形資訊之應用程式的專案或方案檔。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，載入您要從中擷取圖形資訊之應用程式的專案或方案檔。  
   
-2.  在 [圖形診斷] 工具列上，選擇 [開始診斷] 。  
+2. 在 [圖形診斷] 工具列上，選擇 [開始診斷] 。  
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>允許在不載入專案或方案的情況下擷取圖形資訊  
   
@@ -59,7 +59,7 @@ ms.locfileid: "58941913"
 ## <a name="next-steps"></a>後續步驟  
  本逐步解說示範如何手動擷取圖形資訊。 下一步是考慮此選項：  
   
--   了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[概觀](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
+- 了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[概觀](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)

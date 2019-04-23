@@ -11,23 +11,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 781e1cce1d363ade1d236c8e17f9c3feeb4b0f5c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 745fea2ebaba478d9c405ab51db607e5eb025cc7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913282"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058001"
 ---
 # <a name="customizing-the-model-explorer"></a>自訂模型總管
 您可以針對您的特定領域語言設計工具中，如下所示變更的外觀和行為的 [總管] 中：
 
--   變更視窗標題。
+- 變更視窗標題。
 
--   變更索引標籤圖示。
+- 變更索引標籤圖示。
 
--   變更節點的圖示。
+- 變更節點的圖示。
 
--   隱藏的節點。
+- 隱藏的節點。
 
 ## <a name="changing-the-window-title"></a>變更視窗標題
  若要變更產生的檔案總管的視窗標題，請選取**總管行為**中**DSL 總管**，然後在**屬性**視窗中，將**標題**屬性，以您想要的標題。
@@ -66,25 +66,25 @@ ms.locfileid: "55913282"
 
 #### <a name="to-display-a-property"></a>若要顯示的屬性
 
-1.  開啟您在先前的程序中建立的方案。
+1. 開啟您在先前的程序中建立的方案。
 
-2.  請確定**註解**參考只有單一網域類別，藉由設定的屬性名稱的角色多重性**主體**為 0..1。 屬性名稱應該就**主旨**，且關聯性名稱應該會變成**CommentReferencesSubject**。
+2. 請確定**註解**參考只有單一網域類別，藉由設定的屬性名稱的角色多重性**主體**為 0..1。 屬性名稱應該就**主旨**，且關聯性名稱應該會變成**CommentReferencesSubject**。
 
-3.  在  **DSL 總管 中**，以滑鼠右鍵按一下**總管行為**，然後按一下 **加入新的總管節點設定**。
+3. 在  **DSL 總管 中**，以滑鼠右鍵按一下**總管行為**，然後按一下 **加入新的總管節點設定**。
 
      **ExplorerNodeSettings**下方的節點會出現**自訂節點設定**節點。
 
-4.  選取  **ExplorerNodeSettings**，然後在**屬性**視窗中，將**類別**至**註解**。
+4. 選取  **ExplorerNodeSettings**，然後在**屬性**視窗中，將**類別**至**註解**。
 
-5.  以滑鼠右鍵按一下**註解**節點，然後再按一下**加入新的屬性路徑**。
+5. 以滑鼠右鍵按一下**註解**節點，然後再按一下**加入新的屬性路徑**。
 
      新的節點會出現名為**屬性顯示**。
 
-6.  選取**屬性顯示**，然後在**屬性**視窗中，按一下 值欄位**屬性路徑**。 選取 **註解**，然後**CommentReferencesSubject**，然後**FlowElement**。 產生的路徑看起來應該像**CommentReferencesSubject.Subject/ ！主旨**。
+6. 選取**屬性顯示**，然後在**屬性**視窗中，按一下 值欄位**屬性路徑**。 選取 **註解**，然後**CommentReferencesSubject**，然後**FlowElement**。 產生的路徑看起來應該像**CommentReferencesSubject.Subject/ ！主旨**。
 
-7.  在 值欄位**屬性**，選取**名稱**。
+7. 在 值欄位**屬性**，選取**名稱**。
 
-8.  轉換所有範本，然後建置並執行您的方案。
+8. 轉換所有範本，然後建置並執行您的方案。
 
 9. 在產生的設計工具中，開啟範例圖表。
 
@@ -97,17 +97,17 @@ ms.locfileid: "55913282"
 
 #### <a name="to-hide-an-explorer-node"></a>若要隱藏 [總管] 節點
 
-1.  開啟您在先前的程序中建立的方案。
+1. 開啟您在先前的程序中建立的方案。
 
-2.  在  **DSL 總管**，以滑鼠右鍵按一下**總管行為**，然後按一下 **新增網域路徑**。
+2. 在  **DSL 總管**，以滑鼠右鍵按一下**總管行為**，然後按一下 **新增網域路徑**。
 
      A**領域路徑**下方的節點會出現**隱藏節點**。
 
-3.  選取**領域路徑**，然後在**屬性**視窗中，按一下 值欄位**路徑定義**。 選取  **FlowGraph**，然後**FlowGraphHasComments**。 產生的路徑看起來應該像**FlowGraphHasComments.Comments**
+3. 選取**領域路徑**，然後在**屬性**視窗中，按一下 值欄位**路徑定義**。 選取  **FlowGraph**，然後**FlowGraphHasComments**。 產生的路徑看起來應該像**FlowGraphHasComments.Comments**
 
-4.  轉換所有範本，然後建置並執行您的方案。
+4. 轉換所有範本，然後建置並執行您的方案。
 
-5.  在產生的設計工具中，開啟範例圖表。
+5. 在產生的設計工具中，開啟範例圖表。
 
      [總管] 中應該只會顯示**執行者**節點，而應該不會顯示**註解**節點。
 

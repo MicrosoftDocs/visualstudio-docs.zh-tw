@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b16b8e4e15c304f6e349d2f831ca879a4f7a183
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7b709012dafe0db3dcc0959908a1e6b4d9e07e21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061981"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>開始進行程式設計 VSTO 增益集
   您可以使用 VSTO 增益集來自動化 Microsoft Office 應用程式、擴充應用程式的功能，以及自訂應用程式的使用者介面 (UI)。 如需 VSTO 增益集相較於其他類型 Office 方案的如何使用 Visual Studio，您可以建立，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -40,19 +40,19 @@ ms.locfileid: "56618831"
 
  如需特定的 Microsoft Office 應用程式之物件模型的詳細資訊，請參閱下列主題：
 
--   [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)
+- [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)
 
--   [Word 物件模型概觀](../vsto/word-object-model-overview.md)
+- [Word 物件模型概觀](../vsto/word-object-model-overview.md)
 
--   [Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)
+- [Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)
 
--   [InfoPath 方案](../vsto/infopath-solutions.md)
+- [InfoPath 方案](../vsto/infopath-solutions.md)
 
--   [PowerPoint 方案](../vsto/powerpoint-solutions.md)
+- [PowerPoint 方案](../vsto/powerpoint-solutions.md)
 
--   [專案的方案](../vsto/project-solutions.md)
+- [專案的方案](../vsto/project-solutions.md)
 
--   [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)
+- [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)
 
 ## <a name="customize-the-user-interface-of-applications"></a>自訂應用程式的使用者介面
  有數個不同的方式，若要使用 VSTO 增益集自訂主應用程式的 UI:

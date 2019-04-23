@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda0284bd9ae4b0f68a8bb0fa779959f52650bdd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058521"
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 
@@ -56,11 +56,11 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 
 請注意，大部分的圖表類型都可以用於其他用途。 如需圖表類型的概觀，請參閱 <<c0> [ 建立應用程式模型](../modeling/create-models-for-your-app.md)。
 
-##  <a name="BusinessRules"></a> Showing Business Rules
+## <a name="BusinessRules"></a> Showing Business Rules
 
 商務規則是未與特定使用案例相關聯的需求，而且應該會在系統中觀察到。
 
-許多商務規則是概念性類別間之關聯性的條件約束。 您可以撰寫這些*靜態商務規則*做為概念性類別圖上的相關類別相關聯的註解。 例如: 
+許多商務規則是概念性類別間之關聯性的條件約束。 您可以撰寫這些*靜態商務規則*做為概念性類別圖上的相關類別相關聯的註解。 例如：
 
 ![附加至 Order 類別之註解的規則。](../modeling/media/uml_reqmcd2.png)
 
@@ -76,19 +76,19 @@ Visual Studio 透過繪製使用者活動的圖表，以及系統協助他們達
 |-|-|
 |如何開發遵守商務規則的程式碼|[建立應用程式架構的模型](../modeling/model-your-app-s-architecture.md)|
 
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
 有數種類別的服務需求品質。 包括下列各項：
 
--   效能
+- 效能
 
--   安全性
+- 安全性
 
--   可用性
+- 可用性
 
--   可靠性
+- 可靠性
 
--   加強性
+- 加強性
 
 您可以在特定使用案例描述中包含其中一些需求。 其他需求非使用案例所特定，而且最有效地撰寫於不同的文件中。 如果可以，最好遵守需求模型所定義的詞彙。 在下列範例中，請注意，要求中所使用的主要單字是先前圖例中的行動標題、使用案例和類別：
 

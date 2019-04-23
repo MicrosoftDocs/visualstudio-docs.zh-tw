@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6266f487e2e0c66e532297c3fdae3fd3e5498052
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4bd14060517793d28e24818a051df63efb8f0e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942408"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061095"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>HOW TO：啟用 CD 安裝的 AutoStart
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ ms.locfileid: "58942408"
   
 ### <a name="to-enable-autostart"></a>若要啟用自動啟動  
   
-1.  選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
+1. 選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
   
-2.  按一下 [發佈] 索引標籤。  
+2. 按一下 [發佈] 索引標籤。  
   
-3.  按一下 [選項] 按鈕。  
+3. 按一下 [選項] 按鈕。  
   
      **發行選項** 對話方塊隨即出現。  
   
-4.  按一下 **部署**。  
+4. 按一下 **部署**。  
   
-5.  選取 **若是使用光碟安裝時自動啟動安裝程式插入光碟後**核取方塊。  
+5. 選取 **若是使用光碟安裝時自動啟動安裝程式插入光碟後**核取方塊。  
   
      Autorun.inf 檔案會複製到發行位置，在發行應用程式。  
   

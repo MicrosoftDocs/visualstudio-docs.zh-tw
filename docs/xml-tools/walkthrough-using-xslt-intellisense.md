@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 826967355b26e06e5d9f0bd26f3efcf745006fe9
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 880f098d96c23236a065894629a36a746ecedce7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525436"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062725"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>逐步解說：使用 XSLT IntelliSense
 
@@ -21,7 +21,7 @@ ms.locfileid: "57525436"
 
 ## <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>在 xsl:with-param 和 xsl:call-template 項目的名稱屬性中使用 IntelliSense
 
-1.  建立新的 XSLT 檔案，並複製下列程式碼：
+1. 建立新的 XSLT 檔案，並複製下列程式碼：
 
     ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
@@ -45,7 +45,7 @@ ms.locfileid: "57525436"
     </xsl:stylesheet>
     ```
 
-2.  插入資料指標之後`<xsl:template name="msg23" match="msg23">`按下**Enter**。 接著開始輸入下列 `xsl:call-template` 項目：
+2. 插入資料指標之後`<xsl:template name="msg23" match="msg23">`按下**Enter**。 接著開始輸入下列 `xsl:call-template` 項目：
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -54,7 +54,7 @@ ms.locfileid: "57525436"
 
      當您輸入時，範本名稱的清單會出現在 `name=""` 項目的 `xsl:call-template` 屬性中。
 
-3.  插入資料指標之後`<xsl:call-template name="localized-message">`按下**Enter**。 接著開始輸入下列 `xsl:with-param` 項目：
+3. 插入資料指標之後`<xsl:call-template name="localized-message">`按下**Enter**。 接著開始輸入下列 `xsl:with-param` 項目：
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -64,7 +64,7 @@ ms.locfileid: "57525436"
 
 ## <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>在 xsl:apply-templates 項目的模式屬性中使用 IntelliSense
 
-1.  建立新的 XSLT 檔案，並複製下列程式碼：
+1. 建立新的 XSLT 檔案，並複製下列程式碼：
 
     ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
@@ -111,7 +111,7 @@ ms.locfileid: "57525436"
     </xsl:stylesheet>
     ```
 
-2.  插入資料指標之後`<xsl:apply-templates select="phone" />`按下**Enter**。 接著開始輸入下列 `xsl: apply-templates` 項目：
+2. 插入資料指標之後`<xsl:apply-templates select="phone" />`按下**Enter**。 接著開始輸入下列 `xsl: apply-templates` 項目：
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -121,7 +121,7 @@ ms.locfileid: "57525436"
 
 ## <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>在 xsl:namespace-alias 項目的 stylesheet-prefix 和 result-prefix 屬性中使用 IntelliSense
 
-1.  建立新的 XSLT 檔案，並複製下列程式碼：
+1. 建立新的 XSLT 檔案，並複製下列程式碼：
 
     ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"
@@ -152,7 +152,7 @@ ms.locfileid: "57525436"
     </xsl:stylesheet>
     ```
 
-2.  插入資料指標之後`<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">`按下**Enter**。 接著開始輸入下列 `xsl:namespace-alias` 項目：
+2. 插入資料指標之後`<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">`按下**Enter**。 接著開始輸入下列 `xsl:namespace-alias` 項目：
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>

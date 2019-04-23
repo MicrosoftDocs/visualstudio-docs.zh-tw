@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a0e944d2ed8538a72082bdc52ee72058907ed9d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3d28efe175bb5bf3e5088918375f580d8076cff9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633274"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055297"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>合併 VBA 和文件層級自訂
   您可以在屬於 Microsoft Office Word 或 Microsoft Office Excel 文件層級自訂的文件中使用 Visual Basic for Applications (VBA) 程式碼。 您可以在來自自訂組件的文件中呼叫 VBA 程式碼，或者可以設定專案，讓文件中的 VBA 程式碼可以呼叫自訂組件中的程式碼。
@@ -86,17 +86,17 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ## <a name="requirements"></a>需求
  您的專案必須符合下列需求，您才能啟用 VBA 程式碼以呼叫自訂組件：
 
--   文件必須具有下列其中一個副檔名：
+- 文件必須具有下列其中一個副檔名：
 
-    -   Word: *.docm*或 *.doc*
+    - Word: *.docm*或 *.doc*
 
-    -   適用於 Excel: *.xlsm*， *.xltm*， *.xls*，或 *.xlt*
+    - 適用於 Excel: *.xlsm*， *.xltm*， *.xls*，或 *.xlt*
 
--   文件必須已經包含有 VBA 程式碼存在的 VBA 專案。
+- 文件必須已經包含有 VBA 程式碼存在的 VBA 專案。
 
--   必須允許文件中的 VBA 程式碼執行，而不提示使用者啟用巨集。 您可以將 Office 專案的位置加入 Word 或 Excel 信任中心設定的信任位置清單，以信任 VBA 程式碼執行。
+- 必須允許文件中的 VBA 程式碼執行，而不提示使用者啟用巨集。 您可以將 Office 專案的位置加入 Word 或 Excel 信任中心設定的信任位置清單，以信任 VBA 程式碼執行。
 
--   Office 專案必須包含至少一個公用類別，其中包含一或多個要公開給 VBA 的公用成員。
+- Office 專案必須包含至少一個公用類別，其中包含一或多個要公開給 VBA 的公用成員。
 
      您可以公開方法、屬性和事件給 VBA。 您所公開的類別可以是主項目類別 (例如 Word 的 `ThisDocument` ，或 Excel 的 `ThisWorkbook` 和 `Sheet1` ) 或您在專案中定義的另一個類別。 如需主項目的詳細資訊，請參閱[主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)。
 
@@ -109,11 +109,11 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
    若要這樣做，您必須執行下列主要步驟：
 
-  1.  將類別公開給 COM。
+  1. 將類別公開給 COM。
 
-  2.  覆寫專案中之主項目類別的 **GetAutomationObject** 方法，傳回您正在公開給 VBA 之類別的執行個體。
+  2. 覆寫專案中之主項目類別的 **GetAutomationObject** 方法，傳回您正在公開給 VBA 之類別的執行個體。
 
-  3.  將專案中任何主項目類別的 **ReferenceAssemblyFromVbaProject** 屬性設為 **True**。 這樣會將自訂組件的類型程式庫內嵌至組件，並將類型程式庫的參考加入文件中的 VBA 專案。
+  3. 將專案中任何主項目類別的 **ReferenceAssemblyFromVbaProject** 屬性設為 **True**。 這樣會將自訂組件的類型程式庫內嵌至組件，並將類型程式庫的參考加入文件中的 VBA 專案。
 
   如需詳細指示，請參閱[How to:公開給 VBA 的程式碼，在 Visual Basic 專案中](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)和[How to:公開給 Visual C 中的 VBA 程式碼&#35;專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。
 
@@ -174,7 +174,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 
  此方法會傳回代表您公開給 VBA 之類別的物件。 傳回物件的成員和方法參數會出現在 IntelliSense 中。
 
-##  <a name="Guidelines"></a> 將 VBA 程式碼加入至文件的指導方針
+## <a name="Guidelines"></a> 將 VBA 程式碼加入至文件的指導方針
  有數份不同的文件，您可以在其中加入呼叫文件層級自訂的 VBA 程式碼。
 
  當您開發並測試方案時，可以在文件中撰寫 VBA 程式碼，當您在 Visual Studio 中偵錯或執行您的專案時就會開啟此文件 (也就是在組建輸出資料夾中的文件)。 不過，您加入此文件的任何 VBA 程式碼將會在下一次建置專案時被覆寫，因為 Visual Studio 會將組建輸出資料夾中的文件取代為來自主要專案資料夾的文件複本。
@@ -201,7 +201,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 ### <a name="on-the-end-user-computer"></a>在使用者電腦上
  如果使用者是呼叫您在文件層級自訂中提供之服務的 VBA 開發人員，您可以告訴他們如何在他們的文件複本中使用 `CallVSTOAssembly` 屬性或 `GetManagedClass` 方法呼叫您的程式碼。 當您發行更新至方案時，終端使用者電腦上的文件中的 VBA 程式碼不會覆寫時，因為不會修改文件發行的更新。
 
-##  <a name="PropertyTasks"></a> 主機項目屬性執行的工作
+## <a name="PropertyTasks"></a> 主機項目屬性執行的工作
  當您使用 **EnableVbaCallers** 和 **ReferenceAssemblyFromVbaProject** 屬性時，Visual Studio 會執行不同的工作集。
 
 ### <a name="enablevbacallers"></a>EnableVbaCallers
@@ -229,9 +229,9 @@ GetManagedClass(pdispInteropObject Object) As Object
 
 2. 它會在文件中的 VBA 專案加入下列類型程式庫的參考：
 
-   -   自訂組件的類型程式庫。
+   - 自訂組件的類型程式庫。
 
-   -   Microsoft Visual Studio Tools for Office Execution Engine 9.0 類型程式庫。 這個類型程式庫已包括在 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中。
+   - Microsoft Visual Studio Tools for Office Execution Engine 9.0 類型程式庫。 這個類型程式庫已包括在 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中。
 
    當 **ReferenceAssemblyFromVbaProject** 屬性設回 **False**時，Visual Studio 會執行下列工作：
 

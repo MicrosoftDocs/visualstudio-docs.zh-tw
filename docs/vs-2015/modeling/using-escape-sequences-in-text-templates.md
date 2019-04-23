@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aecd53f9321108d429c732cc8b802ee5dfc8a99c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1f564200d0bdac56e975c2f2ab27439652247605
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055336"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>使用文字範本中的逸出序列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "58939276"
   
  如果文字區塊包含用來逸出文字範本標記的字串，您可以使用下列的逸出序列：  
   
--   如果文字範本標記會加上偶數數目的逸出 (\\) 字元範本剖析器會包含逸出字元的一半，且包含做為文字範本標記的順序。 例如，如果在文字範本中有四個逸出字元，會有兩個 「\\"產生的檔案中的字元。  
+- 如果文字範本標記會加上偶數數目的逸出 (\\) 字元範本剖析器會包含逸出字元的一半，且包含做為文字範本標記的順序。 例如，如果在文字範本中有四個逸出字元，會有兩個 「\\"產生的檔案中的字元。  
   
--   如果文字範本標記會加上奇數數目的逸出 (\\) 個字元，範本剖析器將包含的下半部 」\\"字元再加上標記本身 (\<# >)。 標記是不被視為文字範本標記。  
+- 如果文字範本標記會加上奇數數目的逸出 (\\) 個字元，範本剖析器將包含的下半部 」\\"字元再加上標記本身 (\<# >)。 標記是不被視為文字範本標記。  
   
--   如果逸出 (\\) 字元出現以外，它會逸出控制字元或引號 （在僅限 C#) 的任何序列中的其他任何地方時，會直接輸出的字元。  
+- 如果逸出 (\\) 字元出現以外，它會逸出控制字元或引號 （在僅限 C#) 的任何序列中的其他任何地方時，會直接輸出的字元。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：使用逸出序列從範本產生範本](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

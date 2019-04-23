@@ -12,19 +12,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6973e905a0587ffdc7cbd0a401e03f933fc60a3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e597b10913ad495193545ab304b3b324d8f66b41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662204"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043417"
 ---
 # <a name="msbuild-best-practices"></a>MSBuild 最佳做法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 我們建議用來撰寫 MSBuild 指令碼的最佳作法如下：  
   
--   處理預設屬性值的最佳方法是使用 `Condition` 屬性，而不是宣告可以在命令列中覆寫預設值的屬性。 例如，使用  
+- 處理預設屬性值的最佳方法是使用 `Condition` 屬性，而不是宣告可以在命令列中覆寫預設值的屬性。 例如，使用  
   
      `<MyProperty Condition="$(MyProperty)" == ''>`  
   
@@ -32,7 +32,7 @@ ms.locfileid: "59662204"
   
      `</MyProperty>`  
   
--   當您選取項目時，請避免使用萬用字元， 而要明確地指定檔案。 這樣會比較容易追蹤當您新增或刪除檔案時，可能發生的錯誤。  
+- 當您選取項目時，請避免使用萬用字元， 而要明確地指定檔案。 這樣會比較容易追蹤當您新增或刪除檔案時，可能發生的錯誤。  
   
 ## <a name="see-also"></a>請參閱  
  [進階概念](../msbuild/msbuild-advanced-concepts.md)

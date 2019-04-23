@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0d80320b47f0d5968b4aa0e795743e394db2c19
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2566c97a4dc025e27aecf64a7a8950a578882348
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000594"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054376"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本概念
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,15 +63,15 @@ Windows 安裝程式安裝和解除安裝應用程式或使用者的電腦上的
   
 #### <a name="installer-enforced-rules"></a>安裝程式強制執行規則  
   
--   指定的元件中的所有檔案必須都安裝到相同的目錄。 相反地，安裝在不同的資料夾的檔案必須屬於不同的元件。  
+- 指定的元件中的所有檔案必須都安裝到相同的目錄。 相反地，安裝在不同的資料夾的檔案必須屬於不同的元件。  
   
--   可以有只有一個機碼的路徑，每個元件。 機碼路徑是只是檔案或登錄機碼，表示整個元件。  
+- 可以有只有一個機碼的路徑，每個元件。 機碼路徑是只是檔案或登錄機碼，表示整個元件。  
   
 #### <a name="component-provider-responsibilities"></a>元件提供者的責任  
   
--   分開可能在後續版本中提供的任何兩個資源應該位於個別的元件。 資源應該分組到同一個元件，只有當您確定這些資源將永遠不會分開的提供時，才。 事實上，我們建議所有的主要資源 (例如 Dll) 一律存在於個別 WICs。 如需詳細資訊，請參閱 <<c0> [ 定義安裝程式元件](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx)。  
+- 分開可能在後續版本中提供的任何兩個資源應該位於個別的元件。 資源應該分組到同一個元件，只有當您確定這些資源將永遠不會分開的提供時，才。 事實上，我們建議所有的主要資源 (例如 Dll) 一律存在於個別 WICs。 如需詳細資訊，請參閱 <<c0> [ 定義安裝程式元件](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx)。  
   
--   沒有建立版本的資源應該曾經出貨中一個以上的 WIC。  
+- 沒有建立版本的資源應該曾經出貨中一個以上的 WIC。  
   
 ## <a name="see-also"></a>另請參閱  
  [元件規則已中斷，會發生什麼事？](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)

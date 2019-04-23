@@ -12,21 +12,21 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6d63393313097503ed92c8a540d85152b3f8688
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944701"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058872"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>疑難排解例外狀況：System.ServiceModel.Security.MessageSecurityException
 A<xref:System.ServiceModel.Security.MessageSecurityException>例外狀況時擲回[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]決定訊息未正確受到保護，或已遭竄改。 這個錯誤通常是在下列所有條件都成立時發生：  
   
--   在網站或 Web 應用程式專案中，您使用 WCF 服務參考透過遠端桌面連線或終端機服務 (Terminal Service) 這類的遠端連接，與 WCF 服務 (.svc) 通訊。  
+- 在網站或 Web 應用程式專案中，您使用 WCF 服務參考透過遠端桌面連線或終端機服務 (Terminal Service) 這類的遠端連接，與 WCF 服務 (.svc) 通訊。  
   
--   您沒有遠端站台的系統管理員權限。  
+- 您沒有遠端站台的系統管理員權限。  
   
--   遠端站台上 localhost 的要求是由 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程式開發伺服器處理。  
+- 遠端站台上 localhost 的要求是由 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程式開發伺服器處理。  
   
 ## <a name="associated-tips"></a>相關秘訣  
  **解決使用 ASP.Net 程式開發伺服器時的 NTLM 驗證問題。**  
@@ -78,11 +78,11 @@ A<xref:System.ServiceModel.Security.MessageSecurityException>例外狀況時擲�
   
 #### <a name="to-turn-off-ntlm-security"></a>若要關閉 NTLM 安全性  
   
-1.  在 [ **方案總管**] 中，以滑鼠右鍵按一下網站名稱，然後再按一下 [ **屬性頁**]。  
+1. 在 [ **方案總管**] 中，以滑鼠右鍵按一下網站名稱，然後再按一下 [ **屬性頁**]。  
   
-2.  選取 [ **起始選項**]，然後再清除 [ **NTLM 驗證** ] 核取方塊。  
+2. 選取 [ **起始選項**]，然後再清除 [ **NTLM 驗證** ] 核取方塊。  
   
-3.  按一下 [確定 **Deploying Office Solutions**]。  
+3. 按一下 [確定] 。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.ServiceModel.Security.MessageSecurityException>   

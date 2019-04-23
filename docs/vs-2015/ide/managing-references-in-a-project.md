@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567211"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057092"
 ---
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "57567211"
   
  您可以進行下列元件/服務類型的參考：  
   
--   Windows 市集應用程式參考  
+- Windows 市集應用程式參考  
   
--   .NET framework 類別庫或組件  
+- .NET framework 類別庫或組件  
   
--   COM 元件  
+- COM 元件  
   
--   其他組件或相同解決方案中專案的類別庫  
+- 其他組件或相同解決方案中專案的類別庫  
   
--   XML Web Service  
+- XML Web Service  
   
 ## <a name="windows-store-app-references"></a>Windows 市集應用程式參考  
   
@@ -63,9 +63,9 @@ ms.locfileid: "57567211"
   
  如果您判定不支援您的應用程式所參考的擴充功能 SDK，則需要執行下列步驟：  
   
-1.  查看造成錯誤的專案名稱。 您專案的目標平台加註在專案名稱旁邊的括號中。 例如，**MyProjectName (Windows 8.1)** 表示您的專案 **MyProjectName** 的目標平台版本為 [!INCLUDE[win81](../includes/win81-md.md)]。  
+1. 查看造成錯誤的專案名稱。 您專案的目標平台加註在專案名稱旁邊的括號中。 例如，**MyProjectName (Windows 8.1)** 表示您的專案 **MyProjectName** 的目標平台版本為 [!INCLUDE[win81](../includes/win81-md.md)]。  
   
-2.  移至擁有不受支援之擴充功能 SDK 的廠商網站，並安裝相依性與您專案的目標平台版本相容的擴充功能 SDK 版本。  
+2. 移至擁有不受支援之擴充功能 SDK 的廠商網站，並安裝相依性與您專案的目標平台版本相容的擴充功能 SDK 版本。  
   
     > [!NOTE]
     >  若要找出擴充功能 SDK 是否具有其他擴充功能 SDK 的相依性，其中一個方法是重新啟動 Visual Studio，建立新的 C# Windows 市集專案，在專案按右鍵並選擇 [加入參考] ，移至 [Windows]  索引標籤，再移至 [擴充功能]  子索引標籤，選取擴充功能 SDK 並查看 [參考管理員] 的右窗格。 如果有相依性，則會在那裡列出。  
@@ -73,20 +73,20 @@ ms.locfileid: "57567211"
     > [!IMPORTANT]
     >  如果您的專案是以 Windows 10 為目標，且在先前步驟中安裝的擴充功能 SDK 相依於 Microsoft Visual C++ Runtime Package，則與 Windows 10 相容的 Microsoft Visual C++ Runtime Package 版本為 v14.0 ，並隨著 Visual Studio 2015 一起安裝。  
   
-3.  如果您在先前步驟中安裝的擴充功能 SDK 具有其他擴充功能 SDK 的相依性，請移至擁有相依性的廠商網站，並安裝與您專案的目標平台版本相容的這些相依性版本。  
+3. 如果您在先前步驟中安裝的擴充功能 SDK 具有其他擴充功能 SDK 的相依性，請移至擁有相依性的廠商網站，並安裝與您專案的目標平台版本相容的這些相依性版本。  
   
-4.  重新啟動 Visual Studio，然後開啟您的應用程式。  
+4. 重新啟動 Visual Studio，然後開啟您的應用程式。  
   
-5.  在導致錯誤專案中的 [參考]  節點上按右鍵，然後選擇 [加入參考]   
+5. 在導致錯誤專案中的 [參考]  節點上按右鍵，然後選擇 [加入參考]   
   
-6.  依序按一下 [Windows]  索引標籤和 [擴充功能]  子索引標籤，然後針對舊擴充功能 SDK 取消核取方塊，並核取新擴充功能 SDK 的核取方塊。 按一下 [確定] 。  
+6. 依序按一下 [Windows]  索引標籤和 [擴充功能]  子索引標籤，然後針對舊擴充功能 SDK 取消核取方塊，並核取新擴充功能 SDK 的核取方塊。 按一下 [確定] 。  
   
 ## <a name="adding-a-reference-at-design-time"></a>在設計階段加入參考  
  當您在專案中參考組件時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會搜尋下列位置中的組件：  
   
--   目前專案目錄。 (您可以使用 [瀏覽]  索引標籤尋找這些組件)。  
+- 目前專案目錄。 (您可以使用 [瀏覽]  索引標籤尋找這些組件)。  
   
--   同一方案中的其他專案目錄。 (您可以使用 [專案]  索引標籤尋找這些組件。)  
+- 同一方案中的其他專案目錄。 (您可以使用 [專案]  索引標籤尋找這些組件。)  
   
 > [!NOTE]
 >  所有專案都包含 mscorlib 的隱含參考。 Visual Basic 專案包含 `Microsoft.VisualBasic`的隱含參考。  

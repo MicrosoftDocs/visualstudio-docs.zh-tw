@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58b8e9bc37cde33a09a06503755f2646cca6f75c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 2673ed9a69a80b2e9ab9275ff54909e33e4434f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018796"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059275"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>檢視呼叫堆疊，並使用偵錯工具中的 [呼叫堆疊] 視窗
 
@@ -60,7 +60,7 @@ ms.locfileid: "55018796"
 
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>在 [呼叫堆疊] 視窗中顯示非使用者程式碼
 
--   以滑鼠右鍵按一下 [呼叫堆疊] 視窗，然後選取 [顯示外部程式碼]。
+- 以滑鼠右鍵按一下 [呼叫堆疊] 視窗，然後選取 [顯示外部程式碼]。
 
 非使用者程式碼是不會顯示時的任何程式碼[Just My Code](../debugger/just-my-code.md)已啟用。 在 managed 程式碼，預設會隱藏非使用者程式碼框架。 下列標記法會出現的非使用者程式碼框架取代：
 
@@ -68,29 +68,29 @@ ms.locfileid: "55018796"
 
 ## <a name="bkmk_switch"></a> 切換至另一個堆疊框架 （變更偵錯工具內容）
 
-1.  在 **呼叫堆疊**視窗中，以滑鼠右鍵按一下堆疊框架之程式碼和您想要檢視的資料。
+1. 在 **呼叫堆疊**視窗中，以滑鼠右鍵按一下堆疊框架之程式碼和您想要檢視的資料。
 
     或者，您可以按兩下框架**呼叫堆疊**視窗切換至該範圍內。
 
-2.  選取 [切換至框架]。
+2. 選取 [切換至框架]。
 
      旁邊所選取之堆疊框架，會出現尾端彎曲的綠色箭號。 執行指標會留在原來的框架中，並仍以黃色箭頭標示。 如果您從 [偵錯] 功能表中選取 [逐步執行] 或 [繼續]，則會從原本框架而非選取的框架繼續執行。
 
 ## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>檢視呼叫堆疊上的函式的原始程式碼
 
--   在 [呼叫堆疊] 視窗，以滑鼠右鍵按一下您要查看原始程式碼的函式，然後選取 [移至原始程式碼]。
+- 在 [呼叫堆疊] 視窗，以滑鼠右鍵按一下您要查看原始程式碼的函式，然後選取 [移至原始程式碼]。
 
 ## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>從 [呼叫堆疊] 視窗執行至特定函式
 
--  在 **呼叫堆疊**視窗中，選取的函式，以滑鼠右鍵按一下，然後選擇**執行至游標處**。
+- 在 **呼叫堆疊**視窗中，選取的函式，以滑鼠右鍵按一下，然後選擇**執行至游標處**。
 
 ## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>函式呼叫的結束點上設定中斷點
 
--   請參閱[在呼叫堆疊函式設定中斷點](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window)。
+- 請參閱[在呼叫堆疊函式設定中斷點](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window)。
 
 ## <a name="display-calls-to-or-from-another-thread"></a>顯示呼叫，或從另一個執行緒
 
--   以滑鼠右鍵按一下 [呼叫堆疊] 視窗，然後選取 [包含至/從其他執行緒的呼叫]。
+- 以滑鼠右鍵按一下 [呼叫堆疊] 視窗，然後選取 [包含至/從其他執行緒的呼叫]。
 
 ## <a name="visually-trace-the-call-stack"></a>以視覺方式追蹤呼叫堆疊
 
@@ -102,15 +102,15 @@ ms.locfileid: "55018796"
 
 ![Code Map 上顯示呼叫堆疊](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
 
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>檢視呼叫堆疊上的函式的反組譯碼程式碼 (C#，c + +、 Visual Basic 中， F#)
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>檢視呼叫堆疊上的函式的反組譯碼程式碼 (C#， C++，Visual Basic 中， F#)
 
--   在 [呼叫堆疊] 視窗中，以滑鼠右鍵按一下您要查看反組譯程式碼的函式，然後選取 [移至反組譯碼]。
+- 在 [呼叫堆疊] 視窗中，以滑鼠右鍵按一下您要查看反組譯程式碼的函式，然後選取 [移至反組譯碼]。
 
 ## <a name="change-the-optional-information-displayed"></a>變更顯示的選擇性資訊
 
--   以滑鼠右鍵按一下**呼叫堆疊** 視窗，然後設定或清除**顯示\<** _您想要的資訊_**>**.
+- 以滑鼠右鍵按一下**呼叫堆疊** 視窗，然後設定或清除**顯示\<** _您想要的資訊_**>**.
 
-## <a name="bkmk_symbols"></a> 載入模組的符號 (C#，c + +、 Visual Basic 中， F#)
+## <a name="bkmk_symbols"></a> 載入模組的符號 (C#， C++，Visual Basic 中， F#)
 
 在 [呼叫堆疊] 視窗中，您可以載入目前尚未載入符號之程式碼的偵錯符號。 這些符號可能是從 Microsoft 公用符號伺服器下載的 .NET Framework 或系統符號，或是您所偵錯之電腦上符號路徑中的符號。
 
@@ -118,25 +118,25 @@ ms.locfileid: "55018796"
 
 ### <a name="to-load-symbols"></a>若要載入符號
 
-1.  在 **呼叫堆疊**視窗中，以滑鼠右鍵按一下未載入符號的堆疊框架。 該框架隨即變成暗灰色。
+1. 在 **呼叫堆疊**視窗中，以滑鼠右鍵按一下未載入符號的堆疊框架。 該框架隨即變成暗灰色。
 
-2.  指向**載入符號**，然後選取**Microsoft 符號伺服器**（如果有的話），或瀏覽至符號路徑。
+2. 指向**載入符號**，然後選取**Microsoft 符號伺服器**（如果有的話），或瀏覽至符號路徑。
 
 ### <a name="to-set-the-symbol-path"></a>若要設定符號路徑
 
-1.  在 [呼叫堆疊] 視窗中，從捷徑功能表選擇 [符號設定]。
+1. 在 [呼叫堆疊] 視窗中，從捷徑功能表選擇 [符號設定]。
 
      [選項] 對話方塊隨即開啟，並顯示 [符號] 頁面。
 
-2.  選取 **符號設定**。
+2. 選取 **符號設定**。
 
-3.  在 [選項] 對話方塊中，按一下資料夾圖示。
+3. 在 [選項] 對話方塊中，按一下資料夾圖示。
 
      游標隨即出現在 [符號檔 (.pdb) 位置] 方塊中。
 
-4.  輸入您要偵錯的電腦上符號位置的目錄路徑名稱。 本機和遠端偵錯，這是您的本機電腦上的路徑。
+4. 輸入您要偵錯的電腦上符號位置的目錄路徑名稱。 本機和遠端偵錯，這是您的本機電腦上的路徑。
 
-5.  選取 [ **[確定]** 以關閉**選項**] 對話方塊。
+5. 選取 [ **[確定]** 以關閉**選項**] 對話方塊。
 
 ## <a name="see-also"></a>另請參閱
 

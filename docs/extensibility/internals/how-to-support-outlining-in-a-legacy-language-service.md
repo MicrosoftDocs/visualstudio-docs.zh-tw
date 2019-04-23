@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe56b66574c535f51504e54b57db7d1659c4b1dc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 85aea5bfa6ccdf5f3753a1397729671249961152
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060588"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>HOW TO：支援舊版語言服務中的大綱
 大綱來展開或摺疊文字的不同區域。 方式大綱用定義不同的語言不同。 如需詳細資訊，請參閱[大綱](../../ide/outlining.md)。
@@ -31,9 +31,9 @@ ms.locfileid: "56597305"
 
 ## <a name="to-support-outlining"></a>若要支援大綱
 
-1.  實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage>上您的語言服務物件。
+1. 實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage>上您的語言服務物件。
 
-2.  呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>針對目前的大綱工作階段物件來新增新的外框區域。
+2. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>針對目前的大綱工作階段物件來新增新的外框區域。
 
 ## <a name="robust-programming"></a>穩固程式設計
  當使用者選取**摺疊至定義**上**大綱**功能表，IDE 會呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A>您語言的服務。

@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee796418658ec0825a76d60607b77813f84e4144
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ad6fa498fe9b89854f7fe3c74af9636b5b59e47f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053815"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>逐步解說：偵錯 Web 表單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,25 +42,25 @@ ms.locfileid: "58942458"
   
 ### <a name="to-create-the-web-form"></a>若要建立 Web Form  
   
-1.  如果您已經開啟方案，請將其關閉。  
+1. 如果您已經開啟方案，請將其關閉。  
   
-2.  在 [檔案] 功能表上按一下 [新增]，然後按一下 [網站]。  
+2. 在 [檔案] 功能表上按一下 [新增]，然後按一下 [網站]。  
   
      [新網站] 對話方塊隨即出現。  
   
-3.  在 [範本] 窗格中按一下 **ASP.NET 網站**。  
+3. 在 [範本] 窗格中按一下 **ASP.NET 網站**。  
   
-4.  在 **位置**行，按一下**HTTP**從清單中，並在文字方塊中，輸入**http://localhost/WebSite**。  
+4. 在 **位置**行，按一下**HTTP**從清單中，並在文字方塊中，輸入**http://localhost/WebSite**。  
   
-5.  在 [語言] 清單中，按一下 **Visual C#** 或 **Visual Basic**。  
+5. 在 [語言] 清單中，按一下 **Visual C#** 或 **Visual Basic**。  
   
-6.  按一下 [確定 **Deploying Office Solutions**]。  
+6. 按一下 [確定] 。  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會建立新的專案，並且顯示預設的 HTML 原始程式碼。 其也會在 IIS 中 [預設的網站] 下方，建立名為 [網站] 的新虛擬目錄。  
   
-7.  按一下下邊界的 [設計] 索引標籤。  
+7. 按一下下邊界的 [設計] 索引標籤。  
   
-8.  按一下左邊界的 [工具箱] 索引標籤，或是在 [檢視] 功能表上將其選取。  
+8. 按一下左邊界的 [工具箱] 索引標籤，或是在 [檢視] 功能表上將其選取。  
   
      [ **工具箱** ] 會開啟。  
   
@@ -90,7 +90,7 @@ ms.locfileid: "58942458"
   
 ### <a name="to-debug-the-web-form"></a>若要偵錯 Web Form  
   
-1.  在 Default.aspx.cs 或 Default.aspx.vb 視窗中，在與您所加入之文字同一行的左邊界按一下：  
+1. 在 Default.aspx.cs 或 Default.aspx.vb 視窗中，在與您所加入之文字同一行的左邊界按一下：  
   
     ```  
     ' Visual Basic  
@@ -102,19 +102,19 @@ ms.locfileid: "58942458"
   
      會出現一個紅點，並且該行上的文字會以紅色反白顯示。 紅點表示中斷點。 當您在偵錯工具下執行應用程式時，偵錯工具會在遇到程式碼的位置中斷執行。 接著您就可以檢視應用程式的狀態並對它進行偵錯。 如需詳細資訊，請參閱[中斷點](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。  
   
-2.  按一下 [偵錯] 功能表上的 [開始偵錯]。  
+2. 按一下 [偵錯] 功能表上的 [開始偵錯]。  
   
-3.  [未啟用偵錯] 對話方塊隨即出現。 選取 [修改 Web.config 檔案以啟用偵錯] 選項，然後按一下 [確定]。  
+3. [未啟用偵錯] 對話方塊隨即出現。 選取 [修改 Web.config 檔案以啟用偵錯] 選項，然後按一下 [確定]。  
   
      Internet Explorer 就會啟動並顯示您剛才設計的網頁。  
   
-4.  在 Internet Explorer 中按一下按鈕。  
+4. 在 Internet Explorer 中按一下按鈕。  
   
      在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，這會帶您前往在 Default.aspx.cs 或 Default.aspx.vb 字碼頁上設定中斷點的程式行位置。 這行程式碼應該會以黃色反白顯示。 您現在可以檢視應用程式中的變數並控制其執行。 您的應用程式會停止執行並等候您的命令。  
   
-5.  在 [偵錯] 功能表中按一下 [視窗]，然後按一下 [監看式]，再按一下 [Watch1]。  
+5. 在 [偵錯] 功能表中按一下 [視窗]，然後按一下 [監看式]，再按一下 [Watch1]。  
   
-6.  在 [監看式] 視窗中鍵入 **TextBox1.Text**。  
+6. 在 [監看式] 視窗中鍵入 **TextBox1.Text**。  
   
      [監看式] 視窗會顯示 `TextBox1.Text` 變數的值：  
   
@@ -122,7 +122,7 @@ ms.locfileid: "58942458"
     ""  
     ```  
   
-7.  按一下 [偵錯] 功能表上的 [不進入函式]。  
+7. 按一下 [偵錯] 功能表上的 [不進入函式]。  
   
      `TextBox1.Text` 的值會在 [監看式] 視窗中變更，讀取如下：  
   
@@ -130,7 +130,7 @@ ms.locfileid: "58942458"
     "Button was clicked!"  
     ```  
   
-8.  在 [偵錯] 功能表上按一下 [繼續]。  
+8. 在 [偵錯] 功能表上按一下 [繼續]。  
   
 9. 在 Internet Explorer 中的該按鈕上再按一下。  
   
@@ -144,9 +144,9 @@ ms.locfileid: "58942458"
   
 ### <a name="to-attach-to-the-web-form-for-debugging"></a>若要附加至 Web Form 來進行偵錯  
   
-1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，您可以將偵錯工具附加至執行中的處理序。 若要以最有效的方式來偵錯，請將可執行檔編譯為具有符號 (PDB) 檔案的偵錯版本。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，您可以將偵錯工具附加至執行中的處理序。 若要以最有效的方式來偵錯，請將可執行檔編譯為具有符號 (PDB) 檔案的偵錯版本。  
   
-2.  在 Default.aspx.cs 或 Default.aspx.vb 視窗中按一下左邊界，以再次於您加入的程式行設定中斷點：  
+2. 在 Default.aspx.cs 或 Default.aspx.vb 視窗中按一下左邊界，以再次於您加入的程式行設定中斷點：  
   
     ```  
     ' Visual Basic  
@@ -156,17 +156,17 @@ ms.locfileid: "58942458"
     textBox1.Text = "Button was clicked!";  
     ```  
   
-3.  在 [偵錯] 功能表上，按一下 [啟動但不偵錯]。  
+3. 在 [偵錯] 功能表上，按一下 [啟動但不偵錯]。  
   
      Web Form 會開始在 Internet Explorer 下執行，但不會附加偵錯工具。  
   
-4.  附加至 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序。 如需詳細資訊，請參閱 <<c0> [ 偵錯部署 Web 應用程式](../debugger/debugging-deployed-web-applications.md)。  
+4. 附加至 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 處理序。 如需詳細資訊，請參閱 <<c0> [ 偵錯部署 Web 應用程式](../debugger/debugging-deployed-web-applications.md)。  
   
-5.  在 Internet Explorer 中按一下您表單上的按鈕。  
+5. 在 Internet Explorer 中按一下您表單上的按鈕。  
   
      在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，您應該在 Default.aspx.cs、Default.aspx.vb 或 Default.aspx 叫用中斷點。  
   
-6.  完成偵錯後，請按一下 [偵錯] 功能表上的 [停止偵錯]。  
+6. 完成偵錯後，請按一下 [偵錯] 功能表上的 [停止偵錯]。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 ASP.NET 和 AJAX 應用程式](../debugger/debugging-aspnet-and-ajax-applications.md)

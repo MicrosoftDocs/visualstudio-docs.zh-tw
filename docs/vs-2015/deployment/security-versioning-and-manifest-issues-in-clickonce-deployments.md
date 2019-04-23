@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1227dea199ebff465fc2dde3ec30568bb50e9ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943559"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043676"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 部署中的安全性、版本控制和資訊清單問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ ms.locfileid: "58943559"
   
  如果您已經手動編輯您的部署或應用程式資訊清單，您可能會不小心損壞了。 損毀的資訊清單可防止正確[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]安裝。 您可以按一下這類錯誤偵錯執行階段**詳細資料**上**ClickOnce 錯誤** 對話方塊中，以及讀取記錄檔中的錯誤訊息。 記錄檔會列出下列訊息之一：  
   
--   語法錯誤的行號和字元的描述發生錯誤的位置。  
+- 語法錯誤的行號和字元的描述發生錯誤的位置。  
   
--   項目或屬性中的資訊清單結構描述的違規所使用的名稱。 如果您已手動新增 XML，以您的資訊清單，您必須比較您新增至資訊清單的結構描述。 如需詳細資訊，請參閱 < [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)並[ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)。  
+- 項目或屬性中的資訊清單結構描述的違規所使用的名稱。 如果您已手動新增 XML，以您的資訊清單，您必須比較您新增至資訊清單的結構描述。 如需詳細資訊，請參閱 < [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)並[ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)。  
   
--   ID 衝突。 部署和應用程式資訊清單中的相依性參考必須是唯一在其`name`和`publicKeyToken`屬性。 如果這兩個屬性符合資訊清單內任何兩個項目之間，資訊清單剖析將不會成功。  
+- ID 衝突。 部署和應用程式資訊清單中的相依性參考必須是唯一在其`name`和`publicKeyToken`屬性。 如果這兩個屬性符合資訊清單內任何兩個項目之間，資訊清單剖析將不會成功。  
   
 ## <a name="precautions-when-manually-changing-manifests-or-applications"></a>如果以手動方式變更的資訊清單或應用程式的預防措施  
  當您更新應用程式資訊清單時，您必須重新簽署應用程式資訊清單和部署資訊清單。 部署資訊清單包含應用程式資訊清單，其中包含該檔案的雜湊和數位簽章的參考。  

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: e0e4c47ebeece4720a80b50a4f95921e204dbca6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941460"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054764"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 可讓 VSPackage (例如編輯器或設計工具) 管理 [工具箱] 的成員資格和外觀。  
@@ -27,9 +27,9 @@ ms.locfileid: "58941460"
   
  這項支援僅限於需要執行下列動作的編輯器和設計工具：  
   
-1.  實作 Factory 物件，以提供編輯器或設計工具的執行個體。 如需實作設計工具或編輯器 Factory 物件的詳細資訊，請參閱 [Editor Factories](../extensibility/editor-factories.md)。  
+1. 實作 Factory 物件，以提供編輯器或設計工具的執行個體。 如需實作設計工具或編輯器 Factory 物件的詳細資訊，請參閱 [Editor Factories](../extensibility/editor-factories.md)。  
   
-2.  註冊 [工具箱] 索引標籤，而這個索引標籤會在編輯器或設計工具存在時自動啟動。  
+2. 註冊 [工具箱] 索引標籤，而這個索引標籤會在編輯器或設計工具存在時自動啟動。  
   
 ## <a name="controlling-the-toolbox"></a>控制工具箱  
  補充自動化支援， [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 提供下列介面讓 VSPackages 可更進一步地控制 [工具箱]  的管理方式。  

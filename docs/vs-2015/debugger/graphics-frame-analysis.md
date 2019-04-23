@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b02f1035a8b149ba8cfc1152bb83d1410bd86350
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942775"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053529"
 ---
 # <a name="graphics-frame-analysis"></a>圖形框架分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ ms.locfileid: "58942775"
   
  畫面格分析限制重試次數為 10 次。 如果您的平台具有主動電源管理或時間閘控，則可能會導致畫面格分析失敗並報告錯誤，原因是超出重試限制。 將平台的電源管理和時脈速度節流重設為較不主動 (平台啟用時)，也許可以解決此問題。  
   
-##  <a name="HardwareSupport"></a> 硬體支援  
+## <a name="HardwareSupport"></a> 硬體支援  
   
 ### <a name="timestamps-and-occlusion-queries"></a>時間戳記和阻擋查詢  
  所有支援畫面格分析的平台都支援時間戳記。 在支援功能層級 9.2 或更高層級的平台上，可支援深度阻擋查詢 (Pixels Occluded 計數器的必要項目)。  
@@ -182,7 +182,7 @@ ms.locfileid: "58942775"
 > [!NOTE]
 >  這只適用於您正在使用的 Direct3D API 呼叫，而非功能層級。 只要使用的是 Direct3D 11、Direct3D 11.1 或 Direct3D 11.2 API，就可以使用任何您要的功能層級，而且畫面格分析也能夠運作。  
   
-##  <a name="Variants"></a> 變異  
+## <a name="Variants"></a> 變異  
  畫面格分析對畫面格在播放期間的呈現方式，所進行的每項變更稱為「變異」(*variant*)。 畫面格分析所檢查的變異，會對應至常見且相當簡單的變更，而您使用這些變更就可以改善應用程式的呈現效能或視覺品質，例如，減少紋理大小、使用紋理壓縮，或啟用不同類型的消除鋸齒。 變異會覆寫您應用程式的一般呈現內容和參數。 摘要如下：  
   
 |變異|描述|  

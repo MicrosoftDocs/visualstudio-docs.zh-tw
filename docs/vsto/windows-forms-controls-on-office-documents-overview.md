@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a233518f34fdafdb45822f4bc12c3edc452f50cb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055349"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>在 Office 文件概觀上的 Windows Form 控制項
   Windows Forms 控制項是使用者可以互動，輸入或操作資料的物件。 在 Microsoft Office Excel 和 Microsoft Office Word 的文件層級專案，您可以將 Windows Form 控制項加入文件或活頁簿專案中在設計階段，或您可以在執行階段以程式設計方式加入這些控制項。 您可以程式設計方式加入這些控制項加入任何開啟的文件或 VSTO 增益集在執行階段的工作表的 Excel 或 Word。
@@ -42,19 +42,20 @@ ms.locfileid: "56598852"
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
 ## <a name="use-windows-forms-controls"></a>使用 Windows Form 控制項
- 您可以將 Windows Forms 控制項加入文件和可自訂的使用者介面 (UI) 項目，包括執行窗格、自訂工作窗格和 Windows Forms。 Windows Forms 控制項在文件上的行為通常與在這些其他 UI 項目上相同，但確實存在一些差異。 如需資訊，請參閱[Office 文件上的限制的 Windows Form 控制項](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)。
 
- 決定是否要將 Windows Forms 控制項加入文件或某個其他 UI 項目，取決於許多因素。 在設計您的方案 UI 時，請考慮如下表所述來使用 Windows Forms 控制項。
+您可以將 Windows Forms 控制項加入文件和可自訂的使用者介面 (UI) 項目，包括執行窗格、自訂工作窗格和 Windows Forms。 Windows Forms 控制項在文件上的行為通常與在這些其他 UI 項目上相同，但確實存在一些差異。 如需資訊，請參閱[Office 文件上的限制的 Windows Form 控制項](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)。
 
- 在文件上。
- -   當您想要一直顯示控制項時。
+決定是否要將 Windows Forms 控制項加入文件或某個其他 UI 項目，取決於許多因素。 在設計您的方案 UI 時，請考慮如下表所述來使用 Windows Forms 控制項。
+
+在文件上。
+- 當您想要一直顯示控制項時。
 
 - 當您想讓使用者直接在文件輸入資料時，例如在已鎖定編輯介面的表單式文件中。
 
 - 當您想控制項與文件中的資料對齊顯示時。 例如，如果您要將按鈕加入清單物件的每個資料列，您會想讓它們與每個清單項目對齊。
 
-  在執行窗格或自訂工作窗格上。
-  -   當您想要提供內容資訊給使用者時。
+在執行窗格或自訂工作窗格上。
+- 當您想要提供內容資訊給使用者時。
 
 - 當您只想要文件中出現結果，而不出現查詢控制項和資料時。
 
@@ -62,8 +63,8 @@ ms.locfileid: "56598852"
 
 - 當您想要確定控制項不會影響文件檢視時。
 
-  在 Windows Forms 上。
-  -   當您想要控制 UI 的大小時。
+在 Windows Forms 上。
+- 當您想要控制 UI 的大小時。
 
 - 當您想要防止使用者隱藏或刪除控制項時。
 
@@ -80,32 +81,32 @@ ms.locfileid: "56598852"
 ### <a name="create-custom-user-controls"></a>建立自訂使用者控制項
  您可以將使用者控制項加入您的專案，並再將它加入工具箱 。 接著可以直接將使用者控制項拖曳到文件，就像您將 Windows Forms 控制項加入文件的方式一樣。 建立使用者控制項時，有一些事項要謹記在心：
 
--   請勿建立 **sealed** 使用者控制項。 當您將控制項拖曳至文件時，Visual Studio 會產生衍生自使用者控制項的包裝函式類別，以便擴充它並支援其在文件上的使用。 如果使用者控制項為 **sealed**，則 Visual Studio 無法產生包裝函式類別。
+- 請勿建立 **sealed** 使用者控制項。 當您將控制項拖曳至文件時，Visual Studio 會產生衍生自使用者控制項的包裝函式類別，以便擴充它並支援其在文件上的使用。 如果使用者控制項為 **sealed**，則 Visual Studio 無法產生包裝函式類別。
 
--   使用者控制項的 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 屬性必須設定為 **true**。 在 Office 專案中建立的使用者控制項，此屬性預設會設定為 **true** ，但屬於外部專案一部分的使用者控制項，此屬性則可能不會設定為 **true**。
+- 使用者控制項的 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 屬性必須設定為 **true**。 在 Office 專案中建立的使用者控制項，此屬性預設會設定為 **true** ，但屬於外部專案一部分的使用者控制項，此屬性則可能不會設定為 **true**。
 
--   將使用者控制項加入文件之後，請勿重新命名或從專案刪除 <xref:System.Windows.Forms.UserControl> 類別。 如果您需要變更使用者控制項的名稱，必須先將它從文件中刪除，然後在變更名稱之後將它重新加入。
+- 將使用者控制項加入文件之後，請勿重新命名或從專案刪除 <xref:System.Windows.Forms.UserControl> 類別。 如果您需要變更使用者控制項的名稱，必須先將它從文件中刪除，然後在變更名稱之後將它重新加入。
 
 ### <a name="arrange-controls-at-design-time"></a>在設計階段排列控制項
  如果您在設計階段將多個控制項加入 Word 和 Excel 文件，可以在 Visual Studio 中使用 **Microsoft Office Word** 和 **Microsoft Office Excel** 工具列，快速地設定所有選取控制項的對齊方式。 只有當文件或工作表在設計工具中開啟時，才能使用這些工具列。
 
  當您在設計工具中選取多個控制項時，可以使用這些工具列中的下列按鈕來排列控制項：
 
--   **對齊主控項的左緣**
+- **對齊主控項的左緣**
 
--   **對齊主控項的水平中央**
+- **對齊主控項的水平中央**
 
--   **對齊主控項的右緣**
+- **對齊主控項的右緣**
 
--   **對齊主控項的上緣**
+- **對齊主控項的上緣**
 
--   **對齊主控項的垂直中間**
+- **對齊主控項的垂直中間**
 
--   **靠下對齊**
+- **靠下對齊**
 
--   **將水平間距設成相等**
+- **將水平間距設成相等**
 
--   **將垂直間距設為相等**
+- **將垂直間距設為相等**
 
 > [!NOTE]
 >  在 Word 專案中，只有選取的控制項與文字未對齊時才會啟用這些按鈕。 根據預設，在設計階段加入文件的控制項會與文字對齊。

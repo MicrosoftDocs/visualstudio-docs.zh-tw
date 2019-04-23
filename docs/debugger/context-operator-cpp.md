@@ -1,5 +1,5 @@
 ---
-title: 內容運算子，在偵錯工具 （c + +） |Microsoft Docs
+title: 在 偵錯工具中的內容運算子 (C++) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c39a9e4f268a0e11d7a0962820b418876e9733b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059015"
 ---
-# <a name="context-operator-in-the-visual-studio-debugger-c"></a>內容運算子，在 Visual Studio 偵錯工具 （c + +）
+# <a name="context-operator-in-the-visual-studio-debugger-c"></a>在 Visual Studio 偵錯工具中的內容運算子 (C++)
 您可以使用 C++ 中的內容運算子限定中斷點位置、變數名稱或運算式。 內容運算子對於指定來自外部範圍的名稱相當實用，因為這類名稱會被本機名稱所隱藏。
 
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 語法
+## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 語法
  指定內容的方式有兩種：
 
-1.  {,,[*module*] } *expression*
+1. {,,[*module*] } *expression*
 
      大括號必須包含兩個逗號和模組 (可執行檔或 DLL) 名稱或完整路徑。
 
@@ -45,7 +45,7 @@ ms.locfileid: "56633534"
     {,,EXAMPLE.dll}SomeFunction
     ```
 
-2.  *module*!*expression*
+2. *module*!*expression*
 
     ```C++
     EXAMPLE.dll!SomeFunction
@@ -63,12 +63,12 @@ ms.locfileid: "56633534"
 
   當運算式評估工具在運算式中遇到符號時，它會依照下列順序搜尋該符號：
 
-1.  語彙範圍向外擴展，從目前區塊開始 (大括號括住的一連串陳述式)，並繼續向外擴展至封閉區塊。 目前區塊是包含目前位置 (指令指標位址) 的程式碼。
+1. 語彙範圍向外擴展，從目前區塊開始 (大括號括住的一連串陳述式)，並繼續向外擴展至封閉區塊。 目前區塊是包含目前位置 (指令指標位址) 的程式碼。
 
-2.  函式範圍。 目前函式。
+2. 函式範圍。 目前函式。
 
-3.  類別範圍 (如果目前位置是在 C++ 成員函式內)。 類別範圍包括所有基底類別。 運算式評估工具將使用一般支配規則。
+3. 類別範圍 (如果目前位置是在 C++ 成員函式內)。 類別範圍包括所有基底類別。 運算式評估工具將使用一般支配規則。
 
-4.  目前模組中的全域符號。
+4. 目前模組中的全域符號。
 
-5.  目前程式中的公用符號。
+5. 目前程式中的公用符號。

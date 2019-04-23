@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 82b58cc0287644a4ca21bf6333bf791b3c02e924
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1990e781b5793b05166c6ff5b6e9c14141ffdd69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943491"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058598"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140:透明程式碼不可以參考安全性關鍵項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,21 +37,21 @@ ms.locfileid: "58943491"
 ## <a name="cause"></a>原因
  透明的方法：
 
--   處理安全性關鍵的安全性例外狀況類型
+- 處理安全性關鍵的安全性例外狀況類型
 
--   具有參數標記為安全性關鍵類型
+- 具有參數標記為安全性關鍵類型
 
--   具有安全性關鍵條件約束的泛型參數
+- 具有安全性關鍵條件約束的泛型參數
 
--   具有安全性關鍵類型的本機變數
+- 具有安全性關鍵類型的本機變數
 
--   參考的類型會標示為安全性關鍵，
+- 參考的類型會標示為安全性關鍵，
 
--   呼叫標記為安全性關鍵方法
+- 呼叫標記為安全性關鍵方法
 
--   參考的欄位標記為安全性關鍵
+- 參考的欄位標記為安全性關鍵
 
--   傳回標記為安全性關鍵類型
+- 傳回標記為安全性關鍵類型
 
 ## <a name="rule-description"></a>規則描述
  標示的程式碼項目<xref:System.Security.SecurityCriticalAttribute>屬性是安全性關鍵。 透明方法不能使用安全性關鍵項目。 如果透明類型嘗試使用安全性關鍵類型<xref:System.TypeAccessException>， <xref:System.MethodAccessException> ，或<xref:System.FieldAccessException>，就會引發。
@@ -59,11 +59,11 @@ ms.locfileid: "58943491"
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請執行下列其中一項：
 
--   標記會使用安全性關鍵程式碼與程式碼項目<xref:System.Security.SecurityCriticalAttribute>屬性
+- 標記會使用安全性關鍵程式碼與程式碼項目<xref:System.Security.SecurityCriticalAttribute>屬性
 
      \-或-
 
--   移除<xref:System.Security.SecurityCriticalAttribute>從程式碼項目會標示為安全性關鍵，而是將它們與標記的屬性<xref:System.Security.SecuritySafeCriticalAttribute>或<xref:System.Security.SecurityTransparentAttribute>屬性。
+- 移除<xref:System.Security.SecurityCriticalAttribute>從程式碼項目會標示為安全性關鍵，而是將它們與標記的屬性<xref:System.Security.SecuritySafeCriticalAttribute>或<xref:System.Security.SecurityTransparentAttribute>屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。

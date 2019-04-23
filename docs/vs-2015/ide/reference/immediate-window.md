@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 574b480cbdce0f038ba4d94be6dc2ba9cf46726c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7a39b6f84185c78ccea11e09e628050a6bf4f601
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660290"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053391"
 ---
 # <a name="immediate-window"></a>即時運算視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -118,9 +118,9 @@ ms.locfileid: "59660290"
   
 #### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>切換 [即時運算] 視窗中發生第一個例外狀況的通知  
   
-1.  在 [檢視] 功能表上，按一下 [其他視窗]，然後按一下 [輸出]。  
+1. 在 [檢視] 功能表上，按一下 [其他視窗]，然後按一下 [輸出]。  
   
-2.  以滑鼠右鍵按一下 [輸出] 視窗的文字區域，然後選取或取消選取 [例外狀況訊息]。  
+2. 以滑鼠右鍵按一下 [輸出] 視窗的文字區域，然後選取或取消選取 [例外狀況訊息]。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用偵錯工具巡覽程式碼](../../debugger/navigating-through-code-with-the-debugger.md)   

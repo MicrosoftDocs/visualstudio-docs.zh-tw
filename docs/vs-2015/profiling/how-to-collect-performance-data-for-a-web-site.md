@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366727"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060549"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>HOW TO：為網站收集效能資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,25 +46,25 @@ ms.locfileid: "59366727"
   
 ### <a name="to-profile-a-web-site-project"></a>對網站專案進行程式碼剖析  
   
-1.  在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 或 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 中，開啟 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]Web 專案。  
+1. 在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 或 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 中，開啟 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]Web 專案。  
   
-2.  按一下 [分析]  功能表上的 [啟動效能精靈] 。  
+2. 按一下 [分析]  功能表上的 [啟動效能精靈] 。  
   
-3.  在精靈的第一個頁面上，選取程式碼剖析方法，然後按一下 [下一步] 。 如需程式碼剖析方法的詳細資訊，請參閱[了解效能收集方法](../profiling/understanding-performance-collection-methods.md)。 請注意，並行視覺化檢視程式碼剖析方法不適用於 Web 應用程式。  
+3. 在精靈的第一個頁面上，選取程式碼剖析方法，然後按一下 [下一步] 。 如需程式碼剖析方法的詳細資訊，請參閱[了解效能收集方法](../profiling/understanding-performance-collection-methods.md)。 請注意，並行視覺化檢視程式碼剖析方法不適用於 Web 應用程式。  
   
-4.  在 [您要以哪一個應用程式作為分析的目標?]  下拉式清單中，確認已選取目前的專案，然後按一下 [下一步] 。  
+4. 在 [您要以哪一個應用程式作為分析的目標?]  下拉式清單中，確認已選取目前的專案，然後按一下 [下一步] 。  
   
-5.  在精靈的第三個頁面上，您可以選擇是否要新增階層互動分析 (TIP) 資料及/或網頁中執行之 JavaScript 的資料。  
+5. 在精靈的第三個頁面上，您可以選擇是否要新增階層互動分析 (TIP) 資料及/或網頁中執行之 JavaScript 的資料。  
   
-    -   若要收集階層互動，請選取 [啟用階層互動分析]  核取方塊。  
+    - 若要收集階層互動，請選取 [啟用階層互動分析]  核取方塊。  
   
-    -   若要從網頁中執行的 JavaScript 收集資料，請選取 [分析 JavaScript]  核取方塊。  
+    - 若要從網頁中執行的 JavaScript 收集資料，請選取 [分析 JavaScript]  核取方塊。  
   
-6.  按 [ **下一步**]。  
+6. 按 [ **下一步**]。  
   
-7.  在精靈的第四個頁面上，按一下 [完成] 。  
+7. 在精靈的第四個頁面上，按一下 [完成] 。  
   
-8.  隨即為 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式建立效能工作階段，並在瀏覽器中啟動網站。 執行您要進行程式碼剖析的功能，然後關閉瀏覽器。  
+8. 隨即為 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式建立效能工作階段，並在瀏覽器中啟動網站。 執行您要進行程式碼剖析的功能，然後關閉瀏覽器。  
   
      分析工具隨即產生資料檔案，並在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 主視窗中顯示資料的 [摘要] 檢視。  
   
@@ -90,9 +90,9 @@ ms.locfileid: "59366727"
   
 6. 在精靈的第三個頁面上，您可以選擇是否要新增階層互動分析 (TIP) 資料及/或網頁中執行之 JavaScript 的資料。  
   
-   -   若要收集階層互動，請選取 [啟用階層互動分析]  核取方塊。  
+   - 若要收集階層互動，請選取 [啟用階層互動分析]  核取方塊。  
   
-   -   若要從網頁中執行的 JavaScript 收集資料，請選取 [分析 JavaScript]  核取方塊。  
+   - 若要從網頁中執行的 JavaScript 收集資料，請選取 [分析 JavaScript]  核取方塊。  
   
 7. 按 [ **下一步**]。  
   

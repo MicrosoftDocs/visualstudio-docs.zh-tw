@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2358e177f049d9eda17bcb54baf6a547605419c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056805"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -249,11 +249,11 @@ ms.locfileid: "59653095"
   
  第二個資料列中，不過，`Update`方法自動叫用正確的資料命令，並將其傳送至資料庫。 SQL 陳述式的特定語法取決於基礎資料存放區所支援的 SQL 方言。 但下列傳輸的 SQL 陳述式的一般特性值得注意：  
   
--   傳送的 SQL 陳述式是 UPDATE 陳述式。 配接器知道要使用 UPDATE 陳述式，因為值<xref:System.Data.DataRow.RowState%2A>屬性是<xref:System.Data.DataRowState>。  
+- 傳送的 SQL 陳述式是 UPDATE 陳述式。 配接器知道要使用 UPDATE 陳述式，因為值<xref:System.Data.DataRow.RowState%2A>屬性是<xref:System.Data.DataRowState>。  
   
--   傳送的 SQL 陳述式包含 WHERE 子句的 UPDATE 陳述式的目標資料列，指出其中`CustomerID = 'c400'`。 SELECT 陳述式的這個部分會區分來自其他所有用途的目標資料列因為`CustomerID`是目標資料表的主索引鍵。 WHERE 子句衍生自資料錄的原始版本的資訊 (`DataRowVersion.Original`)，以免才能識別資料列的值已變更。  
+- 傳送的 SQL 陳述式包含 WHERE 子句的 UPDATE 陳述式的目標資料列，指出其中`CustomerID = 'c400'`。 SELECT 陳述式的這個部分會區分來自其他所有用途的目標資料列因為`CustomerID`是目標資料表的主索引鍵。 WHERE 子句衍生自資料錄的原始版本的資訊 (`DataRowVersion.Original`)，以免才能識別資料列的值已變更。  
   
--   傳送的 SQL 陳述式包含的 SET 子句，來設定新的已修改的資料行的值。  
+- 傳送的 SQL 陳述式包含的 SET 子句，來設定新的已修改的資料行的值。  
   
     > [!NOTE]
     >  如果使用的 TableAdapter`UpdateCommand`屬性設定為預存程序的名稱、 配接器將不會建構 SQL 陳述式。 相反地，它會叫用預存程序以適當的參數傳入。  

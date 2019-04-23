@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5d619a18fa38c09b25f2d8367f3f767ac5bdc11
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651078"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054440"
 ---
 # <a name="target-build-order"></a>目標建置順序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,19 +107,19 @@ ms.locfileid: "59651078"
 ## <a name="determining-the-target-build-order"></a>判斷目標建置順序  
  MSBuild 會以如下方式判斷目標建置順序：  
   
-1.  執行 `InitialTargets` 目標。  
+1. 執行 `InitialTargets` 目標。  
   
-2.  執行命令列上使用 **/target** 參數指定的目標。 如果您未在命令列上指定目標，則會執行 `DefaultTargets` 目標。 如果兩者都不存在，則會執行第一個遇到的目標。  
+2. 執行命令列上使用 **/target** 參數指定的目標。 如果您未在命令列上指定目標，則會執行 `DefaultTargets` 目標。 如果兩者都不存在，則會執行第一個遇到的目標。  
   
-3.  評估目標的 `Condition` 屬性。 如果 `Condition` 屬性存在且評估為 `false`，則不會執行目標，且不會對組建產生任何進一步的作用。  
+3. 評估目標的 `Condition` 屬性。 如果 `Condition` 屬性存在且評估為 `false`，則不會執行目標，且不會對組建產生任何進一步的作用。  
   
-4.  執行目標之前，會執行它的 `DependsOnTargets` 目標。  
+4. 執行目標之前，會執行它的 `DependsOnTargets` 目標。  
   
-5.  執行目標之前，會執行在 `BeforeTargets` 屬性中列出它的任何目標。  
+5. 執行目標之前，會執行在 `BeforeTargets` 屬性中列出它的任何目標。  
   
-6.  執行目標之前，會將它的 `Inputs` 屬性和 `Outputs` 屬性進行比較。 如果 MSBuild 判斷有任何與一或多個對應輸入檔相關的輸出檔過時，則 MSBuild 會執行目標。 否則，MSBuild 會略過目標。  
+6. 執行目標之前，會將它的 `Inputs` 屬性和 `Outputs` 屬性進行比較。 如果 MSBuild 判斷有任何與一或多個對應輸入檔相關的輸出檔過時，則 MSBuild 會執行目標。 否則，MSBuild 會略過目標。  
   
-7.  執行或略過目標之後，就會執行在 `AfterTargets` 屬性中列出它的任何目標。  
+7. 執行或略過目標之後，就會執行在 `AfterTargets` 屬性中列出它的任何目標。  
   
 ## <a name="see-also"></a>另請參閱  
  [目標](../msbuild/msbuild-targets.md)

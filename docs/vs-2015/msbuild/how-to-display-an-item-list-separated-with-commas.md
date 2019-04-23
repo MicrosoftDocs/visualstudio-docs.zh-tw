@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 16a41c2c80948c1466deed3efe8354e49ba64595
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 93451d6d49082621df48c734de951e6a4bc7e281
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655071"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059353"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>如何：顯示以逗號分隔的項目清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "59655071"
   
 #### <a name="to-insert-a-comma-and-a-space-between-items"></a>若要在項目之間插入逗號和空格  
   
--   使用類似下列的項目標記法：  
+- 使用類似下列的項目標記法：  
   
      `@(TXTFile, ', ')`  
   

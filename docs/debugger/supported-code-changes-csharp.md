@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9e840a8bb19b48c5cd4526ad80526bd62fcf8fa0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: f20f61ffc4a6e4105a96b58c3dc73e7154e7c9cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526175"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055784"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>支援的程式碼變更 (C#和 Visual Basic)
 [編輯後繼續] 會處理方法主體內大多數程式碼的變更。 但是在偵錯期間，無法套用方法主體外的變更和方法主體內的某些變更。 若要套用這些不支援的變更，您必須停止偵錯，然後使用新版程式碼重新啟動偵錯。
@@ -45,7 +45,7 @@ ms.locfileid: "57526175"
 ## <a name="unsupported-changes-to-code"></a>不支援的變更程式碼
  下列變更無法套用至C#和 Visual Basic 程式碼偵錯工作階段：
 
--   變更目前的陳述式或任何其他使用中陳述式。
+- 變更目前的陳述式或任何其他使用中陳述式。
 
      使用中陳述式包含了在呼叫堆疊的函式中，為了取得目前陳述式而呼叫的任何陳述式。
 
@@ -78,7 +78,7 @@ ms.locfileid: "57526175"
 |迭代器|修改迭代器，在以.NET Framework 4 為目標的專案，並降低 (請參閱[詳細資料](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>Unsafe 程式碼
- 變更 Unsafe 程式碼的限制與變更 Safe 程式碼的限制相同，但前者多了下列這一項額外限制：[編輯後繼續] 不支援對包含 `stackalloc` 運算子之方法內的 Unsafe 程式碼進行變更。
+ 變更 Unsafe 程式碼的限制與變更 Safe 程式碼的限制相同，但前者多了下列這一項額外限制：編輯後繼續不支援包含的方法內的 unsafe 程式碼變更`stackalloc`運算子。
 
 ## <a name="unsupported-app-scenarios"></a>不支援的應用程式案例
 
@@ -90,20 +90,20 @@ ms.locfileid: "57526175"
 ## <a name="unsupported-scenarios"></a>不支援的情節
  [編輯後繼續] 無法用於下列偵錯案例中：
 
--   混合模式 (原生/Managed) 偵錯。
+- 混合模式 (原生/Managed) 偵錯。
 
--   SQL 偵錯
+- SQL 偵錯
 
--   偵錯 Dr.Watson 傾印。
+- 偵錯 Dr.Watson 傾印。
 
--   偵錯內嵌的執行階段應用程式。
+- 偵錯內嵌的執行階段應用程式。
 
--   偵錯應用程式使用附加至處理序 (**偵錯 > připojit k procesu**) 而不是藉由選擇執行應用程式**開始**從**偵錯**功能表。
+- 偵錯應用程式使用附加至處理序 (**偵錯 > připojit k procesu**) 而不是藉由選擇執行應用程式**開始**從**偵錯**功能表。
 
--   偵錯最佳化程式碼
+- 偵錯最佳化程式碼
 
--   由於建置錯誤以致新版本建置失敗之後，對舊版程式碼進行偵錯。
+- 由於建置錯誤以致新版本建置失敗之後，對舊版程式碼進行偵錯。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [編輯後繼續 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
 - [如何：使用編輯後繼續 (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

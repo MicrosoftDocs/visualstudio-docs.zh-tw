@@ -27,12 +27,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 883c56ce2bd272e508bc79d1d0c07db02350862d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657424"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062031"
 ---
 # <a name="midl-task"></a>MIDL 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "59657424"
 ## <a name="parameters"></a>參數  
  下表說明 **MIDL** 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。  
   
--   **AdditionalIncludeDirectories**  
+- **AdditionalIncludeDirectories**  
   
      選擇性的 **String[]** 參數。  
   
@@ -50,7 +50,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/I** 選項。  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      選擇性的 **String** 參數。  
   
@@ -58,7 +58,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜MIDL 命令列參考＞。  
   
--   **ApplicationConfigurationMode**  
+- **ApplicationConfigurationMode**  
   
      選擇性的 **Boolean** 參數。  
   
@@ -66,7 +66,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/app_config** 選項。  
   
--   **ClientStubFile**  
+- **ClientStubFile**  
   
      選擇性的 **String** 參數。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/cstub** 選項。 另請參閱此表格中的 **ServerStubFile** 參數。  
   
--   **CPreprocessOptions**  
+- **CPreprocessOptions**  
   
      選擇性的 **String** 參數。  
   
@@ -82,7 +82,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/cpp_opt** 選項。  
   
--   **DefaultCharType**  
+- **DefaultCharType**  
   
      選擇性的 **String** 參數。  
   
@@ -98,7 +98,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/char** 選項。  
   
--   **DllDataFileName**  
+- **DllDataFileName**  
   
      選擇性的 **String** 參數。  
   
@@ -106,7 +106,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/dlldata** 選項。  
   
--   **EnableErrorChecks**  
+- **EnableErrorChecks**  
   
      選擇性的 **String** 參數。  
   
@@ -122,7 +122,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/error** 選項。  
   
--   **ErrorCheckAllocations**  
+- **ErrorCheckAllocations**  
   
      選擇性的 **Boolean** 參數。  
   
@@ -130,7 +130,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/error allocation** 選項。  
   
--   **ErrorCheckBounds**  
+- **ErrorCheckBounds**  
   
      選擇性的 **Boolean** 參數。  
   
@@ -138,7 +138,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/error bounds_check** 選項。  
   
--   **ErrorCheckEnumRange**  
+- **ErrorCheckEnumRange**  
   
      選擇性的 **Boolean** 參數。  
   
@@ -146,7 +146,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 midl.exe 的命令列說明 (**/?**) 中的 **/error enum** 選項。  
   
--   **ErrorCheckRefPointers**  
+- **ErrorCheckRefPointers**  
   
      選擇性的 **Boolean** 參數。  
   
@@ -154,7 +154,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/error ref** 選項。  
   
--   **ErrorCheckStubData**  
+- **ErrorCheckStubData**  
   
      選擇性的 **Boolean** 參數。  
   
@@ -162,7 +162,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/error stub_data** 選項。  
   
--   **GenerateClientFiles**  
+- **GenerateClientFiles**  
   
      選擇性的 **String** 參數。  
   
@@ -177,7 +177,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/client** 選項。  
   
--   **GenerateServerFiles**  
+- **GenerateServerFiles**  
   
      選擇性的 **String** 參數。  
   
@@ -192,7 +192,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/server** 選項。  
   
--   **GenerateStublessProxies**  
+- **GenerateStublessProxies**  
   
      選擇性的 **Boolean** 參數。  
   
@@ -200,7 +200,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/Oicf** 選項。  
   
--   **GenerateTypeLibrary**  
+- **GenerateTypeLibrary**  
   
      選擇性的 **Boolean** 參數。  
   
@@ -208,7 +208,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/notlb** 選項。  
   
--   **HeaderFileName**  
+- **HeaderFileName**  
   
      選擇性的 **String** 參數。  
   
@@ -216,7 +216,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/h** or **/header** 選項。  
   
--   **IgnoreStandardIncludePath**  
+- **IgnoreStandardIncludePath**  
   
      選擇性的 **Boolean** 參數。  
   
@@ -224,7 +224,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/no_def_idir** 選項。  
   
--   **InterfaceIdentifierFileName**  
+- **InterfaceIdentifierFileName**  
   
      選擇性的 **String** 參數。  
   
@@ -232,7 +232,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/iid** 選項。  
   
--   **LocaleID**  
+- **LocaleID**  
   
      選擇性的 **int** 參數。  
   
@@ -240,7 +240,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/lcid** 選項。 另請參閱 MSDN 上的＜Microsoft 提供的地區設定識別項＞。  
   
--   **MkTypLibCompatible**  
+- **MkTypLibCompatible**  
   
      選擇性的 **Boolean** 參數。  
   
@@ -248,7 +248,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/mktyplib203** 選項。 另請參閱 MSDN 網站上的＜ODL 檔案語法＞。  
   
--   **OutputDirectory**  
+- **OutputDirectory**  
   
      選擇性的 **String** 參數。  
   
@@ -256,7 +256,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/out** 選項。  
   
--   **PreprocessorDefinitions**  
+- **PreprocessorDefinitions**  
   
      選擇性的 **String[]** 參數。  
   
@@ -264,7 +264,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/D** 選項。 另請參閱此表格中的 **UndefinePreprocessorDefinitions** 參數。  
   
--   **ProxyFileName**  
+- **ProxyFileName**  
   
      選擇性的 **String** 參數。  
   
@@ -272,7 +272,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/proxy** 選項。  
   
--   **RedirectOutputAndErrors**  
+- **RedirectOutputAndErrors**  
   
      選擇性的 **String** 參數。  
   
@@ -280,7 +280,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/o** 選項。  
   
--   **ServerStubFile**  
+- **ServerStubFile**  
   
      選擇性的 **String** 參數。  
   
@@ -288,13 +288,13 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/sstub** 選項。 另請參閱此表格中的 **ClientStubFile** 參數。  
   
--   **Source**  
+- **Source**  
   
      必要的 `ITaskItem[]` 參數。  
   
      指定以空格分隔的原始程式檔清單。  
   
--   **StructMemberAlignment**  
+- **StructMemberAlignment**  
   
      選擇性的 **String** 參數。  
   
@@ -312,7 +312,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/Zp** 選項。 **/Zp** 選項相當於 **/pack** 選項和較舊的 **/align** 選項。  
   
--   **SuppressCompilerWarnings**  
+- **SuppressCompilerWarnings**  
   
      選擇性的 **Boolean** 參數。  
   
@@ -320,7 +320,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/no_warn** 選項。  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      選擇性的 `Boolean` 參數。  
   
@@ -328,7 +328,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/nologo** 選項。  
   
--   **TargetEnvironment**  
+- **TargetEnvironment**  
   
      選擇性的 **String** 參數。  
   
@@ -345,13 +345,13 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/env** 選項。  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      選擇性的 `String` 參數。  
   
      指定儲存此工作之追蹤記錄檔的中繼目錄。  
   
--   **TypeLibFormat**  
+- **TypeLibFormat**  
   
      選擇性的 **String** 參數。  
   
@@ -366,7 +366,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/newtlb** 和 **/oldtlb** 選項。  
   
--   **TypeLibraryName**  
+- **TypeLibraryName**  
   
      選擇性的 **String** 參數。  
   
@@ -374,7 +374,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/tlb** 選項。  
   
--   **UndefinePreprocessorDefinitions**  
+- **UndefinePreprocessorDefinitions**  
   
      選擇性的 **String[]** 參數。  
   
@@ -382,7 +382,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/U** 選項。 另請參閱此表格中的 **PreprocessorDefinitions** 參數。  
   
--   **ValidateAllParameters**  
+- **ValidateAllParameters**  
   
      選擇性的 `Boolean` 參數。  
   
@@ -390,7 +390,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/robust** 和 **/no_robust** 選項。  
   
--   **WarnAsError**  
+- **WarnAsError**  
   
      選擇性的 `Boolean` 參數。  
   
@@ -400,7 +400,7 @@ ms.locfileid: "59657424"
   
      如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上＜MIDL 命令列參考＞中的 **/WX** 選項。 另請參閱此表格中的 **WarningLevel** 參數。  
   
--   **WarningLevel**  
+- **WarningLevel**  
   
      選擇性的 **String** 參數。  
   

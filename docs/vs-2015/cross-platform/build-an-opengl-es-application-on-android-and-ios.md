@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: fa7b0ed959fba781397b3b85ee59f2e62588596c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b9f5db4ccd70136b711f5bd221244418cf843485
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652692"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061654"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Build an OpenGL ES Application on Android and iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,10 +29,10 @@ ms.locfileid: "59652692"
  [建置並執行 iOS 應用程式](#BuildIOS)   
  [自訂您的應用程式](#Customize)  
   
-##  <a name="req"></a> 需求  
+## <a name="req"></a> 需求  
  在您建立適用於 iOS 和 Android 的 OpenGL ES 應用程式之前，您必須確定符合所有系統需求。 您必須在 Visual Studio 2015 中，安裝適用於跨平台行動裝置開發的 Visual C++ 選項。 請確認安裝包含所需之協力廠商工具和 SDK，並已安裝 Visual Studio Emulator for Android。 如需詳細資訊和詳細指示，請參閱 [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)。 若要建置及測試 iOS 應用程式，您需要一部已根據安裝指示設定的 Mac 電腦。 如需如何設定 iOS 開發環境的詳細資訊，請參閱 [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
-##  <a name="Create"></a> 建立新的 OpenGLES 應用程式專案  
+## <a name="Create"></a> 建立新的 OpenGLES 應用程式專案  
  在本教學課程中，您會先建立新的 OpenGL ES 應用程式專案，然後在 Visual Studio Emulator for Android 中建置並執行預設的應用程式。 接下來，您會建置 iOS 應用程式，然後在 iOS 模擬器中執行該應用程式。  
   
 #### <a name="to-create-a-new-project"></a>建立新的專案  
@@ -63,7 +63,7 @@ ms.locfileid: "59652692"
   
 - **MyOpenGLESApp.iOS.Application** 包含資源和 Objective-C 黏附程式碼，以建立連結至 MyOpenGLESApp.iOS.StaticLibrary 中 C++ 靜態程式庫程式碼的 iOS 應用程式。 這個專案會建立組建套件，並由 Visual Studio 和遠端代理程式傳輸到您的 Mac。 當您建置這個專案時，Visual Studio 會傳送檔案和命令，以在 Mac 上建置及部署應用程式。  
   
-##  <a name="BuildAndroid"></a> 建置並執行 Android 應用程式  
+## <a name="BuildAndroid"></a> 建置並執行 Android 應用程式  
  範本所建立的方案會將 Android 應用程式設定為預設專案。  您可以建置並執行這個應用程式，以確認您的安裝和設定。 針對初始測試，在 Visual Studio Emulator for Android 安裝的其中一個裝置設定檔上執行應用程式。 如果您想要在其他目標上測試您的應用程式，您可以載入目標模擬器，或將裝置連接至您的電腦。  
   
 #### <a name="to-build-and-run-the-android-native-activity-app"></a>建置並執行 Android Native Activity 應用程式  
@@ -104,7 +104,7 @@ ms.locfileid: "59652692"
   
    Visual Studio 建置 Android Native Activity 專案的方式，是透過使用 Clang 做為平台工具組的 Android NDK。 Visual Studio 會將 NativeActivity 專案中的屬性對應至命令列參數和選項，以在目標平台上進行編譯、連結及偵錯。 如需詳細資料，請開啟 MyOpenGLESApp.Android.NativeActivity 專案的 [屬性頁]  對話方塊。 如需命令列參數的詳細資訊，請參閱 [Clang Compiler 使用者手冊](http://clang.llvm.org/docs/UsersManual.html)。  
   
-##  <a name="BuildIOS"></a> 建置並執行 iOS 應用程式  
+## <a name="BuildIOS"></a> 建置並執行 iOS 應用程式  
  iOS 應用程式專案是在 Visual Studio 中建立及編輯，但由於授權限制，它必須從 Mac 建置及部署。 Visual Studio 會與 Mac 上所執行的遠端代理程式通訊，以傳輸專案檔，並執行建置、部署和偵錯命令。 您必須安裝及設定 Mac 和 Visual Studio 以進行通訊，才能建置 iOS 應用程式。 如需詳細指示，請參閱 [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)。 一旦執行遠端代理程式且 Visual Studio 與 Mac 搭配使用，您便可以建置並執行 iOS 應用程式，以確認您的安裝和設定。  
   
 #### <a name="to-build-and-run-the-ios-app"></a>建置並執行 iOS 應用程式  
@@ -143,7 +143,7 @@ ms.locfileid: "59652692"
   
    Visual Studio 會將專案檔和命令傳送到遠端用戶端，以使用 Xcode 建置應用程式。 遠端用戶端會將組建狀態資訊傳回 Visual Studio。 在應用程式順利建置之後，您可以使用 Visual Studio 傳送命令，以執行並偵錯應用程式。 Visual Studio 中的偵錯工具可控制 Mac 或附加 iOS 裝置上所執行之 iOS 模擬器中正在執行的應用程式。 Visual Studio 會將 StaticLibrary 專案中的屬性對應至命令列參數和選項，以在目標 iOS 平台上進行建置、連結及偵錯。 如需編譯器命令列選項詳細資料，請開啟 MyOpenGLESApp.iOS.StaticLibrary 專案的 [屬性頁]  對話方塊。  
   
-##  <a name="Customize"></a> 自訂您的應用程式  
+## <a name="Customize"></a> 自訂您的應用程式  
  您可以修改共用的 C++ 程式碼，加入或變更一般常見功能。 您必須變更 MyOpenGLESApp.Android.NativeActivity 和 MyOpenGLESApp.iOS.Application 專案中的共用程式碼呼叫使其相符。 您可以使用前置處理器巨集，來指定通用程式碼中的平台專屬區段。 當您針對 Android 建置時，系統會預先定義前置處理器巨集 `__ANDROID__` 。 當您針對 iOS 建置時，系統會預先定義前置處理器巨集 `__APPLE__` 。  
   
  若要查看特定專案平台的 IntelliSense，請在編輯器視窗頂端的巡覽列中，選擇內容切換器下拉式清單中的專案。  

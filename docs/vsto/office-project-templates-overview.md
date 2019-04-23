@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c64fac3e69a1b7678b9583f8529dd7b94201932e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614684"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054569"
 ---
 # <a name="office-project-templates-overview"></a>Office 專案範本概觀
   Visual Studio 中的 Microsoft Office 開發人員工具包含專案範本，用來建立下列類型的 Office 方案：
@@ -53,7 +53,7 @@ ms.locfileid: "56614684"
 > [!NOTE]
 > 特定 Visual Studio 版本隨附 Office 開發工具。 如需詳細資訊，請參閱 <<c0> [ 設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。
 
-##  <a name="DocLevel"></a> 文件層級自訂
+## <a name="DocLevel"></a> 文件層級自訂
  [ **新增專案** ] 對話方塊中的 [ **Office** ] 節點提供下列專案範本，讓您開始建立 Word 和 Excel 文件層級的自訂：
 
 - **Word 2013 和 2016 VSTO 文件**
@@ -81,17 +81,17 @@ ms.locfileid: "56614684"
 
  如需開始使用這些專案類型的詳細資訊，請參閱下列主題：
 
--   [程式文件層級自訂](../vsto/programming-document-level-customizations.md)
+- [程式文件層級自訂](../vsto/programming-document-level-customizations.md)
 
--   [Word 方案](../vsto/word-solutions.md)
+- [Word 方案](../vsto/word-solutions.md)
 
--   [Excel 方案](../vsto/excel-solutions.md)
+- [Excel 方案](../vsto/excel-solutions.md)
 
--   [逐步解說：建立 Word 的第一個文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [逐步解說：建立 Word 的第一個文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 
--   [逐步解說：建立您第一個適用於 Excel 的文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
+- [逐步解說：建立您第一個適用於 Excel 的文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
 
-##  <a name="AppLevel"></a> VSTO 增益集
+## <a name="AppLevel"></a> VSTO 增益集
  [新增專案]  對話方塊中的 [Office/SharePoint]  節點提供下列專案範本，讓您開始建立 VSTO 增益集。
 
 - **Excel 2013 和 2016 VSTO 增益集**
@@ -157,7 +157,7 @@ ms.locfileid: "56614684"
 |除非文件已設定成唯讀，否則使用者可以開啟並且修改文件。 任何儲存的變更都會保存在原始文件中。|使用者可以開啟範本做為新文件來建立本機複本。 除非授與他們特別的使用權限，否則他們不能修改原始文件。|
 |文件開啟時會引發 <xref:Microsoft.Office.Tools.Word.Document.Open> 事件。|範本開啟時會引發 <xref:Microsoft.Office.Tools.Word.Document.New> 事件。|
 
-##  <a name="Limitations"></a> 全域範本和 Excel 增益集 （.xla 檔案） 的限制
+## <a name="Limitations"></a> 全域範本和 Excel 增益集 （.xla 檔案） 的限制
  文件、活頁簿及範本可能無法像全域範本或 Excel VSTO 增益集 (.xla 檔案) 一般正常運作。
 
 ## <a name="word-templates"></a>Word 範本

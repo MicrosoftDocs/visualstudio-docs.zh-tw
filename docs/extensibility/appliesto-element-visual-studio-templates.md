@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 348ddd00d6f6db0ac4080030d2ecaa5b73c57f18
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f14924ac9464cc6239564f775a122551a9d94c15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335190"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055193"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 元素 （Visual Studio 範本）
 
@@ -60,19 +60,19 @@ ms.locfileid: "56335190"
 
 有效的運算式語法定義如下：
 
--   功能運算式，例如"(VisualC &#124; CSharp) + (MSTest &#124; NUnit)"。
+- 功能運算式，例如"(VisualC &#124; CSharp) + (MSTest &#124; NUnit)"。
 
--   「&#124;"是 OR 運算子。
+- 「&#124;"是 OR 運算子。
 
--   "&" 和 "+" 字元都是 AND 運算子。
+- "&"和"+"字元都是 AND 運算子。
 
--   "!" 字元是 NOT 運算子。
+- "!" 字元是 NOT 運算子。
 
--   括號會強制執行評估優先順序。
+- 括號會強制執行評估優先順序。
 
--   Null 或空白運算式會判斷值為相符項目。
+- Null 或空白運算式會判斷值為相符項目。
 
--   專案功能可以是下列這些保留字元以外的任何字元:"':;,+-*/\\！ ~&#124;& %$@^() ={}[] <> 嗎？ \t\b\n\r
+- 專案功能可以是下列這些保留字元以外的任何字元:"':;,+-*/\\！ ~&#124;& %$@^() ={}[] <> 嗎？ \t\b\n\r
 
 ## <a name="example"></a>範例
 
