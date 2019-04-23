@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d2abc185d06aa74e47bb2a36bd17df12a9db5c8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710301"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048684"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>逐步解說：編輯器擴充功能搭配使用攠摝坫
 您可以在您的編輯器延伸模組中回應快速鍵。 下列逐步解說會示範如何使用快速鍵將文字檢視的檢視裝飾。 本逐步解說根據檢視區 adornment 編輯器範本，並可讓您使用新增 adornment + 字元。
@@ -61,9 +61,9 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
  命令篩選器是實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>，藉由執行個體化 adornment 處理命令。
 
-1.  加入類別檔案，並將它命名為 `KeyBindingCommandFilter`。
+1. 加入類別檔案，並將它命名為 `KeyBindingCommandFilter`。
 
-2.  使用陳述式加入下列程式碼。
+2. 使用陳述式加入下列程式碼。
 
     ```csharp
     using System;
@@ -74,13 +74,13 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
     ```
 
-3.  名為 KeyBindingCommandFilter 的類別應該繼承自<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。
+3. 名為 KeyBindingCommandFilter 的類別應該繼承自<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。
 
     ```csharp
     internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
-4.  文字檢視的私用欄位下, 一個命令中加入命令鏈結中，以及表示是否已新增命令篩選器旗標。
+4. 文字檢視的私用欄位下, 一個命令中加入命令鏈結中，以及表示是否已新增命令篩選器旗標。
 
     ```csharp
     private IWpfTextView m_textView;
@@ -89,7 +89,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     internal bool m_adorned;
     ```
 
-5.  新增設定文字檢視的建構函式。
+5. 新增設定文字檢視的建構函式。
 
     ```csharp
     public KeyBindingCommandFilter(IWpfTextView textView)
@@ -99,7 +99,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     }
     ```
 
-6.  實作`QueryStatus()`方法，如下所示。
+6. 實作`QueryStatus()`方法，如下所示。
 
     ```csharp
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)
@@ -108,7 +108,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     }
     ```
 
-7.  實作`Exec()`方法，因此它會加入至檢視的紫色方塊如果加號 (**+**) 輸入字元。
+7. 實作`Exec()`方法，因此它會加入至檢視的紫色方塊如果加號 (**+**) 輸入字元。
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -135,7 +135,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 ## <a name="add-the-command-filter-prior-to-visual-studio-2017-version-156"></a>新增命令篩選器 （在之前 Visual Studio 2017 15.6 版)
  Adornment 提供者必須將命令篩選器加入 [文字] 檢視。 在此範例中，提供者會實作<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>來接聽文字檢視建立事件。 此裝飾提供者也會匯出裝飾圖層，其定義 adornment 疊置順序。
 
-1.  在 KeyBindingTestTextViewCreationListener 檔案中，新增下列 using 陳述式：
+1. 在 KeyBindingTestTextViewCreationListener 檔案中，新增下列 using 陳述式：
 
     ```csharp
     using System;
@@ -150,7 +150,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
     ```
 
-2.  若要取得文字檢視配接器，您必須匯入<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>。
+2. 若要取得文字檢視配接器，您必須匯入<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>。
 
     ```csharp
     [Import(typeof(IVsEditorAdaptersFactoryService))]
@@ -158,7 +158,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
     ```
 
-3.  變更<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>方法，讓它將加入`KeyBindingCommandFilter`。
+3. 變更<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>方法，讓它將加入`KeyBindingCommandFilter`。
 
     ```csharp
     public void TextViewCreated(IWpfTextView textView)
@@ -167,7 +167,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     }
     ```
 
-4.  `AddCommandFilter`取得文字檢視配接器處理常式，並將命令篩選器。
+4. `AddCommandFilter`取得文字檢視配接器處理常式，並將命令篩選器。
 
     ```csharp
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)
@@ -256,6 +256,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
        return false;
    }
    ```
+
    7. 複製 adornment 層定義，從*KeyBindingTestTextViewCreationListener.cs*的檔案*KeyBindingCommandHandler.cs* ，然後再刪除*KeyBindingTestTextViewCreationListener.cs*檔案：
 
    ```csharp
@@ -319,8 +320,8 @@ private void CreateVisuals(ITextViewLine line)
 
 ## <a name="build-and-test-the-code"></a>建置和測試程式碼
 
-1.  建置 KeyBindingTest 方案，並在實驗執行個體中執行它。
+1. 建置 KeyBindingTest 方案，並在實驗執行個體中執行它。
 
-2.  建立或開啟文字檔案。 輸入一些文字包含字元 'a'，然後輸入**+** 文字檢視中的任何位置。
+2. 建立或開啟文字檔案。 輸入一些文字包含字元 'a'，然後輸入**+** 文字檢視中的任何位置。
 
      紫色的平方應該會出現在檔案中的每個 'a' 字元。

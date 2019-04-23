@@ -50,12 +50,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 32b2f33af3c34cf6245e511cbd54d6ce7cc3a2bd
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795248"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045325"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,23 +84,23 @@ ms.locfileid: "54795248"
 
 ## <a name="in-this-section"></a>本節內容
 
--   [建立方案和專案](../ide/creating-solutions-and-projects.md)
+- [建立方案和專案](../ide/creating-solutions-and-projects.md)
 
--   [新增和移除專案項目](../ide/adding-and-removing-project-items.md)
+- [新增和移除專案項目](../ide/adding-and-removing-project-items.md)
 
--   [管理專案和方案屬性](../ide/managing-project-and-solution-properties.md)
+- [管理專案和方案屬性](../ide/managing-project-and-solution-properties.md)
 
--   [管理專案中的參考](../ide/managing-references-in-a-project.md)
+- [管理專案中的參考](../ide/managing-references-in-a-project.md)
 
--   [應用程式屬性](../ide/application-properties.md)
+- [應用程式屬性](../ide/application-properties.md)
 
--   [管理組件和資訊清單簽署](../ide/managing-assembly-and-manifest-signing.md)
+- [管理組件和資訊清單簽署](../ide/managing-assembly-and-manifest-signing.md)
 
--   [如何：指定應用程式圖示 (Visual Basic、C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [如何：指定應用程式圖示 (Visual Basic、C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
--   [以特定的 .NET Framework 版本為目標](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [以特定的 .NET Framework 版本為目標](../ide/targeting-a-specific-dotnet-framework-version.md)
 
--   [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
+- [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
 
 ## <a name="see-also"></a>請參閱
  [Visual Studio IDE](../ide/visual-studio-ide.md)

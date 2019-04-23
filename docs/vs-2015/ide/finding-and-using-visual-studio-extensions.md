@@ -15,17 +15,17 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 2070c9c68719e51357f3cd5fed4bee3cfbc35fcf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051904"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>尋找及使用 Visual Studio 擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 擴充功能是在 Visual Studio 內執行的程式碼封裝，並提供全新或改良的 Visual Studio 功能。 您可以在這裡找到有關 Visual Studio 擴充功能的詳細資訊： [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
+Visual Studio 擴充功能是在 Visual Studio 內執行的程式碼封裝，並提供全新或改良的 Visual Studio 功能。 您可以在這裡找到有關 Visual Studio 延伸模組的詳細資訊：[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
  您可以使用 [ **擴充功能和更新** ] 對話方塊來安裝 Visual Studio 擴充功能和來自網站及其他位置的範例，然後啟用、停用、更新或將它們解除安裝。 ([工具/擴充功能和更新]，或在 [快速啟動]  視窗中輸入 **擴充功能** )。 對話方塊也會顯示已安裝的範例和擴充功能的更新。 您也可以從網站下載擴充功能，或從其他開發人員取得。
 
@@ -54,9 +54,9 @@ Visual Studio 擴充功能是在 Visual Studio 內執行的程式碼封裝，並
 
  如果您想要停用自動更新，您可以停用所有擴充功能或僅停用特定擴充功能。
 
--   若要停用所有擴充功能的自動更新，請按一下 [擴充功能和更新]  對話方塊上的 [變更擴充功能和更新設定]  連結，然後取消選取 [自動更新擴充功能] 。
+- 若要停用所有擴充功能的自動更新，請按一下 [擴充功能和更新]  對話方塊上的 [變更擴充功能和更新設定]  連結，然後取消選取 [自動更新擴充功能] 。
 
--   若要停用特定擴充功能的自動更新，請取消選取 [自動更新此擴充功能]  選項，該選項位於 [擴充功能和更新]  對話右側之擴充功能的詳細資料窗格。
+- 若要停用特定擴充功能的自動更新，請取消選取 [自動更新此擴充功能]  選項，該選項位於 [擴充功能和更新]  對話右側之擴充功能的詳細資料窗格。
 
 > [!NOTE]
 >  從 Visual Studio 2015 Update 2 開始，您可以指定 (在 [工具] / [選項] / [環境] / [延伸模組和更新] 中) 是否要自動更新每個使用者延伸模組、所有使用者延伸模組，或兩者皆自動更新 (預設值)。

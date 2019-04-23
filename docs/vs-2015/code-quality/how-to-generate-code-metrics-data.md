@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ec6063f859333b54adaabea0c68af9fd884845b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940897"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045625"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>HOW TO：產生程式碼度量資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "58940897"
   
 ### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>若要產生整個方案的程式碼度量結果  
   
--   按一下 [**分析] 功能表**，然後按一下**方案的 CalculateCode 度量**。  
+- 按一下 [**分析] 功能表**，然後按一下**方案的 CalculateCode 度量**。  
   
      \-或-  
   
--   在 **方案總管**，以滑鼠右鍵按一下方案，然後按一下**CalculateCode 計量**。  
+- 在 **方案總管**，以滑鼠右鍵按一下方案，然後按一下**CalculateCode 計量**。  
   
      \-或-  
   
--   在**程式碼度量結果** 視窗中，按一下**方案的 CalculateCode 度量** 按鈕。  
+- 在**程式碼度量結果** 視窗中，按一下**方案的 CalculateCode 度量** 按鈕。  
   
      就會產生結果和**程式碼度量結果** 視窗隨即顯示。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "58940897"
   
 ### <a name="to-view-the-results-details"></a>若要檢視結果詳細資料  
   
--   展開樹狀目錄中的**階層**資料行。  
+- 展開樹狀目錄中的**階層**資料行。  
   
 ## <a name="see-also"></a>另請參閱  
  [測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

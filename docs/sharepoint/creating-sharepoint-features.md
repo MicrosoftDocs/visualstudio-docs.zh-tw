@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b77e07524b6bcabd00de1d8082261e81807a72
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051310"
 ---
 # <a name="create-sharepoint-features"></a>建立 SharePoint 功能
   您可以使用 SharePoint 功能，將相關的 SharePoint 專案項目更容易部署。 您可以建立功能、 設定範圍，並標示為相依性的其他功能，使用 SharePoint 功能設計工具。 設計工具也會產生資訊清單，也就是描述每項功能的 XML 檔案。
@@ -26,9 +26,9 @@ ms.locfileid: "56644454"
 ## <a name="add-features-to-the-sharepoint-solution"></a>將功能加入至 SharePoint 方案
  您可以使用 [方案總管] 或 [封裝總管] 中，將功能新增至 SharePoint 方案中。 您可以使用下列方法之一新增一項功能。
 
--   中**方案總管**，開啟捷徑功能表**功能**，然後選擇**新增功能**。
+- 中**方案總管**，開啟捷徑功能表**功能**，然後選擇**新增功能**。
 
--   在 **封裝總管**，開啟封裝的捷徑功能表，然後選擇**加入功能**。
+- 在 **封裝總管**，開啟封裝的捷徑功能表，然後選擇**加入功能**。
 
 ## <a name="using-the-feature-designer"></a>使用功能設計工具
  SharePoint 方案可以包含一或多個 SharePoint 功能，在 [方案總管] 中的 [功能] 節點下分組。 每項功能都有它自己**功能設計工具**，您可以使用自訂的功能屬性。 如需詳細資訊，請參閱[如何：自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)。 若要從另一個辨別功能，您可以設定功能屬性，例如標題、 描述、 版本和範圍。

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba7e6a97e3ee04f43eb7509e77f2e6972042473c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603648"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047185"
 ---
 # <a name="registering-single-file-generators"></a>註冊單一檔案產生器
 若要提供自訂的工具[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您必須註冊因此[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以加以具現化，並與特定專案類型關聯。
@@ -38,15 +38,15 @@ ms.locfileid: "56603648"
 
 2. 建立以所需的登錄機碼[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]產生器下的 hive\\*GUID*位置*GUID*由特定語言的專案系統或服務所定義的 GUID。 索引鍵的名稱會變成您的自訂工具的程式設計名稱。 自訂工具的索引鍵具有下列值：
 
-   -   (預設值)
+   - (預設值)
 
         選擇性。 提供自訂工具的使用者易記描述。 這個參數是選擇性的但建議使用。
 
-   -   CLSID
+   - CLSID
 
         必要項。 指定識別碼的 COM 元件實作的類別庫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>。
 
-   -   GeneratesDesignTimeSource
+   - GeneratesDesignTimeSource
 
         必要項。 指出是否從這個自訂的工具所產生的檔案類型都會提供給視覺化設計工具。 此參數的值必須是 （零） 針對至視覺化設計工具無法使用的類型為 0 或 （一） 1 類型可用來視覺化設計工具。
 

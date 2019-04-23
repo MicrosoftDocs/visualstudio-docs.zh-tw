@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5c2d39ce4652b6c41d80e919cca93c83c38fb2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 59f26e4e8972f02740db45760e5b2e876c300bd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684997"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045397"
 ---
 # <a name="using-the-settings-store"></a>使用設定存放區
 有兩種類型的設定存放區：
@@ -77,11 +77,11 @@ ms.locfileid: "56684997"
 
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>若要使用登錄編輯程式來確認組態設定
 
-1.  開啟 Regedit.exe。
+1. 開啟 Regedit.exe。
 
-2.  瀏覽至 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\。
+2. 瀏覽至 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\。
 
     > [!NOTE]
     >  請確定您正在查看該索引鍵包含 \14.0Exp_Config\ 和不 \14.0_Config\\。 當您執行 Visual Studio 的實驗執行個體時，組態設定是在登錄區 「 14.0Exp_Config"。
 
-3.  展開 \Installed Products\ 節點。 如果在先前步驟中的訊息是**Microsoft Windows Phone 開發人員工具安裝：True**，則 \Installed Products\ 應該包含 Microsoft Windows Phone 開發人員工具 節點。 如果訊息是**Microsoft Windows Phone 開發人員工具安裝：False**，則 \Installed Products\ 不應包含 Microsoft Windows Phone 開發人員工具 節點。
+3. 展開 \Installed Products\ 節點。 如果在先前步驟中的訊息是**Microsoft Windows Phone 開發人員工具安裝：True**，則 \Installed Products\ 應該包含 Microsoft Windows Phone 開發人員工具 節點。 如果訊息是**Microsoft Windows Phone 開發人員工具安裝：False**，則 \Installed Products\ 不應包含 Microsoft Windows Phone 開發人員工具 節點。

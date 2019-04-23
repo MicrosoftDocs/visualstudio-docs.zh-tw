@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662604"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045638"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801:必須檢閱未使用的參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ ms.locfileid: "59662604"
 ## <a name="cause"></a>原因  
  方法簽章包括不用於方法主體中的參數； 此規則不會檢查下列方法：  
   
--   委派所參考的方法。  
+- 委派所參考的方法。  
   
--   做為事件處理常式的方法。  
+- 做為事件處理常式的方法。  
   
--   方法宣告`abstract`(`MustOverride` Visual Basic 中) 修飾詞。  
+- 方法宣告`abstract`(`MustOverride` Visual Basic 中) 修飾詞。  
   
--   方法宣告`virtual`(`Overridable` Visual Basic 中) 修飾詞。  
+- 方法宣告`virtual`(`Overridable` Visual Basic 中) 修飾詞。  
   
--   方法宣告`override`(`Overrides` Visual Basic 中) 修飾詞。  
+- 方法宣告`override`(`Overrides` Visual Basic 中) 修飾詞。  
   
--   方法宣告`extern`(`Declare` Visual Basic 中的陳述式) 修飾詞。  
+- 方法宣告`extern`(`Declare` Visual Basic 中的陳述式) 修飾詞。  
   
 ## <a name="rule-description"></a>規則描述  
  檢閱中不會在方法主體中以確定解決無法存取它們的不正確性存在的非虛擬方法的參數。 未使用的參數會產生維護與效能的費用。  

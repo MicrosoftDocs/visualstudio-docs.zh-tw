@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2839cf3fdd780ffbf2c3cfb50e086996cfc865e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663293"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063396"
 ---
 # <a name="hierarchical-update"></a>階層式更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,11 +99,11 @@ ms.locfileid: "59663293"
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>加入程式碼以在新增子記錄前先認可資料集中的父記錄  
   
-1.  建立 `OrdersBindingSource.AddingNew` 事件的事件處理常式。  
+1. 建立 `OrdersBindingSource.AddingNew` 事件的事件處理常式。  
   
-    -   開啟**Form1**在 設計 檢視中，選取**OrdersBindingSource**在元件匣中，選取**事件**中**屬性** 視窗中，並然後按兩下**AddingNew**事件。  
+    - 開啟**Form1**在 設計 檢視中，選取**OrdersBindingSource**在元件匣中，選取**事件**中**屬性** 視窗中，並然後按兩下**AddingNew**事件。  
   
-2.  呼叫事件處理常式中加入一行程式碼`CustomersBindingSource.EndEdit`方法。 `OrdersBindingSource_AddingNew` 事件處理常式中的程式碼應該與下列類似：  
+2. 呼叫事件處理常式中加入一行程式碼`CustomersBindingSource.EndEdit`方法。 `OrdersBindingSource_AddingNew` 事件處理常式中的程式碼應該與下列類似：  
   
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#2)]
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#2)]  

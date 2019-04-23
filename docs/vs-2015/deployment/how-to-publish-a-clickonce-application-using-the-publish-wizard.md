@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45ca2bd23c6da7d86b65cc05c0b0dee670e2718f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48b5d8406f5b5c6d43afadf9e544914e6133090c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941900"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046934"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>HOW TO：使用發行精靈發行 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ ms.locfileid: "58941900"
   
 4. 在 [使用者將如何安裝應用程式?] 頁面上，選取使用者將安裝應用程式的位置：  
   
-   -   如果使用者將從網站安裝，請按一下 [從網站]，然後輸入對應至上一個步驟中輸入之檔案路徑的 URL。 按 [ **下一步**]。 (當您指定 FTP 位址做為發行位置時，通常會使用這個選項。 不支援直接從 FTP 下載。 因此，您必須在此輸入 URL。)  
+   - 如果使用者將從網站安裝，請按一下 [從網站]，然後輸入對應至上一個步驟中輸入之檔案路徑的 URL。 按 [ **下一步**]。 (當您指定 FTP 位址做為發行位置時，通常會使用這個選項。 不支援直接從 FTP 下載。 因此，您必須在此輸入 URL。)  
   
-   -   如果使用者將從檔案共用直接安裝應用程式，請按一下 [從 UNC 路徑或檔案共用]，然後按一下 [下一步]。 (這是用來發行位置的表單 c:\deploy\myapp 或\\\server\myapp。)  
+   - 如果使用者將從檔案共用直接安裝應用程式，請按一下 [從 UNC 路徑或檔案共用]，然後按一下 [下一步]。 (這是用來發行位置的表單 c:\deploy\myapp 或\\\server\myapp。)  
   
-   -   如果使用者將從抽取式媒體安裝，請按一下 [從 CD-ROM 或 DVD-ROM]，然後按一下 [下一步]。  
+   - 如果使用者將從抽取式媒體安裝，請按一下 [從 CD-ROM 或 DVD-ROM]，然後按一下 [下一步]。  
   
 5. 在 [是否可以在離線時使用應用程式?] 頁面上，按一下適當的選項：  
   

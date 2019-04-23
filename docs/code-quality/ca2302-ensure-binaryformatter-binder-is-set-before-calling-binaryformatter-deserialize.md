@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fb997d8184ea9459b46eee95bfe2863e8c1c6ed0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f8f2e98edd0cb1094422576b484be34f4f7ba8de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59367286"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047120"
 ---
 # <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302：呼叫 BinaryFormatter.Deserialize 之前，請務必先設定 BinaryFormatter.Binder
 
@@ -34,25 +34,24 @@ A<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayPro
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-此規則會尋找<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>還原序列化方法呼叫或參考，當<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>當其<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>可能為 null。 如果您想要禁止使用的任何還原序列化<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>不論<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>屬性，停用此規則並[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)，並啟用規則[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)。
+此規則會尋找<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>還原序列化方法呼叫或參考時<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>可能為 null。 如果您想要禁止使用的任何還原序列化<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>不論<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>屬性，停用此規則並[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)，並啟用規則[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
 - 可能的話，請改用安全的序列化程式，並**不會讓攻擊者指定要還原序列化的任意型別**。 某些更安全的序列化程式包括：
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -永不使用<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>。 如果您必須使用型別解析程式，您必須限制已還原序列化的型別為預期的清單。
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -永不使用<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>。 如果您必須使用型別解析程式，限制為預期的清單已還原序列化的型別。
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - NewtonSoft Json.NET-使用 TypeNameHandling.None。 如果您必須使用 TypeNameHandling 另一個值，您必須到預期的清單限制已還原序列化的型別。
+  - NewtonSoft Json.NET-使用 TypeNameHandling.None。 如果 TypeNameHandling 中，您必須使用另一個值，限制與自訂 ISerializationBinder 預期清單還原序列化的型別。
   - Protocol Buffers
-- 請防的序列化的資料。 在序列化以密碼編譯方式登入序列化的資料。 還原序列化之前, 驗證密碼編譯簽章。 您必須防止被公開的密碼編譯金鑰，並應該設計為金鑰輪替。
+- 使序列化的資料竄改。 在序列化以密碼編譯方式登入序列化的資料。 在還原序列化時之前, 驗證密碼編譯簽章。 從被揭發，保護密碼編譯金鑰和金鑰輪替的設計。
 - 限制已還原序列化的類型。 實作自訂<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>。 之前與還原序列化<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>，將<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>執行個體的自訂屬性<xref:System.Runtime.Serialization.SerializationBinder>。 在 覆寫<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>方法，如果型別不是預期然後擲回例外狀況。
   - 請確定所有的程式碼路徑有<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>屬性集。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-- 它會安全地隱藏此規則的警告，如果您知道輸入是受信任。 請考慮您的應用程式信任界限流程和資料流程會隨著時間改變。
-- 是可隱藏這個警告，如果您所採取的預防措施，上述其中一個安全的。
+[!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
 ## <a name="pseudo-code-examples"></a>虛擬程式碼範例
 
@@ -123,6 +122,7 @@ End Class
 ```
 
 ### <a name="solution"></a>方案
+
 ```csharp
 using System;
 using System.IO;
@@ -144,7 +144,7 @@ public class BookRecordSerializationBinder : SerializationBinder
         }
         else
         {
-            throw new ArgumentException("Unexpected type", "typeName");
+            throw new ArgumentException("Unexpected type", nameof(typeName));
         }
     }
 }
@@ -197,7 +197,7 @@ Public Class BookRecordSerializationBinder
         If typeName = "BinaryFormatterVB.BookRecord" Or typeName = "BinaryFormatterVB.AisleLocation" Then
             Return Nothing
         Else
-            Throw New ArgumentException("Unexpected type", "typeName")
+            Throw New ArgumentException("Unexpected type", NameOf(typeName))
         End If
     End Function
 End Class

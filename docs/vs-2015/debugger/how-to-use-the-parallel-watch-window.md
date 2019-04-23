@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa5381013e955dcf4b8e301bba52a28e39bfc18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942659"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050306"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>HOW TO：使用 [平行監看式] 視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,49 +45,49 @@ ms.locfileid: "58942659"
   
 ### <a name="to-display-the-parallel-watch-window"></a>若要顯示 [平行監看式] 視窗  
   
-1.  在程式碼中設定中斷點。  
+1. 在程式碼中設定中斷點。  
   
-2.  在功能表列上，選擇 [偵錯]、[開始偵錯]。 等候應用程式到達中斷點。  
+2. 在功能表列上，選擇 [偵錯]、[開始偵錯]。 等候應用程式到達中斷點。  
   
-3.  在功能表列上依序選擇 [偵錯]、[視窗]、[平行監看式]，然後選擇監看式視窗。 您最多可以開啟四個視窗。  
+3. 在功能表列上依序選擇 [偵錯]、[視窗]、[平行監看式]，然後選擇監看式視窗。 您最多可以開啟四個視窗。  
   
 ### <a name="to-add-a-watch-expression"></a>若要加入監看運算式  
   
--   選取 [ **\<新增監看式 >** ]，然後指定監看式運算式。  
+- 選取 [ **\<新增監看式 >** ]，然後指定監看式運算式。  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>若要將執行緒加上旗標或取消旗標  
   
--   選取的旗標資料行，資料列中，或開啟執行緒的捷徑功能表並選擇 **旗標**或是**取消旗標**。  
+- 選取的旗標資料行，資料列中，或開啟執行緒的捷徑功能表並選擇 **旗標**或是**取消旗標**。  
   
 ### <a name="to-display-only-flagged-threads"></a>若只要顯示加上旗標的執行緒  
   
--   選擇 [僅顯示已標幟] 按鈕的左上角**平行監看式**視窗。  
+- 選擇 [僅顯示已標幟] 按鈕的左上角**平行監看式**視窗。  
   
 ### <a name="to-switch-frames"></a>若要切換框架  
   
--   按兩下框架資料行  (鍵盤：選取資料列，然後按 Enter 鍵。）  
+- 按兩下框架資料行  (鍵盤：選取資料列，然後按 Enter 鍵。）  
   
 ### <a name="to-sort-a-column"></a>若要排序資料行  
   
--   選取資料行標題。  
+- 選取資料行標題。  
   
 ### <a name="to-group-threads"></a>若要群組執行緒  
   
--   開啟 [平行監看式] 視窗的捷徑功能表，選擇 [分組依據]，然後選擇適當的子功能表項目。  
+- 開啟 [平行監看式] 視窗的捷徑功能表，選擇 [分組依據]，然後選擇適當的子功能表項目。  
   
 ### <a name="to-freeze-or-thaw-threads"></a>若要凍結或解除凍結執行緒  
   
--   開啟該列的捷徑功能表，然後選擇 [凍結] 或 [解除凍結]。  
+- 開啟該列的捷徑功能表，然後選擇 [凍結] 或 [解除凍結]。  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>若要匯出 [平行監看式] 視窗中的資料  
   
--   選擇 [在 Excel 中開啟] 按鈕，然後選擇 [在 Excel 中開啟] 或 [匯出至 CSV]。  
+- 選擇 [在 Excel 中開啟] 按鈕，然後選擇 [在 Excel 中開啟] 或 [匯出至 CSV]。  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>若要依布林運算式篩選  
   
--   在 [依布林運算式篩選] 方塊中輸入布林運算式。 偵錯工具會針對每個執行緒內容評估運算式。 只有值為 `true` 的列才會顯示。  
+- 在 [依布林運算式篩選] 方塊中輸入布林運算式。 偵錯工具會針對每個執行緒內容評估運算式。 只有值為 `true` 的列才會顯示。  
   
 ## <a name="see-also"></a>另請參閱  
  [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：使用 [GPU 執行緒] 視窗](../debugger/how-to-use-the-gpu-threads-window.md)   
- [逐步解說：偵錯 c + + AMP 應用程式](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [逐步解說：偵錯C++AMP 應用程式](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

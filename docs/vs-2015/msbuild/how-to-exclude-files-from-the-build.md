@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9fa577b5e68ac93847589e67b2e2110b1a0c9a37
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052555"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>HOW TO：從組建中排除檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "59656450"
 在專案檔中，您可以使用萬用字元，來包含一個目錄中的所有檔案或巢狀目錄集合做為組建的輸入。 不過，目錄中可能有一個您不想包含來建置輸入的檔案，或者巢狀目錄集合中可能有一個您不想包含的目錄。 您可以明確地從輸入清單中排除該檔案或目錄。 專案中也可能有一個您只想在符合特定條件的情況下包含的檔案。 您可以明確地宣告要在組建中包含檔案的條件。  
   
 ## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>從組建的輸入中排除檔案或目錄  
- 項目清單是組建的輸入檔。 您可以使用 `Include` 屬性，個別宣告或以群組方式宣告想要包含的項目。 例如：  
+ 項目清單是組建的輸入檔。 您可以使用 `Include` 屬性，個別宣告或以群組方式宣告想要包含的項目。 例如:   
   
 ```  
 <CSFile Include="Form1.cs"/>  
@@ -39,7 +39,7 @@ ms.locfileid: "59656450"
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>包含 Form2 以外的所有 .cs 或 .vb 檔案  
   
--   使用下列其中一個 `Include` 和 `Exclude` 屬性：  
+- 使用下列其中一個 `Include` 和 `Exclude` 屬性：  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
@@ -53,7 +53,7 @@ ms.locfileid: "59656450"
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>包含 Form2 和 Form3 以外的所有 .cs 或 .vb 檔案  
   
--   使用下列其中一個 `Include` 和 `Exclude` 屬性：  
+- 使用下列其中一個 `Include` 和 `Exclude` 屬性：  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
@@ -67,7 +67,7 @@ ms.locfileid: "59656450"
   
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>包含 Images 目錄之子目錄中的所有 .jpg 檔案，但 Version2 目錄中的檔案除外  
   
--   使用下列 `Include` 和 `Exclude` 屬性：  
+- 使用下列 `Include` 和 `Exclude` 屬性：  
   
     ```  
     <JPGFile  
@@ -83,7 +83,7 @@ ms.locfileid: "59656450"
   
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>只包含發行組建中的 Formula.vb 檔案  
   
--   以如下方式使用 `Condition` 屬性：  
+- 以如下方式使用 `Condition` 屬性：  
   
     ```  
     <Compile  

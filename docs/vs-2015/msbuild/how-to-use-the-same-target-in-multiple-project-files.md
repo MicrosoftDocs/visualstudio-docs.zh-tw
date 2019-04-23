@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66a916203f008aee84010bcc910f1a35dc39e5d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d388d32b288e47a7e92f5d0f727230ffa00a2621
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654863"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056831"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>如何：使用多個專案檔內相同的目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "59654863"
   
 #### <a name="to-import-a-project"></a>匯入專案  
   
-1.  在匯入端專案檔中，定義用來作為所匯入專案中屬性和項目之參數的所有屬性和項目。  
+1. 在匯入端專案檔中，定義用來作為所匯入專案中屬性和項目之參數的所有屬性和項目。  
   
-2.  使用 `Import` 元素來匯入專案。 例如：  
+2. 使用 `Import` 元素來匯入專案。 例如：  
   
      `<Import Project="MyCommon.targets"/>`  
   
-3.  在 `Import` 元素之後，定義必須覆寫所匯入專案中預設屬性和項目定義的所有屬性和項目。  
+3. 在 `Import` 元素之後，定義必須覆寫所匯入專案中預設屬性和項目定義的所有屬性和項目。  
   
 ## <a name="order-of-evaluation"></a>評估的順序  
  當 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 到達 `Import` 元素時，會將所匯入之專案有效地插入到匯入端專案中 `Import` 元素的位置。 因此，`Import` 元素的位置會影響屬性和項目的值。 請務必了解所匯入之專案所設定的屬性和項目，以及所匯入之專案所使用的屬性和項目。  
@@ -77,11 +77,11 @@ ms.locfileid: "59654863"
   
 #### <a name="use-the-following-approach-when-importing-projects"></a>匯入專案時，請使用下列方法  
   
-1.  在專案檔中，定義用來作為所匯入專案中屬性和項目之參數的所有屬性和項目。  
+1. 在專案檔中，定義用來作為所匯入專案中屬性和項目之參數的所有屬性和項目。  
   
-2.  匯入專案。  
+2. 匯入專案。  
   
-3.  在專案檔中，定義必須覆寫所匯入專案中預設屬性和項目定義的所有屬性和項目。  
+3. 在專案檔中，定義必須覆寫所匯入專案中預設屬性和項目定義的所有屬性和項目。  
   
 ## <a name="example"></a>範例  
  下列程式碼範例示範第二個程式碼範例匯入的 MyCommon.targets 檔案。 .targets 檔案會評估來自匯入端專案的屬性以設定組建。  

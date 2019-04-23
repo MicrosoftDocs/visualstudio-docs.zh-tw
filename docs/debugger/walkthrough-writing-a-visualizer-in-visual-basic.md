@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30e789d0ae3fa3e717be9739b94439a7d6a31a2
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: be3fb721fd058f127b4d361c769d4cdfdc1e4b92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050885"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>逐步解說：在 Visual Basic 中撰寫視覺化檢視
 本逐步解說顯示如何使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 撰寫簡易的視覺化檢視。 您在本逐步解說中建立的視覺化檢視會使用 Windows Form 訊息方塊顯示字串的內容。 這個簡易字串視覺化檢視是一個基本範例，示範如何建立更適用專案之其他資料型別的視覺化檢視。
@@ -39,7 +39,7 @@ ms.locfileid: "59584541"
 1. 建立新的類別庫專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 來關閉開始視窗。 型別**Ctrl + Q**來開啟 搜尋 方塊中，輸入**visual basic**，選擇 **範本**，然後選擇 **建立新的類別庫 (.NET Standard)**. 在出現的對話方塊中選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 型別**Ctrl + Q**來開啟 搜尋 方塊中，輸入**visual basic**，選擇 **範本**，然後選擇 **建立新的類別庫 (.NET Standard)**. 在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在左窗格中**新的專案**對話方塊的  **Visual Basic**，選擇  **.NET Standard**，然後在中間窗格選擇**類別程式庫 (.NET標準）**。
@@ -106,15 +106,15 @@ ms.locfileid: "59584541"
 
 ### <a name="to-add-systemwindowsforms"></a>若要加入 System.Windows.Forms
 
-1.  在 [方案總管]中，以滑鼠右鍵按一下 [參考]，並從捷徑功能表中按一下 [新增參考]。
+1. 在 [方案總管]中，以滑鼠右鍵按一下 [參考]，並從捷徑功能表中按一下 [新增參考]。
 
 2. 在 **加入參考**對話方塊的 **瀏覽**索引標籤上，選取**瀏覽**，並尋找 System.Windows.Forms.DLL。
 
     您可以找到在 DLL *C:\Windows\Microsoft.NET\Framework\v4.0.30319*。
 
-3.  按一下 [確定] 。
+3. 按一下 [確定] 。
 
-4.  在 DebuggerSide.cs 中，將下列陳述式加入至 `Imports` 陳述式：
+4. 在 DebuggerSide.cs 中，將下列陳述式加入至 `Imports` 陳述式：
 
     ```vb
     Imports System.Windows.Forms
@@ -125,7 +125,7 @@ ms.locfileid: "59584541"
 
 ### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>若要在對話方塊中顯示視覺化檢視輸出
 
-1.  在 `Show` 方法中，加入下列程式碼行：
+1. 在 `Show` 方法中，加入下列程式碼行：
 
     ```vb
     MessageBox.Show(objectProvider.GetObject().ToString())
@@ -133,20 +133,20 @@ ms.locfileid: "59584541"
 
      這個程式碼範例不包括錯誤處理。 在真實的視覺化檢視或其他任何類型的應用程式中，都應該包括錯誤處理功能。
 
-2.  在 [建置] 功能表上按一下 [建置 MyFirstVisualizer]。 專案應該會順利建置。 在繼續進行之前，請更正任何建置錯誤。
+2. 在 [建置] 功能表上按一下 [建置 MyFirstVisualizer]。 專案應該會順利建置。 在繼續進行之前，請更正任何建置錯誤。
 
 ## <a name="add-the-necessary-attribute"></a>加入必要屬性
  這是偵錯工具端的程式碼結尾。 但是還有一個步驟，就是加入告知偵錯項目端構成視覺化檢視類別集合的屬性。
 
 ### <a name="to-add-the-debugee-side-code"></a>若要加入偵錯項目端程式碼
 
-1.  將下列屬性程式碼加入至 DebuggerSide.vb，放置在 `Imports` 陳述式之後，`namespace MyFirstVisualizer` 之前：
+1. 將下列屬性程式碼加入至 DebuggerSide.vb，放置在 `Imports` 陳述式之後，`namespace MyFirstVisualizer` 之前：
 
     ```vb
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>
     ```
 
-2.  在 [建置] 功能表上按一下 [建置 MyFirstVisualizer]。 專案應該會順利建置。 在繼續進行之前，請更正任何建置錯誤。
+2. 在 [建置] 功能表上按一下 [建置 MyFirstVisualizer]。 專案應該會順利建置。 在繼續進行之前，請更正任何建置錯誤。
 
 ## <a name="create-a-test-harness"></a>建立 Test Harness
  這時，您的第一個視覺化檢視已完成。 如果您正確遵循這些步驟的話，應該能夠建置視覺化檢視，並將它安裝至 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中。 但是，在將視覺化檢視安裝至 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之前，應該先進行測試以確定它能正確執行。 現在，您將建立 Test Harness 來執行這個視覺化檢閱，而不將它安裝至 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中。
@@ -183,17 +183,17 @@ ms.locfileid: "59584541"
 
 ### <a name="to-add-necessary-references-to-mytestconsole"></a>若要將必要參考加入至 MyTestConsole
 
-1.  在 [方案總管] 中以滑鼠右鍵按一下 [MyTestConsole]，然後在捷徑功能表中按一下 [新增參考]。
+1. 在 [方案總管] 中以滑鼠右鍵按一下 [MyTestConsole]，然後在捷徑功能表中按一下 [新增參考]。
 
-2.  在 **加入參考**對話方塊的 **瀏覽**索引標籤上，按一下 microsoft.visualstudio.debuggervisualizers。
+2. 在 **加入參考**對話方塊的 **瀏覽**索引標籤上，按一下 microsoft.visualstudio.debuggervisualizers。
 
-3.  按一下 [確定] 。
+3. 按一下 [確定] 。
 
-4.  以滑鼠右鍵按一下 [MyTestConsole]，然後再次按一下 [新增參考]。
+4. 以滑鼠右鍵按一下 [MyTestConsole]，然後再次按一下 [新增參考]。
 
-5.  在 [新增參考] 對話方塊中，按一下 [專案] 索引標籤，然後選取 [MyFirstVisualizer]。
+5. 在 [新增參考] 對話方塊中，按一下 [專案] 索引標籤，然後選取 [MyFirstVisualizer]。
 
-6.  按一下 [確定] 。
+6. 按一下 [確定] 。
 
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>完成 Test Harness 並測試視覺化檢閱
  現在，您就可以加入程式碼來完成測試載入器。

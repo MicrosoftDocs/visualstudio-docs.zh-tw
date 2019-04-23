@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ce859a1fd6ee491ecf22003f5ef99936136496a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663138"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045599"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>HOW TO：使用不同選項來建置相同的原始程式檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59663138"
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>根據另一個屬性設定屬性群組  
   
--   以如下方式使用 `PropertyGroup` 項目中的 `Condition` 屬性：  
+- 以如下方式使用 `PropertyGroup` 項目中的 `Condition` 屬性：  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -44,7 +44,7 @@ ms.locfileid: "59663138"
   
 #### <a name="to-define-a-property-based-on-another-property"></a>根據另一個屬性定義屬性  
   
--   以如下方式使用 `Property` 項目中的 `Condition` 屬性：  
+- 以如下方式使用 `Property` 項目中的 `Condition` 屬性：  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -55,7 +55,7 @@ ms.locfileid: "59663138"
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>在命令列中設定專案屬性  
   
--   使用 **/property** 參數搭配屬性和屬性值。 例如：  
+- 使用 **/property** 參數搭配屬性和屬性值。 例如:   
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
@@ -69,7 +69,7 @@ ms.locfileid: "59663138"
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>在命令列中指定多個專案屬性  
   
-- 多次使用 **/property** 或 **/p** 參數搭配屬性和屬性值，或使用一個 **/property** 或 **/p** 參數，並以分號 (;) 分隔多個屬性。 例如：  
+- 多次使用 **/property** 或 **/p** 參數搭配屬性和屬性值，或使用一個 **/property** 或 **/p** 參數，並以分號 (;) 分隔多個屬性。 例如:   
   
   ```  
   msbuild file.proj /p:Flavor=Debug;Platform=x86  

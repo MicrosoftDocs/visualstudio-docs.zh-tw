@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10067cdf06035b08c56fbcc92440b460a9b7733b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 70d438107b7cbe05b0a1c0049dff8e26c286de89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612097"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043957"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>舊版語言服務中對程式碼片段的支援
 程式碼片段是一種插入至原始程式檔的程式碼。 程式碼片段本身是以 XML 為基礎的範本，內含一組欄位。 插入程式碼片段，並可以有不同的值，根據在其中插入程式碼片段的內容之後，會反白顯示這些欄位。 立即插入程式碼片段後，語言服務可以格式化程式碼片段。
@@ -39,11 +39,11 @@ ms.locfileid: "56612097"
 ## <a name="providing-support-for-code-snippets"></a>提供支援的程式碼片段
  若要啟用程式碼片段的支援，您必須提供，或安裝程式碼片段，您必須提供使用者插入這些程式碼片段的方法。 有三個步驟，以啟用程式碼片段的支援：
 
-1.  安裝程式碼片段檔案。
+1. 安裝程式碼片段檔案。
 
-2.  啟用您的語言服務的程式碼片段。
+2. 啟用您的語言服務的程式碼片段。
 
-3.  叫用<xref:Microsoft.VisualStudio.Package.ExpansionProvider>物件。
+3. 叫用<xref:Microsoft.VisualStudio.Package.ExpansionProvider>物件。
 
 ### <a name="installing-the-snippet-files"></a>安裝程式碼片段檔案
  所有的程式碼片段語言會儲存為 XML 檔案中的範本通常一個程式碼片段範本每個檔案。 如需程式碼片段範本所使用的 XML 結構描述的詳細資訊，請參閱[程式碼片段結構描述參考](../../ide/code-snippets-schema-reference.md)。 每個程式碼片段範本具有語言識別碼。 此語言識別碼在登錄中指定，而且放入`Language`屬性的\<程式碼 > 範本中的標記。
@@ -83,7 +83,7 @@ ms.locfileid: "56612097"
 
  下列的替代項目可以放在儲存中的路徑\<DirPath > 標記中的索引檔案。
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |%LCID%|地區設定識別碼。|
 |%InstallRoot%|Visual Studio 中，例如，C:\Program Files\Microsoft Visual Studio 8 的根安裝資料夾。|
@@ -115,9 +115,9 @@ ms.locfileid: "56612097"
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>使用功能表命令插入程式碼片段
  若要使用的功能表命令，以顯示程式碼片段瀏覽器，您需要加入功能表命令，然後呼叫<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A>方法中的<xref:Microsoft.VisualStudio.Package.ExpansionProvider>該功能表命令的回應中的介面。
 
-1.  加入.vsct 檔的命令和按鈕。 您可以找到在執行動作的指示[建立具有功能表命令的擴充](../../extensibility/creating-an-extension-with-a-menu-command.md)。
+1. 加入.vsct 檔的命令和按鈕。 您可以找到在執行動作的指示[建立具有功能表命令的擴充](../../extensibility/creating-an-extension-with-a-menu-command.md)。
 
-2.  衍生的類別<xref:Microsoft.VisualStudio.Package.ViewFilter>類別並覆寫<xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A>方法，以指示新的功能表命令的支援。 這個範例中永遠啟用功能表命令。
+2. 衍生的類別<xref:Microsoft.VisualStudio.Package.ViewFilter>類別並覆寫<xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A>方法，以指示新的功能表命令的支援。 這個範例中永遠啟用功能表命令。
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -153,7 +153,7 @@ ms.locfileid: "56612097"
     }
     ```
 
-3.  覆寫<xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A>方法中的<xref:Microsoft.VisualStudio.Package.ViewFilter>類別來取得<xref:Microsoft.VisualStudio.Package.ExpansionProvider>物件，然後呼叫<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A>該物件上的方法。
+3. 覆寫<xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A>方法中的<xref:Microsoft.VisualStudio.Package.ViewFilter>類別來取得<xref:Microsoft.VisualStudio.Package.ExpansionProvider>物件，然後呼叫<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A>該物件上的方法。
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -205,15 +205,15 @@ ms.locfileid: "56612097"
 
      中的下列方法<xref:Microsoft.VisualStudio.Package.ExpansionProvider>類別由 Visual Studio 呼叫中指定的順序插入程式碼片段的程序期間：
 
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
 
-5.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
+5. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
 
-6.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
+6. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
 
-7.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
+7. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
 
-8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
+8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
      在後<xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>呼叫方法，已插入程式碼片段和<xref:Microsoft.VisualStudio.Package.ExpansionProvider>物件是用來修改剛插入的程式碼片段以特殊的編輯模式。
 

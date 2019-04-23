@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddc6849aa5c0dec07fc7dbdd08a950809624015d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661216"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052073"
 ---
 # <a name="create-a-software-development-kit"></a>建立軟體開發套件
 軟體開發套件 (SDK) 是一系列 Api，您可以參考 Visual Studio 中的單一項目。 **參考管理員**對話方塊會列出所有與專案相關的 Sdk。 當您將 SDK 加入專案時，就有一個 Api 可在 Visual Studio 中。
@@ -30,7 +30,7 @@ ms.locfileid: "59661216"
 
 - [擴充功能 Sdk](#ExtensionSDKs)
 
-##  <a name="PlatformSDKs"></a> 平台 Sdk
+## <a name="PlatformSDKs"></a> 平台 Sdk
  平台 Sdk，才能開發平台的應用程式。 例如， [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK，才能開發的應用程式[!INCLUDE[win81](../debugger/includes/win81_md.md)]。
 
 ### <a name="installation"></a>安裝
@@ -58,7 +58,7 @@ ms.locfileid: "59661216"
 | *架構*資料夾 | 任何支援*架構*資料夾可以存在。 Visual Studio 支援下列架構： x86、 x64、 ARM、 忍受及無感。 注意:Win32 對應設為 x86，而 AnyCPU 對應到中性。<br /><br /> MSBuild 會尋找只底下*\CommonConfiguration\neutral*平台 sdk。 |
 | *SDKManifest.xml* | 此檔案會描述 Visual Studio 應該如何使用 SDK。 在 SDK 資訊清單看起來[!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** 物件瀏覽器會顯示在瀏覽清單中的值。<br /><br /> **PlatformIdentity:** 此屬性存在本機告訴 Visual Studio 和 MSBuild SDK 是一個平台 SDK，而且不應該複製從它所加入的參考。<br /><br /> **TargetFramework:** Visual Studio 會使用此屬性以確保，只會為這個值指定相同的架構目標的專案屬性可使用 SDK。<br /><br /> **MinVSVersion:** Visual Studio 會使用這個屬性，使用套用至該 Sdk。<br /><br /> **參考：** 這個屬性必須指定只包含控制項的參考。 如需如何指定參考是否包含控制項相關的資訊，如下所示。 |
 
-##  <a name="ExtensionSDKs"></a> 擴充功能 Sdk
+## <a name="ExtensionSDKs"></a> 擴充功能 Sdk
  下列各節說明您需要如何部署擴充功能 SDK。
 
 ### <a name="installation"></a>安裝
@@ -72,13 +72,13 @@ ms.locfileid: "59661216"
 
  如果您想要使用不同的位置，您必須執行下列其中一種：
 
-1.  您可以指定它在登錄機碼：
+1. 您可以指定它在登錄機碼：
 
      **HKLM\Software\Microsoft\Microsoft Sdk\<目標平台 > \v < 平台的版本號碼\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
 
      並將其值為 （預設值） 子機碼`<path to SDK><SDKName><SDKVersion>`。
 
-2.  新增 MSBuild 屬性`SDKReferenceDirectoryRoot`至專案檔。 這個屬性的值是您想要參考的擴充功能 Sdk 所在的目錄以分號分隔清單。
+2. 新增 MSBuild 屬性`SDKReferenceDirectoryRoot`至專案檔。 這個屬性的值是您想要參考的擴充功能 Sdk 所在的目錄以分號分隔清單。
 
 ### <a name="installation-layout"></a>安裝版面配置
  擴充功能 Sdk 有下列安裝版面配置：
@@ -191,10 +191,10 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 16. 檔案參考：指定包含控制項或原生 Winmd 這些參考。 如需有關如何指定參考是否包含控制項的資訊，請參閱[指定的工具箱項目位置](#ToolboxItems)如下。
 
-##  <a name="ToolboxItems"></a> 指定工具箱項目的位置
+## <a name="ToolboxItems"></a> 指定工具箱項目的位置
  ToolBoxItems 元素*SDKManifest.xml*結構描述指定平台和擴充功能 Sdk 中的類別目錄和工具箱項目的位置。 下列範例示範如何指定不同的位置。 這是適用於 WinMD 或 DLL 的參考。
 
-1.  將控制項放在 [工具箱] 的預設分類。
+1. 將控制項放在 [工具箱] 的預設分類。
 
     ```
     <File Reference = "sample.winmd">
@@ -202,7 +202,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-2.  將特定類別名稱的控制項。
+2. 將特定類別名稱的控制項。
 
     ```
     <File Reference = "sample.winmd">
@@ -210,7 +210,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-3.  放置在特定的類別名稱 底下的控制項。
+3. 放置在特定的類別名稱 底下的控制項。
 
     ```
     <File Reference = "sample.winmd">
@@ -221,7 +221,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-4.  在 Blend 和 Visual Studio 中放置在不同的類別名稱 底下的控制項。
+4. 在 Blend 和 Visual Studio 中放置在不同的類別名稱 底下的控制項。
 
     ```
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.
@@ -231,7 +231,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-5.  列舉以不同的方式在 Blend 和 Visual Studio 中的特定控制項。
+5. 列舉以不同的方式在 Blend 和 Visual Studio 中的特定控制項。
 
     ```
     <File Reference = "sample.winmd">
@@ -242,7 +242,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-6.  列舉特定的控制項，並將它們放在 Visual Studio 共用路徑，或僅在所有的控制項群組。
+6. 列舉特定的控制項，並將它們放在 Visual Studio 共用路徑，或僅在所有的控制項群組。
 
     ```
     <File Reference = "sample.winmd">
@@ -253,7 +253,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-7.  列舉特定控制項，並顯示只有一組特定 ChooseItems 中，而不需要它們要在工具箱中。
+7. 列舉特定控制項，並顯示只有一組特定 ChooseItems 中，而不需要它們要在工具箱中。
 
     ```
     <File Reference = "sample.winmd">

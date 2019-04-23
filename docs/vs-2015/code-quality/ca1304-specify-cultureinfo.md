@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 173ab11e85853324089f1dee66cd047e0afb7f13
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8757b04423037d821d7b74293e508f567975da57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940726"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047928"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304:必須指定 CultureInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58940726"
 ## <a name="cause"></a>原因
  方法或建構函式呼叫可接受的多載成員<xref:System.Globalization.CultureInfo?displayProperty=fullName>參數的方法或建構函式不會呼叫多載，<xref:System.Globalization.CultureInfo>參數。 此規則會忽略呼叫下列方法：
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則描述
  當<xref:System.Globalization.CultureInfo>或<xref:System.IFormatProvider?displayProperty=fullName>未提供物件，多載成員所提供的預設值可能沒有您想要以所有地區設定的效果。 此外，[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]成員選擇預設文化特性及格式設定為基礎的假設，可能不正確的程式碼。 為了確保程式碼的運作如預期般運作，您的案例，您應該提供特定文化特性資訊，根據下列指導方針：

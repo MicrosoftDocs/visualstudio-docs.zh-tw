@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eae8f49efbff2fd2219d0180db3a542f553a8027
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c30b0a190d2a2abfed56004e167f6ee5ef5ecf97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775347"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046069"
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ ms.locfileid: "54775347"
   
  **本主題內容：**  
   
--   [繪製圖形](#Shape)  
+- [繪製圖形](#Shape)  
   
--   [繪製路徑](#Path)  
+- [繪製路徑](#Path)  
   
--   [將圖形轉換成路徑](#Convert)  
+- [將圖形轉換成路徑](#Convert)  
   
--   [合併路徑](#Combine)  
+- [合併路徑](#Combine)  
   
--   [建立複合路徑](#Compound)  
+- [建立複合路徑](#Compound)  
   
--   [建立裁剪路徑](#Clipping)  
+- [建立裁剪路徑](#Clipping)  
   
-##  <a name="Shape"></a> 繪製圖形  
+## <a name="Shape"></a> 繪製圖形  
  您可以在 [資產]  面板中找到許多圖形。  
   
  ![[資產] 面板上的 [圖形] 分類](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")  
@@ -46,7 +46,7 @@ ms.locfileid: "54775347"
   
  ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png "84261e83-3091-4490-ab58-4218b188439e")  
   
-##  <a name="Path"></a> 繪製路徑  
+## <a name="Path"></a> 繪製路徑  
  路徑是一系列連接的直線和曲線。 使用路徑可建立 [資產]  面板中所沒有的有趣圖形。  
   
  您可以使用線條、畫筆或鉛筆來繪製路徑。 您可以在 [工具]  面板中找到這些工具。  
@@ -96,12 +96,12 @@ ms.locfileid: "54775347"
   
  使用**選取**工具 ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") 選取路徑。 使用**畫筆**工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") 按一下想要新增點之路徑的任何位置。  
   
-##  <a name="Convert"></a> 將圖形轉換成路徑  
+## <a name="Convert"></a> 將圖形轉換成路徑  
  若要以修改路徑的相同方式來修改圖形，請將圖形轉換為路徑。  
   
  **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：將圖形轉換成路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。  
   
-##  <a name="Combine"></a> 合併路徑  
+## <a name="Combine"></a> 合併路徑  
  您可以將路徑與圖形合併為單一路徑。  
   
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")  
@@ -114,7 +114,7 @@ ms.locfileid: "54775347"
   
  **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：合併路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。  
   
-##  <a name="Compound"></a> 建立複合路徑  
+## <a name="Compound"></a> 建立複合路徑  
  當您建立複合路徑時，這些路徑的任何交集部分都會從結果中減去，而所產生的路徑會採用最底層路徑的視覺屬性。  
   
  您可以在建立複合路徑之後隨時打散這些路徑。  
@@ -123,12 +123,12 @@ ms.locfileid: "54775347"
   
  **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：建立複合路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。  
   
-##  <a name="Clipping"></a> 建立裁剪路徑  
+## <a name="Clipping"></a> 建立裁剪路徑  
  裁剪路徑是套用至其他物件的路徑或圖形，隱藏了所遮蔽物件落於裁剪路徑外面的部分。  
   
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")  
   
  **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：建立裁剪路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 Blend for Visual Studio 建立 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

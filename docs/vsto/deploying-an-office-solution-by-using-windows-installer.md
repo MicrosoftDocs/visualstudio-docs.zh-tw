@@ -18,14 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eed2cc63941f63b3f1d21cac86f907808a072665
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a89898b7f0495e35ed51d6333288b3aa67c45428
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666347"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056744"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 方案
+
 使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]以了解如何為 Office 方案建立 Windows Installer。
 
 使用 Visual Studio 建立 Windows Installer，您可以部署需要使用者電腦系統管理權限的 Office 方案。 例如，您可以使用這類檔案，為電腦上的所有使用者只安裝方案一次。 您也可以使用 ClickOnce 部署 Office 方案，但是必須為電腦上的每個使用者分別安裝該方案。
@@ -77,6 +78,7 @@ ms.locfileid: "59666347"
 > 對於文件層級自訂，文件的位置也必須是受信任的。 如需詳細資訊，請參閱 <<c0> [ 授與信任給文件](../vsto/granting-trust-to-documents.md)。
 
 ## <a name="Obtain"></a>取得 InstallShield 限量版
+
 您可以使用 InstallShield 限量版 (ISLE) 建立 Windows Installer 檔案，如果您安裝 Visual Studio，這個版本是免費的。 ISLE 會取代舊版 Visual Studio 提供的安裝及部署專案範本的功能。
 
 ### <a name="to-get-installshield-limited-edition"></a>若要取得 InstallShield 限量版
@@ -116,6 +118,7 @@ ms.locfileid: "59666347"
    本主題的範例包含名為 **OfficeAddInSetup**的安裝專案。 本主題會使用同一個名稱，談及您方案中的安裝專案。
 
 ## <a name="Add"></a>加入專案輸出
+
 您可以設定 **OfficeAddInSetup** 專案，以包含 Office 專案的輸出。 對於 VSTO 增益集專案，專案輸出只會有解決方案組件。 對於文件層級自訂專案，專案輸出不只包含方案組件，也包含文件本身。
 
 ### <a name="to-add-the-project-output"></a>若要加入專案輸出
@@ -136,7 +139,6 @@ ms.locfileid: "59666347"
 
 ## <a name="AddD"></a>加入部署和應用程式資訊清單
 
-###
 1. 在 [ **應用程式檔案** ] 頁面上，選擇 [ **加入檔案** ] 按鈕。
 
 2. 在 [ **開啟** ] 對話方塊中，瀏覽至 **ExcelAddIn** 專案的輸出資料夾。
@@ -150,6 +152,7 @@ ms.locfileid: "59666347"
    ![安裝專案輸出檔。](../vsto/media/installshield-outputfiles.png "安裝專案的輸出檔案。")
 
 ## <a name="Configure"></a>設定相依元件為必要條件
+
 在安裝應用程式中，您不僅必須包含下列元件，而且還要有方案執行所需的任何其他元件。
 
 - 做為 Office 方案目標的 .NET Framework 版本。
@@ -173,6 +176,7 @@ ms.locfileid: "59666347"
 4. 如果這個對話方塊出現，請選擇 [ **否** ] 按鈕。
 
 ### <a name="AddToolsForOffice"></a>加入 Visual Studio 2010 Tools for Office Runtime
+
 [ **Redistributables** ] 頁面包含名為 **Microsoft VSTO 2010 Runtime**的項目，不過這指的是較舊版的執行階段。 因此，您或許可以手動建立參考最新版本的組態檔。 然後您必須針對出現在 [ **Redistributables** ] 頁面上的所有的其他項目，將該檔案置入其組態檔所在的目錄中。
 
 #### <a name="to-add-the-visual-studio-2010-tools-for-office-runtime-as-a-prerequisite"></a>若要加入 Visual Studio 2010 Tools for Office 執行階段做為必要條件
@@ -219,7 +223,7 @@ ms.locfileid: "59666347"
 8. 在 [ **檔案名稱** ] 方塊中，輸入 **Visual Studio 2010 Tools for Office Runtime.prq**，然後選擇 [ **儲存** ] 按鈕。
 
    > [!NOTE]
-   >    務必將 **.prq** 加在檔案名稱的結尾，將此檔案識別為必要條件檔案。
+   > 務必將 **.prq** 加在檔案名稱的結尾，將此檔案識別為必要條件檔案。
 
 9. 關閉記事本。
 
@@ -250,9 +254,10 @@ ms.locfileid: "59666347"
 4. 在 **設定 INSTALLDIR**對話方塊方塊中，選擇您要安裝方案在使用者電腦上的資料夾。
 
    > [!NOTE]
-   >    您也可以開啟清單中任何資料夾的捷徑功能表，在 [ **設定 INSTALLDIR** ] 對話方塊中建立子資料夾。
+   > 您也可以開啟清單中任何資料夾的捷徑功能表，在 [ **設定 INSTALLDIR** ] 對話方塊中建立子資料夾。
 
 ## <a name="ConfigureRegistry"></a>設定 VSTO 增益集
+
 您可以指定是要為電腦上所有使用者 (每部電腦)，或是只為執行安裝的使用者 (個別使用者) 安裝 VSTO 增益集。
 
 如果您要支援每部電腦安裝，建立兩個不同的安裝程式。 您可以根據使用者執行的 Office 版本 (32 位元和 64 位元) 或 Windows 版本 (32 位元和 64 位元)，分割安裝程式。
@@ -313,10 +318,10 @@ ms.locfileid: "59666347"
 | 64 位元<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
-   >    64 位元 Windows 的安裝程式需要兩個登錄路徑，因為它可讓使用者在執行 64 位元 Windows 的電腦上執行 32 位元和 64 位元版本的 Office。
+   > 64 位元 Windows 的安裝程式需要兩個登錄路徑，因為它可讓使用者在執行 64 位元 Windows 的電腦上執行 32 位元和 64 位元版本的 Office。
 
    > [!NOTE]
-   >    最佳做法是，使用您的公司名稱做為 VSTO 增益集名稱的開頭。 這個慣例會提高機率，索引鍵將是唯一的並降低衝突與 VSTO 增益集與其他廠商的機率。 例如，具有相同名稱的增益集可以覆寫彼此的登錄機碼。 這個方法不保證機碼是唯一的，但是可以減少潛在的名稱衝突。
+   > 最佳做法是，使用您的公司名稱做為 VSTO 增益集名稱的開頭。 這個慣例會提高機率，索引鍵將是唯一的並降低衝突與 VSTO 增益集與其他廠商的機率。 例如，具有相同名稱的增益集可以覆寫彼此的登錄機碼。 這個方法不保證機碼是唯一的，但是可以減少潛在的名稱衝突。
 
 5. 您已建立金鑰的階層之後，開啟捷徑功能表**SampleCompany.ExcelAddIn**機碼，請選擇**新增**，然後選擇**字串值**。
 
@@ -368,6 +373,7 @@ ms.locfileid: "59666347"
 > 如果您在 VSTO 增益集中的 Outlook 建立自訂表單區域，您必須建立更多登錄項目向 Outlook 註冊這個區域。 如需詳細資訊，請參閱 <<c0> [ 登錄項目，適用於 Outlook 表單區域](../vsto/registry-entries-for-vsto-add-ins.md#OutlookEntries)。
 
 ## <a name="ConfigureDocument"></a>Configure a document-level customization
+
 本節適用於只有當您要部署文件層級自訂。 如果您要部署 VSTO 增益集，您可以立即移至[建置安裝專案](#Build)一節。
 
 文件層級自訂並不使用登錄機碼。 相反地，自訂文件屬性包含部署資訊清單的位置。
@@ -430,14 +436,14 @@ ms.locfileid: "59666347"
    事件清單隨即出現在螢幕側邊的窗格中。
 
    > [!NOTE]
-   >    只有少數幾個出現在此清單中的事件可在 InstallShield 限量版中使用。 在此程序中，您將執行程式，使用**After Setup Complete Success 對話方塊**事件。
+   > 只有少數幾個出現在此清單中的事件可在 InstallShield 限量版中使用。 在此程序中，您將執行程式，使用**After Setup Complete Success 對話方塊**事件。
 
 8. 在事件清單的 **Custom Actions During Installation**底下，開啟 **After Setup Complete Success dialog** 事件的捷徑功能表，然後選擇 [ **新增 EXE**]。
 
    名為 **NewCustomAction1** 的自訂動作出現在 **After Setup Complete Success dialog** 事件底下。 自訂動作的一組屬性出現在窗格中事件旁邊。
 
    > [!IMPORTANT]
-   >    兩個 **After Setup Complete Success dialog** 事件會在事件清單中出現。 確定您選擇的是 **Custom Actions During Installation** 節點下出現的 **After Setup Complete Success dialog** 事件執行個體。
+   > 兩個 **After Setup Complete Success dialog** 事件會在事件清單中出現。 確定您選擇的是 **Custom Actions During Installation** 節點下出現的 **After Setup Complete Success dialog** 事件執行個體。
 
 9. 在 [ **來源位置** ] 屬性的清單中，選擇 [ **與產品一起安裝**]。
 
@@ -468,7 +474,7 @@ ms.locfileid: "59666347"
 16. 將 **Your Solution ID** 取代為您已複製到剪貼簿的方案 ID。
 
    > [!IMPORTANT]
-   >    測試您的安裝程式，確認這個自訂動作執行的主控台應用程式可以存取 [INSTALLDIR] 目錄中的文件。 在使用者電腦上的某些目錄可能需要系統管理存取權 （例如，Program Files 目錄）。 如果您要部署您的解決方案，需要系統管理權限的目錄，您應該開啟**屬性**對話方塊中*setup.exe*檔案中，選擇**的相容性**索引標籤，然後按**系統管理員身分執行此程式**散發安裝程式之前的核取方塊。 如果您不想要以系統管理權限執行安裝程式的使用者，則將 [INSTALLDIR] 屬性設的使用者可能有權存取的目錄，例如**文件**目錄。 如需詳細資訊，請參閱 <<c0> [ 指定您要在使用者電腦上安裝解決方案](#Location)本主題一節。
+   > 測試您的安裝程式，確認這個自訂動作執行的主控台應用程式可以存取 [INSTALLDIR] 目錄中的文件。 在使用者電腦上的某些目錄可能需要系統管理存取權 （例如，Program Files 目錄）。 如果您要部署您的解決方案，需要系統管理權限的目錄，您應該開啟**屬性**對話方塊中*setup.exe*檔案中，選擇**的相容性**索引標籤，然後按**系統管理員身分執行此程式**散發安裝程式之前的核取方塊。 如果您不想要以系統管理權限執行安裝程式的使用者，則將 [INSTALLDIR] 屬性設的使用者可能有權存取的目錄，例如**文件**目錄。 如需詳細資訊，請參閱 <<c0> [ 指定您要在使用者電腦上安裝解決方案](#Location)本主題一節。
 
 ## <a name="Build"></a>Build the setup project
 

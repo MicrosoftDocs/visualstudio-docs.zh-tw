@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663988"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056155"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>從 UML 類別圖產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ ms.locfileid: "59663988"
 
 2. 在類別圖表或在**UML 模型總管**，選取您要產生程式碼項目。 您可以選取下列其中一項：  
 
-   -   一組特定的項目。  
+   - 一組特定的項目。  
 
-   -   封裝或模型，可從其內容中產生程式碼。  
+   - 封裝或模型，可從其內容中產生程式碼。  
 
-   -   圖表，可選取圖表上的所有項目。  
+   - 圖表，可選取圖表上的所有項目。  
 
 3. 開啟選取的項目捷徑功能表，然後選擇**產生的程式碼**。  
 
@@ -71,7 +71,7 @@ ms.locfileid: "59663988"
 
    某些驗證測試會套用到模型中，以確保它可以轉譯為 C#。 如果這些測試失敗，便會顯示錯誤訊息，而且不會執行程式碼產生作業。 如果您已經建立驗證功能表命令，則不會針對驗證命令失敗的任何項目產生程式碼。 如需詳細資訊，請參閱 <<c0> [ 定義 UML 模型的驗證條件約束](../modeling/define-validation-constraints-for-uml-models.md)。  
 
-##  <a name="default"></a> 預設程式碼產生轉換  
+## <a name="default"></a> 預設程式碼產生轉換  
  本節摘要說明所產生的結果**產生的程式碼**命令時，除非您自訂的命令。 如需詳細資訊，請參閱 <<c0> [ 自訂產生程式碼命令](#custom)。  
 
 - 將會針對您在 UML 模型中選取的每一個類型各產生一個 C# 類型。 每個型別放在不同的程式碼檔底下**GeneratedCode**資料夾。  
@@ -126,7 +126,7 @@ ms.locfileid: "59663988"
 
   每一個屬性 (Attribute) 和作業也會擁有您可以設定的造型屬性 (Property)。 如果您看不見屬性在新的屬性上，執行**產生的程式碼**。  
 
-##  <a name="custom"></a> 自訂產生程式碼命令  
+## <a name="custom"></a> 自訂產生程式碼命令  
  **產生的程式碼**轉換您的模型項目，使用文字範本的一組命令運作。 如需文字範本的詳細資訊，請參閱[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。  
 
  中的一組指定的範本*文字範本繫結*。 文字範本繫結指定的範本應該套用，產生的輸出應放置的位置，和其他參數**產生的程式碼**命令。  
@@ -175,7 +175,7 @@ ms.locfileid: "59663988"
 
 5. 您可以將不限數目的繫結附加至項目中。  
 
-##  <a name="writing"></a> 撰寫文字範本  
+## <a name="writing"></a> 撰寫文字範本  
  您可以撰寫自己的文字範本。 文字範本可以產生程式碼或任何其他種類的文字檔。  
 
  我們建議您一開始先修改標準範本的複本。 您可以從下列位置複製範本：  
