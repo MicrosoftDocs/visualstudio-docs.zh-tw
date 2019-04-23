@@ -8,12 +8,12 @@ ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fe4adb6e70027cae239cf9fafe605aa03431ff3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 97f238b51e3f4ad3bbb32bdbdc134089c0cb7e99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099100"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 在測試期間隔離程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +51,10 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
   
  一般而言，我們建議您使用虛設常式類型與程式碼基底中的相依性隔離。 您可以藉由將元件隱藏在介面後面來達成。 您可以使用填充碼類型隔離不提供可測試之應用程式開發介面的協力廠商元件。  
   
-##  <a name="stubs"></a> 開始使用虛設常式  
+## <a name="stubs"></a> 開始使用虛設常式  
  如需更詳細的描述，請參閱[使用虛設常式隔離應用程式的各個組件，方便進行單元測試](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。  
   
-1.  **插入介面**  
+1. **插入介面**  
   
      若要使用虛設常式，您所撰寫的測試程式碼不可明確提及應用程式其他元件中的類別。 「元件」是指一併開發及更新的一個或多個類別，通常會包含在一個 Visual Studio 專案中。 應使用介面宣告變數和參數，並應使用 Factory 傳入或建立其他元件的執行個體。 例如，如果 StockFeed 是另一個應用程式元件中的類別，下列作法就不正確：  
   
@@ -75,15 +75,15 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
   
     ```  
   
-2.  **新增 Fakes 組件**  
+2. **新增 Fakes 組件**  
   
-    1.  在 [方案總管] 中展開測試專案的參考清單。 如果在 Visual Basic 中工作，您必須選擇 [顯示所有檔案] 才能看到參考清單。  
+    1. 在 [方案總管] 中展開測試專案的參考清單。 如果在 Visual Basic 中工作，您必須選擇 [顯示所有檔案] 才能看到參考清單。  
   
-    2.  選取定義介面 (例如 IStockFeed) 之組件的參考。 在此參考的捷徑功能表上，選擇 [新增 Fakes 組件]。  
+    2. 選取定義介面 (例如 IStockFeed) 之組件的參考。 在此參考的捷徑功能表上，選擇 [新增 Fakes 組件]。  
   
-    3.  重建方案。  
+    3. 重建方案。  
   
-3.  在您的測試中，建構虛設常式的執行個體，並為其方法提供程式碼：  
+3. 在您的測試中，建構虛設常式的執行個體，並為其方法提供程式碼：  
   
     ```csharp  
     [TestClass]  
@@ -145,7 +145,7 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
   
      另外也會為屬性、事件及泛型方法的 getter 及 setter 產生虛設常式。 如需詳細資訊，請參閱[使用虛設常式隔離應用程式的各個組件，方便進行單元測試](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。  
   
-##  <a name="shims"></a> 開始使用填充碼  
+## <a name="shims"></a> 開始使用填充碼  
  (如需更詳細的描述，請參閱[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md))。  
   
  假設您的元件包含對 `DateTime.Now` 的呼叫：  

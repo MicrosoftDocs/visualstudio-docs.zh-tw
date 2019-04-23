@@ -10,23 +10,23 @@ ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec5124144e93d37c0f288450b00865461091253f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0107befa502d13ada7f5fd9e6081dde5f7c1cdc2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100140"
 ---
 # <a name="document-position"></a>文件位置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯**文件位置**:  
   
--   為已知的 ide，請提供抽象的原始程式檔中的位置。 大部分語言的現在，文件位置可以視為的原始程式檔中的位置。  
+- 為已知的 ide，請提供抽象的原始程式檔中的位置。 大部分語言的現在，文件位置可以視為的原始程式檔中的位置。  
   
--   描述偵錯引擎來源文件中的位置。  
+- 描述偵錯引擎來源文件中的位置。  
   
--   由實作[IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)介面。  
+- 由實作[IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)介面。  
   
 ## <a name="see-also"></a>另請參閱  
  [程式碼內容](../../extensibility/debugger/code-context.md)   

@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b31faa7c71a0f4072d922528a1abc4d040e7dae
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000410"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099269"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>在 UML 模型中建立項目和關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|  
   
 ### <a name="invoke-the-create-method-on-the-owner"></a>在擁有者上叫用 Create 方法  
- 方法名稱是格式的：`Create`*擁有的類型*`()`。 例如：  
+ 方法名稱是格式的：`Create`*擁有的類型*`()`。 例如:   
   
 ```  
 IUseCase usecase1 = linkedPackage.CreateUseCase();  
@@ -87,11 +87,11 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 #### <a name="to-create-an-association"></a>建立關聯  
   
-1.  取得關聯的擁有者，這通常是包含關聯性來源端的套件或模型。  
+1. 取得關聯的擁有者，這通常是包含關聯性來源端的套件或模型。  
   
-2.  在擁有者上叫用必要的 Create 方法。  
+2. 在擁有者上叫用必要的 Create 方法。  
   
-3.  設定關聯性的屬性，例如其名稱。  
+3. 設定關聯性的屬性，例如其名稱。  
   
      例如:   
   
@@ -100,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4.  設定關聯性各端的屬性。 總是會有兩個 `MemberEnds`。 例如:   
+4. 設定關聯性各端的屬性。 總是會有兩個 `MemberEnds`。 例如:   
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -125,9 +125,9 @@ anElement.Delete();
   
  當您從模型刪除項目時：  
   
--   也會刪除與項目連結的每一個關聯性。  
+- 也會刪除與項目連結的每一個關聯性。  
   
--   也會刪除在圖表上代表該項目的每一個圖形。  
+- 也會刪除在圖表上代表該項目的每一個圖形。  
   
 ## <a name="see-also"></a>另請參閱  
  [擴充 UML 模型和圖表](../modeling/extend-uml-models-and-diagrams.md)   

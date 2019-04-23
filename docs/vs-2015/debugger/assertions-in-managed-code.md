@@ -26,19 +26,19 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae0842109abd1813a47bb7963111d2765cb399a5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: effeac6eb35eab5da53dc8e58cd44a72297a23d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102311"
 ---
 # <a name="assertions-in-managed-code"></a>Managed 程式碼中的判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 判斷提示 (或 `Assert` 陳述式) 可以測試條件，您可以將此條件指定為 `Assert` 陳述式的引數。 如果條件判斷值為 true，則不會執行任何動作。 如果條件判斷值為 false，則判斷提示會失敗。 如果您是以偵錯組建執行，則您的程式將進入中斷模式。  
   
-##  <a name="BKMK_In_this_topic"></a>本主題內容  
+## <a name="BKMK_In_this_topic"></a>本主題內容  
  [System.Diagnostics 命名空間中的判斷提示](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
   
  [Debug.Assert 方法](#BKMK_The_Debug_Assert_method)  
@@ -53,14 +53,14 @@ ms.locfileid: "58941025"
   
  [在組態檔中設定判斷提示](#BKMK_Setting_assertions_in_configuration_files)  
   
-##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> System.Diagnostics 命名空間中的判斷提示  
+## <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> System.Diagnostics 命名空間中的判斷提示  
  在 Visual Basic 和 Visual C# 中，您可以從位於 `Assert` 命名空間中的 <xref:System.Diagnostics.Debug> 或 <xref:System.Diagnostics.Trace> 使用 <xref:System.Diagnostics> 方法。 <xref:System.Diagnostics.Debug> 類別方法未包含在程式的發行版本中，因此不會增加發行程式碼的大小或減緩其速度。  
   
  C++ 不支援 <xref:System.Diagnostics.Debug> 類別方法。 您可以使用 <xref:System.Diagnostics.Trace> 類別搭配條件式編譯得到相同的效果，例如 `#ifdef DEBUG`... `#endif`。  
   
  [本主題內容](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_The_Debug_Assert_method"></a> Debug.Assert 方法  
+## <a name="BKMK_The_Debug_Assert_method"></a> Debug.Assert 方法  
  您可以隨意使用 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 方法測試程式碼正確時應為 true 的條件。 例如，假設您撰寫了整數除法函式。 依據數學規則，除數不可為零。 您可以使用判斷提示測試這項條件：  
   
 ```vb  
@@ -114,7 +114,7 @@ savingsAccount.Withdraw ( amount );
   
  [本主題內容](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Side_effects_of_Debug_Assert"></a> Debug.Assert 的副作用  
+## <a name="BKMK_Side_effects_of_Debug_Assert"></a> Debug.Assert 的副作用  
  當您使用 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 時，請確認 `Assert` 內的任何程式碼都不會在 `Assert` 移除後變更程式的結果。 否則，您可能意外引入只會出現在程式發行版本中的 Bug。 處理包含函式或程序呼叫的判斷提示時要特別小心，例如下面的範例：  
   
 ```vb  
@@ -143,7 +143,7 @@ Debug.Assert ( temp != 0 );
   
  [本主題內容](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Trace_and_Debug_Requirements"></a> 追蹤和偵錯需求  
+## <a name="BKMK_Trace_and_Debug_Requirements"></a> 追蹤和偵錯需求  
  如果您使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 精靈建立專案，根據預設，TRACE 符號會同時在發行和偵錯組態中定義。 根據預設，DEBUG 符號只會在偵錯組建中定義。  
   
  否則為了要讓 <xref:System.Diagnostics.Trace> 方法運作，您程式的原始程式檔頂端就必須要有下列其中一個項目：  
@@ -162,7 +162,7 @@ Debug.Assert ( temp != 0 );
   
   C++ 不支援 <xref:System.Diagnostics.Debug> 類別方法。 您可以使用 <xref:System.Diagnostics.Trace> 類別搭配條件式編譯得到相同的效果，例如 `#ifdef DEBUG`... `#endif`。 您可以在 [\<專案> 屬性頁] 對話方塊中定義這些符號。 如需詳細資訊，請參閱[變更 Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)或[變更 C 或 C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
   
-##  <a name="BKMK_Assert_arguments"></a> Assert 引數  
+## <a name="BKMK_Assert_arguments"></a> Assert 引數  
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 最多可接受三個引數。 第一個引數是強制性的，代表您要檢查的條件。 如果您只使用一個引數呼叫 <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> 或 <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>，`Assert` 方法將會檢查該條件，而如果結果為 false，則會將呼叫堆疊的內容輸出至 [輸出] 視窗。 下列範例將示範 <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>：  
   
 ```vb  
@@ -202,7 +202,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  [本主題內容](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Customizing_Assert_behavior"></a> 自訂 Assert 的行為  
+## <a name="BKMK_Customizing_Assert_behavior"></a> 自訂 Assert 的行為  
  如果您以使用者介面模式執行應用程式，`Assert` 方法將在條件失敗時顯示 [判斷提示失敗] 對話方塊。 判斷提示失敗時發生的動作是由 <xref:System.Diagnostics.Debug.Listeners%2A> 或 <xref:System.Diagnostics.Trace.Listeners%2A> 屬性所控制。  
   
  自訂輸出行為的方法包括將 <xref:System.Diagnostics.TraceListener> 物件加入至 `Listeners` 集合內、從 <xref:System.Diagnostics.TraceListener> 集合內移除 `Listeners`，或覆寫現有 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 的 `TraceListener` 方法，讓它擁有不同的行為。  
@@ -215,7 +215,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  [本主題內容](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Setting_assertions_in_configuration_files"></a> 在組態檔中設定判斷提示  
+## <a name="BKMK_Setting_assertions_in_configuration_files"></a> 在組態檔中設定判斷提示  
  您可以在程式組態檔中設定判斷提示，就像在程式碼中一樣。 如需詳細資訊，請參閱 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>或 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>。  
   
 ## <a name="see-also"></a>另請參閱  

@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 662cd662e8fe18c5a2a8c05a7f5da21c064743b3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0f814623d8084619ccbe82d6660900055f81b3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660732"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101180"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,11 +111,11 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 ## <a name="creating-properties-during-execution"></a>在執行期間建立屬性  
  位於 `Target` 項目以外的屬性值是在組建的評估階段所指派。 在後續的執行階段，可以使用下列方式來建立或修改屬性：  
   
--   任何工作均可發出屬性。 若要發出屬性，[Task](../msbuild/task-element-msbuild.md) 項目必須含有具 `PropertyName` 屬性的子系 [Output](../msbuild/output-element-msbuild.md) 項目。  
+- 任何工作均可發出屬性。 若要發出屬性，[Task](../msbuild/task-element-msbuild.md) 項目必須含有具 `PropertyName` 屬性的子系 [Output](../msbuild/output-element-msbuild.md) 項目。  
   
--   透過 [CreateProperty](../msbuild/createproperty-task.md) 工作來發出屬性。 這種使用方式已過時。  
+- 透過 [CreateProperty](../msbuild/createproperty-task.md) 工作來發出屬性。 這種使用方式已過時。  
   
--   從 .NET Framework 3.5 開始，`Target` 項目可能會包含 `PropertyGroup` 項目，其中可能包含屬性宣告。  
+- 從 .NET Framework 3.5 開始，`Target` 項目可能會包含 `PropertyGroup` 項目，其中可能包含屬性宣告。  
   
 ## <a name="storing-xml-in-properties"></a>將 XML 儲存於屬性中  
  屬性可以包含任意的 XML，其有助於將值傳遞給工作，或是顯示記錄資訊。 下列範例示範 `ConfigTemplate` 屬性，其值會包含 XML 和其他屬性參考。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會藉由使用其各自的屬性值來取代屬性參考。 屬性值是以其出現的順序來指派。 因此，在此範例中，應該已經定義 `$(MySupportedVersion)`、`$(MyRequiredVersion)` 及 `$(MySafeMode)`。  

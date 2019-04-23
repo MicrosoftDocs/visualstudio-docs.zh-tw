@@ -8,27 +8,27 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4a72acafa4e2ad8de757541312a13f203f73559
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e08a443513bb6043ec2f3841067021ffc65dd92d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940240"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098998"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 這篇文章包含 Visual Studio 說明檢視器整合者的下列工作：
 
--   建立主題 （F1 支援）
+- 建立主題 （F1 支援）
 
--   建立 Help 檢視器內容品牌封裝
+- 建立 Help 檢視器內容品牌封裝
 
--   部署一份文件
+- 部署一份文件
 
--   新增 Visual Studio shell （整合模式或隔離） 說明
+- 新增 Visual Studio shell （整合模式或隔離） 說明
 
--   其他資源
+- 其他資源
 
 ### <a name="creating-a-topic-f1-support"></a>建立主題 （F1 支援）
  本節將提供的主題、 主題需求、 如何以其呈現的結果建立主題 （包括 F1 支援需求） 和最後，範例主題的簡短描述元件的概觀。
@@ -63,7 +63,7 @@ ms.locfileid: "58940240"
 
 - javascript
 
-- csharp 或 C#
+- csharp 或 c#
 
 - cplusplus 或 visual c + + 或 c + +
 
@@ -132,17 +132,17 @@ ms.locfileid: "58940240"
 
  （不包括頁首和頁尾） 中主題的主體會包含頁面的連結、 注意 > 一節、 可摺疊的區域、 程式碼片段中和一段特定文字的語言。  請參閱這些區域的相關主題的資訊呈現的商標設定區段。
 
-1.  新增主題標題標記：  `<div class="title">Contoso Topic 4</div>`
+1. 新增主題標題標記：  `<div class="title">Contoso Topic 4</div>`
 
-2.  新增附註區段： `<div class="alert"> add your table tag and text </div>`
+2. 新增附註區段： `<div class="alert"> add your table tag and text </div>`
 
-3.  新增可摺疊的區域：  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. 新增可摺疊的區域：  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4.  加入程式碼片段：  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. 加入程式碼片段：  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  新增語言特定文字時，程式碼：`<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` 請注意該 devLangnu = 可讓您輸入其他語言。 比方說，devLangnu ="Fortran"會顯示 Fortran 時程式碼片段 DisplayLanguage = Fortran
+5. 新增語言特定文字時，程式碼：`<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` 請注意該 devLangnu = 可讓您輸入其他語言。 比方說，devLangnu ="Fortran"會顯示 Fortran 時程式碼片段 DisplayLanguage = Fortran
 
-6.  新增頁面的連結： `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. 新增頁面的連結： `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 >  注意： 針對不受支援新的 「 顯示語言 」 (範例中， F#、 Cobol、 Fortran) 程式碼顏色標示程式碼片段中的將會是單色。
@@ -296,13 +296,13 @@ some F# code
 
 1. 設定**VendorContent**說明 2.1 登錄機碼下的值：
 
-   -   適用於 32 位元作業系統：
+   - 適用於 32 位元作業系統：
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
         「 VendorContent"= dword: 00000001
 
-   -   適用於 64 位元作業系統：
+   - 適用於 64 位元作業系統：
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 

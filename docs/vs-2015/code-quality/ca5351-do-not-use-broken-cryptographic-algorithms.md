@@ -8,12 +8,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b8129b4ff946658c5e1b4f24c57ca77cb50e14a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71f92543b73eddb26f82e787f5c81f53d3aeddb8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943685"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102662"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 不要使用中斷的密碼編譯演算法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ ms.locfileid: "58943685"
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  使用密碼編譯較強的選項：  
   
--   針對 MD5，在 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) 系列 (例如 <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>) 中使用雜湊。  
+- 針對 MD5，在 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) 系列 (例如 <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>) 中使用雜湊。  
   
--   針對 DES 和 RC2，使用 <xref:System.Security.Cryptography.Aes> 加密。  
+- 針對 DES 和 RC2，使用 <xref:System.Security.Cryptography.Aes> 加密。  
   
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  請不要隱藏這個規則的警告，除非密碼編譯專家已檢閱過它。  

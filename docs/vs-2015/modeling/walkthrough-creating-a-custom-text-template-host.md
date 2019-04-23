@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3120cee504de8565f5caf80034678e9788da70ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28f8cd324079a50a20312022ea6daaba843f8564
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100322"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,31 +31,31 @@ A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*
   
  本逐步解說所述的工作包括下列各項：  
   
--   建立自訂文字範本主應用程式。  
+- 建立自訂文字範本主應用程式。  
   
--   測試自訂主應用程式。  
+- 測試自訂主應用程式。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要完成這個逐步解說，您必須具有下列各項：  
   
--   Visual Studio 2010 (含) 以後版本  
+- Visual Studio 2010 (含) 以後版本  
   
--   Visual Studio SDK  
+- Visual Studio SDK  
   
 ## <a name="creating-a-custom-text-template-host"></a>建立自訂文字範本主應用程式  
  在本逐步解說中，您將會在可從命令列呼叫執行的應用程式 (Application) 中建立自訂主應用程式 (Custom Host)。 此應用程式會接受文字範本檔做為引數、讀取範本、呼叫引擎以轉換範本，然後在命令提示字元視窗中顯示發生的任何錯誤。  
   
 #### <a name="to-create-a-custom-host"></a>若要建立自訂主應用程式  
   
-1.  在 Visual Studio 中建立新的 Visual Basic 或 C# 主控台應用程式，並命名為 CustomHost。  
+1. 在 Visual Studio 中建立新的 Visual Basic 或 C# 主控台應用程式，並命名為 CustomHost。  
   
-2.  加入下列組件的參考：  
+2. 加入下列組件的參考：  
   
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.visualstudio.texttemplating.interfaces.10.0 （含） 及更新版本**  
+    - **Microsoft.visualstudio.texttemplating.interfaces.10.0 （含） 及更新版本**  
   
-3.  以下列程式碼取代 Program.cs 或 Module1.vb 檔案中的程式碼：  
+3. 以下列程式碼取代 Program.cs 或 Module1.vb 檔案中的程式碼：  
   
     ```csharp  
     using System;  
@@ -714,22 +714,22 @@ A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*
     End Namespace  
     ```  
   
-4.  針對[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]，開啟**專案**功能表，然後按一下**CustomHost 屬性**。 在 **啟始物件**清單中，按一下**CustomHost.Program**。  
+4. 針對[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]，開啟**專案**功能表，然後按一下**CustomHost 屬性**。 在 **啟始物件**清單中，按一下**CustomHost.Program**。  
   
-5.  在 [檔案] 功能表上按一下 [全部儲存]。  
+5. 在 [檔案] 功能表上按一下 [全部儲存]。  
   
-6.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
+6. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
 ## <a name="testing-the-custom-host"></a>測試自訂主應用程式  
  若要測試自訂主應用程式，請先撰寫文字範本，接著執行自訂主應用程式、將文字範本的名稱傳遞給這個主應用程式，然後確認已轉換該範本。  
   
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>若要建立文字範本以測試自訂主應用程式  
   
-1.  建立文字檔案，並將它命名`TestTemplate.tt`。  
+1. 建立文字檔案，並將它命名`TestTemplate.tt`。  
   
      您可以使用任何文字編輯器 (例如 [記事本]) 來建立檔案。  
   
-2.  將下列內容加入至檔案中：  
+2. 將下列內容加入至檔案中：  
   
     > [!NOTE]
     >  文字範本的程式語言與自訂主應用程式的語言不一定要相符。  
@@ -772,13 +772,13 @@ A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*
   
     ```  
   
-3.  儲存並關閉檔案。  
+3. 儲存並關閉檔案。  
   
 #### <a name="to-test-the-custom-host"></a>若要測試自訂主應用程式  
   
-1.  開啟 [命令提示字元] 視窗。  
+1. 開啟 [命令提示字元] 視窗。  
   
-2.  輸入自訂主應用程式可執行檔的路徑，但是還不要按 ENTER。  
+2. 輸入自訂主應用程式可執行檔的路徑，但是還不要按 ENTER。  
   
      例如，輸入：  
   
@@ -787,9 +787,9 @@ A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*
     > [!NOTE]
     >  而不是輸入位址，您可以瀏覽至 CustomHost.exe 檔中**Windows 檔案總管**然後將檔案拖曳到 [命令提示字元] 視窗。  
   
-3.  輸入空格。  
+3. 輸入空格。  
   
-4.  輸入文字範本檔的路徑，然後按 ENTER。  
+4. 輸入文字範本檔的路徑，然後按 ENTER。  
   
      例如，輸入：  
   
@@ -800,11 +800,11 @@ A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*
   
      自訂主應用程式隨即執行並完成文字範本轉換流程。  
   
-5.  在  **Windows 檔案總管**，瀏覽至包含檔案 TestTemplate.tt 的資料夾。  
+5. 在  **Windows 檔案總管**，瀏覽至包含檔案 TestTemplate.tt 的資料夾。  
   
      該資料夾也會包含 TestTemplate1.txt 檔。  
   
-6.  開啟這個檔案來查看文字範本轉換的結果。  
+6. 開啟這個檔案來查看文字範本轉換的結果。  
   
      產生的文字輸出隨即出現，看起來如下所示：  
   

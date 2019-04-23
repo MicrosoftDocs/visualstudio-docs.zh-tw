@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 773d3ea2e0d5574b194a44783b14d35db25d6f7f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 960d3123c45e44b2b1cdc64b896b15b82e655bb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661824"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102833"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using"></a>您要加入至設計工具的物件使用與設計工具所用的不同資料連接
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "59661824"
   
 ### <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>若要將現有的連接取代為所選取物件使用的連接  
   
--   按一下 [ **是**]。  
+- 按一下 [ **是**]。  
   
      選取的物件會加入至 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，而且 DataContext.Connection 會設定為新的連接。  
   
 ### <a name="to-continue-to-use-the-existing-connection-and-cancel-adding-the-selected-object"></a>若要繼續使用現有的連接並取消加入選取的物件  
   
--   按一下 [否] 。  
+- 按一下 [否] 。  
   
      會取消動作。 DataContext.Connection 仍然會設定為現有的連接。  
   

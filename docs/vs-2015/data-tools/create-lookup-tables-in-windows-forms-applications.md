@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 280cc2fa94b8ea8167da2168cd4fff90bb8fa612
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 76c55d45e279a3fcf6579c77bf7d226c7baf13d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663228"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102974"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows Forms 應用程式中建立查閱資料表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ ms.locfileid: "59663228"
   
 ## <a name="to-databind-a-lookup-control"></a>資料繫結的查閱控制項  
   
-1.  開啟 [資料來源] 視窗。  
+1. 開啟 [資料來源] 視窗。  
   
     > [!NOTE]
     > 查閱資料表需要兩個相關的資料表或物件會提供**Zdroje dat**視窗。
   
-2.  展開中的節點**Zdroje dat**視窗內，直到您可以看到父資料表和所有其資料行和關聯的子資料表和其所有資料行。  
+2. 展開中的節點**Zdroje dat**視窗內，直到您可以看到父資料表和所有其資料行和關聯的子資料表和其所有資料行。  
   
     > [!NOTE]
     >  子資料表節點是會顯示為父資料表中的可展開的子節點的節點。  
   
-3.  變更子資料表的卸除類型**詳細資料**藉由選取**詳細資料**子資料表的節點上的控制項清單。 如需詳細資訊，請參閱 <<c0> [ 設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
+3. 變更子資料表的卸除類型**詳細資料**藉由選取**詳細資料**子資料表的節點上的控制項清單。 如需詳細資訊，請參閱 <<c0> [ 設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
-4.  找出相關的兩個資料表的節點 (`CustomerID`在上述範例中的節點)。將其卸除類型變更<xref:System.Windows.Forms.ComboBox>藉由選取**ComboBox**從控制項清單。  
+4. 找出相關的兩個資料表的節點 (`CustomerID`在上述範例中的節點)。將其卸除類型變更<xref:System.Windows.Forms.ComboBox>藉由選取**ComboBox**從控制項清單。  
   
-5.  從主要子資料表節點拖曳**Zdroje dat**視窗拖曳至表單。  
+5. 從主要子資料表節點拖曳**Zdroje dat**視窗拖曳至表單。  
   
      資料繫結控制項 （具有描述性的標籤） 和工具帶狀 (<xref:System.Windows.Forms.BindingNavigator>) 在表單上顯示。 A[資料集](../data-tools/dataset-tools-in-visual-studio.md)，TableAdapter，並<xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>會出現在元件匣。  
   
-6.  現在將從主要的父資料表節點拖曳**資料來源**視窗直接拖曳查閱控制項 ( <xref:System.Windows.Forms.ComboBox>)。  
+6. 現在將從主要的父資料表節點拖曳**資料來源**視窗直接拖曳查閱控制項 ( <xref:System.Windows.Forms.ComboBox>)。  
   
      現在建立查閱繫結。 請參閱下表中的控制項所設定的特定屬性。  
   

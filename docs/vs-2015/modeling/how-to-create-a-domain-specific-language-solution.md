@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f675b40f250505e654b287fcaa86e70aca4cdd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945088"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099568"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>HOW TO：建立特定領域語言方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "58945088"
   
    4. 按一下  **Domain-specific Language Designer**。  
   
-   5. 在 **名稱**方塊中，輸入方案的名稱。 按一下 [確定 **Deploying Office Solutions**]。  
+   5. 在 **名稱**方塊中，輸入方案的名稱。 按一下 [確定] 。  
   
        **Domain-specific Language Designer 精靈**隨即出現。  
   
@@ -67,9 +67,9 @@ ms.locfileid: "58945088"
   
 3. 輸入檔案的副檔名**副檔名**頁面。 它應該是唯一的電腦，並在其上的任何電腦在您想要安裝 DSL。 您應該會看到訊息**沒有應用程式或 Visual Studio 編輯器會使用此延伸模組**。  
   
-   -   如果您已使用的副檔名，未完整安裝的上一個實驗 Dsl 中，您可以清除它們出利用**重設實驗執行個體**工具，可在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]SDK 功能表。  
+   - 如果您已使用的副檔名，未完整安裝的上一個實驗 Dsl 中，您可以清除它們出利用**重設實驗執行個體**工具，可在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]SDK 功能表。  
   
-   -   如果另一個[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]已完整延伸模組，可使用這個副檔名在電腦上安裝，請考慮解除安裝它。 在 **工具**功能表上，按一下**延伸模組管理員**。  
+   - 如果另一個[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]已完整延伸模組，可使用這個副檔名在電腦上安裝，請考慮解除安裝它。 在 **工具**功能表上，按一下**延伸模組管理員**。  
   
 4. 檢查，以及必要時調整，請在精靈的其餘頁面中的欄位。 當您滿意設定時，請按一下**完成**。 如需有關設定的詳細資訊，請參閱[DSL 設計工具的精靈頁面](#settings)。  
   
@@ -78,7 +78,7 @@ ms.locfileid: "58945088"
    > [!NOTE]
    >  如果您看到訊息，向您發出警示不執行文字範本來自不受信任的來源，請按一下**確定**。 您可以設定此訊息不會再出現。  
   
-##  <a name="settings"></a> DSL 設計工具的精靈頁面  
+## <a name="settings"></a> DSL 設計工具的精靈頁面  
  您可以保留預設值未變更的欄位數。 不過，請確定您設定副檔名欄位。  
   
 ### <a name="solution-settings-page"></a>解決方案設定頁面  
@@ -98,15 +98,15 @@ ms.locfileid: "58945088"
   
  如果您看到一份工具或封裝，您應該執行下列其中一項：  
   
--   輸入不同的檔案副檔名。  
+- 輸入不同的檔案副檔名。  
   
      \-或-  
   
--   重設[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]實驗執行個體。 這將會取消註冊所有您先前建立的 Dsl。 在上**開始**功能表上，按一下**所有程式**， **Microsoft Visual Studio 2010 SDK**，**工具**，然後**重設Microsoft Visual Studio 2010 Experimental 執行個體**。 您可以重建任何其他您想要再次使用的 Dsl。  
+- 重設[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]實驗執行個體。 這將會取消註冊所有您先前建立的 Dsl。 在上**開始**功能表上，按一下**所有程式**， **Microsoft Visual Studio 2010 SDK**，**工具**，然後**重設Microsoft Visual Studio 2010 Experimental 執行個體**。 您可以重建任何其他您想要再次使用的 Dsl。  
   
      \-或-  
   
--   如果[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]已完整延伸模組，可使用這個副檔名在電腦上安裝、 解除安裝它。 在 **工具**功能表上，按一下**延伸模組管理員**。  
+- 如果[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]已完整延伸模組，可使用這個副檔名在電腦上安裝、 解除安裝它。 在 **工具**功能表上，按一下**延伸模組管理員**。  
   
 ### <a name="product-settings-page"></a>產品 [設定] 頁面  
  **新特定領域語言所屬產品的名稱為何？**  

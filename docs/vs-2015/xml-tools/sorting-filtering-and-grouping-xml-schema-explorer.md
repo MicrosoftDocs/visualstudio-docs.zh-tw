@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8faed52971bacdcd08fb8d8769d5b49bd9bf90bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 86c13f7c710e462e1edd45acbf68fa4642d3d422
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662721"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099438"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、篩檢與群組 (XML 結構描述總管)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,52 +24,52 @@ ms.locfileid: "59662721"
 ## <a name="filter-options"></a>篩選選項：  
  以下是可用的篩選選項。 根據預設，**顯示命名空間**並**顯示結構描述檔案**選取選項。  
   
--   **顯示命名空間**。  
+- **顯示命名空間**。  
   
--   **顯示結構描述檔案**。  
+- **顯示結構描述檔案**。  
   
--   **顯示撰寫 (sequence/choice/all)**。  
+- **顯示撰寫 (sequence/choice/all)**。  
   
 ## <a name="sorting-options"></a>排序選項  
  以下是可用的排序選項。 預設值是**依類型排序**。 排序依據選項不適用於檔案和命名空間。  
   
--   **依類型排序**。  
+- **依類型排序**。  
   
--   **依名稱排序**。  
+- **依名稱排序**。  
   
--   **文件順序**。  
+- **文件順序**。  
   
 ### <a name="sort-by-type"></a>依類型排序  
  當**依類型排序**選取選項，全域節點都會依照下列順序。 然後，節點會在每個群組內部依字母順序排序。  
   
-1.  `import` 節點。  
+1. `import` 節點。  
   
-2.  `include` 節點。  
+2. `include` 節點。  
   
-3.  `redefine` 節點。  
+3. `redefine` 節點。  
   
-4.  `attribute` 節點。  
+4. `attribute` 節點。  
   
-5.  `attributeGroup` 節點。  
+5. `attributeGroup` 節點。  
   
-6.  `complexType` 節點。  
+6. `complexType` 節點。  
   
-7.  `simpleType` 節點。  
+7. `simpleType` 節點。  
   
-8.  `element` 節點。  
+8. `element` 節點。  
   
 9. `group` 節點。  
   
 ### <a name="sort-by-name"></a>依名稱排序  
  當**依名稱排序**選取選項，全域節點都會依照下列順序：  
   
-1.  `import` 節點 (依照命名空間的字母順序)。  
+1. `import` 節點 (依照命名空間的字母順序)。  
   
-2.  `include` 節點 (依照 `schemaLocation` 屬性的字母順序)。  
+2. `include` 節點 (依照 `schemaLocation` 屬性的字母順序)。  
   
-3.  `redefine` 節點 (依照 `schemaLocation` 屬性的字母順序)。  
+3. `redefine` 節點 (依照 `schemaLocation` 屬性的字母順序)。  
   
-4.  其他全域節點 (依照字母順序)。  
+4. 其他全域節點 (依照字母順序)。  
   
 ### <a name="document-order"></a>文件順序  
  **文件順序**選項時，可以使用**顯示結構描述檔案**選項。 當**文件順序**選取時，全域節點會顯示在其出現在結構描述檔案中的順序。  

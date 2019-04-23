@@ -19,27 +19,27 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102753"
 ---
 # <a name="add-new-data-sources"></a>新增新資料來源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 .NET data tools 在 Visual Studio 中的內容中的字詞*資料來源*是指連接到資料存放區，並將資料公開給.NET 應用程式的.NET 物件。 Visual Studio 設計工具可以取用資料來源產生拖曳和卸除資料庫物件時，將資料繫結至表單的未定案程式碼的輸出**Zdroje dat**視窗。 這種資料來源可以是：  
   
--   與某些類型的資料庫相關聯的 Entity Framework 模型中的類別。  
+- 與某些類型的資料庫相關聯的 Entity Framework 模型中的類別。  
   
--   與某些類型的資料庫相關聯的資料集。  
+- 與某些類型的資料庫相關聯的資料集。  
   
--   表示 Windows Communication Foundation (WCF) 資料服務或 REST 服務作為網路服務的類別。  
+- 表示 Windows Communication Foundation (WCF) 資料服務或 REST 服務作為網路服務的類別。  
   
--   表示 SharePoint 服務的類別。  
+- 表示 SharePoint 服務的類別。  
   
--   類別或您方案中的集合。  
+- 類別或您方案中的集合。  
   
 > [!NOTE]
 >  如果您不使用資料繫結功能，資料集、 Entity Framework、 LINQ to SQL、 WCF、 或 SharePoint，「 資料來源 」 的概念不適用。 只要直接連接到資料庫所使用的 SQLCommand 物件，並直接與資料庫通訊。  
@@ -77,11 +77,11 @@ ms.locfileid: "59670169"
   
  您可以從下列服務類型來建立資料來源：  
   
--   WCF 資料服務。 如需詳細資訊，請參閱 <<c0> [ 概觀](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。  
+- WCF 資料服務。 如需詳細資訊，請參閱 <<c0> [ 概觀](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。  
   
--   WCF 資料服務。 如需詳細資訊，請參閱 < [Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)。  
+- WCF 資料服務。 如需詳細資訊，請參閱 < [Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)。  
   
--   Web 服務。  
+- Web 服務。  
   
     > [!NOTE]
     >  在出現的項目**Zdroje dat**視窗均依存於服務所傳回的資料。 部分服務所提供的資訊可能不足，無法供 [資料來源組態精靈] 建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，沒有任何項目會出現在**Zdroje dat**視窗中，當您完成精靈。 這是因為不具類型資料集不提供結構描述，因此精靈沒有足夠的資訊來建立資料來源。  

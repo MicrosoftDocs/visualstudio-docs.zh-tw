@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f27e388c0b7670e8af7d6a97954485ef90d01f9e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103514"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>發行 Page，Project Designer （Visual Studio 中的 Office 程式開發）
   [專案設計工具]  的 [發行]  頁面，可用以設定部署的屬性。
@@ -29,7 +29,7 @@ ms.locfileid: "54869667"
  若要存取此頁面，選取 [] 中的專案**方案總管**，然後在**專案**功能表上，選擇*Projectname* **屬性**. 如果未顯示 [發行]  頁面，請選擇 [發行]  索引標籤。
 
 > [!NOTE]
->  您也可以在 [發行精靈] 中設定發行位置。 如需詳細資訊，請參閱[＜How to：使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。
+>  您也可以在 [發行精靈] 中設定發行位置。 如需詳細資訊，請參閱[如何：使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。
 
 ## <a name="uielement-list"></a>UIElement 清單
  **發行資料夾位置 （網站、 ftp 伺服器或檔案路徑）** 所需。
@@ -50,7 +50,7 @@ ms.locfileid: "54869667"
 
  如果安裝檔案位於相對於文件或安裝程式的位置，例如使用 CD 選項，請將這個方塊保留空白。
 
- 系統管理員稍後可以指派這個值。 如需詳細資訊，請參閱[＜How to：變更 Office 方案的安裝路徑](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。
+ 系統管理員稍後可以指派這個值。 如需詳細資訊，請參閱[如何：變更 Office 方案的安裝路徑](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。
 
  **必要條件**必要條件可以包含與安裝程式，或視需要在安裝期間下載。
 
@@ -84,9 +84,9 @@ ms.locfileid: "54869667"
 
 - VSTO 增益集載入行為。
 
-  -   啟動時載入：指定在 Office 應用程式啟動時載入 VSTO 增益集。
+  - 啟動時載入：指定在 Office 應用程式啟動時載入 VSTO 增益集。
 
-  -   視需要載入：指定只有在應用程式需要時才載入 VSTO 增益集，例如當使用者按一下使用 VSTO 增益集功能的 UI 項目時。
+  - 視需要載入：指定只有在應用程式需要時才載入 VSTO 增益集，例如當使用者按一下使用 VSTO 增益集功能的 UI 項目時。
 
   **發行語言**這個選項設定的語言的 Microsoft 軟體授權條款，並將語言套件包含在必要條件清單中。 它不會影響自訂的語言。 安裝程式中的語言取決於 Visual Studio 已安裝的語言。
 

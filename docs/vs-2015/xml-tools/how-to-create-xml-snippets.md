@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b64c94d26dcb197246f78b721fd087d5dbf1e0dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c6e6ec0cb8affbb820886f2bca163aae00d8536f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660355"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101370"
 ---
 # <a name="how-to-create-xml-snippets"></a>HOW TO：建立 XML 片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,23 +24,23 @@ XML 編輯器可用於建立新的 XML 片段。 該編輯器包括名為 Snippe
 ## <a name="to-create-a-new-xml-snippet"></a>建立新的 XML 片段  
  若要建立新的 XML 程式碼片段建立新的 XML 檔案並使用**插入程式碼片段**功能。  
   
-1.  在 **檔案** 功能表中，按一下**新增**，然後按一下 **檔案**。  
+1. 在 **檔案** 功能表中，按一下**新增**，然後按一下 **檔案**。  
   
-2.  按一下  **XML 檔案**，然後按一下**開啟**。  
+2. 按一下  **XML 檔案**，然後按一下**開啟**。  
   
-3.  在編輯器窗格中以滑鼠右鍵按一下並選取**插入程式碼片段**。  
+3. 在編輯器窗格中以滑鼠右鍵按一下並選取**插入程式碼片段**。  
   
-4.  選取 **程式碼片段**從清單中，按下 ENTER。  
+4. 選取 **程式碼片段**從清單中，按下 ENTER。  
   
-5.  對新片段進行任何變更。  
+5. 對新片段進行任何變更。  
   
-6.  從**檔案**功能表中，選取**儲存 XMLFile.xml**。  
+6. 從**檔案**功能表中，選取**儲存 XMLFile.xml**。  
   
      **另存新檔**對話方塊隨即出現。  
   
-7.  輸入新的程式碼片段的名稱，然後選取**程式碼片段檔案**從**存檔類型**下拉式清單 視窗。  
+7. 輸入新的程式碼片段的名稱，然後選取**程式碼片段檔案**從**存檔類型**下拉式清單 視窗。  
   
-8.  使用**將儲存在**下拉式清單，將檔案位置變更為 My Documents\Visual Studio 2005\Code Snippets\XML\My XML Snippets 資料夾，然後按下**儲存**。  
+8. 使用**將儲存在**下拉式清單，將檔案位置變更為 My Documents\Visual Studio 2005\Code Snippets\XML\My XML Snippets 資料夾，然後按下**儲存**。  
   
 ## <a name="snippet-description"></a>片段說明  
  本節說明重複使用片段中的某些索引鍵項目。 如需有關結構描述元素的 XML 程式碼片段所使用的詳細資訊，請參閱[程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)。  

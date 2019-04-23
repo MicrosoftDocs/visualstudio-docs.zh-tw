@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4d1dd6d8f4d64400b4b2358dd47971f3111dcf1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3fc77e24a1a9ca72d6f689247f0de6a9e0bf26cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700688"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098931"
 ---
 # <a name="debugger-contexts"></a>偵錯工具內容
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯，偵錯引擎 (DE) 同時會在內部運作數種不同的內容，，如下所示：
 
--   程式碼內容，說明該應用程式的執行資料流中目前的位置。
+- 程式碼內容，說明該應用程式的執行資料流中目前的位置。
 
--   文件內容的位置，其中描述來源文件中目前的位置。
+- 文件內容的位置，其中描述來源文件中目前的位置。
 
--   運算式評估內容，描述要在哪一個運算式評估會發生的內容。
+- 運算式評估內容，描述要在哪一個運算式評估會發生的內容。
 
 ## <a name="in-this-section"></a>本節內容
  [程式碼內容](../../extensibility/debugger/code-context.md)討論程式碼內容，作為在現今的執行階段架構與非傳統任務為語言，其中的程式碼可能不會表示所需的指示，但其他方式的程式的指令資料流中的位址。

@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a32de469c5b58ca2bf58901e30b81cfb70ed84b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ee221f0c1da32694e869177399981cc16ce901f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099464"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54803523"
   
    如需程式碼剖析選項的詳細資訊，請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
-##  <a name="BKMK_In_this_topic"></a>本主題內容  
+## <a name="BKMK_In_this_topic"></a>本主題內容  
  本主題說明您可以搭配 `vsperf.exe` 命令列工具一起使用的選項。 此主題包括下列各節：  
   
  [僅限 Windows 市集應用程式](#BKMK_windows_store_apps_only)  
@@ -36,7 +36,7 @@ ms.locfileid: "54803523"
   
  [所有應用程式](#BKMK_All_applications)  
   
-##  <a name="BKMK_windows_store_apps_only"></a>僅限 Windows 市集應用程式  
+## <a name="BKMK_windows_store_apps_only"></a>僅限 Windows 市集應用程式  
  這些選項僅適用於 Windows 市集應用程式。  
   
 |||  
@@ -47,7 +47,7 @@ ms.locfileid: "54803523"
 |**/noclr**|選擇性。 不會收集 CLR 資料。<br /><br /> 只能搭配 /package 或 /attach 一起使用。<br /><br /> 最佳化，不會解析任何 Managed 符號。|  
 |**/listapps**|列出已安裝應用程式的 AppName 和 PackageFullNames。|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a>僅限 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式  
+## <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a>僅限 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式  
  這些選項無法在 Windows 市集應用程式上運作。  
   
 |||  
@@ -56,7 +56,7 @@ ms.locfileid: "54803523"
 |**/args:{ExecutableArguments}**|指定要傳遞給 **/launch** 目標的命令列引數。|  
 |**/console**|在新的命令視窗中執行 **/launch** 目標。|  
   
-##  <a name="BKMK_All_applications"></a>所有應用程式  
+## <a name="BKMK_All_applications"></a>所有應用程式  
  這些選項適用於任何 Windows 8 或 Windows Server 2012 應用程式。  
   
 |||  

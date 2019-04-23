@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 60bb98644c1905b030176b28b97575b379bed38d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103091"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>檢查 [自動變數] 和 [區域變數] 視窗中的變數
 
@@ -56,9 +56,9 @@ ms.locfileid: "59366545"
 >[!CAUTION]
 >請確定您瞭解後果，再變更值和運算式。 一些可能的問題是：
 >
->-   評估某些運算式可能會變更變數的值，或是影響程式的狀態。 例如，評估`var1 = ++var2`變更的值都`var1`和`var2`。 這些運算式被視為具有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 如果您不知道它們的存在，副作用會造成非預期的結果。
+>- 評估某些運算式可能會變更變數的值，或是影響程式的狀態。 例如，評估`var1 = ++var2`變更的值都`var1`和`var2`。 這些運算式被視為具有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 如果您不知道它們的存在，副作用會造成非預期的結果。
 >
->-   由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點變數中的位元的某些變更。
+>- 由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點變數中的位元的某些變更。
 
 ::: moniker range=">= vs-2019" 
 ## <a name="search-in-the-autos-or-locals-window"></a>在 [自動變數] 或 [區域變數] 視窗中搜尋
@@ -85,9 +85,9 @@ ms.locfileid: "59366545"
 
 ## <a name="bkmk_whatvariables"></a> 在 [自動變數] 視窗中的變數 (C#， C++，Visual Basic、 Python)
 
- 不同的程式碼的語言會顯示在不同的變數**自動變數**視窗。
+不同的程式碼的語言會顯示在不同的變數**自動變數**視窗。
 
- - 在 C# 和 Visual Basic 中，[自動變數] 視窗會顯示目前或前一行使用的任何變數。 例如，在C#或 Visual Basic 程式碼中，宣告下列四個變數：
+- 在 C# 和 Visual Basic 中，[自動變數] 視窗會顯示目前或前一行使用的任何變數。 例如，在C#或 Visual Basic 程式碼中，宣告下列四個變數：
 
    ```csharp
        public static void Main()
@@ -106,7 +106,7 @@ ms.locfileid: "59366545"
 
    值`c`為 0，因為列`c = 3`尚未執行。
 
- - 在C++，則**自動變數** 視窗會顯示已暫停執行目前這一行之前至少三行中所使用的變數。 例如，在C++程式碼中，宣告六個變數：
+- 在C++，則**自動變數** 視窗會顯示已暫停執行目前這一行之前至少三行中所使用的變數。 例如，在C++程式碼中，宣告六個變數：
 
    ```C++
        void main() {
@@ -126,7 +126,7 @@ ms.locfileid: "59366545"
 
     變數`e`未初始化，因為列`e = 5`尚未執行。
 
-##  <a name="bkmk_returnValue"></a> View return values of method calls
+## <a name="bkmk_returnValue"></a> View return values of method calls
  在.NET 和C++程式碼中，您可以檢查中的傳回值**自動變數**不進入或者跳離方法呼叫時，視窗。 檢視方法呼叫傳回時不會儲存在本機變數，值可能很有用。 無法使用的方法，做為參數，或為另一種方法的傳回值。
 
  例如，下列C#程式碼會加入兩個函式的傳回值：

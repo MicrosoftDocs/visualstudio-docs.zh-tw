@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994135458fb7bc76ef2ab7f4a76ac184e1b6426e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc97aad2d3a056a61ae925816ac6d2457918db65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945979"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100777"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>HOW TO：產生安裝程式的登錄資訊
 
@@ -28,7 +28,7 @@ ms.locfileid: "54945979"
 
 ## <a name="to-create-a-registration-manifest"></a>若要建立的註冊資訊清單
 
--   執行與 RegPkg **/regfile**切換。 提供任何其他參數、 輸出檔的名稱和路徑的 VSPackage。
+- 執行與 RegPkg **/regfile**切換。 提供任何其他參數、 輸出檔的名稱和路徑的 VSPackage。
 
      例如，在命令提示字元中，您會輸入像下面這樣：
 
@@ -38,7 +38,7 @@ ms.locfileid: "54945979"
 
 ## <a name="to-view-a-registration-manifest"></a>若要檢視的註冊資訊清單
 
--   在任何文字編輯器中開啟的註冊資訊清單。
+- 在任何文字編輯器中開啟的註冊資訊清單。
 
      下列範例是 RegPkg 建立的 IronPython 語言服務的註冊資訊清單：
 
@@ -99,7 +99,7 @@ ms.locfileid: "54945979"
 
 ## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>若要建立 Windows Installer XML 工具組包含檔案
 
--   執行與 RegPkg **/wixfile**切換。 提供任何其他參數、 輸出檔的名稱和路徑的 VSPackage。
+- 執行與 RegPkg **/wixfile**切換。 提供任何其他參數、 輸出檔的名稱和路徑的 VSPackage。
 
      例如，在命令提示字元中，您會輸入像下面這樣：
 
@@ -109,7 +109,7 @@ ms.locfileid: "54945979"
 
 ## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>若要檢視 Windows Installer XML 工具組包含檔案
 
--   開啟 Windows Installer XML 工具組包含檔案在任何文字編輯器中。
+- 開啟 Windows Installer XML 工具組包含檔案在任何文字編輯器中。
 
      下列範例是 IronPython 語言服務 RegPkg 建立的 include 檔案：
 

@@ -14,12 +14,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 194c1e926ead79d5db05e530e2345aa4c722aa21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9efe5ffcd0428a11df69e3c80f28fdecaeb99aaf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942171"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100349"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>原始檔控制外掛程式測試指南
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,55 +57,55 @@ ms.locfileid: "58942171"
   
 ## <a name="test-areas-covered-in-this-section"></a>本章節涵蓋的測試區域  
   
--   [測試區域 1:從原始檔控制新增至 / Open](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+- [測試區域 1:從原始檔控制新增至 / Open](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   案例 1a:將方案加入原始檔控制  
+    - 案例 1a:將方案加入原始檔控制  
   
-    -   案例 1b:從原始檔控制開啟方案  
+    - 案例 1b:從原始檔控制開啟方案  
   
-    -   案例 1 c:從原始檔控制新增解決方案  
+    - 案例 1 c:從原始檔控制新增解決方案  
   
--   [測試區域 2:取得從原始檔控制](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+- [測試區域 2:取得從原始檔控制](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [測試區域 3:簽出/復原簽出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+- [測試區域 3:簽出/復原簽出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   案例 3:簽出/復原簽出  
+    - 案例 3:簽出/復原簽出  
   
-    -   案例 3a:簽出  
+    - 案例 3a:簽出  
   
-    -   案例 3b:已中斷連線簽出  
+    - 案例 3b:已中斷連線簽出  
   
-    -   案例 3 c:查詢編輯/查詢儲存 (QEQS)  
+    - 案例 3 c:查詢編輯/查詢儲存 (QEQS)  
   
-    -   案例 3d:無訊息的簽出  
+    - 案例 3d:無訊息的簽出  
   
-    -   案例 3e:復原簽出  
+    - 案例 3e:復原簽出  
   
--   [測試區域 4:簽入](../../extensibility/internals/test-area-4-check-in.md)  
+- [測試區域 4:簽入](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   案例 4a:修改過的項目  
+    - 案例 4a:修改過的項目  
   
-    -   案例 4b:新增檔案  
+    - 案例 4b:新增檔案  
   
-    -   案例 4 c:新增專案  
+    - 案例 4 c:新增專案  
   
--   [測試區域 5:變更原始檔控制](../../extensibility/internals/test-area-5-change-source-control.md)  
+- [測試區域 5:變更原始檔控制](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   案例 5a:繫結  
+    - 案例 5a:繫結  
   
-    -   案例 5b:解除繫結  
+    - 案例 5b:解除繫結  
   
-    -   案例 5 c:重新繫結  
+    - 案例 5 c:重新繫結  
   
--   [測試區域 6︰刪除](../../extensibility/internals/test-area-6-delete.md)  
+- [測試區域 6︰刪除](../../extensibility/internals/test-area-6-delete.md)  
   
--   [測試區域 7︰共用](../../extensibility/internals/test-area-7-share.md)  
+- [測試區域 7︰共用](../../extensibility/internals/test-area-7-share.md)  
   
--   [測試區域 8︰外掛程式切換](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+- [測試區域 8︰外掛程式切換](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   案例 8a:自動變更  
+    - 案例 8a:自動變更  
   
-    -   案例 8b:解決方案為基礎的變更  
+    - 案例 8b:解決方案為基礎的變更  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../../extensibility/source-control-plug-ins.md)

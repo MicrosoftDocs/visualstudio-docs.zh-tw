@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a4f123c6dfbe7d3f194c3f07c5ed685cf5cc862c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8f41aa8c074f724976adabaa99df0e8ca0064fa3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930114"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103296"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆進行遠端偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ ms.locfileid: "58930114"
 ## <a name="to-configure-windows-firewall-on-the-visual-studio-computer"></a>在 Visual Studio 電腦上設定 Windows 防火牆  
  設定 Windows 防火牆的指示在不同作業系統上稍有不同。 在 Windows 7 或 Windows Server 2008，使用 **程式** 字樣，在 Windows 8/8.1、Windows 10 和 Windows Server 2012 上，則使用 **應用程式** 字樣。  我們將在下列步驟中使用 **應用程式**字樣。  
   
-1.  開啟 [Windows 防火牆] 頁面。 (在 [開始]  功能表搜尋方塊中，輸入 [Windows 防火牆] )。  
+1. 開啟 [Windows 防火牆] 頁面。 (在 [開始]  功能表搜尋方塊中，輸入 [Windows 防火牆] )。  
   
-2.  按一下 [允許應用程式或功能通過 Windows 防火牆] 。  
+2. 按一下 [允許應用程式或功能通過 Windows 防火牆] 。  
   
-3.  在 [允許應用程式和功能]  清單中尋找 [Visual Studio 遠端偵錯工具探索] 。 如果有列出，請確定已選取，而且也選取一或多個網路類型。  
+3. 在 [允許應用程式和功能]  清單中尋找 [Visual Studio 遠端偵錯工具探索] 。 如果有列出，請確定已選取，而且也選取一或多個網路類型。  
   
-4.  如果未列出 [Visual Studio 遠端偵錯工具探索]  ，請按一下 [允許另一個應用程式] 。 如果您仍然不會看到**新增應用程式** 視窗中，按一下**瀏覽**並瀏覽至 **\<Visual Studio 安裝目錄 > \Common7\IDE\Remote 偵錯工具**. 尋找應用程式適當的資料夾 (x86、x64、Appx)，然後選取 **msvsmon.exe**。 然後按一下 [加入] 。  
+4. 如果未列出 [Visual Studio 遠端偵錯工具探索]  ，請按一下 [允許另一個應用程式] 。 如果您仍然不會看到**新增應用程式** 視窗中，按一下**瀏覽**並瀏覽至 **\<Visual Studio 安裝目錄 > \Common7\IDE\Remote 偵錯工具**. 尋找應用程式適當的資料夾 (x86、x64、Appx)，然後選取 **msvsmon.exe**。 然後按一下 [加入] 。  
   
-5.  在 [允許的應用程式和功能]  清單中，選取 [Visual Studio 遠端偵錯監視] 。 核取您想要遠端偵錯監視與其通訊的一或多個網路類型 ([網域]、[家用/工作 (私用)]、[公用])。 類型必須包括 Visual Studio 電腦連線的網路。  
+5. 在 [允許的應用程式和功能]  清單中，選取 [Visual Studio 遠端偵錯監視] 。 核取您想要遠端偵錯監視與其通訊的一或多個網路類型 ([網域]、[家用/工作 (私用)]、[公用])。 類型必須包括 Visual Studio 電腦連線的網路。  
   
 ## <a name="to-open-a-port-on-the-visual-studio-computer-to-enable-discovery"></a>在 Visual Studio 電腦上開啟連接埠以啟用探索  
  您必須允許 UDP 連接埠 3702 傳入以允許探索執行遠端偵錯工具的電腦。 若要將它加入，請參閱＜如何在防火牆中設定連接埠＞。  
@@ -64,15 +64,15 @@ ms.locfileid: "58930114"
   
  設定 Windows 防火牆的指示在不同作業系統上稍有不同。 在 Windows 7 或 Windows Server 2008，使用 **程式** 字樣，在 Windows 8/8.1、Windows 10 和 Windows Server 2012 上，則使用 **應用程式** 字樣。  我們將在下列步驟中使用 **應用程式**字樣。  
   
-1.  開啟 [Windows 防火牆] 頁面。 (在 [開始]  功能表搜尋方塊中，輸入 [Windows 防火牆] )。  
+1. 開啟 [Windows 防火牆] 頁面。 (在 [開始]  功能表搜尋方塊中，輸入 [Windows 防火牆] )。  
   
-2.  按一下 [允許應用程式或功能通過 Windows 防火牆] 。  
+2. 按一下 [允許應用程式或功能通過 Windows 防火牆] 。  
   
-3.  在 [允許應用程式和功能]  清單中尋找 [Visual Studio 遠端偵錯監視] 。 如果有列出，請確定已選取，而且也選取一或多個網路類型。  
+3. 在 [允許應用程式和功能]  清單中尋找 [Visual Studio 遠端偵錯監視] 。 如果有列出，請確定已選取，而且也選取一或多個網路類型。  
   
-4.  如果未列出 [Visual Studio 遠端偵監視]  ，請按一下 [允許另一個應用程式] 。 如果您仍然沒有看到它在 **[新增應用程式] 視窗**，按一下**瀏覽**並瀏覽至 **\<Visual Studio 安裝目錄 > \Common7\IDE\Remote 偵錯工具**. 尋找應用程式適當的資料夾 (x86、x64、Appx)，然後選取 **msvsmon.exe**。 然後按一下 [加入] 。  
+4. 如果未列出 [Visual Studio 遠端偵監視]  ，請按一下 [允許另一個應用程式] 。 如果您仍然沒有看到它在 **[新增應用程式] 視窗**，按一下**瀏覽**並瀏覽至 **\<Visual Studio 安裝目錄 > \Common7\IDE\Remote 偵錯工具**. 尋找應用程式適當的資料夾 (x86、x64、Appx)，然後選取 **msvsmon.exe**。 然後按一下 [加入] 。  
   
-5.  在 [允許的應用程式]  清單中，選取 [Visual Studio 遠端偵錯監視] 。 核取您想要遠端偵錯監視與其通訊的一或多個網路類型 ([網域]、[家用/工作 (私用)]、[公用])。 類型必須包括 Visual Studio 電腦連線的網路。  
+5. 在 [允許的應用程式]  清單中，選取 [Visual Studio 遠端偵錯監視] 。 核取您想要遠端偵錯監視與其通訊的一或多個網路類型 ([網域]、[家用/工作 (私用)]、[公用])。 類型必須包括 Visual Studio 電腦連線的網路。  
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>在遠端電腦上啟用遠端偵錯的連接埠  
   
@@ -95,21 +95,21 @@ ms.locfileid: "58930114"
   
 ## <a name="how-to-configure-ports-in-windows-firewall"></a>如何在 Windows 防火牆中設定連接埠  
   
-1.  在 [開始]  功能表中，搜尋 [具有進階安全性的 Windows 防火牆] 。  
+1. 在 [開始]  功能表中，搜尋 [具有進階安全性的 Windows 防火牆] 。  
   
-2.  按一下 [輸入規則]  或 [輸出規則]  ，然後按一下 [動作]  清單中的 [新增規則]  。  
+2. 按一下 [輸入規則]  或 [輸出規則]  ，然後按一下 [動作]  清單中的 [新增規則]  。  
   
-3.  在 [規則類型]  頁面上，選取 [連接埠]  然後按 [下一步] 。  
+3. 在 [規則類型]  頁面上，選取 [連接埠]  然後按 [下一步] 。  
   
-4.  在 [通訊協定和連接埠]  頁面上，選取連接埠通訊協定 (TCP 或 UDP)。 選取 [特定本機連接埠]  並輸入您想要針對通訊協定啟用的一個或多個連接埠號碼。 以逗號分隔數字。 然後按 [下一步] 。  
+4. 在 [通訊協定和連接埠]  頁面上，選取連接埠通訊協定 (TCP 或 UDP)。 選取 [特定本機連接埠]  並輸入您想要針對通訊協定啟用的一個或多個連接埠號碼。 以逗號分隔數字。 然後按 [下一步] 。  
   
-5.  在 [動作]  頁面上，選取 [允許連線]  然後按 [下一步] 。  
+5. 在 [動作]  頁面上，選取 [允許連線]  然後按 [下一步] 。  
   
-6.  在 [設定檔]  頁面上，選取要為連接埠啟用的一個或多個網路類型。 您選取的類型必須包括遠端電腦連線的網路。 然後按 [下一步] 。  
+6. 在 [設定檔]  頁面上，選取要為連接埠啟用的一個或多個網路類型。 您選取的類型必須包括遠端電腦連線的網路。 然後按 [下一步] 。  
   
-7.  在 [名稱]  頁面上，輸入規則的名稱，然後按一下 [完成] 。  
+7. 在 [名稱]  頁面上，輸入規則的名稱，然後按一下 [完成] 。  
   
-8.  您應該會在 [輸入規則]  或 [輸出規則]  清單中看到您的新規則。  
+8. 您應該會在 [輸入規則]  或 [輸出規則]  清單中看到您的新規則。  
   
 ## <a name="see-also"></a>另請參閱  
  [Remote Debugging](../debugger/remote-debugging.md)

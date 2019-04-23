@@ -11,12 +11,12 @@ ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1ac7289489e1b7f3f2a047a10b6ace42fc15d94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28fc1155279ec624cea576b5a70a25800d4ff837
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930022"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101063"
 ---
 # <a name="extending-the-status-bar"></a>延伸狀態列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "58930022"
   
 #### <a name="reading-and-writing-to-the-status-bar"></a>讀取和寫入狀態列  
   
-1.  建立 VSIX 專案，名為**TestStatusBarExtension** ，並新增名為的功能表命令**TestStatusBarCommand**。  
+1. 建立 VSIX 專案，名為**TestStatusBarExtension** ，並新增名為的功能表命令**TestStatusBarCommand**。  
   
-2.  在 TestStatusBarCommand.cs，將取代為下列的命令處理常式方法程式碼 (MenuItemCallback):  
+2. 在 TestStatusBarCommand.cs，將取代為下列的命令處理常式方法程式碼 (MenuItemCallback):  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -70,17 +70,17 @@ ms.locfileid: "58930022"
     }  
     ```  
   
-3.  編譯程式碼，並開始偵錯。  
+3. 編譯程式碼，並開始偵錯。  
   
-4.  開啟**工具**功能表中的 Visual Studio 實驗執行個體。 按一下 [**叫用 TestStatusBarCommand** ] 按鈕。  
+4. 開啟**工具**功能表中的 Visual Studio 實驗執行個體。 按一下 [**叫用 TestStatusBarCommand** ] 按鈕。  
   
      您應該會看到現在讀取狀態列中的文字 **"剛才撰寫的狀態列。 」** 而且會出現訊息方塊具有相同的文字。  
   
 #### <a name="updating-the-progress-bar"></a>更新進度列  
   
-1.  在此程序中，我們將說明如何初始化和更新進度列。  
+1. 在此程序中，我們將說明如何初始化和更新進度列。  
   
-2.  開啟 TestStatusBarCommand.cs 檔案，並以下列程式碼取代 MenuItemCallback 方法：  
+2. 開啟 TestStatusBarCommand.cs 檔案，並以下列程式碼取代 MenuItemCallback 方法：  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -104,21 +104,21 @@ ms.locfileid: "58930022"
     }  
     ```  
   
-3.  編譯程式碼，並開始偵錯。  
+3. 編譯程式碼，並開始偵錯。  
   
-4.  開啟**工具**功能表中的 Visual Studio 實驗執行個體。 按一下 [**叫用 TestStatusBarCommand** ] 按鈕。  
+4. 開啟**工具**功能表中的 Visual Studio 實驗執行個體。 按一下 [**叫用 TestStatusBarCommand** ] 按鈕。  
   
      您應該會看到現在讀取狀態列中的文字 **"寫入進度列 」。** 您也應該會看到進度列會更新每秒 20 秒。 在這之後會清除狀態列 」 和 「 進度列。  
   
 #### <a name="displaying-an-animation"></a>顯示動畫  
   
-1.  狀態列會顯示迴圈的動畫，表示在長時間執行的作業 （例如，建置方案中的多個專案）。 如果看不到這個動畫，請確定您已確實**工具 / 選項**設定：  
+1. 狀態列會顯示迴圈的動畫，表示在長時間執行的作業 （例如，建置方案中的多個專案）。 如果看不到這個動畫，請確定您已確實**工具 / 選項**設定：  
   
      移至**工具] / [選項] / [一般**索引標籤，然後取消核取**自動調整視覺效果，根據用戶端效能**。 然後檢查子選項**啟用豐富的用戶端視覺效果**。 您現在應該能夠看到此動畫，當您建置您的 Visual Studio 的實驗性執行個體中的專案。  
   
      此程序中，我們會顯示標準的 Visual Studio 動畫表示建置專案或方案。  
   
-2.  開啟 TestStatusBarCommand.cs 檔案，並以下列程式碼取代 MenuItemCallback 方法：  
+2. 開啟 TestStatusBarCommand.cs 檔案，並以下列程式碼取代 MenuItemCallback 方法：  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -139,8 +139,8 @@ ms.locfileid: "58930022"
     }  
     ```  
   
-3.  編譯程式碼，並開始偵錯。  
+3. 編譯程式碼，並開始偵錯。  
   
-4.  開啟**工具**Visual Studio，然後按一下 實驗性執行個體中的功能表**叫用 TestStatusBarCommand**。  
+4. 開啟**工具**Visual Studio，然後按一下 實驗性執行個體中的功能表**叫用 TestStatusBarCommand**。  
   
      當您看到訊息方塊時，您應該也在最右邊會看到 [狀態] 列中的動畫。 當您關閉訊息方塊時，就會消失動畫。

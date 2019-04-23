@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d391022e9ce86b2866d941d8c0b56e2e35e3776
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9760d019fa80d4ecae63633c38ac9df60932202
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629439"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101193"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>HOW TO：以程式設計方式在工作表儲存格中顯示字串
   此範例示範如何以程式設計方式顯示在資料格中的文字。 若要在儲存格中顯示文字，使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。
@@ -30,7 +30,7 @@ ms.locfileid: "56629439"
 
 ### <a name="to-display-text-in-a-namedrange-control"></a>NamedRange 控制項中顯示文字
 
-1.  設定的值<xref:Microsoft.Office.Tools.Excel.NamedRange>若要控制**Hello World**。
+1. 設定的值<xref:Microsoft.Office.Tools.Excel.NamedRange>若要控制**Hello World**。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
      [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]
@@ -40,7 +40,7 @@ ms.locfileid: "56629439"
 
 ### <a name="to-display-text-in-an-excel-range"></a>若要顯示在 Excel 範圍中的文字
 
-1.  擷取儲存格範圍**A1**上`Sheet1`並將值設定為**Hello World**。
+1. 擷取儲存格範圍**A1**上`Sheet1`並將值設定為**Hello World**。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]

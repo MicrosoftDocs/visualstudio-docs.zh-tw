@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39fcb9444fd3d4cde218cdc92e083d28342d8342
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6b6cf1e800c785f73ebb11e09f11b617fe42aa32
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872270"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099282"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>逐步解說：在 VSTO 增益集專案中的簡單資料繫結
 
@@ -29,11 +29,11 @@ ms.locfileid: "54872270"
 
 這個逐步解說將說明下列工作：
 
--   新增<xref:Microsoft.Office.Tools.Word.ContentControl>文件在執行階段。
+- 新增<xref:Microsoft.Office.Tools.Word.ContentControl>文件在執行階段。
 
--   建立將控制項連接至資料集的 <xref:System.Windows.Forms.BindingSource> 執行個體。
+- 建立將控制項連接至資料集的 <xref:System.Windows.Forms.BindingSource> 執行個體。
 
--   讓使用者能夠捲動記錄及在控制項中檢視它們。
+- 讓使用者能夠捲動記錄及在控制項中檢視它們。
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -41,15 +41,15 @@ ms.locfileid: "54872270"
 
 您需要下列元件才能完成此逐步解說：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。
 
--   已附加 `AdventureWorksLT` 範例資料庫之執行中 SQL Server 2005 或 SQL Server 2005 Express 執行個體的存取權。 您可以下載`AdventureWorksLT`從資料庫[CodePlex 網站](http://go.microsoft.com/fwlink/?LinkId=115611)。 如需附加資料庫的詳細資訊，請參閱下列主題：
+- 已附加 `AdventureWorksLT` 範例資料庫之執行中 SQL Server 2005 或 SQL Server 2005 Express 執行個體的存取權。 您可以下載`AdventureWorksLT`從資料庫[CodePlex 網站](http://go.microsoft.com/fwlink/?LinkId=115611)。 如需附加資料庫的詳細資訊，請參閱下列主題：
 
-    -   若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱[How to:附加資料庫 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
+    - 若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱[How to:附加資料庫 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
 
-    -   若要使用命令列附加資料庫，請參閱[How to:將資料庫檔案附加至 SQL Server Express](/previous-versions/sql/)。
+    - 若要使用命令列附加資料庫，請參閱[How to:將資料庫檔案附加至 SQL Server Express](/previous-versions/sql/)。
 
 ## <a name="create-a-new-project"></a>建立新專案
 
@@ -57,13 +57,13 @@ ms.locfileid: "54872270"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1.  使用 Visual Basic 或 C#，建立名稱為 [ **從資料庫填入文件**] 的 Word VSTO 增益集專案。
+1. 使用 Visual Basic 或 C#，建立名稱為 [ **從資料庫填入文件**] 的 Word VSTO 增益集專案。
 
-     如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+     如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 會開啟*ThisAddIn.vb*或是*ThisAddIn.cs*檔案，並將**從資料庫填入文件**專案加入**方案總管**.
 
-2.  如果您專案的目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]，將參考加入*Microsoft.Office.Tools.Word.v4.0.Utilities.dll*組件。 本逐步解說稍後會需要用到此參考，以透過程式設計的方式將 Windows Forms 控制項加入文件。
+2. 如果您專案的目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]，將參考加入*Microsoft.Office.Tools.Word.v4.0.Utilities.dll*組件。 本逐步解說稍後會需要用到此參考，以透過程式設計的方式將 Windows Forms 控制項加入文件。
 
 ## <a name="create-a-data-source"></a>建立資料來源
 
@@ -103,37 +103,37 @@ ms.locfileid: "54872270"
 
 ### <a name="to-create-the-interface-in-the-document"></a>在文件中建立介面
 
-1.  在 `ThisAddIn` 類別中，宣告下列控制項來顯示和捲動 `Customer` 資料庫的 `AdventureWorksLTDataSet` 資料表。
+1. 在 `ThisAddIn` 類別中，宣告下列控制項來顯示和捲動 `Customer` 資料庫的 `AdventureWorksLTDataSet` 資料表。
 
      [!code-vb[Trin_WordAddInDatabase#1](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDatabase#1](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#1)]
 
-2.  在 `ThisAddIn_Startup` 方法中，加入下列程式碼來初始化資料集、在資料集填入來自 `AdventureWorksLTDataSet` 資料庫的資訊。
+2. 在 `ThisAddIn_Startup` 方法中，加入下列程式碼來初始化資料集、在資料集填入來自 `AdventureWorksLTDataSet` 資料庫的資訊。
 
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]
 
-3.  將下列程式碼加入至 `ThisAddIn_Startup` 方法。 這會產生可擴充文件的主項目。 如需詳細資訊，請參閱 <<c0> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
+3. 將下列程式碼加入至 `ThisAddIn_Startup` 方法。 這會產生可擴充文件的主項目。 如需詳細資訊，請參閱 <<c0> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]
 
-4.  在文件開頭定義數個範圍。 這些範圍會識別插入文字和放置控制項的位置。
+4. 在文件開頭定義數個範圍。 這些範圍會識別插入文字和放置控制項的位置。
 
      [!code-vb[Trin_WordAddInDatabase#4](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDatabase#4](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#4)]
 
-5.  將介面控制項加入先前定義的範圍。
+5. 將介面控制項加入先前定義的範圍。
 
      [!code-vb[Trin_WordAddInDatabase#5](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDatabase#5](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#5)]
 
-6.  使用 `AdventureWorksLTDataSet` 將內容控制項繫結至 <xref:System.Windows.Forms.BindingSource>。 C# 開發人員請加入 <xref:Microsoft.Office.Tools.Word.Controls.Button> 控制項的兩個事件處理常式。
+6. 使用 `AdventureWorksLTDataSet` 將內容控制項繫結至 <xref:System.Windows.Forms.BindingSource>。 C# 開發人員請加入 <xref:Microsoft.Office.Tools.Word.Controls.Button> 控制項的兩個事件處理常式。
 
      [!code-vb[Trin_WordAddInDatabase#6](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#6)]
      [!code-csharp[Trin_WordAddInDatabase#6](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#6)]
 
-7.  加入下列程式碼來瀏覽資料庫記錄。
+7. 加入下列程式碼來瀏覽資料庫記錄。
 
      [!code-vb[Trin_WordAddInDatabase#7](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDatabase#7](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#7)]
@@ -144,11 +144,11 @@ ms.locfileid: "54872270"
 
 ### <a name="to-test-the-vsto-add-in"></a>測試 VSTO 增益集
 
-1.  請按 **F5**。
+1. 請按 **F5**。
 
      會建立名為 `customerContentControl` 的內容控制項並填入資料。 同時間，名為 `adventureWorksLTDataSet` 的資料集物件，和名為 <xref:System.Windows.Forms.BindingSource> 的 `customerBindingSource` 會加入專案。 <xref:Microsoft.Office.Tools.Word.ContentControl> 已繫結至 <xref:System.Windows.Forms.BindingSource>，而後者又繫結至資料集物件。
 
-2.  按 [ **下一個** ] 和 [ **前一個** ] 按鈕，即可捲動資料庫記錄。
+2. 按 [ **下一個** ] 和 [ **前一個** ] 按鈕，即可捲動資料庫記錄。
 
 ## <a name="see-also"></a>另請參閱
 

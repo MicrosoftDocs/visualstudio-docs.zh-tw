@@ -9,12 +9,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ea13b68f65d20f48a15c155761adef6bcbd4536b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: d720779019ab4106fa6c4b727e9994f168a2d8f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102285"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>HOW TO：Profiler 附加至 ASP.NET Web 應用程式以使用命令列收集並行資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,16 +51,16 @@ ms.locfileid: "59666016"
 
 3. 輸入下列命令，將程式碼剖析工具附加至 ASP.NET 背景工作處理序︰**VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`]  
 
-   -   `PID`指定 ASP.NET 背景工作處理序的識別碼或名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序 ID。  
+   - `PID`指定 ASP.NET 背景工作處理序的識別碼或名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序 ID。  
 
-   -   [/targetclr](../profiling/targetclr.md) **:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。 這是選擇性參數。  
+   - [/targetclr](../profiling/targetclr.md) **:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。 這是選擇性參數。  
 
 ## <a name="controlling-data-collection"></a>控制資料收集  
  當應用程式執行時，您可以使用 VSPerfCmd.exe 選項開始和停止將資料寫入至檔案，以控制資料收集。 透過控制資料收集，您可以收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
 
--   下表中成對的 VSPerfCmd 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
+- 下表中成對的 VSPerfCmd 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
 
     |選項|描述|  
     |------------|-----------------|  
@@ -73,11 +73,11 @@ ms.locfileid: "59666016"
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段  
 
-1.  關閉目標應用程式或在命令提示字元中輸入下列命令，以將程式碼剖析工具從目標應用程式中斷連結︰  
+1. 關閉目標應用程式或在命令提示字元中輸入下列命令，以將程式碼剖析工具從目標應用程式中斷連結︰  
 
      **VSPerfCmd /detach**  
 
-2.  在命令提示字元中輸入下列命令，以關閉程式碼剖析工具︰  
+2. 在命令提示字元中輸入下列命令，以關閉程式碼剖析工具︰  
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)  
 

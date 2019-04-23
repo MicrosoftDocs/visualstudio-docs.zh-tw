@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fe7bbce4ac214d3b18b27f610094ee31ecc2a97
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: de690ea6b077ea0c0dc7c6b65f34c68c95e41081
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867348"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101440"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK 可協助您擴充 Visual Studio 功能或整合到 Visual Studio 的新功能。 您可以散發給其他使用者，以及 Visual Studio Marketplace 延伸模組。 下列是一些可擴充 Visual Studio 的方法：
@@ -67,11 +67,11 @@ Visual Studio SDK 可協助您擴充 Visual Studio 功能或整合到 Visual Stu
 
  您可以找到詳細資訊[VSX Arcana 部落格](https://blogs.msdn.microsoft.com/vsx/)和 Microsoft Mvp 所撰寫的部落格數目：
 
--   [最愛的 Visual Studio 擴充功能](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
+- [最愛的 Visual Studio 擴充功能](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
 
--   [Visual Studio 擴充性](http://www.visualstudioextensibility.com/overview/vs/)
+- [Visual Studio 擴充性](http://www.visualstudioextensibility.com/overview/vs/)
 
--   [擴充 Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
+- [擴充 Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
 ## <a name="see-also"></a>另請參閱
 - [建立具有功能表命令的擴充功能](../extensibility/creating-an-extension-with-a-menu-command.md)

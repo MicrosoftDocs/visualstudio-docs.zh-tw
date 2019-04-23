@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6171ca233af1ec2af71f11d3248a9d2e670c156b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9ab9315c428944de0b047192a789eac6aa654073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665853"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098619"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>HOW TO：開啟和關閉複數表示 (O/R 設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ ms.locfileid: "59665853"
   
 ### <a name="to-turn-pluralization-on-and-off"></a>若要開啟和關閉複數表示  
   
-1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。  
+1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。  
   
-2.  展開 [選項] 對話方塊中的 [資料庫工具]。  
+2. 展開 [選項] 對話方塊中的 [資料庫工具]。  
   
 > [!NOTE]
 >  如果看不到 [資料庫工具] 節點，請選取 [顯示所有設定]。  
   
-1.  按一下 [O/R 設計工具]。  
+1. 按一下 [O/R 設計工具]。  
   
-2.  設定**名稱的複數表示**要**已啟用** = **False**設[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，讓它不會變更類別名稱。  
+2. 設定**名稱的複數表示**要**已啟用** = **False**設[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，讓它不會變更類別名稱。  
   
-3.  設定**名稱的複數表示**要**已啟用** = **True**將複數表示規則套用至類別物件的名稱新增至[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
+3. 設定**名稱的複數表示**要**已啟用** = **True**將複數表示規則套用至類別物件的名稱新增至[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
