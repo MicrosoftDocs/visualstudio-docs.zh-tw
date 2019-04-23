@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 556821ff934d8276622ffb12ddbf4589ac404ab8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 002a82143ca30e87a8e83f3e7e4b7217ab677f11
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087920"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ Core Guidelines 檢查工具
 
@@ -84,17 +84,17 @@ C++ Core Guidelines 是否有可協助您撰寫更好且更安全的程式碼。
 
 當新的規則新增至C++核心指導方針檢查程式，針對預先存在的程式碼可能會增加所產生的警告數目。 若要篩選哪些類型的規則，來啟用，您可以使用預先定義的規則集。 截至 Visual Studio 2017 15.3 版，是支援的規則集：
 
-  - **擁有者指標規則**強制[擁有者相關的資源管理檢查\<T > 從C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
+- **擁有者指標規則**強制[擁有者相關的資源管理檢查\<T > 從C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
-  - **常數規則**強制[常數相關檢查C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)。
+- **常數規則**強制[常數相關檢查C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)。
 
-  - **原始指標規則**強制[資源管理檢查相關原始指標，從C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
+- **原始指標規則**強制[資源管理檢查相關原始指標，從C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
-  - **唯一指標規則**強制[資源管理檢查相關型別具有唯一指標語意，從C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
+- **唯一指標規則**強制[資源管理檢查相關型別具有唯一指標語意，從C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
-  - **界限規則**強制[界限的設定檔C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)。
+- **界限規則**強制[界限的設定檔C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)。
 
-  - **輸入規則**強制[輸入設定檔的C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)。
+- **輸入規則**強制[輸入設定檔的C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)。
 
 您可以選擇限制只有一個或幾個群組的警告。 **原生最小**並**原生建議**規則集包含C++Core Check 規則，除了其他 PREfast 的檢查。 若要查看可用規則集，請開啟 [專案屬性] 對話方塊中，選取**程式碼 Analysis\General**，開啟下拉式清單中的**規則集**下拉式方塊中，並挑選**選擇多個規則集**. 如需使用 Visual Studio 中的規則集的詳細資訊，請參閱[使用規則集分組程式碼分析規則](using-rule-sets-to-group-code-analysis-rules.md)。
 

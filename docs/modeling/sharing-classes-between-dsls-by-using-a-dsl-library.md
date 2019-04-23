@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 640936fbe0218bbb8e6d710547c39a4bfbf0bc9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36c49d3447a5f1fafcf4601057c66ebedcb193ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918113"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087478"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 程式庫共用 DSL 之間的類別
 在 Visual Studio Visualization and Modeling SDK 中，您可以建立不完整的 DSL 定義，您可以匯入至另一個 DSL。 這可讓您建構的類似模型的通用部分。
@@ -21,11 +21,11 @@ ms.locfileid: "55918113"
 
 #### <a name="to-create-a-dsl-library"></a>若要建立的 DSL 程式庫
 
-1.  建立新的 DSL 專案，並選擇 [DSL 程式庫] 方案範本。
+1. 建立新的 DSL 專案，並選擇 [DSL 程式庫] 方案範本。
 
      單一的 DSL 專案將會建立空白的模型。
 
-2.  您可以加入網域類別、 關聯性、 圖形等等。
+2. 您可以加入網域類別、 關聯性、 圖形等等。
 
      文件庫中的項目沒有以形成單一的內嵌樹狀結構中。
 
@@ -33,15 +33,15 @@ ms.locfileid: "55918113"
 
      請考慮將**繼承修飾詞**的網域類別`Abstract`。
 
-3.  您可以加入您在 [DSL 總管] 中，例如連接產生器中定義的項目。
+3. 您可以加入您在 [DSL 總管] 中，例如連接產生器中定義的項目。
 
-4.  您可以新增自訂需要額外的程式碼，例如驗證條件約束。
+4. 您可以新增自訂需要額外的程式碼，例如驗證條件約束。
 
-5.  按一下 **轉換所有範本**。
+5. 按一下 **轉換所有範本**。
 
-6.  建置專案。
+6. 建置專案。
 
-7.  當您發佈的其他人使用 DSL 時，您必須提供已編譯的組件 (DLL) 和檔案`DslDefinition.dsl`。 您可以在底下的資料夾中找到編譯的組件 `Dsl\bin\*`
+7. 當您發佈的其他人使用 DSL 時，您必須提供已編譯的組件 (DLL) 和檔案`DslDefinition.dsl`。 您可以在底下的資料夾中找到編譯的組件 `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>若要匯入的 DSL 程式庫
 

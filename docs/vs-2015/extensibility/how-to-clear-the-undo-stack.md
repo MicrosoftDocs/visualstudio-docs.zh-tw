@@ -10,12 +10,12 @@ ms.assetid: 2200d2d4-7f58-401c-87fc-ddd32d368193
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e45ec665b75be99781495bc5f2407c30c5f7e12a
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: db77f93fd7f6af16b5358b75b6ffcd5927430653
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59000467"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089155"
 ---
 # <a name="how-to-clear-the-undo-stack"></a>HOW TO：清除復原堆疊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "59000467"
   
 ### <a name="to-clear-the-undo-stack"></a>若要清除復原堆疊  
   
-1.  若要清除復原堆疊使用[IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom)方法。 這個範例如下：  
+1. 若要清除復原堆疊使用[IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom)方法。 這個範例如下：  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  

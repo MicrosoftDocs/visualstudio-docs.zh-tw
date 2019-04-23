@@ -14,19 +14,19 @@ ms.assetid: a8ce6fbf-8663-4770-8fba-677d04c84825
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f055090b32e8bf23919fc699d9045ab89f922e0e
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6950d78da99285e5aeeeefe002c8319b08721110
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840389"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087023"
 ---
 # <a name="expected--javascript"></a>必須是 '=' (JavaScript)
 您嘗試建立變數，以搭配條件式編譯陳述式，但未將變數與您想要指派給它的值之間的等號。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   加入等號。 例如:   
+- 加入等號。 例如:   
   
     ```JavaScript  
     @set @myvar1 = 1  

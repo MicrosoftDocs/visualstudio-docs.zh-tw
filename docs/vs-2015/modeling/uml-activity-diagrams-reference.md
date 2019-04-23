@@ -20,12 +20,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945861"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087140"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML 活動圖表：參考資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ ms.locfileid: "58945861"
 |13|**傳送訊號動作**|這個動作會將訊息或信號傳送到另一個活動，或傳送到相同活動中的並行執行緒。 訊息的類型和內容是由動作標題暗示，或在其他註解中指定。<br /><br /> 動作可以在信號中傳送資料，這些資料可以傳遞給物件流程或輸入連接 (16) 中的動作。|  
 |14|**接受事件動作**|先等待訊息或信號再繼續的動作。 動作可以接收的訊息類型，是由標題暗示或在其他註解中指定。<br /><br /> 如果動作沒有傳入的控制流程，只要接收到訊息就會產生語彙基元。<br /><br /> 動作可以接收信號中的資料，這些資料可在物件流程或輸出連接 (17) 上傳遞。<br /><br /> -   **IsUnmarshall** -如果為 true，可能會有數個具類型的輸出連接，且資料會加以解除封裝至此。 如果為 false，所有資料會顯示在一個連接上。|  
   
-###  <a name="DataFlow"></a> 資料流  
+### <a name="DataFlow"></a> 資料流  
  您可以描述動作到動作的資料流程。 如需本節所用項目的詳細資訊，請參閱＜活動圖繪製方針＞主題的＜繪製資料流程＞一節。  
   
  ![活動圖顯示資料流程](../modeling/media/uml-actovdata.png "UML_ActOvData")  

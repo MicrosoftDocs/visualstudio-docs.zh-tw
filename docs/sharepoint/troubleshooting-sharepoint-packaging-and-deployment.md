@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed0801e9654e1d2f78f2ed49f47dabe6f0e619ab
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0c949f9a5d8c56f44e0754715d056b4d3837f76a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868036"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087595"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>針對 SharePoint 封裝和部署進行疑難排解
   這個主題涵蓋您在封裝和部署 SharePoint 方案時可能會遇到的各種問題。
@@ -40,7 +40,7 @@ ms.locfileid: "54868036"
  您可以透過 [封裝設計工具] 將專案輸出加入至套件。 然而，當您加入專案輸出時，要確定專案的平台與 SharePoint 方案的平台相符。 我們建議您改用**任何 CPU**平台目標的組件，您想要部署到 SharePoint 伺服器。 如需詳細資訊，請參閱 <<c0> [ 專案設計工具、 編譯頁面&#40;Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md)並[進階編譯器設定對話方塊&#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)。</c0>
 
 ## <a name="validation-warnings-and-errors"></a>驗證警告和錯誤
- Visual Studio 中的 SharePoint 開發工具會執行驗證步驟，來驗證方案套件的格式是否正確。 您也可以為您的「功能」和套件建立自訂驗證步驟。 如需詳細資訊，請參閱[＜How to：建立自訂的功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。
+ Visual Studio 中的 SharePoint 開發工具會執行驗證步驟，來驗證方案套件的格式是否正確。 您也可以為您的「功能」和套件建立自訂驗證步驟。 如需詳細資訊，請參閱[如何：建立自訂的功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。
 
 ## <a name="deployment-conflict-resolution"></a>部署衝突解決方式
  當您部署 SharePoint 方案時，可能會在伺服器上項目與方案套件中項目具有相同名稱、URL 或 ID 的情況中發現衝突。 您可以變更**部署衝突解決**屬性，以解決、 報告或忽略模組、 Web 組件、 清單執行個體和內容類型的衝突。
@@ -51,7 +51,7 @@ ms.locfileid: "54868036"
 |-----------|-----------------|
 |自動|偵測到衝突並自動解決衝突。|
 |提示|偵測到衝突，並在解決衝突之前將其報告給開發人員。|
-|無|未偵測到衝突。|
+|None|未偵測到衝突。|
 
 ## <a name="differences-between-f5-deployment"></a>F5 部署之間的差異
  當您使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將 SharePoint 專案部署至本機 SharePoint 伺服器來進行測試和偵錯時，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 還會執行一些額外步驟。
@@ -73,9 +73,9 @@ ms.locfileid: "54868036"
 ### <a name="resolution"></a>解決方式
  若要解決這個問題，請執行下列步驟：
 
-1.  安裝 Microsoft 支援文章中所述的更新 KB967535[修正：Hotfix 已提供適用於 Windows Vista 和 Windows Server 2008 在 IIS 7.0 上修正兩個問題在 ASP.NET 中](http://go.microsoft.com/fwlink/?LinkId=179055)。
+1. 安裝 Microsoft 支援文章中所述的更新 KB967535[修正：Hotfix 已提供適用於 Windows Vista 和 Windows Server 2008 在 IIS 7.0 上修正兩個問題在 ASP.NET 中](http://go.microsoft.com/fwlink/?LinkId=179055)。
 
-2.  將下列行加入至 Web.config 檔案：
+2. 將下列行加入至 Web.config 檔案：
 
     ```xml
     <compilation batch="false" optimizeCompilations="true">

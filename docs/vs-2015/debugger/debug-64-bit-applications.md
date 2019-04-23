@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 600166699a40ac91d403d7b76948ac924b4a35c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d603d2435183581cac92a7c6dae6a4044d8f8fe5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944173"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087426"
 ---
 # <a name="debug-64-bit-applications"></a>偵錯 64 位元應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,22 +40,22 @@ ms.locfileid: "58944173"
 ## <a name="debug-a-64-bit-application"></a>偵錯 64 位元應用程式  
  若要嘗試偵錯 64 位元應用程式：  
   
-1.  建立 Visual Studio 方案，例如 C# 主控台應用程式。  
+1. 建立 Visual Studio 方案，例如 C# 主控台應用程式。  
   
-2.  使用組態管理員將組態設定為 64 位元。 如需詳細資訊，請參閱[如何：將專案設定到目標平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
+2. 使用組態管理員將組態設定為 64 位元。 如需詳細資訊，請參閱[如何：將專案設定到目標平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
   
-3.  此時會啟動 64 位元版本的遠端偵錯工具 (msvsmon.exe)。 只要開啟具有 64 位元組態的方案，就會執行此工具。  
+3. 此時會啟動 64 位元版本的遠端偵錯工具 (msvsmon.exe)。 只要開啟具有 64 位元組態的方案，就會執行此工具。  
   
-4.  開始偵錯。 您應該會與 32 位元組態有相同的體驗。 如果您收到錯誤，請參閱下列＜疑難排解＞一節。  
+4. 開始偵錯。 您應該會與 32 位元組態有相同的體驗。 如果您收到錯誤，請參閱下列＜疑難排解＞一節。  
   
 ## <a name="troubleshooting-64-bit-debugging"></a>64 位元偵錯疑難排解  
  您可能會看到錯誤：「 64 位元偵錯作業花費的時間超出預期。 」 在此情況下，Visual Studio 已傳送要求到 64 位元版本的 msvsmon.exe，但該要求的結果卻花很長的時間傳回。  
   
  此錯誤的主要原因有兩個：  
   
--   電腦上所安裝的網路安全性軟體造成網路堆疊不可靠，因此已丟棄通過 localhost 的封包。 請嘗試停用所有網路安全性軟體，看看這樣做是否可以解決問題。 如果是，請將軟體干擾 localhost 流量的情形回報給您的網路安全性軟體廠商。  
+- 電腦上所安裝的網路安全性軟體造成網路堆疊不可靠，因此已丟棄通過 localhost 的封包。 請嘗試停用所有網路安全性軟體，看看這樣做是否可以解決問題。 如果是，請將軟體干擾 localhost 流量的情形回報給您的網路安全性軟體廠商。  
   
--   您在使用 Visual Studio 時遇到停止回應或效能問題。 如果此問題經常發生，您可以收集 Visual Studio 的傾印 (devenv.exe) 和背景工作處理序 (msvsmon.exe)，然後傳送給 Microsoft。 
+- 您在使用 Visual Studio 時遇到停止回應或效能問題。 如果此問題經常發生，您可以收集 Visual Studio 的傾印 (devenv.exe) 和背景工作處理序 (msvsmon.exe)，然後傳送給 Microsoft。 
   
 ## <a name="see-also"></a>另請參閱  
  [64 位元應用程式](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   

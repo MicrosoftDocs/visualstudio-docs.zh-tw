@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a67804984c427062e55b72e3bbe942e6e4839f99
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e69b9a96ba2529eba2f981ab79e59c5e7936cf97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652822"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086581"
 ---
 # <a name="convert-dialog-box"></a>轉換對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "59652822"
   
 #### <a name="to-access-the-convert-dialog-box"></a>存取轉換對話方塊  
   
-1.  在功能表列上，依序選擇 [檔案] 、[開啟] 和 [轉換] 。  
+1. 在功能表列上，依序選擇 [檔案] 、[開啟] 和 [轉換] 。  
   
      您會看到一份目前可用的程式碼轉換工具清單。  
   
-2.  選取適合您應用程式的工具。  
+2. 選取適合您應用程式的工具。  
   
 ## <a name="see-also"></a>請參閱  
  [NOTINBUILD - 如何：升級 Visual Basic 6.0 專案](http://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   

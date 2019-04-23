@@ -8,12 +8,12 @@ ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e7fbc9f18a668cbe3738ab3c8dd734ddadd8ce08
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: acb7922658a5dd7db0839051a42a119733c8b1d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939330"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118054"
 ---
 # <a name="creating-a-custom-start-page"></a>建立自訂起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ ms.locfileid: "58939330"
   
 #### <a name="to-create-a-blank-start-page"></a>若要建立空白起始頁  
   
-1.  建立新的專案之型別的**WPF 應用程式**(**Visual C# / Windows Desktop**。  
+1. 建立新的專案之型別的**WPF 應用程式**(**Visual C# / Windows Desktop**。  
   
-2.  加入 `Microsoft.VisualStudio.Shell.14.0` 的參考。  
+2. 加入 `Microsoft.VisualStudio.Shell.14.0` 的參考。  
   
-3.  在 XML 編輯器中開啟 XAML 檔案，並變更最上層\<視窗中 > 項目\<UserControl > 項目，但不會移除任何命名空間宣告。  
+3. 在 XML 編輯器中開啟 XAML 檔案，並變更最上層\<視窗中 > 項目\<UserControl > 項目，但不會移除任何命名空間宣告。  
   
-4.  移除`x:Class`從最上層元素宣告。 這可讓 XAML 內容相容於 Visual Studio 工具視窗裝載 [開始] 頁面。  
+4. 移除`x:Class`從最上層元素宣告。 這可讓 XAML 內容相容於 Visual Studio 工具視窗裝載 [開始] 頁面。  
   
-5.  將下列命名空間宣告加入至最上層\<UserControl > 項目。  
+5. 將下列命名空間宣告加入至最上層\<UserControl > 項目。  
   
     ```  
     xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  
@@ -62,28 +62,28 @@ ms.locfileid: "58939330"
     </UserControl>  
     ```  
   
-6.  將控制項新增至空\<UserControl > 填寫 自訂起始頁的項目。 如需如何新增功能的 Visual Studio 的特定資訊，請參閱[加入 Visual Studio 命令，以起始頁](../extensibility/adding-visual-studio-commands-to-a-start-page.md)。  
+6. 將控制項新增至空\<UserControl > 填寫 自訂起始頁的項目。 如需如何新增功能的 Visual Studio 的特定資訊，請參閱[加入 Visual Studio 命令，以起始頁](../extensibility/adding-visual-studio-commands-to-a-start-page.md)。  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>測試並套用自訂起始頁  
  未設定執行自訂的 [入門] 頁面，直到您確認它並未損毀 Visual Studio 的 Visual Studio 的主要執行個體。 相反地，在測試實驗執行個體。  
   
 #### <a name="to-test-a-manually-created-custom-start-page"></a>若要測試以手動方式建立的自訂起始頁  
   
-1.  將您的 XAML 檔案，並支援文字檔案或標記檔案，為複製 **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\** 資料夾。  
+1. 將您的 XAML 檔案，並支援文字檔案或標記檔案，為複製 **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\** 資料夾。  
   
-2.  如果您的起始頁會參考任何控制項或 Visual Studio 不會安裝的組件中的類型，將組件複製並貼在_Visual Studio 安裝資料夾_**\Common7\IDE\在 PrivateAssemblies\\**。  
+2. 如果您的起始頁會參考任何控制項或 Visual Studio 不會安裝的組件中的類型，將組件複製並貼在_Visual Studio 安裝資料夾_**\Common7\IDE\在 PrivateAssemblies\\**。  
   
-3.  在 Visual Studio 命令提示字元中，輸入**devenv /rootsuffix Exp**開啟 Visual Studio 的實驗執行個體。  
+3. 在 Visual Studio 命令提示字元中，輸入**devenv /rootsuffix Exp**開啟 Visual Studio 的實驗執行個體。  
   
-4.  在實驗執行個體中，移至**工具 / 選項 / 環境 / 啟動**頁面，然後選取您的 XAML 檔案，從**自訂起始頁**下拉式清單。  
+4. 在實驗執行個體中，移至**工具 / 選項 / 環境 / 啟動**頁面，然後選取您的 XAML 檔案，從**自訂起始頁**下拉式清單。  
   
-5.  在 [檢視]  功能表上，按一下 [起始頁] 。  
+5. 在 [檢視]  功能表上，按一下 [起始頁] 。  
   
      應該會顯示您的自訂起始頁。 如果您想要變更任何檔案，您必須關閉實驗執行個體、 進行變更、 複製並貼變更的檔案，然後再重新開啟實驗的執行個體，以檢視所做的變更。  
   
 #### <a name="to-apply-the-custom-start-page-in-the-primary-instance-of-visual-studio"></a>若要套用自訂起始頁在 Visual Studio 的主要執行個體  
   
--   您已經測試您的起始頁，並發現它穩定之後，請使用**自訂起始頁**選項**選項**對話方塊中，將其選取為 Visual Studio 的主要執行個體中的 [開始] 頁面  
+- 您已經測試您的起始頁，並發現它穩定之後，請使用**自訂起始頁**選項**選項**對話方塊中，將其選取為 Visual Studio 的主要執行個體中的 [開始] 頁面  
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說：將自訂的 XAML 加入至 [開始] 頁面](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   

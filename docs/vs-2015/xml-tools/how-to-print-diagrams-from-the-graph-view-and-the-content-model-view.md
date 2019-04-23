@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49dde34079cc7d8b63ab374c0ceb16390f934d58
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: cae78a5f32037111a870058f92ea0d0f36f23f56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665724"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088713"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>HOW TO：從圖表檢視和內容模型檢視列印圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "59665724"
   
 ### <a name="to-print-diagrams-from-the-xml-schema-designer"></a>從 XML 結構描述設計工具列印圖表  
   
-1.  在 Visual Studio 中開啟 XSD 檔案，並加入一些節點[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)。  
+1. 在 Visual Studio 中開啟 XSD 檔案，並加入一些節點[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)。  
   
-2.  將圖表匯出至 XPS 檔案，使用**圖表匯出為影像...** 內容功能表項目在設計介面中的 [圖形] 檢視或內容模型檢視。  
+2. 將圖表匯出至 XPS 檔案，使用**圖表匯出為影像...** 內容功能表項目在設計介面中的 [圖形] 檢視或內容模型檢視。  
   
      當您從圖表檢視匯出圖表時，會將整個設計介面匯出至 XPS 檔。 當您從內容模型檢視匯出圖表，而且內容模型檢視的設計介面出現一個以上的節點時，只會將第一個節點匯出至 XPS 檔。  
   
-3.  使用 XPS 檢視器列印儲存在 XPS 檔中的影像。  
+3. 使用 XPS 檢視器列印儲存在 XPS 檔中的影像。  
   
 ## <a name="see-also"></a>另請參閱  
  [圖表檢視](../xml-tools/graph-view.md)   

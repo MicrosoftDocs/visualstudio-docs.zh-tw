@@ -10,12 +10,12 @@ ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f7e771acfa44c1b32dfcc33b2ef1cbcaef879b9f
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 3bd7b31a609117a59a5110cdb4460e5c36395ede
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58941516"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089207"
 ---
 # <a name="how-to-add-standard-text-markers"></a>HOW TO：新增標準文字標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58941516"
   
 ### <a name="to-create-a-text-marker"></a>若要建立文字標記  
   
-1.  取決於您使用一個或兩個-維座標系統中，呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>方法用來建立新的文字標記。  
+1. 取決於您使用一個或兩個-維座標系統中，呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>方法用來建立新的文字標記。  
   
      在此方法呼叫中，指定標記類型，某個範圍的文字上，建立標記和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>介面。 然後此方法會將讓指標回到新建立的文字標記中。 標記類型皆取自<xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE>列舉型別。 指定<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>介面，如果您想要收到標記事件的通知。  
   
@@ -36,15 +36,15 @@ ms.locfileid: "58941516"
   
 #### <a name="to-add-a-custom-command-to-the-context-menu"></a>若要將自訂命令新增至內容功能表  
   
-1.  內容功能表會出現之前，環境會呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A>方法並傳遞您的文字標記的指標會受到影響的內容功能表命令項目數目。  
+1. 內容功能表會出現之前，環境會呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A>方法並傳遞您的文字標記的指標會受到影響的內容功能表命令項目數目。  
   
      比方說的操作功能表上的特定中斷點的命令包含**移除中斷點**透過**新中斷點**，如下列螢幕擷取畫面所示。  
   
      ![標記操作功能表](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
   
-2.  傳回一些識別的自訂命令名稱的文字。 例如，**移除中斷點**可能是自訂的命令，如果環境未已經提供它。 您也將傳遞回命令是否支援、 可用且已啟用，及/或開啟 / 關閉切換。 環境會使用這項資訊，以顯示操作功能表中的自訂命令，以正確方式。  
+2. 傳回一些識別的自訂命令名稱的文字。 例如，**移除中斷點**可能是自訂的命令，如果環境未已經提供它。 您也將傳遞回命令是否支援、 可用且已啟用，及/或開啟 / 關閉切換。 環境會使用這項資訊，以顯示操作功能表中的自訂命令，以正確方式。  
   
-3.  若要執行的命令環境呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A>方法，您將指標傳遞到文字標記並從內容功能表中選取的命令數目。  
+3. 若要執行的命令環境呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A>方法，您將指標傳遞到文字標記並從內容功能表中選取的命令數目。  
   
      若要執行任何動作的文字標記您自訂的命令會指定使用這個呼叫這項的資訊。  
   

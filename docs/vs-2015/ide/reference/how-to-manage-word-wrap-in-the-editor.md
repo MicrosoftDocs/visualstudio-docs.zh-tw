@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ff92e93d2fa15591afddddc1a012ff94b8ba6c0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 172c5b049e19700d3ce2e4ff1fe43490a2194a92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656007"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088037"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>HOW TO：管理編輯器 中的自動換行
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ ms.locfileid: "59656007"
   
 #### <a name="to-set-word-wrap-preferences"></a>設定自動換行喜好設定  
   
-1.  在 [工具] 功能表上，選取 [選項]。  
+1. 在 [工具] 功能表上，選取 [選項]。  
   
-2.  在 [文字編輯器] 資料夾中，選擇 [所有語言] 子資料夾中的 [一般] 選項，全域設定這個選項。  
+2. 在 [文字編輯器] 資料夾中，選擇 [所有語言] 子資料夾中的 [一般] 選項，全域設定這個選項。  
   
      — 或 —  
   
      選擇您進行程式設計所用語言子資料夾中的 [一般] 選項。  
   
-3.  在 [設定] 下，選取或清除 [自動換行] 選項。  
+3. 在 [設定] 下，選取或清除 [自動換行] 選項。  
   
      選取 [自動換行] 選項時，會啟用 [顯示自動換行的視覺化圖像] 選項。  
   
-4.  如果您想要在過長的行換行到第二行之處顯示傳回箭號指標，請選取 [顯示自動換行的視覺化圖像] 選項。 如果您不想顯示指示器箭號，請清除這個選項。  
+4. 如果您想要在過長的行換行到第二行之處顯示傳回箭號指標，請選取 [顯示自動換行的視覺化圖像] 選項。 如果您不想顯示指示器箭號，請清除這個選項。  
   
     > [!NOTE]
     >  這些提醒箭頭不會新增到程式碼：它們僅供顯示之用。  

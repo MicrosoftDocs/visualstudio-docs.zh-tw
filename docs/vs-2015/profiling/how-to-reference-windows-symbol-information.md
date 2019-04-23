@@ -1,5 +1,5 @@
 ---
-title: 如何：參考 Windows 符號資訊 | Microsoft Docs
+title: HOW TO：參考 Windows 符號資訊 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,14 +14,14 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8819964eff232cc01cbcfc2081e01eca47f04c15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 45e1ad3c89d811a0a2bd715c86d8fcd8006600b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801696"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086698"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>如何：參考 Windows 符號資訊
+# <a name="how-to-reference-windows-symbol-information"></a>HOW TO：參考 Windows 符號資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 程式碼剖析工具會使用符號 (.pdb) 檔案來解析符號名稱，例如程式二進位檔案中的函式名稱。 您可以依照下列步驟進行，以為本機電腦上的 Windows 版本自動下載並更新正確的 .pdb 檔案。  
@@ -33,22 +33,22 @@ Visual Studio 程式碼剖析工具會使用符號 (.pdb) 檔案來解析符號�
   
 ### <a name="to-use-the-microsoft-symbol-server"></a>使用 Microsoft 符號伺服器  
   
-1.  建立要包含符號檔案資訊的資料夾，例如 C:\SymbolCache。  
+1. 建立要包含符號檔案資訊的資料夾，例如 C:\SymbolCache。  
   
-2.  在 [ **工具** ] 功能表上按一下 [ **選項**]。  
+2. 在 [ **工具** ] 功能表上按一下 [ **選項**]。  
   
      [ **選項** ] 對話方塊隨即出現。  
   
-3.  展開 [偵錯] 樹狀結構，然後按一下 [符號]。  
+3. 展開 [偵錯] 樹狀結構，然後按一下 [符號]。  
   
-4.  在 [符號檔 (.pdb) 位置] 中，選取 [Microsoft 符號伺服器]  
+4. 在 [符號檔 (.pdb) 位置] 中，選取 [Microsoft 符號伺服器]  
   
-5.  在 [從符號伺服器將符號快取至此目錄] 中，輸入在步驟 1 建立的資料夾路徑，例如︰  
+5. 在 [從符號伺服器將符號快取至此目錄] 中，輸入在步驟 1 建立的資料夾路徑，例如︰  
   
      **C:\SymbolCache**  
   
      您也可以按一下省略符號按鈕 (**...**)，然後從 [瀏覽資料夾] 對話方塊選取一個目錄。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [如何：序列化符號資訊](../profiling/how-to-serialize-symbol-information.md)

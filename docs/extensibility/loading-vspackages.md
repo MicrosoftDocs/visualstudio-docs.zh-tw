@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9878fea72c83cd6a466f2743f44d3eddca0bdba7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ce0f09c1749621838729e1e4f64feb3ca8b07628
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117560"
 ---
 # <a name="load-vspackages"></a>載入 Vspackage
 Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 比方說，Visual Studio 使用專案 factory 或 VSPackage 實作的服務時，會載入 VSPackage。 這項功能稱為延遲的載入，這會盡可能以改善效能。
@@ -28,7 +28,7 @@ Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 
 
 ### <a name="autoload-a-vspackage-in-a-specific-context"></a>自動載入 VSPackage 中特定的內容
 
--   新增`ProvideAutoLoad`屬性加入 VSPackage 屬性：
+- 新增`ProvideAutoLoad`屬性加入 VSPackage 屬性：
 
     ```csharp
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
@@ -41,11 +41,11 @@ Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 
 
      請參閱列舉的欄位<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>如 UI 內容和其 GUID 值的清單。
 
--   在設定的中斷點<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。
+- 在設定的中斷點<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。
 
--   建置 VSPackage，並開始偵錯。
+- 建置 VSPackage，並開始偵錯。
 
--   載入方案或建立一個。
+- 載入方案或建立一個。
 
      VSPackage 載入，並在中斷點停止。
 
@@ -54,7 +54,7 @@ Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 
 
  您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A>方法，以強制載入 VSPackage。
 
--   插入此程式碼<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>的 VSPackage，強制載入的另一個 VSPackage 的方法：
+- 插入此程式碼<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>的 VSPackage，強制載入的另一個 VSPackage 的方法：
 
     ```csharp
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;
