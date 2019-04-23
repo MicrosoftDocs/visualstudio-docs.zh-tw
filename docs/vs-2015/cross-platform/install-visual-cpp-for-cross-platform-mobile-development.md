@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 7236c0cde965a52ea6ea19f4244e90ec53851405
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c19ba7ea458f7922f5e82e3277b9ab305090a5cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659159"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113075"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>安裝 Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "59659159"
  [Install tools for iOS](#InstallForiOS)   
  [手動安裝或更新相依項目](#ThirdParty)  
   
-##  <a name="Requirements"></a> 需求  
+## <a name="Requirements"></a> 需求  
   
 - 如需安裝需求，請參閱 [Visual Studio 2015 系統需求](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs)。  
   
@@ -44,23 +44,23 @@ ms.locfileid: "59659159"
   
 - 建置 iOS 的程式碼需要 Apple ID、iOS 開發人員計劃帳戶，以及可在 OS X Mavericks 或更新版本中執行 [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) 或更新版本的 Mac 電腦。 如需簡單的安裝步驟，請參閱 [Install tools for iOS](#InstallForiOS)。  
   
-##  <a name="GetTheTools"></a> 取得工具  
+## <a name="GetTheTools"></a> 取得工具  
  適用於跨平台行動裝置開發的 Visual C++ 是隨附於 Visual Studio Community、Professional 及 Enterprise 版本中的可安裝元件。 若要取得 Visual Studio，請移至 [Visual Studio 2015 下載](http://go.microsoft.com/fwlink/p/?linkid=517106)頁面，並下載 Visual Studio 2015 Update 2 或更新版本。  
   
-##  <a name="InstallTheTools"></a> 安裝工具  
+## <a name="InstallTheTools"></a> 安裝工具  
  Visual Studio 2015 的安裝程式包含安裝 Visual C++ for Cross-Platform Mobile Development 的選項。 這會安裝必要的 C++ 語言工具、適用於 Visual Studio 的範本和元件、Android 組建和偵錯所需的 GCC 和 Clang 工具組元件，以及與 Mac 通訊的 iOS 開發元件。 它也會安裝支援 iOS 和 Android 應用程式開發所需的所有協力廠商工具和軟體開發套件。 大多數協力廠商工具是 Android 平台支援所需的開放原始碼軟體。  
   
--   建置以 Android 平台為目標的 C++ 程式碼需要 Android 原生開發套件 (NDK)。  
+- 建置以 Android 平台為目標的 C++ 程式碼需要 Android 原生開發套件 (NDK)。  
   
--   Android 建置流程需要 Android SDK、Apache Ant 及 Java SE Development Kit。  
+- Android 建置流程需要 Android SDK、Apache Ant 及 Java SE Development Kit。  
   
--   Microsoft Visual Studio Emulator for Android 是一款選用的高效能模擬器，非常適合進行程式碼測試與偵錯。  
+- Microsoft Visual Studio Emulator for Android 是一款選用的高效能模擬器，非常適合進行程式碼測試與偵錯。  
   
 #### <a name="to-install-visual-c-for-cross-platform-mobile-development-and-the-third-party-tools"></a>若要安裝 Visual C++ for Cross-Platform Mobile Development 和協力廠商工具  
   
-1.  請於 [取得工具](#GetTheTools)中的連結下載 Visual Studio 2015 安裝程式，並執行。 若要安裝選用元件，請選擇 [自訂]  做為安裝類型。 選擇 [下一步]  ，選取要安裝的選用元件。  
+1. 請於 [取得工具](#GetTheTools)中的連結下載 Visual Studio 2015 安裝程式，並執行。 若要安裝選用元件，請選擇 [自訂]  做為安裝類型。 選擇 [下一步]  ，選取要安裝的選用元件。  
   
-2.  在 [選取功能] 中，展開 [跨平台行動開發]  ，然後核取 [Visual C++ 行動開發] 。  
+2. 在 [選取功能] 中，展開 [跨平台行動開發]  ，然後核取 [Visual C++ 行動開發] 。  
   
      ![選取 Visual C++ 行動開發](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
   
@@ -70,9 +70,9 @@ ms.locfileid: "59659159"
   
      選擇 [下一步]  繼續進行。  
   
-3.  協力廠商元件會有自己的授權條款。 您可以選擇每個元件旁的 [授權條款]  連結，以檢視授權條款。 選擇 [安裝] 來新增元件，並安裝 Visual Studio 和適用於跨平台行動裝置開發的 Visual C++。  
+3. 協力廠商元件會有自己的授權條款。 您可以選擇每個元件旁的 [授權條款]  連結，以檢視授權條款。 選擇 [安裝] 來新增元件，並安裝 Visual Studio 和適用於跨平台行動裝置開發的 Visual C++。  
   
-4.  安裝完成時，關閉安裝程式，然後重新啟動電腦。 適用於協力廠商元件的部分安裝動作要在重新啟動電腦之後才會生效。  
+4. 安裝完成時，關閉安裝程式，然後重新啟動電腦。 適用於協力廠商元件的部分安裝動作要在重新啟動電腦之後才會生效。  
   
     > [!IMPORTANT]
     >  您必須重新啟動，確定一切都已正確安裝。  
@@ -82,12 +82,12 @@ ms.locfileid: "59659159"
     > [!NOTE]
     >  如果您的電腦或 Windows 版本不支援 HYPER-V，您就無法使用Android 版 Microsoft Visual Studio 模擬器元件。 Windows 的 Home Edition 不包含 HYPER-V 支援。  
   
-5.  開啟 Visual Studio。 如果這是您第一次執行 Visual Studio，可能需要一些時間來設定和登入。 當 Visual Studio 就緒時，請在 [工具]  功能表中依序選取 [擴充功能和更新] 、[更新] 。 如果有適用於 Visual C++ for Cross-Platform Mobile Development 或 Microsoft Visual Studio Emulator for Android 的 Visual Studio 更新，請加以安裝。  
+5. 開啟 Visual Studio。 如果這是您第一次執行 Visual Studio，可能需要一些時間來設定和登入。 當 Visual Studio 就緒時，請在 [工具]  功能表中依序選取 [擴充功能和更新] 、[更新] 。 如果有適用於 Visual C++ for Cross-Platform Mobile Development 或 Microsoft Visual Studio Emulator for Android 的 Visual Studio 更新，請加以安裝。  
   
-##  <a name="InstallForiOS"></a> Install tools for iOS  
+## <a name="InstallForiOS"></a> Install tools for iOS  
  您可以使用 Visual C++ for Cross-Platform Mobile Development 編輯、偵錯 iOS 程式碼並將其部署至 iOS 模擬器或 iOS 裝置，但由於授權限制，必須在 Mac 上遠端建置程式碼。 若要使用 Visual Studio 建置並執行 iOS 應用程式，您必須在 Mac 上安裝及設定遠端代理程式。 如需詳細的安裝指示、必要條件及組態選項，請參閱 [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)。 如果您不是針對  iOS 進行建置，可以略過此步驟。  
   
-##  <a name="ThirdParty"></a> 手動安裝或更新相依項目  
+## <a name="ThirdParty"></a> 手動安裝或更新相依項目  
  如果您在安裝 Visual C++ Mobile Development 選項時，決定不要安裝一或多個使用 Visual Studio 安裝程式的協力廠商相依項目，可使用 [Install the tools](#InstallTheTools)中的步驟於稍後安裝。 您也可以獨立於 Visual Studio 安裝或更新這些項目。  
   
 > [!CAUTION]
@@ -123,15 +123,15 @@ ms.locfileid: "59659159"
   
 #### <a name="to-set-the-paths-for-third-party-tools"></a>若要設定協力廠商工具的路徑  
   
-1.  在 Visual Studio 功能表列上，依序選取 [工具] 、[選項] 。  
+1. 在 Visual Studio 功能表列上，依序選取 [工具] 、[選項] 。  
   
-2.  展開 [選項]  對話方塊中的 [跨平台] 、[C++] ，並選取 [Android] 。  
+2. 展開 [選項]  對話方塊中的 [跨平台] 、[C++] ，並選取 [Android] 。  
   
      ![Android 工具路徑選項](../cross-platform/media/cppmdd-options-android.PNG "CPPMDD_Options_Android")  
   
-3.  若要變更工具所使用的路徑，請核取路徑旁的核取方塊，並在文字方塊中編輯資料夾路徑。 您也可以使用瀏覽按鈕 (**...**)，開啟 [選取位置]  對話方塊並選擇資料夾。  
+3. 若要變更工具所使用的路徑，請核取路徑旁的核取方塊，並在文字方塊中編輯資料夾路徑。 您也可以使用瀏覽按鈕 (**...**)，開啟 [選取位置]  對話方塊並選擇資料夾。  
   
-4.  選擇 [確定]  ，儲存自訂工具資料夾的位置。  
+4. 選擇 [確定]  ，儲存自訂工具資料夾的位置。  
   
 ## <a name="see-also"></a>另請參閱  
  [安裝和設定工具以使用 iOS 進行建置](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   

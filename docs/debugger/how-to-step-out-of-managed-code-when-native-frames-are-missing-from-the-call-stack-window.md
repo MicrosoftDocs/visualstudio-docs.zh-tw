@@ -23,12 +23,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 25021f0c3daffdaf59633fdb9bff0e2659f43d2e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 1efe109741c306d45ce7f7749193f5b638b76949
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043021"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112867"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>HOW TO：在原生框架從呼叫堆疊視窗遺失時跳離受控程式碼
 
@@ -39,9 +39,9 @@ ms.locfileid: "55043021"
 
 ## <a name="step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>在原生框架從呼叫堆疊顯示遺失時，跳離受控程式碼
 
-1.  在機器碼中，請在呼叫 Managed 程式碼之後設定一個位置中斷點。
+1. 在機器碼中，請在呼叫 Managed 程式碼之後設定一個位置中斷點。
 
-2.  選擇 [偵錯] 功能表上的 [繼續]。
+2. 選擇 [偵錯] 功能表上的 [繼續]。
 
      完成 Managed 呼叫之後，執行將停止於機器碼的中斷點處。
 
