@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad4ddf0ff7e4fd2f315b47f8a7e2fddb604932e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 81941d131b51135771333aeab966716f4126a58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604028"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091274"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>HOW TO：以程式設計方式複製並貼上 Visio 文件中的圖形
   您可以程式設計方式，將文件頁面上的圖形複製貼到同一份文件的另一個新頁面上。 您可以選擇將圖形貼到預設位置 (使用中視窗的中央)，或是貼到與原始頁面一樣的座標位置。
@@ -28,7 +28,7 @@ ms.locfileid: "56604028"
 
 ### <a name="to-copy-shapes-to-the-center-of-another-page"></a>若要將圖形複製至另一頁的中央
 
--   下列範例會示範如何從第一個頁面複製圖形，並貼到第二個頁面的中央。
+- 下列範例會示範如何從第一個頁面複製圖形，並貼到第二個頁面的中央。
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#14)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#14)]
@@ -40,7 +40,7 @@ ms.locfileid: "56604028"
 
 ### <a name="to-copy-shapes-and-shape-locations-to-another-page"></a>若要將圖形和圖形位置複製到另一頁
 
--   下列範例會示範如何從第一個頁面複製圖形，並以其原始座標位置貼到第二個頁面。
+- 下列範例會示範如何從第一個頁面複製圖形，並以其原始座標位置貼到第二個頁面。
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#15)]

@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5676bfaabb20ebf6dabea7bae66527d17891b362
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 27593a450f7c2a1b34c1c84bc1d4e7ea5bb5919f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091872"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>HOW TO：以程式碼分析簽入原則來強制程式碼的可維護性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,35 +29,35 @@ ms.locfileid: "58930107"
   
 ### <a name="to-open-the-code-analysis-policy-editor"></a>若要開啟 程式碼分析原則編輯器  
   
-1.  在**Team Explorer**，以滑鼠右鍵按一下 team 專案，按一下**Team 專案設定**，然後按一下**原始檔控制**。  
+1. 在**Team Explorer**，以滑鼠右鍵按一下 team 專案，按一下**Team 專案設定**，然後按一下**原始檔控制**。  
   
      **原始檔控制** 對話方塊隨即出現。  
   
-2.  在 **簽入原則**索引標籤，然後按一下**新增**。  
+2. 在 **簽入原則**索引標籤，然後按一下**新增**。  
   
      **新增簽入原則** 對話方塊隨即出現。  
   
-3.  在 **簽入原則**清單中，選取**程式碼分析**核取方塊，然後按一下**確定**。  
+3. 在 **簽入原則**清單中，選取**程式碼分析**核取方塊，然後按一下**確定**。  
   
      **程式碼分析原則編輯器** 對話方塊隨即出現。  
   
 ### <a name="to-enable-code-analysis-maintainability-rules"></a>若要啟用程式碼分析可維護性規則  
   
-1.  在 **程式碼分析原則編輯器**對話方塊的 **規則設定**，展開**維護性規則**節點。  
+1. 在 **程式碼分析原則編輯器**對話方塊的 **規則設定**，展開**維護性規則**節點。  
   
-2.  選取核取方塊，如下列規則：  
+2. 選取核取方塊，如下列規則：  
   
-    -   繼承深度：**CA1501 AvoidExcessiveInheritance** -臨界值：警告層級的深度超過 5  
+    - 繼承深度：**CA1501 AvoidExcessiveInheritance** -臨界值：警告層級的深度超過 5  
   
-    -   複雜度：**CA1502 AvoidExcessiveComplexity** -臨界值：在多個 25 的警告  
+    - 複雜度：**CA1502 AvoidExcessiveComplexity** -臨界值：在多個 25 的警告  
   
-    -   可維護性指數：**CA1505 AvoidUnmaintainableCode** - Threshold:在少於 20 的警告  
+    - 可維護性指數：**CA1505 AvoidUnmaintainableCode** - Threshold:在少於 20 的警告  
   
-    -   類別結合程度：**CA1506 AvoidExcessiveClassCoupling** -臨界值：在多個類別的 80 和多個方法的 30 的警告  
+    - 類別結合程度：**CA1506 AvoidExcessiveClassCoupling** -臨界值：在多個類別的 80 和多個方法的 30 的警告  
   
-    -   此外，如果您想防止組建將規則違規時，請選取**將警告視為錯誤**規則描述旁邊的核取方塊。  
+    - 此外，如果您想防止組建將規則違規時，請選取**將警告視為錯誤**規則描述旁邊的核取方塊。  
   
-3.  按一下 [確定 **Deploying Office Solutions**]。 新的簽入原則現在適用於未來的簽入。  
+3. 按一下 [確定] 。 新的簽入原則現在適用於未來的簽入。  
   
 ## <a name="see-also"></a>另請參閱  
  [程式碼度量值](../code-quality/code-metrics-values.md)   

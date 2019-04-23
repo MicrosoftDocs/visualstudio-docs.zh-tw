@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f8e3f4d53b0a8b79367064761ba0fc5b901dc5e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670065"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091470"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>HOW TO：選取要使用的 XML 結構描述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,23 +50,23 @@ XML 編輯器提供位於 %InstallDir%\Xml\Schemas 目錄的結構描述快取�
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>若要將 XML 結構描述加入結構描述快取中  
   
-1.  在 [文件屬性] 視窗中，按一下按鈕上**結構描述**欄位。  
+1. 在 [文件屬性] 視窗中，按一下按鈕上**結構描述**欄位。  
   
-2.  按一下 [加入] 。  
+2. 按一下 [加入] 。  
   
      這會開啟**開啟 XSD 結構描述**對話方塊。  
   
-3.  瀏覽並選取要加入到結構描述快取中的結構描述。  
+3. 瀏覽並選取要加入到結構描述快取中的結構描述。  
   
-4.  按一下 [開啟]。  
+4. 按一下 [開啟]。  
   
      結構描述會加入至結構描述快取，而且**使用**資料行值設定為**使用這個結構描述**。  
   
 ### <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>若要從結構描述快取刪除 XML 結構描述  
   
-1.  在 [文件屬性] 視窗中，按一下按鈕上**結構描述**欄位。  
+1. 在 [文件屬性] 視窗中，按一下按鈕上**結構描述**欄位。  
   
-2.  選取的結構描述中移除，然後按一下**移除**。  
+2. 選取的結構描述中移除，然後按一下**移除**。  
   
      結構描述會從記憶體中的結構描述快取移除，但不會從檔案系統中移除。  
   

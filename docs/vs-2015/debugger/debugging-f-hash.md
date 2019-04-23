@@ -17,23 +17,25 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e0fd75d45d42fb4216e96c29d1403e89eb44353
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 51a8e43268718421a90d051f0d4d9b6afa96980e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940359"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092366"
 ---
-# <a name="debugging-f"></a>偵錯 F# #
+# <a name="debugging-f"></a>偵錯 F\#
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-除了下列幾點差異，偵錯 F# 的方式與偵錯任何 Managed 語言非常類似：  
-  
--   [自動變數] 視窗不會顯示 F# 變數。  
-  
--   F# 不支援 [編輯後繼續]。 在偵錯工作階段期間編輯 F# 程式碼是可行的作法，但應該避免。 因為偵錯工作階段期間不會套用程式碼變更，所以在偵錯期間編輯 F# 程式碼會導致原始程式碼與正在偵錯的程式碼變成不相符。  
-  
--   偵錯工具無法辨識 F# 運算式。 若要於 F# 偵錯期間，在偵錯工具視窗或對話方塊中輸入運算式，您必須將運算式轉譯成 C# 語法。 當您將 F# 運算式轉譯成 C# 時，請切記 C# 使用 == 做為相等運算子，而 F# 則使用單一的 =。  
-  
-## <a name="see-also"></a>另請參閱  
- [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)
+除了下列幾點差異，偵錯 F# 的方式與偵錯任何 Managed 語言非常類似：
+
+- [自動變數] 視窗不會顯示 F# 變數。
+
+- F# 不支援 [編輯後繼續]。 在偵錯工作階段期間編輯 F# 程式碼是可行的作法，但應該避免。 因為偵錯工作階段期間不會套用程式碼變更，所以在偵錯期間編輯 F# 程式碼會導致原始程式碼與正在偵錯的程式碼變成不相符。
+
+- 偵錯工具無法辨識 F# 運算式。 若要於 F# 偵錯期間，在偵錯工具視窗或對話方塊中輸入運算式，您必須將運算式轉譯成 C# 語法。 當您將 F# 運算式轉譯成 C# 時，請切記 C# 使用 == 做為相等運算子，而 F# 則使用單一的 =。
+
+## <a name="see-also"></a>另請參閱
+
+- [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

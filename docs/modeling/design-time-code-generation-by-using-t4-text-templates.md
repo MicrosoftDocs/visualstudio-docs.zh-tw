@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8187fbfce9492623df5d998acd0bb4279b7ce0d2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b4cfca45d2ad1979b091c668854990ce9a7c0311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090416"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 設計階段 T4 文字範本可讓您在 Visual Studio 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓他們變更其根據從資料產生的程式碼*模型*。 模型是檔案或資料庫，其中包含您的應用程式需求的重要資訊。
@@ -141,9 +141,9 @@ ms.locfileid: "59657463"
 
 #### <a name="to-generate-program-code-or-resources"></a>產生程式碼或資源
 
-1.  變更輸出指示詞，以產生適當類型的檔案 (如 .cs、.vb、.resx 或 .xml)。
+1. 變更輸出指示詞，以產生適當類型的檔案 (如 .cs、.vb、.resx 或 .xml)。
 
-2.  插入將產生您所需方案程式碼的程式碼。 例如，如果您想要在類別中產生三個整數欄位宣：
+2. 插入將產生您所需方案程式碼的程式碼。 例如，如果您想要在類別中產生三個整數欄位宣：
 
     ```csharp
 
@@ -176,7 +176,7 @@ ms.locfileid: "59657463"
 
     ```
 
-3.  儲存檔案，並檢查產生的檔案，該檔案現在會包含下列程式碼：
+3. 儲存檔案，並檢查產生的檔案，該檔案現在會包含下列程式碼：
 
     ```csharp
     class MyGeneratedClass {
@@ -264,7 +264,7 @@ ms.locfileid: "59657463"
  `this.Host` (在 VB 中，為 `Me.Host`) 的類型是 `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`。
 
 ### <a name="getting-data-from-visual-studio"></a>從 Visual Studio 中取得資料
- 若要使用 Visual Studio 中提供的服務，將`hostSpecific`屬性，並載入`EnvDTE`組件。 匯入`Microsoft.VisualStudio.TextTemplating`，其中包含`GetCOMService()`擴充方法。  然後，您可以使用 IServiceProvider.GetCOMService() 來存取 DTE 和其他服務。 例如: 
+ 若要使用 Visual Studio 中提供的服務，將`hostSpecific`屬性，並載入`EnvDTE`組件。 匯入`Microsoft.VisualStudio.TextTemplating`，其中包含`GetCOMService()`擴充方法。  然後，您可以使用 IServiceProvider.GetCOMService() 來存取 DTE 和其他服務。 例如：
 
 ```src
 <#@ template hostspecific="true" language="C#" #>

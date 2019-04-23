@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a8f4ce6ab886fea3364526b53a32f72ad3f1408e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930224"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091521"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>HOW TO：存取的內建的字型和色彩配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的�
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>若要註冊分類，使用內建的字型和色彩  
   
-1.  建構一種特殊的類別目錄中的下列位置的登錄項目：  
+1. 建構一種特殊的類別目錄中的下列位置的登錄項目：  
   
      [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>* \FontAndColors\\*\<Category>*]  
   
      *\<類別目錄 >* 是類別目錄的非當地語系化名稱。  
   
-2.  填入登錄，以使用內建的字型和色彩配置具有四個值：  
+2. 填入登錄，以使用內建的字型和色彩配置具有四個值：  
   
     |名稱|類型|資料|描述|  
     |----------|----------|----------|-----------------|  
@@ -64,7 +64,7 @@ Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的�
     |NameID|REG_DWORD|識別碼|在 VSPackage 中可當地語系化的類別目錄名稱的資源識別碼。|  
     |ToolWindowPackage|REG_SZ|GUID|VSPackage 實作的 GUID<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>介面。|  
   
-3.  
+3. 
   
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>若要起始使用系統提供的字型和色彩  
   

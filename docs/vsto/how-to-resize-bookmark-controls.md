@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1769ed711c0334ef14a3567478cc5010ec4165ea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04eefc37162eaa90743982a0039e21d1d9edfb1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644948"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090715"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>HOW TO：調整書籤控制項的大小
   您可以在將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入 Microsoft Office Word 文件時，設定控制項的大小； 也可以稍後再調整大小。
@@ -47,15 +47,15 @@ ms.locfileid: "56644948"
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>在文件層級專案中，於設計階段調整書籤大小
 
-1.  選取 [屬性]  視窗中的書籤。
+1. 選取 [屬性]  視窗中的書籤。
 
-2.  增加或減少 <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> 屬性的值。
+2. 增加或減少 <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> 屬性的值。
 
-3.  增加或減少 <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> 屬性的值。
+3. 增加或減少 <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> 屬性的值。
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-runtime"></a>若要調整大小在執行階段的文件層級專案中的書籤
 
-1.  修改<xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A>並<xref:Microsoft.Office.Tools.Word.Bookmark.End%2A>屬性的<xref:Microsoft.Office.Tools.Word.Bookmark>您建立在執行階段，或在設計階段。
+1. 修改<xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A>並<xref:Microsoft.Office.Tools.Word.Bookmark.End%2A>屬性的<xref:Microsoft.Office.Tools.Word.Bookmark>您建立在執行階段，或在設計階段。
 
      下列程式碼範例會將五個字元加入名為 `SampleBookmark`的書籤開頭。 這段程式碼假設書籤之前的文字至少有五個字元。
 
@@ -69,7 +69,7 @@ ms.locfileid: "56644948"
 
 ### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-runtime"></a>若要調整大小的 VSTO 增益集專案，在執行階段中的書籤
 
-1.  修改<xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A>並<xref:Microsoft.Office.Tools.Word.Bookmark.End%2A>屬性的<xref:Microsoft.Office.Tools.Word.Bookmark>您建立在執行階段。
+1. 修改<xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A>並<xref:Microsoft.Office.Tools.Word.Bookmark.End%2A>屬性的<xref:Microsoft.Office.Tools.Word.Bookmark>您建立在執行階段。
 
      下列程式碼範例會建立在使用中文件第一個段落中包含文字的 <xref:Microsoft.Office.Tools.Word.Bookmark> ，然後再從 <xref:Microsoft.Office.Tools.Word.Bookmark>的開頭和結尾移除五個字元。
 
@@ -81,11 +81,11 @@ ms.locfileid: "56644948"
 
 ### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>在文件層級專案中，於設計階段重新建立書籤
 
-1.  選取要包含在新 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項的文字。
+1. 選取要包含在新 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項的文字。
 
-2.  按一下 [插入]  功能表上的 [書籤] 。
+2. 按一下 [插入]  功能表上的 [書籤] 。
 
-3.  在 [書籤]  對話方塊中，輸入您要調整大小的書籤名稱，然後按一下 [加入] 。
+3. 在 [書籤]  對話方塊中，輸入您要調整大小的書籤名稱，然後按一下 [加入] 。
 
 ## <a name="see-also"></a>另請參閱
 - [如何：將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
