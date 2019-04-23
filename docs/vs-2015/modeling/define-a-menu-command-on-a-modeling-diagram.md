@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ef029cc6e931509997ad6f094adedc7d96e4bcd3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930176"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670313"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>在模型圖上定義功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,6 @@ ms.locfileid: "58930176"
 
 2. 將下列參考加入您的專案。  
 
-
    |                                                                                                    參考資料                                                                                                    |                                                                                                  這可讓您執行                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         使用 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)定義元件。                                          |
@@ -74,7 +73,6 @@ ms.locfileid: "58930176"
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[版本]                                                                                  | 定義模型事件處理常式。<br /><br /> 將一系列的變更封裝至您的模型。 如需詳細資訊，請參閱 <<c0> [ 藉由使用異動連結 UML 模型更新](../modeling/link-uml-model-updates-by-using-transactions.md)。 |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[版本]<br /><br /> (不一定是必要項目)                                                             |                                                                                   存取軌跡處理常式的其他圖表項目。                                                                                   |
    | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> 只有分層圖上的命令才為必要項目。 如需詳細資訊，請參閱 <<c0> [ 擴充圖層圖表](../modeling/extend-layer-diagrams.md)。 |                                                                                             在分層圖上定義命令。                                                                                              |
-
 
 3. 將類別檔案加入專案，並將其內容設定為下列程式碼。  
 
