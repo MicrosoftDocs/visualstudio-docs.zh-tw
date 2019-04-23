@@ -1,5 +1,5 @@
 ---
-title: 選項對話方塊 |Microsoft Docs
+title: 選項對話方塊 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,16 +16,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5ca970fbd31d85b74a5be7c3f23c5d77e1d5f764
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 17abd78c193eb103597aa94f048bd715434e27a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787729"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649650"
 ---
 # <a name="options-dialog-box-visual-studio"></a>選項對話方塊 (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 [選項] 對話方塊可讓您依需求設定整合式的開發環境 (IDE)。 例如，您可以建立專案的預設儲存位置、改變視窗的預設外觀和行為，並建立常用命令的快速鍵。 也有開發語言與平台的專屬選項。 您可以從 [工具] 功能表存取 [選項]。
 
@@ -46,5 +45,5 @@ ms.locfileid: "54787729"
 ### <a name="show-all-settings"></a>顯示所有設定
  選取或取消選取 [顯示所有設定] 適用於所有在 [選項] 對話方塊中進行的變更，即使您還沒按一下 [確定]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [自訂編輯器](../../ide/customizing-the-editor.md)
