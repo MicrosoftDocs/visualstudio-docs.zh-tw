@@ -17,12 +17,12 @@ ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a32606b97e2831c2074c1feeaa71e74c116fdc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 97ce429a7140d7b95393c2dcb8b34491b3adfefa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944361"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118041"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>適用於 VSPackage 開發的 Devenv 命令列參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58944361"
   
  工作包括：  
   
--   在部署應用程式從 IDE 外的預先設計好組態。  
+- 在部署應用程式從 IDE 外的預先設計好組態。  
   
--   自動建置專案使用預設組建設定，或偵錯組態。  
+- 自動建置專案使用預設組建設定，或偵錯組態。  
   
--   在 IDE 外部，全部從載入在特定組態中，IDE。 此外，您可以自訂啟動 IDE。  
+- 在 IDE 外部，全部從載入在特定組態中，IDE。 此外，您可以自訂啟動 IDE。  
   
 ## <a name="guidelines-for-switches"></a>參數的指導方針  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 文件會說明使用者層級 devenv 命令列參數。 如需詳細資訊，請參閱 < [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)。 Devenv 也支援搭配 VSPackage 開發、 部署和偵錯時非常實用的其他命令列參數。  

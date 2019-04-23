@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 385f5c9e03aaeb84cf33c6d76a499b0d1e35d5c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 3c76167468d9eb6fbe93c3bef0c4ae8c15634fc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091601"
 ---
 # <a name="how-to-debug-an-activex-control"></a>HOW TO：對 ActiveX 控制項進行偵錯
 
@@ -40,23 +40,23 @@ ms.locfileid: "54931982"
 
 ## <a name="to-specify-a-container-for-the-debug-session"></a>若要指定此偵錯工作階段的容器
 
-1.  在 [方案總管] 中選取專案。
+1. 在 [方案總管] 中選取專案。
 
-2.  從**檢視**功能表上，選擇**屬性頁**。
+2. 從**檢視**功能表上，選擇**屬性頁**。
 
-3.  在 [專案屬性頁] 對話方塊中，開啟 [組態屬性] 資料夾，並選取 [偵錯]。
+3. 在 [專案屬性頁] 對話方塊中，開啟 [組態屬性] 資料夾，並選取 [偵錯]。
 
-4.  在 [偵錯] 類別下方，找出 [命令] 屬性。
+4. 在 [偵錯] 類別下方，找出 [命令] 屬性。
 
-5.  指定該容器的路徑名稱。 例如，C:\Program Files\Internet Explorer\IEXPLORE.EXE。
+5. 指定該容器的路徑名稱。 例如，C:\Program Files\Internet Explorer\IEXPLORE.EXE。
 
-6.  如果您指定 Internet Explorer 作為容器，而且您正使用 Active Desktop，請在 [命令引數] 方塊中鍵入 `/new`。
+6. 如果您指定 Internet Explorer 作為容器，而且您正使用 Active Desktop，請在 [命令引數] 方塊中鍵入 `/new`。
 
-7.  按一下 [確定 **Deploying Office Solutions**]。
+7. 按一下 [確定] 。
 
      若您未在 [專案屬性頁] 對話方塊中指定容器，您也可以在開始偵錯時指定容器。 當您選取執行命令以開始偵錯時，將會出現[偵錯工作階段的可執行檔對話方塊](../debugger/executable-for-debugging-session-dialog-box.md)。 在對話方塊中指定容器的路徑名稱。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [ActiveX 控制項](/cpp/mfc/activex-controls)
 - [使用測試容器測試屬性和事件](/cpp/mfc/testing-properties-and-events-with-test-container)

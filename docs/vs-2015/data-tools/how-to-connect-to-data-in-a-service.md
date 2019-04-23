@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a13d0c8ff1383e27f9401f6549c422a8fef96e99
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e3361ba51607924ee0bd0701f6f2dddf12334f93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650040"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090377"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>HOW TO：連線至服務中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,20 +43,20 @@ ms.locfileid: "59650040"
   
 ### <a name="to-connect-your-application-to-a-service"></a>若要連接至服務的應用程式  
   
-1.  在 [ **資料** ] 功能表上，請按一下 [ **加入新資料來源**]。  
+1. 在 [ **資料** ] 功能表上，請按一下 [ **加入新資料來源**]。  
   
-2.  選取 [**服務**上**選擇資料來源類型**頁面，然後再按一下**下一步]**。  
+2. 選取 [**服務**上**選擇資料來源類型**頁面，然後再按一下**下一步]**。  
   
-3.  輸入您想要使用，或按一下 服務的位址**Discover**以在目前的方案中，尋找服務，然後按一下**移**。  
+3. 輸入您想要使用，或按一下 服務的位址**Discover**以在目前的方案中，尋找服務，然後按一下**移**。  
   
-4.  （選擇性） 的新**命名空間**可以類型來取代預設的值。  
+4. （選擇性） 的新**命名空間**可以類型來取代預設的值。  
   
     > [!NOTE]
     >  按一下 [**進階**來開啟[設定服務參考對話方塊]](../data-tools/configure-service-reference-dialog-box.md)。  
   
-5.  按一下 **確定**加入服務參考加入專案。  
+5. 按一下 **確定**加入服務參考加入專案。  
   
-6.  按一下 [ **完成**]。  
+6. 按一下 [ **完成**]。  
   
      資料來源隨即新增至 [資料來源] 視窗。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "59650040"
   
 #### <a name="to-add-functionality-to-your-application"></a>加入應用程式的功能  
   
--   選取中的項目**Zdroje dat**視窗並將它拖曳至表單，以建立繫結的控制項。 如需詳細資訊，請參閱 <<c0> [ 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。  
+- 選取中的項目**Zdroje dat**視窗並將它拖曳至表單，以建立繫結的控制項。 如需詳細資訊，請參閱 <<c0> [ 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [將 WPF 控制項繫結至 WCF 資料服務](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   

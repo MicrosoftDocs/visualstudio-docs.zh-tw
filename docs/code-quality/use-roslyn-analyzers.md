@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515333"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080809"
 ---
 # <a name="use-roslyn-analyzers"></a>使用 Roslyn 分析器
 
@@ -108,42 +108,42 @@ A[規則集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是
 
 有多種方式可用來隱藏規則違規：
 
-- 若要隱藏所有目前的違規情形，請選取**分析** > **執行程式碼分析和隱藏作用中問題**功能表列上。 這有時候稱為 「 基準 」。
+- 從**分析**功能表
 
-- 若要隱藏從診斷**方案總管 中**，其嚴重性設為**無**。
+   選取 **分析** > **執行程式碼分析和隱藏作用中問題**在功能表列上隱藏所有目前的違規情形。 這有時候稱為 「 基準 」。
 
-- 若要隱藏的規則集編輯器診斷，取消選取其名稱旁邊的方塊，或設定**動作**要**無**。
+- 從**方案總管**
 
-- 若要隱藏診斷，以從程式碼編輯器，將游標放在一行程式碼的違規和按下**Ctrl**+**。** 若要開啟 **快速動作**功能表。 選取**隱藏 CAxxxx** > **來源中**或是**隱藏 CAxxxx** > **隱藏項目檔**。
+   若要隱藏在違規**方案總管 中**，設定規則的嚴重性**無**。
+
+- 從**規則集編輯器**
+
+   若要隱藏的規則集編輯器的違規，取消選取其名稱旁邊的方塊，或設定**動作**要**無**。
+
+- 從**程式碼編輯器**
+
+   若要隱藏程式碼編輯器中的違規，將游標放在一行程式碼的違規和按下**Ctrl**+**。** 若要開啟 **快速動作**功能表。 選取 **隱藏 CAXXXX** > **來源中/隱藏項目檔**。
 
    ![隱藏診斷的快速動作 功能表](media/suppress-diagnostic-from-editor.png)
 
-- 若要隱藏從診斷**錯誤清單**，請參閱[隱藏錯誤清單的違規](#suppress-violations-from-the-error-list)。
+- 從**錯誤清單**
 
-### <a name="suppress-violations-from-the-error-list"></a>隱藏錯誤清單的違規
+   您可以隱藏來自一或多個診斷**錯誤清單**藉由選取您想要隱藏的項目，然後用滑鼠右鍵按一下並選取**隱藏** > **中 Source/In隱藏項目檔**。
 
-您可以隱藏來自一或多個診斷**錯誤清單**藉由選取您想要隱藏的項目，然後用滑鼠右鍵按一下並選取**隱藏** > **在原始程式檔**或是**隱藏** > **隱藏項目檔**。
+   - 如果要抑制**在原始程式檔**，則**預覽變更** 對話方塊隨即開啟並顯示預覽C# [#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic [#Disable警告](/dotnet/visual-basic/language-reference/directives/directives)指示詞加入至原始程式碼。
 
-- 如果您選取**在原始程式檔**，則**預覽變更** 對話方塊隨即開啟並顯示 C# 的預覽[#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic [#Disable 警告](/dotnet/visual-basic/language-reference/directives/directives)指示詞加入至原始程式碼。
+      ![在程式碼檔案中加入 #pragma 警告的預覽](media/pragma-warning-preview.png)
 
-   ![在程式碼檔案中加入 #pragma 警告的預覽](media/pragma-warning-preview.png)
+   - 如果您選取**檔案中的隱藏項目**，則**預覽變更** 對話方塊隨即開啟並顯示預覽<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>會新增至全域隱藏項目檔案的屬性。
 
-- 如果您選取**檔案中的隱藏項目**，則**預覽變更** 對話方塊隨即開啟並顯示預覽<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>會新增至全域隱藏項目檔案的屬性。
+      ![新增 SuppressMessage 屬性隱藏項目檔案的預覽](media/preview-changes-in-suppression-file.png)
 
-   ![新增 SuppressMessage 屬性隱藏項目檔案的預覽](media/preview-changes-in-suppression-file.png)
+   在 **預覽變更**對話方塊中，選取**套用**。
 
-在 **預覽變更**對話方塊中，選取**套用**。
-
-**錯誤清單**顯示診斷或規則違規，同時從即時程式碼分析，以及建置。 因為組建診斷可能會過期，比方說，如果您已編輯的程式碼來修正此違規情形，但尚未重建，您無法隱藏來自這些診斷**錯誤清單**。 不過，從即時的分析或 IntelliSense、 診斷都一律是最新與目前的來源，而且可以從隱藏**錯誤清單**。 隱藏項目選項已停用，以滑鼠右鍵按一下或內容功能表中，它可能是因為您有一或多個組建診斷您的選取範圍。 若要從您的選取範圍中排除組建診斷，請切換**錯誤清單**來源篩選器，從**組建 + IntelliSense**來**Intellisense 僅**。 然後，選取您想要隱藏並繼續如先前所述的診斷。
-
-![在 Visual Studio 中的錯誤清單來源篩選器](media/error-list-filter.png)
-
-> [!NOTE]
-> 在.NET Core 專案中，如果您加入至專案的 NuGet 分析器參考這些分析器會自動加入至相依專案太。 若要停用此行為，例如，如果相依的專案是單元測試專案，將標示為私用中的 NuGet 套件 *.csproj*或是 *.vbproj*參考專案的檔案：
->
-> ```xml
-> <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
-> ```
+   > [!NOTE]
+   > 如果您沒有看到**抑制**中的功能表選項**方案總管 中**，違規可能來自組建並不是即時的分析。 **錯誤清單**顯示診斷或規則違規，同時從即時程式碼分析，以及建置。 因為組建診斷可能會過期，比方說，如果您已編輯的程式碼來修正此違規情形，但尚未重建，您無法隱藏來自這些診斷**錯誤清單**。 來自即時分析或 IntelliSense、 診斷都一律是最新與目前的來源，並可從隱藏**錯誤清單**。 若要排除*建置*診斷從您的選取範圍中，切換**錯誤清單**來源篩選器，從**組建 + IntelliSense**至**只 Intellisense**. 然後，選取您想要隱藏並繼續如先前所述的診斷。
+   >
+   > ![在 Visual Studio 中的錯誤清單來源篩選器](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>命令列使用方式
 
@@ -169,6 +169,14 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 下圖顯示建置專案，其中包含分析器規則的違規情況的命令列組建輸出：
 
 ![包含違規的 MSBuild 輸出](media/command-line-build-analyzers.png)
+
+## <a name="dependent-projects"></a>相依的專案
+
+在.NET Core 專案中，如果您加入至專案的 NuGet 分析器參考這些分析器會自動加入至相依專案太。 若要停用此行為，例如，如果相依的專案是單元測試專案，將標示為私用中的 NuGet 套件 *.csproj*或是 *.vbproj*檔案參考的專案，藉由設定**PrivateAssets**屬性：
+
+```xml
+<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+```
 
 ## <a name="see-also"></a>另請參閱
 

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0707ec7838ffb2dcebc8a176c79810f2614133
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d5a7ad318b5bd9fac41d5e8835169e4075d1da67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093003"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>從背景執行緒更新 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ ms.locfileid: "58945095"
   
  不過，您必須注意 UML 存放區未具有執行緒安全功能。 下列預防措施十分重要：  
   
--   對模型或圖表進行的每個更新都必須在使用者介面 (UI) 執行緒中進行。 背景執行緒必須使用 <xref:System.Windows.Forms.Control.Invoke%2A> 或 `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A>讓 UI  執行緒執行實際更新。  
+- 對模型或圖表進行的每個更新都必須在使用者介面 (UI) 執行緒中進行。 背景執行緒必須使用 <xref:System.Windows.Forms.Control.Invoke%2A> 或 `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A>讓 UI  執行緒執行實際更新。  
   
--   如果您將一系列的變更群組為單一交易，則建議您防止使用者在進行交易時編輯模型。 否則，使用者所做的任何編輯都將成為相同交易的一部分。 透過顯示強制回應對話方塊，即可防止使用者進行變更。 如果想要的話，您可以在對話方塊中提供 [取消] 按鈕。 使用者可以看到發生的變更。  
+- 如果您將一系列的變更群組為單一交易，則建議您防止使用者在進行交易時編輯模型。 否則，使用者所做的任何編輯都將成為相同交易的一部分。 透過顯示強制回應對話方塊，即可防止使用者進行變更。 如果想要的話，您可以在對話方塊中提供 [取消] 按鈕。 使用者可以看到發生的變更。  
   
 ## <a name="example"></a>範例  
  這個範例使用背景執行緒，以對模型進行數項變更。 對話方塊用來在執行執行緒時排除使用者。 在這個簡單的範例中，未在對話方塊中提供任何 [取消] 按鈕。 不過，加入該功能極為容易。  
@@ -36,17 +36,17 @@ ms.locfileid: "58945095"
   
 2. 請確定專案包含這些組件的參考：  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.[版本]  
+   - Microsoft.VisualStudio.Modeling.Sdk.[版本]  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[版本]  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[版本]  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces  
+   - Microsoft.VisualStudio.Uml.Interfaces  
   
-   -   System.ComponentModel.Composition  
+   - System.ComponentModel.Composition  
   
-   -   System.Windows.Forms  
+   - System.Windows.Forms  
   
 3. 將 Windows 表單名為加入至專案**ProgressForm**。 它應該會顯示一則訊息，而這則訊息指出正在更新。 這不需要有任何其他控制。  
   
@@ -162,9 +162,9 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
 #### <a name="to-allow-the-user-to-cancel-the-thread-in-the-example"></a>允許使用者取消範例中的執行緒  
   
-1.  在 [進度] 對話方塊中加入 [取消] 按鈕。  
+1. 在 [進度] 對話方塊中加入 [取消] 按鈕。  
   
-2.  將下列程式碼加入 [進度] 對話方塊：  
+2. 將下列程式碼加入 [進度] 對話方塊：  
   
      `public event MethodInvoker Cancel;`  
   
@@ -176,7 +176,7 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
      `}`  
   
-3.  在 Execute() 方法中，於建構表單之後插入下列一行：  
+3. 在 Execute() 方法中，於建構表單之後插入下列一行：  
   
      `form.Cancel += delegate() { worker.CancelAsync(); };`  
   

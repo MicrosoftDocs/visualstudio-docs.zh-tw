@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c4847c8b6abf44e1ac68de1f1b9c8cbb0ca0aac7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 597ed598a9d75e35f552b240f7bbfc1dcb0203e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652461"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094868"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>無法擷取資料庫物件的結構描述資訊&lt;物件名稱&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59652461"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   按一下 [確定] 以關閉對話方塊。  
+- 按一下 [確定] 以關閉對話方塊。  
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

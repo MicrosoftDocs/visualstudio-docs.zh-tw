@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b9592605a25c76b4ea17b6efe91363d59585f56e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: dd366f6bc572798e1115991afccb2b39eb8f9f6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091573"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>無法建立關聯&lt;關聯名稱&gt;：屬性已列出兩次
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "59660966"
   
 ### <a name="to-resolve-this-condition"></a>若要解決這種狀況  
   
--   檢查訊息，並記下訊息中指定的屬性。  
+- 檢查訊息，並記下訊息中指定的屬性。  
   
--   按一下 [確定] 來解除訊息方塊。  
+- 按一下 [確定] 來解除訊息方塊。  
   
--   檢查 [關聯屬性]，並移除重複項目。  
+- 檢查 [關聯屬性]，並移除重複項目。  
   
--   按一下 [確定] 。  
+- 按一下 [確定] 。  
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](http://msdn.microsoft.com/library/a57e82d5-f7e4-4894-8add-3d9ba4fce186)   

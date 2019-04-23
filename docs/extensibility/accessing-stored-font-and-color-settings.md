@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66bbab5cf82d4ada241d8e5b3a4213ac51ecffd2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c270c67d21c023310df5b25c015afa754787a33f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093550"
 ---
 # <a name="access-stored-font-and-color-settings"></a>存取預存的字型和色彩設定
 
@@ -29,21 +29,21 @@ Visual Studio 整合式的開發環境 (IDE) 會儲存修改字型和色彩的�
 
 因此，若要起始持續性，VSPackage 必須：
 
--   取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面，藉由呼叫`QueryService`對全域服務提供者。
+- 取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面，藉由呼叫`QueryService`對全域服務提供者。
 
      `QueryService` 必須使用的服務識別碼引數來呼叫`SID_SVsFontAndColorStorage`和 介面識別碼引數的`IID_IVsFontAndColorStorage`。
 
--   使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>方法來開啟 保存使用類別的 GUID 和模式旗標做為引數類別。
+- 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>方法來開啟 保存使用類別的 GUID 和模式旗標做為引數類別。
 
      以指定的模式`fFlags`引數，從中的值建構<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>列舉型別。 此模式可控制：
 
-    -   您可以透過設定<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。
+    - 您可以透過設定<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。
 
-    -   所有的設定或只有這些設定的使用者修改，以及屬於可擷取透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。
+    - 所有的設定或只有這些設定的使用者修改，以及屬於可擷取透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。
 
-    -   「 的傳播變更使用者設定的方式。
+    - 「 的傳播變更使用者設定的方式。
 
-    -   所使用的色彩值的格式。
+    - 所使用的色彩值的格式。
 
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>若要使用的字型和色彩的狀態持續性
 

@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 948cbe88f39b0a39fc23ff8307c3e3484fb9438c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73e2c3f2c9736fd762a9e763827ed641ea5069f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943958"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092119"
 ---
 # <a name="how-to-create-a-product-manifest"></a>HOW TO：建立產品資訊清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ ms.locfileid: "58943958"
   
 #### <a name="to-create-the-product-manifest"></a>若要建立產品資訊清單  
   
-1.  建立啟動載入器套件目錄。 此範例使用 C:\package。  
+1. 建立啟動載入器套件目錄。 此範例使用 C:\package。  
   
-2.  在 Visual Studio 中建立新的 XML 檔案，稱為`product.xml`，並將它儲存到 C:\package 資料夾。  
+2. 在 Visual Studio 中建立新的 XML 檔案，稱為`product.xml`，並將它儲存到 C:\package 資料夾。  
   
-3.  新增下列 XML 來描述封裝的 XML 命名空間與產品程式碼。 產品程式碼取代封裝的唯一識別碼。  
+3. 新增下列 XML 來描述封裝的 XML 命名空間與產品程式碼。 產品程式碼取代封裝的唯一識別碼。  
   
     ```  
     <Product  
@@ -49,7 +49,7 @@ ms.locfileid: "58943958"
     ProductCode="Custom.Bootstrapper.Package">  
     ```  
   
-4.  加入指定的套件具有相依性的 XML。 此範例會使用相依性，Microsoft Windows Installer 3.1。  
+4. 加入指定的套件具有相依性的 XML。 此範例會使用相依性，Microsoft Windows Installer 3.1。  
   
     ```  
     <RelatedProducts>  
@@ -57,7 +57,7 @@ ms.locfileid: "58943958"
       </RelatedProducts>  
     ```  
   
-5.  加入 XML 以列出啟動載入器套件中的所有檔案。 此範例會使用封裝檔案名稱 CorePackage.msi。  
+5. 加入 XML 以列出啟動載入器套件中的所有檔案。 此範例會使用封裝檔案名稱 CorePackage.msi。  
   
     ```  
     <PackageFiles>  
@@ -65,16 +65,16 @@ ms.locfileid: "58943958"
     </PackageFiles>  
     ```  
   
-6.  檔案複製或移動 CorePackage.msi C:\package 資料夾。  
+6. 檔案複製或移動 CorePackage.msi C:\package 資料夾。  
   
-7.  加入 XML 以使用啟動載入器命令安裝套件。 啟動載入器會自動加入 **/qn**到.msi 檔中，將會以無訊息方式安裝的旗標。 如果是.exe 檔案，啟動載入器會使用殼層來執行.exe 檔案。 下列 XML 顯示 CorePackage.msi，沒有引數，但您可以將命令列引數放入引數屬性。  
+7. 加入 XML 以使用啟動載入器命令安裝套件。 啟動載入器會自動加入 **/qn**到.msi 檔中，將會以無訊息方式安裝的旗標。 如果是.exe 檔案，啟動載入器會使用殼層來執行.exe 檔案。 下列 XML 顯示 CorePackage.msi，沒有引數，但您可以將命令列引數放入引數屬性。  
   
     ```  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
-8.  新增下列 XML 來檢查是否已安裝此啟動載入器套件。 產品程式碼取代為可轉散發元件的 GUID。  
+8. 新增下列 XML 來檢查是否已安裝此啟動載入器套件。 產品程式碼取代為可轉散發元件的 GUID。  
   
     ```  
     <InstallChecks>  

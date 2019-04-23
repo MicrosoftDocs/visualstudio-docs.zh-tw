@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c464c63f7e5059e98cb12e4dfed06c60330160b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117651"
 ---
 # <a name="supported-code-changes-c"></a>支援的程式碼變更 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ ms.locfileid: "58945324"
   
  偵錯工作階段期間不能將下列變更套用至 C# 程式碼：  
   
--   變更目前的陳述式或任何其他使用中陳述式。  
+- 變更目前的陳述式或任何其他使用中陳述式。  
   
      使用中陳述式包含了在呼叫堆疊的函式中，為了取得目前陳述式而呼叫的任何陳述式。  
   
      目前的陳述式在來源視窗中會以黃色背景標示。 其他使用中陳述式會以灰色背景標示，而且是唯讀的。 這些預設色彩可以在 [選項] 對話方塊中進行變更。  
   
--   變更類型的簽章。  
+- 變更類型的簽章。  
   
--   加入會擷取之前尚未擷取之變數的匿名方法。  
+- 加入會擷取之前尚未擷取之變數的匿名方法。  
   
--   加入、移除或變更屬性。  
+- 加入、移除或變更屬性。  
   
--   加入、移除或變更 `using` 指示詞。  
+- 加入、移除或變更 `using` 指示詞。  
   
--   在使用中陳述式前後加入 `foreach`、`using` 或 `lock`。  
+- 在使用中陳述式前後加入 `foreach`、`using` 或 `lock`。  
   
 ## <a name="unsafe-code"></a>Unsafe 程式碼  
  變更 Unsafe 程式碼的限制與變更 Safe 程式碼的限制相同，但前者多了下列這一項額外限制：編輯後繼續不支援包含的方法內的 unsafe 程式碼變更`stackalloc`運算子。  
@@ -55,35 +55,35 @@ ms.locfileid: "58945324"
 ## <a name="unsupported-scenarios"></a>不支援的案例  
  [編輯後繼續] 無法用於下列偵錯案例中：  
   
--   在某些情況下偵錯 LINQ 程式碼。 如需詳細資訊，請參閱[偵錯 LINQ](../debugger/debugging-linq.md)。  
+- 在某些情況下偵錯 LINQ 程式碼。 如需詳細資訊，請參閱[偵錯 LINQ](../debugger/debugging-linq.md)。  
   
-    -   擷取之前尚未擷取的變數。  
+    - 擷取之前尚未擷取的變數。  
   
-    -   變更查詢運算式的型別 (例如，選取 a = > 選取 新增 {A =};)  
+    - 變更查詢運算式的型別 (例如，選取 a = > 選取 新增 {A =};)  
   
-    -   移除包含使用中陳述式的 `where`。  
+    - 移除包含使用中陳述式的 `where`。  
   
-    -   移除包含使用中陳述式的 `let`。  
+    - 移除包含使用中陳述式的 `let`。  
   
-    -   移除包含使用中陳述式的 `join`。  
+    - 移除包含使用中陳述式的 `join`。  
   
-    -   移除包含使用中陳述式的 `orderby`。  
+    - 移除包含使用中陳述式的 `orderby`。  
   
--   混合模式 (原生/Managed) 偵錯。  
+- 混合模式 (原生/Managed) 偵錯。  
   
--   SQL 偵錯  
+- SQL 偵錯  
   
--   偵錯 Dr.Watson 傾印。  
+- 偵錯 Dr.Watson 傾印。  
   
--   未處理的例外狀況之後編輯程式碼時 「**回溯呼叫堆疊上未處理例外狀況**「 未選取選項。  
+- 未處理的例外狀況之後編輯程式碼時 「**回溯呼叫堆疊上未處理例外狀況**「 未選取選項。  
   
--   偵錯內嵌的執行階段應用程式。  
+- 偵錯內嵌的執行階段應用程式。  
   
--   偵錯的應用程式**附加至**而不是藉由選擇執行應用程式**開始**從**偵錯**功能表。  
+- 偵錯的應用程式**附加至**而不是藉由選擇執行應用程式**開始**從**偵錯**功能表。  
   
--   偵錯最佳化程式碼  
+- 偵錯最佳化程式碼  
   
--   由於建置錯誤以致新版本建置失敗之後，對舊版程式碼進行偵錯。  
+- 由於建置錯誤以致新版本建置失敗之後，對舊版程式碼進行偵錯。  
   
 ## <a name="see-also"></a>另請參閱  
  [編輯後繼續 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   

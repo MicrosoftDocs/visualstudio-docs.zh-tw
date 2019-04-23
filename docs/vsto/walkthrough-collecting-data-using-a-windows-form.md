@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3e8a5c2cb1e1e58343fa785699ebed4a91ead19
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: efb36d9ee21d5769c7ddd35461e09934b87d5c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629959"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116130"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>逐步解說：藉由使用 Windows Form 收集資料
   本逐步解說示範如何從 Microsoft Office Excel 的文件層級自訂開啟 Windows Form、向使用者收集資訊，以及將該資訊寫入工作表儲存格。
@@ -32,9 +32,9 @@ ms.locfileid: "56629959"
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
 > [!NOTE]
 >  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
@@ -44,7 +44,7 @@ ms.locfileid: "56629959"
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1.  建立名為 **WinFormInput**的 Excel 活頁簿專案，然後選取精靈中的 [建立新文件]  。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 建立名為 **WinFormInput**的 Excel 活頁簿專案，然後選取精靈中的 [建立新文件]  。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 **WinFormInput** 專案加入方案總管 。
 
@@ -52,13 +52,13 @@ ms.locfileid: "56629959"
 
 ### <a name="to-add-a-named-range-to-sheet1"></a>將指定範圍加入 Sheet1
 
-1.  選取 **上的儲存格** A1 `Sheet1`。
+1. 選取 **上的儲存格** A1 `Sheet1`。
 
-2.  在 [名稱]  方塊中，輸入 **formInput**。
+2. 在 [名稱]  方塊中，輸入 **formInput**。
 
      [名稱]  方塊位於工作表 **A** 欄正上方的公式列左側。
 
-3.  按 **Enter** 鍵。
+3. 按 **Enter** 鍵。
 
      <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項會加入儲存格 **A1**。 工作表上不會明顯表示，不過當選取儲存格 **A1** 時， **formInput** 會出現在 [名稱]  方塊 (工作表左上方) 和 [屬性]  視窗中。
 
@@ -107,11 +107,11 @@ ms.locfileid: "56629959"
 
 ### <a name="to-send-information-to-the-worksheet"></a>將資訊傳送至工作表
 
-1.  以滑鼠右鍵按一下方案總管  中的 **GetInputString**，然後按一下 [檢視設計工具] 。
+1. 以滑鼠右鍵按一下方案總管  中的 **GetInputString**，然後按一下 [檢視設計工具] 。
 
-2.  按兩下這個按鈕，開啟已加入按鈕之 <xref:System.Windows.Forms.Control.Click> 事件處理常式的程式碼檔案。
+2. 按兩下這個按鈕，開啟已加入按鈕之 <xref:System.Windows.Forms.Control.Click> 事件處理常式的程式碼檔案。
 
-3.  將程式碼加入事件處理常式，以便從文字方塊取得輸入、將輸入傳送至 `WriteStringToCell`函式，然後關閉表單。
+3. 將程式碼加入事件處理常式，以便從文字方塊取得輸入、將輸入傳送至 `WriteStringToCell`函式，然後關閉表單。
 
      [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]
      [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]
@@ -121,20 +121,20 @@ ms.locfileid: "56629959"
 
 ### <a name="to-test-your-workbook"></a>測試您的活頁簿
 
-1.  按下**F5**執行您的專案。
+1. 按下**F5**執行您的專案。
 
-2.  確認 Windows Form 隨即出現。
+2. 確認 Windows Form 隨即出現。
 
-3.  在文字方塊中輸入 **Hello World** ，然後按一下 [確定] 。
+3. 在文字方塊中輸入 **Hello World** ，然後按一下 [確定] 。
 
-4.  確認 **Hello World** 出現在工作表的儲存格 **A1** 中。
+4. 確認 **Hello World** 出現在工作表的儲存格 **A1** 中。
 
 ## <a name="next-steps"></a>後續步驟
  本逐步解說說明顯示 Windows Form 並將資料傳遞至工作表的基本概念。 您還可以執行下列其他工作：
 
--   使用 Excel 活頁簿或 Word 文件上的 Windows Form 控制項。 如需詳細資訊，請參閱 < [Windows Forms 控制項上 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)。
+- 使用 Excel 活頁簿或 Word 文件上的 Windows Form 控制項。 如需詳細資訊，請參閱 < [Windows Forms 控制項上 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)。
 
--   修改的文件層級自訂或 VSTO 增益集從 Microsoft Office 應用程式的使用者介面。 如需詳細資訊，請參閱 < [Office UI 自訂](../vsto/office-ui-customization.md)。
+- 修改的文件層級自訂或 VSTO 增益集從 Microsoft Office 應用程式的使用者介面。 如需詳細資訊，請參閱 < [Office UI 自訂](../vsto/office-ui-customization.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [開發 Office 方案](../vsto/developing-office-solutions.md)

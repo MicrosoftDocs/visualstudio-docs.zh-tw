@@ -1,6 +1,6 @@
 ---
 title: 依據 CheckId 列出 Managed 程式碼的程式碼分析警告
-ms.date: 11/04/2016
+ms.date: 04/18/2019
 ms.topic: reference
 f1_keywords:
 - CA1000
@@ -160,6 +160,7 @@ f1_keywords:
 - CA2003
 - CA2004
 - CA2006
+- CA2007
 - CA2100
 - CA2101
 - CA2102
@@ -258,12 +259,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72d03c7a9394e760f24023c47a0c7a27881c0cda
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ad553cc46f9681ba5a13437960e77b221d330e36
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909124"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092470"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>依據 checkid 列出 managed 程式碼的程式碼分析警告
 
@@ -271,12 +272,12 @@ ms.locfileid: "55909124"
 
 | CheckId | 警告 | 描述 |
 |---------| - | - |
-| CA1000 | [CA1000:不要在泛型類型上宣告靜態成員](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md) | 呼叫泛型類型的靜態成員時，必須為類型指定型別引數。 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定型別引數。 在上述兩種情況下，指定型別引數的語法不同且容易混淆。 |
+| CA1000 | [CA1000:不要在泛型類型上宣告靜態成員](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md) | 呼叫泛型類型的靜態成員時，必須為類型指定類型引數。 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定型別引數。 在上述兩種情況下，指定型別引數的語法不同且容易混淆。 |
 | CA1001 | [CA1001：具有可處置欄位的類型應該為可處置](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md) | 類別會宣告及實作類型為 System.IDisposable 的執行個體欄位，且該類別不會實作 IDisposable。 宣告 IDisposable 欄位的類別會間接擁有 Unmanaged 資源，且應實作 IDisposable 介面。 |
 | CA1002 | [CA1002:不要公開泛型清單](../code-quality/ca1002-do-not-expose-generic-lists.md) | System.Collections.Generic.List < (的\<(T >) >) 是專為效能而非繼承的泛型集合。 因此，List 不包含任何虛擬成員。 應該改為公開專為繼承所設計的泛型集合。 |
 | CA1003 | [CA1003： 必須使用一般事件處理常式執行個體](../code-quality/ca1003-use-generic-event-handler-instances.md) |型別包含的委派，會傳回 void，其簽章包含兩個參數 （物件的第一個和第二個是指派給 EventArgs 的類型），並且包含組件以 Microsoft.NET Framework 2.0 為目標。 |
 | CA1004 | [CA1004:泛型方法應該提供型別參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md) | 推斷是指如何利用傳遞到泛型方法的引數類型，而不是利用型別引數的明確規格，來決定泛型方法的型別引數。 若要啟用推斷，泛型方法的參數簽章必須包含與方法之型別參數具有相同類型的參數。 在上述情形中，不必指定型別引數。 使用所有類型參數的推斷時，呼叫泛型和非泛型執行個體方法之語法是相同的；這簡化泛型方法的可用性。 |
-| CA1005 | [CA1005:避免在泛型類型上的過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md) | 泛型類型所包含的型別參數越多，就越難了解並記住每個型別參數所代表的含意。 具有一個型別參數，如所示清單通常顯然\<T >，並在某些情況下，有兩個類型參數，如\<TKey，TValue >。 不過，如果存在兩個以上的型別參數，則對大多數使用者而言都會變得難以理解。 |
+| CA1005 | [CA1005:避免在泛型類型上的過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md) | 泛型類型所包含的類型參數越多，就越難了解並記住每個類型參數所代表的含意。 具有一個型別參數，如所示清單通常顯然\<T >，並在某些情況下，有兩個類型參數，如\<TKey，TValue >。 不過，如果存在兩個以上的型別參數，則對大多數使用者而言都會變得難以理解。 |
 | CA1006 | [CA1006:無法建立巢狀成員簽章中的泛型型別](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md) | 巢狀型別引數就是也是泛型類型的型別引數。 若要呼叫其簽章含有巢狀型別引數的成員，則使用者必須具現化 (Instantiate) 一個泛型類型，並將這個類型傳遞給第二個泛型類型的建構函式。 必要程序及語法十分複雜，且應予以避免。 |
 | CA1007 |[CA1007:在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md) | 外部可見的方法包含 System.Object 類型的傳址參數。 使用泛型方法可讓所有類型 (遵守條件約束) 傳遞給方法，而不需要先將類型轉型為傳址參數類型。 |
 | CA1008 | [CA1008:列舉應該使用零值](../code-quality/ca1008-enums-should-have-zero-value.md) | 如同其他實值類型一般，未初始化的列舉其預設值為零。 非旗標屬性的列舉應該要使用零值來定義成員，讓預設值成為列舉的有效值。 如果已套用 FlagsAttribute 屬性的列舉定義零值成員，則其名稱應該是 "None"，以表示列舉中未設定任何值。 |
@@ -311,7 +312,7 @@ ms.locfileid: "55909124"
 | CA1041 | [CA1041:提供 ObsoleteAttribute 訊息](../code-quality/ca1041-provide-obsoleteattribute-message.md) | 類型或成員是使用並未指定其 ObsoleteAttribute.Message 屬性 (Property) 的 System.ObsoleteAttribute 屬性 (Attribute) 來標記。 編譯使用 ObsoleteAttribute 來標記的類型或成員之後，會顯示屬性 (Attribute) 的 Message 屬性 (Property)， 以便提供使用者有關過時類型或成員的資訊。 |
 | CA1043 | [CA1043： 必須使用索引子的整數類或字串引數](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md) | 索引子 (也就是索引的屬性) 應該使用整數類型或字串類型的索引。 這些類型通常會用於資料結構的索引，可以提升程式庫的可用性。 Object 類型的使用應限制於無法在設計階段指定特定整數類型或字串類型的情況。 |
 | CA1044 | [CA1044:屬性不應該為唯寫](../code-quality/ca1044-properties-should-not-be-write-only.md) | 雖然它是可接受並經常需要具有唯讀屬性，設計方針會禁止使用唯寫屬性的屬性。 這是因為讓使用者，設定一個值，然後防止使用者檢視值並不會提供任何安全性。 同時，如果沒有讀取權限，則無法檢視共用物件的狀態，進而限制這些物件的使用性。 |
-| CA1045 |[CA1045:不要參考所傳遞類型](../code-quality/ca1045-do-not-pass-types-by-reference.md) | 以傳址方式傳遞類型時 (使用 out 或 ref)，您需要擁有使用指標的經驗、了解實值類型和參考類型之間的差異，並處理具有多個傳回值的方法。 目標為一般使用者的程式庫架構設計人員不應預期使用者會熟練地運用 out 或 ref 參數。 |
+| CA1045 |[CA1045:不要參考所傳遞類型](../code-quality/ca1045-do-not-pass-types-by-reference.md) | 以傳址方式傳遞類型時 (使用 out 或 ref)，您需要擁有使用指標的經驗、了解實值類型和參考類型之間的差異，並處理具有多個傳回值的方法。 程式庫架構設計人員負責設計的目標為一般使用者不應預期使用者會熟練地運用`out`或`ref`參數。 |
 | CA1046 | [CA1046:不要多載參考類型上的等號比較運算子](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md) | 對參考類型而言，等號比較運算子的預設實作 (Implementation) 永遠都是正確的。 根據預設，只有當兩項參考都指向相同物件時才會相等。 |
 | CA1047 |[CA1047:不要宣告在密封類型中的受保護的成員](../code-quality/ca1047-do-not-declare-protected-members-in-sealed-types.md) | 類型會宣告 protected 成員，如此繼承的類型即可存取或覆寫成員。 根據定義，密封類型無法被繼承，這表示無法呼叫密封類型上的受保護方法。 |
 | CA1048 | [CA1048:不要宣告在密封類型中的虛擬成員](../code-quality/ca1048-do-not-declare-virtual-members-in-sealed-types.md) | 類型會將方法宣告為 virtual，讓繼承類型可以覆寫 virtual 方法的實作。 根據預設，密封類型無法被繼承。 這會讓密封類型上的虛擬方法失去意義。 |
@@ -333,7 +334,7 @@ ms.locfileid: "55909124"
 | CA1064 | [CA1064:例外狀況必須是公用](../code-quality/ca1064-exceptions-should-be-public.md) | 內部例外狀況只會在自己的內部範圍內顯示。 當例外狀況超出內部範圍後，只能使用基本例外狀況來攔截例外狀況。 如果內部例外狀況繼承自<xref:System.Exception>， <xref:System.SystemException>，或<xref:System.ApplicationException>，外部程式碼不會知道該如何處理例外狀況的足夠資訊。 |
 | CA1065 | [CA1065:不會引發非預期的位置中的例外狀況](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 不可擲回例外狀況 (Exception) 的方法卻擲回例外狀況。 |
 | CA1300 | [CA1300:必須指定 MessageBoxOptions](../code-quality/ca1300-specify-messageboxoptions.md) | 若要對使用由右至左讀取順序的文化特性 (Culture) 正確顯示訊息方塊，MessageBoxOptions 列舉類型的 RightAlign 和 RtlReading 成員必須傳遞至 Show 方法。 |
-| CA1301 | [CA1301:避免重複的快速鍵](../code-quality/ca1301-avoid-duplicate-accelerators.md) | 便捷鍵也稱為快速鍵，可讓鍵盤使用 ALT 鍵存取控制項。 當多個控制項具有重複的便捷鍵時，就無法妥善定義便捷鍵的行為。 |
+| CA1301 | [CA1301:避免重複的快速鍵](../code-quality/ca1301-avoid-duplicate-accelerators.md) | 便捷鍵也稱為快速鍵，可讓鍵盤使用 ALT 鍵存取控制項。 當多個控制項有重複的便捷鍵時，存取金鑰的行為並未正確定義。 |
 | CA1302 | [CA1302:請勿地區設定特定的字串](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md) | System.Environment.SpecialFolder 列舉 (Enumeration) 包含參考特殊系統資料夾的成員。 這些資料夾的位置在不同的作業系統上可有不同的值，使用者可以變更某些位置，而且位置會當地語系化。 Environment.GetFolderPath 方法會傳回與 Environment.SpecialFolder 列舉相關聯、已當地語系化且適用於目前執行中之電腦的位置。 |
 | CA1303 | [CA1303:不要將常值傳遞做為當地語系化的參數](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md) | 外部可見的方法傳遞字串常值做為參數的建構函式或方法在.NET Framework 類別庫中，且該字串應該是可當地語系化。 |
 | CA1304 | [CA1304:指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md) | 方法或建構函式會呼叫具有接受 System.Globalization.CultureInfo 參數之多載的成員，且方法或建構函式未呼叫採用 CultureInfo 參數的多載。 未提供 CultureInfo 或 System.IFormatProvider 物件時，多載成員所提供的預設值可能不會有您希望在所有地區設定中都有的效果。 |
@@ -407,7 +408,7 @@ ms.locfileid: "55909124"
 | CA1821 | [CA1821：必須移除空的完成項](../code-quality/ca1821-remove-empty-finalizers.md) | 請盡可能避免使用完成項，因為追蹤物件存留期 (Lifetime) 時將會產生額外的效能負荷。 空白完成項只會增加額外負荷，而沒有任何好處。 |
 | CA1822 |[CA1822:成員標記為 static](../code-quality/ca1822-mark-members-as-static.md) | 不會存取執行個體資料或不會呼叫執行個體方法的成員，可以標記為 static (在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中為 Shared)。 將方法標記為 static 之後，編譯器將對這些成員發出非虛擬呼叫位置。 這麼做可以讓重視效能的程式碼獲得可觀的效能。 |
 | CA1823 | [CA1823:避免未使用的私用欄位](../code-quality/ca1823-avoid-unused-private-fields.md) | 偵測到似乎不能在組件內存取的私用欄位。 |
-| CA1824 |[CA1824:組件必須標記 neutralresourceslanguageattribute](../code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md) | NeutralResourcesLanguage 屬性 (Attribute) 會告知 ResourceManager，用來顯示組件之中性文化特性 (Culture) 資源的語言。 這可改善載入第一個資源的查詢效能，而且可以減少您的工作集。 |
+| CA1824 |[CA1824:組件必須標記 neutralresourceslanguageattribute](../code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md) | NeutralResourcesLanguage 屬性告知資源管理員用來顯示組件的中性文化特性之資源的語言。 這可改善載入第一個資源的查詢效能，而且可以減少您的工作集。 |
 | CA1900 | [CA1900： 實實值類型欄位應該為可移植的](../code-quality/ca1900-value-type-fields-should-be-portable.md) | 這項規則會檢查在 64 位元作業系統上封送處理至 Unmanaged 程式碼時，使用明確配置所宣告的結構是否會正確地對齊。 |
 | CA1901 | [CA1901:P/Invoke 宣告應該為可移植的](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md) | 這項規則會評估每個參數的大小和 P/Invoke 的傳回值，並且在 32 位元和 64 位元作業系統上封送處理至 Unmanaged 程式碼時驗證參數的大小是否正確。 |
 | CA1903 | [CA1903:使用來自目標架構的 API](../code-quality/ca1903-use-only-api-from-targeted-framework.md) | 某一個成員或類型使用的是 Service Pack 中所導入的成員或類型，但是專案的目標 Framework 中卻沒有包含該成員或類型。 |
@@ -417,6 +418,7 @@ ms.locfileid: "55909124"
 | CA2003 |[CA2003:不要將 fiber 視為執行緒](../code-quality/ca2003-do-not-treat-fibers-as-threads.md) | Managed 執行緒已視為 [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] 執行緒。 |
 | CA2004 | [CA2004： 必須移除對 GC 的呼叫。KeepAlive](../code-quality/ca2004-remove-calls-to-gc-keepalive.md) | 如果轉換成 SafeHandle 用法，則會移除對 GC.KeepAlive (物件) 的所有呼叫。 在這種情況下，類別應該不需要呼叫 GC.KeepAlive。 這是假設它們沒有完成項，但會根據 SafeHandle 最終處理其 OS 控制代碼。 |
 | CA2006 | [CA2006:使用 SafeHandle 封裝原生資源](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md) | 在 Managed 程式碼中使用 IntPtr，可能會有潛在的安全性和可靠性問題。 必須檢閱所有使用 IntPtr 的情況，判斷是否需要在該處使用 SafeHandle (或類似技術)。 |
+| CA2007 | [CA2007:不直接等候工作](ca2007-do-not-directly-await-task.md) | 非同步方法[等候](/dotnet/csharp/language-reference/keywords/await)<xref:System.Threading.Tasks.Task>直接。 當非同步方法會等候<xref:System.Threading.Tasks.Task>接續直接發生在相同的執行緒建立的工作。 此行為可能會嚴重降低效能，而且可能會導致鎖死 UI 執行緒。 請考慮呼叫<xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType>來通知您的意圖，接續。 |
 | CA2100 | [CA2100:檢閱 SQL 查詢中的有安全性弱點](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md) | 方法會使用透過字串引數所建置的字串，將 System.Data.IDbCommand.CommandText 屬性設定為方法。 這項規則假設字串引數包含使用者輸入。 從使用者輸入所建置的 SQL 命令字串很容易遭到 SQL 插入 (SQL Injection) 攻擊。 |
 | CA2101 |[CA2101： 必須指定的 P/Invoke 字串引數封送處理](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md) | 平台叫用成員允許部分信任的呼叫端、具有字串參數，並且未明確封送處理字串。 這樣會造成安全性弱點。 |
 | CA2102 | [CA2102:一般處理常式攔截非 CLSCompliant 例外狀況](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md) | 組件中不是使用 RuntimeCompatibilityAttribute 來標記或是以 RuntimeCompatibility(WrapNonExceptionThrows = false) 標記的成員包含處理 System.Exception 的 catch 區塊，同時不包含緊接其後的一般 catch 區塊。 |
@@ -484,7 +486,7 @@ ms.locfileid: "55909124"
 | CA2220 | [CA2220:完成項應該呼叫基底類別完成項](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md) | 最終化必須透過繼承階層架構 (Inheritance Hierarchy) 進行傳播。 若要確保這一點，則類型必須在它們自己的 Finalize 方法中呼叫基底類別 Finalize 方法。 |
 | CA2221 |[CA2221:完成項應該受到保護](../code-quality/ca2221-finalizers-should-be-protected.md) | 完成項必須使用系列存取修飾詞 (Modifier)。 |
 | CA2222 | [CA2222:不要降低繼承的成員的可視性](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md) |您不得變更繼承成員的存取修飾詞 (Modifier)。 將繼承成員變更為私用不會防止呼叫端存取方法的基底類別 (Base Class) 實作。 |
-| CA2223 | [CA2223:成員不應該由多個傳回的型別不同](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md) | 雖然通用語言執行平台允許使用傳回型別區分其他部分都相同的成員，但這個功能不屬於 Common Language Specification，也不是 .NET 程式語言共通的功能。 |
+| CA2223 | [CA2223:成員不應該由多個傳回的型別不同](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md) | 雖然通用語言執行平台允許使用傳回類型區分其他部分都相同的成員，但這個功能不屬於 Common Language Specification，也不是 .NET 程式語言共通的功能。 |
 | CA2224 | [CA2224:覆寫等於多載等號比較運算子](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md) | 公用類型會實作等號比較運算子，但不會覆寫 Object.Equals。 |
 | CA2225 | [CA2225:運算子多載必須有具名的替代項目](../code-quality/ca2225-operator-overloads-have-named-alternates.md) |偵測到運算子多載，且找不到預期的具名替代方法。 具名的替代成員會提供與運算子相同的功能存取，並且可供以不支援多載運算子 (Overloaded Operator) 的語言設計程式的開發人員使用。 |
 | CA2226 | [CA2226:運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md) | 類型實作等號比較運算子或不等比較運算子，但未實作相反的運算子。 |
@@ -496,9 +498,9 @@ ms.locfileid: "55909124"
 | CA2232 | [CA2232:以 STAThread 標記 Windows Form 進入點](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md) | STAThreadAttribute 表示應用程式的 COM 執行緒模型為單一執行緒 Apartment。 在使用 Windows Form 的任何應用程式之進入點上必須有此屬性。如果省略的話，Windows 元件就無法正常運作。 |
 | CA2233 |[CA2233:運算不應該發生溢位](../code-quality/ca2233-operations-should-not-overflow.md) | 您不應該在沒有先驗證運算元的情況下，執行算術運算。 這樣做可確保運算結果不會超過所包含之資料類型的可能值範圍。 |
 | CA2234 | [CA2234： 必須必須傳遞 System.Uri 物件而不是字串](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md) | 呼叫字串參數名稱包含 "uri"、"URI"、"urn"、"URN"、"url" 或 "URL"， 而且此方法的宣告類型會包含具有 System.Uri 參數的對應方法多載。 |
-| CA2235 | [CA2235： 必須標記所有不可序列化的欄位](../code-quality/ca2235-mark-all-non-serializable-fields.md) | 可序列化之類型中所宣告之類型的執行個體 (Instance) 欄位是不可序列化的。 |
+| CA2235 | [CA2235：必須標記所有不可序列化的欄位](../code-quality/ca2235-mark-all-non-serializable-fields.md) | 可序列化之類型中所宣告之類型的執行個體 (Instance) 欄位是不可序列化的。 |
 | CA2236 | [CA2236： 必須ISerializable 類型上呼叫基底類別方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md) | 若要修正此規則的違規情形，請從對應的衍生類型方法或建構函式，呼叫基底類型 GetObjectData 方法或序列化建構函式。 |
-| CA2237 | [CA2237： 必須Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md) | 若要讓通用語言執行平台辨認為可序列化，即使類型透過 ISerializable 介面的實作使用自訂序列化常式，類型仍必須使用 SerializableAttribute 屬性來標記。 |
+| CA2237 | [CA2237：Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md) | 若要讓通用語言執行平台辨認為可序列化，即使類型透過 ISerializable 介面的實作使用自訂序列化常式，類型仍必須使用 SerializableAttribute 屬性來標記。 |
 | CA2238 |[CA2238： 請正確實作序列化方法](../code-quality/ca2238-implement-serialization-methods-correctly.md) | 處理序列化事件的方法沒有正確的簽章、傳回型別或可視性。 |
 | CA2239 | [CA2239： 必須提供選擇性欄位的還原序列化方法](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md) | 類型具有使用 System.Runtime.Serialization.OptionalFieldAttribute 屬性來標記的欄位，而且類型不提供還原序列化事件處理方法。 |
 | CA2240 | [CA2240:必須正確實作 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md) | 若要修正此規則的違規情形，請將 GetObjectData 方法設為可見和可覆寫的，並確定所有執行個體欄位都加入序列化處理序中，或已使用 NonSerializedAttribute 屬性來明確標記。 |

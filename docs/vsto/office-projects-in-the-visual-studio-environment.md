@@ -41,12 +41,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5d3017d293b8288df9b5d7bdbe09fe2e901fa58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865979"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091014"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>在 Visual Studio 環境中的 office 專案
   開發 Microsoft Office 專案的方式與在 Visual Studio 中開發其他類型的專案 (例如 Windows Forms 專案) 類似。 在您建立或開啟 Office 專案時，專案項目會顯示在 [ **方案總管**] 中。 就文件層級專案而言，文件 (亦即 Word 文件或 Excel 活頁簿) 會在 Visual Studio 中開啟，並以如同視覺化設計工具的方式運作。
@@ -73,7 +73,7 @@ ms.locfileid: "54865979"
 ### <a name="temporary-certificates"></a>暫時憑證
  Office 專案也包含名稱為 *專案名稱*_TemporaryKey.pfx 的暫時憑證。 這個憑證是用來簽署開發期間之專案的應用程式和部署資訊清單。 如需詳細資訊，請參閱 <<c0> [ 授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)並[保護 Office 方案](../vsto/securing-office-solutions.md)。
 
-###  <a name="hiddenfiles"></a> 隱藏的專案檔
+### <a name="hiddenfiles"></a> 隱藏的專案檔
  預設會隱藏數個專案檔。 這些檔案是由 Visual Studio 所產生，並且會因專案類型而異。 若要顯示隱藏檔，請按一下 [方案總管]  中的 [顯示所有檔案] 。
 
  請勿修改隱藏專案檔。 不支援直接變更這些檔案，因為這麼做可能會損毀您的專案。 只要在文件中發生某些變更，就會重新產生隱藏專案檔。 如果您手動變更隱藏專案檔，則這些變更會在檔案重新產生時遺失。

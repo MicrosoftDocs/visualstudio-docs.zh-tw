@@ -13,27 +13,27 @@ helpviewer_keywords:
 ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: jillfra
-ms.openlocfilehash: 1ef6984a21099bfad013ef97534d9984fa81d10d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6296993d3a1f5039024556f09b721daa82ca4f53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940761"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089259"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>宣告屬性視窗選取範圍追蹤
 如果您想要使用**屬性** 視窗或**屬性**頁面，例如，表單、 文字或選取範圍，您想要查看屬性，則您必須將完全了解如何的您協調選取項目。 例如，您必須知道您是否擁有單一選取或是多重選取。 接著，您需要宣布 IDE 使用您選取項目類型 （單一或多個）<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>介面。 這個介面會提供所需的資訊**屬性**視窗。  
   
 ### <a name="to-announce-selection-to-the-environment"></a>宣佈環境的選取範圍  
   
-1.  呼叫`QueryInterface`針對<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>。  
+1. 呼叫`QueryInterface`針對<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>。  
   
-    1.  若要這樣做，請使用站台指標建立時傳遞至檢視。  
+    1. 若要這樣做，請使用站台指標建立時傳遞至檢視。  
   
-    2.  呼叫`QueryService`的檢視從`SID_STrackSelection`服務。  
+    2. 呼叫`QueryService`的檢視從`SID_STrackSelection`服務。  
   
          這會傳回的指標<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>。  
   
-2.  呼叫<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>方法，每次變更您的選擇，並將傳遞指標給實作的物件<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>。  
+2. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>方法，每次變更您的選擇，並將傳遞指標給實作的物件<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>。  
   
      選取項目容器物件可以使用單一或多個選取項目，並包含中的選取項目資訊`IDispatch`物件。 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>方法會通知**屬性**選取項目已變更的視窗。 **屬性**接著在使用物件的視窗<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>來判斷是否有發生單一或多個選取項目，以及實際的物件選取項目為何。  
   

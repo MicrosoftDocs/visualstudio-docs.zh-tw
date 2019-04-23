@@ -22,12 +22,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b20120ae4fc5de23c4457002b57ca186e8fe400
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 721f859e93b195340dc181a11bf28850d872ab18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651184"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091508"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>在 Windows Forms 應用程式中篩選和排序資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,14 +41,14 @@ ms.locfileid: "59651184"
   
 ## <a name="to-filter-data-by-using-a-bindingsource-component"></a>若要篩選資料，藉由使用 BindingSource 元件  
   
--   設定<xref:System.Windows.Forms.BindingSource.Filter%2A>屬性設為您想要傳回的運算式。 例如，下列程式碼會傳回客戶及`CompanyName`以"B"開頭的：  
+- 設定<xref:System.Windows.Forms.BindingSource.Filter%2A>屬性設為您想要傳回的運算式。 例如，下列程式碼會傳回客戶及`CompanyName`以"B"開頭的：  
   
      [!code-csharp[VbRaddataDisplaying#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form1.cs#6)]
      [!code-vb[VbRaddataDisplaying#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form1.vb#6)]  
   
 ## <a name="to-sort-data-by-using-a-bindingsource-component"></a>若要使用 BindingSource 元件排序資料  
   
--   設定<xref:System.Windows.Forms.BindingSource.Sort%2A>您想要排序的資料行的屬性。 例如，下列程式碼上排序客戶`CompanyName`資料行以遞減順序：  
+- 設定<xref:System.Windows.Forms.BindingSource.Sort%2A>您想要排序的資料行的屬性。 例如，下列程式碼上排序客戶`CompanyName`資料行以遞減順序：  
   
      [!code-csharp[VbRaddataDisplaying#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDisplaying#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form1.vb#7)]  

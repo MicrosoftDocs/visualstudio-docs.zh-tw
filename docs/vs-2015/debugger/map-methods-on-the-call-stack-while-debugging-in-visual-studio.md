@@ -30,12 +30,12 @@ caps.latest.revision: 43
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2e88cb7ce972ef8568ec5163372e8f0edce045e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5afc30707a2bffdfe6286289e5e93ca9321a4957
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945524"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092951"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ ms.locfileid: "58945524"
 
   如需命令和使用 code map 時，您可以使用的動作的詳細資訊，請參閱 <<c0> [ 瀏覽和重新整理 code map](../modeling/browse-and-rearrange-code-maps.md)。
 
-##  <a name="MapStack"></a> 對應呼叫堆疊
+## <a name="MapStack"></a> 對應呼叫堆疊
 
-1.  開始偵錯。 (鍵盤：**F5**)
+1. 開始偵錯。 (鍵盤：**F5**)
 
-2.  您的應用程式進入中斷模式或是您逐步執行函式之後，請選擇**Code Map**。 (鍵盤：**Ctrl** + **Shift** + **`**)
+2. 您的應用程式進入中斷模式或是您逐步執行函式之後，請選擇**Code Map**。 (鍵盤：**Ctrl** + **Shift** + **`**)
 
      ![選擇 開始對應堆疊呼叫 Code Map](../debugger/media/debuggermap-choosecodemap.png "DebuggerMap_ChooseCodeMap")
 
@@ -68,17 +68,17 @@ ms.locfileid: "58945524"
 
      當您繼續偵錯時，對應會自動更新。 請參閱[以下一個呼叫堆疊更新對應圖](#UpdateMap)。
 
-##  <a name="MakeNotes"></a> 製作程式碼的筆記
+## <a name="MakeNotes"></a> 製作程式碼的筆記
  加入註解以追蹤程式碼中發生的狀況。 若要加入新的一行的註解，請按**Shift + Return**。
 
  ![新增堆疊呼叫 code map 上的註解](../debugger/media/debuggermap-addcomment.png "DebuggerMap_AddComment")
 
-##  <a name="UpdateMap"></a> 以下一個呼叫堆疊更新地圖
+## <a name="UpdateMap"></a> 以下一個呼叫堆疊更新地圖
  執行應用程式到下一個中斷點或逐步執行函式。 對應圖中就會加入新的呼叫堆疊。
 
  ![更新 code map，包含下一個呼叫堆疊](../debugger/media/debuggermap-addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
-##  <a name="AddRelatedCode"></a> 將相關程式碼新增至地圖
+## <a name="AddRelatedCode"></a> 將相關程式碼新增至地圖
  現在您已經有了對應圖，下一步要做什麼？ 如果您是使用 Visual C# .NET 或 Visual Basic .NET，請加入項目 (例如欄位、屬性及其他方法) 以追蹤程式碼中發生的情況。
 
  按兩下某個方法以查看它的程式碼定義，或使用方法的捷徑功能表 (鍵盤：選取的方法，在地圖，然後按**F12**)
@@ -102,7 +102,7 @@ ms.locfileid: "58945524"
 
  ![堆疊呼叫 code map 使用欄位的方法](../debugger/media/debuggermap-foundallreferences.png "DebuggerMap_FoundAllReferences")
 
-##  <a name="FindBugs"></a> 使用地圖尋找 Bug
+## <a name="FindBugs"></a> 使用地圖尋找 Bug
  視覺化程式碼可協助您更快速找到 Bug。 例如，假設您正在調查繪圖程式中的 Bug。 當您繪製一條線並嘗試復原時，卻沒有發生任何動作，直到您繪製另一條線為止。
 
  因此您在 `clear`、`undo` 和 `Repaint` 方法中設定中斷點、開始偵錯，並建置一個如下所示的對應圖：
@@ -115,7 +115,7 @@ ms.locfileid: "58945524"
 
  ![在 code map 上新增新方法的呼叫堆疊](../debugger/media/debuggermap-addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")
 
-##  <a name="QA"></a> 問與答
+## <a name="QA"></a> 問與答
 
 - **並非所有的呼叫會顯示在地圖上。為什麼？**
 
@@ -139,11 +139,11 @@ ms.locfileid: "58945524"
 
    開啟**版面配置**map 工具列上的功能表：
 
-  -   變更預設的版面配置。
+  - 變更預設的版面配置。
 
-  -   若要停止自動重新整理對應，請關閉**偵錯時自動配置**。
+  - 若要停止自動重新整理對應，請關閉**偵錯時自動配置**。
 
-  -   若要新增項目時，重新排列盡可能對應，請關閉**累加配置**。
+  - 若要新增項目時，重新排列盡可能對應，請關閉**累加配置**。
 
 - **可以與其他人共用對應嗎？**
 

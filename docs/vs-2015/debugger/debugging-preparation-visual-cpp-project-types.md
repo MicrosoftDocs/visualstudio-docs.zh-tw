@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 59c7e42e005e423a27adc7676a05ebc03cd068d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4752f9b04723934c0fe9a2cf8a74d4d07e474477
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116195"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>偵錯準備：Visual C++ 專案類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58939681"
   
  請注意，這些專案類型建立 Dll 為輸出均已分組為[偵錯 DLL 專案](../debugger/debugging-dll-projects.md)因為它們共用通用的功能。  
   
-##  <a name="BKMK_In_this_topic"></a>本主題內容  
+## <a name="BKMK_In_this_topic"></a>本主題內容  
  [建議的屬性設定](#BKMK_Recommended_Property_Settings)  
   
  [Win32 專案](#BKMK_Win32_Projects)  
@@ -45,10 +45,10 @@ ms.locfileid: "58939681"
   
   [Windows Forms 應用程式 (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
-##  <a name="BKMK_Recommended_Property_Settings"></a> 建議的屬性設定  
- 在所有 Unmanaged 偵錯情況中，某些屬性必須以相同的方式設定。 下表顯示建議的屬性設定。 此處未列出的設定，可能會因不同的 Unmanaged 專案類型而異。 如需詳細資訊，請參閱[c + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
+## <a name="BKMK_Recommended_Property_Settings"></a> 建議的屬性設定  
+ 在所有 Unmanaged 偵錯情況中，某些屬性必須以相同的方式設定。 下表顯示建議的屬性設定。 此處未列出的設定，可能會因不同的 Unmanaged 專案類型而異。 如需詳細資訊，請參閱 <<c0> [ 的專案設定C++偵錯組態</c0>](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
   
-### <a name="configuration-properties-124-cc-124-optimization-node"></a>組態屬性&#124;C/c + +&#124;最佳化節點  
+### <a name="configuration-properties-124-cc-124-optimization-node"></a>組態屬性&#124;C /C++ &#124;最佳化節點  
   
 |屬性名稱|設定|  
 |-------------------|-------------|  
@@ -62,22 +62,22 @@ ms.locfileid: "58939681"
   
  [本主題內容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Win32_Projects"></a> Win32 專案  
+## <a name="BKMK_Win32_Projects"></a> Win32 專案  
  Win32 應用程式是以 C 或 C++ 撰寫的傳統 Windows 程式。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中可以直接偵錯這種類型的應用程式。  
   
  Win32 應用程式包括 MFC 應用程式和 ATL 專案。 它們會使用 Windows API，也可能會使用 MFC 或 ATL，但是不會使用 Common Language Runtime (CLR)。 但是，它們能呼叫使用 CLR 的 Managed 程式碼。  
   
  下列程序說明在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 內偵錯 Win32 專案的方法。 另一個偵錯 Win32 應用程式的方法，是在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 外部啟動應用程式，然後進行附加。 如需詳細資訊，請參閱 <<c0> [ 附加至執行的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
-###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> 偵錯 C 或 C++ Win32 應用程式  
+### <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> 偵錯 C 或 C++ Win32 應用程式  
   
-1.  在 Visual Studio 中開啟專案。  
+1. 在 Visual Studio 中開啟專案。  
   
-2.  在 [偵錯] 功能表上選擇 [啟動]。  
+2. 在 [偵錯] 功能表上選擇 [啟動]。  
   
-3.  使用所述的技巧進行偵錯[偵錯工具基本概念](../debugger/debugger-basics.md)。  
+3. 使用所述的技巧進行偵錯[偵錯工具基本概念](../debugger/debugger-basics.md)。  
   
-###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> 手動設定偵錯組態  
+### <a name="BKMK_To_manually_set_a_Debug_configuration"></a> 手動設定偵錯組態  
   
 1. 在 [檢視] 功能表上按一下 [屬性頁]。  
   
@@ -95,18 +95,18 @@ ms.locfileid: "58939681"
   
 6. 開啟 [連結器] 節點，並選擇 [偵錯]。 在第一個 [產生] 資料列的下拉清單中，選取 [是 (/DEBUG)]。 進行偵錯時，一律要設定這個選項。  
   
-   如需詳細資訊，請參閱 <<c0> [ c + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
+   如需詳細資訊，請參閱 <<c0> [ 的專案設定C++偵錯組態](../debugger/project-settings-for-a-cpp-debug-configuration.md)。</c0>  
   
    [本主題內容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms 應用程式 (.NET)  
+## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms 應用程式 (.NET)  
  [Windows Forms 應用程式 (.NET)] 範本可以建立 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Windows Forms 應用程式。 如需詳細資訊，請參閱[如何：建立 Windows 應用程式專案](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
   
  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中偵錯這種類型的應用程式，與偵錯 Managed Windows Forms 應用程式類似。  
   
  當您以專案範本建立 Windows Form 專案時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會自動建立偵錯和發行組態所需要的設定。 如果有必要，您可以在 [\<專案名稱> 屬性頁] 對話方塊中變更這些設定。 如需詳細資訊，請參閱[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。  
   
- 如需詳細資訊，請參閱 < [c + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
+ 如需詳細資訊，請參閱 <<c0> [ 的專案設定C++偵錯組態](../debugger/project-settings-for-a-cpp-debug-configuration.md)。</c0>  
   
  偵錯 Windows Forms 應用程式的另一種方法，是在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 外啟動應用程式並且附加於其上。 如需詳細資訊，請參閱[附加至正在執行的程式或多個程式](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   

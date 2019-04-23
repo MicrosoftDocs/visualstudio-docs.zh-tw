@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f090fef8fd4a146cf036ebbb5f8d06b120afb3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6d5bb4be34a6a476e975c240f8a9d99114b870f0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930243"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092912"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>HOW TO：發行具有特定地區設定的專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ms.locfileid: "58930243"
   
 ### <a name="to-create-the-publishing-macro"></a>建立發行巨集  
   
-1.  若要開啟 [巨集總管]，請指向 [工具] 功能表上的 [巨集]，然後按一下 [巨集總管]。  
+1. 若要開啟 [巨集總管]，請指向 [工具] 功能表上的 [巨集]，然後按一下 [巨集總管]。  
   
-2.  建立新的巨集模組。 在 [巨集總管] 中，選取 [MyMacros]。 指向 [工具] 功能表上的 [巨集]，然後按一下 [新增巨集模組]。 將模組命名為 **PublishSpecificCulture**。  
+2. 建立新的巨集模組。 在 [巨集總管] 中，選取 [MyMacros]。 指向 [工具] 功能表上的 [巨集]，然後按一下 [新增巨集模組]。 將模組命名為 **PublishSpecificCulture**。  
   
-3.  在 [巨集總管] 中，展開 [MyMacros] 節點，然後按兩下並開啟 [PublishAllProjects] 模組 (或從 [工具] 功能表指向 [巨集]，然後按一下 [巨集 IDE])。  
+3. 在 [巨集總管] 中，展開 [MyMacros] 節點，然後按兩下並開啟 [PublishAllProjects] 模組 (或從 [工具] 功能表指向 [巨集]，然後按一下 [巨集 IDE])。  
   
-4.  在 [巨集 IDE] 中，將下列程式碼加入至模組中的 `Import` 陳述式後面：  
+4. 在 [巨集 IDE] 中，將下列程式碼加入至模組中的 `Import` 陳述式後面：  
   
     ```vb  
     Module PublishSpecificCulture  
@@ -138,31 +138,31 @@ ms.locfileid: "58930243"
     End Module  
     ```  
   
-5.  關閉 [巨集 IDE]。 焦點將回到 Visual Studio。  
+5. 關閉 [巨集 IDE]。 焦點將回到 Visual Studio。  
   
 ### <a name="to-publish-a-project-for-a-specific-locale"></a>發行特定地區設定的專案  
   
-1.  若要建立 Visual Basic Windows 應用程式專案，請指向 [檔案] 功能表上的 [新增]，然後按一下 [專案]。  
+1. 若要建立 Visual Basic Windows 應用程式專案，請指向 [檔案] 功能表上的 [新增]，然後按一下 [專案]。  
   
-2.  在 [新增專案] 對話方塊中，從 [Visual Basic] 節點選取 [Windows 應用程式]。 將專案命名為 **PublishLocales**。  
+2. 在 [新增專案] 對話方塊中，從 [Visual Basic] 節點選取 [Windows 應用程式]。 將專案命名為 **PublishLocales**。  
   
-3.  按一下 Form1。 在 [設計] 下的 [屬性] 視窗中，將 **Language** 屬性從 [(預設)] 變更為 [英文]。 將表單的 **Text** 屬性變更為 **MyForm**。  
+3. 按一下 Form1。 在 [設計] 下的 [屬性] 視窗中，將 **Language** 屬性從 [(預設)] 變更為 [英文]。 將表單的 **Text** 屬性變更為 **MyForm**。  
   
      請注意，當地語系化資源 DLL 只有在需要時才會建立。 例如，在您指定新的地區設定之後，若變更表單的文字或其中一個控制項，就會建立。  
   
-4.  使用 Visual Studio IDE 發行 PublishLocales。  
+4. 使用 Visual Studio IDE 發行 PublishLocales。  
   
      在 [**方案總管] 中**，選取 PublishLocales。 選取 [專案] 功能表上的 [屬性]。 在 專案設計工具上**發佈**頁面上，指定發行位置為**http://localhost/PublishLocales**，然後按一下 **立即發佈**。  
   
      當發行網頁出現時，將其關閉。 (在這個步驟中，您只需要發行專案，而不需要安裝專案)。  
   
-5.  在 Visual Studio 的 [命令提示字元] 視窗中叫用此巨集，再次發行 PublishLocales。 若要檢視上的 命令提示字元 視窗中，**檢視**功能表上，指向**其他 Windows** ，然後按一下 **命令視窗**，或按 CTRL + ALT + A。 在 [命令提示字元] 視窗中，輸入`macros`; 自動完成會提供一份可用的巨集。 選取下列巨集，然後按 ENTER 鍵：  
+5. 在 Visual Studio 的 [命令提示字元] 視窗中叫用此巨集，再次發行 PublishLocales。 若要檢視上的 命令提示字元 視窗中，**檢視**功能表上，指向**其他 Windows** ，然後按一下 **命令視窗**，或按 CTRL + ALT + A。 在 [命令提示字元] 視窗中，輸入`macros`; 自動完成會提供一份可用的巨集。 選取下列巨集，然後按 ENTER 鍵：  
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   
-6.  當發行程序成功時，將會產生一個訊息，指出：「PublishLocales\PublishLocales.vbproj 發行成功。 發行語言為 'en'」。按一下訊息方塊中的 [確定]。 當發佈網頁出現時，按一下 [安裝]。  
+6. 當發行程序成功時，將會產生一個訊息，指出：「PublishLocales\PublishLocales.vbproj 發行成功。 發行語言為 'en'」。按一下訊息方塊中的 [確定]。 當發佈網頁出現時，按一下 [安裝]。  
   
-7.  查看 C:\Inetpub\wwwroot\PublishLocales\en。 除了當地語系化資源 DLL 以外，您還應該查看安裝的檔案，例如資訊清單、setup.exe 和發行網頁檔案。 (根據預設，ClickOnce 會在 EXE 和 DLL 中附加 .deploy 副檔名，您可以在部署後移除此副檔名)。  
+7. 查看 C:\Inetpub\wwwroot\PublishLocales\en。 除了當地語系化資源 DLL 以外，您還應該查看安裝的檔案，例如資訊清單、setup.exe 和發行網頁檔案。 (根據預設，ClickOnce 會在 EXE 和 DLL 中附加 .deploy 副檔名，您可以在部署後移除此副檔名)。  
   
 ## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   

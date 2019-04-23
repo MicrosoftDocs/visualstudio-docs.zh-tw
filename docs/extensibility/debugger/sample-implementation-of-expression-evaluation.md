@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2afb20f2a337008bc3d3b7fe3dd6aaa5b3f163cf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7b933277a2c509356037e585b7d2256a587c233
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684971"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090537"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>運算式評估的範例實作
 > [!IMPORTANT]
@@ -27,11 +27,11 @@ ms.locfileid: "56684971"
 
  `IDebugExpressionEvaluator::Parse`會執行下列工作：
 
-1.  [只有 c + +]剖析的運算式，若要尋找的錯誤。
+1. [C++只]剖析的運算式，若要尋找的錯誤。
 
-2.  具現化類別 (稱為`CParsedExpression`在此範例中) 執行`IDebugParsedExpression`介面，並儲存在類別中，運算式才能進行剖析。
+2. 具現化類別 (稱為`CParsedExpression`在此範例中) 執行`IDebugParsedExpression`介面，並儲存在類別中，運算式才能進行剖析。
 
-3.  傳回`IDebugParsedExpression`介面從`CParsedExpression`物件。
+3. 傳回`IDebugParsedExpression`介面從`CParsedExpression`物件。
 
 > [!NOTE]
 >  在接下來的範例和 MyCEE 範例中，運算式評估工具不會分開評估剖析。

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eba3f66e55c06efad2a540b1be7d3ad66ddfa3d0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082759"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>將資料儲存在 SharePoint 專案系統的擴充功能
   當您擴充 SharePoint 專案系統時，您可以儲存 SharePoint 專案已關閉之後依然存在的字串資料。 通常與特定專案項目或專案本身相關聯的資料。
@@ -35,9 +35,9 @@ ms.locfileid: "56599671"
 ## <a name="save-data-that-is-associated-with-a-project"></a>儲存與專案相關聯的資料
  當您需要專案層級的資料，例如您新增至 SharePoint 專案的屬性值可以將資料儲存至專案檔 ( *.csproj*檔案或 *.vbproj*檔案) 或專案的 [使用者] 選項檔案 ( *.csproj.user*檔案或 *.vbproj.user*檔案)。 您選擇要儲存資料的檔案取決於您想要使用的資料的方式：
 
--   如果您想要所有的開發人員開啟 SharePoint 專案可用的資料，請將資料儲存到專案檔。 此檔案會一律簽入原始檔控制資料庫，讓此檔案中的資料可供其他開發人員簽出專案。
+- 如果您想要所有的開發人員開啟 SharePoint 專案可用的資料，請將資料儲存到專案檔。 此檔案會一律簽入原始檔控制資料庫，讓此檔案中的資料可供其他開發人員簽出專案。
 
--   如果您想要只提供給目前的開發人員在 Visual Studio 中開啟 SharePoint 專案的資料，請將資料儲存到專案使用者選項檔。 這個檔案是未通常簽入原始檔控制資料庫，因此這個檔案中的資料就無法使用其他開發人員簽出專案。
+- 如果您想要只提供給目前的開發人員在 Visual Studio 中開啟 SharePoint 專案的資料，請將資料儲存到專案使用者選項檔。 這個檔案是未通常簽入原始檔控制資料庫，因此這個檔案中的資料就無法使用其他開發人員簽出專案。
 
 ### <a name="save-data-to-the-project-file"></a>將資料儲存到專案檔
  若要將資料儲存到專案檔中，將轉換<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>物件至<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>物件，並接著使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>方法。 下列程式碼範例示範如何使用這個方法來儲存專案檔案的專案屬性的值。 若要查看這個內容中的較大範例的範例，請參閱[How to:將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。

@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 520113d97bdf41d750cad340c0ab8868eb85f603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116390"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>從 Visual Studio 部署 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "58946020"
 
 - 部署應用程式，以另一個應用程式或另一種方法啟動該應用程式時，對其進行偵錯。
 
-##  <a name="BKMK_In_this_topic"></a> 本主題內容
+## <a name="BKMK_In_this_topic"></a> 本主題內容
  在本主題中，您可以了解：
 
  [如何部署 Windows 市集應用程式](#BKMK_How_to_deploy_a_Windows_Store_app)
@@ -49,25 +49,25 @@ ms.locfileid: "58946020"
 
  [部署選項](#BKMK_Deployment_options)
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> 如何部署 Windows 市集應用程式
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> 如何部署 Windows 市集應用程式
  手動部署應用程式是一個簡單的流程：
 
-1.  如果您部署至遠端裝置，請在應用程式啟始專案的屬性專案頁面中指定裝置的名稱或 IP 位址。 (本主題會進一步列出這項作業的步驟)。
+1. 如果您部署至遠端裝置，請在應用程式啟始專案的屬性專案頁面中指定裝置的名稱或 IP 位址。 (本主題會進一步列出這項作業的步驟)。
 
-2.  在偵錯工具 Visual Studio 工具列上，從 [開始偵錯]  按鈕旁邊的下拉式清單中選擇部署目標。
+2. 在偵錯工具 Visual Studio 工具列上，從 [開始偵錯]  按鈕旁邊的下拉式清單中選擇部署目標。
 
      ![在本機電腦上執行](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")
 
-3.  在 [建置]  功能表上，選擇 [部署] 
+3. 在 [建置]  功能表上，選擇 [部署] 
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> 如何指定遠端裝置
+## <a name="BKMK_How_to_specify_a_remote_device"></a> 如何指定遠端裝置
  **必要條件**
 
  將應用程式部署至遠端裝置：
 
--   遠端裝置上必須安裝開發人員授權。
+- 遠端裝置上必須安裝開發人員授權。
 
--   Visual Studio 遠端工具必須安裝在遠端裝置上，而且遠端偵錯監視必須正在執行。
+- Visual Studio 遠端工具必須安裝在遠端裝置上，而且遠端偵錯監視必須正在執行。
 
      部署使用遠端偵錯工具網路通道，將應用程式檔案傳送至遠端裝置。
 
@@ -101,7 +101,7 @@ ms.locfileid: "58946020"
 
 8. 在 [ **遠端電腦** ] 方塊中輸入遠端裝置的網路名稱，或按一下 [ **尋找** ]，從 [ **選取遠端偵錯工具連接** ] 對話方塊選擇裝置。
 
-##  <a name="BKMK_Deployment_options"></a> 部署選項
+## <a name="BKMK_Deployment_options"></a> 部署選項
  您可以在啟始專案的 [偵錯] 屬性頁上設定下列部署選項。
 
  **允許網路 Loopback**基於安全性理由，[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]以標準方式安裝應用程式不允許進行到其安裝所在裝置的網路呼叫。 根據預設，Visual Studio 部署會針對部署應用程式建立此規則的豁免。 此豁免可讓您測試在單一機器上的通訊程序。 在將您的應用程式提交至 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]之前，您應該在沒有豁免的情況下測試您的應用程式。
@@ -112,7 +112,7 @@ ms.locfileid: "58946020"
 
 - 在 [JavaScript 偵錯] 屬性頁上，將 [允許網路回送]  值設定為 [否] 。
 
-  **不啟動，但啟動時，將我的程式碼進行偵錯 (C#和 VB) / 啟動應用程式 （JavaScript 和 c + +）** 來設定為自動啟動應用程式啟動時的偵錯工作階段的部署：
+  **不啟動，但啟動時，將我的程式碼進行偵錯 (C#和 VB) / 啟動應用程式 (JavaScript 和C++)** 來設定為自動啟動應用程式啟動時的偵錯工作階段的部署：
 
 - 在 [C# 和 VB 偵錯] 屬性頁上，核取 [不啟動，但在我的程式碼啟動時進行偵錯]  核取方塊。
 

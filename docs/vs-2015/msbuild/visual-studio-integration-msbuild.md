@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649260"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117495"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,20 +69,20 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>同處理序編譯器  
  如果可能，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會嘗試使用同處理序 (In-Process) 版本的 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 編譯器來提升效能  (不適用 [!INCLUDE[csprcs](../includes/csprcs-md.md)])。若要讓這種編譯器能夠正常運作，必須符合下列條件：  
   
--   專案的目標中必須有一個名為 `Vbc` 的工作供 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案使用。  
+- 專案的目標中必須有一個名為 `Vbc` 的工作供 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 專案使用。  
   
--   這個工作的 `UseHostCompilerIfAvailable` 參數必須設定為 true。  
+- 這個工作的 `UseHostCompilerIfAvailable` 參數必須設定為 true。  
   
 ## <a name="design-time-intellisense"></a>設計階段 IntelliSense  
  若要在組建產生輸出組件之前取得 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的 IntelliSense 支援，必須符合下列條件：  
   
--   必須要有一個名為 `Compile`的目標。  
+- 必須要有一個名為 `Compile`的目標。  
   
--   `Compile` 目標或此目標的其中一個相依性必須呼叫專案的編譯器工作，例如 `Csc` 或 `Vbc`。  
+- `Compile` 目標或此目標的其中一個相依性必須呼叫專案的編譯器工作，例如 `Csc` 或 `Vbc`。  
   
--   `Compile` 目標或此目標的其中一個相依性必須讓編譯器接收 IntelliSense 的所有必要參數，特別是所有參考。  
+- `Compile` 目標或此目標的其中一個相依性必須讓編譯器接收 IntelliSense 的所有必要參數，特別是所有參考。  
   
--   必須符合＜同處理序編譯器＞一節中所列的條件。  
+- 必須符合＜同處理序編譯器＞一節中所列的條件。  
   
 ## <a name="building-solutions"></a>建置方案  
  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，方案檔和專案建置順序是由 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 本身來控制。 在命令列中使用 msbuild.exe 建置方案時，則是由 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 來剖析方案檔以及排列專案建置的順序。 在這兩種情況下都會依據相依性順序個別建置專案，而且不會走訪專案對專案間的參考。 相反地，使用 msbuild.exe 建置個別專案時，則會走訪專案對專案間的參考。  
@@ -127,22 +127,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>設計階段目標執行  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 在載入專案時，會嘗試執行具有特定名稱的目標， 這些目標包括 `Compile`、`ResolveAssemblyReferences`、`ResolveCOMReferences`、`GetFrameworkPaths` 與 `CopyRunEnvironmentFiles`。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會執行這些目標，以便能初始化編譯器以提供 IntelliSense、初始化偵錯工具，以及解析顯示在 [方案總管] 中的參考。 如果沒有這些目標，專案仍然可以正常載入和建置，但是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的設計階段功能將無法全部正常運作。  
   
-##  <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
+## <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
  若要直接編輯 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案，可以在 Visual Studio XML 編輯器中開啟專案檔。  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>若要在 Visual Studio 中卸載和編輯專案檔  
   
-1.  在 [ **方案總管**] 中，開啟專案的捷徑功能表，然後選擇 [ **卸載專案**]。  
+1. 在 [ **方案總管**] 中，開啟專案的捷徑功能表，然後選擇 [ **卸載專案**]。  
   
      專案便會標記為 [ **(無法使用)**]。  
   
-2.  在方案總管中，開啟無法使用之專案的捷徑功能表，然後選擇 [編輯 \<專案檔>]。  
+2. 在方案總管中，開啟無法使用之專案的捷徑功能表，然後選擇 [編輯 \<專案檔>]。  
   
      專案檔隨即在 [Visual Studio XML 編輯器] 中開啟。  
   
-3.  編輯、儲存，然後關閉專案檔。  
+3. 編輯、儲存，然後關閉專案檔。  
   
-4.  在 [ **方案總管**] 中，開啟無法使用之專案的捷徑功能表，然後選擇 [ **重新載入專案**]。  
+4. 在 [ **方案總管**] 中，開啟無法使用之專案的捷徑功能表，然後選擇 [ **重新載入專案**]。  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense 和驗證  
  使用 XML 編輯器編輯專案檔時，IntelliSense 和驗證是由 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 結構描述檔驅動。 這些都會安裝在結構描述快取中，可以到 *\<Visual Studio 安裝目錄>* \Xml\Schemas\1033\MSBuild 中找到。  
@@ -158,21 +158,21 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>參考解析  
  參考解析是使用儲存於專案檔中參考項目以找到實際組件的程序。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 必須觸發參考解析，才能夠在 [屬性] 視窗中顯示每一個參考的屬性。 下列清單會說明三種參考類型及其解析方式。  
   
--   組件參考：  
+- 組件參考：  
   
      專案系統使用已知名稱 `ResolveAssemblyReferences`呼叫目標。 這個目標應該以項目類型名稱 `ReferencePath`來產生項目。 每一個產生的項目都會包含完整參考路徑的項目規格 (即項目的 `Include` 屬性值)。 除了下列這些新的中繼資料以外，項目應該傳遞輸入項目中的所有中繼資料：  
   
-    -   `CopyLocal`，指出是否要將組件複製到輸出資料夾中，可設定為 true 或 false。  
+    - `CopyLocal`，指出是否要將組件複製到輸出資料夾中，可設定為 true 或 false。  
   
-    -   `OriginalItemSpec`，包含參考的原始項目規格。  
+    - `OriginalItemSpec`，包含參考的原始項目規格。  
   
-    -   `ResolvedFrom`，如果是從 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 目錄解析，則設定為 "{TargetFrameworkDirectory}"。  
+    - `ResolvedFrom`，如果是從 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 目錄解析，則設定為 "{TargetFrameworkDirectory}"。  
   
--   COM 參考：  
+- COM 參考：  
   
      專案系統使用已知名稱 `ResolveCOMReferences`呼叫目標。 這個目標應該以項目類型名稱 `ComReferenceWrappers`來產生項目。 對於 COM 參考而言，每一個項目都應該有包含完整 Interop 組件路徑的項目規格。 除了名稱為 `CopyLocal`的新的中繼資料 (指出是否要將組件複製到輸出資料夾中，可設定為 true 或 false) 以外，項目應該傳遞輸入項目中的所有中繼資料。  
   
--   原生參考：  
+- 原生參考：  
   
      專案系統使用已知名稱 `ResolveNativeReferences`呼叫目標。 這個目標應該以項目類型名稱 `NativeReferenceFile`來產生項目。 除了名為 `OriginalItemSpec`的新的中繼資料 (包含參考的原始項目規格) 以外，項目應該傳遞輸入項目中的所有中繼資料。  
   

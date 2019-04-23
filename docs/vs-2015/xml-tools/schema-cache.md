@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648961"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115987"
 ---
 # <a name="schema-cache"></a>結構描述快取
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,21 +109,21 @@ XML 編輯器提供位於 %InstallRoot%\Xml\Schemas 目錄中的結構描述快�
 
 #### <a name="to-change-the-schema-cache-location"></a>變更結構描述快取位置  
 
-1.  從**工具**功能表上，選取**選項**。  
+1. 從**工具**功能表上，選取**選項**。  
 
-2.  依序展開**文字編輯器**，展開**XML**，然後按一下**其他**。  
+2. 依序展開**文字編輯器**，展開**XML**，然後按一下**其他**。  
 
-3.  按一下 **瀏覽**按鈕**結構描述**欄位。  
+3. 按一下 **瀏覽**按鈕**結構描述**欄位。  
 
-4.  選取結構描述快取的資料夾，然後按一下**確定**。  
+4. 選取結構描述快取的資料夾，然後按一下**確定**。  
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>加入通用結構描述的其他目錄  
 
-1.  編輯 XML 編輯器結構描述快取目錄中的 catalog.xml 檔。  
+1. 編輯 XML 編輯器結構描述快取目錄中的 catalog.xml 檔。  
 
-2.  加入指向其他結構描述目錄的新 `<Catalog href="…"/>` 項目。  
+2. 加入指向其他結構描述目錄的新 `<Catalog href="…"/>` 項目。  
 
-3.  儲存您的變更。  
+3. 儲存您的變更。  
 
      目錄會自動重新載入。  
 

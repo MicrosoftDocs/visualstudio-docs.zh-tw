@@ -1,55 +1,48 @@
-items:
 - name: JavaScript 和 TypeScript
   href: index.yml
 - name: 總覽
   items:
-  - name: Visual Studio 2019 中的 JavaScript 2019
-    href: javascript-in-vs-2019.md
-  - name: Visual Studio 2017 中的 JavaScript
-    href: javascript-in-vs-2017.md
+    - name: Visual Studio 2019 中的 JavaScript 2019
+      href: javascript-in-vs-2019.md
+    - name: Visual Studio 2017 中的 JavaScript
+      href: javascript-in-vs-2017.md
 - name: 快速入門
   items:
-  - name: Visual Studio 整合式開發環境 (IDE) 初探
-    href: quickstart-ide-orientation-js.md
-  - name: 建立 Node.js 專案
-    href: /visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json
-  - name: 建立 Vue.js 專案
-    href: quickstart-vuejs-with-nodejs.md
+    - name: Visual Studio 整合式開發環境 (IDE) 初探
+      href: quickstart-ide-orientation-js.md
+    - name: 建立 Node.js 專案
+      href: /visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json
+    - name: 建立 Vue.js 專案
+      href: quickstart-vuejs-with-nodejs.md
 - name: 教學課程
   items:
-  - name: 使用 Express 建立 Node.js 應用程式
-    href: tutorial-nodejs.md
-  - name: 使用 React 建立 Node.js 應用程式
-    href: tutorial-nodejs-with-react-and-jsx.md
-  - name: 將 Node.js 應用程式發佈到 Linux App Service
-    href: publish-nodejs-app-azure.md
+    - name: 使用 Express 建立 Node.js 應用程式
+      href: tutorial-nodejs.md
+    - name: 使用 React 建立 Node.js 應用程式
+      href: tutorial-nodejs-with-react-and-jsx.md
+    - name: 將 Node.js 應用程式發佈到 Linux App Service
+      href: publish-nodejs-app-azure.md
 - name: 作法指南
   items:
-  - name: 撰寫和編輯程式碼
-    href: write-and-edit-code.md
-  - name: 建立 Vue.js 應用程式
-    href: create-application-with-vuejs.md
-  - name: 管理 npm 套件
-    href: npm-package-management.md
-  - name: 不使用專案或解決方案 ([開啟資料夾]) 進行開發
-    href: develop-javascript-code-without-solutions-projects.md
-  - name: 使用 Node.js 互動式 REPL
-    href: nodejs-interactive-repl.md
-  - name: JavaScript IntelliSense
-    href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
-  - name: 對 JavaScript 應用程式進行偵錯
-    href: debug-nodejs.md
-  - name: 對 JavaScript 進行單元測試
-    href: unit-testing-javascript-with-visual-studio.md
+    - name: 撰寫和編輯程式碼
+      href: write-and-edit-code.md
+    - name: 建立 Vue.js 應用程式
+      href: create-application-with-vuejs.md
+    - name: 管理 npm 套件
+      href: npm-package-management.md
+    - name: '不使用專案或解決方案 ([開啟資料夾]) 進行開發'
+      href: develop-javascript-code-without-solutions-projects.md
+    - name: 使用 Node.js 互動式 REPL
+      href: nodejs-interactive-repl.md
+    - name: JavaScript IntelliSense
+      href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
+    - name: 對 JavaScript 應用程式進行偵錯
+      href: debug-nodejs.md
+    - name: 對 JavaScript 進行單元測試
+      href: unit-testing-javascript-with-visual-studio.md
 - name: 資源
   items:
-  - name: package.json 組態
-    href: configure-packages-with-package-json.md
-  - name: JavaScript 和 TypeScript 的 Wiki 文件
-    href: https://github.com/Microsoft/nodejstools/wiki
-ms.openlocfilehash: 9f6b674bf7c3f278e6fe925667fe74180462cac6
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58788765"
+    - name: package.json 組態
+      href: configure-packages-with-package-json.md
+    - name: JavaScript 和 TypeScript 的 Wiki 文件
+      href: 'https://github.com/Microsoft/nodejstools/wiki'
