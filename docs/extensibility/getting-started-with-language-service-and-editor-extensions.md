@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6002ed1748a5848e43628c88ec0395a0d4053ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 829ceea8f4acf0f884e3345e05053d368489d9ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712017"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049018"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>語言服務及編輯器擴充功能入門
 若要將語言服務功能，例如大綱、 括號對稱、 IntelliSense 和燈泡，加入您自己的程式設計語言或任何內容類型，您可以使用編輯器延伸模組。 您也可以自訂的外觀和行為的 Visual Studio 編輯器，例如色彩標示、 邊界、 裝飾和其他視覺元素的文字。 您也可以定義您自己的內容的類型，並指定的外觀和行為，您的內容會出現的文字檢視。
@@ -82,9 +82,9 @@ ms.locfileid: "56712017"
 
  您也可以建立編輯器的 MEF 元件從 Visual Studio 封裝擴充功能。 下列逐步解說，如需詳細資訊，請參閱：
 
--   [逐步解說：搭配編輯器擴充功能使用 shell 命令](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
+- [逐步解說：搭配編輯器擴充功能使用 shell 命令](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
 
--   [逐步解說：編輯器擴充功能搭配使用攠摝坫](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
+- [逐步解說：編輯器擴充功能搭配使用攠摝坫](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
 
 ## <a name="see-also"></a>另請參閱
 - [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

@@ -12,12 +12,12 @@ ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 10e5b03f2a9c275de3ac3d8259582aee771a20f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7344bc5b830de07a72a86537af6839ab0993518a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044456"
 ---
 # <a name="getting-local-values"></a>取得區域變數值
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "58943447"
   
  這個實作`IDebugProperty2::GetPropertyInfo`會執行下列工作：  
   
-1.  取得區域的名稱、 屬性和屬性從[FIELD_INFO](../../extensibility/debugger/reference/field-info.md)填入時已具現化這個類別，並將其初始化的結構。  
+1. 取得區域的名稱、 屬性和屬性從[FIELD_INFO](../../extensibility/debugger/reference/field-info.md)填入時已具現化這個類別，並將其初始化的結構。  
   
-2.  取得從本機的型別[IDebugField](../../extensibility/debugger/reference/idebugfield.md)物件。  
+2. 取得從本機的型別[IDebugField](../../extensibility/debugger/reference/idebugfield.md)物件。  
   
-3.  取得本機值`IDebugField`物件。 此欄位繫結至本機使用的記憶體位置[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)物件和值取自產生[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件。  
+3. 取得本機值`IDebugField`物件。 此欄位繫結至本機使用的記憶體位置[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)物件和值取自產生[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件。  
   
-4.  傳回所有要求中的屬性[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)結構。  
+4. 傳回所有要求中的屬性[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)結構。  
   
 ## <a name="managed-code"></a>Managed 程式碼  
  此範例示範如何實作`IDebugProperty2::GetPropertyInfo`方法的 managed 程式碼中的本機。 它也會顯示協助程式函式， `Field.GetType`，也就是用來取得欄位的類型。 `Field.GetValue` 所示[評估區域變數](../../extensibility/debugger/evaluating-locals.md)。 Helper 函式`Field.MapModifiersToAttributes`（未顯示） 只需將轉換的欄位[FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md)旗標，用於[DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md)值。  

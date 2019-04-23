@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0ee2059c6a2bc1c5456cc949cf05b921c874cd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049304"
 ---
 # <a name="supplying-undo-support-to-designers"></a>為設計工具提供復原支援
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ ms.locfileid: "58930621"
 ## <a name="obtaining-undo-support-automatically"></a>自動取得復原支援  
  任何的設計工具中建立[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]已自動和完全復原支援 if、 設計工具：  
   
--   利用<xref:System.Windows.Forms.Control>型使用者介面的類別。  
+- 利用<xref:System.Windows.Forms.Control>型使用者介面的類別。  
   
--   程式碼產生和持續性，會採用標準的 CodeDOM 程式碼產生和剖析的系統。  
+- 程式碼產生和持續性，會採用標準的 CodeDOM 程式碼產生和剖析的系統。  
   
      如需有關使用 Visual Studio CodeDOM 支援的詳細資訊，請參閱[動態原始程式碼的產生和編譯](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
@@ -80,15 +80,15 @@ ms.locfileid: "58930621"
   
 - 這<xref:System.IServiceProvider>類別必須提供下列服務：  
   
-  -   <xref:System.ComponentModel.Design.IDesignerHost>.  
+  - <xref:System.ComponentModel.Design.IDesignerHost>.  
   
-  -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
        使用設計工具[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]CodeDOM 序列化可能會選擇使用<xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>隨附[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]的實作<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>。  
   
        在此情況下，<xref:System.IServiceProvider>類別提供給<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>建構函式的實作應該傳回這個物件<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>類別。  
   
-  -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  - <xref:System.ComponentModel.Design.IComponentChangeService>  
   
        使用預設的設計工具<xref:System.ComponentModel.Design.DesignSurface>所提供[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]設計主應用程式一定會有的預設實作<xref:System.ComponentModel.Design.IComponentChangeService>類別。  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8962dd95aa46ae75a2d214738e7713ae9da42534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045794"
 ---
 # <a name="remove-parameters-refactoring-c"></a>移除參數重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58941957"
   
 ### <a name="to-remove-parameters"></a>若要移除參數  
   
-1.  建立名為主控台應用程式`RemoveParameters`，然後取代`Program`為下列程式碼。  
+1. 建立名為主控台應用程式`RemoveParameters`，然後取代`Program`為下列程式碼。  
   
     ```csharp  
     class A  
@@ -55,19 +55,19 @@ ms.locfileid: "58941957"
     }  
     ```  
   
-2.  將游標放在方法上`A`，方法宣告或方法呼叫。  
+2. 將游標放在方法上`A`，方法宣告或方法呼叫。  
   
-3.  從**重構**功能表上，選取**移除參數**以顯示**移除參數** 對話方塊。  
+3. 從**重構**功能表上，選取**移除參數**以顯示**移除參數** 對話方塊。  
   
      您也可以輸入鍵盤快速鍵 CTRL + R、 V 以顯示**移除參數** 對話方塊。  
   
      您也可以以滑鼠右鍵按一下資料指標，指向**重構**，然後按一下**移除參數**以顯示**移除參數** 對話方塊。  
   
-4.  使用**參數**欄位中，將游標放在`int i`，然後按一下**移除**。  
+4. 使用**參數**欄位中，將游標放在`int i`，然後按一下**移除**。  
   
-5.  按一下 [確定 **Deploying Office Solutions**]。  
+5. 按一下 [確定] 。  
   
-6.  在 [**預覽變更--移除參數**] 對話方塊中，按一下**套用**。  
+6. 在 [**預覽變更--移除參數**] 對話方塊中，按一下**套用**。  
   
 ## <a name="remarks"></a>備註  
  您可以從方法宣告或方法呼叫，以移除參數。 將游標放在方法宣告或委派的名稱，然後叫用移除參數。  

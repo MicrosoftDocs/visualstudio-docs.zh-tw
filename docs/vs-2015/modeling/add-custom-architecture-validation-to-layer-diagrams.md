@@ -11,12 +11,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6cf1dad590a8d7632e9077764e85f432373cc54b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045875"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>在分層圖中加入自訂架構驗證
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "58945117"
    >  Makethe 範本正常運作：  
    > 
    > - 編輯對 `LogValidationError` 的呼叫，移除選擇性引數 `errorSourceNodes` 和 `errorTargetNodes`。  
-   >   -   如果您使用自訂屬性，套用更新中所述[將自訂屬性加入分層圖](../modeling/add-custom-properties-to-layer-diagrams.md)。  
+   >   - 如果您使用自訂屬性，套用更新中所述[將自訂屬性加入分層圖](../modeling/add-custom-properties-to-layer-diagrams.md)。  
   
 3. 編輯程式碼以定義您的驗證。 如需詳細資訊，請參閱 [程式設計驗證](#programming)。  
   
@@ -67,19 +67,19 @@ ms.locfileid: "58945117"
   
 #### <a name="to-add-layer-validation-to-a-separate-vsix"></a>將圖層驗證加入個別的 VSIX  
   
-1.  在新的或現有的 Visual Studio 方案中建立類別庫專案。 在 [新增專案]  對話方塊中，按一下 [Visual C#]  ，然後按一下 [類別庫] 。 這個專案會包含圖層驗證類別。  
+1. 在新的或現有的 Visual Studio 方案中建立類別庫專案。 在 [新增專案]  對話方塊中，按一下 [Visual C#]  ，然後按一下 [類別庫] 。 這個專案會包含圖層驗證類別。  
   
-2.  在您的方案中識別或建立 VSIX 專案。 VSIX 專案會包含名為 **source.extension.vsixmanifest**的檔案。 如果您必須加入 VSIX 專案，請遵循下列步驟：  
+2. 在您的方案中識別或建立 VSIX 專案。 VSIX 專案會包含名為 **source.extension.vsixmanifest**的檔案。 如果您必須加入 VSIX 專案，請遵循下列步驟：  
   
-    1.  在 [新增專案]  對話方塊中，依序選擇 [Visual C#] 、[擴充性] 、[VSIX 專案] 。  
+    1. 在 [新增專案]  對話方塊中，依序選擇 [Visual C#] 、[擴充性] 、[VSIX 專案] 。  
   
-    2.  在 [方案總管] 中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。  
+    2. 在 [方案總管] 中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。  
   
-3.  在 **source.extension.vsixmanifest**的 [資產] 下，加入圖層驗證專案做為 MEF 元件：  
+3. 在 **source.extension.vsixmanifest**的 [資產] 下，加入圖層驗證專案做為 MEF 元件：  
   
-    1.  選擇 [新增] 。  
+    1. 選擇 [新增] 。  
   
-    2.  在 [加入新的資產]  對話方塊中，設定：  
+    2. 在 [加入新的資產]  對話方塊中，設定：  
   
           =   
   
@@ -87,11 +87,11 @@ ms.locfileid: "58945117"
   
           = *您的驗證程式專案*  
   
-4.  您也必須將它加入做為圖層驗證：  
+4. 您也必須將它加入做為圖層驗證：  
   
-    1.  選擇 [新增] 。  
+    1. 選擇 [新增] 。  
   
-    2.  在 [加入新的資產]  對話方塊中，設定：  
+    2. 在 [加入新的資產]  對話方塊中，設定：  
   
          **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. 這不是下拉式清單的其中一個選項。 您必須從鍵盤輸入。  
   
@@ -99,7 +99,7 @@ ms.locfileid: "58945117"
   
           = *您的驗證程式專案*  
   
-5.  返回圖層驗證專案，然後加入下列專案參考：  
+5. 返回圖層驗證專案，然後加入下列專案參考：  
   
     |**參考資料**|**這可讓您執行**|  
     |-------------------|------------------------------------|  
@@ -110,18 +110,18 @@ ms.locfileid: "58945117"
     |System.ComponentModel.Composition|使用 Managed Extensibility Framework (MEF) 定義驗證元件|  
     |Microsoft.VisualStudio.Modeling.Sdk.[版本]|定義模型擴充功能|  
   
-6.  將本主題結尾處的範例程式碼複製到驗證程式庫專案中的類別檔案，以包含您的驗證程式碼。 如需詳細資訊，請參閱 [程式設計驗證](#programming)。  
+6. 將本主題結尾處的範例程式碼複製到驗證程式庫專案中的類別檔案，以包含您的驗證程式碼。 如需詳細資訊，請參閱 [程式設計驗證](#programming)。  
   
-7.  若要測試擴充功能，請參閱 [圖層驗證偵錯](#debugging)。  
+7. 若要測試擴充功能，請參閱 [圖層驗證偵錯](#debugging)。  
   
     > [!NOTE]
     >  只有在特定情況下才會呼叫您的方法，且中斷點將不會自動運作。 如需詳細資訊，請參閱 [圖層驗證偵錯](#debugging)。  
   
-8.  若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **bin\*** 目錄中尋找 **.vsix** 檔案。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下 VSIX 檔案。 (Windows 8 中為檔案總管。)  
+8. 若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **bin\*** 目錄中尋找 **.vsix** 檔案。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下 VSIX 檔案。 (Windows 8 中為檔案總管。)  
   
      若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
   
-##  <a name="programming"></a> 程式設計驗證  
+## <a name="programming"></a> 程式設計驗證  
  若要定義圖層驗證擴充功能，您可以定義具有下列特性的類別：  
   
 - 宣告的整體形式如下：  
@@ -190,7 +190,7 @@ ms.locfileid: "58945117"
   
   從圖層到程式碼中之項目的連結具有「代表」的類別。  
   
-##  <a name="debugging"></a> 驗證偵錯  
+## <a name="debugging"></a> 驗證偵錯  
  若要對您的圖層驗證擴充功能進行偵錯，請按 CTRL + F5。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即開啟。 在本執行個體中，開啟或建立圖層模型。 此模型必須與程式碼相關聯，而且必須有至少一個相依性。  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>測試包含相依性的方案  
@@ -217,7 +217,7 @@ ms.locfileid: "58945117"
 ### <a name="deploying-a-validation-extension"></a>部署驗證擴充功能  
  若要在已安裝 Visual Studio 適當版本的電腦上安裝您的驗證擴充功能，請在目標電腦上開啟 VSIX 檔案。 若要在已安裝 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的電腦上安裝，您必須手動將 VSIX 內容解壓縮到 [擴充功能] 資料夾。 如需詳細資訊，請參閱 <<c0> [ 部署圖層模型擴充功能](../modeling/deploy-a-layer-model-extension.md)。  
   
-##  <a name="example"></a> Example code  
+## <a name="example"></a> Example code  
   
 ```csharp  
 using System;  

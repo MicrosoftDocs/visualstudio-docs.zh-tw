@@ -15,25 +15,25 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5eb3891026976c036fb48b16ed5ebfeba909100e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 582b3763cf2925e373bb3f71b843755ade49dcd2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758139"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046491"
 ---
-# <a name="how-to-view-existing-types-class-designer"></a>如何：檢視現有類型 (類別設計工具)
+# <a name="how-to-view-existing-types-class-designer"></a>HOW TO：檢視現有類型 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要查看現有的類型及其成員，請將其圖案加入至類別圖。  
   
  您可以查看本機類型及參考類型。 本機類型存在目前已開啟的專案中，而且為可讀寫。 參考類型存在其他專案或參考組件中，而且為唯讀。  
   
- 若要在類別圖表上設計新的類型，請參閱[如何：使用類別設計工具建立類型](../ide/how-to-create-types-by-using-class-designer.md)。  
+ 若要在類別圖上設計新的類型，請參閱[如何：使用類別設計工具建立類型](../ide/how-to-create-types-by-using-class-designer.md)。  
   
 ### <a name="to-see-types-in-a-project-on-a-class-diagram"></a>在類別圖上查看專案中的類型  
   
-1. 從 [方案總管] 的專案中開啟現有的類別圖 (.cd) 檔案。 如果沒有類別圖，就將新的類別圖加入至專案。 請參閱[如何：將類別圖表新增至專案 (類別設計工具)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。  
+1. 從 [方案總管] 的專案中開啟現有的類別圖 (.cd) 檔案。 如果沒有類別圖，就將新的類別圖加入至專案。 請參閱[如何：將類別圖表新增至專案 （類別設計工具）](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。  
   
 2. 將原始程式碼檔從 [方案總管] 的專案拖曳至類別圖。  
   
@@ -41,9 +41,9 @@ ms.locfileid: "54758139"
    >  如果方案中有跨多個應用程式共用程式碼的專案，您只能從下列來源將檔案或程式碼拖曳至另一個類別圖：  
    > 
    > - 包含圖表的應用程式專案  
-   >   -   由應用程式專案匯入的共用專案  
-   >   -   參考的專案  
-   >   -   組件  
+   >   - 由應用程式專案匯入的共用專案  
+   >   - 參考的專案  
+   >   - 組件  
   
     代表原始程式碼檔中所定義類型的圖案就會出現在圖表上您拖曳檔案所至的位置。  
   
@@ -61,11 +61,11 @@ ms.locfileid: "54758139"
   
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>在類別圖中顯示專案內容  
   
-1.  在方案總管或 [類別檢視] 中，在專案上按一下滑鼠右鍵並選擇 [檢視]，然後選擇 [類別圖表檢視]。  
+1. 在方案總管或 [類別檢視] 中，在專案上按一下滑鼠右鍵並選擇 [檢視]，然後選擇 [類別圖表檢視]。  
   
      就會建立會自動填入內容的類別圖。  
   
-## <a name="see-also"></a>請參閱  
- [如何：檢視類型之間的繼承 (類別設計工具)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
- [如何：自訂類別圖表 (類別設計工具)](../ide/how-to-customize-class-diagrams-class-designer.md)   
+## <a name="see-also"></a>另請參閱  
+ [如何：檢視類型 （類別設計工具） 之間的繼承](../ide/how-to-view-inheritance-between-types-class-designer.md)   
+ [如何：自訂類別圖表 （類別設計工具）](../ide/how-to-customize-class-diagrams-class-designer.md)   
  [檢視類型和關聯性 (類別設計工具)](../ide/viewing-types-and-relationships-class-designer.md)

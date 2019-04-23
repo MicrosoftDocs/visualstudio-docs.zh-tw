@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b253c4e3447b8d7cd76dcef010adf99addb7bf9d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933661"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045184"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 
@@ -91,7 +91,7 @@ WCF 用戶端組成*proxy*可讓應用程式來與 WCF 服務，通訊，而且�
 
 ## <a name="wcf-tools-in-visual-studio"></a>Visual Studio 中的 WCF 工具
 
-Visual Studio 提供工具，可協助您建立 WCF 服務和 WCF 用戶端。 如需示範這些工具的逐步解說，請參閱 <<c0> [ 逐步解說： 在 Windows Forms 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)。
+Visual Studio 提供工具，可協助您建立 WCF 服務和 WCF 用戶端。 如需示範這些工具的逐步解說，請參閱[逐步解說：在 Windows Forms 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)。
 
 ### <a name="create-and-test-wcf-services"></a>建立和測試 WCF 服務
 
@@ -129,7 +129,7 @@ Visual Studio 可簡化建立 WCF 用戶端，會自動產生 proxy 和您使用
 
 **設定服務參考**對話方塊可讓您自訂服務的組態。 您可以變更服務的位址、 指定存取層級、 非同步行為，以及訊息合約型別，以及設定型別重複使用。
 
-## <a name="how-to-select-a-service-endpoint"></a>如何： 選取服務端點
+## <a name="how-to-select-a-service-endpoint"></a>HOW TO：選取服務端點
 
 某些 Windows Communication Foundation (WCF) 服務會公開透過該用戶端可能會與服務通訊的多個端點。 比方說，服務可能會公開一個端點使用 HTTP 繫結和使用者名稱和密碼的安全性，並使用 FTP 和 Windows 驗證的第二個端點。 可能會存取服務的外部防火牆的應用程式所用的第一個端點，而第二個可能會使用內部網路上。
 
@@ -139,9 +139,9 @@ Visual Studio 可簡化建立 WCF 用戶端，會自動產生 proxy 和您使用
 
 ### <a name="to-select-a-service-endpoint"></a>若要選取的服務端點
 
-1.  以滑鼠右鍵按一下專案節點中的新增 WCF 服務的參考**方案總管**，然後選擇**加入服務參考**。
+1. 以滑鼠右鍵按一下專案節點中的新增 WCF 服務的參考**方案總管**，然後選擇**加入服務參考**。
 
-2.  在程式碼編輯器中，加入服務參考的建構函式：
+2. 在程式碼編輯器中，加入服務參考的建構函式：
 
     ```vb
     Dim proxy As New ServiceReference.Service1Client(
@@ -154,26 +154,26 @@ Visual Studio 可簡化建立 WCF 用戶端，會自動產生 proxy 和您使用
     > [!NOTE]
     > 取代*ServiceReference*與服務參考和取代命名空間*Service1Client*與服務的名稱。
 
-3.  IntelliSense 清單會顯示包含多載建構函式。 選取`endpointConfigurationName As String`多載。
+3. IntelliSense 清單會顯示包含多載建構函式。 選取`endpointConfigurationName As String`多載。
 
-4.  下列多載中，輸入`=` *ConfigurationName*，其中*ConfigurationName*是您想要使用之端點的名稱。
+4. 下列多載中，輸入`=` *ConfigurationName*，其中*ConfigurationName*是您想要使用之端點的名稱。
 
     > [!NOTE]
     > 如果您不知道可用的端點名稱，您可以找到它們*app.config*檔案。
 
 ### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>若要尋找可用的端點的 WCF 服務
 
-1.  在 [**方案總管] 中**，以滑鼠右鍵按一下**app.config**檔案，其中包含服務參考的專案，然後按一下**開啟**。 檔案會出現在程式碼編輯器。
+1. 在 [**方案總管] 中**，以滑鼠右鍵按一下**app.config**檔案，其中包含服務參考的專案，然後按一下**開啟**。 檔案會出現在程式碼編輯器。
 
-2.  搜尋`<Client>`檔案中的標記。
+2. 搜尋`<Client>`檔案中的標記。
 
-3.  搜尋下方`<Client>`開頭的標記的標記`<Endpoint>`。
+3. 搜尋下方`<Client>`開頭的標記的標記`<Endpoint>`。
 
      如果服務參考文件提供多個端點，會有兩個或多個`<Endpoint`標記。
 
-4.  內部`<EndPoint>`標記，您會發現`name="` *SomeService* `"`參數 (其中*SomeService*代表端點名稱)。 這是可以傳遞至端點的名稱`endpointConfigurationName As String`服務參考的建構函式的多載。
+4. 內部`<EndPoint>`標記，您會發現`name="` *SomeService* `"`參數 (其中*SomeService*代表端點名稱)。 這是可以傳遞至端點的名稱`endpointConfigurationName As String`服務參考的建構函式的多載。
 
-## <a name="how-to-call-a-service-method-asynchronously"></a>如何： 以非同步方式呼叫服務方法
+## <a name="how-to-call-a-service-method-asynchronously"></a>HOW TO：以非同步方式呼叫服務方法
 
 Windows Communication Foundation (WCF) 服務中的大部分方法可能在同步或非同步呼叫。 以非同步方式呼叫方法，可讓您的應用程式繼續運作，而其運作方式的低速連線時，要呼叫的方法。
 
@@ -186,47 +186,47 @@ Windows Communication Foundation (WCF) 服務中的大部分方法可能在同�
 
 ### <a name="to-call-a-service-method-asynchronously"></a>以非同步方式呼叫服務方法
 
-1.  在 **方案總管 中**，選取 服務參考。
+1. 在 **方案總管 中**，選取 服務參考。
 
-2.  在 **專案**功能表上，按一下**設定服務參考**。
+2. 在 **專案**功能表上，按一下**設定服務參考**。
 
-3.  在 **設定服務參考**對話方塊中，選取**產生非同步作業**核取方塊。
+3. 在 **設定服務參考**對話方塊中，選取**產生非同步作業**核取方塊。
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>如何： 將服務所傳回的資料繫結
+## <a name="how-to-bind-data-returned-by-a-service"></a>HOW TO：將服務所傳回的資料繫結
 
 您可以繫結一樣，您可以將任何其他資料來源繫結至控制項，Windows Communication Foundation (WCF) 服務所傳回的控制項的資料。 當您新增 WCF 服務的參考，如果服務包含傳回資料的複合類型時，它們會自動加入**Zdroje dat**視窗。
 
 ### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>將控制項繫結至 WCF 服務所傳回的單一資料欄位
 
-1.  按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
+1. 按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。
 
    隨即出現 [資料來源] 視窗。
 
-2.  在 [ **Zdroje dat** ] 視窗中，展開您的服務參考的節點。 服務顯示所傳回的任何複合類型。
+2. 在 [ **Zdroje dat** ] 視窗中，展開您的服務參考的節點。 服務顯示所傳回的任何複合類型。
 
-3.  展開類型節點。 該類型的資料欄位會出現。
+3. 展開類型節點。 該類型的資料欄位會出現。
 
-4.  選取的欄位，然後按一下下拉箭號，以顯示一份可供使用的資料類型的控制項。
+4. 選取的欄位，然後按一下下拉箭號，以顯示一份可供使用的資料類型的控制項。
 
-5.  按一下您要繫結的控制項型別。
+5. 按一下您要繫結的控制項型別。
 
-6.  將欄位拖曳到表單上。 控制項會加入至表單，並搭配<xref:System.Windows.Forms.BindingSource>元件和<xref:System.Windows.Forms.BindingNavigator>元件。
+6. 將欄位拖曳到表單上。 控制項會加入至表單，並搭配<xref:System.Windows.Forms.BindingSource>元件和<xref:System.Windows.Forms.BindingNavigator>元件。
 
-7.  重複步驟 4，6 個用於任何其他欄位，但您想要繫結。
+7. 重複步驟 4，6 個用於任何其他欄位，但您想要繫結。
 
 ### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>將控制項繫結至 WCF 服務所傳回的複合類型
 
-1.  在 **資料**功能表上，選取**顯示資料來源**。 隨即出現 [資料來源] 視窗。
+1. 在 **資料**功能表上，選取**顯示資料來源**。 隨即出現 [資料來源] 視窗。
 
-2.  在 [ **Zdroje dat** ] 視窗中，展開您的服務參考的節點。 服務顯示所傳回的任何複合類型。
+2. 在 [ **Zdroje dat** ] 視窗中，展開您的服務參考的節點。 服務顯示所傳回的任何複合類型。
 
-3.  選取類型節點，然後按一下下拉箭號，以顯示一份可用的選項。
+3. 選取類型節點，然後按一下下拉箭號，以顯示一份可用的選項。
 
-4.  按一下  **DataGridView**方格中顯示資料或**詳細資料**個別控制項中顯示資料。
+4. 按一下  **DataGridView**方格中顯示資料或**詳細資料**個別控制項中顯示資料。
 
-5.  將節點拖曳至表單。 控制項加入至表單，並搭配<xref:System.Windows.Forms.BindingSource>元件和<xref:System.Windows.Forms.BindingNavigator>元件。
+5. 將節點拖曳至表單。 控制項加入至表單，並搭配<xref:System.Windows.Forms.BindingSource>元件和<xref:System.Windows.Forms.BindingNavigator>元件。
 
-## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>如何： 設定服務，以重複使用現有的類型
+## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>HOW TO：設定服務，以重複使用現有的類型
 
 當服務參考加入至專案時，在服務中定義的任何型別會產生在本機專案中。 在許多情況下，這會建立重複的型別或型別共用的文件庫中定義時服務會使用一般的.NET Framework 型別。
 
@@ -234,28 +234,28 @@ Windows Communication Foundation (WCF) 服務中的大部分方法可能在同�
 
 ### <a name="to-disable-type-sharing-in-a-single-assembly"></a>若要停用的單一組件中的類型共用
 
-1.  在 **方案總管 中**，選取 服務參考。
+1. 在 **方案總管 中**，選取 服務參考。
 
-2.  在 **專案**功能表上，按一下**設定服務參考**。
+2. 在 **專案**功能表上，按一下**設定服務參考**。
 
-3.  在 **設定服務參考**對話方塊中，選取**重複使用指定的參考組件中的型別**。
+3. 在 **設定服務參考**對話方塊中，選取**重複使用指定的參考組件中的型別**。
 
-4.  選取您要在其中啟用類型共用的每個組件的核取方塊。 若要停用共用組件的型別，保持核取方塊。
+4. 選取您要在其中啟用類型共用的每個組件的核取方塊。 若要停用共用組件的型別，保持核取方塊。
 
 ### <a name="to-disable-type-sharing-in-all-assemblies"></a>若要停用所有組件中的類型共用
 
-1.  在 **方案總管 中**，選取 服務參考。
+1. 在 **方案總管 中**，選取 服務參考。
 
-2.  在 **專案**功能表上，按一下**設定服務參考**。
+2. 在 **專案**功能表上，按一下**設定服務參考**。
 
-3.  在 **設定服務參考**對話方塊中，清除**重複使用參考組件中的型別**核取方塊。
+3. 在 **設定服務參考**對話方塊中，清除**重複使用參考組件中的型別**核取方塊。
 
 ## <a name="related-topics"></a>相關主題
 
 | 標題 | 描述 |
 | - | - |
 | [逐步解說：在 Windows Forms 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | 提供建立和使用 Visual Studio 中的 WCF 服務的逐步示範。 |
-| [逐步解說︰使用 WPF 和 Entity Framework 建立 WCF 資料服務](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | 提供如何建立及使用 Visual Studio 中的 WCF Data Services 的逐步示範。 |
+| [逐步解說：使用 WPF 和 Entity Framework 建立 WCF 資料服務](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | 提供如何建立及使用 Visual Studio 中的 WCF Data Services 的逐步示範。 |
 | [使用 WCF 開發工具](/dotnet/framework/wcf/using-the-wcf-development-tools) | 討論如何建立和測試 Visual Studio 中的 WCF 服務。 |
 | | [如何：新增、更新或移除 WCF 資料服務參考](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
 | [針對服務參考進行疑難排解](../data-tools/troubleshooting-service-references.md) | 提供服務的參考，以及如何避免它們可能會發生的一些常見錯誤。 |

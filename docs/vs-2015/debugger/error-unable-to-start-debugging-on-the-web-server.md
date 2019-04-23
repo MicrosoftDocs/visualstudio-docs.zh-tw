@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee62f07bd9fb4626f8e8fb3387e4b80ca2d903d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048758"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在網頁伺服器上開始偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "59652055"
   
 在許多情況下，因為 IIS 未正確設定，就會發生此錯誤。
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> 檢查您的 IIS 設定
+## <a name="vxtbshttpservererrorsthingstocheck"></a> 檢查您的 IIS 設定
 
 之後採取來解決問題，並再重新嘗試偵錯的詳細步驟，您可能也需要重設 IIS。 可以這麼做，開啟系統管理員命令提示字元並輸入`iisreset`，或您可以在 [IIS 管理員] 中。 
 

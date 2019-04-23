@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: f0d1a9e24c965af9513b3c2645bcee35f916f436
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048589"
 ---
 # <a name="troubleshoot-service-references"></a>針對服務參考進行疑難排解
 
@@ -33,9 +33,9 @@ ms.locfileid: "55927041"
 
 修正這個錯誤：
 
-1.  在 [**方案總管] 中**，按兩下*app.config*檔案將它開啟。
+1. 在 [**方案總管] 中**，按兩下*app.config*檔案將它開啟。
 
-2.  找出`MaxReceivedMessageSize`屬性並將它變更為較大的值。
+2. 找出`MaxReceivedMessageSize`屬性並將它變更為較大的值。
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>找不到我的解決方案中的服務
 
@@ -43,17 +43,17 @@ ms.locfileid: "55927041"
 
 修正這個錯誤：
 
--   在 **方案總管**，以滑鼠右鍵按一下 WCF 服務程式庫專案，然後按一下**建置**。
+- 在 **方案總管**，以滑鼠右鍵按一下 WCF 服務程式庫專案，然後按一下**建置**。
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>透過遠端桌面存取的服務時發生錯誤
 
-當使用者存取 Web 裝載的 WCF 服務，透過遠端桌面連線和使用者沒有系統管理權限，會使用 NTLM 驗證。 如果使用者沒有系統管理權限，使用者可能會收到下列錯誤訊息: 「 HTTP 要求是未經授權的用戶端驗證配置 'Anonymous'。 從伺服器收到的驗證標頭是 'NTLM'。 」
+當使用者存取 Web 裝載的 WCF 服務，透過遠端桌面連線和使用者沒有系統管理權限，會使用 NTLM 驗證。 如果使用者沒有系統管理權限，使用者可能會收到下列錯誤訊息：「 HTTP 要求是未經授權的用戶端驗證配置 'Anonymous'。 從伺服器收到的驗證標頭是 'NTLM'。 」
 
 修正這個錯誤：
 
-1.  在網站專案中，開啟**屬性**頁面。
+1. 在網站專案中，開啟**屬性**頁面。
 
-2.  在 **啟動選項**索引標籤上，清除**NTLM 驗證**核取方塊。
+2. 在 **啟動選項**索引標籤上，清除**NTLM 驗證**核取方塊。
 
     > [!NOTE]
     > 您應該關閉 NTLM 驗證，只針對只包含 WCF 服務的網站。 WCF 服務的安全性透過在組態管理*web.config*檔案。 這可讓 NTLM 驗證的非必要。
@@ -74,19 +74,19 @@ ms.locfileid: "55927041"
 
 若要修正這個錯誤，您必須以手動方式重新建置服務專案：
 
-1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。
+1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。
 
-2.  在 **選項**對話方塊方塊中，展開**專案和方案**，然後選取**一般**。
+2. 在 **選項**對話方塊方塊中，展開**專案和方案**，然後選取**一般**。
 
-3.  請確定**顯示進階組建組態** 核取方塊已選取，然後再按一下**確定**。
+3. 請確定**顯示進階組建組態** 核取方塊已選取，然後再按一下**確定**。
 
-4.  載入 WCF 服務專案。
+4. 載入 WCF 服務專案。
 
-5.  在 [ **Configuration Manager** ] 對話方塊中，將**現用方案組態**來**偵錯**。 如需詳細資訊，請參閱[如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)。
+5. 在 [ **Configuration Manager** ] 對話方塊中，將**現用方案組態**來**偵錯**。 如需詳細資訊，請參閱[如何：建立及編輯組態](../ide/how-to-create-and-edit-configurations.md)。
 
-6.  在 **方案總管 中**，選取 WCF 服務專案。
+6. 在 **方案總管 中**，選取 WCF 服務專案。
 
-7.  在 [**建置**] 功能表中，按一下**重建**重建 WCF 服務專案。
+7. 在 [**建置**] 功能表中，按一下**重建**重建 WCF 服務專案。
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF 資料服務不會顯示在瀏覽器
 
@@ -94,13 +94,13 @@ ms.locfileid: "55927041"
 
 若要修正這個錯誤，請停用 RSS 摘要：
 
-1.  在 Internet Explorer 的 [工具] 功能表中，按一下 [網際網路選項]。
+1. 在 Internet Explorer 的 [工具] 功能表中，按一下 [網際網路選項]。
 
-2.  在 **內容**索引標籤中，於**摘要**區段中，按一下**設定**。
+2. 在 **內容**索引標籤中，於**摘要**區段中，按一下**設定**。
 
-3.  在 **摘要的設定**對話方塊中，清除**開啟摘要讀取檢視**核取方塊，然後按一下**確定**。
+3. 在 **摘要的設定**對話方塊中，清除**開啟摘要讀取檢視**核取方塊，然後按一下**確定**。
 
-4.  按一下 [確定] 以關閉 [網際網路選項] 對話方塊。
+4. 按一下 [確定] 以關閉 [網際網路選項] 對話方塊。
 
 ## <a name="see-also"></a>另請參閱
 

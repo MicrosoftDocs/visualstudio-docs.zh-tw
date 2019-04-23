@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e50fbbc3c834fc33f77f3aecef6b51ef9037ecb7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939022"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049253"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>設計工具初始化和中繼資料組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "58939022"
 ### <a name="customizing-initialization"></a>自訂初始設定  
  自訂設計工具、 元件或設計工具的介面，包括：  
   
-1.  修改設計工具的中繼資料，以及更有效地變更如何特定<xref:System.Type>是存取或轉換。  
+1. 修改設計工具的中繼資料，以及更有效地變更如何特定<xref:System.Type>是存取或轉換。  
   
      這通常透過<xref:System.Drawing.Design.UITypeEditor>或<xref:System.ComponentModel.TypeConverter>機制。  
   
      例如，當<xref:System.Windows.Forms>-根據設計工具都已初始化，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]環境修改<xref:System.Drawing.Design.UITypeEditor>如<xref:System.Web.UI.WebControls.Image>與設計工具來使用資源管理員以取得點陣圖，而不是檔案系統的物件。  
   
-2.  整合環境，例如，藉由訂閱事件，或取得專案的組態資訊。 您可以取得專案的組態資訊，並取得訂閱事件<xref:System.ComponentModel.Design.ITypeResolutionService>介面。  
+2. 整合環境，例如，藉由訂閱事件，或取得專案的組態資訊。 您可以取得專案的組態資訊，並取得訂閱事件<xref:System.ComponentModel.Design.ITypeResolutionService>介面。  
   
-3.  藉由啟用適當的使用者環境修改**工具箱**類別目錄或藉由限制所套用的執行個體的設計工具的適用性<xref:System.ComponentModel.ToolboxItemFilterAttribute>類別設計工具。  
+3. 藉由啟用適當的使用者環境修改**工具箱**類別目錄或藉由限制所套用的執行個體的設計工具的適用性<xref:System.ComponentModel.ToolboxItemFilterAttribute>類別設計工具。  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>VSPackage 的設計工具初始化  
  VSPackage 應該處理由設計工具初始化：  

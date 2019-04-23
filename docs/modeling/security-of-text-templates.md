@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9906f3b8af624e1761b73c3338bad98b263aa9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66159516c6b1360203130dedb56c0e6c192a118a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957178"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050007"
 ---
 # <a name="security-of-text-templates"></a>文字範本的安全性
 文字範本具有下列安全性考量：
 
--   文字範本受到任意程式碼插入。
+- 文字範本受到任意程式碼插入。
 
--   如果主應用程式用來尋找指示詞處理器的機制並不安全，就可以執行惡意的指示詞處理器。
+- 如果主應用程式用來尋找指示詞處理器的機制並不安全，就可以執行惡意的指示詞處理器。
 
 ## <a name="arbitrary-code"></a>任意程式碼
  當您撰寫範本時，您可以將放在任何程式碼\<# # > 標記。 這允許任意程式碼從文字範本內執行。

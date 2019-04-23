@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 013571a948c6c3fdca5da3c5c9278ca21e1f3698
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045533"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233:運算不應該發生溢位
 
@@ -102,11 +102,11 @@ End Sub
 
 若要開啟 檢查算術溢位/反向溢位在 C# 中：
 
-1.  在 **方案總管**，以滑鼠右鍵按一下您的專案，然後選擇**屬性**。
+1. 在 **方案總管**，以滑鼠右鍵按一下您的專案，然後選擇**屬性**。
 
-2.  選取 [建置] 索引標籤，然後按一下 [進階]。
+2. 選取 [建置] 索引標籤，然後按一下 [進階]。
 
-3.  選取 **檢查算術溢位/反向溢位**然後按一下**確定**。
+3. 選取 **檢查算術溢位/反向溢位**然後按一下**確定**。
 
 ## <a name="see-also"></a>另請參閱
 

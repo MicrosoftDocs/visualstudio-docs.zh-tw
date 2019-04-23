@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba574854424eac14898c923701f7d8f4c1f81347
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d3b94b70db49903e41d26ac0f1382eaa2826e31a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059745"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>如果變更 DataContext 方法的傳回類型，將無法復原
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ ms.locfileid: "59648909"
   
 ### <a name="to-change-the-return-type-of-a-datacontext"></a>若要變更 DataContext 的傳回型別  
   
--   按一下 [ **是**]。  
+- 按一下 [ **是**]。  
   
 ### <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>若要結束訊息方塊而不變更傳回型別  
   
--   按一下 [否] 。  
+- 按一下 [否] 。  
   
 ### <a name="to-revert-to-the-original-return-type-after-changing-the-return-type"></a>若要在變更傳回型別之後還原成原始傳回型別  
   
-1.  在 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 上選取 <xref:System.Data.Linq.DataContext> 方法並予以刪除。  
+1. 在 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 上選取 <xref:System.Data.Linq.DataContext> 方法並予以刪除。  
   
-2.  在 [伺服器總管]/[資料庫總管] 中找出這個項目，並將其拖曳至 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
+2. 在 [伺服器總管]/[資料庫總管] 中找出這個項目，並將其拖曳至 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
   
      會建立具有原始預設傳回型別的 <xref:System.Data.Linq.DataContext> 方法。  
   

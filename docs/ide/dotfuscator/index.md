@@ -18,11 +18,11 @@ author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bf77f2796a224d6fad81c4a1485ba82f8822cfcc
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866701"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058364"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 

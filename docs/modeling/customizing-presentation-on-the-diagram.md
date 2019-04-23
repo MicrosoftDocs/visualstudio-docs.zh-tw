@@ -9,29 +9,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99cd0704c74da1e3f31363c5847260e39d844a41
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 19f63ebc662b745062f0163a1f82eb036e164f3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944438"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046510"
 ---
-# <a name="customizing-presentation-on-the-diagram"></a>自訂圖表上的展示
-圖表是網域指定的語言設計工具的主要簡報區域。 使用者通常會使用圖表來建構其模型。 您可以如下列主題中所述來自訂圖表。
+# <a name="customize-presentation-on-the-diagram"></a>自訂圖表上的展示
 
--   [定義圖案和接點](../modeling/defining-shapes-and-connectors.md)
+圖表是網域指定的語言設計工具的主要簡報區域。 使用者通常會使用圖表來建構其模型。 下列文章中所述，您可以自訂圖表：
 
--   [控制色彩、線條樣式和其他圖案屬性](../modeling/controlling-color-line-style-and-other-shape-properties.md)
+- [定義圖案和接點](../modeling/defining-shapes-and-connectors.md)
 
--   [控制圖示或 Decorator 的可視性](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)
+- [控制色彩、線條樣式和其他圖案屬性](../modeling/controlling-color-line-style-and-other-shape-properties.md)
 
--   [自訂文字和影像欄位](../modeling/customizing-text-and-image-fields.md)
+- [控制圖示或 Decorator 的可視性](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)
 
--   [設定圖表上的背景影像](../modeling/setting-a-background-image-on-a-diagram.md)
+- [自訂文字和影像欄位](../modeling/customizing-text-and-image-fields.md)
 
--   [巢狀圖案](../modeling/nesting-shapes.md)
+- [設定圖表上的背景影像](../modeling/setting-a-background-image-on-a-diagram.md)
 
--   [在 Windows Form 中內嵌圖表](../modeling/embedding-a-diagram-in-a-windows-form.md)
+- [在 Windows Form 中內嵌圖表](../modeling/embedding-a-diagram-in-a-windows-form.md)
 
 ## <a name="see-also"></a>另請參閱
 

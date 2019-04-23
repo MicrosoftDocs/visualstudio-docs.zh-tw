@@ -35,12 +35,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93aa6d9f6e821dba012009e90ba6f9be51641703
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da8b3b32eae5d3045216f562dc7db25fb1f3264a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938946"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048188"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>HOW TO：設定偵錯和發行組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
   
 ### <a name="to-change-the-build-configuration"></a>若要變更組建組態  
   
-1.  從 [建置] 功能表： 按一下**建置 / Configuration Manager**，然後選取**偵錯**或是**版本**。  
+1. 從 [建置] 功能表： 按一下**建置 / Configuration Manager**，然後選取**偵錯**或是**版本**。  
   
-2.  在工具列上，選擇 **偵錯**或是**發行**從**方案組態**清單方塊。  
+2. 在工具列上，選擇 **偵錯**或是**發行**從**方案組態**清單方塊。  
   
      ![工具列組建組態](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   

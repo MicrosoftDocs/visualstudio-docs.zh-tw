@@ -10,27 +10,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce88836b8162da76e8b4ef330a179680af24f992
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8ec5c271c023483ea64ddbabb83129ea9a44e4c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702469"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052750"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>HOW TO：註冊使用舊版 API 的文字緩衝區事件
 如果您使用舊版 API 存取的文字緩衝區，您應該註冊文字緩衝區事件，如下列程序中所示。
 
 ## <a name="to-advise-text-buffer-events"></a>建議的文字緩衝區事件
 
-1.  其中一個上介面的指標<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>，呼叫`QueryInterface`指標<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>。
+1. 其中一個上介面的指標<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>，呼叫`QueryInterface`指標<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>。
 
-2.  呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer.FindConnectionPoint%2A>方法，然後在您要註冊的事件的介面 ID 的傳遞。
+2. 呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer.FindConnectionPoint%2A>方法，然後在您要註冊的事件的介面 ID 的傳遞。
 
      例如，如果您想要報名<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>，然後傳入介面 ID 的 IID_IVsTextLinesEvents。
 
      文字緩衝區將指標傳回至<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>適當連接點物件的介面。
 
-3.  使用這個指標，呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>方法，將指標傳遞給您，您想要註冊，比方說，在事件介面的實作`IVsTextLinesEvents`介面。
+3. 使用這個指標，呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>方法，將指標傳遞給您，您想要註冊，比方說，在事件介面的實作`IVsTextLinesEvents`介面。
 
      環境傳回 cookie，您可以使用它表示停止接聽事件，藉由呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A>方法。
 

@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49bc9f56a07319c9edad1522c5e44b0bb35e92a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1576dfc54622f42e87ff2e9a951eed321300b1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943516"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039284"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>建立參數型 TableAdapter 查詢
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "58943516"
   
 ### <a name="create-a-parameterized-query-while-designing-a-data-bound-form"></a>設計資料繫結表單時建立參數型的查詢  
   
-1.  在表單上選取已繫結至資料集的控制項。 如需詳細資訊，請參閱 <<c0> [ 繫結 Windows Form 控制項加入 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)。  
+1. 在表單上選取已繫結至資料集的控制項。 如需詳細資訊，請參閱 <<c0> [ 繫結 Windows Form 控制項加入 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)。  
   
-2.  在 **資料**功能表上，選取**加入查詢**。  
+2. 在 **資料**功能表上，選取**加入查詢**。  
   
-3.  完成 [搜尋準則產生器] 對話方塊，並將具有所需參數的 WHERE 子句新增至 SQL 陳述式。  
+3. 完成 [搜尋準則產生器] 對話方塊，並將具有所需參數的 WHERE 子句新增至 SQL 陳述式。  
   
 ### <a name="add-a-query-to-an-existing-data-bound-form"></a>將查詢加入至現有的資料繫結表單  
   
@@ -91,11 +91,11 @@ ms.locfileid: "58943516"
   
 ### <a name="enable-a-query-to-accept-null-values"></a>讓查詢接受 null 值  
   
-1.  在  **Dataset 設計工具**，選取 TableAdapter 查詢需要接受 null 的參數值。  
+1. 在  **Dataset 設計工具**，選取 TableAdapter 查詢需要接受 null 的參數值。  
   
-2.  在 **屬性**視窗中，選取**參數**。 然後按 省略符號 (**...**) 按鈕，即可開啟**參數集合編輯器**。  
+2. 在 **屬性**視窗中，選取**參數**。 然後按 省略符號 (**...**) 按鈕，即可開啟**參數集合編輯器**。  
   
-3.  選取 允許 null 值的參數，並設定**AllowDbNull**屬性設`true`。  
+3. 選取 允許 null 值的參數，並設定**AllowDbNull**屬性設`true`。  
   
 ## <a name="see-also"></a>另請參閱
 

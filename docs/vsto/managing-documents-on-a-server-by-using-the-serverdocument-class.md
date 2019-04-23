@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83f23bb04c9080b75d2a8e93252d981c0833d69d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630076"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045483"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>使用 ServerDocument 類別管理伺服器上的文件
   您可以使用`ServerDocument`類別中[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]管理文件層級自訂的數個層面，即使未安裝 Microsoft Office Word 和 Microsoft Office Excel。 您可以執行下列工作：
@@ -40,7 +40,7 @@ ms.locfileid: "56630076"
 > [!NOTE]
 >  如果您有使用的舊版應用程式`ServerDocument`類別內`Visual Studio Tools for Office`system (3.0 版執行階段)，則`Visual Studio Tools for Office`system （3.0 版執行階段） 必須安裝在執行應用程式的電腦上。 `Visual Studio 2010 Tools for Office runtime`無法執行這些應用程式。
 
-##  <a name="CachedData"></a> 使用文件中的快取資料
+## <a name="CachedData"></a> 使用文件中的快取資料
  `ServerDocument`類別提供可用來在自訂文件中的資料快取所使用的成員。 如需有關快取資料的詳細資訊，請參閱 <<c0> [ 快取資料](../vsto/caching-data.md)並[存取伺服器上的文件中的資料](../vsto/accessing-data-in-documents-on-the-server.md)。
 
  下表列出您可以使用快取的資料搭配使用的成員。
@@ -50,7 +50,7 @@ ms.locfileid: "56630076"
 |若要判斷文件是否具有資料快取。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> 方法|
 |若要存取文件中快取的資料。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 存取在伺服器上的文件中的資料](../vsto/accessing-data-in-documents-on-the-server.md)。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 屬性。|
 
-##  <a name="CustomizationInfo"></a> 管理文件自訂
+## <a name="CustomizationInfo"></a> 管理文件自訂
  您可以使用的成員`ServerDocument`類別來管理文件相關聯的自訂組件。 比方說，您可以以程式設計方式移除自訂文件，因此文件不再是自訂的一部分。
 
  下表列出可用來管理自訂組件的成員。

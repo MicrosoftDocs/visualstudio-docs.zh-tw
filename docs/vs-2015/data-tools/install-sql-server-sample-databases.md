@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: afc99ba7d5b7a6b5cf9fc0e610160213dec5d2e8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 056e5d1fad258d063e30cfd97e85529ff3a0c9bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059632"
 ---
 # <a name="install-sql-server-sample-databases"></a>安裝 SQL Server 範例資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "59654499"
   
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>若要從 Visual Studio 中的.bak 檔案中還原資料庫  
   
-1.  當您將 Microsoft SQL Server 資料庫備份時，則結果會是.bak 檔案。 若要讓.bak 檔案可使用一次為資料庫檔案，它必須是*還原*。 在主功能表中，選取**檢視** > **SQL Server 物件總管**。 如果您沒有看到它，您可能需要安裝它。 移至**控制台中** > **程式和功能**，尋找 Microsoft Visual Studio 2015 中，按一下 [**變更**] 按鈕。 當已安裝的元件清單隨即出現在安裝程式視窗中時，選取**SQL Server 物件總管**核取方塊，然後繼續進行安裝。  
+1. 當您將 Microsoft SQL Server 資料庫備份時，則結果會是.bak 檔案。 若要讓.bak 檔案可使用一次為資料庫檔案，它必須是*還原*。 在主功能表中，選取**檢視** > **SQL Server 物件總管**。 如果您沒有看到它，您可能需要安裝它。 移至**控制台中** > **程式和功能**，尋找 Microsoft Visual Studio 2015 中，按一下 [**變更**] 按鈕。 當已安裝的元件清單隨即出現在安裝程式視窗中時，選取**SQL Server 物件總管**核取方塊，然後繼續進行安裝。  
   
-2.  在 [SQL Server 物件總管] 中，以滑鼠右鍵按一下任何 SQL Server 資料庫引擎 (例如，localdb)，然後選取**新的查詢**。  
+2. 在 [SQL Server 物件總管] 中，以滑鼠右鍵按一下任何 SQL Server 資料庫引擎 (例如，localdb)，然後選取**新的查詢**。  
   
      ![SQL Server 物件總管新查詢](../data-tools/media/raddata-sql-server-object-explorer-new-query.png "raddata SQL Server 物件總管新查詢")  
   
-3.  首先，您需要的資料庫和記錄檔的.bak 檔案內的邏輯名稱。 若要取得它，輸入此查詢到 SQL 查詢編輯器 中，然後選取綠色**執行**在視窗頂端的按鈕。 視需要修改的檔案路徑以指向.bak 檔案。  
+3. 首先，您需要的資料庫和記錄檔的.bak 檔案內的邏輯名稱。 若要取得它，輸入此查詢到 SQL 查詢編輯器 中，然後選取綠色**執行**在視窗頂端的按鈕。 視需要修改的檔案路徑以指向.bak 檔案。  
   
     ```  
     RESTORE FILELISTONLY  
@@ -43,7 +43,7 @@ ms.locfileid: "59654499"
   
      記下出現在 [結果] 視窗中的邏輯名稱。  對於 Northwind 資料庫中，Northwind 和 Northwind_log 的兩個的邏輯名稱。  
   
-4.  現在執行此查詢來建立資料庫。 替代成您自己的來源和目的地的路徑、 邏輯資料庫名稱和 Northwind 適當的實體檔案名稱。 保留的.mdf 和.ldf 副檔名。  
+4. 現在執行此查詢來建立資料庫。 替代成您自己的來源和目的地的路徑、 邏輯資料庫名稱和 Northwind 適當的實體檔案名稱。 保留的.mdf 和.ldf 副檔名。  
   
     ```  
     RESTORE DATABASE Northwind  
@@ -52,14 +52,14 @@ ms.locfileid: "59654499"
     MOVE 'Northwind_log' TO 'c:\nw\northwind.ldf'  
     ```  
   
-5.  在 SQL Server 物件總管 中，以滑鼠右鍵按一下**資料庫** 節點，而且您應該會看到 Northwind 資料庫 節點。 如果沒有，然後以滑鼠右鍵按一下資料庫，然後選取**加入新的資料庫**。 輸入名稱和您剛才建立的.mdf 檔案的位置。  
+5. 在 SQL Server 物件總管 中，以滑鼠右鍵按一下**資料庫** 節點，而且您應該會看到 Northwind 資料庫 節點。 如果沒有，然後以滑鼠右鍵按一下資料庫，然後選取**加入新的資料庫**。 輸入名稱和您剛才建立的.mdf 檔案的位置。  
   
-6.  現在準備好要做為 Visual Studio 中的資料來源的資料庫。  
+6. 現在準備好要做為 Visual Studio 中的資料來源的資料庫。  
   
 #### <a name="to-restore-a-database-from-a-bak-file-in-sql-server-management-studio"></a>若要從 SQL Server Management Studio 中的.bak 檔案中還原資料庫  
   
-1.  從下載網站下載 SQL Server Management Studio。  
+1. 從下載網站下載 SQL Server Management Studio。  
   
-2.  在 SSMS**物件總管** 視窗中，以滑鼠右鍵按一下**資料庫**節點中，選取**Restore Database**，並提供.bak 檔案的位置。  
+2. 在 SSMS**物件總管** 視窗中，以滑鼠右鍵按一下**資料庫**節點中，選取**Restore Database**，並提供.bak 檔案的位置。  
   
      ![SSMS 還原資料庫](../data-tools/media/raddata-ssms-restore-database.png "raddata SSMS 還原資料庫")

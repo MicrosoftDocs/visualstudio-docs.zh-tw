@@ -8,12 +8,12 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7cbb66d47eb261c0b25f382370bb6590af351edd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e23e242060eea31ae79fd8a3998fb4ee5d734647
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945027"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048671"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常見問題集：將增益集轉換成 VSPackage 擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,22 +39,22 @@ ms.locfileid: "58945027"
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>我是否可以將我的增益集專案轉換加入 VSIX 專案？  
  增益集專案無法轉換直接加入 VSIX 專案，因為在 VSIX 專案中使用的機制與增益集專案中的項目相同。 VSIX 專案範本，再加上正確的專案項目範本有許多可讓相當容易快速啟動且做為 VSIX 擴充功能執行的程式碼。  
   
-##  <a name="BKMK_StartDeveloping"></a> 如何開始開發 VSIX 擴充功能？  
+## <a name="BKMK_StartDeveloping"></a> 如何開始開發 VSIX 擴充功能？  
  以下是讓具有功能表命令的 VSIX 的方式：  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>若要建立具有功能表命令的 VSIX 擴充功能  
   
-1.  建立 VSIX 專案。 (**檔案**，**新增**，**專案**，或類型**專案**中**快速啟動**視窗)。 在**新的專案**對話方塊方塊中，展開**Visual C# / 擴充性**或**Visual Basic / 擴充性**，然後選取**VSIX 專案**。)將專案命名為**TestExtension**並為其指定的位置。  
+1. 建立 VSIX 專案。 (**檔案**，**新增**，**專案**，或類型**專案**中**快速啟動**視窗)。 在**新的專案**對話方塊方塊中，展開**Visual C# / 擴充性**或**Visual Basic / 擴充性**，然後選取**VSIX 專案**。)將專案命名為**TestExtension**並為其指定的位置。  
   
-2.  新增**自訂命令**專案項目範本。 (以滑鼠右鍵按一下專案節點，在**方案總管**，然後選取**新增 / 新的項目**。 在**新的專案**對話方塊中的 Visual C# 或 Visual Basic 中，選取**擴充性**節點，然後選取**自訂命令**。)  
+2. 新增**自訂命令**專案項目範本。 (以滑鼠右鍵按一下專案節點，在**方案總管**，然後選取**新增 / 新的項目**。 在**新的專案**對話方塊中的 Visual C# 或 Visual Basic 中，選取**擴充性**節點，然後選取**自訂命令**。)  
   
-3.  按 F5，以偵錯模式建置並執行專案。  
+3. 按 F5，以偵錯模式建置並執行專案。  
   
      Visual Studio 的第二個執行個體隨即出現。 第二個執行個體稱為實驗執行個體，其設定可能與您正用來撰寫程式碼的 Visual Studio 執行個體的設定不同。 第一次執行實驗執行個體時，系統會要求您登入 VS Online 並指定佈景主題和設定檔。  
   
      在 **工具**功能表上 （在實驗執行個體中） 您應該會看到名為按鈕**我的命令名稱**。 當您選擇此按鈕時，應該會出現一則訊息：**Inside TestVSPackagePackage.MenuItemCallback()**.  
   
-##  <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中執行我的增益集程式碼？  
+## <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中執行我的增益集程式碼？  
  增益集程式碼通常以兩種方式之一執行：  
   
 - 由功能表命令觸發 (程式碼在 `IDTCommandTarget.Exec` 方法中)  

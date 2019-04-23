@@ -4,6 +4,7 @@ description: 使用 Windows Presentation Foundation (WPF) UI 架構，透過 Vis
 ms.custom: seodec18, get-started
 ms.date: 03/14/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,22 +14,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c80c5ec1af0129486c465075209cfb39dbe2476a
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: b64972f2bf2ef0bb34722f717f7ddf8bf032349d
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324249"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857395"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教學課程：使用 Visual Basic 建立簡單的應用程式
 
 藉由完成這個教學課程，讓自己更熟悉許多可在使用 Visual Studio 開發應用程式時運用的工具、對話方塊和設計工具。 當您在學習如何使用整合式開發環境 ([IDE](visual-studio-ide.md)) 時，您會建立簡單的 "Hello, World" 應用程式、設計 UI、新增程式碼，以及進行偵錯。
 
 ::: moniker range="vs-2017"
+
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)頁面免費進行安裝。
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+
 ::: moniker-end
 
 ## <a name="configure-the-ide"></a>設定 IDE
@@ -47,7 +53,7 @@ Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以
 
 ::: moniker range=">=vs-2019"
 
-當您啟動 Visual Studio 時，會先開啟 [開始] 視窗。 選取 [不使用程式碼繼續] 以開啟開發環境。 您會看到工具視窗、功能表和工具列，以及主視窗空間。 工具視窗會停駐在應用程式視窗的左右端，同時 [ **快速啟動**]、功能表列和標準工具列則位於視窗的上方。 當您載入方案或專案時，編輯器和設計工具會出現在應用程式視窗的中央區域。 在開發應用程式時，您大部分時間都會在此中央區域工作。
+當您啟動 Visual Studio 時，會先開啟 [開始] 視窗。 選取 [不使用程式碼繼續] 以開啟開發環境。 您會看到工具視窗、功能表和工具列，以及主視窗空間。 [工具] 視窗會停駐在應用程式視窗的左側和右側，搜尋方塊、功能表列和標準工具列則位於視窗上方。 當您載入方案或專案時，編輯器和設計工具會出現在應用程式視窗的中央區域。 在開發應用程式時，您大部分時間都會在此中央區域工作。
 
 ::: moniker-end
 
@@ -55,35 +61,36 @@ Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以
 
 當您在 Visual Studio 中建立應用程式時，您需要先建立一個專案和一個方案。 在這個範例中，您將建立 Windows Presentation Foundation (WPF) 專案。
 
+::: moniker range="vs-2017"
+
 1. 建立新的專案。 在功能表列上，選取 [檔案] > [新增] > [專案]。
 
-     ::: moniker range="vs-2017"
      ![在功能表上依序選擇 [檔案]、[開新檔案] 和 [專案]](../media/exploreide-filenewproject.png)
-     ::: moniker-end
-     ::: moniker range=">=vs-2019"
-     ![在功能表上依序選擇 [檔案]、[開新檔案] 和 [專案]](../media/vs-2019/exploreide-filenewproject-vs2019.png)
-     ::: moniker-end
 
-::: moniker range="vs-2017"
 2. 在 [新增專案] 對話方塊中，選取 [已安裝] > [Visual Basic] > [Windows 桌面] 類別，然後選取 [WPF 應用程式 (.NET Framework)] 範本。 將專案命名為 **HelloWPFApp**，然後選取 [確定]。
 
      ![Visual Studio [新增專案] 對話方塊中的 WPF 應用程式範本](media/exploreide-newproject-vb.png)
+
+Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會顯示各種不同檔案。 **WPF 設計工具**會在分割檢視中顯示 *MainWindow.xaml* 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。 您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 下列項目會在 **方案總管**中出現：
+
+![已載入 HelloWPFApp 檔案的 [方案總管]](../media/exploreide-hellowpfappfiles.png)
+
 ::: moniker-end
-::: moniker range=">=vs-2019"
+
+::: moniker range="vs-2019"
+
+1. 開啟 Visual Studio 2019。
+
 2. 在 [建立新專案] 畫面上，搜尋 "WPF"、選擇 [WPF 應用程式 (.NET Framework)]，然後選擇 [下一步]。
 
    ![Visual Studio [新增專案] 對話方塊中的 WPF 應用程式範本](media/vs-2019/exploreide-newprojectvb-vs2019.png)
 
 3. 在下一個畫面上，為專案指定名稱 **HelloWPFApp**，然後選擇 [建立]。
-::: moniker-end
 
 Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會顯示各種不同檔案。 **WPF 設計工具**會在分割檢視中顯示 *MainWindow.xaml* 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。 您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 下列項目會在 **方案總管**中出現：
 
-::: moniker range="vs-2017"
-![已載入 HelloWPFApp 檔案的 [方案總管]](../media/exploreide-hellowpfappfiles.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
 ![已載入 HelloWPFApp 檔案的 [方案總管]](../media/vs-2019/exploreide-hellowpfappfiles.png)
+
 ::: moniker-end
 
 > [!NOTE]
@@ -109,7 +116,7 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 
 ### <a name="add-a-textblock-control"></a>新增 TextBlock 控制項
 
-1.  輸入 **Ctrl**+**Q** 以叫用 [快速啟動]，然後鍵入**工具箱**。 從結果清單中選擇 [檢視] > [工具箱]。
+1.  輸入 **Ctrl**+**Q** 啟動搜尋方塊，然後鍵入**工具箱**。 從結果清單中選擇 [檢視] > [工具箱]。
 
 2. 在 [工具箱] 中展開 [通用 WPF 控制項] 節點以查看 TextBlock 控制項。
 
@@ -249,7 +256,7 @@ IsChecked="True"
 
 #### <a name="add-breakpoints"></a>新增中斷點
 
-1. 開啟 *Greetings.xaml.vb*，然後選取下列程式碼行：`MessageBox.Show("Hello.")`
+1. 開啟 *Greetings.xaml.vb*，然後選取下列程式碼： `MessageBox.Show("Hello.")`
 
 2. 按 **F9**，或從功能表中依序選取 [偵錯] 和 [切換中斷點]，來新增中斷點。
 

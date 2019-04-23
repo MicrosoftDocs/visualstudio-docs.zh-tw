@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bf82bc6fce4e6bf429faebc6b6f24497cbe76b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b2ed12175e986178d43ffe5e3da8b85e2ab22e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044689"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>在 Windows Form 中內嵌圖表
 
@@ -20,15 +20,15 @@ ms.locfileid: "55944464"
 
 ## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>DSL 圖表嵌入 Windows 控制項
 
-1.  加入新**使用者控制項**DslPackage 專案的檔案。
+1. 加入新**使用者控制項**DslPackage 專案的檔案。
 
-2.  將面板控制項新增至使用者控制項。 此面板會包含 DSL 圖表。
+2. 將面板控制項新增至使用者控制項。 此面板會包含 DSL 圖表。
 
      新增您需要其他控制項。
 
      設定控制項的錨點屬性。
 
-3.  在 方案總管 中，以滑鼠右鍵按一下 使用者控制項檔案，然後按一下 **檢視程式碼**。 加入程式碼的這個建構函式和變數：
+3. 在 方案總管 中，以滑鼠右鍵按一下 使用者控制項檔案，然後按一下 **檢視程式碼**。 加入程式碼的這個建構函式和變數：
 
     ```csharp
     internal UserControl1(MyDSLDocView docView, Control content)
@@ -40,7 +40,7 @@ ms.locfileid: "55944464"
     private MyDSLDocView docView;
     ```
 
-4.  將新檔案新增至 DslPackage 專案中，使用下列內容：
+4. 將新檔案新增至 DslPackage 專案中，使用下列內容：
 
     ```csharp
     using System.Windows.Forms;
@@ -63,13 +63,13 @@ ms.locfileid: "55944464"
     } } } }
     ```
 
-5.  若要測試 DSL，請按**F5**並開啟範例模型檔案。 在控制項內顯示圖表。 [工具箱] 和其他功能可以正常運作。
+5. 若要測試 DSL，請按**F5**並開啟範例模型檔案。 在控制項內顯示圖表。 [工具箱] 和其他功能可以正常運作。
 
 ## <a name="update-the-form-using-store-events"></a>更新使用市集事件表單
 
-1.  在表單設計工具中，加入**ListBox**名為`listBox1`。 這會在模型中顯示的項目清單。 它與模型使用同步處理*儲存事件*。 如需詳細資訊，請參閱 <<c0> [ 事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
+1. 在表單設計工具中，加入**ListBox**名為`listBox1`。 這會在模型中顯示的項目清單。 它與模型使用同步處理*儲存事件*。 如需詳細資訊，請參閱 <<c0> [ 事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
-2.  在自訂程式碼檔案中，覆寫進一步 DocView 類別的方法：
+2. 在自訂程式碼檔案中，覆寫進一步 DocView 類別的方法：
 
     ```csharp
     partial class MyDSLDocView
@@ -110,7 +110,7 @@ ms.locfileid: "55944464"
      }
     ```
 
-3.  在使用者控制項背後的程式碼，插入方法，以接聽新增和移除的項目：
+3. 在使用者控制項背後的程式碼，插入方法，以接聽新增和移除的項目：
 
     ```csharp
     public partial class UserControl1 : UserControl { ...
@@ -137,7 +137,7 @@ ms.locfileid: "55944464"
     }
     ```
 
-4.  若要測試 DSL，請按**F5**和在 Visual Studio 的實驗性執行個體，開啟範例模型檔案。
+4. 若要測試 DSL，請按**F5**和在 Visual Studio 的實驗性執行個體，開啟範例模型檔案。
 
      請注意，清單方塊會顯示在模型中，項目清單，並確認它正確之後任何新增或刪除作業，以及復原與取消復原之後。
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 437f5aecb2fe8f7bb953c9efb6eb33ccb945c9f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721786"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048201"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>逐步解說：建立核心編輯器 」 和 「 登錄編輯程式檔案類型
 本逐步解說示範如何建立啟動 VSPackage[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器時的檔案 *.myext*載入檔案的副檔名。
@@ -26,11 +26,11 @@ ms.locfileid: "56721786"
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>在 Visual Studio Package 專案範本位置
  Visual Studio Package 專案範本位在 [新增專案]  對話方塊的三個不同位置：
 
-1.  位在 [Visual Basic 擴充性] 下。 專案的預設語言為 Visual Basic。
+1. 位在 [Visual Basic 擴充性] 下。 專案的預設語言為 Visual Basic。
 
-2.  位在 [C# 擴充性] 下。 專案的預設語言為 C#。
+2. 位在 [C# 擴充性] 下。 專案的預設語言為 C#。
 
-3.  位在 [其他專案類型擴充性] 下。 專案的預設語言為 C++。
+3. 位在 [其他專案類型擴充性] 下。 專案的預設語言為 C++。
 
 ### <a name="to-create-the-vspackage"></a>若要建立 VSPackage
 

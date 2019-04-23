@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6531311e00d25947a8bb5ca2e691c941a20307ba
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MTE95
+ms.openlocfilehash: 0428ecf21da525b8f77334e57547c8f10da7cdf5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222343"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044899"
 ---
 # <a name="edit-and-continue-error-message"></a>編輯後繼續錯誤訊息
 
@@ -31,21 +31,21 @@ ms.locfileid: "57222343"
 
 此錯誤訊息的可能原因包括：
 
--   嘗試編輯 SQL Server 程式碼。
--   嘗試編輯最佳化程式碼。 您可能需要從發行組建切換至偵錯組建。
--   嘗試編輯的程式碼，當它執行時，而不是偵錯工具中暫停時。 請嘗試[設定中斷點](../debugger/using-breakpoints.md)，和編輯程式碼時暫停。
--   嘗試啟用只有 unmanaged 偵錯時編輯 managed 程式碼。 編輯後繼續不適用於[混合模式偵錯](../debugger/how-to-debug-in-mixed-mode.md)。
--   讓程式碼變更，不支援編輯後繼續在您的程式語言。 如需詳細資訊，請參閱文件的相關[支援中的程式碼變更C# ](supported-code-changes-csharp.md)，[不支援的 Visual Basic 編輯後繼續 中的編輯](/visualstudio/debugger/supported-code-changes-csharp)，和[支援 c + + 程式碼變更](supported-code-changes-cpp.md).
--   您會附加到，比起從偵錯的應用程式中編輯程式碼嘗試**偵錯**功能表。
--   嘗試將偵錯 Dr 時編輯程式碼。Watson 傾印。
--   嘗試編輯的程式碼之後發生未處理的例外狀況, 和選項**回溯呼叫堆疊上未處理例外狀況**未選取。
--   嘗試將偵錯內嵌的執行階段應用程式時編輯程式碼。
--   嘗試編輯的.NET Framework 版本早於 4.5.1 使用 64 位元應用程式目標的 managed 程式碼。 若要使用 [編輯後繼續適用於.NET Framework 4.5.1 之前，請將目標設定為**x86**中**\<專案名稱 >** > **屬性** > **編譯**] 索引標籤**進階編譯器**設定。
--   嘗試編輯的偵錯期間已修改，且已重新載入的組件中的程式碼。
--   嘗試編輯尚未載入的組件中的程式碼。
--   開始偵錯舊版的應用程式，因為最新版本有建置錯誤。
+- 嘗試編輯 SQL Server 程式碼。
+- 嘗試編輯最佳化程式碼。 您可能需要從發行組建切換至偵錯組建。
+- 嘗試編輯的程式碼，當它執行時，而不是偵錯工具中暫停時。 請嘗試[設定中斷點](../debugger/using-breakpoints.md)，和編輯程式碼時暫停。
+- 嘗試啟用只有 unmanaged 偵錯時編輯 managed 程式碼。 編輯後繼續不適用於[混合模式偵錯](../debugger/how-to-debug-in-mixed-mode.md)。
+- 讓程式碼變更，不支援編輯後繼續在您的程式語言。 如需詳細資訊，請參閱文件的相關[支援中的程式碼變更C# ](supported-code-changes-csharp.md)，[不支援的 Visual Basic 編輯後繼續 中的編輯](/visualstudio/debugger/supported-code-changes-csharp)，和[支援C++變更程式碼](supported-code-changes-cpp.md).
+- 您會附加到，比起從偵錯的應用程式中編輯程式碼嘗試**偵錯**功能表。
+- 嘗試將偵錯 Dr 時編輯程式碼。Watson 傾印。
+- 嘗試編輯的程式碼之後發生未處理的例外狀況, 和選項**回溯呼叫堆疊上未處理例外狀況**未選取。
+- 嘗試將偵錯內嵌的執行階段應用程式時編輯程式碼。
+- 嘗試編輯的.NET Framework 版本早於 4.5.1 使用 64 位元應用程式目標的 managed 程式碼。 若要使用 [編輯後繼續適用於.NET Framework 4.5.1 之前，請將目標設定為**x86**中**\<專案名稱 >** > **屬性** > **編譯**] 索引標籤**進階編譯器**設定。
+- 嘗試編輯的偵錯期間已修改，且已重新載入的組件中的程式碼。
+- 嘗試編輯尚未載入的組件中的程式碼。
+- 開始偵錯舊版的應用程式，因為最新版本有建置錯誤。
 
 如需詳細資訊，請參閱:
-- [C + + 編輯後繼續的部落格文章](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)
+- [C++編輯後繼續部落格文章](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)
 - [支援的程式碼變更 (C++)](../debugger/supported-code-changes-cpp.md)
 - [編輯後繼續](../debugger/edit-and-continue.md)

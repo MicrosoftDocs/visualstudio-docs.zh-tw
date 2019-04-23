@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 50958671d327013254b0a19e3dda160b1b3035e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ce9b74012be35433c26f8446f36246dbe93f6442
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778853"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044244"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>HOW TO：從摘要時間軸篩選報表檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,8 +23,8 @@ ms.locfileid: "54778853"
   
 ### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>從摘要時間軸圖形篩選分析報告  
   
-1.  在 [摘要] 檢視時間軸圖形中，按一下時間軸上的某個點，然後將滑鼠游標拖曳至時間軸上的另一個點。  
+1. 在 [摘要] 檢視時間軸圖形中，按一下時間軸上的某個點，然後將滑鼠游標拖曳至時間軸上的另一個點。  
   
      您指定的區域會加上陰影。  
   
-2.  按一下 [依選取範圍篩選]。
+2. 按一下 [依選取範圍篩選]。

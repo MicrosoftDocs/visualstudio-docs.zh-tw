@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c1942e39895439eb040109a34353d6c361e95c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943351"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045773"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>HOW TO：重新簽署應用程式和部署資訊清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58943351"
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>若要重新簽署應用程式和部署資訊清單使用 Mage.exe  
   
-1.  開啟**Visual Studio 命令提示字元**視窗。  
+1. 開啟**Visual Studio 命令提示字元**視窗。  
   
-2.  將目錄變更至包含您想要登入的資訊清單檔案的資料夾。  
+2. 將目錄變更至包含您想要登入的資訊清單檔案的資料夾。  
   
-3.  輸入下列命令來簽署應用程式資訊清單檔案。 ManifestFileName 取代為您的資訊清單檔案，再加上擴充功能名稱。 憑證檔案的相對或完整路徑來取代憑證，並以憑證的密碼取代密碼。  
+3. 輸入下列命令來簽署應用程式資訊清單檔案。 ManifestFileName 取代為您的資訊清單檔案，再加上擴充功能名稱。 憑證檔案的相對或完整路徑來取代憑證，並以憑證的密碼取代密碼。  
   
     ```  
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -56,7 +56,7 @@ ms.locfileid: "58943351"
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-4.  輸入下列命令來更新並簽署部署資訊清單檔案，取代預留位置名稱，如同前一個步驟。  
+4. 輸入下列命令來更新並簽署部署資訊清單檔案，取代預留位置名稱，如同前一個步驟。  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -70,20 +70,20 @@ ms.locfileid: "58943351"
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  或者，複製 主要的部署資訊清單 (發行\\*appname*.application) 至您版本的部署目錄 (publish\Application 檔案\\*appname*_*版本*)。  
+5. 或者，複製 主要的部署資訊清單 (發行\\*appname*.application) 至您版本的部署目錄 (publish\Application 檔案\\*appname*_*版本*)。  
   
 ## <a name="updating-and-re-signing-the-application-and-deployment-manifests"></a>更新和重新簽署應用程式和部署資訊清單  
  此程序假設，您已變更您的應用程式資訊清單檔案 (.manifest)，但有其他已更新的檔案。 當更新檔案時，也必須更新代表檔案的雜湊。  
   
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>若要更新和重新簽署應用程式和部署資訊清單使用 Mage.exe  
   
-1.  開啟**Visual Studio 命令提示字元**視窗。  
+1. 開啟**Visual Studio 命令提示字元**視窗。  
   
-2.  將目錄變更至包含您想要登入的資訊清單檔案的資料夾。  
+2. 將目錄變更至包含您想要登入的資訊清單檔案的資料夾。  
   
-3.  從發行輸出資料夾中的檔案中移除.deploy 副檔名。  
+3. 從發行輸出資料夾中的檔案中移除.deploy 副檔名。  
   
-4.  輸入下列命令，以使用新的雜湊，更新檔案更新應用程式資訊清單，並簽署應用程式資訊清單檔案。 ManifestFileName 取代為您的資訊清單檔案，再加上擴充功能名稱。 憑證檔案的相對或完整路徑來取代憑證，並以憑證的密碼取代密碼。  
+4. 輸入下列命令，以使用新的雜湊，更新檔案更新應用程式資訊清單，並簽署應用程式資訊清單檔案。 ManifestFileName 取代為您的資訊清單檔案，再加上擴充功能名稱。 憑證檔案的相對或完整路徑來取代憑證，並以憑證的密碼取代密碼。  
   
     ```  
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -97,7 +97,7 @@ ms.locfileid: "58943351"
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  輸入下列命令來更新並簽署部署資訊清單檔案，取代預留位置名稱，如同前一個步驟。  
+5. 輸入下列命令來更新並簽署部署資訊清單檔案，取代預留位置名稱，如同前一個步驟。  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -111,9 +111,9 @@ ms.locfileid: "58943351"
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-6.  將.deploy 副檔名加回檔案，但應用程式和部署資訊清單檔案。  
+6. 將.deploy 副檔名加回檔案，但應用程式和部署資訊清單檔案。  
   
-7.  或者，複製 主要的部署資訊清單 (發行\\*appname*.application) 至您版本的部署目錄 (publish\Application 檔案\\*appname*_*版本*)。  
+7. 或者，複製 主要的部署資訊清單 (發行\\*appname*.application) 至您版本的部署目錄 (publish\Application 檔案\\*appname*_*版本*)。  
   
 ## <a name="see-also"></a>另請參閱  
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
