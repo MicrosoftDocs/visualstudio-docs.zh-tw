@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 630934ce6915191ccb111e8bc061d8faacc421f7
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: ce8bc44bf506cf315420aad4108832f7461f1c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415469"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077871"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>將命令和軌跡新增至相依性圖表
 
@@ -66,7 +66,7 @@ ms.locfileid: "58415469"
 
 如果您想要建立包含命令、圖層驗證程式和其他擴充功能的單一 VSIX，建議您應建立單一專案來定義此 VSIX，並且針對此處理常式建立個別專案。
 
-1. 建立新**類別庫**專案。 這個專案將會包含命令或軌跡處理常式類別。
+1. 建立新的**類別庫**專案。 這個專案將會包含命令或軌跡處理常式類別。
 
    > [!NOTE]
    > 雖然您可以在單一類別庫中定義多個命令或軌跡處理常式類別，不過您應該在個別的類別庫中定義圖層驗證類別。
@@ -108,7 +108,7 @@ ms.locfileid: "58415469"
 
 8. 若要安裝 VSIX 的 Visual Studio，或在另一部電腦上的主要執行個體中，尋找 **.vsix**中的檔案**bin** VSIX 專案的目錄。 將它複製到您想要安裝 VSIX 的電腦。 按兩下 VSIX 檔案，檔案總管 中。
 
-##  <a name="command"></a> 定義功能表命令
+## <a name="command"></a> 定義功能表命令
 
 您可以將其他功能表命令定義加入現有的軌跡或命令專案。 每個命令都由具有下列特性的類別加以定義：
 
@@ -124,11 +124,11 @@ ms.locfileid: "58415469"
 
 - 實作 `ICommandExtension` 的方法如下：
 
-  -   `string Text {get;}` - 出現在此功能表中的標籤。
+  - `string Text {get;}` - 出現在此功能表中的標籤。
 
-  -   `void QueryStatus(IMenuCommand command)` - 當使用者以滑鼠右鍵按一下此圖表時會被呼叫，並且判斷是否應該針對使用者的目前選取範圍顯示並啟用此命令。
+  - `void QueryStatus(IMenuCommand command)` - 當使用者以滑鼠右鍵按一下此圖表時會被呼叫，並且判斷是否應該針對使用者的目前選取範圍顯示並啟用此命令。
 
-  -   `void Execute(IMenuCommand command)` - 當使用者選取此命令時會被呼叫。
+  - `void Execute(IMenuCommand command)` - 當使用者選取此命令時會被呼叫。
 
 - 若要判斷目前選取範圍，您可以匯入 `IDiagramContext`：
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-##  <a name="gesture"></a> 定義軌跡處理常式
+## <a name="gesture"></a> 定義軌跡處理常式
 
 軌跡處理常式會回應和當使用者拖曳項目拖曳至相依性圖表中，當使用者按兩下圖表中的任何位置。
 
@@ -238,7 +238,7 @@ namespace MyLayerExtensions // change to your preference
 
 請注意下列有關軌跡處理常式的重點：
 
--   `IGestureExtension` 的成員如下：
+- `IGestureExtension` 的成員如下：
 
      **OnDoubleClick** - 當使用者在圖表上的任何位置按兩下時受呼叫。
 
@@ -246,7 +246,7 @@ namespace MyLayerExtensions // change to your preference
 
      **OnDragDrop** - 當使用者將項目置放到此圖表上時受呼叫。
 
--   每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如: 
+- 每個方法的第一個引數是 `IShape`，您可以從這裡取得此圖層項目。 例如: 
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -259,7 +259,7 @@ namespace MyLayerExtensions // change to your preference
     }
     ```
 
--   針對某些拖曳項目類型的處理常式早已受到定義。 比方說，使用者可以將項目從 [方案總管] 拖曳至相依性圖表。 您無法針對這些項目類型定義拖曳處理常式。 在這些情況下，不會叫用您的 `DragDrop` 方法。
+- 針對某些拖曳項目類型的處理常式早已受到定義。 比方說，使用者可以將項目從 [方案總管] 拖曳至相依性圖表。 您無法針對這些項目類型定義拖曳處理常式。 在這些情況下，不會叫用您的 `DragDrop` 方法。
 
 ## <a name="see-also"></a>另請參閱
 

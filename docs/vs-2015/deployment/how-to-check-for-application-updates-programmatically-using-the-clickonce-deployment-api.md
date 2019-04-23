@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac7a5665b287f51e59d99d21802acc252a55a99a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e0c2b544a72f8a50000b48092658254c6b978a1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944586"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074345"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>HOW TO：檢查以程式設計方式使用 ClickOnce 部署 API 的應用程式更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +37,19 @@ ClickOnce 提供兩種方式可在部署之後，更新的應用程式。 在第
   
 ### <a name="to-check-for-updates-programmatically"></a>若要以程式設計方式檢查更新  
   
-1.  建立新的 Windows Forms 應用程式，使用您慣用的命令列或視覺效果工具。  
+1. 建立新的 Windows Forms 應用程式，使用您慣用的命令列或視覺效果工具。  
   
-2.  建立按鈕、 功能表項目，或您希望使用者選取，以檢查有更新的其他使用者介面項目。 從該項目的事件處理常式，呼叫下列方法來檢查並安裝更新。  
+2. 建立按鈕、 功能表項目，或您希望使用者選取，以檢查有更新的其他使用者介面項目。 從該項目的事件處理常式，呼叫下列方法來檢查並安裝更新。  
   
      [!code-cpp[ClickOnceAPI#6](../snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#6)]
      [!code-csharp[ClickOnceAPI#6](../snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#6)]
      [!code-vb[ClickOnceAPI#6](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#6)]  
   
-3.  編譯您的應用程式。  
+3. 編譯您的應用程式。  
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>使用 Mage.exe 會更新以程式設計方式檢查應用程式部署  
   
--   請依照下列指示來部署您的應用程式中所述，使用 Mage.exe[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 在呼叫 Mage.exe 來產生部署資訊清單，請務必使用命令列參數`providerUrl`，並指定 ClickOnce 在哪裡檢查更新檔的 URL。 如果您的應用程式會從更新[ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp)，比方說，您的呼叫，以產生部署資訊清單可能會看起來像這樣：  
+- 請依照下列指示來部署您的應用程式中所述，使用 Mage.exe[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 在呼叫 Mage.exe 來產生部署資訊清單，請務必使用命令列參數`providerUrl`，並指定 ClickOnce 在哪裡檢查更新檔的 URL。 如果您的應用程式會從更新[ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp)，比方說，您的呼叫，以產生部署資訊清單可能會看起來像這樣：  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  
@@ -57,7 +57,7 @@ ClickOnce 提供兩種方式可在部署之後，更新的應用程式。 在第
   
 ### <a name="using-mageuiexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>使用 MageUI.exe 部署的應用程式，以程式設計方式檢查更新  
   
--   請依照下列指示來部署您的應用程式中所述，使用 Mage.exe[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 在 **部署選項**索引標籤上，設定**開始位置**ClickOnce 應該檢查更新的應用程式資訊清單的欄位。 在 **更新選項**索引標籤上，清除**此應用程式應該檢查更新檔**核取方塊。  
+- 請依照下列指示來部署您的應用程式中所述，使用 Mage.exe[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 在 **部署選項**索引標籤上，設定**開始位置**ClickOnce 應該檢查更新的應用程式資訊清單的欄位。 在 **更新選項**索引標籤上，清除**此應用程式應該檢查更新檔**核取方塊。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  您的應用程式必須使用以程式設計方式更新的完全信任權限。  

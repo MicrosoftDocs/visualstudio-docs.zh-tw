@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3201d1c22ac718497b2e355ccf02047ee82a7aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c1e6aa853d2f8202ed42652a0d0f70a7300c0b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077163"
 ---
 # <a name="customizing-text-and-image-fields"></a>自訂文字和影像欄位
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,13 +188,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 #### <a name="to-create-a-subclass-of-imagefield"></a>若要建立的 ImageField 子類別  
   
-1.  設定**產生雙衍生**DSL 定義中的父圖形類別的屬性。  
+1. 設定**產生雙衍生**DSL 定義中的父圖形類別的屬性。  
   
-2.  覆寫`InitializeShapeFields`圖形類別的方法。  
+2. 覆寫`InitializeShapeFields`圖形類別的方法。  
   
-    -   在 DSL 專案中，建立新的程式碼檔案並寫入 shape 類別的部分類別定義。 覆寫的方法定義。  
+    - 在 DSL 專案中，建立新的程式碼檔案並寫入 shape 類別的部分類別定義。 覆寫的方法定義。  
   
-3.  檢查的程式碼`InitializeShapeFields`DSL\GeneratedCode\Shapes.cs 中。  
+3. 檢查的程式碼`InitializeShapeFields`DSL\GeneratedCode\Shapes.cs 中。  
   
      在您覆寫的方法，呼叫基底方法，然後建立您自己的映像欄位類別的執行個體。 使用此選項可將一般的映像 欄位中取代`shapeFields`清單。  
   

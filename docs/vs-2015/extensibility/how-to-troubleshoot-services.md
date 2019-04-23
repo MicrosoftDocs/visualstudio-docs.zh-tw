@@ -10,12 +10,12 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47dad5f6b508356bde7570996127007b25b287b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5311aa3ff390611942aa91cb1f2a53ca5a76258d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940574"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074304"
 ---
 # <a name="how-to-troubleshoot-services"></a>HOW TO：針對服務進行疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ if (log == null) return;
   
 ### <a name="to-troubleshoot-a-service"></a>若要疑難排解服務  
   
-1.  檢查系統登錄，以查看是否已正確註冊該服務。 如需詳細資訊，請參閱 <<c0> [ 登錄服務](../misc/registering-services.md)。  
+1. 檢查系統登錄，以查看是否已正確註冊該服務。 如需詳細資訊，請參閱 <<c0> [ 登錄服務](../misc/registering-services.md)。  
   
      下列.reg 檔案片段顯示可能會如何登錄 SVsTextManager 服務：  
   
@@ -52,17 +52,17 @@ if (log == null) return;
   
      在上述範例中，版本號碼是版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，例如 12.0 或 14.0，機碼 {F5E7E71D-1401-11d1-883B-0000F87579D2} 是 SVsTextManager 服務預設值 {的服務識別元 (SID)F5e7e720-1401-11d1-883b-0000f87579d2} 是封裝之文字管理員 VSPackage，提供服務的 GUID。  
   
-2.  使用服務類型而不是介面類型，當您呼叫 GetService。 要求的服務時[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]， <xref:Microsoft.VisualStudio.Shell.Package> GUID 擷取型別。 如果存在下列條件，則不會找到服務：  
+2. 使用服務類型而不是介面類型，當您呼叫 GetService。 要求的服務時[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]， <xref:Microsoft.VisualStudio.Shell.Package> GUID 擷取型別。 如果存在下列條件，則不會找到服務：  
   
-    1.  介面型別會傳遞至 GetService，而不是服務類型。  
+    1. 介面型別會傳遞至 GetService，而不是服務類型。  
   
-    2.  GUID 不是明確指派給介面。 因此，系統會建立物件所需的預設 GUID。  
+    2. GUID 不是明確指派給介面。 因此，系統會建立物件所需的預設 GUID。  
   
-3.  請務必決定位置的服務要求的 VSPackage。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 站台的 VSPackage 之後建構該項目,，以及呼叫之前<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>。  
+3. 請務必決定位置的服務要求的 VSPackage。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 站台的 VSPackage 之後建構該項目,，以及呼叫之前<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>。  
   
      如果您需要服務 VSPackage 建構函式中的程式碼，請將它移至 Initialize 方法。  
   
-4.  請務必使用正確的服務提供者。  
+4. 請務必使用正確的服務提供者。  
   
      並非所有的服務提供者是相同的。 服務提供者，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]傳遞至工具視窗不同於傳遞至 VSPackage。 工具視窗服務提供者知道<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>，但不知道<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>。 您可以呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>取得 VSPackage 服務提供者的工具視窗內。  
   

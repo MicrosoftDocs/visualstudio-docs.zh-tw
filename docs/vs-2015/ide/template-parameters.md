@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc5f69fee15d3dc67b31c54f0b397fbf039aa52a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787088"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077338"
 ---
 # <a name="template-parameters"></a>範本參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "54787088"
 ## <a name="declaring-and-enabling-template-parameters"></a>宣告和啟用範本參數  
  範本參數是以 $*parameter*$ 格式來宣告。 例如：  
   
--   $safeprojectname$  
+- $safeprojectname$  
   
--   $guid1$  
+- $guid1$  
   
--   $guid5$  
+- $guid5$  
   
 #### <a name="to-enable-parameter-substitution-in-templates"></a>若要啟用範本中的參數替換  
   
-1.  在範本的 .vstemplate 檔案中，找出對應至您要為其啟用參數取代之項目的 `ProjectItem` 項目。  
+1. 在範本的 .vstemplate 檔案中，找出對應至您要為其啟用參數取代之項目的 `ProjectItem` 項目。  
   
-2.  將 `ReplaceParameters` 項目的 `ProjectItem` 屬性設定為 `true`。  
+2. 將 `ReplaceParameters` 項目的 `ProjectItem` 屬性設定為 `true`。  
   
-3.  在適當時，於專案項目的程式碼檔案中納入參數。 例如，下列參數指定用於檔案中命名空間的安全專案名稱：  
+3. 在適當時，於專案項目的程式碼檔案中納入參數。 例如，下列參數指定用於檔案中命名空間的安全專案名稱：  
   
     ```  
     namespace $safeprojectname$  
@@ -53,7 +53,7 @@ ms.locfileid: "54787088"
 > [!NOTE]
 >  範本參數會區分大小寫。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`clrversion`|通用語言執行平台 (CLR) 的最新版本。|  
 |`GUID [1-10]`|GUID；用來取代專案檔中的專案 GUID。 您最多可以指定 10 個唯一的 GUID (例如，`guid1)`。|  

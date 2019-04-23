@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a949f920fe956d1b0b3e7e9522d1b82e26a60168
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077819"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>在程式碼和文字編輯器中撰寫程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,45 +188,45 @@ Visual Studio 的 [巡覽至] 命令會對程式碼執行焦點式搜尋，協�
 
  如需語言專屬編輯器選項的相關資訊，請參閱：  
 
--   [Visual Basic 設定](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+- [Visual Basic 設定](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [使用 C# 的 Visual Studio 開發環境](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+- [使用 C# 的 Visual Studio 開發環境](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [格式、JavaScript、文字編輯器、選項](../ide/reference/options-text-editor-javascript-formatting.md)  
+- [格式、JavaScript、文字編輯器、選項](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>本節內容  
 
--   [尋找和取代文字](../ide/finding-and-replacing-text.md)  
+- [尋找和取代文字](../ide/finding-and-replacing-text.md)  
 
--   [編碼與分行符號](../ide/encodings-and-line-breaks.md)  
+- [編碼與分行符號](../ide/encodings-and-line-breaks.md)  
 
--   [大綱](../ide/outlining.md)  
+- [大綱](../ide/outlining.md)  
 
--   [重構](../ide/refactoring-in-visual-studio.md)  
+- [重構](../ide/refactoring-in-visual-studio.md)  
 
--   [產能的秘訣](../ide/productivity-tips-for-visual-studio.md)  
+- [產能的秘訣](../ide/productivity-tips-for-visual-studio.md)  
 
--   [使用 IntelliSense](../ide/using-intellisense.md)  
+- [使用 IntelliSense](../ide/using-intellisense.md)  
 
--   [自訂編輯器](../ide/customizing-the-editor.md)  
+- [自訂編輯器](../ide/customizing-the-editor.md)  
 
--   [如何：透過自訂捲軸的方式追蹤程式碼](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+- [如何：透過自訂捲軸的方式追蹤程式碼](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [如何：使用查看定義 (Alt+F12) 檢視及編輯程式碼](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+- [如何：使用查看定義 (Alt+F12) 檢視及編輯程式碼](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
--   [執行燈泡提示的快速動作](../ide/perform-quick-actions-with-light-bulbs.md)  
+- [執行燈泡提示的快速動作](../ide/perform-quick-actions-with-light-bulbs.md)  
 
--   [程式碼片段](../ide/code-snippets.md)  
+- [程式碼片段](../ide/code-snippets.md)  
 
--   [使用工具箱](../ide/using-the-toolbox.md)  
+- [使用工具箱](../ide/using-the-toolbox.md)  
 
--   [檢視程式碼的結構](../ide/viewing-the-structure-of-code.md)  
+- [檢視程式碼的結構](../ide/viewing-the-structure-of-code.md)  
 
--   [在程式碼中設定書籤](../ide/setting-bookmarks-in-code.md)  
+- [在程式碼中設定書籤](../ide/setting-bookmarks-in-code.md)  
 
--   [使用工作清單](../ide/using-the-task-list.md)  
+- [使用工作清單](../ide/using-the-task-list.md)  
 
--   [尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)  
+- [尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

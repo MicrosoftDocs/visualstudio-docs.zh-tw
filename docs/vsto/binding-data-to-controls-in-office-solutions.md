@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f7d80071871ebe970a9584a1ac40cead7b59ac26
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1bbcbc2411d261b4ddec9423896dc21acc3e0033
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605714"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073731"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>資料繫結至 Office 方案中的控制項
   您可以將 Microsoft Office Word 文件或 Microsoft Office Excel 工作表中的 Windows Form 控制項和「主控制項」  (host control) 繫結至資料來源，讓控制項自動顯示資料。 您可以將資料繫結至應用程式層級和文件層級專案中的控制項。
@@ -73,22 +73,22 @@ ms.locfileid: "56605714"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>將文件層級專案中的資料繫結在設計階段
  下列主題示範如何在設計階段繫結資料：
 
--   [如何：從資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [如何：從資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 
--   [如何：資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [如何：資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 
--   [如何：物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [如何：物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)
 
--   [如何：服務中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [如何：服務中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-services.md)
 
--   [如何：捲動工作表中的資料庫記錄](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [如何：捲動工作表中的資料庫記錄](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 
 ### <a name="bind-data-in-vsto-add-in-projects"></a>在 VSTO 增益集專案中繫結資料
  在 VSTO 增益集專案中，您可以只在執行階段將控制項。 下列主題會示範在執行階段繫結資料的範例：
 
--   [逐步解說：在 VSTO 增益集專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
+- [逐步解說：在 VSTO 增益集專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
 
--   [逐步解說：在 VSTO 增益集專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
+- [逐步解說：在 VSTO 增益集專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
 
 ## <a name="update-data-that-is-bound-to-host-controls"></a>更新資料繫結至主控制項
  資料來源與主控制項之間的資料繫結涉及雙向資料更新。 在簡單資料繫結中，資料來源中的變更會自動反映在主控制項中，但主控制項中的變更需要明確的呼叫才能更新資料來源。 這是因為在某些情況下，一個資料繫結欄位中的變更，必須也發生在另一個資料繫結欄位中，才會予以接受。 例如，您可能有兩個欄位，一個用於年齡，另一個用於工作經驗。 工作經驗不可超過年齡。 使用者不可將年齡從 50 更新為 25，然後再將工作經驗從 30 更新為 10，除非該使用者同時進行變更。 為了解決這個問題，簡單資料繫結的欄位會在程式碼明確傳送更新之後才進行更新。

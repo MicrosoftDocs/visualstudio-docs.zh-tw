@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: ed8f06513b240719364539a24295a403b83265f4
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 3f09f03a3404bbde346370149f210bf45e6e2306
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872997"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078248"
 ---
 # <a name="deploy-custom-start-pages"></a>部署自訂起始頁
 
@@ -27,9 +27,9 @@ ms.locfileid: "57872997"
 
 當您使用起始頁專案範本，建立起始頁，然後建置專案時，Visual Studio 會建立 *.vsix*可散發的檔案。 封裝中的 [入門] 頁面 *.vsix*檔案可讓您部署中，根據您的適用對象的下列選項：
 
--   您可以將放 *.vsix*公用網站或網路共用上的檔案。 當有人開啟檔案時，會自動安裝 [入門] 頁面。
+- 您可以將放 *.vsix*公用網站或網路共用上的檔案。 當有人開啟檔案時，會自動安裝 [入門] 頁面。
 
--   您可以上傳 *.vsix*的檔案[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站，使用者可以使用來安裝它**擴充管理員**。
+- 您可以上傳 *.vsix*的檔案[Visual Studio Marketplace](https://marketplace.visualstudio.com/)網站，使用者可以使用來安裝它**擴充管理員**。
 
 起始頁專案範本會建立一份預設 Visual Studio 起始頁，讓您可以修改複本，並保留原始。
 
@@ -62,9 +62,9 @@ Visual Studio 能夠辨識 [入門] 頁面中，如`Content Element`VSIX 資訊�
 
 ### <a name="to-create-an-all-users-deployment"></a>若要建立的所有使用者部署
 
-1.  開啟*extension.vsixmanifest*程式碼檢視中的檔案。
+1. 開啟*extension.vsixmanifest*程式碼檢視中的檔案。
 
-2.  在 `Identifier`加入 vsix 資訊清單的項目`AllUsers`項目，其值為`true`。
+2. 在 `Identifier`加入 vsix 資訊清單的項目`AllUsers`項目，其值為`true`。
 
     ```
     <AllUsers>true</AllUsers>
@@ -72,9 +72,9 @@ Visual Studio 能夠辨識 [入門] 頁面中，如`Content Element`VSIX 資訊�
 
      這會造成 vsix 安裝程式提示您輸入系統管理員權限，然後再安裝 檔案 *\Common7\IDE\Extensions* 。
 
-3.  開啟 *.pkgdef*檔案。
+3. 開啟 *.pkgdef*檔案。
 
-4.  修改 *.pkgdef*來設定預設起始頁 HKLM 底下新增下列程式碼，其中*MyStartPage.xaml*名稱 *.xaml*檔案，其中包含您開始頁面。
+4. 修改 *.pkgdef*來設定預設起始頁 HKLM 底下新增下列程式碼，其中*MyStartPage.xaml*名稱 *.xaml*檔案，其中包含您開始頁面。
 
      [$RootKey$\StartPage\Default]
 
@@ -89,11 +89,11 @@ Visual Studio 能夠辨識 [入門] 頁面中，如`Content Element`VSIX 資訊�
 
 ### <a name="to-manually-install-a-custom-start-page"></a>若要手動安裝自訂起始頁
 
-1.  複製 *.xaml*檔案，包含起始頁的標記，以及任何支援的檔案以外的組件，並將它們貼在使用者的 * \StartPages\*資料夾。
+1. 複製 *.xaml*檔案，包含起始頁的標記，以及任何支援的檔案以外的組件，並將它們貼在使用者的 * \StartPages\*資料夾。
 
-2.  如果 [啟動] 頁面需要組件，請將其複製並貼到 *...\\{Visual Studio 安裝資料夾} \Common7\IDE\PrivateAssemblies\\*。
+2. 如果 [啟動] 頁面需要組件，請將其複製並貼到 *...\\{Visual Studio 安裝資料夾} \Common7\IDE\PrivateAssemblies\\*。
 
-3.  在 **自訂起始頁**上列出**啟動**選項頁面上，選取新的 入門 頁面。 如需詳細資訊，請參閱 <<c0> [ 自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)。
+3. 在 **自訂起始頁**上列出**啟動**選項頁面上，選取新的 入門 頁面。 如需詳細資訊，請參閱 <<c0> [ 自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)。
 
 ## <a name="see-also"></a>另請參閱
 

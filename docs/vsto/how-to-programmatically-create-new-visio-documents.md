@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfefb49b2dea575a7a99c2531a6f241872cd4704
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61fb1302ffb0a068122c333e196178dfa2b30d86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078937"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>HOW TO：以程式設計方式建立新的 Visio 文件
   當您建立新的 Microsoft Office Visio 繪圖文件時，您會將它加入已開啟 Visio 文件的 `Microsoft.Office.Interop.Visio.Documents` 集合。 因此，`Microsoft.Office.Interop.Visio.Documents.Add` 方法會建立新的 Visio 繪圖文件。 如需詳細資訊，請參閱 Microsoft.Office.Interop.Visio.Documents.Add [myTemplate.vst](/office/vba/api/Visio.Documents.Add) 方法的 VBA 參考文件。
@@ -27,7 +27,7 @@ ms.locfileid: "56629985"
 
 ### <a name="to-create-a-new-document"></a>建立新文件
 
--   使用 `Microsoft.Office.Interop.Visio.Documents.Add` 方法來建立不是以範本為基礎的空白新文件。
+- 使用 `Microsoft.Office.Interop.Visio.Documents.Add` 方法來建立不是以範本為基礎的空白新文件。
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#1)]
@@ -37,7 +37,7 @@ ms.locfileid: "56629985"
 
 ### <a name="to-create-a-new-document-that-is-copied-from-an-existing-document"></a>建立從現有文件複製的新文件
 
--   呼叫 `Microsoft.Office.Interop.Visio.Documents.Add` 方法並指定 Visio 圖表的路徑。
+- 呼叫 `Microsoft.Office.Interop.Visio.Documents.Add` 方法並指定 Visio 圖表的路徑。
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#2)]
@@ -47,7 +47,7 @@ ms.locfileid: "56629985"
 
 ### <a name="to-create-a-new-stencil-that-is-copied-from-an-existing-stencil"></a>建立從現有樣板複製的新樣板
 
--   呼叫 `Microsoft.Office.Interop.Visio.Documents.Add` 方法並指定樣板的路徑。
+- 呼叫 `Microsoft.Office.Interop.Visio.Documents.Add` 方法並指定樣板的路徑。
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#3)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]
@@ -57,7 +57,7 @@ ms.locfileid: "56629985"
 
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>建立以現有範本為基礎的新文件
 
--   呼叫 `Microsoft.Office.Interop.Visio.Documents.Add` 方法並指定範本的路徑。
+- 呼叫 `Microsoft.Office.Interop.Visio.Documents.Add` 方法並指定範本的路徑。
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#4)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#4)]
@@ -65,11 +65,11 @@ ms.locfileid: "56629985"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個程式碼範例需要下列項目：
 
--   名為 Visio 文件`myDrawing.vsd`必須位於名為`Test`中*我的文件*資料夾 （適用於 Windows XP 及更早版本） 或*文件*（適用於 Windows Vista) 的資料夾。
+- 名為 Visio 文件`myDrawing.vsd`必須位於名為`Test`中*我的文件*資料夾 （適用於 Windows XP 及更早版本） 或*文件*（適用於 Windows Vista) 的資料夾。
 
--   名為 Visio 文件`myStencil.vss`必須位於名為`Test`中*我的文件*資料夾 （適用於 Windows XP 及更早版本） 或*文件*（適用於 Windows Vista) 的資料夾。
+- 名為 Visio 文件`myStencil.vss`必須位於名為`Test`中*我的文件*資料夾 （適用於 Windows XP 及更早版本） 或*文件*（適用於 Windows Vista) 的資料夾。
 
--   名為 Visio 文件`myTemplate.vst`必須位於名為`Test`中*我的文件*資料夾 （適用於 Windows XP 及更早版本） 或*文件*（適用於 Windows Vista) 的資料夾。
+- 名為 Visio 文件`myTemplate.vst`必須位於名為`Test`中*我的文件*資料夾 （適用於 Windows XP 及更早版本） 或*文件*（適用於 Windows Vista) 的資料夾。
 
 ## <a name="see-also"></a>另請參閱
 - [Visio 方案](../vsto/visio-solutions.md)

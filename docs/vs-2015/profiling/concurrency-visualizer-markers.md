@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47860775a6351cab83cd43975e94373c3558305a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 143cea7a60fd136777943e849713ca0bdfe171fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795343"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078313"
 ---
 # <a name="concurrency-visualizer-markers"></a>並行視覺化檢視中的標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ ms.locfileid: "54795343"
 ## <a name="kinds-of-markers"></a>標記類型  
  並行視覺化檢視使用三種類型的標記來表示應用程式事件︰旗標、訊息和範圍。  
   
-1.  使用*旗標*可指出應用程式中有趣的時間點。  例如，您可以使用旗標來表示變數值已達到特定的閾值或表示擲回例外狀況。  
+1. 使用*旗標*可指出應用程式中有趣的時間點。  例如，您可以使用旗標來表示變數值已達到特定的閾值或表示擲回例外狀況。  
   
-2.  *訊息*也可標記時間點，但是您可以使用它追蹤記錄檔樣式。  例如，您現在可以在訊息呼叫中包裝傾印到記錄檔的內容以便追蹤，並在並行視覺化檢視中檢視。 您也可以使用並行視覺化檢視將此資料匯出至 CSV 檔案。  
+2. *訊息*也可標記時間點，但是您可以使用它追蹤記錄檔樣式。  例如，您現在可以在訊息呼叫中包裝傾印到記錄檔的內容以便追蹤，並在並行視覺化檢視中檢視。 您也可以使用並行視覺化檢視將此資料匯出至 CSV 檔案。  
   
-3.  *範圍*代表應用程式中一個時間間隔，例如其中一個階段。  
+3. *範圍*代表應用程式中一個時間間隔，例如其中一個階段。  
   
 ## <a name="marker-linkage-to-threads"></a>執行緒標記連結  
  產生標記的每個執行緒都有不同的時間軸通道。  負責產生標記事件的執行緒識別碼會顯示在標記通道的描述旁邊。  標記通道左邊顯示的識別碼符合目前處理序中另一個執行緒的 ID。  

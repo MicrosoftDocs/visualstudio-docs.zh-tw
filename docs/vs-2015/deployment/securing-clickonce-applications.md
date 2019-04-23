@@ -1,5 +1,5 @@
 ---
-title: 保護 ClickOnce 應用程式 |Microsoft Docs
+title: 設定 ClickOnce 應用程式的安全性 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2266cae99336b1ab56131feee9aa96852746b73b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945732"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076194"
 ---
 # <a name="securing-clickonce-applications"></a>保護 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58945732"
  預設的使用權限是根據應用程式原始版本的部署位置而定，此應用程式的更新仍會繼承這些使用權限。 如果將應用程式設定為從 Web 或網路位置檢查是否有更新，且發現有新版本可用時，原始安裝程序可能會取得網際網路或內部網路區域的使用權限，而非「完全信任」使用權限。 若要避免使用者看到提示，系統管理員可以指定 ClickOnce 部署原則，將特定的應用程式發行者定義為受信任的來源。 在部署此原則的電腦上，會自動授與使用權限，因此使用者就不會看到提示。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。 若要設定信任的應用程式部署，可以在電腦或企業層級安裝憑證。 如需詳細資訊，請參閱[如何：將信任發行者新增到 ClickOnce 應用程式的用戶端電腦](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)。  
   
 ## <a name="code-access-security-policies"></a>程式碼存取安全性原則  
- 應用程式的權限取決於中的設定[ \<trustInfo > 項目](../deployment/trustinfo-element-clickonce-application.md)應用程式資訊清單的項目。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會根據專案的 [安全性]  屬性頁設定，自動產生此資訊。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式只能取得它所要求的特定權限， 例如，假設檔案存取需要「完全信任」權限，如果應用程式要求「檔案存取」權限，那麼它只能取得「檔案存取」權限，而不是「完全信任」權限。 當您開發 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式時，應該確定只要求應用程式所需的特定權限。 在大部分情況下，您可以使用 [網際網路] 或 [近端內部網路] 區域將應用程式限制為部分信任。 如需詳細資訊，請參閱[如何：ClickOnce 應用程式設定的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。 如果應用程式需要自訂權限，您可以建立自訂區域。 如需詳細資訊，請參閱[如何：設定 ClickOnce 應用程式的自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
+ 應用程式的權限取決於應用程式資訊清單 [\<trustInfo> Element](../deployment/trustinfo-element-clickonce-application.md)元素中的設定。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會根據專案的 [安全性]  屬性頁設定，自動產生此資訊。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式只能取得它所要求的特定權限， 例如，假設檔案存取需要「完全信任」權限，如果應用程式要求「檔案存取」權限，那麼它只能取得「檔案存取」權限，而不是「完全信任」權限。 當您開發 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式時，應該確定只要求應用程式所需的特定權限。 在大部分情況下，您可以使用 [網際網路] 或 [近端內部網路] 區域將應用程式限制為部分信任。 如需詳細資訊，請參閱[如何：ClickOnce 應用程式設定的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。 如果應用程式需要自訂權限，您可以建立自訂區域。 如需詳細資訊，請參閱[如何：設定 ClickOnce 應用程式的自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
   
  若包含部署應用程式的區域預設權限以外的權限，在安裝或更新期間，將會造成提示使用者授權。 若要避免使用者看到提示，系統管理員可以指定 ClickOnce 部署原則，將特定的應用程式發行者定義為受信任的來源。 在部署此原則的電腦上，使用權限會自動授與，因此使用者就不會看到提示。  
   
@@ -79,11 +79,11 @@ ms.locfileid: "58945732"
 ## <a name="deploying-obfuscated-assemblies"></a>部署模糊化組件  
  您可能會想要使用 Dotfuscator 模糊化您的應用程式，防止他人對程式碼進行反向工程。 不過，組件模糊化功能尚未整合到 Visual Studio IDE 或 ClickOnce 部署程序中； 因此，您將需要在部署程序之外執行模糊化，或許是使用建置後步驟。 在建置專案後，您要在 Visual Studio 外面手動執行下列步驟：  
   
-1.  使用 Dotfuscator 執行模糊化。  
+1. 使用 Dotfuscator 執行模糊化。  
   
-2.  使用 Mage.exe 或 MageUI.exe 產生 ClickOnce 資訊清單並加以簽署。 如需詳細資訊，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)並[MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
+2. 使用 Mage.exe 或 MageUI.exe 產生 ClickOnce 資訊清單並加以簽署。 如需詳細資訊，請參閱 < [Mage.exe （資訊清單產生和編輯工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)並[MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
   
-3.  手動發行 (複製) 檔案到部署的來源位置 (Web 伺服器、UNC 共用或 CD-ROM)。  
+3. 手動發行 (複製) 檔案到部署的來源位置 (Web 伺服器、UNC 共用或 CD-ROM)。  
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   

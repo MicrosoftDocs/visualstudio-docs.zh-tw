@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7d0a13a72613ba72be5a90aa65be991d6ca10b3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6dbc2638fa23a1e0c7bf1301c3c978a1ef864c75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657034"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074095"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>跨多個專案連接設定的應用程式
 使用原始檔控制外掛程式 API 版本 1.2，建置可以跨多個專案或多個連接內容中執行相同的原始檔控制作業批次作業使用原始檔控制外掛程式。 批次可以用於去除多餘]、 [每個專案的使用者經驗的對話方塊。
@@ -28,9 +28,9 @@ ms.locfileid: "59657034"
 ## <a name="new-functions"></a>新的函式
 下列新函數支援批次作業：
 
--   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
+- [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
 
--   [SccEndBatch](../../extensibility/sccendbatch-function.md)
+- [SccEndBatch](../../extensibility/sccendbatch-function.md)
 
 `SCCBeginBatch`函式會啟動一組原始檔控制作業。 `SccEndBatch`函式會關閉該群組。 可能不是巢狀群組。
 

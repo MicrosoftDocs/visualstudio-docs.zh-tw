@@ -11,12 +11,12 @@ ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5a7602a152054587fa450beae56ad6cbe2c72241
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 70b94eeb48f6b099b3183eb6cbee5e4846d0d92b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941897"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075450"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>延伸 Visual Studio 的其他部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "58941897"
 ## <a name="extending-the-toolbox"></a>擴充工具箱
  了解如何將新控制項和其他項目新增至 [工具箱] 中，以及如何使用 [工具箱] 的功能：
 
--   [建立 WPF 工具箱控制項](../extensibility/creating-a-wpf-toolbox-control.md)
+- [建立 WPF 工具箱控制項](../extensibility/creating-a-wpf-toolbox-control.md)
 
--   [建立 Windows Form 工具箱控制項](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [建立 Windows Form 工具箱控制項](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extending-the-status-bar"></a>延伸狀態列
  了解如何讀取和寫入狀態列的進度列，以及如何提供動畫和其他 UI:[擴充狀態列](../extensibility/extending-the-status-bar.md)。

@@ -11,12 +11,12 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9627170ad65906af1bc7930897c374504cae4552
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: abbcc1fc1048866ef790a4b6779ed15ef80a9be1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000763"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074238"
 ---
 # <a name="project-persistence"></a>專案持續性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "59000763"
   
  專案項目可以是檔案為基礎，或非檔案型：  
   
--   檔案為基礎的項目可以是本機或遠端。 在 C# 中的 Web 專案，比方說，連線到遠端系統上的檔案保存在本機，而檔案本身會保存在遠端系統上。  
+- 檔案為基礎的項目可以是本機或遠端。 在 C# 中的 Web 專案，比方說，連線到遠端系統上的檔案保存在本機，而檔案本身會保存在遠端系統上。  
   
--   非檔案型的項目可以將項目儲存到資料庫或儲存機制。  
+- 非檔案型的項目可以將項目儲存到資料庫或儲存機制。  
   
 ## <a name="commit-models"></a>認可模型  
  決定專案項目位於何處之後, 您必須選擇適當的認可模型。 例如，在具有本機檔案的檔案為基礎的模型，每個專案可以儲存自主。 在儲存機制模型中，您可以儲存在單一交易中的數個項目。 如需詳細資訊，請參閱 <<c0> [ 專案類型的設計決策](../../extensibility/internals/project-type-design-decisions.md)。  

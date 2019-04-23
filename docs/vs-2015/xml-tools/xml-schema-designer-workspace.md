@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d0b14b9f1cbbb81cc814546c5965e505a42885d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6200b96992638ccf5ad009ac103551824219135f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656540"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074956"
 ---
 # <a name="xml-schema-designer-workspace"></a>XML 結構描述設計工具工作空間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,29 +26,29 @@ XML 結構描述設計工具 (XSD 設計工具) 是一種圖形化工具，可�
 ## <a name="adding-nodes-to-the-workspace"></a>將節點加入至工作空間  
  您可以利用下列方式將節點加入至工作空間：  
   
--   中的 < 結構描述設定的詳細資料 > 一節[開始檢視](../xml-tools/start-view.md)，按一下**新增**全域節點型別旁的連結。  
+- 中的 < 結構描述設定的詳細資料 > 一節[開始檢視](../xml-tools/start-view.md)，按一下**新增**全域節點型別旁的連結。  
   
--   將 XML 結構描述總管中的全域節點、檔案節點及命名空間節點拖放至三個檢視的任何一個上。 如需詳細資訊，請參閱 「 拖放節點 」 一節[XML 結構描述總管](../xml-tools/xml-schema-explorer.md)。  
+- 將 XML 結構描述總管中的全域節點、檔案節點及命名空間節點拖放至三個檢視的任何一個上。 如需詳細資訊，請參閱 「 拖放節點 」 一節[XML 結構描述總管](../xml-tools/xml-schema-explorer.md)。  
   
--   使用 XML 結構描述總管中的操作功能表。 如需詳細資訊，請參閱 <<c0> [ 快顯功能表](../xml-tools/context-menus-xml-schema-explorer.md)。  
+- 使用 XML 結構描述總管中的操作功能表。 如需詳細資訊，請參閱 <<c0> [ 快顯功能表](../xml-tools/context-menus-xml-schema-explorer.md)。  
   
--   在 XSD 總管中執行搜尋，然後按一下**反白顯示的節點加入工作區**摘要結果面板上的按鈕。 如需詳細資訊，請參閱 <<c0> [ 搜尋結構描述集](../xml-tools/searching-the-schema-set.md)。  
+- 在 XSD 總管中執行搜尋，然後按一下**反白顯示的節點加入工作區**摘要結果面板上的按鈕。 如需詳細資訊，請參閱 <<c0> [ 搜尋結構描述集](../xml-tools/searching-the-schema-set.md)。  
   
 ## <a name="view-switching"></a>檢視切換  
  若要切換檢視，請使用下列其中一項：  
   
--   XSD 設計工具工具列。  
+- XSD 設計工具工具列。  
   
--   內容模型檢視和圖表檢視的操作功能表。  
+- 內容模型檢視和圖表檢視的操作功能表。  
   
--   開始檢視頁上的浮水印，或空白內容模型檢視或圖表檢視上的浮水印。  
+- 開始檢視頁上的浮水印，或空白內容模型檢視或圖表檢視上的浮水印。  
   
--   快速鍵：CTRL + 1 開始檢視、 CTRL + 2 適用於 [圖表] 檢視中和 CTRL + 3 的內容模型檢視。  
+- 快速鍵：CTRL + 1 開始檢視、 CTRL + 2 適用於 [圖表] 檢視中和 CTRL + 3 的內容模型檢視。  
   
 ## <a name="in-this-section"></a>本節內容  
   
--   [開始檢視](../xml-tools/start-view.md)  
+- [開始檢視](../xml-tools/start-view.md)  
   
--   [圖形檢視](../xml-tools/graph-view.md)  
+- [圖形檢視](../xml-tools/graph-view.md)  
   
--   [內容模型檢視](../xml-tools/content-model-view.md)
+- [內容模型檢視](../xml-tools/content-model-view.md)

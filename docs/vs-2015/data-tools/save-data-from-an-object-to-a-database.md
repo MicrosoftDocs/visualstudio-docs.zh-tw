@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 120020f4ae1aa409f64ce9999c0fcd9c96e806a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074879"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>從物件中將資料儲存至資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "59659016"
   
 ### <a name="to-save-new-records-from-an-object-to-a-database"></a>若要從物件的新記錄儲存至資料庫  
   
--   建立記錄值傳遞至`TableAdapter.Insert`方法。  
+- 建立記錄值傳遞至`TableAdapter.Insert`方法。  
   
      下列範例會建立新的客戶記錄，在`Customers`資料表中的值傳遞`currentCustomer`物件到`TableAdapter.Insert`方法。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "59659016"
   
 ### <a name="to-update-existing-records-from-an-object-to-a-database"></a>若要更新現有的資料錄從物件到資料庫  
   
--   修改記錄，藉由呼叫`TableAdapter.Update`方法，傳遞新的值來更新記錄，並傳入要找出資料錄的原始值。  
+- 修改記錄，藉由呼叫`TableAdapter.Update`方法，傳遞新的值來更新記錄，並傳入要找出資料錄的原始值。  
   
     > [!NOTE]
     >  您的物件需要維護的原始值，才能將其傳遞給`Update`方法。 這個範例會使用具有屬性`orig`儲存原始值的前置詞。  
@@ -66,7 +66,7 @@ ms.locfileid: "59659016"
   
 ### <a name="to-delete-existing-records-from-a-database"></a>若要從資料庫刪除現有的記錄  
   
--   刪除記錄，藉由呼叫`TableAdapter.Delete`方法並傳入要找出資料錄的原始值。  
+- 刪除記錄，藉由呼叫`TableAdapter.Delete`方法並傳入要找出資料錄的原始值。  
   
     > [!NOTE]
     >  您的物件需要維護的原始值，才能將其傳遞給`Delete`方法。 這個範例會使用具有屬性`orig`儲存原始值的前置詞。  
