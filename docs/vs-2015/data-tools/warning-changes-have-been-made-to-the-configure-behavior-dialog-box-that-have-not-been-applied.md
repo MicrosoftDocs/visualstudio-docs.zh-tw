@@ -9,28 +9,27 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4a0ef367be3fd2bbe79472a04437230c0b51180
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e631f73a6714cf26b55cf9907095fc322467d3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942241"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053893"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告。 尚未套用的設定行為對話方塊已經變更了
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 警告。 尚未套用的設定行為對話方塊已經變更了。 是否要套用您的變更?  
   
  **設定行為**對話方塊可讓您設定的所有可用的類別的插入、 更新和刪除行為。 當選取新的 [類別] 和 [行為] 組合，並且尚未套用先前的變更時，就會出現這則訊息。  
   
 ### <a name="to-apply-the-change-and-continue"></a>若要套用變更再繼續  
   
--   按一下 [是]，將變更套用至選取的 [類別] 和 [行為]。  
+- 按一下 [是]，將變更套用至選取的 [類別] 和 [行為]。  
   
 ### <a name="to-cancel-the-previous-change-and-continue"></a>若要取消先前的變更再繼續  
   
--   按一下 [否] 取消所選取 [類別] 和 [行為] 的變更。  
+- 按一下 [否] 取消所選取 [類別] 和 [行為] 的變更。  
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

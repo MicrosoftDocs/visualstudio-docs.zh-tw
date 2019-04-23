@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 52e77762900a321cf547709d98d9856088580789
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943513"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081394"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:必須正確實作 IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,23 +59,23 @@ ms.locfileid: "58943513"
 ## <a name="how-to-fix-violations"></a>如何修正違規
  檢查您的程式碼，並判斷哪些解決方案可以修正此違規。
 
--   從所實作的介面清單中移除 IDisposable{0}並改為覆寫基底類別 Dispose 實作。
+- 從所實作的介面清單中移除 IDisposable{0}並改為覆寫基底類別 Dispose 實作。
 
--   移除型別中的完成項{0}、 覆寫 Dispose (bool disposing)，並放在程式碼路徑的最終處理邏輯，其中 'disposing' 為 false。
+- 移除型別中的完成項{0}、 覆寫 Dispose (bool disposing)，並放在程式碼路徑的最終處理邏輯，其中 'disposing' 為 false。
 
--   移除{0}、 覆寫 Dispose (bool disposing)，並將處置邏輯放在程式碼路徑中 'disposing' 為 true。
+- 移除{0}、 覆寫 Dispose (bool disposing)，並將處置邏輯放在程式碼路徑中 'disposing' 為 true。
 
--   請確認{0}是宣告為公用和密封。
+- 請確認{0}是宣告為公用和密封。
 
--   重新命名{0}為 'Dispose'，並確定它已宣告為 public 和 sealed。
+- 重新命名{0}為 'Dispose'，並確定它已宣告為 public 和 sealed。
 
--   請確定{0}是宣告為 protected、 virtual 和未密封的。
+- 請確定{0}是宣告為 protected、 virtual 和未密封的。
 
--   修改{0}，因此它會呼叫 dispose （true），然後呼叫 GC。目前的物件執行個體上的 SuppressFinalize ('this' Me' 在[!INCLUDE[vbprvb](../includes/vbprvb-md.md)])，然後傳回。
+- 修改{0}，因此它會呼叫 dispose （true），然後呼叫 GC。目前的物件執行個體上的 SuppressFinalize ('this' Me' 在[!INCLUDE[vbprvb](../includes/vbprvb-md.md)])，然後傳回。
 
--   修改{0}，讓它呼叫 dispose （false），然後傳回。
+- 修改{0}，讓它呼叫 dispose （false），然後傳回。
 
--   如果您正在撰寫的未密封的根 IDisposable 的類別，請確定 IDisposable 實作會遵循本節稍早說明的模式。
+- 如果您正在撰寫的未密封的根 IDisposable 的類別，請確定 IDisposable 實作會遵循本節稍早說明的模式。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  請勿隱藏此規則的警告。

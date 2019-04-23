@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ab342c2d038a0021d94858de916e66456622adb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3c328b8522913dcb8095c09a031b2a2c80f58030
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794488"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086763"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>在 Visual Studio 中對市集應用程式建立及執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,8 +27,8 @@ Visual Studio 2012 Express for Windows 8 單元測試工具的設計支援在軟
 >  本節的這些主題說明 Visual Studio 2012 Express for Windows 8 的功能。 Visual Studio Ultimate、VS Premium 和 VS Professional 都有為單元測試提供額外的功能。
 >
 > - 在 VS Ultimate、VS Premium 和 VS Professional 中，您可以使用任何協力廠商或開放原始碼單元測試架構，只要該架構已經為 Microsoft [測試總管] 建立附加配接器即可。 您也可使用 VS Ultimate 及 VS Premium，分析及顯示測試的程式碼涵蓋範圍資訊。
->   -   在 VS Ultimate 中，您可以在每次建置之後執行測試。 您也可以使用 Microsoft Fakes，這是一種 Managed 程式碼的隔離架構，會以測試程式碼替代系統和協力廠商功能，以將測試焦點放在自己的程式碼上。
->   -   **JavaScript**。 Visual Studio Express for Windows 8 的 IDE 無法進行 JavaScript 單元測試。 在 Visual Studio Professional、Premium 和 Ultimate 中，JavaScript 單元測試架構是 Visual Studio Gallery 中的可用擴充功能。 您也可以使用其中一種獨立協力廠商或開放原始碼 JavaScript 單元測試架構，來測試 JavaScript 程式碼。
+>   - 在 VS Ultimate 中，您可以在每次建置之後執行測試。 您也可以使用 Microsoft Fakes，這是一種 Managed 程式碼的隔離架構，會以測試程式碼替代系統和協力廠商功能，以將測試焦點放在自己的程式碼上。
+>   - **JavaScript**。 Visual Studio Express for Windows 8 的 IDE 無法進行 JavaScript 單元測試。 在 Visual Studio Professional、Premium 和 Ultimate 中，JavaScript 單元測試架構是 Visual Studio Gallery 中的可用擴充功能。 您也可以使用其中一種獨立協力廠商或開放原始碼 JavaScript 單元測試架構，來測試 JavaScript 程式碼。
 >
 >   如需詳細資訊，請參閱 MSDN Library 中的[對程式碼進行單元測試](../test/unit-test-your-code.md)。
 

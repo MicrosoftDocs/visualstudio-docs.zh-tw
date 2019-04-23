@@ -14,17 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 291b8a33b5cf8777259be6325be9596bd9dc95e2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 94fc8d858e2db9bd1e00bb8770cf52672a900ab0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834596"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064996"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>如何：在 MSBuild 中逸出特殊字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 某些字元在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔中具有特殊意義。 這些字元範例包括分號 (;) 和星號 (*)。 如需這些特殊字元的完整清單，請參閱 [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)。  
   
  若要使用這些特殊字元做為專案檔中的常值，就必須使用 %*xx* 語法來指定它們，其中 *xx* 代表字元的 ASCII 十六進位值。  
@@ -44,7 +43,7 @@ ms.locfileid: "54834596"
   
 #### <a name="to-use-an-msbuild-special-character-as-a-literal-character"></a>使用 MSBuild 特殊字元做為常值字元  
   
--   請使用標記 %*xx* 取代特殊字元，其中 *xx* 代表 ASCII 字元的十六進位值。 例如，若要使用星號 (*) 做為常值字元，請使用值 `%2A`。  
+- 請使用標記 %*xx* 取代特殊字元，其中 *xx* 代表 ASCII 字元的十六進位值。 例如，若要使用星號 (*) 做為常值字元，請使用值 `%2A`。  
   
 ## <a name="see-also"></a>請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   

@@ -24,17 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1740e9d7668101911862c91457a2c81c48f7b72d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67c9b9aed677e83cd8012b53530b4c474922108e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944312"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047133"
 ---
 # <a name="validate-data-in-datasets"></a>驗證資料集中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 驗證資料是資料物件中所輸入的值符合的條件約束的資料集結構描述中的確認程序。 驗證程序也會確認這些值會遵循您的應用程式所建立的規則。 它是個不錯的做法，驗證資料，再將更新傳送至基礎資料庫。 這會減少錯誤，以及可能的應用程式與資料庫之間的往返次數。  
   
  您可以確認正在寫入至資料集的資料有效，藉由建置至本身的資料集的驗證檢查。 資料集可以檢查資料，不論如何執行更新時，直接由控制項在表單中，在一個元件，或以其他方式。 資料集是您的應用程式 （不同於後端資料庫） 的一部分，因為它是建置應用程式特定驗證的合理位置。  
@@ -104,9 +103,9 @@ ms.locfileid: "58944312"
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>若要驗證資料的資料列時變更 (Visual Basic)  
   
-1.  在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
-2.  按兩下您想要驗證之資料表標題列。 此動作會自動建立<xref:System.Data.DataTable.RowChanging>事件處理常式<xref:System.Data.DataTable>資料集的部分類別檔案中。  
+2. 按兩下您想要驗證之資料表標題列。 此動作會自動建立<xref:System.Data.DataTable.RowChanging>事件處理常式<xref:System.Data.DataTable>資料集的部分類別檔案中。  
   
     > [!TIP]
     >  若要建立的資料列變更的事件處理常式的資料表名稱的左邊按兩下。 如果您按兩下資料表名稱時，您可以編輯它。  
@@ -115,14 +114,14 @@ ms.locfileid: "58944312"
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>若要驗證資料的資料列時變更 (C#)  
   
-1.  在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
-2.  按兩下您想要驗證之資料表標題列。 此動作會建立部分類別檔案<xref:System.Data.DataTable>。  
+2. 按兩下您想要驗證之資料表標題列。 此動作會建立部分類別檔案<xref:System.Data.DataTable>。  
   
     > [!NOTE]
     >  **Dataset 設計工具**不會自動建立的事件處理常式<xref:System.Data.DataTable.RowChanging>事件。 您必須建立方法以處理<xref:System.Data.DataTable.RowChanging>事件，並執行程式碼，來連結資料表的初始設定方法中的事件。  
   
-3.  將下列程式碼複製到的部分類別中：  
+3. 將下列程式碼複製到的部分類別中：  
   
     ```  
     public override void EndInit()  
@@ -156,7 +155,7 @@ ms.locfileid: "58944312"
   
 #### <a name="to-get-all-changed-records-from-a-dataset"></a>若要取得所有已變更的記錄從資料集  
   
--   呼叫<xref:System.Data.DataSet.GetChanges%2A>資料集的方法。  
+- 呼叫<xref:System.Data.DataSet.GetChanges%2A>資料集的方法。  
   
      下列範例會建立新的資料集，稱為`changedRecords`並填入所有已變更的記錄，從另一個資料集，稱為`dataSet1`。  
   
@@ -165,7 +164,7 @@ ms.locfileid: "58944312"
   
 #### <a name="to-get-all-changed-records-from-a-data-table"></a>若要取得所有已變更的記錄資料表的資料  
   
--   呼叫<xref:System.Data.DataTable.GetChanges%2A>DataTable 的方法。  
+- 呼叫<xref:System.Data.DataTable.GetChanges%2A>DataTable 的方法。  
   
      下列範例會建立新的資料表呼叫`changedRecordsTable`並填入所有已變更的記錄，從另一個資料表，稱為`dataTable1`。  
   
@@ -174,14 +173,14 @@ ms.locfileid: "58944312"
   
 #### <a name="to-get-all-records-that-have-a-specific-row-state"></a>若要取得的特定狀態的所有記錄  
   
--   呼叫`GetChanges`方法的資料集或資料表和傳遞<xref:System.Data.DataRowState>做為引數的列舉值。  
+- 呼叫`GetChanges`方法的資料集或資料表和傳遞<xref:System.Data.DataRowState>做為引數的列舉值。  
   
      下列範例示範如何建立新的資料集，稱為`addedRecords`，並填入只記錄已新增至`dataSet1`資料集。  
   
      [!code-csharp[VbRaddataEditing#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#16)]
      [!code-vb[VbRaddataEditing#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#16)]  
   
--   下列範例示範如何傳回最近加入的所有記錄`Customers`資料表：  
+- 下列範例示範如何傳回最近加入的所有記錄`Customers`資料表：  
   
      [!code-csharp[VbRaddataEditing#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#17)]
      [!code-vb[VbRaddataEditing#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#17)]  
@@ -196,7 +195,7 @@ ms.locfileid: "58944312"
   
 #### <a name="to-get-the-original-version-of-a-record"></a>若要取得一筆資料錄的原始版本  
   
--   存取資料行的值，藉由傳入<xref:System.Data.DataRowVersion>您想要傳回的資料列。  
+- 存取資料行的值，藉由傳入<xref:System.Data.DataRowVersion>您想要傳回的資料列。  
   
      下列範例示範如何使用<xref:System.Data.DataRowVersion>若要取得的原始值的值`CompanyName`欄位中<xref:System.Data.DataRow>:  
   
@@ -207,7 +206,7 @@ ms.locfileid: "58944312"
   
 #### <a name="to-get-the-current-version-of-a-record"></a>若要取得目前的版本記錄的  
   
--   存取的資料行的值，然後將參數加入索引，表示您想要傳回的資料列版本。  
+- 存取的資料行的值，然後將參數加入索引，表示您想要傳回的資料列版本。  
   
      下列範例示範如何使用<xref:System.Data.DataRowVersion>若要取得的目前值的值`CompanyName`欄位中<xref:System.Data.DataRow>:  
   

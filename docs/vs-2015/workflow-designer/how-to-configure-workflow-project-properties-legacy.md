@@ -15,25 +15,25 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a7ff48dec8d38b57d400f31f294a0d0b40ed6cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f551b868b415eaf600a9345aff4ac4f0d61ff234
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939473"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065717"
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>HOW TO：設定工作流程專案屬性 (舊版)
 依照下列步驟來檢視或修改與工作流程專案相關聯的屬性。  
   
 ### <a name="to-view-or-modify-workflow-project-properties"></a>若要檢視或修改工作流程專案屬性  
   
-1.  如果**方案總管**視窗未顯示，選取**方案總管**上**檢視**功能表。  
+1. 如果**方案總管**視窗未顯示，選取**方案總管**上**檢視**功能表。  
   
-2.  在方案總管中選取專案。  
+2. 在方案總管中選取專案。  
   
-3.  如果**屬性**視窗未顯示，選取**屬性視窗**上**檢視**功能表。  
+3. 如果**屬性**視窗未顯示，選取**屬性視窗**上**檢視**功能表。  
   
-4.  在專案中**屬性** 視窗中，檢視及修改您想要變更的屬性。  
+4. 在專案中**屬性** 視窗中，檢視及修改您想要變更的屬性。  
   
 ## <a name="see-also"></a>另請參閱  
  [建立舊版工作流程專案](../workflow-designer/creating-legacy-workflow-projects.md)

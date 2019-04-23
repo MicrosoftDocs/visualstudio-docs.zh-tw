@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f341a0825c4fcacc41fc01b29c6d65882fa500d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 056913d779f34ce197e1397563caac43ebf8b619
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335294"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100996"
 ---
 # <a name="project-property-user-interface"></a>專案屬性使用者介面
 
@@ -29,17 +29,17 @@ ms.locfileid: "56335294"
 
 擴充程序**專案屬性** 對話方塊中所述：
 
--   基底的專案從專案子類型擷取的擴充項，藉由實作<xref:EnvDTE80.IInternalExtenderProvider>介面。 瀏覽、 專案自動化和基底的所有專案的專案設定瀏覽物件會實作這個介面。
+- 基底的專案從專案子類型擷取的擴充項，藉由實作<xref:EnvDTE80.IInternalExtenderProvider>介面。 瀏覽、 專案自動化和基底的所有專案的專案設定瀏覽物件會實作這個介面。
 
--   實作<xref:EnvDTE80.IInternalExtenderProvider>給專案瀏覽的物件和專案自動化物件委派到<xref:EnvDTE80.IInternalExtenderProvider>實作專案子類型的彙總工具 (也就是它們`QueryInterface`如<xref:EnvDTE80.IInternalExtenderProvider>上<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>專案物件）。
+- 實作<xref:EnvDTE80.IInternalExtenderProvider>給專案瀏覽的物件和專案自動化物件委派到<xref:EnvDTE80.IInternalExtenderProvider>實作專案子類型的彙總工具 (也就是它們`QueryInterface`如<xref:EnvDTE80.IInternalExtenderProvider>上<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>專案物件）。
 
--   基底的專案設定瀏覽的物件也會實作<xref:EnvDTE80.IInternalExtenderProvider>直接連接 Automation 擴充項專案子類型的組態物件中。 它的實作會委派給<xref:EnvDTE80.IInternalExtenderProvider>專案子類型的彙總工具所實作的介面。
+- 基底的專案設定瀏覽的物件也會實作<xref:EnvDTE80.IInternalExtenderProvider>直接連接 Automation 擴充項專案子類型的組態物件中。 它的實作會委派給<xref:EnvDTE80.IInternalExtenderProvider>專案子類型的彙總工具所實作的介面。
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetProjectItem%2A>藉由將專案設定瀏覽物件，傳回<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>物件。
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetProjectItem%2A>藉由將專案設定瀏覽物件，傳回<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>物件。
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetCfg%2A>也藉由將專案設定瀏覽物件，傳回<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg>物件。
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetCfg%2A>也藉由將專案設定瀏覽物件，傳回<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg>物件。
 
--   專案子類型可以決定適當的 Catid 不同的可擴充物件的基底的專案，在執行階段擷取下列<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>值：
+- 專案子類型可以決定適當的 Catid 不同的可擴充物件的基底的專案，在執行階段擷取下列<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>值：
 
     - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
@@ -49,9 +49,9 @@ ms.locfileid: "56335294"
 
 若要判斷專案範圍的 Catid，專案子類型擷取的上述屬性[VSITEMID。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)從`VSITEMID typedef`。 專案子類型也可以控制哪些**屬性頁**對話方塊頁面會顯示專案的組態相依和獨立的設定。 某些專案子類型可能需要移除內建的頁面，並加入專案子類型的特定頁面。 若要啟用此功能，受管理的用戶端專案呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>方法的下列屬性：
 
--   `VSHPROPID_PropertyPagesCLSIDList` -設定獨立屬性頁 Clsid 的以分號分隔清單。
+- `VSHPROPID_PropertyPagesCLSIDList` -設定獨立屬性頁 Clsid 的以分號分隔清單。
 
--   `VSHPROPID_CfgPropertyPagesCLSIDList —` 組態相依屬性頁 Clsid 的以分號分隔的清單。
+- `VSHPROPID_CfgPropertyPagesCLSIDList —` 組態相依屬性頁 Clsid 的以分號分隔的清單。
 
 因為專案子類型的彙總<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>物件，則可以覆寫的定義，這些屬性，以控制哪些**屬性頁**對話方塊會顯示。 專案子類型可以擷取這些屬性從內部的基底專案然後新增或視需要移除 Clsid。
 

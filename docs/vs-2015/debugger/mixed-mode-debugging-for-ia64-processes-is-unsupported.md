@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 02a1d7e93b9d090b61d8839562befcd3453dbe0f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c3cf7308b3302c682f32a2db9837f86cd0173260
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943713"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101804"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>不支援 IA64 處理序的混合模式偵錯。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Visual Studio 不支援對 IA64 處理序中的 Managed 程式碼和機器碼進
   
 ### <a name="workarounds"></a>替代解決辦法  
   
--   在不同的偵錯工作階段中分別偵錯 Managed 程式碼和機器碼。  
+- 在不同的偵錯工作階段中分別偵錯 Managed 程式碼和機器碼。  
   
      -或-  
   
@@ -38,19 +38,19 @@ Visual Studio 不支援對 IA64 處理序中的 Managed 程式碼和機器碼進
   
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>若要將平台變更為 32 位元 (Visual Basic 或 C#)  
   
-1.  在**方案總管** 中，以滑鼠右鍵按一下您的專案，然後按一下捷徑功能表中的 [屬性]。  
+1. 在**方案總管** 中，以滑鼠右鍵按一下您的專案，然後按一下捷徑功能表中的 [屬性]。  
   
-2.  在屬性頁中，按一下 [編譯] 或 [偵錯] 索引標籤。  
+2. 在屬性頁中，按一下 [編譯] 或 [偵錯] 索引標籤。  
   
-3.  按一下 [平台]，並從平台清單中選取 [x86]。  
+3. 按一下 [平台]，並從平台清單中選取 [x86]。  
   
      根據預設，Visual Basic 和 C# 編譯器會產生可在任何 CPU 上執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理序上執行，您必須選擇 [Win32]，而非 [AnyCPU]。  
   
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>若要將平台變更為 32 位元 (C/C++)  
   
-1.  在**方案總管** 中，以滑鼠右鍵按一下您的專案，然後按一下捷徑功能表中的 [屬性]。  
+1. 在**方案總管** 中，以滑鼠右鍵按一下您的專案，然後按一下捷徑功能表中的 [屬性]。  
   
-2.  在屬性頁中，按一下 [平台]，並從平台清單中選取 [Win32]。  
+2. 在屬性頁中，按一下 [平台]，並從平台清單中選取 [Win32]。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)

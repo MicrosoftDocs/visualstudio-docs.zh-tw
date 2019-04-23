@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7443a4789008f3bb5992695761dff228bd32298
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6e3b66bfd7f3f5d0ef0f4893efeb81c80df5d4ae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601404"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093510"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>HOW TO：以程式設計方式在 Word 中設定搜尋選項
   有兩種方式可在 Microsoft Office Word 文件中設定搜尋選項的選取項目：
@@ -38,7 +38,7 @@ ms.locfileid: "56601404"
 
 ### <a name="to-set-search-options-using-a-find-object"></a>若要設定使用 Find 物件的搜尋選項
 
-1.  設定的屬性<xref:Microsoft.Office.Interop.Word.Find>向前搜尋文字選取範圍的物件**找我**。
+1. 設定的屬性<xref:Microsoft.Office.Interop.Word.Find>向前搜尋文字選取範圍的物件**找我**。
 
      [!code-vb[Trin_VstcoreWordAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#76)]
 
@@ -47,7 +47,7 @@ ms.locfileid: "56601404"
 
 ### <a name="to-set-search-options-using-execute-method-arguments"></a>若要設定使用 Execute 方法的引數的搜尋選項
 
-1.  為參數傳遞的搜尋準則<xref:Microsoft.Office.Interop.Word.Find.Execute%2A>方法來搜尋文字選取範圍**找我**。
+1. 為參數傳遞的搜尋準則<xref:Microsoft.Office.Interop.Word.Find.Execute%2A>方法來搜尋文字選取範圍**找我**。
 
      [!code-vb[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#77)]
      [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]

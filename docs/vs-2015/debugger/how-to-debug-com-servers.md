@@ -23,12 +23,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7548b100e5bbcccd75a3cd5e7d94d6e7f72ed48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943554"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088310"
 ---
 # <a name="how-to-debug-com-servers"></a>HOW TO：針對 COM 伺服器進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ ms.locfileid: "58943554"
   
 ### <a name="to-debug-a-server-application-without-container-information"></a>若要在沒有容器資訊的情況下偵錯伺服器應用程式  
   
-1.  如應用程式方式開始偵錯伺服器。  
+1. 如應用程式方式開始偵錯伺服器。  
   
-2.  依需要設定中斷點。  
+2. 依需要設定中斷點。  
   
-3.  啟動容器應用程式 (Container Application)。  
+3. 啟動容器應用程式 (Container Application)。  
   
 ## <a name="see-also"></a>另請參閱  
  [對 COM 和 ActiveX 進行偵錯](../debugger/com-and-activex-debugging.md)   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8d86c206eca3ecb1e1fc43e9540485cd83f93a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 95e42442e8dce5db1ef6b670043bf1f26e554773
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094657"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流程設計中的鍵盤快速鍵
 
@@ -57,13 +57,13 @@ ms.locfileid: "55918425"
 
 - 若要連接活動：
 
-    1.  使用 Tab 鍵選取來源活動。
+    1. 使用 Tab 鍵選取來源活動。
 
-    2.  視需要按幾次 CTRL+E、M，將鍵盤焦點移至目的地活動。
+    2. 視需要按幾次 CTRL+E、M，將鍵盤焦點移至目的地活動。
 
-    3.  按 CTRL+E、S 將目的地活動加入至選取範圍。
+    3. 按 CTRL+E、S 將目的地活動加入至選取範圍。
 
-    4.  按 CTRL+E、F 加入從來源到目的地的連接線。
+    4. 按 CTRL+E、F 加入從來源到目的地的連接線。
 
 有關使用鍵盤連接活動的附註：
 

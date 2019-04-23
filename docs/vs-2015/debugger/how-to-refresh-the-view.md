@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46d6849aef52007368f742b25423a52c034d1475
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1d0170d11ffaba831fdd68caa7249d0002526414
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089610"
 ---
 # <a name="how-to-refresh-the-view"></a>HOW TO：重新整理檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Spy + + 會 「 快照集 」 的系統資料表，並重新整理檢視，根�
   
 ### <a name="to-refresh-the-currently-active-view"></a>若要重新整理目前現用檢視表  
   
--   選擇**重新整理**從**視窗**功能表上或按一下 **重新整理**工具列中的按鈕。  
+- 選擇**重新整理**從**視窗**功能表上或按一下 **重新整理**工具列中的按鈕。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 Spy++](../debugger/using-spy-increment.md)   

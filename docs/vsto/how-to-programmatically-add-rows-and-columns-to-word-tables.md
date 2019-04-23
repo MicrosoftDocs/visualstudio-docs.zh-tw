@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 536e5ea82d230d27e0b5e95099bf377d6ec1123f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c590ed271897ac6aebb875bafcb1b6b50a753629
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078015"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>HOW TO：以程式設計方式將資料列和資料行加入至 Word 表格
   在 Microsoft Office Word 表格中，儲存格會組織成資料列和資料行。 您可以使用 <xref:Microsoft.Office.Interop.Word.Rows> 物件的 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法新增資料表的資料列，以及使用 <xref:Microsoft.Office.Interop.Word.Columns> 物件的 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法來新增資料行。
@@ -41,14 +41,14 @@ ms.locfileid: "56643531"
 
 ### <a name="to-add-a-row-to-a-table"></a>在資料表中新增群組
 
-1.  使用 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法，以在資料表中新增資料列。
+1. 使用 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法，以在資料表中新增資料列。
 
      [!code-vb[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#95)]
      [!code-csharp[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#95)]
 
 ### <a name="to-add-a-column-to-a-table"></a>在資料表中新增資料行
 
-1.  使用 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法，然後使用 <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> 方法將所有資料行都設為相同寬度。
+1. 使用 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法，然後使用 <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> 方法將所有資料行都設為相同寬度。
 
      [!code-vb[Trin_VstcoreWordAutomation#96](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#96)]
      [!code-csharp[Trin_VstcoreWordAutomation#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#96)]
@@ -63,14 +63,14 @@ ms.locfileid: "56643531"
 
 ### <a name="to-add-a-row-to-a-table"></a>在資料表中新增群組
 
-1.  使用 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法，以在資料表中新增資料列。
+1. 使用 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法，以在資料表中新增資料列。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#95)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#95)]
 
 ### <a name="to-add-a-column-to-a-table"></a>在資料表中新增資料行
 
-1.  使用 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法，然後使用 <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> 方法將所有資料行都設為相同寬度。
+1. 使用 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法，然後使用 <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> 方法將所有資料行都設為相同寬度。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#96)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]

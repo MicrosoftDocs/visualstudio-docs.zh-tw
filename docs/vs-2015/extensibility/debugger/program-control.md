@@ -10,29 +10,29 @@ ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9a2898bb5736e6731d200fd4a05e84aeae8adb42
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c9ea20e42ada09bd9ff2a5ab5fdb6222839380c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941254"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108044"
 ---
 # <a name="program-control"></a>程式控制
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在 Visual Studio 中偵錯時，所有下列的逐步執行，並且繼續常式會執行的程式層級：  
   
--   設定下一個陳述式，也就設為您的電腦在特定畫面格的環境中執行的下一個指令  
+- 設定下一個陳述式，也就設為您的電腦在特定畫面格的環境中執行的下一個指令  
   
--   結束 逐步執行模式執行，也就繼續  
+- 結束 逐步執行模式執行，也就繼續  
   
--   逐步執行至下一個指令  
+- 逐步執行至下一個指令  
   
--   繼續進行目前的逐步執行模式  
+- 繼續進行目前的逐步執行模式  
   
--   暫止程式所包含的執行緒  
+- 暫止程式所包含的執行緒  
   
--   繼續執行程式所包含的執行緒  
+- 繼續執行程式所包含的執行緒  
   
 > [!NOTE]
 >  檢視呼叫堆疊被實作在執行緒層級上。 若要列舉的畫面格的資訊，檢視執行緒的呼叫堆疊時，您必須實作的所有方法[IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)介面。  

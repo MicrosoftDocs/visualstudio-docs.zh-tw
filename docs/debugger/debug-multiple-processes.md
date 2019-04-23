@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9c592663e32b8050644d459b8db45f3f0f5307
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 160e219b6fc2ab314f8d0dd91043c18101f2c3a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630739"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097137"
 ---
-# <a name="debug-multiple-processes-c-visual-basic-c"></a>偵錯多個處理序 (C#，Visual Basic、 c + +)
+# <a name="debug-multiple-processes-c-visual-basic-c"></a>偵錯多個處理序 (C#，Visual Basic 中， C++)
 
 Visual Studio 可以有數個程序的方案進行偵錯。 您可以啟動和處理序之間切換、 中斷、 繼續，並逐步執行來源、 停止偵錯，和 end 或從個別的處理序中斷連結。
 
@@ -48,11 +48,11 @@ Visual Studio 可以有數個程序的方案進行偵錯。 您可以啟動和�
 
 1. 選取 **目前的選取範圍**，**單一啟始專案**和 專案檔中，或**多個啟始專案**。
 
-   如果您選取**多個啟始專案**，您可以變更啟動順序和動作，才會針對每個專案：**開始**，**啟動但不偵錯**，或**無**。
+   如果您選取**多個啟始專案**，您可以變更才會針對每個專案的啟動順序和動作：**開始**，**啟動但不偵錯**，或**None**。
 
 1. 選取 **套用**，或**確定**套用並關閉對話方塊。
 
-###  <a name="BKMK_Attach_to_a_process"></a> 附加至處理序
+### <a name="BKMK_Attach_to_a_process"></a> 附加至處理序
 
 偵錯工具也可以*附加*在 Visual Studio 中，包括在遠端裝置上的外部程序中執行的應用程式。 您將附加至應用程式之後，您可以使用 Visual Studio 偵錯工具。 偵錯功能可能有限。 這取決於是否使用偵錯資訊建置應用程式、 您是否能存取應用程式的原始程式碼，和 JIT 編譯器是否追蹤偵錯資訊。
 
@@ -69,7 +69,7 @@ Visual Studio 可以有數個程序的方案進行偵錯。 您可以啟動和�
 >[!NOTE]
 >偵錯工具不會自動附加至所偵錯處理序啟動的子處理序 (即使子專案位於相同方案中)。 若要偵錯子處理序，附加至子處理序之後它會啟動，, 或是設定 Windows 登錄編輯程式，以新的偵錯工具執行個體中啟動子處理序。
 
-###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> 使用登錄編輯程式自動啟動偵錯工具中的 處理序
+### <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> 使用登錄編輯程式自動啟動偵錯工具中的 處理序
 
 有時候，您可能需要偵錯啟始程式碼由另一個處理序啟動的應用程式。 這類範例包括了服務和自訂安裝動作。 您可以讓偵錯工具啟動，並會自動附加至應用程式。
 
@@ -93,7 +93,7 @@ Visual Studio 可以有數個程序的方案進行偵錯。 您可以啟動和�
 
    ![自動偵錯工具起始項目在 regedit.exe](../debugger/media/dbg_execution_automaticstart_result.png "自動偵錯工具啟動 regedit.exe 中的項目")
 
-##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> 使用多個處理序進行偵錯
+## <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> 使用多個處理序進行偵錯
 <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>
 
 偵錯時具有數個程序的應用程式，中斷、 逐步執行，並繼續偵錯工具命令會影響所有處理程序，根據預設。 例如，當處理程序會在中斷點暫止，所有其他處理序的執行也會暫止。 您可以變更這項預設行為，以便更充分掌控執行命令的目標。
@@ -102,7 +102,7 @@ Visual Studio 可以有數個程序的方案進行偵錯。 您可以啟動和�
 
 - 底下**工具**(或**偵錯**) >**選項** > **偵錯** > **一般**，選取或清除**如果其中一個處理序中斷，就中斷所有處理序**核取方塊。
 
-###  <a name="BKMK_Break__step__and_continue_commands"></a> 中斷、逐步執行和繼續命令
+### <a name="BKMK_Break__step__and_continue_commands"></a> 中斷、逐步執行和繼續命令
 
 下表描述的偵錯行為命令何時**中斷所有處理序，當其中一個處理序中斷**選取或取消選取核取方塊：
 
@@ -117,12 +117,12 @@ Visual Studio 可以有數個程序的方案進行偵錯。 您可以啟動和�
 |**處理程序**視窗中 >**中斷處理序**|N/A|選取的處理序會中斷。<br />其他處理序維持其現有的狀態 (已暫止或執行中)。|
 |**處理程序**視窗中 >**繼續處理序**|N/A|選取的處理序會繼續執行。<br />其他處理序維持其現有的狀態 (已暫止或執行中)。|
 
-###  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> 尋找來來源和符號 (.pdb) 檔案
+### <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> 尋找來來源和符號 (.pdb) 檔案
 若要瀏覽處理序的原始程式碼，偵錯工具會需要存取其原始程式檔和符號檔。 如需詳細資訊，請參閱[指定符號 (.pdb) 和來源檔案](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
-如果您無法存取處理程序的檔案，您可以使用瀏覽**反組譯碼**視窗。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)。
+如果您無法存取處理程序的檔案，您可以使用瀏覽**反組譯碼**視窗。 如需詳細資訊，請參閱[如何：使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)。
 
-###  <a name="BKMK_Switch_between_processes"></a> 在處理序之間切換
+### <a name="BKMK_Switch_between_processes"></a> 在處理序之間切換
 
 當您在偵錯，但在任何指定時間只有一個處理序是在偵錯工具中，您可以附加至多個處理序。 您可以在 [偵錯位置] 工具列或 [處理序] 視窗中設定使用中或「目前的」處理序。 若要在處理序之間切換，兩個處理序必須處於中斷模式。
 

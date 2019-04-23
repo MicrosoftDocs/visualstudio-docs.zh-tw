@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b9086edb3dd70946bb988bda7b933b010c045da3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df11af5dee9ce510af01dab037a47a1bdd2f2880
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940134"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082200"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>逐步解說：手動部署 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,53 +36,53 @@ ms.locfileid: "58940134"
 ## <a name="prerequisites"></a>必要條件  
  本逐步解說包含一些必要條件和您要建置部署之前所選擇的選項。  
   
--   安裝 Mage.exe 和 MageUI.exe。  
+- 安裝 Mage.exe 和 MageUI.exe。  
   
      Mage.exe 和 MageUI.exe 屬於[!INCLUDE[winsdklong](../includes/winsdklong-md.md)]。 您必須已經[!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)]安裝的版本或[!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)]隨附於 Visual Studio。 如需詳細資訊，請參閱 < [Windows SDK](http://go.microsoft.com/fwlink/?LinkId=158044) MSDN 上。  
   
--   提供要部署的應用程式。  
+- 提供要部署的應用程式。  
   
      本逐步解說假設您已準備好要部署的 Windows 應用程式。 此應用程式會指 AppToDeploy。  
   
--   決定如何將分散式部署。  
+- 決定如何將分散式部署。  
   
      發佈選項包括：Web、 檔案共用或 CD。 如需詳細資訊，請參閱 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。  
   
--   決定應用程式是否需要提高權限的信任層級。  
+- 決定應用程式是否需要提高權限的信任層級。  
   
      如果您的應用程式需要完全信任 — 例如，完整存取使用者的系統 — 您可以使用`-TrustLevel`Mage.exe 來設定此選項。 如果您想要定義您的應用程式的自訂使用權限，您可以從另一個資訊清單複製網際網路或內部網路權限 」 一節、 加以修改以符合您的需求，和將它新增至應用程式資訊清單中使用文字編輯器或 MageUI.exe。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
--   取得 Authenticode 憑證。  
+- 取得 Authenticode 憑證。  
   
      您應該登入您的部署使用 Authenticode 憑證。 您可以使用 Visual Studio、 MageUI.exe 或 MakeCert.exe 和 Pvk2Pfx.exe 工具來產生測試憑證，或者您可以取得憑證從憑證授權單位 (CA)。 如果您選擇使用受信任的應用程式部署，您也必須執行一次安裝所有的用戶端電腦上的憑證。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
     > [!NOTE]
     >  您也可以簽署您的部署，您可以從憑證授權單位取得的 CNG 憑證。  
   
--   請確定應用程式沒有與 UAC 資訊內嵌資訊清單。  
+- 請確定應用程式沒有與 UAC 資訊內嵌資訊清單。  
   
      您必須決定是否您的應用程式包含的資訊清單與使用者帳戶控制 (UAC) 的詳細資訊，例如`<dependentAssembly>`項目。 若要檢查應用程式資訊清單，您可以使用 Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035)公用程式。  
   
      如果您的應用程式包含的資訊清單以 UAC 的詳細資訊，您必須重新建置它沒有 UAC 資訊。 針對 C# 專案在 Visual Studio 中，開啟專案屬性，然後選取 應用程式 索引標籤。在  **Manifest**下拉式清單中，選取**Vytvořit aplikaci bez manifestu**。 在 Visual Studio 中 Visual Basic 專案，請開啟 專案屬性，選取 應用程式 索引標籤，然後按一下**檢視的 UAC 設定**。 在開啟資訊清單檔案中，移除所有項目內的單一`<asmv1:assembly>`項目。  
   
--   決定應用程式是否需要用戶端電腦上的必要條件。  
+- 決定應用程式是否需要用戶端電腦上的必要條件。  
   
      [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 從 Visual Studio 部署的應用程式可以包含必要的安裝啟動載入器 (setup.exe) 搭配部署。 此逐步解說會建立兩個所需的資訊清單[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署。 您可以使用，以建立必要的啟動載入器[GenerateBootstrapper 工作](../msbuild/generatebootstrapper-task.md)。  
   
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>若要部署應用程式使用 Mage.exe 命令列工具  
   
-1.  建立的目錄，您將在其中儲存您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署檔案。  
+1. 建立的目錄，您將在其中儲存您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署檔案。  
   
-2.  在您剛才建立的部署目錄，建立版本的子目錄。 如果這是您要部署應用程式的第一次，命名版本子目錄**1.0.0.0**。  
+2. 在您剛才建立的部署目錄，建立版本的子目錄。 如果這是您要部署應用程式的第一次，命名版本子目錄**1.0.0.0**。  
   
     > [!NOTE]
     >  您部署的版本可以不同於您的應用程式的版本。  
   
-3.  所有的應用程式檔案複製到版本子目錄，包括可執行檔、 組件、 資源和資料檔案。 如有必要，您可以建立其他子目錄包含其他檔案。  
+3. 所有的應用程式檔案複製到版本子目錄，包括可執行檔、 組件、 資源和資料檔案。 如有必要，您可以建立其他子目錄包含其他檔案。  
   
-4.  開啟[!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)]或 Visual Studio 命令提示字元，並將版本子目錄。  
+4. 開啟[!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)]或 Visual Studio 命令提示字元，並將版本子目錄。  
   
-5.  建立應用程式資訊清單，Mage.exe 呼叫。 下列陳述式會建立程式碼編譯為可執行 Intel x86 處理器上的應用程式資訊清單。  
+5. 建立應用程式資訊清單，Mage.exe 呼叫。 下列陳述式會建立程式碼編譯為可執行 Intel x86 處理器上的應用程式資訊清單。  
   
     ```  
     mage -New Application -Processor x86 -ToFile AppToDeploy.exe.manifest -name "My App" -Version 1.0.0.0 -FromDirectory .   
@@ -91,7 +91,7 @@ ms.locfileid: "58940134"
     > [!NOTE]
     >  務必包含句點 （.） 之後`-FromDirectory`選項，指出目前的目錄。 如果您未包含點，您必須指定您的應用程式檔案的路徑。  
   
-6.  登入應用程式資訊清單，使用您的 Authenticode 憑證。 取代*mycert.pfx*與您的憑證檔案的路徑。 取代*passwd*取代為您的憑證檔案的密碼。  
+6. 登入應用程式資訊清單，使用您的 Authenticode 憑證。 取代*mycert.pfx*與您的憑證檔案的路徑。 取代*passwd*取代為您的憑證檔案的密碼。  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile mycert.pfx -Password passwd  
@@ -103,9 +103,9 @@ ms.locfileid: "58940134"
     mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
     ```  
   
-7.  將變更部署目錄的根目錄。  
+7. 將變更部署目錄的根目錄。  
   
-8.  產生部署資訊清單，Mage.exe 呼叫。 根據預設，Mage.exe 會將標示您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署安裝的應用程式，讓它可以執行同時上線與離線狀態。 若要讓應用程式可用，只有當使用者在線上時，使用`-Install`包含的值選項`false`。 如果您使用預設值，而且使用者將從網站或檔案共用安裝您的應用程式，請確定值`-ProviderUrl`選項指向位置的應用程式資訊清單上的 Web 伺服器或共用。  
+8. 產生部署資訊清單，Mage.exe 呼叫。 根據預設，Mage.exe 會將標示您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署安裝的應用程式，讓它可以執行同時上線與離線狀態。 若要讓應用程式可用，只有當使用者在線上時，使用`-Install`包含的值選項`false`。 如果您使用預設值，而且使用者將從網站或檔案共用安裝您的應用程式，請確定值`-ProviderUrl`選項指向位置的應用程式資訊清單上的 Web 伺服器或共用。  
   
     ```  
     mage -New Deployment -Processor x86 -Install true -Publisher "My Co." -ProviderUrl "\\myServer\myShare\AppToDeploy.application" -AppManifest 1.0.0.0\AppToDeploy.exe.manifest -ToFile AppToDeploy.application  
@@ -129,28 +129,28 @@ ms.locfileid: "58940134"
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>若要部署應用程式使用 MageUI.exe 的圖形化工具  
   
-1.  建立的目錄，您將在其中儲存您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署檔案。  
+1. 建立的目錄，您將在其中儲存您[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署檔案。  
   
-2.  在您剛才建立的部署目錄，建立版本的子目錄。 如果這是您要部署應用程式的第一次，命名版本子目錄**1.0.0.0**。  
+2. 在您剛才建立的部署目錄，建立版本的子目錄。 如果這是您要部署應用程式的第一次，命名版本子目錄**1.0.0.0**。  
   
     > [!NOTE]
     >  您部署的版本是可能不同於您的應用程式的版本。  
   
-3.  所有的應用程式檔案複製到版本子目錄，包括可執行檔、 組件、 資源和資料檔案。 如有必要，您可以建立其他子目錄包含其他檔案。  
+3. 所有的應用程式檔案複製到版本子目錄，包括可執行檔、 組件、 資源和資料檔案。 如有必要，您可以建立其他子目錄包含其他檔案。  
   
-4.  啟動 MageUI.exe 圖形化工具。  
+4. 啟動 MageUI.exe 圖形化工具。  
   
     ```  
     MageUI.exe  
     ```  
   
-5.  選取 建立新的應用程式資訊清單**檔案**，**新增**，**應用程式資訊清單**從功能表。  
+5. 選取 建立新的應用程式資訊清單**檔案**，**新增**，**應用程式資訊清單**從功能表。  
   
-6.  預設值**名稱**索引標籤上，輸入此部署的名稱和版本號碼。 也指定**處理器**，例如 x86，建置您的應用程式。  
+6. 預設值**名稱**索引標籤上，輸入此部署的名稱和版本號碼。 也指定**處理器**，例如 x86，建置您的應用程式。  
   
-7.  選取 **檔案**索引標籤，然後按一下省略符號 (**...**) 按鈕旁**應用程式目錄**文字方塊。 瀏覽資料夾 對話方塊隨即出現。  
+7. 選取 **檔案**索引標籤，然後按一下省略符號 (**...**) 按鈕旁**應用程式目錄**文字方塊。 瀏覽資料夾 對話方塊隨即出現。  
   
-8.  選取包含您的應用程式的檔案版本子目錄，然後按一下**確定**。  
+8. 選取包含您的應用程式的檔案版本子目錄，然後按一下**確定**。  
   
 9. 如果您將部署從網際網路資訊服務 (IIS) 中，選取**當填入將.deploy 副檔名並沒有任何檔案加入**核取方塊。  
   

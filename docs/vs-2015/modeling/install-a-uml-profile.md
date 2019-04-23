@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ae3ee33f47a60a74148698424ad58397e0cb577
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0187f7dede25900cdf3a78fdbfe2899e5f318472
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944202"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043441"
 ---
 # <a name="install-a-uml-profile"></a>安裝 UML 設定檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ ms.locfileid: "58944202"
   
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>在電腦上安裝 UML 設定檔  
   
-1.  設定檔應該已使用 Visual Studio 延伸模組 (`.vsix`) 檔案的形式提供給您。 相同的檔案中可能會有其他功能。  
+1. 設定檔應該已使用 Visual Studio 延伸模組 (`.vsix`) 檔案的形式提供給您。 相同的檔案中可能會有其他功能。  
   
      將 `.vsix` 檔案移至電腦上方便存取的位置。  
   
-2.  在 Windows 檔案總管 (或檔案總管) 中按兩下 `.vsix` 檔案，或在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 內開啟它。  
+2. 在 Windows 檔案總管 (或檔案總管) 中按兩下 `.vsix` 檔案，或在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 內開啟它。  
   
-3.  按一下 **安裝**中出現的對話方塊。  
+3. 按一下 **安裝**中出現的對話方塊。  
   
-4.  若要解除安裝或暫時停用擴充功能，開啟**延伸模組管理員**從**工具**功能表。  
+4. 若要解除安裝或暫時停用擴充功能，開啟**延伸模組管理員**從**工具**功能表。  
   
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>解除安裝或停用設定檔擴充功能  
   
-1.  在 Visual Studio**工具**功能表上，按一下**延伸模組管理員**。  
+1. 在 Visual Studio**工具**功能表上，按一下**延伸模組管理員**。  
   
-2.  按一下您想要移除此項目，然後按一下 延伸模組**停用**或是**解除安裝**。  
+2. 按一下您想要移除此項目，然後按一下 延伸模組**停用**或是**解除安裝**。  
   
 ## <a name="see-also"></a>另請參閱  
  [自訂您的模型，使用設定檔和造型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   

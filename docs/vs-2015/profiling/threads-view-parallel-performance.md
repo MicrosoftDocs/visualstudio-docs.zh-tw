@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34fe3cecc07d567c362e0dbdde3eb271c80dd61c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756800"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114791"
 ---
 # <a name="threads-view-parallel-performance"></a>執行緒檢視 (平行處理效能)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ ms.locfileid: "54756800"
 ## <a name="usage"></a>使用量  
  以下是一些您可以使用執行緒檢視的方法︰  
   
--   找出應用程式的使用者介面 (UI) 在某些執行階段沒有回應的原因。  
+- 找出應用程式的使用者介面 (UI) 在某些執行階段沒有回應的原因。  
   
--   指出花費在封鎖同步處理、I/O、分頁錯誤和其他事件的時間量。  
+- 指出花費在封鎖同步處理、I/O、分頁錯誤和其他事件的時間量。  
   
--   指出受到系統上其他執行中處理序的干擾程度。  
+- 指出受到系統上其他執行中處理序的干擾程度。  
   
--   識別平行執行的負載平衡問題。  
+- 識別平行執行的負載平衡問題。  
   
--   找出延展性較差或不存在的原因 (例如，為什麼有多個邏輯核心可用時，也無法改善平行應用程式的效能)。  
+- 找出延展性較差或不存在的原因 (例如，為什麼有多個邏輯核心可用時，也無法改善平行應用程式的效能)。  
   
--   了解應用程式中的並行程度以協助平行處理。  
+- 了解應用程式中的並行程度以協助平行處理。  
   
--   了解在背景工作執行緒與執行的關鍵路徑之間的相依性。  
+- 了解在背景工作執行緒與執行的關鍵路徑之間的相依性。  
   
 ## <a name="examining-specific-time-intervals-and-threads"></a>檢查特定時間間隔和執行緒  
  執行緒檢視會顯示時間軸。 您可以在時間軸內縮放和移動瀏覽，檢查應用程式的特定間隔與執行緒。 x 軸上是時間，而 y 軸上有幾個通道︰  

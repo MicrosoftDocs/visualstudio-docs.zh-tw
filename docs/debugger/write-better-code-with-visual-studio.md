@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790325"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>偵錯技術和工具，可協助您撰寫更好的程式碼
@@ -34,7 +34,7 @@ ms.locfileid: "58790325"
 
 * 使用偵錯工具的時機
 
-為了示範這些工作，我們會示範幾個最常見的錯誤和嘗試偵錯您的應用程式時，將會遇到的錯誤類型。 雖然程式碼範例C#，提供的概念性資訊是廣泛適用於 c + +、 Visual Basic、 JavaScript、 Visual Studio 其他語言支援 （除了註明）。 螢幕擷取畫面則使用 C# 表示。
+為了示範這些工作，我們會示範幾個最常見的錯誤和嘗試偵錯您的應用程式時，將會遇到的錯誤類型。 雖然程式碼範例C#，提供的概念性資訊是廣泛適用於C++，Visual Basic、 JavaScript 和 Visual Studio （除了註明） 支援其他語言。 螢幕擷取畫面則使用 C# 表示。
 
 ## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>建立一些錯誤和錯誤中的範例應用程式
 

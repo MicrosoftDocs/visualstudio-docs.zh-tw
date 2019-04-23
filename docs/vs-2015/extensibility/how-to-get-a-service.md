@@ -10,12 +10,12 @@ ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4310dadc1e4e1d601b5e1e7401749d44b132174e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 46ef86b8cde506aad3e00aa6b5dbc6470c0087de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942630"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052177"
 ---
 # <a name="how-to-get-a-service"></a>HOW TO：取得服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "58942630"
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>從初始化的 VSPackage 中取得的服務  
   
-1.  每個 Visual Studio 擴充功能開始 VSIX 部署專案，以將包含的延伸模組資產。 建立[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]VSIX 專案，名為`GetServiceExtension`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C# / 擴充性**。  
+1. 每個 Visual Studio 擴充功能開始 VSIX 部署專案，以將包含的延伸模組資產。 建立[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]VSIX 專案，名為`GetServiceExtension`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C# / 擴充性**。  
   
-2.  現在將新增名為的自訂命令項目範本**GetServiceCommand**。 在 **加入新項目**對話方塊中，移至**Visual C# / 擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為**GetServiceCommand.cs**。 如需有關如何建立自訂命令[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. 現在將新增名為的自訂命令項目範本**GetServiceCommand**。 在 **加入新項目**對話方塊中，移至**Visual C# / 擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為**GetServiceCommand.cs**。 如需有關如何建立自訂命令[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-3.  在 GetServiceCommand.cs，移除 MenuItemCommand 方法的主體並新增下列程式碼：  
+3. 在 GetServiceCommand.cs，移除 MenuItemCommand 方法的主體並新增下列程式碼：  
   
     ```csharp  
     IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -43,9 +43,9 @@ ms.locfileid: "58942630"
   
      此程式碼取得 SVsActivityLog 服務，並將它轉換成<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>介面，可用來寫入活動記錄檔。 如需範例，請參閱[如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
   
-4.  建置此專案並開始偵錯。 實驗執行個體隨即出現。  
+4. 建置此專案並開始偵錯。 實驗執行個體隨即出現。  
   
-5.  在實驗執行個體的 工具 功能表上找到**叫用 GetServiceCommand**  按鈕。 當您按一下此按鈕時，您應該會看到出現訊息方塊，指出**找到 「 活動記錄 」 服務。**  
+5. 在實驗執行個體的 工具 功能表上找到**叫用 GetServiceCommand**  按鈕。 當您按一下此按鈕時，您應該會看到出現訊息方塊，指出**找到 「 活動記錄 」 服務。**  
   
 ## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>從 工具視窗或控制項容器取得服務  
  有時候您可能需要從 工具視窗取得服務或控制未設置，否則就不知道您想要的服務的服務提供者已決定位置的容器。 比方說，您可能要從控制項內的活動記錄檔寫入。  

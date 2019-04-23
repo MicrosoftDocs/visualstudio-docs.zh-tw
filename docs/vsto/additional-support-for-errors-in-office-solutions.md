@@ -56,12 +56,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62cd0007a2dd231bcfc0e99f64ac76d20d415263
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fb5877bccdc60d031e6ccd799eb6536df15fda38
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088767"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Office 方案錯誤的其他支援
 
@@ -71,11 +71,11 @@ ms.locfileid: "56643426"
 
 如需在 Office 方案中的一些常見錯誤的協助，請參閱下列主題：
 
--   [針對 Office 方案中的錯誤進行疑難排解](../vsto/troubleshooting-errors-in-office-solutions.md)
+- [針對 Office 方案中的錯誤進行疑難排解](../vsto/troubleshooting-errors-in-office-solutions.md)
 
--   [針對 Office 方案安全性進行疑難排解](../vsto/troubleshooting-office-solution-security.md)
+- [針對 Office 方案安全性進行疑難排解](../vsto/troubleshooting-office-solution-security.md)
 
--   [針對 Office 方案部署進行疑難排解](../vsto/troubleshooting-office-solution-deployment.md)
+- [針對 Office 方案部署進行疑難排解](../vsto/troubleshooting-office-solution-deployment.md)
 
 ## <a name="other-resources"></a>其他資源
 

@@ -6,12 +6,12 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944749"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063669"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 色彩編譯器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ Visual Studio 擴充功能色彩編譯器工具會採用代表現有的 Visual S
 |-|-|  
 |**屬性**|**定義**|  
 |類型|[必要]色彩類型。 它可以是下列其中一項：<br /><br /> *CT_INVALID:* 無效或不設定色彩。<br /><br /> *CT_RAW:* 未經處理的 ARGB 值。<br /><br /> *CT_COLORINDEX:* 請勿使用。<br /><br /> *CT_SYSCOLOR:* 從 SysColor Windows 系統色彩。<br /><br /> *CT_VSCOLOR:*__VSSYSCOLOREX 中 Visual Studio 的色彩。<br /><br /> *CT_AUTOMATIC:* 自動的色彩。<br /><br /> *CT_TRACK_FOREGROUND:* 請勿使用。<br /><br /> *CT_TRACK_BACKGROUND:* 請勿使用。|  
-|原始程式檔|[必要]以十六進位表示色彩的值|  
+|Source|[必要]以十六進位表示色彩的值|  
   
  中的型別屬性的結構描述支援 __VSCOLORTYPE 列舉型別所支援的所有值。 不過，我們建議您使用只有 CT_RAW 和 CT_SYSCOLOR。  
   
@@ -149,15 +149,15 @@ Visual Studio 擴充功能色彩編譯器工具會採用代表現有的 Visual S
   
  **範例**  
   
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   VsixColorCompiler D:\xml\colors.xml /noLogo  
+- VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>注意  
   
--   這個工具需要安裝 VC + + 執行階段的最新版本。  
+- 這個工具需要安裝 VC + + 執行階段的最新版本。  
   
--   支援只有單一檔案。 不支援透過資料夾路徑的大量轉換。  
+- 支援只有單一檔案。 不支援透過資料夾路徑的大量轉換。  
   
 ## <a name="sample-output"></a>範例輸出  
  工具所產生的.pkgdef 檔將會類似於下列金鑰：  

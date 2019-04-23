@@ -24,17 +24,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f66dae4d9e69ce1fc5d4351d72606e1fdad10725
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: aba4d37d672d3e544d65f46c6f32062f9b2637eb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755309"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663975"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>選項對話方塊、環境、Web 瀏覽器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 設定內部網頁瀏覽器和 Internet Explorer 的選項。 若要存取這個對話方塊，請按一下 [工具] 功能表中的 [選項]，展開 [環境] 資料夾，然後選取 [網頁瀏覽器]。  
   
 > [!NOTE]

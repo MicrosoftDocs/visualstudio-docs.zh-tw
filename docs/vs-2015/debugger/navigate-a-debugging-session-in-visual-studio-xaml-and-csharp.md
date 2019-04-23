@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f6a4ea19013aefa1b3d078ce5993d48b4694989c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941643"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059873"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>在 Visual Studio 中巡覽偵錯工作階段 (Xaml 和 C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ ms.locfileid: "58941643"
 ## <a name="in-this-topic"></a>本主題內容
  您可以了解如何：
 
--   [建立範例應用程式](#BKMK_CreateTheApplication)
+- [建立範例應用程式](#BKMK_CreateTheApplication)
 
--   [設定並執行至中斷點、逐步執行方法，以及檢查程式資料](#BKMK_StepInto)
+- [設定並執行至中斷點、逐步執行方法，以及檢查程式資料](#BKMK_StepInto)
 
--   [逐步執行、不進入和跳離方法](#BKMK_StepIntoOverOut)
+- [逐步執行、不進入和跳離方法](#BKMK_StepIntoOverOut)
 
--   [設定條件中斷點、執行至游標處，並將變數視覺化](#BKMK_ConditionCursorVisualize)
+- [設定條件中斷點、執行至游標處，並將變數視覺化](#BKMK_ConditionCursorVisualize)
 
--   [編輯後繼續，從例外狀況中復原](#BKMK_EditContinueRecoverExceptions)
+- [編輯後繼續，從例外狀況中復原](#BKMK_EditContinueRecoverExceptions)
 
-##  <a name="BKMK_CreateTheApplication"></a> 建立範例應用程式
+## <a name="BKMK_CreateTheApplication"></a> 建立範例應用程式
  偵錯與程式碼有關，因此範例應用程式僅會使用 Windows 市集應用程式的架構建立原始程式檔，您可以在該檔案中看到巡覽偵錯工作階段如何運作，以及如何檢查及變更程式狀態。 您將叫用的所有程式碼都是從主頁面的建構函式中呼叫，不會加入任何控制項，也不會處理任何事件。
 
  **建立預設的 C# Windows 市集應用程式。** 開啟 Visual Studio。 在首頁上，選擇 [新增專案]  連結。 在 [新增專案] 對話方塊中，選擇 [已安裝]  清單中的 [Visual C#]  ，然後選擇 [Windows 市集] 。 在專案範本清單中，選擇 [應用程式] 。 Visual Studio 會建立新的方案和專案，並顯示 MainPage.xaml 設計工具和 XAML 程式碼編輯器。
@@ -56,7 +56,7 @@ ms.locfileid: "58941643"
 
  您現在可以依照本主題中的範例進行。
 
-##  <a name="BKMK_StepInto"></a> 設定並執行至中斷點、逐步執行方法，以及檢查程式資料
+## <a name="BKMK_StepInto"></a> 設定並執行至中斷點、逐步執行方法，以及檢查程式資料
  您可以開始偵錯工作階段的最常見方式是選擇**開始偵錯**從**偵錯**功能表 (鍵盤：F5)。 執行開始並繼續到到達中斷點、您以手動方式暫停執行、發生例外狀況，或應用程式結束為止。
 
  當偵錯工具暫停執行時，可以將滑鼠游標停留在變數上，以檢視資料提示中作用中變數的值。 您也可以開啟 [區域變數] 和 [自動變數] 視窗，以查看作用中變數及其目前值的清單。 將一或多個變數加入至監看式視窗可讓您在應用程式繼續執行時，將焦點放在變數的值上。
@@ -112,7 +112,7 @@ ms.locfileid: "58941643"
 
   您可以在監看式視窗中監看多個變數。 每次暫停執行時，都會更新監看的變數的值，例如 [區域變數] 和資料提示視窗中的值。 您也可以將變數從程式碼編輯器加入至監看式視窗。 選取要監看的變數，按一下滑鼠右鍵，然後選擇 [加入監看式] 。
 
-##  <a name="BKMK_StepIntoOverOut"></a> 逐步執行、不進入和跳離方法
+## <a name="BKMK_StepIntoOverOut"></a> 逐步執行、不進入和跳離方法
  相較於逐步執行由父方法呼叫的方法，不進入方法會執行子方法，然後在父方法繼續時，暫停在呼叫中的方法中執行。 當您熟悉方法運作的方式，並確定其執行將不會影響您正在調查的問題時，您可能會不進入方法。
 
  不進入不包含方法呼叫的程式碼行時，執行該行的方式就像逐步執行該行一樣。
@@ -144,7 +144,7 @@ ms.locfileid: "58941643"
 
  **停止偵錯。** 在偵錯 功能表中，選擇 停止偵錯 (鍵盤：Shift + F5)。 這樣會結束偵錯工作階段。
 
-##  <a name="BKMK_ConditionCursorVisualize"></a> 設定條件中斷點、執行至游標處，並將變數視覺化
+## <a name="BKMK_ConditionCursorVisualize"></a> 設定條件中斷點、執行至游標處，並將變數視覺化
  條件中斷點會指定導致偵錯工具暫停執行的條件。 條件是由可以評估為 true 或 false 的任何程式碼運算式所指定。 例如，只有在變數達到特定的值時，您才可能會使用條件中斷點檢查經常呼叫的方法中的程式狀態。
 
  執行至游標處，就像設定一次性中斷點。 執行暫停時，您可以選取來源中的一行，並繼續執行，直到到達選取的行為止。 例如，您可能會逐步執行方法中的迴圈，並判定迴圈中的程式碼正確執行。 您可以執行至迴圈執行後所放置的游標處，而不是逐步執行迴圈的每個反覆項目。
@@ -180,7 +180,7 @@ ms.locfileid: "58941643"
 
  **停止偵錯。** 在偵錯 功能表中，選擇 停止偵錯 (鍵盤：Shift + F5)。 這樣會結束偵錯工作階段。
 
-##  <a name="BKMK_EditContinueRecoverExceptions"></a> 編輯後繼續，從例外狀況中復原
+## <a name="BKMK_EditContinueRecoverExceptions"></a> 編輯後繼續，從例外狀況中復原
  在某些情況下，當您在 Visual Studio 偵錯工具內中斷程式碼時，您會有機會變更變數的值，甚至是陳述式的邏輯。 此功能稱為「編輯後繼續」。
 
  當您例外狀況中斷時，編輯後繼續可能特別實用。 您可以「回溯」例外狀況，將執行移到剛好在例外狀況發生前的點，然後變更違反的變數或陳述式，並在不會擲回例外狀況的狀態繼續目前的偵錯工作階段，而不需要停止並重新啟動冗長且所涉及程序的偵錯，以避免例外狀況。
@@ -213,4 +213,4 @@ ms.locfileid: "58941643"
  **停止偵錯。** 在 **偵錯**功能表上，選擇**停止偵錯**(鍵盤：Shift + F5)。 這樣會結束偵錯工作階段。
 
 ## <a name="see-also"></a>另請參閱
- [開始偵錯工作階段 (VB、 C#，c + + 和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) [觸發程序暫止、 繼續及背景事件的 Windows 市集)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)
+ [開始偵錯工作階段 (VB、 C#，C++和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) [觸發程序暫止、 繼續及背景事件的 Windows 市集)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)

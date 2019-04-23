@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 831123caead6593fdbb548fd6e69a63646790d8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969086"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068219"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>HOW TO：存取的內建的字型和色彩 ccheme
 Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的字型和色彩配置。 您可以透過此配置<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>介面。
@@ -34,31 +34,31 @@ Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的�
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>若要定義類別，使用內建的字型和色彩
 
-1.  建立任意的 GUID。
+1. 建立任意的 GUID。
 
      此 GUID 用來唯一識別類別目錄中。 IDE 的預設字型和色彩的規格，此類別會重複使用。
 
     > [!NOTE]
     >  當擷取使用的字型和色彩資料<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>或其他介面，Vspackage 會使用此 GUID 參考內建的資訊。
 
-2.  類別目錄的名稱必須新增至 VSPackage 的資源字串資料表 (*.rc*) 檔案，以便您可以在需要時顯示在 IDE 中當地語系化。
+2. 類別目錄的名稱必須新增至 VSPackage 的資源字串資料表 (*.rc*) 檔案，以便您可以在需要時顯示在 IDE 中當地語系化。
 
      如需詳細資訊，請參閱 <<c0> [ 加入或刪除字串](/cpp/windows/adding-or-deleting-a-string)。
 
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>若要註冊分類，使用內建的字型和色彩
 
-1.  建構一種特殊的類別目錄中的下列位置的登錄項目：
+1. 建構一種特殊的類別目錄中的下列位置的登錄項目：
 
      *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>*]
 
      *\<類別目錄 >* 是類別目錄的非當地語系化名稱。
 
-2.  填入登錄，以使用內建的字型和色彩配置具有四個值：
+2. 填入登錄，以使用內建的字型和色彩配置具有四個值：
 
     |名稱|類型|資料|描述|
     |----------|----------|----------|-----------------|
     |分類|REG_SZ|GUID|任意的 GUID，識別包含內建的字型和色彩配置的分類。|
-    |封裝|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> 所有使用預設字型和色彩組態的 Vspackage 會使用此 GUID。|
+    |套件|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> 所有使用預設字型和色彩組態的 Vspackage 會使用此 GUID。|
     |NameID|REG_DWORD|識別碼|在 VSPackage 中可當地語系化的類別目錄名稱的資源識別碼。|
     |ToolWindowPackage|REG_SZ|GUID|VSPackage 實作的 GUID<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>介面。|
 

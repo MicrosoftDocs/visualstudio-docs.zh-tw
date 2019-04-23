@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1bf4f23ffc6d06313c39f0ffe25b9f1a6ffe595
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040712"
 ---
 # <a name="ribbon-object-model-overview"></a>功能區物件模型概觀
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]會公開強類型的物件模型，您可以使用它來取得和設定在執行階段的功能區控制項的屬性。 例如，您可以動態填入功能表控制項，或顯示和隱藏控制項內容。 您也可以新增索引標籤、 群組和控制項的功能區中，但只在 Office 應用程式載入功能區之前。 如需資訊，請參閱[設定會變成唯讀的屬性](#SettingReadOnlyProperties)。
@@ -26,12 +26,12 @@ ms.locfileid: "56601032"
 
  此功能區物件模型包含主要[功能區類別](#RibbonClass)，[功能區事件](#RibbonEvents)，並[功能區控制項類別](#RibbonControlClasses)。
 
-##  <a name="RibbonClass"></a> 功能區類別
+## <a name="RibbonClass"></a> 功能區類別
  當您將加入新**功能區 （視覺化設計工具）** 項目加入專案，Visual Studio 會加入**功能區**類別，以您的專案。 **功能區**類別繼承自<xref:Microsoft.Office.Tools.Ribbon.RibbonBase>類別。
 
  這個類別會顯示為功能區程式碼檔案和功能區設計工具程式碼檔案分割成部分類別。
 
-##  <a name="RibbonEvents"></a> 功能區事件
+## <a name="RibbonEvents"></a> 功能區事件
  **功能區**類別包含下列三個事件：
 
 |Event - 事件|描述|
@@ -40,7 +40,7 @@ ms.locfileid: "56601032"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|可讓您快取映像，在功能區自訂功能區載入時。 如果您撰寫程式碼快取功能區中的映像這個事件處理常式，您可以取得輕微的效能提升。 如需詳細資訊，請參閱<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>。|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|當功能區執行個體關閉時引發。|
 
-##  <a name="RibbonControlClasses"></a> 功能區控制項
+## <a name="RibbonControlClasses"></a> 功能區控制項
  <xref:Microsoft.Office.Tools.Ribbon>命名空間包含您在中看到每個控制項的型別**Office 功能區控制項**群組**工具箱**。
 
  下表顯示的類型，每個`Ribbon`控制項。 如需每個控制項的說明，請參閱 <<c0> [ 功能區概觀](../vsto/ribbon-overview.md)。
@@ -85,11 +85,11 @@ ms.locfileid: "56601032"
 |取得中的項目<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>， <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>， <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>，或<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> 控制項。|使用項目屬性。|
 |將項目加入<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>， <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>，或<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>控制項。|使用項目屬性。|
 |將控制項加入<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>。|使用項目屬性。<br /><br /> 若要將控制項加入<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>功能區載入至 Office 應用程式之後，您必須設定<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A>屬性設 **，則為 true**區載入至 Office 應用程式之前。 如需資訊，請參閱[設定會變成唯讀的屬性](#SettingReadOnlyProperties)。|
-|取得選取的項目<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>，<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> 或 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|使用 SelectedItem 屬性。 針對<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>，使用<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A>屬性。|
+|取得選取的項目<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>，<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>或<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>。|使用 SelectedItem 屬性。 針對<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>，使用<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A>屬性。|
 |取得群組<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>。|請使用 <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A> 屬性。|
 |指定的資料列和資料行中出現數<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>。|使用<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A>和<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A>屬性。|
 
-##  <a name="SettingReadOnlyProperties"></a> 設定會變成唯讀的屬性
+## <a name="SettingReadOnlyProperties"></a> 設定會變成唯讀的屬性
  功能區載入之前，只可以設定某些屬性。 有三個地方可以設定這些屬性：
 
 - 在 Visual Studio**屬性**視窗。
@@ -126,7 +126,7 @@ ms.locfileid: "56601032"
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
 
-###  <a name="ReadOnlyProperties"></a> 會變成唯讀的屬性
+### <a name="ReadOnlyProperties"></a> 會變成唯讀的屬性
  下表顯示只能在功能區載入之前設定的屬性。
 
 > [!NOTE]

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e61790245acbbb7c16b573220d0aca2a633acb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9330a41d0888532640774891386011f6b8dbfc24
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938937"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106016"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>有向圖形標記語言 (DGML) 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58938937"
 > [!NOTE]
 >  當您編輯 .dgml 檔案時，IntelliSense 會協助您識別每個項目的可用屬性和其值。 若要以屬性指定色彩，請使用常見色彩名稱 (例如 "Blue") 或 ARGB 十六進位值 (例如 "#ffa0b1c3")。 DGML 使用一小部分的 Windows Presentation Foundation (WPF) 色彩定義格式。 如需詳細資訊，請參閱 <<c0> [ 色彩類別](http://go.microsoft.com/fwlink/?LinkId=182345)。  
   
-##  <a name="DGML"></a> DGML 語法  
+## <a name="DGML"></a> DGML 語法  
  下表說明 DGML 中所使用的項目種類：  
   
 - `<DirectedGraph></DirectedGraph>`  
@@ -302,7 +302,7 @@ ms.locfileid: "58938937"
   </DirectedGraph>  
   ```  
   
-###  <a name="AddAlias"></a> 常用路徑的別名  
+### <a name="AddAlias"></a> 常用路徑的別名  
  以別名取代常用路徑，有助於縮減 .dgml 檔案的大小以及載入或儲存檔案所需的時間。 若要建立別名，請在 .dgml 檔案的結尾加入 `<Paths></Paths>` 區段。 在這個區段加入 `<Path/>` 項目，以定義路徑的別名：  
   
 ```xml  

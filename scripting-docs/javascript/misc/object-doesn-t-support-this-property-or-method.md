@@ -14,23 +14,23 @@ ms.assetid: 35f7a9b4-74fa-4ddb-b9f2-1a92345cb2ff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02084c6989a3c3948ddbc0bd0ff2999a69ba70cb
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 433972790310559b19ca5bc2c982c32e699e0e60
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842983"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064528"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>物件不支援此屬性或方法
 您指定此物件沒有的屬性或方法。 並非所有物件都支援所有屬性和方法。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   檢查屬性和方法，確保沒有輸入錯誤。  
+- 檢查屬性和方法，確保沒有輸入錯誤。  
   
--   確認物件的執行階段類型是預期的物件類型。  
+- 確認物件的執行階段類型是預期的物件類型。  
   
--   如需詳細資訊，請參閱物件的文件。  
+- 如需詳細資訊，請參閱物件的文件。  
   
 ## <a name="see-also"></a>另請參閱  
  [Object 物件](../../javascript/reference/object-object-javascript.md)   

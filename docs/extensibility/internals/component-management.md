@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 887f71f5aabf7acfdeb822bb4e05c1b0debf63ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110072"
 ---
 # <a name="component-management"></a>元件管理
 Windows 安裝程式中的工作單位被指 Windows 安裝程式元件 （有時稱為 WICs 或只是元件）。 GUID 會識別每個 WIC，也就是安裝和參考計數來使用 Windows 安裝程式的安裝程式的基本單位。
@@ -27,23 +27,23 @@ Windows 安裝程式中的工作單位被指 Windows 安裝程式元件 （有�
 
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>撰寫並排顯示安裝的安裝程式的指導方針
 
--   作者的檔案及登錄機碼在版本間共用到他們自己的元件。
+- 作者的檔案及登錄機碼在版本間共用到他們自己的元件。
 
      如此一來，可讓您輕鬆使用它們的未來版本。 比方說，已全域註冊的型別程式庫的副檔名，其他項目中註冊**HKEY_CLASSES_ROOT**，依此類推。
 
--   共用的元件群組成個別的合併模組。
+- 共用的元件群組成個別的合併模組。
 
      這項策略可協助您撰寫向前移動的並排顯示安裝正確的。
 
--   跨版本使用相同的 Windows Installer 元件安裝共用的檔案和登錄機碼。
+- 跨版本使用相同的 Windows Installer 元件安裝共用的檔案和登錄機碼。
 
      如果您使用不同的元件時，檔案和登錄項目會解除安裝時解除安裝一個版本的 VSPackage，但仍然安裝另一個 VSPackage。
 
--   請勿混用相同的元件版本設定和共用項目。
+- 請勿混用相同的元件版本設定和共用項目。
 
      如此一來，因此無法安裝共用的項目全域位置和建立版本的項目，以隔離的位置。
 
--   不需要指向已建立版本的檔案共用的登錄機碼。
+- 不需要指向已建立版本的檔案共用的登錄機碼。
 
      如果您這樣做，共用的金鑰覆寫已安裝另一個版本的 VSPackage。 移除第二個版本之後，索引鍵指向檔案變不見了。
 

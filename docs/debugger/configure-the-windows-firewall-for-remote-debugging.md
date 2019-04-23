@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: ff64735e1711a18bd7c55c6e052fa8579bd12e16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428722"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100354"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆進行遠端偵錯
 
@@ -102,13 +102,13 @@ Visual Studio 和遠端偵錯工具嘗試在安裝或啟動期間開啟正確的
 
 1. 選取 **允許應用程式通過 Windows 防火牆**。
 
-1.  如果**遠端偵錯工具**或是**Visual Studio 遠端偵錯工具**不會出現在**允許的應用程式和功能**，選取**變更設定**，然後選取**允許另一個應用程式**。
+1. 如果**遠端偵錯工具**或是**Visual Studio 遠端偵錯工具**不會出現在**允許的應用程式和功能**，選取**變更設定**，然後選取**允許另一個應用程式**。
 
-1.  如果遠端偵錯工具應用程式仍未列在**新增應用程式**對話方塊中，選取**瀏覽**，然後瀏覽至 *\<Visual Studio 安裝目錄\>\\Common7\\IDE\\遠端偵錯工具\\\<x86*， *x64*，或*Appx* \>根據您的應用程式的適當架構。 選取  *msvsmon.exe*，然後選取**新增**。
+1. 如果遠端偵錯工具應用程式仍未列在**新增應用程式**對話方塊中，選取**瀏覽**，然後瀏覽至 *\<Visual Studio 安裝目錄\>\\Common7\\IDE\\遠端偵錯工具\\\<x86*， *x64*，或*Appx* \>根據您的應用程式的適當架構。 選取  *msvsmon.exe*，然後選取**新增**。
 
-1.  在 **應用程式**清單中，選取**遠端偵錯工具**您剛才加入。 選取 **網路類型**，然後選取一或多個網路類型，包括遠端連線的網路類型。
+1. 在 **應用程式**清單中，選取**遠端偵錯工具**您剛才加入。 選取 **網路類型**，然後選取一或多個網路類型，包括遠端連線的網路類型。
 
-1.  選取 **新增**，然後選取**確定**。
+1. 選取 **新增**，然後選取**確定**。
 
 ## <a name="troubleshooting"></a>針對遠端偵錯連線進行疑難排解
 

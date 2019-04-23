@@ -11,12 +11,12 @@ ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af78a1c8e89710af73bf5f6d25cf3446cd0d50af
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: d0557d08c318eda47853ec69c6204739cbece560
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58943010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044431"
 ---
 # <a name="getting-project-properties"></a>取得專案屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "58943010"
   
 ### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>若要建立 VSIX 專案，並加入工具視窗  
   
-1.  每個 Visual Studio 擴充功能開始 VSIX 部署專案，以將包含的延伸模組資產。 建立[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]VSIX 專案，名為`ProjectPropertiesExtension`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C# / 擴充性**。  
+1. 每個 Visual Studio 擴充功能開始 VSIX 部署專案，以將包含的延伸模組資產。 建立[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]VSIX 專案，名為`ProjectPropertiesExtension`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C# / 擴充性**。  
   
-2.  藉由新增名為的自訂工具視窗項目範本加入工具視窗`ProjectPropertiesToolWindow`。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 在 [**加入新項目] 對話方塊**，請移至**Visual C# 項目 / 擴充性**，然後選取**自訂工具視窗**。 在 **名稱**底部的對話方塊欄位中，將檔案名稱變更為`ProjectPropertiesToolWindow.cs`。 如需如何建立自訂工具視窗的詳細資訊，請參閱[工具視窗建立擴充](../extensibility/creating-an-extension-with-a-tool-window.md)。  
+2. 藉由新增名為的自訂工具視窗項目範本加入工具視窗`ProjectPropertiesToolWindow`。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 在 [**加入新項目] 對話方塊**，請移至**Visual C# 項目 / 擴充性**，然後選取**自訂工具視窗**。 在 **名稱**底部的對話方塊欄位中，將檔案名稱變更為`ProjectPropertiesToolWindow.cs`。 如需如何建立自訂工具視窗的詳細資訊，請參閱[工具視窗建立擴充](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
-3.  建置方案，並確認方案編譯無誤。  
+3. 建置方案，並確認方案編譯無誤。  
   
 ### <a name="to-display-project-properties-in-a-tool-window"></a>若要顯示的工具視窗中的專案屬性  
   
-1.  ProjectPropertiesToolWindowCommand.cs 檔案中新增下列 using 陳述式。  
+1. ProjectPropertiesToolWindowCommand.cs 檔案中新增下列 using 陳述式。  
   
     ```csharp  
     using EnvDTE;  
@@ -44,9 +44,9 @@ ms.locfileid: "58943010"
   
     ```  
   
-2.  在 ProjectPropertiesToolWindowControl.xaml，移除現有的 按鈕，從 工具箱 新增 TreeView。 您也可以從 ProjectPropertiesToolWindowControl.xaml.cs 檔案移除 click 事件處理常式。  
+2. 在 ProjectPropertiesToolWindowControl.xaml，移除現有的 按鈕，從 工具箱 新增 TreeView。 您也可以從 ProjectPropertiesToolWindowControl.xaml.cs 檔案移除 click 事件處理常式。  
   
-3.  在 ProjectPropertiesToolWindowCommand.cs，使用 ShowToolWindow() 方法來開啟專案，並讀取其屬性，然後將屬性加入至樹狀檢視。 ShowToolWindow 的程式碼看起來應該如下所示：  
+3. 在 ProjectPropertiesToolWindowCommand.cs，使用 ShowToolWindow() 方法來開啟專案，並讀取其屬性，然後將屬性加入至樹狀檢視。 ShowToolWindow 的程式碼看起來應該如下所示：  
   
     ```csharp  
     private void ShowToolWindow(object sender, EventArgs e)  
@@ -93,10 +93,10 @@ ms.locfileid: "58943010"
     }  
     ```  
   
-4.  建置此專案並開始偵錯。 實驗執行個體應該會出現。  
+4. 建置此專案並開始偵錯。 實驗執行個體應該會出現。  
   
-5.  在實驗執行個體中開啟專案。  
+5. 在實驗執行個體中開啟專案。  
   
-6.  在 **檢視 / 其他 Windows**按一下  **ProjectPropertiesToolWindow**。  
+6. 在 **檢視 / 其他 Windows**按一下  **ProjectPropertiesToolWindow**。  
   
      您應該會看到與名稱的第一個專案和其所有的專案屬性的 [工具] 視窗的樹狀目錄控制項。

@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1d0ff9d8f3113b1df1e10891a3bd2197dd92482d
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.openlocfilehash: 50d307cd65bfdf534b6ca3586e69bbc27be25e36
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055377"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>從 Visual Studio 的遠端電腦上的 UWP 應用程式進行偵錯
 
 您可以使用 Visual Studio 來執行、 偵錯、 剖析及測試在另一部電腦或裝置上的通用 Windows 平台 (UWP) 應用程式。 在遠端電腦上執行 UWP 應用程式時特別有幫助 Visual Studio 電腦不支援 UWP 特有的功能，例如觸控、 地理位置或實體的方向。
 
-##  <a name="BKMK_Prerequisites"></a> 必要條件
+## <a name="BKMK_Prerequisites"></a> 必要條件
 
 若要偵錯在遠端裝置上從 Visual Studio 的 UWP 應用程式：
 
@@ -35,7 +35,7 @@ ms.locfileid: "58789896"
   - 某些 Windows 10 版本開始，並自動執行遠端工具。 否則，請[安裝和執行 Visual Studio 遠端工具](#BKMK_download)。
   - Windows Mobile 10 裝置不需要或支援遠端工具。
 
-##  <a name="BKMK_ConnectVS"></a> 設定 Visual Studio 專案進行遠端偵錯
+## <a name="BKMK_ConnectVS"></a> 設定 Visual Studio 專案進行遠端偵錯
 <a name="BKMK_DirectConnect"></a> 您使用專案**屬性**來指定要連接到遠端裝置。 設定不同的程式設計語言而定。
 
 > [!CAUTION]
@@ -43,29 +43,29 @@ ms.locfileid: "58789896"
 >
 >如果您選擇**Windows 驗證**for**驗證類型**，您必須偵錯時，登入到遠端電腦。 遠端偵錯工具也必須執行底下**Windows 驗證**模式中，使用相同的使用者帳戶做為 Visual Studio 電腦上。
 
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> 設定C#或 Visual Basic 專案進行遠端偵錯
+### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> 設定C#或 Visual Basic 專案進行遠端偵錯
 
 1. 選取C#或 Visual Studio 中的 Visual Basic 專案**方案總管**，然後選取**屬性**圖示，並按下**Alt** + **請輸入**，或以滑鼠右鍵按一下並選擇 **屬性**。
 
-1.  選取 [偵錯] 索引標籤。
+1. 選取 [偵錯] 索引標籤。
 
-1.  底下**目標裝置**，選取**遠端機器**遠端電腦，或**裝置**直接連線的 Windows Mobile 10 裝置。
+1. 底下**目標裝置**，選取**遠端機器**遠端電腦，或**裝置**直接連線的 Windows Mobile 10 裝置。
 
-1.  在遠端電腦，請輸入網路名稱或 IP 位址**遠端電腦**欄位，或選取**尋找**搜尋中的裝置[遠端連接 對話方塊中](#remote-connections)。
+1. 在遠端電腦，請輸入網路名稱或 IP 位址**遠端電腦**欄位，或選取**尋找**搜尋中的裝置[遠端連接 對話方塊中](#remote-connections)。
 
     ![受管理的遠端偵錯專案屬性](../debugger/media/vsrun_managed_projprop_remote.png "Managed 偵錯專案屬性")
 
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> 設定遠端偵錯 c + + 專案
+### <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> 設定C++專案進行遠端偵錯
 
-1.  選取 Visual Studio 中的 c + + 專案**方案總管**，然後選取**屬性**圖示，並按下**Alt**+**Enter**，或以滑鼠右鍵按一下並選擇 **屬性**。
+1. 選取C++Visual Studio 專案中的**方案總管]** ，然後選取**屬性**圖示，並按下**Alt**+**Enter**，或以滑鼠右鍵按一下並選擇 [**屬性**。
 
-1.  選取 [**偵錯**] 索引標籤。
+1. 選取 [**偵錯**] 索引標籤。
 
-3.  底下**偵錯工具來啟動**，選取**遠端機器**遠端電腦，或**裝置**直接連線的 Windows Mobile 10 裝置。
+3. 底下**偵錯工具來啟動**，選取**遠端機器**遠端電腦，或**裝置**直接連線的 Windows Mobile 10 裝置。
 
-1.  遠端電腦中，輸入或選取的網路名稱或 IP 位址**電腦名稱** 欄位中或卸除並選取**尋找**搜尋中的裝置[遠端連線 對話方塊](#remote-connections).
+1. 遠端電腦中，輸入或選取的網路名稱或 IP 位址**電腦名稱** 欄位中或卸除並選取**尋找**搜尋中的裝置[遠端連線 對話方塊](#remote-connections).
 
-    ![遠端偵錯 c + + 專案屬性](../debugger/media/vsrun_cpp_projprop_remote.png "偵錯 c + + 專案屬性")
+    ![C++專案進行遠端偵錯的屬性](../debugger/media/vsrun_cpp_projprop_remote.png " C++偵錯專案屬性")
 
 ### <a name="remote-connections"></a> 使用 [遠端連線] 對話方塊
 
@@ -92,7 +92,7 @@ ms.locfileid: "58789896"
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-##  <a name="BKMK_RunRemoteDebug"></a> 遠端偵錯 UWP 應用程式
+## <a name="BKMK_RunRemoteDebug"></a> 遠端偵錯 UWP 應用程式
 
 遠端偵錯的運作方式相同本機偵錯。
 

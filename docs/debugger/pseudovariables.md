@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366844"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中的虛擬變數
@@ -36,7 +36,7 @@ ms.locfileid: "59366844"
 
 |虛擬變數|功能|
 |--------------------|--------------|
-|`$err`|顯示以 SetLastError 函式設定的最後錯誤值。 所顯示的值代表 GetLastError 函式會傳回的內容。<br /><br /> 請使用 `$err,hr` 來查看此值的解碼表單。 例如，如果最後一個錯誤是 3，`$err,hr`會顯示 `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|
+|`$err`|顯示以 SetLastError 函式設定的最後錯誤值。 所顯示的值代表 GetLastError 函式會傳回的內容。<br /><br /> 請使用 `$err,hr` 來查看此值的解碼表單。 例如，如果最後錯誤是 3，則 `$err,hr` 會顯示 `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|
 |`$handles`|顯示配置在您的應用程式中的控點數目。|
 |`$vframe`|顯示目前堆疊框架的位址。|
 |`$tid`|顯示目前執行緒的執行緒 ID。|

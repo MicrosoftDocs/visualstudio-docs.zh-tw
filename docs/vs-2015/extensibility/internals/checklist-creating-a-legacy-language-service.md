@@ -11,12 +11,12 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3df1a4e61859aee4b27dccf5360e0ae99ad5aa8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077520"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>檢查清單：建立舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ ms.locfileid: "58939037"
   
 ## <a name="steps-for-creating-a-language-service"></a>建立語言服務的步驟  
   
-1.  實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> 介面。  
+1. 實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> 介面。  
   
-    -   在 VSPackage，實作<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>介面，以提供語言服務。  
+    - 在 VSPackage，實作<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>介面，以提供語言服務。  
   
-    -   提供整合式的開發環境 (IDE)，以在您的語言服務您<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>實作。  
+    - 提供整合式的開發環境 (IDE)，以在您的語言服務您<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>實作。  
   
-2.  實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>主要語言服務類別中的介面。  
+2. 實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>主要語言服務類別中的介面。  
   
      <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>介面是核心編輯器和語言服務之間互動的起點。  
   
@@ -121,7 +121,7 @@ ms.locfileid: "58939037"
   
    提供至編輯器的內容，在下列方面：  
   
-  -   提供文字標記的內容，方法是實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>介面。  
+  - 提供文字標記的內容，方法是實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>介面。  
   
   提供所有的使用者內容，方法是實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>介面。  
   

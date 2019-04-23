@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195121"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649104"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>逐步解說：建立自訂指示詞處理器
 
@@ -654,7 +654,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      您的登錄機碼應該含有下列值：
 
-
    | 名稱 | 類型 | 資料 |
    |-|-|-|
    | (預設值) | REG_SZ | (值未設定) |
@@ -663,13 +662,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      如果組件已置於 GAC 中，則值看起來應該如下表所示：
 
-
    | 名稱 | 類型 | 資料 |
    |-|-|-|
    | (預設值) | REG_SZ | (值未設定) |
    | 類別 | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
-
 
 6. 重新啟動 Visual Studio。
 

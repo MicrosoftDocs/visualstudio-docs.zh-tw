@@ -17,12 +17,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 17be48435dd8251d1269c7a95195d794f750d534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 18f6e72d18154f11866671a3e448d88c91768c7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945154"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047094"
 ---
 # <a name="web-control-library-managed-code"></a>Web 控制項程式庫 (Managed 程式碼)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,25 +31,25 @@ Web 控制項程式庫專案範本會建立 DLL。 因為類別庫是 DLL，所�
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>若要偵錯 Web 控制項程式庫 (方法 1)  
   
-1.  開啟現有的 Web 控制項程式庫專案，或建立一個新專案。  
+1. 開啟現有的 Web 控制項程式庫專案，或建立一個新專案。  
   
-2.  建立嵌入該控制項的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 頁面。  
+2. 建立嵌入該控制項的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 頁面。  
   
-3.  在裝載 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Test Harness 的網站中，建立名為 `/Code` 的子目錄。  
+3. 在裝載 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Test Harness 的網站中，建立名為 `/Code` 的子目錄。  
   
-4.  將該控制項的原始程式碼複製到 `/Code` 子目錄。  
+4. 將該控制項的原始程式碼複製到 `/Code` 子目錄。  
   
-5.  在 `/Code` 子目錄中開啟原始程式碼，並設定中斷點。  
+5. 在 `/Code` 子目錄中開啟原始程式碼，並設定中斷點。  
   
-6.  開啟瀏覽器視窗，輸入指向 Test Harness 的 URL。 該控制項的中斷點會被叫用，然後您就可以開始偵錯。  
+6. 開啟瀏覽器視窗，輸入指向 Test Harness 的 URL。 該控制項的中斷點會被叫用，然後您就可以開始偵錯。  
   
 ### <a name="to-debug-a-web-control-library-method-2"></a>若要偵錯 Web 控制項程式庫 (方法 2)  
   
-1.  在同一方案中建立主應用程式專案和 Web 控制項專案。  
+1. 在同一方案中建立主應用程式專案和 Web 控制項專案。  
   
-2.  在 [**方案總管] 中**，以滑鼠右鍵按一下主應用程式，然後選擇**加入參考**。  
+2. 在 [**方案總管] 中**，以滑鼠右鍵按一下主應用程式，然後選擇**加入參考**。  
   
-3.  將參考加入至 Web 控制項專案。  
+3. 將參考加入至 Web 控制項專案。  
   
 ## <a name="see-also"></a>另請參閱  
  [ASP.NET Web 應用程式](../debugger/debugging-preparation-aspnet-web-applications.md)

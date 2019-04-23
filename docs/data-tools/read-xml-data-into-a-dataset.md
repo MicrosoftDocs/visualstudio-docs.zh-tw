@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 58058bf189cf65214ed7d3fe6083ef418107db4f
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.openlocfilehash: fa0472ae7ad7200ead372057f1dd778c077f764e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268527"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076025"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>將 XML 資料讀入資料集
 
@@ -125,9 +125,9 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 
 ### <a name="to-add-controls-to-the-form"></a>若要將控制項加入至表單
 
-1.  開啟`Form1`設計 檢視中。
+1. 開啟`Form1`設計 檢視中。
 
-2.  從**工具箱**，拖曳到表單上的下列控制項：
+2. 從**工具箱**，拖曳到表單上的下列控制項：
 
     - 一個<xref:System.Windows.Forms.DataGridView>控制項
 
@@ -135,7 +135,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 
     - 兩個<xref:System.Windows.Forms.Button>控制項
 
-3.  設定下列屬性：
+3. 設定下列屬性：
 
     |控制項|屬性|設定|
     |-------------|--------------|-------------|
@@ -150,44 +150,44 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 
 在此步驟中，您會建立新的資料集，名為`authors`。 如需有關資料集的詳細資訊，請參閱 < [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)。
 
-1.  中**方案總管**，選取的原始程式檔**Form1**，然後選取**檢視表設計工具**按鈕**方案總管 中**工具列。
+1. 中**方案總管**，選取的原始程式檔**Form1**，然後選取**檢視表設計工具**按鈕**方案總管 中**工具列。
 
-2.  從[資料索引標籤、 工具箱](../ide/reference/toolbox-data-tab.md)，拖曳**資料集**拖曳至**Form1**。
+2. 從[資料索引標籤、 工具箱](../ide/reference/toolbox-data-tab.md)，拖曳**資料集**拖曳至**Form1**。
 
-3.  在 **加入資料集**對話方塊中，選取**不具類型資料集**，然後選取**確定**。
+3. 在 **加入資料集**對話方塊中，選取**不具類型資料集**，然後選取**確定**。
 
      **DataSet1**已加入至元件匣。
 
-4.  在 **屬性**視窗中，將**名稱**並<xref:System.Data.DataSet.DataSetName%2A>屬性`AuthorsDataSet`。
+4. 在 **屬性**視窗中，將**名稱**並<xref:System.Data.DataSet.DataSetName%2A>屬性`AuthorsDataSet`。
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>建立 XML 檔案讀入資料集的事件處理常式
 
 **讀取 XML**按鈕會將 XML 檔案讀入資料集。 它接著會根據設定的屬性<xref:System.Windows.Forms.DataGridView>繫結至資料集的控制項。
 
-1.  中**方案總管**，選取**Form1**，然後選取**檢視表設計工具**按鈕**方案總管 中**工具列。
+1. 中**方案總管**，選取**Form1**，然後選取**檢視表設計工具**按鈕**方案總管 中**工具列。
 
-2.  選取 [**讀取 XML** ] 按鈕。
+2. 選取 [**讀取 XML** ] 按鈕。
 
      **程式碼編輯器**會在開啟`ReadXmlButton_Click`事件處理常式。
 
-3.  輸入下列程式碼插入`ReadXmlButton_Click`事件處理常式：
+3. 輸入下列程式碼插入`ReadXmlButton_Click`事件處理常式：
 
      [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
 
-4.  在 `ReadXMLButton_Click`事件處理常式程式碼，變更`filepath =`正確路徑的項目。
+4. 在 `ReadXMLButton_Click`事件處理常式程式碼，變更`filepath =`正確路徑的項目。
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>建立事件處理常式，若要在文字方塊中顯示的結構描述
 
 **顯示的結構描述** 按鈕會建立<xref:System.IO.StringWriter>物件，會填入結構描述，並會顯示在<xref:System.Windows.Forms.TextBox>控制項。
 
-1.  在 **方案總管 中**，選取**Form1**，然後選取**檢視表設計工具** 按鈕。
+1. 在 **方案總管 中**，選取**Form1**，然後選取**檢視表設計工具** 按鈕。
 
-2.  選取 [**顯示的結構描述**] 按鈕。
+2. 選取 [**顯示的結構描述**] 按鈕。
 
      **程式碼編輯器**會在開啟`ShowSchemaButton_Click`事件處理常式。
 
-3.  將下列程式碼貼至 `ShowSchemaButton_Click` 事件處理常式。
+3. 將下列程式碼貼至 `ShowSchemaButton_Click` 事件處理常式。
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
@@ -196,13 +196,13 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 
 您現在可以測試表單，以確定它如預期般運作。
 
-1.  選取  **F5**執行應用程式。
+1. 選取  **F5**執行應用程式。
 
-2.  選取 [**讀取 XML** ] 按鈕。
+2. 選取 [**讀取 XML** ] 按鈕。
 
      DataGridView 中顯示 XML 檔案的內容。
 
-3.  選取 [**顯示的結構描述**] 按鈕。
+3. 選取 [**顯示的結構描述**] 按鈕。
 
      文字方塊會顯示 XML 檔案的 XML 結構描述。
 

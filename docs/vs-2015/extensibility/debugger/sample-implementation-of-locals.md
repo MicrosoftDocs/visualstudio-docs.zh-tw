@@ -11,12 +11,12 @@ ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af718d5fe5038a2baa62093078aaed9a3cccb14b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab81718837f6af8a230348d5e0a34f1da0a2c7bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942493"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092041"
 ---
 # <a name="sample-implementation-of-locals"></a>區域變數的範例實作
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,21 +26,21 @@ ms.locfileid: "58942493"
   
  以下是 Visual Studio 如何取得方法的區域變數的運算式評估工具 (EE) 的概觀：  
   
-1.  Visual Studio 會呼叫偵錯引擎 (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)若要取得[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)代表堆疊框架，包括區域變數的所有屬性的物件。  
+1. Visual Studio 會呼叫偵錯引擎 (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)若要取得[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)代表堆疊框架，包括區域變數的所有屬性的物件。  
   
-2.  `IDebugStackFrame2::GetDebugProperty` 呼叫[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)取得物件，描述在其中發生中斷點的方法。 DE 提供符號提供者 ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md))、 地址 ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md))，並繫結器 ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md))。  
+2. `IDebugStackFrame2::GetDebugProperty` 呼叫[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)取得物件，描述在其中發生中斷點的方法。 DE 提供符號提供者 ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md))、 地址 ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md))，並繫結器 ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md))。  
   
-3.  `IDebugExpressionEvaluator::GetMethodProperty` 呼叫[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)與提供`IDebugAddress`物件來取得[IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)代表包含指定的位址的方法。  
+3. `IDebugExpressionEvaluator::GetMethodProperty` 呼叫[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)與提供`IDebugAddress`物件來取得[IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)代表包含指定的位址的方法。  
   
-4.  `IDebugContainerField`介面中查詢[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)介面。 這是此介面可存取方法的區域變數。  
+4. `IDebugContainerField`介面中查詢[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)介面。 這是此介面可存取方法的區域變數。  
   
-5.  `IDebugExpressionEvaluator::GetMethodProperty` 具現化類別 (稱為`CFieldProperty`範例中) 可實`IDebugProperty2`介面代表方法的區域變數。 `IDebugMethodField`物件會置於這`CFieldProperty`物件連同`IDebugSymbolProvider`，`IDebugAddress`和`IDebugBinder`物件。  
+5. `IDebugExpressionEvaluator::GetMethodProperty` 具現化類別 (稱為`CFieldProperty`範例中) 可實`IDebugProperty2`介面代表方法的區域變數。 `IDebugMethodField`物件會置於這`CFieldProperty`物件連同`IDebugSymbolProvider`，`IDebugAddress`和`IDebugBinder`物件。  
   
-6.  當`CFieldProperty`初始化物件時， [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md)上呼叫`IDebugMethodField`物件取得[FIELD_INFO](../../extensibility/debugger/reference/field-info.md)結構，其中包含可顯示資訊的方法本身.  
+6. 當`CFieldProperty`初始化物件時， [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md)上呼叫`IDebugMethodField`物件取得[FIELD_INFO](../../extensibility/debugger/reference/field-info.md)結構，其中包含可顯示資訊的方法本身.  
   
-7.  `IDebugExpressionEvaluator::GetMethodProperty` 會傳回`CFieldProperty`物件做為`IDebugProperty2`物件。  
+7. `IDebugExpressionEvaluator::GetMethodProperty` 會傳回`CFieldProperty`物件做為`IDebugProperty2`物件。  
   
-8.  Visual Studio 呼叫[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)針對傳回`IDebugProperty2`篩選條件的物件`guidFilterLocalsPlusArgs`。 這會傳回[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件，包含方法的區域變數。 這個列舉型別會填入藉由呼叫[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)並[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)。  
+8. Visual Studio 呼叫[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)針對傳回`IDebugProperty2`篩選條件的物件`guidFilterLocalsPlusArgs`。 這會傳回[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)物件，包含方法的區域變數。 這個列舉型別會填入藉由呼叫[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)並[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)。  
   
 9. Visual Studio 呼叫[下一步](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)若要取得[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)每個本機的結構。 此結構包含一個指向`IDebugProperty2`本機介面。  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 511f19e48f91c6719c8b0021ff7eae4071ce89b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7349bc8c76b749c4306f7483e807507b99a11cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942560"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075203"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>將自訂屬性加入分層圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,23 @@ ms.locfileid: "58942560"
 > [!IMPORTANT]
 >  若要讓屬性出現，您必須在要讓圖層屬性顯示的每部電腦上執行下列變更。  
 > 
-> 1. 使用 [記事本] 來執行**系統管理員身分執行**。 開啟 `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
->    2.  在 `Content` 項目內，加入：  
+>  1. 使用 [記事本] 來執行**系統管理員身分執行**。 開啟 `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
+>  
+>  2. 在 `Content` 項目內，加入：  
 > 
->    ```xml  
->    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->    ```  
->    3.  底下**Visual Studio Tools**區段的 [Visual Studio 應用程式開始] 功能表開啟**開發人員命令提示字元**。  
+>     ```xml  
+>     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>     ```  
+>
+>  3. 底下**Visual Studio Tools**區段的 [Visual Studio 應用程式開始] 功能表開啟**開發人員命令提示字元**。  
 > 
->    輸入：  
+>     輸入：  
 > 
->    `devenv /rootSuffix /updateConfiguration`  
+>     `devenv /rootSuffix /updateConfiguration`  
 > 
->    `devenv /rootSuffix Exp /updateConfiguration`  
->    4.  重新啟動 Visual Studio。  
+>     `devenv /rootSuffix Exp /updateConfiguration`  
+>    
+>  4. 重新啟動 Visual Studio。  
   
  **請確定您的程式碼位於 VSIX 專案**  
   
@@ -66,15 +69,15 @@ public class MyProperty
   
  您可以在 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> 上或任何它的衍生類別上定義屬性，包括：  
   
--   `ILayerModel` - 模型  
+- `ILayerModel` - 模型  
   
--   `ILayer` - 每個圖層  
+- `ILayer` - 每個圖層  
   
--   `ILayerDependencyLink` - 圖層之間的連結  
+- `ILayerDependencyLink` - 圖層之間的連結  
   
--   `ILayerComment`  
+- `ILayerComment`  
   
--   `ILayerCommentLink`  
+- `ILayerCommentLink`  
   
 ## <a name="example"></a>範例  
  下列程式碼是典型自訂屬性描述元。 它會在圖層模型上定義布林值屬性 (`ILayerModel`)，而圖層模型可讓使用者提供自訂驗證方法的值。  

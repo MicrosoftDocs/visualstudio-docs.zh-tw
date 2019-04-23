@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76bfa81f1285dce000f79c356a604bab1d53cc55
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 0c4639b5e2edcfebd05dcc6511102c0369b4b3e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415820"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066087"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>將自訂屬性新增至相依性圖表
 
@@ -37,6 +37,7 @@ ms.locfileid: "58415820"
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
+>
 > 3. 底下**Visual Studio Tools**區段的 [Visual Studio 應用程式開始] 功能表開啟**開發人員命令提示字元**。 輸入：
 >
 >      `devenv /rootSuffix /updateConfiguration`
@@ -62,15 +63,15 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 您可以在 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> 上或任何它的衍生類別上定義屬性，包括：
 
--   `ILayerModel` - 模型
+- `ILayerModel` - 模型
 
--   `ILayer` - 每個圖層
+- `ILayer` - 每個圖層
 
--   `ILayerDependencyLink` - 圖層之間的連結
+- `ILayerDependencyLink` - 圖層之間的連結
 
--   `ILayerComment`
+- `ILayerComment`
 
--   `ILayerCommentLink`
+- `ILayerCommentLink`
 
 ## <a name="example"></a>範例
 

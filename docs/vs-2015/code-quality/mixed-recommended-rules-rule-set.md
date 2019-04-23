@@ -9,18 +9,17 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4bc9b014eede5ac19935f29ed8317e1507ae8a42
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f762920f61b649023f98810f7de8cdb7e3cf908a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000687"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662395"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>混合建議規則規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft 混合建議規則的重點在於支援 Common Language Runtime，包括潛在的安全性漏洞、 應用程式當機，以及其他重要的邏輯和設計錯誤的 c + + 專案中最常見且關鍵的問題。 您應該包含您為支援 Common Language Runtime 之 c + + 專案建立此規則設定任何自訂規則集中。 此規則被設計來與 Visual Studio Professional 版及更新版本設定。  
-
+Microsoft 混合建議規則的重點在於最一般和重大問題在您C++支援 Common Language Runtime，包括潛在的安全性漏洞、 應用程式當機，以及其他重要的邏輯和設計錯誤的專案。 您應該包含這個規則集建立的任何自訂規則集中您C++支援 Common Language Runtime 的專案。 此規則被設計來與 Visual Studio Professional 版及更新版本設定。  
 
 |                                                              規則                                                              |                                                             描述                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|

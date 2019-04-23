@@ -17,14 +17,14 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2357993f6f0d814bc2383564cafe16bb2e21225a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 873f4735cd1be2525b8b009dc94787b4eed394ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762431"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095735"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：為執行中的處理序附加和中斷連結程式碼剖析工具
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>HOW TO：附加和中斷連結效能工具，來執行處理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 程式碼剖析工具可以用來附加至或中斷連結執行中的處理序，以協助取樣與蒐集效能資料。 當您想要避免蒐集應用程式載入時間的資料，或是在處理序進入特定狀態後監視其效能時，就可以使用這種方法來執行處理序的程式碼剖析。  
@@ -44,7 +44,7 @@ ms.locfileid: "54762431"
   
 ### <a name="to-attach-to-a-running-process"></a>若要附加至執行中的處理序  
   
-1.  在 [分析] 功能表上，指向 [分析工具]，然後按一下 [附加/中斷連結]。  
+1. 在 [分析] 功能表上，指向 [分析工具]，然後按一下 [附加/中斷連結]。  
   
      \-或-  
   
@@ -52,13 +52,13 @@ ms.locfileid: "54762431"
   
      [將程式碼剖析工具附加至處理序] 對話方塊隨即出現。  
   
-2.  按一下您要附加至的處理序名稱。  
+2. 按一下您要附加至的處理序名稱。  
   
-3.  按一下 [附加] 。  
+3. 按一下 [附加] 。  
   
 ### <a name="to-detach-from-a-running-process"></a>若要從執行中處理序中斷連結  
   
-1.  在 [分析] 功能表上，指向 [分析工具]，然後按一下 [附加/中斷連結]。  
+1. 在 [分析] 功能表上，指向 [分析工具]，然後按一下 [附加/中斷連結]。  
   
      \-或-  
   
@@ -66,13 +66,13 @@ ms.locfileid: "54762431"
   
      [將程式碼剖析工具附加至處理序] 對話方塊隨即出現。  
   
-2.  按一下您要中斷連結的映像名稱。  
+2. 按一下您要中斷連結的映像名稱。  
   
-3.  按一下 [中斷連結]。  
+3. 按一下 [中斷連結]。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   
  [效能工作階段概觀](../profiling/performance-session-overview.md)   
- [如何︰啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [如何：啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

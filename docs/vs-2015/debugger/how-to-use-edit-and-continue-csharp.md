@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c52540c8e639adcd8ceec6b4da79fb87cff18386
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3095bccd25548e55f750ee11f26d20fdc9fe603d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941907"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042775"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>HOW TO：使用編輯後繼續 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,19 +35,19 @@ ms.locfileid: "58941907"
   
 ### <a name="to-invoke-edit-and-continue-automatically"></a>若要叫用 編輯後自動繼續  
   
-1.  在中斷模式，請對原始程式碼進行變更。  
+1. 在中斷模式，請對原始程式碼進行變更。  
   
-2.  從**偵錯**功能表上，按一下**繼續**，**步驟**，或**設定下一個陳述式**或評估在偵錯工具視窗中的函式。  
+2. 從**偵錯**功能表上，按一下**繼續**，**步驟**，或**設定下一個陳述式**或評估在偵錯工具視窗中的函式。  
   
      新的程式碼會編譯和偵錯會繼續進行新的程式碼。 編輯後繼續不支援某些變更。 如需詳細資訊，請參閱 <<c0> [ 支援的程式碼變更 (C#)](../debugger/supported-code-changes-csharp.md)。  
   
 ### <a name="to-enabledisable-edit-and-continue"></a>若要啟用/停用編輯後繼續   
   
-1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。  
+1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。  
   
-2.  在 **選項**對話方塊方塊中，展開**偵錯**節點，然後選取**編輯後繼續**。  
+2. 在 **選項**對話方塊方塊中，展開**偵錯**節點，然後選取**編輯後繼續**。  
   
-3.  在 [**選項**] 對話方塊中**編輯後繼續**頁面上，選取或清除**啟用編輯後繼續**核取方塊。  
+3. 在 [**選項**] 對話方塊中**編輯後繼續**頁面上，選取或清除**啟用編輯後繼續**核取方塊。  
   
      當您重新啟動偵錯工作階段時，這個設定會生效。  
   

@@ -8,12 +8,12 @@ ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cf661407273cfe731867fc79bef0f13d19c1f95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b5151f739dfe464ae948eb4b4716f659b7a7913
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942780"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044183"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 項目 (Visual Studio 樣板)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ ms.locfileid: "58942780"
   
  有效的運算式語法定義如下：  
   
--   功能運算式，例如"(VisualC &#124; CSharp) + (MSTest &#124; NUnit)"。  
+- 功能運算式，例如"(VisualC &#124; CSharp) + (MSTest &#124; NUnit)"。  
   
--   「&#124;"是 OR 運算子。  
+- 「&#124;"是 OR 運算子。  
   
--   "&"和"+"字元都是 AND 運算子。  
+- "&"和"+"字元都是 AND 運算子。  
   
--   "!" 字元是 NOT 運算子。  
+- "!" 字元是 NOT 運算子。  
   
--   括號會強制執行評估優先順序。  
+- 括號會強制執行評估優先順序。  
   
--   Null 或空白運算式會判斷值為相符項目。  
+- Null 或空白運算式會判斷值為相符項目。  
   
--   專案功能可以是下列這些保留字元以外的任何字元:"':;,+-*/\\！ ~&#124;& %$@^() ={}[] <> 嗎？ \t\b\n\r  
+- 專案功能可以是下列這些保留字元以外的任何字元:"':;,+-*/\\！ ~&#124;& %$@^() ={}[] <> 嗎？ \t\b\n\r  
   
 ## <a name="example"></a>範例  
  下列範例將示範三個不同的範本。 `Template1` 適用於所有 C# 專案類型，或是任何支援 `WindowsAppContainer` 功能的其他專案類型。 `Template2` 適用於任何類型的所有 C# 專案。 `Template3` 適用於不是 `WindowsAppContainer` 專案的 C# 專案。  

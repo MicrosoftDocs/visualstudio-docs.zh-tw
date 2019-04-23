@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 053ea0c65183f57bc80b87980b100f1a76067ea8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c480ead6749a7fe747eb7f2f1cc309c4e3c0a3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941891"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071040"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>HOW TO：使用工作流程設計工具對 XAML 進行偵錯
 工作流程是根據 XAML 所定義的。 工作流程的 UI 呈現方式，乃是建立在定義該工作流程的 XAML 樹狀結構上。 偵錯的體驗類似 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 中的工作流程偵錯。 例如，為 XAML 偵錯時，其區域變數、監看及執行緒視窗的運作方式，就像在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中偵錯一樣。 此外，在 XAML 偵錯期間的呼叫堆疊檢視，也是工作流程執行流程的逐行階層架構檢視。  
@@ -24,15 +24,15 @@ ms.locfileid: "58941891"
   
 ### <a name="to-debug-workflow-xaml"></a>若要進行工作流程 XAML 偵錯  
   
-1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟工作流程或活動專案。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中開啟工作流程或活動專案。  
   
-2.  或多個您想要偵錯中所述的活動上設定中斷點[How to:在工作流程中設定中斷點](../workflow-designer/how-to-set-breakpoints-in-workflows.md)。  
+2. 或多個您想要偵錯中所述的活動上設定中斷點[How to:在工作流程中設定中斷點](../workflow-designer/how-to-set-breakpoints-in-workflows.md)。  
   
-3.  以滑鼠右鍵按一下包含您的工作流程定義和選取的.xaml 檔案**檢視程式碼**。 在設計檢視中設定中斷點的活動之後，您會看到該活動 XAML 項目宣告的同一行上顯示中斷點。  
+3. 以滑鼠右鍵按一下包含您的工作流程定義和選取的.xaml 檔案**檢視程式碼**。 在設計檢視中設定中斷點的活動之後，您會看到該活動 XAML 項目宣告的同一行上顯示中斷點。  
   
-4.  叫用偵錯工具，如中所述[How to:叫用工作流程偵錯工具](../workflow-designer/how-to-invoke-the-workflow-debugger.md)。  
+4. 叫用偵錯工具，如中所述[How to:叫用工作流程偵錯工具](../workflow-designer/how-to-invoke-the-workflow-debugger.md)。  
   
-5.  當程式碼執行到您的其中一個中斷點時，該中斷點關聯的 XAML 項目會出現醒目顯示。 若要移動到下一個中斷點，請使用**F10**或是**F11**索引鍵。  
+5. 當程式碼執行到您的其中一個中斷點時，該中斷點關聯的 XAML 項目會出現醒目顯示。 若要移動到下一個中斷點，請使用**F10**或是**F11**索引鍵。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：在工作流程中設定中斷點](../workflow-designer/how-to-set-breakpoints-in-workflows.md)   

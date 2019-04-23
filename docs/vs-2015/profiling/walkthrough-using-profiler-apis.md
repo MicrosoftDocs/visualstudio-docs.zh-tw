@@ -12,14 +12,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 82d6c16c75cb2605bcdb8382d461d3557846fcc2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7cb8d054a2e26caddb2ccc9f37d20bb973b1833f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769631"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090799"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>逐步解說：使用分析工具 API
+# <a name="walkthrough-using-profiler-apis"></a>逐步解說：使用 Profiler Api
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本逐步解說會使用 C# 應用程式示範如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具 API。 您將使用分析工具 API 來限制檢測分析期間所收集的資料量。  
@@ -57,12 +57,12 @@ DataCollection.CurrentId);
   
 #### <a name="to-create-the-code-to-profile"></a>建立要分析的程式碼  
   
-1.  根據您的喜好設定，在 Visual Studio 中建立新的 C# 專案，或使用命令列組建。  
+1. 根據您的喜好設定，在 Visual Studio 中建立新的 C# 專案，或使用命令列組建。  
   
     > [!NOTE]
     >  您的組建必須參考 Microsoft Visual Studio 9\Team Tools\Performance Tools 目錄中的 Microsoft.VisualStudio.Profiler.dll 程式庫。  
   
-2.  複製下列程式碼，並將其貼入專案中：  
+2. 複製下列程式碼，並將其貼入專案中：  
   
     ```  
     using System;  
@@ -141,27 +141,27 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>在命令列收集和檢視資料  
   
-1.  編譯您在本逐步解說前面的「建立要分析的程式碼」程序中所建立範例程式碼的偵錯版本。  
+1. 編譯您在本逐步解說前面的「建立要分析的程式碼」程序中所建立範例程式碼的偵錯版本。  
   
-2.  若要分析 Managed 應用程式，請鍵入下列命令，以設定適當的環境變數：  
+2. 若要分析 Managed 應用程式，請鍵入下列命令，以設定適當的環境變數：  
   
      **VsPefCLREnv /traceon**  
   
-3.  鍵入下列命令：**VSInstr \<檔案名稱>.exe**  
+3. 鍵入下列命令：**VSInstr \<檔案名稱>.exe**  
   
-4.  鍵入下列命令：**VSPerfCmd /start:trace /output:\<檔案名稱>.vsp**  
+4. 鍵入下列命令：**VSPerfCmd /start:trace /output:\<檔案名稱>.vsp**  
   
-5.  鍵入下列命令：**VSPerfCmd /globaloff**  
+5. 鍵入下列命令：**VSPerfCmd /globaloff**  
   
-6.  執行程式。  
+6. 執行程式。  
   
-7.  鍵入下列命令：**VSPerfCmd /shutdown**  
+7. 鍵入下列命令：**VSPerfCmd /shutdown**  
   
-8.  鍵入下列命令：**VSPerfReport /calltrace:\<檔案名稱>.vsp**  
+8. 鍵入下列命令：**VSPerfReport /calltrace:\<檔案名稱>.vsp**  
   
      在目前目錄中，會使用產生的效能資料來建立 .csv 檔案。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Profiler>   
  [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [快速入門](../profiling/getting-started-with-performance-tools.md)   

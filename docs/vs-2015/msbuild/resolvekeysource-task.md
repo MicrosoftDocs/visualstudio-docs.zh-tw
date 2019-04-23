@@ -19,23 +19,22 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 49ba6bb58c8c3386da71da71b84b0cf07fc5ad23
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bd5cbe2f4998ab78ce39cde4b26a38b13c70b2f8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794067"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649287"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 決定強式名稱金鑰來源。  
   
 ## <a name="task-parameters"></a>工作參數  
  下表說明 `ResolveKeySource` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`AutoClosePasswordPromptShow`|選擇性的 `Int32` 參數。<br /><br /> 取得或設定顯示倒數計時訊息的時間 (以秒為單位)。|  
 |`AutoClosePasswordPromptTimeout`|選擇性的 `Int32` 參數。<br /><br /> 取得或設定關閉密碼提示對話方塊前的等候時間，以秒為單位。|  

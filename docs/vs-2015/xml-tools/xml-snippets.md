@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6c3155ee65031b57ec70cc7f22ed53cdef67ebf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5e2fbba9006c1621b8f98084d4ffd4c637be1127
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943595"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654651"
 ---
 # <a name="xml-snippets"></a>XML 片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 編輯器會提供一項功能，稱為*XML 程式碼片段*，可讓您更快速地建置 XML 檔案。 您可藉由將 XML 片段插入檔案來重複使用它們。 還可根據 XML 結構描述定義語言 (XSD) 結構描述，產生 XML 資料。  
   
 ## <a name="reusable-xml-snippets"></a>可重複使用的 XML 片段  

@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 682fc88fb616fbe2617fe6d336a35bf6fbc30e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930758"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061706"
 ---
 # <a name="when-to-create-project-types"></a>建立專案類型的時機
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,26 +25,26 @@ ms.locfileid: "58930758"
 ## <a name="create-a-new-project-type"></a>建立新的專案類型  
  您必須先建立專案類型，如果您想要自訂[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]以扮演一或多個下列的方式：  
   
--   參與建置、 部署、 設定和原始檔控制。  
+- 參與建置、 部署、 設定和原始檔控制。  
   
--   偵錯支援的供應項目。  
+- 偵錯支援的供應項目。  
   
--   顯示專案中的項目**方案總管 中**。  
+- 顯示專案中的項目**方案總管 中**。  
   
--   使用**開啟專案**或是**新的專案** 對話方塊。  
+- 使用**開啟專案**或是**新的專案** 對話方塊。  
   
--   支援專案巢狀結構。  
+- 支援專案巢狀結構。  
   
 ## <a name="extend-an-existing-project-type"></a>擴充現有的專案類型  
  您可能想要建立新的專案類型可供[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]下列方式來修改或擴充現有的專案類型的行為，例如，修改的建置程序[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]專案：  
   
--   使用多個檔案當做單一單位。  
+- 使用多個檔案當做單一單位。  
   
--   顯示單一檔案的子項目階層。  
+- 顯示單一檔案的子項目階層。  
   
--   顯示編輯器命令內容。  
+- 顯示編輯器命令內容。  
   
--   編輯器中顯示的服務內容。  
+- 編輯器中顯示的服務內容。  
   
 ## <a name="use-an-existing-project-type"></a>使用現有的專案類型  
  建立新的專案則有時候不需要。 下表顯示您沒有建立的專案類型的工作。  

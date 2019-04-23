@@ -2,7 +2,7 @@
 title: 移除 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步從您的電腦完全移除 Visual Studio。
-ms.date: 09/12/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -22,18 +22,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c115b345dbc1ddd3b13b2e0e7a9363229d971ea2
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 779771c51299239814f7ddd6a9cdbfbed017ac72
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322713"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790117"
 ---
 # <a name="remove-visual-studio"></a>移除 Visual Studio
 
-如果您遇到重大錯誤，且無法修復或解除安裝 Visual Studio，您可以執行 `InstallCleanup.exe` 工具來針對已安裝的所有 Visual Studio 2017 和更新版本執行個體移除安裝檔案與產品資訊。 執行此工具只可作為修復或解除安裝失敗時的最後手段，而且可能將其他 Visual Studio 安裝或其他需要修復之產品中的功能解除安裝。
+如果發生重大錯誤，且無法修復或解除安裝 Visual Studio，您可以執行 `InstallCleanup.exe` 工具來移除所有已安裝 Visual Studio 2017 或 Visual Studio 2019 執行個體的安裝檔案與產品資訊。 只有當修復或解除安裝失敗，且要解除安裝其他 Visual Studio 安裝的功能或其他產品可能也需要修復時，才能執行此工具作為最後手段。
 
-在下列指示中，您可以透過具有下列行為的不同命令列參數來執行此工具：
+在下列指示中，您可以使用具有下列行為的不同命令列參數來執行此工具：
 
 | 參數 | 行為 |
 | ------ | -------- |
@@ -42,8 +42,7 @@ ms.locfileid: "58322713"
 
 1. 關閉 Visual Studio 安裝程式。
 2. 開啟系統管理員命令提示字元。 若要開啟系統管理員命令提示字元，請遵循下列步驟：
-   * 按一下 [開始] 功能表
-   * 輸入 **cmd**。
+   * 於 [在這裡輸入要搜尋的文字] 方塊中鍵入 **cmd**。
    * 以滑鼠右鍵按一下 [命令提示字元]，然後按一下 [以系統管理員身分執行]。
 3. 輸入 `InstallCleanup.exe` 公用程式的完整路徑，並傳遞您想要的任何命令列參數。 根據預設，公用程式的路徑如下所示：
    ```

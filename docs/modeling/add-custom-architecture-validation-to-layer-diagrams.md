@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e1d0a0cd2b82c16871e157e6f78c766895c34b3
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 2d79c56cfeb2c1a5ef6f83ef64c005fd794c1f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415040"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096903"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>將自訂架構驗證新增至相依性圖表
 
@@ -75,7 +75,7 @@ ms.locfileid: "58415040"
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>將圖層驗證加入個別的 VSIX
 
-1. 建立新**類別庫**專案。 這個專案會包含圖層驗證類別。
+1. 建立新的**類別庫**專案。 這個專案會包含圖層驗證類別。
 
 2. 尋找或建立**VSIX 專案**方案中。 VSIX 專案會包含名為 **source.extension.vsixmanifest**的檔案。
 
@@ -83,9 +83,9 @@ ms.locfileid: "58415040"
 
 4. 在 **source.extension.vsixmanifest**的 [資產] 下，加入圖層驗證專案做為 MEF 元件：
 
-    1.  選擇 [新增] 。
+    1. 選擇 [新增] 。
 
-    2.  在 [加入新的資產]  對話方塊中，設定：
+    2. 在 [加入新的資產]  對話方塊中，設定：
 
           = 
 
@@ -95,9 +95,9 @@ ms.locfileid: "58415040"
 
 5. 您也必須將它加入做為圖層驗證：
 
-    1.  選擇 [新增] 。
+    1. 選擇 [新增] 。
 
-    2.  在 [加入新的資產]  對話方塊中，設定：
+    2. 在 [加入新的資產]  對話方塊中，設定：
 
          **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. 這不是下拉式清單的其中一個選項。 您必須從鍵盤輸入。
 
@@ -125,7 +125,7 @@ ms.locfileid: "58415040"
 
 9. 若要安裝 VSIX 的 Visual Studio，或在另一部電腦上的主要執行個體中，尋找 **.vsix**中的檔案**bin** VSIX 專案的目錄。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下 VSIX 檔案。
 
-##  <a name="programming"></a> 程式設計驗證
+## <a name="programming"></a> 程式設計驗證
 
 若要定義圖層驗證擴充功能，您可以定義具有下列特性的類別：
 
@@ -194,7 +194,7 @@ ms.locfileid: "58415040"
 
 從圖層到程式碼中之項目的連結具有「代表」的類別。
 
-##  <a name="debugging"></a> 驗證偵錯
+## <a name="debugging"></a> 驗證偵錯
 
 若要對您的圖層驗證擴充功能進行偵錯，請按 CTRL + F5。 Visual Studio 的實驗執行個體隨即開啟。 在本執行個體中，開啟或建立圖層模型。 此模型必須與程式碼相關聯，而且必須有至少一個相依性。
 
@@ -226,7 +226,7 @@ ms.locfileid: "58415040"
 
 若要在已安裝 Visual Studio 適當版本的電腦上安裝您的驗證擴充功能，請在目標電腦上開啟 VSIX 檔案。
 
-##  <a name="example"></a> Example code
+## <a name="example"></a> Example code
 
 ```csharp
 using System;

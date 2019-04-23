@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 670ad5e28dad02c59ac20dee8cab75a52ae650ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 485969b40fdcedd2ec8835de8d9c9a699aba9e79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091781"
 ---
 # <a name="graphics-state"></a>圖形狀態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Visual Studio 圖形診斷中的 [狀態] 視窗可協助您了解在目前事�
   
 ##### <a name="to-change-the-state-view"></a>變更狀態檢視  
   
--   在 [狀態] 視窗左上方的標題列正下方，選擇對應至您要使用之狀態檢視樣式的按鈕。  
+- 在 [狀態] 視窗左上方的標題列正下方，選擇對應至您要使用之狀態檢視樣式的按鈕。  
   
-    -   **顯示 API 輸入狀態檢視**  
+    - **顯示 API 輸入狀態檢視**  
   
-    -   **顯示邏輯狀態檢視**  
+    - **顯示邏輯狀態檢視**  
   
-    -   **顯示釘選的狀態檢視**  
+    - **顯示釘選的狀態檢視**  
   
 > [!IMPORTANT]
 >  您必須在 [顯示 API 輸入狀態] 或 [顯示邏輯狀態] 檢視中釘選狀態，它才會顯示在 [顯示釘選的狀態檢視] 中。  
@@ -67,8 +67,8 @@ Visual Studio 圖形診斷中的 [狀態] 視窗可協助您了解在目前事�
   
 ##### <a name="to-pin-state-in-place"></a>就地釘選狀態  
   
-1.  在 [狀態] 視窗中，找出您感興趣的狀態。 您可能需要展開高階狀態，以找出您感興趣的詳細資料。  
+1. 在 [狀態] 視窗中，找出您感興趣的狀態。 您可能需要展開高階狀態，以找出您感興趣的詳細資料。  
   
-2.  將游標放在您感興趣的狀態上方。 [釘選] 圖示會出現在狀態項目左側。  
+2. 將游標放在您感興趣的狀態上方。 [釘選] 圖示會出現在狀態項目左側。  
   
-3.  選擇 [釘選] 圖示就地釘選狀態項目。
+3. 選擇 [釘選] 圖示就地釘選狀態項目。

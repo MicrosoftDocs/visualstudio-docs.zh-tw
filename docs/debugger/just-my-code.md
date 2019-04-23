@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ebbf2401432b9afec5a66fb6a7322e3e2df035
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.openlocfilehash: edb78ed49add85b35f3fb89b4ba424d44f52bf8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081862"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>只有使用 Just My Code 的使用者程式碼進行偵錯
 
 *Just My Code*超出 Visual Studio 偵錯功能自動步驟系統、 架構和其他非使用者程式碼的呼叫。 在 [**呼叫堆疊**] 視窗中，Just My Code 會摺疊這些呼叫 **[外部程式碼]** 框架。
 
-Just My Code.NET Framework、 c + + 和 JavaScript 專案中的運作方式。
+Just My Code 的運作方式不同.NET Framework 中C++，和 JavaScript 專案。
 
 ## <a name="BKMK_Enable_or_disable_Just_My_Code"></a> 啟用或停用 Just My Code
 
@@ -81,25 +81,25 @@ Just My Code.NET Framework、 c + + 和 JavaScript 專案中的運作方式。
 
 ## <a name="BKMK_C___Just_My_Code"></a> C++ Just My Code
 
-啟動 Visual Studio 2017 版本 15.8，Just My Code 程式碼中逐步執行，也支援。 這項功能也需要使用[/JMC （只 my code 偵錯）](/cpp/build/reference/jmc)編譯器參數。 C + + 專案的預設會啟用此參數。 針對**呼叫堆疊**視窗和呼叫堆疊支援 Just My Code，/JMC 交換器不需要。
+啟動 Visual Studio 2017 版本 15.8，Just My Code 程式碼中逐步執行，也支援。 這項功能也需要使用[/JMC （只 my code 偵錯）](/cpp/build/reference/jmc)編譯器參數。 根據預設，在啟用參數C++專案。 針對**呼叫堆疊**視窗和呼叫堆疊支援 Just My Code，/JMC 交換器不需要。
 
 <a name="BKMK_CPP_User_and_non_user_code"></a> 若要歸類為使用者程式碼，必須載入二進位檔包含使用者程式碼 PDB 偵錯工具 (使用**模組**視窗來檢查這)。
 
-呼叫堆疊行為，例如在**呼叫堆疊** 視窗中，Just My Code，c + + 中會考量這些是函式*非使用者程式碼*:
+呼叫堆疊行為，例如在**呼叫堆疊** 視窗中，Just My Code 在C++會考慮這些是函式*非使用者程式碼*:
 
 - 在其符號檔中已移除來源資訊之函式。
 - 符號檔表示沒有與堆疊框架對應的原始程式檔之函式。
 - 中指定的函式 *\*.natjmc*中的檔案 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾。
 
-程式碼逐步執行行為，Just My Code，c + + 中會考量這些是函式*非使用者程式碼*:
+程式碼逐步執行行為，Just My Code 中的C++會考慮這些是函式*非使用者程式碼*:
 
 - 為其對應的 PDB 檔案尚未載入偵錯工具中的函式。
 - 中指定的函式 *\*.natjmc*中的檔案 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾。
 
 > [!NOTE]
-> 如需程式碼逐步執行 Just My Code 中的支援，c + + 程式碼必須編譯使用 MSVC 編譯器在 Visual Studio 15.8 Preview 3 或更新版本，而且您必須啟用 /JMC 編譯器參數 （它預設啟用）。 如需詳細資訊，請參閱 <<c0> [ 自訂 c + + 的呼叫堆疊和程式碼逐步執行行為](#BKMK_CPP_Customize_call_stack_behavior))，而這[部落格文章](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/)。 使用舊版的編譯器編譯的程式碼 *.natstepfilter*檔案是唯一的辦法自訂程式碼逐步執行，也就是獨立的 Just My Code。 請參閱[自訂 c + + 逐步執行行為](#BKMK_CPP_Customize_stepping_behavior)。
+> 程式碼逐步執行 Just My Code，支援C++程式碼必須使用在 Visual Studio 15.8 Preview 3 或更新版本，在 MSVC 編譯器進行編譯，而且必須啟用 /JMC 編譯器參數 （它預設啟用）。 如需詳細資訊，請參閱 <<c0> [ 自訂C++的呼叫堆疊和程式碼逐步執行行為](#BKMK_CPP_Customize_call_stack_behavior))，而這[部落格文章](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/)。</c0> 使用舊版的編譯器編譯的程式碼 *.natstepfilter*檔案是唯一的辦法自訂程式碼逐步執行，也就是獨立的 Just My Code。 請參閱[自訂C++逐步執行行為](#BKMK_CPP_Customize_stepping_behavior)。
 
-<a name="BKMK_CPP_Stepping_behavior"></a> 在 c + + 偵錯：
+<a name="BKMK_CPP_Stepping_behavior"></a> 在C++偵錯：
 
 - **偵錯** > **逐步**(或**F11**) 上非使用者程式碼不進入程式碼至下一行使用者程式碼。
 - **偵錯** > **跳離函式**(或**Shift**+**F11**) 在非使用者程式碼會執行到下一行使用者程式碼。
@@ -110,9 +110,9 @@ Just My Code.NET Framework、 c + + 和 JavaScript 專案中的運作方式。
 
 如果偵錯工具叫用例外狀況時，它會停止的例外狀況，無論是在使用者或非使用者程式碼。 **使用者未處理**中的選項**例外狀況設定**對話方塊都會被忽略。
 
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> 自訂 c + + 呼叫堆疊及逐步執行行為的程式碼
+### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> 自訂C++的呼叫堆疊和程式碼逐步執行行為
 
-C + + 專案，您可以指定模組、 原始程式檔和函式**呼叫堆疊**藉由指定在視窗會將視為非使用者程式碼 *\*.natjmc*檔案。 這項自訂也適用於逐步執行，如果您使用最新編譯器的程式碼 (請參閱[c + + Just My Code](#BKMK_CPP_User_and_non_user_code))。
+針對C++專案中，您可以指定模組、 原始程式檔和函式**呼叫堆疊**藉由指定在視窗會將視為非使用者程式碼 *\*.natjmc*檔案。 這項自訂也適用於逐步執行，如果您使用最新編譯器的程式碼 (請參閱[ C++ Just My Code](#BKMK_CPP_User_and_non_user_code))。
 
 - 若要指定非使用者程式碼，在 Visual Studio 電腦的所有使用者，新增 *.natjmc*的檔案 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾。
 - 若要指定非使用者程式碼，針對個別使用者，新增 *.natjmc*的檔案 *%USERPROFILE%\My Documents\\< Visual Studio 版本\>\Visualizers*資料夾。
@@ -141,28 +141,28 @@ A *.natjmc*檔案是 XML 檔案使用此語法：
 
  **模組項目屬性**
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Name`|必要項。 該模組的完整路徑。 您可以使用 Windows 萬用字元`?`（零或一個字元） 和`*`（零或多個字元）。 例如，套用至物件的<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 會告知偵錯工具中的所有模組都視為 *\3rdParty\UtilLibs* 為外部程式碼的任何磁碟機上。|
 |`Company`|選擇性。 發行內嵌於可執行檔之模組的公司名稱。 您可以使用這個屬性使模組意義清楚。|
 
  **檔案項目屬性**
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Name`|必要項。 要視為外部程式碼的原始程式檔之完整路徑。 在指定路徑時，您可以使用 Windows 萬用字元 `?` 和 `*`。|
 
  **Function 項目屬性**
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Name`|必要項。 要視為外部程式碼的函式之完整名稱。|
 |`Module`|選擇性。 包含此函式的模組名稱或完整路徑。 您可以使用這個屬性使具有相同名稱的函式意義清楚。|
 |`ExceptionImplementation`|當設定為 `true` 時，此呼叫堆疊會顯示擲回例外狀況的函式，而不是這個函式。|
 
-###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> 自訂 c + + 逐步執行行為獨立於 Just My Code 設定
+### <a name="BKMK_CPP_Customize_stepping_behavior"></a> 自訂C++逐步執行行為獨立於 Just My Code 設定
 
-在 c + + 專案中，您可以指定函式依其列出中的非使用者程式碼逐步 *\*.natstepfilter*檔案。 函式中所列 *\*.natstepfilter*檔案不相依於 Just My Code 設定值。
+在C++專案中，您可以指定函式依其列出中的非使用者程式碼逐步 *\*.natstepfilter*檔案。 函式中所列 *\*.natstepfilter*檔案不相依於 Just My Code 設定值。
 
 - 若要指定非使用者程式碼，為所有本機 Visual Studio 使用者，新增 *.natstepfilter*的檔案 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*資料夾。
 - 若要指定非使用者程式碼，針對個別使用者，新增 *.natstepfilter*的檔案 *%USERPROFILE%\My Documents\\< Visual Studio 版本\>\Visualizers*資料夾。
@@ -185,14 +185,14 @@ A *.natstepfilter*檔案是 XML 檔案使用此語法：
 
 ```
 
-|元素|說明|
+|項目|描述|
 |-------------|-----------------|
 |`Function`|必要項。 指定一個或多個函式做為非使用者函式。|
-|`Name`|必要項。 指定要比對的完整函式名稱之 ECMA-262 格式化規則運算式。 例如：<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知偵錯工具在 `MyNS::MyClass` 中的所有方法要視為非使用者程式碼。 該比對會區分大小寫。|
+|`Name`|必要項。 指定要比對的完整函式名稱之 ECMA-262 格式化規則運算式。 例如: <br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知偵錯工具在 `MyNS::MyClass` 中的所有方法要視為非使用者程式碼。 該比對會區分大小寫。|
 |`Module`|選擇性。 指定包含此函式的模組之完整路徑的 ECMA-262 格式化規則運算式。 該比對不區分大小寫。|
 |`Action`|必要項。 區分大小寫值的其中之一：<br /><br /> `NoStepInto`  -會告知偵錯工具不進入函式。<br /> `StepInto`  -會告知偵錯工具逐步執行函式中，覆寫任何其他`NoStepInto`相符的函式。|
 
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> JavaScript Just My Code
+## <a name="BKMK_JavaScript_Just_My_Code"></a> JavaScript Just My Code
 
 <a name="BKMK_JS_User_and_non_user_code"></a> JavaScript Just My Code 將程式碼分類為下列類別其中一類，來控制逐步執行和呼叫堆疊顯示：
 
@@ -205,10 +205,10 @@ A *.natstepfilter*檔案是 XML 檔案使用此語法：
 JavaScript 偵錯工具會將分類為使用者或依此順序的非使用者程式碼：
 
 1. 預設分類。
-   -   執行由傳遞字串給主機所提供的指令碼`eval`函式**MyCode**。
-   -   執行由傳遞字串給指令碼`Function`建構函式**LibraryCode**。
-   -   Framework 參考，例如 WinJS 或 Azure SDK 中的指令碼**LibraryCode**。
-   -   執行由傳遞字串給指令碼`setTimeout`， `setImmediate`，或`setInterval`函式會**UnrelatedCode**。
+   - 執行由傳遞字串給主機所提供的指令碼`eval`函式**MyCode**。
+   - 執行由傳遞字串給指令碼`Function`建構函式**LibraryCode**。
+   - Framework 參考，例如 WinJS 或 Azure SDK 中的指令碼**LibraryCode**。
+   - 執行由傳遞字串給指令碼`setTimeout`， `setImmediate`，或`setInterval`函式會**UnrelatedCode**。
 
 2. 針對所有的 Visual Studio JavaScript 專案中指定的分類 *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json*檔案。
 

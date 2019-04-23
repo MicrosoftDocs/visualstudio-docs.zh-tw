@@ -14,19 +14,19 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 691f7aff61a8a2bfae6444540afe9a28a200278d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 31673205a7ca94783985e0249c5664b4bbca6147
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073978"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>陣列長度必須是有限的正整數
 您呼叫**陣列**不是整數 （整數包含零，再加上正值的整數的集合） 的引數的建構函式。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   只有在建立新時，才使用正整數`Array`物件。 如果您想要建立具有單一元素且不是整數的陣列，則會執行雙步驟程序中。 先建立陣列，含有一個項目，然後將值放在第一個項目 (array[0])。 以下是範例，會產生這個錯誤。  
+- 只有在建立新時，才使用正整數`Array`物件。 如果您想要建立具有單一元素且不是整數的陣列，則會執行雙步驟程序中。 先建立陣列，含有一個項目，然後將值放在第一個項目 (array[0])。 以下是範例，會產生這個錯誤。  
   
     ```JavaScript  
     var piArray = new Array(3.14159);  

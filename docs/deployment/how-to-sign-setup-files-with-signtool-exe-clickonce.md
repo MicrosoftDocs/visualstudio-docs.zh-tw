@@ -1,5 +1,5 @@
 ---
-title: 如何： 簽署安裝程式檔案使用 SignTool.exe (ClickOnce) |Microsoft Docs
+title: HOW TO：簽署安裝程式檔案使用 SignTool.exe (ClickOnce) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc6630bfe8dd5ee1fc48fe0d5abe189a63ab330
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619962"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041063"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>How to: Sign setup files with SignTool.exe (ClickOnce) (如何：使用 SignTool.exe 簽署安裝程式檔案 (ClickOnce))
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>HOW TO：使用 SignTool.exe 簽署安裝程式檔案 (ClickOnce)
 您可以使用 *SignTool.exe* 簽署安裝程式 (*setup.exe*)。 這項程序有助於確保不會在使用者電腦上安裝遭到修改的檔案。
 
  根據預設，ClickOnce 具有已簽署的資訊清單和已簽署的安裝程式。 不過，如果您稍後要變更安裝程式的參數，就必須在稍後簽署安裝程式。 如果在簽署安裝程式之後變更參數，簽章會損毀。
@@ -34,23 +34,23 @@ ms.locfileid: "56619962"
 
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>產生未簽署的安裝程式並在稍後簽署
 
-1.  在開發電腦上，安裝您要用來簽署資訊清單的憑證。
+1. 在開發電腦上，安裝您要用來簽署資訊清單的憑證。
 
-2.  在 [方案總管] 中選取專案。
+2. 在 [方案總管] 中選取專案。
 
-3.  在 [專案] 功能表上，按一下[*ProjectName* 屬性]。
+3. 在 [專案] 功能表上，按一下[*ProjectName* 屬性]。
 
-4.  在 [簽署] 頁面上，清除的 [簽署 ClickOnce 資訊清單]。
+4. 在 [簽署] 頁面上，清除的 [簽署 ClickOnce 資訊清單]。
 
-5.  在 [發佈] 頁面上，按一下 [必要條件]。
+5. 在 [發佈] 頁面上，按一下 [必要條件]。
 
-6.  確定已選取所有必要條件，然後按一下 [確定]。
+6. 確定已選取所有必要條件，然後按一下 [確定]。
 
-7.  在 [發佈] 頁面上，確認發佈設定，然後按一下 [立即發佈]。
+7. 在 [發佈] 頁面上，確認發佈設定，然後按一下 [立即發佈]。
 
      方案隨即將未簽署的應用程式資訊清單、未簽署的部署資訊清單、版本特定檔案，以及未簽署的安裝程式發行至發行資料夾位置。
 
-8.  在 [發佈] 頁面上，按一下 [必要條件]。
+8. 在 [發佈] 頁面上，按一下 [必要條件]。
 
 9. 在 [必要條件] 對話方塊中，清除 [建立安裝程式以安裝必要條件元件]。
 

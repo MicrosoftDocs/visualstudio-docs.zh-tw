@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efb95d2beb90358cbbe359076a815dee13ce7166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e39a742c01b013c43992847010bf5f6cb6ac6009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644376"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070910"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>使用 Visual Studio 建立適用於 Office 的 VSTO 增益集
   您可以使用 Visual Studio 中的 Microsoft Office Developer Tools 來建立 .NET Framework 應用程式，以擴充 Office 功能。 這些應用程式也稱為 *「Office 方案」*(Office Solution)。
@@ -29,9 +29,9 @@ ms.locfileid: "56644376"
 
  如需 Office 開發的最新資訊，請參閱 MSDN 上的下列開發中心：
 
--   [Visual Studio 開發人員入口網站的 Office 程式開發](http://go.microsoft.com/fwlink/?LinkId=123844)包含產品資訊、 程式碼範例、 影片和有關使用 Visual Studio 將 Office 應用程式自訂為解決方案一部分的社群資源的連結.
+- [Visual Studio 開發人員入口網站的 Office 程式開發](http://go.microsoft.com/fwlink/?LinkId=123844)包含產品資訊、 程式碼範例、 影片和有關使用 Visual Studio 將 Office 應用程式自訂為解決方案一部分的社群資源的連結.
 
--   [Microsoft Office 開發人員中心](http://go.microsoft.com/fwlink/?LinkId=83467)包含技術文章、 程式碼範例、 下載、 社群資訊、 支援，以及有關 Office 自訂和 Office Business Application (Oba 的其他文件的連結).
+- [Microsoft Office 開發人員中心](http://go.microsoft.com/fwlink/?LinkId=83467)包含技術文章、 程式碼範例、 下載、 社群資訊、 支援，以及有關 Office 自訂和 Office Business Application (Oba 的其他文件的連結).
 
 ## <a name="in-this-section"></a>本節內容
 - [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

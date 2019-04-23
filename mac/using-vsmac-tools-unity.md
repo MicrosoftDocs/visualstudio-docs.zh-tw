@@ -3,14 +3,14 @@ title: 使用 Visual Studio for Mac Tools for Unity
 description: 本指南描述如何使用 Visual Studio for Mac Tools for Unity 延伸模組
 author: therealjohn
 ms.author: johmil
-ms.date: 07/17/2017
+ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 8d2cff0f2366a1f59dc70db7fd36415e853e1d2e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027298"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857004"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>使用 Visual Studio for Mac Tools for Unity
 
@@ -103,6 +103,13 @@ Unity 專案可以使用 Visual Studio for Mac 進行偵錯。
 
 3. 如果遊戲在連線至 Visual Studio 時於 Unity 編輯器中執行，則遇到的任何中斷點都會暫停執行遊戲，並啟動遊戲在 Visual Studio for Mac 中叫用中斷點的一行程式碼。
 
+
+### <a name="start-debugging-in-a-single-step"></a>在單一步驟中啟動偵錯
+
+選擇 [附加至 Unity 並試玩] 組態，可直接從 Visual Studio for Mac 在單一步驟中啟動偵錯和播放 Unity 編輯器。
+
+![選取 [附加至 Unity 並試玩]](media/using-vsmac-tools-unity-image8.png)
+
 ### <a name="stop-debugging"></a>停止偵錯
 
 停止偵錯：
@@ -110,5 +117,8 @@ Unity 專案可以使用 Visual Studio for Mac 進行偵錯。
 1. 在 Visual Studio for Mac 中按一下 [停止] 按鈕，或按 **Shift + Command + Return**。
 
    ![在 Visual Studio 中按一下 [停止]](media/using-vsmac-tools-unity-image7.png)
+
+> [!NOTE]
+> 如果您已使用 [附加至 Unity 並試玩] 組態來啟動偵錯，則 [停止] 按鈕也會停止 Unity。
 
 若要深入了解 Visual Studio for Mac 中的偵錯，請參閱 [Using the debugger](debugging.md) (使用偵錯工具)。

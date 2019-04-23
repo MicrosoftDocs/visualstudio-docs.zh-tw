@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bfb6270f4b6e5a0c4f65f5490def24c03cad6898
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 32fec95757e3baf1b62230457cc048aba38af8c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944315"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101635"
 ---
 # <a name="debugger-security"></a>偵錯工具安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ ms.locfileid: "58944315"
 ### <a name="web-services-debugging-security"></a>Web 服務偵錯安全性  
  在本機偵錯比較安全，但是因為在 Web 伺服器上可能並未安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，所以本機偵錯並不實用。 一般來說，偵錯 Web 服務會在遠端完成 (除了在開發期間以外)，因此遠端偵錯安全性的建議也適用於 Web 服務偵錯。 這裡有幾個額外的最佳作法。 如需詳細資訊，請參閱 [Debugging XML Web Services](http://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)。  
   
--   請勿在受到危害的 Web 伺服器上啟用偵錯  
+- 請勿在受到危害的 Web 伺服器上啟用偵錯  
   
--   在偵錯前請確定 Web 伺服器是安全的。 如果不確定是否安全，請勿進行偵錯  
+- 在偵錯前請確定 Web 伺服器是安全的。 如果不確定是否安全，請勿進行偵錯  
   
--   如果要偵錯公開在網際網路上的 Web 服務要特別小心  
+- 如果要偵錯公開在網際網路上的 Web 服務要特別小心  
   
 ### <a name="external-components"></a>外部元件  
  請留意程式進行互動的外部元件之信任狀態，特別是如果您並未撰寫其程式碼。 同時留意 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 或偵錯工具會使用的元件。  

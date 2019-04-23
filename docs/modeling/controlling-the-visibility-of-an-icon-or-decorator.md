@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe658dd3cad8c89dca04fe1dc9fb61d6c5813e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7cfe6ce02b03ed69435f8056ccd340b92f9eb5a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913206"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046275"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或 Decorator 的可見度
 A*裝飾項目*是圖示或特定領域語言 (DSL) 中的圖形上顯示的文字行。 您可以進行裝飾項目會顯示，並根據模型中屬性的狀態會消失。 例如，代表個人的圖形，您可能有不同的圖示會出現取決於該人員的性別，子系數目等等。
@@ -24,11 +24,11 @@ A*裝飾項目*是圖示或特定領域語言 (DSL) 中的圖形上顯示的文�
 
 1. 在 DSL 定義圖表中，加入圖形類別，圖示或您想要顯示的文字裝飾項目。
 
-   1.  以滑鼠右鍵按一下圖形類別，指向**新增**，然後按一下 所需的裝飾項目類型。
+   1. 以滑鼠右鍵按一下圖形類別，指向**新增**，然後按一下 所需的裝飾項目類型。
 
-   2.  設定裝飾項目**位置**屬性。 多個裝飾項目可以有相同的位置。 例如，您可能有圖示男性和女性共用相同的位置。
+   2. 設定裝飾項目**位置**屬性。 多個裝飾項目可以有相同的位置。 例如，您可能有圖示男性和女性共用相同的位置。
 
-   3.  設定**預設圖示**圖示裝飾項目屬性。
+   3. 設定**預設圖示**圖示裝飾項目屬性。
 
 2. 選取圖表項目對應，也就是 shape 類別與 DSL 定義圖上的網域類別之間的灰線。
 
@@ -40,7 +40,7 @@ A*裝飾項目*是圖示或特定領域語言 (DSL) 中的圖形上顯示的文�
 
     否則，請按一下下拉式選單，並瀏覽至的關聯性或類別之屬性所在的位置。
 
-   -   若要避免錯誤報告，您應該不瀏覽關聯性標示為 「 * 」 中瀏覽工具。
+   - 若要避免錯誤報告，您應該不瀏覽關聯性標示為 「 * 」 中瀏覽工具。
 
 6. 設定**篩選條件屬性**網域屬性。 例如，性別。
 
@@ -56,7 +56,7 @@ A*裝飾項目*是圖示或特定領域語言 (DSL) 中的圖形上顯示的文�
 
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>若要控制的裝飾項目，以公式為基礎的可見性
 
-1.  將導出的網域屬性加入至網域類別。 在 [**屬性**] 視窗中，設定下列值：
+1. 將導出的網域屬性加入至網域類別。 在 [**屬性**] 視窗中，設定下列值：
 
      **IsBrowsable =**`False`**-這可能會隱藏來自使用者的屬性**
 
@@ -68,27 +68,27 @@ A*裝飾項目*是圖示或特定領域語言 (DSL) 中的圖形上顯示的文�
 
      如需詳細資訊，請參閱 <<c0> [ 計算和儲存體的自訂屬性](../modeling/calculated-and-custom-storage-properties.md)。
 
-2.  讓新的屬性，控制 decorator 的可視性。
+2. 讓新的屬性，控制 decorator 的可視性。
 
-    1.  選取圖表項目對應，也就是從網域類別到圖形，灰線。 在 [ **DSL 詳細資料**視窗中，開啟**DecoratorMap** ] 索引標籤。
+    1. 選取圖表項目對應，也就是從網域類別到圖形，灰線。 在 [ **DSL 詳細資料**視窗中，開啟**DecoratorMap** ] 索引標籤。
 
-    2.  請檢查**Visibility Filter**  方塊中。
+    2. 請檢查**Visibility Filter**  方塊中。
 
-    3.  在 **篩選條件屬性**，選取的控制項屬性**DecoratorControl**。
+    3. 在 **篩選條件屬性**，選取的控制項屬性**DecoratorControl**。
 
-    4.  底下**可見性的項目**，輸入`True`。
+    4. 底下**可見性的項目**，輸入`True`。
 
-3.  按一下 [**轉換所有範本**中**方案總管] 中**工具列。
+3. 按一下 [**轉換所有範本**中**方案總管] 中**工具列。
 
-4.  按一下 **建置方案**上**建置**功能表。
+4. 按一下 **建置方案**上**建置**功能表。
 
-5.  按兩下出現的錯誤報表：「*YourClass*未包含定義 GetDecoratorControlValue...」。
+5. 按兩下出現的錯誤報表：「*YourClass*未包含定義 GetDecoratorControlValue...」。
 
      文字編輯器會開啟 Dsl\GeneratedCode\DomainClasses.cs。 上述反白顯示的錯誤會要求您將方法加入的註解。
 
-6.  請注意所缺少的命名空間、 類別和方法。  比方說，Company.FamilyTree.Person.GetDecoratorControlValue()。
+6. 請注意所缺少的命名空間、 類別和方法。  比方說，Company.FamilyTree.Person.GetDecoratorControlValue()。
 
-7.  在不同的程式碼檔案中，撰寫部分類別定義，其中包含遺漏的方法。 例如: 
+7. 在不同的程式碼檔案中，撰寫部分類別定義，其中包含遺漏的方法。 例如: 
 
     ```
     namespace Company.FamilyTree
@@ -101,7 +101,7 @@ A*裝飾項目*是圖示或特定領域語言 (DSL) 中的圖形上顯示的文�
 
      如需有關自訂程式碼之模型的詳細資訊，請參閱[巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
-8.  重新建置並執行方案。
+8. 重新建置並執行方案。
 
 ## <a name="see-also"></a>另請參閱
 

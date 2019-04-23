@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f034797a773602f714ce69193ce6987ba9560bf5
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526697"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106198"
 ---
 # <a name="custom-task-panes"></a>自訂工作窗格
   工作窗格是通常停駐在 Microsoft Office 應用程式視窗一側的使用者介面面板。 自訂工作窗格為您提供建立個人專屬工作窗格的方法，也為使用者提供了熟悉的介面，供他們用來存取您方案的功能。 例如，介面中可以包含控制項，而這些控制項則會執行程式碼來修改文件或顯示資料來源中的資料。
@@ -126,7 +126,7 @@ ms.locfileid: "57526697"
 
  當 VSTO 增益集卸載時，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會自動清除自訂工作窗格使用的資源。 請勿呼叫<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A>或是<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>中的方法`ThisAddIn_Shutdown`專案中的事件處理常式。 因為 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會在呼叫 `ThisAddIn_Shutdown` 之前先清除 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件使用的資源，所以這些方法會擲回 <xref:System.ObjectDisposedException>。 如需詳細資訊`ThisAddIn_Shutdown`，請參閱[Office 專案中的事件](../vsto/events-in-office-projects.md)
 
-##  <a name="Managing"></a> 管理多個應用程式視窗中的自訂工作窗格
+## <a name="Managing"></a> 管理多個應用程式視窗中的自訂工作窗格
  在使用多重視窗的應用程式中建立自訂工作窗格以顯示文件和其他項目時，需要採取額外步驟以確保工作窗格能夠在使用者需要時顯示。
 
  所有應用程式中的自訂工作窗格會與文件框架視窗產生關聯，而該框架視窗會對使用者呈現文件或項目的檢閱。 顯示相關聯的視窗時才能顯示工作窗格。 但是，並非所有應用程式都以相同方式來使用文件框架視窗。
@@ -137,7 +137,7 @@ ms.locfileid: "57526697"
 
 - [Word、 InfoPath 和 PowerPoint](#WordAndInfoPath)
 
-##  <a name="Outlook"></a> Outlook
+## <a name="Outlook"></a> Outlook
  當您建立 Outlook 的自訂工作窗格時，自訂工作窗格將與特定 [總管] 或 [檢查] 視窗相關聯。 總管視窗，顯示資料夾的內容，而偵測器顯示的項目，例如電子郵件訊息或工作的 windows。
 
  如果要在多個 [總管] 或 [檢查] 視窗中顯示自訂工作窗格，您需要在 [總管] 或 [檢查] 視窗開啟時，建立自訂工作窗格的新執行個體。 若要這麼做，請在建立 [總管] 或 [檢查] 視窗時處理引發的事件，然後在事件處理常式中建立工作窗格。 您也可以處理 [總管] 與 [檢查] 事件，依據可見的視窗來隱藏或顯示工作窗格。
@@ -167,7 +167,7 @@ ms.locfileid: "57526697"
 
  如果您沒有明確移除自訂工作窗格，Outlook 視窗可能會顯示自訂工作窗格的多個執行個體。 Outlook 有時會回收視窗，而回收的視窗會保留對其附加之任何自訂工作窗格的參考。
 
-##  <a name="WordAndInfoPath"></a> Word、 InfoPath 和 PowerPoint
+## <a name="WordAndInfoPath"></a> Word、 InfoPath 和 PowerPoint
  Word、InfoPath 和 PowerPoint 會顯示不同文件框架視窗中的每份文件。 當您建立這些應用程式的自訂工作窗格時，自訂工作窗格只會與特定文件相關聯。 如果使用者開啟不同的文件，則自訂工作窗格會等到先前的文件重新顯示之後才會取消隱藏。
 
  如果要在多份文件中顯示自訂工作窗格，可以在使用者建立新文件或開啟現有文件時，建立自訂工作窗格的新執行個體。 若要這麼做，請在建立或開啟文件時處理引發的事件，然後在事件處理常式中建立工作窗格。 您也可以處理文件事件，依據可見的文件來隱藏或顯示工作窗格。
@@ -177,43 +177,43 @@ ms.locfileid: "57526697"
 ### <a name="word-events"></a>Word 事件
  若要在 Word 中監視文件視窗的狀態，您可以處理下列事件：
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
 
 ### <a name="infopath-events"></a>InfoPath 事件
  若要在 InfoPath 中監視文件視窗的狀態，您可以處理下列事件：
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
 
 ### <a name="powerpoint-events"></a>PowerPoint 事件
  若要在 PowerPoint 中監視文件視窗的狀態，您可以處理下列事件：
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>另請參閱
 - [如何：應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)

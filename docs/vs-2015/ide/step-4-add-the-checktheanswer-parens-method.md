@@ -9,14 +9,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8ce0a3f35001c468f887c1a595cd37231b38cb72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0b2473654bf05a66ef94bd0e88f06ae3e27dbf12
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060536"
 ---
-# <a name="step-4-add-the-checktheanswer-method"></a>步驟 4：加入 CheckTheAnswer() 方法
+# <a name="step-4-add-the-checktheanswer-method"></a>步驟 4：新增 CheckTheAnswer() 方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在本教學課程的第四個部分中，您將撰寫 `CheckTheAnswer()` 這個方法，用於判斷數學問題的答案是否正確。 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
@@ -26,7 +26,7 @@ ms.locfileid: "54802499"
   
 ### <a name="to-verify-whether-the-answers-are-correct"></a>若要驗證答案是否正確  
   
-1.  加入 `CheckTheAnswer()` 方法。  
+1. 加入 `CheckTheAnswer()` 方法。  
   
      呼叫這個方法時，它會將 addend1 和 addend2 的值相加，並且將結果與 sum (總和) `NumericUpDown` 控制項的值比較。 如果值相等，則方法會傳回 `true` 值。 否則，方法會傳回 `false` 值。 您的程式碼應該看起來與下列範例相同。  
   
@@ -35,14 +35,14 @@ ms.locfileid: "54802499"
   
      接下來，您將透過更新方法中的程式碼，讓計時器的 Tick 事件處理常式呼叫新的 `CheckTheAnswer()` 方法，藉此檢查答案。  
   
-2.  將下列程式碼加入至 `if else` 陳述式。  
+2. 將下列程式碼加入至 `if else` 陳述式。  
   
      [!code-csharp[VbExpressTutorial3Step4#10](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step4/cs/form1.cs#10)]
      [!code-vb[VbExpressTutorial3Step4#10](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step4/vb/form1.vb#10)]  
   
      如果答案正確，`CheckTheAnswer()` 會傳回 `true`。 事件處理常式會停止計時器，並顯示恭喜訊息，然後再次啟用 [開始] 按鈕。 否則，測驗會繼續。  
   
-3.  儲存您的程式，執行程式，開始進行測驗，並提供正確答案給加法問題。  
+3. 儲存您的程式，執行程式，開始進行測驗，並提供正確答案給加法問題。  
   
     > [!NOTE]
     >  當您輸入答案時，必須在開始輸入答案之前先選取預設值，或是手動刪除零。 您將在本教學課程稍後更正這種行為。  
@@ -51,6 +51,6 @@ ms.locfileid: "54802499"
   
 ### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
--   若要移到下一個教學課程步驟，請參閱[步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)。  
+- 若要前往下一個教學課程步驟，請參閱[步驟 5：加入 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)。  
   
--   若要回到上一個教學課程步驟，請參閱[步驟 3：新增倒數計時器](../ide/step-3-add-a-countdown-timer.md)。
+- 若要回到上一個教學課程步驟，請參閱[步驟 3：加入倒數計時器](../ide/step-3-add-a-countdown-timer.md)。

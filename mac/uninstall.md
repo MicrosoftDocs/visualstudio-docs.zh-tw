@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ef208a9f74c1c8ee1ccb6df2c1e54917cd354be3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204329"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856443"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>解除安裝 Visual Studio for Mac
 
@@ -36,8 +36,8 @@ ms.locfileid: "54204329"
 
 此解除安裝指令碼包含您將在文章中發現的大部分命令。 指令碼中有三個主要省略項目，並且因可能的外部相依性而未包含。 若要移除這種情況，請跳到以下相關小節，然後手動移除它們：
 
-- **[解除安裝 Mono](#uninstall-mono-sdk-mdk)**
-- **[解除安裝 Android AVD](#uninstall-android-avd)**
+- **[將 Mono 解除安裝](#uninstall-mono-sdk-mdk)**
+- **[將 Android AVD 解除安裝](#uninstall-android-avd)**
 - **[解除安裝 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)**
 
 若要執行指令碼，請執行下列步驟：
@@ -96,6 +96,7 @@ rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
+rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
 您可能也想要移除下列包含各種 Xamarin 檔案和資料夾的目錄。 不過，這麼做之前，您應該知道此目錄包含 Android 簽署金鑰。 如需詳細資訊，請參閱**[解除安裝 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)** 一節：
@@ -194,8 +195,8 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 
 若為舊版本，您可能需要手動移除下列成品：
 
-* 刪除 `"/Applications/Xamarin Workbooks.app"` 上的 Workbooks 應用程式
-* 刪除 `"Applications/Xamarin Inspector.app"` 上的 Inspector 應用程式
+* 刪除後列位置的 Workbooks 應用程式 `"/Applications/Xamarin Workbooks.app"`
+* 刪除後列位置的 Inspector 應用程式 `"Applications/Xamarin Inspector.app"`
 * 刪除增益集：`"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` 和 `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
 * 刪除這裡的 Inspector 和支援檔：`/Library/Frameworks/Xamarin.Interactive.framework` 和 `/Library/Frameworks/Xamarin.Inspector.framework`
 
@@ -218,6 +219,22 @@ rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
 
+## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>解除安裝 Visual Studio 2019 for Mac Preview
+
+Visual Studio 2019 for Mac Preview 已啟動為個別的預覽，可讓您繼續使用並存安裝的 Visual Studio 2017 for Mac。
+
+現已發行 Visual Studio 2019 for Mac，所以您可以安全移除 Visual Studio 2019 for Mac Preview 應用程式。
+
+若要解除安裝預覽應用程式套件組合，請從您 **Applications** 資料夾中選取 [Visual Studio (預覽)]，然後按一下 [移至垃圾桶]，如下圖所示：
+
+![選取尋找工具的 [移至垃圾桶] 選項](media/uninstall-remove-vspreview.png)
+
+您也可以使用下列命令移除預覽的 plist 檔案：
+
+```bash
+rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
+```
+
 ## <a name="see-also"></a>另請參閱
 
-- [解除安裝 Visual Studio (Windows 上)](/visualstudio/install/uninstall-visual-studio)
+- [解除安裝 Visual Studio (在 Windows 上)](/visualstudio/install/uninstall-visual-studio)

@@ -19,17 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 327f65ef6639f444326d59d6db990e9c732a760f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 52b8ef11e295d60e71a59820a48bca5e477c639d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790279"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648796"
 ---
 # <a name="output-element-msbuild"></a>Output 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在項目或屬性中儲存工作輸出值。  
   
  \<Project>  
@@ -50,7 +49,7 @@ ms.locfileid: "54790279"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`TaskParameter`|必要屬性。<br /><br /> 工作的輸出參數名稱。|  
 |`PropertyName`|需要 `PropertyName` 或 `ItemName` 屬性。<br /><br /> 接收工作輸出參數值的屬性。 然後您的專案即可用 `$(`*PropertyName*`)` 語法來參考該屬性。 此屬性名稱可以是新的屬性名稱，或是已經在專案中定義的名稱。<br /><br /> 如果同時也使用 `ItemName`，就不能使用這個屬性。|  
@@ -62,7 +61,7 @@ ms.locfileid: "54790279"
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[Task](../msbuild/task-element-msbuild.md)|建立並執行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工作的執行個體。|  
   

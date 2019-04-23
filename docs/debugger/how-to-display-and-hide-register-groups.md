@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be702dcd19506e6da8fb1e291aa5262dbf4399b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a904bfcf147d72dde16ffe0fbf9e754c2c356bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018445"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037816"
 ---
-# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>HOW TO：顯示和隱藏暫存器群組 (C#，c + +、 Visual Basic 中， F#)
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>HOW TO：顯示和隱藏暫存器群組 (C#， C++，Visual Basic 中， F#)
 
 只有在透過 [選項] 對話方塊 [一般] 分類的 [偵錯] 節點啟用位址層級偵錯時，才可以使用 [暫存器] 視窗。
 
@@ -37,9 +37,9 @@ ms.locfileid: "55018445"
 
 ## <a name="display-or-hide-register-groups"></a>顯示或隱藏暫存器群組
 
-1.  在 [暫存器] 視窗上按一下滑鼠右鍵。
+1. 在 [暫存器] 視窗上按一下滑鼠右鍵。
 
-2.  在捷徑功能表中選取要顯示或隱藏的暫存器群組。
+2. 在捷徑功能表中選取要顯示或隱藏的暫存器群組。
 
      捷徑功能表會停用偵錯硬體不支援的暫存器群組，因此不會選取這些群組。
 

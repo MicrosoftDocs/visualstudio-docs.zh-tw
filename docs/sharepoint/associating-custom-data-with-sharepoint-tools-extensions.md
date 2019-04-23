@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f22647d646797426a6a49ff24257846e180b1d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9a2c1869791b250fb90c6a634f057797f3c57a62
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614073"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112254"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>將自訂的資料產生關聯的 SharePoint 工具擴充功能
   您可以新增自訂資料中 SharePoint 工具擴充功能的特定物件。 當您需要在您想要從您的延伸模組中的其他程式碼供稍後存取的擴充功能的其中一部分中的資料，這非常有用。 而不是實作自訂的方式來儲存及存取資料，您可以在您的延伸模組相關聯物件的資料，然後稍後再從同一個物件擷取資料。
@@ -35,35 +35,35 @@ ms.locfileid: "56614073"
 ## <a name="objects-that-can-contain-custom-data"></a>可包含自訂的資料
  您可以將自訂資料新增至實作 SharePoint 工具物件模型中的任何物件<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>介面。 這個介面會定義一個屬性， <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>，這是自訂資料物件的集合。 下列型別會實作<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:
 
--   <xref:Microsoft.VisualStudio.SharePoint.IMappedFolder>
+- <xref:Microsoft.VisualStudio.SharePoint.IMappedFolder>
 
--   <xref:Microsoft.VisualStudio.SharePoint.IMenuItem>
+- <xref:Microsoft.VisualStudio.SharePoint.IMenuItem>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeature>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeature>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeatureResourceFile>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectFeatureResourceFile>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFile>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFile>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectMember>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectMember>
 
--   <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectPackage>
+- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectPackage>
 
--   <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentContext>
+- <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentContext>
 
--   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode>
+- <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode>
 
--   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType>
+- <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType>
 
--   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>
+- <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>
 
 ## <a name="add-and-retrieve-custom-data"></a>新增和擷取自訂的資料
  若要將自訂資料新增至 SharePoint 工具擴充功能中的物件，取得<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>您想要新增的資料，然後使用的物件屬性<xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A>方法，將資料加入至物件。

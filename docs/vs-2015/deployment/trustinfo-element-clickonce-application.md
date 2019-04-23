@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039125"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;項目 （ClickOnce 應用程式）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,28 +81,28 @@ ms.locfileid: "58941110"
 ## <a name="permissionset"></a>PermissionSet  
  必要項。 這個元素是 `applicationRequestMinimum` 元素的子項，並包含 `IPermission` 元素。 這個項目具有下列屬性。  
   
--   `ID`  
+- `ID`  
   
      必要項。 識別權限集合。 這個屬性可以是任何值。 識別碼在 `defaultAssemblyRequest` 和 `assemblyRequest` 屬性中受參考。  
   
--   `version`  
+- `version`  
   
      必要項。 識別權限版本。 這個值通常是 `1`。  
   
 ## <a name="ipermission"></a>IPermission  
  選擇性。 這個元素是 `PermissionSet` 元素的子項。 `IPermission` 元素完全識別 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]中的權限類別。 `IPermission` 元素有下列屬性，但可以有對應到權限類別上屬性 (property) 的其他屬性 (attribute)。 若要取得特定權限的語法，請查看 Security.config 檔案所列範例。  
   
--   `class`  
+- `class`  
   
      必要項。 依強式名稱識別權限類別。 例如，下列程式碼可識別 `FileDialogPermission` 類型。  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
--   `version`  
+- `version`  
   
      必要項。 識別權限版本。 這個值通常是 `1`。  
   
--   `Unrestricted`  
+- `Unrestricted`  
   
      必要項。 識別應用程式是否需要這個權限不受限制的授與。 如果為 `true`，即無條件權限授與。 如果為 `false`或未定義屬性，則根據 `IPermission` 標記上定義的權限特有屬性而受限。 採用下列權限：  
   
@@ -122,18 +122,18 @@ ms.locfileid: "58941110"
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
  選擇性。 識別授與所有組件的權限集合。 這個元素是 `applicationRequestMinimum` 元素的子項，並具有下列屬性。  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      必要項。 識別預設權限的權限集合識別碼。 權限集合在 `PermissionSet` 元素中宣告。  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
  選擇性。 識別特定組件的權限。 這個元素是 `applicationRequestMinimum` 元素的子項，並具有下列屬性。  
   
--   `Name`  
+- `Name`  
   
      必要項。 識別組件名稱。  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      必要項。 識別這個組件需要的權限集合識別碼。 權限集合在 `PermissionSet` 元素中宣告。  
   
@@ -143,7 +143,7 @@ ms.locfileid: "58941110"
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  選擇性。 識別要執行應用程式要求的安全性層級。 這個元素沒有子項，並具有下列屬性。  
   
--   `Level`  
+- `Level`  
   
      必要項。 指出應用程式要求的安全性層級。 可能的值為：  
   
@@ -155,7 +155,7 @@ ms.locfileid: "58941110"
   
      [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式只能以 `asInvoker`值安裝。 以其他任何值安裝則會失敗。  
   
--   `uiAccess`  
+- `uiAccess`  
   
      選擇性。 指出應用程式是否需要存取受保護的使用者介面元素。 值可以是 `true` 或 `false`，預設為 false。 只有已簽署的應用程式可使用值 true。  
   

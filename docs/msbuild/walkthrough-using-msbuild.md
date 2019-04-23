@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2248c5e8c974d4445db37e265725bcee60d3a9a4
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897734"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584398"
 ---
 # <a name="walkthrough-use-msbuild"></a>逐步解說：使用 MSBuild
 
@@ -416,7 +416,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
  將 *images* 資料夾中所有副檔名為 *.jpeg* 的檔案加入至 Photos 項目類型，同時
 
 ```xml
-<Photos Include="images\**.jpeg" />
+<Photos Include="images\**\*.jpeg" />
 ```
 
  將 *images* 資料夾及其所有子資料夾中所有副檔名為 *.jpeg* 的檔案加入至 Photos 項目類型。 如需更多範例，請參閱[如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)。
@@ -428,7 +428,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 <Photos Include="images\*.gif" />
 ```
 
- 建立名為 Photo 的項目類型，其中包含 *image* 資料夾中副檔名為 *.jpeg* 或 *.gif* 的所有檔案。 這就相當於下列這一行：
+ 建立名為 Photo 的項目類型，其中包含 [images] 資料夾中副檔名為 *.jpeg* 或 *.gif* 的所有檔案。 這就相當於下列這一行：
 
 ```xml
 <Photos Include="images\*.jpeg;images\*.gif" />

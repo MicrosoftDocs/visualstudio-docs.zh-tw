@@ -17,17 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: def8ce2a40e068c602b0182b4580f5e3b524d222
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0b1d83cca1da917a08b8765dae66fb240ca1dc75
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782219"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661005"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 設定用於整合式開發環境 (IDE) 內文字、貨幣和其他值的預設語言。  
   
 ## <a name="syntax"></a>語法  

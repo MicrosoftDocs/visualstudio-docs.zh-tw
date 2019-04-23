@@ -18,17 +18,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b47950ea00f8ea7a6ec55476157a54dcd0aa9c75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e22a606c720f7d6b3304f6afb297ed76390f7ea
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945504"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668388"
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>使用概念模型 (WCF 資料服務)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 當您使用的概念模型以描述在資料庫中的資料時，您可以查詢資料，透過您的物件，而不必將資料庫結構描述和物件模型之間來回轉譯。  
   
  您可以在 WCF Data Services 應用程式中使用概念模型。 下列主題示範如何查詢透過概念模型的資料。  

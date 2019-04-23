@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b6a23609f096f28d63afc952c069ef6e280f132
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640260"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066645"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>逐步解說：在文件層級專案中的簡單資料繫結
   本逐步解說會示範在文件層級專案中的資料繫結的基本概念。 SQL Server 資料庫中的單一資料欄位繫結至 Microsoft Office Excel 中的具名範圍。 本逐步解說也示範如何新增控制項，可讓您捲動瀏覽資料表中的所有記錄。
@@ -41,13 +41,13 @@ ms.locfileid: "56640260"
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
--   伺服器的存取權與 Northwind SQL Server 範例資料庫。
+- 伺服器的存取權與 Northwind SQL Server 範例資料庫。
 
--   讀取和寫入至 SQL Server 資料庫的權限。
+- 讀取和寫入至 SQL Server 資料庫的權限。
 
 ## <a name="create-a-new-project"></a>建立新專案
  在此步驟中，您將建立的 Excel 活頁簿專案。
@@ -88,21 +88,21 @@ ms.locfileid: "56640260"
 
 ### <a name="to-add-two-named-ranges"></a>若要新增兩個名為範圍
 
-1.  確認*我的簡單資料 Binding.xlsx*活頁簿是在 Visual Studio 設計工具中開啟具有**Sheet1**顯示。
+1. 確認*我的簡單資料 Binding.xlsx*活頁簿是在 Visual Studio 設計工具中開啟具有**Sheet1**顯示。
 
-2.  開啟**資料來源**視窗中，展開**客戶**節點。
+2. 開啟**資料來源**視窗中，展開**客戶**節點。
 
-3.  選取  **CompanyName**資料行，然後按一下出現的下拉式箭號。
+3. 選取  **CompanyName**資料行，然後按一下出現的下拉式箭號。
 
-4.  選取  **NamedRange**在下拉式清單，然後拖曳**CompanyName**加入儲存格的資料行**A1**。
+4. 選取  **NamedRange**在下拉式清單，然後拖曳**CompanyName**加入儲存格的資料行**A1**。
 
      A<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項，名為`companyNameNamedRange`會建立在資料格中**A1**。 在此同時<xref:System.Windows.Forms.BindingSource>名為`customersBindingSource`，資料表配接器和<xref:System.Data.DataSet>執行個體加入至專案。 控制項所繫結<xref:System.Windows.Forms.BindingSource>，它接著會繫結至<xref:System.Data.DataSet>執行個體。
 
-5.  選取 [ **CustomerID**中的資料行**Zdroje dat** ] 視窗中，然後按一下出現的下拉式箭號。
+5. 選取 [ **CustomerID**中的資料行**Zdroje dat** ] 視窗中，然後按一下出現的下拉式箭號。
 
-6.  按一下  **NamedRange**在下拉式清單，然後拖曳**CustomerID**加入儲存格的資料行**B1**。
+6. 按一下  **NamedRange**在下拉式清單，然後拖曳**CustomerID**加入儲存格的資料行**B1**。
 
-7.  另一個<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項，名為`customerIDNamedRange`會建立在資料格中**B1**，並繫結至<xref:System.Windows.Forms.BindingSource>。
+7. 另一個<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項，名為`customerIDNamedRange`會建立在資料格中**B1**，並繫結至<xref:System.Windows.Forms.BindingSource>。
 
 ### <a name="to-add-four-buttons"></a>若要加入四個按鈕
 
@@ -143,28 +143,28 @@ ms.locfileid: "56640260"
 
 ### <a name="to-move-to-the-first-record"></a>移至第一筆記錄
 
-1.  新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button1`按鈕，然後新增下列程式碼移至第一筆記錄：
+1. 新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button1`按鈕，然後新增下列程式碼移至第一筆記錄：
 
      [!code-csharp[Trin_VstcoreDataExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreDataExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#4)]
 
 ### <a name="to-move-to-the-previous-record"></a>若要移到上一筆記錄
 
-1.  新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button2`按鈕，然後新增下列程式碼，將位置移回一個：
+1. 新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button2`按鈕，然後新增下列程式碼，將位置移回一個：
 
      [!code-csharp[Trin_VstcoreDataExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreDataExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#5)]
 
 ### <a name="to-move-to-the-next-record"></a>移至下一筆記錄
 
-1.  新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button3`按鈕，然後新增下列程式碼位置前移一個：
+1. 新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button3`按鈕，然後新增下列程式碼位置前移一個：
 
      [!code-csharp[Trin_VstcoreDataExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreDataExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#6)]
 
 ### <a name="to-move-to-the-last-record"></a>若要移動的最後一個記錄
 
-1.  新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button4`按鈕，然後新增下列程式碼移到最後的記錄：
+1. 新增事件處理常式<xref:System.Windows.Forms.Control.Click>事件的`Button4`按鈕，然後新增下列程式碼移到最後的記錄：
 
      [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]
@@ -174,22 +174,22 @@ ms.locfileid: "56640260"
 
 ### <a name="to-test-your-workbook"></a>測試您的活頁簿
 
-1.  按下**F5**執行您的專案。
+1. 按下**F5**執行您的專案。
 
-2.  確認第一筆記錄出現在資料格中**A1**並**B1**。
+2. 確認第一筆記錄出現在資料格中**A1**並**B1**。
 
-3.  按一下  **>** (`Button3`) 按鈕，然後確認 下一筆記錄顯示在儲存格中**A1**並**B1**。
+3. 按一下  **>** (`Button3`) 按鈕，然後確認 下一筆記錄顯示在儲存格中**A1**並**B1**。
 
-4.  按一下 其他捲軸按鈕，以確認記錄變更如預期般運作。
+4. 按一下 其他捲軸按鈕，以確認記錄變更如預期般運作。
 
 ## <a name="next-steps"></a>後續步驟
  本逐步解說會示範繫結至資料庫中的欄位的已命名的範圍的基本概念。 接著可以執行下列一些工作：
 
--   快取的資料，以便可以離線使用。 如需詳細資訊，請參閱[如何：離線或在伺服器上快取資料以用於](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。
+- 快取的資料，以便可以離線使用。 如需詳細資訊，請參閱[如何：離線或在伺服器上快取資料以用於](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。
 
--   繫結至資料表中的多個資料行的資料格而不是至一個欄位。 如需詳細資訊，請參閱[逐步解說：在文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)。
+- 繫結至資料表中的多個資料行的資料格而不是至一個欄位。 如需詳細資訊，請參閱[逐步解說：在文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)。
 
--   使用<xref:System.Windows.Forms.BindingNavigator>捲動記錄的控制項。 如需詳細資訊，請參閱[如何：使用 Windows Form BindingNavigator 控制項巡覽資料](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。
+- 使用<xref:System.Windows.Forms.BindingNavigator>捲動記錄的控制項。 如需詳細資訊，請參閱[如何：使用 Windows Form BindingNavigator 控制項巡覽資料](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。
 
 ## <a name="see-also"></a>另請參閱
 - [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)

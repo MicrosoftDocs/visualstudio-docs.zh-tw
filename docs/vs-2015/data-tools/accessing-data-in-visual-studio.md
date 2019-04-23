@@ -22,20 +22,19 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 5165cf21328b8af1cda63384a5dafbc8dfc2d849
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 02d40062b1202a261aa7be4ae306329a6a93b37a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000747"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669454"
 ---
 # <a name="accessing-data-in-visual-studio"></a>在 Visual Studio 中存取資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-
 在 Visual Studio 中，您可以建立連接至幾乎任何的資料庫產品或服務的任何格式、 任何位置中資料的應用程式，在本機電腦上，在區域網路上，或是在公用、 私人或混合式雲端。
 
- JavaScript、 Python、 PHP、 Ruby 或 c + + 中的應用程式，您連接到資料就像任何其他動作，取得程式庫，然後撰寫程式碼。 .NET 應用程式，Visual Studio 會提供您可用來瀏覽資料來源，請建立來儲存和管理記憶體中的資料和資料繫結至使用者介面的物件模型的工具。     Microsoft Azure 會提供 Sdk for.NET、 Java、 Node.js、 PHP、 Python、 Ruby 和行動應用程式和在 Visual Studio 中的工具連線至 Azure 儲存體。
+ JavaScript、 Python、 PHP、 Ruby 中的應用程式或C++，在取得程式庫，然後撰寫程式碼，執行任何動作，例如連接到資料。 .NET 應用程式，Visual Studio 會提供您可用來瀏覽資料來源，請建立來儲存和管理記憶體中的資料和資料繫結至使用者介面的物件模型的工具。     Microsoft Azure 會提供 Sdk for.NET、 Java、 Node.js、 PHP、 Python、 Ruby 和行動應用程式和在 Visual Studio 中的工具連線至 Azure 儲存體。
 
  下列清單會顯示幾個可用的許多資料庫和儲存體系統，從 Visual Studio。 [Microsoft Azure](https://azure.microsoft.com/)供應項目是資料服務，其中包含所有的佈建和管理的基礎資料存放區。  [Azure Tools for Visual Studio](https://www.visualstudio.com/features/azure-tools-vs.aspx)是選擇性元件，可讓您能夠直接從 Visual Studio 的 Azure 資料存放區使用。 大部分的其他 SQL 和 NoSQL 資料庫產品，此處會列出可裝載於本機電腦、 區域網路上或在 Microsoft Azure 中的虛擬機器上。 在此案例中，您負責管理資料庫本身。
 
@@ -99,16 +98,16 @@ ms.locfileid: "59000747"
  沒有使用任何這些技術的需求。 在某些情況下，尤其是效能非常重要，您可以只使用 DataReader 物件從資料庫讀取，並將您所需要的值複製到集合物件，例如清單\<T >。
 
 ### <a name="native-c"></a>原生 C++
- 連接到 SQL Server 的 c + + 應用程式應使用[SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx)。 您可以使用來存取其他資料庫[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx)或直接 OLE DB 驅動程式。 ODBC 是目前的標準資料庫介面，但大部分資料庫系統提供無法透過 ODBC 介面存取的自訂功能。  OLE DB 是舊的 COM 資料存取技術，仍然受到支援，但不是建議用於新的應用程式。  如需詳細資訊，請參閱 <<c0> [ 資料存取](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)。
+ C++連接到 SQL Server 的應用程式應使用[SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx)。 您可以使用來存取其他資料庫[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx)或直接 OLE DB 驅動程式。 ODBC 是目前的標準資料庫介面，但大部分資料庫系統提供無法透過 ODBC 介面存取的自訂功能。  OLE DB 是舊的 COM 資料存取技術，仍然受到支援，但不是建議用於新的應用程式。  如需詳細資訊，請參閱 <<c0> [ 資料存取](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)。
 
- 使用 REST 服務的 c + + 程式可以使用[c + + REST SDK](https://github.com/Microsoft/cpprestsdk)。
+ C++使用 REST 服務的程式可以使用[ C++ REST SDK](https://github.com/Microsoft/cpprestsdk)。
 
- 使用 Microsoft Azure 儲存體的 c + + 程式可以使用[Microsoft Azure 儲存體用戶端](http://www.nuget.org/packages/wastorage)。
+ C++使用 Microsoft Azure 儲存體的程式可以使用[Microsoft Azure 儲存體用戶端](http://www.nuget.org/packages/wastorage)。
 
 #### <a name="data-modeling"></a>資料模型化
- Visual Studio 不提供 c + + 的 ORM 層。  [ODB](http://www.codesynthesis.com/products/odb/) c + + 是熱門的開放原始碼 ORM。
+ Visual Studio 不提供的 ORM 層C++。  [ODB](http://www.codesynthesis.com/products/odb/)是熱門的開放原始碼 ORM，如C++。
 
- 如需有關舊版的 Visual c + + 資料存取技術的詳細資訊，請參閱[資料存取](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
+ 如需有關舊版視覺效果C++資料存取技術，請參閱[資料存取](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
 
 ### <a name="javascript"></a>JavaScript
  [Visual Studio 中的 JavaScript](https://msdn.microsoft.com/library/hh334522.aspx)是第一級語言建置跨平台應用程式、 UWP 應用程式、 雲端服務、 網站及 web 應用程式。 您可以使用 Bower、 Grunt、 Gulp、 npm 及 Visual Studio 中的從 NuGet 安裝您最愛的 JavaScript 程式庫和資料庫產品。 下載 Sdk 從連線到 Azure 儲存體和服務[Azure 網站](https://azure.microsoft.com/)。  Edge.js 是連接至 ADO.NET 資料來源的伺服器端 JavaScript (Node.js) 程式庫。

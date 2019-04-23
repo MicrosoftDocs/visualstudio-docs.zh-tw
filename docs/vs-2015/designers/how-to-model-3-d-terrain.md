@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097475"
 ---
 # <a name="how-to-model-3-d-terrain"></a>HOW TO：模型的 3d 地形模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ ms.locfileid: "54764112"
   
  本文件示範下列活動︰  
   
--   將物件加入場景  
+- 將物件加入場景  
   
--   選取表面和點  
+- 選取表面和點  
   
--   轉譯選取項目  
+- 轉譯選取項目  
   
--   使用 [細分表面] 工具  
+- 使用 [細分表面] 工具  
   
--   框架處理設計介面中的物件  
+- 框架處理設計介面中的物件  
   
 ## <a name="creating-a-3-d-terrain-model"></a>建立 3D 地形模型  
  您可以細分平面建立額外的表面，然後操控其頂點以建立想要的地形特徵來建立 3D 地形。  
@@ -68,7 +68,7 @@ ms.locfileid: "54764112"
   
    ![顯示地形模型的 3D 場景](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")  
   
-   您可以使用此地形模型來展現漸層著色器的效果，如[如何：建立以幾何為基礎的漸層著色器](../designers/how-to-create-a-geometry-based-gradient-shader.md)中所述。  
+   您可以使用此地形模型來展現漸層著色器的效果，如[如何：建立以幾何為基礎的漸層著色器](../designers/how-to-create-a-geometry-based-gradient-shader.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [模型編輯器](../designers/model-editor.md)

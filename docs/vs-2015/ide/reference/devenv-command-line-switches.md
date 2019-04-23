@@ -21,17 +21,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3e6a888a5f904c194bcdb6f5c844dbed3084449
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54754967"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050700"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令列參數
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您從命令列建置、偵錯和部署專案。 使用這些參數透過指令碼或 .bat 檔案 (例如，夜間組建指令碼) 執行 IDE，或在特定組態中啟動 IDE。  
   
 > [!NOTE]
@@ -47,29 +46,29 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
   
  `devenv` 參數的語法規則與其他 DOS 命令列公用程式的語法規則類似。 下列語法規則套用至所有 `devenv` 參數和其引數︰  
   
--   命令開始於 `devenv`。  
+- 命令開始於 `devenv`。  
   
--   參數不區分大小寫。  
+- 參數不區分大小寫。  
   
--   指定方案或專案時，第一個引數是方案檔或專案檔的名稱 (包括檔案路徑)。  
+- 指定方案或專案時，第一個引數是方案檔或專案檔的名稱 (包括檔案路徑)。  
   
--   如果第一個引數不是方案檔或專案檔，則會使用適當的編輯器在 IDE 的新執行個體開啟該檔案。  
+- 如果第一個引數不是方案檔或專案檔，則會使用適當的編輯器在 IDE 的新執行個體開啟該檔案。  
   
--   如果您提供專案檔名稱，而不是方案檔名稱，`devenv` 命令將會在專案檔的上層資料夾中搜尋同名的方案檔。 例如，`devenv /build myproject1.vbproj` 命令將會在上層資料夾中搜尋名為 "myproject1.sln" 的方案檔。  
+- 如果您提供專案檔名稱，而不是方案檔名稱，`devenv` 命令將會在專案檔的上層資料夾中搜尋同名的方案檔。 例如，`devenv /build myproject1.vbproj` 命令將會在上層資料夾中搜尋名為 "myproject1.sln" 的方案檔。  
   
     > [!NOTE]
     >  只能有一個參考此專案的方案檔應該位於其上層資料夾。 如果上層資料夾未包含參考此專案的方案檔，或上層資料夾包含兩個或多個參考此專案的方案檔，將會建立針對此專案命名並參考此專案的暫存方案檔。  
   
--   檔案路徑和檔名包括空格時，必須用雙引號 ("") 括住它們。 例如，"c:\project a\\"。  
+- 檔案路徑和檔名包括空格時，必須用雙引號 ("") 括住它們。 例如，"c:\project a\\"。  
   
--   在同一行的參數與引數之間插入一個空白字元。 例如，**devenv /log output.txt** 命令會開啟 IDE，並將該工作階段的所有記錄資訊輸出至 output.txt。  
+- 在同一行的參數與引數之間插入一個空白字元。 例如，**devenv /log output.txt** 命令會開啟 IDE，並將該工作階段的所有記錄資訊輸出至 output.txt。  
   
--   您不能在 `devenv` 命令中使用模式比對語法命令。  
+- 您不能在 `devenv` 命令中使用模式比對語法命令。  
   
 ## <a name="devenv-switches"></a>Devenv 參數  
  使用下列命令列參數來顯示 IDE，並執行所述的工作。  
   
-|命令列參數|描述|  
+|命令列參數|說明|  
 |-------------------------|-----------------|  
 |[/Command (devenv.exe)](../../ide/reference/command-devenv-exe.md)|啟動 IDE，並執行指定的命令。|  
 |[/DebugExe (devenv.exe)](../../ide/reference/debugexe-devenv-exe.md)|透過偵錯工具的控制，載入 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 可執行檔。 此參數不適用於 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 或 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 可執行檔。 如需詳細資訊，請參閱[在偵錯工具中自動啟動處理序](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。|  
@@ -86,7 +85,7 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
   
  使用下列命令列參數來執行所述的工作。 這些命令列參數不會顯示 IDE。  
   
-|命令列參數|描述|  
+|命令列參數|說明|  
 |-------------------------|-----------------|  
 |[/? (devenv.exe)](../../ide/reference/q-devenv-exe.md)|在 [命令提示字元] 視窗中顯示 devenv 參數的說明。<br /><br /> **Devenv /?**|  
 |[/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)|根據所指定方案的組態，建置指定的方案或專案。<br /><br /> **Devenv myproj.csproj /build**|  

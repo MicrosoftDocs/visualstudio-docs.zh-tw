@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd4a839c1d93d89cf6d0502e234f7cb1401a6809
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d297c1ef7079a894a53a77694d213f8b0f5cb257
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684412"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055401"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷概觀
 Visual Studio 圖形診斷是一組工具，用來記錄並分析 Direct3D 應用程式中的轉譯和效能問題。 圖形診斷可以用於在 Windows 電腦上或遠端電腦或裝置在本機執行的應用程式。
@@ -59,7 +59,7 @@ Visual Studio 圖形診斷是一組工具，用來記錄並分析 Direct3D 應�
 
 #### <a name="to-open-the-directx-control-panel"></a>開啟 DirectX 控制台
 
--   在功能表列上，選擇 [偵錯]、[圖形]、[DirectX 控制台]。
+- 在功能表列上，選擇 [偵錯]、[圖形]、[DirectX 控制台]。
 
 ## <a name="graphics-analyzer"></a>圖形分析器
  Visual Studio 圖形分析器是一個專用介面，用於檢查已擷取畫面格中的轉譯和效能問題。 在圖形分析器內，有數個工具可協助您探索和了解應用程式的轉譯行為。 每個工具都會公開正在檢查之畫面格的不同種類的資訊，而且工具設計成與直覺式縮小轉譯問題來源搭配使用，並從其在畫面格緩衝區中的外觀開始。
@@ -117,6 +117,6 @@ Visual Studio 圖形診斷是一組工具，用來記錄並分析 Direct3D 應�
 
  但是，畫面格分析不只是快速，還可以在放棄最少視覺品質的同時獲得最高效能。 有時，在大型顯示器上看起來很棒的昂貴效果，在電話的小型螢幕上檢視時不會有相同的影響，而較簡單的效果則可能會看起來不錯，並且不會耗盡電池。 [圖形分析] 所提供的自動變更和基準測試可協助您找出多種裝置上您應用程式適合的平衡。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [命令列擷取工具](command-line-capture-tool.md)
 - [HLSL 偵錯工具](hlsl-shader-debugger.md)

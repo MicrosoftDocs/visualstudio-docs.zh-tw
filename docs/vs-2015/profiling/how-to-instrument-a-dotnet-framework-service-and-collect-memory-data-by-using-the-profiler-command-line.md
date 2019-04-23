@@ -1,5 +1,5 @@
 ---
-title: 如何：使用分析工具命令列以檢測 .NET Framework 服務並收集記憶體資料 | Microsoft Docs
+title: HOW TO：使用分析工具命令列以檢測 .NET Framework 服務並收集記憶體資料 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45904463abf5d7cd420c938f58eed6f35a2831eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e0bbf15c82f62ad61e538f48cec065a9ef806ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766444"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113608"
 ---
-# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用程式碼剖析工具命令列以檢測 .NET Framework 服務並收集記憶體資料
+# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>HOW TO：檢測.NET Framework 服務並收集記憶體資料使用 Profiler 命令列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令列工具來檢測 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 服務，並收集記憶體使用量資料。 您可以收集記憶體配置資料，或收集記憶體配置和物件存留期資料。  
@@ -50,7 +50,7 @@ ms.locfileid: "54766444"
 
     **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}  
 
-   -   **/globaltracegc** 和 **/globaltracegclife** 會啟用記憶體配置和物件存留期資料的收集功能。  
+   - **/globaltracegc** 和 **/globaltracegclife** 會啟用記憶體配置和物件存留期資料的收集功能。  
 
        |選項|描述|  
        |------------|-----------------|  
@@ -85,21 +85,20 @@ ms.locfileid: "54766444"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。                                                                                   |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。                                                                                     |
 
-
 8. 視需要啟動服務。  
 
 9. 將程式碼剖析工具附加至服務。 類型：  
 
      **VSPerfCmd /attach:** `PID`&#124;`ProcessName`  
 
-    -   指定服務的處理序識別碼或處理序名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序識別碼和名稱。  
+    - 指定服務的處理序識別碼或處理序名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序識別碼和名稱。  
 
 ## <a name="controlling-data-collection"></a>控制資料收集  
  當服務執行時，您可以使用 **VSPerfCmd.exe** 選項開始和停止將資料寫入至檔案，以控制資料收集。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
 
--   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
+- 下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
 
     |選項|描述|  
     |------------|-----------------|  
@@ -112,20 +111,20 @@ ms.locfileid: "54766444"
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段  
 
-1.  從服務控制管理員停止服務。  
+1. 從服務控制管理員停止服務。  
 
-2.  關閉分析工具。 類型：  
+2. 關閉分析工具。 類型：  
 
      **VSPerfCmd /shutdown**  
 
-3.  當您完成所有分析時，請清除分析環境變數。 類型：  
+3. 當您完成所有分析時，請清除分析環境變數。 類型：  
 
      **VSPerfClrEnv /globaloff**  
 
      以原始模組取代檢測過的模組。 如有必要，請重新設定服務的啟動類型。  
 
-4.  重新啟動電腦。  
+4. 重新啟動電腦。  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [分析服務](../profiling/command-line-profiling-of-services.md)   
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

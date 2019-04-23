@@ -13,12 +13,12 @@ ms.assetid: 4479ac61-18a9-4a30-b213-9921c5af9a26
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bdaae4fcf52beccabadfa8abd4800c2e96698c42
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 134b4e2d58b0581a14d387e8601cc0bdc57cb56b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089246"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -43,9 +43,9 @@ int GetBreakpointResolution( 
  `ppBPResolution`  
  [out]傳回[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)表示下列其中一種介面：  
   
--   中斷點解析物件，描述其中的程式碼中斷點已繫結程式碼的位置。  
+- 中斷點解析物件，描述其中的程式碼中斷點已繫結程式碼的位置。  
   
--   資料的位置已經在繫結資料中斷點。  
+- 資料的位置已經在繫結資料中斷點。  
   
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態設為`BPS_DELETED`(屬於[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別)。  

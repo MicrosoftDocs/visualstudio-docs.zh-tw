@@ -53,16 +53,15 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 723b074b51e97282f67a8e490ec6b109e765dbc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d45fcbd8bd84bb9b6510d4143d3250e2e67ad1b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085373"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 注意]
 >  資料集和相關的類別是舊版的.NET 技術，從早期 2000s 可讓應用程式的應用程式會與資料庫中斷連接時，使用記憶體中的資料。 它們是特別適用於應用程式，讓使用者能夠修改資料，並保存資料庫的變更。 雖然資料集已證明是非常成功的技術，我們建議新的.NET 應用程式使用 Entity Framework。 Entity Framework 提供更自然的方式，為物件模型的表格式資料搭配使用，而且有一個簡單的程式設計介面。
@@ -76,23 +75,23 @@ ms.locfileid: "58941601"
 ## <a name="dataset-workflow"></a>資料集的工作流程
  Visual Studio 提供許多工具，以簡化使用資料集。 基本的端對端工作流程是：
 
--   使用**資料來源**視窗建立新的資料集從一個或多個資料來源。 使用**Dataset 設計工具**設定資料集，並設定其屬性。 例如，您需要指定哪一個資料表包含，資料來源，以及每個資料表資料行。 請小心選擇，以保留的資料集將需要的記憶體數量。 如需詳細資訊，請參閱[建立和設定資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
+- 使用**資料來源**視窗建立新的資料集從一個或多個資料來源。 使用**Dataset 設計工具**設定資料集，並設定其屬性。 例如，您需要指定哪一個資料表包含，資料來源，以及每個資料表資料行。 請小心選擇，以保留的資料集將需要的記憶體數量。 如需詳細資訊，請參閱[建立和設定資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
 
--   指定在資料表之間的關聯性，以便能夠正確處理外部索引鍵。 如需詳細資訊，請參閱 <<c0> [ 使用 Tableadapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)。
+- 指定在資料表之間的關聯性，以便能夠正確處理外部索引鍵。 如需詳細資訊，請參閱 <<c0> [ 使用 Tableadapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)。
 
--   使用**TableAdapter 組態精靈**指定的查詢或預存程序，將會填入資料集，以及要實作哪些資料庫作業 （update、 delete 等等）。 如需詳細資訊，請參閱下列主題：
+- 使用**TableAdapter 組態精靈**指定的查詢或預存程序，將會填入資料集，以及要實作哪些資料庫作業 （update、 delete 等等）。 如需詳細資訊，請參閱下列主題：
 
-    -   [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)
+    - [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    -   [編輯資料集中的資料](../data-tools/edit-data-in-datasets.md)
+    - [編輯資料集中的資料](../data-tools/edit-data-in-datasets.md)
 
-    -   [驗證資料集中的資料](../data-tools/validate-data-in-datasets.md)
+    - [驗證資料集中的資料](../data-tools/validate-data-in-datasets.md)
 
-    -   [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)
+    - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)
 
--   查詢，並在資料集中搜尋的資料。 如需詳細資訊，請參閱 <<c0> [ 查詢資料集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] 可讓[LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)中的資料<xref:System.Data.DataSet>物件。 如需詳細資訊，請參閱 [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)。
+- 查詢，並在資料集中搜尋的資料。 如需詳細資訊，請參閱 <<c0> [ 查詢資料集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] 可讓[LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)中的資料<xref:System.Data.DataSet>物件。 如需詳細資訊，請參閱 [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)。
 
--   使用**Zdroje dat**使用者介面控制項繫結至資料集或其個別的資料行，並指定哪些資料行是使用者可編輯 視窗。 如需詳細資訊，請參閱 <<c0> [ 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。
+- 使用**Zdroje dat**使用者介面控制項繫結至資料集或其個別的資料行，並指定哪些資料行是使用者可編輯 視窗。 如需詳細資訊，請參閱 <<c0> [ 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。
 
 ## <a name="datasets-and-n-tier-architecture"></a>資料集和多層式架構的架構
  如需在多層式架構應用程式中的資料集的資訊，請參閱[使用多層式架構應用程式中的資料集](../data-tools/work-with-datasets-in-n-tier-applications.md)。

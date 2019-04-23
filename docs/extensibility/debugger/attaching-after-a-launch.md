@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54284b9e1e55e4e3a3ba8b8237b9420cbf195089
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704042"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065580"
 ---
 # <a name="attach-after-a-launch"></a>在啟動後附加
 程式啟動之後，偵錯工作階段已附加偵錯引擎 (DE) 至前述的程式。
@@ -23,9 +23,9 @@ ms.locfileid: "56704042"
 ## <a name="design-decisions"></a>設計決策
  因為通訊是更容易在共用的位址空間內，您必須選擇兩種設計方法： 設定偵錯工作階段和裝置之間的通訊。 或者，設定 DE 與程式之間的通訊。 選擇下列兩者之一：
 
--   如果較為合理設為偵錯工作階段和裝置之間的通訊，偵錯工作階段 DE 會同時建立，並要求將附加至程式 DE。 這項設計會保留偵錯工作階段，以 DE 一起在一個位址空間的執行階段環境與程式一起放在另一個。
+- 如果較為合理設為偵錯工作階段和裝置之間的通訊，偵錯工作階段 DE 會同時建立，並要求將附加至程式 DE。 這項設計會保留偵錯工作階段，以 DE 一起在一個位址空間的執行階段環境與程式一起放在另一個。
 
--   如果較為合理設為德國與程式之間的通訊，執行階段環境會同時建立 DE。 這項設計會留下一個位址空間和 DE、 執行階段環境，以及計劃中的 SDM 一起放在另一個。 這項設計是典型的規定與解譯器，以執行指令碼的語言實作的。
+- 如果較為合理設為德國與程式之間的通訊，執行階段環境會同時建立 DE。 這項設計會留下一個位址空間和 DE、 執行階段環境，以及計劃中的 SDM 一起放在另一個。 這項設計是典型的規定與解譯器，以執行指令碼的語言實作的。
 
     > [!NOTE]
     >  DE 將附加至程式的方式會視實作而定。 DE 與程式之間的通訊也會視實作而定。

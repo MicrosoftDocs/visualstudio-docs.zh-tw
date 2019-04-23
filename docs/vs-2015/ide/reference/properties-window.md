@@ -21,17 +21,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd437be1dd61e05259bc13501d7b9b9aaa06e285
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: beb0296834986648f47357da50d4022c1f632823
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753528"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658782"
 ---
 # <a name="properties-window"></a>屬性視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用這個視窗來檢視和變更設計階段屬性，以及位於編輯器和設計工具中的選定物件的事件。 您也可以使用 [屬性] 視窗來編輯和檢視檔案、專案和解決方案屬性。 您可以在 [檢視] 功能表上找到 [屬性] 視窗。 您也可以按 F4 或在 [快速啟動] 視窗中鍵入 **Properties** 來開啟它。  
   
  [屬性] 視窗會顯示不同類型的編輯欄位，根據特定屬性的需求而定。 這些編輯欄位包含自訂編輯器對話方塊用的編輯方塊、下拉式清單和連結。 以灰色顯示的屬性為唯讀。  

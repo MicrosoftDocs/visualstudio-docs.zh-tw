@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803fd69df06ae820e39d7edcfa54e56e59717a1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053191"
 ---
 # <a name="inside-the-editor"></a>在編輯器內
 
@@ -152,7 +152,7 @@ abXefYj
 
 #### <a name="content-types"></a>內容類型
 
-內容類型是內容的一種機制來定義不同類型。 內容類型可以是檔案類型，例如 「 文字 」、 「 程式碼 」 或 「 二進位 」 或技術類型，例如"xml"、"vb"或"C#"。 比方說，word 「 using 」 是在 C# 和 Visual Basic 中，但不是在其他程式設計語言的關鍵字。 因此，這個關鍵字的定義會限制在"C#"和"vb"的內容類型。
+內容類型是內容的一種機制來定義不同類型。 內容類型可以是檔案類型，例如 「 文字 」、 「 程式碼 」 或 「 二進位 」 或技術類型，例如"xml"、"vb"或"c#"。 比方說，word 「 using 」 是在 C# 和 Visual Basic 中，但不是在其他程式設計語言的關鍵字。 因此，這個關鍵字的定義會限制在"c#"和"vb"的內容類型。
 
 內容類型可做為篩選條件的裝飾和編輯器的其他項目。 許多編輯器功能和擴充點會定義每個內容類型。 例如，文字著色是不同的純文字檔、 XML 檔案和 Visual Basic 原始程式碼檔。 建立，且可以變更文字緩衝區的內容類型時，文字緩衝區通常會指派內容的類型。
 
@@ -202,19 +202,19 @@ abXefYj
 
 編輯器的功能被設計，此功能的定義是不同於其的實作。 編輯器包含下列功能：
 
--   標記和分類器
+- 標記和分類器
 
--   裝飾
+- 裝飾
 
--   Projection
+- Projection
 
--   大綱
+- 大綱
 
--   滑鼠和索引鍵繫結
+- 滑鼠和索引鍵繫結
 
--   作業和基本項目
+- 作業和基本項目
 
--   IntelliSense
+- IntelliSense
 
 ### <a name="tags-and-classifiers"></a>標記和分類器
 
@@ -262,7 +262,7 @@ C# 分類器可能會標記為註解，整個範圍和英文語言分類可能�
 
 快顯裝飾會出現在上述 [文字] 檢視中，例如工具提示的小視窗的圖形。
 
-###  <a name="projection"></a> 投影
+### <a name="projection"></a> 投影
 
 投射是一種技術來建構不同種類的文字緩衝區，不會實際儲存的文字，但改為結合其他文字緩衝區中的文字。 比方說，串連兩個其他緩衝區中的文字，並呈現結果，它是在只有一個緩衝區，或隱藏一個緩衝區中的文字部分，可以使用投影緩衝區。 投影緩衝區可以做為另一個投影緩衝區的來源緩衝區。 可以建構一組相關的投影的緩衝區，以許多不同的方式重新排列的文字。 (這類集合，也就是*緩衝區圖形*。)Visual Studio 文字大綱功能藉由使用投影緩衝區來隱藏摺疊的文字，並適用於 ASP.NET 網頁的 Visual Studio 編輯器使用投影來支援內嵌的 Visual Basic 和 C# 等語言。
 

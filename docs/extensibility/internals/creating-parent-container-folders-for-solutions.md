@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6845e867a8c5fd0ef2b367dc5f2e3b5760869746
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b9b48cb7862b23df325b35bba0cb3e197573e3c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602009"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102714"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>建立父容器之資料夾的解決方案
 在原始檔控制外掛程式 API 版本 1.2，使用者可以指定方案中的所有 web 專案的單一根來源控制目的地。 此單一根稱為超級統一的根 (SUR)。
@@ -35,14 +35,13 @@ ms.locfileid: "56602009"
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 幾乎一律會 SUR 資料夾建立時將方案加入原始檔控制。 具體來說，它會在下列情況：
 
--   專案是檔案共用的 web 專案。
+- 專案是檔案共用的 web 專案。
 
--   有不同的磁碟機，專案和方案檔。
+- 有不同的磁碟機，專案和方案檔。
 
--   有不同的共用專案和方案檔。
+- 有不同的共用專案和方案檔。
 
--   專案已加入個別 （在原始檔控制的方案）。
-
+- 專案已加入個別 （在原始檔控制的方案）。
 
 在  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，建議 SUR 資料夾的名稱是不含副檔名的方案名稱相同。 下表摘要說明兩種版本的行為。
 

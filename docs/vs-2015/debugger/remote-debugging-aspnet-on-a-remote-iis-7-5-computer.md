@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 79fe01ada43b1ac8fe408a1427fd9e65f9cd37cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940570"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109519"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>遠端偵錯 IIS 的遠端電腦上的 ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,6 +74,7 @@ ms.locfileid: "58940570"
       </system.web>
   
     ```
+
 1. 開啟 [Internet Information Services (IIS) 管理員]  並移至 [網站] 。
 1. 以滑鼠右鍵按一下 [預設的網站]  節點，並選取 [加入應用程式] 。
 1. 設定**別名**欄位設為**MyMVC** ，讓應用程式集區欄位**ASP.NET v4.0** （ASP.NET 4.5 不是應用程式集區的選項）。 將 [實體路徑]  設定為 **C:\Publish** (您複製 ASP.NET 專案目錄的地方)。

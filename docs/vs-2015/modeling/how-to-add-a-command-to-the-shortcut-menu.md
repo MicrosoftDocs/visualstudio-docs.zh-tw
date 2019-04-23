@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c88c0e30ebe1953dcf5f6c9311edd2b3186f53ed
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 7692e418c3e01b89a8dcf775350c062600351ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58945300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093042"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>HOW TO：在捷徑功能表中新增命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "58945300"
   
    否則，請考慮使用 MEF 方法來定義命令。 如需詳細資訊，請參閱 <<c0> [ 藉由使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)。  
   
-##  <a name="VSCT"></a> 宣告在 Commands.Vsct 中命令  
+## <a name="VSCT"></a> 宣告在 Commands.Vsct 中命令  
  功能表命令在 DslPackage\Commands.vsct 中宣告。 這些定義指定功能表項目的標籤以及它們在功能表上的顯示位置。  
   
  檔案進行編輯，Commands.vsct 會從數個位於目錄中的.h 檔案匯入定義*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Common\Inc。它還包括從 DSL 定義產生的 GeneratedVsct.vsct。  
@@ -61,9 +61,9 @@ ms.locfileid: "58945300"
   
 #### <a name="to-add-the-command"></a>加入命令  
   
-1.  在 **方案總管**下方**DslPackage**專案中，開啟 Commands.vsct。  
+1. 在 **方案總管**下方**DslPackage**專案中，開啟 Commands.vsct。  
   
-2.  在 `Commands` 項目中，定義一或多個按鈕和群組。 A * 按鈕*是功能表中的項目。 A*群組*是功能表中的區段。 若要定義這些項目，請加入下列項目：  
+2. 在 `Commands` 項目中，定義一或多個按鈕和群組。 A * 按鈕*是功能表中的項目。 A*群組*是功能表中的區段。 若要定義這些項目，請加入下列項目：  
   
     ```  
     <!-- Define a group - a section in the menu -->  
@@ -92,7 +92,7 @@ ms.locfileid: "58945300"
     > [!NOTE]
     >  每一個按鈕或群組都是以 GUID 和整數 ID 識別。 您可以使用相同的 GUID 建立數個群組和按鈕。 不過，它們必須具有不同的 ID。 GUID 名稱和 ID 名稱會轉譯成的實際 Guid 和數字 Id 在`<Symbols>`節點。  
   
-3.  為命令加入可見度限制，令其只在網域指定的語言之內容中載入。 如需詳細資訊，請參閱 < [VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)。  
+3. 為命令加入可見度限制，令其只在網域指定的語言之內容中載入。 如需詳細資訊，請參閱 < [VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)。  
   
      若要這麼做，請在 `CommandTable` 項目之後的 `Commands` 項目中加入下列項目。  
   
@@ -104,7 +104,7 @@ ms.locfileid: "58945300"
     </VisibilityConstraints>  
     ```  
   
-4.  定義用於 GUID 和 ID 的名稱。 若要這麼做，請在 `Symbols` 項目之後的 `CommandTable` 項目中加入 `Commands` 項目。  
+4. 定義用於 GUID 和 ID 的名稱。 若要這麼做，請在 `Symbols` 項目之後的 `CommandTable` 項目中加入 `Commands` 項目。  
   
     ```  
     <Symbols>  
@@ -117,52 +117,52 @@ ms.locfileid: "58945300"
     </Symbols>  
     ```  
   
-5.  將 `{000...000}` 取代為識別您群組和功能表項目的 GUID。 若要取得新的 GUID，請使用**建立 GUID**工具**工具**功能表。  
+5. 將 `{000...000}` 取代為識別您群組和功能表項目的 GUID。 若要取得新的 GUID，請使用**建立 GUID**工具**工具**功能表。  
   
     > [!NOTE]
     >  如果您加入更多群組或功能表項目，您就可以使用相同的 GUID。 不過，您必須為 `IDSymbols` 使用新的值。  
   
-6.  在您從此程序複製的程式碼中，將每個出現的下列字串取代為您自己的字串：  
+6. 在您從此程序複製的程式碼中，將每個出現的下列字串取代為您自己的字串：  
   
-    -   `grpidMyMenuGroup`  
+    - `grpidMyMenuGroup`  
   
-    -   `cmdidMyContextMenuCommand`  
+    - `cmdidMyContextMenuCommand`  
   
-    -   `guidCustomMenuCmdSet`  
+    - `guidCustomMenuCmdSet`  
   
-    -   `My Context Menu Command`  
+    - `My Context Menu Command`  
   
-##  <a name="version"></a> 更新 Package.tt 中的套件版本  
+## <a name="version"></a> 更新 Package.tt 中的套件版本  
  每當您加入或變更命令時，請先更新套用到套件類別的 `version` 之 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> 參數，然後再發行網域指定語言的新版本。  
   
  由於套件類別定義於產生的檔案，因此請更新文字範本檔案中產生 Package.cs 檔的屬性。  
   
 #### <a name="to-update-the-packagett-file"></a>更新 Package.tt 檔  
   
-1.  在 [**方案總管] 中**，請在**DslPackage**專案，在**GeneratedCode**資料夾中，開啟 Package.tt 檔。  
+1. 在 [**方案總管] 中**，請在**DslPackage**專案，在**GeneratedCode**資料夾中，開啟 Package.tt 檔。  
   
-2.  找出 `ProvideMenuResource` 屬性。  
+2. 找出 `ProvideMenuResource` 屬性。  
   
-3.  遞增屬性的 `version` 參數，這是第二個參數。 您可以依需要明確撰寫參數名稱以提醒您其用途。 例如:   
+3. 遞增屬性的 `version` 參數，這是第二個參數。 您可以依需要明確撰寫參數名稱以提醒您其用途。 例如:   
   
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
-##  <a name="CommandSet"></a> 定義命令的行為  
+## <a name="CommandSet"></a> 定義命令的行為  
  您的 DSL 已經有一些命令，這些命令實作於 DslPackage\GeneratedCode\CommandSet.cs 中宣告的部分類別。 若要加入新的命令，您必須建立含有相同類別之部分宣告的新檔案，以擴充此類別。 類別的名稱通常是 *\<YourDslName >*`CommandSet`。 以驗證類別的名稱並檢查其內容開頭非常有用。  
   
  命令集類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。  
   
 #### <a name="to-extend-the-commandset-class"></a>擴充 CommandSet 類別  
   
-1.  在 [方案總管] 的 DslPackage 專案中，開啟 [GeneratedCode] 資料夾，然後查看 CommandSet.tt 下方並開啟其產生的檔案 CommandSet.cs。 記下檔案中定義的命名空間和第一個類別的名稱。 例如，您可能會看到：  
+1. 在 [方案總管] 的 DslPackage 專案中，開啟 [GeneratedCode] 資料夾，然後查看 CommandSet.tt 下方並開啟其產生的檔案 CommandSet.cs。 記下檔案中定義的命名空間和第一個類別的名稱。 例如，您可能會看到：  
   
      `namespace Company.Language1`  
   
      `{ ...  internal partial class Language1CommandSet : ...`  
   
-2.  在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，稱為`CommandSet.cs`。  
+2. 在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，稱為`CommandSet.cs`。  
   
-3.  在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如:   
+3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如：  
   
      `namespace Company.Language1 /* Make sure this is correct */`  
   
@@ -324,13 +324,13 @@ protected override IList<MenuCommand> GetMenuCommands()
   
 #### <a name="to-exercise-the-command"></a>執行命令  
   
-1.  在 **方案總管**工具列上，按一下**轉換所有範本**。  
+1. 在 **方案總管**工具列上，按一下**轉換所有範本**。  
   
-2.  按下**F5**重建方案，並開始偵錯特定領域語言，在實驗組建中。  
+2. 按下**F5**重建方案，並開始偵錯特定領域語言，在實驗組建中。  
   
-3.  在實驗組建中，開啟範例圖表。  
+3. 在實驗組建中，開啟範例圖表。  
   
-4.  以滑鼠右鍵按一下圖表中的各種項目，以驗證命令是否已正確啟用或停用，以及是否適當顯示或隱藏，視選取的項目而定。  
+4. 以滑鼠右鍵按一下圖表中的各種項目，以驗證命令是否已正確啟用或停用，以及是否適當顯示或隱藏，視選取的項目而定。  
   
 ## <a name="troubleshooting"></a>疑難排解  
  **命令未出現在功能表中：**  
@@ -345,11 +345,11 @@ protected override IList<MenuCommand> GetMenuCommands()
   
    **未呼叫 OnStatus 方法**:  
   
-  -   請確定您的 CommandSet 程式碼中的 GUID 和 ID 符合 Commands.vsct 的 Symbols 區段中的 GUID 和 ID。  
+  - 請確定您的 CommandSet 程式碼中的 GUID 和 ID 符合 Commands.vsct 的 Symbols 區段中的 GUID 和 ID。  
   
-  -   在 Commands.vsct 中，確定每個父節點中的 GUID 和 ID 識別正確的父群組。  
+  - 在 Commands.vsct 中，確定每個父節點中的 GUID 和 ID 識別正確的父群組。  
   
-  -   在 Visual Studio 命令提示字元中，輸入 devenv /rootsuffix exp /setup。 然後重新啟動 Visual Studio 的偵錯執行個體。  
+  - 在 Visual Studio 命令提示字元中，輸入 devenv /rootsuffix exp /setup。 然後重新啟動 Visual Studio 的偵錯執行個體。  
   
 - 逐步執行 OnStatus 方法，以確認 command.Visible 和 command.Enabled 設為 true。  
   

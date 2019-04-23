@@ -17,17 +17,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f4b470bab1bc3a017edeb1c686a53baf2293495
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9228eaec55dc936d44eeccd55e6a05559aea27e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930645"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647457"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>將資料集和 TableAdapter 分成不同的專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 具類型資料集已經過加強，以便[TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)和資料集類別產生為不同的專案。 這可讓您快速分隔應用程式層，並產生多層式架構資料應用程式。  
   
  下列程序說明使用 Dataset 設計工具來產生資料集的程式碼到專案包含所產生的專案不同的程序`TableAdapter`程式碼。  

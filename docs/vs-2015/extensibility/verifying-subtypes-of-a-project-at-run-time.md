@@ -11,12 +11,12 @@ ms.assetid: b87780ec-36a3-4e9a-9ee2-7abdc26db739
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cf81e62b25f765c070699179e57e2603734f4a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1e3940097ac53255b7bdd2c12c9ccc64605016e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940342"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061238"
 ---
 # <a name="verifying-subtypes-of-a-project-at-run-time"></a>在執行階段驗證專案的子類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58940342"
   
 ### <a name="to-verify-the-presence-of-a-subtype"></a>若要確認子型別存在  
   
-1.  從專案和方案物件，做為取得專案階層架構<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>藉由將下列程式碼新增至 VSPackage 的物件。  
+1. 從專案和方案物件，做為取得專案階層架構<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>藉由將下列程式碼新增至 VSPackage 的物件。  
   
     ```  
     EnvDTE.DTE dte;  
@@ -42,7 +42,7 @@ ms.locfileid: "58940342"
   
     ```  
   
-2.  轉換階層<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected>介面。  
+2. 轉換階層<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected>介面。  
   
     ```  
     IVsAggregatableProjectCorrected AP;  
@@ -50,14 +50,14 @@ ms.locfileid: "58940342"
   
     ```  
   
-3.  取得專案類型 Guid 的清單，藉由叫用<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>。  
+3. 取得專案類型 Guid 的清單，藉由叫用<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>。  
   
     ```  
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();  
   
     ```  
   
-4.  檢查指定的子類型的 GUID 清單。  
+4. 檢查指定的子類型的 GUID 清單。  
   
     ```  
     // Replace the string "MyGUID" with the GUID of the subtype.  

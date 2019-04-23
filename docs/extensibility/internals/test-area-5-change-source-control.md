@@ -1,5 +1,5 @@
 ---
-title: 測試區域 5:變更原始檔控制 |Microsoft Docs
+title: 測試區域 5：變更原始檔控制 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab37b3766c61c63ce99c13bb375d1bdd90d237d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0a9c13a1b1bb9c8240faeaaf8d67b0b8df259227
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599645"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649247"
 ---
-# <a name="test-area-5-change-source-control"></a>測試區域 5:變更原始檔控制
+# <a name="test-area-5-change-source-control"></a>測試區域 5：變更原始檔控制
 此原始檔控制外掛程式的測試區域涵蓋變更原始檔控制，透過**變更原始檔控制**命令。
 
  **變更原始檔控制**命令為使用者提供四個基本的函式：
@@ -45,7 +45,6 @@ ms.locfileid: "56599645"
 
 ### <a name="case-5a-bind"></a>案例 5a:繫結
  繫結可讓使用者選取的專案和方案中新增來源的程式碼控制資訊。 若要識別這些是要加入原始檔控制中的專案通常提示使用者。 使用者不可能的這項作業 （與加入原始檔控制的高對比） 一部分的原始檔控制中建立新的專案。
-
 
 | 動作 | 測試步驟 | 若要確認預期的結果 |
 | - | - | - |

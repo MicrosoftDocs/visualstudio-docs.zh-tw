@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bd8b861b6501fda2ed0739725a05225e31343e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780885"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098881"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>使用效能資料檔案儲存符號資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "54780885"
   
   **需求**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
   您可以從 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 或從命令列將符號序列化︰  
   
@@ -51,9 +51,9 @@ ms.locfileid: "54780885"
   
 - 請確定您已設定 Windows 符號快取的路徑。 請執行下列其中一項動作來設定符號快取路徑︰  
   
-  -   將 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中的 [偵錯工具] -> [符號] 選項設定為正確的路徑。  
+  - 將 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中的 [偵錯工具] -> [符號] 選項設定為正確的路徑。  
   
-  -   將 -symbolpath 選項加入至 VSPerfReport 命令列以納入您的符號。  
+  - 將 -symbolpath 選項加入至 VSPerfReport 命令列以納入您的符號。  
   
 - 如果您在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 中看不到任何符號，請確定您已將符號伺服器已正確設定成 ASP 伺服器。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "54780885"
   
  VsPerfReport -packsymbols -summary:all filename.vsp  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [儲存和匯出效能工具資料](../profiling/saving-and-exporting-performance-tools-data.md)   
  [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

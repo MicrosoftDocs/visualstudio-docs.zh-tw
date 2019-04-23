@@ -15,54 +15,54 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed75a5a6d888f3fc82acf8e7d41ac2ec82007636
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095655"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>HOW TO：部署、 發行和升級遠端伺服器上的 SharePoint 方案
   除了本機系統中部署 SharePoint 方案，您可以在遠端站台或本機 SharePoint 網站發行沙箱化 SharePoint 方案。 遠端發行的程序副本 *.wsp*檔案至 SharePoint 伺服器，安裝方案，並接著可讓您啟用此解決方案。 對它進行變更之後，您也可以升級遠端 SharePoint 方案安裝。
 
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>若要將沙箱化 SharePoint 方案發行至遠端 SharePoint 伺服器
 
-1.  在 **方案總管**，開啟您想要發佈，然後選擇 沙箱化 SharePoint 專案的捷徑功能表**發佈**。
+1. 在 **方案總管**，開啟您想要發佈，然後選擇 沙箱化 SharePoint 專案的捷徑功能表**發佈**。
 
-2.  在 **發佈**對話方塊方塊中，選擇**發行至 SharePoint 網站**選項按鈕，然後再輸入 URL online 發行網站，例如： `https://mytestsite.sharepoint.microsoftonline.com`。
+2. 在 **發佈**對話方塊方塊中，選擇**發行至 SharePoint 網站**選項按鈕，然後再輸入 URL online 發行網站，例如： `https://mytestsite.sharepoint.microsoftonline.com`。
 
-3.  選擇**瀏覽器中開啟 [解決方案資源庫] 頁面，在發行後**選項按鈕，檢視中的解決方案清單**解決方案資源庫**發行後的頁面。
+3. 選擇**瀏覽器中開啟 [解決方案資源庫] 頁面，在發行後**選項按鈕，檢視中的解決方案清單**解決方案資源庫**發行後的頁面。
 
-4.  選擇**發佈** 按鈕。
+4. 選擇**發佈** 按鈕。
 
-5.  如果需要使用者驗證，登入遠端伺服器。
+5. 如果需要使用者驗證，登入遠端伺服器。
 
      發行進度出現在 Visual Studio**輸出**視窗。 當處理程序完成時，方案 (*.wsp*) 檔案會安裝遠端 SharePoint 伺服器上。 不過，它仍舊需要啟動才可以在 SharePoint 中使用。
 
-6.  在 **解決方案資源庫**頁面上選取的 SharePoint 應用程式，然後在功能區中，選擇  **Activate**  按鈕。
+6. 在 **解決方案資源庫**頁面上選取的 SharePoint 應用程式，然後在功能區中，選擇  **Activate**  按鈕。
 
-7.  在**啟用的解決方案** 對話方塊中，於功能區中，選擇**Activate**按鈕一次。
+7. 在**啟用的解決方案** 對話方塊中，於功能區中，選擇**Activate**按鈕一次。
 
      **狀態**上的資料行**解決方案資源庫**頁面會指出應用程式使用中。
 
 ## <a name="to-upgrade-a-sandboxed-sharepoint-solution-on-a-remote-sharepoint-server"></a>若要升級遠端 SharePoint 伺服器上的沙箱化 SharePoint 方案
  如果遠端伺服器上已沙箱化 SharePoint 方案，下列程序可讓您在變更中的應用程式之後將它升級[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-1.  重新命名在 SharePoint 封裝[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 若要這樣做，請在**方案總管 中**開啟封裝。 它會出現在**套件總管**。
+1. 重新命名在 SharePoint 封裝[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 若要這樣做，請在**方案總管 中**開啟封裝。 它會出現在**套件總管**。
 
-2.  在 **套件總管**，請在**名稱**方塊中，將封裝名稱變更為唯一的名稱。
+2. 在 **套件總管**，請在**名稱**方塊中，將封裝名稱變更為唯一的名稱。
 
-3.  儲存專案。
+3. 儲存專案。
 
-4.  在 **方案總管**，開啟專案的捷徑功能表，然後選擇**發佈**。
+4. 在 **方案總管**，開啟專案的捷徑功能表，然後選擇**發佈**。
 
-5.  在 **發佈**對話方塊方塊中，選擇**發行至 SharePoint 網站**選項按鈕，並接著，如果解決方案中的儲存位置的遠端伺服器的 URL，輸入。
+5. 在 **發佈**對話方塊方塊中，選擇**發行至 SharePoint 網站**選項按鈕，並接著，如果解決方案中的儲存位置的遠端伺服器的 URL，輸入。
 
-6.  選擇**瀏覽器中開啟 [解決方案資源庫] 頁面，在發行後**選項按鈕，檢視中的解決方案清單**解決方案資源庫**發行後的頁面。
+6. 選擇**瀏覽器中開啟 [解決方案資源庫] 頁面，在發行後**選項按鈕，檢視中的解決方案清單**解決方案資源庫**發行後的頁面。
 
-7.  選擇**發佈** 按鈕。
+7. 選擇**發佈** 按鈕。
 
-8.  如果需要使用者驗證，登入遠端伺服器。
+8. 如果需要使用者驗證，登入遠端伺服器。
 
      如果您登入遠端伺服器最近，可能不需要驗證。
 

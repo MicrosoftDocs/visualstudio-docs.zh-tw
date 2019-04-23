@@ -14,12 +14,12 @@ ms.assetid: 029e0790-ffd1-496d-8700-3b3dbac1b6fd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 792403a9a53f11431e87115d7a95345e316dc2ac
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8fd8add72d016bc3f2e815f41c29c735505c8817
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844291"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108421"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>要解碼的 URI 不是有效的編碼
 您嘗試解碼格式不正確的 URI （統一資源識別項）。 Uri 具有特殊語法;大部分的非英數字元必須編碼，才能在 URI 中使用。 您可以使用`encodeURI`並`encodeURIComponent`方法來建立 URI，從一般[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]字串。  
@@ -34,7 +34,7 @@ ms.locfileid: "56844291"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   請確定您嘗試解碼有效的 Uri。 您無法解碼一般[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]字串，因為它們可能包含無效的字元。  
+- 請確定您嘗試解碼有效的 Uri。 您無法解碼一般[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]字串，因為它們可能包含無效的字元。  
   
 ## <a name="see-also"></a>另請參閱  
  [decodeURI 函式](../../javascript/reference/decodeuri-function-javascript.md)   

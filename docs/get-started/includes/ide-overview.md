@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 63e39c3879d51a34bc61f703eaae1e75dc2fd742
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: cd4fefc8a3f63cf3c4bf4c2ca61a09ce9e40170a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342745"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58807445"
 ---
 Visual Studio「整合式開發環境」是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 
@@ -91,22 +91,24 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![Visual Studio 成員清單](../media/intellisense-list-members.png)
 
-- [快速啟動](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- 搜尋方塊
 
-   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 **快速啟動**搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，[快速啟動] 提供的結果可開啟 Visual Studio 安裝程式，安裝工作負載或個別元件。
+   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，搜尋方塊提供的結果可開啟 Visual Studio 安裝程式來安裝工作負載或個別元件。
 
    > [!TIP]
-   > 按 **Ctrl**+**Q** 作為 [快速啟動] 搜尋方塊的捷徑。
+   > 按 **Ctrl**+**Q** 是啟動搜尋方塊的捷徑。
 
    ::: moniker range="vs-2017"
 
    ![Visual Studio 2017 中的 [快速啟動] 搜尋方塊](../media/quick-launch-nuget.png)
 
+   如需詳細資訊，請參閱[快速啟動](../../ide/reference/quick-launch-environment-options-dialog-box.md)。
+
    ::: moniker-end
 
    ::: moniker range="vs-2019"
 
-   ![Visual Studio 2019 中的 [快速啟動] 搜尋方塊](../media/vs-2019/quick-launch-nuget.png)
+   ![Visual Studio 2019 中的搜尋方塊](../media/vs-2019/quick-launch-nuget.png)
 
    ::: moniker-end
 

@@ -1,5 +1,5 @@
 ---
-title: CA2301:如果沒有第一個設定 BinaryFormatter.Binder 不呼叫 BinaryFormatter.Deserialize
+title: CA2301：未先設定 BinaryFormatter.Binder 之前，請勿呼叫 BinaryFormatter.Deserialize
 ms.date: 04/05/2019
 ms.topic: reference
 author: dotpaul
@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c82c414b85cbc26e0b711a0da246f3838cf554
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: d90ed71c1d5ca4cbfdcf8e500e1d176519a2fdff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59367276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037592"
 ---
-# <a name="ca2301-do-not-call-binaryformatterdeserialize-without-first-setting-binaryformatterbinder"></a>CA2301:如果沒有第一個設定 BinaryFormatter.Binder 不呼叫 BinaryFormatter.Deserialize
+# <a name="ca2301-do-not-call-binaryformatterdeserialize-without-first-setting-binaryformatterbinder"></a>CA2301：未先設定 BinaryFormatter.Binder 之前，請勿呼叫 BinaryFormatter.Deserialize
 
 |||
 |-|-|
@@ -41,17 +41,16 @@ A<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayPro
 - 可能的話，請改用安全的序列化程式，並**不會讓攻擊者指定要還原序列化的任意型別**。 某些更安全的序列化程式包括：
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -永不使用<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>。 如果您必須使用型別解析程式，您必須限制已還原序列化的型別為預期的清單。
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -永不使用<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>。 如果您必須使用型別解析程式，限制為預期的清單已還原序列化的型別。
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - NewtonSoft Json.NET-使用 TypeNameHandling.None。 如果您必須使用 TypeNameHandling 另一個值，您必須到預期的清單限制已還原序列化的型別。
+  - NewtonSoft Json.NET-使用 TypeNameHandling.None。 如果 TypeNameHandling 中，您必須使用另一個值，限制與自訂 ISerializationBinder 預期清單還原序列化的型別。
   - Protocol Buffers
-- 請防的序列化的資料。 在序列化以密碼編譯方式登入序列化的資料。 還原序列化之前, 驗證密碼編譯簽章。 您必須防止被公開的密碼編譯金鑰，並應該設計為金鑰輪替。
+- 使序列化的資料竄改。 在序列化以密碼編譯方式登入序列化的資料。 在還原序列化時之前, 驗證密碼編譯簽章。 從被揭發，保護密碼編譯金鑰和金鑰輪替的設計。
 - 限制已還原序列化的類型。 實作自訂<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>。 之前與還原序列化<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>，將<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>執行個體的自訂屬性<xref:System.Runtime.Serialization.SerializationBinder>。 在 覆寫<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>方法，如果型別不是預期然後擲回例外狀況。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 
-- 它會安全地隱藏此規則的警告，如果您知道輸入是受信任。 請考慮您的應用程式信任界限流程和資料流程會隨著時間改變。
-- 是可隱藏這個警告，如果您所採取的預防措施，上述其中一個安全的。
+[!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
 ## <a name="pseudo-code-examples"></a>虛擬程式碼範例
 
@@ -120,6 +119,7 @@ End Class
 ```
 
 ### <a name="solution"></a>方案
+
 ```csharp
 using System;
 using System.IO;
@@ -141,7 +141,7 @@ public class BookRecordSerializationBinder : SerializationBinder
         }
         else
         {
-            throw new ArgumentException("Unexpected type", "typeName");
+            throw new ArgumentException("Unexpected type", nameof(typeName));
         }
     }
 }
@@ -194,7 +194,7 @@ Public Class BookRecordSerializationBinder
         If typeName = "BinaryFormatterVB.BookRecord" Or typeName = "BinaryFormatterVB.AisleLocation" Then
             Return Nothing
         Else
-            Throw New ArgumentException("Unexpected type", "typeName")
+            Throw New ArgumentException("Unexpected type", NameOf(typeName))
         End If
     End Function
 End Class

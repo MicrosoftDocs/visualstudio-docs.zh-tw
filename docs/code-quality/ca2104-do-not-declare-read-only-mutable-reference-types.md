@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a033ed83d6d349ac3876a6f11a24570f3ff8f60c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40fdeefc2d664b80bb6e17c109349cb5912b0516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077702"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104:不要宣告唯讀的可變動參考類型
 
@@ -35,7 +35,7 @@ ms.locfileid: "55945010"
 |中斷變更|非重大|
 
 > [!NOTE]
-> 規則 CA2104 已經過時，將 Visual Studio 的未來版本中移除。
+> 規則 CA2104 已經過時，將 Visual Studio 的未來版本中移除。 它不會實作為[分析器](roslyn-analyzers-overview.md)因為複雜的分析所需來判斷實際的不變性型別。
 
 ## <a name="cause"></a>原因
 
@@ -45,7 +45,7 @@ ms.locfileid: "55945010"
 
 可變動類型是可以修改執行個體資料的類型。 <xref:System.Text.StringBuilder?displayProperty=fullName>類別是可變動參考類型的範例。 它包含成員可以變更類別的執行個體的值。 不可變的參考類型的範例是<xref:System.String?displayProperty=fullName>類別。 已執行個體化之後，可以永遠不會變更其值。
 
-唯讀修飾詞 ([readonly](/dotnet/csharp/language-reference/keywords/readonly)在C#， [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)在 Visual Basic 中，和[const](/cpp/cpp/const-cpp) c + + 中) 上參考型別欄位 （或 c + + 中的指標） 會防止從欄位取代另一個執行個體的參考型別。 不過，修飾詞不會防止執行個體資料的欄位正在修改透過參考類型。
+唯讀修飾詞 ([readonly](/dotnet/csharp/language-reference/keywords/readonly)中C#， [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)在 Visual Basic 中，和[const](/cpp/cpp/const-cpp)在C++) 的參考類型欄位 (或指標中的C++)防止欄位的參考類型的不同執行個體取代。 不過，修飾詞不會防止執行個體資料的欄位正在修改透過參考類型。
 
 此規則可能會不小心顯示類型的違規，事實上是，不可變。 在此情況下，它可安全地隱藏警告。
 

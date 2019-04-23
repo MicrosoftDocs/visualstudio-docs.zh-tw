@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f841d7f80e7130b2ee5a9c11f53d12137f7e358d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e78d20fa0c7d4d0db6db50c2cbb5cde0b79023fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086322"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office runtime 概觀
   若要執行使用 Visual Studio 中的 Microsoft Office developer tools 所建立的解決方案，必須在使用者電腦上安裝 Visual Studio 2010 Tools for Office 執行階段。 如需詳細資訊，請參閱[如何：安裝 Visual Studio Tools for Office runtime 可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。 Visual Studio 2010 Tools for Office 執行階段是由兩個主要元件所組成：
@@ -42,7 +42,7 @@ ms.locfileid: "56642985"
 
   這個執行階段可以用數種不同的方式安裝。 所安裝的執行階段元件會因進行執行階段安裝時的電腦組態而異。 如需詳細資訊，請參閱 < [Visual Studio Tools for Office runtime 安裝案例](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)。
 
-##  <a name="officeextensions"></a> 了解適用於.NET Framework 的 Office 擴充功能
+## <a name="officeextensions"></a> 了解適用於.NET Framework 的 Office 擴充功能
  Visual Studio 2010 Tools for Office runtime 包含 Office 擴充功能適用於.NET Framework 3.5，[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]和更新版本。 以 .NET Framework 的每個版本為目標的方案會使用該版本的適當擴充功能。
 
  這些擴充功能包含您的方案用來自動化和擴充 Office 應用程式的組件。 當您建立 Office 專案時，Visual Studio 會自動針對專案類型和專案的目標 .NET Framework，加入適用組件的參考。 如需 Office 擴充功能中的組件的詳細資訊，請參閱[在 Visual Studio Tools for Office runtime 的組件](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)。
@@ -74,7 +74,7 @@ ms.locfileid: "56642985"
 
   進行此項變更後，當您建置專案時，專案使用之所有執行階段類型的類型資訊都會內嵌至方案組件中。 在執行階段的解決方案會使用內嵌的類型資訊，而不是參考的組件中的類型資訊。
 
-##  <a name="UnmanagedLoader"></a> 了解 Office 方案載入器
+## <a name="UnmanagedLoader"></a> 了解 Office 方案載入器
  Visual Studio Tools for Office Runtime 包含 Office 應用程式用來載入執行階段和 Office 方案的數個 Unmanaged DLL。 雖然您應該永遠都不需要直接使用這些 DLL，但是知道這些 DLL 的用途有助於深入了解 Office 方案的架構。
 
  如需如何在載入過程中使用這些元件的資訊，請參閱[文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)並[Architecture of VSTO 增益集](../vsto/architecture-of-vsto-add-ins.md)。

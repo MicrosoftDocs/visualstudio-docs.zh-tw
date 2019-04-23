@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5394e7918c623fee3c1fed4008a952ca7a9e0f22
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 78026f091d9ed61d38d5cf9bd98ec16d85e193c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323145"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047719"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 
@@ -64,7 +64,7 @@ ms.locfileid: "58323145"
 
    - `Category` 屬性，指定群組程式碼項目與其子程式碼項目之間的 `Contains` 關聯性
 
-     例如: 
+     例如：
 
    ```xml
    <Links>
@@ -80,9 +80,9 @@ ms.locfileid: "58323145"
 ## <a name="ChangeGraphStyle"></a> 變更地圖樣式
  您可以編輯此對應的 .dgml 檔案，變更圖形的背景色彩和框線色彩。 若要變更的程式碼項目和連結的樣式，請參閱[變更程式碼項目和連結的樣式](#Highlight)。
 
-1.  在文字或 XML 編輯器中開啟此 .dgml 檔案。
+1. 在文字或 XML 編輯器中開啟此 .dgml 檔案。
 
-2.  在 `<DirectedGraph>` 項目中，加入下列任何屬性以變更其樣式：
+2. 在 `<DirectedGraph>` 項目中，加入下列任何屬性以變更其樣式：
 
      背景色彩
 
@@ -96,7 +96,7 @@ ms.locfileid: "58323145"
     Stroke="StrokeValue"
     ```
 
-     例如: 
+     例如：
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -110,20 +110,20 @@ ms.locfileid: "58323145"
 ### <a name="CreateCustomStyles"></a>
  您可以將自訂樣式套用至下列程式碼項目：
 
--   單一程式碼項目和連結
+- 單一程式碼項目和連結
 
--   程式碼項目和連結的群組
+- 程式碼項目和連結的群組
 
--   根據特定條件組成的程式碼項目和連結群組
+- 根據特定條件組成的程式碼項目和連結群組
 
 > [!TIP]
 >  如果您在許多不同的程式碼項目或連結之間使用了重覆的樣式，您可能可以考慮套用一個分類到那些程式碼項目或連結，然後將樣式套用到該分類。 如需詳細資訊，請參閱 <<c0> [ 指派分類給程式碼項目和連結](#AssignCategories)並[指派屬性給程式碼項目和連結](#AssignProperties)。
 
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>將自訂樣式套用至單一程式碼項目
 
-1.  在文字或 XML 編輯器中開啟此 .dgml 檔案。
+1. 在文字或 XML 編輯器中開啟此 .dgml 檔案。
 
-2.  請找出此程式碼項目的 `<Node/>` 項目。 加入下列任一屬性以自訂其樣式：
+2. 請找出此程式碼項目的 `<Node/>` 項目。 加入下列任一屬性以自訂其樣式：
 
      背景色彩
 
@@ -212,11 +212,11 @@ ms.locfileid: "58323145"
 
 ##### <a name="to-apply-a-custom-style-to-a-single-link"></a>若要將自訂樣式套用至單一連結
 
-1.  在文字或 XML 編輯器中開啟此 .dgml 檔案。
+1. 在文字或 XML 編輯器中開啟此 .dgml 檔案。
 
-2.  找出同時包含來源程式碼項目與目標程式碼項目名稱的 `<Link/>` 項目。
+2. 找出同時包含來源程式碼項目與目標程式碼項目名稱的 `<Link/>` 項目。
 
-3.  在 `<Link/>` 項目中，加入下列任何屬性以自訂其樣式：
+3. 在 `<Link/>` 項目中，加入下列任何屬性以自訂其樣式：
 
      外框和箭頭色彩
 
@@ -373,11 +373,11 @@ ms.locfileid: "58323145"
 
  在這個範例中：
 
-1.  如果`Coverage`為 > 80，然後設定`Background`屬性為綠色。
+1. 如果`Coverage`為 > 80，然後設定`Background`屬性為綠色。
 
-2.  Else if`Coverage`為 > 50，然後設定`Background`的橙色陰影的屬性，根據值`Coverage`屬性。
+2. Else if`Coverage`為 > 50，然後設定`Background`的橙色陰影的屬性，根據值`Coverage`屬性。
 
-3.  如果是上述所有條件以外的情況，則根據 `Background` 屬性值，將 `Coverage` 屬性設定為深淺程度不同的紅色。
+3. 如果是上述所有條件以外的情況，則根據 `Background` 屬性值，將 `Coverage` 屬性設定為深淺程度不同的紅色。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -440,9 +440,9 @@ ms.locfileid: "58323145"
 
 #### <a name="to-assign-a-property-to-a-code-element"></a>將屬性指派給程式碼項目
 
-1.  在文字或 XML 編輯器中開啟此 .dgml 檔案。
+1. 在文字或 XML 編輯器中開啟此 .dgml 檔案。
 
-2.  找出該程式碼項目的 `<Node/>` 項目。 指定此屬性的名稱及值。 例如: 
+2. 找出該程式碼項目的 `<Node/>` 項目。 指定此屬性的名稱及值。 例如: 
 
     ```xml
     <Nodes>
@@ -450,7 +450,7 @@ ms.locfileid: "58323145"
     </Nodes>
     ```
 
-3.  將 `<Property/>` 項目加入至 `<Properties>` 區段，以指定其顯示名稱和資料類型等屬性：
+3. 將 `<Property/>` 項目加入至 `<Properties>` 區段，以指定其顯示名稱和資料類型等屬性：
 
     ```xml
     <Properties>
@@ -460,11 +460,11 @@ ms.locfileid: "58323145"
 
 #### <a name="to-assign-a-property-to-a-link"></a>若要將屬性指派給連結
 
-1.  在文字或 XML 編輯器中開啟此 .dgml 檔案。
+1. 在文字或 XML 編輯器中開啟此 .dgml 檔案。
 
-2.  找出同時包含來源程式碼項目與目標程式碼項目名稱的 `<Link/>` 項目。
+2. 找出同時包含來源程式碼項目與目標程式碼項目名稱的 `<Link/>` 項目。
 
-3.  在 `<Node/>` 項目中，指定屬性名稱及其值。 例如: 
+3. 在 `<Node/>` 項目中，指定屬性名稱及其值。 例如: 
 
     ```xml
     <Links>
@@ -472,7 +472,7 @@ ms.locfileid: "58323145"
     </Links>
     ```
 
-4.  將 `<Property/>` 項目加入至 `<Properties>` 區段，以指定其顯示名稱和資料類型等屬性：
+4. 將 `<Property/>` 項目加入至 `<Properties>` 區段，以指定其顯示名稱和資料類型等屬性：
 
     ```xml
     <Properties>
@@ -485,11 +485,11 @@ ms.locfileid: "58323145"
 
 #### <a name="to-assign-a-category-to-a-code-element"></a>將分類指派給程式碼項目
 
--   在文字或 XML 編輯器中開啟此 .dgml 檔案。
+- 在文字或 XML 編輯器中開啟此 .dgml 檔案。
 
--   找出您要的程式碼項目之 `<Node/>` 項目。
+- 找出您要的程式碼項目之 `<Node/>` 項目。
 
--   在 `<Node/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如: 
+- 在 `<Node/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如：
 
     ```xml
     <Nodes>
@@ -507,11 +507,11 @@ ms.locfileid: "58323145"
 
 #### <a name="to-assign-a-category-to-a-link"></a>若要將分類指派給連結
 
-1.  在文字或 XML 編輯器中開啟此 .dgml 檔案。
+1. 在文字或 XML 編輯器中開啟此 .dgml 檔案。
 
-2.  找出同時包含來源程式碼項目與目標程式碼項目名稱的 `<Link/>` 項目。
+2. 找出同時包含來源程式碼項目與目標程式碼項目名稱的 `<Link/>` 項目。
 
-3.  在 `<Link/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如: 
+3. 在 `<Link/>` 項目中加入 `Category` 屬性，以指定分類的名稱。 例如: 
 
     ```xml
     <Links>
@@ -519,7 +519,7 @@ ms.locfileid: "58323145"
     </Links>
     ```
 
-4.  將 `<Category/>` 項目加入至 `<Categories>` 區段，如此即可使用 `Label` 屬性來指定該分類的顯示文字：
+4. 將 `<Category/>` 項目加入至 `<Categories>` 區段，如此即可使用 `Label` 屬性來指定該分類的顯示文字：
 
     ```xml
     <Categories>
@@ -529,11 +529,11 @@ ms.locfileid: "58323145"
 
 #### <a name="to-create-hierarchical-categories"></a>若要建立階層式分類
 
-1.  在文字或 XML 編輯器中開啟此 .dgml 檔案。
+1. 在文字或 XML 編輯器中開啟此 .dgml 檔案。
 
-2.  加入父分類的 `<Category/>` 項目，然後將 `BasedOn` 屬性加入至子分類的 `<Category/>` 項目。
+2. 加入父分類的 `<Category/>` 項目，然後將 `BasedOn` 屬性加入至子分類的 `<Category/>` 項目。
 
-     例如: 
+     例如：
 
     ```xml
     <Nodes>
@@ -559,13 +559,13 @@ ms.locfileid: "58323145"
 
  例如，您可能會想要連結下列程式碼項目：
 
--   若要描述類別的變更，您可能會將工作程式碼項目、文件或其他 .dgml 檔的 URL 連結到類別的程式碼項目。
+- 若要描述類別的變更，您可能會將工作程式碼項目、文件或其他 .dgml 檔的 URL 連結到類別的程式碼項目。
 
--   您可能會將相依性圖連結到代表軟體邏輯架構中的圖層的群組程式碼項目。
+- 您可能會將相依性圖連結到代表軟體邏輯架構中的圖層的群組程式碼項目。
 
--   若要顯示會公開介面之元件的詳細資訊，您可能會將元件圖連結到該介面的程式碼項目。
+- 若要顯示會公開介面之元件的詳細資訊，您可能會將元件圖連結到該介面的程式碼項目。
 
--   程式碼項目連結至 Team Foundation Server 工作項目或 bug 或一些其他的程式碼項目相關資訊。
+- 程式碼項目連結至 Team Foundation Server 工作項目或 bug 或一些其他的程式碼項目相關資訊。
 
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>將文件或 URL 連結到程式碼項目
 
@@ -582,7 +582,7 @@ ms.locfileid: "58323145"
      > [!NOTE]
      >  每個項目只能有一個 `Reference` 屬性。
 
-     例如: 
+     例如：
 
    ```xml
    <Nodes>
@@ -599,13 +599,13 @@ ms.locfileid: "58323145"
 
    2. 在 `<Properties>` 區段中：
 
-      1.  針對每一個新的參考類型加入 `<Property/>` 項目。
+      1. 針對每一個新的參考類型加入 `<Property/>` 項目。
 
-      2.  將 `Id` 屬性設定為新參考屬性的名稱。
+      2. 將 `Id` 屬性設定為新參考屬性的名稱。
 
-      3.  新增`IsReference`屬性，並將它設定為`True`讓參考出現在程式碼項目的**移至參考**快顯功能表。
+      3. 新增`IsReference`屬性，並將它設定為`True`讓參考出現在程式碼項目的**移至參考**快顯功能表。
 
-      4.  使用`Label`屬性來指定程式碼項目上的顯示文字**移至參考**快顯功能表。
+      4. 使用`Label`屬性來指定程式碼項目上的顯示文字**移至參考**快顯功能表。
 
       例如: 
 

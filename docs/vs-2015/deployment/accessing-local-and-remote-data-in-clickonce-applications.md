@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 21e16823d664b927008e43f8bfc6972ac284eac7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8337fa86173b62a6576be6d3abe8d76dbef427d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939844"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040065"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 應用程式中存取本機和遠端資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58939844"
 ## <a name="local-data"></a>本機資料  
  經由使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]，您可以利用下列任何一種方法在本機載入及儲存資料：  
   
--   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 資料目錄  
+- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 資料目錄  
   
--   隔離儲存區  
+- 隔離儲存區  
   
--   其他本機檔案  
+- 其他本機檔案  
   
 ### <a name="clickonce-data-directory"></a>ClickOnce 資料目錄  
  在本機電腦安裝的每個 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，都有資料目錄儲存在使用者的 [Documents and Settings] 資料夾中。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式所含並標記為「資料」檔案的任何檔案，都會在安裝應用程式時複製到這個目錄。 資料檔案可以是任何檔案類型，最常使用的是文字、XML 和資料庫檔案 (例如 Microsoft Access.mdb 檔案)。  

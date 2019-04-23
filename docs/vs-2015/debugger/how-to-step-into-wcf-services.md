@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ad5ca2d74a1c141b9687d9b9eac5d8b3e268cc0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 951d5f39fbf3929d094cc18de5fe108b46753b09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939334"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056441"
 ---
 # <a name="how-to-step-into-wcf-services"></a>HOW TO：逐步執行 WCF 服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ ms.locfileid: "58939334"
   
 ### <a name="to-step-into-a-wcf-service"></a>若要逐步執行 WCF 服務  
   
-1.  建立 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案，其中包含 WCF 用戶端和 WCF 服務專案。  
+1. 建立 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案，其中包含 WCF 用戶端和 WCF 服務專案。  
   
-2.  在 [方案總管] 中，以滑鼠右鍵按一下 WCF 用戶端專案，然後按一下 [設定為啟始專案]。  
+2. 在 [方案總管] 中，以滑鼠右鍵按一下 WCF 用戶端專案，然後按一下 [設定為啟始專案]。  
   
-3.  在 app.config 或 web.config 檔案內啟用偵錯。 如需詳細資訊，請參閱 < [WCF 偵錯的限制](../debugger/limitations-on-wcf-debugging.md)。  
+3. 在 app.config 或 web.config 檔案內啟用偵錯。 如需詳細資訊，請參閱 < [WCF 偵錯的限制](../debugger/limitations-on-wcf-debugging.md)。  
   
-4.  在用戶端專案中要開始逐步執行的位置設定中斷點。 這通常會是在 WCF 服務呼叫之前。  
+4. 在用戶端專案中要開始逐步執行的位置設定中斷點。 這通常會是在 WCF 服務呼叫之前。  
   
-5.  執行至中斷點，然後開始逐步執行。 偵錯工具將自動逐步執行服務。  
+5. 執行至中斷點，然後開始逐步執行。 偵錯工具將自動逐步執行服務。  
   
 ## <a name="see-also"></a>另請參閱  
  [對 WCF 服務進行偵錯](../debugger/debugging-wcf-services.md)   

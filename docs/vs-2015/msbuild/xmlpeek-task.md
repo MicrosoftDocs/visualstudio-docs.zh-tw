@@ -17,23 +17,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc39cde1a332e925f998a67ed261346320f18a3c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d82deb9c363c1a1bd587cc9a6e48c5d6bf2138bd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787791"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666490"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 從 XML 檔案傳回 XPath 查詢所指定的值。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `XmlPeek` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`Namespaces`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢前置詞的命名空間。|  
 |`Query`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢。|  

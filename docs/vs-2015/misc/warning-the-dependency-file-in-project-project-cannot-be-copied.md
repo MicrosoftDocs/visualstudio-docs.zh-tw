@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a97dfc6e7f93602b50102da51127fff6169ac3dc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2f2a70df72f6dfcdc8946ca2f5afec9efa21a65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941213"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059236"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>警告： 相依性&#39;檔案&#39;專案中&#39;專案&#39;無法複製至執行目錄中，因為它會覆寫參考&#39;檔案。&#39;
 相依性之間發生衝突；若要執行應用程式，應該將多個同名的相異組件檔複製到 bin 目錄。 由於其中一個相依性是主要參考，因此執行目錄可以解決衝突。  
@@ -31,7 +31,7 @@ ms.locfileid: "58941213"
   
  **若要更正這個錯誤**  
   
--   將一個 (或零個) 組件檔複製到 bin 目錄，您可以將組件檔放入全域組件快取來達成目的。 全域組件快取會解決檔案名稱衝突。 因為 Common Language Runtime 知道如何在全域組件快取中尋找組件，所以不會對組件檔進行任何本機複製。 如需詳細資訊，請參閱 [Working with Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) 與 [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](/visualstudio/misc/error-dependency-file?view=vs-2015)。  
+- 將一個 (或零個) 組件檔複製到 bin 目錄，您可以將組件檔放入全域組件快取來達成目的。 全域組件快取會解決檔案名稱衝突。 因為 Common Language Runtime 知道如何在全域組件快取中尋找組件，所以不會對組件檔進行任何本機複製。 如需詳細資訊，請參閱 [Working with Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) 與 [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](/visualstudio/misc/error-dependency-file?view=vs-2015)。  
   
 ## <a name="see-also"></a>另請參閱  
  [管理專案中的參考](../ide/managing-references-in-a-project.md)   

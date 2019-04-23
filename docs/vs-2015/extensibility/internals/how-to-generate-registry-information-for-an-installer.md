@@ -12,12 +12,12 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b9a1d8e18802c91d1669d709d6236d69a4a7444c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 63dd7f96e1d7af81b81a1b9d6a445356bb8de27e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117729"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>HOW TO：產生安裝程式的登錄資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ RegPkg.exe 公用程式可用來產生 managed VSPackage 註冊資訊清單。 �
   
 ### <a name="to-create-a-registration-manifest"></a>若要建立的註冊資訊清單  
   
--   執行與 RegPkg **/regfile**切換。 提供任何其他參數、 輸出檔的名稱和路徑的 VSPackage。  
+- 執行與 RegPkg **/regfile**切換。 提供任何其他參數、 輸出檔的名稱和路徑的 VSPackage。  
   
      例如，在命令提示字元中，您會輸入像下面這樣：  
   
@@ -39,7 +39,7 @@ RegPkg.exe 公用程式可用來產生 managed VSPackage 註冊資訊清單。 �
   
 ### <a name="to-view-a-registration-manifest"></a>若要檢視的註冊資訊清單  
   
--   在任何文字編輯器中開啟的註冊資訊清單。  
+- 在任何文字編輯器中開啟的註冊資訊清單。  
   
      下列範例是 RegPkg 建立的 IronPython 語言服務的註冊資訊清單：  
   
@@ -100,7 +100,7 @@ RegPkg.exe 公用程式可用來產生 managed VSPackage 註冊資訊清單。 �
   
 ### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>若要建立 Windows Installer XML 工具組包含檔案  
   
--   執行與 RegPkg **/wixfile**切換。 提供任何其他參數、 輸出檔的名稱和路徑的 VSPackage。  
+- 執行與 RegPkg **/wixfile**切換。 提供任何其他參數、 輸出檔的名稱和路徑的 VSPackage。  
   
      例如，在命令提示字元中，您會輸入像下面這樣：  
   
@@ -110,7 +110,7 @@ RegPkg.exe 公用程式可用來產生 managed VSPackage 註冊資訊清單。 �
   
 ### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>若要檢視 Windows Installer XML 工具組包含檔案  
   
--   開啟 Windows Installer XML 工具組包含檔案在任何文字編輯器中。  
+- 開啟 Windows Installer XML 工具組包含檔案在任何文字編輯器中。  
   
      下列範例是 IronPython 語言服務 RegPkg 建立的 include 檔案：  
   

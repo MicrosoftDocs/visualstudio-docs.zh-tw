@@ -6,12 +6,12 @@ ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d67b80feb38e6f1c00c6cf4d1fc1d7915a33dbd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 33d3094c599ddc8cb472bd6defa211f57e85e84f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945338"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112828"
 ---
 # <a name="manifest-from-resources"></a>來自資源的資訊清單
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,25 +43,25 @@ ms.locfileid: "58945338"
   
  **範例**  
   
--   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
+- ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
 ## <a name="notes"></a>注意  
   
--   此工具僅支援.png 和.xaml 檔案。 將會忽略任何其他映像或檔案類型。 所有不受支援的類型，剖析的資源時，會產生警告。 如果不支援映像會找到此工具完成時剖析的資源，將會產生錯誤  
+- 此工具僅支援.png 和.xaml 檔案。 將會忽略任何其他映像或檔案類型。 所有不受支援的類型，剖析的資源時，會產生警告。 如果不支援映像會找到此工具完成時剖析的資源，將會產生錯誤  
   
--   藉由遵循建議的格式為.png 影像，此工具將會設定.png 大小/維度值的格式指定的大小，即使其不同於映像的實際大小。  
+- 藉由遵循建議的格式為.png 影像，此工具將會設定.png 大小/維度值的格式指定的大小，即使其不同於映像的實際大小。  
   
--   .Png 映像，則可以省略的寬度/高度的格式，但此工具會讀取映像的實際寬度/高度，並使用這些映像的大小/維度值。  
+- .Png 映像，則可以省略的寬度/高度的格式，但此工具會讀取映像的實際寬度/高度，並使用這些映像的大小/維度值。  
   
--   針對相同.imagemanifest 多次相同的影像區域上執行此工具將會導致重複的資訊清單項目，因為此工具會嘗試將影像區域分割成獨立映像，並將它們新增至現有的資訊清單。  
+- 針對相同.imagemanifest 多次相同的影像區域上執行此工具將會導致重複的資訊清單項目，因為此工具會嘗試將影像區域分割成獨立映像，並將它們新增至現有的資訊清單。  
   
--   合併 （省略 /newGuids 或 /newIds），才應該執行工具所產生資訊清單。 自訂或透過其他方式所產生的資訊清單可能不正確地合併。  
+- 合併 （省略 /newGuids 或 /newIds），才應該執行工具所產生資訊清單。 自訂或透過其他方式所產生的資訊清單可能不正確地合併。  
   
--   針對原生組件所產生資訊清單可能需要透過手動編輯產生進行比對的資源識別碼，從原生組件的.rc 檔的 ID 符號之後。  
+- 針對原生組件所產生資訊清單可能需要透過手動編輯產生進行比對的資源識別碼，從原生組件的.rc 檔的 ID 符號之後。  
   
 ## <a name="sample-output"></a>範例輸出  
  **簡單的映像資訊清單**  

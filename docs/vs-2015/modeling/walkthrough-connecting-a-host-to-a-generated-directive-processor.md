@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00baf3697347f208c5bd6cd2aa1abfe02b6fa2cb
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8832f31724d5e688b93dcca76cce8e1a496c9ced
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58946100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083214"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連接至產生的指示詞處理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58946100"
   
  本逐步解說包含下列工作：  
   
--   使用[!INCLUDE[dsl](../includes/dsl-md.md)]產生指示詞處理器為基礎的領域模型。  
+- 使用[!INCLUDE[dsl](../includes/dsl-md.md)]產生指示詞處理器為基礎的領域模型。  
   
--   將自訂文字範本主機連接至產生的指示詞處理器。  
+- 將自訂文字範本主機連接至產生的指示詞處理器。  
   
--   測試自訂主應用程式並將產生的指示詞處理器。  
+- 測試自訂主應用程式並將產生的指示詞處理器。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要定義 DSL，您必須已安裝下列元件：  
@@ -87,27 +87,27 @@ ms.locfileid: "58946100"
   
 #### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>若要連接至產生的指示詞處理器的自訂文字範本主機  
   
-1.  開啟 CustomHost 方案。  
+1. 開啟 CustomHost 方案。  
   
-2.  在 [專案] 功能表上，按一下 [新增參考]。  
+2. 在 [專案] 功能表上，按一下 [新增參考]。  
   
      **加入參考** 對話方塊隨即開啟與 **.NET**顯示 索引標籤。  
   
-3.  加入下列參考：  
+3. 加入下列參考：  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0  
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0  
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.11.0  
+    - Microsoft.VisualStudio.TextTemplating.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.11.0  
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.11.0  
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.11.0  
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0  
   
-4.  在 Program.cs 或 Module1.vb 頂端，新增下列程式碼行：  
+4. 在 Program.cs 或 Module1.vb 頂端，新增下列程式碼行：  
   
     ```csharp  
     using Microsoft.Win32;  
@@ -117,7 +117,7 @@ ms.locfileid: "58946100"
     Imports Microsoft.Win32  
     ```  
   
-5.  找出屬性的程式碼`StandardAssemblyReferences`，並將它取代為下列程式碼：  
+5. 找出屬性的程式碼`StandardAssemblyReferences`，並將它取代為下列程式碼：  
   
     > [!NOTE]
     >  在此步驟中，您可以新增所需的支援您的主機將會產生指示詞處理器的組件的參考。  
@@ -153,7 +153,7 @@ ms.locfileid: "58946100"
     }  
     ```  
   
-6.  找出函式的程式碼`ResolveDirectiveProcessor`，並將它取代為下列程式碼：  
+6. 找出函式的程式碼`ResolveDirectiveProcessor`，並將它取代為下列程式碼：  
   
     > [!IMPORTANT]
     >  此程式碼包含硬式編碼的名稱，您要連接的產生指示詞處理器的參考。 您可以輕鬆地進行這更一般，在此情況下它會尋找所有的指示詞處理器的登錄中列出，並嘗試尋找相符項目。 在此情況下，主機會使用任何產生的指示詞處理器。  
@@ -227,18 +227,18 @@ ms.locfileid: "58946100"
             }  
     ```  
   
-7.  在 [檔案] 功能表上按一下 [全部儲存]。  
+7. 在 [檔案] 功能表上按一下 [全部儲存]。  
   
-8.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
+8. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
 ## <a name="testing-the-custom-host-with-the-directive-processor"></a>測試自訂主應用程式與指示詞處理器  
  第一次若要測試自訂文字範本主應用程式，您必須撰寫呼叫產生的指示詞處理器的文字範本。 然後執行自訂主應用程式、 將文字範本的名稱傳遞給它，並確認會正確處理指示詞。  
   
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>若要建立文字範本以測試自訂主應用程式  
   
-1.  建立文字檔案，並將它命名`TestTemplateWithDP.tt`。 您可以使用任何文字編輯器，例如 [記事本]，建立檔案。  
+1. 建立文字檔案，並將它命名`TestTemplateWithDP.tt`。 您可以使用任何文字編輯器，例如 [記事本]，建立檔案。  
   
-2.  將下列程式碼加入至此文字檔中：  
+2. 將下列程式碼加入至此文字檔中：  
   
     > [!NOTE]
     >  文字範本的程式設計語言不需要符合自訂主應用程式。  
@@ -310,15 +310,15 @@ ms.locfileid: "58946100"
     #>  
     ```  
   
-3.  在程式碼，取代\<您的路徑 > 從您在第一個程序中建立的設計特定語言的 Sample.min 檔案的路徑。  
+3. 在程式碼，取代\<您的路徑 > 從您在第一個程序中建立的設計特定語言的 Sample.min 檔案的路徑。  
   
-4.  儲存並關閉檔案。  
+4. 儲存並關閉檔案。  
   
 #### <a name="to-test-the-custom-host"></a>若要測試自訂主應用程式  
   
-1.  開啟 [命令提示字元] 視窗。  
+1. 開啟 [命令提示字元] 視窗。  
   
-2.  輸入自訂主應用程式可執行檔的路徑，但是還不要按 ENTER。  
+2. 輸入自訂主應用程式可執行檔的路徑，但是還不要按 ENTER。  
   
      例如，輸入：  
   
@@ -327,9 +327,9 @@ ms.locfileid: "58946100"
     > [!NOTE]
     >  而不是輸入位址，您可以瀏覽至 CustomHost.exe 檔中**Windows 檔案總管**，然後將檔案拖曳到 [命令提示字元] 視窗。  
   
-3.  輸入空格。  
+3. 輸入空格。  
   
-4.  輸入文字範本檔的路徑，然後按 ENTER。  
+4. 輸入文字範本檔的路徑，然後按 ENTER。  
   
      例如，輸入：  
   
@@ -340,11 +340,11 @@ ms.locfileid: "58946100"
   
      自訂主應用程式執行，並啟動文字範本轉換流程。  
   
-5.  在  **Windows 檔案總管**，瀏覽至包含 TestTemplateWithDP.txt 之檔案的資料夾。  
+5. 在  **Windows 檔案總管**，瀏覽至包含 TestTemplateWithDP.txt 之檔案的資料夾。  
   
      資料夾也包含檔案 TestTemplateWithDP1.txt。  
   
-6.  開啟這個檔案來查看文字範本轉換的結果。  
+6. 開啟這個檔案來查看文字範本轉換的結果。  
   
      產生的文字輸出的結果會出現，而且應該看起來像這樣：  
   

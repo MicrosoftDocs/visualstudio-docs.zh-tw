@@ -11,12 +11,12 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3824edb97306dd7730c8d57b955afeab6df816a1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e1a43997d56f8d89f194fb83d20c1f160378873
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944729"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092184"
 ---
 # <a name="selection-context-objects"></a>選取項目內容物件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58944729"
   
   下列順序顯示選取項目追蹤的一般程。  
   
-1.  IDE 會擷取新開啟的視窗中的選取項目內容，並將它放在全域範圍內容。 如果選取範圍內容使用 HIERARCHY_DONTPROPAGATE 或 SELCONTAINER_DONTPROPAGATE，該資訊不會傳播至全球的內容。 如需詳細資訊，請參閱 <<c0> [ 使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)。  
+1. IDE 會擷取新開啟的視窗中的選取項目內容，並將它放在全域範圍內容。 如果選取範圍內容使用 HIERARCHY_DONTPROPAGATE 或 SELCONTAINER_DONTPROPAGATE，該資訊不會傳播至全球的內容。 如需詳細資訊，請參閱 <<c0> [ 使用者的意見反應](../../extensibility/internals/feedback-to-the-user.md)。  
   
-2.  通知事件會廣播到任何要求它們的 VSPackage。  
+2. 通知事件會廣播到任何要求它們的 VSPackage。  
   
-3.  VSPackage 是藉由執行活動，例如更新的階層架構中，然後再重新啟動一項工具或其他類似工作收到的事件。  
+3. VSPackage 是藉由執行活動，例如更新的階層架構中，然後再重新啟動一項工具或其他類似工作收到的事件。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   

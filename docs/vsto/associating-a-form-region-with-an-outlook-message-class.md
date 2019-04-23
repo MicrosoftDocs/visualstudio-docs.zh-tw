@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39f94442e89cee6a615497376ad7baa9c85b7797
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625526"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063539"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Outlook 訊息類別相關聯的表單區域
   您可以指定哪些 Microsoft Office Outlook 項目顯示表單區域的表單區域關聯至每個項目的訊息類別。 例如，如果您想要的郵件項目底部附加表單區域，您可以將表單區域`IPM.Note`訊息類別。
@@ -50,9 +50,9 @@ ms.locfileid: "56625526"
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Outlook 訊息類別相關聯的表單區域
  有兩種方式，將表單區域關聯的訊息類別：
 
--   使用**新的 Outlook 表單區域**精靈。
+- 使用**新的 Outlook 表單區域**精靈。
 
--   適用於類別屬性。
+- 適用於類別屬性。
 
 ### <a name="use-the-new-outlook-form-region-wizard"></a>使用新的 Outlook 表單區域精靈
  在最後一頁**新的 Outlook 表單區域**精靈，您可以選取標準訊息類別，並輸入您要與表單區域相關聯的自訂訊息類別名稱。

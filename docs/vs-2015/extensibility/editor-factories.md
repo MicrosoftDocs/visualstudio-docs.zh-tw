@@ -10,12 +10,12 @@ ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fbf30d1fdb4fcce1e28a3c10c9949f1a11eae529
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 2de1fc8440bd33a526da62dbb4c7937800484aaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58941533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117872"
 ---
 # <a name="editor-factories"></a>編輯器 Factory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58941533"
 ## <a name="the-editor-factory-registration-process"></a>編輯器 Factory 註冊程序  
  Visual Studio 會載入您使用編輯器 factory 的編輯器時，就會發生下列處理程序：  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案系統呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案系統呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。  
   
-2.  這個方法會傳回編輯器 factory。 Visual Studio 延遲載入編輯器的封裝，不過，直到實際需要的專案系統的編輯器。  
+2. 這個方法會傳回編輯器 factory。 Visual Studio 延遲載入編輯器的封裝，不過，直到實際需要的專案系統的編輯器。  
   
-3.  當專案系統需要編輯器時，Visual Studio 會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>，傳回的文件檢視和文件資料物件的特定的方法。  
+3. 當專案系統需要編輯器時，Visual Studio 會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>，傳回的文件檢視和文件資料物件的特定的方法。  
   
-4.  如果呼叫由 Visual Studio 編輯器 factory 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>傳回文件資料物件和文件檢視物件、 Visual Studio 然後建立文件視窗中，置於文件檢視物件，並執行文件的項目資料表 (RDT) 文件資料物件。  
+4. 如果呼叫由 Visual Studio 編輯器 factory 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>傳回文件資料物件和文件檢視物件、 Visual Studio 然後建立文件視窗中，置於文件檢視物件，並執行文件的項目資料表 (RDT) 文件資料物件。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   

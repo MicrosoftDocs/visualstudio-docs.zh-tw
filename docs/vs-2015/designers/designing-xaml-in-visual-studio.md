@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae621a36a8e5226c60ff5b879d359b0e8556aeaa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bca0b07922d1b0b0d1a218fcccfa51e68a64e7e8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754182"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114778"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>在 Visual Studio 中設計 XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,25 +29,25 @@ Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為 X
 ### <a name="shared-capabilities"></a>共用的功能
  如需最基本的工作，Visual studio IDE 和 Blend for Visual Studio 共用一組相同的視窗和功能，其中只有些微的差異。 一些重點包括：
 
--   **一致的使用者介面：** 您可以在熟悉的 Visual Studio 使用者介面環境中設計應用程式，讓在 IDE 之間切換成為更愉快且更有生產力的體驗。 Blend for Visual Studio 會使用 Visual Studio 暗色調佈景主題，藉由改善您的內容與使用者介面之間的對比，協助您專注於正在設計的內容。 請參閱[使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。
+- **一致的使用者介面：** 您可以在熟悉的 Visual Studio 使用者介面環境中設計應用程式，讓在 IDE 之間切換成為更愉快且更有生產力的體驗。 Blend for Visual Studio 會使用 Visual Studio 暗色調佈景主題，藉由改善您的內容與使用者介面之間的對比，協助您專注於正在設計的內容。 請參閱[使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。
 
      ![Blend for Visual Studio IDE](../designers/media/blendide.png "BlendIDE")
 
--   **XAML IntelliSense：** 兩者的 IDE 都支援所有您預期來自 IntelliSense 的通用功能，包括陳述式完成、支援一般編輯器作業，例如註解和格式化程式碼，以及巡覽至資源、繫結和程式碼。
+- **XAML IntelliSense：** 兩者的 IDE 都支援所有您預期來自 IntelliSense 的通用功能，包括陳述式完成、支援一般編輯器作業，例如註解和格式化程式碼，以及巡覽至資源、繫結和程式碼。
 
--   **基本偵錯功能：** 您現在可以在 Blend 中偵錯，包括在程式碼中設定中斷點來偵錯執行中的應用程式。 若要與 Visual Studio 維持一致的偵錯經驗，Blend for Visual Studio 包含大部分的 Visual Studio 偵錯視窗和工具列。 進階偵錯功能，例如診斷和程式碼分析，只能在 Visual Studio 中使用。 請參閱 [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)。
+- **基本偵錯功能：** 您現在可以在 Blend 中偵錯，包括在程式碼中設定中斷點來偵錯執行中的應用程式。 若要與 Visual Studio 維持一致的偵錯經驗，Blend for Visual Studio 包含大部分的 Visual Studio 偵錯視窗和工具列。 進階偵錯功能，例如診斷和程式碼分析，只能在 Visual Studio 中使用。 請參閱 [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)。
 
--   **檔案重新載入體驗：** 您可以在 Blend for Visual Studio 或 Visual Studio 中編輯 XAML 檔案，當您在已編輯的檔案之間切換時，會讓它們自動重新載入。 若要降低工作流程中斷，您現在可以在 [檔案重新載入] 對話方塊中設定您的檔案重新載入喜好。
+- **檔案重新載入體驗：** 您可以在 Blend for Visual Studio 或 Visual Studio 中編輯 XAML 檔案，當您在已編輯的檔案之間切換時，會讓它們自動重新載入。 若要降低工作流程中斷，您現在可以在 [檔案重新載入] 對話方塊中設定您的檔案重新載入喜好。
 
      ![檔案重新載入體驗](../designers/media/blendfilereload.png "BlendFileReload")
 
--   **同步處理的配置和設定：** 自訂配置可讓您儲存並套用工具視窗配置的自訂項目。 當您使用相同的 Microsoft 帳戶登入時，Visual Studio 會跨電腦同步處理 Visual Studio 和 Blend for Visual Studio 的這些自訂項目和偏好設定。 請參閱 [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
+- **同步處理的配置和設定：** 自訂配置可讓您儲存並套用工具視窗配置的自訂項目。 當您使用相同的 Microsoft 帳戶登入時，Visual Studio 會跨電腦同步處理 Visual Studio 和 Blend for Visual Studio 的這些自訂項目和偏好設定。 請參閱 [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
 
--   **常見的 [方案總管]：**[方案總管] 會提供您專案及其檔案的組織化檢視，而且也已準備好存取與其建立關聯的命令。 使用 [方案總管]，使用大型企業專案更加輕鬆。 請參閱[解決方案和專案](../ide/solutions-and-projects-in-visual-studio.md)。
+- **常見的 [方案總管]：**[方案總管] 會提供您專案及其檔案的組織化檢視，而且也已準備好存取與其建立關聯的命令。 使用 [方案總管]，使用大型企業專案更加輕鬆。 請參閱[解決方案和專案](../ide/solutions-and-projects-in-visual-studio.md)。
 
--   **Team Explorer：** 您可以使用 Team Explorer 管理您具有 GIT 或 TFS 存放庫的專案，有助於小組共同作業。 請參閱 [在 Team Explorer 中工作](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)。
+- **Team Explorer：** 您可以使用 Team Explorer 管理您具有 GIT 或 TFS 存放庫的專案，有助於小組共同作業。 請參閱 [在 Team Explorer 中工作](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)。
 
--   **NuGet：** 您可以管理在 Visual Studio 和 Blend for Visual Studio 中的 NuGet 套件。 NuGet 是 .NET Framework 的封裝管理員，簡化了從方案安裝與移除封裝。
+- **NuGet：** 您可以管理在 Visual Studio 和 Blend for Visual Studio 中的 NuGet 套件。 NuGet 是 .NET Framework 的封裝管理員，簡化了從方案安裝與移除封裝。
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的進階功能
  若要提升產能，請考慮使用 Blend for Visual Studio 來處理下列工作。 這些都是 Blend for Visual Studio 可提供比 Visual Studio 設計工具或程式碼本身更快速度和更多功能之處。

@@ -17,17 +17,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ae8687a63f4f49a84a67a2c504ee5bf11769128
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f239da7816f72b9204364303113d32f5e06c4fd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768138"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661902"
 ---
 # <a name="property-pages-javascript"></a>JavaScript、屬性頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [屬性頁] 可讓您存取專案設定。 您可以使用 [屬性頁] 中所顯示的頁面來變更專案屬性。  
   
  若要存取專案屬性，請選取方案總管中的專案節點。 在 [專案] 功能表上，按一下 [屬性]。  
@@ -54,7 +53,7 @@ ms.locfileid: "54768138"
  **輸出路徑**  
  指定專案組態的輸出檔位置。 路徑是相對的；如果您輸入絕對路徑，則會在專案中儲存絕對路徑。 預設路徑為 bin\Debug。  
   
- 當您使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 不論您指定的 [輸出路徑] 為何，按一下 [偵錯]、[開始偵錯] (或按 F5) 時，組建均會放在偵錯位置。 但是，[建置] 功能表上的 [建置方案] 命令卻會將其放在您指定的位置。 若要啟用進階組建組態，請在功能表列上選擇 [工具]、[選項]。 在 [選項] 對話方塊中，展開 [專案和方案]，選取 [一般]，然後清除 [顯示進階組建組態] 核取方塊。 這麼做可以讓您手動控制所有組態值，以及建置的是偵錯或發行版本。 如需詳細資訊，請參閱 < [NIB： 一般、 專案和方案、 選項對話方塊](http://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca)。  
+ 當您使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 不論您指定的 [輸出路徑] 為何，按一下 [偵錯]、[開始偵錯] (或按 F5) 時，組建均會放在偵錯位置。 但是，[建置] 功能表上的 [建置方案] 命令卻會將其放在您指定的位置。 若要啟用進階組建組態，請在功能表列上選擇 [工具]、[選項]。 在 [選項] 對話方塊中，展開 [專案和方案]，選取 [一般]，然後清除 [顯示進階組建組態] 核取方塊。 這麼做可以讓您手動控制所有組態值，以及建置的是偵錯或發行版本。 如需詳細資訊，請參閱[NIB:一般、 專案和方案、 選項對話方塊](http://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca)。  
   
  **預設語言**  
  指定專案的預設語言。 系統會將使用者的慣用語言指定為控制台 [時鐘、語言和區域] 中選取的語言。 藉由指定專案預設語言，可確保當使用者的慣用語言不符合應用程式所提供的語言資源時，會使用指定的預設語言資源。  

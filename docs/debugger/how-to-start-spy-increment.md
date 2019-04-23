@@ -1,5 +1,5 @@
 ---
-title: 如何： 啟動 Spy + + |Microsoft Docs
+title: HOW TO：啟動 Spy + + |Microsoft Docs
 ms.date: 12/16/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91eda74b4f83f38434117ab1217d0a20d66d2842
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712446"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099139"
 ---
-# <a name="how-to-start-spy"></a>如何：啟動 Spy++
+# <a name="how-to-start-spy"></a>HOW TO：啟動 Spy++
 
 您可以啟動 Spy + + 從 Visual Studio 或命令提示字元。
 
@@ -30,8 +30,8 @@ ms.locfileid: "56712446"
 
 Spy + + 需要下列元件。 您可以從 Visual Studio 安裝程式選取這些元件，方法是選取**個別元件**索引標籤，然後選取 下列元件。
 
-* 在 偵錯和測試時，選取**c + + 程式碼剖析工具**
-* 在 [開發活動] 下選取**Visual Studio c + + 核心功能**
+* 在 偵錯和測試時，選取**C++程式碼剖析工具**
+* 在 [開發活動] 下選取**Visual StudioC++的核心功能**
 
 如果您進行任何變更，請依照下列提示來安裝這些元件。
 
@@ -46,9 +46,9 @@ Spy + + 需要下列元件。 您可以從 Visual Studio 安裝程式選取這�
 
 ## <a name="start-spy-at-a-command-prompt"></a>在命令提示字元啟動 Spy + +
 
-1.  在命令提示字元視窗中，將目錄變更為包含 spyxx.exe 的資料夾。 一般而言，此資料夾的路徑是...\\ *Visual Studio 安裝資料夾*\Common7\Tools\\。
+1. 在命令提示字元視窗中，將目錄變更為包含 spyxx.exe 的資料夾。 一般而言，此資料夾的路徑是...\\ *Visual Studio 安裝資料夾*\Common7\Tools\\。
 
-2.  請輸入**spyxx.exe**。
+2. 請輸入**spyxx.exe**。
 
 ## <a name="see-also"></a>另請參閱
 - [使用 Spy++](../debugger/using-spy-increment.md)

@@ -19,23 +19,22 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 497a767a1cd67c08e82a743d0665a152c5dd7062
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2ef7ef7f4ec930b8aa338a8be33c4009b3009b20
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54833715"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666130"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 針對 COM Interop 用途取消註冊指定的組件。 與 [RegisterAssembly 工作](../msbuild/registerassembly-task.md)執行的方式相反。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `UnregisterAssembly` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`Assemblies`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要取消註冊的組件。|  
 |`AssemblyListFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 包含 `RegisterAssembly` 工作與 `UnregisterAssembly` 工作之間狀態的相關資訊。 如此可防止工作嘗試取消註冊無法在 `RegisterAssembly` 工作中註冊的組件。<br /><br /> 如果已指定此參數，則會忽略 `Assemblies` 和 `TypeLibFiles` 參數。|  

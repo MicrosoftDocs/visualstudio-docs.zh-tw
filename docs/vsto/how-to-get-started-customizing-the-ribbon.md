@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14c4ff1e8bf443351f835d74d44b49bbb61e0321
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f164a8f1d1c84725530e7a3afab5e63472ae257e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081563"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>HOW TO：開始自訂功能區
   若要自訂 Microsoft Office 應用程式的功能區，請新增**功能區 （視覺化設計工具）** 或是**功能區 (XML)** 在 Office 專案的項目。
@@ -37,33 +37,33 @@ ms.locfileid: "56640112"
 
     名稱不可包含下列字元：
 
-   -   井字號 （#）
+   - 井字號 （#）
 
-   -   百分比 （%）
+   - 百分比 （%）
 
-   -   連字號 (&)
+   - 連字號 (&)
 
-   -   星號 (*)
+   - 星號 (*)
 
-   -   分隔號 (|)
+   - 分隔號 (|)
 
-   -   反斜線 (\\)
+   - 反斜線 (\\)
 
-   -   冒號 （:）
+   - 冒號 （:）
 
-   -   雙引號 (")
+   - 雙引號 (")
 
-   -   小於 (\<)
+   - 小於 (\<)
 
-   -   大於 (>)
+   - 大於 (>)
 
-   -   問號 (?)
+   - 問號 (?)
 
-   -   反斜線 （/）
+   - 反斜線 （/）
 
-   -   開頭或尾端空格 (' ')
+   - 開頭或尾端空格 (' ')
 
-   -   保留給 Windows 或 DOS，例如 （「 nul 」、 「 aux 」、 「 con 」、 「 com1 」、 「 lpt1 」 等等） 的名稱
+   - 保留給 Windows 或 DOS，例如 （「 nul 」、 「 aux 」、 「 con 」、 「 com1 」、 「 lpt1 」 等等） 的名稱
 
 4. 按一下 [確定] 。
 

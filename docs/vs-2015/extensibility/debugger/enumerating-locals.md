@@ -11,12 +11,12 @@ ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 422a641455d6b706250ca34e3857c3e8d21920ca
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4da225417724f1de39f25a1527bdf980f3d369cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58941382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039195"
 ---
 # <a name="enumerating-locals"></a>列舉區域變數
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ ms.locfileid: "58941382"
   
  這個實作`IDebugProperty2::EnumChildren`會執行下列工作：  
   
-1.  可確保這表示的方法。  
+1. 可確保這表示的方法。  
   
-2.  會使用`guidFilter`來判斷要呼叫的方法的引數[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)物件。 如果`guidFilter`等於：  
+2. 會使用`guidFilter`來判斷要呼叫的方法的引數[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)物件。 如果`guidFilter`等於：  
   
-    1.  `guidFilterLocals`呼叫[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)若要取得[IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md)物件。  
+    1. `guidFilterLocals`呼叫[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)若要取得[IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md)物件。  
   
-    2.  `guidFilterArgs`呼叫[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)若要取得`IEnumDebugFields`物件。  
+    2. `guidFilterArgs`呼叫[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)若要取得`IEnumDebugFields`物件。  
   
-    3.  `guidFilterLocalsPlusArgs`合成，結合了來自結果列舉型別`IDebugMethodField::EnumLocals`和`IDebugMethodField::EnumArguments`。 類別來表示此合成`CEnumMethodField`。  
+    3. `guidFilterLocalsPlusArgs`合成，結合了來自結果列舉型別`IDebugMethodField::EnumLocals`和`IDebugMethodField::EnumArguments`。 類別來表示此合成`CEnumMethodField`。  
   
-3.  具現化類別 (稱為`CEnumPropertyInfo`在此範例中) 可實`IEnumDebugPropertyInfo2`介面，並包含`IEnumDebugFields`物件。  
+3. 具現化類別 (稱為`CEnumPropertyInfo`在此範例中) 可實`IEnumDebugPropertyInfo2`介面，並包含`IEnumDebugFields`物件。  
   
-4.  傳回`IEnumDebugProperty2Info2`介面從`CEnumPropertyInfo`物件。  
+4. 傳回`IEnumDebugProperty2Info2`介面從`CEnumPropertyInfo`物件。  
   
 ## <a name="managed-code"></a>Managed 程式碼  
  此範例示範如何實作`IDebugProperty2::EnumChildren`managed 程式碼中。  

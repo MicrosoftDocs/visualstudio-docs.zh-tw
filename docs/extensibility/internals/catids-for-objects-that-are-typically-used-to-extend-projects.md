@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 734751492a1024507684922b760c647e91f5df15
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2af331bd100cfedd75e6ab1c90ad7a75c5c83961
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643622"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649429"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>Catid 通常用來擴充專案的物件
 下表列出可用來擴充的 Catid`Project`並`ProjectItem`自動化物件[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，和[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]專案。 在 定義這些 Catid *VSLangProj.olb*。
@@ -51,7 +51,7 @@ ms.locfileid: "56643622"
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpFolderBrowseObject>|{914FE278-054A-45DB-BF9E-5F22484CC84C}|
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpReferenceBrowseObject>|{2F0FA3B8-C855-4a4e-95A5-CB45C67D6C27}|
 
-## <a name="c-catids"></a>C + + Catid
+## <a name="c-catids"></a>C++Catid
  下列[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]專案的系統中的型別程式庫中未公開 Catid [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .NET 2003年和一定要包含在您的程式碼中，每當您想要擴充這些專案物件。 中的後續版本中的類型程式庫會包含這些 Catid [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
 
 |名稱|GUID|
@@ -87,7 +87,6 @@ const LPOLESTR CVCReferences::s_wszCATID = L"{FE8299CA-19B6-4f20-ABEA-E1FD9A33B6
 ```
 
  Guid[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]專案類型會顯示下表中。
-
 
 | 專案類型 | GUID |
 | - | - |

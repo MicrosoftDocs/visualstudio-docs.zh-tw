@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aefe5037120636c02b8d3fa73e4ec1fc4bc02a48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 05dd21bbb423d75cd175f13ca945516024db01eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920440"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049838"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>HOW TO：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)
 
 預存程序可以新增至 **O/R 設計工具**，而且可以作為一般 <xref:System.Data.Linq.DataContext> 方法來執行。 它們也可用來覆寫預設 LINQ to SQL 的執行階段行為，執行插入、 更新和刪除時儲存到資料庫的實體類別變更 (例如，在呼叫時，才<xref:System.Data.Linq.DataContext.SubmitChanges%2A>方法)。
 
@@ -23,7 +23,7 @@ ms.locfileid: "55920440"
 > 如果預存程序傳回的值需要送回給用戶端 (例如，在預存程序中計算的值)，請在預存程序中建立輸出參數。 如果您無法使用輸出參數，請撰寫部分方法實作 (Implementation)，而不要依賴 O/R 設計工具產生的覆寫作業。 與資料庫產生的值對應的成員，必須在 INSERT 或 UPDATE 作業成功完成之後設定為適當值。 如需詳細資訊，請參閱 <<c0> [ 開發人員在覆寫預設行為的責任](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior)。
 
 > [!NOTE]
-> LINQ to SQL 會處理資料庫產生的值，會自動針對識別 （自動遞增）、 rowguidcol (資料庫產生的 GUID) 和時間戳記資料行。 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動設定<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>來 **，則為 true**並<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>的下列其中一個： [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)， [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)，或[AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。
+> LINQ to SQL 會處理資料庫產生的值，會自動針對識別 （自動遞增）、 rowguidcol (資料庫產生的 GUID) 和時間戳記資料行。 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動設定<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>來 **，則為 true**和<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>至下列其中之一：[AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)， [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)，或[AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。
 
 ## <a name="configure-the-update-behavior-of-an-entity-class"></a>設定實體類別的更新行為
 
@@ -33,23 +33,23 @@ ms.locfileid: "55920440"
 
 ### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>若要指派預存程序以覆寫實體類別的預設行為
 
-1.  在設計工具中開啟 **LINQ to SQL** 檔案。 (按兩下 [方案總管] 中的 **.dbml** 檔案。)
+1. 在設計工具中開啟 **LINQ to SQL** 檔案。 (按兩下 [方案總管] 中的 **.dbml** 檔案。)
 
-2.  展開 [伺服器總管] 或 [資料庫總管] 中的 [預存程序]，尋找您希望當成實體類別之 Insert、Update 和 (或) Delete 命令使用的預存程序。
+2. 展開 [伺服器總管] 或 [資料庫總管] 中的 [預存程序]，尋找您希望當成實體類別之 Insert、Update 和 (或) Delete 命令使用的預存程序。
 
-3.  將預存程序拖曳至 **O/R 設計工具**。
+3. 將預存程序拖曳至 **O/R 設計工具**。
 
      預存程序會加入至方法窗格做為 <xref:System.Data.Linq.DataContext> 方法。 如需詳細資訊，請參閱 < [DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)。
 
-4.  選取想要使用預存程序執行更新的實體類別。
+4. 選取想要使用預存程序執行更新的實體類別。
 
-5.  在 [屬性] 視窗中，選取要覆寫的命令 (**Insert**、**Update** 或 **Delete**)。
+5. 在 [屬性] 視窗中，選取要覆寫的命令 (**Insert**、**Update** 或 **Delete**)。
 
-6.  按一下 [使用執行階段] 字組旁邊的省略符號 (...)，以開啟 [設定行為] 對話方塊。
+6. 按一下 [使用執行階段] 字組旁邊的省略符號 (...)，以開啟 [設定行為] 對話方塊。
 
-7.  選取 [自訂]。
+7. 選取 [自訂]。
 
-8.  在 [自訂] 清單中，選取所需的預存程序。
+8. 在 [自訂] 清單中，選取所需的預存程序。
 
 9. 檢查 [方法引數] 和 [類別屬性] 清單，以確認 [方法引數] 對應至適當的 [類別屬性]。 對應的原始方法引數 (`Original_<ArgumentName>`) 至原始屬性 (`<PropertyName> (Original)`) 的`Update`和`Delete`命令。
 

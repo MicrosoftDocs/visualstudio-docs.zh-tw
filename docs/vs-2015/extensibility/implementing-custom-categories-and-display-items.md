@@ -11,12 +11,12 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 040c2408f8b0e120996f95e31afdf188d123f76a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f84d66a1dc51baffe743b1f7c16b4bf0ff15ef3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117898"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>實作自訂類別和顯示項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,11 +83,11 @@ VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs
   
 - 透過實作方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>必須提供具有的 IDE:  
   
-  -   清單**顯示的項目**在**類別目錄。**  
+  - 清單**顯示的項目**在**類別目錄。**  
   
-  -   可當地語系化的名稱，如**顯示的項目**。  
+  - 可當地語系化的名稱，如**顯示的項目**。  
   
-  -   顯示針對每個成員的資訊**分類**。  
+  - 顯示針對每個成員的資訊**分類**。  
   
   > [!NOTE]
   >  每隔**分類**必須包含至少一個**顯示項目**。  
@@ -96,11 +96,11 @@ VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs
   
    它的實作提供的 IDE:  
   
-  -   一份**分類**組成特定的群組。  
+  - 一份**分類**組成特定的群組。  
   
-  -   存取的執行個體<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>支援每個**分類**群組內。  
+  - 存取的執行個體<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>支援每個**分類**群組內。  
   
-  -   可當地語系化的群組名稱。  
+  - 可當地語系化的群組名稱。  
   
 - 正在更新 IDE:  
   
@@ -111,13 +111,13 @@ VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs
 ## <a name="to-handle-font-and-color-changes"></a>若要處理的字型和色彩的變更  
  若要正確支援 VSPackage 顯示文字的顏色標示，支援 VSPackage 的顏色標示服務必須回應使用者起始所做的變更透過**字型和色彩**屬性頁面。 VSPackage 的做法是：  
   
--   藉由實作處理 IDE 所產生的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>介面。  
+- 藉由實作處理 IDE 所產生的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>介面。  
   
      IDE 呼叫適當的方法遵循使用者修改**字型和色彩**頁面。 比方說，它會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A>方法如果在選取新的字型。  
   
      -或-  
   
--   輪詢變更的 IDE。  
+- 輪詢變更的 IDE。  
   
      這可透過系統實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面。 主要目的是為了支援持續性，雖然<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>方法可用來取得字型和色彩資訊**顯示項目**。 如需詳細資訊，請參閱 <<c0> [ 存取儲存的字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)。  
   

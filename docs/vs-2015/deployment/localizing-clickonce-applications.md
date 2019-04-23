@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 281ce4ed9f56121ab607aeb49c3ee5b20d5ebe02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039860"
 ---
 # <a name="localizing-clickonce-applications"></a>當地語系化 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58930650"
   
  本主題將說明三種針對其他文化特性部署 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的方法：  
   
--   在單一部署內包含所有附屬組件。  
+- 在單一部署內包含所有附屬組件。  
   
--   為每種文化特性產生一個部署，每個部署內都包含單一附屬組件。  
+- 為每種文化特性產生一個部署，每個部署內都包含單一附屬組件。  
   
--   視需要下載附屬組件。  
+- 視需要下載附屬組件。  
   
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>在部署中包含所有附屬組件  
  若不想發行多個 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署，您可以發行單一 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署，其中包含所有的附屬組件。  
@@ -77,9 +77,9 @@ ms.locfileid: "58930650"
   
  在將應用程式提供給客戶使用之前，您有三種選擇可測試當地語系化的部署：  
   
--   您可以在適合的當地語系化 Windows 版本上執行 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。  
+- 您可以在適合的當地語系化 Windows 版本上執行 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。  
   
--   您可以透過程式設計方式在應用程式內設定 <xref:System.Threading.Thread.CurrentUICulture%2A> 屬性  (這個屬性必須在呼叫 <xref:System.Windows.Forms.Application.Run%2A> 方法之前設定)。  
+- 您可以透過程式設計方式在應用程式內設定 <xref:System.Threading.Thread.CurrentUICulture%2A> 屬性  (這個屬性必須在呼叫 <xref:System.Windows.Forms.Application.Run%2A> 方法之前設定)。  
   
 ## <a name="see-also"></a>另請參閱  
  [\<組件識別 > 項目](../deployment/assemblyidentity-element-clickonce-deployment.md)   

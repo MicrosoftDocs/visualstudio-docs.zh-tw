@@ -17,17 +17,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 26b826b19a14731ba4fbbb11eccee5fc4337c4ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784815"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668908"
 ---
 # <a name="output-window"></a>輸出視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [輸出] 視窗可以顯示整合式開發環境 (IDE) 中各種功能的狀態訊息。 若要開啟 [輸出] 視窗，請在功能表列上選擇 [檢視/輸出]\(或按一下 CTRL+ALT+O)。  
   
 > [!WARNING]
@@ -67,7 +66,7 @@ ms.locfileid: "54784815"
 ## <a name="scrolling-behavior"></a>捲動行為  
  如果您在 [輸出] 視窗中使用自動捲動，然後使用滑鼠或方向鍵進行巡覽，則會停止自動捲動。 若要繼續自動捲動，請按 CTRL+END。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [輸出視窗中的診斷訊息](../../debugger/diagnostic-messages-in-the-output-window.md)   
  [如何：控制輸出視窗](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [編譯和建置](../../ide/compiling-and-building-in-visual-studio.md)   

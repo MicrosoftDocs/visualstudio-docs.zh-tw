@@ -11,12 +11,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 780cbcf5c6e03c5534b7f2125662696344e9cec4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c14fdcc5d58c62eebf993ba336a109adac5b7106
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941369"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053763"
 ---
 # <a name="how-to-use-the-finder-tool"></a>HOW TO：使用搜尋工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "58941369"
   
 ### <a name="to-display-window-properties-or-messages"></a>若要顯示視窗屬性或訊息  
   
-1.  如此會顯示 Spy + + 和目標視窗中，請排列的視窗。  
+1. 如此會顯示 Spy + + 和目標視窗中，請排列的視窗。  
   
-2.  從**Spy**功能表上，選擇**尋找視窗**。  
+2. 從**Spy**功能表上，選擇**尋找視窗**。  
   
      [尋找視窗對話方塊](../debugger/find-window-dialog-box.md)隨即開啟。  
   
-3.  拖曳**搜尋工具**目標範圍內。  
+3. 拖曳**搜尋工具**目標範圍內。  
   
      當您拖曳工具，**尋找視窗** 對話方塊上選取的視窗會顯示詳細資料。  
   
@@ -47,9 +47,9 @@ ms.locfileid: "58941369"
     > [!TIP]
     >  若要減少螢幕混亂的情形，請選取**隱藏 spy + +** 選項。 此選項會隱藏主 Spy + + 視窗中，並且只留下**尋找視窗**對話方塊顯示在其他應用程式之上。 當您按一下 還原 Spy + + 主要視窗**確定**或是**取消**，或清除**隱藏 Spy + +** 選項。  
   
-4.  底下**顯示**，選取**屬性**或是**訊息**。  
+4. 底下**顯示**，選取**屬性**或是**訊息**。  
   
-5.  按 [確定]。  
+5. 按 [確定]。  
   
      如果您選取**屬性**，則[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)隨即開啟。 如果您選取**訊息**，則[訊息檢視](../debugger/messages-view.md)視窗隨即開啟。  
   

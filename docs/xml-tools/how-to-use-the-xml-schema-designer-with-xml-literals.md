@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bb3daab1196e151a4fea57ae120b2ec280e2e23a
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 9e92cbdca3ac2c5c366ec054ba79f2e7324986c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58070213"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067608"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>HOW TO：搭配使用 XML 結構描述設計工具和 XML 常值
 
@@ -23,7 +23,7 @@ ms.locfileid: "58070213"
 
 ## <a name="create-a-new-visual-basic-project"></a>建立新的 Visual Basic 專案
 
-1.  開啟 Visual Studio。
+1. 開啟 Visual Studio。
 
 2. 建立新的 Visual Basic**主控台應用程式**專案，命名為**XMLLiterals**。
 
@@ -31,11 +31,11 @@ ms.locfileid: "58070213"
 
 ## <a name="add-an-existing-xsd-file"></a>將現有 XSD 檔案
 
-1.  在記事本中開啟新的文字檔。 XML 結構描述範例程式碼複製[採購單結構描述](../xml-tools/sample-xsd-file-simple-schema.md)和並貼到檔案中。
+1. 在記事本中開啟新的文字檔。 XML 結構描述範例程式碼複製[採購單結構描述](../xml-tools/sample-xsd-file-simple-schema.md)和並貼到檔案中。
 
-2.  將檔案儲存在某個位置名稱*PurchaseOrderSchema.xsd*。
+2. 將檔案儲存在某個位置名稱*PurchaseOrderSchema.xsd*。
 
-3.  在**方案總管**，以滑鼠右鍵按一下專案名稱，然後選取**新增**，然後選取**現有項目**。 **加入現有項目** 對話方塊隨即出現。 瀏覽至*PurchaseOrderSchema.xsd*檔案，加以選取，然後按一下 **新增**。
+3. 在**方案總管**，以滑鼠右鍵按一下專案名稱，然後選取**新增**，然後選取**現有項目**。 **加入現有項目** 對話方塊隨即出現。 瀏覽至*PurchaseOrderSchema.xsd*檔案，加以選取，然後按一下 **新增**。
 
      XMLLiterals 專案現在會包含兩個檔案：*Module1.vb*並*PurchaseOrderSchema.xsd*。
 

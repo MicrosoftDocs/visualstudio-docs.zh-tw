@@ -12,12 +12,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4ccef9678cbdec3ea048c556434d80ef9b0196e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48f079d29fee5587617f95791bc6de7148741735
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939606"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069385"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>將使用者控制項新增至起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ ms.locfileid: "58939606"
 ## <a name="adding-a-wpf-user-control-to-the-solution"></a>將 WPF 使用者控制項新增至解決方案  
  首先，Windows Presentation Foundation (WPF) 使用者控制項加入起始頁的解決方案。  
   
-1.  建立起始頁使用我們建立中[建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)。  
+1. 建立起始頁使用我們建立中[建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)。  
   
-2.  中**方案總管**，以滑鼠右鍵按一下方案，按一下**新增**，然後按一下 **新專案**。  
+2. 中**方案總管**，以滑鼠右鍵按一下方案，按一下**新增**，然後按一下 **新專案**。  
   
-3.  在左窗格中**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#** 節點，然後按一下**Windows**。 在中間窗格中，選取**WPF 使用者控制項程式庫**。  
+3. 在左窗格中**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#** 節點，然後按一下**Windows**。 在中間窗格中，選取**WPF 使用者控制項程式庫**。  
   
-4.  將控制項`WebUserControl`，然後按一下  **確定**。  
+4. 將控制項`WebUserControl`，然後按一下  **確定**。  
   
 ## <a name="implementing-the-user-control"></a>實作使用者控制項  
  若要實作 WPF 使用者控制項，建置在 XAML 中的使用者介面 (UI)，然後以 C# 或其他.NET 語言撰寫的程式碼後置事件。  
   
 #### <a name="to-write-the-xaml-for-the-user-control"></a>撰寫使用者控制項的 XAML  
   
-1.  開啟使用者控制項的 XAML 檔案。 在 \<方格 > 項目，將下列的資料列定義加入至控制項。  
+1. 開啟使用者控制項的 XAML 檔案。 在 \<方格 > 項目，將下列的資料列定義加入至控制項。  
   
     ```vb  
     <Grid.RowDefinitions>  
@@ -52,7 +52,7 @@ ms.locfileid: "58939606"
   
     ```  
   
-2.  在主要`Grid`項目，新增下列新`Grid`元素，其中包含文字方塊，用於輸入網址並設定新的地址的按鈕。  
+2. 在主要`Grid`項目，新增下列新`Grid`元素，其中包含文字方塊，用於輸入網址並設定新的地址的按鈕。  
   
     ```xml  
     <Grid Grid.Row="0">  
@@ -65,13 +65,13 @@ ms.locfileid: "58939606"
     </Grid>  
     ```  
   
-3.  將下列的畫面格新增至最上層`Grid`元素正後方`Grid`包含按鈕和文字方塊中的項目。  
+3. 將下列的畫面格新增至最上層`Grid`元素正後方`Grid`包含按鈕和文字方塊中的項目。  
   
     ```vb  
     <Frame Grid.Row="1" x:Name="WebFrame" Source="http://www.bing.com" Navigated="WebFrame_Navigated" />  
     ```  
   
-4.  下列範例會顯示已完成的 XAML 使用者控制項。  
+4. 下列範例會顯示已完成的 XAML 使用者控制項。  
   
     ```xml  
     <UserControl x:Class="WebUserControl.UserControl1"  
@@ -102,11 +102,11 @@ ms.locfileid: "58939606"
   
 #### <a name="to-write-the-code-behind-events-for-the-user-control"></a>撰寫使用者控制項的程式碼後置事件  
   
-1.  在 XAML 設計工具中，按兩下**設定的位址**按鈕加入至控制項。  
+1. 在 XAML 設計工具中，按兩下**設定的位址**按鈕加入至控制項。  
   
      UserControl1.cs 檔案會在 程式碼編輯器中開啟。  
   
-2.  填入 SetButton_Click 事件處理常式，如下所示。  
+2. 填入 SetButton_Click 事件處理常式，如下所示。  
   
     ```csharp  
     private void SetButton_Click(object sender, RoutedEventArgs e)  
@@ -124,14 +124,14 @@ ms.locfileid: "58939606"
   
      此程式碼會設定在文字方塊中輸入做為目標的 Web 瀏覽器的網址。 如果位址不是有效的程式碼會擲回錯誤。  
   
-3.  您也必須處理 WebFrame_Navigated 事件：  
+3. 您也必須處理 WebFrame_Navigated 事件：  
   
     ```csharp  
     private void WebFrame_Navigated(object sender, EventArgs e)  
     { }  
     ```  
   
-4.  建置方案。  
+4. 建置方案。  
   
 ## <a name="adding-the-user-control-to-the-start-page"></a>將使用者控制項加入至 [開始] 頁面  
  若要讓此控制項的起始頁專案中，使用起始頁專案檔中，加入新的控制項程式庫的參考。 然後您可以將控制項加入 [開始] 頁面的 XAML 標記。  
@@ -174,15 +174,15 @@ ms.locfileid: "58939606"
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>測試手動建立的自訂起始頁  
   
-1.  將您的 XAML 檔案，並支援文字檔案或標記檔案，為複製 **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\** 資料夾。  
+1. 將您的 XAML 檔案，並支援文字檔案或標記檔案，為複製 **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\** 資料夾。  
   
-2.  如果您的起始頁會參考任何控制項或 Visual Studio 不會安裝的組件中的類型，將組件複製並貼在_Visual Studio 安裝資料夾_**\Common7\IDE\在 PrivateAssemblies\\**。  
+2. 如果您的起始頁會參考任何控制項或 Visual Studio 不會安裝的組件中的類型，將組件複製並貼在_Visual Studio 安裝資料夾_**\Common7\IDE\在 PrivateAssemblies\\**。  
   
-3.  在 Visual Studio 命令提示字元中，輸入**devenv /rootsuffix Exp**開啟 Visual Studio 的實驗執行個體。  
+3. 在 Visual Studio 命令提示字元中，輸入**devenv /rootsuffix Exp**開啟 Visual Studio 的實驗執行個體。  
   
-4.  在實驗執行個體中，移至**工具 / 選項 / 環境 / 啟動**頁面，然後選取您的 XAML 檔案，從**自訂起始頁**下拉式清單。  
+4. 在實驗執行個體中，移至**工具 / 選項 / 環境 / 啟動**頁面，然後選取您的 XAML 檔案，從**自訂起始頁**下拉式清單。  
   
-5.  在 [檢視]  功能表上，按一下 [起始頁] 。  
+5. 在 [檢視]  功能表上，按一下 [起始頁] 。  
   
      應該會顯示您的自訂起始頁。 如果您想要變更任何檔案，您必須關閉實驗執行個體、 進行變更、 複製並貼變更的檔案，然後再重新開啟實驗的執行個體，以檢視所做的變更。  
   

@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6fa22e93a767df599815c87e5809faddb674854b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945302"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063526"
 ---
 # <a name="watch-and-quickwatch-windows"></a>監看式及快速監看式視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,15 +54,15 @@ static void Main(string[] args)
   
  您可以觀察 [快速監看式] 視窗中的變數，如下所示：  
   
-1.  在 `a = a + b;` 行上設定中斷點。  
+1. 在 `a = a + b;` 行上設定中斷點。  
   
-2.  開始偵錯。 執行會在中斷點停止。  
+2. 開始偵錯。 執行會在中斷點停止。  
   
-3.  開啟 [快速監看式]  視窗 (按一下滑鼠右鍵，然後選擇 [偵錯] / [快速監看式] ，或 **SHIFT+F9**)。您可以開啟視窗並將某個變數加入 [運算式]  視窗中，然後按一下 [重新評估] 。 您應該會在 [值]  視窗中看到變數，值為 2。  
+3. 開啟 [快速監看式]  視窗 (按一下滑鼠右鍵，然後選擇 [偵錯] / [快速監看式] ，或 **SHIFT+F9**)。您可以開啟視窗並將某個變數加入 [運算式]  視窗中，然後按一下 [重新評估] 。 您應該會在 [值]  視窗中看到變數，值為 2。  
   
-4.  [快速監看式]  視窗是強制回應對話方塊視窗，因此只要開啟您就無法繼續偵錯。 您可以按一下 [加入監看式]  ，將變數加入 [監看式] 視窗。  
+4. [快速監看式]  視窗是強制回應對話方塊視窗，因此只要開啟您就無法繼續偵錯。 您可以按一下 [加入監看式]  ，將變數加入 [監看式] 視窗。  
   
-5.  關閉 [快速監看式]  視窗。 現在，您就可以一邊觀察 [監看式]  視窗中的值，一邊繼續偵錯。  
+5. 關閉 [快速監看式]  視窗。 現在，您就可以一邊觀察 [監看式]  視窗中的值，一邊繼續偵錯。  
   
 ## <a name="observing-variables-with-the-watch-window"></a>使用 [監看式] 視窗觀察變數  
  您可以使用 [監看式]  視窗觀察多個變數。 例如，如果您有下列的程式碼：  
@@ -112,7 +112,7 @@ static void Main(string[] args)
   
  ![WatchExpressionError](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
-##  <a name="bkmk_refreshWatch"></a> 重新整理已過期的監看值  
+## <a name="bkmk_refreshWatch"></a> 重新整理已過期的監看值  
  在 [監看式]  視窗中評估運算式時，某些情況下，您可能會看到重新整理圖示 (由兩個箭頭圍成的圓形或含有兩條波浪線的圓形)。  例如，如果您關閉屬性評估 ([工具] / [選項] / [偵錯] / [啟用屬性評估及其他隱含函式呼叫])，而且您有下列的程式碼：  
   
 ```csharp  
@@ -143,7 +143,7 @@ static void Main(string[] args)
   
   如果您看到圓形中有類似螺紋的兩條波浪線條的圖示，則運算式是因為潛在的跨執行緒相依性而未受評估。 也就是說，若要評估程式碼，需要暫時執行應用程式中的其他執行緒。 當您處於中斷模式時，通常會停止應用程式中的所有執行緒。 允許暫時執行其他執行緒可能會對程式的狀態造成無法預期的結果，且可能導致偵錯工具忽略中斷點之類的事件，並在這些執行緒中擲回例外狀況。  
   
-##  <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
+## <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
  評估某些運算式可能會變更變數的值，或是影響程式的狀態。 例如，評估下列運算式會變更 `var1`的值：  
   
 ```  
@@ -202,17 +202,17 @@ public class Program
   
  您可以在 [監看式] `Person`**視窗中將參考加入這個** 物件，如下所示：  
   
-1.  當物件已建立一段時間之後，於程式碼中設定中斷點。  
+1. 當物件已建立一段時間之後，於程式碼中設定中斷點。  
   
-2.  開始偵錯，當執行到中斷點停止時，找到 [區域變數]  視窗中的變數，按一下滑鼠右鍵，然後選取 [設定物件 ID] 。  
+2. 開始偵錯，當執行到中斷點停止時，找到 [區域變數]  視窗中的變數，按一下滑鼠右鍵，然後選取 [設定物件 ID] 。  
   
-3.  您應該會看到 [區域變數] **$** 視窗中顯示 **$** 視窗。 這就是物件 ID。  
+3. 您應該會看到 [區域變數] **$** 視窗中顯示 **$** 視窗。 這就是物件 ID。  
   
-4.  將物件 ID 加入 [監看式] 視窗。  
+4. 將物件 ID 加入 [監看式] 視窗。  
   
-5.  在您想要觀察物件的行為位置設定中斷點。  若是上述程式碼，這可能會在 `DoSomething()` 方法中。  
+5. 在您想要觀察物件的行為位置設定中斷點。  若是上述程式碼，這可能會在 `DoSomething()` 方法中。  
   
-6.  繼續偵錯，當執行在 `DoSomething()` 方法中停止時，[監看式]  視窗會顯示 `Person` 物件。  
+6. 繼續偵錯，當執行在 `DoSomething()` 方法中停止時，[監看式]  視窗會顯示 `Person` 物件。  
   
 > [!NOTE]
 >  如果您想要查看物件的屬性，如上述範例中的 `Person.Name` ，則必須啟用屬性評估。  

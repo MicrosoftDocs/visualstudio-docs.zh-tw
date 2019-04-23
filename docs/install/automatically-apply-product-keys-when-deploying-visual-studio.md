@@ -1,7 +1,7 @@
 ---
 title: 自動套用產品金鑰
 description: 了解部署 Visual Studio 時如何以程式設計方式套用產品金鑰。
-ms.date: 08/14/2017
+ms.date: 04/10/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c6df0e09f48460fa88caf9f5657f73d9446bf133
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 51cd23fad1aa6964e0d27c20218a13a824ce318d
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324168"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477563"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>在部署 Visual Studio 時自動套用產品金鑰
 
@@ -25,7 +25,17 @@ ms.locfileid: "58324168"
 
 ## <a name="apply-the-license-after-installation"></a>在安裝後套用授權
 
- 您可以在目標電腦上以無訊息模式使用 `StorePID.exe` 公用程式，利用產品金鑰來啟用已安裝的 Visual Studio 版本。 `StorePID.exe` 是與 Visual Studio 2017 一起安裝的公用程式，其預設位置如下： <br> `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE`
+::: moniker range="vs-2017"
+
+您可以在目標電腦上以無訊息模式使用 `StorePID.exe` 公用程式，利用產品金鑰來啟用已安裝的 Visual Studio 版本。 `StorePID.exe` 是與 Visual Studio 2017 一起安裝的公用程式，其預設位置如下： <br> `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE`
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+您可以在目標電腦上以無訊息模式使用 `StorePID.exe` 公用程式，利用產品金鑰來啟用已安裝的 Visual Studio 版本。 `StorePID.exe` 是與 Visual Studio 2019 一起安裝的公用程式，其預設位置如下： <br> `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE`
+
+::: moniker-end
 
  使用 System Center 代理程式或提升權限的命令提示字元，以較高的權限執行 `StorePID.exe`。 之後，請使用產品金鑰和 Microsoft 產品代碼 (MPC)。
 
@@ -36,11 +46,25 @@ ms.locfileid: "58324168"
  StorePID.exe [product key including the dashes] [MPC]
  ```
 
+::: moniker range="vs-2017"
+
  下列範例示範的命令列可套用 MPC 為 08860、產品金鑰為 `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE` 並採用預設安裝位置的 Visual Studio 2017 Enterprise 授權：
 
  ```cmd
  "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 08860
  ```
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+ 下列範例示範的命令列可套用 MPC 為 09260、產品金鑰為 `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE` 並採用預設安裝位置的 Visual Studio 2019 Enterprise 授權：
+
+ ```cmd
+ "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 09260
+ ```
+::: moniker-end
+
+::: moniker range="vs-2017"
 
  下表列出每個 Visual Studio 版本的 MPC 代碼：
 
@@ -49,6 +73,17 @@ ms.locfileid: "58324168"
 | Visual Studio Enterprise 2017        | 08860 |
 | Visual Studio Professional 2017      | 08862 |
 | Visual Studio Test Professional 2017 | 08866 |
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+| Visual Studio 版本                | MPC   |
+|--------------------------------------|-------|
+| Visual Studio Enterprise 2019        | 09260 |
+| Visual Studio Professional 2019      | 09262 |
+
+::: moniker-end
 
 如果 `StorePID.exe` 成功套用產品金鑰，則會傳回值為 0 的 `%ERRORLEVEL%`。 如果發生錯誤，則會根據錯誤狀況傳回下列其中一個代碼：
 

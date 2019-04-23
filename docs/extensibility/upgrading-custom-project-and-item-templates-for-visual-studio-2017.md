@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: efad4455ab5d3cb0daa16482e303cc82296cc2e4
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323983"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102623"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>升級自訂專案與 Visual Studio 2017 的項目範本
 
@@ -32,36 +32,36 @@ ms.locfileid: "57323983"
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>如何更新 VSIX 擴充功能專案或項目範本
 
-1.  Visual Studio 2017 中開啟的方案。 系統會要求您升級的程式碼。 按一下 [確定] 。
+1. Visual Studio 2017 中開啟的方案。 系統會要求您升級的程式碼。 按一下 [確定] 。
 
-2.  在升級完成之後，您可能需要變更安裝目標版本。 在 VSIX 專案中，開啟 source.extension.vsixmanifest 檔案中，然後選取**安裝目標**] 索引標籤。如果**版本範圍**欄位是 **[14.0]**，按一下 [**編輯**並將它變更為包含 Visual Studio 2017。 例如，您可以將它設定為 **[14.0,15.0]** Visual Studio 2015 或 Visual Studio 2017 中，或安裝延伸模組 **[15.0]** 只是 Visual Studio 2017 中安裝它。
+2. 在升級完成之後，您可能需要變更安裝目標版本。 在 VSIX 專案中，開啟 source.extension.vsixmanifest 檔案中，然後選取**安裝目標**] 索引標籤。如果**版本範圍**欄位是 **[14.0]**，按一下 [**編輯**並將它變更為包含 Visual Studio 2017。 例如，您可以將它設定為 **[14.0,15.0]** Visual Studio 2015 或 Visual Studio 2017 中，或安裝延伸模組 **[15.0]** 只是 Visual Studio 2017 中安裝它。
 
-3.  重新編譯程式碼。
+3. 重新編譯程式碼。
 
-4.  關閉 Visual Studio。
+4. 關閉 Visual Studio。
 
-5.  安裝 VSIX。
+5. 安裝 VSIX。
 
-6.  您可以透過下列方式來測試更新：
+6. 您可以透過下列方式來測試更新：
 
-    1.  掃描變更的檔案是由下列登錄機碼啟用：
+    1. 掃描變更的檔案是由下列登錄機碼啟用：
 
          **reg 新增 hklm\software\microsoft\visualstudio\15.0\VSTemplate /v DisableTemplateScanning /t REG_DWORD /d 1 /reg:32**
 
-    2.  您已新增金鑰之後，請執行**devenv /installvstemplates**。
+    2. 您已新增金鑰之後，請執行**devenv /installvstemplates**。
 
-    3.  重新開啟 Visual Studio。 您應該預期的位置中找到您的範本。
+    3. 重新開啟 Visual Studio。 您應該預期的位置中找到您的範本。
 
     > [!NOTE]
     >  當登錄機碼存在時，沒有可用的 Visual Studio 擴充性專案範本。 您必須刪除登錄機碼 (和重新執行**devenv /installvstemplates**) 來使用它們。
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>其他建議的部署專案和項目範本
 
--   請避免使用壓縮的範本檔案。 壓縮檔案必須為未壓縮，以擷取資源和內容的範本，因此它們會來使用。 相反地，您應該部署專案和項目範本，以加速範本初始化自己目錄下的個別檔案。 VSIX 擴充功能，SDK 建置工作會自動將解壓縮壓縮的任何範本建立 VSIX 檔案時。
+- 請避免使用壓縮的範本檔案。 壓縮檔案必須為未壓縮，以擷取資源和內容的範本，因此它們會來使用。 相反地，您應該部署專案和項目範本，以加速範本初始化自己目錄下的個別檔案。 VSIX 擴充功能，SDK 建置工作會自動將解壓縮壓縮的任何範本建立 VSIX 檔案時。
 
--   避免在使用範本名稱、 描述、 圖示、 封裝/資源識別碼的項目，或為範本探索期間避免不必要的資源組件載入預覽。 相反地，您可以使用當地語系化的資訊清單來建立每個地區設定使用當地語系化的名稱或屬性的範本項目。
+- 避免在使用範本名稱、 描述、 圖示、 封裝/資源識別碼的項目，或為範本探索期間避免不必要的資源組件載入預覽。 相反地，您可以使用當地語系化的資訊清單來建立每個地區設定使用當地語系化的名稱或屬性的範本項目。
 
--   如果您要納入做為檔案項目範本，資訊清單產生過程，可能無法提供您預期的結果。 在此情況下，您必須以手動方式產生的資訊清單加入 VSIX 專案。
+- 如果您要納入做為檔案項目範本，資訊清單產生過程，可能無法提供您預期的結果。 在此情況下，您必須以手動方式產生的資訊清單加入 VSIX 專案。
 
 ## <a name="file-changes-in-project-and-item-templates"></a>專案和項目範本中的檔案變更
 如此您就可以正確地建立新的檔案，我們會示範 Visual Studio 2015 和 Visual Studio 2017 版本的範本檔案，之間差異的點。

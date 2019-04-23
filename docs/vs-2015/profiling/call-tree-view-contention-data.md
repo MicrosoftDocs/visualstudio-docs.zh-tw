@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47db94f7602a42ae9e5142ef27213a06adb8865c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5d12f1a2343018f05f0e741222b844c562b50f5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791649"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048374"
 ---
 # <a name="call-tree-view---contention-data"></a>呼叫樹狀圖檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,14 +28,14 @@ ms.locfileid: "54791649"
 ## <a name="highlighting-the-execution-hot-path"></a>反白顯示執行最忙碌路徑  
  [呼叫樹狀圖] 檢視可以展開並反白顯示建立了大部分爭用的處理序或函式的執行路徑。  
   
--   若要顯示最常使用的路徑，以滑鼠右鍵按一下處理序或函式，然後按一下 [展開最忙碌路徑]。  
+- 若要顯示最常使用的路徑，以滑鼠右鍵按一下處理序或函式，然後按一下 [展開最忙碌路徑]。  
   
 ## <a name="setting-the-call-tree-root-node"></a>設定呼叫樹狀圖根節點  
  執行程式碼剖析期間的每個處理序都會顯示為根節點。 若要設定 [呼叫樹狀圖] 檢視的開始節點，以滑鼠右鍵按一下要設為開始節點的節點，然後按一下 [設定根目錄]。  
   
  設定根節點時，除了所選取節點的樹狀子目錄以外，會從檢視中排除所有其他的項目。 若要將根節點重設回原始節點，在 [呼叫樹狀圖] 檢視上按一下滑鼠右鍵，然後按一下 [重設根目錄]。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**專有封鎖時間**|在此執行路徑中，此函式的執行個體遭到封鎖而無法在執行程式碼剖析期間執行的時間。 此時間不包括函式所呼叫的子函式封鎖時間。|  
 |**專有封鎖時間 %**|執行程式碼剖析期間，屬於此執行路徑中此函式的專有封鎖時間佔所有封鎖時間的百分比。|  

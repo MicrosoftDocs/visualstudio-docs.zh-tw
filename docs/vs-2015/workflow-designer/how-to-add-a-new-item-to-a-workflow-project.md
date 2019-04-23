@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cc194adc37c8f9f0309780a4c8ef6f9a780223b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ecc310896f7b938025d42e06ac5ef0ec8bac3d35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063620"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>HOW TO：將新項目新增至工作流程專案
 在建立工作流程專案後，可以將工作流程活動、設計工具和其他熟悉的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 項目加入至專案。  
@@ -30,17 +30,17 @@ ms.locfileid: "58942110"
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>若要將新的項目加入至工作流程專案  
   
-1.  在 **專案**功能表上，按一下 **加入新項目...**.  
+1. 在 **專案**功能表上，按一下 **加入新項目...**.  
   
      **加入新項目**對話方塊隨即開啟。  
   
-2.  在 **已安裝的範本**窗格中，選取**工作流程**群組。  
+2. 在 **已安裝的範本**窗格中，選取**工作流程**群組。  
   
-3.  選取四個項目的其中一個。 上表列出可用的選擇。  
+3. 選取四個項目的其中一個。 上表列出可用的選擇。  
   
-4.  輸入適當的名稱中的項目**名稱**底部的對話方塊 方塊中。  
+4. 輸入適當的名稱中的項目**名稱**底部的對話方塊 方塊中。  
   
-5.  按一下 **新增**將項目新增至目前的工作流程專案。  
+5. 按一下 **新增**將項目新增至目前的工作流程專案。  
   
 ## <a name="see-also"></a>另請參閱  
  [建立工作流程專案](../workflow-designer/creating-a-workflow-project.md)

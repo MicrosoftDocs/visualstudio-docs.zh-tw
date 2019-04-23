@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c34ac4fdcf50d1fde95c957de6aff4b7f004a2d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1ccd8c399bd92bd98307d44aff913c30390033c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083708"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>HOW TO：針對 ASP.NET 例外狀況進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,14 +38,14 @@ ms.locfileid: "58943602"
   
 ### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>若要使用 Just My Code 啟用 ASP.NET 例外狀況的偵錯  
   
-1.  在 [偵錯] 功能表上，按一下 [例外狀況]。  
+1. 在 [偵錯] 功能表上，按一下 [例外狀況]。  
   
      [例外狀況] 對話方塊隨即出現。  
   
-2.  在 [Common Language Runtime 例外狀況] 資料列中，選取 [擲回] 或 [使用者未處理]。  
+2. 在 [Common Language Runtime 例外狀況] 資料列中，選取 [擲回] 或 [使用者未處理]。  
   
      若要使用 [使用者未處理] 設定，則必須啟用 [Just My Code]。  
   
 ### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>若要使用 ASP.NET 例外狀況處理的最佳作法  
   
--   對於您可以預期會發生例外狀況並知道如何處理的程式碼，請將 `try … catch` 區塊置於此程式碼周圍。 例如，如果應用程式正在呼叫 XML Web Service 或直接在 SQL Server，該程式碼應該在**try...catch**封鎖，因為有許多可能會發生的例外狀況。
+- 對於您可以預期會發生例外狀況並知道如何處理的程式碼，請將 `try … catch` 區塊置於此程式碼周圍。 例如，如果應用程式正在呼叫 XML Web Service 或直接在 SQL Server，該程式碼應該在**try...catch**封鎖，因為有許多可能會發生的例外狀況。

@@ -12,12 +12,12 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cdb411abc52cd6a23b9401166fde1de98231ece
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 769a2243cd43eb085db081b7087731a8135f839b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082213"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>建立 Windows Forms 工具箱控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,26 +32,26 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
   
 #### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>建立使用 Windows Forms 工具箱控制項的延伸模組  
   
-1.  建立 VSIX 專案，名為`MyWinFormsControl`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C# / 擴充性**。  
+1. 建立 VSIX 專案，名為`MyWinFormsControl`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C# / 擴充性**。  
   
-2.  當專案開啟時，新增**Windows Forms 工具箱控制項**名為的項目範本`Counter`。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 在 **加入新項目**對話方塊中，移至**Visual C# / 擴充性**，然後選取**Windows Forms 工具箱控制項**  
+2. 當專案開啟時，新增**Windows Forms 工具箱控制項**名為的項目範本`Counter`。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 在 **加入新項目**對話方塊中，移至**Visual C# / 擴充性**，然後選取**Windows Forms 工具箱控制項**  
   
-3.  這會將使用者控制項，新增`ProvideToolboxControlAttribute`<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>要放置在控制項**工具箱**，和**Microsoft.VisualStudio.ToolboxControl**資產部署的 VSIX 資訊清單中的項目。  
+3. 這會將使用者控制項，新增`ProvideToolboxControlAttribute`<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>要放置在控制項**工具箱**，和**Microsoft.VisualStudio.ToolboxControl**資產部署的 VSIX 資訊清單中的項目。  
   
 ### <a name="building-a-user-interface-for-the-control"></a>建置控制項的使用者介面  
  `Counter`控制項，需要兩個子控制項：<xref:System.Windows.Forms.Label>來顯示目前的計數，和<xref:System.Windows.Forms.Button>計數重設為 0。 沒有任何其他子控制項所需的因為呼叫端會以程式設計方式遞增計數器。  
   
 ##### <a name="to-build-the-user-interface"></a>建置使用者介面  
   
-1.  在 [**方案總管] 中**，連按兩下 Counter.cs 在設計工具中開啟它。  
+1. 在 [**方案總管] 中**，連按兩下 Counter.cs 在設計工具中開啟它。  
   
-2.  移除 [按一下這裡 ！] **按鈕**，預設會包含當您將 Windows Forms 工具箱控制項項目範本。  
+2. 移除 [按一下這裡 ！] **按鈕**，預設會包含當您將 Windows Forms 工具箱控制項項目範本。  
   
-3.  從**工具箱**，拖曳`Label`控制項，然後`Button`其下方的控制項至設計介面。  
+3. 從**工具箱**，拖曳`Label`控制項，然後`Button`其下方的控制項至設計介面。  
   
-4.  調整 150 整體使用者控制項的大小、 50 像素為單位，並調整大小的按鈕控制項為 50，20 像素為單位。  
+4. 調整 150 整體使用者控制項的大小、 50 像素為單位，並調整大小的按鈕控制項為 50，20 像素為單位。  
   
-5.  在 [**屬性**] 視窗中，設定下列值在設計介面上的控制項。  
+5. 在 [**屬性**] 視窗中，設定下列值在設計介面上的控制項。  
   
     |控制項|屬性|值|  
     |-------------|--------------|-----------|  
@@ -64,16 +64,16 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
   
 ##### <a name="to-code-the-user-control"></a>使用者控制項的程式碼  
   
-1.  按兩下表單，以開啟其 load 事件處理常式程式碼視窗中。  
+1. 按兩下表單，以開啟其 load 事件處理常式程式碼視窗中。  
   
-2.  上述事件處理常式方法中，控制項類別中建立要儲存的計數器值的字串和儲存的顯示文字，如下列範例所示的整數。  
+2. 上述事件處理常式方法中，控制項類別中建立要儲存的計數器值的字串和儲存的顯示文字，如下列範例所示的整數。  
   
     ```csharp  
     int currentValue;  
     string displayText;  
     ```  
   
-3.  建立下列公用屬性宣告。  
+3. 建立下列公用屬性宣告。  
   
     ```csharp  
     public int Value {  
@@ -94,7 +94,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
   
      呼叫端可以存取這些屬性，取得或設定計數器的顯示文字，以顯示或隱藏`Reset` 按鈕。 呼叫端可以取得目前的唯讀值`Value`屬性，但它們不能值直接設定。  
   
-4.  將下列程式碼置於`Load`控制項事件。  
+4. 將下列程式碼置於`Load`控制項事件。  
   
     ```csharp  
     private void Counter_Load(object sender, EventArgs e)  
@@ -107,7 +107,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
   
      設定**標籤**中的文字<xref:System.Windows.Forms.UserControl.Load>事件可讓載入前套用其值的目標屬性。 設定**標籤**建構函式中的文字會導致空**標籤**。  
   
-5.  建立下列公用方法，以遞增計數器。  
+5. 建立下列公用方法，以遞增計數器。  
   
     ```csharp  
     public void Increment()  
@@ -119,7 +119,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
   
     ```  
   
-6.  加入宣告`Incremented`控制項類別的事件。  
+6. 加入宣告`Incremented`控制項類別的事件。  
   
     ```csharp  
     public event EventHandler Incremented;  
@@ -127,7 +127,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
   
      呼叫端可以新增處理常式，此事件以回應變更計數器的值。  
   
-7.  返回設計檢視，然後按兩下`Reset`按鈕，以產生`btnReset_Click`事件處理常式，然後在下列範例所示填入。  
+7. 返回設計檢視，然後按兩下`Reset`按鈕，以產生`btnReset_Click`事件處理常式，然後在下列範例所示填入。  
   
     ```csharp  
     private void btnReset_Click(object sender, EventArgs e)  
@@ -138,7 +138,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
   
     ```  
   
-8.  在類別定義正上方的 `ProvideToolboxControl` 屬性宣告中，將第一個參數的值從 `"MyWinFormsControl.Counter"` 變更為 `"General"`。 這會設定主控 [工具箱] 控制項的項目群組名稱。  
+8. 在類別定義正上方的 `ProvideToolboxControl` 屬性宣告中，將第一個參數的值從 `"MyWinFormsControl.Counter"` 變更為 `"General"`。 這會設定主控 [工具箱] 控制項的項目群組名稱。  
   
      下列範例會顯示 `ProvideToolboxControl` 屬性和調整過的類別定義。  
   
@@ -152,23 +152,23 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
   
 ##### <a name="to-test-the-control"></a>測試控制項  
   
-1.  按 F5。  
+1. 按 F5。  
   
      這會建置專案，並開啟第二個安裝了控制項的 Visual Studio 的實驗性執行個體。  
   
-2.  在 Visual Studio 的實驗性執行個體，建立**Windows Forms 應用程式**專案。  
+2. 在 Visual Studio 的實驗性執行個體，建立**Windows Forms 應用程式**專案。  
   
-3.  在 [**方案總管] 中**，連按兩下以開啟設計工具中，如果它尚未開啟 Form1.cs。  
+3. 在 [**方案總管] 中**，連按兩下以開啟設計工具中，如果它尚未開啟 Form1.cs。  
   
-4.  在 **工具箱**，則`Counter`控制項應該顯示在**一般**一節。  
+4. 在 **工具箱**，則`Counter`控制項應該顯示在**一般**一節。  
   
-5.  拖曳`Counter`控制項至表單，然後加以選取。 `Value`， `Message`，並`ShowReset`屬性會顯示在**屬性**視窗中的，以及繼承自屬性<xref:System.Windows.Forms.UserControl>。  
+5. 拖曳`Counter`控制項至表單，然後加以選取。 `Value`， `Message`，並`ShowReset`屬性會顯示在**屬性**視窗中的，以及繼承自屬性<xref:System.Windows.Forms.UserControl>。  
   
-6.  將 `Message` 屬性設定為 `Count:`。  
+6. 將 `Message` 屬性設定為 `Count:`。  
   
-7.  拖曳<xref:System.Windows.Forms.Button>控制項至表單，並再設定名稱和文字屬性的按鈕`Test`。  
+7. 拖曳<xref:System.Windows.Forms.Button>控制項至表單，並再設定名稱和文字屬性的按鈕`Test`。  
   
-8.  按兩下 button 以開啟 Form1.cs 程式碼檢視中，並建立 click 處理常式。  
+8. 按兩下 button 以開啟 Form1.cs 程式碼檢視中，並建立 click 處理常式。  
   
 9. 在 click 處理常式呼叫`counter1.Increment()`。  
   

@@ -8,12 +8,12 @@ ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 796d5f3f233310157b0784e213b81237e767055b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da992ebdb5c3d4e0381cdc388dcf6ad5d2af66c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943590"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091144"
 ---
 # <a name="installing-the-visual-studio-sdk"></a>安裝 Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,26 +26,26 @@ ms.locfileid: "58943590"
 > [!NOTE]
 >  在安裝可執行檔，稱為 Visual Studio SDK **Visual Studio Extensibility Tools**。  
   
-1.  啟動 Visual Studio 2015 安裝。 您可以安裝 Visual Studio Express 以外的任何版本。  
+1. 啟動 Visual Studio 2015 安裝。 您可以安裝 Visual Studio Express 以外的任何版本。  
   
-2.  在第一個畫面上，選取**自訂**，而非**預設**。 按 [ **下一步**]。  
+2. 在第一個畫面上，選取**自訂**，而非**預設**。 按 [ **下一步**]。  
   
-3.  您應該會看到樹狀檢視的自訂功能。 開啟**常見工具**。 您應該會看到**Visual Studio Extensibility Tools** 。  
+3. 您應該會看到樹狀檢視的自訂功能。 開啟**常見工具**。 您應該會看到**Visual Studio Extensibility Tools** 。  
   
      ![VSSDKInstall](../extensibility/media/vssdkinstall.png "VSSDKInstall")  
   
-4.  請檢查**Visual Studio Extensibility Tools** ，然後按一下**下一步**並繼續安裝。  
+4. 請檢查**Visual Studio Extensibility Tools** ，然後按一下**下一步**並繼續安裝。  
   
 ## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>安裝 Visual Studio 之後安裝 Visual Studio SDK  
  如果您決定要安裝 Visual Studio SDK，完成您的 Visual Studio 安裝之後，您應該遵循下列程序：  
   
-1.  移至**控制台中 / 程式 / 程式和功能**，然後尋找**Visual Studio 2015**。 您可以安裝適用於 Visual Studio 2015 Express 以外的任何版本的 Visual Studio SDK。  
+1. 移至**控制台中 / 程式 / 程式和功能**，然後尋找**Visual Studio 2015**。 您可以安裝適用於 Visual Studio 2015 Express 以外的任何版本的 Visual Studio SDK。  
   
-2.  以滑鼠右鍵按一下**Visual Studio 2015**，然後按一下**變更**。 您應該會看到 [安裝] 頁面。  
+2. 以滑鼠右鍵按一下**Visual Studio 2015**，然後按一下**變更**。 您應該會看到 [安裝] 頁面。  
   
-3.  遵循相同的程序，如**Visual Studio 安裝的過程中安裝 Visual Studio SDK**上方。  
+3. 遵循相同的程序，如**Visual Studio 安裝的過程中安裝 Visual Studio SDK**上方。  
   
-4.  按一下  **Visual Studio Extensibility Tools**安裝 Visual Studio SDK 的連結。  
+4. 按一下  **Visual Studio Extensibility Tools**安裝 Visual Studio SDK 的連結。  
   
 ## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>從方案安裝 Visual Studio SDK  
  如果您使用的擴充性專案中開啟的方案，但是未先安裝的 VSSDK，將提示您的 [方案總管] 上方反白顯示的資訊列。 它看起來應該像下面這樣：  

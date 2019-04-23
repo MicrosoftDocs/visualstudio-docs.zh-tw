@@ -10,12 +10,12 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 589e392530238249eefb789170f4f986b24a8551
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ae47942e9b686ac02623e4b3f2d0681babf879f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940655"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084024"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>編輯器中的 Managed Extensibility Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,25 +84,25 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
   
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>若要使用的 MEF 元件組件的編輯器功能  
   
-1.  將參考加入 System.Composition.ComponentModel.dll，也就是在全域組件快取 (GAC)，以及編輯器的組件。  
+1. 將參考加入 System.Composition.ComponentModel.dll，也就是在全域組件快取 (GAC)，以及編輯器的組件。  
   
-2.  加入相關 using 陳述式。  
+2. 加入相關 using 陳述式。  
   
     ```  
     using System.ComponentModel.Composition;  
     using Microsoft.VisualStudio.Text;  
     ```  
   
-3.  新增`[Import]`屬性至您的服務介面，如下所示。  
+3. 新增`[Import]`屬性至您的服務介面，如下所示。  
   
     ```  
     [Import]  
     ITextBufferFactoryService textBufferService;  
     ```  
   
-4.  當您取得的服務時，您可以使用其元件的任何一個。  
+4. 當您取得的服務時，您可以使用其元件的任何一個。  
   
-5.  當您編譯您的組件中，然後再將它放在...您的 Visual Studio 安裝 \Common7\IDE\Components\ 資料夾。  
+5. 當您編譯您的組件中，然後再將它放在...您的 Visual Studio 安裝 \Common7\IDE\Components\ 資料夾。  
   
 ## <a name="see-also"></a>另請參閱  
  [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)

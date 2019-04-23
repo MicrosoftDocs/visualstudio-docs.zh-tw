@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b47db7802a6e174d8efff054fe9a6454fa6ef73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 06844e8723cc118d6cc10c44c5c788e48c206684
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643674"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101024"
 ---
 # <a name="properties-window-overview"></a>屬性視窗概觀
 **屬性** 視窗來顯示在 windows 中可用的兩個主要類型中選取的物件的屬性[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 這兩種 windows 類型如下：
 
--   例如 方案總管、 類別檢視 和 物件瀏覽器工具視窗
+- 例如 方案總管、 類別檢視 和 物件瀏覽器工具視窗
 
--   包含這類編輯器和 forms 設計工具，以及 XML 編輯器、 HTML 編輯器的設計工具的文件視窗
+- 包含這類編輯器和 forms 設計工具，以及 XML 編輯器、 HTML 編輯器的設計工具的文件視窗
 
 ## <a name="using-the-properties-window"></a>使用 [屬性] 視窗
  **屬性**視窗會顯示單一或多個選取的項目屬性。 如果選取多個項目，則會顯示所有選取的物件的所有屬性的交集。

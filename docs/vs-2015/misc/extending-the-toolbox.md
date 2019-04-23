@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
-ms.openlocfilehash: a1cf66baf73fe4a04dcb21b0c7ac7609214bea20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54026b770a0de7780e950a3e30e649cb67ce1d3b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943328"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088700"
 ---
 # <a name="extending-the-toolbox"></a>擴充工具箱
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具箱** 提供物件集合，以透過 IDE 的拖放機制，來為編輯器和設計工具提供功能。  
   
  VSPackage 在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具箱**方面有兩種基本方式：  
   
--   VSPackage 可以將新的資料項目和控制項加入 **工具箱**中。  
+- VSPackage 可以將新的資料項目和控制項加入 **工具箱**中。  
   
--   VSPackage 可以是現有 **工具箱** 功能的目標或取用者，並支援拖放作業及設定 **工具箱**的外觀。  
+- VSPackage 可以是現有 **工具箱** 功能的目標或取用者，並支援拖放作業及設定 **工具箱**的外觀。  
   
 ## <a name="in-this-section"></a>本節內容  
  [如何：建立使用 Windows Forms 工具箱控制項](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md)  

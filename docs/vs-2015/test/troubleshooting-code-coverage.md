@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5af016c0ef1e38a4ae7ca42d79ed2030821d0369
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797362"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117404"
 ---
 # <a name="troubleshooting-code-coverage"></a>針對程式碼涵蓋範圍進行疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
 ### <a name="youre-looking-at-a-previous-result"></a>您看到的是之前的結果  
  當您修改並重新執行測試時，可能仍會顯示先前的程式碼涵蓋範圍結果，包括在先前執行時著色的程式碼。  
   
-1.  執行 [分析程式碼涵蓋範圍]。  
+1. 執行 [分析程式碼涵蓋範圍]。  
   
-2.  請務必在 [程式碼涵蓋範圍] 結果視窗中選取最新的一組結果。  
+2. 請務必在 [程式碼涵蓋範圍] 結果視窗中選取最新的一組結果。  
   
 ### <a name="pdb-symbol-files-are-unavailable"></a>.pdb (符號) 檔案無法使用  
  分析  
@@ -107,17 +107,17 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
  解決方式  
  可能發生兩種類型的錯誤：  
   
--   **XML 錯誤**  
+- **XML 錯誤**  
   
      在 Visual Studio XML 編輯器中開啟 .runsettings 檔案。 尋找錯誤。  
   
--   **規則運算式錯誤**  
+- **規則運算式錯誤**  
   
      檔案中的每個字串都是規則運算式。 檢閱每一個錯誤，特別要尋找：  
   
-    -   不對稱的括號 (...) 或未逸出的括號 \\(...\\)。 如果要比對搜尋字串中的括號，必須逸出該括號。 例如，比對函式的用法： `.*MyFunction\(double\)`  
+    - 不對稱的括號 (...) 或未逸出的括號 \\(...\\)。 如果要比對搜尋字串中的括號，必須逸出該括號。 例如，比對函式的用法： `.*MyFunction\(double\)`  
   
-    -   運算式開頭的星號或加號。 若要比對任何字元字串，請在星號後面加上點：`.*`  
+    - 運算式開頭的星號或加號。 若要比對任何字元字串，請在星號後面加上點：`.*`  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>自訂 .runsettings 檔包含不正確的排除項  
  分析  
@@ -145,5 +145,5 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
  解決方式  
  無。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

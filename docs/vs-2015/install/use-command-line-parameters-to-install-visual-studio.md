@@ -14,32 +14,33 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: cd61d03b5639038612e305697f4245e582ee3efe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a3fe0233f08f33535be4b02cc06c29d919d75169
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794035"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651159"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令列參數來安裝 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 最新文件，請參閱 <<c0> [ 使用命令列參數安裝 Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/use-command-line-parameters-to-install-visual-studio)。
+如需 Visual Studio 的最新文件，請參閱 <<c0> [ 使用命令列參數安裝 Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)。
 
 當您從命令提示字元安裝 Visual Studio 2015 時，可以使用下列命令列參數 (parameter，也稱為 switch)。
 
 > [!NOTE]
->  請確定您使用實際的安裝程式並不是啟動載入器檔案。 例如，請確定您使用**`vs_enterprise.exe`** 而不是 vs_enterprise_*GUID*.exe。 您可以下載的安裝程式，從[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)。
+> 請確定您使用實際的安裝程式並不是啟動載入器檔案。 例如，請確定您使用**`vs_enterprise.exe`** 而不是 vs_enterprise_*GUID*.exe。 您可以下載的安裝程式，從[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)。
 
 ## <a name="list-of-command-line-parameters"></a>命令列參數清單
- Visual Studio 命令列參數不區分大小寫。
+
+Visual Studio 命令列參數不區分大小寫。
 
 |參數|描述|
 |---------------|-----------------|
 |**/?**<br /><br /> **/help**<br /><br /> **/h**|顯示命令列參數。|
 |**/AddRemoveFeatures**|指定要加入哪些功能或從已安裝的產品移除哪些功能。|
 |**/AdminFile** *AdminDeployment.xml*|使用您指定用於管理安裝的資料檔案，安裝 Visual Studio。|
-|**/ChainingPackage** *BundleName*|指定哪一個套件組合要鏈結這個套件組合。 這也可用來指定客戶經驗改進的群組。|
+|**/ChainingPackage** *BundleName*|指定哪一個搭售方案要鏈結這個搭售方案。 這也可用來指定客戶經驗改進的群組。|
 |**/CreateAdminFile \<filename>**|指定要搭配 /AdminFile 使用之控制檔的建立位置|
 |**/CustomInstallPath** *InstallationDirectory*|將所有可重定目標的封裝安裝在您指定的目錄中。|
 |**/ForceRestart**|一律在安裝之後重新啟動電腦。|
@@ -59,7 +60,8 @@ ms.locfileid: "54794035"
 |**/repair**|修復 Visual Studio。|
 |**/SuppressRefreshPrompt**|不要在安裝精靈中顯示可用更新對話方塊，如此一來，安裝精靈將會自動接受任何必要或建議的更新版本。|
 |**/u**<br /><br /> **/Uninstall**|解除安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
-|**/Uninstall /Force**<br /><br /> **/u /force**|解除安裝 Visual Studio 以及與其他產品共用的所有功能。 **警告：** 如果您使用這個參數時，安裝在同一部電腦的其他產品可能會停止運作正常。|
+|**/Uninstall /Force**<br /><br /> **/u /force**|解除安裝 Visual Studio 以及與其他產品共用的所有功能。 **警告：** 如果您使用這個參數，在同一部電腦上安裝的其他產品可能會無法正確運作。|
 
-## <a name="see-also"></a>請參閱
- [Visual Studio 系統管理員指南](../install/visual-studio-administrator-guide.md)
+## <a name="see-also"></a>另請參閱
+
+- [Visual Studio 系統管理員指南](../install/visual-studio-administrator-guide.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0dd83a2b2d613d6d9ef73097bca4d2f9f1c6cd39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930825"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072249"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>在程式碼分析規則集編輯器中工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58930825"
   
  編輯器會顯示在樹狀結構中，群組規則的規則設定您所指定欄位的規則。 若要新增或移除的規則集的規則，執行下列一或多個下列步驟：  
   
--   選取或清除核取方塊以新增或移除群組中的所有規則的 [群組] 節點。 當您選取的群組時，會設定所有的規則**警告**動作。  
+- 選取或清除核取方塊以新增或移除群組中的所有規則的 [群組] 節點。 當您選取的群組時，會設定所有的規則**警告**動作。  
   
--   按一下 **動作**欄位群組，然後指定要套用至群組中的所有規則的動作。  
+- 按一下 **動作**欄位群組，然後指定要套用至群組中的所有規則的動作。  
   
--   選取或清除個別規則的核取方塊。 當您選取的規則核取方塊時，則會將規則設定為警告的動作。  
+- 選取或清除個別規則的核取方塊。 當您選取的規則核取方塊時，則會將規則設定為警告的動作。  
   
 ## <a name="rule-set-editor-toolbar"></a>規則集編輯器工具列  
  您可以使用規則集編輯器的工具列來分組、 篩選和搜尋規則集方格所顯示的資料。  
@@ -73,6 +73,6 @@ ms.locfileid: "58930825"
 ## <a name="sorting-and-filtering-rule-sets"></a>排序和篩選規則集  
  從規則集方格的資料行標頭，您可以排序及篩選的欄位值的規則。  
   
--   若要排序的規則集清單，請按一下資料行標頭，您想要排序的欄位。 如果規則集在一起，就是個別排序每個群組。  
+- 若要排序的規則集清單，請按一下資料行標頭，您想要排序的欄位。 如果規則集在一起，就是個別排序每個群組。  
   
--   若要篩選的欄位值的規則集，請按一下資料行標頭，您想要篩選的欄位上的 [篩選] 按鈕。 選取您想要顯示的值的核取方塊，清除核取方塊，您想要隱藏的值。
+- 若要篩選的欄位值的規則集，請按一下資料行標頭，您想要篩選的欄位上的 [篩選] 按鈕。 選取您想要顯示的值的核取方塊，清除核取方塊，您想要隱藏的值。

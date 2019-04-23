@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 765072cea77a23ca63a176555832bbc95f0ab4b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab2cb4562f816b254b658cfdc152dc38033fbe03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950028"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104537"
 ---
 # <a name="error-messages-in-workflow-designer"></a>工作流程設計工具的錯誤訊息
 
@@ -27,13 +27,13 @@ ms.locfileid: "55950028"
 
 在下列情況下，會發生在工作流程設計工具中的錯誤：
 
-1.  此為運算式中的錯誤。
+1. 此為運算式中的錯誤。
 
-2.  未滿足活動的驗證條件約束。
+2. 未滿足活動的驗證條件約束。
 
-3.  XAML 檔中發生導致活動無法載入的錯誤。
+3. XAML 檔中發生導致活動無法載入的錯誤。
 
-4.  XAML 檔中發生導致工作流程無法載入的錯誤。
+4. XAML 檔中發生導致工作流程無法載入的錯誤。
 
 無效的運算式與不滿足驗證條件限制並不會造成工作流程建置失敗。 工作流程會成功建置，但是在執行階段擲回 <xref:System.Activities.InvalidWorkflowException>。 如果 XAML 中有錯誤，建置就會失敗。
 

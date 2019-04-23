@@ -14,12 +14,12 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2bee266cb917f1e16bdebbdad52f2cc30055835e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945422"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044602"
 ---
 # <a name="running-document-table"></a>執行中的文件資料表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ IDE 會維護呼叫執行的文件資料表 (RDT) 的內部結構中所有目前
   
  IDE 也使用 RDT resurface （提到最上層） 開啟的文件，如果使用者要求該文件。 如需詳細資訊，請參閱 <<c0> [ 使用 開啟檔案命令顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)。 若要判斷檔案是否為開啟 RDT 中，執行下列任一種。  
   
--   若要找出項目是否已開啟的文件 moniker （也就是完整的文件路徑） 的查詢。  
+- 若要找出項目是否已開啟的文件 moniker （也就是完整的文件路徑） 的查詢。  
   
--   使用階層或項目識別碼來要求專案系統的完整文件路徑，並接著 RDT 中查閱項目。  
+- 使用階層或項目識別碼來要求專案系統的完整文件路徑，並接著 RDT 中查閱項目。  
   
 ## <a name="see-also"></a>另請參閱  
  [RDT_ReadLock 使用方式](../../extensibility/internals/rdt-readlock-usage.md)   

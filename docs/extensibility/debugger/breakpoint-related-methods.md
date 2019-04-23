@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd40ac13cf00db2903f9c9dca7cf154572e2b81
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c1781e6aab84bfcdc665ef0d779130decc9c6421
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711172"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091950"
 ---
 # <a name="breakpoint-related-methods"></a>中斷點相關的方法
 偵錯引擎 (DE) 必須支援的設定中斷點。 Visual Studio 偵錯支援下列類型的中斷點：
 
--   繫結
+- 繫結
 
      透過 UI 要求及成功繫結到指定的程式碼的位置
 
--   擱置
+- 擱置
 
      透過 UI，但無法尚未繫結至實際的指示要求
 

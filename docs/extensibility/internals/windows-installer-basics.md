@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2712c8d52ffd569f7d422708de612ac322045f8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066256"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本概念
 Windows 安裝程式安裝和解除安裝應用程式或使用者的電腦上的軟體產品執行這些工作單位，稱為 Windows 安裝程式元件 （有時稱為 WICs 或只是元件）。 GUID 會識別每個 WIC，也就是安裝和參考計數來設定使用 Windows 安裝程式的基本單位。
@@ -57,15 +57,15 @@ Windows 安裝程式安裝和解除安裝應用程式或使用者的電腦上的
 
 #### <a name="installer-enforced-rules"></a>安裝程式強制執行規則
 
--   指定的元件中的所有檔案必須都安裝到相同的目錄。 相反地，安裝在不同的資料夾的檔案必須屬於不同的元件。
+- 指定的元件中的所有檔案必須都安裝到相同的目錄。 相反地，安裝在不同的資料夾的檔案必須屬於不同的元件。
 
--   可以有只有一個機碼的路徑，每個元件。 機碼路徑是只是檔案或登錄機碼，表示整個元件。
+- 可以有只有一個機碼的路徑，每個元件。 機碼路徑是只是檔案或登錄機碼，表示整個元件。
 
 #### <a name="component-provider-responsibilities"></a>元件提供者的責任
 
--   分開可能在後續版本中提供的任何兩個資源應該位於個別的元件。 資源應該分組到同一個元件，只有當您確定這些資源將永遠不會分開的提供時，才。 事實上，我們建議所有的主要資源 (例如 Dll) 一律存在於個別 WICs。 如需詳細資訊，請參閱 <<c0> [ 定義安裝程式元件](/windows/desktop/Msi/defining-installer-components)。
+- 分開可能在後續版本中提供的任何兩個資源應該位於個別的元件。 資源應該分組到同一個元件，只有當您確定這些資源將永遠不會分開的提供時，才。 事實上，我們建議所有的主要資源 (例如 Dll) 一律存在於個別 WICs。 如需詳細資訊，請參閱 <<c0> [ 定義安裝程式元件](/windows/desktop/Msi/defining-installer-components)。
 
--   沒有建立版本的資源應該曾經出貨中一個以上的 WIC。
+- 沒有建立版本的資源應該曾經出貨中一個以上的 WIC。
 
 ## <a name="see-also"></a>另請參閱
 - [元件規則已中斷，會發生什麼事？](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

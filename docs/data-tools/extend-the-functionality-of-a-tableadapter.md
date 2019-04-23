@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6df50eb1f8a4d722a0140fd37a6ff0c0d7474a39
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: d0ec905670c72ff7c2c5f5d94c9f5189241daebb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100010"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>擴充 TableAdapter 的功能
 
@@ -32,19 +32,19 @@ ms.locfileid: "55955267"
 
 ## <a name="locate-tableadapters-in-code"></a>在程式碼中找出 Tableadapter
 
-雖然 TableAdapters 的設計是以**Dataset 設計工具**，產生的 TableAdapter 類別不是巢狀的類別的<xref:System.Data.DataSet>。 Tableadapter 都位於與 TableAdapter 相關聯的資料集的名稱為基礎的命名空間。 例如，如果您的應用程式包含名為資料集`HRDataSet`，將位於 TableAdapters`HRDataSetTableAdapters`命名空間。 (命名慣例會遵循這個模式： *DatasetName* + `TableAdapters`)。
+雖然 TableAdapters 的設計是以**Dataset 設計工具**，產生的 TableAdapter 類別不是巢狀的類別的<xref:System.Data.DataSet>。 Tableadapter 都位於與 TableAdapter 相關聯的資料集的名稱為基礎的命名空間。 例如，如果您的應用程式包含名為資料集`HRDataSet`，將位於 TableAdapters`HRDataSetTableAdapters`命名空間。 (命名慣例會遵循這個模式：*DatasetName* + `TableAdapters`)。
 
 下列範例假設名為 TableAdapter`CustomersTableAdapter`位於與專案`NorthwindDataSet`。
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>若要建立 TableAdapter 部分類別
 
-1.  將新類別加入專案，方法是前往**專案**功能表，然後選取**加入類別**。
+1. 將新類別加入專案，方法是前往**專案**功能表，然後選取**加入類別**。
 
-2.  將類別命名為 `CustomersTableAdapterExtended` 。
+2. 將類別命名為 `CustomersTableAdapterExtended` 。
 
-3.  選取 [新增]。
+3. 選取 [新增]。
 
-4.  程式碼取代為您的專案的部分類別名稱與正確的命名空間，如下所示：
+4. 程式碼取代為您的專案的部分類別名稱與正確的命名空間，如下所示：
 
      [!code-csharp[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]

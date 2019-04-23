@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3087353b4d8875d1933c285343c3f1460c0e276
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba45ba733f5447523b6793d4f5e2946c3507c82e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940752"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098685"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>分層圖擴充功能疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58940752"
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>出現的是舊版的驗證結果，或沒有呼叫我的驗證方法。  
   
-1.  在實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，請在**建置**功能表上，按一下 **清除方案**。 這會清除上一次驗證分析的快取結果。  
+1. 在實驗執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，請在**建置**功能表上，按一下 **清除方案**。 這會清除上一次驗證分析的快取結果。  
   
-2.  請確定模型中的圖層與程式碼項目相關聯，而且模型中至少有一個相依性連結。 如果沒有要驗證的項目，就不會叫用驗證。  
+2. 請確定模型中的圖層與程式碼項目相關聯，而且模型中至少有一個相依性連結。 如果沒有要驗證的項目，就不會叫用驗證。  
   
-3.  一般的中斷點可能不會在驗證方法中運作，因為它是在不同的處理序中執行。 如果想要逐步執行您的方法，您必須插入對 `System.Diagnostics.Debugger.Launch()` 的呼叫。  
+3. 一般的中斷點可能不會在驗證方法中運作，因為它是在不同的處理序中執行。 如果想要逐步執行您的方法，您必須插入對 `System.Diagnostics.Debugger.Launch()` 的呼叫。  
   
-4.  在  **source.extension.vsixmanifest**在圖層驗證專案中，確定您已新增兩者**MEF 元件**項目和**自訂延伸模組類型**項目底下**內容**。  
+4. 在  **source.extension.vsixmanifest**在圖層驗證專案中，確定您已新增兩者**MEF 元件**項目和**自訂延伸模組類型**項目底下**內容**。  
   
 ## <a name="see-also"></a>另請參閱  
  [擴充分層圖](../modeling/extend-layer-diagrams.md)

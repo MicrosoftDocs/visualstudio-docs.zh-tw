@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee56c4588bbbd3ec5cfca03bbd18c6dec1732fbf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940673"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116598"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>封裝欄位重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58940673"
   
 ### <a name="to-create-a-property-from-a-field"></a>從欄位建立屬性  
   
-1.  建立名為 `EncapsulateFieldExample` 的主控台應用程式，再以下列程式碼取代 `Program`。  
+1. 建立名為 `EncapsulateFieldExample` 的主控台應用程式，再以下列程式碼取代 `Program`。  
   
     ```csharp  
     class Square  
@@ -58,13 +58,13 @@ ms.locfileid: "58940673"
     }  
     ```  
   
-2.  在 [程式碼編輯器](../ide/writing-code-in-the-code-and-text-editor.md)，將游標放在宣告中，您想要封裝的欄位名稱。 在下面的範例中，將游標放在 `width` 這個字上：  
+2. 在 [程式碼編輯器](../ide/writing-code-in-the-code-and-text-editor.md)，將游標放在宣告中，您想要封裝的欄位名稱。 在下面的範例中，將游標放在 `width` 這個字上：  
   
     ```csharp  
     public int width, height;  
     ```  
   
-3.  在 **重構**功能表上，按一下**封裝欄位**。  
+3. 在 **重構**功能表上，按一下**封裝欄位**。  
   
      **封裝欄位** 對話方塊隨即出現。  
   
@@ -72,11 +72,11 @@ ms.locfileid: "58940673"
   
      您也可以以滑鼠右鍵按一下資料指標，指向**重構**，然後按一下**封裝欄位**以顯示**封裝欄位** 對話方塊。  
   
-4.  指定設定。  
+4. 指定設定。  
   
-5.  按 ENTER 鍵，或按一下**確定** 按鈕。  
+5. 按 ENTER 鍵，或按一下**確定** 按鈕。  
   
-6.  如果您選取**預覽參考變更**選項，則**預覽參考變更**視窗隨即開啟。 按一下 [**套用**] 按鈕。  
+6. 如果您選取**預覽參考變更**選項，則**預覽參考變更**視窗隨即開啟。 按一下 [**套用**] 按鈕。  
   
      您的原始程式檔中會顯示下列 `get` 和 `set` 存取子程式碼：  
   

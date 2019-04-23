@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2002b79b156ff3eaf537d71b6131da6832fabdb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e44a2c9b5fab120432f412e7c70f35c8e1ecafd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941544"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077468"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>HOW TO：變更 DataContext 方法的傳回型別 (O/R 設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 <xref:System.Data.Linq.DataContext> 方法 (根據預存程序 (Stored Procedure) 或函式所建立) 的傳回型別，會隨預存程序或函式在 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中的置放位置而不同。 如果將項目直接放入現有的實體類別，且預存程序或函式所傳回資料的結構描述符合實體類別的型態，則建立的 <xref:System.Data.Linq.DataContext> 方法會具有該實體類別的傳回型別。 如果您將項目放入 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]的空白區域，則建立的 <xref:System.Data.Linq.DataContext> 方法會傳回自動產生的型別。 您可以在將 <xref:System.Data.Linq.DataContext> 方法加入至方法窗格後，變更方法的傳回型別。 若要檢查或變更 <xref:System.Data.Linq.DataContext> 方法的傳回型別，請選取該方法，然後按一下 [屬性] 視窗中的 [傳回型別] 屬性。  
   
 > [!NOTE]
@@ -29,19 +28,19 @@ ms.locfileid: "58941544"
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>若要將 DataContext 方法的傳回型別從自動產生的型別變更為實體類別  
   
-1.  選取方法窗格中的 <xref:System.Data.Linq.DataContext> 方法。  
+1. 選取方法窗格中的 <xref:System.Data.Linq.DataContext> 方法。  
   
-2.  選取 [屬性] 視窗中的 [傳回型別]，然後在 [傳回型別] 清單中選取可用的實體類別。 如果所需的實體類別不在清單中，將它新增至或建立在[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]將它新增至清單。  
+2. 選取 [屬性] 視窗中的 [傳回型別]，然後在 [傳回型別] 清單中選取可用的實體類別。 如果所需的實體類別不在清單中，將它新增至或建立在[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]將它新增至清單。  
   
-3.  儲存 .dbml 檔案。  
+3. 儲存 .dbml 檔案。  
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>若要將 DataContext 方法的傳回型別從實體類別變更為自動產生的型別  
   
-1.  選取並刪除方法窗格中的 <xref:System.Data.Linq.DataContext> 方法。  
+1. 選取並刪除方法窗格中的 <xref:System.Data.Linq.DataContext> 方法。  
   
-2.  將資料庫物件從**伺服器總管**/**資料庫總管**拖曳到 O/R 設計工具的空白區域。  
+2. 將資料庫物件從**伺服器總管**/**資料庫總管**拖曳到 O/R 設計工具的空白區域。  
   
-3.  儲存 .dbml 檔案。  
+3. 儲存 .dbml 檔案。  
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

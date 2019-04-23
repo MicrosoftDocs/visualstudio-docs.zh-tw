@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb94438a17fdc718b28503c8e258b959a16a90ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102947"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>連線至 Access 資料庫中的資料 (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,30 +40,30 @@ ms.locfileid: "58940676"
   
 #### <a name="to-create-the-dataset"></a>建立資料集  
   
-1.  開啟資料要連線的 Windows Forms 應用程式。  
+1. 開啟資料要連線的 Windows Forms 應用程式。  
   
-2.  在 **檢視**功能表上，選取**其他 Windows** > **Zdroje dat**。  
+2. 在 **檢視**功能表上，選取**其他 Windows** > **Zdroje dat**。  
   
      ![檢視其他 Windows 資料來源](../data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。  
+3. 在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。  
   
      ![加入新的資料來源](../data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
   
-4.  選取 [**資料庫**上**選擇資料來源類型**頁面，然後再選取**下一步]**。  
+4. 選取 [**資料庫**上**選擇資料來源類型**頁面，然後再選取**下一步]**。  
   
-5.  選取 [**資料集**上**選擇資料庫模型**頁面，然後再選取**下一步]**。  
+5. 選取 [**資料集**上**選擇資料庫模型**頁面，然後再選取**下一步]**。  
   
-6.  在 [資料連線] 頁面上，選取 [新增連線]，設定新的資料連線。  
+6. 在 [資料連線] 頁面上，選取 [新增連線]，設定新的資料連線。  
   
-7.  變更**資料來源**要 **.NET Framework Data Provider for OLE DB**。  
+7. 變更**資料來源**要 **.NET Framework Data Provider for OLE DB**。  
   
      ![將 OLE DB 資料提供者](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
     >  雖然資料來源**Microsoft Access 資料庫檔案 (OLE DB)** 可能看起來是正確的選擇，您可以使用該資料來源類型僅適用於.mdb 資料庫檔案。  
   
-8.  在  **OLE DB 提供者**，選取**Microsoft Office 12.0 Access 資料庫引擎 OLE DB 提供者**。  
+8. 在  **OLE DB 提供者**，選取**Microsoft Office 12.0 Access 資料庫引擎 OLE DB 提供者**。  
   
      ![OLE DB 提供者 Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")  
   
@@ -87,23 +87,23 @@ ms.locfileid: "58940676"
   
 #### <a name="to-create-the-dataset"></a>建立資料集  
   
-1.  開啟資料要連線的 Windows Forms 應用程式。  
+1. 開啟資料要連線的 Windows Forms 應用程式。  
   
-2.  在 **檢視**功能表上，選取**其他 Windows** > **Zdroje dat**。  
+2. 在 **檢視**功能表上，選取**其他 Windows** > **Zdroje dat**。  
   
      ![檢視其他 Windows 資料來源](../data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。  
+3. 在 [ **資料來源** ] 視窗中，按一下 [ **加入新資料來源**]。  
   
-4.  選取 [**資料庫**上**選擇資料來源類型**頁面，然後再選取**下一步]**。  
+4. 選取 [**資料庫**上**選擇資料來源類型**頁面，然後再選取**下一步]**。  
   
-5.  選取 [**資料集**上**選擇資料庫模型**頁面，然後再選取**下一步]**。  
+5. 選取 [**資料集**上**選擇資料庫模型**頁面，然後再選取**下一步]**。  
   
-6.  在 [資料連線] 頁面上，選取 [新增連線]，設定新的資料連線。  
+6. 在 [資料連線] 頁面上，選取 [新增連線]，設定新的資料連線。  
   
-7.  如果資料來源不是**Microsoft Access 資料庫檔案 (OLE DB)**，選取**變更**以開啟**變更資料來源** 對話方塊中，然後選取**Microsoft存取資料庫檔案**，然後選取**確定**。  
+7. 如果資料來源不是**Microsoft Access 資料庫檔案 (OLE DB)**，選取**變更**以開啟**變更資料來源** 對話方塊中，然後選取**Microsoft存取資料庫檔案**，然後選取**確定**。  
   
-8.  在 **資料庫檔名**，指定您想要連線，，然後選取.mdb 檔案的名稱與路徑**確定**。  
+8. 在 **資料庫檔名**，指定您想要連線，，然後選取.mdb 檔案的名稱與路徑**確定**。  
   
      ![新增連接 Access 資料庫檔案](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")  
   
@@ -123,11 +123,11 @@ ms.locfileid: "58940676"
 ## <a name="next-steps"></a>後續步驟  
  您剛才建立的資料集現已推出**Zdroje dat**視窗。 現在您可以執行下列任一項工作：  
   
--   選取中的項目**資料來源**視窗中將它們拖曳到您的表單 (請參閱[繫結 Windows Form 控制項加入 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md))。  
+- 選取中的項目**資料來源**視窗中將它們拖曳到您的表單 (請參閱[繫結 Windows Form 控制項加入 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md))。  
   
--   若要新增或編輯組成資料集的物件以 Dataset 設計工具中開啟資料來源。  
+- 若要新增或編輯組成資料集的物件以 Dataset 設計工具中開啟資料來源。  
   
--   將驗證邏輯加入<xref:System.Data.DataTable.ColumnChanging>或是<xref:System.Data.DataTable.RowChanging>事件的資料集內的資料表 (請參閱[驗證資料集中](../data-tools/validate-data-in-datasets.md))。  
+- 將驗證邏輯加入<xref:System.Data.DataTable.ColumnChanging>或是<xref:System.Data.DataTable.RowChanging>事件的資料集內的資料表 (請參閱[驗證資料集中](../data-tools/validate-data-in-datasets.md))。  
   
 ## <a name="see-also"></a>另請參閱
 

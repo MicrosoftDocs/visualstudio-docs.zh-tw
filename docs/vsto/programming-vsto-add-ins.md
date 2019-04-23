@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 304b61a7e0e11cf3b714fcc6f43855f5ded35713
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6b9b809750e658b6a5e496e2d90b7b396157f87a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641412"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079007"
 ---
 # <a name="program-vsto-add-ins"></a>程式 VSTO 增益集
   當您建立 VSTO 增益集來擴充 Microsoft Office 應用程式時，會直接針對專案中的 `ThisAddIn` 類別撰寫程式碼。 您可以使用這個類別來執行工作，例如存取 Microsoft Office 主應用程式的物件模型、自訂應用程式的使用者介面 (UI)，以及將 VSTO 增益集中的物件公開給其他 Office 解決方案。
@@ -91,21 +91,21 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
  如需特定的 Microsoft Office 應用程式之物件模型的詳細資訊，請參閱下列主題：
 
--   [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)
+- [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)
 
--   [Word 物件模型概觀](../vsto/word-object-model-overview.md)
+- [Word 物件模型概觀](../vsto/word-object-model-overview.md)
 
--   [Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)
+- [Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)
 
--   [InfoPath 方案](../vsto/infopath-solutions.md)
+- [InfoPath 方案](../vsto/infopath-solutions.md)
 
--   [PowerPoint 方案](../vsto/powerpoint-solutions.md)
+- [PowerPoint 方案](../vsto/powerpoint-solutions.md)
 
--   [專案的方案](../vsto/project-solutions.md)
+- [專案的方案](../vsto/project-solutions.md)
 
--   [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)
+- [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)
 
-###  <a name="AccessingDocuments"></a> Office 應用程式啟動時存取文件
+### <a name="AccessingDocuments"></a> Office 應用程式啟動時存取文件
  當您啟動 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 應用程式時，並非所有應用程式都會自動開啟文件；而當您啟動 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 應用程式時，所有應用程式都不會開啟文件。 因此，不將加入程式碼中的`ThisAdd-In_Startup`如果程式碼需要開啟的文件的事件處理常式。 相反地，請將程式碼加入 Office 應用程式在使用者建立或開啟文件時所引發的事件。 如此可確保程式碼對文件執行作業之前，該文件已處於開啟狀態。
 
  下列程式碼範例只有在使用者建立文件或開啟現有文件時，才適用於 Word 文件。

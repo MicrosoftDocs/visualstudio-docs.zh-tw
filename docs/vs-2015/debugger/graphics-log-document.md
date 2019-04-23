@@ -13,12 +13,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f1d5d706bb3ce738fc8c820e6ffd0600b9a98ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 430c321c14226228b46bfb0e43f372851fb2a232
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117599"
 ---
 # <a name="graphics-log-document"></a>圖形記錄文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "58945273"
   
 #### <a name="to-inspect-a-frame"></a>檢查畫面格  
   
--   在 [畫面清單] 中，選取您要檢查的畫面。 圖形記錄文件上方的呈現目標輸出隨即更新，以顯示選取的畫面格。  
+- 在 [畫面清單] 中，選取您要檢查的畫面。 圖形記錄文件上方的呈現目標輸出隨即更新，以顯示選取的畫面格。  
   
 #### <a name="to-inspect-a-pixel"></a>檢查像素  
   
--   在圖形記錄文件上方，從呈現目標輸出中選取您要的像素。 選取像素後，您可以使用 [圖形像素記錄] 視窗，檢視所選取像素的詳細資訊。 如需詳細資訊，請參閱 <<c0> [ 像素歷史記錄](../debugger/graphics-pixel-history.md)。  
+- 在圖形記錄文件上方，從呈現目標輸出中選取您要的像素。 選取像素後，您可以使用 [圖形像素記錄] 視窗，檢視所選取像素的詳細資訊。 如需詳細資訊，請參閱 <<c0> [ 像素歷史記錄](../debugger/graphics-pixel-history.md)。  
   
 ## <a name="playback-machine"></a>播放電腦  
  [播放電腦] 也會顯示在 [畫面清單] 右上角。 播放電腦是一部電腦或一個裝置，用來在稍後的圖形診斷工作階段期間，從圖形記錄檔播放圖形事件。 透過使用不同的裝置 (非開發電腦) 播放所擷取的事件，您可以更精確地重現發生問題的執行環境；例如，您可以使用具有與開發電腦所使用之圖形硬體或驅動程式不同的電腦，或其他類型的裝置 (例如 ARM Windows RT 平板電腦或 Windows Phone 裝置)。  

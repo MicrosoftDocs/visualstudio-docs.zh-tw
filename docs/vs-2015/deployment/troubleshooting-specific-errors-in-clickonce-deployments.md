@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 348cb15ebc348d6c0ece5e7118e896cc6a21b23b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043192"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>疑難排解 ClickOnce 部署的特定錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ ms.locfileid: "58941117"
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>錯誤訊息指出，「 無法擷取應用程式。 在部署中遺失的檔案 」 或 「 已中斷下載應用程式、 檢查是否有網路錯誤稍後再試一 」  
  此訊息表示所參考的一或多個檔案[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]無法下載資訊清單。 偵錯此錯誤的最簡單方式是嘗試將下載的 URL，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]說它無法下載。 以下是一些可能的原因：  
   
--   如果記錄檔會說 「 (403) 禁止 」 或"(404) 找不到，「 驗證設定 Web 伺服器，這樣不會封鎖下載這個檔案。 如需詳細資訊，請參閱 [ClickOnce 部署中的伺服器和用戶端組態問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)。  
+- 如果記錄檔會說 「 (403) 禁止 」 或"(404) 找不到，「 驗證設定 Web 伺服器，這樣不會封鎖下載這個檔案。 如需詳細資訊，請參閱 [ClickOnce 部署中的伺服器和用戶端組態問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)。  
   
--   如果伺服器正在封鎖的.config 檔案，請參閱節 「 下載錯誤，當您嘗試安裝[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].config 檔案的應用程式 「 本主題稍後的。  
+- 如果伺服器正在封鎖的.config 檔案，請參閱節 「 下載錯誤，當您嘗試安裝[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].config 檔案的應用程式 「 本主題稍後的。  
   
--   判斷是否發生此狀況因為`deploymentProvider`部署資訊清單中的 URL 指向不同的位置，用來啟動的 URL。  
+- 判斷是否發生此狀況因為`deploymentProvider`部署資訊清單中的 URL 指向不同的位置，用來啟動的 URL。  
   
--   請確定所有檔案都都存在於伺服器上[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]記錄應該會告訴您找不到的檔案。  
+- 請確定所有檔案都都存在於伺服器上[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]記錄應該會告訴您找不到的檔案。  
   
--   查看是否有網路連線問題;如果您的用戶端電腦在下載期間已離線，您就可以接收此訊息。  
+- 查看是否有網路連線問題;如果您的用戶端電腦在下載期間已離線，您就可以接收此訊息。  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>當您嘗試安裝 ClickOnce 應用程式的.config 檔案下載錯誤  
  根據預設，Visual Basic Windows 為基礎的應用程式會包含 App.config 檔案。 當使用者嘗試安裝從使用 Windows Server 2003，Web 伺服器，因為該作業系統會封鎖基於安全性考量的.config 檔案的安裝時，則會是問題。 若要啟用的.config 檔案，以安裝，請按一下**使用".deploy"副檔名**中**發行選項** 對話方塊。  
@@ -67,11 +67,11 @@ ms.locfileid: "58941117"
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>您已更新您的應用程式的伺服器上，但用戶端不會下載更新  
  藉由完成下列工作之一，可能會解決此問題：  
   
--   檢查`deploymentProvider`部署資訊清單中的 URL。 請確定您要更新的相同位置中的位元，`deploymentProvider`指向。  
+- 檢查`deploymentProvider`部署資訊清單中的 URL。 請確定您要更新的相同位置中的位元，`deploymentProvider`指向。  
   
--   確認部署資訊清單中的更新間隔。 如果這個間隔設定為定期間隔，例如每隔六個小時，一次[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]會掃描更新，直到已超過此時間間隔。 您可以變更要掃描每次應用程式啟動時已更新的資訊清單。 變更的更新間隔是方便的選項，在開發期間若要確認安裝更新之後，但應用程式啟動會變慢。  
+- 確認部署資訊清單中的更新間隔。 如果這個間隔設定為定期間隔，例如每隔六個小時，一次[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]會掃描更新，直到已超過此時間間隔。 您可以變更要掃描每次應用程式啟動時已更新的資訊清單。 變更的更新間隔是方便的選項，在開發期間若要確認安裝更新之後，但應用程式啟動會變慢。  
   
--   請嘗試再次啟動應用程式，在 [開始] 功能表上。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 可能已在背景中，偵測更新，但會提示您安裝位元上的下一步 啟動。  
+- 請嘗試再次啟動應用程式，在 [開始] 功能表上。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 可能已在背景中，偵測更新，但會提示您安裝位元上的下一步 啟動。  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>在更新期間，您會收到錯誤，有下列記錄項目：「 在部署中的參考不符合應用程式清單中所定義的身分識別 」  
  因為您已經手動編輯部署和應用程式資訊清單中，而導致的組件的識別描述其變得與其他同步處理的一個資訊清單中，可能會發生此錯誤。 組件的識別是由其名稱、 版本、 文化特性和公開金鑰 token 所組成。 檢查您的資訊清單中的識別描述，並更正任何差異。  
@@ -84,9 +84,9 @@ ms.locfileid: "58941117"
   
  您應該執行下列作業：  
   
--   確認部署資訊清單的身分識別、 應用程式資訊清單中，身分識別和身分識別的主應用程式 EXE 都具有唯一性。  
+- 確認部署資訊清單的身分識別、 應用程式資訊清單中，身分識別和身分識別的主應用程式 EXE 都具有唯一性。  
   
--   請確認您的檔案路徑沒有超過 100 個字元。 如果您的應用程式包含檔案路徑太長，您可能會超過您可以將儲存的最大路徑限制。 請嘗試縮短路徑並重新安裝。  
+- 請確認您的檔案路徑沒有超過 100 個字元。 如果您的應用程式包含檔案路徑太長，您可能會超過您可以將儲存的最大路徑限制。 請嘗試縮短路徑並重新安裝。  
   
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>不會遵守 Bin 的應用程式組態檔中的設定  
  若要使用 Bin （Fusion 探查路徑），應用程式必須要求完全信任權限。 請嘗試變更應用程式資訊清單，來要求完全信任，並再試一次。  
@@ -115,9 +115,9 @@ ms.locfileid: "58941117"
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>您嘗試使用您的憑證存放區和收到空白的訊息方塊中的憑證簽署  
  在 [**簽署**] 對話方塊中，您必須：  
   
--   選取 **預存憑證以簽署**，及  
+- 選取 **預存憑證以簽署**，及  
   
--   從清單中選取憑證第一個憑證不是預設選項。  
+- 從清單中選取憑證第一個憑證不是預設選項。  
   
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>按一下 「 不登 」 按鈕，會導致例外狀況  
  這個問題是已知的 bug。 所有[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]資訊清單是必須簽署。 只選取其中一個的簽章的選項，然後按一下**確定**。  

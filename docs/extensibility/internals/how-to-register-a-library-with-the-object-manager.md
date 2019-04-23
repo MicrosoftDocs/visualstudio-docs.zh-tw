@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb764b453caa0a6230929fdc5fd002eb56550d67
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 62af216c2c748aafd5128a861fec5033f0ba5d37
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609059"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051982"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>HOW TO：使用物件管理員註冊程式庫
 符號瀏覽工具，例如**類別檢視**，**物件瀏覽器**，**呼叫瀏覽器**並**尋找符號結果**，讓您檢視在您的專案或外部元件的符號。 這些符號包括命名空間、 類別、 介面、 方法和其他語言項目。 程式庫追蹤這些符號，並公開 （expose） 才能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員，以填入資料的工具。
@@ -38,7 +38,7 @@ ms.locfileid: "56609059"
 
 ### <a name="to-register-a-library-with-the-object-manager"></a>若要使用物件管理員註冊程式庫
 
-1.  建立程式庫。
+1. 建立程式庫。
 
     ```vb
     Private m_CallBrowserLibrary As CallBrowser.Library = Nothing
@@ -55,7 +55,7 @@ ms.locfileid: "56609059"
 
     ```
 
-2.  取得物件的參考<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>輸入，然後呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>方法。
+2. 取得物件的參考<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>輸入，然後呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>方法。
 
     ```vb
     Private Sub RegisterLibrary()
@@ -111,7 +111,7 @@ ms.locfileid: "56609059"
 
 ### <a name="to-unregister-a-library-with-the-object-manager"></a>若要取消登錄程式庫，與物件管理員
 
-1.  取得物件的參考<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>輸入，然後呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A>方法。
+1. 取得物件的參考<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>輸入，然後呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A>方法。
 
     ```vb
     Private Sub UnregisterLibrary()

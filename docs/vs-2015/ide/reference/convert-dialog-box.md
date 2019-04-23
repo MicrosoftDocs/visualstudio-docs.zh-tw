@@ -15,17 +15,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f020e23b5a58d700fb698e8026ef0b783b6de6a4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e69b9a96ba2529eba2f981ab79e59c5e7936cf97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758558"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086581"
 ---
 # <a name="convert-dialog-box"></a>轉換對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [轉換] 對話方塊可讓您選取轉換工具，以從舊的專案建立新的專案 (例如從 Visual Basic 6 專案建立 [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] 專案)。 您也可以使用 CodePlex 網站上提供的 [Visual Studio Project Converter](http://go.microsoft.com/fwlink/?LinkID=246465)，來升級舊版 Visual Studio 所建立的專案。  
   
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
@@ -34,11 +33,11 @@ ms.locfileid: "54758558"
   
 #### <a name="to-access-the-convert-dialog-box"></a>存取轉換對話方塊  
   
-1.  在功能表列上，依序選擇 [檔案] 、[開啟] 和 [轉換] 。  
+1. 在功能表列上，依序選擇 [檔案] 、[開啟] 和 [轉換] 。  
   
      您會看到一份目前可用的程式碼轉換工具清單。  
   
-2.  選取適合您應用程式的工具。  
+2. 選取適合您應用程式的工具。  
   
 ## <a name="see-also"></a>請參閱  
  [NOTINBUILD - 如何：升級 Visual Basic 6.0 專案](http://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   

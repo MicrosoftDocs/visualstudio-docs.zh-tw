@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2066e1c3ae3975536735290c34932f347c15693
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f44dcb010dd9c62d130913efd590a4c1b651de50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081993"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812:避免使用未執行個體化的內部類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,9 +59,9 @@ ms.locfileid: "58939990"
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，移除類型，或加入程式碼使用它。 如果型別只包含靜態方法，請加入下列其中一種類型，以避免編譯器發出的預設公用執行個體建構函式：
 
--   私用建構函式的類型為目標[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]1.0 和 1.1 版。
+- 私用建構函式的類型為目標[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]1.0 和 1.1 版。
 
--   `static` (`Shared` Visual Basic 中) 修飾詞的類型為目標[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]。
+- `static` (`Shared` Visual Basic 中) 修飾詞的類型為目標[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  它可安全地隱藏此規則的警告。 我們建議您隱藏這個警告，在下列情況：

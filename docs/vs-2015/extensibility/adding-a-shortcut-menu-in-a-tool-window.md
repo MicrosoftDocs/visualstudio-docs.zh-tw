@@ -13,12 +13,12 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5587c559615bcf6ae17a445490951c32741086c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 604e5792c17e1458faccfd6518ab8cd5e7e303f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945192"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093731"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>在工具視窗中新增捷徑功能表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ ms.locfileid: "58945192"
   
 ## <a name="creating-the-tool-window-shortcut-menu-package"></a>建立工具視窗的捷徑功能表套件  
   
-1.  建立 VSIX 專案，名為`TWShortcutMenu`並新增名為的工具視窗範本**快顯功能表**給它。 如需建立工具視窗的詳細資訊，請參閱[工具視窗建立擴充](../extensibility/creating-an-extension-with-a-tool-window.md)。  
+1. 建立 VSIX 專案，名為`TWShortcutMenu`並新增名為的工具視窗範本**快顯功能表**給它。 如需建立工具視窗的詳細資訊，請參閱[工具視窗建立擴充](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
 ## <a name="specifying-the-shortcut-menu"></a>指定的捷徑功能表  
  從用來填滿工具視窗的背景色彩的清單中選取捷徑功能表，例如本逐步解說中所示可讓使用者。  
   
-1.  在 ShortcutMenuPackage.vsct，尋找名為 guidShortcutMenuPackageCmdSet，GuidSymbol 元素中，宣告快顯功能表、 捷徑功能表群組中和功能表選項。 GuidSymbol 元素現在看起來應該像這樣：  
+1. 在 ShortcutMenuPackage.vsct，尋找名為 guidShortcutMenuPackageCmdSet，GuidSymbol 元素中，宣告快顯功能表、 捷徑功能表群組中和功能表選項。 GuidSymbol 元素現在看起來應該像這樣：  
   
     ```xml  
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here  
@@ -54,7 +54,7 @@ ms.locfileid: "58945192"
     </GuidSymbol>  
     ```  
   
-2.  之前的按鈕項目中，建立功能表項目，然後定義的捷徑功能表中。  
+2. 之前的按鈕項目中，建立功能表項目，然後定義的捷徑功能表中。  
   
     ```vb  
     <Menus>  
@@ -69,7 +69,7 @@ ms.locfileid: "58945192"
   
      快顯功能表沒有父代，因為它不是功能表或工具列的一部分。  
   
-3.  建立群組項目與群組項目，其中包含快顯功能表項目，並將群組關聯的捷徑功能表。  
+3. 建立群組項目與群組項目，其中包含快顯功能表項目，並將群組關聯的捷徑功能表。  
   
     ```xml  
     <Groups>  
@@ -79,7 +79,7 @@ ms.locfileid: "58945192"
     </Groups>  
     ```  
   
-4.  在按鈕項目，定義個別的命令，將會出現快顯功能表。 Buttons 元素看起來應該像這樣：  
+4. 在按鈕項目，定義個別的命令，將會出現快顯功能表。 Buttons 元素看起來應該像這樣：  
   
     ```xml  
     <Buttons>  
@@ -114,7 +114,7 @@ ms.locfileid: "58945192"
     </Buttons>  
     ```  
   
-5.  在 ShortcutMenuPackageGuids.cs，加入命令定義設定 GUID、 快顯功能表和功能表項目。  
+5. 在 ShortcutMenuPackageGuids.cs，加入命令定義設定 GUID、 快顯功能表和功能表項目。  
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
@@ -129,16 +129,16 @@ ms.locfileid: "58945192"
 ## <a name="implementing-the-shortcut-menu"></a>實作快顯功能表  
  本章節會實作快顯功能表和它的命令。  
   
-1.  ShortcutMenu.cs，在 [工具] 視窗可取得功能表命令服務，但它所包含的控制項不能。 下列步驟示範如何將功能表命令服務提供給使用者控制項。  
+1. ShortcutMenu.cs，在 [工具] 視窗可取得功能表命令服務，但它所包含的控制項不能。 下列步驟示範如何將功能表命令服務提供給使用者控制項。  
   
-2.  在 ShortcutMenu.cs，新增下列 using 陳述式：  
+2. 在 ShortcutMenu.cs，新增下列 using 陳述式：  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
     using System.ComponentModel.Design;  
     ```  
   
-3.  覆寫工具視窗的 initialize （） 方法，可取得功能表命令服務，並新增控制項，將功能表命令服務傳遞至建構函式：  
+3. 覆寫工具視窗的 initialize （） 方法，可取得功能表命令服務，並新增控制項，將功能表命令服務傳遞至建構函式：  
   
     ```csharp  
     protected override void Initialize()  
@@ -148,7 +148,7 @@ ms.locfileid: "58945192"
     }  
     ```  
   
-4.  在快顯功能表工具視窗建構函式，移除行，加入控制項。 建構函式現在看起來應該像這樣：  
+4. 在快顯功能表工具視窗建構函式，移除行，加入控制項。 建構函式現在看起來應該像這樣：  
   
     ```csharp  
     public ShortcutMenu() : base(null)  
@@ -159,7 +159,7 @@ ms.locfileid: "58945192"
     }  
     ```  
   
-5.  ShortcutMenuControl.xaml.cs，加入功能表命令服務的私用欄位，變更才會功能表命令服務控制建構函式。 若要新增的內容功能表命令，然後使用功能表命令服務。 ShortcutMenuControl 建構函式現在看起來應該像下列程式碼。 稍後定義的命令處理常式。  
+5. ShortcutMenuControl.xaml.cs，加入功能表命令服務的私用欄位，變更才會功能表命令服務控制建構函式。 若要新增的內容功能表命令，然後使用功能表命令服務。 ShortcutMenuControl 建構函式現在看起來應該像下列程式碼。 稍後定義的命令處理常式。  
   
     ```csharp  
     public ShortcutMenuControl(OleMenuCommandService service)  
@@ -185,7 +185,7 @@ ms.locfileid: "58945192"
     }  
     ```  
   
-6.  在 ShortcutMenuControl.xaml，加入<xref:System.Windows.UIElement.MouseRightButtonDown>事件，以最高層級<xref:System.Windows.Controls.UserControl>項目。 XAML 檔案現在看起來應該像這樣：  
+6. 在 ShortcutMenuControl.xaml，加入<xref:System.Windows.UIElement.MouseRightButtonDown>事件，以最高層級<xref:System.Windows.Controls.UserControl>項目。 XAML 檔案現在看起來應該像這樣：  
   
     ```vb  
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"  
@@ -207,7 +207,7 @@ ms.locfileid: "58945192"
     </UserControl>  
     ```  
   
-7.  在 ShortcutMenuControl.xaml.cs，加入事件處理常式的虛設常式。  
+7. 在 ShortcutMenuControl.xaml.cs，加入事件處理常式的虛設常式。  
   
     ```csharp  
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
@@ -216,7 +216,7 @@ ms.locfileid: "58945192"
     }  
     ```  
   
-8.  新增下列 using 陳述式相同的檔案：  
+8. 新增下列 using 陳述式相同的檔案：  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
@@ -270,13 +270,13 @@ ms.locfileid: "58945192"
   
 ## <a name="testing-the-tool-window-features"></a>測試工具視窗功能  
   
-1.  建置此專案並開始偵錯。 實驗執行個體隨即出現。  
+1. 建置此專案並開始偵錯。 實驗執行個體隨即出現。  
   
-2.  在實驗執行個體中，按一下**檢視 / 其他 Windows**，然後按一下**快顯功能表**。 這樣應該會顯示工具視窗。  
+2. 在實驗執行個體中，按一下**檢視 / 其他 Windows**，然後按一下**快顯功能表**。 這樣應該會顯示工具視窗。  
   
-3.  以滑鼠右鍵按一下 [工具] 視窗的主體。 應該顯示快顯功能表具有色彩的清單。  
+3. 以滑鼠右鍵按一下 [工具] 視窗的主體。 應該顯示快顯功能表具有色彩的清單。  
   
-4.  按一下捷徑功能表上的色彩。 工具視窗背景色彩應該變更為選取的色彩。  
+4. 按一下捷徑功能表上的色彩。 工具視窗背景色彩應該變更為選取的色彩。  
   
 ## <a name="see-also"></a>另請參閱  
  [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)   

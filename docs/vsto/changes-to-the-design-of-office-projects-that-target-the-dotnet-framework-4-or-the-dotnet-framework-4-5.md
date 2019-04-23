@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 146ece23d1ff4ed516d5c7d009bfc439c2387bb5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 046e0e5ab33d3eece5c44fcadb31ca93700587e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093653"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>如果要對目標為.NET Framework 4 或.NET Framework 4.5 之 Office 專案的設計變更
   從 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]開始，Visual Studio 導入了一些以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的 Office 專案的設計變更。 如果您熟悉舊版 Visual Studio 中的 Office 專案，在您開發以 .NET Framework 4.0 或更新版本為目標的 Office 專案之前，就該意識到這些變更。 使用 Visual Studio 2013 或更新版本建立的所有專案，預設目標都是 .NET Framework 4.0 或更新版本。
@@ -30,11 +30,11 @@ ms.locfileid: "57870327"
 
  在舊版 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 中可以直接具現化的任何類型，現在都是使用 `Globals.Factory` 物件的方法，取得這些類型的執行個體。 例如，若要取得實作 <xref:Microsoft.Office.Tools.Excel.SmartTag> 介面的物件，請使用 `Globals.Factory.CreateSmartTag` 方法。 如需詳細資訊，請參閱下列主題：
 
--   [更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 專案](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
+- [更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 專案](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
--   [更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案中的功能區自訂](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)
+- [更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案中的功能區自訂](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)
 
--   [更新您移轉至.NET Framework 4 或.NET Framework 4.5 之 Outlook 專案中的表單區域](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
+- [更新您移轉至.NET Framework 4 或.NET Framework 4.5 之 Outlook 專案中的表單區域](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
 ### <a name="new-base-classes-in-office-projects"></a>Office 專案中新的基底類別
  Visual Studio 2010 Tools for Office runtime 的新介面型設計，影響產生的類別，在 Office 專案中，例如`ThisDocument`， `ThisWorkbook`，和`ThisAddIn`。 以 .NET Framework 3.5 和舊版 Framework 為目標的 Office 專案中，這些產生的類別衍生自 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 類別，例如 `Microsoft.Office.Tools.Word.Document``Microsoft.Office.Tools.Excel.Worksheet` 和 `Microsoft.Office.Tools.AddIn`。 在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的專案中，這些 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 類別現在都是介面。 因此，Office 專案中產生的類別不會再衍生出實作。 反而是產生的類別衍生自新的基底類型，例如 <xref:Microsoft.Office.Tools.Word.DocumentBase><xref:Microsoft.Office.Tools.Excel.WorksheetBase> 和 <xref:Microsoft.Office.Tools.AddInBase>。 如需詳細資訊，請參閱 <<c0> [ 程式的 VSTO 增益集](../vsto/programming-vsto-add-ins.md)並[程式文件層級自訂](../vsto/programming-document-level-customizations.md)。

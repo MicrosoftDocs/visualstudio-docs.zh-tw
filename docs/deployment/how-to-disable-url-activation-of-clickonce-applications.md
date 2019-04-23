@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26fdadf92fa94efe0a08fdf090e5a295e2f65096
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 6841b8a91cec24f467f6e3f684cbb27e25c9fa63
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999973"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045612"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>HOW TO：停用 ClickOnce 應用程式的 URL 啟動
 
@@ -35,13 +35,13 @@ ms.locfileid: "54999973"
 
 ### <a name="to-disable-url-activation-for-your-application"></a>若要停用應用程式的 URL 啟用
 
-1.  開啟 MageUI.exe 中的部署資訊清單。 如果您尚未建立一個，請依照下列中的步驟[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+1. 開啟 MageUI.exe 中的部署資訊清單。 如果您尚未建立一個，請依照下列中的步驟[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
-2.  選取 [部署選項] 索引標籤。
+2. 選取 [部署選項] 索引標籤。
 
-3.  清除 [安裝後自動執行應用程式] 核取方塊。
+3. 清除 [安裝後自動執行應用程式] 核取方塊。
 
-4.  儲存並簽署該資訊清單。
+4. 儲存並簽署該資訊清單。
 
 ## <a name="see-also"></a>另請參閱
 

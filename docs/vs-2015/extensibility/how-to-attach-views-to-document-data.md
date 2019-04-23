@@ -10,12 +10,12 @@ ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 671a243f65c68660c98c3730ca90568882a824d6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50b9ef50e077a4e335b0c4f0718a3c51624e09c8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080640"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>HOW TO：如何︰將檢視附加至文件資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,19 +24,19 @@ ms.locfileid: "58930690"
   
 ### <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>若要判斷是否您可以將檢視附加至現有的文件資料物件  
   
-1.  實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>。  
+1. 實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>。  
   
-2.  在您實作`IVsEditorFactory::CreateEditorInstance`，呼叫`QueryInterface`現有的文件資料物件時，IDE 會呼叫您`CreateEditorInstance`實作。  
+2. 在您實作`IVsEditorFactory::CreateEditorInstance`，呼叫`QueryInterface`現有的文件資料物件時，IDE 會呼叫您`CreateEditorInstance`實作。  
   
      呼叫`QueryInterface`可讓您檢視現有的文件資料物件，指定在`punkDocDataExisting`參數。  
   
      確切的介面，您必須查詢，不過，取決於開啟文件時，編輯器在步驟 4 中所述。  
   
-3.  然後，如果找不到現有的文件資料物件上適當的介面，會將錯誤碼返回數個您指出文件資料物件與您的編輯器不相容的編輯器。  
+3. 然後，如果找不到現有的文件資料物件上適當的介面，會將錯誤碼返回數個您指出文件資料物件與您的編輯器不相容的編輯器。  
   
      在 IDE 的實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>，訊息方塊通知您已在其他編輯器中開啟文件，並詢問您想要將它關閉。  
   
-4.  如果您關閉這份文件時，Visual Studio 會呼叫您的編輯器 factory 的第二次。 在此呼叫時，`DocDataExisting`參數等於 NULL。 編輯器 factory 實作然後可以在自己的編輯器中開啟文件資料物件。  
+4. 如果您關閉這份文件時，Visual Studio 會呼叫您的編輯器 factory 的第二次。 在此呼叫時，`DocDataExisting`參數等於 NULL。 編輯器 factory 實作然後可以在自己的編輯器中開啟文件資料物件。  
   
     > [!NOTE]
     >  若要判斷是否有您可以使用現有的文件資料物件，您也可以使用的介面實作的私用知識轉型的指標，實際[!INCLUDE[vcprvc](../includes/vcprvc-md.md)]私用實作的類別。 例如，實作所有的標準編輯器`IVsPersistFileFormat`，該項則繼承自<xref:Microsoft.VisualStudio.OLE.Interop.IPersist>。 因此，您可以呼叫`QueryInterface`針對<xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>，並在現有的文件資料物件上的類別識別碼是否符合您的實作類別識別碼，則您可以使用文件資料物件。  

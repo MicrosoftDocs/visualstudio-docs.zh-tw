@@ -1,5 +1,5 @@
 ---
-title: 如何： 部署 Visual Studio 2015 時，便會自動套用產品金鑰 |Microsoft Docs
+title: 如何：在部署 Visual Studio 2015 時自動套用產品金鑰 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,17 +10,17 @@ caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bbbc5cf6a6a65f7dbb38de60a5a99ec89fc70687
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ec050cf8f365bfae2290593a0c7f215dcb2f39cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834844"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656722"
 ---
-# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>How to: Automatically apply product keys when deploying Visual Studio
+# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>如何：在部署 Visual Studio 時自動套用產品金鑰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 最新文件，請參閱 <<c0> [ 部署 Visual Studio 時會自動套用產品金鑰](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio)。
+如需 Visual Studio 的最新文件，請參閱[在部署 Visual Studio 時自動套用產品金鑰](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio)。
 
 您能以程式設計的方式套用您的產品金鑰，作為用來自動化部署 Visual Studio 2015 的一部分指令碼。 產品金鑰能在 Visual Studio 安裝期間或完成安裝後，以程式設計方式設定在裝置上。
 
@@ -38,7 +38,7 @@ ms.locfileid: "54834844"
 
  `StorePID.exe [product key including the dashes] [MPC]`
 
- 這是以產品金鑰 "AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE" 安裝 Visual Studio 2015 Enterprise 的命令列範例，其 MPC 為 07060：
+ 這是安裝 Visual Studio 2015 Enterprise 的範例命令列，其中 MPC 為 07060 且產品金鑰為 "AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE"：
 
  `C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 07060`
 
@@ -54,9 +54,10 @@ ms.locfileid: "54834844"
 |Visual Studio Professional 2013|06177|
 |Visual Studio Test Professional 2013|06194|
 
- 如需取得產品金鑰的詳細資訊，請參閱 [How to: Locate the Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md)。
+如需取得產品金鑰的詳細資訊，請參閱[如何：找出 Visual Studio 產品金鑰](../install/how-to-locate-the-visual-studio-product-key.md)。
 
- 如果 StorePID.exe 成功套用產品金鑰，會傳回 0。 如果遇到錯誤，則會傳回 1 到 6 的數字。
+如果 StorePID.exe 成功套用產品金鑰，會傳回 0。 如果遇到錯誤，則會傳回 1 到 6 的數字。
 
-## <a name="see-also"></a>請參閱
- [安裝 Visual Studio](../install/install-visual-studio-2015.md)
+## <a name="see-also"></a>另請參閱
+
+- [安裝 Visual Studio](../install/install-visual-studio-2015.md)

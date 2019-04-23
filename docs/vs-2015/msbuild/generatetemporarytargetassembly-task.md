@@ -19,22 +19,21 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f3f537e6f9f1712e3d103a0d425265153bf2152e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 397bb367207646e110243e050c271815b6258ff5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774679"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668609"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 如果專案中有至少一個 [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] 網頁參考該專案中本機宣告的類型，<xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> 工作會產生組件。 建置流程完成之後，或如果建置流程失敗，都會將產生的組件移除。  
   
 ## <a name="task-parameters"></a>工作參數  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`AssemblyName`|必要的 **String** 參數。<br /><br /> 指定為專案所產生之組件的簡短名稱，它也是暫時產生之目標組件的名稱。 例如，如果專案產生名稱為 **WinExeAssembly.exe** 的 [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] 可執行檔，**AssemblyName** 參數的值會是 **WinExeAssembly**。|  
 |`CompileTargetName`|必要的 **String** 參數。<br /><br /> 指定用來從原始程式碼檔產生組件的 [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] 目標名稱。 一般的 **CompileTargetName** 值為 **CoreCompile**。|  

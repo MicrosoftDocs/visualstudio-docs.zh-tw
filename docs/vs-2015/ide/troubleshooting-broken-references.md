@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc1bff5ad547a946efa3edcd5c21cc6de4fad07
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113946"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ ms.locfileid: "54780523"
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>藉由修正參考路徑來修復中斷的專案參考  
   
-1.  在方案總管中，以滑鼠右鍵按一下您的專案節點，然後按一下 [屬性]。  
+1. 在方案總管中，以滑鼠右鍵按一下您的專案節點，然後按一下 [屬性]。  
   
-2.  [專案設計工具] 隨即出現。  
+2. [專案設計工具] 隨即出現。  
   
-3.  如果使用 Visual Basic，請選取 [參考] 頁面，然後按一下 [參考路徑] 按鈕。 在 [參考路徑] 對話方塊的 [資料夾] 欄位中，輸入包含所要參考之項目的資料夾路徑，然後按一下 [加入資料夾] 按鈕。  
+3. 如果使用 Visual Basic，請選取 [參考] 頁面，然後按一下 [參考路徑] 按鈕。 在 [參考路徑] 對話方塊的 [資料夾] 欄位中，輸入包含所要參考之項目的資料夾路徑，然後按一下 [加入資料夾] 按鈕。  
   
      -或-  
   
@@ -69,20 +69,20 @@ ms.locfileid: "54780523"
   
 #### <a name="to-fix-a-broken-project-reference-for-a-file-that-no-longer-exists-on-your-drive"></a>為磁碟機中已不存在的檔案修復中斷的專案參考  
   
--   刪除參考。  
+- 刪除參考。  
   
--   如果電腦上的其他位置已有此參考，請從該位置讀取。  
+- 如果電腦上的其他位置已有此參考，請從該位置讀取。  
   
--   如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+- 如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 ## <a name="referenced-file-has-been-renamed"></a>參考的檔案已被重新命名  
  參考的檔案有可能已被重新命名。  
   
 #### <a name="to-fix-a-broken-reference-for-a-file-that-has-been-renamed"></a>為已重新命名的檔案修復中斷的參考  
   
--   刪除參考，然後新增已重新命名的檔案參考。  
+- 刪除參考，然後新增已重新命名的檔案參考。  
   
--   如果電腦上的其他位置已有此參考，您必須從該位置讀入。 如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+- 如果電腦上的其他位置已有此參考，您必須從該位置讀入。 如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 ## <a name="network-connection-or-authentication-has-failed"></a>網路連線或驗證失敗  
  造成檔案無法存取的原因可能有許多；例如，網路連線失敗或驗證失敗。 每個原因可能都有獨特的修復方法；例如，您可能必須連絡本機系統管理員以存取必要資源。 不過，刪除參考並修復使用它的程式碼一定是可行的方法。 如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  

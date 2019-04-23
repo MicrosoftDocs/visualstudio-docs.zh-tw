@@ -12,12 +12,12 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47b4bacb8815db8cf7cb64f47534d1c3b10a8177
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e97e21b2d08d7398a4372ac31cda63b5cfb9fe9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945656"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100595"
 ---
 # <a name="upgrading-projects"></a>升級專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "58945656"
 ## <a name="upgrade-strategies"></a>升級策略  
  若要支援升級，您的專案系統實作必須定義和實作的升級策略。 在決定您的策略時，您可以選擇支援的並存 (SxS) 備份、 複製備份，或兩者。  
   
--   SxS 備份表示專案會複製那些需要升級的位置，新增適當的檔案名稱尾碼，例如，".old"的檔案。  
+- SxS 備份表示專案會複製那些需要升級的位置，新增適當的檔案名稱尾碼，例如，".old"的檔案。  
   
--   複製專案將所有的專案項目複製到使用者所提供的備份位置的備份方式。 然後會升級原始專案位置的相關檔案。  
+- 複製專案將所有的專案項目複製到使用者所提供的備份位置的備份方式。 然後會升級原始專案位置的相關檔案。  
   
 ## <a name="how-upgrade-works"></a>如何升級的運作方式  
  當舊的版本中建立的方案[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]開啟在較新版本中，方案檔案來判斷它是否需要升級的 IDE 檢查。 如果升級為必要項，**升級精靈**引導使用者完成升級程序時，就會自動啟動。  
@@ -37,7 +37,7 @@ ms.locfileid: "58945656"
  當升級需求的解決方案時，它會查詢每個專案處理站，其升級策略。 策略會決定 project factory 支援複製備份 」 或 「 SxS 備份。 將資訊傳送至**升級精靈**，其可收集備份所需的資訊，並向使用者呈現的適用選項。  
   
 ### <a name="multi-project-solutions"></a>多專案的方案  
- 如果方案包含多個專案，而且不同的升級策略，例如 project factory 只支援 SxS 備份的 c + + 專案時，只支援複製備份的 Web 專案必須交涉的升級策略。  
+ 如果方案包含多個專案，而且不同的升級策略，例如當C++專案，只支援 SxS 備份和 Web 專案，只支援複製備份，project factory 必須交涉的升級策略。  
   
  解決方案會查詢每個專案 factory <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>。 然後它會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A>看看通用專案檔是否需要升級，並判斷支援的升級策略。 **升級精靈**接著叫用。  
   

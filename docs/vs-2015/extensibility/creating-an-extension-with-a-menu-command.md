@@ -13,12 +13,12 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 644f763c64897eda4896c1431c815519dcc9b65f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e3bbf6b3b1ed2565d5e58806bd0935f713ba5bfd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941805"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076678"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>建立具有功能表命令的延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ ms.locfileid: "58941805"
   
 ## <a name="creating-a-menu-command"></a>建立功能表命令  
   
-1.  建立 VSIX 專案，名為**FirstMenuCommand**。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C# / 擴充性**。  
+1. 建立 VSIX 專案，名為**FirstMenuCommand**。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C# / 擴充性**。  
   
-2.  當專案開啟時，新增名為的自訂命令項目範本**FirstCommand**。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 在 **加入新項目**對話方塊中，移至**Visual C# / 擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為**FirstCommand.cs**。  
+2. 當專案開啟時，新增名為的自訂命令項目範本**FirstCommand**。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 在 **加入新項目**對話方塊中，移至**Visual C# / 擴充性**，然後選取**自訂命令**。 在 **名稱**視窗的底部欄位中，將命令的檔案名稱變更為**FirstCommand.cs**。  
   
-3.  建置此專案並開始偵錯。  
+3. 建置此專案並開始偵錯。  
   
      Visual Studio 的實驗執行個體隨即出現。 如需詳細的實驗執行個體的詳細資訊，請參閱[實驗的執行個體](../extensibility/the-experimental-instance.md)。  
   
-4.  在實驗執行個體中，開啟**工具 / 擴充功能和更新**視窗。 您應該會看到**FirstMenuCommand**延伸模組。 (如果您開啟**擴充功能和更新**在您的 Visual Studio 的工作執行個體，您將不會看到**FirstMenuCommand**)。  
+4. 在實驗執行個體中，開啟**工具 / 擴充功能和更新**視窗。 您應該會看到**FirstMenuCommand**延伸模組。 (如果您開啟**擴充功能和更新**在您的 Visual Studio 的工作執行個體，您將不會看到**FirstMenuCommand**)。  
   
      現在請移至**工具**實驗執行個體中的功能表。 您應該會看到**叫用 FirstCommand**命令。 此時只會出現訊息方塊，指出 「 FirstCommandPackage 內 FirstMenuCommand.FirstCommand.MenuItemCallback()"。 我們會看到如何實際從下一節中的此命令啟動 「 記事本 」。  
   
 ## <a name="changing-the-menu-command-handler"></a>變更功能表命令處理常式  
  現在讓我們更新命令處理常式，以啟動 [記事本]。  
   
-1.  停止偵錯，並返回您的 Visual Studio 的工作執行個體。 開啟 FirstCommand.cs 檔案並新增下列 using 陳述式：  
+1. 停止偵錯，並返回您的 Visual Studio 的工作執行個體。 開啟 FirstCommand.cs 檔案並新增下列 using 陳述式：  
   
     ```csharp  
     using System.Diagnostics;  
     ```  
   
-2.  找到的私用 FirstCommand 建構函式。 這是命令連結至命令服務和命令處理常式會指定位置。 變更命令處理常式的名稱來 StartNotepad，如下所示：  
+2. 找到的私用 FirstCommand 建構函式。 這是命令連結至命令服務和命令處理常式會指定位置。 變更命令處理常式的名稱來 StartNotepad，如下所示：  
   
     ```csharp  
     private FirstCommand(Package package)  
@@ -74,7 +74,7 @@ ms.locfileid: "58941805"
     }  
     ```  
   
-3.  移除 MenuItemCallback 方法，並新增 StartNotepad 方法，而這個方法會將只會啟動 [記事本]:  
+3. 移除 MenuItemCallback 方法，並新增 StartNotepad 方法，而這個方法會將只會啟動 [記事本]:  
   
     ```csharp  
     private void StartNotepad(object sender, EventArgs e)  
@@ -85,7 +85,7 @@ ms.locfileid: "58941805"
     }  
     ```  
   
-4.  現在試試看。當您開始偵錯的專案，然後按一下**工具] / [叫用 FirstCommand**，您應該會看到出現 [記事本] 的執行個體。  
+4. 現在試試看。當您開始偵錯的專案，然後按一下**工具] / [叫用 FirstCommand**，您應該會看到出現 [記事本] 的執行個體。  
   
      您可以使用的執行個體<xref:System.Diagnostics.Process>類別來執行任何的可執行檔中，而不只是 「 記事本 」。 試試看 calc.exe，例如。  
   
@@ -94,9 +94,9 @@ ms.locfileid: "58941805"
   
  您可以取得此指令碼中有兩種：  
   
-1.  從桌面上，尋找**重設 Visual Studio 2015 實驗執行個體**。  
+1. 從桌面上，尋找**重設 Visual Studio 2015 實驗執行個體**。  
   
-2.  從命令列執行下列命令：  
+2. 從命令列執行下列命令：  
   
     ```  
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp && PAUSE  
@@ -119,11 +119,11 @@ ms.locfileid: "58941805"
   
 1. 您可以使用簡單的功能表命令的更多項目：  
   
-   1.  新增您自己的圖示：[將圖示加入至功能表命令](../extensibility/adding-icons-to-menu-commands.md)  
+   1. 新增您自己的圖示：[將圖示加入至功能表命令](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  變更功能表命令文字：[變更功能表命令的文字](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2. 變更功能表命令文字：[變更功能表命令的文字](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  將功能表捷徑新增至命令：[將鍵盤快速鍵繫結至功能表項目](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3. 將功能表捷徑新增至命令：[將鍵盤快速鍵繫結至功能表項目](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
 2. 新增不同類型的命令、 功能表和工具列：[擴充功能表和命令](../extensibility/extending-menus-and-commands.md)  
   

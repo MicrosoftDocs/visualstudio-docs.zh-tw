@@ -25,19 +25,19 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000579"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071768"
 ---
 # <a name="using-dump-files"></a>使用傾印檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 包含或不含堆積的傾印檔案；建立傾印檔案；開啟傾印檔案；尋找傾印檔案的二進位檔、PDB 和原始程式檔。 
   
-##  <a name="BKMK_Contents"></a> 內容  
+## <a name="BKMK_Contents"></a> 內容  
  [什麼是傾印檔案？](#BKMK_What_is_a_dump_file_)  
   
  [傾印檔案，或不含堆積](#BKMK_Dump_files__with_or_without_heaps)  
@@ -50,14 +50,14 @@ ms.locfileid: "59000579"
   
  [尋找二進位檔、 符號 (.pdb) 檔和原始程式檔](#BKMK_Find_binaries__symbol___pdb__files__and_source_files)  
   
-##  <a name="BKMK_What_is_a_dump_file_"></a> 什麼是傾印檔案？  
+## <a name="BKMK_What_is_a_dump_file_"></a> 什麼是傾印檔案？  
  A*傾印檔案*的應用程式中的快照集處於傾印時所花費的時間。 它會顯示當時正在執行的處理序，以及哪些模組已載入。 如果儲存的傾印包含堆積資訊，則傾印檔案會包含應用程式記憶體在該時間點的內容快照。 在 Visual Studio 中開啟含有堆積的傾印檔案，就如同在偵錯工作階段中於中斷點停止。 雖然您無法繼續執行，但是可以在傾印發生時，檢查應用程式的堆疊、執行緒和變數值。  
   
  傾印主要用於對開發人員無法存取之電腦上所發生的問題進行偵錯。 例如，當您無法在自己的電腦上重現客戶的當機或停止回應狀況時，就可以使用客戶電腦的傾印檔案。 測試人員也會建立傾印來儲存當機或停止回應資料，讓測試電腦可以用於進行更多測試。 Visual Studio 偵錯工具可以儲存 Managed 程式碼或機器碼的傾印檔案。 偵錯工具可以載入 Visual studio，還是儲存檔案中的其他程式所建立的傾印檔案*小型傾印*格式。  
   
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> 傾印檔案，或不含堆積  
+## <a name="BKMK_Dump_files__with_or_without_heaps"></a> 傾印檔案，或不含堆積  
  您可以建立包含或不含堆積資訊的傾印檔案。  
   
 - **堆積的傾印檔案**包含應用程式的記憶體的快照集。 其中包括建立傾印時的變數值。 如果您載入的傾印檔案儲存時包含堆積，即使找不到應用程式二進位檔，Visual Studio 仍可以載入符號。 Visual Studio 也會將載入的原生模組二進位檔儲存在傾印檔案中，讓偵錯更容易進行。  
@@ -66,7 +66,7 @@ ms.locfileid: "59000579"
   
   ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-##  <a name="BKMK_Requirements_and_limitations"></a> 需求和限制  
+## <a name="BKMK_Requirements_and_limitations"></a> 需求和限制  
   
 - 對最佳化程式碼的傾印檔案進行偵錯可能會造成混淆。 例如，編譯器內嵌函式會造成未預期的呼叫堆疊，而其他最佳化可能會變更變數的存留期。  
   
@@ -84,7 +84,7 @@ ms.locfileid: "59000579"
   
   ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-##  <a name="BKMK_Create_a_dump_file"></a> 建立傾印檔案  
+## <a name="BKMK_Create_a_dump_file"></a> 建立傾印檔案  
  若要使用 Visual Studio 建立傾印檔案：  
   
 - 當您在 Visual Studio 中對處理序進行偵錯時，可以在偵錯工具遇到例外狀況或中斷點停止時儲存傾印檔案。 選擇**儲存傾印**，**偵錯**。 在**存傾印**對話方塊中，於**將儲存為類型**清單中，您可以選取**小型傾印**或**包含堆積的小型傾印**（預設值）。  
@@ -95,19 +95,19 @@ ms.locfileid: "59000579"
   
   ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-##  <a name="BKMK_Open_a_dump_file"></a> 開啟傾印檔案  
+## <a name="BKMK_Open_a_dump_file"></a> 開啟傾印檔案  
   
-1.  在 Visual Studio 中，選擇**檔案**，**開放**，**檔案**。  
+1. 在 Visual Studio 中，選擇**檔案**，**開放**，**檔案**。  
   
-2.  在 [開啟檔案] 對話方塊中，找出並選取傾印檔案。 這類檔案的副檔名通常是 .dmp。 然後選擇**確定**。  
+2. 在 [開啟檔案] 對話方塊中，找出並選取傾印檔案。 這類檔案的副檔名通常是 .dmp。 然後選擇 [確定]。  
   
-3.  **傾印檔案摘要** 視窗隨即出現。 在這個視窗中，您可以檢視傾印檔案的偵錯摘要資訊、設定符號路徑、開始偵錯，以及將摘要資訊複製至剪貼簿。  
+3. **傾印檔案摘要** 視窗隨即出現。 在這個視窗中，您可以檢視傾印檔案的偵錯摘要資訊、設定符號路徑、開始偵錯，以及將摘要資訊複製至剪貼簿。  
   
      ![小型傾印摘要頁面](../debugger/media/dbg-dump-summarypage.png "DBG_DUMP_SummaryPage")  
   
-4.  若要開始偵錯，請前往**動作**區段，然後選擇**與 僅限原生偵錯**或**混合進行偵錯**。  
+4. 若要開始偵錯，請前往**動作**區段，然後選擇**與 僅限原生偵錯**或**混合進行偵錯**。  
   
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 尋找二進位檔、 符號 (.pdb) 檔和原始程式檔  
+## <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 尋找二進位檔、 符號 (.pdb) 檔和原始程式檔  
  若要使用 Visual Studio 的完整功能對傾印檔案進行偵錯，您需要存取：  
   
 - 進行傾印的 .exe 檔案，以及傾印程序中所使用的其他二進位檔 (DLL 等)。  

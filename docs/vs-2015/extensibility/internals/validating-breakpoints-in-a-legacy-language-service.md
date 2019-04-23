@@ -11,12 +11,12 @@ ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 075644dc36a25c723f51e7c518cbaf6de8a8bc1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f54dc683aa4287145a27e22d49397241b395f69f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944747"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093302"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>在舊版語言服務中驗證中斷點
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "58944747"
   
 ## <a name="implementing-support-for-validating-breakpoints"></a>實作支援的驗證中斷點  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>方法指定之中斷點的位置。 您的實作必須決定位置有效，以及指出這是傳回識別的程式碼的文字範圍相關聯的行位置中斷點。  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>方法指定之中斷點的位置。 您的實作必須決定位置有效，以及指出這是傳回識別的程式碼的文字範圍相關聯的行位置中斷點。  
   
--   傳回<xref:Microsoft.VisualStudio.VSConstants.S_OK>位置是否有效，或<xref:Microsoft.VisualStudio.VSConstants.S_FALSE>如果不是有效。  
+- 傳回<xref:Microsoft.VisualStudio.VSConstants.S_OK>位置是否有效，或<xref:Microsoft.VisualStudio.VSConstants.S_FALSE>如果不是有效。  
   
--   如果中斷點是有效的文字範圍會反白顯示中斷點以及。  
+- 如果中斷點是有效的文字範圍會反白顯示中斷點以及。  
   
--   如果中斷點是無效的則會在狀態列中出現錯誤訊息。  
+- 如果中斷點是無效的則會在狀態列中出現錯誤訊息。  
   
 ### <a name="example"></a>範例  
  此範例示範如何實作<xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>方法呼叫的剖析器來取得程式碼的範圍 （如果有的話），在指定的位置。  

@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 擷取圖形資訊 |Microsoft Docs
+title: 逐步解說：擷取圖形資訊 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ddbcef7c4ebfaa61dfd225c2d1fa13a23b3344
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: fd7136367bfb883cfc5d962a1373fec738413fc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711770"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092249"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>逐步解說：擷取圖形資訊
 本逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷從 Direct3D 應用程式手動擷取圖形資訊。
 
  本逐步解說將說明下列工作：
 
--   將圖形診斷連結至您的應用程式
+- 將圖形診斷連結至您的應用程式
 
--   擷取圖形資訊
+- 擷取圖形資訊
 
 ## <a name="capturing-graphics-information"></a>擷取圖形資訊
  若要使用圖形診斷工具，您需要先擷取它所依賴的圖形資訊。 若要啟用擷取，請在應用程式啟動時，使用 [開始診斷]  命令將圖形診斷連結至您的應用程式。
@@ -56,7 +56,7 @@ ms.locfileid: "56711770"
 ## <a name="next-steps"></a>後續步驟
  本逐步解說示範如何手動擷取圖形資訊。 下一步是考慮此選項：
 
--   了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[概觀](overview-of-visual-studio-graphics-diagnostics.md)。
+- 了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[概觀](overview-of-visual-studio-graphics-diagnostics.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [Capturing Graphics Information](capturing-graphics-information.md)

@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ee6866e2f40f70e2f804dc9b61b0db21c213232f
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: f394ea2775eede3424e4d6995a8e2065c5d986ef
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416158"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857589"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教學課程：Visual Studio 中的 Visual Basic 使用者入門
 
@@ -33,7 +33,7 @@ ms.locfileid: "58416158"
 
 ::: moniker range="vs-2019"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ ms.locfileid: "58416158"
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
 
-1. 請取消 [新專案] 對話方塊，然後從頂端功能表列中選擇 [工具]>[取得工具和功能]。
+1. 請取消 [新增專案] 對話方塊，然後從頂端功能表列中選擇 [工具]>[取得工具和功能]。
 
 1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
@@ -99,11 +99,11 @@ ms.locfileid: "58416158"
    >
    > ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
-   > 接下來，選擇 Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作；如果出現的話，就請您這麼做。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
+   > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
 1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *WhatIsYourName*。 接著，選擇 [建立]。
 
-   ![在 [設定您的新專案] 視窗中，以 'WhatIsYourName' 命名您的專案](./media/vs-2019/vb-name-your-project.-whatname.png)
+   ![在 [設定您的新專案] 視窗中，以 'WhatIsYourName' 命名您的專案](./media/vs-2019/vb-name-your-project-whatname.png)
 
    Visual Studio 會隨即開啟您的新專案。
 
@@ -262,10 +262,10 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 恭喜您完成此教學課程！ 若要更深入了解，請參閱下列教學課程。
 
 > [!div class="nextstepaction"]
-> [在 Visual Studio 中使用 Visual Basic 和 .NET Core SDK 來建置程式庫](/dotnet/core/tutorials/vb-library-with-visual-studio)
+> [在 Visual Studio 中使用 Visual Basic 和 .NET Core SDK 建置程式庫](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>另請參閱
 
 * [Visual Basic 語言逐步解說](/dotnet/visual-basic/walkthroughs)
 * [Visual Basic 語言參考](/dotnet/visual-basic/language-reference/index)
-* [IntelliSense for Visual Basic 程式碼檔案](../../ide/visual-basic-specific-intellisense.md)
+* [Visual Basic 程式碼檔案的 IntelliSense](../../ide/visual-basic-specific-intellisense.md)

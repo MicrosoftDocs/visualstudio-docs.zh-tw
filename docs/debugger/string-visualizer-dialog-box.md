@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 982db296fd17fb86b4a139e02a9418eeb507cd91
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366779"
 ---
-# <a name="string-visualizer-dialog-box"></a>字串視覺化檢視對話方塊
+# <a name="string-visualizer-dialog-box"></a>[字串視覺化檢視] 對話方塊
 
 雖然您正在偵錯在 Visual Studio 中，您可以使用內建字串視覺化檢視中檢視字串。 字串視覺化檢視會顯示資料提示或偵錯工具視窗太長的字串。 它也可協助您識別格式不正確的字串。
 

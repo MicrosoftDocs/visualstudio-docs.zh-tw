@@ -11,17 +11,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc12ba16a52546b26a7941734caa8c6fca8419b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764857"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054440"
 ---
 # <a name="target-build-order"></a>目標建置順序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 您可以使用這些屬性來指定執行目標的順序：  
   
 - `InitialTargets`. 這個 `Project` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。  
@@ -47,7 +46,7 @@ ms.locfileid: "54764857"
   
  匯入的專案可能會有自己的 `InitialTargets` 屬性。 所有的初始目標都會彙總在一起，並依序執行。  
   
- 如需詳細資訊，請參閱[如何：指定要優先建置的目標](../msbuild/how-to-specify-which-target-to-build-first.md)。  
+ 如需詳細資訊，請參閱[如何：指定要建置的目標先](../msbuild/how-to-specify-which-target-to-build-first.md)。  
   
 ## <a name="default-targets"></a>預設目標  
  如果未在命令列上明確指定目標，則 [Project](../msbuild/project-element-msbuild.md) 項目的 `DefaultTargets` 屬性會指定要建置哪些目標。  
@@ -66,7 +65,7 @@ ms.locfileid: "54764857"
   
  匯入的專案可能會有自己的 `DefaultTargets` 屬性。 第一個遇到的 `DefaultTargets` 屬性會判斷將執行哪些預設目標。  
   
- 如需詳細資訊，請參閱[如何：指定要優先建置的目標](../msbuild/how-to-specify-which-target-to-build-first.md)。  
+ 如需詳細資訊，請參閱[如何：指定要建置的目標先](../msbuild/how-to-specify-which-target-to-build-first.md)。  
   
 ## <a name="first-target"></a>第一個目標  
  如果沒有初始目標、預設目標或命令列目標，則 MSBuild 會執行它在專案檔或任何匯入的專案檔中遇到的第一個目標。  
@@ -108,19 +107,19 @@ ms.locfileid: "54764857"
 ## <a name="determining-the-target-build-order"></a>判斷目標建置順序  
  MSBuild 會以如下方式判斷目標建置順序：  
   
-1.  執行 `InitialTargets` 目標。  
+1. 執行 `InitialTargets` 目標。  
   
-2.  執行命令列上使用 **/target** 參數指定的目標。 如果您未在命令列上指定目標，則會執行 `DefaultTargets` 目標。 如果兩者都不存在，則會執行第一個遇到的目標。  
+2. 執行命令列上使用 **/target** 參數指定的目標。 如果您未在命令列上指定目標，則會執行 `DefaultTargets` 目標。 如果兩者都不存在，則會執行第一個遇到的目標。  
   
-3.  評估目標的 `Condition` 屬性。 如果 `Condition` 屬性存在且評估為 `false`，則不會執行目標，且不會對組建產生任何進一步的作用。  
+3. 評估目標的 `Condition` 屬性。 如果 `Condition` 屬性存在且評估為 `false`，則不會執行目標，且不會對組建產生任何進一步的作用。  
   
-4.  執行目標之前，會執行它的 `DependsOnTargets` 目標。  
+4. 執行目標之前，會執行它的 `DependsOnTargets` 目標。  
   
-5.  執行目標之前，會執行在 `BeforeTargets` 屬性中列出它的任何目標。  
+5. 執行目標之前，會執行在 `BeforeTargets` 屬性中列出它的任何目標。  
   
-6.  執行目標之前，會將它的 `Inputs` 屬性和 `Outputs` 屬性進行比較。 如果 MSBuild 判斷有任何與一或多個對應輸入檔相關的輸出檔過時，則 MSBuild 會執行目標。 否則，MSBuild 會略過目標。  
+6. 執行目標之前，會將它的 `Inputs` 屬性和 `Outputs` 屬性進行比較。 如果 MSBuild 判斷有任何與一或多個對應輸入檔相關的輸出檔過時，則 MSBuild 會執行目標。 否則，MSBuild 會略過目標。  
   
-7.  執行或略過目標之後，就會執行在 `AfterTargets` 屬性中列出它的任何目標。  
+7. 執行或略過目標之後，就會執行在 `AfterTargets` 屬性中列出它的任何目標。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [目標](../msbuild/msbuild-targets.md)

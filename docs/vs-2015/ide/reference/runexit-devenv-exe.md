@@ -13,17 +13,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8d91975fb56a8fd731a5998137a739ee364edf1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0206f01df517c2dbd0c1c4052201dc8ded1bcbf9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793144"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115675"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 編譯並執行指定的專案或解決方案，然後關閉整合式開發環境 (IDE)。  
   
 ## <a name="syntax"></a>語法  
@@ -42,9 +41,9 @@ devenv /runexit {SolutionName|ProjectName}
 ## <a name="remarks"></a>備註  
  根據為使用中方案組態所指定的設定，編譯並執行指定的專案或方案。 這個參數在專案或解決方案執行時會將 IDE 最小化，並在專案或解決方案完成執行之後關閉 IDE。  
   
--   請以雙引號括住包含空格的字串。  
+- 請以雙引號括住包含空格的字串。  
   
--   摘要資訊 (包含錯誤) 可以顯示在 [命令] 視窗中，或使用 `/out` 參數指定的任何記錄檔中。  
+- 摘要資訊 (包含錯誤) 可以顯示在 [命令] 視窗中，或使用 `/out` 參數指定的任何記錄檔中。  
   
 ## <a name="example"></a>範例  
  這個範例會在最小化的 IDE 中，以使用中部署設定來執行解決方案 `MySolution`，然後關閉 IDE。  

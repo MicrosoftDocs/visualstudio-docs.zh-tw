@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f61c9623cd2006f0df82c93dc420a25f23d3d2a
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: d4b5fd1be29a5c22bcae371faaf7be8c6b70c4e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416198"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057546"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則傳播模型內的變更
 您可以建立存放區的規則，以將變更傳播從一個項目到另一個在 Visualization and Modeling SDK (VMSDK)。 存放區中的任何項目變更時發生，來執行，只有認可的最外層的交易時，通常被排定規則。 有不同類型的不同類型的事件，例如加入項目，或刪除它的規則。 您可以將規則附加至特定類型的項目、 圖形或圖表。 許多內建功能由規則定義： 例如，規則可確保當模型變更時，會更新圖表。 您可以自訂特定領域語言，藉由新增您自己的規則。
@@ -82,7 +82,7 @@ namespace ExampleNamespace
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>若要在網域類別上定義的規則
 
--   在自訂程式碼檔案中，定義的類別，並在它前面加<xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute>屬性：
+- 在自訂程式碼檔案中，定義的類別，並在它前面加<xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute>屬性：
 
     ```csharp
     [RuleOn(typeof(ExampleElement),
@@ -92,19 +92,19 @@ namespace ExampleNamespace
 
     ```
 
--   主體類型的第一個參數可以是網域類別、 網域關聯性、 圖形、 連接器或圖表。 通常，您將規則套用至網域類別和關聯性。
+- 主體類型的第一個參數可以是網域類別、 網域關聯性、 圖形、 連接器或圖表。 通常，您將規則套用至網域類別和關聯性。
 
      `FireTime`通常是`TopLevelCommit`。 這可確保只有在已進行交易的所有主要的變更之後，才便執行該項規則。 替代項目會以內嵌方式，它會執行規則，隨後變更;和 LocalCommit，它會執行目前的交易 （這可能不是最外層） 結尾的規則。 您也可以設定會影響在佇列中，其排序規則的優先順序，但這是不可靠的方法，達成您所需要的結果。
 
--   您可以指定的抽象類別，做為主體類型。
+- 您可以指定的抽象類別，做為主體類型。
 
--   將規則套用到主體類別的所有執行個體。
+- 將規則套用到主體類別的所有執行個體。
 
--   預設值為`FireTime`是 TimeToFire.TopLevelCommit。 這會導致最外層的交易認可時要執行規則。 替代方法是 TimeToFire.Inline。 這會導致觸發的事件後立即執行規則。
+- 預設值為`FireTime`是 TimeToFire.TopLevelCommit。 這會導致最外層的交易認可時要執行規則。 替代方法是 TimeToFire.Inline。 這會導致觸發的事件後立即執行規則。
 
 ### <a name="to-register-the-rule"></a>若要註冊規則
 
--   將您的規則類別新增至所傳回的類型清單`GetCustomDomainModelTypes`領域模型中：
+- 將您的規則類別新增至所傳回的類型清單`GetCustomDomainModelTypes`領域模型中：
 
     ```csharp
     public partial class ExampleDomainModel
@@ -120,14 +120,13 @@ namespace ExampleNamespace
 
     ```
 
--   如果您不確定您的領域模型類別的名稱，尋找檔案內**Dsl\GeneratedCode\DomainModel.cs**
+- 如果您不確定您的領域模型類別的名稱，尋找檔案內**Dsl\GeneratedCode\DomainModel.cs**
 
--   這段程式碼檔案中撰寫自訂程式碼在您的 DSL 專案中。
+- 這段程式碼檔案中撰寫自訂程式碼在您的 DSL 專案中。
 
 ### <a name="to-write-the-code-of-the-rule"></a>若要撰寫的程式碼的規則
 
 - 從下列基底類別的其中一個衍生規則類別：
-
 
   | 基底類別 | 觸發程序 |
   |-|-|
@@ -142,24 +141,23 @@ namespace ExampleNamespace
   | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | 執行會認可交易時。 |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | 執行回復交易時。 |
 
-
 - 每個類別會具有您覆寫的方法。 型別`override`在您的類別，以進行探索。 此方法的參數會識別正在變更的項目。
 
   請注意下列有關規則的重點：
 
-1.  一組在交易中的變更可能會觸發許多規則。 通常，最外層的交易認可時，會執行規則。 它們會在未指定的順序執行。
+1. 一組在交易中的變更可能會觸發許多規則。 通常，最外層的交易認可時，會執行規則。 它們會在未指定的順序執行。
 
-2.  規則一律會在交易內執行。 因此，您不必建立新的交易進行變更。
+2. 規則一律會在交易內執行。 因此，您不必建立新的交易進行變更。
 
-3.  當交易已回復，或執行復原或重做作業時，不會執行規則。 這些作業會重設其先前狀態的存放區的所有內容。 因此，如果您的規則變更的外部存放區的任何項目狀態時，它可能不請 synchronism 存放區內容。 若要更新外部存放區的狀態，最好是使用事件。 如需詳細資訊，請參閱 <<c0> [ 事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
+3. 當交易已回復，或執行復原或重做作業時，不會執行規則。 這些作業會重設其先前狀態的存放區的所有內容。 因此，如果您的規則變更的外部存放區的任何項目狀態時，它可能不請 synchronism 存放區內容。 若要更新外部存放區的狀態，最好是使用事件。 如需詳細資訊，請參閱 <<c0> [ 事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
-4.  從檔案載入模型時，會執行一些規則。 若要判斷載入或儲存是否正在進行中，使用`store.TransactionManager.CurrentTransaction.IsSerializing`。
+4. 從檔案載入模型時，會執行一些規則。 若要判斷載入或儲存是否正在進行中，使用`store.TransactionManager.CurrentTransaction.IsSerializing`。
 
-5.  如果您的規則的程式碼會建立多個規則的觸發程序，它們會新增至清單的結尾引發，並在異動完成之前會先執行。 DeletedRules 執行之後的所有其他規則。 一項規則可以執行許多次，在交易中，每個變更一次。
+5. 如果您的規則的程式碼會建立多個規則的觸發程序，它們會新增至清單的結尾引發，並在異動完成之前會先執行。 DeletedRules 執行之後的所有其他規則。 一項規則可以執行許多次，在交易中，每個變更一次。
 
-6.  若要傳遞規則的資訊，您可以儲存中的資訊`TransactionContext`。 這是只會保留在交易期間的字典。 當交易結束時，會處置它。 每個規則中的事件引數提供給它的存取。 請記住規則不會執行可預測的順序。
+6. 若要傳遞規則的資訊，您可以儲存中的資訊`TransactionContext`。 這是只會保留在交易期間的字典。 當交易結束時，會處置它。 每個規則中的事件引數提供給它的存取。 請記住規則不會執行可預測的順序。
 
-7.  除了考慮其他替代方案的使用規則。 例如，如果您想要更新屬性值變更時，請考慮使用計算的屬性。 如果您想要限制的大小或形狀的位置，使用`BoundsRule`。 如果您想要回應的屬性值變更時，新增`OnValueChanged`給屬性的處理常式。 如需詳細資訊，請參閱 <<c0> [ 回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)。
+7. 除了考慮其他替代方案的使用規則。 例如，如果您想要更新屬性值變更時，請考慮使用計算的屬性。 如果您想要限制的大小或形狀的位置，使用`BoundsRule`。 如果您想要回應的屬性值變更時，新增`OnValueChanged`給屬性的處理常式。 如需詳細資訊，請參閱 <<c0> [ 回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)。
 
 ## <a name="example"></a>範例
  若要將兩個項目連結的網域關聯性具現化時，下列範例會更新屬性。 不只在使用者建立時連結在圖表中，但也如果程式碼會建立連結，就會觸發此規則。

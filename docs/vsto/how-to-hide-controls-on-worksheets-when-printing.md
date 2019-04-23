@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3c582696dfba5abdcf132308477e586575777a6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a236b30552007112663ad9f985ddc94995fe1ef8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612617"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050020"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>HOW TO：列印時隱藏工作表的控制項
   當您列印 Windows Form 控制項的 Microsoft Office Excel 文件時，控制項也會顯示在列印的工作表上。 列印工作表時，您可以隱藏控制項。
@@ -35,11 +35,11 @@ ms.locfileid: "56612617"
 
 ## <a name="to-hide-controls-when-a-worksheet-is-printed"></a>若要隱藏工作表時的控制項列印
 
-1.  建立或在 Visual Studio 中開啟 Excel 專案並確認**Sheet1**會顯示在設計工具。 如需建立專案資訊，請參閱[How to:在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 建立或在 Visual Studio 中開啟 Excel 專案並確認**Sheet1**會顯示在設計工具。 如需建立專案資訊，請參閱[How to:在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-2.  從**通用控制項**索引標籤**工具箱**，拖曳<xref:Microsoft.Office.Tools.Excel.Controls.Button>控制的儲存格上`Sheet1`。
+2. 從**通用控制項**索引標籤**工具箱**，拖曳<xref:Microsoft.Office.Tools.Excel.Controls.Button>控制的儲存格上`Sheet1`。
 
-3.  在 **屬性**視窗中，將<xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A>屬性設**False**。
+3. 在 **屬性**視窗中，將<xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A>屬性設**False**。
 
 ## <a name="see-also"></a>另請參閱
 - [Office 文件上的控制項](../vsto/controls-on-office-documents.md)

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a35630000c92e88c77039114313799b000d5ebbd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f5d6c78f7d5c931272bb66b2706d3b5e531785cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062634"
 ---
 # <a name="namedrange-control"></a>NamedRange 控制項
   <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項是具有唯一名稱、可公開事件及繫結至資料的範圍。 如需詳細資訊，請參閱 < [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)。
@@ -55,21 +55,21 @@ ms.locfileid: "56604115"
 ## <a name="events"></a>事件
  下列事件適用於 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項：
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.Deselected>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.Deselected>
 
--   <xref:System.ComponentModel.Component.Disposed>
+- <xref:System.ComponentModel.Component.Disposed>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>
 
 ## <a name="see-also"></a>另請參閱
 - [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)

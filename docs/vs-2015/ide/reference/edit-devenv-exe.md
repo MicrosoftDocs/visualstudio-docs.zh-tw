@@ -12,17 +12,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b25e7bb0f6498e9160dd8602648ced28b3bb9fed
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c4dabbb0c21fd6b4cabb01655485c8158662adb2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780510"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667270"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 在現有 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 執行個體中開啟指定的檔案。  
   
 ## <a name="syntax"></a>語法  

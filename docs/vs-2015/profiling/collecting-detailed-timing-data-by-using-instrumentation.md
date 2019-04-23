@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 595c5f326ba7af25f3b6517f9955db18056e38f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c129ddf016e02fe6c29d5cf63fe57ba07fbd4e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794322"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087972"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>使用檢測收集計時詳細資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ ms.locfileid: "54794322"
   
  您可以使用下列程序的其中一個來指定檢測方法：  
   
--   在 [程式碼剖析精靈] 的第一頁，選取 [檢測] 。  
+- 在 [程式碼剖析精靈] 的第一頁，選取 [檢測] 。  
   
--   在 [效能總管]  工具列的 [方法]  清單中，按一下 [檢測] 。  
+- 在 [效能總管]  工具列的 [方法]  清單中，按一下 [檢測] 。  
   
--   在效能工作階段 [屬性] 對話方塊中的 [一般]  頁面，選取 [檢測] 。  
+- 在效能工作階段 [屬性] 對話方塊中的 [一般]  頁面，選取 [檢測] 。  
   
 ## <a name="common-tasks"></a>一般工作  
  您可以在效能工作階段的 [效能工作階段]  對話方塊中指定其他選項。 若要開啟此對話方塊：  

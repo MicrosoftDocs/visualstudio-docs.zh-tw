@@ -11,12 +11,12 @@ ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27623c22664e9d3c6b651615465e6abe812ea408
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 31b55c57f47f25814eff24f13bcf91408468d0f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087304"
 ---
 # <a name="what39s-new-in-source-control-in-visual-studio-2015"></a>什麼&#39;Visual Studio 2015 中的原始檔控制的新功能
 
@@ -33,17 +33,17 @@ ms.locfileid: "59000602"
   
  下列步驟提供所需實作原始檔控制套件的一般概觀。 如需詳細資訊，請參閱 <<c0> [ 建立原始檔控制 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)。  
   
-1.  建立提供私用的原始檔控制服務的 VSPackage。  
+1. 建立提供私用的原始檔控制服務的 VSPackage。  
   
-2.  在原始檔控制相關服務，會提供實作介面[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)](例如<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>而<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>介面)。  
+2. 在原始檔控制相關服務，會提供實作介面[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)](例如<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>而<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>介面)。  
   
-3.  註冊您的原始檔控制 VSPackage。  
+3. 註冊您的原始檔控制 VSPackage。  
   
-4.  實作所有的原始檔控制 UI，包括功能表項目、 對話方塊、 工具列和快顯功能表。  
+4. 實作所有的原始檔控制 UI，包括功能表項目、 對話方塊、 工具列和快顯功能表。  
   
-5.  所有的原始檔控制相關事件會傳遞至原始檔控制 VSackage 中，當它為作用中且必須由您的 VSPackage。  
+5. 所有的原始檔控制相關事件會傳遞至原始檔控制 VSackage 中，當它為作用中且必須由您的 VSPackage。  
   
-6.  原始檔控制 VSPackage 必須接聽事件，例如實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>介面及追蹤專案文件 (TPD) 事件 (由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>介面)，並採取必要動作。  
+6. 原始檔控制 VSPackage 必須接聽事件，例如實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>介面及追蹤專案文件 (TPD) 事件 (由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>介面)，並採取必要動作。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   

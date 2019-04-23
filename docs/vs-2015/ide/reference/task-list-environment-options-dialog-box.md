@@ -24,17 +24,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94f0fc19c84a5e86dbfff27a88b179f6a9bfb566
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e4010d474c2f1ab1997b372fa551e168fe618021
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795480"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651652"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>選項對話方塊、環境、工作清單
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 此 [選項] 頁面可讓您新增、刪除和變更產生 [工作清單] 提醒的註解語彙基元。 若要顯示這些設定，請從 [工具] 功能表中選取 [選項]，並展開 [環境] 資料夾，然後選擇 [工作清單]。  
   
 ## <a name="task-list-options"></a>工作清單選項  

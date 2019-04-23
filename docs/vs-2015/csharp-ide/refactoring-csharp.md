@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ac19ac0e992b51affdbf6a0e6e3268ddfa52d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943512"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046314"
 ---
 # <a name="refactoring-c"></a>重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ ms.locfileid: "58943512"
   
  Visual C# 上提供下列的重構命令**重構**功能表：  
   
--   [擷取方法重構 (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [擷取方法重構 (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [重新命名重構 (C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [重新命名重構 (C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [封裝欄位重構 (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [封裝欄位重構 (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [擷取介面重構 (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [擷取介面重構 (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [移除參數重構 (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [移除參數重構 (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [重新排序參數重構 [C#]](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [重新排序參數重構 [C#]](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>多專案重構  
  Visual Studio 支援多專案重構為位於相同方案中的專案。 修正參考到檔案的重整作業的所有相同語言的所有專案更正這些參考。 這適用於任何專案對專案參考。 例如，如果您已參考類別庫中，當您重新命名類別庫類型的主控台應用程式 (使用`Rename`重構作業)，也會更新在主控台應用程式中的類別程式庫類型的參考。  

@@ -14,12 +14,12 @@ ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 269c26d1b2caa56ba3306d151cff1a7607ac837c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca01f28b7f0ad7c1e4bad5ee13e6e21a5f2f7e2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945655"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106770"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>HOW TO：將程式庫提供的符號清單公開至物件管理員
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58945655"
   
 #### <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>物件管理員提供的符號清單  
   
-1.  取得的符號清單中的項目數目，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>方法。 下列範例會示範如何 object manager 取得資訊清單中的項目數。  
+1. 取得的符號清單中的項目數目，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>方法。 下列範例會示範如何 object manager 取得資訊清單中的項目數。  
   
     ```vb  
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()  
@@ -59,7 +59,7 @@ ms.locfileid: "58945655"
   
     ```  
   
-2.  取得類別目錄以及指定的清單項目的屬性的相關資訊，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>方法。 中指定的項目分類<xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY>列舉型別。 下列範例會示範物件管理員如何取得屬性的指定分類的項目。  
+2. 取得類別目錄以及指定的清單項目的屬性的相關資訊，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>方法。 中指定的項目分類<xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY>列舉型別。 下列範例會示範物件管理員如何取得屬性的指定分類的項目。  
   
     ```vb  
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer  
@@ -154,7 +154,7 @@ ms.locfileid: "58945655"
   
     ```  
   
-3.  取得指定的清單項目之文字表示，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A>方法。 下列範例示範如何取得指定項目的完整名稱。  
+3. 取得指定的清單項目之文字表示，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A>方法。 下列範例示範如何取得指定項目的完整名稱。  
   
     ```vb  
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer  
@@ -172,7 +172,7 @@ ms.locfileid: "58945655"
   
     ```  
   
-4.  取得指定的清單項目圖示的資訊，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>方法。 圖示代表的型別 （類別、 方法等等） 和協助工具 （私人、 公用，依此類推） 的清單項目。 下列範例示範如何取得根據指定的項目屬性圖示的資訊。  
+4. 取得指定的清單項目圖示的資訊，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>方法。 圖示代表的型別 （類別、 方法等等） 和協助工具 （私人、 公用，依此類推） 的清單項目。 下列範例示範如何取得根據指定的項目屬性圖示的資訊。  
   
     ```vb  
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer  
@@ -254,7 +254,7 @@ ms.locfileid: "58945655"
   
     ```  
   
-5.  取得有關指定的清單項目是否可展開藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>方法。 下列範例示範如何取得在指定的項目是否可展開的資訊。  
+5. 取得有關指定的清單項目是否可展開藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>方法。 下列範例示範如何取得在指定的項目是否可展開的資訊。  
   
     ```vb  
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer  
@@ -281,7 +281,7 @@ ms.locfileid: "58945655"
   
     ```  
   
-6.  藉由實作取得子清單的指定的清單項目的符號<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>方法。 下列範例示範如何取得子清單的指定項目符號**呼叫**或是**的呼叫端**圖形。  
+6. 藉由實作取得子清單的指定的清單項目的符號<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>方法。 下列範例示範如何取得子清單的指定項目符號**呼叫**或是**的呼叫端**圖形。  
   
     ```vb  
     ' Call graph list.  

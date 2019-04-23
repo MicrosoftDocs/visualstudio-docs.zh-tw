@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ecfff316a6daa4fe7f0b1fc0619f7dd7961c682
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 15a07796278faad43f95b33c020b167f07daa009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59000468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105626"
 ---
 # <a name="graphics-event-list"></a>圖形事件清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "59000468"
   
 ##### <a name="to-change-the-event-list-view-mode"></a>變更事件清單檢視模式  
   
--   在 [圖形事件清單]  視窗的事件清單上方，找到 [檢視]  下拉式清單，並選擇 [時間軸]  檢視或 [繪製呼叫]  檢視。  
+- 在 [圖形事件清單]  視窗的事件清單上方，找到 [檢視]  下拉式清單，並選擇 [時間軸]  檢視或 [繪製呼叫]  檢視。  
   
 ### <a name="filtering-events"></a>篩選事件  
  您可以使用 [搜尋] 方塊 (位在 [圖形事件清單]  視窗右上角) 篩選事件清單，使清單只包括名稱包含特定關鍵字的事件。 如上圖所示，您可以指定單一關鍵字 (如 `Vertex`)，或使用以分號分隔清單指定多個關鍵字，例如 `Draw;Primitive`，其符合名稱中有 `Draw` 或 `Primitive` 的事件。 搜尋會受到空格影響；例如， `VSSet` 和 `VS Set` 是不同的搜尋，因此，請務必小心地建立搜尋。  

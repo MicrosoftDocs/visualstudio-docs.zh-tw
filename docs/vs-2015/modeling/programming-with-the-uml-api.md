@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24f4f21c984f70ca10236de7bf15d0187fd12d71
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e85fc0add84f6f6097355d1fc7a58cc954c8e538
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939282"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111749"
 ---
 # <a name="programming-with-the-uml-api"></a>Programming with the UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ UML API 的 Visual Studio 可讓您撰寫程式碼來建立、 讀取和更新 U
   
  來自該平台的類型會顯示在可供您參考以撰寫 UML 擴充功能的某些組件上。 雖然您可以存取 [!INCLUDE[dsl](../includes/dsl-md.md)] 應用程式開發介面以擴充 UML 工具，但您應注意下列事項：  
   
--   您可能會發現有些明顯的簡單變更會導致不一致的情況與未預期的影響。  
+- 您可能會發現有些明顯的簡單變更會導致不一致的情況與未預期的影響。  
   
--   實作方式日後可能會有所變更，而使您透過 [!INCLUDE[dsl](../includes/dsl-md.md)] 應用程式開發介面所做的修改不再適用。  
+- 實作方式日後可能會有所變更，而使您透過 [!INCLUDE[dsl](../includes/dsl-md.md)] 應用程式開發介面所做的修改不再適用。  
   
 ## <a name="the-api-assemblies"></a>應用程式開發介面組件  
  下表摘錄了可為 UML 工具提供擴充性的組件，以及建議您使用的命名空間。  

@@ -13,12 +13,12 @@ caps.latest.revision: 111
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73a94ee7a6d3ed874d61b589186706b50ad0a376
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7c6783f3d6d79606ccc5002b978be40097c8c90b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040515"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>使用 IntelliTrace 獨立收集器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,33 +51,33 @@ ms.locfileid: "58944982"
 
 - [我還可以在哪裏取得 IntelliTrace 資料？](#WhereElse)
 
-##  <a name="WhatApps"></a> 哪些 App 與收集器搭配使用？
+## <a name="WhatApps"></a> 哪些 App 與收集器搭配使用？
 
--   裝載於 Internet Information Services (IIS) 7.0、7.5 和 8.0 版的 ASP.NET Web App
+- 裝載於 Internet Information Services (IIS) 7.0、7.5 和 8.0 版的 ASP.NET Web App
 
--   SharePoint 2010 和 SharePoint 2013 應用程式
+- SharePoint 2010 和 SharePoint 2013 應用程式
 
--   Windows Presentation Foundation (WPF) 和 Windows Forms App。
+- Windows Presentation Foundation (WPF) 和 Windows Forms App。
 
-##  <a name="GetStarted"></a> 如何開始？
+## <a name="GetStarted"></a> 如何開始？
 
-1.  [安裝收集器](#BKMK_Install_the_IntelliTrace_Stand_Alone_Collector)
+1. [安裝收集器](#BKMK_Install_the_IntelliTrace_Stand_Alone_Collector)
 
-2.  [設定收集器目錄的權限](#ConfigurePermissionsRunningCollector)
+2. [設定收集器目錄的權限](#ConfigurePermissionsRunningCollector)
 
-3.  [安裝 IntelliTrace PowerShell Cmdlet 以收集 Web App 或 SharePoint 應用程式的資料](#BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets)
+3. [安裝 IntelliTrace PowerShell Cmdlet 以收集 Web App 或 SharePoint 應用程式的資料](#BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets)
 
-4.  [設定 .iTrace 檔案目錄的權限](#BKMK_Create_and_Configure_a_Log_File_Directory)
+4. [設定 .iTrace 檔案目錄的權限](#BKMK_Create_and_Configure_a_Log_File_Directory)
 
-5.  [從 Web App 或 SharePoint 應用程式收集資料](#BKMK_Collect_Data_from_IIS_Application_Pools)
+5. [從 Web App 或 SharePoint 應用程式收集資料](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
      -或-
 
      [從 Managed App 收集資料](#BKMK_Collect_Data_from_Executables)
 
-6.  [在 Visual Studio Enterprise 中，開啟 .iTrace 檔案。](#BKMK_View_IntelliTrace_Log_Files)
+6. [在 Visual Studio Enterprise 中，開啟 .iTrace 檔案。](#BKMK_View_IntelliTrace_Log_Files)
 
-##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> 安裝收集器
+## <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> 安裝收集器
 
 1. 在您的應用程式伺服器上，建立收集器目錄，例如：**C:\IntelliTraceCollector**
 
@@ -95,92 +95,92 @@ ms.locfileid: "58944982"
 
    - **Visual Studio 安裝資料夾**：
 
-     1.  從下列資料夾複製 IntelliTraceCollection.cab：
+     1. 從下列資料夾複製 IntelliTraceCollection.cab：
 
           **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-     2.  將 IntelliTraceCollection.cab 放入收集器目錄，例如：**C:\IntelliTraceCollector**
+     2. 將 IntelliTraceCollection.cab 放入收集器目錄，例如：**C:\IntelliTraceCollector**
 
 3. 展開 IntelliTraceCollection.cab：
 
-   1.  在 App 伺服器上，以系統管理員身分開啟 [命令提示字元] 視窗。
+   1. 在 App 伺服器上，以系統管理員身分開啟 [命令提示字元] 視窗。
 
-   2.  瀏覽至收集器目錄，例如：**C:\IntelliTraceCollector**
+   2. 瀏覽至收集器目錄，例如：**C:\IntelliTraceCollector**
 
-   3.  使用 **expand** 命令 (結尾含句點 (**.**))，以展開 IntelliTraceCollection.cab：
+   3. 使用 **expand** 命令 (結尾含句點 (**.**))，以展開 IntelliTraceCollection.cab：
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
        >  句點 (**.**) 會保留含有當地語系化收集計劃的子資料夾。
 
-##  <a name="ConfigurePermissionsRunningCollector"></a> 設定收集器目錄的權限
+## <a name="ConfigurePermissionsRunningCollector"></a> 設定收集器目錄的權限
 
-1.  在 App 伺服器上，以系統管理員身分開啟 [命令提示字元] 視窗。
+1. 在 App 伺服器上，以系統管理員身分開啟 [命令提示字元] 視窗。
 
-2.  使用 Windows **icacls** 命令，授與伺服器管理員收集器目錄的完整權限。 例如：
+2. 使用 Windows **icacls** 命令，授與伺服器管理員收集器目錄的完整權限。 例如: 
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
-3.  收集 Web App 或 SharePoint 應用程式的資料：
+3. 收集 Web App 或 SharePoint 應用程式的資料：
 
-    1.  將收集器目錄的完整權限授與執行 IntelliTrace PowerShell Cmdlet 的人員。
+    1. 將收集器目錄的完整權限授與執行 IntelliTrace PowerShell Cmdlet 的人員。
 
          例如: 
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
-    2.  將收集器目錄的讀取和執行權限授與 Web App 或 SharePoint 應用程式的應用程式集區。
+    2. 將收集器目錄的讀取和執行權限授與 Web App 或 SharePoint 應用程式的應用程式集區。
 
-         例如：
+         例如: 
 
-        -   針對 **DefaultAppPool** 應用程式集區中的 Web App：
+        - 針對 **DefaultAppPool** 應用程式集區中的 Web App：
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\DefaultAppPool":RX`
 
-        -   針對 **SharePoint - 80** 應用程式集區中的 SharePoint 應用程式：
+        - 針對 **SharePoint - 80** 應用程式集區中的 SharePoint 應用程式：
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\SharePoint - 80":RX`
 
-##  <a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> 安裝 IntelliTrace PowerShell Cmdlet 以收集 Web App 或 SharePoint 應用程式的資料
+## <a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> 安裝 IntelliTrace PowerShell Cmdlet 以收集 Web App 或 SharePoint 應用程式的資料
 
-1.  在 App 伺服器上，確認已啟用 PowerShell。 在大部分的 Windows Server 版本上，您可以在 [伺服器管理員]  系統管理工具中加入這項功能。
+1. 在 App 伺服器上，確認已啟用 PowerShell。 在大部分的 Windows Server 版本上，您可以在 [伺服器管理員]  系統管理工具中加入這項功能。
 
      ![使用伺服器管理員 新增 PowerShell](../debugger/media/intellitrace-servermanager-addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
 
-2.  安裝 IntelliTrace PowerShell Cmdlet。
+2. 安裝 IntelliTrace PowerShell Cmdlet。
 
-    1.  以系統管理員身分開啟 PowerShell 命令視窗。
+    1. 以系統管理員身分開啟 PowerShell 命令視窗。
 
-        1.  依序選擇 [開始] 、[所有程式] 、[附屬應用程式] 和 [Windows PowerShell] 。
+        1. 依序選擇 [開始] 、[所有程式] 、[附屬應用程式] 和 [Windows PowerShell] 。
 
-        2.  選擇下列其中一個步驟：
+        2. 選擇下列其中一個步驟：
 
-            -   在 64 位元作業系統上，開啟 **Windows PowerShell**的捷徑功能表。 選擇 [以系統管理員身分執行] 。
+            - 在 64 位元作業系統上，開啟 **Windows PowerShell**的捷徑功能表。 選擇 [以系統管理員身分執行] 。
 
-            -   在 32 位元作業系統上，開啟 **Windows PowerShell (x86)** 的捷徑功能表。 選擇 [以系統管理員身分執行] 。
+            - 在 32 位元作業系統上，開啟 **Windows PowerShell (x86)** 的捷徑功能表。 選擇 [以系統管理員身分執行] 。
 
-    2.  在 PowerShell 命令視窗中，使用 **Import-Module** 命令匯入 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**。
+    2. 在 PowerShell 命令視窗中，使用 **Import-Module** 命令匯入 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**。
 
          例如：
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
-##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> 設定 .iTrace 檔案目錄的權限
+## <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> 設定 .iTrace 檔案目錄的權限
 
 1. 在您的應用程式伺服器上，建立.iTrace 檔案目錄，例如：**C:\IntelliTraceLogFiles**
 
    > [!NOTE]
    > - 若要避免讓應用程式變慢，請選擇本機高速磁碟上不是非常活躍的位置。
-   >   -   您可以將 .iTrace 檔案和收集器檔案放在相同的位置。 不過，如果您有 Web App 或 SharePoint 應用程式，請確認這個位置是在裝載應用程式的目錄外部。
+   >   - 您可以將 .iTrace 檔案和收集器檔案放在相同的位置。 不過，如果您有 Web App 或 SharePoint 應用程式，請確認這個位置是在裝載應用程式的目錄外部。
    >
    > [!IMPORTANT]
    > - 限制 iTrace 檔案目錄，僅供必須使用收集器的識別使用。 .ITrace 檔案可能包含機密資訊 (例如使用者、資料庫、其他來源位置和連接字串中的資料)，因為 IntelliTrace 可以記錄傳遞給方法參數或做為傳回值的任何資料。
-   >   -   請確定可以開啟 .iTrace 檔案的人具有檢視機密資料的授權。 共用 .iTrace 檔案時請小心。 如果其他人必須具有存取權，請將檔案複製到安全的共用位置。
+   >   - 請確定可以開啟 .iTrace 檔案的人具有檢視機密資料的授權。 共用 .iTrace 檔案時請小心。 如果其他人必須具有存取權，請將檔案複製到安全的共用位置。
 
 2. 針對 Web App 或 SharePoint 應用程式，將 .iTrace 檔案目錄的完整權限授與其應用程式集區。 您可以使用 Windows **icacls** 命令，或使用 Windows 檔案總管 (或檔案總管)。
 
-    例如：
+    例如: 
 
    - 使用 Windows **icacls** 命令設定權限：
 
@@ -196,23 +196,23 @@ ms.locfileid: "58944982"
 
    - 使用 Windows 檔案總管 (或檔案總管) 設定權限：
 
-     1.  開啟 .iTrace 檔案目錄的 [屬性]  。
+     1. 開啟 .iTrace 檔案目錄的 [屬性]  。
 
-     2.  在 [安全性]  索引標籤上，依序選擇 [編輯] 和 [新增] 。
+     2. 在 [安全性]  索引標籤上，依序選擇 [編輯] 和 [新增] 。
 
-     3.  請確認 [內建安全性主體]  出現在 [選取這個物件類型]  方塊中。 如果未出現，請選擇 [物件類型]  ，以將它加入。
+     3. 請確認 [內建安全性主體]  出現在 [選取這個物件類型]  方塊中。 如果未出現，請選擇 [物件類型]  ，以將它加入。
 
-     4.  請確認您的本機電腦出現在 [從這個位置]  方塊中。 如果未出現，請選擇 [位置]  變更它。
+     4. 請確認您的本機電腦出現在 [從這個位置]  方塊中。 如果未出現，請選擇 [位置]  變更它。
 
-     5.  在 [輸入要選取的物件名稱]  方塊中，加入 Web App 或 SharePoint 應用程式的應用程式集區。
+     5. 在 [輸入要選取的物件名稱]  方塊中，加入 Web App 或 SharePoint 應用程式的應用程式集區。
 
-     6.  選擇 [檢查名稱]  來解析名稱。 選擇 [確定] 。
+     6. 選擇 [檢查名稱]  來解析名稱。 選擇 [確定] 。
 
-     7.  請確認應用程式集區具有 [完全控制] 。
+     7. 請確認應用程式集區具有 [完全控制] 。
 
-##  <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> 從 Web App 或 SharePoint 應用程式收集資料
+## <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> 從 Web App 或 SharePoint 應用程式收集資料
 
-1.  若要開始收集資料，請以系統管理員身分開啟 PowerShell 命令視窗，然後執行此命令：
+1. 若要開始收集資料，請以系統管理員身分開啟 PowerShell 命令視窗，然後執行此命令：
 
      `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
@@ -233,28 +233,28 @@ ms.locfileid: "58944982"
 
      *「我現在可以開啟 .iTrace 檔案嗎？」* (Can I open the .iTrace file at this time?)不可以，在資料收集期間會鎖定檔案。
 
-2.  重現問題。
+2. 重現問題。
 
-3.  若要取得 .iTrace 檔案的快照，請使用此語法：
+3. 若要取得 .iTrace 檔案的快照，請使用此語法：
 
      `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
-4.  若要檢查收集狀態，請使用此語法：
+4. 若要檢查收集狀態，請使用此語法：
 
      `Get-IntelliTraceCollectionStatus`
 
-5.  若要停止收集資料，請使用此語法：
+5. 若要停止收集資料，請使用此語法：
 
      `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
     >  執行這個命令之後，請輸入 **Y** ，確認您想要停止收集資料。 否則，收集器可能會繼續收集資料、.iTrace 檔案會保留鎖定，或檔案可能未包含任何有用的資料。
 
-6.  [在 Visual Studio Enterprise 中，開啟 .iTrace 檔案。](#BKMK_View_IntelliTrace_Log_Files)
+6. [在 Visual Studio Enterprise 中，開啟 .iTrace 檔案。](#BKMK_View_IntelliTrace_Log_Files)
 
-##  <a name="BKMK_Collect_Data_from_Executables"></a> 從 Managed App 收集資料
+## <a name="BKMK_Collect_Data_from_Executables"></a> 從 Managed App 收集資料
 
-1.  若要同時啟動 App 並收集資料，請使用此語法：
+1. 若要同時啟動 App 並收集資料，請使用此語法：
 
      *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
@@ -269,25 +269,25 @@ ms.locfileid: "58944982"
     |*.iTrace 檔案目錄及檔案名稱的完整路徑*|.iTrace 檔案目錄以及副檔名為 **.itrace** 之 .iTrace 檔案名稱的完整路徑。 **安全性注意事項：** 提供完整路徑，而非相對路徑。|
     |*應用程式可執行檔案及檔案名稱的完整路徑*|Managed App 的路徑和檔案名稱|
 
-2.  結束 App，以停止資料收集。
+2. 結束 App，以停止資料收集。
 
-3.  [在 Visual Studio Enterprise 中，開啟 .iTrace 檔案。](#BKMK_View_IntelliTrace_Log_Files)
+3. [在 Visual Studio Enterprise 中，開啟 .iTrace 檔案。](#BKMK_View_IntelliTrace_Log_Files)
 
-##  <a name="BKMK_View_IntelliTrace_Log_Files"></a> 在 Visual Studio Enterprise 中，開啟 .iTrace 檔案。
+## <a name="BKMK_View_IntelliTrace_Log_Files"></a> 在 Visual Studio Enterprise 中，開啟 .iTrace 檔案。
 
 > [!NOTE]
 >  若要使用 IntelliTrace 進行偵錯並逐步執行程式碼，您必須具有相符的原始程式檔和符號檔。 請參閱[在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。
 
-1.  移動此 .iTrace 檔案，或將它複製到具有 Visual Studio Enterprise (但不是 Professional 或 Community 版本) 的電腦。
+1. 移動此 .iTrace 檔案，或將它複製到具有 Visual Studio Enterprise (但不是 Professional 或 Community 版本) 的電腦。
 
-2.  在 Visual Studio 外部按兩下 .iTrace 檔案，或從 Visual Studio 內開啟該檔案。
+2. 在 Visual Studio 外部按兩下 .iTrace 檔案，或從 Visual Studio 內開啟該檔案。
 
      Visual Studio 會顯示 [IntelliTrace 摘要]  頁面。 在大部分的區段中，您都可以檢閱事件或其他項目，並選擇一個項目，然後在發生事件的位置以及時間使用 IntelliTrace 開始偵錯。 請參閱[儲存的 IntelliTrace 資料的使用](../debugger/using-saved-intellitrace-data.md)。
 
     > [!NOTE]
     >  若要使用 IntelliTrace 進行偵錯並逐步執行程式碼，您必須在開發電腦上具有相符的原始程式檔和符號檔。 請參閱[在部署後診斷問題](../debugger/diagnose-problems-after-deployment.md)。
 
-##  <a name="Minimizing"></a> 如何取得大部分的資料，而不會讓 App 變慢？
+## <a name="Minimizing"></a> 如何取得大部分的資料，而不會讓 App 變慢？
  IntelliTrace 可以收集大量資料，因此對您 App 效能的影響取決於 IntelliTrace 所收集的資料以及所分析的程式碼種類。 請參閱 [最佳化實際伺服器上的 IntelliTrace 收集](http://go.microsoft.com/fwlink/?LinkId=255233)。
 
  以下是一些取得大部分資料而不會讓應用程式變慢的方法：
@@ -310,9 +310,9 @@ ms.locfileid: "58944982"
 
    *這樣如何改善效能？*
 
-  -   您可以停用與 App 無關的事件，以減少啟動時間。 例如，針對未使用 Windows Workflow 的 App 停用 Windows Workflow 事件。
+  - 您可以停用與 App 無關的事件，以減少啟動時間。 例如，針對未使用 Windows Workflow 的 App 停用 Windows Workflow 事件。
 
-  -   您可以停用可存取登錄但未顯示登錄設定問題之 App 的登錄事件，以改善啟動和執行階段效能。
+  - 您可以停用可存取登錄但未顯示登錄設定問題之 App 的登錄事件，以改善啟動和執行階段效能。
 
 - 檢閱 IntelliTrace 在收集計劃中為其收集資料的模組。 編輯收集計劃，使其只包括您感興趣的模組：
 
@@ -379,11 +379,11 @@ ms.locfileid: "58944982"
 
    收集器會記錄 `id`方法所傳回 `Employee.Id`、 `Employee.Name` 、 `Employee` 和 `AlterEmployee` 物件的值。 不過，收集器不會記錄 `Address` 物件的資訊，不論此物件是否為 Null。 收集器也不會記錄 `AlterEmployee` 方法中區域變數的資料，除非其他方法使用這些區域變數做為參數 (當時記錄為方法參數)。
 
-##  <a name="WhereElse"></a> 我還可以在哪裏取得 IntelliTrace 資料？
+## <a name="WhereElse"></a> 我還可以在哪裏取得 IntelliTrace 資料？
 
--   從 偵錯在 Visual Studio Enterprise 中的工作階段的 IntelliTrace，請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
+- 從 偵錯在 Visual Studio Enterprise 中的工作階段的 IntelliTrace，請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
--   從 Microsoft Test Manager 中的測試工作階段，請參閱[How to:收集 IntelliTrace 資料以協助偵錯困難的問題](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues?view=vs-2015)。
+- 從 Microsoft Test Manager 中的測試工作階段，請參閱[How to:收集 IntelliTrace 資料以協助偵錯困難的問題](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues?view=vs-2015)。
 
 ## <a name="where-can-i-get-more-information"></a>哪裡可以取得詳細資訊？
  [使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)

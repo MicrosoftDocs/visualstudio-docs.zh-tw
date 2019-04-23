@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000548"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059262"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文字範本在執行階段產生文字
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,16 +53,16 @@ This report is Company Confidential.
   
 #### <a name="to-create-a-run-time-text-template"></a>若要建立執行階段文字範本  
   
-1.  在 [方案總管] 中，您的專案的捷徑功能表上選擇**新增**，**新項目**。  
+1. 在 [方案總管] 中，您的專案的捷徑功能表上選擇**新增**，**新項目**。  
   
-2.  在 **加入新項目**對話方塊中，選取**執行階段文字範本**。 (在[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]查看底下**常見 Items\General**。)  
+2. 在 **加入新項目**對話方塊中，選取**執行階段文字範本**。 (在[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]查看底下**常見 Items\General**。)  
   
-3.  輸入您的範本檔案的名稱。  
+3. 輸入您的範本檔案的名稱。  
   
     > [!NOTE]
     >  範本檔案名稱將用於做為產生的程式碼中的類別名稱。 因此，它應該沒有空格或標點符號。  
   
-4.  選擇 [新增]。  
+4. 選擇 [新增]。  
   
      會建立新的檔案副檔名 **.tt**。 其**自訂工具**屬性設定為**TextTemplatingFilePreprocessor**。 它包含下列幾行：  
   
@@ -79,18 +79,18 @@ This report is Company Confidential.
   
 #### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>若要將現有的文字檔轉換成執行階段範本  
   
-1.  包含檔案到您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案。 在 [方案總管] 中，在專案的捷徑功能表上選擇**新增**，**現有項目**。  
+1. 包含檔案到您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案。 在 [方案總管] 中，在專案的捷徑功能表上選擇**新增**，**現有項目**。  
   
-2.  設定檔案的**自訂工具**屬性設**TextTemplatingFilePreprocessor**。 在 [方案總管] 中，檔案的捷徑功能表上選擇**屬性**。  
+2. 設定檔案的**自訂工具**屬性設**TextTemplatingFilePreprocessor**。 在 [方案總管] 中，檔案的捷徑功能表上選擇**屬性**。  
   
     > [!NOTE]
     >  如果已設定的屬性，請確定它是**TextTemplatingFilePreprocessor**而非**TextTemplatingFileGenerator**。 如果包含檔案已擴充此情形 **.tt**。  
   
-3.  變更的檔案名稱副檔名 **.tt**。 雖然這個步驟是選擇性的它可協助您避免在不正確的編輯器中開啟檔案。  
+3. 變更的檔案名稱副檔名 **.tt**。 雖然這個步驟是選擇性的它可協助您避免在不正確的編輯器中開啟檔案。  
   
-4.  移除檔案名稱的主要部分的任何空格或標點符號。 比方說 「 我的 Web Page.tt"是不正確，但是 「 MyWebPage.tt"正確無誤。 檔案名稱將用於做為產生的程式碼中的類別名稱。  
+4. 移除檔案名稱的主要部分的任何空格或標點符號。 比方說 「 我的 Web Page.tt"是不正確，但是 「 MyWebPage.tt"正確無誤。 檔案名稱將用於做為產生的程式碼中的類別名稱。  
   
-5.  在檔案開頭插入下面這一行。 如果您使用 Visual Basic 專案中，會取代 「 C#"與"VB"。  
+5. 在檔案開頭插入下面這一行。 如果您使用 Visual Basic 專案中，會取代 「 C#"與"VB"。  
   
      `<#@ template language="C#" #>`  
   
@@ -104,7 +104,7 @@ This report is Company Confidential.
  語言參數將取決於您專案的語言。  
   
 ### <a name="plain-content"></a>純文字內容  
- 編輯 **.tt**檔案，以包含您想要您的應用程式產生的文字。 例如：  
+ 編輯 **.tt**檔案，以包含您想要您的應用程式產生的文字。 例如:   
   
 ```  
 <html><body>  
@@ -115,7 +115,7 @@ This report is Company Confidential.
 ```  
   
 ### <a name="embedded-program-code"></a>內嵌的程式碼  
- 您可以插入程式碼之間`<#`和`#>`。 例如:   
+ 您可以插入程式碼之間`<#`和`#>`。 例如：  
   
 ```csharp  
 <table>  

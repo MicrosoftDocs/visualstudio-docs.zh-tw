@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64527c784cf61c02ad3031e9ba922ebf707e7e6f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b85efc44b39485476154d0f41f3261b2aeb1ea7c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941368"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047198"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>錯誤：Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ ms.locfileid: "58941368"
   
 ### <a name="to-enable-debugging-on-a-web-server-with-urlscan-installed"></a>若要在已安裝 URLScan 的 Web 伺服器上啟用偵錯  
   
-1.  找出 Urlscan.ini 檔。 通常您會在類似如下的目錄中找到它：  
+1. 找出 Urlscan.ini 檔。 通常您會在類似如下的目錄中找到它：  
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  建立該檔案的複本，並命名為 **Urlscan.old**。  
+2. 建立該檔案的複本，並命名為 **Urlscan.old**。  
   
-3.  使用 [記事本] 或您選擇的文字編輯器開啟 Urlscan.ini 檔的原始複本。  
+3. 使用 [記事本] 或您選擇的文字編輯器開啟 Urlscan.ini 檔的原始複本。  
   
-4.  在 Urlscan.ini 中，找出 [AllowVerbs] 區段。 將 DEBUG 加入至 [AllowVerbs] 區段。 如果您在 [AllowVerbs] 區段中看到 ;DEBUG，請移除分號以取消動詞命令的註解。  
+4. 在 Urlscan.ini 中，找出 [AllowVerbs] 區段。 將 DEBUG 加入至 [AllowVerbs] 區段。 如果您在 [AllowVerbs] 區段中看到 ;DEBUG，請移除分號以取消動詞命令的註解。  
   
-5.  找出 [DenyVerbs] 區段。 如果 DEBUG 出現在 [DenyVerbs] 區段中，請移除它。  
+5. 找出 [DenyVerbs] 區段。 如果 DEBUG 出現在 [DenyVerbs] 區段中，請移除它。  
   
-6.  儲存檔案。  
+6. 儲存檔案。  
   
-7.  重新啟動伺服器或重新啟動 IIS。  
+7. 重新啟動伺服器或重新啟動 IIS。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   

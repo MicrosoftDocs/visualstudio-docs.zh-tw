@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe707f1b779978b26a53d11c32e92341e667be04
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 99109376c6c0279bcdd3852bd5bbadd8795c8564
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067270"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>HOW TO：建置 SharePoint 解決方案
 
@@ -27,11 +27,11 @@ ms.locfileid: "54867118"
 
 ## <a name="to-build-sharepoint-solutions"></a>若要建置 SharePoint 方案
 
-1.  決定您要進行偵錯或發行組建。 如需詳細資訊，請參閱 <<c0> [ 偵錯工具專案設定](../debugger/debugger-project-settings.md)。
+1. 決定您要進行偵錯或發行組建。 如需詳細資訊，請參閱 <<c0> [ 偵錯工具專案設定](../debugger/debugger-project-settings.md)。
 
-2.  選擇適當的選項來建立或重建您的方案或專案。 如需詳細資訊，請參閱 < [Visual Studio 在編譯和建置](../ide/compiling-and-building-in-visual-studio.md)。
+2. 選擇適當的選項來建立或重建您的方案或專案。 如需詳細資訊，請參閱 < [Visual Studio 在編譯和建置](../ide/compiling-and-building-in-visual-studio.md)。
 
-3.  在功能表列上選擇 [建置] > [建置解決方案]。
+3. 在功能表列上選擇 [建置] > [建置解決方案]。
 
 ## <a name="see-also"></a>另請參閱
 

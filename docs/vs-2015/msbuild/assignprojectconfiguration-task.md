@@ -14,23 +14,22 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c09b4b917e54277ca7f9418a82bdfef9d1663be3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e2091fad7e527990e8ed89ea8622cf41c1ae1ac4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790161"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668596"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 此工作會接受組態字串清單，並將它們指派給指定的專案。  
   
 ## <a name="task-parameters"></a>工作參數  
  下表說明 `AssignProjectConfiguration` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`SolutionConfigurationContents`|選擇性的 `string` 輸出參數。<br /><br /> 包含 XML 字串，其中含有每個專案的專案組態。 工作會將組態指派給具名的專案。|  
 |`DefaultToVcxPlatformMapping`|選擇性的 `string` 輸出參數。<br /><br /> 包含大部分類型所使用的平台名稱<br /><br /> 與 .vcxproj 檔案所使用之平台名稱的對應清單 (以分號分隔)。<br /><br /> 例如：<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  

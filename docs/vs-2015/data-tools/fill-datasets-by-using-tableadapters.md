@@ -22,17 +22,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 242596220b12756b6b5243b008b52db207c22cb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944198"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656774"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 TableAdapter 填入資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 TableAdapter 元件會填入資料庫，並根據一或多個查詢或您指定的預存程序的資料的資料集。 也可以執行 Tableadapter 加入、 更新和刪除資料庫保存您對資料集的變更。 您也可以發出全域不到任何特定資料表相關的命令。  
   
 > [!NOTE]

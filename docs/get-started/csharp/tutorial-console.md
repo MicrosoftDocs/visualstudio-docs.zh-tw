@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ccd5ff0f0e77a2f59135b2bf7950c4c6ddf58e02
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: e35e3815ebb0fb4c8ed4aca376f519d9720a01b7
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416167"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856777"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立簡單的 C# 主控台應用程式
 
@@ -34,7 +34,7 @@ ms.locfileid: "58416167"
 
 ::: moniker range="vs-2019"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
 
 ::: moniker-end
 
@@ -85,7 +85,7 @@ ms.locfileid: "58416167"
 
 1. 在 [建立新專案] 視窗的搜尋方塊中輸入或鍵入 ASP.NET。 接下來，從語言清單中選擇 **C#**，然後從平台清單中選擇 **Windows**。 
 
-   在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core] 範本，然後選擇 [下一步]。
+   在您套用語言和平台的篩選條件之後，請選擇 [主控台應用程式 (.NET Core)] 範本，然後選擇 [下一步]。
 
    ![選擇主控台應用程式 (.NET Framework) 的 C# 專案範本](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
 
@@ -98,7 +98,7 @@ ms.locfileid: "58416167"
    >
    > ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](./media/dot-net-core-xplat-dev-workload.png)
    >
-   > 接下來，選擇 Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作；如果出現的話，就請您這麼做。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
+   > 接著，選擇Visual Studio 安裝程式中的 [修改] 按鈕。 系統可能會提示您儲存工作，若收到提示，請依提示執行。 接下來，選擇 [繼續] 以安裝工作負載。 然後，返回至「[建立專案](#create-a-project)」程序中的步驟 2。
 
 1. 在 [設定您的新專案] 視窗的 [專案名稱] 方塊中鍵入或輸入 *Calculator*。 接著，選擇 [建立]。
 
@@ -597,9 +597,9 @@ namespace Calculator
 恭喜您完成此教學課程！ 若要更深入了解，請繼續下列教學課程。
 
 > [!div class="nextstepaction"]
-> [繼續進行其他 C# 教學課程](/dotnet/csharp/tutorials/)
+> [繼續更多 C# 教學課程](/dotnet/csharp/tutorials/)
 
 ## <a name="see-also"></a>另請參閱
 
 * [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
-* [了解如何在 Visual Studio 中對 C# 程式碼進行偵錯](tutorial-debugger.md)
+* [了解如何在 Visual Studio 中偵錯 C# 程式碼](tutorial-debugger.md)

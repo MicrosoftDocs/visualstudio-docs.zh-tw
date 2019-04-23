@@ -16,17 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796873"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655808"
 ---
 # <a name="common-msbuild-project-items"></a>一般 MSBuild 專案項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中，項目是一個或多個檔案的具名參考。 項目包含中繼資料，例如檔案名稱、路徑和版本號碼。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的所有專案類型都有共同的數個項目。 這些檔案會在 microsoft.build.commontypes.xsd 中定義。  
   
 ## <a name="common-items"></a>共同項目  
@@ -35,7 +34,7 @@ ms.locfileid: "54796873"
 ### <a name="reference"></a>參考資料  
  代表專案中的組件 (受管理) 參考。  
   
-|項目名稱|描述|  
+|項目名稱|說明|  
 |---------------|-----------------|  
 |提示路徑|選擇性字串。 組件的相對或絕對路徑。|  
 |名稱|選擇性字串。 組件的顯示名稱，例如，"System.Windows.Forms"。|  
@@ -47,7 +46,7 @@ ms.locfileid: "54796873"
 ### <a name="comreference"></a>COM 參考  
  代表專案中的 COM (未受管理) 元件參考。  
   
-|項目名稱|描述|  
+|項目名稱|說明|  
 |---------------|-----------------|  
 |名稱|選擇性字串。 元件的顯示名稱。|  
 |Guid|選擇性字串。 元件的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|  
@@ -60,14 +59,14 @@ ms.locfileid: "54796873"
 ### <a name="comfilereference"></a>COM 檔案參考  
  代表饋送至 ResolvedComreference 目標的類型程式庫清單。  
   
-|項目名稱|描述|  
+|項目名稱|說明|  
 |---------------|-----------------|  
 |包裝函式工具|選擇性字串。 用於元件的包裝函式工具名稱，例如 "tlbimp"。|  
   
 ### <a name="nativereference"></a>原生參考  
  代表原生的資訊清單檔案或是這類檔案的參考。  
   
-|項目名稱|描述|  
+|項目名稱|說明|  
 |---------------|-----------------|  
 |名稱|必要的字串。 資訊清單檔案的基底名稱。|  
 |提示路徑|必要的字串。 資訊清單檔案的相對路徑。|  
@@ -75,7 +74,7 @@ ms.locfileid: "54796873"
 ### <a name="projectreference"></a>專案參考  
  代表另一個專案的參考。  
   
-|項目名稱|描述|  
+|項目名稱|說明|  
 |---------------|-----------------|  
 |名稱|選擇性字串。 參考的顯示名稱。|  
 |專案|選擇性字串。 參考的 GUID，格式為 {12345678-1234-1234-1234-1234567891234}。|  
@@ -84,7 +83,7 @@ ms.locfileid: "54796873"
 ### <a name="compile"></a>編譯  
  代表編譯器的原始程式檔。  
   
-|項目名稱|描述|  
+|項目名稱|說明|  
 |---------------|-----------------|  
 |相依依據|選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。|  
 |自動產生|選擇性布林值。 指出是否已透過 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 整合式開發環境 (IDE) 為專案產生檔案。|  
@@ -95,7 +94,7 @@ ms.locfileid: "54796873"
 ### <a name="embeddedresource"></a>內嵌資源  
  代表要內嵌於所產生組件中的資源。  
   
-|項目名稱|描述|  
+|項目名稱|說明|  
 |---------------|-----------------|  
 |相依依據|選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案|  
 |Generator|必要的字串。 在此項目上執行的任何檔案產生器名稱。|  
@@ -109,7 +108,7 @@ ms.locfileid: "54796873"
 ### <a name="content"></a>內容  
  代表不會編譯到專案中，但可能內嵌或一起發行的檔案。  
   
-|項目名稱|描述|  
+|項目名稱|說明|  
 |---------------|-----------------|  
 |相依依據|選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。|  
 |Generator|必要的字串。 在此項目上執行的任何檔案產生器名稱。|  
@@ -124,7 +123,7 @@ ms.locfileid: "54796873"
 ### <a name="none"></a>無  
  代表在建置流程中應該沒有任何角色的檔案。  
   
-|項目名稱|描述|  
+|項目名稱|說明|  
 |---------------|-----------------|  
 |相依依據|選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。|  
 |Generator|必要的字串。 在此項目上執行的任何檔案產生器名稱。|  

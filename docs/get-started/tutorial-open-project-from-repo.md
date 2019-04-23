@@ -2,7 +2,7 @@
 title: 教學課程：從存放庫開啟專案
 description: 了解如何使用 Visual Studio，在 Git 或 Azure DevOps 存放庫中開啟專案。
 ms.custom: get-started
-ms.date: 03/13/2019
+ms.date: 03/30/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f017e0ef3d7b76ba4d5de18ecab614f030b07501
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 928e77c5c28b76570525b8ea9037cd0d0cef7f99
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070070"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857563"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>教學課程：從存放庫開啟專案
 
@@ -33,15 +33,17 @@ ms.locfileid: "58070070"
 
 ::: moniker range="vs-2019"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
 
 ::: moniker-end
 
 ## <a name="open-a-project-from-a-github-repo"></a>從 GitHub 存放庫開啟專案
 
+::: moniker range="vs-2017"
+
 1. 開啟 Visual Studio 2017。
 
-1. 從頂端功能表列中，選擇 [檔案] > [開啟] > [從原始檔控制開啟]。
+1. 從頂端的功能表列中，選擇 [檔案] > [開啟] > [從原始檔控制開啟]。
 
    [Team Explorer - 連接] 窗格隨即開啟。
 
@@ -69,11 +71,37 @@ ms.locfileid: "58070070"
 
    ![使用 Visual Studio 在 GitHub 存放庫中開啟專案的動畫](./media/open-project-from-github.gif)
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 開啟 Visual Studio 2019。
+
+1. 在開始視窗中，選擇 [複製或簽出程式碼]。
+
+   ![檢視 [建立新專案] 視窗](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+
+1. 輸入或鍵入存放庫的位置，然後選擇 [複製]。
+
+   ![檢視 [複製或簽出程式碼] 視窗](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+
+   Visual Studio 從存放庫開啟專案。
+
+1. 如果您有可用的解決方案檔，它將會出現在 [解決方案與資料夾] 飛出功能表中。 選擇它，而 Visual Studio 會開啟您的解決方案。
+
+   ![選擇您想要從 [方案總管] 下拉式清單中開啟的解決方案](./media/open-proj-repo-github-solutions-folders-picker.png)
+
+   如果您的存放庫中沒有解決方案檔 (具體來說為 .sln 檔案)，飛出功能表將顯示「找不到任何解決方案」。 不過，您可以從資料夾功能表中按兩下任一檔案，以便在 Visual Studio 程式碼編輯器中開啟該檔案。
+
+::: moniker-end
+
 ## <a name="open-a-project-from-an-azure-devops-repo"></a>從 Azure DevOps 存放庫中開啟專案
+
+::: moniker range="vs-2017"
 
 1. 開啟 Visual Studio 2017。
 
-1. 從頂端功能表列中，選擇 [檔案] > [開啟] > [從原始檔控制開啟]。
+1. 從頂端的功能表列中，選擇 [檔案] > [開啟] > [從原始檔控制開啟]。
 
    [Team Explorer - 連接] 窗格隨即開啟。
 
@@ -103,7 +131,48 @@ ms.locfileid: "58070070"
    解決方案檔 (具體來說為 .sln 檔案) 將會出現在 [解決方案與資料夾] 飛出功能表中。 選擇它，而 Visual Studio 會開啟您的解決方案。
 
    如果您的存放庫中沒有解決方案檔，飛出功能表將顯示「找不到任何解決方案」。 不過，您可以從資料夾功能表中按兩下任一檔案，以便在 Visual Studio 程式碼編輯器中開啟該檔案。
-  
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 開啟 Visual Studio 2019。
+
+1. 在開始視窗中，選擇 [複製或簽出程式碼]。
+
+   ![檢視 [建立新專案] 視窗](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+
+1. 在 [瀏覽存放庫] 區段中，選擇 [Azure DevOps]。
+
+   ![檢視 [複製或簽出程式碼] 視窗](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+
+   如果您看到登入視窗，請登入您的帳戶。
+
+1. 在 [連線到專案] 對話方塊中，選擇您想要連線的存放庫，然後選擇 [複製]。
+
+      ![從 Visual Studio 產生的 [連線到專案] 對話方塊](./media/open-proj-azure-devops-connect-cloud-clone.png)
+
+    > [!NOTE]
+    > 您在清單方塊中看到的內容，取決於您有權存取的 Azure DevOps 存放庫。
+
+   Visual Studio 會開啟 [Team Explorer]，並在複製完成時顯示通知。
+
+     ![完成複製後的 Visual Studio [Team Explorer] 視窗](./media/vs-2019/clone-complete-azure-devops.png)
+
+1. 若要檢視您的資料夾和檔案，請選擇 [顯示資料夾檢視] 連結。
+
+     ![完成複製後，Visual Studio [Team Explorer] 視窗的 [解決方案] 區段](./media/vs-2019/show-folder-view-azure-devops.png)
+
+     Visual Studio 會開啟 [方案總管]。
+
+1. 選擇 [解決方案與資料夾] 連結，搜尋要開啟的解決方案檔 (具體來說為 .sln 檔案)。
+
+      ![Visual Studio 中來自 [Team Explorer] 的「解決方案與資料夾」通知](./media/open-proj-repo-solutions-folders.png)
+
+   如果您的存放庫中沒有解決方案檔，則會顯示「找不到解決方案」的訊息。 不過，您可以從資料夾功能表中按兩下任一檔案，以便在 Visual Studio 程式碼編輯器中開啟該檔案。
+
+::: moniker-end
+
 ## <a name="next-steps"></a>後續步驟
 
 如果您已準備好使用 Visual Studio 來撰寫程式碼，請深入了解下列任一個語言特定的教學課程：
@@ -112,7 +181,7 @@ ms.locfileid: "58070070"
 - [Visual Studio 教學課程 | **Visual Basic**](./visual-basic/index.yml)
 - [Visual Studio 教學課程 | **C++**](/cpp/get-started/)
 - [Visual Studio 教學課程 | **Python**](/visualstudio/python/)
-- [Visual Studio 教學課程 |**JavaScript**、**TypeScript** 和 **Node.js**](/visualstudio/javascript/)
+- [Visual Studio 教學課程 | **JavaScript**、**TypeScript** 和 **Node.js**](/visualstudio/javascript/)
 
 ## <a name="see-also"></a>另請參閱
 

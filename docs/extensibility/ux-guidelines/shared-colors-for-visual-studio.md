@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ddfd81c68ed2ef675052d1fbba524f0a03cfc2
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232810"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089546"
 ---
 # <a name="shared-colors-for-visual-studio"></a>適用於 Visual Studio 的共用的色彩
 當您在設計 UI 使用通用的 Visual Studio shell 項目，或您想要介面項目保持一致與類似的功能時，使用套件定義檔案中現有的語彙基元名稱，以選擇並指派色彩。 這可確保您的 UI 與整體 Visual Studio 環境保持一致，而且會在加入或更新佈景主題時自動更新。
@@ -22,11 +22,11 @@ ms.locfileid: "59232810"
 
 請務必正確地使用語彙基元名稱：
 
--   **根據函式來使用語彙基元名稱，而不是色彩本身。** 常見共用色彩是與特定介面項目相關聯，並且僅適用於相同或類似的功能。 例如，請不要只因為您喜歡微調進度動畫之已按下下拉式方塊的色彩，就重複使用該色彩。 下拉式方塊和動畫的函式不同，而且如果與下拉式方塊變更相關聯的色彩，可能不再是動畫項目的適當色彩。 一致地使用色彩可協助引導您的使用者並避免混淆。
+- **使用根據函式，不是色彩本身的語彙基元名稱。** 常見共用色彩是與特定介面項目相關聯，並且僅適用於相同或類似的功能。 例如，請不要只因為您喜歡微調進度動畫之已按下下拉式方塊的色彩，就重複使用該色彩。 下拉式方塊和動畫的函式不同，而且如果與下拉式方塊變更相關聯的色彩，可能不再是動畫項目的適當色彩。 一致地使用色彩可協助引導您的使用者並避免混淆。
 
--   **以正確的組合來使用背景和文字色彩。** 要與文字搭配使用的背景色彩將有相關聯的文字色彩。 務必使用背景所指定的文字色彩。 如果沒有相關聯的文字色彩，請勿使用該背景色彩，您希望顯示文字的任何介面。 其他的文字和背景色彩組合可能會導致介面無法讀取。
+- **以正確的組合來使用背景和文字色彩。** 要與文字搭配使用的背景色彩將有相關聯的文字色彩。 務必使用背景所指定的文字色彩。 如果沒有相關聯的文字色彩，請勿使用該背景色彩，您希望顯示文字的任何介面。 其他的文字和背景色彩組合可能會導致介面無法讀取。
 
--   **使用其位置適用的控制項色彩。** 處於特定狀態中，部分 Visual Studio 控制項沒有個別框線和背景色彩。 而是會選取其後介面的色彩。 務必根據控制項所放置的位置，而為其使用適合的語彙基元名稱。
+- **使用其位置適用的控制項色彩。** 處於特定狀態中，部分 Visual Studio 控制項沒有個別框線和背景色彩。 而是會選取其後介面的色彩。 務必根據控制項所放置的位置，而為其使用適合的語彙基元名稱。
 
 > [!IMPORTANT]
 > 請勿使用 「 起始頁 」 或"Cider"。 類別目錄中的權杖
@@ -623,13 +623,13 @@ ms.locfileid: "59232810"
 
 搜尋方塊可以是數種狀態中的其中一種，但其中有一些互斥：
 
--   「已取得焦點」或「未取得焦點」指的是游標是否在文字方塊中。
+- 「已取得焦點」或「未取得焦點」指的是游標是否在文字方塊中。
 
--   「使用中」或「非使用中」指的是使用者是否已在文字方塊中輸入搜尋查詢。
+- 「使用中」或「非使用中」指的是使用者是否已在文字方塊中輸入搜尋查詢。
 
--   「暫留」表示使用者已將滑鼠指標放在搜尋方塊上方 (這種狀態會覆寫所有其他狀態)。
+- 「暫留」表示使用者已將滑鼠指標放在搜尋方塊上方 (這種狀態會覆寫所有其他狀態)。
 
--   「已停用」表示已關閉目前內容的搜尋功能。
+- 「已停用」表示已關閉目前內容的搜尋功能。
 
 ![搜尋方塊中 （紅線）](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303年 110_SearchBoxRedline")<br />搜尋方塊中 （紅線）
 
@@ -854,7 +854,7 @@ ms.locfileid: "59232810"
 | 連結背景 | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />（漸層停駐配置其佈景主題的 UI 中不使用這個語彙基元。） |
 | 前景 (連結文字) | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a> 樹狀檢視
+### <a name="BKMK_TreeView"></a> 樹狀檢視
 數個工具視窗，包括方案總管 中，伺服器總管 中，以及類別 檢視中，實作階層式組織配置，其色彩受到中的色彩名稱所`TreeView`類別目錄。 樹狀檢視中的所有項目都會有背景和文字色彩。 具有巢狀子項目的項目也具有字符可指出展開還是摺疊項目。
 
 ![樹狀檢視 （紅線）](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303年 147_TreeViewRedline")<br />樹狀檢視 （紅線）
@@ -1037,7 +1037,7 @@ ms.locfileid: "59232810"
 
 ## <a name="command-structures"></a>命令結構
 
-###  <a name="BKMK_CommandMenus"></a> 功能表
+### <a name="BKMK_CommandMenus"></a> 功能表
 功能表可能會發生在 Visual Studio 的數個位置： 主要功能表列、 內嵌在文件或工具視窗中，或以滑鼠右鍵按一下 IDE 各位置上。 針對個別項目的一節中會討論與其他 UI 項目相關聯之功能表的實作。 您應該一律使用 Visual Studio 環境所提供的標準功能表實作。 不過，在一些罕見情況下，您可能無法存取標準 Visual Studio 功能表。 在這些情況下，請使用下列語彙基元名稱，確保您的 UI 與 Visual Studio 中的其他功能表一致。
 
 ![Visual Studio 功能表 （紅線）](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303年 000_MenuRedline")<br />Visual Studio 功能表 （紅線）
@@ -1278,7 +1278,7 @@ ms.locfileid: "59232810"
 | 前景 (文字) | `Environment.CommandBarTextInactive` |
 | Border | N/A |
 
-####  <a name="BKMK_CommandComboBox"></a> 命令列下拉式方塊
+#### <a name="BKMK_CommandComboBox"></a> 命令列下拉式方塊
 
 > [!IMPORTANT]
 > 下拉式方塊與下拉式清單類似，但包括可編輯的文字區域。 如果下拉式清單不包含可編輯的文字區域，使用的色彩語彙基元[命令列下拉式清單](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)。
@@ -1410,7 +1410,7 @@ ms.locfileid: "59232810"
 | 背景 | None |
 | 前景 (字符) | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a> 命令列下拉式清單
+#### <a name="BKMK_CommandDropDown"></a> 命令列下拉式清單
 
 > [!IMPORTANT]
 >  下拉式清單與下拉式方塊類似，但沒有可編輯的文字區域。 如果下拉式清單包括可編輯的文字區域，使用的色彩語彙基元[命令列下拉式方塊](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)。
@@ -1713,9 +1713,9 @@ ms.locfileid: "59232810"
 #### <a name="open-document-tabs"></a>開啟文件索引標籤
 每個開啟的文件都會有顯示其名稱之文件索引標籤通道中的索引標籤。 可以在背景中選取或開啟文件，而且它們的索引標籤會反映這些狀態：
 
--   選取的索引標籤代表目前顯示在文件區域中的文件。 選取的索引標籤會有可延伸至文件區域頂端的文件框線。
+- 選取的索引標籤代表目前顯示在文件區域中的文件。 選取的索引標籤會有可延伸至文件區域頂端的文件框線。
 
--   背景索引標籤是任何非目前選取之索引標籤的文件索引標籤。按一下之後，它們會成為選取的索引標籤，並從這些語彙基元名稱取得所有背景、框線和文字色彩。
+- 背景索引標籤是任何非目前選取之索引標籤的文件索引標籤。按一下之後，它們會成為選取的索引標籤，並從這些語彙基元名稱取得所有背景、框線和文字色彩。
 
 ![開啟的文件 索引標籤 （紅線）](../../extensibility/ux-guidelines/media/0303-073_opendocumenttabredline.png "0303年 073_OpenDocumentTabRedline")<br />開啟的文件 索引標籤 （紅線）
 
@@ -1949,7 +1949,6 @@ Visual Studio 支援標記，可讓使用者宣告可搜尋關鍵字，以進行
 
 ![選取以關閉標記 (&times;) 暫留時的字符](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303年 185_TagSelectedHover")<br />選取以關閉標記 (&times;) 暫留時顯示的圖像 （glyph)
 
-
 | 項目 | 權杖名稱：Category.color |
 | --- | --- |
 | 背景 | `Tag.TagSelectedGlyphHoverBackground` |
@@ -2079,7 +2078,7 @@ Visual Studio 中的工具視窗用於許多不同的工作，而且可以存在
 | --- | --- |
 | ...您要建立 UI，您要尋找工具視窗的任何位置。 | ...您不想要時自動變更任何 ui 在 shell 具有佈景主題更新。 |
 
-**已取得焦點的標題列**
+**具有焦點的標題列**
 
 ![具有焦點的標題列](../../extensibility/ux-guidelines/media/0303-093_titlebarfocused.png "0303年 093_TitleBarFocused")<br />已取得焦點的標題列
 

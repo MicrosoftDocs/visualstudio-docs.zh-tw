@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba2db8f1accafab1bdb20eacab73b2a963391075
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dbdcc268b71f2926307b500126840391dd5308fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939290"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039526"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>HOW TO：建立宣告式規則條件 (舊版)
 本主題描述當使用以 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標的舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 時，如何宣告規則條件。  
@@ -27,37 +27,37 @@ ms.locfileid: "58939290"
   
  宣告式規則條件用於以下的 Windows Workflow Foundation 全新活動中：  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>若要使用規則條件編輯器建立宣告式規則條件  
   
-1.  在活動的**屬性** 視窗中，按一下**條件**屬性或**UntilCondition**屬性，視活動而定。  
+1. 在活動的**屬性** 視窗中，按一下**條件**屬性或**UntilCondition**屬性，視活動而定。  
   
-2.  選取 **宣告式規則條件**從屬性清單。  
+2. 選取 **宣告式規則條件**從屬性清單。  
   
-3.  依序展開**條件**或是**UntilCondition**屬性。  
+3. 依序展開**條件**或是**UntilCondition**屬性。  
   
-4.  按一下  **ConditionName**屬性。  
+4. 按一下  **ConditionName**屬性。  
   
-5.  按一下 [ **ConditionName**省略符號 **[...]** 以開啟**選取條件**] 對話方塊。  
+5. 按一下 [ **ConditionName**省略符號 **[...]** 以開啟**選取條件**] 對話方塊。  
   
-6.  按一下 [**新的條件**來開啟**規則條件編輯器**] 對話方塊。  
+6. 按一下 [**新的條件**來開啟**規則條件編輯器**] 對話方塊。  
   
-7.  輸入中的條件運算式**條件**文字方塊。  
+7. 輸入中的條件運算式**條件**文字方塊。  
   
      如需有關如何建立條件運算式的資訊，請參閱 <<c0> [ 規則條件編輯器對話方塊 （舊版）](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)。  
   
-8.  當您完成建立條件運算式時，按一下**確定**關閉對話方塊，並使用指派的名稱建立的規則條件。  
+8. 當您完成建立條件運算式時，按一下**確定**關閉對話方塊，並使用指派的名稱建立的規則條件。  
   
      **選取條件**對話方塊隨即開啟。  
   

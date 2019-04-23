@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb038fdebdfefeb5f401860c17b5567028c3bb77
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621340"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068362"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>HOW TO：將控制項加入至 Backstage 檢視
   您可以使用功能區設計工具將控制項新增至後按一下開啟功能表**檔案** 索引標籤。當您執行應用程式中，您將加入的控制項**檔案**索引標籤會出現一個名為群組**增益集**。
@@ -36,31 +36,31 @@ ms.locfileid: "56621340"
 
 ### <a name="to-add-controls-to-backstage-view"></a>將控制項加入至 Backstage 檢視
 
-1.  在 [設計] 檢視中開啟功能區項目。
+1. 在 [設計] 檢視中開啟功能區項目。
 
      如需如何新增**功能區 （視覺化設計工具）** 至您的專案項目，請參閱[How to:開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。
 
-2.  在 [功能區設計工具中，按一下**檔案**] 索引標籤。
+2. 在 [功能區設計工具中，按一下**檔案**] 索引標籤。
 
      功能表設計工具隨即出現。 此設計介面不包含任何控制項。
 
-3.  從**Office 功能區控制項**索引標籤**工具箱**，任何下列控制項拖曳至設計工具 功能表：
+3. 從**Office 功能區控制項**索引標籤**工具箱**，任何下列控制項拖曳至設計工具 功能表：
 
-    -   按鈕
+    - 按鈕
 
-    -   核取方塊
+    - 核取方塊
 
-    -   Gallery
+    - Gallery
 
-    -   功能表
+    - 功能表
 
-    -   Separator
+    - Separator
 
-    -   SplitButton
+    - SplitButton
 
-    -   ToggleButton
+    - ToggleButton
 
-4.  拖曳控制項，以在功能表上將它們移至新位置。
+4. 拖曳控制項，以在功能表上將它們移至新位置。
 
 ## <a name="see-also"></a>另請參閱
 - [功能區概觀](../vsto/ribbon-overview.md)

@@ -75,19 +75,19 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95add394f6f3e3e62a7441fe5bb0b4c415509527
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e43175ace465abdece5ec1f06aeda10ecddb9a14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057452"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 偵錯堆積詳細資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題提供 CRT 偵錯堆積的詳細檢視。  
   
-##  <a name="BKMK_Contents"></a> 內容  
+## <a name="BKMK_Contents"></a> 內容  
  [使用偵錯堆積尋找緩衝區溢位](#BKMK_Find_buffer_overruns_with_debug_heap)  
   
  [偵錯堆積上的區塊類型](#BKMK_Types_of_blocks_on_the_debug_heap)  
@@ -102,7 +102,7 @@ ms.locfileid: "58939534"
   
  [追蹤堆積配置要求](#BKMK_Track_Heap_Allocation_Requests)  
   
-##  <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a>使用偵錯堆積尋找緩衝區溢位  
+## <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a>使用偵錯堆積尋找緩衝區溢位  
  開發人員最常面臨的兩種難解決的問題是，覆寫配置緩衝區的結尾和記憶體流失 (無法在不再需要時釋放配置)。 偵錯堆積提供的強大工具，可以解決這類的記憶體配置問題。  
   
  堆積函式的偵錯版本是呼叫發行版本裡使用之函式的標準或基底版本。 當您要求記憶體區塊時，偵錯堆積管理員會從基底堆積配置比要求稍微大一點的記憶體區塊，並且傳回此區塊部分的指標。 例如，假設您的應用程式包含呼叫：`malloc( 10 )`。 在發行組建，而[malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0)會呼叫要求 10 位元組配置基底堆積配置常式。 在偵錯組建中，不過，`malloc`會呼叫[_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)，它會呼叫要求 10 位元組的配置，再加上大約 36 位元組的額外記憶體基底堆積配置常式。 偵錯堆積裡所有產生的記憶體區塊會在單向連結串列 (Single-Linked List) 中完成連接 (依配置時間排列順序)。  
@@ -149,7 +149,7 @@ typedef struct _CrtMemBlockHeader
   
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a>偵錯堆積上的區塊類型  
+## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a>偵錯堆積上的區塊類型  
  偵錯堆積裡的每個記憶體區塊會設定成五種配置類型的其中一種。 這些類型可以針對不同的流失偵測和狀態報告目的來追蹤和報告。 您可以透過直接呼叫其中一個偵錯堆積配置函式 (例如 [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)) 加以配置的方式，來指定區塊類型。 五種偵錯堆積 (設定於 **_CrtMemBlockHeader** 結構的 **nBlockUse** 成員) 中的記憶體區塊類型如下：  
   
  **_NORMAL_BLOCK**  
@@ -183,7 +183,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-##  <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a>檢查堆積完整性和記憶體流失  
+## <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a>檢查堆積完整性和記憶體流失  
  許多偵錯堆積的功能必須從程式碼內存取。 下一節將說明一些功能以及如何使用這些功能。  
   
  `_CrtCheckMemory`  
@@ -204,7 +204,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-##  <a name="BKMK_Configure_the_debug_heap"></a>設定偵錯堆積  
+## <a name="BKMK_Configure_the_debug_heap"></a>設定偵錯堆積  
  所有堆積函式的呼叫，例如 `malloc`、`free`、`calloc`、`realloc`、`new` 和 `delete` 都會解析成操作於偵錯堆積裡的這些函式之偵錯版本。 當您釋放記憶體區塊時，偵錯堆積會自動檢查配置區域每端的緩衝區之完整性，如果發生覆寫發便會發出錯誤報告。  
   
  **若要使用偵錯堆積**  
@@ -239,7 +239,7 @@ _CrtSetDbgFlag( tmpFlag );
   
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a>C++ 偵錯堆積中的 new、delete 和 _CLIENT_BLOCK  
+## <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a>C++ 偵錯堆積中的 new、delete 和 _CLIENT_BLOCK  
  C 執行階段程式庫的偵錯版本包含 C++ `new` 及 `delete` 運算子的偵錯版本。 如果您使用 `_CLIENT_BLOCK` 配置類型，則必須直接呼叫 `new` 運算子的偵錯版本，或建立可以取代偵錯模式中 `new` 運算子的巨集，如同下列範例所示：  
   
 ```  
@@ -277,7 +277,7 @@ int main( )   {
   
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a>堆積狀態報告函式  
+## <a name="BKMK_Heap_State_Reporting_Functions"></a>堆積狀態報告函式  
  **_CrtMemState**  
   
  若要捕捉指定時間的堆積狀態之摘要快照，請使用定義在 CRTDBG.H 裡的 _CrtMemState 結構：  
@@ -314,7 +314,7 @@ typedef struct _CrtMemState
   
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-##  <a name="BKMK_Track_Heap_Allocation_Requests"></a>追蹤堆積配置要求  
+## <a name="BKMK_Track_Heap_Allocation_Requests"></a>追蹤堆積配置要求  
  雖然指出判斷提示或報告巨集執行的原始程式檔名稱和行號通常在找出問題原因很有用，但是對於堆積配置函式可能就不是這樣。 雖然巨集可以插入到許多在應用程式邏輯樹狀圖裡合適的點，但是配置通常是在許多不同時間裡由許多不同地方的特殊常式呼叫。 問題通常不是哪一行程式碼做了錯誤的配置，而是上千個配置中，哪一個配置是由哪一錯誤程式碼所造成，以及其錯誤原因為何。  
   
  **唯一配置要求號碼和 _crtBreakAlloc**  

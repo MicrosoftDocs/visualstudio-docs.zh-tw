@@ -26,12 +26,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a38b84c5b45ba8111977701d9026f22f90abf50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ebcb793a0fc653931e1ea271340294aea532e02
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055362"
 ---
 # <a name="how-to-debug-injected-code"></a>HOW TO：對插入程式碼進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,25 +49,25 @@ ms.locfileid: "58939690"
   
 ### <a name="to-turn-on-source-annotation"></a>若要開啟來源附註  
   
--   以滑鼠右鍵按一下 [反組譯碼] 視窗，並從捷徑功能表選擇 [顯示原始程式碼]。  
+- 以滑鼠右鍵按一下 [反組譯碼] 視窗，並從捷徑功能表選擇 [顯示原始程式碼]。  
   
      如果您知道屬性在來源視窗的位置，您就可以使用捷徑功能表在 [反組譯碼] 視窗裡尋找插入程式碼。  
   
 ### <a name="to-view-injected-code"></a>若要檢視插入程式碼  
   
-1.  偵錯工具必須處於中斷模式。  
+1. 偵錯工具必須處於中斷模式。  
   
-2.  在原始程式碼視窗裡，將游標放置在您要檢視的插入程式碼的屬性之前。  
+2. 在原始程式碼視窗裡，將游標放置在您要檢視的插入程式碼的屬性之前。  
   
-3.  以滑鼠右鍵按一下，並從捷徑功能表選取 [前往反組譯碼]。  
+3. 以滑鼠右鍵按一下，並從捷徑功能表選取 [前往反組譯碼]。  
   
      如果屬性位置距離目前執行點很近，您只要從 [偵錯] 功能表選取 [反組譯碼] 視窗即可。  
   
 ### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>若要檢視目前執行點的反組譯程式碼  
   
-1.  偵錯工具必須處於中斷模式。  
+1. 偵錯工具必須處於中斷模式。  
   
-2.  請在 [偵錯] 功能表中選擇 [視窗]，然後按一下 [反組譯碼]。  
+2. 請在 [偵錯] 功能表中選擇 [視窗]，然後按一下 [反組譯碼]。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   

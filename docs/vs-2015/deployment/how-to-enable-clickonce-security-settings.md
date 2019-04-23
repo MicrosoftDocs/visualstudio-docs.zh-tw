@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b852a83c16920e3e8a4b036a1b7bf37e63fe9cfb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 768bfc5de11f8b7fa6c3cd8988dbcc70633dde89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082826"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>HOW TO：啟用 ClickOnce 安全性設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58944953"
   
 ### <a name="to-enable-clickonce-security-settings"></a>若要啟用 ClickOnce 安全性設定  
   
-1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [ **安全性** ] 索引標籤。  
+2. 按一下 [ **安全性** ] 索引標籤。  
   
-3.  選取 [啟用 ClickOnce 安全性設定]  核取方塊。  
+3. 選取 [啟用 ClickOnce 安全性設定]  核取方塊。  
   
      您現在可以在 [安全性] 頁面上的應用程式自訂的安全性設定。  
   
@@ -48,11 +48,11 @@ ms.locfileid: "58944953"
   
 ### <a name="to-disable-clickonce-security-settings"></a>若要停用 ClickOnce 安全性設定  
   
-1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [ **安全性** ] 索引標籤。  
+2. 按一下 [ **安全性** ] 索引標籤。  
   
-3.  清除**啟用 ClickOnce 安全性設定**核取方塊。  
+3. 清除**啟用 ClickOnce 安全性設定**核取方塊。  
   
      您的應用程式將會執行完全信任的安全性設定;上的任何設定**安全性**頁面將會被忽略。  
   

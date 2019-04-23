@@ -19,10 +19,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232312"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502:避免造成過度複雜的方法
@@ -102,7 +102,7 @@ A*節點*代表邏輯分支點並*edge*表示節點之間的線。
 
 ## <a name="related-rules"></a>相關的規則
 
-[CA1501:避免在物件間過度繼承](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501:避免過度繼承](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>另請參閱
 

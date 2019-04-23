@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd79925023a32a68ff4a9ac5f86f85d9c6798bf
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 93c30d9966dabdf7ad7b42bbad6ecbae5679e636
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843590"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070331"
 ---
 # <a name="save-data-in-project-files"></a>將資料儲存在專案檔
 專案子類型可以儲存並擷取專案檔中的子型別特定資料。 Managed Package Framework (MPF) 提供兩個介面，以完成這項工作：
@@ -32,7 +32,7 @@ ms.locfileid: "56843590"
 
 ### <a name="to-save-a-build-related-data-in-the-project-file"></a>若要儲存組建相關的專案檔中的資料
 
--   呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>方法來儲存專案檔的完整路徑。
+- 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>方法來儲存專案檔的完整路徑。
 
     ```
     private SpecializedProject project;
@@ -47,7 +47,7 @@ ms.locfileid: "56843590"
 
 ### <a name="to-retrieve-build-related-data-from-the-project-file"></a>若要擷取組建從專案檔的相關資料
 
--   呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A>方法來擷取專案檔的完整路徑。
+- 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A>方法來擷取專案檔的完整路徑。
 
     ```
     private SpecializedProject project;
@@ -64,7 +64,7 @@ ms.locfileid: "56843590"
 
 ### <a name="to-save-non-build-related-data-in-the-project-file"></a>若要儲存非建置相關的專案檔中的資料
 
-1.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A>方法，以判斷是否已變更 XML 片段，自從上次儲存至其目前的檔案。
+1. 實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A>方法，以判斷是否已變更 XML 片段，自從上次儲存至其目前的檔案。
 
     ```
     public int IsFragmentDirty(uint storage, out int pfDirty)
@@ -94,7 +94,7 @@ ms.locfileid: "56843590"
     }
     ```
 
-2.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>方法，將 XML 資料儲存在專案檔中。
+2. 實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>方法，將 XML 資料儲存在專案檔中。
 
     ```
     public int Save(ref Guid guidFlavor, uint storage, out string pbstrXMLFragment, int fClearDirty)
@@ -145,7 +145,7 @@ ms.locfileid: "56843590"
 
 ### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>若要擷取非建置相關的專案檔中的資料
 
-1.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A>方法以初始化專案延伸模組屬性和其他組建無關的資料。 如果沒有出現在專案檔的 XML 組態資料，會呼叫這個方法。
+1. 實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A>方法以初始化專案延伸模組屬性和其他組建無關的資料。 如果沒有出現在專案檔的 XML 組態資料，會呼叫這個方法。
 
     ```
     public int InitNew(ref Guid guidFlavor, uint storage)
@@ -161,7 +161,7 @@ ms.locfileid: "56843590"
         return VSConstants.S_OK;
     ```
 
-2.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>從專案檔案載入 XML 資料的方法。
+2. 實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>從專案檔案載入 XML 資料的方法。
 
     ```
     public int Load(ref Guid guidFlavor, uint storage, string pszXMLFragment)

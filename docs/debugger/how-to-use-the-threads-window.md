@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790793"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>逐步解說： 偵錯多執行緒的應用程式，使用 [執行緒] 視窗 (C#，Visual Basic、 c + +)
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>逐步解說：偵錯多執行緒的應用程式，使用 [執行緒] 視窗 (C#，Visual Basic 中， C++)
 
 數個 Visual Studio 使用者介面項目可協助您偵錯多執行緒應用程式。 這篇文章介紹在程式碼編輯器 視窗中，多執行緒偵錯功能**偵錯位置**工具列上，並**執行緒**視窗。 如需其他工具進行偵錯多執行緒應用程式的資訊，請參閱[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。
 
@@ -37,17 +37,17 @@ ms.locfileid: "58790793"
 1. 開啟 Visual Studio 並建立新專案。
 
     ::: moniker range=">=vs-2019"
-    按下**Esc**以關閉開始時間範圍。 型別**Ctrl + Q**來開啟 [搜尋] 方塊中，輸入**主控台**(或**c + +**)，選擇**範本**，然後：
+    按 **Esc** 來關閉開始視窗。 型別**Ctrl + Q**來開啟 [搜尋] 方塊中，輸入**主控台**(或**c + +**)，選擇**範本**，然後：
 
     - 針對C#，選擇**建立新的主控台應用程式 (.NET Framework) 專案**的C#。 在出現的對話方塊中選擇 [建立]。
-    - C + +，請選擇**建立新的主控台應用程式專案**。 在出現的對話方塊中選擇 [建立]。
+    - 針對C++，選擇**建立新的主控台應用程式專案**。 在出現的對話方塊中選擇 [建立]。
 
     然後，輸入名稱，例如**MyThreadWalkthroughApp**然後按一下**建立**。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在左窗格中**新的專案**對話方塊方塊中，選擇下列：
     - 針對C#應用程式底下**視覺化C#** ，選擇**Windows 桌面**，然後在中間窗格選擇 **主控台應用程式 (.NET Framework)**。
-    - C + + 應用程式中下, **Visual c + +**，選擇**Windows 桌面**，然後選擇  **Windows 主控台應用程式**。
+    - 針對C++應用程式底下**視覺化C++** ，選擇**Windows Desktop**、，然後選擇  **Windows 主控台應用程式**。
 
     然後，輸入名稱，例如**MyThreadWalkthroughApp**然後按一下**確定**。
     ::: moniker-end
@@ -56,7 +56,7 @@ ms.locfileid: "58790793"
 
     新的專案會出現在**方案總管 中**，和原始程式檔名*Program.cs*或是*MyThreadWalkthroughApp.cpp*會在原始程式碼視窗中開啟。
 
-1. 原始程式檔與程式碼取代C#或 c + + 範例程式碼，從[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。
+1. 原始程式檔與程式碼取代C#或C++範例程式碼，從[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。
 
 1. 選取 **檔案** > **全部儲存**。
 
@@ -109,7 +109,7 @@ ms.locfileid: "58790793"
 
 1. 開啟**偵錯位置**藉由選取工具列**檢視** > **工具列** > **偵錯位置**。 您也可以在工具列區域中以滑鼠右鍵按一下並選取**偵錯位置**。
 
-1. **偵錯位置**工具列上有三個欄位：**程序**，**執行緒**，以及**堆疊框架**。 下拉式清單**執行緒**清單，並記下有多少執行緒。 在 [**執行緒**] 清單中，目前執行中執行緒由標記**>** 符號。
+1. **偵錯位置**工具列有三個欄位：**處理程序**，**執行緒**，以及**堆疊框架**。 下拉式清單**執行緒**清單，並記下有多少執行緒。 在 [**執行緒**] 清單中，目前執行中執行緒由標記**>** 符號。
 
 1. 在來源的程式碼視窗中，將滑鼠停留在裝訂邊中的執行緒標記圖示，並在資料提示方塊中選取的旗標圖示 （或空的旗標圖示的其中一個）。 旗標圖示會變成紅色。
 

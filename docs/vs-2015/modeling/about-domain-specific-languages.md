@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: afa0cc3144840d547ea41cab21551fdcaae69980
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ddfc51c54c04ad0d79d7ef180a027cbd253ac09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945116"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043503"
 ---
 # <a name="about-domain-specific-languages"></a>關於網域指定的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ ms.locfileid: "58945116"
 ## <a name="aspects-of-graphical-domain-specific-development"></a>圖形化的定義域專屬開發層面  
  圖形化的定義域專屬語言都必須包含下列功能：  
   
--   Notation  
+- Notation  
   
--   網域模型  
+- 網域模型  
   
--   成品產生  
+- 成品產生  
   
--   序列化  
+- 序列化  
   
--   與 Visual Studio 整合  
+- 與 Visual Studio 整合  
   
 ### <a name="notation"></a>Notation  
  特定領域語言必須相當少的項目，可以輕鬆地定義並擴充，可表示網域特有的概念。 標記法是由代表項目的圖形和連接器，代表項目，在圖表介面上之間的關聯性所組成。 在 [!INCLUDE[dsl](../includes/dsl-md.md)]的圖形可以擴充並調整，以代表您的網域特定語言的項目。  
@@ -92,27 +92,27 @@ ms.locfileid: "58945116"
 ## <a name="benefits-of-domain-specific-development"></a>定義域專屬開發的優點  
  特定領域語言，可提供下列優點：  
   
--   包含完全符合問題空間的建構。  
+- 包含完全符合問題空間的建構。  
   
      不同於一般用途的語言，定義域專屬語言是由項目和直接代表問題空間的邏輯關聯性所組成。 比方說，保險原則應用程式必須包含原則和宣告的項目。 特定領域語言，可讓您更輕鬆地設計應用程式，並尋找和修正錯誤的邏輯。  
   
--   可讓非開發人員與人員不知道了解整體設計的網域。  
+- 可讓非開發人員與人員不知道了解整體設計的網域。  
   
      藉由使用圖形化的特定領域語言，您可以建立網域的視覺表示法，使非開發人員可以輕鬆地了解應用程式的設計。  
   
--   可讓您更輕鬆地建立原型的最終的應用程式。  
+- 可讓您更輕鬆地建立原型的最終的應用程式。  
   
      開發人員可以使用它們的模型來建立原型應用程式，其可顯示給用戶端所產生的程式碼。  
   
 ## <a name="the-process-of-domain-specific-development"></a>定義域專屬的開發程序  
  大部分使用定義域專屬語言的軟體開發團隊，請遵循下列步驟來建立和使用其模型：  
   
--   小組會區別永遠不會變更的部分網域的變動組件。  
+- 小組會區別永遠不會變更的部分網域的變動組件。  
   
--   開發人員撰寫的固定的組件的程式碼，並將變動組件的擴充點。  
+- 開發人員撰寫的固定的組件的程式碼，並將變動組件的擴充點。  
   
--   領導軟體開發人員或架構設計人員會建立特定領域語言，其中包含固定的組件的領域，以及擴充點，變數的組件的設計模式。  
+- 領導軟體開發人員或架構設計人員會建立特定領域語言，其中包含固定的組件的領域，以及擴充點，變數的組件的設計模式。  
   
--   領導軟體開發人員或架構設計人員會部署特定領域語言，小組會產生各種應用程式的開發人員。  
+- 領導軟體開發人員或架構設計人員會部署特定領域語言，小組會產生各種應用程式的開發人員。  
   
--   每位開發人員建立適用於特定的應用程式的模型。
+- 每位開發人員建立適用於特定的應用程式的模型。

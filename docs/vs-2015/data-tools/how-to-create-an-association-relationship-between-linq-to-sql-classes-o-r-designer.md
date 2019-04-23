@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a3f8071e38fabffd73e10f3ac6f23558876c2ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6971da256d638b8248e49235a4d8d3ded71dc10e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945165"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056766"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>HOW TO：建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯 （關聯性）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 中實體類別 (Class) 之間的關聯，與資料庫中資料表之間的關聯性 (Relationship) 類似。 您可以使用 [關聯編輯器] 對話方塊建立實體類別之間的關聯。  
   
  使用 [關聯編輯器] 對話方塊建立關聯時，必須選取父類別和子類別。 父類別是包含主索引鍵的實體類別，而子類別是包含外部索引鍵的實體類別。 例如，如果要建立與 Northwind 的 Customers 和 Orders 資料表對應的實體類別，則 Customer 類別會是父類別，而 Order 類別會是子類別。  
@@ -39,15 +38,15 @@ ms.locfileid: "58945165"
   
 ### <a name="to-create-an-association-between-entity-classes"></a>若要在實體類別之間建立關聯  
   
-1.  以滑鼠右鍵按一下代表關聯中父類別的實體類別，指向 [新增]，然後按一下 [關聯]。  
+1. 以滑鼠右鍵按一下代表關聯中父類別的實體類別，指向 [新增]，然後按一下 [關聯]。  
   
-2.  確認 [關聯編輯器] 對話方塊中選取的是正確的 [父類別]。  
+2. 確認 [關聯編輯器] 對話方塊中選取的是正確的 [父類別]。  
   
-3.  選取下拉式方塊中的 [子類別]。  
+3. 選取下拉式方塊中的 [子類別]。  
   
-4.  選取使類別互相關聯的 [關聯屬性]。 通常，這會對應至資料庫中定義的外部索引鍵關聯性。 例如，Customers 和 Orders 關聯中，**關聯屬性**會針對每個類別的 CustomerID。  
+4. 選取使類別互相關聯的 [關聯屬性]。 通常，這會對應至資料庫中定義的外部索引鍵關聯性。 例如，Customers 和 Orders 關聯中，**關聯屬性**會針對每個類別的 CustomerID。  
   
-5.  按一下 [確定] 建立關聯。  
+5. 按一下 [確定] 建立關聯。  
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

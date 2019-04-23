@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26632961474f54a545ff0fa900fff6c50a9ec3da
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 565d735e2d822d6cc7b353ffdf106b30201c22d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074371"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>逐步解說：使用內容控制項建立範本
   本逐步解說示範如何建立文件層級自訂，這個自訂會使用內容控制項在 Microsoft Office Word 範本中建立可重複使用的結構化內容。
@@ -47,16 +47,16 @@ ms.locfileid: "56605935"
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Word
+- Microsoft Word
 
 ## <a name="create-a-new-word-template-project"></a>建立新的 Word 範本專案
  建立 Word 範本，讓使用者可以輕鬆建立自己的複本。
 
 ### <a name="to-create-a-new-word-template-project"></a>建立新的 Word 範本專案
 
-1.  建立 Word 範本專案同名**MyBuildingBlockTemplate**。 在精靈中，於方案中建立新文件。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 建立 Word 範本專案同名**MyBuildingBlockTemplate**。 在精靈中，於方案中建立新文件。 如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在設計工具中開啟新的 Word 範本，並將**MyBuildingBlockTemplate**專案加入**方案總管 中**。
 
@@ -137,14 +137,14 @@ ms.locfileid: "56605935"
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>以程式設計方式修改內容控制項的 UI
 
-1.  在 [**方案總管] 中**，以滑鼠右鍵按一下**ThisDocument.cs**或**ThisDocument.vb**，然後按一下**檢視程式碼**。
+1. 在 [**方案總管] 中**，以滑鼠右鍵按一下**ThisDocument.cs**或**ThisDocument.vb**，然後按一下**檢視程式碼**。
 
-2.  將下列程式碼加入 `ThisDocument` 類別。 這個程式碼會宣告數個物件，您稍後於此逐步解說中會用到。
+2. 將下列程式碼加入 `ThisDocument` 類別。 這個程式碼會宣告數個物件，您稍後於此逐步解說中會用到。
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]
 
-3.  將下面程式碼加新增至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法。 此程式碼會將項目加入資料表中的 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 和 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>，然後設定預留位置文字，在使用者編輯這些控制項之前先行顯示在控制項中。
+3. 將下面程式碼加新增至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法。 此程式碼會將項目加入資料表中的 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 和 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>，然後設定預留位置文字，在使用者編輯這些控制項之前先行顯示在控制項中。
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]
@@ -154,7 +154,7 @@ ms.locfileid: "56605935"
 
 ### <a name="to-prevent-users-from-editing-the-employee-table"></a>防止使用者編輯員工資料表
 
-1.  請將下列程式碼加入 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 此程式碼會將資料表放到您稍早宣告的 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 物件內，藉以防止使用者編輯員工資料表。
+1. 請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 此程式碼會將資料表放到您稍早宣告的 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 物件內，藉以防止使用者編輯員工資料表。
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#3)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#3)]
@@ -164,12 +164,12 @@ ms.locfileid: "56605935"
 
 ### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>將資料表加入至範本中的建置組塊
 
-1.  請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 這個程式碼加入新的建置組塊包含 Microsoft.Office.Interop.Word.BuildingBlockEntries 集合，其中包含所有可重複使用的建置組塊範本中的資料表。 在名為的新類別中定義新的建置組塊**Employee and Customer Information**且指派建置組塊類型`Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`。
+1. 請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 這個程式碼加入新的建置組塊包含 Microsoft.Office.Interop.Word.BuildingBlockEntries 集合，其中包含所有可重複使用的建置組塊範本中的資料表。 在名為的新類別中定義新的建置組塊**Employee and Customer Information**且指派建置組塊類型`Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`。
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]
 
-2.  請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 此程式碼會從範本刪除資料表。 因為您已將資料表加入至範本中可重複使用的建置組塊庫，所以不再需要它們了。 程式碼會先讓文件進入設計模式，如此就可以刪除受保護的員工資料表。
+2. 請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 此程式碼會從範本刪除資料表。 因為您已將資料表加入至範本中可重複使用的建置組塊庫，所以不再需要它們了。 程式碼會先讓文件進入設計模式，如此就可以刪除受保護的員工資料表。
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#5)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#5)]
@@ -179,7 +179,7 @@ ms.locfileid: "56605935"
 
 ### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>建立會顯示建置組塊的內容控制項
 
-1.  請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 此程式碼會初始化您稍早宣告的 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 物件。 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>會顯示所有類別目錄中所定義的建置組塊**Employee and Customer Information**且具有建置組塊類型`Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`。
+1. 請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 此程式碼會初始化您稍早宣告的 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 物件。 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>會顯示所有類別目錄中所定義的建置組塊**Employee and Customer Information**且具有建置組塊類型`Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`。
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]
@@ -189,50 +189,50 @@ ms.locfileid: "56605935"
 
 ### <a name="to-test-the-employee-table"></a>測試員工資料表
 
-1.  按 **F5** 執行專案。
+1. 按 **F5** 執行專案。
 
-2.  按一下 **選擇您第一次的建置組塊**顯示第一次的建置組塊庫內容控制項。
+2. 按一下 **選擇您第一次的建置組塊**顯示第一次的建置組塊庫內容控制項。
 
-3.  按一下下拉箭號旁**自訂圖庫 1**標題的控制項中，並選取**Employee 資料表**。
+3. 按一下下拉箭號旁**自訂圖庫 1**標題的控制項中，並選取**Employee 資料表**。
 
-4.  按一下右邊儲存格中**員工姓名**資料格，然後輸入的名稱。
+4. 按一下右邊儲存格中**員工姓名**資料格，然後輸入的名稱。
 
      驗證您是否只能將文字加入此儲存格。 <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> 只允許使用者加入文字，不允許其他類型的內容，例如圖片或資料表。
 
-5.  按一下右邊儲存格中**雇用日期**資料格，然後在 日期選擇器選取一個日期。
+5. 按一下右邊儲存格中**雇用日期**資料格，然後在 日期選擇器選取一個日期。
 
-6.  按一下右邊儲存格中**Title**資料格，然後在下拉式方塊中選取其中一個工作職稱。
+6. 按一下右邊儲存格中**Title**資料格，然後在下拉式方塊中選取其中一個工作職稱。
 
      (選擇性) 輸入不在清單中的工作職稱。 這是可行的，因為 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 可以讓使用者從項目清單中選取或自行輸入。
 
-7.  按一下右邊的儲存格的圖示**圖片**資料格，然後瀏覽至要顯示的影像。
+7. 按一下右邊的儲存格的圖示**圖片**資料格，然後瀏覽至要顯示的影像。
 
-8.  嘗試將資料列或資料行加入資料表，並嘗試從資料表刪除資料列和資料行。 驗證您是否無法修改資料表。 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 會防止您進行任何修改。
+8. 嘗試將資料列或資料行加入資料表，並嘗試從資料表刪除資料列和資料行。 驗證您是否無法修改資料表。 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 會防止您進行任何修改。
 
 ### <a name="to-test-the-customer-feedback-table"></a>測試客戶回函資料表
 
-1.  按一下 **選擇您的第二個建置組塊**顯示第二個的建置組塊庫內容控制項。
+1. 按一下 **選擇您的第二個建置組塊**顯示第二個的建置組塊庫內容控制項。
 
-2.  按一下下拉箭號旁**自訂圖庫 1**標題的控制項中，並選取**Customer 資料表**。
+2. 按一下下拉箭號旁**自訂圖庫 1**標題的控制項中，並選取**Customer 資料表**。
 
-3.  按一下右邊儲存格中**Customer Name**資料格，然後輸入的名稱。
+3. 按一下右邊儲存格中**Customer Name**資料格，然後輸入的名稱。
 
-4.  按一下右邊儲存格中**滿意度評等**資料格，然後選取其中一個可用的選項。
+4. 按一下右邊儲存格中**滿意度評等**資料格，然後選取其中一個可用的選項。
 
      驗證您是否無法輸入自己的項目。 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 只允許使用者從項目清單中選取。
 
-5.  按一下右邊儲存格中**註解**資料格，然後輸入註解。
+5. 按一下右邊儲存格中**註解**資料格，然後輸入註解。
 
      (選擇性) 加入文字以外的內容，例如圖片或內嵌資料表。 這是可行的，因為 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 可以讓使用者加入文字以外的內容。
 
-6.  驗證您是否可以將資料列或資料行加入資料表，以及是否可以從資料表刪除資料列和資料行。 這是可行的，因為您尚未將資料表放入 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 進行保護。
+6. 驗證您是否可以將資料列或資料行加入資料表，以及是否可以從資料表刪除資料列和資料行。 這是可行的，因為您尚未將資料表放入 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 進行保護。
 
-7.  關閉範本。
+7. 關閉範本。
 
 ## <a name="next-steps"></a>後續步驟
  您可以透過下列主題，進一步了解如何使用內容控制項：
 
--   將內容控制項繫結至內嵌於文件的 XML 片段，也稱為自訂 XML 組件。 如需詳細資訊，請參閱[逐步解說：內容控制項繫結至自訂 XML 組件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)。
+- 將內容控制項繫結至內嵌於文件的 XML 片段，也稱為自訂 XML 組件。 如需詳細資訊，請參閱[逐步解說：內容控制項繫結至自訂 XML 組件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)

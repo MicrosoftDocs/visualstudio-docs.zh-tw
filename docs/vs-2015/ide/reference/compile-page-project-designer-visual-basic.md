@@ -19,17 +19,16 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 928d3c4fe3e90c731f56eba4e7275772fdcd76c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd58013cb26e8533a5b898a0e5cd1df3be1b262
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778908"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649052"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>專案設計工具、編譯頁 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 請使用 [專案設計工具] 的 [編譯] 頁面來指定編譯指令。 您也可以在此頁面上指定進階編譯器選項及建置前或建置後事件。  
   
  若要存取 [編譯] 頁面，請在方案總管中選擇專案節點 (而不是 [方案] 節點)。 然後選擇功能表列上的 [專案]、[屬性]。 [專案設計工具] 出現時，請按一下 [編譯] 索引標籤。  
@@ -169,9 +168,9 @@ ms.locfileid: "54778908"
   **進階編譯選項**  
   按一下此按鈕可存取 [進階編譯器設定] 對話方塊。 請使用 [進階編譯器設定] 對話方塊來指定專案的進階建置組態屬性。 此對話方塊只適用於 Visual Basic 專案。 如需詳細資訊，請參閱[進階編譯器設定對話方塊 (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
  [管理編譯屬性](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [如何：指定建置事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [Visual Basic 命令列編譯器](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
- [如何：建立和編輯組態](../../ide/how-to-create-and-edit-configurations.md)
+ [如何：建立及編輯組態](../../ide/how-to-create-and-edit-configurations.md)

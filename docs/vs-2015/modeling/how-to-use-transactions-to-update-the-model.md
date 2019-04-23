@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ff4aba08b4eaa1d508c3371a3da80b8cac48534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bbc09543d0ee0297678d3f205becc55a6b6d7714
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085918"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>HOW TO：使用異動更新模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,9 +61,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>復原交易  
  若要確保會保留在存放區，或會還原為其交易前的狀態，您可以使用其中一個策略：  
   
-1.  引發交易的範圍內沒有攔截到例外狀況。  
+1. 引發交易的範圍內沒有攔截到例外狀況。  
   
-2.  回復明確交易：  
+2. 回復明確交易：  
   
     ```  
     this.Store.TransactionManager.CurrentTransaction.Rollback();  

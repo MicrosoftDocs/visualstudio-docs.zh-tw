@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/01/2019
+ms.date: 04/02/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 3f4cb5f43678b0eab499ec730c705720ea9eca29
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5c004b1db829f50b2fed435ad0202308ef3726c8
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58161115"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58872928"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Visual Studio 核心編輯器 (隨附於 Visual Studio Enterprise 2019)
 
@@ -40,8 +40,8 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 使用者的 Visu
 
 元件識別碼 | 名稱 | 版本 | 相依性類型
 --- | --- | --- | ---
-Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28315.86 | 必要
-Component.Microsoft.VisualStudio.Web.AzureFunctions | Azure WebJobs 工具 | 16.0.28625.61 | 必要
+Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28714.129 | 必要
+Component.Microsoft.VisualStudio.Web.AzureFunctions | Azure WebJobs 工具 | 16.0.28714.129 | 必要
 Component.Microsoft.Web.LibraryManager | 程式庫管理員 | 16.0.28315.86 | 必要
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 | 16.0.28517.75 | 必要
@@ -55,7 +55,7 @@ Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | .NET Core 2.1 開發工�
 Microsoft.NetCore.ComponentGroup.Web.2.1 | .NET Core 2.1 開發工具 | 16.0.28621.142 | 必要
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 16.0.28315.86 | 必要
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.0.28625.61 | 必要
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.0.28720.110 | 必要
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 16.0.28315.86 | 必要
@@ -67,9 +67,9 @@ Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 16
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScript 語言支援 | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed 桌面工作負載核心 | 16.0.28621.142 | 必要
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC 驅動程式 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28625.61 | 必要
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28707.177 | 必要
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 執行階段 | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 資料類型 | 16.0.28315.86 | 必要
@@ -83,7 +83,7 @@ Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites | Azure 開發必要�
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Azure WebJobs 工具 | 16.0.28621.142 | 必要
 Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必要條件 | 16.0.28621.142 | 必要
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 16.0.28621.142 | 必要
-Microsoft.Component.Azure.DataLake.Tools | Azure Data Lake 與串流分析工具 | 16.0.28625.61 | 建議
+Microsoft.Component.Azure.DataLake.Tools | Azure Data Lake 與串流分析工具 | 16.0.28720.110 | 建議
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目標套件 | 16.0.28517.75 | 建議
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目標套件 | 16.0.28517.75 | 建議
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 16.0.28517.75 | 建議
@@ -95,7 +95,7 @@ Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools | Service Fabric 工�
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure 雲端服務核心工具 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure 雲端服務建置工具 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.Debugger.Snapshot | 快照集偵錯工具 | 16.0.28625.61 | 建議
-Microsoft.VisualStudio.Component.Debugger.TimeTravel | 輔助偵錯公用程式 | 16.0.28625.61 | 建議
+Microsoft.VisualStudio.Component.Debugger.TimeTravel | 時間移動偵錯工具 | 16.0.28714.129 | 建議
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.0.28315.86 | 建議
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | 建議
@@ -128,9 +128,9 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 元件識別碼 | 名稱 | 版本 | 相依性類型
 --- | --- | --- | ---
-Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28315.86 | 建議
+Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28714.129 | 建議
 Component.Microsoft.Web.LibraryManager | 程式庫管理員 | 16.0.28315.86 | 建議
-Microsoft.Component.Azure.DataLake.Tools | Azure Data Lake 與串流分析工具 | 16.0.28625.61 | 建議
+Microsoft.Component.Azure.DataLake.Tools | Azure Data Lake 與串流分析工具 | 16.0.28720.110 | 建議
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 建議
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目標套件 | 16.0.28517.75 | 建議
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 | 16.0.28517.75 | 建議
@@ -144,7 +144,7 @@ Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 �
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 開發工具 | 16.0.28621.142 | 建議
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 16.0.28315.86 | 建議
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.0.28625.61 | 建議
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.0.28720.110 | 建議
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure 雲端服務核心工具 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure 雲端服務建置工具 | 16.0.28625.61 | 建議
@@ -156,9 +156,9 @@ Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 16
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScript 語言支援 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed 桌面工作負載核心 | 16.0.28621.142 | 建議
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC 驅動程式 | 16.0.28625.61 | 建議
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28625.61 | 建議
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28707.177 | 建議
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.0.28625.61 | 建議
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 建議
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 建議
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 執行階段 | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 資料類型 | 16.0.28315.86 | 建議
@@ -191,7 +191,7 @@ Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 16
 Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面語言支援 | 16.0.28315.86 | 建議
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScript 語言支援 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.0.28625.61 | 建議
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 建議
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 建議
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.TypeScript.3.3 | TypeScript 3.3 SDK | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | 建議
@@ -223,11 +223,11 @@ Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 開發工具 | 16.0.28621.142 | 必要
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed 桌面工作負載核心 | 16.0.28621.142 | 必要
 Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | .NET 桌面開發工具 | 16.0.28621.142 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 資料類型 | 16.0.28315.86 | 必要
 Microsoft.VisualStudio.Component.TextTemplating | 文字範本轉換 | 16.0.28625.61 | 必要
-Component.Microsoft.VisualStudio.LiveShare | Live Share - 預覽 | 0.3.1225.0 | 建議
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | 建議
 Microsoft.ComponentGroup.Blend | Blend for Visual Studio | 16.0.28315.86 | 建議
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目標套件 | 16.0.28517.75 | 建議
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 | 16.0.28517.75 | 建議
@@ -241,7 +241,7 @@ Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 工具 | 1
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.0.28315.86 | 建議
 Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 16.0.28315.86 | 建議
 Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 16.0.28528.71 | Optional
-Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28315.86 | Optional
+Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28714.129 | Optional
 Component.Microsoft.Web.LibraryManager | 程式庫管理員 | 16.0.28315.86 | Optional
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 16.0.28517.75 | Optional
@@ -270,7 +270,7 @@ Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Opt
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScript 語言支援 | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC 驅動程式 | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28625.61 | Optional
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28707.177 | Optional
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.PortableLibrary | .NET 可攜式程式庫目標套件 | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 執行階段 | 16.0.28517.75 | Optional
@@ -297,11 +297,11 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程�
 Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 開發工具 | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目標套件 | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.Unity | Visual Studio Tools for Unity | 16.0.28315.86 | 必要
-Component.UnityEngine.x64 | Unity 2018.3 64 位元編輯器 | 16.0.28528.71 | 建議
-Component.UnityEngine.x86 | Unity 5.6 32 位元編輯器 | 16.0.28315.86 | 建議
+Component.UnityEngine.x64 | Unity 2018.3 64 位元編輯器 | 16.0.28707.178 | 建議
+Component.UnityEngine.x86 | Unity 5.6 32 位元編輯器 | 16.0.28707.178 | 建議
 
 ## <a name="linux-development-with-c"></a>使用 C++ 的 Linux 程式開發
 
@@ -336,14 +336,14 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.Component.ClassDesigner | 類別設計工具 | 16.0.28528.71 | 必要
 Microsoft.VisualStudio.Component.CodeMap | Code Map | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.GraphDocument | DGML 編輯器 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.TextTemplating | 文字範本轉換 | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ 核心功能 | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | C++ 2019 可轉散發更新 | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Native | 適用於 C++ 的架構工具 | 16.0.28621.142 | 必要
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Visual C++ 核心桌面功能 | 16.0.28315.86 | 必要
-Component.Microsoft.VisualStudio.LiveShare | Live Share - 預覽 | 0.3.1225.0 | 建議
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | 建議
 Microsoft.VisualStudio.Component.Debugger.JustInTime | Just-in-Time 偵錯工具 | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.Component.Graphics.Tools | 適用於 DirectX 的圖形偵錯工具與 GPU 分析工具 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.0.28315.86 | 建議
@@ -357,7 +357,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x6
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 16.0.28621.142 | 建議
 Component.Incredibuild | IncrediBuild - 組建加速 | 16.0.28528.71 | Optional
-Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Optional
+Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.3 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 16.0.28625.61 | Optional
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 16.0.28517.75 | Optional
@@ -387,12 +387,12 @@ Microsoft.VisualStudio.Component.Graphics.Tools | 適用於 DirectX 的圖形偵
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.0.28315.86 | 建議
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 分析工具 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | 建議
-Component.Android.NDK.R16B | Android NDK (R16B) | 16.0.28625.61 | Optional
+Component.Android.NDK.R16B | Android NDK (R16B) | 16.0.28728.38 | Optional
 Component.Android.SDK25.Private | Android SDK 安裝程式 (API 層級 25) (可用於以 C++ 進行行動裝置開發的本機安裝) | 16.0.28625.61 | Optional
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | Optional
 Component.Cocos | Cocos | 16.0.28315.86 | Optional
 Component.Incredibuild | IncrediBuild - 組建加速 | 16.0.28528.71 | Optional
-Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Optional
+Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.3 | Optional
 Component.MDD.Android | C++ Android 開發工具 | 16.0.28517.75 | Optional
 Component.OpenJDK | OpenJDK (Microsoft 散發) | 16.0.28625.61 | Optional
 Component.Unreal | Unreal Engine 安裝程式 | 16.0.28625.61 | Optional
@@ -408,7 +408,7 @@ Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 16.0.2
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.0.28516.191 | Optional
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開發工具 | 16.0.28516.191 | Optional
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目標和建置工作 | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | Optional
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | Optional
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | Optional
@@ -426,14 +426,14 @@ Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134
 Component.Android.SDK25.Private | Android SDK 安裝程式 (API 層級 25) (可用於以 C++ 進行行動裝置開發的本機安裝) | 16.0.28625.61 | 必要
 Component.OpenJDK | OpenJDK (Microsoft 散發) | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ 核心功能 | 16.0.28625.61 | 必要
-Component.Android.NDK.R16B | Android NDK (R16B) | 16.0.28625.61 | 建議
+Component.Android.NDK.R16B | Android NDK (R16B) | 16.0.28728.38 | 建議
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | 建議
 Component.MDD.Android | C++ Android 開發工具 | 16.0.28517.75 | 建議
-Component.Android.NDK.R16B_3264 | Android NDK (R16B) (32 位元) | 16.0.28625.61 | Optional
+Component.Android.NDK.R16B_3264 | Android NDK (R16B) (32 位元) | 16.0.28728.38 | Optional
 Component.Google.Android.Emulator.API25.Private | Google Android 模擬器 (API 層級 25) (本機安裝) | 16.0.28625.61 | Optional
 Component.HAXM.Private | Intel Hardware Accelerated Execution Manager (HAXM) (本機安裝) | 16.0.28528.71 | Optional
 Component.Incredibuild | IncrediBuild - 組建加速 | 16.0.28528.71 | Optional
-Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Optional
+Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.3 | Optional
 Component.MDD.IOS | C++ iOS 開發工具 | 16.0.28517.75 | Optional
 
 ## <a name="net-core-cross-platform-development"></a>.NET Core 跨平台開發
@@ -446,7 +446,7 @@ Component.MDD.IOS | C++ iOS 開發工具 | 16.0.28517.75 | Optional
 
 元件識別碼 | 名稱 | 版本 | 相依性類型
 --- | --- | --- | ---
-Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28315.86 | 必要
+Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28714.129 | 必要
 Component.Microsoft.Web.LibraryManager | 程式庫管理員 | 16.0.28315.86 | 必要
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 | 16.0.28517.75 | 必要
@@ -467,9 +467,9 @@ Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 16
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScript 語言支援 | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed 桌面工作負載核心 | 16.0.28621.142 | 必要
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC 驅動程式 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28625.61 | 必要
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28707.177 | 必要
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 執行階段 | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 資料類型 | 16.0.28315.86 | 必要
@@ -480,16 +480,16 @@ Microsoft.VisualStudio.Component.TextTemplating | 文字範本轉換 | 16.0.2862
 Microsoft.VisualStudio.Component.TypeScript.3.3 | TypeScript 3.3 SDK | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必要條件 | 16.0.28621.142 | 必要
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 16.0.28621.142 | 必要
-Component.Microsoft.VisualStudio.LiveShare | Live Share - 預覽 | 0.3.1225.0 | 建議
-Component.Microsoft.VisualStudio.Web.AzureFunctions | Azure WebJobs 工具 | 16.0.28625.61 | 建議
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | 建議
+Component.Microsoft.VisualStudio.Web.AzureFunctions | Azure WebJobs 工具 | 16.0.28714.129 | 建議
 Microsoft.VisualStudio.Component.AppInsights.Tools | 開發人員分析工具 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 16.0.28315.86 | 建議
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.0.28625.61 | 建議
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.0.28720.110 | 建議
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.Debugger.Snapshot | 快照集偵錯工具 | 16.0.28625.61 | 建議
-Microsoft.VisualStudio.Component.Debugger.TimeTravel | 輔助偵錯公用程式 | 16.0.28625.61 | 建議
+Microsoft.VisualStudio.Component.Debugger.TimeTravel | 時間移動偵錯工具 | 16.0.28714.129 | 建議
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.0.28315.86 | 建議
 Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 16.0.28315.86 | 建議
@@ -525,7 +525,7 @@ Microsoft.VisualStudio.Component.FSharp | F# 語言支援 | 16.0.28315.86 | 必�
 Microsoft.VisualStudio.Component.Merq | 通用的 Xamarin 內部工具 | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.MonoDebugger | Mono 偵錯工具 | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine | ASP.NET 範本引擎 | 16.0.28315.86 | 必要
 Component.Android.SDK27 | Android SDK 安裝程式 (API 層級 27) | 16.0.28517.75 | 建議
@@ -541,7 +541,7 @@ Component.OpenJDK | OpenJDK (Microsoft 散發) | 16.0.28625.61 | 建議
 
 元件識別碼 | 名稱 | 版本 | 相依性類型
 --- | --- | --- | ---
-Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28315.86 | 必要
+Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28714.129 | 必要
 Component.Microsoft.Web.LibraryManager | 程式庫管理員 | 16.0.28315.86 | 必要
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 | 16.0.28517.75 | 必要
@@ -562,9 +562,9 @@ Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 16
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScript 語言支援 | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed 桌面工作負載核心 | 16.0.28621.142 | 必要
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC 驅動程式 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28625.61 | 必要
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28707.177 | 必要
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 執行階段 | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 資料類型 | 16.0.28315.86 | 必要
@@ -576,8 +576,8 @@ Microsoft.VisualStudio.Component.TypeScript.3.3 | TypeScript 3.3 SDK | 16.0.2862
 Microsoft.VisualStudio.Component.Web | ASP.NET 與網頁程式開發工具 | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必要條件 | 16.0.28621.142 | 必要
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 16.0.28621.142 | 必要
-Component.Microsoft.VisualStudio.LiveShare | Live Share - 預覽 | 0.3.1225.0 | 建議
-Component.Microsoft.VisualStudio.Web.AzureFunctions | Azure WebJobs 工具 | 16.0.28625.61 | 建議
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | 建議
+Component.Microsoft.VisualStudio.Web.AzureFunctions | Azure WebJobs 工具 | 16.0.28714.129 | 建議
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目標套件 | 16.0.28517.75 | 建議
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目標套件 | 16.0.28517.75 | 建議
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 16.0.28517.75 | 建議
@@ -586,11 +586,11 @@ Microsoft.VisualStudio.Component.AppInsights.Tools | 開發人員分析工具 | 
 Microsoft.VisualStudio.Component.AspNet45 | 進階的 ASP.NET 功能 | 16.0.28315.86 | 建議
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 16.0.28315.86 | 建議
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.0.28625.61 | 建議
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.0.28720.110 | 建議
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.Debugger.Snapshot | 快照集偵錯工具 | 16.0.28625.61 | 建議
-Microsoft.VisualStudio.Component.Debugger.TimeTravel | 輔助偵錯公用程式 | 16.0.28625.61 | 建議
+Microsoft.VisualStudio.Component.Debugger.TimeTravel | 時間移動偵錯工具 | 16.0.28714.129 | 建議
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 工具 | 16.0.28315.86 | 建議
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.0.28315.86 | 建議
@@ -637,7 +637,7 @@ Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScri
 Microsoft.VisualStudio.Component.Node.Tools | Node.js 開發工具 | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.TypeScript.3.3 | TypeScript 3.3 SDK | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程式開發 | 16.0.28621.142 | 必要
-Component.Microsoft.VisualStudio.LiveShare | Live Share - 預覽 | 0.3.1225.0 | 建議
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | 建議
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.Component.AppInsights.Tools | 開發人員分析工具 | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 16.0.28315.86 | Optional
@@ -654,7 +654,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x6
 
 元件識別碼 | 名稱 | 版本 | 相依性類型
 --- | --- | --- | ---
-Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28315.86 | 必要
+Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28714.129 | 必要
 Component.Microsoft.Web.LibraryManager | 程式庫管理員 | 16.0.28315.86 | 必要
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 | 16.0.28517.75 | 必要
@@ -674,9 +674,9 @@ Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScri
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed 桌面工作負載核心 | 16.0.28621.142 | 必要
 Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | .NET 桌面開發工具 | 16.0.28621.142 | 必要
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC 驅動程式 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28625.61 | 必要
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28707.177 | 必要
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.Sharepoint.Tools | Office Developer Tools for Visual Studio | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 執行階段 | 16.0.28517.75 | 必要
@@ -719,7 +719,7 @@ Microsoft.VisualStudio.ComponentGroup.Sharepoint.WIF | Windows Identity Foundati
 --- | --- | --- | ---
 Microsoft.Component.PythonTools | Python 語言支援 | 16.0.28625.61 | 必要
 Component.CPython3.x64 | Python 3 64 位元 (3.7.2) | 3.7.2 | 建議
-Component.Microsoft.VisualStudio.LiveShare | Live Share - 預覽 | 0.3.1225.0 | 建議
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | 建議
 Microsoft.Component.PythonTools.Minicondax64 | Python miniconda | 16.0.28625.61 | 建議
 Microsoft.Component.PythonTools.Web | Python Web 支援 | 16.0.28517.75 | 建議
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 連接與發行工具 | 16.0.28315.86 | 建議
@@ -730,7 +730,7 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程�
 Component.CPython2.x64 | Python 2 64 位元 (2.7.15) | 2.7.15 | Optional
 Component.CPython2.x86 | Python 2 32 位元 (2.7.15) | 2.7.15 | Optional
 Component.CPython3.x86 | Python 3 32 位元 (3.7.2) | 3.7.2 | Optional
-Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28315.86 | Optional
+Component.Microsoft.VisualStudio.RazorExtension | Razor 語言服務 | 16.0.28714.129 | Optional
 Component.Microsoft.Web.LibraryManager | 程式庫管理員 | 16.0.28315.86 | Optional
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 16.0.28625.61 | Optional
@@ -743,7 +743,7 @@ Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 開發工具 | 16.0.28621.142 | Optional
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 16.0.28315.86 | Optional
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.0.28625.61 | Optional
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 16.0.28720.110 | Optional
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 儲存體模擬器 | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure 雲端服務核心工具 | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure 雲端服務建置工具 | 16.0.28625.61 | Optional
@@ -753,9 +753,9 @@ Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Opt
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed 桌面工作負載核心 | 16.0.28621.142 | Optional
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC 驅動程式 | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28625.61 | Optional
+Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server Command Line Utilities | 16.0.28707.177 | Optional
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | Optional
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | Optional
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 執行階段 | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 資料類型 | 16.0.28315.86 | Optional
@@ -793,7 +793,7 @@ Microsoft.VisualStudio.Component.Graphics | 影像與 3D 模型編輯器 | 16.0.
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 診斷 | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 與 TypeScript 語言支援 | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 資料類型 | 16.0.28315.86 | 必要
 Microsoft.VisualStudio.Component.TypeScript.3.3 | TypeScript 3.3 SDK | 16.0.28625.61 | 必要
@@ -848,7 +848,7 @@ Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 16.0.28517.75 | �
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.0.28517.75 | 必要
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.0.28516.191 | 必要
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.VSSDK | Visual Studio SDK | 16.0.28315.86 | 必要
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites | Visual Studio 擴充功能開發必要條件 | 16.0.28621.142 | 必要
@@ -882,6 +882,7 @@ Component.GitHub.VisualStudio | Visual Studio 的 GitHub 擴充功能 | 2.5.9.54
 Component.Xamarin.Inspector | Xamarin Inspector | 16.0.28315.86
 Component.Xamarin.Profiler | Xamarin Profiler | 16.0.28315.86
 Component.Xamarin.Workbooks | Xamarin Workbooks | 16.0.28315.86
+Microsoft.Component.ClickOnce | ClickOnce 發行 | 16.0.28707.177
 Microsoft.Component.HelpViewer | 說明檢視器 | 16.0.28625.61
 Microsoft.NetCore.1x.ComponentGroup.Web | 適用於網路的 .NET Core 1.0 - 1.1 開發工具 | 16.0.28621.142
 Microsoft.VisualStudio.Component.AzureDevOps.OfficeIntegration | Azure DevOps Office 整合 | 16.0.28625.61
@@ -918,5 +919,6 @@ Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64 | 適用於 v141 建置工具
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64.Spectre | 適用於 v141 建置工具且具有 Spectre 風險降低功能的 C++ MFC (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.Spectre | 適用於 v141 建置工具且具有 Spectre 風險降低功能的 C++ MFC (x86 & x64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre | MSVC v141 – VS 2017 C++ x64/x86 已開啟 Spectre 風險降低功能的程式庫 (v14.16) | 16.0.28625.61
+Microsoft.VisualStudio.Component.VisualStudioData | 資料來源與服務參考 | 16.0.28707.177
 Microsoft.VisualStudio.Component.WinXP | 適用於 VS 2017 (v141) 工具的 C++ Windows XP 支援 [已淘汰] | 16.0.28625.61
 Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 16.0.28621.142

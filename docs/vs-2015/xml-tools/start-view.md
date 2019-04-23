@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 733d72f9fdf0d172e5d61d44120f212787d70050
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb0cc75abced1d94fbedccf46b8953df78db7d28
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945319"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651249"
 ---
 # <a name="start-view"></a>開始檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 開始檢視是 XML 結構描述 (XSD) 設計工具的啟動點。 當您建立新 XSD 檔案時，您將先看到開始檢視。  
   
  開始檢視包含兩個主要區段*浮水印*並**結構描述集合的詳細資訊**窗格。 其中也包含工具列，所有的 XSD 設計工具檢視皆提供此工具列。  

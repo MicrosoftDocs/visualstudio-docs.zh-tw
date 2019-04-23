@@ -1,5 +1,5 @@
 ---
-title: 步驟 3：設定您的表單屬性 | Microsoft Docs
+title: 步驟 3：設定您的表單屬性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,19 +9,19 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4a93dfca4681f93d0d2a5c45b189fd34c8dccca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 676ea11188b7b55f3e929280d2b1c67166e37fdc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067244"
 ---
-# <a name="step-3-set-your-form-properties"></a>步驟 3：設定您的表單屬性
+# <a name="step-3-set-your-form-properties"></a>步驟 3：設定表單屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 接下來，您要使用 [屬性] 視窗變更表單的外觀。  
   
- ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需觀看本主題的影片版本，請參閱[教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205209) 或 [教學課程 1：在 C# 中建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205199)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。  
+ ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如本主題的影片版本，請參閱[教學課程 1:在 Visual Basic-影片 1 中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205209)或[教學課程 1:建立圖片檢視器中的C#-影片 1](http://go.microsoft.com/fwlink/?LinkId=205199)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。  
   
 ### <a name="to-set-your-form-properties"></a>若要設定您的表單屬性  
   
@@ -64,14 +64,14 @@ ms.locfileid: "54782245"
   
 7. 在繼續下一個步驟之前，請停止程式，因為當程式執行時，IDE 不會允許您變更程式。 請記住，您可以使用下列任何一個方法停止程式。  
   
-   -   在工具列上選擇 [停止偵錯] 按鈕。  
+   - 在工具列上選擇 [停止偵錯] 按鈕。  
   
-   -   在功能表列上，選擇 [偵錯]、[停止偵錯]。  
+   - 在功能表列上，選擇 [偵錯]、[停止偵錯]。  
   
-   -   選擇 [Form1] 視窗右上角的 X 按鈕。  
+   - 選擇 [Form1] 視窗右上角的 X 按鈕。  
   
 ### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
--   若要移至下一個教學課程步驟，請參閱[步驟 4：使用 TableLayoutPanel 控制項來配置您的表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。  
+- 若要前往下一個教學課程步驟，請參閱[步驟 4：使用 TableLayoutPanel 控制項來配置您的表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。  
   
--   若要返回上一個教學課程步驟，請參閱[步驟 2：執行您的程式](../ide/step-2-run-your-program.md)。
+- 若要回到上一個教學課程步驟，請參閱[步驟 2：執行您的程式](../ide/step-2-run-your-program.md)。

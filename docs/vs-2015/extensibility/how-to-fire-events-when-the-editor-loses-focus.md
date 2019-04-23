@@ -10,12 +10,12 @@ ms.assetid: 64d40695-6917-468a-8037-a253453ac159
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c6bcd77d16f3c765a522f178604842714db84e24
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ebca733798636ca32787b88b8874c31a2ffffdb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940182"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050255"
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>HOW TO：引發事件當編輯器失去焦點時
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,14 +24,14 @@ ms.locfileid: "58940182"
   
 ### <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>引發事件以回應編輯器失去焦點  
   
-1.  取得監視選取的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>物件從<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>。  
+1. 取得監視選取的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>物件從<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>。  
   
-2.  呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A>，並提供您<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>物件。  
+2. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A>，並提供您<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>物件。  
   
-3.  在您呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>，尋找`elementid==SEID_WindowFrame`。  
+3. 在您呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>，尋找`elementid==SEID_WindowFrame`。  
   
-4.  測試`varValueNew`參數兩件事：  
+4. 測試`varValueNew`參數兩件事：  
   
-    1.  您所需的視窗框架。  
+    1. 您所需的視窗框架。  
   
-    2.  在您的程式遺失選取範圍至該視窗框架的點。
+    2. 在您的程式遺失選取範圍至該視窗框架的點。

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 25a7f5f0e53518e9beb4b509ab27ae4de0f28fa7
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018151"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477537"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
@@ -34,10 +34,10 @@ ms.locfileid: "59018151"
 以下是新增功能的概要回顧：
 
 * **[開發](#develop)**：透過改善的效能、即時程式碼清除及更好的搜尋結果，專注於目標並保持生產力。
-* **[共同作業](#collaborate)**：透過雲端優先工作流程、即時編輯和偵錯，以及直接在 Visual Studio 中檢閱程式碼，享受自然的共同作業。
+* **[共同作業](#collaborate)**：透過 Git 優先工作流程、即時編輯和偵錯，以及直接在 Visual Studio 中檢閱程式碼，享受自然的共同作業。
 * **[偵錯](#debug)**：反白顯示並巡覽至特定值、最佳化記憶體使用，然後自動建立應用程式執行的快照集。
 
-如需此版本中所有新功能的完整清單，請參閱[版本資訊](/visualstudio/releases/2019/release-notes/)。 
+如需此版本中所有新功能的完整清單，請參閱[版本資訊](/visualstudio/releases/2019/release-notes/)。
 
 ## <a name="develop"></a>開發
 
@@ -55,11 +55,11 @@ ms.locfileid: "59018151"
 
 ### <a name="refactorings"></a>重構
 
-新的 C# 重構可輕鬆地組織您的程式碼。 只要按下 **Ctrl+.**，來叫用重構 然後選取您想要採取的動作。 
+C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的程式碼。 它們顯示為燈泡中的建議，且包含動作，如將成員移動至介面或基底類別、調整命名空間以符合資料夾結構、將 foreach 迴圈轉換為 Linq 查詢等等。
 
    ![Visual Studio 2019 中的重構體驗動畫](media/vs-2019/refactorings.gif)
 
-我們已新增許多新的重構，包括可讓您包裝方法參數的重構。
+只要按下 **Ctrl+.**，來叫用重構 然後選取您想要採取的動作。
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -78,7 +78,7 @@ ms.locfileid: "59018151"
 
 如果您使用 C#，我們也新增了以您的程式碼訓練自訂模型的能力。
 
-如需 IntelliCode 的詳細資訊，請參閱[使用 Visual Studio IntelliCode 編寫更多程式碼、捲動更少](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) \(英文\) 部落格文章。 
+如需 IntelliCode 的詳細資訊，請參閱[使用 Visual Studio IntelliCode 編寫更多程式碼、捲動更少](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) \(英文\) 部落格文章。
 
 ### <a name="code-cleanup"></a>程式碼清除
 
@@ -142,7 +142,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
    ![在 Visual Studio 2019 中顯示偵錯資料中斷點的動畫](media/vs-2019/debug-data-breakpoints.gif)
 
-因此無論您在 C++ 或 .NET Core 中編寫程式碼，資料中斷點都是一般中斷點的理想替代方法。 像是尋找要修改或新增或從清單中移除的全域物件，這類情節也非常適合使用資料中斷點。 
+因此無論您在 C++ 或 .NET Core 中編寫程式碼，資料中斷點都是一般中斷點的理想替代方法。 像是尋找要修改或新增或從清單中移除的全域物件，這類情節也非常適合使用資料中斷點。
 
 如果您是開發大型應用程式的 C++ 開發人員，Visual Studio 2019 還提供處理序外的符號，可讓您對這些應用程式偵錯，而不會發生記憶體相關的問題。
 
@@ -152,7 +152,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
    ![在 Visual Studio 2019 中顯示偵錯搜尋視窗的動畫](media/vs-2019/debug-window-search.gif)
 
-在 [監看式]、[區域變數] 和 [自動變數] 視窗的顯示方式，您也能加以格式化。  在任一視窗中的其中一個項目上按兩下，並新增逗號 (",") 來存取可用格式規範的下拉式清單，其中每一項都包含其預期效果的描述。
+您也可以設定值在 [監看式]、[區域變數] 與 [自動變數] 視窗內的顯示方式。  在任一視窗中的其中一個項目上按兩下，並新增逗號 (",") 來存取可用格式指定名稱的下拉式清單，其中每一個都包含其預期效果的描述。
 
    ![Visual Studio 2019 中的新 [監看式] 視窗和格式值功能](media/search-watch-window.png)
 
@@ -160,7 +160,7 @@ Visual Studio 2019 預設會安裝這項服務。
 
 ### <a name="snapshot-debugger"></a>快照集偵錯工具
 
-在雲端中取得應用程式執行的快照集，以查看的確切狀況。 (僅 Visual Studio Enterprise 提供這項功能。)
+在雲端中取得應用程式執行的快照集，以查看確切的狀況。 (僅 Visual Studio Enterprise 提供此功能)
 
    ![顯示 Visual Studio 2019 Enterprise 中的快照集偵錯工具動畫](media/vs-2019/snapshot-debugger.gif)
 

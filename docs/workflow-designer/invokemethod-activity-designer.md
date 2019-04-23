@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e595247b147d9a775fcea0299c291d9027aea9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: eed5d81cce05b316ef7593639e868936e7f2fa69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039249"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 活動設計工具
 
@@ -33,7 +33,7 @@ ms.locfileid: "55942982"
 
 下表顯示<xref:System.Activities.Statements.InvokeMethod>屬性，並說明它們在設計工具的使用方式。 這些屬性可以在屬性方格中編輯，有些可以在工作流程設計工具介面上編輯。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeMethod> 活動的易記名稱。 預設值為 InvokeMethod。<br /><br /> 雖然<xref:System.Activities.Activity.DisplayName%2A>不是絕對必要，建議您最好使用其中一個。|
 |<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|活動執行時要呼叫之方法的名稱。 呼叫的方法必須宣告為**公開**。 此屬性可編輯設計工具介面上，而且是必要的。|
@@ -49,11 +49,11 @@ ms.locfileid: "55942982"
 
 以下清單顯示在 <xref:System.Activities.Activity.CacheMetadata%2A> 中登錄參數的演算法：
 
-1.  登錄 <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> 引數。
+1. 登錄 <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> 引數。
 
-2.  登錄 <xref:System.Activities.Statements.InvokeMethod.Result%2A> 引數。
+2. 登錄 <xref:System.Activities.Statements.InvokeMethod.Result%2A> 引數。
 
-3.  逐一查看 <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> 集合並登錄每個引數。
+3. 逐一查看 <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> 集合並登錄每個引數。
 
 產生的例外狀況是型別<xref:System.Activities.InvalidWorkflowException>並出現下列訊息：' InvokeMethod':變數、 RuntimeArgument 或 DelegateArgument 已經存在名稱為 'TargetObject'。 名稱在環境範圍中必須是唯一的。
 

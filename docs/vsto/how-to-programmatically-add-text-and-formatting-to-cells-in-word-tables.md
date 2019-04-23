@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 983b2939d652c20c3fbcb42dd8caded802495c8d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a415e55c263534ee4b29e5b45e24ad471d68fe0e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614645"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063864"
 ---
 # <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>HOW TO：以程式設計方式加入文字和格式在 Word 表格的儲存格
   每個資料表都是由一組儲存格組成。 每個個別的 <xref:Microsoft.Office.Interop.Word.Cell> 物件各代表資料表中的一個儲存格。 您可以依據儲存格在資料表中的位置來參考每一個儲存格。 這個範例會參考位於資料表中第一列和第一欄的儲存格、將文字加入儲存格，並套用格式。
@@ -29,7 +29,7 @@ ms.locfileid: "56614645"
 
 ## <a name="to-add-text-and-formatting-to-cells"></a>若要將文字和格式加入儲存格
 
-1.  依據儲存格在資料表中的位置來參考儲存格、將文字加入儲存格，然後套用格式。
+1. 依據儲存格在資料表中的位置來參考儲存格、將文字加入儲存格，然後套用格式。
 
      下列程式碼範例可用於文件層級自訂。 若要使用此範例，請從專案的 `ThisDocument` 類別中執行。
 

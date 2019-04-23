@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416366"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647410"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -78,7 +78,7 @@ public void Withdraw(double amount)
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>建立單元測試專案和測試方法
 
-從您的程式碼中產生單元測試專案和單元測試虛設常式通常較快。 或者您可以視您的需求而定，選擇以手動方式建立單元測試專案和測試。
+從您的程式碼中產生單元測試專案和單元測試虛設常式通常較快。 或者您可以視您的需求而定，選擇以手動方式建立單元測試專案和測試。 如果您想要使用協力廠商架構建立單元測試，您需要安裝下列其中一個延伸模組：[NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) 或 [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator)。
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>產生單元測試專案和單元測試虛設常式
 
@@ -88,7 +88,7 @@ public void Withdraw(double amount)
 
 2. 按一下 [確定] 接受預設值來建立單元測試，或變更過去用來建立和命名單元測試專案和單元測試的值。 您可以選取預設加入此單元測試方法的程式碼。
 
-    ![在編輯器中按一下滑鼠右鍵，然後選擇 [建立單元測試]](../test/media/createunittestsdialog.png)
+    ![Visual Studio 的 [建立單元測試] 對話方塊](../test/media/create-unit-tests.png)
 
 3. 會針對此類別中的所有方法，在新的單元測試專案中建立單元測試虛設常式。
 

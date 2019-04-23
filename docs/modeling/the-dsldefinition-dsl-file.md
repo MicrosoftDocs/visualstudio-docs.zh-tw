@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c2198f0908e0ef8f7918d42f4ba256378e0e60
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c43ed1fa156c77edc89b8d40185cc7436cce5d7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841840"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079472"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 檔
 
@@ -115,7 +115,7 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 外部類型不限於標準程式庫類型。
 
-### <a name="enumerations"></a>列舉型別
+### <a name="enumerations"></a>列舉
 
 一般的列舉規格類似以下範例：
 
@@ -166,27 +166,27 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 每個網域類別 (包括關聯性、圖形、連接器和圖表) 都可以有下列屬性和子節點：
 
--   **Id.** 這個屬性是 GUID。 如果您沒有在檔案中提供值，則「網域指定的語言設計工具」將建立一個值。 (在此文件的圖中，通常會忽略此屬性以節省空間。)
+- **Id.** 這個屬性是 GUID。 如果您沒有在檔案中提供值，則「網域指定的語言設計工具」將建立一個值。 (在此文件的圖中，通常會忽略此屬性以節省空間。)
 
--   **名稱和命名空間。** 這些屬性會指定產生的程式碼中的名稱和命名空間的類別。 它們在網域指定的語言內必須都是唯一的。
+- **名稱和命名空間。** 這些屬性會指定產生的程式碼中的名稱和命名空間的類別。 它們在網域指定的語言內必須都是唯一的。
 
--   **InheritanceModifier。** 這個屬性是 「 抽象 」、 「 密封 」 或 none。
+- **InheritanceModifier。** 這個屬性是 「 抽象 」、 「 密封 」 或 none。
 
--   **DisplayName。** 這個屬性是名稱出現在**屬性**視窗。 DisplayName 屬性可以包含空格和其他標點符號。
+- **DisplayName。** 這個屬性是名稱出現在**屬性**視窗。 DisplayName 屬性可以包含空格和其他標點符號。
 
--   **GeneratesDoubleDerived.** 如果這個屬性設為 true，將會產生兩個類別，而且有其他子類別。 所有產生的方法都在基底類別中，而建構函式在子類別中。 設定此屬性可讓您覆寫自訂程式碼中的所有產生的方法。
+- **GeneratesDoubleDerived.** 如果這個屬性設為 true，將會產生兩個類別，而且有其他子類別。 所有產生的方法都在基底類別中，而建構函式在子類別中。 設定此屬性可讓您覆寫自訂程式碼中的所有產生的方法。
 
--   **HasCustomConstructor**。 如果此屬性設為 true，則會從產生的程式碼中省略建構函式，讓您可以撰寫您自己的版本。
+- **HasCustomConstructor**。 如果此屬性設為 true，則會從產生的程式碼中省略建構函式，讓您可以撰寫您自己的版本。
 
--   **屬性**。 此屬性包含所產生類別的 CLR 屬性。
+- **屬性**。 此屬性包含所產生類別的 CLR 屬性。
 
--   **BaseClass**。 如果您指定基底類別，其類型必須相同。 例如，網域類別必須有另一個網域類別做為其基底，而區間圖形必須有區間圖形。 如果您不指定基底類別，所產生程式碼中的類別會從標準架構類別中衍生。 例如，網域類別會從 `ModelElement` 中衍生。
+- **BaseClass**。 如果您指定基底類別，其類型必須相同。 例如，網域類別必須有另一個網域類別做為其基底，而區間圖形必須有區間圖形。 如果您不指定基底類別，所產生程式碼中的類別會從標準架構類別中衍生。 例如，網域類別會從 `ModelElement` 中衍生。
 
--   **屬性**。 此屬性 (attribute) 包含的屬性 (properties) 在異動控制之下維護，並在儲存模型時保存。
+- **屬性**。 此屬性 (attribute) 包含的屬性 (properties) 在異動控制之下維護，並在儲存模型時保存。
 
--   **ElementMergeDirectives**。 每一個項目合併指示詞會控制另一個類別的不同執行個體加入父類別執行個體的方法。 您可以在本主題稍後找到項目合併指示詞的更多詳細資料。
+- **ElementMergeDirectives**。 每一個項目合併指示詞會控制另一個類別的不同執行個體加入父類別執行個體的方法。 您可以在本主題稍後找到項目合併指示詞的更多詳細資料。
 
--   系統會針對 `Classes` 區段中所列出的每一個網域類別各產生一個 C# 類別。 C# 類別產生於 Dsl\GeneratedCode\DomainClasses.cs。
+- 系統會針對 `Classes` 區段中所列出的每一個網域類別各產生一個 C# 類別。 C# 類別產生於 Dsl\GeneratedCode\DomainClasses.cs。
 
 ### <a name="properties"></a>屬性
 
@@ -204,17 +204,17 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 每一個網域屬性 (property) 也可以具有下列屬性 (attribute)：
 
--   **IsBrowsable**。 此屬性會決定屬性是否會出現在**屬性**視窗中，當使用者按一下父類別的物件。
+- **IsBrowsable**。 此屬性會決定屬性是否會出現在**屬性**視窗中，當使用者按一下父類別的物件。
 
--   **IsUIReadOnly**。 此屬性會決定使用者是否可以變更中的屬性**屬性**視窗或透過 屬性會裝飾項目。
+- **IsUIReadOnly**。 此屬性會決定使用者是否可以變更中的屬性**屬性**視窗或透過 屬性會裝飾項目。
 
--   **種類**。 您可以將此屬性設為 Normal、Calculated 或 CustomStorage。 如果將此屬性設為 Calculated，您必須提供可決定值的自訂程式碼，且該屬性將會是唯讀。 如果將此屬性設為 CustomStorage，您必須提供可取得並設定值的程式碼。
+- **種類**。 您可以將此屬性設為 Normal、Calculated 或 CustomStorage。 如果將此屬性設為 Calculated，您必須提供可決定值的自訂程式碼，且該屬性將會是唯讀。 如果將此屬性設為 CustomStorage，您必須提供可取得並設定值的程式碼。
 
--   **IsElementName**。 如果此屬性設為 true，在建立父類別的執行個體時，其值會自動設為唯一值。 此屬性 (attribute) 可以在每個類別中只針對一個屬性 (property) 設為 true，且此類別必須有字串類型。 在「元件圖」範例中，`Name` 中的 `NamedElement` 屬性將 `IsElementName` 設為 true。 每當使用者建立 `Component` 項目 (繼承自 `NamedElement`) 時，名稱會自動初始化為 "Component6" 之類的名稱。
+- **IsElementName**。 如果此屬性設為 true，在建立父類別的執行個體時，其值會自動設為唯一值。 此屬性 (attribute) 可以在每個類別中只針對一個屬性 (property) 設為 true，且此類別必須有字串類型。 在「元件圖」範例中，`Name` 中的 `NamedElement` 屬性將 `IsElementName` 設為 true。 每當使用者建立 `Component` 項目 (繼承自 `NamedElement`) 時，名稱會自動初始化為 "Component6" 之類的名稱。
 
--   `DefaultValue`. 如果您已指定此屬性，則會針對此類別的新執行個體，將您指定的值指派給此屬性。 如果設定 `IsElementName`，DefaultValue 屬性會指定新字串的初始部分。
+- `DefaultValue`. 如果您已指定此屬性，則會針對此類別的新執行個體，將您指定的值指派給此屬性。 如果設定 `IsElementName`，DefaultValue 屬性會指定新字串的初始部分。
 
--   **類別目錄**屬性會出現在標頭**屬性**視窗。
+- **類別目錄**屬性會出現在標頭**屬性**視窗。
 
 ## <a name="relationships"></a>關聯性
 
@@ -226,11 +226,11 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 每一個關聯性都包含具有下列屬性的來源和目標角色：
 
--   `RolePlayer`屬性會參考連結的執行個體的網域類別：做為來源，inport 適用於目標 outPort。
+- `RolePlayer`屬性會參考連結的執行個體的網域類別：做為來源，inport 適用於目標 outPort。
 
--   `Multiplicity` 屬性有四個可能的值 (ZeroMany、ZeroOne、One 和 OneMany)。 此屬性參考可與一個角色扮演者相關聯的關聯性連結數。
+- `Multiplicity` 屬性有四個可能的值 (ZeroMany、ZeroOne、One 和 OneMany)。 此屬性參考可與一個角色扮演者相關聯的關聯性連結數。
 
--   `PropertyName` 屬性指定角色扮演類別中用來存取位於另一端之物件的名稱。 此名稱在範本或自訂程式碼中用來周遊關聯性。 例如，來源角色的 `PropertyName` 屬性設為 `Targets`。 因此，下列程式碼將可運作：
+- `PropertyName` 屬性指定角色扮演類別中用來存取位於另一端之物件的名稱。 此名稱在範本或自訂程式碼中用來周遊關聯性。 例如，來源角色的 `PropertyName` 屬性設為 `Targets`。 因此，下列程式碼將可運作：
 
     ```
     OutPort op = ...; foreach (InPort ip in op.Targets) ...
@@ -244,13 +244,13 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
     ComponentPort p = ...; Component c = p.Component; if (c != null) ...
     ```
 
--   角色的 `Name` 是在 Relationship 類別內用來參考該連結端的名稱。 依照慣例，角色名稱一律為單數，因為每個連結在每一端都只有一個執行個體。 下列程式碼將可運作：
+- 角色的 `Name` 是在 Relationship 類別內用來參考該連結端的名稱。 依照慣例，角色名稱一律為單數，因為每個連結在每一端都只有一個執行個體。 下列程式碼將可運作：
 
     ``` 
     Connection connectionLink = ...; OutPort op = connectionLink.Source;
     ```
 
--   根據預設，`IsPropertyGenerator` 屬性設為 true。 如果它設為 false，則 Role Player 類別上不會建立任何屬性。 (在該情況下，`op.Targets` (舉例而言) 將無法運作。) 不過，如果自訂程式碼明確使用關聯性，仍然可以使用自訂程式碼周遊關聯性或取得連結本身的存取權：
+- 根據預設，`IsPropertyGenerator` 屬性設為 true。 如果它設為 false，則 Role Player 類別上不會建立任何屬性。 (在該情況下，`op.Targets` (舉例而言) 將無法運作。) 不過，如果自訂程式碼明確使用關聯性，仍然可以使用自訂程式碼周遊關聯性或取得連結本身的存取權：
 
     ``` 
     OutPort op = ...; foreach (InPort ip in Connection.GetTargets(op)) ...
@@ -261,9 +261,9 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 除了可供所有類別使用的屬性和子節點之外，每個關聯性都具有以下屬性：
 
--   **IsEmbedding**。 這個布林屬性指定關聯性是否為內嵌樹狀結構的一部分。 每個模型都必須以其內嵌關聯性形成樹狀結構。 因此，每個網域類別都必須是至少一個內嵌關聯性的目標，除非它是模型的根。
+- **IsEmbedding**。 這個布林屬性指定關聯性是否為內嵌樹狀結構的一部分。 每個模型都必須以其內嵌關聯性形成樹狀結構。 因此，每個網域類別都必須是至少一個內嵌關聯性的目標，除非它是模型的根。
 
--   **AllowsDuplicates**。 這個布林屬性預設為 false，僅適用於在來源和目標都具有 "many" 多重性的關聯性。 它決定語言使用者是否可以透過相同關聯性的多個連結來連接單一組來源和目標項目。
+- **AllowsDuplicates**。 這個布林屬性預設為 false，僅適用於在來源和目標都具有 "many" 多重性的關聯性。 它決定語言使用者是否可以透過相同關聯性的多個連結來連接單一組來源和目標項目。
 
 ## <a name="designer-and-toolbox-tabs"></a>設計工具和工具箱索引標籤
 
@@ -362,23 +362,23 @@ ComponentModel 是語言的根類別，具有元件和註解的項目合併指�
 
 每個 `XmlClassData` 節點都包括以下子節點和屬性：
 
--   Moniker 節點，此節點參考資料套用到的類別。
+- Moniker 節點，此節點參考資料套用到的類別。
 
--   **XmlPropertyData**類別上定義的每一個屬性。
+- **XmlPropertyData**類別上定義的每一個屬性。
 
--   **XmlRelationshipData**源自類別每一個關聯性。 (關聯性也有它們自己的 XmlClassData 節點。)
+- **XmlRelationshipData**源自類別每一個關聯性。 (關聯性也有它們自己的 XmlClassData 節點。)
 
--   **TypeName**字串屬性，決定所產生的程式碼中的序列化協助程式類別名稱。
+- **TypeName**字串屬性，決定所產生的程式碼中的序列化協助程式類別名稱。
 
--   **ElementName**字串，以決定此類別的序列化執行個體的 XML 標記。 依照慣例，ElementName 通常與類別名稱相同，但是例外情形為第一個字母是小寫。 例如，模型檔案範例的開頭如下：
+- **ElementName**字串，以決定此類別的序列化執行個體的 XML 標記。 依照慣例，ElementName 通常與類別名稱相同，但是例外情形為第一個字母是小寫。 例如，模型檔案範例的開頭如下：
 
     ```xml
     <componentModel ...
     ```
 
--   **MonikerElementName**中使用者的序列化的模型檔案。 此屬性引進一個參考此類別的 Moniker。
+- **MonikerElementName**中使用者的序列化的模型檔案。 此屬性引進一個參考此類別的 Moniker。
 
--   **MonikerAttributeName**，以識別 moniker 內的 XML 屬性名稱。 在使用者序列化檔案的片段中，定義特定領域語言的作者**MonikerElementName**為"inPortMoniker"並**MonikerAttributeName**為"path":
+- **MonikerAttributeName**，以識別 moniker 內的 XML 屬性名稱。 在使用者序列化檔案的片段中，定義特定領域語言的作者**MonikerElementName**為"inPortMoniker"並**MonikerAttributeName**為"path":
 
     ```xml
     <inPortMoniker path="//Component2/InPort1" />
@@ -478,9 +478,9 @@ A **DomainPropertyMoniker**屬性會識別資料所參考的屬性。 此屬性 
 
 DslDefinition.dsl 檔本身是序列化的檔案，符合網域指定的語言定義。 下列是部分的 XML 序列化定義範例：
 
--   **Dsl**是 RootClass 節點以及圖表的類別。 DomainClass、DomainRelationship 和其他項目內嵌於 `Dsl` 之下。
+- **Dsl**是 RootClass 節點以及圖表的類別。 DomainClass、DomainRelationship 和其他項目內嵌於 `Dsl` 之下。
 
--   **類別**已**RoleElementName**定義域專屬語言與 DomainClass 之間的關聯性。
+- **類別**已**RoleElementName**定義域專屬語言與 DomainClass 之間的關聯性。
 
 ```xml
 <Dsl Name="CmptDsl5" ...>
@@ -488,7 +488,7 @@ DslDefinition.dsl 檔本身是序列化的檔案，符合網域指定的語言�
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
 ```
 
--   **XmlSerializationBehavior**屬性會在內嵌`Dsl`屬性，但**OmitElement**屬性已設定的內嵌關聯性上。 因此，沒有任何 `RoleElementName` 屬性介於其間。 相反地， **ClassData**屬性是`RoleElementName`屬性之間的內嵌關聯性**XmlSerializationBehavior**屬性和**XmlClassData**屬性。
+- **XmlSerializationBehavior**屬性會在內嵌`Dsl`屬性，但**OmitElement**屬性已設定的內嵌關聯性上。 因此，沒有任何 `RoleElementName` 屬性介於其間。 相反地， **ClassData**屬性是`RoleElementName`屬性之間的內嵌關聯性**XmlSerializationBehavior**屬性和**XmlClassData**屬性。
 
 ```xml
 <Dsl Name="CmptDsl5" ...> ...
@@ -498,7 +498,7 @@ DslDefinition.dsl 檔本身是序列化的檔案，符合網域指定的語言�
       <XmlClassData ...>...</XmlClassData>
 ```
 
--   ConnectorHasDecorators 是 `Connector` 與 `Decorator` 之間的內嵌關聯性。 `UseFullForm` 已設定，可讓關聯性名稱和連接器物件之每個連結的屬性清單一起顯示 。 不過，`OmitElement` 也已設定，這樣就沒有任何 `RoleElementName` 會封入內嵌於 `Connector` 內的多個連結：
+- ConnectorHasDecorators 是 `Connector` 與 `Decorator` 之間的內嵌關聯性。 `UseFullForm` 已設定，可讓關聯性名稱和連接器物件之每個連結的屬性清單一起顯示 。 不過，`OmitElement` 也已設定，這樣就沒有任何 `RoleElementName` 會封入內嵌於 `Connector` 內的多個連結：
 
 ```xml
 <Connector Name="AssociationLink" ...>
@@ -515,11 +515,11 @@ DslDefinition.dsl 檔本身是序列化的檔案，符合網域指定的語言�
 
 圖形與連接器從網域類別繼承屬性和子節點，此外還有下列各項：
 
--   `Color` 與 `Line``Style` 屬性。
+- `Color` 與 `Line``Style` 屬性。
 
--   **ExposesFillColorAsProperty**與數個類似的屬性。 這些布林屬性會依使用者建立對應的屬性變數。 一般而言，當語言使用者按一下圖表上的圖形時，屬性，會出現在**屬性**視窗是圖形對應的網域類別執行個體。 如果 `ExposesFillColorAsProperty` 設為 true，則也會顯示圖形本身的屬性。
+- **ExposesFillColorAsProperty**與數個類似的屬性。 這些布林屬性會依使用者建立對應的屬性變數。 一般而言，當語言使用者按一下圖表上的圖形時，屬性，會出現在**屬性**視窗是圖形對應的網域類別執行個體。 如果 `ExposesFillColorAsProperty` 設為 true，則也會顯示圖形本身的屬性。
 
--   **ShapeHasDecorators**。 每一個文字、圖示或展開/摺疊裝飾項目都會發生此屬性的執行個體。 (在 DslDefinition.dsl 檔中，`ShapeHasDecorators` 是 `UseFullForm` 設為 true 的關聯性。)
+- **ShapeHasDecorators**。 每一個文字、圖示或展開/摺疊裝飾項目都會發生此屬性的執行個體。 (在 DslDefinition.dsl 檔中，`ShapeHasDecorators` 是 `UseFullForm` 設為 true 的關聯性。)
 
 ## <a name="shape-maps"></a>圖形對應
 

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe87ef6c391f0beae7183c7baa396f5bd95cf02
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: b5e61c1433ee05954a85537cd5e30bb9683642f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366007"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055751"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>如何發覺我的指標是否損毀記憶體位址？
 ## <a name="problem-description"></a>問題說明
@@ -36,14 +36,14 @@ ms.locfileid: "59366007"
 
 #### <a name="check-for-heap-corruption"></a>檢查堆積損毀
 
--   大部分的記憶體損毀實際上是由於堆積損毀所造成。 請嘗試使用全域旗標公用程式 (gflags.exe) 或 pageheap.exe。 請參閱[ http://support.microsoft.com/default.aspx?scid=kb; en-us-我們; 286470](http://support.microsoft.com/default.aspx?scid=kb;en-us;286470)。
+- 大部分的記憶體損毀實際上是由於堆積損毀所造成。 請嘗試使用全域旗標公用程式 (gflags.exe) 或 pageheap.exe。 請參閱[ http://support.microsoft.com/default.aspx?scid=kb; en-us-我們; 286470](http://support.microsoft.com/default.aspx?scid=kb;en-us;286470)。
 
 #### <a name="to-find-where-the-memory-address-is-modified"></a>若要找出記憶體位址遭修改的位置
 
-1.  在 0x00408000 設定資料中斷點。 請參閱[設定資料變更中斷點 (僅限原生 C++)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)。
+1. 在 0x00408000 設定資料中斷點。 請參閱[設定資料變更中斷點 (僅限原生 C++)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)。
 
-2.  當您遇到中斷點時，使用 [記憶體] 視窗來檢視從 0x00408000 開始的記憶體內容。 如需詳細資訊，請參閱 <<c0> [ 記憶體 Windows](../debugger/memory-windows.md)。
+2. 當您遇到中斷點時，使用 [記憶體] 視窗來檢視從 0x00408000 開始的記憶體內容。 如需詳細資訊，請參閱 <<c0> [ 記憶體 Windows](../debugger/memory-windows.md)。
 
 ## <a name="see-also"></a>另請參閱
-- [機器碼偵錯 FAQ](../debugger/debugging-native-code-faqs.md)
+- [偵錯機器碼常見問題集](../debugger/debugging-native-code-faqs.md)
 - [偵錯機器碼](../debugger/debugging-native-code.md)

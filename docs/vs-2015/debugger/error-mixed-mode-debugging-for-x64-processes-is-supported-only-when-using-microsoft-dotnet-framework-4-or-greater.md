@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d338ee3660c4459510de7b01b42cb3670328e4c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56ae0260b73d41e953fa25b74eae9b012604258a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940084"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106327"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>錯誤：只有使用 Microsoft .NET Framework 4 或更新版本時才支援 x64 處理序的混合模式偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "58940084"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   請執行下列其中一個步驟：  
+- 請執行下列其中一個步驟：  
   
-    -   將 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 升級為 4 版。  
+    - 將 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 升級為 4 版。  
   
-    -   建置 32 位元版本的應用程式以進行偵錯。  
+    - 建置 32 位元版本的應用程式以進行偵錯。  
   
 ## <a name="see-also"></a>另請參閱  
  [在裝置上設定遠端工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

@@ -41,12 +41,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8f6fc8c2019e8798411a10cd61272c2f6c1684c0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02f619d727b83e681d9dda6dd851c43f168f1311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101674"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>HOW TO：使用原生執行階段檢查
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,11 +77,11 @@ ms.locfileid: "58944769"
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>在偵錯組建中啟用原生的執行階段檢查  
   
--   使用 **/RTC** 選項，並與 C 語言執行階段程式庫的偵錯版本建立連結 (例如 /MDd)。  
+- 使用 **/RTC** 選項，並與 C 語言執行階段程式庫的偵錯版本建立連結 (例如 /MDd)。  
   
 ### <a name="to-modify-native-run-time-check-behavior"></a>修改原生的執行階段檢查行為  
   
--   使用 `runtime_checks` Pragma。  
+- 使用 `runtime_checks` Pragma。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)   

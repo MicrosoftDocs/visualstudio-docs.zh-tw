@@ -12,12 +12,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd89520cb976cb6deaca957d97f952e4baa71def
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 986a392dc381b972c9e4d4bfa6dda06fe1aa878e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087738"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>舊版語言服務中的參數資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -113,10 +113,10 @@ testfunc("a string",3);
   
  剖析器接受步驟說明如下：  
   
-1.  剖析器呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>以文字"testfunc 」。  
+1. 剖析器呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>以文字"testfunc 」。  
   
-2.  剖析器呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>。  
+2. 剖析器呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>。  
   
-3.  剖析器呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>。  
+3. 剖析器呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>。  
   
-4.  剖析器呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>。
+4. 剖析器呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>。

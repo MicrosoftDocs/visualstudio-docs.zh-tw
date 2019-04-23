@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: caff32f582778ec03765554979abe6be5d608d26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5dd1834593be7638a56eb31c70677ea9be146b8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112171"
 ---
 # <a name="xml-editor"></a>XML 編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 編輯器以 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio 文字編輯器為基礎，並包括 XML 語言的其他支援。 XML 編輯器包括下列功能：  
   
 - XML 1.0 語法檢查。  
@@ -47,13 +46,13 @@ XML 編輯器以 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio 
 ## <a name="express-editions"></a>Express Edition  
  下列 XML 編輯器功能在 Visual Studio Express Edition 中無法使用：  
   
--   從 XML 執行個體文件建立 XML 結構描述。  
+- 從 XML 執行個體文件建立 XML 結構描述。  
   
--   從 XML 編輯器檢視 XSLT 輸出。  
+- 從 XML 編輯器檢視 XSLT 輸出。  
   
--   編輯 XSLT 樣式表時進行智慧型驗證。  
+- 編輯 XSLT 樣式表時進行智慧型驗證。  
   
--   XML 結構描述總管。  
+- XML 結構描述總管。  
   
 ## <a name="in-this-section"></a>本節內容  
  [XML 文件驗證](../xml-tools/xml-document-validation.md)  

@@ -8,39 +8,39 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 83ac80504314244f30bae50f219be125109a389c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bdaaacd84cdc23b56fd76d7f4e66184868ad533c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939576"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075814"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>字型和格式適用於 Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-##  <a name="BKMK_TheEnvironmentFont"></a> 環境字型
+## <a name="BKMK_TheEnvironmentFont"></a> 環境字型
  Visual Studio 內的所有字型必須都公開到自訂的使用者。 這主要透過**字型和色彩**頁面**工具 > 選項**對話方塊。 字型設定三種主要分類如下：
 
--   **環境字型**— 用於所有的介面項目，包括對話方塊、 功能表、 工具視窗和文件視窗的主要字型 ide （整合式的開發環境）。 根據預設，會繫結至顯示為 9 pt Segoe UI，在目前版本的 Windows 系統字型的環境字型。 所有介面項目的都使用一種字型，可協助確保整個 IDE 有一致的字型的外觀。
+- **環境字型**— 用於所有的介面項目，包括對話方塊、 功能表、 工具視窗和文件視窗的主要字型 ide （整合式的開發環境）。 根據預設，會繫結至顯示為 9 pt Segoe UI，在目前版本的 Windows 系統字型的環境字型。 所有介面項目的都使用一種字型，可協助確保整個 IDE 有一致的字型的外觀。
 
--   **文字編輯器**—，介面中的程式碼和其他以文字為基礎的編輯器可以自訂在 [文字編輯器] 中的項目頁面**工具 > 選項**。
+- **文字編輯器**—，介面中的程式碼和其他以文字為基礎的編輯器可以自訂在 [文字編輯器] 中的項目頁面**工具 > 選項**。
 
--   **特定集合**-提供使用者自訂其介面項目可能會公開其設計特定字型的設計工具視窗會出現在他們自己設定 頁面中**工具 > 選項**。
+- **特定集合**-提供使用者自訂其介面項目可能會公開其設計特定字型的設計工具視窗會出現在他們自己設定 頁面中**工具 > 選項**。
 
 ### <a name="editor-font-customization-and-resizing"></a>編輯器字型的自訂及調整大小
  使用者通常會放大或縮小的大小和/或根據其喜好設定無關的一般使用者介面編輯器 中的文字色彩。 因為可能會出現在中，或做為編輯器/設計工具的一部分的項目上使用的環境字型，則務必在其中一個這些字型分類變更時，請注意預期的行為。
 
  在中建立時顯示的 UI 項目編輯器，但不是屬於*內容*，務必要使用的環境字型和文字字型，讓項目調整大小的可預測的方式。
 
-1.  程式碼中的文字編輯器，使用程式碼文字的字型設定調整大小並回應編輯器文字的縮放層級。
+1. 程式碼中的文字編輯器，使用程式碼文字的字型設定調整大小並回應編輯器文字的縮放層級。
 
-2.  介面的所有其他項目應該繫結至環境字型設定，並回應環境中的任何全域變更。 這包括 （但不限於）：
+2. 介面的所有其他項目應該繫結至環境字型設定，並回應環境中的任何全域變更。 這包括 （但不限於）：
 
-    -   在操作功能表中的文字
+    - 在操作功能表中的文字
 
-    -   文字編輯器透過裝飾，例如燈泡功能表文字、 快速尋找編輯器窗格中，並瀏覽至窗格
+    - 文字編輯器透過裝飾，例如燈泡功能表文字、 快速尋找編輯器窗格中，並瀏覽至窗格
 
-    -   在對話方塊中，例如檔案或重構中尋找的標籤文字
+    - 在對話方塊中，例如檔案或重構中尋找的標籤文字
 
 ### <a name="accessing-the-environment-font"></a>存取環境字型
  在原生模式或 WinForms 的程式碼，可以存取環境字型所呼叫方法**IUIHostLocale::GetDialogFont**之後查詢從 SID_SUIHostLocale 服務介面。
@@ -90,7 +90,7 @@ window.ShowModal()
 
 ```
 
-###  <a name="BKMK_Formatting"></a> 格式化 （調整/粗體） 參考
+### <a name="BKMK_Formatting"></a> 格式化 （調整/粗體） 參考
  有些對話方塊會需要特定的文字是粗體或以外的環境字型的大小。 先前，大於環境字型的字型是硬式編碼為 「 環境字型 + 2 」 或類似。 使用提供的程式碼片段，可支援高 DPI 監視器，並確保顯示的文字，一律會出現在正確的大小和重量 （例如 Light 或 semilight 做）。
 
 > **注意：您套用格式之前，請確定您遵循本指南中找到[文字樣式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。**
@@ -323,7 +323,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  若要重設字型，請按一下 「 使用預設值 」 底下**工具 > 選項 > 環境 > 字型和色彩**。
 
-##  <a name="BKMK_TextStyle"></a> 文字樣式
+## <a name="BKMK_TextStyle"></a> 文字樣式
  文字樣式是指字型大小、 粗細和大小寫。 如需實作指引，請參閱[環境字型](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)。
 
 ### <a name="text-casing"></a>文字大小寫
@@ -382,9 +382,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>句首大寫
  句首大寫是標準大小寫的方法進行寫入中大寫的第一個字的句子，以及所有專有名詞和代名詞"I"。 一般情況下，句子大小寫會更容易閱讀，特別是當內容將會轉譯機器全球讀者。 使用句子大小寫的：
 
-1.  **狀態列訊息。** 這些簡單地說，很簡單，並只提供狀態資訊。 範例：「 正在載入專案檔 」
+1. **狀態列訊息。** 這些簡單地說，很簡單，並只提供狀態資訊。 範例：「 正在載入專案檔 」
 
-2.  **所有其他 UI 項目**，包括標籤、 核取方塊、 選項按鈕和清單方塊項目。 範例：[選取清單中的所有項目]
+2. **所有其他 UI 項目**，包括標籤、 核取方塊、 選項按鈕和清單方塊項目。 範例：[選取清單中的所有項目]
 
 ### <a name="text-formatting"></a>文字格式設定
  Visual Studio 2013 中的格式設定的預設文字會受到[環境字型](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)。 這項服務可協助確保整個 IDE （整合式的開發環境），具有一致的字型的外觀，您必須使用它來為您的使用者保證一致的體驗。
@@ -396,36 +396,36 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="bold-text"></a>粗體的文字
  粗體的文字謹慎使用 Visual Studio 中，且應該是保留供：
 
--   在精靈中的問題標籤
+- 在精靈中的問題標籤
 
--   指定使用中的專案，在 方案總管
+- 指定使用中的專案，在 方案總管
 
--   在 [屬性] 工具視窗中的覆寫的值
+- 在 [屬性] 工具視窗中的覆寫的值
 
--   在 Visual Basic 編輯器下拉式清單中的特定事件
+- 在 Visual Basic 編輯器下拉式清單中的特定事件
 
--   在文件大綱 中的 web 網頁的伺服器產生的內容
+- 在文件大綱 中的 web 網頁的伺服器產生的內容
 
--   在複雜的對話方塊或設計工具 UI 中的區段標頭
+- 在複雜的對話方塊或設計工具 UI 中的區段標頭
 
 #### <a name="italics"></a>斜體
  Visual Studio 不會使用斜體或粗體斜體的文字。
 
 #### <a name="color"></a>色彩
 
--   藍色是保留的超連結 （導覽及命令），且永遠不會用於方向。
+- 藍色是保留的超連結 （導覽及命令），且永遠不會用於方向。
 
--   針對這些用途，可以彩色較大的標題 （環境字型 x 155%或更高）：
+- 針對這些用途，可以彩色較大的標題 （環境字型 x 155%或更高）：
 
-    -   提供至簽章 Visual Studio UI 中的視覺效果
+    - 提供至簽章 Visual Studio UI 中的視覺效果
 
-    -   若要提醒您注意到特定的區域
+    - 若要提醒您注意到特定的區域
 
-    -   提供從標準暗灰/黑色環境的文字色彩的浮雕
+    - 提供從標準暗灰/黑色環境的文字色彩的浮雕
 
--   標題的色彩應該利用現有 Visual Studio 品牌色彩，主要是主要的紫色，#FF68217A。
+- 標題的色彩應該利用現有 Visual Studio 品牌色彩，主要是主要的紫色，#FF68217A。
 
--   當使用標題的色彩，您必須遵守[Windows 色彩指導方針](https://msdn.microsoft.com/library/dn742482.aspx)，包括對比比例以及其他協助工具的考量。
+- 當使用標題的色彩，您必須遵守[Windows 色彩指導方針](https://msdn.microsoft.com/library/dn742482.aspx)，包括對比比例以及其他協助工具的考量。
 
 ### <a name="font-size"></a>Font size
  Visual Studio UI 設計功能較淺的外觀與更多的泛空白字元。 可能的話，chrome 和標題列已降低或移除。 在 Visual Studio 中的需求的資訊密度時，印刷樣式仍然是重要的是，更開放的行距和字型的大小和重量的變化，特別強調。
@@ -485,11 +485,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ### <a name="padding-and-spacing"></a>邊框距離和間距
  標題會需要它們以提供適當的強調周圍的空間。 此空間取決於點大小以及其他即將標題，例如水平尺規 」 或 「 環境字型的文字行。
 
--   理想的邊框距離本身的標題應該是 90%的投資的字元高度空間。 比方說，28 pt Segoe UI Light 標題的 cap 高度是 26 pt 和邊框距離應該大約 23 pt 或大約 31 像素為單位。
+- 理想的邊框距離本身的標題應該是 90%的投資的字元高度空間。 比方說，28 pt Segoe UI Light 標題的 cap 高度是 26 pt 和邊框距離應該大約 23 pt 或大約 31 像素為單位。
 
--   標題周圍的最小空間應該為大寫的字元高度的 50%。 標題會伴隨其他緊密調整項目或規則時，可能會使用較少的空間。
+- 標題周圍的最小空間應該為大寫的字元高度的 50%。 標題會伴隨其他緊密調整項目或規則時，可能會使用較少的空間。
 
--   預設高度行距和填補，應該遵循粗體環境字型的文字。
+- 預設高度行距和填補，應該遵循粗體環境字型的文字。
 
 ## <a name="see-also"></a>另請參閱
  [MSDN:字型 (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742483\(v=vs.85\).aspx) [MSDN:使用者介面文字 (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx)

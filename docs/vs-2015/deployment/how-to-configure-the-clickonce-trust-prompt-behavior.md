@@ -19,12 +19,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5a1174f96e34773aac524562d6f62514e92ba5e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 58e5f0e9154137097a94637799966ee94818fca4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "59000481"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047043"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>HOW TO：設定 ClickOnce 信任提示行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,19 +56,19 @@ ms.locfileid: "59000481"
   
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>若要使用登錄編輯程式中啟用 ClickOnce 信任提示  
   
-1.  開啟登錄編輯程式：  
+1. 開啟登錄編輯程式：  
   
-    1.  按一下 [開始]，然後按一下 [執行]。  
+    1. 按一下 [開始]，然後按一下 [執行]。  
   
-    2.  在 **開啟**方塊中，輸入`regedit`(或`regedit32`32 位元 Windows 上)，然後按一下**確定**。  
+    2. 在 **開啟**方塊中，輸入`regedit`(或`regedit32`32 位元 Windows 上)，然後按一下**確定**。  
   
-2.  尋找下列登錄機碼：  
+2. 尋找下列登錄機碼：  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      如果索引鍵不存在，請加以建立。  
   
-3.  新增為下列子機碼**字串值**，如果它們不存在，與相關的值下, 表所示。  
+3. 新增為下列子機碼**字串值**，如果它們不存在，與相關的值下, 表所示。  
   
     |字串值的子機碼|值|  
     |-------------------------|-----------|  
@@ -82,9 +82,9 @@ ms.locfileid: "59000481"
   
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>以程式設計方式啟用 ClickOnce 信任提示  
   
-1.  Visual Studio 中建立 Visual Basic 或 Visual C# 主控台應用程式。  
+1. Visual Studio 中建立 Visual Basic 或 Visual C# 主控台應用程式。  
   
-2.  開啟 Program.vb 或 Program.cs 的檔案進行編輯並加入下列程式碼。  
+2. 開啟 Program.vb 或 Program.cs 的檔案進行編輯並加入下列程式碼。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -108,26 +108,26 @@ ms.locfileid: "59000481"
     key.Close();  
     ```  
   
-3.  建置並執行應用程式。  
+3. 建置並執行應用程式。  
   
 ## <a name="restricting-the-clickonce-trust-prompt"></a>限制 ClickOnce 信任提示  
  限制信任提示，讓解決方案必須使用之前會提示使用者信任決策提供有已知識別的 Authenticode 憑證來簽署。  
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>若要限制 ClickOnce 信任提示，使用登錄編輯程式  
   
-1.  開啟登錄編輯程式：  
+1. 開啟登錄編輯程式：  
   
-    1.  按一下 [開始]，然後按一下 [執行]。  
+    1. 按一下 [開始]，然後按一下 [執行]。  
   
-    2.  在 **開啟**方塊中，輸入`regedit`(或`regedit32`32 位元 Windows 上)，然後按一下**確定**。  
+    2. 在 **開啟**方塊中，輸入`regedit`(或`regedit32`32 位元 Windows 上)，然後按一下**確定**。  
   
-2.  尋找下列登錄機碼：  
+2. 尋找下列登錄機碼：  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      如果索引鍵不存在，請加以建立。  
   
-3.  新增為下列子機碼**字串值**，如果它們不存在，與相關的值下, 表所示。  
+3. 新增為下列子機碼**字串值**，如果它們不存在，與相關的值下, 表所示。  
   
     |字串值的子機碼|值|  
     |-------------------------|-----------|  
@@ -139,9 +139,9 @@ ms.locfileid: "59000481"
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>若要以程式設計的方式限制 ClickOnce 信任提示  
   
-1.  Visual Studio 中建立 Visual Basic 或 Visual C# 主控台應用程式。  
+1. Visual Studio 中建立 Visual Basic 或 Visual C# 主控台應用程式。  
   
-2.  開啟 Program.vb 或 Program.cs 的檔案進行編輯並加入下列程式碼。  
+2. 開啟 Program.vb 或 Program.cs 的檔案進行編輯並加入下列程式碼。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -165,26 +165,26 @@ ms.locfileid: "59000481"
     key.Close();  
     ```  
   
-3.  建置並執行應用程式。  
+3. 建置並執行應用程式。  
   
 ## <a name="disabling-the-clickonce-trust-prompt"></a>停用 ClickOnce 信任提示  
  您可以停用信任提示，讓使用者不會得到安裝已經不信任其安全性原則中的解決方案的選項。  
   
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>使用登錄編輯程式，停用 ClickOnce 信任提示  
   
-1.  開啟登錄編輯程式：  
+1. 開啟登錄編輯程式：  
   
-    1.  按一下 [開始]，然後按一下 [執行]。  
+    1. 按一下 [開始]，然後按一下 [執行]。  
   
-    2.  在 **開啟**方塊中，輸入`regedit`(或`regedit32`32 位元 Windows 上)，然後按一下**確定**。  
+    2. 在 **開啟**方塊中，輸入`regedit`(或`regedit32`32 位元 Windows 上)，然後按一下**確定**。  
   
-2.  尋找下列登錄機碼：  
+2. 尋找下列登錄機碼：  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      如果索引鍵不存在，請加以建立。  
   
-3.  新增為下列子機碼**字串值**，如果它們不存在，與相關的值下, 表所示。  
+3. 新增為下列子機碼**字串值**，如果它們不存在，與相關的值下, 表所示。  
   
     |字串值的子機碼|值|  
     |-------------------------|-----------|  
@@ -196,9 +196,9 @@ ms.locfileid: "59000481"
   
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>若要以程式設計方式停用 ClickOnce 信任提示  
   
-1.  Visual Studio 中建立 Visual Basic 或 Visual C# 主控台應用程式。  
+1. Visual Studio 中建立 Visual Basic 或 Visual C# 主控台應用程式。  
   
-2.  開啟 Program.vb 或 Program.cs 的檔案進行編輯並加入下列程式碼。  
+2. 開啟 Program.vb 或 Program.cs 的檔案進行編輯並加入下列程式碼。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -223,7 +223,7 @@ ms.locfileid: "59000481"
   
     ```  
   
-3.  建置並執行應用程式。  
+3. 建置並執行應用程式。  
   
 ## <a name="see-also"></a>另請參閱  
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   

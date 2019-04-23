@@ -12,17 +12,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 641a971baac593186c0bb7c0012c615539b811da
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 418d804a8e7eda785e628c55054b6b1160a84a59
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791531"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664543"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>字型和色彩節點屬性、選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 本文件說明 [工具] 視窗的字型和色彩屬性，它是登錄顯示在 [選項] 對話方塊的 [環境] 類別的 [字型和色彩] 中。 這支援可變換色彩項目群組的動態本質，如果安裝或解除安裝 VSPackage 時可予以變更。  
   
  下節顯示各視窗可使用的已登錄視窗類型和屬性範例。  
@@ -38,7 +37,7 @@ ms.locfileid: "54791531"
   
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`  
   
-|屬性項目名稱|值|描述|  
+|屬性項目名稱|值|說明|  
 |------------------------|-----------|-----------------|  
 |FontFamily|Get/Set (字串)|要使用的字型名稱，例如「新細明體」。|  
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|<xref:EnvDTE.vsFontCharSet> 值，指定要使用的字元集類型，例如希伯來文或俄文。|  

@@ -6,20 +6,20 @@ ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: 70ac8defdcea9cccd8a3b3f9be71d38fb78c9c50
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bf12f8803fbdbbf1de31899501c31545a09d6b09
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295186"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856537"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio for Mac
 
 如果您或您的組織使用防火牆或 Proxy 伺服器等安全性措施，則您應該將部分網域 URL 加入允許清單，並開放某些連接埠與通訊協定，以在安裝及使用 Visual Studio for Mac 與 Azure 服務時獲得最佳體驗。
 
-- [**安裝 Visual Studio for Mac**](#install-visual-studio-for-mac)：這些表格包含需加入允許清單的 URL，以便您可以存取 Visual Studio for Mac 的所有功能與工作負載。
+- [**安裝 Visual Studio for Mac**](#install-visual-studio-for-mac)：這些資料表包含允許清單的 URL，以便您可以存取 Visual Studio for Mac 的所有功能與工作負載。
 
-- [**使用 Visual Studio for Mac**](#use-visual-studio-for-mac)：這些表格包含需加入允許清單的 URL，以便您可以存取想要的所有服務與功能。
+- [**使用 Visual Studio for Mac**](#use-visual-studio-for-mac)：這些資料表包含允許清單的 URL，以便您可以存取想要的所有服務與功能。
 
 ## <a name="install-visual-studio-for-mac"></a>安裝 Visual Studio for Mac
 
@@ -89,5 +89,5 @@ ms.locfileid: "51295186"
 
 ## <a name="see-also"></a>另請參閱
 
-- [在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 2017 和 Azure 服務](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
-- [在 Windows 上對類似問題進行疑難排解](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)
+- [在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
+- [在 Windows 上針對類似問題進行疑難排解](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)

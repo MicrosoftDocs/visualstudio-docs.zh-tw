@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce6345a07aa8476dd9d102e71bbfd8cdfd848d93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 663bc7a2add5e436cb7b0166387d6e3638087a1a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707038"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653771"
 ---
 # <a name="tool-window-display-configuration"></a>工具視窗中顯示組態
 當向 VSPackage 註冊工具視窗、 預設位置、 大小、 停駐樣式，以及其他的可見性資訊，被指定選擇性的值。 如需有關工具視窗中註冊的詳細資訊，請參閱[工具 Windows 登錄中](../extensibility/tool-windows-in-the-registry.md)
@@ -34,7 +34,6 @@ HKEY_LOCAL_MACHINE\
             <Tool Window GUID>\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000
 ```
-
 
 | 名稱 | 類型 | 資料 | 描述 |
 |-----------------|-----------| - | - |
@@ -87,7 +86,7 @@ HKEY_LOCAL_MACHINE\
 
 |名稱|類型|資料|描述|
 |----------|----------|----------|-----------------|
-|(預設值)|REG_SZ|無|將保留空白。|
+|(預設值)|REG_SZ|None|將保留空白。|
 |*\<GUID>*|REG_DWORD 或 REG_SZ|0 或描述性字串。|選擇性。 項目名稱必須是需要可見性命令的 GUID。 值只會保留資訊的字串。 值通常是`reg_dword`設為 0。|
 
 ### <a name="example"></a>範例

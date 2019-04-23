@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ebe26e81bdee6be1b2e3a795f50c753d9bb66814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941165"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059171"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118:檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "58941165"
 
  預設的安全性原則不授與 unmanaged 程式碼的權限的組件除非它從本機電腦執行或的下列群組的成員：
 
--   我的電腦區域的程式碼群組
+- 我的電腦區域的程式碼群組
 
--   Microsoft 強式名稱的程式碼群組
+- Microsoft 強式名稱的程式碼群組
 
--   ECMA 強式名稱的程式碼群組
+- ECMA 強式名稱的程式碼群組
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  請仔細檢閱您的程式碼，以確保這個屬性是絕對必要。 如果您不熟悉使用 managed 程式碼的安全性，或不了解使用這個屬性的安全性含意，請從您的程式碼中移除。 如果屬性是必要的您必須確定呼叫端不能遭到惡意使用您的程式碼。 如果您的程式碼並沒有執行 unmanaged 程式碼的權限，則這個屬性沒有任何作用，而且應該移除。

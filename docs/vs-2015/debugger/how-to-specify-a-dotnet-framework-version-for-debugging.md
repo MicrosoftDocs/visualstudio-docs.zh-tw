@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b3e5d7ebb1f61ffdbff98f49f83025115c80f64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4c785c419ead31ad90e2b20ae7f48af778598bb6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042762"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>HOW TO：指定偵錯.NET Framework 版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,29 +35,29 @@ ms.locfileid: "58941229"
   
 ### <a name="to-specify-a-net-framework-version-for-debugging"></a>若要指定偵錯的 .NET Framework 版本  
   
-1.  查詢目錄 Windows\Microsoft.NET\Framework 以尋找電腦上已安裝的 .NET Framework 版本。 版本號碼看起來如下所示：  
+1. 查詢目錄 Windows\Microsoft.NET\Framework 以尋找電腦上已安裝的 .NET Framework 版本。 版本號碼看起來如下所示：  
   
      `V1.1.4322`  
   
      識別正確的版本編號然後記下來。  
   
-2.  啟動 [登錄編輯程式] (regedit)。  
+2. 啟動 [登錄編輯程式] (regedit)。  
   
-3.  在 [登錄編輯程式] 中開啟 HKEY_LOCAL_MACHINE 資料夾。  
+3. 在 [登錄編輯程式] 中開啟 HKEY_LOCAL_MACHINE 資料夾。  
   
-4.  瀏覽至：HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
+4. 瀏覽至：HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
   
      如果此機碼不存在，請以滑鼠右鍵按一下 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine，然後按一下 [新增機碼]。 新的機碼命名`{449EC4CC-30D2-4032-9256-EE18EB41B62B}`。  
   
-5.  在巡覽至 {449EC4CC-30D2-4032-9256-EE18EB41B62B} 後，查詢 [名稱] 欄位然後尋找 CLRVersionForDebugging 機碼。  
+5. 在巡覽至 {449EC4CC-30D2-4032-9256-EE18EB41B62B} 後，查詢 [名稱] 欄位然後尋找 CLRVersionForDebugging 機碼。  
   
-    1.  如果機碼不存在，請以滑鼠右鍵按一下 {449EC4CC-30D2-4032-9256-EE18EB41B62B}，然後按一下 [新增字串值]。 然後以滑鼠右鍵按一下新的字串值，請按一下**重新命名**，然後輸入`CLRVersionForDebugging`。  
+    1. 如果機碼不存在，請以滑鼠右鍵按一下 {449EC4CC-30D2-4032-9256-EE18EB41B62B}，然後按一下 [新增字串值]。 然後以滑鼠右鍵按一下新的字串值，請按一下**重新命名**，然後輸入`CLRVersionForDebugging`。  
   
-6.  按兩下 [CLRVersionForDebugging]。  
+6. 按兩下 [CLRVersionForDebugging]。  
   
-7.  在 [編輯字串] 方塊的 [值] 方塊中鍵入 .NET Framework 版本號碼。 例如: V1.1.4322  
+7. 在 [編輯字串] 方塊的 [值] 方塊中鍵入 .NET Framework 版本號碼。 例如: V1.1.4322  
   
-8.  按一下 [確定 **Deploying Office Solutions**]。  
+8. 按一下 [確定] 。  
   
 9. 關閉 [登錄編輯程式]。  
   

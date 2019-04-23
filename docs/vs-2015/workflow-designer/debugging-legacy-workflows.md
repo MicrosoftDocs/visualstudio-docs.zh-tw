@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7585d824ea6abf7df0aab5dc07c88abe9ff97081
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b98c520dc96b6f3c6467bbcaf8e48d9cff8791d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940497"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048732"
 ---
 # <a name="debugging-legacy-workflows"></a>偵錯舊版工作流程
 如果您在 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 中使用舊版 [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] 來建置以 .NET Framework 3.0 或 3.5 為目標的 [!INCLUDE[wf](../includes/wf-md.md)] 應用程式，您可以像任何其他程式一樣，藉由設定中斷點、附加至處理序，並檢查執行緒和呼叫堆疊，來偵錯您的工作流程。 您也可以選擇遠端偵錯。  
@@ -27,7 +27,7 @@ ms.locfileid: "58940497"
 >  如果您的電腦上曾經安裝及解除安裝多個版本的 Visual Studio，WF3 偵錯會因為下列兩種可能性之一而失敗：  
 > 
 > - 未達到您的中斷點。  
->   -   畫面顯示下列訊息：  
+>   - 畫面顯示下列訊息：  
 > 
 >   **無法開始偵錯 web 伺服器上。未正確安裝偵錯工具。無法偵錯所要求的程式碼型別。執行安裝程式來安裝或修復偵錯工具。**  
 > 

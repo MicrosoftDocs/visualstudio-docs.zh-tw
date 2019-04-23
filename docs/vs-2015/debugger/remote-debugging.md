@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000682"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076207"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59000682"
 
 ### <a name="to-download-and-install-the-remote-tools"></a>若要下載並安裝遠端工具
   
-1.  裝置或伺服器機器，您要偵錯 （而非執行 Visual Studio 的電腦），取得正確的遠端工具版本。
+1. 裝置或伺服器機器，您要偵錯 （而非執行 Visual Studio 的電腦），取得正確的遠端工具版本。
 
     |版本|連結|注意|
     |-|-|-|
@@ -47,14 +47,14 @@ ms.locfileid: "59000682"
     |Visual Studio 2013|[遠端工具](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|下載 Visual Studio 2013 文件中的頁面|
     |Visual Studio 2012|[遠端工具](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|下載 Visual Studio 2012 文件中的頁面|
   
-2.  在下載頁面上，選擇符合您的作業系統 (x，x86、 x64 或 ARM 版本） 的工具版本，並下載遠端工具。
+2. 在下載頁面上，選擇符合您的作業系統 (x，x86、 x64 或 ARM 版本） 的工具版本，並下載遠端工具。
   
     > [!IMPORTANT]
     >  我們建議您安裝最新的遠端工具版本符合您的 Visual Studio 版本。 不建議使用不相符的版本。  
     >   
     >  此外，您必須安裝具有相同的架構做為您想要將它安裝所在的作業系統的遠端工具。 換句話說，如果您想要偵錯遠端電腦執行 64 位元作業系統上的 32 位元應用程式，您就必須在遠端電腦上安裝 64 位元版本的遠端工具。  
   
-3.  當您完成下載可執行檔時，請遵循指示，在遠端電腦上安裝應用程式。 請參閱[安裝指示](#bkmk_setup)
+3. 當您完成下載可執行檔時，請遵循指示，在遠端電腦上安裝應用程式。 請參閱[安裝指示](#bkmk_setup)
 
 如果您嘗試複製到遠端電腦的遠端偵錯工具 (msvsmon.exe) 並加以執行，請注意，**遠端偵錯工具組態精靈**(**rdbgwiz.exe**) 才會安裝您所下載工具，以及您可能需要使用精靈來建立組態之後，特別是如果您想要以服務方式執行遠端偵錯工具。 如需詳細資訊，請參閱 < [（選擇性） 設定為服務的遠端偵錯工具](#bkmk_configureService)如下。
 
@@ -75,31 +75,30 @@ ms.locfileid: "59000682"
 > [!TIP] 
 > 命令列安裝和命令列參考，請參閱 說明網頁**msvsmon.exe**輸入``msvsmon.exe /?``已安裝 Visual studio 的電腦上的命令列中 (或移至**協助 / 使用量**遠端偵錯工具中)。
 
-  
 ## <a name="supported-operating-systems"></a>Supported Operating Systems  
  遠端電腦必須執行下列作業系統的其中一個：  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8 或 8.1  
+- Windows 8 或 8.1  
   
--   Windows 7 Service Pack 1  
+- Windows 7 Service Pack 1  
   
--   Windows Server 2012 或 Windows Server 2012 R2  
+- Windows Server 2012 或 Windows Server 2012 R2  
   
--   Windows Server 2008 Service Pack 2、Windows Server 2008 R2 Service Pack 1  
+- Windows Server 2008 Service Pack 2、Windows Server 2008 R2 Service Pack 1  
   
 ## <a name="supported-hardware-configurations"></a>支援的硬體組態  
   
--   1.6 GHz 或更快的處理器  
+- 1.6 GHz 或更快的處理器  
   
--   1 GB RAM (如果在虛擬機器上執行，便需要 1.5 GB)  
+- 1 GB RAM (如果在虛擬機器上執行，便需要 1.5 GB)  
   
--   1 GB 可用硬碟空間  
+- 1 GB 可用硬碟空間  
   
--   5400 RPM 硬碟  
+- 5400 RPM 硬碟  
   
--   可使用 DirectX 9 且可在 1024 x 768 或更高顯示解析度執行的視訊卡  
+- 可使用 DirectX 9 且可在 1024 x 768 或更高顯示解析度執行的視訊卡  
   
 ## <a name="network-configuration"></a>網路組態  
  遠端電腦和 Visual Studio 電腦必須透過網路、工作群組或家用群組等連接，或直接透過乙太網路纜線連接。 不支援透過網際網路偵錯。  
@@ -148,7 +147,7 @@ ms.locfileid: "59000682"
    > [!WARNING]
   >  您可以選擇在 [非驗證] 模式下執行遠端工具，但非常不建議您使用這個模式。 在此模式中執行時不具有網路安全性。 只有在確定網路沒有面臨惡意或攻擊流量的風險時，才能選擇非驗證模式。
 
-##  <a name="bkmk_configureService"></a> （選擇性）設定遠端偵錯工具 as a service
+## <a name="bkmk_configureService"></a> （選擇性）設定遠端偵錯工具 as a service
  進行偵錯 ASP.NET 和其他伺服器環境中，您必須以系統管理員身分執行遠端偵錯工具或者，如果您想要一律執行中，以服務方式執行遠端偵錯工具。
   
  如果您想要設定遠端偵錯工具 as a service，請遵循下列步驟。  
@@ -283,16 +282,16 @@ ms.locfileid: "59000682"
   
  如需詳細資訊，請參閱遠端偵錯的說明 (請按**F1**中的遠端偵錯工具 視窗中或按一下**協助 / 使用量**)。 如需詳細資訊，請參閱 [Visual Studio 2012 和 2013 中的 .NET 遠端符號載入變更](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
-##  <a name="bkmk_winstoreAzure"></a> 遠端偵錯 Windows 市集和 Azure 應用程式  
+## <a name="bkmk_winstoreAzure"></a> 遠端偵錯 Windows 市集和 Azure 應用程式  
  如需 Windows 市集應用程式的遠端偵錯資訊，請參閱[偵錯和測試 Windows 市集應用程式，在遠端裝置上從 Visual Studio](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx)。  
   
  如需在 Azure 上偵錯資訊，請參閱其中一個主題：  
   
--   [偵錯雲端服務或在 Visual Studio 中的虛擬機器](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
+- [偵錯雲端服務或在 Visual Studio 中的虛擬機器](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
--   [偵錯在 Visual Studio 中的.NET 後端](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
+- [偵錯在 Visual Studio 中的.NET 後端](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
--   Azure 網站上的遠端偵錯簡介 ([第 1 部分](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/)，[第 2 部分](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/)，[第 3 部分](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/))。  
+- Azure 網站上的遠端偵錯簡介 ([第 1 部分](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/)，[第 2 部分](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/)，[第 3 部分](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/))。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)   

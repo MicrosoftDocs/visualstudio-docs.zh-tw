@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10b0f05e758f71830d5377c738ff9dee683022b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108967"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>HOW TO：以程式設計方式在 Outlook 中移動項目
   此範例中移動的未閱讀的電子郵件訊息**收件匣**資料夾，名為**測試**。 此範例只會移動有這個字的訊息**測試**在`Subject`欄位。
@@ -30,9 +30,9 @@ ms.locfileid: "56641620"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要：
 
--   Outlook 郵件資料夾名為**測試**。
+- Outlook 郵件資料夾名為**測試**。
 
--   電子郵件訊息的文字**測試**在`Subject`欄位。
+- 電子郵件訊息的文字**測試**在`Subject`欄位。
 
 ## <a name="see-also"></a>另請參閱
 - [使用資料夾](../vsto/working-with-folders.md)

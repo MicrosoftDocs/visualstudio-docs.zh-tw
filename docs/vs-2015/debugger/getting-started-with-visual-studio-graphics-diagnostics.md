@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 84c55f9568cc227d067875d7579a99acb81f12a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 49a27141fb8d681f2b3f91b5bf32818fd2cd5045
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942890"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047303"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷快速入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58942890"
 
  若要從執行 Windows 8.1 的開發電腦使用執行 Windows 10 的遠端播放電腦，您必須在開發電腦上安裝 Windows 10 SDK，並在播放電腦上安裝選擇性圖形工具功能。
 
-##  <a name="InstallGraphicsTools"></a> 安裝適用於 Windows 10 的圖形工具
+## <a name="InstallGraphicsTools"></a> 安裝適用於 Windows 10 的圖形工具
  在 Windows 10 中，圖形診斷基礎結構是由稱為「圖形工具」的選擇性 Windows 功能所提供。 不論所擷取應用程式的目標設為舊版 Windows 還是它所使用的 Direct3D 版本，都需要有這項功能，才能在 Windows 10 上擷取和播放圖形資訊。 您可以選擇事先安裝圖形工具功能；否則它會在第一次從 Visual Studio 啟動圖形診斷工作階段時視需要安裝。
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>安裝適用於 Windows 10 的圖形工具
@@ -87,7 +87,7 @@ ms.locfileid: "58942890"
 
 ##### <a name="to-capture-single-frames"></a>擷取單一畫面格
 
--   在 Visual Studio 中，選擇 [圖形] 工具列或診斷工作階段視窗中的 [擷取畫面格] 按鈕。 或者，如果您的應用程式具有焦點，請按**Print Screen**。
+- 在 Visual Studio 中，選擇 [圖形] 工具列或診斷工作階段視窗中的 [擷取畫面格] 按鈕。 或者，如果您的應用程式具有焦點，請按**Print Screen**。
 
 ##### <a name="to-capture-a-sequence-of-frames"></a>擷取一系列畫面格
 

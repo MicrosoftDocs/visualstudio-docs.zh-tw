@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 90605152607f403a089d59727d155cd154f7032e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9d00db6f9a00a273198cc50704d65ed6d2e4bb33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58943072"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072093"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030:建議在適當時使用事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "58943072"
 ## <a name="cause"></a>原因
  Public、 protected 或 private 方法名稱開頭為下列其中一項：
 
--   AddOn
+- AddOn
 
--   RemoveOn
+- RemoveOn
 
--   引發
+- 引發
 
--   引發
+- 引發
 
 ## <a name="rule-description"></a>規則描述
  此規則會偵測具有事件常用名稱的方法。 事件遵循觀察者 」 或 「 發行-訂閱設計模式;一個物件的狀態變更告知的其他物件時，會使用這些項目。 取得呼叫的方法，以回應清楚定義的狀態變更，如果此方法應該叫用事件處理常式。 呼叫方法的物件應該要引發事件，而不是直接呼叫方法。

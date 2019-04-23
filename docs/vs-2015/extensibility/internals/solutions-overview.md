@@ -10,12 +10,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f44ab8e86a32fe4f1923b978bea7f6a7090921b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8daa7922b1f1ba7cb90cca9a77a6db14977c7518
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942349"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077611"
 ---
 # <a name="solutions-overview"></a>方案概觀
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "58942349"
   
 3. 如果載入 VSPackage 時，此環境會呼叫`QueryInterface`針對<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>介面，VSPackage 所需要的介面。  
   
-   1.  從.sln 檔案讀取時，環境會呼叫`QueryInterface`針對`IVsPersistSolutionProps`。  
+   1. 從.sln 檔案讀取時，環境會呼叫`QueryInterface`針對`IVsPersistSolutionProps`。  
   
-   2.  從.suo 檔案讀取時，環境會呼叫`QueryInterface`針對`IVsPersistSolutionOpts`。  
+   2. 從.suo 檔案讀取時，環境會呼叫`QueryInterface`針對`IVsPersistSolutionOpts`。  
   
    使用這些檔案的相關的特定資訊可在[解決方案 (。Sln) 檔案](../../extensibility/internals/solution-dot-sln-file.md)和[方案使用者選項 (。Suo) 檔案](../../extensibility/internals/solution-user-options-dot-suo-file.md)。  
   

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be71d18b7fa0b3cc9dba8a27c6c462d5ea1a2434
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e82b884965c5c7362951c7d94199f90c93fbfc3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073692"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>HOW TO：以程式設計方式參考程式碼中的工作表範圍
   您可以使用類似的程序來參考的內容<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。
@@ -32,7 +32,7 @@ ms.locfileid: "56608432"
 
 ### <a name="to-refer-to-a-namedrange-control"></a>若要參考 NamedRange 控制項
 
-1.  將字串指派給<xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>屬性<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項。 這個程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。
+1. 將字串指派給<xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>屬性<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項。 這個程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#46)]
      [!code-vb[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#46)]
@@ -42,7 +42,7 @@ ms.locfileid: "56608432"
 
 ### <a name="to-refer-to-a-native-range-object"></a>若要參考原生的範圍物件
 
-1.  指派字串給<xref:Microsoft.Office.Interop.Excel.Range.Value2%2A>範圍的屬性。
+1. 指派字串給<xref:Microsoft.Office.Interop.Excel.Range.Value2%2A>範圍的屬性。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]
      [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]

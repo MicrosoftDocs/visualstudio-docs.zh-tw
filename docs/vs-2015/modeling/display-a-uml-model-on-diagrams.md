@@ -11,43 +11,43 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 31181cd3dd70d3767bce65fe338d8dc152ec311c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941195"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042349"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>在圖表上顯示 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual Studio 擴充功能的程式碼中，您可以控制模型項目在圖表上顯示的方式。 若要查看哪些 Visual Studio 版本支援 UML 模型，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
- 本主題內容：  
- -   [若要在圖表上顯示項目](#Display)  
+本主題內容：  
+- [若要在圖表上顯示項目](#Display)  
   
--   [存取代表項目的圖形](#GetShapes)  
+- [存取代表項目的圖形](#GetShapes)  
   
--   [移動和調整大小圖形](#Moving)  
+- [移動和調整大小圖形](#Moving)  
   
--   [若要從圖表移除圖形](#Removing)  
+- [若要從圖表移除圖形](#Removing)  
   
--   [開啟及建立圖表](#Opening)  
+- [開啟及建立圖表](#Opening)  
   
--   [例如：對齊圖形的命令](#AlignCommand)  
+- [例如：對齊圖形的命令](#AlignCommand)  
   
-##  <a name="Display"></a> 若要在圖表上顯示項目  
+## <a name="Display"></a> 若要在圖表上顯示項目  
  當您建立項目 (例如，使用案例或動作) 時，使用者可以在 [UML 模型總管] 中看見該項目，但是該項目不一定會自動出現在圖表中。 在某些情況下，您必須撰寫程式碼來顯示它。 下表摘要說明一些替代方式。  
   
 |項目的類型|例如|若要顯示此內容，您的程式碼必須|  
 |---------------------|-----------------|-------------------------------------|  
 |分類器|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|在指定的圖表上建立相關聯的圖形。 您可以為每一個分類器建立任意數目的圖形。<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> 針對此圖表頂端的圖形，請將 `parentShape` 設為 `null`。<br /><br /> 在某一個圖形內顯示另一個圖形。<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **注意：** 如果您執行內的顯示器**ILinkedUndo**交易，此方法有時候不會傳回`IShape`。 但是會正確建立此圖形，並且可以使用 `IElement.Shapes().` 存取。|  
 |分類器的子系|屬性、作業、<br /><br /> 組件、通訊埠|自動 - 不需要程式碼。<br /><br /> 它會做為父系的一部分顯示。|  
-|行為|互動 (序列)、<br /><br /> 活動|將行為繫結至適當的圖表。<br /><br /> 每一個行為每次最多可以繫結至一個圖表。<br /><br /> 例如：<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|  
+|行為|互動 (序列)、<br /><br /> 活動|將行為繫結至適當的圖表。<br /><br /> 每一個行為每次最多可以繫結至一個圖表。<br /><br /> 例如: <br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|  
 |行為的子系|生命線、訊息、動作、物件節點|自動 - 不需要程式碼。<br /><br /> 它會在此父系繫結至圖表時顯示。|  
 |Relationship|關聯、一般化、流程、相依性|自動 - 不需要程式碼。<br /><br /> 它會在兩端都顯示的每一個圖表上顯示。|  
   
-##  <a name="GetShapes"></a> 存取代表項目的圖形  
+## <a name="GetShapes"></a> 存取代表項目的圖形  
  圖形，其代表項目屬於下列類型：  
   
  `IShape`  
@@ -68,7 +68,7 @@ ms.locfileid: "58941195"
 |`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|將泛型 `IShape` 轉換成強類型 `IShape<IElement>`。|  
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|在參數化圖形類別之間轉換圖形。|  
   
-##  <a name="Moving"></a> 移動和調整大小圖形  
+## <a name="Moving"></a> 移動和調整大小圖形  
   
 |||  
 |-|-|  
@@ -77,7 +77,7 @@ ms.locfileid: "58941195"
   
  如需範例，請參閱[定義對齊命令](#AlignCommand)。  
   
-##  <a name="Removing"></a> 若要從圖表移除圖形  
+## <a name="Removing"></a> 若要從圖表移除圖形  
  您可以刪除一些項目類型的圖形，而不需刪除該項目。  
   
 |模型項目|若要移除圖形|  
@@ -86,7 +86,7 @@ ms.locfileid: "58941195"
 |行為：互動或活動|您可以從此專案中刪除該圖表。 請使用 `IDiagram.FileName` 取得此路徑。<br /><br /> 這樣做不會從模型刪除此行為。|  
 |任何其他圖形|您無法從圖表明確刪除其他圖形。 如果從此模型中刪除該項目，或是從此圖表中移除父圖形，則此圖形將自動消失。|  
   
-##  <a name="Opening"></a> 開啟及建立圖表  
+## <a name="Opening"></a> 開啟及建立圖表  
   
 ### <a name="to-access-the-users-current-diagram-from-a-command-or-gesture-extension"></a>從命令或軌跡擴充功能存取使用者目前的圖表  
  在類別中宣告此匯入的屬性：  
@@ -162,7 +162,7 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;  
 ```  
   
-##  <a name="AlignCommand"></a> 範例：對齊圖形的命令  
+## <a name="AlignCommand"></a> 範例：對齊圖形的命令  
  下列程式碼實作工整對齊圖形的功能表命令。 使用者必須先以接近垂直或水平對齊的方式放置兩個以上的圖形。 然後此對齊命令可用來將圖形置中對齊。  
   
  若要讓此命令可供使用，請將此程式碼加入功能表命令專案，然後部署產生的擴充功能給您的使用者。 如需詳細資訊，請參閱 <<c0> [ 在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  

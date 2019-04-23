@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195160"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041831"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 的新功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58195160"
  ![Visual Studio 2015 安裝程式對話方塊](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>跨多個帳戶登入
- Visual Studio 2015 的新登入功能設計，可以大大地簡化您存取線上資源的流程，即使使用多個 Visual Studio 帳戶，也一樣地有效率。 當您登入 Visual Studio 之後，您會自動登入您電腦上所有的 Visual Studio 2015 執行個體及 Blend 執行個體。 登入會自動為您開始漫遊您的設定。 在 Visual Studio 2015 中，所有功能會共用您的帳戶，因此，只要您持有有效的權杖，便能從 **Team Explorer**存取您的 Visual Studio Team Services 帳戶，以及使用您的 Microsoft Azure 訂用帳戶，從 [伺服器總管] 存取資源及網站。 您也可以在 Application Insights 專案的 [新增專案] 對話方塊中，檢視您的 Azure 資源；還可在新增加的 [**加入已連接服務**]  對話方塊中，檢視 Azure Mobile、Azure 儲存體、 [Microsoft Office 365](http://msdn.microsoft.com/office/aa905340.aspx) 和 [Saleforce.com 開發人員](https://developer.salesforce.com/) 帳戶。
+ Visual Studio 2015 的新登入功能設計，可以大大地簡化您存取線上資源的流程，即使使用多個 Visual Studio 帳戶，也一樣地有效率。 當您登入 Visual Studio 之後，您會自動登入您電腦上所有的 Visual Studio 2015 執行個體及 Blend 執行個體。 登入會自動為您開始漫遊您的設定。 在 Visual Studio 2015 中，所有功能會共用您的帳戶，因此，只要您持有有效的權杖，便能從 **Team Explorer**存取您的 Visual Studio Team Services 帳戶，以及使用您的 Microsoft Azure 訂用帳戶，從 [伺服器總管] 存取資源及網站。 您也可以在 Application Insights 專案的 [新增專案] 對話方塊中，檢視您的 Azure 資源；還可在新增加的 [[加入已連接服務]](http://msdn.microsoft.com/office/aa905340.aspx) 對話方塊中，檢視 Azure Mobile、Azure 儲存體、 [Microsoft Office 365](https://developer.salesforce.com/) 和 **Saleforce.com 開發人員** 帳戶。
 
  您可以前往或使用新的帳戶管理員，加入多個使用者帳戶在 Visual Studio 中使用。 如此一來，您便能夠在要連線到服務或存取線上資源時，隨時切換帳戶。 Visual Studio 會記住您加入的帳戶，因此您可以從任何 Visual Studio 或 Blend 執行個體使用這些帳戶。 Visual Studio 也將隨您的個人化帳戶漫遊帳戶清單 (不過我們不會漫遊您的重要認證)，因此您可以在其他裝置上快速開始使用其中一個帳戶。 您也可以隨時從 [帳戶設定] 對話方塊中移除這些帳戶。 若要開始使用，請參閱 [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md)。
 
@@ -61,7 +61,7 @@ ms.locfileid: "58195160"
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>跨平台應用程式及原生 C++ 的程式庫
  C++ 是跨大部分行動裝置的原生可用語言。 您可以使用它來撰寫可針對多個行動平台目標建置的跨平台共用程式碼程式庫。 您甚至可以使用 C++ 建立整個行動應用程式。 Visual C++ 可提供工具來編輯、建置和部署跨平台程式碼，並對其進行偵錯。 除了 Windows 應用程式的範本之外，您還可以使用適用於 Android Native Activity 應用程式、iOS 應用程式或多種平台的共用程式碼程式庫專案 (包括 Xamarin 混合式應用程式)。 需要區分平台的 IntelliSense 可讓您探索各種 API，進而產生適用於目標平台為 Android、iOS 或 Windows 的正確程式碼。 您可以設定您的 x86 或 ARM 原生平台組建，並將您的程式碼部署到 iOS 模擬器、連接網路之 Mac 上的 iOS 裝置、直接附加的 Android 裝置，或是使用高效能 Microsoft Visual Studio Emulator for Android 進行測試。 您可以在 Visual Studio 偵錯工具中設定中斷點、監看變數、檢視堆疊，以及逐步執行 C++ 程式碼。 除了需要區分平台的程式碼之外，您還可以跨多個應用程式平台共用所有的程式碼，而且只需要在 Visual Studio 中建立一個方案，就能建置所有的應用程式。
 
- 若要開始使用跨平台 c + +，請參閱[建置 Visual c + + 的跨平台行動應用程式](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
+ 若要開始使用跨平台上C++，請參閱[建置視覺效果的跨平台行動應用程式C++](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 
 ### <a name="universal-windows-apps-for-any-windows-10-device"></a>適用於任何 Windows 10 裝置的通用 Windows 應用程式
  透過通用 Windows 平台和單一 Windows 核心，您可以在從手機到桌上型電腦的任何 Windows 10 裝置上執行相同的應用程式。 您可以使用 Visual Studio 2015 和通用 Windows 應用程式開發工具，來建立這些通用 Windows 應用程式。
@@ -92,7 +92,7 @@ ms.locfileid: "58195160"
 #### <a name="c"></a>C++
  Visual C++ 在 C++11/14 的語言相容性上有顯著的改善；支援跨平台行動裝置的開發；支援可繼續函式及 Await (目前規劃在 C++17 時進行標準化)；改良 C 執行階段程式庫 (CRT) 及 C++ 標準程式庫 (STL) 實作並修復其 Bug；MFC 中的可調整大小對話方塊；新增編譯器最佳化；提升建置效能；在程式碼編譯器中新增診斷功能及生產力工具。
 
- 如需詳細資訊，請參閱 < [What's New for Visual c + +](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)並[Visual c + + 部落格](http://blogs.msdn.com/b/vcblog/)。
+ 如需詳細資訊，請參閱 < [What's New for Visual C++ ](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)並[視覺化C++部落格](http://blogs.msdn.com/b/vcblog/)。
 
 ## <a name="device-preview-menu-bar"></a>裝置預覽功能表列
  在通用 Windows 平台專案中，裝置預覽功能表列可讓您查看如何以各種螢幕大小呈現以 XAML 為基礎的 UI。
@@ -123,15 +123,15 @@ ms.locfileid: "58195160"
 ## <a name="cross-platform-debugging-support"></a>跨平台偵錯支援
  您可以使用 Visual Studio，來建立及偵錯在 Windows、iOS 和 Android 裝置上執行的原生行動應用程式。 使用 [Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)，或連接裝置並直接在 Visual Studio 中偵錯程式碼。
 
--   **JavaScript / Cordova**。 使用 [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) 來建置 Windows、iOS 和 Android 的 JavaScript 原生應用程式。
+- **JavaScript / Cordova**。 使用 [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) 來建置 Windows、iOS 和 Android 的 JavaScript 原生應用程式。
 
      [您的應用程式進行偵錯](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)是 MSDN Library 中的 深入了解 Visual Studio 偵錯 Cordova 支援。
 
--   **C# / Xamarin**。 使用 [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) 在 Visual Studio 中以 C# 建置 Windows、iOS 和 Android 的原生應用程式。
+- **C# / Xamarin**。 使用 [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) 在 Visual Studio 中以 C# 建置 Windows、iOS 和 Android 的原生應用程式。
 
      [Xamarin 開發人員指南](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) 中的 [偵錯](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) (iOS) 和 [在裝置上偵錯](http://developer.xamarin.com/guides) 說明偵錯經驗。
 
--   **C++ / Android**。 使用 [適用於跨平台行動裝置開發的 Visual C++](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) 範本以及如 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) 的協力廠商工具，建立適用於 Windows 和 Android 的原生應用程式。
+- **C++ / Android**。 使用 [適用於跨平台行動裝置開發的 Visual C++](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) 範本以及如 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) 的協力廠商工具，建立適用於 Windows 和 Android 的原生應用程式。
 
 ## <a name="debugging-and-diagnostics"></a>偵錯和診斷
 
@@ -140,7 +140,7 @@ ms.locfileid: "58195160"
 下列新的或改進的工具可對程式碼執行不同類型的診斷和分析：
 
 ### <a name="perftips"></a>效能提示
- 效能提示顯示偵錯期間方法的執行時間，可讓您快速發現瓶頸，而不需要叫用分析工具。 若要開始，請參閱 [效能提示：使用 Visual Studio 偵錯，效能資訊快速檢視](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)。
+ 效能提示顯示偵錯期間方法的執行時間，可讓您快速發現瓶頸，而不需要叫用分析工具。 若要開始，請參閱[效能提示：Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx) (效能提示：使用 Visual Studio 偵錯時的效能資訊一覽)
 
 ### <a name="error-list"></a>錯誤清單
  錯誤清單現在支援對任何資料行進行篩選。 該清單也可以隨著您的輸入調整，以顯示整個 C# 或 Visual Basic 方案中之錯誤、警告和程式碼分析的即時檢視，就算程式碼變更產生了數千項警告也沒有問題。 新的錯誤清單可回溯相容於現有的使用量。 如需詳細資訊，請參閱 [Error List Window](./ide/reference/error-list-window.md)。
@@ -179,18 +179,18 @@ ms.locfileid: "58195160"
 ### <a name="notification-hub"></a>通知中樞
  通知中區的使用者介面已經過簡化，方便您快速掃描。 已加入其他種類的通知，包括效能問題、轉譯問題和當機，而且您現在可以告訴 Visual Studio 停止顯示通知。 如需詳細資訊，請參閱 [Visual Studio 通知](./ide/visual-studio-notifications.md)。
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens：了解您的程式碼的狀態 (僅限 Enterprise 和 Professional 版)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens：了解您的程式碼 （僅包括 Enterprise 和 Professional 版本）
  尋找程式碼的相關資訊而不需要離開編輯器，讓您可以專注於工作。 您可以檢閱儲存在 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 中之程式碼的變更，以及工作項目、Bug、程式碼檢閱等其他記錄。
 
  在 Visual Studio Professional 和 Visual Studio Professional 中，您現在可以：
 
 - 取得 Visual Studio 編輯器中整個程式碼檔案的歷程記錄。
 
-   ![CodeLens：取得程式碼檔案詳細資料](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens:取得程式碼檔案詳細資料](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - 查看顯示變更您程式碼之人員的圖表。 這可協助您找出小組變更的模式，並評估其影響。
 
-   ![CodeLens：以圖形方式檢視程式碼變更記錄](./ide/media/codelens.png "CodeLens")
+   ![CodeLens:查看以圖形的程式碼變更記錄](./ide/media/codelens.png "CodeLens")
 
 - 輕鬆地查看上次變更程式碼的時間。
 
@@ -264,7 +264,7 @@ ms.locfileid: "58195160"
 
  首先，請依照前述步驟傳送苦臉。 接著在隨後顯示的對話方塊上，您可以使用任何預設標籤，或是建立您自己的標籤來標記您的意見反應。 使用標籤可以協助我們將您的意見反應分立到正確的功能團隊。 從 [選擇類別]  下拉式清單中，選取可代表您回報之問題的選項，然後遵循所示步驟重現問題。 此外也會提供如何使用 Visual Studio 提供意見反應的詳細步驟。 如需詳細資訊，請參閱 < [Visual Studio 傳送笑臉指示 >](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [使用 Apache Cordova 建置跨平台應用程式](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)

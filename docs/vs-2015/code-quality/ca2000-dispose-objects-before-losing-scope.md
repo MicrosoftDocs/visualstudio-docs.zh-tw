@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f3456ec773b233da3ef2be1dfa7731460bdf6b44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4cc41376905dd5bd5df5711d2de3edf1ea1d04dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939941"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085034"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000:必須在超出範圍前處置物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "58939941"
   
  以下是某些情況下，使用陳述式尚不足以保護 IDisposable 物件，並導致 ca2000 必須在超出發生。  
   
--   傳回可處置的物件需要建構物件時，是在 try/finally 區塊外部使用區塊。  
+- 傳回可處置的物件需要建構物件時，是在 try/finally 區塊外部使用區塊。  
   
--   初始化可處置物件的成員不應該在執行中的建構函式的 using 陳述式。  
+- 初始化可處置物件的成員不應該在執行中的建構函式的 using 陳述式。  
   
--   巢狀只能有一個例外狀況處理常式所保護的建構函式。 例如，套用至物件的  
+- 巢狀只能有一個例外狀況處理常式所保護的建構函式。 例如，套用至物件的  
   
     ```  
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -59,7 +59,7 @@ ms.locfileid: "58939941"
   
      會導致 ca2000 必須在超出發生，因為在 StreamReader 物件建構失敗可能會導致永遠不會關閉 FileStream 物件。  
   
--   動態物件應該實作 Dispose 模式的 IDisposable 物件使用陰影物件。  
+- 動態物件應該實作 Dispose 模式的 IDisposable 物件使用陰影物件。  
   
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  除非您已在呼叫 `Dispose` 的物件上呼叫方法，例如 <xref:System.IO.Stream.Close%2A>，或是引發警告的方法傳回的 IDisposable 物件會包裝您的物件，否則請勿隱藏這項規則的警告。  

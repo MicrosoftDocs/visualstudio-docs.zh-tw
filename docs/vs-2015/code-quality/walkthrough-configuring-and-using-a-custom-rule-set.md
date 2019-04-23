@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942731"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052060"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>逐步解說：設定和使用自訂規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,21 +26,21 @@ ms.locfileid: "58942731"
   
  在本逐步解說中，您會逐步執行這些程序：  
   
--   建立類別庫。  
+- 建立類別庫。  
   
--   選取  **Microsoft 基本設計方針規則**程式碼分析規則集。  
+- 選取  **Microsoft 基本設計方針規則**程式碼分析規則集。  
   
--   將您自己的程式碼新增至類別。  
+- 將您自己的程式碼新增至類別。  
   
--   執行程式碼分析。  
+- 執行程式碼分析。  
   
--   自訂規則集。  
+- 自訂規則集。  
   
--   執行程式碼分析，請參閱 < 設定自訂行為的運作方式的規則。  
+- 執行程式碼分析，請參閱 < 設定自訂行為的運作方式的規則。  
   
 ## <a name="prerequisites"></a>必要條件  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]或 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]或 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="using-rule-sets-with-code-analysis"></a>使用規則集使用程式碼分析  
  首先，建立簡單的類別庫。  
@@ -148,9 +148,9 @@ ms.locfileid: "58942731"
   
 #### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>第二次 RuleSetSample 專案執行程式碼分析  
   
-1.  在 **分析**功能表上，按一下**RuleSetSample 上執行程式碼分析**。  
+1. 在 **分析**功能表上，按一下**RuleSetSample 上執行程式碼分析**。  
   
-2.  在 [錯誤清單] 視窗中，請注意，當您按一下**警告**，您不會再看見 CA1704 警告違規 」 的識別項應該使用正確的拼字"規則。  
+2. 在 [錯誤清單] 視窗中，請注意，當您按一下**警告**，您不會再看見 CA1704 警告違規 」 的識別項應該使用正確的拼字"規則。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   

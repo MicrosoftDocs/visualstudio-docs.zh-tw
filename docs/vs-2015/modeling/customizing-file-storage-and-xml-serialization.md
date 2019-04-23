@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7aae4ee1006a7a329bc8ad5ca9f93b756e309458
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6211e33f8ef14687df3c70841ef61a2f25d10457
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939590"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062395"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ ms.locfileid: "58939590"
 ## <a name="model-and-diagram-files"></a>模型和圖表檔  
  每個模型通常會儲存在兩個檔案：  
   
--   模型檔案的名稱這類**Model1.mydsl**。 它會儲存模型項目和關聯性和其屬性。 這類副檔名 **.mydsl**取決**FileExtension**屬性**編輯器**DSL 定義中的節點。  
+- 模型檔案的名稱這類**Model1.mydsl**。 它會儲存模型項目和關聯性和其屬性。 這類副檔名 **.mydsl**取決**FileExtension**屬性**編輯器**DSL 定義中的節點。  
   
--   圖表檔案的名稱這類**Model1.mydsl.diagram**。 它會儲存圖形、 連接器和其位置、 色彩、 線條寬度和其他詳細資料圖表的外觀。 如果使用者刪除 **.diagram**檔案，在模型中的基本資訊不會遺失。 只有圖表的版面配置會遺失。 模型檔案開啟時，一組預設圖形和連接器將會建立。  
+- 圖表檔案的名稱這類**Model1.mydsl.diagram**。 它會儲存圖形、 連接器和其位置、 色彩、 線條寬度和其他詳細資料圖表的外觀。 如果使用者刪除 **.diagram**檔案，在模型中的基本資訊不會遺失。 只有圖表的版面配置會遺失。 模型檔案開啟時，一組預設圖形和連接器將會建立。  
   
 #### <a name="to-change-the-file-extension-of-a-dsl"></a>若要變更 DSL 的副檔名  
   
-1.  開啟 DSL 定義中。 在 [DSL 總管] 中，按一下 [編輯器] 節點。  
+1. 開啟 DSL 定義中。 在 [DSL 總管] 中，按一下 [編輯器] 節點。  
   
-2.  在 [屬性] 視窗中，編輯**FileExtension**屬性。 不包含初始"。"的檔案名稱的副檔名。  
+2. 在 [屬性] 視窗中，編輯**FileExtension**屬性。 不包含初始"。"的檔案名稱的副檔名。  
   
-3.  在 [方案總管] 中變更兩個項目範本中的檔案名稱**DslPackage\ProjectItemTemplates**。 這些檔案都有遵循以下格式的名稱：  
+3. 在 [方案總管] 中變更兩個項目範本中的檔案名稱**DslPackage\ProjectItemTemplates**。 這些檔案都有遵循以下格式的名稱：  
   
      `myDsl.diagram`  
   
@@ -81,17 +81,17 @@ ms.locfileid: "58939590"
   
  請注意下列有關序列化的模型的重點：  
   
--   每個 XML 節點具有網域類別名稱相同的名稱，不同之處在於首字母是小寫。 例如，`familyTreeModel` 和 `person`。  
+- 每個 XML 節點具有網域類別名稱相同的名稱，不同之處在於首字母是小寫。 例如，`familyTreeModel` 和 `person`。  
   
--   網域屬性，例如名稱和生日年份會序列化為 XML 節點內的屬性。 同樣地，屬性名稱之初始字元會轉換成小寫。  
+- 網域屬性，例如名稱和生日年份會序列化為 XML 節點內的屬性。 同樣地，屬性名稱之初始字元會轉換成小寫。  
   
--   每個關聯性會序列化為 XML 節點在來源端的關聯性的巢狀。 節點有相同的名稱為來源角色屬性，但大小寫的起始字元。  
+- 每個關聯性會序列化為 XML 節點在來源端的關聯性的巢狀。 節點有相同的名稱為來源角色屬性，但大小寫的起始字元。  
   
      例如，在 DSL 定義中，名為角色**人**源自**列舉 FamilyTree**類別。  在 XML 中，這名為節點所代表`people`巢狀於`familyTreeModel`節點。  
   
--   每個內嵌關聯性的目標末端會序列化為巢狀於關聯性之下的節點。 例如，`people`節點包含數個`person`節點。  
+- 每個內嵌關聯性的目標末端會序列化為巢狀於關聯性之下的節點。 例如，`people`節點包含數個`person`節點。  
   
--   每個參考關聯性的目標端序列化成*moniker*，這會將編碼的目標項目參考。  
+- 每個參考關聯性的目標端序列化成*moniker*，這會將編碼的目標項目參考。  
   
      例如，在`person`節點，可以有`children`關聯性。 這個節點包含 moniker，例如：  
   
@@ -125,33 +125,33 @@ ms.locfileid: "58939590"
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>若要設定網域類別 ID moniker 所要參考  
   
-1.  請確定**是 Moniker 索引鍵**是`false`類別和其基底類別中的每個網域屬性。  
+1. 請確定**是 Moniker 索引鍵**是`false`類別和其基底類別中的每個網域屬性。  
   
-    1.  在 [DSL 總管] 中，展開**Xml 序列化 Behavior\Class 資料\\**_\<網域類別 >_**\Element 資料**。  
+    1. 在 [DSL 總管] 中，展開**Xml 序列化 Behavior\Class 資料\\**_\<網域類別 >_**\Element 資料**。  
   
-    2.  確認**是 Moniker 索引鍵**是`false`的每個網域屬性。  
+    2. 確認**是 Moniker 索引鍵**是`false`的每個網域屬性。  
   
-    3.  如果網域類別的基底類別，重複該類別中的程序。  
+    3. 如果網域類別的基底類別，重複該類別中的程序。  
   
-2.  設定**序列化 Id**  =  `true`領域類別。  
+2. 設定**序列化 Id**  =  `true`領域類別。  
   
      這個屬性可以在下找到**Xml 序列化行為**。  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-qualified-key-monikers"></a>若要設定完整索引鍵的 moniker 所要參考的網域類別  
   
--   設定**是 Moniker 索引鍵**針對現有的網域類別的領域屬性。 屬性的型別必須是`string`。  
+- 設定**是 Moniker 索引鍵**針對現有的網域類別的領域屬性。 屬性的型別必須是`string`。  
   
-    1.  在 [DSL 總管] 中，展開**Xml 序列化 Behavior\Class 資料\\**_\<網域類別 >_**\Element 資料**，然後選取網域屬性。  
+    1. 在 [DSL 總管] 中，展開**Xml 序列化 Behavior\Class 資料\\**_\<網域類別 >_**\Element 資料**，然後選取網域屬性。  
   
-    2.  在 [屬性] 視窗中，設定**是 Moniker 索引鍵**至`true`。  
+    2. 在 [屬性] 視窗中，設定**是 Moniker 索引鍵**至`true`。  
   
--   \-或-  
+- \-或-  
   
      建立新的網域類別使用**具名網域類別**工具。  
   
      此工具會建立新的類別具有名為名稱的網域屬性。 **Is Element Name**並**是 Moniker 索引鍵**此網域屬性的屬性會初始化為`true`。  
   
--   \-或-  
+- \-或-  
   
      建立從網域類別的繼承關係，至另一個具有 moniker 索引鍵屬性的類別。  
   
@@ -160,11 +160,11 @@ ms.locfileid: "58939590"
   
  有數種方法，協助您避免這種情況：  
   
--   設定**Is Element Name**  =  `true`索引鍵的領域屬性。 選取在 DSL 定義圖上的 [網域] 屬性，然後在 [屬性] 視窗中設定值。  
+- 設定**Is Element Name**  =  `true`索引鍵的領域屬性。 選取在 DSL 定義圖上的 [網域] 屬性，然後在 [屬性] 視窗中設定值。  
   
      當使用者建立之類別的新執行個體時，這個值會導致網域屬性，以自動指派不同的值。 預設行為會將類別名稱的結尾中的數字。 這不會防止使用者將名稱變更為重複項目，但它可協助在案例中當使用者不會儲存模型之前設定的值。  
   
--   啟用驗證的 dsl。 在 DSL 總管 中，請選取 編輯器 \ 驗證，並設定**使用...** 屬性，以`true`。  
+- 啟用驗證的 dsl。 在 DSL 總管 中，請選取 編輯器 \ 驗證，並設定**使用...** 屬性，以`true`。  
   
      沒有自動產生的驗證方法，以檢查模稜兩可。 方法是在`Load`驗證類別目錄。 這可確保，使用者將會收到警告，它可能無法重新開啟檔案。  
   
@@ -204,7 +204,7 @@ ms.locfileid: "58939590"
 ## <a name="customizing-the-structure-of-the-xml"></a>自訂 XML 的結構  
  若要進行下列自訂，展開**Xml 序列化行為**DSL 總管 中的節點。 在網域類別，展開項目資料節點以查看清單的內容和關聯性，也就源自於此類別。 選取關聯性，並調整其 [屬性] 視窗中的選項。  
   
--   設定**省略的項目**為 true 來省略離開的目標項目清單的來源角色節點。 如果來源和目標類別之間有一個以上的關聯性，您不應該設定這個選項。  
+- 設定**省略的項目**為 true 來省略離開的目標項目清單的來源角色節點。 如果來源和目標類別之間有一個以上的關聯性，您不應該設定這個選項。  
   
     ```  
   
@@ -218,7 +218,7 @@ ms.locfileid: "58939590"
   
     ```  
   
--   設定**使用完整格式**代表關聯性執行個體的節點中內嵌的目標節點。 當您將網域屬性加入至網域關聯性時，會自動設定此選項。  
+- 設定**使用完整格式**代表關聯性執行個體的節點中內嵌的目標節點。 當您將網域屬性加入至網域關聯性時，會自動設定此選項。  
   
     ```  
   
@@ -236,7 +236,7 @@ ms.locfileid: "58939590"
   
     ```  
   
--   設定**表示法** = **項目**具有另存為元素，而不是做為屬性值的網域屬性。  
+- 設定**表示法** = **項目**具有另存為元素，而不是做為屬性值的網域屬性。  
   
     ```  
     <person name="Elizabeth I" birthYear="1533">  
@@ -244,7 +244,7 @@ ms.locfileid: "58939590"
     </person>  
     ```  
   
--   若要變更序列化屬性和關聯性的順序，以滑鼠右鍵按一下項目資料下的項目，並使用**下移**或是**下移**功能表命令。  
+- 若要變更序列化屬性和關聯性的順序，以滑鼠右鍵按一下項目資料下的項目，並使用**下移**或是**下移**功能表命令。  
   
 ## <a name="major-customization-using-program-code"></a>使用程式碼的主要自訂  
  您可以取代部分或全部的序列化演算法。  
@@ -253,13 +253,13 @@ ms.locfileid: "58939590"
   
 #### <a name="to-customize-the-serialization-of-a-particular-class"></a>若要自訂特定類別的序列化  
   
-1.  設定**Is Custom**中該類別，其下的節點**Xml 序列化行為**。  
+1. 設定**Is Custom**中該類別，其下的節點**Xml 序列化行為**。  
   
-2.  轉換所有範本、 建置方案，並調查造成編譯錯誤的結果。 幾乎每個錯誤的註解會說明您必須提供哪些程式碼。  
+2. 轉換所有範本、 建置方案，並調查造成編譯錯誤的結果。 幾乎每個錯誤的註解會說明您必須提供哪些程式碼。  
   
 #### <a name="to-provide-your-own-serialization-for-the-whole-model"></a>若要提供您自己的序列化整個模型  
   
-1.  覆寫中 Dsl\GeneratedCode\SerializationHelper.cs 方法  
+1. 覆寫中 Dsl\GeneratedCode\SerializationHelper.cs 方法  
   
 ## <a name="options-in-xml-serialization-behavior"></a>在 Xml 序列化行為的選項  
  在 DSL 總管 中，Xml 序列化行為 節點會包含每個網域類別、 關聯性、 圖形、 連接器和圖表類別的子節點。 在每個節點是一份內容和來源為該元素的關聯性。 在自己的權限和其來源類別下，會表示關聯性。  

@@ -12,16 +12,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a1c9de1c65c5f3f780e6ea4374fa7d96f436f514
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 451d7a735116d7b181263eebe76751fd49900ce3
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227757"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584411"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>使用適用於 Visual Studio 的 Node.js 工具建立 Vue.js 應用程式
 
-Visual Studio 2017 包含改善的 [Vue.js](https://vuejs.org/) 架構支援，該架構可在使用 Vue.js、JavaScript 和 TypeScript 建立應用程式時改善開發體驗。
+Visual Studio 支援使用 JavaScript 或 TypeScript 搭配 [Vue.js](https://vuejs.org/) 架構進行應用程式開發。
 
 下列新功能支援 Visual Studio 中的 Vue.js 應用程式開發：
 
@@ -38,7 +38,7 @@ Visual Studio 2017 包含改善的 [Vue.js](https://vuejs.org/) 架構支援，�
 
     如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 頁面免費進行安裝。
 
-    如果您需要安裝工作負載，但已擁有 Visual Studio，請在 [新增專案] 對話方塊 (選取 [檔案] > [新增] > [專案]) 的左窗格中，按一下 [開啟 Visual Studio 安裝程式]。 Visual Studio 安裝程式即會啟動。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
+    如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
 
 * 若要建立 ASP.NET Core 專案，您必須安裝 ASP.NET 與網頁程式開發工作負載，以及 .NET Core 跨平台開發工作負載。
 
@@ -63,9 +63,14 @@ Vue.js 提供正式的 CLI 以快速 Scaffolding 專案。 如果您想要使用
 
 #### <a name="create-an-empty-project"></a>建立空白專案
 
-1. 開啟 Visual Studio，然後從主功能表選擇 [檔案] > [新增] > [專案]。
+1. 開啟 Visual Studio 並建立新專案。
 
-1. 在 [Visual C#] > [Web] 底下，選擇 [ASP.NET Core Web 應用程式]，然後按一下 [確定]。
+    ::: moniker range=">=vs-2019"
+    按 **Esc** 來關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **asp.net**，然後選擇 [建立新的 ASP.NET Core Web 應用程式]。 在出現的對話方塊中選擇 [建立]。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#]，然後選擇 [Web]。 在中間窗格中，選擇 [ASP.NET Web 應用程式]，然後選擇 [確定]。
+    ::: moniker-end
 
     如果您看不到 [ASP.NET Core Web 應用程式] 專案範本，則必須先安裝 **ASP.NET 與網頁程式開發** 工作負載和 **.NET Core** 程式開發工作負載。 若要安裝工作負載，請在 [新增專案] 對話方塊 (選取 [檔案] > [新增] > [專案]) 的左窗格中，按一下 [開啟 Visual Studio 安裝程式]。 Visual Studio 安裝程式即會啟動。 選取所需的工作負載。
 
@@ -91,6 +96,9 @@ Vue.js 提供正式的 CLI 以快速 Scaffolding 專案。 如果您想要使用
 1. 移至命令提示字元，並將目前的目錄變更為專案根資料夾。
 
 1. 鍵入 `vue init webpack ClientApp`，並在系統提示您回答其他問題時遵循步驟。
+
+    > [!NOTE]
+    > 針對 *.vue* 檔案，您需要使用 WebPack 或包含載入程式的類似架構來進行轉換。 TypeScript 和 Visual Studio 不知道如何編譯 *.vue* 檔案。 對於統合也是如此；TypeScript 不知道如何將 ES2015 模組 (也就是 `import` 和 `export` 陳述式) 轉換成單一的最終 *.js* 檔案，以載入瀏覽器中。 同樣地，WebPack 是最好的選擇。 若要使用 MSBuild 從 Visual Studio 中驅動此程序，您需要從 Visual Studio 範本執行啟動。 目前，沒有現成適用於 Vue.js 開發的 ASP.NET 樣板。
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>修改 Webpack 組態以將建置的檔案輸出至 wwwroot
 

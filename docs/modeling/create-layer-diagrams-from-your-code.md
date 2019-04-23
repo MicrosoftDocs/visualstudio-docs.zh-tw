@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: b9822dda92a096e3c497d468865d3ed9fd56e16d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223230"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046913"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>從您的程式碼建立相依性圖表
 
@@ -43,13 +43,13 @@ ms.locfileid: "57223230"
 > [!NOTE]
 > Visual Studio 中的.NET Core 專案不支援相依性圖表。
 
-1.  在 **架構**功能表上，選擇**新的相依性圖表**。
+1. 在 **架構**功能表上，選擇**新的相依性圖表**。
 
-2.  底下**範本**，選擇**相依性圖表**。
+2. 底下**範本**，選擇**相依性圖表**。
 
-3.  命名圖表。
+3. 命名圖表。
 
-4.  在 **加入至模型專案**、 瀏覽至並選取方案中的現有模型專案。
+4. 在 **加入至模型專案**、 瀏覽至並選取方案中的現有模型專案。
 
      -或-
 
@@ -58,7 +58,7 @@ ms.locfileid: "57223230"
     > [!NOTE]
     > 相依性圖表必須存在於模型專案內。 但是，您可以將它連結到方案中任何位置的項目。
 
-5.  請務必儲存模型專案和相依性圖表。
+5. 請務必儲存模型專案和相依性圖表。
 
 ## <a name="drag-and-drop-or-copy-and-paste-from-a-code-map"></a>拖放，或複製並貼上，從程式碼對應
 
@@ -101,19 +101,19 @@ ms.locfileid: "57223230"
 
  圖層上的數字表示圖層連結的成品數目。 然而，當您閱讀這個數字時，請記住下列各項：
 
--   如果圖層連結的成品有包含其他成品，但圖層未直接連結這些其他成品，則數字將只包含連結的成品。 然而，在圖層驗證期間會加入其他成品以進行分析。
+- 如果圖層連結的成品有包含其他成品，但圖層未直接連結這些其他成品，則數字將只包含連結的成品。 然而，在圖層驗證期間會加入其他成品以進行分析。
 
      例如，如果圖層連結到單一命名空間，即使命名空間包含類別，連結的成品數目仍為 1。 如果圖層也有命名空間中每個類別的連結，則數字將包含這些已連結的類別。
 
--   如果圖層包含已連結到成品的其他圖層，即使此容器圖層上的數字未包含那些成品，容器圖層也會連結到那些成品。
+- 如果圖層包含已連結到成品的其他圖層，即使此容器圖層上的數字未包含那些成品，容器圖層也會連結到那些成品。
 
 ## <a name="Managing"></a> 管理圖層與成品之間的連結
 
-1.  在相依性圖表中，開啟圖層的捷徑功能表，然後再選擇 **檢視連結**。
+1. 在相依性圖表中，開啟圖層的捷徑功能表，然後再選擇 **檢視連結**。
 
      **圖層總管**顯示所選的圖層成品連結。
 
-2.  使用下列工作來管理這些連結：
+2. 使用下列工作來管理這些連結：
 
 |**若要**|**在圖層總管**|
 |-|-|
@@ -150,17 +150,17 @@ ms.locfileid: "57223230"
 ## <a name="Codemaps"></a> 探索模式和 code map 上的相依性
  在建立相依性圖表，您也可以建立**code map**。 這些圖表可協助您在瀏覽程式碼時探索模式和相依性。 使用 [方案總管]、[類別檢視] 或 [物件瀏覽器] 瀏覽組件、命名空間和類別 (這通常會正確對應至現有的圖層)。 如需 Code Map 的詳細資訊，請參閱：
 
--   [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)
+- [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)
 
--   [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)
+- [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>另請參閱
 
 - [Architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [影片：驗證即時架構相依性](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 - [相依性圖表中：參考](../modeling/layer-diagrams-reference.md)
-- [相依性圖表中：指導方針](../modeling/layer-diagrams-guidelines.md)
+- [相依性圖表中：方針](../modeling/layer-diagrams-guidelines.md)
 - [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)
 - [視覺化程式碼](../modeling/visualize-code.md)

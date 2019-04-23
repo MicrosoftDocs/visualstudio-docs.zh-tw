@@ -9,21 +9,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 939198eb18dd8fd572f1bd5bf3f4a21b44a5cf2d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 344975f0f28c8fc8ee6f8a213b519f0b17e5880a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936963"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105340"
 ---
 # <a name="text-template-control-blocks"></a>文字範本控制區塊
 控制區塊可讓您在文字範本撰寫程式碼，以便產生不同的輸出。 有三種類型的控制區塊，是使用左括號來區別：
 
--   `<# Standard control blocks #>` 可以包含陳述式。
+- `<# Standard control blocks #>` 可以包含陳述式。
 
--   `<#= Expression control blocks #>` 可以包含運算式。
+- `<#= Expression control blocks #>` 可以包含運算式。
 
--   `<#+ Class feature control blocks #>` 可以包含方法、欄位和屬性。
+- `<#+ Class feature control blocks #>` 可以包含方法、欄位和屬性。
 
 ## <a name="standard-control-block"></a>標準控制區塊
  標準控制區塊包含陳述式。 例如，下列標準區塊會取得 XML 文件中所有屬性的名稱：
@@ -117,7 +117,7 @@ Some text.
 > [!NOTE]
 >  類別功能控制區塊後面不得接著相同的範本檔案中的標準控制區塊。 不過，這項限制不適用於使用 `<#@include#>` 指示詞的結果。 每個包含的檔案的類別功能區塊後可以有標準區塊。
 
- 您可以建立函式，其會透過在類別功能控制區塊內內嵌文字和運算式區塊來產生輸出。 例如: 
+ 您可以建立函式，其會透過在類別功能控制區塊內內嵌文字和運算式區塊來產生輸出。 例如：
 
 ```
 <#+
@@ -145,17 +145,17 @@ Some text.
 
  使用控制區塊時，您應該記住下列考量：
 
--   **語言。** 您可以在文字範本中使用 C# 或 Visual Basic 程式碼。 預設語言是 C# 中，但是您可以使用 `template` 指示詞的 `language` 參數指定 Visual Basic。 (如需詳細資訊`template`指示詞，請參閱[T4 文字範本指示詞](../modeling/t4-text-template-directives.md)。)
+- **語言。** 您可以在文字範本中使用 C# 或 Visual Basic 程式碼。 預設語言是 C# 中，但是您可以使用 `template` 指示詞的 `language` 參數指定 Visual Basic。 (如需詳細資訊`template`指示詞，請參閱[T4 文字範本指示詞](../modeling/t4-text-template-directives.md)。)
 
      您在控制區塊中使用的語言，與您在文字範本中產生的文字的語言或格式無關。 您可以使用 Visual Basic 程式碼產生 C#，反之亦然。
 
      您僅可以在指定的文字範本中使用一種語言，包括使用 `include` 指示詞併入的所有文字範本。
 
--   **本機變數。** 由於文字範本中標準和運算式控制區塊中的所有程式碼，會產生為單一方法，您應該確定沒有與區域變數名稱的衝突。 如果還要包含其他文字範本，您必須確定變數名稱在所有內含的範本之間是唯一的。 確保這點的一個方式就是在宣告所的位置，在對識別文字範本的每個區域變數名稱加入一個字串。
+- **本機變數。** 由於文字範本中標準和運算式控制區塊中的所有程式碼，會產生為單一方法，您應該確定沒有與區域變數名稱的衝突。 如果還要包含其他文字範本，您必須確定變數名稱在所有內含的範本之間是唯一的。 確保這點的一個方式就是在宣告所的位置，在對識別文字範本的每個區域變數名稱加入一個字串。
 
      在宣告變數時以合理的值初始化您的區域變數，也是不錯的主意，尤其是在包含多個文字範本時。
 
--   **控制區塊的巢狀結構。** 控制區塊不能在彼此間形成巢狀結構。 開啟另一個之前，您永遠必須終止特定的控制區塊。 例如，以下顯示如何在運算式區塊中列印某些文字做為標準控制區塊的一部分。
+- **控制區塊的巢狀結構。** 控制區塊不能在彼此間形成巢狀結構。 開啟另一個之前，您永遠必須終止特定的控制區塊。 例如，以下顯示如何在運算式區塊中列印某些文字做為標準控制區塊的一部分。
 
     ```
     <#
@@ -167,4 +167,4 @@ Some text.
     <# } #>
     ```
 
--   **重構。** 為了讓您的文字範本保持簡潔和易於了解，強烈建議您避免重複的程式碼，方法是將可重複使用的程式碼重構到類別功能區塊中的 helper 函式，或建立繼承自 Microsoft.VisualStudio.TextTemplating.TextTransformation 類別的自己的文字範本類別。
+- **重構。** 為了讓您的文字範本保持簡潔和易於了解，強烈建議您避免重複的程式碼，方法是將可重複使用的程式碼重構到類別功能區塊中的 helper 函式，或建立繼承自 Microsoft.VisualStudio.TextTemplating.TextTransformation 類別的自己的文字範本類別。

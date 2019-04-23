@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a38e453d9bfff3b2633eb98cc5d6127fa126335f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 020fdd5f3df5f0f3b53f1ca28992c2b6a40a35f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945280"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116146"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>HOW TO：設定 ClickOnce 部署錯誤的自訂記錄檔位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ ms.locfileid: "58945280"
   
 ### <a name="to-set-a-custom-log-file-location"></a>若要設定的自訂記錄檔位置  
   
-1.  開啟**Regedit.exe**。  
+1. 開啟**Regedit.exe**。  
   
-2.  瀏覽至節點`HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`。  
+2. 瀏覽至節點`HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`。  
   
-3.  設定字串值`LogFilePath`完整路徑和檔名的您慣用的自訂記錄檔的位置。  
+3. 設定字串值`LogFilePath`完整路徑和檔名的您慣用的自訂記錄檔的位置。  
   
      此位置必須是使用者具有寫入權限的目錄中。 例如，在 Windows Vista 中，建立下列資料夾結構，並設定`LogFilePath`至 C:\Users\\< 使用者名稱\>\Documents\Logs\ClickOnce\installation.log。  
   

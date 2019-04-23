@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 88433ae91691caf795ad61116c8e3691662aad42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ccd8bd0cb37aaa2d4bfad7ea20979987048bf862
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927707"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050669"
 ---
 # <a name="query-datasets"></a>查詢資料集
 若要搜尋的資料集內的特定記錄，請使用`FindBy`datatable，方法撰寫您自己的 foreach 陳述式，以使用迴圈處理資料表的資料列集合，或使用[LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
@@ -33,7 +33,7 @@ ms.locfileid: "55927707"
 
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>若要尋找在具類型的資料集與主索引鍵值的資料列
 
--   若要尋找資料列，呼叫強型別`FindBy`使用資料表的主索引鍵的方法。
+- 若要尋找資料列，呼叫強型別`FindBy`使用資料表的主索引鍵的方法。
 
      在下列範例中，`CustomerID`資料行是主索引鍵`Customers`資料表。 這表示，產生`FindBy`方法是`FindByCustomerID`。 此範例示範如何指派特定<xref:System.Data.DataRow>使用 產生變數`FindBy`方法。
 
@@ -42,7 +42,7 @@ ms.locfileid: "55927707"
 
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>若要尋找的資料列中含有主索引鍵值的不具類型資料集
 
--   呼叫<xref:System.Data.DataRowCollection.Find%2A>方法的<xref:System.Data.DataRowCollection>集合，做為參數傳遞的主索引鍵。
+- 呼叫<xref:System.Data.DataRowCollection.Find%2A>方法的<xref:System.Data.DataRowCollection>集合，做為參數傳遞的主索引鍵。
 
      下列範例示範如何宣告新的資料列，呼叫`foundRow`並將其指派的傳回值<xref:System.Data.DataRowCollection.Find%2A>方法。 如果找到的主索引鍵，則資料行索引 1 的內容會顯示在訊息方塊。
 
@@ -53,7 +53,7 @@ ms.locfileid: "55927707"
 
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>若要尋找任何資料行的值為基礎的資料列
 
--   使用建立資料表<xref:System.Data.DataTable.Select%2A>方法，以傳回的陣列<xref:System.Data.DataRow>s 根據運算式傳遞至<xref:System.Data.DataTable.Select%2A>方法。 建立有效的運算式的詳細資訊，請參閱頁面的 「 運算式的語法 」 一節，關於<xref:System.Data.DataColumn.Expression%2A>屬性。
+- 使用建立資料表<xref:System.Data.DataTable.Select%2A>方法，以傳回的陣列<xref:System.Data.DataRow>s 根據運算式傳遞至<xref:System.Data.DataTable.Select%2A>方法。 建立有效的運算式的詳細資訊，請參閱頁面的 「 運算式的語法 」 一節，關於<xref:System.Data.DataColumn.Expression%2A>屬性。
 
      下列範例示範如何使用<xref:System.Data.DataTable.Select%2A>方法的<xref:System.Data.DataTable>找出特定的資料列。
 
@@ -72,24 +72,24 @@ ms.locfileid: "55927707"
 
 下列程式碼範例示範如何瀏覽向上和向下中具類型資料集的關聯性。 程式碼範例使用具類型<xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) 和產生的 FindBy*PrimaryKey* (`FindByCustomerID`) 方法，以找出所需的資料列，並傳回相關的記錄。 範例正確編譯和執行只有當您擁有：
 
--   名為資料集的執行個體`NorthwindDataSet`與`Customers`資料表。
+- 名為資料集的執行個體`NorthwindDataSet`與`Customers`資料表。
 
--   `Orders`資料表。
+- `Orders`資料表。
 
--   名為的關聯性`FK_Orders_Customers`相關的兩個資料表。
+- 名為的關聯性`FK_Orders_Customers`相關的兩個資料表。
 
 此外，這兩個資料表需要填滿要傳回的任何記錄的資料。
 
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>傳回子系的已選取的父記錄的記錄
 
--   呼叫<xref:System.Data.DataRow.GetChildRows%2A>方法的特定`Customers`資料列，並傳回陣列中的資料列`Orders`資料表：
+- 呼叫<xref:System.Data.DataRow.GetChildRows%2A>方法的特定`Customers`資料列，並傳回陣列中的資料列`Orders`資料表：
 
      [!code-csharp[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]
      [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]
 
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>傳回所選的子記錄的父記錄
 
--   呼叫<xref:System.Data.DataRow.GetParentRow%2A>方法的特定`Orders`資料列，並傳回單一資料列從`Customers`資料表：
+- 呼叫<xref:System.Data.DataRow.GetParentRow%2A>方法的特定`Orders`資料列，並傳回單一資料列從`Customers`資料表：
 
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]

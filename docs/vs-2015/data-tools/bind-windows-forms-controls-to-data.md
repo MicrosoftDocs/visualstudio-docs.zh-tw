@@ -19,17 +19,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b81d3d9f7425874c8a3501d8e1d49eb813b97d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943127"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668986"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>將 Windows Forms 控制項繫結至資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您可以將物件從資料來源繫結至控制項**Zdroje dat**視窗拖曳至 Windows 表單或表單上的現有控制項。 您拖曳項目之前，您可以設定您想要繫結至控制項的型別。 根據您選擇本身，或個別資料行的資料表會顯示不同的值。  您也可以設定自訂值。 [詳細資料] 資料表，表示每個資料行繫結不同的控制項。  
   
  ![資料來源繫結至 DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "DataGridView raddata 繫結資料來源")  

@@ -15,14 +15,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 476d117b04b648c2893885700d94a157399cea15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bcf6a06ee89bcc3ba691b38e98cf8bf43d9c063b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048043"
 ---
-# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>如何：將註解加入至類別圖表 (類別設計工具)
+# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>HOW TO：將註解新增至類別圖表 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用註解圖形來標註類別圖表。 註解圖形有一個屬性 **Text**，您可在其中鍵入文字。 註解圖形只存在於圖表介面，而不在程式碼中。  
@@ -33,11 +33,11 @@ ms.locfileid: "54802418"
   
 ### <a name="to-add-a-comment"></a>新增註解  
   
-1.  將註解從 [類別設計工具工具箱] 拖曳到類別圖表上。  
+1. 將註解從 [類別設計工具工具箱] 拖曳到類別圖表上。  
   
-2.  在圖表上新的註解圖形中按一下，然後鍵入想要的文字。  
+2. 在圖表上新的註解圖形中按一下，然後鍵入想要的文字。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用類別圖表 (類別設計工具)](../ide/working-with-class-diagrams-class-designer.md)   
  [使用類別圖表 (類別設計工具)](../ide/working-with-class-diagrams-class-designer.md)   
  [如何：自訂類別圖表 (類別設計工具)](../ide/how-to-customize-class-diagrams-class-designer.md)

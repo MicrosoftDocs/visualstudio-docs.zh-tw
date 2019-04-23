@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5941dec4b21e044873a2ae95ae7682867b4bd67
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd516151f7a3656da1bae195870e8cc29528cfa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037014"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075242"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>HOW TO：確認 IIS 屬性設定
 
@@ -35,13 +35,13 @@ ms.locfileid: "55037014"
 
 ## <a name="to-check-iis-settings-for-the-web-application"></a>若要檢查 Web 應用程式的 IIS 設定
 
-1. 開啟 [系統管理工具] 視窗。在上**開始**功能表上，指向**程式**，然後按一下**系統管理工具**。 如果 [程式集] 功能表中並未顯示 [系統管理工具]，請從 [控制台] 中尋找這個功能。
+1. 開啟**系統管理工具**視窗：在上**開始**功能表上，指向**程式**，然後按一下**系統管理工具**。 如果 [程式集] 功能表中並未顯示 [系統管理工具]，請從 [控制台] 中尋找這個功能。
 
-   -   在 Windows 2000 中，請選取 [網際網路服務管理員]。
+   - 在 Windows 2000 中，請選取 [網際網路服務管理員]。
 
-   -   在 Windows XP 中，請選取 [網際網路資訊服務]。
+   - 在 Windows XP 中，請選取 [網際網路資訊服務]。
 
-   -   在 Windows Server 2003 中，請按兩下 [管理您的伺服器]。
+   - 在 Windows Server 2003 中，請按兩下 [管理您的伺服器]。
 
         [管理您的伺服器] 視窗隨即開啟。 在 [應用程式伺服器] 中，按一下 [管理此應用程式伺服器]。
 
@@ -53,23 +53,23 @@ ms.locfileid: "55037014"
 
 4. 驗證 Web 應用程式的安全性設定：
 
-   1.  在 Web 應用程式的 [屬性] 視窗中，按一下 [目錄安全性] 索引標籤，然後按一下 [編輯]。
+   1. 在 Web 應用程式的 [屬性] 視窗中，按一下 [目錄安全性] 索引標籤，然後按一下 [編輯]。
 
-   2.  在 [驗證方法] 對話方塊中，選取 [啟用匿名存取] 和 [整合式 Windows 驗證] (如果尚未選取)。
+   2. 在 [驗證方法] 對話方塊中，選取 [啟用匿名存取] 和 [整合式 Windows 驗證] (如果尚未選取)。
 
-   3.  按一下 [確定] 關閉 [驗證方法] 對話方塊。
+   3. 按一下 [確定] 關閉 [驗證方法] 對話方塊。
 
-5. 對於 ATL Server 應用程式，請驗證偵錯動詞命令 (DEBUG Verb) 是否與您的 ISAPI 副檔名有關聯。 如需詳細資訊，請參閱[＜How to：延伸模組相關聯 DEBUG 動詞命令](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)。
+5. 對於 ATL Server 應用程式，請驗證偵錯動詞命令 (DEBUG Verb) 是否與您的 ISAPI 副檔名有關聯。 如需詳細資訊，請參閱[如何：延伸模組相關聯 DEBUG 動詞命令](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)。
 
 6. 針對 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式，請確定應用程式的虛擬資料夾在 [網際網路資訊服務 (IIS) 管理員]、[網際網路服務管理員] 或 [網際網路資訊服務] 中已設定 [應用程式名稱]。
 
-   1.  在 Web 應用程式的 [屬性] 視窗中，選取 [目錄] 索引標籤 (如果應用程式在虛擬目錄中) 或是 [主目錄] 索引標籤 (如果應用程式在網站中)。
+   1. 在 Web 應用程式的 [屬性] 視窗中，選取 [目錄] 索引標籤 (如果應用程式在虛擬目錄中) 或是 [主目錄] 索引標籤 (如果應用程式在網站中)。
 
-   2.  驗證 [本機路徑] 中的名稱，是否符合實際部署應用程式的目錄名稱。
+   2. 驗證 [本機路徑] 中的名稱，是否符合實際部署應用程式的目錄名稱。
 
-   3.  在 [應用程式設定] 下方，鍵入包含應用程式的根目錄名稱。
+   3. 在 [應用程式設定] 下方，鍵入包含應用程式的根目錄名稱。
 
-   4.  按一下 [確定]，關閉 [屬性] 對話方塊。
+   4. 按一下 [確定]，關閉 [屬性] 對話方塊。
 
 7. 針對 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式，按一下 [ASP.NET] 索引標籤，並且驗證是否已指定正確的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 版本。
 

@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd52c635d5ade1bef73176601d6957ba5859723b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a817720c1ad73b666e0c9a586bb583120a2533c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944381"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092015"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 範例
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,23 +28,23 @@ Dia2dump 範例隨附於 Visual Studio，並包含 Dia2dump.cpp 原始程式檔�
   
 ### <a name="to-install-the-sample"></a>若要安裝範例  
   
-1.  請確認您的系統符合 Visual Studio 安裝程式起始頁中所述的所有設定需求。  
+1. 請確認您的系統符合 Visual Studio 安裝程式起始頁中所述的所有設定需求。  
   
-2.  安裝 Visual Studio，並遵循內含範例的所有設定和安裝指示。  
+2. 安裝 Visual Studio，並遵循內含範例的所有設定和安裝指示。  
   
 #### <a name="to-build-the-sample"></a>若要建置範例  
   
-1.  在 Visual Studio 中開啟 Dia2dump.sln 檔案。 (如有必要，Visual Studio 會先協助您升級 Dia2dump 專案。）  
+1. 在 Visual Studio 中開啟 Dia2dump.sln 檔案。 (如有必要，Visual Studio 會先協助您升級 Dia2dump 專案。）  
   
-2.  在 [專案屬性頁中**C/c + +** &#124; **一般** &#124; **其他 Include 目錄**] 屬性，指定`..\DIA SDK\include`目錄。 這可確保編譯器可以找到 dia2.h 檔案。  
+2. 在 專案屬性頁中**C /C++**  &#124; **一般** &#124; **其他 Include 目錄**屬性，指定`..\DIA SDK\include`目錄。 這可確保編譯器可以找到 dia2.h 檔案。  
   
-3.  在 [建置] 功能表上，按一下 [重建方案]。  
+3. 在 [建置] 功能表上，按一下 [重建方案]。  
   
-4.  關閉 Visual Studio。  
+4. 關閉 Visual Studio。  
   
 #### <a name="to-run-the-sample"></a>若要執行範例  
   
-1.  開啟命令提示字元並輸入下列命令：  
+1. 開啟命令提示字元並輸入下列命令：  
   
     ```  
     dia2dump filename  

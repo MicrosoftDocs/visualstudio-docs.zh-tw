@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dac34d2e568d5f487e06da89151fb91ebcc69f1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629686"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104059"
 ---
 # <a name="expose-types-to-visual-designers"></a>公開至視覺化設計工具的型別
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須能夠存取類別和類型定義在設計階段才能顯示視覺化設計工具。 類別會從一組預先定義的包含目前的專案 （參考，加上其相依性） 的完整相依性集合的組件載入。 它也可能需要的視覺化設計工具存取類別和自訂工具所產生的檔案中定義的類型。
@@ -31,15 +31,15 @@ ms.locfileid: "56629686"
 
  利用暫時的 PE 支援的自訂工具必須遵循下列規則：
 
--   **GeneratesDesignTimeSource**必須在登錄中設定為 1。
+- **GeneratesDesignTimeSource**必須在登錄中設定為 1。
 
      不程式可執行檔會進行編譯而不需要這項設定。
 
--   產生的程式碼必須位於相同的通用專案設定的語言。
+- 產生的程式碼必須位於相同的通用專案設定的語言。
 
      不論什麼自訂工具會回報為要求的擴充功能，在編譯 temporary PE<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>前提**GeneratesDesignTimeSource**在登錄中設定為 1。 延伸模組不一定要 *.vb*， *.cs*，或 *.jsl*; 它可以是任何擴充功能。
 
--   自訂工具產生的程式碼必須有效，且它必須編譯時間在它自己使用只存在於專案中參考的組<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>完成執行。
+- 自訂工具產生的程式碼必須有效，且它必須編譯時間在它自己使用只存在於專案中參考的組<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>完成執行。
 
      Temporary PE 編譯時，只提供給編譯器的原始程式檔就會是自訂工具輸出。 因此，使用暫存的 PE 的自訂工具必須產生可以獨立於其他檔案專案中編譯的輸出檔。
 

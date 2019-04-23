@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8c081a2836c4dbb85f7d9af789deeda667a2a27
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 582006c7b9629911f9d403fdab6af0637eb9337c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616868"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661889"
 ---
 # <a name="legacy-language-service-essentials"></a>舊版語言服務的基本資訊
 您必須提供語言服務以整合到 Visual Studio 的程式設計語言。 本主題說明在舊版語言服務中可用的功能。
@@ -41,7 +41,6 @@ ms.locfileid: "56616868"
  這些功能需要剖析原始程式碼的語言服務。 您通常可以重複使用的 token 化和剖析您的編譯器或解譯器的程式碼。
 
  下列功能與程式設計語言支援，但不是語言服務的一部分：
-
 
 | 功能 | 描述 |
 |-----------------------| - |

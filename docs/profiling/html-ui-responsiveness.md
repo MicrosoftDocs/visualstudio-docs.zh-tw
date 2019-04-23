@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: f7ab539c1e5a5e90006629850f4c0e728e2e89f4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f95daba8d1a7a8965be223ff2a9787101530edc1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868152"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790923"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析通用 Windows App 中 HTML UI 的回應性
 本主題描述如何使用 UI 回應性分析工具隔離應用程式中的效能問題；該效能工具可供通用 Windows App 使用。
@@ -178,7 +179,7 @@ if (performance.mark && performance.measure) {
 
  ![診斷工作階段時尺規](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")
 
- 時間軸顯示應用程式週期事件 (如啟用事件) 發生的時間，而且顯示可加入至程式碼的使用者標記 (使用者標記三角形)。 您可以選取事件，以顯示含有詳細資訊的工具提示。 如需使用者標記的詳細資訊，請參閱本主題中的 [標記程式碼以供分析](#ProfileMark) 。
+ 時間軸會顯示應用程式週期事件 (如啟用事件) 發生的時間，以及可新增至程式碼的使用者標記 (使用者標記三角形)。 您可以選取事件，以顯示含有詳細資訊的工具提示。 如需使用者標記的詳細資訊，請參閱本主題中的 [標記程式碼以供分析](#ProfileMark) 。
 
  應用程式週期事件會顯示為菱形符號。 這些是 DOM 事件，包括下列：
 

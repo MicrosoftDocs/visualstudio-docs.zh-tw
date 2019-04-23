@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ca4c3e5016377758e8910c15bf992e629778c0e9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000572"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116163"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Visual Studio 中的 Just-In-Time 偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "59000572"
 
 - 您必須擁有[安裝 Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/)來檢視有關錯誤的詳細的資訊，並嘗試進行偵錯。 請參閱[使用 JIT](#BKMK_Using_JIT)如需詳細指示。 如果您不能解決此錯誤並修正應用程式，請連絡應用程式的擁有者，來解決這個錯誤。
 
-##  <a name="BKMK_Enabling"></a> 啟用或停用 Just In Time 偵錯
+## <a name="BKMK_Enabling"></a> 啟用或停用 Just In Time 偵錯
  您可以啟用或停用 Just 時間從 Visual Studio 偵錯**工具 / 選項** 對話方塊。
 
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>若要啟用或停用 Just-In-Time 偵錯
@@ -67,42 +67,42 @@ ms.locfileid: "59000572"
 
     若要在啟用 Just-In-Time 偵錯之後加以停用，您必須以系統管理員權限執行。 啟用 Just-In-Time 偵錯會設定一個登錄機碼，您必須使用系統管理員權限才能變更該機碼。
 
-5. 按一下 [確定 **Deploying Office Solutions**]。
+5. 按一下 [確定] 。
 
    即使電腦上已沒有安裝 Visual Studio，Just-In-Time 偵錯可能仍然為啟用狀態。 未安裝 Visual Studio 時，您無法停用 Just 時間從 Visual Studio 偵錯**選項** 對話方塊。 在此情況下，您可以編輯 Windows 登錄來停用 Just-In-Time 偵錯。
 
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>若要編輯登錄來停用 Just-In-Time 偵錯
 
-1.  在 [**啟動**] 功能表中，搜尋並執行 `regedit.exe`
+1. 在 [**啟動**] 功能表中，搜尋並執行 `regedit.exe`
 
-2.  在 [**登錄編輯程式**] 視窗中，找出並刪除下列登錄項目：
+2. 在 [**登錄編輯程式**] 視窗中，找出並刪除下列登錄項目：
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger
 
-3.  如果您的電腦執行 64 位元作業系統，也刪除下列登錄項目：
+3. 如果您的電腦執行 64 位元作業系統，也刪除下列登錄項目：
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger
 
-4.  請小心不要刪除或變更其他任何登錄機碼。
+4. 請小心不要刪除或變更其他任何登錄機碼。
 
-5.  關閉**登錄編輯程式**視窗。
+5. 關閉**登錄編輯程式**視窗。
 
 > [!NOTE]
 >  如果您嘗試停用 Just 時間的伺服器端應用程式的偵錯，而且這些步驟未能解決此問題，請關閉伺服器端偵錯 IIS 應用程式設定中，然後重試。
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>若要啟用 Windows Form 的 Just-In-Time 偵錯
 
-1.  根據預設，Windows Forms 應用程式具有最上層的例外狀況處理常式，允許程式在能夠復原時繼續執行。 比方說，如果您的 Windows Forms 應用程式擲回未處理的例外狀況，您會看到一個對話方塊，如下所示：
+1. 根據預設，Windows Forms 應用程式具有最上層的例外狀況處理常式，允許程式在能夠復原時繼續執行。 比方說，如果您的 Windows Forms 應用程式擲回未處理的例外狀況，您會看到一個對話方塊，如下所示：
 
      ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")
 
      若要啟用 Just In Time 偵錯 Windows Form 應用程式，您必須執行下列額外步驟：
 
-2.  設定`jitDebugging`值加入`true`中`system.windows.form`machine.config 區段或*\<應用程式名稱 >*.exe.config 檔案：
+2. 設定`jitDebugging`值加入`true`中`system.windows.form`machine.config 區段或*\<應用程式名稱 >*.exe.config 檔案：
 
     ```
     <configuration>
@@ -110,7 +110,7 @@ ms.locfileid: "59000572"
     </configuration>
     ```
 
-3.  在 C++ Windows Form 應用程式中，您也必須在 .config 檔或您的程式碼中設定 `DebuggableAttribute`。 如果您使用 [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 而且未使用 [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435) 進行編譯，則編譯器將會設定這個屬性 (Attribute)。 然而，如果您要對非最佳化的發行組建進行偵錯，則必須自行完成此設定。 若要這樣做，您可以將下面這行程式碼加入至應用程式的 AssemblyInfo.cpp 檔案。
+3. 在 C++ Windows Form 應用程式中，您也必須在 .config 檔或您的程式碼中設定 `DebuggableAttribute`。 如果您使用 [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 而且未使用 [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435) 進行編譯，則編譯器將會設定這個屬性 (Attribute)。 然而，如果您要對非最佳化的發行組建進行偵錯，則必須自行完成此設定。 若要這樣做，您可以將下面這行程式碼加入至應用程式的 AssemblyInfo.cpp 檔案。
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -178,19 +178,19 @@ static void Main(string[] args)
 
  您可能會看見下列與 Just-in-Time 偵錯相關的錯誤訊息。
 
--   **無法附加至沒有回應的處理序。所指定的程式不是 Windows 或 MS-DOS 程式。**
+- **無法附加至沒有回應的處理序。所指定的程式不是 Windows 或 MS-DOS 程式。**
 
      當您嘗試附加至另一個使用者身分執行處理序時，就會發生此錯誤。
 
      若要解決這個問題，請啟動 Visual Studio 中，開啟**附加至處理序**對話方塊中，從**偵錯**功能表，然後尋找程序，您想要在偵錯**可用的處理序**清單。 如果您不知道處理序的名稱，看看**Visual Studio Just-In-Time 偵錯工具**對話方塊，然後記處理序識別碼。 選取中的程序**可用的處理序**清單，然後按一下**附加**。 在 [ **Visual Studio Just-In-Time 偵錯工具**] 對話方塊中，按一下**否**關閉對話方塊。
 
--   **由於沒有使用者登入，無法啟動偵錯工具。**
+- **由於沒有使用者登入，無法啟動偵錯工具。**
 
      當 Just-In-Time 偵錯嘗試在沒有使用者登入主控台的電腦上啟動 Visual Studio 時，就會發生此錯誤。 因為沒有使用者登入，所以沒有使用者工作階段可顯示 [Just-In-Time 偵錯] 對話方塊。
 
      若要修正這個問題，請登入該電腦。
 
--   **類別未登錄。**
+- **類別未登錄。**
 
      這個錯誤表示偵錯工具嘗試建立的 COM 類別尚未登錄，可能是因為安裝問題所致。
 

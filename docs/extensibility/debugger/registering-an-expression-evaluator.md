@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2b30a3b1ee02a6ac64c66aa7d80a35dc45a683a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd3d58b61683c2b25da3e988d307effc28d61dc9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073360"
 ---
 # <a name="register-an-expression-evaluator"></a>註冊運算式評估工具
 > [!IMPORTANT]
@@ -106,9 +106,9 @@ namespace EEMC
 ### <a name="dll-server-process"></a>DLL 伺服器處理序
  當註冊 EE，DLL 伺服器：
 
-1.  其 class factory 註冊`CLSID`根據一般的 COM 慣例。
+1. 其 class factory 註冊`CLSID`根據一般的 COM 慣例。
 
-2.  呼叫 helper 函式`SetEEMetric`向 Visual Studio 下表所示的 EE 度量。 此函式`SetEEMetric`和指定，如下所示的計量是的一部分*dbgmetric.lib*程式庫。 請參閱[進行偵錯的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)如需詳細資訊。
+2. 呼叫 helper 函式`SetEEMetric`向 Visual Studio 下表所示的 EE 度量。 此函式`SetEEMetric`和指定，如下所示的計量是的一部分*dbgmetric.lib*程式庫。 請參閱[進行偵錯的 SDK 協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)如需詳細資訊。
 
     |度量|描述|
     |------------|-----------------|
@@ -120,10 +120,10 @@ namespace EEMC
     > [!NOTE]
     >  `metricLanguage``GUID`識別的語言名稱，但它是`guidLang`引數`SetEEMetric`選取語言。 當編譯器產生偵錯資訊檔案時，它應該寫入適當`guidLang`，讓裝置知道要使用哪一個 EE。 DE 通常會符號提供者要求此語言`GUID`，儲存在偵錯資訊檔案。
 
-3.  藉由建立 hkey_local_machine\software\microsoft\visualstudio \ 底下的機碼會向 Visual Studio\\*X.Y*，其中*X.Y*是向 Visual Studio 的版本。
+3. 藉由建立 hkey_local_machine\software\microsoft\visualstudio \ 底下的機碼會向 Visual Studio\\*X.Y*，其中*X.Y*是向 Visual Studio 的版本。
 
 ### <a name="example"></a>範例
- 下列函式會顯示未受管理的程式碼 （c + +） EE 如何註冊，並使用 Visual Studio 自動取消登錄。
+ 下列函式會顯示如何 unmanaged 程式碼 (C++) EE 註冊，並使用 Visual Studio 自動取消登錄。
 
 ```cpp
 /*---------------------------------------------------------

@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0815ccf781782a0d638fcf941a6e48edcf8ccd1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 53003e2a88faf2ef29d3a1eb3df1da081f20ce57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077754"
 ---
 # <a name="program-document-level-customizations"></a>程式文件層級自訂
   當您使用文件層級自訂擴充 Microsoft Office Word 或 Microsoft Office Excel 時，可以執行下列工作：
@@ -62,13 +62,13 @@ ms.locfileid: "56624681"
 
 - Excel 的文件層級專案具有多個產生的類別：一個用於活頁簿本身，一個用於每個工作表。 根據預設，這些類別具有下列名稱：
 
-  -   `ThisWorkbook`
+  - `ThisWorkbook`
 
-  -   `Sheet1`
+  - `Sheet1`
 
-  -   `Sheet2`
+  - `Sheet2`
 
-  -   `Sheet3`
+  - `Sheet3`
 
   產生的類別包含會在開啟或關閉文件時呼叫的事件處理常式。 若要在開啟文件時執行程式碼，請將程式碼加入 `Startup` 事件處理常式。 若要在文件關閉之際執行程式碼，請將程式碼加入 `Shutdown` 事件處理常式。 如需詳細資訊，請參閱 < [Office 專案中的事件](../vsto/events-in-office-projects.md)。
 

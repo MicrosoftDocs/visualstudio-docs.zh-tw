@@ -1,5 +1,5 @@
 ---
-title: 錯誤： 網站背景工作處理序已被 IIS 終止 |Microsoft Docs
+title: 錯誤：網站背景工作處理序已被 IIS 終止 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d951486d41e3449410f6f815b3b355a281e0898
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2d89eabec0c199b1b8df7eeb78d0e629d4a70b2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698868"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072652"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>錯誤：網站背景工作處理序已被 IIS 終止
 偵錯工具停止執行網站上的程式碼。 如此一來，可能會使網際網路資訊服務 (IIS) 認為背景工作處理序已停止回應。 因此，IIS 會結束背景工作處理序。
@@ -30,9 +30,9 @@ ms.locfileid: "56698868"
 
 1. 開啟 [系統管理工具] 視窗。
 
-   1.  按一下 [開始]，然後選擇 [控制台]。
+   1. 按一下 [開始]，然後選擇 [控制台]。
 
-   2.  在 [控制台] 中依需要選擇 [切換到傳統檢視]，然後按兩下 [系統管理工具]。
+   2. 在 [控制台] 中依需要選擇 [切換到傳統檢視]，然後按兩下 [系統管理工具]。
 
 2. 在 [系統管理工具] 視窗中，按兩下 [Internet Information Services (IIS) 管理員]。
 
@@ -56,5 +56,5 @@ ms.locfileid: "56698868"
 
 8. 關閉 [IIS 管理員] 和 [系統管理工具] 視窗。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)

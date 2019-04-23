@@ -21,18 +21,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaaa9b5f30844e9d23b35ec9304a70edcd2b6139
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089311"
 ---
 # <a name="hierarchical-update"></a>階層式更新
 
 *階層式更新*是指儲存回資料庫的更新的資料 （從含有兩個或多個相關資料表的資料集），同時維護參考完整性規則的程序。 *參考完整性*指的是控制行為的插入、 更新和刪除相關的記錄在資料庫中的條件約束所提供的一致性規則。 比方說，就會強制執行允許該客戶的訂單建立之前建立的客戶記錄的參考完整性。  如需有關在資料集中的關聯性的詳細資訊，請參閱[中的資料集的關聯性](../data-tools/relationships-in-datasets.md)。
 
-階層式更新功能會使用`TableAdapterManager`來管理`TableAdapter`中具類型資料集。 `TableAdapterManager`元件是 Visual Studio 所產生的類別，因此不屬於[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 當您將從資料表**Zdroje dat**至 Windows Form 或 WPF 頁面時，Visual Studio] 視窗將型別的 TableAdapterManager 變數加入至表單或頁面上，以及您在 [元件匣中的設計工具中看到它。 如需詳細資訊`TableAdapterManager`類別，請參閱 > 一節參考 TableAdapterManager [TableAdapters](../data-tools/create-and-configure-tableadapters.md)。
+階層式更新功能會使用`TableAdapterManager`來管理`TableAdapter`中具類型資料集。 `TableAdapterManager`元件是 Visual Studio 所產生的類別，因此不屬於[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 當您將從資料表**Zdroje dat**至 Windows Form 或 WPF 頁面時，Visual Studio] 視窗將型別的 TableAdapterManager 變數加入至表單或頁面上，以及您在 [元件匣中的設計工具中看到它。 如需詳細資訊`TableAdapterManager`類別，請參閱 TableAdapterManager 參考 > 一節[TableAdapters](../data-tools/create-and-configure-tableadapters.md)。
 
 根據預設，資料集視為相關的資料表 」，關聯性 」 表示它不會強制執行 foreign key 條件約束。 您可以使用，以修改該設定，在設計階段**Dataset 設計工具**。 選取以顯示兩個資料表之間的關聯線**關聯** 對話方塊。 這裡所做的變更將會決定如何`TableAdapterManager`行為時它所做的變更相關的資料表中傳送回資料庫。
 
@@ -87,9 +87,9 @@ ms.locfileid: "55933246"
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>更新程式碼以在儲存前認可關聯資料表的變更
 
-1.  按兩下 <xref:System.Windows.Forms.BindingNavigator> 上的 [儲存] 按鈕，以在程式碼編輯器中開啟 **Form1**。
+1. 按兩下 <xref:System.Windows.Forms.BindingNavigator> 上的 [儲存] 按鈕，以在程式碼編輯器中開啟 **Form1**。
 
-2.  在呼叫 `OrdersBindingSource.EndEdit` 方法的程式碼行後方，加入一行程式碼以呼叫 `CustomersBindingSource.EndEdit` 方法。 [儲存] 按鈕 Click 事件中的程式碼應與下列類似：
+2. 在呼叫 `OrdersBindingSource.EndEdit` 方法的程式碼行後方，加入一行程式碼以呼叫 `CustomersBindingSource.EndEdit` 方法。 [儲存] 按鈕 Click 事件中的程式碼應與下列類似：
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
@@ -101,11 +101,11 @@ ms.locfileid: "55933246"
 
 ### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>加入程式碼以在新增子記錄前先認可資料集中的父記錄
 
-1.  建立 `OrdersBindingSource.AddingNew` 事件的事件處理常式。
+1. 建立 `OrdersBindingSource.AddingNew` 事件的事件處理常式。
 
-    -   開啟**Form1**在 設計 檢視中，選取**OrdersBindingSource**在元件匣中，選取**事件**中**屬性** 視窗中，並然後按兩下**AddingNew**事件。
+    - 開啟**Form1**在 設計 檢視中，選取**OrdersBindingSource**在元件匣中，選取**事件**中**屬性** 視窗中，並然後按兩下**AddingNew**事件。
 
-2.  呼叫事件處理常式中加入一行程式碼`CustomersBindingSource.EndEdit`方法。 `OrdersBindingSource_AddingNew` 事件處理常式中的程式碼應該與下列類似：
+2. 呼叫事件處理常式中加入一行程式碼`CustomersBindingSource.EndEdit`方法。 `OrdersBindingSource_AddingNew` 事件處理常式中的程式碼應該與下列類似：
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]

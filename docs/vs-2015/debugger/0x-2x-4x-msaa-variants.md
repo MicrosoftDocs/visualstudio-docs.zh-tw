@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b298beadf6ffd3a59e5cdd44981a63bed1746cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943887"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090015"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ ms.locfileid: "58943887"
   
 - `D3D11_TEXTURE2D_DESC` 中所傳遞的 `pDesc` 物件描述呈現目標；亦即：  
   
-  -   BindFlags 成員已設定 D3D11_BIND_TARGET 旗標或 D3D11_BIND_DEPTH_STENCIL 旗標。  
+  - BindFlags 成員已設定 D3D11_BIND_TARGET 旗標或 D3D11_BIND_DEPTH_STENCIL 旗標。  
   
-  -   Usage 成員設定為 D3D11_USAGE_DEFAULT。  
+  - Usage 成員設定為 D3D11_USAGE_DEFAULT。  
   
-  -   CPUAccessFlags 成員設定為 0。  
+  - CPUAccessFlags 成員設定為 0。  
   
-  -   MipLevels 成員設定為 1。  
+  - MipLevels 成員設定為 1。  
   
 - 裝置針對要求的呈現目標格式 (D3D11_TEXTURE2D_DESC::Format 成員)，支援要求的樣本計數 (0、2 或 4) 和樣本品質 (0) (由 `ID3D11Device::CheckMultisampleQualityLevels` 決定)。  
   

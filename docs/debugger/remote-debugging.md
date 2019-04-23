@@ -21,15 +21,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2142b73dc44b16e8e7ac149b7377959ae3c5cfcc
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 8161623b35dd626e59cdb0ed387ece6a104429a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526434"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047578"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
-您可以針對已部署在不同電腦上的 Visual Studio 應用程式進行偵錯。 若要這樣做，您可以使用 Visual Studio 遠端偵錯工具。
+您可以偵錯已部署在不同電腦的 Visual Studio 應用程式。 若要這樣做，您可以使用 Visual Studio 遠端偵錯工具。
 
 如需有關遠端偵錯的深入指示，請參閱下列主題。
 
@@ -88,28 +88,28 @@ ms.locfileid: "57526434"
 ### <a name="configure_msvsmon"></a> 設定遠端偵錯工具
 在您第一次啟動遠端偵錯工具後，可以變更其組態的某些部分。
 
--   如果您要新增為連線到遠端偵錯工具，請選擇其他使用者的權限**工具 > 權限**。 您必須具有系統管理員權限才能授與或拒絕使用權限。
+- 如果您要新增為連線到遠端偵錯工具，請選擇其他使用者的權限**工具 > 權限**。 您必須具有系統管理員權限才能授與或拒絕使用權限。
 
      > [!IMPORTANT]
      > 您可以從您的 Visual Studio 電腦，使用的使用者帳戶來執行遠端偵錯工具在不同的使用者帳戶下，但您必須將不同的使用者帳戶加入遠端偵錯工具的權限。
 
      或者，您可以從命令列啟動遠端偵錯工具 **/allow\<使用者名稱 >** 參數： **msvsmon /allow \< username@computer>**。
 
--   如果您需要變更驗證模式或連接埠號碼，或指定遠端工具的逾時值： 選擇**工具 > 選項**。
+- 如果您需要變更驗證模式或連接埠號碼，或指定遠端工具的逾時值： 選擇**工具 > 選項**。
 
      如需預設使用的連接埠號碼的清單，請參閱 < [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。
 
      > [!WARNING]
      >  您可以選擇在 [非驗證] 模式下執行遠端工具，但非常不建議您使用這個模式。 在此模式中執行時不具有網路安全性。 只有在確定網路沒有面臨惡意或攻擊流量的風險時，才能選擇非驗證模式。
 
-##  <a name="bkmk_configureService"></a> （選擇性）設定遠端偵錯工具 as a service
+## <a name="bkmk_configureService"></a> （選擇性）設定遠端偵錯工具 as a service
 進行偵錯 ASP.NET 和其他伺服器環境中，您必須以系統管理員身分執行遠端偵錯工具或者，如果您想要一律執行中，以服務方式執行遠端偵錯工具。
 
  如果您想要設定遠端偵錯工具 as a service，請遵循下列步驟。
 
 1. 尋找 [遠端偵錯工具組態精靈]  (rdbgwiz.exe)。 (這是和「遠端偵錯工具」不同的應用程式)。僅當您安裝遠端工具時，才可使用。 它不會隨 Visual Studio 一同安裝。
 
-2. 開始執行 [組態精靈]。 當第一頁出現時，按一下 [下一步]。
+2. 開始執行 [組態精靈]。 當第一頁出現時，按一下 [下一步] 。
 
 3. 核取 [以服務方式執行 Visual Studio 2015 遠端偵錯工具]  核取方塊。
 

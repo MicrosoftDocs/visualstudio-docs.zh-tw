@@ -12,12 +12,12 @@ ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1b45a903e9982ec4bbc6c567601e43d6156397d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4fe446234317aedbf2090c5ee43d69fd08b1f020
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117456"
 ---
 # <a name="error-handling-and-return-values"></a>錯誤處理和傳回值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,24 +36,24 @@ Vspackage 和 COM 錯誤使用相同的架構。 `SetErrorInfo`和`GetErrorInfo`
 ## <a name="general-guidelines"></a>一般方針  
  您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>方法來設定和報告您 VSPackage 實作內部的錯誤。 不過，一般而言，遵循這些指導方針來處理在 VSPackage 中的錯誤訊息：  
   
--   實作`ISupportErrorInfo`VSPackage COM 物件中。  
+- 實作`ISupportErrorInfo`VSPackage COM 物件中。  
   
--   建立錯誤報告機制，會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法中實作的物件<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。  
+- 建立錯誤報告機制，會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法中實作的物件<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。  
   
--   讓 IDE 透過向使用者顯示錯誤<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>方法。  
+- 讓 IDE 透過向使用者顯示錯誤<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>方法。  
   
 ## <a name="error-information-in-the-ide"></a>在 IDE 中的錯誤資訊  
  下列規則指出如何處理中的錯誤資訊[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]IDE:  
   
--   防禦性策略，以確保過時錯誤資訊給使用者，不會報告的函式呼叫一樣<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>方法應該先呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法。 傳入`null`清除快取的錯誤訊息，才能呼叫任何項目，可能會設定新的錯誤資訊。  
+- 防禦性策略，以確保過時錯誤資訊給使用者，不會報告的函式呼叫一樣<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>方法應該先呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法。 傳入`null`清除快取的錯誤訊息，才能呼叫任何項目，可能會設定新的錯誤資訊。  
   
--   無法直接報告錯誤訊息的函式只可呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法，如果它們將傳回錯誤`HRESULT`。 允許清除`ErrorInfo`函式，或傳回的項目<xref:Microsoft.VisualStudio.VSConstants.S_OK>。 此規則唯一的例外狀況時，才能呼叫若傳回錯誤`HRESULT`接收的合作對象可以明確地復原，或從放心地忽略。  
+- 無法直接報告錯誤訊息的函式只可呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法，如果它們將傳回錯誤`HRESULT`。 允許清除`ErrorInfo`函式，或傳回的項目<xref:Microsoft.VisualStudio.VSConstants.S_OK>。 此規則唯一的例外狀況時，才能呼叫若傳回錯誤`HRESULT`接收的合作對象可以明確地復原，或從放心地忽略。  
   
--   明確地忽略錯誤的任何一方`HRESULT`必須呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法<xref:Microsoft.VisualStudio.VSConstants.S_OK>。 否則，請`ErrorInfo`物件可能會不小心使用另一方會產生錯誤，而不需提供其本身時`ErrorInfo`。  
+- 明確地忽略錯誤的任何一方`HRESULT`必須呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法<xref:Microsoft.VisualStudio.VSConstants.S_OK>。 否則，請`ErrorInfo`物件可能會不小心使用另一方會產生錯誤，而不需提供其本身時`ErrorInfo`。  
   
--   產生錯誤的所有方法`HRESULT`建議呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法，以提供豐富的錯誤資訊。 如果傳回`HRESULT`是一種特殊`FACILITY_ITF`error，則此方法，才能提供適當`ErrorInfo`物件。 如果傳回的錯誤是標準的系統錯誤 (例如<xref:Microsoft.VisualStudio.VSConstants.E_OUTOFMEMORY>， <xref:Microsoft.VisualStudio.VSConstants.E_ABORT>， <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>， <xref:Microsoft.VisualStudio.VSConstants.E_UNEXPECTED>，等等。) 是可接受傳回的錯誤碼，而不需要明確呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法。 防禦性程式碼撰寫策略，當原始錯誤`HRESULT`（包括系統錯誤），請務必呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法，不論是透過`ErrorInfo`描述更詳細地、 失敗或`null`。  
+- 產生錯誤的所有方法`HRESULT`建議呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法，以提供豐富的錯誤資訊。 如果傳回`HRESULT`是一種特殊`FACILITY_ITF`error，則此方法，才能提供適當`ErrorInfo`物件。 如果傳回的錯誤是標準的系統錯誤 (例如<xref:Microsoft.VisualStudio.VSConstants.E_OUTOFMEMORY>， <xref:Microsoft.VisualStudio.VSConstants.E_ABORT>， <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>， <xref:Microsoft.VisualStudio.VSConstants.E_UNEXPECTED>，等等。) 是可接受傳回的錯誤碼，而不需要明確呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法。 防禦性程式碼撰寫策略，當原始錯誤`HRESULT`（包括系統錯誤），請務必呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法，不論是透過`ErrorInfo`描述更詳細地、 失敗或`null`。  
   
--   呼叫中的所有函式會傳回錯誤源自另一個呼叫必須來自失敗的資訊傳遞`HRESULT`而不需修改`ErrorInfo`物件。  
+- 呼叫中的所有函式會傳回錯誤源自另一個呼叫必須來自失敗的資訊傳遞`HRESULT`而不需修改`ErrorInfo`物件。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

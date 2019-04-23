@@ -11,17 +11,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 08d91cbeb4424e2285a49e45d10c5ef2a0484afe
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83c2de11e31dced3be48e390d8bd5b21d57d2092
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796668"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668489"
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 可讓您使用 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素來靜態宣告專案檔中的項目。 不過，您只能在項目層級新增中繼資料，即使所有項目的中繼資料都相同也是如此。 從 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 開始，名為 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) 的專案元素可克服這項限制。 *ItemDefinitionGroup* 可讓您定義一組項目定義，這些項目定義會將預設的中繼資料值，新增到具名項目類型中的所有項目。  
   
  *ItemDefinitionGroup* 元素會緊接在專案檔的 [Project](../msbuild/project-element-msbuild.md) 元素之後出現。 項目定義提供下列功能：  
@@ -175,7 +174,7 @@ ms.locfileid: "54796668"
 </ItemDefinitionGroup>  
 ```  
   
- 在此範例中，項目"i"參考項目"test"條件中。  
+ 在此範例中，項目 "i" 參考 Condition 中的項目 "test"。  
   
 ## <a name="overriding-and-deleting-metadata"></a>覆寫及刪除中繼資料  
  ItemDefinitionGroup 元素中所定義的中繼資料可被稍後的 ItemDefinitionGroup 元素覆寫，方法是將中繼資料值設定為空白。 您也可以藉由將中繼資料項目設定為空值，來有效地刪除中繼資料項目。 例如：  
@@ -240,5 +239,5 @@ ms.locfileid: "54796668"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [批次處理](../msbuild/msbuild-batching.md)

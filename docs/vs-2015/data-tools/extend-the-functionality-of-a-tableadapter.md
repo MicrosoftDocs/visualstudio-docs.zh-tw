@@ -18,17 +18,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bbba71e6c1e636abe160036f10c1de1d11004a65
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: db6ea3e2b19b655c3a1ec8dedf60409b8706f3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940512"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059028"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>擴充 TableAdapter 的功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您可以擴充 TableAdapter 的功能，將程式碼加入至 TableAdapter 的部分類別檔案。  
   
  定義 TableAdapter 的程式碼在 TableAdapter 中對任何變更時重新產生**Dataset 設計工具**，或當精靈修改 TableAdapter 的組態。 若要避免您的程式碼在 TableAdapter 的重新產生期間遭到刪除，請在 TableAdapter 的部分類別檔案中加入程式碼。  
@@ -42,13 +41,13 @@ ms.locfileid: "58940512"
   
 #### <a name="to-create-a-partial-class-for-a-tableadapter"></a>若要建立 TableAdapter 部分類別  
   
-1.  將新類別加入專案，方法是前往**專案**功能表，然後選取**加入類別**。  
+1. 將新類別加入專案，方法是前往**專案**功能表，然後選取**加入類別**。  
   
-2.  將類別命名為 `CustomersTableAdapterExtended` 。  
+2. 將類別命名為 `CustomersTableAdapterExtended` 。  
   
-3.  選取 [新增]。  
+3. 選取 [新增]。  
   
-4.  程式碼取代為您的專案的部分類別名稱與正確的命名空間，如下所示：  
+4. 程式碼取代為您的專案的部分類別名稱與正確的命名空間，如下所示：  
   
      [!code-csharp[VbRaddataTableAdapters#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/CustomersTableAdapterExtended.cs#2)]
      [!code-vb[VbRaddataTableAdapters#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/CustomersTableAdapterExtended.vb#2)]  

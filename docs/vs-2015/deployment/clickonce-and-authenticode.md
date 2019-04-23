@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6057aa437aa4fc0d14bd21f20e3fa657f5c5c15d
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 0732a5f867b357bddf3ff9f9d83bcfd7dd1f0573
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000402"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089077"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Authenticode * 是一種 Microsoft 技術，使用業界標準密碼編譯簽署
   
  有三種方法可以取得程式碼簽署憑證︰  
   
--   向憑證廠商購買。  
+- 向憑證廠商購買。  
   
--   由貴組織負責建立數位憑證的群組提供。  
+- 由貴組織負責建立數位憑證的群組提供。  
   
--   使用隨附於 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]的 MakeCert.exe，自己產生憑證。  
+- 使用隨附於 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]的 MakeCert.exe，自己產生憑證。  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>如何使用憑證授權單位幫助使用者  
  使用 MakeCert.exe 公用程式產生的憑證通常稱為「自助憑證」  或「測試憑證」 。這種憑證的運作方式與 .NET Framework 之 .snk 檔案的運作方式相同。 它只有公開/私密密碼編譯金鑰組，不包含任何可驗證的發行者資訊。 您可以使用自助憑證部署在內部網路高度信任的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。 不過，當這些應用程式在用戶端電腦上執行時， [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 會視之為來自未知的發行者。 根據預設，使用自我憑證簽署並透過網際網路部署的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式，不能使用受信任的應用程式部署。  
@@ -61,15 +61,15 @@ Authenticode * 是一種 Microsoft 技術，使用業界標準密碼編譯簽署
 ### <a name="updating-expired-certificates"></a>更新過期的憑證  
  在舊版的 .NET Framework 中，更新憑證已過期的應用程式可能會導致應用程式停止運作。 為解決此問題，請使用下列其中一種方法：  
   
--   將 .NET Framework 更新至 2.0 SP1 版或更新版本 (Windows XP)，或 3.5 版或更新版本 (Windows Vista)。  
+- 將 .NET Framework 更新至 2.0 SP1 版或更新版本 (Windows XP)，或 3.5 版或更新版本 (Windows Vista)。  
   
--   解除安裝應用程式，並重新安裝具有有效憑證的新版本。  
+- 解除安裝應用程式，並重新安裝具有有效憑證的新版本。  
   
--   建立可更新憑證的命令列組件。 此程序的逐步資訊，請參閱 [Microsoft 支援文章 925521](http://go.microsoft.com/fwlink/?LinkId=179454)。  
+- 建立可更新憑證的命令列組件。 此程序的逐步資訊，請參閱 [Microsoft 支援文章 925521](http://go.microsoft.com/fwlink/?LinkId=179454)。  
   
 ### <a name="storing-certificates"></a>儲存憑證  
   
--   您可以將憑證儲存為檔案系統的 .pfx 檔，或儲存在金鑰容器內。 Windows 網域的使用者可以有多個金鑰容器。 MakeCert.exe 預設將憑證儲存在您個人的金鑰容器中，除非您另行指定，才會改儲存為 .pfx。 Mage.exe 和 MageUI.exe 是建立 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 部署的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 工具，可讓您使用以任一方式儲存的憑證。  
+- 您可以將憑證儲存為檔案系統的 .pfx 檔，或儲存在金鑰容器內。 Windows 網域的使用者可以有多個金鑰容器。 MakeCert.exe 預設將憑證儲存在您個人的金鑰容器中，除非您另行指定，才會改儲存為 .pfx。 Mage.exe 和 MageUI.exe 是建立 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 部署的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 工具，可讓您使用以任一方式儲存的憑證。  
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   

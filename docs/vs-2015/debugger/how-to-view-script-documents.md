@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cadfa9cf4c07b84f8e0f4c00678a858876c25bd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944890"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104201"
 ---
 # <a name="how-to-view-script-documents"></a>HOW TO：檢視指令碼文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ ms.locfileid: "58944890"
   
 ### <a name="to-view-a-server-side-script-document"></a>若要檢視伺服器端指令碼文件  
   
-1.  在 [方案總管] 中，開啟 [\<網站路徑名稱>] 節點。  
+1. 在 [方案總管] 中，開啟 [\<網站路徑名稱>] 節點。  
   
-2.  按兩下您想要檢視的指令碼檔。  
+2. 按兩下您想要檢視的指令碼檔。  
   
      伺服器端指令碼檔會在來源視窗中開啟。  
   
 ### <a name="to-view-a-client-side-script-document"></a>若要檢視用戶端指令碼文件  
   
-1.  在 [方案總管] 中，開啟 [指令碼文件] 節點。  
+1. 在 [方案總管] 中，開啟 [指令碼文件] 節點。  
   
-2.  按兩下您想要檢視的指令碼檔。  
+2. 按兩下您想要檢視的指令碼檔。  
   
      用戶端指令碼檔會在來源視窗中開啟。  
   

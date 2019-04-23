@@ -15,21 +15,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0198c9e9e6238547bb8a9ea1a49c9f8a2a611cbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 52e0dc775e5e9413fb251261a319e529f36393eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603972"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102181"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>選擇 ClickOnce 部署策略
 有三種不同的策略可用來部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。您所選擇的策略主要是取決於您要部署的應用程式類型。 這三種部署策略說明如下：
 
--   從 Web 或網路共用安裝
+- 從 Web 或網路共用安裝
 
--   從 CD 安裝
+- 從 CD 安裝
 
--   從 Web 或網路共用啟動應用程式
+- 從 Web 或網路共用啟動應用程式
 
     > [!NOTE]
     >  除了選擇部署策略外，您也會想要選擇提供應用程式更新的策略。 如需詳細資訊，請參閱 <<c0> [ 選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
@@ -39,7 +39,7 @@ ms.locfileid: "56603972"
 
  因為這項策略要依據網路連接而定，如果應用程式是要部署至具有區域網路或高速網際網路連接的使用者，則這類應用程式最適合使用這項策略。
 
- 如果您要從 Web 部署應用程式，可以在使用 URL 啟用時傳遞引數給應用程式。 如需詳細資訊，請參閱 <<c0> [ 如何： 擷取在線上 ClickOnce 應用程式中的查詢字串資訊](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。 您不能將引數傳遞給使用本文所述的其他任何方法所啟用的應用程式。
+ 如果您要從 Web 部署應用程式，可以在使用 URL 啟用時傳遞引數給應用程式。 如需詳細資訊，請參閱[如何：在線上 ClickOnce 應用程式中擷取查詢字串資訊](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。 您不能將引數傳遞給使用本文所述的其他任何方法所啟用的應用程式。
 
  若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中啟用這項部署策略，請按一下 [發佈精靈] 之 [如何安裝] 頁面上的 [從 Web] 或 [從 UNC 路徑或檔案共用]。
 
@@ -74,5 +74,5 @@ ms.locfileid: "56603972"
 ## <a name="see-also"></a>另請參閱
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [選擇 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)
-- [如何： 使用發行精靈發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [如何：發行精靈發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)

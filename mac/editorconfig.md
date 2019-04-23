@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 3775e3fc4f391ea075a939a877fdab23f1eec1d2
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294015"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857498"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>建立和編輯自訂的 EditorConfig 檔案
 
 在 Visual Studio for Mac 中，您可以在專案或方案中新增 [EditorConfig](http://editorconfig.org/) 檔案，強制使用程式碼基底的所有人都使用一致的編碼樣式。 在 EditorConfig 檔案中宣告的設定優先於全域 Visual Studio for Mac 文字編輯器設定。 在您的專案或程式碼基底中使用 EditorConfig 檔案可讓您為專案設定編碼樣式、喜好設定和警告。 因為檔案是程式碼基底的一部分，所以更容易讓所有使用者都遵守專案的編碼方式，不論他們使用 IDE 還是程式碼編輯器都一樣。
 
-許多 IDE 和程式碼編輯器 (包括Visual Studio 2017) 都支援 [EditorConfig](http://editorconfig.org/) 檔案。
+許多 IDE 和程式碼編輯器 (包括Visual Studio) 都支援 [EditorConfig](http://editorconfig.org/) 檔案。
 
 ## <a name="supported-settings"></a>支援的設定
 
@@ -53,7 +53,7 @@ EditorConfig 也支援 C# 中的[編碼慣例](/visualstudio/ide/editorconfig-co
 
     ![Solution Pad 中顯示的方案項目](media/editorconfig-image1a.png)
 
-4. 編輯檔案。 例如: 
+4. 編輯檔案。 例如：
 
     ```EditorConfig
     # This file is the top-most EditorConfig file

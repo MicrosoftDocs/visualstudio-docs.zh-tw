@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77de080a9ec5a0e00c2990f436c081623790722e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ab8c437285a55013e2c0367865044ee12ba061ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612708"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071804"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO 增益集的登錄項目
   部署使用 Visual Studio 建立的 VSTO 增益集時，您必須建立一組特定的登錄項目。 這些登錄項目可提供讓 Microsoft Office 應用程式探索及載入 VSTO 增益集的資訊。
@@ -78,7 +78,7 @@ ms.locfileid: "56612708"
 |**LoadBehavior**|REG_DWORD|必要項。 可指定應用程式何時嘗試載入 VSTO 增益集和 VSTO 增益集目前狀態 (載入或卸載) 的值。<br /><br /> 這個項目預設會設定為 3，指定在啟動時載入 VSTO 增益集。 如需詳細資訊，請參閱 < [LoadBehavior 值](#LoadBehavior)。 **注意：** 如果使用者停用 VSTO 增益集，該動作會修改**LoadBehavior**中的值**HKEY_CURRENT_USER**登錄 hive。 每位使用者的值**LoadBehavior** hkey_current_user 登錄區中的值會覆寫預設**LoadBehavior**中所定義**HKEY_LOCAL_MACHINE** hive。|
 |**Manifest**|REG_SZ|必要項。 VSTO 增益集部署資訊清單的完整路徑。 路徑可以是本機電腦上的位置、網路共用 (UNC) 或 Web 伺服器 (HTTP)。<br /><br /> 如果使用 Windows Installer 來部署解決方案，您必須在 **資訊清單** 路徑前加上前置詞 **file:///** 。 您也必須附加字串 **&#124;vstolocal** (也就是縱線字元 **&#124;** 後面**vstolocal**) 至這個路徑的結尾。 如此可以確保解決方案是從安裝資料夾載入，而不是從 ClickOnce 快取載入。 如需詳細資訊，請參閱 <<c0> [ 使用 Windows Installer 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。 **注意：** 當您在開發電腦上建置 VSTO 增益集時，Visual Studio 會自動加上 **&#124;vstolocal**字串寫入此登錄項目。|
 
-###  <a name="OutlookEntries"></a> Outlook 表單區域登錄項目
+### <a name="OutlookEntries"></a> Outlook 表單區域登錄項目
  如果您在 Outlook 的 VSTO 增益集中建立自訂表單區域，則必須使用額外的登錄項目向 Outlook 註冊這個表單區域。 系統會在表單區域所支援之各個訊息類別的不同登錄機碼下建立這些項目。 這些登錄機碼位於下列位置，其中*根*是**HKEY_CURRENT_USER**或是**HKEY_LOCAL_MACHINE**。
 
  *Root*\Software\Microsoft\Office\Outlook\FormRegions\\*message class*
@@ -87,7 +87,7 @@ ms.locfileid: "56612708"
 
  如需表單區域登錄項目詳細資訊，請參閱 <<c0> [ 為自訂的表單中指定的表單區域的位置](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form)。 如需 Outlook 表單區域的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。
 
-##  <a name="LoadBehavior"></a> LoadBehavior 值
+## <a name="LoadBehavior"></a> LoadBehavior 值
  **LoadBehavior**下方的項目*根*\Software\Microsoft\Office\\*應用程式名稱*\Addins\\*增益集識別碼*索引鍵包含的位元組合，這個值指定 VSTO 增益集的執行的階段行為。 最低順序位元 (值 0 和 1) 表示 VSTO 增益集目前處於卸載或載入狀態。 其他位元則表示應用程式嘗試載入 VSTO 增益集的時間。
 
  通常**LoadBehavior**項目要設為 0、 3 或 16 (十進位） 當 VSTO 增益集安裝在使用者電腦。 根據預設，當您建置或發行 VSTO 增益集時，Visual Studio 會將 VSTO 增益集的 **LoadBehavior** 項目設定為 3。

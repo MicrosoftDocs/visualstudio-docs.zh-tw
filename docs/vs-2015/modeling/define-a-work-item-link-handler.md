@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bc151e69206e37f88eac04ac8bbb2f4d9dbf1ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940826"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104677"
 ---
 # <a name="define-a-work-item-link-handler"></a>定義工作項目連結處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,39 +26,39 @@ ms.locfileid: "58940826"
 ## <a name="set-up-a-uml-extension-solution"></a>設定 UML 擴充功能方案  
  這會讓您開發處理常式，然後將它們分散給其他使用者。 您必須設定兩個 Visual Studio 專案：  
   
--   包含連結處理常式程式碼的類別庫專案。  
+- 包含連結處理常式程式碼的類別庫專案。  
   
--   VSIX 專案，做為安裝命令的容器。 如果您想要，可以在相同的 VSIX 中包含其他元件。  
+- VSIX 專案，做為安裝命令的容器。 如果您想要，可以在相同的 VSIX 中包含其他元件。  
   
 #### <a name="to-set-up-the-visual-studio-solution"></a>設定 Visual Studio 方案  
   
-1.  建立類別庫專案，將它加入現有的 VSIX 方案，或是建立新的方案。  
+1. 建立類別庫專案，將它加入現有的 VSIX 方案，或是建立新的方案。  
   
-    1.  在 [檔案]  功能表上，依序選擇 [新增] 和 [專案] 。  
+    1. 在 [檔案]  功能表上，依序選擇 [新增] 和 [專案] 。  
   
-    2.  底下**已安裝的範本**，展開**Visual C#** 或是**Visual Basic**，然後在中間的資料行中按一下**類別庫**。  
+    2. 底下**已安裝的範本**，展開**Visual C#** 或是**Visual Basic**，然後在中間的資料行中按一下**類別庫**。  
   
-    3.  設定 [方案]  以表示您是要建立新的方案，還是將元件加入已經開啟的 VSIX 方案。  
+    3. 設定 [方案]  以表示您是要建立新的方案，還是將元件加入已經開啟的 VSIX 方案。  
   
-    4.  設定專案名稱和位置，然後按一下 [確定]。  
+    4. 設定專案名稱和位置，然後按一下 [確定]。  
   
-2.  除非您的方案已經包含 VSIX 專案，否則請建立一個。  
+2. 除非您的方案已經包含 VSIX 專案，否則請建立一個。  
   
-    1.  在 [方案總管] 中，在方案的捷徑功能表上，選擇 [新增] 和 [新增專案] 。  
+    1. 在 [方案總管] 中，在方案的捷徑功能表上，選擇 [新增] 和 [新增專案] 。  
   
-    2.  在 [已安裝的範本] 下，依序展開 [Visual C#]  或 [Visual Basic] ，然後選取 [擴充性] 。 在中間的資料行中，選擇 [VSIX 專案] 。  
+    2. 在 [已安裝的範本] 下，依序展開 [Visual C#]  或 [Visual Basic] ，然後選取 [擴充性] 。 在中間的資料行中，選擇 [VSIX 專案] 。  
   
-3.  將 VSIX 專案設定為方案的啟始專案。  
+3. 將 VSIX 專案設定為方案的啟始專案。  
   
-    -   在方案總管中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。  
+    - 在方案總管中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。  
   
-4.  在  **source.extension.vsixmanifest**下方**內容**，新增類別庫專案做為 MEF 元件。  
+4. 在  **source.extension.vsixmanifest**下方**內容**，新增類別庫專案做為 MEF 元件。  
   
-    1.  在 [中繼資料]  索引標籤上，設定 VSIX 的名稱。  
+    1. 在 [中繼資料]  索引標籤上，設定 VSIX 的名稱。  
   
-    2.  在 [安裝目標]  索引標籤上，設定 Visual Studio 版本做為目標。  
+    2. 在 [安裝目標]  索引標籤上，設定 Visual Studio 版本做為目標。  
   
-    3.  在 [資產]  索引標籤上，選擇 [新增] ，然後在對話方塊中設定：  
+    3. 在 [資產]  索引標籤上，選擇 [新增] ，然後在對話方塊中設定：  
   
           =   
   
@@ -156,37 +156,37 @@ namespace WorkItems
   
 #### <a name="to-test-the-link-handler"></a>測試連結處理常式  
   
-1.  按 **F5**，或在 [偵錯]  功能表上，選擇 [開始偵錯] 。  
+1. 按 **F5**，或在 [偵錯]  功能表上，選擇 [開始偵錯] 。  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。  
   
      **疑難排解**:如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]不會啟動，請確定 VSIX 專案已設定為啟始專案的方案。  
   
-2.  在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，開啟或建立模型專案，並開啟或建立模型圖表。  
+2. 在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，開啟或建立模型專案，並開啟或建立模型圖表。  
   
-3.  建立模型項目，例如 UML 類別，並設定其名稱。  
+3. 建立模型項目，例如 UML 類別，並設定其名稱。  
   
-4.  以滑鼠右鍵按一下項目，然後按一下**建立工作項目**。  
+4. 以滑鼠右鍵按一下項目，然後按一下**建立工作項目**。  
   
-    -   如果子功能表顯示**開啟 Team Foundation Server 連接**，您必須關閉專案、 連接至適當的 TFS，並重新啟動此程序。  
+    - 如果子功能表顯示**開啟 Team Foundation Server 連接**，您必須關閉專案、 連接至適當的 TFS，並重新啟動此程序。  
   
-    -   如果子功能表顯示工作項目類型的清單，請按一下其中一個。  
+    - 如果子功能表顯示工作項目類型的清單，請按一下其中一個。  
   
          新的工作項目表單隨即開啟。  
   
-5.  如果您已經在上一節中使用範例程式碼，請確認工作項目的標題與模型項目相同。 這表示 `OnWorkItemCreated()` 已生效。  
+5. 如果您已經在上一節中使用範例程式碼，請確認工作項目的標題與模型項目相同。 這表示 `OnWorkItemCreated()` 已生效。  
   
-6.  完成表單、儲存並關閉工作項目。  
+6. 完成表單、儲存並關閉工作項目。  
   
-7.  請確認工作項目現在是以紅色顯示。 這示範了範例程式碼的 `OnWorkItemLinked()`。  
+7. 請確認工作項目現在是以紅色顯示。 這示範了範例程式碼的 `OnWorkItemLinked()`。  
   
      **疑難排解**:如果尚未執行的處理常式方法，確認：  
   
-    -   類別庫專案會列為 MEF 元件**內容**列入**source.extensions.manifest**在 VSIX 專案。  
+    - 類別庫專案會列為 MEF 元件**內容**列入**source.extensions.manifest**在 VSIX 專案。  
   
-    -   正確的 `Export` 屬性會附加至處理常式類別，且該類別會實作 `ILinkedWorkItemExtension`。  
+    - 正確的 `Export` 屬性會附加至處理常式類別，且該類別會實作 `ILinkedWorkItemExtension`。  
   
-    -   所有 `Import` 和 `Export` 屬性的參數都有效。  
+    - 所有 `Import` 和 `Export` 屬性的參數都有效。  
   
 ## <a name="about-the-work-item-handler-code"></a>關於工作項目處理常式程式碼  
   
@@ -237,9 +237,9 @@ public void OnWorkItemRemoved
   
  若要使用下列範例，請在您的專案參考加入這些 .NET 組件：  
   
--   Microsoft.TeamFoundation.Client.dll  
+- Microsoft.TeamFoundation.Client.dll  
   
--   Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
 ```  
   

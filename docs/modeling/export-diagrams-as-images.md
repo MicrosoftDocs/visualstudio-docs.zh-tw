@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f407a3bc3236d76c4cf5418ed3aef2c3388867a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 069a9ce5f3126550f54a5d2780411f6832acee83
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926186"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077923"
 ---
 # <a name="export-diagrams-as-images"></a>將圖表匯出為影像
 在 Visual Studio 中，您可以儲存模型圖表在唯讀模式的格式，如此您就可以與專案關係人、 使用者或不使用相同版本的 Visual Studio 的專案小組成員共用它們。
@@ -25,19 +25,19 @@ ms.locfileid: "55926186"
 
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>將圖表或部分圖表複製到另一個應用程式
 
-1.  選取圖表上的部分或所有圖形。
+1. 選取圖表上的部分或所有圖形。
 
-2.  以滑鼠右鍵按一下您的選擇，然後按一下**複製**。
+2. 以滑鼠右鍵按一下您的選擇，然後按一下**複製**。
 
-3.  將選取項目貼到想要的應用程式。
+3. 將選取項目貼到想要的應用程式。
 
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>將模型圖表儲存為 XML 文件規格 (.xps) 檔案
 
-1.  在上**檔案**功能表上，按一下**列印**以開啟**列印** 對話方塊。
+1. 在上**檔案**功能表上，按一下**列印**以開啟**列印** 對話方塊。
 
-2.  在 **名稱**清單中，選取**Microsoft XPS Document Writer**，然後按一下**確定**。
+2. 在 **名稱**清單中，選取**Microsoft XPS Document Writer**，然後按一下**確定**。
 
-3.  在 **將檔案儲存為**對話方塊中，將檔案儲存為**XPS 文件 (\*.xps)** 檔案。
+3. 在 **將檔案儲存為**對話方塊中，將檔案儲存為**XPS 文件 (\*.xps)** 檔案。
 
 ## <a name="net-framework-security"></a>.NET Framework 安全性
 

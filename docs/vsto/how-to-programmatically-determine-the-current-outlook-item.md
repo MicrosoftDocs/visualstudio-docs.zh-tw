@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3608f516eb9206bc5b4c232c227d3e49c2414be7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5566538b428502c8e63e752463b0271daeac2918
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599749"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052502"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>HOW TO：以程式設計方式判斷目前的 Outlook 項目
   這個範例會使用`Explorer.SelectionChange`事件，以顯示目前的資料夾，然後選取的項目的一些資訊的名稱。 程式碼接著會顯示選取的項目。
@@ -34,7 +34,7 @@ ms.locfileid: "56599749"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要：
 
--   約會、 連絡人及電子郵件在 Microsoft Office Outlook 中的項目。
+- 約會、 連絡人及電子郵件在 Microsoft Office Outlook 中的項目。
 
 ## <a name="see-also"></a>另請參閱
 - [Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)

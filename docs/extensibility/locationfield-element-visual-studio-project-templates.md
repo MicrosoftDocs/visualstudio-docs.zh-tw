@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dba30926b3afafae6cb32e159a98d4155438c08
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f55c67fbad80b05431ed13439584d3a94fa88c65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078300"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 項目 （Visual Studio 專案範本）
 指定是否**位置**中的文字方塊**新的專案** 對話方塊中已啟用、 停用，或隱藏專案範本。
@@ -51,11 +51,11 @@ ms.locfileid: "56679950"
 
  有效的文字值如下：
 
--   `Enabled`其中指定**位置**的方塊**新的專案** 對話方塊中已啟用。
+- `Enabled`其中指定**位置**的方塊**新的專案** 對話方塊中已啟用。
 
--   `Disabled`其中指定**位置**的方塊**新的專案** 對話方塊中已停用。
+- `Disabled`其中指定**位置**的方塊**新的專案** 對話方塊中已停用。
 
--   `Hidden`其中指定**位置**的方塊**新的專案**隱藏的對話方塊。
+- `Hidden`其中指定**位置**的方塊**新的專案**隱藏的對話方塊。
 
 ## <a name="remarks"></a>備註
  預設值為 `Enabled`。

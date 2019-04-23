@@ -9,26 +9,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834435"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665138"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>如何回報 Visual Studio 2015 的問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 2017 最新文件，請參閱 <<c0> [ 如何回報 Visual Studio 2017 中的問題](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)。
+如需 Visual Studio 的最新文件，請參閱[如何在 Visual Studio 中回報問題](/visualstudio/ide/how-to-report-a-problem-with-visual-studio)。
 
-如果您遇到 Visual Studio 2015 的問題，我們想要了解它，以便我們可以診斷並修正此問題。  透過使用 [回報問題]  工具，您可以收集問題的詳細資訊，並只需按幾下按鈕即可將其傳送給 Microsoft。
+若您在使用 Visual Studio 2015 時發生問題，請告知我們，讓我們能夠診斷並修正問題。  透過使用 [回報問題] 工具，您可以收集問題的詳細資訊，並只需按幾下按鈕即可將其傳送給 Microsoft。
 
- Microsoft 尊重您的隱私權。 如需我們如何處理您所傳送之資料的資訊，請參閱 [Microsoft Visual Studio 產品系列隱私權聲明](https://www.visualstudio.com/dn948229)。
+Microsoft 尊重您的隱私權。 如需我們如何處理您所傳送之資料的資訊，請參閱 [Microsoft Visual Studio 產品系列隱私權聲明](https://www.visualstudio.com/dn948229)。
 
 ## <a name="open-the-report-a-problem-tool"></a>開啟 [回報問題] 工具
- 按一下標題列中 [快速啟動] 旁的使用者意見反應圖示，或按一下 [說明] &#124; [傳送意見反應] &#124; [回報問題]。
 
- ![[回報問題] 功能表項目](../ide/media/report-a-problem-menu-item.png "[回報問題] 功能表項目")
+按一下標題列中 [快速啟動] 旁的使用者意見反應圖示，或按一下 [說明] > [傳送意見反應] > [回報問題]。
+
+![[回報問題] 功能表項目](../ide/media/report-a-problem-menu-item.png "[回報問題] 功能表項目")
 
 ## <a name="describe-the-problem"></a>描述問題
 
@@ -43,7 +44,8 @@ ms.locfileid: "54834435"
    ![[回報問題] 對話方塊](../ide/media/report-a-problem-dialog.png "[回報問題] 對話方塊")
 
 ## <a name="provide-a-screenshot-optional"></a>提供螢幕擷取畫面 (選擇性)
- 選擇 [包含螢幕擷取畫面]，將目前螢幕傳送給 Microsoft。 此工具可讓您裁剪影像，讓該影像只包含顯示出問題的螢幕部分。 按一下 [附加其他檔案] 按鈕，即可附加其他螢幕擷取畫面或其他檔案。
+
+選擇 [包含螢幕擷取畫面]  ，將目前螢幕傳送給 Microsoft。 此工具可讓您裁剪影像，讓該影像只包含顯示出問題的螢幕部分。 您可按一下 [附加其他檔案] 按鈕，即可附加其他螢幕擷取畫面或檔案。
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>提供追蹤和堆積傾印 (選擇性)
 
@@ -51,19 +53,22 @@ ms.locfileid: "54834435"
 
 1.  追蹤和堆積傾印檔案有助於我們診斷問題。   我們非常感激您願意使用 [回報問題] 工具記錄重現問題的步驟，並將資料傳送給 Microsoft。
 
-2.  按一下 [記錄重現問題的動作] 旁邊的 &gt; 形箭號。 若您的問題造成 Visual Studio 停滯或當機，請開啟另一個 Visual Studio 執行個體，並從清單檢視中加以選取。
+2.  按一下 [記錄重現問題的動作] 旁邊的＞形箭號。 若您的問題造成 Visual Studio 停滯或當機，請開啟另一個 Visual Studio 執行個體，並從清單檢視中加以選取。
 
-3.  按一下 [開始錄製]  並執行重現問題的步驟。 完成之後，請按一下浮動視窗中的 [停止錄製]  按鈕。
+3.  按一下 [開始錄製] 並執行重現問題的步驟。 完成之後，請按一下浮動視窗中的 [停止錄製] 按鈕。
 
 4.  請稍等幾分鐘，讓 Visual Studio 收集和封裝已錄製的資訊。 收集處理序完成時，對話方塊看起來會像這樣：
 
      ![錄製追蹤檔](../ide/media/record-a-trace-file.png "錄製追蹤檔")
 
 ## <a name="describe-the-workaround-if-there-is-one"></a>若有因應措施，請加以描述
- 若您能解決此問題，請在針對該目的而提供的編輯方塊中描述因應措施。 這不僅有助於診斷問題，還可協助其他可能發生相同問題的使用者。
+
+若您能解決此問題，請在針對該目的而提供的編輯方塊中描述因應措施。 這不僅有助於診斷問題，還可協助其他可能發生相同問題的使用者。
 
 ## <a name="submit-the-report"></a>提交報告
- 按一下 [提交] 按鈕，連同任何影像、追蹤或傾印檔案送出您的報告。 如果 [提交] 按鈕呈現灰色，請確定您是否已提供標題與描述。
 
-## <a name="see-also"></a>請參閱
- [告訴我們](../ide/talk-to-us.md)
+按一下 [提交] 按鈕，連同任何影像、追蹤或傾印檔案送出您的報告。 如果 [提交] 按鈕呈現灰色，請確定您是否已提供標題與描述。
+
+## <a name="see-also"></a>另請參閱
+
+- [告訴我們](../ide/talk-to-us.md)

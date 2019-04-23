@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a0652f8dbb1acfec111dcc587f3ce4ba2496eb4c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9af4507d7ccd604f82aae675bf87d36c0b039b26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110462"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>HOW TO：設定 ClickOnce 應用程式的安全性區域
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ ms.locfileid: "58941790"
   
 ### <a name="to-set-a-security-zone"></a>設定安全性區域  
   
-1.  選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
+1. 選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
   
-2.  按一下 [ **安全性** ] 索引標籤。  
+2. 按一下 [ **安全性** ] 索引標籤。  
   
-3.  選取 [啟用 ClickOnce 安全性設定]  核取方塊。  
+3. 選取 [啟用 ClickOnce 安全性設定]  核取方塊。  
   
-4.  選取 [這是部分信任的應用程式]  選項按鈕。  
+4. 選取 [這是部分信任的應用程式]  選項按鈕。  
   
      這會啟用 [ClickOnce 安全性權限]  區段中的控制項。  
   
-5.  在 [安裝應用程式的區域]  下拉式清單中，選取安全性區域。  
+5. 在 [安裝應用程式的區域]  下拉式清單中，選取安全性區域。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：設定 ClickOnce 應用程式的自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   

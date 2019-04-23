@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c39ee1113d04cdd3212deccee626a96dd1e3dae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 038ea6d6daec4c387d3344809d62bbbd67a12eee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939433"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057577"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>HOW TO：隱藏所產生程式碼的程式碼分析警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,8 +30,8 @@ Managed 程式碼編譯器通常會產生加入至專案，以協助快速的程
   
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>若要隱藏的警告，請在專案中產生程式碼  
   
-1.  以滑鼠右鍵按一下方案總管 中的專案，然後按一下**屬性**。  
+1. 以滑鼠右鍵按一下方案總管 中的專案，然後按一下**屬性**。  
   
-2.  按一下 **程式碼分析**。  
+2. 按一下 **程式碼分析**。  
   
-3.  選取 [**隱藏所產生的程式碼的結果**] 核取方塊。
+3. 選取 [**隱藏所產生的程式碼的結果**] 核取方塊。

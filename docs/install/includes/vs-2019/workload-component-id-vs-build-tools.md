@@ -5,16 +5,16 @@ description: 使用 Visual Studio 工作負載和元件識別碼來建置傳統 
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/01/2019
+ms.date: 04/02/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: f74b014efff346993dbebb1b605e8f6f194f1502
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 333ecaa39fb0f3ea736b2b2a3efc6980b1ff8d87
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160983"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58872925"
 ---
 ## <a name="azure-development-build-tools"></a>Azure 開發建置工具
 
@@ -76,7 +76,7 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 16
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目標套件 | 16.0.28517.75 | 建議
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 16.0.28517.75 | 建議
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開發工具 | 16.0.28516.191 | 建議
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 建議
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 建議
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 16.0.28625.61 | 建議
 Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server Data Tools - 建置工具 | 16.0.28315.86 | 建議
 
@@ -94,7 +94,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目標和建置工作 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce 建置工具 | 16.0.28625.61 | 建議
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目標套件 | 16.0.28517.75 | 建議
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 | 16.0.28517.75 | 建議
@@ -131,7 +131,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# 編譯器 | 16.0.28528.71 |
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools Core | 16.0.28315.86 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 
 ## <a name="net-core-build-tools"></a>.NET Core 建置工具
 
@@ -181,7 +181,7 @@ Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 16.0.2
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.0.28516.191 | 必要
 Microsoft.VisualStudio.Component.NuGet | NuGet 套件管理員 | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目標和建置工作 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Office/SharePoint 開發建置工具 | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.Workflow.BuildTools | Windows Workflow Foundation 建置工具 | 16.0.28315.86 | 必要
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Windows Communication Foundation 建置工具 | 16.0.28516.191 | 必要
@@ -216,7 +216,7 @@ Microsoft.Component.VC.Runtime.OSSupport | 適用於 v142 建置工具的 C++ �
 Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 16.0.28517.75 | 必要
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 開發工具 | 16.0.28621.142 | 必要
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目標和建置工作 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 – VS 2019 C++ ARM 建置工具 (v14.20) | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x64/x86 建置工具 (v14.20) | 16.0.28625.61 | 必要
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | 通用 Windows 平台建置的必要條件 | 16.0.28621.142 | 必要
@@ -245,7 +245,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 16.0.28625.61 | Optional
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 16.0.28517.75 | Optional
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | Optional
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | Optional
 Microsoft.VisualStudio.Component.TextTemplating | 文字範本轉換 | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ 建置工具 (v14.00) | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.VC.ATL | 適用於 v142 建置工具的 C++ ALT (x86 & x64) | 16.0.28625.61 | Optional
@@ -274,7 +274,7 @@ Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 16.0.28517.75 | �
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目標套件 | 16.0.28517.75 | 必要
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開發工具 | 16.0.28516.191 | 必要
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目標和建置工作 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 Microsoft.VisualStudio.Component.VSSDKBuildTools | Visual Studio SDK Build Tools Core | 16.0.28315.86 | 必要
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Visual Studio 擴充功能開發必要條件 | 16.0.28528.71 | 必要
 Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 16.0.28528.71 | Optional
@@ -341,7 +341,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 16.0.28517.75 | 必要
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 | 16.0.28517.75 | 必要
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目標和建置工作 | 16.0.28625.61 | 必要
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28528.71 | 必要
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 16.0.28714.129 | 必要
 Component.Android.SDK27 | Android SDK 安裝程式 (API 層級 27) | 16.0.28517.75 | Optional
 Component.OpenJDK | OpenJDK (Microsoft 散發) | 16.0.28625.61 | Optional
 

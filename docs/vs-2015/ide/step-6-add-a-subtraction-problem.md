@@ -9,29 +9,29 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 500836281c1dba10bfdfe61b2442d30fb985fe38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e846bc8dc8d3087c58d58ee91752abc713c5f66e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064216"
 ---
-# <a name="step-6-add-a-subtraction-problem"></a>步驟 6：加入減法問題
+# <a name="step-6-add-a-subtraction-problem"></a>步驟 6：新增減法問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在本教學課程的第六個部分中，您將加入減法問題並學習如何執行下列工作：  
   
--   儲存減法的值。  
+- 儲存減法的值。  
   
--   產生問題的隨機數字 (並確定答案介於 0 和 100 之間)。  
+- 產生問題的隨機數字 (並確定答案介於 0 和 100 之間)。  
   
--   更新用來檢查答案的方法，如此該方法就會一併檢查新的減法問題。  
+- 更新用來檢查答案的方法，如此該方法就會一併檢查新的減法問題。  
   
--   更新計時器的 Tick 事件處理常式，讓事件處理常式在時間結束時填入正確答案。  
+- 更新計時器的 Tick 事件處理常式，讓事件處理常式在時間結束時填入正確答案。  
   
 ### <a name="to-add-a-subtraction-problem"></a>若要加入減法問題  
   
-1.  將減法問題的兩個整數變數加入至表單中，並且放置在加法問題的整數變數與計時器之間。 程式碼看起來應該如下所示。  
+1. 將減法問題的兩個整數變數加入至表單中，並且放置在加法問題的整數變數與計時器之間。 程式碼看起來應該如下所示。  
   
      [!code-csharp[VbExpressTutorial3Step5_6#12](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#12)]
      [!code-vb[VbExpressTutorial3Step5_6#12](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#12)]  
@@ -40,7 +40,7 @@ ms.locfileid: "54796620"
   
      接著您將修改 `StartTheQuiz()` 方法，為減法問題提供隨機值。  
   
-2.  在 "Fill in the subtraction problem" 註解後面加上下列程式碼。  
+2. 在 "Fill in the subtraction problem" 註解後面加上下列程式碼。  
   
      [!code-csharp[VbExpressTutorial3Step5_6#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#13)]
      [!code-vb[VbExpressTutorial3Step5_6#13](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#13)]  
@@ -62,19 +62,19 @@ IntelliSense 中 Next() 方法的多載
   
      在這個案例中，您想要選擇最後一個多載，因為這樣就可以指定最小值和最大值。  
   
-3.  修改 `CheckTheAnswer()` 方法來檢查正確的減法答案。  
+3. 修改 `CheckTheAnswer()` 方法來檢查正確的減法答案。  
   
      [!code-csharp[VbExpressTutorial3Step5_6#14](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#14)]
      [!code-vb[VbExpressTutorial3Step5_6#14](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#14)]  
   
      在 Visual C# 中，`&&` 是`logical and` 運算子。 在 Visual Basic 中，對等的運算子是 `AndAlso`。 這些運算子表示：「如果 addend1 和 addend2 的總和等於 NumericUpDown 的總和值，以及如果 minuend 減 subtrahend 等於 NumericUpDown 的差值」。 只有在加法和減法問題的答案都正確時，`CheckTheAnswer()` 方法才會傳回 `true`。  
   
-4.  將計時器之 Tick 事件處理常式的最後一部分取代為下列程式碼，讓事件處理常式在時間結束時填入正確答案。  
+4. 將計時器之 Tick 事件處理常式的最後一部分取代為下列程式碼，讓事件處理常式在時間結束時填入正確答案。  
   
      [!code-csharp[VbExpressTutorial3Step5_6#22](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#22)]
      [!code-vb[VbExpressTutorial3Step5_6#22](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#22)]  
   
-5.  儲存並執行程式碼。  
+5. 儲存並執行程式碼。  
   
      您的程式包括減法問題，如下圖所示。  
   
@@ -83,6 +83,6 @@ IntelliSense 中 Next() 方法的多載
   
 ### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
--   若要移到下一個教學課程步驟，請參閱[步驟 7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。  
+- 若要前往下一個教學課程步驟，請參閱[步驟 7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。  
   
--   若要回到上一個教學課程步驟，請參閱[步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)。
+- 若要回到上一個教學課程步驟，請參閱[步驟 5：加入 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)。

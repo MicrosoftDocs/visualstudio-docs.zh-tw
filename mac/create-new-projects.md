@@ -3,20 +3,20 @@ title: 建立新的專案和方案
 description: 本文描述如何在 Visual Studio for Mac 中建立專案和方案
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: b6f355dbe10cf250ec397cb817643984b438a92e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ae69c71b3b70e950bc0b58b1c34335f3a52529df
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294262"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856469"
 ---
 # <a name="creating-new-projects-and-solutions"></a>建立新的專案和方案
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>從範本建立新的專案和方案
 
-可以隨時使用預先定義的範本來建立方案。 若要以此方式建立方案，請瀏覽至 [檔案] > [新增方案] ****，選取所需的平台，然後選取所需的範本：
+可以隨時使用預先定義的範本來建立方案。 從 Visual Studio 2019 for Mac 開始，從開始視窗選擇 [新增]。 或者，瀏覽至 [檔案] > [新增解決方案] ****。 依序選取需要的平台和範本：
 
 ![建立新的方案](media/projects-and-solutions-image0.png)
 
@@ -32,7 +32,7 @@ ms.locfileid: "51294262"
 
 ## <a name="opening-recent-solutions"></a>開啟最近使用的方案。
 
-Visual Studio 的登陸頁面會顯示您最近使用的專案清單：
+Visual Studio 的開始視窗會顯示您最近使用過的專案清單：
 
 ![歡迎頁面上的最新解決方案部分](media/create-new-projects-recent.png)
 
@@ -40,4 +40,4 @@ Visual Studio 的登陸頁面會顯示您最近使用的專案清單：
 
 ## <a name="see-also"></a>另請參閱
 
-- [建立方案和專案 (Windows 上的 Visual Studio)](/visualstudio/ide/creating-solutions-and-projects)
+- [建立解決方案和專案 (Windows 上的 Visual Studio)](/visualstudio/ide/creating-solutions-and-projects)

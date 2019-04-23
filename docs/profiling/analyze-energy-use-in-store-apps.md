@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d948234846a3d4f9fe240a6bf30854d3f0c7007
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57872044"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790429"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP App 中的能源耗用量
 
@@ -64,6 +64,7 @@ Visual Studio [能源消耗] 分析工具可協助您分析 UWP App 在全部或
 
 如需範例程式碼，請參閱 Windows SDK 範例：[LoggingSession 範例](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) \(英文\)。
 
+::: moniker range="vs-2017"
 **將標記加入至 JavaScript 程式碼**
 
 若要加入使用者標記，請在程式碼中您要標記的位置，插入下列程式碼：
@@ -75,6 +76,7 @@ if (performance && performance.mark) {
 ```
 
 *markDescription* 這個字串包含要在使用者標記工具提示中顯示的訊息。
+::: moniker-end
 
 ## <a name="configure-your-environment-for-profiling"></a>設定您的環境以進行分析
  為了獲得較佳的評估結果，建議您分析以本身電池供電之低電源裝置上的應用程式能源使用情形。 由於這類裝置大部分不會執行 Visual Studio，因此您需要將 Visual Studio 電腦連接到使用 Visual Studio 遠端工具的裝置。 若要連接到遠端裝置，您必須設定 Visual Studio 專案和遠端裝置。 如需詳細資訊，請參閱[在遠端電腦上執行 UWP App](../debugger/run-windows-store-apps-on-a-remote-machine.md)。
@@ -147,11 +149,11 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>其他資源
 
-- 有關 **C#/VB/C++ 和 XAML** 及 [JavaScript 和 HTML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) 的[連線狀態和成本管理](/previous-versions/windows/apps/hh452983(v=win.10))小節，會描述提供網路連線資訊的 Windows API，您的應用程式可以使用這些資訊來降低網路流量的成本。
+- [C#/VB/C++ 和 XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) 的**連線狀態和成本管理**一節，描述提供網路連線資訊的 API，您的應用程式可使用此資訊將網路流量成本降至最低。
 
    UWP App 適用的 Visual Studio 模擬器可讓您模擬網路資訊 API 的資料連線屬性。 請參閱[在模擬器中執行 UWP App](../debugger/run-windows-store-apps-in-the-simulator.md)
 
-- [JavaScript 函式計時]  和 [CPU 使用量]  工具可以協助您降低因為沒有效率的函式所造成的 CPU 負載。 請參閱[分析 CPU 使用量](../profiling/beginners-guide-to-performance-profiling.md)。
+- [CPU 使用量] 工具可以協助您降低因無效率函式所造成的 CPU 負載。 請參閱[分析 CPU 使用量](../profiling/beginners-guide-to-performance-profiling.md)。
 
 ## <a name="see-also"></a>另請參閱
 

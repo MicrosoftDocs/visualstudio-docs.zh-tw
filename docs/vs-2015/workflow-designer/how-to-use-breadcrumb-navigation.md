@@ -9,42 +9,42 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8327565d9705c8522442acc77899fe171a5bf12d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 97cfb7ddba95ccf4c2f74e7c924c6f62b91254a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943946"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109695"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>HOW TO：使用階層連結巡覽
 有三種主要方式可用來變更顯示在 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 中的活動集合：  
   
-1.  按兩下來向內切入子活動。  
+1. 按兩下來向內切入子活動。  
   
-2.  按一下階層連結列上的按鈕來巡覽至祖系活動。  
+2. 按一下階層連結列上的按鈕來巡覽至祖系活動。  
   
-3.  就地展開或摺疊活動。  
+3. 就地展開或摺疊活動。  
   
 ### <a name="using-breadcrumb-navigation"></a>使用階層連結巡覽  
   
-1.  按兩下 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 活動，從根活動變更為按下後的活動。 按下後的活動就會完全於根目錄展開，而且其祖系會顯示於階層連結列。 有時，這會稱為向內切入或向外切出活動。  
+1. 按兩下 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 活動，從根活動變更為按下後的活動。 按下後的活動就會完全於根目錄展開，而且其祖系會顯示於階層連結列。 有時，這會稱為向內切入或向外切出活動。  
   
-2.  若要巡覽至目前根活動的祖系，請按一下階層連結列上的活動。  
+2. 若要巡覽至目前根活動的祖系，請按一下階層連結列上的活動。  
   
 ### <a name="expanding-or-collapsing-an-activity-in-place"></a>就地展開或摺疊活動  
   
-1.  按一下活動上的＞形箭號，即可就地展開或摺疊活動。  
+1. 按一下活動上的＞形箭號，即可就地展開或摺疊活動。  
   
-2.  按一下按鈕而變更展開狀態時，展開的新狀態會儲存於 XAML。  
+2. 按一下按鈕而變更展開狀態時，展開的新狀態會儲存於 XAML。  
   
     > [!WARNING]
     >  並非所有活動都可就地展開。 無法就地展開活動的情況有兩種：父活動不允許就地展開子活動，(例如，流程圖中的活動無法就地展開)，或活動設計工具不允許將本身就地展開。 雖然包含於 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 的活動設計工具都不會發生後者的情況，但是某些自訂活動也許會有這種情況。  
   
 ### <a name="expanding-all-or-collapsing-all-activities"></a>全部展開或全部摺疊活動  
   
-1.  使用**全部展開**並**全部摺疊**展開或摺疊目前階層連結根目錄下的活動的所有使用者介面中的按鈕。 請注意，全部展開和全部摺疊都是全域狀態。 這表示，當您變更根活動使用軌跡瀏覽，全部展開或摺疊所有狀態一直保存，直到您按一下**還原**。  
+1. 使用**全部展開**並**全部摺疊**展開或摺疊目前階層連結根目錄下的活動的所有使用者介面中的按鈕。 請注意，全部展開和全部摺疊都是全域狀態。 這表示，當您變更根活動使用軌跡瀏覽，全部展開或摺疊所有狀態一直保存，直到您按一下**還原**。  
   
-2.  您已套用全部展開或摺疊所有狀態之後，您可以按一下**還原**按鈕返回查看先前套用至每個活動的狀態。  
+2. 您已套用全部展開或摺疊所有狀態之後，您可以按一下**還原**按鈕返回查看先前套用至每個活動的狀態。  
   
     > [!WARNING]
     >  如果某個活動，這類<xref:System.Activities.Statements.Flowchart>，已選擇共就地展開、 功能與相關聯**全部展開**並**全部摺疊**按鈕已停用**流程圖**設計工具。 [!INCLUDE[crabout](../includes/crabout-md.md)] **流程圖**設計工具，請參閱[流程圖](../workflow-designer/flowchart-activity-designer.md)主題。  

@@ -8,12 +8,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4315e4008c3a4f14e8d9124da5d7ff83c8275a65
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 02b33bfbb0e7de3007de9e36691fa1524f69b21b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796924"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117794"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,18 +24,18 @@ ms.locfileid: "54796924"
   
  Lib 檔案位於 _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib** 資料夾。  
   
-##  <a name="BKMK_In_this_topic"></a> 本主題內容  
+## <a name="BKMK_In_this_topic"></a> 本主題內容  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  
   
 - [建立測試類別和方法](#BKMK_Create_test_classes_and_methods)  
   
 - [初始化和清除](#BKMK_Initialize_and_cleanup)  
   
-  -   [測試方法](#BKMK_Test_methods)  
+  - [測試方法](#BKMK_Test_methods)  
   
-  -   [測試類別](#BKMK_Test_classes)  
+  - [測試類別](#BKMK_Test_classes)  
   
-  -   [測試模組](#BKMK_Test_modules)  
+  - [測試模組](#BKMK_Test_modules)  
   
 - [建立測試屬性](#BKMK_Create_test_attributes)  
   
@@ -51,37 +51,37 @@ ms.locfileid: "54796924"
   
   - [一般判斷提示](#BKMK_General_Asserts)  
   
-    -   [相等](#BKMK_General_Are_Equal)  
+    - [相等](#BKMK_General_Are_Equal)  
   
-    -   [不相等](#BKMK_General_Are_Not_Equal)  
+    - [不相等](#BKMK_General_Are_Not_Equal)  
   
-    -   [相同](#BKMK_General_Are_Same)  
+    - [相同](#BKMK_General_Are_Same)  
   
-    -   [不相同](#BKMK_General_Are_Not_Same)  
+    - [不相同](#BKMK_General_Are_Not_Same)  
   
-    -   [為 Null](#BKMK_General_Is_Null)  
+    - [為 Null](#BKMK_General_Is_Null)  
   
-    -   [不是 Null](#BKMK_General_Is_Not_Null)  
+    - [不是 Null](#BKMK_General_Is_Not_Null)  
   
-    -   [為 True](#BKMK_General_Is_True)  
+    - [為 True](#BKMK_General_Is_True)  
   
-    -   [為 False](#BKMK_General_Is_False)  
+    - [為 False](#BKMK_General_Is_False)  
   
-    -   [失敗](#BKMK_General_Fail)  
+    - [失敗](#BKMK_General_Fail)  
   
   - [Windows 執行階段判斷提示](#BKMK_WinRT_Asserts)  
   
-    -   [相等](#BKMK_WinRT_Are_Equal)  
+    - [相等](#BKMK_WinRT_Are_Equal)  
   
-    -   [相同](#BKMK_WinRT_Are_Same)  
+    - [相同](#BKMK_WinRT_Are_Same)  
   
-    -   [不相等](#BKMK_WinRT_Are_Not_Equal)  
+    - [不相等](#BKMK_WinRT_Are_Not_Equal)  
   
-    -   [不相同](#BKMK_WinRT_Are_Not_Same)  
+    - [不相同](#BKMK_WinRT_Are_Not_Same)  
   
-    -   [為 Null](#BKMK_WinRT_Is_Null)  
+    - [為 Null](#BKMK_WinRT_Is_Null)  
   
-    -   [不是 Null](#BKMK_WinRT_Is_Not_Null)  
+    - [不是 Null](#BKMK_WinRT_Is_Not_Null)  
   
   - [判斷提示例外狀況](#BKMK_Exception_Asserts)  
   
@@ -93,9 +93,9 @@ ms.locfileid: "54796924"
   
     - [寫入訊息](#BKMK_Write_Message)  
   
-##  <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
+## <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
   
-###  <a name="BKMK_Create_test_classes_and_methods"></a> 建立測試類別和方法  
+### <a name="BKMK_Create_test_classes_and_methods"></a> 建立測試類別和方法  
   
 ```cpp  
 TEST_CLASS(className)  
@@ -113,9 +113,9 @@ TEST_METHOD(methodName)
   
  定義 *methodName* 為測試方法。 `TEST_METHOD` 必須在方法的類別範圍中宣告。  
   
-###  <a name="BKMK_Initialize_and_cleanup"></a> 初始化和清除  
+### <a name="BKMK_Initialize_and_cleanup"></a> 初始化和清除  
   
-####  <a name="BKMK_Test_methods"></a> 測試方法  
+#### <a name="BKMK_Test_methods"></a> 測試方法  
   
 ```cpp  
 TEST_METHOD_INITIALIZE(methodName)   
@@ -137,7 +137,7 @@ TEST_METHOD_CLEANUP(methodName)
   
  定義 *methodName* 為每個測試方法執行之後要執行的方法。 `TEST_METHOD_CLEANUP` 只能在測試類別中定義一次，且必須在測試類別的範圍中定義。  
   
-####  <a name="BKMK_Test_classes"></a> 測試類別  
+#### <a name="BKMK_Test_classes"></a> 測試類別  
   
 ```cpp  
 TEST_CLASS_INITIALIZE(methodName)   
@@ -159,7 +159,7 @@ TEST_CLASS_CLEANUP(methodName)
   
  定義 *methodName* 為每個測試類別建立之後要執行的方法。 `TEST_CLASS_CLEANUP` 只能在測試類別中定義一次，且必須在測試類別的範圍中定義。  
   
-####  <a name="BKMK_Test_modules"></a> 測試模組  
+#### <a name="BKMK_Test_modules"></a> 測試模組  
   
 ```cpp  
 TEST_MODULE_INITIALIZE(methodName)  
@@ -176,9 +176,9 @@ TEST_MODULE_CLEANUP(methodName)
   
  定義卸載模組時要執行的方法 *methodName*。 `TEST_MODULE_CLEANUP` 只能在測試模組中定義一次，且必須在命名空間範圍中宣告。  
   
-###  <a name="BKMK_Create_test_attributes"></a> 建立測試屬性  
+### <a name="BKMK_Create_test_attributes"></a> 建立測試屬性  
   
-####  <a name="BKMK_Test_method_attributes"></a> 測試方法屬性  
+#### <a name="BKMK_Test_method_attributes"></a> 測試方法屬性  
   
 ```cpp  
 BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)   
@@ -191,7 +191,7 @@ END_TEST_METHOD_ATTRIBUTE()
   
  `TEST_METHOD_ATTRIBUTE` 巨集會以名稱 *attributeName* 和值 *attributeValue* 來定義屬性。  
   
-####  <a name="BKMK_Test_class_attributes"></a> 測試類別屬性  
+#### <a name="BKMK_Test_class_attributes"></a> 測試類別屬性  
   
 ```cpp  
 BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)   
@@ -204,7 +204,7 @@ END_TEST_CLASS_ATTRIBUTE()
   
  `TEST_CLASS_ATTRIBUTE` 巨集會以名稱 *attributeName* 和值 *attributeValue* 來定義屬性。  
   
-####  <a name="BKMK_Test_module_attributes"></a> 測試模組屬性  
+#### <a name="BKMK_Test_module_attributes"></a> 測試模組屬性  
   
 ```cpp  
 BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)   
@@ -217,7 +217,7 @@ END_TEST_MODULE_ATTRIBUTE()
   
  `TEST_MODULE_ATTRIBUTE` 巨集會以名稱 *attributeName* 和值 *attributeValue* 來定義屬性。  
   
-####  <a name="BKMK_Pre_defined_attributes"></a> 預先定義的屬性  
+#### <a name="BKMK_Pre_defined_attributes"></a> 預先定義的屬性  
  這些預先定義的屬性巨集可以由巨集 `TEST_METHOD_ATTRIBUTE`、`TEST_CLASS_ATTRIBUTE` 或 `TEST_MODULE_ATTRIBUTE` 所取代，如上文所述。  
   
 ```cpp  
@@ -250,11 +250,11 @@ TEST_IGNORE()
   
  以名稱 `Ignore` 和 `true` 的屬性值來定義屬性。  
   
-##  <a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert.h  
+## <a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert.h  
   
-###  <a name="BKMK_General_Asserts"></a> 一般判斷提示  
+### <a name="BKMK_General_Asserts"></a> 一般判斷提示  
   
-####  <a name="BKMK_General_Are_Equal"></a> 相等  
+#### <a name="BKMK_General_Are_Equal"></a> 相等  
  確認兩個物件相等  
   
 ```cpp  
@@ -310,7 +310,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Not_Equal"></a> 不相等  
+#### <a name="BKMK_General_Are_Not_Equal"></a> 不相等  
  確認兩個雙精確度浮點數不相等  
   
 ```cpp  
@@ -366,7 +366,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Same"></a> 相同  
+#### <a name="BKMK_General_Are_Same"></a> 相同  
  確認兩個參考會參考相同的物件執行個體 (識別)。  
   
 ```cpp  
@@ -378,7 +378,7 @@ static void AreSame(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Not_Same"></a> 不相同  
+#### <a name="BKMK_General_Are_Not_Same"></a> 不相同  
  確認兩個參考未參考相同的物件執行個體 (識別)。  
   
 ```cpp  
@@ -390,7 +390,7 @@ static void AreNotSame (
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_Null"></a> 為 Null  
+#### <a name="BKMK_General_Is_Null"></a> 為 Null  
  確認指標為 NULL。  
   
 ```cpp  
@@ -401,7 +401,7 @@ static void IsNull(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_Not_Null"></a> 不是 Null  
+#### <a name="BKMK_General_Is_Not_Null"></a> 不是 Null  
  確認指標不是 NULL  
   
 ```cpp  
@@ -412,7 +412,7 @@ static void IsNotNull(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_True"></a> 為 True  
+#### <a name="BKMK_General_Is_True"></a> 為 True  
  確認條件為 True  
   
 ```cpp  
@@ -422,7 +422,7 @@ static void IsTrue(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_False"></a> 為 False  
+#### <a name="BKMK_General_Is_False"></a> 為 False  
  確認條件為 False  
   
 ```cpp  
@@ -432,7 +432,7 @@ static void IsFalse(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Fail"></a> 失敗  
+#### <a name="BKMK_General_Fail"></a> 失敗  
  強制測試案例結果為失敗  
   
 ```cpp  
@@ -441,9 +441,9 @@ static void Fail(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-###  <a name="BKMK_WinRT_Asserts"></a> Windows 執行階段判斷提示  
+### <a name="BKMK_WinRT_Asserts"></a> Windows 執行階段判斷提示  
   
-####  <a name="BKMK_WinRT_Are_Equal"></a> 相等  
+#### <a name="BKMK_WinRT_Are_Equal"></a> 相等  
  確認兩個 Windows 執行階段的指標相等。  
   
 ```  
@@ -466,7 +466,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Same"></a> 相同  
+#### <a name="BKMK_WinRT_Are_Same"></a> 相同  
  確認兩個 Windows 執行階段的參考參考相同的物件。  
   
 ```  
@@ -478,7 +478,7 @@ static void AreSame(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Not_Equal"></a> 不相等  
+#### <a name="BKMK_WinRT_Are_Not_Equal"></a> 不相等  
  確認兩個 Windows 執行階段的指標不相等。  
   
 ```  
@@ -501,7 +501,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Not_Same"></a> 不相同  
+#### <a name="BKMK_WinRT_Are_Not_Same"></a> 不相同  
  確認兩個 Windows 執行階段參考未參考相同的物件。  
   
 ```  
@@ -513,7 +513,7 @@ static void AreNotSame(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Is_Null"></a> 為 Null  
+#### <a name="BKMK_WinRT_Is_Null"></a> 為 Null  
  確認 Windows 執行階段指標為 nullptr。  
   
 ```  
@@ -524,7 +524,7 @@ static void IsNull(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Is_Not_Null"></a> 不是 Null  
+#### <a name="BKMK_WinRT_Is_Not_Null"></a> 不是 Null  
  確認 Windows 執行階段指標不是 nullptr。  
   
 ```  
@@ -535,9 +535,9 @@ static void IsNotNull(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-###  <a name="BKMK_Exception_Asserts"></a> 判斷提示例外狀況  
+### <a name="BKMK_Exception_Asserts"></a> 判斷提示例外狀況  
   
-####  <a name="BKMK_Expect_Exception"></a> 預期例外狀況  
+#### <a name="BKMK_Expect_Exception"></a> 預期例外狀況  
  確認函式引發例外狀況︰  
   
 ```  
@@ -558,16 +558,16 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-##  <a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger.h  
+## <a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger.h  
   
-###  <a name="BKMK_Logger"></a> 記錄器  
+### <a name="BKMK_Logger"></a> 記錄器  
  記錄器類別包含要寫入的靜態方法  
   
 ```  
 class Logger  
 ```  
   
-###  <a name="BKMK_Write_Message"></a> 寫入訊息  
+### <a name="BKMK_Write_Message"></a> 寫入訊息  
   
 ```  
 static void   
@@ -650,7 +650,7 @@ public:
 };  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [對程式碼進行單元測試](../test/unit-test-your-code.md)   
  [使用測試總管針對機器碼執行單元測試](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)   
  [將單元測試加入至現有的 C++ 應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)

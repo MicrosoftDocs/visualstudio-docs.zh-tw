@@ -23,12 +23,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7566d3a89ff27cc473b9352c7e0f02492dc736d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ea1e932f7651439dcb9a1ff85094bd30e5239bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945320"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116145"
 ---
 # <a name="how-to-edit-a-register-value"></a>HOW TO：編輯暫存器值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "58945320"
   
 ### <a name="to-change-the-value-of-a-register"></a>若要變更暫存器值  
   
-1.  在 [暫存器] 視窗中使用 TAB 鍵或滑鼠，將插入點移至要變更的值上。 輸入時，游標必須放在要覆寫的值的前面。  
+1. 在 [暫存器] 視窗中使用 TAB 鍵或滑鼠，將插入點移至要變更的值上。 輸入時，游標必須放在要覆寫的值的前面。  
   
-2.  輸入新值。  
+2. 輸入新值。  
   
     > [!CAUTION]
     >  變更暫存器值 (尤其是 EIP 和 EBP 暫存器中的值) 會影響程式執行。  

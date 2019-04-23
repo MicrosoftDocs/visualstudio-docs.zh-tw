@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20974c9ebeaaa452be7078db51cb633be498b24c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2545db069db73fed59c95b3b4adc576facd51bc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067635"
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,7 +161,7 @@ private int Square(int i)
  如需有關控制區塊的詳細資訊，請參閱[文字範本控制區塊](../modeling/text-template-control-blocks.md)。  
   
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>類別功能區塊可以包含文字區塊。  
- 您可以撰寫可產生文字的方法。 例如：  
+ 您可以撰寫可產生文字的方法。 例如:   
   
 ```  
 List of Squares:  
@@ -191,7 +191,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>  
 ```  
   
- 您應該使用絕對路徑名稱，或在路徑名稱中使用標準巨集名稱。 例如：  
+ 您應該使用絕對路徑名稱，或在路徑名稱中使用標準巨集名稱。 例如:   
   
 ```  
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  
@@ -214,7 +214,7 @@ private void WriteSquareLine(int i)
   
  如需詳細資訊，請參閱 < [T4 匯入指示詞](../modeling/t4-import-directive.md)。  
   
-###  <a name="Include"></a> 包括程式碼和文字  
+### <a name="Include"></a> 包括程式碼和文字  
  `include` 指示詞會插入另一個範本檔中的文字。 例如，此指示詞會插入 `test.txt` 的內容。  
   
  `<#@ include file="c:\test.txt" #>`  

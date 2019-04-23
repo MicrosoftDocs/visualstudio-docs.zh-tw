@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7664c94f626b639f4d0330b938777d545128847d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 96d65ae615522bcee43ddf5e8181e96eecc0d958
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040853"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>錯誤：Windows 檔案共用已設定...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,16 +36,16 @@ ms.locfileid: "58945593"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-1.  使用其他帳戶名稱登入您所進行偵錯的本機電腦 (Local Machine)。  
+1. 使用其他帳戶名稱登入您所進行偵錯的本機電腦 (Local Machine)。  
   
      -或-  
   
      。 中斷與遠端電腦的連線，然後將檔案共用重新設定成使用您的帳戶名稱連接至另一台電腦：  
   
-    1.  在 [開始] 功能表中，指向 [附屬應用程式]，然後按一下 [命令提示字元]。  
+    1. 在 [開始] 功能表中，指向 [附屬應用程式]，然後按一下 [命令提示字元]。  
   
-    2.  在 Windows 命令提示字元中輸入：  
+    2. 在 Windows 命令提示字元中輸入：  
   
          `net use /delete computer_name`  
   
-    3.  使用 Windows 說明中記載的任何方法，變更您的檔案共用設定。
+    3. 使用 Windows 說明中記載的任何方法，變更您的檔案共用設定。

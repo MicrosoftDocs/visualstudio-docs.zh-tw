@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: dab9cd1600e77a480ca49c131aee2dbdcb8f0521
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 16ad197d40c05c9250b281b733a1bc6f95c9a2e0
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194758"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857485"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>使用 Windows PowerShell 指令碼來發行至開發和測試環境
 
@@ -24,7 +24,7 @@ ms.locfileid: "58194758"
 
 ## <a name="prerequisites"></a>必要條件
 
-* 已安裝 **Azure 工作負載**的 Visual Studio 2015 或更新版本，或 Visual Studio 2013 和 Azure SDK 2.3 或更新版本。 請參閱 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)。 (要產生 Web 專案的指令碼並不需要用到 Azure SDK。 這項功能是供 Web 專案使用，而非供雲端服務中的 Web 角色使用。)
+* 已安裝 **Azure 工作負載**的 Visual Studio 2015 或更新版本，或 Visual Studio 2013 和 Azure SDK 2.3 或更新版本。 請參閱 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。 (要產生 Web 專案的指令碼並不需要用到 Azure SDK。 這項功能是供 Web 專案使用，而非供雲端服務中的 Web 角色使用。)
 * Azure PowerShell 0.7.4 或更新版本。 請參閱 [如何安裝和設定 Azure PowerShell](/powershell/azure/overview)。
 * [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) 或更新版本。
 

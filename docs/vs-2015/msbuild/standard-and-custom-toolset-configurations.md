@@ -12,22 +12,20 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ad0d60921e9bb42f54cc70c49efbe64f036398d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c629d82d208f45433564c1b36bb5aa889e402915
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801670"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668323"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>標準和自訂工具組的組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用程式專案。 MSBuild 包含標準的工具組，但您也可以建立自訂工具組。 如需如何指定工具組的相關資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
 
 ## <a name="standard-toolset-configurations"></a>標準工具組組態  
  MSBuild 12.0 包含下列標準工具組：  
-
 
 | ToolsVersion | 工具組路徑 (如 MSBuildToolsPath 或 MSBuildBinPath 組建屬性中所指定) |
 |--------------|--------------------------------------------------------------------------------------|
@@ -103,5 +101,5 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
 
   您也可以使用新增 MSBuildToolsPath 屬性時所用的相同語法，在組態檔中新增自訂的工具版本特定屬性。 為使專案檔能夠使用這些自訂屬性，請使用和組態檔指定的值名稱相同的名稱。 您可以在組態檔中定義工具組，但不能定義子工具組。  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

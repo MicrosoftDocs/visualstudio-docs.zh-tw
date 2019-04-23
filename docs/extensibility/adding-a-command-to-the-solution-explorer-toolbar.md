@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fff1187793350b52484bcac99021be7fc2845607
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e6eadc98ccdc0960e4b4bc400a94f06b90fe89bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069493"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>將命令加入至 [方案總管] 工具列
 本逐步解說示範如何加入一個按鈕來**方案總管 中**工具列。
@@ -38,13 +38,13 @@ ms.locfileid: "56717789"
 ## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>將按鈕加入 [方案總管] 工具列
  本章節的逐步解說示範如何加入一個按鈕來**方案總管 中**工具列。 當按一下按鈕時，會執行的回呼方法中的程式碼。
 
-1.  在  *ToolbarButtonPackage.vsct*檔案中，移至`<Symbols>`一節。 `<GuidSymbol>`節點包含功能表群組和 [套件] 範本所產生的命令。 新增`<IDSymbol>`到這個節點，以宣告會保留您的命令群組的項目。
+1. 在  *ToolbarButtonPackage.vsct*檔案中，移至`<Symbols>`一節。 `<GuidSymbol>`節點包含功能表群組和 [套件] 範本所產生的命令。 新增`<IDSymbol>`到這個節點，以宣告會保留您的命令群組的項目。
 
     ```xml
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>
     ```
 
-2.  在 [ `<Groups>` ] 區段中之後的現有的群組項目，, 定義您宣告的新群組在上一個步驟。
+2. 在 [ `<Groups>` ] 區段中之後的現有的群組項目，, 定義您宣告的新群組在上一個步驟。
 
     ```xml
     <Group guid="guidToolbarButtonPackageCmdSet"
@@ -55,7 +55,7 @@ ms.locfileid: "56717789"
 
      若要設定父系 guid: id 配對`guidSHLMainMenu`和`IDM_VS_TOOL_PROJWIN`會將此群組放**方案總管 中**工具列上，並設定高優先順序的值時將它放在其他的命令群組之後。
 
-3.  在 `<Buttons>`區段中，變更所產生的父識別碼`<Button>`項目，以反映您在上一個步驟中定義的群組。 已修改`<Button>`項目應該看起來像這樣：
+3. 在 `<Buttons>`區段中，變更所產生的父識別碼`<Button>`項目，以反映您在上一個步驟中定義的群組。 已修改`<Button>`項目應該看起來像這樣：
 
     ```xml
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">
@@ -67,11 +67,11 @@ ms.locfileid: "56717789"
     </Button>
     ```
 
-4.  建置此專案並開始偵錯。 實驗執行個體隨即出現。
+4. 建置此專案並開始偵錯。 實驗執行個體隨即出現。
 
      **方案總管] 中**工具列應該會顯示新的命令按鈕右邊的 [現有的按鈕。 按鈕圖示為加刪除線。
 
-5.  按一下 [新增] 按鈕。
+5. 按一下 [新增] 按鈕。
 
      訊息的對話方塊**ToolbarButtonPackage 內 SolutionToolbar.ToolbarButton.MenuItemCallback()** 應該會顯示。
 

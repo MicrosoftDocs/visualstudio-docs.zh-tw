@@ -21,25 +21,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4eb2e58070a4be9d9dd5d70fdaddfd5eee997a41
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1af1b3ea3f8996d1d9aed2245514c51751f11bc2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112386"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio 中的 office 和 SharePoint 開發
   若要擴充 Microsoft Office 和 SharePoint，您可以建立讓使用者從 [Office 市集](https://store.office.com/) 或組織目錄下載的輕量應用程式或增益集，或是建立以 .NET Framework 為基礎的解決方案，讓使用者可以安裝在電腦上。
 
  本主題內容：
 
--   [建立適用於 Office 和 SharePoint 的增益集](#Apps)
+- [建立適用於 Office 和 SharePoint 的增益集](#Apps)
 
--   [建立 VSTO 增益集](#Add-ins)
+- [建立 VSTO 增益集](#Add-ins)
 
--   [建立 SharePoint 解決方案](#Solutions)
+- [建立 SharePoint 解決方案](#Solutions)
 
-##  <a name="Apps"></a> 建立適用於 Office 和 SharePoint 的增益集
+## <a name="Apps"></a> 建立適用於 Office 和 SharePoint 的增益集
  Office 2013 與 SharePoint 2013 導入新的增益集模型，可協助您將擴充 Office 和 SharePoint 的增益集加以建置、散佈及商品化。  這些增益集可以在 Office 或 SharePoint Online 上執行，而且使用者可以從許多裝置來與其互動。
 
  了解如何使用新[Office 增益集模型](/office/dev/add-ins/overview/office-add-ins)來擴充您的使用者的 Office 體驗。
@@ -81,7 +81,7 @@ ms.locfileid: "56607053"
 |將 SharePoint 增益集與傳統 SharePoint 解決方案相比較。|[SharePoint 增益集與 SharePoint 解決方案相比較](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 |選擇要建置 SharePoint 增益集，還是建置 SharePoint 解決方案。|[SharePoint 增益集與 SharePoint 解決方案之間做決定](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 
-##  <a name="Add-ins"></a> 建立 VSTO 增益集
+## <a name="Add-ins"></a> 建立 VSTO 增益集
  建立 VSTO 增益集以 Office 2007 或 Office 2010 為目標或來超越 Office 2013 和 Office 2016 的功能可能與 Office 增益集。VSTO 增益集只會在桌面上執行。 使用者必須安裝 VSTO 增益集，所以通常較難部署和支援。  不過，您的 VSTO 增益集可以與 Office 更密切地整合。 例如，它可以將索引標籤和控制項加入至 Office 功能區，以及執行進階的自動化工作，例如合併文件或修改圖表。 您可以運用 .NET Framework，並使用 C# 和 Visual Basic 來與 Office 物件互動。
 
  以下是什麼的 VSTO 增益集可以執行的作業的範例。 這個 VSTO 增益集將功能區控制項、自訂工作窗格與對話方塊加入 PowerPoint 中。
@@ -95,7 +95,7 @@ ms.locfileid: "56607053"
 |比較擴充 Office 的不同方式，並決定您應該要使用 VSTO 增益集或 Office 增益集。|[Office 增益集、 VSTO 和 VBA 的藍圖](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
 |建立 VSTO 增益集。|[使用 Visual Studio 來建置 VSTO 增益集](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
 
-##  <a name="Solutions"></a> 建立 SharePoint 解決方案
+## <a name="Solutions"></a> 建立 SharePoint 解決方案
  建立 SharePoint Foundation 2010 和 SharePoint Server 2010 為目標，或利用超出可透過 SharePoint 增益集的方式來擴充 SharePoint 2013 和 SharePoint 2016 的 SharePoint 方案。
 
  SharePoint 解決方案需要內部部署 SharePoint 陣列伺服器。 系統管理員必須加以安裝，而且因為解決方案是在 SharePoint 中執行，所以可能會影響伺服器的效能。 不過，解決方案提供對 SharePoint 物件更深層的存取。 此外，當您建置 SharePoint 解決方案時，您可以運用 .NET Framework，並使用 C# 和 Visual Basic 來與 SharePoint 物件互動。

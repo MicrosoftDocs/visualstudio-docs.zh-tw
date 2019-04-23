@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942194"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068700"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>HOW TO：偵錯 Visual Studio 方案可執行檔不屬於
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ ms.locfileid: "58942194"
   
 ### <a name="to-create-an-exe-project-for-an-existing-executable"></a>若要為現有的可執行檔建立 EXE 專案  
   
-1.  在上**檔案**功能表上，按一下**開放**，然後選取**專案**。  
+1. 在上**檔案**功能表上，按一下**開放**，然後選取**專案**。  
   
-2.  在 **開啟專案** 對話方塊中，按一下下拉式清單下的一步**檔案名稱**方塊，然後選取**所有專案檔**。  
+2. 在 **開啟專案** 對話方塊中，按一下下拉式清單下的一步**檔案名稱**方塊，然後選取**所有專案檔**。  
   
-3.  找出可執行檔，然後按一下**確定**。  
+3. 找出可執行檔，然後按一下**確定**。  
   
      這樣便可以建立包含該可執行檔的暫時方案。  
   
 ### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>若要將可執行檔匯入至 Visual Studio 方案中  
   
-1.  在上**檔案**功能表上，指向**新增專案**，然後按一下 **現有專案**。  
+1. 在上**檔案**功能表上，指向**新增專案**，然後按一下 **現有專案**。  
   
-2.  在 **加入現有專案** 對話方塊中，按一下下拉式清單下的一步**檔案名稱**方塊，然後選取**所有專案檔**。  
+2. 在 **加入現有專案** 對話方塊中，按一下下拉式清單下的一步**檔案名稱**方塊，然後選取**所有專案檔**。  
   
-3.  找出並選取可執行檔。  
+3. 找出並選取可執行檔。  
   
-4.  按一下 [確定 **Deploying Office Solutions**]。  
+4. 按一下 [確定] 。  
   
-5.  選擇執行命令，例如啟動可執行檔**開始**，從**偵錯**功能表。  
+5. 選擇執行命令，例如啟動可執行檔**開始**，從**偵錯**功能表。  
   
     > [!NOTE]
     >  並非所有的程式語言都支援 EXE 專案。 如果您需要使用這項功能，請安裝 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]。  

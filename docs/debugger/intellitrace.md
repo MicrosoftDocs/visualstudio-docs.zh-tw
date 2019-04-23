@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 5f17be088d27e473af0c45a950541fe0f5b77085
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232693"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098645"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio enterprise 的 IntelliTrace (C#，Visual Basic 中， C++)
 
@@ -59,7 +59,7 @@ ms.locfileid: "59232693"
 > [!NOTE]
 > 如果您想要偵錯已執行的處理序，您可以只收集 IntelliTrace 事件 （沒有呼叫資訊）。 您可以附加至只在本機電腦上的 32 位元或 64 位元處理序。 不會收集您附加至處理序之前發生的事件。
 
-##  <a name="IntelliTraceVSTraditional"></a> 為什麼要使用 IntelliTrace 進行偵錯？
+## <a name="IntelliTraceVSTraditional"></a> 為什麼要使用 IntelliTrace 進行偵錯？
 
 傳統或「即時」(Live) 偵錯只會顯示應用程式的目前狀態，並只包含有關過去事件的有限資料。 您必須根據應用程式的目前狀態來推斷這些事件，或者必須透過重新執行應用程式來重新建立這些事件。
 
@@ -97,7 +97,7 @@ IntelliTrace 也可協助您偵錯難以重現或在部署中發生的錯誤。 
 
      如果要診斷部署中的應用程式的問題時，這十分有用。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
-##  <a name="WhatData"></a> IntelliTrace 會收集哪些資料？
+## <a name="WhatData"></a> IntelliTrace 會收集哪些資料？
 
 **收集事件資訊**
 

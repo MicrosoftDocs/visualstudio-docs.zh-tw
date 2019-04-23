@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6e52c9a34b5fc6ea487cffd1728a525dc5a0984
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766220"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097410"
 ---
 # <a name="install-and-manage-local-content"></a>安裝與管理本機內容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,18 +43,18 @@ ms.locfileid: "54766220"
   
 #### <a name="to-change-the-content-installation-source"></a>變更內容安裝來源  
   
-1.  在 [管理內容] 索引標籤上，選擇 [磁碟] 選項按鈕。  
+1. 在 [管理內容] 索引標籤上，選擇 [磁碟] 選項按鈕。  
   
     > [!NOTE]
     >  如果系統管理員阻止您修改內容安裝來源，則 [磁碟] 選項無法使用。 如需詳細資訊，請參閱[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)。  
   
-2.  請執行下列其中一個步驟：  
+2. 請執行下列其中一個步驟：  
   
-    -   輸入 .msha 檔案的路徑或服務端點的 URL。  
+    - 輸入 .msha 檔案的路徑或服務端點的 URL。  
   
-    -   選擇 [瀏覽]\(**...**) 按鈕巡覽至 .msha 檔案。  
+    - 選擇 [瀏覽]\(**...**) 按鈕巡覽至 .msha 檔案。  
   
-    -   在清單中，選擇最近使用的項目。  
+    - 在清單中，選擇最近使用的項目。  
   
 ## <a name="download-and-install-content-locally"></a>在本機下載及安裝內容  
  如果您在本機電腦上下載及安裝內容，就可以不使用網際網路連線來檢視主題。  
@@ -66,13 +66,13 @@ ms.locfileid: "54766220"
   
 #### <a name="to-download-and-install-content"></a>下載及安裝內容  
   
-1.  選擇 [管理內容] 索引標籤。  
+1. 選擇 [管理內容] 索引標籤。  
   
-2.  在內容清單中，選擇 [新增] 連結，這位於您想要下載並安裝的書籍旁邊。  
+2. 在內容清單中，選擇 [新增] 連結，這位於您想要下載並安裝的書籍旁邊。  
   
      本書已加入 [暫止的變更] 清單，您所指定書籍的預估大小會出現在該清單下方。 由於有些書籍會共用主題，所以多本書籍的總下載大小可能小於每本指定書籍大小加在一起的結果。  
   
-3.  選擇 [更新] 按鈕。  
+3. 選擇 [更新] 按鈕。  
   
      您所指定的書籍會隨任何您早已安裝在電腦上的書籍更新一併安裝。 安裝時間不盡相同，但是您可以在狀態列中檢視進度。  
   
@@ -86,13 +86,13 @@ ms.locfileid: "54766220"
   
 #### <a name="to-remove-content"></a>移除內容  
   
-1.  選擇 [管理內容] 索引標籤。  
+1. 選擇 [管理內容] 索引標籤。  
   
-2.  在內容清單中，選擇 [移除] 連結，此位於您想要移除的書籍旁邊。  
+2. 在內容清單中，選擇 [移除] 連結，此位於您想要移除的書籍旁邊。  
   
      本書已新增 [暫止的變更] 清單。  
   
-3.  選擇 [更新] 按鈕。  
+3. 選擇 [更新] 按鈕。  
   
      您所指定的書籍會從電腦移除。  
   
@@ -116,13 +116,13 @@ ms.locfileid: "54766220"
   
 #### <a name="to-move-local-content"></a>移動本機內容  
   
-1.  在 [管理內容] 索引標籤上，選擇 [本機存放區路徑] 底下的 [移動] 按鈕。  
+1. 在 [管理內容] 索引標籤上，選擇 [本機存放區路徑] 底下的 [移動] 按鈕。  
   
      [移動內容] 對話方塊隨即開啟。  
   
-2.  在 [至] 文字方塊中，輸入一個不同的內容位置，然後選擇 [確定] 按鈕。  
+2. 在 [至] 文字方塊中，輸入一個不同的內容位置，然後選擇 [確定] 按鈕。  
   
-3.  當內容經移動後，請選擇 [關閉] 按鈕。  
+3. 當內容經移動後，請選擇 [關閉] 按鈕。  
   
 ## <a name="see-also"></a>請參閱  
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

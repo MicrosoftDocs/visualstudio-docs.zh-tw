@@ -14,12 +14,12 @@ caps.latest.revision: 58
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f903ddbf82686846298e21765e405d939f11e1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e0ac9d085a837ab3ab05754ce70d853112bc48d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754814"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096513"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>逐步解說：找出效能問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "54754814"
   
  在這個逐步解說中，您將會依照下列步驟進行：  
   
--   使用取樣方法剖析應用程式。  
+- 使用取樣方法剖析應用程式。  
   
--   分析取樣的剖析結果，找出並修正效能問題。  
+- 分析取樣的剖析結果，找出並修正效能問題。  
   
--   使用檢測方法剖析應用程式。  
+- 使用檢測方法剖析應用程式。  
   
--   分析檢測的剖析結果，找出並修正效能問題。  
+- 分析檢測的剖析結果，找出並修正效能問題。  
   
 ## <a name="prerequisites"></a>必要條件  
   
@@ -51,29 +51,29 @@ ms.locfileid: "54754814"
   
 #### <a name="to-profile-an-application-by-using-the-sampling-method"></a>使用取樣方法剖析應用程式  
   
-1.  以系統管理員權限開啟 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]。 需要以系統管理員身分執行剖析。  
+1. 以系統管理員權限開啟 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]。 需要以系統管理員身分執行剖析。  
   
-2.  開啟 PeopleTrax 方案。  
+2. 開啟 PeopleTrax 方案。  
   
      PeopleTrax 方案會填入 [方案總管] 中。  
   
-3.  請將專案組態設定為 [發行]。  
+3. 請將專案組態設定為 [發行]。  
   
      您應該使用發行組建來偵測應用程式中的效能問題。 由於偵錯組建編譯時會插入額外資訊，可能對效能產生負面影響，而無法正確描述效能問題，因此建議您在剖析時使用發行組建。  
   
-4.  按一下 [分析]  功能表上的 [啟動效能精靈] 。  
+4. 按一下 [分析]  功能表上的 [啟動效能精靈] 。  
   
      [效能精靈] 隨即出現。  
   
-5.  確定已選取 [CPU 取樣 (建議使用)]，然後按 [下一步]。  
+5. 確定已選取 [CPU 取樣 (建議使用)]，然後按 [下一步]。  
   
-6.  在 [您要以哪一個應用程式做為剖析的目標] 中，選取 [PeopleTrax]，然後按 [下一步]。  
+6. 在 [您要以哪一個應用程式做為剖析的目標] 中，選取 [PeopleTrax]，然後按 [下一步]。  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 會建置專案並開始剖析應用程式。 [PeopleTrax] 應用程式視窗隨即出現。  
   
-7.  按一下 [取得人員]。  
+7. 按一下 [取得人員]。  
   
-8.  按一下 [匯出資料]。  
+8. 按一下 [匯出資料]。  
   
      [記事本] 便會開啟，並顯示包含從 [PeopleTrax] 匯出之資料的新檔案。  
   
@@ -83,23 +83,23 @@ ms.locfileid: "54754814"
   
 #### <a name="to-analyze-sampled-profiling-results"></a>分析取樣的剖析結果  
   
-1.  [摘要] 檢視會顯示在執行程式碼剖析過程中的 CPU 使用率時間軸、代表應用程式呼叫樹狀圖中最活躍分支的 [最忙碌路徑] 清單，以及執行函式主體中的程式碼時取得最多樣本之函式的 [執行最多個別工作的函式] 清單。  
+1. [摘要] 檢視會顯示在執行程式碼剖析過程中的 CPU 使用率時間軸、代表應用程式呼叫樹狀圖中最活躍分支的 [最忙碌路徑] 清單，以及執行函式主體中的程式碼時取得最多樣本之函式的 [執行最多個別工作的函式] 清單。  
   
      檢查 [最忙碌路徑] 清單，並且注意到 PeopleNS.People.GetNames 方法是最接近清單結尾的 PeopleTrax 函式。 這個位置讓它成為分析的候選項。 按一下函式名稱，在 [函式詳細資料] 檢視中顯示 GetNames 的詳細資料。  
   
-2.  [函式詳細資料] 檢視包含兩個視窗。 [成本分配] 視窗提供下列項目的圖形檢視：函式已完成的工作、它呼叫的函式已完成的工作，以及呼叫此函式之函式對取樣執行個體數目的比重。 您可以按一下函式名稱以變更檢視的焦點函式。 例如，您可以按一下 PeopleNS.People.GetPeople，讓 GetPeople 成為選取的函式。  
+2. [函式詳細資料] 檢視包含兩個視窗。 [成本分配] 視窗提供下列項目的圖形檢視：函式已完成的工作、它呼叫的函式已完成的工作，以及呼叫此函式之函式對取樣執行個體數目的比重。 您可以按一下函式名稱以變更檢視的焦點函式。 例如，您可以按一下 PeopleNS.People.GetPeople，讓 GetPeople 成為選取的函式。  
   
      [函式程式碼檢視] 視窗會顯示函式函式原始程式碼 (若可用)，並且反白顯示選取的函式中耗費最多資源的程式行。 選取 GetNames 時，您可以看到這個函式會從應用程式資源讀取字串，然後使用 <xref:System.IO.StringReader> 將字串中的每一行新增至 <xref:System.Collections.ArrayList>。 沒有顯著方式可以最佳化這個函式。  
   
-3.  因為 PeopleNS.People.GetPeople 是 GetNames 的唯一呼叫端，請按一下 [成本分配] 視窗中的 [GetPeople] 來檢查其程式碼。 這個方法會從 GetNames 所產生的人員和公司名稱傳回 PersonInformationNS.PersonInformation 物件的 <xref:System.Collections.ArrayList>。 不過，每次建立 PersonInformation 物件時會呼叫 GetNames 兩次。 您會發現只要在方法開頭建立清單一次，然後在 PersonInformation 建立迴圈期間在這些清單中索引，即可輕鬆最佳化方法。  
+3. 因為 PeopleNS.People.GetPeople 是 GetNames 的唯一呼叫端，請按一下 [成本分配] 視窗中的 [GetPeople] 來檢查其程式碼。 這個方法會從 GetNames 所產生的人員和公司名稱傳回 PersonInformationNS.PersonInformation 物件的 <xref:System.Collections.ArrayList>。 不過，每次建立 PersonInformation 物件時會呼叫 GetNames 兩次。 您會發現只要在方法開頭建立清單一次，然後在 PersonInformation 建立迴圈期間在這些清單中索引，即可輕鬆最佳化方法。  
   
-4.  在範例應用程式的程式碼中提供了 GetPeople 替代版本，您可以將條件式編譯符號加入至組建屬性來呼叫最佳化函式。 在 [方案總管] 視窗中，以滑鼠右鍵按一下 [人員] 專案，然後按一下 [屬性]。 按一下屬性頁功能表上的 [建置]，然後在 [條件式編譯的符號] 文字方塊中輸入 **OPTIMIZED_GETPEOPLE**。 GetPeople 的最佳化版本就會在下一個組建中取代原始方法。  
+4. 在範例應用程式的程式碼中提供了 GetPeople 替代版本，您可以將條件式編譯符號加入至組建屬性來呼叫最佳化函式。 在 [方案總管] 視窗中，以滑鼠右鍵按一下 [人員] 專案，然後按一下 [屬性]。 按一下屬性頁功能表上的 [建置]，然後在 [條件式編譯的符號] 文字方塊中輸入 **OPTIMIZED_GETPEOPLE**。 GetPeople 的最佳化版本就會在下一個組建中取代原始方法。  
   
-5.  重新執行效能工作階段。 在 [效能總管] 工具列上，按一下 [啟動並啟用程式碼剖析]。 按一下 [取得人員]，然後按一下 [匯出資料]。 關閉出現的 [記事本] 視窗，然後關閉 PeopleTrax 應用程式。  
+5. 重新執行效能工作階段。 在 [效能總管] 工具列上，按一下 [啟動並啟用程式碼剖析]。 按一下 [取得人員]，然後按一下 [匯出資料]。 關閉出現的 [記事本] 視窗，然後關閉 PeopleTrax 應用程式。  
   
      隨即產生新的程式碼剖析資料檔案，而且新資料的 [摘要] 檢視會出現在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 主視窗中。  
   
-6.  若要比較兩個程式碼剖析回合，請在 [效能總管] 中選取兩個資料檔案，以滑鼠右鍵按一下檔案，然後按一下 [比較效能報告]。 [比較報告] 視窗隨即出現在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 主視窗中。 [差異] 資料行會顯示函式效能值從先前 [基準] 值到後來 [比較] 值的變更。 您可以在 [資料行] 下拉式清單中選取要比較的值。 選取 [內含樣本 %]。  
+6. 若要比較兩個程式碼剖析回合，請在 [效能總管] 中選取兩個資料檔案，以滑鼠右鍵按一下檔案，然後按一下 [比較效能報告]。 [比較報告] 視窗隨即出現在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 主視窗中。 [差異] 資料行會顯示函式效能值從先前 [基準] 值到後來 [比較] 值的變更。 您可以在 [資料行] 下拉式清單中選取要比較的值。 選取 [內含樣本 %]。  
   
      您會發現 GetPeople 和 GetNames 方法的效能有顯著改進。  
   
@@ -110,25 +110,25 @@ ms.locfileid: "54754814"
   
 #### <a name="to-profile-an-existing-application-by-using-the-instrumentation-method"></a>使用檢測方法剖析現有的應用程式  
   
-1.  必要時，在 Visual Studio 中開啟 PeopleTrax 應用程式。  
+1. 必要時，在 Visual Studio 中開啟 PeopleTrax 應用程式。  
   
      確定您是以系統管理員身分執行，而且方案的組建組態已設為 [發行]。  
   
-2.  在 [效能總管] 中，按一下 [檢測]。  
+2. 在 [效能總管] 中，按一下 [檢測]。  
   
-3.  在 [效能總管] 工具列上，按一下 [啟動並啟用程式碼剖析]。  
+3. 在 [效能總管] 工具列上，按一下 [啟動並啟用程式碼剖析]。  
   
      分析工具就會建置專案並開始剖析應用程式。 [PeopleTrax] 應用程式視窗隨即出現。  
   
-4.  按一下 [取得人員]。  
+4. 按一下 [取得人員]。  
   
      PeopleTrax 資料格會填入資料。  
   
-5.  等候約 10 秒，然後按一下 [匯出資料]。  
+5. 等候約 10 秒，然後按一下 [匯出資料]。  
   
      [記事本] 便會啟動並顯示新檔案，這個新檔案則包含從 [PeopleTrax] 匯出的人員清單。 等候可讓您更輕鬆識別要篩選的資料匯出程序。  
   
-6.  關閉 [記事本]，然後關閉 [PeopleTrax] 應用程式。  
+6. 關閉 [記事本]，然後關閉 [PeopleTrax] 應用程式。  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 便會產生一份效能工作階段報告 (*.vsp)。  
   
@@ -158,7 +158,7 @@ ms.locfileid: "54754814"
   
    當您再次執行應用程式時，便可見到顯著的效能改進。 雖然使用者能感覺到效能已有所改善，還是建議您再次執行剖析工作階段。 由於第一個問題可能會遮蔽其他問題，因此在修正問題後再次檢閱資料是很重要的。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   
  [入門](../profiling/getting-started-with-performance-tools.md)   
  [/Z7、/Zi、/ZI (偵錯資訊格式)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

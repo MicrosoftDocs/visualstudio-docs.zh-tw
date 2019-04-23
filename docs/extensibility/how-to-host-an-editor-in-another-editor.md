@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5dffffd8f2857dbb048b829cec0d2e7847a05c5f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 95e48f6ab7ea6603308f4d6b9fb547e25901a398
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021136"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097449"
 ---
 # <a name="how-to-host-an-editor-in-another-editor"></a>HOW TO：裝載在其他編輯器中的編輯器
 
@@ -23,17 +23,17 @@ ms.locfileid: "55021136"
 
 ## <a name="to-set-up-the-window-frame-to-host-an-editor"></a>若要設定裝載編輯器的視窗框架
 
-1.  指定做為裝載編輯器的編輯器，藉由建立子視窗窗格。
+1. 指定做為裝載編輯器的編輯器，藉由建立子視窗窗格。
 
      此窗格是編輯器 的文字會去的地方。
 
-2.  建立使用主控編輯器<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>方法。
+2. 建立使用主控編輯器<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>方法。
 
-3.  設定<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentHwnd>並<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentFrame>做為參數傳遞這些屬性的裝載編輯器的視窗框架實作中的屬性<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>方法，分別。
+3. 設定<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentHwnd>並<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentFrame>做為參數傳遞這些屬性的裝載編輯器的視窗框架實作中的屬性<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>方法，分別。
 
      如果您需要擷取這些參數，傳遞至這些屬性<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>方法。
 
-4.  呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>自主編輯器的方法。
+4. 呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>自主編輯器的方法。
 
      編輯器會出現在裝載包含編輯器窗格中。
 

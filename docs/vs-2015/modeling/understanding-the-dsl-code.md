@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc0db508fc06cc5b80db589ba7ebd88bc3221be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942331"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068427"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ ms.locfileid: "58942331"
   
  強烈建議您不要直接編輯產生的程式碼，因為當您重建方案時，您的編輯將會遺失。 相反地，若要自訂您的 DSL：  
   
--   調整 DSL 定義中的許多參數。  
+- 調整 DSL 定義中的許多參數。  
   
--   以不同的程式碼檔案撰寫部分類別，覆寫產生的類別中所定義或繼承的方法。 在某些情況下，您必須設定**產生雙衍生**才能覆寫產生的方法在 DSL 定義中，類別的選項。  
+- 以不同的程式碼檔案撰寫部分類別，覆寫產生的類別中所定義或繼承的方法。 在某些情況下，您必須設定**產生雙衍生**才能覆寫產生的方法在 DSL 定義中，類別的選項。  
   
--   設定 DSL 定義中的選項，使產生的程式碼為您自己的程式碼提供「攔截」。  
+- 設定 DSL 定義中的選項，使產生的程式碼為您自己的程式碼提供「攔截」。  
   
      例如，如果您設定**有自訂建構函式**選項的網域類別，然後建置方案，您會看到錯誤訊息。 當您按兩下其中一個錯誤訊息時，您會看到產生的程式碼中的註解，說明自訂程式碼應提供的項目。  
   
--   撰寫您自己的文字範本，以產生應用程式特定的程式碼。 您可以使用包含檔案，以共用許多專案通用的範本組件，也可以建立 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案範本，以設定透過您自己的檔案結構初始化的專案。  
+- 撰寫您自己的文字範本，以產生應用程式特定的程式碼。 您可以使用包含檔案，以共用許多專案通用的範本組件，也可以建立 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案範本，以設定透過您自己的檔案結構初始化的專案。  
   
 ## <a name="generated-files-in-dsl"></a>在 DSL 中產生的檔案  
  下列產生的檔案會出現在**Dsl**專案。  
@@ -72,7 +72,7 @@ ms.locfileid: "58942331"
   
  (在元件方案範例中，其中一個連接產生器稱為 ConnectionBuilder，這是巧合，因為網域關聯性的名稱剛好是 Connection。)  
   
- 在 建立關聯性*關聯性*`Builder.Connect()`方法。 預設版本驗證來源和目標模型項目是可接受的，然後再具現化關聯性。 例如：  
+ 在 建立關聯性*關聯性*`Builder.Connect()`方法。 預設版本驗證來源和目標模型項目是可接受的，然後再具現化關聯性。 例如:   
   
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`  
   

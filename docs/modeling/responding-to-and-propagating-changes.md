@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 188ad2ca0ff0b84d94c58cb42076c6b0782742a1
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416028"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078638"
 ---
 # <a name="responding-to-and-propagating-changes"></a>回應及傳播變更
 當建立、 刪除或更新項目時，您可以撰寫會傳播變更的其他部分的模型或外部的資源，例如檔案、 資料庫或其他元件的程式碼。
@@ -41,13 +41,13 @@ ms.locfileid: "58416028"
 
  若要使用外部存放區和規則，以維護一致性的存放區中的物件同步處理的模型使用存放區事件。
 
--   **建立自訂規則**您建立自訂規則做為衍生的類別，從抽象的規則。 您也必須通知的自訂規則相關的架構。 如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。
+- **建立自訂規則**您建立自訂規則做為衍生的類別，從抽象的規則。 您也必須通知的自訂規則相關的架構。 如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。
 
--   **訂閱事件**可以訂閱事件之前，請建立事件處理常式和委派。 然後使用<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>訂閱事件的屬性。 如需詳細資訊，請參閱 <<c0> [ 事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
+- **訂閱事件**可以訂閱事件之前，請建立事件處理常式和委派。 然後使用<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>訂閱事件的屬性。 如需詳細資訊，請參閱 <<c0> [ 事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
--   **正在恢復變更**時將交易復原，會引發事件，但不是會套用規則。 如果規則變更的值，而且復原這項變更，值會重設為原始值期間復原動作。 當引發事件時，您必須手動變更此值設回其原始值。 若要深入了解交易和復原，請參閱[How to:使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
+- **正在恢復變更**時將交易復原，會引發事件，但不是會套用規則。 如果規則變更的值，而且復原這項變更，值會重設為原始值期間復原動作。 當引發事件時，您必須手動變更此值設回其原始值。 若要深入了解交易和復原，請參閱[How to:使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
 
--   **傳遞規則和事件的事件引數**這兩個事件和傳遞規則`EventArgs`參數，其資訊的模型變更。
+- **傳遞規則和事件的事件引數**這兩個事件和傳遞規則`EventArgs`參數，其資訊的模型變更。
 
 ## <a name="see-also"></a>另請參閱
 

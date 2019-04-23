@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: ghogen
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: ab9a645ac5bb656336ff38114987ff3838c416f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f9f81b91e0593d42e7792d7596648dc53afd8dd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941846"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039397"
 ---
 # <a name="optimizing-your-azure-code"></a>最佳化您的 Azure 程式碼
 當您在撰寫使用 Microsoft Azure 的應用程式時，請遵循某些程式碼撰寫實務，以避免應用程式在雲端環境中發生延展性、行為和效能方面的問題。 Microsoft 有提供 Azure Code Analysis 工具，可辨識並找出許多常見問題，並幫助您解決這些問題。 您可以在 Visual Studio 中透過 NuGet 下載此工具。
@@ -216,6 +216,7 @@ while (true)
    }
 }
 ```
+
 ## <a name="consider-using-asynchronous-service-bus-methods"></a>考慮使用非同步服務匯流排方法
 ### <a name="id"></a>識別碼
 AP2003

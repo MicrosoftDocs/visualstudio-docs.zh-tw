@@ -19,12 +19,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 39c5c5062841dd0a9c5c34e86d96c5d2fc6ac2be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd3cbbcd740c0f124b8ab4379204a9d425cd541c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946000"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039540"
 ---
 # <a name="how-to-debug-web-applications"></a>HOW TO：偵錯 Web 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,25 +33,25 @@ ms.locfileid: "58946000"
   
  若要偵錯 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式：  
   
--   您必須具有必要的使用權限。 如需詳細資訊，請參閱 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)。  
+- 您必須具有必要的使用權限。 如需詳細資訊，請參閱 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)。  
   
--   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 偵錯必須在啟用**專案屬性**。  
+- [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 偵錯必須在啟用**專案屬性**。  
   
--   應用程式的組態檔 (Web.config) 必須設為偵錯模式。 偵錯模式會導致 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 產生動態產生之檔案的符號，並使偵錯工具附加到 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式。 如果您已從 Web 專案範本建立專案，則 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會在開始偵錯時自動設定這個項目。  
+- 應用程式的組態檔 (Web.config) 必須設為偵錯模式。 偵錯模式會導致 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 產生動態產生之檔案的符號，並使偵錯工具附加到 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 應用程式。 如果您已從 Web 專案範本建立專案，則 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會在開始偵錯時自動設定這個項目。  
   
--   如需詳細資訊，請參閱[如何：啟用 ASP.NET 應用程式的偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)。  
+- 如需詳細資訊，請參閱[如何：啟用 ASP.NET 應用程式的偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)。  
   
 ### <a name="to-debug-a-web-application-during-development"></a>若要在開發期間偵錯 Web 應用程式  
   
-1.  在 [**偵錯**] 功能表中，按一下**開始**開始偵錯 Web 應用程式。  
+1. 在 [**偵錯**] 功能表中，按一下**開始**開始偵錯 Web 應用程式。  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會建置 Web 應用程式專案、視需要部署應用程式、如果您在本機偵錯，則會啟動 ASP.NET 程式開發伺服器，以及附加至 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序。  
   
-2.  使用偵錯工具來設定和清除中斷點、逐步執行和執行其他偵錯作業，就和您使用任何應用程式一樣。  
+2. 使用偵錯工具來設定和清除中斷點、逐步執行和執行其他偵錯作業，就和您使用任何應用程式一樣。  
   
      如需詳細資訊，請參閱 <<c0> [ 偵錯工具基本概念](../debugger/debugger-basics.md)。  
   
-3.  在上**偵錯**] 功能表中，按一下**停止偵錯**端偵錯工作階段中，或上**檔案**功能表中 Internet Explorer 中，按一下 [**關閉**。  
+3. 在上**偵錯**] 功能表中，按一下**停止偵錯**端偵錯工作階段中，或上**檔案**功能表中 Internet Explorer 中，按一下 [**關閉**。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)   

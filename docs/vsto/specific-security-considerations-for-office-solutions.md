@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1a40fe9329061b457fb2038399324818ec69e43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629075"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081316"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>指定 Office 方案的安全性考量
   Microsoft .NET Framework 和 Microsoft Office 所提供的安全性功能，可協助保護您的 Office 解決方案免於可能的安全性威脅。 本主題說明一些這類威脅，並提供建議協助您免於威脅。 本主題也包含 Microsoft Office 安全性設定如何影響 Office 方案的相關資訊。
@@ -39,13 +39,13 @@ ms.locfileid: "56629075"
 
 ### <a name="recommendations"></a>建議
 
--   一律驗證輸入和資料，不論其來自使用者、文件、資料庫、Web 服務或任何其他來源。
+- 一律驗證輸入和資料，不論其來自使用者、文件、資料庫、Web 服務或任何其他來源。
 
--   若要公開特定類型的功能須格外謹慎，例如代表使用者取得有權限的資料，並將該資料放入受保護的活頁簿。
+- 若要公開特定類型的功能須格外謹慎，例如代表使用者取得有權限的資料，並將該資料放入受保護的活頁簿。
 
--   根據應用程式類型而定，在執行任何程式碼之前，先確認原始文件正在執行是合理的做法。 例如，請確認該程式碼於儲存在已知且安全位置上的文件中執行。
+- 根據應用程式類型而定，在執行任何程式碼之前，先確認原始文件正在執行是合理的做法。 例如，請確認該程式碼於儲存在已知且安全位置上的文件中執行。
 
--   如果您的應用程式會執行任何特殊權限的動作，則在文件開啟時顯示警告也可能是不錯的主意。 例如，您可能會建立啟動顯示畫面或啟動對話方塊，指出此應用程式會存取個人資訊，然後讓使用者選擇繼續或取消。 如果使用者從看似無害的文件接收這類警告，該使用者將能在任何項目遭到入侵之前，先結束應用程式。
+- 如果您的應用程式會執行任何特殊權限的動作，則在文件開啟時顯示警告也可能是不錯的主意。 例如，您可能會建立啟動顯示畫面或啟動對話方塊，指出此應用程式會存取個人資訊，然後讓使用者選擇繼續或取消。 如果使用者從看似無害的文件接收這類警告，該使用者將能在任何項目遭到入侵之前，先結束應用程式。
 
 ## <a name="code-is-blocked-by-the-outlook-object-model-guard"></a>程式碼遭 Outlook 物件模型保護
  Microsoft Office 可以限制程式碼使用物件模型中的特定屬性、方法和物件。 限制對這些物件的存取，Outlook 有助於防止電子郵件蠕蟲與病毒惡意使用物件模型。 這項安全性功能稱為 Outlook 物件模型保護。 如果 VSTO 增益集試圖使用受限制的屬性或方法，而物件模型保護已啟用，Outlook 會顯示安全性警告，可讓使用者停止作業，或讓使用者可以授與存取權之屬性或方法，一段有限的 t輸入法。 如果使用者停止作業，使用 Visual Studio 中 Office 方案建立的 Outlook VSTO 增益集將會擲回 <xref:System.Runtime.InteropServices.COMException>。
@@ -103,17 +103,17 @@ ms.locfileid: "56629075"
 
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>在 Microsoft Office 2010 和 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 應用程式停用 VSTO 增益集
 
-1.  選擇 [檔案]  索引標籤。
+1. 選擇 [檔案]  索引標籤。
 
-2.  選擇 [應用程式名稱選項]   按鈕。
+2. 選擇 [應用程式名稱選項]   按鈕。
 
-3.  在分類窗格中，選擇 [信任中心] 。
+3. 在分類窗格中，選擇 [信任中心] 。
 
-4.  在詳細資料窗格中，選擇 [信任中心設定] 。
+4. 在詳細資料窗格中，選擇 [信任中心設定] 。
 
-5.  在分類窗格中，選擇 [增益集] 。
+5. 在分類窗格中，選擇 [增益集] 。
 
-6.  在 [詳細資料] 窗格中，選取 [要求應用程式增益集由受信任的發行者簽署]  或 [停用所有應用程式增益集] 。
+6. 在 [詳細資料] 窗格中，選取 [要求應用程式增益集由受信任的發行者簽署]  或 [停用所有應用程式增益集] 。
 
 ## <a name="see-also"></a>另請參閱
 - [保護 Office 方案](../vsto/securing-office-solutions.md)

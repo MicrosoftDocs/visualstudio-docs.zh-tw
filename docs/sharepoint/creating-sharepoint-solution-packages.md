@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 147bb56e0d8759ece67ea1454f496b23b770cebf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8f7afee863d36796bb481f9aca2c24a9ba891ae7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604726"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049941"
 ---
 # <a name="create-sharepoint-solution-packages"></a>建立 SharePoint 方案套件
   藉由使用 封裝設計工具，您可以建立並自訂部署套件。 例如，您可以新增 SharePoint 專案項目和功能，重設 IIS 伺服器、 設定功能啟用範圍，以及識別功能相依性。 設計工具也會產生資訊清單，描述每個封裝的 XML 檔案。
@@ -46,7 +46,7 @@ ms.locfileid: "56604726"
 
  下表顯示您可以使用自訂的兩個 MSBuild 目標如何 *.wsp*建立檔案。
 
-|目標|描述|
+|Target|描述|
 |------------|-----------------|
 |BeforeLayout|目標檔案會複製到中繼目錄之前，立即執行工作。 您可以修改檔案，然後再建立的封裝檔案 (*.wsp*)。|
 |AfterLayout|目標檔案會複製到中繼目錄之後，立即執行工作。|
@@ -56,17 +56,17 @@ ms.locfileid: "56604726"
 ## <a name="packaging-architecture"></a>封裝架構
  當您建立 SharePoint 套件時，會執行下列步驟 (*.wsp*) 在 Visual Studio 中。
 
-1.  功能和封裝驗證，以確定封裝的實體和語意結構正確無誤。
+1. 功能和封裝驗證，以確定封裝的實體和語意結構正確無誤。
 
-2.  列舉功能、 專案項目和封裝中的封裝檔案。 封裝和功能的資訊清單檔會轉換為包含部署和啟用的所有必要資訊。 權杖會以完整格式的值取代。
+2. 列舉功能、 專案項目和封裝中的封裝檔案。 封裝和功能的資訊清單檔會轉換為包含部署和啟用的所有必要資訊。 權杖會以完整格式的值取代。
 
-3.  可自訂 BeforeLayout MSBuild 目標會執行。 您可以建立這個步驟會讓封裝之前的任何自訂修改 *.wsp*建立檔案。
+3. 可自訂 BeforeLayout MSBuild 目標會執行。 您可以建立這個步驟會讓封裝之前的任何自訂修改 *.wsp*建立檔案。
 
-4.  列舉的檔案會複製到中繼目錄。
+4. 列舉的檔案會複製到中繼目錄。
 
-5.  可自訂的 AfterLayout MSBuild 目標會執行。 您可以建立這個步驟會讓封裝之前的任何自訂修改 *.wsp*建立檔案。
+5. 可自訂的 AfterLayout MSBuild 目標會執行。 您可以建立這個步驟會讓封裝之前的任何自訂修改 *.wsp*建立檔案。
 
-6.  中繼目錄內檔案會新增至 *.wsp*檔案。
+6. 中繼目錄內檔案會新增至 *.wsp*檔案。
 
 ## <a name="package-folder-structure"></a>套件資料夾結構
  當您封裝 SharePoint 專案中， *.wsp*檔案會為您在建立*SolutionFolder\bin\\\<BuildConfiguration >* 資料夾。 例如，如果您的解決方案處於*C:\Visual Studio 2013 \ projects\listdefinition1*和您的組建組態設為版本中， *.wsp*檔案會位於*C:\Visual Studio 2013\Projects\ListDefinition1\bin\Release*。

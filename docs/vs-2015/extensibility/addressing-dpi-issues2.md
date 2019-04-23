@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049538"
 ---
 # <a name="addressing-dpi-issues"></a>處理 DPI 問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58939432"
   
 - 在超過 280 ppi （從 Windows 8.1 S14) 的新裝置上 Windows 可以自動調整設定為 250%內容。  
   
-  Windows 具有處理向上調整 UI 的方式，利用增加的像素計數。 應用程式選擇加入此系統本身宣告為 「 系統 DPI 感知 」。 請不要這樣的應用程式系統相應增加。 這會導致整個應用程式是一致的像素延伸了 「 模糊 」 的使用者體驗。 例如：  
+  Windows 具有處理向上調整 UI 的方式，利用增加的像素計數。 應用程式選擇加入此系統本身宣告為 「 系統 DPI 感知 」。 請不要這樣的應用程式系統相應增加。 這會導致整個應用程式是一致的像素延伸了 「 模糊 」 的使用者體驗。 例如:   
   
   ![DPI 問題模糊](../extensibility/media/dpi-issues-fuzzy.png "DPI 問題模糊")  
   
@@ -51,7 +51,7 @@ ms.locfileid: "58939432"
  本節主要是供開發人員延伸 Visual Studio 2013。 Visual Studio 2015 中，使用內建於 Visual Studio 映像服務。 您可能也會發現您需要支援/目標的 Visual Studio 的許多版本，因此使用 2015年中的 映像服務不是選項因為不存在於舊版。 本章節也是您然後。  
   
 ## <a name="scaling-up-images-that-are-too-small"></a>相應增加太小的映像  
- 太小的映像可以 「 相應增加 」，並呈現 GDI 和 WPF 使用的一些常見方法。 受管理的 DPI 協助程式類別可用於內部和外部的 Visual Studio 整合人員在調整圖示、 點陣圖、 imagestrips 和 imagelists 的位址。 Win32 原生 C / C + + 的協助程式可供調整 HICON、 HBITMAP、 HIMAGELIST 和 VsUI::GdiplusImage。 縮放點陣圖的比例通常只需要一行變更之後包含協助程式程式庫的參考。 例如：  
+ 太小的映像可以 「 相應增加 」，並呈現 GDI 和 WPF 使用的一些常見方法。 受管理的 DPI 協助程式類別可用於內部和外部的 Visual Studio 整合人員在調整圖示、 點陣圖、 imagestrips 和 imagelists 的位址。 Win32 原生 C / C + + 的協助程式可供調整 HICON、 HBITMAP、 HIMAGELIST 和 VsUI::GdiplusImage。 縮放點陣圖的比例通常只需要一行變更之後包含協助程式程式庫的參考。 例如:   
   
 ```cpp  
 (Unmanaged)  VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);  
@@ -120,15 +120,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  若要從 Visual Studio 環境內執行的 managed 程式碼存取 DPI helper 函式：  
   
--   取用專案必須參考殼層 MPF 的最新版本。 例如：  
+- 取用專案必須參考殼層 MPF 的最新版本。 例如：  
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
     ```  
   
--   請確定專案具有參考**System.Windows.Forms**， **PresentationCore**，並**PresentationUI**。  
+- 請確定專案具有參考**System.Windows.Forms**， **PresentationCore**，並**PresentationUI**。  
   
--   在程式碼，使用**Microsoft.VisualStudio.PlatformUI** DpiHelper 類別的命名空間和呼叫靜態函式。 支援的類型 （點、 大小、 矩形和等等），都有提供擴充程式函式會傳回新的擴充物件。 例如：  
+- 在程式碼，使用**Microsoft.VisualStudio.PlatformUI** DpiHelper 類別的命名空間和呼叫靜態函式。 支援的類型 （點、 大小、 矩形和等等），都有提供擴充程式函式會傳回新的擴充物件。 例如：  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -207,13 +207,13 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  因為 WPF 會針對目前使用 BitmapScalingMode 屬性集的 UIElement 上的 DPI 縮放 UI，使用 prescaled 映像，因為其來源會尋找兩個或三倍大比影像控制項應該。 以下是幾種方式來應付這種效果：  
   
--   如果您知道原始的映像，在 100%的維度，您可以指定確切的大小的影像控制項。 這些大小將會反映在套用之前調整 UI 的大小。  
+- 如果您知道原始的映像，在 100%的維度，您可以指定確切的大小的影像控制項。 這些大小將會反映在套用之前調整 UI 的大小。  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
--   如果不知道原始映像的大小，LayoutTransform 可用來相應減少為最終的映像物件。 例如：  
+- 如果不知道原始映像的大小，LayoutTransform 可用來相應減少為最終的映像物件。 例如：  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  
@@ -344,9 +344,9 @@ public int GetHostInfo(DOCHOSTUIINFO info)
   
 ## <a name="tips"></a>秘訣  
   
-1.  如果 WebOC 控制項上的文件屬性變更時，您可能需要重新關聯 IDocHostUIHandler 類別的文件。  
+1. 如果 WebOC 控制項上的文件屬性變更時，您可能需要重新關聯 IDocHostUIHandler 類別的文件。  
   
-2.  如果上述無法運作，則不會收取 DPI 旗標變更 WebOC 的已知的問題。 修正此問題的最可靠方式是切換 WebOC，包含兩個不同的縮放百分比值的意義兩次呼叫視覺化縮放。 此外，如果需要此因應措施，它可能需要對每個巡覽呼叫。  
+2. 如果上述無法運作，則不會收取 DPI 旗標變更 WebOC 的已知的問題。 修正此問題的最可靠方式是切換 WebOC，包含兩個不同的縮放百分比值的意義兩次呼叫視覺化縮放。 此外，如果需要此因應措施，它可能需要對每個巡覽呼叫。  
   
     ```csharp  
     // browser2 is a SHDocVw.IWebBrowser2 in this case  

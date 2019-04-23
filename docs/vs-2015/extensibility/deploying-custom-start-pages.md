@@ -11,12 +11,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039138"
 ---
 # <a name="deploying-custom-start-pages"></a>部署自訂起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ ms.locfileid: "59000545"
   
 ##### <a name="to-create-an-all-users-deployment"></a>若要建立的所有使用者部署  
   
-1.  在程式碼檢視中開啟 extension.vsixmanifest 檔案。  
+1. 在程式碼檢視中開啟 extension.vsixmanifest 檔案。  
   
-2.  在 `Identifier`加入 vsix 資訊清單的項目`AllUsers`項目，其值為`true`。  
+2. 在 `Identifier`加入 vsix 資訊清單的項目`AllUsers`項目，其值為`true`。  
   
     ```  
     <AllUsers>true</AllUsers>  
@@ -67,9 +67,9 @@ ms.locfileid: "59000545"
   
      這會造成 vsix 安裝程式提示您輸入系統管理員權限，並接著將檔案安裝到 \Common7\IDE\Extensions。  
   
-3.  開啟.pkgdef 檔。  
+3. 開啟.pkgdef 檔。  
   
-4.  修改以加入下列程式碼，來設定預設起始頁 HKLM 底下.pkgdef 所在*MyStartPage.xaml*是包含您的起始頁.xaml 檔的名稱。  
+4. 修改以加入下列程式碼，來設定預設起始頁 HKLM 底下.pkgdef 所在*MyStartPage.xaml*是包含您的起始頁.xaml 檔的名稱。  
   
      [$RootKey$\StartPage\Default]  
   
@@ -84,11 +84,11 @@ ms.locfileid: "59000545"
   
 #### <a name="to-manually-install-a-custom-start-page"></a>若要手動安裝自訂起始頁  
   
-1.  複製的.xaml 檔案，包含啟動網頁標記中，以及組件以外的任何支援檔案，並將它們貼到使用者的 \StartPages\ 資料夾。  
+1. 複製的.xaml 檔案，包含啟動網頁標記中，以及組件以外的任何支援檔案，並將它們貼到使用者的 \StartPages\ 資料夾。  
   
-2.  如果 [啟動] 頁面需要組件，請將其複製並貼到...\\ *Visual Studio 安裝資料夾*\Common7\IDE\PrivateAssemblies\\。  
+2. 如果 [啟動] 頁面需要組件，請將其複製並貼到...\\ *Visual Studio 安裝資料夾*\Common7\IDE\PrivateAssemblies\\。  
   
-3.  在 **自訂起始頁**上列出**啟動**選項頁面上，選取新的 入門 頁面。 如需詳細資訊，請參閱[自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)。  
+3. 在 **自訂起始頁**上列出**啟動**選項頁面上，選取新的 入門 頁面。 如需詳細資訊，請參閱[自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)   

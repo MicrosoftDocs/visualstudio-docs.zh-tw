@@ -30,23 +30,22 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0c4a353923bbf5d98bd2ef4fcb3c5fe28447fe8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 632c3027ccb8019e372abd6400dd3f2333742e05
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54773332"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658095"
 ---
 # <a name="project-and-solution-file-types"></a>專案和方案檔類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 支援許多檔案類型。 在特定的安裝中，已安裝的元件決定可支援的檔案類型。 本主題列出在某些一般安裝中支援的方案和專案檔類型。 如需其他檔案類型的詳細資訊，請使用每種類型的副檔名進行搜尋。  
   
 ## <a name="solution-files-sln-and-suo"></a>方案檔 (.sln 和 .suo)  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 使用兩種檔案類型 (.sln 和 .suo) 來儲存方案的專屬設定。 這些檔案 (統稱為方案檔) 為方案總管提供了顯示管理檔案的圖形介面所需的資訊。 這些資訊讓您每次回到開發工作時，可以專注於專案和最終目標，不必操心環境本身的問題。  
   
-|副檔名|名稱|描述|  
+|副檔名|名稱|說明|  
 |---------------|----------|-----------------|  
 |.sln|[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 方案|將專案、專案項目和方案項目組織到方案中。|  
 |.suo|方案使用者選項|記錄您在 Visual Studio 中進行的使用者層級自訂，例如中斷點。|  

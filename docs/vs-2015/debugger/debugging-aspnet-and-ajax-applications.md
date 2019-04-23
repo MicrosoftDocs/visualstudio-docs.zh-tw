@@ -19,21 +19,21 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1322300992359f386a43c7feef41053611bb866
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940301"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116780"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>偵錯 ASP.NET 和 AJAX 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 偵錯 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式類似偵錯 Windows Form 或任何其他 Windows 應用程式，因為這兩種應用程式都涉及控制項和事件。 但是，兩種應用程式之間仍然有基本差異：  
   
--   在 Web 應用程式中持續追蹤狀態是更複雜的。  
+- 在 Web 應用程式中持續追蹤狀態是更複雜的。  
   
--   在 Windows 應用程式中，要偵錯的程式碼大部分都在同一個位置；而在 Web 應用程式中，程式碼則可以在用戶端和伺服器上。 當 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程式碼全部都在伺服器時，用戶端可能也會有 JavaScript 或 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 程式碼。  
+- 在 Windows 應用程式中，要偵錯的程式碼大部分都在同一個位置；而在 Web 應用程式中，程式碼則可以在用戶端和伺服器上。 當 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 程式碼全部都在伺服器時，用戶端可能也會有 JavaScript 或 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 程式碼。  
   
 ## <a name="in-this-section"></a>本節內容  
  [準備偵錯 ASP.NET](../debugger/preparing-to-debug-aspnet.md)  

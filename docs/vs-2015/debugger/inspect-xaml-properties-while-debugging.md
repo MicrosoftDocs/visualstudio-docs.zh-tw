@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 010f9b7b0d77bca8bd264ab8a3561743c616dc1f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52d978472f057359cb2b1e0375f2d7ba524d1925
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942663"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101427"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在偵錯時檢查 XAML 屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,10 +103,10 @@ private void button_Click(object sender, RoutedEventArgs e)
 ## <a name="using-xaml-tools-with-running-applications"></a>搭配執行中的應用程式使用 XAML 工具  
  即使沒有原始程式碼，您仍可使用這些 XAML 工具。 當您附加至執行中 XAML 應用程式時，您也可以使用該應用程式 UI 項目上的 [即時視覺化樹狀結構]。 以下範例使用的 WPF 測試應用程式和我們之前使用的相同。  
   
-1.  在 [發行] 組態中啟動 **TestXaml** 應用程式。 您無法附加至正在 [偵錯] 組態中執行的處理序。  
+1. 在 [發行] 組態中啟動 **TestXaml** 應用程式。 您無法附加至正在 [偵錯] 組態中執行的處理序。  
   
-2.  開啟 Visual Studio 的第二個執行個體，然後按一下**偵錯] / [附加至處理序**。 在可用的處理序清單中尋找 **TestXaml.exe**，然後按一下 [附加]。  
+2. 開啟 Visual Studio 的第二個執行個體，然後按一下**偵錯] / [附加至處理序**。 在可用的處理序清單中尋找 **TestXaml.exe**，然後按一下 [附加]。  
   
-3.  應用程式會開始執行。  
+3. 應用程式會開始執行。  
   
-4.  在 Visual Studio 的第二個執行個體，開啟**即時視覺化樹狀結構**(**偵錯 / Windows / 即時視覺化樹狀結構**)。 您應該會看到 **TestXaml** UI 項目，且應該可以如同直接對應用程式進行偵錯時一樣管理這些項目。
+4. 在 Visual Studio 的第二個執行個體，開啟**即時視覺化樹狀結構**(**偵錯 / Windows / 即時視覺化樹狀結構**)。 您應該會看到 **TestXaml** UI 項目，且應該可以如同直接對應用程式進行偵錯時一樣管理這些項目。

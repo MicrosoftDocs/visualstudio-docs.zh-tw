@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94a8f4f8fe0d1f93ce3467291a20377234db29f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 45f650283c850a9dce3ae71c7eefbff2ef378535
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944377"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080705"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>將驗證新增至多層式架構 (N-Tier) 資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,14 +58,14 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>若要在變更期間驗證加入個別的資料行值  
   
-1.  開啟資料集設計工具中，按兩下 **.xsd**中的檔案**方案總管 中**。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 開啟資料集設計工具中，按兩下 **.xsd**中的檔案**方案總管 中**。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
-2.  按兩下您想要驗證的資料行。 這個動作會建立<xref:System.Data.DataTable.ColumnChanging>事件處理常式。  
+2. 按兩下您想要驗證的資料行。 這個動作會建立<xref:System.Data.DataTable.ColumnChanging>事件處理常式。  
   
     > [!NOTE]
     >  Dataset 設計工具不會自動建立 C# 事件的事件處理常式。 C# 中處理事件所需的程式碼會包含在下一節。 `SampleColumnChangingEvent` 建立並繫結最多<xref:System.Data.DataTable.ColumnChanging>中的事件<xref:System.Data.DataTable.EndInit%2A>方法。  
   
-3.  加入程式碼來確認`e.ProposedValue`包含符合您的應用程式的資料。 如果無法接受建議的值，表示它包含錯誤資料行的設定。  
+3. 加入程式碼來確認`e.ProposedValue`包含符合您的應用程式的資料。 如果無法接受建議的值，表示它包含錯誤資料行的設定。  
   
      下列程式碼範例會驗證**Quantity**資料行包含大於 0。 如果**Quantity**小於或等於 0，資料行會設定為錯誤。 `Else`子句會清除錯誤，如果**Quantity**大於 0。 中的資料行變更的事件處理常式的程式碼應該如下所示：  
   
@@ -117,18 +117,18 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>將變更期間驗證新增至整個資料列  
   
-1.  開啟資料集設計工具中，按兩下 **.xsd**中的檔案**方案總管 中**。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 開啟資料集設計工具中，按兩下 **.xsd**中的檔案**方案總管 中**。 如需詳細資訊，請參閱[如何：在 Dataset 設計工具中開啟資料集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
-2.  按兩下標題列的資料表設計工具上。  
+2. 按兩下標題列的資料表設計工具上。  
   
      部分類別會透過`RowChanging`事件處理常式，並在程式碼編輯器中開啟。  
   
     > [!NOTE]
     >  Dataset 設計工具不會自動建立的事件處理常式<xref:System.Data.DataTable.RowChanging>C# 專案中的事件。 您必須建立方法以處理<xref:System.Data.DataTable.RowChanging>事件和執行程式碼，來連結資料表的初始設定方法中的事件。  
   
-3.  加入部分類別宣告內的使用者程式碼。  
+3. 加入部分類別宣告內的使用者程式碼。  
   
-4.  下列程式碼示範如何加入使用者程式碼，以驗證期間<xref:System.Data.DataTable.RowChanging>Visual Basic 中的事件：  
+4. 下列程式碼示範如何加入使用者程式碼，以驗證期間<xref:System.Data.DataTable.RowChanging>Visual basic 中的事件：  
   
     ```vb  
     Partial Class OrdersDataTable  
@@ -145,7 +145,7 @@ End Sub
     End Class  
     ```  
   
-5.  下列程式碼示範如何建立`RowChanging`事件處理常式及如何加入使用者程式碼，以驗證期間<xref:System.Data.DataTable.RowChanging>適用於 C# 的事件：  
+5. 下列程式碼示範如何建立`RowChanging`事件處理常式及如何加入使用者程式碼，以驗證期間<xref:System.Data.DataTable.RowChanging>適用於 C# 的事件：  
   
     ```csharp  
     partial class OrdersDataTable  

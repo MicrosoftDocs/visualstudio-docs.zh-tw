@@ -10,12 +10,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 267cd5d5487bfb5f861143e3767c066330bff81e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0cd5c72f8f423ec8ace409cafa82a1e42c6eaf90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942150"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112607"
 ---
 # <a name="how-to-implement-undo-management"></a>HOW TO：實作復原管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "58942150"
   
 #### <a name="to-support-undo-management-for-a-single-view-editor"></a>若要支援單一檢視編輯器復原管理  
   
-1.  呼叫`QueryInterface`上`IServiceProvider`介面上的視窗框架`IOleUndoManager`，從 文件檢視物件來存取復原管理員 (`IID_IOLEUndoManager`)。  
+1. 呼叫`QueryInterface`上`IServiceProvider`介面上的視窗框架`IOleUndoManager`，從 文件檢視物件來存取復原管理員 (`IID_IOLEUndoManager`)。  
   
-2.  當檢視設置至視窗框架時，它會取得站台的指標，它可以用來呼叫`QueryInterface`針對`IServiceProvider`。  
+2. 當檢視設置至視窗框架時，它會取得站台的指標，它可以用來呼叫`QueryInterface`針對`IServiceProvider`。  
   
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>其中的編輯器支援多個檢視的情況下  
  如果您有文件和檢視區隔，就與文件本身相關聯的一個正常復原管理員。 所有的復原單位會放在一個復原管理員與文件資料物件建立關聯。  
@@ -48,17 +48,17 @@ ms.locfileid: "58942150"
   
 3. 轉送您<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>並<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>呼叫預存的`IOleCommandTarget`下列 StandardCommandSet97 命令介面：  
   
-   -   cmdidUndo  
+   - cmdidUndo  
   
-   -   cmdidMultiLevelUndo  
+   - cmdidMultiLevelUndo  
   
-   -   cmdidRedo  
+   - cmdidRedo  
   
-   -   cmdidMultiLevelRedo  
+   - cmdidMultiLevelRedo  
   
-   -   cmdidMultiLevelUndoList  
+   - cmdidMultiLevelUndoList  
   
-   -   cmdidMultiLevelRedoList  
+   - cmdidMultiLevelRedoList  
   
 4. 呼叫`QueryInterface`上`IOleUndoManager`如`IID_IVsChangeTrackingUndoManager`。 儲存的指標<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>。  
   

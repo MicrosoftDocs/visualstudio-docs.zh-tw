@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41fb80c229d016658b030d6ebf6981051c5de096
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2b2872ca6496444cbb3878dc39800a8661400a76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631493"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056324"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>開始使用 word 的文件層級自訂程式設計
   如果您剛開始使用 Visual Studio 建立 Microsoft Office word 的文件層級自訂，以下是您需要知道。
@@ -44,11 +44,11 @@ ms.locfileid: "56631493"
 
  如需詳細資訊，請參閱下列主題：
 
--   [程式文件層級自訂](../vsto/programming-document-level-customizations.md)
+- [程式文件層級自訂](../vsto/programming-document-level-customizations.md)
 
--   [使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)
+- [使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)
 
--   [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)
+- [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-word"></a>自訂 Word 的使用者介面
  大部分的 Microsoft Office 解決方案會修改使用者介面 (UI)，提供一些方式，讓使用者與該解決方案互動的 Office 應用程式。 有許多方法，您可以在此修改所使用的文件層級自訂的 Word 的 UI。 例如，您可以將控制項新增至功能區中，而且可以顯示動作 窗格中。 如需詳細資訊，請參閱 < [Office UI 自訂](../vsto/office-ui-customization.md)。

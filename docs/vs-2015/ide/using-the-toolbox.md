@@ -27,12 +27,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8498397e45aad889d575c4ec337d107755b2dba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 207beb085046748a4eaabdff025cd461c5ddba26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788261"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073354"
 ---
 # <a name="using-the-toolbox"></a>使用工具箱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,23 +48,23 @@ ms.locfileid: "54788261"
   
  您可以在操作功能表上使用下列命令重新排列工具箱索引標籤中的項目，或加入自訂索引標籤和項目：  
   
--   **重新命名項目** - 重新命名選取的項目。  
+- **重新命名項目** - 重新命名選取的項目。  
   
--   **全部顯示** - 顯示所有可能的控制項 (而不只是套用至目前設計工具的控制項)。  
+- **全部顯示** - 顯示所有可能的控制項 (而不只是套用至目前設計工具的控制項)。  
   
--   **清單檢視** - 以垂直清單顯示控制項。 若未核取，則會以水平方式顯示控制項。  
+- **清單檢視** - 以垂直清單顯示控制項。 若未核取，則會以水平方式顯示控制項。  
   
--   **選擇項目** - 開啟 [選擇工具箱項目] 對話方塊，以供您指定在 [工具箱] 中顯示的項目。 您可以選取或清除某個項目的核取方塊，以顯示或隱藏該項目。  
+- **選擇項目** - 開啟 [選擇工具箱項目] 對話方塊，以供您指定在 [工具箱] 中顯示的項目。 您可以選取或清除某個項目的核取方塊，以顯示或隱藏該項目。  
   
--   **依字母順序排序項目** - 依名稱排序項目。  
+- **依字母順序排序項目** - 依名稱排序項目。  
   
--   **重設工具列** - 還原預設工具箱設定和項目。  
+- **重設工具列** - 還原預設工具箱設定和項目。  
   
--   **新增索引標籤** - 新增工具箱索引標籤。  
+- **新增索引標籤** - 新增工具箱索引標籤。  
   
--   **上移** - 向上移動選取的項目。  
+- **上移** - 向上移動選取的項目。  
   
--   **下移** - 向下移動選取的項目。  
+- **下移** - 向下移動選取的項目。  
   
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>建立及發佈自訂工具箱控制項  
  您可以在 Visual Basic 或 Visual C# 中建立自訂工具箱控制項，也可以使用以 [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) 或 [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md) 為基礎的專案範本開始作業。 您接著可以將控制項發佈給小組成員，或使用 [工具箱控制項安裝程式](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)將它發佈到網站。

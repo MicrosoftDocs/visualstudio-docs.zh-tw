@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1bec6daa92d4e5b58b97c47a45fa32c410aced5a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a5b76e49285a629234557a973f6d4b45703f1cfd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056207"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>HOW TO：新增參數至方法
   若要將資訊傳遞至方法，或從方法傳回的資訊，請使用參數。 所有的方法必須有至少一個參數。 如需如何設計來支援您想要建立的方法的型別參數的詳細資訊，請參閱[設計 Business Data Connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -31,27 +31,27 @@ ms.locfileid: "56619949"
 
 ### <a name="to-add-a-parameter-to-a-method"></a>若要將參數加入至方法
 
-1.  將方法新增至實體。
+1. 將方法新增至實體。
 
-2.  在功能表列上選擇 **檢視** > **其他 Windows** > **BDC 方法詳細資料**。
+2. 在功能表列上選擇 **檢視** > **其他 Windows** > **BDC 方法詳細資料**。
 
      **BDC 方法詳細資料**視窗隨即開啟。 如需詳細資訊，請參閱 < [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)。
 
-3.  在 [ **BDC 方法詳細資料**] 視窗中，展開方法的節點，然後再展開**參數**節點。
+3. 在 [ **BDC 方法詳細資料**] 視窗中，展開方法的節點，然後再展開**參數**節點。
 
-4.  在 **將參數加入**清單中，選擇**建立參數**。
+4. 在 **將參數加入**清單中，選擇**建立參數**。
 
      新的參數會出現下方**參數**節點。
 
-5.  在功能表列上選擇 [**檢視** > **屬性] 視窗**。
+5. 在功能表列上選擇 [**檢視** > **屬性] 視窗**。
 
-6.  在 **屬性**視窗中，將**名稱**任何有意義的名稱屬性。 比方說，如果此方法會傳回客戶，您可能會將方法命名**GetCustomers**。
+6. 在 **屬性**視窗中，將**名稱**任何有意義的名稱屬性。 比方說，如果此方法會傳回客戶，您可能會將方法命名**GetCustomers**。
 
-7.  在 [ **BDC 方法詳細資料**] 視窗中，開啟顯示方向之參數的清單，然後選擇**中**， **InOut**， **Out**，或**傳回**。
+7. 在 [ **BDC 方法詳細資料**] 視窗中，開啟顯示方向之參數的清單，然後選擇**中**， **InOut**， **Out**，或**傳回**。
 
      如需哪一個方向來選擇您要建立之型別方法的詳細資訊，請參閱[設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
-8.  修改參數的類型描述元。 如需詳細資訊，請參閱[如何：定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
+8. 修改參數的類型描述元。 如需詳細資訊，請參閱[如何：定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
 
 ## <a name="see-also"></a>另請參閱
 - [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)

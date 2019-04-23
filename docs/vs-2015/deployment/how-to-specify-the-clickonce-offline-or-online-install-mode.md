@@ -19,12 +19,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0e16c3b921c8ecd2c4c944b60cb5541eac49463e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d4111ca5aee4a405a4a797dbfee14a3d4b50435f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943443"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054247"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>HOW TO：指定 ClickOnce 離線或線上安裝模式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +37,19 @@ ms.locfileid: "58943443"
   
 ### <a name="to-make-a-clickonce-application-available-online-only"></a>將 ClickOnce 應用程式提供線上只  
   
-1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [發佈] 索引標籤。  
+2. 按一下 [發佈] 索引標籤。  
   
-3.  在 **安裝模式和設定**區域中，按一下**應用程式只提供線上**選項按鈕。  
+3. 在 **安裝模式和設定**區域中，按一下**應用程式只提供線上**選項按鈕。  
   
 ### <a name="to-make-a-clickonce-application-available-online-or-offline"></a>若要使用 ClickOnce 應用程式線上或離線  
   
-1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [發佈] 索引標籤。  
+2. 按一下 [發佈] 索引標籤。  
   
-3.  在 **安裝模式和設定**區域中，按一下**應用程式也可以在離線時**選項按鈕。  
+3. 在 **安裝模式和設定**區域中，按一下**應用程式也可以在離線時**選項按鈕。  
   
      應用程式安裝時，將項目加入**開始** 功能表並**新增或移除程式**控制項台中。  
   

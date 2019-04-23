@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74c61beeae78fbf76ffee76ff930171ddbe8089a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 143daa7f54179867325206f62a852fd685852a6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944581"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051813"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>使用分層圖驗證程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,50 +58,50 @@ ms.locfileid: "58944581"
 > [!IMPORTANT]
 >  如果您要以 Team Foundation Build 執行圖層驗證，您也必須在您的組建伺服器上安裝相同版本的 Visual Studio。  
   
--   [項目是否支援驗證](#SupportsValidation)  
+- [項目是否支援驗證](#SupportsValidation)  
   
--   [包含其他.NET 組件和專案來進行驗證](#IncludeReferences)  
+- [包含其他.NET 組件和專案來進行驗證](#IncludeReferences)  
   
--   [手動驗證程式碼](#ValidateManually)  
+- [手動驗證程式碼](#ValidateManually)  
   
--   [自動驗證程式碼](#ValidateAuto)  
+- [自動驗證程式碼](#ValidateAuto)  
   
--   [針對圖層驗證問題進行疑難排解](#TroubleshootingValidation)  
+- [針對圖層驗證問題進行疑難排解](#TroubleshootingValidation)  
   
--   [了解並解決圖層驗證錯誤](#UnderstandingValidationErrors)  
+- [了解並解決圖層驗證錯誤](#UnderstandingValidationErrors)  
   
-##  <a name="SupportsValidation"></a> 項目是否支援驗證  
+## <a name="SupportsValidation"></a> 項目是否支援驗證  
  您可以將圖層連結到網站、Office 文件、純文字檔以及跨多個應用程式共用之專案中的檔案，不過，驗證流程不包含這些檔案。 對於連結至個別圖層之專案或組件的參考，如果這些圖層之間沒有任何相依性，則不會出現驗證錯誤。 除非程式碼使用這些參考，否則不會考量此類參考的相依性。  
   
-1.  在分層圖中，選取一或多個圖層，以滑鼠右鍵按一下您的選擇，然後按一下**檢視連結**。  
+1. 在分層圖中，選取一或多個圖層，以滑鼠右鍵按一下您的選擇，然後按一下**檢視連結**。  
   
-2.  在 **圖層總管**，看看**支援驗證**資料行。 如果值為 false，則這個項目不支援驗證。  
+2. 在 **圖層總管**，看看**支援驗證**資料行。 如果值為 false，則這個項目不支援驗證。  
   
-##  <a name="IncludeReferences"></a> 包含其他.NET 組件和專案來進行驗證  
+## <a name="IncludeReferences"></a> 包含其他.NET 組件和專案來進行驗證  
  當您拖曳項目到分層圖時，對應的.NET 組件或專案的參考會自動加入至**圖層參考**模型專案中的資料夾。 這個資料夾包含組件的參考以及驗證期間分析的專案。 您也可以手動加入其他 .NET 組件和專案以進行驗證，而不用手動拖曳到分層圖。  
   
-1.  在**方案總管**，以滑鼠右鍵按一下模型專案或**圖層參考**資料夾，然後再按一下**加入參考**。  
+1. 在**方案總管**，以滑鼠右鍵按一下模型專案或**圖層參考**資料夾，然後再按一下**加入參考**。  
   
-2.  在 [**加入參考**] 對話方塊中，選取組件或專案，然後按一下**確定**。  
+2. 在 [**加入參考**] 對話方塊中，選取組件或專案，然後按一下**確定**。  
   
-##  <a name="ValidateManually"></a> 手動驗證程式碼  
+## <a name="ValidateManually"></a> 手動驗證程式碼  
  如果您有開啟分層圖連結到方案項目時，您可以執行**驗證**從圖表的捷徑命令。 您也可以使用命令提示字元執行**msbuild**命令搭配**validatearchitecture**自訂的屬性設定為**True**。 例如，在您變更程式碼時定期執行圖層驗證，以便早期攔截相依性衝突。  
   
 #### <a name="to-validate-code-from-an-open-layer-diagram"></a>若要從開啟的圖層圖表驗證程式碼  
   
-1.  以滑鼠右鍵按一下圖表介面，然後按一下**驗證架構**。  
+1. 以滑鼠右鍵按一下圖表介面，然後按一下**驗證架構**。  
   
     > [!NOTE]
     >  根據預設，**建置動作**上的圖層圖表 (.layerdiagram) 檔案的屬性設定為**Validate** ，讓圖表納入驗證程序。  
   
      **錯誤清單**視窗會報告所發生的任何錯誤。 如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。  
   
-2.  若要檢視每個錯誤的來源，請連按兩下中的錯誤**錯誤清單**視窗。  
+2. 若要檢視每個錯誤的來源，請連按兩下中的錯誤**錯誤清單**視窗。  
   
     > [!NOTE]
     >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可能會顯示 Code Map，而非錯誤來源。 如果程式碼具有並非由圖層圖表所指定的組件相依性，或是程式碼遺失了圖層圖表所指定的相依性，則會出現此情況。 請檢閱 Code Map 或程式碼，以判斷相依性是否應存在。 如需 code map 的詳細資訊，請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)。  
   
-3.  若要管理錯誤，請參閱[管理驗證錯誤](#ManageErrors)。  
+3. 若要管理錯誤，請參閱[管理驗證錯誤](#ManageErrors)。  
   
 #### <a name="to-validate-code-at-the-command-prompt"></a>若要在命令提示字元驗證程式碼  
   
@@ -141,7 +141,7 @@ ms.locfileid: "58944581"
   
    如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。  
   
-###  <a name="ManageErrors"></a> 管理驗證錯誤  
+### <a name="ManageErrors"></a> 管理驗證錯誤  
  在開發過程中，您可以隱藏驗證期間已報告過的某些衝突。 例如，您可能會想要隱藏已經處理的錯誤，或是與特定情節無關的錯誤。 當您隱藏錯誤時，最好在 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 中記錄工作項目。  
   
 > [!WARNING]
@@ -160,12 +160,12 @@ ms.locfileid: "58944581"
 |還原所有隱藏的錯誤**錯誤清單**視窗|以滑鼠右鍵按一下任何一處**錯誤清單** 視窗中，指向**管理驗證錯誤**，然後按一下**顯示所有隱藏的錯誤**。|  
 |隱藏所有隱藏的錯誤**錯誤清單**視窗|以滑鼠右鍵按一下任何一處**錯誤清單** 視窗中，指向**管理驗證錯誤**，然後按一下**隱藏所有隱藏的錯誤**。|  
   
-##  <a name="ValidateAuto"></a> 自動驗證程式碼  
+## <a name="ValidateAuto"></a> 自動驗證程式碼  
  您可以在每次執行本機組建時執行圖層驗證。 如果您的小組使用 Team Foundation Build，可以閘道簽入來執行圖層驗證，其中您可以藉由建立自訂 MSBuild 工作來指定，以及使用組建報告收集驗證錯誤。 若要建立閘道的簽入組建，請參閱[使用閘道的簽入建置流程來驗證變更](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)。  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>在本機組建執行期間自動驗證程式碼  
   
--   使用文字編輯器來開啟模型專案 (.modelproj) 檔案，然後加入下列屬性：  
+- 使用文字編輯器來開啟模型專案 (.modelproj) 檔案，然後加入下列屬性：  
   
 ```  
 <ValidateArchitecture>true</ValidateArchitecture>  
@@ -197,24 +197,24 @@ ms.locfileid: "58944581"
   
    如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。 如需 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的詳細資訊，請參閱：  
   
--   [建置應用程式](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [建置應用程式](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
--   [使用預設範本建置程序](http://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
+- [使用預設範本建置程序](http://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
   
--   [修改根據 UpgradeTemplate.xaml 的舊版建置](http://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
+- [修改根據 UpgradeTemplate.xaml 的舊版建置](http://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
   
--   [自訂建置流程範本](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [自訂建置流程範本](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
--   [執行中組建的監視進度](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
+- [執行中組建的監視進度](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
-##  <a name="TroubleshootingValidation"></a> 針對圖層驗證問題進行疑難排解  
+## <a name="TroubleshootingValidation"></a> 針對圖層驗證問題進行疑難排解  
  下列表格描述圖層驗證的問題及其解決方式。 這些問題不同於因程式碼與設計衝突而導致的錯誤。 如需有關這些錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。  
   
 |**問題**|**可能的原因**|**解決方法**|  
 |---------------|------------------------|--------------------|  
 |發生非預期的驗證錯誤。|若圖層圖表是從方案總管中的其他圖層圖表或是從相同模型專案中的圖層圖表複製來的，系統即不會對此圖層圖表進行驗證。 以這種方式複製的圖層圖表所包含的參考會與原始圖層圖表相同。|將新圖層圖表加入至模型專案。<br /><br /> 將來源圖層圖表中的項目複製到新圖表。|  
   
-##  <a name="UnderstandingValidationErrors"></a> 了解並解決圖層驗證錯誤  
+## <a name="UnderstandingValidationErrors"></a> 了解並解決圖層驗證錯誤  
  當您針對分層圖驗證程式碼時，如果程式碼設計發生衝突便會產生驗證錯誤。 例如，下列條件可能造成圖層驗證發生錯誤：  
   
 - 成品指派給錯誤的圖層。 在此情況下，請移動成品。  

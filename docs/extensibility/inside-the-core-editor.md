@@ -10,29 +10,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81d91603d6c365946b1064cac3a7f1ca3c1e6ba8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a188116b09b846e81023c239d64d6386c7f2c6ae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713291"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086516"
 ---
 # <a name="inside-the-core-editor"></a>在核心編輯器
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器是一份數個元件可讓您修改及查詢文字的資訊。 如果您已自訂核心編輯器使用舊版的 API，您可以繼續使用這些自訂項目，將會透過編輯器配接器進行路由。 不過，它會建議您調整您的自訂 API 的新編輯器。
 
  下列區域為核心編輯器的一些重要特性：
 
--   文字緩衝區
+- 文字緩衝區
 
--   文字檢視
+- 文字檢視
 
--   程式碼視窗
+- 程式碼視窗
 
--   文字標記
+- 文字標記
 
--   文字管理員
+- 文字管理員
 
--   與語言服務整合
+- 與語言服務整合
 
 ## <a name="in-this-section"></a>本節內容
 - [使用舊版 API 具現化核心編輯器](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)提供有關如何使用的逐步指示<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>編輯器建立核心的執行個體。

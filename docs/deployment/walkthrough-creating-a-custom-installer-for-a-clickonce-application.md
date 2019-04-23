@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 建立 ClickOnce 應用程式的自訂安裝 |Microsoft Docs
+title: 逐步解說：建立 ClickOnce 應用程式的自訂安裝 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,25 +18,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ceadc2458b6d380cc67062cf89cbea20541446c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 87bf42ccb44c170321f36a9fe2fa7f44e274dcfe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609940"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099659"
 ---
-# <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>逐步解說： 建立 ClickOnce 應用程式的自訂安裝程式
+# <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>逐步解說：建立自訂安裝程式的 ClickOnce 應用程式
 任何的 ClickOnce 應用程式為基礎 *.exe*檔案可以以無訊息方式安裝及更新的自訂安裝程式。 自訂安裝程式可以實作自訂使用者體驗，在安裝期間，其中包括安全性和維護作業的自訂對話方塊。 若要執行安裝作業，自訂的安裝程式會使用<xref:System.Deployment.Application.InPlaceHostingManager>類別。 本逐步解說示範如何建立自訂安裝程式會以無訊息方式安裝 ClickOnce 應用程式。
 
 ## <a name="prerequisites"></a>必要條件
 
 ### <a name="to-create-a-custom-clickonce-application-installer"></a>若要建立自訂的 ClickOnce 應用程式安裝程式
 
-1.  在 ClickOnce 應用程式，加入到 System.Deployment 和 System.Windows.Forms 的參考。
+1. 在 ClickOnce 應用程式，加入到 System.Deployment 和 System.Windows.Forms 的參考。
 
-2.  將新類別新增至您的應用程式，並指定任何名稱。 這個逐步解說使用的名稱為 `MyInstaller`。
+2. 將新類別新增至您的應用程式，並指定任何名稱。 這個逐步解說使用的名稱為 `MyInstaller`。
 
-3.  新增下列`Imports`或`using`陳述式的新類別。
+3. 新增下列`Imports`或`using`陳述式的新類別。
 
     ```vb
     Imports System.Deployment.Application
@@ -48,7 +48,7 @@ ms.locfileid: "56609940"
     using System.Windows.Forms;
     ```
 
-4.  將下列方法新增至您類別中。
+4. 將下列方法新增至您類別中。
 
      這些方法會呼叫<xref:System.Deployment.Application.InPlaceHostingManager>方法，以下載部署資訊清單中，判斷提示適當的權限，請安裝，然後下載並安裝到 ClickOnce 快取的應用程式權限的使用者。 自訂安裝程式可以指定 ClickOnce 應用程式預先信任，或可以延後信任決策<xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A>方法呼叫。 此程式碼預先信任應用程式。
 
@@ -58,7 +58,7 @@ ms.locfileid: "56609940"
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]
 
-5.  若要嘗試從您的程式碼的安裝，呼叫`InstallApplication`方法。 例如，如果名為您的類別`MyInstaller`，您可能會呼叫`InstallApplication`方式如下。
+5. 若要嘗試從您的程式碼的安裝，呼叫`InstallApplication`方法。 例如，如果名為您的類別`MyInstaller`，您可能會呼叫`InstallApplication`方式如下。
 
     ```vb
     Dim installer As New MyInstaller()

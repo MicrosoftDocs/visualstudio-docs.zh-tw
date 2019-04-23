@@ -10,12 +10,12 @@ ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 082e8db8793850319f02586ba3894da8775e6ff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba007a8084355445f0404a9b0f7a2c1cee7b2005
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108177"
 ---
 # <a name="how-to-provide-a-service"></a>HOW TO：提供服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供�
   
 ### <a name="registering-a-service"></a>註冊服務  
   
-1.  若要註冊的服務，將新增<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>來提供服務的 VSPackage。 請看以下範例：  
+1. 若要註冊的服務，將新增<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>來提供服務的 VSPackage。 請看以下範例：  
   
     ```csharp  
     [ProvideService(typeof(SMyService))]  
@@ -95,7 +95,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供�
   
 ### <a name="adding-a-service"></a>新增服務  
   
-1.  1.  VSPackage 初始設定式中新增服務以及建立服務的回呼方法。 以下是要對變更<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法：  
+1. 1.  VSPackage 初始設定式中新增服務以及建立服務的回呼方法。 以下是要對變更<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法：  
   
     ```csharp  
     protected override void Initialize()  
@@ -107,7 +107,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供�
     }  
     ```  
   
-2.  實作回呼方法，應該建立並傳回服務，或如果無法建立，則為 null。  
+2. 實作回呼方法，應該建立並傳回服務，或如果無法建立，則為 null。  
   
     ```  
     private object CreateService(IServiceContainer container, Type serviceType)  
@@ -121,7 +121,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供�
     > [!NOTE]
     >  Visual Studio 可以拒絕的要求提供服務。 如果另一個 VSPackage 已提供服務，它可以這麼做。  
   
-3.  現在您可以取得服務，並使用它的方法。 我們將示範這在初始設定式，但您可以取得任何地方您要使用服務的服務。  
+3. 現在您可以取得服務，並使用它的方法。 我們將示範這在初始設定式，但您可以取得任何地方您要使用服務的服務。  
   
     ```csharp  
     protected override void Initialize()  

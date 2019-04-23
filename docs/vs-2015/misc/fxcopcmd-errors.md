@@ -10,12 +10,12 @@ ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b5c7b62ce9e117b348daaa54da3d397346b6eab0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 016f22591deb019718c8271cf0b307d3f4c597c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940763"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043104"
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd 錯誤
 FxCopCmd 不會考慮所有的錯誤，是嚴重的錯誤。 如果 FxCopCmd 有足夠的資訊來執行部分的分析，它會執行分析和報告所發生的錯誤。 錯誤的程式碼，也就是 32 位元整數，包含對應至錯誤的數字值的位元組合。  
@@ -40,13 +40,13 @@ FxCopCmd 不會考慮所有的錯誤，是嚴重的錯誤。 如果 FxCopCmd 有
   
  分析錯誤會傳回嚴重錯誤。 表示無法完成分析。 適用時，錯誤程式碼也會包含嚴重錯誤的根本原因。 在下列情況會產生嚴重的錯誤：  
   
--   分析無法執行輸入不足所造成。  
+- 分析無法執行輸入不足所造成。  
   
--   分析會擲回 FxCopCmd 未處理的例外狀況。  
+- 分析會擲回 FxCopCmd 未處理的例外狀況。  
   
--   找不到指定的專案檔，或已損毀。  
+- 找不到指定的專案檔，或已損毀。  
   
--   未指定輸出選項，或無法寫入檔案。  
+- 未指定輸出選項，或無法寫入檔案。  
   
     > [!NOTE]
     >  FxCopCmd 傳回碼 「 組件參考錯誤 」 0x200 本身是警告，而不是錯誤。 此傳回碼指出遺漏的間接參考找不到，但 FxCopCmd 無法處理它們。 它會警告是，某些分析結果可能被盜用的可能性。 它結合任何其他傳回碼時，則您可以視為錯誤 「 組件參考錯誤 」 的傳回碼。  

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34c25472b55db39b04b1431e5bdffe8664f79f41
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 168e881191843d63f515d5066ec451848319d22e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621080"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067687"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>HOW TO：將捷徑功能表項目新增至 SharePoint 專案項目擴充功能
   您可以透過專案項目擴充功能，將快顯功能表項目新增至現有的 SharePoint 專案項目中。 使用者以滑鼠右鍵按一下專案項目中的時，會出現的功能表項目**方案總管 中**。
@@ -28,11 +28,11 @@ ms.locfileid: "56621080"
 
 ### <a name="to-add-a-shortcut-menu-item-in-a-project-item-extension"></a>若要加入專案項目擴充功能中的捷徑功能表項目
 
-1.  在 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>方法您<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>實作、 控制代碼<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested>事件*projectItemType*參數。
+1. 在 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>方法您<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>實作、 控制代碼<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested>事件*projectItemType*參數。
 
-2.  在您的事件處理常式，如<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested>事件，加入新<xref:Microsoft.VisualStudio.SharePoint.IMenuItem>物件<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.ViewMenuItems%2A>或<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.AddMenuItems%2A>事件引數參數的集合。
+2. 在您的事件處理常式，如<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested>事件，加入新<xref:Microsoft.VisualStudio.SharePoint.IMenuItem>物件<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.ViewMenuItems%2A>或<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.AddMenuItems%2A>事件引數參數的集合。
 
-3.  在 <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click>新的事件處理常式<xref:Microsoft.VisualStudio.SharePoint.IMenuItem>物件中，執行您想要在使用者按一下您的快顯功能表項目時執行的工作。
+3. 在 <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click>新的事件處理常式<xref:Microsoft.VisualStudio.SharePoint.IMenuItem>物件中，執行您想要在使用者按一下您的快顯功能表項目時執行的工作。
 
 ## <a name="example"></a>範例
  下列程式碼範例示範如何將捷徑功能表項目加入至事件接收器的專案項目。 當使用者按一下滑鼠右鍵中的專案項目**方案總管**，然後按一下**將訊息寫入至輸出視窗**功能表項目，Visual Studio 會顯示在訊息**輸出**視窗。
@@ -45,9 +45,9 @@ ms.locfileid: "56621080"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要參考下列組件的類別庫專案：
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>部署擴充功能
  若要部署的延伸模組，建立[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件和任何其他您想要將副檔名的檔案。 如需詳細資訊，請參閱 <<c0> [ 部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。

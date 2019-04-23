@@ -24,17 +24,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55452897212c0ce28ec44aa107de44b29ed9f80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942546"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063396"
 ---
 # <a name="hierarchical-update"></a>階層式更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 階層式更新 * 是指儲存回資料庫的更新的資料 （從含有兩個或多個相關資料表的資料集），同時維護參考完整性規則的程序。 *參考完整性*指的是控制行為的插入、 更新和刪除相關的記錄在資料庫中的條件約束所提供的一致性規則。 比方說，就會強制執行允許該客戶的訂單建立之前建立的客戶記錄的參考完整性。  如需有關在資料集中的關聯性的詳細資訊，請參閱[集中的關聯性](../data-tools/relationships-in-datasets.md)  
   
  階層式更新功能會使用`TableAdapterManager`來管理`TableAdapter`中具類型資料集。 `TableAdapterManager`元件[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-產生類別，因此不屬於[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 當您將資料表從資料來源視窗拖曳至 Windows Form 或 WPF 頁面時，Visual Studio 會將類型 TableAdapterManager 的變數加入至表單或頁面上，以及您在 元件匣中的設計工具中看到它。 如需詳細資訊`TableAdapterManager`類別，請參閱 TableAdapterManager 參考 > 一節[TableAdapterManager 概觀](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)。  
@@ -100,11 +99,11 @@ ms.locfileid: "58942546"
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>加入程式碼以在新增子記錄前先認可資料集中的父記錄  
   
-1.  建立 `OrdersBindingSource.AddingNew` 事件的事件處理常式。  
+1. 建立 `OrdersBindingSource.AddingNew` 事件的事件處理常式。  
   
-    -   開啟**Form1**在 設計 檢視中，選取**OrdersBindingSource**在元件匣中，選取**事件**中**屬性** 視窗中，並然後按兩下**AddingNew**事件。  
+    - 開啟**Form1**在 設計 檢視中，選取**OrdersBindingSource**在元件匣中，選取**事件**中**屬性** 視窗中，並然後按兩下**AddingNew**事件。  
   
-2.  呼叫事件處理常式中加入一行程式碼`CustomersBindingSource.EndEdit`方法。 `OrdersBindingSource_AddingNew` 事件處理常式中的程式碼應該與下列類似：  
+2. 呼叫事件處理常式中加入一行程式碼`CustomersBindingSource.EndEdit`方法。 `OrdersBindingSource_AddingNew` 事件處理常式中的程式碼應該與下列類似：  
   
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#2)]
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#2)]  

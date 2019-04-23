@@ -19,12 +19,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11ce31ce0a128114e3751dd412d7c3a0ea36df25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 635dd8d9f7860b075de9b35e21fcf42bdad2ea1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944899"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078872"
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>逐步解說：建立自訂安裝程式的 ClickOnce 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58944899"
   
 ### <a name="to-create-a-custom-clickonce-application-installer"></a>若要建立自訂的 ClickOnce 應用程式安裝程式  
   
-1.  在 ClickOnce 應用程式，加入到 System.Deployment 和 System.Windows.Forms 的參考。  
+1. 在 ClickOnce 應用程式，加入到 System.Deployment 和 System.Windows.Forms 的參考。  
   
-2.  將新類別新增至您的應用程式，並指定任何名稱。 這個逐步解說使用的名稱為 `MyInstaller`。  
+2. 將新類別新增至您的應用程式，並指定任何名稱。 這個逐步解說使用的名稱為 `MyInstaller`。  
   
-3.  新增下列`Imports`或`using`陳述式的新類別。  
+3. 新增下列`Imports`或`using`陳述式的新類別。  
   
     ```vb  
     Imports System.Deployment.Application  
@@ -51,7 +51,7 @@ ms.locfileid: "58944899"
     using System.Windows.Forms;  
     ```  
   
-4.  將下列方法新增至您類別中。  
+4. 將下列方法新增至您類別中。  
   
      這些方法會呼叫<xref:System.Deployment.Application.InPlaceHostingManager>方法，以下載部署資訊清單中，判斷提示適當的權限，請安裝，然後下載並安裝到 ClickOnce 快取的應用程式權限的使用者。 自訂安裝程式可以指定 ClickOnce 應用程式預先信任，或可以延後信任決策<xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A>方法呼叫。 此程式碼預先信任應用程式。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "58944899"
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  
   
-5.  若要嘗試從您的程式碼的安裝，呼叫`InstallApplication`方法。 例如，如果名為您的類別`MyInstaller`，您可能會呼叫`InstallApplication`方式如下。  
+5. 若要嘗試從您的程式碼的安裝，呼叫`InstallApplication`方法。 例如，如果名為您的類別`MyInstaller`，您可能會呼叫`InstallApplication`方式如下。  
   
     ```vb  
     Dim installer As New MyInstaller()  

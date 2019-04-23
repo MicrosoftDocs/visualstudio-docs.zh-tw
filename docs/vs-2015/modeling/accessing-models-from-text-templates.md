@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110488"
 ---
 # <a name="accessing-models-from-text-templates"></a>從文字範本存取模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,15 +57,15 @@ Here is a list of elements in the model:
   
  請注意此範本有關的下列重點：  
   
--   網域類別、 屬性和您在 DSL 定義中定義的關聯性，可以使用範本。  
+- 網域類別、 屬性和您在 DSL 定義中定義的關聯性，可以使用範本。  
   
--   在範本載入您在中指定的模型檔案`requires`屬性。  
+- 在範本載入您在中指定的模型檔案`requires`屬性。  
   
--   中的屬性`this`包含根項目。 從該處，您的程式碼可以巡覽至模型的其他項目。 屬性的名稱通常是與您的 DSL 的根網域類別相同。 在此範例中，它是 `this.ExampleModel`。  
+- 中的屬性`this`包含根項目。 從該處，您的程式碼可以巡覽至模型的其他項目。 屬性的名稱通常是與您的 DSL 的根網域類別相同。 在此範例中，它是 `this.ExampleModel`。  
   
--   雖然寫入程式碼片段的語言是 C#，您可以產生任何類型的文字。 您也可以撰寫程式碼[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]藉由將屬性加入`language="VB"`到`template`指示詞。  
+- 雖然寫入程式碼片段的語言是 C#，您可以產生任何類型的文字。 您也可以撰寫程式碼[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]藉由將屬性加入`language="VB"`到`template`指示詞。  
   
--   若要偵錯範本，請新增`debug="true"`至`template`指示詞。 範本將會開啟另一個執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]發生的例外狀況。 如果您想要中斷偵錯程式碼中的特定點時，insert 陳述式 `System.Diagnostics.Debugger.Break();`  
+- 若要偵錯範本，請新增`debug="true"`至`template`指示詞。 範本將會開啟另一個執行個體[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]發生的例外狀況。 如果您想要中斷偵錯程式碼中的特定點時，insert 陳述式 `System.Diagnostics.Debugger.Break();`  
   
      如需詳細資訊，請參閱 <<c0> [ 偵錯 T4 文字範本](../modeling/debugging-a-t4-text-template.md)。  
   
@@ -80,9 +80,9 @@ Here is a list of elements in the model:
   
  DSL 的指示詞處理器會執行兩項主要工作：  
   
--   它有效地插入範本以參考您的 DSL 組件和匯入指示詞。 這可讓您在範本程式碼中使用您的網域類別。  
+- 它有效地插入範本以參考您的 DSL 組件和匯入指示詞。 這可讓您在範本程式碼中使用您的網域類別。  
   
--   它會載入您在中指定的檔案`requires`參數，並設定中的屬性`this`載入模型的根項目參考。  
+- 它會載入您在中指定的檔案`requires`參數，並設定中的屬性`this`載入模型的根項目參考。  
   
 ## <a name="validating-the-model-before-running-the-template"></a>執行範本之前先驗證模型  
  您可能會導致要通過驗證，才能在執行範本的模型。  
@@ -100,7 +100,7 @@ Here is a list of elements in the model:
   
    如果發現錯誤，它會回報 [錯誤] 視窗中，結果檔案將包含錯誤訊息。  
   
-##  <a name="Multiple"></a> 從文字範本存取多個模型  
+## <a name="Multiple"></a> 從文字範本存取多個模型  
   
 > [!NOTE]
 >  這個方法可讓您讀取相同的範本中的多個模型，但不支援 ModelBus 參考。 ModelBus 參考會 shape 的模型，請參閱[文字範本中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。  

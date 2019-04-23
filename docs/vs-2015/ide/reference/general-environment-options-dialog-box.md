@@ -27,17 +27,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5db2476f16010f61af23c460fdd2bc78066c0e4a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 93e60448ec2820758ac7f5a6a5f7b6c4b0065500
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868118"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667192"
 ---
 # <a name="general-environment-options-dialog-box"></a>選項對話方塊、環境、一般
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用此頁面來變更整合式開發環境 (IDE) 之色彩佈景主題、狀態列設定和副檔名關聯等其他選項。 開啟 [工具] 功能表，並選擇 [選項]，然後開啟 [環境] 資料夾，再選擇 [一般] 頁面，即可存取 [選項] 對話方塊。 如果此頁面未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定] 核取方塊。  
   
 > [!NOTE]
@@ -82,6 +81,6 @@ ms.locfileid: "57868118"
   
  如果同一部電腦上安裝兩個版本的 Visual Studio，並在之後解除安裝其中一個版本，則這個選項十分有用。 解除安裝之後，Visual Studio 檔案的圖示就不會再出現在 [檔案總管] 中。 此外，Windows 無法再將 Visual Studio 辨識為編輯這些檔案的預設應用程式。 這個選項會還原這些關聯。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)   
  [自訂視窗版面配置](../../ide/customizing-window-layouts-in-visual-studio.md)

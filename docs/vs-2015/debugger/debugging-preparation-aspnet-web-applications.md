@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa5e454eec00c2530190834974cd946838a0947
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e7a2640d39c90dc36a3960d230df46ac75bdbce6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942773"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092418"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>偵錯準備：ASP.NET Web 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "58942773"
   
 ### <a name="to-create-a-web-forms-application"></a>若要建立 Web Form 網頁  
   
-1.  在 **檔案**功能表上，選擇**新的網站**。  
+1. 在 **檔案**功能表上，選擇**新的網站**。  
   
-2.  在  **New Web Site**對話方塊中，選取[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]**網站**。  
+2. 在  **New Web Site**對話方塊中，選取[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]**網站**。  
   
-3.  按一下 [確定 **Deploying Office Solutions**]。  
+3. 按一下 [確定] 。  
   
 ### <a name="to-debug-your-web-form"></a>若要偵錯 Web Form  
   
-1.  在函式和事件處理常式中設定一個或多個中斷點。  
+1. 在函式和事件處理常式中設定一個或多個中斷點。  
   
      如需詳細資訊，請參閱 [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。  
   
-2.  遇到中斷點時，逐步執行函式內的程式碼。 請觀察程式碼的執行，直到您找出問題癥結。  
+2. 遇到中斷點時，逐步執行函式內的程式碼。 請觀察程式碼的執行，直到您找出問題癥結。  
   
      如需詳細資訊，請參閱 <<c0> [ 逐步執行程式碼](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)並[偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)。  
   
@@ -54,13 +54,13 @@ ms.locfileid: "58942773"
   
 #### <a name="to-change-the-default-debug-configuration"></a>若要變更預設偵錯組態  
   
-1.  在**方案總管**，以滑鼠右鍵按一下網站，然後選取**屬性頁**以開啟**屬性頁** 對話方塊。  
+1. 在**方案總管**，以滑鼠右鍵按一下網站，然後選取**屬性頁**以開啟**屬性頁** 對話方塊。  
   
-2.  按一下 **啟動選項**。  
+2. 按一下 **啟動選項**。  
   
-3.  設定**起始動作**應該會顯示之 Web 網頁。  
+3. 設定**起始動作**應該會顯示之 Web 網頁。  
   
-4.  底下**偵錯工具**，請確定**ASP.NET 偵錯**已選取。  
+4. 底下**偵錯工具**，請確定**ASP.NET 偵錯**已選取。  
   
      如需詳細資訊，請參閱 < [Web 專案的屬性頁設定](../debugger/property-pages-settings-for-web-projects.md)。  
   

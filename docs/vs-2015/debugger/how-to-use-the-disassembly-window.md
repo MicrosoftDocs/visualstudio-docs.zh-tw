@@ -25,12 +25,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42d7c9798527498f2803d814515faefd62c3ace9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945850"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077494"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>HOW TO：使用反組譯碼視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ ms.locfileid: "58945850"
   
 ### <a name="to-display-the-disassembly-window"></a>若要顯示反組譯碼視窗  
   
--   在上**偵錯**功能表上，選擇**Windows**，然後按一下**反組譯碼**。  
+- 在上**偵錯**功能表上，選擇**Windows**，然後按一下**反組譯碼**。  
   
      偵錯工具必須正在執行或處於中斷模式。  
   
 ### <a name="to-turn-optional-information-on-or-off"></a>若要開啟或關閉選擇性資訊  
   
--   以滑鼠右鍵按一下**反組譯碼** 視窗中，並設定或清除想要的選項，在快顯功能表中。  
+- 以滑鼠右鍵按一下**反組譯碼** 視窗中，並設定或清除想要的選項，在快顯功能表中。  
   
      左邊界中的黃色箭頭將標示出目前執行點的位置。 它對應機器碼的 CPU 程式計數器。 這個位置顯示出下一個要執行的程式指令。  
   

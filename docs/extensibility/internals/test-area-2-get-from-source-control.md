@@ -1,5 +1,5 @@
 ---
-title: 測試區域 2:從原始檔控制取得 |Microsoft Docs
+title: 測試區域 2：從原始檔控制取得 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6e6a9f71a1ebda6e6366096881fb681a864ce31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630869"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067179"
 ---
-# <a name="test-area-2-get-from-source-control"></a>測試區域 2:取得從原始檔控制
+# <a name="test-area-2-get-from-source-control"></a>測試區域 2：從原始檔控制取得
 此測試區域涵蓋測試案例，透過 Get 命令的版本存放區擷取項目。 這些測試案例可以套用至這兩個本機和 Web 專案。
 
 ## <a name="command-menu-access"></a>命令功能表存取
@@ -26,13 +26,13 @@ ms.locfileid: "56630869"
 
 ##### <a name="get-latest-version"></a>取得最新版本：
 
--   **檔案**，**原始檔控制**，**取得最新版本**。
+- **檔案**，**原始檔控制**，**取得最新版本**。
 
--   **檔案**，**取得最新版本**。
+- **檔案**，**取得最新版本**。
 
--   快顯功能表**取得最新版本**。
+- 快顯功能表**取得最新版本**。
 
--   取得此項目：**檔案**，**原始檔控制**，**取得**。
+- 取得此項目：**檔案**，**原始檔控制**，**取得**。
 
 ## <a name="expected-behavior"></a>預期的行為
 

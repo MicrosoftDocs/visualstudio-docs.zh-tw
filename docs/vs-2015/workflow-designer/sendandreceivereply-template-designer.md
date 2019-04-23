@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c978c4be142283866ce140a1f0870cd654a06dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 689f3a57dc3de9bbe63b0ef69a969cac57a639c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945977"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104157"
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply 樣本設計工具
 **SendAndReceiveReply**範本用來建立一對預先設定<xref:System.ServiceModel.Activities.Send>並<xref:System.ServiceModel.Activities.ReceiveReply>內的活動<xref:System.Activities.Statements.Sequence>一部分的要求/回應訊息交換相互關聯的活動在用戶端上的模式。  
@@ -25,11 +25,11 @@ ms.locfileid: "58945977"
 ## <a name="the-sendandreceivereply-template"></a>SendAndReceiveReply 範本  
  新增**SendAndReceiveReply**範本會執行三件事，除了建立<xref:System.ServiceModel.Activities.Send>並<xref:System.ServiceModel.Activities.ReceiveReply>內的活動<xref:System.Activities.Statements.Sequence>活動：  
 
-1.  設定 <xref:System.ServiceModel.Activities.Send.OperationName%2A> 活動的 <xref:System.ServiceModel.Activities.Send.ServiceContractName%2A> 與 <xref:System.ServiceModel.Activities.Send> 屬性。  
+1. 設定 <xref:System.ServiceModel.Activities.Send.OperationName%2A> 活動的 <xref:System.ServiceModel.Activities.Send.ServiceContractName%2A> 與 <xref:System.ServiceModel.Activities.Send> 屬性。  
 
-2.  將 <xref:System.ServiceModel.Activities.ReceiveReply.Request%2A> 活動的 <xref:System.ServiceModel.Activities.ReceiveReply> 屬性繫結至 <xref:System.ServiceModel.Activities.Send> 活動。  
+2. 將 <xref:System.ServiceModel.Activities.ReceiveReply.Request%2A> 活動的 <xref:System.ServiceModel.Activities.ReceiveReply> 屬性繫結至 <xref:System.ServiceModel.Activities.Send> 活動。  
 
-3.  建立 <xref:System.ServiceModel.Activities.CorrelationHandle>，做為父系活動的一個變數。  
+3. 建立 <xref:System.ServiceModel.Activities.CorrelationHandle>，做為父系活動的一個變數。  
 
 ### <a name="using-the-sendandreceivereply-template-designer"></a>使用 SendAndReceiveReply 範本設計工具  
  **SendAndReceiveReply**活動設計工具位於**Messaging**類別**工具箱**，即可存取的哪一個**工具箱**索引標籤上[!INCLUDE[wfd2](../includes/wfd2-md.md)](或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)  
@@ -42,7 +42,6 @@ ms.locfileid: "58945977"
 
 ### <a name="properties-of-receivereply"></a>ReceiveReply 的屬性  
  下表顯示 <xref:System.ServiceModel.Activities.ReceiveReply> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中進行編輯，其中有一些可以在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 設計工具介面上編輯。  
-
 
 |                                 屬性名稱                                 | 必要 |                                                                                                                                                                                                                                                                                                                                                        使用量                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

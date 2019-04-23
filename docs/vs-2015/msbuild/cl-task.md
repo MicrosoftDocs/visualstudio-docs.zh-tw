@@ -22,17 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 136bc554abe6c231dfa80753b19dba89946830c3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e8666f990265a1fcf9947ac5c7c18c7489a6bdb8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756659"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653589"
 ---
 # <a name="cl-task"></a>CL 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包裝 Visual C++ 編譯器工具 cl.exe。 編譯器會產生可執行檔 (.exe)、動態連結程式庫 (.dll) 檔案或程式碼模組 (.netmodule) 檔案。 如需詳細資訊，請參閱[編譯器選項](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c)。  
   
 ## <a name="parameters"></a>參數  
@@ -54,7 +53,7 @@ ms.locfileid: "54756659"
   
    如需詳細資訊，請參閱[編譯器選項](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c)。  
   
-- **AdditionalUsingDirectories**選擇性的 String [] 參數。  
+- **AdditionalUsingDirectories** 選擇性 String[] 參數。  
   
    指定編譯器要搜尋的目錄，以解析傳遞給 **#using** 指示詞的檔案參考。  
   
@@ -804,5 +803,5 @@ ms.locfileid: "54756659"
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

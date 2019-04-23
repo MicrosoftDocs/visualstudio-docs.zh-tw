@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2bba6a290e8d34b2f809916341e9258ae5d36fa9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: aa242fc8908ec7d07728b706c12f581e5f02548d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324077"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790676"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>歡迎使用 Visual Studio IDE | Visual Basic
 
@@ -102,22 +102,24 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ::: moniker-end
 
-- [快速啟動](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- 搜尋方塊
 
-   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 **快速啟動**搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，[快速啟動] 提供的結果可開啟 Visual Studio 安裝程式，安裝工作負載或個別元件。
+   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，搜尋方塊提供的結果可開啟 Visual Studio 安裝程式來安裝工作負載或個別元件。
 
    > [!TIP]
-   > 按 **Ctrl**+**Q** 作為 [快速啟動] 搜尋方塊的捷徑。
+   > 按 **Ctrl**+**Q** 是啟動搜尋方塊的捷徑。
 
    ::: moniker range="vs-2017"
 
    ![Visual Studio 2017 中的 [快速啟動] 搜尋方塊](../media/quick-launch-nuget.png)
 
+   如需詳細資訊，請參閱[快速啟動](../../ide/reference/quick-launch-environment-options-dialog-box.md)。
+
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   ![Visual Studio 2019 中的 [快速啟動] 搜尋方塊](media/vs-2019/quick-launch.png)
+   ![Visual Studio 2019 中的搜尋方塊](media/vs-2019/quick-launch.png)
 
    ::: moniker-end
 

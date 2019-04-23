@@ -1,5 +1,5 @@
 ---
-title: 測試區域 7︰Share | Microsoft Docs
+title: 測試區域 7：Share | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,27 +11,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca75f06a72cf3da9dcbbd97ad6559772928152d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c0792871835d8adea52c1e4adfdfd2c38f7d617
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596850"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107784"
 ---
-# <a name="test-area-7-share"></a>測試區域 7︰共用
+# <a name="test-area-7-share"></a>測試區域 7：共用
 這個測試部分涵蓋透過位置之間的共用項目**共用**命令。
 
  Hhare 作業是檔案和資料夾項目在原始檔控制檔案階層中的兩個或多個位置之間的明顯重複項目。 重複資料刪除不真的會發生在伺服器上，但使用者會看到兩個或多個指定的位置相同的檔案。 每當對任何共用的項目進行變更，這些變更會出現在所有其他共用位置。
 
  如果您選取具有至少一個檔案中的原始檔控制下的資料夾，適用於共用到資料夾。 在下列情況下，「 共用 」 命令會停用：
 
--   如果選取的資料夾是空的資料夾。
+- 如果選取的資料夾是空的資料夾。
 
--   如果沒有實際的資料夾，但它未包含任何原始檔控制檔案。
+- 如果沒有實際的資料夾，但它未包含任何原始檔控制檔案。
 
--   虛擬資料夾時，原始檔控制下的檔案存在與否。
+- 虛擬資料夾時，原始檔控制下的檔案存在與否。
 
--   如果沒有遠端站台的 Web 專案。
+- 如果沒有遠端站台的 Web 專案。
 
 ## <a name="command-menu-access"></a>命令功能表存取
  下列[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]與測試案例中使用整合式的開發環境功能表路徑。
@@ -40,11 +40,11 @@ ms.locfileid: "56596850"
 
 ## <a name="expected-behavior"></a>預期的行為
 
--   共用的檔案會出現在共用位置。
+- 共用的檔案會出現在共用位置。
 
--   檢視原始檔控制版本存放區記錄顯示，就會共用檔案。
+- 檢視原始檔控制版本存放區記錄顯示，就會共用檔案。
 
--   編輯共用的檔案，編輯兩個檔案的位置。
+- 編輯共用的檔案，編輯兩個檔案的位置。
 
 ## <a name="test-cases"></a>測試案例
  以下是共用的測試區域的特定測試案例。

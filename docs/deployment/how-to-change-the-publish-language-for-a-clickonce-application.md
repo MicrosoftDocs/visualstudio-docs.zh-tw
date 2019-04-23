@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67ac7693d4332c4dc5d6eae3fb89cf3e9a9c2384
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 7e5bf51fd416fd9ccbb2343c17412984858429da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115285"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>HOW TO：變更 ClickOnce 應用程式的發佈語言
 
@@ -34,15 +34,15 @@ ms.locfileid: "54953025"
 
 ## <a name="to-change-the-publish-language"></a>若要變更的發行語言
 
-1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。
+1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。
 
-2.  按一下 [發佈] 索引標籤。
+2. 按一下 [發佈] 索引標籤。
 
-3.  按一下 **選項** 按鈕以開啟**發行選項** 對話方塊。
+3. 按一下 **選項** 按鈕以開啟**發行選項** 對話方塊。
 
-4.  按一下 **描述**。
+4. 按一下 **描述**。
 
-5.  在 **發行選項**對話方塊方塊、 選取語言和文化特性，從**發行語言**下拉式清單中，然後再按一下**確定**。
+5. 在 **發行選項**對話方塊方塊、 選取語言和文化特性，從**發行語言**下拉式清單中，然後再按一下**確定**。
 
 ## <a name="see-also"></a>另請參閱
 

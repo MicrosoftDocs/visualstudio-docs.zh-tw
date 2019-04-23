@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77795c93679bddb21a56b8c7a64a11ceb6aa1e6c
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 2c619301d15654ec71c3867bb97622488aac329e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58939790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050682"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>逐步解說：依需求以 ClickOnce 部署 API 下載附屬組件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,24 +46,24 @@ ms.locfileid: "58939790"
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>隨需下載附屬組件  
   
-1.  將下列程式碼加入您的應用程式，以便能夠隨需下載附屬組件。  
+1. 將下列程式碼加入您的應用程式，以便能夠隨需下載附屬組件。  
   
      [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/CS/Program.cs#1)]
      [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/VB/Form1.vb#1)]  
   
-2.  使用來產生您的應用程式的附屬組件[Resgen.exe （資源檔產生器）](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+2. 使用來產生您的應用程式的附屬組件[Resgen.exe （資源檔產生器）](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-3.  使用 MageUI.exe 產生應用程式資訊清單，或開啟現有的應用程式資訊清單。 如需有關這項工具的詳細資訊，請參閱 < [MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
+3. 使用 MageUI.exe 產生應用程式資訊清單，或開啟現有的應用程式資訊清單。 如需有關這項工具的詳細資訊，請參閱 < [MageUI.exe (圖形用戶端、資訊清單產生和編輯工具)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
   
-4.  按一下 [檔案]  索引標籤。  
+4. 按一下 [檔案]  索引標籤。  
   
-5.  按一下 [省略符號]  按鈕 (...)，然後選取您所有應用程式之附屬組件與檔案的所在目錄，包括您使用 Resgen.exe 產生的附屬組件 (附屬組件的名稱形式為 *isoCode*\ApplicationName.resources.dll；其中 *isoCode* 是 RFC 1766 格式的語言識別項)。  
+5. 按一下 [省略符號]  按鈕 (...)，然後選取您所有應用程式之附屬組件與檔案的所在目錄，包括您使用 Resgen.exe 產生的附屬組件 (附屬組件的名稱形式為 *isoCode*\ApplicationName.resources.dll；其中 *isoCode* 是 RFC 1766 格式的語言識別項)。  
   
-6.  按一下 [填入]  將檔案加入您的部署。  
+6. 按一下 [填入]  將檔案加入您的部署。  
   
-7.  選取每個附屬組件的 [選擇性]  核取方塊。  
+7. 選取每個附屬組件的 [選擇性]  核取方塊。  
   
-8.  設定群組欄位到每個附屬組件的 ISO 語言識別項。 以日文的附屬組件為例，您會將下載群組名稱指定為 `ja-JP`取得。 這可讓您在步驟 1 加入的程式碼，根據使用者之 <xref:System.Threading.Thread.CurrentUICulture%2A> 屬性設定，下載適合的附屬組件。  
+8. 設定群組欄位到每個附屬組件的 ISO 語言識別項。 以日文的附屬組件為例，您會將下載群組名稱指定為 `ja-JP`取得。 這可讓您在步驟 1 加入的程式碼，根據使用者之 <xref:System.Threading.Thread.CurrentUICulture%2A> 屬性設定，下載適合的附屬組件。  
   
 ## <a name="next-steps"></a>後續步驟  
  在生產環境中，因為用戶端電腦上會有正確的預設值，所以您可能需要移除行程式碼範例中，將 <xref:System.Threading.Thread.CurrentUICulture%2A> 設定為特定值的行。 當您的應用程式在日文的用戶端電腦上執行時， <xref:System.Threading.Thread.CurrentUICulture%2A> 預設會是 `ja-JP` 。 在部署您的應用程式之前，以程式設計方式設定這個值以測試附屬組件，是個好方法。  

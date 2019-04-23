@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e040c45079c9e4b82337cbd1e4b5d7d8306e1a32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 46eace1c566a2810c5914a49654f8393f425fdee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939684"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040866"
 ---
 # <a name="error-site-uses-ip-address"></a>錯誤：網站使用 IP 位址
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ ms.locfileid: "58939684"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-1.  改用手動附加 (從 [偵錯] 功能表中選擇 [附加至處理序])。  
+1. 改用手動附加 (從 [偵錯] 功能表中選擇 [附加至處理序])。  
   
      -或-  
   
-2.  變更 [IIS 網站識別] 設定。  
+2. 變更 [IIS 網站識別] 設定。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

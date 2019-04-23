@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24222b60db1ba35da59069e58d6f1377928e7a54
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 25897eac467fe318ac67b91db247d2fd7b6ec68a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714916"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654408"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
 結構描述的字串陣列。
@@ -46,8 +46,7 @@ dwCount 數目的字串中`Members`陣列。
 ## <a name="remarks"></a>備註
 此結構會傳回從[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)方法。
 
-
- [只有 c + +]每個個別的字串必須使用釋放`SysFreeString`，而`Members`陣列必須釋放與`CoTaskMemFree`。
+ [C++只]每個個別的字串必須使用釋放`SysFreeString`，而`Members`陣列必須釋放與`CoTaskMemFree`。
 
 ## <a name="requirements"></a>需求
 標頭： msdbg.h

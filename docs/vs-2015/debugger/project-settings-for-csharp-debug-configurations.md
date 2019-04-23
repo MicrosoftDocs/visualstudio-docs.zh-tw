@@ -23,12 +23,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd897e0d340bed3c82ab47a9e315915456d10480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fd484422cdae8cfc04cab169feefdd452f178a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056675"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 偵錯組態的專案設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ ms.locfileid: "58939053"
 您可以變更專案設定中的 C# 偵錯組態**屬性頁**視窗中所述[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示 [屬性頁] 視窗中，偵錯工具相關設定的位置。  
   
 > [!WARNING]
->  本主題不適用於 Windows 市集應用程式。 請參閱[啟動偵錯工作階段 (VB、 C#、 c + + 和 XAML）](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+>  本主題不適用於 Windows 市集應用程式。 請參閱[啟動偵錯工作階段 (VB、 C#，C++和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a> 偵錯 索引標籤  
+## <a name="BKMK_Debug_tab"></a> 偵錯 索引標籤  
   
 |**設定**|**描述**|  
 |-----------------|---------------------|  
@@ -50,7 +50,7 @@ ms.locfileid: "58939053"
 |**啟用 Unmanaged 程式碼偵錯**|讓您可以從 Managed 應用程式偵錯原生 (Unmanaged) Win32 程式碼的呼叫。|  
 |**啟用 SQL Server 偵錯**|允許 SQL Server 資料庫物件偵錯。|  
   
-##  <a name="BKMK_Build_tab"></a> 建置索引標籤  
+## <a name="BKMK_Build_tab"></a> 建置索引標籤  
   
 |設定|描述|  
 |-------------|-----------------|  

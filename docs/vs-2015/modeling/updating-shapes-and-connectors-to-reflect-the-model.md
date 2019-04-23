@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e5c03fa6a04abd06af9e24b83977d491e9809265
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945440"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107862"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>更新圖案和接點來反映模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>設定圖形地圖屬性來控制的裝飾項目可見性  
  您可以控制裝飾項目可見的性，而不需要撰寫程式碼中，藉由設定 DSL 定義中的圖形與領域類別之間的對應。 如需詳細資訊，請參閱下列主題：  
   
--   [如何：控制 Decorator 的可視性-重新導向](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+- [如何：控制 Decorator 的可視性-重新導向](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
--   [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)  
+- [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)  
   
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>將公開為屬性的色彩和樣式的圖形  
  在 DSL 定義中，以滑鼠右鍵按一下圖形類別，指向**加入已公開**，然後按一下其中一個項目這類**填滿色彩**。  
@@ -115,7 +115,7 @@ partial class MyLanguageDiagram
   
  針對網域屬性和非存放區功能，例如圖形的大小，可以使用這個方法。  
   
-##  <a name="OnAssociatedProperty"></a> 若要更新圖形的其他功能使用 Associatevaluewith  
+## <a name="OnAssociatedProperty"></a> 若要更新圖形的其他功能使用 Associatevaluewith  
  圖形，例如是否有陰影或連接器的箭頭樣式的某些功能沒有任何內建的方法，公開為網域屬性的功能。  這類功能的變更不在交易系統的控制之下。 因此，不適當更新這些使用規則，因為規則不會叫用使用者執行 [復原] 命令時。  
   
  相反地，您可以更新這類功能，使用<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>。 在下列範例中，連接器的箭頭樣式會受到網域屬性的連接器顯示在關係性中的值：  

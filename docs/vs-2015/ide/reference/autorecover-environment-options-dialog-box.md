@@ -19,17 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e5fc9c1d835979c53b499e88e3949d5023e077e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 210b1ca8d2961f9337472faa1a4f92ee852a7a2b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766069"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659471"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>選項對話方塊、環境、自動回復
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用 [選項] 對話方塊的這個頁面，即可指定是否自動備份檔案。 此頁面也可讓您指定是否在整合式開發環境 (IDE) 意外關閉時還原已修改的檔案。 選取 [工具] 功能表，並選擇 [選項]，然後選取 [環境] 資料夾，再選擇 [自動回復] 頁面，即可存取此對話方塊。 如果此頁面未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定]。  
   
 > [!NOTE]

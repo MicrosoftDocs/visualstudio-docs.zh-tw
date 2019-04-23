@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac447d3511365cf8e7f48344231d0ddb8d2a4374
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a05aba81292fba9520defe39af6977682452b850
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945152"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080627"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield 限量版
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,10 +26,10 @@ ms.locfileid: "58945152"
   
 ### <a name="to-enable-installshield-limited-edition"></a>啟用 InstallShield Limited Edition  
   
-1.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
+1. 在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-2.  在 [新增專案]  對話方塊中，展開 [其他專案類型]  節點，然後選擇 [安裝和部署]  節點。  
+2. 在 [新增專案]  對話方塊中，展開 [其他專案類型]  節點，然後選擇 [安裝和部署]  節點。  
   
-3.  在範本清單中，選擇 [啟用 InstallShield Limited Edition] ，然後選擇 [確定]  按鈕。  
+3. 在範本清單中，選擇 [啟用 InstallShield Limited Edition] ，然後選擇 [確定]  按鈕。  
   
-4.  閱讀開啟之瀏覽器視窗中的指示，然後選擇 [進入下載網站]  連結。
+4. 閱讀開啟之瀏覽器視窗中的指示，然後選擇 [進入下載網站]  連結。

@@ -14,12 +14,12 @@ ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f18195f344adca16fce7403d225c42826a2af544
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 52b98875b560e4863a93849cf99c2f8756cd438a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843399"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117137"
 ---
 # <a name="unexpected-quantifier-javascript"></a>非預期的數量詞 (JavaScript)
 當您在撰寫您的規則運算式搜尋模式，您會建立含不合法的重複子模式項目。 例如，模式  
@@ -30,7 +30,7 @@ ms.locfileid: "56843399"
   
  不合法因為項目 ^ （輸入開頭） 不能有重複的因素。 下表列出的項目不能有重複的因素。  
   
-|元素|描述|  
+|項目|描述|  
 |-------------|-----------------|  
 |^|輸入開頭|  
 |$|Konec vstupu|  
@@ -45,7 +45,7 @@ ms.locfileid: "56843399"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   請確定您的搜尋模式項目包含只有合法重複因素。  
+- 請確定您的搜尋模式項目包含只有合法重複因素。  
   
 ## <a name="see-also"></a>另請參閱  
  [規則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   

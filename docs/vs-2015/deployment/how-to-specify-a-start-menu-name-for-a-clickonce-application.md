@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 38ea7865d625e2d5a04591848ecc7c3375d654f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 30bb4050399bf7a6d9120f7e5454b26ce505af35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943214"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061550"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>HOW TO：指定 ClickOnce 應用程式的開始功能表名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ ms.locfileid: "58943214"
   
 ### <a name="to-specify-a-start-menu-name"></a>若要指定的開始功能表名稱  
   
-1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [發佈] 索引標籤。  
+2. 按一下 [發佈] 索引標籤。  
   
-3.  按一下 **選項** 按鈕以開啟**發行選項** 對話方塊。  
+3. 按一下 **選項** 按鈕以開啟**發行選項** 對話方塊。  
   
-4.  按一下 **描述**。  
+4. 按一下 **描述**。  
   
-5.  在 **發行選項**對話方塊方塊中，輸入要在顯示的名稱**產品名稱**。  
+5. 在 **發行選項**對話方塊方塊中，輸入要在顯示的名稱**產品名稱**。  
   
-6.  （選擇性） 您可以在其中輸入中的 「 發行者 」 名稱**發行者名稱**。  
+6. （選擇性） 您可以在其中輸入中的 「 發行者 」 名稱**發行者名稱**。  
   
 ## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   

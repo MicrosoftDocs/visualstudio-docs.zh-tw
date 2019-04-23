@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39156994caa9e6ec073a05b0d8d04edab40e11e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1df66fcc2e7844bb05ff9a09e8fc71b6fb59ea9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609380"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073628"
 ---
 # <a name="listobject-control"></a>ListObject 控制項
   <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項是可公開事件及繫結至資料的清單。 當您將清單加入工作表時，Visual Studio 會建立 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項，以便您直接對這個控制項進行程式設計，而不必周遊 Microsoft Office Excel 物件模型。
@@ -79,33 +79,33 @@ ms.locfileid: "56609380"
 ## <a name="events"></a>事件
  下列事件適用於 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項：
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.Change>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.Change>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.DataBindingFailure>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.DataBindingFailure>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.DataMemberChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.DataMemberChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.DataSourceChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.DataSourceChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.Deselected>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.Deselected>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.Selected>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.Selected>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.SelectedIndexChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.SelectedIndexChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>
 
 ## <a name="see-also"></a>另請參閱
 - [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)

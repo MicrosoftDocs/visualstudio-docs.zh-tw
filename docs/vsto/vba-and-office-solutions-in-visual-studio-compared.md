@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d97ff0b7e11bf79a8da6f3e034227c66ae1f9189
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24e7d3674712a17d940b94637db808c0d91d2d6a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110943"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>比較 Visual Studio 中的 VBA 和 Office 方案
   Microsoft Visual Basic for Applications (VBA) 會使用與 Office 應用程式緊密整合的 Unmanaged 程式碼。 使用 Visual Studio 建立的 Microsoft Office 專案可讓您充分利用 .NET Framework 和 Visual Studio 設計工具。
@@ -38,9 +38,9 @@ ms.locfileid: "56618324"
 
  有些事仍然使用 VBA 較容易快速地達成。 具體而言，您可能想要繼續使用 VBA 的原因有：
 
--   自訂工作表函式。
+- 自訂工作表函式。
 
--   巨集錄製。
+- 巨集錄製。
 
 ## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>合併 VBA 方案與使用 Visual Studio 建立 Office 方案
  您可以從使用 Visual Studio 建立的 Office 方案中呼叫 VBA 程式碼，也可以從 VBA 在使用 Visual Studio 建立的 Office 方案中呼叫程式碼。 特定技術會依 Office 方案是 VSTO 增益集或文件層級自訂而有所不同。 如需詳細資訊，請參閱 <<c0> [ 從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)並[合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)。

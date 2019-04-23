@@ -14,17 +14,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58941521"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047421"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單的資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 建立應用程式來管理資料庫中的資料時，您會執行基本工作，例如定義連接字串、插入資料及執行預存程序。 遵循本主題，您可以探索如何使用 Visual C# 或 Visual Basic 和 ADO.NET 與簡單的 Windows Forms 「 資料表單 」 應用程式內的資料庫互動。  所有的.NET 資料技術，包括資料集，LINQ to SQL 和 Entity Framework，最後執行非常類似於本文中所示的步驟。  
   
  這篇文章示範簡單的方式非常快速的方式取得移出資料庫的資料。 如果您的應用程式需要非一般的方式修改資料，並更新資料庫，您應該考慮使用 Entity Framework，並使用資料繫結至自動同步處理使用者介面控制項的基礎資料中的變更。  
@@ -34,17 +33,17 @@ ms.locfileid: "58941521"
   
  **本主題內容**  
   
--   [設定範例資料庫](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+- [設定範例資料庫](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [建立表單，並加入控制項](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+- [建立表單，並加入控制項](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [儲存連接字串](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
+- [儲存連接字串](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
   
--   [擷取連接字串](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
+- [擷取連接字串](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
   
--   [撰寫表單的程式碼](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+- [撰寫表單的程式碼](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [測試您的應用程式](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+- [測試您的應用程式](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
 ## <a name="prerequisites"></a>必要條件  
  若要建立應用程式，您需要：  
@@ -59,10 +58,10 @@ ms.locfileid: "58941521"
   
   本主題假設您熟悉 Visual Studio IDE 的基本功能，且可以建立 Windows Form 應用程式、將表單加入至該專案、將按鈕和其他控制項放置在這些表單上、設定這些控制項的屬性，以及編碼簡單事件。 如果您不熟悉這些工作，我們建議您先完成[Getting Started with Visual C# 和 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)再開始本主題。  
   
-##  <a name="BKMK_setupthesampledatabase"></a> 設定範例資料庫  
+## <a name="BKMK_setupthesampledatabase"></a> 設定範例資料庫  
  本逐步解說的範例資料庫包含 Customer 和 Orders 資料表。 資料表一開始不包含任何資料，但是當您執行建立的應用程式時，您會加入資料。 此資料庫也會有五個簡單的預存程序。 [使用指令碼中建立 SQL database](../data-tools/create-a-sql-database-by-using-a-script.md)包含建立資料表、 主要與外部索引鍵、 條件約束和預存程序的 TRANSACT-SQL 指令碼。  
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> 建立表單，並加入控制項  
+## <a name="BKMK_createtheformsandaddcontrols"></a> 建立表單，並加入控制項  
   
 1. 建立 Windows Forms 應用程式的專案，並命名它 SimpleDataApp。  
   
@@ -70,11 +69,11 @@ ms.locfileid: "58941521"
   
 2. 將兩個 Windows 表單新增至專案，使其具有三種形式，然後提供下列名稱：  
   
-   -   巡覽  
+   - 巡覽  
   
-   -   NewCustomer  
+   - NewCustomer  
   
-   -   FillOrCancel  
+   - FillOrCancel  
   
 3. 為每個表單加入下圖中顯示的文字方塊、按鈕和其他控制項。 對每個控制項設定資料表描述的屬性。  
   
@@ -120,33 +119,33 @@ ms.locfileid: "58941521"
 |按鈕|Name = btnFillOrder|  
 |按鈕|Name = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> 儲存連接字串  
+## <a name="BKMK_storetheconnectionstring"></a> 儲存連接字串  
  當您的應用程式嘗試開啟資料庫的連接時，應用程式必須存取連接字串。 若要避免手動輸入字串，每個表單上，將字串儲存在應用程式組態檔，在您的專案，並建立從您的應用程式中的任何表單呼叫方法時，會傳回字串的方法。  
   
  您可以找到中的連接字串**SQL Server 物件總管**以滑鼠右鍵按一下資料庫，選取**屬性**，再尋找 ConnectionString 屬性。 您可以使用 Ctrl + A 來選取字串。  
   
-1.  在 **方案總管**，選取**屬性**節點底下的專案，然後選取**Settings.settings**。  
+1. 在 **方案總管**，選取**屬性**節點底下的專案，然後選取**Settings.settings**。  
   
-2.  在 **名稱**資料行中，輸入`connString`。  
+2. 在 **名稱**資料行中，輸入`connString`。  
   
-3.  在 **型別**清單中，選取 **（連接字串）**。  
+3. 在 **型別**清單中，選取 **（連接字串）**。  
   
-4.  在 **領域**清單中，選取**應用程式**。  
+4. 在 **領域**清單中，選取**應用程式**。  
   
-5.  在 [**值**] 欄中，輸入您的連接字串 （不含任何外部引號括住），然後儲存變更。  
+5. 在 [**值**] 欄中，輸入您的連接字串 （不含任何外部引號括住），然後儲存變更。  
   
 > [!NOTE]
 >  在實際的應用程式中，您應該在連接字串安全地儲存中, 所述[連接字串和組態檔](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)。  
   
-##  <a name="BKMK_retrievetheconnectionstring"></a> 擷取連接字串  
+## <a name="BKMK_retrievetheconnectionstring"></a> 擷取連接字串  
   
-1.  在功能表列上選取**專案** > **加入參考**，然後加入 System.Configuration.dll 的參考。  
+1. 在功能表列上選取**專案** > **加入參考**，然後加入 System.Configuration.dll 的參考。  
   
-2.  在功能表列上選取**專案** > **加入類別**若要將類別檔案新增至您的專案，然後將檔案命名`Utility`。  
+2. 在功能表列上選取**專案** > **加入類別**若要將類別檔案新增至您的專案，然後將檔案命名`Utility`。  
   
      Visual Studio 會建立檔案，並顯示在**方案總管 中**。  
   
-3.  在 [公用程式] 檔案中，將預留位置程式碼取代為下列程式碼。 請注意編號的註解 (以 Util- 為前置詞)，來識別程式碼區段。 下表顯示程式碼呼叫關鍵點。  
+3. 在 [公用程式] 檔案中，將預留位置程式碼取代為下列程式碼。 請注意編號的註解 (以 Util- 為前置詞)，來識別程式碼區段。 下表顯示程式碼呼叫關鍵點。  
   
     ```csharp  
     using System;  
@@ -220,7 +219,7 @@ ms.locfileid: "58941521"
     |Util-2|定義變數 `returnValue`，並將它初始化為 `null` (C#) 或 `Nothing` (Visual Basic)。|  
     |Util-3|即使您輸入`connString`中的連接字串的名稱作為**屬性**視窗中，您必須指定`"SimpleDataApp.Properties.Settings.connString"`(C#) 或`"SimpleDataApp.My.MySettings.connString"`(Visual Basic) 程式碼中。|  
   
-##  <a name="BKMK_writethecodefortheforms"></a> 撰寫表單的程式碼  
+## <a name="BKMK_writethecodefortheforms"></a> 撰寫表單的程式碼  
  本章節包含每個表單的工作，而且會顯示建立表單之程式碼的簡短概觀。 編號的註解會識別程式碼區段。  
   
 ### <a name="navigation-form"></a>導覽表單  
@@ -1140,5 +1139,5 @@ End Namespace
 |FC-8|為 `btnFillOrder` 將程式碼加入至 Click 事件處理常式。 此程式碼會執行 `Sales.uspFillOrder` 預存程序。|  
 |FC-9|建立方法，以確認`OrderID`已準備好做為參數來提交`SqlCommand`物件。<br /><br /> -請確定已在中輸入 ID `txtOrderID`。<br />-使用`Regex.IsMatch`來定義非整數字元的簡單檢查。<br />-您宣告`parsedOrderID`在 fc-2 變數。<br />-如果輸入是有效的將文字轉換成整數，並將值儲存在`parsedOrderID`變數。<br />-包裝`isOrderID`方法周圍`btnFindByOrderID`， `btnCancelOrder`，和`btnFillOrder`Click 事件處理常式。|  
   
-##  <a name="BKMK_testyourapplication"></a> 測試您的應用程式  
+## <a name="BKMK_testyourapplication"></a> 測試您的應用程式  
  選擇 F5 鍵以建置和測試您的應用程式之後您程式碼的每個 Click 事件處理常式，, 然後之後完成撰寫程式碼。

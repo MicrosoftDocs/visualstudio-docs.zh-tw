@@ -19,17 +19,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1a4610f5603ad0197487c198074ad72d1381fda1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a3d829a439ec7fb61247e28146e80d4988f04623
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802185"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659692"
 ---
 # <a name="vbc-task"></a>Vbc 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包裝 vbc.exe，這會產生可執行檔 (.exe)、動態連結程式庫 (.dll) 或程式碼模組 (.netmodule)。 如需 vbc.exe 的詳細資訊，請參閱 [Visual Basic 命令列編譯器](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)。  
   
 ## <a name="parameters"></a>參數  
@@ -53,7 +52,7 @@ ms.locfileid: "54802185"
 |`Imports`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 從指定的項目集合匯入命名空間。 此參數對應至 vbc.exe 編譯器的 [/imports](http://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) 參數。|  
 |`KeyContainer`|選擇性的 `String` 參數。<br /><br /> 指定密碼編譯金鑰容器的名稱。 此參數對應至 vbc.exe 編譯器的 [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) 參數。|  
 |`KeyFile`|選擇性的 `String` 參數。<br /><br /> 指定包含密碼編譯金鑰的檔名。 如需詳細資訊，請參閱 [/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8)。|  
-|`LangVersion`|選擇性的 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 參數。<br /><br /> 指定語言版本，"9" 或 "10"。|  
+|`LangVersion`|選擇性 [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 參數。<br /><br /> 指定語言版本，"9" 或 "10"。|  
 |`LinkResources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 在輸出檔中建立 .NET Framework 資源的連結；不要將資源檔放置於輸出檔中。 此參數對應至 vbc.exe 編譯器的 [/linkresource](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) 參數。|  
 |`MainEntryPoint`|選擇性的 `String` 參數。<br /><br /> 指定包含 `Sub Main` 程序的類別或模組。 此參數對應至 vbc.exe 編譯器的 [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0) 參數。|  
 |`ModuleAssemblyName`|選擇性的 `String` 參數。<br /><br /> 指定將包含此模組的組件。|  
@@ -104,7 +103,7 @@ ms.locfileid: "54802185"
    OutputAssembly="out.exe"/>  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Basic 命令列編譯器](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

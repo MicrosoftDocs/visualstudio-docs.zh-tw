@@ -12,25 +12,25 @@ ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c38f0a891c6ee57ad2d483e48e06624fa9bccdf1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 272946c80f5df2c96d4cf2bf20ea988c71766d46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941031"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100569"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 此介面可讓您：  
   
--   擷取與屬性相關聯的任意長度字串。  
+- 擷取與屬性相關聯的任意長度字串。  
   
--   關聯之屬性的唯一識別碼。  
+- 關聯之屬性的唯一識別碼。  
   
--   擷取屬性的自訂檢視器的清單。  
+- 擷取屬性的自訂檢視器的清單。  
   
--   設定屬性的值能夠報告任何產生的錯誤  
+- 設定屬性的值能夠報告任何產生的錯誤  
   
 ## <a name="syntax"></a>語法  
   

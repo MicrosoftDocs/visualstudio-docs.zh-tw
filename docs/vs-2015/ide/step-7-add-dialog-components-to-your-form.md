@@ -1,5 +1,5 @@
 ---
-title: 步驟 7：將對話方塊元件新增至您的表單 | Microsoft Docs
+title: 步驟 7：將對話方塊元件新增至您的表單 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,43 +9,43 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 051f88f81f443b1748ce3d8b0c9ce33e89fac77d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c49de0af6cbb02c441489cbfa7b1d8a7b3881df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796652"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061472"
 ---
-# <a name="step-7-add-dialog-components-to-your-form"></a>步驟 7：將對話方塊元件加入至您的表單
+# <a name="step-7-add-dialog-components-to-your-form"></a>步驟 7：將對話方塊元件新增至表單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要讓程式開啟圖片檔並選擇背景色彩，請在這個步驟中，將 **OpenFileDialog** 元件和 **ColorDialog** 元件新增至表單。  
   
  元件在某些方面就像控制項一樣。 您可以使用 [工具箱] 將元件新增至表單，並使用 [屬性] 視窗設定該元件的屬性。 但與控制項不同，將元件加入至表單並不會加入可讓使用者在表單上看見的項目。 相反地，只會提供可讓您透過程式碼來觸發的某些行為。 它是一個可開啟 [開啟檔案] 對話方塊的元件。  
   
- ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需觀看本主題的影片版本，請參閱[教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 3](http://go.microsoft.com/fwlink/?LinkId=205213) 或 [教學課程 1：在 C# 中建立圖片檢視器 - 影片 3](http://go.microsoft.com/fwlink/?LinkId=205202)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。  
+ ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如本主題的影片版本，請參閱[教學課程 1:在 Visual Basic-影片 3 中建立圖片檢視器](http://go.microsoft.com/fwlink/?LinkId=205213)或[教學課程 1:建立圖片檢視器中的C#-影片 3](http://go.microsoft.com/fwlink/?LinkId=205202)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。  
   
 ### <a name="to-add-dialog-components-to-your-form"></a>若要將對話方塊元件加入至您的表單  
   
-1.  選擇 Windows Form 設計工具 (Form1.cs [設計] 或 Form1.vb [設計])，然後開啟 [工具箱] 中的 [對話方塊] 群組。  
+1. 選擇 Windows Form 設計工具 (Form1.cs [設計] 或 Form1.vb [設計])，然後開啟 [工具箱] 中的 [對話方塊] 群組。  
   
     > [!NOTE]
-    >  [工具箱] 中的 [對話方塊] 群組包含可開啟許多實用對話方塊的元件，您可用來開啟和儲存檔案、瀏覽資料夾及選擇字型和色彩。 您在本專案中會使用下列兩個對話方塊元件：**OpenFileDialog** 和 **ColorDialog**。  
+    >  [工具箱] 中的 [對話方塊] 群組包含可開啟許多實用對話方塊的元件，您可用來開啟和儲存檔案、瀏覽資料夾及選擇字型和色彩。 您在本專案中會使用下列兩個對話方塊元件：**OpenFileDialog**並**ColorDialog**。  
   
-2.  若要將名稱為 **openFileDialog1** 的元件新增至表單，請按兩下 **OpenFileDialog**。 若要將名稱為 **colorDialog1** 的元件新增至表單，請按兩下 [工具箱] 中的 **ColorDialog**。 (您在下一個教學課程步驟中會用到該元件)。您應該會看到 [Windows Form 設計工具] 底部 (在 [圖片檢視器] 表單下方) 的區域，您在其中加入的兩個對話方塊元件各有一個圖示，如下圖所示。  
+2. 若要將名稱為 **openFileDialog1** 的元件新增至表單，請按兩下 **OpenFileDialog**。 若要將名稱為 **colorDialog1** 的元件新增至表單，請按兩下 [工具箱] 中的 **ColorDialog**。 (您在下一個教學課程步驟中會用到該元件)。您應該會看到 [Windows Form 設計工具] 底部 (在 [圖片檢視器] 表單下方) 的區域，您在其中加入的兩個對話方塊元件各有一個圖示，如下圖所示。  
   
      ![對話方塊元件](../ide/media/express-dialogsadded.png "Express_DialogsAdded")  
 對話方塊元件  
   
-3.  選擇 Windows Form 設計工具底部區域中的 **openFileDialog1** 圖示。 設定兩個屬性：  
+3. 選擇 Windows Form 設計工具底部區域中的 **openFileDialog1** 圖示。 設定兩個屬性：  
   
-    -   將 [篩選條件] 屬性設定為下列值 (您可以複製並貼上)：  
+    - 將 [篩選條件] 屬性設定為下列值 (您可以複製並貼上)：  
   
         ```  
         JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*  
         ```  
   
-    -   將 [標題] 屬性設定為下列值：[選取圖片檔案]  
+    - 將 [標題] 屬性設定為下列值：[選取圖片檔案]  
   
          [篩選條件] 屬性設定會指定要在 [選取圖片檔案] 對話方塊中顯示的檔案類型。  
   
@@ -54,6 +54,6 @@ ms.locfileid: "54796652"
   
 ### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
--   若要移到下一個教學課程步驟，請參閱[步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)。  
+- 若要前往下一個教學課程步驟，請參閱[步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)。  
   
--   若要回到上一個教學課程步驟，請參閱[步驟 6：命名您的按鈕控制項](../ide/step-6-name-your-button-controls.md)。
+- 若要回到上一個教學課程步驟，請參閱[步驟 6：命名按鈕控制項](../ide/step-6-name-your-button-controls.md)。

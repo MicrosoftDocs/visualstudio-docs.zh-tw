@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a283cfd34d0990a59bc5d8ce1109f2c0ae6b38bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4bb7245e57dedf6f94ce7766fcfae24ac930f608
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117540"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>HOW TO：在高效能叢集上進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +39,31 @@ ms.locfileid: "58945667"
   
 ### <a name="to-open-the-breakpoint-filter-dialog-box"></a>若要開啟中斷點篩選條件對話方塊  
   
-1.  以滑鼠右鍵按一下來源視窗、[反組譯碼] 視窗、[呼叫堆疊] 視窗或 [中斷點] 視窗中的中斷點字符。  
+1. 以滑鼠右鍵按一下來源視窗、[反組譯碼] 視窗、[呼叫堆疊] 視窗或 [中斷點] 視窗中的中斷點字符。  
   
-2.  在捷徑功能表上按一下 [篩選]。 這個選項可能會出現在最上層，或在 [中斷點] 的子功能表中。  
+2. 在捷徑功能表上按一下 [篩選]。 這個選項可能會出現在最上層，或在 [中斷點] 的子功能表中。  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>若要在特定電腦上設定中斷點  
   
-1.  從 [處理序] 視窗中取得電腦名稱。  
+1. 從 [處理序] 視窗中取得電腦名稱。  
   
-2.  選取中斷點，然後根據前述程序中描述的方式開啟 [中斷點篩選] 對話方塊。  
+2. 選取中斷點，然後根據前述程序中描述的方式開啟 [中斷點篩選] 對話方塊。  
   
-3.  在 [中斷點篩選] 對話方塊中鍵入：  
+3. 在 [中斷點篩選] 對話方塊中鍵入：  
   
      MachineName =*yourmachinename*  
   
      若要建立更複雜的篩選條件，您可以使用 AND 運算子 `&`、OR 運算子 `||`、NOT 運算子 `!` 和括號來結合子句。  
   
-4.  按一下 [確定 **Deploying Office Solutions**]。  
+4. 按一下 [確定] 。  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>若要在特定處理序上設定中斷點  
   
-1.  從 [處理序] 視窗中取得處理序名稱或處理序識別碼。  
+1. 從 [處理序] 視窗中取得處理序名稱或處理序識別碼。  
   
-2.  選取中斷點，然後根據第一個程序中描述的方式開啟 [中斷點篩選] 對話方塊。  
+2. 選取中斷點，然後根據第一個程序中描述的方式開啟 [中斷點篩選] 對話方塊。  
   
-3.  在 [中斷點篩選] 對話方塊中鍵入：  
+3. 在 [中斷點篩選] 對話方塊中鍵入：  
   
      `ProcessName =`  yourprocessname  
   
@@ -73,15 +73,15 @@ ms.locfileid: "58945667"
   
      若要建立更複雜的篩選條件，您可以使用 AND 運算子 `&`、OR 運算子 `||`、NOT 運算子 `!` 和括號來結合子句。  
   
-4.  按一下 [確定 **Deploying Office Solutions**]。  
+4. 按一下 [確定] 。  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>若要在特定執行緒上設定中斷點  
   
-1.  從 [執行緒] 視窗中取得執行緒名稱或執行緒識別碼。  
+1. 從 [執行緒] 視窗中取得執行緒名稱或執行緒識別碼。  
   
-2.  選取中斷點，然後根據第一個程序中描述的方式開啟 [中斷點篩選] 對話方塊。  
+2. 選取中斷點，然後根據第一個程序中描述的方式開啟 [中斷點篩選] 對話方塊。  
   
-3.  在 [中斷點篩選] 對話方塊中鍵入：  
+3. 在 [中斷點篩選] 對話方塊中鍵入：  
   
      `ThreadName =` yourthreadname  
   
@@ -91,7 +91,7 @@ ms.locfileid: "58945667"
   
      若要建立更複雜的篩選條件，您可以使用 AND 運算子 `&`、OR 運算子 `||`、NOT 運算子 `!` 和括號來結合子句。  
   
-4.  按一下 [確定 **Deploying Office Solutions**]。  
+4. 按一下 [確定] 。  
   
 ## <a name="example"></a>範例  
  下列範例顯示如何為 `marvin` 電腦和 `fourier1` 執行緒上的中斷點建立篩選條件。  

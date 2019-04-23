@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 50e601d03901484ed6e759fb336b1effa5b37841
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8e32d96451e2494816ddd5f7a66591f40f847e85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066061"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>HOW TO：從 XML 文件建立 XML 結構描述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 編輯器允許您從 XML 文件，建立 XML 結構描述定義語言 (XSD) 結構描述。 XML 執行個體文件會決定如何以下列方式產生結構描述：  
   
 - 如果 XML 文件沒有結構描述或與其相關聯的「文件類型定義 (DTD)」，則會使用 XML 文件中的資料來推斷新的 XML 結構描述。  
@@ -34,9 +33,9 @@ XML 編輯器允許您從 XML 文件，建立 XML 結構描述定義語言 (XSD)
   
 ### <a name="to-create-an-xml-schema"></a>建立 XML 結構描述  
   
-1.  將 XML 執行個體文件載入 XML 編輯器。  
+1. 將 XML 執行個體文件載入 XML 編輯器。  
   
-2.  按一下  **Create Schema**按鈕**工具列**。  
+2. 按一下  **Create Schema**按鈕**工具列**。  
   
      在 XML 執行個體文件中，為每個找到的命名空間，建立 XML 結構描述文件並予以開啟。 每個結構描述會當作暫時的其他檔案開啟。  
   

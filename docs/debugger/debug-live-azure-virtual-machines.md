@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 0bbe7d081e15fdf81308218f2bb4b54e7623b333
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856952"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663173"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>使用快照偵錯工具針對 Azure 虛擬機器上的即時 ASP.NET 應用程式和 Azure 虛擬機器擴展集進行偵錯
 
@@ -26,31 +26,31 @@ ms.locfileid: "58856952"
 
 快照點和記錄點與中斷點很相似，但和中斷點不的是，快照點不會在叫用時停止應用程式。 一般而言，在快照點擷取快照集時需要 10 到 20 毫秒。
 
-在此教學課程中，您將進行下列作業：
+在本教學課程中，您將進行下列作業：
 
 > [!div class="checklist"]
 > * 啟動快照偵錯工具
-> * 設定快照點並檢視快照
+> * 設定快照點及檢視快照
 > * 設定記錄點
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
-* Azure 虛擬機器 (VM) 和 Azure 虛擬機器擴展集 (VMSS) 的快照偵錯工具僅適用於具備 **Azure 開發工作負載**的 Visual Studio 2019 Enterprise 預覽或更高版本。 (您可以在 [個別元件] 索引標籤下的 [偵錯和測試] > [快照偵錯工具]底下找到它。)
+* Azure 虛擬機器 (VM) 和 Azure 虛擬機器擴展集的快照集偵錯工具僅適用於 Visual Studio 2019 企業版或更高版本**Azure 開發工作負載**。 (您可以在 [個別元件] 索引標籤下的 [偵錯和測試] > [快照偵錯工具]底下找到它。)
 
-    如果尚未安裝，請安裝 [Visual Studio 2019 Enterprise 預覽](https://visualstudio.microsoft.com/vs/preview/)。
+    如果尚未安裝，安裝[Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)。
 
-* 快照集合適用於下列 Azure VM/VMSS Web 應用程式：
+* 快照集集合適用於下列的 Azure 虛擬 Machines\Virtual 機器擴展集 web 應用程式：
   * 執行 .NET Framework 4.6.1 或更新版本的 ASP.NET 應用程式。
   * 在 Windows 上執行 .NET Core 2.0 或更新版本的 ASP.NET Core 應用程式。
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>開啟專案並啟動快照偵錯工具
 
-1. 開啟想要行快照集偵錯的專案。
+1. 開啟想要進行快照集偵錯的專案。
 
     > [!IMPORTANT]
-    > 若要進行快照集偵錯，需開啟發行至您 Azure VM/VMSS 服務的*相同版本原始程式碼*。
+    > 快照集偵錯，您需要開啟*相同版本的原始程式碼*發行到您 Azure 虛擬 Machine\Virtual 機器擴展集的服務。
 
-1. 選擇 [偵錯] > [附加快照偵錯工具]。選取您的 Web 應用程式部署所在的 Azure VM/VMSS 和 Azure 儲存體帳戶，然後按一下 [附加]。
+1. 選擇 [偵錯] > [附加快照偵錯工具]。選取 Azure 虛擬 Machine\Virtual 機器擴展集部署至您的 web 應用程式和 Azure 儲存體帳戶，然後再按一下**附加**。
 
       ![從 [偵錯] 功能表啟動快照偵錯工具](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -58,7 +58,7 @@ ms.locfileid: "58856952"
 
     > [!IMPORTANT]
     > 第一次為 VM 選取 [附加快照偵錯工具] 時，IIS 會自動重新啟動。
-    > 第一次為 VMSS 選取 [附加快照偵錯工具] 時，需要手動升級 VMSS 的每個執行個體。
+    > 您選取的第一次**附加快照偵錯工具**虛擬機器擴展集，需要手動升級每個虛擬機器擴展集執行個體。
 
     **模組**的中繼資料將不會一開始就啟動，請瀏覽至 Web 應用程式，[開始收集] 按鈕會變成作用中。 Visual Studio 現在已經處於快照集偵錯模式。
 
@@ -66,15 +66,15 @@ ms.locfileid: "58856952"
 
     > [!NOTE]
     > Application Insights 網站延伸模組也支援快照集偵錯。 如果遇到「網站延伸模組過期」錯誤訊息，請參閱[快照集偵錯的疑難排解祕訣與已知問題](../debugger/debug-live-azure-apps-troubleshooting.md)了解升級詳細資料。
-    > 對於 VMSS，使用者需在第一次附加快照偵錯工具之後，手動升級 VMSS 中的執行個體。
+    > VMSS 的使用者，才能手動升級之後第一次附加快照偵錯工具的 執行個體都在其虛擬機器擴展集的。
 
-   載入 Azure VM/VMSS 的所有模組時，[模組]視窗會向您顯示 (選擇 [偵錯] > [Windows] > [模組] 以開啟此視窗)。
+   **模組**視窗會顯示您的 Azure 虛擬 Machine\Virtual 機器擴展集的所有模組已都載入時 (選擇**偵錯 > Windows > 模組**若要開啟此視窗)。
 
    ![檢查 [模組] 視窗](../debugger/media/snapshot-modules.png)
 
 ## <a name="set-a-snappoint"></a>設定快照點
 
-1. 在程式碼編輯器中，按一下所需程式碼行旁邊的左側裝訂邊以設定快照點。 確定這是您將執行的程式碼。
+1. 在程式碼編輯器中，按一下所需程式碼行左側的裝訂邊以設定快照點。 確定這是您將執行的程式碼。
 
    ![設定快照點](../debugger/media/snapshot-set-snappoint.png)
 
@@ -115,7 +115,7 @@ ms.locfileid: "58856952"
 
 1. 以滑鼠右鍵按一下快照點圖示 (空心球) 並選擇 [設定]。
 
-   ![選擇 [設定]](../debugger/media/snapshot-snappoint-settings.png)
+   ![選擇設定](../debugger/media/snapshot-snappoint-settings.png)
 
 1. 在快照點設定視窗中輸入運算式。
 
@@ -141,7 +141,7 @@ ms.locfileid: "58856952"
 
     ![[診斷工具] 視窗中的記錄點資料](../debugger/media/snapshot-logpoint-output.png)
 
-    如果您選擇 [傳送到應用程式記錄檔]，當叫用記錄點時，只要可以看到來自 `System.Diagnostics.Trace` (或在 .NET Core 中為 `ILogger`) (例如[應用程式深入解析](/azure/application-insights/app-insights-asp-net-trace-logs)) 的位置，就會顯示訊息。
+    如果您選擇 [傳送到應用程式記錄檔]，當叫用記錄點時，只要可以看到來自 `System.Diagnostics.Trace` (或在 .NET Core 中為 `ILogger`) (例如[應用程式深入解析](/azure/application-insights/app-insights-asp-net-trace-logs)) 之訊息的位置，就會顯示訊息。
 
 ## <a name="next-steps"></a>後續步驟
 

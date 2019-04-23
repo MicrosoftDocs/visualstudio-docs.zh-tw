@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1a04dce73dbf2551b51f2395b3512e62daf3766
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bd362c01c996dc6a32197b9acd88f11b26c034bf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54788186"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655799"
 ---
 # <a name="watch-command"></a>Watch 命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 建立並開啟 [監看式]  視窗的指定執行個體。 您可以使用 [監看式] 視窗來計算變數、運算式和暫存器的值，以編輯這些值，以及儲存結果。  
   
 ## <a name="syntax"></a>語法  

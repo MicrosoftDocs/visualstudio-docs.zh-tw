@@ -94,17 +94,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c660138437d9b08d49f9cf0c212e7b3612e9215
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 97edc5419cb552f853a75817564a69dd175ec54b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869859"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666061"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於疑難排解整合式開發環境錯誤的資源
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 並非所有錯誤訊息都有特定的相關說明主題。 如果錯誤訊息中的資訊無法協助您解決問題，則可以參閱知識庫文章、開發人員社群或產品支援這類其他資源。  
   
 ## <a name="knowledge-base-articles"></a>知識庫文章  

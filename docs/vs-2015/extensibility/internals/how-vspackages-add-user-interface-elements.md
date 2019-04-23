@@ -12,12 +12,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d020dd0e1d20facd431a31f5aabffb4ec9e2631a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df04f8da29972b4be3967e5fd677a43e76ce1ac5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945353"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085625"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage 如何新增使用者介面項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ VSPackage 可以加入使用者介面 (UI) 項目，例如功能表、 工具列
 ## <a name="the-visual-studio-command-table-architecture"></a>Visual Studio 命令表架構  
  如所述，命令資料表架構支援前述的架構原則。 抽象概念，資料結構和工具，命令資料表架構背後的原則如下所示：  
   
--   有三種基本項目： 功能表、 命令和群組。 功能表可以公開在 UI 中，為功能表、 子功能表、 工具列或工具視窗。 命令是使用者可以執行在 IDE 中，而且它們可以公開為功能表項目、 按鈕、 清單方塊或其他控制項的程序。 群組是功能表和命令的容器。  
+- 有三種基本項目： 功能表、 命令和群組。 功能表可以公開在 UI 中，為功能表、 子功能表、 工具列或工具視窗。 命令是使用者可以執行在 IDE 中，而且它們可以公開為功能表項目、 按鈕、 清單方塊或其他控制項的程序。 群組是功能表和命令的容器。  
   
--   描述項目、 其優先權，相對於其他項目，並修改其行為的旗標的定義被指定每個項目。  
+- 描述項目、 其優先權，相對於其他項目，並修改其行為的旗標的定義被指定每個項目。  
   
--   每個項目都有描述項目的父代的位置。 項目可以有多個父代，使它可以出現在 UI 中的多個位置。  
+- 每個項目都有描述項目的父代的位置。 項目可以有多個父代，使它可以出現在 UI 中的多個位置。  
   
      每個命令都必須有群組作為其父代，即使它是唯一的子系，該群組中。 每個標準功能表也必須有父群組。 工具列和工具視窗做為其本身的父系。 群組可以有其父代的 Visual Studio 功能表列中，或任何功能表、 工具列或工具視窗。  
   
@@ -76,15 +76,15 @@ VSPackage 可以加入使用者介面 (UI) 項目，例如功能表、 工具列
 ### <a name="menus-groups-and-commands"></a>功能表、 群組和命令  
  當功能表、 群組或命令的 GUID 和識別碼時，它可以加入 IDE。 每個 UI 項目必須具有下列動作：  
   
--   A`guid`符合名稱的屬性`GuidSymbol`之下定義的 UI 元素的項目。  
+- A`guid`符合名稱的屬性`GuidSymbol`之下定義的 UI 元素的項目。  
   
--   `id`符合名稱的相關聯的屬性`IDSymbol`項目。  
+- `id`符合名稱的相關聯的屬性`IDSymbol`項目。  
   
      共同`guid`並`id`屬性撰寫*簽章*UI 項目。  
   
--   A`priority`屬性來決定其父功能表或群組中的 UI 元素的位置。  
+- A`priority`屬性來決定其父功能表或群組中的 UI 元素的位置。  
   
--   A[父元素](../../extensibility/parent-element.md)具有`guid`和`id`指定父功能表或群組的簽章的屬性。  
+- A[父元素](../../extensibility/parent-element.md)具有`guid`和`id`指定父功能表或群組的簽章的屬性。  
   
 #### <a name="menus"></a>Menus  
  每個功能表指[Menu Element](../../extensibility/menu-element.md)中`Menus`一節。 必須有功能表`guid`， `id`，並`priority`屬性，和`Parent`項目，也下列的其他屬性和子系：  
@@ -271,17 +271,17 @@ priority="0x0100" type="Menu">
 ##### <a name="general-requirements"></a>一般需求  
  您的命令必須通過一系列如下的測試，才能顯示並啟用：  
   
--   此命令是正確的位置。  
+- 此命令是正確的位置。  
   
--   `DefaultInvisible`未設定旗標。  
+- `DefaultInvisible`未設定旗標。  
   
--   父功能表或工具列為可見。  
+- 父功能表或工具列為可見。  
   
--   此命令不是不可見因為中的內容項目[VisibilityConstraints 元素](../../extensibility/visibilityconstraints-element.md)一節。  
+- 此命令不是不可見因為中的內容項目[VisibilityConstraints 元素](../../extensibility/visibilityconstraints-element.md)一節。  
   
--   VSPackage 實作的程式碼<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面顯示，並讓您的命令。 沒有介面程式碼會攔截它，並對其。  
+- VSPackage 實作的程式碼<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面顯示，並讓您的命令。 沒有介面程式碼會攔截它，並對其。  
   
--   當使用者按一下您的命令時，它會變成受限於中概述的程序[路由演算法](../../extensibility/internals/command-routing-algorithm.md)。  
+- 當使用者按一下您的命令時，它會變成受限於中概述的程序[路由演算法](../../extensibility/internals/command-routing-algorithm.md)。  
   
 ## <a name="calling-pre-defined-commands"></a>呼叫預先定義的命令  
  [UsedCommands 元素](../../extensibility/usedcommands-element.md)能夠存取其他 Vspackage 或 IDE 所提供的命令的 Vspackage。 若要這樣做，請建立[UsedCommand 元素](../../extensibility/usedcommand-element.md)具有的 GUID 和 ID 的命令，以使用。 這可確保命令將會載入由 Visual Studio 中，即使它不是目前的 Visual Studio 組態的一部分。 如需詳細資訊，請參閱 < [UsedCommand 元素](../../extensibility/usedcommand-element.md)。  
@@ -289,17 +289,17 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>介面項目外觀  
  選取和定位命令元素的考量如下所示：  
   
--   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供許多的 UI 項目顯示的方式會視位置而定。  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供許多的 UI 項目顯示的方式會視位置而定。  
   
--   使用定義的 UI 項目`DefaultInvisible`旗標不會顯示在 IDE 中除非它是其中一個顯示它的 VSPackage 實作<xref:EnvDTE.IDTCommandTarget.QueryStatus%2A>方法，或與特定的 UI 內容，在相關聯`VisibilityConstraints`一節。  
+- 使用定義的 UI 項目`DefaultInvisible`旗標不會顯示在 IDE 中除非它是其中一個顯示它的 VSPackage 實作<xref:EnvDTE.IDTCommandTarget.QueryStatus%2A>方法，或與特定的 UI 內容，在相關聯`VisibilityConstraints`一節。  
   
--   可能不會顯示成功定位的命令。 這是因為 IDE 會自動隱藏或顯示一些命令，根據 VSPackage 具有 （或不具有） 的介面實作。 比方說，VSPackage 實作一些建置介面會自動顯示原因組建相關的功能表項目。  
+- 可能不會顯示成功定位的命令。 這是因為 IDE 會自動隱藏或顯示一些命令，根據 VSPackage 具有 （或不具有） 的介面實作。 比方說，VSPackage 實作一些建置介面會自動顯示原因組建相關的功能表項目。  
   
--   套用`CommandWellOnly`命令可以新增只能透過自訂的 UI 項目定義中的旗標表示。  
+- 套用`CommandWellOnly`命令可以新增只能透過自訂的 UI 項目定義中的旗標表示。  
   
--   IDE 在設計檢視中時，會顯示對話方塊時，才可能僅適用於某些 UI 內容，例如，命令。  
+- IDE 在設計檢視中時，會顯示對話方塊時，才可能僅適用於某些 UI 內容，例如，命令。  
   
--   若要讓特定的 UI 項目要顯示在 IDE 中，您必須實作一個或多個介面，或撰寫一些程式碼。  
+- 若要讓特定的 UI 項目要顯示在 IDE 中，您必須實作一個或多個介面，或撰寫一些程式碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)

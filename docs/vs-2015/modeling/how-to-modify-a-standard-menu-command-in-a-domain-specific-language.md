@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a781fc290a9be795cf48cf08c062711376bd6acc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058476"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>HOW TO：使用特定領域語言修改標準功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,37 +37,37 @@ ms.locfileid: "58942081"
 > [!NOTE]
 >  如果您想要建立您自己的功能表命令，請參閱[How to:將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
   
-##  <a name="what"></a> 您可以修改哪些命令？  
+## <a name="what"></a> 您可以修改哪些命令？  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>找出您可以修改的命令  
   
-1.  在 `DslPackage`專案中，開啟`GeneratedCode\CommandSet.cs`。 可以在 [方案總管] 中找到這個 C# 檔案，做為`CommandSet.tt`。  
+1. 在 `DslPackage`專案中，開啟`GeneratedCode\CommandSet.cs`。 可以在 [方案總管] 中找到這個 C# 檔案，做為`CommandSet.tt`。  
   
-2.  尋找類別，此檔案中名稱結尾為"`CommandSet`"，例如`Language1CommandSet`和`Language1ClipboardCommandSet`。  
+2. 尋找類別，此檔案中名稱結尾為"`CommandSet`"，例如`Language1CommandSet`和`Language1ClipboardCommandSet`。  
   
-3.  在每個命令集類別中，輸入 "`override`"，後面接著一個空格。 IntelliSense 會顯示您可以覆寫的方法清單。 每個命令都有名稱開頭為 "`ProcessOnStatus`" 和 "`ProcessOnMenu`" 的一組方法。  
+3. 在每個命令集類別中，輸入 "`override`"，後面接著一個空格。 IntelliSense 會顯示您可以覆寫的方法清單。 每個命令都有名稱開頭為 "`ProcessOnStatus`" 和 "`ProcessOnMenu`" 的一組方法。  
   
-4.  記下包含所要修改之命令的命令集類別。  
+4. 記下包含所要修改之命令的命令集類別。  
   
-5.  關閉檔案而不儲存您的編輯。  
+5. 關閉檔案而不儲存您的編輯。  
   
     > [!NOTE]
     >  您通常不應該編輯產生的檔案。 任何編輯在下次產生檔案時都會遺失。  
   
-##  <a name="extend"></a> 擴充適當的命令集類別  
+## <a name="extend"></a> 擴充適當的命令集類別  
  建立包含命令集類別之部分宣告的新檔案。  
   
 #### <a name="to-extend-the-command-set-class"></a>擴充命令集類別  
   
-1.  在 [方案總管] 的 DslPackage 專案中，開啟 [GeneratedCode] 資料夾，然後查看 CommandSet.tt 下方並開啟其產生的檔案 CommandSet.cs。 記下檔案中定義的命名空間和第一個類別的名稱。 例如，您可能會看到：  
+1. 在 [方案總管] 的 DslPackage 專案中，開啟 [GeneratedCode] 資料夾，然後查看 CommandSet.tt 下方並開啟其產生的檔案 CommandSet.cs。 記下檔案中定義的命名空間和第一個類別的名稱。 例如，您可能會看到：  
   
      `namespace Company.Language1`  
   
      `{ ...  internal partial class Language1CommandSet : ...`  
   
-2.  在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，名為`CommandSet.cs`。  
+2. 在  **DslPackage**，建立名為的資料夾**自訂程式碼**。 在此資料夾中，建立新的類別檔案，名為`CommandSet.cs`。  
   
-3.  在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如：  
+3. 在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如：  
   
     ```  
     using System;  
@@ -79,7 +79,7 @@ ms.locfileid: "58942081"
   
      **請注意**如果您使用類別檔案範本來建立新的檔案時，您必須更正命名空間和類別名稱。  
   
-##  <a name="override"></a> 覆寫命令方法  
+## <a name="override"></a> 覆寫命令方法  
  大多數命令具有兩個相關聯的方法：具有名稱的方法，例如`ProcessOnStatus`...判斷命令是否應為可見且已啟用。 這個方法會在使用者以滑鼠右鍵按一下圖表時呼叫，應該會快速執行並且不進行任何變更。 `ProcessOnMenu`...當使用者按一下命令，並應該執行此命令的函式呼叫。 您可能想覆寫其中一個或兩個方法。  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>變更命令何時顯示在功能表上  

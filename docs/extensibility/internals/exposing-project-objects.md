@@ -11,26 +11,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d814576c4f071c9e90dd71d56c3bde8da43260f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ed19972fb2f71104357977554984ae43f886c950
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609913"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084358"
 ---
 # <a name="expose-project-objects"></a>公開專案物件
 
 自訂專案類型可提供 automation 物件，以便使用自動化介面專案的存取權。 預期每個專案類型提供的標準<xref:EnvDTE.Project>自動化物件，從存取<xref:EnvDTE.Solution>，其中包含已經在 IDE 中開啟的所有專案集合。 在專案中的每個項目應該由<xref:EnvDTE.ProjectItem>物件使用存取`Project.ProjectItems`。 除了這些標準 automation 物件，可以選擇專案的方案專案特定的自動化物件。
 
-您可以建立自訂的根層級自動化物件，您可以存取晚期繫結從根 DTE 物件使用`DTE.<customObjectName>`或`DTE.GetObject("<customObjectName>")`。 例如，Visual c + + 會建立名為 c + + 專案特定的專案集合*VCProjects*您可以使用來存取`DTE.VCProjects`或`DTE.GetObject("VCProjects")`。 您也可以建立`Project.Object`，這是唯一的專案類型中`Project.CodeModel`，可針對其最高衍生性的物件，查詢並`ProjectItem`，以公開`ProjectItem.Object`和`ProjectItem.FileCodeModel`。
+您可以建立自訂的根層級自動化物件，您可以存取晚期繫結從根 DTE 物件使用`DTE.<customObjectName>`或`DTE.GetObject("<customObjectName>")`。 例如，VisualC++建立C++專案特有的專案集合稱為*VCProjects* ，您可以使用存取`DTE.VCProjects`或`DTE.GetObject("VCProjects")`。 您也可以建立`Project.Object`，這是唯一的專案類型中`Project.CodeModel`，可針對其最高衍生性的物件，查詢並`ProjectItem`，以公開`ProjectItem.Object`和`ProjectItem.FileCodeModel`。
 
-它是常見的慣例來公開為自訂的特定專案的專案集合的專案。 例如，[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]建立您接著可以存取使用的 c + + 特定的專案集合`DTE.VCProjects`或`DTE.GetObject("VCProjects")`。 您也可以建立`Project.Object`，這是唯一的專案類型中`Project.CodeModel`，其最高衍生性的物件，可查詢`ProjectItem`，以公開`ProjectItem.Object`，和`ProjectItem.FileCodeModel`。
+它是常見的慣例來公開為自訂的特定專案的專案集合的專案。 例如，[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]建立C++，然後您可以存取使用特定的專案集合`DTE.VCProjects`或是`DTE.GetObject("VCProjects")`。 您也可以建立`Project.Object`，這是唯一的專案類型中`Project.CodeModel`，其最高衍生性的物件，可查詢`ProjectItem`，以公開`ProjectItem.Object`，和`ProjectItem.FileCodeModel`。
 
 ## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>若要參與專案的 VSPackage 特定物件
 
-1.  將適當的索引鍵，加入 *.pkgdef* VSPackage 的檔案。
+1. 將適當的索引鍵，加入 *.pkgdef* VSPackage 的檔案。
 
-     例如，以下是 *.pkgdef* c + + 語言專案設定：
+     例如，以下是 *.pkgdef*設定C++語言專案：
 
     ```
     [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\Automation]
@@ -39,7 +39,7 @@ ms.locfileid: "56609913"
     "VCProjectEngineEventsObject"=""
     ```
 
-2.  實作中的程式碼<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法，如下列範例所示。
+2. 實作中的程式碼<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法，如下列範例所示。
 
     ```cpp
     STDMETHODIMP CVsPackage::GetAutomationObject(

@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: cb45386795077289e14e19ec9ad7e0071521db22
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 11f2849a2cf36564104d3250bdbad66ac69a0b40
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475899"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856563"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教學課程：Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
 
@@ -39,7 +39,7 @@ ms.locfileid: "58475899"
 
 ::: moniker range="vs-2019"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ ms.locfileid: "58475899"
 
    ![檢視 [建立新專案] 視窗](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在 [建立新專案] 視窗中，在搜尋方塊內輸入或鍵入 *ASP.NET*。 接下來，從語言清單中選擇 [C#]，然後從平台清單中選擇 [Windows]。 
+1. 在 [建立新專案] 視窗中，在搜尋方塊內輸入或鍵入 *ASP.NET*。 接下來，從語言清單中選擇 **C#**，然後從平台清單中選擇 **Windows**。 
 
    在您套用語言和平台的篩選後，請選擇 [ASP.NET Core Web 應用程式] 範本，然後選擇 [下一步]。
 
@@ -263,8 +263,8 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 恭喜您完成此教學課程！ 我們希望您更了解 C#、ASP.NET Core 和 Visual Studio IDE。 若要深入了解如何使用 C# 和 ASP.NET 建立 Web 應用程式或網站，請繼續進行下列教學課程：
 
 > [!div class="nextstepaction"]
-> [使用 ASP.NET Core 建立 Razor 頁面 Web 應用程式](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+> [使用 ASP.NET Core 建立 Razor Pages Web 應用程式](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
 
 ## <a name="see-also"></a>另請參閱
 
-[使用 Visual Studio 將 Web 應用程式發行到 Azure App Service](../../deployment/quickstart-deploy-to-azure.md)
+[使用 Visual Studio 將 Web 應用程式發佈至 Azure App Service](../../deployment/quickstart-deploy-to-azure.md)

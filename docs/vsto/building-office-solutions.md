@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 000a036b90d1fa44f24a8340770790ab216c1d85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078924"
 ---
 # <a name="build-office-solutions"></a>建置 Office 方案
   一般而言，建置和偵錯 Office 專案，和在 Visual Studio 中建置和偵錯其他類型的專案是相同的，例如 Windows Forms。 本節主題會說明兩者之間的差異。 如需如何建置應用程式的一般資訊，請參閱[編譯，並在 Visual Studio 建置](../ide/compiling-and-building-in-visual-studio.md)。
@@ -45,15 +45,15 @@ ms.locfileid: "55945413"
 ### <a name="document-level-projects"></a>文件層級專案
  當您建置文件層級專案時，專案輸出會包含下列項目：
 
--   一份專案文件的複本。
+- 一份專案文件的複本。
 
--   其 [複製到本機]  屬性設定為 **true**的專案組件和所有參考組件。
+- 其 [複製到本機]  屬性設定為 **true**的專案組件和所有參考組件。
 
--   應用程式資訊清單檔案的副檔名 *.manifest*。 如需詳細資訊，請參閱 < [Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
+- 應用程式資訊清單檔案的副檔名 *.manifest*。 如需詳細資訊，請參閱 < [Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
 
--   部署資訊清單檔案名稱副檔名 *.vsto*。 如需詳細資訊，請參閱 < [Deployment manifests for Office 方案](../vsto/deployment-manifests-for-office-solutions.md)。
+- 部署資訊清單檔案名稱副檔名 *.vsto*。 如需詳細資訊，請參閱 < [Deployment manifests for Office 方案](../vsto/deployment-manifests-for-office-solutions.md)。
 
--   程式資料庫 (*PDB*) 檔案。
+- 程式資料庫 (*PDB*) 檔案。
 
 > [!NOTE]
 >  文件層級解決方案如果建立在遠端位置而不是本機電腦，請在應用程式信任中心的 [信任位置] 清單中加入完整的路徑。 如需詳細資訊，請參閱稱為授與信任給文件中的區段[保護的 Office 方案](../vsto/securing-office-solutions.md)。

@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 8d855fb41624e357a62d9eb773cc5e42606572f7
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58946103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052385"
 ---
 # <a name="annotating-locking-behavior"></a>註釋鎖定行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,11 +58,11 @@ ms.locfileid: "58946103"
   
  請記住一些執行緒擁有權規則：  
   
--   微調鎖定是擁有清楚執行緒擁有權的不可計數鎖定。  
+- 微調鎖定是擁有清楚執行緒擁有權的不可計數鎖定。  
   
--   Mutex 和關鍵區段是擁有清楚執行緒擁有權的計數鎖定。  
+- Mutex 和關鍵區段是擁有清楚執行緒擁有權的計數鎖定。  
   
--   信號和事件是未擁有清楚執行緒擁有權的計數鎖定。  
+- 信號和事件是未擁有清楚執行緒擁有權的計數鎖定。  
   
 ## <a name="locking-annotations"></a>鎖定的註解  
  下表列出的鎖定的註解。  
@@ -109,7 +109,7 @@ ms.locfileid: "58946103"
 |`_Write_guarded_by_(expr)`|為變數加上附註，並指出只要修改變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|  
   
 ## <a name="see-also"></a>另請參閱  
- [使用 SAL 註釋減少 C/c + + 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [使用 SAL 註釋減少 C /C++程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
  [註釋函式行為](../code-quality/annotating-function-behavior.md)   

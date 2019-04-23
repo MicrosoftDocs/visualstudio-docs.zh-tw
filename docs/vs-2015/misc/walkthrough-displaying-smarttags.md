@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943120"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110436"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>逐步解說：顯示智慧標籤
 智慧標籤已取代為燈泡。 請參閱[逐步解說：Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)。  
@@ -35,57 +35,57 @@ ms.locfileid: "58943120"
   
 #### <a name="to-create-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立編輯器分類器專案。 將方案命名為 `SmartTagTest`。  
+1. 建立編輯器分類器專案。 將方案命名為 `SmartTagTest`。  
   
-2.  在 VSIX 資訊清單編輯器中，開啟 source.extension.vsixmanifest 檔案。  
+2. 在 VSIX 資訊清單編輯器中，開啟 source.extension.vsixmanifest 檔案。  
   
-3.  確定 [資產]  區段包含 `Microsoft.VisualStudio.MefComponent` 類型、[來源]  設定為 `A project in current solution`，並將 [專案]  設定為 SmartTagTest.dll。  
+3. 確定 [資產]  區段包含 `Microsoft.VisualStudio.MefComponent` 類型、[來源]  設定為 `A project in current solution`，並將 [專案]  設定為 SmartTagTest.dll。  
   
-4.  儲存並關閉 source.extension.vsixmanifest。  
+4. 儲存並關閉 source.extension.vsixmanifest。  
   
-5.  將下列參考加入專案中，並將 **CopyLocal** 設定為 `false`：  
+5. 將下列參考加入專案中，並將 **CopyLocal** 設定為 `false`：  
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-6.  刪除現有類別檔案。  
+6. 刪除現有類別檔案。  
   
 ## <a name="implementing-a-tagger-for-smart-tags"></a>實作智慧標籤的標記者  
   
 #### <a name="to-implement-a-tagger-for-smart-tags"></a>實作智慧標籤的標記者  
   
-1.  加入類別檔案，並將它命名為 `TestSmartTag`。  
+1. 加入類別檔案，並將它命名為 `TestSmartTag`。  
   
-2.  加入下列匯入：  
+2. 加入下列匯入：  
   
      [!code-csharp[VSSDKSmartTagTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#1)]
      [!code-vb[VSSDKSmartTagTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#1)]  
   
-3.  加入名為 `TestSmartTag` 且繼承自 <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag> 的類別。  
+3. 加入名為 `TestSmartTag` 且繼承自 <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag> 的類別。  
   
      [!code-csharp[VSSDKSmartTagTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#2)]
      [!code-vb[VSSDKSmartTagTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#2)]  
   
-4.  加入這個類別的建構函式，以使用 <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> 的 <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> 來呼叫基底建構函式，這樣會在某個字組的第一個字元下方出現藍線。  (如果您使用 <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>，會在這個字組的最後一個字元下方出現紅線)。  
+4. 加入這個類別的建構函式，以使用 <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> 的 <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> 來呼叫基底建構函式，這樣會在某個字組的第一個字元下方出現藍線。  (如果您使用 <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>，會在這個字組的最後一個字元下方出現紅線)。  
   
      [!code-csharp[VSSDKSmartTagTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#3)]
      [!code-vb[VSSDKSmartTagTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#3)]  
   
-5.  加入名為 `TestSmartTagger` 的類別，這個類別繼承自類型 `TestSmartTag` 的 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>，並實作 <xref:System.IDisposable>。  
+5. 加入名為 `TestSmartTagger` 的類別，這個類別繼承自類型 `TestSmartTag` 的 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>，並實作 <xref:System.IDisposable>。  
   
      [!code-csharp[VSSDKSmartTagTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#4)]
      [!code-vb[VSSDKSmartTagTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#4)]  
   
-6.  在標記者類別中加入下列私用欄位。  
+6. 在標記者類別中加入下列私用欄位。  
   
      [!code-csharp[VSSDKSmartTagTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#5)]
      [!code-vb[VSSDKSmartTagTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#5)]  
   
-7.  加入建構函式，以設定私用欄位並訂閱 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> 事件。  
+7. 加入建構函式，以設定私用欄位並訂閱 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> 事件。  
   
      [!code-csharp[VSSDKSmartTagTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#6)]
      [!code-vb[VSSDKSmartTagTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#6)]  
   
-8.  實作 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>，以為目前字組建立標籤。 (這種方法也會呼叫稍後說明的私用方法 `GetSmartTagActions` )。  
+8. 實作 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>，以為目前字組建立標籤。 (這種方法也會呼叫稍後說明的私用方法 `GetSmartTagActions` )。  
   
      [!code-csharp[VSSDKSmartTagTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#7)]
      [!code-vb[VSSDKSmartTagTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#7)]  
@@ -114,17 +114,17 @@ ms.locfileid: "58943120"
   
 #### <a name="to-implement-the-smart-tag-tagger-provider"></a>實作智慧標籤標記者提供者  
   
-1.  加入名為 `TestSmartTagTaggerProvider` 且繼承自 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> 的類別。 使用 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 為 "text"、<xref:Microsoft.VisualStudio.Utilities.OrderAttribute> 為 Before="default" 且 <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> 為 <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>，來匯出它。  
+1. 加入名為 `TestSmartTagTaggerProvider` 且繼承自 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> 的類別。 使用 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 為 "text"、<xref:Microsoft.VisualStudio.Utilities.OrderAttribute> 為 Before="default" 且 <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> 為 <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>，來匯出它。  
   
      [!code-csharp[VSSDKSmartTagTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#12)]
      [!code-vb[VSSDKSmartTagTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#12)]  
   
-2.  匯入 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 作為屬性。  
+2. 匯入 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 作為屬性。  
   
      [!code-csharp[VSSDKSmartTagTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#13)]
      [!code-vb[VSSDKSmartTagTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#13)]  
   
-3.  實作 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> 方法。  
+3. 實作 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> 方法。  
   
      [!code-csharp[VSSDKSmartTagTest#14](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#14)]
      [!code-vb[VSSDKSmartTagTest#14](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#14)]  
@@ -168,19 +168,19 @@ ms.locfileid: "58943120"
   
 #### <a name="to-build-and-test-the-smarttagtest-solution"></a>建置並測試 SmartTagTest 方案  
   
-1.  建置方案。  
+1. 建置方案。  
   
-2.  當您在偵錯工具中執行這個專案時，會具現化第二個 Visual Studio 執行個體。  
+2. 當您在偵錯工具中執行這個專案時，會具現化第二個 Visual Studio 執行個體。  
   
-3.  建立文字檔，並輸入一些文字。  
+3. 建立文字檔，並輸入一些文字。  
   
      應該會在文字之第一個字組的第一個字母下方顯示藍線。  
   
-4.  將指標移至藍線上方。  
+4. 將指標移至藍線上方。  
   
      應該會在指標附近顯示按鈕。  
   
-5.  當您按一下按鈕時，應該會顯示兩個建議的動作：**轉換為大寫**並**轉換為小寫**。 如果您按一下第一個動作，則應該會將目前字組中的所有文字都轉換為大寫。 如果您按一下第二個動作，則應該會將所有文字都轉換為小寫。  
+5. 當您按一下按鈕時，應該會顯示兩個建議的動作：**轉換為大寫**並**轉換為小寫**。 如果您按一下第一個動作，則應該會將目前字組中的所有文字都轉換為大寫。 如果您按一下第二個動作，則應該會將所有文字都轉換為小寫。  
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

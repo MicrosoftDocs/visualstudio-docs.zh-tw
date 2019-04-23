@@ -21,17 +21,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba0695656ce2377456f4150be0fe4f5231f7cb76
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c18b34cd3a38f41279885658a8d354ff6f9e8fe7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939250"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650170"
 ---
 # <a name="handle-a-concurrency-exception"></a>處理並行例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 並行存取例外狀況 (<xref:System.Data.DBConcurrencyException>) 兩位使用者嘗試同時變更資料庫中相同的資料時，會引發。 在本逐步解說中，您建立的 Windows 應用程式，說明如何攔截<xref:System.Data.DBConcurrencyException>，找出造成錯誤之資料列，並了解如何處理它的策略。  
   
  本逐步解說會引導您完成下列程序：  

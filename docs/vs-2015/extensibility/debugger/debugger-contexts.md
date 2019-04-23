@@ -10,23 +10,23 @@ ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4227bd8a82df031f04c1ab33761cf9b8520dec7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 771a3cd8ae25173f3033b3a3229e516570f5dedc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942991"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116234"
 ---
 # <a name="debugger-contexts"></a>偵錯工具內容
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]偵錯，偵錯引擎 (DE) 同時會在內部運作數種不同的內容，，如下所示：  
   
--   程式碼內容，說明該應用程式的執行資料流中目前的位置。  
+- 程式碼內容，說明該應用程式的執行資料流中目前的位置。  
   
--   文件內容的位置，其中描述來源文件中目前的位置。  
+- 文件內容的位置，其中描述來源文件中目前的位置。  
   
--   運算式評估內容，描述要在哪一個運算式評估會發生的內容。  
+- 運算式評估內容，描述要在哪一個運算式評估會發生的內容。  
   
 ## <a name="in-this-section"></a>本節內容  
  [程式碼內容](../../extensibility/debugger/code-context.md)  

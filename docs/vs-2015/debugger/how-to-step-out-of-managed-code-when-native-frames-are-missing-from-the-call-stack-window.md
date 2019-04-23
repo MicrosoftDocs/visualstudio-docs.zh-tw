@@ -25,12 +25,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6cb3b1f0d1c21a7cde53f8b3eecf1cd25c26b394
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 684738fd2180a3c5bf269b2a30efd970bcf9ab08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941539"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092197"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>HOW TO：在原生框架從呼叫堆疊視窗遺失時跳離受控程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58941539"
   
 ### <a name="to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>若要在原生框架遺失於呼叫堆疊顯示時跳離 Managed 程式碼  
   
-1.  在機器碼中，請在呼叫 Managed 程式碼之後設定一個位置中斷點。  
+1. 在機器碼中，請在呼叫 Managed 程式碼之後設定一個位置中斷點。  
   
-2.  選擇 [偵錯] 功能表上的 [繼續]。  
+2. 選擇 [偵錯] 功能表上的 [繼續]。  
   
      完成 Managed 呼叫之後，執行將停止於機器碼的中斷點處。  
   

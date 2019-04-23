@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c419800a92f25ce4531c351d4131acf119633ccb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 506e39537614b50b72a515d882e5592c316cce26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941136"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080874"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>什麼&#39;Visual Studio 2015 SDK 的新功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Visual Studio SDK for Visual Studio 2015 中，更新，Visual Studio 2015 和 V
 
  這些主題正在[VSSDK 公用程式](../extensibility/internals/vssdk-utilities.md)區段：
 
--   [色彩佈景主題工具](../extensibility/internals/color-theming-tools.md)幫助您建立和編輯 Visual Studio 自訂色彩。
+- [色彩佈景主題工具](../extensibility/internals/color-theming-tools.md)幫助您建立和編輯 Visual Studio 自訂色彩。
 
--   [影像服務工具](../extensibility/internals/image-service-tools.md)可讓您使用 Visual Studio 映像資訊清單檔案。
+- [影像服務工具](../extensibility/internals/image-service-tools.md)可讓您使用 Visual Studio 映像資訊清單檔案。
 
 ## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>將 Visual Studio SDK 新增至 Visual Studio 的新方式
  從 Visual Studio 2015 中，您不需要個別下載 Visual Studio SDK。 相反地，您可以將它安裝為標準安裝程序的一部分，或更新版本上安裝時，您可以選擇。 當您開啟或建立 VSIX 方案時，Visual Studio 會要求您安裝 Visual Studio 擴充性工具。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
@@ -42,18 +42,18 @@ Visual Studio SDK for Visual Studio 2015 中，更新，Visual Studio 2015 和 V
 ### <a name="visual-c-and-visual-basic"></a>Visual C# 和 Visual Basic
  對於 C# 和 Visual Basic 中，沒有完整的專案項目範本可讓您建立 Vspackage，功能表命令、 工具視窗、 編輯器分類器、 編輯器裝飾和編輯器邊界延伸模組。 您可以新增任何或所有的這些標準的 VSIX 專案。 如需詳細資訊，請參閱:
 
--   [建立具有功能表命令的擴充功能](../extensibility/creating-an-extension-with-a-menu-command.md)
+- [建立具有功能表命令的擴充功能](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   [使用工具視窗建立擴充功能](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [使用工具視窗建立擴充功能](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   [使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   [使用 VSPackage 建立擴充功能](../extensibility/creating-an-extension-with-a-vspackage.md)
+- [使用 VSPackage 建立擴充功能](../extensibility/creating-an-extension-with-a-vspackage.md)
 
      VSPackage 精靈不會再建立 C# 或 Visual Basic 中的延伸模組。
 
 ### <a name="c"></a>C++
- C + +，VSPackage 精靈支援功能表命令、 工具視窗和自訂編輯器。 在尋求**新的專案** 對話方塊中的**Visual c + + / 擴充性**。
+ 針對C++，VSPackage 精靈支援功能表命令、 工具視窗和自訂編輯器。 在尋求**新的專案** 對話方塊中的**Visual C++ / 擴充性**。
 
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>透過 NuGet 的 VS SDK 參考組件
  如需提升可攜性和擴充性專案的共用，您可以使用 VS SDK 參考組件的 NuGet 版本。  這些都位於[nuget.org](http://www.nuget.org)發佈[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)可以輕鬆地新增至您的專案或解決方案，透過 Visual Studio 和**參考 / 管理 NuGet封裝**對話方塊。 您可以個別將參考加入至特定的擴充性的組件，或新增所有 VS SDK 都參考組件，使用 VS SDK 一次[中繼套件](http://www.nuget.org/packages/VSSDK_Reference_Assemblies)。 若要深入了解 NuGet，請參閱[NuGet 概觀](http://docs.nuget.org/)並[使用對話方塊管理 NuGet 封裝](http://docs.nuget.org/Consume/Package-Manager-Dialog)。

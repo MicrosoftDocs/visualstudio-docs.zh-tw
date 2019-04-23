@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62e8a2c44fd25119493a52d8276af0b0886cf2d0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 94e3ccc30507ccd7995c4d4fad548fe5ff425365
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636251"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094604"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>HOW TO：管理執行窗格控制項配置
   執行窗格停駐文件或工作表的權限預設;不過，它可以停駐 left，top 或 bottom。 如果您使用多個使用者控制項，您可以撰寫程式碼，以適當堆疊使用者控制項，在 [動作] 窗格上。 如需詳細資訊，請參閱 <<c0> [ 執行窗格概觀](../vsto/actions-pane-overview.md)。
@@ -36,25 +36,25 @@ ms.locfileid: "56636251"
 
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>若要設定執行窗格控制項堆疊順序
 
-1.  開啟包含具有多個使用者控制項或巢狀的執行窗格控制項的 [動作] 窗格的 Microsoft Office Word 的文件層級專案。 如需詳細資訊，請參閱[如何：加入執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。
+1. 開啟包含具有多個使用者控制項或巢狀的執行窗格控制項的 [動作] 窗格的 Microsoft Office Word 的文件層級專案。 如需詳細資訊，請參閱[如何：加入執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。
 
-2.  以滑鼠右鍵按一下**ThisDocument.cs**或是**ThisDocument.vb**中**方案總管 中**然後按一下**檢視程式碼**。
+2. 以滑鼠右鍵按一下**ThisDocument.cs**或是**ThisDocument.vb**中**方案總管 中**然後按一下**檢視程式碼**。
 
-3.  在 [<xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged>的動作] 窗格中，檢查 [動作] 窗格的方向是水平的事件處理常式。
+3. 在 [<xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged>的動作] 窗格中，檢查 [動作] 窗格的方向是水平的事件處理常式。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#30)]
      [!code-vb[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#30)]
 
-4.  從左邊; 如果方向是水平的控制堆疊 [動作] 窗格否則，堆疊頂端。
+4. 從左邊; 如果方向是水平的控制堆疊 [動作] 窗格否則，堆疊頂端。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#31)]
      [!code-vb[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#31)]
 
-5.  在 C# 中，您必須新增事件處理常式`ActionsPane`至<xref:Microsoft.Office.Tools.Word.Document.Startup>事件處理常式。 如需建立事件處理常式的資訊，請參閱[How to:建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。
+5. 在 C# 中，您必須新增事件處理常式`ActionsPane`至<xref:Microsoft.Office.Tools.Word.Document.Startup>事件處理常式。 如需建立事件處理常式的資訊，請參閱[How to:建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#32](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#32)]
 
-6.  執行專案，並確認 [動作] 窗格停駐在文件中，頂端和 [動作] 窗格停駐在文件的右側時，會從上到下堆疊控制項時執行窗格控制項堆疊由左到右。
+6. 執行專案，並確認 [動作] 窗格停駐在文件中，頂端和 [動作] 窗格停駐在文件的右側時，會從上到下堆疊控制項時執行窗格控制項堆疊由左到右。
 
 ## <a name="example"></a>範例
  [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)]
@@ -63,7 +63,7 @@ ms.locfileid: "56636251"
 ## <a name="compile-the-code"></a>編譯程式碼
  這個範例需要：
 
--   Word 文件層級專案與包含多個使用者控制項的執行窗格或巢狀的執行窗格控制項。
+- Word 文件層級專案與包含多個使用者控制項的執行窗格或巢狀的執行窗格控制項。
 
 ## <a name="see-also"></a>另請參閱
 - [執行窗格概觀](../vsto/actions-pane-overview.md)

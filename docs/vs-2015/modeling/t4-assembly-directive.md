@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f81bdcad4f255585c2c554add59ed04dea5872d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9fa00e8b5aafa131a9ca64b6fdaa7cba79fcb3b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944579"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074212"
 ---
 # <a name="t4-assembly-directive"></a>T4 組件指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58944579"
   
 - 組件的絕對路徑  
   
-  `$(variableName)` 語法可用來參考 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 變數 (例如 `$(SolutionDir)`)，而 `%VariableName%` 可用來參考環境變數。 例如：  
+  `$(variableName)` 語法可用來參考 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 變數 (例如 `$(SolutionDir)`)，而 `%VariableName%` 可用來參考環境變數。 例如:   
   
 ```  
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>  
@@ -66,7 +66,7 @@ ms.locfileid: "58944579"
   
 - 包含 DSL 的組件。  
   
-##  <a name="msbuild"></a> 使用 MSBuild 和 Visual Studio 中的專案屬性  
+## <a name="msbuild"></a> 使用 MSBuild 和 Visual Studio 中的專案屬性  
  Visual Studio 巨集 (如 $(SolutionDir)) 在 MSBuild 中無法運作。 如果想要轉換組建電腦中的範本，您必須改用專案屬性。  
   
  編輯您的 .csproj 或 .vbproj 檔案以定義專案屬性。 這個範例會定義名為 `myLibFolder` 的屬性：  

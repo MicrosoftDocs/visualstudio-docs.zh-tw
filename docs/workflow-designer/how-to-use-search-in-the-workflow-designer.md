@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b1d29c4398e6b6c377ab493c495951f942d15965
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a80bfecaa288eabc0161d0262535a7912411f78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942384"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091287"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>HOW TO：使用工作流程設計工具中的搜尋
 
@@ -23,13 +23,13 @@ ms.locfileid: "55942384"
 
 快速尋找在設計工具中尋找下列：
 
--   <xref:System.Activities.Activity> 物件、<xref:System.Activities.Statements.FlowNode> 物件、<xref:System.Activities.Statements.State> 物件、轉換及其他自訂流程控制項目的屬性。
+- <xref:System.Activities.Activity> 物件、<xref:System.Activities.Statements.FlowNode> 物件、<xref:System.Activities.Statements.State> 物件、轉換及其他自訂流程控制項目的屬性。
 
--   變數
+- 變數
 
--   引數
+- 引數
 
--   運算式
+- 運算式
 
 ### <a name="use-quick-find"></a>使用快速尋找
 
@@ -47,8 +47,8 @@ ms.locfileid: "55942384"
 
 ### <a name="use-find-in-files"></a>使用 檔案中尋找
 
-1.  在 Visual Studio 中按**Ctrl**+**Shift**+**F**，或選取**編輯** >  **尋找和取代** > **檔案中尋找**。
+1. 在 Visual Studio 中按**Ctrl**+**Shift**+**F**，或選取**編輯** >  **尋找和取代** > **檔案中尋找**。
 
-2.  輸入搜尋項目插入**Find what**文字方塊中，按一下 **全部尋找**。
+2. 輸入搜尋項目插入**Find what**文字方塊中，按一下 **全部尋找**。
 
-3.  尋找結果所示**尋找結果**檢視。 按兩下結果項目會巡覽至工作流程設計工具中包含相符的活動。
+3. 尋找結果所示**尋找結果**檢視。 按兩下結果項目會巡覽至工作流程設計工具中包含相符的活動。

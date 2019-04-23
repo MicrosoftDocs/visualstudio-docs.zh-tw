@@ -19,16 +19,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dedfc71636983a9cbe634551a88eb3de45cb1d99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ee820bc246e11b722d663ecc6a6037f182bc2c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053113"
 ---
 # <a name="bind-objects-in-visual-studio"></a>在 Visual Studio 中的物件繫結
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Visual Studio 會提供設計階段工具，為您的應用程式中的資料來源使用自訂的物件。 當您想要將資料庫中的資料儲存在您繫結至 UI 控制項的物件時，建議的方法是使用 Entity Framework 來產生類別。 DbSet 物件上呼叫 AcceptChanges，實體 Frameworkautogenerates 所有未定案變更追蹤程式碼，這表示，任何會變更為本機物件會自動保存至資料庫。    如需詳細資訊，請參閱 < [Entity Framework 文件](https://ef.readthedocs.org/en/latest/)。
 
@@ -43,17 +42,17 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>使用自訂物件做為資料來源的範例
  雖然有無數的方式來實作您的應用程式邏輯，做為資料來源處理物件時，sql，資料庫有會是可簡化使用 Visual Studio-產生的 TableAdapter 物件的一些標準作業。 此頁面說明如何實作這些標準處理程序使用 TableAdapters.It 不適合做為指南建立您的自訂物件。 例如，您通常會執行下列標準作業，不論特定實作的物件或應用程式的邏輯：
 
--   將資料載入物件 （通常是從資料庫中）。
+- 將資料載入物件 （通常是從資料庫中）。
 
--   建立物件的類型的集合。
+- 建立物件的類型的集合。
 
--   將物件新增至，並移除集合中的物件。
+- 將物件新增至，並移除集合中的物件。
 
--   使用者在表單上顯示的物件資料。
+- 使用者在表單上顯示的物件資料。
 
--   變更/編輯資料物件中。
+- 變更/編輯資料物件中。
 
--   將資料從物件儲存回資料庫。
+- 將資料從物件儲存回資料庫。
 
 > [!NOTE]
 >  若要進一步了解，，和提供的範例，此頁面上的內容，我們建議您先完成下列：[逐步解說：連接至資料物件 (Windows Form)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。 該逐步解說建立此處所討論的物件。

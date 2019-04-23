@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c50fb897e3374eccca60f3fc05591bbf221670e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 35047c6c0887d02f3adcba763de05b8d4a1cd00b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926030"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042478"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>HOW TO：使用逸出序列從範本產生範本
 您可以建立的文字範本會建立另一個文字範本，做為其產生的文字輸出。 若要這樣做，您必須使用逸出序列來描述文字範本標記。 如果您不使用逸出序列，產生的文字範本會有預先定義的意義。 如需文字範本中使用逸出序列的詳細資訊，請參閱[文字範本中使用逸出序列](../modeling/using-escape-sequences-in-text-templates.md)。
 
 ### <a name="to-generate-a-text-template-from-within-a-text-template"></a>若要產生的文字範本內從文字範本
 
--   使用反斜線 (\\) 當做逸出字元，產生的文字範本指示詞、 陳述式、 運算式、 內所需的標記和類別不同的文字範本檔案中的功能。
+- 使用反斜線 (\\) 當做逸出字元，產生的文字範本指示詞、 陳述式、 運算式、 內所需的標記和類別不同的文字範本檔案中的功能。
 
     ```
     \<#@ directive \#>

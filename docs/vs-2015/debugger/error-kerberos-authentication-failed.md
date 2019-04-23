@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dba1ec7a21c0340db8b89124892edf78db2e04c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5e85bc7a5bac87692448aab393056fa1db5edbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945846"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083994"
 ---
 # <a name="error-kerberos-authentication-failed"></a>錯誤：Kerberos 驗證失敗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>若要確認目標電腦上的 DNS 有正確解析偵錯工具主機電腦的名稱  
   
-1.  在目標電腦上，開啟 [開始] 功能表，指向 [附屬應用程式]，然後按一下 [命令提示字元]。  
+1. 在目標電腦上，開啟 [開始] 功能表，指向 [附屬應用程式]，然後按一下 [命令提示字元]。  
   
-2.  在 [命令提示字元] 視窗中，鍵入：  
+2. 在 [命令提示字元] 視窗中，鍵入：  
   
     ```  
     ping <debugger_host_computer_name>  
     ```  
   
-3.  `ping` 回應的第一行顯示針對指定電腦，DNS 所傳回的電腦全名和 IP 位址。  
+3. `ping` 回應的第一行顯示針對指定電腦，DNS 所傳回的電腦全名和 IP 位址。  
   
-4.  在偵錯工具主機電腦上，開啟 [命令提示字元] 視窗，並執行 `ipconfig`。  
+4. 在偵錯工具主機電腦上，開啟 [命令提示字元] 視窗，並執行 `ipconfig`。  
   
-5.  比較 IP 位址值。  
+5. 比較 IP 位址值。  
   
 ## <a name="see-also"></a>另請參閱  
  [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)   
