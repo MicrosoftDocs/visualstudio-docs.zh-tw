@@ -9,17 +9,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 62e1a6c317752dc5513a51d3e8018d15c9598b93
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000647"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664796"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 建立簡單的資料應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 此逐步解說示範如何在 Visual Studio 中使用 SQL Server LocalDB，Northwind 資料庫中，Entity Framework 6，與 Windows Presentation Foundation 建立基本 「 資料表單 」 應用程式。 它示範如何執行基本的資料繫結，主版詳細資料檢視，而且也有自訂 「 繫結巡覽器 」 的 「 移動下一步 按鈕，"移到上一個，「 「 移至開始時，「 「 移至結尾，」 「 更新 」 和 「 刪除 」。  
   
  本文著重於在 Visual Studio 中，使用資料的工具，並不會嘗試說明中任意深度的基礎技術。 這裡假設您有基本的熟悉 XAML、 Entity Framework 和 SQL。 此範例中也不會示範 MVVM 架構，也就是標準 WPF 應用程式。 不過，您也可以將此程式碼複製到您自己的 MVVM 應用程式，且幾乎不必修改。  

@@ -20,17 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2546266d1b050de6a08e7ba8e2f1526acc0291b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9a109490c4ff89c6a9f45533fc1305d915522621
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943118"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668934"
 ---
 # <a name="pass-data-between-forms"></a>在表單之間傳遞資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 此逐步解說提供將資料從某個表單傳遞至另一個表單的指示。 使用客戶和訂單資料表，從 Northwind，一種格式可讓使用者選取客戶，和第二個表單會顯示所選取的客戶的訂單。 本逐步解說示範如何從第一個表單接收資料的第二個表單上建立方法。  
   
 > [!NOTE]

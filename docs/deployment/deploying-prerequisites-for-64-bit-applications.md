@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f481d944baf60120bf691313400489c876ecf5c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7c70b58577f8aa6e391215658afb7f8fa43c9bb5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606247"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666740"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>部署 64 位元應用程式的必要條件
 ClickOnce 部署支援在 64 位元平台上的應用程式的安裝。 目標平台包括 **x86** (表示 32 位元平台)、**x64** (表示支援 AMD64 和 EM64T 指令集的電腦)，以及 **Itanium** (表示 64 位元 Itanium 處理器)。
@@ -32,7 +32,6 @@ ClickOnce 部署支援在 64 位元平台上的應用程式的安裝。 目標�
  下表列出一些可轉散發套件，您可以將它們當做 64 位元應用程式安裝的必要條件來使用。
 
  如果您選取沒有 64 位元元件的必要條件，可能會出現警告，指出選取的套件不適用於 64 位元平台。
-
 
 | 可轉散發套件 | x64 支援 | IA64 支援 |
 | - |-------------|--------------|
@@ -44,5 +43,5 @@ ClickOnce 部署支援在 64 位元平台上的應用程式的安裝。 目標�
 
 ## <a name="see-also"></a>另請參閱
 - [部署應用程式、 服務和元件](../deployment/deploying-applications-services-and-components.md)
-- [How to: Install prerequisites with a ClickOnce application](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) (如何：使用 ClickOnce 應用程式安裝必要元件)
+- [如何：使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [64 位元應用程式](/dotnet/framework/64-bit-apps)

@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd61a665e50c04516d8c3c62489f9ccab7880b6a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: beea8103cce20d7437965b94a5ace10605847546
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940053"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662032"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>XSD 範例檔：簡單結構描述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XSD 結構描述設計工具文件中的數個範例使用下列 XSD 檔案。 這個檔案是簡單的採購單結構描述。  
   
 ```xml  

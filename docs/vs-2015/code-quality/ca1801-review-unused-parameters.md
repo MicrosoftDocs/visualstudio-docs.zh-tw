@@ -16,24 +16,24 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MT
+ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59000834"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662604"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801:必須檢閱未使用的參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新文件，請參閱[ca1801 必須：檢閱未使用的參數](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)docs.microsoft.com 上。  
+如需 Visual Studio 的最新文件，請參閱[ca1801 必須：檢閱未使用的參數](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)。  
   
 |||  
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |CheckId|CA1801|  
 |分類|Microsoft.Usage|  
-|中斷變更|非中斷-成員不是組件，不論您所做的變更外部可見。<br /><br /> 非中斷-如果您變更要使用的參數，其主體中的成員。<br /><br /> 中斷-如果您移除參數，而且它是組件外部可見。|  
+|中斷變更|非中斷-成員不是組件外部可見不論有變更您進行。<br /><br /> 非分行-如果您變更要使用的參數，其主體中的成員。<br /><br /> 中斷-如果您移除參數，而且它是組件外部可見。|  
   
 ## <a name="cause"></a>原因  
  方法簽章包括不用於方法主體中的參數； 此規則不會檢查下列方法：  

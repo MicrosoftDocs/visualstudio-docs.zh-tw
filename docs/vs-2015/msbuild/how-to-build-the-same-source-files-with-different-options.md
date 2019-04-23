@@ -1,5 +1,5 @@
 ---
-title: 如何：使用不同選項來建置相同的原始程式檔 | Microsoft Docs
+title: HOW TO：使用不同選項來建置相同的來源檔案 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,17 +14,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 738f6e9f3a31407f30d30c963265b78d8000ca82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ce859a1fd6ee491ecf22003f5ef99936136496a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800414"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663138"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同選項來建置相同的原始程式檔
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>HOW TO：使用不同選項來建置相同的原始程式檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 當您建置專案時，經常會以不同的組建選項編譯相同的元件。 例如，您可以建立含有符號資訊的偵錯組建，或是不含符號資訊但已啟用最佳化的發行組建。 或者，您可以建置要在特定平台上執行的專案，例如 x86 或 [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]。 在這些情況下，大部分的建置選項都會保持不變。只會變更某些選項來控制組建組態。 透過 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，您可以使用屬性和條件來建立不同的建置組態。  
   
 ## <a name="using-properties-to-modify-projects"></a>使用屬性修改專案  
@@ -82,7 +81,7 @@ ms.locfileid: "54800414"
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
   ```  
   
-  環境變數也可視為屬性，並由 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 自動合併。 如需使用環境變數的詳細資訊，請參閱[如何︰在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
+  環境變數也可視為屬性，並由 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 自動合併。 如需使用環境變數的詳細資訊，請參閱[如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
   
   命令列上指定的屬性值優先於針對專案檔中相同屬性設定的任何值，而位於專案檔中的值會優先於環境變數中的值。  
   
@@ -186,7 +185,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 -->  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 [MSBuild](msbuild.md)  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   

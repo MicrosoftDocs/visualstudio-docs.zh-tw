@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05acf62d30a1ac272003c0883b4a8c927e13e659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a57f94758d4289981740ed9c1a8a463a8a97887d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944191"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661590"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext 方法 (O/R 設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & c e autoUpgrade = True) 方法 (中的內容[LINQ to SQL 工具，在 Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) 方法的<xref:System.Data.Linq.DataContext>執行預存的類別程序和函式在資料庫中。  
   
  <xref:System.Data.Linq.DataContext> 類別是一個 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 類別，可以做為 SQL Server 資料庫與該資料庫對應之 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 實體類別之間的管道。 <xref:System.Data.Linq.DataContext>類別包含連接字串資訊和連線到資料庫及操作資料庫中的資料的方法。 根據預設，<xref:System.Data.Linq.DataContext>類別包含數種方法，您可以呼叫，例如<xref:System.Data.Linq.DataContext.SubmitChanges%2A>方法，會傳送更新的資料從[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]類別至資料庫。 您也可以建立其他對應至預存程序和函式的 <xref:System.Data.Linq.DataContext> 方法。 換句話說，呼叫這些自訂方法會執行 <xref:System.Data.Linq.DataContext> 方法在資料庫中對應的預存程序或函式。 您可以將新的方法加入至 <xref:System.Data.Linq.DataContext> 類別，方式就和加入方法以擴充任何類別一樣。 不過，在討論<xref:System.Data.Linq.DataContext>的內容中的方法[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，它是<xref:System.Data.Linq.DataContext>對應至預存程序和函式是在討論的方法。  

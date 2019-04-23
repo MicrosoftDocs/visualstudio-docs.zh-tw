@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: fdaa8396049da2a0d875282b13eb2744bedbdd29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939442"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664310"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>HOW TO：針對 Visual Studio 延伸模組使用合乎規則的 UI 內容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,8 +137,6 @@ Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStu
 |ActiveProjectCapability:\<Expression>|作用中的專案功能符合提供的運算式時，則為 true 的詞彙。 運算式可以是 VB 類似&#124;CSharp|
 |SolutionHasProjectCapability:\<Expression>|當方案中有任何比對運算式的載入的專案時，與上述類似，但是一詞是如此。|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|解決方案具備特色 （彙總） 的專案，並比對指定的專案類型 GUID 類別時，將會是 true 一詞。|
-
-
 
 ## <a name="compatibility-with-cross-version-extension"></a>副檔名為跨版本相容性
  規則型的 UI 內容是在 Visual Studio 2015 的新功能，並不會移轉至較早版本。 這會建立為目標的 Visual Studio 會自動載入在 Visual Studio 2013 及更早版本，但可受益於以規則為基礎的 UI 內容以避免被自動載入 Visual Studio 2015 中的多個版本的延伸模組/套件有問題。

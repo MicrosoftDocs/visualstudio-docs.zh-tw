@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6d996cfcfb9dd8c63cf31b203905b486b3a1c82
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: af494a87b2feea10d121e59931e51ef3dd344f67
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598462"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669298"
 ---
 # <a name="how-to-resize-listobject-controls"></a>HOW TO：調整 ListObject 控制項的大小
   在將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入 Microsoft Office Excel 活頁簿時，會設定該控制項的大小，不過也可以稍後再進行調整。 例如，您可能想要將兩個資料行的清單變更為三個資料行。
@@ -43,7 +43,6 @@ ms.locfileid: "56598462"
  若要調整清單的大小，您可以按一下並拖曳其中一個調整大小控點，或是在 [調整清單大小]  對話方塊中重新定義其大小。
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>使用 [調整清單大小] 對話方塊調整清單的大小
-
 
 1.  在任何地方按一下<xref:Microsoft.Office.Tools.Excel.ListObject>資料表。 **資料表工具** > **設計**功能區中的索引標籤會出現。
 

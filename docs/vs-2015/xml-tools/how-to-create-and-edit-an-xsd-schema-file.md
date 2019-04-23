@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5654b994eb8b6a2e8409688e30155952b6eeb59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 132cc5acd705c45d56a9234467b807a86b5ae1ec
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943802"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666997"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>HOW TO：建立和編輯 XSD 結構描述檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本主題描述如何建立新 XML 結構描述 (XSD) 檔案，然後將內容加入至 XSD 檔案。  
   
 ### <a name="to-create-a-new-xml-schema-file"></a>建立新的 XML 結構描述檔  

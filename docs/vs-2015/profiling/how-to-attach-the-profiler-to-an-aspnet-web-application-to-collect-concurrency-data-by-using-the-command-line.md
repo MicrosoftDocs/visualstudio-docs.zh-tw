@@ -9,14 +9,14 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6340b30f393fc2690a76febf335883b0ebf6f6ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ea13b68f65d20f48a15c155761adef6bcbd4536b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801759"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666016"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至 ASP.NET Web 應用程式以收集並行資料
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>HOW TO：Profiler 附加至 ASP.NET Web 應用程式以使用命令列收集並行資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具命令列工具將程式碼剖析工具附加至 ASP.NET 應用程式，並收集處理序和執行緒並行資料。  
@@ -46,7 +46,6 @@ ms.locfileid: "54801759"
    |  [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`  |                                      指定程式碼剖析期間要收集的 Windows 效能計數器。                                       |
    |       [/automark](../profiling/automark.md) **:** `Interval`       | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500。 |
    |     [/events](../profiling/events-vsperfcmd.md) **:** `Config`     |       指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。       |
-
 
 2. 以一般方式啟動 ASP.NET 應用程式。  
 
@@ -82,6 +81,6 @@ ms.locfileid: "54801759"
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [為 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [使用 VSPerfASPNETCmd 快速進行網站程式碼剖析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)

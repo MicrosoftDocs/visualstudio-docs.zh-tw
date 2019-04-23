@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41a5016c528e754e452ee1248e85b705c41a44ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 59e712d9354432bc142478935827a6439547321c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621067"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662389"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>選擇 vspackage 的安裝目錄
 VSPackage 和其支援的檔案必須是使用者的檔案系統上。 位置取決於 VSPackage 是否管理或未受管理，您的並排顯示版本設定配置和使用者選擇。
@@ -27,7 +27,7 @@ VSPackage 和其支援的檔案必須是使用者的檔案系統上。 位置取
 
  應該允許使用者變更預設目錄來容納保持小型的開機磁碟分割的使用者，且想要安裝另一個磁碟區上的應用程式和工具。
 
- 如果您的並排顯示配置使用已建立版本的 VSPackage，您可以使用子目錄來儲存不同的版本。 例如: 
+ 如果您的並排顯示配置使用已建立版本的 VSPackage，您可以使用子目錄來儲存不同的版本。 例如：
 
  *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2002\\*
 
@@ -56,7 +56,6 @@ VSPackage 和其支援的檔案必須是使用者的檔案系統上。 位置取
 4.  預設子語言使用系統預設 LCID。
 
 5.  美國英文 (*。 \1033*或是 *。 \0x409*)。
-
 
 如果您的 VSPackage DLL 包含資源和**SatelliteDll\DllName**登錄項目指向它，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]嘗試載入它們依上述順序。
 

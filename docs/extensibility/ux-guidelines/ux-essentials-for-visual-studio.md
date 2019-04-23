@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7be75a00925fbd3220934d50432f625c66fee9d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 063818aa828305eedfc184231f2dc4de4eec981c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723496"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667451"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>適用於 Visual Studio 的 UX 基本
 ## <a name="best-practices"></a>最佳作法
@@ -102,7 +102,6 @@ ms.locfileid: "56723496"
 
 #### <a name="example-video-links-in-team-explorer"></a>範例： 在 Team Explorer 中的視訊連結
 強制使用者讀取的說明文字之前關閉 UI 是在 Visual Studio 中的反模式。 正確地設計、 視訊的連結應顯示的其他資訊的工具提示上暫留，然後按一下 「&times;"應該關閉訊息而不需要進一步的互動。
-
 
  ![說明文字反&#45;模式&#45;不正確](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />不正確的影片連結模式
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 870f5385074e02036a088b34a94bd4e60d8153bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 5d257953aeefd56a8b58a75377a64a5d9e882a25
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641750"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665203"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>逐步解說：建立您第一個 VSTO 增益集專案
   本逐步解說會示範如何建立 Microsoft Office Project 的 VSTO 增益集。 不論開啟哪一個專案，您在這類方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -91,7 +91,6 @@ ms.locfileid: "56641750"
 1.  如果使用的是 C#，請將下列程式碼加入 `ThisAddIn_Startup` 事件處理常式中。 此程式碼會連線`Application_Newproject`與 NewProject 事件的事件處理常式。
 
      [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]
-
 
 ## <a name="test-the-project"></a>測試專案
  當您建置並執行專案時，請確認新工作會出現在產生的新專案中。

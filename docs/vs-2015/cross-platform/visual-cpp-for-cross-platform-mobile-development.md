@@ -11,17 +11,16 @@ caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c2ff6555be6f8189ff085e203890891f5345d3c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ec4bc799c3a808a7259e4dd39565e2e21940ca56
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778299"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665698"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>適用於跨平台行動裝置開發的 Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您可以建置 iOS、Android 和 Windows 裝置的原生 C++ 應用程式，以及使用跨平台行動裝置開發的 Visual C++，在為 iOS、Android 和 Windows 建置的程式庫中共用通用程式碼。 這是為共用程式庫和原生應用程式的跨平台開發工具安裝了所需 SDK 和工具的 Visual Studio 2015 提供的選項。 安裝好後，您就可以使用 Visual C++ 建立程式碼，除了 Windows、Windows Phone 和 Xbox 之外，還可在 iOS 和 Android 裝置及平台上執行。  
   
  針對多個平台撰寫程式碼很令人沮喪。 適用於 iOS、Android 和 Windows 的主要開發語言和工具在每個平台上都不一樣。 不過，所有平台都支援使用 C++ 撰寫程式碼。 這是您可以跨平台重複使用核心程式碼的共同點。 使用 C++ 撰寫的原生程式碼效能更好，並可防止反向工程。 建立用於多個平台的應用程式時，重複使用程式碼可以節省時間和精力。  

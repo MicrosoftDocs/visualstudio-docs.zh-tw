@@ -53,16 +53,15 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 723b074b51e97282f67a8e490ec6b109e765dbc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 553d4f7ca61bbc01e72e8735b0007d2f08876e71
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941601"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666503"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 注意]
 >  資料集和相關的類別是舊版的.NET 技術，從早期 2000s 可讓應用程式的應用程式會與資料庫中斷連接時，使用記憶體中的資料。 它們是特別適用於應用程式，讓使用者能夠修改資料，並保存資料庫的變更。 雖然資料集已證明是非常成功的技術，我們建議新的.NET 應用程式使用 Entity Framework。 Entity Framework 提供更自然的方式，為物件模型的表格式資料搭配使用，而且有一個簡單的程式設計介面。

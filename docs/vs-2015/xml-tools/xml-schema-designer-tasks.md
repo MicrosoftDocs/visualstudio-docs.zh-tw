@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87ac827dff2920924bee3a2730fee0ae44f411fa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 12c5e65f45200947c57a4d831611faa4443a0d55
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940808"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666702"
 ---
 # <a name="xml-schema-designer-tasks"></a>XML 結構描述設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本章節描述如何使用 XML 結構描述設計工具完成一般工作。  
   
 ## <a name="in-this-section"></a>本節內容  

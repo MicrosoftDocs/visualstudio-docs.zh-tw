@@ -11,17 +11,16 @@ caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 045955ff33cc4c4e745e0c844f1b2cca80e62955
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 01989e9e9d6b186e520f48d45202687d690410fc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773867"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661486"
 ---
 # <a name="create-an-android-native-activity-app"></a>建立 Android Native Activity 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 當您安裝適用於跨平台行動裝置開發的 Visual C++ 選項時，Visual Studio 2015 可用來建立功能完整的 Android Native Activity 應用程式。 Android 原生開發套件 (NDK) 是一個可讓您實作大部分完全使用 C/C++ 程式碼之 Android 應用程式的工具集。 一些 Java JNI 程式碼可做為讓 C/C++ 程式碼與 Android 互動的黏著劑。 Android NDK 引進了使用 Android 應用程式開發介面層級 9 建立 Native Activity 應用程式的功能。 Native Activity 程式碼在建立使用 Unreal 引擎或 OpenGL 的遊戲和圖形密集應用程式方面很受歡迎。 本主題會引導您建立使用 OpenGL 的簡易 Native Activity 應用程式。 其他主題會引導您逐步了解開發人員編輯、建置、偵錯和部署 Native Activity 程式碼的週期。  
   
  [需求](#req)   

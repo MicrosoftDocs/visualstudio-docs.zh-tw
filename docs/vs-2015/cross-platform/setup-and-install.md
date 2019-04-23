@@ -6,17 +6,16 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 26733c576a8bfd260368697ba0791a665afa46ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6f0282e94d252040f05091ddb25c17857c3a74b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781704"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663855"
 ---
 # <a name="setup-and-install"></a>設定和安裝
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 若要建置 Xamarin 從通用 C#/.NET 程式碼基底建置原生 iOS、Android 和 Windows 應用程式，您需要下列項目：  
   
 - 若要使用 Windows 和 Android 應用程式：一部已安裝 Visual Studio 2015 和 Xamarin 4 的 Windows 開發電腦 (請參閱下列注意事項) (您也可以依照[直接安裝 Xamarin (英文)](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com) 的指示來使用 Visual Studio 2013)。   
@@ -73,7 +72,7 @@ ms.locfileid: "54781704"
   
         ![在 [跨平台行動開發] 下選取 Xamarin 選項](../cross-platform/media/cross-plat-xamarin-setup-2.png "跨平台 Xamarin 設定 2")  
   
-   2.  針對 Windows：**跨平台行動開發 > Microsoft Visual Studio Emulator for Android**。 注意：如果您要使用 Windows 7 或舊版電腦，或在 Mac 上執行 Windows，請務必「取消核取」這個選項。 請參閱步驟 5 之後的＜Windows 電腦上的模擬器相關注意事項＞。 如果您只想在 Android 實體裝置上進行偵錯，也可以讓此選項保留未核取狀態。  
+   2.  適用於 Windows 8 +:**跨平台行動開發 > Microsoft Visual Studio Emulator for Android**。 注意：如果您要使用 Windows 7 或舊版電腦，或在 Mac 上執行 Windows，請務必「取消核取」這個選項。 請參閱步驟 5 之後的＜Windows 電腦上的模擬器相關注意事項＞。 如果您只想在 Android 實體裝置上進行偵錯，也可以讓此選項保留未核取狀態。  
   
    3.  (選擇性) 如果您打算以 Windows 裝置為目標，也要核取 [Windows 及 Web 程式開發] > [通用 Windows 應用程式開發工具] 及 (或) [Windows 8.1 及 Windows Phone 8.0/8.1 工具]。 其中包括安裝模擬器映像的選項，需要較長的時間下載；您可以稍後隨時返回 Visual Studio 安裝程式以加入這些選項。  
   

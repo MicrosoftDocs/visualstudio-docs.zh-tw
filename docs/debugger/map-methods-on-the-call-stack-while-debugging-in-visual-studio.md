@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: fd8928f204da4a3af15918a598df6241cd39df85
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526086"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665671"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>建立視覺效果的對應呼叫堆疊偵錯時 (C#，Visual Basic、 c + +、 JavaScript)
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>建立視覺效果的對應呼叫堆疊偵錯時 (C#，Visual Basic 中， C++，JavaScript)
 
 在您偵錯時建立 Code Map 以視覺方式追蹤呼叫堆疊。 您可以在地圖上做筆記來追蹤程式碼的執行狀況，以便專注於尋找 Bug。
 
@@ -45,7 +45,7 @@ ms.locfileid: "57526086"
 如需命令和動作，您可以使用 code map 的詳細資訊，請參閱 <<c0> [ 瀏覽和重新整理 code map](../modeling/browse-and-rearrange-code-maps.md)。
 
 >[!IMPORTANT]
->您可以建立 code map 只有[Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/)。
+>您可以建立 code map 只有[Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。
 
 以下是快速查看 code map:
 
@@ -53,7 +53,7 @@ ms.locfileid: "57526086"
 
 ##  <a name="MapStack"></a> 對應呼叫堆疊
 
-1. 在 Visual Studio Enterprise 中C#，Visual Basic、 c + + 或 JavaScript 專案中，開始藉由選取偵錯**偵錯** > **開始偵錯**或按下**F5**.
+1. 在 Visual Studio Enterprise 中C#，Visual Basic 中， C++，或 JavaScript 專案中，開始藉由選取偵錯**偵錯** > **開始偵錯** 或按**F5**.
 
 1. 您的應用程式進入中斷模式或是您逐步執行函式之後，請選取**偵錯** > **Code Map**，或按**Ctrl**+**Shift**+**`**.
 

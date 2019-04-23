@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: caff32f582778ec03765554979abe6be5d608d26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3c9c348607c4a009a5b9b0a501e61dda443127df
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943818"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665572"
 ---
 # <a name="xml-editor"></a>XML 編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 編輯器以 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio 文字編輯器為基礎，並包括 XML 語言的其他支援。 XML 編輯器包括下列功能：  
   
 - XML 1.0 語法檢查。  

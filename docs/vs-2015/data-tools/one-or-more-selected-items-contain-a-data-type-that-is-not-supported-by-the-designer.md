@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35b45a407b5c07bc5c6ab6db87e972b3787890ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b6e6c44895a022521899bdd0383ee71257b83fe3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945717"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668817"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>一個或多個選取的項目包含設計工具不支援的資料類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 從一或多個項目拖曳**伺服器總管**/**資料庫總管**拖曳至[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]包含不支援的資料型別[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]（比方說，[CLR 使用者定義型別](http://msdn.microsoft.com/library/9f70e0b0-3a0d-4eb1-b914-07a5d0c167c2))。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  

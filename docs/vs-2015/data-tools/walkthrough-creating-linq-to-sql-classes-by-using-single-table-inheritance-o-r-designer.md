@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62b56e11f5f91485f8fb38f4b087ee2466ad43f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 61509b7427a9c1a95fe15bba93d231f0dc37d136
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943878"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664985"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>逐步解說：使用單一資料表繼承 （O/R 設計工具） 中建立 LINQ to SQL 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)支援單一資料表繼承，因為它通常實作在關聯式系統中。 這個逐步解說中所提供的泛型步驟為基礎以[How to:使用 O/R 設計工具設定繼承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)主題，並提供一些實際資料來示範如何使用中的繼承[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
   
  在這個逐步解說中，您將執行下列工作：  

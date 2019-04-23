@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ce14dacb805839a1e61d8cf56753cedd312c162
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799104"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661863"
 ---
-# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>如何：在編輯器中變更字型和顏色
+# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>HOW TO：變更字型和色彩編輯器中
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 在程式碼編輯器的 [顯示項目] 中，您可以變更預設字體、調整字型大小，亦可變更各種文字的前景和背景色彩。 當變更字型設定時，請注意下列資訊：  
   
 -   [字型] 和 [大小] 是全域設定，會影響所有 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 編輯器的全部文字項目。  
@@ -52,10 +51,10 @@ ms.locfileid: "54799104"
     > [!TIP]
     >  按一下 [使用預設值] 可重設預設設定。  
   
-5.  按一下 [確定 **Deploying Office Solutions**]。  
+5.  按一下 [確定] 。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂編輯器](../../ide/customizing-the-editor.md)   
  [文字編輯器選項對話方塊](../../ide/reference/text-editor-options-dialog-box.md)   
  [撰寫程式碼](../../ide/writing-code-in-the-code-and-text-editor.md)   
- [如何：變更字型和色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [如何：變更字型與色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

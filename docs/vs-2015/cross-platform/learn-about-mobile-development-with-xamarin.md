@@ -6,17 +6,16 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 85b63fe01335b75f4286bcc3d19960ab3b873509
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4d75c93f2ff1678b1d9790462bc816ea35f8acd9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781691"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662071"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解 Xamarin 的行動應用程式開發
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本主題引導您前往概觀資料，以協助您了解如何使用 Xamarin 開發跨平台行動應用程式。 如果您尚未安裝 Visual Studio 和 Xamarin，請先開始進行 [Setup and install](../cross-platform/setup-and-install.md) 程序，然後在安裝程式執行時，返回此處以檢閱這些資源。  
   
 > [!NOTE]
@@ -32,7 +31,7 @@ ms.locfileid: "54781691"
 2.  Xamarin 推廣人員 James Montemagno 的[使用 C# 和 Visual Studio 建置跨平台行動應用程式](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Channel9，15 分 16 秒)。 前三分鐘是 Xamarin 概觀，後面接著程式碼示範。  
   
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>基本概念：Visual Studio 和 Xamarin 環境概觀  
- 5-15 分鐘  
+ *5-15 分鐘*  
   
 - 您將在安裝 Visual Studio 和 Xamarin 的 Windows 電腦上執行大部分工作。 您可以直接在這部電腦上建置 Windows 和 Android 應用程式，然後在裝置或模擬器上執行和偵錯這些應用程式。 您也可以透過 Mac，從遠端建置、執行和偵錯 iOS 應用程式。 Windows 電腦上的 Visual Studio 也可以連線到 iOS 分鏡腳本設計工具與 iOS 模擬器。  
   
@@ -42,7 +41,7 @@ ms.locfileid: "54781691"
   
   ![Windows 和 Mac 開發電腦之間在 Xamarin 環境中的關聯性](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
   
-## <a name="essentials-how-projects-are-structured"></a>基本資訊專案的結構方式  
+## <a name="essentials-how-projects-are-structured"></a>基本概念：專案的結構方式  
  *10-30 分鐘*  
   
 1.  [共用程式碼選項](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com) 建議使用可攜式類別庫選項，因為當您只使用所有目標平台都支援的 .NET API 時，此選項會提供最佳支援。 大多數商務邏輯程式碼都位於 PCL 中，包括存取資料庫、 REST Api 呼叫和可攜式 Xamarin 元件的呼叫 (請參閱[更深入了解：Xamarin 元件](#components)本主題結尾處)。 使用 Xamarin.Forms 撰寫的通用 UI 程式碼也可能位於 PCL 中。  
@@ -52,7 +51,7 @@ ms.locfileid: "54781691"
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>基本概念：原生和 Xamarin.Forms UI 層  
  *10-40 分鐘*  
   
- Xamarin 提供兩種方法來建置強大的原生應用程式。Xamarin Native 和 Xamarin.Forms。  
+ Xamarin 提供兩種方式可建置絕佳的原生應用程式：Xamarin Native 和 Xamarin.Forms。  
   
  Xamarin Native 可讓您為下列每個目標平台撰寫不同的 UI 程式碼：iOS、Android 和 Windows。  透過這種方法，您可以直接存取平台專屬的 API，讓每個平台有自訂的 UI 體驗。  您也可以完整存取每個平台的原生設計工具和控制項，以協助建置各自的 UI。  
   

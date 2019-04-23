@@ -9,22 +9,22 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d842df2056cb6e6b51bdb757057a821af494f15
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MT
+ms.openlocfilehash: 8d5191d78d8eb543edb12146398687216027eece
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59000858"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663540"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>使用 Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如需 Visual Studio 的最新文件，請參閱 <<c0> [ 使用 Microsoft Monitoring Agent](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent) docs.microsoft.com 上。
+如需 Visual Studio 的最新文件，請參閱 <<c0> [ 使用 Microsoft Monitoring Agent](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent)。
 
-您可以使用 **Microsoft Monitoring Agent**，在本機監視裝載 IIS 的 ASP.NET Web 應用程式和 SharePoint 2010 或 2013 應用程式是否發生錯誤、效能問題或其他問題。 您可以將來自代理程式的診斷事件儲存至 IntelliTrace 記錄檔 (.iTrace)。 接著，您可以在 Visual Studio Enterprise (但不能在 Professional 或 Community 版本) 中開啟記錄檔，以偵錯所有 Visual Studio 診斷工具的問題。 您也可以透過 **Trace** 模式執行代理程式，即可收集 IntelliTrace 診斷資料和方法資料。 Microsoft Monitoring Agent 可以與 [Application Insights](/azure/azure-monitor/app/app-insights-overview) 和 [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx)整合。 Microsoft Monitoring Agent 在安裝時確實會變更目標系統的環境。  
+您可以使用 **Microsoft Monitoring Agent**，在本機監視裝載 IIS 的 ASP.NET Web 應用程式和 SharePoint 2010 或 2013 應用程式是否發生錯誤、效能問題或其他問題。 您可以將來自代理程式的診斷事件儲存至 IntelliTrace 記錄檔 (.iTrace)。 您接著可以開啟記錄檔在 Visual Studio Enterprise （但不是 Professional 或 Community 版本） 偵錯所有 Visual Studio 診斷工具的問題。 您也可以透過 **Trace** 模式執行代理程式，即可收集 IntelliTrace 診斷資料和方法資料。 Microsoft Monitoring Agent 可以與 [Application Insights](/azure/azure-monitor/app/app-insights-overview) 和 [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx)整合。 Microsoft Monitoring Agent 在安裝時確實會變更目標系統的環境。  
   
 > [!NOTE]
->  您也可以使用 **IntelliTrace 獨立收集器**收集遠端機器上 Web、SharePoint、WPF 和 Windows Form 應用程式的 IntelliTrace 診斷和方法資料，而不需要變更目標環境。 獨立收集器對效能的影響，大於以 **Monitor** 模式執行 Microsoft Monitoring Agent。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
+> 您也可以使用 **IntelliTrace 獨立收集器**收集遠端機器上 Web、SharePoint、WPF 和 Windows Form 應用程式的 IntelliTrace 診斷和方法資料，而不需要變更目標環境。 獨立收集器對效能的影響，大於以 **Monitor** 模式執行 Microsoft Monitoring Agent。 請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
   
  如果您使用 System Center 2012，請搭配使用 Microsoft Monitoring Agent 與 Operations Manager 來取得問題警示，並建立連結至已儲存 IntelliTrace 記錄檔的 Team Foundation Server 工作項目。 接著，您可以將這些工作項目指派給其他人，以進一步偵錯。 請參閱 [整合 Operations Manager 與開發程序](http://technet.microsoft.com/library/jj614609.aspx) 和 [使用 Microsoft Monitoring Agent 監視](http://technet.microsoft.com/library/dn465153.aspx)。  
   
@@ -80,7 +80,7 @@ ms.locfileid: "59000858"
 3.  [造訪 TechNet](http://technet.microsoft.com/systemcenter/default) 以取得最新的說明內容。  
   
 ####  <a name="FullPermissionsITLog"></a> 問：如何設定應用程式集區的權限？  
- **答：** 使用 Windows **icacls** 命令，或使用 Windows 檔案總管 (或檔案總管)。 例如：  
+ **答：** 使用 Windows **icacls** 命令，或使用 Windows 檔案總管 (或檔案總管)。 例如:   
   
 - 使用 Windows **icacls** 命令設定權限：  
   
@@ -137,7 +137,7 @@ ms.locfileid: "59000858"
   
     |||  
     |-|-|  
-    |*"\<appName>"*|在 IIS 中指定網站和 Web 應用程式名稱的路徑。 如果您想要的話，也可以包括 IIS 路徑。<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> -或-<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> 您可以在 IIS 管理員中尋找這個路徑。 例如：<br /><br /> ![IIS 網站和 web 應用程式路徑](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> 您也可以使用 [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) 和 [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) 命令。|  
+    |*"\<appName>"*|在 IIS 中指定網站和 Web 應用程式名稱的路徑。 如果您想要的話，也可以包括 IIS 路徑。<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> -或-<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> 您可以在 IIS 管理員中尋找這個路徑。 例如: <br /><br /> ![IIS 網站和 web 應用程式路徑](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> 您也可以使用 [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) 和 [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) 命令。|  
     |*\<monitoringMode>*|指定監視模式：<br /><br /> <ul><li>**監視**：記錄例外狀況事件和效能事件的最少詳細資料。 這個模式使用預設收集計劃。</li><li>**追蹤**：記錄函式層級詳細資料，或使用指定的收集計劃監視 SharePoint 2010 和 SharePoint 2013 應用程式。 這個模式可能會讓應用程式執行速度變慢。<br /><br /> <ul><li>[問：如何設定應用程式集區的權限？](#FullPermissionsITLog)</li><li>[問：如何取得大部分的資料，而不會讓應用程式變慢？](#Minimizing)</li></ul><br />     這個範例會記錄 SharePoint 網站上所裝載 SharePoint 應用程式的事件：<br /><br />     **Start-webapplicationmonitoring"FabrikamSharePointSite\FabrikamSharePointApp 」 追蹤"C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml 」 的 「 C:\IntelliTraceLogs"**</li><li>**自訂**：使用指定的自訂收集計劃來記錄自訂詳細資料。 如果您在啟動監視之後編輯收集計劃，則必須重新啟動監視。</li></ul>|  
     |*"\<outputPath>"*|指定儲存 IntelliTrace 記錄檔的完整目錄路徑。 請務必在開始監視之前建立這個目錄。|  
     |*\<UInt32>*|指定 IntelliTrace 記錄檔的大小上限。 IntelliTrace 記錄檔的預設大小上限為 250 MB。<br /><br /> 記錄檔達到這個限制時，代理程式會覆寫最早的項目，以挪出空間供更多項目使用。 若要變更這個限制，請使用 **-MaximumFileSizeInMegabytes** 選項，或編輯收集計劃中的 `MaximumLogFileSize` 屬性。|  

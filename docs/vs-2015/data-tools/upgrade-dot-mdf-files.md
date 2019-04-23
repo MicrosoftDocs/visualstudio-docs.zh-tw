@@ -22,17 +22,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: dc67a44586d221830825b94dd1c0eb160e307d21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6cdbb5d092f431f628e76c7ab629d5ed70429cee
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940196"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661499"
 ---
 # <a name="upgrade-mdf-files"></a>升級 .mdf 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本主題說明在您安裝新版的 Visual Studio 之後，升級您的資料庫檔案 (.mdf) 的選項。 它包含下列工作的指示：  
   
 - 升級使用較新版的 SQL Server Express LocalDB 資料庫檔案  

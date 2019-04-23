@@ -18,17 +18,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 786895d045b4ee43d9fbb8cb519fdd47d76b057a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7c0514d29d3c8e87b277115f8e1307dc0a5fb0c4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944527"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662708"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>建立支援查閱資料繫結的 Windows Forms 使用者控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在 Windows Forms 上顯示資料時，您可以從 [工具箱] 中選擇現有控制項；或者，如果應用程式需要標準控制項中未提供的功能，您也可以撰寫自訂控制項。 這個逐步解說顯示如何建立可實作 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> 的控制項。 可實作 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> 的控制項可以包含三個可繫結至資料的屬性。 這類控制項類似 <xref:System.Windows.Forms.ComboBox>。  
   
  如需控制項製作的詳細資訊，請參閱[在設計階段開發 Windows Forms 控制項](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829)。  
@@ -152,7 +151,7 @@ ms.locfileid: "58944527"
   
 6.  在 [資料 UI 自訂選項] 對話方塊中，從 [相關聯的控制項] 清單中選取 **LookupBox**。  
   
-7.  按一下 [確定 **Deploying Office Solutions**]。  
+7.  按一下 [確定] 。  
   
 8.  按一下 [CustomerID] 資料行上的下拉式箭頭，並選擇 **LookupBox**。  
   

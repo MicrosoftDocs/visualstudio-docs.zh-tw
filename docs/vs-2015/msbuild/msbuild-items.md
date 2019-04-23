@@ -11,17 +11,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 24756553f4b1f5eb1a0ce811842c2843debd71aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: deeed2ed86b07ec6f3d36f7dd4b4be02c1060155
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770846"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669805"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會依據它們的項目 (Element) 名稱分組為項目 (Item) 類型。 項目類型是具名的項目清單，可用來做為工作的參數。 工作會使用項目值來執行建置程序的步驟。  
   
  由於項目是根據其所屬的項目類型來命名，因此可交換使用「項目」和「項目值」等詞彙。  
@@ -131,7 +130,7 @@ MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- 如需詳細資訊，請參閱[如何︰從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。  
+ 如需詳細資訊，請參閱[如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。  
   
 ##  <a name="BKMK_ItemMetadata"></a> 項目中繼資料  
  在 `Include` 和 `Exclude` 屬性中，除了資訊，項目可能還會包含中繼資料。 若工作需要更多關於項目的資訊，就會使用此中繼資料，或使用此中繼資料來批次處理工作和目標。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。  
@@ -355,7 +354,7 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)  
  [MSBuild](msbuild.md)   
  [如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)   

@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e3834e22f67001e38096032037f33c5d184a5330
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944228"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668895"
 ---
 # <a name="content-model-view"></a>內容模型檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 內容模型檢視提供區域和全域結構描述節點及其元件的圖形表示，包括簡單和複雜類型、項目、模型群組、屬性和屬性群組。 XML 註解和處理指示無法在內容模型檢視中檢視。 內容模型檢視包含兩個面板：**工作區**包含中的節點清單的面板[XML 結構描述設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)，和設計介面，您可以在這裡看到的內容模型的結構描述在 選取的節點**工作區**面板。 內容模型檢視也包含 XML 結構描述設計工具工具列和階層連結列。  
   
  在下列影像中，[工作空間] 面板包含六個結構描述節點。 在 [工作空間] 面板中選取的 `purchaseOrder` 節點會顯示在設計介面中。  

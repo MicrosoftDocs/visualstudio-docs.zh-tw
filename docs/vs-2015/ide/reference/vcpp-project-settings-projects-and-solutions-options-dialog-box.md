@@ -19,17 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d5d697cecfb30bc52f3386411a32a05718b0662
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 67a35b8987cc9f4f06cc93df2462a4dee326d7e7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54783125"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664014"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>選項對話方塊、專案和方案、VC++ 專案設定
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 此對話方塊可讓您定義與建置記錄及支援檔案類型相關的 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 專案設定。  
   
 ### <a name="to-access-this-dialog-box"></a>若要存取此對話方塊  

@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4f759b947344298eca36c3fd99d024f7fcde2c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 34eedf61afd79570ca1e4ba471efa9802aae7bfa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943842"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664121"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>格式化、XML、文字編輯器 (選項對話方塊)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 此對話方塊可讓您指定 XML 編輯器的格式化設定。 您可以存取**選項**對話方塊中，從**工具**功能表。  
   
 > [!NOTE]

@@ -1,5 +1,5 @@
 ---
-title: 如何：使用命令列將分析工具附加至原生服務以收集應用程式統計資料 | Microsoft Docs
+title: HOW TO：使用命令列將分析工具附加至原生服務以收集應用程式統計資料 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6382d4e674640426d2676531f06dc720b3c7eb4b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6575cf949084b8fa1bdbb0c891cafdc720e809d3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793152"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666373"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至原生服務以收集應用程式統計資料
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>HOW TO：Profiler 附加至原生服務以使用命令列收集應用程式統計資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令列工具將分析工具附加至 原生服務，並使用取樣方法收集效能統計資料。  
@@ -60,7 +60,6 @@ ms.locfileid: "54793152"
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                             指定程式碼剖析期間要收集的 Windows 效能計數器。                                                                                                              |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                           只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。                                                                            |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                              指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。                                                                              |
-
 
 4. 將程式碼剖析工具附加至服務。 類型：  
 
@@ -107,6 +106,6 @@ ms.locfileid: "54793152"
 
      **VSPerfCmd /shutdown**  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [分析服務](../profiling/command-line-profiling-of-services.md)   
  [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)

@@ -19,17 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c780213083068d64a62791fdd858f692533bf40
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 183a0a489d18625521d01d5abca5ed4f1eb12535
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867933"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669597"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 提供的協助工具產品和服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下列主題提供讓行動不便人士更容易存取 Microsoft Windows 之功能、產品和服務的相關資訊：  
   
 -   [Windows 協助工具功能](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)  

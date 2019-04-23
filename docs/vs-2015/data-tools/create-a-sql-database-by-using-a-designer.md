@@ -25,17 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 147e9cc66518372e042230a30c16588ab719cb1c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940419"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661577"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>使用設計工具建立 SQL database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您可以查看基本工作，例如加入資料表和資料行，以定義可以使用 Visual Studio 來建立和更新 SQL Server Express LocalDB 中的本機資料庫檔案。 當您完成本逐步解說之後，您可以使用本機資料庫做為其他逐步解說的起點，探索更多進階的功能。  
   
  您也可以使用 SQL Server Management Studio （個別下載） 或 TRANSACT-SQL 陳述式中的建立資料庫**SQL Server 物件總管**Visual Studio 中的工具視窗。  

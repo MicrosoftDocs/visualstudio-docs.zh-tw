@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f61c9623cd2006f0df82c93dc420a25f23d3d2a
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: c84402fcccd289b7e4c80ffeaa988411e0c77baf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416198"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669949"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則傳播模型內的變更
 您可以建立存放區的規則，以將變更傳播從一個項目到另一個在 Visualization and Modeling SDK (VMSDK)。 存放區中的任何項目變更時發生，來執行，只有認可的最外層的交易時，通常被排定規則。 有不同類型的不同類型的事件，例如加入項目，或刪除它的規則。 您可以將規則附加至特定類型的項目、 圖形或圖表。 許多內建功能由規則定義： 例如，規則可確保當模型變更時，會更新圖表。 您可以自訂特定領域語言，藉由新增您自己的規則。
@@ -128,7 +128,6 @@ namespace ExampleNamespace
 
 - 從下列基底類別的其中一個衍生規則類別：
 
-
   | 基底類別 | 觸發程序 |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | 新增項目、 連結或圖形。<br /><br /> 使用此選項來偵測新的關聯性，除了新的項目。 |
@@ -141,7 +140,6 @@ namespace ExampleNamespace
   | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | 會建立的交易時，就會執行。 |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | 執行會認可交易時。 |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | 執行回復交易時。 |
-
 
 - 每個類別會具有您覆寫的方法。 型別`override`在您的類別，以進行探索。 此方法的參數會識別正在變更的項目。
 

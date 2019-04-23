@@ -17,23 +17,22 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12c0992cd9d1ece4f9d3ea0d22512948fafaf5cf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9093b35cc444fc0b346f81a91d20afe73bd476cd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791390"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667582"
 ---
 # <a name="calltarget-task"></a>CallTarget 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 叫用專案檔內指定的目標。  
   
 ## <a name="task-parameters"></a>工作參數  
  下表說明 `CallTarget` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`RunEachTargetSeparately`|選擇性的 `Boolean` 輸出參數。<br /><br /> 如果為 `true`，每個目標會呼叫一次 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 引擎。 如果為 `false`，會呼叫一次 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 引擎以建置所有目標。 預設值為 `false`。|  
 |`TargetOutputs`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含所有建置目標的輸出。|  

@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbeaf44d767779281a3af4fe41f97a827a38c097
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: b25a86617fdead402a2bcc3e6d901868caad840e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58945275"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663778"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 應用程式中建立查閱資料表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 詞彙*查閱資料表*(有時也稱為*查閱繫結*) 描述會顯示資訊從一個資料表，根據另一個資料表中的外部索引鍵欄位值的控制項。 您可以藉由拖曳父資料表的主要節點建立查閱資料表或物件**Zdroje dat**視窗拖曳至已繫結至資料行或屬性相關的子資料表中的控制項。  
   
  例如，假設資料表的`Orders`銷售資料庫中。 在每一筆記錄`Orders`資料表包含`CustomerID`，指出哪些客戶下過訂單。 `CustomerID`中的客戶記錄會指向為外部索引鍵`Customers`資料表。 當您顯示一份訂單`Orders`資料表中，您可能想要顯示實際的客戶名稱，而不是`CustomerID`。 因為客戶名稱是在`Customers`資料表中，您需要建立查閱資料表，以顯示客戶名稱。 查閱資料表中使用`CustomerID`中的值`Orders`記錄巡覽關聯性，並傳回客戶名稱。  

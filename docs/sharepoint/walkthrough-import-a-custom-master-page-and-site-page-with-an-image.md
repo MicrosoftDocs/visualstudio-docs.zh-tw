@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59dad7f376b79b2e8ac773f8cc604204dcd0c908
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3d99b76e1ca9c67c0cd29bd435759b529d97b348
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602203"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665990"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>逐步解說：匯入自訂主版頁面和網站頁面的映像
   本逐步解說示範如何匯入 SharePoint 自訂主版頁面及擁有影像的網站頁面[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。
@@ -150,13 +150,11 @@ ms.locfileid: "56602203"
 
 2. 在上**選取要匯入項目**頁面的 [**模組**中**型別**] 欄中，選取核取方塊只會將檔案匯入表中。
 
-
    | 檔案名稱 | 描述 |
    |------------------------|-----------------------------------------------|
    | \_catalogsmasterpage\_ | 自訂主版頁面。 |
    | images_ | 在 SharePoint 檔案系統映像檔。 |
    | SitePages_ | [網站] 頁面中。 |
-
 
 3. 選擇**完成**匯入選取的項目 按鈕。
 

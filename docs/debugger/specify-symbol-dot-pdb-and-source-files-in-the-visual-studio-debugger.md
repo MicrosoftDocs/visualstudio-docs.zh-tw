@@ -28,14 +28,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9997601d906ac3be7c3eaf789a0d31e19dae613
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 32c96bf9e206a70f5de38459460d8bdcaee571cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681708"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666555"
 ---
-# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio debugger 中指定符號 (.pdb) 和原始程式檔 (C#，c + +、 Visual Basic 中， F#)
+# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio debugger 中指定符號 (.pdb) 和原始程式檔 (C#， C++，Visual Basic 中， F#)
 
 程式資料庫 (*.pdb*) 檔案，也稱為符號檔將識別項對應，並在對應的識別項專案的原始程式碼中的陳述式中及指示編譯應用程式。
 
@@ -76,11 +76,11 @@ ms.locfileid: "56681708"
 
      您可以使用的符號伺服器包括：
 
-     **公用 Microsoft 符號伺服器**： 若要偵錯發生在系統 DLL 或協力廠商程式庫呼叫期間當機，因此您通常需要系統 *.pdb*檔案。 系統 *.pdb*檔案包含 Windows Dll 符號 *.exe*檔案和裝置驅動程式。 您可以取得 Windows 作業系統、 MDAC、 IIS、 ISA、 符號和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]從公用 Microsoft 符號伺服器。
+     **公用 Microsoft 符號伺服器**:若要偵錯發生在系統 DLL 或協力廠商程式庫呼叫期間當機，因此您通常需要系統 *.pdb*檔案。 系統 *.pdb*檔案包含 Windows Dll 符號 *.exe*檔案和裝置驅動程式。 您可以取得 Windows 作業系統、 MDAC、 IIS、 ISA、 符號和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]從公用 Microsoft 符號伺服器。
 
-     **符號伺服器的內部網路或本機電腦上**： 您的小組或公司可以從外部來源建立您自己的產品，以及做為快取符號的符號伺服器。 您的電腦上可能有符號伺服器。
+     **內部網路或本機電腦上的符號伺服器**：您的小組或公司可以為自己的產品建立符號伺服器，以及作為外部來源符號的快取。 您的電腦上可能有符號伺服器。
 
-     **協力廠商符號伺服器**： 的 Windows 應用程式和程式庫的協力廠商提供者可以提供網際網路上的符號伺服器的存取權。
+     **協力廠商符號伺服器**：Windows 應用程式和程式庫的協力廠商提供者可提供對網際網路上符號伺服器的存取。
 
      > [!WARNING]
      > 如果您使用公用 Microsoft 符號伺服器以外的符號伺服器，請確定符號伺服器和它的路徑是值得信任。 由於符號檔可能包含任意可執行程式碼，您可以公開安全性威脅。
@@ -124,7 +124,7 @@ ms.locfileid: "56681708"
    > 請勿將本機符號快取放在受保護的資料夾中，例如 C:\Windows 或子資料夾。 請改用可讀寫的資料夾。
 
    > [!NOTE]
-   > C + + 專案，如果您有`_NT_SYMBOL_PATH`環境變數的集合，則會覆寫下設定的值**快取此目錄中的符號**。
+   > 針對C++專案中，若您有`_NT_SYMBOL_PATH`環境變數的集合，則會覆寫下設定的值**快取此目錄中的符號**。
 
 4. 指定您想要偵錯工具從載入的模組**符號檔 (.pdb) 位置**當它啟動。
 
@@ -140,7 +140,7 @@ ms.locfileid: "56681708"
 
 - **載入 DLL 匯出 (僅限原生)**
 
-  載入 DLL 匯出表 C/c + +。 如需詳細資訊，請參閱 < [DLL 匯出表](#use-dumpbin-exports)。 讀取 DLL 匯出資訊會涉及一些額外負荷，因此載入匯出資料表預設關閉。 您也可以使用`dumpbin /exports`C/c + + 建置命令列中。
+  載入 DLL 匯出表適用於 C /C++。 如需詳細資訊，請參閱 < [DLL 匯出表](#use-dumpbin-exports)。 讀取 DLL 匯出資訊會涉及一些額外負荷，因此載入匯出資料表預設關閉。 您也可以使用`dumpbin /exports`在 C /C++建置命令列。
 
 - **啟用位址層級偵錯**和**顯示反組譯如果來源無法使用**
 
@@ -155,7 +155,7 @@ ms.locfileid: "56681708"
   您可以限制命令的*srcsrv.dll*可以從應用程式的執行 *.pdb*列出允許的命令，在名為的檔案*srcsrv.ini*。 地方*srcsrv.ini*相同的資料夾中的檔案*srcsrv.dll*並*devenv.exe*。
 
   >[!IMPORTANT]
-  >在應用程式的可內嵌任意命令 *.pdb*檔案中，因此請務必將只有您想要執行的命令*srcsrv.ini*檔案。 嘗試執行 *srcsvr.ini* 檔案中未包含的任何命令，會讓確認對話方塊出現。 如需詳細資訊，請參閱 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。
+  >在應用程式的可內嵌任意命令 *.pdb*檔案中，因此請務必將只有您想要執行的命令*srcsrv.ini*檔案。 嘗試執行 *srcsvr.ini* 檔案中未包含的任何命令，會讓確認對話方塊出現。 如需詳細資訊，請參閱[安全性警告：偵錯工具必須執行未受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。
   >
   >由於不會對命令參數進行任何驗證，因此請謹慎使用受信任的命令。 例如，如果您列出*cmd.exe*中您*srcsrv.ini*，惡意使用者可能在上指定參數*cmd.exe*這會讓它危險。
 
@@ -165,19 +165,19 @@ ms.locfileid: "56681708"
 
 ## <a name="compiler-symbol-options"></a>編譯器符號選項
 
-當您從 Visual Studio IDE 與標準，會在建置專案時**偵錯**組建組態時，c + + 和 managed 的編譯器建立您的程式碼的適當的符號檔。 您也可以在程式碼中設定編譯器選項。
+當您從 Visual Studio IDE 與標準，會在建置專案時**偵錯**組建組態，C++和 managed 的編譯器會建立您的程式碼的適當的符號檔。 您也可以在程式碼中設定編譯器選項。
 
 ### <a name="cc-options"></a>C/C++ 選項
 
 - *VC\<x >.pdb*並*\<專案 >.pdb*檔案
 
-  A *.pdb*檔案，當您使用建置時，會建立 C/c + + [/ZI 或 /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format)。 在  [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，則[/Fd](/cpp/build/reference/fd-program-database-file-name)選項名稱 *.pdb*編譯器會建立的檔案。 當您建立的專案中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]使用 IDE **/Fd**選項設定為建立 *.pdb*檔案命名為*\<專案 >.pdb*。
+  A *.pdb*適用於 C 的檔案 /C++您使用建置時，會建立[/ZI](/cpp/build/reference/z7-zi-zi-debug-information-format)。 在  [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，則[/Fd](/cpp/build/reference/fd-program-database-file-name)選項名稱 *.pdb*編譯器會建立的檔案。 當您建立的專案中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]使用 IDE **/Fd**選項設定為建立 *.pdb*檔案命名為*\<專案 >.pdb*。
 
-  如果您建置 C/c + + 應用程式使用 makefile，且您指定 **/ZI**或是 **/Zi**不用 **/Fd**，編譯器會建立兩個 *.pdb*檔案：
+  如果您要建置您的 C /C++使用 makefile，和您的應用程式指定 **/ZI**或 **/Zi**不用 **/Fd**，編譯器會建立兩個 *.pdb*檔案：
 
   - *VC\<x>.pdb*，其中 *\<x>* 代表 Visual C++ 的版本，例如 *VC11.pdb*
 
-    *VC\<x >.pdb*檔案會儲存個別物件檔案的所有偵錯資訊，並且位在與專案 makefile 相同的目錄中。 每次建立物件檔時，C/c + + 編譯器會將合併到偵錯資訊*VC\<x >.pdb*。 因此，即使每個原始程式檔包含了常見的標頭檔這類 *\<windows.h >*，這些標頭檔的 typedef 也會儲存一次，而非每個目的檔中。 插入的資訊包括類型資訊，但是不包括符號資訊 (例如函式定義)。
+    *VC\<x >.pdb*檔案會儲存個別物件檔案的所有偵錯資訊，並且位在與專案 makefile 相同的目錄中。 每次它會建立一個物件檔案，C /C++編譯器會將偵錯資訊合併*VC\<x >.pdb*。 因此，即使每個原始程式檔包含了常見的標頭檔這類 *\<windows.h >*，這些標頭檔的 typedef 也會儲存一次，而非每個目的檔中。 插入的資訊包括類型資訊，但是不包括符號資訊 (例如函式定義)。
 
   - *\<project>.pdb*
 
@@ -213,7 +213,7 @@ ms.locfileid: "56681708"
 1. 在 [**模組**] 視窗中，以滑鼠右鍵按一下**符號狀態**或**符號檔**標頭或任何模組。
 1. 在操作功能表中，選取下列選項之一：
 
-|選項|說明|
+|選項|描述|
 |------------|-----------------|
 |**載入符號**|會出現以略過、 找不到或未載入符號的模組。 嘗試從指定的位置載入符號**選項** > **偵錯** > **符號**頁面。 如果找不到或未載入符號檔，會啟動**檔案總管**以便您可以指定要搜尋的新位置。|
 |**符號載入資訊**|顯示檔案的位置載入的符號或偵錯工具找不到檔案時所搜尋的位置。|
@@ -259,7 +259,6 @@ ms.locfileid: "56681708"
 1. 底下**不會尋找這些原始程式檔**，輸入要排除搜尋原始程式檔的名稱。
 
 1. 選取  **確定**或是**套用**。
-
 
 ## <a name="see-also"></a>另請參閱
 - [了解符號檔和 Visual Studio 符號設定](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)

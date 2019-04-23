@@ -9,16 +9,15 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: e21fdbd55ddfe6088a6b8a7ff4127a05b1fa4ce1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d847d4dcd4ae2edd799c282d43ec717ca8ae0a71
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791962"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663501"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>變更記錄 (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Visual Studio Tools for Unity 變更記錄。
 

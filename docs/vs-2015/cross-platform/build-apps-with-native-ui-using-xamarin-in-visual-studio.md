@@ -8,16 +8,15 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9ad50aea8da784d05f3852860186bb029e67a54
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 2352f32b36ab7b2973897599be1fd29859fafc17
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954104"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665684"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 在您完成[設定與安裝](../cross-platform/setup-and-install.md)和[驗證您的 Xamarin 環境](../cross-platform/verify-your-xamarin-environment.md)中的步驟之後，本逐步解說將示範如何建立具有原生 UI 層的基本 Xamarin 應用程式 (如下所示)。 使用原生 UI，共用程式碼會位於可攜式類別庫 (PCL) 中，而個別的平台專案會包含 UI 定義。
 
@@ -519,7 +518,7 @@ ms.locfileid: "56954104"
 
 2.  選取適當的裝置或模擬器目標，然後按 F5 鍵以啟動應用程式。
 
-3.  在裝置上或模擬器中，於編輯方塊中輸入有效的美國郵遞區號 (例如：60601)，然後按 [Get Weather]\(獲知天氣)。 該地區的天氣資料隨即會顯示在控制項中。
+3.  在裝置或模擬器中，則將有效的美國郵遞區號輸入編輯方塊 (例如：60601)，然後按**獲知天氣**。 該地區的天氣資料隨即會顯示在控制項中。
 
      ![Android 及 Windows Phone 的氣象應用程式](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -625,7 +624,7 @@ ms.locfileid: "56954104"
 
 2.  按 F5 鍵以啟動應用程式。
 
-3.  在 Windows Phone 模擬器中，於編輯方塊中輸入有效的美國郵遞區號輸入 (例如：60601)，然後按 [Get Weather]\(獲知天氣)。 該地區的天氣資料隨即會顯示在控制項中。
+3.  在 Windows Phone 模擬器中，輸入有效的美國郵遞區號編輯方塊 (例如：60601)，然後按**獲知天氣**。 該地區的天氣資料隨即會顯示在控制項中。
 
      ![執行中應用程式的 Windows 版本](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
@@ -643,5 +642,5 @@ ms.locfileid: "56954104"
 
  PCL 中的共用程式碼是非平台相關的，因為 PCL 只編譯一次，並隨附於每個平台專屬的應用程式封裝中。 如果您想要撰寫共用程式碼，以使用條件式編譯來隔離平台專屬的程式碼，您可以使用「共用」專案。 如需詳細資訊，請參閱[程式碼共用選項 (英文)](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [Xamarin 開發人員網站](http://developer.xamarin.com/) [Windows 開發人員中心](https://dev.windows.com/en-us) [Swift 和C#快速參考海報](https://aka.ms/scposter)

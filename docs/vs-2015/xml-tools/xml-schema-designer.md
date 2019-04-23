@@ -9,17 +9,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe81190bca91aba4655e551026458c9047739d66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f25af22d97b1a564f97120e462cee8ca3fee37e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944806"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669168"
 ---
 # <a name="xml-schema-designer"></a>XML 結構描述設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 結構描述設計工具 (XSD 設計工具) 是一種圖形化工具，可讓您視覺化不同抽象概念層級的結構描述集合。 下列是 XSD 設計工具的主要元件：    
   
 -   [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)可讓您瀏覽和巡覽 XML 結構描述樹狀目錄並執行搜尋。  

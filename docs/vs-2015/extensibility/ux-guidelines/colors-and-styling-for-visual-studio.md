@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3b32779fe2d852e21eacf888e7b2326830fa9829
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 10d0ada1ba86f57b9b40a40b6ffc560379d411dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940368"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670091"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>色彩和樣式設定適用於 Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,6 @@ ms.locfileid: "58940368"
 |您有個別的功能的群組，並針對類似的項目沒有共用的色彩。|**自訂色彩**|特定的區域並不是用來與其他 UI 共用的色彩語彙基元名稱|
 |您想要允許使用者在自訂 UI 或內容 （例如，針對在文字編輯器或特製化的設計工具視窗）。|**使用者自訂**<br /><br /> **(工具 > [選項] 對話方塊)**|「 字型和色彩 」 頁面中定義的設定**工具 > 選項**對話方塊或特製化的一個 UI 功能的特定頁面。|
 
-
 ### <a name="visual-studio-themes"></a>Visual Studio 佈景主題
  Visual Studio 功能的三個不同的色彩佈景主題： 亮色、 暗色，及藍色。 它也會偵測高對比模式中，也就是針對協助工具設計全系統色彩佈景主題。
 
@@ -79,7 +78,6 @@ ms.locfileid: "58940368"
  ![工具&#62;在 Visual Studio 中的 [選項] 對話方塊](../../extensibility/ux-guidelines/media/0301-a-toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")
 
  **工具 > [選項] 對話方塊**
-
 
 ##  <a name="BKMK_TheVSColorService"></a> VSColor Service
  Visual Studio 提供的環境色彩服務，也稱為 VSColor service 或殼層色彩服務。 這項服務可讓您將 UI 元素的色彩值繫結為集，其中包含每個佈景主題色彩的名稱 / 值色彩。 VSColor service 必須用於所有的 UI 項目，以便色彩會自動變更以反映目前的使用者選取主題，並使 UI 繫結至環境色彩服務將與整合新的佈景主題在未來版本的 Visual Studio。

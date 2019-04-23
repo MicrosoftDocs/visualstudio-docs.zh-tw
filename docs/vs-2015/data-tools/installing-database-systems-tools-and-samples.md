@@ -17,17 +17,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0fdaa4937e0053c36e6ba53db9e93ffed9d8a38e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000743"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664783"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>安裝資料庫系統、 工具和範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio 本身不包含任何資料庫系統，除了它會在內部使用。 若要開發 Visual Studio 中連接資料的應用程式，您通常安裝在您的本機開發電腦上的 資料庫系統，然後部署應用程式和資料庫到生產環境時，他們就可以。 可從.NET 應用程式，並會顯示在 Visual Studio 資料工具視窗的資料庫系統，它必須能夠為 ADO.NET 資料提供者。 如果您打算在.NET 應用程式中使用實體資料模型，提供者必須特別支援 Entity Framework。     許多提供者會提供透過 NuGet 套件管理員，或透過 Visual Studio 組件庫。  
   
  適用於 SQL 開發，請確定您有 Visual Studio 中安裝的 SQL Server Data Tools。 按一下 **檢視**功能表。 如果看不到 SQL Server 物件總管 中，移至 控制台 並變更 Visual Studio。 在 安裝程式中，選取**Microsoft SQL Server Data Tools**。  

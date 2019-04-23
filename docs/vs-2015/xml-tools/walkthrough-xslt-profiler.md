@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 003b4ed6407126c7b1b6992c9c99eb30d36379b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939058"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665385"
 ---
 # <a name="walkthrough-xslt-profiler"></a>逐步解說：XSLT 分析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XSLT 分析工具可建立詳細的 XSLT 效能報告，協助您測量、評估並解決 XSLT 程式碼中與效能相關的問題。 XSLT 分析工具包含 XSL 和 XSLT 樣式表最佳化的實用提示。 就需要最大效能的 XSLT 應用程式而言，此工具是非常基本的。  
   
 ## <a name="prerequisites"></a>必要條件  

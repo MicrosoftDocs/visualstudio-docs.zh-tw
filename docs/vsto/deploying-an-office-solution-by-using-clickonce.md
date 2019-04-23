@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.openlocfilehash: 7eb266eda25198f6d270ebcf48086141a73dcb9c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504428"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665450"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 方案
   使用 ClickOnce 只需要幾個步驟就能部署 Office 方案。 如果您發行更新，方案會自動偵測並安裝更新。 不過，ClickOnce 要求您針對電腦上的每個使用者分別安裝方案。 因此，您應該考慮使用 Windows Installer (*.msi*) 如果一個以上的使用者將同一部電腦上執行您的解決方案。
@@ -27,13 +27,13 @@ ms.locfileid: "59504428"
 
 - [發行方案](#Publish)
 
-- [決定您想要將信任授與方案的方式](#Trust)
+- [決定您要授與信任給方案的方式](#Trust)
 
 - [協助使用者安裝方案](#Helping)
 
-- [將方案的文件放置到使用者的電腦上 (僅適用於文件層級自訂)](#Put)
+- [將方案文件放置到終端使用者的電腦 （文件層級自訂）](#Put)
 
-- [將方案的文件放置到執行 SharePoint 的伺服器上 (僅適用於文件層級自訂)](#SharePoint)
+- [將方案文件放置到執行 SharePoint （文件層級自訂） 的伺服器](#SharePoint)
 
 - [建立自訂安裝程式](#Custom)
 
@@ -346,7 +346,6 @@ ms.locfileid: "59504428"
 
  您可以使用以下參數*VSTOinstaller.exe*。
 
-
 | 參數 | 定義 |
 |------------------| - |
 | /Install 或 /I | 安裝方案。 這個選項後面必須接著部署資訊清單的路徑。 您可以指定本機電腦上的路徑，也就是通用命名慣例 (UNC) 檔案共用。 您可以指定本機路徑 (*C:\FolderName\PublishFolder*)，相對路徑 (*發佈\\*)，或完整限定的位置 (*\\\ServerName\FolderName*或 http://<em>ServerName/FolderName</em>)。 |
@@ -461,7 +460,7 @@ ms.locfileid: "59504428"
 
 - [部署 Office 方案](../vsto/deploying-an-office-solution.md)
 - [發行 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [HOW TO：使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [HOW TO：安裝 ClickOnce Office 方案](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
-- [HOW TO：使用 ClickOnce 將文件層級 Office 方案發行到 SharePoint 伺服器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
+- [如何：使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [如何：安裝 ClickOnce Office 方案](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
+- [如何：使用 ClickOnce 將文件層級 Office 方案發行到 SharePoint 伺服器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
 - [建立自訂安裝 ClickOnce office 方案](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)

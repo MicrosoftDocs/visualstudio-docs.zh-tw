@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
-ms.translationtype: MT
+ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366610"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665737"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>在程式碼和文字編輯器中撰寫程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,7 +171,6 @@ Visual Studio 的 [巡覽至] 命令會對程式碼執行焦點式搜尋，協�
     當您輸入時，結果會出現在文字方塊下方的下拉式清單中。
 1. 若要移至項目，請在清單中選擇它。
 
-
 ### <a name="filter-your-search"></a>篩選您的搜尋
 
 若要限制搜尋範圍，以僅限程式碼符號前, 加上以巡覽至 查詢 「\@"字元。 例如，如果您搜尋 `@application`，則 [巡覽至] 只會顯示包含 "application" 這個字的類別。
@@ -191,13 +190,13 @@ Visual Studio 的 [巡覽至] 命令會對程式碼執行焦點式搜尋，協�
 
 -   [Visual Basic 設定](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [使用 Visual Studio 開發環境適用於 C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+-   [使用 C# 的 Visual Studio 開發環境](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
 -   [格式、JavaScript、文字編輯器、選項](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>本節內容  
 
--   [Finding and Replacing Text](../ide/finding-and-replacing-text.md)  
+-   [尋找和取代文字](../ide/finding-and-replacing-text.md)  
 
 -   [編碼與分行符號](../ide/encodings-and-line-breaks.md)  
 
@@ -205,15 +204,15 @@ Visual Studio 的 [巡覽至] 命令會對程式碼執行焦點式搜尋，協�
 
 -   [重構](../ide/refactoring-in-visual-studio.md)  
 
--   [提高產能的秘訣](../ide/productivity-tips-for-visual-studio.md)  
+-   [產能的秘訣](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Using IntelliSense](../ide/using-intellisense.md)  
+-   [使用 IntelliSense](../ide/using-intellisense.md)  
 
 -   [自訂編輯器](../ide/customizing-the-editor.md)  
 
--   [HOW TO：自訂捲軸以追蹤程式碼](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+-   [如何：透過自訂捲軸的方式追蹤程式碼](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [HOW TO：檢視和編輯程式碼使用查看定義 (alt+f12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [如何：使用查看定義 (Alt+F12) 檢視及編輯程式碼](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
 -   [執行燈泡提示的快速動作](../ide/perform-quick-actions-with-light-bulbs.md)  
 

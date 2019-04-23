@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55481b5f91e0bb83241a04d61d1bfa91657b5c0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0bdc530656ef7e7a57b8e637aeca562eb483e0d9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929990"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667621"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>HOW TO：在檢視與 XML 編輯器之間切換
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本主題示範如何在 XML 結構描述設計工具 (XSD 設計工具) 檢視和 XML 編輯器之間切換。 這個範例會使用[採購單結構描述](../xml-tools/sample-xsd-file-simple-schema.md)。  
   
 ### <a name="to-switch-between-the-views-and-the-xml-editor"></a>在檢視與 XML 編輯器之間切換  

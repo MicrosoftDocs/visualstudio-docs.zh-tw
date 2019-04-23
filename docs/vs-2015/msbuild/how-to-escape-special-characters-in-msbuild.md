@@ -14,17 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 291b8a33b5cf8777259be6325be9596bd9dc95e2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d6b10c8f4b2658acc3dd4dfa113c8edd8f1de5b2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834596"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665711"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>如何：在 MSBuild 中逸出特殊字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 某些字元在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔中具有特殊意義。 這些字元範例包括分號 (;) 和星號 (*)。 如需這些特殊字元的完整清單，請參閱 [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)。  
   
  若要使用這些特殊字元做為專案檔中的常值，就必須使用 %*xx* 語法來指定它們，其中 *xx* 代表字元的 ASCII 十六進位值。  

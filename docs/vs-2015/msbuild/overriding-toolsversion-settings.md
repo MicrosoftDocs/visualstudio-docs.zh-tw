@@ -12,17 +12,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e4cd6d3199d09ffa56c0ac6d2d29fcba613fd280
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4402abed4fe7e588355614adaf5f1c689af75ad2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770706"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668232"
 ---
 # <a name="overriding-toolsversion-settings"></a>覆寫 ToolsVersion 設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您可以使用三種方式中的其中一種來變更專案和方案的工具組︰  
   
 1.  從命令列建置專案或方案時，使用 `/ToolsVersion` 切換參數 (或簡寫 `/tv`)  
