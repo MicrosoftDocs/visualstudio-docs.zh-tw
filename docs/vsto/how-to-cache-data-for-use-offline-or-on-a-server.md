@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636511"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094537"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>HOW TO：離線或在伺服器上快取資料以供使用
   您可以將標記資料項目，以快取中的文件，如此就可以使用離線。 這也使得資料可能儲存在伺服器的文件，會由其他程式碼操作文件中。
@@ -36,28 +36,28 @@ ms.locfileid: "56636511"
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>使用程式碼文件中的快取資料
 
-1.  例如在您專案中，主項目類別的成員身分宣告公用欄位或屬性資料項目`ThisDocumen`Word 專案中的 t 類別或`ThisWorkbook`Excel 專案中的類別。
+1. 例如在您專案中，主項目類別的成員身分宣告公用欄位或屬性資料項目`ThisDocumen`Word 專案中的 t 類別或`ThisWorkbook`Excel 專案中的類別。
 
-2.  套用<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>屬性儲存在文件的資料快取的資料項目標記的成員。 下列範例將此屬性套用至欄位宣告<xref:System.Data.DataSet>。
+2. 套用<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>屬性儲存在文件的資料快取的資料項目標記的成員。 下列範例將此屬性套用至欄位宣告<xref:System.Data.DataSet>。
 
      [!code-csharp[Trin_VstcoreDataExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#11)]
      [!code-vb[Trin_VstcoreDataExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#11)]
 
-3.  加入程式碼來建立資料的項目執行個體，如果適用，可從資料庫中載入。
+3. 加入程式碼來建立資料的項目執行個體，如果適用，可從資料庫中載入。
 
      第一次建立時，只載入資料的項目因此，快取會跟著文件，您必須撰寫其他程式碼以更新它。
 
 ### <a name="to-cache-a-dataset-in-the-document-by-using-the-properties-window"></a>若要使用 [屬性] 視窗，快取文件中的資料集
 
-1.  加入專案中的資料集，使用 Visual Studio 設計工具中，比方說，藉由將您的專案使用的資料來源**Zdroje dat**視窗。
+1. 加入專案中的資料集，使用 Visual Studio 設計工具中，比方說，藉由將您的專案使用的資料來源**Zdroje dat**視窗。
 
-2.  如果您還沒沒有帳戶，並在設計工具中選取的執行個體，請建立資料集執行個體。
+2. 如果您還沒沒有帳戶，並在設計工具中選取的執行個體，請建立資料集執行個體。
 
-3.  在 **屬性**視窗中，將**CacheInDocument**屬性設**True**。
+3. 在 **屬性**視窗中，將**CacheInDocument**屬性設**True**。
 
      如需詳細資訊，請參閱 < [Properties in Office Projects](../vsto/properties-in-office-projects.md)。
 
-4.  在 **屬性**視窗中，將**修飾詞**屬性設**公用**(根據預設，它是**內部**)。
+4. 在 **屬性**視窗中，將**修飾詞**屬性設**公用**(根據預設，它是**內部**)。
 
 ## <a name="see-also"></a>另請參閱
 - [快取資料](../vsto/caching-data.md)

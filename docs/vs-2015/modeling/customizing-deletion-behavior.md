@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 252892286cf181c9d91e3bec842aa1e90d483b22
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d22db963f895c4ca53a44e20bc0babd0dff49853
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940830"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107580"
 ---
 # <a name="customizing-deletion-behavior"></a>自訂刪除行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,34 +27,34 @@ ms.locfileid: "58940830"
   
  本主題包含下列章節：  
   
--   [預設刪除行為](#default)  
+- [預設刪除行為](#default)  
   
--   [設定角色的 [傳播刪除] 選項](#property)  
+- [設定角色的 [傳播刪除] 選項](#property)  
   
--   [覆寫刪除關閉](#closure)– 使用這項技術，其中刪除可能會導致刪除相鄰項目。  
+- [覆寫刪除關閉](#closure)– 使用這項技術，其中刪除可能會導致刪除相鄰項目。  
   
--   [使用 OnDeleting 和 OnDeleted](#ondeleting) – 使用這些方法在回應可能包括其他動作，例如更新值的內部或外部存放區的位置。  
+- [使用 OnDeleting 和 OnDeleted](#ondeleting) – 使用這些方法在回應可能包括其他動作，例如更新值的內部或外部存放區的位置。  
   
--   [刪除規則](#rules)– 使用規則來傳播任何類型內的存放區，其中一項變更可能會導致其他人的更新。  
+- [刪除規則](#rules)– 使用規則來傳播任何類型內的存放區，其中一項變更可能會導致其他人的更新。  
   
--   [刪除事件](#rules)– 使用市集事件將外部存放區，例如與其他的更新傳播至[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]文件。  
+- [刪除事件](#rules)– 使用市集事件將外部存放區，例如與其他的更新傳播至[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]文件。  
   
--   [取消合併](#unmerge)– 用以取消合併作業復原將子項目連結到其父系的合併作業。  
+- [取消合併](#unmerge)– 用以取消合併作業復原將子項目連結到其父系的合併作業。  
   
-##  <a name="default"></a> 預設刪除行為  
+## <a name="default"></a> 預設刪除行為  
  根據預設，下列規則管理刪除傳播：  
   
--   如果刪除了某個項目，也會刪除所有內嵌的項目。 內嵌的項目為內嵌關聯性的目標，而內嵌關聯性的來源是此項目。 比方說，如果沒有從內嵌關聯性**專輯**要**歌曲**，則也會刪除特定 Album 時，所有 Song 都刪除。  
+- 如果刪除了某個項目，也會刪除所有內嵌的項目。 內嵌的項目為內嵌關聯性的目標，而內嵌關聯性的來源是此項目。 比方說，如果沒有從內嵌關聯性**專輯**要**歌曲**，則也會刪除特定 Album 時，所有 Song 都刪除。  
   
      相反地，刪除 Song 卻不會刪除 Album。  
   
--   根據預設，刪除不會沿著參考關聯性傳播。 如果有參考關聯性**ArtistPlaysOnAlbum**從**專輯**來**演出者**、 刪除 album 不會刪除任何相關的 artist，和刪除 artist 不刪除任何 album。  
+- 根據預設，刪除不會沿著參考關聯性傳播。 如果有參考關聯性**ArtistPlaysOnAlbum**從**專輯**來**演出者**、 刪除 album 不會刪除任何相關的 artist，和刪除 artist 不刪除任何 album。  
   
      不過，刪除確實會沿著某些內建關聯性傳播。 例如，刪除某個模型項目時，也會刪除它在圖表上的圖形。 項目與圖形因 `PresentationViewsSubject` 參考關聯性而彼此相關。  
   
--   每個連接到項目 (無論位於來源或目標角色) 的關聯性都會被刪除。 位於相反角色之項目的角色屬性將不再包含刪除的項目。  
+- 每個連接到項目 (無論位於來源或目標角色) 的關聯性都會被刪除。 位於相反角色之項目的角色屬性將不再包含刪除的項目。  
   
-##  <a name="property"></a> 設定角色的 [傳播刪除] 選項  
+## <a name="property"></a> 設定角色的 [傳播刪除] 選項  
  您可以讓刪除沿著參考關聯性傳播，或是從內嵌子系傳播到其父系。  
   
 #### <a name="to-set-delete-propagation"></a>設定刪除傳播  
@@ -67,9 +67,9 @@ ms.locfileid: "58940830"
   
 3. 按 F5 並確認：  
   
-   -   刪除此關聯性的執行個體時，也會刪除位於所選角色的項目。  
+   - 刪除此關聯性的執行個體時，也會刪除位於所選角色的項目。  
   
-   -   刪除位於相反角色的項目時，將會刪除此關聯性的執行個體，而且會刪除位於此角色的相關項目。  
+   - 刪除位於相反角色的項目時，將會刪除此關聯性的執行個體，而且會刪除位於此角色的相關項目。  
   
    您也可以查看**傳播刪除**選項**DSL 詳細資料**視窗。 選取網域類別，並在 [DSL 詳細資料] 視窗中，開啟**刪除時的行為**按一下旁邊的視窗按鈕的頁面。 **傳播**選項會顯示每個關聯性的相反角色。 **刪除 Style**資料行會指出是否**傳播**選項的預設值，但它並沒有任何個別的作用。  
   
@@ -79,14 +79,14 @@ ms.locfileid: "58940830"
 > [!NOTE]
 >  若要加入您的 DSL 定義中的程式碼，請建立不同的程式碼檔案中**Dsl**專案，並撰寫部分定義以擴大 Generated Code 資料夾中的類別。 如需詳細資訊，請參閱 <<c0> [ 來自訂特定領域語言撰寫的程式碼](../modeling/writing-code-to-customise-a-domain-specific-language.md)。  
   
-##  <a name="closure"></a> 定義刪除關閉  
+## <a name="closure"></a> 定義刪除關閉  
  刪除作業使用類別_YourModel_**DeleteClosure**來判斷要刪除，請提供初始選擇的項目。 它重複呼叫 `ShouldVisitRelationship()` 和 `ShouldVisitRolePlayer()`，查核關聯性的圖形。 您可以覆寫這些方法。 ShouldVisitRolePlayer 隨附於連結的識別以及位於其中一個連結之角色的項目。 它應傳回下列其中一個值：  
   
--   **VisitorFilterResult.Yes**– 應刪除的項目，並查核器應繼續嘗試該項目的其他連結。  
+- **VisitorFilterResult.Yes**– 應刪除的項目，並查核器應繼續嘗試該項目的其他連結。  
   
--   **VisitorFilterResult.DoNotCare** – 應刪除的項目，除非另一個查詢回覆應刪除。  
+- **VisitorFilterResult.DoNotCare** – 應刪除的項目，除非另一個查詢回覆應刪除。  
   
--   **VisitorFilterResult.Never** – 刪除該項目必須不，即使另一個查詢回答**是**，並查核器不應該嘗試該項目的其他連結。  
+- **VisitorFilterResult.Never** – 刪除該項目必須不，即使另一個查詢回答**是**，並查核器不應該嘗試該項目的其他連結。  
   
 ```  
 // When a musician is deleted, delete their albums with a low rating.  
@@ -132,7 +132,7 @@ partial class MusicLibDeleteClosure
   
  不過，此技術假設刪除僅影響關聯性圖形中的相鄰項目：您無法使用此方法刪除模型另一個部分中的項目。 如果您要加入項目或是進行其他變更以回應刪除，則無法使用它。  
   
-##  <a name="ondeleting"></a> 使用 OnDeleting 和 OnDeleted  
+## <a name="ondeleting"></a> 使用 OnDeleting 和 OnDeleted  
  您可以在網域類別或網域關聯性中覆寫 `OnDeleting()` 或 `OnDeleted()`。  
   
 1. 當項目即將被刪除時會呼叫 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>，但是會在中斷連接其關聯性之前呼叫。 仍然可以在其他項目中來回巡覽它，而它也仍然在 `store.ElementDirectory` 中。  
@@ -199,16 +199,16 @@ partial class Artist
   
  當您對某個項目執行 <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> 時，將會呼叫 OnDeleting 和 OnDeleted。 這些方法不會一律都內嵌執行，也就是不會在實際刪除前後立即執行。 如果您的程式碼刪除兩個或多個項目，將會在所有項目上輪流呼叫 OnDeleting 和 OnDeleted。  
   
-##  <a name="rules"></a> 刪除規則和事件  
+## <a name="rules"></a> 刪除規則和事件  
  OnDelete 處理常式的替代方法是，您可以定義刪除規則和刪除事件。  
   
-1.  **正在刪除**並**刪除**只在交易中，而不是在復原或取消復原，會觸發規則。 您可以將它們排入佇列，在進行刪除的異動結尾處執行規則。 Deleting 規則的執行一律會早於在佇列中的任何 Deleted 規則。  
+1. **正在刪除**並**刪除**只在交易中，而不是在復原或取消復原，會觸發規則。 您可以將它們排入佇列，在進行刪除的異動結尾處執行規則。 Deleting 規則的執行一律會早於在佇列中的任何 Deleted 規則。  
   
      請使用規則來傳播僅影響市集中項目的變更，包括關聯性、圖表項目及其屬性。 一般而言，Deleting 規則用來傳播刪除，而 Delete 規則用來建立取代項目和關聯性。  
   
      如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。  
   
-2.  **刪除**存放區事件結尾的交易，叫用，並在復原或取消復原後呼叫。 因此可以使用它來傳播刪除到市集外的物件，如 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的檔案、資料庫項目或其他物件。  
+2. **刪除**存放區事件結尾的交易，叫用，並在復原或取消復原後呼叫。 因此可以使用它來傳播刪除到市集外的物件，如 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的檔案、資料庫項目或其他物件。  
   
      如需詳細資訊，請參閱 <<c0> [ 事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  
   
@@ -289,7 +289,7 @@ partial class NestedShapesSampleDocData
   
 ```  
   
-##  <a name="unmerge"></a> 取消合併  
+## <a name="unmerge"></a> 取消合併  
  將子項目附加至其父代作業稱為*合併*。 從工具箱建立一個或一組新項目，從模型的另一個部分移動一個或一組新項目，或是從剪貼簿複製一個或一組新項目時，就會發生該動作。 除了在父系與其新子系之間建立和內嵌關聯性之外，合併作業還可以設定其他關聯性、建立輔助項目，以及在項目中設定屬性值。 合併作業封裝在項目合併指示詞 (EMD) 中。  
   
  EMD 也封裝補充*取消合併*或`MergeDisconnect`作業。 如果您有使用合併所建構的項目叢集，而且您想要使其餘的項目保持一致的狀態，建議您使用相關聯的取消合併從中移除項目。 取消合併作業通常會使用先前的章節所述的技巧。  

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3118ce72cd75baaf15fc66eedc5f2cd48c6f43d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096591"
 ---
 # <a name="making-custom-projects-version-aware"></a>讓自訂專案成為版本感知
 在自訂專案系統中，您可以允許在多個版本的 Visual Studio 中載入該類型的專案。 您也可以防止舊版本的 Visual Studio 中載入該類型的專案。 您也可以讓該專案能夠向較新版本識別自己，以防專案需要修復、轉換或取代。  
@@ -24,17 +24,17 @@ ms.locfileid: "58940831"
   
  您身為專案系統的作者，實作 `UpgradeProject_CheckOnly` (從 `IVsProjectUpgradeViaFactory4` 介面) 為專案系統的使用者提供升級檢查。 當使用者開啟專案時，會呼叫這個方法來判斷專案是否必須在載入之前修復。 可能需要升級的情況列舉在 `VSPUVF_REPAIRFLAGS`中，其中包括下列可能性：  
   
-1.  `SPUVF_PROJECT_NOREPAIR`：不需要修復。  
+1. `SPUVF_PROJECT_NOREPAIR`：不需要修復。  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`：沒有您可能會遇到問題與產品舊版本，使專案與舊版相容。  
+2. `VSPUVF_PROJECT_SAFEREPAIR`：沒有您可能會遇到問題與產品舊版本，使專案與舊版相容。  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`：使專案，與舊版相容，但有一些風險可能遭遇的問題與舊版產品。 例如，專案如果相依於不同的 SDK 版本，它將不相容。  
+3. `VSPUVF_PROJECT_UNSAFEREPAIR`：使專案，與舊版相容，但有一些風險可能遭遇的問題與舊版產品。 例如，專案如果相依於不同的 SDK 版本，它將不相容。  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`：使專案與較早的版本不相容。  
+4. `VSPUVF_PROJECT_ONEWAYUPGRADE`：使專案與較早的版本不相容。  
   
-5.  `VSPUVF_PROJECT_INCOMPATIBLE`：表示目前的版本不支援此專案。  
+5. `VSPUVF_PROJECT_INCOMPATIBLE`：表示目前的版本不支援此專案。  
   
-6.  `VSPUVF_PROJECT_DEPRECATED`：表示已不再支援此專案。  
+6. `VSPUVF_PROJECT_DEPRECATED`：表示已不再支援此專案。  
   
 > [!NOTE]
 >  為了避免混淆，在設定升級旗標時請不要合併它們。 例如，不要建立模稜兩可的升級狀態，例如 `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`。  
@@ -49,18 +49,18 @@ ms.locfileid: "58940831"
   
  以下範例可協助彙總使用者體驗到的相容性。 如果專案是在較早的版本建立，而目前版本判斷需要升級的話，Visual Studio 會顯示對話方塊，向使用者要求進行變更的權限。 如果使用者同意，便會修改專案，然後載入它。 如果方案接著關閉並在較早的版本重新開啟，單向升級的專案將會不相容且不會載入。 如果專案有只需要修復 (而非升級)，則修復後的專案仍會在兩個版本中開啟。  
   
-##  <a name="BKMK_Incompat"></a> 標示為不相容的專案  
+## <a name="BKMK_Incompat"></a> 標示為不相容的專案  
  您可以將專案標記為與舊版 Visual Studio 不相容。  例如，假設您建立一個使用 .NET Framework 4.5 功能的專案。 因為無法在 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]建置此專案，您可以將它標記為不相容，以避免該版本嘗試載入它。  
   
  加入不相容功能的元件要負責將專案標記為不相容。 元件必須能夠存取代表相關專案的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 介面。  
   
 #### <a name="to-mark-a-project-as-incompatible"></a>將專案標記為不相容  
   
-1.  在元件中，從全域服務 SVsSolution 取得 `IVsAppCompat` 介面。  
+1. 在元件中，從全域服務 SVsSolution 取得 `IVsAppCompat` 介面。  
   
      如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>。  
   
-2.  在元件中，呼叫 `IVsAppCompat.AskForUserConsentToBreakAssetCompat`，並傳遞 `IVsHierarchy` 介面的陣列給它，這些介面代表相關的專案。  
+2. 在元件中，呼叫 `IVsAppCompat.AskForUserConsentToBreakAssetCompat`，並傳遞 `IVsHierarchy` 介面的陣列給它，這些介面代表相關的專案。  
   
      此方法具有下列簽章：  
   
@@ -74,9 +74,9 @@ ms.locfileid: "58940831"
     > [!WARNING]
     >  在最常見的情況下， `IVsHierarchy` 陣列將只包含一個項目。  
   
-3.  如果 `AskForUserConsentToBreakAssetCompat` 傳回 `S_OK`，元件會標記或接受中斷相容性的變更。  
+3. 如果 `AskForUserConsentToBreakAssetCompat` 傳回 `S_OK`，元件會標記或接受中斷相容性的變更。  
   
-4.  在您的元件中，為您要標記為不相容的每個專案呼叫 `IVsAppCompat.BreakAssetCompatibility` 方法。 元件可以將參數 `lpszMinimumVersion` 的值設為特定的最小版本，而不需讓 Visual Studio 查閱登錄中的目前版本字串。 這個方法會降低未來根據當時在登錄中的內容，不小心設定較高值的風險。 如果已設定該較高的值，則 Visual Studio 無法開啟專案。  
+4. 在您的元件中，為您要標記為不相容的每個專案呼叫 `IVsAppCompat.BreakAssetCompatibility` 方法。 元件可以將參數 `lpszMinimumVersion` 的值設為特定的最小版本，而不需讓 Visual Studio 查閱登錄中的目前版本字串。 這個方法會降低未來根據當時在登錄中的內容，不小心設定較高值的風險。 如果已設定該較高的值，則 Visual Studio 無法開啟專案。  
   
      此方法具有下列簽章：  
   
@@ -133,21 +133,21 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  例如，如果專為 `UpgradeProject_CheckOnly` SP1 專案系統撰寫的 `CreateProject` 和 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 方法會檢查專案檔案，並發現 `<MinimumVisualStudioVersion>` 組建屬性為 "11.0"，則 Visual Studio 2010 SP1 便不會載入專案。 此外， **方案導覽** 會表示專案「不相容」，且不會載入它。  
   
-##  <a name="BKMK_UpgradeLogger"></a> 升級的記錄器  
+## <a name="BKMK_UpgradeLogger"></a> 升級的記錄器  
  對 `IVsProjectUpgradeViaFactory::UpgradeProject` 的呼叫包含 `IVsUpgradeLogger` 記錄器，專案系統和類別應該使用它來提供詳細的升級追蹤，以進行疑難排解。 如果記錄了警告或錯誤，Visual Studio 會顯示升級報表。  
   
  當您寫入升級記錄器時，請考慮下列指導方針：  
   
--   在所有專案都完成升級後，Visual Studio 會呼叫 Flush。 請不要在您的專案系統中呼叫。  
+- 在所有專案都完成升級後，Visual Studio 會呼叫 Flush。 請不要在您的專案系統中呼叫。  
   
--   LogMessage 函式具有下列 ErrorLevel：  
+- LogMessage 函式具有下列 ErrorLevel：  
   
-    -   0 適用於任何您想要追蹤的資訊。  
+    - 0 適用於任何您想要追蹤的資訊。  
   
-    -   1 適用於警告。  
+    - 1 適用於警告。  
   
-    -   2 適用於錯誤。  
+    - 2 適用於錯誤。  
   
-    -   3 適用於報表格式器。 升級您的專案時，記錄單字 “Converted” 一次，且不要將它當地語系化。  
+    - 3 適用於報表格式器。 升級您的專案時，記錄單字 “Converted” 一次，且不要將它當地語系化。  
   
--   如果專案不需要任何修復或升級時，則唯有專案系統已在 UpgradeProject_CheckOnly 或 UpgradeProjectFlavor_CheckOnly 方法期間記錄警告或錯誤時，Visual Studio 才會產生記錄檔。
+- 如果專案不需要任何修復或升級時，則唯有專案系統已在 UpgradeProject_CheckOnly 或 UpgradeProjectFlavor_CheckOnly 方法期間記錄警告或錯誤時，Visual Studio 才會產生記錄檔。

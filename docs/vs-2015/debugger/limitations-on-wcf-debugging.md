@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b42eecb5c620e911e448728678781ee32ccb5ca0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3faa57a0a2ca413898364c2d4ad1891df85f1ce8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095096"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 偵錯的限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "58942457"
 ## <a name="limitations-on-stepping-into-a-service"></a>逐步執行服務的限制  
  若要從您要進行偵錯的用戶端應用程式逐步執行服務，則必須符合下列條件：  
   
--   用戶端必須使用同步用戶端物件呼叫服務。  
+- 用戶端必須使用同步用戶端物件呼叫服務。  
   
--   協定作業不可以是單向的。  
+- 協定作業不可以是單向的。  
   
--   如果伺服器非同步，您就無法在服務內部執行程式碼時檢視完整的呼叫堆疊。  
+- 如果伺服器非同步，您就無法在服務內部執行程式碼時檢視完整的呼叫堆疊。  
   
--   您必須在 app.config 或 Web.config 檔案中使用下列程式碼啟用偵錯：  
+- 您必須在 app.config 或 Web.config 檔案中使用下列程式碼啟用偵錯：  
   
     ```  
     <system.web>  
@@ -62,13 +62,13 @@ ms.locfileid: "58942457"
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>自動附加至服務的限制  
  自動附加至服務具有下列限制：  
   
--   服務必須是您要偵錯之 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案的一部分。  
+- 服務必須是您要偵錯之 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案的一部分。  
   
--   服務必須已裝載。 服務可以是網站專案 (檔案系統和 HTTP)、Web 應用程式專案 (檔案系統和 HTTP)，或 WCF 服務庫專案的一部分。 WCF 服務庫專案可以是服務庫或工作流程服務庫。  
+- 服務必須已裝載。 服務可以是網站專案 (檔案系統和 HTTP)、Web 應用程式專案 (檔案系統和 HTTP)，或 WCF 服務庫專案的一部分。 WCF 服務庫專案可以是服務庫或工作流程服務庫。  
   
--   服務必須從 WCF 用戶端叫用。  
+- 服務必須從 WCF 用戶端叫用。  
   
--   您必須在 app.config 或 Web.config 檔案中使用下列程式碼啟用偵錯：  
+- 您必須在 app.config 或 Web.config 檔案中使用下列程式碼啟用偵錯：  
   
     ```  
     <system.web>  

@@ -25,14 +25,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fde858615894967dea83239388925851f342c3aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 193afeddd553dfda54de568c92b4697e3f1a2a93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781030"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095538"
 ---
-# <a name="how-to-manage-editor-modes"></a>如何：管理編輯器模式
+# <a name="how-to-manage-editor-modes"></a>HOW TO：管理編輯器模式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以用各種不同的顯示模式顯示 Visual Studio 程式碼編輯器。  
@@ -45,27 +45,27 @@ ms.locfileid: "54781030"
   
 #### <a name="to-enable-full-screen-mode"></a>啟用全螢幕模式  
   
--   按 ALT+SHIFT+ENTER 來進入或結束 [全螢幕] 模式。  
+- 按 ALT+SHIFT+ENTER 來進入或結束 [全螢幕] 模式。  
   
      -或-  
   
--   在 [命令] 視窗中發出命令 `View.Fullscreen`。  
+- 在 [命令] 視窗中發出命令 `View.Fullscreen`。  
   
 ## <a name="enabling-virtual-space-mode"></a>啟用虛擬空間模式  
  在 [虛擬空間] 模式中，會在每一行程式碼的結尾插入空格。 選取這個選項，可在程式碼旁邊一致的位置上放置註解。  
   
 #### <a name="to-enable-virtual-space-mode"></a>啟用虛擬空間模式  
   
-1.  選取 [工具] 功能表上的 [選項]。  
+1. 選取 [工具] 功能表上的 [選項]。  
   
-2.  展開 [文字編輯器] 資料夾，然後選擇 [所有語言] 全域設定此選項，或選擇特定語言的資料夾。 (例如，若只要在 Visual Basic 中開啟行號，請選擇 [基本]、[文字編輯器] 選項)。  
+2. 展開 [文字編輯器] 資料夾，然後選擇 [所有語言] 全域設定此選項，或選擇特定語言的資料夾。 (例如，若只要在 Visual Basic 中開啟行號，請選擇 [基本]、[文字編輯器] 選項)。  
   
-3.  選取 [一般] 選項，然後在 [設定] 下選取 [啟用虛擬空間]。  
+3. 選取 [一般] 選項，然後在 [設定] 下選取 [啟用虛擬空間]。  
   
     > [!NOTE]
     >  在 [資料行選取] 模式中會啟用 [虛擬空間]。 未啟用 [虛擬空間] 模式時，插入點會從一行結尾直接移到下一行的第一個字元。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂編輯器](../ide/customizing-the-editor.md)   
- [如何：排列和固定視窗](../misc/how-to-arrange-and-dock-windows.md)   
+ [如何：排列和停駐 Windows](../misc/how-to-arrange-and-dock-windows.md)   
  [選項對話方塊、環境、字型和色彩](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

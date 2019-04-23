@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 36fc5dd306782779f553d4144c272c91c7e0f0af
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 4e7f99f646d2a93878ec0a78f75cdc6ae1fb0d1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095681"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單的資料應用程式
 
-建立應用程式來管理資料庫中的資料時，您會執行基本工作，例如定義連接字串、插入資料及執行預存程序。 您可以依照本主題，了解如何藉由使用視覺效果進行互動的簡單 Windows Form 「 資料表單 」 應用程式中將資料庫從C#或 Visual Basic 和 ADO.NET。  所有的.NET 資料技術，包括資料集，LINQ to SQL 和 Entity Framework，最後執行非常類似於本文中所示的步驟。
+建立應用程式來管理資料庫中的資料時，您會執行基本工作，例如定義連接字串、插入資料及執行預存程序。 遵循本主題，您可以探索如何使用 Visual C# 或 Visual Basic 和 ADO.NET 與簡單的 Windows Forms 「 資料表單 」 應用程式內的資料庫互動。  所有的.NET 資料技術，包括資料集，LINQ to SQL 和 Entity Framework，最後執行非常類似於本文中所示的步驟。
 
 這篇文章示範簡單的方式，以快速的方式取得資料庫中的資料。 如果您的應用程式需要非一般的方式修改資料，並更新資料庫，您應該考慮使用 Entity Framework，並使用資料繫結至自動同步處理使用者介面控制項的基礎資料中的變更。
 
@@ -31,11 +31,11 @@ ms.locfileid: "55929397"
 
 若要建立應用程式，您需要：
 
--   Visual Studio。
+- Visual Studio。
 
--   SQL Server Express LocalDB。 如果您沒有 SQL Server Express LocalDB，您可以安裝從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)。
+- SQL Server Express LocalDB。 如果您沒有 SQL Server Express LocalDB，您可以安裝從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)。
 
-本主題假設您已熟悉使用 Visual Studio IDE 的基本功能和可以建立在 Windows Forms 應用程式，將表單加入專案中，將按鈕和其他控制項在表單上的設定屬性的控制項，以及編碼簡單事件。 如果您不熟悉這些工作，我們建議您先完成[開始使用視覺效果C#和 Visual Basic](../ide/quickstart-visual-basic-console.md)再開始本逐步解說中的主題。
+本主題假設您已熟悉使用 Visual Studio IDE 的基本功能和可以建立在 Windows Forms 應用程式，將表單加入專案中，將按鈕和其他控制項在表單上的設定屬性的控制項，以及編碼簡單事件。 如果您不熟悉這些工作，我們建議您先完成[開始使用 Visual C# 和 Visual Basic](../ide/quickstart-visual-basic-console.md)主題，然後再開始本逐步解說。
 
 ## <a name="set-up-the-sample-database"></a>設定範例資料庫
 
@@ -59,7 +59,7 @@ ms.locfileid: "55929397"
 
 7. 將 T-SQL 指令碼貼到查詢編輯器，然後選擇**Execute**  按鈕。
 
-     短時間之後，查詢完成執行，並建立資料庫物件。 資料庫包含兩個資料表： 客戶和訂單。 這些資料表一開始，包含任何資料，但當您執行的應用程式，您將建立時，您可以加入資料。 資料庫也會包含四個簡單的預存程序。
+     短時間之後，查詢完成執行，並建立資料庫物件。 資料庫包含兩個資料表：客戶和訂單。 這些資料表一開始，包含任何資料，但當您執行的應用程式，您將建立時，您可以加入資料。 資料庫也會包含四個簡單的預存程序。
 
 ## <a name="create-the-forms-and-add-controls"></a>建立表單並加入控制項
 
@@ -69,11 +69,11 @@ ms.locfileid: "55929397"
 
 2. 將兩個 Windows 表單新增至專案，使其具有三種形式，然後提供下列名稱：
 
-   -   **巡覽**
+   - **巡覽**
 
-   -   **NewCustomer**
+   - **NewCustomer**
 
-   -   **FillOrCancel**
+   - **FillOrCancel**
 
 3. 為每個表單加入下圖中顯示的文字方塊、按鈕和其他控制項。 對每個控制項設定資料表描述的屬性。
 
@@ -124,21 +124,21 @@ ms.locfileid: "55929397"
 
  您可以找到連接字串上按一下滑鼠右鍵**銷售額**中的資料連線**伺服器總管**，然後選擇**屬性**。 找出**ConnectionString**屬性，然後使用**Ctrl**+**A**， **Ctrl**+**C**選取，並將字串複製到剪貼簿。
 
-1.  如果您使用C#，請在**方案總管**，展開**屬性**節點下專案，然後開啟**Settings.settings**檔案。
+1. 如果您使用 C# 中，在**方案總管**，展開**屬性**節點下專案，然後開啟**Settings.settings**檔案。
     如果您使用 Visual Basic 中，在**方案總管**，按一下**顯示所有檔案**，展開**我的專案**節點，然後再開啟**Settings.settings**檔案。
 
-2.  在 **名稱**資料行中，輸入`connString`。
+2. 在 **名稱**資料行中，輸入`connString`。
 
-3.  在 **型別**清單中，選取 **（連接字串）**。
+3. 在 **型別**清單中，選取 **（連接字串）**。
 
-4.  在 **領域**清單中，選取**應用程式**。
+4. 在 **領域**清單中，選取**應用程式**。
 
-5.  在 [**值**] 欄中，輸入您的連接字串 （不含任何外部引號括住），然後儲存變更。
+5. 在 [**值**] 欄中，輸入您的連接字串 （不含任何外部引號括住），然後儲存變更。
 
 > [!NOTE]
 > 在實際的應用程式中，您應該在連接字串安全地儲存中, 所述[連接字串和組態檔](/dotnet/framework/data/adonet/connection-strings-and-configuration-files)。
 
-##  <a name="write-the-code-for-the-forms"></a>撰寫表單的程式碼
+## <a name="write-the-code-for-the-forms"></a>撰寫表單的程式碼
 
 本章節包含每個表單用途的簡短概觀。 它也提供按一下表單上的按鈕時，定義基礎邏輯的程式碼。
 
@@ -180,6 +180,7 @@ ms.locfileid: "55929397"
      ```csharp
      using System.Data.SqlClient;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      ```
@@ -212,6 +213,7 @@ FillOrCancel 表單會執行查詢來傳回訂單，當您輸入訂單 ID，然�
      using System.Data.SqlClient;
      using System.Text.RegularExpressions;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      Imports System.Text.RegularExpressions

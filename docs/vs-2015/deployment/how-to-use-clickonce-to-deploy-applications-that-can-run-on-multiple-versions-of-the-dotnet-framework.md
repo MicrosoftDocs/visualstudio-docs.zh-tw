@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ec809e8733542e2e3c00ec11c15666d0d1c34b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 95bd19ffaf966b74e66f08c4a49c5c60658002f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945888"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095473"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>HOW TO：使用 ClickOnce 部署可在多個.NET Framework 版本執行的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,27 +34,27 @@ ms.locfileid: "58945888"
   
  此程序需要下列步驟：  
   
-1.  產生應用程式和部署資訊清單。  
+1. 產生應用程式和部署資訊清單。  
   
-2.  變更部署資訊清單，若要列出多個.NET Framework 版本。  
+2. 變更部署資訊清單，若要列出多個.NET Framework 版本。  
   
-3.  變更 app.config 檔案，以列出相容的.NET Framework 執行階段版本。  
+3. 變更 app.config 檔案，以列出相容的.NET Framework 執行階段版本。  
   
-4.  變更應用程式資訊清單，以做為.NET Framework 組件的相依組件標記。  
+4. 變更應用程式資訊清單，以做為.NET Framework 組件的相依組件標記。  
   
-5.  登入應用程式資訊清單。  
+5. 登入應用程式資訊清單。  
   
-6.  更新，並簽署部署資訊清單。  
+6. 更新，並簽署部署資訊清單。  
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>若要產生應用程式和部署資訊清單  
   
--   使用 發行精靈 或 發行 頁面的 專案設計工具來發佈應用程式，並產生應用程式和部署資訊清單檔案。 如需詳細資訊，請參閱[如何：發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)或是[專案設計工具、 發行頁](../ide/reference/publish-page-project-designer.md)。  
+- 使用 發行精靈 或 發行 頁面的 專案設計工具來發佈應用程式，並產生應用程式和部署資訊清單檔案。 如需詳細資訊，請參閱[如何：發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)或是[專案設計工具、 發行頁](../ide/reference/publish-page-project-designer.md)。  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>若要變更部署資訊清單，若要列出多個.NET Framework 版本  
   
-1.  在發行目錄中，請在 Visual Studio 中使用 XML 編輯器開啟部署資訊清單。 部署資訊清單有.application 的副檔名。  
+1. 在發行目錄中，請在 Visual Studio 中使用 XML 編輯器開啟部署資訊清單。 部署資訊清單有.application 的副檔名。  
   
-2.  將 XML 程式碼之間`<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">`和`</compatibleFrameworks>`列出支援的.NET Framework 版本，您的應用程式的 XML 項目。  
+2. 將 XML 程式碼之間`<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">`和`</compatibleFrameworks>`列出支援的.NET Framework 版本，您的應用程式的 XML 項目。  
   
      下表顯示一些可用的.NET Framework 版本和對應的 XML，您可以將它新增至部署資訊清單。  
   
@@ -68,9 +68,9 @@ ms.locfileid: "58945888"
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>若要變更 app.config 檔案，以列出相容的.NET Framework 執行階段版本  
   
-1.  在 [方案總管] 中，請在 Visual Studio 中使用 XML 編輯器中開啟 App.config 檔案。  
+1. 在 [方案總管] 中，請在 Visual Studio 中使用 XML 編輯器中開啟 App.config 檔案。  
   
-2.  取代 （或加入） 之間的 XML 程式碼`<startup>`和`</startup>`列出支援的.NET Framework 執行階段中，您的應用程式的 XML 項目。  
+2. 取代 （或加入） 之間的 XML 程式碼`<startup>`和`</startup>`列出支援的.NET Framework 執行階段中，您的應用程式的 XML 項目。  
   
      下表顯示一些可用的.NET Framework 版本和對應的 XML，您可以將它新增至部署資訊清單。  
   
@@ -83,15 +83,15 @@ ms.locfileid: "58945888"
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>若要變更的應用程式資訊清單，以做為.NET Framework 組件的相依組件標記  
   
-1.  在發行目錄中，請在 Visual Studio 中使用 XML 編輯器開啟應用程式資訊清單。 部署資訊清單有.manifest 的副檔名。  
+1. 在發行目錄中，請在 Visual Studio 中使用 XML 編輯器開啟應用程式資訊清單。 部署資訊清單有.manifest 的副檔名。  
   
-2.  新增`group="framework"`sentinel 組件相依性的 XML (`System.Core`， `WindowsBase`， `Sentinel.v3.5Client`，和`System.Data.Entity`)。 例如，XML 看起來應該如下所示：  
+2. 新增`group="framework"`sentinel 組件相依性的 XML (`System.Core`， `WindowsBase`， `Sentinel.v3.5Client`，和`System.Data.Entity`)。 例如，XML 看起來應該如下所示：  
   
     ```  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
-3.  更新的版本號碼`<assemblyIdentity>`Microsoft.Windows.CommonLanguageRuntime 項目是最小公分母的.NET framework 的版本號碼。 例如，如果應用程式的目標.NET Framework 3.5 和[!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]，使用 [2.0.50727.0] 版本號碼和 XML 應該看起來如下：  
+3. 更新的版本號碼`<assemblyIdentity>`Microsoft.Windows.CommonLanguageRuntime 項目是最小公分母的.NET framework 的版本號碼。 例如，如果應用程式的目標.NET Framework 3.5 和[!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]，使用 [2.0.50727.0] 版本號碼和 XML 應該看起來如下：  
   
     ```  
     <dependency>  
@@ -103,7 +103,7 @@ ms.locfileid: "58945888"
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>若要更新和重新簽署應用程式和部署資訊清單  
   
--   更新並重新簽署應用程式和部署資訊清單。 如需詳細資訊，請參閱[如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+- 更新並重新簽署應用程式和部署資訊清單。 如需詳細資訊，請參閱[如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   

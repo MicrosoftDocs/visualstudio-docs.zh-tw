@@ -1,5 +1,5 @@
 ---
-title: 如何： 變更圖形診斷播放電腦 |Microsoft Docs
+title: HOW TO：變更圖形診斷播放電腦 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0af2fc0c847c88aa4cc7cb0b15a80e9bdfa4703d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 11f5c8e32086b32c0c7167a70588ee446ec409c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723340"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107229"
 ---
-# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>如何：變更圖形診斷播放電腦
+# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>HOW TO：變更圖形診斷播放電腦
 您可以播放圖形資訊使用本機電腦，或使用遠端電腦或裝置。
 
 ## <a name="choosing-a-playback-machine"></a>選擇播放電腦
@@ -23,30 +23,30 @@ ms.locfileid: "56723340"
 
 #### <a name="to-use-the-local-machine-to-play-back-graphics-information"></a>若要使用本機電腦播放圖形資訊
 
-1.  在圖形記錄文件視窗中，選擇**播放電腦**連結。 **遠端偵錯工具連接** 對話方塊隨即出現。
+1. 在圖形記錄文件視窗中，選擇**播放電腦**連結。 **遠端偵錯工具連接** 對話方塊隨即出現。
 
-2.  底下**手動組態**，請在**地址**屬性中，輸入`localhost`。
+2. 底下**手動組態**，請在**地址**屬性中，輸入`localhost`。
 
-3.  設定**驗證模式**屬性設**無**。
+3. 設定**驗證模式**屬性設**無**。
 
-4.  選擇 [選取] 按鈕。
+4. 選擇 [選取] 按鈕。
 
 #### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>若要使用遠端電腦播放圖形資訊
 
-1.  在圖形記錄文件視窗中，選擇**播放電腦**連結。 **遠端偵錯工具連接** 對話方塊隨即出現。
+1. 在圖形記錄文件視窗中，選擇**播放電腦**連結。 **遠端偵錯工具連接** 對話方塊隨即出現。
 
-2.  底下**手動組態**，請在**地址**屬性中，輸入 Windows 網域名稱或 IP 位址的電腦或您想要用來播放圖形資訊的裝置。
+2. 底下**手動組態**，請在**地址**屬性中，輸入 Windows 網域名稱或 IP 位址的電腦或您想要用來播放圖形資訊的裝置。
 
-3.  指定您想要用來保護播放電腦連接的授權種類。
+3. 指定您想要用來保護播放電腦連接的授權種類。
 
-    -   對於 Windows 驗證設定**驗證模式**屬性設**Windows**。
+    - 對於 Windows 驗證設定**驗證模式**屬性設**Windows**。
 
-    -   不使用任何驗證，設定**驗證模式**屬性設**無**。
+    - 不使用任何驗證，設定**驗證模式**屬性設**無**。
 
-4.  選擇 [選取] 按鈕。
+4. 選擇 [選取] 按鈕。
 
 > [!NOTE]
 >  **遠端偵錯工具連接**對話方塊可能也會顯示直接連線到您的開發電腦或相同的子網路上的遠端偵錯目標。 您可以為圖形診斷播放電腦使用其中一個遠端偵錯目標而不必以手動方式加以設定。 在 [**遠端偵錯工具連接**對話方塊方塊中，選取您想要的目標然後選擇**選取**] 按鈕。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [圖形記錄文件](graphics-log-document.md)

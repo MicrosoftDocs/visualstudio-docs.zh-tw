@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6754c8264b68d8884f5e8ebaea763e004c71596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 191635364c445bc3959ee2f5f63c7c72c71f171d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093120"
 ---
 # <a name="type-collection-editor-dialog-box"></a>型別集合編輯器對話方塊
 
@@ -31,16 +31,16 @@ ms.locfileid: "55913911"
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>若要顯示 Send  與 Receive 活動的型別集合編輯器
 
-1.  選取 **傳送**或是**接收**設計 檢視中的活動。
+1. 選取 **傳送**或是**接收**設計 檢視中的活動。
 
-2.  按下**F4**即可啟動**屬性**視窗。
+2. 按下**F4**即可啟動**屬性**視窗。
 
-3.  在 **屬性**視窗中，按一下 下的一步 的省略符號按鈕**KnownTypes**屬性。
+3. 在 **屬性**視窗中，按一下 下的一步 的省略符號按鈕**KnownTypes**屬性。
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>若要顯示 InvokeMethod 活動的型別集合編輯器
 
-1.  選取  **InvokeMethod** 設計 檢視中的活動。
+1. 選取  **InvokeMethod** 設計 檢視中的活動。
 
-2.  按下**F4**即可啟動**屬性**視窗。
+2. 按下**F4**即可啟動**屬性**視窗。
 
-3.  在 **屬性**視窗中，按一下 下的一步 的省略符號按鈕**GenericTypeArguments**屬性。
+3. 在 **屬性**視窗中，按一下 下的一步 的省略符號按鈕**GenericTypeArguments**屬性。

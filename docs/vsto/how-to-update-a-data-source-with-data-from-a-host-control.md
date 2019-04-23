@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67e98f7d9f8e1e8914508d8a2e3c63c5dc55b8a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637590"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097488"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>HOW TO：從主控制項的資料更新資料來源
   您可以將主控制項繫結至資料來源，並以在控制項中對資料所做的變更來更新資料來源。 這個程序包含兩個主要步驟：
@@ -42,7 +42,7 @@ ms.locfileid: "56637590"
 
 ### <a name="to-update-the-in-memory-data-source-at-runtime"></a>若要更新在執行階段的記憶體中的資料來源
 
--   呼叫 <xref:System.Windows.Forms.Binding.WriteValue%2A> 物件的 <xref:System.Windows.Forms.Binding> 方法，將控制項繫結至資料來源。
+- 呼叫 <xref:System.Windows.Forms.Binding.WriteValue%2A> 物件的 <xref:System.Windows.Forms.Binding> 方法，將控制項繫結至資料來源。
 
      下列範例會將對 Excel 工作表上 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項所做的變更儲存至資料來源。 這個範例假設您有名為 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的 `namedRange1` 控制項，而且控制項的 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 屬性已繫結至資料來源中的欄位。
 
@@ -70,31 +70,31 @@ ms.locfileid: "56637590"
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>使用設計工具將控制項設定為自動更新記憶體內部資料來源
 
-1.  在 Visual Studio 中，以設計工具開啟 Word 文件或 Excel 活頁簿。
+1. 在 Visual Studio 中，以設計工具開啟 Word 文件或 Excel 活頁簿。
 
-2.  按一下您要自動更新資料來源的控制項。
+2. 按一下您要自動更新資料來源的控制項。
 
-3.  在 [屬性]  視窗中，展開 [(DataBindings)]  屬性。
+3. 在 [屬性]  視窗中，展開 [(DataBindings)]  屬性。
 
-4.  旁 **（進階）**  屬性中，按一下省略符號按鈕 (![VisualStudioEllipsesButton 螢幕擷取畫面](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton 螢幕擷取畫面"))。
+4. 旁 **（進階）**  屬性中，按一下省略符號按鈕 (![VisualStudioEllipsesButton 螢幕擷取畫面](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton 螢幕擷取畫面"))。
 
-5.  在 [格式化與進階繫結]  對話方塊中，按一下 [資料來源更新模式]  下拉式清單，然後選取下列其中一個值：
+5. 在 [格式化與進階繫結]  對話方塊中，按一下 [資料來源更新模式]  下拉式清單，然後選取下列其中一個值：
 
-    -   若要在驗證控制項時更新資料來源，請選取 [OnValidation] 。
+    - 若要在驗證控制項時更新資料來源，請選取 [OnValidation] 。
 
-    -   若要在控制項的資料繫結屬性值變更時更新資料來源，請選取 [OnPropertyChanged] 。
+    - 若要在控制項的資料繫結屬性值變更時更新資料來源，請選取 [OnPropertyChanged] 。
 
         > [!NOTE]
         >  [OnPropertyChanged]  選項不適用於 Word 主控制項，因為 Word 不提供文件變更或控制項變更通知。 不過，這個選項可用於 Word 文件上的 Windows Form 控制項。
 
-6.  關閉 [格式化與進階繫結]  對話方塊。
+6. 關閉 [格式化與進階繫結]  對話方塊。
 
 ## <a name="update-the-database"></a>更新資料庫
  如果資料庫與記憶體內部資料來源相關聯，您必須以對資料來源所做的變更來更新資料庫。 如需有關如何更新資料庫的詳細資訊，請參閱 <<c0> [ 將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)並[使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)。
 
 ### <a name="to-update-the-database"></a>若要更新資料庫
 
-1.  呼叫控制項之 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 的 <xref:System.Windows.Forms.BindingSource> 方法。
+1. 呼叫控制項之 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 的 <xref:System.Windows.Forms.BindingSource> 方法。
 
      當您在設計階段將資料繫結控制項加入文件或活頁簿時，會自動產生 <xref:System.Windows.Forms.BindingSource> 。 <xref:System.Windows.Forms.BindingSource> 會將控制項連接到專案中的具類型資料集。 如需詳細資訊，請參閱 < [BindingSource 元件概觀](/dotnet/framework/winforms/controls/bindingsource-component-overview)。
 
@@ -103,7 +103,7 @@ ms.locfileid: "56637590"
      [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]
 
-2.  呼叫`Update`專案中產生的 TableAdapter 方法。
+2. 呼叫`Update`專案中產生的 TableAdapter 方法。
 
      當您將資料繫結控制項加入文件或活頁簿在設計階段時，會自動產生的 TableAdapter。 TableAdapter 會連接至資料庫專案中具類型的資料集。 如需詳細資訊，請參閱 < [TableAdapter 概觀](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
 

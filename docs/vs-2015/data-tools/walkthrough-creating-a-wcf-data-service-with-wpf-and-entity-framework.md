@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67b3034ee1d651289c167b894b0417d11b5995e8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107036"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>逐步解說：使用 WPF 和 Entity Framework 建立 WCF 資料服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ ms.locfileid: "59653082"
   
  在這份逐步解說中，您將能夠：  
   
--   建立裝載 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]的 Web 應用程式。  
+- 建立裝載 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]的 Web 應用程式。  
   
--   建立呈現 Northwind 資料庫中的 Customers 資料表的 [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]。  
+- 建立呈現 Northwind 資料庫中的 Customers 資料表的 [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]。  
   
--   建立 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]。  
+- 建立 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]。  
   
--   建立用戶端應用程式，並加入 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]的參考。  
+- 建立用戶端應用程式，並加入 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]的參考。  
   
--   啟用對服務的資料繫結，並產生使用者介面。  
+- 啟用對服務的資料繫結，並產生使用者介面。  
   
--   您可以選擇在應用程式中加入篩選功能。  
+- 您可以選擇在應用程式中加入篩選功能。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
   
--   Northwind 範例資料庫。  
+- Northwind 範例資料庫。  
   
      如果您的開發電腦上沒有這個資料庫，則可以從 [Microsoft 下載中心](http://go.microsoft.com/fwlink/?LinkID=98088)下載。 如需相關指示，請參閱 <<c0> [ 下載範例資料庫](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5)。  
   
@@ -80,11 +80,11 @@ ms.locfileid: "59653082"
   
 5. 在 [ **選擇資料連接** ] 頁面上，執行下列其中一個步驟：  
   
-   -   如果下拉式清單中有提供 Northwind 範例資料庫的資料連接，請選擇這個資料連接。  
+   - 如果下拉式清單中有提供 Northwind 範例資料庫的資料連接，請選擇這個資料連接。  
   
         -或-  
   
-   -   選擇 [新增連線] 按鈕，設定新的資料連線。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。  
+   - 選擇 [新增連線] 按鈕，設定新的資料連線。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。  
   
 6. 如果資料庫需要密碼，請選擇 [是，在連接字串中包含敏感性資料] 選項按鈕，然後選擇 [下一步] 按鈕。  
   
@@ -236,11 +236,11 @@ ms.locfileid: "59653082"
   
 #### <a name="to-add-filtering-by-city"></a>若要加入根據城市進行篩選的功能  
   
-1.  在 [方案總管] 中，開啟 [Form1.vb] 或 [Form1.cs] 節點的捷徑功能表，然後選擇 [開啟]。  
+1. 在 [方案總管] 中，開啟 [Form1.vb] 或 [Form1.cs] 節點的捷徑功能表，然後選擇 [開啟]。  
   
-2.  從 [工具箱] 將 <xref:System.Windows.Forms.TextBox> 控制項和 <xref:System.Windows.Forms.Button> 控制項新增至表單。  
+2. 從 [工具箱] 將 <xref:System.Windows.Forms.TextBox> 控制項和 <xref:System.Windows.Forms.Button> 控制項新增至表單。  
   
-3.  開啟捷徑功能表<xref:System.Windows.Forms.Button>控制項，並選擇**檢視程式碼**，然後新增下列程式碼中的`Button1_Click`事件處理常式：  
+3. 開啟捷徑功能表<xref:System.Windows.Forms.Button>控制項，並選擇**檢視程式碼**，然後新增下列程式碼中的`Button1_Click`事件處理常式：  
   
     ```vb  
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click  
@@ -269,11 +269,11 @@ ms.locfileid: "59653082"
     }  
     ```  
   
-4.  在前述的程式碼中，將 `http://localhost:53161/NorthwindCustomers.svc` 取代為 `Form1_Load` 事件處理常式中的 URL。  
+4. 在前述的程式碼中，將 `http://localhost:53161/NorthwindCustomers.svc` 取代為 `Form1_Load` 事件處理常式中的 URL。  
   
-5.  在功能表列上選擇 **偵錯**，**開始偵錯**執行應用程式。  
+5. 在功能表列上選擇 **偵錯**，**開始偵錯**執行應用程式。  
   
-6.  在文字方塊中輸入 **London**，然後選擇該按鈕。 接著，就會只顯示 London 的客戶。  
+6. 在文字方塊中輸入 **London**，然後選擇該按鈕。 接著，就會只顯示 London 的客戶。  
   
 ## <a name="see-also"></a>另請參閱  
  [Windows Communication Foundation 服務和 Visual Studio 中的 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   

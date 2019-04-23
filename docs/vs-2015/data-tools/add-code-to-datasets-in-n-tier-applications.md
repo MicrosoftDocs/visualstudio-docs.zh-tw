@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4308fb0aa39120704c5537188407a9686e9b13a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 078230c2b80d364b68fb127f18fc21a0b931cbce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106666"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ ms.locfileid: "58939894"
 
 ## <a name="add-code-to-datasets-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的資料集
 
-1.  找出包含.xsd 檔案 （資料集） 的專案。
+1. 找出包含.xsd 檔案 （資料集） 的專案。
 
-2.  選取  **.xsd**開啟資料集的檔案。
+2. 選取  **.xsd**開啟資料集的檔案。
 
-3.  以滑鼠右鍵按一下您想以加入程式碼 （標題列中的資料表名稱），然後選取的資料表**檢視程式碼**。
+3. 以滑鼠右鍵按一下您想以加入程式碼 （標題列中的資料表名稱），然後選取的資料表**檢視程式碼**。
 
      部分類別會建立，並會在程式碼編輯器中開啟。
 
-4.  加入部分類別宣告內的程式碼。
+4. 加入部分類別宣告內的程式碼。
 
      下列範例示範如何將程式碼新增至 NorthwindDataSet 中 CustomersDataTable:
 

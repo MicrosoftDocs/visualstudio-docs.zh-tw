@@ -10,49 +10,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a23a26bc0d0537d0d85784f8d1aea7b54e72ec4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 87ddc0e21a3945ed522014b86174a578c04faa2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095642"
 ---
-# <a name="supplying-undo-support-to-designers"></a>為設計工具提供復原支援
+# <a name="supply-undo-support-to-designers"></a>設計工具提供復原支援
+
 設計工具，例如編輯器，通常需要支援復原作業，以便修改程式碼項目時，使用者可以反轉其最近的變更。
 
- 在 Visual Studio 中實作的大部分設計工具有自動環境所提供的復原支援。
+在 Visual Studio 中實作的大部分設計工具具有 「 復原 」 會自動由環境所提供的支援。
 
- 設計工具的實作需要提供恢復功能的支援：
+設計工具的實作需要提供恢復功能的支援：
 
 - 藉由實作抽象的基底類別提供復原管理 <xref:System.ComponentModel.Design.UndoEngine>
 
-- 藉由實作支援提供的持續性和 CodeDOM<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>而<xref:System.ComponentModel.Design.IComponentChangeService>類別。
+- 藉由實作支援提供的持續性和 CodeDOM<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>和<xref:System.ComponentModel.Design.IComponentChangeService>類別。
 
-  如需有關撰寫使用設計工具[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，請參閱 <<c2> [ 擴充設計階段支援](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)。
+如需有關撰寫使用設計工具[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，請參閱 <<c2> [ 擴充設計階段支援](/previous-versions/37899azc(v=vs.140))。
 
-  [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]提供預設復原基礎結構：
+[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]提供預設復原基礎結構：
 
 - 提供復原管理實作，透過<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>和<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>類別。
 
 - 提供持續性和支援透過預設的 CodeDOM<xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>和<xref:System.ComponentModel.Design.IComponentChangeService>實作。
 
-## <a name="obtaining-undo-support-automatically"></a>自動取得復原支援
- 任何的設計工具中建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]已自動和完全復原支援 if、 設計工具：
+## <a name="obtain-undo-support-automatically"></a>自動取得復原支援
 
--   利用<xref:System.Windows.Forms.Control>型使用者介面的類別。
+在 Visual Studio 中建立任何設計工具有自動化且完整的復原支援 if、 設計工具：
 
--   程式碼產生和持續性，會採用標準的 CodeDOM 程式碼產生和剖析的系統。
+- 利用<xref:System.Windows.Forms.Control>型使用者介面的類別。
 
-     如需有關使用 Visual Studio CodeDOM 支援的詳細資訊，請參閱[動態原始程式碼的產生和編譯](/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation)
+- 程式碼產生和持續性，會採用標準的 CodeDOM 程式碼產生和剖析的系統。
+
+   如需有關使用 Visual Studio CodeDOM 支援的詳細資訊，請參閱[動態原始程式碼的產生和編譯](/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation)。
 
 ## <a name="when-to-use-explicit-designer-undo-support"></a>使用明確的設計工具復原支援的時機
  如果他們使用圖形化使用者介面，稱為 「 檢視配接器，不是所提供的設計工具必須提供自己的復原管理<xref:System.Windows.Forms.Control>。
 
- 舉例來說，這可能會以 web 為基礎的圖形設計介面建立產品而非[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]式圖形化介面。
+ 舉例來說，這可能會以 web 為基礎的圖形設計介面建立產品而非[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-以圖形化介面。
 
- 在此情況下，則需要註冊使用此檢視配接器[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]使用<xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>，並提供明確的復原管理。
+ 在此情況下，則需要 Visual Studio 中使用向此檢視配接器<xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>，並提供明確的復原管理。
 
- 必須提供 CodeDOM 和持續性支援如果它們不會使用設計工具[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中所提供的程式碼產生模型<xref:System.CodeDom>命名空間。
+ 設計工具需要提供 CodeDOM 和持續性支援如果它們不會使用提供的 Visual Studio 程式碼產生模型<xref:System.CodeDom>命名空間。
 
 ## <a name="undo-support-features-of-the-designer"></a>復原設計工具的支援的功能
  環境 SDK 可讓您提供預設實作的介面提供所需復原可供未使用的設計工具的支援<xref:System.Windows.Forms.Control>基礎類別，其使用者介面或標準的 CodeDOM 和持續性模型。
@@ -65,32 +67,29 @@ ms.locfileid: "56715258"
 
 - 使用設計工具中的子單位可以藉由實作與互動父母<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>並<xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>上<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>。
 
-  環境 SDK 提供 CodeDOM 和持續性提供的支援：
+環境 SDK 提供 CodeDOM 和持續性提供的支援：
 
-- <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> 為實作 <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>
+- <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> 實作 <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>
 
-  A<xref:System.ComponentModel.Design.IComponentChangeService>所提供[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]' 設計主應用程式。
+- A <xref:System.ComponentModel.Design.IComponentChangeService> Visual Studio 設計主應用程式所提供。
 
-## <a name="using-the-environment-sdk-features-to-supply-undo-support"></a>若要提供復原功能支援使用環境 SDK 功能
- 若要取得復原功能支援，必須實作設計工具的物件：
+## <a name="use-the-environment-sdk-features-to-supply-undo-support"></a>使用環境 SDK 功能，以提供復原功能支援
 
-- 具現化並初始化的執行個體<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>類別的有效<xref:System.IServiceProvider>實作。
+若要取得復原功能支援，實作設計工具的物件必須具現化並初始化的執行個體<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>類別的有效<xref:System.IServiceProvider>實作。 這<xref:System.IServiceProvider>類別必須提供下列服務：
 
-- 這<xref:System.IServiceProvider>類別必須提供下列服務：
+- <xref:System.ComponentModel.Design.IDesignerHost>.
 
-  - <xref:System.ComponentModel.Design.IDesignerHost>.
+- <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>
 
-  - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>
+   使用 Visual Studio CodeDOM 序列化設計工具可以選擇使用<xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>隨附[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]的實作<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>。
 
-     使用設計工具[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]CodeDOM 序列化可能會選擇使用<xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>隨附[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]的實作<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>。
+   在此情況下，<xref:System.IServiceProvider>類別提供給<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>建構函式的實作應該傳回這個物件<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>類別。
 
-     在此情況下，<xref:System.IServiceProvider>類別提供給<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>建構函式的實作應該傳回這個物件<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>類別。
+- <xref:System.ComponentModel.Design.IComponentChangeService>
 
-  - <xref:System.ComponentModel.Design.IComponentChangeService>
+   使用預設的設計工具<xref:System.ComponentModel.Design.DesignSurface>提供的 Visual Studio 設計主應用程式一定會有的預設實作<xref:System.ComponentModel.Design.IComponentChangeService>類別。
 
-     使用預設的設計工具<xref:System.ComponentModel.Design.DesignSurface>所提供[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]設計主應用程式一定會有的預設實作<xref:System.ComponentModel.Design.IComponentChangeService>類別。
-
-  實作的設計工具<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>根據的復原機制會自動追蹤變更，如果：
+實作的設計工具<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>根據的復原機制會自動追蹤變更，如果：
 
 - 屬性變更都會經過<xref:System.ComponentModel.TypeDescriptor>物件。
 
@@ -101,6 +100,7 @@ ms.locfileid: "56715258"
 - 設計工具會選擇明確建立的實作所提供的標準復原單位使用的復原單位<xref:System.ComponentModel.Design.UndoEngine.UndoUnit>或 Visual Studio 特定實作<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>，其衍生自<xref:System.ComponentModel.Design.UndoEngine.UndoUnit>也會提供實作都<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>和<xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>。
 
 ## <a name="see-also"></a>另請參閱
+
 - <xref:System.ComponentModel.Design.UndoEngine>
 - <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>
-- [擴充設計階段支援](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+- [擴充設計階段支援](/previous-versions/37899azc(v=vs.140))

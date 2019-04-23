@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: c4f431dba7f9732333812f64b44db52358071996
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6c572d76389c5914f4a9b01b82677449ec1db28b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658795"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097163"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>應用程式生命週期管理 (ALM) (含 Unity 應用程式)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,11 +66,11 @@ ms.locfileid: "59658795"
   
  使用 Unity 的版本控制特殊考量：  
   
-1.  Unity 會追蹤單一不透明程式庫 (預設為隱藏) 中遊戲資產的中繼資料。 若要保持檔案與中繼資料同步，則需要顯示中繼資料，並將它儲存在更容易管理的區塊中。 如需詳細資訊，請參閱[搭配 Unity 使用外部版本控制系統 (英文)](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Unity 文件)。  
+1. Unity 會追蹤單一不透明程式庫 (預設為隱藏) 中遊戲資產的中繼資料。 若要保持檔案與中繼資料同步，則需要顯示中繼資料，並將它儲存在更容易管理的區塊中。 如需詳細資訊，請參閱[搭配 Unity 使用外部版本控制系統 (英文)](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Unity 文件)。  
   
-2.  並非 Unity 專案中的所有檔案和資料夾都適用於原始檔控制 (上面的連結中也會予以描述)。 應該加入 Assets 和 ProjectSettings 資料夾，但不應該加入 Library 和 Temp 資料夾。 如需其他不會進入原始檔控制的已產生檔案清單，請參閱 StackOverflow 上的討論[如何使用 Git 進行 Unity3D 原始檔控制？(英文)](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control)。 許多開發人員也已個別針對這個主題撰寫部落格。  
+2. 並非 Unity 專案中的所有檔案和資料夾都適用於原始檔控制 (上面的連結中也會予以描述)。 應該加入 Assets 和 ProjectSettings 資料夾，但不應該加入 Library 和 Temp 資料夾。 如需其他不會進入原始檔控制的已產生檔案清單，請參閱 StackOverflow 上的討論[如何使用 Git 進行 Unity3D 原始檔控制？(英文)](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control)。 許多開發人員也已個別針對這個主題撰寫部落格。  
   
-3.  Unity 專案中的二進位資產 (例如紋理或音訊檔) 可能會佔用大量儲存體。 各種原始檔控制系統 (如 Git) 會針對進行的每一項變更儲存唯一的檔案複本，即使變更只影響一小部分的檔案也是一樣。 這可能會讓 Git 儲存機制變得過大。 若要解決這個問題，Unity 開發人員通常會選擇只將最後一個資產加入其儲存機制，並使用不同的方法來保留其資產的工作歷程記錄 (例如 OneDrive、DropBox 或 git-annex)。 因為這類資產一般不需要進行版本控制以及原始程式碼變更，所以這種方式適用。 開發人員一般也會將專案編輯器的 [資產序列化模式] 設定為 [強制文字]，以文字格式 (非允許在原始檔控制中進行合併的二進位格式) 來儲存場景檔案。 如需詳細資訊，請參閱[編輯器設定 (英文)](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity 文件)。  
+3. Unity 專案中的二進位資產 (例如紋理或音訊檔) 可能會佔用大量儲存體。 各種原始檔控制系統 (如 Git) 會針對進行的每一項變更儲存唯一的檔案複本，即使變更只影響一小部分的檔案也是一樣。 這可能會讓 Git 儲存機制變得過大。 若要解決這個問題，Unity 開發人員通常會選擇只將最後一個資產加入其儲存機制，並使用不同的方法來保留其資產的工作歷程記錄 (例如 OneDrive、DropBox 或 git-annex)。 因為這類資產一般不需要進行版本控制以及原始程式碼變更，所以這種方式適用。 開發人員一般也會將專案編輯器的 [資產序列化模式] 設定為 [強制文字]，以文字格式 (非允許在原始檔控制中進行合併的二進位格式) 來儲存場景檔案。 如需詳細資訊，請參閱[編輯器設定 (英文)](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity 文件)。  
   
 ## <a name="build"></a>組建  
  參考連結：**[建置](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  

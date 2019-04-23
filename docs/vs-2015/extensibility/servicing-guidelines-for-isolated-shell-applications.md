@@ -11,12 +11,12 @@ ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 13ec970b309c09bdbd0bffbc0a10c42b862ebe9b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 093690c293ff6857eedc50d5eccc793d7d5bb114
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943174"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097397"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Isolated 的 Shell 應用程式的服務方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ ms.locfileid: "58943174"
   
  當您在安裝程式中使用自訂動作時，您必須確定每個安裝階段的自訂動作必須有對應的自訂動作，以復原動作，當使用者解除安裝應用程式。 如果提供對應程式安裝程式無法解除安裝自訂動作，移除您的應用程式將會保留部分安裝。  
   
--   當軟體更新會變更這些版本，或者雜湊值，依賴特定版本的檔案或雜湊值的自訂動作將會失敗。 在此情況下您的自訂動作，必須手動更新這些值。 如果產品版本之間共用的檔案或雜湊值的版本，就會發生其他問題。 避免盡可能，此相依性。  
+- 當軟體更新會變更這些版本，或者雜湊值，依賴特定版本的檔案或雜湊值的自訂動作將會失敗。 在此情況下您的自訂動作，必須手動更新這些值。 如果產品版本之間共用的檔案或雜湊值的版本，就會發生其他問題。 避免盡可能，此相依性。  
   
 ### <a name="accounting-for-shared-files"></a>共用檔案的考量  
  共用的檔案的名稱相同，且會安裝到相同的位置，由多個產品。 這些產品可能與不同版本、 存貨保持單元 (SKU)，或這兩者，和指定的電腦上，可以同時存在的產品。 不過，共用的檔案會建立服務的問題，原因有幾種：  
   
--   更新共用的檔案可能會導致應用程式相容性問題，因為一個應用程式的更新可能會變更的版本未更新的第二個應用程式所使用的檔案。 安裝程式共用檔案的產品計數共用檔案的參考。 因此，解除安裝產品不會影響共用的檔案超過遞減已安裝的執行個體的計數。  
+- 更新共用的檔案可能會導致應用程式相容性問題，因為一個應用程式的更新可能會變更的版本未更新的第二個應用程式所使用的檔案。 安裝程式共用檔案的產品計數共用檔案的參考。 因此，解除安裝產品不會影響共用的檔案超過遞減已安裝的執行個體的計數。  
   
--   Quick Fix Engineering (QFE) 安裝程式會還原檔案的 QFE 安裝程式服務的產品版本的版本。 此程序可能會中斷應用程式必須傳遞已更新的共用的檔案。
+- Quick Fix Engineering (QFE) 安裝程式會還原檔案的 QFE 安裝程式服務的產品版本的版本。 此程序可能會中斷應用程式必須傳遞已更新的共用的檔案。

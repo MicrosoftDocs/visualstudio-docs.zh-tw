@@ -1,5 +1,5 @@
 ---
-title: 如何： 擷取在線上 ClickOnce 應用程式中的查詢字串資訊 |Microsoft Docs
+title: HOW TO：擷取在線上 ClickOnce 應用程式中的查詢字串資訊 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 496328eb8911ad03d34c02e17d92f9a782b149da
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e218cfb3514333e48f2c5d59d55664de1bbd906a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599190"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095851"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>How to: Retrieve query string information in an online ClickOnce application (如何：在線上 ClickOnce 應用程式中擷取查詢字串資訊)
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>HOW TO：在線上 ClickOnce 應用程式中擷取查詢字串資訊
 *「查詢字串」* (query string) 是開頭為句號 (?) 之 URL 的部分，內含 *name=value*格式的任意資訊。 假設您有裝載於 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 且名為 `WindowsApp1` 的 `servername`應用程式，而且想要在啟動應用程式時傳入變數 `username` 的值。 URL 可能如下所示：
 
  `http://servername/WindowsApp1.application?username=joeuser`
@@ -39,19 +39,19 @@ ms.locfileid: "56599190"
 > [!NOTE]
 >  當您決定啟用這項功能之前，請參閱本主題後面的＜安全性＞一節。
 
- 如需有關如何建立資訊[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署*Mage.exe*或是*MageUI.exe*，請參閱[逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+ 如需有關如何建立資訊[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署*Mage.exe*或是*MageUI.exe*，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
 > [!NOTE]
 >  從 .NET Framework 3.5 SP1 開始，可以將命令列引數傳遞至離線 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 如果您要提供應用程式的引數，則可以將參數傳入副檔名為 .APPREF-MS 的捷徑檔案。
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>從 ClickOnce 應用程式取得查詢字串資訊
 
-1.  請在專案中放入下列程式碼。 為了讓這個程式碼運作，您必須參考 System.Web，並為 System.Web、System.Collections.Specialized 和 System.Deployment.Application 新增 `using` 或 `Imports` 陳述式。
+1. 請在專案中放入下列程式碼。 為了讓這個程式碼運作，您必須參考 System.Web，並為 System.Web、System.Collections.Specialized 和 System.Deployment.Application 新增 `using` 或 `Imports` 陳述式。
 
      [!code-csharp[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]
      [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]
 
-2.  呼叫先前定義的函式，以擷取依名稱編製索引之查詢字串參數的 <xref:System.Collections.DictionaryBase.Dictionary%2A> 。
+2. 呼叫先前定義的函式，以擷取依名稱編製索引之查詢字串參數的 <xref:System.Collections.DictionaryBase.Dictionary%2A> 。
 
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>使用 MageUI.exe 將查詢字串傳入 ClickOnce 應用程式
 

@@ -11,21 +11,21 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 18964ebdb1e011fb7e9fc17f19eadcc822c1d1bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095824"
 ---
 # <a name="comparing-properties-and-items"></a>比較屬性和項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以及儲存可在整個專案檔中參考的值。  
   
--   屬性是名稱/值組。 如需詳細資訊，請參閱 [MSBuild 屬性](msbuild-properties1.md)。  
+- 屬性是名稱/值組。 如需詳細資訊，請參閱 [MSBuild 屬性](msbuild-properties1.md)。  
   
--   項目是通常代表檔案的物件。 項目物件可具有相關聯的中繼資料集合。 中繼資料是名稱/值組。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。  
+- 項目是通常代表檔案的物件。 項目物件可具有相關聯的中繼資料集合。 中繼資料是名稱/值組。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。  
   
 ## <a name="scalars-and-vectors"></a>純量和向量  
  由於 MSBuild 屬性是只有一個字串值的名稱/值組，因此，通常會以「純量」來描述它們。 因為 MSBuild 項目類型是項目清單，所以，通常會以「向量」來描述它們。 不過，在實務上，屬性可以代表多個值，而項目類型可以有零個或一個項目。  
@@ -96,15 +96,15 @@ MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以
   
 - 在組建的評估階段：  
   
-  -   屬性是以其出現的順序來定義和修改。 屬性函式會執行。 在運算式內展開表單 $(PropertyName) 中的屬性值。 屬性值會設為展開的運算式。  
+  - 屬性是以其出現的順序來定義和修改。 屬性函式會執行。 在運算式內展開表單 $(PropertyName) 中的屬性值。 屬性值會設為展開的運算式。  
   
-  -   項目定義是以其出現的順序來定義和修改。 已在運算式內展開屬性函式。 中繼資料值會設為展開的運算式。  
+  - 項目定義是以其出現的順序來定義和修改。 已在運算式內展開屬性函式。 中繼資料值會設為展開的運算式。  
   
-  -   項目類型都是以其出現的順序來定義和修改。 表單 @(ItemType) 中的項目值均會展開。 同時也會展開項目轉換。 已在運算式內展開屬性函式和值。 項目清單和中繼資料值會設為展開的運算式。  
+  - 項目類型都是以其出現的順序來定義和修改。 表單 @(ItemType) 中的項目值均會展開。 同時也會展開項目轉換。 已在運算式內展開屬性函式和值。 項目清單和中繼資料值會設為展開的運算式。  
   
 - 在組建的執行階段：  
   
-  -   目標內所定義的屬性和項目會以其出現的順序一併進行評估。 屬性函式會執行，並在運算式內展開屬性值。 同時也會展開項目值和項目轉換。 屬性值、項目類型值和中繼資料值均會設為展開的運算式。  
+  - 目標內所定義的屬性和項目會以其出現的順序一併進行評估。 屬性函式會執行，並在運算式內展開屬性值。 同時也會展開項目值和項目轉換。 屬性值、項目類型值和中繼資料值均會設為展開的運算式。  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>評估順序的微妙效果  
  在組建的評估階段，屬性評估是在項目評估之前。 不過，屬性可以具有取決於項目值而出現的值。 請考慮下列指令碼。  

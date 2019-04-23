@@ -11,12 +11,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 206835d92a2fca27bed2cbb8a96b99e6b7c8a082
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3ffe786b5bc5f6d0bb0233fbb431988e0145611d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094864"
 ---
 # <a name="test-area-6-delete"></a>測試區域 6：刪除
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ms.locfileid: "58940119"
 ## <a name="expected-behavior"></a>預期的行為  
  刪除測試區域中的測試案例的預期的行為是：  
   
--   已刪除的項目已不再顯示內**方案總管 中**。  
+- 已刪除的項目已不再顯示內**方案總管 中**。  
   
--   已刪除的專案或項目的父代已簽出，視需要 （可能是使用提示。）  
+- 已刪除的專案或項目的父代已簽出，視需要 （可能是使用提示。）  
   
--   在出刪除已選取，或新增項目之後，它不會顯示在**暫止簽入**視窗。  
+- 在出刪除已選取，或新增項目之後，它不會顯示在**暫止簽入**視窗。  
   
--   項目仍存在於原始檔控制存放區中，內，即使已經刪除，並必須以手動方式清除。  
+- 項目仍存在於原始檔控制存放區中，內，即使已經刪除，並必須以手動方式清除。  
   
 |動作|測試步驟|若要確認預期的結果|  
 |------------|----------------|--------------------------------|  

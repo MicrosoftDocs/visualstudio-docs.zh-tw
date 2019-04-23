@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9ff6901db602a812c06c6d8cc08ce55ef6d1d7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1601853a99ebea5ef687fbe5679fd74b45d5c381
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944493"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107693"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>對應方案之間的相依性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,18 +45,18 @@ ms.locfileid: "58944493"
   
  **部分影片如下**：  
   
--   [透過視覺化了解程式碼相依性](http://go.microsoft.com/fwlink/?LinkID=252065)  
+- [透過視覺化了解程式碼相依性](http://go.microsoft.com/fwlink/?LinkID=252065)  
   
--   [以圖形呈現變更的影響](http://go.microsoft.com/fwlink/?LinkID=252068)  
+- [以圖形呈現變更的影響](http://go.microsoft.com/fwlink/?LinkID=252068)  
   
--   [使用 Code Map 了解複雜的程式碼](http://go.microsoft.com/fwlink/?LinkID=259869)  
+- [使用 Code Map 了解複雜的程式碼](http://go.microsoft.com/fwlink/?LinkID=259869)  
   
-##  <a name="GetStarted"></a> 開始使用 Code Map  
+## <a name="GetStarted"></a> 開始使用 Code Map  
  **若要使用 Code Map，您將需要**：  
   
--   Visual Studio Enterprise:從程式碼編輯器中，方案總管]、 [類別檢視] 或 [物件瀏覽器建立 code map。  
+- Visual Studio Enterprise:從程式碼編輯器中，方案總管]、 [類別檢視] 或 [物件瀏覽器建立 code map。  
   
--   Visual Studio Professional:開啟 code map、 進行有限的編輯，以及巡覽程式碼。  
+- Visual Studio Professional:開啟 code map、 進行有限的編輯，以及巡覽程式碼。  
   
 > [!WARNING]
 >  在您與使用 Visual Studio Professional 的其他人共用在 Visual Studio Enterprise 中建立的對應時，請確定對應中的所有項目都已成為可見的，例如隱藏項目、展開的群組和跨群組連結。  
@@ -73,51 +73,51 @@ ms.locfileid: "58944493"
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>查看方案之間的整體相依性  
   
-1.  開啟 [架構]  功能表。  
+1. 開啟 [架構]  功能表。  
   
-2.  如果您剛開啟方案，還沒建置它，或是您的程式碼在您前次建置它之後已變更，請選擇 [產生方案的 Code Map] 。  
+2. 如果您剛開啟方案，還沒建置它，或是您的程式碼在您前次建置它之後已變更，請選擇 [產生方案的 Code Map] 。  
   
-3.  如果程式碼在前次建置之後未變更，請選擇 [產生方案的 Code Map 而不建置]  ，以在建立對應時得到更快的效能。  
+3. 如果程式碼在前次建置之後未變更，請選擇 [產生方案的 Code Map 而不建置]  ，以在建立對應時得到更快的效能。  
   
-4.  [查看整體相依性](#SeeOverviewSource) 來了解如何使用 Code Map，以檢視方案之間的整體相依性。  
+4. [查看整體相依性](#SeeOverviewSource) 來了解如何使用 Code Map，以檢視方案之間的整體相依性。  
   
 #### <a name="to-see-specific-dependencies-within-your-solution"></a>查看方案中的特定相依性  
   
-1.  載入方案之後，開啟 [方案總管] 。  
+1. 載入方案之後，開啟 [方案總管] 。  
   
-2.  選取您要對應的所有專案、組件參考、資料夾、檔案、類型或成員。  
+2. 選取您要對應的所有專案、組件參考、資料夾、檔案、類型或成員。  
   
-3.  在 [**方案總管**工具列上，選擇**Code Map 上顯示**![建立新圖形從選取節點] 按鈕](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton"). 或開啟捷徑功能表並選擇 [在 Code Map 上顯示] 。 您也可以從 [類別檢視] 或 [物件瀏覽器] 將項目拖曳至新的或現有的 Code Map。  
+3. 在 [**方案總管**工具列上，選擇**Code Map 上顯示**![建立新圖形從選取節點] 按鈕](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton"). 或開啟捷徑功能表並選擇 [在 Code Map 上顯示] 。 您也可以從 [類別檢視] 或 [物件瀏覽器] 將項目拖曳至新的或現有的 Code Map。  
   
-4.  [查看特定相依性](#SeeSpecificSource) 來了解如何使用 Code Map，以檢視方案中的特定相依性。  
+4. [查看特定相依性](#SeeSpecificSource) 來了解如何使用 Code Map，以檢視方案中的特定相依性。  
   
-###  <a name="CreateEmptyMap"></a> 將新的空白 Code Map 加入您的方案  
+### <a name="CreateEmptyMap"></a> 將新的空白 Code Map 加入您的方案  
   
-1.  在 [方案總管] 中，開啟最上層方案節點的捷徑功能表。 選擇 [新增]  然後選擇 [新增項目] 。  
+1. 在 [方案總管] 中，開啟最上層方案節點的捷徑功能表。 選擇 [新增]  然後選擇 [新增項目] 。  
   
-2.  在 [已安裝的] 底下，選擇 [一般] 。  
+2. 在 [已安裝的] 底下，選擇 [一般] 。  
   
-3.  在右窗格中，依序選擇 [有向圖形文件]  和 [新增] 。  
+3. 在右窗格中，依序選擇 [有向圖形文件]  和 [新增] 。  
   
      現在即有一個空白對應，出現在您方案的 [方案項目]  資料夾中。  
   
 #### <a name="to-create-a-new-empty-code-map-without-adding-it-to-your-solution"></a>建立新的空 Code Map，而不將它加入您的方案  
   
-1.  開啟 [架構]  功能表，然後選擇 [新增 Code Map] 。  
+1. 開啟 [架構]  功能表，然後選擇 [新增 Code Map] 。  
   
      \-或-  
   
-2.  開啟 [檔案]  功能表，依序選擇 [新增]  和 [檔案] 。  
+2. 開啟 [檔案]  功能表，依序選擇 [新增]  和 [檔案] 。  
   
-3.  在 [已安裝的] 底下，選擇 [一般] 。  
+3. 在 [已安裝的] 底下，選擇 [一般] 。  
   
-4.  在右窗格中，依序選擇 [有向圖形文件]  和 [開啟] 。  
+4. 在右窗格中，依序選擇 [有向圖形文件]  和 [開啟] 。  
   
      現在即有一個空白對應，它不會出現在您方案的資料夾中。  
   
-##  <a name="SeeOverviewSource"></a> 查看整體相依性  
+## <a name="SeeOverviewSource"></a> 查看整體相依性  
   
-###  <a name="OverviewSource"></a> 查看方案中的相依性  
+### <a name="OverviewSource"></a> 查看方案中的相依性  
   
 1. 在 [架構]  功能表上，選擇 [產生方案的 Code Map] 。  
   
@@ -183,35 +183,35 @@ ms.locfileid: "58944493"
   
     另請參閱：  
   
--   [瀏覽和重新排列 Code Map](../modeling/browse-and-rearrange-code-maps.md)  
+- [瀏覽和重新排列 Code Map](../modeling/browse-and-rearrange-code-maps.md)  
   
--   [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
+- [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
   
--   [執行分析器](../modeling/find-potential-problems-using-code-map-analyzers.md)找出程式碼中的潛在問題。  
+- [執行分析器](../modeling/find-potential-problems-using-code-map-analyzers.md)找出程式碼中的潛在問題。  
   
-###  <a name="OverviewCompiled"></a> 查看跨組件或二進位檔案的相依性  
+### <a name="OverviewCompiled"></a> 查看跨組件或二進位檔案的相依性  
   
-1.  [建立空的 Code Map](#GetStarted)，或開啟現有的 Code Map (.dgml 檔案)。  
+1. [建立空的 Code Map](#GetStarted)，或開啟現有的 Code Map (.dgml 檔案)。  
   
-2.  將您想要對應的組件或二進位檔從 Visual Studio 外部拖曳到對應上。 例如，從 Windows 檔案總管或檔案總管拖曳組件或二進位檔。  
+2. 將您想要對應的組件或二進位檔從 Visual Studio 外部拖曳到對應上。 例如，從 Windows 檔案總管或檔案總管拖曳組件或二進位檔。  
   
 > [!NOTE]
 >  只要您是以相同的使用者存取控制 (UAC) 權限等級執行它與 Visual Studio，就可以從 Windows 檔案總管或檔案總管拖曳組件或二進位檔。 例如，如果 UAC 已開啟，而您是以系統管理員身分執行 Visual Studio，那麼 Windows 檔案總管或檔案總管將會封鎖拖曳作業。 若要解決這個問題，請確定兩者都執行相同的權限等級，或關閉 UAC。  
   
-##  <a name="SeeSpecificSource"></a> 查看特定相依性  
+## <a name="SeeSpecificSource"></a> 查看特定相依性  
  例如，假設您有要在出現暫止變更的某些檔案中，執行程式碼檢閱。 若要查看這些變更中的相依性，您可以從那些檔案建立 Code Map。  
   
  ![在 code map 上顯示的特定相依性](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
   
 ### <a name="see-specific-dependencies-in-your-solution"></a>查看方案中的特定相依性  
   
-1.  開啟 [方案總管] 。 選取您感興趣的專案、組件參考、資料夾、檔案、類型和成員。 若要尋找與類型或成員相依的項目，請在 [方案總管] 中開啟類型或成員的捷徑功能表。 選擇相依性類型，並選取結果。  
+1. 開啟 [方案總管] 。 選取您感興趣的專案、組件參考、資料夾、檔案、類型和成員。 若要尋找與類型或成員相依的項目，請在 [方案總管] 中開啟類型或成員的捷徑功能表。 選擇相依性類型，並選取結果。  
   
-2.  對應您的項目及其成員。 在 [**方案總管**工具列上，按一下**Code Map 上顯示**![建立新圖形從選取節點] 按鈕](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").  
+2. 對應您的項目及其成員。 在 [**方案總管**工具列上，按一下**Code Map 上顯示**![建立新圖形從選取節點] 按鈕](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").  
   
      ![選取您想要對應的項目](../modeling/media/codemapsselectinsolutionexplorer.png "CodeMapsSelectInSolutionExplorer")  
   
-3.  對應會在其包含的組件內顯示選取的項目。  
+3. 對應會在其包含的組件內顯示選取的項目。  
   
      ![選取的項目顯示為地圖上的群組](../modeling/media/codemapsshowitemsfromsolnexplorer.png "CodeMapsShowItemsFromSolnExplorer")  
   
@@ -220,19 +220,19 @@ ms.locfileid: "58944493"
     > [!NOTE]
     >  當您從跨多個應用程式 (如 Windows Phone 或 Windows 市集) 共用的專案中加入項目時，這些項目會與目前作用中的應用程式專案出現在對應上。 如果您將內容變更為其他應用程式專案，並且從共用專案加入更多項目，這些項目現在會與新的作用中應用程式專案一起顯示。 您使用對應中項目執行的作業僅適用於共用相同內容的項目。  
   
-4.  若要瀏覽項目，請將其展開。 將滑鼠指標移至項目上方，然後按一下出現的＞形箭號 (向下箭號) 圖示。  
+4. 若要瀏覽項目，請將其展開。 將滑鼠指標移至項目上方，然後按一下出現的＞形箭號 (向下箭號) 圖示。  
   
      ![展開節點，以在 code map](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
   
      若要展開所有項目，請使用 **CTRL+A**選取它們，然後開啟對應的捷徑功能表並依序選擇 [群組] 、[展開] 。 不過，如果展開所有群組會產生無法使用的對應或記憶體問題，則無法使用此選項。  
   
-5.  繼續展開您感興趣的項目，視需要可一直到類別和成員層級。  
+5. 繼續展開您感興趣的項目，視需要可一直到類別和成員層級。  
   
      ![將群組展開至類別和成員層級](../modeling/media/codemapsexpandtoclassandmember.png "CodeMapsExpandToClassAndMember")  
   
      若要查看成員程式碼中，但不會出現在地圖上，按一下**重新擷取子系**圖示![重新擷取子系圖示](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon")右上群組的左上的角。  
   
-6.  若要查看與對應上之項目相關的其他項目，請選取一個，在 Code Map 工具列上選擇 [顯示相關]  ，然後選取要加入對應的相關項目類型。 或者，選取一或多個項目，開啟捷徑功能表，然後針對要加入對應的相關項目類型選擇 [顯示]  選項。 例如：  
+6. 若要查看與對應上之項目相關的其他項目，請選取一個，在 Code Map 工具列上選擇 [顯示相關]  ，然後選取要加入對應的相關項目類型。 或者，選取一或多個項目，開啟捷徑功能表，然後針對要加入對應的相關項目類型選擇 [顯示]  選項。 例如:   
   
      對於 **組件**，選擇：  
   
@@ -275,30 +275,30 @@ ms.locfileid: "58944493"
   
      ![顯示這個成員所呼叫方法](../modeling/media/codemapsshowrelatedmethods.png "CodeMapsShowRelatedMethods")  
   
-7.  對應會顯示關聯性。 在此範例中，由 `Find` 方法呼叫的方法，以及它們在方案或外部的位置。  
+7. 對應會顯示關聯性。 在此範例中，由 `Find` 方法呼叫的方法，以及它們在方案或外部的位置。  
   
      ![在 code map 上顯示的特定相依性](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
   
-8.  若要簡化對應，並將焦點放在個別部分，請選擇 Code Map 工具列上的 [篩選]  ，然後只選取您感興趣的節點和連結類型。 例如，關閉方案資料夾、組件和命名空間的顯示。  
+8. 若要簡化對應，並將焦點放在個別部分，請選擇 Code Map 工具列上的 [篩選]  ，然後只選取您感興趣的節點和連結類型。 例如，關閉方案資料夾、組件和命名空間的顯示。  
   
      ![使用 [篩選] 窗格來簡化顯示](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
-##  <a name="SeeSourceHeader"></a> 查看 C 與 C++ 原始程式檔與標頭檔之間的相依性  
+## <a name="SeeSourceHeader"></a> 查看 C 與 C++ 原始程式檔與標頭檔之間的相依性  
  如果要為 C++ 專案建立更完整的對應，請在這些專案上設定瀏覽資訊編譯器選項 (**/FR**)。 請參閱 [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)。 否則會出現訊息並提示您設定此選項。 如果選取 [確定] ，則只會為目前的對應設定這個選項。 您可以選擇隱藏所有之後對應的訊息。 如果隱藏這個訊息，之後可以讓它再次出現。 請將下列登錄機碼設定為 `0` ，或刪除該機碼：  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider:AutoEnableSbr**  
   
  當您開啟包含 Visual C++ 專案的方案時，更新 IntelliSense 資料庫可能需要一些時間。 此時，您可能無法建立標頭 (.h 或 `#include`) 檔案的 Code Map，直到 IntelliSense 資料庫完成更新。 您可以在 Visual Studio 狀態列中監視更新進度。 若要解決因為某些 IntelliSense 設定停用而發生的問題或訊息，請參閱 [C 和 C++ 程式碼對應疑難排解](#Troubleshooting)。  
   
--   若要查看方案中所有原始程式檔與標頭檔之間的相依性，請在 [架構]  功能表上，選擇 [產生 Include 檔圖形] 。  
+- 若要查看方案中所有原始程式檔與標頭檔之間的相依性，請在 [架構]  功能表上，選擇 [產生 Include 檔圖形] 。  
   
      ![原生程式碼的相依性圖形](../modeling/media/dependencygraphgeneral-nativecode.png "DependencyGraphGeneral_NativeCode")  
   
--   若要查看目前開啟的檔案與相關原始程式檔和標頭檔之間的相依性，請開啟原始程式檔或標頭檔。 在檔案內的任意處開啟檔案捷徑功能表。 選擇 [產生 Include 檔圖形] 。  
+- 若要查看目前開啟的檔案與相關原始程式檔和標頭檔之間的相依性，請開啟原始程式檔或標頭檔。 在檔案內的任意處開啟檔案捷徑功能表。 選擇 [產生 Include 檔圖形] 。  
   
      ![第一個&#45;.h 檔案的層級的相依性圖形](../modeling/media/dependencygraph-native-firstlevel.png "DependencyGraph_Native_FirstLevel")  
   
-###  <a name="Troubleshooting"></a> C 和 C++ 程式碼對應疑難排解  
+### <a name="Troubleshooting"></a> C 和 C++ 程式碼對應疑難排解  
  C 和 C++ 程式碼不支援下列項目：  
   
 - 基底類型不會出現在包含父代階層架構的對應中。  
@@ -311,14 +311,14 @@ ms.locfileid: "58944493"
 |---------------|------------------------|--------------------|  
 |無法產生 Code Map。|方案中沒有成功建立的專案。|修正發生的建置錯誤，然後重新產生對應。|  
 |當您嘗試從 [架構][!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  **功能表產生 Code Map 時，** 會變得沒有回應。|程式資料庫 (.pdb) 檔案可能會損毀。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|重建方案後再試一次。|  
-|IntelliSense 瀏覽資料庫的某些設定已停用。|某些 IntelliSense 設定可能已在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 對話方塊中停用。|開啟這些設定來加以啟用。<br /><br /> 請參閱[選項、 文字編輯器、 C/c + +、 進階](../ide/reference/options-text-editor-c-cpp-advanced.md)。|  
+|IntelliSense 瀏覽資料庫的某些設定已停用。|某些 IntelliSense 設定可能已在  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 對話方塊中停用。|開啟這些設定來加以啟用。<br /><br /> 請參閱[選項、 文字編輯器、 C /C++進階](../ide/reference/options-text-editor-c-cpp-advanced.md)。|  
 |[未知方法]  訊息出現在方法節點上。<br /><br /> 發生這個問題是因為無法解析方法的名稱。|二進位檔可能沒有基底重新配置表格。|在連結器中開啟 **/FIXED:NO** 選項。<br /><br /> 請參閱 [/FIXED (Fixed Base Address)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5)。|  
 ||程式資料庫 (.pdb) 檔案可能無法建置。<br /><br /> .pdb 檔案會儲存偵錯資訊，例如類型、方法和原始程式檔資訊。|在連結器中開啟 **/DEBUG** 選項。<br /><br /> 請參閱 [/DEBUG (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)。|  
 ||無法在預期的位置中開啟或找到 .pdb 檔案。|請確定預期的位置中有 .pdb 檔案存在。|  
 ||已從 .pdb 檔案中移除偵錯資訊。|如果在連結器中使用 **/PDBSTRIPPED** 選項，請改為包含完整的 .pdb 檔案。<br /><br /> 請參閱 [/PDBSTRIPPED (Strip Private Symbols)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)。|  
 ||呼叫端不是函式，而且為二進位檔案中的 Thunk 或資料區段中的指標。|當呼叫端為 Thunk 時，請嘗試使用 `_declspec(dllimport)` 來避免 Thunk。<br /><br /> 請參閱：<br /><br /> -   [一般規則和限制](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [匯入函式呼叫使用 __declspec （dllimport）](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport、 dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
-##  <a name="RenderMoreQuickly"></a> 使 Code Map 更快速地轉譯  
+## <a name="RenderMoreQuickly"></a> 使 Code Map 更快速地轉譯  
  當您第一次產生對應時，Visual Studio 會為所有找到的相依性編製索引。 此程序可能需要一些時間 (尤其是大型方案)，但這可以改善之後的效能。 如果程式碼變更，則 Visual Studio 只會重新編製更新過的程式碼索引。 若要將完成轉譯對應所花費的時間降到最低，請考慮下列各項：  
   
 - [只對應您感興趣的相依性。](#SeeSpecificSource)  
@@ -339,7 +339,7 @@ ms.locfileid: "58944493"
   
   完成的對應只會顯示成功建置之程式碼的相依性。 如果某些元件發生建置錯誤，則對應上會出現這些錯誤。 在根據對應進行架構決策前，請確定元件可實際建置且具有相依性。  
   
-##  <a name="SavingExporting"></a> 共用 Code Map  
+## <a name="SavingExporting"></a> 共用 Code Map  
   
 ### <a name="share-the-map-with-other-visual-studio-users"></a>與其他 Visual Studio 使用者共用對應  
  使用 [檔案]  功能表以儲存對應。  
@@ -363,26 +363,26 @@ ms.locfileid: "58944493"
   
 ### <a name="export-the-map-as-an-image-so-you-can-copy-it-into-other-applications-such-as-microsoft-word-or-powerpoint"></a>將對應匯出為影像，因此您可以將它複製到其他應用程式，例如 Microsoft Word 文件或 PowerPoint  
   
-1.  在 Code Map 工具列上，依序選擇 [共用] 、[以影像傳送電子郵件]  或 [複製影像] 。  
+1. 在 Code Map 工具列上，依序選擇 [共用] 、[以影像傳送電子郵件]  或 [複製影像] 。  
   
-2.  將影像貼入另一個應用程式中。  
+2. 將影像貼入另一個應用程式中。  
   
 ### <a name="export-the-map-as-an-xps-file-so-you-can-see-it-in-xml-or-xaml-viewers-like-internet-explorer"></a>將對應匯出為 XPS 檔案，如此您就可以在類似 Internet Explorer 的 XML 或 XAML 檢視器中查看  
   
-1.  在 Code Map 工具列上，依序選擇 [共用] 、[以可攜式 XPS 傳送電子郵件]  或 [另存為可攜式 XPS] 。  
+1. 在 Code Map 工具列上，依序選擇 [共用] 、[以可攜式 XPS 傳送電子郵件]  或 [另存為可攜式 XPS] 。  
   
-2.  瀏覽至儲存檔案的位置。  
+2. 瀏覽至儲存檔案的位置。  
   
-3.  為 Code Map 命名。 請確定**將儲存為類型** 方塊設定為**XPS 檔案 (\*.xps)**。 選擇 [儲存] 。  
+3. 為 Code Map 命名。 請確定**將儲存為類型** 方塊設定為**XPS 檔案 (\*.xps)**。 選擇 [儲存] 。  
   
 ## <a name="what-else-can-i-do"></a>我還可以做什麼？  
   
--   [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)  
+- [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)  
   
--   [在偵錯時於呼叫堆疊上對應方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)  
+- [在偵錯時於呼叫堆疊上對應方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)  
   
--   [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)  
+- [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
--   [瀏覽和重新排列 Code Map](../modeling/browse-and-rearrange-code-maps.md)  
+- [瀏覽和重新排列 Code Map](../modeling/browse-and-rearrange-code-maps.md)  
   
--   [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

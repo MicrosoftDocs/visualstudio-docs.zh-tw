@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 615b9bc4974a0483dec5e9c39727ebae50039a1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596525"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094342"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>HOW TO：建立事件接收器的特定清單執行個體
   清單定義的任何執行個體中發生的事件回應的清單執行個體事件接收器。 雖然事件接收者範本不會啟用特定的清單執行個體的目標，您可以修改事件接收器來回應特定的清單執行個體中的事件清單定義範圍內。
@@ -30,24 +30,24 @@ ms.locfileid: "56596525"
 
 #### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>若要修改事件接收器來回應特定的清單執行個體
 
-1.  在瀏覽器中開啟 SharePoint 網站。
+1. 在瀏覽器中開啟 SharePoint 網站。
 
-2.  在 [導覽] 窗格中，**列出**連結。
+2. 在 [導覽] 窗格中，**列出**連結。
 
-3.  在 **所有網站內容**頁面上，選擇**建立**連結。
+3. 在 **所有網站內容**頁面上，選擇**建立**連結。
 
-4.  在**建立**對話方塊方塊中，選擇**宣布**類型，將公告命名**TestAnnouncements**，然後選擇 [**建立**] 按鈕。
+4. 在**建立**對話方塊方塊中，選擇**宣布**類型，將公告命名**TestAnnouncements**，然後選擇 [**建立**] 按鈕。
 
-5.  在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，建立事件接收器專案。
+5. 在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，建立事件接收器專案。
 
-6.  在 **何種類型的事件接收器？** 清單中，選擇**清單項目事件**。
+6. 在 **何種類型的事件接收器？** 清單中，選擇**清單項目事件**。
 
     > [!NOTE]
     >  您也可以選取任何其他類型的清單定義，例如，範圍的事件接收器**列出的電子郵件事件**或是**清單工作流程事件**。
 
-7.  在 **何種項目應該做為事件來源？** 清單中，選擇**公告**。
+7. 在 **何種項目應該做為事件來源？** 清單中，選擇**公告**。
 
-8.  在 [**處理下列事件**清單中，選取**正在加入項目**核取方塊，，然後選擇**完成**] 按鈕。
+8. 在 [**處理下列事件**清單中，選取**正在加入項目**核取方塊，，然後選擇**完成**] 按鈕。
 
 9. 在 **方案總管**下 EventReceiver1，, 開啟*Elements.xml*。
 

@@ -6,12 +6,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4d75c93f2ff1678b1d9790462bc816ea35f8acd9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 346cc2b68193a72d532ba0542cc406e4afa75234
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662071"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097384"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解 Xamarin 的行動應用程式開發
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "59662071"
 ## <a name="essentials-introduction-to-xamarin"></a>基本概念：Xamarin 簡介  
  *10-20 分鐘*  
   
-1.  [在 Visual Studio 中使用 Xamarin 建置行動應用程式](https://www.visualstudio.com/explore/xamarin-vs) (visualstudio.com) 簡短概述 Xamarin 的主要特性。  
+1. [在 Visual Studio 中使用 Xamarin 建置行動應用程式](https://www.visualstudio.com/explore/xamarin-vs) (visualstudio.com) 簡短概述 Xamarin 的主要特性。  
   
-2.  Xamarin 推廣人員 James Montemagno 的[使用 C# 和 Visual Studio 建置跨平台行動應用程式](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Channel9，15 分 16 秒)。 前三分鐘是 Xamarin 概觀，後面接著程式碼示範。  
+2. Xamarin 推廣人員 James Montemagno 的[使用 C# 和 Visual Studio 建置跨平台行動應用程式](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Channel9，15 分 16 秒)。 前三分鐘是 Xamarin 概觀，後面接著程式碼示範。  
   
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>基本概念：Visual Studio 和 Xamarin 環境概觀  
  *5-15 分鐘*  
@@ -44,9 +44,9 @@ ms.locfileid: "59662071"
 ## <a name="essentials-how-projects-are-structured"></a>基本概念：專案的結構方式  
  *10-30 分鐘*  
   
-1.  [共用程式碼選項](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com) 建議使用可攜式類別庫選項，因為當您只使用所有目標平台都支援的 .NET API 時，此選項會提供最佳支援。 大多數商務邏輯程式碼都位於 PCL 中，包括存取資料庫、 REST Api 呼叫和可攜式 Xamarin 元件的呼叫 (請參閱[更深入了解：Xamarin 元件](#components)本主題結尾處)。 使用 Xamarin.Forms 撰寫的通用 UI 程式碼也可能位於 PCL 中。  
+1. [共用程式碼選項](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com) 建議使用可攜式類別庫選項，因為當您只使用所有目標平台都支援的 .NET API 時，此選項會提供最佳支援。 大多數商務邏輯程式碼都位於 PCL 中，包括存取資料庫、 REST Api 呼叫和可攜式 Xamarin 元件的呼叫 (請參閱[更深入了解：Xamarin 元件](#components)本主題結尾處)。 使用 Xamarin.Forms 撰寫的通用 UI 程式碼也可能位於 PCL 中。  
   
-2.  （選擇性）[案例研究：Tasky](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/case_study-tasky/) (xamarin.com) 描述程式設計和結構，例如結構化針對分隔資料、 資料存取和商務層的共用程式碼使用 PCL 專案的完整應用程式的一些最佳作法。  
+2. （選擇性）[案例研究：Tasky](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/case_study-tasky/) (xamarin.com) 描述程式設計和結構，例如結構化針對分隔資料、 資料存取和商務層的共用程式碼使用 PCL 專案的完整應用程式的一些最佳作法。  
   
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>基本概念：原生和 Xamarin.Forms UI 層  
  *10-40 分鐘*  
@@ -69,32 +69,32 @@ ms.locfileid: "59662071"
   
   若要進一步了解：  
   
-1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) 提供 Xamarin.Forms 與原生 UI 層 (亦即 Xamarin.iOS 和 Xamarin.Android) 的簡要概觀和優缺點比較。  
+1. [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) 提供 Xamarin.Forms 與原生 UI 層 (亦即 Xamarin.iOS 和 Xamarin.Android) 的簡要概觀和優缺點比較。  
   
-2.  James Montemagno 的影片的前 3 分鐘[Xamarin.Forms:原生 iOS、 Android 和 Windows 應用程式與C#& XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (channel 9，13m3s) 提供另一個概觀，以及您可以繼續觀賞示範。  
+2. James Montemagno 的影片的前 3 分鐘[Xamarin.Forms:原生 iOS、 Android 和 Windows 應用程式與C#& XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (channel 9，13m3s) 提供另一個概觀，以及您可以繼續觀賞示範。  
   
-3.  (選擇性) [Xamarin.Forms 簡介](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (xamarin.com)  
+3. (選擇性) [Xamarin.Forms 簡介](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (xamarin.com)  
   
-4.  (選擇性) 請參閱 [裝置類別](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) 文件 (xamarin.com) 中有關使用 OnPlatform 進行自訂的範例  
+4. (選擇性) 請參閱 [裝置類別](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) 文件 (xamarin.com) 中有關使用 OnPlatform 進行自訂的範例  
   
-5.  (選擇性) Jason Smith (MSDN Magazine) 的 [跨平台 - 跨行動平台與 Xamarin.Forms 共用 UI 程式碼](https://msdn.microsoft.com/magazine/dn904669.aspx) 概述 Xamarin.Forms 中的不同自訂選項，其詳細資訊則包含在 [自訂每個平台上的控制項](http://developer.xamarin.com/guides/xamarin-forms/custom-renderer/) (xamarin.com) 中。  
+5. (選擇性) Jason Smith (MSDN Magazine) 的 [跨平台 - 跨行動平台與 Xamarin.Forms 共用 UI 程式碼](https://msdn.microsoft.com/magazine/dn904669.aspx) 概述 Xamarin.Forms 中的不同自訂選項，其詳細資訊則包含在 [自訂每個平台上的控制項](http://developer.xamarin.com/guides/xamarin-forms/custom-renderer/) (xamarin.com) 中。  
   
 ## <a name="deeper-dive-debugging-with-emulators"></a>深入探討：使用模擬器偵錯  
  *10-15 分鐘*  
   
  若要在不需要使用實體裝置的情況下偵錯跨平台應用程式，您必須使用下列工具：  
   
-1.  **Android 模擬器：** ：根據您使用的 Windows 版本，建議使用 Microsoft Visual Studio Emulator for Android 或 Xamarin Player，這兩個模擬器都提供快速效能，並支援各種裝置功能：  
+1. **Android 模擬器：** ：根據您使用的 Windows 版本，建議使用 Microsoft Visual Studio Emulator for Android 或 Xamarin Player，這兩個模擬器都提供快速效能，並支援各種裝置功能：  
   
-    -   **Windows 8 + 電腦：** 我們強烈建議使用 Microsoft [Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx)，隨 Visual Studio 安裝。  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) 影片 (Channel9，5 分 55 秒) 提供概觀和示範。  
+    - **Windows 8 + 電腦：** 我們強烈建議使用 Microsoft [Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx)，隨 Visual Studio 安裝。  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) 影片 (Channel9，5 分 55 秒) 提供概觀和示範。  
   
-    -   **Windows 7 或舊版/在 Mac OS X 上執行的 Windows**：使用 [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player) (xamarin.com)。  
+    - **Windows 7 或舊版/在 Mac OS X 上執行的 Windows**：使用 [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player) (xamarin.com)。  
   
-2.  **Apple iOS 模擬器：** 若要深入了解，請閱讀 [iOS 模擬器使用者入門 (英文)](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com)。  
+2. **Apple iOS 模擬器：** 若要深入了解，請閱讀 [iOS 模擬器使用者入門 (英文)](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com)。  
   
-3.  **Microsoft 的 Windows Phone 模擬器** 若要深入了解，請閱讀 [Windows Phone 8 的 Windows Phone 模擬器](https://msdn.microsoft.com/library/dn632391.aspx)。  
+3. **Microsoft 的 Windows Phone 模擬器** 若要深入了解，請閱讀 [Windows Phone 8 的 Windows Phone 模擬器](https://msdn.microsoft.com/library/dn632391.aspx)。  
   
-##  <a name="components"></a> 深入探討：Xamarin 元件  
+## <a name="components"></a> 深入探討：Xamarin 元件  
  *10 分鐘*  
   
  Xamarin 應用程式中的許多擴充功能是透過 Xamarin 元件來提供。 您可以在 [http://components.xamarin.com/](http://components.xamarin.com/)上找到可供下載的完整目錄，其中包括其他 UI 控制項、驗證、各種不同雲端服務 (例如 Microsoft Azure) 等等的元件。
