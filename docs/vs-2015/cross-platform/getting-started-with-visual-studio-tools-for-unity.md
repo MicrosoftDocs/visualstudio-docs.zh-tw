@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 6901c44e61ba291bbc40ad9654f27f52f0e7f48a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 184004d24d685c0e7242f9ba5b34f679cc581d26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655163"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105028"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 使用者入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,30 +27,30 @@ ms.locfileid: "59655163"
 ## <a name="prerequisites"></a>必要條件  
  若要使用 Visual Studio Tools for Unity，您需要：  
   
--   支援擴充功能的 **Visual Studio** 版本，例如 Visual Studio Community、Professional、Premium 或 Enterprise。 您可以免費下載 Visual Studio Community。  
+- 支援擴充功能的 **Visual Studio** 版本，例如 Visual Studio Community、Professional、Premium 或 Enterprise。 您可以免費下載 Visual Studio Community。  
   
      [下載 Visual Studio Community](http://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   **Unity** 4.0.0 版或更高版本；若要利用對 Visual Studio Tools for Unity 2.1 版或更高版本的內建支援則必須有 **Unity** 5.2.0 版或更高版本。  
+- **Unity** 4.0.0 版或更高版本；若要利用對 Visual Studio Tools for Unity 2.1 版或更高版本的內建支援則必須有 **Unity** 5.2.0 版或更高版本。  
   
      [下載 Unity](https://unity3d.com/get-unity/download)  
   
 ## <a name="install-visual-studio-tools-for-unity"></a>安裝 Visual Studio Tools for Unity  
  從 Visual Studio 組件庫下載並安裝 Visual Studio Tools for Unity。 您必須安裝適用於您 Visual Studio 版本的封裝。 確定安裝 Visual Studio Tools for Unity 2.1 版或更高版本，以利用 Unity 5.2 版或更高版本中的內建 VSTU 支援。  
   
--   針對 Visual Studio 2015 Community、Visual Studio 2015 Professional 或 Visual Studio 2015 Enterprise：  
+- 針對 Visual Studio 2015 Community、Visual Studio 2015 Professional 或 Visual Studio 2015 Enterprise：  
   
      [下載 Visual Studio 2015 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)  
   
--   針對 Visual Studio 2013 Community、Visual Studio 2013 Professional 或 Visual Studio 2013 Premium：  
+- 針對 Visual Studio 2013 Community、Visual Studio 2013 Professional 或 Visual Studio 2013 Premium：  
   
      [下載 Visual Studio 2013 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
   
--   針對 Visual Studio 2012 Professional 或 Visual Studio 2012 Premium：  
+- 針對 Visual Studio 2012 Professional 或 Visual Studio 2012 Premium：  
   
      [下載 Visual Studio 2012 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)  
   
--   針對 Visual Studio 2010 Professional 或 Visual Studio 2010 Premium：  
+- 針對 Visual Studio 2010 Professional 或 Visual Studio 2010 Premium：  
   
      [下載 Visual Studio 2010 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   

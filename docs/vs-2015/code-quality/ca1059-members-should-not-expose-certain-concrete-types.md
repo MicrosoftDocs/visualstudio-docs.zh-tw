@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 46e3941e1aab0e2f6f532a7a394437a0613b8d8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a78125645dc6369811b4b9e1d7101b7bb4cbba76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941568"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103819"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059:成員不應該公開特定的具象類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "58941568"
 ## <a name="cause"></a>原因
  外部可見成員是特定的具象類型，或公開特定的具象類型，透過其中一個參數或傳回值。 目前，此規則會回報下列的具象類型的曝光度：
 
--   型別衍生自<xref:System.Xml.XmlNode?displayProperty=fullName>。
+- 型別衍生自<xref:System.Xml.XmlNode?displayProperty=fullName>。
 
 ## <a name="rule-description"></a>規則描述
  具象類型就是具有完整實作 (Implementation) 且因此能加以具現化 (Instantiated) 的類型。 若要允許廣泛使用的成員，用為建議的介面來取代具象型別。 這可讓成員接受任何實作介面的型別，或是使用實作介面的型別所預期的位置。

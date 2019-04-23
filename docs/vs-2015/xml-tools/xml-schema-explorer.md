@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 550c43532db89132ec4e1b123005ad02ef547414
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670429"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104909"
 ---
 # <a name="xml-schema-explorer"></a>XML 結構描述總管
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ XML 結構描述總管整合於 Microsoft Visual Studio 和 XML 編輯器，可�
   
  若要啟動節點，按兩下或按**Enter**選取節點時。  
   
--   啟動節點會開啟定義該節點的檔案 (如果該檔案尚未開啟)，並且在該檔案中選取此節點。  
+- 啟動節點會開啟定義該節點的檔案 (如果該檔案尚未開啟)，並且在該檔案中選取此節點。  
   
--   啟動檔案節點會開啟所選的檔案 (若該檔案尚未開啟)，並且反白顯示 `<schema>` 節點。  
+- 啟動檔案節點會開啟所選的檔案 (若該檔案尚未開啟)，並且反白顯示 `<schema>` 節點。  
   
--   啟動 SchemaSet 或命名空間節點不會有任何反應。  
+- 啟動 SchemaSet 或命名空間節點不會有任何反應。  
   
 ## <a name="draging-and-dropping-nodes"></a>拖放節點  
  您可以將全域節點、檔案節點以及命名空間節點拖放至 XSD 設計工具檢視中。 如果目前的檢視[開始檢視](../xml-tools/start-view.md)，拖曳到檢視的節點會開啟[圖表檢視](../xml-tools/graph-view.md)。 如果目前的檢視[內容模型檢視](../xml-tools/content-model-view.md)或圖表檢視，檢視不會變更當您卸除將節點拖曳到它。  
@@ -82,13 +82,13 @@ XML 結構描述總管整合於 Microsoft Visual Studio 和 XML 編輯器，可�
   
 ## <a name="in-this-section"></a>本節內容  
   
--   [搜尋結構描述集合](../xml-tools/searching-the-schema-set.md)  
+- [搜尋結構描述集合](../xml-tools/searching-the-schema-set.md)  
   
--   [排序、篩檢與分組](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
+- [排序、篩檢與分組](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
--   [操作功能表](../xml-tools/context-menus-xml-schema-explorer.md)  
+- [操作功能表](../xml-tools/context-menus-xml-schema-explorer.md)  
   
--   [整合 XML 常值與 XML 結構描述總管](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
+- [整合 XML 常值與 XML 結構描述總管](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：將節點從 XML 結構描述總管新增至工作區](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

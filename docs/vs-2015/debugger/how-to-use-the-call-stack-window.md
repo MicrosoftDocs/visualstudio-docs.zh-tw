@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 993c1380a37b0fedad07427e65fda0a6a80a73f2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f40f5f27d603b67e6a7403f5327ffd89b486fa10
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930830"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106448"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>HOW TO：使用 [呼叫堆疊] 視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,53 +62,53 @@ ms.locfileid: "58930830"
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>在中斷模式或執行模式中顯示呼叫堆疊視窗  
   
--   在 **偵錯**功能表上，選取**Windows** ，然後按一下 **呼叫堆疊**。  
+- 在 **偵錯**功能表上，選取**Windows** ，然後按一下 **呼叫堆疊**。  
   
 ### <a name="to-change-the-optional-information-displayed"></a>若要變更所顯示的選擇性資訊  
   
--   以滑鼠右鍵按一下**呼叫堆疊** 視窗，然後設定或清除**顯示\<** _您想要的資訊_**>**.  
+- 以滑鼠右鍵按一下**呼叫堆疊** 視窗，然後設定或清除**顯示\<** _您想要的資訊_**>**.  
   
 ### <a name="to-display-non-user-code-frames-in-the-call-stack-window"></a>若要在呼叫堆疊視窗中顯示非使用者程式碼框架  
   
--   以滑鼠右鍵按一下 [呼叫堆疊] 視窗，然後選取 [顯示外部程式碼]。  
+- 以滑鼠右鍵按一下 [呼叫堆疊] 視窗，然後選取 [顯示外部程式碼]。  
   
 ### <a name="to-switch-to-another-stack-frame"></a>若要切換到另一個堆疊框架  
   
-1.  在 [**呼叫堆疊**] 視窗中，以滑鼠右鍵按一下框架之程式碼和您想要檢視的資料。  
+1. 在 [**呼叫堆疊**] 視窗中，以滑鼠右鍵按一下框架之程式碼和您想要檢視的資料。  
   
-2.  選取 [切換至框架]。  
+2. 選取 [切換至框架]。  
   
      在您選取的框架旁邊會出現尾端彎曲的綠色箭號。 執行指標會留在原來的框架中，並仍以黃色箭頭標示。 如果您從 [偵錯] 功能表中選取 [逐步執行] 或 [繼續]，則會從原本框架而非選取的框架繼續執行。  
   
 ### <a name="to-display-calls-to-or-from-another-thread"></a>若要顯示與另一個執行緒之間的往來呼叫  
   
--   以滑鼠右鍵按一下 [呼叫堆疊] 視窗，然後選取 [包含至/從其他執行緒的呼叫]。  
+- 以滑鼠右鍵按一下 [呼叫堆疊] 視窗，然後選取 [包含至/從其他執行緒的呼叫]。  
   
 ### <a name="to-view-the-source-code-for-a-function-on-the-call-stack"></a>若要檢視呼叫堆疊上的函式的原始程式碼  
   
--   在 [呼叫堆疊] 視窗，以滑鼠右鍵按一下您要查看原始程式碼的函式，然後選取 [移至原始程式碼]。  
+- 在 [呼叫堆疊] 視窗，以滑鼠右鍵按一下您要查看原始程式碼的函式，然後選取 [移至原始程式碼]。  
   
 ### <a name="to-visually-trace-the-call-stack"></a>若要以視覺化方式追蹤呼叫堆疊  
   
-1.  在 [呼叫堆疊] 視窗中，開啟捷徑功能表。 選擇**Code Map 上顯示呼叫堆疊**。 (鍵盤：**CTRL** + **SHIFT** + **`**)  
+1. 在 [呼叫堆疊] 視窗中，開啟捷徑功能表。 選擇**Code Map 上顯示呼叫堆疊**。 (鍵盤：**CTRL** + **SHIFT** + **`**)  
   
      請參閱[偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。  
   
 ### <a name="to-view-the-disassembly-code-for-a-function-on-the-call-stack"></a>若要檢視呼叫堆疊上的函式的反組譯程式碼  
   
--   在 [呼叫堆疊] 視窗中，以滑鼠右鍵按一下您要查看反組譯程式碼的函式，然後選取 [移至反組譯碼]。  
+- 在 [呼叫堆疊] 視窗中，以滑鼠右鍵按一下您要查看反組譯程式碼的函式，然後選取 [移至反組譯碼]。  
   
 ### <a name="to-run-to-a-specific-function-from-the-call-stack-window"></a>若要從 [呼叫堆疊] 視窗執行至特定函式  
   
--  在 [**呼叫堆疊**] 視窗中，選取的函式，以滑鼠右鍵按一下，然後選擇**執行至游標處**。  
+- 在 [**呼叫堆疊**] 視窗中，選取的函式，以滑鼠右鍵按一下，然後選擇**執行至游標處**。  
   
 ### <a name="to-set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>若要在函式呼叫的結束點設定中斷點  
   
--   請參閱[在呼叫堆疊函式設定中斷點](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window)。  
+- 請參閱[在呼叫堆疊函式設定中斷點](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window)。  
   
 ### <a name="to-load-symbols-for-a-module"></a>若要載入模組的符號  
   
--   在 **呼叫堆疊** 視窗中，以滑鼠右鍵按一下 顯示模組的符號的框架您想要重新載入，並選取**載入符號**。  
+- 在 **呼叫堆疊** 視窗中，以滑鼠右鍵按一下 顯示模組的符號的框架您想要重新載入，並選取**載入符號**。  
   
 ## <a name="loading-symbols"></a>載入符號  
  在 [呼叫堆疊] 視窗中，您可以載入目前尚未載入符號之程式碼的偵錯符號。 這些符號可能是從 Microsoft 公用符號伺服器下載的 .NET Framework 或系統符號，或是您所偵錯之電腦上符號路徑中的符號。  
@@ -117,25 +117,25 @@ ms.locfileid: "58930830"
   
 #### <a name="to-load-symbols"></a>若要載入符號  
   
-1.  在 **呼叫堆疊**視窗中，以滑鼠右鍵按一下未載入符號的框架。 該框架隨即變成暗灰色。  
+1. 在 **呼叫堆疊**視窗中，以滑鼠右鍵按一下未載入符號的框架。 該框架隨即變成暗灰色。  
   
-2.  指向**載入符號來源**，然後按一下**Microsoft 符號伺服器**或是**符號路徑**。  
+2. 指向**載入符號來源**，然後按一下**Microsoft 符號伺服器**或是**符號路徑**。  
   
 #### <a name="to-set-the-symbol-path"></a>若要設定符號路徑  
   
-1.  在 [呼叫堆疊] 視窗中，從捷徑功能表選擇 [符號設定]。  
+1. 在 [呼叫堆疊] 視窗中，從捷徑功能表選擇 [符號設定]。  
   
      [選項] 對話方塊隨即開啟，並顯示 [符號] 頁面。  
   
-2.  按一下 **符號設定**。  
+2. 按一下 **符號設定**。  
   
-3.  在 [選項] 對話方塊中，按一下資料夾圖示。  
+3. 在 [選項] 對話方塊中，按一下資料夾圖示。  
   
      游標隨即出現在 [符號檔 (.pdb) 位置] 方塊中。  
   
-4.  輸入您要偵錯之電腦上符號位置的目錄路徑名稱。 在本機偵錯中，這是您的本機電腦； 在遠端偵錯中，則是遠端電腦。  
+4. 輸入您要偵錯之電腦上符號位置的目錄路徑名稱。 在本機偵錯中，這是您的本機電腦； 在遠端偵錯中，則是遠端電腦。  
   
-5.  按一下 [確定] 關閉 [選項] 對話方塊。  
+5. 按一下 [確定] 關閉 [選項] 對話方塊。  
   
 ## <a name="see-also"></a>另請參閱  
  [混合程式碼和遺失的資訊，在 [呼叫堆疊] 視窗](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   

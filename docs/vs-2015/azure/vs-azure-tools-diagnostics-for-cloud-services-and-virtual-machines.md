@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 049d8500f9f3f2a8695d686484ea48f84f2e034b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3790d370e969a913db31c3bab139b2c42ef97d22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942345"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105421"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>針對 Azure 雲端服務與虛擬機器設定診斷
 需要針對 Azure 雲端服務或 Azure 虛擬機器進行疑難排解時，您可以使用 Visual Studio 更輕鬆地設定 Azure 診斷。 診斷會在執行雲端服務的虛擬機器和虛擬機器執行個體上擷取系統資料和記錄資料。 診斷資料會傳輸到您選擇的儲存體帳戶。 如需 Azure 中診斷記錄的詳細資訊，請參閱[在 Azure App Service 中針對 Web 應用程式啟用診斷記錄](/azure/app-service/web-sites-enable-diagnostic-log)。
@@ -150,12 +150,13 @@ ms.locfileid: "58942345"
 
 如果您正在使用 Azure SDK 2.5 且想要指定自訂資料來源，您可以將它新增至 diagnostics.wadcfgx 檔案的 `WindowsEventLog` 區段，如下列範例所示：
 
-```
+```xml
 <WindowsEventLog scheduledTransferPeriod="PT1M">
    <DataSource name="Application!*" />
    <DataSource name="CustomDataSource!*" />
 </WindowsEventLog>
 ```
+
 ### <a name="performance-counters"></a>效能計數器
 效能計數器資訊可協助您找出系統瓶頸並微調系統和應用程式效能。 如需詳細資訊，請參閱[在 Azure 應用程式中建立及使用效能計數器](https://msdn.microsoft.com/library/azure/hh411542.aspx)。 若要擷取效能計數器，請選取 [啟用效能計數器的傳輸] 核取方塊。 若要增加或減少將事件記錄傳輸至儲存體帳戶的間隔，請變更 [傳輸期間 (分鐘)] 值。 選取您想要追蹤之效能計數器的核取方塊。
 

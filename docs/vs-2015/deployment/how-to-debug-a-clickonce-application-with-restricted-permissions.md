@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 535ae11811db3117448bf619c0391b852bd65c67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d60f88c4d1532a03922f12f21bb9b455ef5d84d8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944999"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105548"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>HOW TO：以受限制的權限對 ClickOnce 應用程式進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,31 +35,31 @@ ms.locfileid: "58944999"
   
 ### <a name="to-enable-debugging-with-restricted-permissions"></a>啟用使用受限權限進行的偵錯  
   
-1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  在 [專案設計工具] 中，按一下 [安全性]  索引標籤。  
+2. 在 [專案設計工具] 中，按一下 [安全性]  索引標籤。  
   
-3.  選取 [啟用 ClickOnce 安全性設定]  核取方塊，然後按一下 [這是部分信任的應用程式]  選項按鈕。  
+3. 選取 [啟用 ClickOnce 安全性設定]  核取方塊，然後按一下 [這是部分信任的應用程式]  選項按鈕。  
   
-4.  按一下 [ **進階** ] 按鈕。  
+4. 按一下 [ **進階** ] 按鈕。  
   
-5.  選取 [以選取的使用權限集合對此應用程式進行偵錯]  核取方塊，然後按一下 [確定] 。  
+5. 選取 [以選取的使用權限集合對此應用程式進行偵錯]  核取方塊，然後按一下 [確定] 。  
   
      當您偵錯應用程式時，任何嘗試存取不在權限集中的權限都會引發安全性例外狀況。  
   
 ### <a name="to-specify-a-url-for-debugging"></a>指定 URL 以進行偵錯  
   
-1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
+1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  在 [專案設計工具] 中，按一下 [安全性]  索引標籤。  
+2. 在 [專案設計工具] 中，按一下 [安全性]  索引標籤。  
   
-3.  選取 [啟用 ClickOnce 安全性設定]  核取方塊，然後按一下 [這是部分信任的應用程式]  選項按鈕。  
+3. 選取 [啟用 ClickOnce 安全性設定]  核取方塊，然後按一下 [這是部分信任的應用程式]  選項按鈕。  
   
-4.  按一下 [ **進階** ] 按鈕。  
+4. 按一下 [ **進階** ] 按鈕。  
   
-5.  選取 [以選取的使用權限集合對此應用程式進行偵錯]  核取方塊，然後按一下 [確定] 。  
+5. 選取 [以選取的使用權限集合對此應用程式進行偵錯]  核取方塊，然後按一下 [確定] 。  
   
-6.  在 [將下列 URL 視為此應用程式的下載位置來進行偵錯]  文字方塊中，輸入 URL 或網路路徑。  
+6. 在 [將下列 URL 視為此應用程式的下載位置來進行偵錯]  文字方塊中，輸入 URL 或網路路徑。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：設定 ClickOnce 應用程式的自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   

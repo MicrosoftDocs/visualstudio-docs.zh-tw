@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0fa25e0bf7742420e21ac75883f9927478ee2c23
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656605"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105002"
 ---
 # <a name="edit-data-in-datasets"></a>編輯資料集中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "59656605"
   
 #### <a name="to-delete-records-from-a-data-table"></a>若要從資料表刪除記錄  
   
--   呼叫<xref:System.Data.DataRow.Delete%2A>方法的<xref:System.Data.DataRow>。  
+- 呼叫<xref:System.Data.DataRow.Delete%2A>方法的<xref:System.Data.DataRow>。  
   
      這個方法並不會實際移除記錄。 相反地，它會將記錄標示為刪除。  
   
@@ -83,7 +83,7 @@ ms.locfileid: "59656605"
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>若要判斷是否已變更的所有資料列  
   
--   呼叫<xref:System.Data.DataSet.HasChanges%2A>方法的資料集，以檢查是否有變更的資料列。  
+- 呼叫<xref:System.Data.DataSet.HasChanges%2A>方法的資料集，以檢查是否有變更的資料列。  
   
      下列範例示範如何檢查傳回的值，從<xref:System.Data.DataSet.HasChanges%2A>方法來偵測是否有任何變更的資料列集中名為`NorthwindDataset1`:  
   
@@ -95,7 +95,7 @@ ms.locfileid: "59656605"
   
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>若要判斷何種變更已對資料列  
   
--   傳遞<xref:System.Data.DataRowState>值<xref:System.Data.DataSet.HasChanges%2A>方法。  
+- 傳遞<xref:System.Data.DataRowState>值<xref:System.Data.DataSet.HasChanges%2A>方法。  
   
      下列範例示範如何檢查名為資料集`NorthwindDataset1`來判斷是否任何新資料列已新增它：  
   
@@ -105,9 +105,9 @@ ms.locfileid: "59656605"
 ## <a name="to-locate-rows-that-have-errors"></a>若要找出有錯誤的資料列  
  使用個別資料行和資料列時，您可能會遇到錯誤。 您可以檢查`HasErrors`屬性來判斷是否錯誤存在於<xref:System.Data.DataSet>， <xref:System.Data.DataTable>，或<xref:System.Data.DataRow>。  
   
-1.  檢查`HasErrors`屬性，以查看資料集內是否有任何錯誤。  
+1. 檢查`HasErrors`屬性，以查看資料集內是否有任何錯誤。  
   
-2.  如果`HasErrors`屬性是`true`，逐一查看的集合，這些資料表，然後透過資料列，以找出錯誤資料列。  
+2. 如果`HasErrors`屬性是`true`，逐一查看的集合，這些資料表，然後透過資料列，以找出錯誤資料列。  
   
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]

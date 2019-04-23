@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 867c42d4afb35abcc1e37c86f85a01a7dd3fdf24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103871"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 靜態程式碼分析，分析市集應用程式的 C++ 程式碼品質
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "59659818"
 > [!NOTE]
 > 在 Visual Studio Ultimate、Visual Studio Premium 及 Visual Studio Professional 中，您可以使用程式碼分析工具的完整功能。 請參閱 MSDN Library 中的[使用程式碼分析工具進行應用程式品質分析](http://msdn.microsoft.com/library/dd264897.aspx)。
 
-##  <a name="BKMK_Run"></a> 執行程式碼分析
+## <a name="BKMK_Run"></a> 執行程式碼分析
  在您的 Visual Studio 方案中執行程式碼分析：
 
 - 在 [建置] 功能表上，選擇 [針對方案執行程式碼分析]。
@@ -43,7 +43,7 @@ ms.locfileid: "59659818"
 
    ![[程式碼分析] 視窗](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> 分析和解決程式碼分析警告
+## <a name="BKMK_Analyze"></a> 分析和解決程式碼分析警告
  若要分析特定警告，請在 [程式碼分析] 視窗中選擇警告的標題。 展開警告以顯示問題的詳細資訊。 如果情況允許，程式碼分析會顯示導致發出警告的行號和分析邏輯。
 
  ![展開的程式碼分析警告](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
@@ -57,7 +57,7 @@ ms.locfileid: "59659818"
 > [!TIP]
 >  您可以從 [程式碼分析] 視窗重新執行程式碼分析。 選擇 [分析] 按鈕，然後選擇要分析的範圍。 您可以在整個方案或選取的專案上重新執行分析。
 
-##  <a name="BKMK_Suppress"></a> 隱藏程式碼分析警告
+## <a name="BKMK_Suppress"></a> 隱藏程式碼分析警告
  有時候您可能決定不修正程式碼分析警告。 您可能會判斷解決這項警告需要太多重新編碼，而在任何實際實作程式碼時會有問題發生的可能性。 或是，您可能會認為警告中使用的分析對於特定內容是不適當的。 您可以隱藏個別的警告，使之不再出現於 [程式碼分析] 視窗中。
 
  隱藏警告：
@@ -70,12 +70,12 @@ ms.locfileid: "59659818"
 
    隱藏訊息時會插入可隱藏該程式碼行警告的 `#pragma(warning:`*WarningId*`)`。
 
-##  <a name="BKMK_Search"></a> 搜尋和篩選程式碼分析結果
+## <a name="BKMK_Search"></a> 搜尋和篩選程式碼分析結果
  您可以在多專案方案中搜尋警告訊息的詳細清單，以及篩選警告。
 
  ![搜尋和篩選程式碼分析視窗](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a> C++ 程式碼分析警告
+## <a name="Warnings"></a> C++ 程式碼分析警告
  程式碼分析引發下列 C++ 程式碼警告：
 
 |                                      規則                                      |                                                  描述                                                  |

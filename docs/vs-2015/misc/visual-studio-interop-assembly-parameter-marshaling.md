@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930605"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105056"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio Interop 組件參數封送處理
 Vspackage 以 managed 程式碼撰寫，可能必須呼叫或 unmanaged 的 COM 程式碼所呼叫。 一般而言，方法引數轉換，或由封送處理，會自動 interop 封送處理器。 不過，有時候引數無法轉換以直接的方式。 在這些情況下，interop 組件方法的原型參數來儘可能密集地符合 COM 函式參數。 如需詳細資訊，請參閱 < [Interop 封送處理](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)。  
@@ -28,11 +28,11 @@ Vspackage 以 managed 程式碼撰寫，可能必須呼叫或 unmanaged 的 COM 
   
  每個方法的參考文件包含三個相關的區段：  
   
--   [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] COM 函式原型。  
+- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] COM 函式原型。  
   
--   Interop 組件的方法原型。  
+- Interop 組件的方法原型。  
   
--   COM 參數清單和每個的簡短描述。  
+- COM 參數清單和每個的簡短描述。  
   
 ##### <a name="look-for-differences-between-the-two-prototypes"></a>尋找兩個原型之間的差異  
  大部分的互通性問題是衍生自 COM 介面中的特定類型的定義中相同類型的定義之間的不符[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]interop 組件。 例如，請考慮在能夠傳遞的差異`null`以 [out] 參數的值。 您必須尋找兩個原型之間的差異，並考慮他們所傳遞之資料的後果。  
@@ -79,17 +79,17 @@ else
 > [!NOTE]
 >  下列方法將已知`IUnknown`做為類型的物件指標<xref:System.IntPtr>。 在本節中所述，請處理它們。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
   
 ### <a name="optional-out-parameters"></a>[Out] 參數的選擇性  
  尋找定義為 [out] 參數資料類型 (`int`，`object`等等) 在 COM 介面，但定義為在相同的資料類型的陣列[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]interop 組件的方法原型。  

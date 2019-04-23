@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59e712d9354432bc142478935827a6439547321c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662389"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106263"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>選擇 vspackage 的安裝目錄
 VSPackage 和其支援的檔案必須是使用者的檔案系統上。 位置取決於 VSPackage 是否管理或未受管理，您的並排顯示版本設定配置和使用者選擇。
@@ -47,15 +47,15 @@ VSPackage 和其支援的檔案必須是使用者的檔案系統上。 位置取
 
  [管理 Vspackage](../../extensibility/managing-vspackages.md)文章指出登錄項目控制 where[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]實際上會尋找 VSPackage 的附屬 DLL。 不過，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]嘗試載入附屬 DLL 中命名的 LCID 值，以下列順序：
 
-1.  預設 LCID (Visual Studio LCID，例如 *\1033* 英文)
+1. 預設 LCID (Visual Studio LCID，例如 *\1033* 英文)
 
-2.  使用預設的子語言的預設 LCID。
+2. 使用預設的子語言的預設 LCID。
 
-3.  系統預設 LCID。
+3. 系統預設 LCID。
 
-4.  預設子語言使用系統預設 LCID。
+4. 預設子語言使用系統預設 LCID。
 
-5.  美國英文 (*。 \1033*或是 *。 \0x409*)。
+5. 美國英文 (*。 \1033*或是 *。 \0x409*)。
 
 如果您的 VSPackage DLL 包含資源和**SatelliteDll\DllName**登錄項目指向它，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]嘗試載入它們依上述順序。
 

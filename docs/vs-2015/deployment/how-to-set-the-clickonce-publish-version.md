@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b082e92ffac43e48725285bc9fa9052dd82cfd92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bca76d104550a8607de82c9092f57d43c027e63c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943617"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104471"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>HOW TO：設定 ClickOnce 發行版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "58943617"
   
 ### <a name="to-change-the-publish-version"></a>若要變更的發行版本  
   
-1.  選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
+1. 選取方案總管 中的專案，然後按一下 [專案]  功能表中的 [屬性] 。  
   
-2.  按一下 [發佈] 索引標籤。  
+2. 按一下 [發佈] 索引標籤。  
   
-3.  在 **發行版本**欄位中，遞增**主要**，**次要**，**建置**，或**修訂**版本數字。  
+3. 在 **發行版本**欄位中，遞增**主要**，**次要**，**建置**，或**修訂**版本數字。  
   
     > [!NOTE]
     >  您應該永遠不會遞減版本號碼;因此，這麼做可能會造成無法預期的更新行為。  

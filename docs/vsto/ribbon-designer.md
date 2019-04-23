@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867256"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103636"
 ---
 # <a name="ribbon-designer"></a>功能區設計工具
   功能區設計工具是視覺效果設計畫布。 若要將自訂索引標籤、 群組和控制項加入 Microsoft Office 應用程式的功能區中使用功能區設計工具。
@@ -40,11 +40,11 @@ ms.locfileid: "54867256"
 
  若要開啟功能區設計工具，加入**功能區 （視覺化設計工具）** 項目加入您的專案。 您接著可以使用設計工具來執行下列工作：
 
--   [設計功能區配置](#DesigningRibbonLayout)
+- [設計功能區配置](#DesigningRibbonLayout)
 
--   [處理事件，並設定控制項屬性](#HandleEventsSetProperties)
+- [處理事件，並設定控制項屬性](#HandleEventsSetProperties)
 
--   [將控制項加入至 Backstage 檢視](#CustomizingMicrosoftOfficeButton)
+- [將控制項加入至 Backstage 檢視](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
 >  有一些您無法使用功能區設計工具完成的工作。 如需有關這些工作和完成它們的詳細資訊，請參閱 <<c0> [ 功能區概觀](../vsto/ribbon-overview.md)。
@@ -52,7 +52,7 @@ ms.locfileid: "54867256"
  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:您可以使用功能區設計工具自訂 Outlook 功能區？](http://go.microsoft.com/fwlink/?LinkID=130312).
 
 ## <a name="add-a-ribbon-visual-designer-item-to-a-project"></a>將功能區 （視覺化設計工具） 項目加入至專案
- 若要使用功能區設計工具，加入新**功能區 （視覺化設計工具）** 項目加入您的專案。 如需詳細資訊，請參閱[＜How to：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。
+ 若要使用功能區設計工具，加入新**功能區 （視覺化設計工具）** 項目加入您的專案。 如需詳細資訊，請參閱[如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。
 
  當您將加入新**功能區 （視覺化設計工具）** 項目時，Visual Studio 會自動將下列檔案加入您的專案：
 
@@ -64,7 +64,7 @@ ms.locfileid: "54867256"
 
   如果您已經有**功能區 （視覺化設計工具）** 項目從另一個專案，您可以重複使用目前專案中使用**加入現有項目** 對話方塊。
 
-##  <a name="DesigningRibbonLayout"></a> 設計功能區
+## <a name="DesigningRibbonLayout"></a> 設計功能區
  有三種方式可開啟 功能區設計工具：
 
 - 在 [**方案總管] 中**，按兩下功能區程式碼檔案。
@@ -98,7 +98,7 @@ ms.locfileid: "54867256"
 
    您無法將控制項從某個索引標籤到另一個功能區上。 如果您想要將控制項移至另一個索引標籤，您必須使用**剪下**命令來移除控制項從某個索引標籤，並貼上另一個索引標籤的控制項。如果您執行剪下的控制項，並將它貼入，事件處理常式會停止運作。 您可以重新連線中的事件處理常式**屬性**視窗。 如需詳細資訊，請參閱 <<c0> [ 屬性 視窗](../ide/reference/properties-window.md)。
 
-###  <a name="AddTabToRibbon"></a> 功能區中新增自訂索引標籤
+### <a name="AddTabToRibbon"></a> 功能區中新增自訂索引標籤
  有三種方式可將自訂索引標籤加入至功能區：
 
 - 新增索引標籤上，從**工具箱**。
@@ -114,14 +114,14 @@ ms.locfileid: "54867256"
 #### <a name="remove-custom-tabs-from-the-ribbon"></a>從功能區中移除自訂索引標籤
  有三種方式可從功能區中移除自訂索引標籤：
 
--   設計工具中，以滑鼠右鍵按一下，然後按一下**移除的功能區索引標籤**。
+- 設計工具中，以滑鼠右鍵按一下，然後按一下**移除的功能區索引標籤**。
 
--   在 **命令**窗格**屬性**視窗中，按一下**移除功能區索引標籤**。
+- 在 **命令**窗格**屬性**視窗中，按一下**移除功能區索引標籤**。
 
--   開啟**索引標籤集合編輯器**，選取  索引標籤，然後按一下**移除**。
+- 開啟**索引標籤集合編輯器**，選取  索引標籤，然後按一下**移除**。
 
 #### <a name="change-the-position-of-a-tab-on-the-ribbon"></a>變更功能區上的索引標籤的位置
- 您可以變更功能區上的自訂索引標籤的順序。 您也可以將自訂索引標籤放置之前或之後在功能區上的內建索引標籤。 如需詳細資訊，請參閱[＜How to：變更功能區上的索引標籤的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)。
+ 您可以變更功能區上的自訂索引標籤的順序。 您也可以將自訂索引標籤放置之前或之後在功能區上的內建索引標籤。 如需詳細資訊，請參閱[如何：變更功能區上的索引標籤的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)。
 
 #### <a name="customize-built-in-tabs-on-the-ribbon"></a>自訂功能區上的內建索引標籤
  內建索引標籤是已經在 Microsoft Office 應用程式的功能區的索引標籤。 例如，**資料** 索引標籤是在 Excel 中的內建索引標籤。
@@ -132,10 +132,10 @@ ms.locfileid: "54867256"
 
  如需如何自訂內建索引標籤的詳細資訊，請參閱[How to:自訂內建索引標籤](../vsto/how-to-customize-a-built-in-tab.md)。
 
-###  <a name="AddGroupsToTab"></a> 將群組加入至索引標籤
+### <a name="AddGroupsToTab"></a> 將群組加入至索引標籤
  群組會以邏輯方式組織功能區上的控制項。 將群組加入索引標籤。 加入群組中的所有其他控制項。
 
-###  <a name="AddControlsToGroups"></a> 將控制項新增至群組
+### <a name="AddControlsToGroups"></a> 將控制項新增至群組
  加入群組中的一個或多個控制項。 下表描述每個控制項。
 
 |控制項|描述|
@@ -154,7 +154,7 @@ ms.locfileid: "54867256"
 |**SplitButton**|附有功能表按鈕。 分割按鈕可以包含任何下列控制項：<br /><br /> 按鈕<br />-核取方塊<br />在資源庫內<br />功能表<br />分割按鈕<br />-切換按鈕<br />-   Separator<br /><br /> 功能表上，例如分割按鈕也有它自己的設計介面。 不過，不同於功能表上，您只能更新分割按鈕中的項目功能區載入至 Office 應用程式之前。 如需如何更新分割按鈕中的項目資訊，請參閱[功能區物件模型概觀](../vsto/ribbon-object-model-overview.md)。|
 |**ToggleButton**|會出現一個按鈕按下或未按下。|
 
-##  <a name="HandleEventsSetProperties"></a> 處理事件及設定屬性
+## <a name="HandleEventsSetProperties"></a> 處理事件及設定屬性
  功能區設計工具可讓您在設計階段設定控制項屬性，使用**屬性**視窗。 此外，在功能區會公開您可用來取得和設定功能區控制項的屬性，在執行階段的強類型的物件模型。
 
  您可以按兩下要開啟控制項的預設事件的事件處理常式之設計工具上的任何控制項。 您也可以使用來建立 「 所有其他控制項事件的事件處理常式**屬性**視窗。
@@ -163,7 +163,7 @@ ms.locfileid: "54867256"
 
  如需處理功能區事件和設定功能區控制項的屬性，在執行階段資訊，請參閱[功能區物件模型概觀](../vsto/ribbon-object-model-overview.md)。
 
-##  <a name="CustomizingMicrosoftOfficeButton"></a> 自訂 Backstage 檢視
+## <a name="CustomizingMicrosoftOfficeButton"></a> 自訂 Backstage 檢視
  您可以使用功能區設計工具將控制項新增至後按一下開啟功能表**檔案** 索引標籤。這個功能表稱為 Backstage 檢視。
 
  您無法使用功能區設計工具內建控制項之前或之後放置控制項。 內建控制項是已經出現在 Backstage 檢視的控制項。 如果您想要調整控制項的位置，內建控制項之前或之後，您必須使用功能區 XML。 如需詳細資訊**功能區 (XML)**，請參閱[功能區 XML](../vsto/ribbon-xml.md)。 如需自訂 Backstage 檢視的詳細資訊，請參閱 <<c0> [ 開發人員的 Office 2010 Backstage 檢視簡介](http://go.microsoft.com/fwlink/?LinkId=182189)並[來自訂開發人員的 Office 2010 Backstage 檢視](http://go.microsoft.com/fwlink/?LinkId=182188)。
@@ -172,7 +172,7 @@ ms.locfileid: "54867256"
 
  如需有關如何將控制項加入至 Backstage 檢視的資訊，請參閱[How to:將控制項加入至 Backstage 檢視](../vsto/how-to-add-controls-to-the-backstage-view.md)。
 
-##  <a name="Accessibility"></a> 在功能區設計工具中的協助工具
+## <a name="Accessibility"></a> 在功能區設計工具中的協助工具
  您可以使用鍵盤快速鍵移動功能區設計工具中的控制項。 某些鍵盤快速鍵適用於所有控制項，而且部分僅適用於具有功能表的控制項。
 
  下表顯示適用於所有控制項的鍵盤快速鍵。

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85a0cb811ecb21cf0dd607bd046011bb7018f3cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dc0dc26a01cdddb4b26dfa65acab2c497618a76e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697594"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106484"
 ---
 # <a name="change-view-settings-by-using-the-legacy-api"></a>使用舊版的 API 來變更檢視設定
 設定核心編輯器功能，例如自動換行、 選取範圍邊界和虛擬空間，可以藉由使用者變更**選項** 對話方塊。 不過，您也可變更這些設定以程式設計的方式。
@@ -25,13 +25,13 @@ ms.locfileid: "56697594"
 
  以下是變更檢視設定的核心編輯器執行個體的一般程序。
 
-1.  呼叫`QueryInterface`上 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) 的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>介面。
+1. 呼叫`QueryInterface`上 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) 的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>介面。
 
-2.  呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>方法，並指定值的 GUID_EditPropCategory_View_MasterSettings`rguidCategory`參數。
+2. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>方法，並指定值的 GUID_EditPropCategory_View_MasterSettings`rguidCategory`參數。
 
      執行此動作將指標傳回至<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>介面，其中包含一組檢視的強制屬性。 永遠強制在這個群組中的任何設定。 如果設定不屬於此群組中，則它會遵循指定的選項**選項**對話方塊或使用者的命令。
 
-3.  呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>方法，並指定適當的設定值，在`idprop`參數。
+3. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>方法，並指定適當的設定值，在`idprop`參數。
 
      例如，若要強制自動換行，呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>及指定 VSEDITPROPID_ViewLangOpt_WordWrap，值`vt`如`idprop`參數。 在此呼叫中，`vt`是型別 VT_BOOL 的變化和`vt.boolVal`為 VARIANT_TRUE。
 

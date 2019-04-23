@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4aa0517a20e0d667982fb2bfbf0784060628b09
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 863e60592fe82c468f48912c4e36182b1bb1a36b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653277"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104144"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>HOW TO：附加至 ASP.NET Web 應用程式以收集記憶體資料使用命令列的 Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "59653277"
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]  
 
-   -   選項 **/globalsamplegc** 和 **/globalsamplegclife** 會指定要收集之記憶體資料的類型。  
+   - 選項 **/globalsamplegc** 和 **/globalsamplegclife** 會指定要收集之記憶體資料的類型。  
 
         只指定下列其中一個選項。  
 
@@ -49,7 +49,7 @@ ms.locfileid: "59653277"
        |**/globalsamplegc**|啟用記憶體配置資料的收集功能。|  
        |**/globalsamplegclife**|啟用記憶體配置資料和物件存留期資料的收集功能。|  
 
-   -   **/samplelineoff** 選項會停止將收集的資料指派給特定的原始程式碼。 如果指定此選項，則在函式層級指派資料。  
+   - **/samplelineoff** 選項會停止將收集的資料指派給特定的原始程式碼。 如果指定此選項，則在函式層級指派資料。  
 
 3. 重新啟動電腦，以設定進行新的環境組態。  
 
@@ -83,16 +83,16 @@ ms.locfileid: "59653277"
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   處理序識別碼 `(PID)` 會指定 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序的處理序識別碼或處理序名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序 ID。  
+   - 處理序識別碼 `(PID)` 會指定 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 背景工作處理序的處理序識別碼或處理序名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序 ID。  
 
-   -   **/targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。  
+   - **/targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。  
 
 ## <a name="controlling-data-collection"></a>控制資料收集  
  當應用程式在執行時，您可以使用 **VSPerfCmd.exe** 選項，藉由開始和停止將資料寫入至分析工具資料檔中的方式，控制資料收集。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
 
--   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
+- 下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
 
     |選項|描述|  
     |------------|-----------------|  

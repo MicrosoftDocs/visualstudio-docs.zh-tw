@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34d643d3a5966ac287773b2d01d88596d51239f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b8081946da2053d257691c8ec5dc2b1302e4d75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105834"
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的應用程式部署概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ ms.locfileid: "58945990"
   
   您必須遵循下列步驟來利用信任的應用程式部署：  
   
-1.  取得發行者的憑證。  
+1. 取得發行者的憑證。  
   
-2.  將發行者加入所有用戶端上的信任的發行者存放區。  
+2. 將發行者加入所有用戶端上的信任的發行者存放區。  
   
-3.  建立您的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。  
+3. 建立您的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式。  
   
-4.  使用發行者的憑證簽署部署資訊清單。  
+4. 使用發行者的憑證簽署部署資訊清單。  
   
-5.  將應用程式部署發行到用戶端電腦。  
+5. 將應用程式部署發行到用戶端電腦。  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>取得發行者的憑證  
  數位憑證是 Microsoft Authenticode 驗證和安全性系統的核心元件。 Authenticode 是 Windows 作業系統的標準部分。 所有 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式必須以數位憑證簽署，不論它們是否參與信任的應用程式部署。 如需 Authenticode 如何與搭配運作的完整說明[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]，請參閱 < [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)。  
@@ -78,9 +78,9 @@ ms.locfileid: "58945990"
   
  如果您不在 Managed 桌面環境中部署您的應用程式，在將憑證加入信任的發行者存放區時有下列選項：  
   
--   <xref:System.Security.Cryptography?displayProperty=fullName> 命名空間。  
+- <xref:System.Security.Cryptography?displayProperty=fullName> 命名空間。  
   
--   CertMgr.exe，這是 Internet Explorer 的元件，因此存在於 Windows 98 和所有更新版本上。 如需詳細資訊，請參閱 < [Certmgr.exe （憑證管理員工具）](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb)。  
+- CertMgr.exe，這是 Internet Explorer 的元件，因此存在於 Windows 98 和所有更新版本上。 如需詳細資訊，請參閱 < [Certmgr.exe （憑證管理員工具）](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb)。  
   
 ### <a name="create-a-clickonce-application"></a>建立 ClickOnce 應用程式  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式是 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 用戶端應用程式，並結合描述應用程式及提供安裝參數的資訊清單檔案。 您可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 中的 [發行]  命令 ，將程式變成 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]應用程式。 或者，您可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 隨附的工具，產生 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]部署所需的所有檔案。 如需詳細步驟[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
