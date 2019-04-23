@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9346b448a64e6e1e89081d628865911897e37eb
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0cb4fc7b43ab3ae48f83f4497fe6fd0042d0c51a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070611"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>逐步解說：在 VSTO 增益集專案中的複雜資料繫結
   您可以將資料繫結至 VSTO 增益集專案中的主控制項和 Windows Forms 控制項。 本逐步解說示範如何在執行階段將控制項加入 Microsoft Office Excel 工作表，以及將控制項繫結至資料。
@@ -37,24 +37,24 @@ ms.locfileid: "54867555"
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
--   已附加 `AdventureWorksLT` 範例資料庫之執行中 SQL Server 2005 或 SQL Server 2005 Express 執行個體的存取權。 您可以下載`AdventureWorksLT`從資料庫[CodePlex 網站](http://go.microsoft.com/fwlink/?LinkId=115611)。 如需附加資料庫的詳細資訊，請參閱下列主題：
+- 已附加 `AdventureWorksLT` 範例資料庫之執行中 SQL Server 2005 或 SQL Server 2005 Express 執行個體的存取權。 您可以下載`AdventureWorksLT`從資料庫[CodePlex 網站](http://go.microsoft.com/fwlink/?LinkId=115611)。 如需附加資料庫的詳細資訊，請參閱下列主題：
 
-    -   若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱[How to:附加資料庫 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
+    - 若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱[How to:附加資料庫 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
 
-    -   若要使用命令列附加資料庫，請參閱[How to:將資料庫檔案附加至 SQL Server Express](/previous-versions/sql/)。
+    - 若要使用命令列附加資料庫，請參閱[How to:將資料庫檔案附加至 SQL Server Express](/previous-versions/sql/)。
 
 ## <a name="create-a-new-project"></a>建立新專案
  第一步是建立 Excel VSTO 增益集專案。
 
 ### <a name="to-create-a-new-project"></a>建立新的專案
 
-1.  使用 Visual Basic 或 C#，建立名稱為「從資料庫填入工作表」 的 Excel VSTO 增益集專案。
+1. 使用 Visual Basic 或 C#，建立名稱為「從資料庫填入工作表」 的 Excel VSTO 增益集專案。
 
-     如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+     如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 會開啟 `ThisAddIn.vb` 或 `ThisAddIn.cs` 檔案，然後將 [從資料庫填入工作表]  專案加入方案總管 。
 
@@ -94,27 +94,27 @@ ms.locfileid: "54867555"
 
 ### <a name="to-add-the-list-object-dataset-and-table-adapter"></a>加入清單物件、資料集和資料表配接器
 
-1.  在 `ThisAddIn` 類別中，宣告下列控制項來顯示 `Address` 資料集的 `AdventureWorksLTDataSet` 資料表。
+1. 在 `ThisAddIn` 類別中，宣告下列控制項來顯示 `Address` 資料集的 `AdventureWorksLTDataSet` 資料表。
 
      [!code-csharp[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#1)]
 
-2.  在 `ThisAddIn_Startup` 方法中，加入下列程式碼來初始化資料集，並在資料集中填入來自 `AdventureWorksLTDataSet` 資料集的資訊。
+2. 在 `ThisAddIn_Startup` 方法中，加入下列程式碼來初始化資料集，並在資料集中填入來自 `AdventureWorksLTDataSet` 資料集的資訊。
 
      [!code-csharp[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#2)]
      [!code-vb[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#2)]
 
-3.  將下列程式碼加入至 `ThisAddIn_Startup` 方法。 這會產生可擴充工作表的主項目。 如需詳細資訊，請參閱 <<c0> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
+3. 將下列程式碼加入至 `ThisAddIn_Startup` 方法。 這會產生可擴充工作表的主項目。 如需詳細資訊，請參閱 <<c0> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
      [!code-csharp[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#3)]
      [!code-vb[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#3)]
 
-4.  建立一個範圍並加入 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。
+4. 建立一個範圍並加入 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。
 
      [!code-csharp[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#4)]
      [!code-vb[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#4)]
 
-5.  使用 `AdventureWorksLTDataSet` 將清單物件繫結至 <xref:System.Windows.Forms.BindingSource>。 將您要繫結的資料行名稱傳入清單物件。
+5. 使用 `AdventureWorksLTDataSet` 將清單物件繫結至 <xref:System.Windows.Forms.BindingSource>。 將您要繫結的資料行名稱傳入清單物件。
 
      [!code-csharp[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#5)]
      [!code-vb[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#5)]
@@ -124,7 +124,7 @@ ms.locfileid: "54867555"
 
 ### <a name="to-test-the-vsto-add-in"></a>測試 VSTO 增益集
 
--   請按 **F5**。
+- 請按 **F5**。
 
      工作表中會建立名為 <xref:Microsoft.Office.Tools.Excel.ListObject> 的 `addressListObject` 控制項。 同時也會將名為 `adventureWorksLTDataSet` 的資料集物件和名為 <xref:System.Windows.Forms.BindingSource> 的 `addressBindingSource` 加入專案。 <xref:Microsoft.Office.Tools.Excel.ListObject> 已繫結至 <xref:System.Windows.Forms.BindingSource>，而後者又繫結至資料集物件。
 

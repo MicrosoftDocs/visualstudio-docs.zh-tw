@@ -1,5 +1,5 @@
 ---
-title: 錯誤： 無法啟動網頁伺服器上偵錯 |Microsoft Docs
+title: 錯誤：無法啟動網頁伺服器上偵錯 |Microsoft Docs
 ms.date: 05/23/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -26,14 +26,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 908500a333303857ac88d27c76b285464913ff1c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 53ffc893b63447ab75a439ea1e093ddaf4b75645
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526291"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067127"
 ---
-# <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在 Web 伺服器上啟動偵錯
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在網頁伺服器上開始偵錯
 
 當您嘗試偵錯 Web 伺服器上執行的 ASP.NET 應用程式時，您可能會收到這個錯誤訊息： `Unable to start debugging on the Web server`。
 
@@ -51,7 +51,7 @@ ms.locfileid: "57526291"
 - [遠端伺服器傳回錯誤](#server_error)
 - [無法啟動 ASP.NET 偵錯](#aspnet)
 - [偵錯工具無法連接到遠端電腦](#cannot_connect)
-- [參閱常見組態錯誤的說明。執行偵錯工具外部網頁即可提供詳細資訊。](#see_help)
+- [請參閱常見組態錯誤的說明。執行偵錯工具外部網頁即可提供詳細資訊。](#see_help)
 
 ## <a name="IISlist"></a> IIS 沒有列出符合啟動的網站 url
 
@@ -61,7 +61,7 @@ ms.locfileid: "57526291"
 
 ## <a name="web_server_config"></a> 未正確設定網頁伺服器
 
-- 請參閱[錯誤： 未正確設定 web 伺服器](../debugger/error-the-web-server-is-not-configured-correctly.md)。
+- 請參閱[錯誤：Web 伺服器未正確設定](../debugger/error-the-web-server-is-not-configured-correctly.md)。
 
 ## <a name="unabletoconnect"></a> 無法連接到 web 伺服器
 
@@ -104,7 +104,7 @@ ms.locfileid: "57526291"
 
 - 如果仍無法解決問題，或從遠端進行偵錯，後續步驟[檢查您的 IIS 設定](#vxtbshttpservererrorsthingstocheck)。
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> 檢查您的 IIS 設定
+## <a name="vxtbshttpservererrorsthingstocheck"></a> 檢查您的 IIS 設定
 
 之後若要解決此問題，以下詳述的步驟，並再重新嘗試偵錯，您可能也需要重設 IIS。 可以這麼做，開啟提升權限的命令提示字元並輸入`iisreset`。
 
@@ -159,5 +159,5 @@ ms.locfileid: "57526291"
 
     如果您無法取得您的應用程式使用偵錯工具，請嘗試在伺服器上，在本機建立基本的 ASP.NET 應用程式，然後再次嘗試基本的應用程式進行偵錯。 （您可能想要使用預設 ASP.NET MVC 範本。）如果您可以偵錯的基本應用程式，可協助您識別兩個組態之間的差異。 尋找設定的差異在 web.config 檔案中，例如 URL 重寫規則。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

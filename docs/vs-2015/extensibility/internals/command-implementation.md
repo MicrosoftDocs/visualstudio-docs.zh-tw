@@ -10,12 +10,12 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8cd48e7338823c94ad9a16f1b087daac6abe8f6e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a208fabd3d205793763698cde0f6fe367c7bb8b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940866"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067829"
 ---
 # <a name="command-implementation"></a>命令實作
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ if ( null != mcs )
   
 - 如果這兩種方法的實作會辨識 GUID 和命令，則方法應該設定的每個命令的命令旗標 欄位 (在`prgCmds`參數) 使用下列旗標：  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果支援該命令。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果支援該命令。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令不應該為可見的。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令不應該為可見的。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令切換開啟，而且似乎已檢查。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令切換開啟，而且似乎已檢查。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果此命令會啟用。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果此命令會啟用。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果應該隱藏命令，如果出現在捷徑功能表。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果應該隱藏命令，如果出現在捷徑功能表。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令功能表控制器，且未啟用，但它的下拉式選單清單不是空的以及仍然可用。 （這個旗標是很少使用）。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果命令功能表控制器，且未啟用，但它的下拉式選單清單不是空的以及仍然可用。 （這個旗標是很少使用）。  
   
 - 如果命令已定義在.vsct 檔案中以`TextChanges`旗標，請設定下列參數：  
   
-  -   設定`rgwz`項目`pCmdText`新命令文字的參數。  
+  - 設定`rgwz`項目`pCmdText`新命令文字的參數。  
   
-  -   設定`cwActual`項目`pCmdText`命令字串的大小參數。  
+  - 設定`cwActual`項目`pCmdText`命令字串的大小參數。  
   
   也請確定目前的內容不是自動化函式中，除非處理自動化函式，而且特別適合您的命令。  
   

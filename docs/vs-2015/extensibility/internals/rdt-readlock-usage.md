@@ -13,12 +13,12 @@ ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c818023d50b733a4818c87e67d0b49abde518ad2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9a6b5f86f0cfbb71f6264bdc74df72ad9209c9d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58940468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070156"
 ---
 # <a name="rdtreadlock-usage"></a>RDT_ReadLock 使用方式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "58940468"
   
  一般而言，您會使用<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>下列其中之一為 true 時：  
   
--   當您想無形的方式開啟的文件和唯讀的但它尚未建立的<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>應該擁有。  
+- 當您想無形的方式開啟的文件和唯讀的但它尚未建立的<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>應該擁有。  
   
--   當您希望使用者會提示您儲存使用者在 UI 中顯示，並嘗試將它關閉之前無形的方式開啟的文件。  
+- 當您希望使用者會提示您儲存使用者在 UI 中顯示，並嘗試將它關閉之前無形的方式開啟的文件。  
   
 ## <a name="how-to-manage-visible-and-invisible-documents"></a>How to Manage 可見和不可見的文件  
  當使用者在 UI 中，開啟文件<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>文件的擁有者，必須先建立和<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>旗標必須設定。 如果沒有<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>可以建立擁有者，則當使用者按一下時，將不會儲存文件**全部儲存**或關閉 IDE。 這表示如果已開啟文件無形的方式修改記憶體中，且使用者是系統提示您關閉時儲存文件，或如果儲存**全部儲存**選擇，則`RDT_ReadLock`無法使用。 相反地，您必須使用`RDT_EditLock`，並註冊<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>當<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER>旗標。  

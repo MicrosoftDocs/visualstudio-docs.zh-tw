@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6e40401b533d5fcaad8dc9bb4530580608efaad9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: bbeef5aba667f26c1297dfe02556ee192dd53a4b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670221"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072157"
 ---
 # <a name="image-service-and-catalog"></a>影像服務與資料庫目錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -215,78 +215,78 @@ ms.locfileid: "59670221"
 ### <a name="first-steps-managed"></a>第一個步驟 (managed)  
  若要使用映像服務，您需要將部分或全部的下列組件的參考加入至您的專案：  
 
--   **Microsoft.VisualStudio.ImageCatalog.dll**  
+- **Microsoft.VisualStudio.ImageCatalog.dll**  
 
-    -   如果您使用內建映像目錄 KnownMonikers 為必要項  
+    - 如果您使用內建映像目錄 KnownMonikers 為必要項  
 
--   **Microsoft.VisualStudio.Imaging.dll**  
+- **Microsoft.VisualStudio.Imaging.dll**  
 
-    -   如果您使用所需**CrispImage**並**ImageThemingUtilities**在 WPF UI  
+    - 如果您使用所需**CrispImage**並**ImageThemingUtilities**在 WPF UI  
 
--   **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
+- **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
 
-    -   如果您使用所需**ImageMoniker**並**ImageAttributes**類型  
+    - 如果您使用所需**ImageMoniker**並**ImageAttributes**類型  
 
-    -   **EmbedInteropTypes**應該設定為 true  
+    - **EmbedInteropTypes**應該設定為 true  
 
--   **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
+- **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
 
-    -   如果您使用所需**IVsImageService2**類型  
+    - 如果您使用所需**IVsImageService2**類型  
 
-    -   **EmbedInteropTypes**應該設定為 true  
+    - **EmbedInteropTypes**應該設定為 true  
 
--   **Microsoft.VisualStudio.Utilities.dll**  
+- **Microsoft.VisualStudio.Utilities.dll**  
 
-    -   如果您使用所需**BrushToColorConverter**如 ImageThemingUtilities。**ImageBackgroundColor**在 WPF UI  
+    - 如果您使用所需**BrushToColorConverter**如 ImageThemingUtilities。**ImageBackgroundColor**在 WPF UI  
 
--   **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
+- **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
 
-    -   如果您使用所需**IVsUIObject**類型  
+    - 如果您使用所需**IVsUIObject**類型  
 
--   **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
+- **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
 
-    -   如果您使用 WinForms 相關的 UI 協助程式為必要項  
+    - 如果您使用 WinForms 相關的 UI 協助程式為必要項  
 
-    -   **EmbedInteropTypes**應該設定為 true  
+    - **EmbedInteropTypes**應該設定為 true  
 
 ### <a name="first-steps-native"></a>第一個步驟 （原生）  
  若要使用映像服務，您需要包含部分或所有下列標頭至您的專案：  
 
--   **KnownImageIds.h**  
+- **KnownImageIds.h**  
 
-    -   如果您使用內建映像目錄所需**KnownMonikers**，但是不能使用**ImageMoniker**類型，例如當傳回值從**IVsHierarchy GetGuidProperty**或是**GetProperty**呼叫。  
+    - 如果您使用內建映像目錄所需**KnownMonikers**，但是不能使用**ImageMoniker**類型，例如當傳回值從**IVsHierarchy GetGuidProperty**或是**GetProperty**呼叫。  
 
--   **KnownMonikers.h**  
+- **KnownMonikers.h**  
 
-    -   如果您使用內建映像目錄所需**KnownMonikers**。  
+    - 如果您使用內建映像目錄所需**KnownMonikers**。  
 
--   **ImageParameters140.h**  
+- **ImageParameters140.h**  
 
-    -   如果您使用所需**ImageMoniker**並**ImageAttributes**型別。  
+    - 如果您使用所需**ImageMoniker**並**ImageAttributes**型別。  
 
--   **VSShell140.h**  
+- **VSShell140.h**  
 
-    -   如果您使用所需**IVsImageService2**型別。  
+    - 如果您使用所需**IVsImageService2**型別。  
 
--   **ImageThemingUtilities.h**  
+- **ImageThemingUtilities.h**  
 
-    -   如果您將無法讓映像服務來處理佈景主題為您的需要。  
+    - 如果您將無法讓映像服務來處理佈景主題為您的需要。  
 
-    -   如果映像服務可以處理您的映像佈景主題，請不要使用此標頭。  
+    - 如果映像服務可以處理您的映像佈景主題，請不要使用此標頭。  
 
--   **VSUIDPIHelper.h**  
+- **VSUIDPIHelper.h**  
 
-    -   如果您使用 DPI 協助程式來取得目前的 DPI 為必要項。  
+    - 如果您使用 DPI 協助程式來取得目前的 DPI 為必要項。  
 
 ## <a name="how-do-i-write-new-wpf-ui"></a>如何撰寫新的 WPF UI？  
 
-1.  藉由新增在以上所需的組件參考的開始前幾個步驟區段到您的專案。 您不需要新增它們全部，因此新增您需要的參考。 (注意： 如果您使用或享有**色彩**而不是**筆刷**，則可以略過參考**公用程式**，因為您不需要轉換子。)  
+1. 藉由新增在以上所需的組件參考的開始前幾個步驟區段到您的專案。 您不需要新增它們全部，因此新增您需要的參考。 (注意： 如果您使用或享有**色彩**而不是**筆刷**，則可以略過參考**公用程式**，因為您不需要轉換子。)  
 
-2.  選取所需的映像，並取得其 moniker。 使用  **KnownMoniker**，或使用您自己，如果您有自己的自訂映像和 moniker。  
+2. 選取所需的映像，並取得其 moniker。 使用  **KnownMoniker**，或使用您自己，如果您有自己的自訂映像和 moniker。  
 
-3.  新增**CrispImages**到您的 XAML。 （請參閱下列範例中）。  
+3. 新增**CrispImages**到您的 XAML。 （請參閱下列範例中）。  
 
-4.  設定**ImageThemingUtilities.ImageBackgroundColor** UI 階層中的屬性。 (這應該設定在其中的背景色彩為已知，不一定是在位置**CrispImage**。)（請參閱下列範例中）。  
+4. 設定**ImageThemingUtilities.ImageBackgroundColor** UI 階層中的屬性。 (這應該設定在其中的背景色彩為已知，不一定是在位置**CrispImage**。)（請參閱下列範例中）。  
 
 ```xaml  
 <Window  
@@ -312,19 +312,19 @@ ms.locfileid: "59670221"
 
  更新現有的 WPF UI 是相當簡單的程序，包含三個基本步驟：  
 
-1.  程式碼取代所有\<映像 > 在您使用的 UI 中的項目\<CrispImage > 項目  
+1. 程式碼取代所有\<映像 > 在您使用的 UI 中的項目\<CrispImage > 項目  
 
-2.  將來源的所有屬性都變更為 Moniker 屬性  
+2. 將來源的所有屬性都變更為 Moniker 屬性  
 
-    -   如果映像永遠不會變更，而且您使用**KnownMonikers**，然後以靜態方式繫結至該屬性**KnownMoniker**。 （請參閱上述範例中）。  
+    - 如果映像永遠不會變更，而且您使用**KnownMonikers**，然後以靜態方式繫結至該屬性**KnownMoniker**。 （請參閱上述範例中）。  
 
-    -   如果映像永遠不會變更，而且您使用您自己的自訂映像，然後以靜態方式繫結至您自己的 moniker。  
+    - 如果映像永遠不會變更，而且您使用您自己的自訂映像，然後以靜態方式繫結至您自己的 moniker。  
 
-    -   如果映像可以變更，繫結 Moniker 屬性，以通知屬性變更的程式碼屬性。  
+    - 如果映像可以變更，繫結 Moniker 屬性，以通知屬性變更的程式碼屬性。  
 
-3.  某處 UI 階層架構中設定**ImageThemingUtilities.ImageBackgroundColor**要確定色彩反轉運作正常。  
+3. 某處 UI 階層架構中設定**ImageThemingUtilities.ImageBackgroundColor**要確定色彩反轉運作正常。  
 
-    -   這可能需要使用**BrushToColorConverter**類別。 （請參閱上述範例中）。  
+    - 這可能需要使用**BrushToColorConverter**類別。 （請參閱上述範例中）。  
 
 ## <a name="how-do-i-update-win32-ui"></a>如何更新 Win32 UI？  
  新增下列程式碼，只要適當取代原始的映像載入。 切換傳回與 HIMAGELIST HICONs HBITMAPs，視需要的值。  
@@ -437,18 +437,18 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
 3. 當索引標籤取得小工具視窗索引標籤 （也用於 Ctrl + Tab 視窗切換器） 足夠。  
 
-   1.  移除這幾行 （如果有的話） 中的建構函式的類別，衍生自**ToolWindowPane**類型：  
+   1. 移除這幾行 （如果有的話） 中的建構函式的類別，衍生自**ToolWindowPane**類型：  
 
        ```csharp  
        this.BitmapResourceID = <Value>;  
        this.BitmapIndex = <Value>;  
        ```  
 
-   2.  請參閱步驟 1 的"How Do I 的新工具視窗中使用影像 Moniker？ 」 上一節。  
+   2. 請參閱步驟 1 的"How Do I 的新工具視窗中使用影像 Moniker？ 」 上一節。  
 
 4. 若要開啟工具視窗命令。  
 
-   -   請參閱步驟 2 的"How Do I 的新工具視窗中使用影像 Moniker？ 」 上一節。  
+   - 請參閱步驟 2 的"How Do I 的新工具視窗中使用影像 Moniker？ 」 上一節。  
 
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>如何使用.vsct 檔案中的影像 moniker？  
  下面加上註解的行所示，請更新您的.vsct 檔案：  
@@ -566,27 +566,27 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 1. 執行**ManifestFromResources**工具，將它傳遞影像區域。 這會產生帶狀的資訊清單。  
 
-   -   建議： 提供的資訊清單，以符合其使用量非預設名稱。  
+   - 建議： 提供的資訊清單，以符合其使用量非預設名稱。  
 
 2. 如果您只使用**KnownMonikers**，然後執行下列動作：  
 
-   -   取代\<映像 > 與資訊清單區段\<映像 / >。  
+   - 取代\<映像 > 與資訊清單區段\<映像 / >。  
 
-   -   移除所有 subimage 識別碼 (凡是\<imagestrip 名稱 > _ # #)。  
+   - 移除所有 subimage 識別碼 (凡是\<imagestrip 名稱 > _ # #)。  
 
-   -   建議： 重新命名的 AssetsGuid 符號和映像移除符號，以符合其使用方式。  
+   - 建議： 重新命名的 AssetsGuid 符號和映像移除符號，以符合其使用方式。  
 
-   -   取代每個**ContainedImage**的 GUID，以 $(ImageCatalogGuid)，取代每個**ContainedImage**的識別碼以 $(\<moniker >)，並將外部 ="true"屬性新增至每個**ContainedImage**  
+   - 取代每個**ContainedImage**的 GUID，以 $(ImageCatalogGuid)，取代每個**ContainedImage**的識別碼以 $(\<moniker >)，並將外部 ="true"屬性新增至每個**ContainedImage**  
 
-       -   \<moniker > 應該取代成**KnownMoniker**符合映像，但 「 KnownMonikers。 」 從名稱中移除。  
+       - \<moniker > 應該取代成**KnownMoniker**符合映像，但 「 KnownMonikers。 」 從名稱中移除。  
 
-   -   新增 < 匯入 Manifest="$(ManifestFolder)\\< 的相對安裝目錄路徑\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\>頂端\<符號 > 一節。  
+   - 新增 < 匯入 Manifest="$(ManifestFolder)\\< 的相對安裝目錄路徑\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\>頂端\<符號 > 一節。  
 
-       -   相對的路徑取決於製作資訊清單設定中所定義的部署位置。  
+       - 相對的路徑取決於製作資訊清單設定中所定義的部署位置。  
 
 3. 執行**ManifestToCode**工具來產生包裝函式，使現有的程式碼具有可用來查詢映像服務，影像區域的 moniker。  
 
-   -   建議： 提供包裝函式和命名空間，以符合其使用方式的非預設的名稱。  
+   - 建議： 提供包裝函式和命名空間，以符合其使用方式的非預設的名稱。  
 
 4. 執行所有加入時，安裝程式撰寫/部署和其他程式碼變更來處理映像服務和新的檔案。  
 
@@ -643,11 +643,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **我不需要支援 HIMAGELISTs**  
 
-1.  判斷一組**KnownMonikers** ，符合您的影像區域中的映像，或在您的影像區域中建立您自己的映像的 moniker。  
+1. 判斷一組**KnownMonikers** ，符合您的影像區域中的映像，或在您的影像區域中建立您自己的映像的 moniker。  
 
-2.  更新您用來取得映像，在所需的索引，要改為使用 moniker 的映像帶中的任何對應。  
+2. 更新您用來取得映像，在所需的索引，要改為使用 moniker 的映像帶中的任何對應。  
 
-3.  更新您的程式碼，使用映像服務要求透過更新對應的 moniker。 (這可能表示更新至**CrispImages**的 managed 程式碼，或從映像服務要求 HBITMAPs 或 HICONs 和將它們傳遞原生程式碼。)  
+3. 更新您的程式碼，使用映像服務要求透過更新對應的 moniker。 (這可能表示更新至**CrispImages**的 managed 程式碼，或從映像服務要求 HBITMAPs 或 HICONs 和將它們傳遞原生程式碼。)  
 
 ## <a name="testing-your-images"></a>測試您的映像  
  您可以使用影像庫檢視器工具來測試您的映像資訊清單，請確定已正確撰寫的所有項目。 您可以找到中的工具[Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx)。 您可以找到這項工具和其他文件[此處](https://aka.ms/VSImageThemeTools)。  
@@ -676,19 +676,19 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 ## <a name="faq"></a>常見問題集  
 
--   是否有任何相依性，您必須在載入時包含\<參考 Include="Microsoft.VisualStudio.*。Interop.14.0.DesignTime"/ > 嗎？  
+- 是否有任何相依性，您必須在載入時包含\<參考 Include="Microsoft.VisualStudio.*。Interop.14.0.DesignTime"/ > 嗎？  
 
-    -   設定 EmbedInteropTypes ="true"，所有的 interop Dll 上。  
+    - 設定 EmbedInteropTypes ="true"，所有的 interop Dll 上。  
 
--   如何使用 my 擴充功能部署的映像資訊清單？  
+- 如何使用 my 擴充功能部署的映像資訊清單？  
 
-    -   .Imagemanifest 檔案加入您的專案。  
+    - .Imagemanifest 檔案加入您的專案。  
 
-    -   將 [包含在 VSIX] 設定為 True。  
+    - 將 [包含在 VSIX] 設定為 True。  
 
--   我要更新我的 CPS 專案系統。 發生了什麼事**ImageName**並**StockIconService**？  
+- 我要更新我的 CPS 專案系統。 發生了什麼事**ImageName**並**StockIconService**？  
 
-    -   o CPS 已更新為使用 moniker 時，這些被移除。 您不再需要呼叫**StockIconService**，只傳遞所要**KnownMoniker**方法或屬性使用**ToProjectSystemType()** 中的擴充方法CPS 公用程式。 您可以找到的對應**ImageName**要**KnownMonikers**如下：  
+    - o CPS 已更新為使用 moniker 時，這些被移除。 您不再需要呼叫**StockIconService**，只傳遞所要**KnownMoniker**方法或屬性使用**ToProjectSystemType()** 中的擴充方法CPS 公用程式。 您可以找到的對應**ImageName**要**KnownMonikers**如下：  
 
         |||  
         |-|-|  
@@ -756,7 +756,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |ImageName.CSharpCodeFile|KnownImageIds.CSFileNode|  
         |ImageName.VisualBasicCodeFile|KnownImageIds.VBFileNode|  
 
-    -   我要更新我的完成清單提供者。 什麼**KnownMonikers**比對舊**StandardGlyphGroup**並**StandardGlyph**值？  
+    - 我要更新我的完成清單提供者。 什麼**KnownMonikers**比對舊**StandardGlyphGroup**並**StandardGlyph**值？  
 
         ||||  
         |-|-|-|  

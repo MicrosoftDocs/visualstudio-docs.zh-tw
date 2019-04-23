@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac7771e657b546fdfced7033067d6de26256b96
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28cc20d00a9846fa119666b01aea2efab3a128ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335645"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066412"
 ---
 # <a name="project-subtypes-design"></a>設計專案子類型
 
@@ -23,11 +23,11 @@ ms.locfileid: "56335645"
 
  下列主題將詳細說明的基本設計和實作專案子類型：
 
--   專案子類型設計。
+- 專案子類型設計。
 
--   多層級的彙總。
+- 多層級的彙總。
 
--   支援的介面。
+- 支援的介面。
 
 ## <a name="project-subtype-design"></a>專案子類型設計
 
@@ -73,11 +73,11 @@ ms.locfileid: "56335645"
 
 包裝一個較低的層級的專案子類型的專案子類型實作需要以合作方式進行程式設計，以允許內部專案子類型，才能正確運作。 程式設計責任清單包括：
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>正在包裝的內部的子類型的專案子類型的實作必須委派給<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>內部的專案子類型的實作，同時<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>方法。
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>正在包裝的內部的子類型的專案子類型的實作必須委派給<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>內部的專案子類型的實作，同時<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>方法。
 
--   <xref:EnvDTE80.IInternalExtenderProvider>包裝函式專案子類型的實作必須委派，其內部的專案子類型。 特別是，實作<xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A>必須獲得內部專案子類型之名稱的字串，然後再進行串連它想要新增為擴充項的字串。
+- <xref:EnvDTE80.IInternalExtenderProvider>包裝函式專案子類型的實作必須委派，其內部的專案子類型。 特別是，實作<xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A>必須獲得內部專案子類型之名稱的字串，然後再進行串連它想要新增為擴充項的字串。
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>包裝函式專案子類型的實作必須具現化<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>物件，其內部的專案子類型，並容納它做為私用的委派，因為只有基底專案的專案組態物件直接知道包裝函式專案子類型的組態物件存在。 外部專案子類型可以一開始，選擇其想要直接處理的組態介面，然後委派到內部的專案子類型的實作 rest <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>。
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>包裝函式專案子類型的實作必須具現化<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>物件，其內部的專案子類型，並容納它做為私用的委派，因為只有基底專案的專案組態物件直接知道包裝函式專案子類型的組態物件存在。 外部專案子類型可以一開始，選擇其想要直接處理的組態介面，然後委派到內部的專案子類型的實作 rest <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>。
 
 ## <a name="supporting-interfaces"></a>支援的介面
 

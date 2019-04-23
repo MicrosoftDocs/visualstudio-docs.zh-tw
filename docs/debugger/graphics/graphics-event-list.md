@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6af97740302d5e7053323b54ef11cbf1a279dd94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649988"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066776"
 ---
 # <a name="graphics-event-list"></a>圖形事件清單
 使用 Visual Studio 圖形分析器中的 [圖形事件清單]，來探索在轉譯遊戲或應用程式的畫面格時所記錄的 Direct3D 事件。
@@ -49,7 +49,7 @@ ms.locfileid: "59649988"
 
 ##### <a name="to-change-the-event-list-view-mode"></a>變更事件清單檢視模式
 
--   在**圖形事件清單**視窗中，清單上方的事件，找出**檢視**下拉式清單並選擇**時間表**檢視或**GPU 工作**檢視。
+- 在**圖形事件清單**視窗中，清單上方的事件，找出**檢視**下拉式清單並選擇**時間表**檢視或**GPU 工作**檢視。
 
 ### <a name="filtering-events"></a>篩選事件
  您可以使用 [搜尋] 方塊 (位在 [圖形事件清單]  視窗右上角) 篩選事件清單，使清單只包括名稱包含特定關鍵字的事件。 如上圖所示，您可以指定單一關鍵字 (如 `Vertex`)，或使用以分號分隔清單指定多個關鍵字，例如 `Draw;Primitive`，其符合名稱中有 `Draw` 或 `Primitive` 的事件。 搜尋會受到空格影響；例如， `VSSet` 和 `VS Set` 是不同的搜尋，因此，請務必小心地建立搜尋。

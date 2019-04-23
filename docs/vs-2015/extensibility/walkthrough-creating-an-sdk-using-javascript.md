@@ -8,12 +8,12 @@ ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 39092d309f8924e68016d5eedeb4f78766cfe29c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e953d9051b9bc7e95dc29e02eb580c4d93fca26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066945"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>逐步解說：使用 JavaScript 建立 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "58930026"
 ## <a name="prerequisites"></a>必要條件  
  若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
-##  <a name="createSimpleMathVSIX"></a> 若要建立 SimpleMathVSIX 擴充功能 SDK 專案  
+## <a name="createSimpleMathVSIX"></a> 若要建立 SimpleMathVSIX 擴充功能 SDK 專案  
   
-1.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
+1. 在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-2.  在範本類別清單中下**Visual C#**，選取**擴充性**，然後選取**VSIX 專案**範本。  
+2. 在範本類別清單中下**Visual C#**，選取**擴充性**，然後選取**VSIX 專案**範本。  
   
-3.  在 [**名稱**文字方塊中，指定`SimpleMathVSIX`，然後選擇 **[確定]** ] 按鈕。  
+3. 在 [**名稱**文字方塊中，指定`SimpleMathVSIX`，然後選擇 **[確定]** ] 按鈕。  
   
-4.  如果**Visual Studio 封裝精靈**出現時，請選擇**下一步**按鈕**歡迎**頁面上，然後在**第 1 頁的 7**，選擇**完成** 按鈕。  
+4. 如果**Visual Studio 封裝精靈**出現時，請選擇**下一步**按鈕**歡迎**頁面上，然後在**第 1 頁的 7**，選擇**完成** 按鈕。  
   
      雖然**資訊清單設計工具**隨即開啟，我們將會保留這個逐步解說簡單藉由直接修改資訊清單檔案。  
   
-5.  在 **方案總管**，開啟 source.extension.vsixmanifest 檔案中，捷徑功能表，然後選擇**檢視程式碼**。 您可以使用此程式碼取代檔案中的現有內容。  
+5. 在 **方案總管**，開啟 source.extension.vsixmanifest 檔案中，捷徑功能表，然後選擇**檢視程式碼**。 您可以使用此程式碼取代檔案中的現有內容。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -63,11 +63,11 @@ ms.locfileid: "58930026"
     </PackageManifest>  
     ```  
   
-6.  在 **方案總管**，開啟 SimpleMathVSIX 專案的捷徑功能表，然後選擇**新增**，**新項目**。  
+6. 在 **方案總管**，開啟 SimpleMathVSIX 專案的捷徑功能表，然後選擇**新增**，**新項目**。  
   
-7.  在 **資料**類別目錄中，選取**XML 檔案**，將檔案命名為`SDKManifest.xml`，，然後選擇 **新增** 按鈕。  
+7. 在 **資料**類別目錄中，選取**XML 檔案**，將檔案命名為`SDKManifest.xml`，，然後選擇 **新增** 按鈕。  
   
-8.  在 [**方案總管] 中**，開啟 SDKManifest.xml 檔案的捷徑功能表，然後選擇**開啟**顯示中的檔案**XML 編輯器**。  
+8. 在 [**方案總管] 中**，開啟 SDKManifest.xml 檔案的捷徑功能表，然後選擇**開啟**顯示中的檔案**XML 編輯器**。  
   
 9. SDKManifest.xml 檔案中加入下列程式碼。  
   
@@ -128,9 +128,9 @@ ms.locfileid: "58930026"
   
 17. 在 **方案總管**，在 arithmetic.js 檔案的捷徑功能表，選擇**屬性**。 這些屬性變更：  
   
-    -   設定**Include in VSIX**屬性設 **，則為 True**。  
+    - 設定**Include in VSIX**屬性設 **，則為 True**。  
   
-    -   設定**複製到輸出目錄**屬性設**永遠複製**。  
+    - 設定**複製到輸出目錄**屬性設**永遠複製**。  
   
 18. 在 **方案總管**，在 SimpleMathVSIX 專案的捷徑功能表，選擇 **建置**。  
   
@@ -140,23 +140,23 @@ ms.locfileid: "58930026"
   
 21. 重新啟動 Visual Studio。  
   
-##  <a name="createSampleApp"></a> 若要建立範例應用程式使用 SDK  
+## <a name="createSampleApp"></a> 若要建立範例應用程式使用 SDK  
   
-1.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
+1. 在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-2.  在範本類別清單中下**JavaScript**，選取**Windows 市集**，然後選取**空白應用程式**範本。  
+2. 在範本類別清單中下**JavaScript**，選取**Windows 市集**，然後選取**空白應用程式**範本。  
   
-3.  在 **名稱**方塊中，指定`ArithmeticUI`。 選擇 [確定]  按鈕。  
+3. 在 **名稱**方塊中，指定`ArithmeticUI`。 選擇 [確定]  按鈕。  
   
-4.  在 **方案總管**，開啟 ArithmeticUI 專案的捷徑功能表，然後選擇**新增**，**參考**。  
+4. 在 **方案總管**，開啟 ArithmeticUI 專案的捷徑功能表，然後選擇**新增**，**參考**。  
   
-5.  底下**Windows**，選擇**擴充功能**，並注意**簡單數學**隨即出現。  
+5. 底下**Windows**，選擇**擴充功能**，並注意**簡單數學**隨即出現。  
   
-6.  選取 [**簡單的數學**核取方塊，然後選擇**確定**] 按鈕。  
+6. 選取 [**簡單的數學**核取方塊，然後選擇**確定**] 按鈕。  
   
-7.  在**方案總管 中**下方**參考**，注意**簡單的數學**參考會顯示。 展開它，並請注意，有包含 arithmetic.js \js\ 資料夾。 您可以開啟 arithmetic.js 來確認已安裝您的原始程式碼。  
+7. 在**方案總管 中**下方**參考**，注意**簡單的數學**參考會顯示。 展開它，並請注意，有包含 arithmetic.js \js\ 資料夾。 您可以開啟 arithmetic.js 來確認已安裝您的原始程式碼。  
   
-8.  您可以使用下列程式碼來取代 default.htm 的內容。  
+8. 您可以使用下列程式碼來取代 default.htm 的內容。  
   
     ```  
     <!DOCTYPE html>  

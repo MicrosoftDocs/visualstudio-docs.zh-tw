@@ -11,12 +11,12 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 34336b93e8739bcba807aca72b26a47b581b7413
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47f752f00e1efe130f029a3cabdd2e3e3bf19449
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072436"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>將 Visual Studio 命令新增至起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,15 +72,15 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
   
 #### <a name="to-call-a-command-from-an-assembly"></a>若要從組件呼叫命令  
   
-1.  在您的方案中，加入組件的參考。  
+1. 在您的方案中，加入組件的參考。  
   
-2.  在 StartPage.xaml 檔案頂端，新增命名空間指示詞組件，如下列範例所示。  
+2. 在 StartPage.xaml 檔案頂端，新增命名空間指示詞組件，如下列範例所示。  
   
     ```xml  
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
     ```  
   
-3.  叫用命令，藉由設定`Command`XAML 物件，如下列範例所示的屬性。  
+3. 叫用命令，藉由設定`Command`XAML 物件，如下列範例所示的屬性。  
   
      Xaml  
   

@@ -12,12 +12,12 @@ ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d83f26183c422d39e69dfe106443dae54f576899
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 86e250c5a5922df52acea7445c97862a00cdc826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945575"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066828"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>使用受控套件架構實作專案類型 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Managed Package Framework (MPF) 提供 C# 類別，您可以使用，或繼承�
   
  若要將此專案新增至您的 VSPackage 方案中，執行下列作業：  
   
-1.  下載 MPFProj 檔案，才能*MPFProjectDir*。  
+1. 下載 MPFProj 檔案，才能*MPFProjectDir*。  
   
-2.  在  *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file，變更下列區塊：  
+2. 在  *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file，變更下列區塊：  
   
 ```  
 <!-- Provide a default value for $(ProjectBasePath) -->  
@@ -40,11 +40,11 @@ Managed Package Framework (MPF) 提供 C# 類別，您可以使用，或繼承�
   </PropertyGroup>  
 ```  
   
-1.  建立 VSPackage 專案。  
+1. 建立 VSPackage 專案。  
   
-2.  卸載 VSPackage 專案。  
+2. 卸載 VSPackage 專案。  
   
-3.  編輯 VSPackage.csproj 檔案，加上下列區塊在其他`<Import>`區塊：  
+3. 編輯 VSPackage.csproj 檔案，加上下列區塊在其他`<Import>`區塊：  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -56,17 +56,17 @@ Managed Package Framework (MPF) 提供 C# 類別，您可以使用，或繼承�
   </PropertyGroup>  
 ```  
   
-1.  儲存專案。  
+1. 儲存專案。  
   
-2.  關閉並重新開啟 VSPackage 方案中。  
+2. 關閉並重新開啟 VSPackage 方案中。  
   
-3.  重新開啟 VSPackage 專案。 您應該會看到一個名為 ProjectBase 的新目錄。  
+3. 重新開啟 VSPackage 專案。 您應該會看到一個名為 ProjectBase 的新目錄。  
   
-4.  新增下列參考加入 VSPackage 專案：  
+4. 新增下列參考加入 VSPackage 專案：  
   
      Microsoft.Build.Tasks.4.0  
   
-5.  建置專案。  
+5. 建置專案。  
   
 ## <a name="hierarchy-classes"></a>階層架構類別  
  下表摘要說明 MPFProj 支援專案階層架構的類別。 如需詳細資訊，請參閱 <<c0> [ 階層和選取範圍](../../extensibility/internals/hierarchies-and-selection.md)。  

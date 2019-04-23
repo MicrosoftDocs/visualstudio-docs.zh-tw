@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b28a279e729900d8a1cb26f25bca6370c00a08c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f63c271e096793a03616356b9eb7229e4f823fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774097"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071781"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>HOW TO：修改 3d 模型的樞紐點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54774097"
   
  本文件示範下列活動︰  
   
--   修改物件的樞紐分析點  
+- 修改物件的樞紐分析點  
   
 ## <a name="modifying-the-pivot-point-of-a-3-d-model"></a>修改 3D 模型的樞紐分析點  
  您可以修改 3D 模型的樞紐分析點，以重新定義其原點。  
@@ -49,6 +49,6 @@ ms.locfileid: "54774097"
   
    ![具有已修改樞紐點的房屋模型](../designers/media/digit-modified-model.png "Digit-Modified-Model")  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：建立基本 3d 模型](../designers/how-to-create-a-basic-3-d-model.md)   
  [模型編輯器](../designers/model-editor.md)

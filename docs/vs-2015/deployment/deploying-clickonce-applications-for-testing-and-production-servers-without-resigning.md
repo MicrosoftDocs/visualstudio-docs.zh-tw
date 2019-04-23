@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2354f65e1b042682a0e58a0dbb4bc12712bb47e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c853e24da3f203d67874d7b9740d3239abd78c14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066594"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>針對測試和實際執行伺服器部署 ClickOnce 應用程式但不重新簽章
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "58939593"
   
  第三方開發人員和 Isv 可以選擇加入，以在這項功能，讓他們的客戶更新其應用程式更容易。 這項功能可以用於下列情況：  
   
--   當正在更新應用程式時，不應用程式第一次安裝。  
+- 當正在更新應用程式時，不應用程式第一次安裝。  
   
--   只能在一個設定的電腦上的應用程式時。 例如，如果應用程式設定為指向兩個不同的資料庫，您無法使用這項功能。  
+- 只能在一個設定的電腦上的應用程式時。 例如，如果應用程式設定為指向兩個不同的資料庫，您無法使用這項功能。  
   
 ## <a name="excluding-deploymentprovider-from-deployment-manifests"></a>部署資訊清單時，排除 deploymentProvider  
  在.NET Framework 2.0 和.NET Framework 3.0 中，會在離線可用性的系統安裝任何 ClickOnce 應用程式必須指定`deploymentProvider`部署資訊清單中。 `deploymentProvider`通常稱為更新位置; 它是應用程式更新會檢查 ClickOnce 的位置。 這項需求，再加上需要讓應用程式發行者登入他們的部署，並不容易更新 ClickOnce 應用程式從廠商或其他第三方公司。 它也使它更難以部署相同的應用程式，從相同網路上的多個位置。  

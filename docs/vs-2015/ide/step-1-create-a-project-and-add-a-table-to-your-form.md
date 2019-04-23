@@ -9,14 +9,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f716c279bce14a2a262578de090ed59290890f57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bec6c539963d54bfa1d866ccc4811425bba9e3a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776027"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068570"
 ---
-# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步驟 1：建立專案並將資料表加入至表單
+# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步驟 1：建立專案並將資料表新增至表單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 建立配對遊戲的第一個步驟就是建立專案並將資料表加入至您的表單。 資料表可協助依 4x4 格線對齊圖示。 您也可以設定多個屬性來強化遊戲面板的外觀。  
@@ -31,9 +31,9 @@ ms.locfileid: "54776027"
   
 4. 在 [屬性] 視窗中，設定下列表單屬性。  
   
-   1.  將表單的 **Text** 屬性從 [Form1] 變更為 [Matching Game]。 此文字會出現在遊戲視窗的頂端。  
+   1. 將表單的 **Text** 屬性從 [Form1] 變更為 [Matching Game]。 此文字會出現在遊戲視窗的頂端。  
   
-   2.  將表單的大小設定為寬度 550 像素乘以高度 550 像素。 您可以將 **Size** 屬性設定為 [550, 550]，或是拖曳表單的角落直到您在整合式開發環境 (IDE) 的右下角看見正確的大小為止，以執行此動作。  
+   2. 將表單的大小設定為寬度 550 像素乘以高度 550 像素。 您可以將 **Size** 屬性設定為 [550, 550]，或是拖曳表單的角落直到您在整合式開發環境 (IDE) 的右下角看見正確的大小為止，以執行此動作。  
   
 5. 選擇 IDE 左側的 [工具箱] 索引標籤，以顯示工具箱。  
   
@@ -60,19 +60,19 @@ ms.locfileid: "54776027"
   
     選取 TableLayoutPanel 時，請開啟工具箱，然後將 [Label] 控制項 (位於 [通用控制項] 類別) 新增至 TableLayoutPanel 的左上角儲存格。 `Label` 控制項現在應該已在 IDE 中選取。 為其設定下列屬性。  
   
-   1.  請確定將標籤的 **BackColor** 屬性設定為 [CornflowerBlue]。  
+   1. 請確定將標籤的 **BackColor** 屬性設定為 [CornflowerBlue]。  
   
-   2.  將 [AutoSize] 屬性設定為 [False]。  
+   2. 將 [AutoSize] 屬性設定為 [False]。  
   
-   3.  將 **Dock** 屬性設定為 [Fill]。  
+   3. 將 **Dock** 屬性設定為 [Fill]。  
   
-   4.  選擇屬性旁的下拉式按鈕，然後選擇中間按鈕，以將 **TextAlign** 屬性設定為 [MiddleCenter]。 這可確保圖示會顯示在儲存格的中央。  
+   4. 選擇屬性旁的下拉式按鈕，然後選擇中間按鈕，以將 **TextAlign** 屬性設定為 [MiddleCenter]。 這可確保圖示會顯示在儲存格的中央。  
   
-   5.  選擇 **Font** 屬性。 應該會出現省略符號 (…) 按鈕。  
+   5. 選擇 **Font** 屬性。 應該會出現省略符號 (…) 按鈕。  
   
-   6.  選擇省略符號按鈕，並將 [字型] 值設定為 [Webdings]、將 [字型樣式] 設定為 [粗體]，並將 [大小] 設定為 [72]。  
+   6. 選擇省略符號按鈕，並將 [字型] 值設定為 [Webdings]、將 [字型樣式] 設定為 [粗體]，並將 [大小] 設定為 [72]。  
   
-   7.  將標籤的 **Text** 屬性設定為字母 **c**。  
+   7. 將標籤的 **Text** 屬性設定為字母 **c**。  
   
         TableLayoutPanel 中的左上角儲存格現在應該包含一個黑色方塊 (位於藍色背景中央)。  
   
@@ -91,6 +91,6 @@ ms.locfileid: "54776027"
   
 ### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
--   若要移到下一個教學課程步驟，請參閱[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。  
+- 若要前往下一個教學課程步驟，請參閱[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。  
   
--   若要回到概觀主題，請參閱[教學課程 3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)。
+- 若要回到概觀主題，請參閱[教學課程 3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)。

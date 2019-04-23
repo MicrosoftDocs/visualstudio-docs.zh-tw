@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c358f80284083625dfe8c0eb3484c95000beb63
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7f7fbb6c8e6a6310b736ade599ad7854bc4255c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670442"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070736"
 ---
 # <a name="support-for-user-settings"></a>支援使用者設定
 VSPackage 可能會定義一或多個設定類別，也就是當使用者選擇保存的狀態變數群組**匯入/匯出設定**命令**工具**功能表。 若要啟用此持續性，您可以使用 Api 設定中[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。
 
  自訂設定點和 GUID 指的登錄項目定義 VSPackage 的 [設定] 類別。 VSPackage 可以支援多個設定分類，每個已定義的自訂設定點。
 
--   實作的 interop 組件為基礎的設定 (使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>介面) 應該藉由編輯登錄，或使用登錄器指令碼 （.rgs 檔案） 建立自訂設定點。 如需詳細資訊，請參閱 [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts)。
+- 實作的 interop 組件為基礎的設定 (使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>介面) 應該藉由編輯登錄，或使用登錄器指令碼 （.rgs 檔案） 建立自訂設定點。 如需詳細資訊，請參閱 [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts)。
 
--   使用 Managed Package Framework (MPF) 的程式碼應該連結以建立自訂設定點<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>每個自訂設定點的 vspackage。
+- 使用 Managed Package Framework (MPF) 的程式碼應該連結以建立自訂設定點<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>每個自訂設定點的 vspackage。
 
      如果單一 VSPackage 支援數個自訂設定點，每個自訂設定點藉由個別的類別，而且每個已註冊的唯一執行個體<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>類別。 因此，實作類別的設定可以支援多個設定分類。
 

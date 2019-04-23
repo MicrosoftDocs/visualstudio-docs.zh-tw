@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：以 DataSet 設計工具建立 DataTable
+title: 逐步解說：以 Dataset 設計工具建立 DataTable
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7a01a249df088d2a89e64f1c04c69e80d69b111c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 1126117cb1fc26c4f61bfb0f6ed0e19e86ce9323
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926745"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072665"
 ---
-# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>逐步解說： 以 Dataset 設計工具建立 DataTable
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>逐步解說：以 Dataset 設計工具建立 DataTable
 
 本逐步解說說明如何建立<xref:System.Data.DataTable>（不含 TableAdapter) 使用**Dataset 設計工具**。 如需建立包含 Tableadapter 的資料表資訊，請參閱[建立和設定 Tableadapter](../data-tools/create-and-configure-tableadapters.md)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "55926745"
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增** > **專案**。
 
-2. 展開  **Visual C#** 或是**Visual Basic**左窗格中，然後選取**Windows Desktop**。
+2. 展開  **Visual C#** 或是**Visual Basic**的左側窗格中，然後選取**Windows Desktop**。
 
 3. 在中間窗格中，選取**Windows Forms 應用程式**專案類型。
 
@@ -37,33 +37,33 @@ ms.locfileid: "55926745"
 
 ## <a name="add-a-new-dataset-to-the-application"></a>將新的資料集新增至應用程式
 
-1.  在 [專案] 功能表中，選取 [新增新項目]。
+1. 在 [專案] 功能表中，選取 [新增新項目]。
 
      [新增項目] 對話方塊隨即出現。
 
-2.  在左側窗格中，選取**資料**，然後選取**DataSet**在中間窗格中。
+2. 在左側窗格中，選取**資料**，然後選取**DataSet**在中間窗格中。
 
-3.  選擇 [新增]。
+3. 選擇 [新增]。
 
      Visual Studio 會加入名為的檔案**DataSet1.xsd**專案中開啟它並**Dataset 設計工具**。
 
 ## <a name="add-a-new-datatable-to-the-dataset"></a>將新的 DataTable 加入至資料集
 
-1.  拖曳**DataTable**從**資料集**索引標籤**工具箱**拖曳至**Dataset 設計工具**。
+1. 拖曳**DataTable**從**資料集**索引標籤**工具箱**拖曳至**Dataset 設計工具**。
 
      一個名為資料表**DataTable1**加入資料集。
 
-2.  按一下標題列**DataTable1**並將它重新命名`Music`。
+2. 按一下標題列**DataTable1**並將它重新命名`Music`。
 
 ## <a name="add-columns-to-the-datatable"></a>將資料行加入至 DataTable
 
-1.  以滑鼠右鍵按一下**音樂**資料表。 指向**新增**，然後按一下**資料行**。
+1. 以滑鼠右鍵按一下**音樂**資料表。 指向**新增**，然後按一下**資料行**。
 
-2.  命名的資料行`SongID`。
+2. 命名的資料行`SongID`。
 
-3.  在 [屬性]  視窗中，將 <xref:System.Data.DataColumn.DataType%2A> 屬性設定為 <xref:System.Int16?displayProperty=fullName>。
+3. 在 [屬性]  視窗中，將 <xref:System.Data.DataColumn.DataType%2A> 屬性設定為 <xref:System.Int16?displayProperty=fullName>。
 
-4.  重複此程序，並新增下列資料行：
+4. 重複此程序，並新增下列資料行：
 
      `SongTitle`: <xref:System.String?displayProperty=fullName>
 

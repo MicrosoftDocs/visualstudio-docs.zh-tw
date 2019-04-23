@@ -12,21 +12,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce7b6705fcbafaf713faed6f937fcfa29bd013d6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 75caa29d90b41dc696ce586d50928b2adb0875f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067517"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>HOW TO：擷取 SharePoint 專案服務
   您可以存取 SharePoint 專案服務，在下列幾種解決方案：
 
--   SharePoint 專案系統，例如專案延伸模組、 專案項目擴充功能或專案項目類型定義的延伸模組。 如需這些類型的擴充功能的詳細資訊，請參閱[擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)。
+- SharePoint 專案系統，例如專案延伸模組、 專案項目擴充功能或專案項目類型定義的延伸模組。 如需這些類型的擴充功能的詳細資訊，請參閱[擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)。
 
--   延伸模組**SharePoint 連線**中的節點**伺服器總管**。 如需這些類型的擴充功能的詳細資訊，請參閱[擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
+- 延伸模組**SharePoint 連線**中的節點**伺服器總管**。 如需這些類型的擴充功能的詳細資訊，請參閱[擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
 
--   另一種 Visual Studio 擴充功能，例如 VSPackage 的詳細資訊。
+- 另一種 Visual Studio 擴充功能，例如 VSPackage 的詳細資訊。
 
 ## <a name="retrieve-the-service-in-project-system-extensions"></a>擷取專案系統擴充功能中的服務
  在 SharePoint 專案系統的任何延伸模組，您可以存取專案服務，利用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectService%2A>屬性<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>物件。
@@ -35,9 +35,9 @@ ms.locfileid: "56597371"
 
 #### <a name="to-retrieve-the-service-in-a-project-extension"></a>若要擷取專案擴充功能中的服務
 
-1.  在您實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>介面中，找出<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法。
+1. 在您實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>介面中，找出<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法。
 
-2.  使用*projectService*參數來存取服務。
+2. 使用*projectService*參數來存取服務。
 
      下列程式碼範例示範如何使用專案服務，以將訊息寫入**輸出**視窗和**錯誤清單**簡單專案擴充功能中的視窗。
 
@@ -48,9 +48,9 @@ ms.locfileid: "56597371"
 
 #### <a name="to-retrieve-the-service-in-a-project-item-extension"></a>若要擷取的專案項目延伸模組中的服務
 
-1.  在您實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>介面中，找出<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>方法。
+1. 在您實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>介面中，找出<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>方法。
 
-2.  使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A>的屬性*projectItemType*參數，以擷取服務。
+2. 使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A>的屬性*projectItemType*參數，以擷取服務。
 
      下列程式碼範例示範如何使用專案服務，以將訊息寫入**輸出**視窗和**錯誤清單**視窗中的簡單擴充**清單定義**專案項目。
 
@@ -61,9 +61,9 @@ ms.locfileid: "56597371"
 
 #### <a name="to-retrieve-the-service-in-a-project-item-type-definition"></a>若要擷取的專案項目類型定義中的服務
 
-1.  在您實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>介面中，找出<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。
+1. 在您實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>介面中，找出<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。
 
-2.  使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.ProjectService%2A>的屬性*typeDefinition*參數，以擷取服務。
+2. 使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.ProjectService%2A>的屬性*typeDefinition*參數，以擷取服務。
 
      下列程式碼範例示範如何使用專案服務，以將訊息寫入**輸出**視窗和**錯誤清單**簡單的專案項目類型定義中的視窗。
 
@@ -77,9 +77,9 @@ ms.locfileid: "56597371"
 
 #### <a name="to-retrieve-the-service-in-a-server-explorer-extension"></a>若要擷取的伺服器總管延伸模組中的服務
 
-1.  取得<xref:System.IServiceProvider>物件從<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A>屬性<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode>延伸模組中的物件。
+1. 取得<xref:System.IServiceProvider>物件從<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A>屬性<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode>延伸模組中的物件。
 
-2.  使用<xref:System.IServiceProvider.GetService%2A>方法來要求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>物件。
+2. 使用<xref:System.IServiceProvider.GetService%2A>方法來要求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>物件。
 
      下列程式碼範例示範如何使用專案服務，以將訊息寫入**輸出**視窗和**錯誤清單**從延伸模組新增到清單節點中快顯功能表視窗**伺服器總管**。
 

@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 612ed741e373b27c3564c185cc3e9bacffcb7739
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942060"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072847"
 ---
 # <a name="autos-and-locals-windows"></a>[自動變數] 和 [區域變數] 視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ void main() {
   
  在某些情況下，您也可以查看函式和方法的傳回值。 請參閱下方的 [View return values of method calls](#bkmk_returnValue) 。  
   
-##  <a name="bkmk_returnValue"></a> View return values of method calls  
+## <a name="bkmk_returnValue"></a> View return values of method calls  
  在 .NET 和 C++ 程式碼中，您可以在不進入或者跳離方法呼叫時檢查傳回值。 當方法呼叫的結果不會儲存在區域變數中，例如，方法做為另一個方法的參數或傳回值時，這項功能會很有用。  
   
  下列 C# 程式碼會加入兩個函式的傳回值：  
@@ -133,11 +133,11 @@ private static int subtractVars(int i, int j)
   
  不過，變更值時應該謹慎。 部分可能問題如下：  
   
--   評估某些運算式可能會變更變數的值，或是影響程式的狀態。 例如，評估 `var1 = ++var2` 會變更 `var1` 和 `var2`的值。  
+- 評估某些運算式可能會變更變數的值，或是影響程式的狀態。 例如，評估 `var1 = ++var2` 會變更 `var1` 和 `var2`的值。  
   
      變更資料的運算式被視為具有 [副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))，如果您不知道它們的存在，可能會產生非預期的結果。 請確定您在進行之前了解這類變更的結果。  
   
--   由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點變數中的某些最小顯著性位元變更。  
+- 由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點變數中的某些最小顯著性位元變更。  
   
 ## <a name="debug-location-toolbar"></a>偵錯位置工具列  
  您可以使用 [偵錯位置]  工具列選取想要的函式、執行緒或處理序。 設定中斷點，並開始偵錯。 (如果看不到此工具列，您可以按一下工具列區域的空白部分來啟用它。 您應該會看到一份工具列。選取 [偵錯位置] )。 當遇到中斷點時，執行會停止而且您可以看到 [偵錯位置] 工具列，它是下列圖形的底端列：  

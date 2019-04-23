@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e083da3dce7ed6b69309557d9e960a302f5b3d60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944223"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070780"
 ---
 # <a name="using-the-legacy-activity-designer"></a>使用舊版活動設計工具
 本主題描述如何在舊版 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 中使用活動設計工具。 當以 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 為目標時，請使用舊版設計工具。  
@@ -35,9 +35,9 @@ ms.locfileid: "58944223"
   
 2. 選取 **活動**或是**活動 （程式碼分開置放）** 範本。  
   
-   1.  使用**活動**範本來建立活動的活動定義和使用者程式碼，在相同的程式碼檔案。  
+   1. 使用**活動**範本來建立活動的活動定義和使用者程式碼，在相同的程式碼檔案。  
   
-   2.  使用**活動 （程式碼分開置放）** 範本來建立活動的活動定義表示成工作流程標記和不同的程式碼檔案中的使用者程式碼。  
+   2. 使用**活動 （程式碼分開置放）** 範本來建立活動的活動定義表示成工作流程標記和不同的程式碼檔案中的使用者程式碼。  
   
 3. 輸入活動名稱或保留預設名稱，然後按一下**新增**。  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 608ba29c9f2068ce053fd6b92ba053eb45869ddd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942325"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070832"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,8 @@ ms.locfileid: "58942325"
   
 ## <a name="debug-attribute"></a>debug 屬性  
  範例：  
- ```  
+
+```  
 debug="true"  
 ```  
   
@@ -70,7 +71,8 @@ debug="true"
   
 ## <a name="hostspecific-attribute"></a>hostspecific 屬性  
  範例：  
- ```  
+
+```  
 hostspecific="true"  
 ```  
   
@@ -81,7 +83,7 @@ hostspecific="true"
   
  由於這個屬性的類型依主應用程式的類型而定，因此只有在撰寫僅限搭配特定主應用程式使用的文字範本時才有用處。 它會適用於[設計階段範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，而非[執行階段範本](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
- 當 `hostspecific` 為 `true` 且您正在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 時，可以將 `this.Host` 的類型轉換為 IServiceProvider 來存取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如：  
+ 當 `hostspecific` 為 `true` 且您正在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 時，可以將 `this.Host` 的類型轉換為 IServiceProvider 來存取 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的功能。 您也可以使用 `Host.ResolvePath(filename)` 取得專案中檔案的絕對路徑。 例如:   
   
 ```csharp  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
@@ -144,7 +146,8 @@ Squares of numbers:
  更典型的是，您會將另一個前置處理過的範本指定為基底類別。 基底範本提供通用的文字區塊，可以與衍生之範本的文字相互交錯。 您可以使用 `<#+ ... #>` 類別功能區塊，以定義包含文字片段的方法。 例如，您可以在基底範本中放置輸出文字的架構，提供可在衍生之範本中被覆寫的虛擬方法：  
   
  執行階段 (前置處理過的) 文字範本 BaseTemplate.tt：  
- ```scr  
+
+```scr  
 This is the common header.  
 <#   
   SpecificFragment1();   
@@ -163,7 +166,8 @@ This is the common footer.
 ```  
   
  執行階段 (前置處理過的) 文字範本 DerivedTemplate1.tt：  
- ```csharp  
+
+```csharp  
 <#@ template language="C#" inherits="BaseTemplate" #>  
 <#   
   // Run the base template:  
@@ -188,12 +192,14 @@ protected override void SpecificFragment2()
 ```  
   
  用來叫用 DerivedTemplate1 的應用程式程式碼：  
- ```csharp  
+
+```csharp  
 Console.WriteLine(new DerivedTemplate().TransformText());  
 ```  
   
  產生的輸出：  
- ```  
+
+```  
 This is the common header.  
    Fragment 1 for DerivedTemplate1  
 A common central text.  

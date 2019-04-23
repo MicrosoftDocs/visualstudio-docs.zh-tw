@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee555376a2943cb29344aad2ed94da2b8ab2ae36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dc6492b52cb739c49bdba9f231ebcda313a66105
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617778"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068661"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>HOW TO：將篩選描述元加入至搜尋方法
   篩選描述元，讓取用者模型的執行之前，將值傳遞給方法。 如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -29,25 +29,25 @@ ms.locfileid: "56617778"
 
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>若要將篩選描述元加入至搜尋方法
 
-1.  在**BDC 方法詳細資料**視窗中，展開搜尋方法的節點，展開**參數** 節點，然後新增一個輸入的參數。 如需詳細資訊，請參閱[如何：新增參數至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)。
+1. 在**BDC 方法詳細資料**視窗中，展開搜尋方法的節點，展開**參數** 節點，然後新增一個輸入的參數。 如需詳細資訊，請參閱[如何：新增參數至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)。
 
-2.  在 [**方法的詳細資料**] 視窗中，選擇該參數的類型描述元。
+2. 在 [**方法的詳細資料**] 視窗中，選擇該參數的類型描述元。
 
-3.  在功能表列上選擇 [**檢視** > **屬性] 視窗**。
+3. 在功能表列上選擇 [**檢視** > **屬性] 視窗**。
 
-4.  在 **屬性**視窗中，將**型別名稱**適用於篩選的資料類型的屬性。
+4. 在 **屬性**視窗中，將**型別名稱**適用於篩選的資料類型的屬性。
 
      比方說，篩選可能會使用訂單日期來限制的方法所傳回的銷售訂單數目。 若要支援篩選，**型別名稱**的型別描述項的屬性必須設為**System.DateTime**。
 
-5.  在 [**方法的詳細資料**] 視窗中，展開**篩選描述元**節點。
+5. 在 [**方法的詳細資料**] 視窗中，展開**篩選描述元**節點。
 
-6.  在 **加入篩選描述元**清單中，選擇**建立的篩選描述元**。
+6. 在 **加入篩選描述元**清單中，選擇**建立的篩選描述元**。
 
      下方會出現新的篩選描述元**篩選描述元**節點。
 
-7.  在功能表列上選擇 [**檢視** > **屬性] 視窗**。
+7. 在功能表列上選擇 [**檢視** > **屬性] 視窗**。
 
-8.  在 [**屬性**] 視窗中，選擇**型別**屬性。
+8. 在 [**屬性**] 視窗中，選擇**型別**屬性。
 
 9. 在清單中會出現**型別**屬性中，選擇您想要的篩選模式。
 

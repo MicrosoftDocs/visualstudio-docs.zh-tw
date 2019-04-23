@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbc41b24dd0e58dd24e0af99afe458d27f8ade6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b73d5c8acac211db09926acf0ba8009aa04ac0a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930853"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070892"
 ---
 # <a name="search-the-schema-set"></a>搜尋結構描述集合
 
 **XML 結構描述總管**可讓您搜尋結構描述集如下：
 
--   關鍵字搜尋。
+- 關鍵字搜尋。
 
--   結構描述特有的搜尋。
+- 結構描述特有的搜尋。
 
 ## <a name="keyword-search"></a>關鍵字搜尋
 
@@ -31,11 +31,11 @@ ms.locfileid: "55930853"
 
  **XML 結構描述總管**搜尋結構描述設定下列屬性：
 
--   符合指定之關鍵字的任何 `name` 或 `ref` 屬性。 您可以依名稱尋找項目、 屬性、 類型等等。
+- 符合指定之關鍵字的任何 `name` 或 `ref` 屬性。 您可以依名稱尋找項目、 屬性、 類型等等。
 
--   include 陳述式的 `schemaLocation` 屬性。
+- include 陳述式的 `schemaLocation` 屬性。
 
--   import 陳述式的 `namespace` 屬性。
+- import 陳述式的 `namespace` 屬性。
 
 ## <a name="schema-specific-search"></a>結構描述特定搜尋
 

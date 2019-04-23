@@ -11,12 +11,12 @@ ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 130d1b6b783a07261b9825c37e21fa2eeb008954
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 738b2608d5afa188cad38d92ed613307d2919ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941292"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068726"
 ---
 # <a name="test-area-4-check-in"></a>測試區域 4：簽入
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58941292"
   
 ## <a name="common-expected-behavior"></a>常見的預期的行為  
   
--   專案和加入至方案或專案原始檔控制下的檔案會出現在**簽入** 對話方塊中，**暫止簽入**視窗。  
+- 專案和加入至方案或專案原始檔控制下的檔案會出現在**簽入** 對話方塊中，**暫止簽入**視窗。  
   
--   簽入之後, 加入的項目會出現在原始檔控制。  
+- 簽入之後, 加入的項目會出現在原始檔控制。  
   
--   在檢查之後, 已更新的項目是正確版本存放區中。  
+- 在檢查之後, 已更新的項目是正確版本存放區中。  
   
 ## <a name="test-cases"></a>測試案例  
  以下是簽入測試區域的特定測試案例。  
