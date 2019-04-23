@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47eed859b0969289a78f4eb13314241e89982f5d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: c2c1591e3d859bd768e39d0db461cc0402c57258
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042506"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>逐步解說：下載組件隨選與 ClickOnce 部署 API 使用設計工具
 第一次執行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，預設會下載應用程式中包含的所有組件。 不過，可能是小部分使用者所使用之應用程式的組件。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將應用程式中的特定組件標示為「選擇性」，以及在 Common Language Runtime 需要時，使用 <xref:System.Deployment.Application> 中的類別來如何下載它們。
@@ -71,15 +71,15 @@ ms.locfileid: "54919300"
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>使用 Visual Studio 將組件標示為 ClickOnce 應用程式中的選用項目
 
-1.  以滑鼠右鍵按一下方案總管  中的 Windows Forms 專案，然後按一下 [屬性] 。 選取 [發行]  索引標籤。
+1. 以滑鼠右鍵按一下方案總管  中的 Windows Forms 專案，然後按一下 [屬性] 。 選取 [發行]  索引標籤。
 
-2.  按一下 [應用程式檔案]  按鈕。
+2. 按一下 [應用程式檔案]  按鈕。
 
-3.  尋找 *ClickOnceLibrary.dll* 的清單。 將 [發行狀態]  下拉式方塊設定成 [包含] 。
+3. 尋找 *ClickOnceLibrary.dll* 的清單。 將 [發行狀態]  下拉式方塊設定成 [包含] 。
 
-4.  展開 [群組]  下拉式方塊，然後選取 [新增] 。 輸入名稱 `ClickOnceLibrary` 作為新的群組名稱。
+4. 展開 [群組]  下拉式方塊，然後選取 [新增] 。 輸入名稱 `ClickOnceLibrary` 作為新的群組名稱。
 
-5.  繼續發行您的應用程式中所述[How to:使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+5. 繼續發行您的應用程式中所述[How to:使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>使用資訊清單產生和編輯工具 (圖形化用戶端 (MageUI.exe)) 將組件標示為 ClickOnce 應用程式中的選用項目
 

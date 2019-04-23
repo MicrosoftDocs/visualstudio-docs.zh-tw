@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 553b7a542bc49b3105462a5f53082917b1741916
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 80c8d385e0c78461df5b7938d356ec43a481e46e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803664"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670416"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>使用 Blend for Visual Studio 建立 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,6 @@ Blend for Visual Studio 可協助您設計 XAML 型的 Windows 桌面、Web、[W
 
  **分類**：展開和摺疊屬性的分類。 按一下 [展開] ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") 和 [摺疊] ![摺疊](../designers/media/b5-collapse-button.png "b5_collapse_button")，即可顯示或隱藏分類詳細資料。
 
-
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                 ![](../designers/media/b1-1.png "B1_1")                                 |                                                                              **名稱及類型**：檢視所選物件的圖示、名稱及類型。                                                                              |
@@ -123,5 +122,5 @@ Blend for Visual Studio 可協助您設計 XAML 型的 Windows 桌面、Web、[W
 
  **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [[屬性] 面板](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
  [插入控制項並修改其行為](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)[製作物件動畫](../designers/animate-objects-in-xaml-designer.md)[繪製圖案與路徑](../designers/draw-shapes-and-paths.md) [Visual Studio 和 Blend for Visual Studio 中設計的 XAML](../designers/designing-xaml-in-visual-studio.md)

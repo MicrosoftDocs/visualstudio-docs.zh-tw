@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 387ec5814e0b5a2a8c2169198a3ceebad47e10d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599476"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040142"
 ---
 # <a name="ribbon-overview"></a>功能區概觀
   功能區是一種方式，使其更容易尋找到組織相關的命令。 命令會顯示為功能區上的控制項。 控制項分為*群組*沿著水平帶狀的應用程式視窗的頂端。 相關的群組會組織在索引標籤上。
@@ -93,12 +93,12 @@ ms.locfileid: "56599476"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>將多個功能區項目加入至專案
  一個專案中可以加入多個功能區項目。 如果您想要執行下列兩項工作的其中之一，這會很有用：
 
--   建立 Outlook 功能區*偵測器*。 如需詳細資訊，請參閱 < [outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)。
+- 建立 Outlook 功能區*偵測器*。 如需詳細資訊，請參閱 < [outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)。
 
     > [!NOTE]
     >  [偵測器] 是使用者執行特定工作時開啟的視窗，例如建立電子郵件訊息。
 
--   選取要顯示在執行階段的功能區。
+- 選取要顯示在執行階段的功能區。
 
 ### <a name="select-which-ribbons-to-display-at-runtime"></a>選取要在執行階段顯示哪個功能區
  因為專案可以包含多個功能區，您可以選取要顯示在執行階段的功能區。
@@ -115,7 +115,7 @@ ms.locfileid: "56599476"
 
 ### <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)|示範如何自訂 Microsoft Office 應用程式的功能區中，新增**功能區 （視覺化設計工具）** 或是**功能區 (XML)** 在 Office 專案的項目。|
 |[功能區設計工具](../vsto/ribbon-designer.md)|說明如何使用功能區設計工具，以及在將自訂索引標籤、 群組和控制項新增至 Microsoft Office 應用程式的功能區。|

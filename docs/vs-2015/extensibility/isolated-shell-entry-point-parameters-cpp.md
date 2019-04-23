@@ -1,5 +1,5 @@
 ---
-title: 獨立模式 Shell 進入點參數 （c + +） |Microsoft Docs
+title: 獨立模式 Shell 進入點參數 (C++) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,14 +11,14 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 313632661c3f73fdbd0f23616a068913c77508f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6089c4ef32ef0d0b0bce081cef6d16bd569c0901
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945963"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041945"
 ---
-# <a name="isolated-shell-entry-point-parameters-c"></a>Isolated 的 Shell 進入點參數 （c + +）
+# <a name="isolated-shell-entry-point-parameters-c"></a>獨立模式 Shell 進入點參數 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio shell 為基礎的應用程式啟動時，它會呼叫 Visual Studio shell 的啟動進入點。 下列設定可以覆寫的殼層啟動進入點的呼叫中。 如需每個設定的說明，請參閱[。Pkgdef 檔案](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)。  
@@ -79,17 +79,17 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
   
  如需布林值的設定，下列字串代表 true 值;所有其他字串代表 false 值。 這些字串是不區分大小寫。  
   
--   \+  
+- \+  
   
--   1  
+- 1  
   
--   -1  
+- -1  
   
--   於  
+- 於  
   
--   true  
+- true  
   
--   是  
+- 是  
   
 ## <a name="example"></a>範例  
  若要停用增益集，並變更您的應用程式的預設專案位置，您可以設定 「 AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp 」 的最後一個參數。  

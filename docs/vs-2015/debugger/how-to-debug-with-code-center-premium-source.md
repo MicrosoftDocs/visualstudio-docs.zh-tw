@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0290fa7c83b36c19663aef85c0179fb9458ddcf
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000786"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039873"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>HOW TO：使用 Code Center Premium 來源進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,27 +72,27 @@ ms.locfileid: "59000786"
   
      如果在完成此程序之後，您無法使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 來偵錯原始程式碼，請檢查快取位置中是否有先前已快取且過期的符號檔。 移除過期的符號檔。  
   
-11. 按一下 [確定 **Deploying Office Solutions**]。  
+11. 按一下 [確定] 。  
   
 12. 重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 以確實保存設定。  
   
 ### <a name="to-debug-your-source-code-using-attach-to-process"></a>若要使用附加至處理序來偵錯原始程式碼  
   
-1.  連接智慧卡讀取裝置，並插入您從共享原始碼計畫取得的卡片。  
+1. 連接智慧卡讀取裝置，並插入您從共享原始碼計畫取得的卡片。  
   
-2.  啟動 Visual Studio。  
+2. 啟動 Visual Studio。  
   
-3.  開啟您的 Visual Studio 專案。  
+3. 開啟您的 Visual Studio 專案。  
   
-4.  在 **工具**功能表上，按一下**附加至處理序**。  
+4. 在 **工具**功能表上，按一下**附加至處理序**。  
   
-5.  在 [ **připojit k procesu** ] 對話方塊中，按一下**選取**。  
+5. 在 [ **připojit k procesu** ] 對話方塊中，按一下**選取**。  
   
-6.  在 **選取程式碼類型**對話方塊的 **偵測這些程式碼類型**，選取**原生**，**受控**，和**管理 （v4.0)**。  
+6. 在 **選取程式碼類型**對話方塊的 **偵測這些程式碼類型**，選取**原生**，**受控**，和**管理 （v4.0)**。  
   
-7.  按一下 [ **[確定]** 以關閉**選取程式碼類型**] 對話方塊。  
+7. 按一下 [ **[確定]** 以關閉**選取程式碼類型**] 對話方塊。  
   
-8.  在 **可用的處理序**方塊中，選取您想要偵錯的處理序。  
+8. 在 **可用的處理序**方塊中，選取您想要偵錯的處理序。  
   
 9. 按一下 [附加] 。  
   
@@ -117,27 +117,27 @@ ms.locfileid: "59000786"
   
 4. 針對方案中的每個 Managed 專案執行下列作業  
   
-   1.  在 [方案總管] 中，開啟專案的捷徑功能表，然後再選擇**屬性**。  
+   1. 在 [方案總管] 中，開啟專案的捷徑功能表，然後再選擇**屬性**。  
   
-   2.  選取 **偵錯**，然後選擇**啟用 unmanaged 程式碼偵錯**。  
+   2. 選取 **偵錯**，然後選擇**啟用 unmanaged 程式碼偵錯**。  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>若要偵錯使用 Code Center Premium 來源的方案  
   
-1.  在 `Package` 類別中，在 package 建構函式設定中斷點。  
+1. 在 `Package` 類別中，在 package 建構函式設定中斷點。  
   
-2.  在 `Debug`功能表上，按一下**啟動偵錯**。  
+2. 在 `Debug`功能表上，按一下**啟動偵錯**。  
   
-3.  當您叫用在 package 建構函式中斷點時，請移至**呼叫堆疊**視窗，並以滑鼠右鍵按一下您想要載入的組件的堆疊框架的符號，然後按一下**載入符號**。  
+3. 當您叫用在 package 建構函式中斷點時，請移至**呼叫堆疊**視窗，並以滑鼠右鍵按一下您想要載入的組件的堆疊框架的符號，然後按一下**載入符號**。  
   
      按兩下呼叫堆疊以載入原始檔。  
   
 ### <a name="to-browse-source-code-on-code-center-premium"></a>若要瀏覽 Code Center Premium 上的原始程式碼  
   
-1.  連接智慧卡讀取裝置，並插入您從共享原始碼計畫取得的卡片。  
+1. 連接智慧卡讀取裝置，並插入您從共享原始碼計畫取得的卡片。  
   
-2.  啟動 Internet Explorer，輸入下列 URL：`https://codepremium.msdn.microsoft.com`  
+2. 啟動 Internet Explorer，輸入下列 URL：`https://codepremium.msdn.microsoft.com`  
   
-3.  瀏覽並尋找您想要的原始檔。  
+3. 瀏覽並尋找您想要的原始檔。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   

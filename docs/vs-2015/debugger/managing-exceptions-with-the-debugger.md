@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da57824eb467bf1691175a80d74cc61b8f181617
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944332"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040960"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>使用偵錯工具管理例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ ms.locfileid: "58944332"
   
  發生例外狀況時，偵錯工具都會將例外狀況訊息寫入至 [輸出] 視窗。 在下列情況下，它可能會中斷執行：  
   
--   當例外狀況已擲回且未處理。  
+- 當例外狀況已擲回且未處理。  
   
--   當偵錯工具設定為在叫用任何處理常式之前就已擲回例外狀況時，立即中斷執行。  
+- 當偵錯工具設定為在叫用任何處理常式之前就已擲回例外狀況時，立即中斷執行。  
   
--   如果您曾設定 [Just My Code](../debugger/just-my-code.md)，且偵錯工具設定為在非由使用者程式碼所處理的任何例外狀況時中斷。  
+- 如果您曾設定 [Just My Code](../debugger/just-my-code.md)，且偵錯工具設定為在非由使用者程式碼所處理的任何例外狀況時中斷。  
   
 > [!NOTE]
 >  ASP.NET 具有最上層例外狀況處理常式，這會在瀏覽器中顯示錯誤頁面。 它不會中斷執行，除非 [Just My Code]  已開啟。 如需範例，請參閱下列 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 。  
@@ -141,7 +141,7 @@ ms.locfileid: "58944332"
   
    ![還原在例外狀況設定的預設值](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-###  <a name="BKMK_UserUnhandled"></a> 設定要在使用者未處理的例外狀況繼續偵錯工具  
+### <a name="BKMK_UserUnhandled"></a> 設定要在使用者未處理的例外狀況繼續偵錯工具  
  如果您正在偵錯具有 [Just My Code](../debugger/just-my-code.md)的 .NET 或 JavaScript 程式碼，則可以告知偵錯工具不中斷使用者程式碼中未處理，但在其他地方處理的例外狀況。  
   
 1. 在 [例外狀況設定]  視窗中，開啟內容功能表，方法是在視窗中按一下滑鼠右鍵，然後選取 [顯示行] 。 (如果您關閉了 [Just My Code] ，您就不會看到這個命令。)  

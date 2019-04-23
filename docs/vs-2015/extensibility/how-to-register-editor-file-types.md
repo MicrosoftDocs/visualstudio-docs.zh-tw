@@ -10,12 +10,12 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 697565600ef37024abde3acd8f2092c690f31e32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58945741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042037"
 ---
 # <a name="how-to-register-editor-file-types"></a>HOW TO：登錄編輯程式檔案類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58945741"
   
 #### <a name="to-register-editor-file-types-using-mpf-classes"></a>若要登錄編輯程式檔案類型，使用 MPF 類別  
   
-1.  提供<xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>以適當的參數，讓您的編輯器，VSPackage 的類別中的類別。  
+1. 提供<xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>以適當的參數，讓您的編輯器，VSPackage 的類別中的類別。  
   
     ```  
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,   
@@ -43,7 +43,7 @@ ms.locfileid: "58945741"
   
      `NameResourceID` 定義於 Resources.h BasicEditorUI 專案檔案，並識別為 「 My 編輯器 」 編輯器。  
   
-2.  覆寫 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 方法。  
+2. 覆寫 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 方法。  
   
      在您實作<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法中，呼叫<xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A>方法並傳遞做為編輯器 factory 的執行個體，則以下所示。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "58945741"
   
      此步驟中註冊編輯器 factory 及編輯器的副檔名。  
   
-3.  取消登錄編輯器 factory。  
+3. 取消登錄編輯器 factory。  
   
      處置 VSPackage 時，會自動解除登錄編輯器 factory。 如果編輯器 factory 物件會實作<xref:System.IDisposable>介面，其`Dispose`方法呼叫之後的處理站已移除註冊使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "58945741"
   
 #### <a name="to-register-editor-file-types-using-a-registry-script"></a>若要註冊使用登錄指令碼編輯器的檔案類型  
   
-1.  在您登錄指令碼中，定義編輯器 factory 及編輯器 factory 的 GUID 字串中所示`GUID_BscEditorFactory`下列登錄指令碼區段。 此外，定義延伸模組及編輯器擴充功能的優先權：  
+1. 在您登錄指令碼中，定義編輯器 factory 及編輯器 factory 的 GUID 字串中所示`GUID_BscEditorFactory`下列登錄指令碼區段。 此外，定義延伸模組及編輯器擴充功能的優先權：  
   
     ```  
   
@@ -92,9 +92,9 @@ ms.locfileid: "58945741"
   
      編輯器檔案延伸模組，在此範例會識別為 「.rtf"，其優先順序是"50"。 BscEdit 範例專案的 Resource.h 檔案中定義的 GUID 字串。  
   
-2.  註冊 VSPackage。  
+2. 註冊 VSPackage。  
   
-3.  登錄編輯器 factory。  
+3. 登錄編輯器 factory。  
   
      編輯器 factory 會在中註冊<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A>實作。  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a5b4b3c73dede1a25f9c104ff85534623691002e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4530b12ff3c5fa05d63d845cf4d364d2c238ff77
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000751"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041285"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 整合模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,14 +28,14 @@ ms.locfileid: "59000751"
 
  如需其他資訊和範例程式碼，請參閱：
 
--   [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
--   [Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)
+- [Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)
 
-##  <a name="provide"></a> 提供存取權給 DSL
+## <a name="provide"></a> 提供存取權給 DSL
  您必須定義用於 DSL 的 ModelBusAdapter，才能建立模型或其項目的 ModelBus 參考。 執行這項操作的最簡單方式是使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型匯流排擴充功能，將命令加入至 DSL 設計工具。
 
-###  <a name="expose"></a> 若要公開 （expose） 給模型匯流排 DSL 定義
+### <a name="expose"></a> 若要公開 （expose） 給模型匯流排 DSL 定義
 
 1. 除非您已安裝 Visual Studio 模型匯流排擴充功能，否則請下載並進行安裝。 如需詳細資訊，請參閱 < [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
@@ -80,32 +80,32 @@ ms.locfileid: "59000751"
 
    或者，如果您要使用項目名稱 (而不是 GUID) 來識別項目，您可以覆寫產生之配接器的組件。 覆寫配接器類別中的下列方法：
 
--   覆寫 `GetElementId` 以傳回您要使用的 ID。 建立參考時，會呼叫這個方法。
+- 覆寫 `GetElementId` 以傳回您要使用的 ID。 建立參考時，會呼叫這個方法。
 
--   覆寫 `ResolveElementReference` 以從模型匯流排參考中找到正確項目。
+- 覆寫 `ResolveElementReference` 以從模型匯流排參考中找到正確項目。
 
-##  <a name="editRef"></a> 從另一個 DSL 存取 DSL
+## <a name="editRef"></a> 從另一個 DSL 存取 DSL
  您可以在 DSL 的網域屬性中儲存模型匯流排參考，以及撰寫自訂程式碼來使用這些參考。 您也可以讓使用者選擇模型檔和模型內的某個項目，藉此建立模型匯流排參考。
 
  若要讓 DSL 使用另一個 DSL 的參考，您應該先將它*消費者*模型匯流排參考。
 
 #### <a name="to-enable-a-dsl-to-consume-references-to-an-exposed-dsl"></a>允許 DSL 使用已公開 DSL 的參考
 
-1.  在 DSL 定義圖表中，以滑鼠右鍵按一下圖表的主要部分，並再按**啟用 Modelbus**。
+1. 在 DSL 定義圖表中，以滑鼠右鍵按一下圖表的主要部分，並再按**啟用 Modelbus**。
 
-2.  在對話方塊中，選取**我想要啟用這個模型使用模型匯流排參考**。
+2. 在對話方塊中，選取**我想要啟用這個模型使用模型匯流排參考**。
 
-3.  在使用 DSL 的 Dsl 專案中，將下列組件加入至專案參考。 您會發現這些組件 （.dll 檔案） 中 ModelBusAdapter\bin\\* 目錄公開的 DSL。
+3. 在使用 DSL 的 Dsl 專案中，將下列組件加入至專案參考。 您會發現這些組件 （.dll 檔案） 中 ModelBusAdapter\bin\\* 目錄公開的 DSL。
 
-    -   公開的 DSL 組件，例如**Fabrikam.FamilyTree.Dsl.dll**
+    - 公開的 DSL 組件，例如**Fabrikam.FamilyTree.Dsl.dll**
 
-    -   已公開的模型匯流排配接器組件，例如**Fabrikam.FamilyTree.ModelBusAdapter.dll**
+    - 已公開的模型匯流排配接器組件，例如**Fabrikam.FamilyTree.ModelBusAdapter.dll**
 
-4.  將下列 .NET 組件加入至使用 DSL 專案的專案參考。
+4. 將下列 .NET 組件加入至使用 DSL 專案的專案參考。
 
-    1.  **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
+    1. **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
 
-    2.  **Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.dll**
+    2. **Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.dll**
 
 #### <a name="to-store-a-model-bus-reference-in-a-domain-property"></a>在網域屬性中儲存模型匯流排參考
 
@@ -119,39 +119,39 @@ ms.locfileid: "59000751"
 
 #### <a name="to-allow-the-user-to-set-a-model-bus-reference-in-a-domain-property"></a>允許使用者設定網域屬性中的模型匯流排參考
 
-1.  以滑鼠右鍵按一下 網域屬性，然後按一下**編輯 ModelBusReference 特定屬性**。 對話方塊隨即開啟。 這是*Model Bus Picker*。
+1. 以滑鼠右鍵按一下 網域屬性，然後按一下**編輯 ModelBusReference 特定屬性**。 對話方塊隨即開啟。 這是*Model Bus Picker*。
 
-2.  選取適當**modelbusreference 類型**： 模型或模型內的項目。
+2. 選取適當**modelbusreference 類型**： 模型或模型內的項目。
 
-3.  在檔案對話方塊篩選字串中，輸入字串 (例如 `Family Tree files |*.ftree`)。 替代已公開 DSL 的副檔名。
+3. 在檔案對話方塊篩選字串中，輸入字串 (例如 `Family Tree files |*.ftree`)。 替代已公開 DSL 的副檔名。
 
-4.  如果您選擇模型內某個項目的參考，您可以加入使用者可選取的類型清單，例如 Company.FamilyTree.Person。
+4. 如果您選擇模型內某個項目的參考，您可以加入使用者可選取的類型清單，例如 Company.FamilyTree.Person。
 
-5.  按一下  **確定**，然後按一下**轉換所有範本**在 方案總管 工具列中。
+5. 按一下  **確定**，然後按一下**轉換所有範本**在 方案總管 工具列中。
 
     > [!WARNING]
     >  如果您尚未選取有效的模型或實體，[確定] 按鈕即使可能顯示為已啟用，也不會有任何作用。
 
-6.  如果您指定目標類型清單 (例如 Company.FamilyTree.Person)，則必須將組件參考加入至您的 DSL 專案，並參考目標 DSL 的 DLL (例如 Company.FamilyTree.Dsl.dll)。
+6. 如果您指定目標類型清單 (例如 Company.FamilyTree.Person)，則必須將組件參考加入至您的 DSL 專案，並參考目標 DSL 的 DLL (例如 Company.FamilyTree.Dsl.dll)。
 
 #### <a name="to-test-a-model-bus-reference"></a>測試模型匯流排參考
 
-1.  建置已公開的 DSL 和使用 DSL。
+1. 建置已公開的 DSL 和使用 DSL。
 
-2.  按 F5 鍵或 CTRL+F5，在實驗模式中執行其中一個 DSL。
+2. 按 F5 鍵或 CTRL+F5，在實驗模式中執行其中一個 DSL。
 
-3.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之實驗執行個體的偵錯專案中，加入每個 DSL 執行個體的檔案。
+3. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之實驗執行個體的偵錯專案中，加入每個 DSL 執行個體的檔案。
 
     > [!NOTE]
     >  只有在模型是相同 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中的項目時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 才能解析這些模型的參考。 例如，您無法建立針對檔案系統其他部分之模型檔的參考。
 
-4.  在已公開的 DSL 執行個體中建立一些項目和連結，並加以儲存。
+4. 在已公開的 DSL 執行個體中建立一些項目和連結，並加以儲存。
 
-5.  開啟使用 DSL 的執行個體，然後選取具有模型匯流排參考屬性的模型項目。
+5. 開啟使用 DSL 的執行個體，然後選取具有模型匯流排參考屬性的模型項目。
 
-6.  在 [屬性] 視窗中，按兩下模型匯流排參考屬性。 選擇器對話方塊隨即開啟。
+6. 在 [屬性] 視窗中，按兩下模型匯流排參考屬性。 選擇器對話方塊隨即開啟。
 
-7.  按一下 **瀏覽**，然後選取 公開的 DSL 執行個體。
+7. 按一下 **瀏覽**，然後選取 公開的 DSL 執行個體。
 
      如果已指定特定項目 (Element) 類型的模型匯流排參考，選擇器也可讓您選擇模型內的某個項目 (Item)。
 
@@ -382,9 +382,9 @@ ModelBusReference elementReferenceRestored =
 
  MBR 的還原序列化作業可分為兩個階段：
 
--   `ModelBusReferencePropertySerializer` 是處理 MBR 標頭的標準序列化程式。 它使用標準 DSL `SerializationContext` 屬性封包，該封包使用 `ReferenceContext` 索引鍵儲存在 `ModelBusReferencePropertySerializer.ModelBusLoadContextKey` 中。 特別要提的是，`SerializationContext` 應包含 `ModelBus` 的執行個體。
+- `ModelBusReferencePropertySerializer` 是處理 MBR 標頭的標準序列化程式。 它使用標準 DSL `SerializationContext` 屬性封包，該封包使用 `ReferenceContext` 索引鍵儲存在 `ModelBusReferencePropertySerializer.ModelBusLoadContextKey` 中。 特別要提的是，`SerializationContext` 應包含 `ModelBus` 的執行個體。
 
--   您的 ModelBus 配接器處理配接器特有的 MBR 部分。 它可以使用儲存在 MBR 之 ReferenceContext 中的其他資訊。 簡單檔案架構的配接器會使用索引鍵的根檔案路徑`FilePathLoadContextKey`和`FilePathSaveContextKey`。
+- 您的 ModelBus 配接器處理配接器特有的 MBR 部分。 它可以使用儲存在 MBR 之 ReferenceContext 中的其他資訊。 簡單檔案架構的配接器會使用索引鍵的根檔案路徑`FilePathLoadContextKey`和`FilePathSaveContextKey`。
 
      模型檔中的配接器參考只有在使用時才可還原序列化。
 

@@ -1,5 +1,5 @@
 ---
-title: CA3003:檢閱程式碼的檔案路徑資料隱碼攻擊弱點
+title: CA3003：檢閱程式碼是否有檔案路徑插入式攻擊弱點
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c20d3efb9ea84a7e8bb22288303313ef44b2b795
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018483"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040673"
 ---
-# <a name="ca3003-review-code-for-file-path-injection-vulnerabilities"></a>CA3003:檢閱程式碼的檔案路徑資料隱碼攻擊弱點
+# <a name="ca3003-review-code-for-file-path-injection-vulnerabilities"></a>CA3003：檢閱程式碼是否有檔案路徑插入式攻擊弱點
 
 |||
 |-|-|

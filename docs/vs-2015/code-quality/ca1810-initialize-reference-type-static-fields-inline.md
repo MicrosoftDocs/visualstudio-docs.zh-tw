@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2722286af0d4c95fec30593047bedf1fe0ba4d2d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943492"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037864"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810:必須將參考類型內部的靜態欄位初始化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58943492"
 
  靜態建構函式檢查會降低效能。 通常會使用靜態建構函式，只是用來初始化靜態欄位的第一次存取之前發生在哪個情況下，您必須只確定靜態初始設定的靜態欄位。 `beforefieldinit`行為是適用於這些和其他大部分的類型。 當靜態初始設定會影響全域狀態，而且下列其中一項條件成立時才不適用：
 
--   全域狀態上的效果很昂貴，而且不需要，如果未使用的型別。
+- 全域狀態上的效果很昂貴，而且不需要，如果未使用的型別。
 
--   全域狀態效果可以存取而不需存取類型的任何靜態欄位。
+- 全域狀態效果可以存取而不需存取類型的任何靜態欄位。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請在宣告所有靜態資料時將靜態資料初始化，並移除靜態建構函式。

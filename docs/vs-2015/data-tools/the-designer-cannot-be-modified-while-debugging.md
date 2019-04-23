@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb021b5222c0c89d15ca9be9c9c155152118df5f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: f79b57d01a091e3617e7470297aa6205aa4e20e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041856"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>偵錯期間無法修改設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59658769"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   按一下 **停止偵錯**上**偵錯**功能表。  
+- 按一下 **停止偵錯**上**偵錯**功能表。  
   
      應用程式會停止偵錯，而 O/R Designer 中的項目會成為可修改的狀態。  
   

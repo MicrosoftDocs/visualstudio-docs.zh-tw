@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2d38c46d630f7deccaec8c093c2c4e75456eec0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5a889250e641e004bdb0d89f6965c43c3d6b8e2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041394"
 ---
 # <a name="extract-method-refactoring-c"></a>擷取方法重構 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ ms.locfileid: "58930545"
   
  **Extrahovat Metodu**具有下列優點：  
   
--   強調離散、 可重複使用的方法，建議採用最佳編碼作法。  
+- 強調離散、 可重複使用的方法，建議採用最佳編碼作法。  
   
--   可促進程式碼透過極佳的組織可以自我記錄。  
+- 可促進程式碼透過極佳的組織可以自我記錄。  
   
      當具描述性的名稱時使用的高階方法讀的起來就像一系列的註解。  
   
--   可建立更細微的方法，以簡化覆寫。  
+- 可建立更細微的方法，以簡化覆寫。  
   
--   減少程式碼重複。  
+- 減少程式碼重複。  
   
 ### <a name="to-use-extract-method"></a>若要使用 擷取方法  
   
-1.  建立名為 `ExtractMethod` 的主控台應用程式，再以下列程式碼取代 `Program`。  
+1. 建立名為 `ExtractMethod` 的主控台應用程式，再以下列程式碼取代 `Program`。  
   
     ```csharp  
     class A  
@@ -68,13 +68,13 @@ ms.locfileid: "58930545"
     }  
     ```  
   
-2.  選取您想要擷取的程式碼片段：  
+2. 選取您想要擷取的程式碼片段：  
   
     ```csharp  
     double area = PI * radius * radius;  
     ```  
   
-3.  在 **重構**功能表上，按一下**擷取方法**。  
+3. 在 **重構**功能表上，按一下**擷取方法**。  
   
      **擷取方法** 對話方塊隨即出現。  
   
@@ -82,11 +82,11 @@ ms.locfileid: "58930545"
   
      您可以也以滑鼠右鍵按一下所選程式碼中，指向**重構**，然後按一下**擷取方法**以顯示**擷取方法**對話方塊。  
   
-4.  指定名稱，以針對新的方法，例如`CircleArea`，請在**新的方法名稱** 方塊中。  
+4. 指定名稱，以針對新的方法，例如`CircleArea`，請在**新的方法名稱** 方塊中。  
   
      底下會顯示新的方法簽章的預覽**預覽方法簽章**。  
   
-5.  按一下 [確定 **Deploying Office Solutions**]。  
+5. 按一下 [確定] 。  
   
 ## <a name="remarks"></a>備註  
  當您使用**擷取方法**命令時，新的方法會插入下列來源類別中的成員相同。  

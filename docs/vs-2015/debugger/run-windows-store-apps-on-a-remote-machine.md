@@ -14,12 +14,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 262391145b5cfc3889b2eea32df4e0955ed71b1a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fa0fac38c79e4c54cb461ef51e016508d043f202
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938962"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039791"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>在遠端電腦上執行 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58938962"
   
  Visual Studio 遠端工具應用程式可讓您從執行 Visual Studio 的第二部電腦，執行、偵錯、程式碼剖析及測試在一個裝置上執行的 Windows 市集應用程式。 當 Visual Studio 電腦不支援 Windows 市集應用程式專屬功能 (如觸控、地理位置和實體方向) 時，在遠端裝置上執行就特別有效。 本主題說明設定和啟動遠端工作階段的程序。  
   
-##  <a name="BKMK_In_this_topic"></a>本主題內容  
+## <a name="BKMK_In_this_topic"></a>本主題內容  
  您將學習：  
   
  [必要條件](#BKMK_Prerequisites)  
@@ -51,27 +51,27 @@ ms.locfileid: "58938962"
   
   [執行遠端偵錯工作階段](#BKMK_RunRemoteDebug)  
   
-##  <a name="BKMK_Prerequisites"></a> 必要條件  
+## <a name="BKMK_Prerequisites"></a> 必要條件  
  若要在遠端裝置上偵錯：  
   
--   遠端裝置和 Visual Studio 電腦必須透過網路連接，或直接透過乙太網路纜線連接。 不支援透過網際網路偵錯。  
+- 遠端裝置和 Visual Studio 電腦必須透過網路連接，或直接透過乙太網路纜線連接。 不支援透過網際網路偵錯。  
   
--   遠端裝置上必須安裝開發人員授權。  
+- 遠端裝置上必須安裝開發人員授權。  
   
--   遠端裝置必須正在執行遠端偵錯元件。  
+- 遠端裝置必須正在執行遠端偵錯元件。  
   
--   您必須是遠端裝置的系統管理員，才能在安裝時設定防火牆。 您必須具有遠端裝置的使用者存取權，才能執行或連接到遠端偵錯工具。  
+- 您必須是遠端裝置的系統管理員，才能在安裝時設定防火牆。 您必須具有遠端裝置的使用者存取權，才能執行或連接到遠端偵錯工具。  
   
-##  <a name="BKMK_Security"></a> 安全性  
+## <a name="BKMK_Security"></a> 安全性  
  根據預設，遠端偵錯工具會使用 Windows 驗證。  
   
 > [!WARNING]
 >  您也可以選擇在 [非驗證] 模式下執行遠端偵錯工具，但非常不建議您使用這個模式。 在此模式中執行時不具有網路安全性。 只有在確定網路沒有面臨惡意或攻擊流量的風險時，才能選擇非驗證模式。  
   
-##  <a name="BKMK_DirectConnect"></a> 如何直接連接到遠端裝置  
+## <a name="BKMK_DirectConnect"></a> 如何直接連接到遠端裝置  
  若要直接連接到遠端裝置，請使用標準乙太網路纜線將 Visual Studio 電腦連接到此裝置。 如果裝置沒有乙太網路連接埠，您可以使用 USB 乙太網路轉接線連接到纜線。  
   
-##  <a name="BKMK_Installing_the_Remote_Tools"></a> 安裝遠端工具  
+## <a name="BKMK_Installing_the_Remote_Tools"></a> 安裝遠端工具  
   
 > [!NOTE]
 >  **版本和更新**  
@@ -98,7 +98,7 @@ ms.locfileid: "58938962"
   
  根據預設，遠端偵錯元件安裝在 **C:\Program Files\Microsoft Visual Studio 14.0\Common7\IDE\Remote Debugger** 資料夾中。  
   
-##  <a name="BKMK_Starting_the_Remote_Debugger_Monitor"></a> 啟動遠端偵錯工具監視  
+## <a name="BKMK_Starting_the_Remote_Debugger_Monitor"></a> 啟動遠端偵錯工具監視  
   
 > [!NOTE]
 >  由於遠端偵錯工具會設定防火牆，允許與 Visual Studio 主機通訊，因此您第一次啟動遠端偵錯工具時，必須是遠端裝置上的系統管理員。  
@@ -107,22 +107,22 @@ ms.locfileid: "58938962"
   
  在 [ **遠端偵錯組態** ] 對話方塊上：  
   
-1.  如果沒有安裝 Windows Web 服務應用程式開發介面，請選擇 [ **安裝**]。  
+1. 如果沒有安裝 Windows Web 服務應用程式開發介面，請選擇 [ **安裝**]。  
   
-2.  在 [ **設定 Windows 防火牆** ] 群組中，選擇您要允許連接的網路。 只會啟用裝置目前連接的網路。 您必須至少選擇一個網路。  
+2. 在 [ **設定 Windows 防火牆** ] 群組中，選擇您要允許連接的網路。 只會啟用裝置目前連接的網路。 您必須至少選擇一個網路。  
   
-3.  選擇 [ **設定遠端偵錯** ] 以設定防火牆選項並啟動遠端偵錯工具。  開啟 [ **Visual Studio 遠端偵錯監視** ] 對話方塊，授與使用者遠端工具的權限及設定其他進階選項。  
+3. 選擇 [ **設定遠端偵錯** ] 以設定防火牆選項並啟動遠端偵錯工具。  開啟 [ **Visual Studio 遠端偵錯監視** ] 對話方塊，授與使用者遠端工具的權限及設定其他進階選項。  
   
-4.  [ **Visual Studio 遠端偵錯監視** ] 對話方塊隨即出現。 您可以從這個對話方塊中，授與使用者遠端工具的權限和設定其他進階選項。  
+4. [ **Visual Studio 遠端偵錯監視** ] 對話方塊隨即出現。 您可以從這個對話方塊中，授與使用者遠端工具的權限和設定其他進階選項。  
   
-##  <a name="BKMK_ConfigureRemoteDebugger"></a> 設定遠端偵錯工具  
+## <a name="BKMK_ConfigureRemoteDebugger"></a> 設定遠端偵錯工具  
  使用兩種工具可以修改遠端偵錯工具的組態。  
   
 1. 在 [ **Visual Studio 遠端偵錯監視** ] 的 [ **工具**] 功能表上：  
   
-   1.  選擇 [ **選項** ] 變更遠端偵錯工具的連接埠號碼、驗證模式或逾時間隔。  
+   1. 選擇 [ **選項** ] 變更遠端偵錯工具的連接埠號碼、驗證模式或逾時間隔。  
   
-   2.  選擇 [ **權限** ] 新增或移除具有遠端偵錯權限的使用者。  
+   2. 選擇 [ **權限** ] 新增或移除具有遠端偵錯權限的使用者。  
   
        > [!NOTE]
        >  每一個從遠端進行偵錯的使用者帳戶都必須具有權限。  
@@ -133,7 +133,7 @@ ms.locfileid: "58938962"
   
 3. 在 [ **設定 Windows 防火牆進行偵錯** ] 頁面上，您可以新增或移除遠端偵錯工具要連接的網路類型。 只會啟用裝置目前連接的網路。 您必須至少選擇一個網路。  
   
-##  <a name="BKMK_ConnectVS"></a> 設定 Visual Studio 專案進行遠端偵錯  
+## <a name="BKMK_ConnectVS"></a> 設定 Visual Studio 專案進行遠端偵錯  
  您可在專案的屬性中指定要連接的遠端裝置。 此程序會因程式語言而有所差異。 您可以輸入遠端裝置的網路名稱，也可以從 [選取遠端偵錯工具連接] 對話方塊進行選取。  
   
  ![選取遠端偵錯工具連接 對話方塊](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
@@ -143,29 +143,29 @@ ms.locfileid: "58938962"
 > [!TIP]
 >  如果無法順利連接到遠端裝置，請嘗試輸入裝置的 IP 位址。 若要判斷裝置的 IP 位址，請開啟命令視窗，然後輸入 **ipconfig**。 IP 位址會列示為 **IPv4 Address**。  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> 選擇 C# 和 Visual Basic 專案的遠端裝置  
+### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> 選擇 C# 和 Visual Basic 專案的遠端裝置  
  ![受管理的遠端偵錯專案屬性](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-1.  在 [方案總管] 中選取專案名稱，然後從捷徑功能表選擇 [ **屬性** ]。  
+1. 在 [方案總管] 中選取專案名稱，然後從捷徑功能表選擇 [ **屬性** ]。  
   
-2.  選取 [ **偵錯**]。  
+2. 選取 [ **偵錯**]。  
   
-3.  從 [ **目標裝置** ] 清單選擇 [ **遠端電腦** ]。  
+3. 從 [ **目標裝置** ] 清單選擇 [ **遠端電腦** ]。  
   
-4.  在 [ **遠端電腦** ] 方塊中輸入遠端裝置的網路名稱，或選擇 [ **尋找** ]，從 [ **選取遠端偵錯工具連接** ] 對話方塊選擇裝置。  
+4. 在 [ **遠端電腦** ] 方塊中輸入遠端裝置的網路名稱，或選擇 [ **尋找** ]，從 [ **選取遠端偵錯工具連接** ] 對話方塊選擇裝置。  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> 選擇 JavaScript 和 C++ 專案的遠端裝置  
+### <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> 選擇 JavaScript 和 C++ 專案的遠端裝置  
  ![C&#43; &#43;的專案進行遠端偵錯的屬性](../debugger/media/vsrun-cpp-projprop-remote.png "VSRUN_CPP_ProjProp_Remote")  
   
-1.  在 [方案總管] 中選取專案名稱，然後從捷徑功能表選擇 [ **屬性** ]。  
+1. 在 [方案總管] 中選取專案名稱，然後從捷徑功能表選擇 [ **屬性** ]。  
   
-2.  展開 [ **組態屬性** ] 節點，然後選取 [ **偵錯**]。  
+2. 展開 [ **組態屬性** ] 節點，然後選取 [ **偵錯**]。  
   
-3.  從 [ **要啟動的偵錯工具** ] 清單選擇 [ **遠端偵錯工具** ]。  
+3. 從 [ **要啟動的偵錯工具** ] 清單選擇 [ **遠端偵錯工具** ]。  
   
-4.  在 [ **電腦名稱** ] 方塊中輸入遠端裝置的網路名稱，或選擇方塊中的向下鍵，從 [ **選取遠端偵錯工具連接** ] 對話方塊選擇裝置。  
+4. 在 [ **電腦名稱** ] 方塊中輸入遠端裝置的網路名稱，或選擇方塊中的向下鍵，從 [ **選取遠端偵錯工具連接** ] 對話方塊選擇裝置。  
   
-##  <a name="BKMK_RunRemoteDebug"></a> 執行遠端偵錯工作階段  
+## <a name="BKMK_RunRemoteDebug"></a> 執行遠端偵錯工作階段  
  您啟動、停止及巡覽遠端偵錯工作階段的方式與您進行本機工作階段的方式相同。 在您開始偵錯之前，請確定遠端裝置上正在執行遠端偵錯監視。  
   
  然後選擇**開始偵錯**上**偵錯**功能表 (鍵盤：F5)。 專案會重新編譯，然後部署到遠端裝置並且啟動。 偵錯工具會在中斷點暫停執行，而您可以逐步執行、跳過和跳離您的程式碼。 選擇 [ **停止偵錯** ] 即可結束偵錯工作階段，並關閉遠端應用程式。 如需詳細資訊，請參閱 <<c0> [ 偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  

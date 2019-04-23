@@ -13,12 +13,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84b5ed45bfa7117eec4cbaa86ad9ca4533339d62
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000739"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039055"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>在 Visual Studio 2015 的 Visual Studio 中設計的最新消息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "59000739"
 
 - **架構總管**。 您已無法再使用架構總管來建立圖表。 但您還是可以使用方案總管。
 
-##  <a name="VersionSupport"></a> Architecture and modeling tools 的版本支援
+## <a name="VersionSupport"></a> Architecture and modeling tools 的版本支援
 
 Visual Studio 2015 有數個版本。 並非所有版本都提供 architecture and modeling tools 的支援。 下表顯示每個工具的可用性。
 

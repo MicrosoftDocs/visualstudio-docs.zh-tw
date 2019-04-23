@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df23a6e2a4288c6370a339d37d151283fe3afa8f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 79e7b2a406338e5ecfacf41f9c0485a35c2d97d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655552"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043025"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>一個或多個選取的資料庫物件傳回與目標類別之結構描述不符的結構描述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ ms.locfileid: "59655552"
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-1.  按一下 [確定] 以關閉對話方塊。  
+1. 按一下 [確定] 以關閉對話方塊。  
   
-2.  選取另一個資料庫物件，這個資料庫物件傳回的資料會符合目標類別 (O/R 設計工具中要置放資料庫物件的類別) 的結構描述。  
+2. 選取另一個資料庫物件，這個資料庫物件傳回的資料會符合目標類別 (O/R 設計工具中要置放資料庫物件的類別) 的結構描述。  
   
 ## <a name="see-also"></a>另請參閱  
  [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

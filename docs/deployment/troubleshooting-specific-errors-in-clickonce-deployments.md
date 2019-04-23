@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b7a159fb2d15f817cad47817262202397d3981
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654317"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042377"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>針對 ClickOnce 部署的特定錯誤進行疑難排解
 本文列出當您在部署時，可能會發生下列常見的錯誤[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，並提供解決每個問題的步驟。
@@ -81,9 +81,9 @@ ms.locfileid: "59654317"
 
  您應該執行下列作業：
 
--   確認部署資訊清單的身分識別、 應用程式資訊清單中，身分識別和身分識別的主應用程式 EXE 都具有唯一性。
+- 確認部署資訊清單的身分識別、 應用程式資訊清單中，身分識別和身分識別的主應用程式 EXE 都具有唯一性。
 
--   請確認您的檔案路徑沒有超過 100 個字元。 如果您的應用程式包含檔案路徑太長，您可能會超過您可以將儲存的最大路徑限制。 請嘗試縮短路徑並重新安裝。
+- 請確認您的檔案路徑沒有超過 100 個字元。 如果您的應用程式包含檔案路徑太長，您可能會超過您可以將儲存的最大路徑限制。 請嘗試縮短路徑並重新安裝。
 
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>不會遵守 Bin 的應用程式組態檔中的設定
  若要使用 Bin （Fusion 探查路徑），應用程式必須要求完全信任權限。 請嘗試變更應用程式資訊清單，來要求完全信任，並再試一次。
@@ -112,9 +112,9 @@ ms.locfileid: "59654317"
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>您嘗試使用您的憑證存放區和收到空白的訊息方塊中的憑證簽署
  在 [**簽署**] 對話方塊中，您必須：
 
--   選取 **預存憑證以簽署**，及
+- 選取 **預存憑證以簽署**，及
 
--   從清單中選取憑證第一個憑證不是預設選項。
+- 從清單中選取憑證第一個憑證不是預設選項。
 
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>按一下 「 不登 」 按鈕，會導致例外狀況
  這個問題是已知的 bug。 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]資訊清單是必須簽署。 只選取其中一個的簽章的選項，然後按一下**確定**。

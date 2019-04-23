@@ -1,5 +1,5 @@
 ---
-title: 如何： 發行已啟用視覺化樣式的 WPF 應用程式 |Microsoft Docs
+title: HOW TO：發行啟用視覺化樣式的 WPF 應用程式 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef6250e9e413d91c218634e90fe67a4f04b83bce
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ed9a9a349f2496343a9a9828cd436d8d4015aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953913"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038123"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：發佈已啟用視覺樣式的 WPF 應用程式
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>HOW TO：發佈已啟用視覺樣式的 WPF 應用程式
 
 視覺化樣式會啟用常見的控制項，以根據使用者選擇的佈景主題變更的外觀。 根據預設，已啟用視覺化樣式未針對 Windows Presentation Foundation (WPF) 應用程式，因此您必須手動啟用它們。 不過，啟用視覺化樣式的 WPF 應用程式，然後發佈方案會導致錯誤。 本主題說明如何解決此錯誤，發佈已啟用視覺化樣式的 WPF 應用程式的程序。 如需視覺化樣式的詳細資訊，請參閱[視覺化樣式概觀](/windows/desktop/Controls/visual-styles-overview)。 如需詳細的錯誤訊息的詳細資訊，請參閱[疑難排解 ClickOnce 部署的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "56953913"
 
   然後，您可以將已發行的檔案移至 您從中安裝應用程式的終端使用者的位置。
 
-##  <a name="publish-the-solution-without-visual-styles-enabled"></a>發行方案，而不需要啟用視覺化樣式
+## <a name="publish-the-solution-without-visual-styles-enabled"></a>發行方案，而不需要啟用視覺化樣式
 
 1. 請確定您的專案沒有啟用視覺化樣式。 首先，檢查您的專案資訊清單檔案，如下列 XML 程式碼。 然後，如果 XML 存在時，括住的 XML 註解標記。
 
@@ -57,7 +57,7 @@ ms.locfileid: "56953913"
 
          在中開啟 app.manifest 檔案**程式碼編輯器**。
 
-    **若要開啟中的資訊清單檔案C#專案**
+    **若要開啟 C# 專案中的 資訊清單檔案**
 
     1. 在功能表列上選擇 **專案**， *ProjectName* **屬性**，其中*ProjectName*是 WPF 專案的名稱。
 
@@ -72,7 +72,7 @@ ms.locfileid: "56953913"
 
          此按鈕會顯示所有的專案項目，包括已排除以及一些通常會隱藏。 資訊清單檔會顯示為專案項目。
 
-2. 建置及發佈您的解決方案。 如需如何發佈方案的詳細資訊，請參閱[如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+2. 建置及發佈您的解決方案。 如需如何發佈方案的詳細資訊，請參閱[How to:使用發佈精靈發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
 
 ## <a name="create-a-manifest-file"></a>建立資訊清單檔
 

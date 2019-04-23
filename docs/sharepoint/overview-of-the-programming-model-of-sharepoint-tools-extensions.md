@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4cac8341adb61a6644e7e331f00584c5c341471
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 49e4618e2262575ffaa642d55ae140529f86942b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325232"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038466"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>概觀的程式設計模型的 SharePoint 工具擴充功能
   在 Visual Studio 中建立 SharePoint 工具的延伸模組時，您會從實作 SharePoint 工具公開的一或多個擴充性介面開始。 在大部分情況下，您也會使用 SharePoint 工具所提供的其他類型，在您的延伸模組中實作功能。 在某些情況下，您也可以使用 Visual Studio 和 SharePoint 所提供的其他物件模型中的類型。 您必須了解每個這些物件模型的用途，而且知道如何與其他用來建立 SharePoint 工具擴充功能。
@@ -45,14 +45,14 @@ ms.locfileid: "58325232"
 ## <a name="understand-the-object-models-that-you-use-in-sharepoint-tools-extensions"></a>了解您在 SharePoint 工具擴充功能中使用的物件模型
  建立 SharePoint 工具的延伸模組時，您可以使用數個物件模型：
 
--   *SharePoint 工具物件模型*。 此物件模型會提供您實作以建立 SharePoint 工具擴充功能以及其他相關的類型的擴充性介面。
+- *SharePoint 工具物件模型*。 此物件模型會提供您實作以建立 SharePoint 工具擴充功能以及其他相關的類型的擴充性介面。
 
--   *Visual Studio 自動化和整合物件模型*。 使用這些物件模型來存取已超出 SharePoint 工具物件模型範圍的 Visual Studio 功能。
+- *Visual Studio 自動化和整合物件模型*。 使用這些物件模型來存取已超出 SharePoint 工具物件模型範圍的 Visual Studio 功能。
 
     > [!NOTE]
     >  藉由使用 SharePoint 專案服務，您可以將 SharePoint 工具物件模型中的某些物件轉換成 Visual Studio 自動化物件和整合物件模型中的物件，反之亦然。 如需詳細資訊，請參閱 < [SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)。
 
--   *SharePoint 伺服器和用戶端物件模型*。 使用這些物件模型來修改 SharePoint 網站，或從 SharePoint 工具擴充功能的內容擷取 SharePoint 網站的資料。
+- *SharePoint 伺服器和用戶端物件模型*。 使用這些物件模型來修改 SharePoint 網站，或從 SharePoint 工具擴充功能的內容擷取 SharePoint 網站的資料。
 
 ### <a name="sharepoint-tools-object-model"></a>SharePoint 工具物件模型
  每個 SharePoint 工具延伸模組會使用 SharePoint 工具物件模型中的類型來定義延伸模組的核心行為和功能。 下表描述會包含在此物件模型中，包含這些組件的命名空間。

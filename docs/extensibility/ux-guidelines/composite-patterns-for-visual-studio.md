@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 633ab9d446c65b9408c0e069695d22889e7943d1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d8808804c5b99918e68169e4ab5510cdb5c634a8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723067"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670494"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>適用於 Visual Studio 的複合模式
 複合模式結合不同組態中的互動與設計元素。 在 Visual Studio 中的一致性方面的最重要複合模式包括：
@@ -393,7 +393,6 @@ ms.locfileid: "56723067"
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> 圖形物件選取項目外觀
  控點是以矩形模式物件的週框方塊周圍繪製的方塊。 下圖顯示範例圖形化的物件可以有控制代碼、 調整大小，以及就地編輯的外觀的各種狀態。 視窗的框線和 edge 計量使用控點大小應該繫結**GetSystemMetrics** API。
 
-
 | 狀況 | 外觀 | 視覺效果詳細資料 |
 |-------------------------|---------------| - |
 | **未選取** | 預設 | ![Default button state](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
@@ -435,7 +434,6 @@ ms.locfileid: "56723067"
 >  **焦點**並**選取**是不同的概念。 *焦點*表示元素為目標的使用者介面接收的輸入未明確導向至另一個物件，而*選取*所指的物件包含一組後續所在的物件中的狀態作業可能需要的地方。
 
  在清單中的選取項目可能是連續、 脫離的或地區。 當多個選取項目所允許的連續和斷續的選取項目應一律受到支援，同時支援區域 （方塊） 選取項目是選擇性的。 藉由拖曳清單內容的空白區起始區域選取項目。
-
 
 | Object | 選取 |
 |--------|------------|
@@ -506,7 +504,7 @@ ms.locfileid: "56723067"
  視窗組態是基本的簡報式開發環境-它是配置，其中包含出現的工具視窗的清單和它們的排列的方式。 適用於 windows 受 IDE （IDE 視窗），配置資訊會保存每位使用者，因此當 IDE 視窗版面配置會出現相同的使用者會啟動上次時結束 Visual Studio。 IDE 視窗位置與狀態會保存在 XML 格式的自訂選項檔案中。 封裝載入至 IDE 所建立的工具視窗保存在登錄中的其狀態資訊和可能或可能不是每位使用者。
 
 #### <a name="profile-specific-layouts"></a>設定檔特定版面配置
- 每個設定檔包含特定的開發人員人物代表所熟悉的方式組織的工具視窗配置 (Visual c + + 開發人員預期會看見**方案總管 中**IDE，而 C# 開發人員預期會看見左邊**方案總管 中**右邊)。 使用者選擇在啟動時的設定檔之後，就會載入設定檔特定視窗版面配置。 封裝作者應該判斷視窗版面配置最適合其客戶的體驗，了解然後會保存使用者對視窗組態的變更。
+ 每個設定檔包含特定的開發人員人物代表所熟悉的方式組織的工具視窗配置 (VisualC++開發人員預期會看見**方案總管**IDE 左側時C#開發人員預期會看見**方案總管 中**右邊)。 使用者選擇在啟動時的設定檔之後，就會載入設定檔特定視窗版面配置。 封裝作者應該判斷視窗版面配置最適合其客戶的體驗，了解然後會保存使用者對視窗組態的變更。
 
 ##  <a name="BKMK_TouchInput"></a> 具備觸控輸入
  使用者在觸控式裝置上逐漸開始利用 Microsoft 開發產品。 不過，有一些障礙，讓您難以使用觸控式裝置上的開發工具。 使用者會預期我們的產品，以提供可靠且精確的觸控體驗。 這些指導方針的目的是告知哪些觸控功能，以併入，並鼓勵一致的觸控體驗，在 Visual Studio 及相關的產品。
