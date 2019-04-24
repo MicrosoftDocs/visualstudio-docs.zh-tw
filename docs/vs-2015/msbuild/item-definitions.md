@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83c2de11e31dced3be48e390d8bd5b21d57d2092
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668489"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090755"
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ ms.locfileid: "59668489"
   
  *ItemDefinitionGroup* 元素會緊接在專案檔的 [Project](../msbuild/project-element-msbuild.md) 元素之後出現。 項目定義提供下列功能：  
   
--   您可以為目標外的項目定義全域預設中繼資料。 亦即，相同的中繼資料會適用於指定類型的所有項目。  
+- 您可以為目標外的項目定義全域預設中繼資料。 亦即，相同的中繼資料會適用於指定類型的所有項目。  
   
--   項目類型可以有多個定義。 將額外的中繼資料規格新增到類型時，最後一個規格會具有最高的優先順序。 \(中繼資料的匯入順序會比照屬性所依循的相同順序。\)  
+- 項目類型可以有多個定義。 將額外的中繼資料規格新增到類型時，最後一個規格會具有最高的優先順序。 \(中繼資料的匯入順序會比照屬性所依循的相同順序。\)  
   
--   中繼資料可供附加。 例如，CDefines 值會根據所要設定的屬性，有條件地累加。 例如，`MT;STD_CALL;DEBUG;UNICODE`。  
+- 中繼資料可供附加。 例如，CDefines 值會根據所要設定的屬性，有條件地累加。 例如，`MT;STD_CALL;DEBUG;UNICODE`。  
   
--   中繼資料可被移除。  
+- 中繼資料可被移除。  
   
--   您可以使用條件來控制是否要包含中繼資料。  
+- 您可以使用條件來控制是否要包含中繼資料。  
   
 ## <a name="item-metadata-default-values"></a>項目中繼資料預設值  
  在 ItemDefinitionGroup 中定義的項目中繼資料只是預設中繼資料的宣告。 除非您定義一個使用 ItemGroup 來包含中繼資料值的「項目」，否則不會套用中繼資料。  
@@ -66,21 +66,21 @@ ms.locfileid: "59668489"
 ## <a name="value-sources"></a>值來源  
  ItemDefinitionGroup 中所定義之中繼資料的值可以來自許多不同的來源，如下所示：  
   
--   PropertyGroup 屬性  
+- PropertyGroup 屬性  
   
--   來自 ItemDefinitionGroup 的項目  
+- 來自 ItemDefinitionGroup 的項目  
   
--   ItemDefinitionGroup 項目上的項目轉換  
+- ItemDefinitionGroup 項目上的項目轉換  
   
--   環境變數  
+- 環境變數  
   
--   全域屬性 \(來自 MSBuild.exe 命令列\)  
+- 全域屬性 \(來自 MSBuild.exe 命令列\)  
   
--   保留的屬性  
+- 保留的屬性  
   
--   來自 ItemDefinitionGroup 之項目上的已知中繼資料  
+- 來自 ItemDefinitionGroup 之項目上的已知中繼資料  
   
--   CDATA 區段 \<\!\[CDATA\[此處的任何項目都不會剖析\]\]\>  
+- CDATA 區段 \<\!\[CDATA\[此處的任何項目都不會剖析\]\]\>  
   
 > [!NOTE]
 >  來自 ItemGroup 的項目中繼資料在 ItemDefinitionGroup 中繼資料宣告中沒有用處，因為系統會先處理 ItemDefinitionGroup 元素，然後才處理 ItemGroup 元素。  
@@ -239,5 +239,5 @@ ms.locfileid: "59668489"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [批次處理](../msbuild/msbuild-batching.md)
