@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe18719e55a59abfcbde35195ed499fe9882c6c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 623aa21e94ff25b8190bae82ca836ed16f64bcaa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548419"
 ---
 # <a name="installation"></a>安裝
 
@@ -87,6 +87,7 @@ Python 一直是深度學習應用程式的主要程式設計語言。 需要 **
 然後，我們需要確認是否已正確安裝 Python 3.5，並藉由在終端機中執行下列命令，來將 pip 升級為最新版本：
 
 - **Windows**
+
     ```cmd
     C:\Users\test>python -V
     Python 3.5.4
@@ -98,6 +99,7 @@ Python 一直是深度學習應用程式的主要程式設計語言。 需要 **
     ```
 
 - **macOS**
+
     ```bash
     MyMac:~ test$ python3.5 -V
     Python 3.5.4
@@ -159,10 +161,13 @@ pip3.5 install -U numpy scipy
 若要安裝 MXNet，請在終端機中執行下列命令：
 
 - 使用 GPU
+
     ```bash
     pip3.5 install mxnet-cu80==0.12.0
     ```
+
 - 不使用 GPU
+
     ```bash
     pip3.5 install mxnet==0.12.0
     ```

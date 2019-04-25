@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1e59e1bd618cfeb28b93d073997ef451357ee8d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830703"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>分析記憶體使用量 (不使用偵錯工具)
 
@@ -56,13 +56,13 @@ ms.locfileid: "57873450"
 
 若要收集快照，當您想要擷取記憶體資料時，請選取 [擷取快照]。
 
-###  <a name="BKMK_Close_a_monitoring_session"></a> 關閉診斷工作階段
+### <a name="BKMK_Close_a_monitoring_session"></a> 關閉診斷工作階段
 
 若要停止監控工作階段而不建立報表，只需關閉診斷視窗。 當您完成時收集或擷取快照時若要產生報表，請選取 [停止收集]。
 
 ![停止收集](../profiling/media/memuse__stopcollection.png "停止收集")
 
-##  <a name="memory-usage-reports"></a>[記憶體使用量] 報表
+## <a name="memory-usage-reports"></a>[記憶體使用量] 報表
 
 停止資料收集之後，[記憶體使用量] 工具會停止應用程式，並顯示 [記憶體使用量] 概觀報表。
 
@@ -103,7 +103,7 @@ ms.locfileid: "57873450"
 
 - [參考的類型] 或 [參考的物件] 樹狀結構顯示所選取類型或執行個體參考的物件。
 
-###  <a name="BKMK_Report_tree_filters_"></a>報表樹狀目錄篩選條件
+### <a name="BKMK_Report_tree_filters_"></a>報表樹狀目錄篩選條件
 
 在應用程式中，有許多類型對於應用程式開發人員而言不是非常有趣。 快照報表篩選條件可以在 [受控堆積] 和 [根的路徑] 樹狀結構中，隱藏這些類型的大部分。
 
@@ -123,7 +123,7 @@ ms.locfileid: "57873450"
 
 兩個連結都會開啟相同的報表。 唯一的差別在於 [受控堆積] 樹狀結構的起始排序次序。 大小連結會依據 [內含大小 (位元組)] 資料行來排序報表。 物件連結會依據 [計數] 資料行來排序報表。 您可以在報表開啟之後變更排序資料行或次序。
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> [受控堆積] 樹狀結構 (快照詳細資料報表)
+### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> [受控堆積] 樹狀結構 (快照詳細資料報表)
  [Managed 堆積] 樹狀目錄會列出保留在記憶體中的物件類型。 展開類型名稱，即可檢視依大小排序的前十大類型執行個體。 選取類型或執行個體會顯示選取項目的 [根的路徑] 和 [參考的物件] 樹狀結構。
 
  ![[受控堆積] 樹狀結構](../profiling/media/memuse__snapshotdetails_managedheaptree.png "[受控堆積] 樹狀結構")
@@ -138,14 +138,14 @@ ms.locfileid: "57873450"
 |**內含大小 (位元組)**|類型執行個體的大小，或是單一執行個體的大小，且包括所包含物件的大小。|
 |**模組**|包含物件的模組。|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> [根的路徑] 樹狀結構 (快照詳細資料報表)
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> [根的路徑] 樹狀結構 (快照詳細資料報表)
 [根的路徑] 樹狀結構顯示參考類型或執行個體的物件鏈結。 .NET Framework 記憶體回收行程只會在對物件的所有參考都已釋放時才清除物件的記憶體。
 
 針對 [根的路徑] 樹狀結構中的類型，會在 [參考計數] 資料行顯示保有該類型參考的物件數目。
 
 ![類型的 [根的路徑] 樹狀結構](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "類型的 [根的路徑] 樹狀結構")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> [參考的類型] 或 [參考的物件] 樹狀結構 (快照詳細資料報表)
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> [參考的類型] 或 [參考的物件] 樹狀結構 (快照詳細資料報表)
 [參考的類型] 或 [參考的物件] 樹狀結構顯示所選取類型或執行個體參考的物件。
 
 ![執行個體的 [參考的物件] 樹狀結構](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "執行個體的 [參考的物件] 樹狀結構")
@@ -168,7 +168,7 @@ ms.locfileid: "57873450"
 
  ![連往快照窗格中的差異報表連結](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "連往快照窗格中的差異報表連結")
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> [受控堆積] 樹狀結構 (快照差異報表)
+### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> [受控堆積] 樹狀結構 (快照差異報表)
 
  [Managed 堆積] 樹狀目錄會列出保留在記憶體中的物件類型。 您可以展開類型名稱，檢視依大小排序的前十大類型執行個體。 選取類型或執行個體會顯示選取項目的 [根的路徑] 和 [參考的物件] 樹狀結構。
 
@@ -187,7 +187,7 @@ ms.locfileid: "57873450"
 |**內含大小差異 (位元組)**|針對類型，此為主要快照與上一個快照之間，類型的所有執行個體大小差異，包括物件中的物件大小。 執行個體的欄位空白。|
 |**模組**|包含物件的模組。|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> [根的路徑] 樹狀結構 (快照差異報表)
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> [根的路徑] 樹狀結構 (快照差異報表)
 
 [根的路徑] 樹狀結構顯示參考類型或執行個體的物件鏈結。 .NET Framework 記憶體回收行程只會在對物件的所有參考都已釋放時才清除物件的記憶體。
 
@@ -195,7 +195,7 @@ ms.locfileid: "57873450"
 
  ![差異報表中的 [根的路徑] 樹狀結構](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "差異報表中的 [根的路徑] 樹狀結構")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> [參考的類型] 或 [參考的物件] 樹狀結構 (快照差異報表)
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> [參考的類型] 或 [參考的物件] 樹狀結構 (快照差異報表)
 
 [參考的類型] 或 [參考的物件] 樹狀結構顯示所選取類型或執行個體參考的物件。
 

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b881ee7a782d7c5f90a447c1719bb88afd1d332
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56314594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557573"
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 覆寫
 
@@ -31,7 +31,7 @@ ms.locfileid: "56314594"
 
 ### <a name="registry-key-values"></a>登錄機碼值
 
-|登錄機碼值|類型|資料|描述|
+|登錄機碼值|類型|資料|說明|
 |------------------|----|----|-----------|
 |NewContentAndUpdateService|字串|\<服務端點的 HTTP URL\>|定義唯一的服務端點|
 |UseOnlineHelp|dword|`0` 表示指定本機說明，`1` 表示指定線上說明|定義線上或離線說明預設值|

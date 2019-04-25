@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: d6202a8287232c0226104be59bdab6a15fd00d95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785355"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>建立資料驅動自動程式碼 UI 測試
 
@@ -98,11 +98,11 @@ ms.locfileid: "56796656"
 
 ### <a name="step-2---create-a-data-set"></a>步驟 2 - 建立資料集
 
-1.  將文字檔新增至名為 data.csv 的 dataDrivenSample 專案。
+1. 將文字檔新增至名為 data.csv 的 dataDrivenSample 專案。
 
      ![將逗號分隔值檔案加入專案](../test/media/cuit_datadriven_addcsvfile.png)
 
-2.  將下列資料填入 .*csv* 檔案：
+2. 將下列資料填入 .*csv* 檔案：
 
     |Num1|Num2|Sum|
     |-|-|-|
@@ -114,9 +114,9 @@ ms.locfileid: "56796656"
 
      ![將資料填入 .csv 檔案](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3.  務必使用正確的編碼來儲存 .*csv* 檔案。 在 [檔案] 功能表上，選擇 [進階儲存選項]，然後選擇 [Unicode (UTF-8 無簽章) - 字碼頁 65001] 作為編碼。
+3. 務必使用正確的編碼來儲存 .*csv* 檔案。 在 [檔案] 功能表上，選擇 [進階儲存選項]，然後選擇 [Unicode (UTF-8 無簽章) - 字碼頁 65001] 作為編碼。
 
-4.  .*csv* 檔案必須複製至輸出目錄，否則無法執行測試。 使用 [屬性] 視窗來複製它。
+4. .*csv* 檔案必須複製至輸出目錄，否則無法執行測試。 使用 [屬性] 視窗來複製它。
 
      ![部署 .csv 檔案](../test/media/cuit_datadriven_deploycsvfile.png)
 
@@ -124,7 +124,7 @@ ms.locfileid: "56796656"
 
 ### <a name="step-3---add-data-source-binding"></a>步驟 3 - 新增資料來源繫結
 
-1.  若要繫結資料來源，請在測試方法正上方的現有 `DataSource` 屬性內加入 `[TestMethod]` 屬性。
+1. 若要繫結資料來源，請在測試方法正上方的現有 `DataSource` 屬性內加入 `[TestMethod]` 屬性。
 
     ```csharp
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
@@ -140,7 +140,7 @@ ms.locfileid: "56796656"
     > [!TIP]
     > 如需使用其他資料來源類型 (例如 XML、SQL Express 和 Excel) 的範例，請參閱＜問與答＞小節中的[資料來源屬性範例](#CreateDataDrivenCUIT_QA_DataSourceAttributes)。
 
-2.  執行測試。
+2. 執行測試。
 
      請注意，測試是透過三個反覆項目來執行。 原因是所繫結的資料來源包含三個資料列。 不過，您也會發現測試仍在使用常數參數值，而且每次會加入 1 + 2 (總和為 3)。
 
@@ -179,19 +179,19 @@ ms.locfileid: "56796656"
 
      若要了解要將資料編寫至其中的搜尋屬性，請使用 [自動程式碼 UI 測試編輯器]。
 
-    -   開啟 UIMap.uitest 檔案。
+    - 開啟 UIMap.uitest 檔案。
 
          ![開啟自動程式碼 UI 測試編輯器](../test/media/cuit_datadriven_opentesteditor.png)
 
-    -   選擇 UI 動作，並觀察對應的 UI 控制項對應。 請注意，對應如何對應至程式碼 (例如，`this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`)。
+    - 選擇 UI 動作，並觀察對應的 UI 控制項對應。 請注意，對應如何對應至程式碼 (例如，`this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`)。
 
          ![使用自動程式碼 UI 測試編輯器來協助您的程式碼](../test/media/cuit_datadriven_testeditor.png)
 
-    -   在 [屬性] 視窗中，開啟 [搜尋屬性]。 搜尋屬性 **Name** 值是程式碼中使用資料來源所操作的值。 例如，會將每個資料列的第一欄中的值指派給 `SearchProperties`：`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`。 對於三個反覆項目，這項測試會依序將搜尋屬性的 **Name** 值變更為 3、5 和 6。
+    - 在 [屬性] 視窗中，開啟 [搜尋屬性]。 搜尋屬性 **Name** 值是程式碼中使用資料來源所操作的值。 例如，會將每個資料列的第一欄中的值指派給 `SearchProperties`：`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`。 對於三個反覆項目，這項測試會依序將搜尋屬性的 **Name** 值變更為 3、5 和 6。
 
          ![使用搜尋屬性來協助編碼](../test/media/cuit_datadriven_searchproperties.png)
 
-3.  儲存組態。
+3. 儲存組態。
 
 ### <a name="step-5---run-the-data-driven-test"></a>步驟 5 - 執行資料驅動測試
 
@@ -207,23 +207,23 @@ ms.locfileid: "56796656"
 
 **資料來源類型和屬性**
 
--   CSV
+- CSV
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]`
 
--   Excel
+- Excel
 
      `DataSource("System.Data.Odbc", "Dsn=ExcelFiles;Driver={Microsoft Excel Driver (*.xls)};dbq=|DataDirectory|\\Data.xls;defaultdir=.;driverid=790;maxbuffersize=2048;pagetimeout=5;readonly=true", "Sheet1$", DataAccessMethod.Sequential), DeploymentItem("Sheet1.xls"), TestMethod]`
 
--   Team Foundation Server 中的測試案例
+- Team Foundation Server 中的測試案例
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`
 
--   XML
+- XML
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\data.xml", "Iterations", DataAccessMethod.Sequential), DeploymentItem("data.xml"), TestMethod]`
 
--   SQL Express
+- SQL Express
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 

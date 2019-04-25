@@ -11,14 +11,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5763178ecf30cc0c946c8810770ba2948383a715
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a69f821a27d6fed4fe478122344d1a7afbc8f8c7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789796"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>作法：設定 IDE 協助工具選項
+# <a name="how-to-set-ide-accessibility-options"></a>HOW TO：設定 IDE 協助工具選項
 
 > [!TIP]
 > 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
@@ -46,11 +46,11 @@ ms.locfileid: "56317181"
 
 #### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>變更以文字為基礎的工具視窗和編輯器中的文字大小
 
-1.  從 [工具]  功能表選擇 [選項] 。
+1. 從 [工具]  功能表選擇 [選項] 。
 
-2.  在 [環境] 資料夾上選擇 [字型和色彩]。
+2. 在 [環境] 資料夾上選擇 [字型和色彩]。
 
-3.  在 [顯示設定] 下拉式功能表上選取選項。
+3. 在 [顯示設定] 下拉式功能表上選取選項。
 
      若要變更編輯器中文字的字型大小，請選擇 [文字編輯器]。
 
@@ -60,16 +60,16 @@ ms.locfileid: "56317181"
 
      若要變更陳述式完成快顯視窗中文字的字型大小，請選擇 [陳述式完成]。
 
-4.  從 [顯示項目]，選取 [純文字]。
+4. 從 [顯示項目]，選取 [純文字]。
 
-5.  在 [字型] 中，選取新的字型類型。
+5. 在 [字型] 中，選取新的字型類型。
 
-6.  在 [大小] 中，選取新的字型大小。
+6. 在 [大小] 中，選取新的字型大小。
 
     > [!NOTE]
     > 若要重設以文字為基礎之工具視窗和編輯器的文字大小，請選擇 [使用預設值]。
 
-7.  選擇 [確定] 。
+7. 選擇 [確定] 。
 
 ### <a name="change-the-colors-that-are-used-in-the-ide"></a>變更 IDE 中使用的色彩
 
@@ -80,17 +80,17 @@ ms.locfileid: "56317181"
 
 #### <a name="to-change-the-color-of-items-in-the-editor"></a>變更編輯器中項目的色彩
 
-1.  從 [工具]  功能表選擇 [選項] 。
+1. 從 [工具]  功能表選擇 [選項] 。
 
-2.  在 [環境] 資料夾中選擇 [字型和色彩]。
+2. 在 [環境] 資料夾中選擇 [字型和色彩]。
 
-3.  在 [顯示設定] 中，選擇 [文字編輯器]。
+3. 在 [顯示設定] 中，選擇 [文字編輯器]。
 
-4.  從 [顯示項目]，選取您要變更其顯示的項目，例如 [純文字]、[指示區邊界]、[可見的空白字元]、[HTML 屬性名稱] 或 [XML 屬性]。
+4. 從 [顯示項目]，選取您要變更其顯示的項目，例如 [純文字]、[指示區邊界]、[可見的空白字元]、[HTML 屬性名稱] 或 [XML 屬性]。
 
-5.  從下列選項選取顯示設定：[項目前景]、[項目背景] 和 [粗體]。
+5. 從下列選項選取顯示設定：[項目前景]、[項目背景] 和 [粗體]。
 
-6.  選擇 [確定] 。
+6. 選擇 [確定] 。
 
 ## <a name="toolbars"></a>工具列
 
@@ -98,23 +98,23 @@ ms.locfileid: "56317181"
 
 ### <a name="to-assign-text-to-toolbar-buttons"></a>將文字指派給工具列按鈕
 
-1.  從 [工具] 功能表選擇 [自訂]。
+1. 從 [工具] 功能表選擇 [自訂]。
 
-2.  在 [自訂] 對話方塊中，選取 [命令] 索引標籤。
+2. 在 [自訂] 對話方塊中，選取 [命令] 索引標籤。
 
-3.  選取 [工具列]，然後選擇包含您想要顯示文字之按鈕的工具列名稱。
+3. 選取 [工具列]，然後選擇包含您想要顯示文字之按鈕的工具列名稱。
 
-4.  在清單中，選取您想要變更的命令。
+4. 在清單中，選取您想要變更的命令。
 
-5.  選擇 [修改選取項目]。
+5. 選擇 [修改選取項目]。
 
-6.  選擇 [影像和文字]。
+6. 選擇 [影像和文字]。
 
 ### <a name="to-modify-the-displayed-text-in-a-button"></a>修改按鈕的顯示文字
 
-1.  重新選取 [修改選取項目]。
+1. 重新選取 [修改選取項目]。
 
-2.  在相鄰 [名稱] 處，提供選取按鈕的新標題。
+2. 在相鄰 [名稱] 處，提供選取按鈕的新標題。
 
 ## <a name="see-also"></a>另請參閱
 

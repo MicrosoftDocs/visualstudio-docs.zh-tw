@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569864"
 ---
 # <a name="common-msbuild-project-items"></a>一般 MSBuild 專案項目
 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，項目是一個或多個檔案的具名參考。 項目包含中繼資料，例如檔案名稱、路徑和版本號碼。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有專案類型都有共同的數個項目。 這些項目會在 *Microsoft.Build.CommonTypes.xsd* 檔案中定義。
@@ -81,7 +81,6 @@ ms.locfileid: "58897682"
 ### <a name="compile"></a>編譯
  代表編譯器的原始程式檔。
 
-
 | 項目中繼資料名稱 | 說明 |
 |-----------------------| - |
 | 相依依據 | 選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。 |
@@ -92,7 +91,6 @@ ms.locfileid: "58897682"
 
 ### <a name="embeddedresource"></a>內嵌資源
  代表要內嵌於所產生組件中的資源。
-
 
 | 項目中繼資料名稱 | 說明 |
 |-----------------------| - |
@@ -108,7 +106,6 @@ ms.locfileid: "58897682"
 ### <a name="content"></a>內容
  代表不會編譯到專案中，但可能內嵌或一起發行的檔案。
 
-
 | 項目中繼資料名稱 | 說明 |
 |-----------------------| - |
 | 相依依據 | 選擇性字串。 指定這個檔案必須倚賴才能正確編譯的檔案。 |
@@ -123,7 +120,6 @@ ms.locfileid: "58897682"
 
 ### <a name="none"></a>無
  代表在建置流程中應該沒有任何角色的檔案。
-
 
 | 項目中繼資料名稱 | 說明 |
 |-----------------------| - |

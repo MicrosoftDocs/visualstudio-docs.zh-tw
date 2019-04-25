@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bc7f1bbc7b74c88884409767d9c2617d6ad564b1
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 759a1e2c5ba1c3ecff983e1d2ca3903471b7f5fe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951437"
 ---
 # <a name="uninstall-visual-studio"></a>解除安裝 Visual Studio
 
@@ -97,7 +97,6 @@ Visual Studio 是我們提供給開發人員的整合式生產力工具套件，
 1. 選擇 [解除安裝]。
 
 ::: moniker-end
-
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

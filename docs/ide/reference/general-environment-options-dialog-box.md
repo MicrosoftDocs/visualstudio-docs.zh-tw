@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790131"
 ---
 # <a name="options-dialog-box-environment--general"></a>選項對話方塊：環境 \> 一般
 
@@ -49,7 +49,7 @@ ms.locfileid: "59018190"
 
 ::: moniker range=">=vs-2019"
 
-**為不同像素密度的螢幕最佳化呈現方式 (需要重新開機)**
+**為不同像素密度的螢幕最佳化呈現方式 (需要重新啟動)**
 
 此選項可啟用或停用個別監視器 DPI (每英吋的點數) 感知 (或 *PMA*)。 當 PMA 啟用時，使用任何監視器顯示比例與 DPI 設定都能清晰顯示 Visual Studio 使用者介面，包括跨多個監視器顯示時。 若要啟用 PMA，您需要 Windows 10 2018 4 月更新或更新版本和 .NET Framework 4.8 或更新版本。 (如果不符合這兩個必要條件，這個選項會呈現灰色。)
 
@@ -70,7 +70,7 @@ ms.locfileid: "59018190"
 
 ::: moniker-end
 
-**啟用豐富的用戶端體驗**
+**啟用豐富的用戶端效果**
 
 啟用 Visual Studio 的完整視覺效果 (包括漸層和動畫)。 使用遠端桌面連線或較舊的圖形介面卡時，請清除這個選項，因為這些功能在這些情況下的效能可能不佳。 只有在您清除 [自動根據用戶端效能調整視覺效果] 選項時，才能使用這個選項。
 
@@ -96,7 +96,7 @@ ms.locfileid: "59018190"
 
 指定按一下 [關閉] 按鈕時，只會關閉具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項是選取的。
 
-**[自動隱藏] 按鈕只影響作用中的工具視窗**
+**自動隱藏 按鈕只影響作用中的工具視窗**
 
 指定按一下 [自動隱藏] 按鈕時，只會自動隱藏具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項並未選取。
 

@@ -10,12 +10,12 @@ ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d835660995e92df1f6aca94ae9b9b3ccebb5d87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821244"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>HOW TO：使用負載測試分析器在負載測試中檢視網頁回應時間
 
@@ -25,15 +25,15 @@ ms.locfileid: "55970760"
 
 如果您在負載測試中的壓力下執行 Web 效能測試，將可以分析每一個網頁的下列資訊：
 
--   網頁的平均回應時間。
+- 網頁的平均回應時間。
 
--   測試反覆項目符合網頁之回應時間目標的百分比。
+- 測試反覆項目符合網頁之回應時間目標的百分比。
 
--   您可以在 [負載測試分析器] 中使用 [資料表] 檢視或 [圖表] 檢視來分析網頁回應時間：
+- 您可以在 [負載測試分析器] 中使用 [資料表] 檢視或 [圖表] 檢視來分析網頁回應時間：
 
--   在資料表檢視中分析網頁回應時間
+- 在資料表檢視中分析網頁回應時間
 
--   在圖形檢視中分析網頁回應時間
+- 在圖形檢視中分析網頁回應時間
 
 ## <a name="view-response-time-data-in-a-table"></a>在資料表中檢視回應時間資料
 
@@ -43,7 +43,7 @@ ms.locfileid: "55970760"
 
 3. 每一個頁面的資料會顯示在方格中。 通常會顯示下列資料行。
 
-   |資料行標題|描述|
+   |資料行標題|說明|
    |-|-|
    |**頁面**|網頁的名稱。|
    |**案例**|情節的名稱。 如果您的 Web 效能測試中有多個情節，此項就很重要。|

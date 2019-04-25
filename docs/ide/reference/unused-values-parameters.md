@@ -11,11 +11,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2d0875f9a298af24575cc05008713cbb6c3e2ead
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58414677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789728"
 ---
 # <a name="unused-value-assignments-variables-and-parameters"></a>未使用的值指派、變數及參數
 

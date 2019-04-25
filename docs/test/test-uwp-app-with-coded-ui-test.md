@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 11fc95978690e98d496f539d4e98acf58104be3b
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: d50972ccb68ba43e8ebefa0d69fdfff8f7fc5be4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430135"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>建立自動程式化 UI 測試來測試 UWP 應用程式
 
@@ -136,6 +136,7 @@ ms.locfileid: "58416119"
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
+
 1. 接下來，我們需要取得想要測試之 UWP [應用程式](#create-a-uwp-app-to-test)的 **AutomationId**。 開啟 Windows [開始] 功能表來查看應用程式磚。 然後，將交叉線工具 ![目標圖示](media/target-icon.png) 從 [自動程式化 UI 測試產生器] 對話方塊，拖曳至應用程式磚。 當藍色方塊圍繞著磚時，請放開滑鼠。
 
    ![交叉線工具](media/cross-hair-tool.png)

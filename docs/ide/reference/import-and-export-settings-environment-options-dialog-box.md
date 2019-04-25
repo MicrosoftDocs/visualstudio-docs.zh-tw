@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 312038f14da876fae91b8d65e47235adeb1d14ce
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778501"
 ---
 # <a name="options-dialog-box-environment--import-and-export-settings"></a>選項對話方塊：環境 \> 匯入和匯出設定
 
