@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: dbdc92ff0d8a4020c664de527b60e95ed6113329
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535459"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>收集 .NET 記憶體配置和存留期資料
 

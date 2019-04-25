@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff36bf74249ec5266218060eedb879e4d796625c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778565"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>IntelliSense、JavaScript、文字編輯器、選項
 使用 [ **選項** ] 對話方塊的 [ **IntelliSense** ] 頁面修改影響 JavaScript 之 IntelliSense 行為的設定。 您可以透過選擇功能表列上的 [工具] > [選項]，並展開 [文字編輯器] > [JavaScript] > [IntelliSense] 來存取 [IntelliSense] 頁面。
@@ -59,7 +59,6 @@ ms.locfileid: "55938692"
 > [!CAUTION]
 > 如果以不設條件的方式在兩個以上的隱含參考中定義物件，則這個清單中的最後一個參考將用來定義該物件。
 
-
 **加入群組的參考**
 
 這個選項可讓您透過瀏覽至適當檔案的方式，加入其他 IntelliSense .js 檔案。
@@ -70,8 +69,6 @@ ms.locfileid: "55938692"
 
 > [!NOTE]
 > Web 專案預設會下載專案中參考的遠端檔案。
-
-
 
 ## <a name="see-also"></a>請參閱
 

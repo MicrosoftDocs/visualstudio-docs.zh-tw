@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 89af8235f897858094058981df52d6a3fec8a7d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791113"
 ---
 # <a name="change-a-method-signature-refactoring"></a>變更方法特徵標記重構
 
@@ -60,7 +60,7 @@ ms.locfileid: "55934181"
 
    ![[變更簽章] 對話方塊](media/changesignature-dialog-cs.png)
 
-   | 按鈕 | 描述
+   | 按鈕 | 說明
    | ------ | ---
    | **向上/向下** | 將選取的參數在清單中向上和向下移動
    | **移除** | 將選取的參數從清單中移除

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 9b31859d677ab69108ad5e2681890a8c4a88f854
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0263afa4eeb9094802fe6272380b6b53106da4a2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810142"
 ---
 # <a name="set-up-remote-workspaces"></a>設定遠端工作區
 
@@ -96,14 +96,19 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 1. SSH 或登入您的 Linux 電腦。
 2. 安裝 `ssl-cert` 套件：
+
     ```sh
     sudo apt-get install ssl-cert
     ```
+
 3. 執行 `make-ssl-cert` 以產生預設的自我簽署 SSL 憑證：
+
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
+
 4. 將產生的金鑰和 PEM 檔案轉換成 PFX。 產生的 PFX 應該在主資料夾中：
+
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```

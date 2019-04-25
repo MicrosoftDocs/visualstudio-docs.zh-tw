@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d84dc8aed00cf037efc8b35efa13fa712092c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 58691d5c6a7f44361d40a50898395ed1200a06c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817632"
 ---
 # <a name="link-task"></a>Link 工作
 包裝 Visual C++ 連結器工具 (link.exe)。 連結器工具會連結通用物件檔案格式 (COFF) 目的檔及程式庫，以建立可執行檔 (*.exe*) 或動態連結程式庫 (DLL)。 如需詳細資訊，請參閱[連結器選項](/cpp/build/reference/linker-options)。
@@ -43,7 +43,7 @@ ms.locfileid: "56627151"
 ## <a name="parameters"></a>參數
  以下描述 **Link** 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。
 
--   **AdditionalDependencies**
+- **AdditionalDependencies**
 
      選擇性的 **String[]** 參數。
 
@@ -51,7 +51,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [LINK 輸入檔](/cpp/build/reference/link-input-files)。
 
--   **AdditionalLibraryDirectories**
+- **AdditionalLibraryDirectories**
 
      選擇性的 **String[]** 參數。
 
@@ -59,7 +59,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/LIBPATH (其他 Libpath)](/cpp/build/reference/libpath-additional-libpath)。
 
--   **AdditionalManifestDependencies**
+- **AdditionalManifestDependencies**
 
      選擇性的 **String[]** 參數。
 
@@ -67,7 +67,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/MANIFESTDEPENDENCY (指定資訊清單相依性)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)。 另請參閱[發行者組態檔](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files)。
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      選擇性的 **String** 參數。
 
@@ -75,7 +75,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱[連結器選項](/cpp/build/reference/linker-options)。
 
--   **AddModuleNamesToAssembly**
+- **AddModuleNamesToAssembly**
 
      選擇性的 **String[]** 參數。
 
@@ -83,7 +83,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/ASSEMBLYMODULE (將 MSIL 模組新增至組件)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly)。
 
--   **AllowIsolation**
+- **AllowIsolation**
 
      選擇性的 **Boolean** 參數。
 
@@ -91,7 +91,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/ALLOWISOLATION (資訊清單查閱)](/cpp/build/reference/allowisolation-manifest-lookup)。
 
--   **AssemblyDebug**
+- **AssemblyDebug**
 
      選擇性的 **Boolean** 參數。
 
@@ -99,7 +99,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/ASSEMBLYDEBUG (加入 DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute)。
 
--   **AssemblyLinkResource**
+- **AssemblyLinkResource**
 
      選擇性的 **String[]** 參數。
 
@@ -107,13 +107,13 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/ASSEMBLYLINKRESOURCE (連結到 .NET Framework 資源)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource)。
 
--   **AttributeFileTracking**
+- **AttributeFileTracking**
 
      隱含的 **Boolean** 參數。
 
      啟用更深入的檔案追蹤，來擷取累加式連結的行為。 一律傳回 `true`。
 
--   **BaseAddress**
+- **BaseAddress**
 
      選擇性的 **String** 參數。
 
@@ -121,7 +121,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/BASE (基底位址)](/cpp/build/reference/base-base-address)。
 
--   **BuildingInIDE**
+- **BuildingInIDE**
 
      選擇性的 **Boolean** 參數。
 
@@ -129,7 +129,7 @@ ms.locfileid: "56627151"
 
      此參數沒有對等的連結器選項。
 
--   **CLRImageType**
+- **CLRImageType**
 
      選擇性的 **String** 參數。
 
@@ -137,17 +137,17 @@ ms.locfileid: "56627151"
 
      指定下列其中一個值；每個值會分別對應至一個連結器選項。
 
-    -   **Default** - *\<none>*
+    - **Default** - *\<none>*
 
-    -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
+    - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
 
-    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
+    - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
 
-    -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
+    - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
 
     如需詳細資訊，請參閱 [/CLRIMAGETYPE (指定 CLR 映像類型)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image)。
 
--   **CLRSupportLastError**
+- **CLRSupportLastError**
 
      選擇性的 **String** 參數。
 
@@ -155,15 +155,15 @@ ms.locfileid: "56627151"
 
      指定下列其中一個值；每個值會分別對應至一個連結器選項。
 
-    -   **Enabled** - **/CLRSupportLastError**
+    - **Enabled** - **/CLRSupportLastError**
 
-    -   **Disabled** - **/CLRSupportLastError:NO**
+    - **Disabled** - **/CLRSupportLastError:NO**
 
-    -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
+    - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
 
     如需詳細資訊，請參閱 [/CLRSUPPORTLASTERROR (保留 PInvoke 呼叫的最後一個錯誤碼)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls)。
 
--   **CLRThreadAttribute**
+- **CLRThreadAttribute**
 
      選擇性的 **String** 參數。
 
@@ -171,15 +171,15 @@ ms.locfileid: "56627151"
 
      指定下列其中一個值；每個值會分別對應至一個連結器選項。
 
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
+    - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
 
-    -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
+    - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
 
-    -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
+    - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
 
     如需詳細資訊，請參閱 [/CLRTHREADATTRIBUTE (設定 CLR 執行緒屬性)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute)。
 
--   **CLRUnmanagedCodeCheck**
+- **CLRUnmanagedCodeCheck**
 
      選擇性的 **Boolean** 參數。
 
@@ -187,7 +187,7 @@ ms.locfileid: "56627151"
 
     如需詳細資訊，請參閱 [/CLRUNMANAGEDCODECHECK (新增 SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute)。
 
--   **CreateHotPatchableImage**
+- **CreateHotPatchableImage**
 
      選擇性的 **String** 參數。
 
@@ -195,17 +195,17 @@ ms.locfileid: "56627151"
 
      指定下列其中一個值，每個值會分別對應至一個連結器選項。
 
-    -   **Enabled** - **/FUNCTIONPADMIN**
+    - **Enabled** - **/FUNCTIONPADMIN**
 
-    -   **X86Image** - **/FUNCTIONPADMIN:5**
+    - **X86Image** - **/FUNCTIONPADMIN:5**
 
-    -   **X64Image** - **/FUNCTIONPADMIN:6**
+    - **X64Image** - **/FUNCTIONPADMIN:6**
 
-    -   **ItaniumImage** - **/FUNCTIONPADMIN:16**
+    - **ItaniumImage** - **/FUNCTIONPADMIN:16**
 
     如需詳細資訊，請參閱 [/FUNCTIONPADMIN (建立可進行 Hotpatch 的映像)](/cpp/build/reference/functionpadmin-create-hotpatchable-image)。
 
--   **DataExecutionPrevention**
+- **DataExecutionPrevention**
 
      選擇性的 **Boolean** 參數。
 
@@ -213,7 +213,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/NXCOMPAT (與資料執行防止相容)](/cpp/build/reference/nxcompat-compatible-with-data-execution-prevention)。
 
--   **DelayLoadDLLs**
+- **DelayLoadDLLs**
 
      選擇性的 **String[]** 參數。
 
@@ -221,7 +221,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/DELAYLOAD (延遲載入匯入)](/cpp/build/reference/delayload-delay-load-import)。
 
--   **DelaySign**
+- **DelaySign**
 
      選擇性的 **Boolean** 參數。
 
@@ -229,7 +229,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/DELAYSIGN (部分簽署組件)](/cpp/build/reference/delaysign-partially-sign-an-assembly)。
 
--   **驅動程式**
+- **驅動程式**
 
      選擇性的 **String** 參數。
 
@@ -237,17 +237,17 @@ ms.locfileid: "56627151"
 
      指定下列其中一個值；每個值會分別對應至一個連結器選項。
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **Driver** - **/Driver**
+    - **Driver** - **/Driver**
 
-    -   **UpOnly** - **/DRIVER:UPONLY**
+    - **UpOnly** - **/DRIVER:UPONLY**
 
-    -   **WDM** - **/DRIVER:WDM**
+    - **WDM** - **/DRIVER:WDM**
 
     如需詳細資訊，請參閱 [/DRIVER (Windows NT 核心模式驅動程式)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver)。
 
--   **EmbedManagedResourceFile**
+- **EmbedManagedResourceFile**
 
      選擇性的 **String[]** 參數。
 
@@ -255,7 +255,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/ASSEMBLYRESOURCE (內嵌受控資源)](/cpp/build/reference/assemblyresource-embed-a-managed-resource)。
 
--   **EnableCOMDATFolding**
+- **EnableCOMDATFolding**
 
      選擇性的 **Boolean** 參數。
 
@@ -263,7 +263,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/OPT (最佳化)](/cpp/build/reference/opt-optimizations) 的 `ICF[= iterations]` 引數。
 
--   **EnableUAC**
+- **EnableUAC**
 
      選擇性的 **Boolean** 參數。
 
@@ -271,7 +271,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/MANIFESTUAC (在資訊清單中內嵌 UAC 資訊)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest)。
 
--   **EntryPointSymbol**
+- **EntryPointSymbol**
 
      選擇性的 **String** 參數。
 
@@ -279,7 +279,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/ENTRY (進入點符號)](/cpp/build/reference/entry-entry-point-symbol)。
 
--   **FixedBaseAddress**
+- **FixedBaseAddress**
 
      選擇性的 **Boolean** 參數。
 
@@ -287,7 +287,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/FIXED (固定基底位址)](/cpp/build/reference/fixed-fixed-base-address)。
 
--   **ForceFileOutput**
+- **ForceFileOutput**
 
      選擇性的 **String** 參數。
 
@@ -295,15 +295,15 @@ ms.locfileid: "56627151"
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-    -   **Enabled** - **/FORCE**
+    - **Enabled** - **/FORCE**
 
-    -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
+    - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
 
-    -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
+    - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
 
     如需詳細資訊，請參閱 [/FORCE (強制檔案輸出)](/cpp/build/reference/force-force-file-output)。
 
--   **ForceSymbolReferences**
+- **ForceSymbolReferences**
 
      選擇性的 **String[]** 參數。
 
@@ -311,7 +311,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/INCLUDE (強制符號參考)](/cpp/build/reference/include-force-symbol-references)。
 
--   **FunctionOrder**
+- **FunctionOrder**
 
      選擇性的 **String** 參數。
 
@@ -319,7 +319,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/ORDER (依序置放函式)](/cpp/build/reference/order-put-functions-in-order)。
 
--   **GenerateDebugInformation**
+- **GenerateDebugInformation**
 
      選擇性的 **Boolean** 參數。
 
@@ -327,7 +327,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/DEBUG (產生偵錯資訊)](/cpp/build/reference/debug-generate-debug-info)。
 
--   **GenerateManifest**
+- **GenerateManifest**
 
      選擇性的 **Boolean** 參數。
 
@@ -335,7 +335,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/MANIFEST (建立並存組件資訊清單)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest)。
 
--   **GenerateMapFile**
+- **GenerateMapFile**
 
      選擇性的 **Boolean** 參數。
 
@@ -343,7 +343,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/MAP (產生對應檔)](/cpp/build/reference/map-generate-mapfile)。
 
--   **HeapCommitSize**
+- **HeapCommitSize**
 
      選擇性的 **String** 參數。
 
@@ -351,7 +351,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/HEAP (設定堆積大小)](/cpp/build/reference/heap-set-heap-size) 中的 `commit` 引數。 另請參閱 **HeapReserveSize** 參數。
 
--   **HeapReserveSize**
+- **HeapReserveSize**
 
      選擇性的 **String** 參數。
 
@@ -359,7 +359,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/HEAP (設定堆積大小)](/cpp/build/reference/heap-set-heap-size) 中的 `reserve` 引數。 另請參閱此表格中的 **HeapCommitSize** 參數。
 
--   **IgnoreAllDefaultLibraries**
+- **IgnoreAllDefaultLibraries**
 
      選擇性的 **Boolean** 參數。
 
@@ -367,7 +367,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/NODEFAULTLIB (忽略程式庫)](/cpp/build/reference/nodefaultlib-ignore-libraries)。
 
--   **IgnoreEmbeddedIDL**
+- **IgnoreEmbeddedIDL**
 
      選擇性的 **Boolean** 參數。
 
@@ -375,7 +375,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/IGNOREIDL (不要將屬性處理至 MIDL 中)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl)。
 
--   **IgnoreImportLibrary**
+- **IgnoreImportLibrary**
 
      選擇性的 **Boolean** 參數。
 
@@ -383,7 +383,7 @@ ms.locfileid: "56627151"
 
      此參數並未對應至連結器選項。
 
--   **IgnoreSpecificDefaultLibraries**
+- **IgnoreSpecificDefaultLibraries**
 
      選擇性的 **String[]** 參數。
 
@@ -391,7 +391,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/NODEFAULTLIB (忽略程式庫)](/cpp/build/reference/nodefaultlib-ignore-libraries)。
 
--   **ImageHasSafeExceptionHandlers**
+- **ImageHasSafeExceptionHandlers**
 
      選擇性的 **Boolean** 參數。
 
@@ -399,13 +399,13 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/SAFESEH (映像擁有安全例外狀況處理常式)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers)。
 
--   **ImportLibrary**
+- **ImportLibrary**
 
      使用者指定的匯入程式庫名稱，可取代預設的程式庫名稱。
 
      如需詳細資訊，請參閱 [/IMPLIB (命名匯入程式庫)](/cpp/build/reference/implib-name-import-library)。
 
--   **KeyContainer**
+- **KeyContainer**
 
      選擇性的 **String** 參數。
 
@@ -413,7 +413,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/KEYCONTAINER (指定要簽署組件的金鑰容器)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly)。 另請參閱此表格中的 **KeyFile** 參數。
 
--   **KeyFile**
+- **KeyFile**
 
      選擇性的 **String** 參數。
 
@@ -421,7 +421,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/KEYFILE (指定金鑰或金鑰組以簽署組件)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)。 另請參閱 **KeyContainer** 參數。
 
--   **LargeAddressAware**
+- **LargeAddressAware**
 
      選擇性的 **Boolean** 參數。
 
@@ -429,7 +429,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/LARGEADDRESSAWARE (處理大型記憶體位址)](/cpp/build/reference/largeaddressaware-handle-large-addresses)。
 
--   **LinkDLL**
+- **LinkDLL**
 
      選擇性的 **Boolean** 參數。
 
@@ -437,7 +437,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/DLL (建置 DLL)](/cpp/build/reference/dll-build-a-dll)。
 
--   **LinkErrorReporting**
+- **LinkErrorReporting**
 
      選擇性的 **String** 參數。
 
@@ -445,17 +445,17 @@ ms.locfileid: "56627151"
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-    -   **NoErrorReport** - **/ERRORREPORT:NONE**
+    - **NoErrorReport** - **/ERRORREPORT:NONE**
 
-    -   **PromptImmediately** - **/ERRORREPORT:PROMPT**
+    - **PromptImmediately** - **/ERRORREPORT:PROMPT**
 
-    -   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
+    - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
 
-    -   **SendErrorReport** - **/ERRORREPORT:SEND**
+    - **SendErrorReport** - **/ERRORREPORT:SEND**
 
     如需詳細資訊，請參閱 [/ERRORREPORT (回報內部連結器錯誤)](/cpp/build/reference/errorreport-report-internal-linker-errors)。
 
--   **LinkIncremental**
+- **LinkIncremental**
 
      選擇性的 **Boolean** 參數。
 
@@ -463,7 +463,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/INCREMENTAL (以累加方式連結)](/cpp/build/reference/incremental-link-incrementally)。
 
--   **LinkLibraryDependencies**
+- **LinkLibraryDependencies**
 
      選擇性的 **Boolean** 參數。
 
@@ -471,7 +471,7 @@ ms.locfileid: "56627151"
 
      此參數並未對應至連結器選項。
 
--   **LinkStatus**
+- **LinkStatus**
 
      選擇性的 **Boolean** 參數。
 
@@ -479,7 +479,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/LTCG (連結時產生程式碼)](/cpp/build/reference/ltcg-link-time-code-generation) 的 `STATUS` 引數。
 
--   **LinkTimeCodeGeneration**
+- **LinkTimeCodeGeneration**
 
      選擇性的 **String** 參數。
 
@@ -487,21 +487,21 @@ ms.locfileid: "56627151"
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-    -   **Default** - *\<none>*
+    - **Default** - *\<none>*
 
-    -   **UseLinkTimeCodeGeneration** - **/LTCG**
+    - **UseLinkTimeCodeGeneration** - **/LTCG**
 
-    -   **PGInstrument** - **/LTCG:PGInstrument**
+    - **PGInstrument** - **/LTCG:PGInstrument**
 
-    -   **PGOptimization** - **/LTCG:PGOptimize**
+    - **PGOptimization** - **/LTCG:PGOptimize**
 
-    -   **PGUpdate**
+    - **PGUpdate**
 
          \- **/LTCG:PGUpdate**
 
     如需詳細資訊，請參閱 [/LTCG (連結時產生程式碼)](/cpp/build/reference/ltcg-link-time-code-generation)。
 
--   **ManifestFile**
+- **ManifestFile**
 
      選擇性的 **String** 參數。
 
@@ -509,7 +509,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/MANIFESTFILE (命名資訊清單檔)](/cpp/build/reference/manifestfile-name-manifest-file)。
 
--   **MapExports**
+- **MapExports**
 
      選擇性的 **Boolean** 參數。
 
@@ -517,13 +517,13 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/MAPINFO (在對應檔中包含資訊)](/cpp/build/reference/mapinfo-include-information-in-mapfile) 中的`EXPORTS` 引數。
 
--   **MapFileName**
+- **MapFileName**
 
      選擇性的 **String** 參數。
 
      將預設的對應檔名稱變更為指定的檔案名稱。
 
--   **MergedIDLBaseFileName**
+- **MergedIDLBaseFileName**
 
      選擇性的 **String** 參數。
 
@@ -531,7 +531,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/IDLOUT (命名 MIDL 輸出檔案)](/cpp/build/reference/idlout-name-midl-output-files)。
 
--   **MergeSections**
+- **MergeSections**
 
      選擇性的 **String** 參數。
 
@@ -539,7 +539,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/MERGE (結合區段)](/cpp/build/reference/merge-combine-sections)。
 
--   **MidlCommandFile**
+- **MidlCommandFile**
 
      選擇性的 **String** 參數。
 
@@ -547,13 +547,13 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/MIDL (指定 MIDL 命令列選項)](/cpp/build/reference/midl-specify-midl-command-line-options)。
 
--   **MinimumRequiredVersion**
+- **MinimumRequiredVersion**
 
      選擇性的 **String** 參數。
 
      指定子系統的最小必要版本。 引數為範圍從 0 到 65535 的十進位數字。
 
--   **ModuleDefinitionFile**
+- **ModuleDefinitionFile**
 
      選擇性的 **String** 參數。
 
@@ -561,7 +561,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/DEF (指定模組定義檔)](/cpp/build/reference/def-specify-module-definition-file)。
 
--   **MSDOSStubFileName**
+- **MSDOSStubFileName**
 
      選擇性的 **String** 參數。
 
@@ -569,7 +569,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/STUB (MS-DOS Stub 檔名稱)](/cpp/build/reference/stub-ms-dos-stub-file-name)。
 
--   **NoEntryPoint**
+- **NoEntryPoint**
 
      選擇性的 **Boolean** 參數。
 
@@ -577,13 +577,13 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/NOENTRY (沒有進入點)](/cpp/build/reference/noentry-no-entry-point)。
 
--   **ObjectFiles**
+- **ObjectFiles**
 
      隱含的 **String []** 參數。
 
      指定連結的目的檔。
 
--   **OptimizeReferences**
+- **OptimizeReferences**
 
      選擇性的 **Boolean** 參數。
 
@@ -591,7 +591,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/OPT (最佳化)](/cpp/build/reference/opt-optimizations) 中的 `REF` 引數。
 
--   **OutputFile**
+- **OutputFile**
 
      選擇性的 **String** 參數。
 
@@ -599,19 +599,19 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/OUT (輸出檔案名稱)](/cpp/build/reference/out-output-file-name)。
 
--   **PerUserRedirection**
+- **PerUserRedirection**
 
      選擇性的 **Boolean** 參數。
 
      如果是 `true` 且已啟用登錄輸出，即會強制將登錄寫入 **HKEY_CLASSES_ROOT**，使其重新導向到 **HKEY_CURRENT_USER**。
 
--   **PreprocessOutput**
+- **PreprocessOutput**
 
      選擇性的 `ITaskItem[]` 參數。
 
      定義工作可以耗用和發出的前置處理器輸出項目的陣列。
 
--   **PreventDllBinding**
+- **PreventDllBinding**
 
      選擇性的 **Boolean** 參數。
 
@@ -619,7 +619,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/ALLOWBIND (防止 DLL 繫結)](/cpp/build/reference/allowbind-prevent-dll-binding)。
 
--   **Profile**
+- **Profile**
 
      選擇性的 **Boolean** 參數。
 
@@ -627,7 +627,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/PROFILE (效能工具分析工具)](/cpp/build/reference/profile-performance-tools-profiler)。
 
--   **ProfileGuidedDatabase**
+- **ProfileGuidedDatabase**
 
      選擇性的 **String** 參數。
 
@@ -635,7 +635,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/PGD (指定特性指引最佳化資料庫)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations)。
 
--   **ProgramDatabaseFile**
+- **ProgramDatabaseFile**
 
      選擇性的 **String** 參數。
 
@@ -643,7 +643,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/PDB (使用程式資料庫)](/cpp/build/reference/pdb-use-program-database)。
 
--   **RandomizedBaseAddress**
+- **RandomizedBaseAddress**
 
      選擇性的 **Boolean** 參數。
 
@@ -651,13 +651,13 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/DYNAMICBASE (使用位址空間配置隨機載入)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization)。
 
--   **RegisterOutput**
+- **RegisterOutput**
 
      選擇性的 **Boolean** 參數。
 
      如果是 `true`，即會登錄此組建的主要輸出。
 
--   **SectionAlignment**
+- **SectionAlignment**
 
      選擇性的 **Integer** 參數。
 
@@ -665,7 +665,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/ALIGN (區段對齊)](/cpp/build/reference/align-section-alignment)。
 
--   **SetChecksum**
+- **SetChecksum**
 
      選擇性的 **Boolean** 參數。
 
@@ -673,7 +673,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/RELEASE (設定總和檢查碼)](/cpp/build/reference/release-set-the-checksum)。
 
--   **ShowProgress**
+- **ShowProgress**
 
      選擇性的 **String** 參數。
 
@@ -681,29 +681,29 @@ ms.locfileid: "56627151"
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **LinkVerbose** - **/VERBOSE**
+    - **LinkVerbose** - **/VERBOSE**
 
-    -   **LinkVerboseLib** - **/VERBOSE:Lib**
+    - **LinkVerboseLib** - **/VERBOSE:Lib**
 
-    -   **LinkVerboseICF** - **/VERBOSE:ICF**
+    - **LinkVerboseICF** - **/VERBOSE:ICF**
 
-    -   **LinkVerboseREF** - **/VERBOSE:REF**
+    - **LinkVerboseREF** - **/VERBOSE:REF**
 
-    -   **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
+    - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
 
-    -   **LinkVerboseCLR** - **/VERBOSE:CLR**
+    - **LinkVerboseCLR** - **/VERBOSE:CLR**
 
     如需詳細資訊，請參閱 [/VERBOSE (列印進度訊息)](/cpp/build/reference/verbose-print-progress-messages)。
 
--   **Sources**
+- **Sources**
 
      必要的 `ITaskItem[]` 參數。
 
      定義工作可以耗用和發出的 MSBuild 來源檔案項目的陣列。
 
--   **SpecifySectionAttributes**
+- **SpecifySectionAttributes**
 
      選擇性的 **String** 參數。
 
@@ -711,7 +711,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/SECTION (指定區段屬性)](/cpp/build/reference/section-specify-section-attributes)。
 
--   **StackCommitSize**
+- **StackCommitSize**
 
      選擇性的 **String** 參數。
 
@@ -719,7 +719,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/STACK (堆疊配置)](/cpp/build/reference/stack-stack-allocations) 的 `commit` 引數。
 
--   **StackReserveSize**
+- **StackReserveSize**
 
      選擇性的 **String** 參數。
 
@@ -727,7 +727,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/STACK (堆疊配置)](/cpp/build/reference/stack-stack-allocations) 的 `reserve` 引數。
 
--   **StripPrivateSymbols**
+- **StripPrivateSymbols**
 
      選擇性的 **String** 參數。
 
@@ -735,7 +735,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/PDBSTRIPPED (移除專用符號)](/cpp/build/reference/pdbstripped-strip-private-symbols)。
 
--   **SubSystem**
+- **SubSystem**
 
      選擇性的 **String** 參數。
 
@@ -743,29 +743,29 @@ ms.locfileid: "56627151"
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **Console** - **/SUBSYSTEM:CONSOLE**
+    - **Console** - **/SUBSYSTEM:CONSOLE**
 
-    -   **Windows** - **/SUBSYSTEM:WINDOWS**
+    - **Windows** - **/SUBSYSTEM:WINDOWS**
 
-    -   **Native** - **/SUBSYSTEM:NATIVE**
+    - **Native** - **/SUBSYSTEM:NATIVE**
 
-    -   **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**
+    - **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**
 
-    -   **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
+    - **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
 
-    -   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
+    - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
 
-    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
+    - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
 
-    -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
+    - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
 
-    -   **POSIX** - **/SUBSYSTEM:POSIX**
+    - **POSIX** - **/SUBSYSTEM:POSIX**
 
     如需詳細資訊，請參閱 [/SUBSYSTEM (指定子系統)](/cpp/build/reference/subsystem-specify-subsystem)。
 
--   **SupportNobindOfDelayLoadedDLL**
+- **SupportNobindOfDelayLoadedDLL**
 
      選擇性的 **Boolean** 參數。
 
@@ -773,7 +773,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/DELAY (延遲載入匯入設定)](/cpp/build/reference/delay-delay-load-import-settings) 的 `NOBIND` 引數。
 
--   **SupportUnloadOfDelayLoadedDLL**
+- **SupportUnloadOfDelayLoadedDLL**
 
      選擇性的 **Boolean** 參數。
 
@@ -781,7 +781,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/DELAY (延遲載入匯入設定)](/cpp/build/reference/delay-delay-load-import-settings) 的 `UNLOAD` 引數。
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      選擇性的 **Boolean** 參數。
 
@@ -789,7 +789,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/NOLOGO (隱藏程式啟始資訊) (連結器)](/cpp/build/reference/nologo-suppress-startup-banner-linker)。
 
--   **SwapRunFromCD**
+- **SwapRunFromCD**
 
      選擇性的 **Boolean** 參數。
 
@@ -797,7 +797,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/SWAPRUN (將連結器輸出載入至交換檔)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file) 的 `CD` 引數。 另請參閱 **SwapRunFromNET** 參數。
 
--   **SwapRunFromNET**
+- **SwapRunFromNET**
 
      選擇性的 **Boolean** 參數。
 
@@ -805,7 +805,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/SWAPRUN (將連結器輸出載入至交換檔)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file) 的 `NET` 引數。 另請參閱此表格中的 **SwapRunFromCD** 參數。
 
--   **TargetMachine**
+- **TargetMachine**
 
      選擇性的 **String** 參數。
 
@@ -813,33 +813,33 @@ ms.locfileid: "56627151"
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **MachineARM** - **/MACHINE:ARM**
+    - **MachineARM** - **/MACHINE:ARM**
 
-    -   **MachineEBC** - **/MACHINE:EBC**
+    - **MachineEBC** - **/MACHINE:EBC**
 
-    -   **MachineIA64** - **/MACHINE:IA64**
+    - **MachineIA64** - **/MACHINE:IA64**
 
-    -   **MachineMIPS** - **/MACHINE:MIPS**
+    - **MachineMIPS** - **/MACHINE:MIPS**
 
-    -   **MachineMIPS16** - **/MACHINE:MIPS16**
+    - **MachineMIPS16** - **/MACHINE:MIPS16**
 
-    -   **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
+    - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
 
-    -   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
+    - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
 
-    -   **MachineSH4** - **/MACHINE:SH4**
+    - **MachineSH4** - **/MACHINE:SH4**
 
-    -   **MachineTHUMB** - **/MACHINE:THUMB**
+    - **MachineTHUMB** - **/MACHINE:THUMB**
 
-    -   **MachineX64** - **/MACHINE:X64**
+    - **MachineX64** - **/MACHINE:X64**
 
-    -   **MachineX86** - **/MACHINE:X86**
+    - **MachineX86** - **/MACHINE:X86**
 
     如需詳細資訊，請參閱 [/MACHINE (指定目標平台)](/cpp/build/reference/machine-specify-target-platform)。
 
--   **TerminalServerAware**
+- **TerminalServerAware**
 
      選擇性的 **Boolean** 參數。
 
@@ -847,13 +847,13 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/TSAWARE (建立終端伺服器感知應用程式)](/cpp/build/reference/tsaware-create-terminal-server-aware-application)。
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      選擇性的 **String** 參數。
 
      指定追蹤器記錄檔的目錄。
 
--   **TreatLinkerWarningAsErrors**
+- **TreatLinkerWarningAsErrors**
 
      選擇性的 **Boolean** 參數。
 
@@ -861,7 +861,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/WX (將連結器警告視為錯誤)](/cpp/build/reference/wx-treat-linker-warnings-as-errors)。
 
--   **TurnOffAssemblyGeneration**
+- **TurnOffAssemblyGeneration**
 
      選擇性的 **Boolean** 參數。
 
@@ -869,7 +869,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/NOASSEMBLY (建立 MSIL 模組)](/cpp/build/reference/noassembly-create-a-msil-module)。
 
--   **TypeLibraryFile**
+- **TypeLibraryFile**
 
      選擇性的 **String** 參數。
 
@@ -877,7 +877,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/TLBOUT (命名 .tlb 檔)](/cpp/build/reference/tlbout-name-dot-tlb-file)。
 
--   **TypeLibraryResourceID**
+- **TypeLibraryResourceID**
 
      選擇性的 **Integer** 參數。
 
@@ -885,7 +885,7 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/TLBID (指定 TypeLib 的資源識別碼)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib)。
 
--   **UACExecutionLevel**
+- **UACExecutionLevel**
 
      選擇性的 **String** 參數。
 
@@ -893,15 +893,15 @@ ms.locfileid: "56627151"
 
      指定下列其中一個值；每個值會分別對應至一個命令列選項。
 
-    -   **AsInvoker** - `level='asInvoker'`
+    - **AsInvoker** - `level='asInvoker'`
 
-    -   **HighestAvailable** - `level='highestAvailable'`
+    - **HighestAvailable** - `level='highestAvailable'`
 
-    -   **RequireAdministrator** - `level='requireAdministrator'`
+    - **RequireAdministrator** - `level='requireAdministrator'`
 
     如需詳細資訊，請參閱 [/MANIFESTUAC (在資訊清單中內嵌 UAC 資訊)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest) 的 `level` 引數。
 
--   **UACUIAccess**
+- **UACUIAccess**
 
      選擇性的 **Boolean** 參數。
 
@@ -909,13 +909,13 @@ ms.locfileid: "56627151"
 
      如需詳細資訊，請參閱 [/MANIFESTUAC (在資訊清單中內嵌 UAC 資訊)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest) 的 `uiAccess` 引數。
 
--   **UseLibraryDependencyInputs**
+- **UseLibraryDependencyInputs**
 
      選擇性的 **Boolean** 參數。
 
      如果是 `true`，連結專案相依性的程式庫輸出時，會使用管理員工具的輸入而非程式庫檔案本身。
 
--   **版本**
+- **版本**
 
      選擇性的 **String** 參數。
 

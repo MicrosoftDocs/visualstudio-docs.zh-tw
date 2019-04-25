@@ -8,26 +8,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 799f5bfaad3433bebeca54367c91fefc34e05a21
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 151b9be68b82f2b9fdcb20cd105890914333a2b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821518"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教學課程 3：建立配對遊戲
 
 在本教學課程中，您會建置一個配對遊戲，而遊戲玩家必須配對隱藏的圖示。 您將學習如何：
 
--   在 <xref:System.Collections.Generic.List%601> 物件中儲存物件 (例如圖示)。
+- 在 <xref:System.Collections.Generic.List%601> 物件中儲存物件 (例如圖示)。
 
--   使用 `foreach` 迴圈 (Visual C#) 或 `For Each` 迴圈 (Visual Basic) 逐一查看清單中的項目。
+- 使用 `foreach` 迴圈 (Visual C#) 或 `For Each` 迴圈 (Visual Basic) 逐一查看清單中的項目。
 
--   使用參考變數追蹤表單的狀態。
+- 使用參考變數追蹤表單的狀態。
 
--   建置您可以搭配多個物件使用的事件處理常式來回應事件。
+- 建置您可以搭配多個物件使用的事件處理常式來回應事件。
 
--   讓計時器倒數計時，然後讓計時器於啟動後剛好引發一個事件。
+- 讓計時器倒數計時，然後讓計時器於啟動後剛好引發一個事件。
 
 當您完成此教學課程時，您的程式看起來類似下圖所示：
 
@@ -44,7 +44,7 @@ ms.locfileid: "55928487"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[步驟 1：建立專案並將資料表新增至表單](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|從建立專案並新增 `TableLayoutPanel` 控制項，讓控制項正確對齊開始。|
 |[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|加入 `Random` 物件和 `List` 物件，以建立圖示清單。|

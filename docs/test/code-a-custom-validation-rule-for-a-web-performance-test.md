@@ -15,12 +15,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f26dc7fd69c5190f5ba56985ef2509ddbf87866
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c39518c03d1a599dbe9eecac3d609343b7394313
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822597"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂驗證規則程式碼
 
@@ -33,24 +33,24 @@ ms.locfileid: "55919907"
 
 ## <a name="to-create-custom-validation-rules"></a>若要建立自訂驗證規則
 
-1.  開啟包含 Web 效能測試的測試專案。
+1. 開啟包含 Web 效能測試的測試專案。
 
-2.  (選擇性) 建立個別的類別庫專案，以存放驗證規則。
+2. (選擇性) 建立個別的類別庫專案，以存放驗證規則。
 
     > [!IMPORTANT]
     > 您可以在測試所在的同一個專案中建立類別。 不過，如果要重複使用規則，最好是建立個別的類別庫專案，以存放規則。 如果您要建立個別的專案，必須完成本程序中的選擇性步驟。
 
-3.  (選擇性) 在「類別庫」專案中，加入 Microsoft.VisualStudio.QualityTools.WebTestFramework DLL 的參考。
+3. (選擇性) 在「類別庫」專案中，加入 Microsoft.VisualStudio.QualityTools.WebTestFramework DLL 的參考。
 
-4.  建立從 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> 類別衍生的類別。 實作 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*> 成員。
+4. 建立從 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> 類別衍生的類別。 實作 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*> 成員。
 
-5.  (選擇性) 建立新的「類別庫」專案。
+5. (選擇性) 建立新的「類別庫」專案。
 
-6.  (選擇性) 在測試專案中，加入包含自訂驗證規則之類別庫專案的參考。
+6. (選擇性) 在測試專案中，加入包含自訂驗證規則之類別庫專案的參考。
 
-7.  在 [測試專案] 中，使用 [Web 效能測試編輯器] 開啟 Web 效能測試。
+7. 在 [測試專案] 中，使用 [Web 效能測試編輯器] 開啟 Web 效能測試。
 
-8.  若要將自訂驗證規則新增至 Web 效能測試要求，請以滑鼠右鍵按一下要求，然後選取 [新增驗證規則]。
+8. 若要將自訂驗證規則新增至 Web 效能測試要求，請以滑鼠右鍵按一下要求，然後選取 [新增驗證規則]。
 
      [新增驗證規則] 對話方塊隨即出現。 您會在 [選取規則] 清單中看到您的自訂驗證規則，以及預先定義的驗證規則。 選取您的自訂驗證規則，然後選擇 [確定]。
 

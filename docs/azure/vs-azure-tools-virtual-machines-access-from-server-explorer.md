@@ -4,17 +4,19 @@ description: 取得如何在 Visual Studio 的 [伺服器總管] 中，檢視建
 author: ghogen
 manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
 ms.openlocfilehash: e4f8f72dcc19ebe721e79c7b5268fd73d2cc469e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427024"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>從伺服器總管存取 Azure 虛擬機器
 
@@ -33,7 +35,7 @@ ms.locfileid: "55930827"
    | 狀態 |值包括 [啟動中]、[已啟動]、[停止中]、[已停止] 和 [正在擷取狀態]。 如果出現 [正在擷取狀態]，則目前狀態是未知的。 這個屬性的值不同於 [Azure 入口網站](http://go.microsoft.com/fwlink/p/?LinkID=525040)上所使用的值。 |
    | SubscriptionID |Azure 帳戶的訂用帳戶識別碼。 您可以透過檢視訂用帳戶的屬性，在 [Azure 入口網站](http://go.microsoft.com/fwlink/p/?LinkID=525040)上顯示這項資訊。 |
 2. 選擇端點節點，然後檢視 [屬性]  視窗。
-3. 下表說明可用的端點屬性，但他們全部都是唯讀。 若要新增或編輯虛擬機器的端點，請使用 [Azure 入口網站](http://go.microsoft.com/fwlink/p/?LinkID=525040)。
+3. 下表說明可用的端點屬性，但他們全部都是唯讀。 若要新增或編輯虛擬機器的端點，請使用 [Azure 入口網站](http://go.microsoft.com/fwlink/p/?LinkID=525040)。 
 
    | 屬性 | 說明 |
    | --- | --- |

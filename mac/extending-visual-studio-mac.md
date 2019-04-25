@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983148"
 ---
 # <a name="extending-visual-studio-for-mac"></a>擴充 Visual Studio for Mac
 
@@ -28,7 +28,7 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」的模組。 您
 此模組化設計的好處是，Visual Studio for Mac 可以擴充 -- 有許多擴充點可供自訂延伸模組套件建置之用。 目前的延伸模組套件範例包括支援 C# 和 F#、偵錯工具和專案範本。
 
 > [!NOTE]
-> **注意**：如果您有在增益集製作程式 1.2 之前建立的增益集製作程式專案，則需要移轉專案，如[這裡](https://mhut.ch/addinmaker/1.2)的步驟中所述。
+> **注意**：如果您有在 Add-in Maker 1.2 之前建立的 Add-in Maker 專案，您需要依[這裡](https://mhut.ch/addinmaker/1.2)列出的步驟遷移專案。
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -81,10 +81,10 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」的模組。 您
 
 擴充節點包含路徑屬性，它指定插入到的擴充點，在此案例中為 `/MonoDevelop/Ide/Commands/Edit`。 此外，它會作為命令的父節點。 命令節點具有下列屬性：
 
-*   **id** - 指定此命令的識別碼。 命令識別碼必須宣告為列舉成員，並且會用來將命令連接至 CommandItem。
-*   **_label** - 要顯示在功能表中的文字。
-*   **_description** - 要顯示為工具列按鈕之工具提示的文字。
-*   **defaultHandler** - 指定賦予命令功能的 `CommandHandler` 類別
+* **id** - 指定此命令的識別碼。 命令識別碼必須宣告為列舉成員，並且會用來將命令連接至 CommandItem。
+* **_label** - 要顯示在功能表中的文字。
+* **_description** - 要顯示為工具列按鈕之工具提示的文字。
+* **defaultHandler** - 指定賦予命令功能的 `CommandHandler` 類別
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -137,27 +137,27 @@ public enum DateInserterCommands
 
 如需可供開發的區域範圍資訊，請參閱 [Extension Tree Reference](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) (延伸模組樹狀目錄參考) 和 [API Overview](http://monodevelop.com/Developers/Articles/API_Overview) (API 概觀)。 建置進階延伸模組套件時，也請參閱 [Developer Articles](http://monodevelop.com/Developers/Articles) (開發人員文章)。 以下是自訂區域的部分清單：
 
-*   板
-*   按鍵繫結配置
-*   原則
-*   程式碼格式器
-*   專案檔案格式
-*   喜好設定面板
-*   選項面板
-*   偵錯工具通訊協定
-*   偵錯工具視覺化檢視
-*   工作區版面配置
-*   Solution Pad 樹狀節點
-*   原始檔編輯器邊界
-*   單元測試引擎
-*   程式碼產生器
-*   程式碼片段
-*   目標 Framework
-*   目標執行階段
-*   VC 後端
-*   重構
-*   執行處理常式
-*   語法醒目提示
+* 板
+* 按鍵繫結配置
+* 原則
+* 程式碼格式器
+* 專案檔案格式
+* 喜好設定面板
+* 選項面板
+* 偵錯工具通訊協定
+* 偵錯工具視覺化檢視
+* 工作區版面配置
+* Solution Pad 樹狀節點
+* 原始檔編輯器邊界
+* 單元測試引擎
+* 程式碼產生器
+* 程式碼片段
+* 目標 Framework
+* 目標執行階段
+* VC 後端
+* 重構
+* 執行處理常式
+* 語法醒目提示
 
 ## <a name="additional-information"></a>其他資訊
 

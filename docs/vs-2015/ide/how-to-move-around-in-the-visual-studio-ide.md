@@ -1,5 +1,5 @@
 ---
-title: 如何： 在 IDE 中四處移動 |Microsoft Docs
+title: 如何：在 IDE 中四處移動 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,12 +18,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94629a2e64d154313711b3e8968b28959d3341e8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 269b6bba8c832d240813641317b8f0aa61fa0f34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805415"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069506"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>做法：在 Visual Studio IDE 中四處移動
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,20 +63,20 @@ ms.locfileid: "54805415"
 
 #### <a name="to-switch-to-specific-files-in-the-editor"></a>切換至編輯器中的特定檔案
 
--   按 CTRL + TAB，以顯示 [IDE 瀏覽器]。 按住 CTRL 鍵並重複按 TAB，直到您選取您想要切換前往的檔案。
+- 按 CTRL + TAB，以顯示 [IDE 瀏覽器]。 按住 CTRL 鍵並重複按 TAB，直到您選取您想要切換前往的檔案。
 
     > [!TIP]
     >  若要反轉瀏覽 [使用中的檔案] 清單的順序，請按住 CTRL + SHIFT 鍵並按 TAB。
 
      \-或-
 
--   在編輯器的右上角，選擇 [使用中的檔案] 按鈕，然後從清單中選取要切換的檔案。
+- 在編輯器的右上角，選擇 [使用中的檔案] 按鈕，然後從清單中選取要切換的檔案。
 
      \-或-
 
--   在功能表列上，依序選擇 [視窗]、[Windows]。
+- 在功能表列上，依序選擇 [視窗]、[Windows]。
 
--   在清單中，選取您想要檢視的檔案，然後選擇 [啟動]。
+- 在清單中，選取您想要檢視的檔案，然後選擇 [啟動]。
 
 ## <a name="navigating-among-tool-windows-in-the-ide"></a>在 IDE 中的各個工具視窗之間巡覽
  [IDE 瀏覽器] 可讓您循環瀏覽已在 IDE 中開啟的工具視窗。 您可使用兩個命令存取 [IDE 瀏覽器]，以依據所需的循環瀏覽順序，循環瀏覽檔案。 `Window.PreviousToolWindowNav` 可讓您移至最近存取的檔案，並`Window.NextToolWindowNav`可讓您依相反順序移動。 「一般開發設定」會將 SHIFT + ALT + F7 指派至 `Window.PreviousDocumentWindowNav`，並將 ALT + F7 指派至 `Window.NextDocumentWindowNav`。
@@ -86,10 +86,10 @@ ms.locfileid: "54805415"
 
 #### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>切換至 IDE 中的特定工具視窗
 
--   按下 ALT+F7 以顯示 [IDE 瀏覽器]。 按住 ALT 鍵並重複按 F7，直到您選取想要切換前往的視窗。
+- 按下 ALT+F7 以顯示 [IDE 瀏覽器]。 按住 ALT 鍵並重複按 F7，直到您選取想要切換前往的視窗。
 
     > [!TIP]
     >  若要反轉瀏覽 [使用中的工具視窗] 清單的順序，請按住 SHIFT + ALT 鍵並按 F7。
 
 ## <a name="see-also"></a>請參閱
- [自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)
+ [自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md) [預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)

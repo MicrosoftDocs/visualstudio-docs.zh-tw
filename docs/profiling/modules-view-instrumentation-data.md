@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be1c3b972397246823512f67e6fe2a0e2ecabbd5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830029"
 ---
 # <a name="modules-view---instrumentation-data"></a>模組檢視 - 檢測資料
 模組檢視顯示依據分析資料中模組來分組的效能資料。 模組的函式列在模組節點之下。

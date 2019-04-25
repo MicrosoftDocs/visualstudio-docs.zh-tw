@@ -1,5 +1,5 @@
 ---
-title: Microsoft 語言介面套件 (Lip) |Microsoft Docs
+title: Microsoft 語言介面套件 (LIP) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8d5bf89a4f4b33306176b1fe5e33fa91fb1d325d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096500"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft 語言介面套件 (LIP) 和 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,46 +43,46 @@ ms.locfileid: "54776918"
 ### <a name="support-for-code-pages"></a>字碼頁支援
  如果文字中包含不屬於目前字碼頁的字元，某些 Visual Studio 工具將無法正確顯示文字。 這些工具會改為顯示問號，或表示文字已損毀。 受影響的工具或區域如下：
 
--   使用 FTP 部署的網站。
+- 使用 FTP 部署的網站。
 
--   某些控制項上的非 ASCII 電腦名稱。
+- 某些控制項上的非 ASCII 電腦名稱。
 
--   在 Visual Studio 外部執行的命令列工具。
+- 在 Visual Studio 外部執行的命令列工具。
 
--   Visual Basic 移轉精靈。
+- Visual Basic 移轉精靈。
 
--   ActiveX 控制項測試容器。
+- ActiveX 控制項測試容器。
 
--   OLE/COM 物件檢視器。
+- OLE/COM 物件檢視器。
 
--   ISAPI Web 偵錯工具。
+- ISAPI Web 偵錯工具。
 
--   具有 HTML 說明內容的 MFC 應用程式專案。
+- 具有 HTML 說明內容的 MFC 應用程式專案。
 
--   有不相容的字碼頁時，Visual SourceSafe / SCCI UI 會回復為英文。
+- 有不相容的字碼頁時，Visual SourceSafe / SCCI UI 會回復為英文。
 
--   Visual SourceSafe 不支援 Unicode 檔名。
+- Visual SourceSafe 不支援 Unicode 檔名。
 
--   無法將使用者定義的字元 (私用區域) 當做語彙基元/識別項使用。
+- 無法將終端使用者定義的字元 (私用區域) 當做語彙基元/識別項使用。
 
--   將 Windows 字碼頁設定為東亞語言時，無法在某些 Visual Studio 工具視窗中顯示拉丁文擴充- B 字元。
+- 將 Windows 字碼頁設定為東亞語言時，無法在某些 Visual Studio 工具視窗中顯示拉丁文擴充- B 字元。
 
--   由多種語言字集中的字元所組成的文字執行，可能會為某些字元顯示預設字符。
+- 由多種語言字集中的字元所組成的文字執行，可能會為某些字元顯示預設字符。
 
--   複製複雜字集字串並貼到通用控制項時，可能會造成字元外形遺失。 請改用對應的語言鍵盤來輸入文字。
+- 複製複雜字集字串並貼到通用控制項時，可能會造成字元外形遺失。 請改用對應的語言鍵盤來輸入文字。
 
 ##### <a name="to-correctly-display-characters-that-are-not-included-in-the-current-code-page"></a>正確顯示目前字碼頁中不包含的字元
 
-1.  依序按一下 [開始] 和 [控制台]，然後開啟 [地區及語言選項] (在 [!INCLUDE[win8](../includes/win8-md.md)] 中為 [區域])。
+1. 依序按一下 [開始] 和 [控制台]，然後開啟 [地區及語言選項] (在 [!INCLUDE[win8](../includes/win8-md.md)] 中為 [區域])。
 
     > [!NOTE]
     >  您必須是電腦的系統管理員，才能依照這些步驟進行。
 
-2.  按一下 [進階] 按鈕。
+2. 按一下 [進階] 按鈕。
 
-3.  在 [選取一個符合您要使用之非 Unicode 程式語言版本的語言] 清單中，選取您目前使用的語言。
+3. 在 [選取一個符合您要使用之非 Unicode 程式語言版本的語言] 清單中，選取您目前使用的語言。
 
-4.  按一下 [確定 **Deploying Office Solutions**]。
+4. 按一下 [確定]。
 
 ## <a name="changing-the-language-used-for-the-ui-text-in-visual-studio"></a>變更 Visual Studio 中 UI 文字所使用的語言
  當您在同一部電腦上安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的多個語言版本時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] UI 會預設為 [與 Microsoft Windows 相同]。 這項設定表示 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會以指定為作業系統顯示語言的語言來顯示 UI 文字。

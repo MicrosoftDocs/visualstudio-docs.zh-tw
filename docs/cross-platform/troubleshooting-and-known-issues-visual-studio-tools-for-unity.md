@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815582"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑難排解和已知問題 (Visual Studio Tools for Unity)
 
@@ -124,7 +124,7 @@ USB 偵錯的速度超快，而且 Visual Studio Tools for Unity 現已可偵測
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>回報使用 Visual Studio Tools for Unity 進行偵錯時 Visual Studio 凍結的情形
 
-*在 Windows 上：*
+*在 Windows 上*：
 
 1. 開啟新的 Visual Studio 執行個體。
 
@@ -142,7 +142,7 @@ USB 偵錯的速度超快，而且 Visual Studio Tools for Unity 現已可偵測
 
     您可能需要先顯示 [命令]  視窗。 在 Visual Studio 主功能表上，選擇 [檢視] 、[其他視窗] 、[命令視窗] 。
 
-*在 Mac 上：*
+*在 Mac 上*：
 
 1. 開啟終端機，並取得 Visual Studio for Mac 的 PID：
 

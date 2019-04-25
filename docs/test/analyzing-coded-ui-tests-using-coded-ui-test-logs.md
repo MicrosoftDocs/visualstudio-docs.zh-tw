@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 85be4e713a4cf2581200da7589a1001e6510459d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822714"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>使用自動程式化 UI 測試記錄分析自動程式化 UI 測試
 
@@ -60,30 +60,30 @@ ms.locfileid: "55948546"
 
 當您在已修改 *QTAgent32.exe.config* 檔案的情況下執行自動程式化 UI 測試時，會看到 [測試總管] 結果中有輸出連結。 記錄檔不只在測試失敗時才產生，在追蹤層級設定為 "verbose" 時，就算測試成功也會產生。
 
-1.  在 [測試] 功能表上，選擇 [Windows]，然後選取 [測試總管]。
+1. 在 [測試] 功能表上，選擇 [Windows]，然後選取 [測試總管]。
 
-2.  在 [ **建置** ] 功能表上，選擇 [ **建置方案**]。
+2. 在 [ **建置** ] 功能表上，選擇 [ **建置方案**]。
 
-3.  在 [測試總管] 中，選取您要執行的自動程式化 UI 測試，並開啟其捷徑功能表，然後選擇 [執行選取的測試]。
+3. 在 [測試總管] 中，選取您要執行的自動程式化 UI 測試，並開啟其捷徑功能表，然後選擇 [執行選取的測試]。
 
      自動化測試會執行，並指出測試成功或失敗。
 
     > [!TIP]
     > 若要檢視 [測試總管]，請選擇 [測試] > [Windows]，然後選擇 [測試總管]。
 
-4.  選擇 [測試總管] 結果中的 [輸出] 連結。
+4. 選擇 [測試總管] 結果中的 [輸出] 連結。
 
      ![[測試總管] 中的 [輸出] 連結](../test/media/cuit_htmlactionlog1.png)
 
      這會顯示包括動作記錄連結的測試輸出。
 
-     ![自動程式化 UI 測試的結果和輸出連結](../test/media/cuit_htmlactionlog2.png)
+     ![自動程式碼 UI 測試的結果和輸出連結](../test/media/cuit_htmlactionlog2.png)
 
-5.  選擇 *UITestActionLog.html* 連結。
+5. 選擇 *UITestActionLog.html* 連結。
 
      記錄隨即顯示在網頁瀏覽器中。
 
-     ![自動程式化 UI 測試記錄檔](../test/media/cuit_htmlactionlog3.png)
+     ![自動程式碼 UI 測試記錄檔](../test/media/cuit_htmlactionlog3.png)
 
 ## <a name="see-also"></a>另請參閱
 

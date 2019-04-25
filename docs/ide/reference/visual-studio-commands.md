@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789366"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 
@@ -39,7 +39,7 @@ Visual Studio 命令的逸出字元是插入號 (^) 字元，這表示緊接著�
 
 下列命令需要引數和/或參數。
 
-| 命令名稱： | 描述 |
+| 命令名稱： | 說明 |
 | - | - |
 | [加入現有項目](../../ide/reference/add-existing-item-command.md) | 將現有檔案新增至目前的方案，並開啟它。 |
 | [加入現有專案](../../ide/reference/add-existing-project-command.md) | 將現有專案新增至目前的方案。 |

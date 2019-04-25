@@ -25,11 +25,11 @@ author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cee876a3904d5c47b43b58793087c901e8444dd3
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557238"
 ---
 # <a name="upgrade-dotfuscator-community"></a>升級 Dotfuscator Community
 
@@ -47,14 +47,14 @@ Dotfuscator Community 的已註冊使用者可存取額外的功能，例如[命
 
 Dotfuscator Community 提供基本層級的保護，而 ***PreEmptive Protection - Dotfuscator Professional***  則包含增強的混淆轉換和保護功能，例如：
 
-* *智慧財產權保護*
+* 智慧財產權保護
   * 額外的重新命名選項，包括 Enhanced Overload Induction™ 和隨機化識別碼選取。
   * 存取企業級混淆轉換，包括[目標為防止自動程式碼反向組譯的轉換][control-flow]。
   * 能夠[混淆敏感性字串][string-encryption]，以防止執行反向組譯程式碼的簡單搜尋。
   * 能夠[以不顯眼的方式將擁有權和發佈字串嵌入您的組件][watermarking]，讓您判斷未經授權的軟體漏洞來源。
   * 能夠[將多個組件合併成一個組件][linking]，由於消除了關注點分離 (Separation of Concerns) 的問題，因此攻擊者更難判斷程式碼項目的角色。
   * 能夠[自動從您的應用程式移除未使用的程式碼][pruning]，以減少送出的敏感性程式碼數量。
-* *應用程式完整性保護*
+* 應用程式完整性保護
   * 額外的[應用程式防禦行為][check-actions]。
   * 能夠在應用程式生命週期結束期限之前提供一段警告期間。
   * 能夠在生命週期結束警告期間或在期限之後通知應用程式程式碼。

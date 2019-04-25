@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 669d239aa7c26a99774ce12cdd3e1b43c5d7ccb7
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 41619e780d02f20fc21bd2b51cc0b0a3eede90fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951488"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -77,13 +77,13 @@ ms.locfileid: "58866714"
 
 Azure 提供完整的虛擬機器大小範圍。 由於 Visual Studio 是強大的多執行緒應用程式，建議您使用至少包含兩個處理器和 7 GB 記憶體的 VM 大小。 針對 Visual Studio 映像，我們建議使用下列 VM 大小：
 
-   * Standard_D2_v3
-   * Standard_D2s_v3
-   * Standard_D4_v3
-   * Standard_D4s_v3
-   * Standard_D2_v2
-   * Standard_D2S_v2
-   * Standard_D3_v2
+* Standard_D2_v3
+* Standard_D2s_v3
+* Standard_D4_v3
+* Standard_D4s_v3
+* Standard_D2_v2
+* Standard_D2S_v2
+* Standard_D3_v2
 
 如需最新機器大小的詳細資訊，請參閱 [Azure 中 Windows 虛擬機器的大小](/azure/virtual-machines/windows/sizes)。
 
@@ -105,7 +105,7 @@ Visual Studio 遵循 Azure 中的「自備授權」模型。 與在專用硬體�
 
 ![透過 Azure 入口網站的 UI 擷取映像](media/capture-vm.png)
 
-*(圖 1) 透過 Azure 入口網站的 UI 擷取映像。*
+(圖 1) 透過 Azure 入口網站的 UI 擷取映像。
 
 如需詳細資訊，請參閱[在 Azure 中建立一般化 VM 的受控映像](/azure/virtual-machines/windows/capture-image-resource)。
 
@@ -121,5 +121,5 @@ Visual Studio 遵循 Azure 中的「自備授權」模型。 與在專用硬體�
 
 您已經了解預先設定的 Visual Studio 映像，下一步是建立新的 VM：
 
-* [透過 Azure 入口網站建立 VM](/azure/virtual-machines/windows/quick-create-portal)
+* [使用 Azure 入口網站建立 Windows 虛擬機器](/azure/virtual-machines/windows/quick-create-portal)
 * [Windows 虛擬機器概觀](/azure/virtual-machines/windows/overview)

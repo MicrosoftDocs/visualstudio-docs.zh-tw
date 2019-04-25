@@ -11,12 +11,12 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5503c6d579fc77aa066e4052aa109b531ff1e39c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e1c58cae9983cc14878ba548177bf9ba6ad44255
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783969"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>編輯測試混合以指定要包含在負載測試情節中的 Web 效能測試、單元測試和自動程式化 UI 測試
 
@@ -41,37 +41,37 @@ ms.locfileid: "55942657"
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>若要將其他測試加入至現有的情節
 
-1.  開啟負載測試。
+1. 開啟負載測試。
 
-2.  在 [負載測試編輯器] 中，以滑鼠右鍵按一下現有的情節，然後選擇 [加入測試]。
+2. 在 [負載測試編輯器] 中，以滑鼠右鍵按一下現有的情節，然後選擇 [加入測試]。
 
      [新增測試] 對話方塊隨即出現。 方案中所有原本不存在於情節的 Web 效能、單元和自動程式化 UI 測試都可以加入至情節。
 
-3.  在 [可用的測試] 窗格中，選取您想要新增的 Web 效能、單元和自動程式化 UI 測試。 選擇向右箭號，將測試新增至 [選取的測試] 窗格。
+3. 在 [可用的測試] 窗格中，選取您想要新增的 Web 效能、單元和自動程式化 UI 測試。 選擇向右箭號，將測試新增至 [選取的測試] 窗格。
 
-4.  完成新增測試之後，選擇 [確定]。
+4. 完成新增測試之後，選擇 [確定]。
 
      測試便會加入至測試混合。 新的散發會自動指派至測試混合中的測試。
 
-5.  (選擇性) 調整混合控制項以指定測試分佈。 如需詳細資訊，請參閱[關於混合控制項](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)。
+5. (選擇性) 調整混合控制項以指定測試分佈。 如需詳細資訊，請參閱[關於混合控制項](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)。
 
-##  <a name="remove-tests-from-a-scenario"></a>從情節移除測試
+## <a name="remove-tests-from-a-scenario"></a>從情節移除測試
  ![從現有的負載測試中移除測試](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>從情節移除測試
 
-1.  開啟負載測試。
+1. 開啟負載測試。
 
-2.  在 [負載測試編輯器] 的負載測試樹狀目錄中，以滑鼠右鍵按一下您想要從中移除測試的情節，然後選取 [編輯測試混合]。 [編輯測試混合] 對話方塊隨即出現。
+2. 在 [負載測試編輯器] 的負載測試樹狀目錄中，以滑鼠右鍵按一下您想要從中移除測試的情節，然後選取 [編輯測試混合]。 [編輯測試混合] 對話方塊隨即出現。
 
-3.  在方格中選取 Web 效能、單元或自動程式化 UI 測試，然後選擇 [移除]。
+3. 在方格中選取 Web 效能、單元或自動程式化 UI 測試，然後選擇 [移除]。
 
     > [!NOTE]
     > 移除測試後，請將測試混合調整為您慣用的散發。
 
-4.  完成移除測試之後，選擇 [確定]。
+4. 完成移除測試之後，選擇 [確定]。
 
-##  <a name="EditingTestMixAboutMixControl"></a> 關於混合控制項
+## <a name="EditingTestMixAboutMixControl"></a> 關於混合控制項
  混合控制可讓您在負載測試情節中，調整分佈在測試、瀏覽器類型或網路類型中的負載百分比。 您可以藉由移動滑桿調整百分比值。 調整混合測試可指定在負載測試情節中，一位虛擬使用者執行特定測試的可能性。
 
  當您移動滑桿時，所有可用項目的百分比值就會變更。 如果您有兩個以上的項目，您所新增或移除的數量會在其他項目間平均分佈。 您無法覆寫這個行為。 如果您針對特定項目選取鎖定資料行中的核取方塊，就會鎖定該項目所指定的百分比值。 之後，當您移動滑桿時，您所新增或移除的數量僅會套用到其餘未鎖定的所有項目。
@@ -81,12 +81,10 @@ ms.locfileid: "55942657"
 > [!WARNING]
 > [均分] 按鈕會覆寫所有已鎖定的項目。
 
-
  您也可以不使用滑桿，直接將百分比值鍵入 **%** 資料行。 如果您直接輸入百分比值，其他項目就不會自動調整。
 
 > [!NOTE]
 > 當總數相加沒有達到 100%，或輸入 **%** 資料行的百分比值有小數點時，滑桿便會停用。
-
 
  當您手動輸入百分比值時，應確認所有項目的總和為 100%。 當您儲存混合時，如果總和不是 100%，系統會提示您接受該百分比值，或返回予以調整。 如果您選擇接受此設定，則會按比例分配至 100%。  例如，如果您有兩個項目，而且手動設定為 80% 和 40%。第一個項目會被設定為 66.67% (80 除以 120)，而第二個項目則會被設定為 33.33% (40 除以 120)。
 

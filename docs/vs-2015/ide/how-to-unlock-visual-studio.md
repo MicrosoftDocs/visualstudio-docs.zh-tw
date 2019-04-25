@@ -1,5 +1,5 @@
 ---
-title: 解除鎖定 Visual Studio 2015 |Microsoft Docs 」
+title: 解除鎖定 Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,37 +10,37 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8876cebf5851454aa3140f6a3269fa0d3ecbbc95
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774539"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072548"
 ---
 # <a name="how-to-unlock-visual-studio"></a>如何解除鎖定 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您最多可以免費評估 Visual Studio 30 天。 當您登入 IDE 時，您可以將試用期延長 90 天。 若要繼續使用 Visual Studio，您可以透過下列方式解除鎖定 IDE：
 
-1.  使用線上訂閱。
+1. 使用線上訂閱。
 
-2.  輸入產品金鑰。
+2. 輸入產品金鑰。
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>使用線上訂閱解除鎖定 Visual Studio
  若要使用與 Microsoft 帳戶或工作/學校帳戶關聯的 MSDN 訂閱或 Visual Studio Online 訂閱解除鎖定 Visual Studio：
 
-1.  按一下 IDE 右上角的 [登入] 按鈕 (或移至 [檔案] > [帳戶設定] 開啟 [帳戶設定] 對話方塊，然後按一下 [登入] 按鈕)。
+1. 按一下 IDE 右上角的 [登入] 按鈕 (或移至 [檔案] > [帳戶設定] 開啟 [帳戶設定] 對話方塊，然後按一下 [登入] 按鈕)。
 
-2.  輸入 Microsoft 帳戶或工作/學校帳戶的認證。 Visual Studio 將會尋找與您的帳戶關聯的 MSDN 訂閱或 Visual Studio Team Services 訂閱。
+2. 輸入 Microsoft 帳戶或工作/學校帳戶的認證。 Visual Studio 將會尋找與您的帳戶關聯的 MSDN 訂閱或 Visual Studio Team Services 訂閱。
 
 > [!IMPORTANT]
 >  當您從 Team Explorer 工具視窗連線到 Visual Studio Team Services 帳戶時，Visual Studio 會自動尋找關聯的線上訂閱。 當您連線到 Visual Studio Team Services 帳戶時，您可以使用 Microsoft 帳戶和工作/學校帳戶進行登入。 如果該使用者帳戶有線上訂閱，Visual Studio 會自動為您解除鎖定 IDE。
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>使用產品金鑰解除鎖定 Visual Studio
 
-1.  選取 [檔案] > [帳戶設定] 開啟 [帳戶設定] 對話方塊，然後按一下 [使用產品金鑰授權] 連結。
+1. 選取 [檔案] > [帳戶設定] 開啟 [帳戶設定] 對話方塊，然後按一下 [使用產品金鑰授權] 連結。
 
-2.  在提供的空格中輸入產品金鑰。
+2. 在提供的空格中輸入產品金鑰。
 
 > [!TIP]
 >  Visual Studio 發行前版本不需要產品金鑰。 您必須登入 IDE 才能使用發行前版本。
@@ -68,9 +68,9 @@ ms.locfileid: "54774539"
 ### <a name="updating-expired-licenses"></a>更新到期的授權
  如果您的訂閱完全到期，而不再具有 Visual Studio 的存取權限，您必須：
 
-1.  更新您的訂閱 若要查看您正在使用之授權的詳細資訊，請移至 [檔案] > [帳戶設定] 對話方塊，並查看對話方塊右側的授權資訊。
+1. 更新您的訂閱 若要查看您正在使用之授權的詳細資訊，請移至 [檔案] > [帳戶設定] 對話方塊，並查看對話方塊右側的授權資訊。
 
-2.  如果您有與不同帳戶關聯的另一個訂閱，請按一下 [加入帳戶…] 連結，將該帳戶加入 [檔案] > [帳戶設定] 對話方塊左側的 [所有帳戶] 清單中。
+2. 如果您有與不同帳戶關聯的另一個訂閱，請按一下 [加入帳戶…] 連結，將該帳戶加入 [檔案] > [帳戶設定] 對話方塊左側的 [所有帳戶] 清單中。
 
 ## <a name="see-also"></a>請參閱
  [登入 Visual Studio](../ide/signing-in-to-visual-studio.md)

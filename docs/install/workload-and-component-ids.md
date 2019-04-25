@@ -17,11 +17,11 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 02229fd346ec1ead65e778fcce3ab6cb307e2656
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951249"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 工作負載與元件識別碼
 
@@ -31,7 +31,7 @@ ms.locfileid: "59018294"
 
 **已針對 [15.9 版](/visualstudio/releasenotes/vs2017-relnotes/)更新**
 
-| **版本** | **識別碼** | **說明** |
+| **版本** | **ID** | **描述** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md?vs-2017) | Microsoft.VisualStudio.Product.Enterprise | 適用於任何規模之小組間的生產力和協調的 Microsoft DevOps 方案 |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md?vs-2017) | Microsoft.VisualStudio.Product.Professional | 適用於小型小組的專業開發人員工具和服務 |
@@ -52,7 +52,7 @@ ms.locfileid: "59018294"
 
 **[Visual Studio 2019 RC](/visualstudio/releases/2019/release-notes/) 的更新**
 
-| **版本** | **識別碼** | **說明** |
+| **版本** | **ID** | **描述** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2019](workload-component-id-vs-enterprise.md?vs-2019) | Microsoft.VisualStudio.Product.Enterprise | 適用於任何規模之小組間的生產力和協調的 Microsoft DevOps 方案 |
 | [Visual&nbsp;Studio Professional&nbsp;2019](workload-component-id-vs-professional.md?vs-2019) | Microsoft.VisualStudio.Product.Professional | 適用於小型小組的專業開發人員工具和服務 |
@@ -74,6 +74,6 @@ ms.locfileid: "59018294"
 ## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 的 Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
-* [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [命令列參數範例](command-line-parameter-examples.md)
 * [建立 Visual Studio 的離線安裝](create-an-offline-installation-of-visual-studio.md)

@@ -12,36 +12,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d05dd3a6c6797bbd563a45e93df76ec16f1e36b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 250f222dcc3f2645c53a97416cc379a3066c45ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789601"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>HOW TO：以連結方式顯示編輯器中的 URL
 
 您可以選擇用程式碼編輯器，將您的程式碼中的統一資源定位器 (URL) 視為使用中的連結。 當您使用這項功能時，URL：
 
--   加底線顯示。
+- 加底線顯示。
 
--   當您將滑鼠停留在它們之上時，顯示**工具提示**。
+- 當您將滑鼠停留在它們之上時，顯示**工具提示**。
 
--   當您在連結上使用 **Ctrl**+**按一下**時，嘗試開啟指出的網站。 網站預設會顯示於內部網頁瀏覽器中。
+- 當您在連結上使用 **Ctrl**+**按一下**時，嘗試開啟指出的網站。 網站預設會顯示於內部網頁瀏覽器中。
 
 ## <a name="display-urls-as-links"></a>將 URL 顯示為連結
 
-1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。
+1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。
 
-2.  按一下 [文字編輯器]。
+2. 按一下 [文字編輯器]。
 
-3.  若只要變更單一語言的選項，請展開該語言的資料夾，並選擇 [一般]。
+3. 若只要變更單一語言的選項，請展開該語言的資料夾，並選擇 [一般]。
 
      -或-
 
      若要變更所有語言的選項，請展開 [所有語言] 資料夾，並選擇 [一般]。
 
-4.  在 [顯示] 底下，選取 [啟用按一下方式的 URL 巡覽]。
+4. 在 [顯示] 底下，選取 [啟用按一下方式的 URL 巡覽]。
 
 ## <a name="see-also"></a>另請參閱
 

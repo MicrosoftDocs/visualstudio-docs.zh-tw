@@ -8,13 +8,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 70782646a52a5bca5741a864eee1f965941bb34b
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547589"
 ---
-# <a name="how-to-troubleshoot-templates"></a>作法：針對範本進行疑難排解
+# <a name="how-to-troubleshoot-templates"></a>HOW TO：針對範本進行疑難排解
 
 如果範本無法在開發環境中載入，有數種方式可找出問題。
 

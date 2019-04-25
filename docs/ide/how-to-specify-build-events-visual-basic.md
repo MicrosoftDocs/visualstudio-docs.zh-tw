@@ -1,5 +1,5 @@
 ---
-title: 作法：指定建置事件 (Visual Basic)
+title: HOW TO：指定建置事件 (Visual Basic)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88903c1370219976bca6e8418c3254d048db51d2
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e9dc571576346aa246452cdebf0a147468d6dfea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549329"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>作法：指定建置事件 (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>HOW TO：指定建置事件 (Visual Basic)
 
 在 Visual Basic 中的建置事件可以用來執行指令碼、巨集或編譯處理程序當中的其他動作。 編譯之前發生的是建置前事件；編譯之後發生的則是建置後事件。
 
@@ -34,13 +34,13 @@ ms.locfileid: "58324717"
 
 ### <a name="to-specify-a-build-event"></a>若要指定建置事件
 
-1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。
+1. 在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。
 
-2.  按一下 [編譯] 索引標籤。
+2. 按一下 [編譯] 索引標籤。
 
-3.  按一下 [建置事件] 按鈕，開啟 [建置事件] 對話方塊。
+3. 按一下 [建置事件] 按鈕，開啟 [建置事件] 對話方塊。
 
-4.  輸入建置前或建置後動作的命令列引數，然後按一下 [確定]。
+4. 輸入建置前或建置後動作的命令列引數，然後按一下 [確定]。
 
     > [!NOTE]
     > 在執行 *.bat* 檔案的所有建置命令前方，新增 `call` 陳述式。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。
@@ -125,14 +125,14 @@ ms.locfileid: "58324717"
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>叫用建置後事件，以變更應用程式資訊清單
 
-1.  針對要發行的專案，建立 Windows 應用程式。 從 [檔案] 功能表中，依序按一下 [新增] 和 [專案]。
+1. 針對要發行的專案，建立 Windows 應用程式。 從 [檔案] 功能表中，依序按一下 [新增] 和 [專案]。
 
-2.  在 [新增專案] 對話方塊的 [Visual Basic] 節點中，依序選取 [Windows 桌面] 和 [Windows Forms 應用程式] 範本。 將專案命名為 `VBWinApp`。
-3.  選取方案總管中的專案，然後按一下 [專案] 功能表中的 [屬性]。
+2. 在 [新增專案] 對話方塊的 [Visual Basic] 節點中，依序選取 [Windows 桌面] 和 [Windows Forms 應用程式] 範本。 將專案命名為 `VBWinApp`。
+3. 選取方案總管中的專案，然後按一下 [專案] 功能表中的 [屬性]。
 
-4.  在**專案設計工具**中，移至 [發行] 頁面，然後將 [發行位置] 設為 *C:\TEMP*。
+4. 在**專案設計工具**中，移至 [發行] 頁面，然後將 [發行位置] 設為 *C:\TEMP*。
 
-5.  按一下 [Publish Now]\(立即發行)，即可發行專案。
+5. 按一下 [Publish Now]\(立即發行)，即可發行專案。
 
      會建置資訊清單檔並將它放入 *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest*。 若要檢視資訊清單，請以滑鼠右鍵按一下檔案，然後依序按一下 [開啟方式]、[從清單中選取程式] 以及 [記事本]。
 
@@ -142,9 +142,9 @@ ms.locfileid: "58324717"
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6.  在**專案設計工具**中，移至 [編譯] 索引標籤，並按一下 [建置事件] 按鈕以開啟 [建置事件] 對話方塊。
+6. 在**專案設計工具**中，移至 [編譯] 索引標籤，並按一下 [建置事件] 按鈕以開啟 [建置事件] 對話方塊。
 
-7.  在 [建置後事件命令列] 文字方塊中，輸入下列命令：
+7. 在 [建置後事件命令列] 文字方塊中，輸入下列命令：
 
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`
 
@@ -152,7 +152,7 @@ ms.locfileid: "58324717"
 
      `$(TargetPath)` 巨集表示要建立之可執行檔的完整路徑。 因此，*$(TargetPath).manifest* 會指定在 *bin* 目錄中建立應用程式資訊清單。 發行時，系統會將這份資訊清單複製到您先前設定的發行位置中。
 
-8.  再次發行專案。 移至 [發行] 頁面，然後按一下 [Publish Now]\(立即發行)。
+8. 再次發行專案。 移至 [發行] 頁面，然後按一下 [Publish Now]\(立即發行)。
 
      再次檢視資訊清單。 若要檢視資訊清單，請移至發行目錄，以滑鼠右鍵按一下檔案，然後依序按一下 [開啟方式]、[從清單中選取程式] 以及 [記事本]。
 
