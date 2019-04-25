@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a68a2a9f0ca96b943c0b09da5c60268963bc6a7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973665"
 ---
 # <a name="process-view"></a>處理序檢視
 處理序檢視顯示程式碼剖析執行期間所執行處理序和執行緒的程式碼剖析資料。

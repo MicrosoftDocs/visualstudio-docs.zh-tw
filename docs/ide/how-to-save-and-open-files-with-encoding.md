@@ -1,5 +1,5 @@
 ---
-title: 作法：以編碼來儲存及開啟檔案
+title: HOW TO：以編碼來儲存及開啟檔案
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,26 +13,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 484a891c83796f58c7ed8d6053c51189b2448bb9
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: fd3d7ccc248785c127c1eaf34da8840f824e4195
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946940"
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>作法：以編碼來儲存及開啟檔案
+# <a name="how-to-save-and-open-files-with-encoding"></a>HOW TO：以編碼來儲存及開啟檔案
 
 您可以使用特定的字元編碼來儲存檔案，以支援雙向語言。 您也可以在開啟檔案時指定編碼方式，讓 Visual Studio 正確顯示檔案。
 
 ## <a name="to-save-a-file-with-encoding"></a>以編碼方式儲存檔案
 
-1.  從 [檔案] 功能表上，選擇 [另存新檔]，然後按一下 [儲存] 按鈕旁的下拉式按鈕。
+1. 從 [檔案] 功能表上，選擇 [另存新檔]，然後按一下 [儲存] 按鈕旁的下拉式按鈕。
 
      [進階儲存選項] 對話方塊隨即顯示。
 
-2.  在 [編碼] 下方，選取檔案要使用的編碼方式。
+2. 在 [編碼] 下方，選取檔案要使用的編碼方式。
 
-3.  您也可以在 [行尾結束符號] 下方，選取行結尾字元的格式。
+3. 您也可以在 [行尾結束符號] 下方，選取行結尾字元的格式。
 
      如果您想要與不同作業系統的使用者交換檔案，這個選項相當實用。
 
@@ -40,21 +40,21 @@ ms.locfileid: "56449901"
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>若要開啟的編碼檔案為專案的一部分
 
-1.  在方案總管中，以滑鼠右鍵按一下檔案，並選擇 [開啟方式]。
+1. 在方案總管中，以滑鼠右鍵按一下檔案，並選擇 [開啟方式]。
 
-2.  在 [開啟方式] 對話方塊中，選擇要開啟檔案的編輯器。
+2. 在 [開啟方式] 對話方塊中，選擇要開啟檔案的編輯器。
 
      許多 Visual Studio 編輯器 (例如表單編輯器) 會自動偵測編碼，並以適當方式開啟檔案。 如果您選擇的編輯器可讓您選擇編碼方式，即會顯示 [編碼] 對話方塊。
 
-3.  在 [編碼] 對話方塊中，選取編輯器應該使用的編碼方式。
+3. 在 [編碼] 對話方塊中，選取編輯器應該使用的編碼方式。
 
 ## <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>若要開啟的編碼檔案不是專案的一部分
 
-1.  在 [檔案] 功能表上，指向 [開啟]，並選擇 [檔案] 或 [從 Web 開啟檔案]，然後選取要開啟的檔案。
+1. 在 [檔案] 功能表上，指向 [開啟]，並選擇 [檔案] 或 [從 Web 開啟檔案]，然後選取要開啟的檔案。
 
-2.  按一下 [開啟] 按鈕旁的下拉式按鈕，然後選擇 [開啟方式]。
+2. 按一下 [開啟] 按鈕旁的下拉式按鈕，然後選擇 [開啟方式]。
 
-3.  遵循上述程序步驟 2 和 3。
+3. 遵循上述程序步驟 2 和 3。
 
 ## <a name="see-also"></a>另請參閱
 

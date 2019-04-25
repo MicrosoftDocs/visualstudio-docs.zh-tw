@@ -17,18 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36132dce94bb4836242858c82c47562259e83f2e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 40b155af29d2d81a43eb0270e776e40df335a4bf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838772"
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 元素 (MSBuild)
 參考 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案 SDK。
 
  \<Project> \<SDK>
-
 
 ## <a name="syntax"></a>語法
 

@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa277cca1d4c655f2a2894ff9c8ffce83474016
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 030b581f44535c62b950b5b54c15aa36232711e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821753"
 ---
 # <a name="understand-build-configurations"></a>了解組建組態
 
@@ -72,20 +72,20 @@ ms.locfileid: "58789857"
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Visual Studio 如何指派專案組態
  當您定義新的方案組態，而不是從現有的組態複製設定時，Visual Studio 會使用下列準則來指派預設的專案組態。 準則的評估順序如下所示。
 
-1.  如果專案具有完全符合新方案組態名稱的組態名稱 (*\<組態名稱> \<平台名稱>*)，則會指派該組態。 組態名稱不區分大小寫。
+1. 如果專案具有完全符合新方案組態名稱的組態名稱 (*\<組態名稱> \<平台名稱>*)，則會指派該組態。 組態名稱不區分大小寫。
 
-2.  如果專案組態名稱的組態名稱部分符合新的方案組態，則無論平台部分是否相符，都會指派該組態。
+2. 如果專案組態名稱的組態名稱部分符合新的方案組態，則無論平台部分是否相符，都會指派該組態。
 
-3.  如果仍然沒有相符項目，就會指派專案中所列的第一個組態。
+3. 如果仍然沒有相符項目，就會指派專案中所列的第一個組態。
 
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Visual Studio 如何指派方案組態
  當您建立專案組態 (透過在 [組態管理員] 中，選擇該專案 [組態] 欄之下拉式功能表中的 [新增]) 並選取 [建立新方案組態] 核取方塊時，Visual Studio 會尋找名稱相同的方案組態，以在每個支援的平台上建置專案。 在某些情況下，Visual Studio 會重新命名現有的方案組態，或定義新的組態。
 
  Visual Studio 使用下列準則來指派方案組態。
 
--   如果專案組態不會指定平台，或只指定一個平台，則會找到或加入其名稱符合新專案組態名稱的方案組態。 這個方案組態的預設名稱不包含平台名稱，其採用 *\<專案組態名稱>* 格式。
+- 如果專案組態不會指定平台，或只指定一個平台，則會找到或加入其名稱符合新專案組態名稱的方案組態。 這個方案組態的預設名稱不包含平台名稱，其採用 *\<專案組態名稱>* 格式。
 
--   如果專案支援多個平台，則會為每個支援的平台找到或加入一個方案組態。 每個方案組態的名稱包含專案組態名稱和平台名稱，並且採用 *\<專案組態名稱> \<平台名稱>* 格式。
+- 如果專案支援多個平台，則會為每個支援的平台找到或加入一個方案組態。 每個方案組態的名稱包含專案組態名稱和平台名稱，並且採用 *\<專案組態名稱> \<平台名稱>* 格式。
 
 ## <a name="see-also"></a>另請參閱
 

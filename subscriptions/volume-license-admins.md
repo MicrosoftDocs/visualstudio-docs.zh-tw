@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: 了解訂用帳戶管理員可以如何存取系統管理入口網站，並管理透過大量授權 (VL) 取得的訂閱
 searchscope: VS Subscription
 ms.openlocfilehash: 6c8a68a1a25e99018e7f41fedbfc9d01b191e2e7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428036"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>存取入口網站與管理系統管理員 - 適用於透過大量授權 (VL) 取得的訂閱
 

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 8ef1c82e18b99383f61ccbad298102b4db1fcb24
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896988"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>在 XAML 設計工具中插入影像、視訊和音訊剪輯
 影像、視訊和音訊剪輯可為應用程式加入視覺效果。

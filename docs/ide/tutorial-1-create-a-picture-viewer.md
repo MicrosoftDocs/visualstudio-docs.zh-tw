@@ -8,30 +8,30 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad05083fa8cb1310e9be0b0dabb8333cb840a466
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 46ce6f92acb7ed6e92af07729a14720d3a8421a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821805"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教學課程 1：建立圖片檢視器
 
 在本教學課程中，您要建置一個從檔案載入圖片並將圖片顯示在視窗中的程式。 您將學習如何使用 **Windows Form 設計工具**拖曳表單上的控制項 (例如按鈕與圖片方塊)、設定其屬性，以及如何使用容器順暢地調整表單大小。 您也會開始撰寫程式碼。 您將學習如何：
 
--   建立新的專案。
+- 建立新的專案。
 
--   測試 (偵錯) 應用程式。
+- 測試 (偵錯) 應用程式。
 
--   將基本控制項 (例如核取方塊和按鈕) 加入至表單。
+- 將基本控制項 (例如核取方塊和按鈕) 加入至表單。
 
--   使用版面配置將控制項放置在表單上。
+- 使用版面配置將控制項放置在表單上。
 
--   將 [開啟檔案] 和 [色彩] 對話方塊新增至表單。
+- 將 [開啟檔案] 和 [色彩] 對話方塊新增至表單。
 
--   使用 IntelliSense 和程式碼片段撰寫程式碼。
+- 使用 IntelliSense 和程式碼片段撰寫程式碼。
 
--   撰寫事件處理常式方法。
+- 撰寫事件處理常式方法。
 
 完成後的程式類似下圖所示：
 
@@ -52,7 +52,7 @@ ms.locfileid: "55941487"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[步驟 1：建立 Windows Forms 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)|從建立 Windows Forms 應用程式專案開始。|
 |[步驟 2：執行程式](../ide/step-2-run-your-program.md)|執行您在上一個步驟中建立的 Windows Forms 應用程式。|

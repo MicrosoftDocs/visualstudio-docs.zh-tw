@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f394ea2775eede3424e4d6995a8e2065c5d986ef
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 234a2d1070a39c0f9d9dbf5b0ae706b02b660abf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972461"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教學課程：Visual Studio 中的 Visual Basic 使用者入門
 
@@ -27,7 +27,7 @@ ms.locfileid: "58857589"
 
 ::: moniker range="vs-2017"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
 
 ::: moniker-end
 
@@ -262,10 +262,10 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 恭喜您完成此教學課程！ 若要更深入了解，請參閱下列教學課程。
 
 > [!div class="nextstepaction"]
-> [在 Visual Studio 中使用 Visual Basic 和 .NET Core SDK 建置程式庫](/dotnet/core/tutorials/vb-library-with-visual-studio)
+> [在 Visual Studio 中使用 Visual Basic 和 .NET Core SDK 來建置程式庫](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>另請參閱
 
 * [Visual Basic 語言逐步解說](/dotnet/visual-basic/walkthroughs)
 * [Visual Basic 語言參考](/dotnet/visual-basic/language-reference/index)
-* [Visual Basic 程式碼檔案的 IntelliSense](../../ide/visual-basic-specific-intellisense.md)
+* [IntelliSense for Visual Basic 程式碼檔案](../../ide/visual-basic-specific-intellisense.md)

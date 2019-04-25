@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解所選取 Visual Studio Enterprise 訂用帳戶中所含產品的 ModernRequirements 套件。
 searchscope: VS Subscription
-ms.openlocfilehash: b35dae73b0fad0acb0acb7f67a2a35533d7cf95a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 77729e8e5bf39d252ebd570d7d6d514e9ffdcdbb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947751"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 MODERNRequirements4TFS 權益
 
 選取的 Visual Studio 訂用帳戶包含 MODERNRequirements SmartOffice 4TFS 和 ModernRequirements4TFS 的六個月訂用帳戶。  MODERNRequirements 的 SmartOffice4TFS 透過以 Microsoft Word 為基礎的報表，以及快速、簡化的 RTF 撰寫，擴充 TFS 或 Azure DevOps Services 的功能。  ModernRequirements4TFS 則提供工作項目基準化和 HTML5 模擬功能。
-
 
 ## <a name="activation-steps"></a>啟用步驟
 1. 若要使用 MODERNRequirementsTFS 權益，請登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
@@ -31,11 +30,9 @@ ms.locfileid: "56842503"
    > [!div class="mx-imgBorder"]
    > ![ModernRequirements 登陸頁面](_img/vs-modernreq/vs-modernreq-landing.png)
 
-
 5. 下一頁會包含您的授權金鑰。  請檢閱頁面上所提供安裝的相關資訊，然後按一下頁面中間的藍色 [To download the software please click here]　(若要下載軟體請，按一下這裡) 連結。
    > [!div class="mx-imgBorder"]
    > ![ModernRequirements 授權金鑰](_img/vs-modernreq/vs-modernreq-license-new-resized.png)
-
 
 6. 在 [下載] 頁面上，您可以選擇安裝 MODERNRequirements 套件，或從 SMARTOffice4TFS 套件安裝個別模組。  您適用的選項取決於您的喜好設定，以及您已安裝的 TFS 版本。  請務必熟悉頁面上的資訊，以協助您選取正確的產品版本。
    > [!div class="mx-imgBorder"]
@@ -98,10 +95,9 @@ ms.locfileid: "56842503"
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
 
-
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="support-resources"></a>支援資源
--  需要 ModernRequirements 的產品說明嗎？  請瀏覽 https://www.modernrequirements.com/support-2/。
--  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+- 需要 ModernRequirements 的產品說明嗎？  請瀏覽 https://www.modernrequirements.com/support-2/。
+- 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

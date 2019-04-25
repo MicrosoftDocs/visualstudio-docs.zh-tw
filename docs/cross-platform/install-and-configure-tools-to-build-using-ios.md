@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 990f14d76eabbf1b7ef252234a8625c66ffcdcba
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 1bc67385a69f7f96288074afd4c7e5f9cefe8805
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818484"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>安裝和設定工具以使用 iOS 進行建置
 
@@ -66,13 +66,13 @@ ms.locfileid: "58897578"
 
    `sudo npm install -g npm@latest`
 
-##  <a name="Install"></a> 安裝 iOS 適用的遠端代理程式
+## <a name="Install"></a> 安裝 iOS 適用的遠端代理程式
 
 當您安裝 Visual C++ for Cross-Platform Mobile Development 時，Visual Studio 可與在 Mac 上遠端執行的代理程式 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)通訊，以用來傳輸檔案、建置及執行您的 iOS 應用程式和傳送偵錯命令。
 
 安裝遠端代理程式之前，請確定您已符合[必要條件](#prerequisites)，並且已安裝[適用於跨平台行動裝置應用程式開發的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)。
 
-###  <a name="DownloadInstall"></a> 若要下載及安裝遠端代理程式
+### <a name="DownloadInstall"></a> 若要下載及安裝遠端代理程式
 
 - 從 Mac 上的 Terminal 應用程式，輸入：
 
@@ -87,11 +87,11 @@ ms.locfileid: "58897578"
 
 如果您已更新為新版 Visual Studio，也必須將遠端代理程式更新為目前版本。 若要更新遠端代理程式，請重複下載及安裝遠端代理程式的步驟。
 
-##  <a name="Start"></a> 啟動遠端代理程式
+## <a name="Start"></a> 啟動遠端代理程式
 
 您必須為 Visual Studio 執行遠端代理程式，才能建置並執行您的 iOS 程式碼。 Visual Studio 必須搭配遠端代理程式才可進行通訊。 根據預設，遠端代理程式會以安全連線模式執行，其需要 PIN 碼與 Visual Studio 配對。
 
-###  <a name="RemoteAgentStartServer"></a> 若要啟動遠端代理程式
+### <a name="RemoteAgentStartServer"></a> 若要啟動遠端代理程式
 
 - 從 Mac 上的 Terminal 應用程式，輸入：
 
@@ -127,7 +127,7 @@ ms.locfileid: "58897578"
 
 - 於正在執行 vcremote 的 [終端機] 視窗，輸入 **Control**+**C**。
 
-##  <a name="ConfigureVS"></a> 在 Visual Studio 中設定遠端代理程式
+## <a name="ConfigureVS"></a> 在 Visual Studio 中設定遠端代理程式
 
 若要從 Visual Studio 連接到遠端代理程式，您必須在 Visual Studio 選項中指定遠端組態。
 
@@ -164,7 +164,7 @@ ms.locfileid: "58897578"
 
 每次使用時，Visual Studio 都會使用相同的資訊來連接 Mac 上的遠端代理程式。 您不需再次配對 Visual Studio 與遠端代理程式，除非您在 Mac 上產生新的安全性憑證或其主機名稱或 IP 位址有所變更。
 
-##  <a name="GeneratePIN"></a> Generate a new security PIN
+## <a name="GeneratePIN"></a> Generate a new security PIN
 
 第一次啟動遠端代理程式時，產生的 PIN 碼是有時效性的—預設為 10 分鐘。 若您未在時效內將 Visual Studio 與遠端代理程式配對，則必須產生新的安全 PIN 碼。
 
@@ -178,7 +178,7 @@ ms.locfileid: "58897578"
 
    遠端代理程式會產生新的暫存 PIN。 若要使用新的 PIN 碼配對 Visual Studio，請重複 [在 Visual Studio 中設定遠端代理程式](#ConfigureVS)中的步驟。
 
-##  <a name="GenerateCert"></a> 產生新的伺服器憑證
+## <a name="GenerateCert"></a> 產生新的伺服器憑證
 
 為了安全性目的，使用遠端代理程式配對出的 Visual Studio 伺服器憑證會與 Mac 的 IP 或主機名稱相關。 如果上述值有所變更，您就必須產生新的伺服器憑證，然後重新使用新值來設定 Visual Studio。
 
@@ -200,7 +200,7 @@ ms.locfileid: "58897578"
 
 1. 若要使用新的 PIN 碼配對 Visual Studio，請重複 [在 Visual Studio 中設定遠端代理程式](#ConfigureVS)中的步驟。
 
-##  <a name="ConfigureMac"></a> Configure the remote agent on the Mac
+## <a name="ConfigureMac"></a> Configure the remote agent on the Mac
 
 您可以使用各種命令列選項來設定遠端代理程式。 例如，您可以指定要接聽組建要求的通訊埠，並指定要在檔案系統上維護的最大組建數目。 預設上限為 10 個組建。 遠端代理程式會在關閉時，移除超出上限的組建。
 
@@ -236,4 +236,4 @@ ms.locfileid: "58897578"
 
 ## <a name="see-also"></a>另請參閱
 
-- [安裝適用於跨平台行動裝置開發的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [安裝適用於跨平台行動裝置應用程式開發的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

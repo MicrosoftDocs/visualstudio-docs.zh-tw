@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 59ee47f8971278e1be9714e8ee4e70911f612d52
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8b67296dc4ad77977ce6ba0399e9d9b4207e2c7f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938070"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>在專案中包含 NuGet 套件
 
@@ -77,9 +77,9 @@ using Newtonsoft.Json;
 
 ![套件功能表](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **新增套件** - 開啟視窗，將更多套件新增至專案。
-*   **更新** - 檢查每個套件的來源伺服器，然後下載任何較新版本。
-*   **還原** - 下載任何遺漏的套件 (不會將現有套件更新為較新版本)。
+* **新增套件** - 開啟視窗，將更多套件新增至專案。
+* **更新** - 檢查每個套件的來源伺服器，然後下載任何較新版本。
+* **還原** - 下載任何遺漏的套件 (不會將現有套件更新為較新版本)。
 
 方案層級也會提供 [更新] 和 [還原] 選項，而且這些選項會影響方案中的所有專案。
 
@@ -87,9 +87,9 @@ using Newtonsoft.Json;
 
 ![套件功能表](media/nuget-walkthrough-PackageMenu.png)
 
-*   **版本號碼** - 版本號碼是停用的功能表項目；這僅供參考。
-*   **更新** - 檢查來源伺服器，然後下載較新版本 (如果已存在)。
-*   **移除** - 從這個專案中移除套件，並從專案的參考中移除相關組件。
+* **版本號碼** - 版本號碼是停用的功能表項目；這僅供參考。
+* **更新** - 檢查來源伺服器，然後下載較新版本 (如果已存在)。
+* **移除** - 從這個專案中移除套件，並從專案的參考中移除相關組件。
 
 ## <a name="adding-package-sources"></a>新增套件來源
 

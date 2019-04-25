@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c80c768e153ae9469fe43785480bbe6bb1edeaa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777459"
 ---
 # <a name="blocking-time-profile-report"></a>封鎖時間分析報表
 分析報表提供每個封鎖類別 (例如 "I/O" 或「同步處理」) 特定之呼叫堆疊的彙總封鎖時間資料 。 先佔報表列出先佔用目前處理序的處理序，以及先佔執行個體的數目。 為建置封鎖分析報表，此工具會收集封鎖的 API 呼叫，並將它們累積成呼叫堆疊的樹狀目錄。 這些報表中所顯示的資料會依據目前的時間範圍、隱藏的執行緒以及下列兩個可套用的篩選而不同︰

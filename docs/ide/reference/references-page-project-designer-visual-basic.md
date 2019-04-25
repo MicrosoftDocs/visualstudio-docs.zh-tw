@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 88bd7571179d7841cc239052b7bf9f410761174c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956449"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>專案設計工具，參考頁 (Visual Basic)
 
@@ -82,11 +82,11 @@ ms.locfileid: "56335126"
 
  在命名空間清單中，選取使用者指定的命名空間，並在 [匯入的命名空間] 方塊中，輸入您想要取代的新名稱，然後按一下這個按鈕，即可將其變更為新的命名空間。 只有當指定的命名空間是您使用 [新增使用者匯入] 按鈕新增至清單時，此按鈕才有作用。 您可以新增下列項目：
 
--   類別或命名空間，例如 <xref:System.Math?displayProperty=fullName>。
+- 類別或命名空間，例如 <xref:System.Math?displayProperty=fullName>。
 
--   別名匯入，例如 `VB=Microsoft.VisualBasic`。
+- 別名匯入，例如 `VB=Microsoft.VisualBasic`。
 
--   XML 命名空間，例如 `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`。
+- XML 命名空間，例如 `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`。
 
 ## <a name="see-also"></a>請參閱
 

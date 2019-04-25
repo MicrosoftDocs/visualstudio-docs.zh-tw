@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957650"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>定義 Python 專案的自訂命令
 
@@ -156,11 +156,11 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 
 剖析命令輸出的錯誤與警示時，Visual Studio 要求 `ErrorRegex` 與 `WarningRegex` 值中的規則運算式使用以下具名群組：
 
-- `(?<message>...)`:錯誤的文字
-- `(?<code>...)`:錯誤碼
-- `(?<filename>...)`:回報錯誤的檔案名稱
-- `(?<line>...)`:檔案中回報錯誤的位置行號。
-- `(?<column>...)`:檔案中回報錯誤的位置資料行編號。
+- `(?<message>...)`：錯誤的文字
+- `(?<code>...)`：錯誤碼
+- `(?<filename>...)`：回報錯誤的檔案名稱
+- `(?<line>...)`：檔案中回報錯誤的位置行號。
+- `(?<column>...)`：檔案中回報錯誤的位置資料行編號。
 
 例如，PyLint 會產生下列形式的警告：
 
@@ -379,7 +379,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
 - 要求的 `Target` 屬性為空白。
 - 要求的 `TargetType` 屬性為空白或包含無法辨識的值。
 - 要求的 `ExecuteIn` 屬性為空白或包含無法辨識的值。
-- `ErrorRegex` 或 `WarningRegex` 已指定，而未設定 `ExecuteIn="output"`。
+- 已指定 `ErrorRegex` 或 `WarningRegex`，但未設定 `ExecuteIn="output"`。
 - 元素中包含無法辨識的屬性。 例如，您可能使用了 `Argumnets` (拼字有誤) 而非 `Arguments`。
 
 若您參考未定義的屬性，則屬性值可能為空白。 例如，若您使用語彙基元 `$(StartupFile)`，但專案中並未定義任何啟動檔案，則語彙基元會解析至空白的字串。 在此情況下，建議您定義預設值。 例如，若您未另外在專案屬性中指定伺服器啟動檔案，則在 Bottle、Flask 及 Django 專案範本中定義的 [執行伺服器] 與 [執行偵錯伺服器] 命令將預設為 *manage.py*。

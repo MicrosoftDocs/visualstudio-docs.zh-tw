@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59e05932b9e2e20f06a02614f8153b665b8fd51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831439"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>從命令列使用分析方法收集效能資料
 您選擇的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具與選項，取決於像是您要進行程式碼剖析的應用程式類型、您想要使用的程式碼剖析方法以及目標應用程式是否以原生或 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 程式碼撰寫等因素。
@@ -37,17 +37,17 @@ ms.locfileid: "56624486"
 
  **目標應用程式類型**
 
--   [.NET Framework 獨立元件](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
+- [.NET Framework 獨立元件](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
 
--   [原生獨立元件](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
+- [原生獨立元件](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
 
--   [靜態編譯的 ASP.NET Web 應用程式](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
+- [靜態編譯的 ASP.NET Web 應用程式](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
 
--   [動態編譯的 ASP.NET Web 應用程式](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
+- [動態編譯的 ASP.NET Web 應用程式](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
 
--   [.NET 服務](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [.NET 服務](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
--   [原生服務](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [原生服務](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>使用 .NET 記憶體方法收集記憶體配置和物件存留期資料
  程式碼剖析工具 .NET 記憶體方法可讓您收集 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 記憶體配置資料和 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 中有關物件存留期的資訊。

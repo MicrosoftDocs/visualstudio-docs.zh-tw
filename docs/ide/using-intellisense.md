@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38c621a09c6a000c9e3c7e52caa99569f7e5d781
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821674"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio 中的 Intellisense
 
@@ -46,13 +46,13 @@ IntelliSense 的許多方面是特定語言專屬的。 如需不同語言之 In
 
 ## <a name="parameter-info"></a>參數資訊
 
-[參數資訊] 會提供方法、屬性泛型型別參數 (C# 中) 或範本 (C++ 中) 所需參數的數目、名稱和類型相關資訊。
+[參數資訊] 會提供方法、屬性泛型類型參數 (C# 中) 或範本 (C++ 中) 所需參數的數目、名稱和類型相關資訊。
 
 粗體的參數表示您輸入函式時，所需的下一個參數。 對於多載函式，您可以使用**向上鍵**和**向下鍵**檢視函式多載的替代參數資訊。
 
 ![參數資訊](../ide/media/vs2015_param_info.png)
 
-當您以 XML 文件註解來標註函式和參數時，這些註解將會顯示成 [參數資訊]。 如需詳細資訊，請參閱[提供 XML 程式碼註解](reference/generate-xml-documentation-comments.md)。
+當您以 XML 文件註解來附註函式和參數時，這些註解將會顯示成 [參數資訊]。 如需詳細資訊，請參閱[提供 XML 程式碼註解](reference/generate-xml-documentation-comments.md)。
 
 您可以選擇 [編輯] > [IntelliSense] > [參數資訊]、按 **Ctrl**+**Shift**+**空格鍵**，或選擇編輯器工具列上的 [參數資訊] 按鈕，手動叫用 [參數資訊]。
 

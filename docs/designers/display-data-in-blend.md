@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a17f3db9aac8128218f82d3faa3ff1b62f9822a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898007"
 ---
 # <a name="display-data-in-blend"></a>在 Blend 中顯示資料
 

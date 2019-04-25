@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - azure
 ms.openlocfilehash: 114c6aca7ec7ed05858868b22f7547b0a071420f
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927701"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至 Azure App Service
 
@@ -61,4 +61,4 @@ ms.locfileid: "55483753"
 在本快速入門中，您已了解如何使用 Visual Studio 建立發行設定檔，以部署至 Azure。 您也可以從 Azure App Service 匯入發行設定來設定發行設定檔。
 
 > [!div class="nextstepaction"]
-> [匯入發行設定並部署至 Azure](tutorial-import-publish-settings-azure.md)
+> [匯入發佈設定並部署至 Azure](tutorial-import-publish-settings-azure.md)

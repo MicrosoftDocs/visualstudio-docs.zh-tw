@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: 了解有關您的 Visual Studio 訂用帳戶中包含的權益
 searchscope: VS Subscription
 ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56839704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427789"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>您的 Visual Studio 訂用帳戶中包含的權益
 

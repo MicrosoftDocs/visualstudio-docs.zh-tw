@@ -10,11 +10,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: f29e31fb87d8b18e7f5a46d16f90217ee08d51f6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968521"
 ---
 # <a name="convert-anonymous-type-to-class"></a>將匿名型別轉換為類別
 

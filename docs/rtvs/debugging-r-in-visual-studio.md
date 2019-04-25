@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 98dcbaaeb6f330cda3a14cf8c32afe403b50aa85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939263"
 ---
 # <a name="debug-r-in-visual-studio"></a>在 Visual Studio 中偵錯 R
 
@@ -53,7 +53,7 @@ add <- function(x, y) {
 
 環境瀏覽器支援許多特殊命令︰
 
-| 命令 | 描述 |
+| 命令 | 說明 |
 | --- | --- |
 | n | 下一步︰執行程式碼檔案中的下一個陳述式 (與不進入函式相同)。 |
 | 秒 | 逐步執行︰執行程式碼檔案中的下一個陳述式，如果下一個陳述式是函式呼叫，則逐步執行函式範圍。 |
