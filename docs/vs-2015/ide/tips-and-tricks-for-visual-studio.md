@@ -1,5 +1,5 @@
 ---
-title: 祕訣和訣竅 |Microsoft Docs
+title: 秘訣和訣竅 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,36 +9,36 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6eb3e77c8d84f7603828c39b637bb49a8310a269
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 24c876edafaee848a050099fdb031f4637436f22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771175"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096565"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio 秘訣和訣竅
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以使用本主題中的快速鍵，更輕鬆地在 Visual Studio 中導覽。 如需詳細資訊，請參閱 < [Visual Studio 中的鍵盤快速鍵](default-keyboard-shortcuts-in-visual-studio.md)。 如需如何最佳化 Visual Studio 協助工具功能的相關資訊，請參閱[協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)。
+您可以使用本主題中的快速鍵，更輕鬆地在 Visual Studio 中導覽。 如需一般資訊，請參閱 [Visual Studio 中的鍵盤快速鍵](default-keyboard-shortcuts-in-visual-studio.md)。 如需如何最佳化 Visual Studio 協助工具功能的相關資訊，請參閱[協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)。
 
--   [視窗管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
+- [視窗管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
 
--   [視窗快速鍵](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
+- [視窗快速鍵](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
 
--   [Visual Studio 搜尋](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
+- [Visual Studio 搜尋](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
 
--   [編輯器尋找](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
+- [編輯器尋找](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
 
--   [程式碼編輯器](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
+- [程式碼編輯器](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
 
--   [工具列](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
+- [工具列](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
 
--   [偵錯](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
+- [偵錯](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
 
--   [應用程式生命週期管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
+- [應用程式生命週期管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-##  <a name="BKMK_WindowMgmt"></a> 視窗管理
+## <a name="BKMK_WindowMgmt"></a> 視窗管理
 
 |||
 |-|-|
@@ -49,7 +49,7 @@ ms.locfileid: "54771175"
 |顯示開啟檔案清單|Ctrl+Alt+向下鍵|
 |顯示所有浮動視窗|Ctrl+Shift+M|
 
-##  <a name="BKMK_WindowShortcuts"></a> 視窗快速鍵
+## <a name="BKMK_WindowShortcuts"></a> 視窗快速鍵
 
 |||
 |-|-|
@@ -59,7 +59,7 @@ ms.locfileid: "54771175"
 |開始新執行個體|Win+Shift+n|
 |切換視窗|Win+n|
 
-##  <a name="BKMK_Search"></a> Visual Studio 搜尋
+## <a name="BKMK_Search"></a> Visual Studio 搜尋
 
 |||
 |-|-|
@@ -69,7 +69,7 @@ ms.locfileid: "54771175"
 |快速啟動範圍結果|-   @opt 選項<br />-   @cmd 命令<br />-   @mru 最近使用<br />-   @doc 開啟文件|
 |在工具選項中搜尋|Ctrl+E|
 
-##  <a name="BKMK_EditorFind"></a> 編輯器尋找
+## <a name="BKMK_EditorFind"></a> 編輯器尋找
 
 |||
 |-|-|
@@ -84,7 +84,7 @@ ms.locfileid: "54771175"
 |檔案中尋找|Ctrl+Shift+F|
 |檔案中取代|Ctrl+Shift+H|
 
-##  <a name="BKMK_CodeEditor"></a> 程式碼編輯器
+## <a name="BKMK_CodeEditor"></a> 程式碼編輯器
 
 |||
 |-|-|
@@ -109,7 +109,7 @@ ms.locfileid: "54771175"
 |在多個查看結果之間巡覽|F8 和 Shift+F8|
 |在程式碼編輯器視窗和 [查看定義] 視窗之間切換|Shift+Esc|
 
-##  <a name="BKMK_Toolbars"></a> 工具列
+## <a name="BKMK_Toolbars"></a> 工具列
 
 |||
 |-|-|
@@ -118,7 +118,7 @@ ms.locfileid: "54771175"
 |尋找文字方塊命令模式|輸入 “>”|
 |建立新別名|>alias NewAlias 命令|
 
-##  <a name="BKMK_Debugging"></a> 偵錯
+## <a name="BKMK_Debugging"></a> 偵錯
 
 |||
 |-|-|
@@ -137,7 +137,7 @@ ms.locfileid: "54771175"
 |即時運算視窗清除緩衝區|>cls|
 |即時運算視窗列印值|?varname|
 
-##  <a name="BKMK_ALM"></a> 應用程式生命週期管理
+## <a name="BKMK_ALM"></a> 應用程式生命週期管理
 
 請參閱[鍵盤快速鍵：Visual Studio Online、TFS 入口網站和 Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)。
 
