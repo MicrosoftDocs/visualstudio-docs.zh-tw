@@ -1,22 +1,22 @@
 ---
-ms.openlocfilehash: 969b9ecb5dca1802acb70405421614b3c860247e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 983e25e65600a4174c305557b2a58e20b91f63f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58051918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927600"
 ---
 ## <a name="prerequisites"></a>必要條件
 
 ::: moniker range=">=vs-2019"
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)，已安裝您所選語言適用的工作負載：
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)，已安裝您所選語言適用的工作負載：
   * ASP.NET：**ASP.NET 與網頁程式開發**
   * Python：**Python 開發**
   * Node.js：**Node.js 開發**
 ::: moniker-end
 ::: moniker range="vs-2017"
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)，已安裝您所選語言適用的工作負載：
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)，已安裝您所選語言適用的工作負載：
   * ASP.NET：**ASP.NET 與網頁程式開發**
   * Python：**Python 開發**
   * Node.js：**Node.js 開發**
