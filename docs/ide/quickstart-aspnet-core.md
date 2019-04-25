@@ -144,7 +144,7 @@ Visual Studio 隨即開啟您的專案檔。
 
    ![Visual Studio 編輯器中應用程式描述區域的 C# 程式碼](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
 
-1. 將 [應用程式描述] 訊息文字變更為「**什麼是我的訊息?**」。
+1. 將 [應用程式描述] 訊息文字變更為「**What's my message?**」。
 
    ![變更 Visual Studio 編輯器中應用程式描述區域的預設訊息文字](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
