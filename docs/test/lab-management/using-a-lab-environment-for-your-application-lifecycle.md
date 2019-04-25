@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 0d8b4806a8db576f2aa6c9af198e9b7f2c974556
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783434"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>使用實驗室環境進行開發
 

@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dec06f7f45666845dfcc7080ed4b18db8baba993
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539052"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>作法：指定檢測前置和檢測後續命令
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>HOW TO：指定檢測前置和檢測後續命令
 
 您可以指定要在檢測效能工作階段中的二進位檔之前或之後執行的命令。 任何可從命令列發出的命令都可以指定為檢測前置或檢測後續事件。 例如，您可以在檢測二進位檔之後執行的批次檔中，指定使用強式名稱金鑰自動重新簽署組件的命令。
 
@@ -46,7 +46,7 @@ ms.locfileid: "56626865"
     > [!NOTE]
     > 您可以按一下 [命令列] 方塊旁的省略符號按鈕 **(...)**，以瀏覽並選取適當的 .exe、.cmd 或 .bat 檔案。
 
-4. 按一下 [確定 **Deploying Office Solutions**]。
+4. 按一下 [確定]。
 
      若要停止執行命令但不將它移除，請選取 [從檢測中排除] 核取方塊。 若要修改編譯器或連結器設定，請使用專案屬性頁。
 
@@ -65,7 +65,7 @@ ms.locfileid: "56626865"
     > [!NOTE]
     > 您可以按一下 [命令列] 方塊旁的省略符號按鈕 **(...)**，以瀏覽並選取適當的 .exe、.cmd 或 .bat 檔案。
 
-4. 按一下 [確定 **Deploying Office Solutions**]。
+4. 按一下 [確定]。
 
      若要停止執行命令但不將它移除，請選取 [從檢測中排除] 核取方塊。 若要修改編譯器或連結器設定，請使用專案屬性頁。
 

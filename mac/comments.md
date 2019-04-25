@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
 ms.openlocfilehash: 1f792e5ba670854e4a3a9ce703212d18c16e5512
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62984027"
 ---
 # <a name="comments"></a>註解
 

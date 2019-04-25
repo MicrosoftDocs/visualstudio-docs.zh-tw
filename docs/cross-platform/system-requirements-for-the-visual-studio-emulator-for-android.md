@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c34bd47dc3909fd165db265eb5a5a79920a03f9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815460"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android 的系統需求
 
@@ -26,7 +26,7 @@ Visual Studio Emulator for Android 是以虛擬機器形式在 Hyper-V (Windows 
 > [!IMPORTANT]
 > 模擬器的安裝程式會檢查執行 Visual Studio Emulator for Android 的必要條件。 如果必要條件不存在，則會顯示警告，但安裝時不需要這些必要條件。
 
-##  <a name="Checklist"></a> 快速檢查清單
+## <a name="Checklist"></a> 快速檢查清單
 
 以下是 Visual Studio Emulator for Android 執行需求的快速檢查清單。 如需詳細資訊，請參閱本主題中的後續章節。
 
@@ -50,11 +50,11 @@ Hyper-V 需求
 
 - 在 BIOS 中，必須支援下列功能：
 
-  -   硬體協助虛擬化
+  - 硬體協助虛擬化
 
-  -   第二層位址轉譯 (SLAT)
+  - 第二層位址轉譯 (SLAT)
 
-  -   硬體型資料執行防止 (DEP)
+  - 硬體型資料執行防止 (DEP)
 
 - 在 Windows 中，Hyper-V 必須啟用並執行。
 

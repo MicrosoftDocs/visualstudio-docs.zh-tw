@@ -9,12 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f56491a8268e939f7bd455c4afef6813116ef9f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834776"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>將資料來源加入至 Web 效能測試
 
@@ -34,7 +34,9 @@ ms.locfileid: "55950600"
 
 ## <a name="create-a-sql-database"></a>建立 SQL 資料庫
 
-1. 如果您沒有 Visual Studio Enterprise，則可以從 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面予以下載。
+::: moniker range="vs-2017"
+
+1. 如果您沒有 Visual Studio Enterprise，則可以從 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面予以下載。
 
 2. 建立 SQL 資料庫。
 
@@ -59,6 +61,38 @@ ms.locfileid: "55950600"
 7. 將資料加入至欄位。
 
      ![將資料加入至欄位](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 如果您沒有 Visual Studio Enterprise，則可以從 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面予以下載。
+
+2. 建立 SQL 資料庫。
+
+     ![加入新的 SQL 資料庫](../test/media/web_test_databinding_sql_addnewdb.png)
+
+3. 建立資料庫專案。
+
+     ![從資料庫建立新專案](../test/media/web_test_databinding_sql_addnewdbproject.png)
+
+4. 將資料表加入到資料庫專案。
+
+     ![將新資料表加入至資料庫專案](../test/media/web_test_databinding_sql_addnewdbtablename.png)
+
+5. 將欄位加入至資料表。
+
+     ![將欄位加入至資料表](../test/media/web_test_databinding_sql_addnewdbaddfields.png)
+
+6. 發行資料庫專案。
+
+     ![從 [方案總管] 發行資料庫專案](../test/media/web_test_databinding_sql_addnewdbpublish.png)
+
+7. 將資料加入至欄位。
+
+     ![將資料加入至欄位](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
 
 ## <a name="add-the-data-source"></a>加入資料來源
 
@@ -96,7 +130,7 @@ ms.locfileid: "55950600"
 
 2. 開啟 [方案總管] 中的 Local.testsettings 檔案，並選取 [每一資料來源資料列一次執行] 選項。
 
-     ![編輯測試設定檔](../test/media/web_test_databinding_sql_testsettings.png)
+     ![編輯測試設定檔案](../test/media/web_test_databinding_sql_testsettings.png)
 
 3. 儲存 Web 效能測試。
 
@@ -249,7 +283,7 @@ ms.locfileid: "55950600"
 
 **答：** 可以，您必須手動變更 SOAP XML。
 
-1. 在要求樹狀中選擇 Web 服務要求，並在 [屬性] 視窗中選擇 [字串內容] 屬性中的省略符號 (...)。
+1. 在要求樹狀結構中選擇 Web 服務要求，並在 [屬性] 視窗中選擇 [字串內容] 屬性中的省略符號 (...)。
 
      ![編輯 Web 服務字串內容](../test/media/web_test_databinding_webservicerequest.png)
 

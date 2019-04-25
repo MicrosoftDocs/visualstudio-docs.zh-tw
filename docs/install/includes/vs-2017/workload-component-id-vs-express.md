@@ -11,11 +11,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 4da1fcce5d959c3c5a46902dc4e425524b041b10
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422756"
 ---
 ## <a name="express-for-windows-desktop"></a>Express for Windows Desktop
 

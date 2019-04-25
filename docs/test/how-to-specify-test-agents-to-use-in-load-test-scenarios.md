@@ -12,12 +12,12 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03e2e5ce9ee1883f51bea68d5c1ccc2af0c944a7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6045466d93a0017b648ca4327e80c801517c1359
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786428"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>HOW TO：指定要用於負載測試情節的測試代理程式
 
@@ -45,24 +45,24 @@ ms.locfileid: "55955540"
 
 ## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>若要指定要用於情節的代理程式
 
-1.  開啟負載測試。
+1. 開啟負載測試。
 
-     [負載測試編輯器] 隨即出現。 負載測試樹狀隨即顯示。
+     [負載測試編輯器] 隨即出現。 負載測試樹狀結構隨即顯示。
 
-2.  在負載測試樹狀目錄的 [情節] 資料夾中，選擇您要為其指定要使用之代理程式的情節節點。
+2. 在負載測試樹狀目錄的 [情節] 資料夾中，選擇您要為其指定要使用之代理程式的情節節點。
 
-3.  在 [檢視] 功能表上，選取 [屬性視窗]。
+3. 在 [檢視] 功能表上，選取 [屬性視窗]。
 
      情節的分類和屬性會顯示在 [屬性] 視窗中。
 
-4.  在 [要使用的代理程式] 屬性的文字方塊中，輸入可在其上執行情節之代理程式的清單。
+4. 在 [要使用的代理程式] 屬性的文字方塊中，輸入可在其上執行情節之代理程式的清單。
 
      多個代理程式必須以逗號分隔，例如 "**Agent1, Agent2, Agent3**"。 將這個屬性保留空白，即指定情節應該使用所有可用的代理程式。
 
     > [!NOTE]
     > 本機回合會忽略 [要使用的代理程式] 屬性。 對遠端回合來說，如果 [要使用的代理程式] 中沒有指定任何代理程式，情節中的測試將不會執行。
 
-5.  變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [要使用的代理程式] 值來執行負載測試。
+5. 變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [要使用的代理程式] 值來執行負載測試。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 588bc57dc2cda1030e9e1b8d1f989b2cc2d31662
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549920"
 ---
 # <a name="find-code-using-go-to-commands"></a>使用移至命令來尋找程式碼
 

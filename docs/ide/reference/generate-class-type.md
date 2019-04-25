@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: a1258e0448fe7be9dd7fa0180f52604d877b051d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794977"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>在 Visual Studio 中產生類別或類型
 
@@ -70,7 +70,7 @@ ms.locfileid: "55953161"
 
    ![產生類型](media/class-newtype-cs.png)
 
-   選取 | 描述
+   選取 | 說明
    --- | ---
    Access | 將類型設定為擁有 [預設]內部 或 [公用] 存取權。
    類型 | 這可以設定為 [類別] 或 [結構]。

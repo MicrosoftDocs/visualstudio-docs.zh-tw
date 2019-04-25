@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18239c01707e63acaf7602ec77dad3bc6b42a884
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547673"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>HOW TO：在 Visual Studio IDE 中四處移動
 
@@ -43,9 +43,9 @@ ms.locfileid: "55908474"
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>依使用順序移動開啟的檔案
 
--   若要依最近存取的順序啟動開啟的文件，請按 **Ctrl**+**-**。
+- 若要依最近存取的順序啟動開啟的文件，請按 **Ctrl**+**-**。
 
--   若要依相反順序啟動開啟的文件，請按 **Ctrl**+**Shift**+**-**。
+- 若要依相反順序啟動開啟的文件，請按 **Ctrl**+**Shift**+**-**。
 
     > [!NOTE]
     > [向後巡覽] 和 [向前巡覽] 位於 [檢視] 功能表中。
@@ -63,20 +63,20 @@ ms.locfileid: "55908474"
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>切換至編輯器中的特定檔案
 
--   按 **Ctrl**+**Tab**，以顯示 [IDE 瀏覽器]。 按住 **Ctrl** 鍵並重複按 **Tab**，直到您選取您想要切換前往的檔案。
+- 按 **Ctrl**+**Tab**，以顯示 [IDE 瀏覽器]。 按住 **Ctrl** 鍵並重複按 **Tab**，直到您選取您想要切換前往的檔案。
 
     > [!TIP]
     > 若要反轉瀏覽 [使用中的檔案] 清單的順序，請按住 **Ctrl**+**Shift** 鍵並按 **Tab**。
 
     \-或-
 
--   在編輯器的右上角，選擇 [使用中的檔案] 按鈕，然後從清單中選取要切換的檔案。
+- 在編輯器的右上角，選擇 [使用中的檔案] 按鈕，然後從清單中選取要切換的檔案。
 
     \-或-
 
--   在功能表列上，依序選擇 [視窗] > [Windows]。
+- 在功能表列上，依序選擇 [視窗] > [Windows]。
 
--   在清單中，選取您想要檢視的檔案，然後選擇 [啟動]。
+- 在清單中，選取您想要檢視的檔案，然後選擇 [啟動]。
 
 ## <a name="navigate-among-tool-windows-in-the-ide"></a>在 IDE 中的各個工具視窗之間巡覽
 
@@ -87,7 +87,7 @@ ms.locfileid: "55908474"
 
 ### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>切換至 IDE 中的特定工具視窗
 
--   按下 **Alt**+**F7** 以顯示 [IDE 瀏覽器]。 按住 **Alt** 鍵並重複按 **F7**，直到您選取想要切換前往的視窗。
+- 按下 **Alt**+**F7** 以顯示 [IDE 瀏覽器]。 按住 **Alt** 鍵並重複按 **F7**，直到您選取想要切換前往的視窗。
 
     > [!TIP]
     > 若要反轉瀏覽 [使用中工具視窗] 清單的順序，請按住 **Shift**+**Alt** 鍵並按 **F7**。

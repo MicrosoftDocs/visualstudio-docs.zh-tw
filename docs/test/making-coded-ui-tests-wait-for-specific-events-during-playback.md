@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3e2c83b74c2649681251ffa51f1366c0ce96d677
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788807"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>讓自動程式化 UI 測試在播放期間等候特定事件
 
@@ -25,7 +25,7 @@ ms.locfileid: "55970071"
 Visual Studio 企業版
 
 > [!TIP]
-> 您也可以使用自動程式化 UI 測試編輯器，以新增動作之前的延遲。 如需詳細資訊，請參閱[＜How to：使用自動程式化 UI 測試編輯器，在 UI 動作前插入延遲](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)。
+> 您也可以使用自動程式化 UI 測試編輯器，以新增動作之前的延遲。 如需詳細資訊，請參閱[如何：使用自動程式化 UI 測試編輯器，在 UI 動作前插入延遲](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)。
 
 **UITestControl.WaitForControlXXX() 方法**
 

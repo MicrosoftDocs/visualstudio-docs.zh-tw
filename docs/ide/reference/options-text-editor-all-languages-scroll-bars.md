@@ -33,11 +33,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a753574e883872780446929f7c2349b0d726c71a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817580"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>選項、文字編輯器、所有語言、捲軸
 這個對話方塊可讓您變更程式碼編輯器捲軸的預設行為。 若要顯示這些選項，請從 [工具] 功能表選取 [選項]。 在 [文字編輯器] 資料夾內，展開 [所有語言] 子資料夾，然後選擇 [捲軸]。
@@ -59,7 +59,7 @@ ms.locfileid: "55925952"
 
 選取垂直捲軸是否會顯示下列註釋：
 
-- 已變更
+- 變更
 - 標記
 - 錯誤
 - 插入號位置

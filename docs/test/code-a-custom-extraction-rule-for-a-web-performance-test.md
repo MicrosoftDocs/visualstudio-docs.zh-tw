@@ -13,12 +13,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 14dce2ee3ea073e8ef3db6956af0eb56daa94fe0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1111b659e1c88f219258b73045d0ce0d0f420ae7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822933"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂擷取規則程式碼
 
@@ -31,24 +31,24 @@ ms.locfileid: "55923443"
 
 ## <a name="to-create-a-custom-extraction-rule"></a>若要建立自訂擷取規則
 
-1.  開啟包含 Web 效能測試的測試專案。
+1. 開啟包含 Web 效能測試的測試專案。
 
-2.  (選擇性) 建立個別的類別庫專案，以存放擷取規則。
+2. (選擇性) 建立個別的類別庫專案，以存放擷取規則。
 
     > [!IMPORTANT]
     > 您可以在測試所在的同一個專案中建立類別。 不過，如果要重複使用規則，最好是建立個別的類別庫專案，以存放規則。 如果您要建立個別的專案，必須完成本程序中的選擇性步驟。
 
-3.  (選擇性) 在類別庫專案中，加入 Microsoft.VisualStudio.QualityTools.WebTestFramework dll 的參考。
+3. (選擇性) 在類別庫專案中，加入 Microsoft.VisualStudio.QualityTools.WebTestFramework dll 的參考。
 
-4.  建立從 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> 類別衍生的類別。 實作 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*> 成員。
+4. 建立從 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> 類別衍生的類別。 實作 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*> 成員。
 
-5.  (選擇性) 建立新的「類別庫」專案。
+5. (選擇性) 建立新的「類別庫」專案。
 
-6.  (選擇性) 在測試專案中，新增包含自訂擷取規則的類別庫專案參考。
+6. (選擇性) 在測試專案中，新增包含自訂擷取規則的類別庫專案參考。
 
-7.  在 [測試專案] 中，使用 [Web 效能測試編輯器] 開啟 Web 效能測試。
+7. 在 [測試專案] 中，使用 [Web 效能測試編輯器] 開啟 Web 效能測試。
 
-8.  若要新增自訂擷取規則，請以滑鼠右鍵按一下 Web 效能測試要求，然後選取 [新增擷取規則]。
+8. 若要新增自訂擷取規則，請以滑鼠右鍵按一下 Web 效能測試要求，然後選取 [新增擷取規則]。
 
      [新增擷取規則] 對話方塊隨即出現。 您會在 [選取規則] 清單中看到您的自訂驗證規則，以及預先定義的驗證規則。 選取自訂擷取規則，然後選擇 [確定]。
 

@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: ee6b01e2c154ddebf71f5ae2511ccfe693506db6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812827"
 ---
 # <a name="test-generation"></a>測試產生
 

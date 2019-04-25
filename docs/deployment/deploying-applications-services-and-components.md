@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929042"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio 中的部署簡介
 

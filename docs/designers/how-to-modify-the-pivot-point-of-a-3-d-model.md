@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ad14241f5247e7ce16e84cfe26675bde45cb0de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1b1baa6a42d0874cdefaa8cfb781f66e864d82b2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897449"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>HOW TO：修改 3D 模型的樞紐點
 
@@ -25,11 +25,11 @@ ms.locfileid: "55945478"
 
 請確定已顯示 [屬性] 視窗和 [工具箱]。
 
-1.  開始使用如下列文章中所述的現有 3D 模型：[如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)。
+1. 開始使用如下列文章中所述的現有 3D 模型：[如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)。
 
-2.  進入樞紐分析模式。 在 [模型編輯器模式] 工具列上，選擇 [樞紐分析表模式] 按鈕以啟動樞紐分析表模式。 出現在 [樞紐分析表模式] 按鈕附近的方塊，指出 [模型編輯器] 現在處於樞紐分析表模式。 在樞紐分析表模式中，像是平移的作業會影響物件的樞紐分析點，而不是世界空間中的物件結構。
+2. 進入樞紐分析模式。 在 [模型編輯器模式] 工具列上，選擇 [樞紐分析表模式] 按鈕以啟動樞紐分析表模式。 出現在 [樞紐分析表模式] 按鈕附近的方塊，指出 [模型編輯器] 現在處於樞紐分析表模式。 在樞紐分析表模式中，像是平移的作業會影響物件的樞紐分析點，而不是世界空間中的物件結構。
 
-3.  修改物件的樞紐分析點。 在 [選取] 模式中，選取該物件，然後在 [模型檢視器] 工具列上，選擇 [平移] 工具。 設計介面上隨即出現代表樞紐分析點的方塊。 移動該方塊以修改物件的樞紐分析點。
+3. 修改物件的樞紐分析點。 在 [選取] 模式中，選取該物件，然後在 [模型檢視器] 工具列上，選擇 [平移] 工具。 設計介面上隨即出現代表樞紐分析點的方塊。 移動該方塊以修改物件的樞紐分析點。
 
      您可以透過移動方塊，在 3D 空間中移動樞紐分析點。 若要沿著某一座標軸平移樞紐分析點，請移動對應至該軸的箭頭。 方塊和箭頭會變成黃色，指出受到平移影響的座標軸。
 

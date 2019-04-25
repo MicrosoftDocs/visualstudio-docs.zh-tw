@@ -15,12 +15,12 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 79c7e4fd86223938a1d38436eb767c86b2cf583d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2a0aa54cd3fa6456d2a41e5418c497b284d01547
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095447"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,22 +58,22 @@ ms.locfileid: "54760909"
 |[HTML 編輯器設計檢視](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)|[報表設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)|[VC 快速鍵編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)|[XML (文字) 編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)|
 |[HTML 編輯器原始碼檢視](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorSource)|[順序圖表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SequenceDiagram)|[VC 對話方塊編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)|[XML 結構描述設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)|
 
-##  <a name="bkmk_global"></a> 全域
+## <a name="bkmk_global"></a> 全域
 
-###  <a name="bkmk_analyze"></a> 分析
+### <a name="bkmk_analyze"></a> 分析
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
 |Analyze.NavigateBackward|Shift+Alt+3|
 |Analyze.NavigateForward|Shift+Alt+4|
 
-###  <a name="bkmk_architecture"></a> 架構
+### <a name="bkmk_architecture"></a> 架構
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
 |Architecture.NewDiagram|Ctrl+\\、Ctrl+N|
 
-###  <a name="bkmk_build"></a> 建置
+### <a name="bkmk_build"></a> 建置
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -82,13 +82,13 @@ ms.locfileid: "54760909"
 |Build.Compile|Ctrl+F7|
 |Build.RunCodeAnalysisonSolution|ALT+F11|
 
-###  <a name="bkmk_classview"></a> 類別檢視操作功能表
+### <a name="bkmk_classview"></a> 類別檢視操作功能表
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|Alt+Enter|
 
-###  <a name="bkmk_debug"></a> 偵錯
+### <a name="bkmk_debug"></a> 偵錯
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -156,7 +156,7 @@ ms.locfileid: "54760909"
 |Debug.Watch3|Ctrl+Alt+W、3|
 |Debug.Watch4|Ctrl+Alt+W、4|
 
-###  <a name="bkmk_debugger"></a> 偵錯工具操作功能表
+### <a name="bkmk_debugger"></a> 偵錯工具操作功能表
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -164,13 +164,13 @@ ms.locfileid: "54760909"
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|Alt+F9、A|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|Alt+F9、S|
 
-###  <a name="bkmk_diagnostics"></a> 診斷中樞
+### <a name="bkmk_diagnostics"></a> 診斷中樞
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |DiagnosticsHub.StopCollection|Ctrl+Alt+F2|
 
-###  <a name="bkmk_edit"></a> 編輯
+### <a name="bkmk_edit"></a> 編輯
 
 |命令||
 |--------------|-|
@@ -229,7 +229,7 @@ ms.locfileid: "54760909"
 |Edit.SurroundWith|Ctrl+K、Ctrl+S|
 |Edit.Undo|Ctrl+Z<br /><br /> 或<br /><br /> Alt+退格鍵|
 
-###  <a name="bkmk_editorContext"></a> 編輯器操作功能表
+### <a name="bkmk_editorContext"></a> 編輯器操作功能表
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -240,7 +240,7 @@ ms.locfileid: "54760909"
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|Ctrl+K、Ctrl+O|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|Ctrl+K、Ctrl+T<br /><br /> 或<br /><br /> Ctrl+K、T|
 
-###  <a name="bkmk_file"></a> 檔案
+### <a name="bkmk_file"></a> 檔案
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -256,7 +256,7 @@ ms.locfileid: "54760909"
 |File.SaveSelectedItems|Ctrl+S|
 |File.ViewinBrowser|Ctrl+Shift+W|
 
-###  <a name="bkmk_help"></a> 說明
+### <a name="bkmk_help"></a> 說明
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -265,19 +265,19 @@ ms.locfileid: "54760909"
 |Help.ViewHelp|Ctrl+F1|
 |Help.WindowHelp|Shift+F1|
 
-###  <a name="bkmk_loadtest"></a> 負載測試
+### <a name="bkmk_loadtest"></a> 負載測試
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |LoadTest.JumpToCounterPane|Ctrl+R、Q|
 
-###  <a name="bkmk_otherContext"></a> 其他操作功能表
+### <a name="bkmk_otherContext"></a> 其他操作功能表
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|Insert|
 
-###  <a name="bkmk_project"></a> 專案
+### <a name="bkmk_project"></a> 專案
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -289,14 +289,14 @@ ms.locfileid: "54760909"
 |Project.Publishselectedfiles|Alt+;、Alt+P|
 |Project.Replaceselectedfilesfromserver|Alt+;、Alt+R|
 
-###  <a name="bkmk_projectContext"></a> 專案及方案操作功能表
+### <a name="bkmk_projectContext"></a> 專案及方案操作功能表
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
 |ProjectandSolutionContextMenus.Item.MoveDown|Alt+向下鍵|
 |ProjectandSolutionContextMenus.Item.MoveUp|Alt+向上鍵|
 
-###  <a name="bkmk_refactor"></a> 重構
+### <a name="bkmk_refactor"></a> 重構
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -307,7 +307,7 @@ ms.locfileid: "54760909"
 |Refactor.Rename|Ctrl+R、Ctrl+R|
 |Refactor.ReorderParameters|Ctrl+R、Ctrl+O|
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a> 方案總管
+### <a name="bkmk_solutionexplorerGLOBAL"></a> 方案總管
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -315,7 +315,7 @@ ms.locfileid: "54760909"
 |SolutionExplorer.PendingChangesFilter|Ctrl+[、P<br /><br /> 或<br /><br /> Ctrl+[、Ctrl+P|
 |SolutionExplorer.SyncWithActiveDocument|Ctrl+[、S<br /><br /> 或<br /><br /> Ctrl+[、Ctrl+S|
 
-###  <a name="bkmk_team"></a> 小組
+### <a name="bkmk_team"></a> 小組
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -324,7 +324,7 @@ ms.locfileid: "54760909"
 |Team.Git.GoToGitCommits|Ctrl+0、Ctrl+O<br /><br /> 或<br /><br /> Ctrl+0、O|
 |Team.TeamExplorerSearch|Ctrl+'|
 
-###  <a name="bkmk_TFcontext"></a> Team Foundation 操作功能表
+### <a name="bkmk_TFcontext"></a> Team Foundation 操作功能表
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -339,14 +339,14 @@ ms.locfileid: "54760909"
 |TeamFoundationContextMenus.Commands.GoToWebAccess|Ctrl+0、Ctrl+A<br /><br /> 或<br /><br /> Ctrl+0、A|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|Ctrl+0、Ctrl+W<br /><br /> 或<br /><br /> Ctrl+0、W|
 
-###  <a name="bkmk_test"></a> 測試
+### <a name="bkmk_test"></a> 測試
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
 |Test.UseCodedUITestBuilder|Ctrl+\\、Ctrl+C|
 |Test.UseExistingActionRecording|Ctrl+\\、Ctrl+A|
 
-###  <a name="bkmk_testexplorerGLOBAL"></a> 測試總管
+### <a name="bkmk_testexplorerGLOBAL"></a> 測試總管
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -356,7 +356,7 @@ ms.locfileid: "54760909"
 |TestExplorer.RunAllTests|Ctrl+R、A|
 |TestExplorer.RunAllTestsInContext|Ctrl+R、T|
 
-###  <a name="bkmk_tools"></a> 工具
+### <a name="bkmk_tools"></a> 工具
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -365,7 +365,7 @@ ms.locfileid: "54760909"
 |Tools.ForceGC|Ctrl+Shift+Alt+F12、Ctrl+Shift+Alt+F12|
 |Tools.GoToCommandLine|Ctrl+/|
 
-###  <a name="bkmk_view"></a> 檢視
+### <a name="bkmk_view"></a> 檢視
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -414,7 +414,7 @@ ms.locfileid: "54760909"
 |View.ZoomIn|Ctrl+Shift+.|
 |View.ZoomOut|Ctrl+Shift+,|
 
-###  <a name="bkmk_window"></a> Window
+### <a name="bkmk_window"></a> Window
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -445,14 +445,14 @@ ms.locfileid: "54760909"
 |Window.SolutionExplorerSearch|Ctrl+;|
 |Window.WindowSearch|Alt+`|
 
-###  <a name="bkmk_windowsazure"></a> Azure
+### <a name="bkmk_windowsazure"></a> Azure
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
 |WindowsAzure.RetryMobileServiceScriptOperation|Ctrl+Num *、Ctrl+R|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|Ctrl+Num *、Ctrl+D|
 
-##  <a name="bkmk_ADONET"></a> ADO.NET 實體資料模型設計工具
+## <a name="bkmk_ADONET"></a> ADO.NET 實體資料模型設計工具
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -467,7 +467,7 @@ ms.locfileid: "54760909"
 |View.EntityDataModelBrowser|Ctrl+1|
 |View.EntityDataModelMappingDetails|Ctrl+2|
 
-##  <a name="bkmk_classDiagram"></a> 類別圖表
+## <a name="bkmk_classDiagram"></a> 類別圖表
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -479,7 +479,7 @@ ms.locfileid: "54760909"
 |Edit.RemovefromDiagram|刪除|
 |View.ViewCode|Enter 鍵|
 
-##  <a name="bkmk_codedUItest"></a> 自動程式化 UI 測試編輯器
+## <a name="bkmk_codedUItest"></a> 自動程式化 UI 測試編輯器
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -490,14 +490,14 @@ ms.locfileid: "54760909"
 |OtherContextMenus.UITestEditorContextMenu.Movecode|Ctrl+Alt+C|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|Ctrl+Shift+T|
 
-##  <a name="bkmk_dataset"></a> 資料集編輯器
+## <a name="bkmk_dataset"></a> 資料集編輯器
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
 |OtherContextMenus.ColumnContext.InsertColumn|Insert|
 |OtherContextMenus.DbTableContext.Add.Column|Ctrl+L|
 
-##  <a name="bkmk_diff"></a> 差異檢視器
+## <a name="bkmk_diff"></a> 差異檢視器
 
 |||
 |-|-|
@@ -514,7 +514,7 @@ ms.locfileid: "54760909"
 |EditorContextMenus.CodeWindow.AddComment|Ctrl+Shift+K|
 |EditorContextMenus.CodeWindow.EditLocalFile|Ctrl+Shift+P|
 
-##  <a name="bkmk_DOM"></a> DOM 總管
+## <a name="bkmk_DOM"></a> DOM 總管
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -522,13 +522,13 @@ ms.locfileid: "54760909"
 |DOMExplorer.SelectElement|CTRL+B|
 |DOMExplorer.ShowLayout|Ctrl+Shift+I|
 
-##  <a name="bkmk_FSharp"></a> F# Interactive
+## <a name="bkmk_FSharp"></a> F# Interactive
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|Ctrl+Break|
 
-##  <a name="bkmk_graphDoc"></a> 圖形文件編輯器
+## <a name="bkmk_graphDoc"></a> 圖形文件編輯器
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -540,7 +540,7 @@ ms.locfileid: "54760909"
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|刪除|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|F2|
 
-##  <a name="bkmk_graphicsDebugger"></a> 圖形診斷
+## <a name="bkmk_graphicsDebugger"></a> 圖形診斷
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -554,13 +554,13 @@ ms.locfileid: "54760909"
 |Graphics.ZoomIn|Shift+Alt+=|
 |Graphics.ZoomOut|Shift+Alt+-|
 
-##  <a name="bkmk_HTMLeditor"></a> HTML 編輯器
+## <a name="bkmk_HTMLeditor"></a> HTML 編輯器
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |OtherContextMenus.HTMLContext.GoToController|Ctrl+M、Ctrl+G|
 
-##  <a name="bkmk_HTMLeditorDesign"></a> HTML 編輯器設計檢視
+## <a name="bkmk_HTMLeditorDesign"></a> HTML 編輯器設計檢視
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -583,7 +583,7 @@ ms.locfileid: "54760909"
 |View.ViewMarkup|Shift+F7|
 |Window.PreviousTab|Ctrl+PgUp|
 
-##  <a name="bkmk_HTMLeditorSource"></a> HTML 編輯器原始碼檢視
+## <a name="bkmk_HTMLeditorSource"></a> HTML 編輯器原始碼檢視
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -593,13 +593,13 @@ ms.locfileid: "54760909"
 |View.ViewDesigner|Shift+F7|
 |Window.PreviousTab|Ctrl+PgUp|
 
-##  <a name="bkmk_layerDiagram"></a> 分層圖
+## <a name="bkmk_layerDiagram"></a> 分層圖
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |Edit.Delete|Shift+Delete|
 
-##  <a name="bkmk_managedResources"></a> Managed 資源編輯器
+## <a name="bkmk_managedResources"></a> Managed 資源編輯器
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -614,7 +614,7 @@ ms.locfileid: "54760909"
 |Resources.Other|Ctrl+6|
 |Resources.Strings|Ctrl+1|
 
-##  <a name="bkmk_MergeEditor"></a> 合併編輯器視窗
+## <a name="bkmk_MergeEditor"></a> 合併編輯器視窗
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -622,7 +622,7 @@ ms.locfileid: "54760909"
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|Alt+2|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|Alt+3|
 
-##  <a name="bkmk_SchemaCompare"></a> Microsoft SQL Server Data Tools，結構描述比較
+## <a name="bkmk_SchemaCompare"></a> Microsoft SQL Server Data Tools，結構描述比較
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -633,7 +633,7 @@ ms.locfileid: "54760909"
 |SQL.SSDTSchemaCompareStop|Alt+Break|
 |SQL.SSDTSchemaCompareWriteUpdates|Shift+Alt+U|
 
-##  <a name="bkmk_TableDesigner"></a> Microsoft SQL Server Data Tools，資料表設計工具
+## <a name="bkmk_TableDesigner"></a> Microsoft SQL Server Data Tools，資料表設計工具
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -644,7 +644,7 @@ ms.locfileid: "54760909"
 |SQL.Rename|F2<br /><br /> 或<br /><br /> Ctrl+R、R<br /><br /> 或<br /><br /> Ctrl+R、Ctrl+R|
 |ViewFileInScriptPanel|Shift+Alt+PgDn|
 
-##  <a name="bkmk_TSQLeditor"></a> Microsoft SQL Server Data Tools，T-SQL 編輯器
+## <a name="bkmk_TSQLeditor"></a> Microsoft SQL Server Data Tools，T-SQL 編輯器
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -665,7 +665,7 @@ ms.locfileid: "54760909"
 |TSqlEditorCloneQuery|Ctrl+Alt+N|
 |TSqlEditorDatabaseCombo|Shift+Alt+PgDn|
 
-##  <a name="bkmk_linkfix"></a> Microsoft SQL Server Data Tools，T-SQL PDW 編輯器
+## <a name="bkmk_linkfix"></a> Microsoft SQL Server Data Tools，T-SQL PDW 編輯器
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -680,13 +680,13 @@ ms.locfileid: "54760909"
 |TSqlEditorCloneQuery|Ctrl+Alt+N|
 |TSqlEditorDatabaseCombo|Shift+Alt+PgDn|
 
-##  <a name="bkmk_PageInspector"></a> Page Inspector
+## <a name="bkmk_PageInspector"></a> Page Inspector
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |PageInspector.Minimize|F12|
 
-##  <a name="bkmk_QueryDesigner"></a> 查詢設計工具
+## <a name="bkmk_QueryDesigner"></a> 查詢設計工具
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -699,7 +699,7 @@ ms.locfileid: "54760909"
 |QueryDesigner.Results|Ctrl+4|
 |QueryDesigner.SQL|Ctrl+3|
 
-##  <a name="bkmk_QueryResults"></a> 查詢結果
+## <a name="bkmk_QueryResults"></a> 查詢結果
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -707,7 +707,7 @@ ms.locfileid: "54760909"
 |SQL.QueryResultsRefresh|Shift+Alt+R|
 |SQL.QueryResultsStop|Alt+Break|
 
-##  <a name="bkmk_ReportDesigner"></a> 報表設計工具
+## <a name="bkmk_ReportDesigner"></a> 報表設計工具
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -733,14 +733,14 @@ ms.locfileid: "54760909"
 |Edit.TabLeft|Shift + Tab|
 |View.ReportData|Ctrl+Alt+D|
 
-##  <a name="bkmk_SequenceDiagram"></a> 順序圖表
+## <a name="bkmk_SequenceDiagram"></a> 順序圖表
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
 |ArchitectureDesigner.Sequence.NavigateToCode|F12|
 |Edit.Delete|Shift+Del|
 
-##  <a name="bkmk_SettingsDesigner"></a> 設定設計工具
+## <a name="bkmk_SettingsDesigner"></a> 設定設計工具
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -749,13 +749,13 @@ ms.locfileid: "54760909"
 |Edit.SelectionCancel|Esc|
 |View.ViewCode|F7|
 
-##  <a name="bkmk_SolutionExplorer"></a> 方案總管
+## <a name="bkmk_SolutionExplorer"></a> 方案總管
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|Ctrl+K、Ctrl+G|
 
-##  <a name="bkmk_TeamExplorer"></a> Team Explorer
+## <a name="bkmk_TeamExplorer"></a> Team Explorer
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
@@ -780,19 +780,19 @@ ms.locfileid: "54760909"
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|Shift+Alt+L|
 |View.Refresh|F5|
 
-##  <a name="bkmk_TFBuild"></a> Team Foundation Build 詳細資料編輯器
+## <a name="bkmk_TFBuild"></a> Team Foundation Build 詳細資料編輯器
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |View.Refresh|F5|
 
-##  <a name="bkmk_TestExplorer"></a> 測試總管
+## <a name="bkmk_TestExplorer"></a> 測試總管
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |TestExplorer.OpenTest|F12|
 
-##  <a name="bkmk_TextEditor"></a> 文字編輯器
+## <a name="bkmk_TextEditor"></a> 文字編輯器
 
 |                             命令                              |                  鍵盤快速鍵                   |
 |-------------------------------------------------------------------|-------------------------------------------------------|
@@ -902,38 +902,38 @@ ms.locfileid: "54760909"
 |   TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion   |                       Alt+PgDn                        |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion |                       Alt+PgUp                        |
 
-##  <a name="bkmk_UMLactivityDiagram"></a> UML 活動圖表
+## <a name="bkmk_UMLactivityDiagram"></a> UML 活動圖表
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |Edit.Delete|Shift+Del|
 
-##  <a name="bkmk_UMLclassDiagram"></a> UML 類別圖表
+## <a name="bkmk_UMLclassDiagram"></a> UML 類別圖表
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|Shift+Del|
 
-##  <a name="bkmk_UMLcomponentDiagram"></a> UML 元件圖表
+## <a name="bkmk_UMLcomponentDiagram"></a> UML 元件圖表
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|Shift+Del|
 
-##  <a name="bkmk_UMLusecaseDiagram"></a> UML 使用案例圖表
+## <a name="bkmk_UMLusecaseDiagram"></a> UML 使用案例圖表
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|Shift+Del|
 
-##  <a name="bkmk_vcaccelerator"></a> VC 快速鍵編輯器
+## <a name="bkmk_vcaccelerator"></a> VC 快速鍵編輯器
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
 |Edit.NewAccelerator|Insert|
 |Edit.NextKeyTyped|Ctrl+W|
 
-##  <a name="bkmk_vcdialogeditor"></a> VC 對話方塊編輯器
+## <a name="bkmk_vcdialogeditor"></a> VC 對話方塊編輯器
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -967,7 +967,7 @@ ms.locfileid: "54760909"
 |Format.TestDialog|Ctrl+T|
 |Format.ToggleGuides|Ctrl+G|
 
-##  <a name="bkmk_vcimageeditor"></a> VC 影像編輯器
+## <a name="bkmk_vcimageeditor"></a> VC 影像編輯器
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -1009,13 +1009,13 @@ ms.locfileid: "54760909"
 |Image.ZoomIn|Ctrl+Shift+.<br /><br /> 或<br /><br /> Ctrl+向上鍵|
 |Image.ZoomOut|Ctrl+Shift+,<br /><br /> 或<br /><br /> Ctrl+向下鍵|
 
-##  <a name="bkmk_vcstringeditor"></a> VC 字串編輯器
+## <a name="bkmk_vcstringeditor"></a> VC 字串編輯器
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |Edit.NewString|Insert|
 
-##  <a name="bkmk_viewDesigner"></a> 檢視表設計工具
+## <a name="bkmk_viewDesigner"></a> 檢視表設計工具
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -1028,13 +1028,13 @@ ms.locfileid: "54760909"
 |QueryDesigner.Results|Ctrl+4|
 |QueryDesigner.SQL|Ctrl+3|
 
-##  <a name="bkmk_visualstudio"></a> Visual Studio
+## <a name="bkmk_visualstudio"></a> Visual Studio
 
 |命令|鍵盤快速鍵|
 |-------------|-----------------------|
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|Ctrl+1|
 
-##  <a name="bkmk_wfdesigner"></a> Windows Form 設計工具
+## <a name="bkmk_wfdesigner"></a> Windows Form 設計工具
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -1063,7 +1063,7 @@ ms.locfileid: "54760909"
 |Edit.SizeControlUp|Ctrl+Shift+向上鍵|
 |Edit.TabLeft|Shift + Tab|
 
-##  <a name="bkmk_workItemEditor"></a> 工作項目編輯器
+## <a name="bkmk_workItemEditor"></a> 工作項目編輯器
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -1071,7 +1071,7 @@ ms.locfileid: "54760909"
 |Edit.RefreshWorkItem|F5|
 |Team.NewLinkedWorkItem|Shift+Alt+L|
 
-##  <a name="bkmk_WIqueryview"></a> 工作項目查詢檢視
+## <a name="bkmk_WIqueryview"></a> 工作項目查詢檢視
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -1082,7 +1082,7 @@ ms.locfileid: "54760909"
 |Team.Refresh|F5|
 |Window.Toggle|Shift+Alt+V|
 
-##  <a name="bkmk_WIresultsview"></a> 工作項目結果檢視
+## <a name="bkmk_WIresultsview"></a> 工作項目結果檢視
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -1095,7 +1095,7 @@ ms.locfileid: "54760909"
 |Team.Refresh|F5|
 |Window.Toggle|Shift+Alt+V|
 
-##  <a name="bkmk_workflowdesigner"></a> 工作流程設計工具
+## <a name="bkmk_workflowdesigner"></a> 工作流程設計工具
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -1123,7 +1123,7 @@ ms.locfileid: "54760909"
 |WorkflowDesigner.ZoomIn|Ctrl+Num +|
 |WorkflowDesigner.ZoomOut|Ctrl+Num -|
 
-##  <a name="bkmk_xamluidesigner"></a> XAML UI 設計工具
+## <a name="bkmk_xamluidesigner"></a> XAML UI 設計工具
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -1139,14 +1139,14 @@ ms.locfileid: "54760909"
 |View.EdgeRightMoveRight|Ctrl+Shift+Alt+.|
 |執行專案程式碼|Ctrl+F9|
 
-##  <a name="bkmk_xmlTextEditor"></a> XML (文字) 編輯器
+## <a name="bkmk_xmlTextEditor"></a> XML (文字) 編輯器
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
 |XML.StartXSLTDebugging|Alt+F5|
 |XML.StartXSLTWithoutDebugging|Ctrl+Alt+F5|
 
-##  <a name="bkmk_xmlSchemaDesigner"></a> XML 結構描述設計工具
+## <a name="bkmk_xmlSchemaDesigner"></a> XML 結構描述設計工具
 
 |命令|鍵盤快速鍵|
 |--------------|------------------------|
@@ -1160,4 +1160,4 @@ ms.locfileid: "54760909"
 |XsdDesigner.ShowStartView|Ctrl+1|
 
 ## <a name="see-also"></a>請參閱
- [圖示影像編輯器](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd)[使用 IntelliSense](../ide/using-intellisense.md)
+ [圖示影像編輯器](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd) [使用 IntelliSense](../ide/using-intellisense.md)

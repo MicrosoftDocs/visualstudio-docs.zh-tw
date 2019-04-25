@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: a38909eb0917b3ad5b02d5e953c17c950c7c819e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539149"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Managed 程式碼的程式碼分析概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組
 ## <a name="ide-integrated-development-environment-integration"></a>IDE (整合式開發環境) 整合  
  開發人員可以對專案自動執行程式碼分析，或者也可以手動執行分析。  
   
- 若要每次建置專案時都執行程式碼分析，請在專案的屬性頁上選取 [建置時啟用程式碼分析 (定義 CODE_ANALYSIS 常數)]。 如需詳細資訊，請參閱[＜How to：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。  
+ 若要每次建置專案時都執行程式碼分析，請在專案的屬性頁上選取 [建置時啟用程式碼分析 (定義 CODE_ANALYSIS 常數)]。 如需詳細資訊，請參閱[如何：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。  
   
- 若要在專案上手動執行程式碼分析，請在 [分析] 功能表上，按一下 [針對 _ProjectName_ 執行程式碼分析]。 如需詳細資訊，請參閱[＜How to：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。  
+ 若要在專案上手動執行程式碼分析，請在 [分析] 功能表上，按一下 [針對 _ProjectName_ 執行程式碼分析]。 如需詳細資訊，請參閱[如何：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。  
   
 ## <a name="rule-sets"></a>規則集  
  受控碼的程式碼分析規則會分組成「規則集」。 您可以使用其中一個 Microsoft 標準規則集，或建立自訂規則集來滿足特定需求。 如需詳細資訊，請參閱[使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。  

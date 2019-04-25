@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0b4870a17988c4f926e04aca24e50419c4a27165
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829953"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>模組檢視 - .NET 記憶體取樣資料
 使用取樣方法收集的 .NET 記憶體檢測資料模組檢視，會將記憶體資料依據分析執行中所執行的模組來分類。 每個模組都是階層式樹狀結構的根。 模組的函式列在模組節點之下。

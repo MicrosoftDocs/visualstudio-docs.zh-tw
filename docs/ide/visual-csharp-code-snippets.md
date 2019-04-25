@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: badd1ef796f1854f07043e775923c4d3f1480624
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581694"
 ---
 # <a name="c-code-snippets"></a>C# 程式碼片段
 
@@ -31,7 +31,7 @@ ms.locfileid: "55917840"
 
 Visual Studio for C# 中預設會包含下列程式碼片段。
 
-|名稱 (或捷徑)|描述|插入程式碼片段的有效位置|
+|名稱 (或捷徑)|說明|插入程式碼片段的有效位置|
 | - |-----------------| - |
 |#if|建立 [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) 指示詞和 [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif) 指示詞。|任何位置。|
 |#region|建立 [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) 指示詞和 [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion) 指示詞。|任何位置。|

@@ -12,21 +12,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a956c45db7d4929105ff665aaca0b2559b2f4426
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c6862493de844ad8108009a2103752122114ae6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553041"
 ---
 # <a name="cores-view-zoom-tool"></a>核心檢視縮放工具
 [縮放] 控制項是可讓您放大和縮小時間軸的滑桿，以專注在特別感興趣的區域。 此控制項會放大目前檢視的中心，以在放大之前調整檢視。
 
 ## <a name="other-ways-to-zoom"></a>其他縮放方式
 
--   放大：拖曳以選取時間軸檢視中的區域。 放開滑鼠按鈕之後，選取的範圍就會在時間軸檢視中放大。
+- 放大：拖曳以選取時間軸檢視中的區域。 放開滑鼠按鈕之後，選取的範圍就會在時間軸檢視中放大。
 
--   放大和縮小：將滑鼠指標放在時間軸上方，然後在移動滑鼠滾輪時按 **Ctrl** 鍵。
+- 放大和縮小：將滑鼠指標放在時間軸上方，然後在移動滑鼠滾輪時按 **Ctrl** 鍵。
 
 ## <a name="see-also"></a>另請參閱
 - [核心檢視](../profiling/cores-view.md)

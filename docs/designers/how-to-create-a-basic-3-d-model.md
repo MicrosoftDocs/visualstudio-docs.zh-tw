@@ -8,26 +8,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45944afe3c5ebd1baa307f6063b021c09fd6bfa6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1be8af11dd9b03b8c63d34b60e6af3c3c8147b48
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894181"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>HOW TO：建立基本 3D 模型
 
 本文會示範如何使用模型編輯器來建立基本的 3D 模型。 涵蓋下列活動：
 
--   將物件加入場景
+- 將物件加入場景
 
--   選取表面和邊緣
+- 選取表面和邊緣
 
--   轉譯選取項目
+- 轉譯選取項目
 
--   使用 [細分表面] 和 [使表面立體化] 工具
+- 使用 [細分表面] 和 [使表面立體化] 工具
 
--   使用 [分成三角形] 命令
+- 使用 [分成三角形] 命令
 
 ## <a name="create-a-basic-3d-model"></a>建立基本 3D 模型
  您可以使用模型編輯器來建立和修改遊戲或應用程式的 3D 模型和場景。 下列步驟示範如何使用模型編輯器來建立房屋的簡化 3D 模型。 簡化模型可當做仍在建立的最終藝術資產替身、當做網格用於衝突偵測，或當做低解析度模型，在所代表物件還不能受益於更高解析度的轉譯時使用。

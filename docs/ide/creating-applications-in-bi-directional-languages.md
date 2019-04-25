@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21851bc26ec69207c95a41e988b20b5df3c70c39
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: d09ad8644c30be76c38cf4b819d09ee1c470cb39
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793435"
 ---
 # <a name="create-applications-in-bidirectional-languages"></a>建立使用雙向語言的應用程式
 
@@ -28,11 +28,11 @@ ms.locfileid: "57567256"
 
 ## <a name="types-of-applications-that-support-bidirectional-languages"></a>支援雙向語言的應用程式類型
 
--  Windows 應用程式
+- Windows 應用程式
 
    您可以建立完整的雙向應用程式，以支援雙向文字、由右至左讀取順序及鏡像功能 (將視窗、功能表、對話方塊等配置反轉)。 除了鏡像功能以外，這些功能皆為預設提供或以屬性設定形式提供。 某些功能 (例如訊息方塊) 本身就支援鏡像， 但若為其他情況，則必須在程式碼中實作鏡像。 如需詳細資訊，請參閱 [Windows Forms 應用程式的雙向支援](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)。
 
--  Web 應用程式
+- Web 應用程式
 
    Web 服務支援 UTF-8 和 Unicode 文字的接收與傳送作業，因此非常適合使用雙向語言的應用程式。 Web 用戶端應用程式需仰賴瀏覽器來呈現其使用者介面；因此，Web 應用程式的雙向支援程度與使用者瀏覽器對這些雙向功能的支援程度相關。 在 Visual Studio 中，您可以建立支援阿拉伯文或希伯來文文字、由右至左的讀取順序、檔案編碼方式及當地文化特性設定的應用程式。 如需詳細資訊，請參閱 [ASP.NET Web 應用程式的雙向支援](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)。
 

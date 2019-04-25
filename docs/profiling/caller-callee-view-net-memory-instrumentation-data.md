@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 49b46c9d5fc3ee24b845e488752c15e70082c833
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777059"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>呼叫端/被呼叫端檢視 - .NET 記憶體檢測資料
 使用檢測方法收集之 .NET 記憶體分析資料的 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的配置和計時資料。 [呼叫端/被呼叫端] 檢視包含三個方格。

@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9751ce3b08a0ac963cccdf091ccb99001c6f2c9f
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785769"
 ---
 # <a name="modify-load-test-logging-settings"></a>修改負載測試記錄設定
 

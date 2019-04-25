@@ -18,21 +18,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd44ef0a239f85078856c785ea4b5e2e6050b46e
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789315"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>選項對話方塊、專案和方案、VC++ 專案設定
 此對話方塊可讓您定義與記錄、效能和支援檔案類型相關的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 組建和專案設定。
 
 ### <a name="to-access-this-dialog-box"></a>若要存取此對話方塊
 
-1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。
+1. 在 [ **工具** ] 功能表上按一下 [ **選項**]。
 
-2.  選取 [專案和方案]，然後選取 [VC++ 專案設定]。
+2. 選取 [專案和方案]，然後選取 [VC++ 專案設定]。
 
 ## <a name="build-logging"></a>建置記錄
  **是**

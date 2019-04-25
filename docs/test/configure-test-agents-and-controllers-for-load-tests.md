@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783920"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>設定用於執行負載測試的測試代理程式和測試控制器
 
@@ -27,11 +27,11 @@ Visual Studio 可以使用實體或虛擬機器產生應用程式適用的模擬
 
 負載模擬架構是由 Visual Studio 用戶端、測試控制器和測試代理程式所組成。
 
--   用戶端用來開發測試、執行測試以及檢視測試結果。
+- 用戶端用來開發測試、執行測試以及檢視測試結果。
 
--   測試控制器用來管理測試代理程式和收集測試結果。
+- 測試控制器用來管理測試代理程式和收集測試結果。
 
--   測試代理程式用來執行測試和收集資料 (包括系統資訊以及在測試設定中定義的 ASP.NET 分析資料)。
+- 測試代理程式用來執行測試和收集資料 (包括系統資訊以及在測試設定中定義的 ASP.NET 分析資料)。
 
 此架構提供下列優點：
 

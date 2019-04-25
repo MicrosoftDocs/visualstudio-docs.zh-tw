@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: f24e3460cb1298a36d0365781aa82cf55d8478d3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824787"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>使用 C++ 來安裝跨平台行動裝置應用程式開發
 

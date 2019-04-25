@@ -23,11 +23,11 @@ f1_keywords:
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: 4bb6f26fe40b639b43cb803577a785fa9b48823d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818943"
 ---
 # <a name="general-project-properties-android-c"></a>一般專案屬性 (Android C++)
 

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dc65b29bafd67fa8265feb75b533d66504d33c8
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: e166e28af02e3e9497b94cdf75a05bd9bf534629
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428621"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>識別及自訂 Visual Studio 中的鍵盤快速鍵
 
@@ -134,7 +134,7 @@ ms.locfileid: "57222057"
 
 5. 選擇 [下一步] 按鈕。
 
-6.  在 [您要匯入哪一個設定?] 下方，取消選取 [所有設定] 核取方塊，展開 [選項]，然後展開 [環境]。
+6. 在 [您要匯入哪一個設定?] 下方，取消選取 [所有設定] 核取方塊，展開 [選項]，然後展開 [環境]。
 
 7. 選取 [鍵盤] 核取方塊，然後選擇 [完成] 按鈕。
 

@@ -8,13 +8,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823917"
 ---
-# <a name="how-to-create-item-templates"></a>作法：建立項目範本
+# <a name="how-to-create-item-templates"></a>HOW TO：建立項目範本
 
 本文會向您示範如何使用 [匯出範本精靈] 建立項目範本。 如果您的範本中包含多個檔案，請參閱[如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)。
 

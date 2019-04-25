@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dcce2a7a505c5ac5aa1db3232055f8b37b7e64ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794384"
 ---
 # <a name="overviews-performance-tools"></a>概觀 (效能工具)
 本節提供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的概念與術語概觀；您可以使用這套工具來測量開發中應用程式的效能特性。
