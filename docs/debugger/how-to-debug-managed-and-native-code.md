@@ -16,11 +16,11 @@ ms.workload:
 - dotnet
 - cplusplus
 ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847891"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教學課程：在同一個偵錯工作階段中進行 C# 和 C++ 偵錯
 
@@ -50,7 +50,7 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 
 ## <a name="create-a-simple-native-dll"></a>建立簡單的原生 DLL
 
-**建立 DLL 專案的檔案：**
+**若要建立 DLL 專案檔：**
 
 1. 開啟 Visual Studio 並建立專案。
 
@@ -106,7 +106,7 @@ Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，
 
 1. 選取 [檔案] > [全部儲存]，或按 **Ctrl**+**Shift**+**S** 以儲存檔案。
 
-**設定並建置 DLL 專案：**
+**若要設定並建置 DLL 專案：**
 
 1. 在 Visual Studio 工具列中，選取 [偵錯] 組態，然後選取 [x86] 或 [x64] 平台。 如果您的呼叫應用程式將會是一律是在 64 位元模式執行的 .NET Core，請選取 [x64] 作為平台。
 

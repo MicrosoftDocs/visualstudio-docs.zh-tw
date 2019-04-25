@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684e638d1a2e69d48381964272294999d43c5242
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c8bb8bc743aea29219edc8db9c0c52bf839954a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790644"
 ---
 # <a name="file-properties-javascript"></a>JavaScript、檔案屬性
 您可以使用檔案屬性，指出專案系統應該對檔案執行哪些動作。 例如，您可以設定檔案屬性，指出是否應該將檔案新增至套件以作為資源檔。
@@ -46,13 +46,13 @@ ms.locfileid: "55956762"
 ### <a name="package-action"></a>套件動作
  [套件動作] 屬性指出 Visual Studio 在執行組建時對檔案執行的動作。 [套件動作] 可以有數個值之一：
 
--   **無**：檔案未包含在套件資訊清單中。 範例是包含讀我檔案這類文件的文字檔。
+- **無**：檔案未包含在套件資訊清單中。 範例是包含讀我檔案這類文件的文字檔。
 
--   **內容**：檔案包含在套件資訊清單中。 例如，此設定是 .htm、.js、.css、影像、音訊或視訊檔案的預設值。
+- **內容**：檔案包含在套件資訊清單中。 例如，此設定是 .htm、.js、.css、影像、音訊或視訊檔案的預設值。
 
--   **資訊清單**：檔案未包含在套件資訊清單中。 相反地，產生套件資訊清單時，檔案是用於輸入。 這是 package.appxmanifest 檔案的預設值。
+- **資訊清單**：檔案未包含在套件資訊清單中。 相反地，產生套件資訊清單時，檔案是用於輸入。 這是 package.appxmanifest 檔案的預設值。
 
--   **資源**：檔案未包含在套件資訊清單中。 相反地，會以進入套件資訊清單的套件資源索引 (PRI) 編製檔案內容的索引。 這通常用於資源檔。
+- **資源**：檔案未包含在套件資訊清單中。 相反地，會以進入套件資訊清單的套件資源索引 (PRI) 編製檔案內容的索引。 這通常用於資源檔。
 
 [套件動作] 的預設值取決於您新增至方案之檔案的副檔名。
 

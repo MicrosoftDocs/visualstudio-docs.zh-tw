@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: df0955cc86ef3b57885234fe4e7b1a52fa37f950
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 43153f86ca9ee9a26465ad910b6918aee5292a87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431195"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>自動程式碼 UI 測試和動作記錄的支援組態和平台
 
@@ -27,7 +27,7 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
 
 **需求**
 
--   Visual Studio 企業版
+- Visual Studio 企業版
 
 ## <a name="supported-configurations"></a>支援的設定
 
@@ -40,7 +40,6 @@ Visual Studio 企業版的自動程式碼 UI 測試的支援組態與平台會�
 
 > [!NOTE]
 > 「*UI 同步處理* 」(UI Synchronization) 功能可在每個控制項的訊息佇列中驗證播放。 如果控制項沒有回應傳送至它的事件，則會重新傳送事件。
-
 
 ## <a name="platform-support"></a>平台支援
 

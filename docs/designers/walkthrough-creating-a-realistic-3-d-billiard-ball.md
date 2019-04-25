@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 241416a8c874a131b4c766bc0a707019d9ea12f1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f5788b2c6b2dab4b6f0f7a6c520aa1f2ab5f9ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844615"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>逐步解說：建立逼真的 3D 撞球
 
@@ -23,11 +23,11 @@ ms.locfileid: "55946150"
 
 您需要下列元件和技能才能完成此逐步解說：
 
--   將紋理組合至立方體貼圖的工具，例如隨附於 DirectX SDK 2010 年 6 月版的 DirectX 紋理工具。
+- 將紋理組合至立方體貼圖的工具，例如隨附於 DirectX SDK 2010 年 6 月版的 DirectX 紋理工具。
 
--   熟悉 Visual Studio 的影像編輯器。
+- 熟悉 Visual Studio 的影像編輯器。
 
--   熟悉 Visual Studio 的著色器設計工具。
+- 熟悉 Visual Studio 的著色器設計工具。
 
 ## <a name="create-the-basic-appearance-with-shape-and-texture"></a>使用圖形和紋理建立基本的外觀
 

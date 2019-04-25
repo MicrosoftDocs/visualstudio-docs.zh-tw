@@ -9,11 +9,11 @@ ms.author: gewarren
 ms.workload:
 - multiple
 ms.openlocfilehash: d18ca688c1eac02fc2b24c3f8cb0f9551e4939ae
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430291"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>使用 Visual Studio 來撰寫和管理程式碼
 

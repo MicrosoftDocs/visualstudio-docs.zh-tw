@@ -1,5 +1,5 @@
 ---
-title: 作法：指定其他的檢測選項 | Microsoft Docs
+title: HOW TO：指定其他的檢測選項 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c95add435824663e798d226e0be11ddbe06b8aba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539136"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>作法：指定其他的檢測選項
+# <a name="how-to-specify-additional-instrumentation-options"></a>HOW TO：指定其他的檢測選項
 
 您可以使用 Visual Studio IDE 或使用命令列工具來檢測二進位檔。 如果是從 IDE 中檢測二進位檔，您可以為 [VSInstr](../profiling/vsinstr.md) 工具指定其他的檢測選項，藉以控制檢測期間所收集的資料量。 這些選項可以在工作階段或目標層級中使用。 例如，若要在檢測程序期間包含或排除特定函式，請在目標層級使用其他的檢測選項。
 
@@ -37,7 +37,7 @@ ms.locfileid: "56618675"
 
      例如，使用 /CONTROL:THREAD 以指定程式碼剖析層級。 如需選項的完整清單，請參閱 [VSInstr](../profiling/vsinstr.md)。
 
-4. 按一下 [確定 **Deploying Office Solutions**]。
+4. 按一下 [確定]。
 
 ## <a name="see-also"></a>另請參閱
 

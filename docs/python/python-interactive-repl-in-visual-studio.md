@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bc813868f3284ad81849e3a03d864de65d9f54ed
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896892"
 ---
 # <a name="work-with-the-python-interactive-window"></a>使用 Python 互動式視窗
 
@@ -77,7 +77,7 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 | --- | --- |
 | `$$` | 插入註解，這對於在工作階段期間為程式碼做出註解非常有用。 |
 | `$attach` | 將 Visual Studio 偵錯工具附加至 REPL 視窗程序以啟用偵錯。 |
-| `$cls`, `$clear` | 清除編輯視窗的內容，但不變更記錄和執行內容。 |
+| `$cls`、 `$clear` | 清除編輯視窗的內容，但不變更記錄和執行內容。 |
 | `$help` | 顯示命令清單，或特定命令的說明。 |
 | `$load` | 從檔案載入命令並執行，直到完成為止。 |
 | `$mod` | 將目前的範圍切換到指定的模組名稱。 |

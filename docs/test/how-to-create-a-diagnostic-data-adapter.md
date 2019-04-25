@@ -1,5 +1,5 @@
 ---
-title: 作法：建立診斷資料配接器
+title: HOW TO：建立診斷資料配接器
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,14 +8,14 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950728"
 ---
-# <a name="how-to-create-a-diagnostic-data-adapter"></a>作法：建立診斷資料配接器
+# <a name="how-to-create-a-diagnostic-data-adapter"></a>HOW TO：建立診斷資料配接器
 
 若要建立「診斷資料配接器」，您可以使用 Visual Studio 建立類別庫，然後將 Visual Studio Enterprise 提供的診斷資料配接器 API 新增類別庫。 在處理測試回合期間引發的事件時，請以資料流或檔案的形式將您所需要的資訊傳送至架構所提供的 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>。 測試完成時，傳送至 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> 的資料流或檔案會儲存為測試結果的附件。 如果從這些測試結果建立 Bug，或當使用[!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]時，檔案也會連結至 Bug。
 
@@ -54,19 +54,19 @@ ms.locfileid: "58416319"
 
 2. 新增組件 **Microsoft.VisualStudio.QualityTools.ExecutionCommon**。
 
-   1.  在 [方案總管] 中，以滑鼠右鍵按一下 [參考]，然後選擇 [新增參考] 命令。
+   1. 在 [方案總管] 中，以滑鼠右鍵按一下 [參考]，然後選擇 [新增參考] 命令。
 
-   2.  選擇 [.NET] 並尋找 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**。
+   2. 選擇 [.NET] 並尋找 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**。
 
-   3.  選擇 [確定] 。
+   3. 選擇 [確定] 。
 
 3. 新增組件 **Microsoft.VisualStudio.QualityTools.Common**。
 
-   1.  在 [方案總管] 中，以滑鼠右鍵按一下 [參考]，然後選取 [新增參考] 命令。
+   1. 在 [方案總管] 中，以滑鼠右鍵按一下 [參考]，然後選取 [新增參考] 命令。
 
-   2.  選擇 [/.NET]，尋找 **Microsoft.VisualStudio.QualityTools.Common.dll**。
+   2. 選擇 [/.NET]，尋找 **Microsoft.VisualStudio.QualityTools.Common.dll**。
 
-   3.  選擇 [確定] 。
+   3. 選擇 [確定] 。
 
 4. 將下列 `using` 陳述式加入至類別檔：
 

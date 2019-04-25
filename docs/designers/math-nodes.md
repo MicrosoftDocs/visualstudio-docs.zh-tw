@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 43809923b730800cfa71185b136743f3098239e1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844238"
 ---
 # <a name="math-nodes"></a>數學節點
 
@@ -24,7 +24,7 @@ ms.locfileid: "55952087"
 
 ## <a name="math-node-reference"></a>數學節點參考
 
-|節點|Details|屬性|
+|節點|詳細資料|屬性|
 |----------|-------------|----------------|
 |**Abs**|根據每個元件計算指定輸入的絕對值。<br /><br /> 對於輸入 `X` 的每個元件，負值都會轉成正值，以讓結果的每個元件都有正值。<br /><br /> **輸入：**<br /><br /> `X`：`float`、`float2`、`float3` 或 `float4`<br /> 這些值可以決定絕對值。<br /><br /> `Output:`<br /><br /> `Output`：與輸入 `X` 相同<br /> 依每個元件而定的絕對值。|無|
 |**[新增]**|根據每個元件計算指定輸入的整體元件總和。<br /><br /> 對於結果的每個元件，會將輸入 `X` 與輸入 `Y` 的對應元件相加。<br /><br /> **輸入：**<br /><br /> `X`：`float`、`float2`、`float3` 或 `float4`<br /> 要相加的其中一個值。<br /><br /> `Y`：與輸入 `X` 相同<br /> 要相加的其中一個值。<br /><br /> **輸出：**<br /><br /> `Output`：與輸入 `X` 相同<br /> 每個元件的總和。|無|

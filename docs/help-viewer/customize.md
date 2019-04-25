@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e416a0dc91cfd4bd77983f1e0e5d215a85ee1f27
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557459"
 ---
 # <a name="customize-the-help-viewer"></a>自訂說明檢視器
 您可以自訂說明檢視器視窗的版面配置，以及其他選項，例如字型大小、結果數目上限，以及是否要包含英文內容。

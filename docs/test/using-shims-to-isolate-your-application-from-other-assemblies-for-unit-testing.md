@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 74600a68d8759a70c600dfb1fbcafc06aabdb6ef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0274ecbbe89d35c1bc12651dd234632c973e1a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808115"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>使用填充碼將應用程式與其他組件隔離，方便進行單元測試
 
@@ -24,8 +24,8 @@ ms.locfileid: "55908662"
 
 **需求**
 
--   Visual Studio 企業版
--   .NET Framework 專案
+- Visual Studio 企業版
+- .NET Framework 專案
 
 > [!NOTE]
 > 不支援 .NET Standard 專案。
@@ -61,19 +61,19 @@ using (ShimsContext.Create()) {
 }
 ```
 
-##  <a name="how-to-use-shims"></a>如何使用填充碼
+## <a name="how-to-use-shims"></a>如何使用填充碼
 
-###  <a name="AddFakes"></a> 新增 Fakes 組件
+### <a name="AddFakes"></a> 新增 Fakes 組件
 
-1.  在 [方案總管] 中，展開單元測試專案的 [參考]。
+1. 在 [方案總管] 中，展開單元測試專案的 [參考]。
 
-    -   如果您在 Visual Basic 中工作，選取 [方案總管] 工具列中的 [顯示所有檔案]，才能看見 [參考] 節點。
+    - 如果您在 Visual Basic 中工作，選取 [方案總管] 工具列中的 [顯示所有檔案]，才能看見 [參考] 節點。
 
-2.  選取包含您要用於建立填充碼之類別定義的組件。 例如，如果您要填充**日期時間**，請選取 **System.dll**。
+2. 選取包含您要用於建立填充碼之類別定義的組件。 例如，如果您要填充**日期時間**，請選取 **System.dll**。
 
-3.  在捷徑功能表上，選擇 [新增 Fakes 組件]。
+3. 在捷徑功能表上，選擇 [新增 Fakes 組件]。
 
-###  <a name="ShimsContext"></a> 使用 ShimsContext
+### <a name="ShimsContext"></a> 使用 ShimsContext
 
 在單元測試架構中使用填充碼類型時，您必須包裝 `ShimsContext` 中的測試程式碼，藉此控制填充碼的存留期。 如果我們不要求這樣做，您的填充碼可能會持續存在，直到 AppDomain 關閉為止。 建立 `ShimsContext` 的最簡單方式為使用靜態 `Create()` 方法，如下列程式碼所示：
 
@@ -89,7 +89,7 @@ public void Y2kCheckerTest() {
 
 請務必適當處置每個填充碼內容。 根據經驗法則，請一律呼叫 `using` 陳述式內的 `ShimsContext.Create`，以確保適當清除已註冊的填充碼。 例如，您可能會註冊測試方法的填充碼，將 `DateTime.Now` 方法取代成永遠都會傳回 2000 年 1 月 1 日的委派。 如果您忘記清除在測試方法中註冊的填充碼，則測試回合的其餘部分一定會傳回 2000 年 1 月 1 日做為 DateTime.Now 的值。 這可能會讓人感到意外和混淆。
 
-###  <a name="WriteShims"></a> 撰寫含填充碼的測試
+### <a name="WriteShims"></a> 撰寫含填充碼的測試
 
 在您的測試程式碼中，請插入您要假造之方法的「繞道」。 例如：
 
@@ -158,11 +158,11 @@ End Class
 
 您可能會看到建置錯誤，指出 Fakes 命名空間不存在。 當有其他的編譯錯誤時，有時候會出現這個錯誤。 請修正其他錯誤，該錯誤也將消失。
 
-##  <a name="BKMK_Shim_basics"></a> 不同方法類型的填充碼
+## <a name="BKMK_Shim_basics"></a> 不同方法類型的填充碼
 
 填充碼類型可讓您用自己的委派取代所有 .NET 方法，包含靜態方法或非虛擬方法。
 
-###  <a name="BKMK_Static_methods"></a> 靜態方法
+### <a name="BKMK_Static_methods"></a> 靜態方法
 
 要附加填充碼到靜態方法的屬性放置於填充碼類型中。 每個屬性都只有一個 Setter 可以用來附加委派至目標方法。 例如，給定一個具有 `MyMethod` 靜態方法的 `MyClass` 類別：
 
@@ -182,7 +182,7 @@ public static class MyClass {
 ShimMyClass.MyMethod = () =>5;
 ```
 
-###  <a name="BKMK_Instance_methods__for_all_instances_"></a> 執行個體方法 (針對所有執行個體)
+### <a name="BKMK_Instance_methods__for_all_instances_"></a> 執行個體方法 (針對所有執行個體)
 
 與靜態方法類似，執行個體方法可針對所有執行個體填充。 附加這些填充碼的屬性放置在名為 AllInstances 的巢狀類型以避免混淆。 例如，給定一個具有 `MyMethod` 執行個體方法的 `MyClass` 類別：
 
@@ -219,7 +219,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
 請注意在這種情況下，Fakes 會將執行階段執行個體做為委派的第一個引數傳遞。
 
-###  <a name="BKMK_Instance_methods__for_one_instance_"></a> 執行個體方法 (針對某一個執行階段執行個體)
+### <a name="BKMK_Instance_methods__for_one_instance_"></a> 執行個體方法 (針對某一個執行階段執行個體)
 
 根據呼叫的接收器，執行個體方法可以由不同的委派來填充。 這可讓相同的執行個體方法對於每種類型的執行個體具有不同行為。 設定這些填充碼的屬性是此填充碼類型本身的執行個體方法。 每一個具現化的填充碼類型也與已填充類型之未經處理的執行個體相關聯。
 
@@ -280,7 +280,7 @@ MyClass instance = shim; // implicit cast retrieves the runtime
                          // instance
 ```
 
-###  <a name="BKMK_Constructors"></a> 建構函式
+### <a name="BKMK_Constructors"></a> 建構函式
 
 也可以填充建構函式，用來將填充碼類型附加到未來的物件。 會將每個建構函式公開為此填充碼類型中的靜態方法建構函式。 例如，給定一個具有接受整數之建構函式的 `MyClass` 類別：
 
@@ -331,7 +331,7 @@ public class ShimMyClass : ShimBase<MyClass>
 }
 ```
 
-###  <a name="BKMK_Base_members"></a> 基底成員
+### <a name="BKMK_Base_members"></a> 基底成員
 
 藉由建立基底類型的填充碼，和藉由將子執行個體作為參數傳遞至此基底填充碼類別的建構函式，基底成員的填充碼屬性可以進行存取。
 
@@ -374,19 +374,19 @@ public class ShimMyBase : ShimBase<MyBase> {
 }
 ```
 
-###  <a name="BKMK_Static_constructors"></a> 靜態建構函式
+### <a name="BKMK_Static_constructors"></a> 靜態建構函式
 
 填充碼類型會公開靜態方法 `StaticConstructor`，藉此填充類型的靜態建構函式。 因為靜態建構函式只能執行一次，您必須確保在存取該類型的任何成員之前，已設定填充碼。
 
-###  <a name="BKMK_Finalizers"></a> 完成項
+### <a name="BKMK_Finalizers"></a> 完成項
 
 完成項在 Fakes 中並不支援。
 
-###  <a name="BKMK_Private_methods"></a> 私用方法
+### <a name="BKMK_Private_methods"></a> 私用方法
 
 針對在簽章中只有可見類型的私用方法 (亦即可見的參數類型與傳回類型)，Fakes 程式碼產生器會建立這類私用方法的填充碼屬性。
 
-###  <a name="BKMK_Binding_interfaces"></a> 繫結介面
+### <a name="BKMK_Binding_interfaces"></a> 繫結介面
 
 當已填充的類型實作介面時，程式碼產生器會發出允許同時繫結該介面所有成員的方法。
 
@@ -420,7 +420,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 }
 ```
 
-##  <a name="change-the-default-behavior"></a>變更預設行為
+## <a name="change-the-default-behavior"></a>變更預設行為
 
 每個產生的填充碼類別均會保留一個 `IShimBehavior` 介面的執行個體 (透過 `ShimBase<T>.InstanceBehavior` 屬性)。 每當用戶端呼叫沒有明確填充的執行個體成員時，便會使用此行為。
 
@@ -445,7 +445,7 @@ ShimsBehaviors.Current =
     ShimsBehaviors.DefaultValue;
 ```
 
-##  <a name="detect-environment-accesses"></a>偵測環境存取
+## <a name="detect-environment-accesses"></a>偵測環境存取
 
 可附加行為至所有特定類型的成員，包含靜態方法，方法是藉由將 `ShimsBehaviors.NotImplemented` 行為指定為相對應填充碼類型的靜態屬性 `Behavior`：
 
@@ -457,11 +457,11 @@ ShimMyClass.Behavior = ShimsBehaviors.NotImplemented;
 ShimMyClass.BehaveAsNotImplemented();
 ```
 
-##  <a name="BKMK_Concurrency"></a>並行
+## <a name="BKMK_Concurrency"></a>並行
 
 填充碼類型適用於在 AppDomain 中的所有執行緒，且沒有執行緒相似性。 如果您打算使用可支援並行的測試執行器，這會是項重要的事實：涉及填充碼類型的測試不能同時執行。 這個屬性不是由 Fakes 執行階段強制設定的。
 
-##  <a name="call-the-original-method-from-the-shim-method"></a>從填充碼方法呼叫原始方法
+## <a name="call-the-original-method-from-the-shim-method"></a>從填充碼方法呼叫原始方法
 
 假設我們驗證完傳遞給方法的檔案名稱之後，要在檔案系統實際寫入文字。 在這種情況下，我們可能會想要在填充碼方法中呼叫原始方法。
 
@@ -502,7 +502,7 @@ shim = (fileName, content) => {
 ShimFile.WriteAllTextStringString = shim;
 ```
 
-##  <a name="BKMK_Limitations"></a> 限制
+## <a name="BKMK_Limitations"></a> 限制
 
 填充碼在來自 .NET 基底類別庫 **mscorlib** 和 **System** 的類型上並非全部都能使用。
 

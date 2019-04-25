@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f720e842bb1f13aa726773af0dec499d32bfcc2d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838785"
 ---
 # <a name="convert-dialog-box"></a>轉換對話方塊
 

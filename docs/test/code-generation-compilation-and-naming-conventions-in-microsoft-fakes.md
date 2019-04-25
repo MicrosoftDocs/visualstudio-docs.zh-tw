@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5366e33da9af7a845a7f5e5a5e3a901b7d091fa3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9685d1621f0e81adbbb034c250974b7bc9b36993
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822757"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的程式碼產生、編譯和命名慣例
 
@@ -20,8 +20,8 @@ ms.locfileid: "55947338"
 
 **需求**
 
--   Visual Studio 企業版
--   .NET Framework 專案
+- Visual Studio 企業版
+- .NET Framework 專案
 
 > [!NOTE]
 > 不支援 .NET Standard 專案。
@@ -62,23 +62,23 @@ ms.locfileid: "55947338"
 
 篩選字串會使用簡單文法定義應該如何完成比對：
 
--   篩選條件預設不區分大小寫；篩選條件會執行子字串比對：
+- 篩選條件預設不區分大小寫；篩選條件會執行子字串比對：
 
      `el` 比對 "hello"
 
--   將 `!` 新增至篩選條件結尾會讓它變成精確區分大小寫的比對：
+- 將 `!` 新增至篩選條件結尾會讓它變成精確區分大小寫的比對：
 
      `el!` 不符合 "hello"
 
      `hello!` 比對 "hello"
 
--   將 `*` 新增至篩選條件的結尾會讓它符合字串的前置詞：
+- 將 `*` 新增至篩選條件的結尾會讓它符合字串的前置詞：
 
      `el*` 不符合 "hello"
 
      `he*` 比對符合 "hello"
 
--   以分號分隔之清單中的多個篩選條件會結合為分離：
+- 以分號分隔之清單中的多個篩選條件會結合為分離：
 
      `el;wo` 比對符合 "hello" 和 "world"
 
@@ -114,9 +114,9 @@ Fakes 程式碼產生器會針對所產生之 Fakes 組件的可見類型產生�
 
  如果填充組件為強式名稱，而且您想要存取組件的內部類型：
 
--   您的測試組件和 Fakes 組件都必須具有強式名稱。
+- 您的測試組件和 Fakes 組件都必須具有強式名稱。
 
--   請將測試的公開金鑰和 Fakes 組件新增至填充組件的 **InternalsVisibleToAttribute** 屬性。 以下說明在填充組件以強式名稱命名時，填充組件程式碼中的範例屬性樣貌：
+- 請將測試的公開金鑰和 Fakes 組件新增至填充組件的 **InternalsVisibleToAttribute** 屬性。 以下說明在填充組件以強式名稱命名時，填充組件程式碼中的範例屬性樣貌：
 
     ```csharp
     // FileSystem\AssemblyInfo.cs
@@ -161,19 +161,19 @@ Fakes 架構會使用相同金鑰來簽署所有產生的組件，因此，您�
 
 從單元測試專案中，請新增已編譯 Fakes 組件的參考，這些組件是放置在專案資料夾中的 FakesAssemblies 底下。
 
-1.  建立 .NET 執行階段版本與測試專案相符的新類別庫， 並稱它為 Fakes.Prebuild。 從專案刪除不需要的 *class1.cs* 檔。
+1. 建立 .NET 執行階段版本與測試專案相符的新類別庫， 並稱它為 Fakes.Prebuild。 從專案刪除不需要的 *class1.cs* 檔。
 
-2.  將參考加入您所需之 Fakes 的所有系統和協力廠商組件。
+2. 將參考加入您所需之 Fakes 的所有系統和協力廠商組件。
 
-3.  為每個組件和組建新增 *.fakes* 檔案。
+3. 為每個組件和組建新增 *.fakes* 檔案。
 
-4.  從您的測試專案
+4. 從您的測試專案
 
-    -   確定您有 Fakes 執行階段 DLL 的參考：
+    - 確定您有 Fakes 執行階段 DLL 的參考：
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   對於您已建立 Fakes 的每個組件，新增專案之 *Fakes.Prebuild\FakesAssemblies* 資料夾中對應 DLL 檔案的參考。
+    - 對於您已建立 Fakes 的每個組件，新增專案之 *Fakes.Prebuild\FakesAssemblies* 資料夾中對應 DLL 檔案的參考。
 
 ### <a name="avoid-assembly-name-clashing"></a>避免組件名稱發生衝突
 
@@ -270,9 +270,9 @@ attribute of the Assembly element in the .fakes:
 
 下列規則會遞迴套用：
 
--   由於 Fakes 會使用 C# 來產生 Fakes 組件，因此任何會產生無效 C# 語彙基元的字元都會逸出為 "_" (底線)。
+- 由於 Fakes 會使用 C# 來產生 Fakes 組件，因此任何會產生無效 C# 語彙基元的字元都會逸出為 "_" (底線)。
 
--   如果產生的名稱與宣告類型的任何成員發生衝突，則會使用編號配置，方法是附加兩位數計數器，從 01 開始。
+- 如果產生的名稱與宣告類型的任何成員發生衝突，則會使用編號配置，方法是附加兩位數計數器，從 01 開始。
 
 ## <a name="see-also"></a>另請參閱
 

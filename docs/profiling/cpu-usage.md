@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553498"
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 使用量
 
@@ -31,7 +31,7 @@ ms.locfileid: "59366753"
 >[!NOTE]
 >需要 Windows 7 或更新版本才能使用[效能分析工具](../profiling/profiling-feature-tour.md)。
 
-##  <a name="collect-cpu-usage-data"></a>收集 CPU 使用量資料
+## <a name="collect-cpu-usage-data"></a>收集 CPU 使用量資料
 
 1. 在 Visual Studio 專案中，將方案組態設定為 [發行] 並選取 [本機電腦] 作為部署目標。
 
@@ -51,7 +51,6 @@ ms.locfileid: "59366753"
 
    ![CPU 使用量報表](../profiling/media/cpu_use_wt_report.png "CPU 使用量報表")
 
-
 ## <a name="analyze-the-cpu-usage-report"></a>分析 CPU 使用量報告
 
 診斷報表的排序是依據 [CPU 總計]，從最高到最低。 選取資料行標頭，即可變更排序順序或排序資料行。 使用 [篩選條件] 下拉式清單來選取或取消選取要顯示的執行緒，並使用 [搜尋] 方塊來搜尋特定執行緒或節點。
@@ -60,19 +59,19 @@ ms.locfileid: "59366753"
 從 Visual Studio 2019 開始，您可以按一下 [展開最忙碌路徑] 和 [顯示最忙碌路徑] 按鈕，以查看在呼叫樹狀檢視中使用最高 CPU 百分比的函式呼叫。
 ::: moniker-end
 
-###  <a name="BKMK_Call_tree_data_columns"></a> [CPU 使用量] 資料行
+### <a name="BKMK_Call_tree_data_columns"></a> [CPU 使用量] 資料行
 
 |||
 |-|-|
 |**CPU 總計 [單位, %]**|![總計 % 資料方程式](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 在選取的時間範圍內，呼叫函式和該函式所呼叫函式使用的毫秒數及 CPU 百分比。 這與 [CPU 使用率]  時間軸圖表不同，其會將時間範圍內的 CPU 活動總計與可用的 CPU 總計進行比較。|
 |**自我 CPU [單位, %]**|![自我 % 方程式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 在選取的時間範圍內，呼叫函式使用的毫秒數及 CPU 百分比，不包含函式所呼叫的函式。|
-|**Module**|包含函式的模組名稱。
+|**模組**|包含函式的模組名稱。
 
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用量呼叫樹狀圖
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用量呼叫樹狀圖
 
 若要檢視呼叫樹狀結構，請在報表中選取父節點。 [CPU 使用量] 頁面會開啟至 [呼叫者/被呼叫者] 檢視。 在 [目前的檢視] 下拉式清單中，選取 [呼叫樹狀結構]。
 
-####  <a name="BKMK_Call_tree_structure"></a> 呼叫樹狀圖結構
+#### <a name="BKMK_Call_tree_structure"></a> 呼叫樹狀圖結構
 
 ::: moniker range=">=vs-2019"
 ![呼叫樹狀結構](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "呼叫樹狀結構")
@@ -88,7 +87,7 @@ ms.locfileid: "59366753"
 |![步驟 3](../profiling/media/procguid_3.png "ProcGuid_3")|第二層節點的子系是第二層系統和 Framework 程式碼所呼叫或建立的使用者程式碼方法和非同步常式。|
 |![步驟 4](../profiling/media/procguid_4.png "ProcGuid_4")|某個方法的子節點只有父方法呼叫的資料。 停用 [顯示外部程式碼]  時，應用程式方法也可包含 [外部程式碼]  節點。|
 
-####  <a name="BKMK_External_Code"></a> 外部程式碼
+#### <a name="BKMK_External_Code"></a> 外部程式碼
 
 您程式碼所執行的系統和架構函式稱為「外部程式碼」。 外部程式碼函式會啟動和停止應用程式、繪製 UI、控制執行緒，以及將其他低階服務提供給應用程式。 在大多數情況下，您對外部程式碼並不感興趣，因此 [CPU 使用量] 呼叫樹狀結構會將使用者方法的外部函式，收集成一個 [外部程式碼] 節點。
 
@@ -109,7 +108,7 @@ ms.locfileid: "59366753"
 ![搜尋巢狀外部程式碼](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "搜尋巢狀外部程式碼")
 ::: moniker-end
 
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用量呼叫樹狀圖中的非同步函式
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用量呼叫樹狀圖中的非同步函式
 
  當編譯器發現非同步方法時，它會建立隱藏的類別來控制方法的執行。 就概念而言，類別是狀態機器。 類別具有編譯器產生的函式，以非同步方式呼叫原始方法，以及若要執行它們所需的回呼、排程器和迭代器。 父方法呼叫原始方法時，編譯器會從父代的執行內容移除該方法，並在控制應用程式執行的系統和架構程式碼內容中執行隱藏類別方法。 非同步方法通常 (但不一定永遠) 會在一個或多個不同的執行緒上執行。 這段程式碼會在 [CPU 使用量] 呼叫樹狀結構中，顯示為樹狀結構最上層節點正下方 [外部程式碼] 節點的子系。
 
@@ -125,4 +124,4 @@ ms.locfileid: "59366753"
 
 - `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` 會顯示排程和啟動將呼叫包裝至 `GetNumberAsync`之 48 項工作所需的活動。
 
-- `MainPage::<GetNumberAsync>b__b` 會顯示呼叫 `GetNumber` 之工作的活動。
+- `MainPage::<GetNumberAsync>b__b` 會顯示呼叫 `GetNumber`之工作的活動。

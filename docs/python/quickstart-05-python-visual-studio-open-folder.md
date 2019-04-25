@@ -12,11 +12,11 @@ ms.workload:
 - data-science
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431066"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>快速入門：在資料夾中開啟及執行 Python 程式碼
 
@@ -112,5 +112,5 @@ ms.locfileid: "59366116"
 ## <a name="see-also"></a>另請參閱
 
 - [快速入門：從現有程式碼建立 Python 專案](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
-- [快速入門：從存放庫建立 Python 專案](quickstart-03-python-in-visual-studio-project-from-repository.md)
+- [快速入門：從存放庫 ](quickstart-03-python-in-visual-studio-project-from-repository.md) 建立 Python 專案
 - [手動識別現有的 Python 解譯器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

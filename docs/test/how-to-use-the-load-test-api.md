@@ -10,12 +10,12 @@ ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73c99d4a7d1ff15b8cbd1cff8a4fd18d8f41bccc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 47707e0430d51a754f7e458ebf68e08124c1e7b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821492"
 ---
 # <a name="how-to-use-the-load-test-api"></a>HOW TO：使用負載測試 API
 
@@ -26,31 +26,31 @@ Visual Studio 支援能夠控制或增強負載測試的負載測試外掛程式
 > [!TIP]
 > 使用物件瀏覽器檢查 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 命名空間。 Visual C# 和 Visual Basic 編輯器都提供 IntelliSense 支援，以便使用命名空間中的類別來撰寫程式碼。
 
-您也可以建立 Web 效能測試的外掛程式。 如需詳細資訊，請參閱[＜How to：建立 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)和[如何：建立要求層級外掛程式](../test/how-to-create-a-request-level-plug-in.md)。
+您也可以建立 Web 效能測試的外掛程式。 如需詳細資訊，請參閱[如何：建立 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)和[如何：建立要求層級外掛程式](../test/how-to-create-a-request-level-plug-in.md)。
 
 ## <a name="to-use-the-loadtesting-namespace"></a>若要使用 LoadTesting 命名空間
 
-1.  開啟包含負載測試的 Web 效能和負載測試專案。
+1. 開啟包含負載測試的 Web 效能和負載測試專案。
 
-2.  將 Visual C# 或 Visual Basic 類別庫專案加入至測試方案。
+2. 將 Visual C# 或 Visual Basic 類別庫專案加入至測試方案。
 
-3.  將 Web 效能和負載測試專案的參考加入至類別庫專案。
+3. 將 Web 效能和負載測試專案的參考加入至類別庫專案。
 
-4.  將參考加入至「類別庫」專案中的 Microsoft.VisualStudio.QualityTools.LoadTestFramework DLL。
+4. 將參考加入至「類別庫」專案中的 Microsoft.VisualStudio.QualityTools.LoadTestFramework DLL。
 
-5.  在類別庫專案的類別檔中，為 `using` 命名空間加入 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 陳述式。
+5. 在類別庫專案的類別檔中，為 `using` 命名空間加入 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 陳述式。
 
-6.  建立實作 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 介面的公用類別。
+6. 建立實作 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 介面的公用類別。
 
-7.  建置專案。
+7. 建置專案。
 
-8.  使用 [負載測試編輯器] 加入新的負載測試外掛程式。
+8. 使用 [負載測試編輯器] 加入新的負載測試外掛程式。
 
-    1.  以滑鼠右鍵按一下負載測試的根節點，然後選擇 [新增負載測試外掛程式]。
+    1. 以滑鼠右鍵按一下負載測試的根節點，然後選擇 [新增負載測試外掛程式]。
 
-    2.  [新增負載測試外掛程式] 對話方塊隨即顯示。
+    2. [新增負載測試外掛程式] 對話方塊隨即顯示。
 
-    3.  在 [所選外掛程式的屬性] 窗格中，設定外掛程式要在執行階段中使用的初始值。
+    3. 在 [所選外掛程式的屬性] 窗格中，設定外掛程式要在執行階段中使用的初始值。
 
         > [!NOTE]
         > 您可以從外掛程式公開任意數目的屬性，只要讓這些屬性成為公用、可設定且屬於基底型別 (例如整數、布林或字串) 的屬性即可。 您之後也可以使用 [屬性] 視窗來編輯負載測試外掛程式屬性。

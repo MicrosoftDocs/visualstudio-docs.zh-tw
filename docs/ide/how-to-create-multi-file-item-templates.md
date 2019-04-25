@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428985"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>作法：建立多重檔案項目範本
+# <a name="how-to-create-multi-file-item-templates"></a>HOW TO：建立多重檔案項目範本
 
 項目範本只能指定一個項目，但有時項目是由多個檔案所構成。 例如，Windows Forms 項目範本需要下列三個檔案：
 

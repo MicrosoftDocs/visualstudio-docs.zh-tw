@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bebc8581ead00eeb6b28c2c45f4dcfe991a9e1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3dfaa1fb344f11817cc67a074580c726f3d23036
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429169"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
 
@@ -42,9 +42,9 @@ ms.locfileid: "55918146"
 ## <a name="do-you-need-multiple-ui-maps"></a>您是否需要多個 UI 對應？
  請在下列幾種情況下建立多個 UI 對應：
 
--   一起執行邏輯作業的多組複雜的複合 UI 控制項，例如網站上的註冊網頁或購物車的購買網頁。
+- 一起執行邏輯作業的多組複雜的複合 UI 控制項，例如網站上的註冊網頁或購物車的購買網頁。
 
--   從應用程式的多點存取的獨立一組控制項，例如具有數頁作業的精靈。 如果精靈的每一頁都特別複雜，您可以為每一頁各建立一個 UI 對應。
+- 從應用程式的多點存取的獨立一組控制項，例如具有數頁作業的精靈。 如果精靈的每一頁都特別複雜，您可以為每一頁各建立一個 UI 對應。
 
 ## <a name="add-multiple-ui-maps"></a>加入多個 UI 對應
 

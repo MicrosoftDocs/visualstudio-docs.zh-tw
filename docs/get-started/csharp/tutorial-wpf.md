@@ -14,19 +14,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 706b365834e9e0b96e885cdae9ff25f1f70d1e76
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c098aba51b4b2340ab4094971e3509af42c6c8ed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62426353"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>教學課程：使用 C\# 建立一個簡單的應用程式
 
 藉由完成這個教學課程，讓自己更熟悉許多可在使用 Visual Studio 開發應用程式時運用的工具、對話方塊和設計工具。 當您在學習如何使用整合式開發環境 ([IDE](visual-studio-ide.md)) 時，您會建立簡單的 "Hello, World" 應用程式、設計 UI、新增程式碼，以及進行偵錯。
 
 ::: moniker range="vs-2017"
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
@@ -84,7 +84,6 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 1. 在開始視窗中，選擇 [建立新專案]。
 
    ![檢視 [建立新專案] 視窗](../../get-started/media/vs-2019/start-window-create-new-project.png)
-
 
 2. 在 [建立新專案] 畫面上，搜尋 "WPF"、選擇 [WPF 應用程式 (.NET Framework)]，然後選擇 [下一步]。
 
@@ -267,7 +266,7 @@ IsChecked="True"
 
 #### <a name="add-breakpoints"></a>新增中斷點
 
-1. 開啟 *Greetings.xaml.cs*，然後選取下列程式碼： `MessageBox.Show("Hello.")`
+1. 開啟 *Greetings.xaml.cs*，然後選取下列程式碼行：`MessageBox.Show("Hello.")`
 
 2. 依序選取 [ **偵錯**] 和 [ **切換中斷點**]，以新增中斷點。
 

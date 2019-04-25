@@ -13,13 +13,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429533"
 ---
-# <a name="how-to-distribute-code-snippets"></a>作法：散發程式碼片段
+# <a name="how-to-distribute-code-snippets"></a>HOW TO：散發程式碼片段
 
 您可以使用 [程式碼片段管理員]，將您的程式碼片段提供給您的朋友，並讓他們在自己的電腦上安裝程式碼片段。 不過，如果您有數個程式碼片段要散發，或想要更廣泛地散發，您可在 Visual Studio 延伸模組中包含您的程式碼片段檔案。 然後，Visual Studio 使用者可以安裝此延伸模組以取得程式碼片段。
 

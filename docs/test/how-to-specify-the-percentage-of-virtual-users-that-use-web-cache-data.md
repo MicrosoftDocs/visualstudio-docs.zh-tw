@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 08f0bb9fb14c631f3bf1e5545a69663eb060e3e7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821126"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>HOW TO：指定使用 Web 快取資料的虛擬使用者百分比
 
@@ -34,7 +34,7 @@ ms.locfileid: "55956138"
 
 1. 開啟負載測試。
 
-     [負載測試編輯器] 隨即出現。 負載測試樹狀隨即顯示。
+     [負載測試編輯器] 隨即出現。 負載測試樹狀結構隨即顯示。
 
 2. 在負載測試樹狀目錄的 [情節] 資料夾中，選擇您要為其變更新使用者百分比值的情節節點。
 

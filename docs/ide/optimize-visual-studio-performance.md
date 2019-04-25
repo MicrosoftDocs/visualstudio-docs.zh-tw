@@ -12,12 +12,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 193343c8fce810280f380b11a72b7cb6892ef18e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: bdc605b614fab5b11c2efc8466480ebf49a1fee7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569845"
 ---
 # <a name="optimize-visual-studio-performance"></a>最佳化 Visual Studio 效能
 
@@ -25,11 +25,11 @@ ms.locfileid: "57223754"
 
 ## <a name="upgrade-visual-studio"></a>升級 Visual Studio
 
-如果您目前使用 Visual Studio 2015，請免費下載 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 或 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 以查看其改善的效能。 其方案載入速度比 Visual Studio 2015 快二到三倍，而其他領域的效能亦有改善。 Visual Studio 2015 與 Visual Studio 2017 和 Visual Studio 2019 並存相容，試用看看並不會造成任何損失。
+如果您目前使用 Visual Studio 2015，請免費下載 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 或 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 以查看其改善的效能。 其方案載入速度比 Visual Studio 2015 快二到三倍，而其他領域的效能亦有改善。 Visual Studio 2015 與 Visual Studio 2017 和 Visual Studio 2019 並存相容，試用看看並不會造成任何損失。
 
 ::: moniker range="vs-2017"
 
-如果您已在使用 Visual Studio 2017，請確認執行的是 15.6 版或更新版本。 資料顯示 15.6 版中的解決方案載入速度快兩或三倍。 在[這裡](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)下載。
+如果您已在使用 Visual Studio 2017，請確認執行的是 15.6 版或更新版本。 資料顯示 15.6 版中的解決方案載入速度快兩或三倍。 在[這裡](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)下載。
 
 ::: moniker-end
 

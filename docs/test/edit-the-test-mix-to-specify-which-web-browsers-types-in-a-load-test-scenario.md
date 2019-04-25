@@ -11,12 +11,12 @@ ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed7c90e292b2ed77eeae4096e967f10068664659
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4da3fc51593cc877e09ca6f46db70303186b293e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783831"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>編輯測試混合以指定負載測試情節中的網頁瀏覽器類型
 
@@ -34,34 +34,34 @@ ms.locfileid: "55955553"
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>將新瀏覽器加入至情節
 
-1.  在指定情節的瀏覽器混合時，選擇 [新增]。
+1. 在指定情節的瀏覽器混合時，選擇 [新增]。
 
      新的瀏覽器項目就會加入至方格。
 
     > [!NOTE]
     > 若要顯示 [編輯瀏覽器混合] 對話方塊，請以滑鼠右鍵按一下現有情節，然後選擇 [編輯瀏覽器混合]。
 
-2.  在 [瀏覽器類型] 欄中，選擇新項目的箭號並選擇需要的瀏覽器類型。
+2. 在 [瀏覽器類型] 欄中，選擇新項目的箭號並選擇需要的瀏覽器類型。
 
-3.  (選擇性) 調整混合控制項以指定測試分佈。
+3. (選擇性) 調整混合控制項以指定測試分佈。
 
-4.  完成新增瀏覽器後，選擇 [確定]。
+4. 完成新增瀏覽器後，選擇 [確定]。
 
-##  <a name="remove-browsers-from-a-scenario"></a>從情節移除瀏覽器
+## <a name="remove-browsers-from-a-scenario"></a>從情節移除瀏覽器
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>從情節移除瀏覽器
 
-1.  開啟負載測試。
+1. 開啟負載測試。
 
-2.  以滑鼠右鍵按一下您要移除瀏覽器的情節，然後選擇 [編輯瀏覽器混合]。
+2. 以滑鼠右鍵按一下您要移除瀏覽器的情節，然後選擇 [編輯瀏覽器混合]。
 
      [編輯瀏覽器混合] 對話方塊隨即顯示。
 
-3.  在方格中選取瀏覽器，然後選擇 [移除]。
+3. 在方格中選取瀏覽器，然後選擇 [移除]。
 
-4.  (選擇性) 調整混合控制項以指定測試分佈。
+4. (選擇性) 調整混合控制項以指定測試分佈。
 
-5.  完成移除瀏覽器後，選擇 [確定]。
+5. 完成移除瀏覽器後，選擇 [確定]。
 
 ## <a name="about-the-mix-control"></a>關於混合控制項
 

@@ -10,12 +10,12 @@ ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb5227c4b5f771747a43a7f0f12e0125b125604e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e19e1cb4f9b49c40923d96b177ceb4d6c31b746f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783316"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>在負載測試情節中編輯考慮時間以模擬網站人類互動延遲
 
@@ -48,13 +48,13 @@ ms.locfileid: "55943372"
 
 ### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>若要變更負載測試情節中的考慮特性
 
-1.  從 Web 效能和負載測試專案中，開啟負載測試。
+1. 從 Web 效能和負載測試專案中，開啟負載測試。
 
-2.  在 [負載測試編輯器] 中，選擇您要變更 [考慮特性] 的情節節點。 [考慮特性] 隨即顯示在 [屬性] 視窗中。 按 **F4** 顯示 [屬性] 視窗。
+2. 在 [負載測試編輯器] 中，選擇您要變更 [考慮特性] 的情節節點。 [考慮特性] 隨即顯示在 [屬性] 視窗中。 按 **F4** 顯示 [屬性] 視窗。
 
-3.  變更 [屬性] 視窗中的 [考慮特性] 屬性。
+3. 變更 [屬性] 視窗中的 [考慮特性] 屬性。
 
-4.  完成變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的考慮特性執行負載測試。
+4. 完成變更屬性之後，請選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的考慮特性執行負載測試。
 
 ## <a name="see-also"></a>另請參閱
 

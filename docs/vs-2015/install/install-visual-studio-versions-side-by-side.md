@@ -1,5 +1,5 @@
 ---
-title: 安裝 Visual Studio 版本的並存 |Microsoft Docs
+title: 並存安裝 Visual Studio 版本 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -13,12 +13,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 67a564b789d24b11b92b218c2a30673c6bd7baad
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48d77b77367faa1ea1f59c1de7fdbad96d574e1b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834857"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117638"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>並存安裝 Visual Studio 版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ ms.locfileid: "54834857"
 
  並存安裝多個版本之前，請先檢閱下列狀況：
 
--   如果您使用 Visual Studio 2015 開啟 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]所建立的方案，只要未實作 Visual Studio 2015 特定的任何功能，稍後就可以在舊版中開啟和修改該方案。
+- 如果您使用 Visual Studio 2015 開啟 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]所建立的方案，只要未實作 Visual Studio 2015 特定的任何功能，稍後就可以在舊版中開啟和修改該方案。
 
--   如果您嘗試使用 Visual Studio 2015 開啟 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 或以前版本所建立的方案，可能需要修改專案和檔案，才能與 Visual Studio 2015 相容。 如需詳細資訊，請參閱 <<c0> [ 移植、 移轉及升級 Visual Studio 專案](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)頁面。
+- 如果您嘗試使用 Visual Studio 2015 開啟 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 或以前版本所建立的方案，可能需要修改專案和檔案，才能與 Visual Studio 2015 相容。 如需詳細資訊，請參閱[移植、移轉和升級 Visual Studio 專案](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)頁面。
 
--   如果在已經安裝多個 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的電腦上解除安裝其中一個版本，則會移除所有版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 檔案關聯。 您可以使用 **選項** 對話方塊中，位於 [**環境**] 的 [**一般**] 頁面上的 [還原檔案關聯](../ide/reference/general-environment-options-dialog-box.md) 按鈕來重新對應這些檔案關聯。
+- 如果在已經安裝多個 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的電腦上解除安裝其中一個版本，則會移除所有版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 檔案關聯。 您可以使用 **選項** 對話方塊中，位於 [**環境**] 的 [**一般**] 頁面上的 [還原檔案關聯](../ide/reference/general-environment-options-dialog-box.md) 按鈕來重新對應這些檔案關聯。
 
--   Visual Studio 不會自動升級擴充功能，因為並非所有擴充功能都相容。 您必須重新安裝擴充功能[Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891)或軟體發行者。
+- Visual Studio 不會自動升級擴充功能，因為並非所有擴充功能都相容。 您必須從 [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) 或軟體發行者重新安裝延伸模組。
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework 的版本和並存安裝
 
--   Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具]  使用 [目標 Framework]  選項，指定專案的目標 .NET Framework 版本。 對於 C++ 專案，您可以手動修改 .vcxproj 檔案來變更目標 Framework。 如需詳細資訊，請參閱 <<c0> [ 版本相容性](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f)。
+- Visual Basic、Visual C# 或 Visual F# 專案中 [專案設計工具]  使用 [目標 Framework]  選項，指定專案的目標 .NET Framework 版本。 對於 C++ 專案，您可以手動修改 .vcxproj 檔案來變更目標 Framework。 如需詳細資訊，請參閱[版本相容性](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f)。
 
      當您建立專案時，您可以在 [新增專案]  對話方塊的 [.NET Framework]  清單中指定專案的目標 .NET Framework 版本。
 
