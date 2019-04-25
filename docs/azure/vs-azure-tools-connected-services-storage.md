@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
 ms.openlocfilehash: 649f99911726e562f9602fe6697591ec6cfb96eb
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560982"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>使用 Visual Studio 的已連接服務加入 Azure 儲存體
 

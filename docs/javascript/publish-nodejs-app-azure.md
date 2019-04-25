@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: a06f2e530472756e2620c84cd872895dfc6fa453
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62841355"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>將 Node.js 應用程式發佈到 Azure (Linux App Service)
 
@@ -62,7 +62,7 @@ Linux App Service 會部署 Linux Docker 容器來執行 Node.js 應用程式 (�
 1. 建立新的 TypeScript Express 應用程式。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 來關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，鍵入 **Node.js**，然後選擇 [建立新的基礎 Azure Node.js Express 4 應用程式] (TypeScript)。 在出現的對話方塊中，選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 開啟 [搜尋] 方塊，鍵入 **Node.js**，然後選擇 [建立新的基礎 Azure Node.js Express 4 應用程式] (TypeScript)。 在出現的對話方塊中，選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 **TypeScript**，然後選擇 **Node.js**。 在中間窗格中，選擇 [基本的 Azure Node.js Express 4 應用程式]，然後選擇 [確定]。

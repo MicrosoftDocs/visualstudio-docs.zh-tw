@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8496e31778765ed92ddca55efbb9e4747c8df81e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e6784ab59580df898e2f5f705984f13a3f94f73a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939153"
 ---
 # <a name="target-build-order"></a>目標組建順序
 如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 您可以使用這些屬性來指定執行目標的順序：
@@ -104,21 +104,21 @@ ms.locfileid: "56608821"
 ## <a name="determine-the-target-build-order"></a>判斷目標建置順序
  MSBuild 會以如下方式判斷目標建置順序：
 
-1.  執行 `InitialTargets` 目標。
+1. 執行 `InitialTargets` 目標。
 
-2.  執行命令列上使用 **-target** 參數指定的目標。 如果您未在命令列上指定目標，則會執行 `DefaultTargets` 目標。 如果兩者都不存在，則會執行第一個遇到的目標。
+2. 執行命令列上使用 **-target** 參數指定的目標。 如果您未在命令列上指定目標，則會執行 `DefaultTargets` 目標。 如果兩者都不存在，則會執行第一個遇到的目標。
 
-3.  評估目標的 `Condition` 屬性。 如果 `Condition` 屬性存在且評估為 `false`，則不會執行目標，且不會對組建產生任何進一步的作用。
+3. 評估目標的 `Condition` 屬性。 如果 `Condition` 屬性存在且評估為 `false`，則不會執行目標，且不會對組建產生任何進一步的作用。
 
     列出 `BeforeTargets` 或 `AfterTargets` 中之條件式目標的目標，仍然會以指定的順序執行
 
-4.  執行或略過目標之前，如果它的 `Condition` 屬性不存在，或未評估為 `false`，則會執行其 `DependsOnTargets` 目標。
+4. 執行或略過目標之前，如果它的 `Condition` 屬性不存在，或未評估為 `false`，則會執行其 `DependsOnTargets` 目標。
 
-5.  執行或略過目標之前，就會執行在 `BeforeTargets` 屬性中列出它的任何目標。
+5. 執行或略過目標之前，就會執行在 `BeforeTargets` 屬性中列出它的任何目標。
 
-6.  執行目標之前，會將它的 `Inputs` 屬性和 `Outputs` 屬性進行比較。 如果 MSBuild 判斷有任何與一或多個對應輸入檔相關的輸出檔過時，則 MSBuild 會執行目標。 否則，MSBuild 會略過目標。
+6. 執行目標之前，會將它的 `Inputs` 屬性和 `Outputs` 屬性進行比較。 如果 MSBuild 判斷有任何與一或多個對應輸入檔相關的輸出檔過時，則 MSBuild 會執行目標。 否則，MSBuild 會略過目標。
 
-7.  執行或略過目標之後，就會執行在 `AfterTargets` 屬性中列出它的任何目標。
+7. 執行或略過目標之後，就會執行在 `AfterTargets` 屬性中列出它的任何目標。
 
 ## <a name="see-also"></a>另請參閱
 - [目標](../msbuild/msbuild-targets.md)

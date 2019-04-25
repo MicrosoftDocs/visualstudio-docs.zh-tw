@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3a6415734a1ea161c7baea26d2abde6d5390ce12
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581183"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 **VSPerfASPNetCmd.exe** 命令列工具可讓您進行 ASP.Net 網站分析，而不需要設定環境變數或重新啟動您的電腦。 當您進行 ASP.NET 網站分析且不需要 **VSPerfCmd** 提供的額外功能時，請使用 **VSPerfASPNetCmd.exe** 而非 [VSPerfCmd](../profiling/vsperfcmd.md)。 如需 **VSPerfASPNetCmd** 的詳細資訊，請參閱[使用 VSPerfASPNETCmd 快速進行網站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。 當您使用獨立分析工具來進行 ASP.NET 網站分析時，**VSPerfASPNetCmd** 是慣用的命令列工具。

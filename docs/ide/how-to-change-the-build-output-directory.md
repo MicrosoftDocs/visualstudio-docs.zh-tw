@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f254c29f2951484869b814f13d1a346080fab07
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ea7cae6dd709e407a5c1a9832092586d217689b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824226"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>HOW TO：變更組建輸出目錄
 
@@ -27,11 +27,11 @@ ms.locfileid: "55911529"
 
 ## <a name="change-the-build-output-directory"></a>變更組建輸出目錄
 
-1.  在功能表列上，依序選擇 [專案] > **[應用程式名稱>屬性]\<**。 您也可以在 [方案總管] 中，以滑鼠右鍵按一下專案節點，然後選取 [屬性]。
+1. 在功能表列上，依序選擇 [專案] > **[應用程式名稱>屬性]\<**。 您也可以在 [方案總管] 中，以滑鼠右鍵按一下專案節點，然後選取 [屬性]。
 
-2.  如果您有 Visual Basic 專案，請選取 [ **編譯** ] 索引標籤。如果您有 C# 專案，請選取 [建置] 索引標籤。如果您的 C++ 專案或 JavaScript 專案，選取 [ **一般** ] 索引標籤。
+2. 如果您有 Visual Basic 專案，請選取 [ **編譯** ] 索引標籤。如果您有 C# 專案，請選取 [建置] 索引標籤。如果您的 C++ 專案或 JavaScript 專案，選取 [ **一般** ] 索引標籤。
 
-3.  在頂端的組態下拉式清單中，選擇您想要變更其輸出檔位置的組態 (偵錯、發行或全部)。
+3. 在頂端的組態下拉式清單中，選擇您想要變更其輸出檔位置的組態 (偵錯、發行或全部)。
 
      尋找輸出路徑項目 (Visual Basic 中的 [建置輸出路徑]、Visual C++ 中的 [輸出目錄]、JavaScript 和 C# 中的 [輸出路徑])。 指定相對於專案目錄的新建置輸出目錄。
 

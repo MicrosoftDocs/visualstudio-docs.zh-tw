@@ -11,21 +11,32 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aacddcd5cd27435b92b4689999e6d9dc5ca190b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 913a5a08dc467ea23d22c2a08a23abfe70b9a736
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943890"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
 在這個 10 分鐘的 Visual Studio 程式碼編輯器簡介中，我們會將程式碼新增至檔案，以了解 Visual Studio 讓撰寫、導覽和了解程式碼更加輕鬆的一些方式。
 
-> [!TIP]
-> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+::: moniker range="vs-2017"
 
-此文章假設您已熟悉某一種程式設計語言。 如果您還不熟悉，建議您先查看一種程式設計語言的快速入門，例如使用 [Python](../ide/quickstart-python.md) 或 [C#](../get-started/csharp/tutorial-aspnet-core.md) 建立 Web 應用程式，或是使用 [Visual Basic](../ide/quickstart-visual-basic-console.md) 或 [C++](../ide/getting-started-with-cpp-in-visual-studio.md) 建立主控台應用程式。
+> [!TIP]
+> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
+
+::: moniker-end
+
+本文假設您已熟悉某一種程式設計語言。 如果您還不熟悉，建議您先查看一種程式設計語言的快速入門，例如使用 [Python](../ide/quickstart-python.md) 或 [C#](../get-started/csharp/tutorial-aspnet-core.md) 建立 Web 應用程式，或是使用 [Visual Basic](../ide/quickstart-visual-basic-console.md) 或 [C++](../ide/getting-started-with-cpp-in-visual-studio.md) 建立主控台應用程式。
 
 ## <a name="create-a-new-code-file"></a>建立新的程式碼檔
 

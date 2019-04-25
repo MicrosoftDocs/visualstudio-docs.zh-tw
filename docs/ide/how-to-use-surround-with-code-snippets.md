@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0bf279502c52c47a68ea7eb5fb5c193e7d31e4d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428205"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>HOW TO：使用範圍陳述式程式碼片段
 

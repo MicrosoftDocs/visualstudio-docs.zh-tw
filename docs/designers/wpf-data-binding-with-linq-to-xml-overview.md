@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ef02735ab10d6223e9098a4fa03312507d961cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843923"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>WPF 資料繫結與 LINQ to XML 概觀
 
@@ -35,7 +35,7 @@ XAML 和 LINQ to XML 有兩種廣泛的方式可以互動：
 
 WPF 資料繫結可讓 UI 項目將其屬性中的一個屬性與資料來源產生關聯。 其中一個簡單的範例為 <xref:System.Windows.Controls.Label>，其文字表示使用者定義物件中公用屬性的值。 WPF 資料繫結依賴下列元件：
 
-|元件|描述|
+|元件|說明|
 |---------------|-----------------|
 |繫結目標|與資料來源相關聯的 UI 項目。 WPF 中的 Visual 項目衍生自 <xref:System.Windows.UIElement> 類別。|
 |目標屬性|反映資料繫結來源值的繫結目標「相依性屬性」。 相依性屬性是由 <xref:System.Windows.DependencyObject> 類別 (可衍生 <xref:System.Windows.UIElement>) 直接支援。|

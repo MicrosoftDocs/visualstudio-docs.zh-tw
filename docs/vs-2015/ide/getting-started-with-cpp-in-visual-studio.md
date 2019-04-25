@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 264fcea4b04b1777a455199789ed1bb9c3757f7c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ae373742c114129c99e7b3444393e12c6c4dd8dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758238"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057819"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54758238"
 
  [建置應用程式的發行版本](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)
 
-##  <a name="BKMK_Configure"></a> 登入 Visual Studio
+## <a name="BKMK_Configure"></a> 登入 Visual Studio
  當您第一次啟動 Visual Studio 時，可以選擇使用例如 Live 或 Outlook 等 Microsoft 帳戶登入。 登入可讓您跨所有裝置同步處理設定。 如需詳細資訊，請參閱 [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md)。
 
  圖 1：Visual Studio IDE
@@ -42,7 +42,7 @@ ms.locfileid: "54758238"
 
  開啟 Visual Studio 之後，您會看到 IDE 的三個基本部分：工具視窗、功能表和工具列，以及主視窗空間。 工具視窗停駐在應用程式視窗的左右側，同時 [快速啟動] 、功能表列和標準工具列則位於視窗上方。 位於應用程式視窗中央的是 [起始頁] 。 當您開啟方案或專案時，編輯器和設計工具就會出現在此空間中。 在開發應用程式時，您大部分時間都會在此中央區域工作。
 
-##  <a name="BKMK_CreateApp"></a> 建立簡單的應用程式
+## <a name="BKMK_CreateApp"></a> 建立簡單的應用程式
  在 Visual Studio 中建立應用程式時，必須先建立一個專案和一個方案。 在這個範例中，您將建立 Windows 主控台應用程式。
 
 #### <a name="to-create-a-console-app"></a>若要建立主控台應用程式
@@ -65,12 +65,12 @@ ms.locfileid: "54758238"
 
    ![方案在方案總管中的所有檔案](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")
 
-##  <a name="BKMK_AddCode"></a> 將程式碼新增到應用程式
+## <a name="BKMK_AddCode"></a> 將程式碼新增到應用程式
  接下來，您將新增程式碼以在主控台視窗中顯示 "Hello" 文字。
 
 #### <a name="to-display-hello-in-the-console-window"></a>若要在主控台視窗中顯示 "Hello"
 
-1.  在 GreetingsConsoleApp.cpp 檔案中的 `return 0;` 行之前輸入空白行，然後輸入下列程式碼：
+1. 在 GreetingsConsoleApp.cpp 檔案中的 `return 0;` 行之前輸入空白行，然後輸入下列程式碼：
 
     ```
     cout << "Hello\n";
@@ -84,7 +84,7 @@ ms.locfileid: "54758238"
 
      [cout](http://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) 包含在 \<iostream\> 標頭檔中。
 
-2.  若要包含 iostream 標頭，請在 `#include "stdafx.h"`之後輸入下列程式碼：
+2. 若要包含 iostream 標頭，請在 `#include "stdafx.h"`之後輸入下列程式碼：
 
     ```
     #include \<iostream\>
@@ -95,16 +95,16 @@ ms.locfileid: "54758238"
 
      當您修正錯誤時， `cout` 底下的紅色曲線就會消失。
 
-3.  將變更儲存到檔案。
+3. 將變更儲存到檔案。
 
      ![修正 cout 錯誤的程式碼](../ide/media/c-ide-coutfix.png "C++IDE_CoutFix")
 
-##  <a name="BKMK_DebugTest"></a> 偵錯和測試應用程式
+## <a name="BKMK_DebugTest"></a> 偵錯和測試應用程式
  您可以偵錯 GreetingsConsoleApp，看看 "Hello" 這個字是否出現在主控台視窗中。
 
 #### <a name="to-debug-the-application"></a>若要進行應用程式偵錯
 
--   啟動偵錯工具。
+- 啟動偵錯工具。
 
      ![[偵錯] 功能表上的 [開始偵錯] 命令](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")
 
@@ -128,7 +128,7 @@ ms.locfileid: "54758238"
 
    如需詳細資訊，請參閱[主控台專案](../debugger/debugging-preparation-console-projects.md)。
 
-##  <a name="BKMK_BuildRelease"></a> 建置應用程式的發行版本
+## <a name="BKMK_BuildRelease"></a> 建置應用程式的發行版本
  既然已經驗證應用程式的運作一切正常，您就可以準備其發行組建。
 
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>若要清除方案檔案和建置發行版本
@@ -148,4 +148,4 @@ ms.locfileid: "54758238"
    恭喜您完成此逐步解說！ 如果您想要探索更多範例，請參閱 [Visual Studio 範例](../ide/visual-studio-samples.md)。
 
 ## <a name="see-also"></a>請參閱
- [逐步解說： 建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[產能的秘訣](../ide/productivity-tips-for-visual-studio.md) [Visual Studio 範例](../ide/visual-studio-samples.md)[使用 Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)
+ [逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [生產力秘訣](../ide/productivity-tips-for-visual-studio.md) [Visual Studio 範例](../ide/visual-studio-samples.md) [Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)

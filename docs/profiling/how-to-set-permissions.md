@@ -1,5 +1,5 @@
 ---
-title: 作法：設定權限 | Microsoft Docs
+title: HOW TO：設定權限 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e40438b6b14414371adaba6cb7eafc6377ae1187
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539181"
 ---
 # <a name="how-to-set-permissions"></a>HOW TO：設定權限
 
@@ -71,7 +71,7 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
 
 5. 在 [\<user name> 的使用權限] 方塊中，選取 [完全控制]的核取方塊。
 
-6. 按一下 [確定 **Deploying Office Solutions**]。
+6. 按一下 [確定]。
 
      如此便會將共用之資料夾樹狀目錄 (從步驟 5 中選取的資料夾開始) 的權限授與使用者。
 

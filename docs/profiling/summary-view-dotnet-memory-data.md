@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b11815a709cf91d4e29c8f04dfc2dd9e1fadb75e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423994"
 ---
 # <a name="summary-view---net-memory-data"></a>摘要檢視 - .NET 記憶體資料
 [摘要] 檢視顯示有關在程式碼剖析執行時，配置最多記憶體的 .NET 函式和類型資訊，以及建立次數最多的類型資訊。 如需包括通知連結和報表清單描述在內的詳細資訊，請參閱[摘要檢視](../profiling/summary-view.md)。

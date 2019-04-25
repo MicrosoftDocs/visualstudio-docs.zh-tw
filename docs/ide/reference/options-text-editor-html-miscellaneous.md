@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 43ab664968ca75f8af6da89db84725924caa3584
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778426"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>選項、文字編輯器、HTML (Web Form)、其他
 

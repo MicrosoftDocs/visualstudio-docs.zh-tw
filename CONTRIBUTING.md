@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 1a53d6fed4b2900aa730f4a5c2e04d528b42d1b9
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62419839"
 ---
 # <a name="contribute-to-visual-studio-documentation"></a>參與 Visual Studio 文件
 

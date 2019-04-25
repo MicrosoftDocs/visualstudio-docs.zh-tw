@@ -8,11 +8,11 @@ ms.workload:
 - uwp
 author: gewarren
 ms.openlocfilehash: 359f2f8b078c197f12a6db09858ca7c9da5a621a
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809625"
 ---
 # <a name="unit-test-c-code"></a>對 C# 程式碼進行單元測試
 

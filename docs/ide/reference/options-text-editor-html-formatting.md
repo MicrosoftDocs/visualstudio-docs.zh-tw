@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e6c4bb3759adb46bf827580cc94dc4a8ed71f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779015"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>選項、文字編輯器、HTML (Web Form)、格式
 
@@ -41,7 +41,6 @@ ms.locfileid: "55927174"
 |**小寫**|元素名稱重新格式化為小寫。|
 |**組件定義**|元素大小寫由元素在對應型別類別中的定義方式決定。|
 
-
 **用戶端標記、用戶端屬性**
 
 這些選項會指定自動格式化是否要將 HTML 屬性 (Attribute) 和屬性 (Property) 的名稱改為大寫或小寫，或是保持輸入的原樣。
@@ -51,7 +50,6 @@ ms.locfileid: "55927174"
 |**同輸入**|屬性的大小寫和您輸入的完全相同。|
 |**大寫**|屬性名稱重新格式化為大寫。|
 |**小寫**|屬性名稱重新格式化為小寫。|
-
 
 ## <a name="automatic-formatting-options"></a>自動格式化選項
 
@@ -65,7 +63,6 @@ ms.locfileid: "55927174"
 - **輸入時插入屬性值引號**
 
    選取此選項時，編輯器會在您輸入時自動在屬性前後加上引號 (例如：ID="Select1")。 如果想要手動插入標記的引號，請清除這個選項。
-
 
    > [!NOTE]
    > 無論是否選取這個選項，都會保留標記中的所有現有引號，永遠不會移除引號。

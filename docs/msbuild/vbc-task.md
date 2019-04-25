@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 585a3d4940d11508dbe6d8874cb401cfe380a690
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 247d7c5a204418fdddf41e906a12ef2ef1fb232f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62577768"
 ---
 # <a name="vbc-task"></a>Vbc 工作
 包裝 *vbc.exe*，這會產生可執行檔 (*.exe*)、動態連結程式庫 (*.dll*) 或程式碼模組 (*.netmodule*)。 如需 *vbc.exe* 的詳細資訊，請參閱 [Visual Basic 命令列編譯器](/dotnet/visual-basic/reference/command-line-compiler/index)。
 
 ## <a name="parameters"></a>參數
  下表說明 `Vbc` 工作的參數。
-
 
 | 參數 | 說明 |
 |------------------------------| - |

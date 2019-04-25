@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d86074dabc4365d1d0336f191beada215f4dc1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569676"
 ---
 # <a name="compare-properties-and-items"></a>比較屬性和項目
 MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以及儲存可在整個專案檔中參考的值。
@@ -86,7 +86,6 @@ MSBuild 會視需要在項目類型和字串值之間來回執行轉換。 若�
 - 項目定義是以其出現的順序來定義和修改。
 
 - 項目是以其出現的順序來定義和修改。
-
 
 在組建的執行階段，目標內所定義的屬性和項目會在單一階段以其出現的順序一併進行評估。
 

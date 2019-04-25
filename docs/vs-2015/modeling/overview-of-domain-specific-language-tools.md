@@ -11,12 +11,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed5232ed8f0033e5953f14b8e4a9aa08abcb316c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d36b2cb0c4e8e7ddf9016302c9efcfae0710097c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568352"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Domain-Specific Language Tools 概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ ms.locfileid: "54805632"
   
  DSL 工具中包含下列工具：  
   
--   專案精靈，使用不同的方案範本來協助您開始開發特定領域語言。  
+- 專案精靈，使用不同的方案範本來協助您開始開發特定領域語言。  
   
--   圖形化設計工具，用於建立和編輯特定領域語言定義。  
+- 圖形化設計工具，用於建立和編輯特定領域語言定義。  
   
--   驗證引擎，確保特定領域語言定義的語式正確，並在發生問題時顯示錯誤和警告。  
+- 驗證引擎，確保特定領域語言定義的語式正確，並在發生問題時顯示錯誤和警告。  
   
--   程式碼產生器，接受特定領域語言定義作為輸入，並產生原始程式碼作為輸出。  
+- 程式碼產生器，接受特定領域語言定義作為輸入，並產生原始程式碼作為輸出。  
   
 ## <a name="the-dsl-tools-solution"></a>DSL 工具方案  
  [特定領域設計工具精靈] 提供下列方案範本：  

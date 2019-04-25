@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 476e72e50ac796412fbeef1c180a3340764fb121
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 14c31acc336818a8846d2ddf7981f64e045f68e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824187"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>HOW TO：建立及移除專案相依性
 
@@ -47,18 +47,18 @@ ms.locfileid: "55907656"
 
 ## <a name="to-remove-dependencies-from-projects"></a>若要從專案移除相依性
 
-1.  在方案總管中選取專案。
+1. 在方案總管中選取專案。
 
-2.  在 [專案] 功能表上，選擇 [專案相依性]。
+2. 在 [專案] 功能表上，選擇 [專案相依性]。
 
      [專案相依性] 對話方塊隨即開啟。
 
     > [!NOTE]
     > [專案相依性] 選項只適用於具有多個專案的方案。
 
-3.  在 [相依性] 索引標籤上，選取 [專案] 下拉式功能表中的專案。
+3. 在 [相依性] 索引標籤上，選取 [專案] 下拉式功能表中的專案。
 
-4.  如果任何其他專案不再與此專案具有相依性，請在 [相依於] 欄位中，清除這些專案旁的核取方塊。
+4. 如果任何其他專案不再與此專案具有相依性，請在 [相依於] 欄位中，清除這些專案旁的核取方塊。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5cf6627b23f7421dc164cf13bbaab46e8d7a2577
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823285"
 ---
 # <a name="assignculture-task"></a>AssignCulture 工作
 這項工作接受項目清單檔案名稱中包含有效的 .NET 文化特性識別碼字串，而產生的項目有包含對應的文化特性識別碼中繼資料，名為 `Culture`。 例如，檔案名稱 *Form1.fr-fr.resx* 有內嵌的文化特性識別碼 "fr-fr"，所以此工作會產生中繼資料 `Culture` 等於 `fr-fr` 的同檔名項目。 工作也會產生檔名移除了文化特性的檔案名稱清單。

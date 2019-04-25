@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537480"
 ---
-# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>作法：使用查看定義 (Alt+F12) 檢視及編輯程式碼
+# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>HOW TO：使用查看定義 (Alt+F12) 檢視及編輯程式碼
 
 您可以使用 [查看定義] 命令來檢視和編輯程式碼，而不需要離開撰寫中的程式碼。 [查看定義] 和 [移至定義] 會顯示相同資訊，但是 [查看定義] 是在快顯視窗中顯示，而 [移至定義] 則在個別程式碼視窗中顯示程式碼。 [移至定義] 會讓內容 (也就是作用中的程式碼視窗、目前行和游標位置) 轉換成定義程式碼視窗。 使用 [查看定義] 可以檢視和編輯該定義並在定義檔中移動，同時保留您在原始程式碼檔案中的位置。
 

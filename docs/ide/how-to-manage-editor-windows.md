@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90c762e07ac57da0b9abf41c8eb99cdcdbb57922
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0c11509dc72baf8ab34cf2ef850fec352a9877
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428998"
 ---
 # <a name="how-to-manage-editor-windows"></a>HOW TO：管理編輯器視窗
 
@@ -33,9 +33,9 @@ ms.locfileid: "55949261"
 
 ### <a name="to-split-a-pane"></a>分割窗格
 
-1.  按一下要成為焦點的編輯器視窗。
+1. 按一下要成為焦點的編輯器視窗。
 
-2.  從 [視窗] 功能表中，選取 [分割]。
+2. 從 [視窗] 功能表中，選取 [分割]。
 
      編輯區域分成兩個以分隔列分隔的窗格。 您可以分別捲動這些窗格，以同時檢視和編輯使用中文件的不同部分。 對某個窗格進行的任何變更都會反映在另一個窗格。
 
@@ -44,7 +44,7 @@ ms.locfileid: "55949261"
 
 ### <a name="to-return-to-single-pane-view"></a>返回單一窗格檢視
 
--   從 [視窗] 功能表中，選取 [移除分割視窗]。
+- 從 [視窗] 功能表中，選取 [移除分割視窗]。
 
 ## <a name="create-new-windows"></a>建立新視窗
 

@@ -1,5 +1,5 @@
 ---
-title: 使用者權限 |Microsoft Docs
+title: 使用者權限 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d37e20154b3471e26f170c8437369493764935fc
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6e30fd7500c0f9dd216b630ea79ebfb79c964fab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775868"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101882"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,19 +56,19 @@ ms.locfileid: "54775868"
 
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblueserver2includeswinblue-server-2-mdmd"></a>若要在 [!INCLUDE[win8](../includes/win8-md.md)]、[!INCLUDE[win81](../includes/win81-md.md)]、[!INCLUDE[winserver8](../includes/winserver8-md.md)] 或 [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)] 上以系統管理權限執行 Visual Studio
 
-1.  在 [開始] 畫面上鍵入 **Visual Studio**。 您應該會看到您所安裝之 Visual Studio 的版本。
+1. 在 [開始] 畫面上鍵入 **Visual Studio**。 您應該會看到您所安裝之 Visual Studio 的版本。
 
-2.  選取您想要啟動的 Visual Studio 版本，然後開啟捷徑功能表 (這會顯示在畫面底部)。 選擇 [以系統管理員身分執行] 。
+2. 選取您想要啟動的 Visual Studio 版本，然後開啟捷徑功能表 (這會顯示在畫面底部)。 選擇 [以系統管理員身分執行] 。
 
      在 Visual Studio 啟動時，**(系統管理員)** 會顯示在標題列的產品名稱之後。
 
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08r2includeswinsvr08-r2-mdmd"></a>若要在 [!INCLUDE[win7](../includes/win7-md.md)] 或 [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)] 上以系統管理權限執行 Visual Studio
 
-1.  選擇 [開始] 功能表上的 [所有程式]。
+1. 選擇 [開始] 功能表上的 [所有程式]。
 
-2.  在 Microsoft Visual Studio <版本> 資料夾中，選取 Visual Studio <版本>，開啟捷徑功能表，然後選擇 以系統管理員身分執行。
+2. 在 Microsoft Visual Studio <版本> 資料夾中，選取 Visual Studio <版本>，開啟捷徑功能表，然後選擇 以系統管理員身分執行。
 
      在 Visual Studio 啟動時，**(系統管理員)** 會顯示在標題列的產品名稱之後。
 
 ## <a name="see-also"></a>請參閱
- [移植、 移轉和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[安裝 Visual Studio 2015](../install/install-visual-studio-2015.md)
+ [移植、移轉和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [安裝 Visual Studio 2015](../install/install-visual-studio-2015.md)

@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3e28bd5b7ace34995dbf0778d59f42b5c5d383aa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778979"
 ---
 # <a name="options-text-editor-f-advanced"></a>選項、文字編輯器、F#、進階
 

@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d917f0211a0888fa2a712b0c010cf6177823c223
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430955"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中 Python 的選項
 
@@ -51,7 +51,7 @@ ms.locfileid: "59365794"
 | **顯示建立環境的通知列** | 開啟 | *僅限 Visual Studio 2019。* 當設定這個選項且使用者開啟包含 *requirements.txt* 或 *environment.yml* 檔案的專案時，Visual Studio 會顯示資訊列，其中包含個別建立虛擬環境或 conda 環境，而不是使用預設全域環境的建議。 |
 | **顯示安裝套件的通知列** | 開啟 | *僅限 Visual Studio 2019。* 當設定這個選項且使用者開啟包含 *requirements.txt* 檔案的專案 (且沒有使用預設全域環境) 時，Visual Studio 會比較那些需求與目前環境中已安裝的套件。 如果遺失任何套件，Visual Studio 會顯示安裝那些相依項目的提示。 |
 | **一律以系統管理員身分執行套件管理員** | Off | 一律提高所有環境的 `pip install` 和類似套件管理員作業的權限。 安裝套件時，如果環境位在檔案系統的受保護區域 (例如 *c:\Program Files*)，則 Visual Studio 會提示需要系統管理員權限。 您可以在該提示中選擇一律只針對該環境提高安裝命令的權限。 請參閱[套件索引標籤](python-environments-window-tab-reference.md#packages-tab)。 |
-| **第一次使用時自動產生完成 DB** | 開啟 | *適用於 Visual Studio 2017 15.5 版及較舊版本，也適用於使用 IntelliSense 資料庫的較新版本。* 當您撰寫使用程式庫的程式碼時，系統會優先完成該程式庫的資料庫。 如需詳細資訊，請參閱 [IntelliSense 索引標籤](python-environments-window-tab-reference.md#intellisense-tab)。 |
+| **第一次使用時自動產生完成 DB** | 開啟 | 適用於 Visual Studio 2017 15.5 版及較舊版本，也適用於使用 IntelliSense 資料庫的較新版本。 當您撰寫使用程式庫的程式碼時，系統會優先完成該程式庫的資料庫。 如需詳細資訊，請參閱 [IntelliSense 索引標籤](python-environments-window-tab-reference.md#intellisense-tab)。 |
 | **略過全系統的 PYTHONPATH 變數** | 開啟 | 因為 Visual Studio 提供更多直接方法來指定環境和專案中的搜尋路徑，所以預設會略過 PYTHONPATH。 如需詳細資訊，請參閱[搜尋路徑](search-paths.md)。 |
 | **新增連結的檔案時更新搜尋路徑** | 開啟 | 設定時，將[連結的檔案](managing-python-projects-in-visual-studio.md#linked-files)新增至專案更新[搜尋路徑](search-paths.md)，讓 IntelliSense 可以將所連結檔案資料夾的內容包含在完成資料庫中。 清除此選項，可從完成資料庫排除這類內容。 |
 | **找不到匯入的模組時發出警告** | 開啟 | 清除此選項，可在您知道匯入的模組目前不可用但不會影響程式碼作業時隱藏警告。 |
@@ -90,7 +90,7 @@ ms.locfileid: "59365794"
 | **將 Tee 程式輸出至偵錯輸出視窗** | 開啟 | 在不同的主控台視窗和 Visual Studio [輸出] 視窗中，顯示程式輸出。 清除此選項，只在不同的主控台視窗中顯示輸出。 |
 | **發生 SystemExit 例外狀況時中斷，結束代碼為零** | Off | 如果設定，請停止此例外狀況的偵錯工具。 清除時，會結束偵錯工具，而不中斷。 |
 | **啟用 Python 標準程式庫的偵錯** | Off | 可在偵錯時逐步執行標準程式庫原始程式碼，但會增加啟動偵錯工具所花費的時間。|
-| **顯示函式傳回值** | 開啟 | *僅限 Visual Studio 2019。* 在偵錯工具 (F10) 中逐步執行函式呼叫時，[區域] 視窗中會顯示函數傳回值 |
+| **顯示函數傳回值** | 開啟 | *僅限 Visual Studio 2019。* 在偵錯工具 (F10) 中逐步執行函式呼叫時，[區域] 視窗中會顯示函數傳回值 |
 | **使用舊版偵錯工具** | Off | *僅限 Visual Studio 2019。* 會指示 Visual Studio 預設使用舊版偵錯工具。 如需詳細資訊，請參閱 [偵錯 - 使用舊版偵錯工具](debugging-python-in-visual-studio.md#use-the-legacy-debugger)。 |
 
 ::: moniker range="vs-2017"
@@ -119,7 +119,7 @@ ms.locfileid: "59365794"
 | 選項 | 預設 | 說明 |
 | --- | --- | --- |
 | **指令碼** | N/A | 指定啟動指令碼的一般資料夾，以套用至所有環境的**互動式**視窗。 請參閱[啟動指令碼](python-environments-window-tab-reference.md#startup-scripts)。 不過，請注意，這項功能目前無法運作。 |
-| **按向上鍵/向下鍵巡覽歷程記錄** | 開啟 | 使用方向鍵，在**互動式**視窗中瀏覽歷程記錄。 清除此設定，可改為使用方向鍵在**互動式**視窗的輸出中進行瀏覽。 |
+| **按向上鍵/向下鍵瀏覽歷程記錄** | 開啟 | 使用方向鍵，在**互動式**視窗中瀏覽歷程記錄。 清除此設定，可改為使用方向鍵在**互動式**視窗的輸出中進行瀏覽。 |
 | **完成模式** | **只評估沒有函式呼叫的運算式** | 決定**互動式**視窗中運算式可用成員的程序，可能需要評估目前未完成的運算式，這樣可能會導致副作用或多次呼叫函式。 預設設定 [只評估沒有函式呼叫的運算式] 會排除呼叫函式的運算式，但會評估其他運算式。 例如，它會評估 `a.b`，但不會評估 `a().b`。  [一律不評估運算式] 可防止所有副作用，並建議僅使用標準 IntelliSense 引擎。 [評估所有運算式] 會評估整個運算式來取得建議，不論副作用為何。 |
 | **隱藏靜態分析建議** | Off | 設定時，只會顯示評估運算式所取得的建議。 如果與 [完成模式] 值 [一律不評估運算式] 合併使用，則**互動式**視窗中不會出現任何有用的完成。 |
 
@@ -157,7 +157,7 @@ ms.locfileid: "59365794"
 | --- | --- | --- |
 | **輸入下列字元予以認可** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | 這些字元一般會接在可從完成清單中選取的識別碼後面，因此只要鍵入字元就可以輕易地認可完成。 您可以視需要在清單中移除或新增特定字元。  |
 | **按 Enter 認可目前的完成** | 開啟 | 設定時，Enter 鍵會選擇並套用目前選取的完成，與上面字元相同 (但是，當然，沒有 Enter 的字元，因此無法直接進入該清單！)。 |
-| **在完整鍵入字的結尾處按 Enter 來新增新行** | Off | 根據預設，如果您鍵入完成快顯視窗中所顯示的整個單字，然後按 Enter，則會認可該完成。 設定此選項，即可在完成輸入識別碼時有效地認可完成，因此 Enter 會插入新行。 |
+| **在完整輸入的字結尾處按 ENTER 時新增行** | Off | 根據預設，如果您鍵入完成快顯視窗中所顯示的整個單字，然後按 Enter，則會認可該完成。 設定此選項，即可在完成輸入識別碼時有效地認可完成，因此 Enter 會插入新行。 |
 
 ### <a name="miscellaneous-options"></a>其他選項
 

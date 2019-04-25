@@ -7,18 +7,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582540"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>設定 C++ IntelliSense 專案
 
 在某些情況下，您可能需要手動設定 C++ 專案來使 IntelliSense 能夠正常運作。 針對 MSBuild 專案 (以 .vcxproj 檔案為基礎)，您可以調整專案屬性中的設定。 針對非 MSBuild 的專案，您需要調整專案根目錄中的 CppProperties.json 檔案中的設定。 在某些情況下，您可能需要建立提示檔案以協助 IntelliSense 了解巨集定義。 Visual Studio IDE 可協助您識別並修正 IntelliSense 問題。
-
-
 
 ## <a name="single-file-intellisense"></a>單一檔案 IntelliSense
 

@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892835"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>逐步解說：在 XAML 設計工具中繫結至資料
 
-在 XAML 設計工具中，您可以使用畫板和 [屬性] 視窗來設定資料繫結屬性。 本逐步解說中的範例示範如何將資料繫結至控制項。 具體來說，本逐步解說示範如何建立具有 [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) 且名為 `ItemCount` 的簡單購物車類別，然後將 `ItemCount` 屬性繫結至 [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) 控制項的 **Text** 屬性。
+在 XAML 設計工具中，您可以使用畫板和 [屬性] 視窗，設定資料繫結屬性。 本逐步解說中的範例示範如何將資料繫結至控制項。 具體來說，本逐步解說示範如何建立具有 [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) 且名為 `ItemCount` 的簡單購物車類別，然後將 `ItemCount` 屬性繫結至 [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) 控制項的 **Text** 屬性。
 
-## <a name="to-create-a-class-to-use-as-a-data-source"></a>建立要做為資料來源使用的類別
+## <a name="to-create-a-class-to-use-as-a-data-source"></a>若要建立類別以做為資料來源
 
 1. 在 [檔案] 功能表上，選擇 [新增] > [專案]。
 
@@ -31,7 +31,7 @@ ms.locfileid: "55957594"
 
 1. 將專案命名為 **BindingTest**，然後選擇 [確定] 按鈕。
 
-1. 開啟 **MainWindow.xaml.cs** (或 **MainWindow.xaml.vb**) 檔案並新增下列程式碼。 在 C# 中，將程式碼加入 `BindingTest` 命名空間中 (檔案中最後一個右括號之前)。 在 Visual Basic 中，只要加入新類別。
+1. 開啟 **MainWindow.xaml.cs** (或 **MainWindow.xaml.vb**) 檔案並新增下列程式碼。 在 C# 中，於 `BindingTest` 命名空間內 (在檔案中最後一個右括號之前) 加入程式碼。 在 Visual Basic 中，只需加入新類別。
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -69,7 +69,7 @@ ms.locfileid: "55957594"
 
 1. 在 [檔案] 功能表上，選擇 [建置] > [建置方案]。
 
-## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>將 ItemCount 屬性繫結至 TextBlock 控制項
+## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>若要將 ItemCount 屬性繫結至 TextBlock 控制項
 
 1. 在方案總管中，開啟 **MainWindow.xaml** 的捷徑功能表，然後選擇 [檢視設計工具]。
 

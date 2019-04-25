@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a1cc43bfeb66792d2d8ff5a736d957740f62c5ff
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783732"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>開發人員測試工具、案例和功能
 

@@ -4,17 +4,19 @@ description: 了解如何提供 Visual Studio 可用來向 Azure 驗證要求的
 author: ghogen
 manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 319f9327cb83f3d05d26512f448b029b57d23b0c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572193"
 ---
 # <a name="set-up-named-authentication-credentials"></a>設定具名驗證認證
 
@@ -38,6 +40,6 @@ ms.locfileid: "55920648"
 ## <a name="next-steps"></a>後續步驟
 
 - [Web Apps 的一般概觀](https://docs.microsoft.com/azure/app-service/)
-- [將您的應用程式部署至 Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
+- [將您的應用程式部署至 Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
 - [使用 Visual Studio 部署 WebJob](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
 - [建立及部署雲端服務](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

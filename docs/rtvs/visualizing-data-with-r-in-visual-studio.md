@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811053"
 ---
 # <a name="create-visual-data-plots-with-r"></a>以 R 建立視覺化資料繪圖
 
@@ -45,7 +45,7 @@ ms.locfileid: "55911763"
 
 繪圖視窗工具列保留適用的命令，其中大部分也都可透過 [R 工具] > [繪圖] 功能表取得。
 
-| 按鈕 | 命令 | 描述 |
+| 按鈕 | 命令 | 說明 |
 | --- | --- | --- |
 | ![新增繪圖視窗按鈕](media/plotting-toolbar-01-new-plot-window.png) | 新增繪圖視窗 | 建立有專屬歷程記錄的個別繪圖視窗。 請參閱[多個繪圖視窗](#multiple-plot-windows)。 |
 | ![啟動繪圖視窗按鈕](media/plotting-toolbar-02-activate-plot-window.png) | 啟動繪圖視窗 | 將目前的繪圖視窗設為使用中視窗，以便後續的 `plot` 命令呈現在該視窗中。 請參閱[多個繪圖視窗](#multiple-plot-windows)。 請參閱[多個繪圖視窗](#multiple-plot-windows)。 |

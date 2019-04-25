@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea96fe521afe713b1eafd59390047bfdb427f6fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553223"
 ---
 # <a name="copy-selection"></a>複製選取項目
 若要從 [報表] 索引標籤中複製整個呼叫堆疊，請按一下 [複製]。 然後，您就可以在任何支援該動作的程式中貼上呼叫堆疊。

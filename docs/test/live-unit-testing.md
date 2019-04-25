@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a51b056e4a3a4f2f434e6fd57ec270029d9155b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786473"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Visual Studio 的 Live Unit Testing
 
@@ -27,7 +27,6 @@ ms.locfileid: "58325129"
 
 ## <a name="supported-test-frameworks"></a>支援的測試架構
 Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其配接器與架構所支援的最小版本也列於表格中。 單元測試架構全都可從 NuGet.org 取得。
-
 
 |測試架構  |Visual Studio 配接器最小版本  |架構最小版本  |
 |---------|---------|---------|
