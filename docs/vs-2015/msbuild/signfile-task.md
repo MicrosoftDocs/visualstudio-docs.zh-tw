@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc65715c2e0bc1e6e36e86c1ce8e3cd1b4c81058
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 081899efb202917f1ebeac97a58dd89cf5a04f53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444392"
 ---
 # <a name="signfile-task"></a>SignFile 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "59660342"
  請注意 SHA-256 憑證只在具有 .NET 4.5 及更高版本的電腦上才允許。  
   
 > [!WARNING]
->  從 Visual Studio 2013 Update 3 開始，這個工作有新的簽章，可讓您指定檔案的目標架構版本。 我們鼓勵您儘可能地使用新的簽章，因為只有當目標架構是 .NET 4.5 或更高版本時，MSBuild 程序才會使用 SHA-256 雜湊。 如果目標架構是 .NET 4.0 或更低版本，將不會使用 SHA-256 雜湊。  
+> 從 Visual Studio 2013 Update 3 開始，這個工作有新的簽章，可讓您指定檔案的目標架構版本。 我們鼓勵您儘可能地使用新的簽章，因為只有當目標架構是 .NET 4.5 或更高版本時，MSBuild 程序才會使用 SHA-256 雜湊。 如果目標架構是 .NET 4.0 或更低版本，將不會使用 SHA-256 雜湊。  
   
 |參數|說明|  
 |---------------|-----------------|  
@@ -70,7 +70,7 @@ ms.locfileid: "59660342"
 ```  
   
 > [!NOTE]
->  憑證指紋是憑證的 SHA-1 雜湊。 如需詳細資訊，請參閱[取得受信任的根 CA 憑證的 SHA-1 雜湊](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87)。  
+> 憑證指紋是憑證的 SHA-1 雜湊。 如需詳細資訊，請參閱[取得受信任的根 CA 憑證的 SHA-1 雜湊](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87)。  
   
 ## <a name="example"></a>範例  
  下列範例使用 `Exec` 工作來簽署 `FilesToSign` 項目集合中指定的檔案，並使用 `Certificate` 屬性所指定的憑證。 您可以使用這個在建置程序期間簽署 Windows 安裝程式檔案。  

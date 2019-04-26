@@ -1,5 +1,5 @@
 ---
-title: 如何：延伸建置流程 | Microsoft Docs
+title: HOW TO：延伸建置流程 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,21 +14,21 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f86605f3e76dc17fd8e404eb0d189f51ff2dc69
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652159"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108592"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>如何：擴充 Visual Studio 建置處理序
+# <a name="how-to-extend-the-visual-studio-build-process"></a>HOW TO：延伸 Visual Studio 建置流程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 建置處理序是由匯入至您專案檔的一系列 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .targets 檔案所定義。 可以擴充其中一個已匯入的檔案 (Microsoft.Common.targets)，以讓您在建置處理序的數個點執行自訂工作。 本主題說明您可以使用兩種方法來擴充 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 建置處理序：
 
--   覆寫 Microsoft.Common.targets 中所定義的特定預先定義目標。
+- 覆寫 Microsoft.Common.targets 中所定義的特定預先定義目標。
 
--   覆寫 Microsoft.Common.targets 中所定義的 "DependsOn" 屬性。
+- 覆寫 Microsoft.Common.targets 中所定義的 "DependsOn" 屬性。
 
 ## <a name="overriding-predefined-targets"></a>覆寫預先定義的目標
  Microsoft.Common.targets 檔案包含一組預先定義的空目標，可在建置處理序的部分主要目標之前和之後呼叫。 例如，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 在主要 `CoreBuild` 目標之前呼叫 `BeforeBuild` 目標，而在 `CoreBuild` 目標之後呼叫 `AfterBuild` 目標。 Microsoft.Common.targets 中的空目標預設不會執行任何作業，但是您可以在匯入 Microsoft.Common.targets 的專案檔中定義您想要的目標，來覆寫其預設行為。 若要這麼做，您可以使用 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工作，更充分地控制建置處理序。
@@ -58,7 +58,7 @@ ms.locfileid: "59652159"
 |目標名稱|說明|
 |-----------------|-----------------|
 |`BeforeCompile`、 `AfterCompile`|在核心編譯完成之前或之後，會執行插入至其中一個目標的工作。 大部分的自訂是在這兩個目標的其中一個中完成。|
-|`BeforeBuild`、 `AfterBuild`|在組建的任何其他項目之前或之後，將會執行其中一個目標中插入的工作。 **注意：** 在大部分專案檔結尾的註解中，已定義 `BeforeBuild` 和 `AfterBuild` 目標。 這可讓您輕鬆地將建置前和建置後事件新增至專案檔。|
+|`BeforeBuild`、 `AfterBuild`|在組建的任何其他項目之前或之後，將會執行其中一個目標中插入的工作。 **注意：** 在大部分專案檔結尾的註解中，已經定義了 `BeforeBuild` 和 `AfterBuild` 目標。 這可讓您輕鬆地將建置前和建置後事件新增至專案檔。|
 |`BeforeRebuild`、 `AfterRebuild`|在叫用核心重建功能之前或之後，執行插入至其中一個目標的工作。 Microsoft.Common.targets 中的目標執行順序是：`BeforeRebuild`、`Clean`、`Build` 和 `AfterRebuild`。|
 |`BeforeClean`、 `AfterClean`|在叫用核心清除功能之前或之後，執行插入至其中一個目標的工作。|
 |`BeforePublish`、 `AfterPublish`|在叫用核心發行功能之前或之後，執行插入至其中一個目標的工作。|
@@ -109,13 +109,13 @@ ms.locfileid: "59652159"
 
 #### <a name="to-override-a-dependson-property"></a>覆寫 "DependsOn" 屬性
 
-1.  識別 Microsoft.Common.targets 中您要覆寫的預先定義 "DependsOn" 屬性。 如需經常覆寫的 "DependsOn" 屬性清單，請參閱下表。
+1. 識別 Microsoft.Common.targets 中您要覆寫的預先定義 "DependsOn" 屬性。 如需經常覆寫的 "DependsOn" 屬性清單，請參閱下表。
 
-2.  在專案檔結尾定義另一個屬性執行個體。 在新屬性中，包含原始屬性 (例如 `$(BuildDependsOn)`)。
+2. 在專案檔結尾定義另一個屬性執行個體。 在新屬性中，包含原始屬性 (例如 `$(BuildDependsOn)`)。
 
-3.  在屬性定義之前或之後，定義您的自訂目標。
+3. 在屬性定義之前或之後，定義您的自訂目標。
 
-4.  建置專案檔。
+4. 建置專案檔。
 
 ### <a name="commonly-overridden-dependson-properties"></a>經常覆寫的 "DependsOn" 屬性
 
@@ -125,5 +125,5 @@ ms.locfileid: "59652159"
 |`CleanDependsOn`|如果您想要清除自訂建置處理序的輸出，這是要覆寫的屬性。|
 |`CompileDependsOn`|如果您想要在編譯步驟之前或之後插入自訂處理序，這是要覆寫的屬性。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [Visual Studio 整合](../msbuild/visual-studio-integration-msbuild.md) [MSBuild 概念](../msbuild/msbuild-concepts.md) [.Targets 檔案](../msbuild/msbuild-dot-targets-files.md)

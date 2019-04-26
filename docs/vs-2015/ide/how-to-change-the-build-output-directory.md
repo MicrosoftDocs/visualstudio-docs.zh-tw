@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2e1fd8e54d34d8998158781c9de67d2e3a8cf01
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 03288cdfce66527fb48a16891e745765a72615f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439264"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>如何：變更組建輸出目錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60104859"
 您可以根據組態 (針對偵錯及/或發行) 為專案所產生的輸出指定位置。  
   
 > [!NOTE]
->  如果您有 [安裝]  專案，請參閱本文結尾的附註。  
+> 如果您有 [安裝]  專案，請參閱本文結尾的附註。  
   
 ## <a name="changing-the-build-output-directory"></a>變更組建輸出目錄  
   
@@ -39,7 +39,7 @@ ms.locfileid: "60104859"
      尋找輸出路徑項目 (Visual Basic 中的 [**建置輸出路徑** ]、Visual C++ 中的 [ **輸出目錄** ]、JavaScript 和 C# 中的 [ **輸出路徑** ])。 指定相對於專案目錄的新建置輸出目錄。  
   
 > [!NOTE]
->  在安裝專案中，[輸出檔名稱]  方塊只會變更 Setup.exe 檔案的位置，而非專案檔案的位置。 如需詳細資訊，請參閱 **建置、組態屬性、部署專案屬性對話方塊**。  
+> 在安裝專案中，[輸出檔名稱]  方塊只會變更 Setup.exe 檔案的位置，而非專案檔案的位置。 如需詳細資訊，請參閱 **建置、組態屬性、部署專案屬性對話方塊**。  
   
 ## <a name="see-also"></a>請參閱  
  [專案設計工具、建置頁面 (C#)](../ide/reference/build-page-project-designer-csharp.md)   

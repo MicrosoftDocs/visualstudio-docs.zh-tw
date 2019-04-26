@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7bd8bae0213755b11c145c4bef9c312fe3990c4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432319"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：檢閱、儲存和設定建置記錄檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60053558"
      如需詳細資訊，請參閱[選項對話方塊、專案和解決方案、建置並執行](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) 及 <xref:Microsoft.Build.Framework.LoggerVerbosity>。  
   
     > [!IMPORTANT]
-    >  您必須重建專案，您的變更才會在 [輸出] 視窗 (所有專案) 和 <專案名稱>.txt 檔案 C++ 專案) 中生效。  
+    > 您必須重建專案，您的變更才會在 [輸出] 視窗 (所有專案) 和 <專案名稱>.txt 檔案 C++ 專案) 中生效。  
   
 ## <a name="see-also"></a>請參閱  
  [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)   

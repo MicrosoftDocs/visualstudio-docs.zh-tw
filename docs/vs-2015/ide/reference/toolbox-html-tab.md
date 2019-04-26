@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35c5b1275ced5eb7f2fee85c0592be2b5ed94533
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 6c0603bd820990789af0d9bbca147acd7004e1a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419750"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097527"
 ---
 # <a name="toolbox-html-tab"></a>HTML 索引標籤、工具箱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ ms.locfileid: "63419750"
  如需詳細資訊，請參閱 [HTML Input 控制項](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputText 伺服器控制項宣告式語法](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e) \(機器翻譯\)、[TextBox Web 伺服器控制項概觀](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlInputText> 與 <xref:System.Web.UI.WebControls.TextBox>。  
   
 > [!IMPORTANT]
-> 建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
+>  建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
   
  **輸入 (檔案)**  
  ![HTML 網頁檔案欄位](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -112,7 +112,7 @@ ms.locfileid: "63419750"
  如需詳細資訊，請參閱 [HTML Input 控制項](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) \(英文\)、[HtmlInputFile 伺服器控制項宣告式語法](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6) \(機器翻譯\) 與 <xref:System.Web.UI.HtmlControls.HtmlInputFile>。  
   
 > [!IMPORTANT]
-> 建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
+>  建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
   
  **輸入 (密碼)**  
  ![Visual Studio 密碼欄位](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -128,7 +128,7 @@ ms.locfileid: "63419750"
  如需詳細資訊，請參閱 [HTML Input Controls](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (HTML Input 控制項)、[HtmlInputPassword Server Control Declarative Syntax](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f) (HtmlInputHidden 伺服器控制項宣告式語法)、[How to:Set a TextBox Web Server Control for Password Entry](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) (如何：設定 TextBox 網頁伺服器控制項以輸入密碼) 及 [Walkthrough:Validating User Input in a Web Forms Page](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436)(逐步解說：驗證 Web Forms 頁面中的使用者輸入)。  
   
 > [!IMPORTANT]
-> 如果您的應用程式傳輸使用者名稱和密碼，您應該設定網站使用安全通訊端層 (SSL) 來加密傳輸。 如需詳細資訊，請參閱 [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (IIS 作業手冊) 中的 "Securing Connections with SSL" (保護與 SSL 的連線)。 此外，建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
+>  如果您的應用程式傳輸使用者名稱和密碼，您應該設定網站使用安全通訊端層 (SSL) 來加密傳輸。 如需詳細資訊，請參閱 [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (IIS 作業手冊) 中的 "Securing Connections with SSL" (保護與 SSL 的連線)。 此外，建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
   
  **輸入 (核取方塊)**  
  ![HTML 網頁工具箱核取方塊選項](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -183,7 +183,7 @@ ms.locfileid: "63419750"
  如需詳細資訊，請參閱 [HtmlTextArea 伺服器控制項](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87) \(英文\)、<xref:System.Web.UI.HtmlControls.HtmlTextArea> 與 <xref:System.Web.UI.WebControls.TextBox>。  
   
 > [!IMPORTANT]
-> 建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
+>  建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
   
  **資料表**  
  ![HTMLpageToolbarTable 螢幕擷取畫面](../../ide/reference/media/vxtable.gif "vxTable")  

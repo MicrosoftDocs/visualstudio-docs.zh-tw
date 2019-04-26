@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437573"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60109805"
 專案是邏輯容器，以儲存建置您應用程式所需的所有檔案。 選擇主要功能表中的 [檔案] &#124; [新增] &#124; [專案] 來建立專案時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會建立一個包含該專案的方案。 您接著可以視需要將更多新的或現有專案加入方案。 您可以從現有的程式碼檔案建立專案，而且您可以建立暫存專案 (僅限 .NET)，當專案完成後，將刪除暫存專案。  
   
 > [!NOTE]
->  本主題中的描述以 Visual Studio Community 版本為基礎。 您看到的對話方塊與功能表命令，可能會依您的設定與 Visual Studio 版本而與此處描述的有所不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 本主題中的描述以 Visual Studio Community 版本為基礎。 您看到的對話方塊與功能表命令，可能會依您的設定與 Visual Studio 版本而與此處描述的有所不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>從已安裝的專案範本建立專案  
  從主要功能表中的 [檔案] &#124; [新增] &#124; [專案]，以顯示 [新增專案] 對話方塊。 在 [已安裝] &#124; [範本] 的左窗格中，選擇程式設計語言與平台或技術，然後從中間窗格的可用範本中進行選擇。  
@@ -42,7 +42,7 @@ ms.locfileid: "60109805"
  如果您有鬆散來源檔案的集合，則可以輕鬆地建立包含這些檔案的專案。 選擇 [檔案] &#124; [新增] &#124; [現有程式碼中的專案] 啟動 [從現有程式碼檔建立專案精靈]，並遵循提示。  
   
 > [!TIP]
->  這個選項最適合用於比較簡單的檔案集合。  
+> 這個選項最適合用於比較簡單的檔案集合。  
   
 ## <a name="create-a-temporary-project-c-and-visual-basic"></a>建立暫存的專案 (C# 和 Visual Basic)  
  藉由使用暫存專案，您可以建立和試驗 .NET 專案，而不必指定磁碟位置。 建立專案時，只需要選取專案類型和範本，並在 [新增專案]  對話方塊中指定名稱。 使用暫存專案時，隨時都可以儲存或捨棄它。  
@@ -83,7 +83,7 @@ ms.locfileid: "60109805"
  您可以永久刪除方案，但不是使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]來刪除。 刪除方案之前，請移動您可能再次用於另一個方案的任何專案。 然後使用 [檔案總管] 來刪除包含 .sln 和 .suo 方案檔案的目錄。  
   
 > [!NOTE]
->  .Suo 檔案是隱藏檔案，不會顯示在預設的 [檔案總管] 設定下。  
+> .Suo 檔案是隱藏檔案，不會顯示在預設的 [檔案總管] 設定下。  
   
 ##### <a name="to-delete-a-solution"></a>刪除方案  
   
