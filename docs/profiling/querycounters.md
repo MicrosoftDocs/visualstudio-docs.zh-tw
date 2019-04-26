@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 501818d000b2db69b0744649d8e4a472cb87a55b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982592"
 ---
 # <a name="querycounters"></a>QueryCounters
 **QueryCounters** 選項會列出電腦可用的 CPU (硬體) 效能計數器。

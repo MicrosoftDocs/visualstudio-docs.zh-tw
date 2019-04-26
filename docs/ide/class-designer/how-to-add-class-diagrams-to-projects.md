@@ -1,5 +1,5 @@
 ---
-title: 作法：將類別圖表新增至專案 (類別設計工具)
+title: HOW TO：將類別圖表新增至專案 (類別設計工具)
 ms.date: 05/08/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975590"
 ---
-# <a name="how-to-add-class-diagrams-to-projects"></a>作法：將類別圖表新增至專案
+# <a name="how-to-add-class-diagrams-to-projects"></a>HOW TO：將類別圖表新增至專案
 
 若要設計、編輯和重構類別及其他類型，請將類別圖加入至 C#、Visual Basic 或 C++ 專案。 若要在專案中視覺化程式碼的不同部分，請將多個類別圖加入至專案。
 

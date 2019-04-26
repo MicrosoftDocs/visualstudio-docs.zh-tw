@@ -13,11 +13,11 @@ ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
 ms.openlocfilehash: 97facaed877030dca4a6a2257147c4d92201ab55
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944927"
 ---
 # <a name="version-control-in-visual-studio"></a>Visual Studio 中的版本控制
 

@@ -6,11 +6,11 @@ description: 探索 Visual Studio 產品系列。
 ms.topic: landing-page
 searchScope: []
 ms.openlocfilehash: 77d03ae304886be2e6c588ccea1c6e8be97efb15
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59017983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777386"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b924cb02f46a0857c21903bed9200ed4ef79b6db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0713ae13038991ec65dcbebe350c9085f7d6a94a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797924"
 ---
 # <a name="perftips"></a>效能提示
 Visual Studio 偵錯工具 *「效能提示」* (PerfTips) 和已整合偵錯工具的 [診斷工具]  幫助您在偵錯時監視及分析應用程式效能。
@@ -32,27 +32,27 @@ Visual Studio 偵錯工具 *「效能提示」* (PerfTips) 和已整合偵錯工
 
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
 
--   [中斷事件]  時間軸會標記在偵錯工作階段中叫用的中斷點。 按一下事件，以選取 [偵錯工具]  詳細資料清單。
+- [中斷事件]  時間軸會標記在偵錯工作階段中叫用的中斷點。 按一下事件，以選取 [偵錯工具]  詳細資料清單。
 
--   [CPU 使用率]  圖形顯示偵錯工作階段中跨所有處理器核心的 CPU 使用變化。
+- [CPU 使用率]  圖形顯示偵錯工作階段中跨所有處理器核心的 CPU 使用變化。
 
--   [偵錯工具]  詳細資料窗格的 [事件]  清單包含每個中斷事件的項目。
+- [偵錯工具]  詳細資料窗格的 [事件]  清單包含每個中斷事件的項目。
 
--   中斷事件的 [持續期間]  資料行會顯示此事件和上一個中斷點之間經過的時間。
+- 中斷事件的 [持續期間]  資料行會顯示此事件和上一個中斷點之間經過的時間。
 
 ## <a name="turn-perftips-on-or-off"></a>開啟或關閉效能提示
  若要啟用或停用效能提示：
 
-1.  在 [ **偵錯** ] 功能表上選擇 [ **選項**]。
+1. 在 [ **偵錯** ] 功能表上選擇 [ **選項**]。
 
-2.  請選取或清除 [偵錯時顯示已耗用的效能提示] 。
+2. 請選取或清除 [偵錯時顯示已耗用的效能提示] 。
 
 ## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>開啟或關閉 [診斷工具] 視窗
  若要啟用或停用 [診斷工具] 視窗：
 
-1.  在 [ **偵錯** ] 功能表上選擇 [ **選項**]。
+1. 在 [ **偵錯** ] 功能表上選擇 [ **選項**]。
 
-2.  核取或清除 [偵錯時啟用診斷工具] 。
+2. 核取或清除 [偵錯時啟用診斷工具] 。
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio 中的分析](../profiling/index.md)

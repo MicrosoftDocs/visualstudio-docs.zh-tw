@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 88002f4187883d55f22ec9f3dc80f3ceb65e7e48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784418"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試
 
@@ -59,7 +59,7 @@ ms.locfileid: "55956320"
 
 您可以使用 [自動程式化 UI 測試編輯器]，檢視和編輯 Visual C# 和 Visual Basic 型自動程式化 UI 測試。
 
-![包含自動程式化 UI 測試產生器的操作功能表編輯](../test/media/editcodeduitest.png)
+![包含自動程式碼 UI 測試產生器的內容功能表編輯](../test/media/editcodeduitest.png)
 
 在 [方案總管] 中，開啟 *UIMap.uitest* 的捷徑功能表，並選擇 [開啟]。 此自動程式化 UI 測試隨即在 [自動程式化 UI 測試編輯器] 中顯示。 您現在可以檢視和編輯自動程式碼 UI 測試中錄製的方法、動作和對應控制項。
 

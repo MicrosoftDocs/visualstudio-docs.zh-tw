@@ -9,12 +9,12 @@ ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94d996dbd069c258522418b9ca0be14bf54df156
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ec6ca0e39a7816d99377bc13e1274cbc96a663ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970631"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>HOW TO：指定負載測試回合設定的計時詳細資料儲存區屬性
 
@@ -47,17 +47,17 @@ ms.locfileid: "55948689"
 
 ## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>若要設定負載測試中的計時詳細資料儲存區屬性
 
-1.  在負載測試編輯器中開啟負載測試。
+1. 在負載測試編輯器中開啟負載測試。
 
-2.  展開負載測試中的 [回合設定] 節點。
+2. 展開負載測試中的 [回合設定] 節點。
 
-3.  選擇您要設定的回合設定，例如 [回合設定1[作用中]]。
+3. 選擇您要設定的回合設定，例如 [回合設定1[作用中]]。
 
-4.  開啟 [屬性] 視窗。 在 [檢視] 功能表上，選取 [屬性視窗]。
+4. 開啟 [屬性] 視窗。 在 [檢視] 功能表上，選取 [屬性視窗]。
 
-5.  在 [結果] 分類底下，選擇 [計時詳細資料儲存區] 屬性，並選取 [所有個別細節]。
+5. 在 [結果] 分類底下，選擇 [計時詳細資料儲存區] 屬性，並選取 [所有個別細節]。
 
-     設定 [計時詳細資料儲存區] 屬性的 [所有個別細節] 設定之後，您可以執行負載測試並檢視 [虛擬使用者活動圖]。 如需詳細資訊，請參閱[＜How to：分析虛擬使用者在負載測試期間的行為](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)。
+     設定 [計時詳細資料儲存區] 屬性的 [所有個別細節] 設定之後，您可以執行負載測試並檢視 [虛擬使用者活動圖]。 如需詳細資訊，請參閱[如何：分析虛擬使用者在負載測試期間的行為](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: d7258549b242091737e14e00980447eb48d5e78b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551589"
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest 參考手冊
 

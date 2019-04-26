@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: 了解如何尋找及下載隨附於 Visual Studio 訂用帳戶的 Microsoft 產品。
 searchscope: VS Subscription
 ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953697"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的訂閱者下載
 您可以存取各種下載軟體，這是訂閱者權益的一部分。

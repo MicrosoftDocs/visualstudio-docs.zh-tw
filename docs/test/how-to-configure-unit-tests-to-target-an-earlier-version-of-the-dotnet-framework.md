@@ -8,13 +8,13 @@ ms.workload:
 - dotnet
 author: gewarren
 ms.openlocfilehash: 0d77bd4fa5a1797b5e405c0b1af12cd1c24b18f7
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979359"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>作法：設定以舊版 .NET Framework 為目標的單元測試
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>HOW TO：設定以舊版 .NET Framework 為目標的單元測試
 
 當您在 Microsoft Visual Studio 中建立測試專案時，預設會將目標設為最新版本的 .NET Framework。 此外，如果您升級舊版的 Visual Studio 測試專案，它們也會升級成以最新版本的 .NET Framework 為目標。 藉由編輯專案屬性，您可以明確地將專案目標重定為舊版的 .NET Framework。
 
