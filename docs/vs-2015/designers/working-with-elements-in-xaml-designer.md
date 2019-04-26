@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5a6e0ae31068144cb7de5ff83ac562db8f833d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403451"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ ms.locfileid: "60045136"
      當您開啟邊界裝飾項但未設定相反側的邊界時，相反側的邊界會根據畫板中的項目位置設為正確的值。 請一律至少為相反側的邊界 (例如 [左] 和 [右] 邊界) 設定一個屬性。  
   
     > [!IMPORTANT]
-    >  放在某些配置容器 (如 <xref:Windows.UI.Xaml.Controls.Canvas>) 中的項目沒有邊界提示。 根據 <xref:Windows.UI.Xaml.Controls.StackPanel> 的方向而定，放在 `StackPanel` 內的項目具有左右邊界或上下邊界的邊界提示。  
+    > 放在某些配置容器 (如 <xref:Windows.UI.Xaml.Controls.Canvas>) 中的項目沒有邊界提示。 根據 <xref:Windows.UI.Xaml.Controls.StackPanel> 的方向而定，放在 `StackPanel` 內的項目具有左右邊界或上下邊界的邊界提示。  
   
 ## <a name="grouping-and-ungrouping-elements"></a>群組和取消群組項目  
  在 XAML 設計工具中群組兩個以上的項目，可以建立新配置容器並將這些項目放在該容器內。 將兩個以上的項目一起放在配置容器中，可讓您輕鬆地選取、移動及轉換群組，就如同將該群組中的所有項目都當成一個項目。 群組對於識別彼此相關的項目也很有幫助，例如組成導覽項目的按鈕。 取消項目群組時，只要刪除內含項目的配置容器即可。  
@@ -106,7 +106,7 @@ ms.locfileid: "60045136"
 2. 以滑鼠右鍵按一下選取的項目，並指向 [群組置入]，然後按一下您要置入群組的版面配置容器類型。  
   
     > [!TIP]
-    >  如果您選取 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 來群組項目，這些項目會放在 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 的新 <xref:Windows.UI.Xaml.Controls.Grid> 面板中。 如果您將這其中一個配置容器中的項目取消群組，則只會刪除 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer>，並且將 <xref:Windows.UI.Xaml.Controls.Grid> 面板保留下來。 若要刪除 `Grid` 面板，請再次取消項目的群組。  
+    > 如果您選取 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 來群組項目，這些項目會放在 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 的新 <xref:Windows.UI.Xaml.Controls.Grid> 面板中。 如果您將這其中一個配置容器中的項目取消群組，則只會刪除 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer>，並且將 <xref:Windows.UI.Xaml.Controls.Grid> 面板保留下來。 若要刪除 `Grid` 面板，請再次取消項目的群組。  
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>若要取消項目群組和刪除配置  
   

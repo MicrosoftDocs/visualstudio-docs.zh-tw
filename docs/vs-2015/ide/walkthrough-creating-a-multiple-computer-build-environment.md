@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e2e4f3882a6bd3b3f7ce9b70aec45f244377d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f0967f50c9dce325ff1595fec9d50138aa0a8d74
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438131"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ ms.locfileid: "60044299"
   請注意，[Program Files] 資料夾的名稱取決於所安裝的作業系統。 在 x86 電腦上，此名稱會是 \Program Files\\；在 x64 電腦上，此名稱會是 \Program Files (x86)\\。 不論系統架構為何，本逐步解說會將 [Program Files] 資料夾稱為 %ProgramFiles%。  
   
 > [!NOTE]
->  在組建電腦上，所有相關檔案都必須在相同的磁碟機上；不過，該磁碟機的磁碟機代號可能會與 Visual Studio 安裝在主機電腦上之磁碟機的磁碟機代號不同。 在任何情況下，當您建立登錄項目時，您必須考慮檔案的位置，如本文件稍後所述。  
+> 在組建電腦上，所有相關檔案都必須在相同的磁碟機上；不過，該磁碟機的磁碟機代號可能會與 Visual Studio 安裝在主機電腦上之磁碟機的磁碟機代號不同。 在任何情況下，當您建立登錄項目時，您必須考慮檔案的位置，如本文件稍後所述。  
   
 #### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>將 Windows SDK 檔案複製到組建電腦  
   
@@ -223,7 +223,7 @@ ms.locfileid: "60044299"
 1. 識別登錄項目的父資料夾。 所有登錄項目都會在相同的父機碼下建立。 在 x86 電腦上，父機碼會是 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\。 在 x64 電腦上，父機碼會是 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\。 不論系統架構為何，本逐步解說會將父機碼稱為 %RegistryRoot%。  
   
    > [!NOTE]
-   >  如果主機電腦的架構與組建電腦的架構不同，請務必在每部電腦上使用適當的父機碼。 如果您想要自動化匯出程序，這會特別重要。  
+   > 如果主機電腦的架構與組建電腦的架構不同，請務必在每部電腦上使用適當的父機碼。 如果您想要自動化匯出程序，這會特別重要。  
    >   
    >  此外，如果您想要在組建電腦上使用與主機電腦上所用不同的磁碟機代號，請務必變更要比對之登錄項目的值。  
   
@@ -334,7 +334,7 @@ ms.locfileid: "60044299"
      **gacutil -i \<檔案>**  
   
     > [!NOTE]
-    >  組件可能需要重新開機，才能完整安裝到 GAC。  
+    > 組件可能需要重新開機，才能完整安裝到 GAC。  
   
 ## <a name="BuildingProjects"></a> 建置專案  
  您可以使用 Team Foundation Build 建置 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 專案和方案，或是在命令列上加以建置。 當您使用 Team Foundation Build 建置專案時，它會叫用對應至系統架構的 MSBuild 可執行檔。  在命令列上，您可以使用 32 位元 MSBuild 或 64 位元 MSBuild，而且可以藉由設定 PATH 環境變數，或直接叫用特定架構的 MSBuild 可執行檔，來選擇 MSBuild 的架構。  
@@ -346,17 +346,17 @@ ms.locfileid: "60044299"
  如需如何在命令列上使用 MSBuild 的詳細資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。  
   
 > [!NOTE]
->  若要建置 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 專案，您必須使用 "v110" 平台工具組。 如果您不想要編輯 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 專案檔，您可以使用下列命令列引數來設定平台工具組：  
+> 若要建置 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 專案，您必須使用 "v110" 平台工具組。 如果您不想要編輯 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 專案檔，您可以使用下列命令列引數來設定平台工具組：  
 >   
->  **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
+> **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
   
 ## <a name="CreatingForSourceControl"></a> 建立建置環境以便可將它簽入原始檔控制  
  您可以建立可部署到各種電腦的建置環境，而不需要對檔案進行 GAC 或修改登錄設定。 下列步驟只是完成此作業的一種方式。 請根據您的建置環境獨特的特性，來調整這些步驟。  
   
 > [!NOTE]
->  您必須停用累加建置，以免 tracker.exe 在建置期間擲回錯誤。 若要停用累加建置，請設定下列組建參數：  
+> 您必須停用累加建置，以免 tracker.exe 在建置期間擲回錯誤。 若要停用累加建置，請設定下列組建參數：  
 >   
->  **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
+> **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
   
 #### <a name="to-create-a-build-environment-that-can-be-checked-into-source-control"></a>建立可簽入原始檔控制的建置環境  
   
