@@ -12,12 +12,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: deabd34896b327f7cbbb35c7af75f5810dcfbf17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433038"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>How to: Create and Run an Unattended Installation of Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60040542"
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的安裝應用程式網路路徑類似 \\\\<伺服器名稱>\IDEinstall\\<產品>.exe。
 
     > [!NOTE]
-    >  如果任何路徑與檔名的組合超過 260 個字元，則安裝可能會失敗。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 路徑的長度上限為 221 個字元。  本機路徑名稱不應超過 70 個字元，且網路路徑名稱不應超過 39 個字元。
+    > 如果任何路徑與檔名的組合超過 260 個字元，則安裝可能會失敗。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 路徑的長度上限為 221 個字元。  本機路徑名稱不應超過 70 個字元，且網路路徑名稱不應超過 39 個字元。
 
      如果路徑中的資料夾名稱包含內嵌空白字元 (例如："<伺服器名稱>\\\\\IDE install" 或 <伺服器名稱>\\\\<伺服器名稱>\Visual Studio\\)，安裝可能也會失敗。
 
@@ -46,16 +46,16 @@ ms.locfileid: "60040542"
  若要以自動模式部署 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，您必須修改 AdminDeployment.xml 檔案。 若要這樣做，您必須先使用 `/CreateAdminFile` \<檔案位置> 命令列參數，建立 AdminDeployment.xml 檔案。 如果您將檔案放在 *磁碟機*:\IDEinstall\packages 目錄，即可使用此檔案將 Visual Studio 部署推送至您的網路或提取至安裝中。 AdminDeployment.xml 檔案對於作業系統、架構、Visual Studio 版本或作業系統語言不是唯一的。
 
 > [!CAUTION]
->  有時，無法安裝 AdminDeployment.xml 檔案中列為選取的項目。 若要解決這個問題，請將標記為 “Selected="是"” 的項目放在 AdminDeployment.xml 檔案的 **結尾處** 。
+> 有時，無法安裝 AdminDeployment.xml 檔案中列為選取的項目。 若要解決這個問題，請將標記為 “Selected="是"” 的項目放在 AdminDeployment.xml 檔案的 **結尾處** 。
 >
->  如果不想安裝項目的選擇性相依性，則必須先選取父代，再取消選取父代後的選擇性相依性，如下列螢幕擷取畫面所示：
+> 如果不想安裝項目的選擇性相依性，則必須先選取父代，再取消選取父代後的選擇性相依性，如下列螢幕擷取畫面所示：
 >
->  ![AdminDeployment.xml 檔案結尾處的安裝項目](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
+> ![AdminDeployment.xml 檔案結尾處的安裝項目](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
 >
->  執行這項作業的另一個方法，就是省略父代的選擇性子系，換言之，不包括任何 “Selected=”否”” 的項目；但是您仍然必須將所有 “Selected=”是”” 的項目放在 AdminDeployment.xml 檔案的結尾處。
+> 執行這項作業的另一個方法，就是省略父代的選擇性子系，換言之，不包括任何 “Selected=”否”” 的項目；但是您仍然必須將所有 “Selected=”是”” 的項目放在 AdminDeployment.xml 檔案的結尾處。
 
 > [!IMPORTANT]
->  進行安裝時，電腦可能會自動重新啟動一次或多次。 重新啟動之後，您必須使用在執行安裝且電腦重新啟動前所用的相同使用者登入帳戶來重新登入。 您可以在執行自動安裝之前先安裝必要條件元件，即可避免自動重新啟動。 如需詳細資訊，請參閱 [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md)中的＜避免設定期間重新啟動＞一節。
+> 進行安裝時，電腦可能會自動重新啟動一次或多次。 重新啟動之後，您必須使用在執行安裝且電腦重新啟動前所用的相同使用者登入帳戶來重新登入。 您可以在執行自動安裝之前先安裝必要條件元件，即可避免自動重新啟動。 如需詳細資訊，請參閱 [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md)中的＜避免設定期間重新啟動＞一節。
 
  AdminDeployment 檔案結構描述包含下列項目：
 
@@ -71,7 +71,7 @@ ms.locfileid: "60040542"
 |BundleCustomizations|NoCacheOnlyMode|是&#124;預設值|防止封裝快取的預先填入。|
 
 > [!WARNING]
->  安裝應用程式將會接受 SelectableItem 的 Selected 狀態，即使它是隱藏的。 例如，如果您想要一律安裝可選取的項目，可以將其標記為隱藏和已選取。
+> 安裝應用程式將會接受 SelectableItem 的 Selected 狀態，即使它是隱藏的。 例如，如果您想要一律安裝可選取的項目，可以將其標記為隱藏和已選取。
 
 #### <a name="to-create-an-unattended-installation-of-visual-studio"></a>若要建立和執行自動 Visual Studio 安裝程式
 
@@ -100,7 +100,7 @@ ms.locfileid: "60040542"
  如果您開啟 [控制台]  然後重新安裝應用程式，您可以修改 Visual Studio 功能，解除安裝程式語言和修復或解除安裝 Visual Studio。
 
 > [!NOTE]
->  您必須具有本機電腦上的系統管理認證，才可以使用維護模式。
+> 您必須具有本機電腦上的系統管理認證，才可以使用維護模式。
 
 #### <a name="to-maintain-an-installation-on-a-client-computer"></a>維護用戶端電腦上的安裝
 

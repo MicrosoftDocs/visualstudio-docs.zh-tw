@@ -8,27 +8,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dc9c53055c31e8cfbedb089b48eda4274fe8b9a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: e35cb321772354de29b7b8466b6136c96cabf98d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683398"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081875"
 ---
 # <a name="layout-for-visual-studio"></a>適用於 Visual Studio 的版面配置
 就大部分的 Visual Studio 對話方塊[公用程式對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)，這是 unthemed 對話方塊該遵循標準[Windows Desktop 對話方塊版面配置原則](/windows/desktop/uxguide/win-dialog-box)。 如 Visual Studio 會移到重新整理其 UI 中，一些更重要的對話方塊會有新的設計可建立它們，產品定義的體驗。 這些[佈景主題對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)具有佈景主題的外觀。
 
-##  <a name="BKMK_UtilityDialogLayout"></a> 公用程式的對話方塊版面配置
+## <a name="BKMK_UtilityDialogLayout"></a> 公用程式的對話方塊版面配置
 
--   公用程式 對話方塊中的所有控制項應該在左上方開始，並往下流動。
+- 公用程式 對話方塊中的所有控制項應該在左上方開始，並往下流動。
 
--   在對話方塊中，以填滿大型區域上的可用空間永遠不會 center 控制項。
+- 在對話方塊中，以填滿大型區域上的可用空間永遠不會 center 控制項。
 
--   使用環境字型的對話方塊中的所有文字。 在撰寫 visual 規格時，指定環境字型，而不是選取特定字型和大小。 請參閱[環境字型](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)。
+- 使用環境字型的對話方塊中的所有文字。 在撰寫 visual 規格時，指定環境字型，而不是選取特定字型和大小。 請參閱[環境字型](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)。
 
--   使用一致的控制項的間距和位置來支援目標中而成的品質。
+- 使用一致的控制項的間距和位置來支援目標中而成的品質。
 
--   對話方塊會變得更複雜從較大量的控制項、 控制項、 唯一 juxtaposition 或兩者。 這些複雜的情況下，可讓控制項群組，讓使用者能夠剖析的邏輯流程之間有足夠的空間。
+- 對話方塊會變得更複雜從較大量的控制項、 控制項、 唯一 juxtaposition 或兩者。 這些複雜的情況下，可讓控制項群組，讓使用者能夠剖析的邏輯流程之間有足夠的空間。
 
 ### <a name="utility-dialog-layout-examples"></a>公用程式的對話方塊版面配置範例
  所有維度是以像素為單位都表示。
@@ -45,11 +45,11 @@ ms.locfileid: "56683398"
 
 #### <a name="margins"></a>邊界
 
--   所有對話都應該都有 12 個像素框線所有邊緣。
+- 所有對話都應該都有 12 個像素框線所有邊緣。
 
--   邊界群組範圍內應該是 9 個像素框架的邊緣。
+- 邊界群組範圍內應該是 9 個像素框架的邊緣。
 
--   邊界內的索引標籤控制項應該是 6 個索引標籤控制項的邊緣像素。
+- 邊界內的索引標籤控制項應該是 6 個索引標籤控制項的邊緣像素。
 
 #### <a name="command-buttons"></a>命令按鈕
 
@@ -69,13 +69,13 @@ ms.locfileid: "56683398"
 
 #### <a name="labels"></a>標籤
 
--   靠左對齊所有標籤。
+- 靠左對齊所有標籤。
 
--   標籤位於控制項上方，它們應該靠左對齊精確地具有其下的控制項，而且標籤的底部應該高於其他控制項 （例如，下拉式方塊） 的頂端的 5 個像素。
+- 標籤位於控制項上方，它們應該靠左對齊精確地具有其下的控制項，而且標籤的底部應該高於其他控制項 （例如，下拉式方塊） 的頂端的 5 個像素。
 
--   對於位於左側的控制項的標籤，標籤和輸入的控制項之間的最小寬度會是 10 個像素。 對齊文字方塊、 下拉式方塊或其他控制項，您應該建立隱含的第二個資料行。
+- 對於位於左側的控制項的標籤，標籤和輸入的控制項之間的最小寬度會是 10 個像素。 對齊文字方塊、 下拉式方塊或其他控制項，您應該建立隱含的第二個資料行。
 
--   標籤是句首大寫，後面接著冒號。 請參閱[文字樣式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。
+- 標籤是句首大寫，後面接著冒號。 請參閱[文字樣式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。
 
 #### <a name="distance-between-controls"></a>控制項之間的距離
  合理堆疊控制項。 沒有任何絕對的指導方針堆疊控制項之間的間距。 在控制項之間 tightness 會有些許之間對話。 20 個像素垂直的控制項/標籤配對，而 9 個像素水平控制項/標籤配對的建議的間距。 用於水平的括號的最小的控制項間距為 6 的像素。
@@ -96,11 +96,11 @@ ms.locfileid: "56683398"
 
 #### <a name="helper-text"></a>Helper 文字
 
--   一個對話方塊，可以顯示提供的對話方塊用途的詳細資訊的協助程式文字。 這通常位於頂端，並可以是 1 至 2 個句子。
+- 一個對話方塊，可以顯示提供的對話方塊用途的詳細資訊的協助程式文字。 這通常位於頂端，並可以是 1 至 2 個句子。
 
--   行長度應該是剖析，並讀取使用者的舒適寬度。 中型對話方塊應該不超過 550 像素寬。
+- 行長度應該是剖析，並讀取使用者的舒適寬度。 中型對話方塊應該不超過 550 像素寬。
 
-####  <a name="BKMK_InteriorCommandButtons"></a> 內部命令按鈕
+#### <a name="BKMK_InteriorCommandButtons"></a> 內部命令按鈕
  在更複雜的對話方塊中，內部的控制項可能有它自己相關的按鈕，這可能會影響對話方塊的 [認可] 按鈕的所在位置。
 
 - 使用內部的垂直對齊方式 （資料行） 按鈕 **[確定]**/**取消**為水平導向在右下角。
@@ -118,24 +118,24 @@ ms.locfileid: "56683398"
   **圖 08.01-g:水平與垂直確定/取消的內部按鈕**
 
 #### <a name="browse-button"></a>[瀏覽...]按鈕
- **[瀏覽...]** 遵循文字方塊中的按鈕應該拼出 [瀏覽...]完整，包括 省略符號。 如果有緊密的空間，或有多個 **[瀏覽...]** 在畫面上，按鈕的按鈕可縮減為的省略符號。
+ **[瀏覽...]** 遵循文字方塊中的按鈕應該拼出 [瀏覽...]完整，包括 [省略符號。 如果有緊密的空間，或有多個 **[瀏覽...]** 在畫面上，按鈕的按鈕可縮減為的省略符號。
 
-##  <a name="BKMK_ThemedDialogLayout"></a> 佈景主題對話方塊版面配置
+## <a name="BKMK_ThemedDialogLayout"></a> 佈景主題對話方塊版面配置
  在 Visual Studio 中的佈景主題對話方塊具有較淺的外觀，並提供更多的泛空白字元。 印刷樣式會提供更多的強調和感興趣，提供更開放的行距和各式各樣的字型大小和權數。 可能的話，chrome 和標題列已降低或移除。 這些對話方塊的配置都應該遵循這個基本模式：
 
-1.  對話方塊的背景是白色。
+1. 對話方塊的背景是白色。
 
-2.  以中間值灰色沒有規則 1 像素框線。
+2. 以中間值灰色沒有規則 1 像素框線。
 
-3.  對話方塊標題不再位於標題列，但提供視覺趣味與較大的點。 (請參閱中的字型的大小一節[文字樣式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。)
+3. 對話方塊標題不再位於標題列，但提供視覺趣味與較大的點。 (請參閱中的字型的大小一節[文字樣式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。)
 
-4.  加上額外的文字，例如描述、 標籤應**環境字型 + 粗體**。
+4. 加上額外的文字，例如描述、 標籤應**環境字型 + 粗體**。
 
-5.  淺灰色的 1 像素規則，以分隔內部的資料行。
+5. 淺灰色的 1 像素規則，以分隔內部的資料行。
 
-6.  預設的連結已經沒有底線。 暫留和已按下的狀態有變更色彩再加上底線。
+6. 預設的連結已經沒有底線。 暫留和已按下的狀態有變更色彩再加上底線。
 
-7.  認可按鈕 (類似 **[確定]**/**取消**) 位在右上角。
+7. 認可按鈕 (類似 **[確定]**/**取消**) 位在右上角。
 
 ### <a name="themed-dialog-layout-examples"></a>佈景主題對話方塊版面配置範例
  ![佈景主題對話方塊版面配置](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 h_ThemedDialog")

@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444746"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令列參數
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "60050700"
 Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您從命令列建置、偵錯和部署專案。 使用這些參數透過指令碼或 .bat 檔案 (例如，夜間組建指令碼) 執行 IDE，或在特定組態中啟動 IDE。  
   
 > [!NOTE]
->  針對組建相關工作，現在建議您使用 MSBuild，而不是 devenv。 如需詳細資訊，請參閱[命令列參考](../../msbuild/msbuild-command-line-reference.md)。  
+> 針對組建相關工作，現在建議您使用 MSBuild，而不是 devenv。 如需詳細資訊，請參閱[命令列參考](../../msbuild/msbuild-command-line-reference.md)。  
   
 > [!NOTE]
->  您必須以系統管理員身分執行 devenv，才能使用 [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) 和 [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) 參數。  
+> 您必須以系統管理員身分執行 devenv，才能使用 [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) 和 [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) 參數。  
   
 ## <a name="devenv-switch-syntax"></a>Devenv 參數語法  
  根據預設，devenv 命令會將參數傳遞至 devenv.com 公用程式。  
@@ -57,7 +57,7 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
 - 如果您提供專案檔名稱，而不是方案檔名稱，`devenv` 命令將會在專案檔的上層資料夾中搜尋同名的方案檔。 例如，`devenv /build myproject1.vbproj` 命令將會在上層資料夾中搜尋名為 "myproject1.sln" 的方案檔。  
   
     > [!NOTE]
-    >  只能有一個參考此專案的方案檔應該位於其上層資料夾。 如果上層資料夾未包含參考此專案的方案檔，或上層資料夾包含兩個或多個參考此專案的方案檔，將會建立針對此專案命名並參考此專案的暫存方案檔。  
+    > 只能有一個參考此專案的方案檔應該位於其上層資料夾。 如果上層資料夾未包含參考此專案的方案檔，或上層資料夾包含兩個或多個參考此專案的方案檔，將會建立針對此專案命名並參考此專案的暫存方案檔。  
   
 - 檔案路徑和檔名包括空格時，必須用雙引號 ("") 括住它們。 例如，"c:\project a\\"。  
   

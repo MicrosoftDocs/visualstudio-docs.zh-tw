@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 823b853363e3044383da4673d7e88a96d9e5ea6a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439368"
 ---
 # <a name="msbuild-batching"></a>MSBuild 批次處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59664332"
  您可以在其中一個工作屬性中使用 %(*ItemMetaDataName*) 標記法，以指定要讓 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 執行工作的批次處理。 下列範例會根據 `Color` 項目中繼資料值，將 `Example` 項目清單分割成批次，並將每個批次個別傳遞給 `MyTask` 工作。  
   
 > [!NOTE]
->  如果您不需參考工作屬性中其他位置的項目清單，或中繼資料名稱可能模稜兩可，您可以使用 %(*ItemCollection.ItemMetaDataName*) 標記法，來完整限定要用於批次處理的項目中繼資料值。  
+> 如果您不需參考工作屬性中其他位置的項目清單，或中繼資料名稱可能模稜兩可，您可以使用 %(*ItemCollection.ItemMetaDataName*) 標記法，來完整限定要用於批次處理的項目中繼資料值。  
   
 ```  
 <Project  

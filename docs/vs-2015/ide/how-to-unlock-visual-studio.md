@@ -10,12 +10,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435090"
 ---
 # <a name="how-to-unlock-visual-studio"></a>如何解除鎖定 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60072548"
 2. 輸入 Microsoft 帳戶或工作/學校帳戶的認證。 Visual Studio 將會尋找與您的帳戶關聯的 MSDN 訂閱或 Visual Studio Team Services 訂閱。
 
 > [!IMPORTANT]
->  當您從 Team Explorer 工具視窗連線到 Visual Studio Team Services 帳戶時，Visual Studio 會自動尋找關聯的線上訂閱。 當您連線到 Visual Studio Team Services 帳戶時，您可以使用 Microsoft 帳戶和工作/學校帳戶進行登入。 如果該使用者帳戶有線上訂閱，Visual Studio 會自動為您解除鎖定 IDE。
+> 當您從 Team Explorer 工具視窗連線到 Visual Studio Team Services 帳戶時，Visual Studio 會自動尋找關聯的線上訂閱。 當您連線到 Visual Studio Team Services 帳戶時，您可以使用 Microsoft 帳戶和工作/學校帳戶進行登入。 如果該使用者帳戶有線上訂閱，Visual Studio 會自動為您解除鎖定 IDE。
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>使用產品金鑰解除鎖定 Visual Studio
 
@@ -43,7 +43,7 @@ ms.locfileid: "60072548"
 2. 在提供的空格中輸入產品金鑰。
 
 > [!TIP]
->  Visual Studio 發行前版本不需要產品金鑰。 您必須登入 IDE 才能使用發行前版本。
+> Visual Studio 發行前版本不需要產品金鑰。 您必須登入 IDE 才能使用發行前版本。
 
 ## <a name="addressing-license-problem-states"></a>解決授權問題狀態
 
@@ -63,7 +63,7 @@ ms.locfileid: "60072548"
    如果您未重新輸入認證，則權杖會開始過時。 當發生這種情況時，[帳戶設定] 對話方塊會通知您在權杖完全過期之前還剩下多少天。 權杖過期之後，您必須使用上述另一個方法重新輸入這個帳戶或授權的認證，才能繼續使用 Visual Studio。
 
 > [!IMPORTANT]
->  如果您在限制存取或無法存取網際網路的環境中使用 Visual Studio 很長一段時間，則應使用產品金鑰來解除鎖定 Visual Studio，以避免中斷。
+> 如果您在限制存取或無法存取網際網路的環境中使用 Visual Studio 很長一段時間，則應使用產品金鑰來解除鎖定 Visual Studio，以避免中斷。
 
 ### <a name="updating-expired-licenses"></a>更新到期的授權
  如果您的訂閱完全到期，而不再具有 Visual Studio 的存取權限，您必須：

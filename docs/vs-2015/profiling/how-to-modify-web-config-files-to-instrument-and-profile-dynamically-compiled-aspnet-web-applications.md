@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d9e4fc4dfdff336b9ddcbd04bd031b48a8acc4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432608"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60099583"
  本主題說明如何修改 web.config 組態檔，以啟用 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式的檢測和程式碼剖析。  
   
 > [!NOTE]
->  當您使用取樣程式碼剖析方法，或是想要檢測預先編譯的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 模組時，不需要修改 web.config 檔。  
+> 當您使用取樣程式碼剖析方法，或是想要檢測預先編譯的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 模組時，不需要修改 web.config 檔。  
   
  web.config 檔的根是 **configuration** 項目。 若要檢測動態編譯的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式並對其進行程式碼剖析，您必須加入或修改下列項目：  
   

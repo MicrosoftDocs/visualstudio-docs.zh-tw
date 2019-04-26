@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c2082e4f2c67696f057ea8fc779bfaf391e0af1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a77c390dd0934b0f02320080765765163a8afb93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445608"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>逐步解說：從頭開始建立 MSBuild 專案檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -151,11 +151,11 @@ ms.locfileid: "60096578"
  建置目標中的工作會循序執行。 在此情況下，Visual C# 編譯器 `Csc` 工作是唯一的工作。 它會預期要編譯的原始程式檔清單，由 `Compile` 項目的值提供。 `Compile` 項目僅參考一個原始程式檔 Helloworld.cs。  
   
 > [!NOTE]
->  在項目元素中，您可以使用星號萬用字元 (*) 參考副檔名為 .cs 的所有檔案，如下所示：  
+> 在項目元素中，您可以使用星號萬用字元 (*) 參考副檔名為 .cs 的所有檔案，如下所示：  
 >   
->  `<Compile Include="*.cs" />`  
+> `<Compile Include="*.cs" />`  
 >   
->  不過，建議您不要使用萬用字元，因為加入或刪除原始程式檔時，它會使得偵錯及選擇性目標變得更困難。  
+> 不過，建議您不要使用萬用字元，因為加入或刪除原始程式檔時，它會使得偵錯及選擇性目標變得更困難。  
   
 ## <a name="extending-the-path-to-include-msbuild"></a>擴充路徑以包括 MSBuild  
  在您可以存取 MSBuild 之前，您必須擴充 PATH 環境變數，以包括 .NET Framework 資料夾。  
@@ -182,9 +182,9 @@ ms.locfileid: "60096578"
      此時應該會顯示 [Hello, world!] 訊息。  
   
 > [!NOTE]
->  提升詳細資訊層級，即可查看組建的更多詳細資料。 若要將詳細資訊層級設為「詳細」，請在命令提示字元處輸入下列任何一個命令：  
+> 提升詳細資訊層級，即可查看組建的更多詳細資料。 若要將詳細資訊層級設為「詳細」，請在命令提示字元處輸入下列任何一個命令：  
 >   
->  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+> **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
   
 ## <a name="adding-build-properties"></a>加入建置屬性  
  您可以將建置屬性加入專案檔，以進一步控制組建。 立刻加入以下屬性：  
@@ -243,17 +243,17 @@ ms.locfileid: "60096578"
 ```  
   
 > [!NOTE]
->  當您在 `OutputPath` 項目中指定資料夾名稱時，建議您在資料夾名稱的結尾加入反斜線 (\\) 路徑分隔符號，而不是在 `Csc` 工作的 `OutputAssembly` 屬性中加入它。 因此，  
+> 當您在 `OutputPath` 項目中指定資料夾名稱時，建議您在資料夾名稱的結尾加入反斜線 (\\) 路徑分隔符號，而不是在 `Csc` 工作的 `OutputAssembly` 屬性中加入它。 因此，  
 >   
->  `<OutputPath>Bin\</OutputPath>`  
+> `<OutputPath>Bin\</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
 >   
->  勝過  
+> 勝過  
 >   
->  `<OutputPath>Bin</OutputPath>`  
+> `<OutputPath>Bin</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
   
 ## <a name="testing-the-build-properties"></a>測試建置屬性  
  現在，您可以使用專案檔建置應用程式，您在該檔案中使用建置屬性來指定輸出資料夾和應用程式名稱。  

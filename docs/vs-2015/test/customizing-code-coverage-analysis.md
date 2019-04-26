@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768029"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059249"
 ---
 # <a name="customizing-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +115,7 @@ ms.locfileid: "54768029"
   
    所有相符項目皆不區分大小寫。  
   
-   例如：  
+   例如:   
   
 ```xml  
 <ModulePaths>  
@@ -183,11 +183,11 @@ ms.locfileid: "54768029"
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>自訂命令列測試中的回合設定  
  若要從命令列執行測試，請使用 vstest.console.exe。 設定檔案是此公用程式的參數。 如需詳細資訊，請參閱[從命令列使用 VSTest.console](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a)。  
   
-1.  啟動 Visual Studio Developer 命令提示字元：  
+1. 啟動 Visual Studio Developer 命令提示字元：  
   
      在 Windows 的 [開始] 上，依序選擇 [所有程式]、[Microsoft Visual Studio]、[Visual Studio Tools] 和 [開發人員命令提示字元]。  
   
-2.  執行：  
+2. 執行：  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
   
@@ -202,13 +202,13 @@ ms.locfileid: "54768029"
   
 3. 在 [流程] 頁面上，展開 [自動化測試]、[測試來源]、[回合設定]。 選取 **.runsettings** 檔案。  
   
-   - <em>但是會出現 [測試組件] 而非 [測試來源]。當我嘗試設定 [回合設定] 欄位時，我只能選取 .testsettings 檔案。*  
+   - <em>但是會出現 [測試組件] 而非 [測試來源]。當我嘗試設定 [回合設定]** 欄位時，我只能選取 .testsettings 檔案。*  
   
       在 [自動化測試] 下選取 [測試組件]，然後選擇該行結尾的 [...]。 在 [新增/編輯測試回合] 對話方塊中，將 [測試執行器] 設為 [Visual Studio 測試執行器]。  
   
    結果會顯示在組建報告的摘要區段。  
   
-##  <a name="sample"></a> 範例 .runsettings 檔案  
+## <a name="sample"></a> 範例 .runsettings 檔案  
  複製此程式碼並根據您自己的需求進行編輯。 這是預設的 .runsettings 檔案。  
   
  (如需 .runsettings 檔案的其他用法，請參閱[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md))。  
@@ -325,6 +325,6 @@ Included items must then not match any entries in the exclude list to remain inc
   
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
  [對程式碼進行單元測試](../test/unit-test-your-code.md)

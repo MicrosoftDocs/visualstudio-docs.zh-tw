@@ -25,12 +25,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93fd3bcff6fa16a4fb28521c58ff2caad6edafbb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: efbdccf4d5774322b42a517831b22186103347b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430893"
 ---
 # <a name="mt-task"></a>MT 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "59667907"
  下表說明 **MT** 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。  
   
 > [!NOTE]
->  mt.exe 文件使用連字號 (**-**) 做為命令列選項的前置詞，但本主題使用斜線 (**/**)。 任一前置詞都可接受。  
+> mt.exe 文件使用連字號 (**-**) 做為命令列選項的前置詞，但本主題使用斜線 (**/**)。 任一前置詞都可接受。  
   
 |參數|說明|  
 |---------------|-----------------|  

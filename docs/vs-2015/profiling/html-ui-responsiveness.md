@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bf70ab2477d135486f09b60ef143bd2569c87298
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438377"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI 回應性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ ms.locfileid: "60070360"
 4. 選擇性地將使用者標記加入程式碼，請使用 [標記程式碼以供分析](#ProfileMark)。  
   
     > [!TIP]
-    >  當您檢視分析工具資料時，使用者標記可以協助您識別回應性問題。 例如，您可以在造成回應性問題的程式碼區段的開頭和結尾加入使用者標記。  
+    > 當您檢視分析工具資料時，使用者標記可以協助您識別回應性問題。 例如，您可以在造成回應性問題的程式碼區段的開頭和結尾加入使用者標記。  
   
 5. 請依照上一節中的指示執行 UI 回應性分析工具。  
   
@@ -127,7 +127,7 @@ ms.locfileid: "60070360"
     - 下列項目中指定的其他事件： [Profiler event reference](#ProfilerEvents).  
   
     > [!TIP]
-    >  分析工具中大部分的有用資訊都會出現在時間軸詳細資料圖表中。  
+    > 分析工具中大部分的有用資訊都會出現在時間軸詳細資料圖表中。  
   
 12. 在 CPU 使用率或視覺輸送量 (FPS) 圖表中選取區域後，選擇 [ **放大** ] (按鈕或內容功能表) 以取得詳細資訊。 圖形的時間軸會變成只顯示選取的時段。  
   
@@ -153,7 +153,7 @@ if (performance && performance.mark) {
  當您將滑鼠指標停留在使用者標記上時，事件的描述會顯示為工具提示。 您可以視需要加入任意數目的使用者標記。  
   
 > [!NOTE]
->  `console.timeStamp`(Chrome 命令) 也會顯示成使用者標記。  
+> `console.timeStamp`(Chrome 命令) 也會顯示成使用者標記。  
   
  下圖顯示具有單一使用者標記和其工具提示的診斷尺規。  
   
@@ -198,7 +198,7 @@ if (performance.mark && performance.measure) {
  CPU 使用率圖形顯示花在所有應用程式執行緒的時間，將一個或多個 CPU 的 CPU 使用率值合併為單一的百分比值。 當多個 CPU 正在使用中時，CPU 使用率值可能會超過 100%。  
   
 > [!NOTE]
->  圖表中並不會顯示 GPU 使用率。  
+> 圖表中並不會顯示 GPU 使用率。  
   
  這個範例顯示 CPU 使用率圖形的外觀：  
   
@@ -243,7 +243,7 @@ if (performance.mark && performance.measure) {
  此圖表顯示 UI 執行緒工作以及可能造成慢速視覺效果更新的背景執行緒工作。 圖形不會顯示 JavaScript JIT 工作、非同步 GPU 工作、在主機處理序之外執行的工作 (例如 RuntimeBroker.exe 和 dwm.exe 工作)，或未針對分析進行檢測之 Windows 執行階段區域的工作 (例如磁碟 I/O)。  
   
 > [!TIP]
->  在背景執行緒發生事件時，事件名稱旁會顯示以括號括住的執行緒 ID。  
+> 在背景執行緒發生事件時，事件名稱旁會顯示以括號括住的執行緒 ID。  
   
  這個範例顯示當選取 DOM Click 事件的事件接聽程式時，時間軸詳細資料圖形的外觀：  
   
@@ -274,7 +274,7 @@ if (performance.mark && performance.measure) {
     - 對於計時器、事件接聽程式 (DOM 事件)、配置事件和動畫畫面格回呼，[ **內含時間摘要** ] 區段 (色彩標示環) 中會顯示所選事件及其所有子系的色彩標示摘要。 影像的每個色彩標示切割表示一個事件型別。 工具提示提供事件型別名稱。  
   
     > [!TIP]
-    >  時間軸詳細資料圖形和 [ **內含時間摘要** ] 可協助您識別要最佳化的區域。 如果這些檢視中有出現大量的小型工作，表示這個事件可能就是要最佳化的事件。 例如，應用程式可能會經常重新整理 DOM 項目，因此產生大量的配置和 HTML 剖析事件。 您可以批次處理這項工作以最佳化效能。  
+    > 時間軸詳細資料圖形和 [ **內含時間摘要** ] 可協助您識別要最佳化的區域。 如果這些檢視中有出現大量的小型工作，表示這個事件可能就是要最佳化的事件。 例如，應用程式可能會經常重新整理 DOM 項目，因此產生大量的配置和 HTML 剖析事件。 您可以批次處理這項工作以最佳化效能。  
   
 ### <a name="FilterTimelineDetails"></a> 篩選時間軸詳細資料  
  您可以從特定事件的內容功能表中選取 [ **篩選事件** ]，在時間軸詳細資料中篩選並檢視特定事件。 選擇這個選項時，就會將時間軸和資料格檢視的範圍設定為選取的事件。 [CPU 使用率 (%)] 圖表中的選取範圍也會設定為特定事件。  
@@ -293,7 +293,7 @@ if (performance.mark && performance.measure) {
  若要篩選掉 UI 執行緒活動，請取消選取 [UI 活動]  選項。  
   
 > [!TIP]
->  清除此選項並選取 [網路流量] 選項，以調查與網路延遲相關的問題。  
+> 清除此選項並選取 [網路流量] 選項，以調查與網路延遲相關的問題。  
   
  若要篩選掉使用者測量，請清除 [使用者測量]  選項。 使用者測量是最上層事件，不含子系。  
   

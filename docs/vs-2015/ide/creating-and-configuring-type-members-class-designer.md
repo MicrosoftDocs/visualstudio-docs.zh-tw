@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c036680d540854eb3143875663aeac35a466884
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.openlocfilehash: 5cee90bd16f0b7a151ca826517f081a89518ff5b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323603"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060653"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>建立和設定類型成員 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,11 +59,11 @@ ms.locfileid: "58323603"
   
 |工作|支援內容|  
 |----------|------------------------|  
-|**開始使用：** 您必須先開啟 [類別細節] 視窗，才可建立及設定類型成員。|-   [開啟類別細節視窗](../ide/creating-and-configuring-type-members-class-designer.md#OpenClassDetails)<br />-   [類別細節使用注意事項](../ide/creating-and-configuring-type-members-class-designer.md#ClassDetailsUsageNotes)<br />-   [顯示唯讀資訊](../ide/creating-and-configuring-type-members-class-designer.md#ReadOnlyInfo)<br />-   [類別圖表和類別細節視窗中的鍵盤和滑鼠捷徑 (類別設計工具)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)|  
-|**建立和修改類型成員：** 您可以使用 [類別細節] 視窗來建立新的成員、修改成員，以及將參數新增至方法。|-   [建立成員](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)<br />-   [修改類型成員](../ide/creating-and-configuring-type-members-class-designer.md#ModifyTypeMembers)<br />-   [將參數新增至方法](../ide/creating-and-configuring-type-members-class-designer.md#AddMethodParams)|  
+|**開始使用：** 建立及設定類型成員之前，您必須開啟 [類別細節] 視窗。|-   [開啟類別細節視窗](../ide/creating-and-configuring-type-members-class-designer.md#OpenClassDetails)<br />-   [類別細節使用注意事項](../ide/creating-and-configuring-type-members-class-designer.md#ClassDetailsUsageNotes)<br />-   [顯示唯讀資訊](../ide/creating-and-configuring-type-members-class-designer.md#ReadOnlyInfo)<br />-   [類別圖表和類別細節視窗中的鍵盤和滑鼠捷徑 (類別設計工具)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)|  
+|**建立和修改類型成員：** 您可以建立新成員、 修改成員，並新增至方法的參數，使用 [類別細節] 視窗。|-   [建立成員](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)<br />-   [修改類型成員](../ide/creating-and-configuring-type-members-class-designer.md#ModifyTypeMembers)<br />-   [將參數新增至方法](../ide/creating-and-configuring-type-members-class-designer.md#AddMethodParams)|  
   
-##  <a name="OpenClassDetails"></a> 開啟類別細節視窗  
- 依預設，當您開啟新的類別圖表時會自動出現 [類別細節] 視窗 (請參閱[如何：將類別圖表新增至專案 (類別設計工具)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md))。 您也可以採用下列方式明確地開啟 [類別細節] 視窗。  
+## <a name="OpenClassDetails"></a> 開啟類別細節視窗  
+ 根據預設，[類別細節] 視窗會自動出現在您開啟新的類別圖表 (請參閱[How to:將類別圖表新增至專案 （類別設計工具）](../ide/how-to-add-class-diagrams-to-projects-class-designer.md))。 您也可以採用下列方式明確地開啟 [類別細節] 視窗。  
   
 #### <a name="to-open-the-class-details-window"></a>若要開啟類別細節視窗  
   
@@ -73,16 +73,16 @@ ms.locfileid: "58323603"
   
    -或-  
   
--   指向 [檢視] 功能表上的 [其他視窗]，然後按一下 [類別細節]。  
+- 指向 [檢視] 功能表上的 [其他視窗]，然後按一下 [類別細節]。  
   
-##  <a name="CreateMembers"></a> 建立成員  
+## <a name="CreateMembers"></a> 建立成員  
  您可以使用下列任何工具建立成員：  
   
--   類別設計工具  
+- 類別設計工具  
   
--   類別細節視窗工具列  
+- 類別細節視窗工具列  
   
--   類別細節視窗  
+- 類別細節視窗  
   
 > [!NOTE]
 >  您也可以使用本章節中的程序建立建構函式和解構函式。 請記住，建構函式和解構函式是特殊類型的方法，因此它們會出現在類別圖表圖案的 [方法] 區間以及 [類別細節] 視窗方格的 [方法] 區段中。  
@@ -92,45 +92,45 @@ ms.locfileid: "58323603"
   
 #### <a name="to-create-a-member-using-class-designer"></a>若要使用類別設計工具建立成員  
   
-1.  以滑鼠右鍵按一下您要新增成員的類型，並指向 [新增]，然後選擇您要新增的成員類型。  
+1. 以滑鼠右鍵按一下您要新增成員的類型，並指向 [新增]，然後選擇您要新增的成員類型。  
   
      如此就會建立新成員簽章並加入至類型。 新成員簽章會有預設名稱，稍後您可以在 [類別設計工具]、[類別細節] 視窗或 [屬性] 視窗中進行變更。  
   
-2.  您可以選擇性地指定類型等其他成員相關資訊。  
+2. 您可以選擇性地指定類型等其他成員相關資訊。  
   
 #### <a name="to-create-a-member-using-the-class-details-window-toolbar"></a>若要使用類別細節視窗工具列建立成員  
   
-1.  在圖表介面上選取您要加入成員的類型。  
+1. 在圖表介面上選取您要加入成員的類型。  
   
      類型會取得焦點，而其內容會顯示於 [類別細節] 視窗。  
   
-2.  在 [類別細節] 視窗工具列上按一下上方圖示，並且從下拉式清單中選取 [新增 \<成員>]。  
+2. 在 [類別細節] 視窗工具列上按一下上方圖示，並且從下拉式清單中選取 [新增 \<成員>]。  
   
      游標會針對要新增的成員類型移至列的 [名稱] 欄位。 例如，如果按一下 [新增屬性]，游標會移至 [類別細節] 視窗上 [屬性] 區段中的新一列。  
   
-3.  輸入您要建立的成員名稱，並且按 Enter 鍵 (或是做些按 Tab 鍵之類的動作移開焦點)。  
+3. 輸入您要建立的成員名稱，並且按 Enter 鍵 (或是做些按 Tab 鍵之類的動作移開焦點)。  
   
      如此就會建立新成員簽章並加入至類型。 現在成員就會存在於程式碼中，並顯示於 [類別設計工具]、[類別細節] 視窗和 [屬性] 視窗。  
   
-4.  您可以選擇性地指定類型等其他成員相關資訊。  
+4. 您可以選擇性地指定類型等其他成員相關資訊。  
   
 #### <a name="to-create-a-member-using-the-class-details-window"></a>若要使用類別細節視窗建立成員  
   
-1.  在圖表介面上選取您要加入成員的類型。  
+1. 在圖表介面上選取您要加入成員的類型。  
   
      類型會取得焦點，而其內容會顯示於 [類別細節] 視窗。  
   
-2.  在 [類別細節] 視窗中，於包含您要新增之成員類型的區段中，按一下 [\<新增成員>]。 例如，如果您要新增欄位，請按一下 [\<新增欄位>]。  
+2. 在 [類別細節] 視窗中，於包含您要新增之成員類型的區段中，按一下 [\<新增成員>]。 例如，如果您要新增欄位，請按一下 [\<新增欄位>]。  
   
-3.  輸入您要建立的成員名稱，並且按 Enter 鍵。  
+3. 輸入您要建立的成員名稱，並且按 Enter 鍵。  
   
      如此就會建立新成員簽章並加入至類型。 現在成員就會存在於程式碼中，並顯示於 [類別設計工具]、[類別細節] 視窗和 [屬性] 視窗。  
   
-4.  您可以選擇性地指定類型等其他成員相關資訊。  
+4. 您可以選擇性地指定類型等其他成員相關資訊。  
   
      **注意：** 您也可以使用鍵盤快速鍵來建立成員。 如需詳細資訊，請參閱[類別圖表和類別細節視窗中的鍵盤和滑鼠捷徑 (類別設計工具)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)。  
   
-##  <a name="ModifyTypeMembers"></a> 修改類型成員  
+## <a name="ModifyTypeMembers"></a> 修改類型成員  
  [類別設計工具] 可讓您修改圖表中所顯示類型的成員。 只要在類別圖中顯示的類型並非唯讀，您都可以修改其成員。 (請參閱[顯示唯讀資訊 (類別設計工具)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。)您可以在設計介面、[屬性] 視窗和 [類別細節] 視窗上使用就地編輯，以修改類型成員。  
   
  所有在 [類別細節] 視窗中顯示的成員，都代表在類別圖中的類型成員。 成員分成四種類型：方法、屬性、欄位和事件。  
@@ -139,52 +139,52 @@ ms.locfileid: "58323603"
   
  每個成員列都會顯示下列項目：  
   
--   **成員圖示**  
+- **成員圖示**  
   
      各成員類型都會顯現自己的圖示。 將滑鼠指向成員圖示以顯示成員簽章。 按一下成員圖示或成員圖示左邊的空白處，以選取那一列。  
   
--   **成員名稱**  
+- **成員名稱**  
   
      成員列中的 [名稱] 欄會顯示成員的名稱。 這個名稱也會顯示於 [屬性] 視窗的 [名稱] 屬性中。 您可以使用這個儲存格，變更任何具有讀寫權限的成員名稱。  
   
      如果 [名稱] 欄太窄而無法顯示完整名稱，將滑鼠指向成員名稱就會顯示完整名稱。  
   
--   **成員類型**  
+- **成員類型**  
   
      **MemberType** 儲存格使用 IntelliSense，讓您能從目前專案或參考專案中所有可用類型的清單中選取。  
   
--   **成員修飾詞**  
+- **成員修飾詞**  
   
      將成員的可視性修飾詞變更為 `Public` (`public`)、`Private` (`private`)、`Friend` (`internal`) `Protected` (`protected`)、`Protected``Friend` (`protected``internal`) 或 `Default`。  
   
--   **\<新增成員>**  
+- **\<新增成員>**  
   
      [類別細節] 視窗的最後一列包含 [名稱] 儲存格中的 **\<新增成員>** 文字。 如果按一下這個儲存格，便會建立新的成員。 如需詳細資訊，請參閱[建立成員](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)。  
   
--   **屬性視窗中的成員屬性**  
+- **屬性視窗中的成員屬性**  
   
      [類別細節] 視窗會顯示 [屬性] 視窗中出現的成員屬性的子集。 在一個位置變更屬性，便會在全域變更該屬性的值。 這包括在其他位置顯示的屬性值。  
   
--   **摘要**  
+- **摘要**  
   
      [摘要] 儲存格會公開成員的相關資訊摘要。 按一下 [摘要] 儲存格中的省略符號，即可檢視或編輯成員之 [摘要]、[傳回型別] 和 [備註] 的相關資訊。  
   
--   **隱藏**  
+- **隱藏**  
   
      如果選取 [隱藏] 核取方塊，類型中將不會顯示成員。  
   
 #### <a name="to-modify-a-type-member"></a>若要修改類型成員  
   
-1.  使用 [類別設計工具] 選取類型。  
+1. 使用 [類別設計工具] 選取類型。  
   
-2.  如果未顯示 [類別細節] 視窗，請按一下 [類別設計工具] 工具列上的 [類別細節視窗] 按鈕。  
+2. 如果未顯示 [類別細節] 視窗，請按一下 [類別設計工具] 工具列上的 [類別細節視窗] 按鈕。  
   
-3.  編輯 [類別細節] 視窗方格欄位中的值。 每次編輯之後都要按 ENTER，或讓焦點離開已編輯的欄位 (例如按下 TAB)。 您所進行的編輯會立即反應在程式碼中。  
+3. 編輯 [類別細節] 視窗方格欄位中的值。 每次編輯之後都要按 ENTER，或讓焦點離開已編輯的欄位 (例如按下 TAB)。 您所進行的編輯會立即反應在程式碼中。  
   
     > [!NOTE]
     >  如果您只想要修改成員的名稱，可以透過就地編輯來進行。  
   
-##  <a name="AddMethodParams"></a> 將參數新增至方法  
+## <a name="AddMethodParams"></a> 將參數新增至方法  
  您可以使用 [類別細節] 視窗將參數加入至方法。 參數可以設定為必要或是選擇性。 如果提供參數的 [選擇性預設值] 屬性值，即可指示設計工具產生程式碼作為選擇性參數。  
   
  參數列包含下列項目：  
@@ -209,11 +209,11 @@ ms.locfileid: "58323603"
   
 - **\<新增參數>**  
   
-   成員的最後一個參數列包含 [**<加入參數\>**] 字樣，位於 [**名稱**] 儲存格中。 按一下這個儲存格即可建立新參數。 如需詳細資訊，請參閱[將參數新增至方法](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod)。  
+   成員的最後一個參數列在 [名稱] 儲存格中包含 **<新增參數\>** 字樣。 按一下這個儲存格即可建立新參數。 如需詳細資訊，請參閱[將參數新增至方法](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod)。  
   
   **屬性視窗中的參數屬性**  
   
-  [屬性] 視窗顯示的參數屬性與 [類別細節] 視窗所顯示的參數屬性相同：[名稱]、[類型]、[修飾詞]、[摘要] 以及 [選擇性預設值] 屬性。 在其中一個位置變更屬性將會全域更新屬性值，包括在另一個位置的顯示值。  
+  [屬性] 視窗會顯示在 [類別細節] 視窗中顯示的參數屬性相同：[名稱]、[類型]、[修飾詞]、[摘要] 及 [選擇性預設] 屬性。 在其中一個位置變更屬性將會全域更新屬性值，包括在另一個位置的顯示值。  
   
 > [!NOTE]
 >  若要將參數新增至委派，請參閱[建立成員](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)。  
@@ -221,42 +221,42 @@ ms.locfileid: "58323603"
 > [!NOTE]
 >  雖然解構函式是方法，但是卻不能擁有參數。  
   
-###  <a name="HowToAddParameterToMethod"></a> 將參數新增至方法  
+### <a name="HowToAddParameterToMethod"></a> 將參數新增至方法  
   
-1.  在圖表介面上按一下類型 (其中內含要加入參數的方法)。  
+1. 在圖表介面上按一下類型 (其中內含要加入參數的方法)。  
   
      類型會取得焦點，而其內容會顯示於 [類別細節] 視窗。  
   
-2.  在 [類別細節] 視窗上，展開要加入參數的方法所屬列。  
+2. 在 [類別細節] 視窗上，展開要加入參數的方法所屬列。  
   
      隨即出現縮排的參數列，裡面只有一組括弧以及 **\<新增參數>** 字樣。  
   
-3.  按一下 [\<新增參數>]，並鍵入新參數的名稱，然後按 **Enter** 鍵。  
+3. 按一下 [\<新增參數>]，並鍵入新參數的名稱，然後按 **Enter** 鍵。  
   
      如此，便會將新參數加入至方法以及方法的程式碼中。 [類別細節] 和 [屬性] 視窗中便會顯示新的參數。  
   
-4.  您可以選擇性地指定類型等其他參數相關資訊。  
+4. 您可以選擇性地指定類型等其他參數相關資訊。  
   
 ### <a name="to-add-an-optional-parameter-to-a-method"></a>若要將選擇性參數加入至方法  
   
-1.  在圖表介面上按一下類型 (其中內含要加入選擇性參數的方法)。  
+1. 在圖表介面上按一下類型 (其中內含要加入選擇性參數的方法)。  
   
      類型會取得焦點，而其內容會顯示於 [類別細節] 視窗。  
   
-2.  在 [類別細節] 視窗上，展開要加入選擇性參數的方法所屬列。  
+2. 在 [類別細節] 視窗上，展開要加入選擇性參數的方法所屬列。  
   
      隨即出現縮排的參數列，裡面只有一組括弧以及 **\<新增參數>** 字樣。  
   
-3.  按一下 [\<新增參數>]，並鍵入新參數的名稱，然後按 **Enter** 鍵。  
+3. 按一下 [\<新增參數>]，並鍵入新參數的名稱，然後按 **Enter** 鍵。  
   
      如此，便會將新參數加入至方法以及方法的程式碼中。 [類別細節] 和 [屬性] 視窗中便會顯示新的參數。  
   
-4.  在 [屬性] 視窗中，鍵入 [選擇性預設值] 屬性的值。 設定參數的 [選擇性預設值] 屬性會讓該參數成為選擇性。  
+4. 在 [屬性] 視窗中，鍵入 [選擇性預設值] 屬性的值。 設定參數的 [選擇性預設值] 屬性會讓該參數成為選擇性。  
   
     > [!NOTE]
     >  選擇性參數必須是參數清單中的最後一個參數。  
   
-##  <a name="ClassDetailsUsageNotes"></a> 類別細節使用注意事項  
+## <a name="ClassDetailsUsageNotes"></a> 類別細節使用注意事項  
  請注意下列有關使用 [類別細節] 視窗的祕訣。  
   
  **可編輯和不可編輯的儲存格**  
@@ -285,7 +285,7 @@ ms.locfileid: "58323603"
   
   您可以從 [類別細節] 視窗複製或剪下欄位或列，然後貼到其他類型。 只有列不是處於唯讀狀態時，您才能夠剪下。 當您貼上列時，[類別細節] 視窗會指派新名稱 (由已複製的列衍生而來) 以避免發生衝突。  
   
-##  <a name="ReadOnlyInfo"></a> 顯示唯讀資訊  
+## <a name="ReadOnlyInfo"></a> 顯示唯讀資訊  
  [類別設計工具] 和 [類別細節] 視窗可以顯示下列項目的類型 (以及類型成員)：  
   
 - 包含類別圖的專案  
@@ -322,7 +322,7 @@ ms.locfileid: "58323603"
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[檢視類型和關聯性 (類別設計工具)](../ide/viewing-types-and-relationships-class-designer.md)|您可以在類別圖中檢視現有的類型、成員和關聯性。|  
 |[重構類別和類型 (類別設計工具)](../ide/refactoring-classes-and-types-class-designer.md)|使用重構可讓您輕鬆地重新命名類型和類型成員。 您也可以在類別之間移動成員、將類別分割成部分類別，以及實作介面。|

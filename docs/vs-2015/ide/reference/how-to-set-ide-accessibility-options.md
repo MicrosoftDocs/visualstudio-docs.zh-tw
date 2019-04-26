@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbd746a52084d2a2fc90a0c6890e20687fe7ee26
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405637"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：設定 IDE 協助工具選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60051615"
  此外，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 支援 Dvorak 鍵盤配置，這會讓最常鍵入的字元更容易存取。 您也可以自訂 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供的預設快速鍵。 如需詳細資訊，請參閱[識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>編輯器、對話方塊和工具視窗  
  根據預設，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 中的對話方塊和工具視窗使用與作業系統相同的字型大小和色彩。 IDE 框架、對話方塊、工具列和工具視窗的色彩設定，是以色彩配置為基礎：淡或暗。 您可以在[一般、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)變更目前的色彩佈景主題。  
@@ -63,7 +63,7 @@ ms.locfileid: "60051615"
 6. 在 [大小] 中，選取新的字型大小。  
   
     > [!NOTE]
-    >  若要重設以文字為基礎之工具視窗和編輯器的文字大小，請選擇 [使用預設值]。  
+    > 若要重設以文字為基礎之工具視窗和編輯器的文字大小，請選擇 [使用預設值]。  
   
 7. 選擇 [確定] 。  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60051615"
  您也可以選擇變更編輯器中文字、邊界指標、空白字元和程式碼項目的預設色彩。  
   
 > [!NOTE]
->  若要對您作業系統上的所有應用程式視窗使用高對比的色彩，請按左 <strong>ALT+</strong>左 **SHIFT+PRINT SCREEN**。 如果 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 已開啟，請關閉並重新開啟 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，完整實作高對比色彩。  
+> 若要對您作業系統上的所有應用程式視窗使用高對比的色彩，請按左 <strong>ALT+</strong>左 **SHIFT+PRINT SCREEN**。 如果 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 已開啟，請關閉並重新開啟 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，完整實作高對比色彩。  
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>變更編輯器中項目的色彩  
   

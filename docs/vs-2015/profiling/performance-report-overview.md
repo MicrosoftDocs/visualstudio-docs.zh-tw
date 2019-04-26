@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fd8732a914581b39566bac88fe73698850893f77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434277"
 ---
 # <a name="performance-report-overview"></a>效能報告概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60091605"
 您可以在 Visual Studio Team System Development Edition 整合式開發環境 (IDE) 的 [效能報告] 視窗中檢視效能工作階段的程式碼剖析資料。 程式碼剖析資料儲存在 .vsp 和 .vsps 檔案中。 [報表檢視] 視窗可讓您檢視和分析應用程式效能問題。  
   
 > [!CAUTION]
->  程式碼剖析資料檔案包含機密資訊，例如電腦名稱、作業系統版本、檔案路徑、記憶體資訊和其他電腦設定資訊。 您應該嚴格控管資料的散發，包括資料為其原生 .vsp 格式時及匯出至 .csv 或 .xml 檔案時。  
+> 程式碼剖析資料檔案包含機密資訊，例如電腦名稱、作業系統版本、檔案路徑、記憶體資訊和其他電腦設定資訊。 您應該嚴格控管資料的散發，包括資料為其原生 .vsp 格式時及匯出至 .csv 或 .xml 檔案時。  
 >   
->  如果在效能工作階段期間收集事件追蹤資料，其他資訊可能會出現在事件追蹤記錄 (.etl) 檔。 這項資訊包括您的網域和使用者名稱；因此，您應嚴格控管記錄檔的散發。  
+> 如果在效能工作階段期間收集事件追蹤資料，其他資訊可能會出現在事件追蹤記錄 (.etl) 檔。 這項資訊包括您的網域和使用者名稱；因此，您應嚴格控管記錄檔的散發。  
   
 ## <a name="performance-report-window"></a>效能報告視窗  
  [效能報告] 視窗是用來檢視、管理及篩選效能資料的工具視窗，並包含可自訂的查詢控制項。  

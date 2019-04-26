@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c83ebc4b2a58976f8848f4576d8b30ad7778db2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 491d6c044b22a89e8ea61a78d5dd70e0a348b893
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441446"
 ---
 # <a name="command-window"></a>命令視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "59650430"
 |向下捲動視窗。|命令視窗內容|向下鍵或 CTRL+向下鍵|  
   
 > [!TIP]
->  您可以將整個或一部分的先前命令複製至輸入行，方法是捲動到它，並反白顯示它的全部或一部分，然後按 ENTER。  
+> 您可以將整個或一部分的先前命令複製至輸入行，方法是捲動到它，並反白顯示它的全部或一部分，然後按 ENTER。  
   
 ## <a name="mark-mode"></a>標記模式  
  當您按一下 [命令] 視窗中的任何先前行時，會自動切換至標記模式。 這可讓您像在任何文字編輯器中一樣地選取、編輯和複製先前命令的文字，並將它們貼入目前行。  
@@ -104,7 +104,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` 和 `oldpar` 是參數  
   
   > [!NOTE]
-  >  任何包含空格的命令、參數、切換參數或值的兩端都必須有雙引號。  
+  > 任何包含空格的命令、參數、切換參數或值的兩端都必須有雙引號。  
   
   在命令列上，切換參數和參數的位置可以自由地互換，例外是 [Shell](../../ide/reference/shell-command.md) 命令，其切換參數和參數必須為特定順序。  
   

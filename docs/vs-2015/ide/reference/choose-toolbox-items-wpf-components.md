@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cbfaea72633f6f4bbeb7da3bf6e7c02069889f9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0d4ebb383e7dfb18ed4e119e9b34111ac809e2a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433693"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>選擇工具箱項目，WPF 元件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ ms.locfileid: "59647698"
 - 如果選取了某個元件旁的核取方塊，[工具箱] 中會顯示該元件的圖示。  
   
   > [!TIP]
-  >  若要將 WPF 控制項的執行個體新增至開啟供編輯的專案文件，請將其工具箱圖示拖曳至 [設計檢視] 介面上。 該元件的預設標記和程式碼已插入您的專案，您可以隨時進行修改。 如需詳細資訊，請參閱[如何：管理工具箱視窗](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)和[如何︰操作工具箱索引標籤](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
+  > 若要將 WPF 控制項的執行個體新增至開啟供編輯的專案文件，請將其工具箱圖示拖曳至 [設計檢視] 介面上。 該元件的預設標記和程式碼已插入您的專案，您可以隨時進行修改。 如需詳細資訊，請參閱[如何：管理工具箱視窗](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)和[如何︰操作工具箱索引標籤](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
   
 - 如果清除了某個元件旁的核取方塊，則會從 [工具箱] 移除對應的圖示。  
   
   > [!NOTE]
-  >  安裝在您電腦上的 .NET Framework 元件仍然可供使用，而不論 [工具箱] 中是否顯示其圖示。  
+  > 安裝在您電腦上的 .NET Framework 元件仍然可供使用，而不論 [工具箱] 中是否顯示其圖示。  
   
   [WPF 元件] 索引標籤中的欄位包含下列資訊：  
   

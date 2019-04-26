@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b109be00f7b165a131244ed1ddb886739bcdce55
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e7a3d731939f7497faa9c767e02e404c5ac75518
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405919"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何：以獨佔模式使用鍵盤
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60051579"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供許多預設快速鍵組合，讓您在整合式開發環境 (IDE) 內輕鬆巡覽和撰寫程式碼。 如需 Visual Studio 中使用的快速鍵完整清單，請參閱[預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)。 如需適用於其他 Microsoft 產品的鍵盤快速鍵詳細資訊，請參閱 [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400)。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="toolbox-controls"></a>工具箱控制項  
  您可以在工具箱上，使用鍵盤將控制項新增到表單或設計工具。  

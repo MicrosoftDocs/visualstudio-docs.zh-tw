@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443185"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>類別設計工具中的 Visual C++ 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54787072"
 類別設計工具支援 C++ 類別，並以視覺化 Visual Basic 和 Visual C# 類別圖形的方式來視覺化原生 C++ 類別，差異在於 C++ 類別可以有多重繼承關聯性。 您可以展開類別圖形，以顯示類別中的更多欄位和方法，或將它摺疊以節省空間。  
   
 > [!NOTE]
->  類別設計工具不支援等位 (配置的記憶體僅足以供等位的最大資料成員使用之類別的特殊類型)。  
+> 類別設計工具不支援等位 (配置的記憶體僅足以供等位的最大資料成員使用之類別的特殊類型)。  
   
 ## <a name="simple-inheritance"></a>簡單繼承  
  如果您將多個類別拖曳至類別圖表，而且類別具有類別繼承關聯性，則會使用箭號連接它們。 箭號會指向基底類別的方向。 例如，類別圖表中顯示下列類別時，會使用從 B 指向 A 的箭號連接它們：  
@@ -52,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
  以滑鼠右鍵按一下類別圖形，然後按一下 [顯示基底類別] 會顯示所選取類別的基底類別。  
   
 > [!NOTE]
->  [顯示衍生類別] 命令不支援用於 C++ 程式碼。 您可以移至 [類別檢視]、展開類型節點、展開 [衍生類型] 子資料夾，然後將這些類型拖曳至類別圖表，以顯示衍生類別。  
+> [顯示衍生類別] 命令不支援用於 C++ 程式碼。 您可以移至 [類別檢視]、展開類型節點、展開 [衍生類型] 子資料夾，然後將這些類型拖曳至類別圖表，以顯示衍生類別。  
   
  如需多重類別繼承的詳細資訊，請參閱 [(NOTINBUILD) 多重繼承](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)和[多重基底類別](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)。  
   

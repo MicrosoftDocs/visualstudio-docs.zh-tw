@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c01514a1f3a27c5e155bd9c3c5e0dc72e6dec0fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cc0a254f13c4689dd6526646ddd2ff30b6094411
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432991"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>IntelliSense、JavaScript、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "59650573"
  當您選取這個核取方塊，而且在專案內容之外有開啟的 JavaScript 檔案，則 Visual Studio 會下載檔案中所參考的遠端 JavaScript 檔案，以便提供 IntelliSense 資訊。 如果已選取這個選項，檔案會在您將它們包含在 JavaScript 檔案中做為參考時下載。  
   
 > [!NOTE]
->  Web 專案預設會下載專案中參考的遠端檔案。  
+> Web 專案預設會下載專案中參考的遠端檔案。  
   
 ## <a name="statement-completion"></a>陳述式完成  
  您可以使用這些選項變更 IntelliSense 陳述式完成的行為。  
@@ -74,7 +74,7 @@ ms.locfileid: "59650573"
   這個選項會指定檔案載入語言服務內容的順序。 您可以使用 [ **移除**]、[ **上移**] 和 [ **下移** ] 按鈕設定順序。 若要讓 IntelliSense 正常運作，相依於另一個檔案的檔案必須在另一個檔案載入後才能載入。  
   
 > [!CAUTION]
->  如果以不設條件的方式在兩個以上的隱含參考中定義物件，則這個清單中的最後一個參考將用來定義該物件。  
+> 如果以不設條件的方式在兩個以上的隱含參考中定義物件，則這個清單中的最後一個參考將用來定義該物件。  
   
  **加入群組的參考**  
  這個選項可讓您透過瀏覽至適當檔案的方式，加入其他 IntelliSense .js 檔案。  

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 442d78f494381021bd480f5649dbb6957bec5ae1
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MT
+ms.openlocfilehash: 84c7a5194e48e73fbabf60b7c9ef89e6cb04d855
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954046"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053075"
 ---
 # <a name="author-vsct-files"></a>撰寫.vsct 檔案
 本文件說明如何撰寫 *.vsct*將功能表項目、 工具列和其他使用者介面 (UI) 項目新增至 Visual Studio 整合式的開發環境 (IDE) 的檔案。 當您將 UI 項目新增到還沒有 Visual Studio 封裝 (VSPackage) 使用這些步驟 *.vsct*檔案。
@@ -30,7 +30,7 @@ ms.locfileid: "56954046"
 
 #### <a name="to-create-the-file-structure"></a>若要建立的檔案結構
 
-1.  新增 *.vsct*檔案，以您的專案中的步驟[How to:建立.vsct 檔](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。
+1. 新增 *.vsct*檔案，以您的專案中的步驟[How to:建立.vsct 檔](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。
 
 2. 新增必要的命名空間，以`CommandTable`項目，如下列範例所示：
 
@@ -40,7 +40,7 @@ ms.locfileid: "56954046"
 
     ```
 
-3.  在 `CommandTable`項目，新增`Commands`來裝載您的自訂功能表、 工具列、 命令群組和命令的所有項目。 以便載入自訂的 UI 項目，`Commands`項目必須具有其`Package`屬性設為封裝的名稱。
+3. 在 `CommandTable`項目，新增`Commands`來裝載您的自訂功能表、 工具列、 命令群組和命令的所有項目。 以便載入自訂的 UI 項目，`Commands`項目必須具有其`Package`屬性設為封裝的名稱。
 
      在後`Commands`項目，新增`Symbols`來定義封裝，以及的名稱 Guid 和您的 UI 項目的命令 Id 的項目。
 
@@ -51,28 +51,28 @@ ms.locfileid: "56954046"
 
 1. 在頂端`CommandTable`項目，加入一個`Extern`參考，並設定每個外部檔案的項目`href`屬性加入檔案的名稱。 您可以參考下列標頭檔來存取 Visual Studio 資源：
 
-   -   *Stdidcmd.h*:定義識別碼針對 Visual Studio 所公開的所有命令。
+   - *Stdidcmd.h*:定義識別碼針對 Visual Studio 所公開的所有命令。
 
-   -   *Vsshlids.h*:包含 Visual Studio 功能表的命令識別碼。
+   - *Vsshlids.h*:包含 Visual Studio 功能表的命令識別碼。
 
 2. 如果您的封裝呼叫由 Visual Studio 或其他套件會定義任何命令，新增`UsedCommands`之後的項目`Commands`項目。 填入此項目[UsedCommand](../../extensibility/usedcommand-element.md)每個命令呼叫也就是不屬於您套件的一部分。 設定`guid`並`id`屬性的`UsedCommand`呼叫命令的 GUID 和 ID 值的項目。
 
-   如需如何尋找 [Guid] 和 Visual Studio 的識別碼命令的詳細資訊，請參閱[Guid 和 Visual Studio 的識別碼命令](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)。 若要從其他套件呼叫的命令，使用 GUID 和命令的識別碼中所定義 *.vsct*這些套件的檔案。
+   如需如何尋找 [Guid] 和 [Visual Studio 的識別碼命令的詳細資訊，請參閱[Guid 和 Visual Studio 的識別碼命令](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)。 若要從其他套件呼叫的命令，使用 GUID 和命令的識別碼中所定義 *.vsct*這些套件的檔案。
 
 ### <a name="declare-ui-elements"></a>宣告 UI 項目
  將所有新的 UI 項目，在宣告`Symbols`一節 *.vsct*檔案。
 
 #### <a name="to-declare-ui-elements"></a>若要宣告 UI 項目
 
-1.  在 `Symbols`項目，新增三個[GuidSymbol](../../extensibility/guidsymbol-element.md)項目。 每個`GuidSymbol`項目具有`name`屬性和`value`屬性。 設定`name`屬性，讓它反映出之項目的用途。 `value`屬性會是 GUID。 (若要在產生的 GUID，**工具**功能表上，選取**建立 GUID**，然後選取**登錄格式**。)
+1. 在 `Symbols`項目，新增三個[GuidSymbol](../../extensibility/guidsymbol-element.md)項目。 每個`GuidSymbol`項目具有`name`屬性和`value`屬性。 設定`name`屬性，讓它反映出之項目的用途。 `value`屬性會是 GUID。 (若要在產生的 GUID，**工具**功能表上，選取**建立 GUID**，然後選取**登錄格式**。)
 
      第一個`GuidSymbol`項目代表您的套件，且通常沒有子系。 第二個`GuidSymbol`命令集，並將包含的所有符號定義您的功能表、 群組和命令的項目表示。 第三個`GuidSymbol`項目代表您的映像存放區，並包含符號所有的圖示為您的命令。 如果您有沒有使用圖示的命令時，您可以省略第三個`GuidSymbol`項目。
 
-2.  在 `GuidSymbol`項目，表示您的命令集，新增一或多個[IDSymbol](../../extensibility/idsymbol-element.md)項目。 每一種代表功能表、 工具列、 群組或您要加入至 UI 的命令。
+2. 在 `GuidSymbol`項目，表示您的命令集，新增一或多個[IDSymbol](../../extensibility/idsymbol-element.md)項目。 每一種代表功能表、 工具列、 群組或您要加入至 UI 的命令。
 
      每個`IDSymbol`項目，設定`name`屬性設定為您的名稱會用來表示對應的功能表、 群組或命令，然後設定`value`項目為十六進位的數字表示其命令識別碼。 任兩個`IDSymbol`有相同的父代的項目可以有相同的值。
 
-3.  如果任何您的 UI 項目需要圖示，新增`IDSymbol`針對至每個圖示的項目`GuidSymbol`項目，表示您的映像存放區。
+3. 如果任何您的 UI 項目需要圖示，新增`IDSymbol`針對至每個圖示的項目`GuidSymbol`項目，表示您的映像存放區。
 
 ### <a name="put-ui-elements-in-the-ide"></a>將 UI 項目放在 IDE 中
  [功能表](../../extensibility/menus-element.md)，[群組](../../extensibility/groups-element.md)，並[按鈕](../../extensibility/buttons-element.md)項目中包含的所有功能表、 群組和您的套件中所定義的命令定義。 將這些功能表、 群組和命令放在 IDE 中使用[父代](../../extensibility/parent-element.md)項目，這是組件的 UI 項目定義，或使用[CommandPlacement](../../extensibility/commandplacement-element.md)項目，是定義在其他位置。
@@ -96,14 +96,14 @@ ms.locfileid: "56954046"
 
 3. 如果您要新增新的命令加入 IDE，新增`Buttons`項目`Commands`項目。 然後，針對每個命令中，新增[ 按鈕](../../extensibility/button-element.md)項目`Buttons`項目。
 
-   1.  設定`guid`並`id`每個屬性`Button`項目，然後再把`type`屬性設定為想要的按鈕類型。 您也可以設定`priority`屬性，以在父群組中建立命令的相對位置。
+   1. 設定`guid`並`id`每個屬性`Button`項目，然後再把`type`屬性設定為想要的按鈕類型。 您也可以設定`priority`屬性，以在父群組中建立命令的相對位置。
 
        > [!NOTE]
        >  使用`type="button"`標準功能表命令和工具列上的按鈕。
 
-   2.  在 `Button`項目，新增[字串](../../extensibility/strings-element.md)包含的項目[ButtonText](../../extensibility/buttontext-element.md)項目和[CommandName](../../extensibility/commandname-element.md)項目。 `ButtonText`項目 功能表項目或工具列按鈕的工具提示中提供的文字標籤。 `CommandName`項目會提供要在命令中也使用的命令名稱。
+   2. 在 `Button`項目，新增[字串](../../extensibility/strings-element.md)包含的項目[ButtonText](../../extensibility/buttontext-element.md)項目和[CommandName](../../extensibility/commandname-element.md)項目。 `ButtonText`項目 功能表項目或工具列按鈕的工具提示中提供的文字標籤。 `CommandName`項目會提供要在命令中也使用的命令名稱。
 
-   3.  如果您的命令將會有圖示，建立[ 圖示](../../extensibility/icon-element.md)中的項目`Button`項目，並將其`guid`並`id`屬性加入`Bitmap`圖示的項目。
+   3. 如果您的命令將會有圖示，建立[ 圖示](../../extensibility/icon-element.md)中的項目`Button`項目，並將其`guid`並`id`屬性加入`Bitmap`圖示的項目。
 
        > [!NOTE]
        >  工具列按鈕必須有圖示。
@@ -120,9 +120,9 @@ ms.locfileid: "56954046"
 
     目標`Parent`項目是功能表或群組將包含功能表、 群組或命令。
 
-   1.  設定`guid`屬性的名稱`GuidSymbol`定義的命令集的項目。 如果目標項目不是套件的一部分，用於 guid 在設定該命令後，所定義之對應 *.vsct*檔案。
+   1. 設定`guid`屬性的名稱`GuidSymbol`定義的命令集的項目。 如果目標項目不是套件的一部分，用於 guid 在設定該命令後，所定義之對應 *.vsct*檔案。
 
-   2.  設定`id`屬性，以符合`id`目標 功能表或群組的屬性。 如需功能表和 Visual Studio 所公開的群組的清單，請參閱 < [Visual Studio 識別碼和 Guid 功能表](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)或[Guid] 和 [Visual Studio 的識別碼工具列](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)。
+   2. 設定`id`屬性，以符合`id`目標 功能表或群組的屬性。 如需功能表和 Visual Studio 所公開的群組的清單，請參閱 < [Visual Studio 識別碼和 Guid 功能表](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)或[Guid] 和 [Visual Studio 的識別碼工具列](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)。
 
    如果您有大量 UI 項目放在 IDE 中，或如果您有應該會出現在多個位置的項目，定義中的其配置[CommandPlacements](../../extensibility/commandplacements-element.md)項目，如下列步驟中所示。
 
@@ -145,79 +145,79 @@ ms.locfileid: "56954046"
 
 1. 若要顯示的 UI 項目只在特定 UI 內容，例如，載入方案時，使用 可見性的條件約束。
 
-   1.  在後`Commands`項目，新增`VisibilityConstraints`項目。
+   1. 在後`Commands`項目，新增`VisibilityConstraints`項目。
 
-   2.  每個 UI 項目來限制，加入[VisibilityItem](../../extensibility/visibilityitem-element.md)項目。
+   2. 每個 UI 項目來限制，加入[VisibilityItem](../../extensibility/visibilityitem-element.md)項目。
 
-   3.  每個`VisibilityItem`項目，設定`guid`並`id` 功能表、 群組或命令，然後將設定的屬性`context`屬性設定為您想，UI 內容中所定義<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>類別。
+   3. 每個`VisibilityItem`項目，設定`guid`並`id` 功能表、 群組或命令，然後將設定的屬性`context`屬性設定為您想，UI 內容中所定義<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>類別。
 
 2. 若要在程式碼中設定的可見性或可用性的 UI 項目，使用一或多個下列的命令旗標：
 
-   -   `DefaultDisabled`
+   - `DefaultDisabled`
 
-   -   `DefaultInvisible`
+   - `DefaultInvisible`
 
-   -   `DynamicItemStart`
+   - `DynamicItemStart`
 
-   -   `DynamicVisibility`
+   - `DynamicVisibility`
 
-   -   `NoShowOnMenuController`
+   - `NoShowOnMenuController`
 
-   -   `NotInTBList`
+   - `NotInTBList`
 
    如需詳細資訊，請參閱 < [CommandFlag](../../extensibility/command-flag-element.md)項目。
 
 3. 若要變更項目隨即出現，或以動態方式變更其外觀的方式，使用一或多個下列的命令旗標：
 
-   -   `AlwaysCreate`
+   - `AlwaysCreate`
 
-   -   `CommandWellOnly`
+   - `CommandWellOnly`
 
-   -   `DefaultDocked`
+   - `DefaultDocked`
 
-   -   `DontCache`
+   - `DontCache`
 
-   -   `DynamicItemStart`
+   - `DynamicItemStart`
 
-   -   `FixMenuController`
+   - `FixMenuController`
 
-   -   `IconAndText`
+   - `IconAndText`
 
-   -   `Pict`
+   - `Pict`
 
-   -   `StretchHorizontally`
+   - `StretchHorizontally`
 
-   -   `TextMenuUseButton`
+   - `TextMenuUseButton`
 
-   -   `TextChanges`
+   - `TextChanges`
 
-   -   `TextOnly`
+   - `TextOnly`
 
    如需詳細資訊，請參閱 < [CommandFlag](../../extensibility/command-flag-element.md)項目。
 
 4. 若要變更項目如何回應收到命令時，使用一或多個下列的命令旗標：
 
-   -   `AllowParams`
+   - `AllowParams`
 
-   -   `CaseSensitive`
+   - `CaseSensitive`
 
-   -   `CommandWellOnly`
+   - `CommandWellOnly`
 
-   -   `FilterKeys`
+   - `FilterKeys`
 
-   -   `NoAutoComplete`
+   - `NoAutoComplete`
 
-   -   `NoButtonCustomize`
+   - `NoButtonCustomize`
 
-   -   `NoKeyCustomize`
+   - `NoKeyCustomize`
 
-   -   `NoToolbarClose`
+   - `NoToolbarClose`
 
-   -   `PostExec`
+   - `PostExec`
 
-   -   `RouteToDocs`
+   - `RouteToDocs`
 
-   -   `TextIsAnchorCommand`
+   - `TextIsAnchorCommand`
 
    如需詳細資訊，請參閱 < [CommandFlag](../../extensibility/command-flag-element.md)項目。
 

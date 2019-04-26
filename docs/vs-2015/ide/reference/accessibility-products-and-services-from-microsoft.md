@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae91a057dc983044caa9544030571a8be34deef7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8d1991ad3b99e3ab46e6ebea527ff839ef960ac7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441115"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 提供的協助工具產品和服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下
 - [詳細資訊](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)  
   
 > [!NOTE]
->  本節中的資訊僅適用於美國地區的 Microsoft 產品授權使用者。 如果您在美國以外取得本產品，可以使用軟體封裝隨附的子公司資訊卡，或者造訪 [Microsoft 協助工具網站](http://go.microsoft.com/fwlink/?LinkId=8431) ，取得一份 Microsoft 支援服務電話號碼及地址。 您可以連絡當地分公司，以了解當地是否有提供本節所描述的產品和服務類型。 協助工具資訊也有提供其他語言，包括日文及法文。  
+> 本節中的資訊僅適用於美國地區的 Microsoft 產品授權使用者。 如果您在美國以外取得本產品，可以使用軟體封裝隨附的子公司資訊卡，或者造訪 [Microsoft 協助工具網站](http://go.microsoft.com/fwlink/?LinkId=8431) ，取得一份 Microsoft 支援服務電話號碼及地址。 您可以連絡當地分公司，以了解當地是否有提供本節所描述的產品和服務類型。 協助工具資訊也有提供其他語言，包括日文及法文。  
   
 ## <a name="windows"></a> Windows 協助工具功能  
  Windows 作業系統具備許多內建的協助工具功能，方便無法打字或無法使用滑鼠、視障或弱視、失聰或聽障等人士使用。 這些功能會在安裝期間安裝。 如需這些功能的詳細資訊，請參閱 Windows 說明和 [Microsoft 協助工具網站](http://go.microsoft.com/fwlink/?LinkId=8431)。  

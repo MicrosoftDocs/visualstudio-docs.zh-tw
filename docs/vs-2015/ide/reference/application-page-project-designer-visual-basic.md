@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2484d0fc921d8a5bb42c8e89306a57c3ab6c11d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4c4e034659298cfa4aa67023767bd4c90ac745c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433753"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "59670377"
  如果您清除 [根命名空間]，則可以在程式碼中指定專案的命名空間結構。  
   
 > [!NOTE]
->  如果您在 [Namespace 陳述式](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)中使用 Global 關鍵字，則可以從專案的根命名空間定義一個命名空間。 如果您清除 [根命名空間]，`Global` 會成為最上層命名空間，因此 `Namespace` 陳述式中不需要 `Global` 關鍵字。 如需詳細資訊，請參閱 [Visual Basic 中的命名空間](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88)中的＜Namespace 陳述式中的 Global 關鍵字＞。  
+> 如果您在 [Namespace 陳述式](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)中使用 Global 關鍵字，則可以從專案的根命名空間定義一個命名空間。 如果您清除 [根命名空間]，`Global` 會成為最上層命名空間，因此 `Namespace` 陳述式中不需要 `Global` 關鍵字。 如需詳細資訊，請參閱 [Visual Basic 中的命名空間](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88)中的＜Namespace 陳述式中的 Global 關鍵字＞。  
   
  如需如何在程式碼中建立命名空間的資訊，請參閱 [Namespace 陳述式](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "59670377"
  預設值會符合您在 [新增專案] 對話方塊中指定的目標架構。  
   
 > [!NOTE]
->  第一次開啟該對話方塊時，會自動設定[必要條件對話方塊](../../ide/reference/prerequisites-dialog-box.md)中所列的必要條件套件。 如果您接著變更專案的目標架構，就必須手動指定必要條件以符合新的目標架構。  
+> 第一次開啟該對話方塊時，會自動設定[必要條件對話方塊](../../ide/reference/prerequisites-dialog-box.md)中所列的必要條件套件。 如果您接著變更專案的目標架構，就必須手動指定必要條件以符合新的目標架構。  
   
  如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)和 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)。  
   
@@ -69,7 +69,7 @@ ms.locfileid: "59670377"
  如果您指定 [WinMD 檔案] 選項，則類型可以投影至任何 Windows 執行階段程式設計語言。 將專案的輸出封裝為 WinMD 檔案，即可使用多種語言來撰寫應用程式，並讓程式碼交互操作，如同您使用相同的語言來撰寫程式碼一樣。 您可以針對以 Windows 執行階段程式庫為目標的方案使用 [WinMD 檔案]選項，包括 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式。 如需詳細資訊，請參閱[在 C++ 和 Visual Basic 中建立 Windows 執行階段元件](http://go.microsoft.com/fwlink/?LinkId=231895)。  
   
 > [!NOTE]
->  Windows 執行階段可以投影類型，以使用它們的語言顯示為原生物件。 例如，與 Windows 執行階段互動的 JavaScript 應用程式會使用它作為一組 JavaScript 物件，而且 C# 應用程式會使用該程式庫作為 .NET 物件集合。 將專案的輸出封裝為 WinMD 檔案，即可利用 Windows 執行階段所使用的相同技術。  
+> Windows 執行階段可以投影類型，以使用它們的語言顯示為原生物件。 例如，與 Windows 執行階段互動的 JavaScript 應用程式會使用它作為一組 JavaScript 物件，而且 C# 應用程式會使用該程式庫作為 .NET 物件集合。 將專案的輸出封裝為 WinMD 檔案，即可利用 Windows 執行階段所使用的相同技術。  
   
  如需 [應用程式類型] 屬性的詳細資訊，請參閱 [/target (Visual Basic)](http://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c)。 如需如何以程式設計方式存取該屬性的資訊，請參閱 <xref:VSLangProj.ProjectProperties.OutputType%2A>。  
   

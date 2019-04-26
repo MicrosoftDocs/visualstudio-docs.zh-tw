@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c2ad1e97302a822bacc2fbbc983002626adb78a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 67eb54d06297458915edfe34718948b085c6e86b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416824"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>如何：在索引中尋找主題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "54758165"
       選擇接近索引標籤頂端的篩選按鈕，您可以顯示包含所指定文字的所有項目，或只顯示開頭為所指定文字的項目。  
   
      > [!NOTE]
-     >  篩選按鈕出現在具有框線的深色背景時，項目必須包含您所指定的文字。 如果未出現背景和框線，則項目的開頭必須是您所指定的文字。  
+     > 篩選按鈕出現在具有框線的深色背景時，項目必須包含您所指定的文字。 如果未出現背景和框線，則項目的開頭必須是您所指定的文字。  
   
    - 捲動索引，然後選取關鍵字。  
   

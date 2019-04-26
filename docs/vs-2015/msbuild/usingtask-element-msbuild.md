@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95e0d070bb69bd6918025298f865236a382d16e0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: bf2882120f2e4c27e33b105585ba56261122055d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445650"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "59669038"
  如果明確或透過匯入的專案檔案出現在專案檔案中，則可以在 `UsingTask` 項目的任何位置參考環境變數、命令列屬性和專案層級屬性。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  
   
 > [!NOTE]
->  如果 `UsingTask` 項目來自全域註冊 MSBuild 引擎的其中一個 .tasks 檔案，則專案層級屬性沒有任何意義。 專案層級屬性對於 MSBuild 而言不是全域的。  
+> 如果 `UsingTask` 項目來自全域註冊 MSBuild 引擎的其中一個 .tasks 檔案，則專案層級屬性沒有任何意義。 專案層級屬性對於 MSBuild 而言不是全域的。  
   
  在 MSBuild 4.0 中，可以從 .overridetask 檔案載入使用的工作。  
   

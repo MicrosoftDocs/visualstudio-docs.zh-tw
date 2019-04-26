@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a39a2ef42463bd781f6bb8a24e3cfbc10b937b90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 74c08f7ee338a38267ba0b259fbd8cb207b64d71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432314"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>識別及自訂 Visual Studio 中的鍵盤快速鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "60056064"
   如果已在全域內容中將捷徑指派給某個命令，而且沒有其他內容，則該捷徑一定會叫用該命令。 不過，捷徑可以在全域內容中指派給某個命令，並在特定的內容中指派給不同命令。 如果您在特定內容中使用這類捷徑，該捷徑會叫用特定內容的命令，而不是全域內容的命令。
 
 > [!NOTE]
->  您的設定和 Visual Studio 版本可能會變更功能表命令的名稱和位置，以及出現在對話方塊中的選項。 本主題是以**一般開發設定**為基礎。
+> 您的設定和 Visual Studio 版本可能會變更功能表命令的名稱和位置，以及出現在對話方塊中的選項。 本主題是以**一般開發設定**為基礎。
 
 ## <a name="bkmk_identify"></a> 識別鍵盤快速鍵
 
@@ -91,12 +91,12 @@ ms.locfileid: "60056064"
      例如，若要在所有的環境中使用該快速鍵，請選擇 [全域]。 您可以使用未在另一個編輯器中對應 (為「全域」) 的任何捷徑。 否則，編輯器會覆寫快速鍵。
 
     > [!NOTE]
-    >  您在 [全域] 中無法指派下列按鍵作為鍵盤快速鍵的一部分：Print Scrn/Sys Rq、Scroll Lock、Pause/Break、Tab、Caps Lock、Insert、Home、End、Page Up、Page Down、Windows 標幟按鍵、應用程式鍵，任一個方向鍵或 Enter、Num Lock、Delete 或婁鍵台上的 Clear，或 Ctrl+Alt+Delete。
+    > 您在 [全域] 中無法指派下列按鍵作為鍵盤快速鍵的一部分：Print Scrn/Sys Rq、Scroll Lock、Pause/Break、Tab、Caps Lock、Insert、Home、End、Page Up、Page Down、Windows 標幟按鍵、應用程式鍵，任一個方向鍵或 Enter、Num Lock、Delete 或婁鍵台上的 Clear，或 Ctrl+Alt+Delete。
 
 6. 在 [按快速鍵] 方塊中，輸入您要使用的捷徑。
 
     > [!NOTE]
-    >  您可以建立組合字母與 Alt、Ctrl 或兩者的捷徑。 您也可以建立組合 Shift 鍵與字母，搭配 Alt、Ctrl 或兩者的捷徑。
+    > 您可以建立組合字母與 Alt、Ctrl 或兩者的捷徑。 您也可以建立組合 Shift 鍵與字母，搭配 Alt、Ctrl 或兩者的捷徑。
 
      如果已將該捷徑指派給其他命令，則該捷徑會出現在 [快速鍵目前已被下列命令所使用] 方塊中。 在這種情況下，請選擇退格鍵以刪除捷徑，再嘗試指派另一個捷徑。
 
@@ -105,7 +105,7 @@ ms.locfileid: "60056064"
 7. 選擇 [指派] 按鈕。
 
     > [!NOTE]
-    >  如果您要為命令指定不同的快速鍵，請選擇 [指派] 按鈕，然後再選擇 [取消] 按鈕，此時對話方塊會關閉，但不會還原變更。
+    > 如果您要為命令指定不同的快速鍵，請選擇 [指派] 按鈕，然後再選擇 [取消] 按鈕，此時對話方塊會關閉，但不會還原變更。
 
 ## <a name="bkmk_transfer"></a> 共用自訂鍵盤快速鍵
  您可以將自訂鍵盤快速鍵匯出至檔案，再將檔案提供給其他人，讓其他人匯入資料，以共用您的自訂鍵盤快速鍵。
