@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 861ce1cf40dd5c56c043399387ef51fa3b4efee2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412249"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>類別圖表和類別檢視視窗中的鍵盤和滑鼠捷徑 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ ms.locfileid: "60113010"
 ## <a name="KeyboardClassDetails"></a>在類別細節視窗中使用鍵盤  
   
 > [!NOTE]
->  下列按鍵繫結關係皆是特別為了模仿程式碼的輸入經驗而選。  
+> 下列按鍵繫結關係皆是特別為了模仿程式碼的輸入經驗而選。  
   
  使用下列機碼瀏覽 [類別細節] 視窗：  
   

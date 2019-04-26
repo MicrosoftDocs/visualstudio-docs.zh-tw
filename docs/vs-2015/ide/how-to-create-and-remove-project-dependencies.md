@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 26857824cac478936837a125068bd610dfc4c837
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 539b27c914555dad88442fd4d65e1bf8416dae3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422871"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>如何：建立和移除專案相依性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60117625"
     [專案相依性] 對話方塊隨即開啟。  
   
    > [!NOTE]
-   >  [專案相依性] 選項只適用於具有多個專案的方案。  
+   > [專案相依性] 選項只適用於具有多個專案的方案。  
   
 3. 在 [相依性] 索引標籤上，選取 [專案] 下拉式功能表中的專案。  
   
@@ -56,7 +56,7 @@ ms.locfileid: "60117625"
      [專案相依性] 對話方塊隨即開啟。  
   
     > [!NOTE]
-    >  [專案相依性] 選項只適用於具有多個專案的方案。  
+    > [專案相依性] 選項只適用於具有多個專案的方案。  
   
 3. 在 [相依性] 索引標籤上，選取 [專案] 下拉式功能表中的專案。  
   
