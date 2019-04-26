@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942749"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071158"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>定義 UML 模型的驗證條件約束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58942749"
 ## <a name="defining-a-validation-extension"></a>定義驗證擴充功能  
  若要建立 UML 設計工具的驗證擴充功能，您必須建立一個類別來定義驗證約束條件，並且將該類別內嵌在 Visual Studio 整合擴充功能 (VSIX)。 VSIX 會做為容器，可安裝該條件約束。 定義驗證擴充功能有兩個替代方法：  
   
--   **在它自己使用的專案範本的 VSIX 建立驗證擴充功能。** 這是較快速的方法。 當您不想合併您的處理驗證條件約束與其他類型的擴充功能 (例如功能表命令、自訂工具箱項目或軌跡處理常式) 時，即可使用此方法。 您可以在一個類別中定義多個條件約束。  
+- **在它自己使用的專案範本的 VSIX 建立驗證擴充功能。** 這是較快速的方法。 當您不想合併您的處理驗證條件約束與其他類型的擴充功能 (例如功能表命令、自訂工具箱項目或軌跡處理常式) 時，即可使用此方法。 您可以在一個類別中定義多個條件約束。  
   
--   **建立個別的驗證類別及 VSIX 專案。** 如果您想要將數種類型的擴充功能結合成相同的 VSIX，則請使用這個方法。 例如，如果您的功能表命令預期模型要觀察特定的條件約束，可以將它內嵌至與驗證方法相同的 VSIX。  
+- **建立個別的驗證類別及 VSIX 專案。** 如果您想要將數種類型的擴充功能結合成相同的 VSIX，則請使用這個方法。 例如，如果您的功能表命令預期模型要觀察特定的條件約束，可以將它內嵌至與驗證方法相同的 VSIX。  
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>在自己的 VSIX 建立驗證擴充功能  
   
@@ -81,29 +81,29 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-create-a-separate-validation-constraint-in-a-class-library-project"></a>在類別庫專案中建立個別的驗證條件約束  
   
-1.  建立類別庫專案，將它加入現有的 VSIX 方案，或是建立新的方案。  
+1. 建立類別庫專案，將它加入現有的 VSIX 方案，或是建立新的方案。  
   
-    1.  在 [檔案]  功能表上，依序選擇 [新增] 和 [專案] 。  
+    1. 在 [檔案]  功能表上，依序選擇 [新增] 和 [專案] 。  
   
-    2.  在 [已安裝的範本] 下，展開 [Visual C#]  或 [Visual Basic] ，然後在中間的資料行中選擇 [類別庫] 。  
+    2. 在 [已安裝的範本] 下，展開 [Visual C#]  或 [Visual Basic] ，然後在中間的資料行中選擇 [類別庫] 。  
   
-2.  除非您的方案已經包含 VSIX 專案，否則請建立一個：  
+2. 除非您的方案已經包含 VSIX 專案，否則請建立一個：  
   
-    1.  在 **方案總管**中，在解決方案的捷徑功能表上，選擇 [加入]  和 [新增專案] 。  
+    1. 在 **方案總管**中，在解決方案的捷徑功能表上，選擇 [加入]  和 [新增專案] 。  
   
-    2.  在 [已安裝的範本] 下，展開 **Visual C#** 或 **Visual Basic**，然後選擇 [擴充性] 。 在中間的資料行中，按一下 [VSIX 專案] 。  
+    2. 在 [已安裝的範本] 下，展開 **Visual C#** 或 **Visual Basic**，然後選擇 [擴充性] 。 在中間的資料行中，按一下 [VSIX 專案] 。  
   
-3.  將 VSIX 專案設定為方案的啟始專案。  
+3. 將 VSIX 專案設定為方案的啟始專案。  
   
-    -   在方案總管中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。  
+    - 在方案總管中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。  
   
-4.  在 **source.extension.vsixmanifest**的 [內容] 下，加入類別庫專案做為 MEF 元件：  
+4. 在 **source.extension.vsixmanifest**的 [內容] 下，加入類別庫專案做為 MEF 元件：  
   
-    1.  在 [中繼資料]  索引標籤上，設定 VSIX 的名稱。  
+    1. 在 [中繼資料]  索引標籤上，設定 VSIX 的名稱。  
   
-    2.  在 [安裝目標]  索引標籤上，設定 Visual Studio 版本做為目標。  
+    2. 在 [安裝目標]  索引標籤上，設定 Visual Studio 版本做為目標。  
   
-    3.  在 [資產]  索引標籤上，選擇 [新增] ，然後在對話方塊中設定：  
+    3. 在 [資產]  索引標籤上，選擇 [新增] ，然後在對話方塊中設定：  
   
           =   
   
@@ -113,9 +113,9 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-define-the-validation-class"></a>定義驗證類別  
   
-1.  如果您已經從驗證專案範本使用其特有的 VSIX，建立了驗證類別，就無須執行此程序。  
+1. 如果您已經從驗證專案範本使用其特有的 VSIX，建立了驗證類別，就無須執行此程序。  
   
-2.  在驗證類別專案中，在下列 [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] 組件中加入參考：  
+2. 在驗證類別專案中，在下列 [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] 組件中加入參考：  
   
      `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
@@ -125,11 +125,11 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      `System.ComponentModel.Composition`  
   
-3.  在包含類似下列範例之程式碼的類別庫專案中加入檔案。  
+3. 在包含類似下列範例之程式碼的類別庫專案中加入檔案。  
   
-    -   每個驗證條件約束都會包含在標記有特定屬性的方法中。 該方法會接受模型項目類型的參數。 當叫用驗證時，驗證架構會將每個驗證方法套用到所有符合其參數類型的模型項目。  
+    - 每個驗證條件約束都會包含在標記有特定屬性的方法中。 該方法會接受模型項目類型的參數。 當叫用驗證時，驗證架構會將每個驗證方法套用到所有符合其參數類型的模型項目。  
   
-    -   您可以將這些方法置入任何類別及命名空間中。 依您的喜好變更這些方法。  
+    - 您可以將這些方法置入任何類別及命名空間中。 依您的喜好變更這些方法。  
   
     ```  
     using System.Collections.Generic;  
@@ -178,48 +178,48 @@ using Microsoft.VisualStudio.Uml.Classes;
     }  
     ```  
   
-##  <a name="Executing"></a> 執行驗證條件約束  
+## <a name="Executing"></a> 執行驗證條件約束  
  若為測試用途，請在偵錯模式中執行您的驗證方法。  
   
 #### <a name="to-test-the-validation-constraint"></a>測試驗證條件約束  
   
-1.  按 **F5**，或在 [偵錯]  功能表上，選擇 [開始偵錯] 。  
+1. 按 **F5**，或在 [偵錯]  功能表上，選擇 [開始偵錯] 。  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體隨即啟動。  
   
      **疑難排解**:如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]未啟動：  
   
-    -   如果您有多個專案，請確定 VSIX 專案已設定為方案的啟始專案。  
+    - 如果您有多個專案，請確定 VSIX 專案已設定為方案的啟始專案。  
   
-    -   在方案總管的啟始專案或唯一專案的捷徑功能表上，選擇 [屬性] 。 在專案屬性編輯器中，選取 [偵錯]  索引標籤。請確定 [啟動外部程式] ** 欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：  
+    - 在方案總管的啟始專案或唯一專案的捷徑功能表上，選擇 [屬性] 。 在專案屬性編輯器中，選取 [偵錯]  索引標籤。請確定 [啟動外部程式]  欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，開啟或建立模型專案，並開啟或建立模型圖表。  
+2. 在實驗性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，開啟或建立模型專案，並開啟或建立模型圖表。  
   
-3.  若要為上節中的範例條件約束設定測試：  
+3. 若要為上節中的範例條件約束設定測試：  
   
-    1.  開啟類別圖。  
+    1. 開啟類別圖。  
   
-    2.  建立類別，並加入兩個同名的屬性。  
+    2. 建立類別，並加入兩個同名的屬性。  
   
-4.  在圖表上任何位置的捷徑功能表上，選擇 [驗證] 。  
+4. 在圖表上任何位置的捷徑功能表上，選擇 [驗證] 。  
   
-5.  模型中的任何錯誤都會在錯誤視窗中回報。  
+5. 模型中的任何錯誤都會在錯誤視窗中回報。  
   
-6.  按兩下錯誤報告。 如果報告中提到的項目顯示在畫面上，會以反白顯示。  
+6. 按兩下錯誤報告。 如果報告中提到的項目顯示在畫面上，會以反白顯示。  
   
      **疑難排解**:如果**驗證**命令不會出現在功能表上，請確定：  
   
-    -   驗證專案在 VSIX 專案 **source.extensions.manifest** 的 [資產]  索引標籤中列為 MEF 元件。  
+    - 驗證專案在 VSIX 專案 **source.extensions.manifest** 的 [資產]  索引標籤中列為 MEF 元件。  
   
-    -   正確的 `Export` 和 `ValidationMethod` 屬性會附加至驗證方法。  
+    - 正確的 `Export` 和 `ValidationMethod` 屬性會附加至驗證方法。  
   
-    -   `ValidationCategories.Menu` 包含在的引數`ValidationMethod`屬性，並由其他值以邏輯 OR (&#124;)。  
+    - `ValidationCategories.Menu` 包含在的引數`ValidationMethod`屬性，並由其他值以邏輯 OR (&#124;)。  
   
-    -   所有 `Import` 和 `Export` 屬性的參數都有效。  
+    - 所有 `Import` 和 `Export` 屬性的參數都有效。  
   
-##  <a name="Implementing"></a> 評估條件約束  
+## <a name="Implementing"></a> 評估條件約束  
  驗證方法應指定您要套用的驗證條件約束是 true 或 false。 如果是 true，將不會執行任何動作。 如果是 false，應使用 `ValidationContext` 參數所提供的方法報告錯誤。  
   
 > [!NOTE]
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);  
 ```  
   
-###  <a name="ContextCache"></a> 協調多個驗證  
+### <a name="ContextCache"></a> 協調多個驗證  
  舉例來說，當使用者從 [圖表] 功能表中叫用驗證時，會將每個驗證方法套用到各個模型項目。 這表示在一次引動驗證架構中，同一個方法可能會多次套用到不同的項目。  
   
  這顯現出驗證在處理項目間之關連性方面的問題。 舉例來說，您撰寫了一個驗證，其先從使用案例開始，再周遊 **include** 關聯性，以驗證沒有迴圈。 但當此方法套用到具有許多 **include** 連結之模型中的各個使用案例時，可能會重複處理模型的同一個區域。  
@@ -363,26 +363,26 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|取得值。|  
 |`Context.GetValue<T>()`|取得指定類型的值。|  
   
-##  <a name="Installing"></a> 安裝及解除安裝擴充功能  
+## <a name="Installing"></a> 安裝及解除安裝擴充功能  
  您可以同時在自己的電腦和其他電腦上安裝 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充功能。  
   
 #### <a name="to-install-an-extension"></a>安裝擴充功能  
   
-1.  在您的電腦中，尋找 VSIX 專案所建置的 **.vsix** 檔案。  
+1. 在您的電腦中，尋找 VSIX 專案所建置的 **.vsix** 檔案。  
   
-    1.  在方案總管 中，於 VSIX 專案的捷徑功能表上，選擇 [在 Windows 檔案總管中開啟資料夾] 。  
+    1. 在方案總管 中，於 VSIX 專案的捷徑功能表上，選擇 [在 Windows 檔案總管中開啟資料夾] 。  
   
-    2.  找出檔案**筒\\\*\\**_YourProject_**.vsix**  
+    2. 找出檔案**筒\\\*\\**_YourProject_**.vsix**  
   
-2.  將 **.vsix** 檔案複製到要安裝擴充功能的目標電腦。 這可以是您自己的電腦或另一部電腦。  
+2. 將 **.vsix** 檔案複製到要安裝擴充功能的目標電腦。 這可以是您自己的電腦或另一部電腦。  
   
-    -   目標電腦必須具有其中一個版本[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]中所指定**source.extension.vsixmanifest**。  
+    - 目標電腦必須具有其中一個版本[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]中所指定**source.extension.vsixmanifest**。  
   
-3.  在目標電腦上開啟 **.vsix** 檔案。  
+3. 在目標電腦上開啟 **.vsix** 檔案。  
   
      [Visual Studio 擴充功能安裝程式] 會隨即開啟並安裝擴充功能。  
   
-4.  啟動或重新啟動 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]。  
+4. 啟動或重新啟動 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]。  
   
 #### <a name="to-uninstall-an-extension"></a>解除安裝擴充功能  
   
@@ -396,7 +396,7 @@ context.LogError(... , usecase);
   
    *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
-##  <a name="Example"></a> 範例  
+## <a name="Example"></a> 範例  
  這個範例會在項目之間的相依性關聯性中尋找迴圈。  
   
  它會在儲存及驗證功能表命令時執行驗證。  

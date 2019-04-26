@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4c6f5f80512371ae323fbbfe143eb98bffbe7d98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422535"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
