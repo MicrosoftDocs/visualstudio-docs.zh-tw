@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e00ca9212c03d4123259715da157201c06d90f2b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ed9d33501644c6fa7252dffa758f92c0919653b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546898"
 ---
 # <a name="uninstall-visual-studio"></a>解除安裝 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +39,12 @@ Visual Studio 2015 是我們提供給開發人員的整合式生產力工具套�
 
 ## <a name="uninstall-visual-studio-and-all-other-related-files-that-is-to-uninstall-almost-everything"></a>將 Visual Studio 和所有其他相關檔案解除安裝 (亦即，將幾乎所有項目都解除安裝)
 
-1.  找出 Visual Studio.exe 檔案 (例如，尋找 "vs_enterprise.exe")。
+1. 找出 Visual Studio.exe 檔案 (例如，尋找 "vs_enterprise.exe")。
 
     > [!NOTE]
     > 該檔案應該位在 "%ProgramData%\Package Cache" 的子資料夾中，例如：C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe
 
-2.  使用 /uninstall /force 命令列參數來執行該 .exe 檔案。
+2. 使用 /uninstall /force 命令列參數來執行該 .exe 檔案。
 
      例如，執行 ```vs_enterprise.exe /uninstall /force``` 會將 Visual Studio 和預設解除安裝留下的大部分核心元件都移除。 不過，它不會移除 Visual Studio 增益集和擴充功能可安裝的所有額外內容 (例如，Visual Studio 更新和其他選用元件)。
 
@@ -53,9 +53,9 @@ Visual Studio 2015 是我們提供給開發人員的整合式生產力工具套�
 
 ## <a name="uninstall-visual-studio-in-silent-or-passive-modes-that-is-to-uninstall-from-source"></a>以無訊息或被動模式將 Visual Studio 解除安裝 (亦即從來源解除安裝)
 
-1.  在安裝 Visual Studio 的電腦上，開啟 Windows 命令提示字元。
+1. 在安裝 Visual Studio 的電腦上，開啟 Windows 命令提示字元。
 
-2.  輸入下列參數：
+2. 輸入下列參數：
 
      *DVDRoot* \\<Installation File\> \</quiet&#124;/passive> [/norestart]/uninstall
 

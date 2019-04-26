@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 92db719f8af2688dc70ddb5ac253c17095302766
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563268"
 ---
 # <a name="measure-mode-onoff"></a>開啟/關閉測量模式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
