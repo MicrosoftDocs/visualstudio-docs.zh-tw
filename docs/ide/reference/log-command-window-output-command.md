@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588c5e39f8b6b6a89de1636bd45036b21d392d33
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24c72b0c5aeb510186728d66e51935c337547adf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946839"
 ---
 # <a name="log-command-window-output-command"></a>記錄命令視窗輸出命令
 將來自 [命令] 視窗的所有輸入和輸出複製到檔案中。
@@ -36,7 +36,6 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 
 > [!TIP]
 > 若要變更儲存記錄檔的位置，請輸入檔案的完整路徑，如果路徑包含任何空格則以引號括住。
-
 
 ## <a name="switches"></a>參數
  /on

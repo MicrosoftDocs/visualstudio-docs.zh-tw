@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6acba17aca08b233dd80b7eb7ea9e385d907ffb5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0c28ef62629011b222ae1a846c04cbf4cdff17d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440250"
 ---
 # <a name="call-tree-view"></a>呼叫樹狀圖檢視
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出其所呼叫的所有函式，以及這些函式呼叫的效能資料。
@@ -36,7 +36,7 @@ ms.locfileid: "56627034"
  [呼叫樹狀圖] 檢視可以設定透過限制呈現的資料量來減少雜訊。 使用減少雜訊，可讓檢視中的效能問題更為顯著。 容易區分效能問題時，分析會較容易。 如需詳細資訊，請參閱[如何：在報表檢視中設定減少雜訊](../profiling/how-to-configure-noise-reduction-in-report-views.md)。
 
 > [!NOTE]
->  如果設定減少雜訊在啟用時顯示警告，則會在報表中顯示資訊列。
+> 如果設定減少雜訊在啟用時顯示警告，則會在報表中顯示資訊列。
 
  如需 [呼叫樹狀圖] 檢視中資料行定義的詳細資訊，請參閱下列各項：
 

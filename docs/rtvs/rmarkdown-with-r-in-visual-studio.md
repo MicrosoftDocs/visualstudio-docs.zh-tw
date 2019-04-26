@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: df723845fe99b32cd41231353142e0f03b667977
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b8f87f831c8076b22a61d7032d16be8d13f21b62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998632"
 ---
 # <a name="create-r-markdown-documents"></a>建立 R Markdown 文件
 
@@ -33,6 +33,7 @@ Visual Studio R 工具 (RTVS) 提供 R Markdown 項目範本、編輯器支援 (
     install.packages("rmarkdown")
 
     ```
+
 1. 使用 [檔案] > [新增] > [檔案] 功能表命令，並從清單中選取 [R] > [R Markdown] 來建立新的 R Markdown 檔案。 在專案的內容中，以滑鼠右鍵按一下 [方案總管] 中的專案，然後選取 [新增 R Markdown] (或 [新增] > [新增項目]，然後從清單中選取 [R Markdown])。
 
 1. 新檔案的預設內容如下︰

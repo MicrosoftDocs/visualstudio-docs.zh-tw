@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf1eb0001ca7c8b87fa44b5ea861df9d9fcba84d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f1e780a67ee419a8cae661570802e5d85081f1fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445804"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>登錄 .NET Framework 的擴充功能
 您可以開發組件來擴充特定版本的 .NET Framework。 若要讓組件出現在 Visual Studio 的 [加入參考] 對話方塊中，您必須將包含該組件的資料夾加入至系統登錄。
@@ -27,7 +27,7 @@ ms.locfileid: "56644337"
  使用下列機碼來登錄此資料夾：**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**。 為機碼提供此預設值：**C:\TreyResearch\Extensions4**。
 
 > [!NOTE]
->  .NET Framework 版本的組建編號可能不同。
+> .NET Framework 版本的組建編號可能不同。
 
  若要在 64 位元電腦上登錄 32 位元組件，請使用 Wow6432 節點，例如：**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**。
 

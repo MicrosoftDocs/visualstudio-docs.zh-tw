@@ -20,16 +20,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c1207051fbd8a2c4857a277868145795e14224
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27315682c26769ea5c529ceb21c99458c86f0220
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385808"
 ---
 # <a name="bscmake-task"></a>BscMake 工作
 > [!IMPORTANT]
->  Visual Studio IDE 已不再使用 BscMake。 從 Visual Studio 2008 起，瀏覽資訊會自動儲存在 [解決方案] 資料夾的 *.sdf* 檔案中。
+> Visual Studio IDE 已不再使用 BscMake。 從 Visual Studio 2008 起，瀏覽資訊會自動儲存在 [解決方案] 資料夾的 *.sdf* 檔案中。
 
  包裝 Microsoft Browse Information Maintenance Utility 工具 (*bscmake.exe*)。  *bscmake.exe* 工具會從編譯期間所建立的來源瀏覽器檔案 (*.sbr*) 建置瀏覽資訊檔 (*.bsc*)。 使用 [物件瀏覽器] 來檢視 *.bsc* 檔案。 如需詳細資訊，請參閱 [BSCMAKE 參考](/cpp/build/reference/bscmake-reference)。
 

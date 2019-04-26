@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0f21042a7b49780dae3a46ec5a1f284dc0430a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435622"
 ---
 # <a name="manage-channels"></a>管理通道
 在並行視覺化檢視的 [執行緒檢視] 中，您可以針對處理序組織通道，以檢查特定模式。 您可以排序、上下移動及隱藏或顯示通道。
@@ -47,7 +47,7 @@ ms.locfileid: "56646495"
  當您想要隱藏通道時，請選取此控制項。 例如，如果某個執行緒百分之百與您的受管理處理序同步，則您可以在分析其他執行緒的時候隱藏它。
 
 > [!NOTE]
->  隱藏的執行緒不會顯示在作用中圖例和分析報表中的計算時間。
+> 隱藏的執行緒不會顯示在作用中圖例和分析報表中的計算時間。
 
 ## <a name="show-all-channels"></a>顯示所有通道
  此控制項會在有一個以上的隱藏通道時顯示。 若選取它，所有隱藏的元素就都會顯示，並且再次回到計算時間。

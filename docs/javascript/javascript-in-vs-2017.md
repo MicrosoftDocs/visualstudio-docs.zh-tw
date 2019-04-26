@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: 88de2703db119f4124eb02658efb327df2ae899f
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 58de705d90567723f98bfb472f808da7101a624e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553346"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
@@ -52,14 +52,14 @@ TypeScript 是透過 `tsconfig.json` 檔案設定。
 
 tsconfig 檔案的必要設定如下︰
 
- - `allowJs`：此值必須設為 `true` 才能夠辨識 JavaScript 檔案。 預設值是 `false`，因為 TypeScript 會編譯為 Javascript ，且編譯器不應包含剛編譯完的檔案。
- - `outDir`：此值應該設定為不包含在專案中的位置，這樣才不會偵測到發出的 JavaScript 檔案，並於之後包含在專案中 (請參閱 `exclude`)。
- - `module`：如果使用模組，此設定會告知編譯器發出的程式碼應該使用哪種模組格式 (例如，適用於 Node 的 `commonjs`，或 Browserify 等搭配程式)。
- - `exclude`：此設定會指出專案不包含哪些資料夾。
- 輸出位置以及 `node_modules` 或 `temp` 等非專案資料夾，應該加入此設定。
- - `enableAutoDiscovery`：此設定允許自動偵測和下載定義檔案，如先前所述。
- - `compileOnSave`：此設定會告知編譯器是否每次在 Visual Studio 中儲存來源檔案時，都應該重新編譯。
- - `typeAcquisition`：這組設定控制自動類型擷取的行為 (會在[此小節](/visualstudio/ide/javascript-intellisense#Auto)中進一步解釋)
+- `allowJs`：此值必須設為 `true` 才能夠辨識 JavaScript 檔案。 預設值是 `false`，因為 TypeScript 會編譯為 Javascript ，且編譯器不應包含剛編譯完的檔案。
+- `outDir`：此值應該設定為不包含在專案中的位置，這樣才不會偵測到發出的 JavaScript 檔案，並於之後包含在專案中 (請參閱 `exclude`)。
+- `module`：如果使用模組，此設定會告知編譯器發出的程式碼應該使用哪種模組格式 (例如，適用於 Node 的 `commonjs`，或 Browserify 等搭配程式)。
+- `exclude`：此設定會指出專案不包含哪些資料夾。
+輸出位置以及 `node_modules` 或 `temp` 等非專案資料夾，應該加入此設定。
+- `enableAutoDiscovery`：此設定允許自動偵測和下載定義檔案，如先前所述。
+- `compileOnSave`：此設定會告知編譯器是否每次在 Visual Studio 中儲存來源檔案時，都應該重新編譯。
+- `typeAcquisition`：這組設定控制自動類型擷取的行為 (會在[此小節](/visualstudio/ide/javascript-intellisense#Auto)中進一步解釋)
 
 若要將 JavaScript 檔案轉換成 CommonJS 模組，並將其放入 `./out` 資料夾中，您可以使用下列 `tsconfig.json` 檔案：
 

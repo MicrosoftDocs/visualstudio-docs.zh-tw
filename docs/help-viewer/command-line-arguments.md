@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 6a310a1b92d5e4558e097cf82501960bf6a9a535
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824678"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令列引數
 
 您可以使用 Help Content Manager (*HlpCtntMgr.exe*) 的命令列引數來指定如何部署和管理本機說明內容。 您必須以系統管理員權限來執行命令列工具的指令碼，您無法以服務方式執行這些指令碼。 使用本工具可執行下列工作：
 
--   從磁碟或雲端新增或更新本機說明內容。
+- 從磁碟或雲端新增或更新本機說明內容。
 
--   移除本機說明內容。
+- 移除本機說明內容。
 
--   移動本機說明內容的存放區。
+- 移動本機說明內容的存放區。
 
--   以無訊息模式加入、更新、移除或移動本機說明內容。
+- 以無訊息模式加入、更新、移除或移動本機說明內容。
 
 語法：
 

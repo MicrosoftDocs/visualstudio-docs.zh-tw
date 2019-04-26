@@ -1,5 +1,5 @@
 ---
-title: 作法：建立分析工具 ETW 報告 | Microsoft Docs
+title: HOW TO：建立分析工具 ETW 報告 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bf5547b3-f6c7-4989-9d47-2fe4f1261444
@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310c43ea4dbdf1f50a76b574ec52baa589769034
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1208080a13c807b95e1a279606568324cab2b8cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439143"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>HOW TO：建立程式碼剖析工具 ETW 報告
 「Windows 事件追蹤」(ETW) 報告會列出「[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具」的效能工作階段中記錄的 ETW 事件。 ETW 資料會收集在二進位 (.*etl*) 檔案中。 如需此報表的詳細資訊，請參閱 [Windows 事件追蹤 (ETW) 報表](../profiling/event-tracing-for-windows-etw-report.md)。
 
 > [!NOTE]
->  您無法在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的介面中顯示 ETW 報告。
+> 您無法在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的介面中顯示 ETW 報告。
 
 - 如需如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的介面來收集 ETW 資料的資訊，請參閱[如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "56614463"
 
 ### <a name="to-generate-an-etw-report"></a>產生 ETW 報告
 
--   在 [命令提示字元] 視窗中，輸入下列命令行：
+- 在 [命令提示字元] 視窗中，輸入下列命令行：
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary:ETW [/Xml]**
 

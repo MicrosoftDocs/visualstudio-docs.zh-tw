@@ -9,12 +9,12 @@ ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd5a7183589255d246fd299b9ec628330d948dcf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1d7f9d0c9ad07223d0b59d7aeca585b53432280
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002251"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>HOW TO：將其他回合設定新增至負載測試
 
@@ -26,26 +26,26 @@ ms.locfileid: "55917541"
 
 ## <a name="to-add-another-run-setting"></a>若要加入其他回合設定
 
-1.  開啟負載測試。
+1. 開啟負載測試。
 
-2.  (選擇性) 展開 [回合設定] 資料夾。
+2. (選擇性) 展開 [回合設定] 資料夾。
 
-3.  以滑鼠右鍵按一下 [回合設定] 資料夾，然後選取 [新增回合設定]。
+3. 以滑鼠右鍵按一下 [回合設定] 資料夾，然後選取 [新增回合設定]。
 
      新的回合設定即會新增至 [回合設定] 資料夾。
 
-4.  在 [檢視] 功能表上選擇 [屬性視窗]。
+4. 在 [檢視] 功能表上選擇 [屬性視窗]。
 
      [屬性視窗] 隨即顯示，並顯示選取之回合設定的屬性。
 
-5.  在 [屬性] 視窗中，使用 [名稱] 屬性的文字方塊來提供新回合設定的名稱，此名稱描述回合設定的目的 (例如，**回合設定：執行五分鐘**)。
+5. 在 [屬性] 視窗中，使用 [名稱] 屬性的文字方塊來提供新回合設定的名稱，此名稱描述回合設定的目的 (例如，**回合設定：執行五分鐘**)。
 
-6.  使用 [屬性視窗] 變更回合設定。 例如，將執行持續時間變更為 **00:05:00**，以執行測試五分鐘。
+6. 使用 [屬性視窗] 變更回合設定。 例如，將執行持續時間變更為 **00:05:00**，以執行測試五分鐘。
 
     > [!NOTE]
     > 如需回合設定屬性及其描述的完整清單，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。
 
-     您現在可以指定想要使用加入的回合設定 (將它設定為使用中)。 如需詳細資訊，請參閱[＜How to：選取負載測試的使用中回合設定](../test/how-to-select-the-active-run-setting-for-a-load-test.md)。
+     您現在可以指定想要使用加入的回合設定 (將它設定為使用中)。 如需詳細資訊，請參閱[如何：選取負載測試的使用中回合設定](../test/how-to-select-the-active-run-setting-for-a-load-test.md)。
 
 ## <a name="see-also"></a>另請參閱
 

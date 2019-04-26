@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7bf1194b2ffede351dab214c6191a599d725db3b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9b4703b2dd86056b2c79b8e50f8169a0b9fd9648
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431534"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>作法：使用命令列將分析工具附加至 .NET Framework 獨立應用程式以收集並行資料
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>HOW TO：使用命令列將分析工具附加至 .NET Framework 獨立應用程式以收集並行資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至執行中的 .NET Framework 獨立 (用戶端) 應用程式，並收集處理序和執行緒並行資料。
 
 > [!NOTE]
->  若要取得分析工具的路徑，請參閱[逐步解說：使用分析工具 API](../profiling/walkthrough-using-profiler-apis.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用分析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
+> 若要取得分析工具的路徑，請參閱[逐步解說：使用分析工具 API](../profiling/walkthrough-using-profiler-apis.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用分析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
 
  程式碼剖析工具附加至應用程式時，您可以暫停和繼續收集資料。 若要結束分析工作階段，分析工具不得再附加至應用程式，而且必須明確地關閉分析工具。
 
@@ -28,9 +28,9 @@ ms.locfileid: "56597721"
 
 #### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>將分析工具附加至執行中的 .NET Framework 應用程式
 
-1.  開啟 [命令提示字元] 視窗。
+1. 開啟 [命令提示字元] 視窗。
 
-2.  啟動分析工具。 類型：
+2. 啟動分析工具。 類型：
 
      [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency  /output:** `OutputFile` [`Options`]
 
@@ -44,24 +44,24 @@ ms.locfileid: "56597721"
     |[/automark](../profiling/automark.md) **:** `Interval`|只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。|
     |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。|
 
-3.  以一般方式啟動目標應用程式。
+3. 以一般方式啟動目標應用程式。
 
-4.  將分析工具附加至目標應用程式。 類型：
+4. 將分析工具附加至目標應用程式。 類型：
 
      **VSPerfCmd /attach:** `PID` [**/lineoff**] [**/targetclr:**`Version`]
 
-    -   `PID` 指定目標應用程式的處理序 ID。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序 ID。
+    - `PID` 指定目標應用程式的處理序 ID。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序 ID。
 
-    -   [/lineoff](../profiling/lineoff.md) 會停用行號資料收集。
+    - [/lineoff](../profiling/lineoff.md) 會停用行號資料收集。
 
-    -   [/targetclr](../profiling/targetclr.md) **:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。 選擇性。
+    - [/targetclr](../profiling/targetclr.md) **:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。 選擇性。
 
 ## <a name="control-data-collection"></a>控制資料收集
  當目標應用程式執行時，您可以使用 *VSPerfCmd.exe* 選項開始和停止將資料寫入至檔案，以控制資料收集。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集
 
--   下列成對的 *VSPerfCmd.exe* 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
+- 下列成對的 *VSPerfCmd.exe* 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
     |選項|說明|
     |------------|-----------------|
@@ -74,14 +74,14 @@ ms.locfileid: "56597721"
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段
 
-1.  執行下列其中一項動作，以從目標應用程式中斷連結程式碼剖析工具。
+1. 執行下列其中一項動作，以從目標應用程式中斷連結程式碼剖析工具。
 
-    -   輸入 **VSPerfCmd /detach**
+    - 輸入 **VSPerfCmd /detach**
 
          -或-
 
-    -   關閉目標應用程式。
+    - 關閉目標應用程式。
 
-2.  關閉分析工具。 類型：
+2. 關閉分析工具。 類型：
 
      VSPerfCmd[/shutdown](../profiling/shutdown.md)

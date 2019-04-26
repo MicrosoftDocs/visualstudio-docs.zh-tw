@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba8bdcade321c3660e89ab6b7cf6e0b79471b393
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548617"
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>作法：以一個 .NET Framework 版本為目標
+# <a name="how-to-target-a-version-of-the-net-framework"></a>HOW TO：以一個 .NET Framework 版本為目標
 
 本文描述如何在建立專案時設定目標 .NET framework 版本。 其也會描述如何變更現有 Visual Basic、C# 或 F# 專案中的目標版本。
 
