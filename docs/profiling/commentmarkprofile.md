@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e211d4a685abc9c4a4137ade443ea3e5b90acf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 897ff07f78301553812f6855f3aa4bdb556a650e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440185"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` 函式會在 .*vsp* 檔中插入數字標記和文字字串。 針對要插入的標記和註解，包含 `CommentMarkProfile` 函式之執行緒的分析必須是 ON。
@@ -57,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
  分析標記屬於全域範圍。 例如，在一個執行緒中插入的分析標記，可用來標記 .*vsp* 檔案中任何執行緒之資料區段的開頭或結尾。
 
 > [!IMPORTANT]
->  CommentMarkProfile 方法只能和檢測一起使用。
+> CommentMarkProfile 方法只能和檢測一起使用。
 
 ## <a name="net-framework-equivalent"></a>.NET Framework 同等
  Microsoft.VisualStudio.Profiler.dll

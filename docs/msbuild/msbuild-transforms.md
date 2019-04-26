@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2fe127a98236c321db9d1e7450ab006e09badba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3be16c2ccbd7cfe5d26507037e4238870e59d83b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414693"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 轉換
 轉換是指某個項目清單和另一個項目清單的一對一轉換作業。 轉換作業除了可讓專案轉換項目清單，還能讓目標識別其輸入和輸出之間的直接對應。 本主題說明轉換作業，以及 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 如何使用轉換作業以更有效建置專案。
@@ -33,7 +33,7 @@ ms.locfileid: "56627255"
 比方說，如果 @(RESXFile) 項目清單中的項目是 *Form1.resx*、*Form2.resx* 和 *Form3.resx*，已轉換清單中的輸出會是 *Form1.resources*、*Form2.resources* 和 *Form3.resources*。
 
 > [!NOTE]
->  您可以為已轉換的項目清單指定自訂分隔符號 (方法與您為標準項目清單指定分隔符號的方式相同)。 例如，若要使用逗號 (,) 而不是預設的分號 (;) 來分隔已轉換的項目清單，請使用下列 XML： `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
+> 您可以為已轉換的項目清單指定自訂分隔符號 (方法與您為標準項目清單指定分隔符號的方式相同)。 例如，若要使用逗號 (,) 而不是預設的分號 (;) 來分隔已轉換的項目清單，請使用下列 XML： `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
 
 ## <a name="use-multiple-modifiers"></a>使用多個修飾詞
  轉換運算式可包含多個修飾詞，其可依照任何順序合併，亦可以重複。 在下列範例中，含有檔案的目錄名稱已變更，但這些檔案會保留原始名稱和副檔名。

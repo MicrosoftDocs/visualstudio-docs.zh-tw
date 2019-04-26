@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be9ca24aa60e03c14bed607196d5d40a3d8f1c58
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422100"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>將 EventSource 事件顯示為標記
 並行視覺化檢視可以將 EventSource 事件顯示為標記，而您可以控制顯示標記的方式。 若要檢視 EventSource 標記，請使用 [進階設定](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 對話方塊，註冊 ETW 提供者 GUID。 並行視覺化檢視表示 EventSource 事件的預設慣例為[旗標標記](../profiling/flag-markers.md)、[延伸標記](../profiling/span-markers.md)及[訊息標記](../profiling/message-markers.md)。 您可以將自訂欄位加入至事件，來自訂 EventSource 事件的顯示方式 。 如需標記的詳細資訊，請參閱[並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)。 如需 EventSource 事件的詳細資訊，請參閱 <xref:System.Diagnostics.Tracing>。
@@ -23,11 +23,11 @@ ms.locfileid: "56639800"
 
 ### <a name="marker-type"></a>標記類型
 
-1.  有[作業碼 (Opcode)](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start 或 win:Stop 的事件會分別視為延伸範圍的開始或結束。  無法顯示巢狀或重疊的延伸範圍。 無法顯示在一個執行緒開始但在另一個執行序結束的事件組合。
+1. 有[作業碼 (Opcode)](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start 或 win:Stop 的事件會分別視為延伸範圍的開始或結束。  無法顯示巢狀或重疊的延伸範圍。 無法顯示在一個執行緒開始但在另一個執行序結束的事件組合。
 
-2.  其作業碼不是 win:Start，也非 win:Stop 的事件會視為標記旗標，除非其[層級 (Level)](/windows/desktop/WES/defining-severity-levels) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR 的欄位) 是 win:Verbose 或更高。
+2. 其作業碼不是 win:Start，也非 win:Stop 的事件會視為標記旗標，除非其[層級 (Level)](/windows/desktop/WES/defining-severity-levels) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR 的欄位) 是 win:Verbose 或更高。
 
-3.  在其他情況下，會將該事件視為一則訊息。
+3. 在其他情況下，會將該事件視為一則訊息。
 
 ### <a name="importance"></a>重要性
  下表定義事件層級和標記重要性的對應方式。
@@ -91,7 +91,7 @@ ms.locfileid: "56639800"
  使用 cvSpanId 欄位 (一個整數)，來比對事件組合。 表示延伸範圍的每一組開始/停止事件都必須要有唯一的值。 一般而言，對於並行程式碼，這需要使用 <xref:System.Threading.Interlocked.Exchange%2A> 這類同步處理原始物件，以確保正確的索引鍵 (用於 CvSpanID 的值)。
 
 > [!NOTE]
->  使用 SpanID 將延伸範圍巢狀化，不支援允許其在相同執行緒上部分重疊，或允許其在一個執行緒上開始並在另一個執行緒上結束。
+> 使用 SpanID 將延伸範圍巢狀化，不支援允許其在相同執行緒上部分重疊，或允許其在一個執行緒上開始並在另一個執行緒上結束。
 
 ## <a name="see-also"></a>另請參閱
 - [並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)

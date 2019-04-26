@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee63e2fe4409921a36daba5ac85cce417d5564aa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 09222971ea5150b280014d85f801a82a8eccc5d2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406151"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>並行視覺化檢視命令列公用程式 (CVCollectionCmd)
 您可以使用並行視覺化檢視命令列公用程式 (*CVCollectionCmd.exe*) 從命令列收集追蹤，以便在 Visual Studio 的並行視覺化檢視中進行檢視。 此工具可在未安裝 Visual Studio 的電腦上使用。
 
 > [!NOTE]
->  從 Visual Studio 2013 開始，並行視覺化檢視是選擇性擴充功能。 (先前它包含在 Visual Studio 中。)您可以從下載中心下載 [Visual Studio 2015 並行視覺化檢視收集工具](http://www.microsoft.com/download/details.aspx?id=49103)。
+> 從 Visual Studio 2013 開始，並行視覺化檢視是選擇性擴充功能。 (先前它包含在 Visual Studio 中。)您可以從下載中心下載 [Visual Studio 2015 並行視覺化檢視收集工具](http://www.microsoft.com/download/details.aspx?id=49103)。
 
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>下載並行視覺化檢視命令列公用程式
  若要下載及安裝此命令列公用程式，請移至 Microsoft 下載中心網站上的 [Visual Studio 2015 的並行視覺化檢視收集工具](http://www.microsoft.com/download/details.aspx?id=49103) ，並遵循指示進行。 根據預設，*CVCollectionCmd.exe* 會安裝在 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (x64 電腦上為 %ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\)。
@@ -54,13 +54,12 @@ ms.locfileid: "56612318"
  如果您使用 CVCollectionCmd 收集追蹤並想自訂收集設定，請使用組態檔指定這些設定。
 
 > [!NOTE]
->  當您使用 Visual Studio 收集追蹤時，不要直接修改組態檔。  請改用 [[進階設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 對話方塊來修改設定。
+> 當您使用 Visual Studio 收集追蹤時，不要直接修改組態檔。  請改用 [[進階設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 對話方塊來修改設定。
 
  若要修改收集設定，請在您要執行 CVCollectionCmd 公用程式的電腦上建立組態檔。 您可以從頭開始建立組態檔，也可以從已安裝 Visual Studio 的電腦上複製組態檔，再進行修改。 檔案名稱為 *UserConfig.xml*，並位在 *Local AppData* 資料夾中。 當您執行公用程式時，請搭配 Launch、Attach 或 Analyze 命令使用 Config 選項。  在與 Config 選項相關聯的參數中，指定組態檔的路徑。
 
 ### <a name="configuration-file-tags"></a>組態檔標記
  組態檔採用 XML 格式。 以下是有效的標記和值：
-
 
 | 標記 | 說明 | 值 |
 |-------------------------| - | - |

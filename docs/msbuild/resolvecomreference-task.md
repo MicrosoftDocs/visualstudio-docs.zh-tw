@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86155da1a14516992841aa5e19de2606eb09fbd8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 123aa52b5062d8ac083f054074df2c65ba77f80d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431280"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 工作
 取得一或多個類型程式庫名稱或 *.tlb* 檔案的清單，並將那些類型程式庫解析至磁碟上的位置。
@@ -70,7 +70,7 @@ ms.locfileid: "56639059"
 |`WrapperTool`|選擇性項目中繼資料。<br /><br /> 指定為此類型程式庫產生組件包裝函式使用的包裝函式工具。 如未指定此項目中繼資料，工作會使用預設的包裝函式工具 "tlbimp"。 可用且不區分大小寫的 TypeLib 選項有：<br /><br /> -   `Primary`：當您想要使用 COM 元件已產生的主要 Interop 組件時，請使用此包裝函式工具。 當您使用此包裝函式工具時，請勿指定包裝函式的輸出目錄，因為這會造成工作失敗。<br />-   `TLBImp`：當您想要產生 COM 元件的 Interop 組件時，請使用此包裝函式工具。<br />-   `AXImp`：當您想要產生 ActiveX 控制項的 Interop 組件時，請使用此包裝函式工具。|
 
 > [!NOTE]
->  您為唯一識別類型程式庫所提供的資訊愈詳細，工作解析至正確磁碟檔案的可能性就愈大。
+> 您為唯一識別類型程式庫所提供的資訊愈詳細，工作解析至正確磁碟檔案的可能性就愈大。
 
 ## <a name="remarks"></a>備註
  除了上述所列的參數，這項工作也會從 <xref:Microsoft.Build.Utilities.Task> 類別繼承參數。 如需這些額外參數及其說明的清單，請參閱 [Task 基底類別](../msbuild/task-base-class.md)。

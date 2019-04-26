@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c4f04d1d919123bca787c6175696224042f79725
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 17b373e38d9a808ea830f758c28bea1218bb0b69
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446346"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>管理 Visual Studio 中的 npm 套件
 

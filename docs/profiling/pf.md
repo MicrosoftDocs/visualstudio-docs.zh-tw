@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7815f3b8788ac2fd3eaece89d6e2dbeeb49426d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bf6bc8ae841ad8ba0d3fd376176bdff2332fb958
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431995"
 ---
 # <a name="pf"></a>PF
 *VSPerfCmd.exe* 的 **PF** 選項會將取樣的分析事件設定為分頁錯誤，並且選擇性地變更取樣間隔的分頁錯誤數目，預設值為 10。
 
 > [!NOTE]
->  **PF** 不能在 64 位元系統上使用。
+> **PF** 不能在 64 位元系統上使用。
 
 **PF** 只能用於也包含 [啟動] 或 [連結] 選項的命令列。
 

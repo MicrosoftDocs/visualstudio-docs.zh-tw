@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 3f6464986cb94ffa3ab3cc9264ab818112046ea9
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002856"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>步驟 4：在偵錯工具中執行程式碼
 
@@ -101,7 +101,7 @@ ms.locfileid: "59366792"
 ## <a name="next-step"></a>後續步驟
 
 > [!div class="nextstepaction"]
-> [在您的 Python 環境中安裝套件](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+> [在 Python 環境中安裝套件](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
 ## <a name="go-deeper"></a>深入了解
 

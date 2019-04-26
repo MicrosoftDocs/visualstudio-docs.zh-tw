@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3a8b210c91019b2b7285288c7826f4983dfed6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 23c691730e50cc8d34eddbb60da6d7d671a85dfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437845"
 ---
 # <a name="msbuild-task"></a>MSBuild 工作
 從另一個 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案建置[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案。
 
 ## <a name="parameters"></a>參數
  下表說明 `MSBuild` 工作的參數。
-
 
 | 參數 | 說明 |
 |-----------------------------------| - |
@@ -66,7 +65,7 @@ ms.locfileid: "56627320"
  不過，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 提供兩個新的保留中繼資料項目 (Properties 和 AdditionalProperties)，讓您能夠彈性地使用 [MSBuild 工作](../msbuild/msbuild-task.md)，為建置的不同專案傳遞不同的屬性。
 
 > [!NOTE]
->  這些新的中繼資料項目僅適用於 [MSBuild 工作](../msbuild/msbuild-task.md)的 Projects 屬性中所傳遞的項目。
+> 這些新的中繼資料項目僅適用於 [MSBuild 工作](../msbuild/msbuild-task.md)的 Projects 屬性中所傳遞的項目。
 
 ## <a name="multi-processor-build-benefits"></a>多處理器組建的優點
  使用這個新中繼資料主要優點之一是發生在您於多處理器系統上同時建置專案時。 中繼資料可讓您將所有專案合併成單一 [MSBuild 工作](../msbuild/msbuild-task.md)呼叫，而不需執行任何批次處理或條件式 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作。 而且，當您只呼叫單一 [MSBuild 工作](../msbuild/msbuild-task.md)時，將會同時建置 Projects 屬性中列出的所有專案 (不過，只有在 `BuildInParallel=true` 屬性出現於 [MSBuild 工作](../msbuild/msbuild-task.md)時)。如需詳細資訊，請參閱[同時建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)。
@@ -75,7 +74,7 @@ ms.locfileid: "56627320"
  常見的案例是當您使用 [MSBuild 工作](../msbuild/msbuild-task.md)建置多個方案檔時，只會使用不同的建置組態。 您可能想要使用 Debug 組態來建置方案 a1，使用 Release 組態來建置方案 a2。 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 中，這個專案檔看起來如下：
 
 > [!NOTE]
->  在下列範例中，"..." 代表其他方案檔。
+> 在下列範例中，"..." 代表其他方案檔。
 
 ### <a name="aproj"></a>a.proj
 

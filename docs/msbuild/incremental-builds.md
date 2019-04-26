@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 820d8b4837e2b7ae3f93a742ca8abe5962cd1893
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007025"
 ---
 # <a name="incremental-builds"></a>累加組建
 

@@ -14,11 +14,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 8fcd01198877ef06eb398ce99fe467deb923546c
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999237"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中分析工具的新功能
 
@@ -36,5 +36,5 @@ CPU 使用量工具有[新的視覺效果](../profiling/Beginners-Guide-to-Perfo
 
 ## <a name="see-also"></a>另請參閱
 
-- [在 Visual Studio 中的設定檔](../profiling/index.md)
+- [在 Visual Studio 中分析](../profiling/index.md)
 - [初步認識分析工具](../profiling/profiling-feature-tour.md)

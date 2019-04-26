@@ -1,5 +1,5 @@
 ---
-title: 作法：在組建中使用環境變數 | Microsoft Docs
+title: HOW TO：在組建中使用環境變數 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,21 +12,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84fe30f4bddc410f580ccd94250591027e0f9887
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 7c3e79fdbadffadc188610523eeb505df0ffa15f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412415"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>作法：在組建中使用環境變數
+# <a name="how-to-use-environment-variables-in-a-build"></a>HOW TO：在組建中使用環境變數
 當您建置專案時，通常需要使用專案檔或構成專案之檔案中沒有的資源來設定組建選項。 此資訊通常會儲存於環境變數中。
 
 ## <a name="reference-environment-variables"></a>參考環境變數
  所有環境變數都可供 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 專案檔用來做為屬性。
 
 > [!NOTE]
->  如果專案檔包含與環境變數相同名稱之專案的明確定義，則專案檔中的屬性會覆寫環境變數的值。
+> 如果專案檔包含與環境變數相同名稱之專案的明確定義，則專案檔中的屬性會覆寫環境變數的值。
 
 #### <a name="to-use-an-environment-variable-in-an-msbuild-project"></a>在 MSBuild 專案中使用環境變數
 
@@ -38,12 +38,12 @@ ms.locfileid: "56796136"
 
 #### <a name="to-provide-a-default-value-for-a-property"></a>提供屬性的預設值
 
--   只有當屬性 (Property) 沒有任何值，才能在屬性 (Property) 上使用 `Condition` 屬性 (Attribute) 來設定值。 例如，下列程式碼只有在未設定 `ToolsPath` 環境變數時，才會將 `ToolsPath` 屬性設為 *c:\tools*：
+- 只有當屬性 (Property) 沒有任何值，才能在屬性 (Property) 上使用 `Condition` 屬性 (Attribute) 來設定值。 例如，下列程式碼只有在未設定 `ToolsPath` 環境變數時，才會將 `ToolsPath` 屬性設為 *c:\tools*：
 
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`
 
     > [!NOTE]
-    >  屬性名稱是不區分大小寫的，因此 `$(ToolsPath)` 和 `$(TOOLSPATH)` 會參考相同的屬性或環境變數。
+    > 屬性名稱是不區分大小寫的，因此 `$(ToolsPath)` 和 `$(TOOLSPATH)` 會參考相同的屬性或環境變數。
 
 ## <a name="example"></a>範例
  下列專案檔會使用環境變數來指定目錄位置。

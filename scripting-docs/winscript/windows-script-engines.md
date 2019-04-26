@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3434e9baaeb483e60087aec1b8536108c8af4471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416000"
 ---
 # <a name="windows-script-engines"></a>Windows 指令碼引擎
 若要實作 Microsoft Windows 指令碼引擎，請建立支援下列介面的 OLE COM 物件。  
@@ -31,7 +31,7 @@ ms.locfileid: "58157759"
 |IPersist*|提供持續性支援。 如未實作 [IActiveScriptParse](../winscript/reference/iactivescriptparse.md)，至少需要實作下列一個介面。<br /><br /> IPersistStorage：提供對 OBJECT 標記之 DATA={url} 屬性的支援。<br /><br /> IPersistStreamInit：提供對 `IPersistStorage` 以及 OBJECT 標記的 DATA="string-encoded byte stream" 屬性相同的支援。<br /><br /> IPersistPropertyBag：提供對 OBJECT 標記之 PARAM= 屬性的支援。|  
   
 > [!NOTE]
->  透過 `IPersist*` 儲存或還原指令碼狀態時，可能永遠不會呼叫指令碼引擎。 而是在呼叫 [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) 建立空白指令碼時使用 [IActiveScriptParse](../winscript/reference/iactivescriptparse.md)，然後以 [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) 將程式碼片段新增並連接到事件，以 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) 新增一般程式碼。 然而，指令碼引擎應該完全實作至少一個 `IPersist*` 介面 (最好是 `IPersistStreamInit`)，因為其他的主機應用程式可能會嘗試使用它們。  
+> 透過 `IPersist*` 儲存或還原指令碼狀態時，可能永遠不會呼叫指令碼引擎。 而是在呼叫 [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) 建立空白指令碼時使用 [IActiveScriptParse](../winscript/reference/iactivescriptparse.md)，然後以 [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) 將程式碼片段新增並連接到事件，以 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) 新增一般程式碼。 然而，指令碼引擎應該完全實作至少一個 `IPersist*` 介面 (最好是 `IPersistStreamInit`)，因為其他的主機應用程式可能會嘗試使用它們。  
   
  以下各節會更詳細地說明實作 Windows 指令碼引擎。  
   

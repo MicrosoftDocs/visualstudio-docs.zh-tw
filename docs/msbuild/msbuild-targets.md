@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa9be494aaaf79b7235cb9af2393406a6e49abf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b84d78426ccc3294d908e52ee87ce6d521da89cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004586"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目標
 依特定順序將目標設為群組工作，並允許將建置處理序分成較小的單位。 例如，一個目標可能會刪除輸出目錄中的所有檔案來準備進行建置，而另一個目標會編譯專案的輸入，並將它們放在空目錄中。 如需工作的詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
@@ -45,15 +45,15 @@ ms.locfileid: "56634418"
 ## <a name="target-build-order"></a>目標組建順序
  如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 有幾種方式可指定目標的執行順序。
 
--   初始目標
+- 初始目標
 
--   預設目標
+- 預設目標
 
--   第一個目標
+- 第一個目標
 
--   目標相依性
+- 目標相依性
 
--   `BeforeTargets` 和 `AfterTargets` (MSBuild 4.0)
+- `BeforeTargets` 和 `AfterTargets` (MSBuild 4.0)
 
 目標絕對不會在單一建置期間執行兩次，即使組建中的後續目標相依於它也一樣。 執行目標之後，它對組建而言就已功成身退了。
 
