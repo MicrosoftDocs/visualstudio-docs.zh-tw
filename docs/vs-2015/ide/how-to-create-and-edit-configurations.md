@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c507bb2ea6fa231b2b3f3d92cebb3ca78bb4eb5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b76ad8ed6e0cc8bdf60a2053dd11106b5e03a7d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422906"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：建立和編輯組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60071196"
 - 在方案總管中，開啟方案的捷徑功能表，然後選擇 [Configuration Manager]。  
   
   > [!NOTE]
-  >  如果 **Configuration Manager** 命令未出現在捷徑功能表，請查看功能表列上的 [建置] 功能表底下。 如果它也未出現在該處，請在功能表列上依序選擇 [工具]、[選項]，然後在 [選項] 對話方塊方塊的左窗格中，依序展開 [專案和方案]、[一般]，然後在右窗格中，選取 [顯示進階組建組態] 核取方塊。  
+  > 如果 **Configuration Manager** 命令未出現在捷徑功能表，請查看功能表列上的 [建置] 功能表底下。 如果它也未出現在該處，請在功能表列上依序選擇 [工具]、[選項]，然後在 [選項] 對話方塊方塊的左窗格中，依序展開 [專案和方案]、[一般]，然後在右窗格中，選取 [顯示進階組建組態] 核取方塊。  
   
    在 [Configuration Manager] 對話方塊中，您可以使用 [使用中的方案組態] 下拉式清單選取整個方案的組建組態、修改現有的組建組態，或建立新的組態。 您可以使用 [使用中的方案平台] 下拉式清單選取組態目標針對的平台、修改現有的方案平台，或新增平台。 [專案內容] 窗格會列出方案中的專案。 針對每個專案，您可以選取專案特定的組態與平台、修改現有的組態與平台，或建立新的組態或新增平台。 您也可以選取核取方塊，指出當您使用整個方案的組態來建置或部署方案時，是否包含每個專案。  
   

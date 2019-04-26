@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428273"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Visual Studio 中的同步處理設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60108999"
  可同步處理任何 Visual Studio 2015 版本之間的設定，包含 Express 與 Community 版本。 Visual Studio 系列產品中 (例如 Blend) 的設定也會同步處理。 不過，這些系列產品中的每一個都可能有它自己不會與 Visual Studio 共用的設定。 例如，電腦 A 的 Blend 專屬設定會和電腦 B 的 Blend 專屬設定共用，但不會和電腦 A 或 B 上的 Visual Studio 共用。
 
 > [!WARNING]
->  Visual Studio 2013 和 Visual Studio 2015 之間的設定不會同步處理。 第一次開啟 Visual Studio 2015 時，您 Visual Studio 2013 的設定會移轉過去，但之後將無法將其移轉回 Visual Studio 2013。
+> Visual Studio 2013 和 Visual Studio 2015 之間的設定不會同步處理。 第一次開啟 Visual Studio 2015 時，您 Visual Studio 2013 的設定會移轉過去，但之後將無法將其移轉回 Visual Studio 2013。
 
 ## <a name="see-also"></a>請參閱
  [個人化 IDE](../ide/personalizing-the-visual-studio-ide.md)

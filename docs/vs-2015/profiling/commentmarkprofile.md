@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 100e303df62a1ca9855b891915e43f1fe020555e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28535db3e129029d6767ac969d121ee4cbb1aec5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416537"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="property-valuereturn-value"></a>屬性值/傳回值  
  此函式會使用 **PROFILE_COMMAND_STATUS** 列舉來指出成功或失敗。 傳回值可以是下列其中一個：  
   
-|列舉值|描述|  
+|列舉值|說明|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|參數小於或等於 0。 會保留這些值。 不會記錄標記和註解。|  
 |MARK_ERROR_MODE_NEVER|呼叫函式時，分析模式設定為 NEVER。 不會記錄標記和註解。|  
@@ -60,7 +60,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
  分析標記屬於全域範圍。 例如，在一個執行緒中插入的分析標記，可用來標記 .vsp 檔案中任何執行緒之資料區段的開頭或結尾。  
   
 > [!IMPORTANT]
->  CommentMarkProfile 方法只能和檢測一起使用。  
+> CommentMarkProfile 方法只能和檢測一起使用。  
   
 ## <a name="net-framework-equivalent"></a>.NET Framework 同等  
  Microsoft.VisualStudio.Profiler.dll  

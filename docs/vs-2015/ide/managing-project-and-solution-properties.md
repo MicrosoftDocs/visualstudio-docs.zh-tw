@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e9ff4acbfd6df1980a3882311b3d3c4611e064
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dd20552a72775723c4ad006708ce1fb7f18d4181
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424623"
 ---
 # <a name="managing-project-and-solution-properties"></a>管理專案和方案屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54758117"
  ![方案總管樹狀結構中的 [屬性] 節點](../ide/media/vs2015-props-se.png "VS2015_Props_SE")  
   
 > [!TIP]
->  方案有一些屬性，專案項目也有；您可以在 [[屬性視窗]](../ide/reference/properties-window.md) 中存取這些屬性，而非 [專案設計工具]。  
+> 方案有一些屬性，專案項目也有；您可以在 [[屬性視窗]](../ide/reference/properties-window.md) 中存取這些屬性，而非 [專案設計工具]。  
   
 ## <a name="project-properties"></a>專案屬性  
  [專案屬性] 會組織成群組，而且每個群組都具有其專屬屬性頁，並且頁面可能會因語言和專案類型不同而不同。  

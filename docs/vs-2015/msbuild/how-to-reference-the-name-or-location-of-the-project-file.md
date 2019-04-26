@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e9493050e5deb2e25cf526d2464214399b10a7c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: eae8a32d4587b71f238c023d08a1328ce83ba37d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431383"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：參考專案檔的名稱或位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "59670364"
   使用保留屬性的一個優點是，會自動併入對專案檔名所做的任何變更。 當您下一次建置專案時，輸出檔將具備新名稱，而您不需採取任何進一步動作。  
   
 > [!NOTE]
->  您無法在專案檔中重新定義保留的屬性。  
+> 您無法在專案檔中重新定義保留的屬性。  
   
 ## <a name="example"></a>範例  
  下列範例專案檔會參考專案名稱做為保留的屬性，來指定輸出的名稱。  

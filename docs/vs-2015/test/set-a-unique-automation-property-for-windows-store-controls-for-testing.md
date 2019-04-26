@@ -8,12 +8,12 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ed707c1dfa2d756bdf3fa879051795c6ac05eed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6ce207776fe2f3dfe00ddc764546a370dbb53dca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789075"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107031"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>為用於測試的 Windows 市集控制項設定唯一自動化屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,19 +22,19 @@ ms.locfileid: "54789075"
   
  您可以根據應用程式中的 XAML 控制項類型來指派唯一自動化屬性。 以下是在下列情況中指派這個唯一自動化屬性的方法︰  
   
--   [控制項的靜態 XAML 定義](#UniquePropertyWindowsStoreControlsStaticXAML)  
+- [控制項的靜態 XAML 定義](#UniquePropertyWindowsStoreControlsStaticXAML)  
   
--   [使用 Visual Studio 或 Blend for Visual Studio 指派唯一自動化屬性](#UniquePropertyWindowsStoreControlsExpressionBlend)  
+- [使用 Visual Studio 或 Blend for Visual Studio 指派唯一自動化屬性](#UniquePropertyWindowsStoreControlsExpressionBlend)  
   
--   [使用 DataTemplate](#UniquePropertyWindowsStoreControlsDataTemplate)  
+- [使用 DataTemplate](#UniquePropertyWindowsStoreControlsDataTemplate)  
   
--   [使用控制項範本](#UniquePropertyWindowsStoreControlsControlTemplate)  
+- [使用控制項範本](#UniquePropertyWindowsStoreControlsControlTemplate)  
   
--   [動態控制項](#UniquePropertyWindowsStoreControlsDynamicControls)  
+- [動態控制項](#UniquePropertyWindowsStoreControlsDynamicControls)  
   
 ## <a name="use-methods-to-assign-a-unique-automation-property"></a>使用方法來指派唯一自動化屬性  
   
-###  <a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> 靜態 XAML 定義  
+### <a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> 靜態 XAML 定義  
  若要指定 XAML 檔案中所定義之控制項的唯一自動化屬性，您可以隱含或明確地設定 AutomationProperties.AutomationId 或 AutomationProperties.Name，如下列範例所示。 設定任一值會提供控制項的唯一自動化屬性，以用來在建立自動程式碼 UI 測試或動作記錄時識別控制項。  
   
  **隱含地設定屬性**  
@@ -68,16 +68,16 @@ ms.locfileid: "54789075"
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />  
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> 使用 Visual Studio 或 Blend for Visual Studio 指派唯一自動化屬性  
+### <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> 使用 Visual Studio 或 Blend for Visual Studio 指派唯一自動化屬性  
  您可以使用 Visual Studio 或 Blend for Visual Studio 將唯一名稱指派給互動項目，例如按鈕、清單方塊、下拉式方塊和文字方塊。 這裡提供控制項之 AutomationProperties.Name 的唯一值。  
   
- **Visual Studio：** 在 [工具] 功能表上，指向 [選項]，然後依序選擇 [文字編輯器]、[XAML] 和 [其他]。  
+ **Visual Studio 中：** 在 [工具]  功能表上，指向 [選項]  ，然後依序選擇 [文字編輯器] 、[XAML] 和 [其他] 。  
   
  選取 [建立時自動命名互動項目]，然後選擇 [確定]。  
   
  ![XAML 其他選項](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")  
   
- **Blend for Visual Studio：** 使用下列其中一種方法，以從 Blend for Visual Studio 執行這項作業。  
+ **Blend for Visual Studio:** 您可以使用下列方法之一來從 Blend for Visual Studio 執行此動作。  
   
 > [!NOTE]
 >  針對使用 XAML 靜態建立的控制項，您只能使用這個方法。  
@@ -94,7 +94,7 @@ ms.locfileid: "54789075"
   
  ![設定專案以命名互動項目](../test/media/cuit-windowsstoreproeprty-blend-2.png "CUIT_WindowsStoreProeprty_Blend_2")  
   
-###  <a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> 使用資料範本  
+### <a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> 使用資料範本  
  您可以使用下列 XAML 定義使用 ItemTemplate 的簡單範本，以將清單方塊中的值繫結至變數。  
   
 ```xaml  
@@ -157,7 +157,7 @@ public override string ToString()
   
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> 使用控制項範本  
+### <a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> 使用控制項範本  
  您可以使用控制項範本，讓特定類型的每個執行個體取得在程式碼中所定義的唯一自動化屬性。 您必須建立範本，以讓 AutomationProperty 繫結至控制項執行個體中的唯一識別碼。 下列 XAML 示範如何使用控制項範本建立此繫結的一種方法。  
   
 ```xaml  
@@ -185,7 +185,7 @@ public override string ToString()
 <Button Content=”Button2” Style="{StaticResource MyButton}" Width="140"/>  
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> 動態控制項  
+### <a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> 動態控制項  
  如果您的控制項是從程式碼動態建立，而不是靜態建立或透過 XAML 檔案中的範本建立，則必須設定控制項的 Content 或 Name 屬性。 如此可確保每個動態控制項都具有唯一自動化屬性。 例如，如果您有必須在選取清單項目時顯示的核取方塊，則可以設定這些屬性，如下所示︰  
   
 ```csharp  

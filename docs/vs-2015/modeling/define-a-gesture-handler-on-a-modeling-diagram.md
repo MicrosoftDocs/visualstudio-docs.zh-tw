@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ecd6f6210fdc219f7d1ca493f15beed74e9b5e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 653c2760c369381162f519223b75ce8a7468c507
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942554"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067010"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>在模型圖表上定義軌跡處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "58942554"
 ## <a name="creating-a-gesture-handler"></a>建立軌跡處理常式  
  若要定義 UML 設計工具的軌跡處理常式，您必須建立一個類別來定義軌跡處理常式的行為，並將該類別內嵌在 Visual Studio 整合擴充功能 (VSIX)。 VSIX 會做為容器，可安裝該處理常式。 定義軌跡處理程式有兩個替代方法：  
   
--   **在它自己使用的專案範本的 VSIX 建立軌跡處理常式。** 這是較快速的方法。 它適用於您不想結合您的處理常式與其他類型的擴充功能時，例如驗證擴充功能、自訂工具箱項目或功能表命令。  
+- **在它自己使用的專案範本的 VSIX 建立軌跡處理常式。** 這是較快速的方法。 它適用於您不想結合您的處理常式與其他類型的擴充功能時，例如驗證擴充功能、自訂工具箱項目或功能表命令。  
   
--   **建立個別的軌跡處理常式和 VSIX 專案。** 如果您想要將數種類型的擴充功能結合成相同的 VSIX，則請使用這個方法。 比方說，如果軌跡處理常式預期模型要觀察特定的條件約束，您可以將它內嵌至與驗證方法相同的 VSIX。  
+- **建立個別的軌跡處理常式和 VSIX 專案。** 如果您想要將數種類型的擴充功能結合成相同的 VSIX，則請使用這個方法。 比方說，如果軌跡處理常式預期模型要觀察特定的條件約束，您可以將它內嵌至與驗證方法相同的 VSIX。  
   
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>在自己的 VSIX 中建立軌跡處理常式  
   
@@ -56,9 +56,9 @@ ms.locfileid: "58942554"
   
 1. 在新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案或現有的方案中，建立類別庫專案。  
   
-   1.  在 [檔案]  功能表上，依序選擇 [新增] 和 [專案] 。  
+   1. 在 [檔案]  功能表上，依序選擇 [新增] 和 [專案] 。  
   
-   2.  在 [已安裝的範本] 下，依序展開 [Visual C#]  或 [Visual Basic] ，然後在中間的資料行中選擇 [類別庫] 。  
+   2. 在 [已安裝的範本] 下，依序展開 [Visual C#]  或 [Visual Basic] ，然後在中間的資料行中選擇 [類別庫] 。  
   
 2. 將下列參考加入您的專案。  
   
@@ -204,33 +204,33 @@ ms.locfileid: "58942554"
   
 #### <a name="to-add-a-separate-gesture-handler-to-a-vsix-project"></a>將個別的軌跡處理常式加入 VSIX 專案  
   
-1.  如果您已經建立具有自己的 VSIX 的軌跡處理常式，便不需要此程序。  
+1. 如果您已經建立具有自己的 VSIX 的軌跡處理常式，便不需要此程序。  
   
-2.  除非您的方案已經包含 VSIX 專案，否則請建立一個。  
+2. 除非您的方案已經包含 VSIX 專案，否則請建立一個。  
   
-    1.  在 [方案總管] 中，在方案的捷徑功能表上，選擇 [新增] 和 [新增專案] 。  
+    1. 在 [方案總管] 中，在方案的捷徑功能表上，選擇 [新增] 和 [新增專案] 。  
   
-    2.  在 [已安裝的範本] 下，依序展開 [Visual C#]  或 [Visual Basic] ，然後選取 [擴充性] 。 在中間的資料行中，選擇 [VSIX 專案] 。  
+    2. 在 [已安裝的範本] 下，依序展開 [Visual C#]  或 [Visual Basic] ，然後選取 [擴充性] 。 在中間的資料行中，選擇 [VSIX 專案] 。  
   
-3.  將 VSIX 專案設定為方案的啟始專案。  
+3. 將 VSIX 專案設定為方案的啟始專案。  
   
-    -   在 [方案總管] 中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。  
+    - 在 [方案總管] 中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。  
   
-4.  在 **source.extension.vsixmanifest**中，將軌跡處理常式類別庫專案加入做為 MEF 元件：  
+4. 在 **source.extension.vsixmanifest**中，將軌跡處理常式類別庫專案加入做為 MEF 元件：  
   
-    1.  在 [中繼資料]  索引標籤上，設定 VSIX 的名稱。  
+    1. 在 [中繼資料]  索引標籤上，設定 VSIX 的名稱。  
   
-    2.  在 [安裝目標]  索引標籤上，設定 Visual Studio 版本做為目標。  
+    2. 在 [安裝目標]  索引標籤上，設定 Visual Studio 版本做為目標。  
   
-    3.  在 [資產]  索引標籤上，選擇 [新增] ，然後在對話方塊中設定：  
-  
-          =   
+    3. 在 [資產]  索引標籤上，選擇 [新增] ，然後在對話方塊中設定：  
   
           =   
   
           =   
   
-##  <a name="Executing"></a> 執行軌跡處理常式  
+          =   
+  
+## <a name="Executing"></a> 執行軌跡處理常式  
  基於測試目的，請在偵錯模式中執行軌跡處理常式。  
   
 #### <a name="to-test-the-gesture-handler"></a>測試軌跡處理常式  
@@ -241,9 +241,9 @@ ms.locfileid: "58942554"
   
     **疑難排解**:如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]未啟動：  
   
-   -   如果您有多個專案，請確定 VSIX 專案已設定為方案的啟始專案。  
+   - 如果您有多個專案，請確定 VSIX 專案已設定為方案的啟始專案。  
   
-   -   在 [方案總管] 中，在啟始專案或唯一專案的捷徑功能表上，選擇 [屬性]。 在專案屬性編輯器中，選擇 [偵錯]  索引標籤。請確定 [啟動外部程式] ** 欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：  
+   - 在 [方案總管] 中，在啟始專案或唯一專案的捷徑功能表上，選擇 [屬性]。 在專案屬性編輯器中，選擇 [偵錯]  索引標籤。請確定 [啟動外部程式] ** 欄位中的字串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路徑名稱，通常是：  
   
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
@@ -255,17 +255,17 @@ ms.locfileid: "58942554"
   
    **疑難排解**:如果軌跡處理常式無法運作，請確定：  
   
--   軌跡處理常式專案在 VSIX 專案 **source.extensions.manifest** 的 [資產]  索引標籤中列為 MEF 元件。  
+- 軌跡處理常式專案在 VSIX 專案 **source.extensions.manifest** 的 [資產]  索引標籤中列為 MEF 元件。  
   
--   所有 `Import` 和 `Export` 屬性的參數都有效。  
+- 所有 `Import` 和 `Export` 屬性的參數都有效。  
   
--   `CanDragDrop` 方法不會傳回 `false`  
+- `CanDragDrop` 方法不會傳回 `false`  
   
--   您正在使用的模型圖表類型 (UML 類別、序列等等) 已列為其中一個軌跡處理常式類別屬性 [ClassDesignerExtension]、[SequenceDesignerExtension] 等等。  
+- 您正在使用的模型圖表類型 (UML 類別、序列等等) 已列為其中一個軌跡處理常式類別屬性 [ClassDesignerExtension]、[SequenceDesignerExtension] 等等。  
   
--   沒有任何已為此類型的目標和卸除項目定義的內建功能。  
+- 沒有任何已為此類型的目標和卸除項目定義的內建功能。  
   
-##  <a name="Implementing"></a> 實作軌跡處理常式  
+## <a name="Implementing"></a> 實作軌跡處理常式  
   
 ### <a name="the-gesture-handler-methods"></a>軌跡處理常式方法  
  軌跡處理常式類別會實作及匯出 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>。 您需要定義的方法如下所示：  
@@ -280,17 +280,17 @@ ms.locfileid: "58942554"
   
  這些方法的參數如下：  
   
--   `ShapeElement target`. 使用者已將項目拖曳至其上的圖形或圖表。  
+- `ShapeElement target`. 使用者已將項目拖曳至其上的圖形或圖表。  
   
      `ShapeElement` 是實作中的一個類別，此實作是 UML 類別模型化工具的基礎。 若要降低使 UML 模型和圖表處於不一致狀態的風險，我們建議不要直接使用這個類別的方法。 相反地，換行中的項目`IShape`，然後使用 中所述的方法[在圖表上顯示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)。  
   
-    -   取得 `IShape`：  
+    - 取得 `IShape`：  
   
         ```  
         IShape targetIShape = target.CreateIShape(target);  
         ```  
   
-    -   若要取得拖曳或按兩下作業的目標模型項目：  
+    - 若要取得拖曳或按兩下作業的目標模型項目：  
   
         ```  
         IElement target = targetIShape.Element;  
@@ -298,20 +298,20 @@ ms.locfileid: "58942554"
   
          您可以將此轉型為更特定類型的項目。  
   
-    -   若要取得包含 UML 模型的 UML 模型存放區：  
+    - 若要取得包含 UML 模型的 UML 模型存放區：  
   
         ```  
         IModelStore modelStore =   
           targetIShape.Element.GetModelStore();   
         ```  
   
-    -   若要取得主機和服務提供者的存取權：  
+    - 若要取得主機和服務提供者的存取權：  
   
         ```  
         target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
         ```  
   
--   `DiagramDragEventArgs eventArgs`. 此參數會攜帶拖曳作業的序列化形式來源物件：  
+- `DiagramDragEventArgs eventArgs`. 此參數會攜帶拖曳作業的序列化形式來源物件：  
   
     ```  
     System.Windows.Forms.IDataObject data = eventArgs.Data;    
@@ -348,26 +348,26 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
  如需詳細資訊，請參閱 <<c0> [ 巡覽 UML 模型](../modeling/navigate-the-uml-model.md)。  
   
-##  <a name="Installing"></a> 安裝及解除安裝擴充功能  
+## <a name="Installing"></a> 安裝及解除安裝擴充功能  
  您可以同時在自己的電腦和其他電腦上安裝 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充功能。  
   
 #### <a name="to-install-an-extension"></a>安裝擴充功能  
   
-1.  在您的電腦中，尋找 VSIX 專案所建置的 **.vsix** 檔案。  
+1. 在您的電腦中，尋找 VSIX 專案所建置的 **.vsix** 檔案。  
   
-    1.  在方案總管 中，於 VSIX 專案的捷徑功能表上，選擇 [在 Windows 檔案總管中開啟資料夾] 。  
+    1. 在方案總管 中，於 VSIX 專案的捷徑功能表上，選擇 [在 Windows 檔案總管中開啟資料夾] 。  
   
-    2.  找出檔案**筒\\\*\\**_YourProject_**.vsix**  
+    2. 找出檔案**筒\\\*\\**_YourProject_**.vsix**  
   
-2.  將 **.vsix** 檔案複製到要安裝擴充功能的目標電腦。 這可以是您自己的電腦或另一部電腦。  
+2. 將 **.vsix** 檔案複製到要安裝擴充功能的目標電腦。 這可以是您自己的電腦或另一部電腦。  
   
      目標電腦必須具有其中一個版本[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]中所指定**source.extension.vsixmanifest**。  
   
-3.  在目標電腦上開啟 **.vsix** 檔案。  
+3. 在目標電腦上開啟 **.vsix** 檔案。  
   
      [Visual Studio 擴充功能安裝程式] 會隨即開啟並安裝擴充功能。  
   
-4.  啟動或重新啟動 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]。  
+4. 啟動或重新啟動 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]。  
   
 #### <a name="to-uninstall-an-extension"></a>解除安裝擴充功能  
   
@@ -381,7 +381,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
    *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
   
-##  <a name="DragExample"></a> 範例  
+## <a name="DragExample"></a> 範例  
  下列範例示範如何根據從元件圖表拖曳之元件的組件和連接埠，在循序圖中建立生命線。  
   
  若要加以測試，請按 F5。 Visual Studio 的實驗執行個體隨即開啟。 在本例中，開啟 UML 模型，並在元件圖上建立元件。 將某些介面和內部元件組件加入此元件。 選取介面和組件。 然後將介面和組件拖曳到循序圖。 (從元件圖表向上拖曳到循序圖的索引標籤，然後向下拖曳到循序圖。)針對每個介面和組件會顯示生命線。  

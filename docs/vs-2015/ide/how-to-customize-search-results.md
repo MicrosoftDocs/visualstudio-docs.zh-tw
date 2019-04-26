@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35fa2825d9fbb4b6a34d813c812bde1bc465f14f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d7add45e5dc2aac66eaf023eabcf2a1f7cdf189e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416836"
 ---
 # <a name="how-to-customize-search-results"></a>如何：自訂搜尋結果
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60108382"
  文件可能包含英文以外的語言的內容。 您可以將搜尋結果範圍縮小為特定語言的內容。 您也可以包含符合您搜尋查詢的任何英文內容。  
   
 > [!WARNING]
->  只有在已安裝內容的主要語言不是英文時，才會啟用此功能。  
+> 只有在已安裝內容的主要語言不是英文時，才會啟用此功能。  
   
 #### <a name="to-include-english-content-alongside-content-in-another-language"></a>包含英文內容與另一種語言的內容  
   

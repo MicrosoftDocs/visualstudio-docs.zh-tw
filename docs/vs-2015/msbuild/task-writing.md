@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fab26a750dab2a1099280b886342731fe8a4612e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445384"
 ---
 # <a name="task-writing"></a>工作撰寫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ namespace MyTasks
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 檔案 Microsoft.Common.Tasks 是專案檔案，包含 `UsingTask` 元素清單，這些元素會註冊所有隨附於 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 的工作。 組建每個專案時，都會自動包含此檔案。 如果在 Microsoft.Common.Tasks 中註冊的工作也在目前的專案檔中註冊，則目前的專案檔有優先順序，亦即您可以使用自己的同名工作覆寫預設工作。  
   
 > [!TIP]
->  檢視 Microsoft.Common.Tasks 的內容即可以查看 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 所附的工作清單。  
+> 檢視 Microsoft.Common.Tasks 的內容即可以查看 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 所附的工作清單。  
   
 ## <a name="raising-events-from-a-task"></a>從工作引發事件  
  如果您的工作衍生自 <xref:Microsoft.Build.Utilities.Task> 協助程式類別，您可以對 <xref:Microsoft.Build.Utilities.Task> 類別使用下列任一 helper 方法，引發要被攔截且由任何已註冊記錄器顯示的事件：  

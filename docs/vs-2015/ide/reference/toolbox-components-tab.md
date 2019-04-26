@@ -11,12 +11,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ebbf8a0492537ee40062fb17bb338d46c228a9a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b4e7cb0a1a55402ee457204227bad540a6120dfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419670"
 ---
 # <a name="toolbox-components-tab"></a>元件索引標籤、工具箱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "59652861"
  建立 <xref:System.Windows.Forms.Timer> 元件執行個體，以用來將以時間為基礎的功能新增至 Windows 應用程式。 如需詳細資訊，請參閱 [Timer 元件](http://msdn.microsoft.com/library/6700e534-6382-43d5-98ed-14205435fff7)。  
   
 > [!NOTE]
->  還會有以系統為基礎的 <xref:System.Timers.Timer> 可以新增至 [工具箱]。這個 <xref:System.Timers.Timer> 已針對伺服器應用程式最佳化，而且 Windows Forms <xref:System.Windows.Forms.Timer> 最適合在 Windows Forms 上使用。  
+> 還會有以系統為基礎的 <xref:System.Timers.Timer> 可以新增至 [工具箱]。這個 <xref:System.Timers.Timer> 已針對伺服器應用程式最佳化，而且 Windows Forms <xref:System.Windows.Forms.Timer> 最適合在 Windows Forms 上使用。  
   
 ## <a name="see-also"></a>請參閱  
  [使用元件進行程式設計](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)   

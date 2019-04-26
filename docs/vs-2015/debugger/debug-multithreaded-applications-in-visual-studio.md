@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 821396989a2de9444fdbf3499709588d00e66b45
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000363"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054296"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中偵錯多執行緒應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59000363"
 
  除此之外，多執行緒也帶來一些新類型的潛在錯誤。 舉例來說，常常有兩個以上的執行緒必須存取相同資源，但同時間只有一個執行緒能夠安全存取該資源。 所以某些形式的互斥是必要的，才能確保同時間只有一個執行緒在存取該資源。 如果執行互斥的方式不正確，就可以建立*死結*條件沒有任何執行緒可以執行的位置。 在偵錯時死結可能會是個特別難處理的問題。
 
- Visual Studio 提供**執行緒**視窗、 [GPU 執行緒] 視窗、 [平行監看式] 視窗中和其他功能可讓多執行緒偵錯更容易。 了解執行緒功能最好的方式，就是執行逐步解說。 請參閱[逐步解說：偵錯多執行緒應用程式](../debugger/walkthrough-debugging-a-multithreaded-application.md)和[逐步解說：偵錯 c + + AMP 應用程式](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)。
+ Visual Studio 提供**執行緒**視窗、 [GPU 執行緒] 視窗、 [平行監看式] 視窗中和其他功能可讓多執行緒偵錯更容易。 了解執行緒功能最好的方式，就是執行逐步解說。 請參閱[逐步解說：偵錯多執行緒應用程式](../debugger/walkthrough-debugging-a-multithreaded-application.md)和[逐步解說：偵錯C++AMP 應用程式](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)。
 
  Visual Studio 同樣提供強大的中斷點和追蹤點，這在您對多執行緒應用程式進行偵錯時非常實用。 您可以使用中斷點篩選條件，將中斷點放置在個別執行緒上。 請參閱[使用中斷點](../debugger/using-breakpoints.md)
 
@@ -77,8 +77,9 @@ ms.locfileid: "59000363"
  [如何：使用 [GPU 執行緒] 視窗](../debugger/how-to-use-the-gpu-threads-window.md)檢查，並使用偵錯期間在 GPU 執行的執行緒。
 
 ## <a name="related-sections"></a>相關章節
- [使用中斷點](../debugger/using-breakpoints.md)
- -   在您要將中斷點放置在個別執行緒上時，可以使用的中斷點篩選條件。
+
+[使用中斷點](../debugger/using-breakpoints.md)
+- 在您要將中斷點放置在個別執行緒上時，可以使用的中斷點篩選條件。
 
 - 追蹤點可以讓您追蹤程式的執行，而不會中斷程式。 在研究死結這類的問題時非常好用。
 
@@ -86,7 +87,7 @@ ms.locfileid: "59000363"
 
   [元件中的多執行緒](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)如何使用中的多執行緒[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]元件。
 
-  [舊版程式碼 （Visual c + +） 的多執行緒支援](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)使用 MFC 的 c + + 程式設計人員的執行緒概念和範例程式碼。
+  [舊版程式碼的多執行緒支援 (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)的執行緒概念和程式碼範例C++使用 MFC 的程式設計人員。
 
 ## <a name="see-also"></a>另請參閱
  [偵錯執行緒和處理程序](../debugger/debug-threads-and-processes.md)[遠端偵錯](../debugger/remote-debugging.md)

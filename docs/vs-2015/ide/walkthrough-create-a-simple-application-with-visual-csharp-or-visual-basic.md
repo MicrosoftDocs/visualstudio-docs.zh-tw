@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b278e05ec19bc550d8c8c8c1258514cf63cd5f9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436817"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>逐步解說：使用 Visual C# 或 Visual Basic 建立簡單的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60040555"
  [偵錯和測試應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  這個逐步解說是以 Visual Studio Professional 為基礎，提供您在建立這個逐步解說的專案時使用的 WPF 應用程式範本。 Visual Studio Express for Windows Desktop 也有提供該範本，不過，Visual Studio Express for Windows 和 Visual Studio Express for Web 則未提供。 如需如何使用 Visual Studio Express for Windows 的入門資訊，請參閱 [Windows 市集應用程式的開發人員中心](http://msdn.microsoft.com/windows/apps/br229519)。 如需如何使用 Visual Studio Express for Web 的入門資訊，請參閱 [Get Started with ASP.NET](http://www.asp.net/get-started)(開始使用 ASP.NET)。 此外，您的 Visual Studio 版本和使用的設定會決定某些使用者介面之項目的名稱和位置。 請參閱 [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 這個逐步解說是以 Visual Studio Professional 為基礎，提供您在建立這個逐步解說的專案時使用的 WPF 應用程式範本。 Visual Studio Express for Windows Desktop 也有提供該範本，不過，Visual Studio Express for Windows 和 Visual Studio Express for Web 則未提供。 如需如何使用 Visual Studio Express for Windows 的入門資訊，請參閱 [Windows 市集應用程式的開發人員中心](http://msdn.microsoft.com/windows/apps/br229519)。 如需如何使用 Visual Studio Express for Web 的入門資訊，請參閱 [Get Started with ASP.NET](http://www.asp.net/get-started)(開始使用 ASP.NET)。 此外，您的 Visual Studio 版本和使用的設定會決定某些使用者介面之項目的名稱和位置。 請參閱 [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="BKMK_ConfigureIDE"></a> 設定 IDE  
  當您第一次啟動 Visual Studio 時，Visual Studio 會提示您使用 Microsoft 服務帳戶 (MSA) 登入，請 [登入 Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx)。 您不一定要登入，可以稍後再進行。  
@@ -109,7 +109,7 @@ ms.locfileid: "60040555"
     [方案總管] 會顯示檔案的名稱現在是 Greetings.xaml；如果您展開 MainWindow.xaml 節點 (將焦點放在節點中，並按向右鍵)，就會看到 MainWindow.xaml.vb 或 MainWindow.xaml.cs 的名稱現在是 Greetings.xaml.vb 或 Greetings.xaml.cs。 這個程式碼檔案套疊在.xaml 檔案節點下，顯示它們彼此非常密切相關。  
   
    > [!WARNING]
-   >  這項變更會導致錯誤，您將在稍後步驟中學習如何加以偵錯和修正。  
+   > 這項變更會導致錯誤，您將在稍後步驟中學習如何加以偵錯和修正。  
   
 2. 在 [方案總管] 的 [設計工具] 檢視中開啟 Greetings.xaml (在節點具有焦點時按下 Enter 鍵)，然後使用滑鼠選取視窗的標題列。  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9dda948921c702367859afe32ad75a7998460587
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dce20d3e1833659ebfec2e84e6bff7f86dff844e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438437"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>如何：建立基本材質著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60048563"
    下圖顯示完成的著色器圖形和套用至立方體的著色器預覽。  
   
 > [!NOTE]
->  在此圖中，使用一個平面當成預覽圖形，並已指定材質以更適當展現著色器的效果。  
+> 在此圖中，使用一個平面當成預覽圖形，並已指定材質以更適當展現著色器的效果。  
   
  ![著色器圖形和其效果預覽](../designers/media/digit-texture-effect.png "Digit-Texture-Effect")  
   

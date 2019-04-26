@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441661"
 ---
 # <a name="threads-view-parallel-performance"></a>執行緒檢視 (平行處理效能)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ ms.locfileid: "60114791"
  當您選取執行區段中的某點時，並行視覺化檢視會在相關的呼叫堆疊上尋找該時間點，然後在執行區段中選取的那點上方顯示黑色插入號，並在 [目前的堆疊] 索引標籤上顯示本身的呼叫堆疊。您可以在執行區段上選取多個點。  
   
 > [!NOTE]
->  並行視覺化檢視可能無法解析執行區段上的選取範圍。 通常，當區段的持續時間少於一毫秒時，才會發生這種情況。  
+> 並行視覺化檢視可能無法解析執行區段上的選取範圍。 通常，當區段的持續時間少於一毫秒時，才會發生這種情況。  
   
  若要取得目前所選取時間範圍內所有已啟用 (未隱藏) 執行緒的執行設定檔，請在作用中圖例中，選取 [執行] 按鈕。  
   
