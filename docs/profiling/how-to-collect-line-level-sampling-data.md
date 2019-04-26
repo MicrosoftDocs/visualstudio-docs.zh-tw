@@ -1,5 +1,5 @@
 ---
-title: 作法：收集程式行層級取樣資料 | Microsoft Docs
+title: HOW TO：收集程式行層級取樣資料 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb55221eb8d4a0d60832853499096747e836da6a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e447b0b15a7a541567932a72dffd7abfc9851e7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834584"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>作法：收集程式行層級取樣資料
+# <a name="how-to-collect-line-level-sampling-data"></a>HOW TO：收集程式行層級取樣資料
 程式行層級取樣是程式碼剖析工具的一項功能，可以在需要大量處理器資源的函式 (例如包含大量專有樣本的函式) 中判斷處理器花最多時間處理的程式碼。
 
 ## <a name="overview"></a>總覽
@@ -49,11 +49,11 @@ ms.locfileid: "56624278"
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>關閉受控程式碼的程式行層級取樣
  程式行層級取樣預設為開啟。 您可以執行下列其中一個命令，以關閉受控程式碼的程式行層級資料收集：
 
--   在進行程式碼剖析之前，輸入 **VSPerfCLREnv /samplelineoff**。 這會影響應用程式和服務。
+- 在進行程式碼剖析之前，輸入 **VSPerfCLREnv /samplelineoff**。 這會影響應用程式和服務。
 
      — 或 —
 
--   啟動應用程式時，輸入 **VSPerfCmd /lineoff \<其他引數>**。
+- 啟動應用程式時，輸入 **VSPerfCmd /lineoff \<其他引數>**。
 
 ## <a name="see-also"></a>另請參閱
 - [設定效能工作階段](../profiling/configuring-performance-sessions.md)

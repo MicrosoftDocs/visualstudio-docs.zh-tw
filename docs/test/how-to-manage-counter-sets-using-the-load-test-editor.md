@@ -13,12 +13,12 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae61b261e9a613a2eee9ca8baca24773253a6df8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ca910038e35ee65e6d97999f08013f398eaec9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950095"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>HOW TO：使用負載測試編輯器管理計數器集合
 
@@ -35,9 +35,9 @@ ms.locfileid: "55936027"
 
 ## <a name="to-manage-counter-sets"></a>管理計數器集合
 
-1.  開啟負載測試。
+1. 開啟負載測試。
 
-2.  選擇 [管理計數器集合] 按鈕。
+2. 選擇 [管理計數器集合] 按鈕。
 
      -或-
 
@@ -45,20 +45,20 @@ ms.locfileid: "55936027"
 
      [管理計數器集合] 對話方塊隨即顯示。
 
-3.  (選擇性) 在 [選取的電腦和計數器集合會新增至下列回合設定之下] 清單方塊中，選取不同的回合設定。
+3. (選擇性) 在 [選取的電腦和計數器集合會新增至下列回合設定之下] 清單方塊中，選取不同的回合設定。
 
     > [!NOTE]
     > 這僅適用於您的負載測試中有一個以上的回合設定時。
 
-4.  (選擇性) 選擇 [新增電腦]，新增要監視的新電腦。 系統會提示您輸入名稱。 輸入電腦名稱後，您將會在新項目下方看到節點。 例如，**ASP.NET**、**IIS**、**SQL** 等等。 選取您要選取之節點前方的核取方塊。 新的計數器隨即出現在 [預覽選取範圍] 窗格中。
+4. (選擇性) 選擇 [新增電腦]，新增要監視的新電腦。 系統會提示您輸入名稱。 輸入電腦名稱後，您將會在新項目下方看到節點。 例如，**ASP.NET**、**IIS**、**SQL** 等等。 選取您要選取之節點前方的核取方塊。 新的計數器隨即出現在 [預覽選取範圍] 窗格中。
 
-5.  (選擇性) 在 [電腦標記] 文字方塊中，鍵入要與電腦產生關聯的標記。 例如，"TestMachine12 in lab3"。
+5. (選擇性) 在 [電腦標記] 文字方塊中，鍵入要與電腦產生關聯的標記。 例如，"TestMachine12 in lab3"。
 
      電腦標記可讓您使用容易辨識的名稱來識別電腦。
 
      這些標記會顯示在 [負載測試編輯器] 樹狀目錄的 [計數器集合對應] 節點中。 更重要的是，這些標記會顯示在 Excel 報表中，可協助專案關係人識別電腦在負載測試中扮演的角色。 例如 "Web Server1 in lab2" 或 "SQL Server2 in Phoenix office"。 如需詳細資訊，請參閱[針對測試比較或趨勢分析報告負載測試結果](../test/compare-load-test-results.md)。
 
-6.  選擇 [確定] 。
+6. 選擇 [確定] 。
 
 ## <a name="see-also"></a>另請參閱
 

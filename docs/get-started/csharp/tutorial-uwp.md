@@ -14,19 +14,19 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0257b29d327610b6b301d3c368e727a0912ab691
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a2a65534cda2571c36bb0c2caa16bf2f3394a804
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435050"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>教學課程：在 Visual Studio 中使用 XAML 和 C&#35; 來建立您的第一個通用 Windows 平台應用程式
 
 在這個 Visual Studio 整合式開發環境 (IDE) 的簡介中，您將建立一個可在任何 Windows 10 裝置上執行的 "Hello World" 應用程式。 為了這樣做，您將使用「通用 Windows 平台」(UWP) 專案範本、Extensible Application Markup Language (XAML) 及 C# 程式設計語言。
 
 ::: moniker range="vs-2017"
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
 ::: moniker-end
 ::: moniker range="vs-2019"
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。
@@ -46,7 +46,7 @@ ms.locfileid: "58856416"
    ![Visual Studio IDE 中 [新增專案] 對話方塊的「Windows 通用」專案範本](media/new-project-csharp-uwp-helloworld.png)
 
    > [!NOTE]
-   > 如果您看不到 [空白應用程式 (通用 Windows)] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。<br><br>![按一下 [新增專案] 對話方塊中的 [開啟 Visual Studio 安裝程式] 連結](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Visual Studio 安裝程式即會啟動。 選擇 [通用 Windows 平台開發] 工作負載，然後選擇 [修改]。<br><br>![Visual Studio 安裝程式中的 [通用 Windows 平台開發] 工作負載](media/uwp-dev-workload.png)
+   > 如果您看不到 [空白應用程式 (通用 Windows)] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。<br><br>![從 [新增專案] 對話方塊中按一下 [開啟 Visual Studio 安裝程式] 連結](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Visual Studio 安裝程式即會啟動。 選擇 [通用 Windows 平台開發] 工作負載，然後選擇 [修改]。<br><br>![「Visual Studio 安裝程式」中的 [通用 Windows 平台開發] 工作負載](media/uwp-dev-workload.png)
 
 1. 在 [新增通用 Windows 平台專案] 對話方塊中，接受預設的**目標版本**和**最低版本**設定。
 
@@ -61,7 +61,7 @@ ms.locfileid: "58856416"
    ![[建立新專案] 畫面的螢幕擷取畫面](media/vs-2019/uwp-create-new-project.png)
 
    > [!NOTE]
-   > 如果您看不到 [空白應用程式 (通用 Windows)] 專案範本，請按一下 [安裝更多工具與功能] 連結。<br><br>![按一下 [安裝更多工具與功能] 連結](media/vs-2019/uwp-not-finding.png)<br><br>Visual Studio 安裝程式即會啟動。 選擇 [通用 Windows 平台開發] 工作負載，然後選擇 [修改]。<br><br>![Visual Studio 安裝程式中的 [通用 Windows 平台開發] 工作負載](media/uwp-dev-workload.png)
+   > 如果您看不到 [空白應用程式 (通用 Windows)] 專案範本，請按一下 [安裝更多工具與功能] 連結。<br><br>![按一下 [安裝更多工具與功能] 連結](media/vs-2019/uwp-not-finding.png)<br><br>Visual Studio 安裝程式即會啟動。 選擇 [通用 Windows 平台開發] 工作負載，然後選擇 [修改]。<br><br>![「Visual Studio 安裝程式」中的 [通用 Windows 平台開發] 工作負載](media/uwp-dev-workload.png)
 
 1. 在 [新增通用 Windows 平台專案] 對話方塊中，接受預設的**目標版本**和**最低版本**設定。
 
@@ -70,7 +70,7 @@ ms.locfileid: "58856416"
 
    > [!NOTE]
    > 如果這是您第一次使用 Visual Studio 來建立 UWP 應用程式，可能會出現 [設定] 對話方塊。 請選擇 [開發人員模式]，然後選擇 [是]。<br><br>
-   ![在 UWP [設定] 對話方塊中啟用 [開發人員模式]](media/enable-developer-mode.png)<br><br>Visual Studio 會為您安裝額外的「開發人員模式」套件。 當套件安裝完成時，請關閉 [設定] 對話方塊。
+   > ![在 UWP [設定] 對話方塊中啟用 [開發人員模式]](media/enable-developer-mode.png)<br><br>Visual Studio 會為您安裝額外的「開發人員模式」套件。 當套件安裝完成時，請關閉 [設定] 對話方塊。
 
 ## <a name="create-the-application"></a>建立應用程式
 

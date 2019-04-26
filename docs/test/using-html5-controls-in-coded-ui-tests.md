@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 05ef65668edc9b008d95492605f967e467aa34b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ae861814a7219bfca1d6a074316910d459fc9999
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973055"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
 
@@ -22,7 +22,7 @@ ms.locfileid: "55951874"
 
  **需求**
 
--   Visual Studio 企業版
+- Visual Studio 企業版
 
 > [!WARNING]
 > 在 Internet Explorer 10 之前的版本，可以在相較於 Internet Explorer 處理序更高的權限層級中，執行自動程式碼 UI 測試。 在 Internet Explorer 10 執行自動程式碼 UI 測試時，自動程式碼 UI 測試和 Internet Explorer 程序必須是相同的權限層級。 這是因為 Internet Explorer 10 中的 AppContainer 功能更安全。
@@ -54,11 +54,10 @@ ms.locfileid: "55951874"
 > [!NOTE]
 > 搜尋和暫停的時間量可以很大。 在播放時，自動程式碼 UI 測試會等到 `(TimeSpan)` 中指定的時間才暫停音訊。 如果因為某些特殊情況，已經過所指定的時間才按下 [暫停] 命令，就會擲回例外狀況。
 
-
 ## <a name="video-control"></a>視訊控制項
  **視訊控制項：** 正確錄製和播放 HTML5 視訊控制項上的動作。
 
- ![HTML5 視訊控制項](../test/media/codedui_html5_video.png)
+ ![HTML5 Video 控制項](../test/media/codedui_html5_video.png)
 
 |動作|錄製|產生的程式碼|
 |-|---------------|-|

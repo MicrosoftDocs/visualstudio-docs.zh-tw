@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: ef208a9f74c1c8ee1ccb6df2c1e54917cd354be3
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971435"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>解除安裝 Visual Studio for Mac
 
@@ -36,8 +36,8 @@ ms.locfileid: "58856443"
 
 此解除安裝指令碼包含您將在文章中發現的大部分命令。 指令碼中有三個主要省略項目，並且因可能的外部相依性而未包含。 若要移除這種情況，請跳到以下相關小節，然後手動移除它們：
 
-- **[將 Mono 解除安裝](#uninstall-mono-sdk-mdk)**
-- **[將 Android AVD 解除安裝](#uninstall-android-avd)**
+- **[解除安裝 Mono](#uninstall-mono-sdk-mdk)**
+- **[解除安裝 Android AVD](#uninstall-android-avd)**
 - **[解除安裝 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)**
 
 若要執行指令碼，請執行下列步驟：
@@ -48,12 +48,14 @@ ms.locfileid: "58856443"
     ```bash
     cd /location/of/file
     ```
+
 3. 將指令碼設為可執行，並使用 **sudo** 執行它：
 
     ```bash
     chmod +x ./uninstall-vsmac.sh
     sudo ./uninstall-vsmac.sh
     ```
+
 4. 最後，刪除解除安裝指令碼。
 
 ### <a name="net-core-script"></a>.NET Core 指令碼
@@ -68,12 +70,14 @@ ms.locfileid: "58856443"
     ```bash
     cd /location/of/file
     ```
+
 3. 將指令碼設為可執行，並使用 **sudo** 執行它：
 
     ```bash
     chmod +x ./dotnet-uninstall-pkgs.sh
     sudo ./dotnet-uninstall-pkgs.sh
     ```
+
 4. 最後，刪除 .NET Core 解除安裝指令碼。
 
 ## <a name="uninstall-visual-studio-for-mac"></a>解除安裝 Visual Studio for Mac
@@ -104,7 +108,6 @@ rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```bash
 rm -rf ~/Library/Developer/Xamarin
 ```
-
 
 ## <a name="uninstall-mono-sdk-mdk"></a>解除安裝 Mono SDK (MDK)
 
@@ -195,8 +198,8 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 
 若為舊版本，您可能需要手動移除下列成品：
 
-* 刪除後列位置的 Workbooks 應用程式 `"/Applications/Xamarin Workbooks.app"`
-* 刪除後列位置的 Inspector 應用程式 `"Applications/Xamarin Inspector.app"`
+* 刪除 `"/Applications/Xamarin Workbooks.app"` 上的 Workbooks 應用程式
+* 刪除 `"Applications/Xamarin Inspector.app"` 上的 Inspector 應用程式
 * 刪除增益集：`"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` 和 `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
 * 刪除這裡的 Inspector 和支援檔：`/Library/Frameworks/Xamarin.Interactive.framework` 和 `/Library/Frameworks/Xamarin.Inspector.framework`
 
@@ -237,4 +240,4 @@ rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 
 ## <a name="see-also"></a>另請參閱
 
-- [解除安裝 Visual Studio (在 Windows 上)](/visualstudio/install/uninstall-visual-studio)
+- [解除安裝 Visual Studio (Windows 上)](/visualstudio/install/uninstall-visual-studio)

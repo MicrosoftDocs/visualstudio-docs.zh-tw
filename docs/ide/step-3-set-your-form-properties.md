@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8edb5fd4b7df44528461d5078e78fd315c0c40b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 941bf3329b0724e19048afa6c93a9a9c3762d1c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430734"
 ---
 # <a name="step-3-set-your-form-properties"></a>步驟 3：設定表單屬性
 接下來，您要使用 [屬性] 視窗變更表單的外觀。
@@ -27,7 +27,7 @@ ms.locfileid: "55931451"
 2. 選擇表單 [Form1] 內的任何位置來選取它。 查看 [屬性] 視窗，現在應該會顯示表單的屬性。 表單有各種屬性。 例如，您可以設定前景和背景色彩、表單頂端顯示的標題文字、表單的大小和其他屬性。
 
    > [!NOTE]
-   >  如果 [屬性] 視窗沒有出現，請選擇工具列上的 [停止偵錯] 方形按鈕，或直接關閉視窗以停止程式。 如果程式停止，而您仍然看不到 [屬性] 視窗，請在功能表列上依序選擇 [檢視] > [屬性視窗]。
+   > 如果 [屬性] 視窗沒有出現，請選擇工具列上的 [停止偵錯] 方形按鈕，或直接關閉視窗以停止程式。 如果程式停止，而您仍然看不到 [屬性] 視窗，請在功能表列上依序選擇 [檢視] > [屬性視窗]。
 
 3. 選取表單之後，在 [屬性] 視窗中尋找 [文字] 屬性。 根據清單排序的方式，您可能需要向下捲動。 選擇 [文字]，鍵入 **Picture Viewer**，然後選擇 **Enter**。  表單現在會在標題列中顯示文字 **Picture Viewer**，而 [屬性] 視窗應該如下列圖片所示。
 
@@ -35,7 +35,7 @@ ms.locfileid: "55931451"
    [屬性]**** 視窗
 
    > [!NOTE]
-   >  屬性可以依 [分類] 或 [字母順序] 檢視來排序。 您可以使用 [屬性] 視窗上的按鈕，在這兩個檢視之間切換。 在本教學課程中，透過 [字母順序] 檢視比較容易找到屬性。
+   > 屬性可以依 [分類] 或 [字母順序] 檢視來排序。 您可以使用 [屬性] 視窗上的按鈕，在這兩個檢視之間切換。 在本教學課程中，透過 [字母順序] 檢視比較容易找到屬性。
 
 4. 返回 **Windows Forms 設計工具**。 選擇表單的右下方拖曳控點，即表單右下方的白色小方塊，如下所示。
 
@@ -60,14 +60,14 @@ ms.locfileid: "55931451"
 
 7. 在繼續下一個步驟之前，請停止程式，因為當程式執行時，IDE 不會允許您變更程式。 請記住，您可以使用下列任何一個方法停止程式。
 
-   -   在工具列上選擇 [停止偵錯] 按鈕。
+   - 在工具列上選擇 [停止偵錯] 按鈕。
 
-   -   在功能表列上，依序選擇 [偵錯] > [停止偵錯]。
+   - 在功能表列上，依序選擇 [偵錯] > [停止偵錯]。
 
-   -   選擇 [Form1] 視窗右上角的 **X** 按鈕。
+   - 選擇 [Form1] 視窗右上角的 **X** 按鈕。
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要前往下一個教學課程步驟，請參閱[步驟 4：使用 TableLayoutPanel 控制項來配置表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。
+- 若要前往下一個教學課程步驟，請參閱[步驟 4：使用 TableLayoutPanel 控制項來配置表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。
 
--   若要回到上一個教學課程步驟，請參閱[步驟 2：執行程式](../ide/step-2-run-your-program.md)。
+- 若要回到上一個教學課程步驟，請參閱[步驟 2：執行程式](../ide/step-2-run-your-program.md)。

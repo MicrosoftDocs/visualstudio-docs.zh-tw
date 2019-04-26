@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
 ms.openlocfilehash: dc37b3a376b99c39d4216ba0ae2b05d707d11484
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933280"
 ---
 # <a name="adding-and-removing-project-items"></a>新增和移除專案項目
 

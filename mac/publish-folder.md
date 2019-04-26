@@ -9,12 +9,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 0ab1b01900077fdbad5dec3fb968abcf46db62d8
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 8bff4b6079818a7e6d4e3500830a036ae6ab28cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937039"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 將 Web 應用程式發佈到資料夾
 
@@ -22,8 +22,8 @@ ms.locfileid: "58856524"
 
 ## <a name="prerequisites"></a>必要條件
 
- - 在已啟用 ASP.NET Core 的情況下安裝 [Visual Studio 2019 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019)。
- - ASP.NET Core 專案。 如果您還沒有專案，可以[建立新的專案](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019)。
+- 在已啟用 ASP.NET Core 的情況下安裝 [Visual Studio 2019 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019)。
+- ASP.NET Core 專案。 如果您還沒有專案，可以[建立新的專案](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019)。
 
 ## <a name="publish-to-folder"></a>發佈到資料夾
 

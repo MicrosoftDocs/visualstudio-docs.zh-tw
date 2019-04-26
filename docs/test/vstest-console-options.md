@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 95ed8806844781bdaab4d97d63cb1b7ef324dd7b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976243"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令列選項
 
@@ -30,7 +30,7 @@ ms.locfileid: "55949833"
 
 下表列出 *VSTest.Console.exe* 的所有選項，以及選項的簡短描述。 在命令列鍵入 `VSTest.Console/?` 也能看到類似的摘要。
 
-| 選項 | 描述 |
+| 選項 | 說明 |
 |---|---|
 |**[*test file names*]**|從指定的檔案執行測試。 以空格分隔多個測試檔案名稱。<br />範例：`mytestproject.dll`、`mytestproject.dll myothertestproject.exe`|
 |**/Settings:[*file name*]**|使用像資料收集器之類的其他設定執行測試。<br />範例：`/Settings:Local.RunSettings`|

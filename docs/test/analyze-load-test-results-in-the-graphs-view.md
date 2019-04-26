@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c48fe67c8d52f962589c9f8628ff49f12f7770c5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822998"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在負載測試分析器的圖形檢視中分析負載測試結果
 
@@ -32,27 +32,27 @@ ms.locfileid: "55970552"
 
 同時最多可以顯示四個圖形。 藉由使用 [面板配置] 工具列按鈕，可以在不同面板配置間切換。
 
-有提供數種內建圖形。 您可以直接使用內建圖形或是自訂這些圖形。 除此之外，您也可以建立自己的圖形。 如需詳細資訊，請參閱[＜How to：在圖表上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)和[如何：建立自訂圖表](../test/how-to-create-custom-graphs-in-load-test-results.md)。
+有提供數種內建圖形。 您可以直接使用內建圖形或是自訂這些圖形。 除此之外，您也可以建立自己的圖形。 如需詳細資訊，請參閱[如何：在圖表上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)和[如何：建立自訂圖表](../test/how-to-create-custom-graphs-in-load-test-results.md)。
 
 ## <a name="built-in-graphs"></a>內建圖形
 
 下列表格列出可用於分析負載測試結果的內建圖形。
 
-|圖形名稱|描述|
+|圖形名稱|說明|
 |-|-|
 |關鍵指標|用於描述測試效能基本層面的計數器，例如使用者負載、輸送量和回應時間。|
 |測試回應時間|執行測試所需時間量的資料。|
 |頁面回應時間|負載測試期間所存取 Web 頁面的平均回應時間。|
 |待測系統|應用程式要進行測試回合的電腦資訊。 這些資訊包含記憶體使用量、處理器、實體磁碟和處理序的相關資料。<br /><br /> 根據預設，只會收集 Available Mbytes 和 Processor Time 計數器。|
 |控制器和代理程式|執行負載測試的電腦資訊。 這些資訊包含記憶體使用量、處理器、實體磁碟和處理序的相關資料。<br /><br /> 根據預設，只會收集 Available Mbytes 和 Processor Time 計數器。|
-|異動回應時間|負載測試期間所發生交易的平均回應時間。|
+|異動回應時間|負載測試期間所發生異動的平均回應時間。|
 
  您可以在執行階段或執行測試之後，在圖形上顯示不同的計數器。
 
 > [!NOTE]
 > 自動產生的回應時間圖形中僅能加入回應時間效能計數器。
 
- 計數器資訊將會在圖形和圖形底下的圖例中出現。 也可以放大圖形中的某個區段。 如需詳細資訊，請參閱[＜How to：放大圖表中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
+ 計數器資訊將會在圖形和圖形底下的圖例中出現。 也可以放大圖形中的某個區段。 如需詳細資訊，請參閱[如何：放大圖表中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
 ## <a name="counters-displayed-in-graphs"></a>圖形中顯示的計數器
 

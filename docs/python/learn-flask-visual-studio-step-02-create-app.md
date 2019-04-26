@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2526a6bcf6dc03379c22e38fb646acba450a9ec5
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961727"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本來建立 Flask 應用程式
 
-**上一步：[建立 Visual Studio 專案和解決方案](learn-flask-visual-studio-step-01-project-solution.md)**
+**上一步：[建立 Visual Studio 專案和方案](learn-flask-visual-studio-step-01-project-solution.md)**
 
 本教學課程步驟 1 會產生一個 Flask 應用程式。此應用程式為單一檔案，其中包含單一頁面與所有程式碼。 若要考慮進一步開發，最好是將程式碼重構，並為頁面範本建立結構。 特別是，您會想要將應用程式檢視程式碼與其他方面 (例如起始程式碼) 分開。
 
@@ -77,6 +77,7 @@ ms.locfileid: "59366597"
 
         app.run(HOST, PORT)
     ```
+
 6. 您的專案結構應該看起來如下圖：
 
     ![重構程式碼後的專案結構](media/flask/step02-project-structure.png)

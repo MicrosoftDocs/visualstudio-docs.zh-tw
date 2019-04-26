@@ -7,12 +7,12 @@ ms.date: 07/02/2018
 ms.topic: conceptual
 description: 了解 Open 和 Open License 移轉至 Visual Studio 訂用帳戶管理入口網站。
 searchscope: VS Subscription
-ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0e3ad14f48aaa461b7c70507cd4501067eacc789
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821727"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Open 和 Open License 移轉至新的 Visual Studio 訂用帳戶管理入口網站
 
@@ -38,7 +38,6 @@ ms.locfileid: "56843191"
 
 - 若要讓夥伴代表客戶管理訂用帳戶，他們需要在管理入口網站上註冊。 下面列出取得存取權的各種方式 (與 add-open 程序類似)。
 
-
 ## <a name="existing-partners-adding-a-new-license"></a>新增授權的現有夥伴
 
 這適用於下列夥伴：這些夥伴已可存取 [Visual Studio 訂用帳戶管理入口網站](https://manage.visualstudio.com)，但已使用他們需要管理的 Visual Studio 訂用帳戶來下 Open License 訂單。
@@ -48,7 +47,6 @@ ms.locfileid: "56843191"
 - 他們將選取合約下拉式清單，並捲動至底端，該處有 [+New Open License] \(+新增 Open License\) 的選項。
 
 - 在快顯面板中，夥伴將會輸入合約上的授權號碼 (authorization number)、授權號碼 (license number) 和客戶電子郵件地址，並選取核取方塊，然後按一下 [提交]。
-
 
 > [!NOTE]
 > 客戶將收到一封通知電子郵件，通知他們已將夥伴新增至 Open License。 他們可以選擇移除夥伴的存取權。
@@ -67,7 +65,6 @@ ms.locfileid: "56843191"
 
 - 夥伴接著可以管理該 Open License 的訂用帳戶。
 
-
 > [!NOTE]
 > 客戶將收到一封通知電子郵件，通知他們已將夥伴新增至 Open License。 他們可以選擇移除夥伴的存取權。
 
@@ -80,7 +77,6 @@ ms.locfileid: "56843191"
 - 他們會收到錯誤，指出其為不可辨識的使用者。
 
 - 夥伴必須選取 [OLP Partners] \(OLP 夥伴\) 註冊選項，並輸入訂單上所使用的授權號碼 (authorization number)、授權號碼 (license number) 和客戶電子郵件地址，然後選取核取方塊並按一下 [提交]。
-
 
 > [!NOTE]
 > 客戶將收到一封通知電子郵件，通知他們已將夥伴新增至 Open License。 他們可以選擇移除夥伴的存取權。

@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: 了解系統管理員如何刪除訂閱指派
 searchscope: VS Subscription
 ms.openlocfilehash: fa591d8ab6a53539c7f76ddea4a80270b9cbc1a3
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945902"
 ---
 # <a name="deleting-assignments-in-visual-studio-subscriptions"></a>刪除 Visual Studio 訂閱的指派
 

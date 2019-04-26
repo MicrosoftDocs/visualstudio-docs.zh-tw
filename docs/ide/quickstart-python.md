@@ -10,18 +10,28 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 05551799a0f97178c5a52d7468f6c6abb505e4c3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: f81ca0d5c41f08174adfc891055939414e1bfe6f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953815"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 
 在這個 5-10 分鐘將 Visual Studio 當成 Python IDE 的簡介中，您會根據 Flask 架構 建立簡單的 Python Web 應用程式。 您會透過離散步驟建立可協助您了解 Visual Studio 基本功能的專案。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)，免費進行安裝。 在安裝程式中，請務必選取 [Python 開發] 工作負載。
+::: moniker range="vs-2017"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。 在安裝程式中，請務必選取 [Python 開發] 工作負載。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)頁面免費進行安裝。 在安裝程式中，請務必選取 [Python 開發] 工作負載。
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>建立專案
 
@@ -184,7 +194,7 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 6. 關閉命令視窗以停止應用程式，然後關閉瀏覽器視窗。
 
-**問題：[啟動但不偵錯] 命令和 [開始偵錯] 之間有何差異？**
+**問題：啟動但不偵錯命令和開始偵錯之間有何差異？**
 
 **答**：您可以使用 [開始偵錯] 在 [Visual Studio 偵錯工具](../python/debugging-python-in-visual-studio.md)的內容中執行應用程式，讓您設定中斷點、檢查變數，以及逐行執行程式碼。 在偵錯工具中，應用程式可能會執行得較慢，原因是有各種不同的攔截程序在進行偵錯。 相反地，[開始偵錯] 會直接執行應用程式，就像是您從命令列執行它一樣，沒有任何偵錯內容，而且也會自動啟動瀏覽器並瀏覽到專案屬性的 [偵錯] 索引標籤中指定的 URL。
 

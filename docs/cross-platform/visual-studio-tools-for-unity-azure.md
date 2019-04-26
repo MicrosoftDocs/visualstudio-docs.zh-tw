@@ -13,11 +13,11 @@ ms.workload:
 - azure
 - unity
 ms.openlocfilehash: 454cb3617bb918b67784ebd2a3388ac6ee9f3826
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818359"
 ---
 # <a name="program-with-unity-and-azure"></a>使用 Unity 與 Azure 設計程式
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6f0e70111c557be038e73c05ef7a1578493002d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12c9515cf6f4841dd1f5ebfb554e00a262b8a160
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893134"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs 原始程式碼
 
@@ -23,9 +23,9 @@ ms.locfileid: "55951315"
 
 系統會使用兩個私有資料成員，將此類別與 L2DBForm.xaml 中所使用的視窗資源產生關聯。
 
--   系統會將命名空間變數 `myBooks` 初始化為 `"http://www.mybooks.com"`。
+- 系統會將命名空間變數 `myBooks` 初始化為 `"http://www.mybooks.com"`。
 
--   利用下行，建構函式中的成員 `bookList` 會被初始化為 L2DBForm.xaml 中的 CDATA 字串：
+- 利用下行，建構函式中的成員 `bookList` 會被初始化為 L2DBForm.xaml 中的 CDATA 字串：
 
     ```csharp
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;
@@ -35,11 +35,11 @@ ms.locfileid: "55951315"
 
 這個方法包含下列三個陳述式：
 
--   第一個條件陳述式用於輸入驗證。
+- 第一個條件陳述式用於輸入驗證。
 
--   第二個陳述式會從使用者在 [加入新的書籍] 使用者介面 (UI) 區段中輸入的字串值，建立新的 <xref:System.Xml.Linq.XElement>。
+- 第二個陳述式會從使用者在 [加入新的書籍] 使用者介面 (UI) 區段中輸入的字串值，建立新的 <xref:System.Xml.Linq.XElement>。
 
--   最後一個陳述式會將這個新書籍項目新增至 L2DBForm.xaml 的資料提供者中。 因此，動態資料繫結將會使用這個新項目，自動更新 UI；不需要使用者提供的任何額外程式碼。
+- 最後一個陳述式會將這個新書籍項目新增至 L2DBForm.xaml 的資料提供者中。 因此，動態資料繫結將會使用這個新項目，自動更新 UI；不需要使用者提供的任何額外程式碼。
 
 ## <a name="onremove-event-handler"></a>OnRemove 事件處理常式
 
@@ -47,13 +47,13 @@ ms.locfileid: "55951315"
 
 不過，移除所選書籍項目的核心工作僅由兩個陳述式完成：
 
--   首先，系統會擷取清單方塊中，與目前所選項目相關聯的書籍項目：
+- 首先，系統會擷取清單方塊中，與目前所選項目相關聯的書籍項目：
 
     ```csharp
     XElement selBook = (XElement)lbBooks.SelectedItem;
     ```
 
--   接著，這個項目會從資料提供者刪除：
+- 接著，這個項目會從資料提供者刪除：
 
     ```csharp
     selBook.Remove();

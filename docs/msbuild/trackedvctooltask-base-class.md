@@ -12,11 +12,11 @@ ms.author: mblome
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a4044416131a27ca313d10d02404094c5f5e219
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938865"
 ---
 # <a name="trackedvctooltask-base-class"></a>TrackedVCToolTask 基底類別
 

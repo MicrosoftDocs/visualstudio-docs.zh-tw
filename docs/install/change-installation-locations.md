@@ -17,11 +17,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 651295d94a8125e26caa96b71ab438c62841ac10
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974330"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>在 Visual Studio 2017 中選取安裝位置
 
@@ -109,6 +109,6 @@ ms.locfileid: "58856323"
 ## <a name="see-also"></a>另請參閱
 
 * [安裝 Visual Studio](install-visual-studio.md)
-* [更新 Visual Studio 2017](update-visual-studio.md)
-* [修改 Visual Studio 2017](update-visual-studio.md)
+* [更新 Visual Studio](update-visual-studio.md)
+* [修改 Visual Studio](update-visual-studio.md)
 * [解除安裝 Visual Studio](uninstall-visual-studio.md)

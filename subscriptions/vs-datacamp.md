@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解所選取 Visual Studio 訂用帳戶隨附的 DataCamp 訓練課程訂用帳戶。
 searchscope: VS Subscription
-ms.openlocfilehash: 0751c29833b9fac85107af9992910f8046487a70
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 5d6f9d2a642a13b350e539383a1abb74835bf9d3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948056"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 DataCamp 訓練課程權益
 
@@ -48,7 +48,6 @@ DataCamp 權益的持續時間取決於您的 Visual Studio 訂用帳戶。
    > [!div class="mx-imgBorder"]
    > ![DataCamp 資料科學技能集](_img/vs-datacamp/vs-datacamp-datascience.png)
 
-
 6. 根據您選取的路徑和選項，您會看到一系列職涯路徑。  針對您選擇的路徑，按一下 [Enroll] (註冊) 按鈕。
    > [!div class="mx-imgBorder"]
    > ![DataCamp 職涯路徑](_img/vs-datacamp/vs-datacamp-all-tracks.png)
@@ -75,22 +74,17 @@ DataCamp 權益的持續時間取決於您的 Visual Studio 訂用帳戶。
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |無法使用  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 
-
-
 <sup>1</sup>  *包含：禁止轉售 (NFR)、FTE、最有價值專家 (MVP)、區域經理 (RD)、Microsoft 合作夥伴網路 (MPN)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合格訓練人員、BizSpark、Imagine*
-
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
 
-
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
-
 ## <a name="support-resources"></a>支援資源
--  需要使用 DataCamp 的說明嗎？  請參閱這些資源：
+- 需要使用 DataCamp 的說明嗎？  請參閱這些資源：
     - [DataCamp 社群](https://www.datacamp.com/community/tutorials) \(英文\)，其中包含論壇和教學課程。
     - [DataCamp 說明中心](https://support.datacamp.com/hc) \(英文\)，可供搜尋支援主題及查看要求使用者問題。
     - [提交支援要求](https://support.datacamp.com/hc/requests/new) \(英文\)
--  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+- 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

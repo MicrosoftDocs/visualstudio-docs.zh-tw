@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aea3dd9c4821b3c06839c746111c131eedcfa455
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b8312e0db76dd3ce064172116aecd82daab56e90
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975043"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>類別設計工具中的 Visual C++ 類別
 
@@ -128,7 +128,6 @@ typedef struct
 ## <a name="template-classes"></a>範本類別
 
 **類別設計工具**支援範本類別的視覺效果。 支援巢狀宣告。 下表顯示一些典型宣告。
-
 
 | 程式碼項目 | 類別設計工具檢視 |
 | - | - |

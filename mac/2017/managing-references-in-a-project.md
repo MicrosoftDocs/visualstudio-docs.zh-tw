@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.openlocfilehash: 54e07d3c170859405ef584b884547dad335788f3
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997204"
 ---
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
 

@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: 了解系統管理員如何在系統管理員入口網站中尋找個別訂閱者或群組。
 searchscope: VS Subscription
 ms.openlocfilehash: fe77781c67e773086f07ac39130c472f28acd71f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008144"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>搜尋和篩選 Visual Studio 訂用帳戶中的訂閱者
 

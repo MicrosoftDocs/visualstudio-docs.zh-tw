@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9de3c3aed6b40ace1b841d2dac5c175963b1fecb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842255"
 ---
 # <a name="msbuild-reference"></a>MSBuild 參考
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是適用於 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的建置系統。 下列連結會引導至包含 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 參考資訊的主題。

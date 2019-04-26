@@ -14,11 +14,11 @@ ms.workload:
 - dotnet
 author: gewarren
 ms.openlocfilehash: d951c6171abd0e8cad42554c49a40cb42542fb62
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976225"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：針對受控碼建立和執行單元測試
 

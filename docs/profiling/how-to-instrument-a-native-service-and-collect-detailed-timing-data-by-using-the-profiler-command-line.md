@@ -1,5 +1,5 @@
 ---
-title: 作法：使用分析工具命令列以檢測原生服務並收集詳細計時資料 | Microsoft Docs
+title: HOW TO：使用分析工具命令列以檢測原生服務並收集詳細計時資料 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: dfe58b39-63f8-4a87-ab3a-2b5b14faa8d0
@@ -8,20 +8,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2be1ac0818f7efd31fb30981e50eff5e42df7af
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5c642c624d0edffc13fa0c3a0a455085291d98e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386854"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>HOW TO：使用分析工具命令列以檢測原生服務並收集詳細計時資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具來檢測原生 (C/C++) 服務，並收集詳細的計時資料。
 
 > [!NOTE]
->  如果某項服務無法在電腦啟動後重新啟動 (這類服務只會在作業系統啟動時啟動)，則無法使用檢測方法來分析服務。
+> 如果某項服務無法在電腦啟動後重新啟動 (這類服務只會在作業系統啟動時啟動)，則無法使用檢測方法來分析服務。
 >
->  若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
+> 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
 
  若要使用檢測方法從原生服務收集詳細的計時資料，您可使用 [VSInstr.exe](../profiling/vsinstr.md) 工具產生已檢測的元件版本。 然後以檢測過的版本取代未經檢測的服務版本，確認服務設定為手動啟動。 然後啟動分析工具。
 
@@ -50,7 +50,7 @@ ms.locfileid: "56634782"
      您可以使用下列任一選項搭配 **/start:trace** 選項。
 
    > [!NOTE]
-   >  **/user** 和 **/crosssession** 選項通常是 ASP.NET 應用程式的必要選項。
+   > **/user** 和 **/crosssession** 選項通常是 ASP.NET 應用程式的必要選項。
 
    | 選項 | 說明 |
    | - | - |
@@ -63,7 +63,6 @@ ms.locfileid: "56634782"
    | [/automark](../profiling/automark.md) **:** `Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.*etl*) 檔案。 |
 
-
 5. 從服務控制管理員啟動服務。
 
 ## <a name="control-data-collection"></a>控制資料收集
@@ -71,7 +70,7 @@ ms.locfileid: "56634782"
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集
 
--   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
+- 下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
     |選項|說明|
     |------------|-----------------|
@@ -84,13 +83,13 @@ ms.locfileid: "56634782"
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段
 
-1.  從服務控制管理員停止服務。
+1. 從服務控制管理員停止服務。
 
-2.  關閉分析工具。 類型：
+2. 關閉分析工具。 類型：
 
      **VSPerfCmd /shutdown**
 
-3.  以原始模組取代檢測過的模組。 如有必要，請重新設定服務的啟動類型。
+3. 以原始模組取代檢測過的模組。 如有必要，請重新設定服務的啟動類型。
 
 ## <a name="see-also"></a>另請參閱
 - [分析服務](../profiling/command-line-profiling-of-services.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ebe0d73aa2cd4a030e99d4501c5d3d726888f64
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 041a04827ee904f309b62b8fb875198cc8991b34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434160"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>針對 .NET Framework 目標錯誤進行疑難排解
 本主題說明可能因參考問題造成的 MSBuild 錯誤，以及如何解決這些錯誤。
@@ -51,7 +51,7 @@ ms.locfileid: "56620287"
 ```
 
 > [!NOTE]
->  在關閉並重新開啟專案後，您也應該重建它，以確保能夠正確解析所有參考。
+> 在關閉並重新開啟專案後，您也應該重建它，以確保能夠正確解析所有參考。
 
 ## <a name="see-also"></a>另請參閱
 - [如何：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)

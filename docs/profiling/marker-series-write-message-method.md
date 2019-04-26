@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be6194936264d6038c4dc1e26b5d05f539f0dc6a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830898"
 ---
 # <a name="markerserieswritemessage-method"></a>marker_series::write_message 方法
 將訊息寫入並行視覺化檢視追蹤檔。

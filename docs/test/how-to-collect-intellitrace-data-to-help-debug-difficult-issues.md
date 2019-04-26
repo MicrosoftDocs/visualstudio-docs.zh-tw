@@ -11,12 +11,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cac9e52c74b9dc830fa801005a22f0123ee2e41
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce5b03c7973a2b6dd9766f200528ae71cf6e4cfa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979311"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>HOW TO：收集 IntelliTrace 資料以協助偵錯困難的問題
 
@@ -51,11 +51,11 @@ IntelliTrace 檔中收集的資料可縮短重現及診斷程式碼錯誤所需�
 
 ### <a name="to-configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>設定利用 IntelliTrace 診斷資料配接器收集的資料
 
-1.  選取要用來收集 IntelliTrace 資料的角色。
+1. 選取要用來收集 IntelliTrace 資料的角色。
 
-2.  選取 [IntelliTrace]。
+2. 選取 [IntelliTrace]。
 
-3.  如果您要針對 Web 用戶端角色或 ASP.NET Web 應用程式新增 IntelliTrace，那麼也必須選取 [用於 IntelliTrace 及測試影響的 ASP.NET 用戶端 Proxy]。
+3. 如果您要針對 Web 用戶端角色或 ASP.NET Web 應用程式新增 IntelliTrace，那麼也必須選取 [用於 IntelliTrace 及測試影響的 ASP.NET 用戶端 Proxy]。
 
      此 Proxy 可讓您針對「IntelliTrace 和測試影響」診斷資料配接器，收集從用戶端到 Web 伺服器之 HTTP 呼叫的相關資訊。
 
@@ -64,22 +64,22 @@ IntelliTrace 檔中收集的資料可縮短重現及診斷程式碼錯誤所需�
     >
     > **runas /user:domain\name /profile cmd.exe**
 
-4.  選擇 [IntelliTrace] 的 [設定]，修改預設 IntelliTrace 設定。
+4. 選擇 [IntelliTrace] 的 [設定]，修改預設 IntelliTrace 設定。
 
      設定將要收集之資料的對話方塊隨即顯示。
 
     > [!WARNING]
     > 如果您啟用收集 IntelliTrace 資料，則無法收集程式碼涵蓋範圍資料。
 
-5.  選擇 [一般] 索引標籤。選取 [僅 IntelliTrace 事件] 記錄重大診斷事件，同時對測試期間的效能造成最小影響。
+5. 選擇 [一般] 索引標籤。選取 [僅 IntelliTrace 事件] 記錄重大診斷事件，同時對測試期間的效能造成最小影響。
 
      -或-
 
      選取 [IntelliTrace 事件和呼叫資訊] 記錄診斷事件和顯示呼叫資訊的方法層級追蹤。 此追蹤層級可能會在您執行測試時對效能造成影響。
 
-6.  若要從網際網路資訊服務上執行的 ASP.NET 應用程式收集資料，請選取 [收集執行於網際網路資訊服務之 ASP.NET 應用程式中的資料]。 在 Web 伺服器角色上安裝及設定您的測試代理程式。 請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。
+6. 若要從網際網路資訊服務上執行的 ASP.NET 應用程式收集資料，請選取 [收集執行於網際網路資訊服務之 ASP.NET 應用程式中的資料]。 在 Web 伺服器角色上安裝及設定您的測試代理程式。 請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。
 
-7.  選擇 [模組] 索引標籤。選取 [從所有模組收集資料，但下列模組例外]，然後使用 [新增] 以新增至模組清單，並使用 [移除] 以移除模組。 此選項可讓您納入系統上執行的所有模組，但您指定的模組例外。
+7. 選擇 [模組] 索引標籤。選取 [從所有模組收集資料，但下列模組例外]，然後使用 [新增] 以新增至模組清單，並使用 [移除] 以移除模組。 此選項可讓您納入系統上執行的所有模組，但您指定的模組例外。
 
      -或-
 
@@ -88,7 +88,7 @@ IntelliTrace 檔中收集的資料可縮短重現及診斷程式碼錯誤所需�
     > [!NOTE]
     > 請盡可能選取您想要監視的特定處理序。 這是最佳效能的建議事項。
 
-8.  選擇 [處理序] 索引標籤。選取 [從所有處理序收集資料，但下列處理序例外]，然後使用 [新增] 以新增至處理序清單，並使用 [移除] 以移除處理序。 此選項可讓您納入系統上執行的所有處理序，但您指定的處理序例外。
+8. 選擇 [處理序] 索引標籤。選取 [從所有處理序收集資料，但下列處理序例外]，然後使用 [新增] 以新增至處理序清單，並使用 [移除] 以移除處理序。 此選項可讓您納入系統上執行的所有處理序，但您指定的處理序例外。
 
      -或-
 

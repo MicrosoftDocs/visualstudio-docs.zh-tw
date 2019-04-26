@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23e790f37ba88498d5ac0ae03dd9ce7ae074f451
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004418"
 ---
 # <a name="unblock-stack"></a>解除封鎖堆疊
 如果目前選取的執行緒元素代表封鎖的區段，稍後會在目前處理序中的另一個執行緒將其解除封鎖之後執行，此索引標籤上會顯示執行解除封鎖的執行緒呼叫堆疊。

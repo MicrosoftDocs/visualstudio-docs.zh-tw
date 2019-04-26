@@ -44,7 +44,7 @@ sections:
             html: <p></p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-            title: 測試 Azure 中的雲端服務進行偵錯
+            title: 在 Azure 中偵錯雲端服務
           - href: vs-azure-tools-debug-cloud-services-virtual-machines.md
             html: <p></p>
             image:

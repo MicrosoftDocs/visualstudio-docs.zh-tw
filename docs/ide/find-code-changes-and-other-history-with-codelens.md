@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62980534"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 
@@ -296,7 +296,7 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 
 ![CodeLens - 透過郵件連絡變更集擁有人](../ide/media/codelenscodesendmailchangesetnolync1.png)
 
-**支援哪些 Skype 和 Lync 設定？**
+**支援哪些 Skype 和 Lync 組態？**
 
 - 商務用 Skype (32 位元或 64 位元)
 

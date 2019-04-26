@@ -1,5 +1,5 @@
 ---
-title: 作法：選取要建置的檔案 | Microsoft Docs
+title: HOW TO：選取要建置的檔案 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386179"
 ---
 # <a name="how-to-select-the-files-to-build"></a>HOW TO：選取要建置的檔案
 建置包含數個檔案的專案時，您可以在專案檔中分別列出每個檔案，或是您可以使用萬用字元來包含一個目錄或巢狀目錄集合中的所有檔案。
@@ -42,7 +42,7 @@ ms.locfileid: "56610537"
 
 #### <a name="to-declare-multiple-items"></a>宣告多個項目
 
--   使用 `Include` 屬性，類似如下︰
+- 使用 `Include` 屬性，類似如下︰
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 
@@ -97,7 +97,7 @@ ms.locfileid: "56610537"
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
->  您必須對項目使用萬用字元來指定組建的輸入；您不能使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作中的 `Sources` 屬性 (例如 [Csc](../msbuild/csc-task.md) 或 [Vbc](../msbuild/vbc-task.md)) 指定輸入。 下列範例在專案檔案中無效︰
+> 您必須對項目使用萬用字元來指定組建的輸入；您不能使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作中的 `Sources` 屬性 (例如 [Csc](../msbuild/csc-task.md) 或 [Vbc](../msbuild/vbc-task.md)) 指定輸入。 下列範例在專案檔案中無效︰
 >
 > `<CSC Sources="*.cs">...</CSC>`
 

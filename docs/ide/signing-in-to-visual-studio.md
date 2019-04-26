@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7568f27d9be2ff38c2d5c87cf8a950e06846db5
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960778"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 

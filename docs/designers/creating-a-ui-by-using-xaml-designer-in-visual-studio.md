@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 3cd26f35111fc2e79290b30e7ae488b268e558d0
-ms.sourcegitcommit: f17e3afa5c324595afccf15a8a69df8c33b873d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58658862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899423"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 設計工具建立 UI
 

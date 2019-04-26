@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 67031266ce9b2ded595ab448d7c45674932b8751
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892541"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>逐步解說：LinqToXmlDataBinding 範例
 此逐步解說描述 LinqToXmlDataBinding 範例，並描述其兩個主要原始程式檔 (L2DBForm.xaml 和 L2DBForm.xaml.cs) 一些更有趣的內容。
@@ -40,7 +40,7 @@ ms.locfileid: "55931724"
 
 ## <a name="in-this-section"></a>本節內容
 
-|主題|描述|
+|主題|說明|
 |-----------|-----------------|
 |[L2DBForm.xaml 來源程式碼](../designers/l2dbform-xaml-source-code.md)|包含 L2DBForm.xaml 檔案中，XAML 程式碼的內容和描述。|
 |[L2DBForm.xaml.cs 來源程式碼](../designers/l2dbform-xaml-cs-source-code.md)|包含 L2DBForm.xaml.cs 檔案中，C# 原始程式碼的內容與描述。|

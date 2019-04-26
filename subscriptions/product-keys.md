@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: 了解如何取得及管理您的 Visual Studio 訂用帳戶產品金鑰。
 searchscope: VS Subscription
-ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977710"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的產品金鑰
 
@@ -53,7 +53,6 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 
 根據產品提供各種金鑰類型。
 
-
 ### <a name="product-key-types"></a>產品金鑰類型
 
 |    金鑰類型           |    說明                                                                                                                                                                                                           |
@@ -74,7 +73,6 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 
 ### <a name="claiming-product-keys"></a>索取產品金鑰
 只有訂用帳戶為使用中的訂閱者可以下載產品及索取產品金鑰。  您可以在訂用帳戶作用中時，從[產品金鑰](https://my.visualstudio.com/productkeys)頁面匯出領取的金鑰。
-
 
 索取產品金鑰：
 1. 登入 Visual Studio 訂用帳戶。  您必須登入才能下載產品或索取產品金鑰。

@@ -12,11 +12,11 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: c3c8d6c16f2f7e432b6b5e988bf63521f3dfc8c0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784111"
 ---
 # <a name="publish-to-azure-app-service"></a>發佈至 Azure App Service
 

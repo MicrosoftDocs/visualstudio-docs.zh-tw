@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da54bae8c1a688e4708a71476e6654132708a511
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3ff626078296c61d5f2588434942d4016cba0c1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004604"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目標 Framework 和目標平台
 您可以建置專案，以在特定 .NET Framework 版本的「目標 Framework」，以及特定軟體架構的「目標平台」上執行。  例如，您可以在目標為 .NET Framework 2.0 以及與 802x86 處理器系列 ("x86") 相容的 32 位元平台上，執行應用程式。 目標 Framework 和目標平台的組合稱為「目標內容」。
@@ -61,11 +61,11 @@ ms.locfileid: "56607469"
 ## <a name="target-platform"></a>目標平台
  「平台」是定義特定執行階段環境的軟硬體組合。 例如，套用至物件的
 
--   `x86` 指定在 Intel 80x86 處理器或其對等項目上執行的 32 位元 Windows 作業系統。
+- `x86` 指定在 Intel 80x86 處理器或其對等項目上執行的 32 位元 Windows 作業系統。
 
--   `x64` 指定在 Intel x64 處理器或其對等項目上執行的 64 位元 Windows 作業系統。
+- `x64` 指定在 Intel x64 處理器或其對等項目上執行的 64 位元 Windows 作業系統。
 
--   `Xbox` 指定 Microsoft Xbox 360 平台。
+- `Xbox` 指定 Microsoft Xbox 360 平台。
 
 「目標平台」是建置專案以在其上方執行的目標特定平台。 目標平台是在專案檔的 `PlatformTarget` 建置屬性中指定。 您可以在 IDE 中，使用專案屬性頁或 [組態管理員] 來變更目標平台。
 

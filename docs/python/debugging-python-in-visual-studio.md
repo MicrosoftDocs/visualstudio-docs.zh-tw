@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959896"
 ---
 # <a name="debug-your-python-code"></a>偵錯您的 Python 程式碼
 
@@ -25,7 +25,7 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 
 - [Linux 遠端偵錯](debugging-python-code-on-remote-linux-machines.md)
 - [混合模式 Python/C++ 偵錯](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
-- [適用於混合模式偵錯的符號](debugging-symbols-for-mixed-mode-c-cpp-python.md)
+- [混合模式偵錯的符號](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 
 <a name="debugging-without-a-project"></a>
 
@@ -73,7 +73,7 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 | **不進入函式** | **F10** | 執行下一個陳述式，包括呼叫函式 (執行其所有程式碼) 和套用任何傳回值。 不進入函式可讓您輕鬆略過不需偵錯的函式。 |
 | **跳離函式** | **Shift**+**F11** | 執行程式碼直到目前的函式結束，然後逐步執行呼叫的陳述式。  當您不需要對目前函式的其餘部分進行偵錯時，此命令非常有用。 |
 | **執行至游標處** | **Ctrl**+**F10** | 執行程式碼直到編輯器中插入點 (Caret) 的位置。 此命令可讓您輕鬆略過不需偵錯的程式碼區段。 |
-| **設定 Next 陳述式** | **Ctrl**+**Shift**+**F10** | 將程式碼中目前的執行點變更為插入點 (Caret) 的位置。 此命令可讓您略過特定的程式碼區段而不執行，例如當您知道程式碼有錯誤或是會產生不想要的副作用時。 |
+| **設定下一個陳述式** | **Ctrl**+**Shift**+**F10** | 將程式碼中目前的執行點變更為插入點 (Caret) 的位置。 此命令可讓您略過特定的程式碼區段而不執行，例如當您知道程式碼有錯誤或是會產生不想要的副作用時。 |
 | **顯示下一個陳述式** | **Alt**+**Num** **&#42;**| 返回下一個將執行的陳述式。 如果您在程式碼中四處尋找卻不記得偵錯工具停止的位置時，此命令很有用。 |
 
 ### <a name="inspect-and-modify-values"></a>檢查和修改值
@@ -163,22 +163,22 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 
 | 命令 | 引數 | 說明 |
 | --- | --- | --- |
-| `$continue`中， `$cont`中， `$c` | 從目前的陳述式開始執行程式。 |
-| `$down`, `$d` | 在堆疊追蹤中將目前的框架下移一層。 |
+| `$continue`、`$cont`、`$c` | 從目前的陳述式開始執行程式。 |
+| `$down`、 `$d` | 在堆疊追蹤中將目前的框架下移一層。 |
 | `$frame` | | 顯示目前的框架識別碼。
 | `$frame` | 框架識別碼 | 將目前的框架切換到指定的框架識別碼。
 | `$load` | 從檔案載入命令並執行，直到完成為止 |
 | `$proc` |  | 顯示目前的處理序識別碼。 |
 | `$proc` | 處理序識別碼 | 將目前的處理序切換到指定的處理序識別碼。 |
 | `$procs` | | 列出目前正在進行偵錯的處理序。 |
-| `$stepin`中， `$step`中， `$s` | 逐步執行下一個函式呼叫 (如有可能)。 |
-| `$stepout`中， `$return`中， `$r` | 跳離目前的函式。 |
-| `$stepover`中， `$until`中， `$unt` | 不進入下一個函式呼叫。 |
+| `$stepin`、`$step`、`$s` | 逐步執行下一個函式呼叫 (如有可能)。 |
+| `$stepout`、`$return`、`$r` | 跳離目前的函式。 |
+| `$stepover`、`$until`、`$unt` | 不進入下一個函式呼叫。 |
 | `$thread` | | 顯示目前的執行緒識別碼。 |
 | `$thread` | 執行緒識別碼 | 將目前的執行緒切換到指定的執行緒識別碼。 |
 | `$threads` | | 列出目前正在進行偵錯的執行緒。 |
-| `$up`, `$u` | | 在堆疊追蹤中將目前的框架上移一層。 |
-| `$where`中， `$w`中， `$bt` | 列出目前執行緒的框架。 |
+| `$up`、 `$u` | | 在堆疊追蹤中將目前的框架上移一層。 |
+| `$where`、`$w`、`$bt` | 列出目前執行緒的框架。 |
 
 請注意，標準偵錯工具視窗 (例如 [處理序]、[執行緒] 和 [呼叫堆疊]) 不會與 [互動式偵錯] 視窗同步。 在 [互動式偵錯] 視窗中變更使用中的處理序、執行緒或框架，不會影響其他偵錯工具視窗。 同樣地，在其他偵錯工具視窗變更使用中的處理序、執行緒或框架，也不會影響 [互動式偵錯] 視窗。
 

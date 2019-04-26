@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44c66eab323f42ba3aa5392fed657e3afd3a6e5c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946826"
 ---
 # <a name="list-threads-command"></a>列出執行緒命令
 顯示目前程式中的執行緒清單。

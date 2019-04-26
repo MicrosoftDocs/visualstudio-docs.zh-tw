@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f7c2d941852303771df1998a21c076265fdb93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1f725c239df2ffc9683676c4c20a86ce12f873e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969016"
 ---
 # <a name="property-pages-javascript"></a>JavaScript、屬性頁
 [屬性頁] 提供對專案設定的存取。 您可以使用 [屬性頁] 中所顯示的頁面來變更專案屬性。
@@ -37,18 +37,17 @@ ms.locfileid: "55929488"
 
  **組態**
 
- 指定要顯示或修改的組態設定。 這些設定包括 [偵錯]\(預設值)、[發行]、[所有組態] 或使用者定義的組態。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
+ 指定要顯示或修改的組態設定。 這些設定包括 [偵錯]\(預設值)、[發行]、[所有組態] 或使用者定義的組態。 如需詳細資訊，請參閱[如何：在 Visual Studio 中設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
  **平台**
 
- 指定要顯示或修改的平台設定。 這些設定包括 [任何 CPU]\([!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 應用程式的預設值)、[x64]、[ARM]、[x86] 或使用者定義的平台。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
+ 指定要顯示或修改的平台設定。 這些設定包括 [任何 CPU]\([!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 應用程式的預設值)、[x64]、[ARM]、[x86] 或使用者定義的平台。 如需詳細資訊，請參閱[如何：在 Visual Studio 中設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
 ## <a name="general-page"></a>一般頁面
  您可以使用下列選項，來設定專案的一般屬性。
 
 > [!NOTE]
 > 有些選項僅適用於 UWP 應用程式。
-
 
  **輸出路徑**
 
@@ -66,16 +65,15 @@ ms.locfileid: "55929488"
 > [!NOTE]
 > 有些選項僅適用於 UWP 應用程式。
 
-
  **要啟動的偵錯工具**
 
  指定偵錯工具的預設主機。
 
--   選取 [本機電腦]，在 Visual Studio 主機電腦上啟動應用程式。 如需詳細資訊，請參閱[在本機電腦上執行應用程式](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。
+- 選取 [本機電腦]，在 Visual Studio 主機電腦上啟動應用程式。 如需詳細資訊，請參閱[在本機電腦上執行應用程式](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。
 
--   選取 [模擬器]，在模擬器中啟動應用程式。 如需詳細資訊，請參閱[在模擬器中執行應用程式](../../debugger/run-windows-store-apps-in-the-simulator.md)。
+- 選取 [模擬器]，在模擬器中啟動應用程式。 如需詳細資訊，請參閱[在模擬器中執行應用程式](../../debugger/run-windows-store-apps-in-the-simulator.md)。
 
--   選取 [遠端電腦]，在遠端電腦上啟動應用程式。 如需遠端偵錯的詳細資訊，請參閱[在遠端電腦上執行應用程式](../../debugger/run-windows-store-apps-on-a-remote-machine.md)。
+- 選取 [遠端電腦]，在遠端電腦上啟動應用程式。 如需遠端偵錯的詳細資訊，請參閱[在遠端電腦上執行應用程式](../../debugger/run-windows-store-apps-on-a-remote-machine.md)。
 
 **啟動應用程式**
 

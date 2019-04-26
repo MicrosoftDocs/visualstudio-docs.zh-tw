@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7e80bf422906c2b89e75462938d736fd3a0e5a41
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978142"
 ---
 # <a name="customize-project-and-item-templates"></a>自訂專案和項目範本
 
@@ -25,15 +25,15 @@ ms.locfileid: "55919322"
 
 - 修改現有範本，並將其匯出為使用者範本。
 
-   如需詳細資訊，請參閱[＜How to：更新現有的範本](../ide/how-to-update-existing-templates.md)。
+   如需詳細資訊，請參閱[如何：更新現有的範本](../ide/how-to-update-existing-templates.md)。
 
 - 將自訂參數傳遞給範本，以取代現有值。
 
-   如需詳細資訊，請參閱[＜How to：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
+   如需詳細資訊，請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
 
 - 自訂從範本建立專案的精靈。
 
-   如需詳細資訊，請參閱[＜How to：搭配專案範本 (擴充性) 使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)。
+   如需詳細資訊，請參閱[如何：搭配專案範本 (擴充性) 使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)。
 
 ## <a name="see-also"></a>另請參閱
 

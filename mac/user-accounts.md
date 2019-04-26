@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 17AB4F31-4921-4B4E-8D9D-95FB84294521
 ms.openlocfilehash: 71233b609f2e68935b71e3044a9b6ec0f59091bb
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966226"
 ---
 # <a name="user-accounts"></a>使用者帳戶
 

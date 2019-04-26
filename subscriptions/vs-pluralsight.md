@@ -7,12 +7,12 @@ ms.date: 01/25/2019
 ms.topic: conceptual
 description: 了解有關隨附於所選 Visual Studio 訂用帳戶的 Pluralsight 訓練課程訂用帳戶。
 searchscope: VS Subscription
-ms.openlocfilehash: 23d8b7185ebcaa982b18e9087050f9da5d7f6e7f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f0028d8dffb70e38ef818a8de7945b22f9664328
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947470"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
 
@@ -21,7 +21,6 @@ ms.locfileid: "56841636"
 下表詳細說明每種 Visual Studio 訂用帳戶類型可使用哪些 Pluralsight 訂用帳戶權益。  某些訂閱者也可以在完整目錄存取訂閱過期之後利用有限的課程。 Pluralsight 會在您的完整目錄訂閱過期時，引導您完成該程序。
 
  根據所擁有的訂閱類型，並非所有先前使用透過 Visual Studio 訂閱提供之 Pluralsight 訂閱的「訂閱者」，都將能夠兌換新的 Pluralsight 權益供應項目。 如果您不符合兌換額外 Pluralsight 訓練課程權益的資格，則當您嘗試在 Pluralsight 網站啟用權益時，將會收到通知。
-
 
 ## <a name="activation-steps"></a>啟用步驟
 1. 若要啟用您的訂用帳戶，請連線到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，並按一下 Pluralsight 權益磚上的 [取得代碼] 連結 (位於 [專業開發] 區段)。
@@ -84,7 +83,6 @@ ms.locfileid: "56841636"
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
 
-
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
@@ -101,14 +99,13 @@ ms.locfileid: "56841636"
 
 •   James Montemagno (行動性) - [http://go.pluralsight.com/james-montemagno](http://go.pluralsight.com/james-montemagno)
 
-
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>問：當我的 Pluralsight 訂用帳戶到期時會發生什麼事？
 答：在免費的 Pluralsight 訂用帳戶結束時，您可以選擇直接從 Pluralsight 購買訂用帳戶。  請連絡 [Pluralsight](http://www.pluralsight.com) 以了解完整詳細資料。
 
 ## <a name="support-resources"></a>支援資源
--  [Pluralsight 說明中心](https://help.pluralsight.com/help) \(英文\) 可提供針對 Pluralsight 課程或 Pluralsight 網站的使用協助。
--  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+- [Pluralsight 說明中心](https://help.pluralsight.com/help) \(英文\) 可提供針對 Pluralsight 課程或 Pluralsight 網站的使用協助。
+- 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="next-steps"></a>後續步驟
 一旦您的帳戶建立完成，即準備好開始訓練課程。  請前往 [https://www.pluralsight.com](http://www.pluralsight.com)，然後點選頁面右上角的 [登入] 開始新的課程，或返回已在進行中的課程。

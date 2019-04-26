@@ -8,19 +8,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0114800d2f968db79215afffab34fdd701bf0656
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 05baa302c2ead99c5c337f4cde71c3d2e025bfb0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996296"
 ---
 # <a name="step-7-keep-pairs-visible"></a>步驟 7：讓配對保持可見
 只要玩家僅選擇不相符的圖示配對，遊戲都可以運作良好。 但是，請考慮當玩家選擇相符的配對時會發生的情況。 遊戲不用藉由啟動計時器使圖示消失 (使用 <xref:System.Windows.Forms.Timer.Start> 方法)，而是應該本身進行重設，如此它就不會再使用 `firstClicked` 和 `secondClicked` 參考變數來追蹤任何標籤，但不需要重設已選擇之兩個標籤的色彩。
 
 ## <a name="to-keep-pairs-visible"></a>若要讓配對保持可見
 
-1.  將下列 `if` 陳述式加入至 `label_Click()` 事件處理常式方法，位置靠近您啟動計時器之陳述式正上方的程式碼那一端。 將程式碼加入至程式時，請仔細觀察該程式碼。 請考慮程式碼的運作方式。
+1. 將下列 `if` 陳述式加入至 `label_Click()` 事件處理常式方法，位置靠近您啟動計時器之陳述式正上方的程式碼那一端。 將程式碼加入至程式時，請仔細觀察該程式碼。 請考慮程式碼的運作方式。
 
      [!code-csharp[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]
      [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]
@@ -51,13 +51,13 @@ ms.locfileid: "55946427"
 
      這兩個陳述式中的第一個會檢查兩個圖示是否相同。 因為有兩個值在進行比較，所以 Visual C# 程式會使用 `==` 相等運算子。 第二個陳述式會實際變更值 (稱為「指派」)，方法是將 `firstClicked` 參考變數設為等於 `null` 以進行重設。 這就是它為何改用 `=` 指派運算子的緣故。 Visual C# 會使用 `=` 來設定值，而使用 `==` 比較它們。 Visual Basic 則是使用 `=` 來進行變數指派和比較。
 
-2.  儲存並執行程式，然後開始在表單中選擇圖示。 如果您選擇不相符的配對，計時器的 Tick 事件觸發器和這兩個圖示都會消失。 如果選擇相符的配對，則會執行新的 `if` 陳述式，而 return 陳述式會導致方法略過用於啟動計時器的程式碼，如此圖示才能保持可見，如下列圖片所示。
+2. 儲存並執行程式，然後開始在表單中選擇圖示。 如果您選擇不相符的配對，計時器的 Tick 事件觸發器和這兩個圖示都會消失。 如果選擇相符的配對，則會執行新的 `if` 陳述式，而 return 陳述式會導致方法略過用於啟動計時器的程式碼，如此圖示才能保持可見，如下列圖片所示。
 
      ![您在本教學課程中建立的遊戲](../ide/media/express_finishedgame.png)
 含有可見圖示配對的**配對遊戲**
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要前往下一個教學課程步驟，請參閱[步驟 8：新增驗證玩家是否勝利的方法](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)。
+- 若要前往下一個教學課程步驟，請參閱[步驟 8：新增驗證玩家是否勝利的方法](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)。
 
--   若要回到上一個教學課程步驟，請參閱[步驟 6：新增計時器](../ide/step-6-add-a-timer.md)。
+- 若要回到上一個教學課程步驟，請參閱[步驟 6：新增計時器](../ide/step-6-add-a-timer.md)。

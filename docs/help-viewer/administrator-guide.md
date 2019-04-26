@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21497404d6cdad3f55bffd97fd0329d76418b313
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8fe194e11edf0a3f825303137b9bdcc755135eee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972989"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 系統管理員指南
 
@@ -45,13 +45,13 @@ ms.locfileid: "56841571"
 
 需求：
 
--   用戶端電腦必須能夠存取網際網路。
+- 用戶端電腦必須能夠存取網際網路。
 
--   在安裝本機說明內容後，使用者必須擁有系統管理員權限，以更新、新增或移除本機說明內容。
+- 在安裝本機說明內容後，使用者必須擁有系統管理員權限，以更新、新增或移除本機說明內容。
 
 警告：
 
--   說明的預設來源仍處於線上。
+- 說明的預設來源仍處於線上。
 
 ### <a name="example"></a>範例
 
@@ -59,13 +59,13 @@ ms.locfileid: "56841571"
 
 #### <a name="to-install-english-content-from-the-internet"></a>從網際網路安裝英文內容
 
-1.  選擇 [開始]，然後選擇 [執行]。
+1. 選擇 [開始]，然後選擇 [執行]。
 
-2.  輸入下列命令：
+2. 輸入下列命令：
 
      `C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us`
 
-3.  按 **Enter** 鍵。
+3. 按 **Enter** 鍵。
 
 ## <a name="deploy-pre-installed-local-help-content-on-client-computers"></a>在用戶端電腦上部署預先安裝的本機說明內容
 
@@ -73,16 +73,16 @@ ms.locfileid: "56841571"
 
 需求：
 
--   您安裝該組內容的電腦必須能夠存取網際網路。
+- 您安裝該組內容的電腦必須能夠存取網際網路。
 
--   在安裝本機說明內容後，使用者必須擁有系統管理員權限，以更新、新增或移除本機說明內容。
+- 在安裝本機說明內容後，使用者必須擁有系統管理員權限，以更新、新增或移除本機說明內容。
 
     > [!TIP]
     > 如果使用者沒有系統管理員權限，建議您停用 Help Viewer 中的 [管理內容] 索引標籤。 如需詳細資訊，請參閱 [Help Content Manager 覆寫](../help-viewer/behavior-overrides.md)。
 
 警告：
 
--   說明的預設來源仍處於線上。
+- 說明的預設來源仍處於線上。
 
 ### <a name="create-the-content-set"></a>建立內容集
 
@@ -104,23 +104,23 @@ ms.locfileid: "56841571"
 
 #### <a name="to-download-the-content"></a>下載內容
 
-1.  在 Help Viewer 中，選擇 [管理內容] 索引標籤。
+1. 在 Help Viewer 中，選擇 [管理內容] 索引標籤。
 
-2.  在 [建議的文件] 或 [可用的文件] 之下，巡覽至您想要下載的文件集，然後選擇 [新增]。
+2. 在 [建議的文件] 或 [可用的文件] 之下，巡覽至您想要下載的文件集，然後選擇 [新增]。
 
-3.  選擇 [更新]。
+3. 選擇 [更新]。
 
 接下來，您必須封裝內容，讓它可以部署到用戶端電腦。
 
 #### <a name="to-package-the-content"></a>封裝內容
 
-1.  建立複製內容的目標資料夾，以便稍後進行部署。 例如：*C:\VSHelp*。
+1. 建立複製內容的目標資料夾，以便稍後進行部署。 例如：*C:\VSHelp*。
 
-2.  以系統管理員權限開啟 cmd.exe。
+2. 以系統管理員權限開啟 cmd.exe。
 
-3.  巡覽至您在步驟 1 中建立的資料夾。
+3. 巡覽至您在步驟 1 中建立的資料夾。
 
-4.  輸入下列命令：
+4. 輸入下列命令：
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
@@ -128,11 +128,11 @@ ms.locfileid: "56841571"
 
 ### <a name="deploy-the-content"></a>部署內容
 
-1.  建立網路共用，並將這些說明內容複製到該位置。
+1. 建立網路共用，並將這些說明內容複製到該位置。
 
      例如，將 *C:\VSHelp* 中的內容複製到 *\\\myserver\VSHelp*。
 
-2.  建立 .bat 檔案，以包含說明內容的部署指令碼。 由於用戶端在推送的部分過程中要刪除的檔案可能有讀取鎖定，您應該在推送更新之前關閉用戶端。 例如：
+2. 建立 .bat 檔案，以包含說明內容的部署指令碼。 由於用戶端在推送的部分過程中要刪除的檔案可能有讀取鎖定，您應該在推送更新之前關閉用戶端。 例如：
 
     ```cmd
     REM - copy pre-ripped content to ProgramData
@@ -140,7 +140,7 @@ ms.locfileid: "56841571"
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3.  在您要安裝說明內容的本機電腦上執行 .bat 檔案。
+3. 在您要安裝說明內容的本機電腦上執行 .bat 檔案。
 
 ## <a name="see-also"></a>另請參閱
 

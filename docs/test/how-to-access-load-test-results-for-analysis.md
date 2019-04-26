@@ -14,12 +14,12 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 958322e57340c356e8807deacb81e208441f4b4b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4b14be6df351a6975fb8a7cf6fa506a5d4f6041
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979428"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>HOW TO：存取負載測試結果以進行分析
 
@@ -31,24 +31,24 @@ ms.locfileid: "55943073"
 
 ## <a name="to-access-a-load-test-result"></a>存取負載測試結果
 
-1.  從 Web 效能和負載測試專案中，開啟負載測試。
+1. 從 Web 效能和負載測試專案中，開啟負載測試。
 
-2.  在 [負載測試編輯器] 的工具列中，選擇 [開啟和管理結果] 按鈕。
+2. 在 [負載測試編輯器] 的工具列中，選擇 [開啟和管理結果] 按鈕。
 
      [開啟和管理結果] 對話方塊隨即出現。
 
-3.  在 [輸入控制器名稱以尋找負載測試結果] 中，選取控制器。 選取 [\<本機> - 無控制器]，即可存取儲存在本機的結果。
+3. 在 [輸入控制器名稱以尋找負載測試結果] 中，選取控制器。 選取 [\<本機> - 無控制器]，即可存取儲存在本機的結果。
 
-4.  在 [顯示下列負載測試的結果] 中，選取您要檢視其結果的負載測試。 選取 [\<顯示所有測試的結果>]，即可查看所有測試的所有結果。
+4. 在 [顯示下列負載測試的結果] 中，選取您要檢視其結果的負載測試。 選取 [\<顯示所有測試的結果>]，即可查看所有測試的所有結果。
 
      如果有可用的負載測試結果，它們會出現在 [負載測試結果] 清單中。 資料行包括 [時間]、[持續期間]、[使用者]、[結果]、[測試] 和 [描述]。 [測試] 包含測試的名稱，而 [描述] 則包含執行測試之前所新增的選擇性描述。
 
     > [!NOTE]
     > 結果隨即出現；最新的結果顯示在清單最上方。
 
-5.  在 [負載測試結果] 清單中，選取您要分析的負載測試結果，然後選擇 [開啟]。
+5. 在 [負載測試結果] 清單中，選取您要分析的負載測試結果，然後選擇 [開啟]。
 
-6.  [負載測試分析器] 隨即顯示。 選取的負載測試結果會顯示在 [摘要] 檢視中。 如需詳細資訊，請參閱[負載測試結果摘要概觀](../test/load-test-results-summary-overview.md)。
+6. [負載測試分析器] 隨即顯示。 選取的負載測試結果會顯示在 [摘要] 檢視中。 如需詳細資訊，請參閱[負載測試結果摘要概觀](../test/load-test-results-summary-overview.md)。
 
      您可以在 [開啟和管理結果] 對話方塊中管理負載測試結果的其他方面，包括匯入、匯出和移除負載測試結果。 如需詳細資訊，請參閱[管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 

@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: e82e17a01e6cbfce82e270e25de16ee788a14878
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b6caca91849727fa21fec0401c776e4c80f9a6b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439532"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>作法：使用命令列將分析工具附加至 ASP.NET Web 應用程式以收集記憶體資料
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>HOW TO：使用命令列將分析工具附加至 ASP.NET Web 應用程式以收集記憶體資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式，並收集 .NET Framework 記憶體配置數量和大小的相關資料。 您也可以收集 .NET Framework 記憶體物件存留期的相關資料。
 
 > [!NOTE]
->  若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
+> 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
 
  若要收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的效能資料，您必須使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具在裝載 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的電腦上初始化適當的環境變數。 然後，您必須重新啟動電腦，設定 Web 伺服器進行分析。
 
@@ -38,7 +38,7 @@ ms.locfileid: "56614203"
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]
 
-   -   選項 **/globalsamplegc** 和 **/globalsamplegclife** 會指定要收集之記憶體資料的類型。
+   - 選項 **/globalsamplegc** 和 **/globalsamplegclife** 會指定要收集之記憶體資料的類型。
 
         只指定下列其中一個選項。
 
@@ -47,7 +47,7 @@ ms.locfileid: "56614203"
        |**/globalsamplegc**|啟用記憶體配置資料的收集功能。|
        |**/globalsamplegclife**|啟用記憶體配置資料和物件存留期資料的收集功能。|
 
-   -   **/samplelineoff** 選項會停止將收集的資料指派給特定的原始程式碼。 如果指定此選項，則在函式層級指派資料。
+   - **/samplelineoff** 選項會停止將收集的資料指派給特定的原始程式碼。 如果指定此選項，則在函式層級指派資料。
 
 3. 重新啟動電腦，以設定進行新的環境組態。
 
@@ -64,7 +64,7 @@ ms.locfileid: "56614203"
      您可以使用下列任一選項搭配 **/start:sample** 選項。
 
    > [!NOTE]
-   >  **/user** 和 **/crosssession** 選項通常是 ASP.NET 應用程式的必要選項。
+   > **/user** 和 **/crosssession** 選項通常是 ASP.NET 應用程式的必要選項。
 
    | 選項 | 說明 |
    | - | - |
@@ -74,7 +74,6 @@ ms.locfileid: "56614203"
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
    | [/automark](../profiling/automark.md) **:** `Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。 |
-
 
 6. 以一般方式啟動 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式。
 
@@ -91,7 +90,7 @@ ms.locfileid: "56614203"
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集
 
--   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
+- 下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
     |選項|說明|
     |------------|-----------------|

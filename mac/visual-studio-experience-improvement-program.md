@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
 ms.openlocfilehash: e29e1f1d7cce6fc77157628ee6e1889a538a1800
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965658"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客戶經驗改進計畫
 
@@ -30,7 +30,7 @@ VSCEIP 預設為開啟。 您可以遵循下列指示將它關閉，或重新開
 
     ![選取選項按鈕，以反映您的參與偏好](media/visual-studio-experience-improvement-program-image1.png)
 
-[!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
+[!INCLUDE [GDPR-related guidance](../../docs/misc/includes/gdpr-hybrid-note.md)]
 
 ## <a name="see-also"></a>另請參閱
 

@@ -7,12 +7,12 @@ ms.date: 12/11/2017
 ms.topic: conceptual
 description: 如何針對 MPN 夥伴，將 Visual Studio 訂用帳戶指派給您的使用者。
 searchscope: VS Subscription
-ms.openlocfilehash: 9b9d7aa6095b6d5147482b139fdfe43378ad346c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412393"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>管理透過 Microsoft 合作夥伴網路 (MPN) 提供的 Visual Studio 訂用帳戶
 
@@ -42,7 +42,6 @@ Microsoft 行動套件訂閱者與 Visual Studio 訂用帳戶
     - 連絡人電子郵件
 13. 登入現在已完成，而且訂閱者應該可以存取權益
 
-
 ### <a name="competency-partners"></a>專長認證合作夥伴
 1. 選取 [Requirements and Assets] \(需求與資產\)
 2. 選取 [Privileges] \(權限\)
@@ -66,7 +65,7 @@ Microsoft 行動套件訂閱者與 Visual Studio 訂用帳戶
 
 > [!NOTE]
 > Visual Studio 訂用帳戶需要技術連絡人角色
->     - 第 8 頁 – 針對專長認證合作夥伴指派 Visual Studio 訂用帳戶
+> - 第 8 頁 – 針對專長認證合作夥伴指派 Visual Studio 訂用帳戶
 
 ## <a name="need-help"></a>需要協助嗎？
 訂閱者與方案系統管理員應該直接與 Microsoft 合作夥伴網路支援小組合作，以解決訂閱者存取訂用帳戶的任何問題。 瀏覽[合作夥伴支援](https://partner.microsoft.com/support)頁面以取得協助。 (將需要您的 MPN 登入認證)。

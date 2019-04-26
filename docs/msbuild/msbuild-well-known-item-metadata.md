@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a4c87d9dd6200fdd386db750a97e8f0866597d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963932"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 已知的項目中繼資料
 下表說明在建立期間指派給每個項目的中繼資料。 每個範例都使用了下列項目宣告，以在專案中包含 *C:\MyProject\Source\Program.cs* 檔案。

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0150ed3f40d4e8fb61cc6054a37c30ae0ffc0d1a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4ad7a7df2a536df0ac3e9bc391f08ef5d0fcd830
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444109"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023：高記憶體回收 CPU 時間
 
@@ -42,7 +42,7 @@ ms.locfileid: "56608405"
  相較於應用程式總處理時間，當花費在記憶體回收的時間量極高時，就會引發此規則。
 
 > [!NOTE]
->  相較於應用程式總處理時間，當有過高比例的時間花費在記憶體回收時，則會引發 [DA0024：過度的記憶體回收 CPU 時間](../profiling/da0024-excessive-gc-cpu-time.md)警告而不是此規則。
+> 相較於應用程式總處理時間，當有過高比例的時間花費在記憶體回收時，則會引發 [DA0024：過度的記憶體回收 CPU 時間](../profiling/da0024-excessive-gc-cpu-time.md)警告而不是此規則。
 
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告
  按兩下 [錯誤清單] 視窗中的訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。 尋找 **.NET CLR Memory\\% Time in GC** 欄。 判斷是否有特定的程式執行階段，當中的 Managed 記憶體回收負荷比其他階段還繁重。 比較 % Time in GC 的值與在 **# of Gen 0 Collections**、**# of Gen 1 Collections**、**# of Gen 2 Collections** 值中報告的記憶體回收速率。

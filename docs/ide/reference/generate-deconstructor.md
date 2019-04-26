@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f24fa988cf14bbf48fe157e2b9ee538d3eff2f35
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 2ca2d3a0c174fa4c7d0f66d3abc440b8c9aa93cf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790292"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>在 Visual Studio 中產生解構函式
 
@@ -47,7 +47,6 @@ ms.locfileid: "59537526"
 3. 選取 [產生方法 'MyInternalClass.Deconstruct'] 來產生解構函式。
 
    ![產生的解構函式程式碼](media/deconstruct-result.png)
-
 
 ## <a name="see-also"></a>另請參閱
 

@@ -8,14 +8,14 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950250"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>作法：建立錄製器外掛程式
+# <a name="how-to-create-a-recorder-plug-in"></a>HOW TO：建立錄製器外掛程式
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 讓您修改錄製的 Web 效能測試。 修改會在您選擇 [Web 效能測試錄製器] 工具列中的 [停止] 之後，並且在 [Web 效能測試編輯器] 中儲存及呈現測試之前發生。
 
@@ -33,20 +33,20 @@ ms.locfileid: "58415897"
 
 ### <a name="to-create-a-recorder-plug-in"></a>若要建立錄製器外掛程式
 
-1.  開啟方案，其中包含的 Web 效能和負載測試專案有您要為其建立錄製器外掛程式的 Web 效能測試。
+1. 開啟方案，其中包含的 Web 效能和負載測試專案有您要為其建立錄製器外掛程式的 Web 效能測試。
 
-2.  將新的**類別庫**專案新增至方案。
+2. 將新的**類別庫**專案新增至方案。
 
-3.  在 [方案總管] 中，以滑鼠右鍵按一下新類別庫專案資料夾中的 [參考] 資料夾，然後選取 [新增參考]。
+3. 在 [方案總管] 中，以滑鼠右鍵按一下新類別庫專案資料夾中的 [參考] 資料夾，然後選取 [新增參考]。
 
     > [!TIP]
     > 新類別庫專案資料夾的範例是 **RecorderPlugins**。
 
      [新增參考] 對話方塊隨即顯示。
 
-4.  選取 [.NET] 索引標籤。
+4. 選取 [.NET] 索引標籤。
 
-5.  向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**，然後選擇 [確定]。
+5. 向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**，然後選擇 [確定]。
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** 就會新增至 [方案總管] 中的 [參考] 資料夾。
 
@@ -88,11 +88,11 @@ ms.locfileid: "58415897"
 
 ### <a name="execute-the-recorder-plug-in"></a>執行錄製器外掛程式
 
-1.  建立新的 Web 效能測試。
+1. 建立新的 Web 效能測試。
 
      [啟用 WebTestRecordPlugins] 對話方塊隨即顯示。
 
-2.  選取錄製器外掛程式的核取方塊，然後選擇 [確定]。
+2. 選取錄製器外掛程式的核取方塊，然後選擇 [確定]。
 
      在 Web 效能測試完成錄製之後，就會執行新的錄製器外掛程式。
 

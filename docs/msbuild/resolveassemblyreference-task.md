@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10db157aa5c75f1fde083ac12cd19fd1b02e91ec
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cc1ee144b10360b899fa04c3cd0782e4b4fdfcfe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970818"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference 工作
 判斷相依於指定組件的所有組件 (包含第二階與第 `n` 階的相依)。
@@ -81,25 +81,25 @@ ms.locfileid: "56636381"
 ## <a name="warnings"></a>警告
  將記錄下列警告：
 
--   `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
+- `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
 
--   `ResolveAssemblyReference.SuggestedRedirects`
+- `ResolveAssemblyReference.SuggestedRedirects`
 
--   `ResolveAssemblyReference.FoundConflicts`
+- `ResolveAssemblyReference.FoundConflicts`
 
--   `ResolveAssemblyReference.AssemblyFoldersExSearchLocations`
+- `ResolveAssemblyReference.AssemblyFoldersExSearchLocations`
 
--   `ResolveAssemblyReference.UnifiedPrimaryReference`
+- `ResolveAssemblyReference.UnifiedPrimaryReference`
 
--   `ResolveAssemblyReference.PrimaryReference`
+- `ResolveAssemblyReference.PrimaryReference`
 
--   `ResolveAssemblyReference.UnifiedDependency`
+- `ResolveAssemblyReference.UnifiedDependency`
 
--   `ResolveAssemblyReference.UnificationByAutoUnify`
+- `ResolveAssemblyReference.UnificationByAutoUnify`
 
--   `ResolveAssemblyReference.UnificationByAppConfig`
+- `ResolveAssemblyReference.UnificationByAppConfig`
 
--   `ResolveAssemblyReference.UnificationByFrameworkRetarget`
+- `ResolveAssemblyReference.UnificationByFrameworkRetarget`
 
 ## <a name="remarks"></a>備註
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。

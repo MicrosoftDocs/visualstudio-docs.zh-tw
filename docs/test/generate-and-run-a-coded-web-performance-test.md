@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002527"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>產生和執行 Web 效能測試程式碼
 
@@ -29,13 +29,13 @@ Web 效能測試是透過瀏覽您的 Web 應用程式來錄製。 測試包含�
 
 ## <a name="generate-a-coded-web-performance-test"></a>產生 Web 效能測試程式碼
 
-1.  如果您尚未建立 Web 效能測試，請參閱[錄製 Web 效能測試](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project)。
+1. 如果您尚未建立 Web 效能測試，請參閱[錄製 Web 效能測試](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project)。
 
-2.  產生程式碼測試。
+2. 產生程式碼測試。
 
      ![產生 Web 效能測試程式碼](../test/media/web_test_coded_generate.png)
 
-3.  為測試命名。
+3. 為測試命名。
 
      ![輸入 Web 效能測試程式碼的名稱](../test/media/web_test_coded_generate_nametest.png)
 
@@ -47,7 +47,7 @@ Web 效能測試是透過瀏覽您的 Web 應用程式來錄製。 測試包含�
 
      您在程式碼中可以看到 GetRequestEnumerator() 方法 (C#) 或 Run() 方法 (Visual Basic) 包含已錄製之測試的每個驗證規則與 Web 要求。
 
-4.  為了示範加入一些簡單程式碼，請向下捲動到方法的結尾，並在最後一個 Web 要求的程式碼之後加入下列程式碼：
+4. 為了示範加入一些簡單程式碼，請向下捲動到方法的結尾，並在最後一個 Web 要求的程式碼之後加入下列程式碼：
 
     ```c#
     if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
@@ -72,9 +72,9 @@ Web 效能測試是透過瀏覽您的 Web 應用程式來錄製。 測試包含�
     End If
     ```
 
-5.  建置方案來驗證您的自訂程式碼編譯。
+5. 建置方案來驗證您的自訂程式碼編譯。
 
-6.  執行測試。
+6. 執行測試。
 
      ![執行自動程式化 Web 效能測試](../test/media/web_test_coded_generate_run.png)
 

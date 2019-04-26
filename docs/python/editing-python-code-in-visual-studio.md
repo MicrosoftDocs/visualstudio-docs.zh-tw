@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959140"
 ---
 # <a name="edit-python-code"></a>編輯 Python 程式碼
 
@@ -227,6 +227,6 @@ Visual Studio 中的 Python 支援提供幾種快速巡覽程式碼 (以及有�
 
 ## <a name="see-also"></a>另請參閱
 
-- [格式化](formatting-python-code.md)
+- [格式設定](formatting-python-code.md)
 - [重構](refactoring-python-code.md)
 - [使用 Linter](linting-python-code.md)

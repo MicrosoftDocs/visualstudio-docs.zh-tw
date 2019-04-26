@@ -8,20 +8,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 925112de25a127d4664bb66d602ca137ad624f70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 257d6142fd53914a15e8503121cab1215182ec04
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422928"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>作法：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>HOW TO：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式
 您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具檢測方法從動態編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式收集詳細執行時間資料、.NET 記憶體配置資料，以及 .NET 物件存留期資料。
 
  本主題描述如何修改 *web.config* 組態檔，以啟用 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的檢測和分析。
 
 > [!NOTE]
->  當您使用取樣分析方法，或是想要檢測先行編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 模組時，不需要修改 *web.config* 檔案。
+> 當您使用取樣分析方法，或是想要檢測先行編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 模組時，不需要修改 *web.config* 檔案。
 
  *web.config* 檔案的根是 **configuration** 項目。 若要檢測動態編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式並對其進行分析，您必須新增或修改下列項目：
 
@@ -45,11 +45,9 @@ ms.locfileid: "56616686"
 
 3. 將下列屬性名稱和值加入至 **assemblyBinding** 項目：
 
-
    | 屬性名稱 | 屬性值 |
    |----------------|--------------------------------------|
    | **Xmlns** | **urn:schemas-microsoft-com:asm.v1** |
-
 
 4. 加入 **dependentAssembly** 項目做為 **assemblyBinding** 項目的子項目。
 
@@ -59,13 +57,11 @@ ms.locfileid: "56616686"
 
 6. 將下列屬性名稱和值加入至 **assemblyIdentity** 項目：
 
-
    | 屬性名稱 | 屬性值 |
    |--------------------| - |
    | **name** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
    | **culture** | **Neutral** |
-
 
 7. 加入 **codeBase** 項目做為 **dependentAssembly** 項目的子系。
 
@@ -100,15 +96,15 @@ ms.locfileid: "56616686"
 
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>將分析工具的後續處理步驟加入至 configuration/system.web/compilation 元素
 
-1.  如有需要，加入 **system.web** 項目做為 **configuration** 項目的子項目，否則移至下一個步驟。
+1. 如有需要，加入 **system.web** 項目做為 **configuration** 項目的子項目，否則移至下一個步驟。
 
      **system.web** 項目沒有任何屬性。 **configuration** 項目只能有一個 **system.web** 子項目。
 
-2.  如有需要，加入 **compilation** 項目做為 **system.web** 項目的子項目，否則移至下一個步驟。
+2. 如有需要，加入 **compilation** 項目做為 **system.web** 項目的子項目，否則移至下一個步驟。
 
      **system.web** 項目只能有一個 **compilation** 子項目。
 
-3.  從 **compilation** 項目移除任何現有的屬性，並且加入下列屬性名稱和值：
+3. 從 **compilation** 項目移除任何現有的屬性，並且加入下列屬性名稱和值：
 
     |屬性名稱|屬性值|
     |--------------------|---------------------|
@@ -140,12 +136,10 @@ ms.locfileid: "56616686"
 
 3. 將下列屬性名稱和值加入至 **add** 項目：
 
-
    | 屬性名稱 | 屬性值 |
    |----------------| - |
    | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
    | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
-
 
 4. 加入另一個 **add** 項目做為 **appSettings** 項目的子系。
 
@@ -157,7 +151,6 @@ ms.locfileid: "56616686"
    |**value**|`PerformanceToolsFolder`|
 
     `PerformanceToolsFolder` 是程式碼剖析工具可執行檔的路徑。 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
-
 
 ```xml
     <configuration>

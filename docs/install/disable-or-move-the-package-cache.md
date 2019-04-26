@@ -19,11 +19,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 47793cff733d84634c79355fb7639dbdad1cd82f
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58414858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974231"
 ---
 # <a name="disable-or-move-the-package-cache"></a>停用或移動套件快取
 

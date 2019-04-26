@@ -1,5 +1,5 @@
 ---
-title: 作法：使用命令列以分析工具啟動獨立應用程式並收集應用程式統計資料 | Microsoft Docs
+title: HOW TO：使用命令列以分析工具啟動獨立應用程式並收集應用程式統計資料 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
@@ -8,27 +8,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38bc970eb3118beb7d28ea0cf40850922c0dc2d6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d5938adc51b2d89b0402e28bb5112158b07e378
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386950"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>HOW TO：使用命令列以分析工具啟動獨立應用程式並收集應用程式統計資料
 本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具啟動獨立的 (用戶端) 應用程式，並使用取樣方法收集效能統計資料。
 
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
+> Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
 >
->  若要將階層互動資料新增至分析回合中，則需要使用命令列分析工具的特定程序。 請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)
+> 若要將階層互動資料新增至分析回合中，則需要使用命令列分析工具的特定程序。 請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)
 
  若要使用程式碼剖析工具命令列工具，必須將路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 您可以從 Visual Studio 命令視窗，在已安裝 Visual Studio 的電腦上執行程式碼剖析工具。
 
-1.  如果您是從已安裝 Visual Studio 的電腦上執行程式碼剖析工具，Visual Studio 命令視窗會設定正確的路徑。 在 [工具] 功能表上，選擇 [VS 命令提示字元]。
+1. 如果您是從已安裝 Visual Studio 的電腦上執行程式碼剖析工具，Visual Studio 命令視窗會設定正確的路徑。 在 [工具] 功能表上，選擇 [VS 命令提示字元]。
 
 > [!NOTE]
->  若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
+> 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
 
 ## <a name="start-the-application-with-the-profiler"></a>使用分析工具啟動應用程式
  若要使用程式碼剖析工具啟動目標應用程式，您可以使用 VSPerfCmd **/start** 和 **/launch** 選項初始化程式碼剖析工具，並啟動應用程式。 您可以在單一命令列上指定 **/start** 和 **/launch** 及其個別選項。
@@ -55,7 +55,6 @@ ms.locfileid: "56638019"
    | [/automark](../profiling/automark.md) **:** `Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.*etl*) 檔案。 |
 
-
 3. 啟動目標應用程式。 輸入：**VSPerfCmd /launch:**`appName` [`Options`] [`Sample Event`]
 
     您可以使用下列一或多個選項搭配 **/launch** 選項。
@@ -79,7 +78,7 @@ ms.locfileid: "56638019"
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集
 
--   下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
+- 下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
     |選項|說明|
     |------------|-----------------|
@@ -92,15 +91,15 @@ ms.locfileid: "56638019"
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段
 
-1.  執行下列其中一個步驟，以從目標應用程式中斷連結程式碼剖析工具：
+1. 執行下列其中一個步驟，以從目標應用程式中斷連結程式碼剖析工具：
 
-    -   關閉目標應用程式。
+    - 關閉目標應用程式。
 
          -或-
 
-    -   輸入 **VSPerfCmd /detach**
+    - 輸入 **VSPerfCmd /detach**
 
-2.  關閉分析工具。 類型：
+2. 關閉分析工具。 類型：
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 

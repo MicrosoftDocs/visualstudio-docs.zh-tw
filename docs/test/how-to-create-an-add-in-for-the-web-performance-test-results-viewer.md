@@ -9,20 +9,20 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950045"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>作法：建立 Web 效能測試結果檢視器的 Visual Studio 增益集
+# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>HOW TO：建立 Web 效能測試結果檢視器的 Visual Studio 增益集
 
 您可以使用下列命名空間來擴充 [Web 效能測試結果檢視器] 的 UI：
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
--   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
+- <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
 此外，您必須新增 LoadTestPackage DLL 的參考，這個檔案位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\Enterprise\Common7\IDE\PrivateAssemblies* 資料夾中。
 
@@ -109,31 +109,31 @@ ms.locfileid: "58416353"
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>若要建立要用於 Web 測試結果檢視器的控制項
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇 [新增]，然後選取 [新增專案]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下方案，選擇 [新增]，然後選取 [新增專案]。
 
 2. 建立新的 **Windows Forms 控制項程式庫**專案。
 
-3.  從 [工具箱] 中，將 <xref:System.Windows.Forms.DataGridView> 拖曳至 userControl1 的介面上。
+3. 從 [工具箱] 中，將 <xref:System.Windows.Forms.DataGridView> 拖曳至 userControl1 的介面上。
 
 4. 按一下 <xref:System.Windows.Forms.DataGridView> 右上角的動作標籤字符 (![智慧標籤字符](../test/media/vs_winformsmttagglyph.gif))，然後依照下列步驟進行操作：
 
-    1.  選擇 [停駐於父容器中]。
+    1. 選擇 [停駐於父容器中]。
 
-    2.  清除下列核取方塊：[啟用新增]、[啟用編輯]、[啟用刪除] 和 [啟用資料行重新調整順序]。
+    2. 清除下列核取方塊：[啟用新增]、[啟用編輯]、[啟用刪除] 和 [啟用資料行重新調整順序]。
 
-    3.  選擇 [新增資料行]。
+    3. 選擇 [新增資料行]。
 
          [新增資料行] 對話方塊隨即顯示。
 
-    4.  在 [類型] 下拉式清單中，選取 **DataGridViewTextBoxColumn**。
+    4. 在 [類型] 下拉式清單中，選取 **DataGridViewTextBoxColumn**。
 
-    5.  清除 [標題文字] 中的文字 "Column1"。
+    5. 清除 [標題文字] 中的文字 "Column1"。
 
-    6.  選擇 [新增]。
+    6. 選擇 [新增]。
 
-    7.  選擇 [關閉]。
+    7. 選擇 [關閉]。
 
-5.  在 [屬性] 視窗中，將 <xref:System.Windows.Forms.DataGridView> 的 [(名稱)] 屬性變更為 **resultControlDataGridView**。
+5. 在 [屬性] 視窗中，將 <xref:System.Windows.Forms.DataGridView> 的 [(名稱)] 屬性變更為 **resultControlDataGridView**。
 
 6. 以滑鼠右鍵按一下設計介面，然後選取 [檢視程式碼]。
 
@@ -158,21 +158,21 @@ ms.locfileid: "58416353"
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>將程式碼加入至 WebPerfTestResultsViewerAddin
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下 WebPerfTestResultsViewerAddin 專案中的 [參考] 節點，然後選取 [新增參考]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下 WebPerfTestResultsViewerAddin 專案中的 [參考] 節點，然後選取 [新增參考]。
 
-2.  在 [新增參考] 對話方塊中，選擇 [.NET] 索引標籤。
+2. 在 [新增參考] 對話方塊中，選擇 [.NET] 索引標籤。
 
-3.  向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework** 和 **System.Windows.Forms**。
+3. 向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework** 和 **System.Windows.Forms**。
 
-4.  選擇 [確定] 。
+4. 選擇 [確定] 。
 
-5.  再次以滑鼠右鍵按一下 [參考] 節點，然後選取 [新增參考]。
+5. 再次以滑鼠右鍵按一下 [參考] 節點，然後選取 [新增參考]。
 
-6.  在 [新增參考] 對話方塊中，選擇 [瀏覽] 索引標籤。
+6. 在 [新增參考] 對話方塊中，選擇 [瀏覽] 索引標籤。
 
-7.  選擇 [查詢] 下拉式清單並巡覽至 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*，然後選取 *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* 檔案。
+7. 選擇 [查詢] 下拉式清單並巡覽至 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*，然後選取 *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* 檔案。
 
-8.  選擇 [確定] 。
+8. 選擇 [確定] 。
 
 9. 以滑鼠右鍵按一下 WebPerfTestResultsViewerAddin 專案節點，然後選取 [新增參考]。
 
@@ -254,28 +254,28 @@ ms.locfileid: "58416353"
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>將程式碼加入至 WebPerfTestResultsViewerControl
 
-1.  在 [方案總管] 中，以滑鼠右鍵按一下 WebPerfTestResultsViewerControl 專案節點，然後選取 [屬性]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下 WebPerfTestResultsViewerControl 專案節點，然後選取 [屬性]。
 
-2.  選取 [應用程式] 索引標籤，然後選擇 [目標 Framework] 下拉式清單並選取 [.NET Framework 4]，接著關閉 [屬性]。
+2. 選取 [應用程式] 索引標籤，然後選擇 [目標 Framework] 下拉式清單並選取 [.NET Framework 4]，接著關閉 [屬性]。
 
      這是支援擴充 [Web 效能測試結果檢視器] 所需之 DLL 參考的必要步驟。
 
-3.  在 [方案總管] 的 WebPerfTestResultsViewerControl 專案中，以滑鼠右鍵按一下 [參考] 節點，然後選取 [新增參考]。
+3. 在 [方案總管] 的 WebPerfTestResultsViewerControl 專案中，以滑鼠右鍵按一下 [參考] 節點，然後選取 [新增參考]。
 
-4.  在 [新增參考] 對話方塊中，按一下 [.NET] 索引標籤。
+4. 在 [新增參考] 對話方塊中，按一下 [.NET] 索引標籤。
 
-5.  向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**。
+5. 向下捲動並選取 **Microsoft.VisualStudio.QualityTools.WebTestFramework**。
 
-6.  選擇 [確定] 。
+6. 選擇 [確定] 。
 
-7.  在 *UserControl1.cs* 檔案中，加入下列 Using 陳述式：
+7. 在 *UserControl1.cs* 檔案中，加入下列 Using 陳述式：
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     using Microsoft.VisualStudio.TestTools.WebTesting.Rules;
     ```
 
-8.  加入從 *Connect.cs* 檔案中 WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged 方法呼叫並傳遞 WebTestRequestResult 的 Update 方法。 Update 方法會將 WebTestRequestResult 傳遞給它的各種屬性填入 DataGridView。
+8. 加入從 *Connect.cs* 檔案中 WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged 方法呼叫並傳遞 WebTestRequestResult 的 Update 方法。 Update 方法會將 WebTestRequestResult 傳遞給它的各種屬性填入 DataGridView。
 
     ```csharp
     public void Update(WebTestRequestResult WebTestResults)
@@ -304,27 +304,27 @@ ms.locfileid: "58416353"
 
 ### <a name="to-build-the-solution"></a>若要建置方案
 
--   在 [建置] 功能表上，選取 [建置方案]。
+- 在 [建置] 功能表上，選取 [建置方案]。
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>登錄 WebPerfTestResultsViewerAddin 增益集
 
 ### <a name="to-register-the-add-in-using-the-add-in-manager"></a>若要使用增益集管理員來登錄增益集
 
-1.  在 [工具] 功能表上，選取 [增益集管理員]。
+1. 在 [工具] 功能表上，選取 [增益集管理員]。
 
-2.  [增益集管理員] 對話方塊隨即顯示。
+2. [增益集管理員] 對話方塊隨即顯示。
 
-3.  在 [可用的增益集] 資料行中，選取 WebPerfTestResultsViewerAddin 增益集的核取方塊，並且清除 [啟動] 和 [命令列] 資料行下方的核取方塊。
+3. 在 [可用的增益集] 資料行中，選取 WebPerfTestResultsViewerAddin 增益集的核取方塊，並且清除 [啟動] 和 [命令列] 資料行下方的核取方塊。
 
-4.  選擇 [確定] 。
+4. 選擇 [確定] 。
 
 ## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>使用建置 WebPerfTestResultsViewerAddin 增益集執行 Web 效能測試
 
 ### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>執行 Web 測試結果檢視器的新 VS 增益集
 
-1.  執行 Web 效能測試，然後您將會看見 WebPerfTestResultsViewerAddin 增益集中名為 Sample 的新索引標籤顯示在 [Web 效能測試結果檢視器] 中。
+1. 執行 Web 效能測試，然後您將會看見 WebPerfTestResultsViewerAddin 增益集中名為 Sample 的新索引標籤顯示在 [Web 效能測試結果檢視器] 中。
 
-2.  選擇此索引標籤可查看 DataGridView 中呈現的屬性。
+2. 選擇此索引標籤可查看 DataGridView 中呈現的屬性。
 
 ## <a name="net-framework-security"></a>.NET Framework 安全性
 
@@ -336,9 +336,9 @@ ms.locfileid: "58416353"
 
  增益集安全性之選項頁中的設定如下：
 
--   **允許載入增益集元件**： 預設會選取。 當您選取此選項時，就可以在 Visual Studio 中載入增益集。 當您沒有選取此選項時，則禁止在 Visual Studio 中載入增益集。
+- **允許載入增益集元件**： 預設會選取。 當您選取此選項時，就可以在 Visual Studio 中載入增益集。 當您沒有選取此選項時，則禁止在 Visual Studio 中載入增益集。
 
--   **允許從 URL 載入增益集元件**： 預設不會選取。 當您選取此選項時，就可以從外部網站載入增益集。 當您沒有選取此選項時，則禁止在 Visual Studio 中載入遠端增益集。 如果增益集因為某種原因無法載入，那麼便無法從網路載入。 這項設定只能控制增益集 DLL 的載入。 *.Addin* 登錄檔案必須隨時位於本機系統中。
+- **允許從 URL 載入增益集元件**： 預設不會選取。 當您選取此選項時，就可以從外部網站載入增益集。 當您沒有選取此選項時，則禁止在 Visual Studio 中載入遠端增益集。 如果增益集因為某種原因無法載入，那麼便無法從網路載入。 這項設定只能控制增益集 DLL 的載入。 *.Addin* 登錄檔案必須隨時位於本機系統中。
 
 ## <a name="see-also"></a>另請參閱
 

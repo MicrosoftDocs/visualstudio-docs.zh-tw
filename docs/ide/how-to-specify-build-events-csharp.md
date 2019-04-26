@@ -1,5 +1,5 @@
 ---
-title: 作法：指定建置事件 (C#)
+title: HOW TO：指定建置事件 (C#)
 ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 28718a213e42f3db8c4beee5d45666044148601d
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946904"
 ---
-# <a name="how-to-specify-build-events-c"></a>作法：指定建置事件 (C#)
+# <a name="how-to-specify-build-events-c"></a>HOW TO：指定建置事件 (C#)
 
 使用建置事件指定要在建置開始之前，或建置完成之後執行的命令。 只有在建置成功到達建置流程中的這些點時，建置事件才會執行。
 

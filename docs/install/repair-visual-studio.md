@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 690fe29373e80d9dfc560a616d0e914731d9b6cf
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 3ba5cdf7ba627bc1d6a75368d90da5ce8a726a5e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973203"
 ---
 # <a name="repair-visual-studio"></a>修復 Visual Studio
 
@@ -75,12 +75,11 @@ ms.locfileid: "59477522"
 
 ::: moniker-end
 
-
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>另請參閱
 
 * [安裝 Visual Studio](install-visual-studio.md)
-* [更新 Visual Studio 2017](update-visual-studio.md)
+* [更新 Visual Studio](update-visual-studio.md)
 * [解除安裝 Visual Studio](uninstall-visual-studio.md)
 * [針對 Visual Studio 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)

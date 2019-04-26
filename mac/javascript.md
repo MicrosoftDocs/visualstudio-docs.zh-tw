@@ -8,11 +8,11 @@ ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
 ms.openlocfilehash: ed84e5478ae7a15905a5555a318bd656c664710e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982927"
 ---
 # <a name="javascript-and-typescript-support"></a>JavaScript 和 TypeScript 支援
 

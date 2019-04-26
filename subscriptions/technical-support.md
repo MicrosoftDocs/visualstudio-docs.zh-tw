@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: 了解 Visual Studio 訂用帳戶中包含的技術支援權益
 searchscope: VS Subscription
 ms.openlocfilehash: 50b6245be908bffc0d2abb9db7f74ed14f878224
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427477"
 ---
 # <a name="technical-support-benefits-included-with-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中包含的技術支援權益
 

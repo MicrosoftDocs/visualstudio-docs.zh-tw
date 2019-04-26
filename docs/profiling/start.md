@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e76c895102d5a33d66628a7c6436ab604b1ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e85c589866aba54e856afb066cec253c7057aaad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979675"
 ---
 # <a name="start"></a>啟動
 **Start** 選項是一個 *VSPerfCmd.exe* 選項，可將分析工具初始化為指定的分析方法。
@@ -27,13 +27,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 #### <a name="parameters"></a>參數
  `Method` 必須是下列其中一個關鍵字：
 
--   **TRACE** - 指定檢測方法。
+- **TRACE** - 指定檢測方法。
 
--   **SAMPLE** - 指定取樣方法。
+- **SAMPLE** - 指定取樣方法。
 
--   **COVERAGE** - 指定程式碼涵蓋範圍。
+- **COVERAGE** - 指定程式碼涵蓋範圍。
 
--   **CONCURRENCY** - 指定資源爭用方法。
+- **CONCURRENCY** - 指定資源爭用方法。
 
 ## <a name="required-options"></a>必要選項
  在命令列上指定 **Start** 時，務必要指定 **Output** 選項。

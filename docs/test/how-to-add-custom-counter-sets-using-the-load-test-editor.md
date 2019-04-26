@@ -10,12 +10,12 @@ ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8390808a8174d0abb2dec96beddb473a4fbc0e0b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40ce0d5d4c1988e40a7b7530b61fcfbaa1f7131d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950279"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>HOW TO：使用負載測試編輯器新增自訂計數器集合
 
@@ -32,16 +32,16 @@ ms.locfileid: "55932699"
 
 ## <a name="to-add-a-custom-counter-set-to-a-load-test"></a>將自訂計數器集合加入至負載測試
 
-1.  開啟負載測試。
+1. 開啟負載測試。
 
-2.  展開 [計數器集合] 節點。 您可以在這個節點中看到已加入至負載測試的所有計數器集合。
+2. 展開 [計數器集合] 節點。 您可以在這個節點中看到已加入至負載測試的所有計數器集合。
 
-3.  以滑鼠右鍵按一下 [計數器集合] 節點，然後選取 [新增自訂計數器集合]。
+3. 以滑鼠右鍵按一下 [計數器集合] 節點，然後選取 [新增自訂計數器集合]。
 
     > [!NOTE]
     > 計數器集合會命名為預設名稱，例如 **Custom1**。 您可以使用 [屬性] 視窗變更名稱。 按 **F4** 顯示 [屬性] 視窗。
 
-4.  若要將計數器新增至自訂計數器集合，請以滑鼠右鍵按一下新的計數器集合，然後選擇 [新增計數器]。 如需如何新增計數器的詳細資訊，請參閱[如何：將計數器新增至計數器集合](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)。
+4. 若要將計數器新增至自訂計數器集合，請以滑鼠右鍵按一下新的計數器集合，然後選擇 [新增計數器]。 如需如何新增計數器的詳細資訊，請參閱[如何：將計數器新增至計數器集合](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)。
 
     > [!NOTE]
     > 另一個加入自訂計數器集合的方法是，以滑鼠右鍵按一下現有的計數器集合，選擇 [複製]，然後將它貼至 [計數器集合] 節點。 如果也複製了其他不需要的計數器，可以予以刪除。 您可以使用 [屬性] 視窗變更新計數器集合的名稱。

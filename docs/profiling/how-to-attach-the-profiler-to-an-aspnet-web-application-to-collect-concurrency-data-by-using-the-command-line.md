@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: f01f0fd090bdfdef1f09f0446980756232a3abf3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 443086a77adbd872c63eab5b432ec7144acb9d69
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974266"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>作法：使用命令列將分析工具附加至 ASP.NET Web 應用程式以收集並行資料
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>HOW TO：使用命令列將分析工具附加至 ASP.NET Web 應用程式以收集並行資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至 ASP.NET 應用程式，並收集處理序和執行緒並行資料。
 
 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
@@ -45,21 +45,20 @@ ms.locfileid: "56604609"
    | [/automark](../profiling/automark.md) **:** `Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500。 |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.*etl*) 檔案。 |
 
-
 2. 以一般方式啟動 ASP.NET 應用程式。
 
 3. 輸入下列命令，將程式碼剖析工具附加至 ASP.NET 背景工作處理序︰**VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`]
 
-   -   `PID`指定 ASP.NET 背景工作處理序的識別碼或名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序 ID。
+   - `PID`指定 ASP.NET 背景工作處理序的識別碼或名稱。 您可以在 [Windows 工作管理員] 中檢視所有執行中處理序的處理序 ID。
 
-   -   [/targetclr](../profiling/targetclr.md) **:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。 這是選擇性參數。
+   - [/targetclr](../profiling/targetclr.md) **:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。 這是選擇性參數。
 
 ## <a name="control-data-collection"></a>控制資料收集
  當應用程式執行時，您可以使用 *VSPerfCmd.exe* 選項開始和停止將資料寫入至檔案，以控制資料收集。 透過控制資料收集，您可以收集特定程式執行 (例如啟動或關閉應用程式) 的資料。
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集
 
--   下表中成對的 VSPerfCmd 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
+- 下表中成對的 VSPerfCmd 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
     |選項|說明|
     |------------|-----------------|
@@ -72,11 +71,11 @@ ms.locfileid: "56604609"
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段
 
-1.  關閉目標應用程式或在命令提示字元中輸入下列命令，以將程式碼剖析工具從目標應用程式中斷連結︰
+1. 關閉目標應用程式或在命令提示字元中輸入下列命令，以將程式碼剖析工具從目標應用程式中斷連結︰
 
      **VSPerfCmd /detach**
 
-2.  在命令提示字元中輸入下列命令，以關閉程式碼剖析工具︰
+2. 在命令提示字元中輸入下列命令，以關閉程式碼剖析工具︰
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 

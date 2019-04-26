@@ -8,30 +8,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3985d8a11118097a4d1d97b95340702d1ed23209
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 60770dfa64c1a648d2a7ae56b38d66fe39e46183
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445747"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 多目標概觀
 您可以使用 MSBuild，將應用程式編譯為在數個 .NET Framework 版本中的任一版上或數個系統平台中的任一個平台上執行。 例如，您可以將應用程式編譯為在 32 位元平台的 .NET Framework 2.0 上執行，也可以將同一個應用程式編譯為在 64 位元平台的 .NET Framework 4.5 上執行。
 
 > [!IMPORTANT]
->  除了名稱「多目標」之外，專案一次只能以一個架構和一個平台為目標。
+> 除了名稱「多目標」之外，專案一次只能以一個架構和一個平台為目標。
 
  這些是一部分的 MSBuild 目標功能︰
 
--   您可以開發以較舊版 .NET Framework (例如 2.0、3.5 或 4 版) 為目標的應用程式。
+- 您可以開發以較舊版 .NET Framework (例如 2.0、3.5 或 4 版) 為目標的應用程式。
 
--   您可以將 .NET Framework 以外的架構作為目標，例如 Silverlight Framework。
+- 您可以將 .NET Framework 以外的架構作為目標，例如 Silverlight Framework。
 
--   您可以將「Framework 設定檔」當做目標，這是預先定義的目標 Framework 子集。
+- 您可以將「Framework 設定檔」當做目標，這是預先定義的目標 Framework 子集。
 
--   如果 .NET Framework 目前版本的 Service Pack 已發行，您可以將它當做目標。
+- 如果 .NET Framework 目前版本的 Service Pack 已發行，您可以將它當做目標。
 
--   MSBuild 多目標可保證應用程式只使用目標 Framework 和平台中提供的功能。
+- MSBuild 多目標可保證應用程式只使用目標 Framework 和平台中提供的功能。
 
 ## <a name="target-framework-and-platform"></a>目標架構和平台
  「目標架構」是建置專案以在其上執行的 .NET Framework 版本，而「目標平台」是建置專案以在其上執行的系統平台。  例如，您可能想要設定 .NET Framework 2.0 應用程式，在與 802x86 處理器系列 (x86) 相容的 32 位元平台上執行。 目標 Framework 和目標平台的組合稱為「目標內容」。 如需詳細資訊，請參閱[目標架構和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。

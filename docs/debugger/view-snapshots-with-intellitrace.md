@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 93a2fdd318b7e87bc585dff0b1b09589bfa4037b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929933"
 ---
 # <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise-c-visual-basic-c"></a>使用 IntelliTrace 回溯檢視快照集 (Visual Studio Enterprise) (C#、Visual Basic、C++)
 

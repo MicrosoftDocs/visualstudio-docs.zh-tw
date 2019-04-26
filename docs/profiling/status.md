@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25f452dcb473abf87d8992f36f5326973937e85e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967868"
 ---
 # <a name="status"></a>狀態
 *VSPerfCmd.exe* **Status** 選項會顯示分析工具和任何目前已分析處理序的狀態資訊。

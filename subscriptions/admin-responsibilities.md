@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: 了解訂用帳戶系統管理員的責任。
 searchscope: VS Subscription
 ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945831"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>系統管理員責任概觀
 身為系統管理員，您可以管理組織的訂用帳戶。  系統管理員角色也有責任確保訂用帳戶根據授權條款進行管理。 本文章概述系統管理員角色的責任、權益和限制。

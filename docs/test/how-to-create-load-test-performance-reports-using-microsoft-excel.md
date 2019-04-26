@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fb820ccc72e0070f947e362def1da137d19d8494
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950149"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>HOW TO：使用 Microsoft Excel 建立負載測試效能報表
 
@@ -24,9 +24,9 @@ ms.locfileid: "55955592"
 
 共有兩種負載測試報告可供使用：
 
--   **執行比較**：這會建立一組報告，這些報告會使用表格和橫條圖比較兩個負載測試結果中的資料。
+- **執行比較**：這會建立一組報告，這些報告會使用表格和橫條圖比較兩個負載測試結果中的資料。
 
--   **趨勢**：您可以為兩個以上的負載測試結果產生趨勢分析。 結果會以折線圖顯示，但也可以利用樞紐分析表使用資料。
+- **趨勢**：您可以為兩個以上的負載測試結果產生趨勢分析。 結果會以折線圖顯示，但也可以利用樞紐分析表使用資料。
 
 > [!TIP]
 > 您也可以透過從摘要檢視、圖形檢視和資料表檢視複製並貼上資料，手動建立 Microsoft Word 報告。 請參閱[如何：使用 Microsoft Word 手動建立負載測試效能報表](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)。

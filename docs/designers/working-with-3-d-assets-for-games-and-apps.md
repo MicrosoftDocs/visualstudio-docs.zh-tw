@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ee4d850250abf0249ce1cccebd3408872b34fd6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844057"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>使用 3D 資產來打造遊戲和應用程式
 
@@ -49,7 +49,7 @@ ms.locfileid: "55941099"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[使用紋理和影像](../designers/working-with-textures-and-images.md)|描述如何使用 Visual Studio 來使用影像和紋理。|
 |[使用 3D 模型](../designers/working-with-3-d-models.md)|描述如何使用 Visual Studio 來使用 3D 模型。|

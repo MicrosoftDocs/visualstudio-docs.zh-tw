@@ -1,5 +1,5 @@
 ---
-title: 作法：從命令列篩選報表 | Microsoft Docs
+title: HOW TO：從命令列篩選報表 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6e9b140f-b44f-4a5c-bd65-d868ddc94023
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c90ca0bea8126308b1260258044cece53218fb3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973782"
 ---
-# <a name="how-to-filter-reports-from-the-command-line"></a>作法：從命令列篩選報表
+# <a name="how-to-filter-reports-from-the-command-line"></a>HOW TO：從命令列篩選報表
 使用 **VSPerfReport** 命令的選項，即可將報表篩選到分析資料檔案的特定時間區段，或將資料限制到一或多個處理序或執行緒。 如需此命令的詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。
 
 |選項|說明|

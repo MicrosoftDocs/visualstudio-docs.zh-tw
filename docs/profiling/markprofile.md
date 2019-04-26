@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5756047dc88dc01e044787cd5e3a71456e3e85c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7640b4f846dd4fa5a9f8b16ead7019ca3ba821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430929"
 ---
 # <a name="markprofile"></a>MarkProfile
 `MarkProfile` 方法會在 .*vsp* 檔案中插入分析標記。 包含 `MarkProfile` 函式之執行緒的分析必須設定為 ON，才能插入標記。
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  使用 Mark 命令或 API 函式 (CommentMarkAtProfile、CommentMarkProfile 或 MarkProfile) 來插入標記和註解時，包含標記分析函式之執行緒的分析狀態必須設定為開啟。
 
 > [!IMPORTANT]
->  MarkProfile 方法應該只與檢測分析方法搭配使用。
+> MarkProfile 方法應該只與檢測分析方法搭配使用。
 
 ## <a name="net-framework-equivalent"></a>.NET Framework 同等
  *Microsoft.VisualStudio.Profiler.dll*

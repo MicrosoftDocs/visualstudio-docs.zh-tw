@@ -7,22 +7,22 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f5ab27f8f10cb7221ce85bd29df13e446253b8a8
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970343"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用適用於 C++ 的 Microsoft 單元測試架構
 
 適用於 C++ 的 Microsoft 單元測試架構預設隨附於 [使用 C++ 的桌面開發] 工作負載。
 
-##  <a name="separate_project"></a> 在個別專案中撰寫單元測試
+## <a name="separate_project"></a> 在個別專案中撰寫單元測試
 
 一般而言，您會在程式碼專屬的專案中測試程式碼，且該專案與您要測試的程式碼位於相同的方案中。 若要安裝及設定新的測試專案，請參閱[撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)。
 
-##  <a name="same_project"></a> 在相同專案中撰寫單元測試
+## <a name="same_project"></a> 在相同專案中撰寫單元測試
 
 在某些情況下 (例如在 DLL 中測試非匯出函式時)，您可能需要在與要測試之程式相同的專案中建立測試。 若要在相同專案中撰寫單元測試：
 
@@ -32,16 +32,14 @@ ms.locfileid: "58324905"
 
    2. 按一下下列資料列中的向下箭號，然後選擇 [\<編輯>]：
 
-
       | Directory | 屬性 |
       |-| - |
       | **Include 目錄** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
       | **程式庫目錄** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-
 2. 加入 C++ 單元測試檔案：
 
-   -   在 [方案總管] 中，以滑鼠右鍵按一下專案節點，然後選擇 [新增] > [新增項目] > [C++ 單元測試]。
+   - 在 [方案總管] 中，以滑鼠右鍵按一下專案節點，然後選擇 [新增] > [新增項目] > [C++ 單元測試]。
 
 ## <a name="write-the-tests"></a>撰寫測試
 

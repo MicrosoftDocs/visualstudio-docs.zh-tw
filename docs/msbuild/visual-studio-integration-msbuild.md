@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e3881bc346c5074c7fd4277708a16e22d4acd7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445375"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 Visual Studio 會裝載 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ，用於載入及建置 Managed 專案。 由於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是負責處理專案，因此幾乎任何 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 格式的專案都可以成功地用在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中，即使專案是用不同的工具撰寫，而且含有自訂的建置處理序，也不會有問題。
@@ -63,7 +63,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```
 
 > [!NOTE]
->  有些項目類型名稱是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中特有的，但是沒有列在這個下拉式清單中。
+> 有些項目類型名稱是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中特有的，但是沒有列在這個下拉式清單中。
 
 ## <a name="in-process-compilers"></a>同處理序編譯器
  如果可能， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會嘗試使用同處理序 (In-Process) 版本的 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編譯器來提升效能 (不適用 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)])。若要讓這種編譯器能夠正常運作，必須符合下列條件：
@@ -75,13 +75,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-intellisense"></a>設計階段 IntelliSense
  若要在組建產生輸出組件之前取得 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的 IntelliSense 支援，必須符合下列條件：
 
--   必須要有一個名為 `Compile`的目標。
+- 必須要有一個名為 `Compile`的目標。
 
--   `Compile` 目標或此目標的其中一個相依性必須呼叫專案的編譯器工作，例如 `Csc` 或 `Vbc`。
+- `Compile` 目標或此目標的其中一個相依性必須呼叫專案的編譯器工作，例如 `Csc` 或 `Vbc`。
 
--   `Compile` 目標或此目標的其中一個相依性必須讓編譯器接收 IntelliSense 的所有必要參數，特別是所有參考。
+- `Compile` 目標或此目標的其中一個相依性必須讓編譯器接收 IntelliSense 的所有必要參數，特別是所有參考。
 
--   必須符合[同處理序編譯器](#in-process-compilers)一節中所列的條件。
+- 必須符合[同處理序編譯器](#in-process-compilers)一節中所列的條件。
 
 ## <a name="build-solutions"></a>建置方案
  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中，方案檔和專案建置順序是由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 本身來控制。 在命令列上使用 *msbuild.exe* 建置方案時，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會剖析方案檔並排列專案建置的順序。 在這兩種情況下都會依據相依性順序個別建置專案，而且不會走訪專案對專案間的參考。 相反地，使用 *msbuild.exe* 建置個別專案時，則會周遊專案對專案間的參考。
@@ -126,22 +126,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>設計階段目標執行
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 在載入專案時，會嘗試執行具有特定名稱的目標， 這些目標包括 `Compile`、`ResolveAssemblyReferences`、`ResolveCOMReferences`、`GetFrameworkPaths` 與 `CopyRunEnvironmentFiles`。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會執行這些目標，以便能初始化編譯器以提供 IntelliSense、初始化偵錯工具，以及解析顯示在 [方案總管] 中的參考。 如果沒有這些目標，專案仍然可以正常載入和建置，但是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的設計階段功能將無法全部正常運作。
 
-##  <a name="edit-project-files-in-visual-studio"></a>在 Visual Studio 中編輯專案檔
+## <a name="edit-project-files-in-visual-studio"></a>在 Visual Studio 中編輯專案檔
  若要直接編輯 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案，可以在 Visual Studio XML 編輯器中開啟專案檔。
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>若要在 Visual Studio 中卸載和編輯專案檔
 
-1.  在 [ **方案總管**] 中，開啟專案的捷徑功能表，然後選擇 [ **卸載專案**]。
+1. 在 [ **方案總管**] 中，開啟專案的捷徑功能表，然後選擇 [ **卸載專案**]。
 
      專案便會標記為 [ **(無法使用)**]。
 
-2.  在方案總管中，開啟無法使用之專案的捷徑功能表，然後選擇 [編輯 \<專案檔>]。
+2. 在方案總管中，開啟無法使用之專案的捷徑功能表，然後選擇 [編輯 \<專案檔>]。
 
      專案檔隨即在 [Visual Studio XML 編輯器] 中開啟。
 
-3.  編輯、儲存，然後關閉專案檔。
+3. 編輯、儲存，然後關閉專案檔。
 
-4.  在 [ **方案總管**] 中，開啟無法使用之專案的捷徑功能表，然後選擇 [ **重新載入專案**]。
+4. 在 [ **方案總管**] 中，開啟無法使用之專案的捷徑功能表，然後選擇 [ **重新載入專案**]。
 
 ## <a name="intellisense-and-validation"></a>IntelliSense 和驗證
  使用 XML 編輯器編輯專案檔時，IntelliSense 和驗證是由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 結構描述檔驅動。 這些都會安裝在結構描述快取中，您可以在 *\<Visual Studio 安裝目錄>\Xml\Schemas\1033\MSBuild* 中找到。

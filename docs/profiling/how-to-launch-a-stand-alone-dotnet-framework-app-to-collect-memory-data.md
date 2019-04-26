@@ -1,5 +1,5 @@
 ---
-title: 作法：使用命令列以分析工具啟動獨立的 .NET Framework 應用程式以收集記憶體資料 | Microsoft Docs
+title: HOW TO：使用命令列以分析工具啟動獨立的 .NET Framework 應用程式以收集記憶體資料 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
@@ -8,26 +8,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18e90e44da8b36dbc4824817c7f13bbe423a2c12
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d6600444d5fb991bce0500c587cb66b9baefdd22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386054"
 ---
-# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>作法：使用命令列以分析工具啟動獨立的 .NET Framework 應用程式以收集記憶體資料
+# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>HOW TO：使用命令列以分析工具啟動獨立的 .NET Framework 應用程式以收集記憶體資料
 本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具啟動 .NET Framework 獨立 (用戶端) 應用程式，並收集記憶體資料。
 
  程式碼剖析工作階段有三個部分︰
 
--   使用程式碼剖析工具啟動應用程式。
+- 使用程式碼剖析工具啟動應用程式。
 
--   收集程式碼剖析資料。
+- 收集程式碼剖析資料。
 
--   結束程式碼剖析工作階段。
+- 結束程式碼剖析工作階段。
 
 > [!NOTE]
->  若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
+> 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
 
 ## <a name="start-the-application-with-the-profiler"></a>使用分析工具啟動應用程式
  若要使用程式碼剖析工具啟動目標應用程式，請使用 **VSPerfCmd.exe/start** 和 **/launch**選項初始化程式碼剖析工具，並啟動應用程式。 您可以在單一命令列上指定 **/start** 和 **/launch** 及其個別選項。
@@ -52,7 +52,6 @@ ms.locfileid: "56614177"
    | - | - |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
    | [/automark](../profiling/automark.md) **:** `Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
-
 
 3. 啟動目標應用程式。 類型：
 
@@ -79,7 +78,7 @@ ms.locfileid: "56614177"
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集
 
--   下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
+- 下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
     |選項|說明|
     |------------|-----------------|
@@ -87,22 +86,22 @@ ms.locfileid: "56614177"
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|
     |[/attach](../profiling/attach.md) **:** `PID` [/detach](../profiling/detach.md)|**/attach** 會開始為 `PID`(處理序 ID) 指定的處理序收集資料。 **/detach** 停止所有處理序的資料收集。|
 
--   您也可以使用 **VSPerfCmd.exe**[/mark](../profiling/mark.md) 選項將程式碼剖析標記插入資料檔案。 **/mark** 命令會新增識別碼、時間戳記和一個選擇性的使用者定義文字字串。 標記可用來篩選資料。
+- 您也可以使用 **VSPerfCmd.exe**[/mark](../profiling/mark.md) 選項將程式碼剖析標記插入資料檔案。 **/mark** 命令會新增識別碼、時間戳記和一個選擇性的使用者定義文字字串。 標記可用來篩選資料。
 
 ## <a name="end-the-profiling-session"></a>結束程式碼剖析工作階段
  若要結束程式碼剖析工作階段，必須從所有分析的處理序中斷連結程式碼剖析工具，而且必須明確地關閉程式碼剖析工具。 您可以關閉應用程式或呼叫 **VSPerfCmd /detach** 選項，以從使用取樣方法剖析的應用程式中斷連結程式碼剖析工具。 接著呼叫 **VSPerfCmd /shutdown** 選項以停止程式碼剖析工具，並關閉程式碼剖析資料檔案。 **VSPerfClrEnv /off** 命令會清除程式碼剖析環境變數。
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段
 
-1.  執行下列其中一個步驟，以從目標應用程式中斷連結程式碼剖析工具：
+1. 執行下列其中一個步驟，以從目標應用程式中斷連結程式碼剖析工具：
 
-    -   關閉目標應用程式。
+    - 關閉目標應用程式。
 
          -或-
 
-    -   輸入 **VSPerfCmd /detach**
+    - 輸入 **VSPerfCmd /detach**
 
-2.  關閉分析工具。 類型：
+2. 關閉分析工具。 類型：
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 

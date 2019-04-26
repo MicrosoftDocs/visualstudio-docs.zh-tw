@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e053ee01d60d1ce3dcae10e044bb642e11f90dd7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963789"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>在負載測試中設定情節啟動延遲
 
@@ -43,7 +43,7 @@ ms.locfileid: "55924080"
 
 1. 開啟負載測試。
 
-     [負載測試編輯器] 隨即出現。 負載測試樹狀隨即顯示。
+     [負載測試編輯器] 隨即出現。 負載測試樹狀結構隨即顯示。
 
 2. 在負載測試樹狀目錄的 [情節] 資料夾中，選擇您想要指定延遲開始時間的情節節點。
 
@@ -71,7 +71,7 @@ ms.locfileid: "55924080"
 
 1. 開啟負載測試。
 
-     [負載測試編輯器] 隨即出現。 負載測試樹狀隨即顯示。
+     [負載測試編輯器] 隨即出現。 負載測試樹狀結構隨即顯示。
 
 2. 在負載測試樹狀目錄的 [情節] 資料夾中，選擇您要變更其準備行為的情節節點。
 

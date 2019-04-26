@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969211"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>選項、文字編輯器、XML、其他
 

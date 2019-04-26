@@ -7,12 +7,12 @@ ms.date: 02/21/2019
 ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 65b44dddfdadcb7ef38332fa35443dbaeededb5d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a4a4f2f4fd4ce6cd88d11979a21e4e9184adfca8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937121"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>HOW TO：設定多個啟始專案
 
@@ -20,7 +20,7 @@ Visual Studio for Mac 可讓您指定如何在針對解決方案進行偵錯或�
 
 ## <a name="to-set-multiple-startup-projects"></a>設定多個啟動專案
 
-1.  在 **Solution Pad** 中，選取解決方案 (最上層節點)。
+1. 在 **Solution Pad** 中，選取解決方案 (最上層節點)。
 
 2. 選擇解決方案節點的操作 (以滑鼠右鍵按一下) 功能表，然後選擇 [設定啟始專案...]。
 

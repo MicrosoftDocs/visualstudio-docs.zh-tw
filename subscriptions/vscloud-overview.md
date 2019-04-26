@@ -7,15 +7,14 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 每月或每年租 Visual Studio Professional 或 Visual Studio Enterprise，沒有長期合約。
 searchscope: VS Subscription
-ms.openlocfilehash: eb9d7034a18d8be6fd4c20ddde1c3708cc206fa0
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978827"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>購買 Visual Studio Professional 和 Visual Studio Enterprise 雲端訂用帳戶
-
 
 您可以從 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 購買 [Visual Studio Professional 和 Visual Studio Enterprise 訂用帳戶](https://visualstudio.microsoft.com/subscriptions/)。 這些稱為「雲端訂用帳戶」。
 
@@ -65,12 +64,12 @@ ms.locfileid: "56953417"
 
 ## <a name="manage-subscriptions"></a> 取消您已購買的雲端訂用帳戶更新
 
-*   變更所購買的訂用帳戶數目：
+* 變更所購買的訂用帳戶數目：
 
 > [!div class="mx-imgBorder"]
 > ![變更訂用帳戶](_img/buy-vs-subscriptions/manage-subscriptions.png)
 
-*   若要取消這些訂用帳戶，請將訂用帳戶數目減少為零 (0)。 它們不會在下個計費週期的開頭更新 (每月雲端訂用帳戶的次月一號；年度雲端訂用帳戶的 12 個月後)。
+* 若要取消這些訂用帳戶，請將訂用帳戶數目減少為零 (0)。 它們不會在下個計費週期的開頭更新 (每月雲端訂用帳戶的次月一號；年度雲端訂用帳戶的 12 個月後)。
 
 ## <a name="buy-cloud-subscriptions-now"></a>立即購買雲端訂用帳戶
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdeab63dffaf7884484f46fbfe9eac2002514e52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: de860c8d177a12d8283ae4f3a9b0f36dab1cc96d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440002"
 ---
 # <a name="task-writing"></a>工作撰寫
 提供在建置流程期間執行之程式碼的工作。 工作是包含在目標中。 一般工作程式庫會隨附於[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，您也可以建立自己的工作。 如需隨附於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 之工作程式庫的詳細資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。
@@ -27,9 +27,9 @@ ms.locfileid: "56629920"
 
  實作工作時有兩種方法可供使用：
 
--   直接實作 <xref:Microsoft.Build.Framework.ITask> 介面。
+- 直接實作 <xref:Microsoft.Build.Framework.ITask> 介面。
 
--   從協助程式類別 <xref:Microsoft.Build.Utilities.Task> 衍生您的類別，此協助程式類別定義於 *Microsoft.Build.Utilities.dll* 組件中。 工作會實作 ITask 並提供部分 ITask 成員的預設實作。 此外，記錄會更容易。
+- 從協助程式類別 <xref:Microsoft.Build.Utilities.Task> 衍生您的類別，此協助程式類別定義於 *Microsoft.Build.Utilities.dll* 組件中。 工作會實作 ITask 並提供部分 ITask 成員的預設實作。 此外，記錄會更容易。
 
 這兩種情況都必須在您的類別中新增名為 `Execute` 的方法，這是工作執行時所呼叫的方法。 這個方法不採用任何參數，並會傳回 `Boolean` 值：如果工作成功為 `true`，如果失敗為 `false`。 下例示範的工作不執行任何動作，並會傳回 `true`。
 
@@ -97,7 +97,7 @@ namespace MyTasks
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 檔案 *Microsoft.Common.Tasks* 是專案檔案，包含 `UsingTask` 元素清單，這些元素會註冊所有隨附於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 的工作。 組建每個專案時，都會自動包含此檔案。 如果在 *Microsoft.Common.Tasks* 中註冊的工作也在目前的專案檔中註冊，則以目前的專案檔為優先，亦即您可以使用自己的同名工作覆寫預設工作。
 
 > [!TIP]
->  檢視 *Microsoft.Common.Tasks* 的內容即可以查看 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所提供之工作的清單。
+> 檢視 *Microsoft.Common.Tasks* 的內容即可以查看 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所提供之工作的清單。
 
 ## <a name="raise-events-from-a-task"></a>從工作引發事件
  如果您的工作衍生自 <xref:Microsoft.Build.Utilities.Task> 協助程式類別，您可以對 <xref:Microsoft.Build.Utilities.Task> 類別使用下列任一 helper 方法，引發要被攔截且由任何已註冊記錄器顯示的事件：

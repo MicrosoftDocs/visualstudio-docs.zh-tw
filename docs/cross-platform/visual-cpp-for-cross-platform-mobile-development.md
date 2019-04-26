@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: da292a0e830c38ef6fa35873575c4e43ca6f2abd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1439e50eba4a0000a1bf78b3f24c74fb164c1faf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818134"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>適用於跨平台行動裝置應用程式開發的 Visual C++
 您可以建置 iOS、Android 和 Windows 裝置的原生 C++ 應用程式，以及使用跨平台行動裝置開發的 Visual C++，在為 iOS、Android 和 Windows 建置的程式庫中共用通用程式碼。 這是為共用程式庫和原生應用程式的跨平台開發工具安裝了所需 SDK 和工具的 Visual Studio 2015 提供的選項。 安裝好後，您就可以使用 Visual C++ 建立程式碼，除了 Windows、Windows Phone 和 Xbox 之外，還可在 iOS 和 Android 裝置及平台上執行。
@@ -26,11 +26,11 @@ ms.locfileid: "54936160"
 
  使用適用於跨平台行動裝置開發的 Visual C++ 進行程式開發有數項優勢：
 
-1.  **安裝簡單。** Visual Studio 安裝程式會取得並安裝建置 Android 和 iOS 應用程式或文件庫所需要的協力廠商工具和 SDK。 組態與設定既簡單又多為自動化。
+1. **安裝簡單。** Visual Studio 安裝程式會取得並安裝建置 Android 和 iOS 應用程式或文件庫所需要的協力廠商工具和 SDK。 組態與設定既簡單又多為自動化。
 
-2.  **功能強大且熟悉的建置環境。** 使用 Visual Studio 範本輕鬆建立可共用的跨平台解決方案和專案。 使用通用介面管理所有專案的屬性。 使用 Visual Studio 編輯器編輯所有的程式碼，並利用內建的跨平台 IntelliSense 完成程式碼及醒目提示錯誤。
+2. **功能強大且熟悉的建置環境。** 使用 Visual Studio 範本輕鬆建立可共用的跨平台解決方案和專案。 使用通用介面管理所有專案的屬性。 使用 Visual Studio 編輯器編輯所有的程式碼，並利用內建的跨平台 IntelliSense 完成程式碼及醒目提示錯誤。
 
-3.  **一致的偵錯體驗。** 使用 Visual Studio 中的世界級偵錯工具在所有平台上監看和逐步執行 C++ 程式碼，包括 Android 裝置和模擬器、iOS 模擬器和裝置，以及 Windows 或 Windows Phone 裝置和模擬器。
+3. **一致的偵錯體驗。** 使用 Visual Studio 中的世界級偵錯工具在所有平台上監看和逐步執行 C++ 程式碼，包括 Android 裝置和模擬器、iOS 模擬器和裝置，以及 Windows 或 Windows Phone 裝置和模擬器。
 
 ## <a name="get-the-tools"></a>取得工具
  適用於跨平台行動裝置開發的 Visual C++ 是隨附於 Visual Studio 2015 的可安裝選項。 如需必要條件和安裝指示，請參閱[安裝適用於跨平台行動裝置應用程式開發的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)。 若要建置 iOS 程式碼，您也需要 Mac 電腦和 Apple iOS 開發人員帳戶。 如需詳細資訊，請參閱[安裝和設定工具以使用 iOS 進行建置](../cross-platform/install-and-configure-tools-to-build-using-ios.md)。
@@ -40,55 +40,55 @@ ms.locfileid: "54936160"
 
  適用於跨平台行動裝置開發的 Visual C++ 包含數個範本，可幫助您開始建立應用程式：
 
--   OpenGLES 2 應用程式 (Android、iOS、Windows 通用)
+- OpenGLES 2 應用程式 (Android、iOS、Windows 通用)
 
      建立一個方案來包含一組用以建置 Android Native Activity 應用程式、iOS 應用程式和通用 Windows 應用程式的專案，以及共用的 C++ 程式碼程式庫。 這些應用程式使用以通用 C++ OpenGL ES 程式碼所建立的平台特定程式庫，在每個應用程式中繪製相同的旋轉立方體。 當您安裝 Visual Studio 來使用此範本時，您必須包含 [通用 Windows 應用程式開發工具] 選項。
 
--   Native-Activity 應用程式 (Android)
+- Native-Activity 應用程式 (Android)
 
      建立完整的 C++ OpenGL 應用程式做為 Android Native Activity 專案。
 
--   OpenGLES 應用程式 (Android、iOS)
+- OpenGLES 應用程式 (Android、iOS)
 
      建立具有一組專案的解決方案，以建置 Android Native Activity 應用程式和 iOS 應用程式。 這些應用程式使用以通用 C++ OpenGL ES 程式碼所建立的平台特定程式庫，在每個應用程式中繪製相同的旋轉立方體。
 
--   共用程式庫 (Android、iOS)
+- 共用程式庫 (Android、iOS)
 
      建立具有專案的解決方案，使用通用的 C++ 程式碼在共用的專案中建立 Android 動態程式庫 (.so) 檔案和 iOS 靜態程式庫 (.a) 檔案。
 
--   基本應用程式 (Android、Ant)
+- 基本應用程式 (Android、Ant)
 
      建立一個 Android "Hello, World" 應用程式專案，其中只使用 Java 原始碼和 Ant 組建系統。
 
--   基本應用程式 (Android、Gradle)
+- 基本應用程式 (Android、Gradle)
 
      建立一個 Android "Hello, World" 應用程式專案，其中只使用 Java 原始碼和 Gradle 組建系統。
 
--   基本程式庫 (Android、Ant)
+- 基本程式庫 (Android、Ant)
 
      建立一個 Android "Hello, World" 程式庫專案，其中只使用 Java 原始碼和 Ant 組建系統。
 
--   基本程式庫 (Android、Gradle)
+- 基本程式庫 (Android、Gradle)
 
      建立一個 Android "Hello, World" 程式庫專案，其中只使用 Java 原始碼和 Gradle 組建系統。
 
--   動態共用程式庫 (Android)
+- 動態共用程式庫 (Android)
 
      使用 C++ 程式碼建立 Android 動態程式庫 (.so) 檔案。
 
--   OpenGLES 2 應用程式 (iOS)
+- OpenGLES 2 應用程式 (iOS)
 
      建立一個方案，其中含有一組用以建置 OpenGL ES 2 iOS 應用程式的專案。 應用程式會使用 C++ OpenGL ES 程式碼的程式庫，來繪製 iOS 應用程式中的旋轉立方體。 若想了解如何將 C++ 程式庫匯入 iOS 應用程式，這個應用程式是一個最佳起點。
 
--   靜態程式庫 (Android)
+- 靜態程式庫 (Android)
 
      建立專案以建置 Android 靜態程式庫。 您只能連結 Android 應用程式的一個動態程式庫，但可以連結任何數目的靜態程式庫。
 
--   靜態程式庫 (iOS)
+- 靜態程式庫 (iOS)
 
      建立專案以建置 iOS 靜態程式庫。
 
--   Makefile 專案 (Android)
+- Makefile 專案 (Android)
 
      為自己的 Android Makefile 專案建立專案包裝函式。
 
@@ -97,12 +97,12 @@ ms.locfileid: "54936160"
 
 ## <a name="in-this-section"></a>本節內容
 
-1.  [安裝適用於跨平台行動裝置應用程式開發的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+1. [安裝適用於跨平台行動裝置應用程式開發的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
 
-2.  [安裝和設定工具以使用 iOS 進行建置](../cross-platform/install-and-configure-tools-to-build-using-ios.md)
+2. [安裝和設定工具以使用 iOS 進行建置](../cross-platform/install-and-configure-tools-to-build-using-ios.md)
 
-3.  [建立 Android Native Activity 應用程式](../cross-platform/create-an-android-native-activity-app.md)
+3. [建立 Android Native Activity 應用程式](../cross-platform/create-an-android-native-activity-app.md)
 
-4.  [在 Android 和 iOS 上建置 OpenGL ES 應用程式](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)
+4. [在 Android 和 iOS 上建置 OpenGL ES 應用程式](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)
 
-5.  [跨平台行動裝置應用程式開發範例](../cross-platform/cross-platform-mobile-development-examples.md)
+5. [跨平台行動裝置應用程式開發範例](../cross-platform/cross-platform-mobile-development-examples.md)

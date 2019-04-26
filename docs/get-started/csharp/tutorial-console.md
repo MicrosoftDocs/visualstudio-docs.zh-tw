@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e35e3815ebb0fb4c8ed4aca376f519d9720a01b7
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 80b5021af7047725f4b8cb31f55bcbfea800cf93
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971679"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立簡單的 C# 主控台應用程式
 
@@ -28,7 +28,7 @@ ms.locfileid: "58856777"
 
 ::: moniker range="vs-2017"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
 
 ::: moniker-end
 
@@ -597,9 +597,9 @@ namespace Calculator
 恭喜您完成此教學課程！ 若要更深入了解，請繼續下列教學課程。
 
 > [!div class="nextstepaction"]
-> [繼續更多 C# 教學課程](/dotnet/csharp/tutorials/)
+> [繼續進行其他 C# 教學課程](/dotnet/csharp/tutorials/)
 
 ## <a name="see-also"></a>另請參閱
 
 * [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
-* [了解如何在 Visual Studio 中偵錯 C# 程式碼](tutorial-debugger.md)
+* [了解如何在 Visual Studio 中對 C# 程式碼進行偵錯](tutorial-debugger.md)

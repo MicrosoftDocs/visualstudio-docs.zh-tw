@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b23a676e4028e8f06f26ccc985ca22b85f56ac95
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d1a15765bff6d391afc7395be03172bf5d5fc32
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975095"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>HOW TO：在 [類別設計工具] 中檢視類型之間的繼承
 
@@ -27,9 +27,9 @@ ms.locfileid: "55907829"
 
 ## <a name="to-find-the-base-type"></a>尋找基底類型
 
-1.  在類別圖上，按一下要查看基底類別或介面的類型。
+1. 在類別圖上，按一下要查看基底類別或介面的類型。
 
-2.  在 [類別圖] 功能表上，選擇 [顯示基底類別] 或 [顯示基底介面]。
+2. 在 [類別圖] 功能表上，選擇 [顯示基底類別] 或 [顯示基底介面]。
 
      隨即會在圖表上將該類型的基底類別或介面顯示為選取項目。 兩個圖案之間現在會顯示所有隱藏的繼承線。
 
@@ -37,9 +37,9 @@ ms.locfileid: "55907829"
 
 ## <a name="to-find-the-derived-types"></a>尋找衍生類型
 
-1.  在類別圖上，按一下要查看衍生類別或介面的類型。
+1. 在類別圖上，按一下要查看衍生類別或介面的類型。
 
-2.  在 [類別圖] 功能表上，選擇 [顯示衍生類別] 或 [顯示衍生介面]。
+2. 在 [類別圖] 功能表上，選擇 [顯示衍生類別] 或 [顯示衍生介面]。
 
      隨即會在圖表上顯示該類型的衍生類別或介面。 各個圖案之間現在會顯示所有隱藏的繼承線。
 

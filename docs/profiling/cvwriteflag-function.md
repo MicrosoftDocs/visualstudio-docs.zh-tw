@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3a5a388c8f838f182d2f1f3d3f56f84b8fbf10e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936676"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag 函式
 將旗標寫入並行視覺化檢視追蹤檔。

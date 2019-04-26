@@ -10,12 +10,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f1172cff8abc53867f4a13cacdf16fe2d1f065e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950133"
 ---
 # <a name="how-to-create-a-web-service-test"></a>HOW TO：建立 Web 服務測試
 
@@ -31,21 +31,21 @@ Visual Studio 企業版
 
 ## <a name="to-test-a-web-service"></a>測試 Web 服務
 
-1.  建立新的 Web 效能測試。 在瀏覽器開啟後，選擇 [停止]。
+1. 建立新的 Web 效能測試。 在瀏覽器開啟後，選擇 [停止]。
 
-2.  在 [Web 效能測試編輯器] 中，以滑鼠右鍵按一下 Web 效能測試，然後選取 [新增 Web 服務要求]。
+2. 在 [Web 效能測試編輯器] 中，以滑鼠右鍵按一下 Web 效能測試，然後選取 [新增 Web 服務要求]。
 
-3.  在新要求的 [Url] 屬性中，鍵入 Web 服務的名稱，例如 **http://localhost/storecsvs/InstantOrder.asmx**。
+3. 在新要求的 [Url] 屬性中，鍵入 Web 服務的名稱，例如 **http://localhost/storecsvs/InstantOrder.asmx**。
 
-4.  開啟瀏覽器的不同工作階段，並在 [位址] 工具列中鍵入 *.asmx* 頁面的 URL。 請選取要測試的方法，並檢查 SOAP 訊息， 它包含 `SOAPAction`。
+4. 開啟瀏覽器的不同工作階段，並在 [位址] 工具列中鍵入 *.asmx* 頁面的 URL。 請選取要測試的方法，並檢查 SOAP 訊息， 它包含 `SOAPAction`。
 
-5.  在 [Web 效能測試編輯器] 中，以滑鼠右鍵按一下要求，然後選取 [新增標頭] 新增新的標頭。 在 [名稱] 屬性中，鍵入 `SOAPAction`。 在 [值] 屬性中，鍵入您在 `SOAPAction` 中所看到的值，例如 `"http://tempuri.org/CheckStatus"`。
+5. 在 [Web 效能測試編輯器] 中，以滑鼠右鍵按一下要求，然後選取 [新增標頭] 新增新的標頭。 在 [名稱] 屬性中，鍵入 `SOAPAction`。 在 [值] 屬性中，鍵入您在 `SOAPAction` 中所看到的值，例如 `"http://tempuri.org/CheckStatus"`。
 
-6.  在編輯器中展開 URL 節點，選擇 [字串內容] 節點，然後在 [內容類型] 屬性中輸入值 `text/xml`。
+6. 在編輯器中展開 URL 節點，選擇 [字串內容] 節點，然後在 [內容類型] 屬性中輸入值 `text/xml`。
 
-7.  返回步驟 4 中的瀏覽器，從 Web 服務描述頁面選取 SOAP 要求的 XML 部分，並將它複製到剪貼簿。
+7. 返回步驟 4 中的瀏覽器，從 Web 服務描述頁面選取 SOAP 要求的 XML 部分，並將它複製到剪貼簿。
 
-8.  XML 內容類似於下列範例：
+8. XML 內容類似於下列範例：
 
      ```xml
      <?xml version="1.0" encoding="utf-8"?>

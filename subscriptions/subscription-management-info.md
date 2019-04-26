@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: 尋找訂用帳戶管理的相關詳細資訊
 searchscope: VS Subscription
 ms.openlocfilehash: 8b5c0840c8ef3576b070e190302c111d84440f4f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427490"
 ---
 # <a name="learn-about-subscription-management"></a>了解訂用帳戶管理
 

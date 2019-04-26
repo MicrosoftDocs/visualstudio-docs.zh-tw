@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e531c0a4b2f5eca69675c7347fc275697eba7e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e0d4cdfd393961566a0aef0c649e6ff788fdc8ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403627"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` 函式會將字串指派給指定的處理序或執行緒。
@@ -81,7 +81,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  如果您指定目前處理序或執行緒以外的處理序或執行緒，則必須確定它已先初始化並開始執行，再將它命名。 否則，NameProfile 方法會失敗。
 
 > [!IMPORTANT]
->  可以先傳回 CreateProcess() 和 CreateThread() API 函式，再初始化執行緒或處理序。
+> 可以先傳回 CreateProcess() 和 CreateThread() API 函式，再初始化執行緒或處理序。
 
 ## <a name="net-framework-equivalent"></a>.NET Framework 同等
  *Microsoft.VisualStudio.Profiler.dll*

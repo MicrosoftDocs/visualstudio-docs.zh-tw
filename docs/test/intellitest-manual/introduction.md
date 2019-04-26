@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999769"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 的概觀
 

@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d3ef8ecfefd1d614570b4d73808d3e5736d77230
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979335"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>HOW TO：將分佈套用到步調延遲以進行使用者步調測試混合模型
 
@@ -40,7 +40,7 @@ ms.locfileid: "55932556"
 
 1. 開啟負載測試。
 
-   [負載測試編輯器] 隨即出現。 負載測試樹狀隨即顯示。
+   [負載測試編輯器] 隨即出現。 負載測試樹狀結構隨即顯示。
 
 2. 在負載測試樹狀目錄的 [情節] 資料夾中，選取您要為其套用步調分佈的情節節點。
 

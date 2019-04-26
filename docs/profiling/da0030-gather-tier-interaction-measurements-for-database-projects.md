@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 12a554eae05d02dda57fe29b2c627f261ba10b89
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936010"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：資料庫專案的收集階層互動度量
 

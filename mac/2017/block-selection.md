@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 11/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
 ms.openlocfilehash: 18f0faecc6f18c4915f0c44a838dfae80a1be3fa
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933100"
 ---
 # <a name="block-selection"></a>區塊選取
 
