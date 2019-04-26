@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: e718a5610d9539e3e2a89af0a9de502ebfd168a7
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962517"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>對 Linux 上的 Python 程式碼進行遠端偵錯
 

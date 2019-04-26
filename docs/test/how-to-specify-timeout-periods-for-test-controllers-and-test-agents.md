@@ -11,14 +11,14 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0e71e499eb1920dd59ee47533855cf9f86cbbd0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 5e703ca3e1770d92a2dc01402acaaba0b4988e92
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970626"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>作法：指定測試控制器和測試代理程式的逾時期間
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>HOW TO：指定測試控制器和測試代理程式的逾時期間
 
 測試控制器和測試代理程式都有數個逾時設定，指定發生錯誤而失敗之前應該等候彼此回應或資料來源回應的時間。 在某些情況下，可能需要編輯逾時值，以符合您的拓撲需求或解決其他環境問題。 若要編輯逾時值，請編輯與測試控制器或測試代理程式相關聯的 XML 組態檔，如下列程序所示。
 
@@ -26,7 +26,7 @@ ms.locfileid: "58416093"
 
 若要編輯測試控制器或測試代理程式的各種逾時設定，請使用下表中的機碼名稱和值修改下列組態檔：
 
--   測試控制器：*QTController.exe.config*
+- 測試控制器：*QTController.exe.config*
 
     |機碼名稱|說明|值|
     |-|-----------------|-|
@@ -35,7 +35,7 @@ ms.locfileid: "58416093"
     |AgentInitializeTimeout|在中止測試回合之前，等候所有代理程式及其資料收集器於測試回合開始時初始化的秒數。 如果使用資料收集器，這個值應該適度大。|"n" 秒。 預設："120" (兩分鐘)。|
     |AgentCleanupTimeout|在完成測試回合之前等候所有代理程式及其資料收集器清除的秒數。 如果使用資料收集器，這個值應該適度大。|"n" 秒。 預設："120" (2 分鐘)。|
 
--   測試代理程式：*QTAgentService.exe.config*
+- 測試代理程式：*QTAgentService.exe.config*
 
     |機碼名稱|說明|值|
     |-|-----------------|-|

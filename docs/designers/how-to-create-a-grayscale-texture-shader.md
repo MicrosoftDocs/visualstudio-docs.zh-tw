@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33bb4ce8f7ed55b87ee602cb0384afdf6745a649
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 82e72152fbbd879dc6a1388318b0fc5523f1a918
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897627"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>HOW TO：建立灰階紋理著色器
 
@@ -25,18 +25,18 @@ ms.locfileid: "55919179"
 
 開始之前，請確定已顯示 [屬性] 視窗和 [工具箱]。
 
-1.  建立基本紋理著色器，如[如何：建立基本紋理著色器](../designers/how-to-create-a-basic-texture-shader.md)中所述。
+1. 建立基本紋理著色器，如[如何：建立基本紋理著色器](../designers/how-to-create-a-basic-texture-shader.md)中所述。
 
-2.  將 [材質範例] 節點的 [RGB] 端點和 [完稿色彩] 節點的 [RGB] 端點中斷連接。 在 [選取] 模式中，選擇 [材質範例] 節點的 [RGB] 端點，然後選擇 [中斷連結]。 這樣會替下一個步驟加入的節點留出空間。
+2. 將 [材質範例] 節點的 [RGB] 端點和 [完稿色彩] 節點的 [RGB] 端點中斷連接。 在 [選取] 模式中，選擇 [材質範例] 節點的 [RGB] 端點，然後選擇 [中斷連結]。 這樣會替下一個步驟加入的節點留出空間。
 
-3.  將 [反滲透] 節點加入圖形。 在 [工具箱] 的 [篩選] 下，選取 [反滲透]，並將其移至設計介面。
+3. 將 [反滲透] 節點加入圖形。 在 [工具箱] 的 [篩選] 下，選取 [反滲透]，並將其移至設計介面。
 
-4.  使用 [反滲透] 節點來計算灰階值。 在 [選取] 模式中，將 [材質範例] 節點的 [RGB] 端點移至 [反滲透] 節點的 [RGB] 端點。
+4. 使用 [反滲透] 節點來計算灰階值。 在 [選取] 模式中，將 [材質範例] 節點的 [RGB] 端點移至 [反滲透] 節點的 [RGB] 端點。
 
     > [!NOTE]
     > 根據預設，[反滲透] 節點可將輸入色彩完全去色，並使用標準的明亮度加權進行灰階轉換。 您可以變更 [明亮度] 屬性的值或只將輸入色彩部分去色，來變更 [反滲透] 節點的行為。 若要將輸入色彩部份去色，請對 [反滲透] 節點的 [百分比] 端點提供 [0, 1] 範圍內的純量值。
 
-5.  將灰階色彩值連接到完稿色彩。 將 [反滲透] 節點的 [輸出] 端點移至 [完稿色彩] 節點的 [RGB] 端點。
+5. 將灰階色彩值連接到完稿色彩。 將 [反滲透] 節點的 [輸出] 端點移至 [完稿色彩] 節點的 [RGB] 端點。
 
 下圖顯示完成的著色器圖形和套用至立方體的著色器預覽。
 

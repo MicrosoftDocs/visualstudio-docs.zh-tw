@@ -2,7 +2,7 @@
 title: 安裝 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步安裝 Visual Studio。
-ms.date: 03/30/2019
+ms.date: 04/16/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b45778cfbf34a6703de365bcf2a85be994a05173
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974859"
 ---
 # <a name="install-visual-studio"></a>安裝 Visual Studio
 
@@ -105,7 +105,7 @@ ms.locfileid: "58857537"
 ::: moniker range="vs-2017"
 
  > [!div class="button"]
- > [下載 Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+ > [下載 Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 ::: moniker-end
 
@@ -183,7 +183,6 @@ ms.locfileid: "58857537"
 
 ::: moniker-end
 
-
 ## <a name="step-6---install-language-packs-optional"></a>步驟 6：安裝語言套件 (選擇性)
 
 根據預設，安裝程式會在第一次執行時，嘗試比對作業系統的語言。 若要以您選擇的語言安裝 Visual Studio，請選擇 Visual Studio 安裝程式的 [語言套件] 索引標籤，然後遵循提示作業。
@@ -208,7 +207,7 @@ ms.locfileid: "58857537"
 
 ::: moniker range="vs-2017"
 
-**15.7 中的新功能**：現在您可以減少 Visual Studio 在系統磁碟機上的安裝磁碟使用量。 您可以選擇將快取、共用元件、SDK 和工具下載至不同的磁碟機，並將 Visual Studio 保留在以最快速度執行它的磁碟機上。
+**15.7 版中的新功能**：現在您可以減少 Visual Studio 在系統磁碟機上的安裝磁碟使用量。 您可以選擇將快取、共用元件、SDK 和工具下載至不同的磁碟機，並將 Visual Studio 保留在以最快速度執行它的磁碟機上。
 
   ![Visual Studio 2017 - 變更安裝位置](media/installation-options-by-location.png "變更安裝位置")
 
@@ -261,9 +260,9 @@ ms.locfileid: "58857537"
 
 ## <a name="see-also"></a>另請參閱
 
-* [更新 Visual Studio 2017](update-visual-studio.md)
-* [修改 Visual Studio 2017](modify-visual-studio.md)
+* [更新 Visual Studio](update-visual-studio.md)
+* [修改 Visual Studio](modify-visual-studio.md)
 * [解除安裝 Visual Studio](uninstall-visual-studio.md)
 * [建立 Visual Studio 的離線安裝](create-an-offline-installation-of-visual-studio.md)
-* [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [安裝 Visual Studio for Mac](/visualstudio/mac/installation)

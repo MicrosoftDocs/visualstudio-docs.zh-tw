@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0033bcb21922d6f7e0204b1555fa2c46f8d91d50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977561"
 ---
 # <a name="findappconfigfile-task"></a>FindAppConfigFile 工作
 在提供的清單中尋找 *app.config* 檔案 (若有的話)。

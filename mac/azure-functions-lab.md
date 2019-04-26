@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62986138"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教學課程：開始使用 Azure Functions
 
@@ -104,6 +104,7 @@ ms.locfileid: "51296433"
     using System.Web;
     using Microsoft.WindowsAzure.Storage.Table;
     ```
+
 1. 移除現有的 `Run` 方法，然後將下列方法新增至類別作為您的 Azure 函式：
 
     ```csharp
@@ -119,6 +120,7 @@ ms.locfileid: "51296433"
         return x + y;
     }
     ```
+
 1. 讓我們逐步解說此方法定義。
 
     您首先會看到 **FunctionName** 屬性將此方法標示為 Azure 函式。 該屬性會指定函式的公用名稱。 屬性名稱不一定要與實際方法名稱相符。
@@ -180,6 +182,7 @@ ms.locfileid: "51296433"
 
     return x + y;
     ```
+
 1. 執行應用程式。
 
 1. 返回瀏覽器視窗，然後將字串 `/?x=2&y=3` 附加至 URL。 整個 URL 現在應該是 `http://localhost:7071/api/Add?x=2&y=3`。 巡覽至新的 URL。
@@ -188,10 +191,9 @@ ms.locfileid: "51296433"
 
 1. 停止偵錯工作階段。
 
-
 ## <a name="exercise-4-working-with-functionjson"></a>練習 4：使用 function.json
 
-1.  在先前的練習中提到，Visual Studio for Mac 已為程式庫中定義的 Azure 函式「產生」作業函式。 這是因為 Azure Functions 不會真的在執行階段使用方法屬性，而是使用編譯時間檔案系統慣例來設定 Azure Functions 可供使用的位置及方式。 從 **Solution Pad**，以滑鼠右鍵按一下您的專案節點，然後選取 [在尋找工具中顯示]。
+1. 在先前的練習中提到，Visual Studio for Mac 已為程式庫中定義的 Azure 函式「產生」作業函式。 這是因為 Azure Functions 不會真的在執行階段使用方法屬性，而是使用編譯時間檔案系統慣例來設定 Azure Functions 可供使用的位置及方式。 從 **Solution Pad**，以滑鼠右鍵按一下您的專案節點，然後選取 [在尋找工具中顯示]。
 
      ![[在尋找工具中顯示] 功能表選項](media/azure-functions-lab-image23.png)
 
@@ -290,6 +292,7 @@ ms.locfileid: "51296433"
         return x + y;
     }
     ```
+
 1. 按 **F5** 鍵建置並執行專案。
 
 1. 當建置完成並啟動平台時，現在會指出要求有第二個可用的路由對應至最近新增的方法：
@@ -316,6 +319,7 @@ ms.locfileid: "51296433"
         public int Sum { get; set; }
     }
     ```
+
 1. 在 **Add** 類別內，新增下列程式碼以引進另一個函式。 請注意，此作業是獨特的，到目前為止都未涉及 HTTP 回應。 最後一行會傳回新的 **TableRow**，並填入可讓您稍後輕鬆擷取的一些重要資訊 (**PartitionKey** 和 **RowKey**)，以及其參數與總和。 方法內的程式碼也會使用 **TraceWriter**，讓您更輕鬆地知道函式何時執行。
 
     ```csharp
@@ -341,6 +345,7 @@ ms.locfileid: "51296433"
         };
     }
     ```
+
 1. 按 **F5** 鍵建置並執行專案。
 
 1. 在瀏覽器索引標籤中，巡覽至 **http://localhost:7071/api/Process/4/6**。 這會將另一則訊息放入佇列，最後會導致將另一個資料列新增至資料表。
@@ -363,6 +368,7 @@ ms.locfileid: "51296433"
     [Table("Results", "sums", "{x}_{y}")]
     TableRow tableRow,
     ```
+
 1. 將下列程式碼新增至方法的開頭。 如果 **tableRow** 不是 Null，則我們已有所要求之作業的結果，因此可以立即將它傳回。 否則，函式會如往常一般繼續執行。 雖然這可能不是傳回資料的最強固方式，但它指出您只要使用很少的程式碼，就可以在多個可擴充層之間協調非常複雜的作業。
 
     ```csharp
@@ -372,6 +378,7 @@ ms.locfileid: "51296433"
         return null;
     }
     ```
+
 1. 按 **F5** 鍵建置並執行專案。
 
 1. 在瀏覽器索引標籤中，重新整理 **http://localhost:7071/api/Process/4/6** 的 URL。 因為此記錄的資料表資料列存在，所以應該會立即傳回且不會發生錯誤。 由於沒有 HTTP 輸出，您可以在終端機中查看輸出。
@@ -409,4 +416,3 @@ ms.locfileid: "51296433"
 ## <a name="summary"></a>總結
 
 在此實驗室中，您已了解如何開始使用 Visual Studio for Mac 建置 Azure 函式。
-

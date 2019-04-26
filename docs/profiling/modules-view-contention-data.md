@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9d3cf030ca0e996365963e5dad419b19ff67596
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830059"
 ---
 # <a name="modules-view---contention-data"></a>模組檢視 - 爭用資料
 爭用資料的 [模組檢視] 會顯示根據分析資料中取樣的模組所分組的效能資料。 每個模組都是階層式樹狀結構的根。 爭用事件發生所在模組的函式會列在模組節點之下。

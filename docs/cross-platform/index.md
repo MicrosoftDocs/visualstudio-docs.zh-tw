@@ -10,11 +10,11 @@ ms.technology: vs-ide-mobile
 ms.workload:
 - apexprodleads
 ms.openlocfilehash: d9c50abb749829843c7794688b94bf84f5bc1fb3
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824915"
 ---
 # <a name="mobile-development-with-c-documentation"></a>使用 C++ 進行行動裝置開發文件
 

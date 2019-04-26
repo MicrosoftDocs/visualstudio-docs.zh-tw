@@ -18,11 +18,11 @@ ms.author: mblome
 ms.workload:
 - multiple
 ms.openlocfilehash: a16a61c06bf80bef3fbb78f155cd8b41905a8d72
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963906"
 ---
 # <a name="multitooltask-task"></a>MultiToolTask 工作
 

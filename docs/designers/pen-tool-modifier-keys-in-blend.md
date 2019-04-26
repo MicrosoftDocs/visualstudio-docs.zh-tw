@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b43aa4dcb754b2df67b58b09ab3a9920c552acdf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844806"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend 中的畫筆工具輔助按鍵
 下表列出當您使用 [畫筆] 工具 ![[畫筆] 工具](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png) 建立路徑時，可用於修改路徑的快速鍵。 您也可以使用 [畫筆] 工具，加入或移除現有路徑上的點，或結合兩個現有路徑。

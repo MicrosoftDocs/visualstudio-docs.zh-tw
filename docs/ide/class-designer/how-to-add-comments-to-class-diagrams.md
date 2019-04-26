@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b220ddc42857040a51b2308c6d4a83d931de09
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ad54dc716e02eabcc064d87213d01491f43eae82
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975522"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>HOW TO：將註解新增至類別圖表
 
@@ -31,9 +31,9 @@ ms.locfileid: "55970539"
 
 ## <a name="to-add-a-comment"></a>新增註解
 
-1.  將註解從 [類別設計工具工具箱] 拖曳到類別圖表上。
+1. 將註解從 [類別設計工具工具箱] 拖曳到類別圖表上。
 
-2.  在圖表上新的註解圖形中按一下，然後鍵入想要的文字。
+2. 在圖表上新的註解圖形中按一下，然後鍵入想要的文字。
 
 ## <a name="see-also"></a>另請參閱
 

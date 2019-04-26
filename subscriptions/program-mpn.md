@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 有關提供哪些訂用帳戶、套用哪些規則，以及 MPN 中提供多少訂用帳戶的詳細資料。
 searchscope: VS Subscription
-ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945397"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft 合作夥伴網路 (MPN) 中提供的 Visual Studio 訂用帳戶
 擁有專長認證或購買 MPN 行動套件的合作夥伴，有資格使用 Visual Studio 訂用帳戶。 這些訂用帳戶是依每位使用者授權，而且只有在指派給為合作夥伴工作的特定具名使用者時才有效。
@@ -43,7 +43,6 @@ ms.locfileid: "56843154"
 | 只有銀級專長認證之合作夥伴的最大權益                   | 擁有至少一項金級專長認證之合作夥伴的最大權益               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 每個國家/地區 25 個 Visual Studio Enterprise 訂用帳戶，全球 75 個          | 每個國家/地區 50 個 Visual Studio Enterprise 訂用帳戶，全球 150 個         |
-
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>購買行動套件的合作夥伴訂用帳戶
 擁有一項專長認證的合作夥伴不符合購買行動套件的資格。 每位合作夥伴只能購買一組行動套件。

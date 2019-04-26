@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a0699d74f67b3e43b65ab79d29acd4fb4e953666
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969721"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>函式檢視 - .NET 記憶體檢測資料
 使用檢測方法所收集之 .NET 記憶體配置分析資料的 [函式] 檢視，會列出已在執行分析期間配置記憶體的函式。 函式資料列會報告配置的大小和數量，以及函式的計時資料。

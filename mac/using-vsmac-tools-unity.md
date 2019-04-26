@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 8d2cff0f2366a1f59dc70db7fd36415e853e1d2e
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 56050de063dcbc86bfa469ee9f466a8e87bba973
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965967"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>使用 Visual Studio for Mac Tools for Unity
 
@@ -102,7 +102,6 @@ Unity 專案可以使用 Visual Studio for Mac 進行偵錯。
    ![在 Unity 中按一下 [播放]](media/using-vsmac-tools-unity-image6.png)
 
 3. 如果遊戲在連線至 Visual Studio 時於 Unity 編輯器中執行，則遇到的任何中斷點都會暫停執行遊戲，並啟動遊戲在 Visual Studio for Mac 中叫用中斷點的一行程式碼。
-
 
 ### <a name="start-debugging-in-a-single-step"></a>在單一步驟中啟動偵錯
 

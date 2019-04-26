@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f106606ae00c8f22aa5948128afb8f7f27659a5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975600"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>使用程式碼片段的最佳做法
 

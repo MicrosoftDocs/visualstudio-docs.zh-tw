@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a867986f26037473f5a45341f8d454b560c586ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975056"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>類別圖表和類別細節視窗中的鍵盤和滑鼠快速鍵
 
@@ -28,7 +28,7 @@ ms.locfileid: "55951926"
 
 類別圖表中可支援下列滑鼠動作：
 
-|滑鼠組合|內容|描述|
+|滑鼠組合|內容|說明|
 | - |-------------|-----------------|
 |按兩下|圖案項目|開啟程式碼編輯器。|
 |按兩下|棒棒糖符號連接器|展開/摺疊棒棒糖符號。|
@@ -56,7 +56,7 @@ ms.locfileid: "55951926"
 
 類別圖表中可支援下列鍵盤動作：
 
-|Key|內容|描述|
+|Key|內容|說明|
 |---------|-------------|-----------------|
 |**方向鍵**|在類型圖形內|圖形內容的樹狀樣式瀏覽 (支援圖案循環)。 如果可展開目前的項目，則向左和向右鍵可展開/摺疊該項目；如果不可展開目前的項目，則向左和向右鍵會瀏覽至父系 (請參閱樹狀檢視瀏覽，以了解詳細的行為)。|
 |**方向鍵**|最上層的圖形|移動圖表上的圖形。|

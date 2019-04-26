@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970219"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令列參數
 

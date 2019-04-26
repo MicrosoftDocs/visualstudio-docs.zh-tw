@@ -18,11 +18,11 @@ ms.author: mblome
 ms.workload:
 - multiple
 ms.openlocfilehash: c6298a512a1848622bf854d6d9ee9084309a0b4f
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977108"
 ---
 # <a name="getoutputfilename-task"></a>GetOutputFileName 工作
 

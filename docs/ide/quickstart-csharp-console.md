@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a90324d1d9321be3f3105d5830e0c08927c4f535
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 34e943984755ff1f36f8a28134e1e2abde4312d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954034"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>快速入門：使用 Visual Studio 建立您的第一個 C# 主控台應用程式
 
@@ -28,7 +28,7 @@ ms.locfileid: "58856576"
 
 ::: moniker range="vs-2017"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
 
 ::: moniker-end
 
@@ -156,4 +156,4 @@ Visual Studio 在您的專案中包含預設 "Hello World" 程式碼。
 恭喜您完成此快速入門！ 希望您已經更了解 C# 和 Visual Studio IDE。 若要深入了解，請繼續進行下列教學課程。
 
 > [!div class="nextstepaction"]
-> [Visual Studio 中的 C# 主控台應用程式入門](../get-started/csharp/tutorial-console.md)
+> [開始在 Visual Studio 中使用 C# 主控台應用程式](../get-started/csharp/tutorial-console.md)
