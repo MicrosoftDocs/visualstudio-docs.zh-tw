@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fa2aa4b3055ff49f59da329ea828e0dbcfc8ec05
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62419932"
 ---
 # <a name="code-analysis-project-designer"></a>專案設計工具、程式碼分析
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

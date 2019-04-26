@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
 ms.openlocfilehash: 3caef73ba46afd8eaf90826540248cb2d5c4efef
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999751"
 ---
 # <a name="task-comments"></a>工作註解
 
@@ -18,7 +18,7 @@ ms.locfileid: "51294275"
 
 ![工作清單喜好設定](media/source-editor-image10.png)
 
-若要新增工作註解，請新增包含工作關鍵字的註解。 例如: 
+若要新增工作註解，請新增包含工作關鍵字的註解。 例如：
 
 ```csharp
 //TODO: Finish this for all properties.

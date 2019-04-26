@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.openlocfilehash: f90f5fca9d68ed00162fd746ddf291343c8d51f7
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62988368"
 ---
 # <a name="accessibility"></a>協助工具選項
 
@@ -44,7 +44,7 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 開啟協助工具功能之後，需要重新啟動 Visual Studio。
 
-## <a name="how-to-use-keyboard-navigation"></a>作法：使用鍵盤瀏覽
+## <a name="how-to-use-keyboard-navigation"></a>HOW TO：使用鍵盤瀏覽
 
 若要啟用鍵盤巡覽，請將 [系統偏好設定] > [鍵盤] > [快速鍵] 中的 [完整鍵盤存取] 選項設定為 [所有控制項]：
 
@@ -58,7 +58,7 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 按空格鍵可啟動焦點所在的控制項。
 
-## <a name="how-to-enable-and-use-voice-over"></a>作法：啟用及使用 VoiceOver
+## <a name="how-to-enable-and-use-voice-over"></a>HOW TO：啟用及使用 VoiceOver
 
 按 **Cmd + F5** 可開啟或關閉 VoiceOver
 

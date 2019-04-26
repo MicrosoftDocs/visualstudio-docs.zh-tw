@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: 了解系統管理員如何編輯訂用帳戶指派。
 searchscope: VS Subscription
 ms.openlocfilehash: d3dbc2e05d85ed8277d7a7c0f530dfa92da7dba6
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946230"
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>編輯 Visual Studio 訂用帳戶指派
 

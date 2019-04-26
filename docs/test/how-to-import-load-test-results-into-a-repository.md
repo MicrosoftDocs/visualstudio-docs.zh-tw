@@ -11,12 +11,12 @@ ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: efbd13bf7ada237dc21bc5b2b6a186b13a52fd06
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 16f6558373c111dbaf933184cf5ae23d00962b7a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949960"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>HOW TO：將負載測試結果匯入存放庫
 
@@ -28,21 +28,21 @@ ms.locfileid: "55932407"
 
 ## <a name="to-import-results-into-a-repository"></a>若要將結果匯入至儲存機制
 
-1.  從 Web 效能和負載測試專案中，開啟負載測試。
+1. 從 Web 效能和負載測試專案中，開啟負載測試。
 
-2.  在內嵌工具列上，選擇 [開啟和管理結果]。
+2. 在內嵌工具列上，選擇 [開啟和管理結果]。
 
      [開啟和管理負載測試結果] 對話方塊隨即出現。
 
-3.  在 [輸入控制器名稱以尋找負載測試結果] 中，選取控制器。 選取 [\<本機>]，即可存取儲存在本機的結果。
+3. 在 [輸入控制器名稱以尋找負載測試結果] 中，選取控制器。 選取 [\<本機>]，即可存取儲存在本機的結果。
 
      如果有可用的負載測試結果，它們會出現在 [負載測試結果] 清單中。 資料行包括 [時間]、[持續期間]、[使用者]、[結果]、[測試] 和 [描述]。 [測試] 包含測試的名稱，而 [描述] 則包含執行測試之前所新增的選擇性描述。
 
-4.  選擇 [匯入]。
+4. 選擇 [匯入]。
 
      [匯入負載測試結果] 對話方塊隨即出現。
 
-5.  在 [檔名] 方塊中輸入封存測試結果檔案的名稱，然後選擇 [開啟]。
+5. 在 [檔名] 方塊中輸入封存測試結果檔案的名稱，然後選擇 [開啟]。
 
      \-或-
 

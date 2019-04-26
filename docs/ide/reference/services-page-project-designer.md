@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c439a981573934215ecad8796e7980a5f9c8c2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934928"
 ---
 # <a name="services-page-project-designer"></a>專案設計工具、服務頁
 
@@ -51,7 +51,7 @@ ms.locfileid: "55936456"
 
  **使用表單驗證**
 
- 指出驗證提供者將使用表單驗證。 這表示您的應用程式必須提供進行登入的使用者介面。 如需詳細資訊，請參閱[＜How to：使用用戶端應用程式服務實作使用者登入](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services)。
+ 指出驗證提供者將使用表單驗證。 這表示您的應用程式必須提供進行登入的使用者介面。 如需詳細資訊，請參閱[如何：使用用戶端應用程式服務實作使用者登入](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services)。
 
  **驗證服務位置**
 

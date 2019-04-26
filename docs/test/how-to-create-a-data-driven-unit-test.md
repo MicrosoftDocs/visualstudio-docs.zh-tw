@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc5c4b68b5713ba8831d840decea7f2ea25704f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979236"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>HOW TO：建立資料驅動的單元測試
 
@@ -27,27 +27,27 @@ ms.locfileid: "55931438"
 
 建立資料驅動型單元測試包含下列步驟︰
 
-1.  建立資料來源，其中包含您在測試方法中使用的值。 資料來源可以是已註冊在執行測試之電腦上的任何類型。
+1. 建立資料來源，其中包含您在測試方法中使用的值。 資料來源可以是已註冊在執行測試之電腦上的任何類型。
 
-2.  將私用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 欄位和公用 `TestContext` 屬性新增至測試類別。
+2. 將私用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 欄位和公用 `TestContext` 屬性新增至測試類別。
 
-3.  建立單元測試方法，並在其中新增 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 屬性。
+3. 建立單元測試方法，並在其中新增 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 屬性。
 
-4.  使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> 索引子屬性，以擷取您在測試中使用的值。
+4. 使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> 索引子屬性，以擷取您在測試中使用的值。
 
 ## <a name="the-method-under-test"></a>受測方法
 
 例如，假設我們具有：
 
-1.  名為 `MyBank` 的方案，可接受並處理不同帳戶類型的交易。
+1. 名為 `MyBank` 的方案，可接受並處理不同帳戶類型的交易。
 
-2.  在 `MyBank` 中名為 `BankDb` 的專案，負責管理帳戶的交易。
+2. 在 `MyBank` 中名為 `BankDb` 的專案，負責管理帳戶的交易。
 
-3.  `DbBank` 專案中名為 `Maths` 的類別，可執行數學函式以確保所有交易都是對銀行有利的。
+3. `DbBank` 專案中名為 `Maths` 的類別，可執行數學函式以確保所有交易都是對銀行有利的。
 
-4.  名為 `BankDbTests` 的單元測試專案，用來測試 `BankDb` 元件的行為。
+4. 名為 `BankDbTests` 的單元測試專案，用來測試 `BankDb` 元件的行為。
 
-5.  名為 `MathsTests` 的單元測試類別，用來驗證 `Maths` 類別的行為。
+5. 名為 `MathsTests` 的單元測試類別，用來驗證 `Maths` 類別的行為。
 
 我們要測試 `Maths` 中的一個方法，它會使用迴圈加入兩個整數：
 

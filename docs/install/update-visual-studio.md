@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a64256f44e9de5bbfd9e65dd6410b9911aaf5075
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997566"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>將 Visual Studio 更新至最新版本
 
@@ -264,5 +264,5 @@ Visual Studio 會通知您何時有 Visual Studio 本身或任何元件的更新
 
 * [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)
 * [更新 Visual Studio for Mac](/visualstudio/mac/update)
-* [修改 Visual Studio 2017](modify-visual-studio.md)
+* [修改 Visual Studio](modify-visual-studio.md)
 * [解除安裝 Visual Studio](uninstall-visual-studio.md)

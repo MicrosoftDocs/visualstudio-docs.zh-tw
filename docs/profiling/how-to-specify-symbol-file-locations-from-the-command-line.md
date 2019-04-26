@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8ceb1b6360fb45c3894823bbbf817057f16d99
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fa265a3b7ebde80f7398f0c5972d5265533890f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433463"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>作法：從命令列指定符號檔位置
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>HOW TO：從命令列指定符號檔位置
 若要顯示符號資訊 (例如函式名稱和行號)，VSPerfReport 命令列工具需要存取已進行程式碼剖析之元件的符號 (.*pdb*) 檔案和 Windows 系統檔。 符號檔是在元件編譯時建立。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。 VSPerfReport 會自動搜尋下列位置中是否有符號檔：
 
 - **/SymbolPath** 選項或 **_NT_SYMBOL_PATH** 環境變數中指定的路徑。
@@ -35,7 +35,7 @@ ms.locfileid: "56609927"
   您也可以同時使用這兩種方法。
 
 > [!NOTE]
->  如果 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 安裝在本機電腦上，則可能已指定 Windows 符號檔的位置。 如需詳細資訊，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。 您仍然必須遵循本主題稍後所述的方式來設定 VSPerfReport 使用位置和伺服器。
+> 如果 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 安裝在本機電腦上，則可能已指定 Windows 符號檔的位置。 如需詳細資訊，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。 您仍然必須遵循本主題稍後所述的方式來設定 VSPerfReport 使用位置和伺服器。
 
 ## <a name="specify-windows-symbol-files"></a>指定 Windows 符號檔案
 

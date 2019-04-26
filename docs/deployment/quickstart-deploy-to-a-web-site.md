@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41b8a6a7c075a72f010de1e3b57d5a47514498dd
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62930283"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>使用 Visual Studio 將 Web 應用程式發行至網站
 
@@ -57,4 +57,4 @@ ms.locfileid: "55571043"
 在本快速入門中，您已了解如何使用 Visual Studio 建立發行設定檔。 您也可以匯入發行設定來設定發行設定檔。
 
 > [!div class="nextstepaction"]
-> [匯入發行設定並部署至 IIS](tutorial-import-publish-settings-iis.md)
+> [匯入發佈設定並部署至 IIS](tutorial-import-publish-settings-iis.md)

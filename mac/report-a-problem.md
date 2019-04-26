@@ -7,11 +7,11 @@ ms.author: jomatthi
 ms.date: 11/16/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
 ms.openlocfilehash: 510bdac23b29289687441b8a82620a1cede7542b
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937236"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>如何在 Visual Studio for Mac 中回報問題
 

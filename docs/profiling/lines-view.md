@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 905979e0bc563e7525f1385a484e9b44b523a1f9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dbfb1780cfb8a64ebe20fc45f02992e60d7bb201
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000076"
 ---
 # <a name="lines-view"></a>程式行檢視
 [程式行] 檢視僅適用於使用取樣方法收集的分析工具資料。 此檢視不適用於使用檢測收集的資料。
@@ -30,17 +30,17 @@ ms.locfileid: "56613982"
 
  陳述式是由下列項目識別：
 
--   包含此函式陳述式的原始程式檔。
+- 包含此函式陳述式的原始程式檔。
 
--   包含此陳述式的函式。
+- 包含此陳述式的函式。
 
--   此陳述式在原始程式檔中開始的行位置。
+- 此陳述式在原始程式檔中開始的行位置。
 
--   此陳述式在原始程式檔中開始的字元。
+- 此陳述式在原始程式檔中開始的字元。
 
--   此陳述式在原始程式檔中結束的行位置。
+- 此陳述式在原始程式檔中結束的行位置。
 
--   此陳述式在原始程式檔中結束的字元。
+- 此陳述式在原始程式檔中結束的字元。
 
 ## <a name="see-also"></a>另請參閱
 - [程式行檢視](../profiling/lines-view-sampling-data.md)

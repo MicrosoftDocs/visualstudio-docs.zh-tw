@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc304a90f9d51611ad2455c130e589aa0204cdc5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5499ff9451d3068cdef0e32dee45a6f6c7f63c71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425482"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017：高比率的使用中記憶體分頁到磁碟
 
@@ -37,7 +37,7 @@ ms.locfileid: "56620482"
 ## <a name="rule-description"></a>規則描述
 
 > [!NOTE]
->  當使用中記憶體的分頁程度達到很高的量時，就會引發這個資訊性規則。 在發生極高的分頁程度時，就會引發警告規則 [DA0014：極高比率的使用中記憶體分頁到磁碟](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md)。
+> 當使用中記憶體的分頁程度達到很高的量時，就會引發這個資訊性規則。 在發生極高的分頁程度時，就會引發警告規則 [DA0014：極高比率的使用中記憶體分頁到磁碟](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md)。
 
  過度分頁至磁碟可能是因為實體記憶體不足。 如果分頁作業控制使用分頁檔案所在的實體磁碟，則可能降低相同磁碟上其他應用程式導向之磁碟作業的速度。
 

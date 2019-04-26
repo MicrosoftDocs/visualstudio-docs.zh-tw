@@ -9,12 +9,12 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d35552ad224b038886bcb9dd44177b80b1536ed
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0d66b7f15bd1fb988c82cea934973e15cb4c6fe2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970701"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>HOW TO：在負載測試回合設定中指定測試反覆項目的數目
 
@@ -29,19 +29,19 @@ ms.locfileid: "55954513"
 
 ## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>若要在回合設定中指定測試反覆項目的數目
 
-1.  開啟負載測試。
+1. 開啟負載測試。
 
      [負載測試編輯器] 隨即出現，並顯示負載測試樹狀目錄。
 
-2.  在負載測試樹狀目錄的 [回合設定] 資料夾中，選擇回合設定。
+2. 在負載測試樹狀目錄的 [回合設定] 資料夾中，選擇回合設定。
 
-3.  在 [檢視] 功能表上，選取 [屬性視窗] 以檢視負載回合設定的分類和屬性。
+3. 在 [檢視] 功能表上，選取 [屬性視窗] 以檢視負載回合設定的分類和屬性。
 
-4.  將 [使用測試反覆項目] 屬性設為 [True]。
+4. 將 [使用測試反覆項目] 屬性設為 [True]。
 
-5.  在 [測試反覆項目] 屬性中，輸入數字表示在負載測試期間要執行的測試反覆項目數。
+5. 在 [測試反覆項目] 屬性中，輸入數字表示在負載測試期間要執行的測試反覆項目數。
 
-6.  屬性變更完成之後，選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [測試反覆項目] 值來執行負載測試。
+6. 屬性變更完成之後，選擇 [檔案] 功能表上的 [儲存]。 然後，您就可以使用新的 [測試反覆項目] 值來執行負載測試。
 
 ## <a name="see-also"></a>另請參閱
 

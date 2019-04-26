@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: e476876234c31009d219af30fbe3c9d1e55f3d96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443601"
 ---
 # <a name="msbuild-properties"></a>MSBuild 屬性
 屬性是名稱/值組，可以用來設定組建。 屬性可用於將值傳遞給工作、評估條件，以及儲存將在整個專案檔中參考的值。
@@ -54,7 +54,7 @@ ms.locfileid: "58515203"
  若要從衍生的工具內取得環境變數的目前值，請使用[屬性函式](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable。 然而，一般慣用的方法是使用工作參數 <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>。 這個字串陣列中設定的環境屬性可以傳遞至繁衍的工具，而不會影響系統環境變數。
 
 > [!TIP]
->  並非所有環境變數都會在讀取後變成初始屬性。 會忽略任何未採用有效 MSBuild 屬性名稱 (例如 "386") 的環境變數。
+> 並非所有環境變數都會在讀取後變成初始屬性。 會忽略任何未採用有效 MSBuild 屬性名稱 (例如 "386") 的環境變數。
 
  如需詳細資訊，請參閱[如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)。
 
@@ -108,11 +108,11 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ## <a name="create-properties-during-execution"></a>在執行期間建立屬性
  位於 `Target` 項目以外的屬性值是在組建的評估階段所指派。 在後續的執行階段，可以使用下列方式來建立或修改屬性：
 
--   任何工作均可發出屬性。 若要發出屬性，[Task](../msbuild/task-element-msbuild.md) 項目必須含有具 `PropertyName` 屬性的子系 [Output](../msbuild/output-element-msbuild.md) 項目。
+- 任何工作均可發出屬性。 若要發出屬性，[Task](../msbuild/task-element-msbuild.md) 項目必須含有具 `PropertyName` 屬性的子系 [Output](../msbuild/output-element-msbuild.md) 項目。
 
--   透過 [CreateProperty](../msbuild/createproperty-task.md) 工作來發出屬性。 這種使用方式已過時。
+- 透過 [CreateProperty](../msbuild/createproperty-task.md) 工作來發出屬性。 這種使用方式已過時。
 
--   從 .NET Framework 3.5 開始，`Target` 項目可能會包含 `PropertyGroup` 項目，其中可能包含屬性宣告。
+- 從 .NET Framework 3.5 開始，`Target` 項目可能會包含 `PropertyGroup` 項目，其中可能包含屬性宣告。
 
 ## <a name="store-xml-in-properties"></a>將 XML 儲存於屬性中
  屬性可以包含任意的 XML，其有助於將值傳遞給工作，或是顯示記錄資訊。 下列範例示範 `ConfigTemplate` 屬性，其值會包含 XML 和其他屬性參考。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會藉由使用其各自的屬性值來取代屬性參考。 屬性值是以其出現的順序來指派。 因此，在此範例中，應該已經定義 `$(MySupportedVersion)`、`$(MyRequiredVersion)` 及 `$(MySafeMode)`。

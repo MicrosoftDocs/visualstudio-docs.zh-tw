@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b97999b7a6aa56dc9be17d853c306c71a5ff290
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411001"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 元素 (MSBuild)
 將 [Task](../msbuild/task-element-msbuild.md) 元素中參考的工作對應至包含工作實作的組件。
@@ -69,7 +69,7 @@ ms.locfileid: "56645741"
  您可以在專案檔所包含 (直接包含或透過匯入的專案檔來包含) 的 `UsingTask` 元素中，參考環境變數、命令列屬性、專案層級屬性及專案層級項目。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。
 
 > [!NOTE]
->  如果 `UsingTask` 元素來自已經向 MSBuild 引擎全域註冊的其中一個 *.tasks* 檔案，則專案層級屬性和項目沒有任何意義。 專案層級值對 MSBuild 而言不是全域的。
+> 如果 `UsingTask` 元素來自已經向 MSBuild 引擎全域註冊的其中一個 *.tasks* 檔案，則專案層級屬性和項目沒有任何意義。 專案層級值對 MSBuild 而言不是全域的。
 
  在 MSBuild 4.0 中，使用工作可以從 *.overridetask* 檔案載入。
 

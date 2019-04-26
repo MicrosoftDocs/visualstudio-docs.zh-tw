@@ -9,12 +9,12 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfd565deb8336346e127e084b720f391440dc6e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a82479fabda0cd64e977af01f87492563a02853f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950068"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>HOW TO：使用 Microsoft Word 手動建立負載測試效能報表
 
@@ -26,31 +26,31 @@ ms.locfileid: "55928799"
 > 您可以將資料表檢視中的純文字和詳細資料檢視中的螢幕擷取畫面複製到 Microsoft Word，但是這些項目不會套用 HTML 格式，而且需要進行其他格式設定和編輯。
 
 > [!TIP]
-> 您也可以自動產生組織化的 Microsoft Excel 報告。 如需詳細資訊，請參閱[＜How to：使用 Microsoft Excel 建立負載測試效能報表](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)。
+> 您也可以自動產生組織化的 Microsoft Excel 報告。 如需詳細資訊，請參閱[如何：使用 Microsoft Excel 建立負載測試效能報表](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)。
 
 ## <a name="copy-summary-view-data"></a>複製摘要檢視資料
 
-1.  在 [負載測試結果] 中，如果目前沒有顯示摘要檢視，請按一下工具列中的 [摘要]。
+1. 在 [負載測試結果] 中，如果目前沒有顯示摘要檢視，請按一下工具列中的 [摘要]。
 
-2.  在摘要檢視中，按一下滑鼠右鍵，然後選取 [全選]。
+2. 在摘要檢視中，按一下滑鼠右鍵，然後選取 [全選]。
 
-3.  在摘要檢視中，按一下滑鼠右鍵，然後選取 [複製]。 這樣就會將摘要檢視資料當做 HTML 格式呈現至 [剪貼簿]。
+3. 在摘要檢視中，按一下滑鼠右鍵，然後選取 [複製]。 這樣就會將摘要檢視資料當做 HTML 格式呈現至 [剪貼簿]。
 
-4.  在 Microsoft Word 中，將摘要檢視資料貼入所需的位置。
+4. 在 Microsoft Word 中，將摘要檢視資料貼入所需的位置。
 
-5.  您現在可以修改、格式化並刪除所複製內容的各個層面，以便符合您的報告需求。
+5. 您現在可以修改、格式化並刪除所複製內容的各個層面，以便符合您的報告需求。
 
 ## <a name="copy-graph-view-data"></a>複製圖表檢視資料
 
-1.  在 [負載測試結果] 中，如果目前沒有顯示圖表檢視，請選擇工具列中的 [圖表]。
+1. 在 [負載測試結果] 中，如果目前沒有顯示圖表檢視，請選擇工具列中的 [圖表]。
 
-2.  (選擇性) 放大您想要複製到 Microsoft Word 文件的特定圖表，如下圖所示。 如需詳細資訊，請參閱[＜How to：放大圖表中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
+2. (選擇性) 放大您想要複製到 Microsoft Word 文件的特定圖表，如下圖所示。 如需詳細資訊，請參閱[如何：放大圖表中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
      ![圖形檢視縮放控制](../test/media/ltest_zoomcontrol.png)
 
-3.  在您想要複製到 Microsoft Word 文件的圖表上，按一下滑鼠右鍵，然後選取 [複製]。
+3. 在您想要複製到 Microsoft Word 文件的圖表上，按一下滑鼠右鍵，然後選取 [複製]。
 
-4.  在 Microsoft Word 中，將圖表和相關聯的資料表資料貼入所需的位置。
+4. 在 Microsoft Word 中，將圖表和相關聯的資料表資料貼入所需的位置。
 
     > [!WARNING]
     > 您無法從遠端桌面複製圖形並將它貼入另一部電腦，因為系統只會複製與圖形相關聯的資料表資訊，而非圖形影像。 圖形影像會儲存在從中複製圖形之電腦的暫存目錄中，而且第二部電腦無法取值該目錄。

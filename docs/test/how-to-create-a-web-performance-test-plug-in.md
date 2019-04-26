@@ -12,13 +12,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c107e6dcba9be92b738bb4756806d584b9abdb50
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949977"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>作法：建立 Web 效能測試外掛程式
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>HOW TO：建立 Web 效能測試外掛程式
 
 Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式陳述式之外找出及重複使用程式碼。 自訂的 Web 效能測試外掛程式則能讓您在執行 Web 效能測試時呼叫某些程式碼。 在每個測試反覆項目中，Web 效能測試外掛程式都會執行一次。 此外，如果您覆寫測試外掛程式中的 PreRequest 或 PostRequest 方法，這些要求外掛程式將會分別在每項要求之前或之後執行。
 

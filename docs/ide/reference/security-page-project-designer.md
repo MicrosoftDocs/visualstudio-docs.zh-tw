@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71411ed03906e13ae666a12a67fbdb499d737b5f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fe78b2473fc58166edb124924673ff0c49ba92a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945488"
 ---
 # <a name="security-page-project-designer"></a>專案設計工具、安全性頁
 
@@ -34,7 +34,6 @@ ms.locfileid: "55936131"
 
 > [!NOTE]
 > 當您使用 [發行精靈] 發佈應用程式時，會自動啟用此選項。
-
 
  當選取此選項時，可以選擇從兩個選項按鈕中選取其中一個：[這是完全信任的應用程式] 或 [這是部分信任的應用程式]。
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: cb3117ff480e124aab6333eaed612c0438ed3911
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830042"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>模組檢視 - .NET 記憶體檢測資料
 使用檢測方法收集的 .NET 記憶體檢測資料 [模組] 檢視，會將記憶體和計時資料依據分析執行中所執行的模組來分類。 模組函式的分析資料會列在模組節點下。

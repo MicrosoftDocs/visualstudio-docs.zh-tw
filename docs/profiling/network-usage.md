@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d342a3746b081a47e68e781c2c18b7fbc4fe0b33
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2d0a806ef6e6c3fb20ce4d2697f3b4fe6ff6674e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403558"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP App 的網路使用量
 Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用程式開發介面](/uwp/api/windows.web.http)執行之網路作業的相關資料。 分析這份資料可協助您解決存取和驗證、不正確的快取使用，以及顯示和下載效能不佳等問題。
@@ -22,7 +22,7 @@ Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用�
  [網路] 工具僅支援 UWP 應用程式。 目前不支援其他平台。
 
 > [!NOTE]
->  如需更多完整的網路工具描述，請參閱[介紹 Visual Studio 的網路工具](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/)。
+> 如需更多完整的網路工具描述，請參閱[介紹 Visual Studio 的網路工具](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/)。
 
 ## <a name="collect-network-tool-data"></a>收集網路工具資料
  您應該針對 Visual Studio 電腦上開啟的 Visual Studio 專案執行 [網路] 工具。
@@ -65,11 +65,11 @@ Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用�
 ### <a name="analysis-tips"></a>分析秘訣
  此工具會反白顯示特定區域，有助您執行網路相關的分析：
 
-1.  完全來自快取的要求會在 [已接收] 資料行中顯示為 [(從快取)]。 這可協助判斷您是否有效率地使用快取來節省使用者頻寬，或您是否意外地快取回應且提供具過時資料的應用程式給使用者。
+1. 完全來自快取的要求會在 [已接收] 資料行中顯示為 [(從快取)]。 這可協助判斷您是否有效率地使用快取來節省使用者頻寬，或您是否意外地快取回應且提供具過時資料的應用程式給使用者。
 
-2.  錯誤回應 (4xx 或 5xx) 會顯示在 [結果] 資料行中，並具有紅色狀態程式碼，同時也會在摘要列中反白顯示。 這樣可以在應用程式上許多潛在的要求之間輕易發現錯誤。
+2. 錯誤回應 (4xx 或 5xx) 會顯示在 [結果] 資料行中，並具有紅色狀態程式碼，同時也會在摘要列中反白顯示。 這樣可以在應用程式上許多潛在的要求之間輕易發現錯誤。
 
-3.  回應美化顯示按鈕 (在主體索引標籤內) 可協助您藉由增加內容可讀性來剖析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 的回應承載。
+3. 回應美化顯示按鈕 (在主體索引標籤內) 可協助您藉由增加內容可讀性來剖析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 的回應承載。
 
 ## <a name="see-also"></a>另請參閱
 

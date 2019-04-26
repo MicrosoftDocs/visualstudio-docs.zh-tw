@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8060f17277a5e80a139ee8d6406fb40d0a84ec71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c1a4f8db08ec80714fe2cd74e4d1300d68a56e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975368"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>HOW TO：在類別設計工具中建立類型之間的繼承
 
@@ -26,21 +26,21 @@ ms.locfileid: "55915871"
 
 ## <a name="to-create-an-inheritance-between-types"></a>建立兩個類型之間的繼承
 
-1.  從 [方案總管] 的專案中開啟類別圖表 (.cd) 檔案。
+1. 從 [方案總管] 的專案中開啟類別圖表 (.cd) 檔案。
 
      如果您還沒有類別圖，請先建立類別圖。 請參閱[如何：將類別圖表新增至專案](how-to-add-class-diagrams-to-projects.md)。
 
-2.  在 [工具箱] 的 [類別設計工具] 下，按一下 [繼承]。
+2. 在 [工具箱] 的 [類別設計工具] 下，按一下 [繼承]。
 
-3.  在類別圖上，繪製所需類型之間的繼承線，從下列各項開始：
+3. 在類別圖上，繪製所需類型之間的繼承線，從下列各項開始：
 
-    -   衍生類別到基底類別
+    - 衍生類別到基底類別
 
-    -   實作中的類別到已實作的介面
+    - 實作中的類別到已實作的介面
 
-    -   擴充中的介面到已擴充的介面
+    - 擴充中的介面到已擴充的介面
 
-4.  (選擇性) 如果您有泛型類型的衍生類型，請按一下繼承線。 在 [屬性] 視窗中，將**型別引數**屬性設定為符合泛型型別所需的類型。
+4. (選擇性) 如果您有泛型類型的衍生類型，請按一下繼承線。 在 [屬性] 視窗中，將**型別引數**屬性設定為符合泛型型別所需的類型。
 
     > [!NOTE]
     > 如果父抽象類別至少包含一個抽象成員，則所有抽象成員都會實作為非抽象繼承類別。

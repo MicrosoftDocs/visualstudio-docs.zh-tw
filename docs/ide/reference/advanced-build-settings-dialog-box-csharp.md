@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a668e64f6b8a10cf22e08575ca9c2df385131666
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d42087b023718cd31528a2e5d60e2a43e34097c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792214"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>進階建置設定對話方塊 (C#)
 
@@ -55,7 +55,7 @@ ms.locfileid: "55930453"
 
 指定是否要將 mscorlib.dll 匯入您的程式，並定義整個 <xref:System> 命名空間。 如果您想要定義或建立自己的 <xref:System> 命名空間和物件，請核取此方塊。 如需詳細資訊，請參閱 [/nostdlib (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option)。
 
-## <a name="output"></a>輸出
+## <a name="output"></a>Output
 
 下列選項可讓您指定進階輸出選項。
 
@@ -75,7 +75,7 @@ ms.locfileid: "55930453"
 
    讓原始程式碼在偵錯工具中啟動程式時進行偵錯，但只有在將執行中的程式附加到偵錯工具時，才會顯示組譯工具。
 
--  **portable**
+- **portable**
 
    產生 .PDB 檔案，這是非平台特定可攜式符號檔，可將主要可執行檔中項目的資訊和其產生方式提供給其他工具 (特別是偵錯工具)。 如需詳細資訊，請參閱 [Portable PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) (可攜式 PDB)。
 

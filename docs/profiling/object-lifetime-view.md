@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b0819a4d9e1438b300daa68db4208bfe5908d800
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794345"
 ---
 # <a name="object-lifetime-view"></a>物件存留期檢視
 在 [效能工作階段] 屬性頁上核取 [同時收集 .NET 物件存留期的資料] 時，可以使用 [物件存留期] 檢視。

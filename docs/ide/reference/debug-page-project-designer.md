@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968175"
 ---
 # <a name="debug-page-project-designer"></a>專案設計工具、偵錯頁
 
@@ -33,11 +33,11 @@ ms.locfileid: "59504402"
 
 下列選項可讓您選取要顯示或修改的設定和平台。
 
-**Configuration**
+**組態**
 
 指定要顯示或修改的組態設定。 設定可以是 [偵錯] (預設)、[發行] 或 [所有設定]。
 
-**Platform**
+**平台**
 
 指定要顯示或修改的平台設定。 選項可以包括 [任何 CPU] (預設)、[x64]和 [x86]。
 
@@ -49,11 +49,11 @@ ms.locfileid: "59504402"
 
 選擇這個選項可指定在對應用程式進行偵錯時，應該要啟動可執行檔 (適用於 Windows 應用程式和主控台應用程式專案)。 預設會選取這個選項。
 
-**啟動外部程式**
+**起始外部程式**
 
 選擇這個選項可指定在對應用程式進行偵錯時，應該要啟動特定程式。
 
-**瀏覽器起始 URL**
+**以 URL 啟動瀏覽器**
 
 選擇這個選項可指定在對應用程式進行偵錯時，應該要存取特定 URL。
 
@@ -85,6 +85,6 @@ ms.locfileid: "59504402"
 
 - [偵錯工具簡介](../../debugger/debugger-feature-tour.md)
 - [C# 偵錯組態的專案設定](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Project Settings for a Visual Basic Debug Configuration](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [作法：以受限制的權限對 ClickOnce 應用程式進行偵錯](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
-- [作法：建立及編輯組態](../../ide/how-to-create-and-edit-configurations.md)
+- [Visual Basic 偵錯組態的專案設定](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [如何：以受限制的權限針對 ClickOnce 應用程式進行偵錯](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [如何：建立及編輯組態](../../ide/how-to-create-and-edit-configurations.md)

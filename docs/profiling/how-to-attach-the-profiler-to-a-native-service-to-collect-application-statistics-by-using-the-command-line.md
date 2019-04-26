@@ -8,20 +8,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f94e574f75ab266a18be3b487d49db59172b6e79
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4ef2e3c72aaecaf1a6dce1ea15e44efe3342cf56
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439581"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>作法：使用命令列將分析工具附加至原生服務以收集應用程式統計資料
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>HOW TO：使用命令列將分析工具附加至原生服務以收集應用程式統計資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至原生服務，並使用取樣方法收集效能統計資料。
 
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
+> Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
 >
->  若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
+> 若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
 
  程式碼剖析工具附加至服務時，您可以暫停和繼續收集資料。
 
@@ -47,7 +47,7 @@ ms.locfileid: "56618714"
      您可以使用下列任一選項搭配 **/start:sample** 選項。
 
    > [!NOTE]
-   >  **/User** 和 **/crosssession** 選項通常是服務的必要選項。
+   > **/User** 和 **/crosssession** 選項通常是服務的必要選項。
 
    | 選項 | 說明 |
    | - | - |
@@ -56,7 +56,6 @@ ms.locfileid: "56618714"
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
    | [/automark](../profiling/automark.md) **:** `Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。 |
-
 
 4. 將程式碼剖析工具附加至服務。 類型：
 
@@ -78,7 +77,7 @@ ms.locfileid: "56618714"
 
 #### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集
 
--   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
+- 下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
     |選項|說明|
     |------------|-----------------|
@@ -91,15 +90,15 @@ ms.locfileid: "56618714"
 
 #### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段
 
-1.  執行下列其中一項動作，以從目標應用程式中斷連結分析工具：
+1. 執行下列其中一項動作，以從目標應用程式中斷連結分析工具：
 
-    -   停止服務。
+    - 停止服務。
 
          -或-
 
-    -   輸入 **VSPerfCmd /detach**
+    - 輸入 **VSPerfCmd /detach**
 
-2.  關閉分析工具。 類型：
+2. 關閉分析工具。 類型：
 
      **VSPerfCmd /shutdown**
 

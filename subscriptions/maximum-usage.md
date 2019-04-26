@@ -7,12 +7,12 @@ ms.date: 03/24/2019
 ms.topic: conceptual
 description: 了解如何在管理入口網站中檢視已指派的訂用帳戶數目上限
 searchscope: VS Subscription
-ms.openlocfilehash: cdeddc7bbd62c88096e61753351f3609197d3c72
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: c263c610b140d3662cb17ba9f2c3d3f1a1907ab7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58572750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965393"
 ---
 # <a name="using-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>使用 [使用量上限] 功能來追蹤已指派的訂用帳戶數目
 
@@ -32,7 +32,7 @@ Visual Studio 訂用帳戶系統管理入口網站中新功能會協助您追蹤
     > [!div class="mx-imgBorder"]
     > ![[使用量上限] 摘要](_img/maximum-usage/maximum-usage-summary.png)
 
-4.  若要查看合約存留期間內已指派的訂用帳戶最大數目，請按一下 [Full-Term] \(全程執行期間\) 索引標籤。
+4. 若要查看合約存留期間內已指派的訂用帳戶最大數目，請按一下 [Full-Term] \(全程執行期間\) 索引標籤。
 
 ## <a name="viewing-assignment-history"></a>檢視指派記錄
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶中所含的 Azure 諮詢對談權益。
 searchscope: VS Subscription
-ms.openlocfilehash: e353878d7e911bb38dce80470e77a65f3be85c88
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 03e55b29cea867d438ef0536a2db7ee9c4f47e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809084"
 ---
 # <a name="azure-advisory-chat"></a>Azure 諮詢對談
 
@@ -49,14 +49,13 @@ ms.locfileid: "56841009"
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
 
-
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 ### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>問：Azure 諮詢對談與 Azure Advisor 之間的差異為何？
--  答：Azure 諮詢對談是即時對談服務，可解決有關 Azure 的問題。 [Azure Advisor](/azure/advisor/advisor-overview) 是個人化的雲端顧問，可協助您依照最佳做法最佳化您的 Azure 部署。 它會分析您的資源設定與使用情況遙測，然後建議可協助您改善 Azure 資源成本效益、效能、高可用性與安全性的解決方式。
+- 答：Azure 諮詢對談是即時對談服務，可解決有關 Azure 的問題。 [Azure Advisor](/azure/advisor/advisor-overview) 是個人化的雲端顧問，可協助您依照最佳做法最佳化您的 Azure 部署。 它會分析您的資源設定與使用情況遙測，然後建議可協助您改善 Azure 資源成本效益、效能、高可用性與安全性的解決方式。
 
 ## <a name="support-resources"></a>支援資源
--  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+- 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

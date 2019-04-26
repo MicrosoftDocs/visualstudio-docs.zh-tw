@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
 ms.openlocfilehash: ae69c71b3b70e950bc0b58b1c34335f3a52529df
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983648"
 ---
 # <a name="creating-new-projects-and-solutions"></a>建立新的專案和方案
 
@@ -40,4 +40,4 @@ Visual Studio 的開始視窗會顯示您最近使用過的專案清單：
 
 ## <a name="see-also"></a>另請參閱
 
-- [建立解決方案和專案 (Windows 上的 Visual Studio)](/visualstudio/ide/creating-solutions-and-projects)
+- [建立方案和專案 (Windows 上的 Visual Studio)](/visualstudio/ide/creating-solutions-and-projects)

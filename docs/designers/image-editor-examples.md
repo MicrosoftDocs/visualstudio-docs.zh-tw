@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9388744cd9ded83a82be96f4c3413ce88470168
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893230"
 ---
 # <a name="image-editor-examples"></a>影像編輯器範例
 
 文件中的本節包含影像編輯器使用方法的範例。
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[如何：建立基本紋理](../designers/how-to-create-a-basic-texture.md)|示範如何建立基本紋理。|
 |[如何：建立和修改 MIP 層級](../designers/how-to-create-and-modify-mip-levels.md)|示範如何從影像產生 MIP 層級。|

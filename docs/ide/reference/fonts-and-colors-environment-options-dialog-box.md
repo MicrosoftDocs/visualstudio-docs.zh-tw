@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790204"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>選項對話方塊、環境、字型和色彩
 
@@ -42,26 +42,26 @@ ms.locfileid: "58647462"
 
 列出您可以變更字型和色彩配置的所有使用者介面項目。 從這份清單中選取項目之後，您可以自訂 [顯示項目] 中所選取項目的色彩設定。
 
--   **文字編輯器**
+- **文字編輯器**
 
      對文字編輯器的字型樣式、大小和色彩顯示設定的變更會影響預設文字編輯器中的文字外觀。 在 IDE 之外的文字編輯器中開啟的文件不會受到這些設定影響。
 
--   **印表機**
+- **印表機**
 
      對印表機的字型樣式、大小和色彩顯示設定的變更會影響列印文件中的文字外觀。
 
     > [!NOTE]
     > 如有需要，您可以為列印文件選取不同的預設字型，而非使用文字編輯器中顯示的字型。 這項功能在列印同時包含單一位元組與雙位元組字元的程式碼時很有用。
 
--   **陳述式完成**
+- **陳述式完成**
 
      變更會出現在編輯器中陳述式完成快顯視窗的文字的字型樣式和大小。
 
--   **編輯器工具提示**
+- **編輯器工具提示**
 
      變更會出現在編輯器中顯示的工具提示文字的字型樣式和大小。
 
--   **環境字型**
+- **環境字型**
 
      變更 [顯示設定] 中還沒有個別選項之所有 IDE 使用者介面項目的字型樣式和大小。
 
@@ -71,7 +71,7 @@ ms.locfileid: "58647462"
 
      ::: moniker-end
 
--   **[所有文字工具視窗]**
+- **[所有文字工具視窗]**
 
      變更此項目的字型樣式、大小和色彩的顯示設定會影響在 IDE 具有輸出窗格的工具視窗中文字的外觀。 例如，[輸出] 視窗、[命令] 視窗、[即時運算] 視窗等等。
 

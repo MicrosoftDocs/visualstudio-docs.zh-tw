@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: bc943fe059850b024a5067d36bcc14d258ca5565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d15f0e8e5c5cbdac5a130804977adf90385adfe1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893919"
 ---
 # <a name="wpf-overview"></a>WPF 概觀
 
@@ -224,9 +224,9 @@ End Namespace
 
 大多數已建立的應用程式會為使用者提供檢視及編輯資料的方法。 至於 WPF 應用程式，儲存和存取資料的工作已由 SQL Server 和 ADO.NET 等技術提供。 存取資料並將資料載入應用程式的 Managed 物件之後，才會開始 WPF 應用程式的困難工作。 基本上，這涉及兩個動作：
 
-1.  將資料從 Managed 物件複製到控制項，以在其中顯示及編輯資料。
+1. 將資料從 Managed 物件複製到控制項，以在其中顯示及編輯資料。
 
-2.  確保使用控制項對資料所做的變更，會複製回 Managed 物件。
+2. 確保使用控制項對資料所做的變更，會複製回 Managed 物件。
 
 為了簡化應用程式開發工作，WPF 提供資料繫結引擎以自動執行這些步驟。 資料繫結引擎的核心單位是 <xref:System.Windows.Data.Binding> 類別，其工作是將控制項 (繫結目標) 繫結至資料物件 (繫結來源)。 下圖說明這個關聯性：
 
@@ -575,11 +575,11 @@ WPF 控制項的預設使用者介面通常是從其他控制項和圖案建構�
 
 這個範例使用 `Window.Resources` 屬性項目來實作背景色彩資源。 這項資源可供 <xref:System.Windows.Window>的所有子系使用。 以下依其解析順序列出各種資源範圍，包括：
 
-1.  個別控制項 (使用繼承的 <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> 屬性)。
+1. 個別控制項 (使用繼承的 <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> 屬性)。
 
-2.  <xref:System.Windows.Window> 或 <xref:System.Windows.Controls.Page> (也使用繼承的 <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> 屬性)。
+2. <xref:System.Windows.Window> 或 <xref:System.Windows.Controls.Page> (也使用繼承的 <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> 屬性)。
 
-3.  <xref:System.Windows.Application> (使用 <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> 屬性)。
+3. <xref:System.Windows.Application> (使用 <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> 屬性)。
 
 上述各種範圍可讓您彈性地定義及共用資源。
 

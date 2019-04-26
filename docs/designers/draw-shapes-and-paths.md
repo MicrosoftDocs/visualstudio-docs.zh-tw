@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc629f44ed39fb07459916f07ef430f87b00e14a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899332"
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
 
@@ -21,7 +21,7 @@ ms.locfileid: "55918880"
 
 圖形與路徑都會使用向量圖形，因此可以適切地調整為高解析度顯示。 如果您想要深入了解向量圖形，請參閱 [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) 或 [vector graphics](http://www.webopedia.com/TERM/V/vector_graphics.html)。
 
-##  <a name="Shape"></a> 繪製圖形
+## <a name="Shape"></a> 繪製圖形
  您可以在 [資產]  面板中找到許多圖形。
 
  ![[資產] 面板上的 [圖形] 分類](../designers/media/b4_shapes_assetspanel.png)
@@ -30,7 +30,7 @@ ms.locfileid: "55918880"
 
  ![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
-##  <a name="Path"></a> 繪製路徑
+## <a name="Path"></a> 繪製路徑
  路徑是一系列連接的直線和曲線。 使用路徑可建立 [資產]  面板中所沒有的有趣圖形。
 
  您可以使用線條、畫筆或鉛筆來繪製路徑。 您可以在 [工具]  面板中找到這些工具。
@@ -80,12 +80,12 @@ ms.locfileid: "55918880"
 
  使用 [選取] 工具 ![[選取] 工具](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) 來選取路徑。 使用 [畫筆] 工具 ![[畫筆] 工具](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) 按一下路徑上您要新增點的任何位置。
 
-##  <a name="Convert"></a> 將圖形轉換成路徑
+## <a name="Convert"></a> 將圖形轉換成路徑
  若要以修改路徑的相同方式來修改圖形，請將圖形轉換為路徑。
 
  **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [使用路徑：將圖形轉換成路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。
 
-##  <a name="Combine"></a> 合併路徑
+## <a name="Combine"></a> 合併路徑
  您可以將路徑與圖形合併為單一路徑。
 
  ![合併路徑](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
@@ -98,7 +98,7 @@ ms.locfileid: "55918880"
 
  **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [使用路徑：合併路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。
 
-##  <a name="Compound"></a> 建立複合路徑
+## <a name="Compound"></a> 建立複合路徑
  當您建立複合路徑時，這些路徑的任何交集部分都會從結果中減去，而所產生的路徑會採用最底層路徑的視覺屬性。
 
  您可以在建立複合路徑之後隨時打散這些路徑。
@@ -107,7 +107,7 @@ ms.locfileid: "55918880"
 
  **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [使用路徑：建立複合路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。
 
-##  <a name="Clipping"></a> 建立裁剪路徑
+## <a name="Clipping"></a> 建立裁剪路徑
  裁剪路徑是套用至其他物件的路徑或圖形，隱藏了所遮蔽物件落於裁剪路徑外面的部分。
 
  ![裁剪路徑](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)

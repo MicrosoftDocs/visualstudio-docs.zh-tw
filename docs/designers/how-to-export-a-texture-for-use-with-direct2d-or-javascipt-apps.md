@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4aa53efb690faa0d31a35b9b19d0d5ee9781352
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 803129ea758a6648c0caa8303e1d191c0e8a74f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844380"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>HOW TO：匯出紋理以搭配 Direct2D 或 Javascipt 應用程式使用
 
@@ -21,31 +21,31 @@ ms.locfileid: "55940000"
 
 本文件示範下列活動︰
 
--   設定要由「影像內容管線」處理的來源影像。
+- 設定要由「影像內容管線」處理的來源影像。
 
--   設定「影像內容管線」來產生可在 Direct2D 或 JavaScript 應用程式中使用的材質。
+- 設定「影像內容管線」來產生可在 Direct2D 或 JavaScript 應用程式中使用的材質。
 
-    -   產生區塊壓縮 .dds 檔案。
+    - 產生區塊壓縮 .dds 檔案。
 
-    -   產生預乘 Alpha。
+    - 產生預乘 Alpha。
 
-    -   停用 Mipmap 產生。
+    - 停用 Mipmap 產生。
 
 ## <a name="rendering-conventions-in-direct2d"></a>Direct2D 中的轉譯慣例
 
 在 Direct2D 內容中使用的材質必須符合 Direct2D 內部轉譯慣例：
 
--   Direct2D 會使用預乘 Alpha 來實作透明度和半透明度。 與 Direct2D 搭配使用的材質即使不使用透明度或半透明度，也必須包含預乘 Alpha。 如需預乘 Alpha 的詳細資訊，請參閱[如何：匯出包含預乘 Alpha 的紋理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)。
+- Direct2D 會使用預乘 Alpha 來實作透明度和半透明度。 與 Direct2D 搭配使用的材質即使不使用透明度或半透明度，也必須包含預乘 Alpha。 如需預乘 Alpha 的詳細資訊，請參閱[如何：匯出包含預乘 Alpha 的紋理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)。
 
--   提供材質時，必須使用下列其中一種區塊壓縮格式，以 .dds 格式提供：
+- 提供材質時，必須使用下列其中一種區塊壓縮格式，以 .dds 格式提供：
 
-    -   BC1_UNORM 壓縮
+    - BC1_UNORM 壓縮
 
-    -   BC2_UNORM 壓縮
+    - BC2_UNORM 壓縮
 
-    -   BC3_UNORM 壓縮
+    - BC3_UNORM 壓縮
 
--   不支援 Mipmap。
+- 不支援 Mipmap。
 
 ### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>建立與 Direct2D 轉譯慣例相容的材質
 

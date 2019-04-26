@@ -1,5 +1,5 @@
 ---
-title: 作法：在 MSBuild 中逸出特殊字元 | Microsoft Docs
+title: HOW TO：在 MSBuild 中逸出特殊字元 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 983e10f26e6fd1d8b4b7ff18c73edd65cb4810f4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968102"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>HOW TO：在 MSBuild 中逸出特殊字元
 

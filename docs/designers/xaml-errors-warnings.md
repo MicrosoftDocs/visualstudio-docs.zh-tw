@@ -8,12 +8,12 @@ ms.author: karann
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d92c266b0504f021328175d436216d9c86a6032
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d3ae795b464d8a693371b1ebb9238a897debbf02
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892613"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 錯誤和警告
 
@@ -31,7 +31,6 @@ ms.locfileid: "55913102"
 
 > [!Note]
 > 並非所有錯誤或警告都有對應的程式碼。 這種錯誤通常是 XAML 設計工具的錯誤。
-
 
 ## <a name="suppress-xaml-designer-errors"></a>隱藏 XAML 設計工具的錯誤
 

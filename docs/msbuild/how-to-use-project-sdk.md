@@ -1,5 +1,5 @@
 ---
-title: 作法：參考 MSBuild 專案 SDK | Microsoft Docs
+title: HOW TO：參考 MSBuild 專案 SDK | Microsoft Docs
 ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977326"
 ---
-# <a name="how-to-use-msbuild-project-sdks"></a>作法：使用 MSBuild 專案 SDK
+# <a name="how-to-use-msbuild-project-sdks"></a>HOW TO：使用 MSBuild 專案 SDK
 
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 版導入「專案 SDK」的概念，簡化了需要匯入屬性和目標之軟體開發套件的使用。
 

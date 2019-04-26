@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 0bac96a61a5c071a01f1584911ba41cd84e87da7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979548"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步驟 1：建立專案並將資料表新增至表單
 
@@ -47,9 +47,9 @@ ms.locfileid: "58647488"
 
 4. 在 [屬性] 視窗中，設定下列表單屬性。
 
-   1.  將表單的 **Text** 屬性從 [Form1] 變更為 [Matching Game]。 此文字會出現在遊戲視窗的頂端。
+   1. 將表單的 **Text** 屬性從 [Form1] 變更為 [Matching Game]。 此文字會出現在遊戲視窗的頂端。
 
-   2.  將表單的大小設定為寬度 550 像素乘以高度 550 像素。 您可以將 **Size** 屬性設定為 [550, 550]，或是拖曳表單的角落直到您在整合式開發環境 (IDE) 的右下角看見正確的大小為止，以執行此動作。
+   2. 將表單的大小設定為寬度 550 像素乘以高度 550 像素。 您可以將 **Size** 屬性設定為 [550, 550]，或是拖曳表單的角落直到您在整合式開發環境 (IDE) 的右下角看見正確的大小為止，以執行此動作。
 
 5. 選擇 IDE 左側的 [工具箱] 索引標籤，以顯示工具箱。
 
@@ -76,19 +76,19 @@ ms.locfileid: "58647488"
 
     選取 TableLayoutPanel 時，請開啟工具箱，然後將 <xref:System.Windows.Forms.Label> 控制項 (位於 [通用控制項] 類別) 新增至 TableLayoutPanel 的左上角儲存格。 label 控制項現在應該已在 IDE 中選取。 為其設定下列屬性。
 
-   1.  請確定將標籤的 **BackColor** 屬性設定為 [CornflowerBlue]。
+   1. 請確定將標籤的 **BackColor** 屬性設定為 [CornflowerBlue]。
 
-   2.  將 [AutoSize] 屬性設定為 [False]。
+   2. 將 [AutoSize] 屬性設定為 [False]。
 
-   3.  將 **Dock** 屬性設定為 [Fill]。
+   3. 將 **Dock** 屬性設定為 [Fill]。
 
-   4.  選擇屬性旁的下拉式按鈕，然後選擇中間按鈕，以將 **TextAlign** 屬性設定為 [MiddleCenter]。 這可確保圖示會顯示在儲存格的中央。
+   4. 選擇屬性旁的下拉式按鈕，然後選擇中間按鈕，以將 **TextAlign** 屬性設定為 [MiddleCenter]。 這可確保圖示會顯示在儲存格的中央。
 
-   5.  選擇 **Font** 屬性。 應該會出現省略符號 (**...**) 按鈕。
+   5. 選擇 **Font** 屬性。 應該會出現省略符號 (**...**) 按鈕。
 
-   6.  選擇省略符號按鈕，並將 [字型] 值設定為 [Webdings]、將 [字型樣式] 設定為 [粗體]，並將 [大小] 設定為 [48]。
+   6. 選擇省略符號按鈕，並將 [字型] 值設定為 [Webdings]、將 [字型樣式] 設定為 [粗體]，並將 [大小] 設定為 [48]。
 
-   7.  將標籤的 **Text** 屬性設定為字母 **c**。
+   7. 將標籤的 **Text** 屬性設定為字母 **c**。
 
         TableLayoutPanel 中的左上角儲存格現在應該包含一個黑色方塊 (位於藍色背景中央)。
 
@@ -106,6 +106,6 @@ ms.locfileid: "58647488"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要前往下一個教學課程步驟，請參閱[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。
+- 若要前往下一個教學課程步驟，請參閱[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。
 
--   若要回到概觀主題，請參閱[教學課程 3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)。
+- 若要回到概觀主題，請參閱[教學課程 3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)。

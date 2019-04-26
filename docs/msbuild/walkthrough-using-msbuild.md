@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: ee57e0fb78eadce226a7fa8371d395181c6060a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445303"
 ---
 # <a name="walkthrough-use-msbuild"></a>逐步解說：使用 MSBuild
 
@@ -38,7 +38,7 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
 1. 開啟 Visual Studio 並建立專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 來關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **winforms**，然後選擇 [建立新的 Windows Forms App (.NET Framework)]。 在出現的對話方塊中選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **winforms**，然後選擇 [建立新的 Windows Forms App (.NET Framework)]。 在出現的對話方塊中選擇 [建立]。
 
     在 [名稱]  方塊中，輸入 `BuildApp`。 輸入方案的 [位置]，例如 *D:\\*。 接受預設的 [解決方案]、[解決方案名稱] \(**BuildApp**\) 和 [架構]。
     ::: moniker-end
@@ -56,13 +56,13 @@ MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介
 
 **檢查專案檔**
 
-1.  在 [方案總管] 中，按一下專案節點 **BuildApp**。
+1. 在 [方案總管] 中，按一下專案節點 **BuildApp**。
 
-2.  在 [屬性] 瀏覽器中，請注意 [專案檔] 屬性為 *BuildApp.csproj*。 所有專案檔名稱的尾碼都是 *proj*。 如果您已建立 Visual Basic 專案，則專案檔名稱會是 *BuildApp.vbproj*。
+2. 在 [屬性] 瀏覽器中，請注意 [專案檔] 屬性為 *BuildApp.csproj*。 所有專案檔名稱的尾碼都是 *proj*。 如果您已建立 Visual Basic 專案，則專案檔名稱會是 *BuildApp.vbproj*。
 
-3.  以滑鼠右鍵按一下專案節點，然後按一下 [卸載專案]。
+3. 以滑鼠右鍵按一下專案節點，然後按一下 [卸載專案]。
 
-4.  再次以滑鼠右鍵按一下專案節點，然後按一下 [編輯 BuildApp.csproj]。
+4. 再次以滑鼠右鍵按一下專案節點，然後按一下 [編輯 BuildApp.csproj]。
 
      該專案檔隨即出現在程式碼編輯器中。
 
@@ -130,7 +130,7 @@ Message 工作會取得 Text 屬性的字串值做為輸入，並顯示於輸出
  從 Visual Studio 的 [開發人員命令提示字元] 執行 MSBuild，以建置前述內容所定義的 HelloWorld 目標。 使用 -target 或 -t 命令列參數選取目標。
 
 > [!NOTE]
->  我們會在下列各節中，將**開發人員命令提示字元**稱為**命令視窗**。
+> 我們會在下列各節中，將**開發人員命令提示字元**稱為**命令視窗**。
 
 **建置目標**
 
@@ -156,7 +156,7 @@ Message 工作會取得 Text 屬性的字串值做為輸入，並顯示於輸出
     ```
 
 > [!NOTE]
->  如果您看到了 `The target "HelloWorld" does not exist in the project`，則您可能忘了在程式碼編輯器中儲存該專案檔。 請儲存檔案，然後再試一次。
+> 如果您看到了 `The target "HelloWorld" does not exist in the project`，則您可能忘了在程式碼編輯器中儲存該專案檔。 請儲存檔案，然後再試一次。
 
  藉由交替使用程式碼編輯器和命令視窗，您可以變更專案檔，並快速查看結果。
 
@@ -222,20 +222,24 @@ $(PropertyName)
 4. 檢查輸出結果， 您應該會看到這兩行 (您的 .NET Framework 版本可能不一樣)：
 
     ::: moniker range=">=vs-2019"
+
     ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2019\<Visual Studio SKU>\MSBuild\15.0\Bin
     ```
+
     ::: moniker-end
     ::: moniker range="vs-2017"
+
     ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin
     ```
+
     ::: moniker-end
 
 > [!NOTE]
->  如果您未看見這幾行，則您可能忘了在程式碼編輯器中儲存該專案檔。 請儲存檔案，然後再試一次。
+> 如果您未看見這幾行，則您可能忘了在程式碼編輯器中儲存該專案檔。 請儲存檔案，然後再試一次。
 
 ### <a name="conditional-properties"></a>條件式屬性
 
@@ -263,13 +267,13 @@ $(PropertyName)
 
 **從命令列設定專案值**
 
-1.  從 [命令視窗]，輸入並執行這一行：
+1. 從 [命令視窗]，輸入並執行這一行：
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
-2.  檢查輸出結果， 您應該會看到下列這一行：
+2. 檢查輸出結果， 您應該會看到下列這一行：
 
     ```
     Configuration is Release.
@@ -333,7 +337,7 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。
 
 > [!NOTE]
->  檔案路徑會相對於包含 MSBuild 專案檔的資料夾。
+> 檔案路徑會相對於包含 MSBuild 專案檔的資料夾。
 
 ## <a name="examine-item-type-values"></a>檢查項目類型值
 
@@ -381,21 +385,21 @@ MSBuild 會建立 Configuration 屬性，並提供值 "Release"。
 
 **每行顯示一個項目類型值**
 
-1.  從程式碼編輯器，使用下列這一行來取代 Message 工作：
+1. 從程式碼編輯器，使用下列這一行來取代 Message 工作：
 
     ```xml
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />
     ```
 
-2.  儲存專案檔。
+2. 儲存專案檔。
 
-3.  從 [命令視窗]，輸入並執行這一行：
+3. 從 [命令視窗]，輸入並執行這一行：
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  檢查輸出結果， 您應該會看到下列這幾行：
+4. 檢查輸出結果， 您應該會看到下列這幾行：
 
     ```
     Compile item type contains Form1.cs

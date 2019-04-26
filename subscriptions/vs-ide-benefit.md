@@ -7,17 +7,16 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: 了解如何下載和安裝 Visual Studio 訂用帳戶中所含的 Visual Studio IDE。
 searchscope: VS Subscription
-ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420804"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>使用 Visual Studio 2019 權益
 
 身為 Visual Studio 訂閱者，您可以存取 Visual Studio IDE。  特定版本將取決於您的訂用帳戶層級。  權益會以磚形式顯示在訂閱者入口網站之[權益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)頁面的 [工具] 分類中 
-
 
 ## <a name="activation-steps"></a>啟用步驟
 
@@ -56,8 +55,10 @@ ms.locfileid: "59018138"
 14. Visual Studio 隨即開啟。 您已準備好開始使用 Visual Studio！
 
     ::: moniker range="vs-2017"
+
     > [!div class="mx-imgBorder"]
     > ![開始使用 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+
     ::: moniker-end
 
 ## <a name="eligibility"></a>資格
@@ -75,12 +76,10 @@ ms.locfileid: "59018138"
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
 
-
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
-
 ## <a name="support-resources"></a>支援資源
--  如需 Visual Studio IDE 的說明，請查看這些資源：
+- 如需 Visual Studio IDE 的說明，請查看這些資源：
     - 技術支援：[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
     - [文件](/visualstudio/)
--  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。

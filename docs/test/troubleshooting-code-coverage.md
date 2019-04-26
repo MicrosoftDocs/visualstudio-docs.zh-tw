@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 07212350ab95c3f9ee3d00fb2ac33768964555e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990492"
 ---
 # <a name="troubleshoot-code-coverage"></a>對程式碼涵蓋範圍進行疑難排解
 
@@ -43,9 +43,9 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
 
 當您修改並重新執行測試時，可能仍會顯示先前的程式碼涵蓋範圍結果，包括在先前執行時著色的程式碼。
 
-1.  執行 [分析程式碼涵蓋範圍]。
+1. 執行 [分析程式碼涵蓋範圍]。
 
-2.  請務必在 [程式碼涵蓋範圍結果] 視窗中選取最新的一組結果。
+2. 請務必在 [程式碼涵蓋範圍結果] 視窗中選取最新的一組結果。
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>.pdb (符號) 檔案無法使用
 
@@ -91,17 +91,17 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
 
 解決方式&mdash;可能發生兩種類型的錯誤：
 
--   **XML 錯誤**
+- **XML 錯誤**
 
      在 Visual Studio XML 編輯器中開啟 *.runsettings* 檔案。 尋找錯誤。
 
--   **規則運算式錯誤**
+- **規則運算式錯誤**
 
      檔案中的每個字串都是規則運算式。 檢閱每一個錯誤，特別要尋找：
 
-    -   不對稱的括號 (...) 或未逸出的括號 \\(...\\)。 如果要比對搜尋字串中的括號，必須逸出該括號。 例如，比對函式的用法： `.*MyFunction\(double\)`
+    - 不對稱的括號 (...) 或未逸出的括號 \\(...\\)。 如果要比對搜尋字串中的括號，必須逸出該括號。 例如，比對函式的用法： `.*MyFunction\(double\)`
 
-    -   運算式開頭的星號或加號。 若要比對任何字元字串，請在星號後面加上點：`.*`
+    - 運算式開頭的星號或加號。 若要比對任何字元字串，請在星號後面加上點：`.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>自訂 .runsettings 檔包含不正確的排除項
 

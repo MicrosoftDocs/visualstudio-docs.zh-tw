@@ -7,12 +7,12 @@ ms.date: 03/02/2018
 ms.topic: conceptual
 description: 雲端訂用帳戶帳單問題。
 searchscope: VS Subscription
-ms.openlocfilehash: d85b093b8877430c037fdc528abc8264b6c847b9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ab02b40926225860536b277b22c3f16768a56731
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810527"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 雲端訂閱帳單常見問題集
 
@@ -108,7 +108,6 @@ ms.locfileid: "56843775"
 
 * [Visual Studio Professional 月租方案](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
 * [Visual Studio Enterprise 月租方案](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
-
 
 ## <a name="related-resources"></a>相關資源
 

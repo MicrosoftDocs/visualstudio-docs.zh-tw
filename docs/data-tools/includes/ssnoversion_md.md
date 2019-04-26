@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 5bf44eef144b58bf64b073b2ae3c10d92a1d6028
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9820eb49dfa58cbe8dc2315dd7348cc3980557e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "38809626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809991"
 ---
 SQL Server

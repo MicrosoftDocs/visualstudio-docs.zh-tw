@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何啟用 Visual Studio 訂用帳戶中所含的 Parasoft Virtualize/SOA Test Professional 訂用帳戶。
 searchscope: VS Subscription
-ms.openlocfilehash: 89b079f9f797db58eb0afc887a70cdc78c48d886
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947260"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Parasoft Virtualize/SOAtest Professional Desktop
 
 讓測試更簡單、更頻繁。  模擬並測試無法使用之發展中應用程式與系統的行為。  您的權益包含六個月免費訂用帳戶。  在六個月訂用帳戶結束時，您就有每年訂用帳戶 25% 的價格折扣。
-
 
 ## <a name="activation-steps"></a>啟用步驟
 
@@ -30,7 +29,6 @@ ms.locfileid: "56844109"
 3. 會將您重新導向至 Parasoft 網站，您將在其中建立帳戶。  只需要提供您的連絡資訊，然後按一下 [提交]。
    > [!div class="mx-imgBorder"]
    > ![Parasoft 權益建立帳戶](_img/vs-parasoft/vs-parasoft-account-cropped.png)
-
 
 4. 您會在建立您的帳戶之後看到通知，告知已傳送給您一封包含下載指示的電子郵件   (如果您在收件匣中看不到該電子郵件，請記得檢查垃圾郵件資料夾)。
 
@@ -83,14 +81,12 @@ ms.locfileid: "56844109"
 
 <sup>1</sup>  *包含：Microsoft 合作夥伴網路 (Enterprise)。排除：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、FTE、MCT 軟體與服務開發人員、BizSpark、Imagine、最有價值專家 (MVP)、區域經理 (RD)。MCT Software & Services。*
 
-
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
 
-
 ## <a name="support-resources"></a>支援資源
--  需要 Parasoft 產品說明嗎？  請參閱這些資源：
+- 需要 Parasoft 產品說明嗎？  請參閱這些資源：
     - 技術支援： https://www.parasoft.com/support/
     - Parasoft Resource Center： https://www.parasoft.com/resources/
--  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+- 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

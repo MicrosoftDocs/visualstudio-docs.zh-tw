@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 訂用帳戶
 searchscope: VS Subscription
 ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833928"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 

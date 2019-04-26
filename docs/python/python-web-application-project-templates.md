@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954799"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 應用程式專案範本
 
@@ -109,11 +109,11 @@ Microsoft Azure 雲端服務「確實」支援 *requirements.txt* 檔案。 如�
 
 - [執行伺服器命令] 群組：
   - **命令**：`bottle` (模組)
-  - **引數**： `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **引數**：`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - [偵錯伺服器命令] 群組：
   - **命令**：`bottle` (模組)
-  - **引數** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **引數**：`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 使用 Visual Studio 進行偵錯時，不建議使用 `--reload` 選項。
 
@@ -126,11 +126,11 @@ Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 建
 
 - [執行伺服器命令] 群組：
   - 命令：`..\env\scripts\pserve-script.py` (指令碼)
-  - 引數： `Production.ini`
+  - 引數：`Production.ini`
 
 - [偵錯伺服器命令] 群組：
   - 命令：`..\env\scripts\pserve-script.py` (指令碼)
-  - 引數： `Development.ini`
+  - 引數：`Development.ini`
 
 > [!Tip]
 > 您可能需要設定專案的 [工作目錄] 屬性，因為 Pyramid 應用程式通常會位在專案根資料夾的下一層資料夾中。

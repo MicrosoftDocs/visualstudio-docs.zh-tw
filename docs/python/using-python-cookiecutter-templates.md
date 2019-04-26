@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832139"
 ---
 # <a name="use-the-cookiecutter-extension"></a>使用 Cookiecutter 延伸模組
 
@@ -100,7 +100,7 @@ Cookiecutter 選項可透過 [工具] > [選項] > [Cookiecutter] 存取：
 | ThisAddIn | 指定變數的編輯器上方顯示的內容，取代變數的名稱。 |
 | 說明 | 指定編輯控制項上顯示的工具提示，取代該變數的預設值。 |
 | URL | 將標籤變更成超連結，並含有一個顯示 URL 的工具提示。 按一下超連結，會以使用者的預設瀏覽器開啟該 URL。 |
-| 選取器 | 可自訂變數的編輯器。 目前支援下列選取器︰<ul><li>`string`:標準文字方塊，字串的預設。</li><li>`list`:標準下拉式方塊，清單的預設。</li><li>`yesno`:可在 `y` 和 `n` 之間選擇的下拉式方塊，適用於字串。</li><li>`odbcConnection`:包含 [...] 按鈕的文字方塊，會顯示資料庫連接對話方塊。</li></ul> |
+| 選取器 | 可自訂變數的編輯器。 目前支援下列選取器︰<ul><li>`string`：標準文字方塊，字串的預設。</li><li>`list`：標準下拉式方塊，清單的預設。</li><li>`yesno`：可在 `y` 和 `n` 之間選擇的下拉式方塊，適用於字串。</li><li>`odbcConnection`：包含 [...] 按鈕的文字方塊，會顯示資料庫連接對話方塊。</li></ul> |
 
 範例：
 

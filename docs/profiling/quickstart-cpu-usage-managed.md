@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b77ae405463496c5de703947de9b4429218d2435
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58ab671014f2745bbc577e50d9e8051df72091c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967930"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (受控碼)
 
@@ -160,9 +160,9 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
     > [!NOTE]
     > 在 Visual Basic 中，確定啟始物件設定為 `Sub Main` ([屬性] > [應用程式] > [啟始物件])。
 
-##  <a name="step-1-collect-profiling-data"></a>步驟 1：收集分析資料
+## <a name="step-1-collect-profiling-data"></a>步驟 1：收集分析資料
 
-1.  首先，在 `Main` 函式的這行程式碼上，於應用程式中設定中斷點：
+1. 首先，在 `Main` 函式的這行程式碼上，於應用程式中設定中斷點：
 
     `for (int i = 0; i < 200; i++)`
 
@@ -172,20 +172,20 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
     按一下程式碼行左側的裝訂邊，以設定中斷點。
 
-2.  接下來，在 `Main` 函式結尾的右大括弧上，設定第二個中斷點：
+2. 接下來，在 `Main` 函式結尾的右大括弧上，設定第二個中斷點：
 
      ![設定中斷點進行分析](../profiling/media/quickstart-cpu-usage-breakpoints.png "設定中斷點進行分析")
 
     > [!TIP]
     > 藉由設定兩個中斷點，您可以將資料收集的範圍限制在您想分析的程式碼部分。
 
-3.  除非您關閉 [診斷工具] 視窗，否則該視窗已出現。 如需再次顯示視窗，請按一下 [偵錯] > [Windows] > [顯示診斷工具]。
+3. 除非您關閉 [診斷工具] 視窗，否則該視窗已出現。 如需再次顯示視窗，請按一下 [偵錯] > [Windows] > [顯示診斷工具]。
 
-4.  按一下 [偵錯] > [開始偵錯] (或工具列上的 [開始] 或 **F5**)。
+4. 按一下 [偵錯] > [開始偵錯] (或工具列上的 [開始] 或 **F5**)。
 
      應用程式完成載入時，會出現 [診斷工具] 的 [摘要] 檢視。
 
-5.  當偵錯工具暫停時，請啟用 CPU 使用量資料的收集，方法是選擇 [記錄 CPU 分析]，然後開啟 [CPU 使用量] 索引標籤。
+5. 當偵錯工具暫停時，請啟用 CPU 使用量資料的收集，方法是選擇 [記錄 CPU 分析]，然後開啟 [CPU 使用量] 索引標籤。
 
      ![診斷工具啟用 CPU 分析](../profiling/media/quickstart-cpu-usage-summary.png "診斷工具啟用 CPU 分析")
 
@@ -193,7 +193,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
 
      當您選擇 [記錄 CPU 分析] 時，Visual Studio 就會開始錄製您的函式以及它們所需的執行時間，也會提供您可以用來專注於取樣工作階段特定區段的時間軸圖表。只有在應用程式於中斷點停止時，您才能檢視這個收集的資料。
 
-6.  按 **F5** 使應用程式執行至第二個中斷點。
+6. 按 **F5** 使應用程式執行至第二個中斷點。
 
      現在，您擁有在兩個中斷點之間執行的程式碼區域專屬的應用程式效能資料。
 

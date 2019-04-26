@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973015"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>使用不同的網頁瀏覽器搭配自動程式化 UI 測試
 
@@ -24,13 +24,13 @@ ms.locfileid: "57983024"
 
 ## <a name="whats-supported-across-all-web-browsers"></a>哪些功能是所有網頁瀏覽器都支援的？
 
--   [加入用於控制功能的自訂程式碼](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) (例如屬性、搜尋和播放等候程式等功能)。
+- [加入用於控制功能的自訂程式碼](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) (例如屬性、搜尋和播放等候程式等功能)。
 
--   快顯和對話方塊
+- 快顯和對話方塊
 
--   [執行不含傳回型別的基本 JavaScript](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+- [執行不含傳回型別的基本 JavaScript](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   搜尋彈性 (使用智慧比對) 和 [performance improvements](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/) (效能改進)
+- 搜尋彈性 (使用智慧比對) 和 [performance improvements](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/) (效能改進)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>為什麼應該跨多種 Web 瀏覽器類型使用自動程式化 UI 測試?
 
@@ -78,17 +78,17 @@ ms.locfileid: "57983024"
 
 若要啟用偵錯 Web 應用程式的功能，您必須完成下列組態選項：
 
-1.  啟用 Just My Code：
+1. 啟用 Just My Code：
 
-    1.  在 [工具] 功能表中選擇 [選項]，然後選擇 [偵錯]。
+    1. 在 [工具] 功能表中選擇 [選項]，然後選擇 [偵錯]。
 
-    2.  選取 [啟用 Just My Code]。
+    2. 選取 [啟用 Just My Code]。
 
-2.  停用 CLR 例外狀況：
+2. 停用 CLR 例外狀況：
 
-    1.  在 [偵錯] 功能表中選擇 [例外狀況]。
+    1. 在 [偵錯] 功能表中選擇 [例外狀況]。
 
-    2.  取消核取 [通用語言執行平台例外狀況] 的 [使用者未處理]。
+    2. 取消核取 [通用語言執行平台例外狀況] 的 [使用者未處理]。
 
 如果在自動程式化 UI 測試中看不到變更 `BrowserWindow.CurrentBrowser` 的選項，您使用的 Visual Studio 版本可能不支援使用各種網頁瀏覽器進行自動程式化 UI 測試。 若要使用這樣的自動程式化 UI 測試，您必須使用 Visual Studio Enterprise 版。
 

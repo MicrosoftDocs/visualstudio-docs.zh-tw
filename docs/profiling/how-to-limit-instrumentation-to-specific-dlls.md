@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b39689219b113343162aa0e814cfa68e2422f08d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62980911"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>作法：限制檢測特定 DLL
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>HOW TO：限制檢測特定 DLL
 
 您可以藉由使用檢測程式碼剖析方法，將程式碼剖析資料的收集限制在應用程式中的一或多個 DLL。 若要對應用程式中的一或多個 DLL 進行分析，請建立包含 .*dll* 檔案作為目標的效能工作階段。 您可以將要進行分析的 DLL 指定成 Visual Studio 方案中的專案，或是指定成獨立的二進位檔案。
 

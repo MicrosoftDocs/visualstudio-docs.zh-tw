@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 7544d3aa72bb981a35b3c7fc63db3f397f8f26dd
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: ae4d824a4746889447650efdb4dada061b7c712b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933183"
 ---
 # <a name="getting-started-with-aspnet-core"></a>開始使用 ASP.NET Core
 
@@ -63,6 +63,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
+
 ASP.NET Core 應用程式會透過 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 的執行個體設定和啟動主機，在其 Main 方法中建立 Web 伺服器。 這個建立器提供了一些方法來允許設定主機。 在範本應用程式中會使用下列組態：
 
 * `UseKestrel`：指定應用程式將使用 Kestrel 伺服器
@@ -104,8 +105,8 @@ public class Startup
 
 這個啟動類別必須一律遵守下列規則：
 
- - 必須一律為公用
- - 必須包含兩個公用方法：`ConfigureServices` 和 `Configure`
+- 必須一律為公用
+- 必須包含兩個公用方法：`ConfigureServices` 和 `Configure`
 
 `ConfigureServices` 方法會定義您的應用程式將使用的服務。
 
@@ -218,7 +219,6 @@ ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式�
 9. 嘗試瀏覽至 `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy`(將 `xxxx` 取代為正確的連接埠)，您應該會看到下列內容：
 
     ![使用引數在瀏覽器中執行應用程式](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>疑難排解
 

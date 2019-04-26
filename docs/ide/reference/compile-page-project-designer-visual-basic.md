@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fe0f5be0dfaf9f35f390c78633f41711f6bcbc9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 957e9e4b51dbca2f27e042b185b6dd071791cfad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968593"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>專案設計工具、編譯頁 (Visual Basic)
 
@@ -70,11 +70,11 @@ ms.locfileid: "55913037"
 
  **Option strict**：指定是否強制執行嚴格的類型語意。 當 [Option Strict] 為 [On] 時，下列情況將造成編譯時期錯誤：
 
--   隱含縮小轉換
+- 隱含縮小轉換
 
--   晚期繫結
+- 晚期繫結
 
--   導致 `Object` 類型的隱含類型化
+- 導致 `Object` 類型的隱含類型化
 
 隱含資料類型轉換是縮小轉換時，會發生隱含縮小轉換錯誤。 如需詳細資訊，請參閱 [Option Strict 陳述式](/dotnet/visual-basic/language-reference/statements/option-strict-statement)、[隱含和明確轉換](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)，以及[擴展和縮小轉換](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)。
 
@@ -91,11 +91,11 @@ ms.locfileid: "55913037"
 **Option Strict 的個別警告。**
 [編譯] 頁面的 [警告組態] 區段中所包含的設定，對應於三個會在 `Option Strict` 設為 On 時導致編譯時期錯誤的狀況。 以下是這些設定：
 
--   **隱含轉換**
+- **隱含轉換**
 
--   **晚期繫結，執行階段時呼叫可能失敗**
+- **晚期繫結，執行階段時呼叫可能失敗**
 
--   **隱含類型，假設是 Object**
+- **隱含類型，假設是 Object**
 
 當您將 [Option Strict] 設定為 [On] 時，這三個警告組態設定都會設定為 [錯誤]。 當您將 [Option Strict] 設定為 [Off] 時，所有三個設定都會設定為 [無]。
 
@@ -127,11 +127,11 @@ ms.locfileid: "55913037"
 
 只有在下列所有條件都成立時，才能使用此核取方塊：
 
--   在 [編譯] 頁面上，[目標 CPU] 清單會設為 [任何 CPU]。
+- 在 [編譯] 頁面上，[目標 CPU] 清單會設為 [任何 CPU]。
 
--   在 [應用程式] 頁面上，[應用程式類型] 清單指定專案是應用程式。
+- 在 [應用程式] 頁面上，[應用程式類型] 清單指定專案是應用程式。
 
--   在 [應用程式] 頁面上，[目標 Framework] 清單指定 .NET Framework 4.5。
+- 在 [應用程式] 頁面上，[目標 Framework] 清單指定 .NET Framework 4.5。
 
 **警告組態**：此表格會列出組建條件及各項條件所對應的 [無]、[警告] 或 [錯誤] 通知層級。
 
@@ -158,7 +158,6 @@ ms.locfileid: "55913037"
 **建置事件**：按一下此按鈕可存取 [建置事件] 對話方塊。 請使用此對話方塊來指定專案的建置前和建置後組態指令。 此對話方塊只適用於 Visual Basic 專案。 如需詳細資訊，請參閱[建置事件對話方塊 (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md)。
 
 **進階編譯選項**：按一下此按鈕可存取 [進階編譯器設定] 對話方塊。 請使用 [進階編譯器設定] 對話方塊來指定專案的進階建置組態屬性。 此對話方塊只適用於 Visual Basic 專案。 如需詳細資訊，請參閱[進階編譯器設定對話方塊 (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)。
-
 
 ## <a name="see-also"></a>另請參閱
 

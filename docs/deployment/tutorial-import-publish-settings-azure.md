@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: febf742ca7a54a14d8de59c251bb8783cf76370a
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 3965fdaa085d609fd87bf070e9a38aa2079cc9b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899176"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>在 Visual Studio 中匯入發行設定，即可將應用程式發行至 Azure App Service
 
@@ -100,6 +100,7 @@ ms.locfileid: "58567876"
       </publishProfile>
     </publishData>
     ```
+
     一般而言，上述的 *.publishsettings 檔案包含兩個您可以在 Visual Studio 中使用的發行設定檔，一個使用 Web Deploy 進行部署，另一個則使用 FTP 進行部署。 上述程式碼會顯示 Web Deploy 設定檔。 當您匯入設定檔時，稍後將匯入這兩個設定檔。
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>在 Visual Studio 中匯入發行設定並進行部署

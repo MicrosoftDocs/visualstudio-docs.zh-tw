@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 73820a8a0047422a04add39f4fab19558d8b0b8d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: a0ae2fa860b4d6d316dc9aacd4f8108a0284c4ba
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38945508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844479"
 ---
 混合

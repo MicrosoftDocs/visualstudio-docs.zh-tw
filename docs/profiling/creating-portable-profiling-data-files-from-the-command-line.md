@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f314f0b587c438c6691a6d7fe5d9d108d06479
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8b156de17c1f2ee43ccc215cf3723e14acd3c36b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405809"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>從命令列建立可移植的分析資料檔案
 若要更輕鬆地共用分析資料，您可以使用 [VSPerfReport](../profiling/vsperfreport.md) 命令列工具，將分析回合的符號內嵌到 .*vsp* 檔案。
@@ -21,11 +21,11 @@ ms.locfileid: "56654005"
  您也可以建立較小且在 IDE 中更快速載入之預先分析的分析資料 (.*vsps*) 檔案。
 
 > [!NOTE]
->  請確定 **VSPerfReport** 可以使用符號 (.*pdb*) 檔案。 如需詳細資訊，請參閱[如何：從命令列指定符號檔位置](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)。
+> 請確定 **VSPerfReport** 可以使用符號 (.*pdb*) 檔案。 如需詳細資訊，請參閱[如何：從命令列指定符號檔位置](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)。
 >
->  如需 **VSReport** 路徑的資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
+> 如需 **VSReport** 路徑的資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
 >
->  無法篩選 .*vsps* 檔案中的分析資料。
+> 無法篩選 .*vsps* 檔案中的分析資料。
 
 ### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>將分析回合的符號內嵌到分析資料 (.*vsp*) 檔案
 

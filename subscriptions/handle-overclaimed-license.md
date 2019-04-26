@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: 了解系統管理員如何解決過度領取訂閱的問題
 searchscope: VS Subscription
 ms.openlocfilehash: 6c48bbc077c3d88e1d83f7fa860f4fc6c55fdcd1
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580006"
 ---
 # <a name="handling-over-claimed-subscriptions"></a>處理「過度領取」的訂用帳戶
 

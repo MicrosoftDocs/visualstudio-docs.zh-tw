@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7ea9c2efd6a204932e24de0ef250ba143b8b34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa331fea595c2143dd3ab47aa562fbd61277f81f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817784"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>選項、文字編輯器、基本 (Visual Basic)、進階
 位於 [選項] ([工具] 功能表) 對話方塊上 [文字編輯器] 資料夾的 [基本] 資料夾中的 [VB 專用] 屬性頁面包含下列屬性：
@@ -50,7 +50,6 @@ ms.locfileid: "55925458"
    選取這些選項後，[快速動作](../quick-actions.md)可用來安裝 NuGet 套件，並為未參考的類型新增 `using` 指示詞。
 
    ![在 Visual Studio 中安裝 NuGet 套件的快速動作](media/nuget-lightbulb.png)
-
 
 ## <a name="highlighting"></a>醒目提示
 
@@ -82,19 +81,19 @@ ms.locfileid: "55925458"
 
 **程式碼美化排列 (重新格式化)** 文字編輯器會適當地重新格式化您的程式碼。 選取此選項後，程式碼編輯器將會：
 
--   將您的程式碼對齊正確的定位點位置
+- 將您的程式碼對齊正確的定位點位置
 
--   重新將關鍵字、變數和物件指定為正確的大小寫
+- 重新將關鍵字、變數和物件指定為正確的大小寫
 
--   將遺漏的 `Then` 新增至 `If...Then` 陳述式
+- 將遺漏的 `Then` 新增至 `If...Then` 陳述式
 
--   將括弧新增至函式呼叫
+- 將括弧新增至函式呼叫
 
--   將遺漏的結尾引號新增至字串
+- 將遺漏的結尾引號新增至字串
 
--   重新格式化指數標記法
+- 重新格式化指數標記法
 
--   重新格式化日期
+- 重新格式化日期
 
 **自動插入 End 建構**
 

@@ -8,14 +8,14 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8eef7dd68ba29f4a0100dfe5207c0b6179a76410
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 2a90d0e02d5ae3ce3ce2e91d4d152244b06fd049
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950263"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>作法：建立 Web 效能測試編輯器的自訂 HTTP 本文編輯器
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>HOW TO：建立 Web 效能測試編輯器的自訂 HTTP 本文編輯器
 
 您可以建立自訂內容編輯器，讓您能夠編輯 Web 服務要求的字串內容或二進位內容，例如 SOAP、REST、asmx、wcf、RIA 和其他 Web 服務要求類型。
 
@@ -23,9 +23,9 @@ ms.locfileid: "58415066"
 
 您可以實作下列類型的編輯器：
 
--   **字串內容編輯器**：這個編輯器是使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 介面實作。
+- **字串內容編輯器**：這個編輯器是使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 介面實作。
 
--   **二進位內容編輯器**：這個編輯器是使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> 介面實作。
+- **二進位內容編輯器**：這個編輯器是使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> 介面實作。
 
 這些介面包含在 <xref:Microsoft.VisualStudio.TestTools.WebTesting> 命名空間中。
 
@@ -210,7 +210,7 @@ messageEditorControl 執行個體會裝載於 <xref:Microsoft.VisualStudio.TestT
 
 ### <a name="to-add-the-ibinaryhttpbodyeditorplugin-to-the-class"></a>將 IBinaryHttpBodyEditorPlugin 加入至類別
 
--   在前述程序中加入的 XmlMessageEditor 類別底下撰寫或複製下列程式碼，以便從 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> 介面具現化 Msbin1MessageEditor 類別，並實作需要的方法：
+- 在前述程序中加入的 XmlMessageEditor 類別底下撰寫或複製下列程式碼，以便從 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> 介面具現化 Msbin1MessageEditor 類別，並實作需要的方法：
 
     ```csharp
     /// <summary>

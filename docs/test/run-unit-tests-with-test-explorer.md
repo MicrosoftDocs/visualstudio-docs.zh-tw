@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946002"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -53,7 +53,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="run-tests-after-every-build"></a>每次建置後執行測試
 
-|按鈕|描述|
+|按鈕|說明|
 |-|-|
 |![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機建置之後執行單元測試，請在標準功能表中選擇 [測試]，然後選擇 [測試總管] 工具列上的 [建置之後執行測試]。|
 
@@ -100,7 +100,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="test-explorer-groups"></a>測試總管群組
 
-|群組|描述|
+|群組|說明|
 |-|-----------------|
 |**持續期間**|依據執行時間群組測試：[快]、[中] 和 [慢]。|
 |**結果**|依據執行結果群組測試：[失敗的測試]、[略過的測試]、[成功的測試]。|
@@ -115,7 +115,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 屬性中定義特性名稱/值組。 測試架構也包含下列預先定義的特性：
 
-|特性|描述|
+|特性|說明|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|擁有者分類是由單元測試架構所定義，會要求您提供擁有者的字串值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|優先權分類是由單元測試架構所定義，會要求您提供優先權的整數值。|
@@ -145,7 +145,7 @@ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.Vi
 > [!NOTE]
 > 搜尋是區分大小寫且比對指定字串與準則值的任何部分。
 
-|限定詞|描述|
+|限定詞|說明|
 |-|-----------------|
 |**特性**|在特性分類和值中搜尋相符項目。 指定特性分類和值的語法是由單元測試架構所定義。|
 |**Project**|在測試專案名稱中搜尋相符項目。|

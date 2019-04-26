@@ -1,5 +1,5 @@
 ---
-title: 作法：在專案檔中使用保留的 XML 字元 | Microsoft Docs
+title: HOW TO：在專案檔中使用保留的 XML 字元 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c5693a2edca0d81e21e73215e00f25aae939eb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c79dfa33af5e0e80db682f272c5673856dbbcd8d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840378"
 ---
-# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>作法：在專案檔中使用保留的 XML 字元
+# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>HOW TO：在專案檔中使用保留的 XML 字元
 當您撰寫專案檔時，您可能需要使用保留的 XML 字元，例如，在屬性值或工作參數值中。 不過，您必須使用具名實體來取代某些保留字元，如此才能剖析專案檔。
 
 ## <a name="use-reserved-characters"></a>使用保留字元
@@ -34,7 +34,7 @@ ms.locfileid: "56603863"
 
 #### <a name="to-use-double-quotes-in-a-project-file"></a>在專案檔中使用雙引號
 
--   使用對應的具名實體 &amp;quot; 來取代雙引號。 例如，若要以雙引號括住 `EXEFile` 項目清單，請輸入：
+- 使用對應的具名實體 &amp;quot; 來取代雙引號。 例如，若要以雙引號括住 `EXEFile` 項目清單，請輸入：
 
     ```xml
     <Message Text="The output file is &quot;@(EXEFile)&quot;."/>

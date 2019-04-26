@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b11b478ef441dc7a09902a7185bfdf45e20dc3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 48ac65ef8fb7a67783a3c9c5a9652accf86821fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979831"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>指定分析工具命令列工具的路徑
 
@@ -34,21 +34,21 @@ ms.locfileid: "57868946"
 在 64 位元電腦上，則會根據已進行程式碼剖析之應用程式的目標平台指定路徑。
 
 ::: moniker range=">=vs-2019"
--   若是 32 位元應用程式，預設程式碼剖析工具目錄是：
+- 若是 32 位元應用程式，預設程式碼剖析工具目錄是：
 
      (原生) *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK* (受控) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
--   若是 64 位元應用程式，預設程式碼剖析工具目錄是：
+- 若是 64 位元應用程式，預設程式碼剖析工具目錄是：
 
      (原生) *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK* (受控) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
 ::: moniker-end
 
 ::: moniker range="vs-2017"
--   若是 32 位元應用程式，預設程式碼剖析工具目錄是：
+- 若是 32 位元應用程式，預設程式碼剖析工具目錄是：
 
      (原生) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (受控) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
--   若是 64 位元應用程式，預設程式碼剖析工具目錄是：
+- 若是 64 位元應用程式，預設程式碼剖析工具目錄是：
 
      (原生) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (受控) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
 ::: moniker-end

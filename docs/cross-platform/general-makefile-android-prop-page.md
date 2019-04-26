@@ -16,11 +16,11 @@ f1_keywords:
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: ee398add6b0cca8288d82cd090e1abef07a40d23
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818969"
 ---
 # <a name="general-project-properties-android-c-makefile"></a>一般專案屬性 (Android C++ Makefile)
 

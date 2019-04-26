@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ee14cddc6a3eb4b0348b88be1d7c2b0a48b44c01
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945616"
 ---
 # <a name="options-page-environment-node-properties"></a>環境節點屬性、選項頁
 

@@ -8,12 +8,12 @@ ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 384e742a4d9e61133f2f3b2cdcf713057704317a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dadc35d09ad70986f728104396502f13a06c0995
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979415"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>HOW TO：使用虛擬使用者活動圖分析虛擬使用者在負載測試期間的行為
 
@@ -25,9 +25,9 @@ ms.locfileid: "55917489"
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>若要在負載測試結果中檢視虛擬使用者活動圖
 
-1.  若要檢視虛擬使用者資料，您必須先設定與負載測試關聯之 [計時詳細資料儲存區] 屬性的 [所有個別詳細資料] 設定。 然後再次執行負載測試。
+1. 若要檢視虛擬使用者資料，您必須先設定與負載測試關聯之 [計時詳細資料儲存區] 屬性的 [所有個別詳細資料] 設定。 然後再次執行負載測試。
 
-2.  執行負載測試之後，測試結果摘要頁面隨即顯示。 選擇工具列上的 [使用者詳細資料] 按鈕。
+2. 執行負載測試之後，測試結果摘要頁面隨即顯示。 選擇工具列上的 [使用者詳細資料] 按鈕。
 
      -或-
 

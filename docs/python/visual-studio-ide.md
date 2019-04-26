@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957431"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>歡迎使用 Visual Studio IDE | Python
 
 Visual Studio 整合式開發環境是支援 Python (和其他語言) 且創作功能豐富的啟動控制板，可供您編輯、偵錯及測試程式碼，然後發行應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有程式碼完成工具、互動式 REPL 環境及其他功能，讓軟體開發程序變得更為容易。
 
-[![VVisual Studio 與 Python 專案](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![Visual Studio 與 Python 專案](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 此圖顯示 Visual Studio 有一個開啟的 Python 專案，以及數個您可能會用到的重要工具視窗：
 
@@ -62,7 +62,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![在 Visual Studio 中重構](media/tour-ide-refactor-extract-method.png)
 
-- [進行 Lint 檢查](refactoring-python-code.md)
+- [正在 Lint](refactoring-python-code.md)
 
    Linting 會檢查 Python 程式碼中的錯誤與常見問題，藉由良好的 Python 編碼模式讓您信心大增。
 
@@ -129,7 +129,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 透過遵循以下其中一個快速入門或教學課程，在 Visual Studio 中進一步探索 Python：
 
 > [!div class="nextstepaction"]
-> [快速入門：使用 Flask 建立 Web 應用程式](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
+> [快速入門：使用 Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) 建立 Web 應用程式
 
 > [!div class="nextstepaction"]
 > [在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

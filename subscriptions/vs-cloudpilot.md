@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CloudPilot 權益
 searchscope: VS Subscription
-ms.openlocfilehash: 5368bc386b7ee4ff1fa709fcc038ddb7a7a0c13d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948369"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 CloudPilot 權益
 
@@ -44,18 +44,17 @@ ms.locfileid: "56842555"
    > [!NOTE]
    > CloudPilot 權益的啟用限制為每組織十個，可從 Visual Studio Enterprise 或 Visual Studio Professional 訂用帳戶的任何組合中兌換。  如果您的組織已使用十個啟用，您就無法啟用 CloudPilot 權益，並會從 UnifyCloud 收到一封提供進一步資訊的電子郵件。
 
- 0. 接下來，您會看到可讓您熟悉 CloudPilot 的產品頁面。  按一下右上角的 [瀏覽至 CloudPilot] 前往 CloudPilot 入口網站。
+0. 接下來，您會看到可讓您熟悉 CloudPilot 的產品頁面。  按一下右上角的 [瀏覽至 CloudPilot] 前往 CloudPilot 入口網站。
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot 產品頁面](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0.  就這麼容易！  您會看到 CloudPilot 入口網站，並準備好開始使用 CloudPilot 訂用帳戶將您的應用程式移至 Microsoft Azure。
+0. 就這麼容易！  您會看到 CloudPilot 入口網站，並準備好開始使用 CloudPilot 訂用帳戶將您的應用程式移至 Microsoft Azure。
 
-0.  一旦成功建立您的帳戶，您會從 UnifyCloud VSS 支援收到一封電子郵件，確認您的帳戶已成功建立。
+0. 一旦成功建立您的帳戶，您會從 UnifyCloud VSS 支援收到一封電子郵件，確認您的帳戶已成功建立。
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot 確認電子郵件](_img/vs-cloudpilot/vs-cloudpilot-email.png)
-
 
 ## <a name="eligibility"></a>資格
 
@@ -69,25 +68,21 @@ ms.locfileid: "56842555"
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |無法使用  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 
-
-
 <sup>1</sup>  *包含：禁止轉售 (NFR)、FTE、最有價值專家 (MVP)、區域經理 (RD)、Microsoft 合作夥伴網路 (MPN)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合格訓練人員、BizSpark、Imagine*
-
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
 
-
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="support-resources"></a>支援資源
--  需要 CloudPilot 的使用說明嗎？  請參閱這些資源：
+- 需要 CloudPilot 的使用說明嗎？  請參閱這些資源：
     - 如需 UnifyCloud 產品的資訊，請[連絡 UnifyCloud](https://www.unifycloud.com/contacts/)。
     - [CloudPilot 使用者手冊](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
     - [提交支援要求](https://support.datacamp.com/hc/requests/new) \(英文\)
 
--  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
--  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+- 如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
 
 ## <a name="next-steps"></a>後續步驟
 

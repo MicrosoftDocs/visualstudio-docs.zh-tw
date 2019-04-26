@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0aebd0857ba847d5c5eba5e3a4a8a01da73ec159
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840027"
 ---
 # <a name="windows-script-interfaces"></a>Windows 指令碼的介面
 
@@ -62,25 +62,25 @@ Windows 指令碼設計可隔離只有製作環境才需要的介面項目；因
 
 下列清單提供主機與引擎之間的互動所需的步驟。
 
-1.  建立專案。 主機會載入專案或文件  (此步驟不是 Windows 指令碼特有的，但基於完整性而包含)。
+1. 建立專案。 主機會載入專案或文件  (此步驟不是 Windows 指令碼特有的，但基於完整性而包含)。
 
-2.  建立 Windows 指令碼引擎。 主機會呼叫 `CoCreateInstance` 來建立新的 Windows 指令碼引擎，並指定要使用之特定指令碼引擎的類別識別碼 (CLSID)。 例如，Internet Explorer 的 HTML 瀏覽器可透過 HTML \<OBJECT> 標記的 CLSID= 屬性，收到指令碼引擎類別識別碼。
+2. 建立 Windows 指令碼引擎。 主機會呼叫 `CoCreateInstance` 來建立新的 Windows 指令碼引擎，並指定要使用之特定指令碼引擎的類別識別碼 (CLSID)。 例如，Internet Explorer 的 HTML 瀏覽器可透過 HTML \<OBJECT> 標記的 CLSID= 屬性，收到指令碼引擎類別識別碼。
 
-3.  載入指令碼。 如果已持續保存指令碼內容，則主機會呼叫指令碼引擎的 `IPersist*::Load` 方法，以在其中餵入指令碼儲存體、資料流或屬性包。 否則，主機會使用 `IPersist*::InitNew` 或 [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) 方法來建立 Null 指令碼。 將指令碼維護為文字的主機，可以使用 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md)，以在呼叫 `IActiveScriptParse::InitNew` 之後，將指令碼的文字饋送至指令碼引擎。
+3. 載入指令碼。 如果已持續保存指令碼內容，則主機會呼叫指令碼引擎的 `IPersist*::Load` 方法，以在其中餵入指令碼儲存體、資料流或屬性包。 否則，主機會使用 `IPersist*::InitNew` 或 [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) 方法來建立 Null 指令碼。 將指令碼維護為文字的主機，可以使用 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md)，以在呼叫 `IActiveScriptParse::InitNew` 之後，將指令碼的文字饋送至指令碼引擎。
 
-4.  新增具名項目。 針對匯入至指令碼引擎命名空間的每個頂層具名項目 (例如頁面和表單)，主機都會呼叫 [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) 方法，以在引擎的命名空間中建立項目。 如果頂層具名項目已經是步驟 3 所載入指令碼之永續性狀態一部分，則這不是必要步驟。 主機不會使用 `IActiveScript::AddNamedItem` 來新增子層次具名項目 (例如 HTML 頁面上的控制項)；而是引擎會使用主機的 `ITypeInfo` 和 `IDispatch` 介面，從頂層項目間接取得子層次項目。
+4. 新增具名項目。 針對匯入至指令碼引擎命名空間的每個頂層具名項目 (例如頁面和表單)，主機都會呼叫 [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) 方法，以在引擎的命名空間中建立項目。 如果頂層具名項目已經是步驟 3 所載入指令碼之永續性狀態一部分，則這不是必要步驟。 主機不會使用 `IActiveScript::AddNamedItem` 來新增子層次具名項目 (例如 HTML 頁面上的控制項)；而是引擎會使用主機的 `ITypeInfo` 和 `IDispatch` 介面，從頂層項目間接取得子層次項目。
 
-5.  執行指令碼。 在 [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md) 方法中設定 SCRIPTSTATE_CONNECTED 旗標，主機即可讓引擎開始執行指令碼。 此呼叫可能會執行任何指令碼引擎建構工作 (包含靜態繫結、連結至事件 (請參閱下面)，以及執行程式碼)，其方式與指令碼 `main()` 函式類似。
+5. 執行指令碼。 在 [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md) 方法中設定 SCRIPTSTATE_CONNECTED 旗標，主機即可讓引擎開始執行指令碼。 此呼叫可能會執行任何指令碼引擎建構工作 (包含靜態繫結、連結至事件 (請參閱下面)，以及執行程式碼)，其方式與指令碼 `main()` 函式類似。
 
-6.  取得項目資訊。 指令碼引擎每次需要建立符號與頂層項目的關聯時，都會呼叫 [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md) 方法，以傳回所指定項目的相關資訊。
+6. 取得項目資訊。 指令碼引擎每次需要建立符號與頂層項目的關聯時，都會呼叫 [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md) 方法，以傳回所指定項目的相關資訊。
 
-7.  連結事件。 啟動實際指令碼之前，指令碼引擎透過 `IConnectionPoint` 介面，連線至所有相關物件的事件。
+7. 連結事件。 啟動實際指令碼之前，指令碼引擎透過 `IConnectionPoint` 介面，連線至所有相關物件的事件。
 
-8.  叫用屬性和方法。 指令碼執行時，指令碼引擎透過 `IDispatch::Invoke` 或其他標準 OLE 繫結機制，實現具名物件之方法和屬性的參考。
+8. 叫用屬性和方法。 指令碼執行時，指令碼引擎透過 `IDispatch::Invoke` 或其他標準 OLE 繫結機制，實現具名物件之方法和屬性的參考。
 
 ## <a name="windows-script-terms"></a>Windows 指令碼條款
 
-此清單包含此文件中所使用之指令碼相關術語的定義。
+此清單包含本文件中所使用之指令碼相關術語的定義。
 
 |詞彙|定義|
 |----------|----------------|
