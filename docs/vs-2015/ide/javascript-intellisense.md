@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af1484bef2baadf961eb00c952a50abec5c4a9f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412299"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 - [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)] (如果您使用的是具備 AJAX 能力的 ASP.NET Web 應用程式)。
 
     > [!NOTE]
-    >  IntelliSense 不支援在 HTML 項目上使用事件處理常式屬性的指令碼，或定義於 `href` 屬性的指令碼。
+    > IntelliSense 不支援在 HTML 項目上使用事件處理常式屬性的指令碼，或定義於 `href` 屬性的指令碼。
 
 ## <a name="ProcessingIntelliSenseInformation"></a> 處理 IntelliSense 資訊
  為了提供 JavaScript IntelliSense，語言服務會執行下列作業：
@@ -189,7 +189,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
  `/// <reference path="~/Services/MyService.asmx" />`
 
 > [!NOTE]
->  JavaScript IntelliSense 不支援內含在 Web 應用程式專案 (WAP) 之 Web 服務 (.asmx) 檔案中的指令碼。
+> JavaScript IntelliSense 不支援內含在 Web 應用程式專案 (WAP) 之 Web 服務 (.asmx) 檔案中的指令碼。
 
  下列範例示範如何建立網頁架構指令碼的參考。
 
@@ -233,18 +233,18 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
   在大部分情況下，您不需要修改參考群組。 不過，如果您要進行變更，可以使用 JavaScript 程式碼編輯器的設定選項來指定參考群組中的檔案。 如需使用這項功能的相關指示，請參閱[選項、文字編輯器、JavaScript、IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md)。
 
 > [!TIP]
->  IntelliSense 參考通常是用來為全域物件和 IntelliSense [擴充功能](#Extensibility)提供 IntelliSense 支援。 您也可以為必須在執行階段使用指令碼載入器載入的指令碼使用這項功能。
+> IntelliSense 參考通常是用來為全域物件和 IntelliSense [擴充功能](#Extensibility)提供 IntelliSense 支援。 您也可以為必須在執行階段使用指令碼載入器載入的指令碼使用這項功能。
 
 ### <a name="remote-file-references"></a>遠端檔案參考
  您可以指示 Visual Studio 下載 JavaScript 檔案中參考的遠端 JavaScript 檔案，以便為遠端檔案或程式庫提供 IntelliSense 支援。 當您使用此功能時，檔案會在您將它們包含在 JavaScript 檔案中做為參考時下載。
 
 > [!NOTE]
->  除了 Web 專案之外，這項功能僅適用於在專案的內容之外開啟的 JavaScript 檔案。 Web 專案預設會下載專案中參考的遠端檔案。
+> 除了 Web 專案之外，這項功能僅適用於在專案的內容之外開啟的 JavaScript 檔案。 Web 專案預設會下載專案中參考的遠端檔案。
 
  如需使用這項功能的相關指示，請參閱[選項、文字編輯器、JavaScript、IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md)。
 
 > [!WARNING]
->  如果啟用了此功能，並觀察到程式碼編輯器的效能變慢，建議您將它停用。
+> 如果啟用了此功能，並觀察到程式碼編輯器的效能變慢，建議您將它停用。
 
 ### <a name="XMLDocComments"></a> XML 文件註解
  XML 文件註解是您加入至指令碼的程式碼項目文字描述。 這些文字描述會在您參考註解指令碼時，在 IntelliSense 中顯示。 例如，您可以提供函式的參數和傳回值的相關資訊。 XML 文件註解僅能從參考的檔案、組件和服務取得。 如需詳細資訊，請參閱 [XML 文件註解](../ide/xml-documentation-comments-javascript.md)和[建立 XML 文件註解](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)。
@@ -263,7 +263,7 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
  ASP.NET AJAX 也支援 JavaScript IntelliSense。 ASP.NET AJAX 包含了用戶端架構，可擴充 ECMAScript (JavaScript) 內所提供的標準類型。 為了讓 JavaScript IntelliSense 提供與 ASP.NET AJAX 物件有關的詳細資料，在整個 [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)] 中已加入了 XML 文件註解。 這些 XML 文件註解會在您使用 ASP.NET AJAX Library 內含的類型及成員時顯示。
 
 > [!NOTE]
->  JavaScript IntelliSense 不會顯示私用成員。 私用成員在 ASP.NET AJAX 中是以底線 (_) 為起始的成員來代表。
+> JavaScript IntelliSense 不會顯示私用成員。 私用成員在 ASP.NET AJAX 中是以底線 (_) 為起始的成員來代表。
 
 ## <a name="Extensibility"></a> JavaScript IntelliSense 擴充性
  JavaScript 語言服務提供的物件和函式，可讓您為使用協力廠商程式庫的開發人員改變 IntelliSense 經驗。 當預設語言服務無法提供您要為客戶提供的所有資訊時，這些功能特別有用。 如需詳細資訊，請參閱[擴充 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)。
