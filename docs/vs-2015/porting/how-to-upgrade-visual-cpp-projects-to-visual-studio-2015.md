@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 5b0153560173cf8b10ab5e20ebffd47d40baf735
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 198a848f953881af5a7ac4b042c74b368d202d06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425893"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>如何：將 Visual C++ 專案升級為 Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60095739"
     - 若要更新專案，您可允許 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 進行本主題稍後說明的變更。 如果您的方案有一個以上的 Visual C++ 專案，則必須全部更新。
 
         > [!NOTE]
-        >  如果您在第一次提示時拒絕更新，稍後可以選取 [專案]  功能表上的 [更新 VC++ 專案]  更新專案。 如果命令未出現，則不需要更新。
+        > 如果您在第一次提示時拒絕更新，稍後可以選取 [專案]  功能表上的 [更新 VC++ 專案]  更新專案。 如果命令未出現，則不需要更新。
 
 ## <a name="upgrading-a-visual-c-project"></a>升級 Visual C++ 專案
  如果您允許 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 自動更新專案，則會進行下列變更：

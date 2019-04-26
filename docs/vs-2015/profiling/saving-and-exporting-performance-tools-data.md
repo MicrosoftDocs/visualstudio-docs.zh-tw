@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c599419d40dc1de2fa2e4ff4b41dd50f762f57fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3be6d5d732e5cbb2050c68ac8c7db722c3f709f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428097"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>儲存和匯出報告效能工具資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "60073783"
  您可以從 .vsp 檔案或 .vsps 分析資料檔案將一或多個報告檢視匯出為逗點分隔的檔案或 XML 檔案。 您可於匯出前，在 [報告] 檢視視窗中篩選資料，或是從 [效能總管]  視窗匯出整個資料檔案的報告檢視。  
   
 > [!NOTE]
->  您也可以從 [報表] 檢視視窗將選取的資料列作為定位字元分隔值進行複製並貼上。  
+> 您也可以從 [報表] 檢視視窗將選取的資料列作為定位字元分隔值進行複製並貼上。  
   
 #### <a name="to-export-performance-reports-from-the-performance-explorer-window"></a>從 [效能總管] 視窗匯出效能報告  
   

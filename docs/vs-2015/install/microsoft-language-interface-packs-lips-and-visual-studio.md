@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433003"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft 語言介面套件 (LIP) 和 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60096500"
  Visual Studio 使用統一的語言套件。 若要為這些產品安裝多個語言版本，您必須先安裝某個語言的完整產品，再安裝一個或多個語言套件。
 
 > [!NOTE]
->  Visual Studio 不支援在同一部電腦上多次安裝不同語言版本的完整產品。 安裝某個語言的完整產品之後，您必須使用語言套件來加入其他語言版本。 在 Express 版中，您仍可以在同一部電腦上多次安裝不同語言版本的完整產品。
+> Visual Studio 不支援在同一部電腦上多次安裝不同語言版本的完整產品。 安裝某個語言的完整產品之後，您必須使用語言套件來加入其他語言版本。 在 Express 版中，您仍可以在同一部電腦上多次安裝不同語言版本的完整產品。
 
 ### <a name="support-for-code-pages"></a>字碼頁支援
  如果文字中包含不屬於目前字碼頁的字元，某些 Visual Studio 工具將無法正確顯示文字。 這些工具會改為顯示問號，或表示文字已損毀。 受影響的工具或區域如下：
@@ -76,7 +76,7 @@ ms.locfileid: "60096500"
 1. 依序按一下 [開始] 和 [控制台]，然後開啟 [地區及語言選項] (在 [!INCLUDE[win8](../includes/win8-md.md)] 中為 [區域])。
 
     > [!NOTE]
-    >  您必須是電腦的系統管理員，才能依照這些步驟進行。
+    > 您必須是電腦的系統管理員，才能依照這些步驟進行。
 
 2. 按一下 [進階] 按鈕。
 
@@ -88,7 +88,7 @@ ms.locfileid: "60096500"
  當您在同一部電腦上安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的多個語言版本時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] UI 會預設為 [與 Microsoft Windows 相同]。 這項設定表示 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會以指定為作業系統顯示語言的語言來顯示 UI 文字。
 
 > [!NOTE]
->  如果將 Visual Studio 設定為使用 [與 Microsoft Windows 相同]，且未安裝相符的 Visual Studio 語言套件，則 Visual Studio 會使用 Visual Studio 第一次安裝的語言。
+> 如果將 Visual Studio 設定為使用 [與 Microsoft Windows 相同]，且未安裝相符的 Visual Studio 語言套件，則 Visual Studio 會使用 Visual Studio 第一次安裝的語言。
 
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>設定 Visual Studio 中 UI 文字所使用的語言
 

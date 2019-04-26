@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 70bebfab781ceb1d608d13a8afad24ee06cb9c28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d2349c21d55c20bcb3bcd50ab96f383a9afcc00b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426117"
 ---
 # <a name="msbuild-task"></a>MSBuild 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "59656735"
  不過，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 提供兩個新的保留中繼資料項目 (Properties 和 AdditionalProperties)，讓您能夠彈性地使用 [MSBuild 工作](../msbuild/msbuild-task.md)，針對已建置的不同專案傳遞不同的屬性。  
   
 > [!NOTE]
->  這些新的中繼資料項目僅適用於 [MSBuild 工作](../msbuild/msbuild-task.md)的 Projects 屬性中所傳遞的項目。  
+> 這些新的中繼資料項目僅適用於 [MSBuild 工作](../msbuild/msbuild-task.md)的 Projects 屬性中所傳遞的項目。  
   
 ## <a name="multi-processor-build-benefits"></a>多處理器組建的優點  
  使用這個新中繼資料主要優點之一是發生在您於多處理器系統上同時建置專案時。 中繼資料可讓您將所有專案合併成單一 [MSBuild 工作](../msbuild/msbuild-task.md)呼叫，而不需執行任何批次處理或條件式 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工作。 而且，當您只呼叫單一 [MSBuild 工作](../msbuild/msbuild-task.md)時，將會同時建置 Projects 屬性中列出的所有專案 (不過，只有在 `BuildInParallel=true` 屬性出現於 [MSBuild 工作](../msbuild/msbuild-task.md)時)。如需詳細資訊，請參閱[同時建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)。  
@@ -77,7 +77,7 @@ ms.locfileid: "59656735"
  常見的案例是當您使用 [MSBuild 工作](../msbuild/msbuild-task.md)來建置多個方案檔時，只會使用不同的建置組態。 您可能想要使用 Debug 組態來建置方案 a1，使用 Release 組態來建置方案 a2。 在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 中，這個專案檔看起來如下：  
   
 > [!NOTE]
->  在下列範例中，"…" 代表其他方案檔。  
+> 在下列範例中，"…" 代表其他方案檔。  
   
 ### <a name="aproj"></a>a.proj  
   

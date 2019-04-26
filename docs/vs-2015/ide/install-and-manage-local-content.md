@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a5ad9c363a590ef692bdcd1d8c00727d55113b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412363"
 ---
 # <a name="install-and-manage-local-content"></a>安裝與管理本機內容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60097410"
 1. 在 [管理內容] 索引標籤上，選擇 [磁碟] 選項按鈕。  
   
     > [!NOTE]
-    >  如果系統管理員阻止您修改內容安裝來源，則 [磁碟] 選項無法使用。 如需詳細資訊，請參閱[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)。  
+    > 如果系統管理員阻止您修改內容安裝來源，則 [磁碟] 選項無法使用。 如需詳細資訊，請參閱[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)。  
   
 2. 請執行下列其中一個步驟：  
   
@@ -60,7 +60,7 @@ ms.locfileid: "60097410"
  如果您在本機電腦上下載及安裝內容，就可以不使用網際網路連線來檢視主題。  
   
 > [!IMPORTANT]
->  若要安裝內容，您必須以具有系統管理權限的帳戶登入。  
+> 若要安裝內容，您必須以具有系統管理權限的帳戶登入。  
   
  如果 Visual Studio IDE 設定為英文以外的語言，您可以安裝英文內容、當地語系化內容或兩者兼具。 不過，如果您只安裝英文版，且清除 [檢視器選項] 對話方塊中的 [將英文內容包含在所有瀏覽索引標籤和 F1 要求中] 核取方塊，則不會出現任何內容。  
   
@@ -80,7 +80,7 @@ ms.locfileid: "60097410"
  您可以從電腦移除不要的內容，以節省磁碟空間。  
   
 > [!IMPORTANT]
->  您必須擁有系統管理權限才能移除內容。  
+> 您必須擁有系統管理權限才能移除內容。  
   
  如果 Visual Studio IDE 設定為英文以外的語言，而您又移除當地語系化內容和清除 [檢視器選項] 對話方塊中的 [將英文內容包含在所有瀏覽索引標籤和 F1 要求中] 核取方塊，則不會出現任何內容。  
   
@@ -100,7 +100,7 @@ ms.locfileid: "60097410"
  狀態列會指出您所安裝內容的更新何時可用。  
   
 > [!IMPORTANT]
->  如果您想要讓說明檢視器自動檢查線上更新，則必須開啟 [檢視器選項] 對話方塊，然後選取 [連線檢查內容更新] 核取方塊。  
+> 如果您想要讓說明檢視器自動檢查線上更新，則必須開啟 [檢視器選項] 對話方塊，然後選取 [連線檢查內容更新] 核取方塊。  
   
 #### <a name="to-update-local-content"></a>更新本機內容  
   
@@ -112,7 +112,7 @@ ms.locfileid: "60097410"
  您可以從本機電腦移動已安裝的內容到網路共用或本機電腦上的另一個分割，以節省磁碟空間。  
   
 > [!IMPORTANT]
->  若要移動內容，您必須以具有系統管理權限的帳戶登入。  
+> 若要移動內容，您必須以具有系統管理權限的帳戶登入。  
   
 #### <a name="to-move-local-content"></a>移動本機內容  
   

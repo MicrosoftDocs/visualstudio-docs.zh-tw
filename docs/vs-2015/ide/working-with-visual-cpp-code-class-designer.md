@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836f3485eb923476271d6a2bae7899d66bd67db7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: faf99505c556594ad1281b0341ac1cad9acbae81
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443384"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>使用 Visual C++ 程式碼 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "60054621"
 - Typedef  
   
 > [!NOTE]
->  這與 UML 類別圖不同，後者可在「模型專案」中建立。 如需詳細資訊，請參閱 [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)。  
+> 這與 UML 類別圖不同，後者可在「模型專案」中建立。 如需詳細資訊，請參閱 [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)。  
   
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>類型解析與顯示問題的疑難排解  
   

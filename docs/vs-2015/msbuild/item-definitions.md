@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433580"
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60090755"
  在 ItemDefinitionGroup 中定義的項目中繼資料只是預設中繼資料的宣告。 除非您定義一個使用 ItemGroup 來包含中繼資料值的「項目」，否則不會套用中繼資料。  
   
 > [!NOTE]
->  在本主題的許多範例中都有顯示 ItemDefinitionGroup 元素，但為了清楚起見，已省略其對應的 ItemGroup 定義。  
+> 在本主題的許多範例中都有顯示 ItemDefinitionGroup 元素，但為了清楚起見，已省略其對應的 ItemGroup 定義。  
   
  在 ItemGroup 中明確定義之中繼資料的優先順序會高於 ItemDefinitionGroup 中的中繼資料。 ItemDefinitionGroup 中的中繼資料只會套用至 ItemGroup 中未定義的中繼資料。 例如：  
   
@@ -61,7 +61,7 @@ ms.locfileid: "60090755"
  在此範例中，預設中繼資料 "m" 會套用至項目 "i"，因為項目 "i" 未明確定義中繼資料 "m"。 不過，預設中繼資料 "n" 不會套用至項目 "i"，因為項目 "i" 已經定義中繼資料 "n"。  
   
 > [!NOTE]
->  XML 元素和參數名稱有區分大小寫。 項目中繼資料和項目\/屬性名稱不區分大小寫。 因此，ItemDefinitionGroup 項目如果名稱只有大小寫不同，應該視為相同的 ItemGroup。  
+> XML 元素和參數名稱有區分大小寫。 項目中繼資料和項目\/屬性名稱不區分大小寫。 因此，ItemDefinitionGroup 項目如果名稱只有大小寫不同，應該視為相同的 ItemGroup。  
   
 ## <a name="value-sources"></a>值來源  
  ItemDefinitionGroup 中所定義之中繼資料的值可以來自許多不同的來源，如下所示：  
@@ -83,7 +83,7 @@ ms.locfileid: "60090755"
 - CDATA 區段 \<\!\[CDATA\[此處的任何項目都不會剖析\]\]\>  
   
 > [!NOTE]
->  來自 ItemGroup 的項目中繼資料在 ItemDefinitionGroup 中繼資料宣告中沒有用處，因為系統會先處理 ItemDefinitionGroup 元素，然後才處理 ItemGroup 元素。  
+> 來自 ItemGroup 的項目中繼資料在 ItemDefinitionGroup 中繼資料宣告中沒有用處，因為系統會先處理 ItemDefinitionGroup 元素，然後才處理 ItemGroup 元素。  
   
 ## <a name="additive-and-multiple-definitions"></a>新增及多個定義  
  當您新增定義或使用多個 ItemDefinitionGroups 時，請記住下列事項：  
@@ -128,7 +128,7 @@ ms.locfileid: "60090755"
  在此範例中，中繼資料 "m" 的先前定義值 \(m1\) 會新增到新的值 \(m2\)，因此最終的值會是 "m1;m2"。  
   
 > [!NOTE]
->  這也可能發生在相同的 ItemDefinitionGroup 中。  
+> 這也可能發生在相同的 ItemDefinitionGroup 中。  
   
  當您覆寫先前定義的中繼資料時，最後一個規格會具有最高的優先順序。 在下列範例中，中繼資料 "m" 的最終值會從 "m1" 變成 "m1a"。  
   
@@ -159,7 +159,7 @@ ms.locfileid: "60090755"
  在此案例中，只有當 "Configuration" 屬性的值為 "Debug" 時，才會包含項目 "i" 上的預設中繼資料 "m1"。  
   
 > [!NOTE]
->  條件中僅支援本機中繼資料參考。  
+> 條件中僅支援本機中繼資料參考。  
   
  對先前 ItemDefinitionGroup 中所定義之中繼資料的參考是項目 (而非定義群組) 的本機中繼資料參考。 亦即，參考的範圍是項目特定的。 例如：  
   

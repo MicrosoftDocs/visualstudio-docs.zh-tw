@@ -17,32 +17,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efbbef540ddd7759fe0614eecccc663368bd23b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8162e44d92399a4b2031f6dc30b1f9dc56ae22e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633612"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059619"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>HOW TO：在 BDC 功能中包含自訂組件
   您的專案可以參考組件，從相同的方案中其他專案。 不過，您必須將這些組件加入功能檔的專案使用**指派參考組件 Lobsystem**  對話方塊。
 
 ### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>若要納入的商務資料連接 (BDC) 功能的自訂組件
 
-1.  在 [**方案總管] 中**，選擇包含 BDC 模型的資料夾。
+1. 在 [**方案總管] 中**，選擇包含 BDC 模型的資料夾。
 
-2.  在 [ **檢視** ] 功能表中，按一下 [ **屬性視窗**]。
+2. 在 [ **檢視** ] 功能表中，按一下 [ **屬性視窗**]。
 
-3.  在 [**屬性**] 視窗中，選擇**組件**屬性，然後按一下 省略符號按鈕 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile設計工具橢圓形"))。
+3. 在 **屬性**] 視窗中，選擇**組件**屬性，然後按一下 省略符號按鈕 (![ASP.NET Mobile 設計工具橢圓形](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile設計工具橢圓形"))。
 
      **指派參考組件 Lobsystem**  對話方塊隨即出現。
 
-4.  在 **選取的組件**清單中，選擇自訂組件。
+4. 在 **選取的組件**清單中，選擇自訂組件。
 
     > [!NOTE]
     >  組件才會出現在**指派參考組件 Lobsystem**對話方塊中，如果您已新增至專案，其中包含組件的參考。 如需詳細資訊，請參閱[如何：新增或移除參考使用加入參考對話方塊](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。
 
-5.  在 **參考屬性**群組中，開啟清單中所顯示**LobSystem 範圍**屬性，選擇 LOB 系統的方法，使用自訂的組件，然後選擇  **確定**  按鈕。
+5. 在 **參考屬性**群組中，開啟清單中所顯示**LobSystem 範圍**屬性，選擇 LOB 系統的方法，使用自訂的組件，然後選擇  **確定**  按鈕。
 
     > [!NOTE]
     >  偵錯自訂組件中的程式碼，您必須新增至方案套件的組件。 如需詳細資訊，請參閱[如何：新增和移除其他組件](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。

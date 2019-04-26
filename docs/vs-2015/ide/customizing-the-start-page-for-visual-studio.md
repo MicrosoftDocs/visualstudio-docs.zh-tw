@@ -17,12 +17,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd47441a0e9b1c97851aa8a6acac712c51a4493a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c5897c6ffc2b4530ce74b29114c84cd3556f25cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437560"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>自訂 Visual Studio 的起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60062928"
     - 從 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)、其他網站，或近端內部網路上的網頁來進行安裝。
 
         > [!NOTE]
-        >  如果您喜歡舊版 Visual Studio 的頁面，則可以使用 Visual Studio SDK 來升級頁面。 請參閱[如何：升級 Visual Studio 自訂起始畫面](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)。
+        > 如果您喜歡舊版 Visual Studio 的頁面，則可以使用 Visual Studio SDK 來升級頁面。 請參閱[如何：升級 Visual Studio 自訂起始畫面](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)。
 
          開啟某個含有自訂起始頁的 .vsix 檔，或複製起始頁檔案並貼到電腦上的 **%USERPROFILE% \My Documents\Visual Studio 2015\StartPages** 資料夾中。
 
@@ -59,7 +59,7 @@ ms.locfileid: "60062928"
 4. 在 [自訂起始頁] 清單中，選擇您要的頁面。
 
 > [!NOTE]
->  如果自訂起始頁中的錯誤導致 Visual Studio 當掉，請以安全模式啟動 Visual Studio，然後設定它使用預設起始頁。 請參閱 [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)。
+> 如果自訂起始頁中的錯誤導致 Visual Studio 當掉，請以安全模式啟動 Visual Studio，然後設定它使用預設起始頁。 請參閱 [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)。
 
 ## <a name="see-also"></a>請參閱
  [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [建立您自己的起始頁](../misc/creating-your-own-start-page.md)

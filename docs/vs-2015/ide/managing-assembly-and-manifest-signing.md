@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63a2e1b98baa61ef0a83c1de65653dd2e57a8b2c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d3f842d45df1525cb3f736019eeec52dd65b67aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443745"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "54755460"
  指定金鑰檔。 如果您選擇建立新的金鑰檔，請注意新的金鑰檔一律使用 .pfx 格式建立。 您需要新檔案的名稱和密碼。  
   
 > [!WARNING]
->  您應該一律以密碼保護金鑰檔，以防止他人使用您的金鑰檔。 您也可以使用提供者或憑證存放區來保護您的金鑰。  
+> 您應該一律以密碼保護金鑰檔，以防止他人使用您的金鑰檔。 您也可以使用提供者或憑證存放區來保護您的金鑰。  
   
  您也可以指向已經建立的金錀。 如需建立金鑰的詳細資訊，請參閱[如何：建立公用/私密金鑰組](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)。  
   

@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aadb6b0212f760ab16efd677e02e1d922ae52e12
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 266db8199160f58c62b7587f55029cff2bb26c29
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441694"
 ---
 # <a name="miscellaneous-files"></a>其他檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "59658485"
  [其他檔案] 資料夾會將檔案呈現為連結。 雖然此資料夾不是方案的一部分，但是開啟方案時，會重新開啟在最後一次關閉方案時開啟的部分或所有其他檔案 (視資料夾的設定而定)。  
   
 > [!NOTE]
->  未出現在 [其他檔案] 資料夾中的檔案有些是您無法在 IDE 內修改的檔案 (例如 .zip 檔案和 .doc 檔案)。 IDE 將不會追蹤只能透過外部編輯器修改的檔案。  
+> 未出現在 [其他檔案] 資料夾中的檔案有些是您無法在 IDE 內修改的檔案 (例如 .zip 檔案和 .doc 檔案)。 IDE 將不會追蹤只能透過外部編輯器修改的檔案。  
   
 ## <a name="commands-available-in-the-ide"></a>IDE 中可用的命令  
  功能表、工具列和其包含的命令會根據所開啟檔案的格式變更。 例如，開啟文字檔時，[文字編輯器] 工具列會出現，並且可以使用其命令。 如果您接著開啟 XML 結構描述檔案，則會出現 [XML 結構描述] 工具列。 編輯 XML 結構描述時，無法使用 [文字編輯器] 工具列的命令 (或工具列本身)。 XML 結構描述是使用中視窗，因而包含目前選取項目內容。 切換專案檔與其他檔案時，所有專案相關命令都會消失，只會出現與其他檔案直接相關的命令。  
