@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548943b9d203cf84773385f6b12d70dcb246b708
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7da05a71d5de4a8f1ec6ef5fbb27a2e74220a1ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993224"
 ---
 # <a name="sgen-task"></a>SGen 工作
 針對指定組件中的型別建立 XML 序列化組件。 此工作會包裝 XML 序列化程式產生器工具 (*Sgen.exe*)。 如需詳細資訊，請參閱 [XML 序列化程式產生器工具 (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)。
 
 ## <a name="parameters"></a>參數
  下表說明 `SGen` 工作的參數。
-
 
 | 參數 | 說明 |
 |-----------------------------| - |

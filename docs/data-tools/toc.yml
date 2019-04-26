@@ -209,7 +209,7 @@
         - name: O/R 設計工具訊息
           href: o-r-designer-messages.md
           items:
-            - name: 無法刪除所選取的類別，因為它是用來當做一或多個 DataContext 方法的傳回型別。
+            - name: 無法刪除所選取的類別，因為它是用來當做一或多個 DataContext 方法的傳回類型。
               href: the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md
             - name: 連接字串包含具有純文字密碼的認證，並且不使用整合式安全性
               href: the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security.md
@@ -229,7 +229,7 @@
               href: this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md
             - name: 一個或多個選取的項目包含設計工具不支援的資料類型
               href: one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer.md
-            - name: 如果變更 DataContext 方法的傳回型別，將無法復原
+            - name: 如果變更 DataContext 方法的傳回類型，將無法復原
               href: changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md
             - name: 偵錯期間無法修改設計工具
               href: the-designer-cannot-be-modified-while-debugging.md

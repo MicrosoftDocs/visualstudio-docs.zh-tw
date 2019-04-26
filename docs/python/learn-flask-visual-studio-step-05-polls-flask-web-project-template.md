@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 734a192a00ee0c509ed16e71a8629837155888ae
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957008"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>步驟 5：使用 Polls Flask Web 專案範本
 
-**上一步：[使用完整的 Flask Web 專案範本](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**先前步驟：[使用完整的 Flask Web 專案範本](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 在了解 Visual Studio 的「Flask Web 專案」範本之後，您現在可以研究一下第三個 Flask 範本「投票 Flask Web 專案」，此專案以相同的程式碼基底為基礎。
 

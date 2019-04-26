@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06c0b46c1c9fbb8aef5a2e31e42a02fe6a0db494
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3fb8f735478da16989830a1a68c239b9a2a98496
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975199"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>HOW TO：將類別圖表匯出為影像
 
@@ -25,15 +25,15 @@ ms.locfileid: "55910530"
 
 ## <a name="export-a-diagram"></a>匯出圖表
 
-1.  開啟您的類別圖表 (*.cd*) 檔案。
+1. 開啟您的類別圖表 (*.cd*) 檔案。
 
-2.  從 [類別圖表] 功能表或圖表介面捷徑功能表，選擇 [將圖表匯出為影像]。
+2. 從 [類別圖表] 功能表或圖表介面捷徑功能表，選擇 [將圖表匯出為影像]。
 
-3.  選取圖表。
+3. 選取圖表。
 
-4.  選取您要的格式。
+4. 選取您要的格式。
 
-5.  選擇 [匯出] 以完成匯出。
+5. 選擇 [匯出] 以完成匯出。
 
 若要自動更新與其他文件連結的匯出影像，請在 Visual Studio 中重新匯出圖表。
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794322"
 ---
 # <a name="per-thread-summary-report"></a>個別執行緒摘要報表
 此橫條圖會顯示目前可見的時間範圍內，每個未隱藏執行緒在每個活動類別所花費的時間比例。 「執行」表示執行緒正在執行；所有其他分類則表示執行緒正在等待某個項目。

@@ -8,11 +8,11 @@ ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: 1d560e3fd383e3db19c664bf027470c8da224fd2
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62987537"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>連線到 Team Foundation 版本控制
 
@@ -189,4 +189,4 @@ TFVC 延伸模組的更新會定期進行。 若要存取更新，請從功能�
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用 Visual Studio 在 TFVC 中開發和共用您的程式碼 (Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)
+- [使用 Visual Studio (Windows) 在 TFVC 中開發和共用您的程式碼](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

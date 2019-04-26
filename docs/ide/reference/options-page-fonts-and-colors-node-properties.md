@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b5363d71082128c13146c445fe312424be7e4340
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945590"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>字型和色彩節點屬性、選項頁
 本文件說明 [工具] 視窗的字型和色彩屬性，它是登錄顯示在 [選項] 對話方塊的 [環境] 類別的 [字型和色彩] 中。 這支援可變換色彩項目群組的動態本質，如果安裝或解除安裝 VSPackage 時可予以變更。
@@ -34,7 +34,7 @@ ms.locfileid: "55907357"
 
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 
-|屬性項目名稱|值|描述|
+|屬性項目名稱|值|說明|
 | - |-----------|-----------------|
 |FontFamily|Get/Set (字串)|要使用的字型名稱，例如「新細明體」。|
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|<xref:EnvDTE.vsFontCharSet> 值，指定要使用的字元集類型，例如希伯來文或俄文。|

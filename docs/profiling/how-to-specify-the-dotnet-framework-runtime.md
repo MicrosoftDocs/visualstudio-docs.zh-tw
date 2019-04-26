@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d9c62e430d19bbd2c03afbb4db76fca56563cb3c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996312"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>作法：指定 .NET Framework 執行階段
+# <a name="how-to-specify-the-net-framework-runtime"></a>HOW TO：指定 .NET Framework 執行階段
 
 使用 [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 版本，應用程式就可以由使用不同版本的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 執行階段所建置的模組組成。 根據預設，Visual Studio 分析工具預設會對應用程式所載入的第一個執行階段進行分析。 當您以程式碼剖析工具啟動應用程式時，以及當您將程式碼剖析工具附加至已在執行的應用程式時，都可以指定要進行程式碼剖析的執行階段。
 

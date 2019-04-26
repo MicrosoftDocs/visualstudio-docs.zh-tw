@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 0ab7293a7b7d956778d1dbab568d609e6bf3d644
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 43b7918dfba6ff1d8076d3173900ecdc1b1223a3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998384"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 for Mac 導覽
 
@@ -122,7 +122,6 @@ Visual Studio for Mac 與 Git 和子版本原始檔控制系統整合。 進行�
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
-
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio IDE (在 Windows 上)](/visualstudio/ide/visual-studio-ide)
+- [Visual Studio IDE (Windows 上)](/visualstudio/ide/visual-studio-ide)

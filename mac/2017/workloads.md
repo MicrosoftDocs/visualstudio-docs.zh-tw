@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 12/05/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
 ms.openlocfilehash: 959af3acf8c6da1437ffc6efd66e984902e9e94a
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985437"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Visual Studio for Mac 工作負載
 

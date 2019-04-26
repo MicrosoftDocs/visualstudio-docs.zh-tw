@@ -1,52 +1,45 @@
-items:
 - name: Visual Studio Tools for AI
   href: index.yml
   items:
-  - name: 總覽
-    items:
-    - name: 關於適用於 AI 的 Visual Studio Tools
-      href: about-ai-tools.md
-  - name: 安裝
-    href: installation.md
-  - name: 快速入門
-    items:
-    - name: Tensorflow + Python
-      href: tensorflow-local.md
-  - name: 教學課程
-    items:
-    - name: TensorFlow + Azure 深度學習 VM
-      href: tensorflow-vm.md
-  - name: 作法指南
-    items:
-    - name: 建立專案
+    - name: 總覽
       items:
-      - name: 從資源庫範例建立專案
-        href: create-project-gallery.md
-      - name: 從現有程式碼建立專案
-        href: create-project-existing.md
-      - name: 從範本建立專案
-        href: create-project.md
-      - name: 從 GitHub 存放庫建立專案
-        href: create-project-repo.md
-    - name: 定型您的模型
-      href: train-model.md
-    - name: 檢視作業詳細資料
-      href: job-details.md
-    - name: 監視 GPU 使用率
-      href: monitor-gpu.md
-    - name: 監視 TensorBoard
-      href: monitor-tensorboard.md
-    - name: 管理儲存體
-      href: manage-storage.md
-  - name: 範例
-    items:
-    - name: GitHub
-      href: https://github.com/Microsoft/samples-for-ai
-    - name: 機器學習服務資源庫
-      href: https://gallery.cortanaintelligence.com/projects
-ms.openlocfilehash: 06ed7a4c59a97742f3055d0d5084f28f9022adc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624382"
+        - name: 關於適用於 AI 的 Visual Studio Tools
+          href: about-ai-tools.md
+    - name: 安裝
+      href: installation.md
+    - name: 快速入門
+      items:
+        - name: Tensorflow + Python
+          href: tensorflow-local.md
+    - name: 教學課程
+      items:
+        - name: TensorFlow + Azure 深度學習 VM
+          href: tensorflow-vm.md
+    - name: 作法指南
+      items:
+        - name: 建立專案
+          items:
+            - name: 從資源庫範例建立專案
+              href: create-project-gallery.md
+            - name: 從現有程式碼建立專案
+              href: create-project-existing.md
+            - name: 從範本建立專案
+              href: create-project.md
+            - name: 從 GitHub 存放庫建立專案
+              href: create-project-repo.md
+        - name: 定型您的模型
+          href: train-model.md
+        - name: 檢視作業詳細資料
+          href: job-details.md
+        - name: 監視 GPU 使用率
+          href: monitor-gpu.md
+        - name: 監視 TensorBoard
+          href: monitor-tensorboard.md
+        - name: 管理儲存體
+          href: manage-storage.md
+    - name: 範例
+      items:
+        - name: GitHub
+          href: 'https://github.com/Microsoft/samples-for-ai'
+        - name: 機器學習服務資源庫
+          href: 'https://gallery.cortanaintelligence.com/projects'
