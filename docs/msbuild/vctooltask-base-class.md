@@ -12,11 +12,11 @@ ms.author: mblome
 ms.workload:
 - multiple
 ms.openlocfilehash: 7bdad856a6ea0ec6cca8292bc3095f51c500bcb1
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970714"
 ---
 # <a name="vctooltask-base-class"></a>VCToolTask 基底類別
 

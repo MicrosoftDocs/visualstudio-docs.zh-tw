@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8978d02bd7ca9ca2be49493edede7bf90af5a421
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62776863"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>呼叫端/被呼叫端檢視 - 檢測資料
 [呼叫端/被呼叫端] 檢視會在呼叫樹狀圖中顯示所選取函式及其父函式和子函式的分析資訊。 [呼叫端/被呼叫端] 檢視包含三個方格。

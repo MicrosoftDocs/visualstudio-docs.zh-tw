@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995252"
 ---
 # <a name="immediate-window"></a>即時運算視窗
 

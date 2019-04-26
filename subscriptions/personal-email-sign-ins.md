@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Visual Studio 訂閱 – 我為何會針對我的訂閱者看見 Hotmail 或 Gmail 地址？
 searchscope: VS Subscription
 ms.openlocfilehash: 0ba4029fcec0c8d35a58def14ab38afbb79e2fee
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539452"
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Visual Studio 訂用帳戶 - 我為何會針對我的訂閱者看見 Hotmail 或 Gmail 地址？
 

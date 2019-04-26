@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51534979a96e0fb924d164dd1cc8d2fcc7bab04a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817256"
 ---
 # <a name="lib-task"></a>LIB 工作
 包裝 Microsoft 32 位元程式庫管理員工具 *lib.exe*。 程式庫管理員會建立並管理通用物件檔案格式 (COFF) 物件檔的程式庫。 程式庫管理員也可以建立匯出檔和匯入程式庫，以參考匯出的定義。 如需詳細資訊，請參閱 [LIB 參考](/cpp/build/reference/lib-reference)和[執行 LIB](/cpp/build/reference/running-lib)。

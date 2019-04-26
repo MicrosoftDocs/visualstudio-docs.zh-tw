@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b23de974e7d8587cc7185eb9bb01d029fc2dcc27
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569719"
 ---
 # <a name="code-analysis-project-designer"></a>專案設計工具、程式碼分析
 包含您可以選擇在您的程式碼上執行的程式碼分析工具。 此工具會報告您組件的相關資訊，例如違反 Microsoft .NET Framework 設計方針所制定的程式設計和設計規則。

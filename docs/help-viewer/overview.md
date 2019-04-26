@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975680"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
@@ -53,7 +53,7 @@ ms.locfileid: "55938992"
 
 ### <a name="navigation-tabs"></a>瀏覽索引標籤
 
-|索引標籤|描述|
+|索引標籤|說明|
 |---|-----------|
 |內容|將安裝的內容顯示為階層 (目錄)。 您可以指定條件來篩選顯示的標題。|
 |索引|顯示已編製索引的詞彙按字母順序排列的清單。 您可以搜尋索引、指定條件來篩選項目，以及要求索引項目包含指定的文字或以其開頭。|

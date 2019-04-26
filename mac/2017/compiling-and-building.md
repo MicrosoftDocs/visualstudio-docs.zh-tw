@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
 ms.openlocfilehash: fece226d9e7fd7ba023369928171553c393b46d5
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933059"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中編譯和建置
 

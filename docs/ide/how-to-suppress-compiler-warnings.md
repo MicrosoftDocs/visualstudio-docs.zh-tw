@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549287"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>作法：隱藏編譯器警告
+# <a name="how-to-suppress-compiler-warnings"></a>HOW TO：隱藏編譯器警告
 
 您可以簡化組建記錄檔，方法是篩選掉一或多個類型的編譯器警告。 例如，您可能只想檢閱當您將組建記錄檔詳細等級設定為 [一般]、[詳細資料] 或 [診斷] 時所產生的部分輸出。 如需詳細資訊層級的詳細資訊，請參閱[如何：檢視、儲存及設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
 

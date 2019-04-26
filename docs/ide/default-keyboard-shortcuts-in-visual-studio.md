@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962037"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
@@ -40,22 +40,22 @@ ms.locfileid: "56607404"
 |[偵錯工具操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[其他操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation 操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[診斷中樞](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-##  <a name="bkmk_global"></a> 全域
+## <a name="bkmk_global"></a> 全域
 
-###  <a name="bkmk_analyze"></a> 分析
+### <a name="bkmk_analyze"></a> 分析
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |Analyze.NavigateBackward|**Shift+Alt+3**|
 |Analyze.NavigateForward|**Shift+Alt+4**|
 
-###  <a name="bkmk_architecture"></a> 架構
+### <a name="bkmk_architecture"></a> 架構
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |Architecture.NewDiagram|**Ctrl+\\、Ctrl+N**|
 
-###  <a name="bkmk_build"></a> 建置
+### <a name="bkmk_build"></a> 建置
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -64,13 +64,13 @@ ms.locfileid: "56607404"
 |Build.Compile|**Ctrl+F7**|
 |Build.RunCodeAnalysisonSolution|**Alt+F11**|
 
-###  <a name="bkmk_classview"></a> 類別檢視操作功能表
+### <a name="bkmk_classview"></a> 類別檢視操作功能表
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**Alt+Enter**|
 
-###  <a name="bkmk_debug"></a> 偵錯
+### <a name="bkmk_debug"></a> 偵錯
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -138,7 +138,7 @@ ms.locfileid: "56607404"
 |Debug.Watch3|**Ctrl+Alt+W、3**|
 |Debug.Watch4|**Ctrl+Alt+W、4**|
 
-###  <a name="bkmk_debugger"></a> 偵錯工具操作功能表
+### <a name="bkmk_debugger"></a> 偵錯工具操作功能表
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -146,13 +146,13 @@ ms.locfileid: "56607404"
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**Alt+F9、A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**Alt+F9、S**|
 
-###  <a name="bkmk_diagnostics"></a> 診斷中樞
+### <a name="bkmk_diagnostics"></a> 診斷中樞
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**Ctrl+Alt+F2**|
 
-###  <a name="bkmk_edit"></a> 編輯
+### <a name="bkmk_edit"></a> 編輯
 
 |命令|鍵盤快速鍵|
 |--------------|-|
@@ -211,7 +211,7 @@ ms.locfileid: "56607404"
 |Edit.SurroundWith|**Ctrl+K、Ctrl+S**|
 |Edit.Undo|**Ctrl+Z**<br /><br /> 或<br /><br /> **Alt+退格鍵**|
 
-###  <a name="bkmk_editorContext"></a> 編輯器操作功能表
+### <a name="bkmk_editorContext"></a> 編輯器操作功能表
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -222,7 +222,7 @@ ms.locfileid: "56607404"
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Ctrl+K、Ctrl+O** (字母 'O')|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**Ctrl+K、Ctrl+T**<br /><br /> 或<br /><br /> **Ctrl+K、T**|
 
-###  <a name="bkmk_file"></a> 檔案
+### <a name="bkmk_file"></a> 檔案
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -238,7 +238,7 @@ ms.locfileid: "56607404"
 |File.SaveSelectedItems|**Ctrl+S**|
 |File.ViewinBrowser|**Ctrl+Shift+W**|
 
-###  <a name="bkmk_help"></a> 說明
+### <a name="bkmk_help"></a> 說明
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -247,19 +247,19 @@ ms.locfileid: "56607404"
 |Help.ViewHelp|**Ctrl+F1**|
 |Help.WindowHelp|**Shift+F1**|
 
-###  <a name="bkmk_loadtest"></a> 負載測試
+### <a name="bkmk_loadtest"></a> 負載測試
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**Ctrl+R、Q**|
 
-###  <a name="bkmk_otherContext"></a> 其他操作功能表
+### <a name="bkmk_otherContext"></a> 其他操作功能表
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**插入**|
 
-###  <a name="bkmk_project"></a> 專案
+### <a name="bkmk_project"></a> 專案
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -271,14 +271,14 @@ ms.locfileid: "56607404"
 |Project.Publishselectedfiles|**Alt+;** 然後 **Alt+P**|
 |Project.Replaceselectedfilesfromserver|**Alt+;** 然後 **Alt+R**|
 
-###  <a name="bkmk_projectContext"></a> 專案及解決方案操作功能表
+### <a name="bkmk_projectContext"></a> 專案及解決方案操作功能表
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**Alt+向下鍵**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**Alt+向上鍵**|
 
-###  <a name="bkmk_refactor"></a> 重構
+### <a name="bkmk_refactor"></a> 重構
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -289,7 +289,7 @@ ms.locfileid: "56607404"
 |Refactor.Rename|**Ctrl+R、Ctrl+R**|
 |Refactor.ReorderParameters|**Ctrl+R、Ctrl+O** (字母 'O')|
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a> 方案總管
+### <a name="bkmk_solutionexplorerGLOBAL"></a> 方案總管
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -297,7 +297,7 @@ ms.locfileid: "56607404"
 |SolutionExplorer.PendingChangesFilter|**Ctrl+[**、**P**<br /><br /> 或<br /><br /> **Ctrl+[**、**Ctrl+P**|
 |SolutionExplorer.SyncWithActiveDocument|**Ctrl+[**、**S**<br /><br /> 或<br /><br /> **Ctrl+[**、**Ctrl+S**|
 
-###  <a name="bkmk_team"></a> 小組
+### <a name="bkmk_team"></a> 小組
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -306,7 +306,7 @@ ms.locfileid: "56607404"
 |Team.Git.GoToGitCommits|**Ctrl+0** (零)、**Ctrl+O** (字母 'O')<br /><br /> 或<br /><br /> **Ctrl+0、O**|
 |Team.TeamExplorerSearch|**Ctrl+'**|
 
-###  <a name="bkmk_TFcontext"></a> Team Foundation 操作功能表
+### <a name="bkmk_TFcontext"></a> Team Foundation 操作功能表
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -321,14 +321,14 @@ ms.locfileid: "56607404"
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl+0** (零)、**Ctrl+A**<br /><br /> 或<br /><br /> **Ctrl+0、A**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl+0** (零)、**Ctrl+W**<br /><br /> 或<br /><br /> **Ctrl+0、W**|
 
-###  <a name="bkmk_test"></a> 測試
+### <a name="bkmk_test"></a> 測試
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |Test.UseCodedUITestBuilder|**Ctrl+\\、Ctrl+C**|
 |Test.UseExistingActionRecording|**Ctrl+\\、Ctrl+A**|
 
-###  <a name="bkmk_testexplorerGLOBAL"></a> 測試總管
+### <a name="bkmk_testexplorerGLOBAL"></a> 測試總管
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -338,7 +338,7 @@ ms.locfileid: "56607404"
 |TestExplorer.RunAllTests|**Ctrl+R、A**|
 |TestExplorer.RunAllTestsInContext|**Ctrl+R、T**|
 
-###  <a name="bkmk_tools"></a> 工具
+### <a name="bkmk_tools"></a> 工具
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -347,7 +347,7 @@ ms.locfileid: "56607404"
 |Tools.ForceGC|**Ctrl+Shift+Alt+F12、Ctrl+Shift+Alt+F12**|
 |Tools.GoToCommandLine|**Ctrl+/**|
 
-###  <a name="bkmk_view"></a> 檢視
+### <a name="bkmk_view"></a> 檢視
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -396,7 +396,7 @@ ms.locfileid: "56607404"
 |View.ZoomIn|**Ctrl+Shift+.**|
 |View.ZoomOut|**Ctrl+Shift+,**|
 
-###  <a name="bkmk_window"></a> Window
+### <a name="bkmk_window"></a> Window
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -427,14 +427,14 @@ ms.locfileid: "56607404"
 |Window.SolutionExplorerSearch|**Ctrl+;**|
 |Window.WindowSearch|**Alt+`**|
 
-###  <a name="bkmk_windowsazure"></a> Azure
+### <a name="bkmk_windowsazure"></a> Azure
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |WindowsAzure.RetryMobileServiceScriptOperation|**Ctrl+Num \*、Ctrl+R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**Ctrl+Num \*、Ctrl+D**|
 
-##  <a name="adonet-entity-data-model-designer"></a>ADO.NET 實體資料模型設計工具
+## <a name="adonet-entity-data-model-designer"></a>ADO.NET 實體資料模型設計工具
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -449,7 +449,7 @@ ms.locfileid: "56607404"
 |View.EntityDataModelBrowser|**Ctrl+1**|
 |View.EntityDataModelMappingDetails|**Ctrl+2**|
 
-##  <a name="class-diagram"></a>類別圖表
+## <a name="class-diagram"></a>類別圖表
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -461,7 +461,7 @@ ms.locfileid: "56607404"
 |Edit.RemovefromDiagram|**刪除**|
 |View.ViewCode|**Enter**|
 
-##  <a name="coded-ui-test-editor"></a>自動程式碼 UI 測試編輯器
+## <a name="coded-ui-test-editor"></a>自動程式碼 UI 測試編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -472,14 +472,14 @@ ms.locfileid: "56607404"
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**Ctrl+Alt+C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**Ctrl+Shift+T**|
 
-##  <a name="dataset-editor"></a>資料集編輯器
+## <a name="dataset-editor"></a>資料集編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**插入**|
 |OtherContextMenus.DbTableContext.Add.Column|**Ctrl+L**|
 
-##  <a name="difference-viewer"></a>差異檢視器
+## <a name="difference-viewer"></a>差異檢視器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -495,7 +495,7 @@ ms.locfileid: "56607404"
 |EditorContextMenus.CodeWindow.AddComment|**Ctrl+Shift+K**|
 |EditorContextMenus.CodeWindow.EditLocalFile|**Ctrl+Shift+P**|
 
-##  <a name="dom-explorer"></a>DOM 總管
+## <a name="dom-explorer"></a>DOM 總管
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -503,13 +503,13 @@ ms.locfileid: "56607404"
 |DOMExplorer.SelectElement|**Ctrl+B**|
 |DOMExplorer.ShowLayout|**Ctrl+Shift+I**|
 
-##  <a name="f-interactive"></a>F# Interactive
+## <a name="f-interactive"></a>F# Interactive
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**Ctrl+Break**|
 
-##  <a name="graph-document-editor"></a>圖形文件編輯器
+## <a name="graph-document-editor"></a>圖形文件編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -521,7 +521,7 @@ ms.locfileid: "56607404"
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**刪除**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-##  <a name="graphics-diagnostics"></a>圖形診斷
+## <a name="graphics-diagnostics"></a>圖形診斷
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -535,13 +535,13 @@ ms.locfileid: "56607404"
 |Graphics.ZoomIn|**Shift+Alt+=**|
 |Graphics.ZoomOut|**Shift+Alt+-**|
 
-##  <a name="html-editor"></a>HTML 編輯器
+## <a name="html-editor"></a>HTML 編輯器
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M、Ctrl+G**|
 
-##  <a name="html-editor-design-view"></a>HTML 編輯器設計檢視
+## <a name="html-editor-design-view"></a>HTML 編輯器設計檢視
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -564,7 +564,7 @@ ms.locfileid: "56607404"
 |View.ViewMarkup|**Shift+F7**|
 |Window.PreviousTab|**Ctrl+PgUp**|
 
-##  <a name="html-editor-source-view"></a>HTML 編輯器原始碼檢視
+## <a name="html-editor-source-view"></a>HTML 編輯器原始碼檢視
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -574,13 +574,13 @@ ms.locfileid: "56607404"
 |View.ViewDesigner|**Shift+F7**|
 |Window.PreviousTab|**Ctrl+PgUp**|
 
-##  <a name="layer-diagram"></a>分層圖
+## <a name="layer-diagram"></a>分層圖
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.Delete|**Shift+Delete**|
 
-##  <a name="managed-resources-editor"></a>Managed 資源編輯器
+## <a name="managed-resources-editor"></a>Managed 資源編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -595,7 +595,7 @@ ms.locfileid: "56607404"
 |Resources.Other|**Ctrl+6**|
 |Resources.Strings|**Ctrl+1**|
 
-##  <a name="merge-editor-window"></a>合併編輯器視窗
+## <a name="merge-editor-window"></a>合併編輯器視窗
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -603,7 +603,7 @@ ms.locfileid: "56607404"
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**Alt+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**Alt+3**|
 
-##  <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools，結構描述比較
+## <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools，結構描述比較
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -614,7 +614,7 @@ ms.locfileid: "56607404"
 |SQL.SSDTSchemaCompareStop|**Alt+Break**|
 |SQL.SSDTSchemaCompareWriteUpdates|**Shift+Alt+U**|
 
-##  <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools，資料表設計工具
+## <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools，資料表設計工具
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -625,7 +625,7 @@ ms.locfileid: "56607404"
 |SQL.Rename|**F2**<br /><br /> 或<br /><br /> **Ctrl+R、R**<br /><br /> 或<br /><br /> **Ctrl+R、Ctrl+R**|
 |ViewFileInScriptPanel|**Shift+Alt+PgDn**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools，T-SQL 編輯器
+## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools，T-SQL 編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -646,7 +646,7 @@ ms.locfileid: "56607404"
 |TSqlEditorCloneQuery|**Ctrl+Alt+N**|
 |TSqlEditorDatabaseCombo|**Shift+Alt+PgDn**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools，T-SQL PDW 編輯器
+## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools，T-SQL PDW 編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -661,13 +661,13 @@ ms.locfileid: "56607404"
 |TSqlEditorCloneQuery|**Ctrl+Alt+N**|
 |TSqlEditorDatabaseCombo|**Shift+Alt+PgDn**|
 
-##  <a name="page-inspector"></a>Page Inspector
+## <a name="page-inspector"></a>Page Inspector
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |PageInspector.Minimize|**F12**|
 
-##  <a name="query-designer"></a>查詢設計工具
+## <a name="query-designer"></a>查詢設計工具
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -680,7 +680,7 @@ ms.locfileid: "56607404"
 |QueryDesigner.Results|**Ctrl+4**|
 |QueryDesigner.SQL|**Ctrl+3**|
 
-##  <a name="query-results"></a>查詢結果
+## <a name="query-results"></a>查詢結果
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -688,7 +688,7 @@ ms.locfileid: "56607404"
 |SQL.QueryResultsRefresh|**Shift+Alt+R**|
 |SQL.QueryResultsStop|**Alt+Break**|
 
-##  <a name="report-designer"></a>報表設計師
+## <a name="report-designer"></a>報表設計師
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -714,14 +714,14 @@ ms.locfileid: "56607404"
 |Edit.TabLeft|**Shift+Tab**|
 |View.ReportData|**Ctrl+Alt+D**|
 
-##  <a name="sequence-diagram"></a>順序圖表
+## <a name="sequence-diagram"></a>順序圖表
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**Shift+Del**|
 
-##  <a name="settings-designer"></a>設定設計工具
+## <a name="settings-designer"></a>設定設計工具
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -730,13 +730,13 @@ ms.locfileid: "56607404"
 |Edit.SelectionCancel|**Esc**|
 |View.ViewCode|**F7**|
 
-##  <a name="solution-explorer"></a>底下提供說明，包括方案總管
+## <a name="solution-explorer"></a>底下提供說明，包括方案總管
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**Ctrl+K、Ctrl+G**|
 
-##  <a name="team-explorer"></a>Team Explorer
+## <a name="team-explorer"></a>Team Explorer
 
 |命令|鍵盤快速鍵|
 |-------------| - |
@@ -761,13 +761,13 @@ ms.locfileid: "56607404"
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Shift+Alt+L**|
 |View.Refresh|**F5**|
 
-##  <a name="test-explorer"></a>測試總管
+## <a name="test-explorer"></a>測試總管
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
-##  <a name="text-editor"></a>文字編輯器
+## <a name="text-editor"></a>文字編輯器
 
 | 命令 | 鍵盤快速鍵 |
 | - | - |
@@ -884,38 +884,38 @@ ms.locfileid: "56607404"
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **Alt+PgDn** |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **Alt+PgUp** |
 
-##  <a name="uml-activity-diagram"></a>UML 活動圖表
+## <a name="uml-activity-diagram"></a>UML 活動圖表
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.Delete|**Shift+Del**|
 
-##  <a name="uml-class-diagram"></a>UML 類別圖表
+## <a name="uml-class-diagram"></a>UML 類別圖表
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
-##  <a name="uml-component-diagram"></a>UML 元件圖表
+## <a name="uml-component-diagram"></a>UML 元件圖表
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
-##  <a name="uml-use-case-diagram"></a>UML 使用案例圖表
+## <a name="uml-use-case-diagram"></a>UML 使用案例圖表
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
-##  <a name="vc-accelerator-editor"></a>VC 快速鍵編輯器
+## <a name="vc-accelerator-editor"></a>VC 快速鍵編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |Edit.NewAccelerator|**插入**|
 |Edit.NextKeyTyped|**Ctrl+W**|
 
-##  <a name="vc-dialog-editor"></a>VC 對話方塊編輯器
+## <a name="vc-dialog-editor"></a>VC 對話方塊編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -949,7 +949,7 @@ ms.locfileid: "56607404"
 |Format.TestDialog|**Ctrl+T**|
 |Format.ToggleGuides|**Ctrl+G**|
 
-##  <a name="vc-image-editor"></a>VC 影像編輯器
+## <a name="vc-image-editor"></a>VC 影像編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -991,13 +991,13 @@ ms.locfileid: "56607404"
 |Image.ZoomIn|**Ctrl+Shift+.**<br /><br /> 或<br /><br /> **Ctrl+向上鍵**|
 |Image.ZoomOut|**Ctrl+Shift+,**<br /><br /> 或<br /><br /> **Ctrl+向下鍵**|
 
-##  <a name="vc-string-editor"></a>VC 字串編輯器
+## <a name="vc-string-editor"></a>VC 字串編輯器
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |Edit.NewString|**插入**|
 
-##  <a name="view-designer"></a>設計工具檢視
+## <a name="view-designer"></a>設計工具檢視
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1010,13 +1010,13 @@ ms.locfileid: "56607404"
 |QueryDesigner.Results|**Ctrl+4**|
 |QueryDesigner.SQL|**Ctrl+3**|
 
-##  <a name="visual-studio"></a>Visual Studio
+## <a name="visual-studio"></a>Visual Studio
 
 |命令|鍵盤快速鍵|
 |-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**Ctrl+1**|
 
-##  <a name="windows-forms-designer"></a>Windows Form 設計工具
+## <a name="windows-forms-designer"></a>Windows Form 設計工具
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1045,7 +1045,7 @@ ms.locfileid: "56607404"
 |Edit.SizeControlUp|**Ctrl+Shift+向上鍵**|
 |Edit.TabLeft|**Shift+Tab**|
 
-##  <a name="work-item-editor"></a>工作項目編輯器
+## <a name="work-item-editor"></a>工作項目編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1053,7 +1053,7 @@ ms.locfileid: "56607404"
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**Shift+Alt+L**|
 
-##  <a name="work-item-query-view"></a>工作項目查詢檢視
+## <a name="work-item-query-view"></a>工作項目查詢檢視
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1064,7 +1064,7 @@ ms.locfileid: "56607404"
 |Team.Refresh|**F5**|
 |Window.Toggle|**Shift+Alt+V**|
 
-##  <a name="work-item-results-view"></a>工作項目結果檢視
+## <a name="work-item-results-view"></a>工作項目結果檢視
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1077,7 +1077,7 @@ ms.locfileid: "56607404"
 |Team.Refresh|**F5**|
 |Window.Toggle|**Shift+Alt+V**|
 
-##  <a name="workflow-designer"></a>工作流程設計工具
+## <a name="workflow-designer"></a>工作流程設計工具
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1105,7 +1105,7 @@ ms.locfileid: "56607404"
 |WorkflowDesigner.ZoomIn|**Ctrl+Num +**|
 |WorkflowDesigner.ZoomOut|**Ctrl+Num -**|
 
-##  <a name="xaml-ui-designer"></a>XAML 設計工具
+## <a name="xaml-ui-designer"></a>XAML 設計工具
 
 |命令|鍵盤快速鍵|
 |--------------| - |
@@ -1127,14 +1127,14 @@ ms.locfileid: "56607404"
 |View.EdgeRightMoveRight|**Ctrl+Shift+Alt+.**|
 |View.ShowPropertyMarkerMenu|**Ctrl+空格鍵**|
 
-##  <a name="xml-text-editor"></a>XML (文字) 編輯器
+## <a name="xml-text-editor"></a>XML (文字) 編輯器
 
 |命令|鍵盤快速鍵|
 |--------------| - |
 |XML.StartXSLTDebugging|**Alt+F5**|
 |XML.StartXSLTWithoutDebugging|**Ctrl+Alt+F5**|
 
-##  <a name="xml-schema-designer"></a>XML 結構描述設計工具
+## <a name="xml-schema-designer"></a>XML 結構描述設計工具
 
 |命令|鍵盤快速鍵|
 |--------------| - |

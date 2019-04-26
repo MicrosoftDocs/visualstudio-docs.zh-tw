@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
 ms.openlocfilehash: ce205b13537ee74bedee599e46c6e6006d9ceb77
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983057"
 ---
 # <a name="enable-subscription"></a>啟用訂用帳戶
 
@@ -46,4 +46,4 @@ Visual Studio for Mac 提供三種不同的訂用帳戶層級供您選擇，可�
 
 ## <a name="see-also"></a>另請參閱
 
-- [登入 Visual Studio (在 Windows 上)](/visualstudio/ide/signing-in-to-visual-studio)
+- [登入 Visual Studio (Windows 上)](/visualstudio/ide/signing-in-to-visual-studio)

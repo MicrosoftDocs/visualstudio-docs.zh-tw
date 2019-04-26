@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 8ceee693ee7b20e7045aa8bca4b895a0df383c80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933447"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 簡介
 
@@ -149,9 +149,7 @@ Visual Studio for Mac 會建立包含預設函數的 .NET Standard 專案。 其
     - Http POST CRUD
     - 含有參數的 Http 觸發程序
 
-
 - **計時器** - 依預先定義的排程執行清理或其他批次工作。 這個範本採用兩個欄位：名稱和排程，即六個欄位的 CRON 運算式。 如需詳細資訊，請參閱[有關時間的 Azure 函式文章](/azure/azure-functions/functions-create-scheduled-function)
-
 
 - **佇列觸發程序** - 這是會在訊息抵達 Azure 儲存體佇列時予以回應的函式。 除了函式名稱之外，這個範本也接受**路徑** (會從中讀取訊息的佇列名稱) 和儲存體帳戶**連線** (包含儲存體帳戶連接字串的應用程式設定名稱)。 如需詳細資訊，請參閱[有關佇列儲存體的 Azure 函式文章](/azure/azure-functions/functions-create-storage-queue-triggered-function)。
 

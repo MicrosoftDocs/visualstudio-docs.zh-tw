@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b64972f2bf2ef0bb34722f717f7ddf8bf032349d
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: d1fcb7b139e374f49df84fe17b8e12ea6aa6b625
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965732"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教學課程：使用 Visual Basic 建立簡單的應用程式
 
@@ -27,7 +27,7 @@ ms.locfileid: "58857395"
 
 ::: moniker range="vs-2017"
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)頁面免費進行安裝。
 
 ::: moniker-end
 
@@ -116,7 +116,7 @@ Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會�
 
 ### <a name="add-a-textblock-control"></a>新增 TextBlock 控制項
 
-1.  輸入 **Ctrl**+**Q** 啟動搜尋方塊，然後鍵入**工具箱**。 從結果清單中選擇 [檢視] > [工具箱]。
+1. 輸入 **Ctrl**+**Q** 啟動搜尋方塊，然後鍵入**工具箱**。 從結果清單中選擇 [檢視] > [工具箱]。
 
 2. 在 [工具箱] 中展開 [通用 WPF 控制項] 節點以查看 TextBlock 控制項。
 
@@ -256,7 +256,7 @@ IsChecked="True"
 
 #### <a name="add-breakpoints"></a>新增中斷點
 
-1. 開啟 *Greetings.xaml.vb*，然後選取下列程式碼： `MessageBox.Show("Hello.")`
+1. 開啟 *Greetings.xaml.vb*，然後選取下列程式碼行：`MessageBox.Show("Hello.")`
 
 2. 按 **F9**，或從功能表中依序選取 [偵錯] 和 [切換中斷點]，來新增中斷點。
 
