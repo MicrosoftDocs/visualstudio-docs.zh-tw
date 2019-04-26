@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 44d816c7107d34cf81369a98ea0c435133e8e4b3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551937"
 ---
 # <a name="zoom-control-threads-view"></a>縮放控制 (執行緒檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
