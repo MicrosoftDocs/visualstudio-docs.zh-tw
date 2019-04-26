@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b20ea728cd0b714ba61dfa7aef1893a91cfaca
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443732"
 ---
 # <a name="manage-channels"></a>管理通道
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "54758370"
  當您想要隱藏通道時，請選取此控制項。 例如，如果某個執行緒百分之百與您的受管理處理序同步，則您可以在分析其他執行緒的時候隱藏它。  
   
 > [!NOTE]
->  隱藏的執行緒不會顯示在作用中圖例和分析報表中的計算時間。  
+> 隱藏的執行緒不會顯示在作用中圖例和分析報表中的計算時間。  
   
 ## <a name="show-all-channels"></a>顯示所有通道  
  此控制項會在有一個以上的隱藏通道時顯示。 若選取它，所有隱藏的元素就都會顯示，並且再次回到計算時間。  

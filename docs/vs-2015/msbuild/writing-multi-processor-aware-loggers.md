@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ec8cefeaf005c17ecb09d109c161b5cbae3dc03a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425874"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>撰寫能夠辨識多處理器的記錄器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
 ```  
   
 > [!NOTE]
->  `/dl` 參數中必須使用星號 (*) 分隔兩個記錄器名稱。  
+> `/dl` 參數中必須使用星號 (*) 分隔兩個記錄器名稱。  
   
  使用 ConfigurableForwardingLogger 和使用任何其他記錄器一樣 (如[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)中所述)，不同之處為附加 ConfigurableForwardingLogger 記錄器，而不是一般的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 記錄器，而且要將您讓 ConfigurableForwardingLogger 傳遞給中央節點的事件，指定為參數。  
   

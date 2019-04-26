@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aba4d37d672d3e544d65f46c6f32062f9b2637eb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: df33215bab20be8744ed2455ef87f1a037871f95
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419709"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>選項對話方塊、環境、Web 瀏覽器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ ms.locfileid: "59663975"
 設定內部網頁瀏覽器和 Internet Explorer 的選項。 若要存取這個對話方塊，請按一下 [工具] 功能表中的 [選項]，展開 [環境] 資料夾，然後選取 [網頁瀏覽器]。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 > [!IMPORTANT]
->  從 Web 開啟特定檔案或元件可能會在您的電腦上執行程式碼。  
+> 從 Web 開啟特定檔案或元件可能會在您的電腦上執行程式碼。  
   
  首頁  
  設定當您開啟 IDE 網頁瀏覽器時所顯示的網頁。  
@@ -61,7 +61,7 @@ ms.locfileid: "59663975"
   按一下即可在 [網際網路內容] 對話方塊中變更 Internet Explorer 的選項。 在此對話方塊中所做的變更，會同時影響內部網頁瀏覽器，以及在 Visual Studio IDE 外部起始的 Internet Explorer 執行個體 (例如透過 [開始] 功能表)。  
   
 > [!NOTE]
->  使用 [瀏覽方式] 對話方塊，以不同的外部網頁瀏覽器取代 Visual Studio 的內部網頁瀏覽器 (也就是某個版本的 Internet Explorer)。  
+> 使用 [瀏覽方式] 對話方塊，以不同的外部網頁瀏覽器取代 Visual Studio 的內部網頁瀏覽器 (也就是某個版本的 Internet Explorer)。  
   
 ## <a name="see-also"></a>請參閱  
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)   

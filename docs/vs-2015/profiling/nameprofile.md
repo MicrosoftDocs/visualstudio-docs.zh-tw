@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 15dcdbec1407dc646e26f7419e2dd80cec869725
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1c2134c38a3910a5dd1308990b0788002a7ded2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441908"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
   指出可套用效能資料收集的分析層級。 下列 **PROFILE_CONTROL_LEVEL** 值可以用來指出可套用效能資料收集的三種層級的其中一種：  
   
-|列舉值|描述|  
+|列舉值|說明|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|全域層級設定會影響分析執行中的所有處理序和執行緒。|  
 |PROFILE_PROCESSLEVEL|處理序層級設定會影響屬於所指定處理序的所有執行緒。|  
@@ -65,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>屬性值/傳回值  
  此函式會使用 **PROFILE_COMMAND_STATUS** 列舉來指出成功或失敗。 傳回值可以是下列其中一個：  
   
-|列舉值|描述|  
+|列舉值|說明|  
 |----------------|-----------------|  
 |NAME_ERROR_ID_NOEXIST|指定的分析項目不存在。|  
 |NAME_ERROR_INVALID_NAME|名稱無效。|  
@@ -84,7 +84,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  如果您指定目前處理序或執行緒以外的處理序或執行緒，則必須確定它已先初始化並開始執行，再將它命名。 否則，NameProfile 方法會失敗。  
   
 > [!IMPORTANT]
->  可以先傳回 CreateProcess() 和 CreateThread() API 函式，再初始化執行緒或處理序。  
+> 可以先傳回 CreateProcess() 和 CreateThread() API 函式，再初始化執行緒或處理序。  
   
 ## <a name="net-framework-equivalent"></a>.NET Framework 同等  
  Microsoft.VisualStudio.Profiler.dll  

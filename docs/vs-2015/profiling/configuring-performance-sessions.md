@@ -14,12 +14,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c479a2c62d40b52c085f56b424cf3151e93f487c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d67801cedded1ccf66544e21257866feda828e31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434321"
 ---
 # <a name="configuring-performance-sessions"></a>設定效能工作階段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54774692"
 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具，您可以收集大量應用程式類型的各種效能資料。 本節說明如何使用效能精靈，以及效能工作階段的屬性和目標二進位檔，來設定分析工具收集您感興趣的資料。 分析工具的組態屬性也可以用來控制要在分析執行中收集的資料量。 如需詳細資訊，請參閱[控制資料收集](../profiling/controlling-data-collection.md)。  
   
 > [!NOTE]
->  在許多情況下，使用效能精靈的預設屬性是收集分析資料的有效方式。 如需詳細資訊，請參閱[效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)和[使用者入門](../profiling/getting-started-with-performance-tools.md)。  
+> 在許多情況下，使用效能精靈的預設屬性是收集分析資料的有效方式。 如需詳細資訊，請參閱[效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)和[使用者入門](../profiling/getting-started-with-performance-tools.md)。  
   
 ## <a name="common-tasks"></a>一般工作  
   

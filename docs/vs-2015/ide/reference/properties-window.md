@@ -21,12 +21,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: beb0296834986648f47357da50d4022c1f632823
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 582905042938d79a1885279bd19c18f48b49bb84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438038"
 ---
 # <a name="properties-window"></a>屬性視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,25 +58,25 @@ ms.locfileid: "59658782"
  顯示物件的事件。  
   
 > [!NOTE]
->  這個 [屬性] 視窗工具列控制項，只有在表單或控制項設計工具在 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 專案的內容使用中時才可使用。 編輯 XAML 檔案時，事件會出現在 [屬性] 視窗的個別索引標籤。  
+> 這個 [屬性] 視窗工具列控制項，只有在表單或控制項設計工具在 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 專案的內容使用中時才可使用。 編輯 XAML 檔案時，事件會出現在 [屬性] 視窗的個別索引標籤。  
   
  訊息  
  列出所有 Windows 訊息。 可讓您新增或刪除為所選類別提供之訊息的指定處理常式函式。  
   
 > [!NOTE]
->  這個 [屬性] 視窗工具列控制項，只有在 [類別檢視] 是 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 專案內容的使用中視窗時才可使用。  
+> 這個 [屬性] 視窗工具列控制項，只有在 [類別檢視] 是 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 專案內容的使用中視窗時才可使用。  
   
  Overrides  
  列出所選類別的所有虛擬函式，並可讓您新增或刪除覆寫的函式。  
   
 > [!NOTE]
->  這個 [屬性] 視窗工具列控制項，只有在 [類別檢視] 是 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 專案內容的使用中視窗時才可使用。  
+> 這個 [屬性] 視窗工具列控制項，只有在 [類別檢視] 是 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 專案內容的使用中視窗時才可使用。  
   
  描述窗格  
  顯示屬性類型和屬性的簡短描述。 您可以使用捷徑功能表上使用 [描述] 命令，關閉及開啟屬性的描述。  
   
 > [!NOTE]
->  這個 [屬性] 視窗工具列控制項，在設計工具裡編輯 XAML 檔案時無法使用。  
+> 這個 [屬性] 視窗工具列控制項，在設計工具裡編輯 XAML 檔案時無法使用。  
   
  縮圖檢視  
  在設計工具中編輯 XAML 檔案時，顯示目前選取項目的視覺表示法。  
