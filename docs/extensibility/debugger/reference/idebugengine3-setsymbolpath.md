@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3799043b82a4e0d0993e7de255f69592c6b89534
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62875272"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 設定要搜尋偵錯符號的路徑。
@@ -54,7 +54,7 @@ int SetSymbolPath(
 ## <a name="remarks"></a>備註
  字串`szSymbolSearchPath`是一或多個路徑，以搜尋符號分號分隔的清單。 這些路徑可以是本機路徑、 UNC 樣式路徑或 URL。 這些路徑也可以混合不同的類型。 如果路徑是 UNC (例如\\\Symserver\Symbols)，則偵錯引擎應該判斷如果路徑是至符號伺服器，而且應該能夠從該伺服器，它們中所指定之路徑的快取中載入符號`szSymbolCachePath`。
 
- 符號路徑也可以包含一或多個快取位置。 快取中優先順序最高的優先順序快取與先列出，並以分隔 * 符號。 例如: 
+ 符號路徑也可以包含一或多個快取位置。 快取中優先順序最高的優先順序快取與先列出，並以分隔 * 符號。 例如：
 
 ```
 \\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*http://msdl.microsoft.com

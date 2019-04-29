@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eab1768a44a85b2675a8bc2abf10f318a8902f94
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861223"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>使用 interop 組件判斷命令狀態
 VSPackage 必須追蹤的狀態，它可以處理的命令。 VSPackage 中處理的命令會變成啟用或停用時，無法判斷環境。 它是以通知有關命令狀態的環境 VSPackage 的責任，比方說，一般狀態命令，例如**剪下**，**複製**，並**貼上**。

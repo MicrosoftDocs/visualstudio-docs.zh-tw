@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4e15692a94e3f1c80d6bd6f12ecb0c2ce7271c8d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62876760"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 這個介面表示的程式碼指示的開始位置。 適用於大部分的執行階段架構現在，程式碼內容可以視為該應用程式的執行資料流中的位址。
