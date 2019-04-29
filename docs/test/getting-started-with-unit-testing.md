@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f3537a56b746c9104898d68e40038fcd545910
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a01f08d430e9812283c3f5179e08d20f98a687a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003263"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
@@ -24,10 +24,19 @@ ms.locfileid: "58856456"
 
 本節詳盡說明如何建立單元測試專案。
 
-> [!TIP]
-> 測試的專案 "HelloWorld" 是範例專案，不會顯示其程式碼。 如果您想要建立測試用的 "HelloWorld" 專案，請參閱[建立您的第一個 C# 主控台應用程式](../ide/quickstart-csharp-console.md)。 如需完整逐步解說文章，請參閱[為受控程式碼建立和執行單元測試](walkthrough-creating-and-running-unit-tests-for-managed-code.md)。
-
 1. 在 Visual Studio 中開啟您要測試的專案。
+
+   為了示範範例單元測試，此文章會測試一個簡單的 "Hello World" 專案。 此類專案的範例程式碼如下所示：
+
+   ```csharp
+   public class Program
+   {
+       public static void Main()
+       {
+           Console.WriteLine("Hello World!");
+       }
+   }
+   ```
 
 1. 在 [方案總管] 中，選取解決方案節點。 然後，從頂端功能表列中，選取 [檔案] > [新增] > [新增專案]。
 
@@ -62,6 +71,9 @@ ms.locfileid: "58856456"
 1. 將程式碼新增至單元測試方法。
 
    ![在 Visual Studio 中將程式碼新增至單元測試方法](media/vs-2019/unit-test-method.png)
+
+> [!TIP]
+> 有關建立單元測試的詳細逐步解說，請參閱[針對受控碼建立和執行單元測試](walkthrough-creating-and-running-unit-tests-for-managed-code.md)。
 
 ## <a name="run-unit-tests"></a>執行單元測試
 
@@ -165,5 +177,5 @@ ms.locfileid: "58856456"
 * [逐步解說：針對受控碼建立和執行單元測試](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [建立單元測試命令](create-unit-tests-menu.md)
 * [使用 IntelliTest 產生測試](generate-unit-tests-for-your-code-with-intellitest.md)
-* [使用 [測試總管] 執行測試](run-unit-tests-with-test-explorer.md)
+* [使用測試總管執行測試](run-unit-tests-with-test-explorer.md)
 * [分析程式碼涵蓋範圍](using-code-coverage-to-determine-how-much-code-is-being-tested.md)

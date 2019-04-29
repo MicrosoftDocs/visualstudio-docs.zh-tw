@@ -1,17 +1,17 @@
 ---
 title: 開始使用 ASP.NET Core
-description: 本文說明如何在 Visual Studio for Mac 中開始使用 ASP.NET，包括安裝及建立新的專案。
+description: 此文章說明如何在 Visual Studio for Mac 中開始使用 ASP.NET，包括安裝及建立新的專案。
 author: conceptdev
 ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 183431a160245fd8fc0ec2193c00c32659230459
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 257d60d87a743d5c5e1099ee443c7bdb38055cca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985687"
 ---
 # <a name="getting-started-with-aspnet-core"></a>開始使用 ASP.NET Core
 
@@ -63,15 +63,16 @@ ASP.NET Core 空白範本會建立有兩個預設檔案的 Web 應用程式：**
                 .UseStartup<Startup>();
     }
 ```
+
 ASP.NET Core 應用程式會透過 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 的執行個體設定和啟動主機，在其 Main 方法中建立 Web 伺服器。 這個建立器提供了一些方法來允許設定主機。 在範本應用程式中會使用下列組態：
 
-* `.UseStartup<Startup>()`:指定啟動類別。
+* `.UseStartup<Startup>()`：指定啟動類別。
 
 不過，您也可以新增其他組態，例如：
 
-* `UseKestrel`:指定應用程式將使用 Kestrel 伺服器
-* `UseContentRoot(Directory.GetCurrentDirectory())`:當應用程式從 Web 專案的根資料夾啟動時，使用這個資料夾作為應用程式的內容根目錄
-* `.UseIISIntegration()`:指定應用程式應該與 IIS 搭配運作。 若要搭配使用 IIS 與 ASP.NET Core，必須同時指定 `UseKestrel` 和 `UseIISIntegration`。
+* `UseKestrel`：指定應用程式將使用 Kestrel 伺服器
+* `UseContentRoot(Directory.GetCurrentDirectory())`：當應用程式從 Web 專案的根資料夾啟動時，使用這個資料夾作為應用程式的內容根目錄
+* `.UseIISIntegration()`：指定應用程式應該與 IIS 搭配運作。 若要搭配使用 IIS 與 ASP.NET Core，必須同時指定 `UseKestrel` 和 `UseIISIntegration`。
 
 ### <a name="startupcs"></a>Startup.cs
 
@@ -106,8 +107,8 @@ ASP.NET Core 應用程式會透過 [`WebHostBuilder`](/aspnet/core/fundamentals/
 
 這個啟動類別必須一律遵守下列規則：
 
- - 必須一律為公用
- - 必須包含兩個公用方法：`ConfigureServices` 和 `Configure`
+- 必須一律為公用
+- 必須包含兩個公用方法：`ConfigureServices` 和 `Configure`
 
 `ConfigureServices` 方法會定義您的應用程式將使用的服務。
 
@@ -220,7 +221,6 @@ ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式�
 9. 嘗試瀏覽至 `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy`(將 `xxxx` 取代為正確的連接埠)，您應該會看到下列內容：
 
     ![使用引數在瀏覽器中執行應用程式](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>疑難排解
 

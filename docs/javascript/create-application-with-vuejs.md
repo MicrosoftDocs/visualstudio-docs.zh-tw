@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 451d7a735116d7b181263eebe76751fd49900ce3
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: ff323547135d4c0d57900ac4e871cf053dedf096
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960623"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>使用適用於 Visual Studio 的 Node.js 工具建立 Vue.js 應用程式
 
@@ -31,12 +31,17 @@ Visual Studio 支援使用 JavaScript 或 TypeScript 搭配 [Vue.js](https://vue
 
 ## <a name="prerequisites"></a>必要條件
 
-* 您必須安裝 Visual Studio 2017 15.8 版 Preview 3 和 **Node.js 開發**工作負載。
+* 您必須安裝 Visual Studio 2017 15.8 版或更新版本，以及 **Node.js 開發**工作負載。
 
     > [!IMPORTANT]
-    > 本文需要的功能是從 Visual Studio 2017 15.8 版 Preview 3 開始提供。
+    > 此文章需要的功能是從 Visual Studio 2017 15.8 版開始提供。
 
-    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 頁面免費進行安裝。
+    ::: moniker range=">=vs-2019"
+    如果尚未安裝必要版本，請安裝 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 頁面免費進行安裝。
+    ::: moniker-end
 
     如果您需要安裝工作負載，但已安裝 Visual Studio，請移至 [工具] > [取得工具與功能...]，以開啟 Visual Studio 安裝程式。 選擇 [Node.js 開發] 工作負載，然後選擇 [修改]。
 
@@ -52,7 +57,7 @@ Visual Studio 支援使用 JavaScript 或 TypeScript 搭配 [Vue.js](https://vue
 
 ## <a name="create-a-vuejs-project-with-aspnet-core-and-the-vue-cli"></a>使用 ASP.NET Core 和 Vue CLI 建立 Vue.js 專案
 
-Vue.js 提供正式的 CLI 以快速 Scaffolding 專案。 如果您想要使用 CLI 來建立應用程式，請遵循本文中的步驟以設定您的開發環境。
+Vue.js 提供正式的 CLI 以快速 Scaffolding 專案。 如果您想要使用 CLI 來建立應用程式，請遵循此文章中的步驟以設定您的開發環境。
 
 > [!IMPORTANT]
 > 這些步驟假設您已經有一些使用 Vue.js 架構的體驗。 如果沒有，請瀏覽 [Vue.js](https://vuejs.org/) 以深入了解此架構。
@@ -66,7 +71,7 @@ Vue.js 提供正式的 CLI 以快速 Scaffolding 專案。 如果您想要使用
 1. 開啟 Visual Studio 並建立新專案。
 
     ::: moniker range=">=vs-2019"
-    按 **Esc** 來關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **asp.net**，然後選擇 [建立新的 ASP.NET Core Web 應用程式]。 在出現的對話方塊中選擇 [建立]。
+    按 **Esc** 關閉開始視窗。 鍵入 **Ctrl + Q** 來開啟搜尋方塊，鍵入 **asp.net**，然後選擇 [建立新的 ASP.NET Core Web 應用程式]。 在出現的對話方塊中選擇 [建立]。
     ::: moniker-end
     ::: moniker range="vs-2017"
     從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#]，然後選擇 [Web]。 在中間窗格中，選擇 [ASP.NET Web 應用程式]，然後選擇 [確定]。

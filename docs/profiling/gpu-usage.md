@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f16a518542e8acab636da6e395fdfee8d7a25085
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969796"
 ---
 # <a name="gpu-usage"></a>GPU 使用量
 
@@ -29,7 +29,7 @@ ms.locfileid: "57223464"
 - 支援所需計時檢測的 GPU 和驅動程式。
 
   > [!NOTE]
-  > 如需所支援硬體和驅動程式的詳細資訊，請參閱本文件結尾的[硬體和驅動程式支援](#hwsupport)。
+  > 如需所支援硬體和驅動程式的詳細資訊，請參閱此文件結尾的[硬體和驅動程式支援](#hwsupport)。
 
   如需圖形診斷需求的詳細資訊，請參閱[使用者入門](../debugger/graphics/getting-started-with-visual-studio-graphics-diagnostics.md)。
 
@@ -79,7 +79,7 @@ ms.locfileid: "57223464"
 
 從 Visual Studio 2017 開始，您可以透過 [GPUView](/windows-hardware/drivers/display/using-gpuview) 和 [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) 來開啟此資料。 只需選取位於右下角診斷工作階段的 [在 GpuView 中開啟] 或 [在 WPA 中開啟] 連結。
 
-![在下列中開啟...](media/gfx_diag_open_in.png)
+![在下列程式中開啟...](media/gfx_diag_open_in.png)
 <!-- /VERSIONLESS -->
 
 ## <a name="using-the-gpu-usage-report"></a>使用 GPU 使用量報告

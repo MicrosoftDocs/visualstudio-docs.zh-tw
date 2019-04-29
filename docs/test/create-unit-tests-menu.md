@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7eb72f104560991f1bb191e62641041879df071
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965460"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用建立單元測試命令來建立單元測試方法虛設常式
 
@@ -52,5 +52,5 @@ ms.locfileid: "58857719"
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用 [建立單元測試] 建立單元測試方法 Stub](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
-- [單元測試部落格文章](https://devblogs.microsoft.com/devops/?s=unit+testing)
+- [使用 [建立單元測試] 來建立單元測試方法虛設常式](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/) \(英文\)
+- [單元測試部落格文章](https://devblogs.microsoft.com/devops/?s=unit+testing) \(英文\)
