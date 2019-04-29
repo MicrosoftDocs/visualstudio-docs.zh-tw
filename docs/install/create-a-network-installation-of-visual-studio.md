@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5e499e54a7cf1c5c50a625cfe03482202e3a1f3f
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c727b31f353015ca6f43157c4b6afc67339526f0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974091"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>建立 Visual Studio 的網路安裝
 
@@ -111,10 +111,10 @@ xcopy /e c:\vsoffline \\server\products\VS2019
 
 有數個選項可供您用來自訂網路配置。 您可以建立部分配置，以便只包含一組特定[語言地區設定](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)、[工作負載、元件，及其建議或選擇性相依性](workload-and-component-ids.md)。 如果您知道只會在用戶端工作站部署一部分的工作負載，這可能十分有用。 用於自訂配置的一般命令列參數包括：
 
-* `--add` 指定[工作負載或元件識別碼](workload-and-component-ids.md)。 <br>如果使用 `--add`，則只會下載使用 `--add` 指定的工作負載和元件。  如未使用 `--add`，則會下載所有工作負載和元件。
-* `--includeRecommended` 以包含指定工作負載識別碼的所有建議元件
-* `--includeOptional` 以包含指定工作負載識別碼的所有建議和選擇性元件。
-* `--lang` 指定[語言地區設定](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)。
+* `--add` 可指定[工作負載或元件識別碼](workload-and-component-ids.md)。 <br>如果使用 `--add`，則只會下載使用 `--add` 指定的工作負載和元件。  如未使用 `--add`，則會下載所有工作負載和元件。
+* `--includeRecommended` 可包含指定工作負載識別碼的所有建議元件
+* `--includeOptional` 可包含指定工作負載識別碼的所有建議和選擇性元件。
+* `--lang` 可指定[語言地區設定](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)。
 
 下列範例示範如何建立自訂部分配置。
 
@@ -153,6 +153,7 @@ xcopy /e c:\vsoffline \\server\products\VS2019
     ```cmd
     vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
+
 ::: moniker range="vs-2017"
 
 ### <a name="new-in-version-153"></a>15.3 版的新功能
@@ -194,11 +195,13 @@ vs_enterprise.exe --layout c:\VSLayout --all
 系統管理員可以在執行安裝指令碼時，將 Visual Studio 部署到用戶端工作站。 或者，具有系統管理員權限的使用者可以直接從共用執行安裝程式，以在其電腦上安裝 Visual Studio。
 
 * 使用者可以執行下列命令來安裝： <br>
+
     ```cmd
     \\server\products\VS\vs_enterprise.exe
     ```
 
 * 系統管理員可以執行下列命令，以便使用自動模式來安裝：
+
     ```cmd
     \server\products\VS\vs_enterprise.exe --quiet --wait --norestart
     ```
@@ -270,6 +273,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 * [更新 Visual Studio 的網路型安裝](update-a-network-installation-of-visual-studio.md)
 * [控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
+* [Visual Studio 產品生命週期和服務](/visualstudio/releases/2019/servicing/)
 * [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
-* [使用命令列參數來安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)

@@ -1,5 +1,5 @@
 # [使用 C# 的 Visual Studio 開發環境](using-the-visual-studio-development-environment-for-csharp.md)
-## [如何：將應用程式組態檔加入至 C# 專案](how-to-add-an-application-configuration-file-to-a-csharp-project.md)
+## [如何：將應用程式設定檔新增至 C# 專案](how-to-add-an-application-configuration-file-to-a-csharp-project.md)
 ## [中繼資料當做原始碼](metadata-as-source.md)
 ## [重構 (C#)](refactoring-csharp.md)
 ### [擷取方法重構 (C#)](extract-method-refactoring-csharp.md)

@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947596"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>如何回報 Visual Studio 或 Visual Studio 安裝程式的問題
 
@@ -126,4 +126,4 @@ ms.locfileid: "59232537"
 * [回報 Visual Studio for Mac 的問題](/visualstudio/mac/report-a-problem)
 * [回報 C++ 的問題](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)
-* [開發人員社群資料隱私權](developer-community-privacy.md)
+* [Developer Community 資料隱私權](developer-community-privacy.md)
