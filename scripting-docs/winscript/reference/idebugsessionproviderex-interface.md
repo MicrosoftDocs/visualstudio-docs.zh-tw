@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c9bf341adeaeb17c8986b1b30b12f58113aef562
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978992"
 ---
 # <a name="idebugsessionproviderex-interface"></a>IDebugSessionProviderEx 介面
 提供偵錯工具 IDE，以啟用主控件和語言初始化偵錯的主要介面。 它會建立執行中應用程式的偵錯工作階段。 機器偵錯管理員會實作這個介面。  

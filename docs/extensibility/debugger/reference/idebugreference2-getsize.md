@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 681cede68a2d649cd9f072b6c10e8476a9625f6e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62869067"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
 取得大小，以位元組為單位，值的參考。 保留供未來使用。

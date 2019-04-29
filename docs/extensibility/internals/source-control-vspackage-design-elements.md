@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9e10825bb9bc9659728fbaaeb023a595745b7bcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858704"
 ---
 # <a name="source-control-vspackage-design-elements"></a>原始檔控制 VSPackage 的設計項目
 在本節中的主題說明結構原始檔控制 VSPackage 必須實作的深度整合。 也會列出介面的原始檔控制 VSPackage 的服務可以實作，並從其他介面和服務可以使用原始檔控制 VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]元件來支援它的來源控制模型與功能。

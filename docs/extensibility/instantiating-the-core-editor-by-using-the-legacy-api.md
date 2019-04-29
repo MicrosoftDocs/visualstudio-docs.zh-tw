@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5fad305d97407995e15887848e3672e382ad54e5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861784"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>使用舊版 API 具現化核心編輯器
 

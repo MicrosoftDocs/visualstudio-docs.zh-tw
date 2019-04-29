@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6470b7ddb8a28c2aa22a23a55976f1f8831c4363
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864130"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>文件資料和自訂編輯器中的文件檢視
 自訂編輯器是由兩個部分所組成： 文件資料物件和文件檢視物件。 如名稱所示，文件資料物件會表示要顯示的文字資料。 同樣地，文件檢視物件 （或 「 檢視 」） 表示要在其中顯示文件資料物件的一或多個 windows。

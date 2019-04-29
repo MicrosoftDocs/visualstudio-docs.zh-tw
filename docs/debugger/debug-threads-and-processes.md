@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4769224cfb26c4b1d55362fea006f55ba8845da
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852885"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>若要偵錯執行緒和處理序，在 Visual Studio 中的工具
 「執行緒」和「處理序」在電腦科學中是相關的概念。 兩者都代表必須以特定順序執行的指令序列。 但是，不同執行緒或處理序中的指令能夠平行執行。
@@ -62,7 +62,7 @@ ms.locfileid: "57526594"
 |**工作**視窗|-   檢閱 <xref:System.Threading.Tasks.Task> 物件的相關資訊，包括工作識別碼、工作狀態 (已排程、執行中、等待中、死結)，以及指派給工作的執行緒。<br />-   呼叫堆疊中的目前位置。<br />-   在建立時傳遞至工作的委派|-   切換至目前工作<br />-   將工作加上旗標或取消旗標<br />-   將工作凍結或解除凍結|
 |[GPU 執行緒] 視窗|-   旗標資料行，您可以在該資料行中標示想要特別注意的執行緒。<br />-目前的執行緒資料行，其中黃色箭號表示目前的執行緒。<br />-   [執行緒計數] 資料行，可顯示同一位置的執行緒數目。<br />-   [行] 資料行，可顯示每個執行緒群組所在的程式碼行。<br />-   [位址] 資料行，可顯示每個執行緒群組所在的指令位址。<br />-   [位置] 資料行，是位址在程式碼中的位置。<br />-   [狀態] 資料行，可顯示執行緒為使用中或已封鎖。<br />-   [磚] 資料行，可顯示資料列中執行緒的磚索引。|-變更為不同的執行緒<br />-   顯示特定磚和執行緒<br />-   顯示或隱藏資料行<br />-   依資料行排序<br />-   群組執行緒<br />-   將執行緒凍結或解除凍結<br />-   將執行緒加上旗標或取消旗標<br />-   僅顯示已加上旗標的執行緒|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [附加到執行中的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)

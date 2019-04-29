@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 56ec28d0d9202bfd72d31e95c53038dd1fa475e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912993"
 ---
 # <a name="servers-visual-studio-sdk"></a>伺服器 (Visual Studio SDK)
 在偵錯工具架構中， *server*:

@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568590"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 建立簡單的資料應用程式
 
@@ -58,7 +58,7 @@ ms.locfileid: "58268787"
 
 ## <a name="create-the-model"></a>建立模型
 
-1. 中的專案節點上按一下滑鼠右鍵**方案總管**，然後選擇**新增** > **新項目**。 在左窗格中，在C#節點，選擇**資料**，然後在中間窗格中，選擇  **ADO.NET 實體資料模型**。
+1. 中的專案節點上按一下滑鼠右鍵**方案總管**，然後選擇**新增** > **新項目**。 在左窗格中，C#] 節點底下，選擇**資料**，然後在中間窗格中，選擇 [ **ADO.NET 實體資料模型**。
 
    ![Entity Framework 模型新項目](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -72,7 +72,7 @@ ms.locfileid: "58268787"
 
     ![選擇模型的資料庫物件](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. 精靈會產生C#表示 Entity Framework 模型的類別。 類別是純舊C#類別，而且它們是我們繫結至 WPF 使用者介面。 *.Edmx*檔案會描述關聯性和其他中繼資料與資料庫中的物件產生關聯的類別。 *.Tt*檔案會產生運作模型，並將變更儲存到資料庫的程式碼的 T4 範本。 您可以看到所有這些檔案中的**方案總管 中**Northwind_model 節點下：
+5. 精靈會產生代表 Entity Framework 模型的 C# 類別。 類別是純舊 C# 類別，而且是我們繫結至 WPF 使用者介面。 *.Edmx*檔案會描述關聯性和其他中繼資料與資料庫中的物件產生關聯的類別。 *.Tt*檔案會產生運作模型，並將變更儲存到資料庫的程式碼的 T4 範本。 您可以看到所有這些檔案中的**方案總管 中**Northwind_model 節點下：
 
       ![方案總管 EF 模型檔案](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
@@ -353,7 +353,7 @@ Visual Studio 所產生的預設排列方式不適合您的應用程式，因此
 
 在 Windows Forms 應用程式，您取得 BindingNavigator 物件具有按鈕瀏覽資料庫中的資料列，並執行基本 CRUD 作業。 WPF 不會提供 BindingNavigator，但很輕易地建立一個。 您這麼做的水平的 StackPanel 內的按鈕，並會繫結至程式碼後置中方法的命令相關聯的按鈕。
 
-有個四部分的命令邏輯: （1） 命令、 （2） 的繫結、 （3） 按鈕，以及 （4） 命令中的處理常式程式碼後置。
+有個四部分的命令邏輯：（1） 命令、 （2） 的繫結、 （3） 按鈕，以及 （4） 命令中的處理常式程式碼後置。
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>在 XAML 中新增命令、 繫結和按鈕
 

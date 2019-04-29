@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d26c60dab3ab09d2fc9f42609568ab21ecd19104
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943388"
 ---
 # <a name="flowchart-activity-designers"></a>Flowchart 活動設計工具
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 包括幾項系統提供的活動，在您建構工作流程時，可以使用這些活動。 本節包含用來管理工作流程中之流程圖的系統提供活動。 下列主題說明會這些活動，並且提供如何使用的指引。  

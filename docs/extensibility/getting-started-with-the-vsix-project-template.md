@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b6176fda41b16a092b52e83e0ce894e1d1898e0a
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911878"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>開始使用 VSIX 專案範本
 

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97704675e1135959744e60724e4e3381bccf2b30
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931317"
 ---
 # <a name="message-options-dialog-box"></a>訊息選項對話方塊
 使用此對話方塊來選取哪一個訊息會列在[訊息檢視](../debugger/messages-view.md)。 若要顯示此對話方塊中，選擇**記錄檔訊息**從**Spy**功能表。

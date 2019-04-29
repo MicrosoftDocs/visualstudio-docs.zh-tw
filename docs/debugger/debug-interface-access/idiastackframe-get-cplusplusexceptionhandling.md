@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f0c2e07b5c9141b8cf31511405939fc65be6446
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839058"
 ---
 # <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
-擷取指出 c + + 例外狀況處理是否作用中的旗標。
+擷取旗標，指出如果C++例外狀況處理是作用中。
 
 ## <a name="syntax"></a>語法
 
@@ -33,16 +33,16 @@ HRESULT get_cplusplusExceptionHandling ( 
 #### <a name="parameters"></a>參數
  `pRetVal`
 
-[out]會傳回`TRUE`c + + 例外狀況處理實際上是這個框架中; 否則會傳回`FALSE`。
+[out]會傳回`TRUE`如果C++例外狀況處理就會生效，這個畫面格，否則會傳回`FALSE`。
 
 ## <a name="return-value"></a>傳回值
  如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 否則會傳回錯誤碼。
 
 ## <a name="remarks"></a>備註
- C + + 例外狀況處理不是結構化與相同或系統例外狀況處理。
+ C++例外狀況處理不是結構化與相同或系統例外狀況處理。
 
  若要判斷如果結構化例外狀況處理為作用中，請呼叫[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)方法。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
 - [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)

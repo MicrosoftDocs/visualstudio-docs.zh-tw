@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0c04ea981fc190b2e0074e767e086303e6950f2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861654"
 ---
 # <a name="command-placement-guidelines"></a>命令放置指導方針
 Visual Studio 整合式的開發環境 (IDE) 中的定位命令的最佳作法是根據命令集的大小而有所不同。 定義命令，並根據中的資訊位於 *.vsct*檔案。

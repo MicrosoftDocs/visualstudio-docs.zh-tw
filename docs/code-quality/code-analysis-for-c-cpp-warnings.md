@@ -19,14 +19,14 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: dc3f09575085039986a0b2fbbf3eb386ee5f5e1b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540777"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>C/C++ 程式碼分析警告
-此區段會列出以外所引發的 C/c + + 程式碼分析警告[c + + 核心指南檢查工具](code-analysis-for-cpp-corecheck.md)。 如需程式碼分析的資訊，請參閱 < [/analyze （程式碼分析）](/cpp/build/reference/analyze-code-analysis)和[快速入門：C/c + + 程式碼分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)。
+此區段會列出 C /C++程式碼分析警告，但不包括由引發[C++核心指南檢查工具](code-analysis-for-cpp-corecheck.md)。 如需程式碼分析的資訊，請參閱 < [/analyze （程式碼分析）](/cpp/build/reference/analyze-code-analysis)和[快速入門：適用於 C 的程式碼分析 /C++](../code-quality/quick-start-code-analysis-for-c-cpp.md)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d25ac4977f1fca44d63767c372db169f8cb61ea6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787654"
 ---
 # <a name="iscriptentrysetitemname"></a>IScriptEntry::SetItemName
 設定項目名稱可識別`IScriptEntry`物件。  

@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: de300a7af8492e6431f6b8513cde84a15895ad96
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786304"
 ---
 # <a name="isetnextstatement-interface"></a>ISetNextStatement 介面
 此介面是由解譯器，以允許更新目前的陳述式的處理序偵錯管理員實作的。 它從堆疊框架物件，實作，PDM 取得 QueryInterface 透過此介面。  

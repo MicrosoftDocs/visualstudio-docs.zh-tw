@@ -1,5 +1,5 @@
 ---
-title: 格式規範，在偵錯工具 （c + +） |Microsoft Docs
+title: 格式規範，偵錯工具 (C++) |Microsoft Docs
 ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
@@ -25,13 +25,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896616"
 ---
-# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>C + + 的 Visual Studio 偵錯工具中的格式規範
+# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>格式規範，如C++在 Visual Studio 偵錯工具
 您可以變更在顯示值的格式**監看式**，**自動變數**，並**區域變數**視窗中的，使用格式規範。
 
 您也可以使用中的格式規範**Immediate**  視窗中，**命令**視窗中[追蹤點](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，和甚至來源視窗中。 如果您暫停在這些視窗中的運算式，結果會出現在[DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)。 DataTip 顯示會反映格式規範。
@@ -62,7 +62,7 @@ int main() {
 ::: moniker-end
 
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 格式規範
-下表描述您可以使用 Visual Studio 中的格式規範。 以粗體顯示的規範才支援新的偵錯工具，而非 interop 偵錯使用 C + + /cli CLI。
+下表描述您可以使用 Visual Studio 中的格式規範。 針對新的偵錯工具，而不使用的 interop 偵錯僅支援以粗體顯示的規範C++/CLI。
 
 ::: moniker range=">= vs-2019" 
 
@@ -167,7 +167,7 @@ int main() {
 |wm|Windows 訊息編號|0x0010|WM_CLOSE|
 |!|未經處理的格式，並忽略任何資料類型檢視自訂項目|\<自訂的表示>|4|
 
-### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 格式規範的記憶體位置在 interop 偵錯使用 C + + /cli CLI
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 格式規範與 interop 偵錯中記憶體位置的C++/CLI
 下表描述用於記憶體位置的格式化符號。 您可將記憶體位置規範用於評估結果為位置的任何數值或運算式。
 
 |符號|格式|原始的監看值|顯示的值|

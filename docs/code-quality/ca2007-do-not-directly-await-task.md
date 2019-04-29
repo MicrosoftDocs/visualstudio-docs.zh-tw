@@ -13,11 +13,11 @@ manager: jillfra
 dev_langs:
 - CSharp
 ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545224"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007:不直接等候工作
 

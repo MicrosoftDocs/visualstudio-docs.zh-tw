@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35839f8ae33068333259b30015e4cae0bb9c26d3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001833"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>HOW TO：在檢視與 XML 編輯器之間切換
 

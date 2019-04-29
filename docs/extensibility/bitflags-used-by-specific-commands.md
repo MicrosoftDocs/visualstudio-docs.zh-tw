@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3adf4a26563560803f820d70ef6c6d5171e791d5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891683"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>特定命令所使用的位元旗標
 設定為單一值的一個或多個位元，可以修改多個原始檔控制外掛程式 API 中的函式的行為。 這些值稱為位元旗標。 原始檔控制外掛程式 API 所使用的位元各種的旗標的詳細資訊，依使用這些函式。
@@ -43,7 +43,7 @@ ms.locfileid: "56703210"
 |旗標|值|描述|
 |----------|-----------|-----------------|
 |`SCC_DIFF_IGNORECASE`|0x0002|忽略大小寫差異。|
-|`SCC_DIFF_IGNORESPACE`|0x0004|忽略空白字元的差異。 **注意：**`SCC_DIFF_IGNORECASE`和`SCC_DIFF_IGNORESPACE`旗標是選擇性的位元旗標。|
+|`SCC_DIFF_IGNORESPACE`|0x0004|忽略空白字元的差異。 **注意：** `SCC_DIFF_IGNORECASE`和`SCC_DIFF_IGNORESPACE`旗標是選擇性的位元旗標。|
 |`SCC_DIFF_QD_CONTENTS`|0x0010|QD 藉由比較整個檔案內容。|
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|QD 透過總和檢查碼。|
 |`SCC_DIFF_QD_TIME`|0x0040|QD 檔案的日期/時間戳記。|

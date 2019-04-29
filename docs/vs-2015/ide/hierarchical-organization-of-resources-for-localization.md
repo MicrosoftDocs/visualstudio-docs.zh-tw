@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: baa86408ca681d65266cb5dae3fe2bf9fca8f97c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584582"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>階層式組織當地語系化的資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,10 +49,10 @@ ms.locfileid: "54797060"
   
   ![NeutralSpecificResources 圖形](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [當地語系化的中性資源語言](../ide/neutral-resources-languages-for-localization.md)   
  [安全性和當地語系化附屬組件](../ide/security-and-localized-satellite-assemblies.md)   
  [當地語系化應用程式](../ide/localizing-applications.md)   
  [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)   
  [如何：設定 Windows Form 全球化的文化特性和 UI 文化特性](http://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)   
- [如何：為 ASP.NET 網頁全球化設定文化特性和 UI 文化特性](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+ [如何：ASP.NET Web 網頁全球化設定文化特性和 UI 文化特性](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)

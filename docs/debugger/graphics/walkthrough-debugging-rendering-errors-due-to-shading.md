@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849282"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>逐步解說：對因著色而產生的顯示錯誤進行偵錯
 本逐步解說示範如何使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]圖形診斷來調查因為著色器錯誤而著色不正確的物件。

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7fdff9237ef30884d5bfaad424edfffec62a8f58
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908411"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>舊版語言服務中對自動變數視窗的支援
 **自動變數**視窗會顯示運算式，例如變數和正在偵錯程式暫停 （可能是因為中斷點或例外狀況） 時，會在範圍內的參數。 運算式可以包含變數，本機或全域和已變更的區域範圍中的參數。 **自動變數**視窗也可以包含類別、 結構或其他類型的具現化。 運算式評估工具可以評估的任何項目可能顯示在**自動變數**視窗。

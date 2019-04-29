@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 60fb0d68d8052990fcc1783f86d0213b714dbfc9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978480"
 ---
 # <a name="idebugdocumenttextexternalauthor-interface"></a>IDebugDocumentTextExternalAuthor 介面
 可讓外部編輯器，來安全地編輯檔案為基礎的偵錯工具文件的來源檔案變更時，通知文件。  

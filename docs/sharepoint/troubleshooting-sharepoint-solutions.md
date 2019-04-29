@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bab7f45824def7a4b5a385381a4789b7adc276d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008077"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 方案進行疑難排解
   當您使用偵錯 SharePoint 方案時，則可能會發生下列問題或警示[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 偵錯 SharePoint 2007 工作流程方案](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)。

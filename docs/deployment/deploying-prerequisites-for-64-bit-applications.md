@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c70b58577f8aa6e391215658afb7f8fa43c9bb5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928873"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>部署 64 位元應用程式的必要條件
 ClickOnce 部署支援在 64 位元平台上的應用程式的安裝。 目標平台包括 **x86** (表示 32 位元平台)、**x64** (表示支援 AMD64 和 EM64T 指令集的電腦)，以及 **Itanium** (表示 64 位元 Itanium 處理器)。

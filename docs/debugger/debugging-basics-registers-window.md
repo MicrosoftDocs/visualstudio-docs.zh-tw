@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: df01776b5a7f2437c704c2b389c7d0929be5901c
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852262"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>關於 Visual Studio 中的暫存器視窗 (C#， C++，Visual Basic 中， F#)
 
@@ -40,7 +40,7 @@ ms.locfileid: "59584515"
 
  如需顯示 [暫存器] 視窗的詳細資訊，請參閱[使用暫存器視窗](../debugger/how-to-use-the-registers-window.md)。
 
- 當您查看**註冊**] 視窗中，您會看到這類項目`EAX = 003110D8`。
+ 當您查看**註冊** 視窗中，您會看到這類項目`EAX = 003110D8`。
 
  左邊的符號`=`標誌是註冊的名稱， `EAX`，在此案例。 `=` 號右邊的數值代表暫存器的內容。
 

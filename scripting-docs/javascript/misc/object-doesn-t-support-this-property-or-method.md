@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 433972790310559b19ca5bc2c982c32e699e0e60
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007439"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>物件不支援此屬性或方法
 您指定此物件沒有的屬性或方法。 並非所有物件都支援所有屬性和方法。  

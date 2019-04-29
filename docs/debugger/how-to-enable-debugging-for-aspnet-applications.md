@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: d383c559e605392b01ba2c476fd4ed5ae5d48625
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848353"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>偵錯在 Visual Studio 中的 ASP.NET 或 ASP.NET Core 應用程式
 
@@ -184,9 +184,9 @@ ASP.NET 專案具有*web.config*檔案依預設，其中包含這兩個應用程
 
 ## <a name="see-also"></a>另請參閱
 - [ASP.NET 偵錯：系統需求](aspnet-debugging-system-requirements.md)
-- [如何：在使用者帳戶下執行背景工作處理序](how-to-run-the-worker-process-under-a-user-account.md)
+- [如何：執行背景工作處理序，使用者帳戶](how-to-run-the-worker-process-under-a-user-account.md)
 - [如何：尋找 ASP.NET 處理序的名稱](how-to-find-the-name-of-the-aspnet-process.md)
 - [Debug deployed web applications](debugging-deployed-web-applications.md) (對已部署的 Web 應用程式進行偵錯)
-- [Walkthrough: Debugging a web form](walkthrough-debugging-a-web-form.md) (逐步解說：對 Web 表單進行偵錯)
-- [如何：對 ASP.NET 例外狀況進行偵錯](how-to-debug-aspnet-exceptions.md)
-- [Debug web applications: Errors and troubleshooting](debugging-web-applications-errors-and-troubleshooting.md) (對 Web 應用程式進行偵錯：錯誤和疑難排解)
+- [逐步解說：偵錯 web form](walkthrough-debugging-a-web-form.md)
+- [如何：偵錯 ASP.NET 例外狀況](how-to-debug-aspnet-exceptions.md)
+- [對 Web 應用程式進行偵錯：錯誤和疑難排解](debugging-web-applications-errors-and-troubleshooting.md)

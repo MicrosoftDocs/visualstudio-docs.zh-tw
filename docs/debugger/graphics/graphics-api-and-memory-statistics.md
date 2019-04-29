@@ -12,14 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896015"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>圖形 API 和記憶體統計資料
-<!-- VERSIONLESS --> Visual Studio 2017 和更新版本支援的圖形 API 統計資料和記憶體統計資料的工具。  這兩個工具可讓您檢視資訊的各種部分 Direct3D API 使用方式，以及各種資源的 GPU 記憶體耗用量。
+<!-- VERSIONLESS -->
+Visual Studio 2017 和更新版本支援的圖形 API 統計資料和記憶體統計資料的工具。  這兩個工具可讓您檢視資訊的各種部分 Direct3D API 使用方式，以及各種資源的 GPU 記憶體耗用量。
 
 ## <a name="graphics-api-statistics"></a>圖形 API 統計資料
 在 Visual Studio 圖形診斷中的圖形 API 統計資料可讓您檢視所做的 Direct3D 呼叫和每個呼叫的計數。  若要檢視視窗，請選取**檢視 > API 統計資料**功能表項目。
@@ -39,7 +40,7 @@ ms.locfileid: "56720597"
 
 如同 [API 統計資料] 工具中，您可以以滑鼠右鍵按一下 [全部複製資料] 視窗中以 csv 格式，可以貼到類似 Excel 供進一步分析。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [圖形診斷 (偵錯 DirectX 圖形)](visual-studio-graphics-diagnostics.md)
 - [資源歷程記錄](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

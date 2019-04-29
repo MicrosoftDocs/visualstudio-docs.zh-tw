@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11bd61cda8c92721fb42c640b0b5100b8054acdf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894862"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>偵錯前景程式時，如何使用偵錯工具視窗？
 ## <a name="problem-description"></a>問題說明
@@ -36,6 +36,6 @@ ms.locfileid: "56698023"
 ## <a name="solution"></a>方案
  如果您有第二台電腦，您可以使用遠端偵錯。 有了兩台電腦設定，當您在主機上操作偵錯工具時，您可以查看遠端電腦上的螢幕圖片。 如需有關遠端偵錯的詳細資訊，請參閱 <<c0> [ 遠端偵錯](../debugger/remote-debugging.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯機器碼常見問題集](../debugger/debugging-native-code-faqs.md)
 - [偵錯機器碼](../debugger/debugging-native-code.md)

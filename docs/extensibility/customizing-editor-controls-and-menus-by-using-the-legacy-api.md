@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f52c0bbb87cc610b1b05ef987f43167f60292f4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926497"
 ---
 # <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>使用舊版 API 自訂編輯器控制項和 Mmenus
 語言服務或文字檢視，可以控制的操作功能表和編輯器中的控制項。 在本節中的頁面詳細說明如何使用這些功能。

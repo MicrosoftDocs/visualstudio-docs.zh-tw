@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62574849"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>HOW TO：以程式設計方式定義，並在文件中選取範圍
   您也可以使用 <xref:Microsoft.Office.Interop.Word.Range> 物件定義 Microsoft Office Word 文件中的範圍。 您可以使用，比方說，選取數種方式，在整份文件<xref:Microsoft.Office.Interop.Word.Range.Select%2A>方法<xref:Microsoft.Office.Interop.Word.Range>物件，或使用之內容屬性的<xref:Microsoft.Office.Tools.Word.Document>類別 （在文件層級自訂） 或<xref:Microsoft.Office.Interop.Word.Document>類別 (在VSTO 增益集）。

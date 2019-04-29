@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d2f3383731fcfa314c3b936cd42002186012439
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900475"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 部署資訊清單
 部署資訊清單是 XML 檔案，描述 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，包括要部署的目前 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式版本之識別。

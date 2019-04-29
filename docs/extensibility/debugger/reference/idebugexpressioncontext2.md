@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 559115358910fe3445ab12000d1e113167c7da82
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62874180"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
 此介面代表運算式評估的內容

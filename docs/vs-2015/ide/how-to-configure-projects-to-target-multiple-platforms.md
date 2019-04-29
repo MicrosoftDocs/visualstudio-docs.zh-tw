@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7457b5be3a6c1cbf2c2b6a1c6f66f9fb89e8d225
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584307"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>HOW TO：將專案設定到多重目標平台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: da6f276e714c816ea9b3c1b735ad50f31ffdc3c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567053"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>在 WPF 應用程式中顯示相關資料
 
@@ -45,7 +45,7 @@ ms.locfileid: "55931503"
 
      Visual Studio 會產生 XAML 會建立新的資料繫結控制項，您將每個項目。 XAML 也會加入新<xref:System.Windows.Data.CollectionViewSource>父資料表或物件的置放目標的資源。 對於某些資料來源，Visual Studio 也會產生程式碼，以將資料載入至父資料表或物件。 如需詳細資訊，請參閱 <<c0> [ 繫結 WPF 控制項新增至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
 
-6. 在 [ **Zdroje dat** ] 視窗中，找出相關的子資料表或物件。 相關的子資料表和物件顯示為可展開節點底部的父節點的清單中的資料。
+6. 在 [ **Zdroje dat** ] 視窗中，找出相關的子資料表或物件。 相關的子資料表和物件會顯示為可展開節點底部的父節點的清單中的資料。
 
 7. 將子節點 （或任何子節點中的個別項目） 從拖曳**Zdroje dat**視窗拖曳至設計工具中的有效置放目標。
 

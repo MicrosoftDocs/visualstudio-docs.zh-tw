@@ -1,5 +1,5 @@
 ---
-title: 錯誤： Web 伺服器找不到要求的資源 |Microsoft Docs
+title: 錯誤：Web 伺服器找不到要求的資源 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c0b37e96db46a43b869867b8b5e37f857e75aff9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850276"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>錯誤：Web 伺服器找不到要求的資源
 基於安全性考量，IIS 已傳回泛型錯誤。
@@ -32,5 +32,5 @@ ms.locfileid: "56705647"
 
  如需針對 IIS 進行疑難排解的詳細資訊，請參閱 [IIS 管理與系統管理](/iis/manage/provisioning-and-managing-iis/iis-management-and-administration)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [錯誤：Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

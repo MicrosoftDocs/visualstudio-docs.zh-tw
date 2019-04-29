@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 936428b82e721a1df6003a4bb0eecefe5b696b4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825347"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>程式碼分析問題疑難排解
 本主題包含下列 Visual Studio 程式碼分析問題的疑難排解資訊。

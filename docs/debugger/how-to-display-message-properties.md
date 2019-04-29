@@ -1,5 +1,5 @@
 ---
-title: 如何： 顯示訊息屬性 |Microsoft Docs
+title: HOW TO：顯示訊息屬性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fddccbd116f65cb22cd0e12b8435f8229298f504
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894309"
 ---
-# <a name="how-to-display-message-properties"></a>如何：顯示訊息屬性
+# <a name="how-to-display-message-properties"></a>HOW TO：顯示訊息屬性
 若要深入了解中所列的訊息[訊息檢視](../debugger/messages-view.md)，使用[訊息內容 對話方塊](../debugger/message-properties-dialog-box.md)。
 
 ### <a name="to-open-a-message-properties-dialog-box"></a>若要開啟 [訊息屬性] 對話方塊

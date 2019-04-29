@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 53b71471ada55751de301391fdcc70387c1bb6c2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935675"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
 使指令碼引擎放棄任何目前載入的指令碼，其狀態，並釋放任何它對其他物件，因此輸入 已關閉的狀態的介面指標。 事件接收器、 立即執行的指令碼的文字，並已在進行中的巨集引動過程完成之前的狀態變更 (使用[iactivescript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md)取消執行中指令碼的執行緒)。 介面會發行以避免循環參考問題之前，必須呼叫這個方法所建立的主機。  

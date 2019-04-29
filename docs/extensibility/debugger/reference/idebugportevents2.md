@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fb6a13b47013153de284ad1997a484efb3be1c98
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918323"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 這個介面會通知程序和程式的建立和解構的特定連接埠上接聽的程式 （通常是工作階段偵錯管理員 [SDM] 或偵錯引擎）。 這項資訊可用來呈現的程序和連接埠上執行程式的即時檢視。

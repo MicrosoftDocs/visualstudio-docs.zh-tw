@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 229a5f719b52ba04473115eaa2bb6bcbf801bdaf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864104"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField 元素 （Visual Studio 範本）
 指定使用者是否可以編輯 [位置] 欄位。
@@ -33,10 +33,10 @@ ms.locfileid: "56682852"
  下列章節說明屬性、子元素和父元素。
 
 ### <a name="attributes"></a>屬性
- 無
+ None
 
 ### <a name="child-elements"></a>子元素
- 無
+ None
 
 ### <a name="parent-elements"></a>父元素
 

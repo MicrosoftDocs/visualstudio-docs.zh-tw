@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 257987809136fecf0277c2571a698a02bfd8f9aa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891998"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>實作原始檔控制外掛程式的最佳作法
 下列的技術詳細資料可協助您可靠地實作原始檔控制外掛程式在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。

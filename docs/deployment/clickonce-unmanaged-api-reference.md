@@ -29,11 +29,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900266"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce 非受控 API 參考
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從 dfshim.dll 未受管理的公用 Api。
@@ -52,7 +52,7 @@ ms.locfileid: "56633794"
 
 ### <a name="parameters"></a>參數
 
-|參數|說明|類型|
+|參數|描述|類型|
 |---------------|-----------------|----------|
 |`pcwzActivationUrl`|`ActivationURL` 的指標。|LPCWSTR|
 |`pcwzPathToDeploymentManifest`|`PathToDeploymentManifest` 的指標。|LPCWSTR|
@@ -80,7 +80,7 @@ ms.locfileid: "56633794"
 
 ### <a name="parameters"></a>參數
 
-|參數|說明|類型|
+|參數|描述|類型|
 |---------------|-----------------|----------|
 |`deploymentUrl`|以 NULL 終止的字串，其中包含部署資訊清單 URL 的指標。|LPCWSTR|
 |`data`|保留供未來使用。 必須是 Null。|LPVOID|

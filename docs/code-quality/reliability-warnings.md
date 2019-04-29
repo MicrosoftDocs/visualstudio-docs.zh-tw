@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74c1a5202b05b3ffe6f9b6c5b24804fb259287c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825334"
 ---
 # <a name="reliability-warnings"></a>可靠性警告
 可靠性警告支援程式庫和應用程式的可靠性，例如記憶體和執行緒的正確用法。

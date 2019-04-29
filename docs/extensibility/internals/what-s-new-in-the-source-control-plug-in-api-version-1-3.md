@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8b61e56fcef8bbbe8e9f36a39580eae14ad582d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856715"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>什麼&#39;的新功能的原始檔控制外掛程式 API 版本 1.3
 原始檔控制外掛程式 API 版本 1.3 導入了下列新的函式，以提供更進階的控制項。

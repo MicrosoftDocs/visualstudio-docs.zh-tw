@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6c9bf9dd71007e3a33a217a7ec30b357cd211b00
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909347"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>管理部署的專案組態
 部署是指實際將從建置程序的輸出項目移至 偵錯和安裝的預期位置。 比方說，Web 應用程式可能會在本機電腦上建置，然後放在伺服器上。

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 68d7f521927497a50779d77c4d7bdd8520ac222f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545250"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823:避免包含未使用的私用欄位
 

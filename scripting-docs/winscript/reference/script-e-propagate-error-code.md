@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e6b1feac19be5f6506227b60515df70d9a737a2a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840275"
 ---
 # <a name="scriptepropagate-error-code"></a>SCRIPT_E_PROPAGATE 錯誤碼
 指令碼錯誤傳播給呼叫者，這可能是在不同的執行緒。 主應用程式應該傳遞給呼叫者的錯誤程式碼。  
