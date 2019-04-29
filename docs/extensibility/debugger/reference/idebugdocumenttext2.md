@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6069b7c77995a855bfa47d1d369203f386b0302c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62875225"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 此介面代表文字文件。

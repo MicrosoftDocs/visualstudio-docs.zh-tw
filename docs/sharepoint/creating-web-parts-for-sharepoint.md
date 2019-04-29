@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1105e6c68e1ec9083fd790ad8a38b09870345af2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580940"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>建立 SharePoint web 組件
   藉由使用 web 組件，您可以使用瀏覽器修改內容、 外觀及行為的 SharePoint 網站頁面。 Web 組件是在網頁組件內執行的伺服器端控制項： 它們是在 SharePoint 網站上顯示之網頁的建置組塊。 請參閱[建置組塊：Web 組件](http://go.microsoft.com/fwlink/?LinkID=182097)。
@@ -108,7 +108,7 @@ ms.locfileid: "56628399"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
+|標題|說明|
 |-----------|-----------------|
 |[如何：建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)|說明如何建立 SharePoint 頁面的 web 組件。|
 |[如何：使用設計工具建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|說明如何使用視覺化設計介面建立 SharePoint web 組件。|

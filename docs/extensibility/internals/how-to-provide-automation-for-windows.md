@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 400b7c89dd10d01fcc7ac4eb238c2bde10117fdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860746"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>HOW TO：提供適用於 windows 的自動化
 

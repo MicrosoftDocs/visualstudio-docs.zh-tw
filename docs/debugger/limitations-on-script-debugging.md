@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69c5bb23745719edf5e67400d97202f4d14ac17d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846256"
 ---
 # <a name="limitations-on-script-debugging"></a>指令碼偵錯的限制
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支援對用戶端指令碼進行偵錯，但受本主題所述的限制。

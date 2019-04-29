@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a4df209e45205e8098503494b61c385e1b07d3e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825386"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>混合建議規則規則集
 
-Microsoft 混合建議規則的重點在於支援 Common Language Runtime，包括潛在的安全性漏洞、 應用程式當機，以及其他重要的邏輯和設計錯誤的 c + + 專案中最常見且關鍵的問題。 您應該包含您為支援 Common Language Runtime 之 c + + 專案建立此規則設定任何自訂規則集中。
+Microsoft 混合建議規則的重點在於最一般和重大問題在您C++支援 Common Language Runtime，包括潛在的安全性漏洞、 應用程式當機，以及其他重要的邏輯和設計錯誤的專案。 您應該包含這個規則集建立的任何自訂規則集中您C++支援 Common Language Runtime 的專案。
 
 |規則|描述|
 |----------|-----------------|

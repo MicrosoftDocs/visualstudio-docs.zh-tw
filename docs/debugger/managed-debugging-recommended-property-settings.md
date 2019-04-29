@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 711a8c1e8353f6e57f7101549a3b5421a33e0ae4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846282"
 ---
-# <a name="managed-debugging-recommended-property-settings"></a>Managed 偵錯：建議的屬性設定
+# <a name="managed-debugging-recommended-property-settings"></a>受控偵錯：建議的屬性設定
 在所有 Managed 偵錯案例中，某些屬性必須以相同的方式設定。
 
  下表顯示建議的屬性設定。
@@ -35,9 +35,9 @@ ms.locfileid: "56679303"
 
 |**屬性名稱**|**設定**|
 |-----------------------|-----------------|
-|**定義 DEBUG 常數**|C# 和 F#：請勾選這個核取方塊。 這可以讓應用程式使用 Debug 類別。|
-|**定義 TRACE 常數**|C# 和 F#：請勾選這個核取方塊。 這可以讓應用程式使用 Trace 類別。|
-|**最佳化程式碼**|C#、F# 和 Visual Basic：請設定為 false。 最佳化程式碼較難偵錯，因為產生的指令不能直接對應到您的原始程式碼。 如果您發現程式有一個只出現在最佳化程式碼中的 Bug，您可以開啟這個設定，但是請記住，顯示在 [反組譯碼] 視窗中的程式碼是由最佳化程式碼所產生，可能無法對應至您在程式碼編輯器中看到的內容。 若要偵錯最佳化程式碼，您必須關閉 Just My Code  (請參閱[將逐步執行限制於 Just My Code](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code))。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 的專案設定C#偵錯組態](../debugger/project-settings-for-csharp-debug-configurations.md)或是[Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)。</c0>|
+|**定義 DEBUG 常數**|C#和F#:設定核取此核取方塊。 這可以讓應用程式使用 Debug 類別。|
+|**定義 TRACE 常數**|C#和F#:設定核取此核取方塊。 這可以讓應用程式使用 Trace 類別。|
+|**最佳化程式碼**|C#F#，和 Visual Basic:設定為 false。 最佳化程式碼較難偵錯，因為產生的指令不能直接對應到您的原始程式碼。 如果您發現程式有一個只出現在最佳化程式碼中的 Bug，您可以開啟這個設定，但是請記住，顯示在 [反組譯碼] 視窗中的程式碼是由最佳化程式碼所產生，可能無法對應至您在程式碼編輯器中看到的內容。 若要偵錯最佳化程式碼，您必須關閉 Just My Code  (請參閱[將逐步執行限制於 Just My Code](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code))。<br /><br /> 如需詳細資訊，請參閱 < [C# 偵錯組態的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)或是[Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)。|
 |**輸出路徑**|設定為 bin\Debug\\。|
 |**進階編譯選項**|僅限 Visual Basic。 按一下 [進階] 按鈕以設定下表中描述的進階屬性。|
 
@@ -50,6 +50,6 @@ ms.locfileid: "56679303"
 |**定義 DEBUG 常數**|選取這個核取方塊定義 `DEBUG` 常數，讓應用程式能使用 <xref:System.Diagnostics.Debug> 類別。|
 |**定義 TRACE 常數**|選取這個核取方塊定義 `TRACE` 常數，讓應用程式能使用 <xref:System.Diagnostics.Trace> 類別。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)
 - [C#、F# 和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)

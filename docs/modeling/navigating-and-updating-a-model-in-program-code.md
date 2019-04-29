@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 15725508059dbd1c11d9abe1dfcd42d170d24b47
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814762"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>巡覽及更新程式碼中的模型
 
@@ -108,7 +108,7 @@ ms.locfileid: "60097761"
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="metadata"></a> 存取類別資訊
- 您可以取得資訊的類別、 關聯性和 DSL 定義中的其他層面。 例如：
+ 您可以取得資訊的類別、 關聯性和 DSL 定義中的其他層面。 例如: 
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -199,7 +199,7 @@ using (Transaction t =
 
  有三種方式，您可以在其中建立關聯性的執行個體。 每一種方法有相同的效果：
 
-- 設定來源角色扮演者的屬性。 例如：
+- 設定來源角色扮演者的屬性。 例如: 
 
   - `familyTree.People.Add(edward);`
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 512dfda8c95ecd56fe44eb6878e6abc0d942a782
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826728"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>HOW TO：變更功能區上的索引標籤的位置
   您可以使用，以變更功能區上的自訂索引標籤的順序**索引標籤集合編輯器**。 之前或之後在功能區上的內建索引標籤，您可以將自訂索引標籤。 內建索引標籤是已經在 Microsoft Office 應用程式的功能區的索引標籤。 例如，**資料** 索引標籤是在 Excel 中的內建索引標籤。

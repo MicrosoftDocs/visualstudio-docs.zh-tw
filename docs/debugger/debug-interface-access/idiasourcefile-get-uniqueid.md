@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c4a204e04c1c99dcbe8c6ba6d5e3457ca875dde4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832249"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
 擷取都是唯一的這個映像的簡單的整數值。
@@ -41,5 +41,5 @@ HRESULT get_uniqueId ( 
 ## <a name="remarks"></a>備註
  比較索引鍵，而不是字串可以加速行數字處理。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

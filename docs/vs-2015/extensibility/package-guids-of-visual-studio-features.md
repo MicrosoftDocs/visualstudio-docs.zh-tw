@@ -12,11 +12,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8601b4f072c206ab19fdcb4a7248e79784af934a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546797"
 ---
 # <a name="package-guids-of-visual-studio-features"></a>Visual Studio 功能的封裝 Guid
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58941828"
 ||Visual Studio 方案建置套件|{282BD676-8B5B-11D0-8A34-00A0C91E2ACD}|
 ||文字管理套件|{F5E7E720-1401-11d1-883B-0000F87579D2}|
 ||Visual Studio 的 vs 設定套件|{F74C5077-D848-4630-80C9-B00E68A1CA0C}|
-|說明|Visual Studio 說明套件|{4A791146-19E4-11D3-B86B-00C04F79F802}|
+|Help|Visual Studio 說明套件|{4A791146-19E4-11D3-B86B-00C04F79F802}|
 |工作清單中，錯誤清單|ErrorListPackage|{4A9B7E50-AA16-11D0-A8C5-00A0C921A4D2}|
 |類別的大綱|類別外框套件|{21AF45B0-FFA5-11D0-G63F-00A0C922E851}|
 |工具箱控制項安裝程式|工具箱控制項安裝程式套件|{2C298B35-07DA-45F1-96A3-BE55D91C8d7A}|

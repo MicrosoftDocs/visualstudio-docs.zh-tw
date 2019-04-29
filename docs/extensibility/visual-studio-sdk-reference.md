@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 62f5547da6e2181590b231175a409c505f3da7a0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824373"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 參考
 本節包含 Visual Studio 的命名空間、 相關的命名空間和資訊感興趣的其他區域的開發人員使用 Visual Studio SDK。
@@ -126,11 +126,11 @@ ms.locfileid: "56685745"
 
 - <xref:EnvDTE100> 使用 Visual Studio 自動化。
 
-- <xref:Microsoft.VisualStudio.VCCodeModel> 使用 Visual c + + 專案自動化。
+- <xref:Microsoft.VisualStudio.VCCodeModel> 視覺效果使用C++專案自動化。
 
-- <xref:Microsoft.VisualStudio.VCProject> 使用 Visual c + + 專案自動化的類別。
+- <xref:Microsoft.VisualStudio.VCProject> 視覺效果使用的類別C++專案自動化。
 
-- <xref:Microsoft.VisualStudio.VCProjectEngine> 使用 Visual c + + 專案自動化。
+- <xref:Microsoft.VisualStudio.VCProjectEngine> 視覺效果使用C++專案自動化。
 
 - <xref:Microsoft.VisualStudio.VsWizard> 使用 Visual Studio 精靈。
 

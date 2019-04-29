@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
+dev_langs:
+- CPP
+- CSharp
 ms.openlocfilehash: 911869a1d727e466cbf2d43557946efaba1f7dd4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62922826"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 擴充[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)介面，可讓模組和處理程序介面擷取。

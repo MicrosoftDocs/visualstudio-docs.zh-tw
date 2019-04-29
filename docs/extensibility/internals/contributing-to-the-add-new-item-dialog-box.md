@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 77008b6a4403270c77e24607fc0f4f6f4456296e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861548"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>參與加入新項目 對話方塊
 專案子類型可以提供完整的新目錄的項目**加入新項目**對話方塊中，藉由註冊**加入項目**下的 範本**專案**登錄子機碼。

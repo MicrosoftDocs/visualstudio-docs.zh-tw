@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c9b500c9edfc7c5d3f8bba945ebb6bdfe4a3d6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849259"
 ---
 # <a name="graphics-diagnostics-examples"></a>圖形診斷範例
 這些範例示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷，偵錯 DirectX 應用程式中的呈現問題。

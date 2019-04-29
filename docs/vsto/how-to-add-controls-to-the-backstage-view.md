@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826777"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>HOW TO：將控制項加入至 Backstage 檢視
   您可以使用功能區設計工具將控制項新增至後按一下開啟功能表**檔案** 索引標籤。當您執行應用程式中，您將加入的控制項**檔案**索引標籤會出現一個名為群組**增益集**。
