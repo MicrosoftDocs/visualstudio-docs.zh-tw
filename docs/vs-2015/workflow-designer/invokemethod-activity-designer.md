@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 61398efe1849c6038e13a68ae3b2e2f5f80f1d5d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952005"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 活動設計工具
 **InvokeMethod**設計工具會用來建立及設定<xref:System.Activities.Statements.InvokeMethod>活動。  

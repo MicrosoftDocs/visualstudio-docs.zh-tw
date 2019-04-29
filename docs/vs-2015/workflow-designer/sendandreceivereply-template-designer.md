@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 689f3a57dc3de9bbe63b0ef69a969cac57a639c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948022"
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply 樣本設計工具
 **SendAndReceiveReply**範本用來建立一對預先設定<xref:System.ServiceModel.Activities.Send>並<xref:System.ServiceModel.Activities.ReceiveReply>內的活動<xref:System.Activities.Statements.Sequence>一部分的要求/回應訊息交換相互關聯的活動在用戶端上的模式。  

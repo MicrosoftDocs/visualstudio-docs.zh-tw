@@ -10,11 +10,11 @@ ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
 manager: jillfra
 ms.openlocfilehash: 64f2afa6e853978e919e466f91475bed1e8d698c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971286"
 ---
 # <a name="registering-services"></a>註冊服務
 若要支援依需求載入，服務提供者必須向 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]註冊其全域服務。  

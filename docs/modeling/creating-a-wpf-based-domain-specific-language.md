@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0492ec90bd9ef1ca576aad9e8b708783a3ef8ad9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002728"
 ---
 # <a name="create-a-wpf-based-domain-specific-language"></a>建立 WPF 架構的特定領域語言
 

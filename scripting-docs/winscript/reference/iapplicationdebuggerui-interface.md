@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f138492e5b0a465bb0f101c15457ed1021ab3d5a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991087"
 ---
 # <a name="iapplicationdebuggerui-interface"></a>IApplicationDebuggerUI 介面
 藉由將偵錯工具整合式的開發環境 (IDE) (除了`IApplicationDebugger`) 提供給外部元件進一步控制偵錯工具的使用者介面 (UI)。  

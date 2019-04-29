@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 421cc23fb807a571b2b36f5f1def5df46a99492b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946611"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>迴圈外不可以有 'continue'
 您嘗試使用**繼續**陳述迴圈外的。 **繼續**陳述式只能用於下列項目： 主體  

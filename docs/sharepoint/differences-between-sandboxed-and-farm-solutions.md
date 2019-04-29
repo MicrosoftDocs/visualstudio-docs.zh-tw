@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 073e62b473ebfcec5f71ae1907e8f9e385333411
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967542"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>差異沙箱化方案與伺服器陣列解決方案
   當您編譯 SharePoint 方案時，它會部署到 SharePoint 伺服器，並偵錯工具附加至偵錯。 用於偵錯解決方案的程序取決於沙箱化方案屬性的設定： 沙箱化方案 」 或 「 伺服器陣列方案。

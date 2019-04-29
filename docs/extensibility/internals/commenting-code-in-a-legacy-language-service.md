@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9c82669ac6d4f32f1525b7e14427ed620a51cfc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861581"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>舊版語言服務中的註解程式碼
 程式設計語言通常能用來標註或註解的程式碼。 註解是一段文字，提供程式碼的其他資訊，但會忽略期間編譯或解譯。

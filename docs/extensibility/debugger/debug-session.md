@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5fba342cdddc1b3f5cfed73561ed521a6163f3cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925933"
 ---
 # <a name="debug-session"></a>偵錯工作階段
 偵錯工具就架構而言，*工作階段*:

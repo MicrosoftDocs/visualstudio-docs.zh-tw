@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002050"
 ---
-# <a name="how-to-use-xml-snippets"></a>HOW TO：使用 XML 片段
+# <a name="how-to-use-xml-snippets"></a>HOW TO：使用 XML 程式碼片段
 
 您可以使用 XML 編輯器捷徑功能表上的下列兩個命令，以叫用 XML 片段。 **插入程式碼片段**命令會將 XML 程式碼片段插入游標位置。 **環繞**命令會以 XML 片段環繞選定文字。 每個 XML 片段都具有指定的片段型別。 程式碼片段類型可讓您決定是否可與程式碼片段**插入程式碼片段**命令**環繞**命令，或兩者。
 
@@ -98,7 +98,7 @@ ms.locfileid: "57526213"
 
 3. 選取程式碼片段，從清單中使用滑鼠，或輸入名稱的程式碼片段並按** 索引標籤**或是**Enter**。
 
-## <a name="use-xml-snippets"></a>使用 XML 片段
+## <a name="use-xml-snippets"></a>使用 XML 程式碼片段
 
 一旦選擇了 XML 片段，程式碼片段的文字便會自動插入游標位置。 會反白顯示片段中任何可編輯的欄位，並自動選取第一個可編輯的欄位。 目前選取的欄位為 boxed。
 

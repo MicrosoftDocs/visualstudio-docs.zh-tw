@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 032ee551ff04590ccdb8744c1274b137dec0b756
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982312"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>使用 Excel 工作表上的 Windows Form 控制項
   您可以加入 Windows Form 控制項您的 Microsoft Office Excel 活頁簿將控制項新增至 Windows Forms 的方式相同。 如需有關使用文件上控制項的一般資訊，請參閱[Windows Forms 控制項上 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)。

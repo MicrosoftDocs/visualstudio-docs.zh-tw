@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e7a422e9548fabefa2066fb439c01e382586cd36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961601"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>HOW TO：以程式設計方式使用 Word 對話方塊，在隱藏模式中
   您可以藉由叫用 Microsoft Office Word 中的內建對話方塊，而不向使用者顯示這些執行複雜的作業，其中一種方法的呼叫取代。 您可以使用<xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A>方法<xref:Microsoft.Office.Interop.Word.Dialog>物件，而不需呼叫<xref:Microsoft.Office.Interop.Word.Dialog.Display%2A>方法。

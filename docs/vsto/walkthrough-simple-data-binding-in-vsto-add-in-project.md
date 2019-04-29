@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6b6cf1e800c785f73ebb11e09f11b617fe42aa32
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981074"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>逐步解說：在 VSTO 增益集專案中的簡單資料繫結
 

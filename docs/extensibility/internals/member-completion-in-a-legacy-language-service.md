@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 56ad09f2b158c7d23bf40bbafbdba3a9435926e4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909162"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>舊版語言服務中的成員完成
 
@@ -38,7 +38,7 @@ Managed 的 package framework (MPF) 提供的工具提示和支援管理工具�
 
 - <xref:Microsoft.VisualStudio.Package.IScanner>掃描器會偵測成員完成字元，並設定語彙基元的觸發程序[TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>)該字元。
 
-成員完成字元表示的類別、 結構或列舉成員遵循。 例如，在 C# 或 Visual Basic 中的成員完成字元是`.`，而 c + + 中的字元是其中一個`.`或`->`。 成員選取字元會掃描時，會設定觸發程序的值。
+成員完成字元表示的類別、 結構或列舉成員遵循。 例如，在C#或 Visual Basic 的成員完成字元`.`，當您在C++的字元是其中一個`.`或`->`。 成員選取字元會掃描時，會設定觸發程序的值。
 
 ### <a name="the-intellisense-member-list-command"></a>IntelliSense 成員 List 命令
 

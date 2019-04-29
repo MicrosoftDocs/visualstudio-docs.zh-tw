@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c5e617b57437033f4194d96647ebff9d1c4e2c2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813993"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>HOW TO：擴充 SharePoint 節點在 伺服器總管
   您可以擴充節點底下**SharePoint 連線**中的節點**伺服器總管**。 當您想要將新的子節點、 快顯功能表項目或屬性新增至現有的節點時，這非常有用。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。

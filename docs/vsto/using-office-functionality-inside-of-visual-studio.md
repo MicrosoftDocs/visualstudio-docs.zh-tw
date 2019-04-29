@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c47ed9639a33ecdea3451c63b729d959f6855e5d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982339"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>使用 Visual studio 的 Office 功能
   當您建立的文件層級專案時，文件和相關聯的應用程式裝載在 Visual Studio 內讓您可以設計，並直接使用文件。 當您有 Visual Studio 中開啟應用程式的 Microsoft Office 時，通常它會如預期般運作。 不過，有些應用程式是功能的不同或無法存取。

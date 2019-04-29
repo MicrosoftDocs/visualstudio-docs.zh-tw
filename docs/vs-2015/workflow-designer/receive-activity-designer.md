@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 05dc1643ecd05277baeba50bb00320d2f3a89abe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971260"
 ---
 # <a name="receive-activity-designer"></a>Receive 活動設計工具
 **接收**活動設計工具會用來建立及設定<xref:System.ServiceModel.Activities.Receive>活動。 <xref:System.ServiceModel.Activities.Receive> 活動是接收訊息的活動，該訊息可能是內建的型別 (例如 <xref:System.ServiceModel.Channels.Message>、<xref:System.IO.Stream> 或 <xref:System.Xml.Linq.XElement>)，或是應用程式定義的資料合約、訊息合約或可序列化的 XML 類別。  

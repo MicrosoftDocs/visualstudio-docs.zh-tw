@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 572b466907fdbe43c5b9f094b74837ca05d1b212
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966948"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>HOW TO：將項目加入至 SharePoint 專案
   SharePoint 方案包含一或多個專案，其中每一個包含多個 SharePoint 專案項目。 您開啟或建立 SharePoint 方案之後，您可以在這些專案中加入新的或現有的項目。 比方說，新的工作流程專案會隨附預設表單名為 default.aspx，但您可以使用新的或不同的表單，取代該表單，或新增另一種 ASPX 形式。

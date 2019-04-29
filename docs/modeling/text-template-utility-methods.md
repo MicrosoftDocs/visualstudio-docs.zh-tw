@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c65960b2ad7f0eb31a9c969fb4671f883dc477c7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001473"
 ---
 # <a name="text-template-utility-methods"></a>文字範本公用程式方法
 

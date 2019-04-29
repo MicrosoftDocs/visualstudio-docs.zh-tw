@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6bc92d65ed179c7f2cb2f569a7d254a025887845
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967477"
 ---
 # <a name="extend-sharepoint-projects"></a>擴充 SharePoint 專案
   當您想要自訂的 SharePoint 專案的專案層級功能，請建立專案擴充功能。 比方說，您可以新增自訂的專案屬性，或使用者開發的 Visual Studio 中的 SharePoint 方案時所引發的專案層級事件回應。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dadbd74480c990c4e7317244ec225d775347a6c2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916858"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 這個介面會提供有關計劃的主機 （處理序） 資訊。

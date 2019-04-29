@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse32::AddScriptlet |Microsoft Docs
+title: IActiveScriptParse32::AddScriptlet | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,11 +11,11 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: b5a680eea5f5695d3a7253b9cf722af6ebf537c6
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954880"
 ---
 # <a name="iactivescriptparse32addscriptlet"></a>IActiveScriptParse32::AddScriptlet
 將指令碼中的程式碼的程式碼片段。 這個方法會在環境中與主應用程式文件提及永續性狀態的指令碼主機會負責還原指令碼，而非透過`IPersist*`介面。 主要範例是允許的程式碼內嵌在 HTML 文件附加至內建事件的程式碼片段的 HTML 指令碼語言 (例如，ONCLICK="button1.text='Exit' 」)。  

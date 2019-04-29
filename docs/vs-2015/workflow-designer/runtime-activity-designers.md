@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 72b5c30750486d8078fc44b7d49716eb5e8488e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58944935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007336"
 ---
 # <a name="runtime-activity-designers"></a>Runtime 活動設計工具
 執行階段活動設計工具會用來保存及結束工作流程活動。 本節包含的主題會提供如何使用 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 活動設計工具的指引。  

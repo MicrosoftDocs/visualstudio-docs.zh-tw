@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 09c1e2ac48f12e82d268311c114919c732a44073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006492"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>小數點後數字的數目超過範圍
 您嘗試將無效的引數傳遞至函式**Number.prototype.toExponential**。 此函式的引數**toExponential()** 必須介於 0 到 20 （含） 之間。  

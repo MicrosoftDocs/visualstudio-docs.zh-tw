@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5aba4c6446b2dbcfcb31c423a28eedd552799b4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967666"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>HOW TO：以程式設計方式在文件中的文字中加入註解
   文件類別的註解屬性中某個範圍的 Microsoft Office Word 文件中的文字加入註解。

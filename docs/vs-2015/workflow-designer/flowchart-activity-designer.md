@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3e89caded1b7388b79ea3232dc0a2809dc7b8222
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943465"
 ---
 # <a name="flowchart-activity-designer"></a>Flowchart 活動設計工具
 <xref:System.Activities.Statements.Flowchart> 活動會用來建立工作流程，這些工作流程可定義及管理複雜的流程控制。 <xref:System.Activities.Statements.Flowchart> 可以利用程式碼或使用 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 製作。 這個主題提供 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 體驗的說明文件。 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 工作流程活動設計工具可供開發人員以自然的方式製作工作流程。  

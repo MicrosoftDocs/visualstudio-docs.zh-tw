@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 322f6f3352c1b0dfad4572d55e1ebe2388c8cc4a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823630"
 ---
 # <a name="profilerheapobjectrelationshipflags-enumeration"></a>PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS 列舉
 旗標，表示物件關聯性中指向的堆積物件是 getter 或 setter 方法。 用於[EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md)方法中指定 PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS 值時`enumFlags`參數。  

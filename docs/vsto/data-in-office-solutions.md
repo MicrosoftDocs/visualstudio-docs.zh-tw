@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bb8cf959d5f1d915f5614dc2b92d74a603493f7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955972"
 ---
 # <a name="data-in-office-solutions"></a>在 Office 方案中的資料
   許多 Office 方案都可以讓使用者擷取或修改資料。 當您使用 Visual Studio 建立 Office 方案時，可運用數種方式來處理資料。

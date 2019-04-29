@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ccf7de70c3ef741119ec22f8fa9bc76868a47030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955933"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>HOW TO：以程式設計方式移除工作表的保護
   您可以程式設計的方式，移除 Microsoft Office Excel 工作表保護。

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965050"
 ---
 # <a name="walkthrough-outlining"></a>逐步解說：大綱
 設定語言為基礎的功能，例如藉由定義的類型，您想要展開或摺疊的文字區域的大綱。 您可以定義區域中的內容語言服務，或定義您自己的檔案名稱副檔名和內容類型和區定義套用至該類型，或套用至現有的內容類型 （例如 「 文字 」） 的區域定義。 本逐步解說示範如何定義及顯示大綱區域。

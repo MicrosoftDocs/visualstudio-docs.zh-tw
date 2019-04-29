@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7e3a9043215c5242246e54dc3e1eb2e85cd26c91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925889"
 ---
 # <a name="debugger-concepts"></a>偵錯工具概念
 若要建置 Visual Studio 偵錯封裝，您需要先熟悉中設計封裝所使用的架構概念。

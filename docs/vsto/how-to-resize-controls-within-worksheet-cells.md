@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b51f26a4ea2dec50c5ee90c38f49412866b6f866
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961487"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>HOW TO：調整工作表儲存格內的控制項的大小
   當您調整資料行或工作表上的資料列時，資料格內的任何主控制項自動調整大小的高度或寬度已調整大小之儲存格。 Windows Form 控制項不調整大小會自動預設。

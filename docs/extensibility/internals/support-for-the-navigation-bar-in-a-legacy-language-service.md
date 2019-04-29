@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858122"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>舊版語言服務中對巡覽列的支援
 導覽列頂端的 [編輯器] 檢視會顯示檔案中的類型和成員。 左側下拉式清單中，會顯示類型和成員會顯示在右側下拉式清單。 當使用者選取的型別時，插入號會放在類型的第一行中。 當使用者選取的成員時，則會將插入號放在成員的定義。 下拉式清單方塊會更新以反映目前的插入號位置。

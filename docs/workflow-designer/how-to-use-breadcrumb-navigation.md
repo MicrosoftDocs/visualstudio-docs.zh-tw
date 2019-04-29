@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: de1004dd7a62fe4163147db4928783dd9a0dca98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949496"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>HOW TO：使用階層連結巡覽
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 397873a65176024327f371e9727b15984cd7d03f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828398"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 擷取旗標，指出這個行資訊會描述陳述式，而不是運算式，以原始程式碼的開頭。
@@ -41,5 +41,5 @@ HRESULT get_statement ( 
 ## <a name="remarks"></a>備註
  陳述式可以跨越多行。 這個方法會指示是否相關聯的行號標示的這類多行陳述式開頭。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

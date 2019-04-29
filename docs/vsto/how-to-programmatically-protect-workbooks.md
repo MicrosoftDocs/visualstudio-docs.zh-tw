@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ad45097146a7566f2d043fba5e14265c05dc4d7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955906"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>HOW TO：以程式設計方式保護活頁簿
   您可以保護 Microsoft Office Excel 活頁簿，以便讓使用者無法加入或刪除工作表，並也以程式設計方式取消保護活頁簿。 或者，您可以指定密碼，指出您是否要保護 （讓使用者無法移動工作表），這個結構，以及表示是否要讓受保護的活頁簿的視窗。

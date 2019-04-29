@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4c187865518c9556d63d9e5e632ec5c658fc3e0f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953500"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>封裝和部署 SharePoint 方案
   一般而言，SharePoint 解決方案會使用方案套件 (.wsp) 檔案部署到 SharePoint 伺服器。 若要將您的 SharePoint 專案項目組織成功能，並建立要部署您的 SharePoint 功能的套件，您可以使用 Visual Studio。

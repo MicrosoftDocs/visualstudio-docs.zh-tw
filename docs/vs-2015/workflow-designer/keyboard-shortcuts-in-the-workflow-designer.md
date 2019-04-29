@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951953"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流程設計中的鍵盤快速鍵
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 的所有核心功能都可以利用鍵盤存取。  

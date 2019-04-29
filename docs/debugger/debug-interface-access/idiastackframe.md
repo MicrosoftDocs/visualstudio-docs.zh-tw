@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3252d15ebfb06fa840bfad6bf74dc3b8748776ef
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838089"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 公開的堆疊框架的屬性。
@@ -31,11 +31,11 @@ IDiaStackFrame : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法
 以下是支援此介面的方法：
 
-|方法|說明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|擷取表示基底的指標會配置此位址範圍中的程式碼的旗標。 此方法已淘汰。|
 |[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|擷取框架的位址基底。|
-|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|擷取指出 c + + 例外狀況處理為作用中的旗標。|
+|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|擷取旗標，表示C++例外狀況處理是作用中。|
 |[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|擷取旗標，指出區塊包含函式的進入點。|
 |[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|擷取推送到堆疊上的本機變數的位元組的數目。|
 |[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|擷取位元組的推送到堆疊上的參數數目。|
@@ -101,13 +101,13 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 ```
 
 ## <a name="requirements"></a>需求
-標頭： Dia2.h
+標頭：dia2.h
 
 程式庫： diaguids.lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
 - [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)

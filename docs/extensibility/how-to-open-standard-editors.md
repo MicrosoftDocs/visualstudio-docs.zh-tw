@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f34a239628c3ed9e8bccaa8590cb22100d7d290f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862910"
 ---
 # <a name="how-to-open-standard-editors"></a>HOW TO：開啟標準編輯器
 當您開啟標準編輯器時，您會讓判斷指定的檔案類型，而不是指定之檔案的專案特定編輯器的標準編輯器在 IDE。

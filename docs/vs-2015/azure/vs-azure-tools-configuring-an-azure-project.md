@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 03/06/2017
 ms.author: ghogen
 ms.openlocfilehash: bc56163c5fe2e6f52eed7db1d75d8e6194dfce7f
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59000509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62989833"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>使用 Visual Studio 來設定 Azure 雲端服務專案
 您可以根據 Azure 雲端服務專案的需求來設定專案。 您可以設定下列類別的專案的屬性：

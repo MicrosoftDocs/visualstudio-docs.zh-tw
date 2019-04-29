@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 719d8f1e11365de0b864f41f54546fb4bfc64cd2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820310"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>使用程式碼分析規則集編輯器
 
@@ -29,7 +29,7 @@ ms.locfileid: "55937215"
 |錯誤|會產生時發生**錯誤清單**也會在建置階段。|
 |資訊|產生的訊息**錯誤清單**。|
 |Hidden|使用者看不到 違規。 IDE 會收到通知的違規，不過。|
-|無|隱藏的規則。 如同規則已從規則集的行為都是相同的。|
+|None|隱藏的規則。 如同規則已從規則集的行為都是相同的。|
 
 編輯器會顯示在樹狀結構中，群組規則的規則設定您所指定欄位的規則。 若要新增或移除的規則集的規則，執行下列一或多個下列步驟：
 

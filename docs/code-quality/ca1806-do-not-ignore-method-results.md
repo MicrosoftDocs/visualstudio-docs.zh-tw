@@ -17,11 +17,11 @@ dev_langs:
 - VB
 manager: jillfra
 ms.openlocfilehash: d2a1dd9984601afa34e4aac7fa5ddc24061cf6ae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797046"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806:不要忽略方法的結果
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33f7fd14ff62369de66e4934bf9bb2cf6fd83542
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994757"
 ---
 # <a name="customize-t4-text-transformation"></a>自訂 T4 文字轉換
 

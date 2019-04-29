@@ -34,11 +34,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2c5163de342415113321b6bd2337cd75ff528f6c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810772"
 ---
 # <a name="write-code-in-office-solutions"></a>在 Office 方案中撰寫程式碼
   在 Office 專案中撰寫程式碼，在某些方面不同於撰寫 Visual Studio 中其他類型專案的程式碼。 其中有許多差異的原因與將 Office 物件模型公開給 Managed 程式碼的方式相關。 其他差異則與 Office 專案的設計相關。

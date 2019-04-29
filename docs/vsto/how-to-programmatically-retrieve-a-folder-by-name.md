@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955725"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>HOW TO：以程式設計方式依名稱擷取資料夾
   此範例會取得命名自訂資料夾的參考，並接著會顯示資料夾的內容。

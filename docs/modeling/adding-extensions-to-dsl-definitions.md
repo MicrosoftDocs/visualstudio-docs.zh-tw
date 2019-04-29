@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960481"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>在 DSL 定義中新增延伸模組
 
