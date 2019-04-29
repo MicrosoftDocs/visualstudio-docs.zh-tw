@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5421599d2ffa006a445e0410088671d8897cc52
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d62f999f485acaba168a50d404f2b5cbb272ef14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821074"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 
@@ -61,12 +61,12 @@ Visual Studio 使用 [.NET Framework 規則運算式](/dotnet/standard/base-type
 |比對字邊界|\b (在字元類別之外 `\b` 會指定字邊界，在字元類別 `\b` 內則會指定退格鍵。)|`\bin` 會比對 "inside" 中的 "in"，但不比對 "pinto"。|
 |比對分行符號 (即歸位字元後面接著新行)。|\r?\n|`End\r?\nBegin` 只在 "End" 是一行的最後一個字串，且 "Begin" 是下一行的第一個字串時比對 "End" 和 "Begin"。|
 |比對任何英數字元|\w|`a\wd` 會比對 "add" 和 "a1d"，但不比對 "a d"。|
-|比對任何空白字元。|(?([^\r\n])\s)|`Public\sInterface` 會比對 "Public Interface" 這個片語。|
+|比對任何空白字元。|\s|`Public\sInterface` 會比對 "Public Interface" 這個片語。|
 |比對任何數字字元|\d|`\d` 會比對 "3456" 中的 "3"、"23" 中的 "2" 和 "1" 中的 "1"。|
 |比對 Unicode 字元|\uXXXX，其中 XXXX 指定 Unicode 字元值。|`\u0065` 會比對字元 "e"。|
 |比對識別項|\b[\_\w-[0-9]][\_\w]*\b|會比對 "type1"，但不比對 "&type1" 或 "#define"。|
 |比對引號內的字串|((\\".+?\\")&#124;('.+?'))|比對單引號或雙引號內的任何字串。|
-|比對十六進位數字|\b0[xX]([0-9a-fA-F]\)\b|比對 "0xc67f" 但不比對 "0xc67fc67f"。|
+|比對十六進位數字|\b0[xX]([0-9a-fA-F]+\)\b|比對 "0xc67f" 但不比對 "0xc67g"。|
 |比對整數和小數|\b[0-9]*\\.\*[0-9]+\b|會比對 "1.333"。|
 
 > [!TIP]

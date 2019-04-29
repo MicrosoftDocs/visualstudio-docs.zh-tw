@@ -10,18 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: c94b33fad50cb5e271615629641ea7307f669255
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788538"
 ---
 # <a name="property-functions"></a>屬性函式
 
 在 .NET Framework 第 4 和 4.5 版中，屬性函式可用於評估 MSBuild 指令碼。 屬性函式可用於屬性出現的任何位置。 與工作不同，屬性函式可用於目標外部，並在執行任何目標之前，先進行評估。
 
  在不使用 MSBuild 工作的情況下，您可以讀取系統時間、比較字串、比對規則運算式，以及執行組建指令碼中的其他動作。 MSBuild 會嘗試將字串轉換為數字或將數字轉換為字串，並視需要進行其他轉換。
+ 
+從屬性函式傳回的字串值具有逸出的[特殊字元](msbuild-special-characters.md)。 如果您想要將值視為直接放入專案檔中，請使用 `$([MSBuild]::Unescape())` 來取消逸出特殊字元。
 
 ## <a name="property-function-syntax"></a>屬性函式語法
 
@@ -175,7 +177,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |string MakeRelative(string basePath, string path)|讓 `path` 成為 `basePath` 的相對項。 `basePath` 必須是絕對目錄。 如果 `path` 不能成為相對的，它就會被逐字傳回。 類似於 `Uri.MakeRelativeUri`。|
 |string ValueOrDefault(string conditionValue, string defaultValue)|只有當參數 'conditionValue' 為空時，才傳回參數 'defaultValue' 中的字串；否則，傳回值 conditionValue。|
 
-##  <a name="nested-property-functions"></a>巢狀屬性函式
+## <a name="nested-property-functions"></a>巢狀屬性函式
 
 您可以組合屬性函式，以構成較複雜的函式，如下列範例所示。
 

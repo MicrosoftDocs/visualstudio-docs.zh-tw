@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 59e8206bd1110a06c8b94b71ac9da8253a3a4b25
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: f27e09cd66c05a10648205850a9547d7b191d2de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787392"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>在 Visual Studio 中開始使用 Live Unit Testing
 
@@ -94,11 +94,11 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 
    `StringLibrary` 有三種靜態方法：
 
-      - 如果字串的開頭是大寫字元，則 `StartsWithUpper` 會傳回 `true`；否則會傳回 `false`。
+   - 如果字串的開頭是大寫字元，則 `StartsWithUpper` 會傳回 `true`；否則會傳回 `false`。
 
-      - 如果字串的開頭是小寫字元，則 `StartsWithLower` 會傳回 `true`；否則會傳回 `false`。
+   - 如果字串的開頭是小寫字元，則 `StartsWithLower` 會傳回 `true`；否則會傳回 `false`。
 
-      - 如果字串包含內嵌空白字元，則 `HasEmbeddedSpaces` 會傳回 `true`；否則會傳回 `false`。
+   - 如果字串包含內嵌空白字元，則 `HasEmbeddedSpaces` 會傳回 `true`；否則會傳回 `false`。
 
 6. 從最上層 Visual Studio 功能表中，依序選取 [建置] > [建置方案]。 Visual Studio 應該已成功建置程式庫。
 
@@ -140,11 +140,11 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 
    `StringLibrary` 有三種靜態方法：
 
-      - 如果字串的開頭是大寫字元，則 `StartsWithUpper` 會傳回 `true`；否則會傳回 `false`。
+   - 如果字串的開頭是大寫字元，則 `StartsWithUpper` 會傳回 `true`；否則會傳回 `false`。
 
-      - 如果字串的開頭是小寫字元，則 `StartsWithLower` 會傳回 `true`；否則會傳回 `false`。
+   - 如果字串的開頭是小寫字元，則 `StartsWithLower` 會傳回 `true`；否則會傳回 `false`。
 
-      - 如果字串包含內嵌空白字元，則 `HasEmbeddedSpaces` 會傳回 `true`；否則會傳回 `false`。
+   - 如果字串包含內嵌空白字元，則 `HasEmbeddedSpaces` 會傳回 `true`；否則會傳回 `false`。
 
 6. 以滑鼠右鍵按一下方案總管中的 StringLibrary 專案，然後選取 [屬性]。 在 [應用程式] 索引標籤上，刪除 [根命名空間] 文字方塊中的文字，如下圖所示。 根命名空間是由原始程式碼中的 [Namespace 陳述式](/dotnet/visual-basic/language-reference/statements/namespace-statement)所定義。
 
@@ -276,7 +276,7 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 
 1. Visual Studio 會啟動 Live Unit Test，以自動執行所有測試。
 
-完成執行測試之後，**測試總管**會顯示整體結果和個別測試結果。 此外，程式碼視窗會以圖形方式顯示測試程式碼涵蓋範圍和測試結果。 如下圖所示，已成功執行所有這三項測試。 它也會顯示我們的測試已涵蓋 `StartsWithUpper` 方法中的所有程式碼路徑，而且已成功執行這些測試 (以綠色核取記號 "✓" 指出)。 最後，它會顯示 `StringLibrary` 中沒有其他方法具有程式碼涵蓋範圍 (以藍線 "➖" 指出)。
+完成執行測試之後，**測試總管**會顯示整體結果和個別測試結果。 此外，程式碼視窗會以圖形方式顯示測試程式碼涵蓋範圍和測試結果。 如下圖所示，已成功執行所有這三項測試。 它也會顯示我們的測試已涵蓋 `StartsWithUpper` 方法中的所有程式碼路徑，而且已成功執行這些測試 (以綠色核取記號 "✓" 指出)。 最後，它會顯示 `StringLibrary` 中沒有其他方法具有程式碼涵蓋範圍 (以藍線 "" 指出)。
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 

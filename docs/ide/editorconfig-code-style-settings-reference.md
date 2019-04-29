@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e06421955089a378cd20399280d066cc27bfe03f
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557212"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 
@@ -45,7 +45,7 @@ ms.locfileid: "59232797"
 
    有關程式碼配置和結構的規則，以使其更容易閱讀。 例如，您可以指定使用 Allman 大括弧或設定控制區塊空格的規則。
 
-- [命名規範](../ide/editorconfig-naming-conventions.md)
+- [命名慣例](../ide/editorconfig-naming-conventions.md)
 
    有關程式碼項目的命名規則。 例如，您可以指定 `async` 方法必須以 "Async" 結尾。
 
@@ -329,13 +329,14 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
-此規則不接受 **true** 或 **false** 值，但接受下列資料表中的值：
+此規則接受下表中的一個值：
 
 | 值 | 說明 |
 | ----- |:----------- |
 | always | 偏好指定存取範圍修飾詞 |
-| for\_non\_interface_members | 偏好宣告存取範圍修飾詞，但公用介面成員除外。 這是與**一律**相同，且已新增以便未來 C# 新增預設介面方法時校訂之用。 |
+| for\_non\_interface_members | 偏好宣告存取範圍修飾詞，但公用介面成員除外。 (這是與**一律**相同，且已新增以便未來 C# 新增預設介面方法時校訂之用。) |
 | never | 偏好不指定存取範圍修飾詞 |
+| omit_if_default | 偏好指定存取範圍修飾詞，除非它們是預設修飾詞 |
 
 程式碼範例：
 
@@ -748,8 +749,6 @@ If Object.ReferenceEquals(value, Nothing)
     Return
 End If
 ```
-
-
 
 **dotnet\_style\_prefer\_conditional\_expression\_over_assignment**
 

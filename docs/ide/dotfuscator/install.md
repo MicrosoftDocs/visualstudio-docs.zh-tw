@@ -22,12 +22,12 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6e647ae257bfc6517685310f4a77ef398e775be
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 0a6945713d86c510112992be3fefd2d41280ef14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557654"
 ---
 # <a name="install-dotfuscator-community"></a>安裝 Dotfuscator Community
 
@@ -38,7 +38,6 @@ Dotfuscator Community 是 Visual Studio 的選用元件。
 > 除了 Visual Studio 隨附的 Dotfuscator Community 版本，PreEmptive Solutions 也會在其網站上定期提供更新版本。
 > 如果您想要直接下載**最新版本**而不是從 Visual Studio 安裝，請**[按一下這裡移至 Dotfuscator 下載頁面][download]**。
 
-
 ## <a name="within-visual-studio"></a>在 Visual Studio 中
 
 ::: moniker range="vs-2019"
@@ -48,7 +47,7 @@ Dotfuscator Community 是 Visual Studio 的選用元件。
 1. 在**搜尋方塊** (Ctrl+Q) 中，輸入 `dotfuscator`。 <br/> <br/> ![搜尋方塊](media/install_in_vs19_12.png) <br/> <br/>
 
 2. 在顯示的搜尋結果中，於 [元件] 標題下，選取 [安裝 PreEmptive Protection - Dotfuscator]。
-  * 但您若在「功能表」標題下看到 [PreEmptive Protection - Dotfuscator Community]，則表示已安裝 Dotfuscator Community。 選取該選項，就可以[開始使用][get-started]。
+   * 但您若在「功能表」標題下看到 [PreEmptive Protection - Dotfuscator Community]，則表示已安裝 Dotfuscator Community。 選取該選項，就可以[開始使用][get-started]。
 
 3. 預先設定為安裝 Dotfuscator Community 的 [Visual Studio 安裝程式] 視窗，隨即會啟動。
    > [!NOTE]
@@ -76,7 +75,6 @@ Dotfuscator Community 是 Visual Studio 的選用元件。
 ::: moniker-end
 
 安裝完成之後，您就可以[開始使用 Dotfuscator Community][get-started]。
-
 
 ## <a name="during-visual-studio-installation"></a>Visual Studio 安裝期間
 
