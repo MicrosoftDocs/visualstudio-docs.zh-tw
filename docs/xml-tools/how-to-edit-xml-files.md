@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b25eebad9efc70e4fda45131e232983e81961625
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840365"
 ---
 # <a name="how-to-edit-xml-files"></a>HOW TO：編輯 XML 檔案
 
@@ -62,7 +62,7 @@ XML 編輯器是 XML 檔案的新編輯器。 它可用於獨立 XML 檔案或�
 
 2. 選取您的選擇，選取的程式碼語言**空專案**。
 
-3. 按一下 [確定 **Deploying Office Solutions**]。
+3. 按一下 [確定] 。
 
 ::: moniker-end
 

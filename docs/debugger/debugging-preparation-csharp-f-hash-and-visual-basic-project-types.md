@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6cedb5e0b8dd80aadc3ee3a9507b2210811fb1bf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851852"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>偵錯準備：C#、F# 和 Visual Basic 專案類型
 本章節內的主題說明如何偵錯由 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案範本所建立的 C#、F# 和 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案類型。
@@ -47,5 +47,5 @@ ms.locfileid: "56686882"
 
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)涵蓋常見的偵錯問題和撰寫 managed 程式碼中的應用程式的技術。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)

@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 66591308c2b0c59cf310d3957131f80191cc51c3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905482"
 ---
 # <a name="native-run-time-checks-customization"></a>自訂原生執行階段檢查
 當您編譯 **/RTC** （執行階段檢查），或使用`runtime_checks`pragma，C 執行階段程式庫提供原生執行階段檢查。 有時候，您可能想要自訂執行階段檢查：
@@ -40,7 +40,7 @@ ms.locfileid: "56723587"
 
   若要自訂執行階段錯誤檢查，您可以：
 
-- 撰寫執行階段錯誤報告函式。 如需詳細資訊，請參閱 <<c0> [ 如何： 撰寫執行階段錯誤報告函式](../debugger/how-to-write-a-run-time-error-reporting-function.md)。
+- 撰寫執行階段錯誤報告函式。 如需詳細資訊，請參閱[如何：撰寫執行階段錯誤報告函式](../debugger/how-to-write-a-run-time-error-reporting-function.md)。
 
 - 自訂錯誤訊息目的端
 
@@ -54,7 +54,7 @@ ms.locfileid: "56723587"
 ## <a name="query-for-information-about-run-time-checks"></a>查詢執行階段檢查的相關資訊
  `_RTC_NumErrors` 會傳回由執行階段錯誤檢查偵測到的錯誤類型數目。 若要取得每個錯誤的簡短說明，您可以從 0 迴圈至 `_RTC_NumErrors` 傳回值，並將重複值傳給每一個迴圈上的 `_RTC_GetErrDesc`。 如需詳細資訊，請參閱 < [_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors)並[_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [如何：使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
 - [_CrtDbgReport、_CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

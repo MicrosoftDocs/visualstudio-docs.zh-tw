@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a2bc204169ff94a240e363eb8caa35ec8c7de9be
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004872"
 ---
 # <a name="idebugsyncoperationexecute"></a>IDebugSyncOperation::Execute
 以同步方式執行此作業，並傳回。  

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2f6e4ae90dbd36dab4f4df7f72d5ecf57ee04b1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927328"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;排程&gt;項目 （啟動載入器）
 `Schedules`項目包含`Schedule`項目，定義特定時間所定義的命令`Command`應該執行項目。
@@ -47,7 +47,7 @@ ms.locfileid: "56639423"
 
  `Schedule` 具有下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`Name`|必要項。 排程項目名稱。 這會對應至`ScheduleName`屬性`Command`項目。 當`Command`參考具名的排程，才會執行所指定的時間在`Schedule`項目。 排程可能也會與相關聯`FailIf`和`BypassIf`項目，限制這些條件的測試指定的排程上執行。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|
 

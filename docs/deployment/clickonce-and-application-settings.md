@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 153df515fc762b7262dce81d8c1d1c4fe617ad61
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900607"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce 和應用程式設定
 Windows Forms 的應用程式設定可讓您輕鬆地建立、 儲存及維護自訂應用程式和用戶端上的使用者喜好設定。 下列文件會描述應用程式設定檔在 ClickOnce 應用程式中的運作方式，以及 ClickOnce 如何移轉設定，當使用者升級至下一個版本。

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1b21f8c84082e19c1d9f43d6a2ae36d158a15c01
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008686"
 ---
 # <a name="work-with-documents"></a>使用文件
   本節中的主題針對在 Office 專案中使用 Microsoft Office Word 物件模型處理文件，提供逐步程序和程式碼範例。

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825039"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>逐步解說：分析 managed 程式碼的程式碼缺失
 
@@ -151,7 +151,7 @@ ms.locfileid: "55952837"
 
    1. 在 **檔案**功能表上，選擇**儲存選取項目**，然後關閉 屬性頁。
 
-   [CA2237： 必須Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md):Microsoft.Usage:加入輸入 'demo' 因為此類型會實作 ISerializable [Serializable] 屬性。
+   [CA2237：Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md):Microsoft.Usage:加入輸入 'demo' 因為此類型會實作 ISerializable [Serializable] 屬性。
 
    1. 新增`[Serializable ()]`屬性加入該類別`demo`。
 

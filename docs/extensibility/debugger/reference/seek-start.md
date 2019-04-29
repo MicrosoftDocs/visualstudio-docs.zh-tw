@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e003b74faeb7c6ed165c43380a7c4c6b0520ea0c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864817"
 ---
 # <a name="seekstart"></a>SEEK_START
 指定要啟動的反組譯碼資料流中搜尋的位置。

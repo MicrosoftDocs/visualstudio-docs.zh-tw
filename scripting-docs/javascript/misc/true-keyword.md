@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 53d128c33933cc6856bd89a9059e0bfea3e2008e
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005924"
 ---
 # <a name="true-keyword"></a>True 關鍵字
 **，則為 True**關鍵字有等於-1 的值。  

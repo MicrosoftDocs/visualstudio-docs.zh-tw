@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b9b48cb7862b23df325b35bba0cb3e197573e3c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910641"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>建立父容器之資料夾的解決方案
 在原始檔控制外掛程式 API 版本 1.2，使用者可以指定方案中的所有 web 專案的單一根來源控制目的地。 此單一根稱為超級統一的根 (SUR)。

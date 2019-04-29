@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f1c305129a7f46c8d1841f28d8084535ec7e4d9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931041"
 ---
 # <a name="how-to-use-the-imports-designer"></a>HOW TO：使用匯入設計工具
 匯入設計工具可讓您輸入要用於運算式之型別的命名空間。 就像是**匯入**或是**使用**Visual Basic.NET 和 C# 中，指定在匯入設計工具中的命名空間中的關鍵字可讓您只需輸入在您的運算式，而非完整的類型名稱型別名稱。  

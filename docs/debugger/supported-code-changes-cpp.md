@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7d029d5cb3deb886faa4423d24ae8d5282f80e6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901957"
 ---
 # <a name="supported-code-changes-c"></a>支援的程式碼變更 (C++)
 Visual C++ 的 [編輯後繼續] 可處理大多數的程式碼變更類型。 不過，有些變更無法在程式執行期間套用。 若要套用這些變更，您必須停止執行，並建置新版的程式碼。

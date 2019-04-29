@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1b1cb65a2c1eec8df194136bb5a4bffb358696e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58941210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977277"
 ---
 # <a name="collection-activity-designers"></a>Collection 活動設計工具
 Collection 活動設計工具用於建立及設定管理集合所需的活動。本節包含的主題以及下表所列的主題會提供如何使用 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 活動與範本設計工具的指引。  

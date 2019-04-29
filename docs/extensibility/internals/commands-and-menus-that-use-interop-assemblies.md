@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d08e7ad95e621ab444f98c295f5d84aa2b6e0066
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910568"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>使用 Interop 組件的命令和功能表
 使用 Interop 組件中實作功能表和工具列命令的 VSPackage 必須：

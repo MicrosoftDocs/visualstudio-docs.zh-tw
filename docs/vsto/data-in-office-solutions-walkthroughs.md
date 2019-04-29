@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 52b2efa5e5def8214736d648e2b90906fe720dbe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956026"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Office 方案逐步解說中的資料
   下列逐步解說示範如何處理 Microsoft Office Word 和 Microsoft Office Excel 文件層級自訂和 VSTO 增益集中的資料。

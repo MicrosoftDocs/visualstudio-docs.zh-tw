@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b5b3d5a58c87988c950328a8b0136986b3a149f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852425"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>偵錯資料繫結的 ActiveX 控制項
 如果您正在開發一個將繫結至資料來源控制項的 ActiveX 控制項，您可建立自己的容器應用程式，並使用該容器來偵錯 ActiveX 控制項。
@@ -34,6 +34,6 @@ ms.locfileid: "56693018"
 
  如果您在偵錯時，需要逐步執行容器的程式碼，請使用容器的偵錯版本，或使用 ActiveX 測試容器的偵錯版本。 如需詳細資訊，請參閱[TSTCON 範例：ActiveX 控制項測試容器](https://msdn.microsoft.com/library/72fa40ef-27d3-400c-813f-10b03236e600)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [偵錯 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)
 - [ActiveX 控制項](/cpp/mfc/activex-controls)

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b19a301f7c170ee28d774ea0d96397dc2cfef312
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855279"
 ---
 # <a name="workflow-designer-ui-help"></a>Workflow 設計工具 UI 說明
 本節包含 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 的即時線上說明主題。 在中工作時[!INCLUDE[vs2010](../includes/vs2010-md.md)]，您可以從使用者介面存取這些主題，藉由按下**F1**當[!INCLUDE[wfd2](../includes/wfd2-md.md)]對話方塊為開啟。  

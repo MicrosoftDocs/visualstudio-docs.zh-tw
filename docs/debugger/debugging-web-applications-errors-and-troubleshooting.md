@@ -28,11 +28,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b1c8bb5e7f6ea8e0c68ec444bc5a1995bac4277
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851611"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>偵錯 Web 應用程式：錯誤和疑難排解
 當您嘗試對 Web 應用程式進行偵錯時，可能會遇到下列錯誤。

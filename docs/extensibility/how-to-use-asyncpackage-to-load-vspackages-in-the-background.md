@@ -8,11 +8,11 @@ ms.author: gregvanl
 ms.workload:
 - vssdk
 ms.openlocfilehash: 99b23c223d91678f03a52910ed4516be0839a338
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862566"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>HOW TO：使用 AsyncPackage 載入 Vspackage 在背景中
 正在載入和初始化的 VS 套件可能會導致磁碟 I/O。 如果這類的 I/O 會發生在 UI 執行緒上，它可能會導致回應性問題。 為了解決這個問題，Visual Studio 2015 導入了<xref:Microsoft.VisualStudio.Shell.AsyncPackage>類別，可讓背景執行緒上的封裝載入。

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4a044d623931d024f15baba1532e3a563273242e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860096"
 ---
 # <a name="model-of-a-legacy-language-service"></a>舊版語言服務模型
 語言服務定義的項目和功能特定的語言，並用來提供該語言的特定資訊的編輯器。 比方說，編輯器必須知道的項目和語言的關鍵字，以支援語法著色。

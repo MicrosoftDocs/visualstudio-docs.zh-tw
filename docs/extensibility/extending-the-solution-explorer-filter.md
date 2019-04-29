@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ef9439d9cebfa8b80b214e52d077ab1f770d4750
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912122"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>擴充方案總管 中的篩選
 您可以延伸**方案總管 中**篩選功能，以顯示或隱藏不同的檔案。 例如，您可以建立篩選會顯示只有 C# 類別處理站中的檔案**方案總管 中**，如本逐步解說示範。

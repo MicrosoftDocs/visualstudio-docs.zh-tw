@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ffe0405b1e07bfb7825607e17088f0f75796197
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889432"
 ---
 # <a name="launch-the-debugger"></a>啟動偵錯工具
 啟動偵錯工具需要傳送的方法和事件及其適當的屬性使用正確的順序。

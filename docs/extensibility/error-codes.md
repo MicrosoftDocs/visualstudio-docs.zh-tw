@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2e3dc26b8dd2e17e201cf760db68d0faf7e231ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863963"
 ---
 # <a name="error-codes"></a>錯誤碼
 原始檔控制外掛程式 API 函式會傳回錯誤，它應該是其中一個下列的錯誤代碼。 所有的錯誤是負數，警告或參考用錯誤代碼為正數，並成功則為 0。

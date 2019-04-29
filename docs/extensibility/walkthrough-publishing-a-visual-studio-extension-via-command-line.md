@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966262"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>逐步解說：發行的 Visual Studio 擴充功能，透過命令列
 

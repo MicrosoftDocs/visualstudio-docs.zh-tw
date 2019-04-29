@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1928667be38cc2b0aa56800ca66924d6159f0c4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853524"
 ---
 # <a name="typedef-debug-interface-access-sdk"></a>Typedef (偵錯介面存取 SDK)
 使用符號`SymTagTypedef`標記導入其他類型的名稱。
@@ -25,7 +25,7 @@ ms.locfileid: "56597916"
 ## <a name="properties"></a>屬性
  下表顯示此符號類型的其他有效屬性。
 
-|屬性|資料類型|說明|
+|屬性|資料類型|描述|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)|`DWORD`|其中一個[BasicType 列舉](../../debugger/debug-interface-access/basictype.md)值。|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|如果有任何此 typedef 類別父代。|
@@ -57,5 +57,5 @@ ms.locfileid: "56597916"
 ## <a name="remarks"></a>備註
  因為類別、 指標或使用者定義型別 (UDT)，可以代表 typedef，typedef 的符號會共用相同的屬性，做為其中一種其他類型的符號。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b8eebd082df031161604bd04afe61d1aca652f6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850056"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>錯誤：無法連線到機器&lt;名稱&gt;。 網路上找不到這部電腦。
 如果下列其中一種情況為 true 時，就會發生這個行為：

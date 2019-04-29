@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1efa919349535a2cb73ca80f2015ef0d0df93cd7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928995"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>對使用 System.Deployment.Application 的 ClickOnce 應用程式進行偵錯
 在  [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可讓您設定應用程式的更新方式。 不過，如果您要使用和自訂進階[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署功能，您將需要存取所提供的部署物件模型<xref:System.Deployment.Application>。 您可以使用<xref:System.Deployment.Application>Api 適用於這類進階工作：

@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b602afa2b6611f5201515f492f7b3c7bb7afa08
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003362"
 ---
 # <a name="structure-your-modeling-solution"></a>建構模型方案
 

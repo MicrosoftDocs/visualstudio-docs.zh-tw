@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9e86c2f48365f93c924b15ae8d696d53d3f4bb16
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861271"
 ---
 # <a name="custom-parameters"></a>自訂參數
 啟動精靈之後自訂參數可控制精靈的作業。 相關 *.vsz*檔案提供整合式的開發環境 (IDE) 封裝並啟動精靈時，傳遞給精靈的字串陣列作為使用者定義的參數陣列。 精靈接著會剖析的字串陣列，並使用的資訊，來控制精靈 的實際作業。 如此一來，精靈可以自訂功能，視內容而定 *.vsz*檔案。

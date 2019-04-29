@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bc15ff5c384ec63f99ed50a5f3c700efd7ba3c18
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007715"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>SharePoint 專案項目結構描述參考
   Visual Studio 會使用 SharePoint 專案項目結構描述驗證的內容 *.spdata*檔案。 *.Spdata*檔案指定的內容和行為的 SharePoint 專案項目。 如需詳細的 SharePoint 專案項目內容的相關資訊，請參閱[建立項目範本和專案範本，為 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
@@ -37,7 +37,7 @@ ms.locfileid: "56608717"
 
  根項目是[ProjectItem](../sharepoint/projectitem-element.md)項目。 下表描述所有的結構描述所定義的項目。
 
-|元素|描述|
+|項目|描述|
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|代表 SharePoint 專案項目相關聯的自訂資料項目的集合。|
 |[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|表示索引鍵/值格式中的 SharePoint 專案項目相關聯的自訂資料項目。 金鑰和值必須是字串。|

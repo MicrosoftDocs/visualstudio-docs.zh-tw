@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: da29303059558a4cf43eddb1d6e03e8848df4f4c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62877202"
 ---
 # <a name="idebugboundbreakpoint2"></a>IDebugBoundBreakpoint2
 這個介面表示繫結至程式碼位置的中斷點。

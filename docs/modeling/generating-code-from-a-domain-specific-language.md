@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c761fccfafae4af864264cc5b9d103d09b61710
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994451"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>從網域指定的語言產生程式碼
 Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供功能強大的方式，從模型中表示的資料產生程式碼、 文件、 組態檔和其他成品。 使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]，您可以建立一組類別，代表您的資料，您可以撰寫文字範本中的類別名稱和屬性會反映該資料。
@@ -38,11 +38,11 @@ Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供功能強大的方
 
  提供有關指的文字範本中的特定領域語言的基本資訊。
 
- [逐步解說：偵錯文字範本存取模型](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
+ [逐步解說：偵錯存取模型的文字範本](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
 
  描述如何進行疑難排解和偵錯是指特定領域語言的文字範本。
 
- [逐步解說：將主機連接至產生的指示詞處理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
+ [逐步解說：將主機連線至產生的指示詞處理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
 
  描述如何將自訂主機連線至產生的指示詞處理器。
 

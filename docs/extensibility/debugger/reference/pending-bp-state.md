@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6ab1e9345cf599c4336b202d32fb71a9097fe629
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62913606"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 指定的暫止中斷點 （具有尚未已繫結中斷點） 的狀態。

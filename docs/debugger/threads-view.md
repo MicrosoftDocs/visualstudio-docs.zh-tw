@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929951"
 ---
 # <a name="threads-view"></a>執行緒檢視
 [執行緒] 檢視是您的系統上的 windows 相關聯的所有執行緒的簡單列表。 顯示執行緒 ID 和每個執行緒的模組名稱。 處理程序不包含在內，但您可以輕鬆地找到擁有所選取之執行緒的處理序。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbc86bb43048b06bc1f7080bc6cb579771138c49
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854729"
 ---
 # <a name="symtagenum"></a>SymTagEnum
 指定符號的類型。
@@ -167,7 +167,7 @@ enum SymTagEnum {
 ## <a name="requirements"></a>需求
 標頭： cvconst.h
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)

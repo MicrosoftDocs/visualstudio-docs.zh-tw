@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 24e7d3674712a17d940b94637db808c0d91d2d6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982127"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>比較 Visual Studio 中的 VBA 和 Office 方案
   Microsoft Visual Basic for Applications (VBA) 會使用與 Office 應用程式緊密整合的 Unmanaged 程式碼。 使用 Visual Studio 建立的 Microsoft Office 專案可讓您充分利用 .NET Framework 和 Visual Studio 設計工具。

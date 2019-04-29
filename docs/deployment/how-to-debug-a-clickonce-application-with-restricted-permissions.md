@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4072cef2a47db1177a8ee7b630bd8febccc5e0b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898733"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>HOW TO：以受限制的權限對 ClickOnce 應用程式進行偵錯
 身為開發人員，您很可能正在以完全信任權限來執行開發電腦，因此在偵錯 ClickOnce 應用程式時，不會看到使用者以受限權限執行時可能看到的相同安全性例外狀況。

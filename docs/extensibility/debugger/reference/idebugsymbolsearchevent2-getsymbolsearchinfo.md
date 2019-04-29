@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d917a3f33d0c4339420c048fe20184245bb8dac1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62868404"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 呼叫以擷取結果的符號載入處理序相關的事件處理常式。
@@ -50,7 +50,7 @@ int GetSymbolSearchInfo(
  [in、 out]傳回字串，包含從模組的任何錯誤訊息。 如果沒有任何錯誤，此字串只會包含模組的名稱，但永遠不會是空白。
 
 > [!NOTE]
-> [C + +]`pbstrDebugMessage`不可`NULL`，而且必須與釋放`SysFreeString`。
+> [C++]`pbstrDebugMessage`不得`NULL`，而且必須與釋放`SysFreeString`。
 
  `pdwModuleInfoFlags`
 

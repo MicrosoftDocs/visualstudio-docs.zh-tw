@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b308fb97a55f61645d038c9a81445f4561415e9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908873"
 ---
 # <a name="test-area-8-plug-in-switching"></a>測試區域 8：外掛程式切換
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 有使用者介面 (UI) 來變更目前的原始檔控制外掛程式。 此測試區域會提供挑選的外掛程式用於原始檔控制方案的程序中的測試案例。

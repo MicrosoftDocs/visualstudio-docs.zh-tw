@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 34b4ed5dbc0996239e73db38f1d6bea9e43d6de4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978298"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>使用內含清單信任 Office 方案
   內含清單可讓使用者將信任授與使用可識別發行者的憑證所簽署的 Office 方案。 內含清單是使用者專屬的，可以用於文件層級自訂和 VSTO 增益集。

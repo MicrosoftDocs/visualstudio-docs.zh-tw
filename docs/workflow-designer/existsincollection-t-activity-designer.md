@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06892bcfdca33e5e77e8c01f06f594849e5293e5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949717"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > 活動設計工具
 
@@ -35,7 +35,7 @@ ms.locfileid: "55909488"
 
 下表顯示<xref:System.Activities.Statements.ExistsInCollection%601>內容並描述在設計工具的使用方式：
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.ExistsInCollection%601> 活動的易記名稱。 預設值是 ExistsInCollection < Int32\>。 雖然 <xref:System.Activities.Activity.DisplayName%2A> 值並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|要在集合中尋找的項目\<T >。 此項目屬於類型*T*，這是型別的*TypeArgument*。 若要指定項目，請在屬性方格中輸入 Visual Basic 運算式。|

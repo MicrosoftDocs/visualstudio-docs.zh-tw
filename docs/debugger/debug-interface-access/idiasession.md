@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c69383eacfdb39a65cd9a791185d6793e9e6f681
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832303"
 ---
 # <a name="idiasession"></a>IDiaSession
 提供偵錯符號的查詢內容。
@@ -31,10 +31,10 @@ IDiaSession : IUnknown
 ## <a name="methods"></a>方法
 下表顯示的方法`IDiaSession`。
 
-|方法|說明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|擷取對應至這個符號存放區中的符號的可執行檔載入位址。 這是相同的值傳遞給`put_loadAddress`方法。|
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|符號設定對應的可執行檔載入位址，此符號存放區中。 **注意︰** 務必要呼叫這個方法，當您取得`IDiaSession`物件，並開始使用物件之前。|
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|符號設定對應的可執行檔載入位址，此符號存放區中。 **注意：** 請務必呼叫這個方法，當您取得`IDiaSession`物件，並開始使用物件之前。|
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|擷取至全域範圍的參考。|
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|擷取包含在符號存放區中的所有資料表的列舉值。|
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|擷取靜態位置的所有具名符號的列舉值。|
@@ -110,13 +110,13 @@ void InitializeDIA(const char *szFilename)
 ```
 
 ## <a name="requirements"></a>需求
-標頭： Dia2.h
+標頭：dia2.h
 
 程式庫： diaguids.lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [Exe](../../debugger/debug-interface-access/exe.md)

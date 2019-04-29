@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a002c3876eecf0f31a8d104fa235b1208af90699
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57875250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929137"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>撰寫和偵錯執行使用 Visual Studio 中的 XAML 熱重新載入的 XAML 程式碼
 
@@ -43,17 +43,17 @@ XAML 最忙碌的重新載入會在這些情況下特別有用：
 
 |限制|WPF|UWP|注意|
 |-|-|-|-|
-|將事件傳送至應用程式執行時的控制項|不支援|不支援|請參閱錯誤：*確保事件失敗*|
-|例如您的應用程式頁面] / [視窗中的資源字典中建立資源的物件或*App.xaml*|不支援|支援|範例： 新增```SolidColorBrush```做為資源字典```StaticResource```。</br>注意： 靜態資源，樣式轉換器和其他項目寫入至的資源字典可以套用/已使用同時使用 XAML 熱重新載入。 不支援資源的建立。</br> 變更資源字典```Source```屬性。| 
-|將新控制項、 類別、 windows 或其他檔案新增至您的專案，應用程式執行時|不支援|不支援|無|
-|管理 NuGet 套件 （新增/移除/更新套件）|不支援|不支援|無|
+|將事件傳送至應用程式執行時的控制項|不支援|不支援|請參閱錯誤：*請確定事件失敗*|
+|例如您的應用程式頁面] / [視窗中的資源字典中建立資源的物件或*App.xaml*|不支援|支援|範例： 新增```SolidColorBrush```做為資源字典```StaticResource```。</br>注意:靜態資源，樣式轉換器和其他項目寫入至的資源字典可以套用/使用同時使用 XAML 熱重新載入。 不支援資源的建立。</br> 變更資源字典```Source```屬性。| 
+|將新控制項、 類別、 windows 或其他檔案新增至您的專案，應用程式執行時|不支援|不支援|None|
+|管理 NuGet 套件 （新增/移除/更新套件）|不支援|不支援|None|
 |變更資料繫結，會使用 {x： 繫結} 標記延伸|N/A|在 Visual Studio 2019 和更新版本支援|Visual Studio 2018 或先前版本中不支援|
 
 ## <a name="error-messages"></a>錯誤訊息
 
 使用 XAML 熱重新載入時，您可能會遇到下列錯誤。
 
-|錯誤訊息|說明|
+|錯誤訊息|描述|
 |-|-|-|
 |請確定事件失敗|錯誤指出您嘗試將事件傳送至其中一個您應用程式執行時不支援的控制項。|
 |XAML 編輯後繼續找不到任何要更新的元素。|錯誤發生於您正在編輯熱重新載入的 XAML 無法更新您的應用程式中。</br> 此錯誤有時可藉由使用您執行的應用程式來瀏覽至 檢視使用 XAML 的位置。</br> 某些情況下，此錯誤表示在重新啟動偵錯工作階段之前，無法套用特定變更。 |

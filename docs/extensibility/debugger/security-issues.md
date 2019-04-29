@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5f68db1a4c6fb3ea2a7f9542c1a9d2d313359554
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62913104"
 ---
 # <a name="security-issues"></a>安全性問題
 若要偵錯使用 Visual Studio 的程式，所需的權限僅限於都相同的開發人員需要用來執行程式。 這包括大多數的情況下執行遠端偵錯。 某些情況下，包含其他服務，例如網際網路資訊服務，可能需要較高層級的權限。

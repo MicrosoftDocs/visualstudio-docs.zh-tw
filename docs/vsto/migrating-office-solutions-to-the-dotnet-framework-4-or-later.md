@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 729fafd1f6dfdf889293c9686f455be8de5a81fc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970370"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>移轉至.NET Framework 4 或更新版本的 Office 方案
   如果 Office 專案的目標 framework 變更為[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本從.NET Framework 較早版本，一些額外的步驟可能需要以繼續在開發和終端使用者電腦上執行方案。 如需詳細資訊，請參閱 <<c0> [ 需要變更執行您移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。
@@ -38,6 +38,6 @@ ms.locfileid: "56643713"
 
 ## <a name="see-also"></a>另請參閱
 - [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)
-- [如何：.NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
+- [如何：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
 - [針對 Office 方案中的錯誤進行疑難排解](../vsto/troubleshooting-errors-in-office-solutions.md)
 - [Office 方案錯誤的其他支援](../vsto/additional-support-for-errors-in-office-solutions.md)

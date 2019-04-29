@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7a9421af9e0caf085feb1afb27b53befe837668
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894043"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>HOW TO：尋找程式損毀的所在的 DLL (C#， C++，Visual Basic 中， F#)
 
