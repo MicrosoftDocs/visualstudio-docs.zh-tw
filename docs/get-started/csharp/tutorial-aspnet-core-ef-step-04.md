@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 93e3b0af04060c3a3805b29e5d1da71c4f60ec31
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553850"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>步驟 4：從您的 ASP.NET Core 應用程式公開 Web API
 

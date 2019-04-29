@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a54b95130479a2f8091c3618ac32e48c261e5e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f6ccc0284f89891ff686e456abdcccb1b5296e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821560"
 ---
 # <a name="use-the-task-list"></a>使用工作清單
 
@@ -83,6 +83,9 @@ ms.locfileid: "55954695"
 4. 在 [ **優先權** ] 下拉式清單中，選擇新語彙基元的預設優先權。
 
 5. 選擇 [新增]。
+
+> [!TIP]
+> 輸入名稱後，[新增] 按鈕即變成啟用狀態。 您必須在按一下 [新增] 之前輸入名稱。
 
 ### <a name="c-todo-comments"></a>C++ TODO 註解
 

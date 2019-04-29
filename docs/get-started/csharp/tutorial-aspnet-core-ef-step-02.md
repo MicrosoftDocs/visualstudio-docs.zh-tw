@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 5e9cc4f579b5913d5be3030828cad1a799efcd72
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840403"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>步驟 2：建立您的第一個 ASP.NET Core Web 應用程式
 
@@ -122,4 +122,4 @@ public void OnGet()
 
 ## <a name="see-also"></a>另請參閱
 
-- [教學課程：使用 ASP.NET Core 建立 Razor Pages Web 應用程式](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [教學課程：使用 ASP.NET Core 建立 Razor 頁面 Web 應用程式](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

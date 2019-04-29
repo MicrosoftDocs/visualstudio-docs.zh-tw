@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 211e9ca6e5b30d2a2b88f03430090c155ef7627a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794046"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 建立可攜式自訂編輯器設定
 
@@ -25,7 +25,7 @@ ms.locfileid: "57223753"
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中的 EditorConfig](/visualstudio/mac/editorconfig)。
 
-## <a name="coding-consistency"></a>程式碼撰寫的一致性
+## <a name="code-consistency"></a>程式碼一致性
 
 EditorConfig 檔案中的設定可讓您在程式碼基底中維持一致的編碼樣式及設定，例如縮排樣式、Tab 跳位寬度、行結尾字元、編碼等等，而不論您使用的編輯器或 IDE 為何。 例如，當以 C++ 撰寫程式碼時，如果您的程式碼基底慣例偏好縮排一律包含五個空白字元、文件使用 UTF-8 編碼方式，且每一行的結尾一律為 CR/LF，您可以設定 *.editorconfig* 檔案來做到這點。
 
@@ -51,7 +51,7 @@ Visual Studio 中的編輯器支援 [EditorConfig 屬性](http://editorconfig.or
 
 除了 XML 以外的所有 Visual Studio 支援語言都支援 EditorConfig 編輯器設定。 此外，EditorConfig 支援 C# 及 Visual Basic 的[程式碼樣式](../ide/editorconfig-code-style-settings-reference.md)及[命名](../ide/editorconfig-naming-conventions.md)慣例。
 
-## <a name="adding-and-removing-editorconfig-files"></a>新增及移除 EditorConfig 檔案
+## <a name="add-and-remove-editorconfig-files"></a>新增及移除 EditorConfig 檔案
 
 將 EditorConfig 檔案新增至您的專案或程式碼基底，並不會將現有的樣式轉換為新的樣式。 例如，如果您在檔案中有使用定位字元設定格式的縮排，而且您新增了以空格縮排的 EditorConfig 檔案，縮排字元不會自動轉換為空格。 但是，新的程式碼會依照 EditorConfig 檔案設定格式。 此外，如果您想要設定文件的格式 ([編輯] > [進階] > [格式化文件] 或 **Ctrl**+**K**、**Ctrl**+**D**)，EditorConfig 檔案中的設定會套用到現有的程式碼。
 
@@ -94,7 +94,7 @@ Visual Studio 中的編輯器支援 [EditorConfig 屬性](http://editorconfig.or
 
 - 嘗試 [適用於 Visual Studio 的 IntelliCode 延伸模組](/visualstudio/intellicode/intellicode-visual-studio)。 此實驗性延伸模組會從現有的程式碼推斷您的程式碼樣式，然後使用已定義的程式碼樣式喜好設定來建立非空白的 *.editorconfig* 檔案。
 
-## <a name="override-editorconfig-settings"></a>覆寫 EditorConfig 設定
+## <a name="file-hierarchy-and-precedence"></a>檔案階層和優先順序
 
 當您將 *.editorconfig* 檔案新增到檔案階層中的資料夾時，其設定會套用到該層級 (含) 以下的所有適用檔案。 您也可以覆寫特定專案、程式碼基底，或程式碼基底組件的 EditorConfig 設定，這樣它就會使用和其他程式碼基底組件不同的慣例。 當您納入來自其他地方的程式碼，但不想變更其慣例時，這非常有用。
 
@@ -109,9 +109,9 @@ Visual Studio 中的編輯器支援 [EditorConfig 屬性](http://editorconfig.or
 root = true
 ```
 
-EditorConfig 檔案是由上往下讀取，而且最接近的 EditorConfig 檔案最後才讀取。 會以讀取順序套用相符 EditorConfig 區段的慣例，因此最接近之檔案的慣例優先。
+EditorConfig 檔案會由上到下讀取。 如果有多個具有相同名稱的屬性，則最近找到具有該名稱的屬性優先。
 
-## <a name="editing-editorconfig-files"></a>編輯 EditorConfig 檔案
+## <a name="edit-editorconfig-files"></a>編輯 EditorConfig 檔案
 
 Visual Studio 可透過提供 IntelliSense 完成清單協助您編輯 *.editorconfig* 檔案。
 
@@ -148,7 +148,7 @@ indent_style = tab
 
 ![以 TAB 鍵新增定位字元](../ide/media/vside_editorconfig_tab.png)
 
-## <a name="troubleshooting-editorconfig-settings"></a>疑難排解 EditorConfig 設定
+## <a name="troubleshoot-editorconfig-settings"></a>疑難排解 EditorConfig 設定
 
 如果目錄結構中的任何位置或在專案位置上方有一個 EditorConfig 檔案，Visual Studio 會將該檔案中的編輯器設定套用到您的編輯器。 在此情況下，您可能會看到狀態列中出現下列訊息：
 

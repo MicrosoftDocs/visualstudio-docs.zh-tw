@@ -11,12 +11,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a0d656aea42fff774e5e9c58068eff7039cfe79
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 54f9c7b982f1774c79d7cd1e7c0affa29dfbb65d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823408"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>在負載測試分析器的詳細資料檢視中分析負載測試虛擬使用者活動
 
@@ -45,11 +45,11 @@ ms.locfileid: "55936950"
 
  篩選結果面板會顯示在 [虛擬使用者活動圖] 中。 篩選結果面板可篩選下列項目：
 
--   **只顯示有記錄檔的結果**：僅顯示具有關聯測試記錄檔的測試結果。
+- **只顯示有記錄檔的結果**：僅顯示具有關聯測試記錄檔的測試結果。
 
--   **顯示順利完成的結果** 顯示順利完成的結果。
+- **顯示順利完成的結果** 顯示順利完成的結果。
 
--   **顯示有錯誤的結果** 顯示具有錯誤的結果，這些錯誤可協助偵錯。
+- **顯示有錯誤的結果** 顯示具有錯誤的結果，這些錯誤可協助偵錯。
 
 ## <a name="tasks"></a>工作
 

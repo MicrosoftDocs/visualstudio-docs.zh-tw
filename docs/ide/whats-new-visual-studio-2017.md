@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fea8aeac90a974fc6b1cb89d9419c0652c184796
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583352"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
@@ -32,7 +32,7 @@ ms.locfileid: "58857810"
 想要從舊版 Visual Studio 升級嗎？ 以下是 Visual Studio 2017 能為您提供的內容：適用於任何開發人員、任何應用程式及任何平台的卓越生產力。 您可使用 Visual Studio 2017 來開發適用於 Android、iOS、Windows、Linux、Web 及雲端的應用程式。 快速編碼、輕鬆偵錯及診斷、頻繁測試，然後自信地發行。 您也可以建置自己的擴充功能來擴充和自訂 Visual Studio 。 使用版本控制、變得敏捷、使用這個版本有效率地共同作業！
 
 >[!div class="button"]
->[下載 Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+>[下載 Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 以下是自舊版 Visual Studio 2015 以來，我們所做變更的高階回顧：
 
@@ -268,7 +268,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 **15.5 的新功能**：Visual Studio 2017 15.5 版提供 Windows 10 Fall Creators Update SDK (10.0.16299.0) 的最佳支援。 Windows 10 Fall Creators Update 也提供 UWP 開發人員許多增強功能。 以下是其中一些最重大的變更： 
 
-* **針對 .NET Standard 2.0 的支援**<br/>除了簡化應用程式部署之外，Windows 10 Fall Creators Update 也是第一個提供 .NET Standard 2.0 支援的版本。 實際上，[.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) 是任何 .NET 平台都能實作之基底類別庫的參考實作。 .NET Standard 的目標是讓 .NET 開發人員在其選擇工作的任何 .NET 平台之間，盡可能輕鬆地共用程式碼。
+* **.NET Standard 2.0 的支援**<br/>除了簡化應用程式部署之外，Windows 10 Fall Creators Update 也是第一個提供 .NET Standard 2.0 支援的版本。 實際上，[.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) 是任何 .NET 平台都能實作之基底類別庫的參考實作。 .NET Standard 的目標是讓 .NET 開發人員在其選擇工作的任何 .NET 平台之間，盡可能輕鬆地共用程式碼。
 * **UWP 和 Win32 的最佳選擇**<br/>我們改進了 Windows 10 平台，提供[傳統型橋接器](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root)讓 Windows 10 更適用於所有 .NET 開發人員，不論其目前焦點是在 UWP、WPF、Windows Form 或 Xamarin。 透過 Visual Studio 2017 15.5 版中新增的應用程式套件專案類型，您可以像是針對 UWP 專案一樣，針對 WPF 或 Windows Forms 專案建立 Windows 應用程式套件。 封裝應用程式之後，您將享有所有 Windows 10 應用程式部署優點，並可選擇透過 Microsoft Store (適用於消費者應用程式) 或商務用 Microsoft Store 和教育用 Microsoft Store 進行散發。 由於已封裝應用程式可以存取桌面上的完整 UWP API 介面和 Win32 API，因此您現在可以使用 UWP API 和 Windows 10 功能逐漸將 WPF 和 Windows Forms 應用程式現代化。 此外，您可以將 Win32 元件加入 UWP 應用程式，在桌面上顯示所有 Win32 功能。
 
 如需 UWP 的詳細資訊，請參閱[開發適用於通用 Windows 平台 (UWP) 的應用程式](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)頁面。
@@ -371,9 +371,11 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 想深入了解 Visual Studio 2017 中還包含哪些內容嗎？ 請參閱 [Visual Studio 路程圖](/visualstudio/productinfo/vs2018-roadmap)頁面。
 
+而且別忘了查看最新版本中， [Visual Studio 2019](whats-new-visual-studio-2019.md)。
+
 ## <a name="contact-us"></a>與我們連絡
 
- 為什麼要傳送意見反應給 Visual Studio 小組？ 我們極為重視客戶的意見反應。 它們是我們進步的動力。
+為什麼要傳送意見反應給 Visual Studio 小組？ 我們極為重視客戶的意見反應。 它們是我們進步的動力。
 
 如果您想為我們提供改善 Visual Studio 的建議，或是深入了解產品支援選項，請參閱 [[告訴我們]](talk-to-us.md) 頁面。
 

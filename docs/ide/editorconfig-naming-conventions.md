@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557296"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
 
 命名慣例關係到程式碼項目的命名，例如類別、屬性和方法。 例如，您可以指定公用成員必須以大寫形式命名，或非同步方法必須以 "Async" 結尾。 您可以藉由在 [.editorconfig 檔案](../ide/create-portable-custom-editor-options.md)中指定來強制執行這些規則。 違反命名規則的項目會出現在 [錯誤清單] 或在名稱下方以建議的形式出現，取決於您為規則選擇的嚴重性。 您不需要建置專案，也能看見違規項目。
 
-在 .editorconfig 檔案中的命名慣例應該以最為明確到最不明確的順序排序。 第一個遇到的可套用規則，會是唯一套用的規則。
+在 EditorConfig 檔案中的命名慣例應該以最為明確到最不明確的順序排序。 第一個遇到的可套用規則，會是唯一套用的規則。 但是，如果有多個具有相同名稱的規則*屬性*，則最近找到具有該名稱的屬性優先。 如需詳細資訊，請參閱[檔案階層和優先順序](create-portable-custom-editor-options.md#file-hierarchy-and-precedence)。
 
 針對每一個命名慣例，您必須使用以下描述的屬性來指定其適用的符號、命名樣式以及嚴重性，以強制執行慣例。 屬性的順序不重要。
 
@@ -209,6 +209,6 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 
 ## <a name="see-also"></a>另請參閱
 
-- [.NET 語言及格式設定慣例](../ide/editorconfig-code-style-settings-reference.md)
+- [.NET 語言與格式設定慣例](../ide/editorconfig-code-style-settings-reference.md)
 - [建立可攜式自訂編輯器選項](../ide/create-portable-custom-editor-options.md)
 - [.NET 編譯器平台的 .editorconfig 檔案](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
