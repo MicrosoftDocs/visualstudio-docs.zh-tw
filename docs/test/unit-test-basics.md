@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990221"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -38,7 +38,7 @@ ms.locfileid: "58647410"
 
 ## <a name="the-mybank-solution-example"></a>MyBank 解決方案範例
 
-在本文中，我們會使用稱為 `MyBank` 的虛構應用程式開發來作為範例。 您不需要實際程式碼來照著本主題中的說明進行。 測試方法是以 C# 所撰寫並使用 Microsoft 受控程式碼單元測試架構呈現。 不過，很容易就可以將概念移轉到其他語言與架構。
+在此文章中，我們會使用稱為 `MyBank` 的虛構應用程式開發來作為範例。 您不需要實際程式碼來照著本主題中的說明進行。 測試方法是以 C# 所撰寫並使用 Microsoft 受控程式碼單元測試架構呈現。 不過，很容易就可以將概念移轉到其他語言與架構。
 
 ![MyBank 方案](../test/media/ute_mybanksolution.png)
 
@@ -82,9 +82,12 @@ public void Withdraw(double amount)
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>產生單元測試專案和單元測試虛設常式
 
-1. 在程式碼編輯器視窗中，以滑鼠右鍵按一下並從右鍵功能表中選擇 [建立單元測試]。
+1. 在程式碼編輯器視窗中，以滑鼠右鍵按一下並從右鍵功能表中選擇 [[**建立單元測試**]](create-unit-tests-menu.md)。
 
-    ![從編輯器視窗，檢視內容功能表](../test/media/createunittestsrightclick.png)
+   ![從編輯器視窗，檢視內容功能表](../test/media/createunittestsrightclick.png)
+
+   > [!NOTE]
+   > [建立單元測試] 功能表命令僅供以 .NET Framework 為目標 (非 .NET Core) 的受控程式碼使用。
 
 2. 按一下 [確定] 接受預設值來建立單元測試，或變更過去用來建立和命名單元測試專案和單元測試的值。 您可以選取預設加入此單元測試方法的程式碼。
 
@@ -127,17 +130,17 @@ public void Withdraw(double amount)
 
    建立程式碼專案的參考：
 
-   1.  在 [方案總管] 中選取專案。
+   1. 在 [方案總管] 中選取專案。
 
-   2.  在 [專案]  功能表上，選擇 [加入參考] 。
+   2. 在 [專案]  功能表上，選擇 [加入參考] 。
 
-   3.  在 [參考管理員] 對話方塊上，開啟 [方案] 節點，然後選擇 [專案]。 選取程式碼專案名稱，然後關閉對話方塊。
+   3. 在 [參考管理員] 對話方塊上，開啟 [方案] 節點，然後選擇 [專案]。 選取程式碼專案名稱，然後關閉對話方塊。
 
 每個單元測試專案包含的類別都可反映程式碼專案中的類別名稱。 在本例中， `AccountsTests` 專案可能包含下列類別：
 
--   `AccountInfoTests` 類別包含 `AccountInfo` 專案中 `Accounts` 類別的單元測試方法。
+- `AccountInfoTests` 類別包含 `AccountInfo` 專案中 `Accounts` 類別的單元測試方法。
 
--   `CheckingAccountTests` 類別包含 `CheckingAccount` 類別的單元測試方法。
+- `CheckingAccountTests` 類別包含 `CheckingAccount` 類別的單元測試方法。
 
 ## <a name="write-your-tests"></a>撰寫您的測試
 
@@ -185,11 +188,11 @@ public void Withdraw_AmountMoreThanBalance_Throws()
 
 如需 Microsoft 單元測試架構的詳細資訊，請參閱下列其中一個主題：
 
--   [對程式碼進行單元測試](unit-test-your-code.md)
+- [對程式碼進行單元測試](unit-test-your-code.md)
 
--   [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)
+- [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)
 
--   [在單元測試中使用 MSTest 架構](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [在單元測試中使用 MSTest 架構](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>設定單元測試逾時
 
@@ -260,12 +263,12 @@ public void My_Test ()
 
 **答：** 您可以使用 [測試總管] 來啟動測試的偵錯工作階段。 使用 Visual Studio 偵錯工具逐步執行程式碼可讓您順暢地在單元測試和受測專案之間來回進行。 啟動偵錯：
 
-1.  在 Visual Studio 編輯器中，於您要偵錯的一個或多個測試方法中設定中斷點。
+1. 在 Visual Studio 編輯器中，於您要偵錯的一個或多個測試方法中設定中斷點。
 
     > [!NOTE]
     > 由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。
 
-2.  在 [測試總管] 中選取測試方法，然後從捷徑功能表中選擇 [偵錯選取的測試]。
+2. 在 [測試總管] 中選取測試方法，然後從捷徑功能表中選擇 [偵錯選取的測試]。
 
 進一步了解 [偵錯單元測試](../debugger/debugger-feature-tour.md)的詳細資料。
 
@@ -327,9 +330,9 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 Microsoft Fakes 會使用兩種方式來建立外部相依性的替代類別：
 
-1.  *「虛設常式」* (stub) 會產生自目標相依性類別的父介面衍生的替代類別。 虛設常式方法可以取代為目標類別的公用虛擬方法。
+1. *「虛設常式」* (stub) 會產生自目標相依性類別的父介面衍生的替代類別。 虛設常式方法可以取代為目標類別的公用虛擬方法。
 
-2.  *「填充碼」* (shim) 會使用執行階段檢測將呼叫轉向至目標方法，以使用填充碼方法來替代非虛擬方法。
+2. *「填充碼」* (shim) 會使用執行階段檢測將呼叫轉向至目標方法，以使用填充碼方法來替代非虛擬方法。
 
 在這兩種方法中，您可以對相依性方法使用呼叫所產生的委派，以指定您要讓測試方法執行的行為。
 

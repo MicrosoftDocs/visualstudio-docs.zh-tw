@@ -46,7 +46,7 @@
       href: workspace-language-services.md
     - name: 組建
       href: workspace-build.md
-- name: 延伸功能表和命令
+- name: 擴充功能表與命令
   href: extending-menus-and-commands.md
   items:
     - name: 建立具有功能表命令的延伸模組
@@ -71,7 +71,7 @@
       href: updating-the-user-interface.md
     - name: 將功能表命令當地語系化
       href: localizing-menu-commands.md
-- name: 將命令新增至工具列
+- name: 將命令新增到工具列
   href: adding-commands-to-toolbars.md
   items:
     - name: 新增工具列
@@ -84,7 +84,7 @@
       href: adding-a-menu-controller-to-a-toolbar.md
     - name: 以動態方式新增功能表項目
       href: dynamically-adding-menu-items.md
-- name: 延伸和自訂工具視窗
+- name: 擴充和自訂工具視窗
   href: extending-and-customizing-tool-windows.md
   items:
     - name: 使用工具視窗建立延伸模組
@@ -103,9 +103,9 @@
       href: adding-search-to-a-tool-window.md
     - name: 訂閱事件
       href: subscribing-to-an-event.md
-    - name: 延伸輸出視窗
+    - name: 擴充輸出視窗
       href: extending-the-output-window.md
-    - name: 延伸屬性、工作清單、輸出和選項視窗
+    - name: 擴充屬性、工作清單、輸出和選項視窗
       href: extending-the-properties-task-list-output-and-options-windows.md
     - name: 建立和管理強制回應對話方塊
       href: creating-and-managing-modal-dialog-boxes.md
@@ -114,7 +114,7 @@
   items:
     - name: 使用編輯器項目範本建立延伸模組
       href: creating-an-extension-with-an-editor-item-template.md
-    - name: 延伸編輯器和語言服務
+    - name: 擴充編輯器和語言服務
       href: extending-the-editor-and-language-services.md
       items:
         - name: 開始使用語言服務及編輯器延伸模組
@@ -191,7 +191,9 @@
               href: how-to-open-standard-editors.md
             - name: 針對開啟的文件開啟編輯器
               href: how-to-open-editors-for-open-documents.md
-- name: 延伸專案
+        - name: XAML 設計工具擴充性移轉指南
+          href: xaml-designer-extensibility-migration.md
+- name: 擴充專案
   href: extending-projects.md
   items:
     - name: 建立基本的專案系統，第 1 部分
@@ -210,10 +212,10 @@
       href: persisting-the-property-of-a-project-item.md
     - name: 管理通用 Windows 專案
       href: managing-universal-windows-projects.md
-- name: 延伸方案
+- name: 擴充解決方案
   href: extending-solutions.md
   items:
-    - name: 延伸方案總管篩選
+    - name: 擴充方案總管篩選
       href: extending-the-solution-explorer-filter.md
     - name: 管理方案中的專案載入
       href: managing-project-loading-in-a-solution.md
@@ -335,7 +337,7 @@
           href: wizardextension-element-visual-studio-templates.md
     - name: Visual Studio 範本資訊清單結構描述參考
       href: visual-studio-template-manifest-schema-reference.md
-- name: 延伸使用者設定和選項
+- name: 擴充使用者設定和選項
   href: extending-user-settings-and-options.md
   items:
     - name: 建立選項頁
@@ -348,14 +350,14 @@
       href: getting-service-information-from-the-settings-store.md
     - name: 寫入使用者設定存放區
       href: writing-to-the-user-settings-store.md
-- name: 延伸屬性和屬性視窗
+- name: 擴充屬性和屬性視窗
   href: extending-properties-and-the-property-window.md
   items:
     - name: 將屬性公開至屬性視窗
       href: exposing-properties-to-the-properties-window.md
     - name: 取得專案屬性
       href: getting-project-properties.md
-- name: 延伸 Visual Studio 的其他部分
+- name: 擴充 Visual Studio 的其他部分
   href: extending-other-parts-of-visual-studio.md
   items:
     - name: 使用 VSPackage 建立延伸模組
@@ -364,7 +366,7 @@
       href: creating-a-wpf-toolbox-control.md
     - name: 建立 Windows Forms 工具箱控制項
       href: creating-a-windows-forms-toolbox-control.md
-    - name: 延伸狀態列
+    - name: 擴充狀態列
       href: extending-the-status-bar.md
     - name: 建立自訂起始頁
       href: creating-a-custom-start-page.md
@@ -429,7 +431,7 @@
   href: addressing-dpi-issues2.md
 - name: 影像服務與資料庫目錄
   href: image-service-and-catalog.md
-- name: 使用和提供服務
+- name: 使用及提供服務
   href: using-and-providing-services.md
   items:
     - name: 取得服務
@@ -440,7 +442,7 @@
       href: how-to-provide-an-asynchronous-visual-studio-service.md
     - name: 針對服務進行疑難排解
       href: how-to-troubleshoot-services.md
-- name: 管理 VSPackage
+- name: 管理 VSPackages
   href: managing-vspackages.md
   items:
     - name: 實驗執行個體
@@ -463,7 +465,7 @@
       href: troubleshooting-vspackages.md
 - name: Shell (整合模式或獨立模式)
   href: 'https://vspartner.com/pages/vsshells'
-- name: 推出 Visual Studio 延伸模組
+- name: 交付 Visual Studio 延伸模組
   href: shipping-visual-studio-extensions.md
   items:
     - name: VSIX 專案範本

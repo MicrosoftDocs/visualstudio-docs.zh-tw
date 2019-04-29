@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07584f9e04be805ed699676c678b2147ec3679ff
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 3e1f82a58dac3b0a6f607d1de7f881c5de9e91aa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973271"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>適用於 C# 開發人員的 Visual Studio 生產力指南
 
@@ -154,10 +154,12 @@ Visual Studio 有許多功能，可協助您搜尋和[巡覽程式碼](../ide/na
 從 Visual Studio 2017 開始，已多加改善測試體驗。 您可以使用 MSTest v1、MSTest v2、NUnit 或 XUnit 測試架構來測試。
 
 - [測試總管] 測試探索速度很快。
-- 使用「階層排序」來組織 [測試總管] 中的測試。
-- [Live Unit Testing](../test/live-unit-testing.md) 會持續執行程式碼變更所影響的測試，並更新內嵌編輯器圖示，讓您知道測試的狀態。 包含或排除即時測試集合中的特定測試或測試專案。
 
-![Visual Studio 中 [文字總管] 的階層檢視](../ide/media/VSGuide_Testing.png)
+- 使用「階層排序」來組織 [測試總管] 中的測試。
+
+   ![Visual Studio 中 [文字總管] 的階層檢視](../ide/media/VSGuide_Testing.png)
+
+- [Live Unit Testing](../test/live-unit-testing.md) 會持續執行程式碼變更所影響的測試，並更新內嵌編輯器圖示，讓您知道測試的狀態。 包含或排除即時測試集合中的特定測試或測試專案。 (僅限Visual Studio Enterprise 版。)
 
 ## <a name="debugging"></a>偵錯
 
@@ -198,7 +200,7 @@ Visual Studio 有許多功能，可協助您搜尋和[巡覽程式碼](../ide/na
 
 - 透過[適用於 Visual Studio 的持續傳遞工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) \(英文\) 延伸模組，在 Visual Studio 中針對您的 ASP.NET 專案設定持續整合和傳遞。
 
-![Visual Studio 中的原始檔控制](../ide/media/VSIDE_Productivity_SourceControl.png)
+![Visual Studio 中的原始程式碼控制](../ide/media/VSIDE_Productivity_SourceControl.png)
 
 ## <a name="what-other-features-should-i-know-about"></a>我還應該知道哪些其他功能？
 
@@ -211,5 +213,5 @@ Visual Studio 有許多功能，可協助您搜尋和[巡覽程式碼](../ide/na
 | 啟用完整解決方案分析 | 請在 [錯誤清單] 中查看方案中的所有錯誤 | [工具] > [選項] > [文字編輯器] > [C#] > [進階]  > [啟用完整解決方案分析] |
 | 啟用巡覽至反向編譯的原始碼 | 允許從外部來源對類型/成員啟用 [移至定義]，並使用 ILSpy 解編程式來顯示方法主體 | [工具] > [選項] > [文字編輯器] > [C#] > [進階] > [啟用巡覽至反向編譯的原始碼] |
 | 完成/建議模式 | 變更 IntelliSense 中的完成行為。 具有 IntelliJ 背景的開發人員傾向於使用這裡的非預設設定。 | [功能表] > [編輯] > [IntelliSense] > [切換完成模式] |
-| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | 在編輯器中顯示程式碼參考資訊與變更歷程記錄 | [工具] > [選項] > [文字編輯器] > [所有語言] > [CodeLens] |
+| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | 在編輯器中顯示程式碼參考資訊與變更歷程記錄。 (在 Visual Studio Community 版中無法使用原始程式碼控制 CodeLens 指標。) | [工具] > [選項] > [文字編輯器] > [所有語言] > [CodeLens] |
 | [程式碼片段](../ide/visual-csharp-code-snippets.md) | 協助插入常用樣板程式碼作為虛設常式 | 鍵入程式碼片段名稱並按兩次 **Tab** 鍵。 |

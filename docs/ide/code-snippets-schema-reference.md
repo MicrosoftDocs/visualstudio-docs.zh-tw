@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974978"
 ---
 # <a name="code-snippets-schema-reference"></a>程式碼片段結構描述參考
 
@@ -320,9 +320,6 @@ $selected$ is a great color. I love $selected$.
 
 指定 IntelliSense 程式碼片段使用的匯入命名空間。
 
-> [!NOTE]
-> 只有 Visual Basic 專案支援 `Import` 項目。
-
 ```xml
 <Import>
     <Namespace>... </Namespace>
@@ -340,9 +337,6 @@ $selected$ is a great color. I love $selected$.
 ## <a name="imports-element"></a>Imports 元素
 
 將個別 `Import` 項目設為群組。
-
-> [!NOTE]
-> 只有 Visual Basic 專案支援 `Imports` 項目。
 
 ```xml
 <Imports>
@@ -425,10 +419,7 @@ $selected$ is a great color. I love $selected$.
 
 ## <a name="namespace-element"></a>Namespace 元素
 
-指定必須匯入的命名空間，匯入後程式碼片段才能進行編譯和執行。 在 `Namespace` 項目中指定的命名空間會自動加入至程式碼開頭的 `Imports` 陳述式中 (如果不存在的話)。
-
-> [!NOTE]
-> 只有 Visual Basic 專案支援 `Namespace` 項目。
+指定必須匯入的命名空間，匯入後程式碼片段才能進行編譯和執行。 在 `Namespace` 元素中指定的命名空間會自動加入至程式碼開頭的 `using` 指示詞或 `Imports` 陳述式中 (如果不存在的話)。
 
 ```xml
 <Namespace>
@@ -569,11 +560,11 @@ $selected$ is a great color. I love $selected$.
 
 文字值必須是下列其中一個值：
 
--   `SurroundsWith`：允許將程式碼片段放置在所選取程式碼的前後。
+- `SurroundsWith`：允許將程式碼片段放置在所選取程式碼的前後。
 
--   `Expansion`：允許在游標所在位置插入程式碼片段。
+- `Expansion`：允許在游標所在位置插入程式碼片段。
 
--   `Refactoring`：指定在 C# 重構期間使用程式碼片段。 `Refactoring` 無法在自訂程式碼片段中使用。
+- `Refactoring`：指定在 C# 重構期間使用程式碼片段。 `Refactoring` 無法在自訂程式碼片段中使用。
 
 ## <a name="snippettypes-element"></a>SnippetTypes 元素
 

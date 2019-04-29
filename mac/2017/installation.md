@@ -7,18 +7,22 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 1a3d95176af41bbf7803144995888b12abeeea3a
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 3fe365b56d35202e7755e93219eeaf45f51509d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998166"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>安裝 Visual Studio 2017 for Mac
 
 > [!NOTE]
-> Visual Studio 2019 for Mac [現已推出](installation.md?view=vsmac-2019)。
+> Visual Studio 2019 for Mac [現已推出](installation.md?view=vsmac-2019)。 針對舊版的 Visual Studio for Mac，請參閱 Visual Studio [下載頁面](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)。
 
+## <a name="downgrading-from-visual-studio-2019-for-mac"></a>從 Visual Studio 2019 for Mac 降級嗎？
+
+為了獲得最佳體驗，在降級之前，您應該確定[解除安裝](uninstall.md) Visual Studio 2019 for Mac。 如果您遇到導致您下載的問題，請務必透過[回報問題](report-a-problem.md)讓我們知道。
+ 
 ## <a name="requirements"></a>需求
 
 若要在下載 Visual Studio for Mac 時開始開發原生的跨平台應用程式，有必須安裝和設定以做為準備的數個項目。
@@ -31,7 +35,7 @@ ms.locfileid: "58856673"
 
 ## <a name="install"></a>安裝
 
-1. 從 [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/) 下載 Visual Studio for Mac
+1. 從 [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac) 下載 Visual Studio for Mac
 
 2. 安裝程式套件下載後，按一下 **VisualStudioForMacInstaller.dmg** 檔案來裝載安裝程式，然後按兩下標誌加以執行，如下圖所示：
 
@@ -109,9 +113,9 @@ ms.locfileid: "58856673"
 
 ### <a name="android"></a>Android
 
-1. [使用 Xamarin Android SDK 管理員](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
-2. [Android SDK Emulator](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
-4. [設定裝置以進行開發](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+1. [使用 Xamarin Android SDK 管理員](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs) \(英文\)
+2. [Android SDK 模擬器](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/) \(英文\)
+4. [設定您的裝置以進行開發](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/) \(英文\)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 應用程式、ASP.NET Core Web 應用程式、Unity 遊戲開發
 
@@ -123,4 +127,4 @@ ms.locfileid: "58856673"
 
 ## <a name="see-also"></a>另請參閱
 
-- [安裝 Visual Studio 2017 (在 Windows 上)](/visualstudio/install/install-visual-studio)
+- [安裝 Visual Studio 2017 (Windows 上)](/visualstudio/install/install-visual-studio)

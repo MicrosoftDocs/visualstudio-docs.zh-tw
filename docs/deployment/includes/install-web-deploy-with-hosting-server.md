@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904344"
 ---
 Web Deploy 3.6 for Hosting Servers 提供其他組態功能，可讓您從 UI 建立發行設定檔。
 
@@ -26,4 +26,4 @@ Web Deploy 3.6 for Hosting Servers 提供其他組態功能，可讓您從 UI �
 
 4. (選擇性) 若要確認 Web Deploy 正確執行，請開啟 [控制台] > [系統及安全性] > [系統管理工具] > [服務]，然後確定 **Web Deployment Agent Service** 正在執行 (舊版的服務名稱不同)。
 
-    如果 Agent Service 未執行，請啟動服務。 如果它根本不是存在，請移至**控制台 > 程式 > 解除安裝程式**，尋找**Microsoft Web Deploy\<版本 >**。 選擇 [變更] 安裝，並確定您針對 Web Deploy 元件選擇 [將會安裝至本機硬碟]。 完成變更安裝步驟。
+    如果 Agent Service 未執行，請啟動該服務。 如果完全沒有該服務，請移至 [控制台] > [程式集] > [解除安裝程式]，並尋找 Microsoft Web Deploy \<版本>。 選擇 [變更] 安裝，並確定您針對 Web Deploy 元件選擇 [將會安裝至本機硬碟]。 完成變更安裝步驟。

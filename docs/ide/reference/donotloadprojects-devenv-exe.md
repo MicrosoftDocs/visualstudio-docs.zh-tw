@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91c4da26d202e1a23ff70a7c655f64fd6c05a340
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: de757e7022339b11f6d7c04ea7315abf685da24c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57875389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428050"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
 
-開啟指定的解決方案，而不載入任何專案。
+開啟指定的解決方案，而不載入任何專案。 如需詳細資訊，請參閱 [Visual Studio 中已篩選的方案](../filtered-solutions.md)。
 
 ## <a name="syntax"></a>語法
 
@@ -30,19 +30,19 @@ devenv /DoNotLoadProjects SolutionName
 
 ## <a name="arguments"></a>引數
 
-- *SolutionName*
+*SolutionName*
 
-  必要項。 要開啟之解決方案的完整路徑和名稱。
+必要項。 要開啟之解決方案的完整路徑和名稱。
 
 ## <a name="example"></a>範例
 
-此範例會開啟解決方案 MySln.sln，而不載入任何專案。
+此範例會開啟方案 MySln.sln，而不載入任何專案。
 
 ```shell
 devenv /donotloadprojects MySln.sln
-
 ```
 
 ## <a name="see-also"></a>另請參閱
 
+- [Visual Studio 中已篩選的方案](../filtered-solutions.md)
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

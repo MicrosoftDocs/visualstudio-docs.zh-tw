@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 04/04/2019
+ms.date: 04/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432024"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 的新功能
 
-**已針對 [16.0 版](/visualstudio/releases/2019/release-notes/)更新**
+已針對 [16.0 版](/visualstudio/releases/2019/release-notes/)更新
 
 >[!div class="button"]
 >[下載 Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -84,7 +84,7 @@ C# 中有許多全新且非常有用的重構，讓您輕鬆就能組織您的�
 
 新的程式碼清除命令會與新文件健康狀態指標搭配。 您可以使用這個新的命令來找出警告與建議，並透過按一下按鈕進行修正。
 
-清除作業會將程式碼格式化，並套用由[目前的設定](code-styles-and-quick-actions.md)、[.editorconfig 檔案](create-portable-custom-editor-options.md)，或 [Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)所建議的任何程式碼修正。
+清除作業會設定程式碼格式，並套用由[目前的設定](code-styles-and-quick-actions.md)和 [.editorconfig 檔案](create-portable-custom-editor-options.md)所建議的任何程式碼修正。
 
    ![Visual Studio 2019 中的新程式碼清除控制項螢幕擷取畫面](media/vs-2019/code-cleanup-profile.png)
 
@@ -167,6 +167,12 @@ Visual Studio 2019 預設會安裝這項服務。
 我們也新增對 Azure VM 上執行的目標 ASP.NET (Core 與傳統型) 應用程式的支援。 此外，我們新增對Azure Kubernetes Service 中所執行應用程式的支援。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
 
 如需詳細資訊請參閱[使用快照偵錯工具針對即時 ASP.NET Azure 應用程式進行偵錯](../debugger/debug-live-azure-applications.md)頁面，以及[介紹 Visual Studio Enterprise 2019 的時間移動偵錯](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) \(英文\) 部落格文章。
+
+## <a name="whats-next"></a>後續步驟
+
+我們對 Visual Studio 2019 的更新通常附帶可大幅改善您開發體驗的新功能。 若要深入了解有關我們最新的創新功能，請參閱 [Visual Studio 部落格](https://devblogs.microsoft.com/visualstudio/)。 有關我們迄今為止在預覽中發行之內容的記錄，請查看[預覽版本資訊](/visualstudio/releases/2019/release-notes-preview/)。
+
+想深入了解 Visual Studio 2019 中還包含哪些內容嗎？ 請參閱 [Visual Studio 藍圖](/visualstudio/productinfo/vs-roadmap/)。
 
 ## <a name="give-us-feedback"></a>提供意見反應
 
