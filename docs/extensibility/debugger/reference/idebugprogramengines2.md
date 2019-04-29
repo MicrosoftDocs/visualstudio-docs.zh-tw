@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1a5ad34904a2f0bf02e5a2221f1ff73093012a41
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916926"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 程式節點會使用此介面來指定所有可能的偵錯引擎 (DE) 可以偵錯此程式。

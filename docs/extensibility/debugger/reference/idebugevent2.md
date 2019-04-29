@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7e70767bab6453f3c3d96b58c8be049a832dc6ad
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62920201"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 此介面用來傳達重要的偵錯資訊，例如停止於中斷點，以及非關鍵的資訊，例如偵錯訊息。

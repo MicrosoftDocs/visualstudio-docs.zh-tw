@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e736c14b1a87188f45658a51cff0c123553332e9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56725030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917498"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 這個方法會通知程序工作階段不會再偵錯程序。

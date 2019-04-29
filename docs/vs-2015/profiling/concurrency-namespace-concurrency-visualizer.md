@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 854371293fd46893f41eef0abc36446f1c7955f0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422392"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency 命名空間 (並行視覺化檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,12 +35,12 @@ namespace Concurrency;
   
 ### <a name="namespaces"></a>命名空間  
   
-|名稱|說明|  
+|名稱|描述|  
 |----------|-----------------|  
 |[diagnostic 命名空間](../profiling/diagnostic-namespace.md)|`diagnostics` 命名空間提供的功能可用來發出並行視覺化檢視標記。|  
   
 ## <a name="requirements"></a>需求  
  **標頭：** cvmarkersobj.h  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [C 程式庫參考](../profiling/c-library-reference.md)

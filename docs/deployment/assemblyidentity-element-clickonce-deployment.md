@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 56525cc0c0c754a7fa3a1f4c2c5b6cf2e941e9b0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929060"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity&gt;項目 （ClickOnce 部署）
 識別主要組件的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。
@@ -42,7 +42,7 @@ ms.locfileid: "56608340"
 ## <a name="elements-and-attributes"></a>元素和屬性
  `assemblyIdentity`是必要元素。 它包含沒有子項目，並具有下列屬性。
 
-|屬性|說明|
+|屬性|描述|
 |---------------|-----------------|
 |`name`|必要項。 識別部署的人類看得懂的名稱僅供參考之用。<br /><br /> 如果`name`包含特殊字元，例如單引號或雙引號括住，應用程式可能無法啟動。|
 |`version`|必要項。 指定的組件的版本號碼，格式如下： `major.minor.build.revision`。<br /><br /> 此值必須遞增來觸發應用程式更新的更新資訊清單中。|
