@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6a72f78e89af41509711c94a00c8ab11b11fc549
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935408"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>用於偵測及管理 Visual Studio 執行個體的工具
 
@@ -39,11 +39,12 @@ ms.locfileid: "59018216"
 
 ## <a name="using-vswhereexe"></a>使用 vswhere.exe
 
-`vswhere.exe` 自動包含在 Visual Studio (Visual Studio 2017 15.2 版及更新版本) 中，或您也可以從 [vswhere 發行頁面](https://github.com/Microsoft/vswhere/releases) \(英文\) 下載。 使用 `vswhere -?` 來取得該工具的說明資訊。 作為範例，此命令會顯示 Visual Studio 的所有版本 (包括產品的較舊版本及發行前版本)，並以 JSON 格式輸出結果：
+`vswhere.exe` 自動包含在 Visual Studio (Visual Studio 2017 15.2 版與更新版本) 中，或您也可以從 [vswhere 發行頁面](https://github.com/Microsoft/vswhere/releases) \(英文\) 下載。 使用 `vswhere -?` 來取得該工具的說明資訊。 作為範例，此命令會顯示 Visual Studio 的所有版本 (包括產品的較舊版本及發行前版本)，並以 JSON 格式輸出結果：
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+
 ::: moniker range="vs-2017"
 
 > [!TIP]
@@ -64,6 +65,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 1. 選取 `HKEY_LOCAL_MACHINE` 節點。
 
 1. 從 Regedit 主功能表選取 [檔案] > [載入登錄區]，然後選取私人登錄檔 (儲存在 **AppData\Local** 資料夾中)。 例如：
+
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```

@@ -1,6 +1,6 @@
 ---
 title: 安裝測試代理程式和測試控制器
-ms.date: 10/24/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - configure test agents, test lab
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04111b7a408b2378e0067ce1e3dd4e5ffd23ee48
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c6597c47fd272beec2c82f7d4c2644291b168b5f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965411"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>安裝測試代理程式和測試控制器
 
@@ -34,9 +34,9 @@ ms.locfileid: "57223022"
 
 ## <a name="install-the-test-controller-and-test-agents"></a>安裝測試控制器和測試代理程式
 
-您可以從 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) 下載 Agents for Visual Studio。 尋找 *Agents for Visual Studio 2017*，選取 [代理程式] 或 [控制器]，然後選擇 [下載]。 執行下載的可執行檔以安裝測試代理程式或控制器。
+您可以從 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) 下載 Agents for Visual Studio。 尋找 *Agents for Visual Studio 2019*，選取 [代理程式] 或 [控制器]，然後選擇 [下載]。 執行下載的可執行檔以安裝測試代理程式或控制器。
 
-您可以從[舊版下載](https://visualstudio.microsoft.com/vs/older-downloads/)頁面下載 Agents for Visual Studio 2015 和 Visual Studio 2013。
+您可以從[舊版下載](https://visualstudio.microsoft.com/vs/older-downloads/)頁面下載 Agents for Visual Studio 2017、Visual Studio 2015 和 Visual Studio 2013。
 
 這些安裝程式會以 ISO 檔案提供，方便安裝在虛擬機器上。
 

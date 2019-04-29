@@ -8,11 +8,11 @@ ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: d98ffc8c9d864afaf0b42d029a4d65850f64d806
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972712"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>連線到 Team Foundation 版本控制
 
@@ -27,7 +27,7 @@ Visual Studio for Mac 提供對 Git 存放庫的完整支援，但需要一些�
 * [使用 Team Explorer Everywhere 命令列用戶端 (TEE-CLC) 連線到您的存放庫](#connecting-using-the-team-explorer-everywhere-command-line-client)
 * [使用適用於 Visual Studio for Mac 的Team Foundation 版本控制延伸模組 (不支援) 連線到 TFVC](#connect-to-tfvc-using-the-team-foundation-version-control-extension)
 
-本文的其餘部分會向您逐步介紹以上所列的選項。
+此文章的其餘部分會向您逐步介紹以上所列的選項。
 
 ## <a name="requirements"></a>需求
 
@@ -58,11 +58,11 @@ Visual Studio for Mac 提供對 Git 存放庫的完整支援，但需要一些�
 
 1. 啟動 macOS 終端機應用程式。
 1. 使用終端機和 [Homebrew 首頁](https://brew.sh/)上的說明安裝 Homebrew。
-1. 安裝 Homebrew 之後，請從您的終端機執行下列命令： `brew install tee-clc`
+1. 安裝 Homebrew 之後，請從您的終端機執行下列命令：`brew install tee-clc`
 
 **手動設定 TEE CLC**：
 
-1. 從 Team Explorer Everywhere GitHub 儲存機制的 [版本] 頁面[下載最新版本的 tee-clc](https://github.com/Microsoft/team-explorer-everywhere/releases) (例如撰寫本文時的 tee-clc-14.134.0.zip)。
+1. 從 Team Explorer Everywhere GitHub 儲存機制的 [版本] 頁面[下載最新版本的 tee-clc](https://github.com/Microsoft/team-explorer-everywhere/releases) (例如撰寫此文章時的 tee-clc-14.134.0.zip)。
 1. 將 .zip 的內容解壓縮到磁碟上的資料夾。
 1. 開啟 macOS 終端機應用程式，並使用 `cd` 命令切換至您在上一個步驟中使用的資料夾。
 1. 在資料夾中，執行命令 `./tf` 以測試是否可以執行命令列用戶端，系統可能會提示您安裝 Java 或其他相依性。

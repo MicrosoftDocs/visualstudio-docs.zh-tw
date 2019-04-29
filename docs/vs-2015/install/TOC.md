@@ -6,7 +6,7 @@
 ## [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
 ### [如何：安裝特定版本的 Visual Studio](how-to-install-a-specific-release-of-visual-studio.md)
 ### [如何：建立和執行 Visual Studio 的自動安裝](how-to-create-and-run-an-unattended-installation-of-visual-studio.md)
-### [如何：部署 Visual Studio 時會自動套用產品金鑰](how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)
+### [如何：在部署 Visual Studio 時自動套用產品金鑰](how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)
 ## [安裝多個語言版本的 Visual Studio](install-multiple-language-versions-of-visual-studio.md)
 ### [Microsoft 語言介面套件 (LIP) 和 Visual Studio](microsoft-language-interface-packs-lips-and-visual-studio.md)
 ## [如何：從 Visual Studio 試用版升級](how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
