@@ -13,11 +13,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 482d7131692c1e22483c80f4b4bb22e07a6caf1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423357"
 ---
 # <a name="stepping-in-break-mode"></a>在中斷模式中逐步執行
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

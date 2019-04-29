@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 496aefb2679edd87c892c54f44b14876b4ebce5b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536435"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation 活動設計工具
 
@@ -39,7 +39,7 @@ ms.locfileid: "55953213"
 
 下表顯示<xref:System.ServiceModel.Activities.InitializeCorrelation>屬性，並說明它們在設計工具的使用方式。 這些屬性可以在中編輯**屬性**視窗或在工作流程設計工具介面上。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.InitializeCorrelation> 活動的易記名稱。 預設值為 InitializeCorrelation。<br /><br /> 雖然使用非預設值，做為易記<xref:System.Activities.Activity.DisplayName%2A>不是絕對必要，建議。|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|用於與相互關聯中工作流程活動相關聯的 <xref:System.ServiceModel.Activities.CorrelationHandle>。|

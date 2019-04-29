@@ -17,11 +17,11 @@ ms.topic: reference
 ms.workload:
 - multiple
 ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793631"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Visual Studio 的擴充項的個別監視器感知支援
 在 Visual Studio 2019 之前的版本有 DPI 感知上下文會設定為系統感知，而非個別監視器 DPI 感知 (PMA)。 執行中系統感知導致降低整體的視覺效果體驗 （例如模糊的字型或圖示），每當必須呈現之間不同的縮放比例或遠端機器使用不同的顯示設定例如 （不同的 Visual StudioWindows 調整)。

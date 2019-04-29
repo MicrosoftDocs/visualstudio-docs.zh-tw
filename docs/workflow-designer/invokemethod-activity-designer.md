@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eed5d81cce05b316ef7593639e868936e7f2fa69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537637"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 活動設計工具
 

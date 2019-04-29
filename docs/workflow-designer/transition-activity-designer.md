@@ -11,11 +11,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: ad9572004702f53cefaad05bfcaad0cd29520542
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433938"
 ---
 # <a name="transition-activity-designer"></a>轉換活動設計工具
 
@@ -29,7 +29,7 @@ Transition 活動設計工具允許您設定兩個狀態之間的轉換。
 
 下表顯示可使用工作流程設計工具設定的 <xref:System.Activities.Statements.Transition> 屬性，並說明如何在設計工具中使用它們。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Statements.Transition.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.Transition> 活動設計工具的易記名稱。 預設值是**T1**。 這個值可以在這些位置進行編輯：屬性方格、展開的轉換設計工具標頭，以及展開的轉換設計工具內動作區段的標頭。 <xref:System.Activities.Activity.DisplayName%2A> 可用於階層連結巡覽，顯示在工作流程設計工具的頂端。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|
 |<xref:System.Activities.Statements.Transition.Condition%2A>|False|如果有的話，指定運算式必須評估為 **，則為 True**控制權會傳遞到目的狀態之前。 這個條件可以在屬性方格和展開的轉換設計工具中編輯。 共用轉換中的多個條件是以它們在轉換設計工具中的出現順序接受評估。 **注意：** 請注意，如果<xref:System.Activities.Statements.Transition.Condition%2A>轉換的評估結果為**False** (或所有共用的觸發轉換的條件評估為**False**)，不會發生轉換和所有的所有觸發程序從狀態轉換將重新排程。 由於設定條件的方式，在本教學課程中不會發生這種情況 (我們對於猜測是否正確有具體的動作)。|

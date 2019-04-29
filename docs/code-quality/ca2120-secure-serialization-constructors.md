@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 15fd1596fdede3d13d603e7df222395a7ef7a277
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545110"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120:必須保護序列化建構函式
 
@@ -50,7 +50,7 @@ ms.locfileid: "55927902"
 ## <a name="related-rules"></a>相關的規則
  [CA2229：必須實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2237： 必須Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237：Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>另請參閱
 

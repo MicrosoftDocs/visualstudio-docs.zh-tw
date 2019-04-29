@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 94a6f4b69648c94e6530cb28180193e5a74c1265
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432638"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 項目 (Visual Studio 範本)
 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。

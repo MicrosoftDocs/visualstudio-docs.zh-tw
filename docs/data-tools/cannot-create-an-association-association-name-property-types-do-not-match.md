@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b97903e0167ba2aba83ea0cfecdd6084c9270e85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818141"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>無法建立關聯&lt;關聯名稱&gt;：屬性類型不符
 
@@ -31,10 +31,10 @@ ms.locfileid: "55911828"
 
 3. 檢查**關聯屬性**，並選取資料類型相同的屬性。
 
-4. 按一下 [確定 **Deploying Office Solutions**]。
+4. 按一下 [確定] 。
 
 ## <a name="see-also"></a>另請參閱
 
 - [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [如何： 建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [如何：建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

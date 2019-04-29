@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1596ec3d7ec901ac6fb8ce504fc9f0355723579c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58942301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822692"
 ---
 # <a name="domain-relationships-in-the-generated-api"></a>產生的 API 中的網域關聯性
 這個主題已與其他內容合併。 請前往[巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。

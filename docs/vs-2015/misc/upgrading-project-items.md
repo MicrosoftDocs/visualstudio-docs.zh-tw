@@ -12,11 +12,11 @@ ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: jillfra
 ms.openlocfilehash: c07f8f62fb7ae84b5f3ee6140cccecf744c759e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434172"
 ---
 # <a name="upgrading-project-items"></a>升級專案項目
 如果您新增或管理您不會實作的專案系統內的項目時，您可能需要參與專案的升級程序。 Crystal Reports 是可以加入至專案系統的項目範例。  

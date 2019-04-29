@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b3318a9f5bd65c6b9514519936cc52e037e0c215
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541779"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230:必須使用 params 作為變數引數
 
@@ -36,7 +36,7 @@ ms.locfileid: "55944984"
 ## <a name="rule-description"></a>規則描述
  `VarArgs`呼叫慣例用於接受各種數目參數的特定方法定義。 方法使用`VarArgs`呼叫慣例不是 Common Language Specification (CLS) 相容，而且可能無法存取跨程式語言。
 
- 在 C# 中，`VarArgs`方法的參數清單的結尾時，呼叫慣例會使用`__arglist`關鍵字。 Visual Basic 不支援`VarArgs`呼叫慣例和 Visual c + + 允許其使用僅在使用橢圓形的 unmanaged 程式碼`...`標記法。
+ 在 C# 中，`VarArgs`方法的參數清單的結尾時，呼叫慣例會使用`__arglist`關鍵字。 Visual Basic 不支援`VarArgs`呼叫慣例和視覺效果C++允許其使用僅在 unmanaged 程式碼使用省略符號`...`標記法。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，C# 中，使用[params](/dotnet/csharp/language-reference/keywords/params)而不是關鍵字`__arglist`。

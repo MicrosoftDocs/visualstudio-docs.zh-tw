@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 5599f111d6580f654436fdd2ff85f69f1329920d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541632"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239:必須為選擇性欄位提供還原序列化方法
 
@@ -60,8 +60,8 @@ ms.locfileid: "55907525"
 
  [CA2238： 請正確實作序列化方法](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
- [CA2235： 必須標記所有不可序列化的欄位](../code-quality/ca2235-mark-all-non-serializable-fields.md)
+ [CA2235：必須標記所有不可序列化的欄位](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2237： 必須Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237：Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
  [CA2120： 必須保護序列化建構函式](../code-quality/ca2120-secure-serialization-constructors.md)

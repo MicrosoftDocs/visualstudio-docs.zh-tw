@@ -21,11 +21,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 46e5990b92dae5086d2986c8df9c8ba4106e913c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428582"
 ---
 # <a name="edit-and-continue-dialog-box"></a>[編輯後繼續] 對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

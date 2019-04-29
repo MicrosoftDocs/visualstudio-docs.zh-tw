@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e4055c4096895645edf8dfdab8318622a100e6e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565654"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>偵錯期間無法修改設計工具
 

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8ece5c207a0244a55078ef44f9156e7e95cedf5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556685"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>HOW TO：伺服器總管 中新增自訂 SharePoint 節點
   您可以新增自訂節點底下**SharePoint 連線**中的節點**伺服器總管**。 當您想要顯示其他 SharePoint 元件，不會顯示在此方法**伺服器總管**預設。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。

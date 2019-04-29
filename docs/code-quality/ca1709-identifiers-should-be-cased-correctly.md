@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f692218cd051338a6bd4e83a07d985bb52f907e6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546231"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709:識別項名稱應該使用正確的大小寫
 
@@ -58,7 +58,7 @@ ms.locfileid: "55932075"
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
  它會安全地隱藏這個警告，如果您有自己的命名慣例，或如果識別項表示適當的名稱，例如公司或技術的名稱。
 
- 您也可以新增特定詞彙、 縮寫及縮略字，加入程式碼分析自訂字典。 指定自訂的字典中的詞彙不會造成違反此規則。 如需詳細資訊，請參閱[＜How to：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ 您也可以新增特定詞彙、 縮寫及縮略字，加入程式碼分析自訂字典。 指定自訂的字典中的詞彙不會造成違反此規則。 如需詳細資訊，請參閱[如何：自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 ## <a name="related-rules"></a>相關的規則
  [CA1708:識別項應該不僅為大小寫不同](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

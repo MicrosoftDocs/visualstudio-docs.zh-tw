@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557020"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>擴充 SharePoint 專案系統
   您可以使用 Visual Studio 中的一組專案範本和項目範本來建立 SharePoint 方案。 這些範本符合許多的開發案例的需求，但您可能會發現某些情況下，它們不在此提供您所需要的功能。 在這些情況下，您可以擴充 SharePoint 專案系統。

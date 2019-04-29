@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d1e0af87618955c492bef68be45c8c623f41218
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554514"
 ---
 # <a name="function-debug-interface-access-sdk"></a>函式 (偵錯介面存取 SDK)
 每個函式識別`SymTagFunction`符號。
@@ -25,7 +25,7 @@ ms.locfileid: "56634041"
 ## <a name="properties"></a>屬性
  下表顯示適用於此符號類型的屬性。
 
-|屬性|`Data type`|說明|
+|屬性|`Data type`|描述|
 |--------------|-----------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|其中一個值[CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)，如果函式成員函式。|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|時差的部分的位置;如需詳細資訊，請參閱 < [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)。|
@@ -36,7 +36,7 @@ ms.locfileid: "56634041"
 |[IDiaSymbol::get_customCallingConvention](../../debugger/debug-interface-access/idiasymbol-get-customcallingconvention.md)|`BOOL`|`TRUE` 如果此函數會使用自訂的呼叫慣例 （只在 DIA SDK 8.0 版或更新版本）。|
 |[IDiaSymbol::get_farReturn](../../debugger/debug-interface-access/idiasymbol-get-farreturn.md)|`BOOL`|`TRUE` 如果函式會執行目前傳回 （只在 DIA SDK 8.0 版或更新版本）。|
 |[IDiaSymbol::get_hasAlloca](../../debugger/debug-interface-access/idiasymbol-get-hasalloca.md)|`BOOL`|`TRUE` 如果此函數會使用配置的記憶體函式 (uinnder DIA SDK 8.0 版或更新版本)。|
-|[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|`BOOL`|`TRUE` 如果函式包含 c + + 樣式例外狀況處理 （只在 DIA SDK 8.0 版或更新版本）。|
+|[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|`BOOL`|`TRUE` 如果函式包含C++-樣式例外狀況處理 （只在 DIA SDK 8.0 版或更新版本）。|
 |[IDiaSymbol::get_hasEHa](../../debugger/debug-interface-access/idiasymbol-get-haseha.md)|`BOOL`|`TRUE` 如果函式包含非同步例外狀況處理 （只在 DIA SDK 8.0 版或更新版本）。|
 |[IDiaSymbol::get_hasInlAsm](../../debugger/debug-interface-access/idiasymbol-get-hasinlasm.md)|`BOOL`|`TRUE` 如果函式中包含內嵌組譯碼 （只在 DIA SDK 8.0 版或更新版本）。|
 |[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` 如果函式包含[longjmp](/cpp/c-runtime-library/reference/longjmp)呼叫 （僅在 DIA SDK 8.0 版或更新版本）。|
@@ -73,7 +73,7 @@ ms.locfileid: "56634041"
 |[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|如果是虛擬的函式，然後在虛擬函式表中的位移。|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 如果函式標示為 volatile。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)
 - [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

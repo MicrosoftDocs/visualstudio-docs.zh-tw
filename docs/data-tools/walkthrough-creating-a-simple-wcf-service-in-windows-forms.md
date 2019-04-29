@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 97bbf8212caf87f28849df15d350811579f22ccd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565294"
 ---
-# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>逐步解說： 在 Windows Forms 中建立簡單的 WCF 服務
+# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>逐步解說：在 Windows Forms 中建立簡單的 WCF 服務
 
 本逐步解說示範如何建立簡單的 Windows Communication Foundation (WCF) 服務，測試它，然後從在 Windows Forms 應用程式存取它。
 
@@ -117,7 +117,7 @@ ms.locfileid: "58325223"
 
 1. 在 [檔案] 功能表上，指向 [新增]，然後按一下 [新增專案]。
 
-2. 中**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#** 節點，然後選取**Windows**，然後選取  **Windows Forms 應用程式**。 按一下 [確定] 開啟專案。
+2. 在**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#** 節點中，選取**Windows**，然後選取  **Windows Forms 應用程式**。 按一下 [確定] 開啟專案。
 
      ![Windows Form 應用程式專案](../data-tools/media/wcf7.png)
 

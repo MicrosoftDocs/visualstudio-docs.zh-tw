@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 9e9f80f55aa3059cbe5c9af3b5510915f768ea20
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567633"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>建立支援複雜資料繫結的 Windows Forms 使用者控制項
 
@@ -71,7 +71,7 @@ ms.locfileid: "58268767"
 
 ## <a name="create-a-windows-forms-app-project"></a>建立 Windows Forms 應用程式專案
 
-第一個步驟是建立**Windows Forms 應用程式**專案，或C#或 Visual Basic。 將專案命名為 **ComplexControlWalkthrough**。
+第一個步驟是建立**Windows Forms 應用程式**專案，或C#或 Visual Basic。 將專案命名為**ComplexControlWalkthrough**。
 
 ## <a name="add-a-user-control-to-the-project"></a>將使用者控制項新增至專案
 

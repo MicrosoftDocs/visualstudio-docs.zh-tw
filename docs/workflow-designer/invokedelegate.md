@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 511d73ea2992887f31bc8750cc9ba32934bddd91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537084"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -34,7 +34,7 @@ ms.locfileid: "55925367"
 
 下表顯示 <xref:System.Activities.Statements.InvokeDelegate> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在屬性方格中編輯，有些可以在工作流程設計工具介面上編輯。
 
-|屬性名稱|必要項|使用方式|
+|屬性名稱|必要|使用量|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeDelegate> 活動的易記名稱。 預設值為 InvokeDelegate。<br /><br /> 雖然<xref:System.Activities.Activity.DisplayName%2A>不是絕對必要，建議您最好使用其中一個。|
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|活動執行時要呼叫之 <xref:System.Activities.ActivityDelegate> 的名稱。 此屬性可編輯設計工具介面上，而且是必要的。|
@@ -42,4 +42,4 @@ ms.locfileid: "55925367"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：定義和使用工作流程設計工具中的活動委派](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)
+- [如何：在工作流程設計工具中定義及取用活動委派](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

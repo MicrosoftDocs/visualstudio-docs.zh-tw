@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7cfe6ce02b03ed69435f8056ccd340b92f9eb5a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62421495"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或 Decorator 的可見度
 A*裝飾項目*是圖示或特定領域語言 (DSL) 中的圖形上顯示的文字行。 您可以進行裝飾項目會顯示，並根據模型中屬性的狀態會消失。 例如，代表個人的圖形，您可能有不同的圖示會出現取決於該人員的性別，子系數目等等。

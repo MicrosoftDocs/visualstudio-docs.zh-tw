@@ -12,13 +12,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fb7b601c04c73cd1f617e42c848edaf7dc65bde8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429340"
 ---
-# <a name="how-to-create-starter-kits"></a>如何：建立入門套件
+# <a name="how-to-create-starter-kits"></a>HOW TO：建立入門套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 入門套件包含完整應用程式的程式碼，以及如何修改或擴充應用程式的文件。 建立入門套件基本上與建立標準專案範本相同，唯一的差異在於入門套件所包含的文件檔案設定為在建立根據入門套件的專案時開啟。  
@@ -53,7 +53,7 @@ ms.locfileid: "54798942"
  [如何：更新現有的範本](../ide/how-to-update-existing-templates.md)  
  描述如何編輯已匯出的範本。 使用此程序即可修改 .vstemplate 檔案來自訂入門套件。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [自訂範本](../ide/customizing-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

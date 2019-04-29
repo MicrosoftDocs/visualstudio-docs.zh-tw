@@ -1,6 +1,6 @@
 ---
 title: 建立多重專案範本
-ms.date: 01/02/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -9,14 +9,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bd8101aa1e62e65c83d4da40af4eb624338a89
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430493"
 ---
-# <a name="how-to-create-multi-project-templates"></a>作法：建立多重專案範本
+# <a name="how-to-create-multi-project-templates"></a>HOW TO：建立多重專案範本
 
 多專案範本是做為兩個以上專案的容器使用。 當您根據多專案範本建立專案時，範本中的每個專案都會新增至方案。
 
@@ -67,6 +67,19 @@ ms.locfileid: "59232619"
         </ProjectCollection>
     </TemplateContent>
     ```
+
+> [!TIP]
+> 如果您只希望多專案範本顯示在新的 [專案] 對話方塊中而不是它包含的個別專案中，請將內部範本標記為 [[隱藏]](../extensibility/hidden-element-visual-studio-templates.md)。 例如：
+>
+> ```xml
+> <VSTemplate Type="Project" ... >
+>     <TemplateData>
+>         ...
+>         <Hidden>true</Hidden>
+>     </TemplateData>
+>     ...
+> </VSTemplate>
+> ```
 
 ## <a name="create-a-multi-project-template-from-an-existing-solution"></a>從現有的解決方案中建立多專案範本
 
@@ -176,7 +189,7 @@ ms.locfileid: "59232619"
 ## <a name="see-also"></a>另請參閱
 
 - [建立專案和項目範本](../ide/creating-project-and-item-templates.md)
-- [作法：建立專案範本](../ide/how-to-create-project-templates.md)
+- [如何：建立專案範本](../ide/how-to-create-project-templates.md)
 - [Visual Studio 範本結構描述參考 (擴充性)](../extensibility/visual-studio-template-schema-reference.md)
-- [SolutionFolder 元素 (Visual Studio 範本)](../extensibility/solutionfolder-element-visual-studio-templates.md)
-- [ProjectTemplateLink 元素 (Visual Studio 範本)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+- [SolutionFolder 項目 (Visual Studio 範本)](../extensibility/solutionfolder-element-visual-studio-templates.md)
+- [ProjectTemplateLink 項目 (Visual Studio 範本)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

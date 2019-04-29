@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88193fc4ec7061771ebba53139cdc0ecce67dbfb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58943346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552072"
 ---
 # <a name="debugger-navigation-sample-code-xaml-and-c"></a>偵錯工具巡覽範例程式碼 (Xaml 和 C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 768efb3e874f6427cd23f63f14671aa2db1bea71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816353"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>HOW TO：建立或更新標準程式碼分析簽入原則
 
@@ -29,7 +29,7 @@ ms.locfileid: "55917073"
 
 - 對於 managed 程式碼，您必須設定簽入原則藉由指定*規則集*，其中包含的程式碼分析規則子集。
 
-- 對於 C/c + + 程式碼，在 Visual Studio 2017 15.6 版及更早版本，簽入原則會要求所有的程式碼分析規則會執行。 您可以加入前置處理器指示詞，若要停用 Azure DevOps 專案中的個別程式碼專案的特定規則。 15.7 中和更新版本中，您可以使用 **/analyze: ruleset**指定要執行哪些規則。 如需詳細資訊，請參閱 <<c0> [ 使用規則集來指定要執行的 c + + 規則](using-rule-sets-to-specify-the-cpp-rules-to-run.md)。
+- 適用於 C /C++程式碼，在 Visual Studio 2017 15.6 版及更早版本，簽入原則會要求所有的程式碼分析規則會執行。 您可以加入前置處理器指示詞，若要停用 Azure DevOps 專案中的個別程式碼專案的特定規則。 15.7 中和更新版本中，您可以使用 **/analyze: ruleset**指定要執行哪些規則。 如需詳細資訊，請參閱 <<c0> [ 指定来使用規則集C++要執行規則](using-rule-sets-to-specify-the-cpp-rules-to-run.md)。</c0>
 
 指定 managed 程式碼簽入原則之後，小組成員可以同步處理他們的 Azure DevOps 專案原則設定的程式碼專案的程式碼分析設定。
 
@@ -52,7 +52,7 @@ ms.locfileid: "55917073"
 |選項|描述|
 |------------|-----------------|
 |**強制執行簽入使其僅包含屬於目前方案的檔案。**|只有在方案和專案的組態檔中指定的檔案，可以執行程式碼分析。 此原則可保證方案的一部分的所有程式碼會進行分析。|
-|**強制執行 C/c + + 程式碼分析 (/analyze)**|需要所有的 C 或 c + + 專案，以建置 / analyze 編譯器選項，簽入之前執行程式碼分析。|
+|**強制執行 C /C++程式碼分析 (/analyze)**|需要所有的 C 或C++以建置專案 / analyze 編譯器選項，簽入之前執行程式碼分析。|
 |**針對 Managed 程式碼強制執行程式碼分析**|需要所有的 managed 的專案執行程式碼分析，以及建置簽入之前。|
 
 ## <a name="to-specify-a-managed-rule-set"></a>若要指定受管理的規則設定

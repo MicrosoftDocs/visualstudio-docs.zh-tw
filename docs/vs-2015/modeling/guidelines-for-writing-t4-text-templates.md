@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f88666d15293e6900ae99cecdc39853cda8e2f9e
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59000507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546605"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>撰寫 T4 文字範本的方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,7 +137,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
  撰寫您要產生，請確定它是正確的程式碼或文字的範例。 然後在變更其副檔名為.tt 和以累加方式插入修改內容，請閱讀此模型的程式碼。  
   
  請考慮使用具類型的模型。  
- 雖然您可以針對您的模型建立的資料庫或 XML 結構描述，它可能有助於建立特定領域語言 (DSL)。 DSL 的優點是它會產生代表每個節點在結構描述和屬性，以代表之屬性的類別。 這表示您可以根據商務模型進行程式設計。 例如：  
+ 雖然您可以針對您的模型建立的資料庫或 XML 結構描述，它可能有助於建立特定領域語言 (DSL)。 DSL 的優點是它會產生代表每個節點在結構描述和屬性，以代表之屬性的類別。 這表示您可以根據商務模型進行程式設計。 例如:   
   
 ```  
 Team Members:  

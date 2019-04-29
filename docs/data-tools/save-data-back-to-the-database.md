@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 31b41a9c18a9e055c9d144c7115d3673ee2e4443
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566572"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 
@@ -47,7 +47,7 @@ ms.locfileid: "55928656"
 |[使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)|如何執行與 Tableadapter 的更新|
 |[階層式更新](../data-tools/hierarchical-update.md)|如何從具有兩個或多個相關資料表的資料集執行的更新|
 |[處理並行例外狀況](../data-tools/handle-a-concurrency-exception.md)|如何處理例外狀況，當兩個使用者嘗試同時變更資料庫中相同的資料|
-|[如何：使用交易儲存資料](../data-tools/save-data-by-using-a-transaction.md)|如何將資料儲存在使用系統的交易。 Transactions 命名空間和 TransactionScope 物件|
+|[如何：使用異動儲存資料](../data-tools/save-data-by-using-a-transaction.md)|如何將資料儲存在使用系統的交易。 Transactions 命名空間和 TransactionScope 物件|
 |[儲存異動中的資料](../data-tools/save-data-in-a-transaction.md)|建立 Windows Forms 應用程式來示範儲存至資料庫在交易內資料的逐步解說|
 |[儲存資料至資料庫 (多個資料表)](../data-tools/save-data-to-a-database-multiple-tables.md)|如何編輯記錄，並將變更儲存回資料庫的多個資料表中|
 |[從物件中將資料儲存至資料庫](../data-tools/save-data-from-an-object-to-a-database.md)|如何將資料從物件，使用 TableAdapter DbDirect 方法不是資料庫的資料集傳遞|
@@ -279,4 +279,4 @@ ms.locfileid: "55928656"
 - [使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)
 - [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [驗證資料](validate-data-in-datasets.md)
-- [如何：新增、修改和刪除實體 (WCF 資料服務)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [如何：新增、 修改及刪除實體 (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

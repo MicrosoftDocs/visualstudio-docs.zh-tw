@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9466d067cd144f009f9c0a37d4ace5bacc12f8a2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433457"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>準備 Windows Installer 部署擴充功能
 您無法使用的 Windows Installer 套件 (MSI) 來部署的 VSIX 封裝。 不過，您可以擷取 MSI 部署的 VSIX 套件的內容。 本文件說明如何準備其預設輸出會包含在安裝專案中的 VSIX 套件的專案。
